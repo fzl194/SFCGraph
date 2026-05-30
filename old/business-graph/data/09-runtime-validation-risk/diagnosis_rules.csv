@@ -1,0 +1,5 @@
+diagnosis_rule_id,diagnosis_rule_name,summary,source_evidence_ids,status
+DR-BA-001,Rule未命中排查,优先检查识别条件链是否完整，包括 Filter/L7Filter、FlowFilter、绑定关系、Rule 和 UserProfile 绑定。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-FEAT-74096529"",""EVI-UDG-FEAT-90197552""]",accepted
+DR-BA-002,命中但未计费排查,检查 URR、URRGroup、PCCPolicyGrp、Rule 和缺省 URR 组绑定是否完整，以及 CP/UP 关键参数是否一致。,"[""EVI-UNC-TOPIC-90679673"",""EVI-UDG-FEAT-66863837"",""EVI-UNC-FEAT-66402110""]",accepted
+DR-BA-003,配额耗尽后未重定向排查,检查 CCT、QuotaExhaustAction、重定向动作链、Rule 启停和 PCF/SMF 策略更新过程。,"[""EVI-UDG-BA-92407896"",""EVI-UNC-CMD-95129686"",""EVI-UDG-BA-92393307""]",accepted
+DR-BA-004,CP_UP配置不一致排查,核查控制面和用户面之间 Rule/UserProfile/URR/RG 等关键对象和参数是否对齐。,"[""EVI-UNC-TOPIC-90679673"",""EVI-UNC-FEAT-71770359""]",accepted

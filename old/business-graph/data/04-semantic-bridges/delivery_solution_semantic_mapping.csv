@@ -1,0 +1,16 @@
+solution_id,semantic_object_id,relation_type,instantiation_notes,status
+DS-BA-001,BA.SubjectSemantics,instantiates_semantic_object,实例化为 UserProfile 及其规则绑定生效范围,accepted
+DS-BA-001,BA.TrafficRecognitionSemantics,instantiates_semantic_object,实例化为三四层过滤+协议识别+七层 URL/Host+FlowFilter 组合,accepted
+DS-BA-001,BA.RuleSemantics,instantiates_semantic_object,实例化为多条 Rule 和优先级裁决,accepted
+DS-BA-001,BA.ChargingSemantics,instantiates_semantic_object,实例化为专项业务独立费率+免费业务+默认兜底费率,accepted
+DS-BA-001,BA.BindingSemantics,instantiates_semantic_object,实例化为 UserProfile + RuleBinding + SET URRGRPBINDING,accepted
+DS-BA-001,BA.PrioritySemantics,instantiates_semantic_object,实例化为业务编号越小优先级越高,accepted
+DS-BA-001,BA.ValidationDiagnosisSemantics,instantiates_semantic_object,实例化为 CP/UP 一致性和计费链核查,accepted
+DS-BA-002,BA.SubjectSemantics,instantiates_semantic_object,实例化为 UserProfile、RuleBinding 及 CCT 粒度绑定生效范围,accepted
+DS-BA-002,BA.TrafficRecognitionSemantics,instantiates_semantic_object,实例化为视频/URL/Host 的七层识别条件和 FlowFilter 链,accepted
+DS-BA-002,BA.QuotaSemantics,instantiates_semantic_object,实例化为 CCT 阈值和在线 RG 配额耗尽状态,accepted
+DS-BA-002,BA.PolicyActionSemantics,instantiates_semantic_object,实例化为 BLOCK/REDIRECT/FORWARD 和 PCCActionProp/PccPolicyGrp 动作汇聚,accepted
+DS-BA-002,BA.RedirectSemantics,instantiates_semantic_object,实例化为 Redirect 对象和 URL 重定向目标,accepted
+DS-BA-002,BA.RuleSemantics,instantiates_semantic_object,实例化为正常计费规则与耗尽后重定向规则的切换,accepted
+DS-BA-002,BA.RuntimeSemantics,instantiates_semantic_object,实例化为配额耗尽后 PCF/SMF 更新策略并由 UPF 执行动作,accepted
+DS-BA-002,BA.BindingSemantics,instantiates_semantic_object,实例化为 Rule/UserProfile/RuleBinding 及 CCT 粒度绑定,accepted

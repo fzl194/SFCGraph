@@ -1,0 +1,5 @@
+validation_plan_id,validation_plan_name,summary,source_evidence_ids,status
+VP-BA-001,计费命中与费率链验收,核查业务识别后是否进入预期 URR/URRGroup/PCCPolicyGrp/Rule/UserProfile 链路，并确认计费路径符合设计。,"[""EVI-UDG-BA-93112148"",""EVI-UNC-TOPIC-90679673""]",accepted
+VP-BA-002,默认兜底计费验收,核查未命中特殊业务时是否通过缺省 URR 组进入默认计费路径。,"[""EVI-UDG-BA-93112148"",""EVI-UNC-TOPIC-90679673""]",accepted
+VP-BA-003,配额耗尽动作验收,核查在线 RG 配额耗尽后是否触发预期的 BLOCK/REDIRECT/FORWARD 动作。,"[""EVI-UNC-CMD-95129686"",""EVI-UNC-CMD-09653176""]",accepted
+VP-BA-004,七层重定向验收,核查命中 URL/Host 等七层条件后是否执行预期的重定向动作链。,"[""EVI-UDG-BA-92393307"",""EVI-UDG-BA-87803995""]",accepted

@@ -1,0 +1,6512 @@
+[
+  {
+    "id": "GWFD-010291",
+    "name": "5G NSA(Opt.3)组网",
+    "dir": "5G NSA功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "5G NSA组网属于基础接入架构"
+  },
+  {
+    "id": "GWFD-020352",
+    "name": "IPv6 SA",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "SA能力的IPv6扩展，对IPv6报文进行业务感知，支持IPv6内容计费/URL重定向/P2P流量控制"
+  },
+  {
+    "id": "GWFD-020401",
+    "name": "IPv6承载上下文",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IPv6承载上下文基本管理(PDP/EPS/PDU)，属于基础接入"
+  },
+  {
+    "id": "GWFD-020402",
+    "name": "N6_Gi_SGi接口IPv6组网",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N6/Gi/SGi接口IPv6组网配置，属于基础网络配置"
+  },
+  {
+    "id": "GWFD-020403",
+    "name": "IPv4v6双栈接入",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IPv4v6双栈接入基本能力，属于基础接入"
+  },
+  {
+    "id": "GWFD-020405",
+    "name": "逻辑接口支持IPv6",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "逻辑接口支持IPv6配置，属于基础网络配置"
+  },
+  {
+    "id": "GWFD-020406",
+    "name": "IPv6 Prefix Delegation",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IPv6前缀委派，属于基础地址管理"
+  },
+  {
+    "id": "?",
+    "name": "IPv6功能描述",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IPv6功能描述属于基础网络概述"
+  },
+  {
+    "id": "GWFD-020404",
+    "name": "IPv6在线计费",
+    "dir": "IPv6功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "IPv6/双栈用户在线计费(OCS实时配额管理)，与计费场景(NS-01)关联"
+  },
+  {
+    "id": "IPFD-010000",
+    "name": "接口与链路",
+    "dir": "IP基本特性",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "接口与链路基本配置(VLAN子接口)，属于IP基础特性"
+  },
+  {
+    "id": "IPFD-011000",
+    "name": "IP协议栈基本功能",
+    "dir": "IP基本特性",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IP协议栈/可靠性属于IP基础特性"
+  },
+  {
+    "id": "IPFD-012000",
+    "name": "IP可靠性",
+    "dir": "IP基本特性",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IP协议栈/可靠性属于IP基础特性"
+  },
+  {
+    "id": "IPFD-014000",
+    "name": "路由功能",
+    "dir": "IP基本特性",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "路由功能(静态路由)，属于IP基础特性"
+  },
+  {
+    "id": "IPFD-015000",
+    "name": "VPN功能",
+    "dir": "IP基本特性",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "VPN功能(VRF)，属于IP基础特性"
+  },
+  {
+    "id": "IPFD-015004",
+    "name": "IPSec功能",
+    "dir": "IP基本特性",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IPSec安全功能，属于IP基础特性"
+  },
+  {
+    "id": "IPFD-014007",
+    "name": "L2_L3跟踪",
+    "dir": "IP基本特性",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "L2/L3跟踪调试，属于IP基础特性"
+  },
+  {
+    "id": "IPFD-015003",
+    "name": "SNMP",
+    "dir": "IP基本特性",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "SNMP网管协议，属于IP基础特性"
+  },
+  {
+    "id": "GWFD-010201",
+    "name": "QoS与流量管理",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "QoS基础框架，Diff-Serv模型是带宽控制场景(NS-02)的用户面执行基础"
+  },
+  {
+    "id": "GWFD-020101",
+    "name": "支持Reflective QoS",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Reflective QoS是RAN侧特性，不直接涉及业务感知配置对象"
+  },
+  {
+    "id": "GWFD-020381",
+    "name": "会话类QoS保证",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "会话类QoS保证，VoIP/视频场景的带宽保障，与带宽控制场景互补"
+  },
+  {
+    "id": "GWFD-110941",
+    "name": "基于基站粒度的IPSQM",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "基站粒度静态整形，是承载网优化特性，非业务感知驱动"
+  },
+  {
+    "id": "GWFD-010235",
+    "name": "缺省承载GBR保障",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "缺省承载GBR保障，通过PCF/SMF规则触发，与策略控制场景关联"
+  },
+  {
+    "id": "GWFD-110551",
+    "name": "5G超高带宽基本功能，1Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(1G基本)，非功能特性"
+  },
+  {
+    "id": "GWFD-110552",
+    "name": "5G超高带宽承载接入，1Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(1G承载)"
+  },
+  {
+    "id": "GWFD-110553",
+    "name": "5G超高带宽基本功能，2Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(2G基本)"
+  },
+  {
+    "id": "GWFD-110554",
+    "name": "5G超高带宽承载接入，2Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(2G承载)"
+  },
+  {
+    "id": "GWFD-110555",
+    "name": "5G超高带宽基本功能，5Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(5G基本)"
+  },
+  {
+    "id": "GWFD-110556",
+    "name": "5G超高带宽承载接入，5Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(5G承载)"
+  },
+  {
+    "id": "GWFD-110557",
+    "name": "5G超高带宽基本功能，10Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(10G基本)"
+  },
+  {
+    "id": "GWFD-110558",
+    "name": "5G超高带宽承载接入，10Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(10G承载)"
+  },
+  {
+    "id": "GWFD-110559",
+    "name": "5G超高带宽基本功能，20Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(20G基本)"
+  },
+  {
+    "id": "GWFD-110560",
+    "name": "5G超高带宽承载接入，20Gbps峰值速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(20G承载)"
+  },
+  {
+    "id": "GWFD-111401",
+    "name": "5G超高带宽承载接入，1Gbps 保障速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(1G保障)"
+  },
+  {
+    "id": "GWFD-111402",
+    "name": "5G超高带宽承载接入，2Gbps 保障速率",
+    "dir": "QoS功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "License规格档位(2G保障)"
+  },
+  {
+    "id": "GWFD-110661",
+    "name": "5G eDRX模式",
+    "dir": "Redcap终端节能管理",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Redcap终端节能/接入属于终端管理特性"
+  },
+  {
+    "id": "GWFD-110662",
+    "name": "支持Redcap接入",
+    "dir": "Redcap终端节能管理",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Redcap终端节能/接入属于终端管理特性"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric可靠性",
+    "dir": "Service Fabric特性（虚机）",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Service Fabric虚机平台基础设施"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric基本功能",
+    "dir": "Service Fabric特性（虚机）",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Service Fabric虚机平台基础设施"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric存储和网络",
+    "dir": "Service Fabric特性（虚机）",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Service Fabric虚机平台基础设施"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric微服务",
+    "dir": "Service Fabric特性（虚机）",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Service Fabric虚机平台基础设施"
+  },
+  {
+    "id": "GWFD-020305",
+    "name": "终端异常下行流量检测",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110101",
+    "name": "SA-Basic",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110201",
+    "name": "HTTP2.0 Host识别",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110202",
+    "name": "HTTP2.0协议回落",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110203",
+    "name": "HTTPS业务地址识别",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110251",
+    "name": "HTTP3.0 Host识别",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110252",
+    "name": "HTTP3.0 Host分析",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110321",
+    "name": "支持内置百万级业务规则库",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110471",
+    "name": "URL过滤基本功能",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-111600",
+    "name": "SA特征库更新管控",
+    "dir": "业务感知功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110102",
+    "name": "SA-HTTP Pipeline & WAP Concatenation",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110103",
+    "name": "SA-Web Browsing",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110104",
+    "name": "SA-File Access",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110105",
+    "name": "SA-Mobile",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110106",
+    "name": "SA-Others",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110107",
+    "name": "SA-Streaming",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110131",
+    "name": "SA-P2P",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110132",
+    "name": "SA-VOIP",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110133",
+    "name": "SA-Email",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110134",
+    "name": "SA-IM",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110135",
+    "name": "SA-Game",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110136",
+    "name": "SA-Network Administration",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110137",
+    "name": "SA-Remote Connectivity",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110138",
+    "name": "SA-Network Storage",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110139",
+    "name": "SA-Tunneling",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110140",
+    "name": "SA-Stock",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110141",
+    "name": "SA-Database",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110142",
+    "name": "SA-QUIC",
+    "dir": "业务感知功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020154",
+    "name": "用户面负载信息上报",
+    "dir": "分布式网络功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "CUPS/SSC/负载上报/集中配置/Full Mesh属于基础网络架构"
+  },
+  {
+    "id": "GWFD-020155",
+    "name": "支持UPF集中配置",
+    "dir": "分布式网络功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "CUPS/SSC/负载上报/集中配置/Full Mesh属于基础网络架构"
+  },
+  {
+    "id": "GWFD-020161",
+    "name": "CU Full Mesh组网",
+    "dir": "分布式网络功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "CUPS/SSC/负载上报/集中配置/Full Mesh属于基础网络架构"
+  },
+  {
+    "id": "GWFD-020151",
+    "name": "支持CUPS架构",
+    "dir": "分布式网络功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "CUPS/SSC/负载上报/集中配置/Full Mesh属于基础网络架构"
+  },
+  {
+    "id": "GWFD-020152",
+    "name": "支持SSC Mode1",
+    "dir": "分布式网络功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "CUPS/SSC/负载上报/集中配置/Full Mesh属于基础网络架构"
+  },
+  {
+    "id": "GWFD-020153",
+    "name": "支持SSC Mode2",
+    "dir": "分布式网络功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "CUPS/SSC/负载上报/集中配置/Full Mesh属于基础网络架构"
+  },
+  {
+    "id": "GWFD-010251",
+    "name": "系统过载控制",
+    "dir": "可靠性功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "过载控制/故障隔离/可靠性定义属于系统可靠性"
+  },
+  {
+    "id": "GWFD-020162",
+    "name": "用户面会话过载控制",
+    "dir": "可靠性功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "过载控制/故障隔离/可靠性定义属于系统可靠性"
+  },
+  {
+    "id": "GWFD-110482",
+    "name": "磁盘故障隔离基本功能",
+    "dir": "可靠性功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "过载控制/故障隔离/可靠性定义属于系统可靠性"
+  },
+  {
+    "id": "?",
+    "name": "支持APN锁定状态上报SMF",
+    "dir": "可靠性功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "过载控制/故障隔离/可靠性定义属于系统可靠性"
+  },
+  {
+    "id": "GWFD-110481",
+    "name": "业务处理单元可靠性可定义",
+    "dir": "可靠性功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "过载控制/故障隔离/可靠性定义属于系统可靠性"
+  },
+  {
+    "id": "GWFD-010101",
+    "name": "会话管理",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "会话管理/3GPP接入属于基础接入"
+  },
+  {
+    "id": "GWFD-010102",
+    "name": "路径管理",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "路径管理(通信路径故障检测)，属于基础运维"
+  },
+  {
+    "id": "GWFD-010103",
+    "name": "数据转发",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "数据转发基本功能，属于基础接入"
+  },
+  {
+    "id": "GWFD-010104",
+    "name": "地址分配方式",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "IP地址分配方式，属于基础接入"
+  },
+  {
+    "id": "GWFD-010105",
+    "name": "用户面地址分配",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "用户面地址分配，属于基础接入"
+  },
+  {
+    "id": "GWFD-010107",
+    "name": "静态地址用户路由冗余",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "静态地址用户路由冗余，属于可靠性特性"
+  },
+  {
+    "id": "GWFD-010108",
+    "name": "用户面地址自动检测",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "用户面地址自动检测，属于基础运维"
+  },
+  {
+    "id": "GWFD-010151",
+    "name": "接入控制",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "基于带宽使用情况的接入控制，与带宽控制场景(NS-02)关联"
+  },
+  {
+    "id": "GWFD-010155",
+    "name": "Untrusted Non-3GPP网络用户接入",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Untrusted Non-3GPP网络用户接入，属于基础接入"
+  },
+  {
+    "id": "GWFD-010156",
+    "name": "3GPP网络用户接入",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "会话管理/3GPP接入属于基础接入"
+  },
+  {
+    "id": "GWFD-020421",
+    "name": "基于位置的地址分配",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "基于位置的地址分配，属于基础接入"
+  },
+  {
+    "id": "GWFD-110910",
+    "name": "支持Routing Behind MS",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "Routing Behind MS，属于路由特性"
+  },
+  {
+    "id": "GWFD-010106",
+    "name": "峰值LICENSE控制",
+    "dir": "基本接入功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "峰值License控制，属于License规格"
+  },
+  {
+    "id": "GWFD-113005",
+    "name": "支持媒体中继基本功能",
+    "dir": "媒体中继解决方案",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "媒体中继属于IMS媒体面基础功能"
+  },
+  {
+    "id": "GWFD-010253",
+    "name": "防DDoS功能",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/隐私/密钥属于安全基础设施"
+  },
+  {
+    "id": "GWFD-010252",
+    "name": "Linux操作系统安全加固",
+    "dir": "安全管理功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/隐私/密钥属于安全基础设施"
+  },
+  {
+    "id": "GWFD-010261",
+    "name": "个人隐私数据保护",
+    "dir": "安全管理功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/隐私/密钥属于安全基础设施"
+  },
+  {
+    "id": "GWFD-010262",
+    "name": "密钥安全性管理",
+    "dir": "安全管理功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/隐私/密钥属于安全基础设施"
+  },
+  {
+    "id": "GWFD-020481",
+    "name": "软件性能优化",
+    "dir": "性能优化",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "软件性能优化/入不转板/规格提升/加速卡属于性能基础设施"
+  },
+  {
+    "id": "GWFD-020482",
+    "name": "入不转板功能",
+    "dir": "性能优化",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "软件性能优化/入不转板/规格提升/加速卡属于性能基础设施"
+  },
+  {
+    "id": "GWFD-020483",
+    "name": "用户规格提升",
+    "dir": "性能优化",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "软件性能优化/入不转板/规格提升/加速卡属于性能基础设施"
+  },
+  {
+    "id": "GWFD-111201",
+    "name": "网络加速卡流量加速单元",
+    "dir": "性能优化",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "软件性能优化/入不转板/规格提升/加速卡属于性能基础设施"
+  },
+  {
+    "id": "GWFD-111283",
+    "name": "智能板订阅和采集",
+    "dir": "报表功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "智能板协同PCF+CloudUDN进行体验分析、保障策略触发和效果评估闭环，是体验保障场景的数据采集基础"
+  },
+  {
+    "id": "GWFD-111701",
+    "name": "拥塞小区分析",
+    "dir": "报表功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "拥塞小区识别后下发策略控制进行流量优化，与带宽控制(NS-02)和策略控制场景关联"
+  },
+  {
+    "id": "GWFD-111301",
+    "name": "智能分析记录生成",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "业务感知基础能力，对报文进行SA识别感知业务，是SA报表数据源"
+  },
+  {
+    "id": "GWFD-111302",
+    "name": "业务全样分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "智能分析记录的流抽样增强，扩展SA采集范围，是业务感知报表基础能力"
+  },
+  {
+    "id": "GWFD-111303",
+    "name": "阻塞流量分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "阻塞流量上报反映FILTER/RULE规则执行效果，与访问限制(NS-03)场景关联，辅助策略优化"
+  },
+  {
+    "id": "GWFD-111304",
+    "name": "TCP_UDP传输分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "通用TCP/UDP传输层质量统计，属于运维分析特性，不直接涉及业务感知配置对象"
+  },
+  {
+    "id": "GWFD-111305",
+    "name": "用户实时位置分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "用户实时位置分析上报，属于网络可视化特性，不直接涉及业务感知配置对象"
+  },
+  {
+    "id": "GWFD-111306",
+    "name": "VOIP业务分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "VOIP业务分析上报反映VoIP类业务SA识别和统计，与差异化计费(NS-01)和带宽控制(NS-02)场景关联"
+  },
+  {
+    "id": "GWFD-111307",
+    "name": "Web业务分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "Web业务HTTP解析上报，是SA识别HTTP类业务的报表输出，与业务感知能力关联"
+  },
+  {
+    "id": "GWFD-111308",
+    "name": "VoLTE业务质量上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "VoLTE语音质量MOS值监测上报，属于运维特性，不直接涉及业务感知配置对象"
+  },
+  {
+    "id": "GWFD-111309",
+    "name": "PCC规则报表上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "PCC规则报表直接反映策略控制(PCCPOLICYGRP/RULE)执行效果，与策略控制场景直接关联"
+  },
+  {
+    "id": "GWFD-111310",
+    "name": "QUIC业务分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "QUIC协议SA识别，是SA能力的协议扩展，反映业务感知覆盖QUIC的能力"
+  },
+  {
+    "id": "GWFD-111311",
+    "name": "业务分析上报订阅",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "报表订阅控制机制，属于报表管理基础设施，不直接涉及业务感知配置对象"
+  },
+  {
+    "id": "GWFD-111312",
+    "name": "系统级智能分析记录生成",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "系统级统计(用户/应用/资源维度)，属于基础运维报表，非业务感知驱动"
+  },
+  {
+    "id": "GWFD-111313",
+    "name": "业务实时分析上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "业务实时分析上报支撑2C套餐验证和2B体验监测，与业务感知闭环关联"
+  },
+  {
+    "id": "GWFD-111315",
+    "name": "VoNR业务质量上报",
+    "dir": "报表功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "VoNR语音质量监测上报，属于运维特性，不直接涉及业务感知配置对象"
+  },
+  {
+    "id": "?",
+    "name": "激活支持专用DNN_APN园区终端互访控制",
+    "dir": "支持专用DNN_APN园区终端互访控制",
+    "type": "md",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "园区终端互访控制属于基础接入配置"
+  },
+  {
+    "id": "GWFD-112003",
+    "name": "智网接入",
+    "dir": "智家随行解决方案",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "智网接入属于家庭网络方案"
+  },
+  {
+    "id": "GWFD-020351",
+    "name": "PCC基本功能",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020353",
+    "name": "基于累计流量的策略控制",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020354",
+    "name": "基于业务的Shaping",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020357",
+    "name": "增强的ADC基本功能",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020358",
+    "name": "业务触发的QoS保证",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020359",
+    "name": "IM类业务无线资源管控",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110281",
+    "name": "用户Portal",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110282",
+    "name": "Web Proxy",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110283",
+    "name": "DNS纠错",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110284",
+    "name": "HTTP智能重定向",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110301",
+    "name": "基于终端系统的码率差异化控制",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110302",
+    "name": "基于上下行解耦的视频承载信令控制",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110311",
+    "name": "基于业务感知的带宽控制",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110312",
+    "name": "基于业务累计流量的策略控制",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110313",
+    "name": "基于智能Shaping的组级带宽控制",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110331",
+    "name": "基于业务流标识的无线资源优化",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110332",
+    "name": "基于小区负荷上报的无线资源优化",
+    "dir": "智能策略控制功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110261",
+    "name": "HTTP头增强",
+    "dir": "智能策略控制功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110262",
+    "name": "RTSP头增强",
+    "dir": "智能策略控制功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110263",
+    "name": "HTTPS头增强",
+    "dir": "智能策略控制功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110401",
+    "name": "HTTP头防欺诈",
+    "dir": "智能策略控制功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-112002",
+    "name": "5G-A高通量会话",
+    "dir": "智能转发解决方案",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "5G-A高通量会话属于大带宽转发优化"
+  },
+  {
+    "id": "GWFD-000104",
+    "name": "用户面自动上线",
+    "dir": "智能运维功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "用户面自动化开站部署特性，与业务感知无关"
+  },
+  {
+    "id": "GWFD-020451",
+    "name": "端到端用户跟踪",
+    "dir": "智能运维功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "端到端用户跟踪调试工具，属于运维特性"
+  },
+  {
+    "id": "GWFD-110493",
+    "name": "云化性能数据采集",
+    "dir": "智能运维功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "云化性能数据采集(接口流量统计)，属于运维监控"
+  },
+  {
+    "id": "GWFD-110921",
+    "name": "支持TWAMP",
+    "dir": "智能运维功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "TWAMP承载网QoS监测协议，属于运维特性"
+  },
+  {
+    "id": "GWFD-000105",
+    "name": "用户面一体化升级",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "用户面多部件一体化升级，属于版本升级运维特性"
+  },
+  {
+    "id": "GWFD-110501",
+    "name": "基于综合KPI的扩容能力增强",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "基于KPI的自动扩容，属于弹性伸缩运维特性"
+  },
+  {
+    "id": "GWFD-110502",
+    "name": "基于综合KPI的缩容能力增强",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "基于KPI的自动缩容，属于弹性伸缩运维特性"
+  },
+  {
+    "id": "GWFD-110581",
+    "name": "超高带宽TCP业务质量分析",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "TCP传输层质量分析辅助问题定位，属于数传问题诊断运维特性"
+  },
+  {
+    "id": "GWFD-110582",
+    "name": "超高带宽UDP业务质量分析",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "UDP传输层质量分析辅助问题定位，属于数传问题诊断运维特性"
+  },
+  {
+    "id": "GWFD-111251",
+    "name": "在线升级",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "ISSU在线Pod滚动升级，属于版本升级运维特性"
+  },
+  {
+    "id": "GWFD-111252",
+    "name": "支持灰度拨测和发布",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "灰度拨测和发布，属于版本升级运维特性"
+  },
+  {
+    "id": "GWFD-111253",
+    "name": "支持灰度升级无损回退",
+    "dir": "智能运维功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "灰度升级无损回退，属于版本升级运维特性"
+  },
+  {
+    "id": "GWFD-000101",
+    "name": "支持云化分布式软件架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "云化分布式/微服务/融合架构属于平台架构"
+  },
+  {
+    "id": "GWFD-000102",
+    "name": "支持微服务架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "云化分布式/微服务/融合架构属于平台架构"
+  },
+  {
+    "id": "GWFD-000103",
+    "name": "支持2G_3G_4G_5G融合架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "云化分布式/微服务/融合架构属于平台架构"
+  },
+  {
+    "id": "?",
+    "name": "NB-IoT",
+    "dir": "物联网功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "NB-IoT/eMTC属于物联网基础接入"
+  },
+  {
+    "id": "?",
+    "name": "eMTC",
+    "dir": "物联网功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "NB-IoT/eMTC属于物联网基础接入"
+  },
+  {
+    "id": "GWFD-010281",
+    "name": "UDG实例化",
+    "dir": "生命周期管理功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "实例化/Scale In/Out/Termination属于NFV运维"
+  },
+  {
+    "id": "GWFD-010282",
+    "name": "支持管理面触发的Scale In",
+    "dir": "生命周期管理功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "实例化/Scale In/Out/Termination属于NFV运维"
+  },
+  {
+    "id": "GWFD-010283",
+    "name": "支持管理面触发的Scale Out",
+    "dir": "生命周期管理功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "实例化/Scale In/Out/Termination属于NFV运维"
+  },
+  {
+    "id": "GWFD-010284",
+    "name": "UDG Termination",
+    "dir": "生命周期管理功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "实例化/Scale In/Out/Termination属于NFV运维"
+  },
+  {
+    "id": "GWFD-010154",
+    "name": "LTE与5G SA网络间互操作",
+    "dir": "移动性管理功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "LTE-5G互操作/移动性管理/Proxy UPF属于移动性基础"
+  },
+  {
+    "id": "GWFD-010191",
+    "name": "移动性管理",
+    "dir": "移动性管理功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "LTE-5G互操作/移动性管理/Proxy UPF属于移动性基础"
+  },
+  {
+    "id": "GWFD-112001",
+    "name": "Proxy UPF漫游功能",
+    "dir": "移动性管理功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "LTE-5G互操作/移动性管理/Proxy UPF属于移动性基础"
+  },
+  {
+    "id": "GWFD-020411",
+    "name": "MPLS VPN",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "MPLS VPN/L2TP VPN/Direct Tunnel/路由交叉属于基础组网"
+  },
+  {
+    "id": "GWFD-020412",
+    "name": "L2TP VPN",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "MPLS VPN/L2TP VPN/Direct Tunnel/路由交叉属于基础组网"
+  },
+  {
+    "id": "GWFD-020422",
+    "name": "Direct Tunnel功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "MPLS VPN/L2TP VPN/Direct Tunnel/路由交叉属于基础组网"
+  },
+  {
+    "id": "GWFD-020423",
+    "name": "支持路由交叉功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "MPLS VPN/L2TP VPN/Direct Tunnel/路由交叉属于基础组网"
+  },
+  {
+    "id": "NPFD-010000",
+    "name": "操作维护功能",
+    "dir": "网管特性",
+    "type": "subdir",
+    "nf": "UNC",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "操作维护/可靠性属于网管基础设施"
+  },
+  {
+    "id": "NPFD-010018",
+    "name": "可靠性功能",
+    "dir": "网管特性",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "操作维护/可靠性属于网管基础设施"
+  },
+  {
+    "id": "GWFD-111331",
+    "name": "支持黄金指标",
+    "dir": "网络质量上报",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "黄金指标属于性能监控运维"
+  },
+  {
+    "id": "GWFD-010171",
+    "name": "离线计费",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-010173",
+    "name": "融合计费",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020300",
+    "name": "在线计费",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020301",
+    "name": "内容计费基本功能",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020302",
+    "name": "基于业务时长的计费",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020303",
+    "name": "基于业务流量的计费",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020304",
+    "name": "关联URL核减",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020306",
+    "name": "支持事件计费",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020307",
+    "name": "TCP重传识别",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020308",
+    "name": "7层流量统计",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020356",
+    "name": "计费信息实时提醒",
+    "dir": "计费功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-020601",
+    "name": "支持QBC计费（适用于SMF）",
+    "dir": "计费功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "GWFD-110404",
+    "name": "HTTPS业务行为识别",
+    "dir": "计费防欺诈功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "HTTPS业务行为识别通过TLS指纹感知HTTPS业务，是SA识别能力的延伸，直接影响计费与策略控制"
+  },
+  {
+    "id": "GWFD-110402",
+    "name": "DNS计费防欺诈",
+    "dir": "计费防欺诈功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "DNS计费防欺诈，通过DNS识别确保计费准确性，与计费场景(NS-01)相关"
+  },
+  {
+    "id": "GWFD-110403",
+    "name": "HTTP计费防欺诈",
+    "dir": "计费防欺诈功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "HTTP计费防欺诈，通过HTTP头增强防篡改确保计费准确性"
+  },
+  {
+    "id": "GWFD-020251",
+    "name": "VoLTE基础语音业务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "VoLTE IMS语音基础接入，属于语音基本功能"
+  },
+  {
+    "id": "GWFD-020252",
+    "name": "SRVCC",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "SRVCC语音连续性，属于语音切换特性"
+  },
+  {
+    "id": "GWFD-020253",
+    "name": "P-CSCF故障时IMS业务恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "P-CSCF故障时IMS恢复，属于语音可靠性"
+  },
+  {
+    "id": "GWFD-020254",
+    "name": "VoLTE业务快速恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "VoLTE业务快速恢复，属于语音可靠性"
+  },
+  {
+    "id": "GWFD-020281",
+    "name": "VoNR基础语音业务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "VoNR 5G语音基础接入，属于语音基本功能"
+  },
+  {
+    "id": "GWFD-020282",
+    "name": "EPS Fallback",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "EPS Fallback 5G语音回落，属于语音切换特性"
+  },
+  {
+    "id": "GWFD-112000",
+    "name": "双故障Bypass",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "双故障Bypass，属于语音可靠性特性"
+  },
+  {
+    "id": "GWFD-020501",
+    "name": "跨域业务访问",
+    "dir": "超级互联功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "跨域业务访问，2C用户访问2B园区，涉及分流策略，与本地分流场景(NS-04)关联"
+  },
+  {
+    "id": "GWFD-020502",
+    "name": "跨域用户漫游",
+    "dir": "超级互联功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "跨域用户漫游，LBO/SHR场景的漫游路由，属于组网特性"
+  },
+  {
+    "id": "GWFD-020531",
+    "name": "通用DNN漫游分流",
+    "dir": "超级互联功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "通用DNN漫游分流，通过SMF建立公网+专网双会话实现分流，与本地分流场景(NS-04)直接关联"
+  },
+  {
+    "id": "GWFD-010224",
+    "name": "N4接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010221",
+    "name": "N3接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010222",
+    "name": "N6接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010223",
+    "name": "N9接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010225",
+    "name": "SGi接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010226",
+    "name": "Gn接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010227",
+    "name": "Gp接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010228",
+    "name": "S1-U接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010229",
+    "name": "S5接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010230",
+    "name": "S8接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010231",
+    "name": "Gi接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010232",
+    "name": "Sxa接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010233",
+    "name": "Sxb接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010234",
+    "name": "Single IP",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010236",
+    "name": "S2b接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-010237",
+    "name": "S11接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/SGi/Gn等接口属于基础接口配置"
+  },
+  {
+    "id": "GWFD-111286",
+    "name": "重点用户质差监测和保障",
+    "dir": "重点业务体验保障功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "VVIP用户体验保障，通过PCF+NWDAF+SMF+UPF闭环，是业务感知高阶场景"
+  },
+  {
+    "id": "GWFD-111284",
+    "name": "体验信息采集",
+    "dir": "重点业务体验保障功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UDG",
+    "status": "纳入",
+    "reason": "体验信息采集，通过用户面业务感知识别应用级体验信息，是体验保障的数据源"
+  },
+  {
+    "id": "WSFD-225002",
+    "name": "5G LAN跨SMF群组管理",
+    "dir": "5G LAN解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G LAN组会话/群组管理等LAN基础"
+  },
+  {
+    "id": "WSFD-225003",
+    "name": "5G LAN业务基本功能",
+    "dir": "5G LAN解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G LAN组会话/群组管理等LAN基础"
+  },
+  {
+    "id": "WSFD-225001",
+    "name": "5G LAN组会话管理",
+    "dir": "5G LAN解决方案",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G LAN组会话/群组管理等LAN基础"
+  },
+  {
+    "id": "?",
+    "name": "Diameter描述",
+    "dir": "Diameter功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "Diameter协议基础"
+  },
+  {
+    "id": "WSFD-104001",
+    "name": "IPv6承载上下文",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IPv6地址/前缀等IPv6基础"
+  },
+  {
+    "id": "WSFD-104002",
+    "name": "IPv4v6双栈接入",
+    "dir": "IPv6功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IPv6地址/前缀等IPv6基础"
+  },
+  {
+    "id": "WSFD-104412",
+    "name": "逻辑接口支持IPV6",
+    "dir": "IPv6功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IPv6地址/前缀等IPv6基础"
+  },
+  {
+    "id": "IPFD-010001",
+    "name": "接口管理",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-010002",
+    "name": "支持VLAN子接口",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-011001",
+    "name": "ARP",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-012001",
+    "name": "QoS",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-012002",
+    "name": "ACL",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-012003",
+    "name": "BFD",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-014000",
+    "name": "路由功能",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "路由功能(静态路由)，属于IP基础特性"
+  },
+  {
+    "id": "IPFD-015002",
+    "name": "GRE",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-016000",
+    "name": "IPSec功能",
+    "dir": "IP基本功能",
+    "type": "subdir",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-015001",
+    "name": "VRF功能",
+    "dir": "IP基本功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "IPFD-017000",
+    "name": "SNMP",
+    "dir": "IP基本功能",
+    "type": "md",
+    "nf": "UDG/UPF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IP协议栈/路由/接口等IP基础特性"
+  },
+  {
+    "id": "WSFD-108002",
+    "name": "基于预定义规则的分流策略控制",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "UL CL预定义规则分流控制，SMF基于DNN/位置/DNAI选择ULCL UPF，与本地分流(NS-04)直接关联"
+  },
+  {
+    "id": "WSFD-108004",
+    "name": "MEC冗余模式故障保护",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MEC冗余模式故障保护，属于可靠性特性"
+  },
+  {
+    "id": "WSFD-108005",
+    "name": "MEC单点模式故障保护",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MEC单点模式故障保护，属于可靠性特性"
+  },
+  {
+    "id": "WSFD-108007",
+    "name": "终端二次鉴权",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "终端二次鉴权，属于安全认证特性"
+  },
+  {
+    "id": "WSFD-223001",
+    "name": "基于位置信息的分流策略控制",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "基于小区粒度的UL CL分流，PCF订阅实时位置+PRA区域控制SMF分流，与本地分流(NS-04)直接关联"
+  },
+  {
+    "id": "WSFD-223003",
+    "name": "基于漫游地动态签约的分流策略控制",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "漫游场景动态签约分流控制，与本地分流(NS-04)关联"
+  },
+  {
+    "id": "WSFD-223004",
+    "name": "基于动态规则的分流策略控制",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "AF/NEF动态下发分流规则到SMF，与本地分流(NS-04)关联"
+  },
+  {
+    "id": "WSFD-223005",
+    "name": "SMF选择ULCL合一策略增强",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF选择ULCL合一组网，属于基础组网配置"
+  },
+  {
+    "id": "WSFD-223006",
+    "name": "基于DNN插入I-UPF",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "基于DNN插入I-UPF，属于基础组网配置"
+  },
+  {
+    "id": "WSFD-223101",
+    "name": "基于预定义规则的分流策略控制(4G)",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "4G侧预定义规则分流策略控制，与本地分流(NS-04)关联"
+  },
+  {
+    "id": "WSFD-223102",
+    "name": "基于动态规则的分流策略控制(4G)",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "4G侧AF/PCRF动态下发分流规则，与本地分流(NS-04)关联"
+  },
+  {
+    "id": "WSFD-228001",
+    "name": "跨域业务访问",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "跨域UL CL分流实现2C用户访问2B业务+公网，与本地分流(NS-04)关联"
+  },
+  {
+    "id": "WSFD-228002",
+    "name": "基于通用DNN的漫游分流",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "通用DNN漫游分流，公网+专网双会话，与本地分流(NS-04)关联"
+  },
+  {
+    "id": "WSFD-228003",
+    "name": "公网私网业务独立计费",
+    "dir": "MEC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "公网/私网业务独立计费，通用DNN漫游+专用DNN分流，与计费(NS-01)+本地分流(NS-04)直接关联"
+  },
+  {
+    "id": "WSFD-011601",
+    "name": "NB-IoT终端标准接入",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-011602",
+    "name": "支持M2M长周期性定时器",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-011603",
+    "name": "NB-IoT UE状态上报功能",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215001",
+    "name": "终端省电PSM模式",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215002",
+    "name": "NB-IoT eDRX模式",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215101",
+    "name": "基于信令面的数据传输",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215102",
+    "name": "NB-IoT用户面传输通道保活",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215103",
+    "name": "Non-IP数据传输",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215104",
+    "name": "NB-IoT基于SGs接口的短消息",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215105",
+    "name": "基于信令面数据传输的Qos差异化控制",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215201",
+    "name": "基于延迟定时器的信令拥塞控制",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215202",
+    "name": "基于eNodeB覆盖等级的寻呼",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215203",
+    "name": "低优先级接入控制",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215204",
+    "name": "基于APN的NB-IoT终端接入速率控制",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215205",
+    "name": "基于服务PLMN的NB-IoT终端接入速率控制",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215301",
+    "name": "HSS免升级",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215302",
+    "name": "PCRF免升级",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215401",
+    "name": "NB-IoT终端异常信令与流量管理",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215501",
+    "name": "支持Category NB2接入",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-215502",
+    "name": "支持2 HARQ终端接入",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-990005",
+    "name": "支持RedCap eDRX功能",
+    "dir": "NB-IoT业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NB-IoT物联网基础接入和业务特性"
+  },
+  {
+    "id": "WSFD-011502",
+    "name": "NSA(Opt.3)双连接管理",
+    "dir": "NSA业务基本功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-011503",
+    "name": "支持基于终端能力接入管理",
+    "dir": "NSA业务基本功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-011511",
+    "name": "NSA用户数据话单生成和上报",
+    "dir": "NSA业务基本功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-011521",
+    "name": "NSA用户QoS管理",
+    "dir": "NSA业务基本功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-011522",
+    "name": "NSA自动开户",
+    "dir": "NSA业务基本功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-104601",
+    "name": "支持基于终端能力选择用户面",
+    "dir": "NSA业务基本功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-104602",
+    "name": "NSA用户业务连续性保障",
+    "dir": "NSA业务基本功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-011501",
+    "name": "NSA(Opt.3)组网",
+    "dir": "NSA业务基本功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G NSA双连接基础"
+  },
+  {
+    "id": "WSFD-010701",
+    "name": "QoS与流量管理",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "QoS基础框架，Diff-Serv模型+3GPP QoS分类，与带宽控制(NS-02)关联"
+  },
+  {
+    "id": "WSFD-010702",
+    "name": "支持背景类、交互类、流类QoS等级业务承载",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "背景类/交互类/流类QoS业务承载，属于传统3G QoS分类"
+  },
+  {
+    "id": "WSFD-010703",
+    "name": "增强的QoS",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "增强的QoS特性，属于基础QoS增强"
+  },
+  {
+    "id": "WSFD-105001",
+    "name": "QoS覆盖",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SGSN QoS覆盖(版本转换)，属于传统2G/3G特性"
+  },
+  {
+    "id": "WSFD-105002",
+    "name": "漫游用户QoS限制",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游用户QoS限速，属于漫游QoS配置"
+  },
+  {
+    "id": "WSFD-105004",
+    "name": "逻辑接口DSCP配置",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "逻辑接口DSCP标记配置，属于基础QoS标记"
+  },
+  {
+    "id": "WSFD-105007",
+    "name": "5G QoS到4G QoS灵活映射",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "5G到4G QoS映射，属于QoS互操作配置"
+  },
+  {
+    "id": "WSFD-105101",
+    "name": "PFC（仅用于Gb 模式）",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PFC(2G Gb模式)，属于传统2G特性"
+  },
+  {
+    "id": "WSFD-105102",
+    "name": "提供会话类QoS等级业务承载",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "会话类QoS等级业务承载，VoIP/视频带宽保障，与带宽控制(NS-02)关联"
+  },
+  {
+    "id": "WSFD-105103",
+    "name": "基于用户等级的QCI扩展",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "基于用户等级的QCI扩展，属于基础QoS配置"
+  },
+  {
+    "id": "WSFD-105104",
+    "name": "基于IMSI号段的QoS控制",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "基于IMSI号段的QoS控制，属于基础QoS配置"
+  },
+  {
+    "id": "WSFD-105105",
+    "name": "PCC模式的本地QoS策略控制",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PCC模式本地QoS策略控制，属于基础QoS配置"
+  },
+  {
+    "id": "WSFD-109202",
+    "name": "会话类QOS保证",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "会话类QOS保证(流分类/带宽控制/高优先级队列)，与带宽控制(NS-02)关联"
+  },
+  {
+    "id": "WSFD-109203",
+    "name": "本地QOS控制",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "本地QOS策略控制，SMF本地QoS规则下发，与带宽控制(NS-02)关联"
+  },
+  {
+    "id": "WSFD-109204",
+    "name": "QCI 扩展",
+    "dir": "QoS功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "QCI扩展，属于基础QoS参数扩展"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric可靠性",
+    "dir": "ServiceFabric特性",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "容器平台基础设施"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric基本功能",
+    "dir": "ServiceFabric特性",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "容器平台基础设施"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric存储和网络",
+    "dir": "ServiceFabric特性",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "容器平台基础设施"
+  },
+  {
+    "id": "?",
+    "name": "Service Fabric微服务",
+    "dir": "ServiceFabric特性",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "容器平台基础设施"
+  },
+  {
+    "id": "WSFD-216001",
+    "name": "eMTC终端省电PSM模式",
+    "dir": "eMTC业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "eMTC物联网基础特性"
+  },
+  {
+    "id": "WSFD-216002",
+    "name": "eMTC eDRX模式",
+    "dir": "eMTC业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "eMTC物联网基础特性"
+  },
+  {
+    "id": "WSFD-216101",
+    "name": "eMTC基于延迟定时器的信令拥塞控制",
+    "dir": "eMTC业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "eMTC物联网基础特性"
+  },
+  {
+    "id": "WSFD-216102",
+    "name": "eMTC基于eNodeB覆盖等级的寻呼",
+    "dir": "eMTC业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "eMTC物联网基础特性"
+  },
+  {
+    "id": "WSFD-216103",
+    "name": "eMTC低优先级接入控制",
+    "dir": "eMTC业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "eMTC物联网基础特性"
+  },
+  {
+    "id": "WSFD-216104",
+    "name": "基于APN的eMTC终端接入速率控制",
+    "dir": "eMTC业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "eMTC物联网基础特性"
+  },
+  {
+    "id": "WSFD-216105",
+    "name": "基于服务PLMN的eMTC终端接入速率控制",
+    "dir": "eMTC业务功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "eMTC物联网基础特性"
+  },
+  {
+    "id": "?",
+    "name": "DNS查询",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-011002",
+    "name": "系统间改变",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104501",
+    "name": "LTE和UMTS 网络之间的重选",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104502",
+    "name": "LTE和GSM 网络之间的重选",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104503",
+    "name": "LTE和UMTS PS网络之间的切换",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104504",
+    "name": "CDMA与LTE的非优化切换",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104505",
+    "name": "LTE和WiFi 网络之间的切换",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104507",
+    "name": "切换策略控制",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104510",
+    "name": "LTE与5G SA网络间重选",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-104511",
+    "name": "LTE与5G SA网络间切换",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-106207",
+    "name": "基于SPID的UE驻留和切换策略管理",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-110006",
+    "name": "支持4G到5G多切片时的重选",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-201301",
+    "name": "E-UTRAN和WLAN互操作",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-201303",
+    "name": "支持NG-RAN和WLAN互操作",
+    "dir": "互操作功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "?",
+    "name": "DNS查询",
+    "dir": "互操作功能",
+    "type": "md",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "LTE-5G/2G-3G-4G互操作基础"
+  },
+  {
+    "id": "WSFD-010501",
+    "name": "会话管理",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-010502",
+    "name": "地址分配方式",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-010503",
+    "name": "支持多PDN_PDU功能",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-010504",
+    "name": "控制面地址分配方式",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-010900",
+    "name": "IP承载业务",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-104005",
+    "name": "DHCPv6地址分配",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-104413",
+    "name": "DHCP功能",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-106004",
+    "name": "请求信息纠正功能",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-106006",
+    "name": "网络侧二次激活",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-106203",
+    "name": "别名APN",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-106205",
+    "name": "主动分离未激活用户",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-106206",
+    "name": "去激活空闲PDP上下文",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-205102",
+    "name": "虚拟APN",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-205105",
+    "name": "上下文回收管理",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "?",
+    "name": "终端侧发起二次激活",
+    "dir": "会话管理功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "PDU会话建立/修改/释放等会话基础管理"
+  },
+  {
+    "id": "WSFD-106401",
+    "name": "位置定位服务（LCS）",
+    "dir": "位置业务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "位置服务/紧急呼叫/Cell Broadcast等"
+  },
+  {
+    "id": "WSFD-106406",
+    "name": "基于号段选择LMF",
+    "dir": "位置业务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "位置服务/紧急呼叫/Cell Broadcast等"
+  },
+  {
+    "id": "WSFD-106407",
+    "name": "LMF选择功能",
+    "dir": "位置业务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "位置服务/紧急呼叫/Cell Broadcast等"
+  },
+  {
+    "id": "WSFD-106701",
+    "name": "网络侧发起的5G位置定位服务",
+    "dir": "位置业务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "位置服务/紧急呼叫/Cell Broadcast等"
+  },
+  {
+    "id": "WSFD-205013",
+    "name": "网络拥塞的实时检测",
+    "dir": "位置业务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "位置服务/紧急呼叫/Cell Broadcast等"
+  },
+  {
+    "id": "WSFD-107020",
+    "name": "支持基于UPF位置的DNS选择",
+    "dir": "分布式网络功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "CUPS/SSC/冗余等分布式架构基础"
+  },
+  {
+    "id": "WSFD-107021",
+    "name": "静态地址用户路由冗余",
+    "dir": "分布式网络功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "CUPS/SSC/冗余等分布式架构基础"
+  },
+  {
+    "id": "WSFD-223002",
+    "name": "公私网协同访问（含共享UPF选择）",
+    "dir": "分布式网络功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "CUPS/SSC/冗余等分布式架构基础"
+  },
+  {
+    "id": "WSFD-107001",
+    "name": "支持CUPS架构",
+    "dir": "分布式网络功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "CUPS/SSC/冗余等分布式架构基础"
+  },
+  {
+    "id": "WSFD-107005",
+    "name": "GW-U选择",
+    "dir": "分布式网络功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "CUPS/SSC/冗余等分布式架构基础"
+  },
+  {
+    "id": "WSFD-107010",
+    "name": "UPF选择",
+    "dir": "分布式网络功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "CUPS/SSC/冗余等分布式架构基础"
+  },
+  {
+    "id": "WSFD-107015",
+    "name": "支持SSC Mode1",
+    "dir": "分布式网络功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "CUPS/SSC/冗余等分布式架构基础"
+  },
+  {
+    "id": "WSFD-010005",
+    "name": "负荷动态调整",
+    "dir": "可靠性",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "过载控制/故障检测/自愈等可靠性基础"
+  },
+  {
+    "id": "WSFD-010600",
+    "name": "路径管理",
+    "dir": "可靠性",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "过载控制/故障检测/自愈等可靠性基础"
+  },
+  {
+    "id": "WSFD-104404",
+    "name": "基于权重_优先级的Diameter负荷分担",
+    "dir": "可靠性",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "过载控制/故障检测/自愈等可靠性基础"
+  },
+  {
+    "id": "WSFD-209002",
+    "name": "磁盘故障隔离",
+    "dir": "可靠性",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "过载控制/故障检测/自愈等可靠性基础"
+  },
+  {
+    "id": "WSFD-213002",
+    "name": "NF业务可靠性保障",
+    "dir": "可靠性",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "过载控制/故障检测/自愈等可靠性基础"
+  },
+  {
+    "id": "WSFD-010807",
+    "name": "N2接口支持多连接",
+    "dir": "可靠性",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "过载控制/故障检测/自愈等可靠性基础"
+  },
+  {
+    "id": "WSFD-209001",
+    "name": "业务处理单元可靠性可定义",
+    "dir": "可靠性",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "过载控制/故障检测/自愈等可靠性基础"
+  },
+  {
+    "id": "WSFD-010102",
+    "name": "Untrusted Non-3GPP网络用户接入",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-010105",
+    "name": "支持GSM_UMTS_LTE共接入",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-010106",
+    "name": "GERAN_UTRAN双接入",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-010110",
+    "name": "支持RedCap接入",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-010112",
+    "name": "支持FWA接入",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-010201",
+    "name": "移动性管理",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-010202",
+    "name": "基于位置区域的对等网元选择",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-011301",
+    "name": "基于原因值的UE行为调整",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-106003",
+    "name": "用户接入控制功能",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-106005",
+    "name": "支持ODB",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-106008",
+    "name": "一号多卡功能",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-106009",
+    "name": "多时区业务",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-106012",
+    "name": "支持Null-MSISDN",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-201302",
+    "name": "支持WLAN与GSM_UMTS_LTE双流并发",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "?",
+    "name": "用户事件订阅与上报",
+    "dir": "基本接入功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "附着/去附着/鉴权/标识管理/用户数据管理等基础接入"
+  },
+  {
+    "id": "WSFD-010301",
+    "name": "鉴权功能",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010302",
+    "name": "用户身份保密性功能",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010303",
+    "name": "NAS信令加密与完整性保护",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010304",
+    "name": "身份识别功能",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010305",
+    "name": "个人隐私数据保护",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010308",
+    "name": "SBI接口加密",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010309",
+    "name": "证书管理",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010400",
+    "name": "用户数据管理",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-103000",
+    "name": "支持GPRS 加密功能：GEA（仅用于Gb 模式）",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-103004",
+    "name": "设备标识检查",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-103005",
+    "name": "基于用户群的灵活鉴权",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-103006",
+    "name": "1_N设备标识检查",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-219000",
+    "name": "内生安全",
+    "dir": "安全管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010306",
+    "name": "密钥安全性管理",
+    "dir": "安全管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-010805",
+    "name": "Linux操作系统安全加固",
+    "dir": "安全管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "WSFD-103007",
+    "name": "IMSI隐私保护",
+    "dir": "安全管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "DDoS防护/安全加固/密钥管理等安全基础设施"
+  },
+  {
+    "id": "?",
+    "name": "MME容灾方案",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "?",
+    "name": "SGSN容灾方案",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-104202",
+    "name": "MSC Pool内的用户迁移（Gs接口）",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-104301",
+    "name": "AMF Pool",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-104302",
+    "name": "AMF Pool用户迁移",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-110011",
+    "name": "NSSF主备容灾",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-110012",
+    "name": "NSSF双活容灾",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-114001",
+    "name": "NRF主备容灾",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-114002",
+    "name": "NRF双活容灾",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-130011",
+    "name": "SMSF双活容灾",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-206101",
+    "name": "UDM全故障业务保活",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-206102",
+    "name": "HSS全故障业务保活",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-213001",
+    "name": "CU FullMesh组网",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-213004",
+    "name": "GW-U故障隔离",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-213005",
+    "name": "UPF故障隔离",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-213006",
+    "name": "N6接口故障隔离",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-217001",
+    "name": "用户面业务通道保活",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "?",
+    "name": "容灾功能概述",
+    "dir": "容灾功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "网元级/板级/进程级容灾保护"
+  },
+  {
+    "id": "WSFD-011303",
+    "name": "基于IMEI的LTE差异化服务",
+    "dir": "差异化服务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IMEI差异化/APN流控/IM管控等RAN侧重差异化"
+  },
+  {
+    "id": "WSFD-011311",
+    "name": "基于IMEI的NR差异化服务",
+    "dir": "差异化服务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IMEI差异化/APN流控/IM管控等RAN侧重差异化"
+  },
+  {
+    "id": "WSFD-106302",
+    "name": "基于APN的接入速率控制",
+    "dir": "差异化服务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IMEI差异化/APN流控/IM管控等RAN侧重差异化"
+  },
+  {
+    "id": "WSFD-106303",
+    "name": "基于ARP的差异化服务",
+    "dir": "差异化服务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IMEI差异化/APN流控/IM管控等RAN侧重差异化"
+  },
+  {
+    "id": "WSFD-106304",
+    "name": "Super-Charger功能",
+    "dir": "差异化服务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IMEI差异化/APN流控/IM管控等RAN侧重差异化"
+  },
+  {
+    "id": "WSFD-106305",
+    "name": "IM类业务资源管控",
+    "dir": "差异化服务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IMEI差异化/APN流控/IM管控等RAN侧重差异化"
+  },
+  {
+    "id": "WSFD-106306",
+    "name": "快速移动用户业务保障",
+    "dir": "差异化服务管理",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "IMEI差异化/APN流控/IM管控等RAN侧重差异化"
+  },
+  {
+    "id": "NPFD-010013",
+    "name": "跟踪功能",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010014",
+    "name": "支持NTP功能",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-011302",
+    "name": "分区域网络运维",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-106101",
+    "name": "端到端用户跟踪",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-113013",
+    "name": "NRF全故障业务逃生(Bypass)",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-202001",
+    "name": "CHR功能",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-202002",
+    "name": "支持HTTP头压缩字典",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-227102",
+    "name": "支持灰度拨测和发布",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-230001",
+    "name": "动态UE Logo下发",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-230002",
+    "name": "支持RFSP选频选网",
+    "dir": "操作维护功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010001",
+    "name": "性能管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010002",
+    "name": "软件管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010003",
+    "name": "故障管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010004",
+    "name": "设备管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010005",
+    "name": "配置管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010006",
+    "name": "安全管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010007",
+    "name": "日志管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010008",
+    "name": "联机帮助",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010009",
+    "name": "软件补丁",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010010",
+    "name": "在线加载",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010011",
+    "name": "远程维护",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010017",
+    "name": "SSH功能",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010018",
+    "name": "可靠性功能",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "NPFD-010019",
+    "name": "拓扑管理",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-011304",
+    "name": "峰值LICENSE控制",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-011406",
+    "name": "高危命令防呆和提醒",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-011407",
+    "name": "运维特性增强",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-202003",
+    "name": "黄金指标实时上报",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-209205",
+    "name": "云化性能数据采集",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-227101",
+    "name": "在线升级",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-227103",
+    "name": "灰度升级在线回退",
+    "dir": "操作维护功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "告警/性能/备份/升级/配置等操作维护基础设施"
+  },
+  {
+    "id": "WSFD-109101",
+    "name": "PCC基本功能",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109102",
+    "name": "ADC基本功能",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109103",
+    "name": "IPv6 SA",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109104",
+    "name": "基于累计流量的策略控制",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109105",
+    "name": "基于位置的业务管理",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109107",
+    "name": "业务触发的QoS保证",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109108",
+    "name": "基于接入点策略控制",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109301",
+    "name": "网络侧发起专有PDP_承载建立",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109302",
+    "name": "网络侧发起专有PDP_承载建立扩展包1",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109303",
+    "name": "网络侧发起专有PDP_承载建立扩展包2",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109304",
+    "name": "缺省承载GBR保障",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-211001",
+    "name": "基于初始接入位置的策略控制",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-211005",
+    "name": "基于业务感知的带宽控制",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-211009",
+    "name": "基于业务累计流量的策略控制",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-211101",
+    "name": "基于小区负荷上报的无线资源优化",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "?",
+    "name": "基于实时位置的策略控制",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "?",
+    "name": "基于指定区域的策略控制",
+    "dir": "智能PCC解决方案",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "?",
+    "name": "基于实时位置的策略控制",
+    "dir": "智能PCC解决方案",
+    "type": "md",
+    "nf": "?",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-010000",
+    "name": "支持SBA架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NRF/NF发现/SBI等SBA基础设施"
+  },
+  {
+    "id": "WSFD-010001",
+    "name": "支持云化分布式软件架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NRF/NF发现/SBI等SBA基础设施"
+  },
+  {
+    "id": "WSFD-010002",
+    "name": "支持2_3_4_5G融合架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NRF/NF发现/SBI等SBA基础设施"
+  },
+  {
+    "id": "WSFD-010003",
+    "name": "支持微服务架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NRF/NF发现/SBI等SBA基础设施"
+  },
+  {
+    "id": "WSFD-010004",
+    "name": "事件统一管理架构",
+    "dir": "服务化架构功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NRF/NF发现/SBI等SBA基础设施"
+  },
+  {
+    "id": "WSFD-010801",
+    "name": "系统过载控制功能",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-010802",
+    "name": "周边网元过载保护",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-010803",
+    "name": "下行数据通知信令抑制",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-010804",
+    "name": "智能信令风暴平滑处理",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-010901",
+    "name": "基于TA List的寻呼自动流控",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-104102",
+    "name": "MME过载控制",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206001",
+    "name": "精准寻呼",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206002",
+    "name": "LTE UE信令控制",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206003",
+    "name": "基于APN的信令拥塞控制",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206004",
+    "name": "固定终端寻呼优化",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206005",
+    "name": "Smartphone控制基础功能",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206006",
+    "name": "Smartphone异常信令节省",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206007",
+    "name": "Smartphone话务模型统计",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206008",
+    "name": "5G UE信令控制",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206009",
+    "name": "网元间HTR流控",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-206010",
+    "name": "基于分组的智能寻呼",
+    "dir": "流控功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "信令/会话/承载级流控和过载保护"
+  },
+  {
+    "id": "WSFD-011001",
+    "name": "漫游控制",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-011003",
+    "name": "鉴权3元组和5元组转换功能",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-011004",
+    "name": "Gn接口同时支持GTPv0和GTPv1",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-011005",
+    "name": "支持R98_R99_R4_R5_R6_R7的话单格式",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-011006",
+    "name": "支持R97_98 QoS和R99 QoS之间的映射",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-011310",
+    "name": "PLMN标识获取",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-104512",
+    "name": "跨区域移动性管理",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-105003",
+    "name": "区域漫游限制",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-105006",
+    "name": "服务区域限制",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-205012",
+    "name": "跨域互联互通",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-205107",
+    "name": "GGSN_P-GW信令代理",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-224001",
+    "name": "支持SA国际漫游接入",
+    "dir": "漫游管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-224101",
+    "name": "漫游场景下LTE与5G SA网络间重选",
+    "dir": "漫游管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-224102",
+    "name": "漫游场景下LTE与5G SA网络间切换",
+    "dir": "漫游管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-224104",
+    "name": "支持拜访地QoS控制",
+    "dir": "漫游管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-224105",
+    "name": "国际漫游切片映射",
+    "dir": "漫游管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "漫游路由/漫游计费/漫游QoS等漫游基础"
+  },
+  {
+    "id": "WSFD-011400",
+    "name": "UNC生命周期管理",
+    "dir": "生命周期管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NFV实例化/弹性伸缩等生命周期"
+  },
+  {
+    "id": "?",
+    "name": "2_3_4_5G短消息",
+    "dir": "短消息功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMS over NAS/IP等短消息基础"
+  },
+  {
+    "id": "?",
+    "name": "5G短消息",
+    "dir": "短消息功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMS over NAS/IP等短消息基础"
+  },
+  {
+    "id": "WSFD-011305",
+    "name": "Radius鉴权接入",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-011306",
+    "name": "Radius功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-011307",
+    "name": "支持Radius抄送功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-011308",
+    "name": "AAA负荷分担",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104004",
+    "name": "IPv6前缀代理",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104401",
+    "name": "支持多HPLMN功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104402",
+    "name": "eNodeB SON信息传送功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104405",
+    "name": "基于SGs和Sv接口的默认MSC选择",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104406",
+    "name": "NACC",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104409",
+    "name": "多信令点功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104410",
+    "name": "L2TP VPN",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104411",
+    "name": "MPLS VPN",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104417",
+    "name": "eNB IP冲突检测",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104506",
+    "name": "支持Direct Tunnel功能",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104508",
+    "name": "SCTP",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-104509",
+    "name": "SGSN的黑白名单",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-205101",
+    "name": "支持Routing Behind MS",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "?",
+    "name": "支持NBNS（NetBIOS Name Server）",
+    "dir": "组网功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "?",
+    "name": "支持NBNS（NetBIOS Name Server）",
+    "dir": "组网功能",
+    "type": "md",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MPLS/L2TP/Direct Tunnel/路由交叉等基础组网"
+  },
+  {
+    "id": "WSFD-205001",
+    "name": "网关路由选择功能",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205002",
+    "name": "基于计费属性选择网关",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205003",
+    "name": "基于位置区域选择网关",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205004",
+    "name": "S-GW_P-GW拓扑选择",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205005",
+    "name": "基于UE接入能力选择网关",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205006",
+    "name": "基于P-GW锚点选择S-GW",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205007",
+    "name": "本地P-GW的PDN重建",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205008",
+    "name": "Category 6网关选择",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205009",
+    "name": "基于HeNB GW的HeNB接入",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205010",
+    "name": "基于服务区域的SMF选择",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205011",
+    "name": "本地PDU会话重建",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-205015",
+    "name": "SMF支持多服务区",
+    "dir": "网关选择功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "SMF/UPF/AMF选择等网元选择基础"
+  },
+  {
+    "id": "WSFD-010108",
+    "name": "支持增强的对等PLMN功能",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-106204",
+    "name": "基于无线区域的网络地址选择",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-207001",
+    "name": "网络共享（MOCN）",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-207002",
+    "name": "网络共享（GWCN）",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-207003",
+    "name": "基于LTE的网络共享（MOCN）",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-207004",
+    "name": "基于LTE的网络共享（GWCN）",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-207005",
+    "name": "MVNO",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-207006",
+    "name": "基于LTE的MVNO",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-207007",
+    "name": "基于5G的网络共享（MOCN）",
+    "dir": "网络共享功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "MOCN/GWCN等多运营商共享"
+  },
+  {
+    "id": "WSFD-110001",
+    "name": "支持基于NSSAI选择切片",
+    "dir": "网络切片功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NSSAI切片选择/切片模式等基础切片"
+  },
+  {
+    "id": "WSFD-110004",
+    "name": "基于TA的网络切片选择",
+    "dir": "网络切片功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NSSAI切片选择/切片模式等基础切片"
+  },
+  {
+    "id": "WSFD-110005",
+    "name": "支持网络切片模式下发",
+    "dir": "网络切片功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NSSAI切片选择/切片模式等基础切片"
+  },
+  {
+    "id": "WSFD-110009",
+    "name": "支持不同PLMN切片能力差异化",
+    "dir": "网络切片功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NSSAI切片选择/切片模式等基础切片"
+  },
+  {
+    "id": "WSFD-111000",
+    "name": "NRF基本功能",
+    "dir": "网络自治功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "自配置/自愈合/自优化等自治特性"
+  },
+  {
+    "id": "WSFD-111006",
+    "name": "NRF基础运维",
+    "dir": "网络自治功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "自配置/自愈合/自优化等自治特性"
+  },
+  {
+    "id": "WSFD-112000",
+    "name": "NF认证",
+    "dir": "网络自治功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "自配置/自愈合/自优化等自治特性"
+  },
+  {
+    "id": "WSFD-113000",
+    "name": "NF发现",
+    "dir": "网络自治功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "自配置/自愈合/自优化等自治特性"
+  },
+  {
+    "id": "WSFD-214000",
+    "name": "NRF分层组网",
+    "dir": "网络自治功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "自配置/自愈合/自优化等自治特性"
+  },
+  {
+    "id": "WSFD-214100",
+    "name": "NRF增强功能",
+    "dir": "网络自治功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "自配置/自愈合/自优化等自治特性"
+  },
+  {
+    "id": "WSFD-011201",
+    "name": "支持离线计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-011202",
+    "name": "支持热计费功能",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-011206",
+    "name": "支持融合计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-011309",
+    "name": "支持用户属性反射",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-104003",
+    "name": "IPv6在线计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109001",
+    "name": "Gy_Diameter在线计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109002",
+    "name": "内容计费基本功能",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109003",
+    "name": "基于业务时长的计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109004",
+    "name": "基于业务流量的计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109005",
+    "name": "支持CoA功能",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109006",
+    "name": "ASN漫游计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109007",
+    "name": "支持事件计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-224103",
+    "name": "支持QBC计费",
+    "dir": "计费管理功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "WSFD-109008",
+    "name": "OCS Bypass",
+    "dir": "计费管理功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "纳入",
+    "reason": "用户要求"
+  },
+  {
+    "id": "?",
+    "name": "VoLTE业务流程",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102001",
+    "name": "VoLTE基础语音业务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102003",
+    "name": "SRVCC",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102004",
+    "name": "基于VoLTE的优先语音服务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102005",
+    "name": "基于VoLTE的信令最短路径优选",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102101",
+    "name": "VoLTE紧急呼叫",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102102",
+    "name": "VoLTE紧急呼叫的定位(NI-LR)",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102202",
+    "name": "P-CSCF故障时IMS业务恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102203",
+    "name": "基于PCRF_PCF的VoLTE业务快速恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102301",
+    "name": "基于CSFB的语音业务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102401",
+    "name": "基于CSFB的USSD业务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102402",
+    "name": "基于CSFB的LCS业务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102403",
+    "name": "基于CSFB的LA&TA协同",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102404",
+    "name": "基于CSFB的LA快速选择",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102501",
+    "name": "CSFB紧急呼叫",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102502",
+    "name": "基于CSFB的优先语音服务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102503",
+    "name": "CSFB被叫恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102504",
+    "name": "MSC Pool场景下的CSFB",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102505",
+    "name": "基于CSFB的Multi PLMN",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102506",
+    "name": "Flash CSFB with RIM",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102600",
+    "name": "Push to Talk（适用于MME）",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102600",
+    "name": "Push to Talk（适用于PGW-C_SGW-C）",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102701",
+    "name": "VoNR基础语音业务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102702",
+    "name": "EPS Fallback",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102703",
+    "name": "EPS Fallback紧急呼叫",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102705",
+    "name": "基于VoNR的优先语音服务",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102706",
+    "name": "VoNR紧急呼叫",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-102707",
+    "name": "VoNR紧急呼叫的定位(NI-LR)",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-107019",
+    "name": "P-CSCF选择",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201001",
+    "name": "基于SRVCC的数据语音双切换",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201002",
+    "name": "用户群语音策略控制",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201003",
+    "name": "网络语音业务信息上报功能",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201004",
+    "name": "基于IMEI的语音策略控制",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201005",
+    "name": "基于区域的语音策略控制",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201007",
+    "name": "SRVCC的MSC拓扑选择",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201101",
+    "name": "VoLTE一号多卡",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201102",
+    "name": "语音业务的位置信息策略控制功能",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201103",
+    "name": "IMS功能",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201201",
+    "name": "MME链式备份",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201202",
+    "name": "本地VLR",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201203",
+    "name": "S-GW_P-GW故障下的业务恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201204",
+    "name": "VoLTE承载故障快速恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201205",
+    "name": "基于HSS的P-CSCF故障恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201207",
+    "name": "语音PCF_PCRF故障Bypass",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201208",
+    "name": "VoLTE承载延时保活",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-201305",
+    "name": "支持VoWiFi到EPS Fallback的切换",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-221001",
+    "name": "VoNR承载延时保活",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-221002",
+    "name": "基于UDM的VoNR语音故障恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-221003",
+    "name": "基于PCF的VoNR业务快速恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-221004",
+    "name": "基于AMF的寻呼流控",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-221005",
+    "name": "SMF故障下的业务恢复",
+    "dir": "语音功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "VoLTE/VoNR/SRVCC/EPS Fallback等语音基础功能"
+  },
+  {
+    "id": "WSFD-220001",
+    "name": "NAS IMR信令上报",
+    "dir": "软探针数据采集功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NAS IMR/SBI IMR信令采集运维"
+  },
+  {
+    "id": "WSFD-220002",
+    "name": "SBI IMR信令上报",
+    "dir": "软探针数据采集功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "NAS IMR/SBI IMR信令采集运维"
+  },
+  {
+    "id": "WSFD-011101",
+    "name": "Gb接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011102",
+    "name": "Iu接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011107",
+    "name": "Gn接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011108",
+    "name": "Gp接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011111",
+    "name": "SS7接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011125",
+    "name": "S5接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011126",
+    "name": "S8接口",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011132",
+    "name": "Gx over DRA",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011133",
+    "name": "Gy over DRA",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011134",
+    "name": "S6b over DRA",
+    "dir": "逻辑接口功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011103",
+    "name": "S1-MME接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011104",
+    "name": "S6a接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011105",
+    "name": "S10接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011106",
+    "name": "S11接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011112",
+    "name": "S13接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011116",
+    "name": "T6a接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011118",
+    "name": "S2b接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011119",
+    "name": "SGi 接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011120",
+    "name": "S6b接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011127",
+    "name": "Ga接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011128",
+    "name": "Gy接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011129",
+    "name": "Gx接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011130",
+    "name": "Gi接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011131",
+    "name": "S6a over DRA",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011135",
+    "name": "N2接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011136",
+    "name": "N4接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011137",
+    "name": "N26接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011138",
+    "name": "服务化接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011139",
+    "name": "L2_L3跟踪",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011140",
+    "name": "Single IP",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011141",
+    "name": "支持NETCONF",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-011144",
+    "name": "支持与SEPP对接",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "WSFD-104407",
+    "name": "支持Gs接口",
+    "dir": "逻辑接口功能",
+    "type": "md",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "N3/N4/N6/N9/S1-U/S5/S8/Gn/Gp等接口基础配置"
+  },
+  {
+    "id": "?",
+    "name": "Category 2_3_4_6_9_10_11_12_15__f3fbfb9d",
+    "dir": "高速数据连接功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "高速数据链路/HDLC等基础传输"
+  },
+  {
+    "id": "?",
+    "name": "HSDPA功能及其扩展包",
+    "dir": "高速数据连接功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "高速数据链路/HDLC等基础传输"
+  },
+  {
+    "id": "?",
+    "name": "HSUPA功能及其扩展包",
+    "dir": "高速数据连接功能",
+    "type": "subdir",
+    "nf": "?",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "高速数据链路/HDLC等基础传输"
+  },
+  {
+    "id": "WSFD-106002",
+    "name": "支持EDGE功能（仅用于Gb模式）",
+    "dir": "高速数据连接功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "高速数据链路/HDLC等基础传输"
+  },
+  {
+    "id": "WSFD-210000",
+    "name": "5G超高带宽基本功能",
+    "dir": "高速数据连接功能",
+    "type": "subdir",
+    "nf": "UNC/SMF",
+    "source": "UNC",
+    "status": "排除",
+    "reason": "高速数据链路/HDLC等基础传输"
+  }
+]

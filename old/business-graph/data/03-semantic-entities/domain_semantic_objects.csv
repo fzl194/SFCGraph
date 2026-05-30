@@ -1,0 +1,16 @@
+semantic_object_id,semantic_object_name,semantic_category,definition_boundary,typical_landing_json,source_path,status
+BA.SubjectSemantics,生效对象语义,subject,描述业务感知规则或策略对谁生效，包括用户、用户组、DNN/APN、UserProfile 等范围对象,"[""Scope"",""UserProfile"",""UserProfileGroup"",""DNN/APN""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.TrafficRecognitionSemantics,流量识别语义,recognition,描述如何识别目标业务流，包括三四层、协议、URL/Host、IP 范围等条件,"[""Filter"",""L7Filter"",""FlowFilter"",""IPList""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.RuleSemantics,规则语义,rule,描述识别条件、动作、优先级、策略类型和绑定之间如何组合为可执行规则,"[""Rule"",""RuleBinding"",""Priority""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.PolicyActionSemantics,策略动作语义,action,描述命中后执行什么动作，包括计费、阻断、重定向、带宽控制等,"[""PccPolicyGrp"",""PccActionProp"",""Redirect""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.ActivationSemantics,启用语义,activation,描述规则或策略何时启用、切换、停用以及如何刷新生效,"[""PCF/SMF决策"",""配额状态"",""刷新操作""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.BindingSemantics,绑定语义,binding,描述规则、策略、用户范围、DNN/APN、默认策略之间如何绑定,"[""UserProfile"",""RuleBinding"",""SET URRGRPBINDING""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.PrioritySemantics,优先级裁决语义,priority,描述同类规则如何排序以及多种规则并存时如何裁决,"[""Rule.PRIORITY"",""PolicyType""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.ChargingSemantics,计费语义,charging,描述业务流如何进入独立费率、免费、默认、融合等计费路径,"[""URR"",""URRGroup"",""PccPolicyGrp"",""CCT""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.QuotaSemantics,配额语义,quota,描述配额请求、用量上报、配额耗尽后的处理路径,"[""URR"",""QuotaExhaustAction"",""CCT""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.RedirectSemantics,重定向语义,redirect,描述如何把命中的业务流重定向到目标地址或 Portal,"[""Redirect"",""PccActionProp"",""Rule""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.BandwidthSemantics,带宽控制语义,bandwidth,描述按业务或用户实施限速和体验分层,"[""QosProp"",""BWM对象"",""Rule""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,reserved
+BA.EnhancementSecuritySemantics,增强与安全语义,enhancement_security,描述头增强、防欺诈、业务行为识别等增强能力,"[""HeaderEnhancement"",""SecurityFeature""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,reserved
+BA.RuntimeSemantics,运行语义,runtime,描述控制面到用户面之间的运行链路和策略切换过程,"[""PDR/PDI/FAR/URR"",""PFCP Session""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.ValidationDiagnosisSemantics,验收诊断语义,validation_diagnosis,描述如何验证配置生效以及失败后如何定位,"[""LST/DSP命令"",""PFCP/N40证据"",""终端现象""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,accepted
+BA.ConstraintSemantics,约束语义,constraint,描述规格限制、继承覆盖、互斥关系、跨网元一致性等约束,"[""License"",""FeatureLimit"",""RiskConstraint""]",work\\business-awareness-result\\02-business-awareness-semantic-profile.md,reserved

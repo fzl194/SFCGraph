@@ -1,0 +1,6 @@
+pattern_id,pattern_name,pattern_summary,source_evidence_ids,status
+RP-BA-001,套餐1：计费场景,"UDG 侧给出专项业务、免费业务、默认兜底业务共存的完整套餐样板。","[""EVI-UDG-BA-93112148""]",accepted
+RP-BA-002,融合计费费率标识配置,"UNC/SMF 侧给出 URR 到 UserProfile 的业务粒度计费对象链样板。","[""EVI-UNC-TOPIC-90679673""]",accepted
+RP-BA-003,业务感知场景举例,"UDG 侧给出视频免流、非免流计费、流量耗尽后重定向以及 Rule1/Rule2/Rule3 切换样板。","[""EVI-UDG-BA-92407896""]",accepted
+RP-BA-004,七层重定向功能,"UDG 侧给出 L7Filter 到 Redirect/PCCActionProp/PccPolicyGrp/Rule/UserProfile 的重定向配置样板。","[""EVI-UDG-BA-92393307"",""EVI-UDG-BA-87803995""]",accepted
+RP-BA-005,融合计费模板与配额耗尽动作,"UNC 侧给出 CCT 模板、CCT 绑定粒度和在线 RG 配额耗尽动作配置样板。","[""EVI-UNC-CMD-09653176"",""EVI-UNC-FEAT-93400212"",""EVI-UNC-CMD-95129686""]",accepted

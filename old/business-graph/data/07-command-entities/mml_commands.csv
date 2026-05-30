@@ -1,0 +1,26 @@
+command_id,command_name,vendor,primary_object_id,command_category,summary,source_evidence_ids,status
+CMD-UDG-ADD-IPLIST,ADD IPLIST,UDG,ConfigObject:UDG:IPList,create,用于新增业务识别所需的 IP 地址列表。,"[""EVI-UDG-BA-93112148""]",accepted
+CMD-UDG-ADD-FILTER,ADD FILTER,UDG,ConfigObject:UDG:Filter,create,用于新增三四层过滤器。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-FEAT-90197552""]",accepted
+CMD-UDG-ADD-L7FILTER,ADD L7FILTER,UDG,ConfigObject:UDG:L7Filter,create,用于新增 URL/Host 等七层过滤器。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-BA-92393307"",""EVI-UDG-FEAT-90197552""]",accepted
+CMD-UDG-ADD-FLOWFILTER,ADD FLOWFILTER,UDG,ConfigObject:UDG:FlowFilter,create,用于新增流过滤器并组合识别条件。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-FEAT-90197552""]",accepted
+CMD-UDG-ADD-FLTBINDFLOWF,ADD FLTBINDFLOWF,UDG,ConfigObject:UDG:FltBindFlowF,bind,用于把 Filter 绑定到 FlowFilter。,"[""EVI-UDG-BA-93112148""]",accepted
+CMD-UDG-ADD-PROTBINDFLOWF,ADD PROTBINDFLOWF,UDG,ConfigObject:UDG:ProtBindFlowF,bind,用于把协议或七层条件绑定到 FlowFilter。,"[""EVI-UDG-BA-93112148""]",accepted
+CMD-UDG-ADD-FLOWFILTERGRP,ADD FLOWFILTERGRP,UDG,ConfigObject:UDG:FlowFilterGroup,create,用于组织多条流过滤器路径。,"[""EVI-UDG-BA-93112148""]",accepted
+CMD-UDG-ADD-URR,ADD URR,UDG,ConfigObject:UDG:URR,create,用于新增 UDG 侧使用量上报规则。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-FEAT-66863837""]",accepted
+CMD-UDG-ADD-URRGROUP,ADD URRGROUP,UDG,ConfigObject:UDG:URRGroup,create,用于新增 UDG 侧 URR 组。,"[""EVI-UDG-BA-93112148""]",accepted
+CMD-UDG-ADD-PCCPOLICYGRP,ADD PCCPOLICYGRP,UDG,ConfigObject:UDG:PccPolicyGrp,create,用于新增并汇聚 PCC 策略组。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-CMD-82837606""]",accepted
+CMD-UDG-ADD-RULE,ADD RULE,UDG,ConfigObject:UDG:Rule,create,用于新增业务感知规则并设置优先级。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-FEAT-90197552""]",accepted
+CMD-UDG-ADD-USERPROFILE,ADD USERPROFILE,UDG,ConfigObject:UDG:UserProfile,create,用于新增 UDG 侧用户模板。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-FEAT-90197552""]",accepted
+CMD-UDG-SET-URRGRPBINDING,SET URRGRPBINDING,UDG,ConfigObject:UDG:UserProfile,update,用于为 UDG 侧 UserProfile 设置缺省 URR 组。,"[""EVI-UDG-BA-93112148""]",accepted
+CMD-UDG-ADD-RULEBINDING,ADD RULEBINDING,UDG,ConfigObject:UDG:RuleBinding,bind,用于把多条 Rule 绑定到同一 UserProfile。,"[""EVI-UDG-BA-93112148""]",accepted
+CMD-UDG-ADD-REDIRECT,ADD REDIRECT,UDG,ConfigObject:UDG:Redirect,create,用于新增 URL 重定向对象。,"[""EVI-UDG-BA-92393307"",""EVI-UDG-BA-87803995""]",accepted
+CMD-UDG-ADD-PCCACTIONPROP,ADD PCCACTIONPROP,UDG,ConfigObject:UDG:PccActionProp,create,用于新增 PCC 动作属性。,"[""EVI-UDG-BA-87803995"",""EVI-UDG-BA-92393307""]",accepted
+CMD-UNC-SET-LICENSESWITCH,SET LICENSESWITCH,UNC,ConfigObject:UNC:LicenseSwitch,operate,用于打开内容计费等特性的 License 开关。,"[""EVI-UNC-FEAT-74013177""]",accepted
+CMD-UNC-ADD-URR,ADD URR,UNC,ConfigObject:UNC:URR,create,用于新增 UNC 侧在线或离线 URR。,"[""EVI-UNC-TOPIC-90679673""]",accepted
+CMD-UNC-ADD-URRGROUP,ADD URRGROUP,UNC,ConfigObject:UNC:URRGroup,create,用于新增 UNC 侧 URR 组。,"[""EVI-UNC-TOPIC-90679673""]",accepted
+CMD-UNC-ADD-PCCPOLICYGRP,ADD PCCPOLICYGRP,UNC,ConfigObject:UNC:PccPolicyGrp,create,用于新增 UNC 侧 PCC 策略组。,"[""EVI-UNC-TOPIC-90679673""]",accepted
+CMD-UNC-ADD-RULE,ADD RULE,UNC,ConfigObject:UNC:Rule,create,用于新增 UNC 侧 Rule。,"[""EVI-UNC-TOPIC-90679673""]",accepted
+CMD-UNC-SET-URRGRPBINDING,SET URRGRPBINDING,UNC,ConfigObject:UNC:UserProfile,update,用于为 UNC 侧 UserProfile 设置缺省 URR 组。,"[""EVI-UNC-TOPIC-90679673""]",accepted
+CMD-UNC-ADD-RULEBINDING,ADD RULEBINDING,UNC,ConfigObject:UNC:RuleBinding,bind,用于把 Rule 绑定到 UNC 侧 UserProfile。,"[""EVI-UNC-TOPIC-90679673""]",accepted
+CMD-UNC-ADD-QUOTAEXHAUSTACT,ADD QUOTAEXHAUSTACT,UNC,ConfigObject:UNC:QuotaExhaustAction,create,用于新增在线 RG 配额耗尽后的动作。,"[""EVI-UNC-CMD-95129686""]",accepted
+CMD-UNC-ADD-CCT,ADD CCT,UNC,ConfigObject:UNC:CCT,create,用于新增融合计费模板并定义配额阈值。,"[""EVI-UNC-CMD-09653176"",""EVI-UNC-FEAT-93400212""]",accepted

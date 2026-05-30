@@ -1,0 +1,8 @@
+chain_id,vendor,object_path,candidate_reason,relevance_candidate,evidence_ids,status
+CHAIN-UDG-BA-001,UDG,"IPList -> Filter -> FlowFilter -> Rule -> UserProfile","表达指定IP范围业务的三四层识别与套餐承载路径。",high,"[\"EVI-UDG-BA-93112148\",\"EVI-UDG-BA-92882615\"]",accepted
+CHAIN-UDG-BA-002,UDG,"L7Filter -> FlowFilter -> Rule -> UserProfile","表达指定 URL/Host 业务的七层识别与套餐承载路径。",high,"[\"EVI-UDG-BA-93112148\",\"EVI-UDG-BA-92882615\"]",accepted
+CHAIN-UDG-BA-003,UDG,"FlowFilter/FlowFilterGroup -> URR -> URRGroup -> PCCPolicyGrp -> Rule -> UserProfile -> RuleBinding","表达 UDG 侧从识别条件到计费动作再到套餐绑定的主链。",high,"[\"EVI-UDG-BA-93112148\",\"EVI-UDG-FEAT-90197552\"]",accepted
+CHAIN-UNC-BA-001,UNC,"URR -> URRGroup -> PCCPolicyGrp -> Rule -> UserProfile -> RuleBinding","表达 SMF 侧业务粒度内容计费对象链。",high,"[\"EVI-UNC-TOPIC-90679673\",\"EVI-UNC-FEAT-66402110\"]",accepted
+CHAIN-UNC-BA-002,UNC,"UserProfile -> SET URRGRPBINDING -> Default URRGroup","表达默认兜底费率在 SMF 侧的绑定入口。",high,"[\"EVI-UNC-TOPIC-90679673\"]",accepted
+CHAIN-UNC-BA-003,UNC,"CCT -> QuotaExhaustAction -> BLOCK/REDIRECT/FORWARD","表达 SMF/UNC 侧在线 RG 配额耗尽后的动作控制路径。",high,"[""EVI-UNC-CMD-09653176"",""EVI-UNC-FEAT-93400212"",""EVI-UNC-CMD-95129686""]",accepted
+CHAIN-UDG-BA-004,UDG,"L7Filter -> FlowFilter -> Redirect -> PCCActionProp -> PccPolicyGrp -> Rule -> UserProfile -> RuleBinding","表达 UDG/UPF 侧七层重定向从识别到动作再到规则绑定的完整路径。",high,"[""EVI-UDG-BA-92393307"",""EVI-UDG-BA-87803995"",""EVI-UDG-CMD-82837606""]",accepted

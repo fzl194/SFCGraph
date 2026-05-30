@@ -1,0 +1,35 @@
+semantic_object_id,config_object_id,relation_type,notes,status
+BA.SubjectSemantics,ConfigObject:UDG:UserProfile,semantic_realized_by_config,UDG 侧 UserProfile 是业务套餐生效对象承载点,accepted
+BA.SubjectSemantics,ConfigObject:UDG:RuleBinding,semantic_realized_by_config,UDG 侧 RuleBinding 把规则绑定到生效对象,accepted
+BA.SubjectSemantics,ConfigObject:UNC:UserProfile,semantic_realized_by_config,UNC 侧 UserProfile 是控制面生效对象承载点,accepted
+BA.SubjectSemantics,ConfigObject:UNC:RuleBinding,semantic_realized_by_config,UNC 侧 RuleBinding 把规则绑定到生效对象,accepted
+BA.TrafficRecognitionSemantics,ConfigObject:UDG:IPList,semantic_realized_by_config,IP 范围识别由 IPList 承载,accepted
+BA.TrafficRecognitionSemantics,ConfigObject:UDG:Filter,semantic_realized_by_config,三四层识别由 Filter 承载,accepted
+BA.TrafficRecognitionSemantics,ConfigObject:UDG:L7Filter,semantic_realized_by_config,七层识别由 L7Filter 承载,accepted
+BA.TrafficRecognitionSemantics,ConfigObject:UDG:FlowFilter,semantic_realized_by_config,识别条件组合由 FlowFilter 承载,accepted
+BA.TrafficRecognitionSemantics,ConfigObject:UDG:FltBindFlowF,semantic_realized_by_config,Filter 与 FlowFilter 的绑定关系需要显式配置,accepted
+BA.TrafficRecognitionSemantics,ConfigObject:UDG:ProtBindFlowF,semantic_realized_by_config,协议或七层条件与 FlowFilter 的绑定关系需要显式配置,accepted
+BA.TrafficRecognitionSemantics,ConfigObject:UDG:FlowFilterGroup,semantic_realized_by_config,多条识别路径的组合由 FlowFilterGroup 承载,accepted
+BA.RuleSemantics,ConfigObject:UDG:Rule,semantic_realized_by_config,UDG 侧 Rule 承载匹配条件、策略对象和优先级,accepted
+BA.RuleSemantics,ConfigObject:UNC:Rule,semantic_realized_by_config,UNC 侧 Rule 承载控制面规则定义,accepted
+BA.PolicyActionSemantics,ConfigObject:UDG:PccPolicyGrp,semantic_realized_by_config,PccPolicyGrp 是动作和计费的汇聚对象,accepted
+BA.PolicyActionSemantics,ConfigObject:UDG:PccActionProp,semantic_realized_by_config,PccActionProp 承载阻断和重定向等具体动作属性,accepted
+BA.PolicyActionSemantics,ConfigObject:UDG:Redirect,semantic_realized_by_config,Redirect 对象定义 URL 重定向目标,accepted
+BA.BindingSemantics,ConfigObject:UDG:UserProfile,semantic_realized_by_config,UDG 侧 UserProfile 承载套餐级绑定,accepted
+BA.BindingSemantics,ConfigObject:UDG:RuleBinding,semantic_realized_by_config,UDG 侧 RuleBinding 承载规则绑定关系,accepted
+BA.BindingSemantics,ConfigObject:UNC:UserProfile,semantic_realized_by_config,UNC 侧 UserProfile 承载默认计费和 CCT 绑定入口,accepted
+BA.BindingSemantics,ConfigObject:UNC:RuleBinding,semantic_realized_by_config,UNC 侧 RuleBinding 承载规则绑定关系,accepted
+BA.ChargingSemantics,ConfigObject:UDG:URR,semantic_realized_by_config,UDG 侧 URR 承载业务粒度计费语义,accepted
+BA.ChargingSemantics,ConfigObject:UDG:URRGroup,semantic_realized_by_config,UDG 侧 URRGroup 组织多个 URR,accepted
+BA.ChargingSemantics,ConfigObject:UDG:PccPolicyGrp,semantic_realized_by_config,UDG 侧 PccPolicyGrp 承接 URRGroup 与动作策略,accepted
+BA.ChargingSemantics,ConfigObject:UNC:URR,semantic_realized_by_config,UNC 侧 URR 承载 RG/RG+SID 等计费语义,accepted
+BA.ChargingSemantics,ConfigObject:UNC:URRGroup,semantic_realized_by_config,UNC 侧 URRGroup 组织多个 URR,accepted
+BA.ChargingSemantics,ConfigObject:UNC:PccPolicyGrp,semantic_realized_by_config,UNC 侧 PccPolicyGrp 绑定 URRGroup 到 Rule,accepted
+BA.ChargingSemantics,ConfigObject:UNC:CCT,semantic_realized_by_config,CCT 承载融合计费模板和阈值,accepted
+BA.QuotaSemantics,ConfigObject:UNC:CCT,semantic_realized_by_config,配额阈值和最终动作默认值由 CCT 承载,accepted
+BA.QuotaSemantics,ConfigObject:UNC:QuotaExhaustAction,semantic_realized_by_config,在线 RG 配额耗尽后的动作由 QuotaExhaustAction 承载,accepted
+BA.RedirectSemantics,ConfigObject:UDG:Redirect,semantic_realized_by_config,URL 重定向目标由 Redirect 对象承载,accepted
+BA.RedirectSemantics,ConfigObject:UDG:PccActionProp,semantic_realized_by_config,重定向动作属性由 PccActionProp 承载,accepted
+BA.RedirectSemantics,ConfigObject:UDG:PccPolicyGrp,semantic_realized_by_config,重定向动作需要挂接到 PccPolicyGrp,accepted
+BA.ValidationDiagnosisSemantics,ConfigObject:UDG:Rule,semantic_realized_by_config,验收时需要回查规则命中和优先级对象,accepted
+BA.ValidationDiagnosisSemantics,ConfigObject:UNC:Rule,semantic_realized_by_config,验收时需要回查控制面规则对象,accepted

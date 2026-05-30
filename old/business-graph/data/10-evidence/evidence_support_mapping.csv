@@ -1,0 +1,39 @@
+support_id,evidence_id,target_type,target_id,relation_type,notes,status
+SUP-001,EVI-UDG-BA-93112148,NetworkScenario,NS-BA-001,supported_by,直接支撑差异化计费场景,accepted
+SUP-002,EVI-UDG-BA-93112148,NetworkScenario,NS-BA-002,supported_by,直接支撑免费业务场景,accepted
+SUP-003,EVI-UDG-BA-93112148,NetworkScenario,NS-BA-003,supported_by,直接支撑默认兜底计费场景,accepted
+SUP-004,EVI-UDG-BA-93112148,ReferencePattern,RP-BA-001,supported_by,直接支撑套餐1计费样板,accepted
+SUP-005,EVI-UNC-TOPIC-90679673,ReferencePattern,RP-BA-002,supported_by,直接支撑 SMF 侧费率标识对象链样板,accepted
+SUP-006,EVI-UDG-FEAT-73565837,Capability,Capability:BA:TrafficRecognition,supported_by,支撑业务流识别能力定义,accepted
+SUP-007,EVI-UDG-FEAT-66863837,Capability,Capability:BA:ContentChargingUP,supported_by,支撑 UDG 侧业务粒度计费能力定义,accepted
+SUP-008,EVI-UNC-FEAT-66402110,Capability,Capability:BA:ContentChargingCP,supported_by,支撑 SMF 侧业务粒度计费能力定义,accepted
+SUP-009,EVI-UNC-FEAT-67655715,Capability,Capability:BA:ConvergedCharging,supported_by,支撑融合计费能力定义,accepted
+SUP-010,EVI-UDG-FEAT-73565837,Feature,GWFD-110101,supported_by,支撑 SA-Basic 特性实例,accepted
+SUP-011,EVI-UDG-FEAT-66863837,Feature,GWFD-020301,supported_by,支撑 UDG 内容计费特性实例,accepted
+SUP-012,EVI-UNC-FEAT-66402110,Feature,WSFD-109002,supported_by,支撑 UNC 内容计费特性实例,accepted
+SUP-013,EVI-UNC-FEAT-67655715,Feature,WSFD-011206,supported_by,支撑融合计费特性实例,accepted
+SUP-014,EVI-UDG-BA-93112148,DeliverySolution,DS-BA-001,supported_by,支撑 UDG 侧套餐闭包,accepted
+SUP-015,EVI-UNC-TOPIC-90679673,DeliverySolution,DS-BA-001,supported_by,支撑 UNC/SMF 侧对象链闭包,accepted
+SUP-016,EVI-UDG-BA-93112148,EngineeringTask,TASK-BA-002,supported_by,支撑识别条件设计任务,accepted
+SUP-017,EVI-UDG-BA-93112148,EngineeringTask,TASK-BA-003,supported_by,支撑 UDG 计费动作设计任务,accepted
+SUP-018,EVI-UNC-TOPIC-90679673,EngineeringTask,TASK-BA-003,supported_by,支撑 UNC 计费动作设计任务,accepted
+SUP-019,EVI-UDG-BA-93112148,EngineeringTask,TASK-BA-004,supported_by,支撑 Rule 与优先级设计任务,accepted
+SUP-020,EVI-UNC-TOPIC-90679673,EngineeringTask,TASK-BA-005,supported_by,支撑缺省 URR 组绑定任务,accepted
+SUP-021,EVI-UDG-BA-92407896,NetworkScenario,NS-BA-005,supported_by,支撑配额耗尽后重定向场景和规则切换过程,accepted
+SUP-022,EVI-UNC-CMD-95129686,NetworkScenario,NS-BA-004,supported_by,支撑配额耗尽动作场景,accepted
+SUP-023,EVI-UDG-BA-92393307,NetworkScenario,NS-BA-006,supported_by,支撑七层重定向场景,accepted
+SUP-024,EVI-UNC-CMD-09653176,Capability,Capability:BA:QuotaExhaustAction,supported_by,支撑 CCT 与配额阈值对象,accepted
+SUP-025,EVI-UNC-FEAT-93400212,EngineeringTask,TASK-BA-007,supported_by,支撑 CCT 粒度和绑定任务,accepted
+SUP-026,EVI-UNC-CMD-95129686,EngineeringTask,TASK-BA-008,supported_by,支撑配额耗尽动作任务,accepted
+SUP-027,EVI-UDG-BA-87803995,EngineeringTask,TASK-BA-009,supported_by,支撑重定向动作链任务,accepted
+SUP-028,EVI-UNC-FEAT-71770359,Capability,Capability:BA:PccPolicyControlCP,supported_by,支撑控制面 PCC 策略控制能力,accepted
+SUP-029,EVI-UDG-FEAT-47011385,Capability,Capability:BA:PccPolicyExecutionUP,supported_by,支撑用户面 PCC 策略执行能力,accepted
+SUP-030,EVI-UDG-CMD-82837606,Capability,Capability:BA:RedirectActionUP,supported_by,支撑 PCC 策略组作为动作汇聚对象,accepted
+SUP-031,EVI-UDG-BA-92407896,DeliverySolution,DS-BA-002,supported_by,支撑配额耗尽后重定向闭包的业务过程,accepted
+SUP-032,EVI-UNC-CMD-95129686,DeliverySolution,DS-BA-002,supported_by,支撑配额耗尽动作配置,accepted
+SUP-033,EVI-UDG-BA-92393307,DeliverySolution,DS-BA-002,supported_by,支撑用户面七层重定向配置链,accepted
+SUP-034,EVI-UDG-FEAT-90197552,Feature,GWFD-110101,supported_by,补充支撑 SA-Basic 相关命令覆盖面和关键对象范围,accepted
+SUP-035,EVI-UDG-FEAT-90197552,EngineeringTask,TASK-BA-002,supported_by,补充支撑识别条件设计任务涉及的关键命令对象,accepted
+SUP-036,EVI-UDG-FEAT-90197552,EngineeringTask,TASK-BA-003,supported_by,补充支撑计费动作设计任务涉及的关键命令对象,accepted
+SUP-037,EVI-UDG-FEAT-90197552,EngineeringTask,TASK-BA-005,supported_by,补充支撑用户模板和规则绑定相关命令对象,accepted
+SUP-038,EVI-UNC-FEAT-74013177,Feature,WSFD-109002,supported_by,补充支撑内容计费特性的激活条件和 License 约束,accepted

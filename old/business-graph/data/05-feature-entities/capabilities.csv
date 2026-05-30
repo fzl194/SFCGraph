@@ -1,0 +1,9 @@
+capability_id,capability_name,capability_summary,source_evidence_ids,status
+Capability:BA:TrafficRecognition,业务流识别能力,"提供三四层过滤、协议识别、七层 URL/Host 识别能力，支撑业务感知匹配。","[""EVI-UDG-FEAT-73565837"",""EVI-UDG-BA-92882615""]",accepted
+Capability:BA:ContentChargingUP,UDG侧内容计费能力,"UDG/UPF 侧按业务粒度识别业务并标记相应 URR ID，支撑差异化计费与免费业务。","[""EVI-UDG-FEAT-66863837""]",accepted
+Capability:BA:ContentChargingCP,UNC侧内容计费能力,"SMF 侧组织业务粒度计费规则，通过 PDI/URR 标识协同 UPF 完成业务粒度计费。","[""EVI-UNC-FEAT-66402110"",""EVI-UNC-TOPIC-90679673""]",accepted
+Capability:BA:ConvergedCharging,融合计费控制能力,"提供在线/离线统一计费框架，并承载 FBC/内容计费的控制面能力。","[""EVI-UNC-FEAT-67655715"",""EVI-UNC-TOPIC-90679673""]",accepted
+Capability:BA:PccPolicyControlCP,控制面PCC策略控制能力,"SMF/UNC 接收或本地生成会话管理策略，生成 PDR 并下发 UPF，支撑规则更新、动态 PCC 和本地 PCC。","[""EVI-UNC-FEAT-71770359""]",accepted
+Capability:BA:PccPolicyExecutionUP,用户面PCC策略执行能力,"UDG/UPF 执行数据流检测、使用量统计、流量上报、QoS、带宽管理、门控和重定向等 PCC 策略。","[""EVI-UDG-FEAT-47011385"",""EVI-UDG-FEAT-74096529""]",accepted
+Capability:BA:QuotaExhaustAction,配额耗尽动作控制能力,"在在线 RG 配额耗尽后按配置触发 BLOCK、REDIRECT 或 FORWARD 动作。","[""EVI-UNC-CMD-95129686"",""EVI-UNC-CMD-09653176"",""EVI-UNC-FEAT-93400212""]",accepted
+Capability:BA:RedirectActionUP,用户面重定向动作能力,"通过 Redirect、PCCActionProp、PccPolicyGrp 和 Rule 链条，对命中的业务流执行 URL 重定向。","[""EVI-UDG-BA-92393307"",""EVI-UDG-BA-87803995"",""EVI-UDG-CMD-82837606""]",accepted

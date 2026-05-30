@@ -1,0 +1,15 @@
+# 产品文档原始数据（体积大）
+output/
+
+# 平台工具
+platform/
+
+# 环境变量
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# 编辑器
+.vscode/

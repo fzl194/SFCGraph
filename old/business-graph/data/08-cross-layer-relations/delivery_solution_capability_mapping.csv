@@ -1,0 +1,11 @@
+solution_id,capability_id,relation_type,notes,status
+DS-BA-001,Capability:BA:TrafficRecognition,requires_capability,需要先识别 URL/协议/IP 业务流,accepted
+DS-BA-001,Capability:BA:ContentChargingUP,requires_capability,需要 UDG/UPF 侧业务粒度计费执行能力,accepted
+DS-BA-001,Capability:BA:ContentChargingCP,requires_capability,需要 SMF 侧业务粒度计费编排能力,accepted
+DS-BA-001,Capability:BA:ConvergedCharging,requires_capability,需要统一计费控制框架承接 RG/RG+SID 计费语义,accepted
+DS-BA-002,Capability:BA:TrafficRecognition,requires_capability,需要识别视频、URL、Host 或其他目标业务流,accepted
+DS-BA-002,Capability:BA:ConvergedCharging,requires_capability,需要融合计费框架承接 RG 配额与计费状态,accepted
+DS-BA-002,Capability:BA:PccPolicyControlCP,requires_capability,需要 SMF/PCF 在配额状态变化后更新或选择策略,accepted
+DS-BA-002,Capability:BA:PccPolicyExecutionUP,requires_capability,需要 UPF 执行已下发或本地激活的策略动作,accepted
+DS-BA-002,Capability:BA:QuotaExhaustAction,requires_capability,需要配置配额耗尽后的 BLOCK/REDIRECT/FORWARD 动作,accepted
+DS-BA-002,Capability:BA:RedirectActionUP,requires_capability,需要用户面重定向动作对象链,accepted

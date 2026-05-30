@@ -1,0 +1,7 @@
+solution_id,risk_constraint_id,relation_type,notes,status
+DS-BA-001,RC-BA-002,constrained_by,业务感知计费链涉及本地配置刷新和生效时机,accepted
+DS-BA-001,RC-BA-004,constrained_by,PCC/内容计费能力会带来性能影响,accepted
+DS-BA-002,RC-BA-001,constrained_by,配额耗尽动作只对新激活用户生效,accepted
+DS-BA-002,RC-BA-002,constrained_by,重定向动作链涉及刷新和运行面生效约束,accepted
+DS-BA-002,RC-BA-003,constrained_by,CCT 粒度继承优先级影响配额动作落地方式,accepted
+DS-BA-002,RC-BA-004,constrained_by,PCC 策略更新和运行时处理存在性能影响,accepted

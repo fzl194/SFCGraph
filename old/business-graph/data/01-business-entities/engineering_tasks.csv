@@ -1,0 +1,12 @@
+task_id,task_name,task_summary,source_evidence_ids,status
+TASK-BA-001,划分业务类别和优先级,明确专项业务、免费业务、默认兜底业务及其优先级规则。,"[""EVI-UDG-BA-93112148""]",accepted
+TASK-BA-002,设计识别条件,设计 Filter/L7Filter/Protocol/FlowFilter/FlowFilterGroup 识别路径。,"[""EVI-UDG-BA-93112148"",""EVI-UDG-BA-92882615""]",accepted
+TASK-BA-003,设计计费动作,设计 URR/URRGroup/PCCPolicyGrp 计费对象链及费率语义。,"[""EVI-UDG-BA-93112148"",""EVI-UNC-TOPIC-90679673""]",accepted
+TASK-BA-004,设计Rule与优先级,建立匹配条件与策略对象的绑定关系，并设置优先级。,"[""EVI-UDG-BA-93112148"",""EVI-UNC-TOPIC-90679673""]",accepted
+TASK-BA-005,设计套餐绑定,建立 UserProfile、RuleBinding 和缺省 URR 组绑定关系。,"[""EVI-UDG-BA-93112148"",""EVI-UNC-TOPIC-90679673""]",accepted
+TASK-BA-006,做CP_UP一致性与计费链验收,核查 Rule/UserProfile/URR/RG 等在控制面和用户面的一致性。,"[""EVI-UDG-FEAT-73565837"",""EVI-UNC-TOPIC-90679673""]",accepted
+TASK-BA-007,定义配额与CCT粒度,确定 CCT 使用全局、UserProfile、DNN 还是 CC 粒度，并配置对应计费阈值。,"[""EVI-UNC-CMD-09653176"",""EVI-UNC-FEAT-93400212""]",accepted
+TASK-BA-008,定义配额耗尽动作,配置在线 RG 配额耗尽后的 BLOCK、REDIRECT 或 FORWARD 动作。,"[""EVI-UNC-CMD-95129686""]",accepted
+TASK-BA-009,设计重定向动作链,配置 Redirect、PCCActionProp、PccPolicyGrp，使命中的业务流能够执行 URL 重定向。,"[""EVI-UDG-BA-92393307"",""EVI-UDG-BA-87803995"",""EVI-UDG-CMD-82837606""]",accepted
+TASK-BA-010,设计耗尽前后规则切换,区分正常计费规则和耗尽后重定向规则，并明确优先级与启停关系。,"[""EVI-UDG-BA-92407896"",""EVI-UNC-FEAT-71770359""]",accepted
+TASK-BA-011,验收耗尽后运行时行为,核查耗尽后是否由正常计费规则切换到重定向动作，以及 UPF 是否按 FAR/重定向信息执行。,"[""EVI-UDG-BA-92407896"",""EVI-UNC-TOPIC-90679673"",""EVI-UNC-CMD-95129686""]",accepted

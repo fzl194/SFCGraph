@@ -1,0 +1,10 @@
+capability_id,feature_code,relation_type,notes,status
+Capability:BA:TrafficRecognition,GWFD-110101,implemented_by_feature,SA-Basic 实现识别与执行底座,accepted
+Capability:BA:ContentChargingUP,GWFD-020301,implemented_by_feature,UDG 侧内容计费基本功能实现 UDG 侧业务粒度计费能力,accepted
+Capability:BA:ContentChargingCP,WSFD-109002,implemented_by_feature,UNC/SMF 侧内容计费基本功能实现业务粒度计费编排能力,accepted
+Capability:BA:ConvergedCharging,WSFD-011206,implemented_by_feature,融合计费特性实现统一计费框架,accepted
+Capability:BA:PccPolicyControlCP,WSFD-109101,implemented_by_feature,UNC PCC 基本功能实现 SMF 侧策略控制与策略更新能力,accepted
+Capability:BA:PccPolicyExecutionUP,GWFD-020351,implemented_by_feature,UDG PCC 基本功能实现 UPF 侧策略执行能力,accepted
+Capability:BA:QuotaExhaustAction,WSFD-011206,implemented_by_feature,融合计费特性承载 CCT 与配额耗尽动作控制,accepted
+Capability:BA:RedirectActionUP,GWFD-020351,implemented_by_feature,PCC 基本功能承载重定向等用户面策略动作,accepted
+Capability:BA:RedirectActionUP,GWFD-110101,implemented_by_feature,SA-Basic 提供七层识别能力作为重定向匹配前提,accepted

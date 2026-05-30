@@ -1,0 +1,596 @@
+﻿id,feature_id,feature_name,product_type,product_version,is_directory,section,parent_feature_id,SGSN(2.5&3G),GGSN-C(2.5&3G),MME(4G),S/PGW-C(4G),NB-IoT(4G),5G MME(5G NSA),5G S/PGW-C(5G NSA),AMF(5G SA),SMF(5G SA),NRF(5G SA)
+UNC:NPFD-010000,NPFD-010000,操作维护功能,UNC,20.15.2,true,网管特性,,目录,,,,,,,,,
+UNC:NPFD-010001,NPFD-010001,性能管理,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010002,NPFD-010002,软件管理,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010003,NPFD-010003,故障管理,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010004,NPFD-010004,设备管理,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010005,NPFD-010005,配置管理,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010006,NPFD-010006,安全管理,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010007,NPFD-010007,日志管理,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010008,NPFD-010008,联机帮助,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010009,NPFD-010009,软件补丁,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010010,NPFD-010010,在线加载,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010011,NPFD-010011,远程维护,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010019,NPFD-010019,拓扑管理,UNC,20.15.2,false,网管特性,NPFD-010000,-,-,-,-,-,-,-,M,M,M
+UNC:NPFD-010013,NPFD-010013,跟踪功能,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010014,NPFD-010014,支持NTP功能,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010017,NPFD-010017,SSH功能,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:NPFD-010018,NPFD-010018,可靠性,UNC,20.15.2,false,网管特性,NPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-010000,IPFD-010000,接口与链路,UNC,20.15.2,true,IP基本特性,,目录,,,,,,,,,
+UNC:IPFD-010001,IPFD-010001,接口管理,UNC,20.15.2,false,IP基本特性,IPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-010002,IPFD-010002,支持VLAN子接口,UNC,20.15.2,false,IP基本特性,IPFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-011000,IPFD-011000,IP协议栈基本功能,UNC,20.15.2,true,IP基本特性,,目录,,,,,,,,,
+UNC:IPFD-011001,IPFD-011001,ARP,UNC,20.15.2,false,IP基本特性,IPFD-011000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-012000,IPFD-012000,IP可靠性,UNC,20.15.2,true,IP基本特性,,目录,,,,,,,,,
+UNC:IPFD-012001,IPFD-012001,QoS,UNC,20.15.2,false,IP基本特性,IPFD-012000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-012002,IPFD-012002,ACL,UNC,20.15.2,false,IP基本特性,IPFD-012000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-012003,IPFD-012003,BFD,UNC,20.15.2,false,IP基本特性,IPFD-012000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-014000,IPFD-014000,路由功能,UNC,20.15.2,true,IP基本特性,,目录,,,,,,,,,
+UNC:IPFD-014001,IPFD-014001,支持OSPF,UNC,20.15.2,false,IP基本特性,IPFD-014000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-014002,IPFD-014002,支持BGP,UNC,20.15.2,false,IP基本特性,IPFD-014000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-014003,IPFD-014003,静态路由,UNC,20.15.2,false,IP基本特性,IPFD-014000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-014004,IPFD-014004,直连路由,UNC,20.15.2,false,IP基本特性,IPFD-014000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-014005,IPFD-014005,路由策略,UNC,20.15.2,false,IP基本特性,IPFD-014000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-014006,IPFD-014006,IP策略路由,UNC,20.15.2,false,IP基本特性,IPFD-014000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-015000,IPFD-015000,VPN 功能,UNC,20.15.2,true,IP基本特性,,目录,,,,,,,,,
+UNC:IPFD-015001,IPFD-015001,VRF功能,UNC,20.15.2,false,IP基本特性,IPFD-015000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-015002,IPFD-015002,GRE,UNC,20.15.2,false,IP基本特性,IPFD-015000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-016000,IPFD-016000,IPSec功能,UNC,20.15.2,false,IP基本特性,IPFD-015000,M,M,M,M,M,M,M,M,M,M
+UNC:IPFD-017000,IPFD-017000,SNMP,UNC,20.15.2,false,IP基本特性,IPFD-015000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010000,WSFD-010000,NFV基本特性,UNC,20.15.2,true,NFV基本特性,,目录,,,,,,,,,
+UNC:WSFD-010001,WSFD-010001,支持云化分布式软件架构,UNC,20.15.2,false,NFV基本特性,WSFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010002,WSFD-010002,支持2/3/4/5G融合架构,UNC,20.15.2,false,NFV基本特性,WSFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010003,WSFD-010003,支持微服务架构,UNC,20.15.2,false,NFV基本特性,WSFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010004,WSFD-010004,事件统一管理架构,UNC,20.15.2,false,NFV基本特性,WSFD-010000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010005,WSFD-010005,负荷动态调整,UNC,20.15.2,false,NFV基本特性,WSFD-010000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-010100,WSFD-010100,接入管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-010102,WSFD-010102,Untrusted Non-3GPP网络用户接入,UNC,20.15.2,false,UNC业务基本特性,WSFD-010100,-,-,-,M,-,-,-,·,-,-
+UNC:WSFD-010105,WSFD-010105,支持GSM/UMTS/LTE共接入,UNC,20.15.2,false,UNC业务基本特性,WSFD-010100,M,M,M,M,M,M,M,-,-,-
+UNC:WSFD-010106,WSFD-010106,GERAN/UTRAN双接入,UNC,20.15.2,false,UNC业务基本特性,WSFD-010100,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-010108,WSFD-010108,支持增强的对等PLMN功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-010100,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-010110,WSFD-010110,支持RedCap接入,UNC,20.15.2,false,UNC业务基本特性,WSFD-010100,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-010112,WSFD-010112,支持FWA接入,UNC,20.15.2,false,UNC业务基本特性,WSFD-010100,-,-,-,-,-,-,-,E,M,-
+UNC:WSFD-010200,WSFD-010200,移动性管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-010201,WSFD-010201,移动性管理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010200,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-010202,WSFD-010202,基于位置区域的对等网元选择,UNC,20.15.2,false,UNC业务基本特性,WSFD-010200,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-010300,WSFD-010300,安全性管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-010301,WSFD-010301,鉴权功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-010302,WSFD-010302,用户身份保密性功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-010303,WSFD-010303,NAS信令加密与完整性保护,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,-,-,M,-,M,M,-,M,-,-
+UNC:WSFD-010304,WSFD-010304,身份识别功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,M,-,M,-,M,M,-,M,M,-
+UNC:WSFD-010305,WSFD-010305,个人隐私数据保护,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,M,M,M,M,-,M,M,M,M,M
+UNC:WSFD-010306,WSFD-010306,密钥安全性管理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,M,M,M,M,-,M,M,M,M,M
+UNC:WSFD-010309,WSFD-010309,证书管理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-010308,WSFD-010308,SBI接口加密,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-010400,WSFD-010400,用户数据管理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010300,M,-,M,-,M,M,-,M,M,-
+UNC:WSFD-010500,WSFD-010500,会话管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-010501,WSFD-010501,会话管理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010500,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-010502,WSFD-010502,地址分配方式,UNC,20.15.2,false,UNC业务基本特性,WSFD-010500,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-010503,WSFD-010503,支持多PDN/PDU功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-010500,-,-,M,M,-,M,M,M,M,-
+UNC:WSFD-010504,WSFD-010504,控制面地址分配方式,UNC,20.15.2,false,UNC业务基本特性,WSFD-010500,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-010600,WSFD-010600,路径管理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010500,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-010700,WSFD-010700,QoS与流量管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-010701,WSFD-010701,QoS与流量管理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010700,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-010702,WSFD-010702,支持背景类、交互类、流类QoS等级业务承载,UNC,20.15.2,false,UNC业务基本特性,WSFD-010700,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-010703,WSFD-010703,增强的QoS,UNC,20.15.2,false,UNC业务基本特性,WSFD-010700,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-010800,WSFD-010800,可靠性功能,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-010801,WSFD-010801,系统过载控制功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010802,WSFD-010802,周边网元过载保护,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010803,WSFD-010803,下行数据通知信令抑制,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,-,-,M,M,M,M,M,-,-,-
+UNC:WSFD-010804,WSFD-010804,智能信令风暴平滑处理,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,-,-,M,M,M,M,M,-,-,-
+UNC:WSFD-010805,WSFD-010805,Linux操作系统安全加固,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-010807,WSFD-010807,N2接口支持多连接,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-010900,WSFD-010900,IP承载业务,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-010901,WSFD-010901,基于TA List的寻呼自动流控,UNC,20.15.2,false,UNC业务基本特性,WSFD-010800,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-011000,WSFD-011000,漫游管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011001,WSFD-011001,漫游控制,UNC,20.15.2,false,UNC业务基本特性,WSFD-011000,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-011002,WSFD-011002,系统间改变,UNC,20.15.2,false,UNC业务基本特性,WSFD-011000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-011003,WSFD-011003,鉴权3元组和5元组转换功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-011000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-011004,WSFD-011004,Gn接口同时支持GTPv0和GTPv1,UNC,20.15.2,false,UNC业务基本特性,WSFD-011000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-011005,WSFD-011005,支持R98/R99/R4/R5/R6/R7的话单格式,UNC,20.15.2,false,UNC业务基本特性,WSFD-011000,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-011006,WSFD-011006,支持R97/98 QoS和R99 QoS之间的映射,UNC,20.15.2,false,UNC业务基本特性,WSFD-011000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-011100,WSFD-011100,接口功能,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011101,WSFD-011101,Gb接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-011102,WSFD-011102,Iu接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-011103,WSFD-011103,S1-MME接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011104,WSFD-011104,S6a接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011105,WSFD-011105,S10接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011106,WSFD-011106,S11接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,M,M,M,M,-,-,-
+UNC:WSFD-011107,WSFD-011107,Gn接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-011108,WSFD-011108,Gp接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-011111,WSFD-011111,SS7接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-011112,WSFD-011112,S13接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011116,WSFD-011116,T6a接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011118,WSFD-011118,S2b接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,M,-,-,-,-,-,-
+UNC:WSFD-011119,WSFD-011119,SGi接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,M,M,-,M,-,-,-
+UNC:WSFD-011120,WSFD-011120,S6b接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,M,-,-,M,-,-,-
+UNC:WSFD-011125,WSFD-011125,S5接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,M,M,-,M,-,-,-
+UNC:WSFD-011126,WSFD-011126,S8接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,M,M,-,M,-,-,-
+UNC:WSFD-011127,WSFD-011127,Ga接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,M,-,M,M,-,M,-,-,-
+UNC:WSFD-011128,WSFD-011128,Gy接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-011129,WSFD-011129,Gx接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-011130,WSFD-011130,Gi接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,M,-,-,-,-,-,-,-,-
+UNC:WSFD-011131,WSFD-011131,S6a over DRA,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011132,WSFD-011132,Gx over DRA,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-011133,WSFD-011133,Gy over DRA,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-011134,WSFD-011134,S6b over DRA,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-011135,WSFD-011135,N2接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-011136,WSFD-011136,N4接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-011137,WSFD-011137,N26接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,M,-,-,-,-,M,-,-
+UNC:WSFD-011138,WSFD-011138,服务化接口,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-011139,WSFD-011139,L2/L3跟踪,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011140,WSFD-011140,Single IP,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011141,WSFD-011141,支持NETCONF,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011144,WSFD-011144,支持与SEPP对接,UNC,20.15.2,false,UNC业务基本特性,WSFD-011100,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-011200,WSFD-011200,计费管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011201,WSFD-011201,支持离线计费,UNC,20.15.2,false,UNC业务基本特性,WSFD-011200,M,M,-,E,M,-,E,-,-,-
+UNC:WSFD-011202,WSFD-011202,支持热计费功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-011200,M,M,-,M,-,-,M,-,-,-
+UNC:WSFD-011206,WSFD-011206,支持融合计费,UNC,20.15.2,false,UNC业务基本特性,WSFD-011200,-,-,-,,-,-,-,-,E,-
+UNC:WSFD-011300,WSFD-011300,系统管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011301,WSFD-011301,基于原因值的UE行为调整,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,M,-,M,-,M,M,-,M,M,-
+UNC:WSFD-011302,WSFD-011302,分区域网络运维,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011303,WSFD-011303,基于IMEI的LTE差异化服务,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011311,WSFD-011311,基于IMEI的NR差异化服务,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,-,-,-,-,-,-,E,-,-
+UNC:WSFD-011304,WSFD-011304,峰值LICENSE控制,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011305,WSFD-011305,Radius鉴权接入,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-011306,WSFD-011306,Radius功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-011307,WSFD-011307,支持Radius抄送功能,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-011308,WSFD-011308,AAA负荷分担,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-011309,WSFD-011309,支持用户属性反射,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-011310,WSFD-011310,PLMN标识获取,UNC,20.15.2,false,UNC业务基本特性,WSFD-011300,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-011400,WSFD-011400,UNC生命周期管理,UNC,20.15.2,true,UNC业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011401,WSFD-011401,UNC实例化,UNC,20.15.2,false,UNC业务基本特性,WSFD-011400,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011402,WSFD-011402,支持管理面触发的Scale in,UNC,20.15.2,false,UNC业务基本特性,WSFD-011400,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011403,WSFD-011403,支持管理面触发的Scale Out,UNC,20.15.2,false,UNC业务基本特性,WSFD-011400,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011404,WSFD-011404,UNC Termination,UNC,20.15.2,false,UNC业务基本特性,WSFD-011400,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011406,WSFD-011406,高危命令防呆和提醒,UNC,20.15.2,false,UNC业务基本特性,WSFD-011400,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-011407,WSFD-011407,运维特性增强,UNC,20.15.2,false,UNC业务基本特性,WSFD-011400,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-011500,WSFD-011500,NSA组网,UNC,20.15.2,true,NSA业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011501,WSFD-011501,NSA(Opt.3)组网,UNC,20.15.2,false,NSA业务基本特性,WSFD-011500,-,-,-,-,-,M,M,-,-,-
+UNC:WSFD-011502,WSFD-011502,NSA(Opt.3)双连接管理,UNC,20.15.2,false,NSA业务基本特性,WSFD-011500,-,-,-,-,-,M,-,-,-,-
+UNC:WSFD-011503,WSFD-011503,支持基于终端能力接入管理,UNC,20.15.2,false,NSA业务基本特性,WSFD-011500,-,-,-,-,-,M,-,-,-,-
+UNC:WSFD-011510,WSFD-011510,NSA用户话单管理,UNC,20.15.2,true,NSA业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011511,WSFD-011511,NSA用户数据话单生成和上报,UNC,20.15.2,false,NSA业务基本特性,WSFD-011510,-,-,-,-,-,-,M,-,-,-
+UNC:WSFD-011520,WSFD-011520,NSA用户管理,UNC,20.15.2,true,NSA业务基本特性,,目录,,,,,,,,,
+UNC:WSFD-011521,WSFD-011521,NSA用户QoS管理,UNC,20.15.2,false,NSA业务基本特性,WSFD-011520,-,-,-,-,-,-,M,-,-,-
+UNC:WSFD-011522,WSFD-011522,NSA自动开户,UNC,20.15.2,false,NSA业务基本特性,WSFD-011520,-,-,-,-,-,M,-,-,-,-
+UNC:WSFD-011600,WSFD-011600,NB-IoT业务,UNC,20.15.2,true,NB-IoT业务特性,,目录,,,,,,,,,
+UNC:WSFD-011601,WSFD-011601,NB-IoT终端标准接入,UNC,20.15.2,false,NB-IoT业务特性,WSFD-011600,-,-,M,M,M,M,-,-,-,-
+UNC:WSFD-011602,WSFD-011602,支持M2M长周期性定时器,UNC,20.15.2,false,NB-IoT业务特性,WSFD-011600,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-011603,WSFD-011603,NB-IoT UE状态上报功能,UNC,20.15.2,false,NB-IoT业务特性,WSFD-011600,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-101000,WSFD-101000,HSPA普通连接,UNC,20.15.2,true,高速数据连接解决方案,,目录,,,,,,,,,
+UNC:WSFD-101001,WSFD-101001,"HSDPA功能, 2M-4M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101000,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101002,WSFD-101002,"HSUPA功能, 2M-4M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101000,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101100,WSFD-101100,LTE普通承载基本功能,UNC,20.15.2,true,高速数据连接解决方案,,目录,,,,,,,,,
+UNC:WSFD-101101,WSFD-101101,Category 2/3/4基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101100,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101200,WSFD-101200,LTE普通承载接入,UNC,20.15.2,true,高速数据连接解决方案,,目录,,,,,,,,,
+UNC:WSFD-101201,WSFD-101201,"Category 2/3/4接入, 150Mbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101200,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101300,WSFD-101300,HSPA高速连接,UNC,20.15.2,true,高速数据连接解决方案,,目录,,,,,,,,,
+UNC:WSFD-101301,WSFD-101301,"HSDPA扩展包1, 4M-8M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101302,WSFD-101302,"HSDPA扩展包2, 8M-16M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101303,WSFD-101303,"HSDPA扩展包3, 16M-32M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101304,WSFD-101304,"HSDPA扩展包4, 32M-48M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101305,WSFD-101305,"HSDPA扩展包5, 48M-84M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101306,WSFD-101306,"HSDPA扩展包6, 84M-168M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101307,WSFD-101307,"HSUPA扩展包1, 4M-8M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101308,WSFD-101308,"HSUPA扩展包2, 8M-12M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101309,WSFD-101309,"HSUPA扩展包3, 12M-24M",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101300,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-101400,WSFD-101400,LTE-A高速承载基本功能,UNC,20.15.2,true,高速数据连接解决方案,,目录,,,,,,,,,
+UNC:WSFD-101401,WSFD-101401,Category 6基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101400,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101402,WSFD-101402,Category 9/10基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101400,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101403,WSFD-101403,Category 11/12基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101400,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101404,WSFD-101404,Category 15/16基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101400,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101405,WSFD-101405,Category 18基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101400,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101406,WSFD-101406,Category 19基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101400,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101407,WSFD-101407,Category 20~26基础功能,UNC,20.15.2,false,高速数据连接解决方案,WSFD-101400,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101500,WSFD-101500,LTE-A高速承载接入,UNC,20.15.2,true,高速数据连接解决方案,,目录,,,,,,,,,
+UNC:WSFD-101501,WSFD-101501,"Category 6接入, 300Mbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101500,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101502,WSFD-101502,"Category 9/10接入, 450 Mbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101500,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101503,WSFD-101503,"Category 11/12接入, 600 Mbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101500,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101504,WSFD-101504,"Category 15/16接入, 1Gbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101500,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101505,WSFD-101505,"Category 18接入, 1.2Gbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101500,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101506,WSFD-101506,"Category 19接入, 1.6Gbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101500,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-101507,WSFD-101507,"Category 20~26接入, 3.5Gbit/s",UNC,20.15.2,false,高速数据连接解决方案,WSFD-101500,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-102000,WSFD-102000,VoLTE基本功能,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102001,WSFD-102001,VoLTE基础语音业务,UNC,20.15.2,false,语音基本包,WSFD-102000,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-102003,WSFD-102003,SRVCC,UNC,20.15.2,false,语音基本包,WSFD-102000,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-102004,WSFD-102004,基于VoLTE的优先语音服务,UNC,20.15.2,false,语音基本包,WSFD-102000,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-102005,WSFD-102005,基于VoLTE的信令最短路径优选,UNC,20.15.2,false,语音基本包,WSFD-102000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102100,WSFD-102100,VoLTE优先级语音特性包,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102101,WSFD-102101,VoLTE紧急呼叫,UNC,20.15.2,false,语音基本包,WSFD-102100,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-102102,WSFD-102102,VoLTE紧急呼叫的定位(NI-LR),UNC,20.15.2,false,语音基本包,WSFD-102100,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102200,WSFD-102200,VoLTE业务快速恢复,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102202,WSFD-102202,P-CSCF故障时IMS业务恢复,UNC,20.15.2,false,语音基本包,WSFD-102200,-,-,-,M,-,-,M,-,M,-
+UNC:WSFD-102203,WSFD-102203,基于PCRF/PCF的VoLTE业务快速恢复,UNC,20.15.2,false,语音基本包,WSFD-102200,-,-,-,M,,-,M,-,-,-
+UNC:WSFD-102300,WSFD-102300,CSFB基本功能,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102301,WSFD-102301,基于CSFB的语音业务,UNC,20.15.2,false,语音基本包,WSFD-102300,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102400,WSFD-102400,基于CSFB的扩展业务包,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102401,WSFD-102401,基于CSFB的USSD业务,UNC,20.15.2,false,语音基本包,WSFD-102400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102402,WSFD-102402,基于CSFB的LCS业务,UNC,20.15.2,false,语音基本包,WSFD-102400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102403,WSFD-102403,基于CSFB的LA&TA协同,UNC,20.15.2,false,语音基本包,WSFD-102400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102404,WSFD-102404,基于CSFB的LA快速选择,UNC,20.15.2,false,语音基本包,WSFD-102400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102500,WSFD-102500,CSFB业务功能增强,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102501,WSFD-102501,CSFB紧急呼叫,UNC,20.15.2,false,语音基本包,WSFD-102500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102502,WSFD-102502,基于CSFB的优先语音服务,UNC,20.15.2,false,语音基本包,WSFD-102500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102503,WSFD-102503,CSFB被叫恢复,UNC,20.15.2,false,语音基本包,WSFD-102500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102504,WSFD-102504,MSC Pool场景下的CSFB,UNC,20.15.2,false,语音基本包,WSFD-102500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102505,WSFD-102505,基于CSFB的Multi PLMN,UNC,20.15.2,false,语音基本包,WSFD-102500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102506,WSFD-102506,Flash CSFB with RIM,UNC,20.15.2,false,语音基本包,WSFD-102500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-102600,WSFD-102600,Push to Talk,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102601,WSFD-102601,LTE一键通基础功能,UNC,20.15.2,false,语音基本包,WSFD-102600,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-102602,WSFD-102602,LTE一键通,UNC,20.15.2,false,语音基本包,WSFD-102600,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-102700,WSFD-102700,5G网络语音业务,UNC,20.15.2,true,语音基本包,,目录,,,,,,,,,
+UNC:WSFD-102701,WSFD-102701,VoNR基础语音业务,UNC,20.15.2,false,语音基本包,WSFD-102700,-,-,-,-,,-,-,M,M,-
+UNC:WSFD-102702,WSFD-102702,EPS Fallback,UNC,20.15.2,false,语音基本包,WSFD-102700,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-102703,WSFD-102703,EPS Fallback紧急呼叫,UNC,20.15.2,false,语音基本包,WSFD-102700,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-102705,WSFD-102705,基于VoNR的优先语音服务,UNC,20.15.2,false,语音基本包,WSFD-102700,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-102706,WSFD-102706,VoNR紧急呼叫,UNC,20.15.2,false,语音基本包,WSFD-102700,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-102707,WSFD-102707,VoNR紧急呼叫的定位(NI-LR),UNC,20.15.2,false,语音基本包,WSFD-102700,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-103000,WSFD-103000,安全管理基本功能,UNC,20.15.2,true,安全解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-103004,WSFD-103004,设备标识检查,UNC,20.15.2,false,安全解决方案基本包,WSFD-103000,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-103005,WSFD-103005,基于用户群的灵活鉴权,UNC,20.15.2,false,安全解决方案基本包,WSFD-103000,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-103006,WSFD-103006,1/N设备标识检查,UNC,20.15.2,false,安全解决方案基本包,WSFD-103000,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-103007,WSFD-103007,IMSI隐私保护,UNC,20.15.2,false,安全解决方案基本包,WSFD-103000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-104000,WSFD-104000,IPV6基本功能,UNC,20.15.2,true,组网演进基本包,,目录,,,,,,,,,
+UNC:WSFD-104001,WSFD-104001,IPv6承载上下文,UNC,20.15.2,false,组网演进基本包,WSFD-104000,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-104002,WSFD-104002,IPv4v6双栈接入,UNC,20.15.2,false,组网演进基本包,WSFD-104000,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-104003,WSFD-104003,IPv6在线计费,UNC,20.15.2,false,组网演进基本包,WSFD-104000,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-104004,WSFD-104004,IPv6前缀代理,UNC,20.15.2,false,组网演进基本包,WSFD-104000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-104005,WSFD-104005,DHCPv6地址分配,UNC,20.15.2,false,组网演进基本包,WSFD-104000,-,M,-,M,,-,M,-,M,-
+UNC:WSFD-104100,WSFD-104100,POOL-4G,UNC,20.15.2,true,组网演进基本包,,目录,,,,,,,,,
+UNC:WSFD-104101,WSFD-104101,MME Pool,UNC,20.15.2,false,组网演进基本包,WSFD-104100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-104102,WSFD-104102,MME过载控制,UNC,20.15.2,false,组网演进基本包,WSFD-104100,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-104103,WSFD-104103,MME Pool用户迁移,UNC,20.15.2,false,组网演进基本包,WSFD-104100,-,-,E,-,M,E,-,-,-,-
+UNC:WSFD-104200,WSFD-104200,POOL-2/3G,UNC,20.15.2,true,组网演进基本包,,目录,,,,,,,,,
+UNC:WSFD-104201,WSFD-104201,SGSN Pool用户迁移,UNC,20.15.2,false,组网演进基本包,WSFD-104200,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-104202,WSFD-104202,MSC Pool内的用户迁移（Gs接口）,UNC,20.15.2,false,组网演进基本包,WSFD-104200,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-104203,WSFD-104203,Iu-flex,UNC,20.15.2,false,组网演进基本包,WSFD-104200,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-104204,WSFD-104204,Gb-flex,UNC,20.15.2,false,组网演进基本包,WSFD-104200,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-104300,WSFD-104300,POOL-5G,UNC,20.15.2,true,组网演进基本包,,目录,,,,,,,,,
+UNC:WSFD-104301,WSFD-104301,AMF Pool,UNC,20.15.2,false,组网演进基本包,WSFD-104300,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-104302,WSFD-104302,AMF Pool用户迁移,UNC,20.15.2,false,组网演进基本包,WSFD-104300,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-104400,WSFD-104400,组网接口能力,UNC,20.15.2,true,组网演进基本包,,目录,,,,,,,,,
+UNC:WSFD-104401,WSFD-104401,支持多HPLMN功能,UNC,20.15.2,false,组网演进基本包,WSFD-104400,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-104402,WSFD-104402,eNodeB SON信息传送功能,UNC,20.15.2,false,组网演进基本包,WSFD-104400,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-104404,WSFD-104404,基于权重/优先级的Diameter负荷分担,UNC,20.15.2,false,组网演进基本包,WSFD-104400,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-104405,WSFD-104405,基于SGs和Sv接口的默认MSC选择,UNC,20.15.2,false,组网演进基本包,WSFD-104400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-104406,WSFD-104406,NACC,UNC,20.15.2,false,组网演进基本包,WSFD-104400,M,-,M,-,-,M,-,-,-,-
+UNC:WSFD-104407,WSFD-104407,支持Gs接口,UNC,20.15.2,false,组网演进基本包,WSFD-104400,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-104408,WSFD-104408,通过SGs接口实现短消息,UNC,20.15.2,false,组网演进基本包,WSFD-104400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-104409,WSFD-104409,多信令点功能,UNC,20.15.2,false,组网演进基本包,WSFD-104400,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-104410,WSFD-104410,L2TP VPN,UNC,20.15.2,false,组网演进基本包,WSFD-104400,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-104411,WSFD-104411,MPLS VPN,UNC,20.15.2,false,组网演进基本包,WSFD-104400,M,M,M,M,-,M,M,M,M,M
+UNC:WSFD-104412,WSFD-104412,逻辑接口支持IPV6,UNC,20.15.2,false,组网演进基本包,WSFD-104400,-,-,M,M,-,M,M,M,M,M
+UNC:WSFD-104413,WSFD-104413,DHCP功能,UNC,20.15.2,false,组网演进基本包,WSFD-104400,-,M,-,M,,-,M,-,M,-
+UNC:WSFD-104417,WSFD-104417,eNB IP冲突检测,UNC,20.15.2,false,组网演进基本包,WSFD-104400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-104500,WSFD-104500,组网能力增强,UNC,20.15.2,true,组网演进基本包,,目录,,,,,,,,,
+UNC:WSFD-104501,WSFD-104501,LTE和UMTS 网络之间的重选,UNC,20.15.2,false,组网演进基本包,WSFD-104500,M,M,M,M,-,M,M,-,-,-
+UNC:WSFD-104502,WSFD-104502,LTE和GSM 网络之间的重选,UNC,20.15.2,false,组网演进基本包,WSFD-104500,M,M,M,M,-,M,M,-,-,-
+UNC:WSFD-104503,WSFD-104503,LTE和UMTS PS网络之间的切换,UNC,20.15.2,false,组网演进基本包,WSFD-104500,M,M,M,M,-,M,M,-,-,-
+UNC:WSFD-104504,WSFD-104504,CDMA与LTE的非优化切换,UNC,20.15.2,false,组网演进基本包,WSFD-104500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-104505,WSFD-104505,LTE和WiFi 网络之间的切换,UNC,20.15.2,false,组网演进基本包,WSFD-104500,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-104506,WSFD-104506,支持Direct Tunnel功能,UNC,20.15.2,false,组网演进基本包,WSFD-104500,M,M,-,-,-,-,-,-,-,-
+UNC:WSFD-104507,WSFD-104507,切换策略控制,UNC,20.15.2,false,组网演进基本包,WSFD-104500,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-104508,WSFD-104508,SCTP,UNC,20.15.2,false,组网演进基本包,WSFD-104500,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-104509,WSFD-104509,SGSN的黑白名单,UNC,20.15.2,false,组网演进基本包,WSFD-104500,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-104510,WSFD-104510,LTE与5G SA网络间重选,UNC,20.15.2,false,组网演进基本包,WSFD-104500,-,-,M,M,-,-,-,M,M,-
+UNC:WSFD-104511,WSFD-104511,LTE与5G SA网络间切换,UNC,20.15.2,false,组网演进基本包,WSFD-104500,-,-,M,M,-,-,-,M,M,-
+UNC:WSFD-104512,WSFD-104512,跨区域移动性管理,UNC,20.15.2,false,组网演进基本包,WSFD-104500,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-104600,WSFD-104600,NSA(Opt.3)用户面选择,UNC,20.15.2,true,组网演进基本包,,目录,,,,,,,,,
+UNC:WSFD-104601,WSFD-104601,支持基于终端能力选择用户面,UNC,20.15.2,false,组网演进基本包,WSFD-104600,-,-,-,-,-,M,-,-,-,-
+UNC:WSFD-104602,WSFD-104602,NSA用户业务连续性保障,UNC,20.15.2,false,组网演进基本包,WSFD-104600,M,-,-,-,-,M,-,-,-,-
+UNC:WSFD-105000,WSFD-105000,网络QoS管理基本功能,UNC,20.15.2,true,网络QoS管理基本包,,目录,,,,,,,,,
+UNC:WSFD-105001,WSFD-105001,QoS覆盖,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-105002,WSFD-105002,漫游用户QoS限制,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-105003,WSFD-105003,区域漫游限制,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105000,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-105004,WSFD-105004,逻辑接口DSCP配置,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-105006,WSFD-105006,服务区域限制,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-105007,WSFD-105007,5G QoS到4G QoS灵活映射,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-105100,WSFD-105100,网络QoS管理增强,UNC,20.15.2,true,网络QoS管理基本包,,目录,,,,,,,,,
+UNC:WSFD-105101,WSFD-105101,PFC（仅用于Gb 模式）,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105100,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-105102,WSFD-105102,提供会话类QoS等级业务承载,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105100,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-105103,WSFD-105103,基于用户等级的QCI扩展,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105100,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-105104,WSFD-105104,基于IMSI号段的QoS控制,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105100,M,-,M,-,M,M,-,-,M,-
+UNC:WSFD-105105,WSFD-105105,PCC模式的本地QoS策略控制,UNC,20.15.2,false,网络QoS管理基本包,WSFD-105100,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-106000,WSFD-106000,接入管理基本功能,UNC,20.15.2,true,接入管理解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-106001,WSFD-106001,终端侧二次PDP上下文激活,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106002,WSFD-106002,支持EDGE功能（仅用于Gb模式）,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106003,WSFD-106003,用户接入控制功能,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-106004,WSFD-106004,请求信息纠正功能,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,E,-,E,-,M,E,-,E,M,-
+UNC:WSFD-106005,WSFD-106005,支持ODB,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-106006,WSFD-106006,网络侧二次激活,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106008,WSFD-106008,一号多卡功能,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,-,M,-,-,M,-,-,-,-
+UNC:WSFD-106009,WSFD-106009,多时区业务,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,-,M,-,M,M,-,M,-,-
+UNC:WSFD-106010,WSFD-106010,指定区域用户位置上报(PRA),UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,-,-,M,-,-,M,-,M,-,-
+UNC:WSFD-106012,WSFD-106012,支持Null-MSISDN,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106000,M,M,M,M,M,M,M,-,M,-
+UNC:WSFD-106100,WSFD-106100,网络OM增强,UNC,20.15.2,true,接入管理解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-106101,WSFD-106101,端到端用户跟踪,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106100,-,-,M,M,M,M,M,M,M,-
+UNC:WSFD-106200,WSFD-106200,网络业务管理,UNC,20.15.2,true,接入管理解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-106201,WSFD-106201,小区广播服务,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106200,-,-,M,-,M,M,-,M,-,-
+UNC:WSFD-106202,WSFD-106202,SMS over GPRS/EDGE/WCDMA,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106200,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106203,WSFD-106203,别名APN,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106200,M,M,M,M,M,M,M,-,M,-
+UNC:WSFD-106204,WSFD-106204,基于无线区域的网络地址选择,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106200,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-106205,WSFD-106205,主动分离未激活用户,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106200,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106206,WSFD-106206,去激活空闲PDP上下文,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106200,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106207,WSFD-106207,基于SPID的UE驻留和切换策略管理,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106200,M,-,M,-,-,M,-,M,-,-
+UNC:WSFD-106300,WSFD-106300,差异化服务管理,UNC,20.15.2,true,接入管理解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-106302,WSFD-106302,基于APN的接入速率控制,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106300,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106303,WSFD-106303,基于ARP的差异化服务,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106300,M,M,-,M,-,-,-,-,-,-
+UNC:WSFD-106304,WSFD-106304,Super-Charger功能,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106300,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106305,WSFD-106305,IM类业务资源管控,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106300,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-106306,WSFD-106306,快速移动用户业务保障,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106300,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-106400,WSFD-106400,位置业务管理,UNC,20.15.2,true,接入管理解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-106401,WSFD-106401,位置定位服务（LCS）,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106400,M,-,M,-,-,M,-,-,-,-
+UNC:WSFD-106402,WSFD-106402,基于实时位置信息的策略控制功能,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106400,M,-,-,-,-,-,-,M,-,-
+UNC:WSFD-106403,WSFD-106403,小区位置信息上报功能（S11接口）,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106400,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-106405,WSFD-106405,NG-RAN的位置上报,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106400,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-106406,WSFD-106406,基于号段选择LMF,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106400,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-106407,WSFD-106407,LMF选择功能,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-106400,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-225000,WSFD-225000,5G LAN业务管理,UNC,20.15.2,true,接入管理解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-225003,WSFD-225003,5G LAN业务基本功能,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-225000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-225002,WSFD-225002,5G LAN跨SMF群组管理,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-225000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-225001,WSFD-225001,5G LAN组会话管理,UNC,20.15.2,false,接入管理解决方案基本包,WSFD-225000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-106700,WSFD-106700,5G SA位置业务管理,UNC,20.15.2,true,5G定位解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-106701,WSFD-106701,网络侧发起的5G位置定位服务,UNC,20.15.2,false,5G定位解决方案基本包,WSFD-106700,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-107000,WSFD-107000,分布式网络基本功能,UNC,20.15.2,true,分布式解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-107001,WSFD-107001,支持CUPS架构,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-107005,WSFD-107005,GW-U选择,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-107006,WSFD-107006,支持基于位置的GW-U选择,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-107008,WSFD-107008,支持基于权重的GW-U选择,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-107009,WSFD-107009,支持基于GW-U位置的DNS选择,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-107010,WSFD-107010,UPF选择,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-107015,WSFD-107015,支持SSC Mode1,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-107019,WSFD-107019,P-CSCF选择,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,-,-,M,-,-,M,-,M,-
+UNC:WSFD-107020,WSFD-107020,支持基于UPF位置的DNS选择,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-107021,WSFD-107021,静态地址用户路由冗余,UNC,20.15.2,false,分布式解决方案基本包,WSFD-107000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-108000,WSFD-108000,MEC解决方案,UNC,20.15.2,true,MEC解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-108002,WSFD-108002,基于预定义规则的分流策略控制,UNC,20.15.2,false,MEC解决方案基本包,WSFD-108000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-108004,WSFD-108004,MEC冗余模式故障保护,UNC,20.15.2,false,MEC解决方案基本包,WSFD-108000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-108005,WSFD-108005,MEC单点模式故障保护,UNC,20.15.2,false,MEC解决方案基本包,WSFD-108000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-108007,WSFD-108007,终端二次鉴权,UNC,20.15.2,false,MEC解决方案基本包,WSFD-108000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-109000,WSFD-109000,智能计费基本功能,UNC,20.15.2,true,智能PCC解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-109001,WSFD-109001,Gy/Diameter在线计费,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-109002,WSFD-109002,内容计费基本功能,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109003,WSFD-109003,基于业务时长的计费,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109004,WSFD-109004,基于业务流量的计费,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109005,WSFD-109005,支持CoA功能,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109006,WSFD-109006,ASN漫游计费,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-109007,WSFD-109007,支持事件计费,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109008,WSFD-109008,OCS Bypass,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109100,WSFD-109100,智能策略控制基本功能,UNC,20.15.2,true,智能PCC解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-109101,WSFD-109101,PCC基本功能,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109100,-,M,-,M,M,-,M,M,M,-
+UNC:WSFD-109102,WSFD-109102,ADC基本功能,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109100,-,M,-,M,-,-,-,-,M,-
+UNC:WSFD-109103,WSFD-109103,IPv6 SA,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109100,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109104,WSFD-109104,基于累计流量的策略控制,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109100,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109105,WSFD-109105,基于位置的业务管理,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109100,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109107,WSFD-109107,业务触发的QoS保证,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109100,-,M,-,M,-,-,-,-,M,-
+UNC:WSFD-109108,WSFD-109108,基于接入点策略控制,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109100,-,-,-,M,-,-,-,-,-,-
+UNC:WSFD-109200,WSFD-109200,智能QoS管理增强,UNC,20.15.2,true,智能PCC解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-109202,WSFD-109202,会话类QOS保证,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109200,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-109203,WSFD-109203,本地QOS控制,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109200,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-109204,WSFD-109204,QCI 扩展,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109200,-,-,-,M,M,-,M,-,M,-
+UNC:WSFD-109300,WSFD-109300,智能带宽管理基本功能,UNC,20.15.2,true,智能PCC解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-109301,WSFD-109301,网络侧发起专有PDP/承载建立,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109300,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-109302,WSFD-109302,网络侧发起专有PDP/承载建立扩展包1,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109300,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-109303,WSFD-109303,网络侧发起专有PDP/承载建立扩展包2,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109300,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-109304,WSFD-109304,缺省承载GBR保障,UNC,20.15.2,false,智能PCC解决方案基本包,WSFD-109300,-,-,-,M,-,-,M,-,M,-
+UNC:WSFD-110000,WSFD-110000,切片基本功能,UNC,20.15.2,true,网络切片解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-110001,WSFD-110001,支持基于NSSAI选择切片,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-110004,WSFD-110004,基于TA的网络切片选择,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-110005,WSFD-110005,支持网络切片模式下发,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-110006,WSFD-110006,支持4G到5G多切片时的重选,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-110009,WSFD-110009,支持不同PLMN切片能力差异化,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-211102,WSFD-211102,支持URSP功能,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110000,-,-,-,-,-,-,-,N,-,-
+UNC:WSFD-110010,WSFD-110010,NSSF容灾,UNC,20.15.2,true,网络切片解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-110011,WSFD-110011,NSSF主备容灾,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110010,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-110012,WSFD-110012,NSSF双活容灾,UNC,20.15.2,false,网络切片解决方案基本包,WSFD-110010,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-111000,WSFD-111000,NRF基本功能,UNC,20.15.2,true,自治网络解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-111001,WSFD-111001,NF注册,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-111000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-111002,WSFD-111002,NF去注册,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-111000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-111003,WSFD-111003,NF更新,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-111000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-111004,WSFD-111004,NF状态订阅,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-111000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-111005,WSFD-111005,NF状态通知,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-111000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-111006,WSFD-111006,NRF基础运维,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-111000,-,-,-,-,-,-,-,-,-,M
+UNC:WSFD-112000,WSFD-112000,NF认证,UNC,20.15.2,true,自治网络解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-112001,WSFD-112001,NF Token管理,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-112000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-112002,WSFD-112002,支持NF认证,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-112000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-113000,WSFD-113000,NF发现,UNC,20.15.2,true,自治网络解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-113001,WSFD-113001,基于基本属性选择AMF,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-113000,-,-,-,-,-,-,-,M,-,M
+UNC:WSFD-113002,WSFD-113002,SMF发现和选择,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-113000,-,-,-,-,-,-,-,M,-,M
+UNC:WSFD-113006,WSFD-113006,基于号段选择NF,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-113000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-113009,WSFD-113009,基于DNN选择PCF,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-113000,-,-,-,-,-,-,-,-,M,M
+UNC:WSFD-113011,WSFD-113011,基于部署区域选择NF,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-113000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-114000,WSFD-114000,NRF容灾,UNC,20.15.2,true,自治网络解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-114001,WSFD-114001,NRF主备容灾,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-114000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-114002,WSFD-114002,NRF双活容灾,UNC,20.15.2,false,自治网络解决方案基本包,WSFD-114000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-113013,WSFD-113013,NRF全故障业务逃生(Bypass),UNC,20.15.2,false,自治网络解决方案基本包,WSFD-114000,-,-,-,-,-,-,M,M,M,-
+UNC:WSFD-130000,WSFD-130000,SMSF基本功能,UNC,20.15.2,true,短消息解决方案,,目录,,,,,,,,,
+UNC:WSFD-130001,WSFD-130001,短消息业务,UNC,20.15.2,false,短消息解决方案,WSFD-130000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-130010,WSFD-130010,SMSF容灾,UNC,20.15.2,true,短消息解决方案,,目录,,,,,,,,,
+UNC:WSFD-130011,WSFD-130011,SMSF双活容灾,UNC,20.15.2,false,短消息解决方案,WSFD-130010,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-201000,WSFD-201000,VoLTE业务增强包,UNC,20.15.2,true,语音增值包,,目录,,,,,,,,,
+UNC:WSFD-201001,WSFD-201001,基于SRVCC的数据语音双切换,UNC,20.15.2,false,语音增值包,WSFD-201000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201002,WSFD-201002,用户群语音策略控制,UNC,20.15.2,false,语音增值包,WSFD-201000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201003,WSFD-201003,网络语音业务信息上报功能,UNC,20.15.2,false,语音增值包,WSFD-201000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201004,WSFD-201004,基于IMEI的语音策略控制,UNC,20.15.2,false,语音增值包,WSFD-201000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201005,WSFD-201005,基于区域的语音策略控制,UNC,20.15.2,false,语音增值包,WSFD-201000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201007,WSFD-201007,SRVCC的MSC拓扑选择,UNC,20.15.2,false,语音增值包,WSFD-201000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201100,WSFD-201100,VoLTE增值业务包,UNC,20.15.2,true,语音增值包,,目录,,,,,,,,,
+UNC:WSFD-201101,WSFD-201101,VoLTE一号多卡,UNC,20.15.2,false,语音增值包,WSFD-201100,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201102,WSFD-201102,语音业务的位置信息策略控制功能,UNC,20.15.2,false,语音增值包,WSFD-201100,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201103,WSFD-201103,IMS功能,UNC,20.15.2,false,语音增值包,WSFD-201100,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-201200,WSFD-201200,VoLTE可靠性增强,UNC,20.15.2,true,语音增值包,,目录,,,,,,,,,
+UNC:WSFD-201201,WSFD-201201,MME链式备份,UNC,20.15.2,false,语音增值包,WSFD-201200,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201202,WSFD-201202,本地VLR,UNC,20.15.2,false,语音增值包,WSFD-201200,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201203,WSFD-201203,S-GW/P-GW故障下的业务恢复,UNC,20.15.2,false,语音增值包,WSFD-201200,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201204,WSFD-201204,VoLTE承载故障快速恢复,UNC,20.15.2,false,语音增值包,WSFD-201200,-,-,M,M,-,M,M,-,-,-
+UNC:WSFD-201205,WSFD-201205,基于HSS的P-CSCF故障恢复,UNC,20.15.2,false,语音增值包,WSFD-201200,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201207,WSFD-201207,语音PCF/PCRF故障Bypass,UNC,20.15.2,false,语音增值包,WSFD-201200,-,-,-,M,-,-,M,-,M,-
+UNC:WSFD-201208,WSFD-201208,VoLTE承载延时保活,UNC,20.15.2,false,语音增值包,WSFD-201200,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-201300,WSFD-201300,VoWifi基本功能,UNC,20.15.2,true,语音增值包,,目录,,,,,,,,,
+UNC:WSFD-201301,WSFD-201301,E-UTRAN和WLAN互操作,UNC,20.15.2,false,语音增值包,WSFD-201300,-,-,-,M,-,-,M,-,-,-
+UNC:WSFD-201302,WSFD-201302,支持WLAN与GSM/UMTS/LTE双流并发,UNC,20.15.2,false,语音增值包,WSFD-201300,-,-,-,M,-,-,M,-,-,-
+UNC:WSFD-201303,WSFD-201303,支持NG-RAN和WLAN互操作,UNC,20.15.2,false,语音增值包,WSFD-201300,-,-,-,M,-,-,M,-,M,-
+UNC:WSFD-201305,WSFD-201305,支持VoWiFi到EPS Fallback的切换,UNC,20.15.2,false,语音增值包,WSFD-201300,-,-,-,-,-,-,-,-,N,-
+UNC:WSFD-202000,WSFD-202000,网络质量上报,UNC,20.15.2,true,MBB可视化增值包,,目录,,,,,,,,,
+UNC:WSFD-202001,WSFD-202001,CHR功能,UNC,20.15.2,false,MBB可视化增值包,WSFD-202000,M,M,M,M,-,M,M,M,M,-
+UNC:WSFD-202002,WSFD-202002,支持HTTP头压缩字典,UNC,20.15.2,false,MBB可视化增值包,WSFD-202000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-202003,WSFD-202003,黄金指标实时上报,UNC,20.15.2,false,MBB可视化增值包,WSFD-202000,-,-,M,M,-,-,M,M,M,M
+UNC:WSFD-205000,WSFD-205000,拓扑增强管理,UNC,20.15.2,true,组网演进增值包,,目录,,,,,,,,,
+UNC:WSFD-205001,WSFD-205001,网关路由选择功能,UNC,20.15.2,false,组网演进增值包,WSFD-205000,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-205002,WSFD-205002,基于计费属性选择网关,UNC,20.15.2,false,组网演进增值包,WSFD-205000,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-205003,WSFD-205003,基于位置区域选择网关,UNC,20.15.2,false,组网演进增值包,WSFD-205000,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-205004,WSFD-205004,S-GW/P-GW拓扑选择,UNC,20.15.2,false,组网演进增值包,WSFD-205000,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-205005,WSFD-205005,基于UE接入能力选择网关,UNC,20.15.2,false,组网演进增值包,WSFD-205000,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-205006,WSFD-205006,基于P-GW锚点选择S-GW,UNC,20.15.2,false,组网演进增值包,WSFD-205000,M,-,M,-,M,M,-,-,-,-
+UNC:WSFD-205007,WSFD-205007,本地P-GW的PDN重建,UNC,20.15.2,false,组网演进增值包,WSFD-205000,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-205008,WSFD-205008,Category 6网关选择,UNC,20.15.2,false,组网演进增值包,WSFD-205000,M,-,M,-,-,M,-,-,-,-
+UNC:WSFD-205009,WSFD-205009,基于HeNB GW的HeNB接入,UNC,20.15.2,false,组网演进增值包,WSFD-205000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-205010,WSFD-205010,基于服务区域的SMF选择,UNC,20.15.2,false,组网演进增值包,WSFD-205000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-205011,WSFD-205011,本地PDU会话重建,UNC,20.15.2,false,组网演进增值包,WSFD-205000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-205012,WSFD-205012,跨域互联互通,UNC,20.15.2,false,组网演进增值包,WSFD-205000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-205013,WSFD-205013,网络拥塞的实时检测,UNC,20.15.2,false,组网演进增值包,WSFD-205000,-,-,M,M,-,M,M,M,M,-
+UNC:WSFD-205015,WSFD-205015,SMF支持多服务区,UNC,20.15.2,false,组网演进增值包,WSFD-205000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-205100,WSFD-205100,业务管理,UNC,20.15.2,true,组网演进增值包,,目录,,,,,,,,,
+UNC:WSFD-205101,WSFD-205101,支持Routing Behind MS,UNC,20.15.2,false,组网演进增值包,WSFD-205100,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-205102,WSFD-205102,虚拟APN,UNC,20.15.2,false,组网演进增值包,WSFD-205100,-,M,-,M,M,-,M,-,M,-
+UNC:WSFD-205104,WSFD-205104,支持用户发起的二次激活,UNC,20.15.2,false,组网演进增值包,WSFD-205100,-,M,-,-,,`,-,-,-,-
+UNC:WSFD-205105,WSFD-205105,上下文回收管理,UNC,20.15.2,false,组网演进增值包,WSFD-205100,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-205107,WSFD-205107,GGSN/P-GW信令代理,UNC,20.15.2,false,组网演进增值包,WSFD-205100,-,M,-,M,,-,M,-,-,-
+UNC:WSFD-206000,WSFD-206000,智能防信令风暴增强,UNC,20.15.2,true,业务高可靠性增值包,,目录,,,,,,,,,
+UNC:WSFD-206001,WSFD-206001,精准寻呼,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,-,-,M,-,M,M,-,M,-,-
+UNC:WSFD-206002,WSFD-206002,LTE UE信令控制,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-206003,WSFD-206003,基于APN的信令拥塞控制,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,M,-,M,M,-,M,M,-,-,-
+UNC:WSFD-206004,WSFD-206004,固定终端寻呼优化,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-206005,WSFD-206005,Smartphone控制基础功能,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-206006,WSFD-206006,Smartphone异常信令节省,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-206007,WSFD-206007,Smartphone话务模型统计,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-206008,WSFD-206008,5G UE信令控制,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-206009,WSFD-206009,网元间HTR流控,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-206010,WSFD-206010,基于分组的智能寻呼,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206000,-,-,-,-,-,-,-,N,-,-
+UNC:WSFD-206100,WSFD-206100,UDM/HSS/HLR全故障业务保活功能,UNC,20.15.2,true,业务高可靠性增值包,,目录,,,,,,,,,
+UNC:WSFD-206101,WSFD-206101,UDM全故障业务保活,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206100,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-206102,WSFD-206102,HSS全故障业务保活,UNC,20.15.2,false,业务高可靠性增值包,WSFD-206100,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-207000,WSFD-207000,MVNO基本功能,UNC,20.15.2,true,MVNO增值包,,目录,,,,,,,,,
+UNC:WSFD-207001,WSFD-207001,网络共享（MOCN）,UNC,20.15.2,false,MVNO增值包,WSFD-207000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-207002,WSFD-207002,网络共享（GWCN）,UNC,20.15.2,false,MVNO增值包,WSFD-207000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-207003,WSFD-207003,基于LTE的网络共享（MOCN）,UNC,20.15.2,false,MVNO增值包,WSFD-207000,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-207004,WSFD-207004,基于LTE的网络共享（GWCN）,UNC,20.15.2,false,MVNO增值包,WSFD-207000,-,-,M,-,M,M,-,-,-,-
+UNC:WSFD-207005,WSFD-207005,MVNO,UNC,20.15.2,false,MVNO增值包,WSFD-207000,M,-,-,-,-,-,-,-,-,-
+UNC:WSFD-207006,WSFD-207006,基于LTE的MVNO,UNC,20.15.2,false,MVNO增值包,WSFD-207000,-,-,M,-,-,M,-,-,-,-
+UNC:WSFD-207007,WSFD-207007,基于5G的网络共享（MOCN）,UNC,20.15.2,false,MVNO增值包,WSFD-207000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-209000,WSFD-209000,可靠性分级自定义,UNC,20.15.2,true,年费增值包-云化特性增值包,,目录,,,,,,,,,
+UNC:WSFD-209001,WSFD-209001,业务处理单元可靠性可定义,UNC,20.15.2,false,年费增值包-云化特性增值包,WSFD-209000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-209002,WSFD-209002,磁盘故障隔离,UNC,20.15.2,false,年费增值包-云化特性增值包,WSFD-209000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-209200,WSFD-209200,智能故障检测,UNC,20.15.2,true,年费增值包-云化特性增值包,,目录,,,,,,,,,
+UNC:WSFD-209205,WSFD-209205,云化性能数据采集,UNC,20.15.2,false,年费增值包-云化特性增值包,WSFD-209200,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-210000,WSFD-210000,5G超高带宽基本功能,UNC,20.15.2,true,5G高速连接增值包,,目录,,,,,,,,,
+UNC:WSFD-210001,WSFD-210001,5G超高带宽基本功能（1Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210002,WSFD-210002,5G超高带宽高速承载接入（1Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210003,WSFD-210003,5G超高带宽基本功能（2Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210004,WSFD-210004,5G超高带宽高速承载接入（2Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210005,WSFD-210005,5G超高带宽基本功能（5Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210006,WSFD-210006,5G超高带宽高速承载接入（5Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210007,WSFD-210007,5G超高带宽基本功能（10Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210008,WSFD-210008,5G超高带宽高速承载接入（10Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210009,WSFD-210009,5G超高带宽基本功能（20Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-210010,WSFD-210010,5G超高带宽高速承载接入（20Gbps）,UNC,20.15.2,false,5G高速连接增值包,WSFD-210000,-,-,-,-,-,M,M,M,M,-
+UNC:WSFD-211000,WSFD-211000,智能带宽管理,UNC,20.15.2,true,智能PCC增值包,,目录,,,,,,,,,
+UNC:WSFD-211001,WSFD-211001,基于初始接入位置的策略控制,UNC,20.15.2,false,智能PCC增值包,WSFD-211000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-211002,WSFD-211002,基于实时位置的策略控制,UNC,20.15.2,false,智能PCC增值包,WSFD-211000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-211003,WSFD-211003,基于指定区域的策略控制,UNC,20.15.2,false,智能PCC增值包,WSFD-211000,-,-,-,M,,-,M,-,M,-
+UNC:WSFD-211005,WSFD-211005,基于业务感知的带宽控制,UNC,20.15.2,false,智能PCC增值包,WSFD-211000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-211009,WSFD-211009,基于业务累计流量的策略控制,UNC,20.15.2,false,智能PCC增值包,WSFD-211000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-211100,WSFD-211100,端到端优化,UNC,20.15.2,true,智能PCC增值包,,目录,,,,,,,,,
+UNC:WSFD-211101,WSFD-211101,基于小区负荷上报的无线资源优化,UNC,20.15.2,false,智能PCC增值包,WSFD-211100,-,M,-,M,-,-,M,-,-,-
+UNC:WSFD-213000,WSFD-213000,容灾功能,UNC,20.15.2,true,分布式网络增值包,,目录,,,,,,,,,
+UNC:WSFD-213001,WSFD-213001,CU FullMesh组网,UNC,20.15.2,false,分布式网络增值包,WSFD-213000,-,M,-,M,-,-,M,-,M,-
+UNC:WSFD-213002,WSFD-213002,NF业务可靠性保障,UNC,20.15.2,false,分布式网络增值包,WSFD-213000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-213004,WSFD-213004,GW-U故障隔离,UNC,20.15.2,false,分布式网络增值包,WSFD-213000,-,M,-,M,M,-,M,-,-,-
+UNC:WSFD-213005,WSFD-213005,UPF故障隔离,UNC,20.15.2,false,分布式网络增值包,WSFD-213000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-213006,WSFD-213006,N6接口故障隔离,UNC,20.15.2,false,分布式网络增值包,WSFD-213000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-217001,WSFD-217001,用户面业务通道保活,UNC,20.15.2,false,分布式网络增值包,WSFD-213000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-214000,WSFD-214000,NRF分层组网,UNC,20.15.2,true,自治网络增值包,,目录,,,,,,,,,
+UNC:WSFD-214001,WSFD-214001,支持L-NRF注册,UNC,20.15.2,false,自治网络增值包,WSFD-214000,-,-,-,-,-,-,-,-,-,M
+UNC:WSFD-214002,WSFD-214002,支持L-NRF去注册,UNC,20.15.2,false,自治网络增值包,WSFD-214000,-,-,-,-,-,-,-,-,-,M
+UNC:WSFD-214003,WSFD-214003,支持L-NRF更新,UNC,20.15.2,false,自治网络增值包,WSFD-214000,-,-,-,-,-,-,-,-,-,M
+UNC:WSFD-214004,WSFD-214004,支持NF递归查询,UNC,20.15.2,false,自治网络增值包,WSFD-214000,-,-,-,-,-,-,-,-,-,M
+UNC:WSFD-214005,WSFD-214005,支持NF迭代查询,UNC,20.15.2,false,自治网络增值包,WSFD-214000,-,-,-,-,-,-,-,-,-,M
+UNC:WSFD-214100,WSFD-214100,NRF增强功能,UNC,20.15.2,true,自治网络增值包,,目录,,,,,,,,,
+UNC:WSFD-214101,WSFD-214101,支持NF属性检查与校验,UNC,20.15.2,false,自治网络增值包,WSFD-214100,-,-,-,-,-,-,-,-,-,M
+UNC:WSFD-215000,WSFD-215000,NB-IoT终端节能管理,UNC,20.15.2,true,NB-IoT解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-215001,WSFD-215001,终端省电PSM模式,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215000,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215002,WSFD-215002,NB-IoT eDRX模式,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215000,-,-,M,M,M,-,-,-,-,-
+UNC:WSFD-215100,WSFD-215100,NB-IoT数据传输优化,UNC,20.15.2,true,NB-IoT解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-215101,WSFD-215101,基于信令面的数据传输,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215100,-,-,M,M,M,-,-,-,-,-
+UNC:WSFD-215102,WSFD-215102,NB-IoT用户面传输通道保活,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215100,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215103,WSFD-215103,Non-IP数据传输,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215100,-,-,M,M,M,-,-,-,-,-
+UNC:WSFD-215104,WSFD-215104,NB-IoT基于SGs接口的短消息,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215100,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215105,WSFD-215105,基于信令面数据传输的Qos差异化控制,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215100,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215200,WSFD-215200,NB-IoT海量接入控制和覆盖增强,UNC,20.15.2,true,NB-IoT解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-215201,WSFD-215201,基于延迟定时器的信令拥塞控制,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215200,-,-,M,M,M,-,-,-,-,-
+UNC:WSFD-215202,WSFD-215202,基于eNodeB覆盖等级的寻呼,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215200,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215203,WSFD-215203,低优先级接入控制,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215200,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215204,WSFD-215204,基于APN的NB-IoT终端接入速率控制,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215200,-,-,M,M,M,-,-,-,-,-
+UNC:WSFD-215205,WSFD-215205,基于服务PLMN的NB-IoT终端接入速率控制,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215200,-,-,M,M,M,-,-,-,-,-
+UNC:WSFD-215300,WSFD-215300,NB-IoT周边网元免升级优化,UNC,20.15.2,true,NB-IoT解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-215301,WSFD-215301,HSS免升级,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215300,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215302,WSFD-215302,PCRF免升级,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215300,-,-,-,M,M,-,-,-,-,-
+UNC:WSFD-215400,WSFD-215400,NB-IoT终端异常信令与流量管理,UNC,20.15.2,true,NB-IoT解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-215401,WSFD-215401,NB-IoT终端异常信令与流量管理,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215400,-,-,M,-,M,-,-,-,-,-
+UNC:WSFD-215500,WSFD-215500,NB-IoT NB2接入,UNC,20.15.2,true,NB-IoT解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-215501,WSFD-215501,支持Category NB2接入,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215500,-,-,M,M,M,-,-,-,-,-
+UNC:WSFD-215502,WSFD-215502,支持2 HARQ终端接入,UNC,20.15.2,false,NB-IoT解决方案增值包,WSFD-215500,-,`,M,-,M,-,-,-,-,-
+UNC:WSFD-216000,WSFD-216000,eMTC终端节能管理,UNC,20.15.2,true,eMTC解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-216001,WSFD-216001,eMTC终端省电PSM模式,UNC,20.15.2,false,eMTC解决方案增值包,WSFD-216000,-,-,M,-,-,-,-,-,-,-
+UNC:WSFD-216002,WSFD-216002,eMTC eDRX模式,UNC,20.15.2,false,eMTC解决方案增值包,WSFD-216000,-,-,M,M,-,-,-,-,-,-
+UNC:WSFD-216100,WSFD-216100,eMTC海量接入控制与覆盖增强,UNC,20.15.2,true,eMTC解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-216101,WSFD-216101,eMTC基于延迟定时器的信令拥塞控制,UNC,20.15.2,false,eMTC解决方案增值包,WSFD-216100,-,-,M,M,-,-,-,-,-,-
+UNC:WSFD-216102,WSFD-216102,eMTC基于eNodeB覆盖等级的寻呼,UNC,20.15.2,false,eMTC解决方案增值包,WSFD-216100,-,-,M,-,-,-,-,-,-,-
+UNC:WSFD-216103,WSFD-216103,eMTC低优先级接入控制,UNC,20.15.2,false,eMTC解决方案增值包,WSFD-216100,-,-,M,-,-,-,-,-,-,-
+UNC:WSFD-216104,WSFD-216104,基于APN的eMTC终端接入速率控制,UNC,20.15.2,false,eMTC解决方案增值包,WSFD-216100,-,-,-,M,-,-,-,-,-,-
+UNC:WSFD-216105,WSFD-216105,基于服务PLMN的eMTC终端接入速率控制,UNC,20.15.2,false,eMTC解决方案增值包,WSFD-216100,-,-,-,M,-,-,-,-,-,-
+UNC:WSFD-220000,WSFD-220000,软探针信令数据上报,UNC,20.15.2,true,NIAE解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-220001,WSFD-220001,NAS IMR信令上报,UNC,20.15.2,false,NIAE解决方案增值包,WSFD-220000,-,-,-,-,-,-,-,E,-,-
+UNC:WSFD-220002,WSFD-220002,SBI IMR信令上报,UNC,20.15.2,false,NIAE解决方案增值包,WSFD-220000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-221000,WSFD-221000,VoNR可靠性增强,UNC,20.15.2,true,VoNR语音解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-221001,WSFD-221001,VoNR承载延时保活,UNC,20.15.2,false,VoNR语音解决方案增值包,WSFD-221000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-221002,WSFD-221002,基于UDM的VoNR语音故障恢复,UNC,20.15.2,false,VoNR语音解决方案增值包,WSFD-221000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-221003,WSFD-221003,基于PCF的VoNR业务快速恢复,UNC,20.15.2,false,VoNR语音解决方案增值包,WSFD-221000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-221004,WSFD-221004,基于AMF的寻呼流控,UNC,20.15.2,false,VoNR语音解决方案增值包,WSFD-221000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-221005,WSFD-221005,SMF故障下的业务恢复,UNC,20.15.2,false,VoNR语音解决方案增值包,WSFD-221000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-224000,WSFD-224000,国际漫游基本业务,UNC,20.15.2,true,5G SA国际漫游解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-224001,WSFD-224001,支持SA国际漫游接入,UNC,20.15.2,false,5G SA国际漫游解决方案增值包,WSFD-224000,-,-,-,-,-,-,-,M,M,M
+UNC:WSFD-224100,WSFD-224100,国际漫游业务增强,UNC,20.15.2,true,5G SA国际漫游解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-224101,WSFD-224101,漫游场景下LTE与5G SA网络间重选,UNC,20.15.2,false,5G SA国际漫游解决方案增值包,WSFD-224100,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-224102,WSFD-224102,漫游场景下LTE与5G SA网络间切换,UNC,20.15.2,false,5G SA国际漫游解决方案增值包,WSFD-224100,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-224103,WSFD-224103,支持QBC计费,UNC,20.15.2,false,5G SA国际漫游解决方案增值包,WSFD-224100,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-224104,WSFD-224104,支持拜访地QoS控制,UNC,20.15.2,false,5G SA国际漫游解决方案增值包,WSFD-224100,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-224105,WSFD-224105,国际漫游切片映射,UNC,20.15.2,false,5G SA国际漫游解决方案增值包,WSFD-224100,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-227100,WSFD-227100,灰度升级,UNC,20.15.2,true,灰度升级解决方案增值包,,目录,,,,,,,,,
+UNC:WSFD-227101,WSFD-227101,在线升级,UNC,20.15.2,false,灰度升级解决方案增值包,WSFD-227100,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-227102,WSFD-227102,支持灰度拨测和发布,UNC,20.15.2,false,灰度升级解决方案增值包,WSFD-227100,-,-,M,M,M,M,M,M,M,-
+UNC:WSFD-227103,WSFD-227103,灰度升级在线回退,UNC,20.15.2,false,灰度升级解决方案增值包,WSFD-227100,M,M,M,M,M,M,M,M,M,-
+UNC:WSFD-228000,WSFD-228000,超级互联业务,UNC,20.15.2,true,移动VPN方案增值包,,目录,,,,,,,,,
+UNC:WSFD-228001,WSFD-228001,跨域业务访问,UNC,20.15.2,false,移动VPN方案增值包,WSFD-228000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-228002,WSFD-228002,基于通用DNN的漫游分流,UNC,20.15.2,false,移动VPN方案增值包,WSFD-228000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-228003,WSFD-228003,公网私网业务独立计费,UNC,20.15.2,false,移动VPN方案增值包,WSFD-228000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-223000,WSFD-223000,MEC智能分流功能,UNC,20.15.2,true,移动VPN方案增值包,,目录,,,,,,,,,
+UNC:WSFD-223001,WSFD-223001,基于位置信息的分流策略控制,UNC,20.15.2,false,移动VPN方案增值包,WSFD-223000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-223002,WSFD-223002,公私网协同访问（含共享UPF选择）,UNC,20.15.2,false,移动VPN方案增值包,WSFD-223000,,,,,,,,,M,
+UNC:WSFD-223003,WSFD-223003,基于漫游地动态签约的分流策略控制,UNC,20.15.2,false,移动VPN方案增值包,WSFD-223000,-,-,-,-,-,-,-,M,M,-
+UNC:WSFD-223004,WSFD-223004,基于动态规则的分流策略控制,UNC,20.15.2,false,移动VPN方案增值包,WSFD-223000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-223005,WSFD-223005,SMF选择ULCL合一策略增强,UNC,20.15.2,false,移动VPN方案增值包,WSFD-223000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-223006,WSFD-223006,基于DNN插入I-UPF,UNC,20.15.2,false,移动VPN方案增值包,WSFD-223000,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-223100,WSFD-223100,4G场景下的本地分流策略控制,UNC,20.15.2,true,移动VPN方案增值包,,目录,,,,,,,,,
+UNC:WSFD-223101,WSFD-223101,基于预定义规则的分流策略控制(4G),UNC,20.15.2,false,移动VPN方案增值包,WSFD-223100,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-223102,WSFD-223102,基于动态规则的分流策略控制(4G),UNC,20.15.2,false,移动VPN方案增值包,WSFD-223100,-,-,-,-,-,-,-,-,M,-
+UNC:WSFD-230000,WSFD-230000,策略协同,UNC,20.15.2,true,体验经营策略协同增值包,,目录,,,,,,,,,
+UNC:WSFD-230001,WSFD-230001,动态UE Logo下发,UNC,20.15.2,false,体验经营策略协同增值包,WSFD-230000,-,-,-,-,-,-,-,M,-,-
+UNC:WSFD-230002,WSFD-230002,支持RFSP选频选网,UNC,20.15.2,false,体验经营策略协同增值包,WSFD-230000,-,-,M,-,-,M,-,M,-,-
+UNC:WSFD-229000,WSFD-229000,智网接入,UNC,20.15.2,true,一跳入家解决方案,,目录,,,,,,,,,
+UNC:WSFD-229001,WSFD-229001,智网接入,UNC,20.15.2,false,一跳入家解决方案,WSFD-229000,-,-,-,-,-,-,-,-,N,-
+UNC:WSFD-990005,WSFD-990005,支持RedCap eDRX功能,UNC,20.15.2,false,RedCap eDRX,,-,-,-,-,-,-,-,N,N,-
+UNC:WSFD-219000,WSFD-219000,内生安全,UNC,20.15.2,true,安全解决方案基本包,,目录,,,,,,,,,
+UNC:WSFD-219003,WSFD-219003,恶意文件检测,UNC,20.15.2,false,安全解决方案基本包,WSFD-219000,M,M,M,M,M,M,M,M,M,M
+UNC:WSFD-219005,WSFD-219005,微隔离,UNC,20.15.2,false,安全解决方案基本包,WSFD-219000,M,M,M,M,M,M,M,M,M,M

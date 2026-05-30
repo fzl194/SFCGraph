@@ -1,0 +1,26 @@
+command_id,command_name,vendor,object_id,candidate_reason,relevance_candidate,evidence_id,status
+CMD-UDG-ADD-IPLIST,ADD IPLIST,UDG,ConfigObject:UDG:IPList,"用于构造业务3指定IP范围识别条件。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-FILTER,ADD FILTER,UDG,ConfigObject:UDG:Filter,"用于构造三四层过滤条件。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-L7FILTER,ADD L7FILTER,UDG,ConfigObject:UDG:L7Filter,"用于构造 URL/Host 七层识别条件。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-FLOWFILTER,ADD FLOWFILTER,UDG,ConfigObject:UDG:FlowFilter,"用于组合三四层、协议、七层识别条件。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-FLTBINDFLOWF,ADD FLTBINDFLOWF,UDG,ConfigObject:UDG:FltBindFlowF,"用于将 Filter 绑定到 FlowFilter。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-PROTBINDFLOWF,ADD PROTBINDFLOWF,UDG,ConfigObject:UDG:ProtBindFlowF,"用于将协议或七层条件绑定到 FlowFilter。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-FLOWFILTERGRP,ADD FLOWFILTERGRP,UDG,ConfigObject:UDG:FlowFilterGroup,"用于组织多条业务3识别路径。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-URR,ADD URR,UDG,ConfigObject:UDG:URR,"用于为不同业务定义 URR 计费语义。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-URRGROUP,ADD URRGROUP,UDG,ConfigObject:UDG:URRGroup,"用于组织 URR 组。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-PCCPOLICYGRP,ADD PCCPOLICYGRP,UDG,ConfigObject:UDG:PCCPolicyGrp,"用于将 URRGroup 绑定到 PCC 策略组。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-RULE,ADD RULE,UDG,ConfigObject:UDG:Rule,"用于将识别条件和计费动作绑定，并设置优先级。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-USERPROFILE,ADD USERPROFILE,UDG,ConfigObject:UDG:UserProfile,"用于承载整个业务套餐。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-SET-URRGRPBINDING,SET URRGRPBINDING,UDG,ConfigObject:UDG:UserProfile,"用于为 UserProfile 设置缺省 URR 组。",high,EVI-UDG-BA-93112148,accepted
+CMD-UDG-ADD-RULEBINDING,ADD RULEBINDING,UDG,ConfigObject:UDG:RuleBinding,"用于将多条 Rule 绑定到同一 UserProfile。",high,EVI-UDG-BA-93112148,accepted
+CMD-UNC-SET-LICENSESWITCH,SET LICENSESWITCH,UNC,ConfigObject:UNC:LicenseSwitch,"用于激活内容计费 License。",medium,EVI-UNC-FEAT-74013177,accepted
+CMD-UNC-ADD-URR,ADD URR,UNC,ConfigObject:UNC:URR,"用于定义在线/离线 URR 及 RG。",high,EVI-UNC-TOPIC-90679673,accepted
+CMD-UNC-ADD-URRGROUP,ADD URRGROUP,UNC,ConfigObject:UNC:URRGroup,"用于组织在线/离线 URR。",high,EVI-UNC-TOPIC-90679673,accepted
+CMD-UNC-ADD-PCCPOLICYGRP,ADD PCCPOLICYGRP,UNC,ConfigObject:UNC:PCCPolicyGrp,"用于将 URRGroup 绑定到 PCC 策略组。",high,EVI-UNC-TOPIC-90679673,accepted
+CMD-UNC-ADD-RULE,ADD RULE,UNC,ConfigObject:UNC:Rule,"用于将 PCCPolicyGrp 绑定到 Rule。",high,EVI-UNC-TOPIC-90679673,accepted
+CMD-UNC-SET-URRGRPBINDING,SET URRGRPBINDING,UNC,ConfigObject:UNC:UserProfile,"用于为 UserProfile 设置缺省 URR 组。",high,EVI-UNC-TOPIC-90679673,accepted
+CMD-UNC-ADD-RULEBINDING,ADD RULEBINDING,UNC,ConfigObject:UNC:RuleBinding,"用于将 Rule 绑定到 UserProfile。",high,EVI-UNC-TOPIC-90679673,accepted
+CMD-UNC-ADD-QUOTAEXHAUSTACT,ADD QUOTAEXHAUSTACT,UNC,ConfigObject:UNC:QuotaExhaustAction,"用于定义在线 RG 配额耗尽后的 BLOCK/REDIRECT/FORWARD 动作。",high,EVI-UNC-CMD-95129686,accepted
+CMD-UNC-ADD-CCT,ADD CCT,UNC,ConfigObject:UNC:CCT,"用于定义融合计费模板和配额阈值，是配额耗尽动作的上游模板对象。",high,EVI-UNC-CMD-09653176,accepted
+CMD-UDG-ADD-REDIRECT,ADD REDIRECT,UDG,ConfigObject:UDG:Redirect,"用于定义 URL 重定向目标，是 UDG 侧重定向动作对象。",high,EVI-UDG-BA-92393307,accepted
+CMD-UDG-ADD-PCCACTIONPROP,ADD PCCACTIONPROP,UDG,ConfigObject:UDG:PccActionProp,"用于承载重定向、阻断等 PCC 动作属性。",high,EVI-UDG-BA-87803995,accepted

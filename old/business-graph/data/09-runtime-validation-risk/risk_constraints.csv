@@ -1,0 +1,5 @@
+risk_constraint_id,risk_constraint_name,summary,source_evidence_ids,status
+RC-BA-001,配额耗尽动作仅对新激活用户生效,ADD QUOTAEXHAUSTACT 配置的动作只对新激活用户生效。,"[""EVI-UNC-CMD-95129686""]",accepted
+RC-BA-002,业务刷新后生效约束,本地 PCC 和业务感知相关新配置需要通过刷新动作或重新激活后才能在运行面稳定体现。,"[""EVI-UDG-FEAT-74096529"",""EVI-UDG-BA-92393307""]",accepted
+RC-BA-003,CCT粒度继承优先级约束,CCT 的 UserProfile、DNN、CC、整机通用参数存在明确优先级，且原则上应统一采用同一粒度。,"[""EVI-UNC-FEAT-93400212""]",accepted
+RC-BA-004,PCC性能影响约束,PCC 功能会影响用户激活性能、运行时处理时延和系统性能，需要结合流量模型评估。,"[""EVI-UDG-FEAT-47011385"",""EVI-UNC-FEAT-71770359""]",accepted
