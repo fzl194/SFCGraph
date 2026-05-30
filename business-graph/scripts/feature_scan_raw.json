@@ -4530,31 +4530,31 @@
     "reason": "用户要求"
   },
   {
-    "id": "?",
+    "id": "WSFD-211002",
     "name": "基于实时位置的策略控制",
     "dir": "智能PCC解决方案",
     "type": "subdir",
-    "nf": "?",
+    "nf": "SMF",
     "source": "UNC",
     "status": "纳入",
     "reason": "用户要求"
   },
   {
-    "id": "?",
+    "id": "WSFD-211003",
     "name": "基于指定区域的策略控制",
     "dir": "智能PCC解决方案",
     "type": "subdir",
-    "nf": "?",
+    "nf": "SMF",
     "source": "UNC",
     "status": "纳入",
     "reason": "用户要求"
   },
   {
-    "id": "?",
+    "id": "WSFD-211002",
     "name": "基于实时位置的策略控制",
     "dir": "智能PCC解决方案",
     "type": "md",
-    "nf": "?",
+    "nf": "SMF",
     "source": "UNC",
     "status": "纳入",
     "reason": "用户要求"

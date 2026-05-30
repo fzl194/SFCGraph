@@ -1,6 +1,9 @@
 # 产品文档原始数据（体积大）
 output/
 
+# SKILL特性文档（体积大）
+business-graph/SKILL/
+
 # 平台工具
 platform/
 
