@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>业务图谱 Schema</title>
+<style>
+/* ============ Design System ============ */
+:root {
+    --blue:#3b82f6; --blue-d:#2563eb; --blue-l:#dbeafe; --blue-bg:#eff6ff;
+    --purple:#7c3aed; --purple-l:#ede9fe; --purple-bg:#f5f3ff;
+    --teal:#0d9488; --teal-l:#ccfbf1; --teal-bg:#f0fdfa;
+    --orange:#d97706; --orange-l:#fef3c7; --orange-bg:#fffbeb;
+    --g50:#f8fafc; --g100:#f1f5f9; --g200:#e2e8f0; --g300:#cbd5e1;
+    --g500:#64748b; --g700:#334155; --g900:#0f172a;
+    --radius:14px; --shadow:0 4px 24px rgba(0,0,0,.06);
+    --font:-apple-system,"PingFang SC","Noto Sans SC","Helvetica Neue",Arial,sans-serif;
+    --mono:"SF Mono","Fira Code","Cascadia Code",monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);color:var(--g700);background:var(--g50);line-height:1.7;}
+/* dot grid bg */
+body::before{content:'';position:fixed;inset:0;z-index:-1;
+    background-image:radial-gradient(circle,#e2e8f0 .8px,transparent .8px);
+    background-size:28px 28px;opacity:.5;}
+
+/* ============ Layout ============ */
+.page{max-width:980px;margin:0 auto;padding:0 32px;}
+
+/* ============ Section ============ */
+.sec{padding:80px 0 40px;opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.22,1,.36,1);}
+.sec.visible{opacity:1;transform:translateY(0);}
+.sec-num{font-size:13px;font-weight:700;letter-spacing:3px;color:var(--blue);margin-bottom:8px;}
+.sec-title{font-size:clamp(26px,4vw,36px);font-weight:800;color:var(--g900);margin-bottom:12px;line-height:1.25;}
+.sec-desc{font-size:16px;color:var(--g500);max-width:680px;margin-bottom:36px;}
+.sec-desc strong{color:var(--g700);}
+.sec-hr{border:none;border-top:1px solid var(--g200);margin:64px 0 0;}
+
+/* ============ Hero ============ */
+#hero{padding:100px 0 60px;text-align:center;opacity:1;transform:none;}
+.hero-badge{display:inline-block;padding:6px 20px;border-radius:20px;font-size:13px;font-weight:600;
+    background:var(--blue-l);color:var(--blue-d);margin-bottom:28px;border:1px solid var(--blue);}
+.hero-title{font-size:clamp(48px,8vw,72px);font-weight:900;line-height:1.05;
+    background:linear-gradient(135deg,var(--blue-d),var(--purple));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:20px;}
+.hero-sub{font-size:18px;color:var(--g500);max-width:580px;margin:0 auto 40px;line-height:1.8;}
+.hero-quote{font-size:15px;color:var(--g700);padding:24px 32px;background:white;border-radius:var(--radius);
+    border-left:4px solid var(--blue);box-shadow:var(--shadow);text-align:left;max-width:640px;margin:0 auto 48px;line-height:1.9;}
+.hero-quote em{font-style:normal;color:var(--blue-d);font-weight:700;}
+.hero-stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-bottom:20px;}
+.hero-stat{text-align:center;}
+.hero-stat .num{font-size:36px;font-weight:900;color:var(--blue-d);}
+.hero-stat .label{font-size:13px;color:var(--g500);margin-top:2px;}
+
+/* ============ Object Definition Card ============ */
+.obj-card{background:white;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);margin-bottom:32px;}
+.obj-header{display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+.obj-dot{width:14px;height:14px;border-radius:4px;flex-shrink:0;}
+.obj-dot.biz{background:linear-gradient(135deg,var(--blue),var(--blue-d));}
+.obj-dot.sup{background:linear-gradient(135deg,var(--purple),#6d28d9);}
+.obj-dot.bridge{background:linear-gradient(135deg,var(--teal),#0f766e);}
+.obj-dot.decision{background:linear-gradient(135deg,var(--orange),#b45309);}
+.obj-zh{font-size:22px;font-weight:800;color:var(--g900);}
+.obj-en{font-size:13px;color:var(--g500);margin-top:2px;}
+.obj-locate{font-size:14px;color:var(--g500);margin-bottom:24px;padding-left:28px;line-height:1.8;}
+.obj-locate strong{color:var(--g700);}
+
+/* ============ Attr Table ============ */
+.attr-table-wrap{margin-bottom:28px;}
+.attr-table-title{font-size:14px;font-weight:700;color:var(--g700);margin-bottom:10px;}
+.attr-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;border-radius:10px;overflow:hidden;border:1px solid var(--g200);}
+.attr-table th{background:var(--g100);padding:10px 14px;text-align:left;font-weight:600;color:var(--g700);border-bottom:2px solid var(--g200);}
+.attr-table td{padding:10px 14px;border-bottom:1px solid var(--g100);}
+.attr-table tr:last-child td{border-bottom:none;}
+.attr-table .fname{font-family:var(--mono);color:var(--blue-d);font-size:13px;}
+.attr-table .ftype{font-family:var(--mono);color:var(--g500);font-size:12px;}
+
+/* ============ Example Card ============ */
+.example-card{border-radius:var(--radius);padding:24px 28px;margin-bottom:28px;border:1px solid var(--g200);}
+.example-card.biz-ex{background:var(--blue-bg);border-color:var(--blue-l);}
+.example-card.sup-ex{background:var(--purple-bg);border-color:var(--purple-l);}
+.example-card.bridge-ex{background:var(--teal-bg);border-color:var(--teal-l);}
+.example-tag{display:inline-block;padding:3px 12px;border-radius:6px;font-size:12px;font-weight:700;margin-bottom:14px;}
+.biz-ex .example-tag{background:var(--blue);color:white;}
+.sup-ex .example-tag{background:var(--purple);color:white;}
+.bridge-ex .example-tag{background:var(--teal);color:white;}
+.example-title{font-size:16px;font-weight:700;margin-bottom:12px;color:var(--g900);}
+.example-table{width:100%;font-size:14px;border-collapse:collapse;}
+.example-table td{padding:6px 12px;border-bottom:1px solid rgba(0,0,0,.06);vertical-align:top;}
+.example-table td:first-child{font-family:var(--mono);color:var(--blue-d);font-size:13px;white-space:nowrap;width:180px;}
+.example-table td:last-child{color:var(--g700);}
+.example-table tr:last-child td{border-bottom:none;}
+.example-note{font-size:13px;color:var(--g500);margin-top:10px;line-height:1.7;}
+
+/* ============ Edge Definition ============ */
+.edge-def{background:var(--g100);border-radius:10px;padding:16px 20px;margin-bottom:28px;font-size:14px;}
+.edge-def code{font-family:var(--mono);background:white;padding:2px 8px;border-radius:4px;font-size:13px;color:var(--blue-d);}
+
+/* ============ Graph State (Progressive) ============ */
+.graph-panel{background:white;border-radius:var(--radius);padding:32px 24px;box-shadow:var(--shadow);
+    margin-bottom:24px;border:1px solid var(--g200);}
+.graph-panel-title{font-size:13px;font-weight:700;color:var(--g500);letter-spacing:2px;margin-bottom:20px;text-align:center;}
+
+/* Graph nodes (CSS cards) */
+.g-row{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;padding:8px 0;}
+.g-node{display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:14px 22px;border-radius:12px;color:white;min-width:120px;text-align:center;
+    box-shadow:0 3px 14px rgba(0,0,0,.12);transition:all .3s;position:relative;}
+.g-node .g-label{font-size:15px;font-weight:700;line-height:1.3;}
+.g-node .g-sub{font-size:10px;opacity:.8;margin-top:2px;}
+.g-node .g-id{font-size:10px;opacity:.65;margin-top:4px;font-family:var(--mono);}
+.g-node.biz{background:linear-gradient(135deg,var(--blue),var(--blue-d));}
+.g-node.sup{background:linear-gradient(135deg,var(--purple),#6d28d9);}
+.g-node.bridge{background:linear-gradient(135deg,var(--teal),#0f766e);}
+.g-node.decision{background:linear-gradient(135deg,var(--orange),#b45309);}
+.g-node.muted{opacity:.55;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.g-node.new{animation:nodeIn .6s cubic-bezier(.22,1,.36,1) both;}
+@keyframes nodeIn{from{opacity:0;transform:scale(.85) translateY(10px);}to{opacity:1;transform:scale(1) translateY(0);}}
+.g-node:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.15);}
+/* Radial star layout */
+.star-grid{display:grid;grid-template-columns:1fr auto 1fr;grid-template-rows:auto auto auto;gap:0;align-items:center;justify-items:center;}
+.star-grid .center-node{grid-column:2;grid-row:2;}
+.star-grid .nw{grid-column:1;grid-row:1;}
+.star-grid .ne{grid-column:3;grid-row:1;}
+.star-grid .sw{grid-column:1;grid-row:3;}
+.star-grid .se{grid-column:3;grid-row:3;}
+.star-grid .edge-tag{font-size:11px;padding:2px 8px;border-radius:10px;background:var(--g100);color:var(--g500);white-space:nowrap;}
+.star-grid .e-nw{grid-column:1;grid-row:1;justify-self:end;padding-bottom:4px;}
+.star-grid .e-ne{grid-column:3;grid-row:1;justify-self:start;padding-bottom:4px;}
+.star-grid .e-sw{grid-column:1;grid-row:3;justify-self:end;padding-top:4px;}
+.star-grid .e-se{grid-column:3;grid-row:3;justify-self:start;padding-top:4px;}
+.star-grid .arrow-corner{font-size:18px;color:var(--g300);line-height:1;}
+@media(max-width:768px){.star-grid{grid-template-columns:1fr;grid-template-rows:auto;}.star-grid .nw,.star-grid .ne,.star-grid .sw,.star-grid .se,.star-grid .center-node,.star-grid .e-nw,.star-grid .e-ne,.star-grid .e-sw,.star-grid .e-se{grid-column:1;}}
+
+/* Graph connectors */
+.g-conn{display:flex;flex-direction:column;align-items:center;padding:0 6px;color:var(--g500);}
+.g-conn .g-arrow{font-size:22px;line-height:1;color:var(--g300);}
+.g-conn .g-edge-name{font-size:11px;padding:3px 10px;border-radius:12px;background:var(--g100);
+    white-space:nowrap;color:var(--g500);font-weight:600;margin:2px 0;}
+.g-conn .g-edge-zh{font-size:10px;color:var(--g300);}
+
+/* Multi-row graph */
+.g-rows{display:flex;flex-direction:column;gap:20px;align-items:center;}
+.g-sub-row{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;}
+
+/* ============ Responsive ============ */
+@media(max-width:768px){
+    .page{padding:0 16px;}
+    .sec{padding:48px 0 24px;}
+    .obj-card{padding:20px;}
+    .hero-stats{gap:24px;}
+    .g-node{padding:10px 14px;min-width:90px;}
+    .g-node .g-label{font-size:13px;}
+}
+
+/* ============ Side Nav ============ */
+.side-nav{position:fixed;right:16px;top:50%;transform:translateY(-50%);z-index:100;
+    display:flex;flex-direction:column;gap:2px;padding:10px 0;}
+.side-nav a{display:flex;align-items:center;gap:8px;padding:6px 12px 6px 0;
+    border-radius:6px;font-size:12px;font-weight:500;color:var(--g500);
+    text-decoration:none;transition:all .3s;white-space:nowrap;
+    flex-direction:row-reverse;cursor:pointer;}
+.side-nav a::before{content:'';width:6px;height:6px;border-radius:50%;
+    background:var(--g300);flex-shrink:0;transition:all .3s;}
+.side-nav a:hover{color:var(--blue-d);}
+.side-nav a:hover::before{background:var(--blue);}
+.side-nav a.active{color:var(--blue-d);font-weight:700;}
+.side-nav a.active::before{background:var(--blue);box-shadow:0 0 0 3px rgba(59,130,246,.2);transform:scale(1.5);}
+.side-nav a .nav-label{opacity:0;transform:translateX(8px);transition:all .25s;pointer-events:none;}
+.side-nav a:hover .nav-label,.side-nav a.active .nav-label{opacity:1;transform:translateX(0);}
+</style>
+</head>
+<body>
+
+<nav class="side-nav" id="sideNav">
+    <a href="#hero"><span class="nav-label">首页</span></a>
+    <a href="#bd"><span class="nav-label">业务域</span></a>
+    <a href="#ns"><span class="nav-label">现网场景</span></a>
+    <a href="#ds"><span class="nav-label">交付方案</span></a>
+    <a href="#task"><span class="nav-label">工程任务</span></a>
+    <a href="#support"><span class="nav-label">参与方与范围</span></a>
+    <a href="#decision"><span class="nav-label">决策点</span></a>
+    <a href="#validation"><span class="nav-label">验收与规则</span></a>
+    <a href="#dso"><span class="nav-label">语义对象</span></a>
+    <a href="#feature"><span class="nav-label">特性</span></a>
+    <a href="#config"><span class="nav-label">配置对象</span></a>
+    <a href="#decision-driven"><span class="nav-label">决策驱动</span></a>
+</nav>
+
+<!-- ==================== Hero ==================== -->
+<section class="sec" id="hero" style="opacity:1;transform:none;">
+<div class="page">
+    <div class="hero-badge">Schema Definition v2.0</div>
+    <h1 class="hero-title">业务图谱</h1>
+    <p class="hero-sub">把某一业务域中的稳定业务问题、方案闭包、工程任务、支撑对象，以及它们之间的连接关系，<br>组织成一套结构化对象网络。</p>
+    <div class="hero-quote">
+        业务图谱本质上是一张<em>"业务组织图"</em>，而不是一条"运行流程图"。<br>
+        它回答的是<em>"知识怎么组织"</em>，而非"事情怎么做"。<br><br>
+        图谱不直接执行任何命令，而是告诉 Agent：<br>
+        <em>"面对这类业务问题，应该用什么知识结构去理解和拆解它。"</em>
+    </div>
+    <div class="hero-stats">
+        <div class="hero-stat"><div class="num">12</div><div class="label">种对象类型</div></div>
+        <div class="hero-stat"><div class="num">21</div><div class="label">条关系边</div></div>
+        <div class="hero-stat"><div class="num">3</div><div class="label">个层次</div></div>
+    </div>
+</div>
+</section>
+
+<!-- ==================== 业务域 BusinessDomain ==================== -->
+<section class="sec" id="bd">
+<div class="page">
+    <div class="sec-num">第一层 · 01</div>
+    <h2 class="sec-title">业务域 — 图谱的根</h2>
+    <p class="sec-desc">
+        业务域是整张图谱的<strong>轻量根节点</strong>，只做一件事：<strong>限定讨论边界</strong>，并指向它包含的现网场景。
+        它不承载业务细节，而是把"我们讨论哪个领域"说清楚。
+    </p>
+
+    <!-- 属性定义 -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot biz"></span>
+            <div><div class="obj-zh">业务域</div><div class="obj-en">BusinessDomain · 业务层</div></div>
+        </div>
+        <div class="obj-locate">定位：图谱的轻量根节点，只做一件事：限定讨论边界，并指向它包含的现网场景。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">domain_id</td><td class="ftype">string</td><td>唯一标识，语义化命名，不绑定产品缩写</td></tr>
+                <tr><td class="fname">domain_name</td><td class="ftype">string</td><td>域名称</td></tr>
+                <tr><td class="fname">domain_summary</td><td class="ftype">string</td><td>一句话定义</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="edge-def">
+            关系：只有一条出边 —— <code>业务域 --包含(contains)--> 现网场景</code>
+        </div>
+    </div>
+
+    <!-- 计费场景实例 -->
+    <div class="example-card biz-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">业务感知域</div>
+        <table class="example-table">
+            <tr><td>domain_id</td><td>service-awareness</td></tr>
+            <tr><td>domain_name</td><td>业务感知</td></tr>
+            <tr><td>domain_summary</td><td>在用户会话过程中，对用户的数据报文进行解析，从而区分出用户使用的不同业务，以实现策略控制和计费控制</td></tr>
+            <tr><td>status</td><td>accepted</td></tr>
+        </table>
+        <div class="example-note">"业务感知"是一个宽泛的业务域，覆盖 5G/4G 网络中对用户流量进行识别、策略控制和计费控制的完整知识空间。</div>
+    </div>
+
+    <!-- 图谱状态 -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">当前图谱状态</div>
+        <div class="g-row">
+            <div class="g-node biz new">
+                <span class="g-label">业务感知</span>
+                <span class="g-sub">BusinessDomain</span>
+                <span class="g-id">service-awareness</span>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 现网场景 NetworkScenario ==================== -->
+<section class="sec" id="ns">
+<div class="page">
+    <div class="sec-num">第一层 · 02</div>
+    <h2 class="sec-title">现网场景 — 一线入口</h2>
+    <p class="sec-desc">
+        现网场景表示一线遇到的<strong>需求类型或问题情境</strong>，是图谱的<strong>一级业务入口</strong>。
+        一个业务域由若干个稳定的现网场景组成。场景回答的是：<strong>"一线什么时候会遇到这类问题"</strong>。
+    </p>
+
+    <!-- 属性定义 -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot biz"></span>
+            <div><div class="obj-zh">现网场景</div><div class="obj-en">NetworkScenario · 业务层</div></div>
+        </div>
+        <div class="obj-locate">定位：表示一线遇到的需求类型或问题情境，作为图谱的一级业务入口。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">scenario_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">scenario_name</td><td class="ftype">string</td><td>场景名称</td></tr>
+                <tr><td class="fname">scenario_summary</td><td class="ftype">string</td><td>一句话描述</td></tr>
+                <tr><td class="fname">judgment_basis</td><td class="ftype">string</td><td>判断基础：什么情况下属于该场景</td></tr>
+                <tr><td class="fname">typical_outcome</td><td class="ftype">string</td><td>典型结果</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源文档ID列表</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="attr-table-title">关系</div>
+        <div class="edge-def">
+            入边：<code>业务域 --包含(contains)--> 现网场景</code><br>
+            出边：<code>现网场景 --实例化为(instantiated_as)--> 交付方案</code><br>
+            出边：<code>现网场景 --使用语义对象(uses_semantic_object)--> 领域语义对象</code><br>
+            出边：<code>现网场景 --包含决策点(has_decision)--> 决策点</code>
+        </div>
+    </div>
+
+    <!-- 计费场景实例 -->
+    <div class="example-card biz-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">NS-01 计费场景</div>
+        <table class="example-table">
+            <tr><td>scenario_id</td><td>NS-01</td></tr>
+            <tr><td>scenario_name</td><td>计费场景</td></tr>
+            <tr><td>scenario_summary</td><td>对不同业务流采用不同计费方式，结合默认计费、免费业务和配额动作完成计费闭环</td></tr>
+            <tr><td>judgment_basis</td><td>用户需要按业务粒度差异化计费（离线/在线/融合），或需要按流量/时长/事件统计特定业务的使用量</td></tr>
+            <tr><td>typical_outcome</td><td>专项业务单独计费、免费业务不计费、普通业务默认计费，配额耗尽后切换到阻断或重定向</td></tr>
+            <tr><td>source_evidence_ids</td><td>["套餐1_93112148", "计费解决方案概述_90776649", "融合计费概述_42995681"]</td></tr>
+            <tr><td>status</td><td>active</td></tr>
+        </table>
+        <div class="example-note">业务感知域下共有 4 个一级场景：NS-01 计费、NS-02 带宽控制、NS-03 访问限制、NS-04 本地分流。本展示聚焦计费场景作为示例。</div>
+    </div>
+
+    <!-- 图谱状态：BD → NS -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">当前图谱状态 · 新增"现网场景"</div>
+        <div class="g-row">
+            <div class="g-node biz muted">
+                <span class="g-label">业务感知</span>
+                <span class="g-sub">BusinessDomain</span>
+            </div>
+            <div class="g-conn">
+                <span class="g-edge-name">包含</span>
+                <span class="g-edge-zh">contains</span>
+                <span class="g-arrow">→</span>
+            </div>
+            <div class="g-node biz new">
+                <span class="g-label">计费场景</span>
+                <span class="g-sub">NetworkScenario</span>
+                <span class="g-id">NS-01</span>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 交付方案 DeliverySolution ==================== -->
+<section class="sec" id="ds">
+<div class="page">
+    <div class="sec-num">第一层 · 03</div>
+    <h2 class="sec-title">交付方案 — 可落地的方案闭包</h2>
+    <p class="sec-desc">
+        场景收敛为交付方案。方案是一个<strong>"方案闭包"</strong>——把场景推进到<strong>"怎么组织落地"</strong>。
+        方案不是单一步骤，而是围绕一组核心机制形成的完整交付策略。它后续会通过工程任务拆成可执行工作项。
+    </p>
+
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot biz"></span>
+            <div><div class="obj-zh">交付方案</div><div class="obj-en">DeliverySolution · 业务层</div></div>
+        </div>
+        <div class="obj-locate">定位：表示针对某个场景形成的可落地方案闭包。把场景推进到"怎么组织落地"。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">solution_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">solution_name</td><td class="ftype">string</td><td>方案名称</td></tr>
+                <tr><td class="fname">solution_summary</td><td class="ftype">string</td><td>一句话描述，概括方案闭包核心</td></tr>
+                <tr><td class="fname">core_mechanism_combo</td><td class="ftype">string</td><td>核心机制组合——方案区别于场景名称的关键差异化信息</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源文档ID列表</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="attr-table-title">关系</div>
+        <div class="edge-def">
+            入边：<code>现网场景 --实例化为(instantiated_as)--> 交付方案</code><br>
+            出边：<code>交付方案 --使用任务(uses_task)--> 工程任务 (M:N)</code><br>
+            出边：<code>交付方案 --涉及(involves)--> 参与方</code> ·
+            <code>交付方案 --作用于(applies_to)--> 生效范围</code><br>
+            出边：<code>交付方案 --包含决策点(has_decision)--> 决策点</code> ·
+            <code>交付方案 --由其验收(validated_by)--> 验收计划</code><br>
+            出边：<code>交付方案 --受规则治理(governed_by)--> 业务规则</code><br>
+            出边：<code>交付方案 --需要能力(requires_capability)--> 特性</code> ·
+            <code>交付方案 --由配置对象实现(realized_by_config)--> 配置对象</code>
+        </div>
+    </div>
+
+    <div class="example-card biz-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">DS-01 差异化计费组合方案（含配额分支）</div>
+        <table class="example-table">
+            <tr><td>solution_id</td><td>DS-01</td></tr>
+            <tr><td>solution_name</td><td>差异化计费组合方案（含配额分支）</td></tr>
+            <tr><td>solution_summary</td><td>通过过滤条件识别业务流，按优先级裁决Rule，绑定PCC/URR计费链实现差异化计费、免费业务与默认计费，配额耗尽后通过DecisionPoint切换用户体验</td></tr>
+            <tr><td>core_mechanism_combo</td><td>过滤条件(IPLIST/FILTER/L7FILTER/FLOWFILTER) + Rule优先级裁决 + PCC/URR计费链(PCCPOLICYGRP-URRGROUP-URR) + 默认URR组兜底 + 配额耗尽动作切换</td></tr>
+            <tr><td>source_evidence_ids</td><td>["套餐1_93112148", "计费解决方案概述_90776649", "融合计费概述_42995681"]</td></tr>
+            <tr><td>status</td><td>active</td></tr>
+        </table>
+        <div class="example-note">计费方式（离线/在线/融合）通过 DecisionPoint DP-01 分支，不拆分为独立方案。core_mechanism_combo 是方案的"指纹"，一眼看出这个方案与其他方案的核心区别。</div>
+    </div>
+
+    <!-- 图谱：BD → NS → DS -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">当前图谱状态 · 新增"交付方案"</div>
+        <div class="g-row">
+            <div class="g-node biz muted"><span class="g-label">业务感知</span><span class="g-sub">BusinessDomain</span></div>
+            <div class="g-conn"><span class="g-edge-name">包含</span><span class="g-arrow">→</span></div>
+            <div class="g-node biz muted"><span class="g-label">计费场景</span><span class="g-sub">NetworkScenario</span><span class="g-id">NS-01</span></div>
+            <div class="g-conn"><span class="g-edge-name">实例化为</span><span class="g-edge-zh">instantiated_as</span><span class="g-arrow">→</span></div>
+            <div class="g-node biz new"><span class="g-label">差异化计费</span><span class="g-sub">DeliverySolution</span><span class="g-id">DS-01</span></div>
+        </div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 工程任务 EngineeringTask ==================== -->
+<section class="sec" id="task">
+<div class="page">
+    <div class="sec-num">第一层 · 04</div>
+    <h2 class="sec-title">工程任务 — 可执行的工作单元</h2>
+    <p class="sec-desc">
+        方案通过工程任务落地。任务不是"配置步骤"，而是覆盖 <strong>plan（规划）/ execute（执行）/ verify（验证）</strong>三类工程动作的更高层单元。
+        每个任务是一个<strong>原子动作</strong>，可被多个方案复用（M:N 关系）。只有 execute 阶段的任务才会下沉到具体配置命令。
+    </p>
+
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot biz"></span>
+            <div><div class="obj-zh">工程任务</div><div class="obj-en">EngineeringTask · 业务层</div></div>
+        </div>
+        <div class="obj-locate">定位：原子动作单元，覆盖 plan/execute/verify 三类工程动作。可被多个 DS 或 Feature 复用。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">task_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">task_name</td><td class="ftype">string</td><td>任务名称</td></tr>
+                <tr><td class="fname">task_summary</td><td class="ftype">string</td><td>一句话描述</td></tr>
+                <tr><td class="fname">phase</td><td class="ftype">string</td><td>阶段：plan / execute / verify</td></tr>
+                <tr><td class="fname">input_artifacts</td><td class="ftype">list[string]</td><td>需要的输入</td></tr>
+                <tr><td class="fname">output_artifacts</td><td class="ftype">string</td><td>产出的输出</td></tr>
+                <tr><td class="fname">command</td><td class="ftype">string</td><td>命令示例（plan 阶段为 -）</td></tr>
+                <tr><td class="fname">config_object</td><td class="ftype">string</td><td>涉及的配置对象（plan 阶段为 -）</td></tr>
+                <tr><td class="fname">output_cardinality</td><td class="ftype">string</td><td>execute 阶段输出对象数量公式，如 2N+2（融合）/ N+2（单一模式）</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源文档ID列表</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="attr-table-title">关系</div>
+        <div class="edge-def">
+            入边：<code>交付方案 --使用任务(uses_task)--> 工程任务 (M:N)</code><br>
+            出边：<code>工程任务(execute) --创建配置(creates_config)--> 配置对象</code><br>
+            出边：<code>工程任务(verify) --验证配置(verifies_config)--> 配置对象</code><br>
+            出边：<code>工程任务 --输出传播(output_propagates_to)--> 工程任务</code>（扩展边）
+        </div>
+    </div>
+
+    <!-- 计费场景实例：任务概览 -->
+    <div class="example-card biz-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">DS-01 的 13 个工程任务（5 plan + 5 execute + 3 verify）</div>
+        <table class="example-table" style="font-size:13px;">
+            <tr><td colspan="2" style="font-weight:700;color:var(--blue-d);padding-top:8px;">Plan 阶段 — 规划（不涉及具体配置对象）</td></tr>
+            <tr><td>T-PLAN-001</td><td>规划生效范围 → 确定 UserProfile 名称、结构、默认策略绑定</td></tr>
+            <tr><td>T-PLAN-002</td><td>规划识别条件 → 将业务描述翻译成 FILTER/L7FILTER/FLOWFILTER</td></tr>
+            <tr><td>T-PLAN-003</td><td>规划 Rule 与优先级 → 多业务重叠时谁先生效，分配 PRIORITY</td></tr>
+            <tr><td>T-PLAN-004</td><td>规划计费对象与费率标识 → URR→URRGROUP→PCCPOLICYGRP 三件套</td></tr>
+            <tr><td>T-PLAN-005</td><td>规划配额耗尽动作 → 配额耗尽后 BLOCK/REDIRECT/FORWARD</td></tr>
+            <tr><td colspan="2" style="font-weight:700;color:var(--blue-d);padding-top:12px;">Execute 阶段 — 执行配置（创建配置对象）</td></tr>
+            <tr><td>T-EXEC-001</td><td>配置 IP 地址列表 → IPLIST（仅特定 IP 匹配时）</td></tr>
+            <tr><td>T-EXEC-002</td><td>配置三四层过滤条件 → FILTER</td></tr>
+            <tr><td>T-EXEC-003</td><td>配置七层过滤条件 → L7FILTER（仅 L7 匹配时）</td></tr>
+            <tr><td>T-EXEC-004</td><td>配置流过滤器与绑定 → FLOWFILTER + FLTBINDFLOWF + PROTBINDFLOWF</td></tr>
+            <tr><td>T-EXEC-005</td><td>配置计费动作链 → URR + URRGROUP + PCCPOLICYGRP（计费三件套）</td></tr>
+            <tr><td colspan="2" style="font-weight:700;color:var(--blue-d);padding-top:12px;">Verify 阶段 — 验证（查询确认）</td></tr>
+            <tr><td>T-VERIFY-001</td><td>验证 License 开关 → LST LICENSESWITCH</td></tr>
+            <tr><td>T-VERIFY-002</td><td>验证配置链逐层回查 → LST 全链路</td></tr>
+            <tr><td>T-VERIFY-003</td><td>验证 PFCP 会话上报与计费流量 → N4 接口跟踪</td></tr>
+        </table>
+        <div class="example-note">T-PLAN-005（规划配额耗尽动作）只在"在线计费"或"融合计费"时需要，离线计费时跳过——这就是后续"决策驱动"机制要解决的问题。</div>
+    </div>
+
+    <!-- 具体任务实例 -->
+    <div class="example-card biz-ex">
+        <div class="example-tag">实例详情</div>
+        <div class="example-title">T-EXEC-005 配置计费动作链</div>
+        <table class="example-table">
+            <tr><td>task_id</td><td>T-EXEC-005</td></tr>
+            <tr><td>task_name</td><td>配置计费动作链</td></tr>
+            <tr><td>task_summary</td><td>创建 URR(计费方式/上报模式)→URRGROUP(组合上下行URR)→PCCPOLICYGRP(封装为PCC策略组)，每条业务需一套独立三件套</td></tr>
+            <tr><td>phase</td><td>execute</td></tr>
+            <tr><td>input_artifacts</td><td>["URR 及 URRID 规划表", "URRGROUP 规划", "PCCPOLICYGRP 规划"]</td></tr>
+            <tr><td>output_artifacts</td><td>["URR 配置", "URRGROUP 配置", "PCCPOLICYGRP 配置"]</td></tr>
+            <tr><td>command</td><td>ADD URR / ADD URRGROUP / ADD PCCPOLICYGRP</td></tr>
+            <tr><td>config_object</td><td>URR, URRGROUP, PCCPOLICYGRP</td></tr>
+            <tr><td>output_cardinality</td><td>URR: 2N+2(融合) / N+2(单一模式)；URRGROUP: N+2；PCCPOLICYGRP: N+1（N=特定业务数）</td></tr>
+        </table>
+        <div class="example-note">output_cardinality 是关键属性：Agent 在规划阶段就能根据业务数量 N 和决策点选项计算出需要创建多少个配置对象。例如输入"2个特定业务 + 融合计费"：URR=6, URRGROUP=4, PCCPOLICYGRP=3。</div>
+    </div>
+
+    <!-- 图谱：BD → NS → DS → Task 三行 -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">当前图谱状态 · 新增"工程任务"（3个阶段）</div>
+        <div class="g-rows">
+            <div class="g-row">
+                <div class="g-node biz muted"><span class="g-label">业务感知</span><span class="g-sub">BusinessDomain</span></div>
+                <div class="g-conn"><span class="g-edge-name">包含</span><span class="g-arrow">→</span></div>
+                <div class="g-node biz muted"><span class="g-label">计费场景</span><span class="g-sub">NetworkScenario</span><span class="g-id">NS-01</span></div>
+                <div class="g-conn"><span class="g-edge-name">实例化为</span><span class="g-arrow">→</span></div>
+                <div class="g-node biz muted"><span class="g-label">差异化计费</span><span class="g-sub">DeliverySolution</span><span class="g-id">DS-01</span></div>
+            </div>
+            <div class="g-row" style="pointer-events:none;">
+                <div style="min-width:120px;"></div>
+                <div class="g-conn" style="visibility:hidden;"><span class="g-arrow">→</span></div>
+                <div style="min-width:120px;"></div>
+                <div class="g-conn" style="visibility:hidden;"><span class="g-arrow">→</span></div>
+                <div class="g-conn" style="pointer-events:auto;"><span class="g-edge-name">使用任务 (uses_task)</span><span class="g-arrow">↓</span></div>
+            </div>
+            <div class="g-row" style="gap:16px;">
+                <div class="g-node biz new"><span class="g-label">规划任务</span><span class="g-sub">Task · plan</span><span class="g-id">T-PLAN-××</span></div>
+                <div class="g-node biz new"><span class="g-label">执行任务</span><span class="g-sub">Task · execute</span><span class="g-id">T-EXEC-××</span></div>
+                <div class="g-node biz new"><span class="g-label">验证任务</span><span class="g-sub">Task · verify</span><span class="g-id">T-VERIFY-××</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-note" style="margin-top:12px;color:var(--g500);font-size:14px;">
+        至此，业务主链四层全部展开：<strong>业务域 → 现网场景 → 交付方案 → 工程任务</strong>。接下来进入支撑层——方案不是孤立的，它需要参与方、生效范围、决策点等支撑对象。
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 支撑层：参与方 + 生效范围 ==================== -->
+<section class="sec" id="support">
+<div class="page">
+    <div class="sec-num">支撑层 · 05</div>
+    <h2 class="sec-title">参与方与生效范围 — 谁参与、对谁生效</h2>
+    <p class="sec-desc">
+        业务主链说清楚了<strong>"知识的骨架"</strong>，但方案不是在真空中运行的。
+        它涉及<strong>谁参与</strong>（参与方）、<strong>对谁生效</strong>（生效范围）。这两个支撑对象让方案有了"角色"和"边界"。
+    </p>
+
+    <!-- 参与方 -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot sup"></span>
+            <div><div class="obj-zh">参与方</div><div class="obj-en">Participant · 支撑层</div></div>
+        </div>
+        <div class="obj-locate">定位：在某个交付方案的形成、生效、更新、计费、验证过程中承担稳定职责的参与方。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">participant_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">participant_name</td><td class="ftype">string</td><td>参与方名称</td></tr>
+                <tr><td class="fname">participant_type</td><td class="ftype">string</td><td>类型：endpoint / network_function / external_system / service_endpoint / access_side</td></tr>
+                <tr><td class="fname">responsibility_summary</td><td class="ftype">string</td><td>一句话说明其稳定职责</td></tr>
+                <tr><td class="fname">plane_or_side</td><td class="ftype">string</td><td>所在侧：control_plane / user_plane / external / terminal_side / service_side</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="edge-def">关系：<code>交付方案 --涉及(involves)--> 参与方</code></div>
+    </div>
+
+    <div class="example-card sup-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">计费方案的 6 个参与方</div>
+        <table class="example-table" style="font-size:13px;">
+            <tr><td>P-01 PCF</td><td>network_function · 控制面 — 生成计费策略并下发给SMF（静态规则不经过PCF）</td></tr>
+            <tr><td>P-02 SMF</td><td>network_function · 控制面 — 编排计费策略、与CHF/OCS交互、下发计费规则到UPF、配额管理</td></tr>
+            <tr><td>P-03 UPF</td><td>network_function · 用户面 — 业务识别、流量统计、执行计费规则、上报使用量</td></tr>
+            <tr><td>P-04 CHF/OCS</td><td>external_system · 外部 — 处理计费请求、配额分配、重授权触发</td></tr>
+            <tr><td>P-05 UE/用户</td><td>endpoint · 终端侧 — 发起会话与业务访问，产生待计费业务流</td></tr>
+            <tr><td>P-10 CG</td><td>external_system · 外部 — 接收离线计费CDR，转发给BD域</td></tr>
+        </table>
+        <div class="example-note">参与方是跨方案复用的。计费场景用 P-01~P-05 和 P-10，其他场景（如带宽控制）可能只涉及其中一部分。</div>
+    </div>
+
+    <!-- 生效范围 -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot sup"></span>
+            <div><div class="obj-zh">生效范围</div><div class="obj-en">Scope · 支撑层</div></div>
+        </div>
+        <div class="obj-locate">定位：描述某个交付方案或某类策略对"谁、哪类接入、哪类位置"生效的边界对象。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">scope_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">scope_name</td><td class="ftype">string</td><td>范围名称</td></tr>
+                <tr><td class="fname">scope_summary</td><td class="ftype">string</td><td>一句话说明该范围含义</td></tr>
+                <tr><td class="fname">scope_type</td><td class="ftype">string</td><td>范围类别：subscriber / subscription / access / location / slice / service-selection</td></tr>
+                <tr><td class="fname">scope_expression</td><td class="ftype">string</td><td>原始表达或归一化表达</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="edge-def">关系：<code>交付方案 --作用于(applies_to)--> 生效范围</code></div>
+    </div>
+
+    <div class="example-card sup-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">计费方案的 3 个生效范围</div>
+        <table class="example-table">
+            <tr><td>S-01 用户级范围</td><td>subscriber · 计费策略按用户粒度生效</td></tr>
+            <tr><td>S-02 APN/DNN范围</td><td>access · 计费策略按接入点或数据网名称生效</td></tr>
+            <tr><td>S-06 UserProfile承载范围</td><td>subscription · 承载规则绑定和默认计费组，是计费策略的最终生效边界</td></tr>
+        </table>
+        <div class="example-note">S-06 UserProfile承载范围是计费场景特有的范围类型——所有规则通过 RULEBINDING 绑定到 UserProfile 下，形成最终业务套餐。</div>
+    </div>
+
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 支撑层：决策点 ==================== -->
+<section class="sec" id="decision">
+<div class="page">
+    <div class="sec-num">支撑层 · 06</div>
+    <h2 class="sec-title">决策点 — 方案内部的分支选择</h2>
+    <p class="sec-desc">
+        决策点是业务图谱中最关键的创新之一。它表示<strong>"会引起后续结构分支的稳定选择点"</strong>。
+        不同于简单的 if-else，决策点回答的是：<strong>"面对这类业务问题，存在哪些稳定的选项，不同选项会导致什么不同结果"</strong>。
+    </p>
+
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot decision"></span>
+            <div><div class="obj-zh">决策点</div><div class="obj-en">DecisionPoint · 支撑层</div></div>
+        </div>
+        <div class="obj-locate">定位：在某个场景或方案中，会导致后续任务、动作路径或方案实现方式发生分支变化的稳定选择点。<br>决策点可挂载在<strong>场景（NS）</strong>或<strong>方案（DS）</strong>层级。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">decision_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">decision_name</td><td class="ftype">string</td><td>决策点名称</td></tr>
+                <tr><td class="fname">decision_question</td><td class="ftype">string</td><td>该决策实际在回答什么问题</td></tr>
+                <tr><td class="fname">option_set</td><td class="ftype">list[string]</td><td>可选分支集合</td></tr>
+                <tr><td class="fname">trigger_condition</td><td class="ftype">string</td><td>在什么条件下需要做该决策</td></tr>
+                <tr><td class="fname">impact_summary</td><td class="ftype">string</td><td>不同分支会影响哪些后续任务或方案结构</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="edge-def">
+            入边：<code>场景/方案 --包含决策点(has_decision)--> 决策点</code><br>
+            出边：<code>决策点 --受范围条件约束(conditioned_by)--> 生效范围</code><br>
+            扩展出边：<code>决策点 --参数绑定(parameter_binding)--> 配置对象</code> ·
+            <code>决策点 --门控(gates)--> 工程任务</code>
+        </div>
+    </div>
+
+    <div class="example-card" style="background:var(--orange-bg);border-color:var(--orange-l);">
+        <div class="example-tag" style="background:var(--orange);">计费场景实例</div>
+        <div class="example-title">计费场景的 3 个决策点</div>
+        <table class="example-table" style="font-size:13px;">
+            <tr><td colspan="2" style="font-weight:700;color:var(--orange-d);">DP-01 计费方式选择（挂载在 NS-01 场景级）</td></tr>
+            <tr><td>decision_question</td><td>当前计费场景采用哪种计费方式？</td></tr>
+            <tr><td>option_set</td><td>["离线计费", "在线计费", "融合计费"]</td></tr>
+            <tr><td>impact_summary</td><td>决定 URR 的 USAGERPTMODE、是否需要 CCT 模板、配额控制机制、CHF 交互模式</td></tr>
+            <tr><td colspan="2" style="font-weight:700;color:var(--orange-d);padding-top:10px;">DP-02 配额耗尽后动作选择（挂载在 DS-01 方案级）</td></tr>
+            <tr><td>decision_question</td><td>在线计费配额耗尽后如何处理？</td></tr>
+            <tr><td>option_set</td><td>["BLOCK（阻断）", "REDIRECT（重定向）", "FORWARD（放行）"]</td></tr>
+            <tr><td>impact_summary</td><td>决定是否配置 PCCACTIONPROP(门控)、REDIRECT(重定向)、或放行继续服务</td></tr>
+            <tr><td colspan="2" style="font-weight:700;color:var(--orange-d);padding-top:10px;">DP-03 匹配层次选择（挂载在 DS-01 方案级）</td></tr>
+            <tr><td>decision_question</td><td>业务流通过 L34 层还是 L7 层匹配？</td></tr>
+            <tr><td>option_set</td><td>["L34层匹配", "L7层URL匹配", "L7层协议匹配", "L34+L7混合匹配"]</td></tr>
+            <tr><td>impact_summary</td><td>决定是否需要 L7FILTER 和 PROTBINDFLOWF，影响配置对象链长度</td></tr>
+        </table>
+        <div class="example-note">DP-01 挂载在场景级（所有计费方案共享），DP-02 和 DP-03 挂载在方案级（仅差异化计费方案内部）。决策点不是自由文本，而是有明确选项和影响的结构化对象。</div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 支撑层：验收计划 + 业务规则 ==================== -->
+<section class="sec" id="validation">
+<div class="page">
+    <div class="sec-num">支撑层 · 07</div>
+    <h2 class="sec-title">验收计划与业务规则 — 怎么验证、受什么约束</h2>
+    <p class="sec-desc">
+        方案落地后需要<strong>验收</strong>（确认做对了）和<strong>规则治理</strong>（确保不犯错）。
+        验收计划回答<strong>"验什么"</strong>，业务规则提供<strong>"校验逻辑、约束断言和异常定位"</strong>。两者相互配合。
+    </p>
+
+    <!-- 验收计划 -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot sup"></span>
+            <div><div class="obj-zh">验收计划</div><div class="obj-en">ValidationPlan · 支撑层</div></div>
+        </div>
+        <div class="obj-locate">定位：针对某个交付方案或关键业务目标的验收检查模板。回答"验什么"，不直接回答"怎么逐条执行检查"。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">validation_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">validation_name</td><td class="ftype">string</td><td>验收计划名称</td></tr>
+                <tr><td class="fname">validation_goal</td><td class="ftype">string</td><td>验收目标</td></tr>
+                <tr><td class="fname">target_objects</td><td class="ftype">list[string]</td><td>需要观察/检查的对象集合</td></tr>
+                <tr><td class="fname">pass_condition</td><td class="ftype">string</td><td>通过条件</td></tr>
+                <tr><td class="fname">expected_result</td><td class="ftype">string</td><td>预期现象或结果</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="edge-def">
+            入边：<code>交付方案 --由其验收(validated_by)--> 验收计划</code><br>
+            出边：<code>验收计划 --由其执行(executed_by)--> 工程任务(verify阶段)</code><br>
+            出边：<code>验收计划 --使用规则(uses_rule)--> 业务规则</code>
+        </div>
+    </div>
+
+    <!-- 业务规则 -->
+    <div class="obj-card" style="margin-top:32px;">
+        <div class="obj-header">
+            <span class="obj-dot sup"></span>
+            <div><div class="obj-zh">业务规则</div><div class="obj-en">BusinessRule · 支撑层</div></div>
+        </div>
+        <div class="obj-locate">定位：用于表达业务级核查、约束断言和异常定位逻辑的统一规则对象。三种规则类型：<br>
+            <strong>validation_rule</strong>（校验规则）· <strong>constraint_rule</strong>（约束规则）· <strong>diagnosis_rule</strong>（诊断规则）</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">rule_id</td><td class="ftype">string</td><td>唯一标识</td></tr>
+                <tr><td class="fname">rule_name</td><td class="ftype">string</td><td>规则名称</td></tr>
+                <tr><td class="fname">rule_type</td><td class="ftype">string</td><td>类型：validation_rule / constraint_rule / diagnosis_rule</td></tr>
+                <tr><td class="fname">rule_purpose</td><td class="ftype">string</td><td>规则用途</td></tr>
+                <tr><td class="fname">trigger_condition</td><td class="ftype">string</td><td>何时触发该规则</td></tr>
+                <tr><td class="fname">check_target</td><td class="ftype">string</td><td>检查对象或观察对象</td></tr>
+                <tr><td class="fname">check_logic</td><td class="ftype">string</td><td>判断逻辑</td></tr>
+                <tr><td class="fname">expected_result</td><td class="ftype">string</td><td>满足时的预期结果（适用于 validation_rule）</td></tr>
+                <tr><td class="fname">violation_effect</td><td class="ftype">string</td><td>违反后的影响（适用于 constraint_rule）</td></tr>
+                <tr><td class="fname">next_action</td><td class="ftype">string</td><td>下一步排查动作（适用于 diagnosis_rule）</td></tr>
+                <tr><td class="fname">source_evidence_ids</td><td class="ftype">list[string]</td><td>证据来源</td></tr>
+                <tr><td class="fname">status</td><td class="ftype">string</td><td>数据状态</td></tr>
+            </tbody>
+        </table>
+        <div class="edge-def">
+            入边：<code>交付方案 --受规则治理(governed_by)--> 业务规则</code> ·
+            <code>验收计划 --使用规则(uses_rule)--> 业务规则</code>
+        </div>
+    </div>
+
+    <!-- 计费场景实例 -->
+    <div class="example-card sup-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">验收计划 VP-01（差异化计费验收）+ 9 条业务规则</div>
+        <table class="example-table">
+            <tr><td>validation_id</td><td>VP-01</td></tr>
+            <tr><td>validation_goal</td><td>确认计费链、URR绑定与PFCP上报符合预期</td></tr>
+            <tr><td>target_objects</td><td>["LICENSESWITCH", "RULEBINDING", "RULE", "URR", "URRGROUP", "PCCPOLICYGRP", "PFCP Session Report"]</td></tr>
+            <tr><td>pass_condition</td><td>License 开启 + 配置链完整 + RG值与规划一致 + URR ID与PFCP上报一致</td></tr>
+            <tr><td>expected_result</td><td>业务流被正确识别并按预期计费/上报</td></tr>
+        </table>
+        <div style="margin-top:16px;font-size:13px;font-weight:700;color:var(--g700);margin-bottom:8px;">9 条业务规则（3 种类型）</div>
+        <table class="example-table" style="font-size:12px;">
+            <tr><td colspan="2" style="color:var(--blue-d);font-weight:600;">约束规则 constraint_rule — 防止犯错</td></tr>
+            <tr><td>BR-01</td><td>SA基础License开启断言 — 3个License项必须ENABLE</td></tr>
+            <tr><td>BR-05</td><td>URRID全局唯一约束 — 防止URRID冲突导致PFCP上报错乱</td></tr>
+            <tr><td>BR-06</td><td>默认URR组必须配置 — DFTURRGRPNAME和DFTSIGURRGNAME必须同时配置</td></tr>
+            <tr><td>BR-07</td><td>RG值跨侧一致性 — UDG.ADD URR.RG = UNC.ADD URR.RG</td></tr>
+            <tr><td>BR-08</td><td>REFRESHSRV时序约束 — 必须在所有ADD/SET完成后执行</td></tr>
+            <tr><td>BR-09</td><td>PROTBINDFLOWF协议匹配约束 — PROTOCOLNAME必须与实际协议一致</td></tr>
+            <tr><td colspan="2" style="color:var(--blue-d);font-weight:600;padding-top:8px;">校验规则 validation_rule — 确认做对</td></tr>
+            <tr><td>BR-02</td><td>配置链逐层一致性校验 — 全链路绑定正确</td></tr>
+            <tr><td>BR-03</td><td>PFCP Usage Report一致性校验 — URR ID与配置一致</td></tr>
+            <tr><td colspan="2" style="color:var(--blue-d);font-weight:600;padding-top:8px;">诊断规则 diagnosis_rule — 定位异常</td></tr>
+            <tr><td>BR-04</td><td>CP/UP URR一致性诊断 — 定位SMF和UPF侧配置不一致</td></tr>
+        </table>
+    </div>
+
+    <!-- 支撑层全景图 -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">支撑层全景 · 交付方案的 5 条支撑边 + 内部关系</div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:20px;padding:16px 0;">
+
+            <!-- 顶部：参与方 -->
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+                <div class="g-node sup"><span class="g-label">参与方</span><span class="g-sub">Participant</span><span class="g-id">6个</span></div>
+                <span style="font-size:12px;color:var(--g500);font-weight:600;">↑ involves (涉及)</span>
+            </div>
+
+            <!-- 中间：决策点 — DS — 生效范围 -->
+            <div style="display:flex;align-items:center;gap:12px;">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+                    <div class="g-node decision"><span class="g-label">决策点</span><span class="g-sub">DecisionPoint</span><span class="g-id">3个</span></div>
+                    <span style="font-size:12px;color:var(--g500);font-weight:600;">has_decision (包含决策点) →</span>
+                </div>
+                <div class="g-node biz" style="box-shadow:0 0 0 3px rgba(59,130,246,.3),0 4px 20px rgba(0,0,0,.15);padding:18px 28px;">
+                    <span class="g-label" style="font-size:17px;">差异化计费</span>
+                    <span class="g-sub">DeliverySolution</span>
+                    <span class="g-id">DS-01</span>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+                    <span style="font-size:12px;color:var(--g500);font-weight:600;">applies_to (作用于) →</span>
+                    <div class="g-node sup"><span class="g-label">生效范围</span><span class="g-sub">Scope</span><span class="g-id">3个</span></div>
+                </div>
+            </div>
+
+            <!-- 底部：验收计划 / 业务规则 -->
+            <div style="display:flex;align-items:flex-start;gap:40px;">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+                    <span style="font-size:12px;color:var(--g500);font-weight:600;">validated_by (由其验收) ↓</span>
+                    <div class="g-node sup"><span class="g-label">验收计划</span><span class="g-sub">ValidationPlan</span><span class="g-id">VP-01</span></div>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+                    <span style="font-size:12px;color:var(--g500);font-weight:600;">governed_by (受规则治理) ↓</span>
+                    <div class="g-node sup"><span class="g-label">业务规则</span><span class="g-sub">BusinessRule</span><span class="g-id">9条</span></div>
+                </div>
+            </div>
+
+            <!-- 内部关系说明 -->
+            <div style="margin-top:8px;padding:14px 20px;background:var(--g100);border-radius:10px;font-size:12px;color:var(--g700);line-height:2;">
+                <div style="font-weight:700;margin-bottom:4px;color:var(--g500);">内部关系</div>
+                验收计划 <code style="font-family:var(--mono);background:white;padding:1px 6px;border-radius:4px;font-size:11px;">--executed_by--></code> 工程任务(verify阶段) &nbsp;·&nbsp;
+                验收计划 <code style="font-family:var(--mono);background:white;padding:1px 6px;border-radius:4px;font-size:11px;">--uses_rule--></code> 业务规则<br>
+                决策点 <code style="font-family:var(--mono);background:white;padding:1px 6px;border-radius:4px;font-size:11px;">--conditioned_by--></code> 生效范围 &nbsp;·&nbsp;
+                <span style="color:var(--orange);">决策点 <code style="font-family:var(--mono);background:white;padding:1px 6px;border-radius:4px;font-size:11px;">--parameter_binding--></code> 配置对象 &nbsp;·&nbsp;
+                决策点 <code style="font-family:var(--mono);background:white;padding:1px 6px;border-radius:4px;font-size:11px;">--gates--></code> 工程任务</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 桥接层：领域语义对象 ==================== -->
+<section class="sec" id="dso">
+<div class="page">
+    <div class="sec-num">桥接层 · 08</div>
+    <h2 class="sec-title">领域语义对象 — 业务问题翻成"语义单元"</h2>
+    <p class="sec-desc">
+        业务图谱不直接坠落成命令图。场景先关联<strong>领域语义对象</strong>，把业务问题翻成"识别、计费、配额、策略"等语义单元，
+        再让方案去实例化这些语义。语义对象是<strong>业务层和产品层之间的翻译桥梁</strong>。
+    </p>
+
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot bridge"></span>
+            <div><div class="obj-zh">领域语义对象</div><div class="obj-en">DomainSemanticObject · 桥接层</div></div>
+        </div>
+        <div class="obj-locate">定位：表示业务域内部用于表达业务含义的语义对象。防止业务图谱直接坠落成命令图，先把业务问题翻成语义单元。<br>
+            图谱层面为<strong>轻量引用对象</strong>，完整定义在特性图谱中展开。</div>
+        <div class="attr-table-title">关系</div>
+        <div class="edge-def">
+            入边：<code>现网场景 --使用语义对象(uses_semantic_object)--> 领域语义对象</code><br>
+            入边：<code>交付方案 --实例化语义对象(instantiates_semantic_object)--> 领域语义对象</code>
+        </div>
+    </div>
+
+    <div class="example-card bridge-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">计费场景涉及的 10 个语义对象</div>
+        <table class="example-table" style="font-size:13px;">
+            <tr><td>BA.PacketParsing</td><td>报文解析 — 如何把原始报文拆解成可读字段 → FILTER(三四层)、L7FILTER(七层)</td></tr>
+            <tr><td>BA.ProtocolRecognition</td><td>协议识别 — 如何识别协议/应用 → PROTBINDFLOWF</td></tr>
+            <tr><td>BA.FilterCondition</td><td>过滤条件 — 如何组织成可匹配条件 → FILTER, FLOWFILTER</td></tr>
+            <tr><td>BA.Rule</td><td>规则 — 最小组织单元，将匹配条件与计费动作绑定 → RULE</td></tr>
+            <tr><td>BA.Policy</td><td>策略 — 命中后执行的策略类型 → PCCPOLICYGRP</td></tr>
+            <tr><td>BA.Priority</td><td>优先级 — 多规则同时命中时如何裁决 → RULE.PRIORITY</td></tr>
+            <tr><td>BA.Binding</td><td>绑定 — 规则和范围如何绑定 → USERPROFILE, RULEBINDING</td></tr>
+            <tr><td>BA.Charging</td><td>计费 — 核心语义：差异化计费(RG)、免费(FREE)、默认(兜底) → URR, URRGROUP</td></tr>
+            <tr><td>BA.Quota</td><td>配额 — 如何处理配额和耗尽动作 → DFTQUOTAVOLUME, CCT模板</td></tr>
+            <tr><td>BA.ValidationDiagnosis</td><td>验证诊断 — 如何验证和回查 → LST全链路、PFCP Session Report</td></tr>
+        </table>
+        <div class="example-note">语义对象是跨场景复用的。计费场景用 BA.Charging、BA.Quota 等，带宽控制场景可能只用到 BA.Policy、BA.Priority、BA.Binding。</div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 桥接层：特性 ==================== -->
+<section class="sec" id="feature">
+<div class="page">
+    <div class="sec-num">桥接层 · 09</div>
+    <h2 class="sec-title">特性 — 业务语义背后的能力载体</h2>
+    <p class="sec-desc">
+        语义对象说清楚"我们在讨论什么概念"，<strong>特性</strong>则是这些概念在产品中的具体实现。
+        特性承接业务语义，是产品文档中的能力条目。一个方案依赖一组特性组合才能完整交付。
+    </p>
+
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot bridge"></span>
+            <div><div class="obj-zh">特性</div><div class="obj-en">Feature · 桥接层</div></div>
+        </div>
+        <div class="obj-locate">定位：表示产品文档中的特性条目，承接业务语义背后的能力载体。<br>
+            图谱层面为轻量引用对象，完整定义在特性图谱中展开。</div>
+        <div class="attr-table-title">关系</div>
+        <div class="edge-def">
+            入边：<code>交付方案 --需要能力(requires_capability)--> 特性</code><br>
+            出边：<code>特性 --包含任务(contains)--> 工程任务</code>（后续Feature定义时启用）<br>
+            扩展出边：<code>特性 --差异化(differentiates)--> 配置对象</code>（表达Feature间参数差异）
+        </div>
+    </div>
+
+    <div class="example-card bridge-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">差异化计费方案的 9 个特性（UDG/UPF 侧 + UNC/SMF 侧）</div>
+        <table class="example-table" style="font-size:12px;">
+            <tr><td colspan="2" style="font-weight:700;color:var(--teal);padding-top:8px;">UDG/UPF 侧 — 用户面能力</td></tr>
+            <tr><td>GWFD-110101</td><td>SA-Basic 识别底座（根特性，License: LKV3G5SABS01）</td></tr>
+            <tr><td>GWFD-020351</td><td>PCC基本功能 — 用户面策略执行骨架</td></tr>
+            <tr><td>GWFD-020301</td><td>内容计费基本功能 — 内容计费能力底座（核心基准特性）</td></tr>
+            <tr><td>GWFD-020302</td><td>基于业务时长的计费 — 按时长统计（METERINGTYPE=DURATION）</td></tr>
+            <tr><td>GWFD-020303</td><td>基于业务流量的计费 — 按流量统计（METERINGTYPE=VOLUME）</td></tr>
+            <tr><td>GWFD-020306</td><td>支持事件计费 — 按事件统计（METERINGTYPE=EVENT，仅SCUR）</td></tr>
+            <tr><td>GWFD-010171</td><td>离线计费 — 离线CDR上报（USAGERPTMODE=OFFLINE）</td></tr>
+            <tr><td>GWFD-020300</td><td>在线计费 — 在线配额控制（USAGERPTMODE=ONLINE）</td></tr>
+            <tr><td>GWFD-010173</td><td>融合计费 — 在线+离线统一（USAGERPTMODE=按子业务）</td></tr>
+            <tr><td colspan="2" style="font-weight:700;color:var(--teal);padding-top:10px;">UNC/SMF 侧 — 控制面能力</td></tr>
+            <tr><td>WSFD-109101</td><td>PCC基本功能 — 控制面规则框架</td></tr>
+            <tr><td>WSFD-109002</td><td>内容计费基本功能 — 控制面计费编排</td></tr>
+            <tr><td>WSFD-011201</td><td>离线计费 — CG连接和CDR管理</td></tr>
+            <tr><td>WSFD-011206</td><td>支持融合计费 — CCT模板和配额闭环</td></tr>
+        </table>
+        <div class="example-note">GWFD-020301 是"基准特性"，其他计费子特性通过 <code>differentiates</code> 边表达在 URR 参数上的差异（如 METERINGTYPE、USAGERPTMODE）。特性有明确的 License 依赖。</div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 桥接层：配置对象 ==================== -->
+<section class="sec" id="config">
+<div class="page">
+    <div class="sec-num">桥接层 · 10</div>
+    <h2 class="sec-title">配置对象 — 图谱最终落到的命令链</h2>
+    <p class="sec-desc">
+        配置对象是业务图谱向产品实现的<strong>最终着陆点</strong>。每个配置对象对应一条或一组 MML 命令。
+        图谱层面不展开所有命令参数，但要说明<strong>关键对象链</strong>——哪些对象包含哪些、引用关系如何、命名规范是什么。
+    </p>
+
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot bridge"></span>
+            <div><div class="obj-zh">配置对象</div><div class="obj-en">ConfigObject · 桥接层</div></div>
+        </div>
+        <div class="obj-locate">定位：表示 MML 命令创建、修改、引用的对象。图谱层面不展开所有命令参数，但要说明关键对象链。</div>
+        <div class="attr-table-title">属性定义</div>
+        <table class="attr-table">
+            <thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">object_name</td><td class="ftype">string</td><td>对象名称（如 URR, URRGROUP, RULE）</td></tr>
+                <tr><td class="fname">object_chain_position</td><td class="ftype">string</td><td>对象链位置（如识别层/计费对象层/规则层）</td></tr>
+                <tr><td class="fname">side</td><td class="ftype">string</td><td>所属侧别（UDG/UPF / UNC/SMF / 双侧）</td></tr>
+                <tr><td class="fname">business_role</td><td class="ftype">string</td><td>业务作用</td></tr>
+                <tr><td class="fname">naming_pattern</td><td class="ftype">string</td><td>对象命名模式，如 {业务}_{模式}</td></tr>
+                <tr><td class="fname">priority_pattern</td><td class="ftype">string</td><td>优先级模式（可选），如 特定100+, 兜底65000+</td></tr>
+            </tbody>
+        </table>
+        <div class="attr-table-title">关系</div>
+        <div class="edge-def">
+            入边：<code>交付方案 --由配置对象实现(realized_by_config)--> 配置对象</code><br>
+            入边：<code>工程任务(execute) --创建配置(creates_config)--> 配置对象</code> ·
+            <code>工程任务(verify) --验证配置(verifies_config)--> 配置对象</code><br>
+            扩展：<code>配置对象 --组合(composes)--> 配置对象</code>（对象间包含/引用关系）<br>
+            扩展：<code>决策点 --参数绑定(parameter_binding)--> 配置对象</code>（DP选项驱动参数值）<br>
+            扩展：<code>特性 --差异化(differentiates)--> 配置对象</code>（Feature间参数差异）
+        </div>
+    </div>
+
+    <div class="example-card bridge-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">计费场景的配置对象链 — 从识别到策略容器</div>
+        <table class="example-table" style="font-size:12px;">
+            <thead><tr style="font-weight:700;color:var(--teal);"><td>对象链位置</td><td>对象名</td><td>侧别</td><td>业务作用</td><td>命名模式</td></tr></thead>
+            <tbody>
+                <tr><td>底层地址</td><td class="fname">IPLIST</td><td>UDG</td><td>特定IP地址匹配列表</td><td>iplist_{描述}</td></tr>
+                <tr><td>识别层</td><td class="fname">FILTER</td><td>UDG</td><td>三四层过滤条件(协议/IP/端口)</td><td>filter_{描述}</td></tr>
+                <tr><td>识别层</td><td class="fname">L7FILTER</td><td>UDG</td><td>七层URL匹配条件</td><td>l7f_{描述}</td></tr>
+                <tr><td>识别组合层</td><td class="fname">FLOWFILTER</td><td>UDG</td><td>流过滤器，组合多种匹配条件</td><td>ff_{描述}</td></tr>
+                <tr><td>识别绑定层</td><td class="fname">FLTBINDFLOWF</td><td>UDG</td><td>FILTER→FLOWFILTER 绑定</td><td>-</td></tr>
+                <tr><td>识别绑定层</td><td class="fname">PROTBINDFLOWF</td><td>UDG</td><td>协议+L7→FLOWFILTER 绑定(60s生效)</td><td>-</td></tr>
+                <tr><td>计费对象层</td><td class="fname">URR</td><td>双侧</td><td>使用量统计与计费标识(URRID/RG)</td><td>{业务}_{模式}</td></tr>
+                <tr><td>计费组合层</td><td class="fname">URRGROUP</td><td>双侧</td><td>组合上下行URR</td><td>{业务}</td></tr>
+                <tr><td>策略组层</td><td class="fname">PCCPOLICYGRP</td><td>双侧</td><td>封装URRGROUP为PCC策略组</td><td>PPG_{业务}</td></tr>
+                <tr><td>规则层</td><td class="fname">RULE</td><td>双侧</td><td>匹配条件+策略动作+优先级</td><td>Rule{序号}_{业务}</td></tr>
+                <tr><td>策略容器层</td><td class="fname">USERPROFILE</td><td>双侧</td><td>承载规则绑定和默认策略</td><td>up_{场景}</td></tr>
+            </tbody>
+        </table>
+        <div class="example-note">
+            <strong>对象链顺序</strong>：IPLIST → FILTER → L7FILTER → FLOWFILTER → URR → URRGROUP → PCCPOLICYGRP → RULE → USERPROFILE<br>
+            <strong>计费三件套</strong>（每业务独立一套）：URR → URRGROUP → PCCPOLICYGRP，是计费场景的核心组合链。<br>
+            <strong>优先级</strong>：RULE.PRIORITY 特定业务 100+，兜底 65000+（越小越优先）。
+        </div>
+    </div>
+
+    <!-- 桥接层全景图 -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">桥接层全景 · 方案如何通过三层桥接落到配置对象</div>
+        <div style="display:flex;align-items:stretch;gap:0;padding:8px 0;">
+
+            <!-- 左侧：DS + NS -->
+            <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;flex:0 0 auto;">
+                <div class="g-node biz muted" style="padding:10px 16px;"><span class="g-label" style="font-size:13px;">计费场景</span><span class="g-sub">NS-01</span></div>
+                <div class="g-node biz" style="box-shadow:0 0 0 3px rgba(59,130,246,.3);padding:14px 22px;">
+                    <span class="g-label">差异化计费</span><span class="g-sub">DS-01</span>
+                </div>
+            </div>
+
+            <!-- 中间：边标签 -->
+            <div style="display:flex;flex-direction:column;justify-content:space-around;padding:4px 12px;gap:8px;">
+                <div style="font-size:11px;color:var(--g500);font-weight:600;text-align:center;">uses_semantic_object →</div>
+                <div style="font-size:11px;color:var(--g500);font-weight:600;text-align:center;">instantiates_semantic_object →</div>
+                <div style="font-size:11px;color:var(--g500);font-weight:600;text-align:center;">requires_capability →</div>
+                <div style="font-size:11px;color:var(--g500);font-weight:600;text-align:center;">realized_by_config →</div>
+            </div>
+
+            <!-- 右侧：3个桥接对象 -->
+            <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:12px;flex:0 0 auto;">
+                <div class="g-node bridge"><span class="g-label">领域语义对象</span><span class="g-sub">DomainSemanticObject</span><span class="g-id">10个</span></div>
+                <div class="g-node bridge"><span class="g-label">特性</span><span class="g-sub">Feature</span><span class="g-id">9个</span></div>
+                <div class="g-node bridge"><span class="g-label">配置对象</span><span class="g-sub">ConfigObject</span><span class="g-id">11种</span></div>
+            </div>
+        </div>
+
+        <!-- 配置对象链详情 -->
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--g200);">
+            <div style="font-size:12px;font-weight:700;color:var(--g500);margin-bottom:10px;text-align:center;">配置对象链（composes 边组合）</div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:center;">
+                <div class="g-node bridge" style="padding:8px 12px;min-width:72px;"><span class="g-label" style="font-size:12px;">FILTER</span><span class="g-id">识别层</span></div>
+                <span style="color:var(--g300);font-size:16px;">→</span>
+                <div class="g-node bridge" style="padding:8px 12px;min-width:72px;"><span class="g-label" style="font-size:12px;">FLOWFILTER</span><span class="g-id">组合层</span></div>
+                <span style="color:var(--g300);font-size:16px;">→</span>
+                <div class="g-node bridge" style="padding:8px 12px;min-width:72px;"><span class="g-label" style="font-size:12px;">URR</span><span class="g-id">计费层</span></div>
+                <span style="color:var(--g300);font-size:16px;">→</span>
+                <div class="g-node bridge" style="padding:8px 12px;min-width:72px;"><span class="g-label" style="font-size:12px;">URRGROUP</span><span class="g-id">组合层</span></div>
+                <span style="color:var(--g300);font-size:16px;">→</span>
+                <div class="g-node bridge" style="padding:8px 12px;min-width:72px;"><span class="g-label" style="font-size:12px;">PCCPOLICYGRP</span><span class="g-id">策略组</span></div>
+                <span style="color:var(--g300);font-size:16px;">→</span>
+                <div class="g-node bridge" style="padding:8px 12px;min-width:72px;"><span class="g-label" style="font-size:12px;">RULE</span><span class="g-id">规则层</span></div>
+                <span style="color:var(--g300);font-size:16px;">→</span>
+                <div class="g-node bridge" style="padding:8px 12px;min-width:72px;"><span class="g-label" style="font-size:12px;">USERPROFILE</span><span class="g-id">容器层</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-note" style="margin-top:12px;color:var(--g500);font-size:14px;">
+        三层全部展开：<strong>业务层（4种对象）→ 支撑层（5种对象）→ 桥接层（3种对象）</strong>，共 12 种 Schema 类型。
+        接下来进入最关键的部分——<strong>决策驱动</strong>：决策点如何通过参数绑定、任务门控和对象组合，真正驱动配置生成。
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ==================== 决策驱动：5条扩展边 ==================== -->
+<section class="sec" id="decision-driven">
+<div class="page">
+    <div class="sec-num">决策驱动 · 11</div>
+    <h2 class="sec-title">决策驱动 — 让决策点真正"驱动"配置生成</h2>
+    <p class="sec-desc">
+        前面的 Schema 画清楚了<strong>"谁做什么"和"用什么做"</strong>，但缺失了<strong>"决策怎么影响配置"</strong>。
+        不管用户选离线还是在线计费，URR 模板都一样；不管选 L34 还是 L7 匹配，所有 Task 都执行——这就是脱节。<br>
+        以下 5 条扩展边 + 2 个新属性，把决策点和配置链条<strong>结构化地连起来</strong>。
+    </p>
+
+    <!-- E1: parameter_binding -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot decision"></span>
+            <div><div class="obj-zh">E1: 参数绑定</div><div class="obj-en">DecisionPoint --parameter_binding--> ConfigObject</div></div>
+        </div>
+        <div class="obj-locate">解决的问题：DP 选项不再是文字描述，而是结构化地驱动参数赋值。选了"离线"就自动设 USAGERPTMODE=OFFLINE。</div>
+        <div class="attr-table-title">边属性</div>
+        <table class="attr-table">
+            <thead><tr><th>属性</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">target_object</td><td class="ftype">string</td><td>目标 ConfigObject 类型</td></tr>
+                <tr><td class="fname">parameter_name</td><td class="ftype">string</td><td>参数名</td></tr>
+                <tr><td class="fname">value_per_option</td><td class="ftype">list[{option, value, side_effects}]</td><td>每个 DP 选项对应的参数值和附带影响</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="example-card" style="background:var(--orange-bg);border-color:var(--orange-l);">
+        <div class="example-tag" style="background:var(--orange);">计费场景实例</div>
+        <div class="example-title">DP-01 计费方式选择 → URR 参数绑定</div>
+        <table class="example-table" style="font-size:13px;">
+            <thead><tr style="font-weight:700;"><td>DP选项</td><td>目标对象</td><td>参数</td><td>值</td><td>附带影响</td></tr></thead>
+            <tbody>
+                <tr><td>离线计费</td><td class="fname">URR</td><td>USAGERPTMODE</td><td>OFFLINE</td><td>OFFMETERINGTYPE 生效</td></tr>
+                <tr><td>离线计费</td><td class="fname">URRGROUP</td><td>UPURRNAME1</td><td>引用离线URR</td><td>UPURRNAME2 不填</td></tr>
+                <tr><td>在线计费</td><td class="fname">URR</td><td>USAGERPTMODE</td><td>ONLINE</td><td>ONLMETERINGTYPE 生效</td></tr>
+                <tr><td>在线计费</td><td class="fname">URRGROUP</td><td>UPURRNAME2</td><td>引用在线URR</td><td>UPURRNAME1 不填</td></tr>
+                <tr><td>融合计费</td><td class="fname">URR</td><td>每业务创建2个</td><td>1个OFFLINE+1个ONLINE</td><td>URRGROUP 同时填 UPURRNAME1-4</td></tr>
+            </tbody>
+        </table>
+        <div class="example-title" style="margin-top:16px;">DP-06 匹配层次选择 → FLOWFILTER 参数绑定</div>
+        <table class="example-table" style="font-size:13px;">
+            <tr><td>L34层匹配</td><td>仅通过 FLTBINDFLOWF 绑定 FILTER，不需要 L7FILTER</td></tr>
+            <tr><td>L7层URL匹配</td><td>需通过 PROTBINDFLOWF 绑定 L7FILTER，需指定 PROTOCOLNAME</td></tr>
+            <tr><td>L34+L7混合</td><td>两种绑定都用</td></tr>
+        </table>
+    </div>
+
+    <hr class="sec-hr">
+
+    <!-- E2: gates -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot decision"></span>
+            <div><div class="obj-zh">E2: 任务门控</div><div class="obj-en">DecisionPoint --gates--> EngineeringTask</div></div>
+        </div>
+        <div class="obj-locate">解决的问题：每个 DP 选项下哪些 Task 应该执行或跳过，不再是隐含的。离线计费时跳过配额规划 Task。</div>
+        <div class="attr-table-title">边属性</div>
+        <table class="attr-table">
+            <thead><tr><th>属性</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">task_id</td><td class="ftype">string</td><td>被门控的任务 ID</td></tr>
+                <tr><td class="fname">activation_per_option</td><td class="ftype">list[{option, activation}]</td><td>每个 DP 选项的激活状态：active | skip</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="example-card" style="background:var(--orange-bg);border-color:var(--orange-l);">
+        <div class="example-tag" style="background:var(--orange);">计费场景实例</div>
+        <div class="example-title">决策点对工程任务的门控</div>
+        <table class="example-table" style="font-size:13px;">
+            <thead><tr style="font-weight:700;"><td>决策点</td><td>选项</td><td>门控Task</td><td>状态</td><td>原因</td></tr></thead>
+            <tbody>
+                <tr><td>DP-01</td><td>离线计费</td><td class="fname">T-PLAN-005</td><td><span style="color:#dc2626;font-weight:700;">SKIP</span></td><td>离线计费无配额管理</td></tr>
+                <tr><td>DP-01</td><td>在线/融合</td><td class="fname">T-PLAN-005</td><td><span style="color:#16a34a;font-weight:700;">ACTIVE</span></td><td>需规划配额耗尽动作</td></tr>
+                <tr><td>DP-06</td><td>L34匹配</td><td class="fname">T-EXEC-003</td><td><span style="color:#dc2626;font-weight:700;">SKIP</span></td><td>不需要 L7FILTER</td></tr>
+                <tr><td>DP-06</td><td>含L7匹配</td><td class="fname">T-EXEC-003</td><td><span style="color:#16a34a;font-weight:700;">ACTIVE</span></td><td>需要 L7FILTER</td></tr>
+                <tr><td>DP-06</td><td>any-to-any</td><td class="fname">T-EXEC-001</td><td><span style="color:#dc2626;font-weight:700;">SKIP</span></td><td>不需要 IPLIST</td></tr>
+                <tr><td>DP-06</td><td>特定IP</td><td class="fname">T-EXEC-001</td><td><span style="color:#16a34a;font-weight:700;">ACTIVE</span></td><td>需要 IPLIST</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr class="sec-hr">
+
+    <!-- E3: composes -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot bridge"></span>
+            <div><div class="obj-zh">E3: 对象组合</div><div class="obj-en">ConfigObject --composes--> ConfigObject</div></div>
+        </div>
+        <div class="obj-locate">解决的问题：配置对象之间的组合关系和基数不再隐含在命令参数中。Agent 知道 1 个 URRGROUP 包含几个 URR。</div>
+        <div class="attr-table-title">边属性</div>
+        <table class="attr-table">
+            <thead><tr><th>属性</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">multiplicity</td><td class="ftype">string</td><td>基数：1:1 | 1:N | formula</td></tr>
+                <tr><td class="fname">condition_on_dp</td><td class="ftype">string</td><td>条件依赖的 DP（如 DP-01=融合时2个）</td></tr>
+                <tr><td class="fname">binding_parameter</td><td class="ftype">string</td><td>绑定参数（如 UPURRNAME1）</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="example-card bridge-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">计费三件套组合关系</div>
+        <table class="example-table" style="font-size:13px;">
+            <thead><tr style="font-weight:700;"><td>容器对象</td><td>被包含对象</td><td>基数</td><td>绑定参数</td></tr></thead>
+            <tbody>
+                <tr><td class="fname">URRGROUP</td><td class="fname">URR</td><td>离线1 / 在线1 / 融合2</td><td>UPURRNAME1 / UPURRNAME2</td></tr>
+                <tr><td class="fname">PCCPOLICYGRP</td><td class="fname">URRGROUP</td><td>1:1</td><td>URRGROUPNAME</td></tr>
+                <tr><td class="fname">RULE</td><td class="fname">FLOWFILTER</td><td>1:1</td><td>FLOWFILTERNAME</td></tr>
+                <tr><td class="fname">RULE</td><td class="fname">PCCPOLICYGRP</td><td>1:1</td><td>POLICYNAME</td></tr>
+                <tr><td class="fname">USERPROFILE</td><td class="fname">RULE</td><td>1:N</td><td>RULEBINDING</td></tr>
+                <tr><td class="fname">USERPROFILE</td><td class="fname">默认URRGROUP</td><td>1:1</td><td>DFTURRGRPNAME</td></tr>
+                <tr><td class="fname">FLOWFILTER</td><td class="fname">FILTER</td><td>1:1</td><td>FLTBINDFLOWF</td></tr>
+                <tr><td class="fname">FLOWFILTER</td><td class="fname">L7FILTER</td><td>0:1（仅L7）</td><td>PROTBINDFLOWF</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr class="sec-hr">
+
+    <!-- E4: differentiates -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot bridge"></span>
+            <div><div class="obj-zh">E4: 特性差异化</div><div class="obj-en">Feature --differentiates--> ConfigObject</div></div>
+        </div>
+        <div class="obj-locate">解决的问题：同一方案下不同 Feature（如时长计费 vs 流量计费）仅少数参数不同，需要显式表达差异。</div>
+        <div class="attr-table-title">边属性</div>
+        <table class="attr-table">
+            <thead><tr><th>属性</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">parameter_name</td><td class="ftype">string</td><td>差异参数名</td></tr>
+                <tr><td class="fname">value</td><td class="ftype">string</td><td>参数值</td></tr>
+                <tr><td class="fname">constraints</td><td class="ftype">list[string]</td><td>额外约束列表</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="example-card bridge-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">各计费子特性相对于基准（GWFD-020301 内容计费）的参数差异</div>
+        <table class="example-table" style="font-size:13px;">
+            <thead><tr style="font-weight:700;"><td>Feature</td><td>差异对象</td><td>差异参数</td><td>值</td><td>额外约束</td></tr></thead>
+            <tbody>
+                <tr><td>GWFD-020302 时长</td><td class="fname">URR</td><td>METERINGTYPE</td><td>DURATION</td><td>CTP/QCT 两种计时模式</td></tr>
+                <tr><td>GWFD-020303 流量</td><td class="fname">URR</td><td>METERINGTYPE</td><td>VOLUME</td><td>无特殊约束</td></tr>
+                <tr><td>GWFD-020306 事件</td><td class="fname">URR</td><td>METERINGTYPE</td><td>EVENT</td><td>仅SCUR，不支持Free RG</td></tr>
+                <tr><td>GWFD-010171 离线</td><td class="fname">URR</td><td>USAGERPTMODE</td><td>OFFLINE</td><td>UNC侧重CG连接</td></tr>
+                <tr><td>GWFD-020300 在线</td><td class="fname">URR</td><td>USAGERPTMODE</td><td>ONLINE</td><td>UNC侧重OCS+CCT模板</td></tr>
+                <tr><td>GWFD-010173 融合</td><td class="fname">URR</td><td>USAGERPTMODE</td><td>按子业务</td><td>UNC侧重CHF+Nchf，仅5G</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr class="sec-hr">
+
+    <!-- E5: output_propagates_to -->
+    <div class="obj-card">
+        <div class="obj-header">
+            <span class="obj-dot biz"></span>
+            <div><div class="obj-zh">E5: 输出传播</div><div class="obj-en">EngineeringTask --output_propagates_to--> EngineeringTask</div></div>
+        </div>
+        <div class="obj-locate">解决的问题：上游 Task 创建的对象名称如何传播到下游 Task 的引用参数。规划态的 URR 名称能自动传递到 RULE 引用。</div>
+        <div class="attr-table-title">边属性</div>
+        <table class="attr-table">
+            <thead><tr><th>属性</th><th>类型</th><th>说明</th></tr></thead>
+            <tbody>
+                <tr><td class="fname">propagated_entity</td><td class="ftype">string</td><td>传播的 ConfigObject 名称</td></tr>
+                <tr><td class="fname">propagation_type</td><td class="ftype">string</td><td>传播方式：name_reference | count_correlation</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="example-card biz-ex">
+        <div class="example-tag">计费场景实例</div>
+        <div class="example-title">Task 间的名称传播链</div>
+        <table class="example-table" style="font-size:13px;">
+            <thead><tr style="font-weight:700;"><td>上游Task</td><td>下游Task</td><td>传播实体</td><td>传播方式</td></tr></thead>
+            <tbody>
+                <tr><td>T-PLAN-004 规划计费对象</td><td>T-EXEC-005 配置计费动作链</td><td>URR/URRGROUP/PCCPOLICYGRP 名称</td><td>规划名 → 创建时使用同名</td></tr>
+                <tr><td>T-EXEC-005</td><td>T-EXEC-008 配置Rule</td><td>PCCPOLICYGRP 名称</td><td>RULE.POLICYNAME 引用 PPG 名称</td></tr>
+                <tr><td>T-EXEC-004 配置流过滤器</td><td>T-EXEC-008</td><td>FLOWFILTER 名称</td><td>RULE.FLOWFILTERNAME 引用 ff 名称</td></tr>
+                <tr><td>T-EXEC-005</td><td>T-EXEC-010 配置UserProfile</td><td>URRGROUP 名称</td><td>DFTURRGRPNAME 引用 URRG 名称</td></tr>
+                <tr><td>T-EXEC-008</td><td>T-EXEC-010</td><td>RULE 名称</td><td>RULEBINDING.RULENAME 引用 Rule</td></tr>
+                <tr><td>T-PLAN-001 规划生效范围</td><td>T-EXEC-010</td><td>USERPROFILE 名称</td><td>所有绑定引用 UP 名称</td></tr>
+            </tbody>
+        </table>
+        <div class="example-note">传播链确保名称在 Task 间一致。如果 T-EXEC-005 创建了 PPG_video，那 T-EXEC-008 的 RULE.POLICYNAME 自动填 PPG_video。</div>
+    </div>
+
+    <!-- 决策驱动全景图 -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">决策驱动全景 · 5 条扩展边如何把决策点和配置链连起来</div>
+        <div style="display:flex;flex-direction:column;gap:20px;padding:12px 0;">
+
+            <!-- 上半部分：DP → ConfigObject / Task -->
+            <div style="display:flex;align-items:center;gap:12px;justify-content:center;">
+                <div class="g-node decision" style="box-shadow:0 0 0 3px rgba(217,119,6,.3);">
+                    <span class="g-label">决策点</span><span class="g-sub">DecisionPoint</span>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span style="font-size:11px;color:var(--orange);font-weight:700;">parameter_binding →</span>
+                        <div class="g-node bridge" style="padding:8px 14px;"><span class="g-label" style="font-size:12px;">URR</span><span class="g-id">USAGERPTMODE</span></div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span style="font-size:11px;color:var(--orange);font-weight:700;">gates →</span>
+                        <div class="g-node biz" style="padding:8px 14px;"><span class="g-label" style="font-size:12px;">T-PLAN-005</span><span class="g-id">skip / active</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 下半部分：ConfigObject 组合 + Feature 差异 + Task 传播 -->
+            <div style="display:flex;align-items:center;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                    <div class="g-node bridge" style="padding:8px 12px;"><span class="g-label" style="font-size:12px;">Feature</span></div>
+                    <span style="font-size:10px;color:var(--teal);font-weight:600;">differentiates ↓</span>
+                    <div class="g-node bridge" style="padding:8px 12px;"><span class="g-label" style="font-size:12px;">URR</span><span class="g-id">METERINGTYPE</span></div>
+                </div>
+                <div style="font-size:20px;color:var(--g300);">|</div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                    <div class="g-node bridge" style="padding:8px 12px;"><span class="g-label" style="font-size:12px;">URRGROUP</span></div>
+                    <span style="font-size:10px;color:var(--g500);font-weight:600;">composes ↓</span>
+                    <div class="g-node bridge" style="padding:8px 12px;"><span class="g-label" style="font-size:12px;">URR ×1~2</span><span class="g-id">视DP-01选项</span></div>
+                </div>
+                <div style="font-size:20px;color:var(--g300);">|</div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                    <div class="g-node biz" style="padding:8px 12px;"><span class="g-label" style="font-size:12px;">T-EXEC-005</span></div>
+                    <span style="font-size:10px;color:var(--g500);font-weight:600;">output_propagates_to ↓</span>
+                    <div class="g-node biz" style="padding:8px 12px;"><span class="g-label" style="font-size:12px;">T-EXEC-008</span><span class="g-id">PPG名称→RULE</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<script>
+// Intersection Observer
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.sec').forEach(s => obs.observe(s));
+
+// Side nav
+const secs = document.querySelectorAll('.sec');
+const navLinks = document.querySelectorAll('.side-nav a');
+const navObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+        }
+    });
+}, { threshold: 0.3 });
+secs.forEach(s => navObs.observe(s));
+</script>
+</body>
+</html>

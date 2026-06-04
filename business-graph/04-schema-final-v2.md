@@ -875,3 +875,183 @@ T-PLAN-001 → T-PLAN-008 → T-PLAN-009
 | status | active |
 
 **说明**：回查路径共八层对象。验证要点：(1) RULEBINDING 中 POLICYTYPE=BWM 的规则均已绑定；(2) RULE 的 POLICYNAME 指向的 CATEGORYPROP 存在；(3) BWMSERVICE 的 CATEPROPNAME 与 RULE 引用一致；(4) BWMCONTROLLER 的 CTRLTYPE 与速率参数符合规划；(5) BWMUSERGROUP 优先级正确；(6) BWMRULE 将 USERGROUP+SERVICE+CONTROLLER 正确关联。此任务仅用于 DS-03（带宽控制）。
+
+---
+
+## 5. Decision-Driven Extensions（决策驱动扩展）
+
+> 以下5条新边和2个扩展属性解决"决策点(DP)与配置链条脱节"问题。
+> 来源：深度分析9个特性的MOP文档和验证报告，识别出E1-E5/A1-A2。
+
+### 5.1 新增边声明
+
+#### E1: DecisionPoint --parameter_binding--> ConfigObject
+
+```
+DecisionPoint --parameter_binding--> ConfigObject
+  属性:
+    - target_object: 目标ConfigObject类型
+    - parameter_name: 受影响的参数名
+    - value_per_option: [{option: string, value: string, side_effects: string}]
+  说明: 每个DP选项如何影响特定ConfigObject的特定参数值
+```
+
+**实例（计费场景）**：
+
+| DP选项 | 目标ConfigObject | 参数 | 值 | 附带影响 |
+|--------|-----------------|------|-----|---------|
+| DP-01=离线 | URR | USAGERPTMODE | OFFLINE | OFFMETERINGTYPE生效(VOLUME/DURATION/FREE) |
+| DP-01=离线 | URRGROUP | UPURRNAME1/DOWNURRNAME1 | 引用离线URR | UPURRNAME2/DOWNURRNAME2不填 |
+| DP-01=在线 | URR | USAGERPTMODE | ONLINE | ONLMETERINGTYPE生效(VOLUME/DURATION/EVENT) |
+| DP-01=在线 | URRGROUP | UPURRNAME2/DOWNURRNAME2 | 引用在线URR | UPURRNAME1/DOWNURRNAME1不填 |
+| DP-01=融合 | URR | 每业务创建2个URR | 1个OFFLINE+1个ONLINE | URRGROUP同时填UPURRNAME1-4 |
+| DP-01=融合+DEFAULT | URR | 每业务仅1个URR | 按业务选OFFLINE或ONLINE | URRGROUP只填一种模式 |
+| DP-03=L34匹配 | FLOWFILTER | 绑定方式 | 仅FLTBINDFLOWF | 不需要L7FILTER |
+| DP-03=L7 URL匹配 | FLOWFILTER | 绑定方式 | PROTBINDFLOWF+L7FILTER | 需指定PROTOCOLNAME |
+| DP-03=L34+L7混合 | FLOWFILTER | 绑定方式 | 两种绑定都用 | - |
+
+#### E2: DecisionPoint --gates--> EngineeringTask
+
+```
+DecisionPoint --gates--> EngineeringTask
+  属性:
+    - task_id: 被门控的Task ID
+    - activation_per_option: [{option: string, activation: "active"|"skip"}]
+  说明: 每个DP选项下哪些Task应该执行(active)或跳过(skip)
+```
+
+**实例（计费场景）**：
+
+| DecisionPoint | 选项 | 门控Task | activation | 说明 |
+|--------------|------|---------|-----------|------|
+| DP-01 | 离线计费 | T-PLAN-005 | skip | 离线计费无配额管理 |
+| DP-01 | 在线计费 | T-PLAN-005 | active | 需规划配额耗尽动作 |
+| DP-01 | 融合计费 | T-PLAN-005 | active | 需规划配额耗尽动作 |
+| DP-03 | L34匹配 | T-EXEC-003 | skip | 不需要L7FILTER |
+| DP-03 | 含L7匹配 | T-EXEC-003 | active | 需要L7FILTER |
+| DP-03 | any-to-any | T-EXEC-001 | skip | 不需要IPLIST |
+| DP-03 | 特定IP匹配 | T-EXEC-001 | active | 需要IPLIST |
+
+#### E3: ConfigObject --composes--> ConfigObject
+
+```
+ConfigObject --composes--> ConfigObject
+  属性:
+    - multiplicity: "1:1"|"1:N"|formula
+    - condition_on_dp: 条件表达式(可选)
+    - binding_parameter: 绑定参数名
+  说明: 配置对象之间的组合包含关系和基数
+```
+
+**实例（计费场景）**：
+
+| 容器对象 | 被包含对象 | 基数 | 条件 | 绑定参数 |
+|---------|-----------|------|------|---------|
+| URRGROUP | URR | 1(离线/在线)/2(融合) | DP-01 | UPURRNAME1-4/DOWNURRNAME1-4 |
+| PCCPOLICYGRP | URRGROUP | 1:1 | - | URRGROUPNAME |
+| PCCPOLICYGRP | 异常URRGROUP | 0:1 | 仅兜底PPG | SIGURRGRPNAME |
+| RULE | FLOWFILTER | 1:1 | - | FLOWFILTERNAME |
+| RULE | PCCPOLICYGRP | 1:1 | 计费场景 | POLICYNAME(POLICYTYPE=PCC) |
+| USERPROFILE | RULE | 1:N | - | RULEBINDING.RULENAME |
+| USERPROFILE | 默认URRGROUP | 1:1 | - | DFTURRGRPNAME |
+| USERPROFILE | 异常URRGROUP | 1:1 | - | DFTSIGURRGNAME |
+| FLOWFILTER | FILTER | 1:1 | - | FLTBINDFLOWF |
+| FLOWFILTER | L7FILTER | 0:1 | DP-03含L7 | PROTBINDFLOWF |
+| FLOWFILTERGRP | FLOWFILTER | N:N | OR条件 | FLOWFILTERNAME(多条) |
+
+#### E4: Feature --differentiates--> ConfigObject
+
+```
+Feature --differentiates--> ConfigObject
+  属性:
+    - parameter_name: 差异化参数名
+    - value: 参数值
+    - constraints: [string] 额外约束列表
+  说明: 该Feature相对于基准(ConfigObject默认值)在参数上的差异
+```
+
+**实例（计费场景，基准为GWFD-020301内容计费基本功能）**：
+
+| Feature | 差异化ConfigObject | 参数 | 值 | 额外约束 |
+|---------|-------------------|-----|-----|---------|
+| GWFD-020302(时长) | URR | OFFMETERINGTYPE | DURATION | CTP/QCT两种计时模式 |
+| GWFD-020302(时长) | URR | ONLMETERINGTYPE | DURATION | - |
+| GWFD-020303(流量) | URR | OFFMETERINGTYPE | VOLUME | 无特殊约束 |
+| GWFD-020303(流量) | URR | ONLMETERINGTYPE | VOLUME | - |
+| GWFD-020306(事件) | URR | ONLMETERINGTYPE | EVENT | 仅SCUR模式，不支持Free RG，不支持Default Quota |
+| GWFD-010171(离线) | URR | USAGERPTMODE | OFFLINE | UNC侧重CG连接 |
+| GWFD-020300(在线) | URR | USAGERPTMODE | ONLINE | UNC侧重OCS+CCT模板 |
+| GWFD-010173(融合) | URR | USAGERPTMODE | 按子业务 | UNC侧重CHF+Nchf接口，仅5G |
+
+#### E5: EngineeringTask --output_propagates_to--> EngineeringTask
+
+```
+EngineeringTask --output_propagates_to--> EngineeringTask
+  属性:
+    - propagated_entity: 传播的ConfigObject名称
+    - propagation_type: "name_reference"|"count_correlation"
+  说明: 上游Task创建的对象名称/数量如何传播到下游Task的引用参数
+```
+
+**实例（计费场景）**：
+
+| 上游Task | 下游Task | 传播实体 | 传播方式 |
+|---------|---------|---------|---------|
+| T-PLAN-004 | T-EXEC-005 | URR/URRGROUP/PCCPOLICYGRP名称 | 规划名称→创建对象时使用相同名称 |
+| T-EXEC-005 | T-EXEC-008 | PCCPOLICYGRP名称 | RULE.POLICYNAME引用PPG名称 |
+| T-EXEC-004 | T-EXEC-008 | FLOWFILTER名称 | RULE.FLOWFILTERNAME引用ff名称 |
+| T-EXEC-005 | T-EXEC-010 | URRGROUP名称 | URRGRPBINDING.DFTURRGRPNAME引用URRG名称 |
+| T-EXEC-008 | T-EXEC-010 | RULE名称 | RULEBINDING.RULENAME引用Rule名称 |
+| T-PLAN-001 | T-EXEC-010 | USERPROFILE名称 | 所有RULEBINDING/URRGRPBINDING引用UP名称 |
+
+### 5.2 扩展属性
+
+#### A1: EngineeringTask.output_cardinality
+
+```
+EngineeringTask 新增属性:
+  output_cardinality: {
+    formula: string,       // 基数公式，如 "2N+2" 或 "N+2"
+    inputs: [string],      // 输入变量说明
+    condition_on_dp: string // 对DP选项的条件依赖(可选)
+  }
+  说明: 该execute Task会创建多少个ConfigObject实例
+```
+
+**实例（计费场景 execute Tasks）**：
+
+| Task | 输出ConfigObject | 基数公式 | 输入变量 | DP条件 |
+|------|-----------------|---------|---------|--------|
+| T-EXEC-001 | IPLIST | 1(按需) | 需要特定IP匹配的业务数 | DP-03=特定IP |
+| T-EXEC-002 | FILTER | M | M=业务需要的L34过滤条件数 | - |
+| T-EXEC-003 | L7FILTER | K | K=含L7匹配的业务数，纯L34时K=0 | DP-03含L7 |
+| T-EXEC-004 | FLOWFILTER | S | S=匹配场景数(含兜底) | - |
+| T-EXEC-004 | FLTBINDFLOWF | S | 1:1跟随FLOWFILTER | - |
+| T-EXEC-004 | PROTBINDFLOWF | K | 仅L7场景 | DP-03含L7 |
+| T-EXEC-005 | URR | 2N+2(融合)/N+2(单一模式) | N=特定业务数，+2=兜底+异常 | DP-01 |
+| T-EXEC-005 | URRGROUP | N+2 | 每业务1+兜底1+异常1 | - |
+| T-EXEC-005 | PCCPOLICYGRP | N+1 | 每业务1+共享兜底(含SIGURRGRPNAME) | - |
+| T-EXEC-008 | RULE | S | 1:1跟随FLOWFILTER | - |
+| T-EXEC-010 | RULEBINDING | S | 1:1跟随RULE | - |
+| T-EXEC-010 | USERPROFILE | 通常1 | 可多个UP按DNN拆分 | - |
+
+#### A2: ConfigObject.naming_pattern / priority_pattern
+
+```
+ConfigObject 新增属性:
+  naming_pattern: string     // 命名规范，如 "{业务}_{模式}"
+  priority_pattern: string   // 优先级规范(可选)，如 "特定100+, 兜底65000+"
+  说明: ConfigObject实例的命名和优先级分配规范
+```
+
+**实例（计费场景 ConfigObject）**：
+
+| ConfigObject | 命名模式 | 示例 | 优先级模式 |
+|-------------|---------|------|-----------|
+| URR | `{业务}_{模式}` | video_offline, video_online | - |
+| URRGROUP | `{业务}` | video, default, abnormal | - |
+| PCCPOLICYGRP | `PPG_{业务}` | PPG_video, PPG_default | - |
+| FILTER | `L34_{描述}` | L34_dns, L34_any | - |
+| L7FILTER | `L7_{描述}` | L7_huawei | - |
+| FLOWFILTER | `ff_{描述}` | ff_L7, ff_IMS, ff_any | - |
+| RULE | `Rule{序号}_{业务}` | Rule001_video, Rule999_any | 特定100+, 兜底65000+ |

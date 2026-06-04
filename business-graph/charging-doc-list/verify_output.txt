@@ -1,0 +1,601 @@
+======================================================================
+计费文档清单完整性校验
+======================================================================
+
+## 1. PCC之SM策略 (已收录23/79) ##
+  总文件: 79, 已收录: 23, 未收录: 56
+  未收录文件中命中计费关键词: 35
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\遵循标准_11969175.md
+    L18 [charging]: | 3GPP协议 | 3GPP TS 23.203 Policy and charging control architecture | 定义PCC架构。 |
+    L18 [RG]: | 3GPP协议 | 3GPP TS 23.203 Policy and charging control architecture | 定义PCC架构。 |
+    L21 [charging]: | 3GPP协议 | 3GPP TS 29.212 Policy and charging control over Gx reference point | 定义Gx接口上的PCC应用。 |
+    L21 [RG]: | 3GPP协议 | 3GPP TS 29.212 Policy and charging control over Gx reference point | 定义Gx接口上的PCC应用。 |
+    L22 [charging]: | 3GPP协议3GPP协议 | 3GPP TS 29.213 Policy and charging control signalling flows and Quality of Service 
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略E2E实现原理\原理概述_15464534.md
+    L3 [计费]: 从前文可知SM策略主要包括QoS参数、计费参数、重定向与短信/邮件通知等，而这个过程中QoS的实施原理最为重要，本章重点以QoS为例阐述E2E的5G QoS的实现机制。该流程可以从信令面和数据面两个维
+    L24 [配额]: - **QoS策略生成（步骤1a、1b）**：用户上线，从UDM获取签约数据，携带签约的Session-AMBR、ARP、5QI等，经SMF，请求消息送达PCF，PCF根据用户上线携带的切片信息、位置
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略E2E实现原理\SM策略生成原理\动态规则_86483635.md
+    L11 [计费]: 动态规则是由PCF **配置** 并 **生成** QoS参数与其他SM（Session Management）策略中参数（如计费参数、重定向、通知参数等），再统一由PCF进行策略 **下发** 。相
+    L34 [计费]: 如 [图1](#ZH-CN_TOPIC_0286483635__fig16131124018357) ，SM策略最终由多个规则组成， “规则” 是SM策略（QoS、计费、通知等）下发的最小单位。而规则
+    L48 [资费]: > SM策略的 **输出** ：包含QoS带宽控制策略、资费控制策略、重定向、短信/邮件通知等。
+    L77 [配额]: | 配额 | 配额是用于统计用户消费运营商网络资源的一个度量数据，UPCF支持基于配额数据进行策略计算，用于引导客户网络消费行为。配额的类型主要有三种：- 流量配额：表示UPCF统计的用户使用业务产生
+    L78 [计费]: | 漫游区 | 漫游区是多个PLMN区的集合。通过漫游区可以对多个PLMN进行相同的策略控制，例如QoS、计费规则等，同时也可以按照某种共性（如：费率）为标准，将不同的PLMN划分到不同的漫游区。 |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略E2E实现原理\SM策略生成原理\规则相关概念_17152898.md
+    L9 [计费]: 策略是运营商根据自身运营需要，有目的有选择地对用户、网络、业务施加一些控制手段。例如，在忙时限制用户对P2P业务的使用，以减轻或消除分组网络资源的过载。策略控制和计费控制一起，构成了PCC的两大基本功
+    L11 [计费]: 用户激活/更新过程中，SMF根据用户上线携带的用户信息从PCF或SMF本地配置获得该用户的SM策略，并传递给UPF。用户使用数据业务时，SMF/UPF使用SA功能对用户报文进行解析，将解析结果与策略中
+    L16 [计费]: 在PCC标准架构中，策略由PCF定义，由SMF执行，该种策略类型也称之为动态PCC策略。用户激活过程中SMF与PCF交互，通过N7接口获取策略和计费控制相关的授权信息，并将其处理后提供给SMF/UPF
+    L23 [计费]: - **预定义规则**，表示规则中QoS参数、计费参数等内容均由SMF/UPF网元配置，再由PCF网元进行引用完成统一配置。预定义规则具有如下特点：
+    L25 [计费]: - 用户注册过程中，由PCF下发预定义规则标识，PCF通过预定义规则标识的方式激活SMF/UPF本地静态配置的预定义规则来实现计费和策略等控制。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略E2E实现原理\SM策略生成原理\预定义规则_预定义规则组_本地规则_86483636.md
+    L25 [计费]: 对于动态规则，PCF下发该规则的业务流特征及业务的精细化管理动作。SMF和UPF不需要特殊配置。但对于预定义规则，UPF/SMF/PCF上需定义相同的规则标识，UPF上定义该规则对应的业务流特征及业务
+    L40 [计费]: > - 对于本地规则，UPF/SMF上需定义相同的规则组标识，UPF上定义该规则对应的业务流特征及业务的精细化管理动作。用户注册过程中，由SMF下发规则组标识，SMF通过规则组标识的方式激活UPF本地
+    L50 [计费]: - UPF上支持的“流”动作，包括计费、带宽管理、头增强、QoS等。
+    L51 [计费]: 支持单个“流”动作，例如仅计费；也支持多个“流”动作的组合，例如计费+FUP。UPF识别出特定业务流后，按照静态规则中规划的精细化管理动作进行处理。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略配置与调测\业务调测方法\调测原则\N7接口与N4接口的信令映射_30975312.md
+    L33 [计费]: | 业务级QoS | 通过<br>“pccRules”<br>信元下发，包括流信息、QoS、计费等内容。 |
+    L33 [CCR]: | 业务级QoS | 通过<br>“pccRules”<br>信元下发，包括流信息、QoS、计费等内容。 |
+    L35 [CCR]: | **信令检查原则**<br>：- PCF侧配置下发的缺省QoS Flow中“pccRules”信元下发的5qi、arp取值须与“sessRules”信元下发的5qi、arp取值分别保持一致。<br
+    L37 [CCR]: "pccRules":{    //主要定义业务级QoS内容
+    L55 [CCR]: "pccRuleId":"AG_Gold",
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略配置与调测\业务调测方法\调测原则\调测方法概述_77134835.md
+    L7 [CCR]: | 动态规则 | 在PCF定义的策略架构下，是否能够按照策略定义的逻辑——“If满足XX条件Then执行XX动作”进行正确的规则下发。PCF下发的规则内容重点关注如下内容点：- **下发规则名是否符合
+    L8 [CCR]: | 预定义规则/预定义规则组 | 对PCF而言，此场景下重点关注在PCF定义的策略架构下，是否能够按照策略定义的逻辑——“If满足XX条件Then执行XX动作”进行正确的规则下发。PCF下发的规则内容
+    L9 [CCR]: | 本地规则 | 此场景不涉及PCF。 | SMF作为PCC策略生成网元，用户上线，SMF会根据规则下发条件判断是否激活本地定义的预定义规则，因此SMF侧调测需重点关注如下信息：- **本地激活后安装
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略配置与调测\业务配置方法\业务拆解方法\单业务拆解方法_24232010.md
+    L33 [配额]: - 用户会话信息：配额状态、接入的DNN等。
+    L37 [配额]: - 控制短信发送：短信通知用户位置信息变更、配额状态变更等。
+    L38 [配额]: - 控制邮件发送：邮件通知用户位置信息变更、配额状态变更等。
+    L59 [配额]: 排查方法：当策略内容存在多种条件类型时，分别计算每种条件类型是否覆盖全集，如配额状态+用户上网时间段两个条件同时存在时，需分别计算配额是否覆盖了未耗尽和耗尽两种状态，用户上网时段是否覆盖了一天24小时
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\SM策略配置与调测\业务配置方法\业务拆解方法\多业务拆解方法_70951751.md
+    L28 [配额]: | 存在场景互斥、激活互斥等关系 | 订购互斥<br>（表示用户在订购业务时，两个业务不允许同时订购）场景：- **订购+拒绝**：表示要订购的业务，若与已订购的业务互斥，则不允许订购要订购的业务。<
+    L28 [用量]: | 存在场景互斥、激活互斥等关系 | 订购互斥<br>（表示用户在订购业务时，两个业务不允许同时订购）场景：- **订购+拒绝**：表示要订购的业务，若与已订购的业务互斥，则不允许订购要订购的业务。<
+    L29 [配额]: | 存在场景互斥、激活互斥等关系 | 激活互斥<br>（表示用户在使用业务时，两个业务不允许同时激活）场景：- **激活+拒绝**：业务间不允许同时被激活，只允许优先级高的激活，低的不激活。<br>-
+    L53 [配额]: - 该业务中流量使用不限时间地点，在配额耗尽前用户均能享受上下行10Mbit/s的带宽。
+    L54 [配额]: - 在该配额耗尽后，短信通知用户并限速到1Mbit/s带宽。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\整体方案设计_08571784.md
+    L12 [配额]: | 配额使用量 | 上下行带宽 | 是否重定向 | 是否发送提醒通知 |
+    L12 [用量]: | 配额使用量 | 上下行带宽 | 是否重定向 | 是否发送提醒通知 |
+    L14 [配额]: | 配额未耗尽 | 100 Mbit/s | 否 | 否 |
+    L15 [配额]: | 配额耗尽 | 1 Kbit/s | 是 | 是 |
+    L20 [配额]: 基于用户的配额使用情况： **配额未耗尽** / **配额耗尽** 。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务调测\动态规则场景调测\信令调测方法_08571768.md
+    L34 [配额]: 3. 当用户配额未耗尽前上线，观察信令
+    L38 [配额]: 初始上线用户会在Npcf_SMPolicyControl_Create Request消息中携带用户IMSI/MSISDN、dnn、接入网络类型、切片等信息，PCF基于SMF发送的请求消息进行本地用户
+    L42 [CCR]: "pccRules" : {
+    L51 [CCR]: "pccRuleId" : "AG_Normal",
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务调测\动态规则场景调测\快速调测方法_08571789.md
+    L28 [配额]: 2. 检查用户初始配额是否与PMS配置保持一致。
+    L29 [Quota]: 继续在UPCF PGW Web LMT执行 **LST PQUOTA** 查询用户 “配额名称” 、 “配额初始值” 是否与PMS配置保持一致。
+    L29 [配额]: 继续在UPCF PGW Web LMT执行 **LST PQUOTA** 查询用户 “配额名称” 、 “配额初始值” 是否与PMS配置保持一致。
+    L31 [Quota]: %%LST PQUOTA: USRIDENTIFIER="46000120010****", REALTIMEFLAG=False;%%
+    L34 [Quota]: Quota Name                        Service Name                      Monitor Key                     
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务调测\预定义规则场景调测\信令调测方法_24674052.md
+    L35 [配额]: 3. 当用户配额未耗尽前上线，观察信令
+    L39 [配额]: 初始上线用户会在Npcf_SMPolicyControl_Create Request消息中携带用户IMSI/MSISDN、dnn、接入网络类型、切片等信息，PCF基于SMF发送的请求消息进行本地用户
+    L43 [CCR]: "pccRules" : {
+    L46 [CCR]: "pccRuleId" : "Rule_Normal"
+    L78 [配额]: 用户配额耗尽前，SMF收到PCF侧下发的策略内容后会通过N4接口的 “PFCP Session Establishment Request” 消息或 “PFCP Session Modificatio
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务调测\预定义规则场景调测\快速调测方法_71233851.md
+    L29 [配额]: 2. 检查用户初始配额是否与PMS配置保持一致。
+    L30 [Quota]: 继续在UPCF PGW Web LMT执行 **LST PQUOTA** 查询用户 “配额名称” 、 “配额初始值” 是否与PMS配置保持一致。
+    L30 [配额]: 继续在UPCF PGW Web LMT执行 **LST PQUOTA** 查询用户 “配额名称” 、 “配额初始值” 是否与PMS配置保持一致。
+    L32 [Quota]: %%LST PQUOTA: USRIDENTIFIER="46000120010****", REALTIMEFLAG=False;%%
+    L35 [Quota]: Quota Name                        Service Name                      Monitor Key                     
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务配置\E2E动态规则配置\PCF侧业务配置_08571786.md
+    L15 [Quota]: - 条件：QuotaStatus=Normal
+    L18 [Quota]: - 条件：QuotaStatus=Exhaust
+    L48 [配额]: 2. 配置 “配额” 。
+    L49 [配额]: 导航入口为 “ 业务管理 > 业务 > 配额 ” 。
+    L50 [Quota]: > 配额（Quota）是指一个指定周期内供用户使用的流量或时长额度，也可指单个会话内供用户使用的时长额度。当业务的使用与流量、时长相关时，需要配置配额。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务配置\E2E预定义规则配置\PCF侧业务配置_71193959.md
+    L15 [Quota]: - 条件：QuotaStatus=Normal
+    L18 [Quota]: - 条件：QuotaStatus=Exhaust
+    L48 [配额]: 2. 配置 “配额” 。
+    L49 [配额]: 导航入口为 “ 业务管理 > 业务 > 配额 ” 。
+    L50 [Quota]: > 配额（Quota）是指一个指定周期内供用户使用的流量或时长额度，也可指单个会话内供用户使用的时长额度。当业务的使用与流量、时长相关时，需要配置配额。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务配置\E2E预定义规则配置\SMF侧业务配置_71233849.md
+    L30 [URR]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS<br>- urr_MK | 本端规划 | 存在多条记录时，该参数不能重复。 |
+    L30 [用量]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS<br>- urr_MK | 本端规划 | 存在多条记录时，该参数不能重复。 |
+    L31 [URR]: | **ADD URR** | URR标识（URRID） | - 2（用于QoS URR）<br>- 3（用于MK URR） | 与对端协商 | 该参数需要与UPF上的URR标识保持一致。 |
+    L32 [URR]: | **ADD URR** | 使用量上报模式（USAGERPTMODE） | - QOS<br>- MONITORINGKEY | 固定取值 | - |
+    L32 [USAGERPTMODE]: | **ADD URR** | 使用量上报模式（USAGERPTMODE） | - QOS<br>- MONITORINGKEY | 固定取值 | - |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\业务重定向方案（预定义+动态）\E2E业务配置\E2E预定义规则配置\UPF侧业务配置_24674050.md
+    L36 [CCA]: | **ADD PCCACTIONPROP** | PCC动作属性名称（PCCACTPROPNAME） | PCCAction_Name | 本端规划 | - |
+    L37 [CCA]: | **ADD PCCACTIONPROP** | 上行发起重定向名称（UPINITREDIRNM） | Redirect_Name | 已配置数据中获取 | 使用<br>**ADD REDIRECT
+    L38 [URR]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS2<br>- urr_QoS3<br>- urr_MK | 本端规划 | 存在多条记录时，该参数不能重复。 
+    L38 [用量]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS2<br>- urr_QoS3<br>- urr_MK | 本端规划 | 存在多条记录时，该参数不能重复。 
+    L39 [URR]: | **ADD URR** | URR标识（URRID） | - 2<br>- 3<br>- 32 | 与对端协商 | 该参数需要与UPF上的URR标识保持一致。 |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于业务类别的带宽差异化控制方案设计（ADC）\E2E业务调测\信令调测方法_08571742.md
+    L41 [CCR]: "pccRules" : {
+    L46 [CCR]: "pccRuleId" : "
+    L58 [USAGE]: "packetFilterUsage" : true
+    L61 [CCR]: "pccRuleId" : "
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于业务类别的带宽差异化控制方案设计（ADC）\E2E业务配置\PCF侧业务配置_08571772.md
+    L57 [CCR]: 根据 [业务配置逻辑](../../../SM策略配置与调测/业务配置方法/动态PCC策略配置/动态规则配置/业务配置逻辑_64569729.md) 章节介绍的5G场景中QoS Flow的建立方法，此
+    L57 [资费]: 根据 [业务配置逻辑](../../../SM策略配置与调测/业务配置方法/动态PCC策略配置/动态规则配置/业务配置逻辑_64569729.md) 章节介绍的5G场景中QoS Flow的建立方法，此
+    L73 [USAGE]: | 5G动作组2 | 属性 | packetFilterUsage | - 类型：Value<br>- 值：True |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于位置区域的带宽差异化控制方案（预定义）\整体方案设计_08571777.md
+    L62 [配额]: 在此业务场景下， “业务” 的配置须引用 “策略” 和 “漫游区” ，而 “策略” 的配置又须引用 “规则” 和 “触发器” ，以此类推可确定带配额场景的UPCF业务配置顺序为：PLMN>漫游区>条件
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于位置区域的带宽差异化控制方案（预定义）\E2E业务调测\信令调测方法_08571765.md
+    L39 [CCR]: "pccRules" : {
+    L42 [CCR]: pccRuleId
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于位置区域的带宽差异化控制方案（预定义）\E2E业务调测\快速调测方法_08571782.md
+    L30 [CCR]: 执行 **DSP PCCSESSINFO** 命令查询SMF本地安装规则是否为PCF侧配置下发的目标规则内容，如示例 Predefined 1 为PCF下发的 “pccRuleId” 信元携带的预定义
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于位置区域的带宽差异化控制方案（预定义）\E2E业务配置\PCF侧业务配置_08571779.md
+    L75 [CG]: 需要配置两个条件组，用于判断用户在国内或国外（漫游区）接入。条件组的数据规划如 [表3](#ZH-CN_OPI_0308571779__fup_cg) 和 [表4](#ZH-CN_OPI_030857
+    L78 [CG]: | 条件组1 | 基本信息 | 名称 | CG_Local |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于位置区域的带宽差异化控制方案（预定义）\E2E业务配置\SMF侧业务配置_08571780.md
+    L30 [URR]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS2<br>- urr_QoS3 | 本端规划 | 存在多条记录时，该参数不能重复。 |
+    L30 [用量]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS2<br>- urr_QoS3 | 本端规划 | 存在多条记录时，该参数不能重复。 |
+    L31 [URR]: | **ADD URR** | URR标识（URRID） | - 2（对应“urr_QoS2”）<br>- 3（对应“urr_QoS3”） | 与对端协商 | 该参数需要与UPF上的URR标识保持一致
+    L32 [URR]: | **ADD URR** | 使用量上报模式（USAGERPTMODE） | QOS | 固定取值 | - |
+    L32 [USAGERPTMODE]: | **ADD URR** | 使用量上报模式（USAGERPTMODE） | QOS | 固定取值 | - |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于位置区域的带宽差异化控制方案（预定义）\E2E业务配置\UPF侧业务配置_22160708.md
+    L36 [URR]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS2<br>- urr_QoS3 | 本端规划 | 存在多条记录时，该参数不能重复。 |
+    L36 [用量]: | **ADD URR** | 使用量上报规则名称（URRNAME） | - urr_QoS2<br>- urr_QoS3 | 本端规划 | 存在多条记录时，该参数不能重复。 |
+    L37 [URR]: | **ADD URR** | URR标识（URRID） | - 2<br>- 3 | 与对端协商 | 该参数需要与SMF上的URR标识保持一致。 |
+    L38 [URR]: | **ADD URR** | 使用量上报模式（USAGERPTMODE） | QOS | 固定取值 | - |
+    L38 [USAGERPTMODE]: | **ADD URR** | 使用量上报模式（USAGERPTMODE） | QOS | 固定取值 | - |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于多业务场景的策略控制（动态）\E2E业务调测\信令调测方法_24058838.md
+    L17 [配额]: | 场景 | 用户上线时间 | Service_FUP配额状态 | Service_Holiday配额状态 | PCF下发关键参数 |
+    L19 [配额]: | 场景1 | 工作日 | 配额未耗尽 | 配额未耗尽 | AG_FUP_Normal：QoSData（maxbrUL=10 Mbps，maxbrDL=10 Mbps） |
+    L20 [配额]: | 场景2 | 工作日 | 配额未耗尽 | 配额耗尽 | AG_FUP_Normal：QoSData（maxbrUL=10 Mbps，maxbrDL=10 Mbps） |
+    L21 [配额]: | 场景3 | 工作日 | 配额耗尽 | 配额未耗尽 | - AG_FUP_Exhaust：QoSData（maxbrUL=1 Mbps，maxbrDL=1 Mbps）<br>- 发送消息通知Noti
+    L22 [配额]: | 场景4 | 工作日 | 配额耗尽 | 配额耗尽 | - AG_FUP_Exhaust：QoSData（maxbrUL=1 Mbps，maxbrDL=1 Mbps）<br>- 发送消息通知Notif
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于多业务场景的策略控制（动态）\E2E业务调测\快速调测方法_23899010.md
+    L13 [配额]: | 场景 | 用户上线时间 | Service_FUP配额状态 | Service_Holiday配额状态 | PCF下发关键参数 |
+    L15 [配额]: | 场景1 | 工作日 | 配额未耗尽 | 配额未耗尽 | AG_FUP_Normal：QoSData（maxbrUL=10 Mbps，maxbrDL=10 Mbps） |
+    L16 [配额]: | 场景2 | 工作日 | 配额未耗尽 | 配额耗尽 | AG_FUP_Normal：QoSData（maxbrUL=10 Mbps，maxbrDL=10 Mbps） |
+    L17 [配额]: | 场景3 | 工作日 | 配额耗尽 | 配额未耗尽 | - AG_FUP_Exhaust：QoSData（maxbrUL=1 Mbps，maxbrDL=1 Mbps）<br>- 发送消息通知Noti
+    L18 [配额]: | 场景4 | 工作日 | 配额耗尽 | 配额耗尽 | - AG_FUP_Exhaust：QoSData（maxbrUL=1 Mbps，maxbrDL=1 Mbps）<br>- 发送消息通知Notif
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于多业务场景的策略控制（动态）\E2E业务配置\业务1配置_23899008.md
+    L15 [配额]: - 条件：配额状态=“未耗尽”
+    L18 [配额]: - 条件：配额状态=“耗尽”
+    L48 [配额]: 2. 配置 “配额” 。
+    L49 [配额]: 导航入口为 “ 业务管理 > 业务 > 配额 ” 。
+    L50 [Quota]: > 配额（Quota）是指一个指定周期内供用户使用的流量或时长额度，也可指单个会话内供用户使用的时长额度。当业务的使用与流量、时长相关时，需要配置配额。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于多业务场景的策略控制（动态）\E2E业务配置\业务2配置_71231363.md
+    L15 [配额]: - 条件：配额状态=“未耗尽”
+    L18 [配额]: - 条件：配额状态=“耗尽”
+    L48 [配额]: 2. 配置 “配额” 。
+    L49 [配额]: 导航入口为 “ 业务管理 > 业务 > 配额 ” 。
+    L50 [Quota]: > 配额（Quota）是指一个指定周期内供用户使用的流量或时长额度，也可指单个会话内供用户使用的时长额度。当业务的使用与流量、时长相关时，需要配置配额。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于多业务场景的策略控制（动态）\整体方案设计\PCF侧业务设计_24667722.md
+    L15 [配额]: 在此业务场景下， “业务” 的配置须引用 “策略” 和 “配额” ，而 “策略” 的配置又须引用 “规则” 和 “触发器” ，该业务场景下需要配置 “消息通知” ，以此类推可确定此业务配置顺序为：配额
+    L38 [配额]: | Service_FUP | 此业务即为一个独立的业务，其中包含1个策略：Policy_FUP和10GB配额。 | 该业务针对用户配额使用量做带宽控制，当用户的配额未耗尽时，运营商为其提供高额带宽1
+    L38 [用量]: | Service_FUP | 此业务即为一个独立的业务，其中包含1个策略：Policy_FUP和10GB配额。 | 该业务针对用户配额使用量做带宽控制，当用户的配额未耗尽时，运营商为其提供高额带宽1
+    L40 [配额]: | Rule_FUP_Normal | - 条件：配额状态=“未耗尽”。<br>- 动作组：QoSData（maxbrUL=10 Mbps，maxbrDL=10 Mbps）。 | 此处QoSData中
+    L41 [配额]: | Rule_FUP_Exhaust | - 条件：配额状态=“耗尽”。<br>- 动作组：QoSData（maxbrUL=1 Mbps，maxbrDL=1 Mbps）。 | 此处QoSData中5q
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于多业务场景的策略控制（动态）\整体方案设计\整体拆解逻辑_71227537.md
+    L12 [配额]: | 配额使用量 | 上下行带宽 | 是否发送提醒通知 |
+    L12 [用量]: | 配额使用量 | 上下行带宽 | 是否发送提醒通知 |
+    L14 [配额]: | 配额未耗尽 | 10 Mbps | 否 |
+    L15 [配额]: | 配额耗尽 | 1 Mbps | 是 |
+    L17 [配额]: | 配额使用量 | 上下行带宽 | 是否发送提醒通知 |
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于用户等级的资费差异化控制方案（动态）\E2E业务调测\信令调测方法_08571739.md
+    L50 [计费]: "chgDecs" : {                //计费参数
+    L51 [charging]: "AG_ChargingData_Gold" : {
+    L51 [RG]: "AG_ChargingData_Gold" : {
+    L52 [charging]: "chgId" : "AG_ChargingData_Gold",
+    L52 [RG]: "chgId" : "AG_ChargingData_Gold",
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于用户等级的资费差异化控制方案（动态）\E2E业务调测\快速调测方法_93907887.md
+    L39 [CCR]: 执行 **DSP PCCSESSINFO** 命令查询SMF本地安装规则是否为PCF侧配置下发的目标规则内容，如示例 “AG_Gold” 为PCF下发的 “pccRuleId” 信元携带的动态规则名。
+
+  [可能遗漏] 网络部署\业务专题\5G PCC之SM策略解决方案\典型业务场景E2E方案设计\基于用户等级的资费差异化控制方案（动态）\E2E业务配置\PCF侧业务配置_93906534.md
+    L55 [CG]: 此业务场景下需要配置三个条件组，用于判断用户的等级为金牌用户，银牌用户还是普通用户。条件组的数据规划如 [表1](#ZH-CN_OPI_0293906534__fup_cg) ， [表2](#ZH-C
+    L58 [CG]: | 条件组1 | 基本信息 | 名称 | CG_Gold |
+    L67 [CG]: | 条件组2 | 基本信息 | 名称 | CG_Silver |
+    L76 [CG]: | 条件组3 | 基本信息 | 名称 | CG_Normal |
+
+
+## 2. ULCL分流 (已收录5/60) ##
+  总文件: 60, 已收录: 5, 未收录: 55
+  未收录文件中命中计费关键词: 23
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\典型应用实例\政务专网\方案选取_35153966.md
+    L27 [计费]: - 降低建网成本：大幅降低拉设大量光纤和网线的施工周期、部署难度和线路维护成本。同时，政务专网内流量可实行专项计费策略，流量性价比高。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\典型应用实例\政务专网\方案部署_35313250.md
+    L23 [计费]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L23 [URR]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L23 [CHF]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L23 [内容计费]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L34 [计费]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\典型应用实例\校园专网\方案部署_34834102.md
+    L15 [计费]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L15 [URR]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L15 [CHF]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L15 [内容计费]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+    L26 [计费]: | 计费规则 | 实现专网流量和Internet流量的区分计费。<br>- 专网流量：ULCL UPF/辅锚点 UPF对本地分流的业务流按照SMF下发的计费策略进行计费。支持基于业务识别的内容计费，通
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\典型应用实例\校园专网\需求分析_79314037.md
+    L4 [计费]: - [业务诉求：随时随地高速接入、不换卡不换号、独立计费](#ZH-CN_TOPIC_0000001279314037__1.3.2.1)
+    L21 [计费]: #### [业务诉求：随时随地高速接入、不换卡不换号、独立计费](#ZH-CN_TOPIC_0000001279314037)
+    L44 [计费]: - **流量独立计费**
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于PCF静态签约的分流\功能调测\调测基于PCF静态签约的分流（SMF）_48854284.md
+    L78 [CCR]: 6. 查看用户跟踪。确认SMF从PCF收到的Npcf_SMPolicyControl_Create Response消息是否携带了pccRuleId（testuserprofilename）。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于PCF静态签约的分流\功能调测\调测基于PCF静态签约的分流（UPF）\调测基于IP地址的本地分流_54221458.md
+    L37 [RG]: APP ID  =  flowfiltergrp_ulcl01
+    L57 [RG]: 9. 执行 **LST FLOWFILTERGRP** 命令，检查流过滤器名称。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于PCF静态签约的分流\功能调测\调测基于PCF静态签约的分流（UPF）\调测基于域名的本地分流（DNS域名分流）_00180927.md
+    L37 [RG]: APP ID  =  flowfiltergrp_ulcl01
+    L57 [RG]: 9. 执行 **LST FLOWFILTERGRP** 命令，检查流过滤器名称。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于PCF静态签约的分流\功能调测\调测基于PCF静态签约的分流（UPF）\调测基于域名的本地分流（DNS重定向）_54381250.md
+    L37 [RG]: APP ID  =  flowfiltergrp_ulcl01
+    L57 [RG]: 9. 执行 **LST FLOWFILTERGRP** 命令，检查流过滤器名称。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于PCF静态签约的分流\功能部署\部署基于PCF静态签约的分流（UPF）\激活基于IP地址的本地分流_00261033.md
+    L35 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器组名称（FLWFLTRGRPNAME） | flowfiltergrp_ulcl01 | 与对端协商 | 对应SMF下发的Applicati
+    L36 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器名称（FLOWFILTERNAME） | flowfilter_ulcl03 | 已配置数据中获取 | 绑定的FlowFilter已通过<b
+    L37 [CG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L37 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L51 [RG]: **ADD FLOWFILTERGRP**
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于PCF静态签约的分流\功能部署\部署基于PCF静态签约的分流（UPF）\激活基于域名的本地分流（DNS域名分流）_54381248.md
+    L43 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器组名称（FLWFLTRGRPNAME） | flowfiltergrp_ulcl01 | 与对端协商 | 对应SMF下发的Applicati
+    L44 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器名称（FLOWFILTERNAME） | flowfilter_ulcl01flowfilter_ulcl02 | 已配置数据中获取 | 绑
+    L45 [CG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L45 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L65 [RG]: **ADD FLOWFILTERGRP**
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于PCF静态签约的分流\功能部署\部署基于PCF静态签约的分流（UPF）\激活基于域名的本地分流（DNS重定向）_54221456.md
+    L44 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器组名称（FLWFLTRGRPNAME） | flowfiltergrp_ulcl01 | 与对端协商 | 对应SMF下发的Applicati
+    L45 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器名称（FLOWFILTERNAME） | flowfilter_ulcl01flowfilter_ulcl02 | 已配置数据中获取 | 绑
+    L46 [CG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L46 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于SMF本地规则的分流\功能调测\调测基于SMF本地规则的分流（UPF）\调测基于IP地址的本地分流_00254135.md
+    L37 [RG]: APP ID  =  flowfiltergrp_ulcl01
+    L57 [RG]: 9. 执行 **LST FLOWFILTERGRP** 命令，检查流过滤器名称。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于SMF本地规则的分流\功能调测\调测基于SMF本地规则的分流（UPF）\调测基于域名的本地分流（DNS域名分流）_49014080.md
+    L37 [RG]: APP ID  =  flowfiltergrp_ulcl01
+    L57 [RG]: 9. 执行 **LST FLOWFILTERGRP** 命令，检查流过滤器名称。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于SMF本地规则的分流\功能调测\调测基于SMF本地规则的分流（UPF）\调测基于域名的本地分流（DNS重定向）_00174021.md
+    L37 [RG]: APP ID  =  flowfiltergrp_ulcl01
+    L57 [RG]: 9. 执行 **LST FLOWFILTERGRP** 命令，检查流过滤器名称。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于SMF本地规则的分流\功能部署\部署基于SMF本地规则的分流（UPF）\激活基于IP地址的本地分流_00247829.md
+    L35 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器组名称（FLWFLTRGRPNAME） | flowfiltergrp_ulcl01 | 与对端协商 | 对应SMF下发的Applicati
+    L36 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器名称（FLOWFILTERNAME） | flowfilter_ulcl03 | 已配置数据中获取 | 绑定的FlowFilter已通过<b
+    L37 [CG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L37 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L51 [RG]: **ADD FLOWFILTERGRP**
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于SMF本地规则的分流\功能部署\部署基于SMF本地规则的分流（UPF）\激活基于域名的本地分流（DNS域名分流）_95053861.md
+    L43 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器组名称（FLWFLTRGRPNAME） | flowfiltergrp_ulcl01 | 与对端协商 | 对应SMF下发的Applicati
+    L44 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器名称（FLOWFILTERNAME） | flowfilter_ulcl01flowfilter_ulcl02 | 已配置数据中获取 | 绑
+    L45 [CG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L45 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L65 [RG]: **ADD FLOWFILTERGRP**
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流业务部署\基于SMF本地规则的分流\功能部署\部署基于SMF本地规则的分流（UPF）\激活基于域名的本地分流（DNS重定向）_00167735.md
+    L44 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器组名称（FLWFLTRGRPNAME） | flowfiltergrp_ulcl01 | 与对端协商 | 对应SMF下发的Applicati
+    L45 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器名称（FLOWFILTERNAME） | flowfilter_ulcl01flowfilter_ulcl02 | 已配置数据中获取 | 绑
+    L46 [CG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+    L46 [RG]: | **ADD FLOWFILTERGRP** | 流过滤器逻辑分组（FLWFLTRLOGICGRP） | OR | 本端规划 | 或组内的任何一个流过滤器命中，则执行分流流程。 |
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流原理\创建分流会话_97550769.md
+    L45 [URR]: > SMF与UPF间N4会话建立过程中，SMF会下发PDR、FAR、QER、URR等N4规则信息给UPF，详细如下：
+    L47 [URR]: > - PDR（ Packet Detection Rule）：流处理策略，主要包括流规则PDI（Packet Detection Information）和对应流动作（FAR，QER，URR）的ID
+    L50 [URR]: > - URR（Usage Reporting Rule）：指示统计上报类动作的（统计上报类动作包含配额、阈值、时长、流量、上报原因等）。
+    L50 [Usage Report]: > - URR（Usage Reporting Rule）：指示统计上报类动作的（统计上报类动作包含配额、阈值、时长、流量、上报原因等）。
+    L50 [配额]: > - URR（Usage Reporting Rule）：指示统计上报类动作的（统计上报类动作包含配额、阈值、时长、流量、上报原因等）。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流原理\原理概述_97470669.md
+    L40 [计费]: | [下发分流策略](下发分流策略_97470671.md) | 伴随分流会话创建过程，控制面网元PCF、SMF会最终将分流策略下发给UL CL UPF，下发其他策略（如计费相关的PCC策略）给辅锚点
+    L42 [计费]: | [分流场景下的计费](分流场景下的计费_97585673.md) | 分流场景下，辅锚点UPF和主锚点UPF一样承担了终结用户数据流的角色，因此辅锚点也需要执行SMF下发的计费相关的策略，对分流到
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\分流原理\执行分流策略_50632728.md
+    L28 [RG]: > APPID1为SMF上配置的Application ID，在SMF上通过 **ADD FLOWFILTER** 命令里的参数 “流过滤器名称” 配置，对应UPF上配置的 **ADD FLOWFIL
+    L34 [URR]: - 对于上行报文，先进行PDR匹配，执行分流PDR的FAR动作，对于分流到本地的业务，在策略综合之后切换为普通PDR，执行普通PDR的URR动作、QER动作及FAR动作。如[图2 上行报文PDR执行过
+    L35 [URR]: - 对于下行报文，先进行PDR匹配，执行普通PDR的URR动作和QER动作，对于分流到本地的业务，在执行FAR动作之前切换PDR为分流PDR，执行分流PDR的FAR动作。如[图3 下行报文PDR执行过
+    L65 [计费]: 6. PSA1 UPF对分流报文的上下行数据实现计费和业务控制等功能，然后封装N3 GTP，发送给(R)AN。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\故障定位定界指导\问题定位定界方法_71115560.md
+    L62 [RG]: 2. 对于预定义规则，检查UPF上配置的filter、filtergroup是否有误。
+    L63 [计费]: - UL CL分流数据报文转发正常，计费异常。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\概述\How分流_13599409.md
+    L53 [计费]: - 向主/辅锚点UPF下发PDR，通知主/辅锚点在分流过程中收到报文时进行的业务处理（如执行转发或缓存动作、进行带宽控制和计费等）。
+
+  [可能遗漏] 网络部署\业务专题\5G Core ULCL分流解决方案\概述\what分流_13759359.md
+    L20 [计费]: | **主锚点UPF** | PDU session anchor 1 UPF | UE激活PDU会话时<br>**U面给UE分配IP的UPF**<br>，通过N6接口与中心DN连接。用户会话过程中，
+    L21 [计费]: | **辅锚点UPF** | PDU session anchor 2 UPF | 激活分流时，伴随UL CL UPF同时插入的UPF，通过N6接口与本地DN连接。用户会话过程中，作为PDU会话的锚点
+
+
+## 3. FUP (已收录15/15) ##
+  总文件: 15, 已收录: 15, 未收录: 0
+  未收录文件中命中计费关键词: 0
+
+
+## 4. Gx接口 (已收录41/182) ##
+  总文件: 182, 已收录: 41, 未收录: 141
+  未收录文件中命中计费关键词: 60
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\接口协议简介_30780041.md
+    L19 [Usage]: | USAGE_REPORT event-trigger | 值为26 | 值为33 |
+    L22 [Charging]: | CHARGING_CORRELATION_EXCHANGE event-trigger | 值为29 | 值为28 |
+    L25 [Rule]: | Rule-Failure-Code AVP的取值中 | MISSING_FLOW_DESCRIPTION(9) | MISSING_FLOW_INFORMATION(9) |
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\接口错误码_30780310.md
+    L20 [Rule]: | 1001 | DUPLICATE_RULE_NAME | Gx接口错误码-1001 |
+    L33 [Rule]: | 5142 | DIAMETER_PCC_RULE_EVENT | Gx接口错误码-5142 |
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\3GPP-Charging-Characteristics_30780050.md
+    L1 [Charging]: # 3GPP-Charging-Characteristics
+    L10 [Charging]: | 3GPP-Charging-Characteristics | 对于GGSN来说，它包含在创建PDP上下文请求消息（仅在R99和更高版本中可用）中收到的该PDP上下文的计费特征。对于P-GW来说，
+    L10 [计费]: | 3GPP-Charging-Characteristics | 对于GGSN来说，它包含在创建PDP上下文请求消息（仅在R99和更高版本中可用）中收到的该PDP上下文的计费特征。对于P-GW来说，
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Access-Network-Charging-Address_30780063.md
+    L1 [Charging]: # Access-Network-Charging-Address
+    L10 [Charging]: | Access-Network-Charging-Address | 该信元为地址类型，指示接入网络内网络实体计费地址（如GGSN IP地址）。该信元不可以在互操作接口转发。 |
+    L10 [计费]: | Access-Network-Charging-Address | 该信元为地址类型，指示接入网络内网络实体计费地址（如GGSN IP地址）。该信元不可以在互操作接口转发。 |
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Access-Network-Charging-Identifier-Gx_30780065.md
+    L1 [Charging]: # Access-Network-Charging-Identifier-Gx
+    L10 [Charging]: | Access-Network-Charging-Identifier-Gx | 该信元为Grouped类型。在AVP Access-Network-Charging-Identifier-Valu
+    L10 [Rule]: | Access-Network-Charging-Identifier-Gx | 该信元为Grouped类型。在AVP Access-Network-Charging-Identifier-Valu
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Access-Network-Charging-Identifier-Value_30780067.md
+    L1 [Charging]: # Access-Network-Charging-Identifier-Value
+    L10 [Charging]: | Access-Network-Charging-Identifier-Value | 该AVP编码为503，字符串类型，包含一个计费ID（如GCID）。![](Access-Network-Cha
+    L10 [计费]: | Access-Network-Charging-Identifier-Value | 该AVP编码为503，字符串类型，包含一个计费ID（如GCID）。![](Access-Network-Cha
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\ADC-Rule-Definition_30780069.md
+    L1 [Rule]: # ADC-Rule-Definition
+    L10 [Rule]: | ADC-Rule-Definition | ADC-Rule-Definition AVP编码为1094，类型为Grouped，用于定义PCRF下发的ADC规则。ADC-Rule-Name作为AD
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\ADC-Rule-Install_30780070.md
+    L1 [Rule]: # ADC-Rule-Install
+    L10 [Rule]: | ADC-Rule-Install | ADC-Rule-Install AVP编码为1092，类型为Grouped，用于根据PCRF的指示激活、安装、更改ADC规则。安装新的ADC规则或者更改已安
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\ADC-Rule-Remove_30780072.md
+    L1 [Rule]: # ADC-Rule-Remove
+    L10 [Rule]: | ADC-Rule-Remove | ADC-Rule-Remove AVP编码为1093，类型为Grouped，用于按照PCRF指令去激活或删除ADC规则。ADC-Rule-Name AVP指示待
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\ADC-Rule-Report_30780074.md
+    L1 [Rule]: # ADC-Rule-Report
+    L10 [Rule]: | ADC-Rule-Report | ADC-Rule-Report AVP编码为1097，类型为Grouped，用于上报ADC规则状态。ADC-Rule-Report AVP用于上报PCEF无法安
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\AF-Charging-Identifier_30780076.md
+    L1 [Charging]: # AF-Charging-Identifier
+    L10 [Charging]: | AF-Charging-Identifier | 信元为字符串类型，包含AF发送的AF Charging Identifier。该信元用于承载层计费相关。 |
+    L10 [计费]: | AF-Charging-Identifier | 信元为字符串类型，包含AF发送的AF Charging Identifier。该信元用于承载层计费相关。 |
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Application-Detection-Information_30780084.md
+    L10 [Charging]: | Application-Detection-Information | Application-Detection-Information AVP编号为1098，类型为Grouped。当PCRF已
+    L10 [Rule]: | Application-Detection-Information | Application-Detection-Information AVP编号为1098，类型为Grouped。当PCRF已
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Bearer-Usage_30780096.md
+    L1 [Usage]: # Bearer-Usage
+    L10 [Usage]: | Bearer-Usage | Bearer-Usage AVP编码为1000，枚举类型，指示承载如何使用。如果该信元之前未被提供，则表示无特定信息可用。如果该信元已经被提供，它的值将一直有效，直到
+    L10 [配额]: | Bearer-Usage | Bearer-Usage AVP编码为1000，枚举类型，指示承载如何使用。如果该信元之前未被提供，则表示无特定信息可用。如果该信元已经被提供，它的值将一直有效，直到
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\CC-Request-Type_30780103.md
+    L10 [配额]: | CC-Request-Type | CC-Request-Type AVP编码416，枚举类型，包含发送CCR消息的原因值。在所有的CCR消息中必须携带该信元。取值定义如下：- INITIAL_R
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Charging-Correlation-Indicator_30780107.md
+    L1 [Charging]: # Charging-Correlation-Indicator
+    L10 [Charging]: | Charging-Correlation-Indicator | Charging-Correlation-Indicator AVP编码为1073，枚举类型。如果Charging-Rule-In
+    L10 [Rule]: | Charging-Correlation-Indicator | Charging-Correlation-Indicator AVP编码为1073，枚举类型。如果Charging-Rule-In
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Charging-Information_30780108.md
+    L1 [Charging]: # Charging-Information
+    L10 [Charging]: | Charging-Information | Charging-Information为组合类型，包含计费功能地址。AVP Format:Charging-Information :: = < A
+    L10 [计费]: | Charging-Information | Charging-Information为组合类型，包含计费功能地址。AVP Format:Charging-Information :: = < A
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Charging-Rule-Base-Name_30780109.md
+    L1 [Charging]: # Charging-Rule-Base-Name
+    L1 [Rule]: # Charging-Rule-Base-Name
+    L10 [Charging]: | Charging-Rule-Base-Name | Charging-Rule-Base-Name AVP编码为1004，UTF8String类型，指示PCEF上的一个预定PCC规则组。对应P-G
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Charging-Rule-Definition_30780110.md
+    L1 [Charging]: # Charging-Rule-Definition
+    L1 [Rule]: # Charging-Rule-Definition
+    L10 [Charging]: | Charging-Rule-Definition | Charging-Rule-Definition AVP编码为1003，Grouped类型，定义了PCRF发送给PCEF的业务流PCC规则。C
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Charging-Rule-Install_30780111.md
+    L1 [Charging]: # Charging-Rule-Install
+    L1 [Rule]: # Charging-Rule-Install
+    L10 [Charging]: | Charging-Rule-Install | Charging-Rule-Install AVP编码为1001，类型为Grouped，用于激活、安装或者修改PCC规则，由PCRF发送给PCEF。
+
+  [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Gx\相关信元解释\Charging-Rule-Name_30780113.md
+    L1 [Charging]: # Charging-Rule-Name
+    L1 [Rule]: # Charging-Rule-Name
+    L10 [Charging]: | Charging-Rule-Name | Charging-Rule-Name AVP编码为1005，类型为OctetString，定义了一个PCC规则名。对于PCRF提供的PCC规则，Charg
+
+  ... 还有 40 个文件省略
+
+
+## 5. PFCP (N4+Sx, 已收录16/63) ##
+
+  [N4接口] 总: 182, 已收录: 0, 命中关键词的遗漏: 70
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\N4接口协议简介_85720868.md
+      L38 [Report]: | PFCP Node Report Request | UPF->SMF | 节点级信息上报，如UPF的N3/N9接口链路故障信息上报给SMF。 |
+      L39 [Report]: | PFCP Node Report Response | SMF->UPF | 节点级信息上报，如UPF的N3/N9接口链路故障信息上报给SMF。 |
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Additional Usage Reports Information_32788425.md
+      L1 [Usage]: # Additional Usage Reports Information
+      L1 [Report]: # Additional Usage Reports Information
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Aggregated URR ID_86168988.md
+      L1 [URR]: # Aggregated URR ID
+      L7 [URR]: | Aggregated URR ID | 该信元指示一系列URR ID。每个URR ID值应编码为Unsigned32二进制整数值。 |
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Aggregated URRs_85720880.md
+      L1 [URR]: # Aggregated URRs
+      L7 [URR]: | [Aggregated URR ID](Aggregated URR ID_86168988.md) | 必选 | 该信元标识共享信用池的聚合URR ID。 |
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Cause_32788415.md
+      L7 [Usage]: | Cause | 该信元应包含在响应消息中，原因值表示接受或拒绝相应的请求消息。其取值和意义如下：- 0，Reserved<br>- 1，Request accepted (success)<br>
+      L7 [Report]: | Cause | 该信元应包含在响应消息中，原因值表示接受或拒绝相应的请求消息。其取值和意义如下：- 0，Reserved<br>- 1，Request accepted (success)<br>
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Create PDR_86168962.md
+      L12 [URR]: | [URR ID](URR ID_86168984.md) | 可选 | 如果对匹配该PDR的数据包采取测量动作，则该信元应出现。当出现时，该信元应包含与PDR关联的URR标识。可以存在多个相同类型
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Create SRR_18774024.md
+      L10 [Report]: | [Direct Reporting Information](Direct Reporting Information_19519284.md) | 条件必选 | 如果UPF指示支持DRQOS功能
+      L11 [Measure]: | [Traffic Parameter Measurement Control Information](Traffic Parameter Measurement Control Informat
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Create URR_32945593.md
+      L1 [URR]: # Create URR
+      L7 [URR]: | [URR ID](URR ID_86168984.md) | 必选 | 该信元在为该PFCP会话配置的所有URR中标识唯一的URR。 |
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Direct Reporting Information_19519284.md
+      L1 [Report]: # Direct Reporting Information
+      L9 [Report]: | Reporting Flags | 条件必选 | 如果至少一个标志位被设置为“1”，则该信元应存在。- DUPL（重复通知）：- 设置为“1”时，指示UPF应通过N4接口发送并直接发送到事件通知U
+    [可能遗漏] 快速入门\协议与流程\5G Core信令分析\消息及信元\非服务化接口协议\N4接口\相关信元解释\Downlink Data Report_85720888.md
+      L1 [Report]: # Downlink Data Report
+
+  [Sx] 总: 30, 已收录: 0, 命中关键词的遗漏: 15
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释_55572623.md
+      L23 [Report]: | Reporting Triggers | 用户面向控制面发送报告的上报触发条件。 |
+      L25 [Report]: | Report Type | 用户面发送给控制面的报告类型。 |
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释\Application Detection Information_27433650.md
+      L11 [Measure]: | Application Instance ID | 携带该信元时，该信元应识别出对应流量开始/停止上报的应用实例ID。当上报应用流量开始时，若Measurement Information信元中未
+      L12 [Measure]: | Flow Information | 携带该信元时，该信元应包含检测到的应用的流信息。当上报应用流量开始时，若Measurement Information信元中未设置Reduced Applic
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释\Downlink Data Report_27433655.md
+      L1 [Report]: # Downlink Data Report
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释\Error Indication Report_30160859.md
+      L1 [Report]: # Error Indication Report
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释\Query URR_27433651.md
+      L1 [URR]: # Query URR
+      L10 [URR]: | URR ID | 该IE应标识查询的URR。 |
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释\Usage Report (Session Deletion Response)_27433653.md
+      L1 [Usage]: # Usage Report (Session Deletion Response)
+      L1 [Report]: # Usage Report (Session Deletion Response)
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释\Usage Report (Session Modification Response)_27433652.md
+      L1 [Usage]: # Usage Report (Session Modification Response)
+      L1 [Report]: # Usage Report (Session Modification Response)
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关信元解释\Usage Report (Session Report Request)_27433654.md
+      L1 [Usage]: # Usage Report (Session Report Request)
+      L1 [Report]: # Usage Report (Session Report Request)
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关消息解释\PFCP Association Update Request_55587383.md
+      L13 [Report]: - UP System Parameter Report
+    [可能遗漏] 快速入门\协议与流程\EPC信令分析\EPC信令与协议分析\接口协议\Sx\相关消息解释\PFCP Session Deletion Response_55587392.md
+      L19 [Usage]: | Usage Report | 条件必选 | 如果用户面为正在删除的PFCP会话提供了URR，并且用户面开启了该URR的流量使用量测量，则应携带该信元。可携带多个相同类型的信元来表示使用量报表的列表
+      L19 [Report]: | Usage Report | 条件必选 | 如果用户面为正在删除的PFCP会话提供了URR，并且用户面开启了该URR的流量使用量测量，则应携带该信元。可携带多个相同类型的信元来表示使用量报表的列表
+
+
+## 6. 初始配置 (部分收录) ##
+  总文件: 169, 已收录: 17, 命中关键词的遗漏: 93
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\License申请与加载\上传并激活License文件 (U2020_MAE)_16360948.md
+    L19 [CC]: - 已登录U2020 ，或者登录MAE并进入Access子系统。
+    L24 [CC]: 1. 登录U2020 ，或者登录MAE并进入Access子系统。 选择“许可证 > 网元许可证管理 > Cloud NE”，进入“Cloud NE许可证管理”主界面。
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\License申请与加载\打开基本包特性License配置开关_77939614.md
+    L13 [PCC]: - 智能PCC解决方案
+    L13 [CC]: - 智能PCC解决方案
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\了解组网架构与原理\业务组网与逻辑接口介绍\2_3G GPRS典型组网_96206594.md
+    L18 [计费]: | CG：计费网关 | MSC server：移动交换中心服务器 |
+    L23 [CC]: - 无线接入网络RAN（Radio Access Network）：RAN处理所有与无线网络有关的功能。
+    L38 [CC]: | SGSN | Gs | MSC | 当SGSN通过IP承载网与MSC Server相连时，则采用M3UA（对等组网模式）信令连接方式。MSC Server与SGSN两侧的协议栈结构都为BSSAP+
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\了解组网架构与原理\业务组网与逻辑接口介绍\4G EPC典型组网_43045517.md
+    L24 [计费]: | P-GW：PDN网关 | PCRF：策略和计费规则功能 | gNodeB：5G基站 |
+    L24 [策略]: | P-GW：PDN网关 | PCRF：策略和计费规则功能 | gNodeB：5G基站 |
+    L26 [计费]: | UDM：统一数据管理 | PCF：策略和计费规则功能 | NCG：下一代计费网关 |
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\典型配置实例\AMF典型配置实例_77939582.md
+    L49 [CHF]: SET AUTOCONFIG: SWITCHFLAG=FALSE;
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\典型配置实例\MME典型配置实例_24779217.md
+    L35 [CC]: ADD HPLMN: MCC="
+    L39 [CC]: ", CC="
+    L42 [CC]: ADD MMEID: MCC="
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\典型配置实例\NRF典型配置实例_77939594.md
+    L49 [CHF]: SET AUTOCONFIG: SWITCHFLAG=FALSE;
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\典型配置实例\SGSN典型配置实例_24779117.md
+    L37 [CC]: SET SYS:DESC="TEUSNH02",ID=0,NM="TEUSNH02",LOC="TE",SRV="vUSN",MCC="
+    L42 [CC]: ADD HPLMN:MCC="
+    L46 [CC]: ",CC="
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\典型配置实例\SMF典型配置实例_24779297.md
+    L49 [CHF]: SET AUTOCONFIG:SWITCHFLAG=FALSE;
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\基础数据配置\配置NTP时间同步_24739237.md
+    L18 [计费]: - 从NTP服务器同步时间：对于计费类网元（UAMF、USMF），直接配置和NTP服务器对接即可。对于非计费类网元（NRF、NSSF、SMSF），需要和OMC对接，OMC最终和NTP服务器对接来实现时
+    L46 [计费]: | **[ADD NTPSVR](../../../../OM参考/命令/UNC MML命令/平台服务管理/设备管理/NTP服务器管理/增加NTP服务器(ADD NTPSVR)_54491176.md
+    L47 [计费]: | **[ADD NTPSVR](../../../../OM参考/命令/UNC MML命令/平台服务管理/设备管理/NTP服务器管理/增加NTP服务器(ADD NTPSVR)_54491176.md
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置SMF&PGW-C&SGW-C&GGSN_29339433.md
+    L12 [计费]: | 公共配置- 配置本局数据<br>- 配置和UPF的对接（N4/Sxa/Sxb）<br>- 配置到计费系统和策略控制网元的对接<br>- 配置PCC策略和计费 | 5G、4G、2/3G等网络场景 |
+    L12 [PCC]: | 公共配置- 配置本局数据<br>- 配置和UPF的对接（N4/Sxa/Sxb）<br>- 配置到计费系统和策略控制网元的对接<br>- 配置PCC策略和计费 | 5G、4G、2/3G等网络场景 |
+    L12 [策略]: | 公共配置- 配置本局数据<br>- 配置和UPF的对接（N4/Sxa/Sxb）<br>- 配置到计费系统和策略控制网元的对接<br>- 配置PCC策略和计费 | 5G、4G、2/3G等网络场景 |
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\AMF配置流程_82626644.md
+    L13 [PCF]: | SBI接口配置 | 配置和对端NF直连（可选） | 在一些调测场景下，AMF需要和其他控制面服务化网元（SMF、UDM、PCF等）直连，可通过本章节进行配置。 | 请参见<br>[配置和对端NF直
+    L17 [策略]: | 业务配置 | - 精准寻呼功能配置<br>- AMF的NF发现策略配置 | - | 请参考<br>[配置业务](配置业务_82626672.md)<br>。 |
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\和SEPP对接配置_82626668.md
+    L24 [策略]: | [**SET ROAMCOMMPLCY**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/漫游通信模式管理/漫游通信策略管理/设
+    L25 [策略]: | [**SET ROAMCOMMPLCY**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/漫游通信模式管理/漫游通信策略管理/设
+    L29 [CC]: | [**ADD PNFPROFILE**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端N
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\配置AMF本局数据_82467008.md
+    L23 [CC]: | [**ADD NGHPLMN**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/运营商管理/Home PLMN信息管理/增加5G Home PLMN（AD
+    L27 [CC]: | [**ADD NGSRVPLMN**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/运营商管理/Serving PLMN信息管理/增加5G Serving
+    L40 [CC]: | [**ADD AMFINFO**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/本局信息管理/AMF/AMF信息管理/增加AMF信息（ADD AMFINF
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\配置业务_82626672.md
+    L8 [策略]: - AMF可以灵活发现SMF、PCF，可以配置AMF的NF发现策略，详细请参考[NRF解决方案基本功能配置实例（NF发现）](../../../../../业务专题/5G Core NRF解决方案/N
+    L8 [PCF]: - AMF可以灵活发现SMF、PCF，可以配置AMF的NF发现策略，详细请参考[NRF解决方案基本功能配置实例（NF发现）](../../../../../业务专题/5G Core NRF解决方案/N
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\配置到DNS相关数据_82467040.md
+    L13 [CC]: - 在基于Sv接口部署SRVCC的场景下，根据DNS数据解析MSC的IP地址。
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\配置AMF本局数据\运营商信息是什么\PLMN_33698221.md
+    L5 [CC]: PLMN ID由移动国家码（MCC，Mobile Country Code）和移动网络码（MNC，Mobile Network Code）这两部分组成。一组MCC+MNC就唯一标识了一张网络。移动国家
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\配置AMF本局数据\运营商信息是什么\运营商名称_33818153.md
+    L9 [CC]: | 移动国家码 | MCC | 表示PLMN的移动国家码部分，由3位数字组成。移动国家码由ETSI（European Telecommunications Standards Institute）在世
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\配置AMF本局数据\运营商信息是什么\PLMN\PLMN类型_87058578.md
+    L7 [CC]: | Home PLMN | HPLMN | 简单理解就是<br>IMSI/SUPI<br>中的<br>MCC<br>和<br>MNC<br>，用来表征签约用户的归属运营商。一个运营商可以支持多个拥有不
+
+  [可能遗漏] 网络部署\初始配置\UNC初始配置与调测\组网对接配置\配置AMF&MME&SGSN\配置AMF\配置AMF本局数据\运营商信息是什么\PLMN\基于PLMN的网络选择_33818157.md
+    L25 [CC]: 4. **HPLMN**：归属运营商在支持多HPLMN时，也可以在无线网络中广播多个PLMN，并且可以指定它们的优先级，所以当USIM卡中存在EHPLMN List时，优先选择该List中优先级最高的
+    L28 [CC]: 5. **User Controlled PLMN Selector with Access Technology**：记录在USIM卡中的PLMN列表及其支持的无线接入方式，按照优先级顺序排列，用户
+    L29 [CC]: 6. **Operator Controlled PLMN Selector with Access Technology**：记录在USIM卡中的PLMN列表及其支持的无线接入方式，这个列表的信息由
+
+  ... 还有 73 个文件省略
+
+======================================================================
+校验完成

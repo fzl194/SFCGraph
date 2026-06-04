@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在线计费 · 业务图谱实例</title>
+<style>
+/* ============ Design System ============ */
+:root {
+    --blue:#3b82f6; --blue-d:#2563eb; --blue-l:#dbeafe; --blue-bg:#eff6ff;
+    --purple:#7c3aed; --purple-l:#ede9fe; --purple-bg:#f5f3ff;
+    --teal:#0d9488; --teal-l:#ccfbf1; --teal-bg:#f0fdfa;
+    --orange:#d97706; --orange-l:#fef3c7; --orange-bg:#fffbeb;
+    --green:#16a34a; --green-l:#dcfce7; --green-bg:#f0fdf4;
+    --red:#dc2626; --red-l:#fef2f2;
+    --g50:#f8fafc; --g100:#f1f5f9; --g200:#e2e8f0; --g300:#cbd5e1;
+    --g500:#64748b; --g700:#334155; --g900:#0f172a;
+    --radius:14px; --shadow:0 4px 24px rgba(0,0,0,.06);
+    --font:-apple-system,"PingFang SC","Noto Sans SC","Helvetica Neue",Arial,sans-serif;
+    --mono:"SF Mono","Fira Code","Cascadia Code",monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);color:var(--g700);background:var(--g50);line-height:1.7;}
+body::before{content:'';position:fixed;inset:0;z-index:-1;
+    background-image:radial-gradient(circle,#e2e8f0 .8px,transparent .8px);
+    background-size:28px 28px;opacity:.5;}
+
+.page{max-width:980px;margin:0 auto;padding:0 32px;}
+.sec{padding:72px 0 40px;opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.22,1,.36,1);}
+.sec.visible{opacity:1;transform:translateY(0);}
+.sec-num{font-size:12px;font-weight:700;letter-spacing:3px;color:var(--teal);margin-bottom:6px;}
+.sec-title{font-size:clamp(24px,4vw,34px);font-weight:800;color:var(--g900);margin-bottom:10px;line-height:1.25;}
+.sec-desc{font-size:15px;color:var(--g500);max-width:680px;margin-bottom:32px;line-height:1.8;}
+.sec-desc strong{color:var(--g700);}
+.sec-hr{border:none;border-top:1px solid var(--g200);margin:56px 0 0;}
+
+/* ============ Hero ============ */
+#hero{padding:80px 0 48px;opacity:1;transform:none;}
+.hero-badge{display:inline-block;padding:5px 18px;border-radius:20px;font-size:12px;font-weight:600;
+    background:var(--teal-l);color:var(--teal);margin-bottom:24px;border:1px solid var(--teal);}
+.hero-title{font-size:clamp(36px,6vw,56px);font-weight:900;line-height:1.08;
+    background:linear-gradient(135deg,var(--blue-d),var(--teal));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;}
+.hero-sub{font-size:17px;color:var(--g500);max-width:600px;margin-bottom:36px;line-height:1.8;}
+.hero-req{font-size:14px;color:var(--g700);padding:20px 28px;background:white;border-radius:var(--radius);
+    border-left:4px solid var(--teal);box-shadow:var(--shadow);max-width:660px;line-height:1.9;}
+.hero-req em{font-style:normal;color:var(--teal);font-weight:700;}
+
+/* ============ Graph ============ */
+.graph-panel{background:white;border-radius:var(--radius);padding:28px 20px;box-shadow:var(--shadow);
+    margin-bottom:24px;border:1px solid var(--g200);}
+.graph-panel-title{font-size:12px;font-weight:700;color:var(--g500);letter-spacing:2px;margin-bottom:16px;text-align:center;}
+.g-row{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;padding:6px 0;}
+.g-node{display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:12px 20px;border-radius:12px;color:white;min-width:110px;text-align:center;
+    box-shadow:0 3px 14px rgba(0,0,0,.12);transition:all .3s;}
+.g-node .g-label{font-size:14px;font-weight:700;line-height:1.3;}
+.g-node .g-sub{font-size:10px;opacity:.8;margin-top:2px;}
+.g-node .g-id{font-size:9px;opacity:.65;margin-top:3px;font-family:var(--mono);}
+.g-node.biz{background:linear-gradient(135deg,var(--blue),var(--blue-d));}
+.g-node.sup{background:linear-gradient(135deg,var(--purple),#6d28d9);}
+.g-node.bridge{background:linear-gradient(135deg,var(--teal),#0f766e);}
+.g-node.decision{background:linear-gradient(135deg,var(--orange),#b45309);}
+.g-node.config{background:linear-gradient(135deg,var(--green),#15803d);}
+.g-node.task{background:linear-gradient(135deg,#6366f1,#4f46e5);}
+.g-node.skip{background:linear-gradient(135deg,var(--g300),#94a3b8);opacity:.45;text-decoration:line-through;}
+.g-node:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.15);}
+.g-node.highlight{box-shadow:0 0 0 3px rgba(13,148,136,.3),0 4px 20px rgba(0,0,0,.15);padding:16px 24px;}
+.g-conn{display:flex;flex-direction:column;align-items:center;padding:0 5px;color:var(--g500);}
+.g-conn .g-arrow{font-size:20px;line-height:1;color:var(--g300);}
+.g-conn .g-edge-name{font-size:10px;padding:2px 8px;border-radius:10px;background:var(--g100);
+    white-space:nowrap;color:var(--g500);font-weight:600;margin:2px 0;}
+
+/* ============ Table ============ */
+.info-table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;
+    border-radius:10px;overflow:hidden;border:1px solid var(--g200);margin-bottom:24px;}
+.info-table th{background:var(--g100);padding:9px 14px;text-align:left;font-weight:600;color:var(--g700);
+    border-bottom:2px solid var(--g200);font-size:12px;}
+.info-table td{padding:9px 14px;border-bottom:1px solid var(--g100);}
+.info-table tr:last-child td{border-bottom:none;}
+.info-table .fname{font-family:var(--mono);color:var(--blue-d);font-size:12px;}
+.info-table .fval{font-family:var(--mono);color:var(--teal);font-size:12px;font-weight:600;}
+
+/* ============ Sub-section title ============ */
+.sub-title{font-size:16px;font-weight:700;color:var(--g900);margin:28px 0 12px;
+    padding-left:12px;border-left:3px solid var(--teal);}
+
+/* ============ Decision Card ============ */
+.dp-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:24px;}
+@media(min-width:700px){.dp-grid{grid-template-columns:1fr 1fr 1fr;}}
+.dp-card{background:white;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);border-top:3px solid var(--orange);}
+.dp-card .dp-id{font-size:11px;font-weight:700;color:var(--orange);letter-spacing:1px;margin-bottom:4px;}
+.dp-card .dp-q{font-size:14px;font-weight:700;color:var(--g900);margin-bottom:8px;line-height:1.5;}
+.dp-choice{display:inline-block;padding:4px 14px;border-radius:6px;font-size:13px;font-weight:700;
+    background:var(--orange);color:white;margin-bottom:6px;}
+.dp-impact{font-size:12px;color:var(--g500);line-height:1.7;}
+.dp-impact strong{color:var(--g700);}
+
+/* ============ Pipeline ============ */
+.pipeline{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;align-items:center;margin:20px 0;}
+.pipe-node{padding:8px 14px;border-radius:8px;font-size:12px;font-weight:700;color:white;
+    background:linear-gradient(135deg,#6366f1,#4f46e5);box-shadow:0 2px 10px rgba(0,0,0,.1);
+    transition:all .3s;line-height:1.3;text-align:center;min-width:80px;}
+.pipe-node.plan{background:linear-gradient(135deg,var(--blue),var(--blue-d));}
+.pipe-node.exec{background:linear-gradient(135deg,var(--teal),#0f766e);}
+.pipe-node.verify{background:linear-gradient(135deg,var(--purple),#6d28d9);}
+.pipe-node.skip-node{background:var(--g300);opacity:.4;text-decoration:line-through;}
+.pipe-node.gated{border:2px solid var(--orange);}
+.pipe-arrow{font-size:16px;color:var(--g300);line-height:1;}
+.phase-label{margin-bottom:10px;font-size:12px;font-weight:700;letter-spacing:1px;}
+.phase-label.plan-label{color:var(--blue);}
+.phase-label.exec-label{color:var(--teal);}
+.phase-label.verify-label{color:var(--purple);}
+
+/* ============ Chain Row ============ */
+.chain-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px;margin:10px 0;
+    padding:10px;background:var(--g100);border-radius:10px;}
+.chain-obj{padding:7px 12px;border-radius:7px;font-size:11px;font-weight:700;font-family:var(--mono);
+    color:white;background:linear-gradient(135deg,var(--teal),#0f766e);box-shadow:0 2px 8px rgba(0,0,0,.1);}
+.chain-obj.filter{background:linear-gradient(135deg,#6366f1,#4f46e5);}
+.chain-obj.urr{background:linear-gradient(135deg,var(--orange),#b45309);}
+.chain-obj.danger{background:linear-gradient(135deg,var(--red),#b91c1c);}
+.chain-arr{font-size:13px;color:var(--g300);}
+
+/* ============ Code Block ============ */
+.code-block{background:#f8fafc;color:var(--g800);border:1px solid var(--g200);border-radius:var(--radius);padding:20px 24px;
+    font-family:var(--mono);font-size:12px;line-height:1.8;overflow-x:auto;margin:20px 0;
+    box-shadow:var(--shadow);position:relative;white-space:pre;}
+.code-block .code-tag{position:absolute;top:10px;right:14px;padding:2px 8px;border-radius:5px;
+    font-size:10px;font-weight:700;background:rgba(255,255,255,.1);color:rgba(255,255,255,.6);}
+.code-block .comment{color:#94a3b8;}
+.code-block .keyword{color:#3b82f6;}
+.code-block .value{color:#059669;}
+.code-block .cmd{color:#7c3aed;}
+
+/* ============ Feature Stack ============ */
+.feature-tree{background:white;border-radius:var(--radius);padding:20px 24px;box-shadow:var(--shadow);margin:16px 0;}
+.ft-item{padding:6px 0 6px 20px;border-left:2px solid var(--g200);position:relative;font-size:13px;}
+.ft-item::before{content:'';position:absolute;left:-5px;top:14px;width:8px;height:8px;border-radius:50%;background:var(--g300);}
+.ft-item.ft-active{border-left-color:var(--teal);font-weight:700;color:var(--g900);}
+.ft-item.ft-active::before{background:var(--teal);}
+.ft-item.ft-root{border-left-color:var(--blue);font-weight:600;}
+.ft-item.ft-root::before{background:var(--blue);}
+.ft-note{font-size:11px;color:var(--teal);font-weight:600;margin-left:6px;}
+
+/* ============ Verify Card ============ */
+.verify-card{background:white;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);
+    border-left:4px solid var(--purple);margin-bottom:14px;}
+.verify-card .v-step{font-size:11px;font-weight:700;color:var(--purple);letter-spacing:1px;}
+.verify-card .v-title{font-size:15px;font-weight:700;color:var(--g900);margin:4px 0 10px;}
+.verify-card .v-expected{font-size:12px;color:var(--green);font-weight:600;}
+
+/* ============ Tag ============ */
+.tag{display:inline-block;padding:2px 8px;border-radius:5px;font-size:10px;font-weight:700;}
+.tag-l7{background:var(--purple-l);color:var(--purple);}
+.tag-l34{background:var(--blue-l);color:var(--blue-d);}
+.tag-online{background:var(--teal-l);color:var(--teal);}
+.tag-block{background:var(--red-l);color:var(--red);}
+
+/* ============ Side Nav ============ */
+.side-nav{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:100;
+    display:flex;flex-direction:column;gap:2px;padding:8px 0;}
+.side-nav a{display:flex;align-items:center;gap:6px;padding:5px 10px 5px 0;
+    border-radius:5px;font-size:11px;font-weight:500;color:var(--g500);
+    text-decoration:none;transition:all .3s;white-space:nowrap;
+    flex-direction:row-reverse;cursor:pointer;}
+.side-nav a::before{content:'';width:5px;height:5px;border-radius:50%;
+    background:var(--g300);flex-shrink:0;transition:all .3s;}
+.side-nav a:hover{color:var(--teal);}
+.side-nav a:hover::before{background:var(--teal);}
+.side-nav a.active{color:var(--teal);font-weight:700;}
+.side-nav a.active::before{background:var(--teal);box-shadow:0 0 0 3px rgba(13,148,136,.2);transform:scale(1.4);}
+.side-nav a .nav-label{opacity:0;transform:translateX(6px);transition:all .25s;pointer-events:none;}
+.side-nav a:hover .nav-label,.side-nav a.active .nav-label{opacity:1;transform:translateX(0);}
+
+/* ============ Note ============ */
+.note{font-size:12px;color:var(--g500);background:var(--g100);padding:10px 14px;border-radius:8px;
+    margin:12px 0;line-height:1.7;}
+.note strong{color:var(--g700);}
+
+/* ============ Responsive ============ */
+@media(max-width:768px){
+    .page{padding:0 16px;}
+    .sec{padding:48px 0 24px;}
+    .g-node{padding:8px 12px;min-width:80px;}
+    .g-node .g-label{font-size:12px;}
+    .pipeline{gap:3px;}
+    .pipe-node{padding:6px 10px;font-size:10px;min-width:60px;}
+    .side-nav{display:none;}
+    .dp-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav class="side-nav" id="sideNav">
+    <a href="#hero"><span class="nav-label">需求</span></a>
+    <a href="#graph"><span class="nav-label">业务图谱</span></a>
+    <a href="#walk"><span class="nav-label">按图索骥</span></a>
+    <a href="#script"><span class="nav-label">配置脚本</span></a>
+    <a href="#verify"><span class="nav-label">验收</span></a>
+</nav>
+
+<!-- ================================================================ -->
+<!-- Section 1: 需求定义                                                -->
+<!-- ================================================================ -->
+<section class="sec" id="hero" style="opacity:1;transform:none;">
+<div class="page">
+    <div class="hero-badge">在线计费 · 业务图谱实例化</div>
+    <h1 class="hero-title">按图索骥<br>从图谱到脚本</h1>
+    <p class="hero-sub">给定一条在线计费需求，先建立完整的业务图谱，再沿着图谱路径逐步产出配置脚本。</p>
+
+    <div class="hero-req">
+        <strong>需求描述</strong><br><br>
+        某运营商5G用户<em>在线计费</em>策略：<br>
+        &bull; <em>视频业务</em>：访问 video.huawei.com，按<em>流量</em>(VOLUME)计费，RG=100<br>
+        &bull; <em>IM消息</em>：IM类协议流量，按<em>时长</em>(DURATION)计费，RG=200<br>
+        &bull; <em>默认流量</em>：未命中规则的流量，在线计费，RG=300<br>
+        &bull; <em>配额耗尽</em>后阻断(BLOCK)<br><br>
+        匹配方式：视频走L7 URL匹配，IM走L34协议匹配，默认走ANY匹配。
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ================================================================ -->
+<!-- Section 2: 在线计费业务图谱（完整的"地图"）                          -->
+<!-- ================================================================ -->
+<section class="sec" id="graph">
+<div class="page">
+    <div class="sec-num">SECTION 1</div>
+    <h2 class="sec-title">在线计费业务图谱</h2>
+    <p class="sec-desc">这是<strong>在线计费子场景</strong>下的完整业务图谱——12种Schema对象、24条关系边。后续的"按图索骥"就是沿着这张图谱走。</p>
+
+    <!-- 2.1 业务主链 -->
+    <div class="sub-title">1.1 业务主链：BusinessDomain → NetworkScenario → DeliverySolution → Task</div>
+    <div class="graph-panel">
+        <div class="graph-panel-title">业务层主链实例</div>
+        <div class="g-row">
+            <div class="g-node biz highlight">
+                <span class="g-label" style="font-size:16px;">业务感知</span>
+                <span class="g-sub">BusinessDomain</span>
+                <span class="g-id">service-awareness</span>
+            </div>
+            <div class="g-conn">
+                <span class="g-arrow">→</span>
+                <span class="g-edge-name">contains</span>
+            </div>
+            <div class="g-node biz">
+                <span class="g-label">计费场景</span>
+                <span class="g-sub">NetworkScenario</span>
+                <span class="g-id">NS-01</span>
+            </div>
+            <div class="g-conn">
+                <span class="g-arrow">→</span>
+                <span class="g-edge-name">instantiated_as</span>
+            </div>
+            <div class="g-node biz">
+                <span class="g-label">差异化计费</span>
+                <span class="g-sub">DeliverySolution</span>
+                <span class="g-id">DS-01</span>
+            </div>
+            <div class="g-conn">
+                <span class="g-arrow">→</span>
+                <span class="g-edge-name">uses_task</span>
+            </div>
+            <div class="g-node task">
+                <span class="g-label">13个Task</span>
+                <span class="g-sub">EngineeringTask</span>
+                <span class="g-id">5P+5E+3V</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-table">
+        <table class="info-table">
+            <thead><tr><th>层级</th><th>对象</th><th>ID</th><th>核心描述</th></tr></thead>
+            <tbody>
+                <tr><td><span class="tag tag-online">业务域</span></td><td>业务感知</td><td class="fname">service-awareness</td><td>对用户数据报文解析，区分不同业务，实现策略控制和计费</td></tr>
+                <tr><td><span class="tag tag-online">场景</span></td><td>计费场景</td><td class="fname">NS-01</td><td>对不同业务流采用不同计费方式，结合默认计费和配额动作</td></tr>
+                <tr><td><span class="tag tag-online">方案</span></td><td>差异化计费组合方案</td><td class="fname">DS-01</td><td>L7FILTER+Rule优先级裁决+PCC/URR计费链+BLOCK配额动作</td></tr>
+                <tr><td><span class="tag tag-l34">任务</span></td><td>13个工程任务</td><td class="fname">T-PLAN ×5</td><td>规划生效范围、识别条件、Rule优先级、计费对象、配额动作</td></tr>
+                <tr><td><span class="tag tag-l34">任务</span></td><td></td><td class="fname">T-EXEC ×5</td><td>FILTER → L7FILTER → FLOWFILTER → 三件套 → RULE → UserProfile</td></tr>
+                <tr><td><span class="tag tag-l34">任务</span></td><td></td><td class="fname">T-VERIFY ×3</td><td>License验证 → 配置链回查 → PFCP上报验证</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2.2 决策点 -->
+    <div class="sub-title">1.2 决策点（DecisionPoint）</div>
+    <p style="font-size:13px;color:var(--g500);margin-bottom:16px;">决策点是图谱中<strong>会引起后续结构分支</strong>的稳定选择点。每个决策的不同选项会驱动不同的参数、任务和配置对象。</p>
+
+    <div class="dp-grid">
+        <div class="dp-card">
+            <div class="dp-id">DP-01</div>
+            <div class="dp-q">计费方式选择？</div>
+            <div class="dp-impact" style="margin-bottom:8px;">
+                <strong>可选：</strong>在线 / 离线 / 融合<br>
+                <strong>挂载于：</strong>NS-01
+            </div>
+        </div>
+        <div class="dp-card">
+            <div class="dp-id">DP-02</div>
+            <div class="dp-q">配额耗尽后动作？</div>
+            <div class="dp-impact" style="margin-bottom:8px;">
+                <strong>可选：</strong>BLOCK / REDIRECT / 继续计费<br>
+                <strong>挂载于：</strong>DS-01
+            </div>
+        </div>
+        <div class="dp-card">
+            <div class="dp-id">DP-03</div>
+            <div class="dp-q">匹配层次选择？</div>
+            <div class="dp-impact" style="margin-bottom:8px;">
+                <strong>可选：</strong>L7 URL / L34协议 / 混合<br>
+                <strong>挂载于：</strong>DS-01
+            </div>
+        </div>
+    </div>
+
+    <!-- 2.3 支撑对象 -->
+    <div class="sub-title">1.3 支撑层</div>
+    <div class="graph-panel">
+        <div class="graph-panel-title">方案到支撑对象的关系</div>
+        <div class="g-row">
+            <div class="g-node biz" style="padding:14px 22px;">
+                <span class="g-label" style="font-size:15px;">差异化计费</span>
+                <span class="g-sub">DS-01</span>
+            </div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">involves</span></div>
+            <div class="g-node sup"><span class="g-label">4个参与方</span><span class="g-sub">Participant</span></div>
+        </div>
+        <div class="g-row">
+            <div style="width:90px;"></div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">applies_to</span></div>
+            <div class="g-node sup"><span class="g-label">3个范围</span><span class="g-sub">Scope</span></div>
+        </div>
+        <div class="g-row">
+            <div style="width:180px;"></div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">has_decision</span></div>
+            <div class="g-node decision"><span class="g-label">3个决策点</span><span class="g-sub">DecisionPoint</span></div>
+        </div>
+        <div class="g-row">
+            <div style="width:270px;"></div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">validated_by</span></div>
+            <div class="g-node sup"><span class="g-label">1个验收计划</span><span class="g-sub">ValidationPlan</span></div>
+        </div>
+        <div class="g-row">
+            <div style="width:360px;"></div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">governed_by</span></div>
+            <div class="g-node sup"><span class="g-label">6条规则</span><span class="g-sub">BusinessRule</span></div>
+        </div>
+    </div>
+
+    <table class="info-table">
+        <thead><tr><th>类型</th><th>对象</th><th>角色/职责</th></tr></thead>
+        <tbody>
+            <tr><td>参与方</td><td><strong>SMF</strong></td><td>控制面：编排策略、配额管理、Gy接口交互</td></tr>
+            <tr><td>参与方</td><td><strong>UPF</strong></td><td>用户面：业务识别、流量统计、N4上报</td></tr>
+            <tr><td>参与方</td><td><strong>CHF/OCS</strong></td><td>外部系统：配额分配、实时扣费、重授权</td></tr>
+            <tr><td>参与方</td><td><strong>UE/用户</strong></td><td>终端：产生待计费业务流</td></tr>
+            <tr><td>生效范围</td><td><strong>S-01</strong> 用户级</td><td>所有开通数据业务的5G用户</td></tr>
+            <tr><td>生效范围</td><td><strong>S-02</strong> DNN级</td><td>DNN=internet 的会话</td></tr>
+            <tr><td>生效范围</td><td><strong>S-06</strong> UserProfile</td><td>up_online_charging 承载规则绑定</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 2.4 桥接层 -->
+    <div class="sub-title">1.4 桥接层：特性栈 + 配置对象</div>
+    <div class="feature-tree">
+        <div class="attr-table-title" style="margin-bottom:10px;font-size:13px;font-weight:700;color:var(--g700);">Feature 依赖栈（DS-01 → requires_capability → Feature）</div>
+        <div class="ft-item ft-root">GWFD-110101 SA-Basic <span class="ft-note">License: LKV3G5SABS01</span></div>
+        <div class="ft-item ft-root" style="margin-left:20px;">GWFD-020351 PCC基本功能 <span class="ft-note">License: LKV3G5PCCB01</span></div>
+        <div class="ft-item ft-active" style="margin-left:20px;">GWFD-020301 内容计费基本功能 <span class="ft-note">License: LKV3G5BCBC01</span></div>
+        <div class="ft-item ft-active" style="margin-left:40px;">GWFD-020300 <strong>在线计费</strong> <span class="ft-note">★ License: LKV3G5OLCH01</span></div>
+        <div class="ft-item ft-active" style="margin-left:40px;">GWFD-020303 基于业务流量的计费(VOLUME) <span class="ft-note">→ 视频+默认</span></div>
+        <div class="ft-item ft-active" style="margin-left:40px;">GWFD-020302 基于业务时长的计费(DURATION) <span class="ft-note">→ IM</span></div>
+    </div>
+
+    <table class="info-table">
+        <thead><tr><th>配置对象</th><th>链位置</th><th>所属侧</th><th>业务作用</th></tr></thead>
+        <tbody>
+            <tr><td class="fname">FILTER</td><td>识别层</td><td>UPF</td><td>L34 三四层过滤条件</td></tr>
+            <tr><td class="fname">L7FILTER</td><td>识别层</td><td>UPF</td><td>L7 七层过滤条件(URL匹配)</td></tr>
+            <tr><td class="fname">FLOWFILTER</td><td>识别层</td><td>UPF</td><td>流过滤器，组合FILTER+L7FILTER+协议绑定</td></tr>
+            <tr><td class="fname">FLTBINDFLOWF</td><td>识别层</td><td>UPF</td><td>FILTER到FLOWFILTER的绑定</td></tr>
+            <tr><td class="fname">PROTBINDFLOWF</td><td>识别层</td><td>UPF</td><td>协议/L7到FLOWFILTER的绑定</td></tr>
+            <tr><td class="fname">URR</td><td>计费对象层</td><td>UPF</td><td>使用量报告规则(在线/离线, 流量/时长)</td></tr>
+            <tr><td class="fname">URRGROUP</td><td>计费组层</td><td>UPF</td><td>URR组(上下行绑定同一URR)</td></tr>
+            <tr><td class="fname">PCCPOLICYGRP</td><td>策略组层</td><td>UDG</td><td>PCC策略组(绑定URRGROUP+可选PCCACTIONPROP)</td></tr>
+            <tr><td class="fname">PCCACTIONPROP</td><td>动作层</td><td>UDG</td><td>配额耗尽动作(BLOCK: GATINGSTATUS=CLS)</td></tr>
+            <tr><td class="fname">RULE</td><td>规则层</td><td>UDG</td><td>规则(FLOWFILTER+PCCPOLICYGRP+优先级)</td></tr>
+            <tr><td class="fname">USERPROFILE</td><td>用户策略层</td><td>UDG</td><td>用户策略档案，承载RULEBINDING和默认URR组</td></tr>
+            <tr><td class="fname">RULEBINDING</td><td>绑定层</td><td>UDG</td><td>RULE到USERPROFILE的绑定</td></tr>
+            <tr><td class="fname">URRGRPBINDING</td><td>绑定层</td><td>UDG</td><td>默认URR组绑定(DFTURRGRPNAME)</td></tr>
+            <tr><td class="fname">REFRESHSRV</td><td>刷新层</td><td>UDG</td><td>配置生效刷新(必须最后执行)</td></tr>
+            <tr><td class="fname">LICENSESWITCH</td><td>License层</td><td>UDG</td><td>4个License开关(必须ENABLE)</td></tr>
+        </tbody>
+    </table>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ================================================================ -->
+<!-- Section 3: 按图索骥                                               -->
+<!-- ================================================================ -->
+<section class="sec" id="walk">
+<div class="page">
+    <div class="sec-num">SECTION 2</div>
+    <h2 class="sec-title">按图索骥</h2>
+    <p class="sec-desc">沿着业务图谱的路径，从需求出发，经过<strong>决策→规划→执行</strong>，逐步走到最终的配置脚本。</p>
+
+    <!-- Step 1: 定位路径 -->
+    <div class="sub-title">Step 1：定位路径 — 需求匹配到图谱节点</div>
+    <div class="note">
+        "5G用户在线计费" → 匹配 <strong>BusinessDomain(业务感知)</strong> → 匹配 <strong>NS-01(计费场景)</strong> → 实例化为 <strong>DS-01(差异化计费组合方案)</strong>
+    </div>
+    <div class="graph-panel">
+        <div class="graph-panel-title">需求 → 图谱定位</div>
+        <div class="g-row">
+            <div style="padding:12px 18px;border-radius:10px;background:var(--teal-l);border:1px solid var(--teal);font-size:13px;font-weight:600;color:var(--teal);text-align:center;">
+                需求：3条业务<br>在线计费+配额耗尽BLOCK
+            </div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">匹配</span></div>
+            <div class="g-node biz highlight">
+                <span class="g-label">业务感知</span><span class="g-id">BD</span>
+            </div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">contains</span></div>
+            <div class="g-node biz">
+                <span class="g-label">计费场景</span><span class="g-id">NS-01</span>
+            </div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">instantiated_as</span></div>
+            <div class="g-node biz">
+                <span class="g-label">差异化计费</span><span class="g-id">DS-01</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 2: 确定决策 -->
+    <div class="sub-title">Step 2：确定决策 — DecisionPoint 的选项</div>
+    <p style="font-size:13px;color:var(--g500);margin-bottom:12px;">DS-01 包含3个决策点。根据需求确定每个决策点的选择，这些选择会<strong>结构化地驱动</strong>后续的参数值和任务编排。</p>
+
+    <div class="dp-grid">
+        <div class="dp-card">
+            <div class="dp-id">DP-01 · 计费方式选择</div>
+            <div class="dp-q">当前采用哪种计费方式？</div>
+            <div class="dp-choice">在线计费</div>
+            <div class="dp-impact">
+                <strong>parameter_binding：</strong><br>
+                URR.USAGERPTMODE=ONLINE<br>
+                ONLMETERINGTYPE 生效<br>
+                <strong>gates：</strong><br>
+                T-PLAN-005(配额规划) → active
+            </div>
+        </div>
+        <div class="dp-card">
+            <div class="dp-id">DP-02 · 配额耗尽动作</div>
+            <div class="dp-q">在线计费配额耗尽后如何处理？</div>
+            <div class="dp-choice">BLOCK</div>
+            <div class="dp-impact">
+                <strong>parameter_binding：</strong><br>
+                需创建 PCCACTIONPROP<br>
+                GATINGSTATUS=CLS(阻断)<br>
+                PPG_default 绑定 pccact_block
+            </div>
+        </div>
+        <div class="dp-card">
+            <div class="dp-id">DP-03 · 匹配层次</div>
+            <div class="dp-q">业务流通过什么方式匹配？</div>
+            <div class="dp-choice">混合匹配</div>
+            <div class="dp-impact">
+                <strong>gates：</strong><br>
+                视频：L7 URL → L7FILTER active<br>
+                IM：L34 协议 → PROTBINDFLOWF<br>
+                默认：L34 ANY → 仅 FILTER<br>
+                T-EXEC-001(IPLIST) → <strong>skip</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- parameter_binding 图 -->
+    <div class="graph-panel">
+        <div class="graph-panel-title">决策驱动参数绑定（parameter_binding）</div>
+        <div style="text-align:center;font-size:12px;color:var(--g500);margin-bottom:12px;">
+            DecisionPoint 的选项结构化地驱动 ConfigObject 的参数赋值
+        </div>
+        <div class="g-row">
+            <div class="g-node decision"><span class="g-label">DP-01</span><span class="g-sub">在线计费</span></div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">parameter_binding</span></div>
+            <div class="g-node config"><span class="g-label">URR</span><span class="g-id">USAGERPTMODE=ONLINE</span></div>
+            <div class="g-conn"><span class="g-arrow">→</span><span class="g-edge-name">differentiates</span></div>
+            <div class="g-node bridge"><span class="g-label">Feature</span><span class="g-id">VOLUME / DURATION</span></div>
+        </div>
+    </div>
+
+    <!-- Step 3: 规划阶段 -->
+    <div class="sub-title">Step 3：规划阶段 — Plan Tasks</div>
+    <p style="font-size:13px;color:var(--g500);margin-bottom:12px;">5个Plan任务依次完成后，形成以下<strong>整体规划结果</strong>。后续Execute阶段严格按照此规划执行。</p>
+
+    <div class="pipeline" style="margin-bottom:16px;">
+        <div class="pipe-node plan">T-PLAN-001<br><span style="font-size:9px;opacity:.8;">规划生效范围</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node plan">T-PLAN-002<br><span style="font-size:9px;opacity:.8;">规划识别条件</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node plan">T-PLAN-003<br><span style="font-size:9px;opacity:.8;">规划Rule优先级</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node plan">T-PLAN-004<br><span style="font-size:9px;opacity:.8;">规划计费对象</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node plan gated">T-PLAN-005<br><span style="font-size:9px;opacity:.8;">规划配额动作</span></div>
+    </div>
+    <div class="note">T-PLAN-005 受 DP-01(在线计费) gates 驱动 → active。离线计费场景下此Task为skip。</div>
+
+    <!-- 整体规划总表 -->
+    <table class="info-table">
+        <thead><tr><th>规划维度</th><th colspan="4">规划结果</th></tr></thead>
+        <tbody>
+            <tr>
+                <td style="font-weight:600;white-space:nowrap;">生效范围</td>
+                <td colspan="4">UserProfile=<span class="fval">up_online_charging</span>，DNN=<span class="fval">internet</span>，默认URR组=<span class="fval">urrg_default</span></td>
+            </tr>
+            <tr>
+                <td style="font-weight:600;">3套计费三件套</td>
+                <td style="font-size:12px;">
+                    <strong>业务</strong><br>—<br>
+                    <span class="tag tag-l7">视频</span><br>
+                    <span class="tag tag-l34">IM</span><br>
+                    <span class="tag tag-online">默认</span>
+                </td>
+                <td style="font-size:12px;">
+                    <strong>URR</strong><br>—<br>
+                    <span class="fname">urr_video</span><br>ONLINE VOLUME RG=100<br>
+                    <span class="fname">urr_im</span><br>ONLINE DURATION RG=200<br>
+                    <span class="fname">urr_default</span><br>ONLINE VOLUME RG=300
+                </td>
+                <td style="font-size:12px;">
+                    <strong>URRGROUP</strong><br>—<br>
+                    <span class="fname">urrg_video</span><br>—<br>
+                    <span class="fname">urrg_im</span><br>—<br>
+                    <span class="fname">urrg_default</span><br>—
+                </td>
+                <td style="font-size:12px;">
+                    <strong>PCCPOLICYGRP</strong><br>—<br>
+                    <span class="fname">PPG_video</span><br>—<br>
+                    <span class="fname">PPG_im</span><br>—<br>
+                    <span class="fname">PPG_default</span><br>+pccact_block
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight:600;">3条Rule</td>
+                <td colspan="4" style="font-size:12px;">
+                    <span class="fname">Rule_video</span>(FLOWFILTER=<span class="fval">ff_video</span>, PCCPOLICYGRP=<span class="fval">PPG_video</span>, PRIORITY=<span class="fval">100</span>)<br>
+                    <span class="fname">Rule_im</span>(FLOWFILTER=<span class="fval">ff_im</span>, PCCPOLICYGRP=<span class="fval">PPG_im</span>, PRIORITY=<span class="fval">200</span>)<br>
+                    <span class="fname">Rule_default</span>(FLOWFILTER=<span class="fval">ff_any</span>, PCCPOLICYGRP=<span class="fval">PPG_default</span>, PRIORITY=<span class="fval">65000</span>)
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight:600;">3组识别条件</td>
+                <td colspan="4" style="font-size:12px;">
+                    视频：L7FILTER(<span class="fval">l7_video</span>, URL=video.huawei.com/*) → <span class="fname">ff_video</span>(FILTER=filter_any + PROTBINDFLOWF=http+l7_video)<br>
+                    IM：L34协议 → <span class="fname">ff_im</span>(FILTER=filter_im + PROTBINDFLOWF=im)<br>
+                    默认：L34 ANY → <span class="fname">ff_any</span>(FILTER=filter_any)
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight:600;">配额动作</td>
+                <td colspan="4">PCCACTIONPROP=<span class="fval">pccact_block</span>(GATINGSTATUS=CLS)，绑定到PPG_default → 配额耗尽后流量被<strong style="color:var(--red);">阻断</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Step 4: 执行阶段 -->
+    <div class="sub-title">Step 4：执行阶段 — Execute Tasks</div>
+    <p style="font-size:13px;color:var(--g500);margin-bottom:12px;">受 gates 门控影响，T-EXEC-001 跳过，T-EXEC-003 仅创建1个 L7FILTER。</p>
+
+    <div class="phase-label exec-label">EXECUTE 阶段</div>
+    <div class="pipeline">
+        <div class="pipe-node exec skip-node">T-EXEC-001<br><span style="font-size:9px;">SKIP</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node exec">T-EXEC-002<br><span style="font-size:9px;opacity:.8;">FILTER</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node exec gated">T-EXEC-003<br><span style="font-size:9px;opacity:.8;">L7FILTER×1</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node exec">T-EXEC-004<br><span style="font-size:9px;opacity:.8;">FLOWFILTER</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node exec">T-EXEC-005<br><span style="font-size:9px;opacity:.8;">三件套+BLOCK</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node exec">T-EXEC-008<br><span style="font-size:9px;opacity:.8;">RULE</span></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-node exec">T-EXEC-010<br><span style="font-size:9px;opacity:.8;">UserProfile</span></div>
+    </div>
+    <div class="note">
+        <strong>gates 门控结果：</strong>T-EXEC-001(IPLIST) skip（本案例无IP匹配需求）｜T-EXEC-003 仅创建1个L7FILTER（仅视频需L7）
+    </div>
+
+    <!-- T-EXEC-002 -->
+    <div style="background:white;border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow);margin-bottom:14px;border-left:4px solid var(--teal);">
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;">T-EXEC-002 · 配置三四层过滤条件</div>
+        <div style="font-size:12px;color:var(--g500);margin:4px 0 10px;">创建2个FILTER对象，为后续FLOWFILTER提供L34匹配基础</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="cmd">ADD FILTER</span>:FILTERNAME=<span class="value">"filter_any"</span>,L34PROTTYPE=STRING,L34PROTOCOL=ANY;
+<span class="cmd">ADD FILTER</span>:FILTERNAME=<span class="value">"filter_im"</span>,L34PROTTYPE=STRING,L34PROTOCOL=ANY;
+        </div>
+        <div style="font-size:11px;color:var(--g500);">产出：<span class="fname">filter_any</span>(ANY匹配，供视频和默认使用) + <span class="fname">filter_im</span>(IM协议匹配)</div>
+    </div>
+
+    <!-- T-EXEC-003 -->
+    <div style="background:white;border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow);margin-bottom:14px;border-left:4px solid var(--orange);">
+        <div style="font-size:11px;font-weight:700;color:var(--orange);letter-spacing:1px;">T-EXEC-003 · 配置七层过滤条件 <span class="tag tag-l7">gated</span></div>
+        <div style="font-size:12px;color:var(--g500);margin:4px 0 10px;">DP-03门控：仅视频业务需要L7FILTER，本案例仅创建1个</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="cmd">ADD L7FILTER</span>:L7FILTERNAME=<span class="value">"l7_video"</span>,URLTYPE=URL,URL=<span class="value">"video.huawei.com/*"</span>;
+        </div>
+        <div style="font-size:11px;color:var(--g500);">产出：<span class="fname">l7_video</span>(匹配 video.huawei.com 的URL)</div>
+    </div>
+
+    <!-- T-EXEC-004 -->
+    <div style="background:white;border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow);margin-bottom:14px;border-left:4px solid var(--teal);">
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;">T-EXEC-004 · 配置流过滤器与绑定</div>
+        <div style="font-size:12px;color:var(--g500);margin:4px 0 10px;">创建3个FLOWFILTER，分别绑定FILTER和协议/L7条件</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="comment">// 视频业务：L34 ANY + L7 URL</span>
+<span class="cmd">ADD FLOWFILTER</span>:FLOWFILTERNAME=<span class="value">"ff_video"</span>;
+<span class="cmd">ADD FLTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_video"</span>,FILTERNAME=<span class="value">"filter_any"</span>;
+<span class="cmd">ADD PROTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_video"</span>,PROTOCOLNAME=<span class="value">"http"</span>,L7FILTERNAME=<span class="value">"l7_video"</span>;
+
+<span class="comment">// IM消息：L34 + 协议绑定(无L7)</span>
+<span class="cmd">ADD FLOWFILTER</span>:FLOWFILTERNAME=<span class="value">"ff_im"</span>;
+<span class="cmd">ADD FLTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_im"</span>,FILTERNAME=<span class="value">"filter_im"</span>;
+<span class="cmd">ADD PROTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_im"</span>,PROTOCOLNAME=<span class="value">"im"</span>;
+
+<span class="comment">// 默认流量：仅L34 ANY</span>
+<span class="cmd">ADD FLOWFILTER</span>:FLOWFILTERNAME=<span class="value">"ff_any"</span>;
+<span class="cmd">ADD FLTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_any"</span>,FILTERNAME=<span class="value">"filter_any"</span>;
+        </div>
+        <div style="font-size:11px;color:var(--g500);">产出：<span class="fname">ff_video</span>(视频) + <span class="fname">ff_im</span>(IM) + <span class="fname">ff_any</span>(默认)，共3个FLOWFILTER + 3个FLTBINDFLOWF + 2个PROTBINDFLOWF</div>
+    </div>
+
+    <!-- T-EXEC-005 -->
+    <div style="background:white;border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow);margin-bottom:14px;border-left:4px solid var(--teal);">
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;">T-EXEC-005 · 配置计费动作链（3套三件套 + BLOCK）</div>
+        <div style="font-size:12px;color:var(--g500);margin:4px 0 10px;">每条业务创建 URR→URRGROUP→PCCPOLICYGRP 三件套；DP-02=BLOCK 额外创建 PCCACTIONPROP</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="comment">// 视频业务：按流量在线计费 (DP-01=ONLINE, Feature=VOLUME)</span>
+<span class="cmd">ADD URR</span>:URRNAME=<span class="value">"urr_video"</span>,URRID=1001,USAGERPTMODE=ONLINE,ONLMETERINGTYPE=VOLUME,RG=100;
+<span class="cmd">ADD URRGROUP</span>:URRGROUPNAME=<span class="value">"urrg_video"</span>,UPURRNAME1=<span class="value">"urr_video"</span>,DOWNURRNAME1=<span class="value">"urr_video"</span>;
+<span class="cmd">ADD PCCPOLICYGRP</span>:PCCPOLICYGRNM=<span class="value">"PPG_video"</span>,URRGROUPNAME=<span class="value">"urrg_video"</span>;
+
+<span class="comment">// IM消息：按时长在线计费 (DP-01=ONLINE, Feature=DURATION)</span>
+<span class="cmd">ADD URR</span>:URRNAME=<span class="value">"urr_im"</span>,URRID=1002,USAGERPTMODE=ONLINE,ONLMETERINGTYPE=DURATION,RG=200;
+<span class="cmd">ADD URRGROUP</span>:URRGROUPNAME=<span class="value">"urrg_im"</span>,UPURRNAME1=<span class="value">"urr_im"</span>,DOWNURRNAME1=<span class="value">"urr_im"</span>;
+<span class="cmd">ADD PCCPOLICYGRP</span>:PCCPOLICYGRNM=<span class="value">"PPG_im"</span>,URRGROUPNAME=<span class="value">"urrg_im"</span>;
+
+<span class="comment">// 默认计费 + 配额耗尽BLOCK (DP-02=BLOCK)</span>
+<span class="cmd">ADD URR</span>:URRNAME=<span class="value">"urr_default"</span>,URRID=1003,USAGERPTMODE=ONLINE,ONLMETERINGTYPE=VOLUME,RG=300;
+<span class="cmd">ADD URRGROUP</span>:URRGROUPNAME=<span class="value">"urrg_default"</span>,UPURRNAME1=<span class="value">"urr_default"</span>,DOWNURRNAME1=<span class="value">"urr_default"</span>;
+<span class="cmd">ADD PCCACTIONPROP</span>:PCCACTPROPNM=<span class="value">"pccact_block"</span>,GATINGSTATUS=CLS;
+<span class="cmd">ADD PCCPOLICYGRP</span>:PCCPOLICYGRNM=<span class="value">"PPG_default"</span>,URRGROUPNAME=<span class="value">"urrg_default"</span>,PCCACTPROPNAME=<span class="value">"pccact_block"</span>;
+        </div>
+        <div style="font-size:11px;color:var(--g500);">产出：3个URR + 3个URRGROUP + 3个PCCPOLICYGRP + 1个PCCACTIONPROP(门控策略)</div>
+    </div>
+
+    <!-- T-EXEC-008 -->
+    <div style="background:white;border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow);margin-bottom:14px;border-left:4px solid var(--teal);">
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;">T-EXEC-008 · 配置Rule</div>
+        <div style="font-size:12px;color:var(--g500);margin:4px 0 10px;">创建3条RULE，每条绑定FLOWFILTER和PCCPOLICYGRP，按优先级裁决</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="cmd">ADD RULE</span>:RULENAME=<span class="value">"Rule_video"</span>,POLICYTYPE=PCC,FILTERINGMODE=FLOWFILTER,FLOWFILTERNAME=<span class="value">"ff_video"</span>,PRIORITY=100,POLICYNAME=<span class="value">"PPG_video"</span>;
+<span class="cmd">ADD RULE</span>:RULENAME=<span class="value">"Rule_im"</span>,POLICYTYPE=PCC,FILTERINGMODE=FLOWFILTER,FLOWFILTERNAME=<span class="value">"ff_im"</span>,PRIORITY=200,POLICYNAME=<span class="value">"PPG_im"</span>;
+<span class="cmd">ADD RULE</span>:RULENAME=<span class="value">"Rule_default"</span>,POLICYTYPE=PCC,FILTERINGMODE=FLOWFILTER,FLOWFILTERNAME=<span class="value">"ff_any"</span>,PRIORITY=65000,POLICYNAME=<span class="value">"PPG_default"</span>;
+        </div>
+        <div style="font-size:11px;color:var(--g500);">产出：<span class="fname">Rule_video</span>(P100) + <span class="fname">Rule_im</span>(P200) + <span class="fname">Rule_default</span>(P65000兜底)</div>
+    </div>
+
+    <!-- T-EXEC-010 -->
+    <div style="background:white;border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow);margin-bottom:14px;border-left:4px solid var(--teal);">
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;">T-EXEC-010 · 配置UserProfile与Rule绑定</div>
+        <div style="font-size:12px;color:var(--g500);margin:4px 0 10px;">创建UserProfile、设置默认URR组、绑定3条Rule、刷新生效</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="cmd">ADD USERPROFILE</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>;
+<span class="cmd">SET URRGRPBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,DFTURRGRPNAME=<span class="value">"urrg_default"</span>,DFTSIGURRGNAME=<span class="value">"urrg_default"</span>;
+<span class="cmd">ADD RULEBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,POLICYTYPE=PCC,RULENAME=<span class="value">"Rule_video"</span>;
+<span class="cmd">ADD RULEBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,POLICYTYPE=PCC,RULENAME=<span class="value">"Rule_im"</span>;
+<span class="cmd">ADD RULEBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,POLICYTYPE=PCC,RULENAME=<span class="value">"Rule_default"</span>;
+<span class="cmd">SET REFRESHSRV</span>:REFRESHTYPE=ALL;
+        </div>
+        <div style="font-size:11px;color:var(--g500);">产出：<span class="fname">up_online_charging</span>(USERPROFILE) + 3个RULEBINDING + URRGRPBINDING + REFRESHSRV</div>
+    </div>
+
+    <!-- Step 5: 配置对象链 -->
+    <div class="sub-title">Step 5：配置对象链 — composes 组合关系</div>
+    <p style="font-size:13px;color:var(--g500);margin-bottom:12px;">以<strong>视频业务</strong>为例，展示从USERPROFILE到URR的完整对象依赖链。</p>
+
+    <div class="graph-panel">
+        <div class="graph-panel-title">视频业务完整对象链</div>
+        <div style="display:flex;flex-direction:column;gap:4px;align-items:center;">
+            <div class="chain-row">
+                <div class="chain-obj" style="background:linear-gradient(135deg,var(--purple),#6d28d9);">USERPROFILE<br><span style="font-size:9px;opacity:.8;">up_online_charging</span></div>
+            </div>
+            <div style="font-size:12px;color:var(--g300);">▼ RULEBINDING</div>
+            <div class="chain-row">
+                <div class="chain-obj">RULE<br><span style="font-size:9px;opacity:.8;">Rule_video</span></div>
+            </div>
+            <div style="font-size:12px;color:var(--g300);">├── FLOWFILTERNAME &nbsp;&nbsp;&nbsp;└── POLICYNAME</div>
+            <div class="chain-row">
+                <div class="chain-obj filter">FLOWFILTER<br><span style="font-size:9px;opacity:.8;">ff_video</span></div>
+                <div class="chain-arr">&nbsp;&nbsp;&nbsp;</div>
+                <div class="chain-obj urr">PCCPOLICYGRP<br><span style="font-size:9px;opacity:.8;">PPG_video</span></div>
+            </div>
+            <div style="font-size:12px;color:var(--g300);">├── PROTBINDFLOWF &nbsp; └── URRGROUPNAME</div>
+            <div class="chain-row">
+                <div class="chain-obj filter">L7FILTER<br><span style="font-size:9px;opacity:.8;">l7_video</span></div>
+                <div class="chain-arr">&nbsp;&nbsp;&nbsp;</div>
+                <div class="chain-obj urr">URRGROUP<br><span style="font-size:9px;opacity:.8;">urrg_video</span></div>
+            </div>
+            <div style="font-size:12px;color:var(--g300);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── UPURRNAME1</div>
+            <div class="chain-row">
+                <div style="width:100px;"></div>
+                <div class="chain-obj urr">URR<br><span style="font-size:9px;opacity:.8;">urr_video</span><br><span style="font-size:8px;opacity:.7;">ONLINE VOLUME RG=100</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 默认 + BLOCK -->
+    <div class="graph-panel" style="border-left:4px solid var(--red);">
+        <div class="graph-panel-title" style="color:var(--red);">默认业务 + 配额耗尽 BLOCK（DP-02 驱动）</div>
+        <div class="g-row">
+            <div class="g-node config"><span class="g-label">PPG_default</span><span class="g-sub">PCCPOLICYGRP</span></div>
+            <div class="g-conn">
+                <span class="g-arrow">→</span>
+                <span class="g-edge-name" style="background:var(--red-l);color:var(--red);">composes (0:1)</span>
+            </div>
+            <div class="g-node" style="background:linear-gradient(135deg,var(--red),#b91c1c);">
+                <span class="g-label">pccact_block</span><span class="g-sub">PCCACTIONPROP</span>
+                <span class="g-id">GATINGSTATUS=CLS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- output_propagates_to -->
+    <div class="sub-title">Task 间输出传播（output_propagates_to）</div>
+    <div class="graph-panel">
+        <div class="graph-panel-title">上游Task创建的对象名称 → 下游Task的引用参数</div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:center;">
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:center;">
+                <div class="g-node task" style="padding:8px 14px;"><span class="g-label" style="font-size:11px;">T-PLAN-004</span></div>
+                <span style="font-size:11px;color:var(--g500);">──name──→</span>
+                <div class="g-node task" style="padding:8px 14px;"><span class="g-label" style="font-size:11px;">T-EXEC-005</span></div>
+                <span style="font-size:11px;color:var(--g500);">──PPG_name──→</span>
+                <div class="g-node task" style="padding:8px 14px;"><span class="g-label" style="font-size:11px;">T-EXEC-008</span></div>
+                <span style="font-size:11px;color:var(--g500);">──Rule_name──→</span>
+                <div class="g-node task" style="padding:8px 14px;"><span class="g-label" style="font-size:11px;">T-EXEC-010</span></div>
+            </div>
+            <div style="font-size:11px;color:var(--teal);text-align:center;">
+                urr_video → PPG_video → Rule_video.POLICYNAME → RULEBINDING.RULENAME
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ================================================================ -->
+<!-- Section 4: 配置脚本                                               -->
+<!-- ================================================================ -->
+<section class="sec" id="script">
+<div class="page">
+    <div class="sec-num">SECTION 3</div>
+    <h2 class="sec-title">最终配置脚本</h2>
+    <p class="sec-desc">可执行MML脚本，按依赖顺序排列。注释行以 <code style="background:var(--g100);padding:2px 6px;border-radius:4px;font-size:12px;">//</code> 开头，每条MML命令独占一行。</p>
+
+    <div class="code-block">
+<span class="comment">// [T-EXEC-002] 配置三四层过滤条件</span>
+<span class="cmd">ADD FILTER</span>:FILTERNAME=<span class="value">"filter_any"</span>,L34PROTTYPE=STRING,L34PROTOCOL=ANY;
+<span class="cmd">ADD FILTER</span>:FILTERNAME=<span class="value">"filter_im"</span>,L34PROTTYPE=STRING,L34PROTOCOL=ANY;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-003] 配置七层过滤条件 (DP-03: 仅视频需L7)</span>
+<span class="cmd">ADD L7FILTER</span>:L7FILTERNAME=<span class="value">"l7_video"</span>,URLTYPE=URL,URL=<span class="value">"video.huawei.com/*"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-004] 流过滤器 — 视频业务</span>
+<span class="cmd">ADD FLOWFILTER</span>:FLOWFILTERNAME=<span class="value">"ff_video"</span>;
+<span class="cmd">ADD FLTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_video"</span>,FILTERNAME=<span class="value">"filter_any"</span>;
+<span class="cmd">ADD PROTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_video"</span>,PROTOCOLNAME=<span class="value">"http"</span>,L7FILTERNAME=<span class="value">"l7_video"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-004] 流过滤器 — IM消息</span>
+<span class="cmd">ADD FLOWFILTER</span>:FLOWFILTERNAME=<span class="value">"ff_im"</span>;
+<span class="cmd">ADD FLTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_im"</span>,FILTERNAME=<span class="value">"filter_im"</span>;
+<span class="cmd">ADD PROTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_im"</span>,PROTOCOLNAME=<span class="value">"im"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-004] 流过滤器 — 默认流量</span>
+<span class="cmd">ADD FLOWFILTER</span>:FLOWFILTERNAME=<span class="value">"ff_any"</span>;
+<span class="cmd">ADD FLTBINDFLOWF</span>:FLOWFILTERNAME=<span class="value">"ff_any"</span>,FILTERNAME=<span class="value">"filter_any"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-005] 视频业务三件套 (ONLINE, VOLUME, RG=100)</span>
+<span class="cmd">ADD URR</span>:URRNAME=<span class="value">"urr_video"</span>,URRID=1001,USAGERPTMODE=ONLINE,ONLMETERINGTYPE=VOLUME,RG=100;
+<span class="cmd">ADD URRGROUP</span>:URRGROUPNAME=<span class="value">"urrg_video"</span>,UPURRNAME1=<span class="value">"urr_video"</span>,DOWNURRNAME1=<span class="value">"urr_video"</span>;
+<span class="cmd">ADD PCCPOLICYGRP</span>:PCCPOLICYGRPNM=<span class="value">"PPG_video"</span>,URRGROUPNAME=<span class="value">"urrg_video"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-005] IM消息三件套 (ONLINE, DURATION, RG=200)</span>
+<span class="cmd">ADD URR</span>:URRNAME=<span class="value">"urr_im"</span>,URRID=1002,USAGERPTMODE=ONLINE,ONLMETERINGTYPE=DURATION,RG=200;
+<span class="cmd">ADD URRGROUP</span>:URRGROUPNAME=<span class="value">"urrg_im"</span>,UPURRNAME1=<span class="value">"urr_im"</span>,DOWNURRNAME1=<span class="value">"urr_im"</span>;
+<span class="cmd">ADD PCCPOLICYGRP</span>:PCCPOLICYGRPNM=<span class="value">"PPG_im"</span>,URRGROUPNAME=<span class="value">"urrg_im"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-005] 默认计费三件套 + BLOCK (ONLINE, VOLUME, RG=300)</span>
+<span class="cmd">ADD URR</span>:URRNAME=<span class="value">"urr_default"</span>,URRID=1003,USAGERPTMODE=ONLINE,ONLMETERINGTYPE=VOLUME,RG=300;
+<span class="cmd">ADD URRGROUP</span>:URRGROUPNAME=<span class="value">"urrg_default"</span>,UPURRNAME1=<span class="value">"urr_default"</span>,DOWNURRNAME1=<span class="value">"urr_default"</span>;
+<span class="cmd">ADD PCCACTIONPROP</span>:PCCACTPROPNM=<span class="value">"pccact_block"</span>,GATINGSTATUS=CLS;
+<span class="cmd">ADD PCCPOLICYGRP</span>:PCCPOLICYGRPNM=<span class="value">"PPG_default"</span>,URRGROUPNAME=<span class="value">"urrg_default"</span>,PCCACTPROPNAME=<span class="value">"pccact_block"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-008] 配置Rule</span>
+<span class="cmd">ADD RULE</span>:RULENAME=<span class="value">"Rule_video"</span>,POLICYTYPE=PCC,FILTERINGMODE=FLOWFILTER,FLOWFILTERNAME=<span class="value">"ff_video"</span>,PRIORITY=100,POLICYNAME=<span class="value">"PPG_video"</span>;
+<span class="cmd">ADD RULE</span>:RULENAME=<span class="value">"Rule_im"</span>,POLICYTYPE=PCC,FILTERINGMODE=FLOWFILTER,FLOWFILTERNAME=<span class="value">"ff_im"</span>,PRIORITY=200,POLICYNAME=<span class="value">"PPG_im"</span>;
+<span class="cmd">ADD RULE</span>:RULENAME=<span class="value">"Rule_default"</span>,POLICYTYPE=PCC,FILTERINGMODE=FLOWFILTER,FLOWFILTERNAME=<span class="value">"ff_any"</span>,PRIORITY=65000,POLICYNAME=<span class="value">"PPG_default"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [T-EXEC-010] 配置UserProfile与Rule绑定</span>
+<span class="cmd">ADD USERPROFILE</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>;
+<span class="cmd">SET URRGRPBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,DFTURRGRPNAME=<span class="value">"urrg_default"</span>,DFTSIGURRGNAME=<span class="value">"urrg_default"</span>;
+<span class="cmd">ADD RULEBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,POLICYTYPE=PCC,RULENAME=<span class="value">"Rule_video"</span>;
+<span class="cmd">ADD RULEBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,POLICYTYPE=PCC,RULENAME=<span class="value">"Rule_im"</span>;
+<span class="cmd">ADD RULEBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>,POLICYTYPE=PCC,RULENAME=<span class="value">"Rule_default"</span>;
+
+<span class="comment"></span>
+<span class="comment">// [刷新] 必须最后执行</span>
+<span class="cmd">SET REFRESHSRV</span>:REFRESHTYPE=ALL;
+    </div>
+</div>
+</section>
+<hr class="sec-hr page">
+
+<!-- ================================================================ -->
+<!-- Section 5: 验收验证                                               -->
+<!-- ================================================================ -->
+<section class="sec" id="verify">
+<div class="page">
+    <div class="sec-num">SECTION 4</div>
+    <h2 class="sec-title">验收验证</h2>
+    <p class="sec-desc">由 ValidationPlan 驱动的三级验收：License → 配置链回查 → PFCP上报。</p>
+
+    <div class="verify-card">
+        <div class="v-step">VERIFY-01 · License 开关验证</div>
+        <div class="v-title">BR-01: 4个License必须ENABLE</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="cmd">LST LICENSESWITCH</span>:LICITEM=<span class="value">"LKV3G5SABS01"</span>;
+<span class="cmd">LST LICENSESWITCH</span>:LICITEM=<span class="value">"LKV3G5BCBC01"</span>;
+<span class="cmd">LST LICENSESWITCH</span>:LICITEM=<span class="value">"LKV3G5PCCB01"</span>;
+<span class="cmd">LST LICENSESWITCH</span>:LICITEM=<span class="value">"LKV3G5OLCH01"</span>;
+        </div>
+        <div class="v-expected">预期：全部 ENABLE</div>
+    </div>
+
+    <div class="verify-card">
+        <div class="v-step">VERIFY-02 · 配置链逐层回查</div>
+        <div class="v-title">BR-02: 从UserProfile出发，逐层回查到URR</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="cmd">LST RULEBINDING</span>:USERPROFILENAME=<span class="value">"up_online_charging"</span>;
+<span class="comment">// → 3条绑定: Rule_video, Rule_im, Rule_default</span>
+
+<span class="cmd">LST RULE</span>:RULENAME=<span class="value">"Rule_video"</span>,POLICYTYPE=PCC;
+<span class="comment">// → FLOWFILTERNAME=ff_video, PRIORITY=100, POLICYNAME=PPG_video</span>
+
+<span class="cmd">LST PCCPOLICYGRP</span>:PCCPOLICYGRPNM=<span class="value">"PPG_video"</span>;
+<span class="comment">// → URRGROUPNAME=urrg_video</span>
+
+<span class="cmd">LST URR</span>:URRNAME=<span class="value">"urr_video"</span>;
+<span class="comment">// → URRID=1001, USAGERPTMODE=ONLINE, ONLMETERINGTYPE=VOLUME, RG=100</span>
+
+<span class="cmd">LST PCCPOLICYGRP</span>:PCCPOLICYGRNM=<span class="value">"PPG_default"</span>;
+<span class="comment">// → PCCACTPROPNAME=pccact_block (配额耗尽BLOCK)</span>
+        </div>
+        <div class="v-expected">预期：各层名称与参数均与规划值一致</div>
+    </div>
+
+    <div class="verify-card">
+        <div class="v-step">VERIFY-03 · PFCP 会话上报验证</div>
+        <div class="v-title">BR-03: URRID 与 PFCP 上报一致</div>
+        <div class="code-block" style="padding:14px 18px;">
+<span class="comment">// 通过 OM Portal 抓取 PFCP Session Report</span>
+<span class="comment">// 验证 Usage Report 中 URRID 与配置一致</span>
+        </div>
+        <div class="v-expected">预期：URRID=1001(VOLUME), 1002(DURATION), 1003(VOLUME) 均匹配</div>
+    </div>
+
+    <div style="margin-top:40px;padding:28px;background:white;border-radius:var(--radius);box-shadow:var(--shadow);border-top:4px solid var(--teal);">
+        <div style="font-size:13px;font-weight:700;color:var(--teal);margin-bottom:10px;">端到端回顾</div>
+        <div style="font-size:13px;color:var(--g700);line-height:2;">
+            <strong>需求</strong>：3条业务 + 在线计费 + 配额耗尽阻断<br>
+            <strong>图谱定位</strong>：BD(业务感知) → NS-01(计费场景) → DS-01(差异化计费)<br>
+            <strong>决策</strong>：DP-01=在线 → DP-02=BLOCK → DP-03=混合匹配<br>
+            <strong>规划</strong>：5个Plan任务确定全部参数和命名<br>
+            <strong>执行</strong>：5个Execute任务(1个skip)产出3套三件套+3条RULE+UserProfile<br>
+            <strong>脚本</strong>：30+条MML命令，按依赖顺序排列，每个参数可溯源到决策点<br>
+            <strong>验收</strong>：License → 链回查 → PFCP 三级验收
+        </div>
+    </div>
+</div>
+</section>
+
+<script>
+// Intersection Observer
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.sec').forEach(s => obs.observe(s));
+
+// Side nav active
+const secs = document.querySelectorAll('.sec');
+const navLinks = document.querySelectorAll('.side-nav a');
+const navObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+        }
+    });
+}, { threshold: 0.3 });
+secs.forEach(s => navObs.observe(s));
+</script>
+</body>
+</html>

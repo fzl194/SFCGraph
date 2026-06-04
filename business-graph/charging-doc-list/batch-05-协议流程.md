@@ -1,0 +1,292 @@
+# Batch 05: 协议与流程 — 计费相关文件
+
+路径前缀: UNC/快速入门/协议与流程/
+
+## 1. Gy接口 - 在线计费信令 (167篇，全部计费相关)
+
+### Gy概述与错误码 (2篇)
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/接口错误码_30780484.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/接口协议简介_30780312.md
+
+### Gy信令流程 (4篇)
+
+### Gy相关信元解释 (161篇)
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-Charging-Characteristics_30780328.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-Charging-Id_30780330.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-GGSN-MCC-MNC_30780332.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-GPRS-Negotiated-QoS-Profile_30780334.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-IMSI-MCC-MNC_30780335.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-MS-TimeZone_30780337.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-NSAPI_30780339.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-PDP-Type_30780341.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-RAT-Type_30780343.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-Selection-Mode_30780345.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-Session-Stop-Indicator_30780347.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-SGSN Ipv6 address_30780348.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-SGSN-MCC-MNC_30780349.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/3GPP-User-Location-Info_30780350.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Additional-Exception-Reports_61944791.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Allocation-Retention-Priority_61944794.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/APN-Aggregate-Max-Bitrate-DL_61944789.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/APN-Aggregate-Max-Bitrate-UL_61944790.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/APN-Rate-Control_30780352.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/APN-Rate-Control-Downlink_61944792.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/APN-Rate-Control-Uplink_61944793.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Auth-Application-Id_30780353.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Base-Time-Interval_30780354.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Bearer-Identifier_61944795.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Called-Station-Id_30780355.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Input-Octets_30780356.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Output-Octets_30780358.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Request-Number_30780360.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Request-Type_30780361.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Service-Specific-Units_30780362.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Session-Failover_30780363.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Time_30780365.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Total-Octets_30780367.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CC-Unit-Type_30780369.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CG-Address_30780370.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Charging-Characteristics-Selection-Mode_61944797.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Charging-Rule-Base-Name_30780372.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/CP-CIoT-EPS-Optimisation-Indicator_61944796.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Credit-Control-Failure-Handling_30780374.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Destination-Host_30780376.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Destination-Realm_30780377.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Diagnostics_61944798.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Direct-Debiting-Failure-Handling_30780378.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Disconnect-Cause_30780379.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Downlink-Rate-Limit_61944799.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Dynamic-Address-Flag_30780380.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Dynamic-Address-Flag-Extension_30780381.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Envelope_30780382.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Envelope-End-Time_30780383.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Envelope-Reporting_30780384.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Envelope-Start-Time_30780385.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Event-Charging-TimeStamp_30780386.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Event-Timestamp_30780387.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Exponent_30780389.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Extended-APN-AMBR-DL_03571442.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Extended-APN-AMBR-UL_03571443.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Extended-GBR-DL_03571444.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Extended-GBR-UL_03571445.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Extended-Max-Requested-BW-DL_03571446.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Extended-Max-Requested-BW-UL_03571447.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Failed-AVP_30780390.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Filter-Id_30780391.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Final-Unit-Action_30780392.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Final-Unit-Indication_30780393.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Firmware-Revision_30780394.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/GGSN-Address_30780395.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Granted-Service-Unit_30780397.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/G-S-U-Pool-Identifier_30780399.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/G-S-U-Pool-Reference_30780400.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Guaranteed-Bitrate-DL_61944800.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Guaranteed-Bitrate-UL_61944821.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Host-IP-Address_30780401.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/IMSI-Unauthenticated-Flag_30780403.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Inband-Security-Id_30780404.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Low-Priority-Indicator_30780405.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Max-Requested-Bandwidth-DL_61944823.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Max-Requested-Bandwidth-UL_61944822.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Multiple-Services-Credit-Control_30780406.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Multiple-Services-Indicator_30780408.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Origin-Host_30780410.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Origin-Realm_30780411.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Origin-State-Id_30780412.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PDN-Connection-Charging-ID_61944825.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PDP-Address_30780414.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PDP-Address-Prefix-Length_61944824.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PDP-Context-Type_30780416.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Pre-emption-Capability_61944826.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Pre-emption-Vulnerability_61944827.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Priority-Level_61944828.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Product-Name_30780417.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PS-Append-Free-Format-Data_30780418.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PS-Free-Format-Data_30780419.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PS-Furnish-Charging-Information_30780420.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/PS-Information_30780421.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/QoS-Class-Identifier_30780423.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/QoS-Information_30780424.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Quota-Consumption-Time_30780425.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Quota-Holding-Time_30780427.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Rate-Control-Max-Rate_61944830.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Rate-Control-Time-Unit_61944829.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Rating-Group_30780429.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Re-Auth-Request-Type_30780430.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Redirect-Address-Type_30780431.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Redirect-Server_30780432.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Redirect-Server-Address_30780433.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Refund-Information_30780434.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Reporting-Reason_30780435.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Requested-Action_30780437.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Requested-Service-Unit_30780438.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Restriction-Filter-Rule_30780439.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Result-Code_30780440.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/SCS-Address_61944831.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/SCS-AS-Address_61944832.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/SCS-Realm_61944833.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Service-Context-Id_30780441.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Service-Identifier_30780443.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Service-Information_30780444.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Serving-Node-Type_30780446.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Serving-PLMN-Rate-Control_30780447.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Session-Id_30780448.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/SGi-PtP-Tunnelling-Method_30780449.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/SGSN-Address_30780450.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Start-Time_30780452.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Stop-Time_30780453.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Subscription-Id_30780454.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Subscription-Id-Data_30780455.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Subscription-Id-Type_30780456.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Supported-Vendor-Id_30780457.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Tariff-Change-Usage_30780458.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Tariff-Time-Change_30780459.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Termination-Cause_30780460.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Time-Quota-Mechanism_30780461.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Time-Quota-Threshold_30780462.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Time-Quota-Type_30780464.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Trigger_30780465.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Trigger-Type_30780466.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/TWAN-BSSID_61944834.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/TWAN-SSID_61944835.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/TWAN-User-Location-Info_30780467.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/UNI-PDU-CP-Only-Flag_30780468.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Unit-Quota-Threshold_30780469.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Unit-Value_30780470.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Uplink-Rate-Limit_61944836.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Used-Service-Unit_30780471.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/User-Equipment-Info_30780473.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/User-Equipment-Info-Type_30780474.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/User-Equipment-Info-Value_30780475.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/User-Name_30780476.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Validity-Time_30780477.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Value-Digits_30780479.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Vendor-Id_30780480.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Vendor-Specific-Application-Id_30780481.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gy/相关信元解释/Volume-Quota-Threshold_30780482.md
+
+## 2. Gx接口 - PCC策略中计费相关信元 (41篇)
+
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/3GPP-Charging-Characteristics_30780050.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Access-Network-Charging-Address_30780063.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Access-Network-Charging-Identifier-Gx_30780065.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Access-Network-Charging-Identifier-Value_30780067.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/ADC-Rule-Definition_30780069.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/ADC-Rule-Install_30780070.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/ADC-Rule-Remove_30780072.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/ADC-Rule-Report_30780074.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/AF-Charging-Identifier_30780076.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Bearer-Usage_30780096.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Correlation-Indicator_30780107.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Information_30780108.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Rule-Base-Name_30780109.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Rule-Definition_30780110.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Rule-Install_30780111.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Rule-Name_30780113.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Rule-Remove_30780115.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Charging-Rule-Report_30780116.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Error-Reporting-Host_30780126.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Event-Trigger_30780128.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Metering-Method_30780162.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Offline_30780170.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Online_30780172.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Packet-Filter-Usage_30780185.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/PCC-Rule-Status_30780186.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/PDN-Connection-Charging-ID_30780187.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Primary-Charging-Collection-Function-Name_43797586.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Primary-Event-Charging-Function-Name_30780194.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Rating-Group_30780210.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Reporting-Level_30780217.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Rule-Activation-Time_30780226.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Rule-Deactivation-Time_30780227.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Rule-Failure-Code_30780228.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Rule-Space-Suggestion_30780229.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Secondary-Charging-Collection-Function-Name_43869817.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Secondary-Event-Charging-Function-Name_30780230.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Tariff-Time-Change_30780246.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Usage-Monitoring-Information_30780269.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Usage-Monitoring-Level_30780270.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Usage-Monitoring-Report_30780271.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Gx/相关信元解释/Usage-Monitoring-Support_30780272.md
+
+## 3. PFCP/N4接口 - Usage Report相关 (16篇)
+
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关消息解释/PFCP Node Report Request_33031209.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关消息解释/PFCP Node Report Response_32788411.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关消息解释/PFCP Session Report Request_33031211.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关消息解释/PFCP Session Report Response_32788413.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Additional Usage Reports Information_32788425.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Aggregated URR ID_86168988.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Aggregated URRs_85720880.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Create URR_32945593.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Direct Reporting Information_19519284.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Downlink Data Report_85720888.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Duration Measurement_86168982.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Error Indication Report_86168970.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Event Quota_33031229.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Linked URR ID_85849384.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Measurement Information_86168986.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Measurement Method_86168972.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Node Report Type_32686665.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Packet Rate Status Report（within PFCP Session Delet_db4e15e3_09284021.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Packet Rate Status Report（within PFCP Session Modif_bc019374_72687702.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Packet Rate Status Report（within PFCP Session Repor_e9d04260_09314477.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Packet Rate_32945605.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Query URR Reference_32686673.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Query URR_85720884.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Quota Holding Time_32788437.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Remove URR_33031223.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Report Type_32686677.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Reporting Triggers_85849372.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Subsequent Event Quota_32788443.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Subsequent Time Quota_33031245.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Subsequent Volume Quota_85849388.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Time Quota_85720898.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Traffic Parameter Measurement Control Information_67079105.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Update BAR（within PFCP Session Report Response）_86009004.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Update URR_32945595.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/URR ID_86168984.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Information_32945613.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Report Trigger_85720890.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Report（within PFCP Session Deletion Response）_20276894.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Report（within PFCP Session Deletion Response）_33031227.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Report（within PFCP Session Modification Response）_08447569.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Report（within PFCP Session Modification Response）_85849370.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Report（within PFCP Session Report Request）_32788427.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Usage Report（within PFCP Session Report Request）_55397093.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/User Plane Path Failure Report_86008998.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Volume Measurement_86009018.md
+- 协议与流程/5G Core信令分析/消息及信元/非服务化接口协议/N4接口/相关信元解释/Volume Quota_32945611.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/multipleUnitUsage_23849968.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/qosFlowsUsageReports_23690008.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/quotaHoldingTime_72049977.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/quotaManagementIndicator_72169837.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/rANSecondaryRATUsageReport_23689980.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/timeQuotaThreshold_23530108.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/unitQuotaThreshold_71849841.md
+- 协议与流程/5G Core信令分析/消息及信元/服务化接口协议/Nchf/N40/信元介绍/volumeQuotaThreshold_71969833.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Sx/相关消息解释/PFCP Session Report Request_55587393.md
+- 协议与流程/EPC信令分析/EPC信令与协议分析/接口协议/Sx/相关消息解释/PFCP Session Report Response_55587394.md
+
+## 4. 融合计费服务 - Nchf (5篇，全部计费相关)
+
+- 协议与流程/5G Core信令分析/业务流程/融合计费服务/Nchf_ConvergedCharging服务操作概述_76785317.md
+- 协议与流程/5G Core信令分析/业务流程/融合计费服务/计费会话创建流程_78888683.md
+- 协议与流程/5G Core信令分析/业务流程/融合计费服务/计费会话更新流程_78888684.md
+- 协议与流程/5G Core信令分析/业务流程/融合计费服务/计费会话释放流程_78888685.md
+- 协议与流程/5G Core信令分析/业务流程/融合计费服务/计费会话通知流程_84997604.md
+
+## 5. 会话流程 (12篇，含计费信令交互)
+
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话建立_97353800.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话释放（AMF发起）_47793549.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话释放（PCF发起）_47593653.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话释放（SMF发起）_97353780.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话释放（UE发起）_47473749.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话修改（AN发起）_96873760.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话修改（PCF发起）_97033372.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话修改（SMF发起）_47593601.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话修改（UDM发起）_47593593.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/PDU会话修改（UE发起）_96873848.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/QoS基本概念_76785291.md
+- 协议与流程/5G Core信令分析/业务流程/会话流程/会话管理基本概念_76784844.md
