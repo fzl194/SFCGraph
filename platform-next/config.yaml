@@ -1,0 +1,40 @@
+server:
+  host: "0.0.0.0"
+  port: 8000
+
+feature_graph:
+  data_dir: "../feature-graph/data"
+  doc_root: ".."
+  columns:
+    - key: feature_id
+      label: "特性ID"
+      width: 130
+      sortable: true
+    - key: feature_name
+      label: "特性名称"
+      width: 200
+      sortable: true
+    - key: product_type
+      label: "产品"
+      width: 80
+      sortable: true
+    - key: feature_type
+      label: "特性类型"
+      width: 100
+      sortable: true
+    - key: section
+      label: "分组"
+      width: 150
+      sortable: true
+    - key: config_required
+      label: "需配置"
+      width: 80
+      sortable: true
+    - key: applicable_nf
+      label: "适用网元"
+      width: 160
+      sortable: false
+    - key: definition
+      label: "定义"
+      width: 300
+      sortable: false
