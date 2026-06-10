@@ -1,268 +1,289 @@
-﻿id,source_feature_id,target_feature_id,dependency_type,description,license_control_item,source_type
-GWFD-010104:dep:GWFD-010224,GWFD-010104,GWFD-010224,depends_on,UDG<br>向SMF上报用户面地址分配能力以及SMF指示<br>UDG<br>进行地址分配都依赖于N4接口的交互。使用本特性需要使用N4接口特性。,无,overview_explicit
-GWFD-010104:dep:GWFD-010233,GWFD-010104,GWFD-010233,depends_on,UDG<br>向PGW-C上报用户面地址分配能力以及PGW-C指示<br>UDG<br>进行地址分配都依赖于Sxb接口的交互。使用本地址需要使用Sxb接口特性。,无,overview_explicit
-GWFD-010105:dep:GWFD-010224,GWFD-010105,GWFD-010224,depends_on,5G场景下，<br>UDG<br>向C面上报用户面地址分配能力以及C面指示<br>UDG<br>进行地址分配依赖于N4接口的交互。使用本特性需要使用N4接口特性。,无,overview_explicit
-GWFD-010105:dep:GWFD-010233,GWFD-010105,GWFD-010233,depends_on,4G场景下，<br>UDG<br>向C面上报用户面地址分配能力以及C面指示<br>UDG<br>进行地址分配依赖于Sxb接口的交互。使用本特性需要使用Sxb接口特性。,无,overview_explicit
-GWFD-010107:dep:IPFD-015002,GWFD-010107,IPFD-015002,depends_on,静态地址路由冗余需要配置GRE隧道，因此依赖于GRE特性。,无,overview_explicit
-GWFD-010107:dep:GWFD-020808,GWFD-010107,GWFD-020808,conflicts_with,静态地址路由冗余功能正常，静态地址用户不能做用户面地址自动探测，不影响业务功能。,-,overview_explicit
-GWFD-010108:dep:GWFD-010105,GWFD-010108,GWFD-010105,depends_on,该特性仅在<br>UDG<br>采用本地地址池分配IP地址时使用，因此使用本特性需要依赖于用户面地址分配特性。,无,overview_explicit
-GWFD-010108:dep:GWFD-010107,GWFD-010108,GWFD-010107,conflicts_with,该特性不支持与静态地址用户路由冗余同时应用。,无,overview_explicit
-GWFD-010108:dep:GWFD-110910,GWFD-010108,GWFD-110910,conflicts_with,该特性不支持与Routing Behind MS同时应用。,82200CKP LKV3G5RBMS01 支持Routing Behind MS,overview_explicit
-GWFD-010108:dep:GWFD-020406,GWFD-010108,GWFD-020406,conflicts_with,该特性不支持与IPv6 Prefix Delegation同时应用。,82200CKF LKV3G5P6PD01 IPv6 Prefix Delegation,overview_explicit
-GWFD-010108:dep:GWFD-020412,GWFD-010108,GWFD-020412,conflicts_with,该特性不支持与L2TP VPN同时应用。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit
-GWFD-010155:dep:GWFD-020531,GWFD-010155,GWFD-020531,conflicts_with,通用DNN漫游分流只支持4G/5G接入，不支持其他接入方式。,82200GCJ LKV3G5STCA01 移动VPN智能分流园区接入,overview_explicit
-GWFD-010221:dep:GWFD-020405,GWFD-010221,GWFD-020405,depends_on,N3接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010222:dep:GWFD-020402,GWFD-010222,GWFD-020402,depends_on,N6接口数据面信息需要IPv6承载时，需要启用N6/Gi/SGi接口IPv6组网功能。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit
-GWFD-010223:dep:GWFD-020405,GWFD-010223,GWFD-020405,depends_on,N9接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010224:dep:GWFD-020405,GWFD-010224,GWFD-020405,depends_on,N4接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010225:dep:GWFD-020402,GWFD-010225,GWFD-020402,depends_on,SGi接口数据面信息需要IPv6承载时，需要启用N6/Gi/SGi接口IPv6组网功能。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit
-GWFD-010226:dep:GWFD-020405,GWFD-010226,GWFD-020405,depends_on,Gn接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010227:dep:GWFD-020405,GWFD-010227,GWFD-020405,depends_on,Gp接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010228:dep:GWFD-020405,GWFD-010228,GWFD-020405,depends_on,S1-U接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010229:dep:GWFD-020405,GWFD-010229,GWFD-020405,depends_on,S5接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010230:dep:GWFD-020405,GWFD-010230,GWFD-020405,depends_on,S8接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010231:dep:GWFD-020402,GWFD-010231,GWFD-020402,depends_on,Gi接口数据面信息需要IPv6承载时，需要启用N6/Gi/SGi接口IPv6组网功能。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit
-GWFD-010232:dep:GWFD-020405,GWFD-010232,GWFD-020405,depends_on,Sxa接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010233:dep:GWFD-020405,GWFD-010233,GWFD-020405,depends_on,Sxb接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010235:dep:GWFD-020351,GWFD-010235,GWFD-020351,depends_on,需要<br>PGW-U/UPF<br>或<br>PGW-C/SMF<br>发起创建any to any GBR专有承载的流程。因此，需开启PCC基本功能后才能使用本功能。,82209825 PCC基本功能,overview_explicit
-GWFD-010236:dep:GWFD-020405,GWFD-010236,GWFD-020405,depends_on,S2b接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010237:dep:GWFD-020405,GWFD-010237,GWFD-020405,depends_on,S11-U接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit
-GWFD-010296:dep:GWFD-110601,GWFD-010296,GWFD-110601,affects,本特性与NB-IoT eDRX模式共同开启，可以使能NB-IoT eDRX功能。,82200CKC NB-IoT eDRX模式,overview_explicit
-GWFD-010296:dep:GWFD-110607,GWFD-010296,GWFD-110607,affects,本特性与Non-IP数据传输共同开启，可以使能NB-IoT的Non-IP数据传输功能。,82200CKH Non-IP数据传输,overview_explicit
-GWFD-010296:dep:GWFD-110606,GWFD-010296,GWFD-110606,affects,本特性与基于信令面的数据传输共同开启，可以使能NB-IoT基于信令面数据传输功能。,82200CKD 基于信令面的数据传输,overview_explicit
-GWFD-010296:dep:GWFD-110611,GWFD-010296,GWFD-110611,affects,本特性与基于APN的NB-IoT终端接入速率控制共同开启，可以使能基于APN的NB-IoT终端接入速率控制功能。,82200CKJ 基于APN的NB-IoT终端接入速率控制,overview_explicit
-GWFD-010296:dep:GWFD-110612,GWFD-010296,GWFD-110612,affects,本特性与基于服务PLMN的NB-IoT终端接入速率控制共同开启，可以使能基于服务PLMN的NB-IoT终端接入速率控制功能。,82200CKK 基于服务PLMN的NB-IoT终端接入速率控制,overview_explicit
-GWFD-020161:dep:GWFD-010224,GWFD-020161,GWFD-010224,depends_on,CU Full Mesh组网在原有N4/Sx接口的PFCP协议上进行增强，因此使用本特性需要依赖N4/Sx接口特性。,无,overview_explicit
-GWFD-020161:dep:GWFD-010105,GWFD-020161,GWFD-010105,interacts_with,Full Mesh场景下，使用<br>UDG<br>分配IP地址不用考虑分配到同一U面的地址冲突问题，部署运维更简化。,无,overview_explicit
-GWFD-020251:dep:GWFD-020351,GWFD-020251,GWFD-020351,depends_on,如果需要PCRF通过SGW-C/PGW-C下发QoS策略给<br>SGW-U/PGW-U<br>，开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit
-GWFD-020252:dep:GWFD-020251,GWFD-020252,GWFD-020251,depends_on,需要<br>UDG<br>侧开启VoLTE基础语音业务，才能启用SRVCC特性。,82209873 VoLTE基础语音业务,overview_explicit
-GWFD-020252:dep:GWFD-020351,GWFD-020252,GWFD-020351,depends_on,需要<br>UDG<br>侧开启PCC基本功能特性，才能启用SRVCC特性。,82209825 PCC 基本功能,overview_explicit
-GWFD-020253:dep:GWFD-020251,GWFD-020253,GWFD-020251,depends_on,P-CSCF故障时IMS业务恢复特性作为IMS接入的特性，必须开启IMS接入特性。,82209873<br>VoLTE基础语音业务,overview_explicit
-GWFD-020253:dep:GWFD-020351,GWFD-020253,GWFD-020351,depends_on,P-CSCF故障时IMS业务恢复特性必须有PCRF/PCF的部署支撑，必须开启PCC基本功能。,82209825 PCC基本功能,overview_explicit
-GWFD-020254:dep:GWFD-020251,GWFD-020254,GWFD-020251,depends_on,该特性需要先开通VoLTE基础语音业务。,82209873<br>VoLTE基础语音业务,overview_explicit
-GWFD-020254:dep:GWFD-020351,GWFD-020254,GWFD-020351,depends_on,VoLTE业务快速恢复特性必须有PCRF的部署支撑，必须开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit
-GWFD-020282:dep:GWFD-020251,GWFD-020282,GWFD-020251,depends_on,需要<br>UDG<br>侧开启VoLTE基础语音业务，才能启用EPS Fallback特性。,82209873 VoLTE基础语音业务,overview_explicit
-GWFD-020282:dep:GWFD-010154,GWFD-020282,GWFD-010154,depends_on,需要<br>UDG<br>侧开启LTE与5G SA网络间互操作，使用户可以在5G和4G网络之间切换，才能启用EPS Fallback特性。,无,overview_explicit
-GWFD-020300:dep:GWFD-020301,GWFD-020300,GWFD-020301,depends_on,如果需要基于业务粒度对用户业务进行在线计费，需要同时开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-020301:dep:GWFD-110101,GWFD-020301,GWFD-110101,depends_on,内容计费首先需要识别出业务类型，然后针对不同业务实施不同费率的计费，所以必须先开启SA特性。,82209749 SA-Basic,overview_explicit
-GWFD-020301:dep:GWFD-020300,GWFD-020301,GWFD-020300,depends_on,在线计费是计费基础功能之一，如果使用在线计费系统进行内容计费，需要开启在线计费。,82209821 在线计费,overview_explicit
-GWFD-020301:dep:GWFD-010171,GWFD-020301,GWFD-010171,depends_on,离线计费是计费基础功能之一，如果使用离线计费系统进行内容计费，需要开启离线计费。,无,overview_explicit
-GWFD-020302:dep:GWFD-020301,GWFD-020302,GWFD-020301,depends_on,基于业务时长的计费是内容计费的增强形式，所以使用基于业务时长的计费前，需要先开启内容计费功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-020302:dep:GWFD-110101,GWFD-020302,GWFD-110101,depends_on,内容计费首先需要识别出业务类型，然后针对不同业务实施不同费率的计费，所以必须先开启SA特性。,82209749 SA-Basic,overview_explicit
-GWFD-020303:dep:GWFD-020301,GWFD-020303,GWFD-020301,depends_on,基于业务流量的计费是内容计费的增强形式，所以使用基于业务流量的计费前，需要先开启内容计费功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-020303:dep:GWFD-110101,GWFD-020303,GWFD-110101,depends_on,内容计费首先需要识别出业务类型，然后针对不同业务实施不同费率的计费，所以必须先开启SA特性。,82209749 SA-Basic,overview_explicit
-GWFD-020304:dep:GWFD-020301,GWFD-020304,GWFD-020301,depends_on,关联URL核减功能关键技术是支持识别Referer字段，该特性是内容计费的增强特性，所以需要开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-020304:dep:GWFD-110103,GWFD-020304,GWFD-110103,depends_on,关联URL核减功能可能需要对HTTP业务进行识别解析，所以需要开启SA-Web Browsing功能。,82209755 SA-WebBrowsing,overview_explicit
-GWFD-020305:dep:GWFD-020301,GWFD-020305,GWFD-020301,depends_on,由于终端异常下行流量检测是基于业务流进行的检测，因此需开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-020308:dep:GWFD-020301,GWFD-020308,GWFD-020301,depends_on,只有在内容计费的计费模式下才支持7层流量统计，所以使用7层流量统计前，需要先开启内容计费功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-020308:dep:GWFD-110101,GWFD-020308,GWFD-110101,depends_on,使用7层流量统计前，需要先开启SA特性。对于不同的业务，还需要使能相应业务的协议解析。,82209749 SA-Basic,overview_explicit
-GWFD-020352:dep:GWFD-110101,GWFD-020352,GWFD-110101,depends_on,需要对用户上下行数据进行识别解析，必须开启业务感知功能。,82209749 SA-Basic,overview_explicit
-GWFD-020352:dep:GWFD-020401,GWFD-020352,GWFD-020401,depends_on,UDG<br>需要建立IPv6承载上下文，因此需开启IPv6承载上下文特性。,82209828 IPv6承载上下文,overview_explicit
-GWFD-020352:dep:GWFD-020403,GWFD-020352,GWFD-020403,depends_on,如果需要对IPv4v6双栈接入用户的业务进行解析，则需要先开启IPv4v6双栈接入特性。,82209829 IPv4v6双栈接入,overview_explicit
-GWFD-020352:dep:GWFD-020402,GWFD-020352,GWFD-020402,depends_on,UDG<br>与其他网元采用N6/Gi/SGi接口IPv6组网支持IPv6业务，因此需要开启N6/Gi/SGi接口IPv6组网特性。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit
-GWFD-020353:dep:GWFD-020351,GWFD-020353,GWFD-020351,depends_on,UDG<br>需要将用户在一段时间内的累计流量上报给PGW-C/SMF，PGW-C/SMF再上报给PCRF/PCF，累计流量达到指定阈值时，PCRF/PCF下发不同的策略给PGW-C/SMF，PGW-C/SMF再下发给PGW-U/UPF，因此需开启PCC基本功能特性以获取策略。,82209825 PCC 基本功能,overview_explicit
-GWFD-020354:dep:GWFD-110101,GWFD-020354,GWFD-110101,depends_on,需要对用户上下行数据进行识别解析，必须开启业务感知功能。,82209749 SA-Basic,overview_explicit
-GWFD-020354:dep:GWFD-110231,GWFD-020354,GWFD-110231,depends_on,依赖于基于业务感知的带宽控制功能对业务的区分与匹配，必须开启基于业务感知的带宽控制。,82209832 基于业务感知的带宽控制,overview_explicit
-GWFD-020356:dep:GWFD-110303,GWFD-020356,GWFD-110303,depends_on,计费信息实时提醒功能通过扩展标准Gy接口实现OCS下发一次重定向（One-shot Redirection）策略，因此使用本特性需要开启在线计费功能。,82209821 在线计费,overview_explicit
-GWFD-020356:dep:GWFD-110103,GWFD-020356,GWFD-110103,depends_on,计费信息实时提醒功能针对URL白名单中的业务进行重定向，这些功能的使用需要先开启业务解析功能。,82209755 SA-Web Browsing,overview_explicit
-GWFD-020357:dep:GWFD-020351,GWFD-020357,GWFD-020351,depends_on,PCRF/PCF下发携带Application ID的PCC规则给<br>UDG<br>，所以开通增强的ADC基本功能必须同时开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit
-GWFD-020358:dep:GWFD-110101,GWFD-020358,GWFD-110101,depends_on,UDG<br>需要根据用户请求的业务判断是否建立专有承载/专有QoS Flow，因此需开启SA-Basic功能进行业务识别。,82209749 SA-Basic,overview_explicit
-GWFD-020358:dep:GWFD-020351,GWFD-020358,GWFD-020351,depends_on,UDG<br>可以使用PCRF/PCF下发的QoS参数建立专有承载/专有QoS Flow，此时需开启基本PCC功能以从PCRF/PCF获取规则。,82209825 PCC基本功能,overview_explicit
-GWFD-020359:dep:GWFD-020351,GWFD-020359,GWFD-020351,depends_on,PCRF下发IM类业务的PCC规则给<br>UDG<br>，所以开通IM类业务无线资源管必须同时开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit
-GWFD-020401:dep:GWFD-020402,GWFD-020401,GWFD-020402,depends_on,在N6/Gi/SGi接口具备支持IPv6的能力时，需要使用N6/Gi/SGi接口IPv6组网，配合共同完成IPv6用户的业务接入功能。,无,overview_explicit
-GWFD-020402:dep:GWFD-020401,GWFD-020402,GWFD-020401,depends_on,一般情况下，本特性与IPv6承载上下文配合，共同完成IPv6用户的业务接入功能。,82209828 IPv6承载上下文,overview_explicit
-GWFD-020403:dep:GWFD-020402,GWFD-020403,GWFD-020402,depends_on,在N6/Gi/SGi接口已经支持IPv4的情况下，再同时部署N6/Gi/SGi接口IPv6组网，配合共同完成IPv4v6用户的业务接入功能。,无,overview_explicit
-GWFD-020404:dep:GWFD-020301,GWFD-020404,GWFD-020301,depends_on,如果需要基于业务粒度对IPv6用户/IPv4v6双栈用户业务进行在线计费，需要同时开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-020405:dep:GWFD-010226,GWFD-020405,GWFD-010226,depends_on,Gn/Gp接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010225,GWFD-020405,GWFD-010225,depends_on,SGi/Gi接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010228,GWFD-020405,GWFD-010228,depends_on,S1-U接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010229,GWFD-020405,GWFD-010229,depends_on,S5/S8接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010221,GWFD-020405,GWFD-010221,depends_on,N3接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010223,GWFD-020405,GWFD-010223,depends_on,N9接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010224,GWFD-020405,GWFD-010224,depends_on,N4接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010232,GWFD-020405,GWFD-010232,depends_on,Sxa接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:GWFD-010233,GWFD-020405,GWFD-010233,depends_on,Sxb接口需要IPv6承载时，需要启用本特性。,无,overview_explicit
-GWFD-020405:dep:IPFD-014000,GWFD-020405,IPFD-014000,depends_on,逻辑接口配置静态路由或者逻辑接口相关的IPv6路由需要通过动态路由协议发布时，需要启用路由功能。,无,overview_explicit
-GWFD-020406:dep:GWFD-020401,GWFD-020406,GWFD-020401,depends_on,UDG<br>需要建立IPv6承载上下文，因此需开启IPv6承载上下文特性。,82209828 IPv6承载上下文,overview_explicit
-GWFD-020406:dep:GWFD-020403,GWFD-020406,GWFD-020403,depends_on,如果需要对IPv4v6双栈接入用户的业务进行解析，则需要先开启IPv4v6双栈接入特性。,82209829 IPv4v6双栈接入,overview_explicit
-GWFD-020406:dep:GWFD-020412,GWFD-020406,GWFD-020412,conflicts_with,L2TP VPN通过LNS设备实现了手机后路由功能，所以在同一APN下，L2TP VPN和手机后路由功能无需同时部署。,82200BVC L2TP VPN,overview_explicit
-GWFD-020406:dep:GWFD-010108,GWFD-020406,GWFD-010108,conflicts_with,手机后路由用户不能做用户面地址自动检测。,-,overview_explicit
-GWFD-020406:dep:GWFD-020482,GWFD-020406,GWFD-020482,conflicts_with,手机后路由用户不支持入不转板功能。,-,overview_explicit
-GWFD-020406:dep:GWFD-020531,GWFD-020406,GWFD-020531,conflicts_with,手机后路由用户不支持通用DNN漫游分流功能。,82200GCJ LKV3G5STCA01 移动VPN智能分流园区接入,overview_explicit
-GWFD-020412:dep:GWFD-010108,GWFD-020412,GWFD-010108,conflicts_with,L2TP VPN不支持与用户面地址自动检测功能同时应用。,无,overview_explicit
-GWFD-020412:dep:GWFD-020482,GWFD-020412,GWFD-020482,conflicts_with,APN下开启L2TP VPN特性，则不支持入不转板功能。,无,overview_explicit
-GWFD-020421:dep:GWFD-010105,GWFD-020421,GWFD-010105,depends_on,基于位置的地址分配是<br>UDG<br>通过本地地址池根据用户位置动态分配IP地址，因此使用本特性需要依赖于用户面地址分配特性。,无,overview_explicit
-GWFD-020421:dep:GWFD-020412,GWFD-020421,GWFD-020412,conflicts_with,基于位置的地址分配特性不支持与L2TP VPN功能同时应用。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit
-GWFD-020423:dep:IPFD-014002,GWFD-020423,IPFD-014002,depends_on,路由交叉功能依赖BGP特性。,-,overview_explicit
-GWFD-020482:dep:GWFD-111201,GWFD-020482,GWFD-111201,conflicts_with,网络加速卡场景，不支持入不转板功能。,82200EBL LKV3G5NPTO01 网络加速卡流量加速单元,overview_explicit
-GWFD-020482:dep:GWFD-010107,GWFD-020482,GWFD-010107,conflicts_with,应用静态地址用户路由冗余功能的会话，不支持下行入不转板。,-,overview_explicit
-GWFD-020482:dep:GWFD-020412,GWFD-020482,GWFD-020412,conflicts_with,应用L2TP VPN功能的会话，不支持下行入不转板。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit
-GWFD-020482:dep:GWFD-110910,GWFD-020482,GWFD-110910,conflicts_with,手机后路由用户的IPv4业务报文，不支持入不转板。,82200CKP LKV3G5RBMS01 支持Routing Behind MS,overview_explicit
-GWFD-020482:dep:GWFD-020406,GWFD-020482,GWFD-020406,conflicts_with,手机后路由用户的IPv6业务报文，不支持入不转板。,82200CKF LKV3G5P6PD01 IPv6 Prefix Delegation,overview_explicit
-GWFD-020482:dep:GWFD-010105,GWFD-020482,GWFD-010105,depends_on,仅UPF分配UE IP地址的会话，支持下行入不转板功能。,-,overview_explicit
-GWFD-020482:dep:GWFD-010104,GWFD-020482,GWFD-010104,affects,外部NF分配UE IP地址（例如采用UDM给UE分配的静态签约地址、SMF分配地址、AAA服务器分配地址）的会话，不支持下行入不转板功能。,-,overview_explicit
-GWFD-020501:dep:GWFD-020412,GWFD-020501,GWFD-020412,conflicts_with,辅锚点UPF不支持同企业之间建立L2TP隧道。,82200BVC L2TP VPN,overview_explicit
-GWFD-020501:dep:GWFD-110910,GWFD-020501,GWFD-110910,conflicts_with,IPv4手机后路由用户不支持ULCL分流功能。,82200CKP 支持Routing Behind MS,overview_explicit
-GWFD-020501:dep:GWFD-020406,GWFD-020501,GWFD-020406,conflicts_with,IPv6 Prefix Delegation用户不支持ULCL分流功能。,82200CKF IPv6 Prefix Delegation,overview_explicit
-GWFD-020501:dep:GWFD-010108,GWFD-020501,GWFD-010108,conflicts_with,辅锚点UPF不支持到园区的用户面地址自动检测功能。,-,overview_explicit
-GWFD-020501:dep:GWFD-020353,GWFD-020501,GWFD-020353,conflicts_with,Session级的FUP功能与ULCL分流功能不能同时部署。,82200AFM 基于累计流量的策略控制,overview_explicit
-GWFD-020501:dep:GWFD-020358,GWFD-020501,GWFD-020358,conflicts_with,业务触发专载建立与ULCL分流功能不能同时开启。,82200AFP<br>业务触发的QoS保证,overview_explicit
-GWFD-020501:dep:GWFD-010155,GWFD-020501,GWFD-010155,conflicts_with,ULCL分流只支持4G/5G接入，不支持其他接入方式。,-,overview_explicit
-GWFD-020502:dep:GWFD-020501,GWFD-020502,GWFD-020501,depends_on,使用跨域用户漫游前必须先开启跨域业务访问功能。,NA,overview_explicit
-GWFD-020531:dep:GWFD-110910,GWFD-020531,GWFD-110910,conflicts_with,IPv4手机后路由用户不支持通用DNN漫游分流功能。,82200CKP 支持Routing Behind MS,overview_explicit
-GWFD-020531:dep:GWFD-020406,GWFD-020531,GWFD-020406,conflicts_with,IPv6 Prefix Delegation用户不支持通用DNN漫游分流功能。,82200CKF IPv6 Prefix Delegation,overview_explicit
-GWFD-020531:dep:GWFD-010155,GWFD-020531,GWFD-010155,conflicts_with,通用DNN漫游分流只支持4G/5G接入，不支持其他接入方式。,-,overview_explicit
-GWFD-020531:dep:GWFD-020358,GWFD-020531,GWFD-020358,conflicts_with,不支持针对专网业务触发专载建立，专有DNN的会话Qos传递不到无线侧。,82200AFP<br>业务触发的QoS保证,overview_explicit
-GWFD-020531:dep:GWFD-020351,GWFD-020531,GWFD-020351,depends_on,依赖该特性实现会话策略执行和计费控制。,82209825 PCC 基本功能,overview_explicit
-GWFD-020531:dep:GWFD-030501,GWFD-020531,GWFD-030501,depends_on,依赖该特性实现转接SMF与DN-AAA之间二次鉴权的消息。,82200DLK 终端二次鉴权,overview_explicit
-GWFD-020531:dep:GWFD-110282,GWFD-020531,GWFD-110282,depends_on,依赖该特性实现DNS重定向功能。,82209781 Web Proxy,overview_explicit
-GWFD-110102:dep:GWFD-110101,GWFD-110102,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110102:dep:GWFD-110103,GWFD-110102,GWFD-110103,depends_on,由于要识别HTTP报文实现SA-HTTP Pipeline功能，因此需开启SA-Web Browsing功能。,82209755 SA-Web Browsing,overview_explicit
-GWFD-110102:dep:GWFD-110105,GWFD-110102,GWFD-110105,depends_on,由于要识别WAP报文实现SA-WAP concatenation功能，因此需开启SA-Mobile功能。,82209757 SA-Mobile,overview_explicit
-GWFD-110103:dep:GWFD-110101,GWFD-110103,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110104:dep:GWFD-110101,GWFD-110104,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110105:dep:GWFD-110101,GWFD-110105,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110106:dep:GWFD-110101,GWFD-110106,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110107:dep:GWFD-110101,GWFD-110107,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110131:dep:GWFD-110101,GWFD-110131,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110132:dep:GWFD-110101,GWFD-110132,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110133:dep:GWFD-110101,GWFD-110133,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110134:dep:GWFD-110101,GWFD-110134,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110135:dep:GWFD-110101,GWFD-110135,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110136:dep:GWFD-110101,GWFD-110136,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110137:dep:GWFD-110101,GWFD-110137,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110138:dep:GWFD-110101,GWFD-110138,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110139:dep:GWFD-110101,GWFD-110139,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110140:dep:GWFD-110101,GWFD-110140,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110141:dep:GWFD-110101,GWFD-110141,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110142:dep:GWFD-110101,GWFD-110142,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit
-GWFD-110201:dep:GWFD-110101,GWFD-110201,GWFD-110101,depends_on,HTTP2.0 Host识别特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit
-GWFD-110201:dep:GWFD-110281,GWFD-110201,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit
-GWFD-110201:dep:GWFD-110284,GWFD-110201,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit
-GWFD-110201:dep:GWFD-110302,GWFD-110201,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit
-GWFD-110201:dep:GWFD-110403,GWFD-110201,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit
-GWFD-110202:dep:GWFD-110101,GWFD-110202,GWFD-110101,depends_on,HTTP2.0协议回落特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit
-GWFD-110203:dep:GWFD-110101,GWFD-110203,GWFD-110101,depends_on,HTTPS业务地址识别特性依赖于<br>UDG<br>对DNS报文的解析，所以启用该特性需要开启SA-Basic和SA-Network Administration特性。,82209749 SA-Basic,overview_explicit
-GWFD-110203:dep:GWFD-110136,GWFD-110203,GWFD-110136,depends_on,HTTPS业务地址识别特性依赖于<br>UDG<br>对DNS报文的解析，所以启用该特性需要开启SA-Basic和SA-Network Administration特性。,82209765 SA-Network Administration,overview_explicit
-GWFD-110203:dep:GWFD-110281,GWFD-110203,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit
-GWFD-110203:dep:GWFD-110284,GWFD-110203,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit
-GWFD-110203:dep:GWFD-110302,GWFD-110203,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit
-GWFD-110203:dep:GWFD-110403,GWFD-110203,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit
-GWFD-110251:dep:GWFD-110101,GWFD-110251,GWFD-110101,depends_on,HTTP3.0 Host识别特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit
-GWFD-110251:dep:GWFD-110103,GWFD-110251,GWFD-110103,depends_on,Web Browsing协议的应用类型非常多而且不断有新的应用类型出现和更新，需要定期更新SA识别特征库以支持新的Web Browsing协议类型的识别。,82209755 SA-WebBrowsing,overview_explicit
-GWFD-110251:dep:GWFD-110142,GWFD-110251,GWFD-110142,depends_on,HTTP3.0 Host识别特性依赖于SA-QUIC才能进行计费和业务控制。,82209771 SA-QUIC,overview_explicit
-GWFD-110251:dep:GWFD-110281,GWFD-110251,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit
-GWFD-110251:dep:GWFD-110284,GWFD-110251,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit
-GWFD-110251:dep:GWFD-110302,GWFD-110251,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit
-GWFD-110251:dep:GWFD-110403,GWFD-110251,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit
-GWFD-110252:dep:GWFD-110101,GWFD-110252,GWFD-110101,depends_on,HTTP3.0 Host分析特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit
-GWFD-110252:dep:GWFD-110281,GWFD-110252,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit
-GWFD-110252:dep:GWFD-110284,GWFD-110252,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit
-GWFD-110252:dep:GWFD-110302,GWFD-110252,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit
-GWFD-110252:dep:GWFD-110403,GWFD-110252,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit
-GWFD-110261:dep:GWFD-110101,GWFD-110261,GWFD-110101,depends_on,UDG<br>需要对HTTP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTP协议之上，如MMS、流媒体等，对这些业务进行HTTP头增强时，还需要在<br>UDG<br>上开启对应协议的SA特性。例如对HTTP承载的MMS业务进行HTTP头增强，需要增加开启SA-Mobile特性。,82209749 SA-Basic,overview_explicit
-GWFD-110261:dep:GWFD-110103,GWFD-110261,GWFD-110103,depends_on,UDG<br>需要对HTTP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTP协议之上，如MMS、流媒体等，对这些业务进行HTTP头增强时，还需要在<br>UDG<br>上开启对应协议的SA特性。例如对HTTP承载的MMS业务进行HTTP头增强，需要增加开启SA-Mobile特性。,82209755 SA-Web Browsing,overview_explicit
-GWFD-110261:dep:GWFD-110105,GWFD-110261,GWFD-110105,depends_on,UDG<br>需要对HTTP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTP协议之上，如MMS、流媒体等，对这些业务进行HTTP头增强时，还需要在<br>UDG<br>上开启对应协议的SA特性。例如对HTTP承载的MMS业务进行HTTP头增强，需要增加开启SA-Mobile特性。,82209757 SA-Mobile,overview_explicit
-GWFD-110262:dep:GWFD-110101,GWFD-110262,GWFD-110101,depends_on,UDG<br>需要对RTSP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。,82209749 SA-Basic,overview_explicit
-GWFD-110262:dep:GWFD-110107,GWFD-110262,GWFD-110107,depends_on,UDG<br>需要对RTSP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。,82209759 SA-Streaming,overview_explicit
-GWFD-110263:dep:GWFD-110101,GWFD-110263,GWFD-110101,depends_on,UDG<br>需要对HTTPS报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTPS协议之上，如MMS、流媒体等，对这些业务进行HTTPS头增强时，还需要在<br>UDG<br>上开启对应协议的SA特性。例如对HTTPS承载的MMS业务进行HTTPS头增强，需要增加开启SA-Mobile特性。,82209749 SA-Basic,overview_explicit
-GWFD-110263:dep:GWFD-110103,GWFD-110263,GWFD-110103,depends_on,UDG<br>需要对HTTPS报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTPS协议之上，如MMS、流媒体等，对这些业务进行HTTPS头增强时，还需要在<br>UDG<br>上开启对应协议的SA特性。例如对HTTPS承载的MMS业务进行HTTPS头增强，需要增加开启SA-Mobile特性。,82209755 SA-Web Browsing,overview_explicit
-GWFD-110263:dep:GWFD-110105,GWFD-110263,GWFD-110105,depends_on,UDG<br>需要对HTTPS报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTPS协议之上，如MMS、流媒体等，对这些业务进行HTTPS头增强时，还需要在<br>UDG<br>上开启对应协议的SA特性。例如对HTTPS承载的MMS业务进行HTTPS头增强，需要增加开启SA-Mobile特性。,82209757 SA-Mobile,overview_explicit
-GWFD-110263:dep:GWFD-110201,GWFD-110263,GWFD-110201,depends_on,对HTTPS协议类型的报文进行解析时，需要开启HTTP2.0 Host识别功能。,82209773 HTTP2.0 Host识别,overview_explicit
-GWFD-110281:dep:GWFD-110101,GWFD-110281,GWFD-110101,depends_on,UDG<br>需要对用户的Portal业务进行解析以获得captive-portal动作和重定向地址，因此启用本特性前需要启用SA特性。SA-Basic是SA的基本功能，必须开启。对<br>HTTP、<br>WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209749 SA-Basic82209755 SA-Web Browsing82209757 SA-Mobile,overview_explicit
-GWFD-110281:dep:GWFD-110201,GWFD-110281,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别82209775 HTTPS 业务地址识别,overview_explicit
-GWFD-110282:dep:GWFD-110101,GWFD-110282,GWFD-110101,depends_on,UDG<br>需要对用户的Web Proxy业务进行解析以获得Web Proxy动作和重定向地址，因此启用本特性前需要启用SA特性。,82209749 SA-Basic,overview_explicit
-GWFD-110283:dep:GWFD-110101,GWFD-110283,GWFD-110101,depends_on,- UDG需要对用户数据报文进行解析获得URL，因此需开启SA-Basic特性。<br>- UDG需要对DNS类型报文进行解析，因此需开启SA-Network Administration特性。,82209749 SA-Basic82209765 SA-Network Administration,overview_explicit
-GWFD-110283:dep:GWFD-020301,GWFD-110283,GWFD-020301,depends_on,DNS纠错动作绑定在rule中，且需要通过filter匹配对应的rule，因此该功能依赖于内容计费基本功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-110283:dep:GWFD-020351,GWFD-110283,GWFD-020351,depends_on,如果DNS纠错业务策略由PCRF下发，还需要启用PCC基本功能特性。,82209825 PCC 基本功能,overview_explicit
-GWFD-110284:dep:GWFD-110101,GWFD-110284,GWFD-110101,depends_on,UDG<br>需要对HTTP报文进行解析和规则匹配，因此使用本特性前需要启用SA-Basic和SA-Web Browsing特性。,82209749 SA-Basic82209765 SA-Network Administration,overview_explicit
-GWFD-110284:dep:GWFD-110201,GWFD-110284,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别82209775 HTTPS 业务地址识别,overview_explicit
-GWFD-110301:dep:GWFD-110311,GWFD-110301,GWFD-110311,depends_on,本特性基于用户的应用及终端平台进行带宽差异化控制，因此必须开启带宽控制功能。,82209832 基于业务感知的带宽控制,overview_explicit
-GWFD-110302:dep:GWFD-110101,GWFD-110302,GWFD-110101,depends_on,UDG<br>需要根据用户请求的业务判断是否建立基于下行链路的专有承载/专有QoS Flow，因此需开启SA-Basic功能进行业务识别。,82209749 SA-Basic,overview_explicit
-GWFD-110302:dep:GWFD-020351,GWFD-110302,GWFD-020351,depends_on,UDG<br>可以使用PCRF/PCF下发的规则建立专有承载/专有QoS Flow，此时需开启基本PCC功能以从PCRF/PCF获取规则。,82209825 PCC基本功能,overview_explicit
-GWFD-110302:dep:GWFD-110201,GWFD-110302,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别,overview_explicit
-GWFD-110302:dep:GWFD-110203,GWFD-110302,GWFD-110203,conflicts_with,TTP2.0为加密报文，不支持HTTP重定向处理。,82209775 HTTPS 业务地址识别,overview_explicit
-GWFD-110311:dep:GWFD-110101,GWFD-110311,GWFD-110101,depends_on,UDG<br>要基于业务进行带宽控制，因此需开启SA功能进行业务识别。,82209749 SA-Basic,overview_explicit
-GWFD-110311:dep:GWFD-020351,GWFD-110311,GWFD-020351,depends_on,UDG<br>使用PCF下发的规则进行控制，此时需开启基本PCC功能以获取PCC策略规则。,82209825 PCC 基本功能,overview_explicit
-GWFD-110312:dep:GWFD-020351,GWFD-110312,GWFD-020351,depends_on,UDG<br>需要将用户访问的业务在一段时间内的累计流量上报给PGW-C/SMF，再由PGW-C/SMF将用户业务的流量上报给PCRF/PCF，当业务累计流量达到指定阈值时，PCRF/PCF向PGW-C/SMF下发不同的PCC策略，PGW-U/UPF收到PGW-C/SMF下发PCC策略，需要先开启PCC基本功能特性以从PCRF/PCF获取到策略。,82209825 PCC基本功能,overview_explicit
-GWFD-110312:dep:GWFD-110311,GWFD-110312,GWFD-110311,depends_on,如果是在<br>UDG<br>本地配置QoS控制规则，需要开启基于业务感知的带宽控制特性。,82209832 基于业务感知的带宽控制,overview_explicit
-GWFD-110313:dep:GWFD-110231,GWFD-110313,GWFD-110231,depends_on,依赖于基于业务感知的带宽控制功能对业务的区分与匹配，必须开启基于业务感知的带宽控制。,82209832 基于业务感知的带宽控制,overview_explicit
-GWFD-110313:dep:GWFD-020354,GWFD-110313,GWFD-020354,depends_on,依赖于基于业务的整形功能，必须开启基于业务感知的Shaping。,82200AFN 基于业务的Shaping,overview_explicit
-GWFD-110321:dep:GWFD-020301,GWFD-110321,GWFD-020301,depends_on,UDG<br>需要识别业务进行计费，因此需要开启内容计费功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-110321:dep:GWFD-110101,GWFD-110321,GWFD-110101,depends_on,业务报文经过<br>UDG<br>时，需要通过SA对业务报文进行解析，因此需要开启SA-Basic功能。,82209749 SA-Basic,overview_explicit
-GWFD-110331:dep:GWFD-110101,GWFD-110331,GWFD-110101,depends_on,UDG<br>基于SA执行业务识别，所以基于业务流标识的无线资源优化特性开通必须同时开启SA功能。,82209749 SA-Basic,overview_explicit
-GWFD-110332:dep:GWFD-020351,GWFD-110332,GWFD-020351,depends_on,如果需要PCRF进行策略决策，<br>UDG<br>侧需要开启PCC基本功能以从PCRF获取策略。,82209825 PCC 基本功能,overview_explicit
-GWFD-110401:dep:GWFD-110101,GWFD-110401,GWFD-110101,depends_on,开启本功能前，需要先识别和解析HTTP报文，所以需要开启SA-Basic和SA-Web Browsing特性。说明：SA-Basic是所有SA(Service Awareness)协议解析的基础，因此需要开启。,82209749 SA-Basic,overview_explicit
-GWFD-110401:dep:GWFD-110103,GWFD-110401,GWFD-110103,depends_on,开启本功能前，需要先识别和解析HTTP报文，所以需要开启SA-Basic和SA-Web Browsing特性。说明：SA-Basic是所有SA(Service Awareness)协议解析的基础，因此需要开启。,82209755 SA-Web Browsing,overview_explicit
-GWFD-110401:dep:GWFD-110261,GWFD-110401,GWFD-110261,depends_on,HTTP头防欺诈特性依赖于HTTP头增强特性，启用HTTP头防欺诈功能必须开启HTTP头增强功能。,82209777 HTTP头增强,overview_explicit
-GWFD-110402:dep:GWFD-110101,GWFD-110402,GWFD-110101,depends_on,DNS计费防欺诈功能需要对DNS业务进行识别解析，因此需要开启SA-Basic和SA-Network Administration功能。,82209749 SA-Basic,overview_explicit
-GWFD-110402:dep:GWFD-110136,GWFD-110402,GWFD-110136,depends_on,DNS计费防欺诈功能需要对DNS业务进行识别解析，因此需要开启SA-Basic和SA-Network Administration功能。,82209765 SA-Network Administration,overview_explicit
-GWFD-110402:dep:GWFD-020301,GWFD-110402,GWFD-020301,depends_on,只有在内容计费的计费模式下才支持本功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-110403:dep:GWFD-110136,GWFD-110403,GWFD-110136,depends_on,HTTP计费防欺诈特性关键技术之一是通过SA-Network Administration得到DNS响应报文中的Host与IP地址的映射关系，以实现HTTP业务报文中服务器IP地址与映射表中目标IP地址的校验，所以需要开启SA-Network Administration功能。,82209765 SA-Network Administration,overview_explicit
-GWFD-110403:dep:GWFD-110103,GWFD-110403,GWFD-110103,depends_on,HTTP计费防欺诈特性关键技术之一是通过SA-Web Browsing得到HTTP请求报文中的服务器IP，用于与自学习映射表中目标IP地址的校验，所以需要开启SA-Web Browsing功能。,82209755 SA-Web Browsing,overview_explicit
-GWFD-110403:dep:GWFD-020301,GWFD-110403,GWFD-020301,depends_on,HTTP计费防欺诈功能的核心是保证内容计费的准确性，该特性是内容计费的增强特性，所以需要开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit
-GWFD-110403:dep:GWFD-110201,GWFD-110403,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别,overview_explicit
-GWFD-110403:dep:GWFD-110203,GWFD-110403,GWFD-110203,conflicts_with,TTP2.0为加密报文，不支持HTTP重定向处理。,82209775 HTTPS 业务地址识别,overview_explicit
-GWFD-110404:dep:GWFD-110101,GWFD-110404,GWFD-110101,depends_on,HTTPS业务行为识别特性依赖于<br>UDG<br>对报文的解析，所以启用该特性需要开启业务感知相关特性。,82209749 LKV3G5SABS01 SA-Basic82209754 LKV3G5HPWC01 SA-HTTP Pipeline & WAP Concatenation82209755 LKV3G5SAWB01 SA-Web Browsing82209756 LKV3G5SAFA01 SA-File Access82209757 LKV3G5SAMB01 SA-Mobile82209758 LKV3G5SAOS01 SA-Others82209759 LKV3G5SAST01 SA-Streaming82209760 LKV3G5SP2P01 SA-P2P82209761 LKV3G5SVOIP01 SA-VOIP82209762 LKV3G5EMAL01 SA-Email82209763 LKV3G5SAIM01 SA-IM82209764 LKV3G5GAME01 SA-Game82209765 LKV3G5SANA01 SA-Network Administration82209766 LKV3G5SARC01 SA-Remote Connectivity82209767 LKV3G5SANS01 SA-Network Storage82209768 LKV3G5SATN01 SA-Tunneling82209769 LKV3G5STOK01 SA-Stock82209770 LKV3G5SADB01 SA-Database82209771 LKV3G5QUIC01 SA-QUIC,overview_explicit
-GWFD-110471:dep:GWFD-110101,GWFD-110471,GWFD-110101,depends_on,UDG<br>需要将用户数据报文进行解析获得URL，因此需开启业务感知功能进行业务识别。- SA-Basic是SA的基本功能，必须开启。<br>- 对HTTP、WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。<br>- 对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209749 LKV3G5SABS01 SA-Basic,overview_explicit
-GWFD-110471:dep:GWFD-110103,GWFD-110471,GWFD-110103,depends_on,UDG<br>需要将用户数据报文进行解析获得URL，因此需开启业务感知功能进行业务识别。- SA-Basic是SA的基本功能，必须开启。<br>- 对HTTP、WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。<br>- 对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209755 LKV3G5SAWB01 SA-Web Browsing,overview_explicit
-GWFD-110471:dep:GWFD-110105,GWFD-110471,GWFD-110105,depends_on,UDG<br>需要将用户数据报文进行解析获得URL，因此需开启业务感知功能进行业务识别。- SA-Basic是SA的基本功能，必须开启。<br>- 对HTTP、WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。<br>- 对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209757 LKV3G5SAMB01 SA-Mobile,overview_explicit
-GWFD-110471:dep:GWFD-110201,GWFD-110471,GWFD-110201,depends_on,对HTTPS协议类型的报文进行解析时，需要开启HTTP2.0 Host识别功能。,82209773 LKV3G5HSHA01 HTTP2.0 Host识别,overview_explicit
-GWFD-110471:dep:GWFD-020351,GWFD-110471,GWFD-020351,depends_on,如果需要使用PCC策略对用户业务进行策略控制，则需要开启PCC基本功能。,82209825 LKV3G5PCCB01 PCC 基本功能,overview_explicit
-GWFD-110551:dep:GWFD-110552,GWFD-110551,GWFD-110552,affects,“5G超高带宽基本功能，1Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，1Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，1Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，1Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，1Gbps峰值速率”必须与“5G超高带宽承载接入，1Gbps峰值速率”特性同时部署，才能实现5G超高带宽，1Gbps的功能。,82209857 5G超高带宽承载接入 1Gbps峰值速率,overview_explicit
-GWFD-110552:dep:GWFD-110551,GWFD-110552,GWFD-110551,depends_on,“5G超高带宽基本功能，1Gbps峰值速率”<br>与<br>“5G超高带宽承载接入 ，1Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，1Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，1Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，1Gbps峰值速率”必须与“5G超高带宽承载接入，1Gbps峰值速率”特性同时部署，才能实现5G超高带宽，1Gbps的功能。,81203216 5G超高带宽基本功能 1Gbps峰值速率,overview_explicit
-GWFD-110553:dep:GWFD-110554,GWFD-110553,GWFD-110554,affects,“5G超高带宽基本功能，2Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，2Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，2Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，2Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，2Gbps峰值速率”必须与“5G超高带宽承载接入，2Gbps峰值速率”特性同时部署，才能实现5G超高带宽，2Gbps的功能。,82209858 5G超高带宽承载接入 2Gbps峰值速率,overview_explicit
-GWFD-110554:dep:GWFD-110553,GWFD-110554,GWFD-110553,depends_on,“5G超高带宽基本功能，2Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，2Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，2Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，2Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，2Gbps峰值速率”必须与“5G超高带宽承载接入，2Gbps峰值速率”特性同时部署，才能实现5G超高带宽，2Gbps的功能。,81203217 5G超高带宽基本功能 2Gbps峰值速率,overview_explicit
-GWFD-110555:dep:GWFD-110556,GWFD-110555,GWFD-110556,affects,“5G超高带宽基本功能，5Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，5Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，5Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，5Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，5Gbps峰值速率”必须与“5G超高带宽承载接入，5Gbps峰值速率”特性同时部署，才能实现5G超高带宽，5Gbps的功能。,82209859 5G超高带宽承载接入 5Gbps峰值速率,overview_explicit
-GWFD-110556:dep:GWFD-110555,GWFD-110556,GWFD-110555,depends_on,“5G超高带宽基本功能，5Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，5Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，5Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，5Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，5Gbps峰值速率”必须与“5G超高带宽承载接入，5Gbps峰值速率”特性同时部署，才能实现5G超高带宽，5Gbps的功能。,81203218 5G超高带宽基本功能 5Gbps峰值速率,overview_explicit
-GWFD-110557:dep:GWFD-110558,GWFD-110557,GWFD-110558,affects,**“5G超高带宽基本功能，10Gbps峰值速率”**<br>与<br>“5G超高带宽承载接入，10Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，10Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，10Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，10Gbps峰值速率”必须与“5G超高带宽承载接入，10Gbps峰值速率”特性同时部署，才能实现5G超高带宽，10Gbps的功能。,82200EAE 5G超高带宽承载接入 10Gbps峰值速率,overview_explicit
-GWFD-110558:dep:GWFD-110557,GWFD-110558,GWFD-110557,depends_on,“5G超高带宽基本功能，10Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，10Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，10Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，10Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，10Gbps峰值速率”必须与“5G超高带宽承载接入，10Gbps峰值速率”特性同时部署，才能实现5G超高带宽，10Gbps的功能。,81203624 5G超高带宽基本功能 10Gbps峰值速率,overview_explicit
-GWFD-110559:dep:GWFD-110560,GWFD-110559,GWFD-110560,affects,“5G超高带宽基本功能，20Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，20Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，20Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，20Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，20Gbps峰值速率”必须与“5G超高带宽承载接入，20Gbps峰值速率”特性同时部署，才能实现5G超高带宽，20Gbps的功能。,82200EAF 5G超高带宽承载接入 20Gbps峰值速率,overview_explicit
-GWFD-110560:dep:GWFD-110559,GWFD-110560,GWFD-110559,depends_on,“5G超高带宽基本功能，20Gbps峰值速率”<br>与<br>“5G超高带宽承载接入，20Gbps峰值速率”<br>的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，20Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，20Gbps峰值速率”为资源控制项。<br>- “5G超高带宽基本功能，20Gbps峰值速率”必须与“5G超高带宽承载接入，20Gbps峰值速率”特性同时部署，才能实现5G超高带宽，20Gbps的功能。,81203625 5G超高带宽基本功能 20Gbps峰值速率,overview_explicit
-GWFD-110601:dep:GWFD-010296,GWFD-110601,GWFD-010296,depends_on,NB-IoT eDRX模式特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见<br>[GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit
-GWFD-110606:dep:GWFD-010296,GWFD-110606,GWFD-010296,depends_on,基于信令面的数据传输特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见<br>[GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit
-GWFD-110607:dep:GWFD-010296,GWFD-110607,GWFD-010296,depends_on,Non-IP数据传输特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见<br>[GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit
-GWFD-110611:dep:GWFD-010296,GWFD-110611,GWFD-010296,depends_on,基于APN的NB-IoT终端接入速率控制性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见<br>[GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit
-GWFD-110611:dep:GWFD-110606,GWFD-110611,GWFD-110606,depends_on,如果使用基于APN的NB-IoT终端接入速率控制特性的场景是控制面优化，则需要同时开启基于信令面的数据传输Licence。反之则只需要开启基于APN的NB-IoT终端接入速率控制特性的Licence即可。,82200CKD 基于信令面的数据传输,overview_explicit
-GWFD-110612:dep:GWFD-010296,GWFD-110612,GWFD-010296,depends_on,基于服务PLMN的NB-IoT终端接入速率控制特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见<br>[GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit
-GWFD-110612:dep:GWFD-110606,GWFD-110612,GWFD-110606,depends_on,基于服务PLMN的NB-IoT终端接入速率控制应用于NB-IoT控制面优化数据传输，因此需要同时开启基于信令面的数据传输特性的License。,82200CKD 基于信令面的数据传输,overview_explicit
-GWFD-110910:dep:GWFD-020412,GWFD-110910,GWFD-020412,conflicts_with,L2TP VPN通过LNS设备实现了Routing Behind MS功能，所以在同一APN下，L2TP VPN和Routing Behind MS无需同时部署。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit
-GWFD-110910:dep:GWFD-010108,GWFD-110910,GWFD-010108,conflicts_with,手机后路由用户不能做用户面地址自动检测。,-,overview_explicit
-GWFD-110910:dep:GWFD-020482,GWFD-110910,GWFD-020482,conflicts_with,手机后路由用户不支持入不转板功能。,-,overview_explicit
-GWFD-110910:dep:GWFD-020531,GWFD-110910,GWFD-020531,conflicts_with,手机后路由用户不支持通用DNN漫游分流功能。,82200GCJ LKV3G5STCA01 移动VPN智能分流园区接入,overview_explicit
-GWFD-111201:dep:IPFD-015004,GWFD-111201,IPFD-015004,supports,网络加速卡支持IPsec功能时，需要同时开启IPsec基本功能。说明：网络加速卡支持IPsec IPv4隧道模式和IPsec IPv6隧道模式。,-,overview_explicit
-GWFD-111201:dep:GWFD-020482,GWFD-111201,GWFD-020482,conflicts_with,网络加速卡场景，不支持入不转板功能。,-,overview_explicit
-GWFD-111251:dep:GWFD-111252,GWFD-111251,GWFD-111252,affects,本特性和<br>[GWFD-111252 支持灰度拨测和发布](GWFD-111252 支持灰度拨测和发布_66156569.md)<br>推荐一起使用。,81203937 LKV3G5HLUG02 支持灰度拨测和发布,overview_explicit
-GWFD-111251:dep:GWFD-111253,GWFD-111251,GWFD-111253,affects,本特性和<br>[GWFD-111253 支持灰度升级无损回退](GWFD-111253 支持灰度升级无损回退_18780344.md)<br>推荐一起使用。,81203938 LKV3G5HLUG03 支持灰度升级无损回退,overview_explicit
-GWFD-111251:dep:GWFD-112003,GWFD-111251,GWFD-112003,conflicts_with,本特性与<br>[GWFD-112003 智网接入](../智家随行解决方案/GWFD-112003 智网接入_74774496.md)<br>无法同时使用。,82200HHW LKV3G5SNAC01 智网接入,overview_explicit
-GWFD-111251:dep:GWFD-113005,GWFD-111251,GWFD-113005,conflicts_with,本特性与<br>[GWFD-113005 支持媒体中继基本功能](../媒体中继解决方案/GWFD-113005 支持媒体中继基本功能_39478025.md)<br>无法同时使用。,82200JDR LKV3G5SMRB01 支持媒体中继基本功能,overview_explicit
-GWFD-111252:dep:GWFD-111251,GWFD-111252,GWFD-111251,depends_on,本特性开启前需要开启特性<br>[GWFD-111251 在线升级](GWFD-111251 在线升级_92812902.md)<br>。,81203630 LKV3G5HLUG01 灰度升级解决方案增值包基本功能,overview_explicit
-GWFD-111252:dep:GWFD-111253,GWFD-111252,GWFD-111253,affects,本特性和<br>[GWFD-111253 支持灰度升级无损回退](GWFD-111253 支持灰度升级无损回退_18780344.md)<br>推荐一起使用。,81203938 LKV3G5HLUG03 支持灰度升级无损回退,overview_explicit
-GWFD-111253:dep:GWFD-111251,GWFD-111253,GWFD-111251,depends_on,本特性开启前需要开启特性<br>[GWFD-111251 在线升级](GWFD-111251 在线升级_92812902.md)<br>。,81203630 LKV3G5HLUG01 灰度升级解决方案增值包基本功能,overview_explicit
-GWFD-111253:dep:GWFD-111252,GWFD-111253,GWFD-111252,affects,本特性和<br>[GWFD-111252 支持灰度拨测和发布](GWFD-111252 支持灰度拨测和发布_66156569.md)<br>推荐一起使用。,81203937 LKV3G5HLUG02 支持灰度拨测和发布,overview_explicit
-GWFD-111286:dep:GWFD-111302,GWFD-111286,GWFD-111302,depends_on,需要开启<br>[GWFD-111302 业务全样分析上报](../../报表功能/GWFD-111302 业务全样分析上报_93110964.md)<br>特性。,82200CXM 业务全样分析上报,overview_explicit
-GWFD-111286:dep:GWFD-111304,GWFD-111286,GWFD-111304,depends_on,需要开启<br>[GWFD-111304 TCP/UDP传输分析上报](../../报表功能/GWFD-111304 TCP_UDP传输分析上报_93112940.md)<br>特性。,82200CXP TCP/UDP传输分析上报,overview_explicit
-GWFD-111286:dep:GWFD-111305,GWFD-111286,GWFD-111305,depends_on,需要开启<br>[GWFD-111305 用户实时位置分析上报](../../报表功能/GWFD-111305 用户实时位置分析上报_93112941.md)<br>特性。,82200CXQ 用户实时位置分析上报,overview_explicit
-GWFD-111286:dep:GWFD-111283,GWFD-111286,GWFD-111283,depends_on,需要开启<br>[GWFD-111283 智能板订阅和采集](../../报表功能/GWFD-111283 智能板订阅和采集_44129997.md)<br>特性。,81203781 智能板订阅和采集,overview_explicit
-GWFD-111302:dep:GWFD-111301,GWFD-111302,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给报表服务器进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111303:dep:GWFD-111301,GWFD-111303,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111304:dep:GWFD-111301,GWFD-111304,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111305:dep:GWFD-111301,GWFD-111305,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111306:dep:GWFD-111302,GWFD-111306,GWFD-111302,depends_on,UDG<br>需要对业务流的数据报文进行灵活抽样，VOIP报文上报在使用前需要开启<br>[GWFD-111302 业务全样分析上报](GWFD-111302 业务全样分析上报_93110964.md)<br>。,82200CXM 业务全样分析上报,overview_explicit
-GWFD-111306:dep:GWFD-111301,GWFD-111306,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给报表服务器进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111306:dep:GWFD-110132,GWFD-111306,GWFD-110132,depends_on,VOIP报文上报在使用前需要开启<br>[GWFD-110132 SA-VOIP](../业务感知功能/GWFD-110132 SA-VOIP_24082518.md),82209761 SA-VOIP,overview_explicit
-GWFD-111307:dep:GWFD-111301,GWFD-111307,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111307:dep:GWFD-111302,GWFD-111307,GWFD-111302,depends_on,Web业务分析上报在使用前需要开启<br>[GWFD-111302 业务全样分析上报](GWFD-111302 业务全样分析上报_93110964.md)<br>。,82200CXM 业务全样分析上报,overview_explicit
-GWFD-111307:dep:GWFD-110103,GWFD-111307,GWFD-110103,depends_on,Web业务分析上报在使用前需要开启<br>[GWFD-110103 SA-Web Browsing](../业务感知功能/GWFD-110103 SA-Web Browsing_24082511.md)<br>。,82209755 SA-Web Browsing,overview_explicit
-GWFD-111309:dep:GWFD-111301,GWFD-111309,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111309:dep:GWFD-020351,GWFD-111309,GWFD-020351,depends_on,PCC规则报表上报在使用前需要开启<br>[GWFD-020351 PCC基本功能](../智能策略控制功能/GWFD-020351 PCC基本功能_42369272.md)<br>特性。,82209825 PCC基本功能,overview_explicit
-GWFD-111310:dep:GWFD-111301,GWFD-111310,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111310:dep:GWFD-110142,GWFD-111310,GWFD-110142,depends_on,QUIC业务分析上报在使用前需要开启<br>[GWFD-110142 SA-QUIC](../业务感知功能/GWFD-110142 SA-QUIC_24082528.md)<br>。,82209771 SA-QUIC,overview_explicit
-GWFD-111311:dep:GWFD-111301,GWFD-111311,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111312:dep:GWFD-111301,GWFD-111312,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111313:dep:GWFD-111301,GWFD-111313,GWFD-111301,depends_on,为实现网络业务的可视化，<br>UDG<br>需要对数据流进行识别和业务感知，并将识别和感知结果传递给<br>报表服务器<br>进行业务统计，因此需开启<br>[GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md)<br>特性。,82200CXL 智能分析记录生成,overview_explicit
-GWFD-111313:dep:GWFD-111311,GWFD-111313,GWFD-111311,depends_on,业务实时分析上报依赖CloudUDN下发订阅信息，因此需开启<br>[GWFD-111311 业务分析上报订阅](GWFD-111311 业务分析上报订阅_29704759.md)<br>特性。,82200EAJ 业务分析上报订阅,overview_explicit
-GWFD-112000:dep:GWFD-020251,GWFD-112000,GWFD-020251,depends_on,双故障Bypass特性作为IMS接入的特性，必须开启IMS接入特性。,82209873<br>VoLTE基础语音业务,overview_explicit
-GWFD-112000:dep:GWFD-020281,GWFD-112000,GWFD-020281,depends_on,双故障Bypass特性作为IMS接入的特性，必须开启IMS接入特性。,82200ELG<br>VoNR基础语音业务,overview_explicit
-GWFD-112000:dep:GWFD-020351,GWFD-112000,GWFD-020351,depends_on,双故障Bypass特性必须有PCRF/PCF的部署支撑，必须开启PCC基本功能。,82209825 PCC基本功能,overview_explicit
-GWFD-112000:dep:GWFD-020358,GWFD-112000,GWFD-020358,depends_on,语音专有QoS Flow/专有承载的创建和更新需要依赖GWFD-020358 业务触发的QoS保证功能。,82200AFP 业务触发的QoS保证,overview_explicit
+﻿id,source_feature_id,target_feature_id,dependency_type,description,license_control_item,source_type,conflict_pair_id
+GWFD-010104:dep:GWFD-010224,GWFD-010104,GWFD-010224,depends_on,UDG 向SMF上报用户面地址分配能力以及SMF指示 UDG 进行地址分配都依赖于N4接口的交互。使用本特性需要使用N4接口特性。,无,overview_explicit,
+GWFD-010104:dep:GWFD-010233,GWFD-010104,GWFD-010233,depends_on,UDG 向PGW-C上报用户面地址分配能力以及PGW-C指示 UDG 进行地址分配都依赖于Sxb接口的交互。使用本地址需要使用Sxb接口特性。,无,overview_explicit,
+GWFD-010105:dep:GWFD-010224,GWFD-010105,GWFD-010224,depends_on,5G场景下， UDG 向C面上报用户面地址分配能力以及C面指示 UDG 进行地址分配依赖于N4接口的交互。使用本特性需要使用N4接口特性。,无,overview_explicit,
+GWFD-010105:dep:GWFD-010233,GWFD-010105,GWFD-010233,depends_on,4G场景下， UDG 向C面上报用户面地址分配能力以及C面指示 UDG 进行地址分配依赖于Sxb接口的交互。使用本特性需要使用Sxb接口特性。,无,overview_explicit,
+GWFD-010107:dep:IPFD-015000,GWFD-010107,IPFD-015000,depends_on,静态地址路由冗余需要配置GRE隧道，因此依赖于GRE特性。,无,overview_explicit,
+GWFD-010107:dep:GWFD-010108,GWFD-010107,GWFD-010108,conflicts_with,静态地址路由冗余功能正常，静态地址用户不能做用户面地址自动探测，不影响业务功能。,-,overview_explicit,conflict:GWFD-010107-GWFD-010108
+GWFD-010108:dep:GWFD-010105,GWFD-010108,GWFD-010105,depends_on,该特性仅在 UDG 采用本地地址池分配IP地址时使用，因此使用本特性需要依赖于用户面地址分配特性。,无,overview_explicit,
+GWFD-010108:dep:GWFD-010107,GWFD-010108,GWFD-010107,conflicts_with,该特性不支持与静态地址用户路由冗余同时应用。,无,overview_explicit,conflict:GWFD-010107-GWFD-010108
+GWFD-010108:dep:GWFD-110910,GWFD-010108,GWFD-110910,conflicts_with,该特性不支持与Routing Behind MS同时应用。,82200CKP LKV3G5RBMS01 支持Routing Behind MS,overview_explicit,conflict:GWFD-010108-GWFD-110910
+GWFD-010108:dep:GWFD-020406,GWFD-010108,GWFD-020406,conflicts_with,该特性不支持与IPv6 Prefix Delegation同时应用。,82200CKF LKV3G5P6PD01 IPv6 Prefix Delegation,overview_explicit,conflict:GWFD-010108-GWFD-020406
+GWFD-010108:dep:GWFD-020412,GWFD-010108,GWFD-020412,conflicts_with,该特性不支持与L2TP VPN同时应用。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit,conflict:GWFD-010108-GWFD-020412
+GWFD-010155:dep:GWFD-020531,GWFD-010155,GWFD-020531,conflicts_with,通用DNN漫游分流只支持4G/5G接入，不支持其他接入方式。,82200GCJ LKV3G5STCA01 移动VPN智能分流园区接入,overview_explicit,conflict:GWFD-010155-GWFD-020531
+GWFD-010221:dep:GWFD-020405,GWFD-010221,GWFD-020405,depends_on,N3接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010222:dep:GWFD-020402,GWFD-010222,GWFD-020402,depends_on,N6接口数据面信息需要IPv6承载时，需要启用N6/Gi/SGi接口IPv6组网功能。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit,
+GWFD-010223:dep:GWFD-020405,GWFD-010223,GWFD-020405,depends_on,N9接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010224:dep:GWFD-020405,GWFD-010224,GWFD-020405,depends_on,N4接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010225:dep:GWFD-020402,GWFD-010225,GWFD-020402,depends_on,SGi接口数据面信息需要IPv6承载时，需要启用N6/Gi/SGi接口IPv6组网功能。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit,
+GWFD-010226:dep:GWFD-020405,GWFD-010226,GWFD-020405,depends_on,Gn接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010227:dep:GWFD-020405,GWFD-010227,GWFD-020405,depends_on,Gp接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010228:dep:GWFD-020405,GWFD-010228,GWFD-020405,depends_on,S1-U接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010229:dep:GWFD-020405,GWFD-010229,GWFD-020405,depends_on,S5接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010230:dep:GWFD-020405,GWFD-010230,GWFD-020405,depends_on,S8接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010231:dep:GWFD-020402,GWFD-010231,GWFD-020402,depends_on,Gi接口数据面信息需要IPv6承载时，需要启用N6/Gi/SGi接口IPv6组网功能。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit,
+GWFD-010232:dep:GWFD-020405,GWFD-010232,GWFD-020405,depends_on,Sxa接口需要IPv6承载时，需要启用逻辑接口支持IPv6特性。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010233:dep:GWFD-020405,GWFD-010233,GWFD-020405,depends_on,Sxb接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010235:dep:GWFD-020351,GWFD-010235,GWFD-020351,depends_on,需要 PGW-U/UPF 或 PGW-C/SMF 发起创建any to any GBR专有承载的流程。因此，需开启PCC基本功能后才能使用本功能。,82209825 PCC基本功能,overview_explicit,
+GWFD-010236:dep:GWFD-020405,GWFD-010236,GWFD-020405,depends_on,S2b接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010237:dep:GWFD-020405,GWFD-010237,GWFD-020405,depends_on,S11-U接口信息需要IPv6承载时，需要启用逻辑接口支持IPv6功能。,81203214 逻辑接口支持IPv6,overview_explicit,
+GWFD-010296:dep:GWFD-110601,GWFD-010296,GWFD-110601,affects,本特性与NB-IoT eDRX模式共同开启，可以使能NB-IoT eDRX功能。,82200CKC NB-IoT eDRX模式,overview_explicit,
+GWFD-010296:dep:GWFD-110607,GWFD-010296,GWFD-110607,affects,本特性与Non-IP数据传输共同开启，可以使能NB-IoT的Non-IP数据传输功能。,82200CKH Non-IP数据传输,overview_explicit,
+GWFD-010296:dep:GWFD-110606,GWFD-010296,GWFD-110606,affects,本特性与基于信令面的数据传输共同开启，可以使能NB-IoT基于信令面数据传输功能。,82200CKD 基于信令面的数据传输,overview_explicit,
+GWFD-010296:dep:GWFD-110611,GWFD-010296,GWFD-110611,affects,本特性与基于APN的NB-IoT终端接入速率控制共同开启，可以使能基于APN的NB-IoT终端接入速率控制功能。,82200CKJ 基于APN的NB-IoT终端接入速率控制,overview_explicit,
+GWFD-010296:dep:GWFD-110612,GWFD-010296,GWFD-110612,affects,本特性与基于服务PLMN的NB-IoT终端接入速率控制共同开启，可以使能基于服务PLMN的NB-IoT终端接入速率控制功能。,82200CKK 基于服务PLMN的NB-IoT终端接入速率控制,overview_explicit,
+GWFD-020161:dep:GWFD-010224,GWFD-020161,GWFD-010224,depends_on,CU Full Mesh组网在原有N4/Sx接口的PFCP协议上进行增强，因此使用本特性需要依赖N4/Sx接口特性。,无,overview_explicit,
+GWFD-020161:dep:GWFD-010105,GWFD-020161,GWFD-010105,interacts_with,Full Mesh场景下，使用 UDG 分配IP地址不用考虑分配到同一U面的地址冲突问题，部署运维更简化。,无,overview_explicit,
+GWFD-020251:dep:GWFD-020351,GWFD-020251,GWFD-020351,depends_on,如果需要PCRF通过SGW-C/PGW-C下发QoS策略给 SGW-U/PGW-U ，开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit,
+GWFD-020252:dep:GWFD-020251,GWFD-020252,GWFD-020251,depends_on,需要 UDG 侧开启VoLTE基础语音业务，才能启用SRVCC特性。,82209873 VoLTE基础语音业务,overview_explicit,
+GWFD-020252:dep:GWFD-020351,GWFD-020252,GWFD-020351,depends_on,需要 UDG 侧开启PCC基本功能特性，才能启用SRVCC特性。,82209825 PCC 基本功能,overview_explicit,
+GWFD-020253:dep:GWFD-020251,GWFD-020253,GWFD-020251,depends_on,P-CSCF故障时IMS业务恢复特性作为IMS接入的特性，必须开启IMS接入特性。,82209873; VoLTE基础语音业务,overview_explicit,
+GWFD-020253:dep:GWFD-020351,GWFD-020253,GWFD-020351,depends_on,P-CSCF故障时IMS业务恢复特性必须有PCRF/PCF的部署支撑，必须开启PCC基本功能。,82209825 PCC基本功能,overview_explicit,
+GWFD-020254:dep:GWFD-020251,GWFD-020254,GWFD-020251,depends_on,该特性需要先开通VoLTE基础语音业务。,82209873; VoLTE基础语音业务,overview_explicit,
+GWFD-020254:dep:GWFD-020351,GWFD-020254,GWFD-020351,depends_on,VoLTE业务快速恢复特性必须有PCRF的部署支撑，必须开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit,
+GWFD-020282:dep:GWFD-020251,GWFD-020282,GWFD-020251,depends_on,需要 UDG 侧开启VoLTE基础语音业务，才能启用EPS Fallback特性。,82209873 VoLTE基础语音业务,overview_explicit,
+GWFD-020282:dep:GWFD-010154,GWFD-020282,GWFD-010154,depends_on,需要 UDG 侧开启LTE与5G SA网络间互操作，使用户可以在5G和4G网络之间切换，才能启用EPS Fallback特性。,无,overview_explicit,
+GWFD-020300:dep:GWFD-020301,GWFD-020300,GWFD-020301,depends_on,如果需要基于业务粒度对用户业务进行在线计费，需要同时开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-020301:dep:GWFD-110101,GWFD-020301,GWFD-110101,depends_on,内容计费首先需要识别出业务类型，然后针对不同业务实施不同费率的计费，所以必须先开启SA特性。,82209749 SA-Basic,overview_explicit,
+GWFD-020301:dep:GWFD-020300,GWFD-020301,GWFD-020300,depends_on,在线计费是计费基础功能之一，如果使用在线计费系统进行内容计费，需要开启在线计费。,82209821 在线计费,overview_explicit,
+GWFD-020301:dep:GWFD-010171,GWFD-020301,GWFD-010171,depends_on,离线计费是计费基础功能之一，如果使用离线计费系统进行内容计费，需要开启离线计费。,无,overview_explicit,
+GWFD-020302:dep:GWFD-020301,GWFD-020302,GWFD-020301,depends_on,基于业务时长的计费是内容计费的增强形式，所以使用基于业务时长的计费前，需要先开启内容计费功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-020302:dep:GWFD-110101,GWFD-020302,GWFD-110101,depends_on,内容计费首先需要识别出业务类型，然后针对不同业务实施不同费率的计费，所以必须先开启SA特性。,82209749 SA-Basic,overview_explicit,
+GWFD-020303:dep:GWFD-020301,GWFD-020303,GWFD-020301,depends_on,基于业务流量的计费是内容计费的增强形式，所以使用基于业务流量的计费前，需要先开启内容计费功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-020303:dep:GWFD-110101,GWFD-020303,GWFD-110101,depends_on,内容计费首先需要识别出业务类型，然后针对不同业务实施不同费率的计费，所以必须先开启SA特性。,82209749 SA-Basic,overview_explicit,
+GWFD-020304:dep:GWFD-020301,GWFD-020304,GWFD-020301,depends_on,关联URL核减功能关键技术是支持识别Referer字段，该特性是内容计费的增强特性，所以需要开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-020304:dep:GWFD-110103,GWFD-020304,GWFD-110103,depends_on,关联URL核减功能可能需要对HTTP业务进行识别解析，所以需要开启SA-Web Browsing功能。,82209755 SA-WebBrowsing,overview_explicit,
+GWFD-020305:dep:GWFD-020301,GWFD-020305,GWFD-020301,depends_on,由于终端异常下行流量检测是基于业务流进行的检测，因此需开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-020306:dep:GWFD-020301,GWFD-020306,GWFD-020301,interacts_with,事件计费是内容计费的增强特性，所以使用事件计费，需要先开启内容计费功能。,,overview_explicit,
+GWFD-020306:dep:GWFD-110101,GWFD-020306,GWFD-110101,interacts_with,内容计费首先需要识别出业务类型，然后针对不同业务实施不同费率的计费，所以必须先开启SA特性。,,overview_explicit,
+GWFD-020306:dep:GWFD-110103,GWFD-020306,GWFD-110103,interacts_with,如果对HTTP业务进行事件计费，需要开启SA-Web Browsing功能对HTTP业务进行解析。,,overview_explicit,
+GWFD-020306:dep:GWFD-110105,GWFD-020306,GWFD-110105,interacts_with,如果对WAP或者MMS业务进行事件计费，需要开启SA-Mobile功能对WAP或者MMS业务进行解析。,,overview_explicit,
+GWFD-020306:dep:GWFD-010173,GWFD-020306,GWFD-010173,interacts_with,融合计费是计费基础功能之一，如果使用事件计费功能，需要开启融合计费。,,overview_explicit,
+GWFD-020306:dep:GWFD-020300,GWFD-020306,GWFD-020300,interacts_with,在线计费是计费基础功能之一，如果使用OCS进行内容计费，需要开启在线计费。,,overview_explicit,
+GWFD-020306:dep:GWFD-010171,GWFD-020306,GWFD-010171,interacts_with,离线计费是计费基础功能之一，如果使用CG进行内容计费，需要开启离线计费。,,overview_explicit,
+GWFD-020308:dep:GWFD-020301,GWFD-020308,GWFD-020301,depends_on,只有在内容计费的计费模式下才支持7层流量统计，所以使用7层流量统计前，需要先开启内容计费功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-020308:dep:GWFD-110101,GWFD-020308,GWFD-110101,depends_on,使用7层流量统计前，需要先开启SA特性。对于不同的业务，还需要使能相应业务的协议解析。,82209749 SA-Basic,overview_explicit,
+GWFD-020352:dep:GWFD-110101,GWFD-020352,GWFD-110101,depends_on,需要对用户上下行数据进行识别解析，必须开启业务感知功能。,82209749 SA-Basic,overview_explicit,
+GWFD-020352:dep:GWFD-020401,GWFD-020352,GWFD-020401,depends_on,UDG 需要建立IPv6承载上下文，因此需开启IPv6承载上下文特性。,82209828 IPv6承载上下文,overview_explicit,
+GWFD-020352:dep:GWFD-020403,GWFD-020352,GWFD-020403,depends_on,如果需要对IPv4v6双栈接入用户的业务进行解析，则需要先开启IPv4v6双栈接入特性。,82209829 IPv4v6双栈接入,overview_explicit,
+GWFD-020352:dep:GWFD-020402,GWFD-020352,GWFD-020402,depends_on,UDG 与其他网元采用N6/Gi/SGi接口IPv6组网支持IPv6业务，因此需要开启N6/Gi/SGi接口IPv6组网特性。,81203213 N6/Gi/SGi接口IPv6组网,overview_explicit,
+GWFD-020353:dep:GWFD-020351,GWFD-020353,GWFD-020351,depends_on,UDG 需要将用户在一段时间内的累计流量上报给PGW-C/SMF，PGW-C/SMF再上报给PCRF/PCF，累计流量达到指定阈值时，PCRF/PCF下发不同的策略给PGW-C/SMF，PGW-C/SMF再下发给PGW-U/UPF，因此需开启PCC基本功能特性以获取策略。,82209825 PCC 基本功能,overview_explicit,
+GWFD-020354:dep:GWFD-110101,GWFD-020354,GWFD-110101,depends_on,需要对用户上下行数据进行识别解析，必须开启业务感知功能。,82209749 SA-Basic,overview_explicit,
+GWFD-020354:dep:GWFD-110311,GWFD-020354,GWFD-110311,depends_on,依赖于基于业务感知的带宽控制功能对业务的区分与匹配，必须开启基于业务感知的带宽控制。,82209832 基于业务感知的带宽控制,overview_explicit,
+GWFD-020356:dep:GWFD-020300,GWFD-020356,GWFD-020300,depends_on,计费信息实时提醒功能通过扩展标准Gy接口实现OCS下发一次重定向（One-shot Redirection）策略，因此使用本特性需要开启在线计费功能。,82209821 在线计费,overview_explicit,
+GWFD-020356:dep:GWFD-110103,GWFD-020356,GWFD-110103,depends_on,计费信息实时提醒功能针对URL白名单中的业务进行重定向，这些功能的使用需要先开启业务解析功能。,82209755 SA-Web Browsing,overview_explicit,
+GWFD-020357:dep:GWFD-020351,GWFD-020357,GWFD-020351,depends_on,PCRF/PCF下发携带Application ID的PCC规则给 UDG ，所以开通增强的ADC基本功能必须同时开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit,
+GWFD-020358:dep:GWFD-110101,GWFD-020358,GWFD-110101,depends_on,UDG 需要根据用户请求的业务判断是否建立专有承载/专有QoS Flow，因此需开启SA-Basic功能进行业务识别。,82209749 SA-Basic,overview_explicit,
+GWFD-020358:dep:GWFD-020351,GWFD-020358,GWFD-020351,depends_on,UDG 可以使用PCRF/PCF下发的QoS参数建立专有承载/专有QoS Flow，此时需开启基本PCC功能以从PCRF/PCF获取规则。,82209825 PCC基本功能,overview_explicit,
+GWFD-020359:dep:GWFD-020351,GWFD-020359,GWFD-020351,depends_on,PCRF下发IM类业务的PCC规则给 UDG ，所以开通IM类业务无线资源管必须同时开启PCC基本功能。,82209825 PCC 基本功能,overview_explicit,
+GWFD-020401:dep:GWFD-020402,GWFD-020401,GWFD-020402,depends_on,在N6/Gi/SGi接口具备支持IPv6的能力时，需要使用N6/Gi/SGi接口IPv6组网，配合共同完成IPv6用户的业务接入功能。,无,overview_explicit,
+GWFD-020402:dep:GWFD-020401,GWFD-020402,GWFD-020401,depends_on,一般情况下，本特性与IPv6承载上下文配合，共同完成IPv6用户的业务接入功能。,82209828 IPv6承载上下文,overview_explicit,
+GWFD-020403:dep:GWFD-020402,GWFD-020403,GWFD-020402,depends_on,在N6/Gi/SGi接口已经支持IPv4的情况下，再同时部署N6/Gi/SGi接口IPv6组网，配合共同完成IPv4v6用户的业务接入功能。,无,overview_explicit,
+GWFD-020404:dep:GWFD-020301,GWFD-020404,GWFD-020301,depends_on,如果需要基于业务粒度对IPv6用户/IPv4v6双栈用户业务进行在线计费，需要同时开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-020405:dep:GWFD-010226,GWFD-020405,GWFD-010226,depends_on,Gn/Gp接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010225,GWFD-020405,GWFD-010225,depends_on,SGi/Gi接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010228,GWFD-020405,GWFD-010228,depends_on,S1-U接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010229,GWFD-020405,GWFD-010229,depends_on,S5/S8接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010221,GWFD-020405,GWFD-010221,depends_on,N3接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010223,GWFD-020405,GWFD-010223,depends_on,N9接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010224,GWFD-020405,GWFD-010224,depends_on,N4接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010232,GWFD-020405,GWFD-010232,depends_on,Sxa接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:GWFD-010233,GWFD-020405,GWFD-010233,depends_on,Sxb接口需要IPv6承载时，需要启用本特性。,无,overview_explicit,
+GWFD-020405:dep:IPFD-014000,GWFD-020405,IPFD-014000,depends_on,逻辑接口配置静态路由或者逻辑接口相关的IPv6路由需要通过动态路由协议发布时，需要启用路由功能。,无,overview_explicit,
+GWFD-020406:dep:GWFD-020401,GWFD-020406,GWFD-020401,depends_on,UDG 需要建立IPv6承载上下文，因此需开启IPv6承载上下文特性。,82209828 IPv6承载上下文,overview_explicit,
+GWFD-020406:dep:GWFD-020403,GWFD-020406,GWFD-020403,depends_on,如果需要对IPv4v6双栈接入用户的业务进行解析，则需要先开启IPv4v6双栈接入特性。,82209829 IPv4v6双栈接入,overview_explicit,
+GWFD-020406:dep:GWFD-020412,GWFD-020406,GWFD-020412,conflicts_with,L2TP VPN通过LNS设备实现了手机后路由功能，所以在同一APN下，L2TP VPN和手机后路由功能无需同时部署。,82200BVC L2TP VPN,overview_explicit,conflict:GWFD-020406-GWFD-020412
+GWFD-020406:dep:GWFD-010108,GWFD-020406,GWFD-010108,conflicts_with,手机后路由用户不能做用户面地址自动检测。,-,overview_explicit,conflict:GWFD-010108-GWFD-020406
+GWFD-020406:dep:GWFD-020482,GWFD-020406,GWFD-020482,conflicts_with,手机后路由用户不支持入不转板功能。,-,overview_explicit,conflict:GWFD-020406-GWFD-020482
+GWFD-020406:dep:GWFD-020531,GWFD-020406,GWFD-020531,conflicts_with,手机后路由用户不支持通用DNN漫游分流功能。,82200GCJ LKV3G5STCA01 移动VPN智能分流园区接入,overview_explicit,conflict:GWFD-020406-GWFD-020531
+GWFD-020412:dep:GWFD-010108,GWFD-020412,GWFD-010108,conflicts_with,L2TP VPN不支持与用户面地址自动检测功能同时应用。,无,overview_explicit,conflict:GWFD-010108-GWFD-020412
+GWFD-020412:dep:GWFD-020482,GWFD-020412,GWFD-020482,conflicts_with,APN下开启L2TP VPN特性，则不支持入不转板功能。,无,overview_explicit,conflict:GWFD-020412-GWFD-020482
+GWFD-020421:dep:GWFD-010105,GWFD-020421,GWFD-010105,depends_on,基于位置的地址分配是 UDG 通过本地地址池根据用户位置动态分配IP地址，因此使用本特性需要依赖于用户面地址分配特性。,无,overview_explicit,
+GWFD-020421:dep:GWFD-020412,GWFD-020421,GWFD-020412,conflicts_with,基于位置的地址分配特性不支持与L2TP VPN功能同时应用。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit,conflict:GWFD-020412-GWFD-020421
+GWFD-020423:dep:IPFD-014000,GWFD-020423,IPFD-014000,depends_on,路由交叉功能依赖BGP特性。,-,overview_explicit,
+GWFD-020482:dep:GWFD-111201,GWFD-020482,GWFD-111201,conflicts_with,网络加速卡场景，不支持入不转板功能。,82200EBL LKV3G5NPTO01 网络加速卡流量加速单元,overview_explicit,conflict:GWFD-020482-GWFD-111201
+GWFD-020482:dep:GWFD-010107,GWFD-020482,GWFD-010107,conflicts_with,应用静态地址用户路由冗余功能的会话，不支持下行入不转板。,-,overview_explicit,conflict:GWFD-010107-GWFD-020482
+GWFD-020482:dep:GWFD-020412,GWFD-020482,GWFD-020412,conflicts_with,应用L2TP VPN功能的会话，不支持下行入不转板。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit,conflict:GWFD-020412-GWFD-020482
+GWFD-020482:dep:GWFD-110910,GWFD-020482,GWFD-110910,conflicts_with,手机后路由用户的IPv4业务报文，不支持入不转板。,82200CKP LKV3G5RBMS01 支持Routing Behind MS,overview_explicit,conflict:GWFD-020482-GWFD-110910
+GWFD-020482:dep:GWFD-020406,GWFD-020482,GWFD-020406,conflicts_with,手机后路由用户的IPv6业务报文，不支持入不转板。,82200CKF LKV3G5P6PD01 IPv6 Prefix Delegation,overview_explicit,conflict:GWFD-020406-GWFD-020482
+GWFD-020482:dep:GWFD-010105,GWFD-020482,GWFD-010105,depends_on,仅UPF分配UE IP地址的会话，支持下行入不转板功能。,-,overview_explicit,
+GWFD-020482:dep:GWFD-010104,GWFD-020482,GWFD-010104,affects,外部NF分配UE IP地址（例如采用UDM给UE分配的静态签约地址、SMF分配地址、AAA服务器分配地址）的会话，不支持下行入不转板功能。,-,overview_explicit,
+GWFD-020501:dep:GWFD-020412,GWFD-020501,GWFD-020412,conflicts_with,辅锚点UPF不支持同企业之间建立L2TP隧道。,82200BVC L2TP VPN,overview_explicit,conflict:GWFD-020412-GWFD-020501
+GWFD-020501:dep:GWFD-110910,GWFD-020501,GWFD-110910,conflicts_with,IPv4手机后路由用户不支持ULCL分流功能。,82200CKP 支持Routing Behind MS,overview_explicit,conflict:GWFD-020501-GWFD-110910
+GWFD-020501:dep:GWFD-020406,GWFD-020501,GWFD-020406,conflicts_with,IPv6 Prefix Delegation用户不支持ULCL分流功能。,82200CKF IPv6 Prefix Delegation,overview_explicit,conflict:GWFD-020406-GWFD-020501
+GWFD-020501:dep:GWFD-010108,GWFD-020501,GWFD-010108,conflicts_with,辅锚点UPF不支持到园区的用户面地址自动检测功能。,-,overview_explicit,conflict:GWFD-010108-GWFD-020501
+GWFD-020501:dep:GWFD-020353,GWFD-020501,GWFD-020353,conflicts_with,Session级的FUP功能与ULCL分流功能不能同时部署。,82200AFM 基于累计流量的策略控制,overview_explicit,conflict:GWFD-020353-GWFD-020501
+GWFD-020501:dep:GWFD-020358,GWFD-020501,GWFD-020358,conflicts_with,业务触发专载建立与ULCL分流功能不能同时开启。,82200AFP; 业务触发的QoS保证,overview_explicit,conflict:GWFD-020358-GWFD-020501
+GWFD-020501:dep:GWFD-010155,GWFD-020501,GWFD-010155,conflicts_with,ULCL分流只支持4G/5G接入，不支持其他接入方式。,-,overview_explicit,conflict:GWFD-010155-GWFD-020501
+GWFD-020502:dep:GWFD-020501,GWFD-020502,GWFD-020501,depends_on,使用跨域用户漫游前必须先开启跨域业务访问功能。,NA,overview_explicit,
+GWFD-020531:dep:GWFD-110910,GWFD-020531,GWFD-110910,conflicts_with,IPv4手机后路由用户不支持通用DNN漫游分流功能。,82200CKP 支持Routing Behind MS,overview_explicit,conflict:GWFD-020531-GWFD-110910
+GWFD-020531:dep:GWFD-020406,GWFD-020531,GWFD-020406,conflicts_with,IPv6 Prefix Delegation用户不支持通用DNN漫游分流功能。,82200CKF IPv6 Prefix Delegation,overview_explicit,conflict:GWFD-020406-GWFD-020531
+GWFD-020531:dep:GWFD-010155,GWFD-020531,GWFD-010155,conflicts_with,通用DNN漫游分流只支持4G/5G接入，不支持其他接入方式。,-,overview_explicit,conflict:GWFD-010155-GWFD-020531
+GWFD-020531:dep:GWFD-020358,GWFD-020531,GWFD-020358,conflicts_with,不支持针对专网业务触发专载建立，专有DNN的会话Qos传递不到无线侧。,82200AFP; 业务触发的QoS保证,overview_explicit,conflict:GWFD-020358-GWFD-020531
+GWFD-020531:dep:GWFD-020351,GWFD-020531,GWFD-020351,depends_on,依赖该特性实现会话策略执行和计费控制。,82209825 PCC 基本功能,overview_explicit,
+GWFD-020531:dep:GWFD-030501,GWFD-020531,GWFD-030501,depends_on,依赖该特性实现转接SMF与DN-AAA之间二次鉴权的消息。,82200DLK 终端二次鉴权,overview_explicit,
+GWFD-020531:dep:GWFD-110282,GWFD-020531,GWFD-110282,depends_on,依赖该特性实现DNS重定向功能。,82209781 Web Proxy,overview_explicit,
+GWFD-110102:dep:GWFD-110101,GWFD-110102,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110102:dep:GWFD-110103,GWFD-110102,GWFD-110103,depends_on,由于要识别HTTP报文实现SA-HTTP Pipeline功能，因此需开启SA-Web Browsing功能。,82209755 SA-Web Browsing,overview_explicit,
+GWFD-110102:dep:GWFD-110105,GWFD-110102,GWFD-110105,depends_on,由于要识别WAP报文实现SA-WAP concatenation功能，因此需开启SA-Mobile功能。,82209757 SA-Mobile,overview_explicit,
+GWFD-110103:dep:GWFD-110101,GWFD-110103,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110104:dep:GWFD-110101,GWFD-110104,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110105:dep:GWFD-110101,GWFD-110105,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110106:dep:GWFD-110101,GWFD-110106,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110107:dep:GWFD-110101,GWFD-110107,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110131:dep:GWFD-110101,GWFD-110131,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110132:dep:GWFD-110101,GWFD-110132,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110133:dep:GWFD-110101,GWFD-110133,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110134:dep:GWFD-110101,GWFD-110134,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110135:dep:GWFD-110101,GWFD-110135,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110136:dep:GWFD-110101,GWFD-110136,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110137:dep:GWFD-110101,GWFD-110137,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110138:dep:GWFD-110101,GWFD-110138,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110139:dep:GWFD-110101,GWFD-110139,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110140:dep:GWFD-110101,GWFD-110140,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110141:dep:GWFD-110101,GWFD-110141,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110142:dep:GWFD-110101,GWFD-110142,GWFD-110101,depends_on,SA-Basic是SA的基本功能，必须开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110201:dep:GWFD-110101,GWFD-110201,GWFD-110101,depends_on,HTTP2.0 Host识别特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit,
+GWFD-110201:dep:GWFD-110281,GWFD-110201,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit,conflict:GWFD-110201-GWFD-110281
+GWFD-110201:dep:GWFD-110284,GWFD-110201,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit,conflict:GWFD-110201-GWFD-110284
+GWFD-110201:dep:GWFD-110302,GWFD-110201,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit,conflict:GWFD-110201-GWFD-110302
+GWFD-110201:dep:GWFD-110403,GWFD-110201,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit,conflict:GWFD-110201-GWFD-110403
+GWFD-110202:dep:GWFD-110101,GWFD-110202,GWFD-110101,depends_on,HTTP2.0协议回落特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit,
+GWFD-110203:dep:GWFD-110101,GWFD-110203,GWFD-110101,depends_on,HTTPS业务地址识别特性依赖于 UDG 对DNS报文的解析，所以启用该特性需要开启SA-Basic和SA-Network Administration特性。,82209749 SA-Basic,overview_explicit,
+GWFD-110203:dep:GWFD-110136,GWFD-110203,GWFD-110136,depends_on,HTTPS业务地址识别特性依赖于 UDG 对DNS报文的解析，所以启用该特性需要开启SA-Basic和SA-Network Administration特性。,82209765 SA-Network Administration,overview_explicit,
+GWFD-110203:dep:GWFD-110281,GWFD-110203,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit,conflict:GWFD-110203-GWFD-110281
+GWFD-110203:dep:GWFD-110284,GWFD-110203,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit,conflict:GWFD-110203-GWFD-110284
+GWFD-110203:dep:GWFD-110302,GWFD-110203,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit,conflict:GWFD-110203-GWFD-110302
+GWFD-110203:dep:GWFD-110403,GWFD-110203,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit,conflict:GWFD-110203-GWFD-110403
+GWFD-110251:dep:GWFD-110101,GWFD-110251,GWFD-110101,depends_on,HTTP3.0 Host识别特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit,
+GWFD-110251:dep:GWFD-110103,GWFD-110251,GWFD-110103,depends_on,Web Browsing协议的应用类型非常多而且不断有新的应用类型出现和更新，需要定期更新SA识别特征库以支持新的Web Browsing协议类型的识别。,82209755 SA-WebBrowsing,overview_explicit,
+GWFD-110251:dep:GWFD-110142,GWFD-110251,GWFD-110142,depends_on,HTTP3.0 Host识别特性依赖于SA-QUIC才能进行计费和业务控制。,82209771 SA-QUIC,overview_explicit,
+GWFD-110251:dep:GWFD-110281,GWFD-110251,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit,conflict:GWFD-110251-GWFD-110281
+GWFD-110251:dep:GWFD-110284,GWFD-110251,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit,conflict:GWFD-110251-GWFD-110284
+GWFD-110251:dep:GWFD-110302,GWFD-110251,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit,conflict:GWFD-110251-GWFD-110302
+GWFD-110251:dep:GWFD-110403,GWFD-110251,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit,conflict:GWFD-110251-GWFD-110403
+GWFD-110252:dep:GWFD-110101,GWFD-110252,GWFD-110101,depends_on,HTTP3.0 Host分析特性依赖于SA解析和识别才能进行计费和业务控制，所以启用该特性需要开启SA Basic。,82209749 SA-Basic,overview_explicit,
+GWFD-110252:dep:GWFD-110281,GWFD-110252,GWFD-110281,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209780 用户Portal,overview_explicit,conflict:GWFD-110252-GWFD-110281
+GWFD-110252:dep:GWFD-110284,GWFD-110252,GWFD-110284,conflicts_with,HTTP3.0为加密报文，不支持HTTP重定向处理。,82209783 HTTP智能重定向,overview_explicit,conflict:GWFD-110252-GWFD-110284
+GWFD-110252:dep:GWFD-110302,GWFD-110252,GWFD-110302,conflicts_with,基于上下行解耦的视频承载信令控制功能是指UPF能够识别出特定的视频业务，对其业务的下行链路建立专有承载/专有QoS Flow。只支持HTTP1.x协议，不支持HTTP3.0协议。,82200EBQ 基于上下行解耦的视频承载信令控制,overview_explicit,conflict:GWFD-110252-GWFD-110302
+GWFD-110252:dep:GWFD-110403,GWFD-110252,GWFD-110403,conflicts_with,HTTP3.0为加密报文，不支持HTTP计费防欺诈处理。,82209788 HTTP计费防欺诈,overview_explicit,conflict:GWFD-110252-GWFD-110403
+GWFD-110261:dep:GWFD-110101,GWFD-110261,GWFD-110101,depends_on,UDG 需要对HTTP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTP协议之上，如MMS、流媒体等，对这些业务进行HTTP头增强时，还需要在 UDG 上开启对应协议的SA特性。例如对HTTP承载的MMS业务进行HTTP头增强，需要增加开启SA-Mobile特性。,82209749 SA-Basic,overview_explicit,
+GWFD-110261:dep:GWFD-110103,GWFD-110261,GWFD-110103,depends_on,UDG 需要对HTTP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTP协议之上，如MMS、流媒体等，对这些业务进行HTTP头增强时，还需要在 UDG 上开启对应协议的SA特性。例如对HTTP承载的MMS业务进行HTTP头增强，需要增加开启SA-Mobile特性。,82209755 SA-Web Browsing,overview_explicit,
+GWFD-110261:dep:GWFD-110105,GWFD-110261,GWFD-110105,depends_on,UDG 需要对HTTP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTP协议之上，如MMS、流媒体等，对这些业务进行HTTP头增强时，还需要在 UDG 上开启对应协议的SA特性。例如对HTTP承载的MMS业务进行HTTP头增强，需要增加开启SA-Mobile特性。,82209757 SA-Mobile,overview_explicit,
+GWFD-110262:dep:GWFD-110101,GWFD-110262,GWFD-110101,depends_on,UDG 需要对RTSP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。,82209749 SA-Basic,overview_explicit,
+GWFD-110262:dep:GWFD-110107,GWFD-110262,GWFD-110107,depends_on,UDG 需要对RTSP报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。,82209759 SA-Streaming,overview_explicit,
+GWFD-110263:dep:GWFD-110101,GWFD-110263,GWFD-110101,depends_on,UDG 需要对HTTPS报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTPS协议之上，如MMS、流媒体等，对这些业务进行HTTPS头增强时，还需要在 UDG 上开启对应协议的SA特性。例如对HTTPS承载的MMS业务进行HTTPS头增强，需要增加开启SA-Mobile特性。,82209749 SA-Basic,overview_explicit,
+GWFD-110263:dep:GWFD-110103,GWFD-110263,GWFD-110103,depends_on,UDG 需要对HTTPS报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTPS协议之上，如MMS、流媒体等，对这些业务进行HTTPS头增强时，还需要在 UDG 上开启对应协议的SA特性。例如对HTTPS承载的MMS业务进行HTTPS头增强，需要增加开启SA-Mobile特性。,82209755 SA-Web Browsing,overview_explicit,
+GWFD-110263:dep:GWFD-110105,GWFD-110263,GWFD-110105,depends_on,UDG 需要对HTTPS报文进行解析以执行头增强动作，因此使用本特性前需要启用SA特性。说明：一些业务承载于HTTPS协议之上，如MMS、流媒体等，对这些业务进行HTTPS头增强时，还需要在 UDG 上开启对应协议的SA特性。例如对HTTPS承载的MMS业务进行HTTPS头增强，需要增加开启SA-Mobile特性。,82209757 SA-Mobile,overview_explicit,
+GWFD-110263:dep:GWFD-110201,GWFD-110263,GWFD-110201,depends_on,对HTTPS协议类型的报文进行解析时，需要开启HTTP2.0 Host识别功能。,82209773 HTTP2.0 Host识别,overview_explicit,
+GWFD-110281:dep:GWFD-110101,GWFD-110281,GWFD-110101,depends_on,UDG 需要对用户的Portal业务进行解析以获得captive-portal动作和重定向地址，因此启用本特性前需要启用SA特性。SA-Basic是SA的基本功能，必须开启。对 HTTP、 WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209749 SA-Basic82209755 SA-Web Browsing82209757 SA-Mobile,overview_explicit,
+GWFD-110281:dep:GWFD-110201,GWFD-110281,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别82209775 HTTPS 业务地址识别,overview_explicit,conflict:GWFD-110201-GWFD-110281
+GWFD-110282:dep:GWFD-110101,GWFD-110282,GWFD-110101,depends_on,UDG 需要对用户的Web Proxy业务进行解析以获得Web Proxy动作和重定向地址，因此启用本特性前需要启用SA特性。,82209749 SA-Basic,overview_explicit,
+GWFD-110283:dep:GWFD-110101,GWFD-110283,GWFD-110101,depends_on,- UDG需要对用户数据报文进行解析获得URL，因此需开启SA-Basic特性。 - UDG需要对DNS类型报文进行解析，因此需开启SA-Network Administration特性。,82209749 SA-Basic82209765 SA-Network Administration,overview_explicit,
+GWFD-110283:dep:GWFD-020301,GWFD-110283,GWFD-020301,depends_on,DNS纠错动作绑定在rule中，且需要通过filter匹配对应的rule，因此该功能依赖于内容计费基本功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-110283:dep:GWFD-020351,GWFD-110283,GWFD-020351,depends_on,如果DNS纠错业务策略由PCRF下发，还需要启用PCC基本功能特性。,82209825 PCC 基本功能,overview_explicit,
+GWFD-110284:dep:GWFD-110101,GWFD-110284,GWFD-110101,depends_on,UDG 需要对HTTP报文进行解析和规则匹配，因此使用本特性前需要启用SA-Basic和SA-Web Browsing特性。,82209749 SA-Basic82209765 SA-Network Administration,overview_explicit,
+GWFD-110284:dep:GWFD-110201,GWFD-110284,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别82209775 HTTPS 业务地址识别,overview_explicit,conflict:GWFD-110201-GWFD-110284
+GWFD-110301:dep:GWFD-110311,GWFD-110301,GWFD-110311,depends_on,本特性基于用户的应用及终端平台进行带宽差异化控制，因此必须开启带宽控制功能。,82209832 基于业务感知的带宽控制,overview_explicit,
+GWFD-110302:dep:GWFD-110101,GWFD-110302,GWFD-110101,depends_on,UDG 需要根据用户请求的业务判断是否建立基于下行链路的专有承载/专有QoS Flow，因此需开启SA-Basic功能进行业务识别。,82209749 SA-Basic,overview_explicit,
+GWFD-110302:dep:GWFD-020351,GWFD-110302,GWFD-020351,depends_on,UDG 可以使用PCRF/PCF下发的规则建立专有承载/专有QoS Flow，此时需开启基本PCC功能以从PCRF/PCF获取规则。,82209825 PCC基本功能,overview_explicit,
+GWFD-110302:dep:GWFD-110201,GWFD-110302,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别,overview_explicit,conflict:GWFD-110201-GWFD-110302
+GWFD-110302:dep:GWFD-110203,GWFD-110302,GWFD-110203,conflicts_with,TTP2.0为加密报文，不支持HTTP重定向处理。,82209775 HTTPS 业务地址识别,overview_explicit,conflict:GWFD-110203-GWFD-110302
+GWFD-110311:dep:GWFD-110101,GWFD-110311,GWFD-110101,depends_on,UDG 要基于业务进行带宽控制，因此需开启SA功能进行业务识别。,82209749 SA-Basic,overview_explicit,
+GWFD-110311:dep:GWFD-020351,GWFD-110311,GWFD-020351,depends_on,UDG 使用PCF下发的规则进行控制，此时需开启基本PCC功能以获取PCC策略规则。,82209825 PCC 基本功能,overview_explicit,
+GWFD-110312:dep:GWFD-020351,GWFD-110312,GWFD-020351,depends_on,UDG 需要将用户访问的业务在一段时间内的累计流量上报给PGW-C/SMF，再由PGW-C/SMF将用户业务的流量上报给PCRF/PCF，当业务累计流量达到指定阈值时，PCRF/PCF向PGW-C/SMF下发不同的PCC策略，PGW-U/UPF收到PGW-C/SMF下发PCC策略，需要先开启PCC基本功能特性以从PCRF/PCF获取到策略。,82209825 PCC基本功能,overview_explicit,
+GWFD-110312:dep:GWFD-110311,GWFD-110312,GWFD-110311,depends_on,如果是在 UDG 本地配置QoS控制规则，需要开启基于业务感知的带宽控制特性。,82209832 基于业务感知的带宽控制,overview_explicit,
+GWFD-110313:dep:GWFD-110311,GWFD-110313,GWFD-110311,depends_on,依赖于基于业务感知的带宽控制功能对业务的区分与匹配，必须开启基于业务感知的带宽控制。,82209832 基于业务感知的带宽控制,overview_explicit,
+GWFD-110313:dep:GWFD-020354,GWFD-110313,GWFD-020354,depends_on,依赖于基于业务的整形功能，必须开启基于业务感知的Shaping。,82200AFN 基于业务的Shaping,overview_explicit,
+GWFD-110321:dep:GWFD-020301,GWFD-110321,GWFD-020301,depends_on,UDG 需要识别业务进行计费，因此需要开启内容计费功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-110321:dep:GWFD-110101,GWFD-110321,GWFD-110101,depends_on,业务报文经过 UDG 时，需要通过SA对业务报文进行解析，因此需要开启SA-Basic功能。,82209749 SA-Basic,overview_explicit,
+GWFD-110331:dep:GWFD-110101,GWFD-110331,GWFD-110101,depends_on,UDG 基于SA执行业务识别，所以基于业务流标识的无线资源优化特性开通必须同时开启SA功能。,82209749 SA-Basic,overview_explicit,
+GWFD-110332:dep:GWFD-020351,GWFD-110332,GWFD-020351,depends_on,如果需要PCRF进行策略决策， UDG 侧需要开启PCC基本功能以从PCRF获取策略。,82209825 PCC 基本功能,overview_explicit,
+GWFD-110401:dep:GWFD-110101,GWFD-110401,GWFD-110101,depends_on,开启本功能前，需要先识别和解析HTTP报文，所以需要开启SA-Basic和SA-Web Browsing特性。说明：SA-Basic是所有SA(Service Awareness)协议解析的基础，因此需要开启。,82209749 SA-Basic,overview_explicit,
+GWFD-110401:dep:GWFD-110103,GWFD-110401,GWFD-110103,depends_on,开启本功能前，需要先识别和解析HTTP报文，所以需要开启SA-Basic和SA-Web Browsing特性。说明：SA-Basic是所有SA(Service Awareness)协议解析的基础，因此需要开启。,82209755 SA-Web Browsing,overview_explicit,
+GWFD-110401:dep:GWFD-110261,GWFD-110401,GWFD-110261,depends_on,HTTP头防欺诈特性依赖于HTTP头增强特性，启用HTTP头防欺诈功能必须开启HTTP头增强功能。,82209777 HTTP头增强,overview_explicit,
+GWFD-110402:dep:GWFD-110101,GWFD-110402,GWFD-110101,depends_on,DNS计费防欺诈功能需要对DNS业务进行识别解析，因此需要开启SA-Basic和SA-Network Administration功能。,82209749 SA-Basic,overview_explicit,
+GWFD-110402:dep:GWFD-110136,GWFD-110402,GWFD-110136,depends_on,DNS计费防欺诈功能需要对DNS业务进行识别解析，因此需要开启SA-Basic和SA-Network Administration功能。,82209765 SA-Network Administration,overview_explicit,
+GWFD-110402:dep:GWFD-020301,GWFD-110402,GWFD-020301,depends_on,只有在内容计费的计费模式下才支持本功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-110403:dep:GWFD-110136,GWFD-110403,GWFD-110136,depends_on,HTTP计费防欺诈特性关键技术之一是通过SA-Network Administration得到DNS响应报文中的Host与IP地址的映射关系，以实现HTTP业务报文中服务器IP地址与映射表中目标IP地址的校验，所以需要开启SA-Network Administration功能。,82209765 SA-Network Administration,overview_explicit,
+GWFD-110403:dep:GWFD-110103,GWFD-110403,GWFD-110103,depends_on,HTTP计费防欺诈特性关键技术之一是通过SA-Web Browsing得到HTTP请求报文中的服务器IP，用于与自学习映射表中目标IP地址的校验，所以需要开启SA-Web Browsing功能。,82209755 SA-Web Browsing,overview_explicit,
+GWFD-110403:dep:GWFD-020301,GWFD-110403,GWFD-020301,depends_on,HTTP计费防欺诈功能的核心是保证内容计费的准确性，该特性是内容计费的增强特性，所以需要开启内容计费基本功能。,82209822 内容计费基本功能,overview_explicit,
+GWFD-110403:dep:GWFD-110201,GWFD-110403,GWFD-110201,conflicts_with,HTTP2.0为加密报文，不支持HTTP重定向处理。,82209773 HTTP2.0Host识别,overview_explicit,conflict:GWFD-110201-GWFD-110403
+GWFD-110403:dep:GWFD-110203,GWFD-110403,GWFD-110203,conflicts_with,TTP2.0为加密报文，不支持HTTP重定向处理。,82209775 HTTPS 业务地址识别,overview_explicit,conflict:GWFD-110203-GWFD-110403
+GWFD-110404:dep:GWFD-110101,GWFD-110404,GWFD-110101,depends_on,HTTPS业务行为识别特性依赖于 UDG 对报文的解析，所以启用该特性需要开启业务感知相关特性。,82209749 LKV3G5SABS01 SA-Basic82209754 LKV3G5HPWC01 SA-HTTP Pipeline & WAP Concatenation82209755 LKV3G5SAWB01 SA-Web Browsing82209756 LKV3G5SAFA01 SA-File Access82209757 LKV3G5SAMB01 SA-Mobile82209758 LKV3G5SAOS01 SA-Others82209759 LKV3G5SAST01 SA-Streaming82209760 LKV3G5SP2P01 SA-P2P82209761 LKV3G5SVOIP01 SA-VOIP82209762 LKV3G5EMAL01 SA-Email82209763 LKV3G5SAIM01 SA-IM82209764 LKV3G5GAME01 SA-Game82209765 LKV3G5SANA01 SA-Network Administration82209766 LKV3G5SARC01 SA-Remote Connectivity82209767 LKV3G5SANS01 SA-Network Storage82209768 LKV3G5SATN01 SA-Tunneling82209769 LKV3G5STOK01 SA-Stock82209770 LKV3G5SADB01 SA-Database82209771 LKV3G5QUIC01 SA-QUIC,overview_explicit,
+GWFD-110471:dep:GWFD-110101,GWFD-110471,GWFD-110101,depends_on,UDG 需要将用户数据报文进行解析获得URL，因此需开启业务感知功能进行业务识别。- SA-Basic是SA的基本功能，必须开启。 - 对HTTP、WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。 - 对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209749 LKV3G5SABS01 SA-Basic,overview_explicit,
+GWFD-110471:dep:GWFD-110103,GWFD-110471,GWFD-110103,depends_on,UDG 需要将用户数据报文进行解析获得URL，因此需开启业务感知功能进行业务识别。- SA-Basic是SA的基本功能，必须开启。 - 对HTTP、WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。 - 对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209755 LKV3G5SAWB01 SA-Web Browsing,overview_explicit,
+GWFD-110471:dep:GWFD-110105,GWFD-110471,GWFD-110105,depends_on,UDG 需要将用户数据报文进行解析获得URL，因此需开启业务感知功能进行业务识别。- SA-Basic是SA的基本功能，必须开启。 - 对HTTP、WAP2.0协议类型的报文进行解析时，需要开启SA-Web Browsing特性。 - 对WAP1.X协议类型的报文进行解析时，需要开启SA-Mobile特性。,82209757 LKV3G5SAMB01 SA-Mobile,overview_explicit,
+GWFD-110471:dep:GWFD-110201,GWFD-110471,GWFD-110201,depends_on,对HTTPS协议类型的报文进行解析时，需要开启HTTP2.0 Host识别功能。,82209773 LKV3G5HSHA01 HTTP2.0 Host识别,overview_explicit,
+GWFD-110471:dep:GWFD-020351,GWFD-110471,GWFD-020351,depends_on,如果需要使用PCC策略对用户业务进行策略控制，则需要开启PCC基本功能。,82209825 LKV3G5PCCB01 PCC 基本功能,overview_explicit,
+GWFD-110481:dep:SFFD-010010,GWFD-110481,SFFD-010010,depends_on,本特性开启前需要开启特性“SFFD-010010 业务处理单元基础可靠性保障”。,-,overview_explicit,
+GWFD-110551:dep:GWFD-110552,GWFD-110551,GWFD-110552,affects,“5G超高带宽基本功能，1Gbps峰值速率” 与 “5G超高带宽承载接入，1Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，1Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，1Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，1Gbps峰值速率”必须与“5G超高带宽承载接入，1Gbps峰值速率”特性同时部署，才能实现5G超高带宽，1Gbps的功能。,82209857 5G超高带宽承载接入 1Gbps峰值速率,overview_explicit,
+GWFD-110552:dep:GWFD-110551,GWFD-110552,GWFD-110551,depends_on,“5G超高带宽基本功能，1Gbps峰值速率” 与 “5G超高带宽承载接入 ，1Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，1Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，1Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，1Gbps峰值速率”必须与“5G超高带宽承载接入，1Gbps峰值速率”特性同时部署，才能实现5G超高带宽，1Gbps的功能。,81203216 5G超高带宽基本功能 1Gbps峰值速率,overview_explicit,
+GWFD-110553:dep:GWFD-110554,GWFD-110553,GWFD-110554,affects,“5G超高带宽基本功能，2Gbps峰值速率” 与 “5G超高带宽承载接入，2Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，2Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，2Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，2Gbps峰值速率”必须与“5G超高带宽承载接入，2Gbps峰值速率”特性同时部署，才能实现5G超高带宽，2Gbps的功能。,82209858 5G超高带宽承载接入 2Gbps峰值速率,overview_explicit,
+GWFD-110554:dep:GWFD-110553,GWFD-110554,GWFD-110553,depends_on,“5G超高带宽基本功能，2Gbps峰值速率” 与 “5G超高带宽承载接入，2Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，2Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，2Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，2Gbps峰值速率”必须与“5G超高带宽承载接入，2Gbps峰值速率”特性同时部署，才能实现5G超高带宽，2Gbps的功能。,81203217 5G超高带宽基本功能 2Gbps峰值速率,overview_explicit,
+GWFD-110555:dep:GWFD-110556,GWFD-110555,GWFD-110556,affects,“5G超高带宽基本功能，5Gbps峰值速率” 与 “5G超高带宽承载接入，5Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，5Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，5Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，5Gbps峰值速率”必须与“5G超高带宽承载接入，5Gbps峰值速率”特性同时部署，才能实现5G超高带宽，5Gbps的功能。,82209859 5G超高带宽承载接入 5Gbps峰值速率,overview_explicit,
+GWFD-110556:dep:GWFD-110555,GWFD-110556,GWFD-110555,depends_on,“5G超高带宽基本功能，5Gbps峰值速率” 与 “5G超高带宽承载接入，5Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，5Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，5Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，5Gbps峰值速率”必须与“5G超高带宽承载接入，5Gbps峰值速率”特性同时部署，才能实现5G超高带宽，5Gbps的功能。,81203218 5G超高带宽基本功能 5Gbps峰值速率,overview_explicit,
+GWFD-110557:dep:GWFD-110558,GWFD-110557,GWFD-110558,affects,**“5G超高带宽基本功能，10Gbps峰值速率”** 与 “5G超高带宽承载接入，10Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，10Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，10Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，10Gbps峰值速率”必须与“5G超高带宽承载接入，10Gbps峰值速率”特性同时部署，才能实现5G超高带宽，10Gbps的功能。,82200EAE 5G超高带宽承载接入 10Gbps峰值速率,overview_explicit,
+GWFD-110558:dep:GWFD-110557,GWFD-110558,GWFD-110557,depends_on,“5G超高带宽基本功能，10Gbps峰值速率” 与 “5G超高带宽承载接入，10Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，10Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，10Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，10Gbps峰值速率”必须与“5G超高带宽承载接入，10Gbps峰值速率”特性同时部署，才能实现5G超高带宽，10Gbps的功能。,81203624 5G超高带宽基本功能 10Gbps峰值速率,overview_explicit,
+GWFD-110559:dep:GWFD-110560,GWFD-110559,GWFD-110560,affects,“5G超高带宽基本功能，20Gbps峰值速率” 与 “5G超高带宽承载接入，20Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，20Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，20Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，20Gbps峰值速率”必须与“5G超高带宽承载接入，20Gbps峰值速率”特性同时部署，才能实现5G超高带宽，20Gbps的功能。,82200EAF 5G超高带宽承载接入 20Gbps峰值速率,overview_explicit,
+GWFD-110560:dep:GWFD-110559,GWFD-110560,GWFD-110559,depends_on,“5G超高带宽基本功能，20Gbps峰值速率” 与 “5G超高带宽承载接入，20Gbps峰值速率” 的实现一样，只是在资源控制方面存在差异。区别如下：- “5G超高带宽基本功能，20Gbps峰值速率”为功能控制项，“5G超高带宽承载接入，20Gbps峰值速率”为资源控制项。 - “5G超高带宽基本功能，20Gbps峰值速率”必须与“5G超高带宽承载接入，20Gbps峰值速率”特性同时部署，才能实现5G超高带宽，20Gbps的功能。,81203625 5G超高带宽基本功能 20Gbps峰值速率,overview_explicit,
+GWFD-110601:dep:GWFD-010296,GWFD-110601,GWFD-010296,depends_on,NB-IoT eDRX模式特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见; [GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit,
+GWFD-110606:dep:GWFD-010296,GWFD-110606,GWFD-010296,depends_on,基于信令面的数据传输特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见; [GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit,
+GWFD-110607:dep:GWFD-010296,GWFD-110607,GWFD-010296,depends_on,Non-IP数据传输特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见; [GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit,
+GWFD-110611:dep:GWFD-010296,GWFD-110611,GWFD-010296,depends_on,基于APN的NB-IoT终端接入速率控制性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见; [GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit,
+GWFD-110611:dep:GWFD-110606,GWFD-110611,GWFD-110606,depends_on,如果使用基于APN的NB-IoT终端接入速率控制特性的场景是控制面优化，则需要同时开启基于信令面的数据传输Licence。反之则只需要开启基于APN的NB-IoT终端接入速率控制特性的Licence即可。,82200CKD 基于信令面的数据传输,overview_explicit,
+GWFD-110612:dep:GWFD-010296,GWFD-110612,GWFD-010296,depends_on,基于服务PLMN的NB-IoT终端接入速率控制特性如需启用，必须与NB-IoT终端标准接入特性一起使用，因为需要先使能NB-IoT接入功能。,该特性可能存在多个控制项，详见; [GWFD-010296 NB-IoT终端标准接入特性概述](../GWFD-010296 NB-IoT终端标准接入/GWFD-010296 NB-IoT终端标准接入特性概述_74275192.md),overview_explicit,
+GWFD-110612:dep:GWFD-110606,GWFD-110612,GWFD-110606,depends_on,基于服务PLMN的NB-IoT终端接入速率控制应用于NB-IoT控制面优化数据传输，因此需要同时开启基于信令面的数据传输特性的License。,82200CKD 基于信令面的数据传输,overview_explicit,
+GWFD-110910:dep:GWFD-020412,GWFD-110910,GWFD-020412,conflicts_with,L2TP VPN通过LNS设备实现了Routing Behind MS功能，所以在同一APN下，L2TP VPN和Routing Behind MS无需同时部署。,82200BVC LKV3G5L2TP01 L2TP VPN,overview_explicit,conflict:GWFD-020412-GWFD-110910
+GWFD-110910:dep:GWFD-010108,GWFD-110910,GWFD-010108,conflicts_with,手机后路由用户不能做用户面地址自动检测。,-,overview_explicit,conflict:GWFD-010108-GWFD-110910
+GWFD-110910:dep:GWFD-020482,GWFD-110910,GWFD-020482,conflicts_with,手机后路由用户不支持入不转板功能。,-,overview_explicit,conflict:GWFD-020482-GWFD-110910
+GWFD-110910:dep:GWFD-020531,GWFD-110910,GWFD-020531,conflicts_with,手机后路由用户不支持通用DNN漫游分流功能。,82200GCJ LKV3G5STCA01 移动VPN智能分流园区接入,overview_explicit,conflict:GWFD-020531-GWFD-110910
+GWFD-111201:dep:IPFD-015004,GWFD-111201,IPFD-015004,supports,网络加速卡支持IPsec功能时，需要同时开启IPsec基本功能。说明：网络加速卡支持IPsec IPv4隧道模式和IPsec IPv6隧道模式。,-,overview_explicit,
+GWFD-111201:dep:GWFD-020482,GWFD-111201,GWFD-020482,conflicts_with,网络加速卡场景，不支持入不转板功能。,-,overview_explicit,conflict:GWFD-020482-GWFD-111201
+GWFD-111251:dep:GWFD-111252,GWFD-111251,GWFD-111252,affects,本特性和 [GWFD-111252 支持灰度拨测和发布](GWFD-111252 支持灰度拨测和发布_66156569.md) 推荐一起使用。,81203937 LKV3G5HLUG02 支持灰度拨测和发布,overview_explicit,
+GWFD-111251:dep:GWFD-111253,GWFD-111251,GWFD-111253,affects,本特性和 [GWFD-111253 支持灰度升级无损回退](GWFD-111253 支持灰度升级无损回退_18780344.md) 推荐一起使用。,81203938 LKV3G5HLUG03 支持灰度升级无损回退,overview_explicit,
+GWFD-111251:dep:GWFD-112003,GWFD-111251,GWFD-112003,conflicts_with,本特性与 [GWFD-112003 智网接入](../智家随行解决方案/GWFD-112003 智网接入_74774496.md) 无法同时使用。,82200HHW LKV3G5SNAC01 智网接入,overview_explicit,conflict:GWFD-111251-GWFD-112003
+GWFD-111251:dep:GWFD-113005,GWFD-111251,GWFD-113005,conflicts_with,本特性与 [GWFD-113005 支持媒体中继基本功能](../媒体中继解决方案/GWFD-113005 支持媒体中继基本功能_39478025.md) 无法同时使用。,82200JDR LKV3G5SMRB01 支持媒体中继基本功能,overview_explicit,conflict:GWFD-111251-GWFD-113005
+GWFD-111252:dep:GWFD-111251,GWFD-111252,GWFD-111251,depends_on,本特性开启前需要开启特性 [GWFD-111251 在线升级](GWFD-111251 在线升级_92812902.md) 。,81203630 LKV3G5HLUG01 灰度升级解决方案增值包基本功能,overview_explicit,
+GWFD-111252:dep:GWFD-111253,GWFD-111252,GWFD-111253,affects,本特性和 [GWFD-111253 支持灰度升级无损回退](GWFD-111253 支持灰度升级无损回退_18780344.md) 推荐一起使用。,81203938 LKV3G5HLUG03 支持灰度升级无损回退,overview_explicit,
+GWFD-111253:dep:GWFD-111251,GWFD-111253,GWFD-111251,depends_on,本特性开启前需要开启特性 [GWFD-111251 在线升级](GWFD-111251 在线升级_92812902.md) 。,81203630 LKV3G5HLUG01 灰度升级解决方案增值包基本功能,overview_explicit,
+GWFD-111253:dep:GWFD-111252,GWFD-111253,GWFD-111252,affects,本特性和 [GWFD-111252 支持灰度拨测和发布](GWFD-111252 支持灰度拨测和发布_66156569.md) 推荐一起使用。,81203937 LKV3G5HLUG02 支持灰度拨测和发布,overview_explicit,
+GWFD-111286:dep:GWFD-111302,GWFD-111286,GWFD-111302,depends_on,需要开启 [GWFD-111302 业务全样分析上报](../../报表功能/GWFD-111302 业务全样分析上报_93110964.md) 特性。,82200CXM 业务全样分析上报,overview_explicit,
+GWFD-111286:dep:GWFD-111304,GWFD-111286,GWFD-111304,depends_on,需要开启 [GWFD-111304 TCP/UDP传输分析上报](../../报表功能/GWFD-111304 TCP_UDP传输分析上报_93112940.md) 特性。,82200CXP TCP/UDP传输分析上报,overview_explicit,
+GWFD-111286:dep:GWFD-111305,GWFD-111286,GWFD-111305,depends_on,需要开启 [GWFD-111305 用户实时位置分析上报](../../报表功能/GWFD-111305 用户实时位置分析上报_93112941.md) 特性。,82200CXQ 用户实时位置分析上报,overview_explicit,
+GWFD-111286:dep:GWFD-111283,GWFD-111286,GWFD-111283,depends_on,需要开启 [GWFD-111283 智能板订阅和采集](../../报表功能/GWFD-111283 智能板订阅和采集_44129997.md) 特性。,81203781 智能板订阅和采集,overview_explicit,
+GWFD-111302:dep:GWFD-111301,GWFD-111302,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给报表服务器进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111303:dep:GWFD-111301,GWFD-111303,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111304:dep:GWFD-111301,GWFD-111304,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111305:dep:GWFD-111301,GWFD-111305,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111306:dep:GWFD-111302,GWFD-111306,GWFD-111302,depends_on,UDG 需要对业务流的数据报文进行灵活抽样，VOIP报文上报在使用前需要开启 [GWFD-111302 业务全样分析上报](GWFD-111302 业务全样分析上报_93110964.md) 。,82200CXM 业务全样分析上报,overview_explicit,
+GWFD-111306:dep:GWFD-111301,GWFD-111306,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给报表服务器进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111306:dep:GWFD-110132,GWFD-111306,GWFD-110132,depends_on,VOIP报文上报在使用前需要开启 [GWFD-110132 SA-VOIP](../业务感知功能/GWFD-110132 SA-VOIP_24082518.md),82209761 SA-VOIP,overview_explicit,
+GWFD-111307:dep:GWFD-111301,GWFD-111307,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111307:dep:GWFD-111302,GWFD-111307,GWFD-111302,depends_on,Web业务分析上报在使用前需要开启 [GWFD-111302 业务全样分析上报](GWFD-111302 业务全样分析上报_93110964.md) 。,82200CXM 业务全样分析上报,overview_explicit,
+GWFD-111307:dep:GWFD-110103,GWFD-111307,GWFD-110103,depends_on,Web业务分析上报在使用前需要开启 [GWFD-110103 SA-Web Browsing](../业务感知功能/GWFD-110103 SA-Web Browsing_24082511.md) 。,82209755 SA-Web Browsing,overview_explicit,
+GWFD-111309:dep:GWFD-111301,GWFD-111309,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111309:dep:GWFD-020351,GWFD-111309,GWFD-020351,depends_on,PCC规则报表上报在使用前需要开启 [GWFD-020351 PCC基本功能](../智能策略控制功能/GWFD-020351 PCC基本功能_42369272.md) 特性。,82209825 PCC基本功能,overview_explicit,
+GWFD-111310:dep:GWFD-111301,GWFD-111310,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111310:dep:GWFD-110142,GWFD-111310,GWFD-110142,depends_on,QUIC业务分析上报在使用前需要开启 [GWFD-110142 SA-QUIC](../业务感知功能/GWFD-110142 SA-QUIC_24082528.md) 。,82209771 SA-QUIC,overview_explicit,
+GWFD-111311:dep:GWFD-111301,GWFD-111311,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111312:dep:GWFD-111301,GWFD-111312,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111313:dep:GWFD-111301,GWFD-111313,GWFD-111301,depends_on,为实现网络业务的可视化， UDG 需要对数据流进行识别和业务感知，并将识别和感知结果传递给 报表服务器 进行业务统计，因此需开启 [GWFD-111301 智能分析记录生成](GWFD-111301 智能分析记录生成_93112938.md) 特性。,82200CXL 智能分析记录生成,overview_explicit,
+GWFD-111313:dep:GWFD-111311,GWFD-111313,GWFD-111311,depends_on,业务实时分析上报依赖CloudUDN下发订阅信息，因此需开启 [GWFD-111311 业务分析上报订阅](GWFD-111311 业务分析上报订阅_29704759.md) 特性。,82200EAJ 业务分析上报订阅,overview_explicit,
+GWFD-112000:dep:GWFD-020251,GWFD-112000,GWFD-020251,depends_on,双故障Bypass特性作为IMS接入的特性，必须开启IMS接入特性。,82209873; VoLTE基础语音业务,overview_explicit,
+GWFD-112000:dep:GWFD-020281,GWFD-112000,GWFD-020281,depends_on,双故障Bypass特性作为IMS接入的特性，必须开启IMS接入特性。,82200ELG; VoNR基础语音业务,overview_explicit,
+GWFD-112000:dep:GWFD-020351,GWFD-112000,GWFD-020351,depends_on,双故障Bypass特性必须有PCRF/PCF的部署支撑，必须开启PCC基本功能。,82209825 PCC基本功能,overview_explicit,
+GWFD-112000:dep:GWFD-020358,GWFD-112000,GWFD-020358,depends_on,语音专有QoS Flow/专有承载的创建和更新需要依赖GWFD-020358 业务触发的QoS保证功能。,82200AFP 业务触发的QoS保证,overview_explicit,
+IPFD-010002:dep:IPFD-014000,IPFD-010002,IPFD-014000,depends_on,VLAN子接口转发报文依赖于路由表转发。VLAN内终端用户的缺省网关必须是对应VLAN子接口的IP地址。,,overview_explicit,
+IPFD-012001:dep:IPFD-012002,IPFD-012001,IPFD-012002,interacts_with,ACL防火墙功能：当用户认为某类报文不可信时，可以通过QoS引用ACL将这类报文与其他报文区别出来并进行丢弃；同样的，当用户认为某类报文可信时，也可以通过QoS引用ACL将这类报文与其他报文区别出来并允许通过。,,overview_explicit,
+IPFD-012002:dep:NPFD-010004,IPFD-012002,NPFD-010004,interacts_with,ACL本身只是一组规则的集合，它只是通过规则对报文进行了分类。因此ACL需要与具体业务特性配合使用，才能实现过滤报文的功能。,,overview_explicit,
+IPFD-012002:dep:IPFD-014006,IPFD-012002,IPFD-014006,interacts_with,ACL本身只是一组规则的集合，它只是通过规则对报文进行了分类。因此ACL需要与具体业务特性配合使用，才能实现过滤报文的功能。,,overview_explicit,
+IPFD-012002:dep:IPFD-014005,IPFD-012002,IPFD-014005,interacts_with,ACL本身只是一组规则的集合，它只是通过规则对报文进行了分类。因此ACL需要与具体业务特性配合使用，才能实现过滤报文的功能。,,overview_explicit,
+IPFD-012003:dep:IPFD-014000,IPFD-012003,IPFD-014000,interacts_with,BFD for OSPF能够为OSPF邻居之间的链路提供快速检测功能，当邻居之间的链路出现故障时，加快OSPF协议的收敛速度。,,overview_explicit,
+IPFD-014000:dep:IPFD-012000,IPFD-014000,IPFD-012000,interacts_with,静态路由可以绑定BFD会话，利用BFD会话来检测静态路由所在链路的状态。 - 当某条静态路由上的BFD会话检测到链路故障，BFD会将故障上报系统，系统将这条路由从IP路由表中删除。 - 当某条静态路由上的BFD会话检测到故障的链路重新建立成功，BFD会上报系统，系统将这条路由加入IP路由表。,,overview_explicit,
+IPFD-014000:dep:IPFD-014001,IPFD-014000,IPFD-014001,interacts_with,OSPF协议可将静态路由引入OSPF路由表中，生成相应的OSPF路由。,,overview_explicit,
+IPFD-014001:dep:IPFD-012003,IPFD-014001,IPFD-012003,interacts_with,BFD for OSPF能够为OSPF邻居之间的链路提供快速检测功能，当邻居之间的链路出现故障时，加快OSPF协议的收敛速度。,,overview_explicit,
+IPFD-014001:dep:IPFD-014005,IPFD-014001,IPFD-014005,interacts_with,通过应用路由策略，控制OSPF发布、接收、引用的路由信息。,,overview_explicit,
+IPFD-014002:dep:IPFD-012000,IPFD-014002,IPFD-012000,interacts_with,BFD for BGP能够为BGP邻居之间的链路提供快速检测功能，当邻居之间的链路出现故障时，加快BGP协议的收敛速度。,,overview_explicit,
+IPFD-014002:dep:IPFD-014005,IPFD-014002,IPFD-014005,interacts_with,通过应用路由策略，控制BGP发布、接收、引用的路由信息。,,overview_explicit,
+IPFD-015002:dep:IPFD-014000,IPFD-015002,IPFD-014000,interacts_with,在源端设备和目的端设备上都必须存在经过Tunnel转发的路由，这样需要进行GRE封装的报文才能正确转发。通过配置OSPF协议获得经过Tunnel接口的路由。,,overview_explicit,

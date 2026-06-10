@@ -312,6 +312,19 @@ Feature
 | `description` | text | 依赖说明 | 概述 | `内容计费需先识别业务类型，必须先开启SA` |
 | `license_control_item` | string | 关联License控制项 | 概述 | `82209749 SA-Basic` |
 | `source_type` | enum | 信息来源 | 推断 | `overview_explicit` / `principle_implicit` |
+| `conflict_pair_id` | string | 互斥对ID（仅conflicts_with类型有值） | 计算 | `conflict:GWFD-010107-GWFD-010108` |
+
+**conflict_pair_id 说明**：
+
+互斥在语义上是对称关系（A互斥B ⇔ B互斥A）。CSV 保留双向两条记录（证据完整可追溯），通过 `conflict_pair_id` 把两个方向关联：
+
+- 生成规则：`conflict:` + `sorted([source, target])` 拼接（如 `conflict:GWFD-010107-GWFD-010108`）
+- A→B 和 B→A 共享同一个 pair_id
+- 非 conflicts_with 类型的边 `conflict_pair_id` 为空
+
+**前端展示**：按 `conflict_pair_id` 去重显示（一条逻辑边只展示一次）；双向匹配的 pair 合并展示两个方向的描述。
+
+**审查**：同一 `conflict_pair_id` 的多条记录合并审查一次。
 
 **dependency_type 取值说明：**
 

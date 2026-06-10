@@ -52,8 +52,8 @@ DATA_DIR = BASE_DIR / "data"
 # =====================================================================
 SECTION_ANCHOR_RE = re.compile(r"####\s*\[([^\]]+)\]")
 OVERVIEW_SECTIONS = {"定义", "可获得性", "应用场景"}
-FEATURE_ID_RE = re.compile(r"^((?:GWFD|WSFD|IPFD|NPFD)-\d{3,6})")
-FEATURE_ID_SEARCH_RE = re.compile(r"((?:GWFD|WSFD|IPFD|NPFD)-\d{3,6})")
+FEATURE_ID_RE = re.compile(r"^((?:GWFD|WSFD|IPFD|NPFD|SFFD)-\d{3,6})")
+FEATURE_ID_SEARCH_RE = re.compile(r"((?:GWFD|WSFD|IPFD|NPFD|SFFD)-\d{3,6})")
 
 
 # =====================================================================
@@ -298,7 +298,13 @@ def extract_applicable_nf(sections):
     这里同时查找两种key。
     回退: 如果适用NF为空，从 '可获得性' section 中提取涉及NF。
     """
-    text = sections.get("适用NF", "") or sections.get("适用 N F", "")
+    # P1-3.1: 容忍各种空格/换行变体（如 "适用 N F"、"适用N F" 等）
+    nf_text = ""
+    for key in sections:
+        if re.match(r"适\s*用\s*N\s*F", key):
+            nf_text = sections[key]
+            break
+    text = nf_text
     if text:
         nfs = re.split(r"[、，,\n]", text)
         return [nf.strip() for nf in nfs if nf.strip()]
@@ -350,8 +356,33 @@ def extract_definition(sections):
 
 
 def extract_customer_value(sections):
-    """从 '客户价值' section 提取"""
-    return sections.get("客户价值", "")
+    """从 '客户价值' section 提取 — P1-3.2: 去掉表格行和引用行，只保留纯文本"""
+    text = sections.get("客户价值", "")
+    if not text:
+        return ""
+    lines = text.split("\n")
+    result = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("|") or stripped == "---" or stripped.startswith(">"):
+            continue
+        if stripped:
+            result.append(stripped)
+    if result:
+        return " ".join(result)
+    # 如果全部是表格/引用，提取表格中的文本内容（非表头/非分隔行）
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("|"):
+            cells = [c.strip() for c in stripped.split("|")]
+            # 清理粗体标记而不是丢弃
+            cells = [re.sub(r"^\*\*(.+?)\*\*$", r"\1", c) for c in cells]
+            cells = [c for c in cells if c and c != "---"]
+            # 跳过表头行
+            if cells and cells[0] in ("受益方", "受益描述", "客户价值"):
+                continue
+            result.extend(cells)
+    return " ".join(result) if result else ""
 
 
 def extract_application_scenario(sections):
@@ -501,34 +532,118 @@ def extract_first_release(sections):
     return ""
 
 
-def extract_feature_dependencies(feature_id, sections):
+def lookup_feature_by_name(raw_name, features_dict):
+    """
+    P1-1.2: 当相关特性列无特性ID时，用功能名模糊匹配features_dict。
+
+    逻辑:
+      1. 去掉链接标记 [xxx](yyy)，取链接文本
+      2. 特殊值 NA、-、无 直接跳过
+      3. 在 features_dict 中按 feature_name 做子串匹配
+      4. 匹配到唯一结果则返回 feature_id，多个或零个则返回空
+    """
+    name = raw_name.strip()
+    # 去链接标记
+    link_m = re.match(r"\[([^\]]+)\]", name)
+    if link_m:
+        name = link_m.group(1)
+    name = name.strip()
+    # 跳过占位符
+    if name in ("NA", "-", "无", "—", "N/A", "不涉及", "无。"):
+        return ""
+    # 子串匹配
+    matches = []
+    for fid, feat in features_dict.items():
+        feat_name = feat.get("feature_name", "")
+        if not feat_name:
+            continue
+        if name in feat_name or feat_name in name:
+            matches.append(fid)
+    return matches[0] if len(matches) == 1 else ""
+
+
+def extract_feature_dependencies(feature_id, sections, features_dict=None):
     """
     从 '与其他特性的交互' section 解析依赖关系
 
-    格式: | 交互类型 | 相关特性 | 控制项名称 | 交互说明 |
+    支持格式:
+      格式A (4列): | 交互类型 | 相关特性 | 控制项名称 | 交互说明 |
+      格式B (3列): | 交互类型 | 相关特性 | 交互关系 |
+      格式C (2列): | 相关特性 | 交互关系 |
     返回: list[dict]
     """
     text = sections.get("与其他特性的交互", "")
     if not text or "不涉及" in text:
         return []
 
+    # 先检测表格列格式
+    table_col_count = 0
+    for line in text.split("\n"):
+        parts = [p.strip() for p in line.strip().split("|")]
+        parts = [p for p in parts if p and p != "---"]
+        if not parts:
+            continue
+        cleaned = [p.strip("*").strip() for p in parts]
+        # 检测表头行确定列格式
+        if "相关特性" in cleaned or "交互类型" in cleaned:
+            table_col_count = len(parts)
+            break
+
     deps = []
     for line in text.split("\n"):
         parts = [p.strip() for p in line.strip().split("|")]
         parts = [p for p in parts if p and p != "---"]
-        if len(parts) < 4:
+        if len(parts) < 2:
             continue
-        if parts[0] in ("交互类型", "交互"):
+        # P0-1.1: 去粗体后判断表头变体（如 **交互类型**）
+        header0 = parts[0].strip("*").strip()
+        header1 = parts[1].strip("*").strip() if len(parts) > 1 else ""
+        if header0 in ("交互类型", "交互") or header1 in ("相关特性", "和其他特性的交互关系"):
             continue
 
-        dep_type_raw = parts[0]
-        related_feature_raw = parts[1]
-        control_item = parts[2] if len(parts) > 2 else ""
-        description = parts[3] if len(parts) > 3 else ""
+        # 根据列数适配字段
+        if len(parts) >= 4:
+            # 格式A: | 交互类型 | 相关特性 | 控制项名称 | 交互说明 |
+            dep_type_raw = parts[0]
+            related_feature_raw = parts[1]
+            control_item = parts[2] if len(parts) > 2 else ""
+            description = parts[3] if len(parts) > 3 else ""
+        elif len(parts) == 3:
+            # 格式B: | 交互类型 | 相关特性 | 交互关系 |
+            dep_type_raw = parts[0]
+            related_feature_raw = parts[1]
+            description = parts[2] if len(parts) > 2 else ""
+            control_item = ""
+        elif len(parts) == 2:
+            # 格式C: | 相关特性 | 交互关系 |
+            dep_type_raw = "交互"
+            related_feature_raw = parts[0]
+            description = parts[1] if len(parts) > 1 else ""
+            control_item = ""
+        else:
+            continue
+
+        # P0-1.4: 清理HTML残留（控制项和说明列都可能含<br>）
+        control_item = re.sub(r"<br\s*/?>", "; ", control_item)
+        control_item = re.sub(r"<[^>]+>", "", control_item).strip()
 
         # 从"相关特性"列提取feature_id
-        fid_match = FEATURE_ID_SEARCH_RE.search(related_feature_raw)
-        target_fid = fid_match.group(1) if fid_match else ""
+        # P1-1.4: 优先使用markdown链接URL中的特性ID (链接文本可能有笔误)
+        # 例: [GWFD-020808 用户面地址自动检测](../GWFD-010108 ..._xxx.md)
+        # 链接文本GWFD-020808是笔误, URL路径中的GWFD-010108才是正确目标
+        url_fid_match = re.search(
+            r"\([^)]*?((?:GWFD|WSFD|IPFD|NPFD|SFFD)-\d{3,6})[^)]*\)",
+            related_feature_raw
+        )
+        if url_fid_match:
+            target_fid = url_fid_match.group(1)
+        else:
+            fid_match = FEATURE_ID_SEARCH_RE.search(related_feature_raw)
+            target_fid = fid_match.group(1) if fid_match else ""
+
+        # P1-1.2: 特性ID正则匹配失败时，用功能名模糊匹配
+        if not target_fid and features_dict:
+            target_fid = lookup_feature_by_name(related_feature_raw, features_dict)
 
         # 标准化 dep_type (文档中可能出现多种中文表述)
         dep_type = dep_type_raw
@@ -548,6 +663,18 @@ def extract_feature_dependencies(feature_id, sections):
             dep_type = "interacts_with"
         # else: keep original (rare edge cases)
 
+        # P0-1.4: 清理description中的HTML残留
+        description = re.sub(r"<br\s*/?>", " ", description)
+        description = re.sub(r"<[^>]+>", "", description)
+        description = description.strip()
+
+        # 跳过自引用和未映射的脏dep_type
+        if target_fid == feature_id:
+            continue
+        # 如果dep_type仍然是中文长句（未命中任何映射规则），跳过
+        if len(dep_type) > 10 and dep_type == dep_type_raw:
+            continue
+
         if target_fid:
             deps.append({
                 "id": f"{feature_id}:dep:{target_fid}",
@@ -562,16 +689,54 @@ def extract_feature_dependencies(feature_id, sections):
     return deps
 
 
+# P2: 特殊格式License硬编码表
+# 这些特性使用通用解析器无法支持的格式（如转置表格），数据从原始md人工提取
+# 数据来源：直接阅读产品文档的"可获得性"section并验证
+# 如果未来出现更多类似格式，应改用专用解析器
+_HARDCODED_LICENSES = {
+    # WSFD-106201 小区广播服务: 转置表格 | Label | Value |
+    # 原始md (特性概述_68358218.md line 54-57):
+    #   | License功能项 | 82209076 LKV2PWSR01 PWS故障快速恢复 |
+    #   | --- | --- |
+    #   | License功能项 | 82207709 LKV2CBS02 小区广播服务 |
+    #   | License资源项 | - 82200FMS LKV2CBSIFMM01 CBS广播服务接口及功能-4G
+    #                    - 82200FMY LKV2CBSIFAM01 CBS广播服务接口及功能-5G |
+    "WSFD-106201": [
+        {"feature_id": "WSFD-106201", "license_number": "82209076",
+         "license_code": "LKV2PWSR01", "license_name": "PWS故障快速恢复",
+         "applicable_nf": "", "id": "WSFD-106201:license:82209076"},
+        {"feature_id": "WSFD-106201", "license_number": "82207709",
+         "license_code": "LKV2CBS02", "license_name": "小区广播服务",
+         "applicable_nf": "", "id": "WSFD-106201:license:82207709"},
+        {"feature_id": "WSFD-106201", "license_number": "82200FMS",
+         "license_code": "LKV2CBSIFMM01", "license_name": "CBS广播服务接口及功能-4G",
+         "applicable_nf": "MME", "id": "WSFD-106201:license:82200FMS"},
+        {"feature_id": "WSFD-106201", "license_number": "82200FMY",
+         "license_code": "LKV2CBSIFAM01", "license_name": "CBS广播服务接口及功能-5G",
+         "applicable_nf": "AMF", "id": "WSFD-106201:license:82200FMY"},
+    ],
+}
+
+
 def extract_licenses(feature_id, sections):
     """
     从 '可获得性' section 解析License信息
 
-    三种格式:
+    支持的格式:
       1. 单行文本: "...对应的License控制项为 '82209822 LKV3G5BCBC01 内容计费基本功能'"
-      2. 表格: | 适用NF | License控制项 | (按NF区分)
+      2. License表格 (多列变体):
+         | 适用NF | License控制项 |                            (GWFD)
+         | 涉及NF | License控制项 |                            (UNC WSFD-010112)
+         | 特性 | License控制项 |                              (UNC WSFD-010303/WSFD-103000)
+         | 特性 | 适用NF | License控制项 |                     (UNC WSFD-104401 等15个特性)
       3. 纯文本段落(无引号): "82200EDD LKV2SALANSM01 5G LAN业务基本功能-USM"
       4. "无需获得License"
     """
+    # P2: 少数特性使用特殊的转置格式 (Label列 + Value列)，无法用通用解析器处理
+    # 直接返回预先验证过的 License 数据
+    if feature_id in _HARDCODED_LICENSES:
+        return _HARDCODED_LICENSES[feature_id]
+
     text = sections.get("可获得性", "")
     if not text:
         return []
@@ -582,23 +747,67 @@ def extract_licenses(feature_id, sections):
     if "无需" in text and "License" in text:
         return []
 
-    # 格式2: 按NF区分的License表格 (优先处理表格)
-    # | 适用NF | License控制项 |
+    # 格式2: License表格 (多种列格式)
+    # 已知表头变体:
+    #   | 适用NF | License控制项 |                       (原格式2, GWFD常见)
+    #   | 涉及NF | License控制项 |                       (UNC变体, WSFD-010112)
+    #   | 特性 | License控制项 |                         (UNC变体, WSFD-010303/WSFD-103000)
+    #   | 特性 | 适用NF | License控制项 |                (UNC 3列, WSFD-104401等15个特性)
+    # 通用规则: 找含"License"的列作为License列; 找含"NF"或"适用"的列作为NF列(可选)
     in_table = False
+    lic_col = -1
+    nf_col = -1
     for line in text.split("\n"):
         parts = [p.strip() for p in line.strip().split("|")]
         parts = [p for p in parts if p and p != "---"]
-        if len(parts) >= 2 and "适用NF" in parts[0] and "License" in parts[1]:
-            in_table = True
-            continue
-        if in_table and len(parts) >= 2:
-            nf_part = parts[0].rstrip(" |")
-            license_text = parts[1].rstrip(" |")
+
+        if not in_table:
+            # 表头识别: 任一列含"License"作为表头(非数据值)
+            # 通用规则: 只要某列名以"License"开头或包含"License控制项"/"License项"/"License支持"
+            # 即认为是License列; NF列可选(没有则applicable_nf留空)
+            lic_header_col = -1
+            for i, p in enumerate(parts):
+                p_clean = p.strip("*").strip()
+                # 排除"License"在数据值中的情况(如"License许可后才能...")
+                # 只匹配表头格式: "License控制项", "License项", "License支持", "License"
+                if p_clean.startswith("License") and len(p_clean) <= 20:
+                    lic_header_col = i
+                    break
+            if lic_header_col >= 0 and len(parts) >= 2:
+                lic_col = lic_header_col
+                nf_col = -1
+                for i, p in enumerate(parts):
+                    if i == lic_col:
+                        continue
+                    p_clean = p.strip("*").strip()
+                    if "NF" in p_clean or "适用" in p_clean:
+                        nf_col = i
+                in_table = True
+                continue
+        else:
+            # 表格数据行
+            # 空行/分隔符行 (parts为空): 保持表格状态, 跳过
+            if not parts:
+                continue
+            if len(parts) <= lic_col:
+                # 列数不匹配, 表格结束
+                in_table = False
+                lic_col = -1
+                nf_col = -1
+                continue
+
+            license_text = parts[lic_col].rstrip(" |").strip()
+            license_text = re.sub(r"<br\s*/?>", " ", license_text)
             if not license_text:
                 continue
+
             # 从License列提取: "编号 编码 名称"
-            lm = re.match(r"([A-Za-z0-9]{8,10})\s+(\w+)\s+(.+)", license_text)
+            lm = re.match(r"([A-Za-z0-9]{6,12})\s+([A-Za-z0-9_\-]+)\s+(.+)", license_text)
             if lm:
+                nf_part = ""
+                if nf_col >= 0 and len(parts) > nf_col:
+                    nf_part = parts[nf_col].rstrip(" |").strip()
+                    nf_part = re.sub(r"<br\s*/?>", "、", nf_part)
                 licenses.append({
                     "feature_id": feature_id,
                     "license_number": lm.group(1),
@@ -607,15 +816,16 @@ def extract_licenses(feature_id, sections):
                     "applicable_nf": nf_part,
                 })
             else:
-                in_table = False  # 表格结束
+                # 不符合License格式, 表格可能结束
+                in_table = False
+                lic_col = -1
+                nf_col = -1
 
-    if licenses:
-        pass  # 继续到最后的统一补id
-    else:
+    if not licenses:
         # 格式1: 单行License控制项(引号包裹)
         # 匹配模式: "编号 编码 名称"  (引号中)
         single_license = re.search(
-            r'["\u201c\u201d\'\u2018\u2019]+([A-Za-z0-9]{8,10})\s+(\w+)\s+(.+?)["\u201c\u201d\'\u2018\u2019]',
+            r'["\u201c\u201d\'\u2018\u2019]+([A-Za-z0-9]{6,12})\s+([A-Za-z0-9_\-]+)\s+(.+?)["\u201c\u201d\'\u2018\u2019]',
             text, re.MULTILINE
         )
         if single_license:
@@ -638,7 +848,7 @@ def extract_licenses(feature_id, sections):
                 continue
             # 在"License支持"或"控制项"附近的行中搜索
             lm = re.search(
-                r'([A-Za-z0-9]{8,10})\s+(\w+)\s+(.+?)(?:\s*[。.]|$)',
+                r'([A-Za-z0-9]{6,12})\s+([A-Za-z0-9_\-]+)\s+(.+?)(?:\s*[。.]|$)',
                 line
             )
             if lm:
@@ -652,9 +862,16 @@ def extract_licenses(feature_id, sections):
                         "applicable_nf": "",
                     })
 
-    # 补充id字段
+    # P0-2.2: 清理license_name脏数据 & 补充id字段
+    clean_licenses = []
     for lic in licenses:
+        name = lic.get("license_name", "").strip().rstrip("|").rstrip('"').rstrip("'").strip()
+        if not name or len(name) < 2 or name in ("License控制项", "License支持"):
+            continue
+        lic["license_name"] = name
         lic["id"] = f"{feature_id}:license:{lic['license_number']}"
+        clean_licenses.append(lic)
+    licenses = clean_licenses
 
     return licenses
 
@@ -811,7 +1028,7 @@ def process_product(product):
         definition = extract_definition(sections)
         standards_list = extract_standards(sections)
         first_release = extract_first_release(sections)
-        deps = extract_feature_dependencies(fid, sections)
+        deps = extract_feature_dependencies(fid, sections, features)
         licenses = extract_licenses(fid, sections)
 
         # 推断feature_type
@@ -864,6 +1081,18 @@ def process_product(product):
             seen_dep.add(key)
             unique_deps.append(d)
     dependency_rows = unique_deps
+
+    # P1-1.5: 为 conflicts_with 边计算 conflict_pair_id
+    # 互斥语义上是对称的，A→B 和 B→A 共享同一个 pair_id，便于：
+    #   - 前端展示时按 pair_id 去重（一条边只展示一次）
+    #   - 审查时合并两个方向的证据
+    # CSV 仍保留双向两条记录（证据完整可追溯），仅通过 pair_id 关联。
+    for d in dependency_rows:
+        if d["dependency_type"] == "conflicts_with":
+            pair = sorted([d["source_feature_id"], d["target_feature_id"]])
+            d["conflict_pair_id"] = f"conflict:{pair[0]}-{pair[1]}"
+        else:
+            d["conflict_pair_id"] = ""
 
     return feature_rows, dependency_rows, license_rows, doc_asset_rows, stats
 
@@ -963,6 +1192,7 @@ def main():
     dep_fields = [
         "id", "source_feature_id", "target_feature_id",
         "dependency_type", "description", "license_control_item", "source_type",
+        "conflict_pair_id",
     ]
     license_fields = [
         "id", "feature_id", "license_number", "license_code",

@@ -49,7 +49,7 @@
 | `judgment_basis` | 用户需要按业务粒度差异化计费（离线/在线/融合），或需要按流量/时长/事件统计特定业务的使用量 |
 | `typical_outcome` | 专项业务单独计费、免费业务不计费、普通业务默认计费，配额耗尽后切换到阻断或重定向 |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-KB-001`, `EV-01-业务图谱` |
+| `source_evidence_ids` | `EV-KB-001`, `EV-BS-001` |
 
 #### 场景边界
 
@@ -80,7 +80,7 @@
 | `design_intent` | 解决"按业务差异化离线计费"问题：特定业务单独RG，免费业务不计费，普通业务默认费率 |
 | `core_mechanism_combo` | `RG标识(URR.RG) → URR累计(USAGERPTMODE=OFFLINE) → Ga接口/GTP' → CG(话单预处理) → BD(营帐结算)` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-KB-001`(K001-K004), `EV-KB-001`(K012), `EV-KB-002`(K015), `EV-01-业务图谱` |
+| `source_evidence_ids` | `EV-KB-001`(K001-K004), `EV-KB-001`(K012), `EV-KB-002`(K015), `EV-BS-001` |
 
 **scopes**: subscriber（按用户粒度计费）、subscription（PDU会话级承载计费）
 
@@ -152,7 +152,7 @@
 | `design_intent` | 解决"按业务差异化计费"问题：视频业务RG=100、游戏业务RG=200、默认RG=999 |
 | `core_mechanism_combo` | `SA识别(FILTER/L7FILTER/PROTBINDFLOWF) → FLOWFILTER组合匹配 → RULE(POLICYTYPE=PCC)优先级裁决 → PCCPOLICYGRP→URRGROUP→URR(RG标识) → 计费链执行` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-KB-001`(K013, K020-K022, K136-K146), `EV-01-业务图谱`, `EV-KB-002`(K214) |
+| `source_evidence_ids` | `EV-KB-001`(K013, K020-K022, K136-K146), `EV-BS-001`, `EV-KB-002`(K214) |
 
 **scopes**: service_selection（按业务类型差异化计费）、subscriber（用户级策略绑定）
 
@@ -160,7 +160,7 @@
 - UDG/UPF（业务识别与计费执行，user_plane）
 - UNC/SMF（规则下发与配额管理，control_plane）
 
-**uses_feature**: GWFD-110101、GWFD-020301、GWFD-020351、WSFD-109101
+**uses_feature**: GWFD-110101、GWFD-020301、GWFD-020351、WSFD-109101、WSFD-109002
 **uses_semantic_object**: SO-CH-01、SO-CH-03、SO-CH-04、SO-CH-05、SO-CH-08
 **constrained_by**: BR-CH-02、BR-CH-03、BR-CH-04
 
@@ -174,7 +174,7 @@
 | `design_intent` | 解决"按资源类型差异化计量"问题：视频按流量、语音按时长、短信按事件 |
 | `core_mechanism_combo` | `URR.METERINGTYPE(VOLUME/DURATION/EVENT) → QCT(配额空耗时间,CTP/QCT两种模式) → 在线:GSU携带CC-Time/CC-Total-Octets → 离线:仅累计上报` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-KB-001`(K014, K024, K126-K128, K140), `EV-01-业务图谱` |
+| `source_evidence_ids` | `EV-KB-001`(K014, K024, K126-K128, K140), `EV-BS-001` |
 
 **scopes**: service_selection（按业务类型选计量方式）
 
@@ -182,8 +182,9 @@
 - UDG/UPF（Measurement执行，user_plane）
 - UNC/SMF（Metering参数下发，control_plane）
 
-**uses_feature**: GWFD-020302、GWFD-020303、GWFD-020306
+**uses_feature**: GWFD-020301、GWFD-020302、GWFD-020303、GWFD-020306
 **uses_semantic_object**: SO-CH-08（计费语义）、SO-CH-09（配额语义）
+**constrained_by**: BR-CH-01（License前置门控）
 
 ### 2.6 CS-CH-06 配额降速与体验切换方案
 
@@ -195,7 +196,7 @@
 | `design_intent` | 解决"配额耗尽后用户体验切换"问题：月套餐用完后从高速降至低速或阻断 |
 | `core_mechanism_combo` | `配额耗尽触发(QUOTA_EXHAUSTED/Final-Unit-Indication) → Final-Unit-Action(BLOCK/REDIRECT/RESTRICT) 或 PCF下发高优先级降速PCC规则覆盖 → URRGRPBINDING.DFTURRGRPNAME兜底` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-KB-001`(K037, K110), `EV-01-业务图谱`, `EV-KB-001`(K214) |
+| `source_evidence_ids` | `EV-KB-001`(K037, K110), `EV-BS-001`, `EV-KB-001`(K214) |
 
 **scopes**: subscription（配额控制会话级）、subscriber（用户级配额）
 
@@ -218,7 +219,7 @@
 | `design_intent` | 解决"未匹配流量漏计费"问题：默认所有流量都有RG标识，无遗漏 |
 | `core_mechanism_combo` | `USERPROFILE.DFTURRGRPNAME(默认计费URR组) + DFTSIGURRGNAME(异常信令URR组) → 未命中RULE的流量自动走默认URR组 → SET SPECTRAFURRGRP(全局特殊流量兜底)` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-KB-002`(K216), `EV-01-业务图谱`, `EV-01-业务图谱` |
+| `source_evidence_ids` | `EV-KB-002`(K216), `EV-BS-001` |
 
 **scopes**: subscription（UserProfile级兜底）
 
@@ -258,7 +259,7 @@
 | `BR-CH-05` | URRID全局唯一约束 | `scope_rule` | URRID在所有URR对象中唯一 | PFCP Session Report无法关联 |
 | `BR-CH-06` | 默认URR组必须配置 | `design_rule` | DFTURRGRPNAME和DFTSIGURRGNAME必须同时配置 | 未命中RULE的流量不会计费 |
 | `BR-CH-07` | RG值跨侧一致性约束 | `design_rule` | UDG.ADD URR.RG = UNC.ADD URR.RG | 报表与实际计费不一致 |
-| `BR-CH-08` | REFRESHSRV时序约束 | `acceptance_rule` | REFRESHSRV必须在所有ADD/SET完成后最后执行；执行后30s内不允许修改Filter | 部分配置不生效 |
+| `BR-CH-08` | REFRESHSRV时序约束 | `runtime_check_rule` | REFRESHSRV必须在所有ADD/SET完成后最后执行；PROTBINDFLOWF配置后需等待60秒再执行REFRESHSRV | 部分配置不生效 |
 | `BR-CH-09` | 配额降速优先级覆盖 | `design_rule` | 在线配额耗尽后的降速规则必须使用最高优先级，且覆盖原保障规则的匹配范围 | 部分流量降速不彻底 |
 | `BR-CH-10` | SMF融合计费三联前置约束 | `scope_rule` | 融合计费需满足CHGMODE=NchfMode、CHARGECTRL或USRPROFCHARGE/APNCHARGECTRL使能、CHFINIT=SENDREQ三条件 | 不发送Initial或Initial不携带预期RG |
 | `BR-CH-11` | PROTBINDFLOWF协议匹配约束 | `selection_rule` | PROTOCOLNAME必须与目标网站实际协议一致（https网站必须配https）；执行后60s才生效 | L7匹配失败，流量不会被识别为指定业务 |
@@ -272,20 +273,20 @@
 
 > **协议知识补强**：本版新增 SO-CH-10（Ga/Gy/DCC协议栈）和 SO-CH-11（N40/PFCP/Gx协议栈），确保1,422行协议知识不丢失。
 
-| `semantic_object_id` | `semantic_object_name` | `semantic_summary` | `realized_by` |
-|----------------------|------------------------|--------------------|--------------|
-| `SO-CH-01` | 报文解析 | L34协议解析和L7 URL解析，是计费匹配的前置能力 | FILTER, L7FILTER |
-| `SO-CH-02` | 协议识别 | 识别协议/应用（如http/https/IM协议组），用于计费分流 | PROTBINDFLOWF |
-| `SO-CH-03` | 过滤条件 | 将业务描述翻译为可匹配的FILTER/FLOWFILTER/FLOWFILTERGRP组合 | FILTER, FLOWFILTER, FLOWFILTERGRP, FLTBINDFLOWF |
-| `SO-CH-04` | 规则语义 | 将匹配条件与计费动作绑定为RULE，计费场景POLICYTYPE固定为PCC | RULE(POLICYTYPE=PCC) |
-| `SO-CH-05` | 策略语义 | 计费场景固定为PCC策略类型，封装URRGROUP为可被RULE引用的策略组 | PCCPOLICYGRP |
-| `SO-CH-06` | 优先级语义 | 多规则同时命中时按PRIORITY裁决（越小越高），特定业务优先于兜底 | RULE.PRIORITY |
-| `SO-CH-07` | 绑定语义 | UserProfile承载规则绑定(RULEBINDING)和默认计费组(URRGRPBINDING) | USERPROFILE, RULEBINDING, URRGRPBINDING |
-| `SO-CH-08` | 计费语义 | 差异化计费(RG)、免费业务(FREE RG)、默认计费(兜底)；核心三件套URR→URRGROUP→PCCPOLICYGRP | URR, URRGROUP, PCCPOLICYGRP |
-| `SO-CH-09` | 配额语义 | 在线/融合计费的配额控制(GSU/Requested-Unit)、阈值触发和耗尽动作(Final-Unit-Action) | CCT, QUOTAEXHAUSTACT, DCCTEMPLATE |
-| `SO-CH-10` | 计费协议栈-Ga/Gy ★ | Ga接口(离线,GTP')、Gy接口(在线,DCC/Diameter)、DCC会话(CCR-I/U/T)、MSCC多业务信用控制 | CG配置对象, OCS配置对象, DIAMCONNGRP |
-| `SO-CH-11` | 计费协议栈-N40/PFCP ★ | N40接口(融合,Nchf/HTTP2)、PFCP协议(N4,Usage Report)、Gx接口(4G,PCRF↔SMF) | HTTPLEGRP/HTTPLE/SBIAPLE, TNFINS/TNFGRP, SELECTCHFGBYCC, PFCP Session Report |
-| `SO-CH-12` | 核查与诊断语义 | 配置链逐层LST回查、PFCP Usage Report验证、EMS_CtfErrorRpt信令跟踪、告警诊断(ALM-81026/81054/100530) | LST全链路命令集, PFCP Session Report, EMS_CtfErrorRpt |
+| `semantic_object_id` | `semantic_object_name` | `semantic_summary` | `realized_by` | `source_evidence_ids` |
+|----------------------|------------------------|--------------------|--------------|-----------------------|
+| `SO-CH-01` | 报文解析 | L34协议解析和L7 URL解析，是计费匹配的前置能力 | FILTER, L7FILTER | —（批次3 U-M-14补） |
+| `SO-CH-02` | 协议识别 | 识别协议/应用（如http/https/IM协议组），用于计费分流 | PROTBINDFLOWF | —（批次3 U-M-14补） |
+| `SO-CH-03` | 过滤条件 | 将业务描述翻译为可匹配的FILTER/FLOWFILTER/FLOWFILTERGRP组合 | FILTER, FLOWFILTER, FLOWFILTERGRP, FLTBINDFLOWF | —（批次3 U-M-14补） |
+| `SO-CH-04` | 规则语义 | 将匹配条件与计费动作绑定为RULE，计费场景POLICYTYPE固定为PCC | RULE(POLICYTYPE=PCC) | —（批次3 U-M-14补） |
+| `SO-CH-05` | 策略语义 | 计费场景固定为PCC策略类型，封装URRGROUP为可被RULE引用的策略组 | PCCPOLICYGRP | —（批次3 U-M-14补） |
+| `SO-CH-06` | 优先级语义 | 多规则同时命中时按PRIORITY裁决（越小越高），特定业务优先于兜底 | RULE.PRIORITY | —（批次3 U-M-14补） |
+| `SO-CH-07` | 绑定语义 | UserProfile承载规则绑定(RULEBINDING)和默认计费组(URRGRPBINDING) | USERPROFILE, RULEBINDING, URRGRPBINDING | —（批次3 U-M-14补） |
+| `SO-CH-08` | 计费语义 | 差异化计费(RG)、免费业务(FREE RG)、默认计费(兜底)；核心三件套URR→URRGROUP→PCCPOLICYGRP | URR, URRGROUP, PCCPOLICYGRP | —（批次3 U-M-14补） |
+| `SO-CH-09` | 配额语义 | 在线/融合计费的配额控制(GSU/Requested-Unit)、阈值触发和耗尽动作(Final-Unit-Action) | CCT, QUOTAEXHAUSTACT, DCCTEMPLATE | —（批次3 U-M-14补） |
+| `SO-CH-10` | 计费协议栈-Ga/Gy ★ | Ga接口(离线,GTP')、Gy接口(在线,DCC/Diameter)、DCC会话(CCR-I/U/T)、MSCC多业务信用控制 | CG配置对象, OCS配置对象, DIAMCONNGRP | `EV-PK-Ga-Gy-DCC` |
+| `SO-CH-11` | 计费协议栈-N40/PFCP ★ | N40接口(融合,Nchf/HTTP2)、PFCP协议(N4,Usage Report)、Gx接口(4G,PCRF↔SMF) | HTTPLEGRP/HTTPLE/SBIAPLE, TNFINS/TNFGRP, SELECTCHFGBYCC, PFCP Session Report | `EV-PK-N40-PFCP-Gx` |
+| `SO-CH-12` | 核查与诊断语义 | 配置链逐层LST回查、PFCP Usage Report验证、EMS_CtfErrorRpt信令跟踪、告警诊断(ALM-81026/81054/100530) | LST全链路命令集, PFCP Session Report, EMS_CtfErrorRpt | —（批次3 U-M-14补） |
 
 > ★ 为本版新增协议知识映射对象，确保协议层知识完整入图谱。
 
@@ -329,15 +330,15 @@
 | `BD-CH-01` | `contains` | `NS-CH-01` |
 | `NS-CH-01` | `instantiated_as` | `CS-CH-01` ~ `CS-CH-07` |
 
-### 8.2 方案使用特性（uses_feature，共20条边）
+### 8.2 方案使用特性（uses_feature，共22条边）
 
 | 起点 | 关系 | 终点 |
 |------|------|------|
 | `CS-CH-01` | `uses_feature` | `GWFD-010171`, `GWFD-020301`, `WSFD-011201` |
 | `CS-CH-02` | `uses_feature` | `GWFD-020300`, `GWFD-020301`, `GWFD-020306` |
 | `CS-CH-03` | `uses_feature` | `GWFD-010173`, `WSFD-011206`, `GWFD-020301` |
-| `CS-CH-04` | `uses_feature` | `GWFD-110101`, `GWFD-020301`, `GWFD-020351`, `WSFD-109101` |
-| `CS-CH-05` | `uses_feature` | `GWFD-020302`, `GWFD-020303`, `GWFD-020306` |
+| `CS-CH-04` | `uses_feature` | `GWFD-110101`, `GWFD-020301`, `GWFD-020351`, `WSFD-109101`, `WSFD-109002` |
+| `CS-CH-05` | `uses_feature` | `GWFD-020301`, `GWFD-020302`, `GWFD-020303`, `GWFD-020306` |
 | `CS-CH-06` | `uses_feature` | `GWFD-020300`, `GWFD-010173`, `WSFD-011206` |
 | `CS-CH-07` | `uses_feature` | `GWFD-020301`, `GWFD-020351` |
 

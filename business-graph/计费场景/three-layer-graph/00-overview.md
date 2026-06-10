@@ -47,9 +47,9 @@
 ├─────────────────────────────────────────────────────────────────────┤
 │  第4层 命令图谱 CommandGraph                                         │
 │  ┌───────────────────────────────────────────────────────────────┐  │
-│  │ MMLCommand(65) ──has_param──→ CommandParameter               │  │
+│  │ MMLCommand(87) ──has_param──→ CommandParameter               │  │
 │  │     │                                                         │  │
-│  │     ├─ operates_on ──→ ConfigObject(26)                       │  │
+│  │     ├─ operates_on ──→ ConfigObject(55)                       │  │
 │  │     │                      └─ contains ──→ ConfigObject       │  │
 │  │     └─ has_rule ──→ CommandRule(12)                           │  │
 │  └───────────────────────────────────────────────────────────────┘  │
@@ -84,18 +84,18 @@
 | | License | 11（含4无需License特性） | |
 | | FeatureRule | 8 | |
 | | **特性层小计** | **33** | |
-| **第3层 任务原子层** | ConfigTask | 28（generic 8 + feature_specific 20） | `03-task-layer.md` |
+| **第3层 任务原子层** | ConfigTask | 27（generic 8 + feature_specific 19） | `03-task-layer.md` |
 | | TaskRule | 6 | |
 | | TaskCommandOrderEdge | 20 | |
-| | **任务层小计** | **54** | |
-| **第4层 命令图谱** | MMLCommand | 65（UDG 32 + UNC 33） | `04-command-graph.md` |
-| | ConfigObject | 26 | |
+| | **任务层小计** | **53** | |
+| **第4层 命令图谱** | MMLCommand | 87（UDG 41 + UNC 46） | `04-command-graph.md` |
+| | ConfigObject | 55 | |
 | | CommandRule | 12 | |
 | | ConfigObject contains 边 | 9 | |
-| | **命令层小计** | **112** | |
+| | **命令层小计** | **163** | |
 | **第5层 跨层映射** | 跨层边 | ~125 | `05-cross-layer-mapping.md` |
 | **第6层 证据层** | EvidenceSource | 31（含2协议知识★） | `06-evidence-index.md` |
-| **图谱对象总计** | — | **~411** | — |
+| **图谱对象总计** | — | **~462** | — |
 
 ### 3.2 关键关系边总数
 
@@ -105,8 +105,8 @@
 | NS contains CS | 7 | `01-business-graph.md` |
 | CS uses_feature | 20 | `05-cross-layer-mapping.md` |
 | CS uses_task（闭包级） | 7 | `05-cross-layer-mapping.md` |
-| CS governed_by DP（has_decision） | 10 | `01-business-graph.md` |
-| CS constrained_by BR | ~20 | `01-business-graph.md` |
+| CS governed_by DP（has_decision） | 12 | `01-business-graph.md` |
+| CS constrained_by BR | ~35 | `01-business-graph.md` |
 | CS uses_semantic_object | 7 | `01-business-graph.md` |
 | Feature depends_on | 16 | `02-feature-graph.md` |
 | Feature requires_license | 11 | `02-feature-graph.md` |
@@ -155,6 +155,8 @@
   → T-101 License开启（LKV3G5BCBC01）
   → T-102 SA特征库加载
   → T-001 规划业务分类（FILTER/L7FILTER）
+  → T-002 配置流过滤器（FLOWFILTER/FLTBINDFLOWF）
+  → T-103 配置协议绑定（PROTBINDFLOWF，60秒）
   → T-006 配置URR与URR组 ★ 核心 (ADD URR)
   → T-007 配置PCC策略组 (ADD PCCPOLICYGRP)
   → T-003 配置PCC规则 (ADD RULE)
@@ -165,9 +167,9 @@
 [命令] T-006 invokes → ADD URR
   → operates_on → ConfigObject: URR
     → 关键参数: URRID, USAGERPTMODE=OFFLINE, OFFMETERINGTYPE=VOLUME, RG
-  → constrained_by → CR-01 URRID会话内唯一
-                   → CR-02 RG值跨侧一致性
-                   → CR-03 三件套绑定完整性
+  → constrained_by → CR-CH-01 URRID会话内唯一
+                   → CR-CH-02 RG值跨侧一致性
+                   → CR-CH-03 三件套绑定完整性
 
 [证据] 全链路可追溯：
   CS-CH-04 → [EV-KB-001(K013,K020-K022), EV-BS-001, EV-KB-002(K214)]
@@ -228,8 +230,8 @@
 
 [命令] T-303 invokes → SET CHFINIT + ADD TNFINS/TNFGRP/SELECTCHFGBYCC
   → operates_on → ConfigObject: CHFINIT, TNFGRP, SELECTCHFGBYCC
-  → constrained_by → CR-06 三联前置约束
-                   → CR-08 跨网元名称一致性
+  → constrained_by → CR-CH-06 三联前置约束
+                   → CR-CH-08 跨网元名称一致性
 
 [证据] CS-CH-03 → [EV-KB-001(K001,K101-K121,K201,K202,K105)]
 ```
@@ -278,7 +280,7 @@
 | `01-business-graph.md` | 第1层：BD/NS/CS/DP/BR/SO 实例化（7 CS + 8 DP + 12 BR + 12 SO） | §8.1-8.6, §8.12 |
 | `02-feature-graph.md` | 第2层：14 Feature + 11 License + 8 FeatureRule + depends_on | §9.3-9.5 |
 | `03-task-layer.md` | 第3层：28 ConfigTask + 6 TaskRule + 20 TaskCommandOrderEdge | §10.1-10.3 |
-| `04-command-graph.md` | 第4层：65 MMLCommand + 26 ConfigObject + 12 CommandRule | §11.1-11.7 |
+| `04-command-graph.md` | 第4层：87 MMLCommand + 55 ConfigObject + 12 CommandRule | §11.1-11.7 |
 | `05-cross-layer-mapping.md` | 第5层：跨层映射关系总表（~125边） | §12.1-12.5 |
 | `06-evidence-index.md` | 第6层：证据层索引（31 EvidenceSource，含2协议知识★） | §10 EvidenceSource |
 

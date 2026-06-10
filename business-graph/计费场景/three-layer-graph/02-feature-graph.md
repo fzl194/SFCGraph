@@ -32,6 +32,14 @@
 | UNC | 4 | PCC / 内容计费 / 热计费(SGSN) / 融合计费依赖内容计费License |
 | 无需License | 4特性 | GWFD-010171, GWFD-010173, WSFD-011201, WSFD-011206 |
 
+### 0.3 全局字段声明（status）
+
+> **适用范围**：本文件 §1（14个Feature）和 §3（11个License + 4个无需License特性）所有对象。
+> **声明**：除非特别标注，本文件所有 Feature（GWFD/WSFD-*）和 License（LKV*）的 `status` 字段值均为 `active`。
+> **依据**：Schema §9.4（Feature.status 必备）和 §9.5（License.status 必备）。计费场景所有特性和 License 均处于正式启用状态。
+> **修复来源**：U-M-15（Feature/License 缺 status 字段）。采用全局声明替代逐表格添加，避免14个Feature表格的冗余修改；License 表格在 §3 显式补 `status` 列。
+> **例外**：无。所有对象当前均为 `active`，无 `deprecated` 或 `planned` 状态。
+
 ---
 
 ## 1. Feature 实例化（14个）
@@ -140,7 +148,7 @@
 | `feature_group` | `融合计费` |
 | `applicable_nf_map` | UPF, PGW-U（UDG）；SMF, PGW-C（UNC）；CHF; PCF |
 | `first_release` | `20.0.0` |
-| `requires_license` | 无需License（依赖内容计费License LKV3G5BC01） |
+| `requires_license` | 无需License（依赖内容计费License LKV3G5BCBC01） |
 | `key_capabilities` | ① Nchf/N40接口（HTTP/2）② RGAPPLIED三种模式（DEFAULT/ONLINERGONLY/OFFLINERGONLY）③ 每业务2个URR（离线+在线）④ 共享在线计费超时阻塞机制 ⑤ SET URRFAILACTION阻塞应急放通 |
 | `source_evidence_ids` | `EV-FK-Converged-UDG`, `EV-CFA` |
 
@@ -265,7 +273,7 @@
 | GWFD-020303 (流量计费) | `depends_on` | GWFD-110101 (SA-Basic) | mandatory | 内容计费前置依赖SA-Basic |
 | GWFD-020306 (事件计费) | `depends_on` | GWFD-020301 (内容计费) | mandatory | 事件计费是内容计费增强特性 |
 | GWFD-020306 (事件计费) | `depends_on` | GWFD-110101 (SA-Basic) | mandatory | 事件计费依赖SA-Basic识别业务 |
-| GWFD-010173 (融合计费) | `depends_on` | GWFD-020301 (内容计费) | mandatory | 需内容计费License（LKV3G5BC01）打开 |
+| GWFD-010173 (融合计费) | `depends_on` | GWFD-020301 (内容计费) | mandatory | 需内容计费License（LKV3G5BCBC01）打开 |
 
 ### 2.2 UNC侧依赖（6条）
 
@@ -282,22 +290,22 @@
 
 ## 3. License 实例化（11条 + 4无需License）
 
-| `license_id` | `license_name` | 对应Feature | 产品 | 说明 |
-|---------------|----------------|-------------|------|------|
-| `LKV3G5SABS01` | SA-Basic (82209749) | GWFD-110101 | UDG | 业务感知基础 |
-| `LKV3G5PCCB01` | PCC基本功能 (82209825) | GWFD-020351 | UDG | PCC框架 |
-| `LKV3G5BCBC01` | 内容计费基本功能 (82209822) | GWFD-020301 | UDG | 内容计费核心 |
-| `LKV3G5TBCS01` | 基于业务时长的计费 (82209823) | GWFD-020302 | UDG | 时长计量 |
-| `LKV3G5VBCS01` | 基于业务流量的计费 (82209824) | GWFD-020303 | UDG | 流量计量 |
-| `LKV3G5EBCS01` | 支持事件计费 (82200CKE) | GWFD-020306 | UDG | 事件计量 |
-| `LKV3G5OLCH01` | 在线计费 (82209821) | GWFD-020300 | UDG | 在线计费 |
-| `LKV3W9SPCC11` | PCC基本功能 (82207979) | WSFD-109101 | UNC | UNC PCC框架 |
-| `LKV3W9BCC12` | 内容计费基本功能 (82207988) | WSFD-109002 | UNC | UNC内容计费 |
-| `LKV2HBILL02` | 支持热计费功能 (82206574) | WSFD-011202 | UNC（仅SGSN） | 热计费 |
-| 无需License | — | WSFD-011206 | UNC | 融合计费依赖内容计费License |
-| 无需License | — | GWFD-010171 | UDG | 离线计费 |
-| 无需License | — | GWFD-010173 | UDG | 融合计费依赖内容计费License |
-| 无需License | — | WSFD-011201 | UNC | 离线计费 |
+| `license_id` | `license_name` | 对应Feature | 产品 | `status` | 说明 |
+|---------------|----------------|-------------|------|----------|------|
+| `LKV3G5SABS01` | SA-Basic (82209749) | GWFD-110101 | UDG | `active` | 业务感知基础 |
+| `LKV3G5PCCB01` | PCC基本功能 (82209825) | GWFD-020351 | UDG | `active` | PCC框架 |
+| `LKV3G5BCBC01` | 内容计费基本功能 (82209822) | GWFD-020301 | UDG | `active` | 内容计费核心 |
+| `LKV3G5TBCS01` | 基于业务时长的计费 (82209823) | GWFD-020302 | UDG | `active` | 时长计量 |
+| `LKV3G5VBCS01` | 基于业务流量的计费 (82209824) | GWFD-020303 | UDG | `active` | 流量计量 |
+| `LKV3G5EBCS01` | 支持事件计费 (82200CKE) | GWFD-020306 | UDG | `active` | 事件计量 |
+| `LKV3G5OLCH01` | 在线计费 (82209821) | GWFD-020300 | UDG | `active` | 在线计费 |
+| `LKV3W9SPCC11` | PCC基本功能 (82207979) | WSFD-109101 | UNC | `active` | UNC PCC框架 |
+| `LKV3W9BCC12` | 内容计费基本功能 (82207988) | WSFD-109002 | UNC | `active` | UNC内容计费 |
+| `LKV2HBILL02` | 支持热计费功能 (82206574) | WSFD-011202 | UNC（仅SGSN） | `active` | 热计费 |
+| 无需License | — | WSFD-011206 | UNC | `active` | 融合计费依赖内容计费License |
+| 无需License | — | GWFD-010171 | UDG | `active` | 离线计费 |
+| 无需License | — | GWFD-010173 | UDG | `active` | 融合计费依赖内容计费License |
+| 无需License | — | WSFD-011201 | UNC | `active` | 离线计费 |
 
 ---
 
@@ -320,14 +328,14 @@
 
 | `rule_id` | 所属Feature | `rule_name` | `rule_type` | `rule_logic` | `severity` |
 |-----------|------------|-------------|-------------|--------------|------------|
-| `FR-01` | GWFD-020301（内容计费） | REFRESHSRV必须最后执行 | `execution_rule` | 不执行SET REFRESHSRV，FILTER的配置变更不会生效。必须在所有Filter配置完成后执行。PROTBINDFLOWF要求修改后等待60秒再执行 | critical |
-| `FR-02` | GWFD-010173（融合计费） | RGAPPLIED与URRGROUP冲突约束 | `restriction_rule` | 当RGAPPLIED=DEFAULT时，URRGROUP下不能同时配置离线和在线URR，否则计费冲突。RGAPPLIED=ONLINERGONLY/OFFLINERGONLY时，URRGROUP中必须同时包含在线和离线RG | critical |
-| `FR-03` | GWFD-020300（在线计费） | 超时阻塞公式 | `validation_rule` | 超时时间 = T3RESPONSE × N3REQUEST + 4（秒）。超时未收到配额更新，UPF阻塞业务。SET URRFAILACTION:RETRYFAILACT=CONTINUE可应急放通 | warning |
-| `FR-04` | GWFD-020301（内容计费） | SMF/UPF配置一致性（11+参数） | `consistency_rule` | URRID/USAGERPTMODE/OFFMETERINGTYPE/ONLMETERINGTYPE/RULENAME/POLICYTYPE/POLICYNAME/USERPROFILENAME/RULEBINDING RULENAME+POLICYTYPE在SMF和UPF必须一致。30分钟扫描，不一致触发ALM-81054 | critical |
-| `FR-05` | GWFD-020301（内容计费） | RULE优先级排序规则 | `naming_rule` | 数字越小优先级越高。只绑定三四层filter的RULE优先级应低于绑定七层filter的RULE。any过滤条件的RULE优先级设为最低（如65000） | info |
-| `FR-06` | GWFD-020301（内容计费） | URRGROUP必须同时配置在线+离线URR | `restriction_rule` | URRGROUP下必须同时配置在线URR和离线URR。只配置一种计费模式且和用户计费模式不匹配时无法计费。UPURRNAME1/2和DOWNURRNAME1/2只是编号，无优先级语义 | warning |
-| `FR-07` | GWFD-020302（时长计费） | QCT优先级规则 | `dependency_rule` | 在线计费QCT确定优先级：TQM优先 > OCS下发的QCT > PGW-C/SMF本地配置的QCT。OCS下发的计费方式优先级高于本地配置。不支持CTP↔QCT会话中切换 | warning |
-| `FR-08` | GWFD-020306（事件计费） | 事件计费点配额管理差异 | `execution_rule` | REQUEST：直接占用配额，无需预占用/返还。RESPONSE/FINISH：收到请求时预占用配额；识别到成功响应后正式占用；未识别到响应则返还预占配额。RG使能状态整个PDU会话不可变 | warning |
+| `FR-CH-01` | GWFD-020301（内容计费） | REFRESHSRV必须最后执行 | `restriction_rule` | 不执行SET REFRESHSRV，FILTER的配置变更不会生效。必须在所有Filter配置完成后执行。PROTBINDFLOWF要求修改后等待60秒再执行 | critical |
+| `FR-CH-02` | GWFD-010173（融合计费） | RGAPPLIED与URRGROUP冲突约束 | `restriction_rule` | RGAPPLIED=DEFAULT时，URRGROUP下**不能**同时配置离线和在线URR，否则计费冲突；RGAPPLIED=ONLINERGONLY时URRGROUP**只配在线URR**（UPURRNAME2/DOWNURRNAME2）；RGAPPLIED=OFFLINERGONLY时**只配离线URR**（UPURRNAME1/DOWNURRNAME1） | critical |
+| `FR-CH-03` | GWFD-020300（在线计费） | 超时阻塞公式 | `validation_rule` | 超时时间 = T3RESPONSE × N3REQUEST + 4（秒）。超时未收到配额更新，UPF阻塞业务。SET URRFAILACTION:RETRYFAILACT=CONTINUE可应急放通 | warning |
+| `FR-CH-04` | GWFD-020301（内容计费） | SMF/UPF配置一致性（11+参数） | `consistency_rule` | URRID/USAGERPTMODE/OFFMETERINGTYPE/ONLMETERINGTYPE/RULENAME/POLICYTYPE/POLICYNAME/USERPROFILENAME/RULEBINDING RULENAME+POLICYTYPE在SMF和UPF必须一致。30分钟扫描，不一致触发ALM-81054 | critical |
+| `FR-CH-05` | GWFD-020301（内容计费） | RULE优先级排序规则 | `naming_rule` | 数字越小优先级越高。只绑定三四层filter的RULE优先级应低于绑定七层filter的RULE。any过滤条件的RULE优先级设为最低（如65000） | info |
+| `FR-CH-06` | GWFD-020301（内容计费） | URRGROUP必须同时配置在线+离线URR | `restriction_rule` | URRGROUP下必须同时配置在线URR和离线URR。只配置一种计费模式且和用户计费模式不匹配时无法计费。UPURRNAME1/2和DOWNURRNAME1/2只是编号，无优先级语义 | warning |
+| `FR-CH-07` | GWFD-020302（时长计费） | QCT优先级规则 | `dependency_rule` | 在线计费QCT确定优先级：TQM优先 > OCS下发的QCT > PGW-C/SMF本地配置的QCT。OCS下发的计费方式优先级高于本地配置。不支持CTP↔QCT会话中切换 | warning |
+| `FR-CH-08` | GWFD-020306（事件计费） | 事件计费点配额管理差异 | `validation_rule` | REQUEST：直接占用配额，无需预占用/返还。RESPONSE/FINISH：收到请求时预占用配额；识别到成功响应后正式占用；未识别到响应则返还预占配额。RG使能状态整个PDU会话不可变 | warning |
 
 ---
 
@@ -357,7 +365,7 @@ T-101(License LKV3G5OLCH01) → T-006(URR/URRGROUP, ONLINE)
 ### 6.3 GWFD-010173 融合计费（UDG侧配置链）
 
 ```
-T-101(确认LKV3G5BC01已开) → T-006(每业务2个URR: OFFLINE+ONLINE)
+T-101(确认LKV3G5BCBC01已开) → T-006(每业务2个URR: OFFLINE+ONLINE)
 → T-007(PCCPOLICYGRP) → T-001/T-002(过滤) → T-003(RULE)
 → T-004(USERPROFILE) → T-104(URRGRPBINDING/SPECURRGRPLIST)
 → SET URRFAILACTION(阻塞应急放通) → T-008(REFRESHSRV)
@@ -367,9 +375,10 @@ T-101(确认LKV3G5BC01已开) → T-006(每业务2个URR: OFFLINE+ONLINE)
 
 ```
 T-101(License LKV3G5BCBC01) → T-102(LOD SIGNATUREDB/PARSERDB)
-→ T-006(每业务2条URR: OFFLINE+ONLINE) → T-007(PCCPOLICYGRP)
 → T-001(FILTER/L7FILTER) → T-002(FLOWFILTER/FLTBINDFLOWF)
-→ T-103(PROTBINDFLOWF, 60秒延迟) → T-003(RULE)
+→ T-103(PROTBINDFLOWF, 60秒延迟)
+→ T-006(每业务2条URR: OFFLINE+ONLINE) → T-007(PCCPOLICYGRP)
+→ T-003(RULE)
 → T-004(USERPROFILE/RULEBINDING) → T-104(URRGRPBINDING/SPECTRAFURRGRP)
 → T-008(REFRESHSRV, must_be_last)
 ```
@@ -394,7 +403,7 @@ T-101(License) → T-301(SET CHGMODE=NchfMode) → T-302(SET CHARGECTRL使能)
 |---------|------|------|
 | `depends_on` | 16 | UDG侧10 + UNC侧6（含1跨产品） |
 | `requires_license` | 11 | UDG 7 + UNC 4 |
-| `has_rule`（FeatureRule） | 8 | FR-01~FR-08 |
+| `has_rule`（FeatureRule） | 8 | FR-CH-01~FR-CH-08 |
 | `decomposes_to`（Feature→ConfigTask） | 14 | 见`05-cross-layer-mapping.md` |
 | **特性层对象总计** | **14 Feature + 11 License + 8 FeatureRule** | — |
 
@@ -421,7 +430,7 @@ T-101(License) → T-301(SET CHGMODE=NchfMode) → T-302(SET CHARGECTRL使能)
 |---------|------|---------|
 | Feature | 14 | GWFD-110101/020300/020301/020302/020303/020306/020351/010171/010173 + WSFD-011201/011202/011206/109002/109101 |
 | License | 11 | LKV3G5*（7）+ LKV3W9*（2）+ LKV2HBILL02 + 无需(4特性) |
-| FeatureRule | 8 | FR-01~FR-08 |
+| FeatureRule | 8 | FR-CH-01~FR-CH-08 |
 | depends_on边 | 16 | UDG 10 + UNC 6 |
 | **特性层对象总计** | **49** | — |
 

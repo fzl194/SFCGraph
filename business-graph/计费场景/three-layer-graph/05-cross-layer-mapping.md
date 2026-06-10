@@ -167,7 +167,7 @@
 
 ---
 
-## 7. 端到端链路验证（3条完整路径）
+## 7. 端到端链路验证（6条完整路径）
 
 ### 7.1 路径A：内容计费（离线）端到端
 
@@ -201,12 +201,12 @@
 [命令] T-006 invokes → ADD URR
   → operates_on → ConfigObject: URR
     → 关键参数: URRID, USAGERPTMODE=OFFLINE, OFFMETERINGTYPE=VOLUME, RG
-  → constrained_by → CR-01 URRID会话内唯一
-  → constrained_by → CR-02 RG值跨侧一致性
-  → constrained_by → CR-03 三件套绑定完整性
+  → constrained_by → CR-CH-01 URRID会话内唯一
+  → constrained_by → CR-CH-02 RG值跨侧一致性
+  → constrained_by → CR-CH-03 三件套绑定完整性
 
 [证据] 全链路可追溯：
-  CS-CH-04 → [EV-KB-001(K013,K020-K022), EV-01-业务图谱, EV-KB-002(K214)]
+  CS-CH-04 → [EV-KB-001(K013,K020-K022), EV-BS-001, EV-KB-002(K214)]
   GWFD-020301 → [EV-FK-Content-UDG, EV-CFA]
   ADD URR → [EV-FK-Content-UDG, EV-CFA, EV-KB-001]
 ```
@@ -240,7 +240,7 @@
 [命令] T-204 invokes → ADD QUOTAEXHAUSTACT
   → operates_on → ConfigObject: QUOTAEXHAUSTACT
     → 关键参数: URRID, FACTION(BLOCK/REDIRECT/FORWARD)
-  → constrained_by → CR-10 超时阻塞公式
+  → constrained_by → CR-CH-10 超时阻塞公式
   → impacted_by → DP-CH-04 sets_value_pattern(FACTION)
 
 [证据] CS-CH-02 → [EV-KB-001(K028-K048), EV-KB-001(K037,K043-K045)]
@@ -277,10 +277,97 @@
 
 [命令] T-303 invokes → SET CHFINIT + ADD TNFINS/TNFINSIP/TNFGRP/TNFBINDGRP/SELECTCHFGBYCC
   → operates_on → ConfigObject: CHFINIT, TNFGRP, SELECTCHFGBYCC
-  → constrained_by → CR-06 三联前置约束（CHGMODE+CHARGECTRL+CHFINIT）
-  → constrained_by → CR-08 跨网元名称一致性
+  → constrained_by → CR-CH-06 三联前置约束（CHGMODE+CHARGECTRL+CHFINIT）
+  → constrained_by → CR-CH-08 跨网元名称一致性
 
 [证据] CS-CH-03 → [EV-KB-001(K001,K101-K121,K201,K202,K105)]
+```
+
+### 7.4 路径D：离线计费CG侧端到端
+
+```
+[业务] CS-CH-01 离线计费方案
+  → DP-CH-03 选择匹配层次（L34+L7混合）
+  → DP-CH-06 选择计量方式（VOLUME/DURATION/EVENT）
+  → BR-CH-02 配置链逐层一致性
+  → SO-CH-08 计费语义（RG差异化，OFFLINE模式）
+
+[特性] CS-CH-01 uses_feature
+  → GWFD-010171 离线计费（UDG CG侧）
+  → WSFD-011201 离线计费（UNC CGF侧）
+  → GWFD-020301 内容计费（基础License）
+
+[任务] GWFD-010171 decomposes_to
+  → T-101 License开启
+  → T-001/T-002 过滤条件
+  → T-006 配置URR（USAGERPTMODE=OFFLINE）★ 核心
+  → T-007 配置PCC策略组
+  → T-003/T-004 规则与用户模板
+  → T-311 配置CG接口（ADD CG + SET CDRTRANSFER + SET OFCTHRESHOLD）★ CG侧核心
+  → T-008 刷新生效
+
+[命令] T-311 invokes → ADD CG, SET CDRTRANSFER, SET OFCTHRESHOLD, SET CONTAINERTRIGGER
+  → operates_on → ConfigObject: CG, CDRTRANSFER, OFCTHRESHOLD, CONTAINERTRIGGER
+    → 关键参数: CGNAME, IPADDR, WAL, ALGTYPE(LOADBASED/USERBASED)
+  → constrained_by → CR-CH-08 跨网元名称一致性（URRID/RG）
+
+[证据] CS-CH-01 → [EV-FK-Offline-UDG, EV-FK-Offline-UNC, EV-CFA]
+  T-311 → [EV-FK-Offline-UDG, EV-FK-Offline-UNC, EV-CFA]
+```
+
+### 7.5 路径E：配额降速端到端
+
+```
+[业务] CS-CH-06 配额降速方案（在线配额耗尽→降速规则覆盖）
+  → DP-CH-04 选择配额耗尽动作（FACTION=REDIRECT/FORWARD）
+  → BR-CH-09 配额降速优先级覆盖 ★ 核心（最高优先级+完全覆盖匹配范围）
+  → SO-CH-09 配额语义（Final-Unit-Action）
+
+[特性] CS-CH-06 uses_feature
+  → GWFD-020300 在线计费（UDG Gy/OCS）
+  → WSFD-011206 融合计费（UNC Nchf降速规则下发）
+  → GWFD-020303 流量计费（Volume阈值触发降速）
+
+[任务] GWFD-020300 decomposes_to
+  → T-006 配置URR（USAGERPTMODE=ONLINE, VOLUMETHRESHOLD触发）
+  → T-204 配置配额耗尽动作（QUOTAEXHAUSTACT, FACTION=REDIRECT）★ 核心
+  → T-003 配置降速PCC规则（PRIORITY=最高优先级）
+  → T-008 刷新生效
+
+[命令] T-204 invokes → ADD QUOTAEXHAUSTACT
+  → operates_on → ConfigObject: QUOTAEXHAUSTACT
+    → 关键参数: URRID, FACTION(REDIRECT/FORWARD)
+  → constrained_by → CR-CH-10 超时阻塞公式
+  → impacted_by → DP-CH-04 sets_value_pattern(FACTION=REDIRECT)
+  → constrained_by → BR-CH-09 降速规则优先级覆盖
+
+[证据] CS-CH-06 → [EV-FK-Online, EV-FK-Converged-UNC, EV-CFA, EV-KB-001(K037,K043-K045)]
+```
+
+### 7.6 路径F：兜底计费端到端
+
+```
+[业务] CS-CH-07 兜底与诊断方案
+  → DP-CH-07 选择兜底策略（默认URR组+特殊流量兜底）
+  → BR-CH-06 默认URR组必须配置（DFTURRGRPNAME+DFTSIGURRGNAME）
+  → SO-CH-12 核查与诊断语义
+
+[特性] CS-CH-07 uses_feature
+  → GWFD-020301 内容计费（UDG兜底三件套）
+  → GWFD-110101 SA-Basic（兜底流量识别）
+
+[任务] GWFD-020301 decomposes_to
+  → T-006 配置URR与URR组（DFTURRGRPNAME默认组）★ 核心
+  → T-104 配置URR组绑定与兜底（SET URRGRPBINDING + SET SPECTRAFURRGRP）★ 核心
+  → T-008 刷新生效
+
+[命令] T-104 invokes → SET URRGRPBINDING, SET SPECTRAFURRGRP, ADD SPECURRGRPLIST
+  → operates_on → ConfigObject: URRGRPBINDING, SPECTRAFURRGRP
+    → 关键参数: URRGROUPNAME(DFTURRGRPNAME), DFTSIGURRGNAME
+  → constrained_by → BR-CH-06 默认URR组必须配置
+  → constrained_by → CR-CH-03 三件套绑定完整性（兜底链路）
+
+[证据] CS-CH-07 → [EV-FK-Content-UDG, EV-CFA, EV-KB-001(K214,K216)]
 ```
 
 ---
