@@ -1,0 +1,16 @@
+{
+  "slide_number": 8,
+  "title": "当前进展：从三层图谱走向服务化支撑",
+  "out": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_08.png",
+  "input_images": [
+    {
+      "path": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_09.png",
+      "role": "value-page style reference"
+    },
+    {
+      "path": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_10.png",
+      "role": "planning-page style reference"
+    }
+  ],
+  "prompt": "Create a polished 16:9 Chinese leadership slide in the same visual family as slide_09 and slide_10: light background, formal executive technical style, clean structure, blue-green-orange restrained palette, high readability. Title: 当前进展：从三层图谱走向服务化支撑. Subtitle: 当前已形成样板闭环，下一步面向高频变更场景持续演进. No month labels, no timeline by month, no page number.\n\nThis slide must clearly show that the three-layer graph sits under the 服务层, not at the top. The architecture stack from top to bottom must be visually explicit:\n1. Agent\n2. SKILL\n3. 服务层\n4. 三层图谱\n5. 数据层\nHighlight 服务层 and 三层图谱 as the core project focus. Add one concise note near the stack: 构建配置知识底座，沉淀服务层接口，供 SKILL 调用，上层 Agent 组合 SKILL 完成配置生成、配置核查、方案生成等能力。\n\nRecommended layout:\n- Top or left-top: a vertical layered architecture stack with five layers, using blue for Agent, teal for SKILL, orange highlight for 服务层, green/blue for 三层图谱, gray for 数据层. Use arrows downward to show dependency.\n- Main body center-left: 当前完成 as a structured progress tree.\n- Main body center-right: 下一阶段 as a forward-evolution tree.\n- Bottom: one strong takeaway strip.\n\nCurrent progress section title: 当前完成\nUse 3 progress blocks.\n\nBlock 1 title: 本体与建模已收敛出样板\nInclude:\n- 已定义三层图谱对象 schema\n- 基于业务感知完成首轮打样\n- 已构建业务图谱这一层的定义\n\nBlock 2 title: 业务感知场景已完成两类图谱样板\nShow this as a tree structure, visually explicit:\n- 业务感知场景\n  - 计费场景业务图谱\n  - 带宽控制场景业务图谱\nAdd a small note: 已验证场景对象、特性分解、配置任务与命令映射可以按统一主链组织。\n\nBlock 3 title: 已支撑初步能力闭环\nInclude exactly these capability items:\n- 配置生成\n- 配置核查\nAdd one short note: 三层图谱已不仅是建模结果，而是开始支撑可调用能力。\n\nNext-stage section title: 下一阶段\nThis must not be phrased as calendar phases. It must read as forward evolution of project scope.\nUse 4 next-step blocks or one tree with 4 branches:\n- 扩展高频变更场景\n- 割接类场景\n- 对接类场景\n- 引入 MOP 脚本\nAlso include one serviceization branch:\n- 构建服务层接口\n- 为 SKILL 提供标准调用入口\n- 支撑 Agent 按场景调用不同 SKILL\nAnd one outcome branch:\n- 配置生成\n- 配置核查\n- 方案生成\n\nImportant wording constraints:\n- Do not say 几个月、阶段一、阶段二、阶段三.\n- Do not make it a roadmap timeline.\n- Do not overfocus on计费单案例.\n- Emphasize this is evolving from graph construction to service-layer enablement.\n- Clearly show 三层图谱位于服务层之下，数据层之上.\n\nBottom takeaway strip text:\n当前工作已经完成三层图谱样板与能力验证，下一步将围绕高频变更场景与 MOP 脚本持续演进，并通过服务层为 SKILL 提供统一接口，形成 Agent 可调用的配置知识底座。"
+}

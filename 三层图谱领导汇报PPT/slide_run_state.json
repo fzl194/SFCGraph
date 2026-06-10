@@ -1,0 +1,20 @@
+{
+  "deck_name": "三层图谱领导汇报PPT",
+  "selected_backend": "built-in image tool",
+  "approved_samples": [
+    "slide_02",
+    "slide_04",
+    "slide_08",
+    "slide_09"
+  ],
+  "pending_slides": [],
+  "blocked_slides": [],
+  "recorded_slides": [
+    "slide_01",
+    "slide_03",
+    "slide_05",
+    "slide_06",
+    "slide_07",
+    "slide_10"
+  ]
+}

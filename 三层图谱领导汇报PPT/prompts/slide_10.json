@@ -1,0 +1,12 @@
+{
+  "slide_number": 10,
+  "title": "下一步规划",
+  "out": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_10.png",
+  "input_images": [
+    {
+      "path": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_09.png",
+      "role": "value-page style reference"
+    }
+  ],
+  "prompt": "Create a polished 16:9 Chinese closing slide for leadership. Title: 下一步规划. Use a calm roadmap layout with 3 to 4 phases. Include: 本体收敛; 计费案例标准化映射; 扩展到带宽控制/访问限制/本地分流; 支撑推荐、生成、核查、诊断等能力. Add a closing takeaway: 三层图谱建设不是做一套图，而是在构建云核心网配置知识的长期工程底座. Light background, formal executive technical style."
+}

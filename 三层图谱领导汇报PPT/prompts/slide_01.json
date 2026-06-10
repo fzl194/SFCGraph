@@ -1,0 +1,12 @@
+{
+  "slide_number": 1,
+  "title": "云核心网三层配置图谱",
+  "out": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_01.png",
+  "input_images": [
+    {
+      "path": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_08.png",
+      "role": "approved style reference only"
+    }
+  ],
+  "prompt": "Create a polished 16:9 Chinese cover slide for a leadership-facing technical presentation. Title: 云核心网三层配置图谱. Subtitle: 从文档知识到配置数字孪生. Add a smaller supporting line: 以计费场景为例. Style must match the approved reference slide: clean professional, light background, technical architecture feel, management-report tone, high Chinese readability, no watermark, no slide number."
+}

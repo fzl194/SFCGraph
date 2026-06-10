@@ -1,0 +1,21 @@
+{
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "approved_sample_path": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_08.png"
+  },
+  "slides": [
+    {"slide": "slide_01", "title": "云核心网三层配置图谱", "prompt_file": "prompts/slide_01.json", "output_path": "origin_image/slide_01.png", "status": "recorded"},
+    {"slide": "slide_02", "title": "当前问题不是文档少，而是知识没有被分层组织", "prompt_file": "prompts/slide_02.json", "output_path": "origin_image/slide_02.png", "status": "accepted"},
+    {"slide": "slide_03", "title": "目标：构建面向配置数字孪生的三层图谱本体", "prompt_file": "prompts/slide_03.json", "output_path": "origin_image/slide_03.png", "status": "recorded"},
+    {"slide": "slide_04", "title": "一个真实诉求如何穿透三层图谱", "prompt_file": "prompts/slide_04.json", "output_path": "origin_image/slide_04.png", "status": "recorded"},
+    {"slide": "slide_05", "title": "走完案例，再看对象和关系", "prompt_file": "prompts/slide_05.json", "output_path": "origin_image/slide_05.png", "status": "recorded"},
+    {"slide": "slide_06", "title": "顺序关系怎么承载", "prompt_file": "prompts/slide_06.json", "output_path": "origin_image/slide_06.png", "status": "recorded"},
+    {"slide": "slide_07", "title": "为什么要引入配置任务", "prompt_file": "prompts/slide_07.json", "output_path": "origin_image/slide_07.png", "status": "recorded"},
+    {"slide": "slide_08", "title": "当前进展：从三层图谱走向服务化支撑", "prompt_file": "prompts/slide_08.json", "output_path": "origin_image/slide_08.png", "status": "recorded"},
+    {"slide": "slide_09", "title": "三层图谱最终带来什么", "prompt_file": "prompts/slide_09.json", "output_path": "origin_image/slide_09.png", "status": "accepted"},
+    {"slide": "slide_10", "title": "下一步规划", "prompt_file": "prompts/slide_10.json", "output_path": "origin_image/slide_10.png", "status": "recorded"}
+  ]
+}

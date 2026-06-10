@@ -1,0 +1,144 @@
+{
+  "deck_name": "三层图谱领导汇报PPT",
+  "language": "Chinese",
+  "slide_count": 10,
+  "audience": "领导、技术管理层",
+  "deck_goal": "介绍云核心网三层配置图谱的建设背景、本体定义、阶段进展、服务化方向和价值规划",
+  "core_claim": "把业务问题、产品能力、复用任务和底层命令分层解耦，再通过有限主关系打通，可形成面向配置数字孪生的统一知识底座。",
+  "visual_style": {
+    "name": "清爽专业风 + 技术架构图表达 + 管理汇报气质",
+    "direction": "clean modern professional deck, light background, structured architecture-diagram readability, executive technical report tone",
+    "color_palette": {
+      "business": "blue",
+      "feature": "green",
+      "task": "orange",
+      "command": "red",
+      "evidence": "gray"
+    }
+  },
+  "deck_context": {
+    "source_summary": "本 deck 围绕三层图谱建设，目标是把云核心网配置知识从分散文档转化为可复用、可追溯、可支撑智能化能力的知识本体。",
+    "canonical_terms": [
+      "BusinessDomain",
+      "NetworkScenario",
+      "ConfigurationSolution",
+      "Feature",
+      "SubFeature",
+      "ConfigTask",
+      "MMLCommand",
+      "CommandParameter",
+      "ConfigObject",
+      "EvidenceSource"
+    ],
+    "case_anchor": "计费场景是首个标准化样板，用于证明业务-特性-task-命令四层映射可落地。"
+  },
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "prompt_source": "approved sample prompts created in session",
+    "approved_sample_path": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_08.png",
+    "input_context_preparation": "parent agent prepared slide-level prompt docs and approved visual direction",
+    "handoff_rule": "subsequent slides must keep the same style family, density, palette, and management-report tone"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "云核心网三层配置图谱",
+      "role": "cover",
+      "key_points": [
+        "从文档知识到配置数字孪生",
+        "以计费场景为例",
+        "面向领导汇报的体系化介绍"
+      ]
+    },
+    {
+      "slide_number": 2,
+      "title": "当前问题不是文档少，而是知识没有被分层组织",
+      "role": "context / problem",
+      "sample_approved": true,
+      "approved_sample": true
+    },
+    {
+      "slide_number": 3,
+      "title": "目标：构建面向配置数字孪生的三层图谱本体",
+      "role": "concept explanation",
+      "key_points": [
+        "业务图谱表达为什么配",
+        "特性图谱表达靠什么能力配",
+        "命令图谱表达最终怎么配",
+        "Task 作为共享原子层连接能力与命令"
+      ]
+    },
+    {
+      "slide_number": 4,
+      "title": "一个真实诉求如何穿透三层图谱",
+      "role": "story walkthrough / architecture explanation",
+      "key_points": [
+        "用视频业务差异化计费这个真实诉求把三层图谱从业务一路穿到命令",
+        "业务、特性、配置任务、命令分别回答不同问题",
+        "让领导先看懂三层图谱怎么用"
+      ]
+    },
+    {
+      "slide_number": 5,
+      "title": "走完案例，再看对象和关系",
+      "role": "summary / boundary clarification",
+      "key_points": [
+        "从真实案例回收敛出对象组和关系组",
+        "只保留领导需要记住的主链关系和边界规则",
+        "把最容易混淆的三组对象讲清楚"
+      ]
+    },
+    {
+      "slide_number": 6,
+      "title": "顺序关系怎么承载",
+      "role": "process / architecture detail",
+      "key_points": [
+        "TaskCommandOrderEdge 表达 task 内命令稳定顺序",
+        "FeatureTaskOrderEdge 表达特性下 task 稳定编排顺序",
+        "方案级完整顺序当前不进入主 schema"
+      ]
+    },
+    {
+      "slide_number": 7,
+      "title": "为什么要引入配置任务",
+      "role": "concept explanation / bridge layer",
+      "key_points": [
+        "特性太粗，命令太细，中间缺少可复用配置粒度",
+        "配置计费动作链、配置 Rule、配置 UserProfile 与 Rule 绑定是计费场景中的真实配置任务",
+        "同一个配置任务可以被内容计费、在线计费、融合计费等多个特性复用"
+      ]
+    },
+    {
+      "slide_number": 8,
+      "title": "当前进展：从三层图谱走向服务化支撑",
+      "role": "progress / evolution / service-layer positioning",
+      "key_points": [
+        "已完成三层图谱对象 schema 与业务感知首轮打样",
+        "已完成计费场景、带宽控制场景两类业务图谱样板",
+        "已开始支撑配置生成、配置核查能力",
+        "体系位置是 Agent -> SKILL -> 服务层 -> 三层图谱 -> 数据层",
+        "下一步进入割接、对接等高频变更场景，并引入 MOP 脚本"
+      ]
+    },
+    {
+      "slide_number": 9,
+      "title": "三层图谱最终带来什么",
+      "role": "value / outcome",
+      "sample_approved": true,
+      "approved_sample": true
+    },
+    {
+      "slide_number": 10,
+      "title": "下一步规划",
+      "role": "roadmap / closing",
+      "key_points": [
+        "本体收敛",
+        "计费案例样板化映射",
+        "扩展到更多场景",
+        "支撑推荐、生成、核查、诊断等能力"
+      ]
+    }
+  ]
+}

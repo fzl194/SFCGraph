@@ -1,0 +1,12 @@
+{
+  "slide_number": 6,
+  "title": "顺序关系怎么承载",
+  "out": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_06.png",
+  "input_images": [
+    {
+      "path": "D:/mywork/KnowledgeBase/SFCGraph/三层图谱领导汇报PPT/origin_image/slide_04.png",
+      "role": "reference for ontology diagram style"
+    }
+  ],
+  "prompt": "Create a polished 16:9 Chinese slide. Title: 顺序关系怎么承载. Compare two stable orchestration layers: TaskCommandOrderEdge for task-internal command order, and FeatureTaskOrderEdge for feature-level task order. Use a left-right comparison layout with one task command chain example: ADD URR -> ADD URRGROUP -> ADD PCCPOLICYGRP, and one feature task sequence example: 配置计费动作链 -> 配置 Rule -> 配置 UserProfile 与绑定 -> 配置缺省费率/刷新. Add one concise note: 方案级完整顺序当前不进入主 schema."
+}
