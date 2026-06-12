@@ -224,22 +224,52 @@ Phase 7: 输出交付
 
 3. **现网配置解析**：按对象类型分批提取计费相关命令，构建结构化对象清单
 
-   第1轮 UPF(UDG)侧：
+   第1轮 UPF(UDG)侧，**每个命令类型单独 Grep 一次**，共16次查询：
    ```
-   Pattern: ^(ADD|SET|MOD|RMV) +(URR|URRGROUP|PCCPOLICYGRP|PCCACTIONPROP|RULE|RULEBINDING|URRGRPBINDING|USERPROFILE|FLOWFILTER|FLOWFILTERGRP|FLTBINDFLOWF|PROTBINDFLOWF|FILTER|L7FILTER|IPLIST|REFRESHSRV)
+   逐条查询（每次只查一个命令类型）：
+   Grep: ^(ADD|SET|MOD|RMV) +URR
+   Grep: ^(ADD|SET|MOD|RMV) +URRGROUP
+   Grep: ^(ADD|SET|MOD|RMV) +PCCPOLICYGRP
+   Grep: ^(ADD|SET|MOD|RMV) +PCCACTIONPROP
+   Grep: ^(ADD|SET|MOD|RMV) +RULE
+   Grep: ^(ADD|SET|MOD|RMV) +RULEBINDING
+   Grep: ^(ADD|SET|MOD|RMV) +URRGRPBINDING
+   Grep: ^(ADD|SET|MOD|RMV) +USERPROFILE
+   Grep: ^(ADD|SET|MOD|RMV) +FLOWFILTER
+   Grep: ^(ADD|SET|MOD|RMV) +FLOWFILTERGRP
+   Grep: ^(ADD|SET|MOD|RMV) +FLTBINDFLOWF
+   Grep: ^(ADD|SET|MOD|RMV) +PROTBINDFLOWF
+   Grep: ^(ADD|SET|MOD|RMV) +FILTER
+   Grep: ^(ADD|SET|MOD|RMV) +L7FILTER
+   Grep: ^(ADD|SET|MOD|RMV) +IPLIST
+   Grep: ^(ADD|SET|MOD|RMV) +REFRESHSRV
    ```
 
-   第2轮 SMF(UNC)侧（当 DP-CH-02 包含 SMF 时）：
+   第2轮 SMF(UNC)侧（当 DP-CH-02 包含 SMF 时），**同样每个命令类型单独 Grep**：
    ```
-   # 系统级
-   Pattern: ^(ADD|SET|MOD) +(PCCFUNC|APNPCCFUNC|CHGMODE|APNCHGMODE|CHARGECHAR|TNFINS|TNFGRP|TNFBINDGRP|SELECTCHFGBYCC|GLBDFTCHFGROUP|OCS|OCSGROUP|CCT|SELECTCCTBYCC|DCCTEMPLATE|PDUTRIGGER|RGTRIGGER)
-   # 业务级
-   Pattern: ^(ADD|SET|MOD) +(URR|URRGROUP|PCCPOLICYGRP|RULE|RULEBINDING|URRGRPBINDING|USERPROFILE)
+   系统级（逐条查询）：
+   Grep: ^(ADD|SET|MOD) +PCCFUNC
+   Grep: ^(ADD|SET|MOD) +CHGMODE
+   Grep: ^(ADD|SET|MOD) +APNPCCFUNC
+   Grep: ^(ADD|SET|MOD) +APNCHGMODE
+   Grep: ^(ADD|SET|MOD) +CHARGECHAR
+   Grep: ^(ADD|SET|MOD) +OCS
+   Grep: ^(ADD|SET|MOD) +OCSGROUP
+   Grep: ^(ADD|SET|MOD) +CCT
+
+   业务级（逐条查询）：
+   Grep: ^(ADD|SET|MOD) +URR
+   Grep: ^(ADD|SET|MOD) +URRGROUP
+   Grep: ^(ADD|SET|MOD) +PCCPOLICYGRP
+   Grep: ^(ADD|SET|MOD) +RULE
+   Grep: ^(ADD|SET|MOD) +RULEBINDING
+   Grep: ^(ADD|SET|MOD) +URRGRPBINDING
+   Grep: ^(ADD|SET|MOD) +USERPROFILE
    ```
 
    第3轮结构化：将提取结果按 ConfigObject 分类存储。
 
-   注意：使用 Grep 工具按 pattern 搜索，不全量读取。提取后告知用户："已从现网脚本中提取 {n} 条计费相关命令（总计 {total} 行）"。
+   **禁止将多个命令类型合并为一条 Grep 查询，每次 Grep 只能查一个命令类型。现网脚本过大，合并查询会导致结果溢出。**
 
 4. **差异分析**：对每个 ConfigObject 判断执行类型
 
@@ -363,13 +393,34 @@ Phase 7: 输出交付
 
 3. **优先级分析（必须独立执行并用户确认）**：
 
-   **核心规则：数字越小，优先级越高。不可更改。**
+   **核心规则：PRIORITY 数字越小，优先级越高。不可更改。**
+
+   **关键映射规则**：
+   - 用户说"第1优先" = 最高优先级 = PRIORITY 数值**最小**
+   - 用户说"第2优先" = 第二高 = PRIORITY 数值**第二小**
+   - 用户说"第N优先" = 第N高 = PRIORITY 数值**第N小**
+   - **第N优先的 PRIORITY 数值必须大于第(N-1)优先的数值，小于第(N+1)优先的数值**
+
+   **正确示例**：
+   ```
+   现网 RULE:
+   - l_tk_nu_1265      PRIORITY=2121  (用户要求第1优先)
+   - l_rs_s12mbilled   PRIORITY=2130  (用户要求第2优先)
+   - L_TKRS_Nu_1800    新建           (用户要求第3优先)  ← 应提议 2140（2130+10，在2130之后）
+   - l_im_nu_100        PRIORITY=2299  (用户要求第4优先)
+
+   ✗ 错误：L_TKRS_Nu_1800 建议 PRIORITY=2125（插在2121和2130之间）
+     → 这会让新规则变成第2优先级，与用户要求的第3优先矛盾
+   ✓ 正确：L_TKRS_Nu_1800 建议 PRIORITY=2140（在2130之后、2299之前）
+     → 符合用户要求的第3优先级
+   ```
 
    步骤：
    1. 从现网配置中用 Grep 提取**所有 RULE 的 PRIORITY 值**（包括非计费 RULE，必须提取全部）
-   2. 分析现网优先级分布规律
-   3. 根据用户描述的业务优先级关系，计算新规则 PRIORITY（间距取10的倍数）
-   4. 输出分析表，**STOP 等待用户确认**
+   2. 将所有 RULE 按 PRIORITY 数值**从小到大排序**
+   3. 将用户描述的优先级（"第N优先"）映射到排序位置：第1优先=排序第1（数值最小），第2优先=排序第2...
+   4. 根据映射位置，计算新规则 PRIORITY（间距取10的倍数）
+   5. 输出分析表，**STOP 等待用户确认**
 
    输出格式：
    ```
@@ -377,12 +428,12 @@ Phase 7: 输出交付
 
    **规则**：数字越小优先级越高（固定规则）
 
-   **现网 PRIORITY 分布（全部 RULE）**：
+   **现网 PRIORITY 分布（全部 RULE，按数值从小到大排序）**：
    | RULE 名称 | PRIORITY | 优先级排名 | 说明 |
    |-----------|----------|-----------|------|
    | 现网rule1 | 21 | 第1（最高） | {业务描述} |
    | 现网rule2 | 31 | 第2 | {业务描述} |
-   | **新rule_xxx** | **{拟提议值}** | **第N（插入位置）** | **{新业务描述}** |
+   | **新rule_xxx** | **{拟提议值}** | **第N（按用户要求）** | **{新业务描述}** |
 
    **请确认新规则的优先级设置是否合理。如需调整请告知。**
    ```
@@ -391,6 +442,7 @@ Phase 7: 输出交付
    - **禁止**自行假设优先级顺序，必须先从现网提取全部 RULE 的 PRIORITY
    - **禁止**只提取计费 RULE，必须提取现网所有 RULE
    - **禁止**在用户未确认优先级前生成任何带 PRIORITY 的 RULE 命令
+   - **禁止**将"第N优先"的新规则插在比它更高优先级的现网规则前面（数值上不能更小）
 
 ### 6.2 输出
 
@@ -766,4 +818,4 @@ LST URR:URRNAME="{urr_name}";
 12. **SMF 系统级检查**：SMF 侧系统级配置（PCCFUNC/CHGMODE/CHF连接）通常已部署，仅检查确认
 13. **图谱为业务准确性保障**：所有业务事实必须从图谱/知识库动态加载，禁止凭记忆填写
 14. **强制文件加载**：每个 Phase 标注了必须读取的文件，Agent 必须在执行该 Phase 业务逻辑**之前**使用 Read 工具读取
-15. **优先级必须用户确认**：必须提取现网全部 RULE 的 PRIORITY 分布，分析后 STOP 等用户确认，确认前禁止生成 RULE 命令
+15. **优先级必须用户确认**：必须提取现网全部 RULE 的 PRIORITY 分布，分析后 STOP 等用户确认，确认前禁止生成 RULE 命令。**"第N优先"= 第N高优先级 = PRIORITY数值第N小，第N优先的数值必须大于第(N-1)优先的数值。**
