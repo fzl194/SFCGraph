@@ -170,9 +170,21 @@ Phase 7: 输出交付
 
 ## 4. Phase 1: 需求理解与图谱匹配
 
-> **加载参考文件**：`knowledge/ref-phase1-场景识别与解析.md`
->
-> **必须加载图谱**：决策点定义、配置对象体系等业务知识不在参考文件中，Agent 必须从图谱动态加载。
+### 4.0 进入本阶段前的强制加载
+
+进入 Phase 1 后，**必须先执行以下 Read 操作，再进行任何业务逻辑**：
+
+```
+必须读取（共4个文件）：
+1. knowledge/ref-phase1-场景识别与解析.md   — Phase 1 的 pipeline 指令
+2. knowledge/01-business-graph.md          — 业务图谱（场景/方案/决策点/规则）
+3. knowledge/kb/01-计费系统架构.md          — 计费架构知识
+4. knowledge/kb/03-核心术语定义.md          — 术语知识
+
+按需读取（根据用户需求）：
+5. knowledge/04-command-graph.md           — 现网对象解析时需要
+6. knowledge/05-cross-layer-mapping.md     — 差异分析时需要
+```
 
 ### 4.1 输入
 
@@ -186,19 +198,19 @@ Phase 7: 输出交付
 ### 4.2 步骤
 
 1. **场景识别**：从用户需求提取关键词，匹配业务图谱的 NetworkScenario (NS-01)
-   - **必须加载**：`01-business-graph.md` 读取 NS/CS 定义
-   - **必须加载**：`kb/01-计费系统架构.md` + `kb/03-核心术语定义.md`
+   - 引用已加载的 `01-business-graph.md` 中 NS/CS 定义
+   - 引用已加载的 `kb/01-计费系统架构.md` + `kb/03-核心术语定义.md`
 
 2. **网元与决策点解析**：提取 DP-CH-01~08 的答案，缺失时必须追问
-   - **必须加载**：`01-business-graph.md` 读取 DecisionPoint 完整定义（选项、影响）
+   - 引用已加载的 `01-business-graph.md` 中 DecisionPoint 完整定义
    - 追问时引用图谱中各选项的含义，不可凭记忆
 
 3. **现网配置解析**：按三轮扫描策略提取计费对象，构建结构化清单
-   - **必须加载**：`04-command-graph.md` 读取 ConfigObject 定义，理解对象层次
-   - 参考 `ref-phase1-场景识别与解析.md` §1 Step 3 的 grep pattern
+   - 引用已加载的 `04-command-graph.md` 中 ConfigObject 定义
+   - 引用 `ref-phase1-场景识别与解析.md` §1 Step 3 的 grep pattern
 
 4. **差异分析**：对每个 ConfigObject 判断 reuse/modify/create/delete
-   - 参考 `ref-phase1-场景识别与解析.md` §1 Step 4 的判断规则
+   - 引用 `ref-phase1-场景识别与解析.md` §1 Step 4 的判断规则
 
 ### 4.3 输出
 
@@ -218,18 +230,27 @@ Phase 7: 输出交付
 
 ## 6. Phase 3: 参数收集
 
-> **加载参考文件**：`knowledge/ref-phase3-参数收集.md`
->
-> **必须加载图谱**：参数语义、枚举值、推导规则等业务知识不在参考文件中，Agent 必须从图谱和知识库动态加载。
+### 6.0 进入本阶段前的强制加载
+
+```
+必须读取（共4个文件）：
+1. knowledge/ref-phase3-参数收集.md        — Phase 3 的 pipeline 指令
+2. knowledge/04-command-graph.md           — CommandParameter 定义（枚举值、约束）
+3. knowledge/kb/08-PFCP-N4接口与URR.md     — URRID、RG、计量方式参数语义
+4. knowledge/kb/13-计费三件套配置.md        — 三件套参数推导规则
+
+按需读取（DP-CH-02 包含 SMF 时）：
+5. knowledge/kb/18-SMF侧对象体系与协同约束.md — SMF侧参数差异
+```
 
 ### 6.1 步骤
 
 1. **从需求和现网推断参数**：尽可能自动推断
-   - **必须加载**：`04-command-graph.md` 读取 CommandParameter 定义（枚举值、格式约束）
-   - **必须加载**：`kb/08-PFCP-N4接口与URR.md` + `kb/13-计费三件套配置.md`
+   - 引用已加载的 `04-command-graph.md` 中 CommandParameter 定义
+   - 引用已加载的 `kb/08-PFCP-N4接口与URR.md` + `kb/13-计费三件套配置.md`
 
 2. **列出参数表**：按业务参数表 + 全局参数表模板展示
-   - **必须加载**：`01-business-graph.md` 读取 SemanticObject，确认两侧参数差异
+   - 引用已加载的 `01-business-graph.md` 中 SemanticObject 定义
    - 输出模板见 `ref-phase3-参数收集.md` §2
 
 3. **优先级分析**：从现网提取 PRIORITY 分布，计算新规则优先级
@@ -247,52 +268,69 @@ Phase 7: 输出交付
 
 - 校验通过：进入 Phase 5
 - 校验不通过：列出问题，要求用户修正后重新校验
-- **必须加载**：`ref-phase6-核查规则.md` §1.3 操作安全检查
+- 引用已加载的 `ref-phase6-核查规则.md` §1.3 操作安全检查
 
 ## 8. Phase 5: 配置生成
 
-> **加载参考文件**：`knowledge/ref-phase5-配置生成.md`
->
-> **必须加载图谱**：参数枚举值、命令约束、特殊场景规则等不在参考文件中，Agent 必须从图谱和知识库动态加载。
+### 8.0 进入本阶段前的强制加载
+
+```
+必须读取（共4个文件）：
+1. knowledge/ref-phase5-配置生成.md         — Phase 5 的 pipeline 指令
+2. knowledge/04-command-graph.md           — MMLCommand + CommandParameter + CommandRule
+3. knowledge/kb/12-融合计费配置全景.md       — 融合/在线/离线场景差异
+4. knowledge/kb/13-计费三件套配置.md        — 三件套参数组合规则
+
+按需读取（排序依赖确认）：
+5. knowledge/03-task-layer.md              — command_order 依赖链
+
+按需读取（DP-CH-02 包含 SMF 时）：
+6. knowledge/kb/18-SMF侧对象体系与协同约束.md — SMF侧参数差异
+```
 
 ### 8.1 步骤
 
 根据确认的 LLD 参数表，按依赖顺序生成完整的 MML 配置脚本。
 
-1. **加载配置规则**
-   - **必须加载**：`04-command-graph.md` 读取 MMLCommand + CommandParameter + CommandRule
-   - **必须加载**：`kb/12-融合计费配置全景.md` + `kb/13-计费三件套配置.md`
+1. **按模板生成命令**（模板见 `ref-phase5-配置生成.md` §2-3）
+   - 每个参数值必须从已加载的 CommandParameter 定义中获取枚举值，**禁止凭记忆填写**
+   - SMF侧参数差异必须从已加载的 `kb/18-SMF侧对象体系与协同约束.md` 确认
 
-2. **按模板生成命令**（模板见 `ref-phase5-配置生成.md` §2-3）
-   - 每个参数值必须从 CommandParameter 定义中获取枚举值，**禁止凭记忆填写**
-   - SMF侧参数差异必须从 `kb/18-SMF侧对象体系与协同约束.md` 确认
-
-3. **按排序规则排列命令**（排序见 `ref-phase5-配置生成.md` §4）
-   - **必须加载**：`03-task-layer.md` 确认 command_order 依赖链
+2. **按排序规则排列命令**（排序见 `ref-phase5-配置生成.md` §4）
+   - 引用已加载的 `03-task-layer.md` 确认 command_order 依赖链
 
 4. **处理配置决策**（决策指南见 `ref-phase5-配置生成.md` §5）
    - OR条件、兜底规则、URL匹配、融合计费等场景的业务规则必须从图谱/知识库加载
 
 ## 9. Phase 6: 配置核查（循环修正）
 
-> **加载参考文件**：`knowledge/ref-phase6-核查规则.md`
->
-> **必须加载图谱**：核查依据必须是图谱中定义的规则实例（BR-CH-xx / CR-CH-xx / TR-CH-xx），不可凭记忆。图谱内容是业务准确性的保障。
+### 9.0 进入本阶段前的强制加载
+
+**必须在执行任何核查逻辑之前完成以下文件读取，未完成前禁止执行核查步骤。**
+
+```
+必须读取（共4个文件）：
+1. knowledge/ref-phase6-核查规则.md          — Phase 6 pipeline 步骤与操作安全检查
+2. knowledge/01-business-graph.md           — BusinessRule (BR-CH-01~16) 逐条核查
+3. knowledge/04-command-graph.md            — CommandRule (CR-CH-01~14) + CommandParameter
+4. knowledge/03-task-layer.md               — TaskRule (TR-CH-01~06) + command_order 依赖
+
+按需读取（DP-CH-02 包含 SMF 时）：
+5. knowledge/kb/18-SMF侧对象体系与协同约束.md — 跨网元一致性参数
+```
+
+> **核查依据必须是图谱中定义的规则实例（BR-CH-xx / CR-CH-xx / TR-CH-xx），不可凭记忆。图谱内容是业务准确性的保障。**
 
 ### 9.1 核查步骤
 
-1. **加载核查规则**
-   - **必须加载**：`01-business-graph.md` BusinessRule (BR-CH-01~16) 逐条核查
-   - **必须加载**：`04-command-graph.md` CommandRule (CR-CH-01~14) 逐条核查
-   - **必须加载**：`03-task-layer.md` TaskRule (TR-CH-01~06) 逐条核查
+1. **执行图谱规则核查**：引用已加载的 BusinessRule / CommandRule / TaskRule，逐条检查并记录通过/违反项
+   - 业务约束、配置依赖、命令约束（规则来源为图谱）
 
-2. **执行图谱规则核查**：业务约束、配置依赖、命令约束（规则来源为图谱）
-
-3. **执行 SKILL 独有操作安全检查**（见 `ref-phase6-核查规则.md` §1.3）
+2. **执行 SKILL 独有操作安全检查**（见 `ref-phase6-核查规则.md` §1.3）
    - 同名冲突、参数覆写、共享对象影响、删除安全
 
-4. **跨网元一致性核查**（仅 DP-CH-02 包含 UPF+SMF 时）
-   - **必须加载**：`04-command-graph.md` CR-CH-08（跨网元名称一致性）
+3. **跨网元一致性核查**（仅 DP-CH-02 包含 UPF+SMF 时）
+   - 引用已加载的 CR-CH-08（跨网元名称一致性）、CR-CH-02（RG值跨侧一致性）逐条核查
 
 ### 9.2 修正规则
 
@@ -436,3 +474,4 @@ LST URR:URRNAME="{urr_name}";
 10. **SMF 系统级检查**：SMF 侧系统级配置（PCCFUNC/CHGMODE/CHF连接）通常已部署，仅检查确认
 11. **图谱为业务准确性保障**：所有业务事实（决策点、参数枚举、规则约束）必须从图谱/知识库动态加载，禁止凭记忆填写
 12. **按需加载参考**：每个 Phase 开始时加载对应的参考文件和图谱内容，不提前加载
+13. **强制文件加载**：每个 Phase 标注了 `必须加载` 的文件，Agent 必须在执行该 Phase 业务逻辑**之前**使用 Read 工具读取。未完成文件加载前，不得进行任何业务判断或配置生成。加载后告诉用户："已加载 {n} 个参考文件"
