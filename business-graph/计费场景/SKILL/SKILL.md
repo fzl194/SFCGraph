@@ -277,6 +277,12 @@ Phase 7: 输出交付
 {按顺序列出需要执行的 Task，引用 03-task-layer.md 中的 ConfigTask ID}
 ```
 
+### 4.4 注意事项
+
+- 现网脚本通常数万至数十万行，**严禁全量读取**，必须按 §4.2 Step 3 的 grep pattern 分批提取
+- 对象分类时参考 `04-command-graph.md` 中 ConfigObject 的层次关系（底层→中间→策略→顶层）
+- 差异分析时加载 `05-cross-layer-mapping.md` 确认跨层映射关系，避免遗漏依赖
+
 ---
 
 ## 5. Phase 2: 方案确认（用户审核①）
@@ -390,6 +396,13 @@ Phase 7: 输出交付
 
 将参数表（含优先级分析结果）展示给用户，标注所有"待提供"和"待确认"项，要求用户补充。
 
+### 6.3 注意事项
+
+- 参数表中每个字段都应标注"来源"（需求/现网/推断/图谱/知识库）和"状态"（已知/待确认/待提供）
+- 两侧共用参数（URRID、RG、USAGERPTMODE 等）必须标注"**必须与UPF一致**"
+- SMF侧参数差异需要从 `kb/18-SMF侧对象体系与协同约束.md` 确认，不要凭记忆填写
+- 遇到不确定的参数语义，加载 `04-command-graph.md` 中对应的 CommandParameter 定义确认
+
 ---
 
 ## 7. Phase 4: 参数确认（用户审核②）
@@ -493,12 +506,42 @@ Phase 7: 输出交付
    3. 无 REFRESHSRV
    ```
 
-3. **配置决策指南**（按需处理）：
+3. **配置决策指南**（需要时从图谱/知识库加载规则后决策）：
 
-   - **OR 条件**：多个条件执行完全相同的动作 → 用 FLOWFILTERGRP；需要不同优先级 → 多 RULE
-   - **兜底规则**：默认URR组(SET URRGRPBINDING:DFTURRGRPNAME) + 显式兜底RULE(ADD RULE FILTER=ANY 低PRIORITY)，两者应指向同一计费组
-   - **URL 匹配**：HTTP 和 HTTPS 都要绑定 PROTBINDFLOWF
-   - **融合计费**：UPF侧创建两个独立 URR（一个OFFLINE一个ONLINE），放入同一 URRGROUP
+   **OR 条件：FLOWFILTERGRP vs 多 RULE**
+
+   | 方案 | 适用场景 |
+   |------|---------|
+   | FLOWFILTERGRP | 多个条件执行**完全相同**的动作 |
+   | 多 RULE | 需要不同优先级或后续可能分化 |
+
+   **默认**：使用 FLOWFILTERGRP（更简洁）。
+
+   **兜底规则**
+
+   | 机制 | 命令 | 触发条件 |
+   |------|------|---------|
+   | 默认URR组 | SET URRGRPBINDING:DFTURRGRPNAME | 流量未命中任何 RULE |
+   | 显式兜底RULE | ADD RULE(FILTER=ANY, 低PRIORITY) | 流量命中兜底 RULE |
+
+   两者应指向同一计费组。详细约束加载 `01-business-graph.md` BusinessRule BR-CH-06 确认。
+
+   **URL 匹配协议绑定**：当用户提到"访问某网站"时，HTTP 和 HTTPS 都需要绑定：
+   ```mml
+   ADD PROTBINDFLOWF:FLOWFILTERNAME="ff_xxx",PROTOCOLNAME="http",L7FILTERNAME="l7_xxx";
+   ADD PROTBINDFLOWF:FLOWFILTERNAME="ff_xxx",PROTOCOLNAME="https",L7FILTERNAME="l7_xxx";
+   ```
+
+   **融合计费**：UPF侧创建**两个独立 URR**（一个OFFLINE一个ONLINE），放入同一 URRGROUP。详细参数组合规则必须加载 `kb/12-融合计费配置全景.md` 确认。
+
+### 8.2 注意事项
+
+- 每个参数的枚举值必须从 `04-command-graph.md` CommandParameter 获取，不可自行推断
+- 融合/在线/离线的参数差异很大，必须加载 `kb/` 对应章节文件确认
+- 排序错误会导致配置失败，REFRESHSRV 必须在最后（仅UPF侧）
+- 三件套（URR→URRGROUP→PCCPOLICYGRP）每条业务独立，不可跨业务复用
+- 两侧共用参数（URRID、RG、RULENAME、USERPROFILENAME）必须一致
+- SMF侧参数差异必须从 `kb/18-SMF侧对象体系与协同约束.md` 确认，两侧共用参数必须一致
 
 ---
 
@@ -563,7 +606,14 @@ Phase 7: 输出交付
 1. [{规则ID}] {问题描述} → {修正动作}
 ```
 
-### 9.4 用户确认（用户审核③）
+### 9.4 注意事项
+
+- 每条违反项必须标注对应的规则 ID（BR-CH-xx / CR-CH-xx / TR-CH-xx），不可笼统描述
+- 图谱规则是业务准确性的保障，必须从图谱原文加载执行，不可省略或简化
+- 操作安全检查（§9.1.2）是图谱未覆盖的生产环境保护，同样不可跳过
+- 跨网元一致性检查中，7项参数均为 CRITICAL 级别，任一不一致都必须修正
+
+### 9.5 用户确认（用户审核③）
 
 **【GATE-5】配置确认审核点。**
 
