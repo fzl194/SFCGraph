@@ -32,7 +32,7 @@
 | `domain_name` | `业务感知` |
 | `domain_summary` | 在用户会话过程中，对用户的数据报文进行解析，从而区分出用户使用的不同业务，以实现策略控制和计费控制 |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SA-Basic`, `EV-CA-02`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-01`, `EV-CA-02`, `EV-CA-01` |
 
 > **共享说明**：BD-BW-01 与计费场景 BD-CH-01 共享同一根对象 `业务感知`。计费、带宽控制、访问限制三场景均挂在此域下。
 
@@ -77,7 +77,7 @@
 | `design_intent` | 解决"按业务类型差异化限速"问题：低价值业务（P2P）限速，高价值业务保障 |
 | `core_mechanism_combo` | `SA识别(SVC/APP) → BWM规则匹配 → CAR令牌桶(CIR/PIR/CBS/PBS) / SHAPING整形(RATE/QUEDEPTH)` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-BWM`, `EV-FK-BW-SA-Basic`, `EV-FK-BW-PCC-UDG`, `EV-FK-BW-PCC-UNC`, `EV-FK-BW-BWM-UNC`, `EV-FK-BW-Shaping`, `EV-FK-BW-Shaping-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-04`, `EV-FK-01`, `EV-FK-03`, `EV-FK-17`, `EV-FK-19`, `EV-FK-05`, `EV-FK-05`, `EV-CA-01` |
 
 **scopes**: subscriber（单用户特定业务限速）、service_selection（按SVC/APP分类限速）
 
@@ -100,7 +100,7 @@
 | `design_intent` | 解决"套餐配额超量后降速"问题：月套餐20GB后从100Mbps降至1Mbps |
 | `core_mechanism_combo` | `URR流量累计 → 配额耗尽触发 → PCRF下发新QoS(MBR降低) / 预定义降速规则高优先级覆盖` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-FUP-UDG`, `EV-FK-BW-FUP-UNC`, `EV-FK-BW-FUP-Biz`, `EV-FK-BW-FUP-Biz-UNC`, `EV-TK-01`, `EV-TK-22`, `EV-CA-01`, `EV-CA-02` |
+| `source_evidence_ids` | `EV-FK-07`, `EV-FK-18`, `EV-FK-08`, `EV-FK-20`, `EV-TK-01`, `EV-TK-22`, `EV-CA-01`, `EV-CA-02` |
 
 **scopes**: subscription（会话级FUP：整会话所有流量累计）、subscriber（用户级配额）
 
@@ -123,7 +123,7 @@
 | `design_intent` | 解决"高价值业务带宽下限保证"问题：视频/语音业务保证不低于GBR |
 | `core_mechanism_combo` | `SA识别高价值业务 → URR(QOS模式)上报 → UNC发起专有承载/QoS Flow → GBR资源预留(GBR-UL/DL)` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-QoS`, `EV-FK-BW-QoS-UNC`, `EV-CA-01`, `EV-CA-02` |
+| `source_evidence_ids` | `EV-FK-10`, `EV-FK-22`, `EV-CA-01`, `EV-CA-02` |
 
 **scopes**: service_selection（特定业务GBR保证）
 
@@ -146,7 +146,7 @@
 | `design_intent` | 解决"按应用类型实时调整带宽"问题：视频APP激活时分配GBR，停止时恢复Non-GBR |
 | `core_mechanism_combo` | `ADC检测(APP_STA/APP_STO) → PCF决策 → 三策略组动态切换(Normal/Start/Stop) → QoS参数变更` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-ADC`, `EV-FK-BW-ADC-UNC`, `EV-TK-27`, `EV-TK-28`, `EV-CA-02` |
+| `source_evidence_ids` | `EV-FK-09`, `EV-FK-21`, `EV-TK-27`, `EV-TK-28`, `EV-CA-02` |
 
 **scopes**: service_selection（应用级带宽，per APP）
 
@@ -169,7 +169,7 @@
 | `design_intent` | 解决"小区拥塞时动态限速"问题：拥塞时对低优先级用户限速，保障高价值用户 |
 | `core_mechanism_combo` | `RAN负荷上报 → UDG转发(GTP-U扩展头) → UNC上报PCRF → PCRF动态BWM策略下发` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-CellLoad`, `EV-FK-BW-CellLoad-UNC`, `EV-CA-01`, `EV-CA-02` |
+| `source_evidence_ids` | `EV-FK-15`, `EV-FK-24`, `EV-CA-01`, `EV-CA-02` |
 
 **scopes**: access（小区级负荷感知）
 
@@ -193,7 +193,7 @@
 | `design_intent` | 解决"按位置区域差异化限速"问题：漫游时限制最大带宽为10Mbps |
 | `core_mechanism_combo` | `位置变化感知(UE_LOCAL_IP/PLMN_CH) → 预定义规则激活 → 位置差异化带宽(PIR限速)` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-APN-Policy`, `EV-TK-28`, `EV-TK-29`, `EV-CA-02` |
+| `source_evidence_ids` | `EV-FK-23`, `EV-TK-28`, `EV-TK-29`, `EV-CA-02` |
 
 **scopes**: location（位置区域感知）、access（WiFi接入点）
 
@@ -217,7 +217,7 @@
 | `design_intent` | 解决"无线侧调度优化"问题：通过标记影响基站队列调度，间接提升业务带宽体验 |
 | `core_mechanism_combo` | `SA识别业务 → DSCP/FPI标记 / OSTYPE差异化 → RAN调度队列优化（非UPF限速）` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-RadioOpt`, `EV-FK-BW-Video-1`, `EV-FK-BW-Video-2`, `EV-FK-BW-WirelessOpt`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-14`, `EV-FK-11`, `EV-FK-12`, `EV-FK-13`, `EV-CA-01` |
 
 **scopes**: service_selection（按业务类型标记）
 
@@ -257,7 +257,7 @@
 | `BR-BW-03` | BWM与PCC独立匹配 | `design_rule` | `explicit` | `principle` | BWM规则与PCC规则在SA七步流程中独立匹配互不干扰，可叠加执行（BWM管有线侧，PCC管无线侧） | 误以为冲突而删除其一，导致某一段带宽失控 | `active` | `EV-CA-02`, `EV-TK-18` |
 | `BR-BW-04` | RULENAME跨策略类型不冲突 | `selection_rule` | `explicit` | `config` | 同一产品内PCC类型与QOS类型的RULENAME不能相同；BWM与CHARGING可同名 | 规则创建冲突或匹配混乱 | `active` | `EV-CA-01` |
 | `BR-BW-05` | REFRESHSRV必须最后执行 | `acceptance_rule` | `explicit` | `ops` | UDG侧策略变更后必须执行SET REFRESHSRV，且执行后约60秒（PROTBINDFLOWF定时器）策略才完全下发 | 策略配置完成但未生效，验证失败 | `active` | `EV-CA-01`, `EV-TK-20`, `EV-TK-21` |
-| `BR-BW-06` | License前置门控 | `scope_rule` | `explicit` | `config` | BWM策略类型未启用License时，配置不生效；UDG/UNC需分别获取对应License | 配置命令成功但功能不生效，难以排查 | `active` | `EV-CA-01`, `EV-FK-BW-BWM` |
+| `BR-BW-06` | License前置门控 | `scope_rule` | `explicit` | `config` | BWM策略类型未启用License时，配置不生效；UDG/UNC需分别获取对应License | 配置命令成功但功能不生效，难以排查 | `active` | `EV-CA-01`, `EV-FK-04` |
 
 > **rule_type说明**：严格服从Schema §8.9标准枚举。`scope_rule`=范围约束，`design_rule`=设计规则，`selection_rule`=选择规则，`acceptance_rule`=验收规则。原文件中 `consistency_rule`/`naming_rule`/`ops_rule` 等非标准枚举值已按语义归并到标准枚举。
 
@@ -269,14 +269,14 @@
 
 | `semantic_object_id` | `semantic_object_name` | `semantic_summary` | `applicable_layer` | `realized_by` | `source_evidence_ids` |
 |----------------------|------------------------|--------------------|---------------------|---------------|-----------------------|
-| `SO-BW-01` | 带宽控制策略 | CIR/PIR/RATE参数集，定义带宽上限/下限/整形速率 | `cross_layer` | BWMCONTROLLER | `EV-FK-BW-BWM`, `EV-TK-19` |
-| `SO-BW-02` | 业务识别条件 | SVC/APP识别结果，定义"对什么业务做控制" | `cross_layer` | CATEGORYPROP, FILTER, L7FILTER | `EV-FK-BW-SA-Basic`, `EV-TK-17` |
-| `SO-BW-03` | 流量配额 | FUP VolumeThreshold，定义"累计多少流量后触发" | `cross_layer` | URR, URRGROUP | `EV-FK-BW-FUP-UDG`, `EV-TK-01` |
-| `SO-BW-04` | 限速等级 | 高速/限速/整形/默认/降速五模式，由BWMRULE.PRIORITY决定 | `cross_layer` | BWMRULE | `EV-FK-BW-BWM`, `EV-CA-02` |
-| `SO-BW-05` | QoS参数集 | 5QI/MBR/GBR/ARP，定义无线侧QoS等级 | `cross_layer` | QOSPROP | `EV-FK-BW-QoS`, `EV-TK-24` |
-| `SO-BW-06` | 应用检测事件 | APP_STA/APP_STO，定义"应用启动/停止触发" | `cross_layer` | ADCPARA, RULE(POLICYTYPE=ADC) | `EV-FK-BW-ADC`, `EV-TK-27` |
-| `SO-BW-07` | 小区负荷等级 | Level 0-3（Invalid/Normal/Congestion/Overload），定义拥塞程度 | `cross_layer` | SET APNREPORTATTR | `EV-FK-BW-CellLoad`, `EV-CA-01` |
-| `SO-BW-08` | 位置区域标识 | PLMN/Location/WiFi接入点，定义"在哪儿" | `cross_layer` | RULE(Predefined, PLMN条件) | `EV-FK-BW-APN-Policy`, `EV-TK-28` |
+| `SO-BW-01` | 带宽控制策略 | CIR/PIR/RATE参数集，定义带宽上限/下限/整形速率 | `cross_layer` | BWMCONTROLLER | `EV-FK-04`, `EV-TK-19` |
+| `SO-BW-02` | 业务识别条件 | SVC/APP识别结果，定义"对什么业务做控制" | `cross_layer` | CATEGORYPROP, FILTER, L7FILTER | `EV-FK-01`, `EV-TK-17` |
+| `SO-BW-03` | 流量配额 | FUP VolumeThreshold，定义"累计多少流量后触发" | `cross_layer` | URR, URRGROUP | `EV-FK-07`, `EV-TK-01` |
+| `SO-BW-04` | 限速等级 | 高速/限速/整形/默认/降速五模式，由BWMRULE.PRIORITY决定 | `cross_layer` | BWMRULE | `EV-FK-04`, `EV-CA-02` |
+| `SO-BW-05` | QoS参数集 | 5QI/MBR/GBR/ARP，定义无线侧QoS等级 | `cross_layer` | QOSPROP | `EV-FK-10`, `EV-TK-24` |
+| `SO-BW-06` | 应用检测事件 | APP_STA/APP_STO，定义"应用启动/停止触发" | `cross_layer` | ADCPARA, RULE(POLICYTYPE=ADC) | `EV-FK-09`, `EV-TK-27` |
+| `SO-BW-07` | 小区负荷等级 | Level 0-3（Invalid/Normal/Congestion/Overload），定义拥塞程度 | `cross_layer` | SET APNREPORTATTR | `EV-FK-15`, `EV-CA-01` |
+| `SO-BW-08` | 位置区域标识 | PLMN/Location/WiFi接入点，定义"在哪儿" | `cross_layer` | RULE(Predefined, PLMN条件) | `EV-FK-23`, `EV-TK-28` |
 
 ---
 

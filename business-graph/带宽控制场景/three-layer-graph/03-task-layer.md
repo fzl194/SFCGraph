@@ -54,7 +54,7 @@
 | `output_contract` | 业务分类表、CATEGORYPROP/FILTER/L7FILTER实例集 |
 | `command_refs` | `ADD CATEGORYPROP`, `ADD FILTER`, `ADD L7FILTER` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SA-Basic`, `EV-FK-BW-BWM`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-01`, `EV-FK-04`, `EV-CA-01` |
 | `reused_by` | SA-BWM, FUP业务级, ADC, QoS保证, Shaping, IM管控, 码率差异化, 视频解耦, FPI标记 |
 
 ### T-002 配置流过滤器与绑定
@@ -70,7 +70,7 @@
 | `output_contract` | FLOWFILTER + 绑定关系实例集 |
 | `command_refs` | `ADD FLOWFILTER`, `ADD FLTBINDFLOWF` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SA-Basic`, `EV-FK-BW-PCC-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-01`, `EV-FK-03`, `EV-CA-01` |
 | `reused_by` | 所有需要业务流匹配的特性（BWM/FUP/ADC/QoS/Shaping） |
 
 ### T-003 配置PCC规则
@@ -86,7 +86,7 @@
 | `output_contract` | RULE实例（POLICYTYPE=BWM/PCC/QOS/ADC） |
 | `command_refs` | `ADD RULE` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UDG`, `EV-FK-BW-PCC-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-03`, `EV-FK-17`, `EV-CA-01` |
 | `reused_by` | BWM, FUP, ADC, QoS保证（全部PCC特性） |
 | `note` | POLICYTYPE是统一策略标识（发现一）：BWM=带宽管理、PCC=标准PCC含FUP、QOS=QoS属性、ADC=应用检测 |
 
@@ -103,7 +103,7 @@
 | `output_contract` | USERPROFILE + RULEBINDING实例集 |
 | `command_refs` | `ADD USERPROFILE`, `ADD RULEBINDING` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-03`, `EV-CA-01` |
 | `reused_by` | 所有PCC特性（BWM/FUP/ADC/QoS/Shaping/码率差异化） |
 
 ### T-005 配置用户模板组与APN绑定
@@ -135,7 +135,7 @@
 | `output_contract` | 配置生效 |
 | `command_refs` | `SET REFRESHSRV` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UDG`, `EV-FK-BW-SA-Basic`, `EV-FK-BW-BWM`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-03`, `EV-FK-01`, `EV-FK-04`, `EV-CA-01` |
 | `reused_by` | PCC, SA-Basic, BWM, Shaping |
 | `must_be_last` | `true` |
 | `note` | TR-BW-01硬约束：必须最后执行，PROTBINDFLOWF需等待60秒 |
@@ -170,7 +170,7 @@
 | `output_contract` | SA引擎就绪 |
 | `command_refs` | `LOD SIGNATUREDB`, `LOD PARSERDB` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SA-Basic`, `EV-FK-BW-SA-Mgmt` |
+| `source_evidence_ids` | `EV-FK-01`, `EV-FK-02` |
 | `reused_by` | SA-Basic(GWFD-110101), SA特征库管控(GWFD-111600) |
 | `note` | SA-Basic辐射范围最大，12个特性直接依赖其业务识别能力（§4.2辐射分析） |
 
@@ -191,7 +191,7 @@
 | `output_contract` | BWM策略规划表（层级/模式/参数） |
 | `command_refs` | （规划task，无命令） |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-BWM`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-04`, `EV-CA-01` |
 | `feature_ref` | GWFD-110311, WSFD-211005 |
 
 ### T-102 配置BWM服务
@@ -207,7 +207,7 @@
 | `output_contract` | BWMSERVICE实例 |
 | `command_refs` | `ADD BWMSERVICE` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-BWM` |
+| `source_evidence_ids` | `EV-FK-04` |
 | `feature_ref` | GWFD-110311 |
 
 ### T-103 配置BWM控制器
@@ -223,7 +223,7 @@
 | `output_contract` | BWMCONTROLLER实例 |
 | `command_refs` | `ADD BWMCONTROLLER` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-BWM`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-04`, `EV-CA-01` |
 | `feature_ref` | GWFD-110311 |
 | `note` | TR-BW-03: CTRLTYPE决定参数集 — CAR用CIR/PIR/CBS/PBS，SHAPING用RATE/QUEDEPTH |
 
@@ -240,7 +240,7 @@
 | `output_contract` | BWMUSERGROUP实例 |
 | `command_refs` | `ADD BWMUSERGROUP` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-BWM` |
+| `source_evidence_ids` | `EV-FK-04` |
 | `feature_ref` | GWFD-110311, GWFD-110313 |
 
 ### T-105 配置BWM规则
@@ -256,7 +256,7 @@
 | `output_contract` | BWMRULE/BWMRULEGLOBAL实例 |
 | `command_refs` | `ADD BWMRULE`, `ADD BWMRULEGLOBAL` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-BWM` |
+| `source_evidence_ids` | `EV-FK-04` |
 | `feature_ref` | GWFD-110311 |
 
 ### T-106 配置BWM APN绑定
@@ -272,7 +272,7 @@
 | `output_contract` | APNBINDBWMUSRG实例 |
 | `command_refs` | `ADD APNBINDBWMUSRG` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-BWM` |
+| `source_evidence_ids` | `EV-FK-04` |
 | `feature_ref` | GWFD-110311 |
 
 ### T-107 配置业务服务等级策略
@@ -288,7 +288,7 @@
 | `output_contract` | BCSRVLEVELPLY实例集 |
 | `command_refs` | `ADD BCSRVLEVELPLY` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SmartShaping` |
+| `source_evidence_ids` | `EV-FK-06` |
 | `feature_ref` | GWFD-110313 |
 
 ---
@@ -308,7 +308,7 @@
 | `output_contract` | FUP策略规划表 |
 | `command_refs` | （规划task，无命令） |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SessionFUP`, `EV-FK-BW-ServiceFUP`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-07`, `EV-FK-08`, `EV-CA-01` |
 | `feature_ref` | GWFD-020353, GWFD-110312, WSFD-109104, WSFD-211009 |
 
 ### T-202 配置URR
@@ -324,7 +324,7 @@
 | `output_contract` | URR实例 |
 | `command_refs` | `ADD URR` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SessionFUP`, `EV-FK-BW-ServiceFUP`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-07`, `EV-FK-08`, `EV-CA-01` |
 | `feature_ref` | GWFD-020353, GWFD-110312, WSFD-109104, WSFD-211009 |
 | `note` | TR-BW-04: USAGERPTMODE决定URR用途 — 会话FUP=ONLINE/MONITORINGKEY，业务FUP=MONITORINGKEY，QoS保证=QOS（发现二） |
 
@@ -341,7 +341,7 @@
 | `output_contract` | URRGROUP实例 |
 | `command_refs` | `ADD URRGROUP` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SessionFUP`, `EV-FK-BW-ServiceFUP` |
+| `source_evidence_ids` | `EV-FK-07`, `EV-FK-08` |
 | `feature_ref` | GWFD-020353, GWFD-110312, WSFD-211009 |
 
 ### T-204 配置FUP PCC策略组
@@ -357,7 +357,7 @@
 | `output_contract` | PCCPOLICYGRP实例 |
 | `command_refs` | `ADD PCCPOLICYGRP` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-SessionFUP`, `EV-FK-BW-ServiceFUP`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-07`, `EV-FK-08`, `EV-CA-01` |
 | `feature_ref` | GWFD-020353, GWFD-110312, WSFD-109104, WSFD-211009 |
 | `note` | TR-BW-05: FUP三件套必须按序配置（URR→URRGROUP→PCCPOLICYGRP），断裂则FUP不生效 |
 
@@ -374,7 +374,7 @@
 | `output_contract` | Gx FUP功能使能 |
 | `command_refs` | `SET PCCFUNC`, `MOD PCRF`, `MOD PCCPOLICYGRP` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-17`, `EV-CA-01` |
 | `feature_ref` | WSFD-109104, WSFD-211009 |
 | `note` | 仅Gx接口场景需要；N7(5G)场景仅需License，阈值由PCF侧umDecs配置（附录D.2） |
 
@@ -395,7 +395,7 @@
 | `output_contract` | QOSPROP实例 |
 | `command_refs` | `ADD QOSPROP` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-QoS-UDG`, `EV-FK-BW-QoS-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-10`, `EV-FK-22`, `EV-CA-01` |
 | `feature_ref` | GWFD-020358, WSFD-109107 |
 | `note` | TR-BW-07: QOSTYPE区分5G/4G — 5G=QOS_FLOW_PARA(用FQI)，2/3/4G=QOS_BEARER_PARA(用QCIVALUE) |
 
@@ -412,7 +412,7 @@
 | `output_contract` | APNIDLETIME配置 |
 | `command_refs` | `SET APNIDLETIME` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-QoS-UNC` |
+| `source_evidence_ids` | `EV-FK-22` |
 | `feature_ref` | WSFD-109107 |
 
 ### T-303 配置去活QoS Flow策略
@@ -428,7 +428,7 @@
 | `output_contract` | APNDEACTQFPLCY实例 |
 | `command_refs` | `ADD APNDEACTQFPLCY` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-QoS-UNC` |
+| `source_evidence_ids` | `EV-FK-22` |
 | `feature_ref` | WSFD-109107 |
 
 ---
@@ -448,7 +448,7 @@
 | `output_contract` | ADCPARA实例 |
 | `command_refs` | `ADD ADCPARA` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-ADC-UDG`, `EV-FK-BW-ADC-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-09`, `EV-FK-21`, `EV-CA-01` |
 | `feature_ref` | GWFD-020357, WSFD-109102 |
 
 ### T-402 配置ADC三策略组
@@ -464,7 +464,7 @@
 | `output_contract` | 3个RULE实例（Normal/Start/Stop） |
 | `command_refs` | `ADD RULE` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-ADC-UDG`, `EV-FK-BW-ADC-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-09`, `EV-FK-21`, `EV-CA-01` |
 | `feature_ref` | GWFD-020357, WSFD-109102 |
 | `note` | TR-BW-06: ADC必须配置Normal/Start/Stop三个策略组，缺失则ADC事件上报不完整 |
 
@@ -485,7 +485,7 @@
 | `output_contract` | PCRF组与绑定配置 |
 | `command_refs` | `ADD PCRF`, `ADD PCRFGROUP`, `ADD PCRFBINDGRP`, `SET DFTGLBPCRFGRP` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UNC` |
+| `source_evidence_ids` | `EV-FK-17` |
 | `feature_ref` | WSFD-109101 |
 
 ### T-502 配置PCC功能开关
@@ -501,7 +501,7 @@
 | `output_contract` | PCC功能使能 |
 | `command_refs` | `SET PCCFUNC`, `SET APNPCCFUNC` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UNC` |
+| `source_evidence_ids` | `EV-FK-17` |
 | `feature_ref` | WSFD-109101 |
 
 ### T-503 配置PCC故障与定时器
@@ -517,7 +517,7 @@
 | `output_contract` | PCC故障处理与定时器配置 |
 | `command_refs` | `SET PCCFAILACTION`, `SET PCCTIMER` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UNC` |
+| `source_evidence_ids` | `EV-FK-17` |
 | `feature_ref` | WSFD-109101 |
 
 ### T-504 配置N7属性控制
@@ -533,7 +533,7 @@
 | `output_contract` | N7属性控制配置 |
 | `command_refs` | `SET N7RCVATTRCTRL`, `SET N7SNDATTRCTRL` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-PCC-UNC` |
+| `source_evidence_ids` | `EV-FK-17` |
 | `feature_ref` | WSFD-109101 |
 | `note` | 仅N7(5G)场景需要；Gx(2/3/4G)场景不使用 |
 
@@ -554,7 +554,7 @@
 | `output_contract` | DSCP/FPI标记配置 |
 | `command_refs` | （依特性定，GWFD-020359用ADD RULE配置DSCP，GWFD-110331用FPI规则） |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-IM-Ctrl`, `EV-FK-BW-FPI`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-13`, `EV-FK-14`, `EV-CA-01` |
 | `feature_ref` | GWFD-020359, GWFD-110331 |
 
 ### T-602 配置终端OS差异化
@@ -570,7 +570,7 @@
 | `output_contract` | 终端OS差异化配置 |
 | `command_refs` | `SET APNOSLELBWMSW` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-RateDiff` |
+| `source_evidence_ids` | `EV-FK-11` |
 | `feature_ref` | GWFD-110301 |
 
 ### T-603 配置小区负荷上报
@@ -586,7 +586,7 @@
 | `output_contract` | APNREPORTATTR配置 |
 | `command_refs` | `SET APNREPORTATTR` |
 | `status` | `active` |
-| `source_evidence_ids` | `EV-FK-BW-CellLoad-UDG`, `EV-FK-BW-CellLoad-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-15`, `EV-FK-24`, `EV-CA-01` |
 | `feature_ref` | GWFD-110332, WSFD-211101 |
 
 ---
@@ -629,8 +629,8 @@
 
 | `edge_id` | `task_ref` | `from_command_ref` | `to_command_ref` | `relation_type` | `requiredness` | `propagated_context` | `source_evidence_ids` |
 |-----------|------------|--------------------|--------------------|-----------------|----------------|---------------------|----------------------|
-| `TE-204-1` | T-204 | `ADD URR` | `ADD URRGROUP` | `precedes` | `required` | `URRID → URRGROUP.UPURRNAME1` | `EV-FK-BW-SessionFUP`, `EV-CA-01` |
-| `TE-204-2` | T-204 | `ADD URRGROUP` | `ADD PCCPOLICYGRP` | `precedes` | `required` | `URRGROUPNAME → PCCPOLICYGRP` | `EV-FK-BW-SessionFUP`, `EV-CA-01` |
+| `TE-204-1` | T-204 | `ADD URR` | `ADD URRGROUP` | `precedes` | `required` | `URRID → URRGROUP.UPURRNAME1` | `EV-FK-07`, `EV-CA-01` |
+| `TE-204-2` | T-204 | `ADD URRGROUP` | `ADD PCCPOLICYGRP` | `precedes` | `required` | `URRGROUPNAME → PCCPOLICYGRP` | `EV-FK-07`, `EV-CA-01` |
 
 ### 9.3 T-103 BWM控制器（独立配置）
 
@@ -640,7 +640,7 @@ T-103（配置BWM控制器）为单命令task，无内部命令顺序依赖。BW
 
 | `edge_id` | `task_ref` | `from_command_ref` | `to_command_ref` | `relation_type` | `requiredness` | `propagated_context` | `source_evidence_ids` |
 |-----------|------------|--------------------|--------------------|-----------------|----------------|---------------------|----------------------|
-| `TE-107-1` | T-107 | `ADD BWMCONTROLLER` | `ADD BCSRVLEVELPLY` | `depends_on` | `required` | `BWMCNAME → SERVICELEVEL` | `EV-FK-BW-SmartShaping` |
+| `TE-107-1` | T-107 | `ADD BWMCONTROLLER` | `ADD BCSRVLEVELPLY` | `depends_on` | `required` | `BWMCNAME → SERVICELEVEL` | `EV-FK-06` |
 
 > 智能Shaping需先配置BWMCONTROLLER（WORKMODE=AUTO/MANUAL），再为每个ServiceLevel配置BCSRVLEVELPLY的SHAPRATE比例。参见附录D.4组级智能Shaping配置链路。
 
@@ -648,9 +648,9 @@ T-103（配置BWM控制器）为单命令task，无内部命令顺序依赖。BW
 
 | `edge_id` | `task_ref` | `from_command_ref` | `to_command_ref` | `relation_type` | `requiredness` | `propagated_context` | `source_evidence_ids` |
 |-----------|------------|--------------------|--------------------|-----------------|----------------|---------------------|----------------------|
-| `TE-501-1` | T-501 | `ADD PCRF` | `ADD PCRFGROUP` | `precedes` | `required` | `PCRFID → PCRFGROUP` | `EV-FK-BW-PCC-UNC` |
-| `TE-501-2` | T-501 | `ADD PCRFGROUP` | `ADD PCRFBINDGRP` | `precedes` | `required` | `PCRFGROUPNAME → PCRFBINDGRP` | `EV-FK-BW-PCC-UNC` |
-| `TE-501-3` | T-501 | `ADD PCRFBINDGRP` | `SET DFTGLBPCRFGRP` | `precedes` | `optional` | `PCRFGROUPNAME` | `EV-FK-BW-PCC-UNC` |
+| `TE-501-1` | T-501 | `ADD PCRF` | `ADD PCRFGROUP` | `precedes` | `required` | `PCRFID → PCRFGROUP` | `EV-FK-17` |
+| `TE-501-2` | T-501 | `ADD PCRFGROUP` | `ADD PCRFBINDGRP` | `precedes` | `required` | `PCRFGROUPNAME → PCRFBINDGRP` | `EV-FK-17` |
+| `TE-501-3` | T-501 | `ADD PCRFBINDGRP` | `SET DFTGLBPCRFGRP` | `precedes` | `optional` | `PCRFGROUPNAME` | `EV-FK-17` |
 
 ### 9.6 T-003 PCC规则（内部链）
 
@@ -665,10 +665,10 @@ T-103（配置BWM控制器）为单命令task，无内部命令顺序依赖。BW
 
 | `edge_id` | `task_ref` | `from_command_ref` | `to_command_ref` | `relation_type` | `requiredness` | `propagated_context` | `source_evidence_ids` |
 |-----------|------------|--------------------|--------------------|-----------------|----------------|---------------------|----------------------|
-| `TE-BWM-1` | T-102→T-103 | `ADD BWMSERVICE` | `ADD BWMCONTROLLER` | `precedes` | `required` | `BWMSERVICENAME` | `EV-FK-BW-BWM`, `EV-CA-01` |
-| `TE-BWM-2` | T-103→T-105 | `ADD BWMCONTROLLER` | `ADD BWMRULE` | `precedes` | `required` | `BWMCNAME → BWMRULE.UPBWMCTRLNAME1` | `EV-FK-BW-BWM`, `EV-CA-01` |
-| `TE-BWM-3` | T-104→T-105 | `ADD BWMUSERGROUP` | `ADD BWMRULE` | `precedes` | `required` | `USERGROUPNAME` | `EV-FK-BW-BWM` |
-| `TE-BWM-4` | T-104→T-106 | `ADD BWMUSERGROUP` | `ADD APNBINDBWMUSRG` | `precedes` | `required` | `USERGROUPNAME → APNNAME` | `EV-FK-BW-BWM` |
+| `TE-BWM-1` | T-102→T-103 | `ADD BWMSERVICE` | `ADD BWMCONTROLLER` | `precedes` | `required` | `BWMSERVICENAME` | `EV-FK-04`, `EV-CA-01` |
+| `TE-BWM-2` | T-103→T-105 | `ADD BWMCONTROLLER` | `ADD BWMRULE` | `precedes` | `required` | `BWMCNAME → BWMRULE.UPBWMCTRLNAME1` | `EV-FK-04`, `EV-CA-01` |
+| `TE-BWM-3` | T-104→T-105 | `ADD BWMUSERGROUP` | `ADD BWMRULE` | `precedes` | `required` | `USERGROUPNAME` | `EV-FK-04` |
+| `TE-BWM-4` | T-104→T-106 | `ADD BWMUSERGROUP` | `ADD APNBINDBWMUSRG` | `precedes` | `required` | `USERGROUPNAME → APNNAME` | `EV-FK-04` |
 
 ---
 

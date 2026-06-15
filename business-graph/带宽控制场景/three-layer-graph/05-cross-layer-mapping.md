@@ -251,9 +251,9 @@
   → T-005 ADD USRPROFGROUP + UPBINDUPG + APNUSRPROFG
 
 [证据] 全链路可追溯：
-  CS-BW-01 → [EV-FK-BW-BWM, EV-FK-BW-SA-Basic, EV-FK-BW-PCC-UDG, EV-CA-01]
-  GWFD-110311 → [EV-FK-BW-BWM, EV-CA-01]
-  ADD BWMCONTROLLER → [EV-FK-BW-BWM, EV-CA-01]
+  CS-BW-01 → [EV-FK-04, EV-FK-01, EV-FK-03, EV-CA-01]
+  GWFD-110311 → [EV-FK-04, EV-CA-01]
+  ADD BWMCONTROLLER → [EV-FK-04, EV-CA-01]
 ```
 
 ### 7.2 路径B：FUP配额降速端到端
@@ -290,8 +290,8 @@
   → T-202/T-203/T-204 UNC侧FUP三件套
   → T-205 SET PCCFUNC + MOD PCRF(UMCH)（仅Gx场景）
 
-[证据] CS-BW-02 → [EV-FK-BW-FUP-UDG, EV-FK-BW-FUP-UNC, EV-CA-01, EV-CA-02]
-  ADD URR → [EV-FK-BW-SessionFUP, EV-CA-01]
+[证据] CS-BW-02 → [EV-FK-07, EV-FK-18, EV-CA-01, EV-CA-02]
+  ADD URR → [EV-FK-07, EV-CA-01]
 ```
 
 ### 7.3 路径C：ADC应用感知端到端
@@ -329,8 +329,8 @@
   → constrained_by → TR-BW-06 预定义规则全网一致性
   → constrained_by → TR-BW-05 ADC三策略组完整性
 
-[证据] CS-BW-04 → [EV-FK-BW-ADC, EV-FK-BW-ADC-UNC, EV-CA-02]
-  ADD ADCPARA → [EV-FK-BW-ADC-UDG, EV-CA-01]
+[证据] CS-BW-04 → [EV-FK-09, EV-FK-21, EV-CA-02]
+  ADD ADCPARA → [EV-FK-09, EV-CA-01]
 ```
 
 ---

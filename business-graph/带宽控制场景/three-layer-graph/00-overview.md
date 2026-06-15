@@ -192,9 +192,9 @@
   → impacted_by → DP-BW-05 sets_value_pattern(CTRLTYPE=CAR)
 
 [证据] 全链路可追溯：
-  CS-BW-01 → [EV-FK-BW-BWM, EV-FK-BW-SA-Basic, EV-FK-BW-PCC-UDG, EV-CA-01]
-  GWFD-110311 → [EV-FK-BW-BWM, EV-CA-01]
-  ADD BWMCONTROLLER → [EV-FK-BW-BWM, EV-CA-01]
+  CS-BW-01 → [EV-FK-04, EV-FK-01, EV-FK-03, EV-CA-01]
+  GWFD-110311 → [EV-FK-04, EV-CA-01]
+  ADD BWMCONTROLLER → [EV-FK-04, EV-CA-01]
 ```
 
 ### 5.2 链路B：FUP配额降速（CS-BW-02）
@@ -228,8 +228,8 @@
   → constrained_by → TR-BW-03 FUP三件套链（URR→URRGROUP→PCCPOLICYGRP）
   → impacted_by → DP-BW-06 sets_value_pattern(SESSION_LEVEL)
 
-[证据] CS-BW-02 → [EV-FK-BW-FUP-UDG, EV-FK-BW-FUP-UNC, EV-CA-01, EV-CA-02]
-  ADD URR → [EV-FK-BW-SessionFUP, EV-CA-01]
+[证据] CS-BW-02 → [EV-FK-07, EV-FK-18, EV-CA-01, EV-CA-02]
+  ADD URR → [EV-FK-07, EV-CA-01]
 ```
 
 ### 5.3 链路C：ADC应用感知动态带宽（CS-BW-04）
@@ -263,8 +263,8 @@
     → 关键参数: ADCPARANAME, APPNAME, MATCHMODE
   → constrained_by → CR-BW-05 预定义规则名全网唯一（ADCPARA+RULENAME三网元一致）
 
-[证据] CS-BW-04 → [EV-FK-BW-ADC, EV-FK-BW-ADC-UNC, EV-CA-02]
-  ADD ADCPARA → [EV-FK-BW-ADC-UDG, EV-CA-01]
+[证据] CS-BW-04 → [EV-FK-09, EV-FK-21, EV-CA-02]
+  ADD ADCPARA → [EV-FK-09, EV-CA-01]
 ```
 
 ---

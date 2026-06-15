@@ -55,11 +55,12 @@
 | `feature_name` | `SA-Basic` |
 | `feature_summary` | L3/L4/L7业务识别基础引擎，提供SVC/APP识别能力，是整个带宽控制场景的数据基础，被12个特性直接或间接依赖 |
 | `feature_group` | `基础感知` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF（用户面执行） |
+| `variant_dimensions` | `["识别层级(L3/L4/L7)", "特征库版本"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.0.0` |
 | `requires_license` | `LKV3G5SABS01` |
 | `key_capabilities` | ① L3/L4五元组解析（IP/端口/协议）② 协议识别（知名端口+签名匹配）③ L7 URL/Method/Response Code解析 ④ SVC（业务大类）+ APP（具体应用）标识输出 ⑤ SET REFRESHSRV策略刷新 ⑥ CP/UP配置一致性检查 |
-| `source_evidence_ids` | `EV-FK-SA-Basic`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-01`, `EV-CA-01` |
 
 #### GWFD-111600 SA特征库更新管控
 
@@ -69,11 +70,12 @@
 | `feature_name` | `SA特征库更新管控` |
 | `feature_summary` | SA特征库版本License管理，维护SA-Basic使用的特征库数据，通过LOD SIGNATUREDB加载 |
 | `feature_group` | `基础感知` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["特征库版本"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.12.2` |
 | `requires_license` | `LKV3G5SSDUC1` |
 | `key_capabilities` | ① SA特征库版本License控制 ② LOD SIGNATUREDB/LOD PARSERDB加载管理 ③ 维护SA-Basic引擎使用的特征库数据 |
-| `source_evidence_ids` | `EV-FK-SA-SigDB`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-02`, `EV-CA-01` |
 
 ### 1.2 PCC框架
 
@@ -85,11 +87,12 @@
 | `feature_name` | `PCC基本功能` |
 | `feature_summary` | UDG侧PCC基础，接收N4规则（PDR/FAR/QER/URR/BAR），执行MBR限速/GBR保障/Gate门控，是所有UDG侧策略特性的前置依赖 |
 | `feature_group` | `PCC框架` |
-| `applicable_nf_map` | PGW-U, UPF |
+| `variant_dimensions` | `["规则来源(动态/预定义/本地)", "有无PCRF"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.0.0` |
 | `requires_license` | `LKV3G5PCCB01` |
 | `key_capabilities` | ① 接收PCRF/PCF策略（经N4）② N4规则体系（PDR/FAR/QER/URR/BAR）③ 动态/预定义/本地规则三种模式 ④ SET REFRESHSRV策略刷新（PROTBINDFLOWF 60s延迟）⑤ MBR限速 + GBR保障 + Gate门控执行 |
-| `source_evidence_ids` | `EV-FK-PCC-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-03`, `EV-CA-01` |
 
 #### WSFD-109101 PCC基本功能（UNC）
 
@@ -99,11 +102,12 @@
 | `feature_name` | `PCC基本功能` |
 | `feature_summary` | UNC(SMF/PGW-C)侧PCC基础，接收PCRF/PCF的QCI/5QI/MBR/GBR/ARP策略，管理PCC规则生命周期，通过N4下发给UDG执行 |
 | `feature_group` | `PCC框架` |
-| `applicable_nf_map` | SMF, PGW-C, GGSN-C, AMF |
+| `variant_dimensions` | `["接口(Gx/N7)", "PCRF冗余模式"]` |
+| `applicable_nf_map` | `{"UNC": ["SMF", "PGW-C", "AMF", "GGSN"]}` |
 | `first_release` | `UNC 20.0.0` |
 | `requires_license` | `LKV3W9SPCC11` |
 | `key_capabilities` | ① Gx接口Diameter信令（2/3/4G）② N7/N15服务化接口（5G）③ IP-CAN会话管理（CCR-I/U/T）④ PCRF冗余（主备/轮询/百分比+Failover）⑤ Event Triggers（USAGE_REPORT/QOS_CHANGE/APP_STA/STO等） |
-| `source_evidence_ids` | `EV-FK-PCC-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-17`, `EV-CA-01` |
 
 ### 1.3 核心带宽控制
 
@@ -115,11 +119,12 @@
 | `feature_name` | `基于业务感知的带宽控制` |
 | `feature_summary` | UDG侧核心带宽控制特性，定义独有的三级BWM控制体系（用户级/组级/全局级），通过SA识别业务后执行CAR限速或Shaping整形 |
 | `feature_group` | `核心带宽控制` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["控制层级(用户/组/全局)", "CTRLTYPE(CAR/SHAPING)", "BWMRULETYPE"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.9.0`（v02） |
 | `requires_license` | `LKV3G5TCSA01` |
 | `key_capabilities` | ① 三级BWM控制：用户级（SUBSCRIBER_SPECIFIC）/ 组级（GROUP_SPECIFIC）/ 全局级（GLOBAL）② CAR限速（令牌桶直接丢弃超额报文）③ Shaping整形（GTS队列缓冲）④ 三色标记（GREEN/YELLOW/RED）⑤ BWMSERVICE→BWMCONTROLLER→BWMUSERGROUP→BWMRULE四级配置 ⑥ BWMRULEGLOBAL全局级规则 ⑦ APN绑定（APNBINDBWMUSRG） |
-| `source_evidence_ids` | `EV-FK-BWM-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-04`, `EV-CA-01` |
 
 #### WSFD-211005 基于业务感知的带宽控制（UNC）
 
@@ -129,11 +134,12 @@
 | `feature_name` | `基于业务感知的带宽控制` |
 | `feature_summary` | UNC侧BWM规则管理，通过ADD RULE(POLICYTYPE=BWM)定义BWM策略，N4下发给UDG执行；POLICYTYPE=BWM是UNC侧独有标识 |
 | `feature_group` | `核心带宽控制` |
-| `applicable_nf_map` | GGSN, PGW-C, SMF |
+| `variant_dimensions` | `["接口(Gx/N7)"]` |
+| `applicable_nf_map` | `{"UNC": ["GGSN", "PGW-C", "SMF"]}` |
 | `first_release` | `UNC 20.5.0` |
 | `requires_license` | `LKV3TCBSA01` |
 | `key_capabilities` | ① POLICYTYPE=BWM策略类型标识（UNC独有）② RULE→USERPROFILE→RULEBINDING规则绑定 ③ USRPROFGROUP→UPBINDUPG→APNUSRPROFG APN级生效绑定链 ④ RULENAME全网一致性要求（PCRF/PCF+UNC+UDG） |
-| `source_evidence_ids` | `EV-FK-BWM-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-19`, `EV-CA-01` |
 
 ### 1.4 Shaping整形
 
@@ -145,11 +151,12 @@
 | `feature_name` | `基于业务的Shaping` |
 | `feature_summary` | 用户级令牌桶整形，缓冲超额报文到GTS队列延迟转发，TCP友好（适合视频等抖动敏感业务），仅支持用户级（SUBSCRIBER_SPECIFIC） |
 | `feature_group` | `Shaping整形` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["RATE", "QUEDEPTH"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.1.0` |
 | `requires_license` | `LKV3G5SBTS01` |
 | `key_capabilities` | ① CTRLTYPE=SHAPING（固定）② RATE限速速率 + QUEDEPTH队列深度配置 ③ GTS队列缓冲超额报文 ④ 平滑输出减少TCP重传 ⑤ 仅用户级（BWMRULETYPE=SUBSCRIBER_SPECIFIC）⑥ 依赖SA识别业务类型 |
-| `source_evidence_ids` | `EV-FK-Shaping`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-05`, `EV-CA-01` |
 
 #### GWFD-110313 智能Shaping组级带宽控制
 
@@ -159,11 +166,12 @@
 | `feature_name` | `智能Shaping组级带宽控制` |
 | `feature_summary` | 组级智能整形，在普通Shaping基础上增加AUTO模式自动调优，按ServiceLevel差异化分配带宽，依赖BWM+Shaping双License |
 | `feature_group` | `Shaping整形` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["WORKMODE(AUTO/MANUAL)", "ASSUREMODE(EXPFIRST/RATEFIRST)"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.7.0` |
 | `requires_license` | `LKV3G5FSHP01` |
 | `key_capabilities` | ① WORKMODE=AUTO/MANUAL（自动/手动调优）② ASSUREMODE=EXPFIRST/RATEFIRST（体验优先/速率优先）③ BCSRVLEVELPLY按ServiceLevel差异化带宽 ④ PKTLOSTRATEDTL丢包率差值自动调整 ⑤ USERFAIREN用户公平使能 ⑥ BWMRULETYPE=GROUP_SPECIFIC（组级） |
-| `source_evidence_ids` | `EV-FK-SmartShaping`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-06`, `EV-CA-01` |
 
 ### 1.5 FUP累计流量
 
@@ -175,11 +183,12 @@
 | `feature_name` | `基于累计流量的策略控制` |
 | `feature_summary` | UDG侧会话级FUP，URR流量阈值监控，per Session累计所有流量，不依赖SA识别，达阈值后PCRF/PCF下发新QoS降速 |
 | `feature_group` | `FUP累计流量` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["USAGERPTMODE(ONLINE/MONITORINGKEY)", "接口(Gx/N7)"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.2.0` |
 | `requires_license` | `LKV3G5PCBT01` |
 | `key_capabilities` | ① URR流量计数（USAGERPTMODE=ONLINE/MONITORINGKEY）② per Session全流量累计 ③ VOLTH流量阈值耗尽上报 ④ Gx UM Level=SESSION_LEVEL(0) ⑤ URR关联所有Create PDRs ⑥ 不依赖SA（不需要业务识别） |
-| `source_evidence_ids` | `EV-FK-SessionFUP-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-07`, `EV-CA-01` |
 
 #### WSFD-109104 基于累计流量的策略控制（会话级FUP，UNC）
 
@@ -189,11 +198,12 @@
 | `feature_name` | `基于累计流量的策略控制` |
 | `feature_summary` | UNC侧会话级FUP，接收PCRF阈值，N4 URR下发给UDG；Gx场景需额外配置PCCFUNC/PCRF/PCCPOLICYGRP，N7场景仅需License |
 | `feature_group` | `FUP累计流量` |
-| `applicable_nf_map` | GGSN-C, PGW-C, SMF |
+| `variant_dimensions` | `["接口(Gx/N7)", "UMCH拥塞处理"]` |
+| `applicable_nf_map` | `{"UNC": ["GGSN-C", "PGW-C", "SMF"]}` |
 | `first_release` | `UNC 20.3.0` |
 | `requires_license` | `LKV3W9PCBT12` |
 | `key_capabilities` | ① Gx场景：SET PCCFUNC + MOD PCRF(UMCH) + MOD PCCPOLICYGRP(FUPSESSIONEXC) ② N7场景：仅需License，阈值由PCF umDecs配置 ③ URR + URRGROUP + PCCPOLICYGRP UNC侧配置 ④ Usage-Monitoring-Information AVP（Gx）/ volumeThreshold（N7）阈值下发 |
-| `source_evidence_ids` | `EV-FK-SessionFUP-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-18`, `EV-CA-01` |
 
 #### GWFD-110312 基于业务累计流量的策略控制（业务级FUP，UDG）
 
@@ -203,11 +213,12 @@
 | `feature_name` | `基于业务累计流量的策略控制` |
 | `feature_summary` | UDG侧业务级FUP，per SVC/per APP独立累计流量，依赖SA识别+BWM规则匹配，Monitoring-Key标识不同业务 |
 | `feature_group` | `FUP累计流量` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["累计粒度(per SVC/per APP)", "Monitoring-Key"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.5.0` |
 | `requires_license` | `LKV3G5FPBS01` |
 | `key_capabilities` | ① per SVC/per APP独立累计（区别于会话级FUP的全量累计）② Gx UM Level=PCC_RULE_LEVEL(1) ③ Monitoring-Key标识业务类型 ④ URR只绑定指定业务流的PDRs ⑤ 依赖SA识别（GWFD-110101）+ BWM规则匹配（GWFD-110311） |
-| `source_evidence_ids` | `EV-FK-SvcFUP-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-08`, `EV-CA-01` |
 
 #### WSFD-211009 基于业务累计流量的策略控制（业务级FUP，UNC）
 
@@ -217,11 +228,12 @@
 | `feature_name` | `基于业务累计流量的策略控制` |
 | `feature_summary` | UNC侧业务级FUP，URR绑定指定业务流的PDRs，依赖BWM(UNC)配合，通过Monitoring-Key标识不同业务 |
 | `feature_group` | `FUP累计流量` |
-| `applicable_nf_map` | GGSN, PGW-C, SMF |
+| `variant_dimensions` | `["接口(Gx/N7)"]` |
+| `applicable_nf_map` | `{"UNC": ["GGSN", "PGW-C", "SMF"]}` |
 | `first_release` | `UNC 20.3.0` |
 | `requires_license` | `LKV2FUPSAT01` |
 | `key_capabilities` | ① URR + URRGROUP + PCCPOLICYGRP UNC侧配置 ② Monitoring-Key标识业务 ③ URR只绑定指定业务流PDRs ④ 依赖BWM(UNC)（WSFD-211005）配合 |
-| `source_evidence_ids` | `EV-FK-SvcFUP-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-20`, `EV-CA-01` |
 
 ### 1.6 QoS保证
 
@@ -233,11 +245,12 @@
 | `feature_name` | `业务触发的QoS保证` |
 | `feature_summary` | UDG侧GBR保证，SA识别高价值业务→URR(QOS模式)上报QoS事件→触发专有承载(2/3/4G)/专有QoS Flow(5G)建立，保证带宽下限 |
 | `feature_group` | `QoS保证` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["USAGERPTMODE(QOS)", "QOSTYPE(QOS_FLOW_PARA/QOS_BEARER_PARA)"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.2.0` |
 | `requires_license` | `LKV3G5STQE01` |
 | `key_capabilities` | ① USAGERPTMODE=QOS（区别于FUP的ONLINE/MONITORINGKEY）② SA识别业务→PFCP Session Report上报QoS事件 ③ 触发UNC侧专有承载/QoS Flow建立 ④ GBR-UL/DL带宽下限保证 ⑤ 每用户10个专有承载/63个QoS Flow |
-| `source_evidence_ids` | `EV-FK-QoS-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-10`, `EV-CA-01` |
 
 #### WSFD-109107 业务触发的QoS保证（UNC）
 
@@ -247,11 +260,12 @@
 | `feature_name` | `业务触发的QoS保证` |
 | `feature_summary` | UNC侧GBR保证，接收QoS事件，发起专有承载(2/3/4G)/专有QoS Flow(5G)建立，配置QOSPROP(GBR/MBR/5QI/QCI/ARP) |
 | `feature_group` | `QoS保证` |
-| `applicable_nf_map` | GGSN-C, PGW-C, SMF |
+| `variant_dimensions` | `["接口(Gx/N7)", "QOSTYPE"]` |
+| `applicable_nf_map` | `{"UNC": ["GGSN-C", "PGW-C", "SMF"]}` |
 | `first_release` | `UNC 20.5.0` |
 | `requires_license` | `LKV3W9STQE11` |
 | `key_capabilities` | ① QOSPROP配置（QOSTYPE=QOS_FLOW_PARA(5G)/QOS_BEARER_PARA(2/3/4G)）② GBR-UL/DL + MBR-UL/DL + QCI/5QI + ARP参数 ③ SET APNIDLETIME专有QoS Flow空闲定时器 ④ ADD APNDEACTQFPLCY去活策略（DELAY_RELEASE）⑤ 专有承载方向性控制 |
-| `source_evidence_ids` | `EV-FK-QoS-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-22`, `EV-CA-01` |
 
 #### GWFD-110302 基于上下行解耦的视频承载信令控制
 
@@ -261,11 +275,12 @@
 | `feature_name` | `基于上下行解耦的视频承载信令控制` |
 | `feature_summary` | 视频业务上下行解耦，只为下行建专载、上行走缺省，复用QoS保证的QOSPROP增加DECOUPLINGSW参数 |
 | `feature_group` | `QoS保证` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["DECOUPLINGSW(ENABLE/DISABLE)"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.9.0` |
 | `requires_license` | `LKV3G5SCUD01` |
 | `key_capabilities` | ① DECOUPLINGSW=ENABLE（上下行解耦开关）② 复用QoS保证的QOSPROP对象 ③ 仅下行建专载（节省上行资源）④ 依赖QoS保证（GWFD-020358）⑤ 适用于直播/点播下行高带宽场景 |
-| `source_evidence_ids` | `EV-FK-VideoDecoupling`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-12`, `EV-CA-01` |
 
 ### 1.7 ADC检测
 
@@ -277,11 +292,12 @@
 | `feature_name` | `增强的ADC基本功能` |
 | `feature_summary` | UDG侧ADC，基于SA的L7 DPI引擎检测应用，上报APPLICATION_START/STOP(Gx)/APP_STA/STO(N7)触发PCRF动态策略 |
 | `feature_group` | `ADC检测` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["接口(Gx/N7)", "Event Triggers"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.1.0` |
 | `requires_license` | `LKV3G5ADCF01` |
 | `key_capabilities` | ① SA L7 DPI引擎应用检测 ② APPLICATION_START/STOP事件上报（Gx）③ APP_STA/STO事件上报（N7）④ ADCPARA参数配置 ⑤ FLOWFILTERNAME/appid全网一致性要求 |
-| `source_evidence_ids` | `EV-FK-ADC-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-09`, `EV-CA-01` |
 
 #### WSFD-109102 ADC基本功能（UNC）
 
@@ -291,11 +307,12 @@
 | `feature_name` | `ADC基本功能` |
 | `feature_summary` | UNC侧ADC，转发PCRF/PCF应用检测事件，承载管理，三策略组（Normal/Start/Stop），FLOWFILTER+ADCPARA三网元一致性 |
 | `feature_group` | `ADC检测` |
-| `applicable_nf_map` | GGSN-C, PGW-C, SMF |
+| `variant_dimensions` | `["接口(Gx/N7)"]` |
+| `applicable_nf_map` | `{"UNC": ["GGSN-C", "PGW-C", "SMF"]}` |
 | `first_release` | `UNC 20.5.0` |
 | `requires_license` | `LKV2BADCF01` |
 | `key_capabilities` | ① 三策略组（Normal/Start/Stop）② FLOWFILTER+ADCPARA三网元一致性 ③ 承载管理（专载建立/更新/释放）④ PCRF/PCF应用检测事件转发 |
-| `source_evidence_ids` | `EV-FK-ADC-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-21`, `EV-CA-01` |
 
 ### 1.8 无线优化
 
@@ -307,11 +324,12 @@
 | `feature_name` | `IM类业务无线资源管控` |
 | `feature_summary` | SA识别IM业务（QQ/MSN/Fetion），映射DSCP值影响BSC/RNC无线调度，优化心跳保活 |
 | `feature_group` | `无线优化` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["DSCP映射(QQ=12/MSN=14/Fetion=18)"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.7.0` |
 | `requires_license` | `LKV3G5ITSR01` |
 | `key_capabilities` | ① SA识别IM业务类型 ② DSCP映射（QQ=12, MSN=14, Fetion=18）③ 影响2/3G BSC/RNC无线调度 ④ 心跳保活优化 |
-| `source_evidence_ids` | `EV-FK-IM-Ctrl`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-13`, `EV-CA-01` |
 
 #### GWFD-110301 基于终端系统的码率差异化控制
 
@@ -321,11 +339,12 @@
 | `feature_name` | `基于终端系统的码率差异化控制` |
 | `feature_summary` | SA识别终端OS（Android/iOS/Windows），通过BWM框架增加OSTYPE维度实现码率差异化，适配不同编码格式 |
 | `feature_group` | `无线优化` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["OSTYPE"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.9.0` |
 | `requires_license` | `LKV3G5RDSC01` |
 | `key_capabilities` | ① SA识别终端OS类型 ② SET APNOSLELBWMSW终端OS BWM开关 ③ 通过BWM框架增加OSTYPE维度 ④ 差异化BWM策略 ⑤ 适用于视频OTT不同编码格式适配 |
-| `source_evidence_ids` | `EV-FK-OS-RateDiff`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-11`, `EV-CA-01` |
 
 #### GWFD-110331 基于业务流标识的无线资源优化
 
@@ -335,11 +354,12 @@
 | `feature_name` | `基于业务流标识的无线资源优化` |
 | `feature_summary` | SA识别业务流→匹配FPI规则→标记FPI/DSCP/GTP-U扩展头→基站按队列调度，FPI值范围0-255映射7个队列 |
 | `feature_group` | `无线优化` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["FPI值范围(0-255)", "队列映射(0-6)"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.7.0` |
 | `requires_license` | `LKV3G5WOFR01` |
 | `key_capabilities` | ① FPI值0-255标记 ② 7个队列映射（0-6），队列1权重为1（规划风险）③ DSCP标记 ④ GTP-U扩展头携带 ⑤ 全业务类型无线调度优化 |
-| `source_evidence_ids` | `EV-FK-FPI`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-14`, `EV-CA-01` |
 
 > **规划风险**: FPI值8~15映射的队列1调度权重仅为1（其他队列为10），在空口资源紧张时几乎得不到调度机会。配置时需特别注意避免将高价值业务映射到此范围。
 
@@ -351,11 +371,12 @@
 | `feature_name` | `基于小区负荷上报的无线资源优化` |
 | `feature_summary` | UDG侧小区负荷感知，RAN上报负荷等级（Level 0-3）→UDG转发→UNC上报PCRF→动态调整BWM策略 |
 | `feature_group` | `无线优化` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["负荷等级(Invalid/Normal/Congestion/Overload)"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.8.2` |
 | `requires_license` | `LKV3G5WOCR01` |
 | `key_capabilities` | ① GTP-U扩展头接收小区负荷信息 ② 负荷等级（0=Invalid/1=Normal/2=Congestion/3=Overload）③ PFCP Session Report上报UNC ④ CELL_CONGESTION_CHANGE Event Trigger ⑤ 不直接依赖SA但需BWM配合执行 |
-| `source_evidence_ids` | `EV-FK-CellLoad-UDG`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-15`, `EV-CA-01` |
 
 #### WSFD-211101 基于小区负荷上报的无线资源优化（UNC）
 
@@ -365,11 +386,12 @@
 | `feature_name` | `基于小区负荷上报的无线资源优化` |
 | `feature_summary` | UNC侧负荷信息转发，接收UDG上报的小区负荷等级，通过Gx接口转发PCRF，SET APNREPORTATTR配置拥塞上报属性 |
 | `feature_group` | `无线优化` |
-| `applicable_nf_map` | GGSN-C, PGW-C |
+| `variant_dimensions` | `["接口(Gx)"]` |
+| `applicable_nf_map` | `{"UNC": ["GGSN-C", "PGW-C"]}` |
 | `first_release` | `UNC 20.7.0` |
 | `requires_license` | `LKV3W9WOCR11` |
 | `key_capabilities` | ① CELL_CONGESTION_CHANGE Event Trigger上报PCRF ② SET APNREPORTATTR APN拥塞上报属性 ③ Gx接口转发负荷信息 ④ 触发PCRF动态调整BWM策略 |
-| `source_evidence_ids` | `EV-FK-CellLoad-UNC`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-24`, `EV-CA-01` |
 
 ### 1.9 位置感知
 
@@ -381,11 +403,12 @@
 | `feature_name` | `基于接入点策略控制` |
 | `feature_summary` | WiFi用户位置变化感知（UE_LOCAL_IP_ADDRESS_CHANGE, Trigger=43），激活预定义差异化带宽规则，适用于WiFi分流场景 |
 | `feature_group` | `位置感知` |
-| `applicable_nf_map` | PGW-C |
+| `variant_dimensions` | `["位置条件(PLMN/接入点)"]` |
+| `applicable_nf_map` | `{"UNC": ["PGW-C"]}` |
 | `first_release` | `UNC 20.5.0` |
 | `requires_license` | `LKV3WPWULI11` |
 | `key_capabilities` | ① UE_LOCAL_IP_ADDRESS_CHANGE事件检测 ② Trigger=43位置变化触发 ③ 激活预定义差异化带宽规则 ④ WiFi接入点位置感知 ⑤ Gx接口Event-Trigger上报 |
-| `source_evidence_ids` | `EV-FK-APN-Policy`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-23`, `EV-CA-01` |
 
 ### 1.10 异常检测
 
@@ -397,11 +420,12 @@
 | `feature_name` | `终端异常下行流量检测` |
 | `feature_summary` |异常流量检测，SA辅助识别异常模式，阈值计数触发阻断恶意终端，门控阻断或告警 |
 | `feature_group` | `异常检测` |
-| `applicable_nf_map` | SGW-U, PGW-U, UPF |
+| `variant_dimensions` | `["检测阈值", "阻断动作"]` |
+| `applicable_nf_map` | `{"UDG": ["SGW-U", "PGW-U", "UPF"]}` |
 | `first_release` | `UDG 20.5.0` |
 | `requires_license` | `LKV3G5ADTD01` |
 | `key_capabilities` | ① 异常流量模式检测 ② SA辅助识别（间接依赖）③ 阈值计数触发 ④ 阻断恶意终端 ⑤ 告警通知 |
-| `source_evidence_ids` | `EV-FK-AbnDetect`, `EV-CA-01` |
+| `source_evidence_ids` | `EV-FK-16`, `EV-CA-01` |
 
 ---
 
@@ -552,14 +576,14 @@
 
 | `edge_id` | `owner_ref_type` | `owner_ref` | `from_task_ref` | `to_task_ref` | `relation_type` | `source_evidence_ids` |
 |-----------|-----------------|-------------|-----------------|---------------|-----------------|----------------------|
-| `FTOE-BW-001` | `Feature` | `GWFD-110311` | `T-007` | `T-008` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
-| `FTOE-BW-002` | `Feature` | `GWFD-110311` | `T-008` | `T-101` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
-| `FTOE-BW-003` | `Feature` | `GWFD-110311` | `T-101` | `T-102` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
-| `FTOE-BW-004` | `Feature` | `GWFD-110311` | `T-102` | `T-103` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
-| `FTOE-BW-005` | `Feature` | `GWFD-110311` | `T-103` | `T-104` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
-| `FTOE-BW-006` | `Feature` | `GWFD-110311` | `T-104` | `T-105` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
-| `FTOE-BW-007` | `Feature` | `GWFD-110311` | `T-105` | `T-106` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
-| `FTOE-BW-008` | `Feature` | `GWFD-110311` | `T-106` | `T-006` | `sequential` | `EV-FK-BWM-UDG, EV-CA-01` |
+| `FTOE-BW-001` | `Feature` | `GWFD-110311` | `T-007` | `T-008` | `sequential` | `EV-FK-04, EV-CA-01` |
+| `FTOE-BW-002` | `Feature` | `GWFD-110311` | `T-008` | `T-101` | `sequential` | `EV-FK-04, EV-CA-01` |
+| `FTOE-BW-003` | `Feature` | `GWFD-110311` | `T-101` | `T-102` | `sequential` | `EV-FK-04, EV-CA-01` |
+| `FTOE-BW-004` | `Feature` | `GWFD-110311` | `T-102` | `T-103` | `sequential` | `EV-FK-04, EV-CA-01` |
+| `FTOE-BW-005` | `Feature` | `GWFD-110311` | `T-103` | `T-104` | `sequential` | `EV-FK-04, EV-CA-01` |
+| `FTOE-BW-006` | `Feature` | `GWFD-110311` | `T-104` | `T-105` | `sequential` | `EV-FK-04, EV-CA-01` |
+| `FTOE-BW-007` | `Feature` | `GWFD-110311` | `T-105` | `T-106` | `sequential` | `EV-FK-04, EV-CA-01` |
+| `FTOE-BW-008` | `Feature` | `GWFD-110311` | `T-106` | `T-006` | `sequential` | `EV-FK-04, EV-CA-01` |
 
 > **Task说明**：T-007=License开启, T-008=SA特征库加载, T-101=规划BWM策略, T-102=ADD BWMSERVICE, T-103=ADD BWMCONTROLLER, T-104=ADD BWMUSERGROUP, T-105=ADD BWMRULE, T-106=APN绑定(APNBINDBWMUSRG), T-006=SET REFRESHSRV
 
@@ -567,11 +591,11 @@
 
 | `edge_id` | `owner_ref_type` | `owner_ref` | `from_task_ref` | `to_task_ref` | `relation_type` | `source_evidence_ids` |
 |-----------|-----------------|-------------|-----------------|---------------|-----------------|----------------------|
-| `FTOE-BW-009` | `Feature` | `GWFD-020353` | `T-007` | `T-201` | `sequential` | `EV-FK-SessionFUP-UDG, EV-CA-01` |
-| `FTOE-BW-010` | `Feature` | `GWFD-020353` | `T-201` | `T-202` | `sequential` | `EV-FK-SessionFUP-UDG, EV-CA-01` |
-| `FTOE-BW-011` | `Feature` | `GWFD-020353` | `T-202` | `T-203` | `sequential` | `EV-FK-SessionFUP-UDG, EV-CA-01` |
-| `FTOE-BW-012` | `Feature` | `GWFD-020353` | `T-203` | `T-204` | `sequential` | `EV-FK-SessionFUP-UDG, EV-CA-01` |
-| `FTOE-BW-013` | `Feature` | `GWFD-020353` | `T-204` | `T-006` | `sequential` | `EV-FK-SessionFUP-UDG, EV-CA-01` |
+| `FTOE-BW-009` | `Feature` | `GWFD-020353` | `T-007` | `T-201` | `sequential` | `EV-FK-07, EV-CA-01` |
+| `FTOE-BW-010` | `Feature` | `GWFD-020353` | `T-201` | `T-202` | `sequential` | `EV-FK-07, EV-CA-01` |
+| `FTOE-BW-011` | `Feature` | `GWFD-020353` | `T-202` | `T-203` | `sequential` | `EV-FK-07, EV-CA-01` |
+| `FTOE-BW-012` | `Feature` | `GWFD-020353` | `T-203` | `T-204` | `sequential` | `EV-FK-07, EV-CA-01` |
+| `FTOE-BW-013` | `Feature` | `GWFD-020353` | `T-204` | `T-006` | `sequential` | `EV-FK-07, EV-CA-01` |
 
 > **Task说明**：T-007=License开启, T-201=FUP策略规划, T-202=ADD URR, T-203=ADD URRGROUP, T-204=ADD PCCPOLICYGRP, T-006=SET REFRESHSRV
 
@@ -579,10 +603,10 @@
 
 | `edge_id` | `owner_ref_type` | `owner_ref` | `from_task_ref` | `to_task_ref` | `relation_type` | `source_evidence_ids` |
 |-----------|-----------------|-------------|-----------------|---------------|-----------------|----------------------|
-| `FTOE-BW-014` | `Feature` | `WSFD-211005` | `T-007` | `T-501` | `sequential` | `EV-FK-BWM-UNC, EV-CA-01` |
-| `FTOE-BW-015` | `Feature` | `WSFD-211005` | `T-501` | `T-003` | `sequential` | `EV-FK-BWM-UNC, EV-CA-01` |
-| `FTOE-BW-016` | `Feature` | `WSFD-211005` | `T-003` | `T-004` | `sequential` | `EV-FK-BWM-UNC, EV-CA-01` |
-| `FTOE-BW-017` | `Feature` | `WSFD-211005` | `T-004` | `T-005` | `sequential` | `EV-FK-BWM-UNC, EV-CA-01` |
+| `FTOE-BW-014` | `Feature` | `WSFD-211005` | `T-007` | `T-501` | `sequential` | `EV-FK-19, EV-CA-01` |
+| `FTOE-BW-015` | `Feature` | `WSFD-211005` | `T-501` | `T-003` | `sequential` | `EV-FK-19, EV-CA-01` |
+| `FTOE-BW-016` | `Feature` | `WSFD-211005` | `T-003` | `T-004` | `sequential` | `EV-FK-19, EV-CA-01` |
+| `FTOE-BW-017` | `Feature` | `WSFD-211005` | `T-004` | `T-005` | `sequential` | `EV-FK-19, EV-CA-01` |
 
 > **Task说明**：T-007=License开启, T-501=PCRF组配置, T-003=ADD RULE(POLICYTYPE=BWM), T-004=ADD USERPROFILE+RULEBINDING, T-005=ADD USRPROFGROUP+UPBINDUPG+APNUSRPROFG绑定链
 
@@ -590,11 +614,11 @@
 
 | `edge_id` | `owner_ref_type` | `owner_ref` | `from_task_ref` | `to_task_ref` | `relation_type` | `source_evidence_ids` |
 |-----------|-----------------|-------------|-----------------|---------------|-----------------|----------------------|
-| `FTOE-BW-018` | `Feature` | `GWFD-020358` | `T-007` | `T-008` | `sequential` | `EV-FK-QoS-UDG, EV-CA-01` |
-| `FTOE-BW-019` | `Feature` | `GWFD-020358` | `T-008` | `T-301` | `sequential` | `EV-FK-QoS-UDG, EV-CA-01` |
-| `FTOE-BW-020` | `Feature` | `GWFD-020358` | `T-301` | `T-302` | `sequential` | `EV-FK-QoS-UDG, EV-CA-01` |
-| `FTOE-BW-021` | `Feature` | `GWFD-020358` | `T-302` | `T-303` | `sequential` | `EV-FK-QoS-UDG, EV-CA-01` |
-| `FTOE-BW-022` | `Feature` | `GWFD-020358` | `T-303` | `T-006` | `sequential` | `EV-FK-QoS-UDG, EV-CA-01` |
+| `FTOE-BW-018` | `Feature` | `GWFD-020358` | `T-007` | `T-008` | `sequential` | `EV-FK-10, EV-CA-01` |
+| `FTOE-BW-019` | `Feature` | `GWFD-020358` | `T-008` | `T-301` | `sequential` | `EV-FK-10, EV-CA-01` |
+| `FTOE-BW-020` | `Feature` | `GWFD-020358` | `T-301` | `T-302` | `sequential` | `EV-FK-10, EV-CA-01` |
+| `FTOE-BW-021` | `Feature` | `GWFD-020358` | `T-302` | `T-303` | `sequential` | `EV-FK-10, EV-CA-01` |
+| `FTOE-BW-022` | `Feature` | `GWFD-020358` | `T-303` | `T-006` | `sequential` | `EV-FK-10, EV-CA-01` |
 
 > **Task说明**：T-007=License开启, T-008=SA特征库加载, T-301=规划QoS策略, T-302=ADD URR(USAGERPTMODE=QOS), T-303=ADD RULE+FILTER+FLOWFILTER绑定, T-006=SET REFRESHSRV
 
@@ -602,9 +626,9 @@
 
 | `edge_id` | `owner_ref_type` | `owner_ref` | `from_task_ref` | `to_task_ref` | `relation_type` | `source_evidence_ids` |
 |-----------|-----------------|-------------|-----------------|---------------|-----------------|----------------------|
-| `FTOE-BW-023` | `Feature` | `GWFD-110313` | `T-007` | `T-103` | `sequential` | `EV-FK-SmartShaping, EV-CA-01` |
-| `FTOE-BW-024` | `Feature` | `GWFD-110313` | `T-103` | `T-107` | `sequential` | `EV-FK-SmartShaping, EV-CA-01` |
-| `FTOE-BW-025` | `Feature` | `GWFD-110313` | `T-107` | `T-006` | `sequential` | `EV-FK-SmartShaping, EV-CA-01` |
+| `FTOE-BW-023` | `Feature` | `GWFD-110313` | `T-007` | `T-103` | `sequential` | `EV-FK-06, EV-CA-01` |
+| `FTOE-BW-024` | `Feature` | `GWFD-110313` | `T-103` | `T-107` | `sequential` | `EV-FK-06, EV-CA-01` |
+| `FTOE-BW-025` | `Feature` | `GWFD-110313` | `T-107` | `T-006` | `sequential` | `EV-FK-06, EV-CA-01` |
 
 > **Task说明**：T-007=双License开启(BWM+Shaping), T-103=ADD BWMCONTROLLER(CTRLTYPE=SHAPING, WORKMODE=AUTO), T-107=ADD BCSRVLEVELPLY(ServiceLevel策略), T-006=SET REFRESHSRV
 
