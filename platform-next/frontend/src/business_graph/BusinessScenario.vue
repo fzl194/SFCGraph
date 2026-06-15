@@ -240,7 +240,7 @@ onMounted(load)
   min-width: 0;
 }
 .explorer-right {
-  width: 420px;
+  width: 520px;
   flex-shrink: 0;
   overflow-y: auto;
   border-left: 1px solid var(--border);

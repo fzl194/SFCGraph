@@ -9,8 +9,8 @@
       <div class="cascade-card-header">
         <span class="cascade-type-badge" :style="{ background: typeColor }">{{ typeLabel }}</span>
         <span v-if="productTag" class="cascade-product-badge" :class="productTagClass">{{ productTag }}</span>
-        <span class="cascade-card-id">{{ node.object_id }}</span>
-        <span class="cascade-card-name">{{ node.name }}</span>
+        <span class="cascade-card-id">{{ displayId }}</span>
+        <span class="cascade-card-name">{{ displayName }}</span>
         <span v-if="sharedCount > 1" class="cascade-shared-badge" title="被多个上游引用">⟲ 共享</span>
         <button v-if="hasChildren" class="cascade-expand-btn" @click.stop="toggleExpand">
           {{ expanded ? '▾' : '▸' }}
@@ -164,15 +164,35 @@ const TYPE_COLORS: Record<string, string> = {
 const typeLabel = computed(() => TYPE_LABELS[props.node.object_type] || props.node.object_type)
 const typeColor = computed(() => TYPE_COLORS[props.node.object_type] || '#64748b')
 
-// UDG/UNC product tag for Features (GWFD- = UDG, WSFD- = UNC)
+// UDG/UNC product tag for Features (GWFD- = UDG, WSFD- = UNC) and Commands (CMD-UDG- / CMD-UNC-)
 const productTag = computed(() => {
-  if (props.node.object_type !== 'Feature') return ''
+  const t = props.node.object_type
   const id = props.node.object_id
-  if (id.startsWith('GWFD-')) return 'UDG'
-  if (id.startsWith('WSFD-')) return 'UNC'
+  if (t === 'Feature') {
+    if (id.startsWith('GWFD-')) return 'UDG'
+    if (id.startsWith('WSFD-')) return 'UNC'
+  }
+  if (t === 'MMLCommand') {
+    if (id.startsWith('CMD-UDG-')) return 'UDG'
+    if (id.startsWith('CMD-UNC-')) return 'UNC'
+  }
   return ''
 })
 const productTagClass = computed(() => productTag.value.toLowerCase())
+
+// For MMLCommand, show command_syntax (e.g., "ADD URR") instead of raw ID
+const displayId = computed(() => {
+  if (props.node.object_type === 'MMLCommand') {
+    return props.node.attributes?.command_syntax || props.node.object_id
+  }
+  return props.node.object_id
+})
+const displayName = computed(() => {
+  if (props.node.object_type === 'MMLCommand') {
+    return '' // syntax is already shown as ID; name is duplicate
+  }
+  return props.node.name
+})
 
 function relLabel(rel: string): string {
   const labels: Record<string, string> = {
@@ -195,8 +215,8 @@ function relLabel(rel: string): string {
 
 function handleSelect() {
   emit('select', props.node.object_id)
-  if (hasChildren.value && !expanded.value) {
-    expanded.value = true
+  if (hasChildren.value) {
+    expanded.value = !expanded.value
   }
 }
 
@@ -335,12 +355,10 @@ function toggleExpand() {
 }
 .cascade-children-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: var(--space-2);
 }
 .cascade-children-row > .cascade-node {
-  flex: 1;
-  min-width: 220px;
-  max-width: 360px;
+  width: 100%;
 }
 </style>

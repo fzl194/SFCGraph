@@ -5,9 +5,9 @@
       <div class="detail-type-row">
         <span class="detail-type-badge" :style="{ background: typeColor }">{{ typeLabel }}</span>
         <span v-if="productTag" class="detail-product-badge" :class="productTag.toLowerCase()">{{ productTag }}</span>
-        <span class="detail-id">{{ obj.object_id }}</span>
+        <span class="detail-id">{{ displayId }}</span>
       </div>
-      <h2 class="detail-name">{{ obj.name }}</h2>
+      <h2 class="detail-name">{{ displayName }}</h2>
       <p v-if="obj.summary" class="detail-summary">{{ obj.summary }}</p>
     </div>
 
@@ -40,8 +40,8 @@
             class="rel-item"
             @click="$emit('navigate', edge.to)"
           >
-            <span class="rel-item-id">{{ edge.to }}</span>
-            <span class="rel-item-name">{{ graph.objects[edge.to]?.name || '' }}</span>
+            <span class="rel-item-id">{{ relDisplayId(edge.to) }}</span>
+            <span class="rel-item-name">{{ relDisplayName(edge.to) }}</span>
             <span v-if="edge.meta?.context" class="rel-item-meta">{{ edge.meta.context }}</span>
           </div>
         </div>
@@ -61,8 +61,8 @@
             class="rel-item"
             @click="$emit('navigate', edge.from)"
           >
-            <span class="rel-item-id">{{ edge.from }}</span>
-            <span class="rel-item-name">{{ graph.objects[edge.from]?.name || '' }}</span>
+            <span class="rel-item-id">{{ relDisplayId(edge.from) }}</span>
+            <span class="rel-item-name">{{ relDisplayName(edge.from) }}</span>
           </div>
         </div>
       </div>
@@ -81,8 +81,8 @@
             class="rel-item"
             @click="$emit('navigate', edge.to)"
           >
-            <span class="rel-item-id">{{ edge.to }}</span>
-            <span class="rel-item-name">{{ graph.objects[edge.to]?.name || '' }}</span>
+            <span class="rel-item-id">{{ relDisplayId(edge.to) }}</span>
+            <span class="rel-item-name">{{ relDisplayName(edge.to) }}</span>
           </div>
         </div>
       </div>
@@ -226,13 +226,36 @@ const TYPE_COLORS: Record<string, string> = {
 const typeLabel = computed(() => props.obj ? (TYPE_LABELS[props.obj.object_type] || props.obj.object_type) : '')
 const typeColor = computed(() => props.obj ? (TYPE_COLORS[props.obj.object_type] || '#64748b') : '#64748b')
 
-// UDG/UNC product tag for Features
+// UDG/UNC product tag for Features and Commands
 const productTag = computed(() => {
-  if (!props.obj || props.obj.object_type !== 'Feature') return ''
+  if (!props.obj) return ''
+  const t = props.obj.object_type
   const id = props.obj.object_id
-  if (id.startsWith('GWFD-')) return 'UDG'
-  if (id.startsWith('WSFD-')) return 'UNC'
+  if (t === 'Feature') {
+    if (id.startsWith('GWFD-')) return 'UDG'
+    if (id.startsWith('WSFD-')) return 'UNC'
+  }
+  if (t === 'MMLCommand') {
+    if (id.startsWith('CMD-UDG-')) return 'UDG'
+    if (id.startsWith('CMD-UNC-')) return 'UNC'
+  }
   return ''
+})
+
+// For MMLCommand, show command_syntax instead of ID
+const displayId = computed(() => {
+  if (!props.obj) return ''
+  if (props.obj.object_type === 'MMLCommand') {
+    return props.obj.attributes?.command_syntax || props.obj.object_id
+  }
+  return props.obj.object_id
+})
+const displayName = computed(() => {
+  if (!props.obj) return ''
+  if (props.obj.object_type === 'MMLCommand') {
+    return props.obj.attributes?.command_syntax || props.obj.name
+  }
+  return props.obj.name
 })
 
 function relLabel(rel: string): string {
@@ -257,6 +280,21 @@ function relLabel(rel: string): string {
 function cleanValue(val: string): string {
   if (!val) return ''
   return val.replace(/`/g, '').replace(/\*\*/g, '').trim()
+}
+
+// Display helpers for relationship items (commands show syntax instead of ID)
+function relDisplayId(id: string): string {
+  const obj = props.graph.objects[id]
+  if (obj?.object_type === 'MMLCommand') {
+    return obj.attributes?.command_syntax || id
+  }
+  return id
+}
+function relDisplayName(id: string): string {
+  const obj = props.graph.objects[id]
+  if (!obj) return ''
+  if (obj.object_type === 'MMLCommand') return ''
+  return obj.name || ''
 }
 </script>
 
