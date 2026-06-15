@@ -487,6 +487,64 @@ def _is_relation_keyword(text: str) -> bool:
     return text.strip().lower() in _RELATION_KEYWORDS
 
 
+# Range pattern: CS-CH-01 ~ CS-CH-07  or  CS-CH-01~CS-CH-07  or  T-001 - T-005
+_RANGE_RE = re.compile(
+    r'((?:BD|NS|CS|DP|BR|SO|EV|CMD)-\D*\d+)\s*[~\-–—到]\s*((?:BD|NS|CS|DP|BR|SO|EV|CMD)-\D*(\d+))',
+    re.MULTILINE
+)
+
+
+def expand_id_list(text: str) -> list[str]:
+    """Extract and expand all object IDs from a text cell.
+
+    Handles:
+    - Range notation: `CS-CH-01 ~ CS-CH-07` → 7 IDs
+    - Comma/slash/Chinese-comma separated: `CS-CH-01, CS-CH-04` → 2 IDs
+    - Single IDs
+    """
+    # Strip ALL backticks first - MD cells have inline code markers that break regex
+    text = text.replace('`', '')
+    # First, expand ranges
+    expanded = text
+    range_replacements: list[str] = []
+
+    def _expand_range(m: re.Match) -> str:
+        start_id = m.group(1)
+        end_num = int(m.group(3))
+        # Extract prefix and start number from start_id
+        # Pattern: PREFIX-DDD where DDD is trailing digits
+        parts = re.match(r'^(.*?)(\d+)$', start_id)
+        if not parts:
+            return start_id
+        prefix = parts.group(1)
+        start_num = int(parts.group(2))
+        # Detect zero-padding width from start_id
+        start_digit_str = parts.group(2)
+        pad_width = len(start_digit_str)
+
+        if end_num < start_num:
+            return start_id
+
+        ids = []
+        for n in range(start_num, end_num + 1):
+            ids.append(f"{prefix}{n:0{pad_width}d}")
+        range_replacements.extend(ids)
+        return ' '.join(ids)
+
+    expanded = _RANGE_RE.sub(_expand_range, expanded)
+
+    # Now find all IDs in the expanded text
+    ids = re.findall(r'(' + OBJECT_ID_PATTERN + r')', expanded)
+    # Deduplicate while preserving order
+    seen = set()
+    result = []
+    for id_val in ids:
+        if id_val not in seen:
+            seen.add(id_val)
+            result.append(id_val)
+    return result
+
+
 def parse_edge_table(md_text: str) -> list[GraphEdge]:
     """Extract edges from explicit edge tables.
 
@@ -604,23 +662,17 @@ def parse_edge_table(md_text: str) -> list[GraphEdge]:
                     i += 1
                     continue
 
-                from_match = re.search(
-                    r'(' + OBJECT_ID_PATTERN + r')',
-                    cells[from_col]
-                )
-                to_targets = re.findall(
-                    r'(' + OBJECT_ID_PATTERN + r')',
-                    cells[to_col]
-                )
+                from_ids = expand_id_list(cells[from_col])
+                to_targets = expand_id_list(cells[to_col])
 
-                if from_match and to_targets:
-                    from_id = from_match.group(1)
-                    for to_id in to_targets:
-                        edges.append(GraphEdge(
-                            from_id=from_id,
-                            relation=relation_from_header,
-                            to_id=to_id,
-                        ))
+                if from_ids and to_targets:
+                    for from_id in from_ids:
+                        for to_id in to_targets:
+                            edges.append(GraphEdge(
+                                from_id=from_id,
+                                relation=relation_from_header,
+                                to_id=to_id,
+                            ))
                 i += 1
         else:
             # Pattern 1: Standard edge table with 起点 | 关系 | 终点 columns
@@ -682,23 +734,17 @@ def parse_edge_table(md_text: str) -> list[GraphEdge]:
                 else:
                     rel_val = ''
 
-                from_match = re.search(
-                    r'(' + OBJECT_ID_PATTERN + r')',
-                    from_val
-                )
-                to_targets = re.findall(
-                    r'(' + OBJECT_ID_PATTERN + r')',
-                    to_val
-                )
+                from_ids = expand_id_list(from_val)
+                to_targets = expand_id_list(to_val)
 
-                if from_match and to_targets and rel_val:
-                    from_id = from_match.group(1)
-                    for to_id in to_targets:
-                        edges.append(GraphEdge(
-                            from_id=from_id,
-                            relation=rel_val,
-                            to_id=to_id,
-                        ))
+                if from_ids and to_targets and rel_val:
+                    for from_id in from_ids:
+                        for to_id in to_targets:
+                            edges.append(GraphEdge(
+                                from_id=from_id,
+                                relation=rel_val,
+                                to_id=to_id,
+                            ))
                 i += 1
 
     return edges
