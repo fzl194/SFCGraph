@@ -295,8 +295,13 @@ class HtmlToMarkdownConverter:
             return f"{text}\n\n" if text else ""
 
         if name == "ul":
+            # Handle malformed <ul> without <li> children (e.g. alarm handling sections)
+            if not node.find_all("li", recursive=False):
+                return self._render_children(node, indent=indent) + "\n"
             return self._render_list(node, ordered=False, indent=indent) + "\n"
         if name == "ol":
+            if not node.find_all("li", recursive=False):
+                return self._render_children(node, indent=indent) + "\n"
             return self._render_list(node, ordered=True, indent=indent) + "\n"
         if name == "pre":
             return self._render_pre(node)
@@ -336,7 +341,35 @@ class HtmlToMarkdownConverter:
             return self._render_inline(node)
         return self._render_inline(node)
 
+    # Type prefix mapping for advisory blocks
+    _ADVISORY_TYPE_MAP = {
+        "note": "说明",
+        "warning": "警告",
+        "caution": "注意",
+        "tip": "提示",
+    }
+
+    def _detect_advisory_type(self, node: Tag) -> str:
+        """Detect advisory block type from class name and return Chinese prefix."""
+        classes = " ".join(node.get("class", []) or []).lower()
+        for key, label in self._ADVISORY_TYPE_MAP.items():
+            if key in classes:
+                return label
+        return ""
+
+    def _extract_advisory_title(self, node: Tag) -> str:
+        """Extract title text from notetitle/warningtitle/etc. span."""
+        for child in node.find_all(True, recursive=False):
+            if self._has_class_name(child, "notetitle", "warningtitle", "cautiontitle", "tiptitle"):
+                text = child.get_text(" ", strip=True)
+                if text:
+                    return text
+        return ""
+
     def _render_note_block(self, node: Tag) -> str:
+        advisory_type = self._detect_advisory_type(node)
+        title = self._extract_advisory_title(node)
+
         body = None
         for child in node.find_all(True):
             if self._has_class_name(child, "notebody", "warningbody", "cautionbody", "tipbody"):
@@ -346,6 +379,12 @@ class HtmlToMarkdownConverter:
         text = self._post_process_markdown(self._render_children(target).strip())
         if not text:
             return ""
+
+        # Prepend type prefix if we have one
+        prefix = title if title else advisory_type
+        if prefix:
+            text = f"**{prefix}**\n{text}"
+
         quoted = "\n".join(f"> {line}" if line.strip() else ">" for line in text.splitlines())
         return quoted + "\n\n"
 
@@ -457,6 +496,12 @@ class HtmlToMarkdownConverter:
         name = (getattr(node, "name", "") or "").lower()
         if name == "br":
             return "<br>"
+        if name == "sup":
+            inner = self._render_inline_children(node).strip()
+            return f"<sup>{inner}</sup>" if inner else ""
+        if name == "sub":
+            inner = self._render_inline_children(node).strip()
+            return f"<sub>{inner}</sub>" if inner else ""
         if name in {"strong", "b"}:
             inner = self._render_inline_children(node).strip()
             return f"**{inner}**" if inner else ""
@@ -515,11 +560,38 @@ class HtmlToMarkdownConverter:
         text = re.sub(r" *<br> *", "<br>", text)
         return text.strip()
 
+    @staticmethod
+    def _ol_bullet(idx: int, ol_type: str) -> str:
+        """Generate bullet label for ordered list based on type attribute."""
+        if ol_type == "a":
+            return f"{chr(ord('a') + idx - 1)}."
+        if ol_type == "A":
+            return f"{chr(ord('A') + idx - 1)}."
+        if ol_type == "i":
+            # Simple roman numeral for reasonable indices
+            roman_map = [(10, "x"), (9, "ix"), (5, "v"), (4, "iv"), (1, "i")]
+            n = idx
+            parts = []
+            for val, sym in roman_map:
+                while n >= val:
+                    parts.append(sym)
+                    n -= val
+            return f"{''.join(parts)}."
+        if ol_type == "I":
+            return HtmlToMarkdownConverter._ol_bullet(idx, "i").upper()
+        return f"{idx}."
+
     # ---------- 列表 ----------
     def _render_list(self, list_tag: Tag, ordered: bool, indent: int = 0) -> str:
+        ol_type = (list_tag.get("type") or "").strip() if ordered else ""
+        start_idx = int(list_tag.get("start") or 1)
         lines: List[str] = []
-        for idx, li in enumerate(list_tag.find_all("li", recursive=False), start=1):
-            bullet = f"{idx}." if ordered else "-"
+        for li_idx, li in enumerate(list_tag.find_all("li", recursive=False)):
+            idx = start_idx + li_idx
+            if ordered and ol_type:
+                bullet = self._ol_bullet(idx, ol_type)
+            else:
+                bullet = f"{idx}." if ordered else "-"
             prefix = "  " * indent + bullet + " "
             first_text, nested_blocks = self._split_li_content(li, indent=indent)
             lines.append(prefix + first_text if first_text else prefix.rstrip())
@@ -582,8 +654,11 @@ class HtmlToMarkdownConverter:
     # ---------- 代码 ----------
     def _render_pre(self, pre: Tag) -> str:
         code_tag = pre.find("code")
-        code_text = (code_tag.get_text("\n", strip=False) if isinstance(code_tag, Tag) else pre.get_text("\n", strip=False)).rstrip("\n")
-        lang = self._extract_code_language(code_tag if isinstance(code_tag, Tag) else pre)
+        source = code_tag if isinstance(code_tag, Tag) else pre
+        code_text = source.get_text("\n", strip=False).rstrip("\n")
+        # Collapse excessive blank lines introduced by <span> tags inside <pre>
+        code_text = re.sub(r"\n{3,}", "\n\n", code_text)
+        lang = self._extract_code_language(source)
         fence = "```" if "```" not in code_text else "````"
         return f"{fence}{lang}\n{code_text}\n{fence}\n\n"
 
@@ -654,7 +729,17 @@ class HtmlToMarkdownConverter:
         ]
         for row in body:
             lines.append("| " + " | ".join(row) + " |")
-        return "\n".join(lines) + "\n\n"
+
+        result = "\n".join(lines) + "\n\n"
+
+        # Prepend caption if present
+        caption = table.find("caption")
+        if caption:
+            cap_text = caption.get_text(" ", strip=True)
+            if cap_text:
+                result = f"*{cap_text}*\n\n{result}"
+
+        return result
 
     def _render_table_cell(self, cell: Tag) -> str:
         text = self._render_table_cell_content(cell)
@@ -738,6 +823,17 @@ class HtmlToMarkdownConverter:
                 if rendered:
                     parts.append(rendered)
             return "<br>".join(parts) if name in {"p", "div", "section"} else "".join(parts)
+
+        # For <td>/<th> cells, join block-level children with <br>
+        if name in {"td", "th"}:
+            parts: List[str] = []
+            for child in node.children:
+                rendered = self._render_table_cell_content(child)
+                if rendered:
+                    rendered = rendered.strip()
+                    if rendered:
+                        parts.append(rendered)
+            return "<br>".join(parts)
 
         parts = []
         for child in node.children:
@@ -1169,6 +1265,16 @@ def main(hdx_file: str) -> None:
     )
     exporter.export_all()
     print(f"Markdown 输出完成，结果目录: {output_root}")
+
+
+def main_from_extracted(extracted_dir: str, output_dir: str) -> None:
+    """直接从已解压目录运行转换（跳过解压步骤），保持XML目录结构和链接映射。"""
+    exporter = ProductDocMarkdownExporter(
+        extracted_root=extracted_dir,
+        output_root=output_dir,
+    )
+    exporter.export_all()
+    print(f"Markdown 输出完成，结果目录: {output_dir}")
 
 
 def main2(input_dir: str, output_dir: Optional[str] = None) -> None:
