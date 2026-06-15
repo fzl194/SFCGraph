@@ -1,7 +1,0 @@
-feature_code,feature_name,vendor,candidate_reason,relevance_candidate,evidence_id,status
-GWFD-110101,SA-Basic,UDG,"提供三四层解析、协议识别、七层解析，是业务感知识别与执行底座。",high,EVI-UDG-FEAT-73565837,accepted
-GWFD-020301,内容计费基本功能,UDG,"提供 UDG 侧基于业务粒度的差异化计费能力，依赖 SA-Basic。",high,EVI-UDG-FEAT-66863837,accepted
-WSFD-109002,内容计费基本功能,UNC,"提供 SMF 侧业务粒度内容计费逻辑和 PDI/URR 下发上报链。",high,EVI-UNC-FEAT-66402110,accepted
-WSFD-011206,支持融合计费,UNC,"提供 Nchf 在线/离线统一计费框架，内容计费（FBC）属于其分类之一。",high,EVI-UNC-FEAT-67655715,accepted
-GWFD-020351,PCC基本功能,UDG,"提供 UDG/UPF 侧 PCC 策略执行能力，覆盖流量上报、QoS、带宽管理、门控、重定向等动作执行。",high,EVI-UDG-FEAT-47011385,accepted
-WSFD-109101,PCC基本功能,UNC,"提供 SMF 侧 PCC 策略控制能力，覆盖动态 PCC、本地 PCC、策略更新和 PDR 下发。",high,EVI-UNC-FEAT-71770359,accepted

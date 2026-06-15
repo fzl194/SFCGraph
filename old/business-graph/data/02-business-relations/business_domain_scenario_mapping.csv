@@ -1,7 +1,0 @@
-domain_id,scenario_id,relation_type,notes,status
-BD-BA,NS-BA-001,contains,业务感知包含差异化计费场景,accepted
-BD-BA,NS-BA-002,contains,业务感知包含免费业务场景,accepted
-BD-BA,NS-BA-003,contains,业务感知包含默认兜底计费场景,accepted
-BD-BA,NS-BA-004,contains,业务感知包含配额耗尽动作场景,accepted
-BD-BA,NS-BA-005,contains,业务感知包含配额耗尽后重定向场景,accepted
-BD-BA,NS-BA-006,contains,业务感知包含七层重定向场景,accepted

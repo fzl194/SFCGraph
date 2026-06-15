@@ -1,5 +1,0 @@
-command_id,command_name,vendor,object_id,candidate_reason,relevance_candidate,evidence_id,status
-CMD-UNC-ADD-CCT,ADD CCT,UNC,ConfigObject:UNC:CCT,"ADD QUOTAEXHAUSTACT 通过 CCTMPLTNAME 引用融合计费模板，因此第二条主线需要把 CCT 纳入命令集。",high,EVI-UNC-CMD-09653176,promoted
-CMD-UNC-ADD-QUOTAEXHAUSTACT,ADD QUOTAEXHAUSTACT,UNC,ConfigObject:UNC:QuotaExhaustAction,"用于定义在线 RG 配额耗尽后的动作，是第二条主线的核心控制命令。",high,EVI-UNC-CMD-95129686,promoted
-CMD-UDG-ADD-REDIRECT,ADD REDIRECT,UDG,ConfigObject:UDG:Redirect,"用于定义重定向目标 URL，是 UDG 侧重定向动作的核心对象。",high,EVI-UDG-BA-92393307,promoted
-CMD-UDG-ADD-PCCACTIONPROP,ADD PCCACTIONPROP,UDG,ConfigObject:UDG:PccActionProp,"用于定义重定向/阻断等动作属性，是 UDG 侧动作抽象层的核心对象。",high,EVI-UDG-BA-87803995,promoted

@@ -6,6 +6,12 @@
         <span class="detail-type-badge" :style="{ background: typeColor }">{{ typeLabel }}</span>
         <span v-if="productTag" class="detail-product-badge" :class="productTag.toLowerCase()">{{ productTag }}</span>
         <span class="detail-id">{{ displayId }}</span>
+        <a
+          v-if="externalUrl"
+          class="detail-external-link"
+          :href="externalUrl"
+          target="_blank"
+        >在新页面打开 ↗</a>
       </div>
       <h2 class="detail-name">{{ displayName }}</h2>
       <p v-if="obj.summary" class="detail-summary">{{ obj.summary }}</p>
@@ -127,7 +133,7 @@ defineEmits<{
 }>()
 
 const DOWNSTREAM_RELS = ['contains', 'instantiated_as', 'uses_feature', 'uses_task', 'decomposes_to', 'invokes', 'operates_on']
-const CROSS_RELS = ['constrained_by', 'has_decision', 'uses_semantic_object', 'requires_license', 'selects', 'sets_value_pattern']
+const CROSS_RELS = ['constrained_by', 'has_decision', 'uses_semantic_object', 'requires_license', 'selects', 'sets_value_pattern', 'targets']
 
 interface RelGroupData {
   relation: string
@@ -242,6 +248,24 @@ const productTag = computed(() => {
   return ''
 })
 
+// External hyperlink for Feature and MMLCommand
+const externalUrl = computed(() => {
+  if (!props.obj) return ''
+  const t = props.obj.object_type
+  const id = props.obj.object_id
+  if (t === 'Feature') {
+    return `/feature/${id}`
+  }
+  if (t === 'MMLCommand') {
+    const product = id.startsWith('CMD-UDG-') ? 'UDG' : id.startsWith('CMD-UNC-') ? 'UNC' : ''
+    const syntax = props.obj.attributes?.command_syntax || ''
+    if (product && syntax) {
+      return `/command-graph/${product}/${encodeURIComponent(syntax)}`
+    }
+  }
+  return ''
+})
+
 // For MMLCommand, show command_syntax instead of ID
 const displayId = computed(() => {
   if (!props.obj) return ''
@@ -273,6 +297,7 @@ function relLabel(rel: string): string {
     requires_license: '需要License',
     selects: '选择',
     sets_value_pattern: '设置参数模式',
+    targets: '目标对象',
   }
   return labels[rel] || rel
 }
@@ -338,6 +363,17 @@ function relDisplayName(id: string): string {
   font-family: var(--font-mono);
   font-size: var(--text-2xs);
   color: var(--text-tertiary);
+}
+.detail-external-link {
+  margin-left: auto;
+  font-size: var(--text-2xs);
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity var(--duration) var(--ease);
+}
+.detail-external-link:hover {
+  opacity: 0.7;
 }
 .detail-name {
   font-size: var(--text-lg);

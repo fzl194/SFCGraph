@@ -12,6 +12,14 @@
         <span class="cascade-card-id">{{ displayId }}</span>
         <span class="cascade-card-name">{{ displayName }}</span>
         <span v-if="sharedCount > 1" class="cascade-shared-badge" title="被多个上游引用">⟲ 共享</span>
+        <a
+          v-if="externalUrl"
+          class="cascade-external-link"
+          :href="externalUrl"
+          target="_blank"
+          @click.stop
+          title="在新页面打开"
+        >↗</a>
         <button v-if="hasChildren" class="cascade-expand-btn" @click.stop="toggleExpand">
           {{ expanded ? '▾' : '▸' }}
         </button>
@@ -180,6 +188,23 @@ const productTag = computed(() => {
 })
 const productTagClass = computed(() => productTag.value.toLowerCase())
 
+// External hyperlink for Feature and MMLCommand objects
+const externalUrl = computed(() => {
+  const t = props.node.object_type
+  const id = props.node.object_id
+  if (t === 'Feature') {
+    return `/feature/${id}`
+  }
+  if (t === 'MMLCommand') {
+    const product = id.startsWith('CMD-UDG-') ? 'UDG' : id.startsWith('CMD-UNC-') ? 'UNC' : ''
+    const syntax = props.node.attributes?.command_syntax || ''
+    if (product && syntax) {
+      return `/command-graph/${product}/${encodeURIComponent(syntax)}`
+    }
+  }
+  return ''
+})
+
 // For MMLCommand, show command_syntax (e.g., "ADD URR") instead of raw ID
 const displayId = computed(() => {
   if (props.node.object_type === 'MMLCommand') {
@@ -309,6 +334,16 @@ function toggleExpand() {
   background: var(--accent-soft);
   padding: 1px 6px;
   border-radius: 999px;
+}
+.cascade-external-link {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  padding: 0 2px;
+  transition: color var(--duration) var(--ease);
+}
+.cascade-external-link:hover {
+  color: var(--accent);
 }
 .cascade-expand-btn {
   background: none;

@@ -1,7 +1,0 @@
-scenario_id,solution_id,relation_type,notes,status
-NS-BA-001,DS-BA-001,instantiated_as,当前第一条闭包覆盖差异化计费,accepted
-NS-BA-002,DS-BA-001,instantiated_as,当前第一条闭包覆盖免费业务,accepted
-NS-BA-003,DS-BA-001,instantiated_as,当前第一条闭包覆盖默认兜底计费,accepted
-NS-BA-004,DS-BA-002,instantiated_as,第二条闭包覆盖配额耗尽动作,accepted
-NS-BA-005,DS-BA-002,instantiated_as,第二条闭包覆盖配额耗尽后重定向,accepted
-NS-BA-006,DS-BA-002,instantiated_as,第二条闭包覆盖七层重定向动作链,accepted

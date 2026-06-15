@@ -1,6 +1,0 @@
-solution_id,diagnosis_rule_id,relation_type,notes,status
-DS-BA-001,DR-BA-001,diagnosed_by,第一条计费闭包出现规则未命中时的回查路径,accepted
-DS-BA-001,DR-BA-002,diagnosed_by,第一条计费闭包命中但未计费时的回查路径,accepted
-DS-BA-001,DR-BA-004,diagnosed_by,第一条计费闭包 CP/UP 不一致时的回查路径,accepted
-DS-BA-002,DR-BA-003,diagnosed_by,第二条闭包耗尽后未重定向时的回查路径,accepted
-DS-BA-002,DR-BA-004,diagnosed_by,第二条闭包 CP/UP 不一致时的回查路径,accepted

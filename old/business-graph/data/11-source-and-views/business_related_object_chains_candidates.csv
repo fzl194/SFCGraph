@@ -1,3 +1,0 @@
-chain_id,vendor,object_path,candidate_reason,relevance_candidate,evidence_ids,status
-CHAIN-UNC-BA-CAND-003,UNC,"phase1 charging chain + CCT -> QuotaExhaustAction","表达 SMF 侧在第一条计费对象链基础上增加配额耗尽动作层，并通过 CCT 模板承接动作配置。",high,"[""EVI-UNC-TOPIC-90679673"",""EVI-UNC-CMD-95129686"",""EVI-UNC-CMD-09653176""]",promoted_to_CHAIN-UNC-BA-003
-CHAIN-UDG-BA-CAND-004,UDG,"L7Filter -> FlowFilter -> Redirect -> PccActionProp -> PccPolicyGrp -> Rule -> UserProfile -> RuleBinding","表达 UDG 侧七层重定向动作链。",high,"[""EVI-UDG-BA-92393307"",""EVI-UDG-BA-87803995"",""EVI-UDG-CMD-82837606""]",promoted_to_CHAIN-UDG-BA-004

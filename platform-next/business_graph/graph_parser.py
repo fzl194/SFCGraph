@@ -279,10 +279,14 @@ _TYPE_ID_PREFIXES = {
 
 
 def _detect_wide_table_type(heading_text: str) -> Optional[str]:
-    """Detect if a ## heading introduces a wide-table object collection."""
-    for keyword, obj_type in _WIDE_TABLE_TYPES.items():
+    """Detect if a ## heading introduces a wide-table object collection.
+
+    Keys are checked by length descending so longer keywords match first
+    (e.g., 'FeatureRule' before 'Feature', 'CommandRule' before other matches).
+    """
+    for keyword in sorted(_WIDE_TABLE_TYPES, key=len, reverse=True):
         if keyword in heading_text:
-            return obj_type
+            return _WIDE_TABLE_TYPES[keyword]
     return None
 
 
@@ -472,19 +476,75 @@ def parse_inline_edges(md_text: str, owner_layer: str = "") -> list[GraphEdge]:
     return edges
 
 
+# Attribute markers that should be captured as object attributes, not edges
+_INLINE_ATTR_KEYS = {'scopes', 'participants'}
+
+
+def parse_inline_attributes(md_text: str) -> dict[str, dict[str, str]]:
+    """Extract **scopes** and **participants** inline markers as attributes.
+
+    These markers contain descriptive text (not object IDs), so they are
+    captured as string attributes rather than edges.
+
+    Returns {object_id: {'scopes': ..., 'participants': ...}}
+    """
+    result: dict[str, dict[str, str]] = {}
+
+    sections = re.split(r'^(#{3,4}\s+.+)$', md_text, flags=re.MULTILINE)
+
+    current_owner = ""
+    for section in sections:
+        if re.match(r'^#{3,4}\s+', section):
+            m = re.match(
+                r'^#{3,4}\s+(?:\d+\.\d+\s+)?(' + OBJECT_ID_PATTERN + r')',
+                section
+            )
+            if m:
+                current_owner = m.group(1)
+            continue
+
+        if not current_owner:
+            continue
+
+        for m in _INLINE_RELATION_RE.finditer(section):
+            key = m.group(1).strip().lower()
+            if key not in _INLINE_ATTR_KEYS:
+                continue
+            raw_val = m.group(2).strip()
+            # Clean up bullet points and extra whitespace
+            cleaned = re.sub(r'^\s*[-•]\s*', ' · ', raw_val, flags=re.MULTILINE)
+            cleaned = re.sub(r'\n+', ' ', cleaned).strip()
+            if cleaned:
+                result.setdefault(current_owner, {})[key] = cleaned
+
+    return result
+
+
 # Known relation types that appear as header keywords in mapping tables
 _RELATION_KEYWORDS = {
     'uses_feature', 'uses_task', 'decomposes_to', 'invokes',
     'targets', 'selects', 'sets_value_pattern',
     'constrained_by', 'has_decision', 'uses_semantic_object',
     'contains', 'instantiated_as', 'operates_on', 'has_parameter',
-    'precedes', 'sequential',
+    'precedes', 'sequential', 'requires_license', 'governs',
 }
 
 
-def _is_relation_keyword(text: str) -> bool:
-    """Check if text is a known relation keyword."""
-    return text.strip().lower() in _RELATION_KEYWORDS
+def _is_relation_keyword(text: str) -> bool | str:
+    """Check if text contains a known relation keyword.
+
+    Returns the matched keyword if found (truthy), or empty string/None if not.
+    Handles compound headers like 'operates_on → ConfigObject'.
+    """
+    text_lower = text.strip().lower()
+    # Exact match first
+    if text_lower in _RELATION_KEYWORDS:
+        return text_lower
+    # Check if any keyword appears as a substring (for compound headers)
+    for kw in _RELATION_KEYWORDS:
+        if kw in text_lower:
+            return kw
+    return ''
 
 
 # Range pattern: CS-CH-01 ~ CS-CH-07  or  CS-CH-01~CS-CH-07  or  T-001 - T-005
@@ -593,8 +653,9 @@ def parse_edge_table(md_text: str) -> list[GraphEdge]:
         relation_from_header = None
         relation_header_col = -1
         for col_idx, h in enumerate(headers):
-            if _is_relation_keyword(h):
-                relation_from_header = h
+            matched_kw = _is_relation_keyword(h)
+            if matched_kw:
+                relation_from_header = matched_kw
                 relation_header_col = col_idx
                 break
 
@@ -750,11 +811,24 @@ def parse_edge_table(md_text: str) -> list[GraphEdge]:
     return edges
 
 
+# Valid relation names — edges with other relation strings are filtered as parse errors
+_VALID_RELATIONS = {
+    'contains', 'instantiated_as', 'uses_feature', 'uses_task',
+    'decomposes_to', 'invokes', 'operates_on', 'has_parameter',
+    'constrained_by', 'has_decision', 'uses_semantic_object',
+    'requires_license', 'selects', 'sets_value_pattern',
+    'targets', 'precedes', 'sequential', 'governs',
+    'depends_on', 'conflicts_with', 'refined_by',
+}
+
+
 def dedup_edges(edges: list[GraphEdge]) -> list[GraphEdge]:
-    """Remove duplicate edges (same from+relation+to)."""
+    """Remove duplicate edges and filter out non-standard relation names."""
     seen = set()
     result = []
     for e in edges:
+        if e.relation not in _VALID_RELATIONS:
+            continue
         key = (e.from_id, e.relation, e.to_id)
         if key not in seen:
             seen.add(key)
@@ -866,6 +940,180 @@ def parse_invokes_from_mapping(
     return edges
 
 
+# Match Feature IDs in arbitrary text (e.g., "GWFD-020301（内容计费）")
+_FEATURE_ID_RE = re.compile(r'\b((?:GWFD|WSFD)-\d{6})\b')
+
+
+def parse_rule_to_owner_edges(
+    objects: dict,
+    syntax_map: dict[str, str],
+) -> list[GraphEdge]:
+    """Create constrained_by edges from FeatureRule/CommandRule tables to owners.
+
+    FeatureRule tables have a column referencing Feature IDs (e.g., "GWFD-020301（内容计费）").
+    CommandRule tables have a column referencing command syntax (e.g., "ADD URR").
+
+    Creates edges: owner → constrained_by → rule
+    """
+    edges: list[GraphEdge] = []
+
+    for oid, obj in objects.items():
+        otype = getattr(obj, 'object_type', '')
+
+        if otype == 'FeatureRule':
+            # Scan attributes for Feature IDs
+            for key, val in obj.attributes.items():
+                if key in ('rule_id', 'rule_name', 'rule_type', 'severity'):
+                    continue
+                for m in _FEATURE_ID_RE.finditer(val):
+                    feature_id = m.group(1)
+                    if feature_id in objects:
+                        edges.append(GraphEdge(
+                            from_id=feature_id,
+                            relation='constrained_by',
+                            to_id=oid,
+                        ))
+
+        elif otype == 'CommandRule':
+            # Scan attributes for command syntax
+            for key, val in obj.attributes.items():
+                if key in ('rule_id', 'rule_name', 'rule_type', 'severity'):
+                    continue
+                for m in _COMMAND_SYNTAX_RE.finditer(val):
+                    syntax = m.group(0)
+                    cmd_id = syntax_map.get(syntax.upper())
+                    if cmd_id and cmd_id in objects:
+                        edges.append(GraphEdge(
+                            from_id=cmd_id,
+                            relation='constrained_by',
+                            to_id=oid,
+                        ))
+
+    return edges
+
+
+# Match License IDs in text (LKV-prefixed)
+_LICENSE_ID_RE = re.compile(r'\b(LKV[\w]+)\b')
+
+
+def parse_license_edges(objects: dict) -> list[GraphEdge]:
+    """Create requires_license edges from Feature objects to License objects.
+
+    Feature KV-tables have a 'requires_license' field containing LKV- IDs
+    or text like '无需License'. This extracts valid LKV- IDs and creates edges.
+    """
+    edges: list[GraphEdge] = []
+
+    for oid, obj in objects.items():
+        if getattr(obj, 'object_type', '') != 'Feature':
+            continue
+        val = obj.attributes.get('requires_license', '')
+        if not val:
+            continue
+        for m in _LICENSE_ID_RE.finditer(val):
+            license_id = m.group(1)
+            if license_id in objects:
+                edges.append(GraphEdge(
+                    from_id=oid,
+                    relation='requires_license',
+                    to_id=license_id,
+                ))
+
+    return edges
+
+
+def parse_operates_on_edges(
+    command_md: str,
+    objects: dict,
+    syntax_map: dict[str, str],
+) -> list[GraphEdge]:
+    """Parse MMLCommand operates_on ConfigObject edges from command layer MD.
+
+    The table format is:
+        | MMLCommand | operates_on → ConfigObject | 说明 |
+        | ADD URR (CMD-UDG-014) | URR | ... |
+
+    From column has CMD- IDs in parentheses; to column has short ConfigObject names.
+    """
+    edges: list[GraphEdge] = []
+
+    # Build {short_name: full_id} for ConfigObjects (e.g., "URR" → "OBJ-URR")
+    co_name_map: dict[str, str] = {}
+    for oid, obj in objects.items():
+        if getattr(obj, 'object_type', '') == 'ConfigObject':
+            # Strip OBJ- prefix to get short name
+            if oid.startswith('OBJ-'):
+                co_name_map[oid[4:]] = oid
+            co_name_map[oid] = oid  # also map full ID
+
+    lines = command_md.split('\n')
+    in_operates_section = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Detect operates_on section
+        if re.match(r'^##\s+.*operates_on', stripped, re.IGNORECASE) or \
+           'operates_on' in stripped and 'ConfigObject' in stripped and stripped.startswith('##'):
+            in_operates_section = True
+            continue
+        # Exit on next ## section
+        if in_operates_section and re.match(r'^##\s+', stripped):
+            break
+
+        if not in_operates_section or not stripped.startswith('|'):
+            continue
+        # Skip header and separator
+        if '---' in stripped:
+            continue
+        if 'MMLCommand' in stripped and 'operates_on' in stripped:
+            continue
+
+        cells = [c.strip().strip('`').strip() for c in stripped.strip('|').split('|')]
+        if len(cells) < 2:
+            continue
+
+        # From column: extract CMD- ID(s) from text like "ADD URR (CMD-UDG-014)"
+        from_ids = re.findall(r'(CMD-[\w-]+)', cells[0])
+        # Also try syntax resolution
+        if not from_ids:
+            for m in _COMMAND_SYNTAX_RE.finditer(cells[0]):
+                cmd_id = syntax_map.get(m.group(0).upper())
+                if cmd_id:
+                    from_ids.append(cmd_id)
+
+        # To column: resolve short ConfigObject name to full ID
+        to_name = cells[1].strip()
+        to_id = co_name_map.get(to_name, '')
+        # Handle slash-separated names: "URR/URRGROUP"
+        if not to_id and '/' in to_name:
+            for part in to_name.split('/'):
+                part = part.strip()
+                if part in co_name_map:
+                    # Create edge for each part
+                    for fid in from_ids:
+                        if fid in objects:
+                            edges.append(GraphEdge(
+                                from_id=fid,
+                                relation='operates_on',
+                                to_id=co_name_map[part],
+                            ))
+                    continue
+
+        if not from_ids or not to_id:
+            continue
+
+        for fid in from_ids:
+            if fid in objects:
+                edges.append(GraphEdge(
+                    from_id=fid,
+                    relation='operates_on',
+                    to_id=to_id,
+                ))
+
+    return edges
+
+
 def parse_scenario_graph(tlg_dir: Path) -> ScenarioGraph:
     """Parse all 7 layer files into a complete graph.
 
@@ -880,6 +1128,7 @@ def parse_scenario_graph(tlg_dir: Path) -> ScenarioGraph:
         ('feature', '02-feature-graph.md'),
         ('task', '03-task-layer.md'),
         ('command', '04-command-graph.md'),
+        ('evidence', '06-evidence-index.md'),
     ]
 
     all_edges = []
@@ -899,11 +1148,20 @@ def parse_scenario_graph(tlg_dir: Path) -> ScenarioGraph:
             if obj.object_id not in graph.objects:
                 graph.objects[obj.object_id] = obj
 
+        # Extract inline attributes (scopes, participants) and merge into objects
+        inline_attrs = parse_inline_attributes(md)
+        for obj_id, attrs in inline_attrs.items():
+            if obj_id in graph.objects:
+                graph.objects[obj_id].attributes.update(attrs)
+
         # Extract edges
         inline_edges = parse_inline_edges(md)
         table_edges = parse_edge_table(md)
         all_edges.extend(inline_edges)
         all_edges.extend(table_edges)
+
+    # Build syntax map from all parsed MMLCommand objects
+    syntax_map = build_command_syntax_map(graph.objects)
 
     # Cross-layer mapping file (primary edge source)
     mapping_path = tlg_dir / '05-cross-layer-mapping.md'
@@ -912,10 +1170,24 @@ def parse_scenario_graph(tlg_dir: Path) -> ScenarioGraph:
         all_edges.extend(parse_edge_table(md))
 
         # Resolve Task→Command invokes edges (syntax names → CMD-IDs)
-        syntax_map = build_command_syntax_map(graph.objects)
         if syntax_map:
             invokes_edges = parse_invokes_from_mapping(md, syntax_map)
             all_edges.extend(invokes_edges)
+
+    # Build constrained_by edges: Feature→FeatureRule, Command→CommandRule
+    rule_edges = parse_rule_to_owner_edges(graph.objects, syntax_map)
+    all_edges.extend(rule_edges)
+
+    # Build requires_license edges from Feature attributes
+    license_edges = parse_license_edges(graph.objects)
+    all_edges.extend(license_edges)
+
+    # Build operates_on edges from command layer MD
+    command_path = tlg_dir / '04-command-graph.md'
+    if command_path.exists():
+        cmd_md = command_path.read_text(encoding='utf-8')
+        operates_edges = parse_operates_on_edges(cmd_md, graph.objects, syntax_map)
+        all_edges.extend(operates_edges)
 
     graph.edges = dedup_edges(all_edges)
 

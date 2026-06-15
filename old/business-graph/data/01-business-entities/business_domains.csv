@@ -1,2 +1,0 @@
-domain_id,domain_name,domain_summary,core_mechanism,app_scopes,cp_up_split,product_structure,status
-UDG-SA,业务感知,"在用户会话过程中，对用户的数据报文进行解析，从而区分出用户使用的不同业务，以实现策略控制和计费控制","过滤条件->规则->策略；PCF/SMF编排+UPF执行双侧运行链：规则下发->报文解析识别->规则匹配->策略执行->数据转发->使用情况上报","内容计费;带宽控制;安全防护;行为分析","PCF/SMF编排规则与策略（控制面），UPF执行解析、匹配与策略动作（用户面）；控制面与用户面分离，用户面支持分布式部署","5GC控制面(UNC/SMF/PCF)+用户面(UDG/UPF)分工架构；UDG是用户面网元可中心部署也可边缘部署；业务感知/计费/QoS/智能策略控制/分布式网络在同一产品能力版图中组合",accepted

@@ -1,5 +1,0 @@
-solution_id,validation_plan_id,relation_type,notes,status
-DS-BA-001,VP-BA-001,validated_by,验收计费命中和费率链是否符合预期,accepted
-DS-BA-001,VP-BA-002,validated_by,验收默认兜底计费是否生效,accepted
-DS-BA-002,VP-BA-003,validated_by,验收配额耗尽后动作是否符合预期,accepted
-DS-BA-002,VP-BA-004,validated_by,验收七层重定向动作链是否生效,accepted

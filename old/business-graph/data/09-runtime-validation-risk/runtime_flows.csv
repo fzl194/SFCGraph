@@ -1,3 +1,0 @@
-runtime_flow_id,runtime_flow_name,summary,source_evidence_ids,status
-RF-BA-001,计费链运行流程,"SMF/UNC 组织 URR、URRGroup、PCCPolicyGrp、Rule、UserProfile 后，UPF/UDG 按识别条件命中业务流并执行对应计费语义，未命中特殊业务时走缺省 URR 组。","[""EVI-UNC-TOPIC-90679673"",""EVI-UDG-FEAT-66863837"",""EVI-UNC-FEAT-66402110""]",accepted
-RF-BA-002,配额耗尽后规则切换流程,"初始 Rule1/Rule2 生效；流量耗尽后，PCF/SMF 更新策略，停用正常计费规则并启用重定向规则，UPF 对未命中特殊业务的流量执行重定向动作。","[""EVI-UDG-BA-92407896"",""EVI-UNC-FEAT-71770359"",""EVI-UNC-CMD-95129686""]",accepted
