@@ -1,5 +1,26 @@
 const BASE = '/api/v1'
 
+export const commandGraphApi = {
+  stats: `${BASE}/command-graph/stats`,
+  commands: `${BASE}/command-graph/commands`,
+  command: (product: string, commandName: string) =>
+    `${BASE}/command-graph/command?product=${encodeURIComponent(product)}&command_name=${encodeURIComponent(commandName)}`,
+  commandMd: (product: string, commandName: string) =>
+    `${BASE}/command-graph/command-md?product=${encodeURIComponent(product)}&command_name=${encodeURIComponent(commandName)}`,
+}
+
+export const businessGraphApi = {
+  domains: `${BASE}/business-graph/domains`,
+  domain: (name: string) => `${BASE}/business-graph/domains/${encodeURIComponent(name)}`,
+  scenario: (id: string) => `${BASE}/business-graph/scenarios/${encodeURIComponent(id)}`,
+  layers: (id: string) => `${BASE}/business-graph/scenarios/${encodeURIComponent(id)}/layers`,
+  layer: (id: string, layerId: string) =>
+    `${BASE}/business-graph/scenarios/${encodeURIComponent(id)}/layers/${layerId}`,
+  rawMd: (id: string, layerId: string) =>
+    `${BASE}/business-graph/scenarios/${encodeURIComponent(id)}/layers/${layerId}/raw`,
+  graph: (id: string) => `${BASE}/business-graph/scenarios/${encodeURIComponent(id)}/graph`,
+}
+
 export const featureGraphApi = {
   columns: `${BASE}/feature-graph/columns`,
   stats: `${BASE}/feature-graph/stats`,
