@@ -8,6 +8,7 @@
     <div class="cascade-card" :class="{ selected: isSelected }" @click="handleSelect">
       <div class="cascade-card-header">
         <span class="cascade-type-badge" :style="{ background: typeColor }">{{ typeLabel }}</span>
+        <span v-if="productTag" class="cascade-product-badge" :class="productTagClass">{{ productTag }}</span>
         <span class="cascade-card-id">{{ node.object_id }}</span>
         <span class="cascade-card-name">{{ node.name }}</span>
         <span v-if="sharedCount > 1" class="cascade-shared-badge" title="被多个上游引用">⟲ 共享</span>
@@ -163,6 +164,16 @@ const TYPE_COLORS: Record<string, string> = {
 const typeLabel = computed(() => TYPE_LABELS[props.node.object_type] || props.node.object_type)
 const typeColor = computed(() => TYPE_COLORS[props.node.object_type] || '#64748b')
 
+// UDG/UNC product tag for Features (GWFD- = UDG, WSFD- = UNC)
+const productTag = computed(() => {
+  if (props.node.object_type !== 'Feature') return ''
+  const id = props.node.object_id
+  if (id.startsWith('GWFD-')) return 'UDG'
+  if (id.startsWith('WSFD-')) return 'UNC'
+  return ''
+})
+const productTagClass = computed(() => productTag.value.toLowerCase())
+
 function relLabel(rel: string): string {
   const labels: Record<string, string> = {
     uses_feature: '特性',
@@ -245,6 +256,22 @@ function toggleExpand() {
   font-weight: 500;
   letter-spacing: 0.02em;
   white-space: nowrap;
+}
+.cascade-product-badge {
+  font-size: 9px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.cascade-product-badge.udg {
+  color: #1e40af;
+  background: #dbeafe;
+}
+.cascade-product-badge.unc {
+  color: #9d174d;
+  background: #fce7f3;
 }
 .cascade-card-id {
   font-family: var(--font-mono);

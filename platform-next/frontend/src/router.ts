@@ -10,8 +10,19 @@ const router = createRouter({
     },
     {
       path: '/command-graph',
-      component: () => import('./PlaceholderPage.vue'),
-      props: { title: '命令图谱', desc: 'MML 命令关系图谱 — 开发中' },
+      component: () => import('./command_graph/CommandIndex.vue'),
+      children: [
+        {
+          path: '',
+          name: 'command-list',
+          component: () => import('./command_graph/CommandList.vue'),
+        },
+      ],
+    },
+    {
+      path: '/command-graph/:product/:commandName(.*)',
+      name: 'command-detail',
+      component: () => import('./command_graph/CommandDetail.vue'),
     },
     {
       path: '/feature',
@@ -41,8 +52,17 @@ const router = createRouter({
     },
     {
       path: '/business-graph',
-      component: () => import('./PlaceholderPage.vue'),
-      props: { title: '业务图谱', desc: '业务场景图谱 — 开发中' },
+      component: () => import('./business_graph/BusinessGraphIndex.vue'),
+    },
+    {
+      path: '/business-graph/domain/:domainName',
+      name: 'business-domain',
+      component: () => import('./business_graph/BusinessScenario.vue'),
+    },
+    {
+      path: '/business-graph/:scenarioId',
+      name: 'business-scenario',
+      component: () => import('./business_graph/BusinessScenario.vue'),
     },
   ],
 })

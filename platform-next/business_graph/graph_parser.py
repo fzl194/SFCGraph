@@ -762,6 +762,110 @@ def dedup_edges(edges: list[GraphEdge]) -> list[GraphEdge]:
     return result
 
 
+def build_command_syntax_map(objects: dict) -> dict[str, str]:
+    """Build {command_syntax_upper → CMD-ID} from MMLCommand objects."""
+    syntax_map: dict[str, str] = {}
+    for oid, obj in objects.items():
+        if getattr(obj, 'object_type', '') != 'MMLCommand':
+            continue
+        syntax = obj.attributes.get('command_syntax', '').strip().strip('`').strip()
+        if syntax:
+            syntax_map[syntax.upper()] = oid
+    return syntax_map
+
+
+# Match command syntax tokens like "ADD URR", "SET LICENSESWITCH", "LOD SIGNATUREDB"
+_COMMAND_SYNTAX_RE = re.compile(
+    r'\b(SET|ADD|MOD|DEL|RMV|LST|DSP|LOD|SAVE|RESET|ACT|DEACT|SWAP)\s+([A-Z][A-Z0-9_]{1,30})\b'
+)
+
+
+def parse_invokes_from_mapping(
+    mapping_md: str,
+    syntax_map: dict[str, str],
+) -> list[GraphEdge]:
+    """Parse Task→Command (invokes) edges from the cross-layer mapping file.
+
+    The mapping table uses command syntax names (e.g., "ADD URR") instead of
+    CMD- IDs. This function resolves syntax names to CMD- IDs via syntax_map.
+
+    Table format:
+        | ConfigTask | invokes | MMLCommand | 说明 |
+        | T-006 | invokes | ADD URR, ADD URRGROUP | 计费三件套核心 |
+    """
+    edges: list[GraphEdge] = []
+    lines = mapping_md.split('\n')
+
+    # Find the invokes section: ## 4. ConfigTask → MMLCommand
+    in_invokes_section = False
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+
+        # Detect section start
+        if re.match(r'^##\s+.*ConfigTask.*MMLCommand.*invokes', stripped, re.IGNORECASE) or \
+           re.match(r'^##\s+4\.', stripped):
+            in_invokes_section = True
+            continue
+        # Exit on next ## section
+        if in_invokes_section and re.match(r'^##\s+', stripped) and not \
+           re.match(r'^##\s+4\.', stripped):
+            break
+
+        if not in_invokes_section:
+            continue
+        if not stripped.startswith('|'):
+            continue
+        # Skip header and separator rows
+        if '---' in stripped:
+            continue
+        if 'ConfigTask' in stripped and 'MMLCommand' in stripped:
+            continue
+
+        cells = [c.strip().strip('`').strip() for c in stripped.strip('|').split('|')]
+        if len(cells) < 3:
+            continue
+
+        # Column 0: Task ID(s), Column 2: command syntax list
+        from_ids = expand_id_list(cells[0])
+        if not from_ids:
+            continue
+
+        # Find the column with command syntaxes (usually column 2)
+        cmd_col = None
+        for ci in range(1, len(cells)):
+            if _COMMAND_SYNTAX_RE.search(cells[ci]):
+                cmd_col = ci
+                break
+        if cmd_col is None:
+            continue
+
+        # Extract all command syntax tokens from the cell
+        cmd_cell = cells[cmd_col]
+        # Also try plain comma-split for robustness
+        raw_tokens = [t.strip().strip('`').strip() for t in cmd_cell.split(',')]
+        # Plus regex-extracted tokens (catches ones without commas)
+        regex_tokens = [m.group(0) for m in _COMMAND_SYNTAX_RE.finditer(cmd_cell)]
+
+        all_tokens = set()
+        for t in raw_tokens + regex_tokens:
+            t = t.strip().strip('`').strip()
+            if t:
+                all_tokens.add(t)
+
+        for syntax in all_tokens:
+            cmd_id = syntax_map.get(syntax.upper())
+            if not cmd_id:
+                continue
+            for from_id in from_ids:
+                edges.append(GraphEdge(
+                    from_id=from_id,
+                    relation='invokes',
+                    to_id=cmd_id,
+                ))
+
+    return edges
+
+
 def parse_scenario_graph(tlg_dir: Path) -> ScenarioGraph:
     """Parse all 7 layer files into a complete graph.
 
@@ -806,6 +910,12 @@ def parse_scenario_graph(tlg_dir: Path) -> ScenarioGraph:
     if mapping_path.exists():
         md = mapping_path.read_text(encoding='utf-8')
         all_edges.extend(parse_edge_table(md))
+
+        # Resolve Task→Command invokes edges (syntax names → CMD-IDs)
+        syntax_map = build_command_syntax_map(graph.objects)
+        if syntax_map:
+            invokes_edges = parse_invokes_from_mapping(md, syntax_map)
+            all_edges.extend(invokes_edges)
 
     graph.edges = dedup_edges(all_edges)
 

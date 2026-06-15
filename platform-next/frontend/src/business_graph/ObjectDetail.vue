@@ -4,6 +4,7 @@
     <div class="detail-header">
       <div class="detail-type-row">
         <span class="detail-type-badge" :style="{ background: typeColor }">{{ typeLabel }}</span>
+        <span v-if="productTag" class="detail-product-badge" :class="productTag.toLowerCase()">{{ productTag }}</span>
         <span class="detail-id">{{ obj.object_id }}</span>
       </div>
       <h2 class="detail-name">{{ obj.name }}</h2>
@@ -225,6 +226,15 @@ const TYPE_COLORS: Record<string, string> = {
 const typeLabel = computed(() => props.obj ? (TYPE_LABELS[props.obj.object_type] || props.obj.object_type) : '')
 const typeColor = computed(() => props.obj ? (TYPE_COLORS[props.obj.object_type] || '#64748b') : '#64748b')
 
+// UDG/UNC product tag for Features
+const productTag = computed(() => {
+  if (!props.obj || props.obj.object_type !== 'Feature') return ''
+  const id = props.obj.object_id
+  if (id.startsWith('GWFD-')) return 'UDG'
+  if (id.startsWith('WSFD-')) return 'UNC'
+  return ''
+})
+
 function relLabel(rel: string): string {
   const labels: Record<string, string> = {
     contains: '包含场景',
@@ -270,6 +280,21 @@ function cleanValue(val: string): string {
   font-size: 10px;
   padding: 1px 8px;
   border-radius: 999px;
+}
+.detail-product-badge {
+  font-size: 10px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.detail-product-badge.udg {
+  color: #1e40af;
+  background: #dbeafe;
+}
+.detail-product-badge.unc {
+  color: #9d174d;
+  background: #fce7f3;
 }
 .detail-id {
   font-family: var(--font-mono);

@@ -1,11 +1,18 @@
 <template>
-  <div class="explorer-root" v-if="!loading && scenario">
+  <div class="explorer-root" v-if="!loading && ready">
     <div class="explorer-header">
       <button class="back-btn" @click="goBack">← 返回</button>
       <div class="explorer-breadcrumb">
-        <span class="breadcrumb-domain">{{ scenario.domain_name }}</span>
-        <span class="breadcrumb-sep">/</span>
-        <span class="breadcrumb-scenario">{{ scenario.scenario_name }}</span>
+        <template v-if="isDomainMode">
+          <span class="breadcrumb-domain">{{ domainName }}</span>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-scenario">{{ scenarioCount }} 个场景合并视图</span>
+        </template>
+        <template v-else>
+          <span class="breadcrumb-domain">{{ scenario.domain_name }}</span>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-scenario">{{ scenario.scenario_name }}</span>
+        </template>
       </div>
       <div class="explorer-stats" v-if="graphData">
         {{ Object.keys(graphData.objects).length }} 对象 · {{ graphData.edges.length }} 关系
@@ -17,7 +24,7 @@
         <CascadeTree
           :graph="graphData"
           :selected-id="selectedId"
-          :max-depth="4"
+          :max-depth="6"
           @select="handleSelect"
           @navigate="handleNavigate"
         />
@@ -32,7 +39,7 @@
     </div>
   </div>
   <div v-else-if="loading" class="explorer-loading">加载图数据中...</div>
-  <div v-else class="explorer-loading">未找到场景</div>
+  <div v-else class="explorer-loading">未找到数据</div>
 </template>
 
 <script setup lang="ts">
@@ -42,21 +49,105 @@ import { businessGraphApi, fetchJson } from '../api'
 import CascadeTree from './CascadeTree.vue'
 import ObjectDetail from './ObjectDetail.vue'
 
+interface GraphObject {
+  object_id: string
+  object_type: string
+  name: string
+  summary: string
+  layer: string
+  attributes: Record<string, string>
+}
+interface GraphEdge { from: string; relation: string; to: string; meta?: Record<string, string> }
+interface GraphData {
+  objects: Record<string, GraphObject>
+  edges: GraphEdge[]
+  root_id: string
+  error?: string
+}
+
 const route = useRoute()
 const router = useRouter()
-const scenarioId = computed(() => decodeURIComponent(route.params.scenarioId as string))
+
+const isDomainMode = computed(() => route.name === 'business-domain')
+const domainName = computed(() => decodeURIComponent(route.params.domainName as string || ''))
+const scenarioId = computed(() => decodeURIComponent(route.params.scenarioId as string || ''))
 
 const loading = ref(true)
 const scenario = ref<any>(null)
-const graphData = ref<any>(null)
+const graphData = ref<GraphData | null>(null)
 const selectedId = ref('')
+const scenarioCount = ref(0)
+
+const ready = computed(() => isDomainMode.value ? Boolean(graphData.value) : Boolean(scenario.value && graphData.value))
 
 const selectedObject = computed(() => {
   if (!selectedId.value || !graphData.value) return null
   return graphData.value.objects[selectedId.value] || null
 })
 
-async function loadGraph() {
+// --- Graph merging for domain mode ---
+function mergeGraphs(graphs: GraphData[], rootName: string): GraphData {
+  const objects: Record<string, GraphObject> = {}
+  const edges: GraphEdge[] = []
+  const nsIds: string[] = []
+
+  for (const g of graphs) {
+    if (!g || g.error) continue
+    Object.assign(objects, g.objects)
+    edges.push(...g.edges)
+    for (const [id, obj] of Object.entries(g.objects)) {
+      if (obj.object_type === 'NetworkScenario') nsIds.push(id)
+    }
+  }
+
+  // Synthetic virtual BD root containing all NS nodes
+  const rootId = `BD-DOMAIN-${rootName}`
+  objects[rootId] = {
+    object_id: rootId,
+    object_type: 'BusinessDomain',
+    name: rootName,
+    summary: `${nsIds.length} 个子场景`,
+    layer: 'business',
+    attributes: { domain_name: rootName },
+  }
+  for (const nsId of nsIds) {
+    edges.push({ from: rootId, relation: 'contains', to: nsId })
+  }
+  return { objects, edges, root_id: rootId }
+}
+
+async function loadDomain() {
+  loading.value = true
+  try {
+    const domainData = await fetchJson(businessGraphApi.domain(domainName.value))
+    if (domainData.error) {
+      graphData.value = null
+      return
+    }
+    scenarioCount.value = domainData.scenarios?.length || 0
+    scenario.value = {
+      domain_name: domainData.domain_name,
+      scenario_name: `${domainData.scenarios?.length || 0} 个场景合并`,
+    }
+
+    // Fetch all scenario graphs in parallel
+    const scenarioIds: string[] = (domainData.scenarios || []).map((s: any) => s.scenario_id)
+    const graphs = await Promise.all(
+      scenarioIds.map(id => fetchJson(businessGraphApi.graph(id)).catch(() => null))
+    )
+
+    graphData.value = mergeGraphs(graphs.filter(Boolean) as GraphData[], domainData.domain_name)
+    if (graphData.value?.root_id) {
+      selectedId.value = graphData.value.root_id
+    }
+  } catch (e) {
+    console.error('Failed to load domain graph:', e)
+  } finally {
+    loading.value = false
+  }
+}
+
+async function loadScenario() {
   loading.value = true
   try {
     const [scenData, graph] = await Promise.all([
@@ -76,23 +167,20 @@ async function loadGraph() {
   }
 }
 
-function handleSelect(id: string) {
-  selectedId.value = id
+function load() {
+  if (isDomainMode.value) {
+    loadDomain()
+  } else {
+    loadScenario()
+  }
 }
 
-function handleNavigate(id: string) {
-  selectedId.value = id
-}
+function handleSelect(id: string) { selectedId.value = id }
+function handleNavigate(id: string) { selectedId.value = id }
+function goBack() { router.push('/business-graph') }
 
-function goBack() {
-  router.push('/business-graph')
-}
-
-watch(scenarioId, () => {
-  loadGraph()
-})
-
-onMounted(loadGraph)
+watch(() => [route.name, domainName.value, scenarioId.value], () => { load() })
+onMounted(load)
 </script>
 
 <style scoped>
@@ -131,17 +219,9 @@ onMounted(loadGraph)
   flex: 1;
   min-width: 0;
 }
-.breadcrumb-domain {
-  color: var(--text-tertiary);
-}
-.breadcrumb-sep {
-  color: var(--text-tertiary);
-  margin: 0 var(--space-1);
-}
-.breadcrumb-scenario {
-  color: var(--text-primary);
-  font-weight: 600;
-}
+.breadcrumb-domain { color: var(--text-tertiary); }
+.breadcrumb-sep { color: var(--text-tertiary); margin: 0 var(--space-1); }
+.breadcrumb-scenario { color: var(--text-primary); font-weight: 600; }
 .explorer-stats {
   font-size: var(--text-2xs);
   color: var(--text-tertiary);
