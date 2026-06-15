@@ -7,17 +7,26 @@ import { computed } from 'vue'
 import MarkdownIt from 'markdown-it'
 import DOMPurify from 'dompurify'
 
-const FILE_BASE = '/api/v1/feature-graph/file?path='
-const DOC_BASE = '/api/v1/feature-graph/doc-content?path='
+const FEATURE_FILE_BASE = '/api/v1/feature-graph/file?path='
+const FEATURE_DOC_BASE = '/api/v1/feature-graph/doc-content?path='
+const COMMAND_FILE_BASE = '/api/v1/command-graph/file?path='
+const COMMAND_DOC_BASE = '/api/v1/command-graph/doc-content?path='
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   content: string
   filePath: string
-}>()
+  apiBase?: 'feature-graph' | 'command-graph'
+}>(), {
+  apiBase: 'feature-graph',
+})
 
 const emit = defineEmits<{
   (e: 'open-ref', path: string, title: string): void
 }>()
+
+const FILE_BASE = computed(() =>
+  props.apiBase === 'command-graph' ? COMMAND_FILE_BASE : FEATURE_FILE_BASE
+)
 
 const md = new MarkdownIt({ html: true, linkify: true, breaks: true })
 
@@ -58,6 +67,8 @@ function processContent(raw: string, filePath: string): string {
     return offset < 200 ? '' : match
   }).replace(/^\s+/, '')
 
+  const fb = FILE_BASE.value
+
   // 1. Rewrite image references: ![alt](url "title") → img with backend URL
   processed = processed.replace(
     /!\[([^\]]*)\]\(([^)]+)\)/g,
@@ -69,7 +80,7 @@ function processContent(raw: string, filePath: string): string {
       }
       const resolved = resolvePath(baseDir, src)
       const encoded = encodeURIComponent(resolved)
-      return `![${alt}](${FILE_BASE}${encoded})`
+      return `![${alt}](${fb}${encoded})`
     }
   )
 

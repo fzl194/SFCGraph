@@ -87,7 +87,7 @@ const emit = defineEmits<{
   (e: 'navigate', id: string): void
 }>()
 
-const expanded = ref(props.currentDepth <= 2)
+const expanded = ref(props.currentDepth <= 1)
 
 // Tree-driving relations by parent type
 const TREE_RELATIONS: Record<string, string> = {
