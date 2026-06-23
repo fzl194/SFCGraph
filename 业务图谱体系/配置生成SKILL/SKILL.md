@@ -134,29 +134,35 @@ Phase 7: 输出交付
 
 ### 5.0 强制加载（Phase 0 锁定 `{业务域}/{子场景}` 后）
 
+> ⚠ **执行顺序硬约束**：必须**先完成本节全部图谱加载，再进行 §5.1 现网脚本处理**。
+> **禁止先 Grep/Read 现网脚本再加载图谱**——不加载图谱就不知道该解析哪些命令、对象如何归类、方案如何匹配，会导致盲目搜索和错误归类。
+> 顺序：Phase 0 识别子场景 → **§5.0 加载图谱** → §5.1 现网脚本存在性验证 → §5.2 现网解析（Grep）。
+
 ```
 必须读取：
 1. knowledge/{业务域}/{子场景}/three-layer-graph/00-overview.md   — 子场景全景
 2. knowledge/{业务域}/{子场景}/three-layer-graph/01-business-graph.md — 场景/方案/决策点/规则
-3. knowledge/{业务域}/{子场景}/ref-phase/ref-phase1-*.md          — 现网解析参考（如有）
-4. knowledge/common/通用配置规则.md                               — 通用约束
+3. knowledge/{业务域}/{子场景}/three-layer-graph/02-feature-graph.md — 特性依赖/License/特性规则（理解方案能力组成）
+4. knowledge/{业务域}/{子场景}/three-layer-graph/04-command-graph.md — 命令/参数/对象（现网解析+差异分析必需）
+5. knowledge/{业务域}/{子场景}/ref-phase/ref-phase1-*.md          — 现网解析参考（如有）
+6. knowledge/common/通用配置规则.md                               — 通用约束
 
 按需：
-5. knowledge/{业务域}/{子场景}/three-layer-graph/04-command-graph.md
-6. knowledge/{业务域}/{子场景}/three-layer-graph/05-cross-layer-mapping.md
+7. knowledge/{业务域}/{子场景}/three-layer-graph/05-cross-layer-mapping.md — 跨层映射（差异分析）
+8. knowledge/{业务域}/{子场景}/three-layer-graph/03-task-layer.md — 任务编排（任务清单引用时）
 ```
 
 ### 5.1 前置条件检查
 
 - **【GATE-A】现网脚本路径**：未提供 → STOP 要求提供相关网元侧配置导出文件
-- **【GATE-B】脚本存在性**：用 Glob/ls 验证每个文件存在且可读，否则 STOP
+- **【GATE-B】脚本存在性**：用 **Glob 或 Bash `ls`** 验证每个文件存在且可读，**严禁对现网脚本用 Read 工具**（数万至数十万行，Read 会溢出且无意义），否则 STOP
 
 ### 5.2 步骤
 
 1. **场景识别**：匹配业务图谱的 NetworkScenario
 2. **网元与决策点解析**：提取该子场景的 DecisionPoint 答案，缺失必须追问，追问时引用图谱选项含义
-3. **现网配置解析**：按命令类型分批 Grep（**每次只查一个命令类型**，严禁合并），分网元侧提取对象
-   - 命令清单见该子场景 `04-command-graph.md` 的 MMLCommand 表
+3. **现网配置解析**：**必须用 Grep 工具按命令类型分批搜索**（**每次 Grep 只查一个命令类型**，严禁合并多个命令类型；**严禁对现网脚本用 Read 工具**——数万至数十万行，Read 必溢出），分网元侧提取对象
+   - 命令清单见该子场景 `04-command-graph.md` 的 MMLCommand 表（§5.0 已加载，据其确定要 Grep 哪些命令）
 4. **差异分析**：对每个 ConfigObject 判断 复用/修改/新建/删除
 
 > 现网脚本数万至数十万行，严禁全量读取，必须按命令类型分批 Grep（通用配置规则 §7）。
@@ -223,10 +229,10 @@ Phase 7: 输出交付
 | 参数 | 网元1侧 | 网元2侧 | 来源 | 状态 |
 ```
 
-3. **优先级分析**（涉及多 RULE 时，必须独立执行并用户确认）：
-   - Grep 提取现网**所有 RULE 的 PRIORITY**（含非本场景）
-   - 按数值排序，将用户"第N优先"映射到位置
-   - 规则：**数字越小优先级越高**；第N优先数值 > 第(N-1)优先、< 第(N+1)优先
+3. **优先级分析**（如该场景涉及有序规则/对象，必须独立执行并用户确认）：
+   - 是否涉及优先级、以及优先级机制（如业务感知的 RULE.PRIORITY、带宽的 BWMRULEPRI 等）由该场景 `04-command-graph.md` / 域规则定义
+   - 涉及时：Grep 提取现网相关优先级值，排序，将用户"第N优先"映射到位置，**用户确认后才能生成带优先级的命令**
+   - 通用原则：优先级数值的语义（越小越高 / 越大越高）由场景规则明确，禁凭记忆
 
 ### 7.2 输出
 
@@ -259,18 +265,17 @@ Phase 7: 输出交付
 ```
 必须读取：
 1. knowledge/{业务域}/{子场景}/three-layer-graph/04-command-graph.md — MMLCommand+CommandParameter+CommandRule
-2. knowledge/{业务域}/{子场景}/ref-phase/ref-phase5-*.md            — 命令模板/排序规则
-3. knowledge/{业务域}/{子场景}/kb/（按需）                           — 场景特殊配置规则
-4. knowledge/common/通用配置规则.md                                  — 通用时序/一致性约束
-按需：
-5. knowledge/{业务域}/{子场景}/three-layer-graph/03-task-layer.md   — 任务编排依赖
-6. knowledge/{业务域}/{子场景}/three-layer-graph/01-business-graph.md — BusinessRule
+2. knowledge/{业务域}/{子场景}/three-layer-graph/03-task-layer.md   — 任务编排/TaskCommandOrderEdge(排序依据)+TaskRule
+3. knowledge/{业务域}/{子场景}/three-layer-graph/01-business-graph.md — BusinessRule(生成内置约束)
+4. knowledge/{业务域}/{子场景}/ref-phase/ref-phase5-*.md            — 命令模板/排序规则
+5. knowledge/{业务域}/{子场景}/kb/（按需章节）                       — 场景特殊配置规则
+6. knowledge/common/通用配置规则.md                                  — 通用约束
 ```
 
 ### 9.1 步骤
 
 1. **按规划数据表生成命令**：每网元一个 MML 文件，参数值从规划数据表取
-2. **按依赖顺序排列**（通用配置规则 §1.2）：底层 → 中间 → 策略动作 → 策略组合 → 规则 → 容器 → 绑定 → 刷新(最后)
+2. **按依赖顺序排列**：具体顺序由该子场景 `03-task-layer.md` 的 TaskCommandOrderEdge 定义（通用原则：底层对象先于上层、被引用对象先于引用者、绑定/刷新等收尾动作最后；具体链路由场景图谱决定，不由本 SOP 写死）
 3. **内置图谱规则约束**（生成时即遵守）：BusinessRule(`01`) + CommandRule(`04`) + TaskRule(`03`) + 通用配置规则
 4. **场景特有配置规则**：加载 `ref-phase5` 和 `kb` 对应章节（该子场景的专属配置逻辑）
 
@@ -349,8 +354,8 @@ Phase 7: 输出交付
 1. **禁止跳过任何 Phase**：Phase 0-7 严格顺序，禁止跳过 GATE-1/2/3
 2. **GATE 必须 STOP**：Phase 2/4/6.5 展示后立即停止，等用户下一条消息；确认前不得执行下一 Phase
 3. **现网配置为必须**：未验证现网脚本存在前不得进入 Phase 1 业务逻辑
-4. **现网分批 Grep**：每次只查一个命令类型，严禁合并
-5. **严格依赖顺序**：底层→顶层→绑定→刷新(最后)
+4. **现网脚本处理三约束**：① **先图谱后现网**——Phase 1 必须先完成 §5.0 图谱加载才能处理现网脚本，禁止先 Grep/Read 现网再加载图谱；② **严禁 Read**——现网脚本数万至数十万行，必须用 Grep 分批搜索，严禁 Read/全量读取（必溢出），存在性验证只用 Glob/ls；③ **分批 Grep**——每次 Grep 只查一个命令类型，严禁合并
+5. **严格依赖顺序**：按各场景 `03-task-layer.md` 的 TaskCommandOrderEdge 排列命令（底层对象先于上层、被引用对象先于引用者；具体顺序由场景图谱定义）
 6. **追问而非猜测**：缺失决策信息或必填参数必须追问
 7. **动网保守**：现网对象修改必须有用户确认
 8. **知识库优先**：场景 kb 特殊规则 > 图谱约束 > 通用规则
@@ -358,7 +363,7 @@ Phase 7: 输出交付
 10. **跨网元一致**：多网元共用参数必须一致
 11. **图谱为业务准确性保障**：业务事实从图谱/知识库动态加载，禁止凭记忆填写
 12. **强制文件加载**：每 Phase 标注的必须读取文件，业务逻辑前先 Read
-13. **优先级必须用户确认**：提取现网全部 RULE 的 PRIORITY，分析后 STOP 确认；数字越小优先级越高
+13. **优先级必须用户确认**：若场景涉及有序规则（如业务感知 RULE.PRIORITY / 带宽 BWMRULEPRI），提取现网相关优先级值分析后 STOP 确认；优先级数值语义由场景规则定义，禁凭记忆
 14. **业务域/子场景隔离**：跨域/跨场景组合需求，主路由+次要作协同约束；配置分场景输出
 15. **参数枚举禁凭记忆**：必须从 `04-command-graph.md` CommandParameter 获取
 
