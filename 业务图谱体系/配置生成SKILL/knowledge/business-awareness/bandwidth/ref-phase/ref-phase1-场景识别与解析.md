@@ -87,7 +87,7 @@ Pattern: ^(ADD|SET|MOD) +(RULE|USERPROFILE|RULEBINDING|USRPROFGROUP|UPBINDUPG|AP
 第4轮结构化：将提取结果按 ConfigObject 分类存储。
 
 **注意**：
-- 使用 Grep 工具按 pattern 搜索，不全量读取（现网脚本通常数万至数十万行）
+- 用 Bash 工具调 grep 命令按 pattern 搜索（不用 Grep 工具、不用 Read），不全量读取（现网脚本通常数万至数十万行）
 - 提取后告知用户："已从现网脚本中提取 {n} 条带宽控制相关命令（总计 {total} 行）"
 - BWM 独有族（BWMSERVICE/BWMCONTROLLER/BWMUSERGROUP/BWMRULE 等）是带宽场景与计费场景现网区分的关键标志
 

@@ -1,10 +1,10 @@
-# Phase 6 参考文件：配置核查（图谱规则·本地降级）
+# Phase 6 参考文件：配置生成内置约束（图谱规则）
 
-> **定位变更**（配置生成 SKILL）：真实配置核查调 `knowledge/common/AI-MML核查流程.md`（coremaster configcheck 接口，内网执行）。本文档的图谱核查规则（BR-BW / CR-BW / TR-BW）承担两个角色：
+> **定位变更**（配置生成 SKILL）：真实配置核查调 `knowledge/common/AI-MML核查流程.md`（coremaster configcheck 接口，直接调接口）。本文档的图谱核查规则（BR-BW / CR-BW / TR-BW）承担两个角色：
 > 1. **Phase 5 配置生成时的内置约束** — 生成命令时即遵守，避免核查返工
-> 2. **非内网环境的静态核查降级** — 作为 `AI-MML核查流程.md §6` 的规则来源
+> 2. 核查阶段直接调 AI 接口（无静态降级）；本规则仅服务 Phase 5 生成约束
 >
-> 内网部署优先调 AI MML 核查接口；非内网用本规则做静态核查。
+> 核查直接调 AI MML 接口；本规则作 Phase 5 生成内置约束，不做静态降级。
 
 ---
 

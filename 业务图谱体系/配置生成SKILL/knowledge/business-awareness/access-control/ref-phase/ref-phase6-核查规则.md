@@ -1,10 +1,10 @@
-# Phase 6 参考文件：配置核查（图谱规则·本地降级）
+# Phase 6 参考文件：配置生成内置约束（图谱规则）
 
-> **定位变更**（配置生成 SKILL）：真实配置核查调 `knowledge/common/AI-MML核查流程.md`（coremaster configcheck 接口，内网执行）。本文档的图谱核查规则（BR-AC / CR-AC / TR-AC）承担两个角色：
+> **定位变更**（配置生成 SKILL）：真实配置核查调 `knowledge/common/AI-MML核查流程.md`（coremaster configcheck 接口，直接调接口）。本文档的图谱核查规则（BR-AC / CR-AC / TR-AC）承担两个角色：
 > 1. **Phase 5 配置生成时的内置约束** — 生成命令时即遵守，避免核查返工
-> 2. **非内网环境的静态核查降级** — 作为 `AI-MML核查流程.md §6` 的规则来源
+> 2. 核查阶段直接调 AI 接口（无静态降级）；本规则仅服务 Phase 5 生成约束
 >
-> 内网部署优先调 AI MML 核查接口；非内网用本规则做静态核查。
+> 核查直接调 AI MML 接口；本规则作 Phase 5 生成内置约束，不做静态降级。
 
 ---
 
@@ -153,4 +153,4 @@
 - 操作安全检查（§1.3）是图谱未覆盖的生产环境保护，同样不可跳过
 - **双轨道专项核查是本场景特有**：必须逐条核对轨道 A/B 对象是否误配在同一 RULE（CR-AC-02, TR-AC-03），这是访问限制场景最易错点
 - 跨网元一致性检查中，预定义规则三网元一致（CR-AC-09）、位置三处一致、CATEGORYID 三处一致均为 CRITICAL 级别，任一不一致都必须修正
-- 内网环境核查优先调 `knowledge/common/AI-MML核查流程.md` 的 coremaster configcheck 接口（语法 + 语义核查）；非内网环境用本规则做静态模拟核查占位
+- 核查直接调 `knowledge/common/AI-MML核查流程.md` 的 coremaster configcheck 接口（语法 + 语义核查），无降级

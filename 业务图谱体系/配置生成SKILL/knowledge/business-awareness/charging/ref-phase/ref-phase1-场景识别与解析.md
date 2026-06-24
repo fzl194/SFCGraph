@@ -72,7 +72,7 @@ Pattern: ^(ADD|SET|MOD) +(URR|URRGROUP|PCCPOLICYGRP|RULE|RULEBINDING|URRGRPBINDI
 第3轮结构化：将提取结果按 ConfigObject 分类存储。
 
 **注意**：
-- 使用 Grep 工具按 pattern 搜索，不全量读取
+- 用 Bash 工具调 grep 命令按 pattern 搜索（不用 Grep 工具、不用 Read），不全量读取
 - 提取后告知用户："已从现网脚本中提取 {n} 条计费相关命令（总计 {total} 行）"
 
 ### Step 4: 差异分析

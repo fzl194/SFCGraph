@@ -115,7 +115,7 @@ Pattern: ^(ADD|SET|MOD) +(USRLOCATION|USRLOCATIONGRP)
 - 同一现网可能双轨并存（CR-AC-14），需分别归类
 
 **注意**：
-- 使用 Grep 工具按 pattern 搜索，不全量读取
+- 用 Bash 工具调 grep 命令按 pattern 搜索（不用 Grep 工具、不用 Read），不全量读取
 - 提取后告知用户："已从现网脚本中提取 {n} 条访问限制相关命令（总计 {total} 行），其中轨道 A {a} 条、轨道 B {b} 条、UNC 侧 {u} 条"
 
 ### Step 4: 差异分析

@@ -1,7 +1,8 @@
 # AI MML 核查流程
 
 > Phase 6 配置核查的标准流程：调用 coremaster configcheck 接口做语法 + 语义核查，解析结果并修正脚本。
-> ★**依赖内网环境**：Token、reference 算子表、核查 API 均在内网。本地/非内网环境用各场景图谱规则（CommandRule/TaskRule/BusinessRule）做静态模拟核查占位（见 §5），内网部署时真调接口。
+> 核查直接调 coremaster configcheck 接口（语法+语义核查），解析结果并修正脚本。无静态降级，统一走接口。
+> Token、reference 算子表、核查 API 由部署环境提供。
 > 来源：config-generation SKILL 流程固化。
 
 ---
@@ -97,23 +98,7 @@ curl -k -X POST "https://netlive.gts.huawei.com/apiaccess/coremaster/CMAIConfigC
 
 ---
 
-## 6. 本地（非内网）降级处理
-
-无内网环境时，Phase 6 用各场景图谱规则做**静态模拟核查**：
-
-| 核查维度 | 规则来源 | 文件 |
-|---|---|---|
-| 业务约束 | BusinessRule（决策点一致性、策略链独立、兜底规则） | `{子场景}/three-layer-graph/01-business-graph.md` |
-| 命令约束 | CommandRule（REFRESHSRV位置、参数枚举合法、跨网元名称一致、对象引用完整） | `{子场景}/three-layer-graph/04-command-graph.md` |
-| 任务约束 | TaskRule（依赖顺序、复用边界、校验条件） | `{子场景}/three-layer-graph/03-task-layer.md` |
-| 操作安全 | 同名冲突 / 参数覆写 / 共享对象影响 / 删除安全 | 本规则（通用） |
-
-输出"静态核查报告"（通过/违反项 + 规则ID），并提示：
-> ⚠ 本次为本地静态核查（基于图谱规则）。**内网部署后建议调 AI MML 核查接口做真实环境语法+语义核查**（见 §2-§5）。
-
----
-
-## 7. reference 资源清单（内网）
+## 6. reference 资源清单
 
 | 文件 | 用途 |
 |---|---|
@@ -122,4 +107,4 @@ curl -k -X POST "https://netlive.gts.huawei.com/apiaccess/coremaster/CMAIConfigC
 | `reference/B_AI_CONFIG_CHECK_ITEM_T_UNIVERSAL_SEMANTICS.md` | 通用语义算子 CHECK_ID |
 | `App.groovy` | 通用语义算子 assetId |
 
-> 这些 reference 在内网，本 SKILL 不内置。部署到内网时挂载到 SKILL 的 `reference/` 路径即可。
+> 这些 reference 由部署环境提供，本 SKILL 不内置。部署时挂载到 SKILL 的 `reference/` 路径即可。

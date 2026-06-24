@@ -226,7 +226,7 @@
 
 ### 步骤
 
-1. 从现网配置中提取**所有 RULE 的 PRIORITY 值**（不只是访问限制 RULE，要提取全部 RULE，含计费/带宽 RULE），用 Grep 工具搜索 `PRIORITY` 参数
+1. 从现网配置中提取**所有 RULE 的 PRIORITY 值**（不只是访问限制 RULE，要提取全部 RULE，含计费/带宽 RULE），用 Bash grep 搜索 `PRIORITY` 参数
 2. 分析现网优先级分布规律（现网数据是最权威判断依据）
 3. 根据用户描述的业务优先级关系，计算新规则 PRIORITY（间距取 10 的倍数）
 4. 输出分析表（包含现网所有 RULE 的优先级 + 新 RULE 的拟插入位置）
