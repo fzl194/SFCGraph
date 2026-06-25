@@ -39,9 +39,7 @@ Phase 5 生成配置脚本后，**必须询问用户是否调用 AI MML 核查**
 ## 3. 阶段二：Token 获取
 
 ```bash
-curl -k -X POST "https://w3cloud.huawei.com/ApiCommonQuery/appToken/getRestAppDynamicToken" \
-  -H "Content-Type: application/json" \
-  -d "{\"appId\": \"com.huawei.nis.coremaster.name\", \"credential\": \"$(echo -n '<credential>' | base64 -w0)\"}"
+curl -k -X POST "https://w3cloud.huawei.com/ApiCommonQuery/appToken/getRestAppDynamicToken" -H "Content-Type: application/json" -d "{\"appId\": \"com.huawei.nis.coremaster.name\", \"credential\": \"$(echo -n 'PhHbgUsk05f2YHWih8XI3Y7OiKG90z6KUe2LTUEo3UABi75F5A5Ls3O3WjlMZDScA3rDnmML9w3_ipsFRl2WGg' | base64 -w0)\"}"
 ```
 - 返回 `result` 值作为 `${TOKEN}`，格式为 `Basic xxx`
 
