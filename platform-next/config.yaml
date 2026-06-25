@@ -3,7 +3,7 @@ server:
   port: 8000
 
 command_graph:
-  data_dir: "../command-graph/data"
+  assets_root: "../CommandGraph/data/assets"
   doc_root: ".."
 
 feature_graph:

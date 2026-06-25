@@ -1,22 +1,12 @@
 <template>
-  <!-- Filter bar -->
+  <!-- 筛选条：版本范围已由路由固定，只保留版本内搜索 -->
   <div class="filter-bar">
-    <el-select
-      v-model="filters.product"
-      placeholder="产品"
-      clearable
-      size="small"
-      style="width: 120px"
-      @change="onFilterChange"
-    >
-      <el-option v-for="p in products" :key="p" :label="p" :value="p" />
-    </el-select>
     <el-input
       v-model="filters.search"
       placeholder="搜索命令名 / 中文名 / 功能..."
       clearable
       size="small"
-      style="width: 260px"
+      style="width: 280px"
       @input="debouncedSearch"
     />
     <span class="filter-count">{{ total }} 条命令</span>
@@ -42,9 +32,14 @@
           <span class="feature-name-cell">{{ row.command_name_zh }}</span>
         </template>
       </el-table-column>
-      <el-table-column prop="product" label="产品" width="90" sortable>
+      <el-table-column prop="nf" label="网元" width="90" sortable>
         <template #default="{ row }">
-          <el-tag size="small" effect="plain">{{ row.product }}</el-tag>
+          <el-tag size="small" effect="plain">{{ row.nf }}</el-tag>
+        </template>
+      </el-table-column>
+      <el-table-column prop="version" label="版本" width="100" sortable>
+        <template #default="{ row }">
+          <span style="font-size: var(--text-xs); color: var(--text-secondary)">{{ row.version || '-' }}</span>
         </template>
       </el-table-column>
       <el-table-column label="分类路径" min-width="200">
@@ -77,34 +72,28 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, onMounted, computed, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { commandGraphApi, fetchJson } from '../api'
 
+const route = useRoute()
 const router = useRouter()
 const loading = ref(false)
 const commands = ref<any[]>([])
-const stats = ref<any>({})
 const total = ref(0)
 const page = ref(1)
 const size = ref(50)
 
-const filters = ref({ product: '', search: '' })
+const filters = ref({ search: '' })
 
-const products = computed(() => {
-  const bp = stats.value.by_product || {}
-  return Object.entries(bp).sort(([, a], [, b]) => (b as number) - (a as number)).map(([k]) => k)
-})
+// 范围由路由固定：nf + version
+const nf = computed(() => route.params.nf as string)
+const version = computed(() => route.params.version as string)
 
 let searchTimer: any = null
 function debouncedSearch() {
   clearTimeout(searchTimer)
   searchTimer = setTimeout(() => { page.value = 1; loadCommands() }, 300)
-}
-
-function onFilterChange() {
-  page.value = 1
-  loadCommands()
 }
 
 function onSizeChange() {
@@ -117,34 +106,27 @@ function truncate(s: string, n: number) {
   return s.length > n ? s.slice(0, n) + '...' : s
 }
 
-function formatCategoryPath(raw: string) {
+function formatCategoryPath(raw: any) {
+  if (Array.isArray(raw)) return raw.join(' > ') || '-'
   if (!raw) return '-'
-  try {
-    const arr = JSON.parse(raw)
-    return Array.isArray(arr) ? arr.join(' > ') : raw
-  } catch {
-    return raw
-  }
+  return String(raw)
 }
 
 function onRowClick(row: any) {
   router.push({
     name: 'command-detail',
-    params: { product: row.product, commandName: row.command_name },
+    params: { nf: nf.value, version: version.value, commandName: row.command_name },
   })
-}
-
-async function loadStats() {
-  stats.value = await fetchJson(commandGraphApi.stats)
 }
 
 async function loadCommands() {
   loading.value = true
   try {
     const params = new URLSearchParams()
+    params.set('nf', nf.value)
+    params.set('version', version.value)
     params.set('page', String(page.value))
     params.set('size', String(size.value))
-    if (filters.value.product) params.set('product', filters.value.product)
     if (filters.value.search) params.set('search', filters.value.search)
     const data = await fetchJson(`${commandGraphApi.commands}?${params}`)
     commands.value = data.items || []
@@ -154,10 +136,14 @@ async function loadCommands() {
   }
 }
 
-onMounted(async () => {
-  await loadStats()
-  await loadCommands()
+// 路由参数变化时（切到别的 nf/version）重置并重载
+watch([nf, version], () => {
+  page.value = 1
+  filters.value.search = ''
+  loadCommands()
 })
+
+onMounted(loadCommands)
 </script>
 
 <style scoped>

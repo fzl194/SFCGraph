@@ -3,10 +3,26 @@ const BASE = '/api/v1'
 export const commandGraphApi = {
   stats: `${BASE}/command-graph/stats`,
   commands: `${BASE}/command-graph/commands`,
-  command: (product: string, commandName: string) =>
-    `${BASE}/command-graph/command?product=${encodeURIComponent(product)}&command_name=${encodeURIComponent(commandName)}`,
-  commandMd: (product: string, commandName: string) =>
-    `${BASE}/command-graph/command-md?product=${encodeURIComponent(product)}&command_name=${encodeURIComponent(commandName)}`,
+  command: (nf: string, commandName: string, version?: string) => {
+    const p = new URLSearchParams({ nf, command_name: commandName })
+    if (version) p.set('version', version)
+    return `${BASE}/command-graph/command?${p}`
+  },
+  commandMd: (nf: string, commandName: string, version?: string) => {
+    const p = new URLSearchParams({ nf, command_name: commandName })
+    if (version) p.set('version', version)
+    return `${BASE}/command-graph/command-md?${p}`
+  },
+  commandParameters: (nf: string, commandName: string, version?: string) => {
+    const p = new URLSearchParams({ nf, command_name: commandName })
+    if (version) p.set('version', version)
+    return `${BASE}/command-graph/command-parameters?${p}`
+  },
+  commandGraph: (nf: string, commandName: string, version?: string) => {
+    const p = new URLSearchParams({ nf, command_name: commandName })
+    if (version) p.set('version', version)
+    return `${BASE}/command-graph/command-graph?${p}`
+  },
 }
 
 export const businessGraphApi = {

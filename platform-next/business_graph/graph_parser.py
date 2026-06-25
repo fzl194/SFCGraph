@@ -20,10 +20,10 @@ from typing import Optional
 #           GWFD-010171, WSFD-011201, T-001, CMD-UDG-001, EV-KB-001, LKV3G5SABS01
 OBJECT_ID_PATTERN = (
     r'(?:'
-    r'(?:BD|NS|CS|DP|BR|SO|EV|CMD)-[\w-]+'  # Prefix with hyphen: BD-CH-01, CMD-UDG-001
+    r'(?:BD|NS|CS|DP|BR|SO|EV|CMD|FR|TR|CR|OBJ)-[\w-]+'  # 前缀+连字符: BD-CH-01, CMD-UDG-001, FR-AC-01, OBJ-AC-HEADEN
     r'|GWFD-\d+'                            # GWFD-010171
     r'|WSFD-\d+'                            # WSFD-011201
-    r'|T-\d+'                               # T-001, T-101
+    r'|T-[\w-]+'                            # T-001, T-101, T-AC-101（访问限制独有task）
     r'|LKV[\w]+'                            # LKV3G5SABS01
     r')'
 )
@@ -115,7 +115,7 @@ def _detect_object_type(obj_id: str, layer: str) -> str:
         return 'SemanticObject'
     if obj_id.startswith('GWFD-') or obj_id.startswith('WSFD-'):
         return 'Feature'
-    if re.match(r'^T-\d+', obj_id):
+    if re.match(r'^T-', obj_id):
         return 'ConfigTask'
     if obj_id.startswith('CMD-'):
         return 'MMLCommand'
@@ -182,7 +182,7 @@ def parse_kv_objects(md_text: str, layer: str) -> list[GraphObject]:
 
         # Try ID-in-heading pattern first
         id_match = re.match(
-            r'^(?:\d+\.\d+\s+)?((?:BD|NS|CS|DP|BR|SO|EV|CMD|LKV)[-\w]*|GWFD-\d+|WSFD-\d+|T-\d+)\s+(.+)$',
+            r'^(?:\d+\.\d+\s+)?((?:BD|NS|CS|DP|BR|SO|EV|CMD|FR|TR|CR|OBJ|LKV)[-\w]*|GWFD-\d+|WSFD-\d+|T-[\w-]+)\s+(.+)$',
             heading_text
         )
 
@@ -837,14 +837,19 @@ def dedup_edges(edges: list[GraphEdge]) -> list[GraphEdge]:
 
 
 def build_command_syntax_map(objects: dict) -> dict[str, str]:
-    """Build {command_syntax_upper → CMD-ID} from MMLCommand objects."""
+    """Build {command_syntax_upper → CMD-ID} from MMLCommand objects.
+
+    兼容两种字段名：计费/带宽场景用 command_syntax，访问限制场景用 command_name。
+    """
     syntax_map: dict[str, str] = {}
     for oid, obj in objects.items():
         if getattr(obj, 'object_type', '') != 'MMLCommand':
             continue
-        syntax = obj.attributes.get('command_syntax', '').strip().strip('`').strip()
-        if syntax:
-            syntax_map[syntax.upper()] = oid
+        for key in ('command_syntax', 'command_name'):
+            syntax = obj.attributes.get(key, '').strip().strip('`').strip()
+            if syntax:
+                syntax_map[syntax.upper()] = oid
+                break
     return syntax_map
 
 
@@ -1041,10 +1046,21 @@ def parse_operates_on_edges(
     co_name_map: dict[str, str] = {}
     for oid, obj in objects.items():
         if getattr(obj, 'object_type', '') == 'ConfigObject':
-            # Strip OBJ- prefix to get short name
+            co_name_map[oid] = oid  # 全名 OBJ-AC-CFTEMPLATE
             if oid.startswith('OBJ-'):
-                co_name_map[oid[4:]] = oid
-            co_name_map[oid] = oid  # also map full ID
+                remainder = oid[4:]  # AC-CFTEMPLATE
+                co_name_map[remainder] = oid
+                # 取最后一段（对象关键字，如 CFTEMPLATE），兼容04表to列写法
+                parts = oid.split('-')
+                if len(parts) > 2:
+                    last = parts[-1]
+                    if last not in co_name_map:
+                        co_name_map[last] = oid
+            # object_name/object_keyword 字段映射
+            for k in ('object_name', 'object_keyword'):
+                v = obj.attributes.get(k, '').strip().strip('`').strip()
+                if v and v not in co_name_map:
+                    co_name_map[v] = oid
 
     lines = command_md.split('\n')
     in_operates_section = False
@@ -1159,6 +1175,16 @@ def parse_scenario_graph(tlg_dir: Path) -> ScenarioGraph:
         table_edges = parse_edge_table(md)
         all_edges.extend(inline_edges)
         all_edges.extend(table_edges)
+
+    # 规范化 MMLCommand：统一 command_syntax 字段
+    # 计费/带宽用 command_syntax，访问限制用 command_name；前端 displayId 和 syntax_map 都查 command_syntax，
+    # 故此处把 command_name 补到 command_syntax，避免前端 fallback 显示 CMD-xxx 编号
+    for oid, obj in graph.objects.items():
+        if getattr(obj, 'object_type', '') == 'MMLCommand':
+            if not obj.attributes.get('command_syntax'):
+                cname = obj.attributes.get('command_name', '').strip().strip('`').strip()
+                if cname:
+                    obj.attributes['command_syntax'] = cname
 
     # Build syntax map from all parsed MMLCommand objects
     syntax_map = build_command_syntax_map(graph.objects)

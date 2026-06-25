@@ -14,13 +14,23 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'command-overview',
+          component: () => import('./command_graph/CommandOverview.vue'),
+        },
+        {
+          path: ':nf',
+          name: 'command-versions',
+          component: () => import('./command_graph/CommandVersions.vue'),
+        },
+        {
+          path: ':nf/:version',
           name: 'command-list',
           component: () => import('./command_graph/CommandList.vue'),
         },
       ],
     },
     {
-      path: '/command-graph/:product/:commandName(.*)',
+      path: '/command-graph/:nf/:version/:commandName(.*)',
       name: 'command-detail',
       component: () => import('./command_graph/CommandDetail.vue'),
     },

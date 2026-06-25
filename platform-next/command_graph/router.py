@@ -14,35 +14,59 @@ def get_stats():
 
 @router.get("/commands")
 def list_commands(
-    product: str | None = Query(None),
+    nf: str | None = Query(None),
+    version: str | None = Query(None),
     search: str | None = Query(None),
     page: int = Query(1, ge=1),
     size: int = Query(50, ge=1, le=200),
 ):
     svc = get_service()
-    return svc.list_commands(product=product, search=search, page=page, size=size)
+    return svc.list_commands(nf=nf, version=version, search=search, page=page, size=size)
 
 
 @router.get("/command")
 def get_command(
-    product: str = Query(...),
+    nf: str = Query(...),
     command_name: str = Query(...),
+    version: str | None = Query(None),
 ):
     svc = get_service()
-    cmd = svc.get_command(product, command_name)
+    cmd = svc.get_command(nf, command_name, version)
     if not cmd:
-        return {"error": "Command not found", "product": product, "command_name": command_name}
+        return {"error": "Command not found", "nf": nf, "command_name": command_name}
     return cmd
 
 
 @router.get("/command-md")
 def get_command_md(
-    product: str = Query(...),
+    nf: str = Query(...),
     command_name: str = Query(...),
+    version: str | None = Query(None),
 ):
     svc = get_service()
-    content = svc.get_command_md(product, command_name)
-    return {"content": content, "product": product, "command_name": command_name}
+    content = svc.get_command_md(nf, command_name, version)
+    return {"content": content, "nf": nf, "command_name": command_name}
+
+
+@router.get("/command-parameters")
+def get_command_parameters(
+    nf: str = Query(...),
+    command_name: str = Query(...),
+    version: str | None = Query(None),
+):
+    svc = get_service()
+    parameters = svc.get_command_parameters(nf, command_name, version)
+    return {"parameters": parameters}
+
+
+@router.get("/command-graph")
+def get_command_graph(
+    nf: str = Query(...),
+    command_name: str = Query(...),
+    version: str | None = Query(None),
+):
+    svc = get_service()
+    return svc.get_command_graph(nf, command_name, version)
 
 
 @router.get("/doc-content")

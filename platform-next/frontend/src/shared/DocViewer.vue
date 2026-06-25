@@ -16,8 +16,10 @@ const props = withDefaults(defineProps<{
   content: string
   filePath: string
   apiBase?: 'feature-graph' | 'command-graph'
+  showTitle?: boolean
 }>(), {
   apiBase: 'feature-graph',
+  showTitle: false,
 })
 
 const emit = defineEmits<{
@@ -60,12 +62,14 @@ function stripTitle(url: string): string {
 function processContent(raw: string, filePath: string): string {
   const baseDir = getBaseDir(filePath)
 
-  // 0. Strip leading H1 — the sidebar already shows the doc title,
-  //    and the MD file almost always repeats it as "# GWFD-xxxx 特性名称"
-  let processed = raw.replace(/^#\s+.+$/m, (match, offset) => {
-    // Only strip if it's in the first 3 lines (actual title, not a section heading)
-    return offset < 200 ? '' : match
-  }).replace(/^\s+/, '')
+  // 0. Strip leading H1 unless showTitle（命令图谱双栏布局需要显示 md 标题）
+  let processed = raw
+  if (!props.showTitle) {
+    processed = raw.replace(/^#\s+.+$/m, (match, offset) => {
+      // Only strip if it's in the first 3 lines (actual title, not a section heading)
+      return offset < 200 ? '' : match
+    }).replace(/^\s+/, '')
+  }
 
   const fb = FILE_BASE.value
 
