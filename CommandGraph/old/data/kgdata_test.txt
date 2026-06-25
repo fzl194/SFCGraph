@@ -1,0 +1,33 @@
+=== 命令名称 ===
+增加URR
+
+=== 使用实例 ===
+假如运营商需要增加一个使用量上报规则信息用于在线计费，设置在线计费方式为免费：  ADD URR: URRNAME="onlineURR", URRID=1000, USAGERPTMODE=ONLINE, ONLMETERINGTYPE=FREE;
+
+=== 注意事项 ===
+该命令执行后立即生效。 
+  该命令最大记录数为65000。当配置记录数大于规格的90%时，会上报“ALM-135602215 配置数量超阈值”告警。当配置记录数小于等于配置规格90%时，恢复“ALM-135602215 配置数量超阈值”告警。阈值可以通过MOD CFGTHRESHOLD命令修改。 
+  该命令支持配置在线计费URR、离线计费URR以及监控属性的URR。 
+  该命令中的URRID字段要求在所有URR内唯一，建议从1000开始分配。 
+  开启事件计费时, 对性能会产生一定影响。
+
+=== _synonyms ===
+CONCEPT_0182837629##URR##增加URR（ADD URR）##ADD URR##增加URR
+
+=== _topic_path ===
+pid_bookmap_0000002033080122##MML/Document/add_urr.html
+
+=== 操作用户权限 ===
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+=== self_name ===
+ADD URR（增加URR）
+
+=== _topic_id ===
+CONCEPT_0182837629
+
+=== 命令码 ===
+ADD URR
+
+=== 命令功能 ===
+适用NF：PGW-U、UPF   该命令用于增加使用量上报规则信息，通过该命令可以针对不同应用类型的数据采取不同的上报规则。

@@ -1,0 +1,108 @@
+﻿1、参数表,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+命令,参数ID,参数标识,参数类型,可必选,条件,枚举,位域,默认值,最大值,最小值,区间,最大长度,最小长度,长度,关联命令,关联参数,是否区分大小写,字符串格式,取值范围,正则id,说明,网元类型,网元版本,参数名称,比较关系,禁输值,条件区间,继承关系
+SET SAAITRAINPARA,1,AITRAINTHRES,整数,可选,,,,,10000,5000,,,,,,,否,,,,"可选必选说明：可选参数
+参数含义：该参数用于配置intelligence训练任务中有效学习记录的流量阈值。
+数据来源：本端规划
+取值范围：整数类型，取值范围5000~10000，单位是万分比。
+默认值：无
+配置原则：无",UDG,20.13.2,Intelligence训练阈值,,,,新增
+SET SAAITRAINPARA,3,AITRAINPERIOD,整数,可选,,,,,180,10,,,,,,,否,,,,"可选必选说明：可选参数
+参数含义：该参数用于配置intelligence训练任务的周期。
+数据来源：本端规划
+取值范围：整数类型，取值范围10~180，单位是分钟。
+默认值：无
+配置原则：该参数修改后会影响SA性能优化库生效时长。生效时长=intelligence训练周期 *SA性能优化库有效时间。参数值改小后，SA性能优化库可能从生效状态变为失效状态；参数值改大后，SA性能优化库可能从失效状态变为生效状态。",UDG,20.13.2,Intelligence训练周期（分钟）,,,,新增
+SET SAAITRAINPARA,4,AITRAINSAMPLE,整数,可选,,,,,10000,0,,,,,,,否,,,,"可选必选说明：可选参数
+参数含义：该参数用于配置intelligence训练任务订阅流量的抽样率。
+数据来源：本端规划
+取值范围：整数类型，取值范围0~10000，单位是万分比。
+默认值：无
+配置原则：该值如果配置过大会降低intelligence能耗优化流量比例，影响优化效果；如果配置过小，可能导致训练结果不准确。建议配置为100～500。",UDG,20.13.2,Intelligence训练抽样率,,,,新增
+SET SAAITRAINPARA,5,AIDBVALIDTIME,整数,可选,,,,,65535,2,,,,,,,否,,,,"可选必选说明：可选参数
+参数含义：该参数用于配置训练生成的SA性能优化库有效时间相对于训练周期的倍数。
+数据来源：本端规划
+取值范围：数值类型，输入长度范围为2～65535。
+默认值：无
+配置原则：该参数修改后会影响SA性能优化库生效时长。生效时长=intelligence训练周期 * SA性能优化库有效时间。参数值改小后，SA性能优化库可能从生效状态变为失效状态；参数值改大后，SA性能优化库可能从失效状态变为生效状态。",UDG,20.13.2,SA性能优化库有效时间,,,,新增
+SET SAAITRAINPARA,2,AITRAINSWITCH,枚举,可选,,"[""DISABLE"", ""ENABLE""]",,,,,,,,,,,否,,,,"可选必选说明：可选参数
+参数含义：该参数用于配置intelligence训练功能开关。
+数据来源：本端规划
+取值范围：枚举类型。
+DISABLE：Intelligence训练功能关闭。ENABLE：Intelligence训练功能开启。
+默认值：无
+配置原则：使能intelligence能耗优化功能，需要打开AI训练功能开关。",UDG,20.13.2,Intelligence训练开关,,,,新增
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2、MOD 规则,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MOD 命令,ADD 命令,索引参数,共有参数,MOD 独立存在,MOD 参数,ADD 参数,预留其他参数关联条件,特殊关联条件(使用独有的groovy脚本实现的核查),网元类型,网元版本,错误信息英文,错误信息中文,继承,,,,,,,,,,,,,,,
+MOD ABNTRAFFICDT,ADD ABNTRAFFICDT,APN,"APN,SWITCH,TRAFFICBEHAVIORSWITCH",2,,,,,UDG,20.13.2,The ADD ABNTRAFFICDT command modified by MOD ABNTRAFFICDT does not exist.,MOD ABNTRAFFICDT修改的ADD ABNTRAFFICDT不存在,,,,,,,,,,,,,,,,
+MOD ABSTIMERANGE,ADD ABSTIMERANGE,"TIMERANGENAME,ABSTIMERANGESEQ","STARTTIME,STARTDATE,ENDTIME,ENDDATE,TIMERANGENAME,CFGDOMAINNAME,ABSTIMERANGESEQ",2,,,,,UDG,20.13.2,The ADD ABSTIMERANGE command modified by MOD ABSTIMERANGE does not exist.,MOD ABSTIMERANGE修改的ADD ABSTIMERANGE不存在,,,,,,,,,,,,,,,,
+MOD ACL,ADD ACL,ACLNAME,"ACLNAME,CFGDOMAINNAME,MATCHORDER",2,,,,,UDG,20.13.2,The ADD ACL command modified by MOD ACL does not exist.,MOD ACL修改的ADD ACL不存在,,,,,,,,,,,,,,,,
+MOD ACLBINDAPN,ADD ACLBINDAPN,"APN,DIRECTION","APN,ACLNAME,TIMERANGENAME,DIRECTION",2,,,,,UDG,20.13.2,The ADD ACLBINDAPN command modified by MOD ACLBINDAPN does not exist.,MOD ACLBINDAPN修改的ADD ACLBINDAPN不存在,,,,,,,,,,,,,,,,
+MOD ACLDEFAULT,ADD ACLDEFAULT,DIRECTION,"ACLNAME,DIRECTION",2,,,,,UDG,20.13.2,The ADD ACLDEFAULT command modified by MOD ACLDEFAULT does not exist.,MOD ACLDEFAULT修改的ADD ACLDEFAULT不存在,,,,,,,,,,,,,,,,
+MOD ACLGROUP,ADD ACLGROUP,ACLNAME,"ACLNAME,ACLDESCRIPTION,ACLSTEP,ACLMATCHORDER",2,,ACLTYPE,,,UDG,20.13.2,The ADD ACLGROUP command modified by MOD ACLGROUP does not exist.,MOD ACLGROUP修改的ADD ACLGROUP不存在,,,,,,,,,,,,,,,,
+MOD ACLGROUP6,ADD ACLGROUP6,ACLNAME,"ACLNAME,ACLDESCRIPTION,ACLSTEP,ACLMATCHORDER",2,,ACLTYPE,,,UDG,20.13.2,The ADD ACLGROUP6 command modified by MOD ACLGROUP6 does not exist.,MOD ACLGROUP6修改的ADD ACLGROUP6不存在,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3、参数和参数关系,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+物理网元,版本,节点,节点名称,节点命令,使用命令(子节点),配置(后配),配置依赖参数(前后节点顺序以J列为准),"逻辑依赖参数是否为叶子
+（1：叶子， 先配置，0：根）
+目标列为（I） 调整配置命令指向根节点, 默认为1 （以此列为准）",是否匹配（操作命令的条件放到该列）,索引检查(依赖命令的条件放到该列),检查错误提示【中文】,检查错误提示【英文】,检查默认参数【中文】,检查默认参数提示【英文】,条件,条件逻辑判断（默认空为等于）,条件取值,"0：弱绑定，1：强绑定，bind[k],set[j] 全部为0，其余为1
+set需要联动删除",是否联动删除  1：是  0：否（当前默认是0， j列是set为1）,,,,,,,,,
+UDG,20.13.2,FLTBINDFLOWF,FILTERNAME,ADD FLTBINDFLOWF,UDG:ADD_FLTBINDFLOWF,UDG:ADD_FLTBINDFLOWF.FILTERNAME,UDG:ADD_FILTER.FILTERNAME,1,ADD_FLTBINDFLOWF.FILTERNAME != null,ADD_FLTBINDFLOWF.FILTERNAME.equalsIgnoreCase(ADD_FILTER.FILTERNAME),"[FILTERNAME]的值为[{0}],核查不通过,提示:[ADD_FLTBINDFLOWF.FILTERNAME 引用的ADD_FILTER.FILTERNAME不存在，请检查]","[FILTERNAME] value is [{0}],Failed to pass the check,desc:[ADD_FLTBINDFLOWF.FILTERNAME quoting ADD_FILTER.FILTERNAME not exist，Please check]","命令自动生效参数[FILTERNAME]的默认值为[{0}],核查不通过,提示:[ADD_FLTBINDFLOWF.FILTERNAME 引用的ADD_FILTER.FILTERNAME不存在，请检查]","Command auto-execution parameters[FILTERNAME] default value is [{0}],Failed to pass the check,desc:[ADD_FLTBINDFLOWF.FILTERNAME quoting ADD_FILTER.FILTERNAME not exist，Please check]",nan,,nan,1,0,,,,,,,,,
+UDG,20.13.2,URRGROUP,DOWNURRNAME1,ADD URRGROUP,UDG:ADD_URRGROUP,UDG:ADD_URRGROUP.DOWNURRNAME1,UDG:ADD_URR.URRNAME,1,ADD_URRGROUP.DOWNURRNAME1 != null,ADD_URRGROUP.DOWNURRNAME1.equalsIgnoreCase(ADD_URR.URRNAME),"[DOWNURRNAME1]的值为[{0}],核查不通过,提示:[ADD_URRGROUP.DOWNURRNAME1 引用的ADD_URR.URRNAME不存在，请检查]","[DOWNURRNAME1] value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.DOWNURRNAME1 quoting ADD_URR.URRNAME not exist，Please check]","命令自动生效参数[DOWNURRNAME1]的默认值为[{0}],核查不通过,提示:[ADD_URRGROUP.DOWNURRNAME1 引用的ADD_URR.URRNAME不存在，请检查]","Command auto-execution parameters[DOWNURRNAME1] default value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.DOWNURRNAME1 quoting ADD_URR.URRNAME not exist，Please check]",nan,,nan,1,0,,,,,,,,,
+UDG,20.13.2,URRGROUP,DOWNURRNAME2,ADD URRGROUP,UDG:ADD_URRGROUP,UDG:ADD_URRGROUP.DOWNURRNAME2,UDG:ADD_URR.URRNAME,1,ADD_URRGROUP.DOWNURRNAME2 != null,ADD_URRGROUP.DOWNURRNAME2.equalsIgnoreCase(ADD_URR.URRNAME),"[DOWNURRNAME2]的值为[{0}],核查不通过,提示:[ADD_URRGROUP.DOWNURRNAME2 引用的ADD_URR.URRNAME不存在，请检查]","[DOWNURRNAME2] value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.DOWNURRNAME2 quoting ADD_URR.URRNAME not exist，Please check]","命令自动生效参数[DOWNURRNAME2]的默认值为[{0}],核查不通过,提示:[ADD_URRGROUP.DOWNURRNAME2 引用的ADD_URR.URRNAME不存在，请检查]","Command auto-execution parameters[DOWNURRNAME2] default value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.DOWNURRNAME2 quoting ADD_URR.URRNAME not exist，Please check]",nan,,nan,1,0,,,,,,,,,
+UDG,20.13.2,URRGROUP,DOWNURRNAME3,ADD URRGROUP,UDG:ADD_URRGROUP,UDG:ADD_URRGROUP.DOWNURRNAME3,UDG:ADD_URR.URRNAME,1,ADD_URRGROUP.DOWNURRNAME3 != null,ADD_URRGROUP.DOWNURRNAME3.equalsIgnoreCase(ADD_URR.URRNAME),"[DOWNURRNAME3]的值为[{0}],核查不通过,提示:[ADD_URRGROUP.DOWNURRNAME3 引用的ADD_URR.URRNAME不存在，请检查]","[DOWNURRNAME3] value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.DOWNURRNAME3 quoting ADD_URR.URRNAME not exist，Please check]","命令自动生效参数[DOWNURRNAME3]的默认值为[{0}],核查不通过,提示:[ADD_URRGROUP.DOWNURRNAME3 引用的ADD_URR.URRNAME不存在，请检查]","Command auto-execution parameters[DOWNURRNAME3] default value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.DOWNURRNAME3 quoting ADD_URR.URRNAME not exist，Please check]",nan,,nan,1,0,,,,,,,,,
+UDG,20.13.2,URRGROUP,UPURRNAME1,ADD URRGROUP,UDG:ADD_URRGROUP,UDG:ADD_URRGROUP.UPURRNAME1,UDG:ADD_URR.URRNAME,1,ADD_URRGROUP.UPURRNAME1 != null,ADD_URRGROUP.UPURRNAME1.equalsIgnoreCase(ADD_URR.URRNAME),"[UPURRNAME1]的值为[{0}],核查不通过,提示:[ADD_URRGROUP.UPURRNAME1 引用的ADD_URR.URRNAME不存在，请检查]","[UPURRNAME1] value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.UPURRNAME1 quoting ADD_URR.URRNAME not exist，Please check]","命令自动生效参数[UPURRNAME1]的默认值为[{0}],核查不通过,提示:[ADD_URRGROUP.UPURRNAME1 引用的ADD_URR.URRNAME不存在，请检查]","Command auto-execution parameters[UPURRNAME1] default value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.UPURRNAME1 quoting ADD_URR.URRNAME not exist，Please check]",nan,,nan,1,0,,,,,,,,,
+UDG,20.13.2,URRGROUP,UPURRNAME2,ADD URRGROUP,UDG:ADD_URRGROUP,UDG:ADD_URRGROUP.UPURRNAME2,UDG:ADD_URR.URRNAME,1,ADD_URRGROUP.UPURRNAME2 != null,ADD_URRGROUP.UPURRNAME2.equalsIgnoreCase(ADD_URR.URRNAME),"[UPURRNAME2]的值为[{0}],核查不通过,提示:[ADD_URRGROUP.UPURRNAME2 引用的ADD_URR.URRNAME不存在，请检查]","[UPURRNAME2] value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.UPURRNAME2 quoting ADD_URR.URRNAME not exist，Please check]","命令自动生效参数[UPURRNAME2]的默认值为[{0}],核查不通过,提示:[ADD_URRGROUP.UPURRNAME2 引用的ADD_URR.URRNAME不存在，请检查]","Command auto-execution parameters[UPURRNAME2] default value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.UPURRNAME2 quoting ADD_URR.URRNAME not exist，Please check]",nan,,nan,1,0,,,,,,,,,
+UDG,20.13.2,URRGROUP,UPURRNAME3,ADD URRGROUP,UDG:ADD_URRGROUP,UDG:ADD_URRGROUP.UPURRNAME3,UDG:ADD_URR.URRNAME,1,ADD_URRGROUP.UPURRNAME3 != null,ADD_URRGROUP.UPURRNAME3.equalsIgnoreCase(ADD_URR.URRNAME),"[UPURRNAME3]的值为[{0}],核查不通过,提示:[ADD_URRGROUP.UPURRNAME3 引用的ADD_URR.URRNAME不存在，请检查]","[UPURRNAME3] value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.UPURRNAME3 quoting ADD_URR.URRNAME not exist，Please check]","命令自动生效参数[UPURRNAME3]的默认值为[{0}],核查不通过,提示:[ADD_URRGROUP.UPURRNAME3 引用的ADD_URR.URRNAME不存在，请检查]","Command auto-execution parameters[UPURRNAME3] default value is [{0}],Failed to pass the check,desc:[ADD_URRGROUP.UPURRNAME3 quoting ADD_URR.URRNAME not exist，Please check]",nan,,nan,1,0,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4、重复规则,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+网元类型,版本,命令名称,重复检查,参数关系,,,,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,ADD RULE,"RULENAME,POLICYTYPE",and,,,,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,ADD FLOWFILTER,FLOWFILTERNAME,and,,,,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,ADD FLOWFILTERGRP,"FLWFLTRGRPNAME,FLOWFILTERNAME",and,,,,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,ADD PCCPOLICYGRP,PCCPOLICYGRPNM,and,,,,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,ADD HEADEN,"HEADERENNAME,DATATYPE",and,,,,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,ADD QOSPROP,QOSPROPNAME,and,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5、RMV 规则,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RMV 命令,索引参数,ADD 命令,RMV独有参数,findRmvJexlCode,errMsgEn,errMsgCn,网元类型,版本,,,,,,,,,,,,,,,,,,,,
+RMV PATCH,,ADD PATCH,SERVICEINSTANCE,,"Failed to delete the node ADD PATCH, because the node  does not exist.",所删除的ADD PATCH节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+RMV ACSPATCH,,ADD ACSPATCH,,,"Failed to delete the node ADD ACSPATCH, because the node  does not exist.",所删除的ADD ACSPATCH节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+RMV UPDDBFILES,,ADD UPDDBFILES,SERVICEINSTANCE,,"Failed to delete the node ADD UPDDBFILES, because the node  does not exist.",所删除的ADD UPDDBFILES节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+RMV PACKAGE,,ADD PACKAGE,"VERSIONID,APPTYPE,SERVICEINSTANCE,PACKAGETYPE,VERSIONTYPE,CPUARCHTYPE,ISFORCE,ONLYREMOVEPOOL",,"Failed to delete the node ADD PACKAGE, because the node  does not exist.",所删除的ADD PACKAGE节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+RMV ACSPACKAGE,,ADD ACSPACKAGE,"VERSIONID,APPTYPE,PACKAGETYPE,VERSIONTYPE,CPUARCHTYPE,ISFORCE,ONLYREMOVEPOOL",,"Failed to delete the node ADD ACSPACKAGE, because the node  does not exist.",所删除的ADD ACSPACKAGE节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+RMV PAEPORTGATEWAY,NETWORKINDEX,ADD PAEPORTGATEWAY,,,"Failed to delete the node ADD PAEPORTGATEWAY, because the node  does not exist.",所删除的ADD PAEPORTGATEWAY节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+RMV DRINST,DRINSTID,ADD DRINST,,,"Failed to delete the node ADD DRINST, because the node  does not exist.",所删除的ADD DRINST节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+RMV DRCOMM,"COMMIPV4,COMMIPV6,DRINSTID,IPVERSION",ADD DRCOMM,,,"Failed to delete the node ADD DRCOMM, because the node  does not exist.",所删除的ADD DRCOMM节点不存在，无法执行该删除命令。,UDG,20.13.2,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+6、SET 规则,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+物理网元,版本,命令,参数ID,参数标识,参数类型,可必选,关键参数,命令唯一,条件,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SAAITRAINPARA,1,AITRAINTHRES,整数,可选,0,1,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SAAITRAINPARA,3,AITRAINPERIOD,整数,可选,0,1,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SAAITRAINPARA,4,AITRAINSAMPLE,整数,可选,0,1,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SAAITRAINPARA,5,AIDBVALIDTIME,整数,可选,0,1,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SAAITRAINPARA,2,AITRAINSWITCH,枚举,可选,0,1,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SYSLOGTASK,3,IPV4,IPV4,,0,1,"{""2=IPV4"": ""必选""}",,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SYSLOGTASK,4,IPV6,IPV6,,0,1,"{""2=IPV6"": ""必选""}",,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SYSLOGTASK,6,LOGTYPE,位域类型,,0,1,"{""1=ENABLE"": ""必选""}",,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SYSLOGTASK,5,SERVERPORT,整数,,0,1,"{""1=ENABLE"": ""必选""}",,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+7、SP规则,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+网元类型,网元版本,命令标识,索引参数条件,索引参数,索引值,参数值类型,参数值,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET APNSOFTPARA,SET APNSOFTPARA_DT=BIT,SET APNSOFTPARA_BITNUM,20,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET APNSOFTPARA,SET APNSOFTPARA_DT=BIT,SET APNSOFTPARA_BITNUM,43,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET APNSOFTPARA,SET APNSOFTPARA_DT=BYTE,SET APNSOFTPARA_BYTENUM,1,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET APNSOFTPARA,SET APNSOFTPARA_DT=BYTE,SET APNSOFTPARA_BYTENUM,3,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET APNSOFTPARA,SET APNSOFTPARA_DT=BYTE,SET APNSOFTPARA_BYTENUM,5,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET APNSOFTPARA,SET APNSOFTPARA_DT=BYTE,SET APNSOFTPARA_BYTENUM,7,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET APNSOFTPARA,SET APNSOFTPARA_DT=BYTE,SET APNSOFTPARA_BYTENUM,16,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SOFTPARA,SET SOFTPARA_DT=BIT,SET SOFTPARA_BITNUM,102,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SOFTPARA,SET SOFTPARA_DT=BIT,SET SOFTPARA_BITNUM,103,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SOFTPARA,SET SOFTPARA_DT=BIT,SET SOFTPARA_BITNUM,204,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SOFTPARA,SET SOFTPARA_DT=BIT,SET SOFTPARA_BITNUM,254,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SOFTPARA,SET SOFTPARA_DT=BIT,SET SOFTPARA_BITNUM,311,DEC,0,,,,,,,,,,,,,,,,,,,,,
+UDG,20.13.2,SET SOFTPARA,SET SOFTPARA_DT=BIT,SET SOFTPARA_BITNUM,316,DEC,0,,,,,,,,,,,,,,,,,,,,,

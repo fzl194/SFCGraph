@@ -1,0 +1,25 @@
+# 章节标题 → 字段名映射（从旧 command-graph/builder/md_reader.py:19-35 搬出）。
+#
+# md_reader.map_section 的匹配顺序：
+#   1. _clean_link(title) 后精确匹配（下方 exact）
+#   2. 再前缀匹配（用于脏数据标题如 "操作用户权限DSP RU"）
+# 两段逻辑都在 md_reader.map_section 里保留；本文件只是数据。
+#
+# 字段集合 _FIELDS 由代码从下方所有 field 值去重推导（保持顺序）。
+
+mappings:
+  - {section: 命令功能,     field: function_text}
+  - {section: 功能描述,     field: function_text}
+  - {section: 适用网元,     field: function_text}
+  - {section: 注意事项,     field: notes_text}
+  - {section: 操作用户权限, field: permission_text}
+  - {section: 网管用户权限, field: permission_text}
+  - {section: 本地用户权限, field: permission_text}
+  - {section: 参数说明,     field: parameter_description}
+  - {section: 使用实例,     field: examples_text}
+  - {section: 命令使用实例, field: examples_text}
+  - {section: 输出结果说明, field: output_text}
+  - {section: 参考信息,     field: reference_text}
+  - {section: 参考,         field: reference_text}
+  - {section: 名词解释,     field: reference_text}
+  - {section: 术语解释,     field: reference_text}

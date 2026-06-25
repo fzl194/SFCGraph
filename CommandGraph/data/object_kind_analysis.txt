@@ -1,0 +1,277 @@
+==========================================================================================
+对象族总数（nf:object_keyword）：5818   UDG:2210  UNC:3608
+
+【按行为模式归类的 kind 分布】
+kind                 数量      占比
+entity             1964   33.8%
+global_setting     1407   24.2%
+binding             109    1.9%
+query_target       1839   31.6%
+action              418    7.2%
+batch_op             28    0.5%
+other                53    0.9%
+
+==========================================================================================
+【entity 桶内部：CRUD 完整度分布】
+  ADD+MOD+RMV(完整CRUD)          1240
+  ADD+RMV(无MOD)                599
+  其他crud组合:RMV                 75
+  仅MOD                         38
+  其他crud组合:DEL                 9
+  仅ADD                         2
+  ADD+MOD(无RMV)                1
+
+==========================================================================================
+【各桶样本：keyword | 中文名 | verbs | 命令数 | max_records】
+
+--- entity (1964) ---
+  UDG:ABNTRAFFICDT                   删除异常流量检测开关             ADD/LST/MOD/RMV            n=4   mr=None
+  UDG:ABSTIMERANGE                   删除绝对时间段                ADD/LST/MOD/RMV            n=4   mr=2400
+  UDG:ACL                            增加ACL                  ADD/LST/MOD/RMV            n=4   mr=5000
+  UDG:ACLDEFAULT                     增加缺省Acl绑定              ADD/LST/MOD/RMV            n=4   mr=4
+  UDG:ACLGROUP                       增加ACL规则组               ADD/LST/MOD/RMV/RTR        n=5   mr=65535
+  UDG:ACLGROUP6                      增加IPv6 ACL规则组          ADD/LST/MOD/RMV/RTR        n=5   mr=65535
+  UDG:ACLGROUP6IPSEC                 修改IPv6 ACL规则组          ADD/LST/MOD/RMV            n=4   mr=None
+  UDG:ACLGROUPIPSEC                  查询ACL规则组配置             ADD/LST/MOD/RMV            n=4   mr=None
+  UDG:ACLNODE                        修改ACL节点                ADD/LST/MOD/RMV            n=4   mr=5000
+  UDG:ACLRULEADV4                    修改高级ACL规则              ADD/DSP/LST/MOD/RMV        n=5   mr=65535
+  UDG:ACLRULEADV4IPSEC               修改高级ACL规则              ADD/LST/MOD/RMV            n=4   mr=None
+  UDG:ACLRULEADV6                    增加高级IPv6 ACL规则         ADD/DSP/LST/MOD/RMV        n=5   mr=65535
+  UDG:ACLRULEADV6IPSEC               删除高级IPv6 ACL规则         ADD/LST/MOD/RMV            n=4   mr=None
+  UDG:ACLRULEBAS4                    删除基本ACL规则              ADD/DSP/LST/MOD/RMV        n=5   mr=65535
+  UDG:ACLRULEBAS6                    显示基本IPv6 ACL规则         ADD/DSP/LST/MOD/RMV        n=5   mr=65535
+  UDG:ACLRULEETH                     修改以太ACL规则              ADD/DSP/LST/MOD/RMV        n=5   mr=65535
+  UDG:ACLRULEIF                      修改接口ACL规则              ADD/DSP/LST/MOD/RMV        n=5   mr=65535
+  UDG:ACSPACKAGE                     删除软件包                  ACT/DSP/LOD/RBK/RMV        n=5   mr=None
+
+--- global_setting (1407) ---
+  UDG:5GGUMINFO                      查询灰度升级所处于的阶段           LST/SET                    n=2   mr=None
+  UDG:ABNTRADTTHR                    查询异常流量检测报文阈值           LST/SET                    n=2   mr=1
+  UDG:ACSELECTSERVICE                查询仲裁服务状态               DSP/LST/SET                n=3   mr=None
+  UDG:ACSUPDSTATUS                   显示升级状态                 DSP/SET                    n=2   mr=None
+  UDG:ADDRESSATTR                    设置全局地址分配属性             LST/SET                    n=2   mr=1
+  UDG:AES128                         查询aes128加密算法的IV值       LST/SET                    n=2   mr=1
+  UDG:AES256                         设置aes256加密算法的IV值       LST/SET                    n=2   mr=1
+  UDG:AFMATCHCFG                     设置软参欺诈场景功能开关           LST/SET                    n=2   mr=1
+  UDG:AFUSRDETECT                    查询计费欺诈用户检测功能           LST/SET                    n=2   mr=1
+  UDG:AIFUNCPARA                     SA Intelligence功能参数    LST/SET                    n=2   mr=1
+  UDG:ALARMSWITCH                    查询安全事件告警开关             LST/SET                    n=2   mr=None
+  UDG:ALMFILTER                      设置告警闪断振荡配置             LST/SET                    n=2   mr=None
+  UDG:ALMINFO                        设置告警配置信息               LST/SET                    n=2   mr=None
+  UDG:ALMNRMODE                      查询网管北向告警上报模式           LST/SET                    n=2   mr=None
+  UDG:ANTIFRAUD                      查询防欺诈配置                LST/SET                    n=2   mr=1
+  UDG:ANTISPOOFINGTHD                查询攻击用户去活报文的阈值          LST/SET                    n=2   mr=1
+  UDG:APNACCESSWAL                   查询Apn接入速率配置            LST/SET                    n=2   mr=None
+  UDG:APNADDRESSATTR                 设置ApnAddressAttr配置     LST/SET                    n=2   mr=None
+
+--- binding (109) ---
+  UDG:ACLBINDAPN                     修改Acl绑定关系              ADD/LST/MOD/RMV            n=4   mr=None
+  UDG:ACLNODEBINDACL                 查询Acl节点绑定关系            ADD/LST/MOD/RMV            n=4   mr=10000
+  UDG:APNBINDBWMUSRG                 删除带宽管理用户组APN绑定         ADD/LST/RMV                n=3   mr=31984
+  UDG:APNBINDPATH                    删除APNBindPath配置        ADD/LST/RMV                n=3   mr=2000
+  UDG:CELLBINDGRP                    删除小区和小区组绑定关系           ADD/LST/RMV                n=3   mr=10000
+  UDG:CFPROFBINDCFT                  删除内容过滤策略绑定关系           ADD/LST/RMV                n=3   mr=1000
+  UDG:CONTCATEGBIND                  增加内容分类组绑定关系            ADD/LST/MOD/RMV            n=4   mr=10000
+  UDG:FLTBINDFLOWF                   查询流过滤器的过滤器绑定关系         ADD/LST/RMV                n=3   mr=300000
+  UDG:ICAPSVRBINDISG                 查询ICAP服务器绑定关系          ADD/LST/RMV                n=3   mr=300
+  UDG:IMSIBINDGRP                    删除IMSI和IMSI组绑定关系       ADD/LST/RMV                n=3   mr=64
+  UDG:IMSIBINDPOD                    增加IMSI和Pod绑定关系         ADD/LST/MOD/RMV            n=4   mr=10
+  UDG:IPBINDVPN                      删除接口绑定VPN              ADD/LST/MOD/RMV            n=4   mr=65535
+  UDG:IPBINDVPNIPSEC                 删除接口绑定VPN              ADD/LST/MOD/RMV            n=4   mr=None
+  UDG:LBTNBINDPLY                    查询业务服务ID与隧道组ID的关系      DSP                        n=1   mr=None
+  UDG:MPACBINDGBL                    增加MPAC全局策略             ADD/LST/RMV                n=3   mr=2
+  UDG:MPACBINDIF                     查询MPAC接口策略             ADD/LST/RMV                n=3   mr=256
+  UDG:NGBINDDFSRPAIR                 删除5G LAN实例绑定双发选收结对配置   ADD/LST/RMV                n=3   mr=2048
+  UDG:NGBINDMCASTGRP                 删除5G LAN实例绑定组播组配置      ADD/LST/RMV                n=3   mr=8192
+
+--- query_target (1839) ---
+  UDG:ACC                            显示加速器信息                DSP                        n=1   mr=None
+  UDG:ACL6ADVRULECNTVERBOSE          查询高级ACL6规则匹配详细计数       DSP                        n=1   mr=None
+  UDG:ACL6BASICRULECNTVERBOSE        查询基本ACL6规则匹配详细计数       DSP                        n=1   mr=None
+  UDG:ACLADV6RULECNT                 显示高级IPv6 ACL规则匹配计数     DSP                        n=1   mr=None
+  UDG:ACLADVRULECNT                  显示高级ACL规则匹配计数          DSP                        n=1   mr=None
+  UDG:ACLADVRULECNTVERBOSE           查询高级ACL规则匹配详细计数        DSP                        n=1   mr=None
+  UDG:ACLBASIC6RULECNT               显示基本IPv6 ACL规则匹配计数     DSP                        n=1   mr=None
+  UDG:ACLBASICRULECNT                显示基本ACL规则匹配计数          DSP                        n=1   mr=None
+  UDG:ACLBASICRULECNTVERBOSE         查询基本ACL规则匹配详细计数        DSP                        n=1   mr=None
+  UDG:ACLETHRULECNT                  显示以太ACL规则匹配计数          DSP                        n=1   mr=None
+  UDG:ACLETHRULECNTVERBOSE           查询以太ACL规则匹配详细计数        DSP                        n=1   mr=None
+  UDG:ACLIFRULECNT                   显示接口ACL规则匹配计数          DSP                        n=1   mr=None
+  UDG:ACLIFRULECNTVERBOSE            查询接口ACL规则匹配详细计数        DSP                        n=1   mr=None
+  UDG:ACSCLASSINFO                   查询配置表信息                DSP                        n=1   mr=None
+  UDG:ACSPATCHDETAILINFO             显示补丁信息                 DSP                        n=1   mr=None
+  UDG:ACSPATCHINFO                   显示系统当前补丁信息             DSP                        n=1   mr=None
+  UDG:ACSRBKVER                      显示升级可回退版本信息            DSP                        n=1   mr=None
+  UDG:ACSSYNCINFO                    查询ACS的配置同步信息           DSP                        n=1   mr=None
+
+--- action (418) ---
+  UDG:ACSCLIENTDBG                   ACS客户端调试操作             OPR                        n=1   mr=None
+  UDG:ACSDATA                        清除ACS管理服务数据            CLR                        n=1   mr=None
+  UDG:ACSFILE                        文件传输                   FTR                        n=1   mr=None
+  UDG:ACSPEERCFG                     启动或停止ACS与远端设备的配置同步     SYN                        n=1   mr=None
+  UDG:ACSUPDPRECHK                   升级前检查                  OPR                        n=1   mr=None
+  UDG:AFMATCHSTATIC                  查询HTTP欺诈场景的统计结果        CLR/DSP                    n=2   mr=None
+  UDG:ALLLDPSESSIONS                 重启所有LDP会话              RBL                        n=1   mr=None
+  UDG:APPDATA                        同步APP配置数据              CHK/DSP/SYN                n=3   mr=None
+  UDG:APPINFORMATION                 第三方APP信息采集             COL                        n=1   mr=None
+  UDG:ARPBYIF                        根据接口清除ARP动态表项          RTR                        n=1   mr=None
+  UDG:ARPBYTYPE                      根据ARP表项类型清除ARP表项       RTR                        n=1   mr=None
+  UDG:ARPDROPSTC                     查询ARP丢弃报文统计            DSP/RTR                    n=2   mr=None
+  UDG:ARPDYNBLACKLIST                查询ARP动态黑名单             DSP/RTR                    n=2   mr=None
+  UDG:ATTACKDEFENDSTC                清除攻击防范统计信息             DSP/RTR                    n=2   mr=None
+  UDG:BFDSESSSTAS                    清除BFD会话统计信息            RTR                        n=1   mr=None
+  UDG:BGPIPV6PEER                    刷新BGP IPv6对等体          RBL/SYN                    n=2   mr=None
+  UDG:BGPPEERTYPE                    刷新对等体类型                SYN                        n=1   mr=None
+  UDG:BLK                            CSDB检查闭塞RU             CHK                        n=1   mr=None
+
+--- batch_op (28) ---
+  UDG:AFDNSCHKTPALL                  删除所有需要进行防欺诈检查的DNS报文类型  RMV                        n=1   mr=None
+  UDG:AFDNSSERVERALL                 删除所有防欺诈可信DNS服务器        RMV                        n=1   mr=None
+  UDG:AFPOLICYALL                    删除所有防欺诈策略配置            RMV                        n=1   mr=None
+  UDG:AFPROXYSRVALL                  删除所有防欺诈可信代理服务器         RMV                        n=1   mr=None
+  UDG:BGPALL                         刷新BGP全部信息              SYN                        n=1   mr=None
+  UDG:BWMRULEGLBALL                  删除所有全局带宽管理规则           RMV                        n=1   mr=None
+  UDG:BWMUSERGRPALL                  删除所有带宽管理用户组            RMV                        n=1   mr=None
+  UDG:IPOPTSECALL                    添加IP全局选项安全配置           ADD/LST/MOD/RMV            n=4   mr=1
+  UDG:IPV6EXTHSECALL                 查询IPv6扩展头选项安全配置        ADD/LST/MOD/RMV            n=4   mr=1
+  UDG:RULEALL                        删除所有规则                 RMV                        n=1   mr=None
+  UDG:SFEFIB6STCALL                  查询IPv6所有的路由表项的统计       DSP                        n=1   mr=None
+  UDG:SFEFIBSTATALL                  显示FIB所有统计信息            DSP                        n=1   mr=None
+  UDG:SPECURRGRPLTALL                删除所有特殊URR组列表           RMV                        n=1   mr=None
+  UNC:BGPALL                         刷新BGP全部信息              SYN                        n=1   mr=None
+  UNC:DMAVPDICTALL                   删除所有Diameter AVP表      RMV                        n=1   mr=None
+  UNC:IPOPTSECALL                    添加IP全局选项安全配置           ADD/LST/MOD/RMV            n=4   mr=1
+  UNC:IPV6EXTHSECALL                 查询IPv6扩展头选项安全配置        ADD/LST/MOD/RMV            n=4   mr=1
+  UNC:MSISDNSUBGPMEMALL              删除所有MSISDN用户群成员        RMV                        n=1   mr=None
+
+--- other (53) ---
+  UDG:COMPSTATUS                     收集并推送RU的组件状态           UPD                        n=1   mr=None
+  UDG:DNSCFGTASK                     执行DNS配置任务              EXC/LST                    n=2   mr=None
+  UDG:DR                             容灾实例主备倒换               SWAP                       n=1   mr=None
+  UDG:EXPFILE                        上传导出文件                 ULD                        n=1   mr=None
+  UDG:FILE                           查询文件信息                 DSP/FTR/SYNC               n=3   mr=None
+  UDG:GENSYNCALLCFGNTF               请求生成一个全量同步通知           REQ                        n=1   mr=None
+  UDG:IDLESESSION                    去激活空闲会话                DEA                        n=1   mr=None
+  UDG:IMSSRVBEARER                   去激活指定用户的IMS Bypass状态   DEA                        n=1   mr=None
+  UDG:LICCTL                         启动紧急License            ACT/DEA/DSP                n=3   mr=None
+  UDG:LICENSE                        失效License              ACT/CMP/DSP/LST/RVK        n=5   mr=None
+  UDG:LOGFILE                        获取审计日志文件               GET/SAV                    n=2   mr=None
+  UDG:MMLTRAN                        取消配置                   CMT/CNL/STP/STR            n=4   mr=None
+  UDG:NODE                           停止节点                   DSP/LST/REB/RST/STP/STR    n=6   mr=None
+  UDG:PUBCFGFILE                     上传绑定配置域信息              ULD                        n=1   mr=None
+  UDG:RU                             解闭CSDB RU              BLK/DSP/RST/UBLK           n=4   mr=None
+  UDG:RUNNINGCONFIG                  保存运行配置数据               SAV                        n=1   mr=None
+  UDG:SESSION                        去活用户会话                 DEA                        n=1   mr=None
+  UDG:SFEPKTDBG                      激活报文调测过滤               ACT/DEA                    n=2   mr=None
+
+==========================================================================================
+【binding 全量清单（命名含 BIND）：109 个】
+  UDG:ACLBINDAPN                           修改Acl绑定关系                ADD/LST/MOD/RMV
+  UDG:ACLNODEBINDACL                       查询Acl节点绑定关系              ADD/LST/MOD/RMV
+  UDG:APNBINDBWMUSRG                       删除带宽管理用户组APN绑定           ADD/LST/RMV
+  UDG:APNBINDPATH                          删除APNBindPath配置          ADD/LST/RMV
+  UDG:CELLBINDGRP                          删除小区和小区组绑定关系             ADD/LST/RMV
+  UDG:CFPROFBINDCFT                        删除内容过滤策略绑定关系             ADD/LST/RMV
+  UDG:CONTCATEGBIND                        增加内容分类组绑定关系              ADD/LST/MOD/RMV
+  UDG:FLTBINDFLOWF                         查询流过滤器的过滤器绑定关系           ADD/LST/RMV
+  UDG:ICAPSVRBINDISG                       查询ICAP服务器绑定关系            ADD/LST/RMV
+  UDG:IMSIBINDGRP                          删除IMSI和IMSI组绑定关系         ADD/LST/RMV
+  UDG:IMSIBINDPOD                          增加IMSI和Pod绑定关系           ADD/LST/MOD/RMV
+  UDG:IPBINDVPN                            删除接口绑定VPN                ADD/LST/MOD/RMV
+  UDG:IPBINDVPNIPSEC                       删除接口绑定VPN                ADD/LST/MOD/RMV
+  UDG:LBTNBINDPLY                          查询业务服务ID与隧道组ID的关系        DSP
+  UDG:MPACBINDGBL                          增加MPAC全局策略               ADD/LST/RMV
+  UDG:MPACBINDIF                           查询MPAC接口策略               ADD/LST/RMV
+  UDG:NGBINDDFSRPAIR                       删除5G LAN实例绑定双发选收结对配置     ADD/LST/RMV
+  UDG:NGBINDMCASTGRP                       删除5G LAN实例绑定组播组配置        ADD/LST/RMV
+  UDG:NGBINDUEMUTWL                        增加5G LAN组绑定PA口UE互访白名单    ADD/LST/RMV
+  UDG:NGVNBINDVXLAN                        增加5G LAN实例绑定VXLAN组       ADD/LST/RMV
+  UDG:POOLBINDGROUP                        显示地址池与地址池组绑定关系           ADD/LST/MOD/RMV
+  UDG:PREURLGBINDUP                        查询用户模板的前缀URL组绑定关系        ADD/LST/RMV
+  UDG:PROTBINDFLOWF                        修改流过滤器协议绑定关系             ADD/LST/MOD/RMV
+  UDG:PROTBINDSRVS                         删除业务统计协议绑定配置             ADD/LST/RMV
+  UDG:PROTGBINDFLOWF                       查询流过滤器协议组绑定关系            ADD/LST/RMV
+  UDG:RELAYIPBINDING                       查询媒体中继服务IP绑定配置           ADD/LST/RMV
+  UDG:RULEBINDING                          查询用户模板和规则的绑定关系           ADD/LST/RMV
+  UDG:RULEBINDSRVS                         增加业务统计规则绑定配置             ADD/LST/RMV
+  UDG:SRVPBINDPCCPG                        删除PCC组业务属性绑定             ADD/LST/MOD/RMV
+  UDG:TAIGROUPBINDING                      查看TAI组绑定的TAC号段           ADD/LST/RMV
+  UDG:UEMUTWLISTBIND                       查询APN绑定PA口UE互访白名单        ADD/LST/RMV
+  UDG:UPBINDBWMUSRG                        删除带宽管理用户组User Profile绑定  ADD/LST/RMV
+  UDG:UPREALMBINDAPN                       修改APN与Diameter Realm关联关系 ADD/LST/MOD/RMV
+  UDG:URRGRPBINDING                        删除用户模板的URR组绑定关系          RMV/SET
+  UDG:VTEPBINDGRP                          修改VXLAN隧道端点绑定隧道组         ADD/LST/MOD/RMV
+  UDG:VXLANBINDAPN                         查询VXLAN隧道组绑定APN          ADD/LST/MOD/RMV
+  UDG:VXLANBINDRULE                        删除VXLAN隧道组绑定Rule         ADD/LST/MOD/RMV
+  UDG:WHITEURLLISTBIND                     设置用户模板的URL白名单列表          RMV/SET
+  UNC:BSFIPRANGEBIND                       删除BSF实例与IPRANGE之间的绑定关系   ADD/LST/RMV
+  UNC:CGBINDING                            增加CG绑定关系                 ADD/LST/MOD/RMV
+  UNC:CGGRPBINDING                         删除CG组绑定关系                ADD/LST/MOD/RMV
+  UNC:CPCGBINDING                          显示抄送CG绑定                 ADD/LST/MOD/RMV
+  UNC:DHCPBINDPOOLGRP                      删除DHCP服务器组与地址池组绑定关系      ADD/LST/RMV
+  UNC:DNAIBINDDNAREA                       删除DNAI支持的服务区域            ADD/LST/RMV
+  UNC:DNAREABINDN2CID                      增加DNAI服务区名称绑定的5G Cell ID ADD/LST/RMV
+  UNC:DNAREABINDN2TAI                      增加DNAI服务区名称绑定的5G TAI范围   ADD/LST/RMV
+  UNC:DNAREABINDS1CID                      删除DNAI服务区名称绑定的4G Cell ID ADD/LST/RMV
+  UNC:DNAREABINDS1TAI                      查询DNAI服务区名称绑定的4G TAI范围   ADD/LST/RMV
+  UNC:FAULTRANBINDGRP                      查询N3接口故障RAN与RAN组的绑定关系    ADD/LST/MOD/RMV
+  UNC:FAULTUPBINDGRP                       查询N3接口故障UPF与UPF组的绑定关系    ADD/LST/RMV
+  UNC:FAULTUPBINDRAN                       修改N3接口故障网元组绑定            ADD/LST/MOD/RMV
+  UNC:HOMEGRPBINDAPN                       增加Home Group和APN的绑定关系    ADD/LST/RMV
+  UNC:IMSIAPNBINDUP                        修改APN下用户和UPF的绑定关系配置      ADD/LST/MOD/RMV
+  UNC:IMSIBINDDEDSMF                       增加拨测用户和专网SMF的绑定关系        ADD/LST/MOD/RMV
+  UNC:IMSIBINDUP                           查询用户和UPF的绑定关系            ADD/LST/MOD/RMV
+  UNC:IMSIBINDUPFADDR                      删除用户和UPF地址的绑定关系          ADD/LST/MOD/RMV
+  UNC:IPBINDVPN                            删除接口绑定VPN                ADD/LST/MOD/RMV
+  UNC:IPBINDVPNIPSEC                       删除接口绑定VPN                ADD/LST/MOD/RMV
+  UNC:L2RULEBINDGRP                        查询层二规则与层二规则组的绑定关系        ADD/LST/RMV
+  UNC:L2RULEGRPBIND                        查询层二规则组与用户的绑定关系          ADD/LST/MOD/RMV
+  UNC:LBTNBINDPLY                          查询业务服务ID与隧道组ID的关系        DSP
+  UNC:LOCALHOSTBIND                        增加Diameter本端主机与Diameter本 ADD/LST/RMV
+  UNC:LOCBINDAREA                          删除UPF位置信息与该UPF优先支持的服务区的绑 ADD/LST/RMV
+  UNC:LOCBINDLAI                           查询UPF位置信息与UPF优先支持的LAI范围的 ADD/LST/RMV
+  UNC:LOCBINDN2TAI                         删除UPF位置信息与UPF优先支持的5G TAI ADD/LST/RMV
+  UNC:LOCBINDS1TAI                         查询UPF位置信息与UPF优先支持的4G TAI ADD/LST/RMV
+  UNC:M2MSVRGRPBIND                        增加M2M服务器组绑定关系            ADD/LST/RMV
+  UNC:M2MUPFBINDGRP                        删除UPF和M2M关联的UPF组的绑定关系    ADD/LST/RMV
+  UNC:MPACBINDGBL                          增加MPAC全局策略               ADD/LST/RMV
+  UNC:MPACBINDIF                           查询MPAC接口策略               ADD/LST/RMV
+  UNC:MULDNNBINDAREA                       增加智能分流专网DNN支持的服务区域       ADD/LST/RMV
+  UNC:NRFBINDGRP                           删除对端NRF实例组成员             ADD/LST/MOD/RMV
+  UNC:OCSBINDING                           删除Ocs绑定关系                ADD/LST/MOD/RMV
+  UNC:OCSGRPBINDING                        删除OCS组绑定关系               ADD/LST/MOD/RMV
+  UNC:PCCPBINDUPG                          查询用户模板组和PccProfile的绑定关系  ADD/LST/RMV
+  UNC:PCFSSCOPEBIND                        增加PCF业务服务区的绑定关系          ADD/LST/MOD/RMV
+  UNC:PCFSSCOPEBINDALL                     删除所有的PCF业务服务区的绑定关系       RMV
+  UNC:PCRFBINDGRP                          修改PCRF与PCRF Group的关联关系   ADD/LST/MOD/RMV
+  UNC:PCSCFGRPBINDIMSI                     删除P-CSCF组和IMSI/MSISDN号段的 ADD/LST/MOD/RMV
+  UNC:PLMNBINDSEPPGRP                      删除PLMN与SEPP组的绑定关系        ADD/LST/MOD/RMV
+  UNC:POOLBINDAPN                          增加APN实例与地址池绑定关系          ADD/LST/RMV
+  UNC:POOLBINDGRP                          删除地址池与地址池组的绑定关系          ADD/LST/MOD/RMV
+  UNC:PSAUPFBINDATSSS                      修改PSA UPF和ATSSS UPF绑定关系中 ADD/LST/MOD/RMV
+  UNC:REALMBINDAPN                         修改APN与Diameter Realm关联关系 ADD/LST/MOD/RMV
+  UNC:ROAMTYPEBINDUP                       增加UPF与用户漫游类型的绑定关系        ADD/LST/RMV
+  UNC:RULEBINDDNAI                         删除预定义规则关联的DNAI           ADD/LST/RMV
+  UNC:RULEBINDING                          查询用户模板和规则的绑定关系           ADD/LST/RMV
+  UNC:SEPPBINDGRP                          查询SEPP绑定组关系              ADD/LST/MOD/RMV
+  UNC:SRVPBINDPCCPG                        删除PCC组业务属性绑定             ADD/LST/MOD/RMV
+  UNC:TNFBINDGRP                           增加目标NF实例绑定组              ADD/LST/MOD/RMV
+  UNC:TSTPCFBINDING                        增加拨测用户和PCF的绑定关系          ADD/LST/MOD/RMV
+  UNC:UEDNSBINDAPN                         设置APN的DNS属性              LST/RTR/SET
+  UNC:UEDNSBINDUPGRP                       修改UPF组的DNS属性             ADD/LST/MOD/RMV
+  UNC:UEDNSUPFBINDGRP                      查询UPF和DNS关联的UPF组的绑定关系    ADD/LST/RMV
+  UNC:UPAREABINDFUNC                       查询获取UPF服务区绑定TAI/LAI的方式   LST/SET
+  UNC:UPAREABINDLAI                        增加UPF服务区名称绑定的LAI范围       ADD/LST/RMV
+  UNC:UPAREABINDN2TAI                      查询UPF服务区名称绑定的5G TAI范围    ADD/LST/RMV
+  UNC:UPAREABINDS1TAI                      查询UPF服务区名称绑定的4G TAI范围    ADD/LST/RMV
+  UNC:UPBINDGNGP                           修改GGSN与Gn/Gp接口或PGW-U与S5/ ADD/LST/MOD/RMV
+  UNC:UPBINDS11                            修改SGW-U与SGW-C侧S11接口的绑定关系 ADD/LST/MOD/RMV
+  UNC:UPBINDUPG                            查询用户模板组和用户模板的绑定关系        ADD/LST/MOD/RMV
+  UNC:UPFBINDGRP                           查询UPF和UPF组的绑定关系          ADD/LST/RMV
+  UNC:UPFBINDGXUPFGRP                      删除UPF与Gx UPF组的关联关系       ADD/LST/RMV
+  UNC:UPFBINDSELRULE                       修改UPF和规则的绑定关系            ADD/LST/MOD/RMV
+  UNC:UPFGBINDLOCG                         查询UPF组与Diameter本端主机组的关联关 ADD/LST/MOD/RMV
+  UNC:URRGRPBINDING                        设置用户模板的计费属性绑定关系          SET
+  UNC:USRPROBINDDNAI                       查询用户模板关联的DNAI            ADD/LST/RMV
+  UNC:VUPFIDBINDDNAI                       查询虚拟UPF实例标识的DNAI         ADD/LST/RMV
+  UNC:VUPFIDBINDFUNC                       查询虚拟UPF实例标识绑定的功能         ADD/LST/RMV

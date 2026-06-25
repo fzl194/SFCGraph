@@ -1,0 +1,22 @@
+# CommandGraph 设计态唯一配置入口。
+# assets_root: 产物根（相对本文件所在目录 CommandGraph/）
+# project_root: SFCGraph 根（相对本文件所在目录），source / md_path 相对它计算
+#               —— 替代旧代码里写死的 D:/mywork 绝对路径
+#
+# 每个 (nf, version) 下：
+#   source:        MML 命令 md 目录（相对 project_root）
+#   steps:         依序执行的步骤名（mmlcommand → enrich → parameter）
+#   parameter_csv: 可选，parameter 步骤才用（相对 project_root）
+assets_root: data/assets
+project_root: ..
+
+ne:
+  UDG:
+    20.15.2:
+      source: output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令
+      steps: [mmlcommand, enrich, parameter]
+      parameter_csv: CommandGraph/data/test.csv
+  UNC:
+    20.15.2:
+      source: output/UNC 20.15.2 产品文档(裸机容器) 05/OM参考/命令/UNC MML命令
+      steps: [mmlcommand, enrich]
