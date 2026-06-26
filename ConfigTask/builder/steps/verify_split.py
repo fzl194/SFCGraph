@@ -61,8 +61,12 @@ def run(ctx):
             doc_candidates.setdefault(c["doc_path"], []).append(c)
 
     total_errors = 0
-    for doc_path, doc in docs.items():
-        candidates = doc_candidates.get(doc_path, [])
+    checked = 0
+    for doc_path, candidates in doc_candidates.items():
+        doc = docs.get(doc_path)
+        if not doc:
+            continue
+        checked += 1
         errors = verify_candidate(doc, candidates)
         hard = [e for e in errors if e.startswith("HARD:")]
         if hard:
@@ -70,8 +74,8 @@ def run(ctx):
             total_errors += len(hard)
 
     if total_errors == 0:
-        print(f"  核查通过: {len(docs)} 份文档")
+        print(f"  核查通过: {checked} 份文档（有 candidate 的）")
     else:
-        print(f"  核查失败: {total_errors} 个硬约束错误")
+        print(f"  核查失败: {total_errors} 个硬约束错误（{checked} 份有 candidate）")
 
     return total_errors
