@@ -7,8 +7,8 @@ ne:
   UDG:
     20.15.2:
       feature_csv: ConfigTask/data/UDG_feature_files.csv
-      steps: [select, parse, cut_boundaries, commands, params, assemble, emit_skeleton]
+      steps: [select, cut_boundaries, commands, params, assemble, emit_skeleton]
   UNC:
     20.15.2:
       feature_csv: ConfigTask/data/UNC_feature_files.csv
-      steps: [select, parse, cut_boundaries, commands, params, assemble, emit_skeleton]
+      steps: [select, cut_boundaries, commands, params, assemble, emit_skeleton]
