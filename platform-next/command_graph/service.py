@@ -180,32 +180,54 @@ class CommandGraphService:
             ne = nes_map.setdefault(nf, {"name": nf, "versions_map": {}})
             ne["versions_map"].setdefault(ver, 0)
 
+        # ConfigObject 按 (nf, version) 计数
+        object_counts: dict[tuple[str, str], int] = {}
+        for obj in self._obj_objects.values():
+            o_nf = obj.get("nf") or "unknown"
+            o_ver = obj.get("version") or "unknown"
+            object_counts[(o_nf, o_ver)] = object_counts.get((o_nf, o_ver), 0) + 1
+
         nes = []
+        ne_versions = []  # 扁平：每个网元版本一个条目（合并网元+版本两级）
         for nf in sorted(nes_map.keys()):
             ne = nes_map[nf]
             versions = []
             cmd_total = 0
             param_total = 0
+            obj_total = 0
             for ver in sorted(ne["versions_map"].keys()):
                 cmd_n = ne["versions_map"][ver]
                 param_n = self._param_counts.get((nf, ver), 0)
+                obj_n = object_counts.get((nf, ver), 0)
                 cmd_total += cmd_n
                 param_total += param_n
+                obj_total += obj_n
                 versions.append({
                     "version": ver,
                     "command_count": cmd_n,
                     "parameter_count": param_n,
+                    "object_count": obj_n,
+                })
+                ne_versions.append({
+                    "nf": nf,
+                    "version": ver,
+                    "command_count": cmd_n,
+                    "parameter_count": param_n,
+                    "object_count": obj_n,
                 })
             nes.append({
                 "name": nf,
                 "command_count": cmd_total,
                 "parameter_count": param_total,
+                "object_count": obj_total,
                 "versions": versions,
             })
 
         return {
             "total": len(self._records),
             "total_parameters": sum(self._param_counts.values()),
+            "total_objects": len(self._obj_objects),
+            "ne_versions": ne_versions,
             "nes": nes,
         }
 

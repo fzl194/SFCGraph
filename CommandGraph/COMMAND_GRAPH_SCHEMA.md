@@ -345,35 +345,63 @@ ConfigObject URR
 | `MMLCommand` | `binds` | `ConfigObject` | 绑定型命令建立对象间绑定 |
 | `MMLCommand` | `queries` | `ConfigObject` | 查询类命令（LST/DSP）查询对象，不修改 |
 
-### 4.4 参数 → 参数（层内）
+### 4.4 参数 → 参数（层内，两类不同语义）
+
+参数间有**两类不同**的依赖关系，语义不同，**不混用**（原 schema 都叫 depends_on，现拆开）：
+
+#### 4.4.1 conditional_required（命令内条件依赖）
+
+同一命令内，参数 P1 的**取值**决定参数 P2 的**必选性**（P2 是否要填）。
 
 | 起点 | 关系 | 终点 | 说明 |
 | --- | --- | --- | --- |
-| `CommandParameter` | `depends_on` | `CommandParameter` | 参数条件依赖，带条件值 |
+| `CommandParameter` | `conditional_required` | `CommandParameter` | 同命令内：P1=值 → P2 必选 |
 
-`depends_on` 边需要携带条件属性：
+边属性：
 
 | 边属性 | 类型 | 说明 |
 | --- | --- | --- |
 | `condition_value` | string | 触发条件值，如 `ONLINE` |
 | `condition_expression` | string | 完整条件表达式，如 `USAGERPTMODE=ONLINE` |
+| `required_mode` | enum | 触发后 P2 必选性：`必选 / 条件必选` |
 
 示例：
 
 ```text
-CommandParameter USAGERPTMODE (值=ONLINE)
-  --depends_on [condition=USAGERPTMODE=ONLINE]--> CommandParameter ONLMETERINGTYPE
-
-CommandParameter TOKENFUNCFLAG (值=ENABLE)
-  --depends_on [condition=TOKENFUNCFLAG=ENABLE]--> CommandParameter TOKENSECRETKEY
+[ADD URR] USAGERPTMODE (值=ONLINE) --conditional_required [USAGERPTMODE=ONLINE]--> ONLMETERINGTYPE (必选)
 ```
 
-跨命令参数依赖示例：
+数据源：内网参数表的"条件"列（如 `{"3=IPV4": "必选"}`）；当前产物 `parameter_depends_on.jsonl`（建议 relation_type 由 depends_on 改为 conditional_required）。
+
+#### 4.4.2 references（跨命令值引用）
+
+跨命令，命令 A 的参数 X 的**值**必须**引用**命令 B 的参数 Y 的已存在值（外键 / 存在性约束）。
+
+| 起点 | 关系 | 终点 | 说明 |
+| --- | --- | --- | --- |
+| `CommandParameter` | `references` | `CommandParameter` | 跨命令：A.X 的值引用 B.Y 的已存在值 |
+
+边属性：
+
+| 边属性 | 类型 | 说明 |
+| --- | --- | --- |
+| `source_condition` | string | 源参数触发条件（如 `ADD_FLTBINDFLOWF.FILTERNAME != null`）|
+| `check_expression` | string | 核查逻辑（如 `.equalsIgnoreCase(...)`）|
+| `binding_strength` | enum | `强绑定 / 弱绑定`（1 强 / 0 弱）|
+| `cascade_delete` | boolean | 是否联动删除（删目标时联动删源）|
+
+示例：
 
 ```text
-[ADD URR] CommandParameter URRNAME
-  --depends_on--> [ADD URRGROUP] CommandParameter UPURRNAME1 (值必须来自已存在的 URR)
+[ADD FLTBINDFLOWF] FILTERNAME --references--> [ADD FILTER] FILTERNAME (值必须 = 已存在的 FILTER.FILTERNAME)
+[ADD URRGROUP] UPURRNAME1/2/3、DOWNURRNAME1/2/3 --references--> [ADD URR] URRNAME
 ```
+
+数据源：内网**参数引用规则**（`内网-参数引用规则.csv`，海量、按网元版本、可能是 excel）；产物 `parameter_references.jsonl`。
+
+> **两类区别**：conditional_required 回答"P2 什么时候必填"（同命令，P1 取值改 P2 必选性）；references 回答"X 的值从哪来"（跨命令，X 引用 Y 的已存在值）。
+>
+> **推导对象关系**：把 references 的源/目标参数聚合到所属 ConfigObject，可得 §4.5 的 `refers_to`（FLTBINDFLOWF.FILTERNAME→FILTER.FILTERNAME ⇒ ConfigObject `FLTBINDFLOWF refers_to FILTER`，via_parameter=FILTERNAME）。
 
 ### 4.5 配置对象 → 配置对象（层内）
 
@@ -381,7 +409,7 @@ CommandParameter TOKENFUNCFLAG (值=ENABLE)
 | --- | --- | --- | --- |
 | `ConfigObject` | `has` | `ConfigObject` | **拥有/聚合**：子依附于父，生命周期绑定，父删则子失效（如 APN has 子配置） |
 | `ConfigObject` | `contains` | `ConfigObject` | 结构包含（子可独立存在，无生命周期绑定） |
-| `ConfigObject` | `refers_to` | `ConfigObject` | 引用独立对象（如 RULE 引用 PCCPOLICYGRP；URRGROUP 引用 URR） |
+| `ConfigObject` | `refers_to` | `ConfigObject` | 引用独立对象（如 RULE 引用 PCCPOLICYGRP；URRGROUP 引用 URR）。**数据源：从 §4.4.2 references 聚合推导**（via_parameter）|
 | `ConfigObject` | `depends_on` | `ConfigObject` | 依赖关系（如 PCCPOLICYGRP 依赖 URRGROUP） |
 | `ConfigObject` | `conflicts_with` | `ConfigObject` | 冲突/互斥 |
 | `ConfigObject` | `composed_by` | `ConfigObject` | 组合关系（如 PCCPOLICYGRP 由多个子对象组合） |

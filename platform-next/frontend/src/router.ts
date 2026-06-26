@@ -18,11 +18,6 @@ const router = createRouter({
           component: () => import('./command_graph/CommandOverview.vue'),
         },
         {
-          path: ':nf',
-          name: 'command-versions',
-          component: () => import('./command_graph/CommandVersions.vue'),
-        },
-        {
           path: ':nf/:version',
           name: 'command-list',
           component: () => import('./command_graph/CommandList.vue'),

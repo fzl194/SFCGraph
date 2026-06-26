@@ -3,7 +3,7 @@
     <!-- LEFT: 对象 tab -->
     <section class="cmd-pane cmd-pane--left" :style="leftStyle">
       <el-tabs v-model="leftTab" class="cmd-tabs">
-        <el-tab-pane label="MMLCommand" name="mmlcommand">
+        <el-tab-pane label="命令" name="mmlcommand">
           <header class="cmd-hero">
             <div class="cmd-hero-id">{{ command.command_name }}</div>
             <h1 class="cmd-hero-name">{{ command.command_name_zh }}</h1>
@@ -30,15 +30,6 @@
           />
         </el-tab-pane>
 
-        <el-tab-pane label="图谱" name="graph">
-          <CommandGraph
-            v-if="activatedTabs.graph"
-            :nf="nf"
-            :command-name="commandName"
-            :version="version"
-          />
-        </el-tab-pane>
-
         <el-tab-pane label="配置对象" name="object">
           <div v-if="commandObject" class="cmd-object">
             <header class="cmd-hero">
@@ -56,6 +47,15 @@
           </div>
           <div v-else-if="!loadingObject" class="cmd-pane-empty">该命令未关联配置对象</div>
           <div v-else class="cmd-pane-empty">加载中…</div>
+        </el-tab-pane>
+
+        <el-tab-pane label="图谱" name="graph">
+          <CommandGraph
+            v-if="activatedTabs.graph"
+            :nf="nf"
+            :command-name="commandName"
+            :version="version"
+          />
         </el-tab-pane>
       </el-tabs>
     </section>

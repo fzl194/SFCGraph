@@ -278,7 +278,11 @@ class HtmlToMarkdownConverter:
         if name in self.RAW_HTML_TAGS:
             return str(node).strip() + "\n\n"
 
-        if self._has_class_name(node, "note", "warning", "caution", "tip") and name == "div":
+        _node_classes = node.get("class", []) or []
+        _is_mml_section = any(str(c).lower().startswith("mml") for c in _node_classes)
+        if (self._has_class_name(node, "note", "warning", "caution", "tip")
+                and name == "div"
+                and not _is_mml_section):
             return self._render_note_block(node)
 
         if name == "div" and self._has_class_name(node, "fignone"):

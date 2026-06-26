@@ -60,6 +60,7 @@ def make_ctx(cfg: dict, nf: str, version: str, entry: dict) -> SimpleNamespace:
         mod_rules_csv=_opt_csv("mod_rules_csv"),
         rmv_rules_csv=_opt_csv("rmv_rules_csv"),
         uniqueness_rules_csv=_opt_csv("uniqueness_rules_csv"),
+        param_reference_csv=_opt_csv("param_reference_csv"),
     )
 
 

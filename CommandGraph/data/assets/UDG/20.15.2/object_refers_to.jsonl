@@ -1,0 +1,76 @@
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@FLTBINDFLOWF", "to_object_ref": "UDG@20.15.2@ConfigObject@FILTER", "via_parameter": ["FILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@URRGROUP", "to_object_ref": "UDG@20.15.2@ConfigObject@URR", "via_parameter": ["DOWNURRNAME1", "DOWNURRNAME2", "DOWNURRNAME3", "UPURRNAME1", "UPURRNAME2", "UPURRNAME3"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@FILTER", "to_object_ref": "UDG@20.15.2@ConfigObject@IPLIST", "via_parameter": ["MSIPLISTNAME", "SVRIPLISTNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IPFARMSERVER", "to_object_ref": "UDG@20.15.2@ConfigObject@REDIRAPPENDINFO", "via_parameter": ["APPENDINFONAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IPFARM", "to_object_ref": "UDG@20.15.2@ConfigObject@LOGICINF", "via_parameter": ["INTERFACENAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@POOLBINDGROUP", "to_object_ref": "UDG@20.15.2@ConfigObject@POOL", "via_parameter": ["POOLNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SECTION", "to_object_ref": "UDG@20.15.2@ConfigObject@POOL", "via_parameter": ["POOLNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@POOLGRPMAP", "to_object_ref": "UDG@20.15.2@ConfigObject@APN", "via_parameter": ["APN"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@APNBINDBWMUSRG", "to_object_ref": "UDG@20.15.2@ConfigObject@APN", "via_parameter": ["APN"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@APNBINDBWMUSRG", "to_object_ref": "UDG@20.15.2@ConfigObject@BWMUSERGROUP", "via_parameter": ["USERGROUPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@APNIMSSIGFLTR", "to_object_ref": "UDG@20.15.2@ConfigObject@APN", "via_parameter": ["APN"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@GRETUNNEL", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["SRCIFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@ETHSUBIF", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IPBINDVPN", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IPBINDVPN", "to_object_ref": "UDG@20.15.2@ConfigObject@GRETUNNEL", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IFIPV6ENABLE", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BFDSESSION", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SRROUTE", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SRROUTE", "to_object_ref": "UDG@20.15.2@ConfigObject@GRETUNNEL", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SRROUTE", "to_object_ref": "UDG@20.15.2@ConfigObject@BFDSESSION", "via_parameter": ["SESSIONNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IFIPV6ADDRESS", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IFIPV6ADDRESS", "to_object_ref": "UDG@20.15.2@ConfigObject@GRETUNNEL", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SRROUTE6", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SRROUTE6", "to_object_ref": "UDG@20.15.2@ConfigObject@GRETUNNEL", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SRROUTE6", "to_object_ref": "UDG@20.15.2@ConfigObject@BFDSESSION", "via_parameter": ["SESSIONNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IFIPV4ADDRESS", "to_object_ref": "UDG@20.15.2@ConfigObject@INTERFACE", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IFIPV4ADDRESS", "to_object_ref": "UDG@20.15.2@ConfigObject@GRETUNNEL", "via_parameter": ["IFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@QOSPROP", "to_object_ref": "UDG@20.15.2@ConfigObject@URR", "via_parameter": ["QOSURRNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@FILTERIPV6", "to_object_ref": "UDG@20.15.2@ConfigObject@IPLIST", "via_parameter": ["SVRIPLISTNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTER", "to_object_ref": "UDG@20.15.2@ConfigObject@FILTERGROUP", "via_parameter": ["FILTERGRPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@FLTBINDFLOWF", "to_object_ref": "UDG@20.15.2@ConfigObject@FILTERIPV6", "via_parameter": ["FILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@FLTBINDFLOWF", "to_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTER", "via_parameter": ["FLOWFILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@USERPROFILE", "to_object_ref": "UDG@20.15.2@ConfigObject@EXTENDPROP", "via_parameter": ["EXTENDPROPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@RULE", "to_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTER", "via_parameter": ["FLOWFILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@RULE", "to_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTERGRP", "via_parameter": ["FLWFLTRGRPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@RULE", "to_object_ref": "UDG@20.15.2@ConfigObject@TIMERANGE", "via_parameter": ["TIMERANGENAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@FILTER", "to_object_ref": "UDG@20.15.2@ConfigObject@HOST", "via_parameter": ["HOSTNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@RULEBINDING", "to_object_ref": "UDG@20.15.2@ConfigObject@USERPROFILE", "via_parameter": ["USERPROFILENAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@PROTBINDFLOWF", "to_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTER", "via_parameter": ["FLOWFILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@PROTBINDFLOWF", "to_object_ref": "UDG@20.15.2@ConfigObject@L7FILTER", "via_parameter": ["L7FILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@PCCPOLICYGRP", "to_object_ref": "UDG@20.15.2@ConfigObject@EXTENDPROP", "via_parameter": ["EXTENDPROPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@PCCPOLICYGRP", "to_object_ref": "UDG@20.15.2@ConfigObject@PCCACTIONPROP", "via_parameter": ["PCCACTPROPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@PCCPOLICYGRP", "to_object_ref": "UDG@20.15.2@ConfigObject@URRGROUP", "via_parameter": ["SIGURRGRPNAME", "URRGROUPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@PCCPOLICYGRP", "to_object_ref": "UDG@20.15.2@ConfigObject@QOSPROP", "via_parameter": ["QOSPROPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@ADCPARA", "to_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTER", "via_parameter": ["FLOWFILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@LOGICINF", "to_object_ref": "UDG@20.15.2@ConfigObject@VPNINST", "via_parameter": ["VPNINSTANCE"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@APN", "to_object_ref": "UDG@20.15.2@ConfigObject@VPNINST", "via_parameter": ["VPNINSTANCE", "VPNINSTANCEIPV6"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BLACKLISTRULE", "to_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTER", "via_parameter": ["FLOWFILTERNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BLACKLISTRULE", "to_object_ref": "UDG@20.15.2@ConfigObject@FLOWFILTERGRP", "via_parameter": ["FLWFLTRGRPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BLACKLISTRULE", "to_object_ref": "UDG@20.15.2@ConfigObject@TIMERANGE", "via_parameter": ["TIMERANGENAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IPFARMSERVER", "to_object_ref": "UDG@20.15.2@ConfigObject@IPFARM", "via_parameter": ["IPFARMNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IPFARM", "to_object_ref": "UDG@20.15.2@ConfigObject@VPNINST", "via_parameter": ["VPNINSTANCE"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@POOLBINDGROUP", "to_object_ref": "UDG@20.15.2@ConfigObject@POOLGROUP", "via_parameter": ["POOLGROUPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@POOLGRPMAP", "to_object_ref": "UDG@20.15.2@ConfigObject@LACGROUP", "via_parameter": ["LOCATIONGRPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@LACID", "to_object_ref": "UDG@20.15.2@ConfigObject@LACGROUP", "via_parameter": ["LACGROUPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@POOLGRPMAP", "to_object_ref": "UDG@20.15.2@ConfigObject@TACGROUP", "via_parameter": ["LOCATIONGRPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@POOLGRPMAP", "to_object_ref": "UDG@20.15.2@ConfigObject@POOLGROUP", "via_parameter": ["POOLGROUPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@POOL", "to_object_ref": "UDG@20.15.2@ConfigObject@VPNINST", "via_parameter": ["VPNINSTANCE"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BWMSERVICE", "to_object_ref": "UDG@20.15.2@ConfigObject@CATEGORYPROP", "via_parameter": ["CATEPROPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@APNTETHERDETSW", "to_object_ref": "UDG@20.15.2@ConfigObject@APN", "via_parameter": ["APN"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BWMRULE", "to_object_ref": "UDG@20.15.2@ConfigObject@BWMSERVICE", "via_parameter": ["BWMSERVICENAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BWMRULE", "to_object_ref": "UDG@20.15.2@ConfigObject@BWMCONTROLLER", "via_parameter": ["DNBWMCTRLNAME1", "DNBWMCTRLNAME2", "DNBWMCTRLNAME3", "DNBWMCTRLNAME4", "UPBWMCTRLNAME1", "UPBWMCTRLNAME2", "UPBWMCTRLNAME3", "UPBWMCTRLNAME4"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BWMRULE", "to_object_ref": "UDG@20.15.2@ConfigObject@BWMUSERGROUP", "via_parameter": ["USERGROUPNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BWMRULE", "to_object_ref": "UDG@20.15.2@ConfigObject@TIMERANGE", "via_parameter": ["TIMERANGENAME1", "TIMERANGENAME2", "TIMERANGENAME3", "TIMERANGENAME4"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@APNIMSATTR", "to_object_ref": "UDG@20.15.2@ConfigObject@APN", "via_parameter": ["APN"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@DNSOVERWRITING", "to_object_ref": "UDG@20.15.2@ConfigObject@ERRORCODE", "via_parameter": ["BINDERRCODENAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@DNSOVERWRITING", "to_object_ref": "UDG@20.15.2@ConfigObject@EXTENDEDFILTER", "via_parameter": ["EXTFLTNAME1", "EXTFLTNAME2", "EXTFLTNAME3", "EXTFLTNAME4", "EXTFLTNAME5"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@VPNINSTAF", "to_object_ref": "UDG@20.15.2@ConfigObject@L3VPNINST", "via_parameter": ["VRFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@IPBINDVPN", "to_object_ref": "UDG@20.15.2@ConfigObject@L3VPNINST", "via_parameter": ["VRFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BFDSESSION", "to_object_ref": "UDG@20.15.2@ConfigObject@L3VPNINST", "via_parameter": ["VRFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BFDSESSION", "to_object_ref": "UDG@20.15.2@ConfigObject@IFIPV4ADDRESS", "via_parameter": ["SRCADDR4"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@BFDSESSION", "to_object_ref": "UDG@20.15.2@ConfigObject@IFIPV6ADDRESS", "via_parameter": ["SRCADDR6"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@SRROUTE", "to_object_ref": "UDG@20.15.2@ConfigObject@L3VPNINST", "via_parameter": ["VRFNAME"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@ACLBINDAPN", "to_object_ref": "UDG@20.15.2@ConfigObject@APN", "via_parameter": ["APN"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@OSPFV3INTERFACE", "to_object_ref": "UDG@20.15.2@ConfigObject@OSPFV3AREA", "via_parameter": ["AREAID"]}
+{"edge_type": "refers_to", "from_object_ref": "UDG@20.15.2@ConfigObject@OSPF", "to_object_ref": "UDG@20.15.2@ConfigObject@L3VPNINST", "via_parameter": ["VRFNAME"]}
