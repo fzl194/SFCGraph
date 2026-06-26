@@ -28,6 +28,11 @@ export const commandGraphApi = {
     if (version) p.set('version', version)
     return `${BASE}/command-graph/command-object?${p}`
   },
+  subgraph: (center: string, hops = 2, edgeTypes?: string[]) => {
+    const p = new URLSearchParams({ center, hops: String(hops) })
+    if (edgeTypes?.length) p.set('edge_types', edgeTypes.join(','))
+    return `${BASE}/command-graph/subgraph?${p}`
+  },
 }
 
 export const businessGraphApi = {

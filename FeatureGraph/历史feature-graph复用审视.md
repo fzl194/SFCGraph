@@ -74,12 +74,15 @@
 
 用途：
 
-- 生成 `License` 节点
-- 生成 `Feature requires_license License` 关系
+- 生成 `licenses.jsonl`
+- 生成 `feature_requires_license.jsonl`
 - 保留 `license_number / license_code / license_name / applicable_nf`
 
 注意：
 
+- 特性层的 `License` 指产品文档中的 License 控制项，不指 License 文件、LAC、ESN 或运行状态
+- `UDG License描述` 目录可补齐 License 控制项完整字段
+- License 控制项里的“相关控制项”第一版只保留原文字段，不单独建关系表
 - License 开通命令不属于特性层
 - License 配置动作应下沉到 `ConfigTask` 和 `CommandGraph`
 
@@ -282,6 +285,21 @@ Feature
 - 可审计的中间产物
 - 可回放的抽取链路
 
+所有最终 JSONL 的节点 ID 对齐命令层和任务层，统一使用四段式实例键：
+
+```text
+{nf}@{version}@{ObjectType}@{local_name}
+```
+
+例如：
+
+```text
+UDG@20.15.2@Feature@GWFD-020301
+UDG@20.15.2@License@LKV3G5BCBC01
+```
+
+关系不建成对象，不使用四段式对象实例键；边表按 `source_id + relation_type + target_id` 管理，可选 `edge_id` 只作为工程去重键。
+
 ### 5.2 建议 pipeline 分层
 
 ```text
@@ -311,7 +329,7 @@ raw assets
 
 - 输入：feature_license CSV
 - 输出：`licenses.staging.jsonl`、`feature_requires_license.staging.jsonl`
-- 目标：建立 License 节点和 License 门控关系
+- 目标：建立 License 控制项表和 Feature 到 License 的门控边表
 
 阶段四：Dependency seed
 
@@ -353,4 +371,3 @@ raw assets
 再统一 JSONL 格式
 最后沉淀可配置 pipeline
 ```
-

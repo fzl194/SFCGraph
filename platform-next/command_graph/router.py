@@ -80,6 +80,17 @@ def get_command_object(
     return {"object": obj}
 
 
+@router.get("/subgraph")
+def get_subgraph(
+    center: str = Query(...),
+    hops: int = Query(2, ge=1, le=3),
+    edge_types: str | None = Query(None),
+):
+    svc = get_service()
+    types = [t.strip() for t in edge_types.split(",") if t.strip()] if edge_types else None
+    return svc.get_subgraph(center, hops, types)
+
+
 @router.get("/doc-content")
 def get_doc_content(path: str = Query(..., description="Relative path to md file")):
     svc = get_service()

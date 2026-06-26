@@ -62,13 +62,13 @@ class BuildCommandParameterTests(unittest.TestCase):
 
         self.assertEqual(len(result["parameters"]), 2)
         self.assertEqual(len(result["has_parameter_edges"]), 2)
-        self.assertEqual(len(result["depends_on_edges"]), 1)
+        self.assertEqual(len(result["conditional_required_edges"]), 1)
         self.assertEqual(result["skipped_placeholders"], 1)
         self.assertEqual(result["unresolved_dependencies"], [])
 
         switch = result["parameters"][0]
         ipv4 = result["parameters"][1]
-        dep = result["depends_on_edges"][0]
+        dep = result["conditional_required_edges"][0]
 
         self.assertEqual(switch["parameter_id"], "UDG@20.13.2@CommandParameter@SET DEMO:SWITCH")
         self.assertEqual(switch["nf"], "UDG")
@@ -94,6 +94,7 @@ class BuildCommandParameterTests(unittest.TestCase):
         self.assertEqual(dep["condition_ref"], "SWITCH")
         self.assertEqual(dep["condition_logic"], "等于")
         self.assertEqual(dep["condition_value"], "ON")
+        self.assertEqual(dep["edge_type"], "conditional_required")
         self.assertNotIn("binding_strength", dep)  # 新实现不产 binding_strength
         self.assertNotIn("source_evidence_ids", dep)
 

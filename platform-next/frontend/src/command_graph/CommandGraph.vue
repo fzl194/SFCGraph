@@ -2,7 +2,7 @@
   <div v-loading="loading" class="cmd-graph-wrap">
     <div v-if="hasGraph" ref="containerRef" class="cmd-graph-canvas"></div>
     <div v-else-if="!loading" class="cmd-pane-empty">
-      该命令无参数，无可绘制关系
+      该命令无可绘制关系
     </div>
   </div>
 </template>
@@ -25,42 +25,37 @@ const hasGraph = ref(false)
 let networkInstance: any = null
 let resizeObserver: ResizeObserver | null = null
 
-// 节点 group 配色（项目色系：command 突出/config_object 紫/parameter 常规/external 弱化虚线）
+// node.type → 渲染 group 配色（与 get_subgraph 返回的 type 对齐）
 const GROUP_COLORS = {
   command: { background: '#0891b2', border: '#0e7490', font: { color: '#ffffff' } },
   config_object: { background: '#7c3aed', border: '#6d28d9', font: { color: '#ffffff' } },
   parameter: { background: '#ffffff', border: '#0891b2', font: { color: '#1a1d23' } },
   parameter_external: { background: '#f6f7f9', border: '#94a3b8', font: { color: '#94a3b8' } },
 }
+// command→object 关系（紫）；has_parameter/conditional_required/references 青；refers_to 紫虚线
+const OBJECT_RELATIONS = new Set(['creates', 'modifies', 'deletes', 'sets', 'queries', 'operates_on'])
 
-// command→object 关系类型（这些边连 config_object 节点，显示 relation label）
-const OBJECT_RELATIONS = new Set(['creates', 'modifies', 'deletes', 'sets', 'binds', 'queries', 'operates_on'])
+interface VisNode { id: string; type: string; label: string; properties?: Record<string, any> }
+interface VisEdge { from: string; to: string; type: string; properties?: Record<string, any> }
 
-interface VisNode {
-  id: string
-  label: string
-  group: string
-  title?: string
-}
-interface VisEdge {
-  from: string
-  to: string
-  type: string
-  label?: string
-  title?: string
-}
-
-function buildVisNodes(nodes: VisNode[]) {
+function buildVisNodes(nodes: VisNode[], centerCommandId: string) {
   return nodes.map((n) => {
-    const color = (GROUP_COLORS as any)[n.group] || GROUP_COLORS.parameter
-    const isExternal = n.group === 'parameter_external'
-    const isMajor = n.group === 'command' || n.group === 'config_object'
+    let group = n.type === 'MMLCommand' ? 'command'
+      : n.type === 'ConfigObject' ? 'config_object' : 'parameter'
+    // parameter_external：参数所属命令 ≠ center（跨命令 references 来的外部参数），或悬空（无 command_id）
+    if (group === 'parameter') {
+      const cmdId = n.properties?.command_id
+      if (!cmdId || cmdId !== centerCommandId) group = 'parameter_external'
+    }
+    const color = (GROUP_COLORS as any)[group] || GROUP_COLORS.parameter
+    const isExternal = group === 'parameter_external'
+    const isMajor = group === 'command' || group === 'config_object'
     return {
       id: n.id,
       label: n.label,
-      title: n.title || n.label,
-      group: n.group,
-      shape: n.group === 'command' ? 'box' : n.group === 'config_object' ? 'diamond' : 'ellipse',
+      title: n.label,
+      group,
+      shape: group === 'command' ? 'box' : group === 'config_object' ? 'diamond' : 'ellipse',
       color: {
         background: color.background,
         border: color.border,
@@ -69,7 +64,7 @@ function buildVisNodes(nodes: VisNode[]) {
       font: { ...color.font, size: isMajor ? 14 : 12, face: 'Inter', multi: false },
       borderWidth: isMajor ? 2 : 1,
       borderWidthSelected: 2,
-      dashes: isExternal, // external 弱化为虚边框
+      dashes: isExternal, // external 弱化虚边框
       margin: 8,
     }
   })
@@ -77,21 +72,27 @@ function buildVisNodes(nodes: VisNode[]) {
 
 function buildVisEdges(edges: VisEdge[]) {
   return edges.map((e) => {
-    const isDepends = e.type === 'depends_on'
-    const isObjectEdge = OBJECT_RELATIONS.has(e.type)
-    // depends_on 青色实线+条件label；command→object 紫色实线+relation label；has_parameter 淡灰无 label
-    const edgeColor = isDepends ? '#0891b2' : isObjectEdge ? '#7c3aed' : '#cbd5e1'
-    const edgeLabel = isDepends ? e.label : isObjectEdge ? e.label : undefined
-    const edgeTitle = e.title || (isDepends ? '依赖' : isObjectEdge ? '操作对象' : '包含参数')
+    const isCond = e.type === 'conditional_required'
+    const isRef = e.type === 'references'
+    const isObj = OBJECT_RELATIONS.has(e.type)
+    const isRefersTo = e.type === 'refers_to'
+    // 配色：条件/引用 青；对象边/refers 紫（refers 虚线）；has_parameter 淡灰
+    const color = (isCond || isRef) ? '#0891b2' : (isObj || isRefersTo) ? '#7c3aed' : '#cbd5e1'
+    const props = e.properties || {}
+    const label = isCond ? `=${props.condition_value || ''}`
+      : isRef ? '引用'
+      : isObj ? e.type
+      : isRefersTo ? 'refers'
+      : undefined
     return {
       from: e.from,
       to: e.to,
       type: e.type,
       arrows: 'to' as const,
-      color: { color: edgeColor, highlight: '#0891b2' },
-      dashes: false,
-      label: edgeLabel,
-      title: edgeTitle,
+      color: { color, highlight: '#0891b2' },
+      dashes: isRefersTo,
+      label,
+      title: label || e.type,
       font: {
         size: 10,
         color: '#4b5563',
@@ -105,16 +106,15 @@ function buildVisEdges(edges: VisEdge[]) {
   })
 }
 
-async function renderGraph(nodes: VisNode[], edges: VisEdge[]) {
+async function renderGraph(nodes: VisNode[], edges: VisEdge[], centerCommandId: string) {
   if (!containerRef.value) return
   const vis = await import('vis-network/standalone')
   const Network = vis.Network
   const DataSet: any = vis.DataSet
 
-  const visNodes = buildVisNodes(nodes)
+  const visNodes = buildVisNodes(nodes, centerCommandId)
   const visEdges = buildVisEdges(edges)
 
-  // 销毁旧实例防泄漏
   if (networkInstance) {
     networkInstance.destroy()
     networkInstance = null
@@ -142,7 +142,6 @@ async function renderGraph(nodes: VisNode[], edges: VisEdge[]) {
     }
   )
 
-  // 容器尺寸变化（拖拽分隔条 / 折叠栏）时重绘 canvas，避免错位
   if (resizeObserver) resizeObserver.disconnect()
   if (typeof ResizeObserver !== 'undefined' && containerRef.value) {
     resizeObserver = new ResizeObserver(() => {
@@ -155,14 +154,18 @@ async function renderGraph(nodes: VisNode[], edges: VisEdge[]) {
 async function load() {
   loading.value = true
   try {
-    const data = await fetchJson(commandGraphApi.commandGraph(props.nf, props.commandName, props.version))
+    const center = `${props.nf}@${props.version}@MMLCommand@${props.commandName}`
+    const url = commandGraphApi.subgraph(center, 2, [
+      'has_parameter', 'creates', 'modifies', 'sets', 'queries', 'operates_on',
+      'conditional_required', 'references', 'refers_to',
+    ])
+    const data = await fetchJson(url)
     const nodes: VisNode[] = data.nodes || []
     const edges: VisEdge[] = data.edges || []
-    // 有节点且至少有命令节点才认为有可绘制内容
     hasGraph.value = nodes.length > 0
     if (hasGraph.value) {
       await nextTick()
-      await renderGraph(nodes, edges)
+      await renderGraph(nodes, edges, center)
     } else if (networkInstance) {
       networkInstance.destroy()
       networkInstance = null

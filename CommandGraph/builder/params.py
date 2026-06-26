@@ -197,7 +197,7 @@ def build_depends_on_edges(parameter_rows, source_name):
 
             edges.append(
                 {
-                    "edge_type": "depends_on",
+                    "edge_type": "conditional_required",
                     "from_parameter_ref": source_parameter["parameter_id"],
                     "to_parameter_ref": parameter["parameter_id"],
                     "condition_ref": source_parameter["parameter_name"],
@@ -234,7 +234,7 @@ def build_from_rows(rows, source_name, command_ids=None):
     return {
         "parameters": parameters,
         "has_parameter_edges": has_parameter_edges,
-        "depends_on_edges": depends_on_edges,
+        "conditional_required_edges": depends_on_edges,
         "skipped_placeholders": skipped_placeholders,
         "missing_commands": sorted(set(missing_commands)),
         "unresolved_dependencies": unresolved_dependencies,

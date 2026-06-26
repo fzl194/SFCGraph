@@ -70,6 +70,10 @@ class CommandGraphService:
         # ConfigObject
         self._obj_objects: dict[str, dict] = {}  # object_id -> record
         self._obj_edges: dict[tuple[str, str], list[dict]] = {}  # (nf,version) -> command_object_edges
+        # 统一图（跨命令 references + 对象间 refers_to + adjacency）
+        self._param_refs: dict[tuple[str, str], list[dict]] = {}
+        self._obj_refers_to: dict[tuple[str, str], list[dict]] = {}
+        self._adjacency: dict[str, dict] = {}
         self._load()
 
     @property
@@ -98,14 +102,18 @@ class CommandGraphService:
                 self._load_jsonl_bucket(fp, nf, version, self._params)
             elif object_type == "command_has_parameter":
                 self._load_jsonl_bucket(fp, nf, version, self._has_param)
-            elif object_type == "parameter_depends_on":
+            elif object_type == "parameter_conditional_required":
                 self._load_jsonl_bucket(fp, nf, version, self._depends)
             elif object_type == "config_objects":
                 self._load_config_objects(fp)
             elif object_type == "command_object_edges":
                 self._load_jsonl_bucket(fp, nf, version, self._obj_edges)
-            # other relation files are recognised as edge classes but not
-            # consumed by current endpoints — load on demand when one is needed.
+            elif object_type == "parameter_references":
+                self._load_jsonl_bucket(fp, nf, version, self._param_refs)
+            elif object_type == "object_refers_to":
+                self._load_jsonl_bucket(fp, nf, version, self._obj_refers_to)
+        # 所有分桶加载完 → 聚合统一图（spec §3.2）
+        self._load_graph()
 
     def _load_mml_commands(self, fp: Path) -> None:
         with fp.open(encoding="utf-8") as f:
@@ -502,6 +510,95 @@ class CommandGraphService:
         if not full:
             return ""
         return full.read_text(encoding="utf-8")
+
+    # ---- 统一图（spec §3.2 内存图 + §3.3 get_subgraph）----
+    def _load_graph(self) -> None:
+        """聚合所有分桶到统一图 adjacency。
+
+        adjacency[node_id] = {"node": {id,type,label,properties}, "out": [(to,type,props)], "in": [(from,type,props)]}
+        点表外的边端点（悬空）以 type=None 补入，保证图连通。
+        """
+        adj: dict[str, dict] = {}
+
+        def add_node(node_id, ntype, label, props):
+            if not node_id or node_id in adj:
+                return
+            adj[node_id] = {
+                "node": {"id": node_id, "type": ntype, "label": label or node_id, "properties": props or {}},
+                "out": [], "in": [],
+            }
+
+        def add_edge(from_id, to_id, etype, props):
+            if not from_id or not to_id:
+                return
+            add_node(from_id, None, None, {})  # 端点可能不在点表（悬空）
+            add_node(to_id, None, None, {})
+            adj[from_id]["out"].append((to_id, etype, props))
+            adj[to_id]["in"].append((from_id, etype, props))
+
+        # 点：MMLCommand / CommandParameter / ConfigObject
+        for rec in self._records:
+            add_node(rec.get("command_id"), "MMLCommand", rec.get("command_name"), rec)
+        for bucket in self._params.values():
+            for p in bucket:
+                add_node(p.get("parameter_id"), "CommandParameter", p.get("parameter_name"), p)
+        for obj in self._obj_objects.values():
+            add_node(obj.get("object_id"), "ConfigObject", obj.get("object_name"), obj)
+        # 边（按 spec §3.1 映射表）
+        for bucket in self._has_param.values():
+            for e in bucket:
+                add_edge(e.get("from_command_ref"), e.get("to_parameter_ref"), "has_parameter", {})
+        for bucket in self._depends.values():
+            for e in bucket:
+                props = {k: e.get(k) for k in ("condition_ref", "condition_logic", "condition_value") if e.get(k) is not None}
+                add_edge(e.get("from_parameter_ref"), e.get("to_parameter_ref"), "conditional_required", props)
+        for bucket in self._param_refs.values():
+            for e in bucket:
+                props = {k: e.get(k) for k in ("source_condition", "check_expression", "binding_strength", "cascade_delete") if e.get(k) is not None}
+                add_edge(e.get("from_parameter_ref"), e.get("to_parameter_ref"), "references", props)
+        for bucket in self._obj_edges.values():
+            for e in bucket:
+                add_edge(e.get("from_command_ref"), e.get("to_object_ref"), e.get("edge_type") or "operates_on", {})
+        for bucket in self._obj_refers_to.values():
+            for e in bucket:
+                add_edge(e.get("from_object_ref"), e.get("to_object_ref"), "refers_to", {"via_parameter": e.get("via_parameter")})
+        self._adjacency = adj
+
+    def get_subgraph(self, center: str, hops: int = 2, edge_types: list[str] | None = None) -> dict:
+        """BFS 取 center 的 N 跳子图（spec §3.3）。
+
+        edge_types 既限遍历也限包含；node 按 id 去重，edge 按 (from,to,type,properties) 身份去重
+        （properties 是 dict 不可 hash，用 json.dumps sort_keys 序列化入 set）。
+        """
+        if center not in self._adjacency:
+            return {"nodes": [], "edges": []}
+        edge_set = set(edge_types) if edge_types else None
+        nodes_seen: dict[str, dict] = {center: self._adjacency[center]["node"]}
+        edge_seen: set[str] = set()
+        edges_out: list[dict] = []
+        frontier = [center]
+        for _ in range(hops):
+            nxt: list[str] = []
+            for nid in frontier:
+                entry = self._adjacency.get(nid)
+                if not entry:
+                    continue
+                # 邻居 + 边方向：out(nid→other) / in(other→nid)
+                candidates = ([(to, nid, to, et, pr) for (to, et, pr) in entry["out"]]
+                              + [(frm, frm, nid, et, pr) for (frm, et, pr) in entry["in"]])
+                for other, ef, et_, etype, props in candidates:
+                    if edge_set is not None and etype not in edge_set:
+                        continue
+                    key = f"{ef}\x1f{et_}\x1f{etype}\x1f{json.dumps(props, sort_keys=True, ensure_ascii=False)}"
+                    if key in edge_seen:
+                        continue
+                    edge_seen.add(key)
+                    edges_out.append({"from": ef, "to": et_, "type": etype, "properties": props})
+                    if other not in nodes_seen:
+                        nodes_seen[other] = self._adjacency[other]["node"]
+                        nxt.append(other)
+            frontier = nxt
+        return {"nodes": list(nodes_seen.values()), "edges": edges_out}
 
 
 # Singleton

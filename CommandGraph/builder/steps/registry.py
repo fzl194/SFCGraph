@@ -32,7 +32,7 @@ PRODUCT_FILE = {
     "mml_commands": "mml_commands.jsonl",
     "command_parameters": "command_parameters.jsonl",
     "command_has_parameter": "command_has_parameter.jsonl",
-    "parameter_depends_on": "parameter_depends_on.jsonl",
+    "parameter_conditional_required": "parameter_conditional_required.jsonl",
     "config_objects": "config_objects.jsonl",
     "command_object_edges": "command_object_edges.jsonl",
     "parameter_references": "parameter_references.jsonl",
@@ -43,7 +43,7 @@ PRODUCT_FILE = {
 PROVIDES = {
     "mmlcommand": ("mml_commands",),
     "enrich": ("mml_commands",),  # 原地富化，产出仍是 mml_commands
-    "parameter": ("command_parameters", "command_has_parameter", "parameter_depends_on"),
+    "parameter": ("command_parameters", "command_has_parameter", "parameter_conditional_required"),
     "configobject": ("config_objects", "command_object_edges"),
     "paramref": ("parameter_references", "object_refers_to"),
 }

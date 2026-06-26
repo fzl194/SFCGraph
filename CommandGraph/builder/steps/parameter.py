@@ -24,7 +24,7 @@ def run(ctx: SimpleNamespace) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     params_path = out_dir / "command_parameters.jsonl"
     has_path = out_dir / "command_has_parameter.jsonl"
-    deps_path = out_dir / "parameter_depends_on.jsonl"
+    deps_path = out_dir / "parameter_conditional_required.jsonl"
 
     mml_path = out_dir / "mml_commands.jsonl"
     command_ids = load_command_ids(mml_path) if mml_path.exists() else None
@@ -34,12 +34,12 @@ def run(ctx: SimpleNamespace) -> int:
 
     write_jsonl(params_path, result["parameters"])
     write_jsonl(has_path, result["has_parameter_edges"])
-    write_jsonl(deps_path, result["depends_on_edges"])
+    write_jsonl(deps_path, result["conditional_required_edges"])
 
     print(f"[parameter:{ctx.nf}/{ctx.version}] rows: {len(rows)} "
           f"| parameters: {len(result['parameters'])} "
           f"| has_parameter: {len(result['has_parameter_edges'])} "
-          f"| depends_on: {len(result['depends_on_edges'])} "
+          f"| conditional_required: {len(result['conditional_required_edges'])} "
           f"| skipped_placeholders: {result['skipped_placeholders']} "
           f"| missing_commands: {len(result['missing_commands'])} "
           f"| unresolved_deps: {len(result['unresolved_dependencies'])}")

@@ -361,9 +361,9 @@ ConfigObject URR
 
 | 边属性 | 类型 | 说明 |
 | --- | --- | --- |
+| `condition_ref` | string | 触发参数名，如 `USAGERPTMODE` |
+| `condition_logic` | enum | 条件逻辑（默认 `等于`） |
 | `condition_value` | string | 触发条件值，如 `ONLINE` |
-| `condition_expression` | string | 完整条件表达式，如 `USAGERPTMODE=ONLINE` |
-| `required_mode` | enum | 触发后 P2 必选性：`必选 / 条件必选` |
 
 示例：
 
