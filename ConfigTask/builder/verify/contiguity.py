@@ -18,6 +18,9 @@ def verify_contiguity(candidates, total_steps):
     errors = []
     for c in candidates:
         sr = c.get("step_range")
+        if sr is None:
+            # step_range=None 表示覆盖全文（用于 step_num 重复编号的文档）
+            continue
         if not sr or len(sr) != 2:
             errors.append(f"无效 step_range: {sr}")
             continue
@@ -27,8 +30,11 @@ def verify_contiguity(candidates, total_steps):
                 errors.append(f"步骤重叠: {n}")
             covered.add(n)
 
-    for n in range(1, total_steps + 1):
-        if n not in covered:
-            errors.append(f"步骤缺口: {n}")
+    # 只在 step_num 唯一时检查缺口（有 None candidate 时不检查）
+    has_null_range = any(c.get("step_range") is None for c in candidates)
+    if not has_null_range:
+        for n in range(1, total_steps + 1):
+            if n not in covered:
+                errors.append(f"步骤缺口: {n}")
 
     return errors
