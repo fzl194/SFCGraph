@@ -1,0 +1,14 @@
+# ConfigTask 抽取 pipeline 配置
+# 对齐 CommandGraph/pipeline.yaml 风格：assets_root + project_root + ne(nf→version→配置)
+assets_root: data/assets        # 产物根（相对本文件）
+project_root: ..               # SFCGraph 根（feature_csv 相对它计算）
+
+ne:
+  UDG:
+    20.15.2:
+      feature_csv: ConfigTask/data/UDG_feature_files.csv
+      steps: [select, parse, cut_boundaries, commands, params, assemble, emit_skeleton]
+  UNC:
+    20.15.2:
+      feature_csv: ConfigTask/data/UNC_feature_files.csv
+      steps: [select, parse, cut_boundaries, commands, params, assemble, emit_skeleton]
