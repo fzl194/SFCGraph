@@ -5,9 +5,9 @@ import re
 from builder.constants import CMD_REF_TMPL
 
 # MML 命令：动词 + 对象关键字（ADD URR / SET REFRESHSRV / ADD FILTERIPV6 ...）
-_CMD_RE = re.compile(r'\b(ADD|SET|MOD|DEL|RMV|LST|DSP)\s+(\w+)\b')
+_CMD_RE = re.compile(r'\b(ADD|SET|MOD|DEL|RMV|LST|DSP|LOD|SWP|RST|EXP|ACT|DEA)\s+(\w+)\b')
 # 步骤起始：行首 "数字. "
-_STEP_START_RE = re.compile(r'^(\d+)\.\s', re.MULTILINE)
+_STEP_START_RE = re.compile(r'^\s*(\d+)\.\s', re.MULTILINE)
 
 
 def parse_step_commands(steps_text: str) -> dict:

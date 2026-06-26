@@ -19,8 +19,8 @@ from builder.constants import SECTION_STEPS, SECTION_FLOW  # noqa: E402
 
 DATA_DIR = PROJECT_ROOT / "ConfigTask" / "data"
 
-_CMD_RE = re.compile(r'\b(ADD|SET|MOD|DEL|RMV|LST|DSP)\s+(\w+)\b')
-_STEP_START_RE = re.compile(r'^(\d+)\.\s', re.MULTILINE)
+_CMD_RE = re.compile(r'\b(ADD|SET|MOD|DEL|RMV|LST|DSP|LOD|SWP|RST|EXP|ACT|DEA)\s+(\w+)\b')
+_STEP_START_RE = re.compile(r'^\s*(\d+)\.\s', re.MULTILINE)
 # 差异配置关键词
 _DIFF_KEYWORDS = ("参考部署", "此处仅描述差异", "详细配置请参考", "此处仅描述")
 
@@ -35,8 +35,14 @@ def parse_step_triplets(steps_text: str) -> list:
         # step_desc: 第一行 "N. xxx" 的 xxx（到换行或句号）
         desc_m = re.match(r'\d+\.\s*(.+?)(?:\n|。)', block)
         desc = desc_m.group(1).strip() if desc_m else ""
-        # commands
-        cmds = [f"{v} {k}" for v, k in _CMD_RE.findall(block)]
+        # commands（去重保序：markdown 链接 URL 文件名会重复匹配命令名）
+        raw_cmds = [f"{v} {k}" for v, k in _CMD_RE.findall(block)]
+        seen = set()
+        cmds = []
+        for c in raw_cmds:
+            if c not in seen:
+                seen.add(c)
+                cmds.append(c)
         triplets.append({
             "step_num": num,
             "step_desc": desc,
