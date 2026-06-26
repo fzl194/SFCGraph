@@ -67,6 +67,9 @@ class CommandGraphService:
         self._has_param: dict[tuple[str, str], list[dict]] = {}
         # (nf, version) -> depends_on edge records
         self._depends: dict[tuple[str, str], list[dict]] = {}
+        # ConfigObject
+        self._obj_objects: dict[str, dict] = {}  # object_id -> record
+        self._obj_edges: dict[tuple[str, str], list[dict]] = {}  # (nf,version) -> command_object_edges
         self._load()
 
     @property
@@ -97,6 +100,10 @@ class CommandGraphService:
                 self._load_jsonl_bucket(fp, nf, version, self._has_param)
             elif object_type == "parameter_depends_on":
                 self._load_jsonl_bucket(fp, nf, version, self._depends)
+            elif object_type == "config_objects":
+                self._load_config_objects(fp)
+            elif object_type == "command_object_edges":
+                self._load_jsonl_bucket(fp, nf, version, self._obj_edges)
             # other relation files are recognised as edge classes but not
             # consumed by current endpoints — load on demand when one is needed.
 
@@ -140,6 +147,19 @@ class CommandGraphService:
                 except json.JSONDecodeError:
                     continue
                 bucket.append(rec)
+
+    def _load_config_objects(self, fp: Path) -> None:
+        """加载 config_objects.jsonl，按 object_id 索引。"""
+        with fp.open(encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    rec = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                self._obj_objects[rec.get("object_id", "")] = rec
 
     # ---- stats (nested: drives frontend L1/L2) ----
     def get_stats(self) -> dict:
@@ -285,6 +305,27 @@ class CommandGraphService:
         bucket = self._params.get((nf, version), [])
         return [p for p in bucket if p.get("command_id") == command_id]
 
+    def get_command_object(
+        self, nf: str, command_name: str, version: str | None = None
+    ) -> dict | None:
+        """返回该命令操作的 ConfigObject（来自 command_object_edges）。
+
+        一条命令对应一个 object_keyword → 一个 ConfigObject；返回它，无则 None。
+        """
+        if version is None:
+            version = self._latest_version_with_params(nf, command_name)
+        command_id = (
+            _make_command_id(nf, version, command_name)
+            if version else f"{nf}@MMLCommand@{command_name}"
+        )
+        for edge in self._obj_edges.get((nf, version) or ("", ""), []):
+            if (edge.get("from_command_ref") or "") != command_id:
+                continue
+            obj = self._obj_objects.get(edge.get("to_object_ref") or "")
+            if obj:
+                return obj
+        return None
+
     def _latest_version_with_params(self, nf: str, command_name: str) -> str | None:
         """Pick the lexicographically largest version under (nf) that actually
         contains parameters for ``command_name``. Returns None if none match."""
@@ -386,6 +427,31 @@ class CommandGraphService:
                 "type": "depends_on",
                 "label": label,
                 "title": title,
+            })
+
+        # ConfigObject 节点 + command→object 边（creates/modifies/sets/queries/...）
+        for edge in self._obj_edges.get((nf, version) or ("", ""), []):
+            if (edge.get("from_command_ref") or "") != command_id:
+                continue
+            obj_id = edge.get("to_object_ref") or ""
+            obj = self._obj_objects.get(obj_id)
+            if not obj:
+                continue
+            obj_title = obj.get("object_name_zh") or obj.get("object_name") or obj_id
+            kind = obj.get("object_kind") or ""
+            nodes.append({
+                "id": obj_id,
+                "label": obj.get("object_name") or obj_id,
+                "group": "config_object",
+                "title": f"{obj_title} [{kind}]" if kind else obj_title,
+            })
+            relation = edge.get("edge_type") or "operates_on"
+            edges.append({
+                "from": command_id,
+                "to": obj_id,
+                "type": relation,
+                "label": relation,
+                "title": relation,
             })
 
         return {"nodes": nodes, "edges": edges}

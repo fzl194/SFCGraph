@@ -17,12 +17,13 @@
 """
 from pathlib import Path
 
-from . import enrich, mmlcommand, parameter
+from . import configobject, enrich, mmlcommand, parameter
 
 STEPS = {
     "mmlcommand": mmlcommand.run,
     "enrich": enrich.run,
     "parameter": parameter.run,
+    "configobject": configobject.run,
 }
 
 # 数据产品 → 产物文件名（相对 out_dir）。用于"磁盘已有也算满足 requires"。
@@ -31,6 +32,8 @@ PRODUCT_FILE = {
     "command_parameters": "command_parameters.jsonl",
     "command_has_parameter": "command_has_parameter.jsonl",
     "parameter_depends_on": "parameter_depends_on.jsonl",
+    "config_objects": "config_objects.jsonl",
+    "command_object_edges": "command_object_edges.jsonl",
 }
 
 # 每个 step 声明的产出
@@ -38,12 +41,14 @@ PROVIDES = {
     "mmlcommand": ("mml_commands",),
     "enrich": ("mml_commands",),  # 原地富化，产出仍是 mml_commands
     "parameter": ("command_parameters", "command_has_parameter", "parameter_depends_on"),
+    "configobject": ("config_objects", "command_object_edges"),
 }
 
 # 每个 step 声明的依赖（需要前置产出或磁盘已有的数据产品）
 # mmlcommand / parameter 无 requires：各自从 ctx 取外部输入（source / parameter_csv）
 REQUIRES = {
     "enrich": ("mml_commands",),
+    "configobject": ("mml_commands",),  # command_parameters 可选（UNC 无 parameter step）
 }
 
 

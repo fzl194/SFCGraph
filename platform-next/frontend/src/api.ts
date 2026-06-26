@@ -23,6 +23,11 @@ export const commandGraphApi = {
     if (version) p.set('version', version)
     return `${BASE}/command-graph/command-graph?${p}`
   },
+  commandObject: (nf: string, commandName: string, version?: string) => {
+    const p = new URLSearchParams({ nf, command_name: commandName })
+    if (version) p.set('version', version)
+    return `${BASE}/command-graph/command-object?${p}`
+  },
 }
 
 export const businessGraphApi = {

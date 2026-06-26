@@ -38,6 +38,8 @@ def _make_service() -> CommandGraphService:
     svc._params = {}
     svc._has_param = {}
     svc._depends = {}
+    svc._obj_objects = {}
+    svc._obj_edges = {}
     return svc
 
 
@@ -180,3 +182,48 @@ def test_last_segment_handles_command_with_spaces():
     ref = "UDG@20.15.2@CommandParameter@SET AUTOLOGPOLICY:BKSERVERIPTYPE"
     assert _last_segment(ref) == "BKSERVERIPTYPE"
     assert _last_segment("") == ""
+
+
+# ---- ConfigObject (get_command_object + 图谱 object 节点) ----
+def _seed_object(svc: CommandGraphService) -> None:
+    nf, ver = "UDG", "20.15.2"
+    cmd_id = f"{nf}@{ver}@MMLCommand@ADD URR"
+    obj_id = f"{nf}@{ver}@ConfigObject@URR"
+    svc._obj_objects[obj_id] = {
+        "object_id": obj_id, "object_name": "URR", "object_name_zh": "使用量上报规则",
+        "object_kind": "entity", "nf": nf, "version": ver,
+        "identifier_parameters": ["URRNAME"], "uniqueness_keys": [["URRNAME"]],
+        "attribute_names": ["URRNAME", "URRID"], "description": "URR对象",
+    }
+    svc._obj_edges[(nf, ver)] = [
+        {"edge_type": "creates", "from_command_ref": cmd_id, "to_object_ref": obj_id},
+    ]
+    svc._records.append({"command_id": cmd_id, "command_name": "ADD URR", "nf": nf, "version": ver})
+    svc._by_id[cmd_id] = svc._records[-1]
+
+
+def test_get_command_object_returns_object():
+    svc = _make_service()
+    _seed_object(svc)
+    obj = svc.get_command_object("UDG", "ADD URR", "20.15.2")
+    assert obj is not None
+    assert obj["object_name"] == "URR"
+    assert obj["object_kind"] == "entity"
+
+
+def test_get_command_object_none_when_no_edge():
+    svc = _make_service()
+    _seed_object(svc)
+    assert svc.get_command_object("UDG", "ADD XYZ", "20.15.2") is None
+
+
+def test_graph_includes_config_object_node_and_edge():
+    svc = _make_service()
+    _seed_object(svc)
+    g = svc.get_command_graph("UDG", "ADD URR", "20.15.2")
+    obj_nodes = [n for n in g["nodes"] if n["group"] == "config_object"]
+    assert len(obj_nodes) == 1
+    assert obj_nodes[0]["label"] == "URR"
+    obj_edges = [e for e in g["edges"] if e["type"] == "creates"]
+    assert len(obj_edges) == 1
+    assert obj_edges[0]["to"].endswith("@URR")

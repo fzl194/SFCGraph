@@ -42,6 +42,10 @@ def make_ctx(cfg: dict, nf: str, version: str, entry: dict) -> SimpleNamespace:
     assets_root = (here / cfg["assets_root"]).resolve()
     source = (project_root / entry["source"]).resolve()
     out_dir = assets_root / nf / version
+    def _opt_csv(key):
+        rel = entry.get(key)
+        return str((project_root / rel).resolve()) if rel else None
+
     parameter_csv = None
     if entry.get("parameter_csv"):
         parameter_csv = str((project_root / entry["parameter_csv"]).resolve())
@@ -53,6 +57,9 @@ def make_ctx(cfg: dict, nf: str, version: str, entry: dict) -> SimpleNamespace:
         assets_root=str(assets_root),
         out_dir=str(out_dir),
         parameter_csv=parameter_csv,
+        mod_rules_csv=_opt_csv("mod_rules_csv"),
+        rmv_rules_csv=_opt_csv("rmv_rules_csv"),
+        uniqueness_rules_csv=_opt_csv("uniqueness_rules_csv"),
     )
 
 

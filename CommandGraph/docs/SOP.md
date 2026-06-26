@@ -15,7 +15,7 @@
 | 2 | MMLCommand 章节级构建（UNC 验证通用性） | ✅ |
 | 3 | MMLCommand 派生字段抽取（10/10 已抽） | ✅ |
 | 4 | CommandParameter 构建（内网参数资产映射 + 关系侧输出） | 🟡 |
-| 5 | ConfigObject 构建（命令族聚合） | ⏳ |
+| 5 | ConfigObject 构建（命令族聚合 + 内网规则表） | ✅ |
 | 6 | CommandRule 构建（notes/重复规则/删除保护） | ⏳ |
 | 7 | kgdata 校验（kgdata 对照 md 补缺纠错） | ⏳ |
 
@@ -24,7 +24,7 @@
 ## 通用约定（贯穿所有阶段）
 
 1. **md 抽取是正道，kgdata 仅作校验**——很多产品文档无 kgdata（如 UNC），必须从 md 抽。
-2. **版本治理 G 模型**——实例键 = `网元@版本:对象名`；每层是完整实例快照，不跨版本合并。
+2. **版本治理 G 模型**——实例键 = `{nf}@{version}@{ObjectType}@{local_name}`（四段带类型，见 schema §1A）；每层是完整实例快照，不跨版本合并。
 3. **先章节级、后字段级，逐字段批准**——章节切分确定（rule 自动）；字段抽取常需专家校准（expert），分阶段、逐字段做，不自作主张批量提取。
 4. **先分析再运行**——换产品文档前先跑 `_title_stats2.py` 确认章节名/层级，再调 reader。
 5. **按文本匹配章节，不按层级**——实测同一命令内 H2/H4 混用，按层级会漏。
@@ -73,7 +73,7 @@
     3. 归并：操作/网管/本地用户权限→`permission_text`；功能描述/适用网元→`command_function`；参考/名词解释/术语解释→`reference_info`。
     4. "参数说明"不收（属 CommandParameter）。
     5. `category_path` = md 相对 input-dir 的目录链。
-  - `to_mmlcommand`：command_id=`网元@版本:命令名`；verb/keyword 拆分；章节文本映射；标 `_review_status=auto, _stage=section_level`。
+  - `to_mmlcommand`：command_id=`{nf}@{version}@MMLCommand@{command_name}`；verb/keyword 拆分；章节文本映射；标 `_review_status=auto, _stage=section_level`。
 - **输出**：`data/output/mml_commands_udg.jsonl`（4577 条，跳过 3 非命令文件）。
 - **要点 / 坑**：
   - H2/H4 混用 → 必须按文本匹配，不能按层级。
@@ -155,7 +155,7 @@ python builder/enrich_mmlcommand.py --input data/output/mml_commands_unc.jsonl
     2. 将表头映射到 schema §3.4 的参数字段；
     3. 从 `说明` 中补抽 `data_source / semantic_summary / config_principle / default_value / value_range`；
     4. 跳过 `参数ID=-2` / `参数标识=zhanwei` 的占位行；
-    5. 生成 `command_ref = 网元@版本:命令名`，建立参数归属；
+    5. 生成 `command_ref = {nf}@{version}@MMLCommand@{command_name}`，建立参数归属；
     6. 解析 `条件`（如 `{"3=IPV4": "必选"}`）为命令内 `depends_on` 边。
   - 关系侧当前拆成两个 sidecar：
     - `has_parameter`：`MMLCommand -> CommandParameter`
@@ -179,6 +179,38 @@ python builder/enrich_mmlcommand.py --input data/output/mml_commands_unc.jsonl
 - **产物**：
   - `builder/build_commandparameter.py`
   - `tests/test_build_commandparameter.py`
+
+---
+
+## 阶段5：ConfigObject 构建（命令族聚合 + 内网规则表）✅
+
+- **目标**：按 object_keyword 聚合命令族 → ConfigObject 节点 + 命令→对象关系边（schema §3.2 终版）。
+- **输入**：
+  - `mml_commands.jsonl`（命令层全量；提供 object_keyword/verb/command_name_zh/applicable_nf/command_function/output_fields/source_evidence_ids）
+  - `command_parameters.jsonl`（参数层；attribute_names 取 ADD/MOD/SET 参数名）
+  - 内网规则独立表：`MOD规则.csv` / `RMV规则.csv` / `重复规则.csv`（identifier/uniqueness；7 表合一的源文件用 `split_rules.py` 拆）
+- **处理**：
+  - 入口 `builder/steps/configobject.py`（step 模式 run(ctx)）；聚合 `builder/core/config_object.py`。
+  - 聚合逻辑：
+    1. 按 (nf, object_keyword) 聚合命令族，一族一对象——**全建**（含查询/动作，用 object_kind 区分，不筛除）。
+    2. object_kind 5 类判定（entity/global_setting/query_target/action/binding），优先级 + 数据驱动判据见 schema §3.2.1（**不按对象名后缀猜**，旧版 group/profile/filter 取消）。
+    3. identifier ← MOD规则"索引参数"（MOD 缺失用 RMV规则）；uniqueness ← 重复规则"重复检查"。**必须从专门表读，非参数 required_mode 推断**。
+    4. attribute_names ← ADD∪MOD∪SET 命令参数名（可配置属性），**去重**；不含 LST/DSP output_fields（查询输出结构，留命令层）。
+    5. object_name_zh ← command_name_zh 去动词前缀（标 _auto 待校准）；description ← ADD command_function 优先。
+    6. 命令→对象边：verb→relation_type（creates/modifies/deletes/sets/queries/operates_on）。
+- **输出**：`config_objects.jsonl` + `command_object_edges.jsonl`。
+- **当前验证结果**（UDG 20.15.2，test.csv 参数 + old/data 子集规则表）：
+  - ConfigObject 2210 个，edges 4566；kind 分布 entity 597 / global_setting 541 / query_target 838 / action 197 / binding 37。
+  - identifier 命中 MOD规则 7/7；uniqueness 6；attribute **15/2210** 有值（去掉 output_fields 后只靠参数表，test.csv 仅覆盖 SET 命令 → 几乎全空，全量参数表上线后填）；unit 测试 12 passed。
+  - UNC 3608 对象（无 UNC 规则表 + 无 UNC 参数表 → identifier/uniqueness/attribute 全暂空）。
+- **要点 / 坑**：
+  - **全建边界**：所有 object_keyword 都建对象（含纯查询/动作），用 kind 区分。
+  - **object_kind 数据驱动**：按 verb 画像 + 命名判定；group/profile/filter 取消（用对象间关系表达）。
+  - **identifier/uniqueness 必须从内网规则专门表读**（MOD规则/重复规则），不是参数 required_mode。
+  - **子集数据**：test.csv 参数少 + old/data 规则表是子集 → 多数对象 identifier/attribute 暂空（如 URR），全量内网规则上线后填。
+  - **版本错配**：当前规则表 20.13.2 vs 命令层 20.15.2，按 object_name 跨版本关联；全量对版后自然解决。
+  - **删除了 max_records**：对象规格上限不在 ConfigObject 存（命令层 mml_commands 已有）。
+- **产物**：`builder/core/config_object.py`、`builder/steps/configobject.py`、`split_rules.py`、`data/rules/*.csv`、`tests/test_build_configobject.py`。
 
 ---
 

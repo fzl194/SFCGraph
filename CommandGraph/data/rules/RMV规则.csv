@@ -1,0 +1,9 @@
+﻿RMV 命令,索引参数,ADD 命令,RMV独有参数,findRmvJexlCode,errMsgEn,errMsgCn,网元类型,版本
+RMV PATCH,,ADD PATCH,SERVICEINSTANCE,,"Failed to delete the node ADD PATCH, because the node  does not exist.",所删除的ADD PATCH节点不存在，无法执行该删除命令。,UDG,20.13.2
+RMV ACSPATCH,,ADD ACSPATCH,,,"Failed to delete the node ADD ACSPATCH, because the node  does not exist.",所删除的ADD ACSPATCH节点不存在，无法执行该删除命令。,UDG,20.13.2
+RMV UPDDBFILES,,ADD UPDDBFILES,SERVICEINSTANCE,,"Failed to delete the node ADD UPDDBFILES, because the node  does not exist.",所删除的ADD UPDDBFILES节点不存在，无法执行该删除命令。,UDG,20.13.2
+RMV PACKAGE,,ADD PACKAGE,"VERSIONID,APPTYPE,SERVICEINSTANCE,PACKAGETYPE,VERSIONTYPE,CPUARCHTYPE,ISFORCE,ONLYREMOVEPOOL",,"Failed to delete the node ADD PACKAGE, because the node  does not exist.",所删除的ADD PACKAGE节点不存在，无法执行该删除命令。,UDG,20.13.2
+RMV ACSPACKAGE,,ADD ACSPACKAGE,"VERSIONID,APPTYPE,PACKAGETYPE,VERSIONTYPE,CPUARCHTYPE,ISFORCE,ONLYREMOVEPOOL",,"Failed to delete the node ADD ACSPACKAGE, because the node  does not exist.",所删除的ADD ACSPACKAGE节点不存在，无法执行该删除命令。,UDG,20.13.2
+RMV PAEPORTGATEWAY,NETWORKINDEX,ADD PAEPORTGATEWAY,,,"Failed to delete the node ADD PAEPORTGATEWAY, because the node  does not exist.",所删除的ADD PAEPORTGATEWAY节点不存在，无法执行该删除命令。,UDG,20.13.2
+RMV DRINST,DRINSTID,ADD DRINST,,,"Failed to delete the node ADD DRINST, because the node  does not exist.",所删除的ADD DRINST节点不存在，无法执行该删除命令。,UDG,20.13.2
+RMV DRCOMM,"COMMIPV4,COMMIPV6,DRINSTID,IPVERSION",ADD DRCOMM,,,"Failed to delete the node ADD DRCOMM, because the node  does not exist.",所删除的ADD DRCOMM节点不存在，无法执行该删除命令。,UDG,20.13.2

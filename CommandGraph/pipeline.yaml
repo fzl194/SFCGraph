@@ -14,9 +14,12 @@ ne:
   UDG:
     20.15.2:
       source: output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令
-      steps: [mmlcommand, enrich, parameter]
+      steps: [mmlcommand, enrich, parameter, configobject]
       parameter_csv: CommandGraph/data/test.csv
+      mod_rules_csv: CommandGraph/data/rules/MOD规则.csv
+      rmv_rules_csv: CommandGraph/data/rules/RMV规则.csv
+      uniqueness_rules_csv: CommandGraph/data/rules/重复规则.csv
   UNC:
     20.15.2:
       source: output/UNC 20.15.2 产品文档(裸机容器) 05/OM参考/命令/UNC MML命令
-      steps: [mmlcommand, enrich]
+      steps: [mmlcommand, enrich, configobject]

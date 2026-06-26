@@ -96,42 +96,52 @@ ConfigObject URR
 
 ### 3.2 ConfigObject
 
-配置对象是命令族（ADD/MOD/RMV/LST）共同操作的稳定语义实体，是命令图谱的**配置语义层锚点**。它是轻量节点——只承载身份、标识、唯一性与对象间关系；属性细节不在此存储，通过图遍历从 CommandParameter 获取。
+配置对象是命令族共同操作的稳定语义实体，是命令图谱的**配置语义层锚点**。它是轻量节点——只承载身份、标识、唯一性与分类；属性细节不在此存储，通过图遍历从 CommandParameter 获取。
+
+**对象集边界**：所有 `MMLCommand.object_keyword` 都建 ConfigObject（按 object_keyword 聚合命令族，一族一对象）——含配置实体、查询目标、动作，一律纳入，用 `object_kind` 区分，不靠"是否配置命令"筛除。
+
+**实例键**：`{nf}@{version}@ConfigObject@{object_name}`（四段带类型，见 §1A），如 `UDG@20.15.2@ConfigObject@URR`。
 
 **节点属性：**
 
-| 分组 | 字段 | 类型 | 必选 | 说明 / 来源 |
+| 分组 | 字段 | 类型 | 必选 | 标签空间 / 来源 |
 | --- | --- | --- | --- | --- |
-| 身份 | `object_id` | string | 是 | 实例键 `{nf}@{version}@ConfigObject@{object_name}`，如 `UDG@20.15.2@ConfigObject@URR` |
-| | `object_name` | string | 是 | 对象名，如 `URR`、`URRGROUP`、`RULE`、`APN` |
-| | `object_name_zh` | string | 否 | 中文名，如"使用量上报规则" |
-| 分类 | `object_kind` | enum | 是 | 对象结构种类（见 3.2.1） |
-| | `applicable_nf` | list[string] | 否 | 适用网元，如 `[PGW-U, UPF]` |
-| 标识 | `identifier_parameters` | list[string] | 否 | **定位参数**（MOD/RMV/LST 用它定位一条记录），来自内网 MOD/RMV 规则的"索引参数" |
-| | `uniqueness_keys` | list[list[string]] | 否 | **唯一性键**组合，来自内网"重复规则"，如 `[[RULENAME,POLICYTYPE]]`；支持多组 |
-| 属性 | `attribute_names` | list[string] | 否 | 属性名清单 = ADD 参数 ∪ MOD 参数 ∪ LST 输出字段；细节见下方说明 |
-| 规格 | `max_records` | integer | 否 | 对象规格上限，如 URR `65000` |
-| 元数据 | `description` | string | 否 | 说明 |
-| | `status` | enum | 是 | `draft / active / deprecated` |
-| | `source_evidence_ids` | list[string] | 否 | 来源证据 |
+| 身份 | `object_id` | string | 是 | 实例键 `{nf}@{version}@ConfigObject@{object_name}`，派生 |
+| | `object_name` | string | 是 | 对象英文标识 = 命令族 `object_keyword`（按它聚合，空值跳过） |
+| | `object_name_zh` | string | 否 | 中文名 = `command_name_zh` 去动词前缀（增加/修改/删除/查询/显示/设置/配置/激活/清除/刷新/加载…最长匹配）；标 `_auto` 待校准 |
+| 分类 | `object_kind` | enum | 是 | 行为结构种类，枚举 `{entity, global_setting, query_target, action, binding}`（判定见 3.2.1） |
+| | `applicable_nf` | list[string] | 否 | 适用网元 = 族命令 `applicable_nf` 并集（NF 名开放枚举） |
+| 标识 | `identifier_parameters` | list[string] | 否 | **定位参数** = 内网 **MOD 规则"索引参数"列**（MOD 缺失时用 RMV 规则"索引参数"列）；MOD/RMV/LST 用它定位一条记录 |
+| | `uniqueness_keys` | list[list[string]] | 否 | **唯一性键** = 内网 **重复规则"重复检查"列**（按 ADD 命令名关联），如 `[[RULENAME,POLICYTYPE]]`；支持多组 |
+| 属性 | `attribute_names` | list[string] | 否 | 可配置属性名清单 = 族内 ADD∪MOD∪SET 命令参数名，**去重**；不含 LST/DSP `output_fields`（查询输出结构，留命令层，非配置属性）|
+| 元数据 | `description` | string | 否 | 对象说明 = 族内 ADD 命令 `command_function` 优先（无 ADD → MOD → 任意配置类命令） |
+| | `status` | enum | 是 | `{draft, active, deprecated}`（builder 默认 active，不推断废弃） |
+| | `source_evidence_ids` | list[string] | 否 | 来源证据 = 族命令 `source_evidence_ids` 并集去重 |
 
-> **属性细节不在 ConfigObject 存储。** 类型、取值范围、默认值、枚举、约束等，通过 `MMLCommand --creates--> ConfigObject` 与 `MMLCommand --has_parameter--> CommandParameter` 图遍历获取，避免与 CommandParameter 形成两套定义（见 §1 第 5 条）。配置生成时按 `attribute_names` 知道对象由哪些属性构成，再沿关系取每个属性的细节。
+> **属性细节不在 ConfigObject 存储。** 类型、取值范围、默认值、枚举、约束等，通过图遍历从 CommandParameter 获取，避免两套定义（见 §1 第 5 条）。`attribute_names` 只存**名清单**（复用已抽的 `command_parameters.parameter_name` 聚合，不重新抽；**不含** LST/DSP 输出字段——那是查询输出结构，不是配置属性，留在 `MMLCommand.output_fields`）；配置生成时按名知道对象由哪些属性构成，再沿关系到参数层取每个属性的细节。
 >
-> **`identifier_parameters` 与 `uniqueness_keys` 的区别**：前者回答"如何定位一条记录"（MOD/RMV 索引），后者回答"两条记录算不算重复"（重复规则）。多数对象两者一致；RULE 等对象不同——identifier 可能是 `RULENAME`，uniqueness 是 `[RULENAME, POLICYTYPE]`。
+> **`identifier_parameters` 与 `uniqueness_keys` 都来自内网规则专门表**（非从参数 required_mode 推断）：identifier ← MOD 规则"索引参数"，uniqueness ← 重复规则"重复检查"。前者回答"如何定位一条记录"，后者回答"两条记录算不算重复"。多数对象两者一致；RULE 等不同——identifier 可能是 `RULENAME`，uniqueness 是 `[RULENAME, POLICYTYPE]`。
+>
+> **数据现实**（builder 照实产出，不编造）：`applicable_nf` 命令层覆盖率 UDG 35% / UNC 66%，未覆盖的对象为空 list；`attribute_names` / `identifier_parameters` / `uniqueness_keys` 依赖参数表 + 内网规则表（MOD/重复/RMV），全量内网规则文件接入后才完整，子集数据时部分对象为空 list。
 
-#### 3.2.1 object_kind 枚举
+#### 3.2.1 object_kind 枚举（数据驱动：按命令族行为模式 + 命名判定）
 
-> 随场景扩展逐步补充，初始版本：
+判定按优先级从上到下，命中即停（不按对象名后缀猜）：
 
-| 值 | 说明 | 示例 |
-| --- | --- | --- |
-| `entity` | 独立实体对象 | URR、RULE、USERPROFILE、FLOWFILTER |
-| `group` | 组合/聚合对象 | URRGROUP、PCCPOLICYGRP、FLOWFILTERGRP |
-| `binding` | 绑定关系对象 | RULEBINDING、FLTBINDFLOWF |
-| `global_setting` | 全局配置（无独立标识参数） | UPAPNCHARGE、UPGLBCHGPARA |
-| `profile` | 配置档案/属性集 | PCCACTIONPROP、QOSPROP、EXTENDPROP |
-| `action` | 动作型（不创建对象） | REFRESHSRV |
-| `filter` | 过滤器 | FILTER、L7FILTER |
+| 优先级 | kind | 判定条件 | 典型 verb 画像 |
+| --- | --- | --- | --- |
+| 1 | `binding` | 命名含 `BIND` **且** 族内有 ADD/RMV（增删行为） | ADD/RMV/LST（±MOD） |
+| 2 | `query_target` | 族内命令仅 LST/DSP（纯查询运行态：会话/统计/计数） | LST/DSP |
+| 3 | `action` | verb 既非配置(ADD/MOD/DEL/SET)也非查询(LST/DSP)——动作/操作兜底 | CLR/SYN/RTR/STP/LOD/SWP/ACT/DEA/SAV/ULD… |
+| 4 | `global_setting` | 有 SET 且无 ADD/MOD/DEL/RMV（全局开关/参数，多单例） | SET（±LST/DSP） |
+| 5 | `entity` | 含 ADD/MOD/DEL/RMV（**默认兜底**） | ADD/MOD/RMV/LST |
+
+**5 个枚举值**：`entity` / `global_setting` / `query_target` / `action` / `binding`。
+
+> - `batch_op`（命名 `xxxALL` 的批量清理/查询）**不独立成 kind**，挂对应 entity 做"批量命令"标记。
+> - `binding` 双条件：命名含 BIND 但只 SET / 只查询的（如 `URRGRPBINDING`=SET、`LBTNBINDPLY`=DSP）按行为归 `global_setting` / `query_target`，不强归 binding。
+> - 旧版的 `group` / `profile` / `filter` **取消**——它们行为上就是 entity，"组/档案/过滤器"的层级用对象间关系（contains/refers_to，见 §4.5）表达，不靠 kind。
+> - 实测分布（UDG+UNC 5818 个对象族）：entity 34% / global_setting 24% / query_target 32% / action 8% / binding 2%。
 
 ### 3.3 MMLCommand
 
@@ -238,7 +248,7 @@ ConfigObject URR
 
 | 表 | 内容 | 连接键 |
 | --- | --- | --- |
-| 软参数表（SP 规则） | SOFTPARA / APNSOFTPARA 的 BITNUM 长表（一命令对应数十条记录） | `网元@版本:命令名` |
+| 软参数表（SP 规则） | SOFTPARA / APNSOFTPARA 的 BITNUM 长表（一命令对应数十条记录） | `{nf}@{version}@MMLCommand@{命令名}` |
 
 > 说明：`reference_target`（旧版参数引用配置对象的简写）已合并进 `depends_on` 边的语义，不再单列为节点字段。
 
@@ -250,7 +260,7 @@ ConfigObject URR
 
 | 分组 | 字段 | 类型 | 必选 | 说明 / 来源 |
 | --- | --- | --- | --- | --- |
-| 身份 | `rule_id` | string | 是 | 实例键 `网元@版本:rule_id` |
+| 身份 | `rule_id` | string | 是 | 实例键 `{nf}@{version}@CommandRule@{rule_id}` |
 | | `rule_name` | string | 是 | 规则名称 |
 | 分类 | `rule_type` | enum | 是 | 规则类型（见 3.5.1） |
 | | `scope_type` | enum | 是 | 作用粒度（见 3.5.2） |

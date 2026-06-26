@@ -38,6 +38,25 @@
             :version="version"
           />
         </el-tab-pane>
+
+        <el-tab-pane label="配置对象" name="object">
+          <div v-if="commandObject" class="cmd-object">
+            <header class="cmd-hero">
+              <div class="cmd-hero-id">{{ commandObject.object_name }}</div>
+              <h1 class="cmd-hero-name">{{ commandObject.object_name_zh || commandObject.object_name }}</h1>
+              <div class="cmd-hero-tags">
+                <el-tag size="small" effect="plain">{{ commandObject.object_kind }}</el-tag>
+                <el-tag size="small" effect="plain" type="info">{{ commandObject.nf }}</el-tag>
+              </div>
+            </header>
+            <div v-for="section in objectSections" :key="section.key" class="summary-section">
+              <div class="summary-section-title">{{ section.label }}</div>
+              <div class="cmd-field-content" v-html="section.html"></div>
+            </div>
+          </div>
+          <div v-else-if="!loadingObject" class="cmd-pane-empty">该命令未关联配置对象</div>
+          <div v-else class="cmd-pane-empty">加载中…</div>
+        </el-tab-pane>
       </el-tabs>
     </section>
 
@@ -116,13 +135,26 @@ const command = ref<any>(null)
 const mdContent = ref('')
 const leftTab = ref('mmlcommand')
 // 懒加载：首次切到对应 tab 才挂载子组件（v-if 控制首次挂载才请求，避免进详情即拉全量）
-const activatedTabs = ref({ parameters: false, graph: false })
+const activatedTabs = ref({ parameters: false, graph: false, object: false })
+const commandObject = ref<any>(null)
+const loadingObject = ref(false)
 
 // 切 tab 时按需激活（仅置 true，不回退；切命令时重置）
 watch(leftTab, (tab) => {
   if (tab === 'parameters') activatedTabs.value.parameters = true
   if (tab === 'graph') activatedTabs.value.graph = true
+  if (tab === 'object' && !commandObject.value && !loadingObject.value) loadObject()
 })
+
+async function loadObject() {
+  loadingObject.value = true
+  try {
+    const data = await fetchJson(commandGraphApi.commandObject(nf.value, commandName.value, version.value))
+    commandObject.value = data.object || null
+  } finally {
+    loadingObject.value = false
+  }
+}
 
 // ===== 可拖拽 + 可折叠的双栏 =====
 const splitRef = ref<HTMLElement>()
@@ -199,6 +231,14 @@ const LABEL_MAP: Record<string, string> = {
   category_path: '分类路径',
   status: '状态',
   source_evidence_ids: '来源证据',
+  // ConfigObject 字段
+  object_id: '对象ID',
+  object_name: '对象名',
+  object_name_zh: '中文名',
+  object_kind: '对象类型',
+  identifier_parameters: '定位参数',
+  uniqueness_keys: '唯一性键',
+  attribute_names: '属性名',
 }
 
 function isNonEmpty(v: any): boolean {
@@ -241,6 +281,17 @@ const sections = computed(() => {
   return out
 })
 
+const objectSections = computed(() => {
+  if (!commandObject.value) return []
+  const out: { key: string; label: string; html: string }[] = []
+  for (const key of Object.keys(commandObject.value)) {
+    const value = commandObject.value[key]
+    if (!isNonEmpty(value)) continue
+    out.push({ key, label: LABEL_MAP[key] || key, html: renderValue(value) })
+  }
+  return out
+})
+
 async function loadAll() {
   loading.value = true
   mdContent.value = ''
@@ -259,8 +310,9 @@ async function loadAll() {
 
 watch([nf, commandName, version], () => {
   leftTab.value = 'mmlcommand'
-  // 切换命令重置懒加载标记，新命令首次切 tab 再挂载
-  activatedTabs.value = { parameters: false, graph: false }
+  // 切换命令重置懒加载标记 + 配置对象，新命令首次切 tab 再挂载
+  activatedTabs.value = { parameters: false, graph: false, object: false }
+  commandObject.value = null
   loadAll()
 })
 

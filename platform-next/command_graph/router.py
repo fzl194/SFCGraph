@@ -69,6 +69,17 @@ def get_command_graph(
     return svc.get_command_graph(nf, command_name, version)
 
 
+@router.get("/command-object")
+def get_command_object(
+    nf: str = Query(...),
+    command_name: str = Query(...),
+    version: str | None = Query(None),
+):
+    svc = get_service()
+    obj = svc.get_command_object(nf, command_name, version)
+    return {"object": obj}
+
+
 @router.get("/doc-content")
 def get_doc_content(path: str = Query(..., description="Relative path to md file")):
     svc = get_service()
