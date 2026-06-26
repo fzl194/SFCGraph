@@ -31,3 +31,16 @@ def commands_for_range(steps_text: str, step_range, nf: str, version: str) -> li
         for cmd in step_cmds.get(n, []):
             refs.append(CMD_REF_TMPL.format(nf=nf, version=version, name=cmd))
     return refs
+
+
+def steps_text_for_range(steps_text: str, step_range) -> str:
+    """step_range (a,b) → 这些步骤的原文拼接（用于 raw_steps_text_raw）。"""
+    if not step_range:
+        return ""
+    starts = [(m.start(), int(m.group(1))) for m in _STEP_START_RE.finditer(steps_text)]
+    chunks = []
+    for i, (start, num) in enumerate(starts):
+        if step_range[0] <= num <= step_range[1]:
+            end = starts[i + 1][0] if i + 1 < len(starts) else len(steps_text)
+            chunks.append(steps_text[start:end].strip())
+    return "\n".join(chunks)
