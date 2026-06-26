@@ -81,12 +81,20 @@
 | `parameter_ref` | string | 是 | 命令图谱实例键 `UDG@20.15.2@CommandParameter@ADD URR:URRNAME`（下探取参数定义/类型/枚举/依赖/跨命令引用） |
 | `binding_type` | enum | 是 | `fixed（固参）/ variable（变参）/ reference（引用）` |
 | `fixed_value` | string | 否 | `fixed` 时的固定配法，如 `POLICYTYPE=PCC`（本 task 下总不变） |
-| `variable_source` | enum | 否 | `variable` 时的来源：`decision_driven（用户意图/决策点）/ planned（现网数据/规划值）` |
-| `source_ref` | string | 否 | `decision_driven` 时 → DecisionPoint |
+| `variable_source` | enum | 否 | `variable` 时的来源（命令图谱权威 3 值 + 聚合发现 1 值，**可扩展**） |
+| `source_ref` | string | 否 | `decision_driven` 时 → DecisionPoint；`reference` 时 → 源命令.参数 |
+
+> **variable_source 枚举**（基于三视角交叉验证，命令图谱"数据来源"为权威）：
+> - `local_planned`（本端规划）：工程师本地命名/策略/地址/阈值。命令图谱权威值。
+> - `global_planned`（全网规划）：跨网元协调的 ID/地址/路由标识。命令图谱权威值。
+> - `peer_planned`（对端规划）：必须与对端一致的算法/协议参数。命令图谱权威值。
+> - `decision_driven`（决策驱动）：**跨案例聚合后**发现取值变化，由 DecisionPoint 驱动。非命令图谱字段，Phase B 聚合时判定。
+>
+> 此字段为**可扩展枚举**——未来如有新的参数来源类型（如 `auto_generated`/`inherited`），追加值即可，不破坏已有数据。
 
 > **三类参数**：
-> - **固参 fixed**：本 task 下总不变的固定配法（不记具体实例值，记"固定配法"，如计费场景 `POLICYTYPE=PCC`）。
-> - **变参 variable**：随用户意图（决策点）或现网数据（规划值）变化，**不记具体取值**（如 `URRID=12500`）。
+> - **固参 fixed**：跨所有配置案例**零例外**地稳定不变（给 `fixed_value`，如 `FILTERINGMODE=FLOWFILTER`）。
+> - **变参 variable**：随配置实例变化，标 `variable_source`。**不记具体取值**（如 `URRID=12500`）。若跨案例取值有差异 → `decision_driven`（暗示 DecisionPoint）。
 > - **引用 reference**：值**必须来源于已有配置**。跨命令引用关系（如 `UPURRNAME1`↔`URR.URRNAME`）由命令图谱 CommandParameter 在下层定义；被引用命令**不一定在本 task 内**，引用关系与 task 内命令顺序相关但不完全对应。
 
 ---
