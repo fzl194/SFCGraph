@@ -1,0 +1,22 @@
+# ConfigTask pipeline 配置入口
+# 换网元/版本只改这里
+assets_root: data/assets
+project_root: ..
+
+ne:
+  UDG:
+    20.15.2:
+      corpus_root: output/UDG_Product_Documentation_CH_20.15.2/特性部署/特性指南/UDG特性指南
+      command_graph_dir: CommandGraph/data/assets/UDG/20.15.2
+      steps: [scan, extract_steps, split_tasks, verify_split,
+              cluster, merge_fields, verify_merge,
+              extract_rules, verify_rules, assemble]
+      agent_batch_size: 5
+  UNC:
+    20.15.2:
+      corpus_root: output/UNC 20.15.2 产品文档(裸机容器) 05/网络部署/特性部署/UNC特性指南
+      command_graph_dir: CommandGraph/data/assets/UNC/20.15.2
+      steps: [scan, extract_steps, split_tasks, verify_split,
+              cluster, merge_fields, verify_merge,
+              extract_rules, verify_rules, assemble]
+      agent_batch_size: 5
