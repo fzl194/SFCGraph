@@ -33,7 +33,7 @@ def parse_step_triplets(steps_text: str) -> list:
         end = starts[i + 1][0] if i + 1 < len(starts) else len(steps_text)
         block = steps_text[start:end].strip()
         # step_desc: 第一行 "N. xxx" 的 xxx（到换行或句号）
-        desc_m = re.match(r'\d+\.\s*(.+?)(?:\n|。)', block)
+        desc_m = re.match(r'\s*\d+\.\s*(.+?)(?:\n|。)', block)
         desc = desc_m.group(1).strip() if desc_m else ""
         # commands（去重保序：markdown 链接 URL 文件名会重复匹配命令名）
         raw_cmds = [f"{v} {k}" for v, k in _CMD_RE.findall(block)]
@@ -49,6 +49,31 @@ def parse_step_triplets(steps_text: str) -> list:
             "commands": cmds,
             "raw_text": block,
         })
+
+    # 如果没找到编号步骤，尝试 bullet-point 步骤（如 VoLTE 用 "- 打开License..."）
+    if not triplets:
+        bullet_starts = [(m.start(),) for m in re.finditer(r'^-\s+', steps_text, re.MULTILINE)]
+        for i, (start,) in enumerate(bullet_starts):
+            end = bullet_starts[i + 1][0] if i + 1 < len(bullet_starts) else len(steps_text)
+            block = steps_text[start:end].strip()
+            cmds = [f"{v} {k}" for v, k in _CMD_RE.findall(block)]
+            if not cmds:
+                continue  # bullet 没命令，不是步骤
+            seen = set()
+            cmds_dedup = []
+            for c in cmds:
+                if c not in seen:
+                    seen.add(c)
+                    cmds_dedup.append(c)
+            desc_m = re.match(r'-\s+(.+?)(?:\n|。)', block)
+            desc = desc_m.group(1).strip() if desc_m else ""
+            triplets.append({
+                "step_num": i + 1,
+                "step_desc": desc,
+                "commands": cmds_dedup,
+                "raw_text": block,
+            })
+
     return triplets
 
 

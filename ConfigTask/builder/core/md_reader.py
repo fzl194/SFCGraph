@@ -9,8 +9,8 @@ import re
 
 from builder.constants import SECTION_FLOW, SECTION_STEPS, SECTION_EXAMPLE, SECTION_DATA
 
-# H2 标题行：## [title](anchor) 或 ## title
-_H2_RE = re.compile(r'^##\s+(.+)$', re.MULTILINE)
+# 标题行：## ~ ###### 都认（不同文档用不同标题层级）
+_H2_RE = re.compile(r'^#{2,6}\s+(.+)$', re.MULTILINE)
 
 # 标题文本 → 规范段名
 _TITLE_MAP = [
