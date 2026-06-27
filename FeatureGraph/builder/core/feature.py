@@ -117,5 +117,6 @@ def build_feature_node(seed: dict, raw_fields: dict, *, applicable_nf: list,
         "version": version,
         "source_path": overview_path or "",
         "has_overview": has_overview,
+        "variant_dimensions": [],
     }
     return {**node, **raw_fields}
