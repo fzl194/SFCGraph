@@ -4,4 +4,5 @@
 from . import license  # noqa: F401
 from . import feature  # noqa: F401
 from . import dependency  # noqa: F401
+from . import license_edge  # noqa: F401
 
