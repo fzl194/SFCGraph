@@ -1,7 +1,9 @@
-"""Step feature: xlsx seed + 概述md 13节解析 → features.jsonl 节点表。
+"""Step feature: xlsx seed + 概述md 13节解析 → features.jsonl 节点表 + feature_doc_assets.jsonl。
 
 支持 --sample 过滤（第一批小范围验证）；has_overview 5 态：
 yes/no_overview/empty/no_docs/file_missing。
+
+feature_doc_assets.jsonl 同步产出（零额外扫描成本：find_overview_md 已返回 doc_assets 列表）。
 """
 from __future__ import annotations
 
@@ -21,6 +23,7 @@ from .registry import step
 
 _DIRPAT = re.compile(r"^(GWFD|WSFD|IPFD|NPFD)-(\d{3,6})\s")
 _FIDPREFIX_RE = re.compile(r"^(GWFD|WSFD|IPFD|NPFD)-(\d{3,6})")
+_DOC_TITLE_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 
 
 def _scan_feature_docs(corpus_root: Path, valid_fids: set, project_root: Path) -> dict:
@@ -46,6 +49,19 @@ def _scan_feature_docs(corpus_root: Path, valid_fids: set, project_root: Path) -
     return mapping
 
 
+def _read_doc_title(file_path: str, project_root: Path) -> str:
+    """读 md 的 H1 标题（移植 step4 read_doc_title）。"""
+    abs_fp = Path(file_path) if Path(file_path).is_absolute() else project_root / file_path
+    if not abs_fp.exists():
+        return ""
+    try:
+        text = abs_fp.read_text(encoding="utf-8", errors="ignore")
+        m = _DOC_TITLE_RE.search(text)
+        return m.group(1).strip() if m else ""
+    except Exception:
+        return ""
+
+
 @step("feature", output_file="features.jsonl")
 def run(ctx):
     nf, version = ctx["nf"], ctx["version"]
@@ -61,6 +77,7 @@ def run(ctx):
     file_map = _scan_feature_docs(corpus_root, valid_fids, project_root)
 
     nodes: list[dict] = []
+    doc_assets_all: list[dict] = []
     stats = {"total": 0, "yes": 0, "no_overview": 0, "no_docs": 0, "empty": 0, "file_missing": 0}
 
     for seed in seeds:
@@ -84,6 +101,10 @@ def run(ctx):
             nodes.append(build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=None, nf=nf, version=version, has_overview="no_overview"))
             stats["no_overview"] += 1
+            # 仍记录 doc_assets（有文档但未识别概述）
+            for fp, dt in doc_assets:
+                doc_assets_all.append({"feature_code": code, "doc_path": fp,
+                                       "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)})
             continue
 
         abs_ov = Path(overview_path) if Path(overview_path).is_absolute() else project_root / overview_path
@@ -98,6 +119,10 @@ def run(ctx):
             nodes.append(build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=overview_path, nf=nf, version=version, has_overview="empty"))
             stats["empty"] += 1
+            # 仍记录 doc_assets
+            for fp, dt in doc_assets:
+                doc_assets_all.append({"feature_code": code, "doc_path": fp,
+                                       "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)})
             continue
 
         sections = parse_sections(content)
@@ -109,13 +134,22 @@ def run(ctx):
             standards=extract_standards(sections),
             overview_path=overview_path, nf=nf, version=version, has_overview="yes",
             config_relevance=infer_config_relevance(has_activation, no_config))
-        node["has_activation_doc"] = has_activation  # categorize Agent 步判断 config_relevance 用
+        node["has_activation_doc"] = has_activation
         nodes.append(node)
         stats["yes"] += 1
 
+        # doc_assets: 覆盖该特性所有 md（含 overview + activation/debug/principle/...）
+        for fp, dt in doc_assets:
+            doc_assets_all.append({"feature_code": code, "doc_path": fp,
+                                   "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)})
+
     out = Path(ctx["data_dir"]) / "features.jsonl"
     write_jsonl(out, nodes)
+    doc_out = Path(ctx["data_dir"]) / "feature_doc_assets.jsonl"
+    write_jsonl(doc_out, doc_assets_all)
     print(f"[feature:{nf}/{version}] {len(nodes)} Feature "
           f"(yes={stats['yes']}, no_overview={stats['no_overview']}, no_docs={stats['no_docs']}, "
           f"empty={stats['empty']}, file_missing={stats['file_missing']}) → {out}")
+    print(f"[feature:{nf}/{version}] {len(doc_assets_all)} doc_assets → {doc_out}")
     return len(nodes)
+
