@@ -100,25 +100,36 @@ def find_overview_md(feature_id: str, file_paths: list[str], project_root: Path)
     返回 (overview_paths: list[str], doc_assets: [(file_path, doc_type)])。
     多概述时 overview_paths 含全部候选（按优先级排序）。
 
-    概述识别优先级（互斥：上一级命中则不再走下一级，避免 priority 2 的非概述混入）：
+    概述识别优先级（互斥：上一级命中则不再走下一级，避免非概述混入）：
       1. 文件名以 fid 开头 + 含"概述"  （避免子文档文件名碰巧含"概述"被误判）
-      2. 仅在 priority 1 未命中时启用：文件名以 fid 开头 + 直接子目录（兜底识别该特性首文档）
+      2. 仅在 priority 1 未命中时启用：文件名以 fid 开头 + 直接子目录 + 不含非概述关键词
+         （排除"参考信息/激活/调测/原理/部署/流程/需求/规划/实现"等子文档名）
       3. 仅1文件
       4. 内容结构验证（定义/可获得性/应用场景 三锚点 ≥2）
     """
+    # 子文档关键词（这些不是特性概述，是补充文档）
+    NON_OVERVIEW_KEYWORDS = ("参考信息", "激活", "调测", "原理", "部署", "流程", "需求",
+                              "规划", "实现", "应用", "操作", "参考", "描述")
+
     def _is_real_overview(fp: str) -> bool:
         """文件名以 fid 开头 + 含"概述"——避免子文档（如"规划概述"）误判。"""
         return os.path.basename(fp).startswith(feature_id) and "概述" in os.path.basename(fp)
+
+    def _is_priority2_overview(fp: str) -> bool:
+        """priority 2 兜底：文件名以 fid 开头 + 直接子目录 + 不是子文档。"""
+        fn = os.path.basename(fp)
+        if not (fn.startswith(feature_id) and is_direct_child(fp, feature_id)):
+            return False
+        return not any(kw in fn for kw in NON_OVERVIEW_KEYWORDS)
 
     overview_candidates: list[tuple[int, str]] = []
     for fp in file_paths:
         if _is_real_overview(fp):
             overview_candidates.append((1, fp))
-    # priority 2 兜底：仅当 priority 1 未命中时启用（避免 priority 2 把"参考信息"等当概述）
+    # priority 2 兜底：仅当 priority 1 未命中时启用
     if not overview_candidates:
         for fp in file_paths:
-            filename = os.path.basename(fp)
-            if filename.startswith(feature_id) and is_direct_child(fp, feature_id):
+            if _is_priority2_overview(fp):
                 overview_candidates.append((2, fp))
     if not overview_candidates and len(file_paths) == 1:
         overview_candidates.append((3, file_paths[0]))
@@ -146,24 +157,24 @@ def find_overview_md(feature_id: str, file_paths: list[str], project_root: Path)
 def detect_variant_dimensions(overview_paths: list[str], feature_id: str) -> list[dict]:
     """从多概述路径检测 variant_dimensions（schema §4.3：差异留在 variant_dimensions）。
 
-    当前识别"代际"维度：路径或文件名中含 2_3G/4G/5G 标记，作为同一特性的不同代际变体。
+    当前识别"代际"维度。匹配模式（按优先级）：
+      - 目录前缀 /{gen}/ 或 /{gen}_ （如 /2_3G会话管理/、/4G_xxx）
+      - 文件名 / 路径片段 _{gen}_ （如 GWFD_X_4G_yyy.md）
+      - 中文括号（{gen}部分）：（4G部分）/（5G部分）等
+      - 英文括号 ({gen}): (4G)/5G)
     返回 [{name: "代际", values: [...], overview_paths: {gen: path}}] 或 []。
     """
     if len(overview_paths) <= 1:
         return []
     generation_to_path: dict[str, str] = {}
     for p in overview_paths:
-        # 代际在路径中：可能是 "/2_3G会话管理/"（目录名前缀）或 "_2_3G_"（文件名/路径片段）
-        # 启发式：路径或文件名中含 gen 标记，且后面不紧跟 2_3G 自身的扩展（避免误匹配）
         for gen in ("2_3G", "4G", "5G"):
-            if gen in p:
-                # 进一步确认不是误匹配（如路径其他部分含 "4G" 但不是代际）
-                # 代际通常紧跟目录名(中文)或文件名前缀
-                # 简化：只要目录层级含 "/{gen}xxx" 或 "{gen}_xxx.md" 形式
-                if (f"/{gen}" in p) or (f"_{gen}_" in p):
-                    if gen not in generation_to_path:
-                        generation_to_path[gen] = p
-                    break
+            # 多种代际标记形式
+            if (f"/{gen}" in p) or (f"_{gen}_" in p) or \
+               (f"（{gen}" in p) or (f"({gen}" in p):
+                if gen not in generation_to_path:
+                    generation_to_path[gen] = p
+                break
     if len(generation_to_path) >= 2:
         return [{"name": "代际", "values": sorted(generation_to_path.keys()),
                  "overview_paths": generation_to_path}]
