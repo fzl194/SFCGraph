@@ -97,7 +97,12 @@ def build_feature_node(seed: dict, raw_fields: dict, *, applicable_nf: list,
                        first_release: str, standards: list, overview_path: str | None,
                        nf: str, version: str, has_overview: str = "yes",
                        config_relevance: str = "required") -> dict:
-    """组装单个 Feature 节点（四段式 id + 全部 *_raw + 归一化 + 上下文，不可变合并）。"""
+    """组装单个 Feature 节点（四段式 id + 全部 *_raw + 归一化 + 上下文，不可变合并）。
+
+    多概述特性的父节点由 build_multi_overview_parent 构造（13 *_raw 字段全空），
+    子特性节点由 build_subfeature_node 构造（独立 *_raw + parent_feature_code 指向父）。
+    边表 target/source_id 仍用父 feature_code，不展开到子。
+    """
     code = seed["feature_code"]
     node = {
         "id": f"{nf}@{version}@Feature@{code}",
@@ -118,5 +123,78 @@ def build_feature_node(seed: dict, raw_fields: dict, *, applicable_nf: list,
         "source_path": overview_path or "",
         "has_overview": has_overview,
         "variant_dimensions": [],
+    }
+    return {**node, **raw_fields}
+
+
+def build_multi_overview_parent(seed: dict, *, nf: str, version: str,
+                                overview_paths: list, variant_dims: list) -> dict:
+    """多概述特性的父节点：13 *_raw 字段全空（差异见子特性），保留 source_evidence_ids +
+    variant_dimensions + overview_count 作为索引。前端查询代际细节走子特性 -1/-2/-3。"""
+    code = seed["feature_code"]
+    return {
+        "id": f"{nf}@{version}@Feature@{code}",
+        "feature_code": code,
+        "name": seed.get("name", ""),
+        "is_directory": seed.get("is_directory", False),
+        "catalog_section": seed.get("catalog_section", ""),
+        "parent_feature_code": "",
+        "applicable_nf": [],
+        "nf_support_map": seed.get("nf_support_map", ""),
+        "first_release_version": "",
+        "standards": [],
+        "feature_category": infer_feature_category(seed.get("catalog_section", ""), "", nf=nf),
+        "config_relevance": "none",
+        "nf": nf,
+        "version": version,
+        "source_path": overview_paths[0] if overview_paths else "",
+        "has_overview": "multi_overview",
+        "variant_dimensions": variant_dims,
+        "source_evidence_ids": list(overview_paths),
+        "overview_count": len(overview_paths),
+        # 13 *_raw 全空（差异见子特性 -1/-2/-3）
+        "applicable_nf_raw": "", "definition_raw": "", "customer_value_raw": "",
+        "application_scenario_raw": "", "availability_raw": "", "feature_interaction_raw": "",
+        "system_impact_raw": "", "restrictions_raw": "", "principle_raw": "",
+        "charging_raw": "", "spec_raw": "", "standards_raw": "", "release_history_raw": "",
+    }
+
+
+def build_subfeature_node(parent_seed: dict, *, nf: str, version: str,
+                          suffix: str, variant_label: str, overview_path: str,
+                          raw_fields: dict, applicable_nf: list,
+                          first_release: str, standards: list,
+                          has_activation: bool, no_config: bool, dep_count: int) -> dict:
+    """多概述特性的子特性节点：feature_code = "{父}-{suffix}"，parent_feature_code = 父 code。
+
+    各代际 *_raw 独立（从对应代际概述解析），source_evidence_ids = [本代际路径]。
+    边表 target/source 仍用父 feature_code（不在子特性上挂边）。
+    """
+    parent_code = parent_seed["feature_code"]
+    sub_code = f"{parent_code}-{suffix}"
+    name = parent_seed.get("name", "")
+    if variant_label:
+        name = f"{name}-{variant_label}"
+    node = {
+        "id": f"{nf}@{version}@Feature@{sub_code}",
+        "feature_code": sub_code,
+        "name": name,
+        "is_directory": False,
+        "catalog_section": parent_seed.get("catalog_section", ""),
+        "parent_feature_code": parent_code,
+        "applicable_nf": applicable_nf,
+        "nf_support_map": parent_seed.get("nf_support_map", ""),
+        "first_release_version": first_release,
+        "standards": standards,
+        "feature_category": infer_feature_category(parent_seed.get("catalog_section", ""),
+                                                    raw_fields.get("definition_raw", ""), nf=nf),
+        "config_relevance": infer_config_relevance(has_activation, no_config,
+                                                   parent_seed.get("catalog_section", ""), dep_count),
+        "nf": nf,
+        "version": version,
+        "source_path": overview_path,
+        "has_overview": "yes",
+        "variant_dimensions": [],
+        "source_evidence_ids": [overview_path],
     }
     return {**node, **raw_fields}

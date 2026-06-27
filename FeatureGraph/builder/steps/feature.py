@@ -1,9 +1,12 @@
 """Step feature: xlsx seed + 概述md 13节解析 → features.jsonl 节点表。
 
 每个 Feature 节点：
-- source_evidence_ids = 概述 md 路径列表（单概述 1 条；代际多概述 N 条——variant_dimensions）
-- variant_dimensions = 多概述时 [{name: "代际", values, overview_paths}, ...]
-- source_path = 主概述（多概述时取优先级最高那条）
+- 单概述特性：1 节点，13 *_raw 字段完整
+- 多概述特性（同一 feature_code 有 N 个代际概述）：
+    * 父节点 1 个：13 *_raw 字段全空，has_overview=multi_overview，保留 source_evidence_ids+variant_dimensions+overview_count 作索引
+    * 子特性 N 个：feature_code = "{父}-{1..N}"，parent_feature_code 指向父，
+      本代际 *_raw 字段独立，source_evidence_ids = [本代际路径]
+    * 边表（feature_relations/feature_requires_license）target/source_id 仍用父 feature_code
 """
 from __future__ import annotations
 
@@ -12,12 +15,14 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from ..core.feature import build_feature_node, infer_config_relevance
+from ..core.feature import (
+    build_feature_node, build_multi_overview_parent, build_subfeature_node,
+    infer_config_relevance,
+)
 from ..core.io import write_jsonl
 from ..core.overview import (
-    _pick_primary_overview, collect_raw_fields, detect_variant_dimensions,
-    extract_applicable_nf, extract_first_release, extract_standards,
-    find_overview_md, parse_sections,
+    collect_raw_fields, detect_variant_dimensions, extract_applicable_nf,
+    extract_first_release, extract_standards, find_overview_md, parse_sections,
 )
 from ..core.seed import NF_COLUMNS, extract_seed
 from .registry import step
@@ -79,6 +84,58 @@ def _build_directory_node(seed: dict, nf: str, version: str) -> dict:
     }
 
 
+def _build_multi_overview_nodes(seed: dict, overview_paths: list, variant_dims: list,
+                                doc_assets: list, project_root: Path,
+                                nf: str, version: str) -> list[dict]:
+    """多概述特性：返回 [父节点] + [子特性节点 × N]。
+
+    子特性按 overview_paths 顺序编号 -1, -2, -3。variant_label 来自 variant_dimensions 中
+    对应代际的 key（如 "4G"/"5G"/"2_3G"），便于前端展示。
+    """
+    nodes: list[dict] = []
+    parent = build_multi_overview_parent(seed, nf=nf, version=version,
+                                         overview_paths=overview_paths, variant_dims=variant_dims)
+    parent["source_evidence_ids"] = list(overview_paths)
+    parent["category_reason"] = ""
+    nodes.append(parent)
+
+    # 代际名映射 (gen → label)
+    gen_to_label: dict[str, str] = {}
+    if variant_dims:
+        for v in variant_dims:
+            if v.get("name") == "代际":
+                gen_to_label = {gen: gen for gen in v.get("overview_paths", {}).keys()}
+
+    # 全局 doc_assets 用于 has_activation 判定（任一代际有 activation 文档）
+    has_activation_any = any(dt == "activation" for _, dt in doc_assets)
+
+    for idx, ov_path in enumerate(overview_paths, start=1):
+        suffix = str(idx)
+        variant_label = ""
+        # 查找该路径对应的代际 label
+        for gen, p in (variant_dims[0].get("overview_paths", {}) if variant_dims else {}).items():
+            if p == ov_path:
+                variant_label = gen
+                break
+
+        abs_ov = Path(ov_path) if Path(ov_path).is_absolute() else project_root / ov_path
+        content = abs_ov.read_text(encoding="utf-8", errors="ignore") if abs_ov.exists() else ""
+        sections = parse_sections(content)
+        raws = collect_raw_fields(sections)
+        no_config = "无需配置" in sections.get("可获得性", "")
+        sub = build_subfeature_node(seed, nf=nf, version=version,
+                                    suffix=suffix, variant_label=variant_label,
+                                    overview_path=ov_path, raw_fields=raws,
+                                    applicable_nf=extract_applicable_nf(sections),
+                                    first_release=extract_first_release(sections),
+                                    standards=extract_standards(sections),
+                                    has_activation=has_activation_any,
+                                    no_config=no_config, dep_count=0)
+        sub["category_reason"] = ""
+        nodes.append(sub)
+    return nodes
+
+
 @step("feature", output_file="features.jsonl")
 def run(ctx):
     nf, version = ctx["nf"], ctx["version"]
@@ -95,7 +152,8 @@ def run(ctx):
 
     nodes: list[dict] = []
     stats = {"leaf": 0, "dir": 0, "yes": 0, "no_overview": 0, "no_docs": 0,
-             "empty": 0, "file_missing": 0, "multi_overview": 0}
+             "empty": 0, "file_missing": 0, "multi_overview_parent": 0,
+             "subfeature": 0}
 
     for seed in seeds:
         code = seed["feature_code"]
@@ -122,9 +180,22 @@ def run(ctx):
 
         overview_paths, doc_assets = find_overview_md(code, fps, project_root)
         has_activation = any(dt == "activation" for _, dt in doc_assets)
-        primary_overview = _pick_primary_overview(overview_paths, code)
-        source_evs = list(overview_paths)   # 仅概述路径（其他子文档不入 Feature 节点）
         variant_dims = detect_variant_dimensions(overview_paths, code)
+
+        # 多概述特性：父 + 子特性 × N
+        if len(overview_paths) > 1:
+            multi_nodes = _build_multi_overview_nodes(
+                seed, overview_paths, variant_dims, doc_assets, project_root, nf, version)
+            # 跳过 sample（按父 code 过滤）
+            if not sample or code in sample:
+                nodes.extend(multi_nodes)
+                stats["multi_overview_parent"] += 1
+                stats["subfeature"] += len(overview_paths)
+                stats["yes"] += len(overview_paths)
+            continue
+
+        # 单概述特性
+        primary_overview = overview_paths[0] if overview_paths else ""
 
         if not overview_paths:
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
@@ -140,8 +211,8 @@ def run(ctx):
         if not abs_ov.exists():
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=primary_overview, nf=nf, version=version, has_overview="file_missing")
-            n["source_evidence_ids"] = source_evs
-            n["variant_dimensions"] = variant_dims
+            n["source_evidence_ids"] = [primary_overview]
+            n["variant_dimensions"] = []
             n["category_reason"] = ""
             nodes.append(n)
             stats["file_missing"] += 1
@@ -151,8 +222,8 @@ def run(ctx):
         if len(content.strip()) < 50:
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=primary_overview, nf=nf, version=version, has_overview="empty")
-            n["source_evidence_ids"] = source_evs
-            n["variant_dimensions"] = variant_dims
+            n["source_evidence_ids"] = [primary_overview]
+            n["variant_dimensions"] = []
             n["category_reason"] = ""
             nodes.append(n)
             stats["empty"] += 1
@@ -167,20 +238,19 @@ def run(ctx):
             standards=extract_standards(sections),
             overview_path=primary_overview, nf=nf, version=version, has_overview="yes",
             config_relevance=infer_config_relevance(has_activation, no_config))
-        node["source_evidence_ids"] = source_evs
-        node["variant_dimensions"] = variant_dims
+        node["source_evidence_ids"] = [primary_overview]
+        node["variant_dimensions"] = []
         node["category_reason"] = ""
         nodes.append(node)
         stats["yes"] += 1
-        if len(overview_paths) > 1:
-            stats["multi_overview"] += 1
 
     out = Path(ctx["data_dir"]) / "features.jsonl"
     write_jsonl(out, nodes)
     print(f"[feature:{nf}/{version}] {len(nodes)} Feature (leaf={stats['leaf']}, dir={stats['dir']}, "
-          f"yes={stats['yes']}, multi_overview={stats['multi_overview']}, "
-          f"no_overview={stats['no_overview']}, no_docs={stats['no_docs']}, "
-          f"empty={stats['empty']}, file_missing={stats['file_missing']}) → {out}")
+          f"yes={stats['yes']}, multi_parent={stats['multi_overview_parent']}, "
+          f"sub={stats['subfeature']}, no_overview={stats['no_overview']}, "
+          f"no_docs={stats['no_docs']}, empty={stats['empty']}, "
+          f"file_missing={stats['file_missing']}) → {out}")
     return len(nodes)
 
 
