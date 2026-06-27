@@ -69,9 +69,53 @@ _OPS_SECTIONS = {
 }
 
 
+# catalog_section → feature_category 精确映射表（UNC 39 分区）
+UNC_SECTION_CATEGORY: dict[str, str] = {
+    # base：业务基本特性/架构底座
+    "UNC业务基本功能": "base",
+    "数据基础架构": "base",
+    "NFV基本特性": "base",
+    "分布式部署增值包": "base",
+    "高性能": "base",
+    # enhanced：计费/策略/PCC/QoS/增值/智能
+    "年费增值包-PCC解决方案增值包": "enhanced",
+    "计费类": "enhanced",
+    "QoS类": "enhanced",
+    "年费增值包-MBB可视化解决方案增值包": "enhanced",
+    "年费增值包-业务感知解决方案增值包": "enhanced",
+    "年费增值包-5G高速承载增值包": "enhanced",
+    "移动VPN解决方案": "enhanced",
+    "MVNO增值包": "enhanced",
+    "eMTC业务功能": "enhanced",
+    "网络切片解决方案基本包": "enhanced",
+    "智能化业务感知解决方案基本包": "enhanced",
+    "智能化PCC增值包": "enhanced",
+    "分布式数据库迁移增值包": "enhanced",
+    "数据迁移增值包": "enhanced",
+    "5G SA业务性能类保障增值包": "enhanced",
+    "VoNR业务体验保障增值包": "enhanced",
+    "MEC解决方案基本包": "enhanced",
+    "NB-IoT业务类": "enhanced",
+    "业务接入连接类解决方案基本包": "enhanced",
+    "视频承载信令控制解决方案基本包": "enhanced",
+    # operations：运维/网管/可靠性
+    "运维管理": "operations",
+    "灰度升级解决方案增值包": "operations",
+    "双故障bypass增值包": "operations",
+    "SA特征库更新管控方案增值包": "operations",
+    "业务高可靠增值包": "operations",
+    # protocol：协议接入/承载/NSA/5G SA/IoT
+    "IP基本功能": "protocol",
+    "NSA业务基本特性": "protocol",
+    "5G基础通信类保障增值包": "protocol",
+    "NB-IoT业务功能": "protocol",
+    "RedCap解决方案增值包": "protocol",
+}
+
+
 def infer_feature_category(catalog_section: str, definition: str, nf: str = "UDG") -> str:
-    """优先查 nf 对应分区表；未命中走关键词兜底；都没命中默认 enhanced。"""
-    table = UDG_SECTION_CATEGORY if nf == "UDG" else {}
+    """优先查 nf 对应分区表（UDG 35 / UNC 39）；未命中走关键词兜底；都没命中默认 enhanced。"""
+    table = UDG_SECTION_CATEGORY if nf == "UDG" else UNC_SECTION_CATEGORY if nf == "UNC" else {}
     if catalog_section and catalog_section in table:
         return table[catalog_section]
     text = (catalog_section or "") + " " + (definition or "")
