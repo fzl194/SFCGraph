@@ -16,7 +16,7 @@ ne:
     20.15.2:
       corpus_root: output/UNC 20.15.2 产品文档(裸机容器) 05/网络部署/特性部署/UNC特性指南
       license_source: output/UNC 20.15.2 产品文档(裸机容器) 05/网络部署/特性部署/UNC License描述
-      manifest: feature-graph/UNC 20.15.2 特性清单 01.xlsx
+      manifest: FeatureGraph/UNC 20.15.2 特性清单 01.xlsx
       manifest_sheets: [2, 3]
       legacy_dir: feature-graph/data
       agent_batch_size: 5
