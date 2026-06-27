@@ -1,7 +1,6 @@
 """Step feature: xlsx seed + 概述md 13节解析 → features.jsonl 节点表。
 
-每个 Feature 节点自带 `doc_assets` 字段（覆盖该特性所有 md，按 doc_type 分类），
-不再产出独立 jsonl（对齐 CommandGraph 节点字段惯例）。
+每个 Feature 节点自带 `source_evidence_ids`（该特性所有 md 路径列表）和 doc_type 分类。
 """
 from __future__ import annotations
 
@@ -21,7 +20,6 @@ from .registry import step
 
 _DIRPAT = re.compile(r"^(GWFD|WSFD|IPFD|NPFD)-(\d{3,6})\s")
 _FIDPREFIX_RE = re.compile(r"^(GWFD|WSFD|IPFD|NPFD)-(\d{3,6})")
-_DOC_TITLE_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 
 
 def _scan_feature_docs(corpus_root: Path, valid_fids: set, project_root: Path) -> dict:
@@ -47,28 +45,6 @@ def _scan_feature_docs(corpus_root: Path, valid_fids: set, project_root: Path) -
     return mapping
 
 
-def _read_doc_title(file_path: str, project_root: Path) -> str:
-    """读 md 的 H1 标题（移植 step4 read_doc_title）。"""
-    abs_fp = Path(file_path) if Path(file_path).is_absolute() else project_root / file_path
-    if not abs_fp.exists():
-        return ""
-    try:
-        text = abs_fp.read_text(encoding="utf-8", errors="ignore")
-        m = _DOC_TITLE_RE.search(text)
-        return m.group(1).strip() if m else ""
-    except Exception:
-        return ""
-
-
-def _build_doc_assets(doc_assets: list[tuple[str, str]], project_root: Path, code: str) -> list[dict]:
-    """doc_assets: [(file_path, doc_type), ...] → [{doc_path, doc_type, doc_title}, ...]。
-
-    目录特性无文档，传 [] 返回。
-    """
-    return [{"doc_path": fp, "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)}
-            for fp, dt in doc_assets]
-
-
 def _build_directory_node(seed: dict, nf: str, version: str) -> dict:
     """目录特性的最小节点（无概述 md，便于 parent_feature_code 依赖 target 命中）。"""
     code = seed["feature_code"]
@@ -83,15 +59,13 @@ def _build_directory_node(seed: dict, nf: str, version: str) -> dict:
         "nf_support_map": seed.get("nf_support_map", ""),
         "first_release_version": "",
         "standards": [],
-        "feature_category": "base",   # 目录是架构/底座
-        "config_relevance": "none",   # 目录自身不配置
+        "feature_category": "base",
+        "config_relevance": "none",
         "nf": nf,
         "version": version,
         "source_path": "",
         "has_overview": "directory",
-        "doc_assets": [],
         "source_evidence_ids": [],
-        # 13 个 *_raw 空
         "applicable_nf_raw": "", "definition_raw": "", "customer_value_raw": "",
         "application_scenario_raw": "", "availability_raw": "", "feature_interaction_raw": "",
         "system_impact_raw": "", "restrictions_raw": "", "principle_raw": "",
@@ -122,7 +96,6 @@ def run(ctx):
         if sample and code not in sample:
             continue
 
-        # 目录特性：最小节点
         if seed["is_directory"]:
             nodes.append(_build_directory_node(seed, nf, version))
             stats["dir"] += 1
@@ -134,7 +107,6 @@ def run(ctx):
         if not fps:
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=None, nf=nf, version=version, has_overview="no_docs")
-            n["doc_assets"] = []
             n["source_evidence_ids"] = []
             n["category_reason"] = ""
             nodes.append(n)
@@ -143,13 +115,11 @@ def run(ctx):
 
         overview_path, doc_assets = find_overview_md(code, fps, project_root)
         has_activation = any(dt == "activation" for _, dt in doc_assets)
-        das = _build_doc_assets(doc_assets, project_root, code)
-        ev_ids = [d["doc_path"] for d in das]
+        ev_ids = [fp for fp, _ in doc_assets]
 
         if not overview_path:
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=None, nf=nf, version=version, has_overview="no_overview")
-            n["doc_assets"] = das
             n["source_evidence_ids"] = ev_ids
             n["category_reason"] = ""
             nodes.append(n)
@@ -160,7 +130,6 @@ def run(ctx):
         if not abs_ov.exists():
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=overview_path, nf=nf, version=version, has_overview="file_missing")
-            n["doc_assets"] = das
             n["source_evidence_ids"] = ev_ids
             n["category_reason"] = ""
             nodes.append(n)
@@ -171,7 +140,6 @@ def run(ctx):
         if len(content.strip()) < 50:
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=overview_path, nf=nf, version=version, has_overview="empty")
-            n["doc_assets"] = das
             n["source_evidence_ids"] = ev_ids
             n["category_reason"] = ""
             nodes.append(n)
@@ -187,9 +155,8 @@ def run(ctx):
             standards=extract_standards(sections),
             overview_path=overview_path, nf=nf, version=version, has_overview="yes",
             config_relevance=infer_config_relevance(has_activation, no_config))
-        node["doc_assets"] = das
         node["source_evidence_ids"] = ev_ids
-        node["category_reason"] = ""   # categorize step 回填
+        node["category_reason"] = ""
         nodes.append(node)
         stats["yes"] += 1
 
@@ -199,5 +166,6 @@ def run(ctx):
           f"yes={stats['yes']}, no_overview={stats['no_overview']}, no_docs={stats['no_docs']}, "
           f"empty={stats['empty']}, file_missing={stats['file_missing']}) → {out}")
     return len(nodes)
+
 
 
