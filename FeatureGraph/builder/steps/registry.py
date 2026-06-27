@@ -27,6 +27,7 @@ def step(name: str, output_file: str | None = None, agent: bool = False):
         STEPS[name] = fn
         if output_file:
             PRODUCT_FILE[name] = output_file
+        AGENT_STEPS.discard(name)  # 重注册时清除旧 agent 状态（如 agent 标志变更）
         if agent:
             AGENT_STEPS.add(name)
         return fn

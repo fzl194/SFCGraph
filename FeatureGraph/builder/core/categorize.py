@@ -1,67 +1,45 @@
-"""categorize Agent 步骨架（prep/check/ingest，对齐 ConfigTask split_tasks）。
+"""categorize 纯函数（特征分类，已从 Agent 降级为代码规则）。
 
-prep: 待分类特性(所有或 sample 子集)按 batch_size 分批 → prompt 写
-      data/{nf}/{version}/agent_prompts/categorize/{batch_key}.txt
-check: data/{nf}/{version}/agent_outputs/categorize/{batch_key}.json 齐了 → ingest；未齐 → 返回 PAUSE
-ingest: 解析输出 {feature_code: {feature_category, config_relevance, reason}} → 回填 features.jsonl
+build_categorize_results: 给定 features + depends + legacy，返回每特性的
+{feature_code, feature_category, config_relevance, category_reason}。
 
-不调 LLM，纯文件交接。build_all 遇 PAUSE 停（尾随 verify 仍跑）。
+agent/prompts.py 保留作为弱依赖 candidates 升级等真正需要语义判断的步骤备用。
 """
 from __future__ import annotations
 
-import hashlib
-import json
-import re
-
-from ..agent.prompts import CATEGORIZE_PROMPT
-from ..core.legacy import load_legacy_attributes
+from .feature import infer_config_relevance, infer_feature_category
+from .legacy import load_legacy_attributes
 
 
-def batch_key(codes: list[str]) -> str:
-    """批内特性集合的稳定哈希 → batch_<hash8>。"""
-    h = hashlib.md5("|".join(sorted(codes)).encode()).hexdigest()[:8]
-    return f"batch_{h}"
+def build_categorize_results(features: list[dict], depends: list[dict] | None = None,
+                             legacy_attrs: dict | None = None, nf: str = "UDG") -> list[dict]:
+    """纯函数：对每个 feature 计算 feature_category / config_relevance / category_reason。"""
+    depends = depends or []
+    legacy_attrs = legacy_attrs or {}
 
+    dep_count: dict[str, int] = {}
+    for e in depends:
+        dep_count[e["source_feature_code"]] = dep_count.get(e["source_feature_code"], 0) + 1
 
-def build_agent_input(features: list[dict], legacy_attrs: dict) -> list[dict]:
-    """构造 Agent 输入（每特性含分类所需上下文 + 规则初值 + 旧值参考）。"""
-    out: list[dict] = []
+    results: list[dict] = []
     for f in features:
         code = f["feature_code"]
-        la = legacy_attrs.get(code, {})
-        out.append({
+        section = f.get("catalog_section", "")
+        definition = f.get("definition_raw", "") or ""
+        availability = f.get("availability_raw", "") or ""
+        has_activation = bool(f.get("has_activation_doc", False))
+        no_config_needed = "无需配置" in availability or "无需配置" in definition
+        legacy = legacy_attrs.get(code, {})
+        legacy_type = legacy.get("feature_type", "") or "none"
+
+        category = infer_feature_category(section, definition, nf=nf)
+        relevance = infer_config_relevance(has_activation, no_config_needed,
+                                           section, dep_count.get(code, 0))
+        results.append({
             "feature_code": code,
-            "name": f.get("name", ""),
-            "catalog_section": f.get("catalog_section", ""),
-            "definition_raw": (f.get("definition_raw", "") or "")[:400],
-            "has_activation_doc": f.get("has_activation_doc", False),
-            "rule_initial_category": f.get("feature_category", ""),
-            "rule_initial_config_relevance": f.get("config_relevance", ""),
-            "legacy_feature_type": la.get("feature_type", ""),
-            "legacy_config_required": la.get("config_required", ""),
+            "feature_category": category,
+            "config_relevance": relevance,
+            "category_reason": f"section={section or '(空)'} legacy_type={legacy_type} "
+                               f"has_activation={has_activation} dep={dep_count.get(code,0)}",
         })
-    return out
-
-
-def build_prompt(batch: list[dict], legacy_attrs: dict) -> str:
-    input_data = build_agent_input(batch, legacy_attrs)
-    return CATEGORIZE_PROMPT.format(
-        n=len(batch),
-        first_code=batch[0]["feature_code"] if batch else "",
-        input_json=json.dumps(input_data, ensure_ascii=False, indent=2),
-    )
-
-
-def parse_agent_output(raw_text: str, batch: list[dict]) -> dict:
-    """解析 Agent 输出 → {feature_code: {feature_category, config_relevance, reason}}。
-
-    输出可为 dict 或含 JSON 的文本。
-    """
-    if isinstance(raw_text, dict):
-        data = raw_text
-    else:
-        m = re.search(r'\{.*\}', raw_text, re.DOTALL)
-        if not m:
-            return {}
-        data = json.loads(m.group())
-    return {code: data.get(code, {}) for code in [f["feature_code"] for f in batch]}
+    return results
