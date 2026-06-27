@@ -1,16 +1,19 @@
 # ConfigTask/builder/steps/split_tasks.py
-"""Step 2: Agent 拆 task（per-doc, 每批 agent_batch_size 份）。
+"""Step 2 (Agent-1): 拆 task —— prep / pause / ingest 模型。
 
-Agent 调用由执行者触发（Agent 工具 / subagent dispatch）。
-本文件负责：输入构造 + 输出解析 + 进度管理 + 核查接线。
+不调 LLM。纯文件交接：
+- prep：pending docs（不在 task_candidates.jsonl 的）分批 → 全部 prompt 写到
+        data/agent_prompts/split_tasks/{key}.txt（key = 批内 doc 集合哈希，稳定）
+- check：data/agent_outputs/split_tasks/{key}.json 齐了 → ingest；未齐 → 返回 "PAUSE"
+- ingest：解析输出 → 追加 task_candidates.jsonl（done 从输出派生：doc_path 在 candidates 里）
+
+build_all 遇 PAUSE 停；调 Agent 写输出后重跑 build_all 即续。
 """
 import json
-import re
+import hashlib
 
 from builder.steps.registry import step
 from builder.agent.prompts import SPLIT_TASKS_PROMPT
-from builder.agent.runner import run_agent_step
-from builder.steps.verify_split import verify_candidate
 
 
 def build_agent_input(batch):
@@ -40,8 +43,11 @@ def build_prompt(batch):
 
 
 def parse_agent_output(raw_text, batch):
-    """解析 Agent 输出文本 → {doc_path: [candidate, ...]}。"""
-    # 提取 JSON
+    """解析 Agent 输出 → {doc_path: [candidate, ...]}。
+
+    输出可为 dict 或含 JSON 的文本。每 doc 的 candidate 补 doc_path/feature_id/candidate_id。
+    """
+    import re
     if isinstance(raw_text, dict):
         data = raw_text
     else:
@@ -69,39 +75,82 @@ def parse_agent_output(raw_text, batch):
     return results
 
 
-@step("split_tasks", output_file="task_candidates.jsonl")
+def _batch_key(batch):
+    """批内 doc 集合的稳定哈希（sorted doc_path）→ batch_<hash8>。"""
+    h = hashlib.md5("|".join(sorted(d["doc_path"] for d in batch)).encode()).hexdigest()[:8]
+    return f"batch_{h}"
+
+
+@step("split_tasks", output_file="task_candidates.jsonl", agent=True)
 def run(ctx):
-    """Agent-1: 拆 task。
+    """prep → check → ingest。返回 int=完成数 / "PAUSE"=待回填。"""
+    data_dir = ctx["data_dir"]
+    prompts_dir = data_dir / "agent_prompts" / "split_tasks"
+    outputs_dir = data_dir / "agent_outputs" / "split_tasks"
+    prompts_dir.mkdir(parents=True, exist_ok=True)
+    outputs_dir.mkdir(parents=True, exist_ok=True)
 
-    执行方式：
-    1. 本函数读 doc_steps.jsonl，找出未处理的文档
-    2. 构造 Agent prompt 并输出（执行者用 Agent 工具调）
-    3. 执行者把 Agent 返回写入 task_candidates.jsonl
-    4. 重跑 verify_split 核查
-    """
-    doc_steps_path = ctx["data_dir"] / "doc_steps.jsonl"
+    # 读 doc_steps
     all_docs = []
-    with open(doc_steps_path, encoding="utf-8") as f:
+    with open(data_dir / "doc_steps.jsonl", encoding="utf-8") as f:
         for line in f:
-            all_docs.append(json.loads(line))
+            line = line.strip()
+            if line:
+                all_docs.append(json.loads(line))
 
-    progress = run_agent_step.__wrapped__ if hasattr(run_agent_step, '__wrapped__') else None
+    # done = doc_path 已在 task_candidates.jsonl（输出派生）
+    cand_path = data_dir / "task_candidates.jsonl"
+    done_docs = set()
+    if cand_path.exists():
+        with open(cand_path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    done_docs.add(json.loads(line)["doc_path"])
 
-    # 简化版：输出第一批待处理的 prompt，执行者手动调 Agent
-    from builder.agent.runner import load_progress
-    progress = load_progress(ctx, "split_tasks")
+    # rerun：强制把匹配 doc 当 pending（重抽）
+    rerun = ctx.get("rerun_target")
+    pending_docs = [d for d in all_docs
+                    if (d["doc_path"] not in done_docs) or (rerun and rerun in d["doc_path"])]
 
-    todo = [d for d in all_docs if progress.get(d["doc_path"]) != "ok"]
-    if not todo:
-        print(f"  全部已完成 ({len(progress)}/{len(all_docs)})")
-        return 0
+    if not pending_docs:
+        print(f"  全部已完成 ({len(done_docs)}/{len(all_docs)} 文档)")
+        return len(done_docs)
 
+    # 分批
     batch_size = ctx.get("agent_batch_size", 5)
-    batch = todo[:batch_size]
+    batches = [pending_docs[i:i + batch_size]
+               for i in range(0, len(pending_docs), batch_size)]
 
-    prompt = build_prompt(batch)
-    print(f"  待处理: {len(todo)} 份, 当前批次: {len(batch)} 份")
-    print(f"  PROMPT:\n{prompt[:500]}...")
-    print(f"\n  执行者请用 Agent 工具发送完整 prompt，返回结果写入 task_candidates.jsonl")
-    print(f"  然后运行: python build_all.py UDG 20.15.2 verify_split")
-    return len(todo)
+    # prep：每批写 prompt（幂等）
+    for batch in batches:
+        key = _batch_key(batch)
+        (prompts_dir / f"{key}.txt").write_text(build_prompt(batch), encoding="utf-8")
+
+    # check + ingest：输出齐了的批回填
+    ingested = 0
+    still_pending = []
+    with open(cand_path, "a", encoding="utf-8") as f:
+        for batch in batches:
+            key = _batch_key(batch)
+            out_file = outputs_dir / f"{key}.json"
+            if not out_file.exists():
+                still_pending.append(key)
+                continue
+            results = parse_agent_output(out_file.read_text(encoding="utf-8"), batch)
+            for doc_path, cands in results.items():
+                for c in cands:
+                    f.write(json.dumps(c, ensure_ascii=False) + "\n")
+                    ingested += 1
+
+    if still_pending:
+        print(f"  prep: {len(batches)} 批 prompt 已就绪 → {prompts_dir}")
+        print(f"  已回填 {ingested} candidate；仍待处理 {len(still_pending)} 批:")
+        for k in still_pending[:12]:
+            print(f"    - {prompts_dir}/{k}.txt  →  写输出到 {outputs_dir}/{k}.json")
+        if len(still_pending) > 12:
+            print(f"    ... 等 {len(still_pending) - 12} 批")
+        return "PAUSE"
+
+    print(f"  全部回填: {ingested} candidate（{len(batches)} 批）")
+    return ingested
