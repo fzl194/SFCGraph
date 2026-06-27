@@ -82,24 +82,52 @@ def _parse_table(text: str) -> list[dict]:
 
 
 def _parse_quoted(text: str) -> list[dict]:
-    """单行引号包裹：'82209822 LKV3G5BCBC01 内容计费基本功能'。"""
-    m = re.search(r'["“”\'‘’]+([A-Za-z0-9]{6,12})\s+([A-Za-z0-9_\-]+)\s+(.+?)["“”\'‘’]', text, re.MULTILINE)
+    """单行引号/反引号包裹：兼容 UDG 标准 `"编号 编码 名称"` 与 UNC 格式
+    `` `编码 编号 名称` ``（反引号 + code 在前 + 字母开头）。
+
+    匹配顺序：先尝试 (编号 编码 名称)，再尝试 (编码 编号 名称)。
+    编号/编码都是 6-12 位字母数字（兼容 LKVxxx 系列）。
+    """
+    # 格式 A: "81203358 LKV2SCVA01 支持2/3/4/5G融合架构"（UDG 标准）
+    m = re.search(
+        r'["“”\'‘’`]+([A-Za-z0-9]{6,12})\s+([A-Za-z0-9_\-]{6,12})\s+(.+?)["“”\'‘’`]',
+        text, re.MULTILINE)
     if m:
-        return [{"license_number": m.group(1), "license_code": m.group(2),
+        first, second = m.group(1), m.group(2)
+        # 判断哪个是 license_code（一般含 LKV 前缀或更长字母组合）
+        if first.upper().startswith("LKV") or not second.upper().startswith("LKV"):
+            license_code = first
+            license_number = second
+        else:
+            license_code = second
+            license_number = first
+        return [{"license_number": license_number, "license_code": license_code,
                  "license_name": m.group(3).strip().rstrip("。")}]
     return []
 
 
 def _parse_plain(text: str) -> list[dict]:
-    """纯文本段落（'对应的License控制项为 82200EDD LKV2SALANSM01 xxx。'）。"""
+    """纯文本段落（UNC: '对应的License控制项为 LKV2SCDSA01 81203322 支持...'; UDG: '对应的License控制项为 82200EDD LKV2SALANSM01 xxx。'）。
+
+    字符集放宽到字母数字，容忍 (编号 编码) / (编码 编号) 两种顺序。
+    """
     out: list[dict] = []
     for line in text.split("\n"):
         line = line.strip()
         if line.startswith("|") or not line:
             continue
-        m = re.search(r"([A-Za-z0-9]{6,12})\s+([A-Za-z0-9_\-]+)\s+(.+?)(?:\s*[。.]|$)", line)
+        m = re.search(r"([A-Za-z0-9]{6,12})\s+([A-Za-z0-9_\-]{6,12})\s+(.+?)(?:\s*[。.]|$)", line)
         if m:
+            first, second = m.group(1), m.group(2)
+            # 识别 license_code（以 LKV 开头）
+            if first.upper().startswith("LKV"):
+                license_code, license_number = first, second
+            elif second.upper().startswith("LKV"):
+                license_code, license_number = second, first
+            else:
+                license_code, license_number = first, second
             name = m.group(3).strip().rstrip("。|")
             if name and len(name) > 2:
-                out.append({"license_number": m.group(1), "license_code": m.group(2), "license_name": name})
+                out.append({"license_number": license_number, "license_code": license_code,
+                            "license_name": name})
     return out
