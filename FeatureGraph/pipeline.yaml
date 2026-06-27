@@ -1,0 +1,23 @@
+# FeatureGraph pipeline 配置入口 — 换网元/版本只改这里
+# data_dir 自动按 网元/版本 隔离（data/{nf}/{version}）
+project_root: ..
+
+ne:
+  UDG:
+    20.15.2:
+      corpus_root: output/UDG_Product_Documentation_CH_20.15.2/特性部署/特性指南/UDG特性指南
+      license_source: output/UDG_Product_Documentation_CH_20.15.2/特性部署/特性指南/UDG License描述
+      manifest: FeatureGraph/UDG 20.15.2 特性清单 01.xlsx
+      manifest_sheets: [1, 2]
+      legacy_dir: feature-graph/data
+      agent_batch_size: 5
+      steps: [license, feature, dependency, license_edge, categorize, verify]
+  UNC:
+    20.15.2:
+      corpus_root: output/UNC 20.15.2 产品文档(裸机容器) 05/网络部署/特性部署/UNC特性指南
+      license_source: output/UNC 20.15.2 产品文档(裸机容器) 05/网络部署/特性部署/UNC License描述
+      manifest: feature-graph/UNC 20.15.2 特性清单 01.xlsx
+      manifest_sheets: [2, 3]
+      legacy_dir: feature-graph/data
+      agent_batch_size: 5
+      steps: [license, feature, dependency, license_edge, categorize, verify]
