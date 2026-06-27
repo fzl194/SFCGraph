@@ -103,12 +103,14 @@ def run(ctx):
         sections = parse_sections(content)
         raws = collect_raw_fields(sections)
         no_config = "无需配置" in sections.get("可获得性", "")
-        nodes.append(build_feature_node(seed, raws,
+        node = build_feature_node(seed, raws,
             applicable_nf=extract_applicable_nf(sections),
             first_release=extract_first_release(sections),
             standards=extract_standards(sections),
             overview_path=overview_path, nf=nf, version=version, has_overview="yes",
-            config_relevance=infer_config_relevance(has_activation, no_config)))
+            config_relevance=infer_config_relevance(has_activation, no_config))
+        node["has_activation_doc"] = has_activation  # categorize Agent 步判断 config_relevance 用
+        nodes.append(node)
         stats["yes"] += 1
 
     out = Path(ctx["data_dir"]) / "features.jsonl"
