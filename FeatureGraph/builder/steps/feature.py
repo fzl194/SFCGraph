@@ -1,9 +1,7 @@
-"""Step feature: xlsx seed + 概述md 13节解析 → features.jsonl 节点表 + feature_doc_assets.jsonl。
+"""Step feature: xlsx seed + 概述md 13节解析 → features.jsonl 节点表。
 
-支持 --sample 过滤（第一批小范围验证）；has_overview 5 态：
-yes/no_overview/empty/no_docs/file_missing。
-
-feature_doc_assets.jsonl 同步产出（零额外扫描成本：find_overview_md 已返回 doc_assets 列表）。
+每个 Feature 节点自带 `doc_assets` 字段（覆盖该特性所有 md，按 doc_type 分类），
+不再产出独立 jsonl（对齐 CommandGraph 节点字段惯例）。
 """
 from __future__ import annotations
 
@@ -27,7 +25,7 @@ _DOC_TITLE_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 
 
 def _scan_feature_docs(corpus_root: Path, valid_fids: set, project_root: Path) -> dict:
-    """移植 step2：md 归属到路径上最深层特性。返回 {feature_code: [relpath,...]}。"""
+    """移植 step2：md 归属到路径上最深层特性。"""
     mapping: dict = defaultdict(list)
     for root, dirs, files in os.walk(corpus_root):
         dirs[:] = [d for d in dirs if not d.endswith(".assets")]
@@ -62,6 +60,46 @@ def _read_doc_title(file_path: str, project_root: Path) -> str:
         return ""
 
 
+def _build_doc_assets(doc_assets: list[tuple[str, str]], project_root: Path, code: str) -> list[dict]:
+    """doc_assets: [(file_path, doc_type), ...] → [{doc_path, doc_type, doc_title}, ...]。
+
+    目录特性无文档，传 [] 返回。
+    """
+    return [{"doc_path": fp, "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)}
+            for fp, dt in doc_assets]
+
+
+def _build_directory_node(seed: dict, nf: str, version: str) -> dict:
+    """目录特性的最小节点（无概述 md，便于 parent_feature_code 依赖 target 命中）。"""
+    code = seed["feature_code"]
+    return {
+        "id": f"{nf}@{version}@Feature@{code}",
+        "feature_code": code,
+        "name": seed.get("name", ""),
+        "is_directory": True,
+        "catalog_section": seed.get("catalog_section", ""),
+        "parent_feature_code": "",
+        "applicable_nf": [],
+        "nf_support_map": seed.get("nf_support_map", ""),
+        "first_release_version": "",
+        "standards": [],
+        "feature_category": "base",   # 目录是架构/底座
+        "config_relevance": "none",   # 目录自身不配置
+        "nf": nf,
+        "version": version,
+        "source_path": "",
+        "has_overview": "directory",
+        "doc_assets": [],
+        "source_evidence_ids": [],
+        # 13 个 *_raw 空
+        "applicable_nf_raw": "", "definition_raw": "", "customer_value_raw": "",
+        "application_scenario_raw": "", "availability_raw": "", "feature_interaction_raw": "",
+        "system_impact_raw": "", "restrictions_raw": "", "principle_raw": "",
+        "charging_raw": "", "spec_raw": "", "standards_raw": "", "release_history_raw": "",
+        "category_reason": "目录特性(is_directory=true)",
+    }
+
+
 @step("feature", output_file="features.jsonl")
 def run(ctx):
     nf, version = ctx["nf"], ctx["version"]
@@ -77,52 +115,67 @@ def run(ctx):
     file_map = _scan_feature_docs(corpus_root, valid_fids, project_root)
 
     nodes: list[dict] = []
-    doc_assets_all: list[dict] = []
-    stats = {"total": 0, "yes": 0, "no_overview": 0, "no_docs": 0, "empty": 0, "file_missing": 0}
+    stats = {"leaf": 0, "dir": 0, "yes": 0, "no_overview": 0, "no_docs": 0, "empty": 0, "file_missing": 0}
 
     for seed in seeds:
-        if seed["is_directory"]:
-            continue
         code = seed["feature_code"]
         if sample and code not in sample:
             continue
-        stats["total"] += 1
+
+        # 目录特性：最小节点
+        if seed["is_directory"]:
+            nodes.append(_build_directory_node(seed, nf, version))
+            stats["dir"] += 1
+            continue
+
+        stats["leaf"] += 1
 
         fps = file_map.get(code, [])
         if not fps:
-            nodes.append(build_feature_node(seed, {}, applicable_nf=[], first_release="",
-                standards=[], overview_path=None, nf=nf, version=version, has_overview="no_docs"))
+            n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
+                standards=[], overview_path=None, nf=nf, version=version, has_overview="no_docs")
+            n["doc_assets"] = []
+            n["source_evidence_ids"] = []
+            n["category_reason"] = ""
+            nodes.append(n)
             stats["no_docs"] += 1
             continue
 
         overview_path, doc_assets = find_overview_md(code, fps, project_root)
         has_activation = any(dt == "activation" for _, dt in doc_assets)
+        das = _build_doc_assets(doc_assets, project_root, code)
+        ev_ids = [d["doc_path"] for d in das]
+
         if not overview_path:
-            nodes.append(build_feature_node(seed, {}, applicable_nf=[], first_release="",
-                standards=[], overview_path=None, nf=nf, version=version, has_overview="no_overview"))
+            n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
+                standards=[], overview_path=None, nf=nf, version=version, has_overview="no_overview")
+            n["doc_assets"] = das
+            n["source_evidence_ids"] = ev_ids
+            n["category_reason"] = ""
+            nodes.append(n)
             stats["no_overview"] += 1
-            # 仍记录 doc_assets（有文档但未识别概述）
-            for fp, dt in doc_assets:
-                doc_assets_all.append({"feature_code": code, "doc_path": fp,
-                                       "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)})
             continue
 
         abs_ov = Path(overview_path) if Path(overview_path).is_absolute() else project_root / overview_path
         if not abs_ov.exists():
-            nodes.append(build_feature_node(seed, {}, applicable_nf=[], first_release="",
-                standards=[], overview_path=overview_path, nf=nf, version=version, has_overview="file_missing"))
+            n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
+                standards=[], overview_path=overview_path, nf=nf, version=version, has_overview="file_missing")
+            n["doc_assets"] = das
+            n["source_evidence_ids"] = ev_ids
+            n["category_reason"] = ""
+            nodes.append(n)
             stats["file_missing"] += 1
             continue
 
         content = abs_ov.read_text(encoding="utf-8", errors="ignore")
         if len(content.strip()) < 50:
-            nodes.append(build_feature_node(seed, {}, applicable_nf=[], first_release="",
-                standards=[], overview_path=overview_path, nf=nf, version=version, has_overview="empty"))
+            n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
+                standards=[], overview_path=overview_path, nf=nf, version=version, has_overview="empty")
+            n["doc_assets"] = das
+            n["source_evidence_ids"] = ev_ids
+            n["category_reason"] = ""
+            nodes.append(n)
             stats["empty"] += 1
-            # 仍记录 doc_assets
-            for fp, dt in doc_assets:
-                doc_assets_all.append({"feature_code": code, "doc_path": fp,
-                                       "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)})
             continue
 
         sections = parse_sections(content)
@@ -134,22 +187,17 @@ def run(ctx):
             standards=extract_standards(sections),
             overview_path=overview_path, nf=nf, version=version, has_overview="yes",
             config_relevance=infer_config_relevance(has_activation, no_config))
-        node["has_activation_doc"] = has_activation
+        node["doc_assets"] = das
+        node["source_evidence_ids"] = ev_ids
+        node["category_reason"] = ""   # categorize step 回填
         nodes.append(node)
         stats["yes"] += 1
 
-        # doc_assets: 覆盖该特性所有 md（含 overview + activation/debug/principle/...）
-        for fp, dt in doc_assets:
-            doc_assets_all.append({"feature_code": code, "doc_path": fp,
-                                   "doc_type": dt, "doc_title": _read_doc_title(fp, project_root)})
-
     out = Path(ctx["data_dir"]) / "features.jsonl"
     write_jsonl(out, nodes)
-    doc_out = Path(ctx["data_dir"]) / "feature_doc_assets.jsonl"
-    write_jsonl(doc_out, doc_assets_all)
-    print(f"[feature:{nf}/{version}] {len(nodes)} Feature "
-          f"(yes={stats['yes']}, no_overview={stats['no_overview']}, no_docs={stats['no_docs']}, "
+    print(f"[feature:{nf}/{version}] {len(nodes)} Feature (leaf={stats['leaf']}, dir={stats['dir']}, "
+          f"yes={stats['yes']}, no_overview={stats['no_overview']}, no_docs={stats['no_docs']}, "
           f"empty={stats['empty']}, file_missing={stats['file_missing']}) → {out}")
-    print(f"[feature:{nf}/{version}] {len(doc_assets_all)} doc_assets → {doc_out}")
     return len(nodes)
+
 
