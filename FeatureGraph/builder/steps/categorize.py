@@ -17,7 +17,7 @@ from ..core.legacy import load_legacy_attributes
 from .registry import step
 
 
-@step("categorize", output_file="features.jsonl")
+@step("categorize", output_file="features.jsonl", force_run=True)
 def run(ctx):
     nf, version = ctx["nf"], ctx["version"]
     data_dir = Path(ctx["data_dir"])

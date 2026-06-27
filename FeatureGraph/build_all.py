@@ -73,10 +73,11 @@ def main(argv=None) -> int:
         if paused_at and s in AGENT_STEPS:
             print(f"  跳过 agent 步 {s}（前置 {paused_at} 仍待回填）")
             break
-        # 全量跑：自动步输出已存在则 skip；Agent 步总执行 prep/check
+        # 全量跑：自动步输出已存在则 skip；Agent 步 / force_run 步总执行
         if not single and s not in AGENT_STEPS and not args.rerun:
             out = PRODUCT_FILE.get(s)
-            if out and (ctx["data_dir"] / out).exists():
+            fn = STEPS[s]
+            if out and (ctx["data_dir"] / out).exists() and not getattr(fn, "__force_run__", False):
                 print(f"{args.nf}@{args.version} {s}: 跳过（{out} 已存在）")
                 continue
 

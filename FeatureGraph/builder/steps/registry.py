@@ -15,13 +15,16 @@ PRODUCT_FILE: dict = {}
 AGENT_STEPS: set = set()
 
 
-def step(name: str, output_file: str | None = None, agent: bool = False):
+def step(name: str, output_file: str | None = None, agent: bool = False, force_run: bool = False):
     """装饰器：注册一个 pipeline step。
 
     Args:
         name: step 名
         output_file: 输出文件名（自动步 skip-if-exists 判定）
         agent: True = Agent 步（build_all 不因输出存在跳过，总执行 prep/check）
+        force_run: True = 即使 output_file 已存在也强制执行（用于"回填字段"型 step，
+                   如 categorize 回填 category_reason 到 features.jsonl。
+                   区别于 agent：agent 是 PAUSE 断点机制，force_run 是正常同步回填）
     """
     def deco(fn):
         STEPS[name] = fn
@@ -30,5 +33,6 @@ def step(name: str, output_file: str | None = None, agent: bool = False):
         AGENT_STEPS.discard(name)  # 重注册时清除旧 agent 状态（如 agent 标志变更）
         if agent:
             AGENT_STEPS.add(name)
+        fn.__force_run__ = force_run  # 标记，build_all 用
         return fn
     return deco
