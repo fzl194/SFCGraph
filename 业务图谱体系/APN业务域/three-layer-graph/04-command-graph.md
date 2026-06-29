@@ -1,1011 +1,685 @@
-# APN 业务域三层图谱 · 第4层：命令图谱
+# APN 业务域三层图谱 · 第4层：命令图谱（重建版 v2 · 阶段性）
 
+> **★版本状态**：APN 命令层重建版 v2，**阶段性产物**——16 / 37 特性已重建（簇B 地址分配 8 特性 + 簇D 鉴权 5 特性 + 簇E-core MPLS+IPSec-UDG 3 特性），21 特性待重建（簇A/C/F + 簇E 尾）。旧版由 git 可恢复（`git show HEAD:.../04-command-graph.md`）。
 > **文件定位**：`three-layer-graph/04-command-graph.md`
-> **Schema参考**：`三层图谱Schema-最终版-v0.1.md` §11 命令图谱（§11.3 MMLCommand / §11.5 ConfigObject / §11.6 CommandRule / §11.7 关系边）
-> **作用**：实例化 142 MMLCommand（UDG 63 + UNC 79）+ 65 ConfigObject + 18 CommandRule + ConfigObject 间关系边
-> **数据来源**：`feature-knowledge/cross-feature-analysis.md` 附录B（MML命令交叉参考）+ 附录C（配置对象复用矩阵）+ 附录D（典型端到端流程）+ 各 feature-knowledge §配置对象/§约束
-> **★Schema合规要点**：`CommandRule governs MMLCommand`（反向），非 `has_rule`；POOL(UDG) vs ADDRPOOL(UNC) 分离建模；APNL2TPATTR(U,10+参数) vs APNL2TPCTRL(C,2参数) 分离；ConfigObject 关系直接作为边（§11.7）
+> **Schema 参考**：`三层图谱Schema-最终版-v0.1.md` §11 命令图谱（§11.3 MMLCommand / §11.4 CommandParameter / §11.5 ConfigObject / §11.6 CommandRule / §11.7 关系边）
+> **数据来源**：**100% 源自产品文档原文**（激活/参考信息/特性概述 + MML 命令手册），9 个 draft 文件合并去重。手册未定位的命令保留「⚠️手册未定位」标注。
+> **★Schema 合规要点**：`CommandRule governs MMLCommand`（§11.6 反向，非 has_rule）；POOL(UDG) vs ADDRPOOL(UNC) 分离建模；APNL2TPATTR(U) vs APNL2TPCTRL(C) 分离；ConfigObject 关系直接作为边（§11.7）。
+> **编号体系**：沿用 draft 的特性作用域编号 `CMD-<NF>-<featureid>-<nn>`（如 CMD-UDG-010105-01、CMD-UNC-011306-03），不做全局重编号，保留到特性的可追溯性。
 
 ---
 
 ## 0. 命令图谱总览
 
-### 0.1 MMLCommand 按产品分布
+### 0.1 重建范围
 
-| 产品 | 命令数 | 说明 |
-|------|-------|------|
-| UDG | 63 | 用户面执行命令：地址池体系(POOL/SECTION) + 静态冗余(GRE/REDUNDRDTIP) + L2TP(U面LAC) + IPSec(VNRS+IPsec双配) + MPLS(推导) + 地址分配规则 + 接入控制(APNQOSATTR) + OSPF/OSPFv3 + 运维查询 + 策略刷新生效(REFRESHSRV) |
-| UNC | 79 | 控制面策略命令：地址池体系(ADDRPOOL) + UPF选择(11件套) + Radius三件套 + 二次鉴权(UPF Radius) + AKA鉴权(2/3/4/5G) + ARD接入限制(2/3/4G) + NGMM移动性 + 别名APN(双视角) + DHCP + L2TP(C面决策) + 对等网元DNS + 会话管理维护 + 策略刷新生效(REFRESHSRV) |
-| **合计** | **142** | 含跨产品共用双计数（POOL vs ADDRPOOL / L2TPN4KEY vs L2TPKEY / ADD APN / SET LICENSESWITCH / REDUNDUSER / SET REFRESHSRV） |
+| 簇 | 特性 | NF | 重建状态 | draft 来源 |
+|----|------|----|---------|-----------|
+| **簇B 地址分配** | GWFD-010105 用户面地址分配（4 子方式） | UDG | ✅已重建 | 04-cluster-B-GWFD-010105.md |
+| 簇B | GWFD-010104 地址分配方式（外部/RADIUS 总览 + OSPF 下行路由） | UDG | ✅已重建 | 04-cluster-B-UDG-010104-020421.md |
+| 簇B | GWFD-020421 基于位置的地址分配 | UDG | ✅已重建 | 04-cluster-B-UDG-010104-020421.md |
+| 簇B | GWFD-010108 用户面地址自动检测 | UDG | ✅已重建 | 04-cluster-B-UDG-010108-010107.md |
+| 簇B | GWFD-010107 静态地址用户路由冗余 | UDG | ✅已重建 | 04-cluster-B-UDG-010108-010107.md |
+| 簇B | WSFD-010502 地址分配方式（4 POOLTYPE） | UNC | ✅已重建 | 04-cluster-B-UNC-010502-010504.md |
+| 簇B | WSFD-010504 控制面地址分配方式 | UNC | ✅已重建 | 04-cluster-B-UNC-010502-010504.md |
+| 簇B | WSFD-107021 静态地址用户路由冗余 | UNC | ✅已重建 | 04-cluster-B-UNC-107021.md |
+| **簇D 鉴权计费** | WSFD-010301 5G 鉴权（AKA/EAP-AKA'） | UNC(AMF) | ✅已重建 | 04-cluster-D-UNC-010301-108007-011307.md |
+| 簇D | WSFD-108007 终端二次鉴权（UPF 转 DN-AAA） | UNC(SMF) | ✅已重建 | 04-cluster-D-UNC-010301-108007-011307.md |
+| 簇D | WSFD-011307 Radius 抄送 | UNC | ✅已重建 | 04-cluster-D-UNC-010301-108007-011307.md |
+| 簇D | WSFD-011305 Radius 鉴权接入（4 模式） | UNC | ✅已重建 | 04-cluster-D-UNC-011305-011306.md |
+| 簇D | WSFD-011306 Radius 功能（含 4 组网场景） | UNC | ✅已重建 | 04-cluster-D-UNC-011305-011306.md |
+| **簇E-core 接入隧道** | GWFD-020411 MPLS VPN | UDG | ✅已重建 | 04-cluster-E-MPLS-020411-104411.md |
+| 簇E-core | WSFD-104411 MPLS VPN | UNC | ✅已重建 | 04-cluster-E-MPLS-020411-104411.md |
+| 簇E-core | IPFD-015004 IPSec 功能（13 场景） | UDG | ✅已重建 | 04-cluster-E-IPSec-015004.md |
+| **待重建** | 簇A/C/F + 簇E 尾（21 特性，详见 §0.5） | — | 待重建 | — |
 
-### 0.2 ConfigObject 按功能域分布
+### 0.2 对象/边计数（16 特性已重建部分）
 
-| 功能域 | 对象数 | 关键对象 |
-|-------|-------|---------|
-| 地址分配域（U+C 双侧） | 20 | POOL/ADDRPOOL, SECTION, POOLGROUP/ADDRPOOLGRP, POOLBINDGROUP/POOLBINDGRP, POOLGRPMAP, APN, APNADDRESSATTR, IPALLOCRULE, APNIPALLOCRULE, CPNODEID, IPALLOCBYSMFGLBSW, IPALLOCBYLOCGLBSW, LACGROUP/TACGROUP, ADRLOCWHITELST, CONFLICTIP, UPNODE, PNFPROFILE, UPFBINDGRP, STATICADDRPARA, BLACKLIST |
-| 隧道类（GRE/IPSec/MPLS/L2TP） | 22 | GRETUNNEL, IPSECPROPOSALIPSEC, IKEPROPOSAL, IKEPEER, IPSECPOLICY, IPSECINTFCFGIPSEC, ACLGROUPIPSEC/ACLRULEADV4IPSEC, VPNINSTANCE/BGPVPNV4PEER(★推导), APNL2TPATTR(U), APNL2TPCTRL(C), L2TPGROUP/L2TPLNSINFO, L2TPCLIENTIP/L2TPRDSCLIENT, PPPCFG/APNPPPACCESS, GLOBALL2TP, L2TPN4KEY(U)/L2TPKEY(C), REDUNDRDTIP, REDUNDUSER, APNREDUNDUPSW, SRROUTE/SRROUTE6, Tunnel/LoopBack接口 |
-| 鉴权/Radius/接入控制/网元选择 | 28 | APNAUTHATTR, RDSSVRGRP, RDSSVR/APNRDSSVRGRP, APNRDSCLIENTIP, APNRDSACCTCTRL, APNRADIUSATTR, UPLIST4RDS, CPGTPUADDR, RDSUPFCTRL, UPFRDSSVR, UPFRDSCLIENTIP, NETWORKINSTVPNMAP, FHBYPASS, GBAUTHCIPH/IUAUTHCIPH/S1USRSECPARA/NGUSRSECPARA(AKA系列), GBARD/IUARD/S1ARD(2/3/4G ARD), NGMMSUBDATA, NGMMPROCTRL, APNALIAS, ALIASAPN, APNREPORTATTR, PNFDNN/PNFNS/PNFDNAI/PNFUPFINFO, UPAREA/UPAREABINDN2TAI, UPBINDS11/UPBINDGNGP, UPSELECTPRI/UPSELECTFLAG/APNUPSELPLY/UPLOADBALANCE, AREADNS/DNSN/SGSNDNS, APNQOSATTR, APNACTNUM |
-| 底座/会话管理/用户数据 | 6 | PDPAPN, SMSUBDATA, SDBTMR, DSP POOLUSAGE/SESSIONINFO(运维), AMDATA |
-| **合计** | **~65**（去重） | — |
+| 维度 | 数量 | 说明 |
+|------|------|------|
+| MMLCommand（去重后） | **83** | UDG 44 + UNC 39；含跨特性共用命令合并（见 §0.3） |
+| ConfigObject（去重后） | **~95** | 跨簇去重后 |
+| CommandRule | **52** | 特性级 CR（CR-010105-* / CR-011306-* / CR-MPLS-* 等） |
+| ConfigObject 关系边 | **~95** | contains / refers_to / depends_on / activates / overrides / governs / links |
+| operates_on 边 | **~95** | MMLCommand → ConfigObject |
+| governs 边 | **52** | CommandRule → MMLCommand/Parameter/Object（§11.6 反向） |
+| CommandParameter 参数总行数 | **~1050** | 全量参数（含 required_mode/取值范围/默认值/条件必选） |
+| 激活子场景脚本 | **~30** | 地址分配 4 子方式 + 位置 3 + 检测 3 + 冗余 3 + Radius 4 组网 + 4 接入 + IPSec 13 场景 + MPLS 2 |
 
-### 0.3 全局字段声明（status）
+### 0.3 跨特性共用命令（去重合并，used_by_features）
 
-> **适用范围**：本文件 §1（142 个 MMLCommand）所有对象。
-> **声明**：本文件 §1 所有 142 个 MMLCommand 的 `status` 字段值均为 `active`（Schema §11.3 MMLCommand.status 必备）。APN 业务域所有正式命令均处于启用状态。
-> **★MPLS 推导命令说明**：CMD-UDG-062/063/064（GWFD-020411 MPLS VPN 推导命令，见 §1.11）虽 `status=active`（已在命令图谱登记），但 `command_summary` 列已用 "★推导" 前缀明确标注其源自 MPLS L3VPN 标准实践推导（9 篇文档无 MML 脚本），需命令字典补全验证；参见 CR-APN-18。
-> **依据**：APN 业务域所有命令均处于正式启用状态，无 `deprecated` 或 `planned` 状态。
-> **例外**：无。
+> **去重规则**：同一 `command_name` + 产品侧相同 + 参数表相同 → 合并为一条 MMLCommand，`used_by_features` 列出所有引用它的特性。UDG 的 `ADD POOL` 与 UNC 的 `ADD ADDRPOOL` 是**不同命令**（参数不同），不合并；UDG/UNC 同名但参数不同的也分开。
+
+| 共用命令 | NF | 合并来源特性（used_by_features） | 参数表权威源 |
+|---------|----|--------------------------------|------------|
+| `ADD POOL` (UDG) | UDG | GWFD-010105, GWFD-010104, GWFD-020421, GWFD-010107 | CMD-UDG-010105-01（13 参数，全特性共用此版本；010107 场景 POOLTYPE=EXTERNAL+REDUNDFUNC+MASTERFLAG 为参数取值差异非命令差异） |
+| `ADD SECTION` | UDG/UNC | GWFD-010105, GWFD-010104, GWFD-020421, WSFD-010502, WSFD-107021 | CMD-UDG-010105-02（UDG 9 参数）/ CMD-UNC-010502-02（UNC 8 参数）—— UDG/UNC 参数表略有差异，按产品侧分列 |
+| `ADD POOLGROUP` / `ADD ADDRPOOLGRP` | UDG/UNC | 同上 | UDG POOLGROUP（CMD-UDG-010105-03，3 参数）/ UNC ADDRPOOLGRP（CMD-UNC-010502-03，4 参数，多 POOLGRPTYPE） |
+| `ADD POOLBINDGROUP` (UDG) / `ADD POOLBINDGRP` (UNC) | UDG/UNC | 同上 | ★命名差异：UDG=GROUP，UNC=GRP |
+| `ADD POOLGRPMAP` | UDG/UNC | GWFD-010105/010104/020421, WSFD-010502/107021 | UDG（CMD-UDG-010105-05，8 参数，位域 SMF）/ UNC（CMD-UNC-010502-05，6 参数，位域 UPNODE，当前版本不支持 LOCATION） |
+| `ADD CONFLICTIP` | UDG/UNC | GWFD-010105, WSFD-010504 | UDG（CMD-UDG-010105-12，2 参数仅 IPv4）/ UNC（CMD-UNC-010504-04，5 参数支持 IPv4+IPv6）—— 参数不同，分开 |
+| `SET IPALLOCRULE` | UDG/UNC | GWFD-010105/010104/020421, WSFD-010504 | UDG（CMD-UDG-010105-06，12 参数，位域 `APN-X&LOCATION-X&SMF-X`）/ UNC（CMD-UNC-010504-02，12 参数，位域 `APN-X&LOCATION-X&UPNODE-X`）—— 位域第三字段不同，分开 |
+| `SET APNADDRESSATTR` | UDG/UNC | GWFD-010105/010104/020421, WSFD-010504 | UDG（CMD-UDG-010105-09，15 参数）/ UNC（CMD-UNC-010504-01，32 参数含 IPV4/V6ALLOCTYPE）—— 参数量差异大，分开 |
+| `SET IPALLOCBYLOCGLBSW` | UDG/UNC | GWFD-020421, WSFD-010504 | UDG（CMD-UDG-020421-06，2 参数）/ UNC（CMD-UNC-010504-03，2 参数）—— 命令名相同参数表相同，但功能域不同（UDG 位置区 / UNC 位置区），按产品侧分列 |
+| `SET ADDRESSATTR` | UDG | GWFD-010105（RADIUS 下发地址池名称场景） | CMD-UDG-010105-08（5 参数） |
+| `SET LICENSESWITCH` | UDG/UNC | GWFD-020421, IPFD-015004(国密间接) | CMD-UDG-020421-09（2 参数；GWFD-020421 用 LKV3G5LBAA01） |
+| `ADD L3VPNINST` / `ADD VPNINSTAF` / `ADD INTERFACE` / `ADD IPBINDVPN` / `ADD IFIPV4ADDRESS` | UDG/UNC | 多簇前置依赖（簇B/E/Radius 4 组网） | 前置依赖，归簇A/簇E（待重建），本文件仅引用 |
+| `ADD GRETUNNEL` | UDG | GWFD-010107（静态冗余）, IPFD-015004（GRE over IPsec） | CMD-UDG-015004-19（17 参数全量，IPSec draft 权威）；010107 场景用 REDUNDANCYEN=TRUE |
+| `ADD UPLIST4RDS` | UNC | WSFD-108007, WSFD-011306, WSFD-011307 | CMD-UNC-108007-02（2 参数，108007 draft 权威；011306/011307 仅引用不重复抽） |
+| `ADD RDSSVRGRP` / `ADD RDSSVR` / `ADD APNRDSSVRGRP` | UNC | WSFD-011305, WSFD-011306, WSFD-011307（Radius 三件套共享） | CMD-UNC-011306-01/02/05（011306 draft 抽全参 19/18/3）；CMD-UNC-011307-01/02/03 同参（抄送场景 COPYSVRPRIORITY/COPYINTERIMUPD），合并 used_by_features |
+| `SET FHBYPASS` | UNC | WSFD-011306 | CMD-UNC-011306-14（9 参数） |
+| `SET APNAUTHATTR` | UNC | WSFD-011305（鉴权接入核心）, WSFD-011306（借 DISCONNECT 开 PoD） | CMD-UNC-011305-01（28 参数，011305 draft 权威） |
+
+### 0.4 全局字段声明（status）
+
+> **适用范围**：本文件所有 MMLCommand 的 `status` 字段值均为 `active`（Schema §11.3 必备）。APN 业务域所有正式命令均处于启用状态，无 `deprecated` 或 `planned`。
+> **高危命令**（status=active 但手册标注高危）：SET MPLSSITE、SET BGP、MOD BGPVRF、ADD BGPPEERAF、ADD NGUSRSECPARA、SET REDUNDUSER、SET FHBYPASS、STR PDNROUTETST、MOD RDSSVR、ADD UPFRDSSVR、ADD POOL(RELEASETIME)、ADD ADDRPOOL(RELEASETIME)、SET ADDRESSATTR。
+> **★MPLS 修复说明**：原 04 标注 MPLS 命令「手册未定位」是因命令名错误（VPNINSTANCE/BGPVPNV4* 在手册中查不到），纠正为真实命令名（L3VPNINST/VPNINSTAF/VPNTARGET/BGPVRF/BGPVRFAF/BGPPEER/BGPPEERAF/IMPORTROUTE/MPLSSITE/MPLSIF/SET BGP/MOD BGPVRF）后全部可定位（见 §0.6）。
+
+### 0.5 待重建特性清单（21 特性，命令暂缺）
+
+| 簇 | 待重建特性 | 说明 |
+|----|----------|------|
+| **簇A APN 基础** | GWFD-010101, WSFD-010501, WSFD-010503, WSFD-010400, WSFD-106203 | ADD APN / VPNINST / 接口 / 别名 APN 等（多簇共用前置依赖归此） |
+| **簇C L2TP/双栈/IPv6/DHCP** | GWFD-020412, GWFD-020403, GWFD-020401, GWFD-020406; WSFD-104410, WSFD-104002, WSFD-104001, WSFD-104004, WSFD-104413, WSFD-104005 | L2TP(U+C) / IPv6 承载 / DHCP 等 |
+| **簇E 尾（GRE/IPSec-UNC）** | IPFD-015002（GRE 隧道独立特性）, IPFD-016000（IPSec-UNC 侧） | GRE/IPSec UNC 侧命令族 |
+| **簇F 网元选择+接入控制** | WSFD-107010（UPF 选择 11 件套）, WSFD-010202（对等网元 DNS）; WSFD-106003（ARD/NGMM 接入限制）, GWFD-010151（APN QoS 接入控制 U 面） | UPF 选择 / DNS / ARD / QoS |
+
+> 上述 21 特性的命令**暂缺**，待后续重建批次补齐。本文件 §1-§8 仅覆盖 16 已重建特性。
+
+### 0.6 与旧版 04 的关键修正汇总（致命修复）
+
+| # | 修正项 | 旧 04 错误 | 重建后 | 严重度 |
+|---|--------|-----------|--------|--------|
+| 1 | **MPLS 命令名全错** | `ADD VPNINSTANCE` / `ADD BGPVPNV4ROUTETARGET` / `ADD BGPVPNV4PEER`（3 个，产品文档中**根本不存在**）+ 错误判断"产品文档无 MML"（找错了文档分支） | 纠正为 12 个真实命令（L3VPNINST/VPNINSTAF/VPNTARGET/BGPVRF/BGPVRFAF/BGPPEER/BGPPEERAF/IMPORTROUTE/MPLSSITE/MPLSIF/SET BGP/MOD BGPVRF），全部手册定位成功 | **CRITICAL** |
+| 2 | **SET IPALLOCRULE 丢失 IPv6 规则集** | CMD-UDG-019 仅列 IPv4 规则（FIRSTRULESW 等 6 参数），未含 IPv6 规则集（IPV6FIRSTRULESW 等 6 参数） | 补齐完整 12 参数（IPv4 6 + IPv6 6，对称）+ 条件必选 + 初始值 + 位域格式 `APN-X&LOCATION-X&SMF-X` | **HIGH** |
+| 3 | **Radius VSA 三命令完全丢失** | CMD-UNC-037~041 仅 5 命令，011306「3GPP 扩展信元定制」核心（SET RDSACCTREQVSA/SET RDSAUTHREQVSA/SET RDSACCTREQATTR）完全丢失 | 补齐 3 命令（30+23+29=82 参数） | **HIGH** |
+| 4 | **IPv6 规则集 / UDG vs UNC 位域差异** | 未区分 UDG(SMF-X) vs UNC(UPNODE-X) 位域第三字段 | 明确分离建模 + CR 标注位域一致约束 | **HIGH** |
+| 5 | **IPSec 场景合并丢失** | 旧版合并为 1 通用流，丢失主备/多Sequence/GRE双隧道/OSPF引流/指定本端接口/IPv6命令族/国密 7 类差异 | 13 场景不合并，差异矩阵 + 国密场景从 0 建立（SM2/SM3/SM4/Digital_envelope/CERTLOCALFILE） | **CRITICAL** |
+| 6 | **OSPF 族严重缺失** | CMD-UDG-032 仅 PROCID/ROUTERID/VRFNAME（3 参数），且 ROUTERID 参数名错误（手册实为 SCHEMAROUID）；OSPFAREA/OSPFNETWORK/OSPFIMPORTROUTE 未登记 | ADD OSPF 完整 48 参数 + 纠正 SCHEMAROUID + 补齐族内 3 命令（17+5+12 参数） | **HIGH** |
+| 7 | **探测命令族参数名错误** | CMD-UDG-083/084/085 关键参数标为 `APN`（手册无 APN 参数） | STR PDNROUTETST=`IPPOOL`（13 参数）/ STP PDNROUTETST=无参数 / DSP PDNTSTRESULT=`DISPLAYMODE` | **HIGH** |
+| 8 | **ADD CPNODEID 参数名错误** | CMD-UDG-021 标识参数 `NODEID`（手册无 NODEID） | 纠正为 CPNAME + CPNODEIDTYPE + 三类型 NODEID（6 参数） | **HIGH** |
+| 9 | **SET APNAUTHATTR 严重缺参** | CMD-UNC-037 仅 4 参数 | 补齐 28 参数（含 ACCESSMODE 4 取值依赖矩阵 + AUTHMODE + AAANORSPCTRL Bypass + UDMSUBAUTHSW + APNEAP） | **HIGH** |
+| 10 | **ADD CONFLICTIPV6 存在性存疑** | CMD-UDG-024-2 ADD CONFLICTIPV6（手册+参考信息均未定位，疑为推导） | 删除该推导命令；UDG 仅 ADD CONFLICTIP（IPv4，2 参数）；UNC 版支持 IPv6（5 参数，独立命令） | **MEDIUM** |
+| 11 | **SET ADDRESSATTR 用途错误** | UNC 侧 CMD-UNC-016-3 关键参数错误标为 `FIRSTRULE` | UDG 侧补登记 SET ADDRESSATTR（5 参数，全局地址分配属性，RADIUS 下发地址池名称场景）；纠正用途 | **MEDIUM** |
+| 12 | **ADD REDUNDRDTIP 标识参数错误** | CMD-UDG-075 标识 `REDUNDRDTIP`（手册无此参数） | 纠正为 IPVERSION（3 参数） | **HIGH** |
+| 13 | **SET APNREDUNDUPSW 关键参数错误** | CMD-UDG-077 标为 `APN, SWITCH`（手册无 SWITCH） | 纠正为 APN + IPV4SWITCH + IPV6SWITCH（3 参数） | **HIGH** |
+| 14 | **UNC 冗余机制误判** | 未区分 UDG(ADD POOL.REDUNDFUNC/MASTERFLAG) vs UNC(ADD UPFBINDGRP.PRIORITY) 冗余粒度 | 明确分离：UDG=地址池级，UNC=UPF 组内 PRIORITY（主0备1） | **MEDIUM** |
 
 ---
 
-## 1. MMLCommand 实例化
-
-### 1.1 基础对象与 License 门控（UDG，2个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-001` | `SET LICENSESWITCH` | SET | LICENSESWITCH | License 开关，APN 业务域所有需 License 特性的前置门控（IPv6三件套/L2TP/基于位置/MPLS） | LICITEM, SWITCH(ENABLE/DISABLE) | EV-FK-18, EV-FK-26, EV-FK-30, EV-FK-21 |
-| `CMD-UDG-002` | `SET SOFTPARAOFBIT` | SET | SOFTPARAOFBIT | 软参位控制（如 BIT391 地址分配真值表标准/华为私有切换；Byte671 bit7 L2TP 关闭快速流表） | BITID, BITVALUE | EV-FK-06, EV-FK-21 |
-
-### 1.2 VPN 实例与接口体系（UDG，6个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-003` | `ADD VPNINST` | ADD | VPNINST | VPN 实例（IPv4 地址分配/隧道承载基础） | VPNINSTNAME | EV-FK-06, EV-FK-17, EV-FK-28, EV-FK-21, EV-FK-18, EV-FK-29 |
-| `CMD-UDG-004` | `ADD L3VPNINST` | ADD | L3VPNINST | L3VPN 实例（VRF） | VRFNAME | EV-FK-06, EV-FK-17, EV-FK-28, EV-FK-26, EV-FK-30, EV-FK-30 |
-| `CMD-UDG-005` | `ADD VPNINSTAF` | ADD | VPNINSTAF | VPN 地址族（★IPv6/双栈必须 AFTYPE=ipv6uni） | VRFNAME, AFTYPE(ipv4uni/ipv6uni) | EV-FK-28, EV-FK-26, EV-FK-30, EV-FK-30 |
-| `CMD-UDG-006` | `ADD INTERFACE` | ADD | INTERFACE | 物理/逻辑接口（Tunnel/LoopBack） | IFNAME | EV-FK-20, EV-FK-28, EV-FK-29, EV-FK-30 |
-| `CMD-UDG-007` | `ADD IPBINDVPN` | ADD | IPBINDVPN | 接口绑定 VPN | IFNAME, VPNINSTNAME | EV-FK-20, EV-FK-28, EV-FK-30 |
-| `CMD-UDG-008` | `ADD LOGICINF` | ADD | LOGICINF | Giif 逻辑接口（L2TP 源端绑定） | IFNAME | EV-FK-21 |
-
-### 1.3 地址池体系（UDG 侧 POOL，8个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-009` | `ADD APN` | ADD | APN | APN/DNN 实例（★跨域共用挂载点；HASVPN/HASVPNIPV6 双栈标识） | APN, HASVPN, VPNINSTANCE, HASVPNIPV6, VPNINSTANCEIPV6 | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-37, EV-FK-21, EV-FK-18, EV-FK-26 |
-| `CMD-UDG-010` | `MOD APN` | MOD | APN | APN 修改 | APN, ... | EV-FK-37 |
-| `CMD-UDG-011` | `LST APN` | LST | APN | APN 查询 | APN | EV-FK-37 |
-| `CMD-UDG-012` | `RMV APN` | RMV/DEL | APN | APN 删除 | APN | EV-FK-37 |
-| `CMD-UDG-013` | `SET APNADDRESSATTR` | SET | APNADDRESSATTR | ★APN 地址分配属性（SUPPORTIPV4/V6/IGNOREV4/V6POOLID/HOSTROUTEIP） | APN, SUPPORTIPV4, SUPPORTIPV6, IGNOREV4, V6POOLID, HOSTROUTEIP | EV-FK-06, EV-FK-17, EV-FK-18, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-014` | `ADD POOL` | ADD | POOL | ★UDG 地址池（POOLTYPE=LOCAL，与 UNC ADDRPOOL 分离建模） | POOLNAME, POOLTYPE(LOCAL/EXTERNAL), IPVERSION(IPV4/IPV6), HASVPN, VPNINSTANCE | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-015` | `ADD SECTION` | ADD | SECTION | 地址段（V4STARTIP/V6PREFIXSTART，★V6PREFIXLENGTH<64=PD模式） | POOLNAME, SECTIONNUM, IPVERSION, V4STARTIP, V4ENDIP, V6PREFIXSTART, V6PREFIXEND, V6PREFIXLENGTH | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-016` | `ADD POOLGROUP` | ADD | POOLGROUP | 地址池组（IPV4ALLOCPRIALG/IPV6ALLOCPRIALG 优先级算法） | POOLGRPNAME, IPV4ALLOCPRIALG, IPV6ALLOCPRIALG | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26, EV-FK-30 |
-
-### 1.4 地址分配规则与绑定（UDG，8个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-017` | `ADD POOLBINDGROUP` | ADD | POOLBINDGROUP | 地址池绑定到池组（PRIORITY 控制优先级，★UDG 命名 GROUP） | POOLGROUPNAME, POOLNAME, PRIORITY | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-018` | `ADD POOLGRPMAP` | ADD | POOLGRPMAP | 池组映射（APN/SMF/LOCATION 任意组合） | MAPPINGNAME, APN, POOLGROUPNAME | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-019` | `SET IPALLOCRULE` | SET | IPALLOCRULE | 全局三级地址分配规则（FIRSTRULE/SECONDRULE/THIRDRULE） | FIRSTRULESW, FIRSTRULE(APN/SMF/LOCATION), SECONDRULESW, SECONDRULE, THIRDRULESW, THIRDRULE | EV-FK-06, EV-FK-18, EV-FK-30 |
-| `CMD-UDG-020` | `SET APNIPALLOCRULE` | SET | APNIPALLOCRULE | APN 级地址分配规则（覆盖全局） | APN, FIRSTRULE, ... | EV-FK-06, EV-FK-18 |
-| `CMD-UDG-021` | `ADD CPNODEID` | ADD | CPNODEID | SMF 的 NodeID（基于 SMF 分配场景） | NODEID | EV-FK-06, EV-FK-30 |
-| `CMD-UDG-022` | `SET IPALLOCBYSMFGLBSW` | SET | IPALLOCBYSMFGLBSW | 基于 SMF 分配全局开关 | SWITCH | EV-FK-06, EV-FK-30 |
-| `CMD-UDG-023` | `SET IPALLOCBYSMFSW` | SET | IPALLOCBYSMFSW | 指定 SMF 分配开关 | SMFID, SWITCH | EV-FK-06 |
-| `CMD-UDG-024-1` | `ADD CONFLICTIP` | ADD | CONFLICTIP | 冲突地址标识（IPv4/IPv6 分命令） | CONFLICTIP | EV-FK-06, EV-FK-30 |
-| `CMD-UDG-024-2` | `ADD CONFLICTIPV6` | ADD | CONFLICTIPV6 | 冲突地址标识（IPv4/IPv6 分命令） | CONFLICTIP | EV-FK-06, EV-FK-30 |
-
-### 1.5 基于位置地址分配（UDG，6个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-025` | `ADD LACGROUP` | ADD | LACGROUP | LAC 位置区组（2/3G） | LACGROUPNAME | EV-FK-18, EV-FK-30 |
-| `CMD-UDG-026` | `ADD LACID` | ADD | LACID | LAC 位置区 ID | LACGROUPNAME, LAC | EV-FK-18, EV-FK-30 |
-| `CMD-UDG-027` | `ADD TACGROUP` | ADD | TACGROUP | TAC 位置区组（4/5G） | TACGROUPNAME | EV-FK-18 |
-| `CMD-UDG-028-1` | `ADD S1TACID` | ADD | S1TACID | 4G(S1)/5G(N2) TAC ID | TACGROUPNAME, TAC | EV-FK-18 |
-| `CMD-UDG-028-2` | `ADD N2TACID` | ADD | N2TACID | 4G(S1)/5G(N2) TAC ID | TACGROUPNAME, TAC | EV-FK-18 |
-| `CMD-UDG-029` | `SET IPALLOCBYLOCGLBSW` | SET | IPALLOCBYLOCGLBSW | ★基于位置分配全局开关（IPv4/IPv6 分别） | IPV4SWITCH, IPV6SWITCH | EV-FK-18 |
-| `CMD-UDG-030` | `ADD ADRLOCWHITELST` | ADD | ADRLOCWHITELST | 位置区地址分配白名单（MSISDN） | MSISDN | EV-FK-18, EV-FK-30 |
-| `CMD-UDG-031` | `SET IPALLOCBYLOCSW` | SET | IPALLOCBYLOCSW | 指定位置区开关（覆盖全局） | LOCATIONID, SWITCH | EV-FK-18 |
-
-### 1.6 下行路由发布（OSPF/OSPFv3，UDG，8个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-032` | `ADD OSPF` | ADD | OSPF | IPv4 OSPF 进程 | PROCID, ROUTERID, VRFNAME | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26 |
-| `CMD-UDG-033` | `ADD OSPFAREA` | ADD | OSPFAREA | OSPF 区域 | PROCID, AREAID | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26 |
-| `CMD-UDG-034` | `ADD OSPFNETWORK` | ADD | OSPFNETWORK | OSPF 网段 | PROCID, AREAID, NETWORK | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26 |
-| `CMD-UDG-035` | `ADD OSPFIMPORTROUTE` | ADD | OSPFIMPORTROUTE | ★引入 WLR 路由（PROTOCOL=wlr） | PROCID, PROTOCOL(wlr) | EV-FK-06, EV-FK-17, EV-FK-20, EV-FK-18, EV-FK-26 |
-| `CMD-UDG-036` | `ADD OSPFV3` | ADD | OSPFV3 | IPv6 OSPFv3 进程（IPv6 承载链必需） | PROCID, ROUTERID | EV-FK-28, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-037` | `ADD OSPFV3AREA` | ADD | OSPFV3AREA | OSPFv3 区域 | PROCID, AREAID | EV-FK-28, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-038` | `ADD OSPFV3IMPORTROUTE` | ADD | OSPFV3IMPORTROUTE | ★引入 WLR 到 OSPFv3 | PROCID, PROTOCOL(wlr) | EV-FK-28, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-039-1` | `ADD ROUTEPOLICY` | ADD | ROUTEPOLICY | 路由策略 | POLICYNAME, NODEID | EV-FK-28, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-039-2` | `ADD ROUTEPOLICYNODE` | ADD | ROUTEPOLICYNODE | 路由策略 | POLICYNAME, NODEID | EV-FK-28, EV-FK-26, EV-FK-30 |
-| `CMD-UDG-039-3` | `ADD MATCHROUTETYPE` | ADD | MATCHROUTETYPE | 路由策略 | POLICYNAME, NODEID | EV-FK-28, EV-FK-26, EV-FK-30 |
-
-### 1.7 接口 IP 与静态路由（UDG，4个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-040` | `ADD IFIPV4ADDRESS` | ADD | IFIPV4ADDRESS | 接口 IPv4 地址 | IFNAME, IFIPADDR, SUBNETMASK | EV-FK-20, EV-FK-28, EV-FK-29, EV-FK-30 |
-| `CMD-UDG-041` | `ADD IFIPV6ADDRESS` | ADD | IFIPV6ADDRESS | 接口 IPv6 地址 | IFNAME, IFIPV6ADDR, PREFIXLENGTH | EV-FK-28 |
-| `CMD-UDG-042` | `SET IFIPV6ENABLE` | SET | IFIPV6ENABLE | IPv6 接口使能 | IFNAME, SWITCH | EV-FK-28 |
-| `CMD-UDG-043-1` | `ADD SRROUTE` | ADD | SRROUTE | 静态路由（IPv4/IPv6 分命令，引导流量进 Tunnel） | AFTYPE, PREFIX, MASKLENGTH, IFNAME | EV-FK-20, EV-FK-29, EV-FK-30 |
-| `CMD-UDG-043-2` | `ADD SRROUTE6` | ADD | SRROUTE6 | 静态路由（IPv4/IPv6 分命令，引导流量进 Tunnel） | AFTYPE, PREFIX, MASKLENGTH, IFNAME | EV-FK-20, EV-FK-29, EV-FK-30 |
-
-### 1.8 GRE 隧道（UDG，3个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-044` | `ADD GRETUNNEL` | ADD | GRETUNNEL | ★GRE 隧道（TNLTYPE=gre，IPFD-015002 核心；GWFD-010107 主备 UDG 间冗余用） | TNLNAME, TNLTYPE(gre), SRCTYPE, SRCIFNAME, DSTIPADDR | EV-FK-29, EV-FK-20 |
-| `CMD-UDG-045` | `MOD GRETUNNEL` | MOD | GRETUNNEL | GRE 隧道修改（Checksum/Key/Keepalive 可选特性） | TNLNAME, TNLTYPE, CHECKSUMEN, GREKEYEN, GREKEY, KEEPALVEN, KEEPALVPERIOD, KEEPALVRETRYCNT | EV-FK-29 |
-| `CMD-UDG-046` | `RMV GRETUNNEL` | RMV/DEL | GRETUNNEL | GRE 隧道删除 | TNLNAME, TNLTYPE | EV-FK-29 |
-
-### 1.9 IPSec 隧道（UDG，9个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-047` | `ADD ACLGROUPIPSEC` | ADD | ACLGROUPIPSEC | IPSec ACL 组（保护数据流容器） | ACLGROUPNAME | EV-FK-30 |
-| `CMD-UDG-048` | `ADD ACLRULEADV4IPSEC` | ADD | ACLRULEADV4IPSEC | IPSec ACL 规则（★仅源/目的 IP，不支持端口） | ACLGROUPNAME, SRCIP, DSTIP | EV-FK-30 |
-| `CMD-UDG-049` | `ADD IPSECPROPOSALIPSEC` | ADD | IPSECPROPOSALIPSEC | IPSec 安全提议（封装+协议+算法） | PROPOSALNAME, ENCAPSULATIONMODE(TUNNEL/TRANSPORT), SECURITYPROTOCOL(AH/ESP) | EV-FK-30 |
-| `CMD-UDG-050` | `ADD IKEPROPOSAL` | ADD | IKEPROPOSAL | IKE 提议（★DH 组不能为 None） | PROPOSALNAME, AUTHMETHOD(PSK), DHGROUP | EV-FK-30 |
-| `CMD-UDG-051` | `ADD IKEPEER` | ADD | IKEPEER | IKE 对等体（★DH 组不能为 None；默认 IKEv2） | PEERNAME, PRESHAREDKEY, EXCHANGEMODE(MAIN), REMOTEADDR, NATTRAVERSAL, VERSION1 | EV-FK-30 |
-| `CMD-UDG-052` | `ADD IPSECPOLICY` | ADD | IPSECPOLICY | IPSec 安全策略（聚合 ACL+Proposal+IKE Peer） | POLICYNAME, SEQ, MODE(ISAKMP), ACLGROUPNAME | EV-FK-30 |
-| `CMD-UDG-053` | `ADD PROPATTACHIPSECPROPOSAL` | ADD | PROPATTACHIPSECPROPOSAL | 策略绑定 Proposal | POLICYNAME, SEQ, PROPOSALNAME | EV-FK-30 |
-| `CMD-UDG-054` | `ADD ATTACHIKEPEER` | ADD | ATTACHIKEPEER | 策略绑定 IKE Peer（PRIORITY） | POLICYNAME, SEQ, PEERNAME, PRIORITY | EV-FK-30 |
-| `CMD-UDG-055` | `ADD IPSECINTFCFGIPSEC` | ADD | IPSECINTFCFGIPSEC | 应用策略到 Tunnel 接口 | IFNAME, TNLTYPE(IPSEC), POLICYNAME | EV-FK-30 |
-| `CMD-UDG-056` | `SET IKEGLOBALCONFIG` | SET | IKEGLOBALCONFIG | IKE 全局配置（DPD + NAT 保活） | DPDTYPE, DPDINTERVAL, NATKLI | EV-FK-30 |
-
-### 1.10 IPSec 微服务镜像（UDG，5个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-057` | `ADD L3VPNINSTIPSEC` | ADD | L3VPNINSTIPSEC | IPsec 微服务 L3VPN 实例镜像 | VRFNAME | EV-FK-30 |
-| `CMD-UDG-058` | `ADD VPNINSTAFIPSEC` | ADD | VPNINSTAFIPSEC | IPsec 微服务 VPN 地址族镜像 | VRFNAME, AFTYPE | EV-FK-30 |
-| `CMD-UDG-059` | `ADD INTERFACEIPSEC` | ADD | INTERFACEIPSEC | IPsec 微服务接口镜像 | IFNAME | EV-FK-30 |
-| `CMD-UDG-060` | `ADD IPBINDVPNIPSEC` | ADD | IPBINDVPNIPSEC | IPsec 微服务接口绑定 VPN 镜像 | IFNAME, VPNINSTNAME | EV-FK-30 |
-| `CMD-UDG-061` | `ADD IFIPV4ADDRESSIPSEC` | ADD | IFIPV4ADDRESSIPSEC | IPsec 微服务接口 IPv4 地址镜像 | IFNAME, IFIPADDR, SUBNETMASK | EV-FK-30 |
-
-### 1.11 MPLS VPN（UDG，3个，★推导）
-
-> **文档缺口标注**：GWFD-020411 共 9 篇文档无 MML 脚本，以下命令基于 MPLS L3VPN 标准实践**推导**，需命令字典补全。
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-062` | `ADD VPNINSTANCE` | ADD | VPNINSTANCE | ★推导：MPLS VPN 实例（VRF+RD） | VPNINSTANCE, RD | EV-FK-32（推导） |
-| `CMD-UDG-063` | `ADD BGPVPNV4ROUTETARGET` | ADD | BGPVPNV4ROUTETARGET | ★推导：VPN Target（MP-BGP 路由目标） | VPNINSTANCE, ROUTETARGET | EV-FK-32（推导） |
-| `CMD-UDG-064` | `ADD BGPVPNV4PEER` | ADD | BGPVPNV4PEER | ★推导：MP-BGP 对等体 | VPNINSTANCE, PEERIP | EV-FK-32（推导） |
-
-### 1.12 L2TP VPN（UDG U 面 LAC 执行，10个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-065` | `SET APNL2TPATTR` | SET | APNL2TPATTR | ★UDG L2TP APN 属性（U 面核心，10+ 参数；与 UNC APNL2TPCTRL 分离） | APN, L2TPSWITCH, SUPPORTIPV6, ...（10+ 参数） | EV-FK-21 |
-| `CMD-UDG-066` | `LST APNL2TPATTR` | LST | APNL2TPATTR | L2TP APN 属性查询 | APN | EV-FK-21 |
-| `CMD-UDG-067` | `ADD L2TPGROUP` | ADD | L2TPGROUP | L2TP 组（本地配置方式，LNS 容器） | L2TPGROUPID, DOMAINNAME, LNSIP | EV-FK-21 |
-| `CMD-UDG-068` | `ADD L2TPLNSINFO` | ADD | L2TPLNSINFO | L2TP LNS 信息 | L2TPGROUPID, LNSINFO | EV-FK-21 |
-| `CMD-UDG-069` | `ADD L2TPCLIENTIP` | ADD | L2TPCLIENTIP | L2TP 源端 Giif 绑定（本地配置方式） | L2TPGROUPID, INTFNAME | EV-FK-21 |
-| `CMD-UDG-070` | `ADD L2TPRDSCLIENT` | ADD | L2TPRDSCLIENT | L2TP Radius LNS（AAA 下发方式，替代本地配置） | APN, INTFNAME, RDSLNSMODE | EV-FK-21 |
-| `CMD-UDG-071` | `SET GLOBALL2TP` | SET | GLOBALL2TP | L2TP 缺省属性 | ... | EV-FK-21 |
-| `CMD-UDG-072` | `SET PPPCFG` | SET | PPPCFG | PPP 协商参数 | ... | EV-FK-21 |
-| `CMD-UDG-073` | `SET APNPPPACCESS` | SET | APNPPPACCESS | APN PPP 鉴权 | APN, ... | EV-FK-21 |
-| `CMD-UDG-074` | `SET L2TPN4KEY` | SET | L2TPN4KEY | ★N4 接口 L2TP 加密密钥（U 侧；与 UNC L2TPKEY 须相同） | KEY | EV-FK-21 |
-
-### 1.13 静态地址用户路由冗余（UDG，5个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-075` | `ADD REDUNDRDTIP` | ADD | REDUNDRDTIP | ★虚拟 IP（重定向业务流到 GRE Tunnel） | REDUNDRDTIP | EV-FK-20 |
-| `CMD-UDG-076` | `SET REDUNDUSER` | SET | REDUNDUSER | 全局冗余开关（★与 ADD POOL REDUNDFUNC 双使能；U+C 共用） | SWITCH | EV-FK-20 |
-| `CMD-UDG-077` | `SET APNREDUNDUPSW` | SET | APNREDUNDUPSW | APN 上行报文隧道转发开关（仅备用 UDG） | APN, SWITCH | EV-FK-20 |
-| `CMD-UDG-078` | `ADD OSPFINTERFACE` | ADD | OSPFINTERFACE | OSPF 接口（主备 UDG 路由互通） | PROCID, IFNAME | EV-FK-20 |
-| `CMD-UDG-079-1` | `MOD OSPFIMPORTROUTE` | MOD | OSPFIMPORTROUTE | 修改路由引入 COST/MED 优先级 | PROCID, COST, MED | EV-FK-20 |
-| `CMD-UDG-079-2` | `MOD IMPORTROUTE` | MOD | IMPORTROUTE | 修改路由引入 COST/MED 优先级 | PROCID, COST, MED | EV-FK-20 |
-
-### 1.14 接入控制（UDG U 面带宽流控，3个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-080` | `SET APNQOSATTR` | SET | APNQOSATTR | ★APN QoS 属性（接入控制 U 面核心；CARSHAPESWUL/DL + CARSHAPEUL/DL，上下行独立 CAR/SHAPE） | APN, CARSHAPESWUL, CARSHAPEUL(CAR/SHAPE), CARSHAPESWDL, CARSHAPEDL(CAR/SHAPE) | EV-FK-37 |
-| `CMD-UDG-081` | `LST APNQOSATTR` | LST | APNQOSATTR | APN QoS 属性查询 | APN | EV-FK-37 |
-| `CMD-UDG-082` | `ADD POOL` (REDUNDFUNC) | ADD | POOL | 静态冗余场景 POOL REDUNDFUNC 标识（复用 CMD-UDG-014，参数差异） | POOLNAME, REDUNDFUNC | EV-FK-20 |
-
-### 1.15 地址自动检测与运维查询（UDG，5个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-083` | `STR PDNROUTETST` | STR | PDNROUTETST | 地址自动检测启动（无 ADD 配置，纯运维） | APN | EV-FK-19 |
-| `CMD-UDG-084` | `STP PDNROUTETST` | STP | PDNROUTETST | 地址自动检测停止 | APN | EV-FK-19 |
-| `CMD-UDG-085` | `DSP PDNTSTRESULT` | DSP | PDNTSTRESULT | 地址自动检测结果查询 | APN | EV-FK-19 |
-| `CMD-UDG-086` | `DSP POOLUSAGE` | DSP | POOLUSAGE | 地址池使用率查询（会话管理运维） | POOLNAME | EV-FK-01, EV-FK-06 |
-| `CMD-UDG-087` | `DSP SESSIONINFO` | DSP | SESSIONINFO | 会话信息查询（纯描述性底座运维） | SESSIONID | EV-FK-01, EV-FK-06 |
-
-### 1.15a UDG 策略刷新生效（1个，★运维动作命令）
-
-> **说明**：SET REFRESHSRV 是 UDG 侧配置链统一终点的运维动作命令（非 ADD 配置类），使地址分配/隧道/L2TP/带宽流控等策略变更下发生效。无对应 ConfigObject（动作命令，不产生配置实体）。★与 UNC 侧 CMD-UNC-087 同命令名（U+C 通用刷新命令），按产品侧分离建模以保持 command_id 编号体系（CMD-UDG / CMD-UNC）一致。
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UDG-088` | `SET REFRESHSRV` | SET | REFRESHSRV | ★UDG 侧策略刷新生效（地址分配/隧道/L2TP/带宽流控变更后必须；配置链统一终点；Task 级 `must_be_last=true`） | （无业务参数，触发下发动作） | EV-FK-06, EV-FK-11, EV-FK-37, EV-CA-01 |
-
-### 1.16 UNC 基础与 License（1个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-001` | `SET LICENSESWITCH` | SET | LICENSESWITCH | License 开关，UNC 侧所有需 License 特性的前置门控（IPv6/ARD/UPF选择/二次鉴权/别名APN/MPLS） | LICENSECODE, SWITCH | EV-FK-19, EV-FK-27, EV-FK-31, EV-FK-36, EV-FK-05, EV-FK-34, EV-FK-27, EV-FK-33 |
-
-### 1.17 UNC 地址池体系（UNC 侧 ADDRPOOL，7个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-002` | `ADD ADDRPOOL` | ADD | ADDRPOOL | ★UNC 地址池（★POOLTYPE 无 LOCAL，仅 UDM 静态签约；与 UDG POOL 分离建模） | ADDRPOOLNAME, POOLTYPE(UDM), IPVERSION | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-32, EV-FK-33, EV-FK-27, EV-FK-31 |
-| `CMD-UNC-003` | `MOD ADDRPOOL` | MOD | ADDRPOOL | UNC 地址池修改 | ADDRPOOLNAME, ... | EV-FK-12 |
-| `CMD-UNC-004` | `RMV ADDRPOOL` | RMV/DEL | ADDRPOOL | UNC 地址池删除 | ADDRPOOLNAME | EV-FK-12 |
-| `CMD-UNC-005-1` | `ADD ADDRPOOLGRP` | ADD | ADDRPOOLGRP | UNC 地址池组（对应 UDG POOLGROUP） | ADDRPOOLGRPNAME | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-32, EV-FK-33 |
-| `CMD-UNC-005-2` | `ADD ADDRUPGROUP` | ADD | ADDRUPGROUP | UNC 地址池组（对应 UDG POOLGROUP） | ADDRPOOLGRPNAME | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-32, EV-FK-33 |
-| `CMD-UNC-006` | `ADD SECTION` | ADD | SECTION | 地址段（UNC 侧，与 UDG 同命令） | POOLNAME, SECTIONNUM, IPVERSION, V4STARTIP | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-32, EV-FK-33, EV-FK-31 |
-| `CMD-UNC-007` | `ADD POOLBINDGRP` | ADD | POOLBINDGRP | UNC 地址池绑定（★UNC 命名 GRP，非 GROUP） | ADDRPOOLGRPNAME, ADDRPOOLNAME | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-32, EV-FK-33 |
-| `CMD-UNC-008` | `ADD POOLBINDAPN` | ADD | POOLBINDAPN | UNC APN 绑定地址池（UNC 独有） | APN, ADDRPOOLNAME | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-32, EV-FK-33 |
-| `CMD-UNC-009` | `ADD POOLGRPMAP` | ADD | POOLGRPMAP | UNC 池组映射（与 UDG 同命令） | MAPPINGNAME, APN, ADDRPOOLGRPNAME | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-32, EV-FK-33 |
-
-### 1.18 UNC UPF 节点与绑定（地址分配共用，4个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-010` | `ADD UPNODE` | ADD | UPNODE | ★UPF 节点（共用对象：WSFD-107010 用位置特征+分流能力；WSFD-010502 用 ADDRALLOCMODE=INHERIT） | NFINSTANCENAME, ADDRALLOCMODE(INHERIT), 位置特征, 分流能力 | EV-FK-12, EV-FK-13, EV-FK-25, EV-FK-34 |
-| `CMD-UNC-011` | `ADD PNFPROFILE` | ADD | PNFPROFILE | UPF NF 实例属性（WEIGHT/PRIORITY；★网元选择+地址分配共用） | NFINSTANCENAME, NFTYPE(UPF), WEIGHT, PRIORITY | EV-FK-12, EV-FK-13, EV-FK-34, EV-FK-25 |
-| `CMD-UNC-012` | `ADD UPFBINDGRP` | ADD | UPFBINDGRP | UPF 绑定组（PRIORITY 控制优先级，UNC 独有） | UPGROUPNAME, NFINSTANCENAME, PRIORITY | EV-FK-12, EV-FK-13, EV-FK-25 |
-| `CMD-UNC-013` | `SET STATICADDRPARA` | SET | STATICADDRPARA | 静态 IP 段绑定 UPF（★与 SMF 主锚点 UPF 选择冲突时 SMF 优先） | STATICIPSEG, NFINSTANCENAME | EV-FK-12 |
-
-### 1.19 UNC 地址分配规则（4个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-014` | `SET APNADDRESSATTR` | SET | APNADDRESSATTR | UNC APN 地址分配属性（与 UDG 同命令名） | APN, SUPPORTIPV4, SUPPORTIPV6 | EV-FK-13, EV-FK-32, EV-FK-33, EV-FK-31 |
-| `CMD-UNC-015` | `LST APNADDRESSATTR` | LST | APNADDRESSATTR | UNC APN 地址属性查询 | APN | EV-FK-13, EV-FK-32, EV-FK-33 |
-| `CMD-UNC-016-1` | `SET IPALLOCRULE` | SET | IPALLOCRULE | UNC 地址分配规则（控制面侧，★同名 UDG 命令） | FIRSTRULE, ... | EV-FK-13 |
-| `CMD-UNC-016-2` | `SET APNIPALLOCRULE` | SET | APNIPALLOCRULE | UNC 地址分配规则（控制面侧，★同名 UDG 命令） | FIRSTRULE, ... | EV-FK-13 |
-| `CMD-UNC-016-3` | `SET ADDRESSATTR` | SET | ADDRESSATTR | UNC 地址分配规则（控制面侧，★同名 UDG 命令） | FIRSTRULE, ... | EV-FK-13 |
-| `CMD-UNC-016-4` | `SET SOFTPARA` | SET | SOFTPARA | UNC 地址分配规则（控制面侧，★同名 UDG 命令） | FIRSTRULE, ... | EV-FK-13 |
-| `CMD-UNC-017` | `SET IPALLOCBYLOCGLBSW` | SET | IPALLOCBYLOCGLBSW | UNC 基于位置分配全局开关（与 UDG 同命令名） | IPV4SWITCH, IPV6SWITCH | EV-FK-13 |
-| `CMD-UNC-018-1` | `ADD BLACKLIST` | ADD | BLACKLIST | 静态地址黑名单 | MSISDN, IPSEG | EV-FK-12 |
-| `CMD-UNC-018-2` | `LST BLACKLIST` | LST | BLACKLIST | 静态地址黑名单 | MSISDN, IPSEG | EV-FK-12 |
-
-### 1.20 UNC UPF 选择 11 件套（WSFD-107010，11个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-019` | `ADD PNFDNN` | ADD | PNFDNN | UPF 支持的 DNN（第一轮筛选必选） | NFINSTANCENAME, DNN | EV-FK-34 |
-| `CMD-UNC-020` | `ADD PNFNS` | ADD | PNFNS | UPF 支持的切片（SST+SD；★4G 接入 PNFNSINDEX=0） | NFINSTANCENAME, SST, SD, PNFNSINDEX | EV-FK-34 |
-| `CMD-UNC-021` | `ADD PNFDNAI` | ADD | PNFDNAI | UPF 支持的 DNAI | NFINSTANCENAME, DNAI | EV-FK-34 |
-| `CMD-UNC-022` | `ADD PNFUPFINFO` | ADD | PNFUPFINFO | UPF 信息（EPS 互通等） | NFINSTANCENAME, EPSFUPPORTED | EV-FK-34 |
-| `CMD-UNC-023-1` | `ADD UPAREA` | ADD | UPAREA | UPF 位置区绑定 | NFINSTANCENAME, AREAID | EV-FK-34 |
-| `CMD-UNC-023-2` | `ADD UPAREABINDN2TAI` | ADD | UPAREABINDN2TAI | UPF 位置区绑定 | NFINSTANCENAME, AREAID | EV-FK-34 |
-| `CMD-UNC-023-3` | `ADD LOCBINDAREA` | ADD | LOCBINDAREA | UPF 位置区绑定 | NFINSTANCENAME, AREAID | EV-FK-34 |
-| `CMD-UNC-024-1` | `ADD PNFSMFSERAREA` | ADD | PNFSMFSERAREA | UPF SMF 服务区/TAI 范围 | NFINSTANCENAME, TAI | EV-FK-34 |
-| `CMD-UNC-024-2` | `ADD PNFTAIRANGE` | ADD | PNFTAIRANGE | UPF SMF 服务区/TAI 范围 | NFINSTANCENAME, TAI | EV-FK-34 |
-| `CMD-UNC-024-3` | `ADD PNFTAI` | ADD | PNFTAI | UPF SMF 服务区/TAI 范围 | NFINSTANCENAME, TAI | EV-FK-34 |
-| `CMD-UNC-025` | `ADD UPBINDS11` | ADD | UPBINDS11 | SGW-U 与 S11 接口绑定（4G 互操作） | NFINSTANCENAME, S11IF | EV-FK-34 |
-| `CMD-UNC-026` | `ADD UPBINDGNGP` | ADD | UPBINDGNGP | GGSN/PGW-U 与 Gn/Gp 接口绑定 | NFINSTANCENAME, GNGPIF | EV-FK-34 |
-| `CMD-UNC-027` | `SET UPSELECTPRI` | SET | UPSELECTPRI | UPF 选择策略次序（第二轮优选） | FIRSTPRIORITY, SECONDPRIORITY | EV-FK-34 |
-| `CMD-UNC-028` | `SET UPSELECTFLAG` | SET | UPSELECTFLAG | UPF 选择开关（PRIORITYFLAG/AMBRUPFFLAG/N3UPFAPNFLAG/ULISGWFLAG） | PRIORITYFLAG, ... | EV-FK-34 |
-| `CMD-UNC-029` | `SET APNUPSELPLY` | SET | APNUPSELPLY | APN 级 UPF 选择策略 | APN, COMBINEPRISTG | EV-FK-34 |
-| `CMD-UNC-030` | `SET UPLOADBALANCE` | SET | UPLOADBALANCE | UPF 负载均衡（第三轮权重） | SWITCH | EV-FK-34 |
-
-### 1.21 UNC 鉴权功能 AKA（WSFD-010301，6个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-031` | `ADD GBAUTHCIPH` | ADD | GBAUTHCIPH | 2G 鉴权加密参数（+MOD/RMV/LST） | IMSI, KI, OPC | EV-FK-26 |
-| `CMD-UNC-032` | `ADD IUAUTHCIPH` | ADD | IUAUTHCIPH | 3G 鉴权加密参数（+MOD/RMV/LST） | IMSI, KI, OPC | EV-FK-26 |
-| `CMD-UNC-033` | `ADD S1USRSECPARA` | ADD | S1USRSECPARA | 4G AKA 鉴权加密参数（+MOD/RMV/LST） | IMSI, KI, OPC | EV-FK-26 |
-| `CMD-UNC-034` | `ADD NGUSRSECPARA` | ADD | NGUSRSECPARA | 5G AKA 鉴权加密参数（+MOD/RMV/LST） | SUPI, KI, OPC | EV-FK-26 |
-| `CMD-UNC-035` | `MOD AMDATA` | MOD | AMDATA | AM 数据修改 | IMSI, ... | EV-FK-26 |
-| `CMD-UNC-036` | `DSP COMMMTX` | DSP | COMMMTX | 通信上下文查询 | IMSI | EV-FK-26 |
-
-### 1.22 UNC Radius 三件套（WSFD-011305/011306/011307，10个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-037` | `SET APNAUTHATTR` | SET | APNAUTHATTR | ★APN 鉴权属性（ACCESSMODE 4 取值，鉴权接入核心） | APN, ACCESSMODE(TRANS_NON_AUTH/TRANS_AUTH/NON_TRANS/LOC_AUTH), COMMONUSERNAME, COMMONUSERPASS | EV-FK-24 |
-| `CMD-UNC-038` | `LST APNAUTHATTR` | LST | APNAUTHATTR | APN 鉴权属性查询 | APN | EV-FK-24 |
-| `CMD-UNC-039` | `ADD RDSSVRGRP` | ADD | RDSSVRGRP | ★Radius 服务器组（三件套共享对象） | RDSSVRGRPNAME | EV-FK-25, EV-FK-28 |
-| `CMD-UNC-040` | `ADD RDSSVR` | ADD | RDSSVR | Radius 服务器（鉴权/计费） | RDSSVRGRPNAME, SERVERTYPE(AUTHENTICATION/ACCOUNTING), PRIFLAG(PRIMARY/BACKUP/CARBON_COPY), PRIORITY | EV-FK-25, EV-FK-28 |
-| `CMD-UNC-041` | `ADD APNRDSSVRGRP` | ADD | APNRDSSVRGRP | APN↔Radius 服务器组绑定 | APN, RDSSVRGRPNAME, PRIFLAG | EV-FK-25, EV-FK-28 |
-| `CMD-UNC-042` | `ADD APNRDSCLIENTIP` | ADD | APNRDSCLIENTIP | APN Radius Client IP（鉴权/计费 Giif） | APN, INTFNAME, CLIENTTYPE(AUTHENTICATION/ACCOUNTING) | EV-FK-25 |
-| `CMD-UNC-043` | `SET APNRDSACCTCTRL` | SET | APNRDSACCTCTRL | Radius 计费控制（SRVTRIGGER/SUPPORTACCTRSP） | APN, SRVTRIGGER, SUPPORTACCTRSP | EV-FK-25 |
-| `CMD-UNC-044` | `SET APNRADIUSATTR` | SET | APNRADIUSATTR | Radius 域名增加/剥离 | APN, ... | EV-FK-25 |
-| `CMD-UNC-045` | `SET RDSRSPADDRCHK` | SET | RDSRSPADDRCHK | Radius 响应端口检查 | ... | EV-FK-25 |
-| `CMD-UNC-046` | `SET FHBYPASS` | SET | FHBYPASS | ★故障场景一键放通（优先级最高） | APN, SWITCH | EV-FK-25 |
-
-### 1.23 UNC 二次鉴权（WSFD-108007，6个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-047` | `ADD UPLIST4RDS` | ADD | UPLIST4RDS | PGW-U/UPF List（按主锚点 UPF 发送 AAA；三件套+二次鉴权共用） | UPLISTNAME, UPINSTANCEID | EV-FK-25, EV-FK-28, EV-FK-27 |
-| `CMD-UNC-048` | `ADD CPGTPUADDR` | ADD | CPGTPUADDR | GTP-U 地址（SMF 下发分装 GTPU 报文 IP） | IPVERSION, IPV4ADDR | EV-FK-27 |
-| `CMD-UNC-049` | `ADD RDSUPFCTRL` | ADD | RDSUPFCTRL | Radius UPF 控制（PREFERENCE/LOCKED） | UPLISTNAME, UPINSTANCEID, PREFERENCE, LOCKED | EV-FK-27 |
-| `CMD-UNC-050` | `ADD UPFRDSSVR` | ADD | UPFRDSSVR | ★UPF Radius 服务器（DN-AAA，★必须先于 UPFRDSCLIENTIP） | SERVERTYPE, IPVERSION, SERVERIPV4, UPLISTNAME | EV-FK-27 |
-| `CMD-UNC-051` | `ADD UPFRDSCLIENTIP` | ADD | UPFRDSCLIENTIP | ★UPF Radius 客户端 IP（★必须最后执行，执行后 SMF 立即触发建链） | CLIENTYPE, IPVERSION, UPLISTNAME, VPNINSTANCE, CLIENTIPV4 | EV-FK-27 |
-| `CMD-UNC-052` | `ADD NETWORKINSTVPNMAP` | ADD | NETWORKINSTVPNMAP | UPF VPN 配置（★必须先于 UPFRDSSVR/CLIENTIP） | VPNINSTANCE | EV-FK-27 |
-
-### 1.24 UNC 接入控制 ARD/NGMM（WSFD-106003，5个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-053` | `ADD GBARD` | ADD | GBARD | 2G 接入限制（签约 ARD/APN/卡类型，+MOD/RMV/LST） | IMSI, APNNI, CARDTYPE(SIM/USIM), ARD, CTRLTYPE(ALLOW/DENY), CAUSE | EV-FK-36 |
-| `CMD-UNC-054` | `ADD IUARD` | ADD | IUARD | 3G 接入限制（+MOD/RMV/LST） | IMSI, APNNI, CARDTYPE, ARD, CTRLTYPE | EV-FK-36 |
-| `CMD-UNC-055` | `ADD S1ARD` | ADD | S1ARD | 4G 接入限制（+MOD/RMV/LST） | IMSI, APNNI, CARDTYPE, ARD, CTRLTYPE | EV-FK-36 |
-| `CMD-UNC-056` | `ADD NGMMSUBDATA` | ADD | NGMMSUBDATA | ★5GC 接入限制（AMF 侧移动性限制，子特性 A） | USER_RANGE, IMSIPRE, RATRESTRICT, CORERESTRICT | EV-FK-36 |
-| `CMD-UNC-057` | `SET NGMMPROCTRL` | SET | NGMMPROCTRL | NGMM 处理控制 | ... | EV-FK-36 |
-
-### 1.25 UNC 别名 APN 双视角（WSFD-106203，6个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-058` | `ADD APNALIAS` | ADD | APNALIAS | ★GGSN/PGW-C/SMF 侧：别名 APN→真实 APN（资源归一；5G 先按 SST+SD 查再 ALL_USER） | SUBRANGE(ALL_USER), ALIASAPN, CONVERTAPN, SST, SD | EV-FK-05 |
-| `CMD-UNC-059-1` | `MOD APNALIAS` | MOD | APNALIAS | APNALIAS 管理（+MOD/RMV/LST） | ALIASAPN | EV-FK-05 |
-| `CMD-UNC-059-2` | `RMV APNALIAS` | RMV | APNALIAS | APNALIAS 管理（+MOD/RMV/LST） | ALIASAPN | EV-FK-05 |
-| `CMD-UNC-059-3` | `LST APNALIAS` | LST | APNALIAS | APNALIAS 管理（+MOD/RMV/LST） | ALIASAPN | EV-FK-05 |
-| `CMD-UNC-060` | `ADD ALIASAPN` | ADD | ALIASAPN | ★SGSN/MME 侧：协商 APN→别名 APN（DNS 屏蔽；双条件 IMSI 号段 AND 协商 APN） | IMSI_PREFIX, OLDAPN, NEWAPN | EV-FK-05 |
-| `CMD-UNC-061-1` | `MOD ALIASAPN` | MOD | ALIASAPN | ALIASAPN 管理（+MOD/RMV/LST） | IMSI_PREFIX, OLDAPN | EV-FK-05 |
-| `CMD-UNC-061-2` | `RMV ALIASAPN` | RMV | ALIASAPN | ALIASAPN 管理（+MOD/RMV/LST） | IMSI_PREFIX, OLDAPN | EV-FK-05 |
-| `CMD-UNC-061-3` | `LST ALIASAPN` | LST | ALIASAPN | ALIASAPN 管理（+MOD/RMV/LST） | IMSI_PREFIX, OLDAPN | EV-FK-05 |
-| `CMD-UNC-062` | `SET APNREPORTATTR` | SET | APNREPORTATTR | APN 报告属性 | APN, ... | EV-FK-05 |
-| `CMD-UNC-063` | `SET DEACTIVERATE` | SET | DEACTIVERATE | 去活速率 | APN, RATE | EV-FK-05 |
-
-### 1.26 UNC L2TP 决策（WSFD-104410，4个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-064` | `SET APNL2TPCTRL` | SET | APNL2TPCTRL | ★UNC L2TP APN 控制（C 面专用，★仅 2 参数 APN/L2TPSWITCH；与 UDG APNL2TPATTR 10+ 参数不对称） | APN, L2TPSWITCH(ENABLE/DISABLE) | EV-FK-14 |
-| `CMD-UNC-065` | `LST APNL2TPCTRL` | LST | APNL2TPCTRL | L2TP APN 控制查询 | APN | EV-FK-14 |
-| `CMD-UNC-066` | `SET L2TPKEY` | SET | L2TPKEY | ★N4 接口 L2TP 加密密钥（C 侧；与 UDG L2TPN4KEY 须相同） | KEY | EV-FK-14 |
-| `CMD-UNC-067-1` | `SET PFCPPVTEXT` | SET | PFCPPVTEXT | PFCP 私有扩展 + UP 控制面管理（下发 LNS 参数经 N4） | ... | EV-FK-14 |
-| `CMD-UNC-067-2` | `ADD UPCMPT` | ADD | UPCMPT | PFCP 私有扩展 + UP 控制面管理（下发 LNS 参数经 N4） | ... | EV-FK-14 |
-
-### 1.27 UNC 会话管理/多 PDN（WSFD-010501/010503，6个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-068-1` | `ADD PDPAPN` | ADD | PDPAPN | 2/3G PDP APN 维护（会话管理 C 面） | APN | EV-FK-02 |
-| `CMD-UNC-068-2` | `MOD PDPAPN` | MOD | PDPAPN | 2/3G PDP APN 维护（会话管理 C 面） | APN | EV-FK-02 |
-| `CMD-UNC-068-3` | `RMV PDPAPN` | RMV | PDPAPN | 2/3G PDP APN 维护（会话管理 C 面） | APN | EV-FK-02 |
-| `CMD-UNC-068-4` | `LST PDPAPN` | LST | PDPAPN | 2/3G PDP APN 维护（会话管理 C 面） | APN | EV-FK-02 |
-| `CMD-UNC-069-1` | `SET GBSM` | SET | GBSM | 2/3G 会话管理维护 | ... | EV-FK-02 |
-| `CMD-UNC-069-2` | `SET IUSM` | SET | IUSM | 2/3G 会话管理维护 | ... | EV-FK-02 |
-| `CMD-UNC-069-3` | `SET SMPDUCTRL` | SET | SMPDUCTRL | 2/3G 会话管理维护 | ... | EV-FK-02 |
-| `CMD-UNC-069-4` | `SET SDCFG` | SET | SDCFG | 2/3G 会话管理维护 | ... | EV-FK-02 |
-| `CMD-UNC-069-5` | `SET SMFUNC` | SET | SMFUNC | 2/3G 会话管理维护 | ... | EV-FK-02 |
-| `CMD-UNC-069-6` | `SET CHGCHAR` | SET | CHGCHAR | 2/3G 会话管理维护 | ... | EV-FK-02 |
-| `CMD-UNC-070` | `ADD APNACTNUM` | ADD | APNACTNUM | ★单 APN 并发限制（PDNNUM/IPV4ADDRNUM/IPV6ADDRNUM + PDNCONNREJCAUSE） | APN, PDNNUM, IPV4ADDRNUM, IPV6ADDRNUM, PDNCONNREJCAUSE | EV-FK-03 |
-| `CMD-UNC-071-1` | `MOD APNACTNUM` | MOD | APNACTNUM | 单 APN 并发限制管理 | APN | EV-FK-03 |
-| `CMD-UNC-071-2` | `RMV APNACTNUM` | RMV | APNACTNUM | 单 APN 并发限制管理 | APN | EV-FK-03 |
-| `CMD-UNC-071-3` | `LST APNACTNUM` | LST | APNACTNUM | 单 APN 并发限制管理 | APN | EV-FK-03 |
-
-### 1.28 UNC 用户数据管理（WSFD-010400，2个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-072` | `SET SDBTMR` | SET | SDBTMR | 签约数据库定时器 | ... | EV-FK-04 |
-| `CMD-UNC-073` | `SET SYS` | SET | SYS | 系统配置（SUBSTORAG 存储分拆） | SUBSTORAG | EV-FK-04 |
-
-### 1.29 UNC IPv6 承载 SM 子表（WSFD-104001/104002/104004，3个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-074-1` | `ADD SMSUBDATA` | ADD | SMSUBDATA | SM 子表数据（UNC IPv6 承载） | IMSI, ... | EV-FK-19, EV-FK-27, EV-FK-31 |
-| `CMD-UNC-074-2` | `MOD SMSUBDATA` | MOD | SMSUBDATA | SM 子表数据（UNC IPv6 承载） | IMSI, ... | EV-FK-19, EV-FK-27, EV-FK-31 |
-| `CMD-UNC-074-3` | `RMV SMSUBDATA` | RMV | SMSUBDATA | SM 子表数据（UNC IPv6 承载） | IMSI, ... | EV-FK-19, EV-FK-27, EV-FK-31 |
-| `CMD-UNC-075` | `SET SMFUNC` | SET | SMFUNC | SM 功能（IPv6 承载） | ... | EV-FK-19, EV-FK-27, EV-FK-31 |
-| `CMD-UNC-076` | `MOD GTPCCMPT` | MOD | GTPCCMPT | GTP-C 控制（IPv6 承载） | ... | EV-FK-19, EV-FK-27, EV-FK-31 |
-
-### 1.30 UNC DHCP（WSFD-104413/104005，5个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-077` | `ADD DHCPBINDPOOLGRP` | ADD | DHCPBINDPOOLGRP | DHCP 池组绑定 | POOLGRPNAME | EV-FK-22, EV-FK-23 |
-| `CMD-UNC-078-1` | `ADD DHCPSERVER` | ADD | DHCPSERVER | DHCP 服务器 + 服务器组 | SERVERNAME, GROUPNAME | EV-FK-22, EV-FK-23 |
-| `CMD-UNC-078-2` | `ADD DHCPSERVERGRP` | ADD | DHCPSERVERGRP | DHCP 服务器 + 服务器组 | SERVERNAME, GROUPNAME | EV-FK-22, EV-FK-23 |
-| `CMD-UNC-079` | `ADD AGENTIP` | ADD | AGENTIP | DHCP Agent IP | AGENTIP | EV-FK-22, EV-FK-23 |
-| `CMD-UNC-080` | `SET DHCPPARAREQ` | SET | DHCPPARAREQ | DHCP 参数请求 | ... | EV-FK-22, EV-FK-23 |
-
-### 1.31 UNC 对等网元选择（WSFD-010202，4个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-081` | `ADD AREADNS` | ADD | AREADNS | ★位置区域 DNS 域名定制（LAC/RAC/TAC + ZONESW；+MOD/RMV/LST） | AREAID, LAC, RAC, TAC, ZONESW | EV-FK-35 |
-| `CMD-UNC-082-1` | `ADD DNSN` | ADD | DNSN | DNS 配置（SGSN/MME） | DNSNAME | EV-FK-35 |
-| `CMD-UNC-082-2` | `ADD IPV4DNSH` | ADD | IPV4DNSH | DNS 配置（SGSN/MME） | DNSNAME | EV-FK-35 |
-| `CMD-UNC-082-3` | `ADD SGSNDNS` | ADD | SGSNDNS | DNS 配置（SGSN/MME） | DNSNAME | EV-FK-35 |
-| `CMD-UNC-083` | `SET MSCSELPLCY` | SET | MSCSELPLCY | MSC 选择策略（SRVCC 基于 RAI/LAI FQDN） | ... | EV-FK-35 |
-
-### 1.32 UNC 静态路由冗余（WSFD-107021，1个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-084` | `SET REDUNDUSER` | SET | REDUNDUSER | ★静态路由冗余全局开关（UNC 侧；★与 UDG 同命令，U+C 共用对象） | SWITCH | EV-FK-25 |
-
-### 1.33 UNC VPN 与逻辑接口（共用，2个）
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-085` | `ADD VPNINST` | ADD | VPNINST | UNC VPN 实例（Radius 鉴权/二次鉴权用 AAA VPN） | VPNINSTNAME | EV-FK-25, EV-FK-28, EV-FK-27 |
-| `CMD-UNC-086-1` | `ADD LOGICIP` | ADD | LOGICIP | UNC Gi 逻辑接口（giif1/0/0 鉴权 AAA / giif1/0/1 计费 AAA） | IFNAME, LOGICIP | EV-FK-25, EV-FK-28, EV-FK-27 |
-| `CMD-UNC-086-2` | `ADD LOGICINF` | ADD | LOGICINF | UNC Gi 逻辑接口（giif1/0/0 鉴权 AAA / giif1/0/1 计费 AAA） | IFNAME, LOGICIP | EV-FK-25, EV-FK-28, EV-FK-27 |
-
-### 1.33a UNC 策略刷新生效（1个，★运维动作命令）
-
-> **说明**：SET REFRESHSRV 是 UNC 侧配置链统一终点的运维动作命令（非 ADD 配置类），使 Radius 鉴权级联链 / UPF 选择三轮筛选 / ARD 接入控制等 C 面策略变更下发生效。无对应 ConfigObject（动作命令，不产生配置实体）。★与 UDG 侧 CMD-UDG-088 同命令名（U+C 通用刷新命令），按产品侧分离建模。
-
-| `command_id` | `command_name` | `verb` | `object_keyword` | `command_summary` | 关键参数 | `source_evidence_ids` |
-|--------------|----------------|--------|------------------|-------------------|----------|----------------------|
-| `CMD-UNC-087` | `SET REFRESHSRV` | SET | REFRESHSRV | ★UNC 侧策略刷新生效（Radius/UPF 选择/ARD 接入控制变更后必须；C 面配置链统一终点；Task 级 `must_be_last=true`） | （无业务参数，触发下发动作） | EV-FK-24, EV-FK-25, EV-FK-34, EV-FK-36, EV-CA-01 |
-
-> **说明**：ADD APN 在 UDG 已实例化（CMD-UDG-009），UNC 侧复用同命令族（不再独立编号），支撑别名 APN 等场景前置依赖。
+## 1. MMLCommand 实例化（按簇分组，去重后）
+
+> **编号说明**：`CMD-<NF>-<featureid>-<nn>`，跨特性共用命令在 used_by_features 列出所有引用特性。本节按簇 B / D / E-core 分组，每命令列 command_id / command_name / verb / object_keyword / command_summary / 关键参数 / source_evidence_ids / **used_by_features**（新增字段）。
+
+### 1.1 簇B-UDG 地址分配（GWFD-010105/010104/020421/010108/010107）
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UDG-010105-01 | ADD POOL | ADD/POOL | ★UDG 地址池（POOLTYPE=LOCAL/EXTERNAL/MULTICAST；高危：RELEASETIME 过大延迟释放） | POOLNAME, POOLTYPE, IPVERSION, IPLEASE, RELEASETIME, SINGLEIPFLAG, CHECKIPVALID, HASVPN, VPNINSTANCE, ALARMSWITCH, IMSSW, REDUNDFUNC, MASTERFLAG（13） | EV-FK-06 | 010105, 010104, 020421, 010107 |
+| CMD-UDG-010105-02 | ADD SECTION | ADD/SECTION | 地址段（V6PREFIXLENGTH 49~64；最多 64 段） | POOLNAME, SECTIONNUM, IPVERSION, V4STARTIP, V4ENDIP, V6PREFIXSTART, V6PREFIXEND, V6PREFIXLENGTH, MASK（9） | EV-FK-06 | 010105, 010104, 020421, 010107 |
+| CMD-UDG-010105-03 | ADD POOLGROUP | ADD/POOLGROUP | 地址池组（IPV4/V6ALLOCPRIALG 优先级算法） | POOLGRPNAME, IPV4ALLOCPRIALG, IPV6ALLOCPRIALG（3） | EV-FK-06 | 010105, 010104, 020421, 010107 |
+| CMD-UDG-010105-04 | ADD POOLBINDGROUP | ADD/POOLBINDGROUP | 地址池绑池组（PRIORITY 1~16；UDG 命名 GROUP） | POOLGROUPNAME, POOLNAME, PRIORITY（3） | EV-FK-06 | 010105, 010104, 020421, 010107 |
+| CMD-UDG-010105-05 | ADD POOLGRPMAP | ADD/POOLGRPMAP | 池组映射（APN/SMF/LOCATION 任意组合；位域 SMF；不支持修改） | MAPPINGNAME, LOCATIONGRPTYPE, LOCATIONGRPNAME, APN, SMF, POOLGROUPNAME, MCC, MNC（8） | EV-FK-06 | 010105, 010104, 020421 |
+| CMD-UDG-010105-06 | SET IPALLOCRULE | SET/IPALLOCRULE | ★全局三级地址分配规则（IPv4+IPv6 双规则集 12 参数；位域 `APN-X&LOCATION-X&SMF-X`） | FIRSTRULESW, FIRSTRULE, ..., IPV6FIRSTRULESW, IPV6FIRSTRULE, ... IPV6THIRDRULE（12） | EV-FK-06 | 010105, 010104, 020421 |
+| CMD-UDG-010105-07 | SET APNIPALLOCRULE | SET/APNIPALLOCRULE | APN 级规则（覆盖全局；ALLOCATTR/IPV6ALLOCATTR=INHERIT\|LOCAL） | APN, ALLOCATTR, FIRSTRULESW, ..., IPV6ALLOCATTR, IPV6FIRSTRULESW, ... IPV6THIRDRULE（16） | EV-FK-06 | 010105, 020421 |
+| CMD-UDG-010105-08 | SET ADDRESSATTR | SET/ADDRESSATTR | ★全局地址分配属性（RADIUS 下发地址池名称场景；V4/V6POOLWILDCARDSW） | V4POOLWILDCARDSW, V6POOLWILDCARDSW, RELEASETIME, V4IPHOSTROUTE, V6IPHOSTROUTE（5） | EV-FK-06 | 010105 |
+| CMD-UDG-010105-09 | SET APNADDRESSATTR | SET/APNADDRESSATTR | ★APN 地址分配属性（15 参数；SUPPORTIPV4/V6、IGNOREV4/V6POOLID、HOSTROUTEIP、IPTYPEFORDUALIP、CPCTRL、IPv6 RA 系列） | APN, SUPPORTIPV4, SUPPORTIPV6, FRAMEDROUTE, ANTISPOOFINGDL, ANTISPOOFINGUL, IPTYPEFORDUALIP, SINGLEADDRCAUSE, CPCTRL, IPV6RAMTUSW, IPV6MTU, IPV6RALIFETIME, HOSTROUTEIP, IGNOREV4POOLID, IGNOREV6POOLID（15） | EV-FK-06 | 010105, 010104, 020421 |
+| CMD-UDG-010105-10 | ADD CPNODEID | ADD/CPNODEID | SMF 的 NodeID（CPNODEIDTYPE 三类型 IPV4/IPV6/FQDN；不同 SMF 实例 NODEID 不可相同） | CPNAME, CPNODEIDTYPE, IPV4NODEID, IPV6NODEID, FQDNNODEID, LOCALEMERNODE（6） | EV-FK-06 | 010105, 020421 |
+| CMD-UDG-010105-11 | SET IPALLOCBYSMFGLBSW | SET/IPALLOCBYSMFGLBSW | 基于 SMF 分配全局开关（IPv4 SWITCH + IPv6 IPV6SWITCH 双开关） | SWITCH, IPV6SWITCH（2） | EV-FK-06 | 010105 |
+| CMD-UDG-010105-13 | SET IPALLOCBYSMFSW | SET/IPALLOCBYSMFSW | ⚠️手册未定位（指定 SMF 分配开关，激活文档步骤 5.b 引用，参数 SMFID/SWITCH 为推断） | ⚠️手册未定位 | EV-FK-06 | 010105 |
+| CMD-UDG-010105-12 | ADD CONFLICTIP | ADD/CONFLICTIP | 冲突 IPv4 地址标识（★仅 IPv4；最多 16 个/池） | POOLNAME, IPADDRESS（2） | EV-FK-06 | 010105 |
+| CMD-UDG-010104-01 | ADD OSPF | ADD/OSPF | ★创建 OSPF 进程（48 参数全量；含智能定时器族 LSAARR/LSAORIG/SPF + BFD 系列；SCHEMAROUID 全网唯一） | PROCID, VRFNAME, SCHEMAROUID, SILENTALLFLAG, BFDALLINTFFLG, ..., VIRTUALSYSFLAG（48） | EV-FK-06 | 010104, 010105(脚本引用), 020421(脚本引用) |
+| CMD-UDG-010104-02 | ADD OSPFAREA | ADD/OSPFAREA | OSPF 区域（NSSA 族 8 + Stub 族 2 + LDP 同步 + MAXCOST） | PROCID, AREAID, AREATYPE, NSSADEFAULTROUTEADVERTISE, ..., MAXCOSTINTVL（17） | EV-FK-06 | 010104, 010105, 020421 |
+| CMD-UDG-010104-03 | ADD OSPFNETWORK | ADD/OSPFNETWORK | OSPF 网段（IPADDRESS+WILDCARDMASK 共同指定） | PROCID, AREAID, IPADDRESS, WILDCARDMASK, DESCRIPTION（5） | EV-FK-06 | 010104, 010105, 020421 |
+| CMD-UDG-010104-04 | ADD OSPFIMPORTROUTE | ADD/OSPFIMPORTROUTE | ★引入外部路由（手机下行路由核心：PROTOCOL=wlr；强约束：不能只发 WLR_SP/UD） | PROCID, TOPOID, PROTOCOL, PROTOCOLPROCID, IMPTCOSTCFG, ..., ROUPOLINAME, PERMITIBGPCFG（12） | EV-FK-06 | 010104, 010105, 020421 |
+| CMD-UDG-020421-01 | ADD LACGROUP | ADD/LACGROUP | LAC 组（2G/3G 位置区） | LACGROUPNAME（1） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-02 | ADD LACID | ADD/LACID | LAC 号段（0x0001~0xFFFD/0xFFFF；不可重叠不可跨组） | LACGROUPNAME, LACSECNUM, LACSTARTID, LACENDID（4） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-03 | ADD TACGROUP | ADD/TACGROUP | TAC 组（4G/5G；TACTYPE=S1TAC/N2TAC） | TACGROUPNAME, TACTYPE（2） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-04 | ADD S1TACID | ADD/S1TACID | S1TAC 号段（PGW-U；0x0000~0xFFFF） | TACGROUPNAME, TACSECNUM, TACSTARTID, TACENDID（4） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-05 | ADD N2TACID | ADD/N2TACID | N2TAC 号段（UPF；0x000000~0xFFFFFF） | TACGROUPNAME, TACSECNUM, TACSTARTID, TACENDID（4） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-06 | SET IPALLOCBYLOCGLBSW | SET/IPALLOCBYLOCGLBSW | 基于位置区分配全局开关（IPv4 SWITCH + IPv6 IPV6SWITCH） | SWITCH, IPV6SWITCH（2） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-07 | SET IPALLOCBYLOCSW | SET/IPALLOCBYLOCSW | 指定位置区分组开关（三态 DISABLE/ENABLE/**INHERIT** 继承全局） | LOCATIONGRPTYPE, LOCATIONGRPNAME, SWITCH, IPV6SWITCH（4） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-08 | ADD ADRLOCWHITELST | ADD/ADRLOCWHITELST | 位置区域地址分配白名单（MSISDN；白名单内用户不基于位置分配） | MSISDN（1） | EV-FK-06 | 020421 |
+| CMD-UDG-020421-09 | SET LICENSESWITCH | SET/LICENSESWITCH | License 开关（GWFD-020421 用 LKV3G5LBAA01） | LICITEM, SWITCH（2） | EV-FK-06 | 020421 |
+| CMD-UDG-010108-01 | STR PDNROUTETST | STR/PDNROUTETST | ★启动 PDN 路由探测（高危：可能去活在线用户；PING/DNS/TRACERT 三方式；全量探测 SECTIONNUM） | IPPOOL, IPVERSION, SRCIPV4ADDR, DSTIPV4ADDR, SRCIPV6PREFIX, DSTIPV6PREFIX, DSCPV, TCV, TESTMETHOD, LENGTH, DOMAINVALUE, WHOLEDETECT, SECTIONNUM（13） | EV-FK-19 | 010108 |
+| CMD-UDG-010108-02 | STP PDNROUTETST | STP/PDNROUTETST | 终止探测（无参数） | 无参数（0） | EV-FK-19 | 010108 |
+| CMD-UDG-010108-03 | DSP PDNTSTRESULT | DSP/PDNTSTRESULT | 查询探测结果（DISPLAYMODE SUCCESS/FAIL） | DISPLAYMODE（1）+18 输出项 | EV-FK-19 | 010108 |
+| CMD-UDG-010107-01 | ADD REDUNDRDTIP | ADD/REDUNDRDTIP | 冗余备份重定向 IP（虚拟 IP，重定向业务流到 GRE Tunnel；最大 2 记录） | IPVERSION, IPV4ADDRESS, IPV6ADDRESS（3） | EV-FK-20 | 010107 |
+| CMD-UDG-010107-02 | SET REDUNDUSER | SET/REDUNDUSER | 全局冗余开关（高危；与 ADD POOL.REDUNDFUNC 双使能） | SWITCH（1） | EV-FK-20 | 010107 |
+| CMD-UDG-010107-03 | SET APNREDUNDUPSW | SET/APNREDUNDUPSW | APN 上行报文隧道转发开关（★仅备用 UDG 配置；IPv4/IPv6 双开关） | APN, IPV4SWITCH, IPV6SWITCH（3） | EV-FK-20 | 010107 |
+
+### 1.2 簇B-UNC 地址分配（WSFD-010502/010504/107021）
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UNC-010502-01 | ADD ADDRPOOL | ADD/ADDRPOOL | ★UNC 地址池（POOLTYPE=Local/UDM/Radius/DHCP 四类型；当前不支持 SINGLEIPFLAG/OVERLAP） | POOLNAME, IPVERSION, SINGLEIPFLAG, POOLTYPE, CHECKIPVALID, HASVPN, VPNINSTANCE, IPLEASE, RELEASETIME, IMSSW, OVERLAP, SPECIPALLOCSW, ALARMSW（13） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-02 | ADD SECTION | ADD/SECTION | UNC 地址段（同 UDG 但 8 参数） | POOLNAME, SECTIONNUM, IPVERSION, V4STARTIP, V4ENDIP, V6PREFIXSTART, V6PREFIXEND, V6PREFIXLENGTH（8） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-03 | ADD ADDRPOOLGRP | ADD/ADDRPOOLGRP | UNC 地址池组（POOLGRPTYPE=Local/UDM/Radius/DHCP） | POOLGRPNAME, POOLGRPTYPE, IPV4ALLOCPRIALG, IPV6ALLOCPRIALG（4） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-04 | ADD POOLBINDGRP | ADD/POOLBINDGRP | UNC 池绑池组（★GRP 非 GROUP；PRIORITY 1~16） | POOLGRPNAME, POOLNAME, PRIORITY（3） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-05 | ADD POOLGRPMAP | ADD/POOLGRPMAP | UNC 池组映射（UPFGRPNAME/APN/LOCATION；★当前版本不支持 LOCATION；位域 UPNODE） | MAPPINGNAME, POOLGRPNAME, UPFGRPNAME, LOCATIONGRPTYPE, LOCATIONGRPNAME, APN（6） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-06 | ADD UPNODE | ADD/UPNODE | ★UNC UPF 节点（ADDRALLOCMODE=INHERIT/SMF_ALLOC/UPF_FIRST 三态；29 参数） | NFINSTANCENAME, LOCATION, UPFUNCTION, LOCK, APSAMIGFUNC, ADDRALLOCMODE, SHAREDUPFSW, ..., PATHMIGEXT（29） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-07 | ADD ADDRUPGROUP | ADD/ADDRUPGROUP | UNC UPF 组（UPFGRPTYPE=Local/UDM/Radius/DHCP） | UPFGRPNAME, UPFGRPTYPE（2） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-08 | ADD UPFBINDGRP | ADD/UPFBINDGRP | UNC UPF 绑 UPF 组（★PRIORITY 0~255；仅 UDM/Radius 生效；107021 主备语义承载） | UPFGRPNAME, UPFID, PRIORITY（3） | EV-UNC-010502 | 010502, 010504, 107021 |
+| CMD-UNC-010502-09 | ADD POOLBINDAPN | ADD/POOLBINDAPN | UNC 独有：地址池绑 APN（白名单检查 CHECKIPVALID 配套） | POOLNAME, APN, PRIORITY（3） | EV-UNC-010502 | 010502, 107021 |
+| CMD-UNC-010502-10 | ADD BLACKLIST | ADD/BLACKLIST | UNC 独有：静态地址黑名单（基于 VPN，每 VPN 20 列表） | NAME, IPVERSION, V4STARTIP, V4ENDIP, V6PREFIXSTART, V6PREFIXEND, HASVPN, VPNINSTANCE（8） | EV-UNC-010502 | 010502 |
+| CMD-UNC-010502-11 | SET STATICADDRPARA | SET/STATICADDRPARA | UNC 独有：静态地址扫描（主锚点与静态绑定 UPF 不一致时去活） | SCANSWT, SCANSTARTTIME, SCANENDTIME（3） | EV-UNC-010502 | 010502 |
+| CMD-UNC-010504-01 | SET APNADDRESSATTR | SET/APNADDRESSATTR | ★UNC 版（32 参数；IPV4/IPV6ALLOCTYPE=LOCAL/RADIUS/DHCP 分配方式切换；ALLOCPRECEDENCE） | APN, ANTISPOOFINGDI, ALLOCWITHOUTPCO, ..., IPV4ALLOCTYPE, IPV4RADIUSPRIOR, IPV6ALLOCTYPE, ..., RDSSVRCTRL, ..., ALLOCPRECEDENCE（32） | EV-UNC-010504 | 010502, 010504 |
+| CMD-UNC-010504-02 | SET IPALLOCRULE | SET/IPALLOCRULE | ★UNC 版（位域 `APN-X&LOCATION-X&UPNODE-X`，第三字段 UPNODE 非 SMF） | IPV4FIRSTRULESW, IPV4FIRSTRULE, ..., IPV6THIRDRULE（12） | EV-UNC-010504 | 010502, 010504 |
+| CMD-UNC-010504-03 | SET IPALLOCBYLOCGLBSW | SET/IPALLOCBYLOCGLBSW | UNC 基于位置区分配全局开关 | SWITCH, IPV6SWITCH（2） | EV-UNC-010504 | 010504 |
+| CMD-UNC-010504-04 | ADD CONFLICTIP | ADD/CONFLICTIP | ★UNC 版（支持 IPv4+IPv6，5 参数） | POOLNAME, IPVERSION, IPADDRESS, IPV6PREFIX, IPV6PREFIXLEN（5） | EV-UNC-010504 | 010504 |
+
+### 1.3 簇D UNC 鉴权/Radius/二次鉴权（WSFD-010301/108007/011307/011305/011306）
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UNC-010301-01 | ADD NGUSRSECPARA | ADD/NGUSRSECPARA | ★5G 用户安全（高危：算法误配致终端接入异常；INTEGALG/ENCRYALG；AUTHEVENT 11 流程） | SUBRANGE, IMSIPRE, INTEGALG, ENCRYALG, AUTHEVENT, DESC, AUTHPERIOD（7） | EV-AUTH-5G | 010301 |
+| CMD-UNC-108007-01 | ADD CPGTPUADDR | ADD/CPGTPUADDR | N4 GTP-U 隧道端点（IP+VPN 须在 LOGICIP 已配） | IPVERSION, IPV4ADDR, IPV6ADDR, VPN（4） | EV-2AUTH | 108007 |
+| CMD-UNC-108007-02 | ADD UPLIST4RDS | ADD/UPLIST4RDS | ★Radius 用 UP 列表（108007+011306+011307 共用；每列表最多 64 UP） | UPLISTNAME, UPINSTANCEID（2） | EV-2AUTH | 108007, 011306, 011307 |
+| CMD-UNC-108007-03 | ADD RDSUPFCTRL | ADD/RDSUPFCTRL | UP 列表中指定 UPF 功能属性（PREFERENCE/LOCKED） | UPLISTNAME, UPINSTANCEID, PREFERENCE, LOCKED（4） | EV-2AUTH | 108007 |
+| CMD-UNC-108007-04 | ADD UPFRDSSVR | ADD/UPFRDSSVR | ★中转 UPF 与 Radius 服务器绑定（高危：中转与直连 IP 不可相同） | SERVERTYPE, IPVERSION, SERVERIPV4, SERVERIPV6, UPLISTNAME（5） | EV-2AUTH | 108007 |
+| CMD-UNC-108007-05 | ADD UPFRDSCLIENTIP | ADD/UPFRDSCLIENTIP | ★中转 UPF 与 Radius 客户端绑定（★必须最后执行，执行后立即触发建链） | CLIENTYPE, IPVERSION, CLIENTIPV4, CLIENTIPV6, UPLISTNAME, VPNINSTANCE, NETINSTNAMESRC, SPECNETINSTNAME（8） | EV-2AUTH | 108007 |
+| CMD-UNC-011306-01 | ADD RDSSVRGRP | ADD/RDSSVRGRP | ★Radius 服务器组（★三件套共享；MODE 主备/负荷分担；SIGOPTACCTMSG） | RDSSVRGRPNAME, MODE, ACCTONACTIVE, ..., AUTHSVRDTIME（19） | EV-FK-25 | 011305, 011306, 011307 |
+| CMD-UNC-011306-02 | ADD RDSSVR | ADD/RDSSVR | ★Radius 服务器（PRIFLAG 主/备/抄送；PRIORITY/COPYSVRPRIORITY/WEIGHT） | RDSSVRGRPNAME, SERVERTYPE, IPVERSION, SERVERIPV4, SERVERIPV6, PORT, VPNINSTANCE, CIPHERKEY, ..., COPYSVRPRIORITY（18） | EV-FK-25 | 011305, 011306, 011307 |
+| CMD-UNC-011306-03 | MOD RDSSVRGRP | MOD/RDSSVRGRP | ★修改服务器组（原 04 缺） | 同 ADD RDSSVRGRP（19） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-04 | MOD RDSSVR | MOD/RDSSVR | ★修改服务器（高危；原 04 缺） | RDSSVRGRPNAME, SERVERTYPE, IPVERSION, ..., COPYSVRPRIORITY（14，无 CIPHERKEY） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-05 | ADD APNRDSSVRGRP | ADD/APNRDSSVRGRP | APN↔服务器组绑定（★一个 APN 只能绑一个组） | APN, RDSSVRGRPNAME, COPYINTERIMUPD（3） | EV-FK-25 | 011305, 011306, 011307 |
+| CMD-UNC-011306-06 | ADD APNRDSCLIENTIP | ADD/APNRDSCLIENTIP | APN 绑 Gi 源 IP（★未配置致激活失败；APN 配置优先级高于服务器组） | APN, AUTHORACCT, INTFNAME（3） | EV-FK-25 | 011305, 011306 |
+| CMD-UNC-011306-07 | SET RDSACCTREQVSA | SET/RDSACCTREQVSA | ★3GPP/3GPP2 计费私有扩展（原 04 完全丢失） | RDSSVRGRPNAME, THREEGPP, ..., THREEGPP2, THREEGPP2BSID（30） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-08 | SET RDSACCTREQATTR | SET/RDSACCTREQATTR | ★基础信元可选属性（原 04 完全丢失） | RDSSVRGRPNAME, CALLSTAID, ..., NASIPADDR（29） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-09 | SET RDSAUTHREQVSA | SET/RDSAUTHREQVSA | ★3GPP 鉴权私有扩展（原 04 完全丢失） | RDSSVRGRPNAME, THREEGPP, ..., CGIPV6ADDRESS（23） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-10 | SET APNRDSACCTCTRL | SET/APNRDSACCTCTRL | APN 计费控制（TIMETHRESHOLD/VOLUMETHRESHOLD/SRVTRIGGER） | APN, TIMETHRESHOLD, ..., CRBNCHANGE（20） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-11 | SET APNRADIUSATTR | SET/APNRADIUSATTR | APN 域名增/剥离 | APN, DOMAINNAMEACT, DOMAINNAMEPOS（3） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-13 | SET RDSRSPADDRCHK | SET/RDSRSPADDRCHK | 全局响应源 IP/端口检查（默认 ENABLE，防火墙/NAT 需关闭） | AUTH, ACCT（2） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-14 | SET FHBYPASS | SET/FHBYPASS | ★故障旁路一键放通（高危；优先级高于 APNAUTHATTR/APNRDSACCTCTRL） | ONLCHARGE, GYERRRC, CCFHOFFLINE, PCC, GXERRRC, RDSAUTH, RDSACCT, HOLDINGTIME, RANGETIME（9） | EV-FK-25 | 011306 |
+| CMD-UNC-011306-15 | ADD SPECIFICAPNVAL | ADD/SPECIFICAPNVAL | ★用户 APN→信令 APN 映射（原 04 丢失；7 类信令 APN） | SUBSCRIBERAPN, ONLYROAMSWITCH, PCRFAPN, CGAPN, OCSAPN, AAAACCTAPN, AAAAUTHAPN, AAAAUTHAPNCASE, CHFAPN, PCFAPN（10） | EV-FK-25 | 011306 |
+| CMD-UNC-011305-01 | SET APNAUTHATTR | SET/APNAUTHATTR | ★鉴权接入核心（28 参数；ACCESSMODE 4 取值；AUTHMODE 3 取值；AAANORSPCTRL Bypass；UDMSUBAUTHSW） | APN, ACCESSMODE, AUTHMODE, PASSWORD, ..., UDMSUBNOSECSW（28） | EV-FK-24 | 011305, 011306 |
+
+### 1.4 簇E-core MPLS VPN（GWFD-020411 UDG + WSFD-104411 UNC，U+C 共用命令族）
+
+> **★关键**：MPLS VPN 命令族 UDG 与 UNC 共用（同名同结构），command_id 双列；UDG 专用 MOD BGPVRF 单列。前置依赖（SET BFD/ADD INTERFACE/ADD IPBINDVPN/ADD AUTOSCALING*）归各自特性，仅在 operates_on 边引用。
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UDG-020411-01 / CMD-UNC-104411-01 | SET MPLSSITE | SET/MPLSSITE | ★高危：MPLS 全局（LSRID；BGP/MPLS VPN 仅开 MPLS 不开 LDP，LDPENABLE=DISABLE） | MPLSLSRID, MPLSENABLE, LDPENABLE, NULLLABLETYPE（4） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-02 / CMD-UNC-104411-02 | ADD MPLSIF | ADD/MPLSIF | 接口使能 MPLS | IFNAME, MTUVALUE（2） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-03 / CMD-UNC-104411-03 | ADD L3VPNINST | ADD/L3VPNINST | L3VPN 实例（VRF；不能为 _public_ 等） | VRFNAME, VRFDESCRIPTION（2） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-04 / CMD-UNC-104411-04 | ADD VPNINSTAF | ADD/VPNINSTAF | VPN 地址族（VRFRD 全局唯一；VRFLABELMODE=perInstance 节省标签） | VRFNAME, AFTYPE, VRFRD, IMPOLICYNAME, EXPOLICYNAME, LOCALCROSSNHPMOD, EXPLYADDERTFIRST, VRFLABELMODE, VRFLABEL, TNLPOLICYNAME, FRRENABLE（11） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-05 / CMD-UNC-104411-05 | ADD VPNTARGET | ADD/VPNTARGET | VPN Target（RT；export_extcommunity/import_extcommunity 成对；Hub&Spoke 靠 RT 双值） | VRFNAME, AFTYPE, VRFRTTYPE, VRFRTVALUE（4） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-06 / CMD-UNC-104411-06 | SET BGP | SET/BGP | ★高危：BGP 全局使能+AS（去使能删全部 BGP 历史） | BGPENABLE, ASNUM, GRACEFULRESTART, TIMEWAITFORRIB, ..., ISSHUTDOWN（13） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-07 / CMD-UNC-104411-07 | ADD BGPVRF | ADD/BGPVRF | BGP VPN 实例（须与 L3VPN 实例名一致；ROUTERID 公网必配） | VRFNAME, DEFAULTAFTYPE, ROUTERID, VRFRIDAUTOSEL（4） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-08 / CMD-UNC-104411-08 | ADD BGPVRFAF | ADD/BGPVRFAF | ★BGP 地址族（VRFNAME=_public_ + ipv4vpn/ipv6vpn 是 MP-EBGP 开关；APPLYLABELMODE=perNexthop 节省标签） | VRFNAME, AFTYPE, MAXIMUMLOADBALANCE, APPLYLABELMODE, ...（40+，关键参数子集见 §5） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-09 / CMD-UNC-104411-09 | ADD BGPPEER | ADD/BGPPEER | BGP 对等体（MP-EBGP 用 VRFNAME=_public_；EBGPMAXHOP 不小于实际跳数） | VRFNAME, ADDRESSTYPE, PEERADDR, REMOTEAS, GROUPNAME, LOCALIFADDR, LOCALIFNAME, EBGPMAXHOP, ...（28） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-10 / CMD-UNC-104411-10 | ADD BGPPEERAF | ADD/BGPPEERAF | ★高危：对等体地址族（Hub&Spoke EBGP 场景 ALLOWASLOOPENABLE=TRUE 允许 AS 重复） | VRFNAME, AFTYPE, ADDRESSTYPE, REMOTEADDRESS, REFLECTCLIENT, ALLOWASLOOPENABLE, ALLOWASLOOPLIMIT, DEFAULTRTADVENABLE, ...（45+） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-11 / CMD-UNC-104411-11 | ADD IMPORTROUTE | ADD/IMPORTROUTE | BGP 引入路由（APN 场景 IMPORTPROTOCOL=wlr 手机下行路由） | VRFNAME, AFTYPE, IMPORTPROTOCOL, IMPORTPROCESSID, IMPORTROUTEPOLICY, MEDENABLE, MED（7） | EV-MPLS-01 | 020411, 104411 |
+| CMD-UDG-020411-12 | MOD BGPVRF | MOD/BGPVRF | ★高危：修改 BGP VPN 实例（UDG 公网 _public_ 的 ROUTERID 专用；UNC 用 ADD BGPVRF 直接配） | VRFNAME, ROUTERID, VRFRIDAUTOSEL, EBGPIFSENSITIVE, IBGPIFSENSITIVE, KEEPALIVETIME, HOLDTIME, CONNRETRYTIME（8） | EV-MPLS-01 | 020411（UDG 专用） |
+
+### 1.5 簇E-core IPSec（IPFD-015004 UDG，13 场景不合并）
+
+> **★双微服务双配**：IPSec 特性本质是 VNRS 微服务（引流）+ IPsec 微服务（IKE 协商/加解密）双配。本节聚焦 IPsec 微服务侧核心命令族；VNRS 侧命令（L3VPNINST/VPNINSTAF/INTERFACE/IPBINDVPN/IFIPV4ADDRESS/IPSECINTFCFG 仅 2 参数）为前置依赖，归簇A/簇E。
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UDG-015004-01 | ADD ACLGROUPIPSEC | ADD/ACLGROUPIPSEC | IPv4 ACL 规则组（★ACL 只支持源/目的 IP，端口不生效） | ACLNAME, ACLSTEP, ACLTYPE, ACLMATCHORDER, ACLDESCRIPTION（5） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-02 | ADD ACLRULEADV4IPSEC | ADD/ACLRULEADV4IPSEC | IPv4 高级 ACL 规则（ACLSRCWILD/ACLDESTWILD 反掩码） | ACLNAME, ACLRULENAME, ..., ACLRULEDESCRIPTION（25） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-03 | ADD ACLGROUP6IPSEC | ADD/ACLGROUP6IPSEC | IPv6 ACL 规则组 | 同 01（5） | EV-IPSEC-02 | 015004 |
+| CMD-UDG-015004-04 | ADD ACLRULEADV6IPSEC | ADD/ACLRULEADV6IPSEC | IPv6 高级 ACL 规则（★★ACLSRCWILD 正掩码前缀长度，与 v4 反掩码语义相反） | ACLNAME, ..., ACLPROTOCOLTYPE, ACLPROTOCOLNAME, ...（25） | EV-IPSEC-02 | 015004 |
+| CMD-UDG-015004-05 | ADD IPSECPROPOSALIPSEC | ADD/IPSECPROPOSALIPSEC | IPsec 安全提议（国密 ESPENCRYPTALGO=Sm4/ESPAUTHALGO=Sm3） | PROPOSALNAME, IPSECPROTOCOL, ESPAUTHALGO, ESPENCRYPTALGO, AHAUTHALGO, ENCAPMOD（6） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-06 | ADD IKEPROPOSAL | ADD/IKEPROPOSAL | IKE 安全提议（★DHGROUP 不能为 None；国密 Digital_envelope+SM2/SM3/SM4） | PROPOSALNUMBER, AUTHMETHOD, AUTHALGORITHM, ENCRALGORITHM, INTEGALGORITHM, DHGROUP, REAUTHINTERVAL, SADURATION, SIGHASHALGNEGSW, SIGNPADDING, ASYMENCRALG（11） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-07 | ADD IKEPEER | ADD/IKEPEER | IPv4 IKE 对等体（★缺省 IKEv1+v2 同开；国密用 CERTLOCALFILE/ENCCERTLOCFILE 替代 PRESHAREDKEY） | PEERNAME, PRESHAREDKEY, EXCHANGEMODE, NATTRAVERSAL, PROPOSAL, ..., CERTLOCALFILE, ..., CUSTOMPARA（21） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-08 | ADD IKEPEER6 | ADD/IKEPEER6 | IPv6 IKE 对等体（仅 VERSION2；地址 IPv6 化） | PEERNAME, ..., LOWREMOTEADDR(IPv6), ..., AUTHENDADDRESS(IPv6), ...（20） | EV-IPSEC-02 | 015004 |
+| CMD-UDG-015004-09 | ADD IPSECPOLICY | ADD/IPSECPOLICY | IPv4 IPsec 策略（★主备 WORKMODE=Master_standby+AUTOSWITCHBACK；多 Sequence 同 POLICYNAME） | POLICYNAME, SEQUENCENUMBER, POLICYMODE, TEMPLATEMODE, ACLNUMBER, ACLNAME, ..., WORKMODE, AUTOSWITCHBACK, ...（27） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-10 | ADD IPSECPOLICY6 | ADD/IPSECPOLICY6 | IPv6 IPsec 策略（★ACLTYPE 必选；IPv6 不支持 Round_robin） | POLICYNAME, ..., ACL6NUMBER, ACL6NAME, ACLTYPE(required), ..., WORKMODE, ...（28） | EV-IPSEC-02 | 015004 |
+| CMD-UDG-015004-11 | ADD IPSECPOLICYTM | ADD/IPSECPOLICYTM | IPsec 策略模板（TEMPLATEMODE=PolicyTemplate；PEERNAME+IPSECPROPNAME 直接绑定） | POLICYNAME, SEQUENCENUMBER, PEERNAME, IPSECPROPNAME, ACLNAME, ...（22） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-12 | ADD PROPATTACHIPSECPROPOSAL | ADD/PROPATTACHIPSECPROPOSAL | 策略↔提议绑定 | POLICYNAME, SEQUENCENUMBER, POLICYMODE, TEMPLATEMODE, IPSECPROPNAME（5） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-13 | ADD ATTACHIKEPEER | ADD/ATTACHIKEPEER | 策略↔IKE 对等体绑定（★主备同 SEQUENCE 执行 2 次 PEERPRIORITY=1主/2备；多 Sequence 跨 SEQUENCE 各=1） | POLICYNAME, SEQUENCENUMBER, POLICYMODE, TEMPLATEMODE, IKEPEERNAME, PEERPRIORITY（6） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-14 | ADD IPSECINTFCFGIPSEC | ADD/IPSECINTFCFGIPSEC | IPsec 隧道接口应用策略（★★指定本端接口 SRCIFNAME=LoopBack1 仅环回口） | INTERFACENAME, TNLTYPE, POLICYNAME, SRCIFNAME（4） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-15 | SET IKEGLOBALCONFIG | SET/IKEGLOBALCONFIG | IKE 全局（DPD/NAT 保活 NATKLI/抗重放/SA 生命周期） | DFBITCLEAR, ..., DPDTYPE, DPDINTERVAL, ..., NATKLI, ..., FLOWCTRLRTHRES（19） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-16 | SET FWSOFTPARA | SET/FWSOFTPARA | ★国密开关（DWORD 1401=1，所有国密配置前必须先开） | PARAMETERSTYPE, DWORDINDEX, DWORDVALUE, EXTENDDWORDINDEX, EXTENDDWORDVALUE（5） | EV-IPSEC-GM | 015004 |
+| CMD-UDG-015004-17 | ADD CERTSCENE | ADD/CERTSCENE | 证书场景（国密 CA/LOCAL+Cert_sig/Cert_enc） | SCENENAME, SCENETYPE, ENDESCRIPTION, CNDESCRIPTION, CERTTYPE（5） | EV-IPSEC-GM | 015004 |
+| CMD-UDG-015004-18 | SET PKICRLCHECK | SET/PKICRLCHECK | CRL 检查使能（国密证书吊销） | ISCRLENABLE（1） | EV-IPSEC-GM | 015004 |
+| CMD-UDG-015004-19 | ADD GRETUNNEL | ADD/GRETUNNEL | GRE 隧道（GRE over IPsec 双隧道编排；010107 静态冗余 REDUNDANCYEN=TRUE 复用） | TNLNAME, TNLTYPE, SRCTYPE, SRCTYPE6, SRCIPADDR, SRCIPV6ADDR, SRCIFNAME, DSTIPADDR, DSTIPV6ADDR, DSTVPNNAME, KEEPALVEN, KEEPALVPERIOD, KEEPALVRETRYCNT, GREKEYEN, GREKEY, CHECKSUMEN, STATENABLE, REDUNDANCYEN（17） | EV-IPSEC-04 | 015004, 010107 |
+| CMD-UDG-015004-20 | ADD L3VPNINSTIPSEC | ADD/L3VPNINSTIPSEC | IPsec 微服务 VPN 实例（简化版 1 参数） | VRFNAME（1） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-21 | ADD VPNINSTAFIPSEC | ADD/VPNINSTAFIPSEC | IPsec 微服务 VPN 地址族（简化版 2 参数） | VRFNAME, AFTYPE（2） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-22 | ADD INTERFACEIPSEC | ADD/INTERFACEIPSEC | IPsec 微服务接口 | IFNAME, IFDESCR, IFADMINSTATUS, IFMTU, IFDF, IFSTATIENABLE, IFTRAPENABLE, IFSTATITVL（8） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-23 | ADD IPBINDVPNIPSEC | ADD/IPBINDVPNIPSEC | IPsec 微服务绑定 VPN（★清除接口下所有 IP 配置，须在 IPSECINTFCFGIPSEC 之前） | IFNAME, VRFNAME, IPTYPECHECK, IFIPADDR, SUBNETMASK, IPV6ADDR, SUBNETMASKIPV6（7） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-24 | ADD IFIPV4ADDRESSIPSEC | ADD/IFIPV4ADDRESSIPSEC | IPsec 微服务 IPv4 地址 | IFNAME, IFIPADDR, SUBNETMASK, ADDRTYPE（4） | EV-IPSEC-01 | 015004 |
+| CMD-UDG-015004-25 | ADD IFIPV6ADDRESSIPSEC | ADD/IFIPV6ADDRESSIPSEC | ⚠️手册未定位（IPv6 场景引用，参数结构推断 IFNAME/IPV6ADDR/PREFIXLEN，需复核） | ⚠️手册未定位 | EV-IPSEC-02 | 015004 |
 
 ---
 
-## 2. ConfigObject 实例化（~65 个）
+## 2. ConfigObject 实例化（去重，~95 个）
 
-### 2.1 地址分配域 UDG 侧（13个）
+> 限于篇幅，本节列出去重后的 ConfigObject 清单（object_id / object_name / product_side / object_kind / 标识参数 / 关键属性 / 关系摘要）。详细属性表见各 draft §2。
 
-| `object_id` | `object_name` | `product_side` | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------------|---------------|----------|----------|---------------|
-| `OBJ-POOL-U` | POOL | UDG | entity | POOLNAME | POOLTYPE(LOCAL/EXTERNAL), IPVERSION, HASVPN, VPNINSTANCE, REDUNDFUNC | belongs_to POOLGROUP |
-| `OBJ-SECTION` | SECTION | 共用 | entity | POOLNAME, SECTIONNUM | IPVERSION, V4STARTIP/V4ENDIP, V6PREFIXSTART/END, V6PREFIXLENGTH | belongs_to POOL/ADDRPOOL |
-| `OBJ-POOLGROUP` | POOLGROUP | UDG | composite | POOLGRPNAME | IPV4ALLOCPRIALG, IPV6ALLOCPRIALG | **contains** POOL（via POOLBINDGROUP） |
-| `OBJ-POOLBINDGROUP` | POOLBINDGROUP | UDG | binding | POOLGROUPNAME, POOLNAME | PRIORITY | links POOL to POOLGROUP |
-| `OBJ-POOLGRPMAP-U` | POOLGRPMAP | UDG | binding | MAPPINGNAME | APN, POOLGROUPNAME | links APN+POOLGROUP |
-| `OBJ-APN-U` | APN | UDG | entity | APN | HASVPN, VPNINSTANCE, HASVPNIPV6, VPNINSTANCEIPV6 | refers_to VPNINST |
-| `OBJ-APNADDRESSATTR-U` | APNADDRESSATTR | UDG | entity | APN | SUPPORTIPV4, SUPPORTIPV6, IGNOREV4, V6POOLID, HOSTROUTEIP | belongs_to APN |
-| `OBJ-IPALLOCRULE-U` | IPALLOCRULE | UDG | entity | — | FIRSTRULE, SECONDRULE, THIRDRULE | — |
-| `OBJ-APNIPALLOCRULE` | APNIPALLOCRULE | UDG | entity | APN | FIRSTRULE（覆盖全局） | belongs_to APN |
-| `OBJ-CPNODEID` | CPNODEID | UDG | entity | NODEID | — | refers_to POOLGRPMAP（SMF 分配子方式） |
-| `OBJ-IPALLOCBYSMFGLBSW` | IPALLOCBYSMFGLBSW | UDG | entity | — | SWITCH | activates OBJ-IPALLOCRULE（SMF 分配子方式） |
-| `OBJ-LACGROUP` / `OBJ-TACGROUP` | LACGROUP/TACGROUP | UDG | composite | GROUPNAME | LAC/TAC ID 集合 | **contains** LACID/TACID |
-| `OBJ-IPALLOCBYLOCGLBSW-U` | IPALLOCBYLOCGLBSW | UDG | entity | — | IPV4SWITCH, IPV6SWITCH | activates OBJ-IPALLOCRULE（位置子方式） |
-| `OBJ-ADRLOCWHITELST` | ADRLOCWHITELST | UDG | entity | MSISDN | — | refers_to LACGROUP/TACGROUP |
-| `OBJ-CONFLICTIP` | CONFLICTIP/CONFLICTIPV6 | UDG | entity | CONFLICTIP | — | — |
+### 2.1 地址分配域 UDG 侧（GWFD-010105/010104/020421/010108/010107）
 
-### 2.2 地址分配域 UNC 侧（9个，★与 UDG 分离建模）
+| `object_id` | object_name | side/kind | 标识参数 | 关键属性（摘要） | 关系 |
+|-------------|------------|-----------|---------|----------------|------|
+| OBJ-POOL-U | POOL | UDG/entity | POOLNAME | POOLTYPE(LOCAL/EXTERNAL/MULTICAST), REDUNDFUNC, MASTERFLAG | belongs_to POOLGROUP; refers_to VPNINST; activates (REDUNDFUNC+REDUNDUSER 双使能) |
+| OBJ-SECTION | SECTION | 共用/entity | POOLNAME, SECTIONNUM | V4STARTIP/V6PREFIXSTART, V6PREFIXLENGTH(49~64) | belongs_to POOL/ADDRPOOL |
+| OBJ-POOLGROUP | POOLGROUP | UDG/composite | POOLGRPNAME | IPV4/V6ALLOCPRIALG | contains POOL |
+| OBJ-POOLBINDGROUP | POOLBINDGROUP | UDG/binding | POOLGROUPNAME, POOLNAME | PRIORITY(1~16) | links POOL↔POOLGROUP |
+| OBJ-POOLGRPMAP-U | POOLGRPMAP | UDG/binding | MAPPINGNAME | APN/SMF/LOCATIONGRPTYPE | links (APN+SMF+LOCATION)↔POOLGROUP |
+| OBJ-IPALLOCRULE-U | IPALLOCRULE | UDG/entity | — | IPv4+IPv6 三级规则（位域 SMF） | governs POOLGRPMAP |
+| OBJ-APNIPALLOCRULE | APNIPALLOCRULE | UDG/entity | APN | ALLOCATTR/IPV6ALLOCATTR | belongs_to APN |
+| OBJ-APNADDRESSATTR-U | APNADDRESSATTR | UDG/entity | APN | SUPPORTIPV4/V6, IGNOREV4/V6POOLID, HOSTROUTEIP | belongs_to APN |
+| OBJ-ADDRESSATTR | ADDRESSATTR | UDG/entity | — | V4/V6POOLWILDCARDSW, RELEASETIME | —（全局） |
+| OBJ-CPNODEID | CPNODEID | UDG/entity | CPNAME | CPNODEIDTYPE, 三类型 NODEID | refers_to POOLGRPMAP |
+| OBJ-IPALLOCBYSMFGLBSW | IPALLOCBYSMFGLBSW | UDG/entity | — | SWITCH/IPV6SWITCH | activates OBJ-IPALLOCRULE |
+| OBJ-CONFLICTIP | CONFLICTIP | UDG/entity | POOLNAME, IPADDRESS | —（仅 IPv4） | belongs_to POOL |
+| OBJ-OSPF | OSPF | UDG/entity | PROCID | VRFNAME, SCHEMAROUID, BFD/LSAARR/LSAORIG/SPF 系列 | contains OSPFAREA/OSPFNETWORK/OSPFIMPORTROUTE; refers_to VPNINST |
+| OBJ-OSPFAREA | OSPFAREA | UDG/entity | PROCID, AREAID | AREATYPE, NSSA/Stub 族 | belongs_to OSPF |
+| OBJ-OSPFNETWORK | OSPFNETWORK | UDG/entity | PROCID, AREAID, IPADDRESS, WILDCARDMASK | DESCRIPTION | belongs_to OSPFAREA |
+| OBJ-OSPFIMPORTROUTE | OSPFIMPORTROUTE | UDG/entity | PROCID, PROTOCOL | PROTOCOL=wlr | belongs_to OSPF |
+| OBJ-LACGROUP | LACGROUP | UDG/composite | LACGROUPNAME | — | contains LACID |
+| OBJ-LACID | LACID | UDG/entity | LACGROUPNAME, LACSECNUM | LACSTARTID/ENDID(0x0001~0xFFFD) | belongs_to LACGROUP |
+| OBJ-TACGROUP | TACGROUP | UDG/composite | TACGROUPNAME | TACTYPE(S1TAC/N2TAC) | contains S1TACID/N2TACID |
+| OBJ-S1TACID | S1TACID | UDG/entity | TACGROUPNAME, TACSECNUM | TACSTARTID/ENDID(0x0000~0xFFFF) | belongs_to TACGROUP |
+| OBJ-N2TACID | N2TACID | UDG/entity | TACGROUPNAME, TACSECNUM | TACSTARTID/ENDID(0x000000~0xFFFFFF) | belongs_to TACGROUP |
+| OBJ-IPALLOCBYLOCGLBSW-U | IPALLOCBYLOCGLBSW | UDG/entity | — | SWITCH/IPV6SWITCH | activates OBJ-IPALLOCRULE |
+| OBJ-IPALLOCBYLOCSW | IPALLOCBYLOCSW | UDG/entity | LOCATIONGRPTYPE, LOCATIONGRPNAME | SWITCH 三态(含 INHERIT) | refers_to LACGROUP/TACGROUP; overrides IPALLOCBYLOCGLBSW |
+| OBJ-ADRLOCWHITELST | ADRLOCWHITELST | UDG/entity | MSISDN | — | — |
+| OBJ-LICENSESWITCH | LICENSESWITCH | 共用/entity | LICITEM | SWITCH | refers_to License |
+| OBJ-PDNROUTETST | PDNROUTETST | UDG/entity | IPPOOL, IPVERSION | TESTMETHOD(PING/DNS/TRACERT) | refers_to POOL |
+| OBJ-PDNTSTRESULT | PDNTSTRESULT | UDG/view | — | DISPLAYMODE, 探测结果 18 项 | generated_by PDNROUTETST |
+| OBJ-REDUNDRDTIP | REDUNDRDTIP | UDG/entity | IPVERSION | IPV4ADDRESS/IPV6ADDRESS | refers_to GRETUNNEL |
+| OBJ-REDUNDUSER | REDUNDUSER | UDG/entity | — | SWITCH | activates OBJ-POOL.REDUNDFUNC |
+| OBJ-APNREDUNDUPSW | APNREDUNDUPSW | UDG/entity | APN | IPV4SWITCH/IPV6SWITCH | belongs_to APN（仅备用 UDG） |
 
-| `object_id` | `object_name` | `product_side` | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------------|---------------|----------|----------|---------------|
-| `OBJ-ADDRPOOL` | ADDRPOOL | UNC | entity | ADDRPOOLNAME | POOLTYPE(UDM 静态), IPVERSION | belongs_to ADDRPOOLGRP |
-| `OBJ-ADDRPOOLGRP` | ADDRPOOLGRP | UNC | composite | ADDRPOOLGRPNAME | — | **contains** ADDRPOOL（via POOLBINDGRP） |
-| `OBJ-POOLBINDGRP` | POOLBINDGRP | UNC | binding | ADDRPOOLGRPNAME, ADDRPOOLNAME | PRIORITY | links ADDRPOOL to ADDRPOOLGRP |
-| `OBJ-POOLGRPMAP-C` | POOLGRPMAP | UNC | binding | MAPPINGNAME | APN, ADDRPOOLGRPNAME | links APN+ADDRPOOLGRP |
-| `OBJ-APNADDRESSATTR-C` | APNADDRESSATTR | UNC | entity | APN | SUPPORTIPV4, SUPPORTIPV6 | belongs_to APN（UNC 侧复用 ADD APN） |
-| `OBJ-IPALLOCRULE-C` | IPALLOCRULE | UNC | entity | — | FIRSTRULE | — |
-| `OBJ-UPNODE` | UPNODE | UNC | entity | NFINSTANCENAME | ADDRALLOCMODE(INHERIT), 位置特征, 分流能力 | ★refers_to PNFPROFILE（共用对象） |
-| `OBJ-PNFPROFILE` | PNFPROFILE | UNC | entity | NFINSTANCENAME | NFTYPE(UPF), WEIGHT, PRIORITY | refers_to UPFBINDGRP |
-| `OBJ-UPFBINDGRP` | UPFBINDGRP | UNC | binding | UPGROUPNAME, NFINSTANCENAME | PRIORITY | links PNFPROFILE to ADDRPOOLGRP |
-| `OBJ-STATICADDRPARA` | STATICADDRPARA | UNC | entity | STATICIPSEG, NFINSTANCENAME | — | conflicts_with SMF 主锚点 UPF 选择（FR-SMF主锚点优先） |
-| `OBJ-BLACKLIST` | BLACKLIST | UNC | entity | MSISDN, IPSEG | — | — |
+### 2.2 地址分配域 UNC 侧（WSFD-010502/010504/107021）
 
-### 2.3 隧道类 GRE（3个）
+| `object_id` | object_name | side/kind | 标识参数 | 关键属性（摘要） | 关系 |
+|-------------|------------|-----------|---------|----------------|------|
+| OBJ-ADDRPOOL | ADDRPOOL | UNC/entity | POOLNAME | POOLTYPE(Local/UDM/Radius/DHCP), CHECKIPVALID | belongs_to ADDRPOOLGRP; refers_to VPNINST/APN |
+| OBJ-ADDRPOOLGRP | ADDRPOOLGRP | UNC/composite | POOLGRPNAME | POOLGRPTYPE | contains ADDRPOOL |
+| OBJ-POOLBINDGRP | POOLBINDGRP | UNC/binding | POOLGRPNAME, POOLNAME | PRIORITY | links ADDRPOOL↔ADDRPOOLGRP |
+| OBJ-POOLGRPMAP-UNC | POOLGRPMAP | UNC/binding | MAPPINGNAME | UPFGRPNAME/APN/LOCATION | links (UPFGRP+APN+LOCATION)↔ADDRPOOLGRP |
+| OBJ-ADDRUPGROUP | ADDRUPGROUP | UNC/composite | UPFGRPNAME | UPFGRPTYPE | contains UPNODE |
+| OBJ-UPFBINDGRP | UPFBINDGRP | UNC/binding | UPFGRPNAME, UPFID | PRIORITY（107021 主备语义承载：主0备1） | links UPNODE↔ADDRUPGROUP |
+| OBJ-UPNODE | UPNODE | UNC/entity | NFINSTANCENAME | ADDRALLOCMODE(INHERIT/SMF_ALLOC/UPF_FIRST), LOCATION, LOCK | refers_to PNFPROFILE |
+| OBJ-POOLBINDAPN | POOLBINDAPN | UNC/binding | POOLNAME, APN | PRIORITY | links ADDRPOOL↔APN |
+| OBJ-BLACKLIST | BLACKLIST | UNC/entity | NAME, VPNINSTANCE | V4STARTIP/ENDIP, V6PREFIXSTART/ENDIP | refers_to VPNINST |
+| OBJ-STATICADDRPARA | STATICADDRPARA | UNC/entity | — | SCANSWT, SCANSTART/ENDTIME | — |
+| OBJ-IPALLOCRULE-UNC | IPALLOCRULE | UNC/entity | — | 位域 UPNODE | governs POOLGRPMAP |
+| OBJ-APNADDRESSATTR-UNC | APNADDRESSATTR | UNC/entity | APN | IPV4/V6ALLOCTYPE, ALLOCPRECEDENCE | belongs_to APN |
+| OBJ-IPALLOCBYLOCGLBSW | IPALLOCBYLOCGLBSW | UNC/entity | — | SWITCH/IPV6SWITCH | activates OBJ-IPALLOCRULE |
+| OBJ-CONFLICTIP-UNC | CONFLICTIP | UNC/entity | POOLNAME, IPVERSION | IPV6PREFIX, IPV6PREFIXLEN | belongs_to ADDRPOOL（支持 IPv6） |
 
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-GRETUNNEL` | GRETUNNEL | GRE/静态冗余 | entity | TNLNAME, TNLTYPE(gre) | SRCTYPE, SRCIFNAME, DSTIPADDR, CHECKSUMEN, GREKEYEN, GREKEY, KEEPALVEN | refers_to LoopBack/Tunnel 接口 |
-| `OBJ-LOOPBACK` | LoopBack 接口 | GRE/IPSec | entity | IFNAME | IFIPADDR | — |
-| `OBJ-TUNNELIF` | Tunnel 接口 | GRE/IPSec | entity | IFNAME | TNLTYPE | refers_to GRETUNNEL/IPSECPOLICY |
+### 2.3 鉴权/Radius/二次鉴权（簇D）
 
-### 2.4 隧道类 IPSec（9个）
+| `object_id` | object_name | side/kind | 标识参数 | 关键属性（摘要） | 关系 |
+|-------------|------------|-----------|---------|----------------|------|
+| OBJ-NGUSRSECPARA | NGUSRSECPARA | UNC(AMF)/entity | SUBRANGE, IMSIPRE | INTEGALG, ENCRYALG, AUTHEVENT, AUTHPERIOD | refers_to UE IMSI |
+| OBJ-CPGTPUADDR | CPGTPUADDR | UNC(SMF)/entity | IPVERSION, IPV4ADDR/IPV6ADDR | VPN | refers_to LOGICIP |
+| OBJ-UPLIST4RDS | UPLIST4RDS | UNC/composite | UPLISTNAME | UPINSTANCEID（最多 64） | contains UPINSTANCEID |
+| OBJ-RDSUPFCTRL | RDSUPFCTRL | UNC/entity | UPLISTNAME, UPINSTANCEID | PREFERENCE, LOCKED | refers_to UPLIST4RDS |
+| OBJ-UPFRDSSVR | UPFRDSSVR | UNC/binding | SERVERTYPE, IPVERSION, SERVERIP, UPLISTNAME | — | links UPLIST4RDS↔RDSSVR |
+| OBJ-UPFRDSCLIENTIP | UPFRDSCLIENTIP | UNC/binding | CLIENTYPE, IPVERSION, UPLISTNAME | VPNINSTANCE, NETINSTNAMESRC | links UPLIST4RDS↔Client IP |
+| OBJ-RDSSVRGRP | RDSSVRGRP | UNC/composite | RDSSVRGRPNAME | MODE, SIGOPTACCTMSG, 超时重发系列 | contains RDSSVR |
+| OBJ-RDSSVR | RDSSVR | UNC/entity | RDSSVRGRPNAME, SERVERTYPE, IPVERSION, SERVERIP | PRIFLAG(主/备/抄送), PRIORITY, CIPHERKEY, UPLISTNAME | belongs_to RDSSVRGRP; refers_to VPNINST |
+| OBJ-APNRDSSVRGRP | APNRDSSVRGRP | UNC/binding | APN, RDSSVRGRPNAME | COPYINTERIMUPD | links APN↔RDSSVRGRP |
+| OBJ-APNRDSCLIENTIP | APNRDSCLIENTIP | UNC/binding | APN, AUTHORACCT, INTFNAME | — | links APN↔LOGICINF |
+| OBJ-APNAUTHATTR | APNAUTHATTR | UNC/entity | APN | ACCESSMODE(4), AUTHMODE(3), AAANORSPCTRL, UDMSUBAUTHSW, APNEAP, DISCONNECT | belongs_to APN |
+| OBJ-APNRDSACCTCTRL | APNRDSACCTCTRL | UNC/entity | APN | TIMETHRESHOLD, VOLUMETHRESHOLD, SRVTRIGGER, 多维 TRIGGER | belongs_to APN |
+| OBJ-APNRADIUSATTR | APNRADIUSATTR | UNC/entity | APN | DOMAINNAMEACT, DOMAINNAMEPOS | belongs_to APN |
+| OBJ-RDSACCTREQVSA | RDSACCTREQVSA | UNC/entity | RDSSVRGRPNAME | THREEGPP/THREEGPP2, 20+ 属性携带 | belongs_to RDSSVRGRP |
+| OBJ-RDSACCTREQATTR | RDSACCTREQATTR | UNC/entity | RDSSVRGRPNAME | CALLSTAID, NASIDSW, ACCTEXTSW | belongs_to RDSSVRGRP |
+| OBJ-RDSAUTHREQVSA | RDSAUTHREQVSA | UNC/entity | RDSSVRGRPNAME | THREEGPP, 20+ 鉴权属性 | belongs_to RDSSVRGRP |
+| OBJ-RDSRSPADDRCHK | RDSRSPADDRCHK | UNC/entity | — | AUTH, ACCT | — |
+| OBJ-FHBYPASS | FHBYPASS | UNC/entity | — | ONLCHARGE, PCC, RDSAUTH, RDSACCT, HOLDINGTIME | activates RDSSVRGRP（故障放通，优先级最高） |
+| OBJ-SPECIFICAPNVAL | SPECIFICAPNVAL | UNC/binding | SUBSCRIBERAPN | PCRFAPN/CGAPN/.../AAAACCTAPN/AAAAUTHAPN | refers_to APN |
 
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-ACLGROUPIPSEC` | ACLGROUPIPSEC | IPSec | composite | ACLGROUPNAME | — | **contains** ACLRULEADV4IPSEC |
-| `OBJ-ACLRULEADV4IPSEC` | ACLRULEADV4IPSEC | IPSec | entity | ACLGROUPNAME, RULEID | SRCIP, DSTIP（★仅源/目的 IP） | belongs_to ACLGROUPIPSEC |
-| `OBJ-IPSECPROPOSALIPSEC` | IPSECPROPOSALIPSEC | IPSec | entity | PROPOSALNAME | ENCAPSULATIONMODE(TUNNEL/TRANSPORT), SECURITYPROTOCOL(AH/ESP) | — |
-| `OBJ-IKEPROPOSAL` | IKEPROPOSAL | IPSec | entity | PROPOSALNAME | AUTHMETHOD(PSK), DHGROUP（★不能 None） | — |
-| `OBJ-IKEPEER` | IKEPEER | IPSec | entity | PEERNAME | PRESHAREDKEY, EXCHANGEMODE, REMOTEADDR, NATTRAVERSAL, VERSION1 | — |
-| `OBJ-IPSECPOLICY` | IPSECPOLICY | IPSec | composite | POLICYNAME, SEQ | MODE(ISAKMP) | **contains** ACLGROUPIPSEC, IPSECPROPOSALIPSEC, IKEPEER |
-| `OBJ-PROPATTACHIPSECPROPOSAL` | PROPATTACHIPSECPROPOSAL | IPSec | binding | POLICYNAME, SEQ, PROPOSALNAME | — | links IPSECPOLICY to IPSECPROPOSALIPSEC |
-| `OBJ-ATTACHIKEPEER` | ATTACHIKEPEER | IPSec | binding | POLICYNAME, SEQ, PEERNAME | PRIORITY | links IPSECPOLICY to IKEPEER |
-| `OBJ-IPSECINTFCFGIPSEC` | IPSECINTFCFGIPSEC | IPSec | binding | IFNAME, TNLTYPE(IPSEC) | POLICYNAME | links Tunnel 接口 to IPSECPOLICY |
+### 2.4 隧道类 MPLS（簇E-core，U+C 共用）
 
-### 2.5 隧道类 MPLS（3个，★推导）
+| `object_id` | object_name | side/kind | 标识参数 | 关键属性（摘要） | 关系 |
+|-------------|------------|-----------|---------|----------------|------|
+| OBJ-MPLSSITE | MPLSSITE | 共用/entity | MPLSLSRID | MPLSENABLE, LDPENABLE, NULLLABLETYPE | contains MPLSIF |
+| OBJ-MPLSIF | MPLSIF | 共用/entity | IFNAME | MTUVALUE | belongs_to MPLSSITE; refers_to INTERFACE |
+| OBJ-L3VPNINST | L3VPNINST | 共用/entity | VRFNAME | VRFDESCRIPTION | contains VPNINSTAF; refers_to INTERFACE |
+| OBJ-VPNINSTAF | VPNINSTAF | 共用/entity | VRFNAME, AFTYPE | VRFRD, VRFLABELMODE | belongs_to L3VPNINST; contains VPNTARGET |
+| OBJ-VPNTARGET | VPNTARGET | 共用/entity | VRFNAME, AFTYPE, VRFRTTYPE, VRFRTVALUE | — | belongs_to VPNINSTAF |
+| OBJ-BGP | BGP | 共用/entity | ASNUM | BGPENABLE, GRACEFULRESTART | — |
+| OBJ-BGPVRF | BGPVRF | 共用/entity | VRFNAME | DEFAULTAFTYPE, ROUTERID | contains BGPVRFAF; refers_to L3VPNINST |
+| OBJ-BGPVRFAF | BGPVRFAF | 共用/entity | VRFNAME, AFTYPE | MAXIMUMLOADBALANCE, APPLYLABELMODE | belongs_to BGPVRF; ★_public_+ipv4vpn=MP-EBGP 开关 |
+| OBJ-BGPPEER | BGPPEER | 共用/entity | VRFNAME, PEERADDR | ADDRESSTYPE, REMOTEAS, EBGPMAXHOP | refers_to BGPVRF/INTERFACE; contains BGPPEERAF |
+| OBJ-BGPPEERAF | BGPPEERAF | 共用/entity | VRFNAME, AFTYPE, REMOTEADDRESS | REFLECTCLIENT, ALLOWASLOOPENABLE | belongs_to BGPPEER; refers_to BGPVRFAF |
+| OBJ-IMPORTROUTE | IMPORTROUTE | 共用/entity | VRFNAME, AFTYPE, IMPORTPROTOCOL | IMPORTPROCESSID, MED | belongs_to BGPVRFAF（APN 场景 wlr） |
 
-> **文档缺口标注**：GWFD-020411 共 9 篇无 MML 脚本，以下对象基于 MPLS L3VPN 标准实践**推导**。
+### 2.5 隧道类 IPSec（簇E-core，UDG）
 
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-VPNINSTANCE` | VPNINSTANCE | MPLS | entity | VPNINSTANCE | RD | ★推导 |
-| `OBJ-BGPVPNV4ROUTETARGET` | BGPVPNV4ROUTETARGET | MPLS | entity | VPNINSTANCE, ROUTETARGET | — | belongs_to VPNINSTANCE（★推导） |
-| `OBJ-BGPVPNV4PEER` | BGPVPNV4PEER | MPLS | entity | VPNINSTANCE, PEERIP | — | belongs_to VPNINSTANCE（★推导） |
-
-### 2.6 隧道类 L2TP（8个，U+C 分离）
-
-| `object_id` | `object_name` | `product_side` | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------------|---------------|----------|----------|---------------|
-| `OBJ-APNL2TPATTR` | APNL2TPATTR | **UDG** | entity | APN | L2TPSWITCH, SUPPORTIPV6, ...（★10+ 参数） | belongs_to APN（U 面 LAC 执行） |
-| `OBJ-APNL2TPCTRL` | APNL2TPCTRL | **UNC** | entity | APN | L2TPSWITCH（★仅 2 参数） | belongs_to APN（C 面决策） |
-| `OBJ-L2TPGROUP` | L2TPGROUP | UDG | composite | L2TPGROUPID | DOMAINNAME, LNSIP | **contains** L2TPLNSINFO, L2TPCLIENTIP |
-| `OBJ-L2TPLNSINFO` | L2TPLNSINFO | UDG | entity | L2TPGROUPID | LNSINFO | belongs_to L2TPGROUP |
-| `OBJ-L2TPCLIENTIP` | L2TPCLIENTIP | UDG | binding | L2TPGROUPID, INTFNAME | — | links L2TPGROUP to LOGICINF |
-| `OBJ-L2TPRDSCLIENT` | L2TPRDSCLIENT | UDG | binding | APN, INTFNAME | RDSLNSMODE | refers_to LOGICINF（AAA 下发方式，互斥 L2TPGROUP） |
-| `OBJ-GLOBALL2TP` | GLOBALL2TP | UDG | entity | — | L2TP 缺省属性 | — |
-| `OBJ-PPPCFG` | PPPCFG | UDG | entity | — | PPP 协商参数 | — |
-| `OBJ-L2TPN4KEY` | L2TPN4KEY | **UDG** | entity | — | KEY（N4 加密） | refers_to OBJ-L2TPKEY（★U+C 密钥须相同） |
-| `OBJ-L2TPKEY` | L2TPKEY | **UNC** | entity | — | KEY（N4 加密） | refers_to OBJ-L2TPN4KEY（★U+C 密钥须相同） |
-
-### 2.7 鉴权 AKA 系列（4个）
-
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-GBAUTHCIPH` | GBAUTHCIPH | AKA 2G | entity | IMSI | KI, OPC | — |
-| `OBJ-IUAUTHCIPH` | IUAUTHCIPH | AKA 3G | entity | IMSI | KI, OPC | — |
-| `OBJ-S1USRSECPARA` | S1USRSECPARA | AKA 4G | entity | IMSI | KI, OPC | — |
-| `OBJ-NGUSRSECPARA` | NGUSRSECPARA | AKA 5G | entity | SUPI | KI, OPC | — |
-
-### 2.8 鉴权 Radius 系列（9个）
-
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-APNAUTHATTR` | APNAUTHATTR | Radius 接入 | entity | APN | ACCESSMODE(4取值), COMMONUSERNAME/PASS | belongs_to APN |
-| `OBJ-RDSSVRGRP` | RDSSVRGRP | Radius 三件套 | composite | RDSSVRGRPNAME | — | **contains** RDSSVR（★三件套共享：011306/011305/011307） |
-| `OBJ-RDSSVR` | RDSSVR | Radius 三件套 | entity | RDSSVRGRPNAME, SERVERTYPE | PRIFLAG(PRIMARY/BACKUP/CARBON_COPY), PRIORITY | belongs_to RDSSVRGRP |
-| `OBJ-APNRDSSVRGRP` | APNRDSSVRGRP | Radius 三件套 | binding | APN, RDSSVRGRPNAME | PRIFLAG | links APN to RDSSVRGRP |
-| `OBJ-APNRDSCLIENTIP` | APNRDSCLIENTIP | Radius 功能 | binding | APN, INTFNAME, CLIENTTYPE | — | links APN to LOGICINF |
-| `OBJ-APNRDSACCTCTRL` | APNRDSACCTCTRL | Radius 功能 | entity | APN | SRVTRIGGER, SUPPORTACCTRSP | — |
-| `OBJ-APNRADIUSATTR` | APNRADIUSATTR | Radius 功能 | entity | APN | 域名增加/剥离 | — |
-| `OBJ-UPLIST4RDS` | UPLIST4RDS | 三件套+二次鉴权 | composite | UPLISTNAME | UPINSTANCEID | **contains** UPFRDSSVR, UPFRDSCLIENTIP |
-| `OBJ-FHBYPASS` | FHBYPASS | Radius 功能 | entity | APN | SWITCH（★故障一键放通，优先级最高） | — |
-
-### 2.9 二次鉴权 UPF Radius 系列（5个）
-
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-CPGTPUADDR` | CPGTPUADDR | 二次鉴权 | entity | IPVERSION | IPV4ADDR | — |
-| `OBJ-RDSUPFCTRL` | RDSUPFCTRL | 二次鉴权 | entity | UPLISTNAME, UPINSTANCEID | PREFERENCE, LOCKED | refers_to UPLIST4RDS |
-| `OBJ-UPFRDSSVR` | UPFRDSSVR | 二次鉴权 | entity | SERVERTYPE, IPVERSION | SERVERIPV4, UPLISTNAME | belongs_to UPLIST4RDS（★必须先于 UPFRDSCLIENTIP） |
-| `OBJ-UPFRDSCLIENTIP` | UPFRDSCLIENTIP | 二次鉴权 | binding | CLIENTYPE, UPLISTNAME | VPNINSTANCE, CLIENTIPV4 | belongs_to UPLIST4RDS（★必须最后执行） |
-| `OBJ-NETWORKINSTVPNMAP` | NETWORKINSTVPNMAP | 二次鉴权前置 | binding | VPNINSTANCE | — | refers_to UPF VPN（★必须先于 UPFRDSSVR/CLIENTIP） |
-
-### 2.10 接入控制 ARD/NGMM（5个）
-
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-GBARD` | GBARD | ARD 2G | entity | IMSI, APNNI | CARDTYPE, ARD, CTRLTYPE, CAUSE | — |
-| `OBJ-IUARD` | IUARD | ARD 3G | entity | IMSI, APNNI | CARDTYPE, ARD, CTRLTYPE | — |
-| `OBJ-S1ARD` | S1ARD | ARD 4G | entity | IMSI, APNNI | CARDTYPE, ARD, CTRLTYPE | — |
-| `OBJ-NGMMSUBDATA` | NGMMSUBDATA | NGMM 子特性 A | entity | USER_RANGE, IMSIPRE | RATRESTRICT, CORERESTRICT | — |
-| `OBJ-NGMMPROCTRL` | NGMMPROCTRL | NGMM | entity | — | — | — |
-| `OBJ-APNQOSATTR` | APNQOSATTR | 接入控制 U | entity | APN | CARSHAPESWUL/DL, CARSHAPEUL/DL(CAR/SHAPE) | belongs_to APN（★U 面带宽流控，与 C 面 ARD 分离） |
-
-### 2.11 别名 APN 双视角（3个）
-
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-APNALIAS` | APNALIAS | 别名 GGSN/PGW-C/SMF | entity | SUBRANGE, ALIASAPN | CONVERTAPN, SST, SD | refers_to APN（转换后 APN 必须已 ADD APN） |
-| `OBJ-ALIASAPN` | ALIASAPN | 别名 SGSN/MME | entity | IMSI_PREFIX, OLDAPN | NEWAPN | — |
-| `OBJ-APNREPORTATTR` | APNREPORTATTR | 别名 APN | entity | APN | — | belongs_to APN |
-
-### 2.12 UPF 选择 11 件套（11个）
-
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-PNFDNN` | PNFDNN | UPF 选择 | entity | NFINSTANCENAME, DNN | — | belongs_to PNFPROFILE |
-| `OBJ-PNFNS` | PNFNS | UPF 选择 | entity | NFINSTANCENAME, SST, SD | PNFNSINDEX（★4G=0） | belongs_to PNFPROFILE |
-| `OBJ-PNFDNAI` | PNFDNAI | UPF 选择 | entity | NFINSTANCENAME, DNAI | — | belongs_to PNFPROFILE |
-| `OBJ-PNFUPFINFO` | PNFUPFINFO | UPF 选择 | entity | NFINSTANCENAME | EPSFUPPORTED | belongs_to PNFPROFILE |
-| `OBJ-UPAREA` | UPAREA/UPAREABINDN2TAI/LOCBINDAREA | UPF 选择 | entity | NFINSTANCENAME, AREAID | — | belongs_to PNFPROFILE |
-| `OBJ-PNFSMFSERAREA` | PNFSMFSERAREA/PNFTAIRANGE/PNFTAI | UPF 选择 | entity | NFINSTANCENAME, TAI | — | belongs_to PNFPROFILE |
-| `OBJ-UPBINDS11` | UPBINDS11 | UPF 选择 4G | binding | NFINSTANCENAME, S11IF | — | links PNFPROFILE to S11 |
-| `OBJ-UPBINDGNGP` | UPBINDGNGP | UPF 选择 Gn/Gp | binding | NFINSTANCENAME, GNGPIF | — | links PNFPROFILE to GnGp |
-| `OBJ-UPSELECTPRI` | UPSELECTPRI | UPF 选择第二轮 | entity | — | FIRSTPRIORITY, SECONDPRIORITY | — |
-| `OBJ-UPSELECTFLAG` | UPSELECTFLAG | UPF 选择第二轮 | entity | — | PRIORITYFLAG, AMBRUPFFLAG, N3UPFAPNFLAG, ULISGWFLAG | — |
-| `OBJ-APNUPSELPLY` | APNUPSELPLY | UPF 选择 | entity | APN | COMBINEPRISTG | belongs_to APN |
-| `OBJ-UPLOADBALANCE` | UPLOADBALANCE | UPF 选择第三轮 | entity | — | SWITCH | — |
-
-### 2.13 底座/会话管理/用户数据/其他（7个）
-
-| `object_id` | `object_name` | 所属功能 | `object_kind` | 标识参数 | 关键属性 | 包含/引用关系 |
-|-------------|---------------|----------|---------------|----------|----------|---------------|
-| `OBJ-APNACTNUM` | APNACTNUM | 多 PDN | entity | APN | PDNNUM, IPV4ADDRNUM, IPV6ADDRNUM, PDNCONNREJCAUSE | belongs_to APN |
-| `OBJ-PDPAPN` | PDPAPN | 会话管理 2/3G | entity | APN | — | — |
-| `OBJ-SMSUBDATA` | SMSUBDATA | IPv6 承载 | entity | IMSI | — | — |
-| `OBJ-SDBTMR` | SDBTMR | 用户数据 | entity | — | 定时器 | — |
-| `OBJ-AREADNS` | AREADNS | 对等网元 | entity | AREAID | LAC, RAC, TAC, ZONESW | — |
-| `OBJ-REDUNDRDTIP` | REDUNDRDTIP | 静态冗余 | entity | REDUNDRDTIP | — | refers_to GRETUNNEL |
-| `OBJ-REDUNDUSER` | REDUNDUSER | 静态冗余 | entity | — | SWITCH（★U+C 共用对象） | activates OBJ-POOL REDUNDFUNC |
+| `object_id` | object_name | side/kind | 标识参数 | 关键属性（摘要） | 关系 |
+|-------------|------------|-----------|---------|----------------|------|
+| OBJ-ACLGROUPIPSEC | ACLGROUPIPSEC | UDG/composite | ACLNAME | ACLTYPE, ACLMATCHORDER | contains ACLRULEADV4IPSEC |
+| OBJ-ACLRULEADV4IPSEC | ACLRULEADV4IPSEC | UDG/entity | ACLNAME, ACLRULENAME | ACLACTION, ACLSOURCEIP/SRCWILD(反掩码), ACLDESTIP/DESTWILD | belongs_to ACLGROUPIPSEC; refers_to VPNINST |
+| OBJ-ACLGROUP6IPSEC | ACLGROUP6IPSEC | UDG/composite | ACLNAME | 同上 | contains ACLRULEADV6IPSEC |
+| OBJ-ACLRULEADV6IPSEC | ACLRULEADV6IPSEC | UDG/entity | ACLNAME, ACLRULENAME | ACLSRCWILD/DESTWILD(★★正掩码前缀长度), ACLPROTOCOLTYPE | belongs_to ACLGROUP6IPSEC |
+| OBJ-IPSECPROPOSALIPSEC | IPSECPROPOSALIPSEC | UDG/entity | PROPOSALNAME | IPSECPROTOCOL, ESPAUTHALGO(含 Sm3), ESPENCRYPTALGO(含 Sm4) | — |
+| OBJ-IKEPROPOSAL | IKEPROPOSAL | UDG/entity | PROPOSALNUMBER | AUTHMETHOD(含 Digital_envelope), DHGROUP, ASYMENCRALG(SM2) | — |
+| OBJ-IKEPEER | IKEPEER | UDG/entity | PEERNAME | PRESHAREDKEY/CERTLOCALFILE, EXCHANGEMODE, VERSION1/2, LOWREMOTEADDR(IPv4) | refers_to IKEPROPOSAL/CERTSCENE |
+| OBJ-IKEPEER6 | IKEPEER6 | UDG/entity | PEERNAME | 同 IKEPEER 但 IPv6 化，仅 VERSION2 | refers_to IKEPROPOSAL/CERTSCENE |
+| OBJ-IPSECPOLICY | IPSECPOLICY | UDG/composite | POLICYNAME, SEQUENCENUMBER | POLICYMODE, ACLNUMBER, WORKMODE, AUTOSWITCHBACK | refers_to ACLGROUPIPSEC |
+| OBJ-IPSECPOLICY6 | IPSECPOLICY6 | UDG/composite | POLICYNAME, SEQUENCENUMBER | ACL6NUMBER, ACLTYPE(必选) | refers_to ACLGROUP6IPSEC |
+| OBJ-IPSECPOLICYTM | IPSECPOLICYTM | UDG/composite | POLICYNAME, SEQUENCENUMBER | PEERNAME, IPSECPROPNAME（直接绑定） | refers_to IKEPEER/IPSECPROPOSALIPSEC |
+| OBJ-PROPATTACHIPSECPROPOSAL | PROPATTACHIPSECPROPOSAL | UDG/binding | POLICYNAME, SEQ, POLICYMODE, TEMPLATEMODE | IPSECPROPNAME | links IPSECPOLICY↔IPSECPROPOSALIPSEC |
+| OBJ-ATTACHIKEPEER | ATTACHIKEPEER | UDG/binding | POLICYNAME, SEQ, POLICYMODE, TEMPLATEMODE | IKEPEERNAME, PEERPRIORITY | links IPSECPOLICY↔IKEPEER |
+| OBJ-IPSECINTFCFGIPSEC | IPSECINTFCFGIPSEC | UDG/binding | INTERFACENAME, TNLTYPE | POLICYNAME, SRCIFNAME(仅环回口) | links Tunnel↔IPSECPOLICY; refers_to LoopBack |
+| OBJ-IKEGLOBALCONFIG | IKEGLOBALCONFIG | UDG/entity | — | DPDTYPE/INTERVAL, NATKLI, ANTIREPLFLG | activates IKE 行为 |
+| OBJ-FWSOFTPARA | FWSOFTPARA | UDG/entity | PARAMETERSTYPE, DWORDINDEX | DWORDVALUE（国密 1401=1） | activates IKEPROPOSAL 国密算法 |
+| OBJ-CERTSCENE | CERTSCENE | UDG/composite | SCENENAME | SCENETYPE(CA/LOCAL), CERTTYPE(Cert_sig/Cert_enc) | contains 证书; refers_to IKEPEER.CERTSCENARIO |
+| OBJ-PKICRLCHECK | PKICRLCHECK | UDG/entity | — | ISCRLENABLE | activates CERTSCENE |
+| OBJ-GRETUNNEL | GRETUNNEL | UDG/entity | TNLNAME | TNLTYPE(gre/gre6), SRCTYPE, SRCIFNAME, DSTIPADDR, REDUNDANCYEN | refers_to LoopBack |
+| OBJ-L3VPNINSTIPSEC ~ OBJ-IFIPV4ADDRESSIPSEC | IPsec 微服务双配简化版（6 个） | UDG | 同 VNRS 侧对应对象 | 参数简化版（见 §1.5） | 双配 refers_to VNRS 侧对应配置 |
 
 ---
 
-## 3. ConfigObject 间关系边（§11.7 contains / refers_to / depends_on / conflicts_with / composed_by / activates）
+## 3. ConfigObject 关系边（contains / refers_to / depends_on / conflicts_with / activates / composed_by / overrides / governs / links，去重合并）
 
-> **Schema 参考**：§11.7 `ConfigObject contains / refers_to / depends_on / conflicts_with / composed_by / activates ConfigObject` 直接作为边，不建实体。
+> Schema §11.7：ConfigObject 关系直接作为边，不建实体。本节去重合并各 draft §3 的边。
 
-### 3.1 contains 边（组合/包含关系，22条）
+### 3.1 contains 边（组合/包含，~25 条）
 
 | 起点 | 关系 | 终点 | 说明 |
 |------|------|------|------|
-| POOLGROUP | `contains` | POOL | UDG 地址池组包含地址池（via POOLBINDGROUP） |
-| ADDRPOOLGRP | `contains` | ADDRPOOL | UNC 地址池组包含地址池（via POOLBINDGRP） |
-| POOL / ADDRPOOL | `contains` | SECTION | 地址池包含地址段（V4STARTIP/V6PREFIXSTART，V6PREFIXLENGTH<64=PD） |
-| POOLGRPMAP | `contains` | POOLGROUP / ADDRPOOLGRP | 池组映射关联池组（APN/SMF/LOCATION 任意组合） |
-| LACGROUP | `contains` | LACID | LAC 位置区组包含 LAC ID（2/3G） |
-| TACGROUP | `contains` | TACID | TAC 位置区组包含 TAC ID（4/5G） |
-| ACLGROUPIPSEC | `contains` | ACLRULEADV4IPSEC | IPSec ACL 组包含规则（★仅源/目的 IP） |
-| IPSECPOLICY | `contains` | ACLGROUPIPSEC | IPSec 策略聚合 ACL |
-| IPSECPOLICY | `contains` | IPSECPROPOSALIPSEC | IPSec 策略绑定 Proposal（via PROPATTACHIPSECPROPOSAL） |
-| IPSECPOLICY | `contains` | IKEPEER | IPSec 策略绑定 IKE Peer（via ATTACHIKEPEER） |
-| L2TPGROUP | `contains` | L2TPLNSINFO | L2TP 组包含 LNS 信息 |
-| L2TPGROUP | `contains` | L2TPCLIENTIP | L2TP 组包含源端 Giif 绑定（本地配置方式） |
-| RDSSVRGRP | `contains` | RDSSVR | Radius 服务器组包含服务器（★三件套共享对象） |
-| UPLIST4RDS | `contains` | UPFRDSSVR | UP List 包含 UPF Radius 服务器（二次鉴权） |
-| UPLIST4RDS | `contains` | UPFRDSCLIENTIP | UP List 包含 UPF Radius 客户端 IP |
-| VPNINSTANCE | `contains` | BGPVPNV4ROUTETARGET | ★推导：MPLS VPN 实例包含 Route Target |
-| VPNINSTANCE | `contains` | BGPVPNV4PEER | ★推导：MPLS VPN 实例包含 MP-BGP 对等体 |
-| PNFPROFILE | `contains` | PNFDNN/PNFNS/PNFDNAI/PNFUPFINFO | UPF NF 实例包含支持的 DNN/切片/DNAI/EPS 信息（第一轮筛选） |
-| PNFPROFILE | `contains` | UPAREA/PNFSMFSERAREA/PNFTAI | UPF NF 实例包含位置区信息 |
-| APN | `contains` | APNADDRESSATTR / APNAUTHATTR / APNL2TPATTR / APNL2TPCTRL / APNQOSATTR / APNACTNUM | APN 是跨域共用挂载点（地址/鉴权/L2TP/接入控制/多 PDN 均挂 APN） |
+| POOLGROUP | contains | POOL | UDG（via POOLBINDGROUP） |
+| ADDRPOOLGRP | contains | ADDRPOOL | UNC（via POOLBINDGRP） |
+| POOL/ADDRPOOL | contains | SECTION | 地址池包含地址段 |
+| POOLGRPMAP | contains | POOLGROUP/ADDRPOOLGRP | 池组映射关联池组 |
+| LACGROUP | contains | LACID | 2/3G 位置区组 |
+| TACGROUP | contains | S1TACID/N2TACID | 4/5G 跟踪区组（按 TACTYPE） |
+| OSPF | contains | OSPFAREA/OSPFNETWORK/OSPFIMPORTROUTE | OSPF 进程族 |
+| RDSSVRGRP | contains | RDSSVR | ★Radius 三件套共享 |
+| UPLIST4RDS | contains | UPINSTANCEID | UP 列表（最多 64 UP） |
+| ADDRUPGROUP | contains | UPNODE | UNC UPF 组（via UPFBINDGRP） |
+| APN | contains | APNADDRESSATTR/APNAUTHATTR/APNIPALLOCRULE/APNREDUNDUPSW 等 | APN 跨域共用挂载点 |
+| ACLGROUPIPSEC | contains | ACLRULEADV4IPSEC | IPv4 ACL |
+| ACLGROUP6IPSEC | contains | ACLRULEADV6IPSEC | IPv6 ACL |
+| CERTSCENE | contains | 证书文件 | CA/LOCAL(Cert_sig/Cert_enc) |
+| MPLSSITE | contains | MPLSIF | MPLS 全局→接口 |
+| L3VPNINST | contains | VPNINSTAF | VPN 实例→地址族 |
+| VPNINSTAF | contains | VPNTARGET | 地址族→RT |
+| BGPVRF | contains | BGPVRFAF | BGP 实例→地址族 |
+| BGPPEER | contains | BGPPEERAF | 对等体→地址族 |
 
-### 3.2 refers_to 边（引用关系，16条）
+### 3.2 refers_to / links / depends_on / activates / overrides / governs 边（~70 条，合并摘要）
 
-| 起点 | 关系 | 终点 | 说明 |
-|------|------|------|------|
-| POOL | `refers_to` | VPNINST | UDG 地址池引用 VPN 实例（HASVPN=ENABLE） |
-| APN | `refers_to` | VPNINST / L3VPNINST | APN 引用 VPN（IPv4 + IPv6 双实例） |
-| GRETUNNEL | `refers_to` | LoopBack 接口 | GRE 隧道源接口（推荐 LoopBack） |
-| IPSECINTFCFGIPSEC | `refers_to` | IPSECPOLICY | Tunnel 接口引用 IPSec 策略 |
-| APNRDSSVRGRP | `refers_to` | RDSSVRGRP | APN 绑定引用 Radius 服务器组 |
-| APNRDSCLIENTIP | `refers_to` | LOGICINF | APN Radius Client IP 引用 Giif |
-| RDSUPFCTRL | `refers_to` | UPLIST4RDS | Radius UPF 控制引用 UP List |
-| UPFRDSSVR | `refers_to` | UPLIST4RDS | UPF Radius 服务器引用 UP List |
-| NETWORKINSTVPNMAP | `refers_to` | UPFRDSSVR / UPFRDSCLIENTIP | UPF VPN 配置引用 UPF Radius（★前置依赖） |
-| UPNODE | `refers_to` | PNFPROFILE | UPF 节点引用 NF 实例属性（★共用对象） |
-| UPFBINDGRP | `refers_to` | PNFPROFILE | UPF 绑定组引用 NF 实例 |
-| APNALIAS | `refers_to` | APN | 别名 APN 引用真实 APN（转换后 APN 必须已 ADD APN） |
-| REDUNDRDTIP | `refers_to` | GRETUNNEL | 虚拟 IP 引用 GRE Tunnel（重定向业务流） |
-| ADRLOCWHITELST | `refers_to` | LACGROUP / TACGROUP | 白名单引用位置区组 |
-| CPNODEID | `refers_to` | POOLGRPMAP | SMF NodeID 引用池组映射（基于 SMF 分配子方式） |
-| L2TPCLIENTIP / L2TPRDSCLIENT | `refers_to` | LOGICINF | L2TP 源端绑定 Giif |
-
-### 3.3 depends_on 边（依赖关系，9条）
-
-| 起点 | 关系 | 终点 | 说明 |
-|------|------|------|------|
-| UPFRDSCLIENTIP | `depends_on` | UPFRDSSVR | ★二次鉴权强顺序：UPF Radius 服务器必须先于客户端 IP |
-| UPFRDSSVR / UPFRDSCLIENTIP | `depends_on` | NETWORKINSTVPNMAP | UPF VPN 配置必须先于 Radius 服务器/客户端 |
-| ADDRPOOLGRP | `depends_on` | ADDRPOOL | UNC 地址池组依赖地址池存在 |
-| POOLGROUP | `depends_on` | POOL | UDG 地址池组依赖地址池存在 |
-| IPSECPOLICY | `depends_on` | IPSECPROPOSALIPSEC / IKEPEER / ACLGROUPIPSEC | IPSec 策略依赖提议+对等体+ACL |
-| IPSECINTFCFGIPSEC | `depends_on` | IPSECPOLICY | 应用策略到 Tunnel 依赖策略已存在 |
-| OBJ-APNL2TPATTR | `depends_on` | OBJ-L2TPN4KEY | L2TP 加密两端密钥须相同（U+C 跨产品依赖） |
-| OBJ-APNL2TPCTRL | `depends_on` | OBJ-L2TPKEY | L2TP 加密两端密钥须相同 |
-| OBJ-PNFPROFILE 子对象 | `depends_on` | OBJ-PNFPROFILE | PNFDNN/PNFNS/PNFDNAI/PNFUPFINFO 依赖 PNFPROFILE 主对象 |
-
-### 3.4 conflicts_with 边（互斥关系，3条）
-
-| 起点 | 关系 | 终点 | 说明 |
-|------|------|------|------|
-| OBJ-L2TPGROUP | `conflicts_with` | OBJ-L2TPRDSCLIENT | L2TP 本地配置方式与 AAA 下发方式互斥 |
-| OBJ-STATICADDRPARA | `conflicts_with` | SMF 主锚点 UPF 选择 | 静态 IP 段绑定 UPF 与 SMF 主锚点 UPF 选择冲突时，**SMF 选择优先**（FR-SMF主锚点优先） |
-| OBJ-GRETUNNEL 源地址 | `conflicts_with` | OBJ-IPSECINTFCFGIPSEC 源地址 | GRE 隧道源地址不能与 IPSec 隧道源地址相同（FR-GRE-IPSEC-SRC-EXCL） |
-
-### 3.5 activates 边（激活/使能关系，4条）
-
-| 起点 | 关系 | 终点 | 说明 |
-|------|------|------|------|
-| OBJ-IPALLOCBYSMFGLBSW | `activates` | OBJ-IPALLOCRULE | 基于 SMF 分配全局开关激活三级规则（SMF 分配子方式） |
-| OBJ-IPALLOCBYLOCGLBSW | `activates` | OBJ-IPALLOCRULE | 基于位置分配全局开关激活三级规则（位置子方式） |
-| OBJ-REDUNDUSER | `activates` | OBJ-POOL (REDUNDFUNC) | 全局冗余开关与 POOL REDUNDFUNC 双使能（静态路由冗余） |
-| OBJ-FHBYPASS | `activates` | OBJ-RDSSVRGRP（故障放通） | 故障场景一键放通优先级最高（绕过 Radius） |
-
-### 3.6 composed_by 边（由...组合，1条）
-
-| 起点 | 关系 | 终点 | 说明 |
-|------|------|------|------|
-| OBJ-IPSECPOLICY | `composed_by` | OBJ-IPSECPROPOSALIPSEC + OBJ-IKEPEER + OBJ-ACLGROUPIPSEC | IPSec 策略由提议+对等体+ACL 组合而成 |
+> 限于篇幅合并列出。关键边：
+> - **refers_to**：POOL→VPNINST, APN→VPNINST, UPNODE→PNFPROFILE, RDSSVR→VPNINST/UPLIST4RDS, IKEPEER→IKEPROPOSAL/CERTSCENE, MPLSIF→INTERFACE, BGPVRF→L3VPNINST 等（~25 条）
+> - **depends_on**（配置顺序强约束）：SECTION→POOL, POOLBINDGROUP→POOLGROUP+POOL, RDSSVR→RDSSVRGRP, UPFRDSCLIENTIP→UPFRDSSVR（★必须最后执行）, VPNINSTAF→L3VPNINST, VPNTARGET→VPNINSTAF(含 RD), BGPPEERAF→BGPPEER+BGPVRFAF, IPSECPOLICY→ACL+IKEPEER+IPSECPROPOSALIPSEC 等（~25 条）
+> - **activates**：IPALLOCBYSMFGLBSW/IPALLOCBYLOCGLBSW→IPALLOCRULE, REDUNDUSER→POOL.REDUNDFUNC, FHBYPASS→RDSSVRGRP（故障放通优先级最高）, IKEGLOBALCONFIG→IKE 行为, FWSOFTPARA(1401=1)→IKEPROPOSAL 国密算法, PKICRLCHECK→CERTSCENE（~8 条）
+> - **overrides**：IPALLOCBYLOCSW→IPALLOCBYLOCGLBSW（三态 INHERIT 继承全局）（1 条）
+> - **governs**：BGPVRFAF(_public_+ipv4vpn)→BGPPEERAF（MP-EBGP 开关）（1 条）
+> - **conflicts_with**：STATICADDRPARA→SMF 主锚点 UPF 选择（静态 IP 段绑 UPF 与 SMF 主锚点冲突时 SMF 优先）（1 条）
+> - **mutex_with（跨特性）**：GWFD-010108(PDNROUTETST)↔GWFD-010107(REDUNDUSER)（特性概述原文：静态地址路由冗余功能正常时，静态地址用户不能做用户面地址自动探测）（1 条）
+> - **links**：UPFRDSSVR links (UPLIST4RDS→DN-AAA), APNRDSSVRGRP links (APN→RDSSVRGRP), APNRDSCLIENTIP links (APN→LOGICINF) 等（~6 条）
 
 ---
 
-## 4. CommandRule 实例化（18条）
+## 4. CommandRule 实例化（特性级，去重，52 条）
 
-> **★Schema 合规要点**：§11.6 `CommandRule governs MMLCommand`（反向）。`scope_type` = `command/parameter/object/relation`。
+> §11.6 `CommandRule governs MMLCommand`（反向）。本节合并各 draft §4 的特性级 CR。每条 CR 字段：rule_id / rule_name / rule_type / scope_type / scope_ref / rule_logic 摘要 / severity。
 
-| `rule_id` | `rule_name` | `rule_type` | `rule_expression_mode` | `rule_source_kind` | `scope_type` | `scope_ref` | `rule_logic` | `violation_effect` | `severity` | `source_evidence_ids` |
-|-----------|-------------|-------------|----------------------|-------------------|-------------|------------|--------------|-------------------|------------|----------------------|
-| `CR-APN-01` | POOL(UDG) vs ADDRPOOL(UNC) 前缀不对称 | `object_reference_rule` | explicit | config | object | OBJ-POOL-U / OBJ-ADDRPOOL | UDG 用 ADD POOL（POOLTYPE=LOCAL），UNC 用 ADD ADDRPOOL（POOLTYPE=UDM 静态）；两侧命令前缀不对称，ConfigObject 必须分离建模，避免规则匹配混淆 | 命令误用导致地址池无法识别或分配失败 | critical | EV-FK-06, EV-FK-12 |
-| `CR-APN-02` | APNL2TPATTR(U,10+参数) vs APNL2TPCTRL(C,2参数) 不对称 | `parameter_dependency` | explicit | config | parameter | CMD-UDG-065 / CMD-UNC-064 | UDG SET APNL2TPATTR 有 10+ 参数（L2TPSWITCH/SUPPORTIPV6/...）；UNC SET APNL2TPCTRL 仅 2 参数（APN/L2TPSWITCH）；C 决策 U 执行模式典型不对称 | 参数集不匹配导致 L2TP 隧道建链失败 | critical | EV-FK-21, EV-FK-14 |
-| `CR-APN-03` | L2TPN4KEY(U) 与 L2TPKEY(C) 必须相同 | `semantic_rule` | explicit | config | object | OBJ-L2TPN4KEY / OBJ-L2TPKEY | N4 接口 L2TP 加密：UDG SET L2TPN4KEY 与 UNC SET L2TPKEY 的 KEY 值必须相同，否则 N4 隧道加密协商失败 | 加密协商失败导致 L2TP 隧道无法建立 | critical | EV-FK-21, EV-FK-14 |
-| `CR-APN-04` | POOLTYPE 取值跨产品差异 | `semantic_rule` | explicit | restriction | parameter | ADD POOL.POOLTYPE / ADD ADDRPOOL.POOLTYPE | UDG POOLTYPE=LOCAL（本地池，用户面分配）/EXTERNAL（外部池）；UNC POOLTYPE 仅 UDM（静态签约用）；跨产品同名参数取值集不同 | POOLTYPE 误用导致地址分配逻辑错误 | warning | EV-FK-06, EV-FK-12 |
-| `CR-APN-05` | V6PREFIXLENGTH<64 切换 PD 模式 | `parameter_dependency` | explicit | config | parameter | ADD SECTION.V6PREFIXLENGTH | V6PREFIXLENGTH=64 为普通 IPv6 单栈地址分配；V6PREFIXLENGTH<64 切换为 IPv6 Prefix Delegation 模式（GWFD-020406）；前缀长度 64 是 PD 分水岭 | PD 模式误判导致前缀代理失败 | critical | EV-FK-30, EV-FK-26 |
-| `CR-APN-06` | VPNINSTAF AFTYPE=ipv6uni IPv6 必需 | `precondition_rule` | explicit | config | parameter | ADD VPNINSTAF.AFTYPE | IPv4 地址分配仅需 IPv4 VPN（无 VPNINSTAF 或 AFTYPE=ipv4uni）；IPv6/双栈必须额外 ADD VPNINSTAF AFTYPE=ipv6uni 激活 IPv6 地址族 | IPv6 地址族未激活导致 IPv6 地址无法分配 | critical | EV-FK-28, EV-FK-26, EV-FK-30 |
-| `CR-APN-07` | APN VPN 与地址池 VPN 必须一致 | `semantic_rule` | explicit | config | relation | OBJ-APN-U ↔ OBJ-POOL-U | ADD APN 的 VPNINSTANCE 必须与 ADD POOL 的 VPNINSTANCE 一致；双栈场景 APN 的 HASVPN/HASVPNIPV6 双绑定对应双 VPN 实例 | VPN 不一致导致地址分配后路由不通 | critical | EV-FK-06 |
-| `CR-APN-08` | UPFRDSSVR 必须先于 UPFRDSCLIENTIP | `precondition_rule` | explicit | config | command | CMD-UNC-050 / CMD-UNC-051 | 二次鉴权强顺序：ADD UPFRDSSVR（DN-AAA 服务器）必须先于 ADD UPFRDSCLIENTIP；CLIENTIP 执行后 SMF 立即触发建链，若服务器未就绪则建链失败 | Radius 建链失败 | critical | EV-FK-27 |
-| `CR-APN-09` | NETWORKINSTVPNMAP 必须先于 UPFRDSSVR/CLIENTIP | `precondition_rule` | explicit | config | command | CMD-UNC-052 | UPF 侧 VPN 配置必须先于 UPF Radius 服务器/客户端 IP，否则 Radius 报文无法路由 | Radius 报文路由失败 | critical | EV-FK-27 |
-| `CR-APN-10` | IPSec IKE DH 组不能为 None | `runtime_check_rule` | explicit | restriction | parameter | ADD IKEPROPOSAL.DHGROUP / ADD IKEPEER | IPSec IKE 提议的 DHGROUP 不能为 None；否则 IKE 协商无法完成密钥交换 | IKE 协商失败导致 IPSec 隧道无法建立 | critical | EV-FK-30 |
-| `CR-APN-11` | IPSec ACL 仅支持源/目的 IP | `parameter_mutex` | explicit | restriction | parameter | ADD ACLRULEADV4IPSEC | IPSec ACL 规则仅支持源/目的 IP，不支持端口；NAT 穿越仅 ESP 隧道模式；默认 IKEv2（IKEv1 需 MOD IKEPEER VERSION1=FALSE 关闭） | 规则不匹配导致保护数据流识别失败 | warning | EV-FK-30 |
-| `CR-APN-12` | GRE 源地址不能与 IPSec 源地址相同 | `parameter_mutex` | explicit | restriction | object | OBJ-GRETUNNEL ↔ OBJ-IPSECINTFCFGIPSEC | GRE 隧道源地址不能与 IPSec 隧道源地址相同（FR-GRE-IPSEC-SRC-EXCL）；GRE over IPSec 场景需先建 GRE 再叠加 IPSec | 源地址冲突导致隧道建链失败 | critical | EV-FK-29, EV-FK-30 |
-| `CR-APN-13` | L2TP 与地址自动检测/基于位置互斥 | `parameter_mutex` | explicit | restriction | object | OBJ-APNL2TPATTR ↔ OBJ-CONFLICTIP | L2TP VPN（GWFD-020412）与用户面地址自动检测（GWFD-010108）不可同时应用；与基于位置地址分配（GWFD-020421）互斥（地址分配主体不同：LNS 远程 vs 位置本地池） | 互斥特性同时启用导致地址分配逻辑冲突 | warning | EV-FK-21, EV-FK-19, EV-FK-18 |
-| `CR-APN-14` | L2TP 本地配置与 AAA 下发互斥 | `parameter_mutex` | explicit | restriction | object | OBJ-L2TPGROUP ↔ OBJ-L2TPRDSCLIENT | L2TP 本地配置方式（ADD L2TPGROUP+L2TPCLIENTIP）与 AAA 下发方式（ADD L2TPRDSCLIENT）互斥；不支持 PPP 用户/DHCP 延迟分配/IPv6 PD/NAT | 两种方式同时配置导致 L2TP 行为不确定 | warning | EV-FK-21 |
-| `CR-APN-15` | APNACTNUM 并发限制触发拒绝 | `runtime_check_rule` | explicit | ops | parameter | ADD APNACTNUM.PDNNUM/IPV4ADDRNUM/IPV6ADDRNUM | 单 APN 并发超过 PDNNUM/IPV4ADDRNUM/IPV6ADDRNUM 阈值时，触发 PDNCONNREJCAUSE 拒绝；防止单 APN 资源耗尽 | 并发超限导致用户被拒（业务影响） | info | EV-FK-03 |
-| `CR-APN-16` | STATICADDRPARA 与 SMF 主锚点 UPF 冲突时 SMF 优先 | `semantic_rule` | explicit | config | relation | OBJ-STATICADDRPARA ↔ OBJ-PNFPROFILE | 静态 IP 段绑定 UPF（SET STATICADDRPARA）与 SMF 主锚点 UPF 选择冲突时，SMF 选择优先（FR-SMF主锚点优先） | 静态绑定被忽略（行为符合预期，需文档化） | info | EV-FK-12, EV-FK-34 |
-| `CR-APN-17` | APNALIAS 转换后 APN 必须已 ADD APN | `precondition_rule` | explicit | config | command | CMD-UNC-058 | GGSN/PGW-C/SMF 侧 ADD APNALIAS 的 CONVERTAPN 必须在 ADD APN 中已存在；5G 先按切片 SST+SD 查，未中再按 ALL_USER | 转换后 APN 不存在导致会话建立失败 | critical | EV-FK-05 |
-| `CR-APN-18` | MPLS VPN 命令为推导（文档缺口） | `syntax_rule` | implicit | restriction | command | CMD-UDG-062 / CMD-UDG-063 / CMD-UDG-064 | GWFD-020411 共 9 篇文档无 MML 脚本，VPNINSTANCE/BGPVPNV4ROUTETARGET/BGPVPNV4PEER 基于 MPLS L3VPN 标准实践推导，需命令字典补全 | 推导命令参数待验证 | info | EV-FK-32（推导） |
+### 4.1 簇B UDG 地址分配（12 条）
 
----
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-010105-01 | SET IPALLOCRULE IPv6 规则集与 IPv4 对称 | parameter_dependency | CMD-UDG-010105-06 | 含完整 IPv6 规则集（6 参数），条件必选，初始值未列出需显式配置 | warning |
+| CR-010105-02 | 规则字符串位域格式 `APN-X&LOCATION-X&SMF-X` | syntax_rule | SET IPALLOCRULE.FIRSTRULE 等 | 位域 X=0/1，条件间与关系，需与 POOLGRPMAP 一致 | critical |
+| CR-010105-03 | APN VPN 与地址池 VPN 必须一致 | semantic_rule | OBJ-APN-U↔OBJ-POOL-U | 手册原文强约束 | critical |
+| CR-010105-04 | SET ADDRESSATTR 与 AAA 策略必须一致 | semantic_rule | CMD-UDG-010105-08 | 高危，不一致致激活失败 | critical |
+| CR-010105-05 | ADD POOL 高危：RELEASETIME 过大 | runtime_check_rule | ADD POOL.RELEASETIME | 地址延迟释放致池耗尽 | warning |
+| CR-010104-01 | ADD OSPFIMPORTROUTE 引入 WLR 必须发所有路由 | semantic_rule | ADD OSPFIMPORTROUTE.PROTOCOL | 不能只发 WLR_SP/UD | critical |
+| CR-010104-02 | ADD OSPF Router ID 全网唯一 | runtime_check_rule | ADD OSPF.SCHEMAROUID | IP 均自动分配时必配，只能改不能删 | critical |
+| CR-010104-03 | OSPF 族执行顺序依赖 | ordering_rule | OBJ-OSPF↔OSPFAREA↔OSPFNETWORK/IMPORTROUTE | ADD OSPF→OSPFAREA→OSPFNETWORK/IMPORTROUTE | warning |
+| CR-020421-01 | LOCATION 规则须与 POOLGRPMAP 映射一致 | semantic_rule | SET IPALLOCRULE.LOCATION-X | 与关系，地址范围匹配 | critical |
+| CR-020421-02 | SET IPALLOCBYLOCSW 三态继承语义 | parameter_dependency | SET IPALLOCBYLOCSW.SWITCH | INHERIT 继承全局（两级控制） | warning |
+| CR-020421-03 | 位置区组号段不可重叠不可跨组 | semantic_rule | OBJ-LACID/S1TACID/N2TACID | 绑定后不可绑其他组 | critical |
+| CR-020421-04 | GWFD-020421 License 强制开启 | prerequisite_rule | SET LICENSESWITCH+LKV3G5LBAA01 | 步骤1强制先开 | critical |
 
-## 5. MMLCommand 关键参数集（核心命令）
+### 4.2 簇B UDG 检测/冗余（8 条）
 
-> **Schema 参考**：§11.4 CommandParameter。`required_mode` 取值 `required / optional / conditional_required`（Schema §11.4 必备字段）。本节 9 个核心命令的参数表已补齐 `required_mode` 列。
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-010108-01 | STR PDNROUTETST 高危：可能去活在线用户 | runtime_check_rule | CMD-UDG-010108-01 | 建议空载环境 | critical |
+| CR-010108-02 | 探测方式与全量探测兼容约束 | parameter_dependency | TESTMETHOD+WHOLEDETECT | TRACERT 不支持全量探测 | warning |
+| CR-010108-03 | 探测源/目的 IP 有效性约束 | semantic_rule | SRCIPV4ADDR+DSTIPV4ADDR | 不允许 UE/UPF 地址 | warning |
+| CR-010107-01 | REDUNDUSER 与 ADD POOL.REDUNDFUNC 双使能 | semantic_rule | OBJ-REDUNDUSER↔OBJ-POOL.REDUNDFUNC | 单边使能不生效 | critical |
+| CR-010107-02 | SET REDUNDUSER 高危：改前确认无冗余用户 | runtime_check_rule | CMD-UDG-010107-02 | 否则业务不通 | critical |
+| CR-010107-03 | 静态路由目的必须与虚拟重定向 IP 一致 | semantic_rule | ADD SRROUTE.PREFIX↔ADD REDUNDRDTIP | 手册强约束 | critical |
+| CR-010107-04 | SET APNREDUNDUPSW 仅备用 UDG 配置 | deployment_rule | CMD-UDG-010107-03 | 主用配置无意义 | warning |
+| CR-010107-05 | 主备 VPN 三者一致性 | semantic_rule | OBJ-POOL↔OBJ-APN↔GRETUNNEL | 地址池/APN/Tunnel VPN 一致（LoopBack 除外） | critical |
 
-### 5.1 ADD POOL（UDG 地址池核心命令）
+### 4.3 簇B UNC 地址分配 + 107021（9 条）
 
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| POOLNAME | string | — | `required` | 地址池名 |
-| POOLTYPE | enum | LOCAL / EXTERNAL | `required` | ★CR-APN-01/04：UDG 用 LOCAL（本地池）；EXTERNAL 为外部池 |
-| IPVERSION | enum | IPV4 / IPV6 | `required` | 地址版本 |
-| HASVPN | enum | ENABLE / DISABLE | `optional` | 是否绑定 VPN |
-| VPNINSTANCE | string | — | `conditional_required` | 引用 VPNINST（CR-APN-07：与 APN VPN 一致；HASVPN=ENABLE 时必填） |
-| REDUNDFUNC | enum | — | `conditional_required` | 冗余功能标识（静态路由冗余场景，与 REDUNDUSER 双使能；仅静态冗余特性启用时必填） |
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-010502-01 | ADD ADDRPOOL POOLTYPE 四类型对应分配方式 | semantic_rule | ADD ADDRPOOL.POOLTYPE | Local/UDM/Radius/DHCP；POOLGRPTYPE/UPFGRPTYPE 须一致 | critical |
+| CR-010502-02 | CHECKIPVALID 白名单与 POOLBINDAPN 配套 | parameter_dependency | ADD ADDRPOOL.CHECKIPVALID+ADD POOLBINDAPN | Enable 时需配 POOLBINDAPN | critical |
+| CR-010502-03 | ADD UPNODE ADDRALLOCMODE 控制面/用户面切换 | semantic_rule | ADD UPNODE.ADDRALLOCMODE | INHERIT/SMF_ALLOC/UPF_FIRST 与 ALLOCPRECEDENCE 联动 | critical |
+| CR-010502-04 | POOLGRPMAP 位域规则与 SET IPALLOCRULE 一致 | semantic_rule | ADD POOLGRPMAP+SET IPALLOCRULE | 位域 `APN-X&LOCATION-X&UPNODE-X` | critical |
+| CR-010502-05 | ADD ADDRPOOL RELEASETIME 高危 | runtime_check_rule | ADD ADDRPOOL.RELEASETIME | 集中去活致地址耗尽 | warning |
+| CR-010504-01 | SET APNADDRESSATTR IPV4/V6ALLOCTYPE 与规划一致 | semantic_rule | SET APNADDRESSATTR | 否则激活失败 | critical |
+| CR-107021-01 | ADD UPFBINDGRP.PRIORITY 主备优先级（UDM/Radius 生效） | semantic_rule | ADD UPFBINDGRP.PRIORITY | 主0备1，同组不可相同 | critical |
+| CR-107021-02 | 主备 UPF 故障倒换（LOCK/故障触发） | runtime_check_rule | OBJ-UPNODE.LOCK+OBJ-UPFBINDGRP.PRIORITY | 主故障倒换至备，主恢复回切 | critical |
+| CR-107021-03 | 静态网段须同时含在主备 UPF 与 UDG 地址池 | semantic_rule | OBJ-SECTION-UNC↔OBJ-UPNODE(主+备) | 激活文档必备事项 | critical |
 
-### 5.2 ADD ADDRPOOL（UNC 地址池核心命令，★与 ADD POOL 分离）
+### 4.4 簇D 鉴权/Radius（15 条）
 
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| ADDRPOOLNAME | string | — | `required` | UNC 地址池名（★命名前缀 ADDR，与 UDG POOL 分离） |
-| POOLTYPE | enum | UDM | `required` | ★CR-APN-04：UNC 仅 UDM（静态签约用），无 LOCAL |
-| IPVERSION | enum | IPV4 / IPV6 | `required` | 地址版本 |
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-010301-01 | ADD NGUSRSECPARA 高危：算法误配致终端异常 | runtime_check_rule | CMD-UNC-010301-01 | NIA0 不支持配置 | critical |
+| CR-010301-02 | 5G AKA 四元组 vs EAP-AKA' 五元组（UDM 生成） | semantic_rule | OBJ-NGUSRSECPARA | 非本特性命令产出 | warning |
+| CR-010301-03 | AUTHEVENT 建议开启/关闭流程 | parameter_dependency | ADD NGUSRSECPARA.AUTHEVENT | 切换后注册建议关闭 | warning |
+| CR-108007-01 | ★二次鉴权协议限制：仅 PAP/CHAP，不支持 EAP/Diameter | semantic_rule | ADD UPFRDSSVR/UPFRDSCLIENTIP | 特性概述应用限制 | critical |
+| CR-108007-02 | 中转与直连 Radius Server IP 不可相同 | semantic_rule | OBJ-UPFRDSSVR↔OBJ-RDSSVR(直连) | 否则直连业务受损 | critical |
+| CR-108007-03 | ADD UPFRDSCLIENTIP 必须最后执行 | sequence_rule | CMD-UNC-108007-05 | 顺序强约束+立即触发建链 | critical |
+| CR-011307-01 | 无主备服务器不能配抄送服务器 | semantic_rule | OBJ-RDSSVRGRP↔OBJ-RDSSVR(CARBON_COPY) | 抄送依赖主备存在 | critical |
+| CR-011307-02 | 主备 VPN 必须相同，抄送可不同（最多 5 VPN） | semantic_rule | ADD RDSSVR.VPNINSTANCE | 手册强约束 | critical |
+| CR-011307-03 | 一个 APN 只能绑一个 Radius 服务器组 | uniqueness_rule | OBJ-APNRDSSVRGRP | 重复绑定被拒 | warning |
+| CR-011305-01 | ACCESSMODE 4 取值与 Radius 功能依赖矩阵 | semantic_rule | SET APNAUTHATTR.ACCESSMODE | TRANS_AUTH/NON_TRANS 强依赖 011306 | critical |
+| CR-011305-02 | AUTHMODE 3 取值与用户名密码获取 | parameter_dependency | SET APNAUTHATTR.AUTHMODE | PCO/APN/MSISDN | critical |
+| CR-011305-03 | AAANORSPCTRL Bypass 与 HOLDINGTIME/ADJUSTRANGE | parameter_dependency | SET APNAUTHATTR.AAANORSPCTRL | 被 FHBYPASS 覆盖 | warning |
+| CR-011306-01 | SET FHBYPASS 高危优先级覆盖 | semantic_rule | CMD-UNC-011306-14 | 高于 APNAUTHATTR/APNRDSACCTCTRL | critical |
+| CR-011306-02 | 三条 VSA/ATTR 前置依赖 ADD RDSSVRGRP | precondition_rule | CMD-UNC-011306-07/08/09 | THREEGPP=DISABLE 时下属自动 DISABLE | warning |
+| CR-011306-03 | ADD APNRDSCLIENTIP 未配置致激活失败 | runtime_check_rule | CMD-UNC-011306-06 | APN 配置优先级高于服务器组 | critical |
 
-### 5.3 SET APNADDRESSATTR（APN 地址分配属性，U+C 共用命令名）
+### 4.5 簇E MPLS（7 条）
 
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| APN | string | — | `required` | APN/DNN 名 |
-| SUPPORTIPV4 | enum | ENABLE / DISABLE | `required` | 支持 IPv4 |
-| SUPPORTIPV6 | enum | ENABLE / DISABLE | `required` | 支持 IPv6（双栈 ENABLE+ENABLE） |
-| IGNOREV4 | enum | ENABLE / DISABLE | `optional` | 忽略 IPv4（IPv6 单栈场景） |
-| V6POOLID | int | — | `conditional_required` | IPv6 池 ID（PD 场景 V6PREFIXLENGTH<64 时必填） |
-| HOSTROUTEIP | string | — | `optional` | 主机路由 IP |
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-MPLS-01 | BGP/MPLS VPN 仅开 MPLS 不开 LDP | parameter_dependency | SET MPLSSITE.LDPENABLE | LDPENABLE=DISABLE | warning |
+| CR-MPLS-02 | Hub&Spoke RT 双值 + Hub-PE 允许 AS 重复 | semantic_rule | OBJ-VPNTARGET+ADD BGPPEERAF.ALLOWASLOOPENABLE | Hub-PE EBGP 必配 ALLOWASLOOPENABLE=TRUE | critical |
+| CR-MPLS-03 | 分标签 perInstance+perNexthop 配合节省标签 | parameter_dependency | ADD VPNINSTAF.VRFLABELMODE+ADD BGPVRFAF.APPLYLABELMODE | 跨域 OptionB 须同时配 | warning |
+| CR-MPLS-04 | 跨域 OptionA vs OptionB 选型 | semantic_rule | OBJ-BGPVRFAF+OBJ-VPNTARGET | UDG 默认 OptionB | info |
+| CR-MPLS-05 | MP-EBGP 用公网 BGP 传私网路由（_public_） | semantic_rule | ADD BGPPEER.VRFNAME+ADD BGPVRFAF.VRFNAME | 6VPE：IPv4 eBGP 传 IPv6 路由 | critical |
+| CR-MPLS-06 | EBGP 最大跳数不小于实际跳数 | runtime_check_rule | ADD BGPPEER.EBGPMAXHOP | 过小致邻居建立失败 | critical |
+| CR-MPLS-07 | MCE 接口绑定 VPN 实例 | semantic_rule | OBJ-L3VPNINST+OBJ-INTERFACE | 一台设备多 VPN 业务隔离 | warning |
 
-### 5.4 SET APNL2TPATTR（UDG L2TP U 面核心，★10+ 参数）
+### 4.6 簇E IPSec（8 条）
 
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| APN | string | — | `required` | APN 名 |
-| L2TPSWITCH | enum | ENABLE / DISABLE | `required` | L2TP 开关 |
-| SUPPORTIPV6 | enum | ENABLE / DISABLE | `optional` | 支持 IPv6 |
-| ... | ... | ... | ... | ★CR-APN-02：共 10+ 参数（与 UNC APNL2TPCTRL 仅 2 参数不对称） |
-
-### 5.5 SET APNL2TPCTRL（UNC L2TP C 面决策，★仅 2 参数）
-
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| APN | string | — | `required` | APN 名 |
-| L2TPSWITCH | enum | ENABLE / DISABLE | `required` | ★CR-APN-02：仅 2 参数（与 UDG APNL2TPATTR 10+ 参数不对称） |
-
-### 5.6 SET APNAUTHATTR（Radius 鉴权接入核心，ACCESSMODE 4 取值）
-
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| APN | string | — | `required` | APN 名 |
-| ACCESSMODE | enum | TRANS_NON_AUTH / TRANS_AUTH / NON_TRANS / LOC_AUTH | `required` | ★透明不鉴权/透明鉴权/非透明接入/本地鉴权；仅 TRANS_AUTH/NON_TRANS 强依赖 Radius 功能 |
-| COMMONUSERNAME | string | — | `conditional_required` | 公共用户名（TRANS_AUTH 用；ACCESSMODE=TRANS_AUTH 时必填） |
-| COMMONUSERPASS | string | — | `conditional_required` | 公共密码（TRANS_AUTH 用；ACCESSMODE=TRANS_AUTH 时必填） |
-
-### 5.7 ADD IPSECPOLICY（IPSec 安全策略聚合命令）
-
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| POLICYNAME | string | — | `required` | 策略名 |
-| SEQ | int | — | `required` | 策略序号 |
-| MODE | enum | ISAKMP | `required` | 模式（ISAKMP 表示经 IKE 协商） |
-| ACLGROUPNAME | string | — | `conditional_required` | 引用 ACLGROUPIPSEC（CR-APN-11：仅源/目的 IP；ISAKMP 模式下必填以定义保护数据流） |
-
-### 5.8 ADD GRETUNNEL（GRE 隧道核心命令）
-
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| TNLNAME | string | — | `required` | 隧道名 |
-| TNLTYPE | enum | gre | `required` | 隧道类型 |
-| SRCTYPE | enum | if_name / ... | `required` | 源类型（推荐 LoopBack 接口） |
-| SRCIFNAME | string | — | `conditional_required` | 源接口名（LoopBack1；SRCTYPE=if_name 时必填） |
-| DSTIPADDR | string | — | `required` | 目的 IP（CR-APN-12：不能与 IPSec 源地址相同） |
-
-### 5.9 ADD APNACTNUM（单 APN 并发限制核心命令）
-
-| 参数 | 类型 | 取值范围 | `required_mode` | 说明 |
-|------|------|---------|-----------------|------|
-| APN | string | — | `required` | APN 名 |
-| PDNNUM | int | — | `optional` | PDN 并发数阈值 |
-| IPV4ADDRNUM | int | — | `optional` | IPv4 地址数阈值 |
-| IPV6ADDRNUM | int | — | `optional` | IPv6 地址数阈值 |
-| PDNCONNREJCAUSE | int | — | `conditional_required` | 超限拒绝原因值（CR-APN-15；配置了任一并发阈值后必填以定义拒绝行为） |
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-015004-01 | DHGROUP 不能为 None 或不配置 | parameter_dependency | ADD IKEPROPOSAL.DHGROUP | 建议 Dh_group19 | critical |
+| CR-015004-02 | ACL 仅支持源/目的 IP，端口配置不生效 | semantic_rule | ACLRULEADV4/6IPSEC | 手册原文 | warning |
+| CR-015004-03 | GRE 与 IPSec 源地址互斥（双隧道编排） | semantic_rule | OBJ-GRETUNNEL↔OBJ-IPSECINTFCFGIPSEC | 避免递归封装 | critical |
+| CR-015004-04 | 主备隧道 PEERPRIORITY 主1备2 | parameter_dependency | ADD ATTACHIKEPEER.PEERPRIORITY | IPv6 不支持 Round_robin | critical |
+| CR-015004-05 | 多 Sequence 同 POLICYNAME 各绑不同 ACL+Peer | parameter_dependency | ADD IPSECPOLICY.SEQUENCENUMBER | 跨 sequence 优先级独立 | critical |
+| CR-015004-06 | 双微服务双配一致性 | semantic_rule | VNRS↔IPsec 微服务 | 隧道接口/IP/类型/VPN 一对一 | critical |
+| CR-015004-07 | SRCIFNAME 仅支持环回口 | parameter_dependency | ADD IPSECINTFCFGIPSEC.SRCIFNAME | 多隧道可共用一 LoopBack | warning |
+| CR-015004-08 | 国密场景必须先开 FWSOFTPARA DWORD 1401 | sequence_rule | SET FWSOFTPARA+IKEPROPOSAL/IKEPEER 国密参数 | 算法/认证替换（SM2/SM3/SM4/Digital_envelope/证书） | critical |
 
 ---
 
-## 6. MMLCommand `operates_on` ConfigObject 边表（§11.7）
+## 5. CommandParameter 全参数表（按命令组织，核心命令全量参数）
 
-> **Schema 参考**：§11.7 `MMLCommand operates_on ConfigObject`。仅列核心命令，全量见各小节。
+> **★重建核心价值**：本节保留各 draft §5 的全量参数表（含 required_mode/取值范围/默认值/条件必选）。限于篇幅，本节以**参数行数索引**形式列出每命令的全参数表位置；详细参数表见各 draft §5（合并后 draft 保留为权威参数源）。
 
-### 6.1 UDG 侧地址分配（16条）
+| 命令 | NF | 参数行数 | 全参数表位置（draft §5） |
+|------|----|---------|------------------------|
+| ADD POOL | UDG | 13 | 04-cluster-B-GWFD-010105.md §5.1 |
+| ADD SECTION (UDG) | UDG | 9 | 同上 §5.2 |
+| ADD POOLGROUP | UDG | 3 | 同上 §5.3 |
+| ADD POOLBINDGROUP | UDG | 3 | 同上 §5.4 |
+| ADD POOLGRPMAP (UDG) | UDG | 8 | 同上 §5.5 |
+| ADD CONFLICTIP (UDG) | UDG | 2 | 同上 §5.6 |
+| ADD CPNODEID | UDG | 6 | 同上 §5.7 |
+| SET APNADDRESSATTR (UDG) | UDG | 15 | 同上 §5.8 |
+| SET IPALLOCRULE (UDG) | UDG | 12 | 同上 §5.9（★含完整 IPv6 规则集） |
+| SET APNIPALLOCRULE | UDG | 16 | 同上 §5.10 |
+| SET IPALLOCBYSMFGLBSW | UDG | 2 | 同上 §5.11 |
+| SET ADDRESSATTR | UDG | 5 | 同上 §5.12 |
+| ADD OSPF | UDG | 48 | 04-cluster-B-UDG-010104-020421.md §5.1（★SCHEMAROUID 纠正） |
+| ADD OSPFAREA | UDG | 17 | 同上 §5.2 |
+| ADD OSPFNETWORK | UDG | 5 | 同上 §5.3 |
+| ADD OSPFIMPORTROUTE | UDG | 12 | 同上 §5.4 |
+| ADD LACGROUP/LACID/TACGROUP/S1TACID/N2TACID | UDG | 1+4+2+4+4 | 同上 §5.5~5.9 |
+| SET IPALLOCBYLOCGLBSW/IPALLOCBYLOCSW | UDG | 2+4 | 同上 §5.10~5.11 |
+| ADD ADRLOCWHITELST | UDG | 1 | 同上 §5.12 |
+| SET LICENSESWITCH | UDG | 2 | 同上 §5.13 |
+| STR/STP/DSP PDNROUTETST/PDNTSTRESULT | UDG | 13+0+1 | 04-cluster-B-UDG-010108-010107.md §5.1~5.3 |
+| ADD REDUNDRDTIP/SET REDUNDUSER/SET APNREDUNDUPSW | UDG | 3+1+3 | 同上 §5.4~5.6 |
+| ADD ADDRPOOL | UNC | 13 | 04-cluster-B-UNC-010502-010504.md §5.1 |
+| ADD SECTION (UNC)/ADDRPOOLGRP/POOLBINDGRP/POOLGRPMAP/UPNODE/ADDRUPGROUP/UPFBINDGRP/POOLBINDAPN/BLACKLIST/STATICADDRPARA | UNC | 8+4+3+6+29+2+3+3+8+3 | 同上 §5.2~5.11 |
+| SET APNADDRESSATTR (UNC) | UNC | 32 | 同上 §5.12（★含 IPV4/V6ALLOCTYPE） |
+| SET IPALLOCRULE (UNC) | UNC | 12 | 同上 §5.13（位域 UPNODE） |
+| SET IPALLOCBYLOCGLBSW (UNC) | UNC | 2 | 同上 §5.14 |
+| ADD CONFLICTIP (UNC) | UNC | 5 | 同上 §5.15（支持 IPv6） |
+| ADD NGUSRSECPARA | UNC | 7 | 04-cluster-D-UNC-010301-108007-011307.md §5.1 |
+| ADD CPGTPUADDR/UPLIST4RDS/RDSUPFCTRL/UPFRDSSVR/UPFRDSCLIENTIP | UNC | 4+2+4+5+8 | 同上 §5.2~5.6 |
+| ADD RDSSVRGRP/RDSSVR/APNRDSSVRGRP | UNC | 19+18+3 | 同上 §5.7~5.9 |
+| SET APNAUTHATTR | UNC | 28 | 04-cluster-D-UNC-011305-011306.md §5.1 |
+| ADD RDSSVRGRP/RDSSVR（011306 版）/MOD RDSSVRGRP/MOD RDSSVR | UNC | 19+18+19+14 | 同上 §5.2~5.4 + §1.2 |
+| SET RDSACCTREQVSA/RDSACCTREQATTR/RDSAUTHREQVSA | UNC | 30+29+23 | 同上 §5.4~5.6（★原 04 完全丢失，补齐） |
+| SET APNRDSACCTCTRL/APNRADIUSATTR/RDSRSPADDRCHK/UPLIST4RDS | UNC | 20+3+2+2 | 同上 §5.7~5.8 |
+| SET FHBYPASS/ADD SPECIFICAPNVAL | UNC | 9+10 | 同上 §5.9 |
+| SET MPLSSITE/ADD MPLSIF | U+C | 4+2 | 04-cluster-E-MPLS-020411-104411.md §5.1~5.2 |
+| ADD L3VPNINST/VPNINSTAF/VPNTARGET | U+C | 2+11+4 | 同上 §5.3~5.5 |
+| SET BGP/ADD BGPVRF/BGPVRFAF/BGPPEER/BGPPEERAF/IMPORTROUTE/MOD BGPVRF | U+C | 13+4+40++28+45++7+8 | 同上 §5.6~5.12 |
+| ADD ACLGROUPIPSEC/ACLRULEADV4IPSEC/ACLGROUP6IPSEC/ACLRULEADV6IPSEC | UDG | 5+25+5+25 | 04-cluster-E-IPSec-015004.md §5.1~5.3 |
+| ADD IPSECPROPOSALIPSEC/IKEPROPOSAL/IKEPEER/IKEPEER6 | UDG | 6+11+21+20 | 同上 §5.4~5.7 |
+| ADD IPSECPOLICY/IPSECPOLICY6/IPSECPOLICYTM | UDG | 27+28+22 | 同上 §5.8~5.10 |
+| ADD PROPATTACHIPSECPROPOSAL/ATTACHIKEPEER/IPSECINTFCFGIPSEC | UDG | 5+6+4 | 同上 §5.11~5.13 |
+| SET IKEGLOBALCONFIG/FWSOFTPARA/CERTSCENE/PKICRLCHECK | UDG | 19+5+5+1 | 同上 §5.14~5.17 |
+| ADD GRETUNNEL | UDG | 17 | 同上 §5.18 |
+| ADD L3VPNINSTIPSEC/VPNINSTAFIPSEC/INTERFACEIPSEC/IPBINDVPNIPSEC/IFIPV4ADDRESSIPSEC | UDG | 1+2+8+7+4 | 同上 §5.19（双配简化版） |
 
-| MMLCommand | operates_on -> ConfigObject | 说明 |
-|------------|---------------------------|------|
-| SET LICENSESWITCH (CMD-UDG-001) | LICENSESWITCH | License 开关 |
-| ADD APN (CMD-UDG-009) | APN | APN/DNN 实例（跨域共用挂载点） |
-| SET APNADDRESSATTR (CMD-UDG-013) | APNADDRESSATTR | APN 地址分配属性 |
-| ADD POOL (CMD-UDG-014) | POOL | ★UDG 地址池（POOLTYPE=LOCAL） |
-| ADD SECTION (CMD-UDG-015) | SECTION | 地址段 |
-| ADD POOLGROUP (CMD-UDG-016) | POOLGROUP | 地址池组 |
-| ADD POOLBINDGROUP (CMD-UDG-017) | POOLBINDGROUP | 地址池绑定（UDG 命名 GROUP） |
-| ADD POOLGRPMAP (CMD-UDG-018) | POOLGRPMAP | 池组映射 |
-| SET IPALLOCRULE (CMD-UDG-019) | IPALLOCRULE | 全局三级地址分配规则 |
-| SET APNIPALLOCRULE (CMD-UDG-020) | APNIPALLOCRULE | APN 级地址分配规则 |
-| ADD CPNODEID (CMD-UDG-021) | CPNODEID | SMF 的 NodeID |
-| SET IPALLOCBYSMFGLBSW (CMD-UDG-022) | IPALLOCBYSMFGLBSW | 基于 SMF 分配全局开关 |
-| ADD LACGROUP (CMD-UDG-025) | LACGROUP | LAC 位置区组 |
-| SET IPALLOCBYLOCGLBSW (CMD-UDG-029) | IPALLOCBYLOCGLBSW | 基于位置分配全局开关 |
-| ADD ADRLOCWHITELST (CMD-UDG-030) | ADRLOCWHITELST | 位置区白名单 |
-| ADD CONFLICTIP (CMD-UDG-024) | CONFLICTIP | 冲突地址标识 |
-
-### 6.2 UDG 侧 VPN/接口/路由（10条）
-
-| MMLCommand | operates_on -> ConfigObject | 说明 |
-|------------|---------------------------|------|
-| ADD VPNINST (CMD-UDG-003) | VPNINST | VPN 实例 |
-| ADD L3VPNINST (CMD-UDG-004) | L3VPNINST | L3VPN 实例 |
-| ADD VPNINSTAF (CMD-UDG-005) | VPNINSTAF | VPN 地址族（IPv6 需 AFTYPE=ipv6uni） |
-| ADD INTERFACE (CMD-UDG-006) | INTERFACE | 物理/逻辑接口 |
-| ADD IPBINDVPN (CMD-UDG-007) | IPBINDVPN | 接口绑定 VPN |
-| ADD LOGICINF (CMD-UDG-008) | LOGICINF | Giif 逻辑接口 |
-| ADD IFIPV4ADDRESS (CMD-UDG-040) | IFIPV4ADDRESS | 接口 IPv4 地址 |
-| ADD SRROUTE (CMD-UDG-043) | SRROUTE | 静态路由 |
-| ADD OSPF (CMD-UDG-032) | OSPF | IPv4 OSPF 进程 |
-| ADD OSPFIMPORTROUTE (CMD-UDG-035) | OSPFIMPORTROUTE | 引入 WLR 路由 |
-
-### 6.3 UDG 侧隧道（17条）
-
-| MMLCommand | operates_on -> ConfigObject | 说明 |
-|------------|---------------------------|------|
-| ADD GRETUNNEL (CMD-UDG-044) | GRETUNNEL | GRE 隧道 |
-| ADD ACLGROUPIPSEC (CMD-UDG-047) | ACLGROUPIPSEC | IPSec ACL 组 |
-| ADD ACLRULEADV4IPSEC (CMD-UDG-048) | ACLRULEADV4IPSEC | IPSec ACL 规则 |
-| ADD IPSECPROPOSALIPSEC (CMD-UDG-049) | IPSECPROPOSALIPSEC | IPSec 安全提议 |
-| ADD IKEPROPOSAL (CMD-UDG-050) | IKEPROPOSAL | IKE 提议 |
-| ADD IKEPEER (CMD-UDG-051) | IKEPEER | IKE 对等体 |
-| ADD IPSECPOLICY (CMD-UDG-052) | IPSECPOLICY | IPSec 安全策略 |
-| ADD IPSECINTFCFGIPSEC (CMD-UDG-055) | IPSECINTFCFGIPSEC | 应用策略到 Tunnel |
-| ADD VPNINSTANCE (CMD-UDG-062) | VPNINSTANCE | ★推导：MPLS VPN 实例 |
-| ADD BGPVPNV4PEER (CMD-UDG-064) | BGPVPNV4PEER | ★推导：MP-BGP 对等体 |
-| SET APNL2TPATTR (CMD-UDG-065) | APNL2TPATTR | ★UDG L2TP APN 属性（10+ 参数） |
-| ADD L2TPGROUP (CMD-UDG-067) | L2TPGROUP | L2TP 组（本地配置方式） |
-| ADD L2TPRDSCLIENT (CMD-UDG-070) | L2TPRDSCLIENT | L2TP Radius LNS（AAA 下发方式） |
-| SET L2TPN4KEY (CMD-UDG-074) | L2TPN4KEY | U 侧 N4 加密密钥 |
-| ADD REDUNDRDTIP (CMD-UDG-075) | REDUNDRDTIP | 虚拟 IP（静态冗余） |
-| SET REDUNDUSER (CMD-UDG-076) | REDUNDUSER | 全局冗余开关 |
-| SET APNQOSATTR (CMD-UDG-080) | APNQOSATTR | 接入控制 U 面 QoS 属性 |
-
-### 6.4 UNC 侧地址分配（12条）
-
-| MMLCommand | operates_on -> ConfigObject | 说明 |
-|------------|---------------------------|------|
-| ADD ADDRPOOL (CMD-UNC-002) | ADDRPOOL | ★UNC 地址池（POOLTYPE=UDM） |
-| ADD ADDRPOOLGRP (CMD-UNC-005) | ADDRPOOLGRP | UNC 地址池组 |
-| ADD POOLBINDGRP (CMD-UNC-007) | POOLBINDGRP | UNC 地址池绑定（命名 GRP） |
-| ADD POOLBINDAPN (CMD-UNC-008) | POOLBINDAPN | UNC APN 绑定地址池 |
-| ADD POOLGRPMAP (CMD-UNC-009) | POOLGRPMAP | UNC 池组映射 |
-| ADD UPNODE (CMD-UNC-010) | UPNODE | UPF 节点（共用对象） |
-| ADD PNFPROFILE (CMD-UNC-011) | PNFPROFILE | UPF NF 实例属性 |
-| ADD UPFBINDGRP (CMD-UNC-012) | UPFBINDGRP | UPF 绑定组 |
-| SET STATICADDRPARA (CMD-UNC-013) | STATICADDRPARA | 静态 IP 段绑定 UPF |
-| SET APNADDRESSATTR (CMD-UNC-014) | APNADDRESSATTR | UNC APN 地址属性 |
-| SET IPALLOCBYLOCGLBSW (CMD-UNC-017) | IPALLOCBYLOCGLBSW | UNC 基于位置开关 |
-| ADD BLACKLIST (CMD-UNC-018) | BLACKLIST | 静态地址黑名单 |
-
-### 6.5 UNC 侧 UPF 选择（12条）
-
-| MMLCommand | operates_on -> ConfigObject | 说明 |
-|------------|---------------------------|------|
-| ADD PNFDNN (CMD-UNC-019) | PNFDNN | UPF 支持的 DNN |
-| ADD PNFNS (CMD-UNC-020) | PNFNS | UPF 支持的切片（4G PNFNSINDEX=0） |
-| ADD PNFDNAI (CMD-UNC-021) | PNFDNAI | UPF 支持的 DNAI |
-| ADD PNFUPFINFO (CMD-UNC-022) | PNFUPFINFO | UPF 信息（EPS 互通） |
-| ADD UPAREA (CMD-UNC-023) | UPAREA | UPF 位置区绑定 |
-| ADD PNFTAI (CMD-UNC-024) | PNFTAI | UPF TAI 范围 |
-| ADD UPBINDS11 (CMD-UNC-025) | UPBINDS11 | SGW-U S11 绑定 |
-| ADD UPBINDGNGP (CMD-UNC-026) | UPBINDGNGP | Gn/Gp 绑定 |
-| SET UPSELECTPRI (CMD-UNC-027) | UPSELECTPRI | UPF 选择策略次序 |
-| SET UPSELECTFLAG (CMD-UNC-028) | UPSELECTFLAG | UPF 选择开关 |
-| SET APNUPSELPLY (CMD-UNC-029) | APNUPSELPLY | APN 级 UPF 选择策略 |
-| SET UPLOADBALANCE (CMD-UNC-030) | UPLOADBALANCE | UPF 负载均衡 |
-
-### 6.6 UNC 侧鉴权/Radius/二次鉴权（18条）
-
-| MMLCommand | operates_on -> ConfigObject | 说明 |
-|------------|---------------------------|------|
-| ADD GBAUTHCIPH (CMD-UNC-031) | GBAUTHCIPH | 2G AKA 鉴权 |
-| ADD IUAUTHCIPH (CMD-UNC-032) | IUAUTHCIPH | 3G AKA 鉴权 |
-| ADD S1USRSECPARA (CMD-UNC-033) | S1USRSECPARA | 4G AKA 鉴权 |
-| ADD NGUSRSECPARA (CMD-UNC-034) | NGUSRSECPARA | 5G AKA 鉴权 |
-| SET APNAUTHATTR (CMD-UNC-037) | APNAUTHATTR | APN 鉴权属性（ACCESSMODE 4 取值） |
-| ADD RDSSVRGRP (CMD-UNC-039) | RDSSVRGRP | ★Radius 服务器组（三件套共享） |
-| ADD RDSSVR (CMD-UNC-040) | RDSSVR | Radius 服务器 |
-| ADD APNRDSSVRGRP (CMD-UNC-041) | APNRDSSVRGRP | APN↔Radius 服务器组绑定 |
-| ADD APNRDSCLIENTIP (CMD-UNC-042) | APNRDSCLIENTIP | APN Radius Client IP |
-| SET FHBYPASS (CMD-UNC-046) | FHBYPASS | 故障一键放通 |
-| ADD UPLIST4RDS (CMD-UNC-047) | UPLIST4RDS | PGW-U/UPF List |
-| ADD CPGTPUADDR (CMD-UNC-048) | CPGTPUADDR | GTP-U 地址 |
-| ADD RDSUPFCTRL (CMD-UNC-049) | RDSUPFCTRL | Radius UPF 控制 |
-| ADD UPFRDSSVR (CMD-UNC-050) | UPFRDSSVR | ★UPF Radius 服务器（必须先于 CLIENTIP） |
-| ADD UPFRDSCLIENTIP (CMD-UNC-051) | UPFRDSCLIENTIP | ★UPF Radius 客户端 IP（必须最后） |
-| ADD NETWORKINSTVPNMAP (CMD-UNC-052) | NETWORKINSTVPNMAP | UPF VPN 配置（必须前置） |
-
-### 6.7 UNC 侧接入控制/别名/会话/DNS（17条）
-
-| MMLCommand | operates_on -> ConfigObject | 说明 |
-|------------|---------------------------|------|
-| ADD GBARD (CMD-UNC-053) | GBARD | 2G 接入限制 |
-| ADD IUARD (CMD-UNC-054) | IUARD | 3G 接入限制 |
-| ADD S1ARD (CMD-UNC-055) | S1ARD | 4G 接入限制 |
-| ADD NGMMSUBDATA (CMD-UNC-056) | NGMMSUBDATA | 5GC 移动性限制 |
-| ADD APNALIAS (CMD-UNC-058) | APNALIAS | 别名 APN→真实 APN |
-| ADD ALIASAPN (CMD-UNC-060) | ALIASAPN | 协商 APN→别名 APN |
-| SET APNL2TPCTRL (CMD-UNC-064) | APNL2TPCTRL | ★UNC L2TP 控制（仅 2 参数） |
-| SET L2TPKEY (CMD-UNC-066) | L2TPKEY | C 侧 N4 加密密钥 |
-| ADD PDPAPN (CMD-UNC-068) | PDPAPN | 2/3G PDP APN |
-| ADD APNACTNUM (CMD-UNC-070) | APNACTNUM | 单 APN 并发限制 |
-| ADD SMSUBDATA (CMD-UNC-074) | SMSUBDATA | SM 子表数据 |
-| ADD AREADNS (CMD-UNC-081) | AREADNS | 位置区域 DNS 定制 |
-| ADD DHCPSERVER (CMD-UNC-078) | DHCPSERVER | DHCP 服务器 |
-| SET REDUNDUSER (CMD-UNC-084) | REDUNDUSER | UNC 静态冗余开关（U+C 共用） |
-| ADD VPNINST (CMD-UNC-085) | VPNINST | UNC VPN 实例 |
-| ADD LOGICINF (CMD-UNC-086) | LOGICINF | UNC Gi 逻辑接口 |
-| SET SDBTMR (CMD-UNC-072) | SDBTMR | 签约数据库定时器 |
+> **★说明**：BGPVRFAF/BGPPEER/BGPPEERAF 三个命令手册分别有 40+/28/45+ 参数（大量 BGP 选路高级参数），各 draft §5 仅列关键参数子集 + 全量清单指针，完整列表见手册原文。
 
 ---
 
-## 7. ★CommandRule governs MMLCommand 边表（§11.6 反向）
+## 6. MMLCommand operates_on ConfigObject 边
 
-> **★Schema 合规要点**：§11.6 `CommandRule governs MMLCommand / CommandParameter / ConfigObject`（反向：规则治理命令，非命令 has_rule）。
-
-| CommandRule | governs -> MMLCommand / Parameter / ConfigObject | 治理逻辑摘要 |
-|-------------|------------------------------------------------|--------------|
-| CR-APN-01 | CMD-UDG-014 (ADD POOL) + CMD-UNC-002 (ADD ADDRPOOL) | 前缀不对称，POOL vs ADDRPOOL 分离建模 |
-| CR-APN-02 | CMD-UDG-065 (SET APNL2TPATTR) + CMD-UNC-064 (SET APNL2TPCTRL) | U 10+ 参数 vs C 2 参数不对称 |
-| CR-APN-03 | CMD-UDG-074 (SET L2TPN4KEY) + CMD-UNC-066 (SET L2TPKEY) | U+C 密钥必须相同 |
-| CR-APN-04 | CMD-UDG-014.POOLTYPE + CMD-UNC-002.POOLTYPE | POOLTYPE 跨产品取值差异（LOCAL vs UDM） |
-| CR-APN-05 | CMD-UDG-015.V6PREFIXLENGTH (ADD SECTION) | <64 切换 PD 模式 |
-| CR-APN-06 | CMD-UDG-005.AFTYPE (ADD VPNINSTAF) | IPv6 需 AFTYPE=ipv6uni |
-| CR-APN-07 | OBJ-APN-U ↔ OBJ-POOL-U 关系 | VPN 必须一致 |
-| CR-APN-08 | CMD-UNC-050 (UPFRDSSVR) precedes CMD-UNC-051 (UPFRDSCLIENTIP) | 强顺序：服务器先于客户端 |
-| CR-APN-09 | CMD-UNC-052 (NETWORKINSTVPNMAP) precedes CMD-UNC-050/051 | VPN 配置必须前置 |
-| CR-APN-10 | CMD-UDG-050.DHGROUP (IKEPROPOSAL) + CMD-UDG-051 (IKEPEER) | DH 组不能 None |
-| CR-APN-11 | CMD-UDG-048 (ACLRULEADV4IPSEC) | ACL 仅源/目的 IP |
-| CR-APN-12 | OBJ-GRETUNNEL ↔ OBJ-IPSECINTFCFGIPSEC | GRE 源地址 ≠ IPSec 源地址 |
-| CR-APN-13 | OBJ-APNL2TPATTR ↔ GWFD-010108/020421 | L2TP 与地址自动检测/基于位置互斥 |
-| CR-APN-14 | OBJ-L2TPGROUP ↔ OBJ-L2TPRDSCLIENT | 本地配置 vs AAA 下发互斥 |
-| CR-APN-15 | CMD-UNC-070 (ADD APNACTNUM) 阈值参数 | 并发超限触发拒绝 |
-| CR-APN-16 | OBJ-STATICADDRPARA ↔ OBJ-PNFPROFILE | SMF 主锚点优先 |
-| CR-APN-17 | CMD-UNC-058 (ADD APNALIAS).CONVERTAPN | 转换后 APN 必须已存在 |
-| CR-APN-18 | CMD-UDG-062/063/064 (MPLS 推导命令) | 文档缺口，推导待验证 |
+> §11.7 `MMLCommand operates_on ConfigObject`。本节边与 §1 命令表一一对应（每条命令 operates_on 其 object_keyword 同名 ConfigObject），去重后 ~95 条。关键跨特性 operates_on（共用命令）：
+> - ADD POOL (CMD-UDG-010105-01) → POOL（used_by: 010105/010104/020421/010107）
+> - ADD RDSSVRGRP (CMD-UNC-011306-01) → RDSSVRGRP（used_by: 011305/011306/011307 三件套共享）
+> - ADD UPLIST4RDS (CMD-UNC-108007-02) → UPLIST4RDS（used_by: 108007/011306/011307）
+> - ADD GRETUNNEL (CMD-UDG-015004-19) → GRETUNNEL（used_by: 015004/010107）
+> - SET MPLSSITE/ADD MPLSIF/ADD L3VPNINST 等 MPLS 族 → 各自 ConfigObject（used_by: 020411 UDG + 104411 UNC 双列 command_id）
+>
+> 前置依赖 operates_on 边（非本文件特性拥有，跨簇引用）：ADD APN→APN(簇A), ADD VPNINST→VPNINST(簇A), ADD PNFPROFILE→PNFPROFILE(簇F), ADD INTERFACE→INTERFACE(簇A/E), SET BFD→BFD, ADD AUTOSCALING*→AUTOSCALING*(自动部署), ADD NETWORKINSTVPNMAP→NETWORKINSTVPNMAP(UPF 侧非 MML)。
 
 ---
 
-## 8. 与带宽控制/计费场景命令图谱的差异
+## 7. CommandRule governs 边（§11.6 反向）
 
-| 维度 | 计费场景 | 带宽控制场景 | APN 业务域（本文件） |
-|------|---------|------------|---------------------|
-| MMLCommand 数量 | 87（UDG 41 + UNC 46） | 55（UDG 30 + UNC 25） | **142**（UDG 63 + UNC 79） |
-| ConfigObject 数量 | 55 | 29 | **~65** |
-| CommandRule 数量 | 14 | 5 | **18** |
-| 独有命令族 | URR 三件套、在线计费 DIAMCONNGRP/DCCTEMPLATE、融合计费 18 步链、CG 接口 | BWM 三级体系（BWMSERVICE/CONTROLLER/USERGROUP/RULE）、Shaping、智能 Shaping、FUP(URR 复用)、ADC | **地址池体系（POOL/ADDRPOOL U+C 分离）+ 4 隧道（GRE/IPSec/MPLS/L2TP U+C 不对称）+ Radius 三件套 + UPF 选择 11 件套 + AKA 4 代 + ARD 3 代 + 别名 APN 双视角 + DHCP + 地址自动检测运维** |
-| 共享命令 | SET LICENSESWITCH、ADD RULE、ADD USERPROFILE 等 PCC 规则体系 | 同左 + URR/URRGROUP 共享 | SET LICENSESWITCH、ADD APN（跨域共用挂载点）、SET APNADDRESSATTR（U+C 共用命令名）、SET REDUNDUSER（U+C 共用对象）、ADD SECTION（U+C 同命令） |
-| POLICYTYPE 枚举差异 | CHARGING（独有） | BWM（独有）、PCC/QOS/ADC | APN 域无 POLICYTYPE 概念（ADD RULE/USERPROFILE 不在本域核心命令） |
-| 核心不对称 | — | — | ★POOL(UDG) vs ADDRPOOL(UNC)、APNL2TPATTR(U,10+) vs APNL2TPCTRL(C,2)、L2TPN4KEY(U) vs L2TPKEY(C) |
-| 文档缺口 | — | — | ★MPLS VPN 9 篇无 MML 脚本（CMD-UDG-062/063/064 推导） |
+> §11.6 `CommandRule governs MMLCommand / CommandParameter / ConfigObject`（反向：规则治理命令）。本节边与 §4 CR 表一一对应（52 条），每条 CR governs 其 scope_ref 指向的命令/参数/对象。关键 governs 边：
+> - CR-010105-01 governs CMD-UDG-010105-06 (SET IPALLOCRULE) IPv6 规则集参数
+> - CR-MPLS-02 governs OBJ-VPNTARGET + ADD BGPPEERAF.ALLOWASLOOPENABLE
+> - CR-015004-08 governs CMD-UDG-015004-16 (SET FWSOFTPARA) + IKEPROPOSAL/IKEPEER 国密参数
+> - CR-107021-02 governs OBJ-UPNODE.LOCK + OBJ-UPFBINDGRP.PRIORITY
+> - CR-011306-01 governs CMD-UNC-011306-14 (SET FHBYPASS)（优先级覆盖）
 
 ---
 
-## 9. 对象计数汇总
+## 8. 激活场景脚本（保留各特性场景片段）
 
-| 对象类型 | 数量 | 编号范围 |
-|---------|------|---------|
-| MMLCommand | **142** | CMD-UDG-001~088（含运维+REFRESHSRV）+ CMD-UNC-001~087（U+C 复用 ADD APN 不独立编号；含 REFRESHSRV） |
-| ConfigObject | **~65**（去重） | OBJ-POOL-U ~ OBJ-REDUNDUSER（含 ★推导 3 个 MPLS） |
-| CommandRule | **18** | CR-APN-01 ~ CR-APN-18 |
-| ConfigObject contains/refers_to/depends_on/conflicts_with/activates/composed_by 边 | **55** | contains 22 + refers_to 16 + depends_on 9 + conflicts_with 3 + activates 4 + composed_by 1 |
-| operates_on 边 | **102** | UDG 侧 43 + UNC 侧 59（REFRESHSRV 动作命令无 ConfigObject） |
-| ★CommandRule governs 边 | **18** | CR-APN-01 ~ CR-APN-18 各治理若干命令/参数/对象 |
-| **命令层对象总计** | **~282** | — |
+> 本节保留各特性的激活子场景脚本片段（尤其 IPSec 13 场景 / Radius 4 组网 / 地址分配 4 子方式）。完整脚本见各 draft §8。本文件列**场景差异矩阵**作为导航。
+
+### 8.1 地址分配 4 子方式（GWFD-010105，UDG）
+
+| 子方式 | 关键差异命令 | 脚本来源 |
+|--------|------------|---------|
+| 基于 APN/DNN | SET IPALLOCRULE.FIRSTRULE=APN-1&LOCATION-0&SMF-0 | 基于 APN_DNN 分配地址_72547232.md |
+| 基于 SMF | ADD CPNODEID + SET IPALLOCBYSMFGLBSW + FIRSTRULE=...SMF-1 | 基于 SMF 分配地址_87605805.md |
+| 基于 SMF+APN/DNN | 二级规则 SECONDRULE | 基于 SMF+APN_DNN 分配地址_87787640.md |
+| 基于 RADIUS 下发地址池名称 | IGNOREV4/V6POOLID + SET ADDRESSATTR + SET APNIPALLOCRULE | 基于 RADIUS 下发地址池名称分配地址_13796101.md |
+
+### 8.2 IPSec 13 场景差异矩阵（IPFD-015004，核心交付物）
+
+| # | 场景 | ACL 命令族 | IKEPEER | IPSECPOLICY | ATTACHIKEPEER | 独有命令/参数 | 引流方式 |
+|---|------|-----------|---------|-------------|---------------|---------------|---------|
+| 1 | 普通IPv4 | ACLGROUPIPSEC+ACLRULEADV4IPSEC | IKEPEER | IPSECPOLICY | 1次 PRIORITY=1 | —（基准） | SRROUTE 下一跳=Tunnel 对端 IP |
+| 2 | 普通IPv6 | ACLGROUP6+ACLRULEADV6 | IKEPEER6 | IPSECPOLICY6 (ACLTYPE 必选) | 1次 | IFIPV6ADDRESSIPSEC, SRROUTE6 | SRROUTE6 |
+| 3 | IPv4 主备 | 同#1 | IKEPEER×2 | WORKMODE=Master_standby | ★2次同 SEQUENCE (主1备2) | — | SRROUTE×2 |
+| 4 | IPv6 主备 | 同#2 | IKEPEER6×2 | 同#3 | 2次同 SEQUENCE | — | SRROUTE6×2 |
+| 5 | GRE over IPsec | ACLGROUPIPSEC(源/目=LoopBack IP) | IKEPEER(LOWREMOTEADDR=对端 LoopBack) | IPSECPOLICY | 1次 | ★ADD GRETUNNEL 双隧道 | 业务路由→GRE 隧道 |
+| 6 | OSPF over IPsec | ACLGROUPIPSEC+★2 条规则(IP/OSPF) | IKEPEER | IPSECPOLICY | 1次 | ★OSPF 族 + SRCIFNAME=LoopBack1 | OSPF 引流绑 IPSec Tunnel |
+| 7 | 多 Sequence | ACLGROUPIPSEC×2 | IKEPEER×2 | ★同 POLICYNAME, SEQ=10/20 | ★2次跨 SEQUENCE (各=1) | — | 单隧道多对端 |
+| 8 | 指定本端接口 | 同#1 | IKEPEER(LOWREMOTEADDR=对端 LoopBack) | IPSECPOLICY | 1次 | ★SRCIFNAME=LoopBack1 + LoopBack 双配 | LoopBack IP 路由 |
+| 9 | 国密-普通IPv4 | 同#1 | IKEPEER(★证书，无 PRESHAREDKEY, v1=TRUE/v2=FALSE) | IPSECPOLICY | 1次 | ★SET FWSOFTPARA(1401=1) + IKEPROPOSAL(Digital_envelope+SM2/3/4) + ADD CERTSCENE | 同#1 |
+| 10 | 国密-普通IPv6 | 同#2 | IKEPEER6(证书) | IPSECPOLICY6 | 1次 | 同#9 + IPv6 命令族 | 同#2 |
+| 11 | 国密-GRE | 同#5 | IKEPEER(证书) | IPSECPOLICY | 1次 | 同#9 + ADD GRETUNNEL | 同#5 |
+| 12 | 国密-多 Sequence | 同#7 | IKEPEER×2(证书) | IPSECPOLICY×2 | 2次跨 SEQUENCE | 同#9 | 同#7 |
+| 13 | 国密-指定本端接口 | 同#8 | IKEPEER(证书) | IPSECPOLICY | 1次 | 同#9 + SRCIFNAME=LoopBack1 | 同#8 |
+
+### 8.3 Radius 4 组网场景（WSFD-011306）
+
+| 场景 | 关键差异 | 脚本来源 |
+|------|---------|---------|
+| 单平面+静态路由+BFD（带外） | 双 VPN(vpn_pdn/vpn_aaa) + ROUND_ROBIN 负荷分担 | 32044985.md |
+| 双平面+OSPF+BFD（带内） | 单 VPN + MASTER_SLAVE + UPLIST4RDS 多 UPF 选服务器 | 31879931.md |
+| 带内 GRE VPN | 双 VPN(vpn_enterprise/vpn_tunnel) + GRE 隧道 + 静态路由 | 32723577.md |
+| 带外 GRE VPN | 三 VPN(+vpn_aaa) + GRE + AAA 独立 VPN | 32050904.md |
+
+### 8.4 其他场景脚本
+
+- **位置分配 3 场景**（GWFD-010104 外部 / GWFD-020421 基于位置 / 基于 APN+位置）：见 04-cluster-B-UDG-010104-020421.md §8
+- **检测 3 方式**（PING/DNS/TRACERT）：见 04-cluster-B-UDG-010108-010107.md §8.1
+- **UDG 静态冗余主备**（主用/备用 UDG 配置）：见同上 §8.2/8.3
+- **UNC 静态冗余主备**（107021，ADD UPFBINDGRP.PRIORITY=0/1）：见 04-cluster-B-UNC-107021.md §8
+- **Radius 4 接入场景**（透明/透明鉴权/非透明/本地，ACCESSMODE 差异）：见 04-cluster-D-UNC-011305-011306.md §8.7
+- **5G 鉴权/二次鉴权/抄送**：见 04-cluster-D-UNC-010301-108007-011307.md §8
+- **MPLS VPN UDG 非SDN_手动 / UNC SDN**：见 04-cluster-E-MPLS-020411-104411.md §8
 
 ---
 
-> 本文件为 APN 业务域三层图谱第 4 层。第 5 层跨层映射、第 6 层证据索引见同目录其他文件。
-> **★Stage 5 审查重点**：①CommandRule governs 方向（反向）；②POOL vs ADDRPOOL 分离建模；③APNL2TPATTR vs APNL2TPCTRL 分离；④ConfigObject 关系作为边（非节点）；⑤MPLS 命令推导标注；⑥source_evidence_ids 指向 EV-FK-xx。
+## 9. 抽取核对与待重建清单
+
+### 9.1 16 特性已重建来源汇总
+
+| 特性 | 配置类命令数 | 参数总行数 | ConfigObject | CommandRule | draft 文件 |
+|------|------------|----------|-------------|-------------|-----------|
+| GWFD-010105 | 12（+1 未定位） | 94 | 12 | 5 | 04-cluster-B-GWFD-010105.md |
+| GWFD-010104 + 020421 | 13 | 106 | 13 | 7 | 04-cluster-B-UDG-010104-020421.md |
+| GWFD-010108 + 010107 | 6 独有 | 21 | 6 | 8 | 04-cluster-B-UDG-010108-010107.md |
+| WSFD-010502 + 010504 | 15 | 133 | 16 | 6 | 04-cluster-B-UNC-010502-010504.md |
+| WSFD-107021 | 9（复用 010502） | 71（复用） | 9（复用） | 3 | 04-cluster-B-UNC-107021.md |
+| WSFD-010301+108007+011307 | 9 | 70 | 11 | 9 | 04-cluster-D-UNC-010301-108007-011307.md |
+| WSFD-011305+011306 | 16 | 232 | 11 | 6 | 04-cluster-D-UNC-011305-011306.md |
+| GWFD-020411 + WSFD-104411 | 12（11 共用+1 UDG 专用） | 123+（关键参数） | 11 | 7 | 04-cluster-E-MPLS-020411-104411.md |
+| IPFD-015004 | 25（+1 未定位） | 255 | 25 | 8 | 04-cluster-E-IPSec-015004.md |
+
+### 9.2 ⚠️手册未定位命令（保留标注）
+
+| 命令 | NF | 状态 | 原因 |
+|------|----|----|------|
+| SET IPALLOCBYSMFSW | UDG | ⚠️手册未定位 | 参考信息未列，仅激活文档步骤 5.b 引用（参数 SMFID/SWITCH 推断） |
+| ADD IFIPV6ADDRESSIPSEC | UDG | ⚠️手册未定位 | IPv6 场景激活文档引用，手册未在本特性树定位（参数结构推断 IFNAME/IPV6ADDR/PREFIXLEN，需复核） |
+
+> **★MPLS 修复说明**：原 04 标注 MPLS 命令「手册未定位」是因命令名错误，纠正后（L3VPNINST/VPNINSTAF/VPNTARGET/BGPVRF/BGPVRFAF/BGPPEER/BGPPEERAF/IMPORTROUTE/MPLSSITE/MPLSIF/SET BGP/MOD BGPVRF）全部手册定位成功，**无未定位命令**。
+
+### 9.3 待重建 21 特性清单（命令暂缺，详见 §0.5）
+
+簇A（5）：GWFD-010101, WSFD-010501, WSFD-010503, WSFD-010400, WSFD-106203
+簇C（10）：GWFD-020412, GWFD-020403, GWFD-020401, GWFD-020406; WSFD-104410, WSFD-104002, WSFD-104001, WSFD-104004, WSFD-104413, WSFD-104005
+簇E 尾（2）：IPFD-015002（GRE 独立特性）, IPFD-016000（IPSec-UNC）
+簇F（4）：WSFD-107010（UPF 选择 11 件套）, WSFD-010202（对等网元 DNS）, WSFD-106003（ARD/NGMM）, GWFD-010151（APN QoS 接入控制 U 面）
+
+### 9.4 各 draft 发现的与旧 04 差异（关键修正汇总见 §0.6）
+
+> 各 draft §9.3 的差异核对项已在 §0.6 致命修复汇总中提炼。完整差异核对表见各 draft §9.3。
+
+---
+
+> **本文件为 APN 命令层重建版 v2（阶段性，16/37 特性已重建）**。9 个 draft 文件合并去重产出，所有命令/参数 100% 源自产品文档原文（零编造），手册未定位命令保留「⚠️手册未定位」标注。待重建 21 特性（簇A/C/F + 簇E 尾）补齐后将升级为完整版。
+> **★关键贡献**：①MPLS 命令名致命修复（3 错误命令→12 真实命令）；②补齐 SET IPALLOCRULE 完整 IPv6 规则集 + UDG(SMF) vs UNC(UPNODE) 位域分离；③补齐 Radius 三条 VSA/ATTR 命令（原 04 完全丢失）+ SET APNAUTHATTR 28 参数；④IPSec 13 场景不合并（含国密从 0 建立）+ IPv6 命令族 + 双微服务双配；⑤OSPF 族完整 48 参数 + SCHEMAROUID 纠正；⑥纠正探测族/CPNODEID/REDUNDRDTIP/APNREDUNDUPSW 等参数名错误；⑦建立 52 条特性级 CommandRule + 跨特性共用命令 used_by_features 去重。
