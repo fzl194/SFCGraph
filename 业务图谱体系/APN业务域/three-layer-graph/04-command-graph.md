@@ -1,6 +1,6 @@
 # APN 业务域三层图谱 · 第4层：命令图谱（重建版 v2 · 阶段性）
 
-> **★版本状态**：APN 命令层重建版 v2，**阶段性产物**——16 / 37 特性已重建（簇B 地址分配 8 特性 + 簇D 鉴权 5 特性 + 簇E-core MPLS+IPSec-UDG 3 特性），21 特性待重建（簇A/C/F + 簇E 尾）。旧版由 git 可恢复（`git show HEAD:.../04-command-graph.md`）。
+> **★版本状态**：APN 命令层重建版 v2，**阶段性产物**——26 / 37 特性已重建（簇B 地址分配 8 特性 + 簇D 鉴权 5 特性 + 簇E-core MPLS+IPSec-UDG 3 特性 + 簇A 会话管理/APN基础/别名APN 5 特性 + 簇C L2TP/双栈/IPv6承载/DHCP/PD 10 特性），11 特性待重建（簇F 网元选择/接入控制 + 簇E 尾 GRE/IPSec-UNC）。旧版由 git 可恢复（`git show HEAD:.../04-command-graph.md`）。
 > **文件定位**：`three-layer-graph/04-command-graph.md`
 > **Schema 参考**：`三层图谱Schema-最终版-v0.1.md` §11 命令图谱（§11.3 MMLCommand / §11.4 CommandParameter / §11.5 ConfigObject / §11.6 CommandRule / §11.7 关系边）
 > **数据来源**：**100% 源自产品文档原文**（激活/参考信息/特性概述 + MML 命令手册），9 个 draft 文件合并去重。手册未定位的命令保留「⚠️手册未定位」标注。
@@ -31,20 +31,35 @@
 | **簇E-core 接入隧道** | GWFD-020411 MPLS VPN | UDG | ✅已重建 | 04-cluster-E-MPLS-020411-104411.md |
 | 簇E-core | WSFD-104411 MPLS VPN | UNC | ✅已重建 | 04-cluster-E-MPLS-020411-104411.md |
 | 簇E-core | IPFD-015004 IPSec 功能（13 场景） | UDG | ✅已重建 | 04-cluster-E-IPSec-015004.md |
-| **待重建** | 簇A/C/F + 簇E 尾（21 特性，详见 §0.5） | — | 待重建 | — |
+| **簇A 会话管理/APN基础** | GWFD-010101 会话管理（UDG，★纯流程类，0 配置命令） | UDG | ✅已重建 | 04-cluster-A-UDG-010101-UNC-010501.md |
+| 簇A | WSFD-010501 会话管理（UNC 控制面，5 配置命令） | UNC | ✅已重建 | 同上 |
+| 簇A | WSFD-010503 多PDN/PDU（APNACTNUM） | UNC | ✅已重建 | 04-cluster-A-UNC-010503-010400-106203.md |
+| 簇A | WSFD-010400 用户数据管理（★无配置类 MML，仅 2 DSP 查询，用户数据经 SBI Nudm/Nudr） | UNC | ✅已重建 | 同上 |
+| 簇A | WSFD-106203 别名APN（★双套网元：G套 6 命令 / S套 3 命令，映射方向相反） | UNC | ✅已重建 | 同上 |
+| **簇C L2TP/双栈/IPv6/DHCP/PD** | GWFD-020412 L2TP VPN（UDG 执行侧，11 命令；★SET APNL2TPATTR 3→14 参数补全） | UDG | ✅已重建 | 04-cluster-C-L2TP-020412-104410.md |
+| 簇C | WSFD-104410 L2TP VPN（UNC 决策侧，4 命令） | UNC | ✅已重建 | 同上 |
+| 簇C | GWFD-020401 IPv6承载上下文（UDG，7 命令：License+OSPFv3 族） | UDG | ✅已重建 | 04-cluster-C-IPv6-双栈承载.md |
+| 簇C | GWFD-020403 IPv4v6双栈接入（UDG，复用簇B） | UDG | ✅已重建 | 同上 |
+| 簇C | WSFD-104002 IPv4v6双栈接入（UNC，4 核心命令） | UNC | ✅已重建 | 同上 |
+| 簇C | WSFD-104001 IPv6承载上下文（UNC，★纯 License 控制特性，3 代际参考信息均写"本特性无相关命令"） | UNC | ✅已重建 | 同上 |
+| 簇C | WSFD-104413 DHCP 功能（UNC，5 DHCP 专属命令；⚠️激活文档缺口） | UNC | ✅已重建 | 04-cluster-C-DHCP-PD.md |
+| 簇C | WSFD-104005 DHCPv6 地址分配（UNC，复用 DHCP 5 命令，IPVERSION=IPv6） | UNC | ✅已重建 | 同上 |
+| 簇C | GWFD-020406 IPv6 Prefix Delegation（UDG，★无 PD 专属命令，由 ADD SECTION.V6PREFIXLENGTH<64 触发） | UDG | ✅已重建 | 同上 |
+| 簇C | WSFD-104004 IPv6 前缀代理（UNC，由 SET APNADDRESSATTR.IPV6ALLOCTYPE=LOCAL 触发） | UNC | ✅已重建 | 同上 |
+| **待重建** | 簇F + 簇E 尾（11 特性，详见 §0.5） | — | 待重建 | — |
 
-### 0.2 对象/边计数（16 特性已重建部分）
+### 0.2 对象/边计数（26 特性已重建部分）
 
 | 维度 | 数量 | 说明 |
 |------|------|------|
-| MMLCommand（去重后） | **83** | UDG 44 + UNC 39；含跨特性共用命令合并（见 §0.3） |
-| ConfigObject（去重后） | **~95** | 跨簇去重后 |
-| CommandRule | **52** | 特性级 CR（CR-010105-* / CR-011306-* / CR-MPLS-* 等） |
-| ConfigObject 关系边 | **~95** | contains / refers_to / depends_on / activates / overrides / governs / links |
-| operates_on 边 | **~95** | MMLCommand → ConfigObject |
-| governs 边 | **52** | CommandRule → MMLCommand/Parameter/Object（§11.6 反向） |
-| CommandParameter 参数总行数 | **~1050** | 全量参数（含 required_mode/取值范围/默认值/条件必选） |
-| 激活子场景脚本 | **~30** | 地址分配 4 子方式 + 位置 3 + 检测 3 + 冗余 3 + Radius 4 组网 + 4 接入 + IPSec 13 场景 + MPLS 2 |
+| MMLCommand（去重后） | **~129** | UDG 62 + UNC 67；含跨特性共用命令合并（见 §0.3）。UDG 新增簇C(L2TP 11+IPv6承载 7)；UNC 新增簇A(会话/APN基础/别名 17)+簇C(L2TP 2+双栈 4+DHCP 5) |
+| ConfigObject（去重后） | **~135** | 跨簇去重后；新增簇A(PDPAPN/GBSM/IUSM/SMPDUCTRL/APNACTNUM/APNALIAS/APNREPORTATTR/ALIASAPN 等 8)+簇C(L2TP 16+IPv6/双栈 10+DHCP 5) |
+| CommandRule | **~76** | 特性级 CR；新增簇A 6 条（含别名APN 双视角/删除须先锁定+去活）+簇C 18 条（L2TP 7+IPv6 6+DHCP 5） |
+| ConfigObject 关系边 | **~135** | contains / refers_to / depends_on / activates / overrides / governs / links / mirrors（簇C L2TP C-U 对称） |
+| operates_on 边 | **~135** | MMLCommand → ConfigObject |
+| governs 边 | **~76** | CommandRule → MMLCommand/Parameter/Object（§11.6 反向） |
+| CommandParameter 参数总行数 | **~1500** | 新增簇A 101 行（010503/106203）+簇C 540 行（L2TP 106+IPv6/双栈 130+DHCP 24，L2TP ADD L2TPGROUP 34/SET SMFUNC 25/ADD SMSUBDATA 17 等） |
+| 激活子场景脚本 | **~45** | 新增 L2TP 3（本地配置/AAA下发/UNC决策）+ IPv6/双栈 7（UDG 承载/双栈 + UNC 双栈 3 代际 + 承载 2 组）+ DHCP 4（含⚠️draft）+ 别名APN 2（G套/S套） |
 
 ### 0.3 跨特性共用命令（去重合并，used_by_features）
 
@@ -62,8 +77,11 @@
 | `SET APNADDRESSATTR` | UDG/UNC | GWFD-010105/010104/020421, WSFD-010504 | UDG（CMD-UDG-010105-09，15 参数）/ UNC（CMD-UNC-010504-01，32 参数含 IPV4/V6ALLOCTYPE）—— 参数量差异大，分开 |
 | `SET IPALLOCBYLOCGLBSW` | UDG/UNC | GWFD-020421, WSFD-010504 | UDG（CMD-UDG-020421-06，2 参数）/ UNC（CMD-UNC-010504-03，2 参数）—— 命令名相同参数表相同，但功能域不同（UDG 位置区 / UNC 位置区），按产品侧分列 |
 | `SET ADDRESSATTR` | UDG | GWFD-010105（RADIUS 下发地址池名称场景） | CMD-UDG-010105-08（5 参数） |
-| `SET LICENSESWITCH` | UDG/UNC | GWFD-020421, IPFD-015004(国密间接) | CMD-UDG-020421-09（2 参数；GWFD-020421 用 LKV3G5LBAA01） |
-| `ADD L3VPNINST` / `ADD VPNINSTAF` / `ADD INTERFACE` / `ADD IPBINDVPN` / `ADD IFIPV4ADDRESS` | UDG/UNC | 多簇前置依赖（簇B/E/Radius 4 组网） | 前置依赖，归簇A/簇E（待重建），本文件仅引用 |
+| `SET LICENSESWITCH` | UDG/UNC | GWFD-020421, IPFD-015004(国密间接), **簇C IPv6 链 6 特性(LKV3G5V6PB01/VDSA01/LKV2IPV601/V6SM01/V6AM01/DUSA02 等), 簇A 别名APN(LKV2AAPN01/LKV2ALIASAPN02)** | CMD-UDG-020421-09（2 参数；LICITEM/SWITCH；IPv6 链 8 个 License 项见 §1.7 簇C 表） |
+| `ADD APN` | UDG/UNC | **★跨簇共用挂载点：簇B(地址分配)/簇A(会话/APN基础/别名APN CONVERTAPN)/簇C(L2TP SET APNL2TPATTR/双栈 HASVPNIPV6/DHCP APN 实例)/簇E(MPLS)** | 簇A 定义（★前置依赖，UDG/UNC 各一版手册，本文件不抽参数；详见 §1.6 簇A 前置依赖） |
+| `ADD VPNINST` / `ADD L3VPNINST` / `ADD VPNINSTAF` | UDG/UNC | **多簇前置依赖：簇B/E/Radius 4 组网 + 簇A(会话管理) + 簇C(L2TP/IPv6承载 AFTYPE=ipv6uni)** | 簇A 定义（前置依赖，本文件仅引用；IPv6 场景 VPNINSTAF.AFTYPE=ipv6uni 见 CR-C-05） |
+| `SET APNADDRESSATTR` | UDG/UNC | GWFD-010105/010104/020421, WSFD-010504, **簇C(双栈 SUPPORTIPV6 / DHCP SUPPORTIPV4 / PD-UNC IPV6ALLOCTYPE=LOCAL 触发)** | UDG（CMD-UDG-010105-09，15 参数）/ UNC（CMD-UNC-010504-01，32 参数）—— 簇C 复用，PD-UNC 通过 IPV6ALLOCTYPE=LOCAL 触发本地前缀代理 |
+| `ADD L3VPNINST` / `ADD VPNINSTAF` / `ADD INTERFACE` / `ADD IPBINDVPN` / `ADD IFIPV4ADDRESS` | UDG/UNC | 多簇前置依赖（簇B/E/Radius 4 组网） | 前置依赖，归簇A/簇E，本文件仅引用 |
 | `ADD GRETUNNEL` | UDG | GWFD-010107（静态冗余）, IPFD-015004（GRE over IPsec） | CMD-UDG-015004-19（17 参数全量，IPSec draft 权威）；010107 场景用 REDUNDANCYEN=TRUE |
 | `ADD UPLIST4RDS` | UNC | WSFD-108007, WSFD-011306, WSFD-011307 | CMD-UNC-108007-02（2 参数，108007 draft 权威；011306/011307 仅引用不重复抽） |
 | `ADD RDSSVRGRP` / `ADD RDSSVR` / `ADD APNRDSSVRGRP` | UNC | WSFD-011305, WSFD-011306, WSFD-011307（Radius 三件套共享） | CMD-UNC-011306-01/02/05（011306 draft 抽全参 19/18/3）；CMD-UNC-011307-01/02/03 同参（抄送场景 COPYSVRPRIORITY/COPYINTERIMUPD），合并 used_by_features |
@@ -73,19 +91,17 @@
 ### 0.4 全局字段声明（status）
 
 > **适用范围**：本文件所有 MMLCommand 的 `status` 字段值均为 `active`（Schema §11.3 必备）。APN 业务域所有正式命令均处于启用状态，无 `deprecated` 或 `planned`。
-> **高危命令**（status=active 但手册标注高危）：SET MPLSSITE、SET BGP、MOD BGPVRF、ADD BGPPEERAF、ADD NGUSRSECPARA、SET REDUNDUSER、SET FHBYPASS、STR PDNROUTETST、MOD RDSSVR、ADD UPFRDSSVR、ADD POOL(RELEASETIME)、ADD ADDRPOOL(RELEASETIME)、SET ADDRESSATTR。
+> **高危命令**（status=active 但手册标注高危）：SET MPLSSITE、SET BGP、MOD BGPVRF、ADD BGPPEERAF、ADD NGUSRSECPARA、SET REDUNDUSER、SET FHBYPASS、STR PDNROUTETST、MOD RDSSVR、ADD UPFRDSSVR、ADD POOL(RELEASETIME)、ADD ADDRPOOL(RELEASETIME)、SET ADDRESSATTR、**SET L2TPN4KEY（簇C L2TP，须与 SMF 配置一致否则激活失败）**、**DEA SMCTX（簇A 别名APN 批量去活）**、**SET GBSM/SET IUSM（簇A 会话管理，修改定时器可能致某些会话无法激活）**。
 > **★MPLS 修复说明**：原 04 标注 MPLS 命令「手册未定位」是因命令名错误（VPNINSTANCE/BGPVPNV4* 在手册中查不到），纠正为真实命令名（L3VPNINST/VPNINSTAF/VPNTARGET/BGPVRF/BGPVRFAF/BGPPEER/BGPPEERAF/IMPORTROUTE/MPLSSITE/MPLSIF/SET BGP/MOD BGPVRF）后全部可定位（见 §0.6）。
 
-### 0.5 待重建特性清单（21 特性，命令暂缺）
+### 0.5 待重建特性清单（11 特性，命令暂缺）
 
 | 簇 | 待重建特性 | 说明 |
 |----|----------|------|
-| **簇A APN 基础** | GWFD-010101, WSFD-010501, WSFD-010503, WSFD-010400, WSFD-106203 | ADD APN / VPNINST / 接口 / 别名 APN 等（多簇共用前置依赖归此） |
-| **簇C L2TP/双栈/IPv6/DHCP** | GWFD-020412, GWFD-020403, GWFD-020401, GWFD-020406; WSFD-104410, WSFD-104002, WSFD-104001, WSFD-104004, WSFD-104413, WSFD-104005 | L2TP(U+C) / IPv6 承载 / DHCP 等 |
 | **簇E 尾（GRE/IPSec-UNC）** | IPFD-015002（GRE 隧道独立特性）, IPFD-016000（IPSec-UNC 侧） | GRE/IPSec UNC 侧命令族 |
 | **簇F 网元选择+接入控制** | WSFD-107010（UPF 选择 11 件套）, WSFD-010202（对等网元 DNS）; WSFD-106003（ARD/NGMM 接入限制）, GWFD-010151（APN QoS 接入控制 U 面） | UPF 选择 / DNS / ARD / QoS |
 
-> 上述 21 特性的命令**暂缺**，待后续重建批次补齐。本文件 §1-§8 仅覆盖 16 已重建特性。
+> 上述 11 特性的命令**暂缺**，待后续重建批次补齐。本文件 §1-§8 覆盖 26 已重建特性（簇A/B/C/D/E-core）。簇A/C 已并入（见 §1.6/§1.7）。
 
 ### 0.6 与旧版 04 的关键修正汇总（致命修复）
 
@@ -105,6 +121,12 @@
 | 12 | **ADD REDUNDRDTIP 标识参数错误** | CMD-UDG-075 标识 `REDUNDRDTIP`（手册无此参数） | 纠正为 IPVERSION（3 参数） | **HIGH** |
 | 13 | **SET APNREDUNDUPSW 关键参数错误** | CMD-UDG-077 标为 `APN, SWITCH`（手册无 SWITCH） | 纠正为 APN + IPV4SWITCH + IPV6SWITCH（3 参数） | **HIGH** |
 | 14 | **UNC 冗余机制误判** | 未区分 UDG(ADD POOL.REDUNDFUNC/MASTERFLAG) vs UNC(ADD UPFBINDGRP.PRIORITY) 冗余粒度 | 明确分离：UDG=地址池级，UNC=UPF 组内 PRIORITY（主0备1） | **MEDIUM** |
+| 15 | **★GWFD-010101 命令层为空（簇A 并入）** | 原 04 标"待重建"，未说明 UDG 侧 0 配置命令的性质 | 纠正：UDG 侧（GWFD-010101）是**纯用户面流程类特性**，3 代际全部"无需配置即可使用"，**0 个配置命令**——命令层为空，业务/任务层以信令流程节点建模；UNC 侧（WSFD-010501）有 5 配置命令（APN NI 映射 + SM 协议定时器 + PDU 会话控制） | **HIGH** |
+| 16 | **★别名APN 双视角纠正（WSFD-106203）** | 原 04 把双套网元命令当 variant_dimensions 合并 | 纠正：双套网元命令**不可合并**——G套(APNALIAS, GGSN/PGW-C/SMF, 6 命令, 别名→真实, 切片维度) vs S套(ALIASAPN, SGSN/MME, 3 命令, 原始→别名, IMSI 维度)，命名/映射方向/用户范围维度/License/记录上限全不同 | **CRITICAL** |
+| 17 | **★SET APNL2TPATTR 参数 3→14（簇C L2TP）** | 原 04 仅 3 参数（APN/L2TPSWITCH/SUPPORTIPV6） | 补全 11 参数：L2TPGROUPID/RDSLNSMODE/ICRQ_CALLINGNO/ICCN_AUTH/IPCP_NEGO/ICCN_PGROUPID/ICCN_TXSPEED/ICRQ_BEARER/ICCN_LCPNEGO/DOMAINNAMEACT/DOMAINNAMEPOS（手册全量 14） | **HIGH** |
+| 18 | **★WSFD-104001 纯 License 控制特性（簇C IPv6 承载）** | 原 04 标"待重建"，可能误配命令 | 纠正：3 个代际（AMF_SMF/MME_SGW-C_PGW-C/SGSN_GGSN）参考信息**全部明确写"本特性无相关命令"**，激活仅 SET LICENSESWITCH。属纯 License 控制特性，无独立配置命令 | **HIGH** |
+| 19 | **★PD 无专属命令，参数触发（簇C DHCP/PD）** | 原 04 标"待重建" | 纠正：IPv6 Prefix Delegation **无 PD 专属命令**——UDG 由 ADD SECTION.V6PREFIXLENGTH 取 49~63（<64）触发；UNC 由 SET APNADDRESSATTR.IPV6ALLOCTYPE=LOCAL 触发。PD 的"命令"实为现有地址池/APN 属性命令的特定取值组合（CR-CD-05） | **HIGH** |
+| 20 | **★WSFD-010400 无配置类 MML（簇A）** | 原 04 标"待重建" | 纠正：本特性无任何 ADD/MOD/SET/RMV，用户签约数据经 AMF/SMF ↔ UDM/UDR 的 SBI 接口（Nudm_SubscriberDataManagement/Nudm_UEContextManagement）完成，MML 层仅 2 个 DSP 查询命令（CR-010400-01） | **HIGH** |
 
 ---
 
@@ -246,6 +268,90 @@
 | CMD-UDG-015004-24 | ADD IFIPV4ADDRESSIPSEC | ADD/IFIPV4ADDRESSIPSEC | IPsec 微服务 IPv4 地址 | IFNAME, IFIPADDR, SUBNETMASK, ADDRTYPE（4） | EV-IPSEC-01 | 015004 |
 | CMD-UDG-015004-25 | ADD IFIPV6ADDRESSIPSEC | ADD/IFIPV6ADDRESSIPSEC | ⚠️手册未定位（IPv6 场景引用，参数结构推断 IFNAME/IPV6ADDR/PREFIXLEN，需复核） | ⚠️手册未定位 | EV-IPSEC-02 | 015004 |
 
+### 1.6 簇A 会话管理/APN基础/别名APN（GWFD-010101 / WSFD-010501 / WSFD-010503 / WSFD-010400 / WSFD-106203）
+
+> **★关键**：GWFD-010101（UDG 会话管理）是**纯用户面流程类特性**，3 代际全部"无需配置即可使用"，**0 个配置命令**——命令层为空，会话管理在业务层/任务层以信令流程节点建模（PDP 上下文激活/修改/删除、PDU 会话建立/释放/修改、EPS 承载流程），本节不展开。WSFD-010501（UNC 会话管理）有 5 配置命令（APN NI 映射 + SM 协议定时器 + PDU 会话控制）。
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UNC-010501-01 | ADD PDPAPN | ADD/PDPAPN | UNC 用户PDP类型→缺省APN NI 映射（表最大 1024；IMSI 范围匹配时精确 PDP 类型优先于 PT_ALL） | SUBRANGE, IMSIPRE, BEGIMSI, ENDIMSI, PDPTYPE, APNNI（6） | EV-FK-A1 | 010501 |
+| CMD-UNC-010501-02 | MOD PDPAPN | MOD/PDPAPN | 修改 APN NI 映射（★APNNI 配错→DNS 解析失败→激活失败 CR-010501-01） | SUBRANGE, IMSIPRE, IMSI, PDPTYPE, APNNI（5） | EV-FK-A1 | 010501 |
+| CMD-UNC-010501-03 | SET GBSM | SET/GBSM | Gb 模式 SM 协议参数（2G；★高危：修改定时器可能致某些会话无法激活 CR-010501-04） | T3385, N3385, T3386, N3386, T3395, N3395, PFT_USED, SM_BSS_PFT_T9（8） | EV-FK-A1 | 010501 |
+| CMD-UNC-010501-04 | SET IUSM | SET/IUSM | Iu 模式 SM 协议参数（3G；与 GBSM 对称但无 PFT 系列） | T3385, N3385, T3386, N3386, T3395, N3395（6） | EV-FK-A1 | 010501 |
+| CMD-UNC-010501-05 | SET SMPDUCTRL | SET/SMPDUCTRL | AMF PDU 会话控制（5G；PDUNUM 限单 DNN 最大 PDU 会话 1~15 + 7 拒绝原因值） | PDUNUM, EXCEEDCAUSE, NSINVALIDCAUSE, DNNINVALIDCAUSE, BACKOFFTMR, ODBREJCAUSE, NOSUBDATACAUSE, SMFDICNOFOUND, SMFDISCOTHER, NFIDCHECKSW（10） | EV-FK-A2 | 010501 |
+| CMD-UNC-010503-01 | ADD APNACTNUM | ADD/APNACTNUM | ★MME 侧 APN 激活数目限制（PDN 连接/IPv4/IPv6 数上限；超阈值返回拒绝原因；最大 256；仅对新 PDN 连接生效） | APNNI, PDNNUM(1~11), IPV4ADDRNUM(1~11), IPV6ADDRNUM(1~11), PDNCONNREJCAUSE（5） | EV-010503 | 010503 |
+| CMD-UNC-010503-02 | MOD APNACTNUM | MOD/APNACTNUM | 修改 APN 激活数目限制（APNNI 定位键） | 同 ADD（5） | EV-010503 | 010503 |
+| CMD-UNC-106203-G-01 | ADD APNALIAS | ADD/APNALIAS | ★G套别名APN映射（GGSN/PGW-C/SMF，别名→真实 CONVERTAPN；最大 1000，每转换 APN 500；2/3/4G 仅 ALL_USER） | SUBRANGE, SST, SD, ALIASAPN, CONVERTAPN（5） | EV-106203-G | 106203 |
+| CMD-UNC-106203-G-02 | RMV APNALIAS | RMV/APNALIAS | 删除别名APN（APNTYPE=ALIAS_APN/CONVERT_APN；有承载须先 LCK+DEA 去活 CR-106203-G-02） | APNTYPE, SUBRANGE, SST, SD, ALIASAPN, CONVERTAPN（6） | EV-106203-G | 106203 |
+| CMD-UNC-106203-G-03 | LCK APNALIAS | LCK/APNALIAS | 锁定别名APN（锁定后新激活失败；配合 DEA SMCTX 去活） | APNTYPE, SUBRANGE, SST, SD, ALIASAPN, CONVERTAPN, LOCKED（7） | EV-106203-G | 106203 |
+| CMD-UNC-106203-G-04 | SET APNREPORTATTR | SET/APNREPORTATTR | ★别名APN 场景核心：真实APN 的 PCF/CHF 必配 SERVICE（14 参数；3 个已弃用 INTELLIGENTSEL/LOCATIONREPORT/MAPTRANSDATA） | APN, CONGESTIONRPT, AAAACCT, AAAAUTH, CG, DIAMETERAAA, OCS, CHF, PCRF, PCF, PERFORMANCE, UPF（+3 弃用）（15） | EV-106203-G | 106203 |
+| CMD-UNC-106203-G-05 | DEA SMCTX | DEA/SMCTX | ★按别名APN 批量去活（DEATYPE=APN+APNTYPE=REQUESTED 子集；完整 30+ 参数通用去活命令） | ACTIONTYPE, DEATYPE, APNTYPE, APN, LOCKDEACTIVE（别名APN 去活子集 5） | EV-106203-G | 106203（通用去活，跨特性） |
+| CMD-UNC-106203-G-06 | SET DEACTIVERATE | SET/DEACTIVERATE | 去活速率（100~5000 个/秒；过高致 CPU 升高） | RATE（1） | EV-106203-G | 106203 |
+| CMD-UNC-106203-S-01 | ADD ALIASAPN | ADD/ALIASAPN | ★S套别名APN映射（SGSN/MME，原始 OLDAPN→别名 NEWAPN；最大 1024；IMSI_PREFIX/IMSI_RANGE 互斥） | SUBRANGE, IMSIPRE, BEGIMSI, ENDIMSI, OLDAPN, NEWAPN, DESC（7） | EV-106203-S | 106203 |
+| CMD-UNC-106203-S-02 | MOD ALIASAPN | MOD/ALIASAPN | 修改 S套别名APN（定位键 SUBRANGE+IMSI+OLDAPN） | SUBRANGE, IMSIPRE, IMSI, OLDAPN, NEWAPN, DESC（6） | EV-106203-S | 106203 |
+| CMD-UNC-106203-S-03 | RMV ALIASAPN | RMV/ALIASAPN | 删除 S套别名APN（定位键） | SUBRANGE, IMSIPRE, IMSI, OLDAPN（4） | EV-106203-S | 106203 |
+
+> **★WSFD-010400 用户数据管理（簇A）**：**无配置类 MML 命令**（0 个）。用户签约数据插入/修改/删除全部经 AMF/SMF ↔ UDM/UDR 的 SBI 接口完成（5G：Nudm_SubscriberDataManagement / Nudm_UEContextManagement；2G&3G/4G：HLR MAP / S6a）。MML 层仅 2 个 DSP 查询命令（DSP COMMMCTX / DSP COMUSRPDPNUM，运维查询类本期略不抽参数），不构造配置类 ConfigObject（CR-010400-01）。
+> **删除/查询类登记**（簇A，本期略不抽全参数）：RMV PDPAPN / LST PDPAPN / LST GBSM / LST IUSM（010501）、LST APNACTNUM（010503）、LST ALIASAPN（106203-S）、DSP COMMMCTX / DSP COMUSRPDPNUM（010400）。
+> **⚠️手册未定位**：RMV APNACTNUM（010503，参考信息列出但本特性文档树未定位全参数，参数推断 APNNI 定位键）。
+
+### 1.7 簇C L2TP / 双栈 / IPv6承载 / DHCP / PD（GWFD-020412+WSFD-104410 / GWFD-020401+020403+WSFD-104001+104002 / WSFD-104413+104005+GWFD-020406+WSFD-104004）
+
+> **★IPv6 License 链**（8 个 License 项跨 UDG/UNC，本簇核心）：UDG `LKV3G5V6PB01`(IPv6承载) + `LKV3G5VDSA01`(双栈，依赖 V6PB01) + `LKV3G5L2TP01`(L2TP) + `LKV3G5P6PD01`(PD-UDG)；UNC `LKV2IPV601`/`LKV2IPV6SM01`/`LKV2IPV6AM01`(IPv6承载三网元) + `LKV2DUSA02`/`LKV2IPDSSM01`/`LKV2IPDSAM01`(双栈三网元) + `LKV3W9DHCP12`/`LKV3W9V6AA11`(DHCP v4/v6) + `LKV3W9V6PD11`(PD-UNC)。UDG 用 `LKV3G5V*` 前缀（V5），UNC 用 `LKV2*`/`LKV3W9*` 前缀（V2）。
+
+#### 1.7.1 簇C L2TP（GWFD-020412 UDG 执行侧 + WSFD-104410 UNC 决策侧）
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UDG-020412-01 | ADD L2TPGROUP | ADD/L2TPGROUP | ★UDG L2TP 组（34 参数；含 6 组 LNS IP+PWD + LOCALLNSMODE 主备/负荷分担；主备最多 2，负荷分担最多 6） | GROUPID, AUTHENTICATION, DOMAINNAME, LOCALNAME, LOCALLNSMODE, FIRST~SIXTHLNSIP/PWD+CFM 系列, MAXSESSIONNUM（34） | EV-L2TP-01 | 020412 |
+| CMD-UDG-020412-02 | ADD L2TPLNSINFO | ADD/L2TPLNSINFO | L2TP 组补充 LNS（>6 或 IPv6 LNS 用；每组最多 30） | GROUPID, LNSNO, LNSIPVER, IPV4ADDRESS, IPV6ADDRESS, PWD, CFMPWD（7） | EV-L2TP-01 | 020412 |
+| CMD-UDG-020412-03 | SET GLOBALL2TP | SET/GLOBALL2TP | L2TP 缺省属性（AAA 未返 Client-Auth-ID 时用缺省 LOCALNAME） | LOCALNAME, HELLO 系列, MAXSENDWINSIZE, INVTUNLEXISTDUR, LNSDETECT 系列（11） | EV-L2TP-02 | 020412 |
+| CMD-UDG-020412-04 | ADD L2TPCLIENTIP | ADD/L2TPCLIENTIP | L2TP 组绑定源端 Gi 接口（本地配置场景，每 L2TP 组 1 个） | L2TPGROUPID, INTERFACENAME（2） | EV-L2TP-01 | 020412 |
+| CMD-UDG-020412-05 | ADD L2TPRDSCLIENT | ADD/L2TPRDSCLIENT | APN 绑定源端 Gi 接口（AAA 下发场景，每 APN 1 个） | APN, INTERFACENAME（2） | EV-L2TP-03 | 020412 |
+| CMD-UDG-020412-06 | ★★SET APNL2TPATTR | SET/APNL2TPATTR | ★APN 的 L2TP 信息（原04仅3参数→手册全量14；L2TPSWITCH=ENABLE 是大多数参数条件前提） | APN, L2TPSWITCH, L2TPGROUPID, RDSLNSMODE, ICRQ_CALLINGNO, ICCN_AUTH, IPCP_NEGO, ICCN_PGROUPID, ICCN_TXSPEED, ICRQ_BEARER, ICCN_LCPNEGO, DOMAINNAMEACT, DOMAINNAMEPOS, SUPPORTIPV6（14） | EV-L2TP-01/03 | 020412 |
+| CMD-UDG-020412-07 | SET PPPCFG | SET/PPPCFG | PPP 协商参数（全局；HOSTNAME 在 APN 支持 PPP 鉴权时生效） | HOSTNAME, MRU, TIMEOUT（3） | EV-L2TP-01/03 | 020412 |
+| CMD-UDG-020412-08 | SET APNPPPACCESS | SET/APNPPPACCESS | APN PPP 鉴权开关（L2TP 用户协商消息带鉴权参数时必须 ENABLE 否则鉴权失败 CR-L2TP-06） | APN, AUTHENTICATION, MRU（3） | EV-L2TP-01/03 | 020412 |
+| CMD-UDG-020412-09 | SET L2TPN4KEY | SET/L2TPN4KEY | ★高危：N4 接口 L2TP 私有信元加密密钥（↔ UNC SET L2TPKEY 必须相同 CR-L2TP-01；不一致致激活失败） | N4KEYVALUE, CFMN4KEYVALUE（2） | EV-L2TP-01/03 | 020412 |
+| CMD-UDG-020412-10 | SET DOMAINSEPARATOR | SET/DOMAINSEPARATOR | 前后缀域名分隔符（本地配置场景匹配用户名域名） | PREFIX, SUFFIX（2） | EV-L2TP-01 | 020412 |
+| CMD-UDG-020412-11 | ADD LOGICINF | ADD/LOGICINF | 逻辑接口（L2TP 场景 Giif 源端；NAME 格式 `类型/实例类型/接口号`） | NAME, IPVERSION, IPV4ADDRESS1, IPV4MASK1, IPV6ADDRESS1, VPNINSTANCE, IPV6PREFIXLEN1（12，列 L2TP 常用） | EV-L2TP-01/03 | 020412（通用逻辑接口） |
+| CMD-UDG-020412-13 | SET SOFTPARAOFBIT | SET/SOFTPARAOFBIT | 软参：关快速流表（Byte671 bit7=1，否则快速流表场景报文丢弃 CR-L2TP-07） | DT2, BYTENUM, BYTEPOSITION, BYTEVALUE（4） | EV-L2TP-01/03 | 020412 |
+| CMD-UNC-104410-01 | SET APNL2TPCTRL | SET/APNL2TPCTRL | ★UNC 决策侧 APN L2TP 控制（参考信息命令清单仅此一条；ADD APN 时自动加初始记录） | APN, L2TPSWITCH, ICCN_PROXYAUTH, COMMONUSERUSED, DEDICATEDBEARSW, PASSWORD, CFMPASSWORD（7） | EV-L2TP-04 | 104410 |
+| CMD-UNC-104410-02 | SET L2TPKEY | SET/L2TPKEY | ★UNC 侧 L2TP N4 加密（↔ UDG SET L2TPN4KEY 对称 CR-L2TP-01；含密钥变更 KEYCHANGE/TIMELEN） | ENSWITCH, PW, KEYCHANGE, TIMELEN, CFMPW（5） | EV-L2TP-04 | 104410 |
+| CMD-UNC-104410-03 | SET PFCPPVTEXT | SET/PFCPPVTEXT | ⚠️手册未定位（PFCP 私有信元携带，激活文档引用 FEATURE=ENABLE，参考信息未列） | ⚠️手册未定位 | EV-L2TP-04 | 104410 |
+| CMD-UNC-104410-04 | ADD UPCMPT | ADD/UPCMPT | ⚠️手册未定位（UP 节点协议兼容性，激活文档引用 L2TPTNL/L2TPPCO=INHERIT，参考信息未列） | ⚠️手册未定位 | EV-L2TP-04 | 104410 |
+
+> **★C-U 协同**：SET APNL2TPCTRL(UNC 决策，7 参数) ↔ SET APNL2TPATTR(UDG 执行，14 参数)；SET L2TPKEY(UNC) ↔ SET L2TPN4KEY(UDG) 加密密钥对称。License 仅 UDG 侧（LKV3G5L2TP01），UNC 侧 WSFD-104410 无需 License（★C-U 不对称）。
+
+#### 1.7.2 簇C IPv6承载/双栈（GWFD-020401 UDG + GWFD-020403 UDG + WSFD-104002 UNC + WSFD-104001 UNC）
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UDG-020401-02 | ADD ROUTEPOLICY | ADD/ROUTEPOLICY | 路由策略（IPv6 手机下行 WLR 发布用；最大 65535） | POLICYNAME（1） | EV-C-01 | 020401 |
+| CMD-UDG-020401-03 | ADD ROUTEPOLICYNODE | ADD/ROUTEPOLICYNODE | 路由策略节点（permit/deny；依赖 ROUTEPOLICY） | POLICYNAME, NODESEQUENCE, MATCHMODE, DESCRIPTION（4） | EV-C-01 | 020401 |
+| CMD-UDG-020401-04 | ADD MATCHROUTETYPE | ADD/MATCHROUTETYPE | 路由类型匹配（含 4 无线路由类型 wlr_ud/sp/bh/gbh；IPv6 承载用 nssaExternal1） | POLICYNAME, NODESEQUENCE, ROUTETYPE（3） | EV-C-01 | 020401 |
+| CMD-UDG-020401-05 | ADD OSPFV3 | ADD/OSPFV3 | ★OSPFv3 进程（IPv6 路由协议；31 参数；ROUTERID 全网唯一 CR-C-04；VRFNAME 绑 VPN） | PROCID, ROUTERID, VRFNAME, BFD 系列, SPF 系列, SANAME（31，列核心） | EV-C-01 | 020401, 020403(脚本引用) |
+| CMD-UDG-020401-06 | ADD OSPFV3AREA | ADD/OSPFV3AREA | OSPFv3 区域（依赖 OSPFV3；AREATYPE Normal/Stub/NSSA；★激活文档步骤 8 引用，参考信息命令清单未列但手册已定位） | PROCID, AREAID, AREATYPE, NSSA 系列（19，列核心） | EV-C-01 | 020401, 020403(脚本引用) |
+| CMD-UDG-020401-07 | ADD OSPFV3IMPORTROUTE | ADD/OSPFV3IMPORTROUTE | ★OSPFv3 引入外部路由（IPv6 手机下行 WLR 发布核心；PROTOCOL=wlr CR-C-03） | PROCID, TOPOID, PROTOCOL, ROUPOLINAME, COST/TAG/TYPE 系列（13） | EV-C-01 | 020401, 020403(脚本引用) |
+| CMD-UNC-104002-02 | SET SMFUNC | SET/SMFUNC | ★UNC 会话管理扩展功能（★DUALFLAG=YES 双栈开关，需 LKV2DUSA02 License 才生效 CR-C-06；25 参数含 PDPTYPE 单栈回退） | DUALFLAG, PDPTYPE, INDFWD, TOPSELCFG, APNRES, ...（25，列核心） | EV-C-03 | 104002 |
+| CMD-UNC-104002-03 | ADD SMSUBDATA | ADD/SMSUBDATA | ★UNC 签约数据纠正（HLR/HSS 不支持双栈时 PDPTYPE=IPV4→NEWPDPTYPE=IPV4V6；17 参数） | SUBRANGE, IMSIPRE, TYPE, APNNI, PDPTYPE, IPV4PDPADDRTYPE, NEWPDPTYPE, NEWIPV4PDPADDRTYPE, NEWIPV6PDPADDRTYPE（17） | EV-C-03 | 104002 |
+| CMD-UNC-104002-04 | MOD GTPCCMPT | MOD/GTPCCMPT | UNC GTP-C V0/V1 协议兼容性（双栈兼容 Common Flags；CMFLG=YES；15 参数） | MSGCLS, MMMSGTYPE, TMMSGTYPE, CRTPDPREQ, UPDPDPREQ, INCLUDE, APNOICASE, CMFLG（15） | EV-C-03 | 104002 |
+
+> **★WSFD-104001 IPv6承载上下文（UNC，纯 License 控制特性）**：3 个代际（AMF_SMF / MME_SGW-C_PGW-C / SGSN_GGSN）参考信息**全部明确写"本特性无相关命令"**，激活文档操作步骤均**仅一步** SET LICENSESWITCH（LKV2IPV6AM01/LKV2IPV6SM01/LKV2IPV601）。无独立配置命令、无独立 ConfigObject，激活后 IPv6 承载由会话管理基础流程（簇A WSFD-010501/010503）处理。SET LICENSESWITCH 复用 §0.3 共用命令。
+> **GWFD-020403 IPv4v6双栈接入（UDG）**：复用簇B 地址分配命令体系（ADD APN 配 HASVPNIPV6 + ADD POOL/SECTION 配 IPv6 段，CR-C-01/02 治理），本簇不重复抽参数；仅 SET LICENSESWITCH（LKV3G5VDSA01）核心 + OSPFv3 系列复用 020401。
+
+#### 1.7.3 簇C DHCP/PD（WSFD-104413+WSFD-104005 UNC + GWFD-020406 UDG + WSFD-104004 UNC）
+
+| `command_id` | `command_name` | `verb`/`object` | `command_summary` | 关键参数 | `source_evidence_ids` | `used_by_features` |
+|--------------|----------------|---------------|-------------------|----------|----------------------|-------------------|
+| CMD-UNC-104413-01 | ADD DHCPSERVERGRP | ADD/DHCPSERVERGRP | ★UNC DHCP 服务器组（IPVERSION IPV4/IPV6；REQLEASETIME 租约；★VPN 与 ADDRPOOL 一致 CR-CD-02；最大 1000） | GROUPNAME, IPVERSION, REQLEASETIME, RETRYINTVAL, RETRYTIMES, HASVPN, VPNINSTANCE（7） | EV-CD-01 | 104413, 104005 |
+| CMD-UNC-104413-02 | ADD DHCPSERVER | ADD/DHCPSERVER | ★DHCP 服务器 IP（一主一备必须先主后备；★主备 IP 不可相同 CR-CD-01；最大 2000） | GROUPNAME, ISPRIMARY, IPVERSION, V4IPADDRESS, V6IPADDRESS, WALVALUE（6） | EV-CD-01 | 104413, 104005 |
+| CMD-UNC-104413-03 | ADD DHCPBINDPOOLGRP | ADD/DHCPBINDPOOLGRP | 远端地址池组与 DHCP 服务器组绑定（★每远端池组最多绑一个 DHCP 组 CR-CD-03；修改需先 RMV） | POOLGRPNAME, GROUPNAME（2） | EV-CD-01 | 104413, 104005 |
+| CMD-UNC-104413-04 | ADD AGENTIP | ADD/AGENTIP | 远端地址池代理 IP（DHCP Server 按代理 IP 找同网段地址池；SECTIONNUM=65535 主机路由；最大 6000） | POOLNAME, SECTIONNUM, IPVERSION, V4AGENTIP, V6AGENTIP（5） | EV-CD-01 | 104413, 104005 |
+| CMD-UNC-104413-05 | SET DHCPPARAREQ | SET/DHCPPARAREQ | DHCPv4/v6 请求信元参数（V4/V6 DNS+P-CSCF 四开关；★初始记录 DNS=ENABLE/P-CSCF=DISABLE；DHCP 仅支持获取 P-CSCF 地址不支持域名） | V4DNSSERVER, V4PCSCFSERVER, V6DNSSERVER, V6PCSCFSERVER（4） | EV-CD-01 | 104413, 104005 |
+
+> **★GWFD-020406 IPv6 Prefix Delegation（UDG）+ WSFD-104004 IPv6 前缀代理（UNC）**：**无 PD 专属命令**。UDG 由 ADD SECTION.V6PREFIXLENGTH 取 49~63（<64）触发 PD（CR-CD-05，复用簇B）；UNC 由 SET APNADDRESSATTR.IPV6ALLOCTYPE=LOCAL 触发本地前缀代理（复用簇B）。SET LICENSESWITCH：PD-UDG=LKV3G5P6PD01，PD-UNC=LKV3W9V6PD11；DHCPv4=LKV3W9DHCP12，DHCPv6=LKV3W9V6AA11（均复用 §0.3 共用命令）。
+> **⚠️文档缺口**：WSFD-104413 DHCP功能 / WSFD-104005 DHCPv6地址分配 **仅有特性概述+参考信息，无激活文档**，激活脚本为依据命令清单+手册实例+原理重建的 draft（见 §8.7）。GWFD-020406 PD 本地地址池激活文档未在文档树定位（仅覆盖外部网元地址分配场景）。
+
 ---
 
 ## 2. ConfigObject 实例化（去重，~95 个）
@@ -371,13 +477,68 @@
 | OBJ-GRETUNNEL | GRETUNNEL | UDG/entity | TNLNAME | TNLTYPE(gre/gre6), SRCTYPE, SRCIFNAME, DSTIPADDR, REDUNDANCYEN | refers_to LoopBack |
 | OBJ-L3VPNINSTIPSEC ~ OBJ-IFIPV4ADDRESSIPSEC | IPsec 微服务双配简化版（6 个） | UDG | 同 VNRS 侧对应对象 | 参数简化版（见 §1.5） | 双配 refers_to VNRS 侧对应配置 |
 
+### 2.6 簇A 会话管理/APN基础/别名APN（GWFD-010101 无对象 / WSFD-010501/010503/010400/106203，8 个对象）
+
+| `object_id` | object_name | side/kind | 标识参数 | 关键属性（摘要） | 关系 |
+|-------------|------------|-----------|---------|----------------|------|
+| OBJ-PDPAPN | PDPAPN | UNC/entity | SUBRANGE, PDPTYPE | APNNI, IMSIPRE/IMSI/BEGIMSI/ENDIMSI | refers_to APN；depends_on APN(有效 APN NI) |
+| OBJ-GBSM | GBSM | UNC/entity | — | T3385/N3385/T3386/N3386/T3395/N3395, PFT_USED, SM_BSS_PFT_T9 | —（Gb 模式全局协议参数） |
+| OBJ-IUSM | IUSM | UNC/entity | — | T3385/N3385/.../N3395（与 GBSM 对称无 PFT） | —（Iu 模式全局协议参数） |
+| OBJ-SMPDUCTRL | SMPDUCTRL | UNC/entity | — | PDUNUM, 7 拒绝原因值, BACKOFFTMR, NFIDCHECKSW | refers_to DNN |
+| OBJ-APNACTNUM | APNACTNUM | UNC/entity | APNNI | PDNNUM/IPV4ADDRNUM/IPV6ADDRNUM, PDNCONNREJCAUSE | belongs_to APN（APNNI 可通配 `*`） |
+| OBJ-COMMMCTX | COMMMCTX | UNC/runtime_view | —（运行态） | 移动性管理上下文（DSP 查询，无配置态） | —（SBI 接口维护） |
+| OBJ-COMUSRPDPNUM | COMUSRPDPNUM | UNC/runtime_view | —（运行态） | 移动性管理用户数（DSP 查询，无配置态） | —（SBI 接口维护） |
+| OBJ-APNALIAS | APNALIAS | UNC/entity | SUBRANGE+SST+SD+ALIASAPN | CONVERTAPN（真实APN） | refers_to APN(CONVERTAPN 须已配)；depends_on APN |
+| OBJ-APNALIASLOCK | APNALIASLOCK | UNC/entity | APNTYPE+SUBRANGE+SST+SD+ALIASAPN | LOCKED(ENABLE/DISABLE) | governs APNALIAS（锁定控制接入） |
+| OBJ-APNREPORTATTR | APNREPORTATTR | UNC/entity | APN | PCF/CHF/PCRF/OCS/CG/AAA/UPF（REQUESTED/SERVICE） | belongs_to APN（ADD APN 自动生成） |
+| OBJ-DEACTIVERATE | DEACTIVERATE | UNC/entity | —（全局） | RATE(100~5000) | governs DEA SMCTX（去活速率） |
+| OBJ-ALIASAPN | ALIASAPN | UNC/entity | SUBRANGE+IMSI范围+OLDAPN | NEWAPN（别名APN） | refers_to APN（DNS 解析目标） |
+
+> **★WSFD-010400**：COMMMCTX/COMUSRPDPNUM 为 `runtime_view`（运行态视图），数据由 SBI 接口动态维护，MML 仅查询。
+
+### 2.7 簇C L2TP/双栈/IPv6承载/DHCP/PD（GWFD-020412+WSFD-104410+GWFD-020401/020403+WSFD-104001/104002+WSFD-104413/104005+GWFD-020406+WSFD-104004，31 个对象）
+
+| `object_id` | object_name | side/kind | 标识参数 | 关键属性（摘要） | 关系 |
+|-------------|------------|-----------|---------|----------------|------|
+| OBJ-L2TPGROUP-U | L2TPGROUP | UDG/composite | GROUPID | LOCALLNSMODE(主备/负荷分担), HELLO 系列, MAXSESSIONNUM, VPNINSTANCE | contains LNS（内嵌或 L2TPLNSINFO）；refers_to VPNINST |
+| OBJ-L2TPLNSINFO | L2TPLNSINFO | UDG/entity | GROUPID, LNSNO | LNSIPVER, IPV4ADDRESS/IPV6ADDRESS, PWD | belongs_to L2TPGROUP；depends_on L2TPGROUP |
+| OBJ-GLOBALL2TP | GLOBALL2TP | UDG/entity | — | LOCALNAME, HELLO 系列, MAXSENDWINSIZE, LNSDETECT 系列 | contains（缺省集）L2TPGROUP 运行时 |
+| OBJ-L2TPCLIENTIP | L2TPCLIENTIP | UDG/binding | L2TPGROUPID | INTERFACENAME | links L2TPGROUP↔LOGICINF（本地配置）；depends_on L2TPGROUP+LOGICINF |
+| OBJ-L2TPRDSCLIENT | L2TPRDSCLIENT | UDG/binding | APN | INTERFACENAME | links APN↔LOGICINF（AAA 下发）；depends_on APN+LOGICINF |
+| OBJ-APNL2TPATTR-U | APNL2TPATTR | UDG/entity | APN | L2TPSWITCH, L2TPGROUPID, RDSLNSMODE, SUPPORTIPV6, ICRQ/ICCN 系列, DOMAINNAME 系列 | belongs_to APN；refers_to L2TPGROUP(via L2TPGROUPID)；depends_on APN |
+| OBJ-PPPCFG | PPPCFG | UDG/entity | — | HOSTNAME, MRU, TIMEOUT | —（全局单例） |
+| OBJ-APNPPPACCESS | APNPPPACCESS | UDG/entity | APN | AUTHENTICATION, MRU | belongs_to APN；depends_on APN |
+| OBJ-L2TPN4KEY | L2TPN4KEY | UDG/entity | — | N4KEYVALUE | —（全局单例；★mirrors UNC L2TPKEY） |
+| OBJ-DOMAINSEPARATOR | DOMAINSEPARATOR | UDG/entity | — | PREFIX, SUFFIX | —（全局单例） |
+| OBJ-LOGICINF-L2TP | LOGICINF | UDG/entity | NAME | IPVERSION, IPV4ADDRESS1, IPV6ADDRESS1, VPNINSTANCE | refers_to VPNINST |
+| OBJ-SOFTPARAOFBIT | SOFTPARAOFBIT | UDG/entity | DT2, BYTENUM, BYTEPOSITION | BYTEVALUE（Byte671 bit7=1 关快速流表） | —（软参） |
+| OBJ-APNL2TPCTRL-C | APNL2TPCTRL | UNC/entity | APN | L2TPSWITCH, ICCN_PROXYAUTH, COMMONUSERUSED, DEDICATEDBEARSW, PASSWORD | belongs_to APN；★mirrors APNL2TPATTR-U（决策↔执行） |
+| OBJ-L2TPKEY-C | L2TPKEY | UNC/entity | — | ENSWITCH, PW, KEYCHANGE, TIMELEN | —（全局单例；★mirrors L2TPN4KEY 密钥对称） |
+| OBJ-UPCMPT | UPCMPT | UNC/binding | — | L2TPTNL, L2TPPCO（⚠️手册未定位） | —（UP 节点协议兼容性） |
+| OBJ-ROUTEPOLICY | ROUTEPOLICY | UDG/composite | POLICYNAME | — | contains ROUTEPOLICYNODE |
+| OBJ-ROUTEPOLICYNODE | ROUTEPOLICYNODE | UDG/entity | POLICYNAME, NODESEQUENCE | MATCHMODE(permit/deny) | belongs_to ROUTEPOLICY；depends_on ROUTEPOLICY；contains MATCHROUTETYPE |
+| OBJ-MATCHROUTETYPE | MATCHROUTETYPE | UDG/entity | POLICYNAME, NODESEQUENCE, ROUTETYPE | ROUTETYPE(wlr_ud/sp/bh/gbh/nssaExternal1) | belongs_to ROUTEPOLICYNODE；depends_on ROUTEPOLICYNODE |
+| OBJ-OSPFV3 | OSPFV3 | UDG/composite | PROCID | ROUTERID, VRFNAME, SPF/BFD 系列 | contains OSPFV3AREA；refers_to VPNINST(via VRFNAME) |
+| OBJ-OSPFV3AREA | OSPFV3AREA | UDG/entity | PROCID, AREAID | AREATYPE(Normal/Stub/NSSA), NSSA 系列 | belongs_to OSPFV3；depends_on OSPFV3 |
+| OBJ-OSPFV3IMPORTROUTE | OSPFV3IMPORTROUTE | UDG/entity | PROCID, TOPOID, PROTOCOL | PROTOCOL(wlr), ROUPOLINAME | belongs_to OSPFV3；depends_on OSPFV3；refers_to ROUTEPOLICY(via ROUPOLINAME) |
+| OBJ-SMFUNC | SMFUNC | UNC/entity | — | DUALFLAG(IPv4v6 双栈), PDPTYPE, 25 参数 | —（全局会话管理扩展功能） |
+| OBJ-SMSUBDATA | SMSUBDATA | UNC/entity | SUBRANGE, IMSIPRE, TYPE, APNNI, PDPTYPE | 匹配条件+纠正值(NEWPDPTYPE/NEWIPV4/NEWIPV6) | refers_to HLR/HSS 签约数据 |
+| OBJ-GTPCCMPT | GTPCCMPT | UNC/entity | MSGCLS, MSGTYPE | CRTPDPREQ/UPDPDPREQ(Common Flags), CMFLG | —（GTP-C V0/V1 协议兼容性） |
+| OBJ-DHCPSERVERGRP | DHCPSERVERGRP | UNC/composite | GROUPNAME | IPVERSION, REQLEASETIME, RETRY 系列, HASVPN, VPNINSTANCE | contains DHCPSERVER（一主一备）；refers_to VPNINST |
+| OBJ-DHCPSERVER | DHCPSERVER | UNC/entity | GROUPNAME, ISPRIMARY, IPVERSION | V4IPADDRESS/V6IPADDRESS, WALVALUE | belongs_to DHCPSERVERGRP；depends_on DHCPSERVERGRP |
+| OBJ-DHCPBINDPOOLGRP | DHCPBINDPOOLGRP | UNC/binding | POOLGRPNAME, GROUPNAME | — | links ADDRPOOLGRP↔DHCPSERVERGRP；depends_on DHCPSERVER+ADDRPOOLGRP |
+| OBJ-AGENTIP | AGENTIP | UNC/entity | POOLNAME, IPVERSION | SECTIONNUM(0~63/65535), V4AGENTIP/V6AGENTIP | refers_to ADDRPOOL；depends_on ADDRPOOL |
+| OBJ-DHCPPARAREQ | DHCPPARAREQ | UNC/entity | — | V4/V6 DNSSERVER, V4/V6 PCSCFSERVER | —（全局 DHCP 请求信元） |
+
+> **★License 链 activates 边**：OBJ-LICENSESWITCH(LKV3G5VDSA01) `activates` OBJ-LICENSESWITCH(LKV3G5V6PB01)（UDG 双栈依赖 IPv6 承载，特性概述 License 节隐含）。
+
 ---
 
 ## 3. ConfigObject 关系边（contains / refers_to / depends_on / conflicts_with / activates / composed_by / overrides / governs / links，去重合并）
 
 > Schema §11.7：ConfigObject 关系直接作为边，不建实体。本节去重合并各 draft §3 的边。
 
-### 3.1 contains 边（组合/包含，~25 条）
+### 3.1 contains 边（组合/包含，~30 条）
 
 | 起点 | 关系 | 终点 | 说明 |
 |------|------|------|------|
@@ -391,7 +552,7 @@
 | RDSSVRGRP | contains | RDSSVR | ★Radius 三件套共享 |
 | UPLIST4RDS | contains | UPINSTANCEID | UP 列表（最多 64 UP） |
 | ADDRUPGROUP | contains | UPNODE | UNC UPF 组（via UPFBINDGRP） |
-| APN | contains | APNADDRESSATTR/APNAUTHATTR/APNIPALLOCRULE/APNREDUNDUPSW 等 | APN 跨域共用挂载点 |
+| APN | contains | APNADDRESSATTR/APNAUTHATTR/APNIPALLOCRULE/APNREDUNDUPSW/APNL2TPATTR/APNL2TPCTRL/APNREPORTATTR/APNACTNUM 等 | APN 跨域共用挂载点（簇B/A/C） |
 | ACLGROUPIPSEC | contains | ACLRULEADV4IPSEC | IPv4 ACL |
 | ACLGROUP6IPSEC | contains | ACLRULEADV6IPSEC | IPv6 ACL |
 | CERTSCENE | contains | 证书文件 | CA/LOCAL(Cert_sig/Cert_enc) |
@@ -400,18 +561,25 @@
 | VPNINSTAF | contains | VPNTARGET | 地址族→RT |
 | BGPVRF | contains | BGPVRFAF | BGP 实例→地址族 |
 | BGPPEER | contains | BGPPEERAF | 对等体→地址族 |
+| L2TPGROUP | contains | LNS（L2TPLNSINFO 或内嵌 FIRST~SIXTHLNSIP） | 簇C L2TP（主备最多 2，负荷分担最多 6，超 6 用 L2TPLNSINFO 补到 30） |
+| GLOBALL2TP | contains（缺省集） | L2TPGROUP（运行时） | 簇C（L2TP 组未配本端名称场景用缺省） |
+| ROUTEPOLICY | contains | ROUTEPOLICYNODE | 簇C IPv6 路由策略 |
+| ROUTEPOLICYNODE | contains | MATCHROUTETYPE | 簇C（节点包含匹配条件） |
+| OSPFV3 | contains | OSPFV3AREA | 簇C IPv6 OSPFv3 进程族 |
+| DHCPSERVERGRP | contains | DHCPSERVER | 簇C DHCP 服务器组（一主一备） |
 
-### 3.2 refers_to / links / depends_on / activates / overrides / governs 边（~70 条，合并摘要）
+### 3.2 refers_to / links / depends_on / activates / overrides / governs / mirrors 边（~100 条，合并摘要）
 
 > 限于篇幅合并列出。关键边：
-> - **refers_to**：POOL→VPNINST, APN→VPNINST, UPNODE→PNFPROFILE, RDSSVR→VPNINST/UPLIST4RDS, IKEPEER→IKEPROPOSAL/CERTSCENE, MPLSIF→INTERFACE, BGPVRF→L3VPNINST 等（~25 条）
-> - **depends_on**（配置顺序强约束）：SECTION→POOL, POOLBINDGROUP→POOLGROUP+POOL, RDSSVR→RDSSVRGRP, UPFRDSCLIENTIP→UPFRDSSVR（★必须最后执行）, VPNINSTAF→L3VPNINST, VPNTARGET→VPNINSTAF(含 RD), BGPPEERAF→BGPPEER+BGPVRFAF, IPSECPOLICY→ACL+IKEPEER+IPSECPROPOSALIPSEC 等（~25 条）
-> - **activates**：IPALLOCBYSMFGLBSW/IPALLOCBYLOCGLBSW→IPALLOCRULE, REDUNDUSER→POOL.REDUNDFUNC, FHBYPASS→RDSSVRGRP（故障放通优先级最高）, IKEGLOBALCONFIG→IKE 行为, FWSOFTPARA(1401=1)→IKEPROPOSAL 国密算法, PKICRLCHECK→CERTSCENE（~8 条）
+> - **refers_to**：POOL→VPNINST, APN→VPNINST, UPNODE→PNFPROFILE, RDSSVR→VPNINST/UPLIST4RDS, IKEPEER→IKEPROPOSAL/CERTSCENE, MPLSIF→INTERFACE, BGPVRF→L3VPNINST, **PDPAPN→APN, SMPDUCTRL→DNN, APNALIAS→APN(CONVERTAPN), APNL2TPATTR→L2TPGROUP, L2TPGROUP→VPNINST, LOGICINF→VPNINST, OSPFV3→VPNINST, OSPFV3IMPORTROUTE→ROUTEPOLICY, SMSUBDATA→HLR/HSS签约, DHCPSERVERGRP→VPNINST, AGENTIP→ADDRPOOL, ALIASAPN→APN(DNS目标)** 等（~40 条）
+> - **depends_on**（配置顺序强约束）：SECTION→POOL, POOLBINDGROUP→POOLGROUP+POOL, RDSSVR→RDSSVRGRP, UPFRDSCLIENTIP→UPFRDSSVR（★必须最后执行）, VPNINSTAF→L3VPNINST, VPNTARGET→VPNINSTAF(含 RD), BGPPEERAF→BGPPEER+BGPVRFAF, IPSECPOLICY→ACL+IKEPEER+IPSECPROPOSALIPSEC, **PDPAPN→APN(有效 APN NI), L2TPLNSINFO→L2TPGROUP, L2TPCLIENTIP→L2TPGROUP+LOGICINF, L2TPRDSCLIENT→APN+LOGICINF, APNL2TPATTR→APN, APNPPPACCESS→APN, APNALIAS→APN(CONVERTAPN), RMV APNALIAS(有承载)→LCK APNALIAS+DEA SMCTX, ROUTEPOLICYNODE→ROUTEPOLICY, MATCHROUTETYPE→ROUTEPOLICYNODE, OSPFV3AREA→OSPFV3, OSPFV3IMPORTROUTE→OSPFV3, DHCPSERVER→DHCPSERVERGRP, DHCPBINDPOOLGRP→DHCPSERVER+ADDRPOOLGRP, AGENTIP→ADDRPOOL** 等（~45 条）
+> - **activates**：IPALLOCBYSMFGLBSW/IPALLOCBYLOCGLBSW→IPALLOCRULE, REDUNDUSER→POOL.REDUNDFUNC, FHBYPASS→RDSSVRGRP（故障放通优先级最高）, IKEGLOBALCONFIG→IKE 行为, FWSOFTPARA(1401=1)→IKEPROPOSAL 国密算法, PKICRLCHECK→CERTSCENE, **LICENSESWITCH(LKV3G5VDSA01)→LICENSESWITCH(LKV3G5V6PB01)（簇C 双栈激活 IPv6 承载 License）**（~9 条）
 > - **overrides**：IPALLOCBYLOCSW→IPALLOCBYLOCGLBSW（三态 INHERIT 继承全局）（1 条）
-> - **governs**：BGPVRFAF(_public_+ipv4vpn)→BGPPEERAF（MP-EBGP 开关）（1 条）
+> - **governs**：BGPVRFAF(_public_+ipv4vpn)→BGPPEERAF（MP-EBGP 开关）, **APNALIASLOCK→APNALIAS（锁定控制接入）, DEACTIVERATE→DEA SMCTX（去活速率）**（~3 条）
 > - **conflicts_with**：STATICADDRPARA→SMF 主锚点 UPF 选择（静态 IP 段绑 UPF 与 SMF 主锚点冲突时 SMF 优先）（1 条）
-> - **mutex_with（跨特性）**：GWFD-010108(PDNROUTETST)↔GWFD-010107(REDUNDUSER)（特性概述原文：静态地址路由冗余功能正常时，静态地址用户不能做用户面地址自动探测）（1 条）
-> - **links**：UPFRDSSVR links (UPLIST4RDS→DN-AAA), APNRDSSVRGRP links (APN→RDSSVRGRP), APNRDSCLIENTIP links (APN→LOGICINF) 等（~6 条）
+> - **mutex_with（跨特性）**：GWFD-010108(PDNROUTETST)↔GWFD-010107(REDUNDUSER), **GWFD-020406(PD)↔L2TP VPN/用户面地址自动检测/NAT/入不转板/通用DNN漫游分流（簇C PD 应用限制原文）**（~2 条）
+> - **★mirrors（C-U 对称，簇C L2TP 独有）**：APNL2TPCTRL-C(UNC 决策) ↔ APNL2TPATTR-U(UDG 执行)，L2TPKEY-C(UNC) ↔ L2TPN4KEY(UDG)（密钥对称 CR-L2TP-01）（2 条）
+> - **links**：UPFRDSSVR links (UPLIST4RDS→DN-AAA), APNRDSSVRGRP links (APN→RDSSVRGRP), APNRDSCLIENTIP links (APN→LOGICINF), **L2TPCLIENTIP links (L2TPGROUP→LOGICINF), L2TPRDSCLIENT links (APN→LOGICINF), DHCPBINDPOOLGRP links (ADDRPOOLGRP↔DHCPSERVERGRP)** 等（~9 条）
 
 ---
 
@@ -508,6 +676,44 @@
 | CR-015004-07 | SRCIFNAME 仅支持环回口 | parameter_dependency | ADD IPSECINTFCFGIPSEC.SRCIFNAME | 多隧道可共用一 LoopBack | warning |
 | CR-015004-08 | 国密场景必须先开 FWSOFTPARA DWORD 1401 | sequence_rule | SET FWSOFTPARA+IKEPROPOSAL/IKEPEER 国密参数 | 算法/认证替换（SM2/SM3/SM4/Digital_envelope/证书） | critical |
 
+### 4.7 簇A 会话管理/APN基础/别名APN（6 条）
+
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-010501-01 | APNNI 配置正确性（DNS 解析依赖） | semantic_rule | CMD-UNC-010501-01/02.APNNI | ADD/MOD PDPAPN 的 APNNI 必须可被 DNS 解析，配错→激活失败 | critical |
+| CR-010501-02 | PDPAPN 表容量上限 1024 | runtime_check_rule | OBJ-PDPAPN | 表满后 ADD PDPAPN 失败 | warning |
+| CR-010501-03 | PDPAPN 多记录匹配优先级 | semantic_rule | OBJ-PDPAPN | IMSI+PDP 类型组合同时匹配多条时用非 PT_ALL 的精确类型记录 | warning |
+| CR-010501-04 | GBSM/IUSM 定时器修改影响会话激活 | runtime_check_rule | CMD-UNC-010501-03/04 | 修改 GBSM/IUSM 可能致某些类型会话无法激活（高危） | warning |
+| CR-010503-01 | 多PDN 并发上限与 PDN 连接数建议关系 | semantic_rule | CMD-UNC-010503-01.PDNNUM/IPV4ADDRNUM/IPV6ADDRNUM | EPC≤11/5GC≤15；PDNNUM 建议 ≥ IPv4/IPv6 数目 | warning |
+| CR-010503-02 | APNACTNUM 仅对新 PDN 连接生效 | runtime_check_rule | CMD-UNC-010503-01/02 | 已建/Handover/TAU 不限；最大 256 记录 | info |
+| CR-010400-01 | 用户数据管理无配置类 MML，经 SBI 接口 | semantic_rule | WSFD-010400 全特性 | 用户数据经 Nudm/Nudr SBI 接口，MML 仅 DSP 查询 | critical |
+| CR-106203-G-01 | G套别名APN 映射方向与命名约束 | semantic_rule | OBJ-APNALIAS | 别名→真实（ALIASAPN→CONVERTAPN）；2/3/4G 仅 ALL_USER；多对一关系 | critical |
+| CR-106203-G-02 | 别名APN 删除须先锁定+去活 | process_rule | RMV APNALIAS↔LCK APNALIAS↔DEA SMCTX | 有承载不允许直接删；须 LCK→DEA→RMV；去活期间及完成后 10s 内不允许 APN 配置 | critical |
+| CR-106203-S-01 | S套别名APN 映射方向与 IMSI 范围互斥 | semantic_rule | OBJ-ALIASAPN | 原始→别名（OLDAPN→NEWAPN）；IMSI_PREFIX/IMSI_RANGE 互斥；优先非 `*` 记录 | critical |
+
+### 4.8 簇C L2TP/双栈/IPv6承载/DHCP/PD（18 条）
+
+| `rule_id` | rule_name | rule_type | scope_ref | rule_logic 摘要 | severity |
+|-----------|-----------|-----------|-----------|----------------|----------|
+| CR-L2TP-01 | L2TP 加密 C-U 密钥必须相同 | semantic_rule | OBJ-L2TPKEY-C↔OBJ-L2TPN4KEY | UNC SET L2TPKEY.PW 必须与 UDG SET L2TPN4KEY.N4KEYVALUE 完全相同，否则激活失败 | critical |
+| CR-L2TP-02 | SET L2TPN4KEY 为高危命令 | runtime_check_rule | CMD-UDG-020412-09 | 须与 SMF 配置一致；不配即明文携带私有信元有安全风险 | critical |
+| CR-L2TP-03 | ADD L2TPGROUP LNS 序号唯一性 | uniqueness_rule | CMD-UDG-020412-01↔02 | LNS IP 序号与 L2TPLNSINFO.LNSNO 不能相同；同组 LNS IP 不重复；不支持 IPv4/IPv6 LNS 共存 | critical |
+| CR-L2TP-04 | 主备模式仅 IPv4 LNS，IPv6 必须 L2TPLNSINFO | parameter_dependency | CMD-UDG-020412-01.LOCALLNSMODE↔02 | 主备 REDUNDANCY 仅 ADD/MOD L2TPGROUP 配 IPv4 LNS；IPv6 必须 L2TPLNSINFO 且 LNSNO=1或2 | critical |
+| CR-L2TP-05 | SET APNL2TPATTR 域名剥离/增加条件必选 | parameter_dependency | CMD-UDG-020412-06.DOMAINNAMEACT↔DOMAINNAMEPOS | DOMAINNAMEACT=ADD_ENABLE_STRIP_DISABLE 时 DOMAINNAMEPOS 必选（PREFIX/SUFFIX） | warning |
+| CR-L2TP-06 | L2TP 用户 PPP 鉴权参数一致性 | semantic_rule | OBJ-APNL2TPATTR-U.ICCN_AUTH↔OBJ-APNPPPACCESS↔OBJ-PPPCFG | L2TP 用户协商消息带鉴权参数时必须 SET APNPPPACCESS.AUTHENTICATION=ENABLE 否则鉴权失败 | critical |
+| CR-L2TP-07 | L2TP 场景必须关闭快速流表（Byte671 bit7=1） | runtime_check_rule | CMD-UDG-020412-13 | SET SOFTPARAOFBIT Byte671 bit7=1，否则快速流表场景报文丢弃 | critical |
+| CR-C-01 | UDG 双栈 ADD APN 必须同时配 IPv4+IPv6 双 VPN | parameter_dependency | ADD APN.HASVPNIPV6/VPNINSTANCEIPV6 | 双栈激活脚本 ADD APN 必须配 HASVPN=ENABLE+VPNINSTANCE 与 HASVPNIPV6=ENABLE+VPNINSTANCEIPV6 | critical |
+| CR-C-02 | UDG 双栈 ADD SECTION 必须配 IPv4 + IPv6 两类地址段 | parameter_dependency | ADD SECTION.IPVERSION/V6PREFIXLENGTH | 分别配 IPVERSION=IPV4 段和 IPV6 段（V6PREFIXLENGTH 49~64；<64 触发 PD 见 CR-CD-05） | critical |
+| CR-C-03 | UDG IPv6 承载 OSPFv3 引入路由必须用 wlr 方式 | semantic_rule | CMD-UDG-020401-07.PROTOCOL | 不能只选 WLR_SP 或 WLR_UD，必须选 wlr 发布所有路由 | critical |
+| CR-C-04 | UDG IPv6 承载 OSPFv3 Router ID 必须全网唯一 | semantic_rule | CMD-UDG-020401-05.ROUTERID | 无 Router ID 进程无法生成 LSA；只能改不能删 | critical |
+| CR-C-05 | UDG IPv6 承载逻辑接口 VPN 必须与外联口 VPN 相同 | semantic_rule | ADD VPNINST↔ADD L3VPNINST/VPNINSTAF | VPNINSTAF.AFTYPE 必须 ipv6uni；不一致致 IPv6 报文查询路由失败 | critical |
+| CR-C-06 | UNC 双栈 SET SMFUNC.DUALFLAG=YES 需 LKV2DUSA02 License 才生效 | parameter_dependency | CMD-UNC-104002-02.DUALFLAG | DUALFLAG=YES 是必要不充分条件，需先 SET LICENSESWITCH LKV2DUSA02 ENABLE | critical |
+| CR-CD-01 | ADD DHCPSERVER 主备服务器 IP 不可相同 | semantic_rule | CMD-UNC-104413-02.V4/V6IPADDRESS | 同组主备 IPv4 不可相同；IPv6 子网前缀不可相同；必须先主后备 | critical |
+| CR-CD-02 | DHCP 服务器组/地址池 VPN 必须一致 | semantic_rule | OBJ-DHCPSERVERGRP↔OBJ-ADDRPOOL | DHCPSERVERGRP.VPNINSTANCE 与 ADDRPOOL.VPNINSTANCE 一致 | critical |
+| CR-CD-03 | ADD DHCPBINDPOOLGRP 远端池组最多绑一个 DHCP 组 | cardinality_rule | OBJ-DHCPBINDPOOLGRP | 每远端池组最多绑一个 DHCP 组；一个 DHCP 组可被多远端池组绑；修改需先 RMV | warning |
+| CR-CD-04 | SET DHCPPARAREQ 初始记录与 DNS/P-CSCF 获取 | parameter_dependency | CMD-UNC-104413-05 | 初始 DNS=ENABLE/P-CSCF=DISABLE；DHCP 仅支持获取 P-CSCF 地址不支持域名 | warning |
+| CR-CD-05 | PD-UDG 触发条件：V6PREFIXLENGTH<64 | parameter_dependency | ADD SECTION.V6PREFIXLENGTH | V6PREFIXLENGTH 取 49~63（<64）触发 PD；本地池同 APN 前缀长度必须相同；PD 不支持 DHCP 方式 | critical |
+
 ---
 
 ## 5. CommandParameter 全参数表（按命令组织，核心命令全量参数）
@@ -562,6 +768,22 @@
 | SET IKEGLOBALCONFIG/FWSOFTPARA/CERTSCENE/PKICRLCHECK | UDG | 19+5+5+1 | 同上 §5.14~5.17 |
 | ADD GRETUNNEL | UDG | 17 | 同上 §5.18 |
 | ADD L3VPNINSTIPSEC/VPNINSTAFIPSEC/INTERFACEIPSEC/IPBINDVPNIPSEC/IFIPV4ADDRESSIPSEC | UDG | 1+2+8+7+4 | 同上 §5.19（双配简化版） |
+| ADD/MOD PDPAPN（簇A UNC 会话管理） | UNC | 6+5 | 04-cluster-A-UDG-010101-UNC-010501.md §5.1/5.2 |
+| SET GBSM/IUSM/SMPDUCTRL（簇A UNC 会话管理） | UNC | 8+6+10 | 同上 §5.3/5.4/5.5 |
+| ADD/MOD APNACTNUM（簇A UNC 多PDN） | UNC | 5+5 | 04-cluster-A-UNC-010503-010400-106203.md §6.1/6.2 |
+| ADD APNALIAS/RMV/LCK APNALIAS（簇A G套别名APN） | UNC | 5+6+7 | 同上 §6.3/6.5/6.4 |
+| SET APNREPORTATTR（簇A 别名APN 场景核心） | UNC | 15 | 同上 §6.6（3 个已弃用参数） |
+| DEA SMCTX（别名APN 去活子集）/SET DEACTIVERATE | UNC | 5+1 | 同上 §6.7/6.8 |
+| ADD/MOD/RMV ALIASAPN（簇A S套别名APN） | UNC | 7+6+4 | 同上 §6.9/6.10/6.11 |
+| ADD L2TPGROUP/L2TPLNSINFO/GLOBALL2TP/L2TPCLIENTIP/L2TPRDSCLIENT（簇C L2TP UDG） | UDG | 34+7+11+2+2 | 04-cluster-C-L2TP-020412-104410.md §5.1~5.6（★SET APNL2TPATTR 3→14 补全） |
+| SET APNL2TPATTR/PPPCFG/APNPPPACCESS/L2TPN4KEY/DOMAINSEPARATOR（簇C L2TP UDG） | UDG | 14+3+3+2+2 | 同上 §5.4/5.7~5.10 |
+| ADD LOGICINF/SOFTPARAOFBIT（簇C L2TP UDG 通用） | UDG | 12+4 | 同上 §5.11 + §1.5 软参 |
+| SET APNL2TPCTRL/L2TPKEY（簇C L2TP UNC 决策/加密） | UNC | 7+5 | 同上 §5.12/5.13 |
+| ADD ROUTEPOLICY/ROUTEPOLICYNODE/MATCHROUTETYPE（簇C IPv6 路由策略 UDG） | UDG | 1+4+3 | 04-cluster-C-IPv6-双栈承载.md §5.2~5.4 |
+| ADD OSPFV3/OSPFV3AREA/OSPFV3IMPORTROUTE（簇C IPv6 OSPFv3 族 UDG） | UDG | 31+19+13 | 同上 §5.5~5.7 |
+| SET SMFUNC/SMSUBDATA/GTPCCMPT（簇C UNC 双栈 2G3G4G） | UNC | 25+17+15 | 同上 §5.8~5.10 |
+| ADD DHCPSERVERGRP/DHCPSERVER/DHCPBINDPOOLGRP/AGENTIP（簇C UNC DHCP 服务器体系） | UNC | 7+6+2+5 | 04-cluster-C-DHCP-PD.md §5.1~5.4 |
+| SET DHCPPARAREQ（簇C UNC DHCP 请求信元） | UNC | 4 | 同上 §5.5 |
 
 > **★说明**：BGPVRFAF/BGPPEER/BGPPEERAF 三个命令手册分别有 40+/28/45+ 参数（大量 BGP 选路高级参数），各 draft §5 仅列关键参数子集 + 全量清单指针，完整列表见手册原文。
 
@@ -569,25 +791,34 @@
 
 ## 6. MMLCommand operates_on ConfigObject 边
 
-> §11.7 `MMLCommand operates_on ConfigObject`。本节边与 §1 命令表一一对应（每条命令 operates_on 其 object_keyword 同名 ConfigObject），去重后 ~95 条。关键跨特性 operates_on（共用命令）：
+> §11.7 `MMLCommand operates_on ConfigObject`。本节边与 §1 命令表一一对应（每条命令 operates_on 其 object_keyword 同名 ConfigObject），去重后 ~135 条。关键跨特性 operates_on（共用命令）：
 > - ADD POOL (CMD-UDG-010105-01) → POOL（used_by: 010105/010104/020421/010107）
 > - ADD RDSSVRGRP (CMD-UNC-011306-01) → RDSSVRGRP（used_by: 011305/011306/011307 三件套共享）
 > - ADD UPLIST4RDS (CMD-UNC-108007-02) → UPLIST4RDS（used_by: 108007/011306/011307）
 > - ADD GRETUNNEL (CMD-UDG-015004-19) → GRETUNNEL（used_by: 015004/010107）
 > - SET MPLSSITE/ADD MPLSIF/ADD L3VPNINST 等 MPLS 族 → 各自 ConfigObject（used_by: 020411 UDG + 104411 UNC 双列 command_id）
+> - **SET LICENSESWITCH → LICENSESWITCH（used_by: 020421/015004 + 簇C IPv6 链 6 特性 + 簇A 别名APN；IPv6 链 8 License 项见 §1.7 表）**
+> - **ADD APN → APN（簇A 定义，used_by: 簇B 地址分配/簇A 会话/别名APN/簇C L2TP/双栈/DHCP/簇E MPLS；跨簇共用挂载点）**
+> - **ADD VPNINST/L3VPNINST/VPNINSTAF → VPNINST/L3VPNINST/VPNINSTAF（簇A 定义，used_by: 多簇前置依赖；簇C IPv6 场景 VPNINSTAF.AFTYPE=ipv6uni）**
+> - **SET APNADDRESSATTR → APNADDRESSATTR（簇B 定义，used_by: 簇C 双栈 SUPPORTIPV6/DHCP SUPPORTIPV4/PD-UNC IPV6ALLOCTYPE=LOCAL 触发）**
 >
-> 前置依赖 operates_on 边（非本文件特性拥有，跨簇引用）：ADD APN→APN(簇A), ADD VPNINST→VPNINST(簇A), ADD PNFPROFILE→PNFPROFILE(簇F), ADD INTERFACE→INTERFACE(簇A/E), SET BFD→BFD, ADD AUTOSCALING*→AUTOSCALING*(自动部署), ADD NETWORKINSTVPNMAP→NETWORKINSTVPNMAP(UPF 侧非 MML)。
+> 前置依赖 operates_on 边（非本文件特性拥有，跨簇引用）：ADD APN→APN(簇A 拥有，本文件首次定义), ADD VPNINST→VPNINST(簇A), ADD PNFPROFILE→PNFPROFILE(簇F), ADD INTERFACE→INTERFACE(簇A/E), SET BFD→BFD, ADD AUTOSCALING*→AUTOSCALING*(自动部署), ADD NETWORKINSTVPNMAP→NETWORKINSTVPNMAP(UPF 侧非 MML), **ADD LOGICINF→LOGICINF(簇C L2TP Giif 源端), ADD ADDRPOOLGRP→ADDRPOOLGRP(簇B, 簇C DHCP BIND 引用)**。
 
 ---
 
 ## 7. CommandRule governs 边（§11.6 反向）
 
-> §11.6 `CommandRule governs MMLCommand / CommandParameter / ConfigObject`（反向：规则治理命令）。本节边与 §4 CR 表一一对应（52 条），每条 CR governs 其 scope_ref 指向的命令/参数/对象。关键 governs 边：
+> §11.6 `CommandRule governs MMLCommand / CommandParameter / ConfigObject`（反向：规则治理命令）。本节边与 §4 CR 表一一对应（~76 条），每条 CR governs 其 scope_ref 指向的命令/参数/对象。关键 governs 边：
 > - CR-010105-01 governs CMD-UDG-010105-06 (SET IPALLOCRULE) IPv6 规则集参数
 > - CR-MPLS-02 governs OBJ-VPNTARGET + ADD BGPPEERAF.ALLOWASLOOPENABLE
 > - CR-015004-08 governs CMD-UDG-015004-16 (SET FWSOFTPARA) + IKEPROPOSAL/IKEPEER 国密参数
 > - CR-107021-02 governs OBJ-UPNODE.LOCK + OBJ-UPFBINDGRP.PRIORITY
 > - CR-011306-01 governs CMD-UNC-011306-14 (SET FHBYPASS)（优先级覆盖）
+> - **CR-010501-01 governs CMD-UNC-010501-01/02.APNNI（APNNI DNS 解析依赖）**
+> - **CR-106203-G-02 governs RMV APNALIAS↔LCK APNALIAS↔DEA SMCTX（别名APN 删除须先锁定+去活 process_rule）**
+> - **CR-L2TP-01 governs OBJ-L2TPKEY-C↔OBJ-L2TPN4KEY（C-U 密钥对称）**
+> - **CR-C-01/02 governs ADD APN.HASVPNIPV6 + ADD SECTION.IPVERSION（双栈双 VPN/双段）**
+> - **CR-CD-05 governs ADD SECTION.V6PREFIXLENGTH（PD 触发条件 <64）**
 
 ---
 
@@ -640,6 +871,34 @@
 - **Radius 4 接入场景**（透明/透明鉴权/非透明/本地，ACCESSMODE 差异）：见 04-cluster-D-UNC-011305-011306.md §8.7
 - **5G 鉴权/二次鉴权/抄送**：见 04-cluster-D-UNC-010301-108007-011307.md §8
 - **MPLS VPN UDG 非SDN_手动 / UNC SDN**：见 04-cluster-E-MPLS-020411-104411.md §8
+
+### 8.5 簇A 别名APN 双套网元（WSFD-106203，★方向相反不可合并）
+
+| 场景 | 关键差异 | 脚本来源 |
+|------|---------|---------|
+| G套（GGSN/PGW-C/SMF）别名→真实 | ADD APNALIAS（ALIASAPN→CONVERTAPN）+ SET APNREPORTATTR 配真实APN PCF/CHF=SERVICE + LCK/DEA 去活链 | 激活别名APN_适用于GGSN_PGW-C_SMF |
+| S套（SGSN/MME）原始→别名 | ADD ALIASAPN（OLDAPN→NEWAPN）+ IMSI 维度 + 无锁定/去活 | 激活别名APN_适用于SGSN_MME |
+
+### 8.6 簇C L2TP VPN 三激活方式（GWFD-020412 UDG + WSFD-104410 UNC）
+
+| 场景 | 侧 | 关键差异 | 脚本来源 |
+|------|----|---------|---------|
+| 本地配置方式 | UDG | ADD L2TPGROUP + ADD L2TPCLIENTIP（L2TP 组绑源端接口） | 本地配置方式激活L2TP VPN_40342129.md |
+| AAA 下发 L2TP 属性 | UDG | 无 ADD L2TPGROUP，用 ADD L2TPRDSCLIENT（APN 绑源端）+ SET APNL2TPATTR 含 RDSLNSMODE | AAA下发L2TP属性方式激活L2TP VPN_41487855.md |
+| UNC 决策侧 | UNC | 仅 SET APNL2TPCTRL（L2TPSWITCH=ENABLE）+ 可选 SET L2TPKEY | 激活L2TP VPN_46559215.md |
+
+### 8.7 簇C IPv6/双栈/DHCP/PD 场景（含⚠️文档缺口 draft 重建）
+
+| 场景 | 侧 | 关键差异 | 脚本来源 |
+|------|----|---------|---------|
+| IPv6 承载（UDG） | UDG | SET LICENSESWITCH(LKV3G5V6PB01) + OSPFv3 族（PROTOCOL=wlr 发布 WLR）+ VPNINSTAF.AFTYPE=ipv6uni | 激活IPv6承载上下文_38276176.md |
+| IPv4v6 双栈（UDG） | UDG | SET LICENSESWITCH(LKV3G5VDSA01) + ADD APN 双 VPN（HASVPNIPV6）+ ADD POOL/SECTION 双段（IPV4+IPV6） | 激活IPv4v6双栈接入_38276180.md |
+| 双栈 2G3G4G SGSN/MME | UNC | SET LICENSESWITCH(LKV2DUSA02) + SET SMFUNC.DUALFLAG=YES + ADD SMSUBDATA + MOD GTPCCMPT（最复杂 4 步） | 激活IPv4v6双栈接入_SGSN_MME_48043379.md |
+| 双栈 2G3G4G PGW-C / 5G AMF+SMF | UNC | 仅 SET LICENSESWITCH（PGW-C 1 步 / 5G AMF+SMF 2 步双开） | 激活IPv4v6双栈接入_PGW-C / 5G |
+| IPv6 承载（UNC，纯 License） | UNC | 仅 SET LICENSESWITCH（AMF LKV2IPV6AM01 + SMF LKV2IPV6SM01 双开 / 2G3G4G LKV2IPV601+LKV2IPV6SM01） | 激活IPv6承载上下文_AMF_SMF / MME_SGW-C_PGW-C / SGSN_GGSN |
+| ⚠️DHCP/DHCPv6 完整激活（draft 重建） | UNC | 5 DHCP 专属命令（DHCPSERVERGRP/SERVER/BINDPOOLGRP/AGENTIP/DHCPPARAREQ）+ 跨簇 ADDRPOOL/APN/IPALLOCRULE | ⚠️无激活文档，依据参考信息+手册实例+原理重建 |
+| PD-UDG 外部网元地址分配 | UDG | ADD SECTION.V6PREFIXLENGTH=63（<64 触发 PD）+ POOLTYPE=EXTERNAL + OSPFv3 下行路由 | 激活外部网元地址分配 |
+| PD-UNC 本地前缀代理 | UNC | ADD ADDRPOOL(IPv6+Local) + SET APNADDRESSATTR.IPV6ALLOCTYPE=LOCAL 触发 | 激活IPv6前缀代理 |
 
 ---
 

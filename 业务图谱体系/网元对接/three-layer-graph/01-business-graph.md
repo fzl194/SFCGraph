@@ -110,7 +110,7 @@
 - 多 SMF 场景额外 participant：GWFD-020161 CU Full Mesh 全互联拓扑
 
 **uses_feature**：`GWFD-010234`(Single IP,接口抽象合一) / `GWFD-020161`(CU Full Mesh,多 SMF 对接) / `GWFD-010105`(用户面地址分配,N4 会话与地址分配联动)
-**uses_task**：T-CS1-01 配置 N4 VPN 实例(VPN_Signaling) / T-CS1-02 配置 N4if 合一逻辑接口(N4if1/0/0) / T-CS1-03 配置 UPF 标识(SET UPINFO:HOSTNAME) / T-CS1-04 N4 偶联验证(SRVPING/SRVTRACERT/DSP ROUTE)
+**uses_task**：T-ND-07 配置 N4 控制面接口(含 N4 VPN 实例+N4if 合一逻辑接口 N4if1/0/0+SET UPINFO:HOSTNAME+N4 偶联验证 SRVPING/SRVTRACERT/DSP ROUTE)
 **constrained_by**：`BR-ND-01`(N4 必备性) / `BR-ND-02`(接口强制合一) / `BR-ND-03`(VPN 四统一)
 **uses_semantic_object**：`SO-ND-01`(N4if 接口) / `SO-ND-09`(VPN_Signaling) / `SO-ND-21`(UPF 标识) / `SO-ND-22`(PFCP 会话)
 
@@ -143,7 +143,7 @@
 - NWDAF（Nupf 服务化接口对端，external_system，按需）
 
 **uses_feature**：`GWFD-010234`(Single IP) / `GWFD-010105`(用户面地址分配) / `GWFD-020421`(基于位置的地址分配) / `IPFD-010001`(接口管理)
-**uses_task**：T-CS2-01 业务面 VPN / T-CS2-02 接入侧接口(Saif 或 N3if/S1-uif,含切片) / T-CS2-03 中间侧接口(Scif 或 N9cif/S5-Sif) / T-CS2-04 锚点侧接口(Paif 强制合一) / T-CS2-05 APN/DNN / T-CS2-06 地址池三件套 / T-CS2-07 IPALLOCRULE / T-CS2-08(按需)Nupf 服务化接口
+**uses_task**：T-ND-08 配置业务用户面接口(业务面 VPN+接入侧 Saif/N3if/S1-uif 含切片+中间侧 Scif/N9cif/S5-Sif+锚点侧 Paif 强制合一+(按需)Nupf 服务化接口) / T-ND-09 配置会话接入(APN/DNN+地址池三件套 POOL→SECTION→POOLGROUP→POOLBINDGROUP→POOLGRPMAP+IPALLOCRULE)
 **constrained_by**：`BR-ND-02`(接口强制合一) / `BR-ND-03`(VPN 四统一) / `BR-ND-04`(跨域协同)
 **uses_semantic_object**：`SO-ND-02`(Saif) / `SO-ND-03`(Scif) / `SO-ND-04`(Paif) / `SO-ND-05`(外联口 SGi/N6) / `SO-ND-06`(Nupf) / `SO-ND-15`(APN/DNN) / `SO-ND-16~20`(地址池五件套+分配规则)
 
@@ -171,7 +171,7 @@
 - VNF LCM（独立部署时的 EMS 归属管理，external_system，按需）
 
 **uses_feature**：`NPFD-010000`(操作维护功能) / `NPFD-010014`(支持 NTP 功能,间接关联基础)
-**uses_task**：T-CS3-01 重置北向对接用户密码 / T-CS3-02 重置 SNMP 用户共享认证/加密密钥 / T-CS3-03 安装网管适配层 / T-CS3-04 创建 UDG 网元(14 参数) / T-CS3-05(仅 VNF LCM 独立部署)检查 EMS 归属 / T-CS3-06 验证 LST ME
+**uses_task**：T-ND-06 配置网元和网管对接(5 步闭包:重置北向对接用户密码→重置 SNMP 用户共享认证/加密密钥→安装网管适配层→创建 UDG 网元 14 参数→(仅 VNF LCM 独立部署)检查 EMS 归属→验证 LST ME)
 **constrained_by**：`BR-ND-06`(密码三元组) / `BR-ND-05`(CS-5→CS-3 回流)
 **uses_semantic_object**：`SO-ND-23`(北向用户) / `SO-ND-24`(SNMP 用户) / `SO-ND-25`(网管适配层) / `SO-ND-26`(被管网元 14 参数) / `SO-ND-27`(EMS 归属)
 
@@ -203,9 +203,16 @@
 - NFVO（直接部署 VNF，external_system，SDN 场景替代 VNFM）
 
 **uses_feature**：`IPFD-014000`(路由功能,目录) / `IPFD-014001`(OSPF) / `IPFD-014002`(BGP) / `IPFD-014003`(静态路由) / `IPFD-012003`(BFD) / `GWFD-020411`(MPLS VPN) / `IPFD-015004`(IPsec) / `IPFD-010001`(接口管理,MTU/外联口基础)
-**uses_task**：
-- *自动部署轨*（无 NP 卡 / SDN / 网络加速卡）：T-CS4-A1 VPN 实例+地址族 / T-CS4-A2 全局使能(SET BFD[+BGP/MPLSSITE]) / T-CS4-A3 关闭自动配置开关(SET AUTOCONFIG:SWITCHFLAG=FALSE+DSP OPSASSISTSTATE) / T-CS4-A4 路由协议层(OSPF/OSPFv3/静态/BGP/MPLS VPN) / T-CS4-A5 AUTOSCALING 模板族(ETHTRUNK/SERVICE/BFD/SRROUTE/MPLS) / T-CS4-A6 打开自动配置开关(SET AUTOCONFIG:SWITCHFLAG=TRUE+DSP OPSASSISTSTATE) / T-CS4-A7 Loopback(BGP/MPLS 场景)
-- *手动部署轨*（NP 卡直连 PE / 自动失败补救）：T-CS4-M1 VPN 实例+地址族 / T-CS4-M2 全局使能 / T-CS4-M3 手动外联口基础设施(MOD INTERFACE→ADD INTERFACE→ADD IPBINDVPN→ADD ETHSUBIF→ADD IFIPV4/V6ADDRESS) / T-CS4-M4 手动 BFD 会话(ADD BFDSESSION) / T-CS4-M5 路由协议层 / T-CS4-M6(MPLS 场景)手动 ADD MPLSIF / T-CS4-M7(NP100 多框级联)ADD NPDIRECTCONNECTPORT
+**uses_task**（按路由协议/部署方式拆为可复用原子，自动轨 A*/手动轨 M* 的差异由 T-ND-11 外联口自动部署开关 + 04 层 CommandRule 表达）：
+- T-ND-10 配置 VPN 实例与接口绑定（自动/手动均需，VPN 实例+地址族+IPBINDVPN）
+- T-ND-11 外联口自动部署（自动轨: SET AUTOCONFIG 开关+AUTOSCALING 模板族 ETHTRUNK/SERVICE/BFD/SRROUTE/MPLS；手动轨由 T-ND-10/15 等承接）
+- T-ND-12 配置 OSPF（OSPF/OSPFv3，自动轨 AUTOSCALING vs 手动逐条）
+- T-ND-13 配置 BGP（BGP over OSPF/静态，含 Loopback+IMPORTROUTE=wlr）
+- T-ND-14 配置静态路由（自动 AUTOSCALINGSRROUTE / 手动 ADD SRROUTE）
+- T-ND-15 配置 BFD（双向 BFD / 单臂 BFD Echo；自动 AUTOSCALINGBFD / 手动 ADD BFDSESSION）
+- T-ND-16 配置隧道（IPsec/GRE/MPLS VPN；MPLS 含手动 ADD MPLSIF）
+- T-ND-17 配置 NP 卡级联口（仅 NP100 多框级联: ADD NPDIRECTCONNECTPORT）
+- T-ND-18 整网调测 FirstCall（NGPING/DSP SESSIONINFO 等，承接全部 CS 对接完成后）
 **constrained_by**：`BR-ND-07`(BGP 依赖 IGP) / `BR-ND-08`(MPLS VPN 公私分离) / `BR-ND-09`(自动部署开关规范) / `BR-ND-10`(MTU 层级)
 **uses_semantic_object**：`SO-ND-09`(VPN 实例) / `SO-ND-10`(OSPF 进程/区域) / `SO-ND-11`(静态路由) / `SO-ND-12`(BFD 会话) / `SO-ND-13`(BGP 三件套) / `SO-ND-14`(MPLS 全局/接口) / `SO-ND-05`(外联口) / `SO-ND-28`(Loopback) / `SO-ND-29`(自动部署模板) / `SO-ND-30~32`(隧道 IPsec/GRE/MPLS) / `SO-ND-33`(NP 级联口) / `SO-ND-34`(组网模式)
 
@@ -234,7 +241,8 @@
 - FusionStage（NTP 时间源 2，external_system）
 
 **uses_feature**：`NPFD-010014`(支持 NTP 功能) / `IPFD-010001`(接口管理,MTU 修改/外联口基础)
-**uses_task**：T-CS5-01 加载 License(DP-CS5-06 决策路径) / T-CS5-02 NTP 双路时间同步 / T-CS5-03 修改网元基本信息(MOD ME/SET OMIP,注意触发 CS-3 回流) / T-CS5-04 高危命令二次授权(SET SECAUTH+ADD USRSECAUTH) / T-CS5-05 公共参数 11 项 / T-CS5-06 MTU 三层+自动部署模板同步 / T-CS5-07 架构认知确认(DP-CS5-01~04)
+**uses_task**：T-ND-01 加载 License(DP-CS5-06 决策路径) / T-ND-02 NTP 双路时间同步 / T-ND-03 修改网元基本信息(MOD ME/SET OMIP,注意触发 CS-3 回流) / T-ND-04 配置公共参数含 MTU 三层(11 项公共参数+Fabric/外联口 MTU+自动部署模板同步) / T-ND-05 高危命令二次授权(SET SECAUTH+ADD USRSECAUTH)
+> **注**：架构认知确认（原 T-CS5-07）属 DecisionPoint 范畴（DP-CS5-01~04），不单列 task；其影响通过 DP selects 关系边表达。
 **constrained_by**：`BR-ND-01`(N4 必备性,架构认知约束) / `BR-ND-10`(MTU 层级) / `BR-ND-05`(CS-5→CS-3 回流)
 **uses_semantic_object**：`SO-ND-35`(部署形态) / `SO-ND-36`(UPF 角色) / `SO-ND-37`(抽象接口映射) / `SO-ND-38`(License) / `SO-ND-39`(NTP 时间源) / `SO-ND-40`(网元身份) / `SO-ND-41`(二次授权) / `SO-ND-42`(公共参数 11 项) / `SO-ND-43`(MTU 三层)
 
@@ -243,7 +251,11 @@
 ## 3. DecisionPoint（27 个，组网模式决策树）
 
 > **数据来源**：cross-topic-analysis.md §6.4（CS-4 组网模式 5 维决策树）+ §6.5（CS-5 架构认知）+ §6.1~6.3（CS-1/2/3 各自决策点）。
-> **owner_layer 统一**：`business`（业务层决策点）。**owner_ref_type 统一**：`ConfigurationSolution`。**owner_ref**：对应 CS-ND-XX。
+> **★Schema §8.8 必选字段统一声明（U-H-02 修复）**：本节 27 个 DecisionPoint 的 3 个公共必选字段统一取值，不在每行重复，特此声明：
+> - `owner_layer` = `business`（全部 27 个 DP，业务层决策点）
+> - `owner_ref_type` = `ConfigurationSolution`（全部 27 个 DP，归属对接方案闭包）
+> - `status` = `active`（全部 27 个 DP）
+> - `owner_ref` = 各 DP 对应的 CS-ND-XX（已在表中 `owner_ref` 列显式标注）
 
 ### 3.1 CS-5 基础就绪决策点（7 个，DP-CS5-01~07）
 
@@ -312,7 +324,7 @@
 | `BR-ND-10` | MTU 层级约束 | `scope_rule` | `explicit` | `config` | MTU 层级：**网卡 MTU ≥ Fabric MTU > 主接口 MTU ≥ 子接口 MTU**(建议子接口与主接口一致)；外联口 MTU 必须与直连下一跳网关(DCGW/路由器)一致，默认 1500；IPv6 分片联动：SET IPV6FRAGPLCY:INNERIPV6FRAGPLCY 初始值 TOOBIG_PKTDROP 在 MTU 偏小时丢包，业务稳定需改 OUTERFRAG；Eth-trunk 不修改成员接口 MTU，成员接口加入 Eth-trunk 前修改 MTU 会导致添加失败 | MTU 不对齐→丢包/分片异常；Eth-trunk 成员 MTU 改后加入失败 | `active` | `EV-TK-02`, `EV-CA-02` |
 
 > **rule_type 分布**：selection_rule(1) + design_rule(3) + scope_rule(3) + acceptance_rule(1) + runtime_check_rule(2) + diagnosis_rule(0)。
-> **注**：Schema §8.9 枚举为 5 类（selection_rule/scope_rule/design_rule/acceptance_rule/diagnosis_rule），BR-ND-05/09 沿用计费标杆 BR-CH-08/14 的 `runtime_check_rule` 类型作为补充（运行时检查规则，与 ops 来源对齐）。
+> **注（U-M-01 处理，选项 B）**：Schema §8.9 枚举为 5 类（selection_rule/scope_rule/design_rule/acceptance_rule/diagnosis_rule），BR-ND-05/09 沿用计费标杆 BR-CH-08/14 的 `runtime_check_rule` 类型作为**本场景扩展枚举**（运行时检查规则，与 ops 来源对齐），等 Schema 升级时合并入正式枚举。此项与计费标杆保持一致，非阻断。
 
 ---
 
@@ -420,18 +432,20 @@
 
 > **去重后引用特性**：17 个（与 cross-feature-analysis.md §1.4 一致）。feature 详情见第2层 `02-feature-graph.md`。
 
-### 6.3 方案使用任务（uses_task，task_id 由第3层 03-task-layer 定义）
+### 6.3 方案使用任务（uses_task，task_id 权威形式 T-ND-NN，与 03/05 层一致）
 
 > **Schema §13 禁止关系**：`ConfigurationSolution → ConfigTask` 的完整顺序链暂不进入主 schema（条件分支过强），仅保留 `uses_task`。
-> 本节 uses_task 引用 cross-topic-analysis.md §6 各 CS 的 Task 中文描述，task_id 形式（T-CS1-01 等）由第3层正式定义。
+> **task_id 权威形式**：本表 uses_task 全部使用第3层定义的权威 task_id（`T-ND-NN`），与 03-task-layer §0.1 / 05-cross-layer-mapping §2.1 一致。01 层原中文流程描述（T-CS1-* / T-CS2-* / T-CS3-* / T-CS4-A*/M* / T-CS5-*）已合并为 03 层的 18 个原子 task，对应关系见 03 层 §0.1。
+> **★顺序语义声明（U-M-08 强化）**：本表 uses_task 列表**无顺序语义**，CS→ConfigTask 的执行顺序由第3层 `FeatureTaskOrderEdge`（FE-ND-01~15）与 `TaskCommandOrderEdge`（TE-ND-*）承载。
 
-| 起点 | uses_task（中文描述，task_id 由 03 层定义） |
+| 起点 | uses_task（权威 task_id T-ND-NN + task_name） |
 |------|------|
-| `CS-ND-01` | T-CS1-01 配置 N4 VPN 实例(VPN_Signaling) / T-CS1-02 配置 N4if 合一逻辑接口(N4if1/0/0) / T-CS1-03 配置 UPF 标识(SET UPINFO:HOSTNAME) / T-CS1-04 N4 偶联验证(SRVPING/SRVTRACERT/DSP ROUTE) |
-| `CS-ND-02` | T-CS2-01 业务面 VPN / T-CS2-02 接入侧接口(Saif/N3if/S1-uif,含切片) / T-CS2-03 中间侧接口(Scif/N9cif/S5-Sif) / T-CS2-04 锚点侧接口(Paif 强制合一) / T-CS2-05 APN/DNN / T-CS2-06 地址池三件套(POOL→SECTION→POOLGROUP→POOLBINDGROUP→POOLGRPMAP) / T-CS2-07 IPALLOCRULE / T-CS2-08(按需)Nupf 服务化接口 |
-| `CS-ND-03` | T-CS3-01 重置北向对接用户密码 / T-CS3-02 重置 SNMP 用户共享认证/加密密钥 / T-CS3-03 安装网管适配层 / T-CS3-04 创建 UDG 网元(14 参数) / T-CS3-05(仅 VNF LCM 独立)检查 EMS 归属 / T-CS3-06 验证 LST ME |
-| `CS-ND-04` | *自动轨* T-CS4-A1 VPN+地址族 / T-CS4-A2 全局使能(SET BFD[+BGP/MPLSSITE]) / T-CS4-A3 关闭自动配置开关 / T-CS4-A4 路由协议层(OSPF/OSPFv3/静态/BGP/MPLS VPN) / T-CS4-A5 AUTOSCALING 模板族 / T-CS4-A6 打开自动配置开关 / T-CS4-A7 Loopback(BGP/MPLS)<br>*手动轨* T-CS4-M1 VPN+地址族 / T-CS4-M2 全局使能 / T-CS4-M3 手动外联口基础设施 / T-CS4-M4 手动 BFD 会话 / T-CS4-M5 路由协议层 / T-CS4-M6(MPLS)手动 ADD MPLSIF / T-CS4-M7(NP100 多框)ADD NPDIRECTCONNECTPORT |
-| `CS-ND-05` | T-CS5-01 加载 License(DP-CS5-06) / T-CS5-02 NTP 双路时间同步 / T-CS5-03 修改网元基本信息(MOD ME/SET OMIP,触发 CS-3 回流) / T-CS5-04 高危命令二次授权 / T-CS5-05 公共参数 11 项 / T-CS5-06 MTU 三层+自动部署模板同步 / T-CS5-07 架构认知确认(DP-CS5-01~04) |
+| `CS-ND-01` | T-ND-07 配置 N4 控制面接口（N4 VPN 实例+N4if 合一逻辑接口+SET UPINFO+N4 偶联验证） |
+| `CS-ND-02` | T-ND-08 配置业务用户面接口（业务面 VPN+Saif/Scif/Paif+切片+Nupf 按需）/ T-ND-09 配置会话接入（APN/DNN+地址池三件套+IPALLOCRULE） |
+| `CS-ND-03` | T-ND-06 配置网元和网管对接（5 步闭包：北向密码→SNMP 密钥→适配层→创建网元 14 参数→EMS 归属→LST ME 验证） |
+| `CS-ND-04` | T-ND-10 VPN 实例与接口绑定 / T-ND-11 外联口自动部署（AUTOSCALING 模板族+SET AUTOCONFIG 开关） / T-ND-12 OSPF / T-ND-13 BGP / T-ND-14 静态路由 / T-ND-15 BFD / T-ND-16 隧道（IPsec/GRE/MPLS VPN） / T-ND-17 NP 卡级联口 |
+| `CS-ND-05` | T-ND-01 加载 License（DP-CS5-06） / T-ND-02 NTP 双路时间同步 / T-ND-03 修改网元基本信息（触发 CS-3 回流） / T-ND-04 配置公共参数含 MTU 三层 / T-ND-05 高危命令二次授权 |
+| （调测，跨 CS） | T-ND-18 整网调测 FirstCall（承接全部 CS 对接完成后） |
 
 ### 6.4 决策点归属（has_decision）
 
@@ -574,8 +588,8 @@ NGPING 丢包率
 | BusinessRule | **10** | `BR-ND-01`~`BR-ND-10` |
 | SemanticObject | **43** | `SO-ND-01`~`SO-ND-43`（抽象接口 8 + VPN/路由 6 + 会话接入 6 + 网管 7 + 路由扩展 7 + 基础就绪 9） |
 | Scope（子对象） | 9 | network_control / access_side / session_anchor / slice_binding / mgmt_access / external_routing / dual_stack / tunnel_overlay / global_bootstrap |
-| Participant（子对象） | 19 | UDG/UPF/SMF/SGW-C/PGW-C/(R)AN/I-UPF/ULCL/DN/PDN/UDM/NWDAF/U2020-MAE/OM Portal/VNF LCM/DC-GW/PE/EOR/SDN 控制器/NFVO/OMC/FusionStage |
-| **业务层对象总计** | **~115** | — |
+| Participant（子对象） | 22（U-M-03 修正） | UDG/UPF/SMF/SGW-C/PGW-C/(R)AN/I-UPF/ULCL/DN/PDN/UDM/NWDAF/U2020-MAE/OM Portal/VNF LCM/DC-GW/PE/EOR/SDN 控制器/NFVO/OMC/FusionStage（注：UDG/UPF 视为同一实体按角色拆分计 2） |
+| **业务层对象总计** | **~118**（原 ~115，Participant 口径修正 +3） | — |
 
 ### 关系边计数
 

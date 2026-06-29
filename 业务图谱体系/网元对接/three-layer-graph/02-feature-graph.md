@@ -421,10 +421,37 @@ GWFD-010224(N4/Sx PFCP,外部)─┘
 | `depends_on` | **4** | 3 条指向外部特性（GWFD-010224/010233）+ 1 条集内闭环（GWFD-020421→GWFD-010105） |
 | `requires_license` | **3** | GWFD-020161/020411/020421 各 1 条 |
 | `has_subfeature`（parent_feature_id 建模） | 12 | 4 目录父节点 → 子能力（IPFD-010000→010001；IPFD-012000→012003；IPFD-014000→014001/014002/014003；NPFD-010000→010014）+ 别名 IPFD-104403→IPFD-012000 |
+| `decomposes_to`（Feature→ConfigTask，Schema §9.8） | **14** | 见 §5.1 decomposes_to 边表（与 05-cross-layer-mapping §3.1 一致） |
 | `constrained_by`（FeatureRule） | **4** | FR-UD-01~FR-UD-04 |
 | **特性层对象总计** | **16 Feature（规范）+ 1 别名（deprecated）+ 3 License + 4 FeatureRule** | — |
 
 > **§13 禁止关系遵循**：本图谱 Feature 不直接绑 MMLCommand / ConfigObject；特性差异（如部署形态、IP 版本、路由协议）通过 `variant_dimensions` 字段 + FeatureRule 表达；命令与配置对象延后到第4层 04-command-graph。
+
+### 5.1 Feature `decomposes_to` ConfigTask 边表（14 条，Schema §9.8，与 05 §3.1 一致）
+
+> **U-H-03 修复**：补建 Feature→ConfigTask 的 `decomposes_to` 正式关系边，使特性层关系边完整。task_id 为 03-task-layer 权威形式 `T-ND-NN`。
+> **范围说明**：目录父节点（IPFD-010000/012000/014000、NPFD-010000）不直接 decomposes_to，由其子能力间接覆盖（符合 FR-UD-01）。别名节点 IPFD-104403（deprecated）不参与。
+
+| 边序号 | 源 Feature | 关系 | 目标 ConfigTask | 说明 |
+|--------|-----------|------|-----------------|------|
+| 1 | `GWFD-010234`（Single IP） | `decomposes_to` | `T-ND-07`（配置 N4 控制面接口） | Single IP 支持 N4if 抽象合一 |
+| 2 | `GWFD-010234`（Single IP） | `decomposes_to` | `T-ND-08`（配置业务用户面接口） | Single IP 支持业务接口抽象合一（Saif/Scif/Paif） |
+| 3 | `GWFD-010105`（用户面地址分配） | `decomposes_to` | `T-ND-09`（配置会话接入） | 地址分配是会话接入闭环核心 |
+| 4 | `GWFD-020421`（基于位置的地址分配） | `decomposes_to` | `T-ND-09`（配置会话接入） | 位置维度叠加在 IPALLOCRULE |
+| 5 | `GWFD-020161`（CU Full Mesh 组网） | `decomposes_to` | `T-ND-07`（配置 N4 控制面接口） | 多 SMF 对接前提 |
+| 6 | `GWFD-020161`（CU Full Mesh 组网） | `decomposes_to` | `T-ND-17`（配置 NP 卡级联口） | NP100 多框级联拓扑 |
+| 7 | `GWFD-020411`（MPLS VPN） | `decomposes_to` | `T-ND-16`（配置隧道） | MPLS VPN 隧道方案 |
+| 8 | `IPFD-014001`（支持 OSPF） | `decomposes_to` | `T-ND-12`（配置 OSPF） | — |
+| 9 | `IPFD-014002`（支持 BGP） | `decomposes_to` | `T-ND-13`（配置 BGP） | — |
+| 10 | `IPFD-014003`（静态路由） | `decomposes_to` | `T-ND-14`（配置静态路由） | — |
+| 11 | `IPFD-012003`（BFD） | `decomposes_to` | `T-ND-15`（配置 BFD） | — |
+| 12 | `IPFD-015004`（IPSec 功能） | `decomposes_to` | `T-ND-16`（配置隧道） | IPsec 隧道方案 |
+| 13 | `IPFD-010001`（接口管理） | `decomposes_to` | `T-ND-08`（配置业务用户面接口） | 接口创建/IP 编址基础 |
+| 14 | `IPFD-010001`（接口管理） | `decomposes_to` | `T-ND-10`（VPN 实例与接口绑定）/ `T-ND-11`（外联口自动部署） | MTU/外联口基础 |
+| — | `NPFD-010014`（支持 NTP 功能） | `decomposes_to` | `T-ND-02`（配置 NTP 时间同步） | NTP 时间源 |
+| — | `NPFD-010000`（操作维护功能，目录） | `decomposes_to` | `T-ND-03`（修改网元基本信息）/ `T-ND-05`（高危命令二次授权）/ `T-ND-06`（网管对接） | 由目录父节点聚合表达运维 task 归属 |
+
+> **计数说明**：上表显式列出 14 条核心 decomposes_to 边（边序号 1~14，与 05 §3.1 的 14 条映射一一对应）；末两行（NPFD-010014 / NPFD-010000）为运维类特性的补充映射，未计入 14 条主边数（与 05 §3.1 口径一致）。目录父节点 IPFD-010000/012000/014000 由子能力间接覆盖，不单独建边。
 
 ---
 
@@ -438,7 +465,8 @@ GWFD-010224(N4/Sx PFCP,外部)─┘
 | FeatureRule | **4** | FR-UD-01 ~ FR-UD-04 |
 | depends_on 边 | **4** | 3 外部 + 1 集内闭环 |
 | requires_license 边 | **3** | 3 GWFD 受控特性 |
-| **特性层对象总计** | **27**（16+1+3+4+4+3，去重边） | — |
+| decomposes_to 边（Feature→ConfigTask，U-H-03 补建） | **14** | 见 §5.1，与 05 §3.1 一致 |
+| **特性层对象总计** | **41**（16+1+3+4 + 4+3+14，去重边） | — |
 
 ---
 
