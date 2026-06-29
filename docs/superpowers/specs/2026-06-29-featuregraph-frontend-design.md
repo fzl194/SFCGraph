@@ -26,6 +26,24 @@ platform-next 下特性图谱前端展示，参考命令图谱已有的三级结
 - decomposes_to（特性 → ConfigTask 任务层接入）—— 第一版未建
 - SubFeature 独立对象类型 —— 已用 feature_code `-N` 后缀表达，前端按普通 Feature 渲染
 
+## 2A. 前置依赖（设计态补 doc_assets 字段）
+
+多 md 展示需要每个特性的完整文档清单（含 doc_type：概述/激活/原理/参考/...）。当前 `features.jsonl` 的 `source_evidence_ids` 只含概述 path（且 270/942 特性为空），**不足以支撑多 md**。
+
+**设计态改动（FeatureGraph/builder）**：在 `features.jsonl` 每个 Feature 节点加回 `doc_assets` 字段：
+```json
+"doc_assets": [
+  {"doc_path": "output/.../概述.md", "doc_type": "overview", "doc_title": "..."},
+  {"doc_path": "output/.../激活.md", "doc_type": "activation", "doc_title": "..."},
+  {"doc_path": "output/.../原理.md", "doc_type": "principle", "doc_title": "..."}
+]
+```
+- 来源：`FeatureGraph/builder/steps/feature.py` 的 `find_overview_md` 已返回 doc_assets 列表（含 doc_type），只需写回节点字段（之前删除是误删——多 md 展示需要 doc_type，纯 path 不够）
+- `source_evidence_ids` 保留（边表证据用）或由 doc_assets 派生，二选一（倾向保留 source_evidence_ids 作"被引用证据"，doc_assets 作"全部文档清单"）
+- 此改动让 service 的 `get_feature_docs` 变成纯字段读取（同 command_graph 的 `get_command_md` 读 source_evidence_ids），不扫描文件系统
+
+**此为前端展示的前置条件**——先补 doc_assets 字段，再做前端。
+
 ## 3. 整体架构
 
 ```text
@@ -69,9 +87,10 @@ frontend/src/feature_graph/*.vue           （新前端，复刻 command_graph/*
 ### 5.2 统一图（复用命令图谱 _adjacency 模型）
 `_load_graph()` 聚合：
 - 点：Feature（type=feature）、License（type=license）
-- 边：feature_relations（depends_on/conflicts_with/cooperates_with/affects/interacts_with/supports）、requires_license、parent_feature_code（catalog 父子，可选）
+- 边：feature_relations（实际数据 relation_type：depends_on/conflicts_with/affects/interacts_with/supports；**cooperates_with 当前未挖掘，预留**）、requires_license
+- **parent_feature_code 不进关系图**（仅作 Feature 节点字段存储，目录父子树不遍历，避免目录节点污染特性关系图）
 
-`get_feature_graph(nf, version, code, hops=2)` → `{nodes:[{id,type,label,properties}], edges:[{from,to,type,properties}]}`，BFS 子图（复用 command_graph/service.py:get_subgraph 逻辑）。
+`get_feature_graph(nf, version, code, hops=1, edge_types=None)` → `{nodes:[{id,type,label,properties}], edges:[{from,to,type,properties}]}`，BFS 子图（复用 command_graph/service.py:get_subgraph 逻辑）。默认 hops=1 防爆炸，edge_types 白名单过滤（默认 depends_on+conflicts_with）。
 
 ### 5.3 接口方法签名
 
@@ -89,9 +108,9 @@ list_licenses(nf, version, search=None, page=1, size=50) -> {total,page,size,ite
 
 # 特性详情（L3）
 get_feature(nf, version, code) -> full feature record
-get_feature_docs(nf, version, code) -> [{doc_path, doc_type, doc_title}]  # 扫描特性目录返回多 md
-get_feature_graph(nf, version, code, hops=2) -> {nodes, edges}  # 统一图
-get_feature_relations(nf, version, code) -> [edge]  # 该特性参与的边（表格用）
+get_feature_docs(nf, version, code) -> [{doc_path, doc_type, doc_title}]  # 读 features.jsonl 的 doc_assets 字段（设计态预计算，见 §2A）
+get_feature_graph(nf, version, code, hops=1, edge_types=None) -> {nodes, edges}  # 统一图，默认1跳防爆炸，edge_types 白名单过滤
+get_feature_relations(nf, version, code) -> [edge]  # 该特性参与的边（表格用，悬空 target 回退显示原始 code）
 get_feature_licenses(nf, version, code) -> [license_edge]  # 该特性需要的 license
 
 # license 详情（L3）
@@ -103,7 +122,7 @@ get_doc_content(rel_path) -> str  # 读 md，路径防穿越
 resolve_doc_path(rel_path) -> Path | None  # 图片等静态文件
 ```
 
-`get_feature_docs` 多 md 来源：扫描 `corpus_root/{特性目录}` 下所有 md，按 doc_type 分类（复用 FeatureGraph/builder 的 find_overview_md/classify_doc_type 逻辑，或在 service 内重写轻量版）。doc_type：overview/activation/debug/principle/reference/flow/other。
+`get_feature_docs` 多 md 来源：**读 `features.jsonl` 的 `doc_assets` 字段**（设计态预计算，见 §2A），不扫描文件系统。doc_type：overview/activation/debug/principle/reference/flow/other。空 doc_assets（无文档特性）返回 []，前端显示"无文档"空状态。
 
 ## 6. 后端 router.py（REST 端点，对齐命令图谱风格）
 
@@ -153,46 +172,58 @@ resolve_doc_path(rel_path) -> Path | None  # 图片等静态文件
 ## 8. 多 md 展示机制
 
 特性详情右侧顶部 doc_type tab：
-1. 进入详情 → 调 `get_feature_docs(nf,version,code)` 返回 `[{doc_path,doc_type,doc_title}]`
+1. 进入详情 → 调 `get_feature_docs(nf,version,code)` 返回 `[{doc_path,doc_type,doc_title}]`（数据来自 doc_assets 字段，见 §2A）
 2. 顶部渲染 tab（按 doc_type：概述/激活/原理/参考/flow/other），默认选 overview
 3. 选中 tab → 调 `get_doc_content(doc_path)` → DocViewer 渲染
 4. md 内图片/交叉引用走 `/api/v1/feature-graph/file` + `/doc-content`（复用命令图谱 DocViewer 的路径重写）
+5. **空状态**：doc_assets 为空（270 个无文档特性）→ 右侧显示"该特性无产品文档"占位，不调 DocViewer
 
-命令图谱单 md（source_evidence_ids[0]）→ 特性图谱多 md（doc_type tab 切换），DocViewer 本身复用。
+命令图谱单 md（source_evidence_ids[0]）→ 特性图谱多 md（doc_type tab 切换），DocViewer 本身复用（已支持 feature-graph/command-graph 双 base path，无需改）。
 
-## 9. 特性关系图（统一结构复用）
+## 9. 特性关系图（统一结构复用 + 独立渲染组件）
 
-后端 `get_feature_graph(code, hops=2)` 复用命令图谱 `get_subgraph` 模型：
+后端 `get_feature_graph(code, hops=1, edge_types=None)` 复用命令图谱 `get_subgraph` 模型：
 - `{nodes:[{id,type,label,properties}], edges:[{from,to,type,properties}]}`
-- BFS 从中心特性（code）N 跳，含 depends_on/conflicts_with/cooperates_with/affects/interacts_with/supports 边
-- 节点 type=feature，边 type=关系类型
+- BFS 从中心特性（code）N 跳，默认 **hops=1**（防高连接特性图爆炸），前端提供"展开"控件调 hops=2
+- `edge_types` 白名单（默认 depends_on+conflicts_with，可加 cooperates_with/affects 等）
+- 节点 type=feature，边 type=关系类型（实际数据：depends_on/conflicts_with/affects/interacts_with/supports；cooperates_with 当前未挖掘，预留）
 
-前端复用命令图谱 vis-network 渲染组件（节点颜色按 type、边颜色/样式按 relation_type：depends_on 实线、conflicts_with 红色、cooperates_with 虚线等）。点节点跳对应特性详情。
+**前端图组件不直接复用 CommandGraph.vue**（其 buildVisNodes/buildVisEdges 硬编码命令图谱 type→group/颜色 + edge→样式，特性节点/边无样式规则）。
 
-## 10. 配置
+方案：新建 `shared/RelationGraphBase.vue`（吃统一 `{nodes,edges}` + `nodeTypeConfig`/`edgeTypeConfig` 配置映射），命令图谱 CommandGraph.vue 和特性 `FeatureRelationGraph.vue` 都基于它扩展。特性图配置：
+- 节点：type=feature → 蓝色方块（中心特性高亮）
+- 边：depends_on 实线灰、conflicts_with 红色、affects/interacts_with/supports 虚线灰，边 label=relation_type
+- 点节点跳对应特性详情
 
-`platform-next` 配置（shared.config）新增/修改 `feature_graph` 段：
+（若不想抽 base，可简化为新建 `FeatureRelationGraph.vue` 独立配置 vis-network，不复用 CommandGraph.vue。两者皆可，实现时定。）
+
+## 10. 配置（重写 config.yaml feature_graph 块）
+
+现有 `platform-next/config.yaml` 的 `feature_graph` 块用旧键（`data_dir` + `columns:` 用过期字段 feature_id/feature_name/product_type）。**本次完全重写该块**（删 data_dir/columns，加 assets_root/doc_root），对齐 command_graph 模式：
 ```yaml
 feature_graph:
-  assets_root: ../FeatureGraph/data   # 设计态产物
-  doc_root: ..                         # 仓库根（读 md，output/... 路径）
+  assets_root: ../FeatureGraph/data   # 设计态产物（相对 platform-next/ 根，同 command_graph 的 ../CommandGraph/data/assets）
+  doc_root: ..                         # 仓库根（读 md，output/... 路径，同 command_graph）
 ```
-对齐 command_graph 的 `assets_root`/`doc_root` 模式。
+实现时确认旧 `columns` 列表不残留（避免新 service 继承过期字段）。
 
-## 11. 废弃清单（删除）
+## 11. 废弃清单（删除 platform-next 前后端，保留 FeatureGraph/ 设计态）
 
+**删除（展示态-后端）**：
 - `platform-next/feature_graph/service.py`（旧 CSV）
 - `platform-next/feature_graph/router.py`（旧）
 - `platform-next/feature_graph/review_service.py`（审查功能，不要）
 - `platform-next/feature_graph/column_config.py`（旧字段配置）
 - `platform-next/feature_graph/__init__.py`（重建）
+
+**删除（展示态-前端）**：
 - `platform-next/frontend/src/feature_graph/FeatureIndex.vue`
 - `platform-next/frontend/src/feature_graph/FeatureList.vue`
 - `platform-next/frontend/src/feature_graph/FeatureRelations.vue`
 - `platform-next/frontend/src/feature_graph/FeatureLicenses.vue`
 - `platform-next/frontend/src/feature_graph/FeatureDetail.vue`
 
-保留 `FeatureGraph/`（设计态流水线）。
+**保留（设计态）**：`FeatureGraph/`（抽取流水线 + data/）。本次还要在 `FeatureGraph/builder` 补 doc_assets 字段（见 §2A）。
 
 ## 12. 验收标准
 
@@ -206,13 +237,13 @@ feature_graph:
 
 ## 13. 关键复用对照（实现时参考）
 
-| 特性图谱新建 | 命令图谱参考文件 |
-|---|---|
-| feature_graph/service.py | command_graph/service.py（_load/get_stats/list/get_xxx/get_subgraph） |
-| feature_graph/router.py | command_graph/router.py |
-| FeatureOverview.vue | command_graph/CommandOverview.vue |
-| FeatureListPage.vue | command_graph/CommandList.vue（+tab） |
-| FeatureDetail.vue | command_graph/CommandDetail.vue |
-| LicenseDetail.vue | command_graph/CommandDetail.vue（简化） |
-| 特性关系图渲染 | command_graph/CommandGraph.vue（vis-network） |
-| md 渲染 | shared/DocViewer.vue（复用不变） |
+| 特性图谱新建 | 命令图谱参考 | 复用程度 |
+|---|---|---|
+| feature_graph/service.py | command_graph/service.py（_load/get_stats/list/get_xxx/get_subgraph） | 结构复刻，字段换特性域 |
+| feature_graph/router.py | command_graph/router.py | 端点风格复刻 |
+| FeatureOverview.vue | command_graph/CommandOverview.vue | 结构复刻 |
+| FeatureListPage.vue | command_graph/CommandList.vue（+tab） | 复刻 + 加两 tab |
+| FeatureDetail.vue | command_graph/CommandDetail.vue | 复刻（左侧 tab 内容换特性域） |
+| LicenseDetail.vue | command_graph/CommandDetail.vue（简化） | 参考结构 |
+| 特性关系图渲染 | command_graph/CommandGraph.vue | **不直接复用**（type/edge 样式硬编码命令域）；建 shared/RelationGraphBase.vue 或独立 FeatureRelationGraph.vue（见 §9） |
+| md 渲染 | shared/DocViewer.vue | **复用不变**（已支持 feature-graph/command-graph 双 base path） |
