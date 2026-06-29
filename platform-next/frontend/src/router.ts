@@ -30,32 +30,6 @@ const router = createRouter({
       component: () => import('./command_graph/CommandDetail.vue'),
     },
     {
-      path: '/feature',
-      component: () => import('./feature_graph/FeatureIndex.vue'),
-      children: [
-        {
-          path: '',
-          name: 'feature-list',
-          component: () => import('./feature_graph/FeatureList.vue'),
-        },
-        {
-          path: 'relations',
-          name: 'feature-relations',
-          component: () => import('./feature_graph/FeatureRelations.vue'),
-        },
-        {
-          path: 'licenses',
-          name: 'feature-licenses',
-          component: () => import('./feature_graph/FeatureLicenses.vue'),
-        },
-      ],
-    },
-    {
-      path: '/feature/:id',
-      name: 'feature-detail',
-      component: () => import('./feature_graph/FeatureDetail.vue'),
-    },
-    {
       path: '/business-graph',
       component: () => import('./business_graph/BusinessGraphIndex.vue'),
     },
