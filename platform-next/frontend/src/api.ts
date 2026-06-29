@@ -47,6 +47,28 @@ export const businessGraphApi = {
   graph: (id: string) => `${BASE}/business-graph/scenarios/${encodeURIComponent(id)}/graph`,
 }
 
+export const featureGraphApi = {
+  stats: `${BASE}/feature-graph/stats`,
+  features: (nf: string, version: string) => `${BASE}/feature-graph/features?nf=${nf}&version=${version}`,
+  licenses: (nf: string, version: string) => `${BASE}/feature-graph/licenses?nf=${nf}&version=${version}`,
+  feature: (nf: string, version: string, code: string) =>
+    `${BASE}/feature-graph/feature?nf=${nf}&version=${version}&code=${encodeURIComponent(code)}`,
+  featureDocs: (nf: string, version: string, code: string) =>
+    `${BASE}/feature-graph/feature-docs?nf=${nf}&version=${version}&code=${encodeURIComponent(code)}`,
+  featureRelations: (nf: string, version: string, code: string) =>
+    `${BASE}/feature-graph/feature-relations?nf=${nf}&version=${version}&code=${encodeURIComponent(code)}`,
+  featureLicenses: (nf: string, version: string, code: string) =>
+    `${BASE}/feature-graph/feature-licenses?nf=${nf}&version=${version}&code=${encodeURIComponent(code)}`,
+  featureGraph: (nf: string, version: string, code: string, hops = 1) =>
+    `${BASE}/feature-graph/feature-graph?nf=${nf}&version=${version}&code=${encodeURIComponent(code)}&hops=${hops}`,
+  license: (nf: string, version: string, code: string) =>
+    `${BASE}/feature-graph/license?nf=${nf}&version=${version}&code=${encodeURIComponent(code)}`,
+  licenseFeatures: (nf: string, version: string, code: string) =>
+    `${BASE}/feature-graph/license-features?nf=${nf}&version=${version}&code=${encodeURIComponent(code)}`,
+  docContent: (path: string) => `${BASE}/feature-graph/doc-content?path=${encodeURIComponent(path)}`,
+  file: (path: string) => `${BASE}/feature-graph/file?path=${encodeURIComponent(path)}`,
+}
+
 export async function fetchJson(url: string): Promise<any> {
   const res = await fetch(url)
   if (!res.ok) throw new Error(`API error: ${res.status}`)

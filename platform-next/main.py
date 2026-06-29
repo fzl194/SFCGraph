@@ -11,6 +11,7 @@ from fastapi.staticfiles import StaticFiles
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from shared.config import load_config
+from feature_graph.router import router as feature_router
 from command_graph.router import router as command_router
 from business_graph.router import router as business_router
 
@@ -30,6 +31,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(feature_router)
 app.include_router(command_router)
 app.include_router(business_router)
 

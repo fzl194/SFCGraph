@@ -5,3 +5,7 @@ server:
 command_graph:
   assets_root: "../CommandGraph/data/assets"
   doc_root: ".."
+
+feature_graph:
+  assets_root: "../FeatureGraph/data"
+  doc_root: ".."

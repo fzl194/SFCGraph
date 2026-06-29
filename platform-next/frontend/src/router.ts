@@ -30,6 +30,24 @@ const router = createRouter({
       component: () => import('./command_graph/CommandDetail.vue'),
     },
     {
+      path: '/feature',
+      component: () => import('./feature_graph/FeatureIndex.vue'),
+      children: [
+        { path: '', name: 'feature-overview', component: () => import('./feature_graph/FeatureOverview.vue') },
+        { path: ':nf/:version', name: 'feature-list', component: () => import('./feature_graph/FeatureListPage.vue') },
+      ],
+    },
+    {
+      path: '/feature/:nf/:version/feature/:code',
+      name: 'feature-detail',
+      component: () => import('./feature_graph/FeatureDetail.vue'),
+    },
+    {
+      path: '/feature/:nf/:version/license/:code',
+      name: 'license-detail',
+      component: () => import('./feature_graph/LicenseDetail.vue'),
+    },
+    {
       path: '/business-graph',
       component: () => import('./business_graph/BusinessGraphIndex.vue'),
     },
