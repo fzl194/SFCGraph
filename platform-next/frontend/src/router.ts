@@ -30,7 +30,7 @@ const router = createRouter({
       component: () => import('./command_graph/CommandDetail.vue'),
     },
     {
-      path: '/feature',
+      path: '/feature-graph',
       component: () => import('./feature_graph/FeatureIndex.vue'),
       children: [
         { path: '', name: 'feature-overview', component: () => import('./feature_graph/FeatureOverview.vue') },
@@ -38,12 +38,12 @@ const router = createRouter({
       ],
     },
     {
-      path: '/feature/:nf/:version/feature/:code',
+      path: '/feature-graph/:nf/:version/feature/:code',
       name: 'feature-detail',
       component: () => import('./feature_graph/FeatureDetail.vue'),
     },
     {
-      path: '/feature/:nf/:version/license/:code',
+      path: '/feature-graph/:nf/:version/license/:code',
       name: 'license-detail',
       component: () => import('./feature_graph/LicenseDetail.vue'),
     },
