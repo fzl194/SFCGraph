@@ -26,23 +26,18 @@ platform-next 下特性图谱前端展示，参考命令图谱已有的三级结
 - decomposes_to（特性 → ConfigTask 任务层接入）—— 第一版未建
 - SubFeature 独立对象类型 —— 已用 feature_code `-N` 后缀表达，前端按普通 Feature 渲染
 
-## 2A. 前置依赖（设计态补 doc_assets 字段）
+## 2A. 前置依赖（设计态 source_evidence_ids 恢复为全部 md）
 
-多 md 展示需要每个特性的完整文档清单（含 doc_type：概述/激活/原理/参考/...）。当前 `features.jsonl` 的 `source_evidence_ids` 只含概述 path（且 270/942 特性为空），**不足以支撑多 md**。
+多 md 展示需要该特性的全部 md 路径。当前 `features.jsonl` 的 `source_evidence_ids` 被收紧为仅概述 path（如 GWFD-020301 只 1 条，实际有 5 个 md：概述/其他/参考/原理/部署），**不足以支撑多 md**。
 
-**设计态改动（FeatureGraph/builder）**：在 `features.jsonl` 每个 Feature 节点加回 `doc_assets` 字段：
-```json
-"doc_assets": [
-  {"doc_path": "output/.../概述.md", "doc_type": "overview", "doc_title": "..."},
-  {"doc_path": "output/.../激活.md", "doc_type": "activation", "doc_title": "..."},
-  {"doc_path": "output/.../原理.md", "doc_type": "principle", "doc_title": "..."}
-]
-```
-- 来源：`FeatureGraph/builder/steps/feature.py` 的 `find_overview_md` 已返回 doc_assets 列表（含 doc_type），只需写回节点字段（之前删除是误删——多 md 展示需要 doc_type，纯 path 不够）
-- `source_evidence_ids` 保留（边表证据用）或由 doc_assets 派生，二选一（倾向保留 source_evidence_ids 作"被引用证据"，doc_assets 作"全部文档清单"）
-- 此改动让 service 的 `get_feature_docs` 变成纯字段读取（同 command_graph 的 `get_command_md` 读 source_evidence_ids），不扫描文件系统
+**设计态改动（FeatureGraph/builder）**：`source_evidence_ids` 恢复为该特性的**全部 md 路径**（概述/激活/原理/参考/调测/...），不收紧。
 
-**此为前端展示的前置条件**——先补 doc_assets 字段，再做前端。
+- 文档都是 md，**不需要 doc_type 分类，不需要 doc_assets 字段**——文件名已含类型信息（"特性概述"/"激活XXX"/"实现原理"/"参考信息"）
+- 来源：`FeatureGraph/builder/steps/feature.py` 的 `find_overview_md` 返回的 doc_assets 列表含全部 md，把所有 path 写入 source_evidence_ids（不只概述）
+- 前端用 source_evidence_ids（path 列表）做 md 切换，文件名做标签
+- service 的 `get_feature_docs` 读 source_evidence_ids + 从文件名/H1 解析 title，纯字段读取不扫 FS
+
+**此为前端展示的前置条件**——先恢复 source_evidence_ids 全部 md，再做前端。
 
 ## 3. 整体架构
 
@@ -108,7 +103,7 @@ list_licenses(nf, version, search=None, page=1, size=50) -> {total,page,size,ite
 
 # 特性详情（L3）
 get_feature(nf, version, code) -> full feature record
-get_feature_docs(nf, version, code) -> [{doc_path, doc_type, doc_title}]  # 读 features.jsonl 的 doc_assets 字段（设计态预计算，见 §2A）
+get_feature_docs(nf, version, code) -> [{doc_path, doc_title}]  # 读 features.jsonl 的 source_evidence_ids（全部md路径），doc_title 从文件名/H1 解析
 get_feature_graph(nf, version, code, hops=1, edge_types=None) -> {nodes, edges}  # 统一图，默认1跳防爆炸，edge_types 白名单过滤
 get_feature_relations(nf, version, code) -> [edge]  # 该特性参与的边（表格用，悬空 target 回退显示原始 code）
 get_feature_licenses(nf, version, code) -> [license_edge]  # 该特性需要的 license
@@ -122,7 +117,7 @@ get_doc_content(rel_path) -> str  # 读 md，路径防穿越
 resolve_doc_path(rel_path) -> Path | None  # 图片等静态文件
 ```
 
-`get_feature_docs` 多 md 来源：**读 `features.jsonl` 的 `doc_assets` 字段**（设计态预计算，见 §2A），不扫描文件系统。doc_type：overview/activation/debug/principle/reference/flow/other。空 doc_assets（无文档特性）返回 []，前端显示"无文档"空状态。
+`get_feature_docs` 多 md 来源：**读 `features.jsonl` 的 `source_evidence_ids`**（设计态恢复为全部 md 路径，见 §2A），不扫描文件系统。返回 `[{doc_path, doc_title}]`，doc_title 从文件名或 H1 解析。空 source_evidence_ids（无文档特性）返回 []，前端显示"无文档"空状态。
 
 ## 6. 后端 router.py（REST 端点，对齐命令图谱风格）
 
@@ -155,7 +150,7 @@ resolve_doc_path(rel_path) -> Path | None  # 图片等静态文件
   - `特性` tab：特性属性字段（feature_code/name/catalog_section/feature_category/config_relevance/applicable_nf/nf_support_map/first_release_version/standards/category_reason 等），数据驱动渲染
   - `特性关系` tab：上部 vis-network 关系图（统一 {nodes,edges}，复用命令图谱图组件）+ 下部关系表格（related_feature/relation_type/interaction_note）
   - `license` tab：该特性需要的 license 列表（点跳 license 详情）
-- **右侧**：DocViewer + **顶部 doc_type tab 切换**（概述/激活/原理/参考/...，来自 get_feature_docs），选中渲染对应 md
+- **右侧**：DocViewer + **顶部 md 切换**（文件名/doc_title，来自 get_feature_docs 的 source_evidence_ids），选中渲染对应 md
 
 ### 7.4 LicenseDetail.vue（新建）
 左右侧布局：
@@ -171,12 +166,12 @@ resolve_doc_path(rel_path) -> Path | None  # 图片等静态文件
 
 ## 8. 多 md 展示机制
 
-特性详情右侧顶部 doc_type tab：
-1. 进入详情 → 调 `get_feature_docs(nf,version,code)` 返回 `[{doc_path,doc_type,doc_title}]`（数据来自 doc_assets 字段，见 §2A）
-2. 顶部渲染 tab（按 doc_type：概述/激活/原理/参考/flow/other），默认选 overview
-3. 选中 tab → 调 `get_doc_content(doc_path)` → DocViewer 渲染
+特性详情右侧顶部 md 切换：
+1. 进入详情 → 调 `get_feature_docs(nf,version,code)` 返回 `[{doc_path,doc_title}]`（数据来自 source_evidence_ids，见 §2A）
+2. 顶部渲染 md 切换（按 doc_title/文件名），默认选第一个（或含"概述"的）
+3. 选中 → 调 `get_doc_content(doc_path)` → DocViewer 渲染
 4. md 内图片/交叉引用走 `/api/v1/feature-graph/file` + `/doc-content`（复用命令图谱 DocViewer 的路径重写）
-5. **空状态**：doc_assets 为空（270 个无文档特性）→ 右侧显示"该特性无产品文档"占位，不调 DocViewer
+5. **空状态**：source_evidence_ids 为空（无文档特性）→ 右侧显示"该特性无产品文档"占位，不调 DocViewer
 
 命令图谱单 md（source_evidence_ids[0]）→ 特性图谱多 md（doc_type tab 切换），DocViewer 本身复用（已支持 feature-graph/command-graph 双 base path，无需改）。
 
@@ -223,7 +218,7 @@ feature_graph:
 - `platform-next/frontend/src/feature_graph/FeatureLicenses.vue`
 - `platform-next/frontend/src/feature_graph/FeatureDetail.vue`
 
-**保留（设计态）**：`FeatureGraph/`（抽取流水线 + data/）。本次还要在 `FeatureGraph/builder` 补 doc_assets 字段（见 §2A）。
+**保留（设计态）**：`FeatureGraph/`（抽取流水线 + data/）。本次还要在 `FeatureGraph/builder` 恢复 source_evidence_ids 为全部 md（见 §2A）。
 
 ## 12. 验收标准
 
