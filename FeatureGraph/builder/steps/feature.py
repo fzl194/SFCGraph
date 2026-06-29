@@ -182,21 +182,27 @@ def run(ctx):
         has_activation = any(dt == "activation" for _, dt in doc_assets)
         variant_dims = detect_variant_dimensions(overview_paths, code)
 
-        # 多概述特性：父 + 子特性 × N
-        if len(overview_paths) > 1:
+        # 多概述 + 检测到代际 variant → 拆 SubFeature（父 + 子 × N）
+        # 多概述但无稳定 variant（UNC NF/接口细分）→ 父节点取第一条概述内容 + 列全部路径，不拆
+        if len(overview_paths) > 1 and variant_dims:
             multi_nodes = _build_multi_overview_nodes(
                 seed, overview_paths, variant_dims, doc_assets, project_root, nf, version)
-            # 跳过 sample（按父 code 过滤）
             if not sample or code in sample:
                 nodes.extend(multi_nodes)
                 stats["multi_overview_parent"] += 1
                 stats["subfeature"] += len(overview_paths)
                 stats["yes"] += len(overview_paths)
             continue
+        # 多概述但无 variant：回退单概述处理（取第一条），但 source_evidence_ids 列全部
+        if len(overview_paths) > 1 and not variant_dims:
+            primary_overview = overview_paths[0]
+            overview_paths_for_single = [primary_overview]
+            all_evidence = list(overview_paths)
+        else:
+            primary_overview = overview_paths[0] if overview_paths else ""
+            all_evidence = None
 
-        # 单概述特性
-        primary_overview = overview_paths[0] if overview_paths else ""
-
+        # 单概述特性（含多概述无 variant 回退）
         if not overview_paths:
             n = build_feature_node(seed, {}, applicable_nf=[], first_release="",
                 standards=[], overview_path=None, nf=nf, version=version, has_overview="no_overview")
@@ -238,7 +244,8 @@ def run(ctx):
             standards=extract_standards(sections),
             overview_path=primary_overview, nf=nf, version=version, has_overview="yes",
             config_relevance=infer_config_relevance(has_activation, no_config))
-        node["source_evidence_ids"] = [primary_overview]
+        # source_evidence_ids：多概述无variant时列全部路径，单概述时仅主概述
+        node["source_evidence_ids"] = all_evidence if all_evidence else [primary_overview]
         node["variant_dimensions"] = []
         node["category_reason"] = ""
         nodes.append(node)

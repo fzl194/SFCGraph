@@ -112,8 +112,19 @@ def find_overview_md(feature_id: str, file_paths: list[str], project_root: Path)
                               "规划", "实现", "应用", "操作", "参考", "描述")
 
     def _is_real_overview(fp: str) -> bool:
-        """文件名以 fid 开头 + 含"概述"——避免子文档（如"规划概述"）误判。"""
-        return os.path.basename(fp).startswith(feature_id) and "概述" in os.path.basename(fp)
+        """优先级 1（严格）：
+        A. 文件名以 fid 开头 + 含"概述"（UDG 形式：GWFD-XXX...概述.md）
+        B. 文件名 = "特性概述" 或 以 "特性概述" 开头（UNC 形式：特性概述_XXX.md）
+        排除子文档（规划概述等 NON_OVERVIEW_KEYWORDS）。
+        """
+        fn = os.path.basename(fp)
+        if any(kw in fn for kw in NON_OVERVIEW_KEYWORDS):
+            return False
+        if fn.startswith(feature_id) and "概述" in fn:
+            return True
+        if fn.startswith("特性概述"):
+            return True
+        return False
 
     def _is_priority2_overview(fp: str) -> bool:
         """priority 2 兜底：文件名以 fid 开头 + 直接子目录 + 不是子文档。"""
@@ -157,23 +168,32 @@ def find_overview_md(feature_id: str, file_paths: list[str], project_root: Path)
 def detect_variant_dimensions(overview_paths: list[str], feature_id: str) -> list[dict]:
     """从多概述路径检测 variant_dimensions（schema §4.3：差异留在 variant_dimensions）。
 
-    当前识别"代际"维度。匹配模式（按优先级）：
-      - 目录前缀 /{gen}/ 或 /{gen}_ （如 /2_3G会话管理/、/4G_xxx）
-      - 文件名 / 路径片段 _{gen}_ （如 GWFD_X_4G_yyy.md）
-      - 中文括号（{gen}部分）：（4G部分）/（5G部分）等
-      - 英文括号 ({gen}): (4G)/5G)
+    当前识别"代际"维度。匹配多种代际标记：
+      - 路径前缀 /{gen}xxx （/4G会话管理/、/5G_xxx）
+      - 文件名片段 _{gen}_ （GWFD_X_4G_yyy.md）
+      - 中文括号（{gen}部分）/英文括号({gen})
+      - 中文括号 2G&3G 形式（UNC: 移动归属网（2G&3G））
     返回 [{name: "代际", values: [...], overview_paths: {gen: path}}] 或 []。
     """
     if len(overview_paths) <= 1:
         return []
+    # 代际名 → 匹配模式列表（2G&3G 归一到 2_3G）
+    GEN_PATTERNS = {
+        "2_3G": ("2_3G", "2G&3G", "2G_3G"),
+        "4G": ("4G",),
+        "5G": ("5G",),
+    }
     generation_to_path: dict[str, str] = {}
     for p in overview_paths:
-        for gen in ("2_3G", "4G", "5G"):
-            # 多种代际标记形式
-            if (f"/{gen}" in p) or (f"_{gen}_" in p) or \
-               (f"（{gen}" in p) or (f"({gen}" in p):
-                if gen not in generation_to_path:
-                    generation_to_path[gen] = p
+        for gen, patterns in GEN_PATTERNS.items():
+            matched = False
+            for pat in patterns:
+                if (f"/{pat}" in p) or (f"_{pat}_" in p) or \
+                   (f"（{pat}" in p) or (f"({pat}" in p) or (f"{pat}）" in p):
+                    matched = True
+                    break
+            if matched and gen not in generation_to_path:
+                generation_to_path[gen] = p
                 break
     if len(generation_to_path) >= 2:
         return [{"name": "代际", "values": sorted(generation_to_path.keys()),
