@@ -140,7 +140,7 @@ L3 内嵌卡片:编排下下层 task chip(纯跳转,不嵌卡片),只显示 id +
 - L2 卡片折叠态展示摘要:`▸ 1-00001 计费三件套 (5 atom · 3 通过, 2 待审)`。
 - L2 卡片展开后,L3 chip 总数 > 15 时只展示前 5 + "展开更多" 按钮,点开后才显示全部(阈值在 index.html `<script>` 顶部常量,默认 15)。
 - "编排下层"指**该 task 的 `task_relations[]` 中 from/to_task_ref 指向的所有其他 task(去重,排除自身,按 id 升序)**——不区分 relation_type、不区分 requiredness,因为审查视角是"该 task 涉及的全部下层",而不是"必走的边"。
-- 主 card 的"复用面"(该 atom 被哪些 feature 引用)同样适用 > 20 chip 折叠策略(阈值与 L3 折叠一致,均为 15)。
+- 主 card 的"复用面"(该 atom 被哪些 feature 引用)同样适用 > 15 chip 折叠策略(阈值与 L3 折叠一致,均为 15)。
 
 ### 3.5 关键交互
 
