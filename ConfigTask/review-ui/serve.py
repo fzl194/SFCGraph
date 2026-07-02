@@ -150,8 +150,23 @@ def build_assets():
             by_layer[layer].append(t["_short"])
     for layer in by_layer:
         by_layer[layer].sort()
+    # spec §4 relation_targets: 该 task 经 task_relations 引用到的所有其他 task 短 id(去重 + 排除自身 + 升序)。
+    # 与 tree.children(单一 parent)/ tree.containers(全部上层引用方)互补。
+    relation_targets = {t["_short"]: set() for t in tasks}
+    known_sids = set(relation_targets.keys())
+    for t in tasks:
+        ps = t["_short"]
+        for r in (t.get("task_relations") or []):
+            for ref in (r.get("from_task_ref"), r.get("to_task_ref")):
+                if not ref:
+                    continue
+                s = ref.split("@")[-1]
+                if s != ps and s in known_sids:
+                    relation_targets[ps].add(s)
+    relation_targets = {k: sorted(v) for k, v in relation_targets.items()}
     return {"tasks": tasks, "dps": dps, "rules": rules, "reuse": reuse, "tree": tree,
-            "by_layer": by_layer, "nf_version": "UDG@20.15.2"}
+            "by_layer": by_layer, "relation_targets": relation_targets,
+            "nf_version": "UDG@20.15.2"}
 
 
 def read_review_state():
