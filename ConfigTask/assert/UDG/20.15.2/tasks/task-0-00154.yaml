@@ -1,0 +1,24 @@
+task_id: UDG@20.15.2@Task@0-00154
+nf: UDG
+version: "20.15.2"
+task_layer: atom
+task_logical_name: 设置SA业务公共参数
+task_intent: 设置SA业务公共参数（SET SACOMMONPARA），含 QUIC 协议识别功能增强开关 / QUIC 增强解析功能开关，激活 HTTP3.0 Host 识别/分析前置
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET SACOMMONPARA
+status: inferred   # 命令级审查(2026-07-02) 校准：bound 2/7 (5 冷门 optional 不绑)；跨特性二选一(Host识别→QUICIDENFUNCEN / Host分析→QUICPSRFUNCEN)，已用 DP 0-00141 编排特性路由→互斥必选
+source_evidence_ids: [GWFD-110251/激活HTTP3.0 Host识别_56786521.md, GWFD-110252/激活HTTP3.0 Host分析_07698710.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00154:QUICIDENFUNCEN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SACOMMONPARA:QUICIDENFUNCEN
+    binding_type: fixed
+    value: ENABLE   # GWFD-110251 任务示例固定 ENABLE（QUIC协议识别功能增强开关）
+    requiredness: conditional   # GWFD-110251 Host识别场景必填；与 QUICPSRFUNCEN 互斥(DP 0-00141 编排)
+    source_evidence_ids: [GWFD-110251/激活HTTP3.0 Host识别_56786521.md]
+  - binding_id: UDG@20.15.2@Task@0-00154:QUICPSRFUNCEN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SACOMMONPARA:QUICPSRFUNCEN
+    binding_type: fixed
+    value: ENABLE   # GWFD-110252 任务示例固定 ENABLE（QUIC增强解析功能开关）
+    requiredness: conditional   # GWFD-110252 Host分析场景必填；与 QUICIDENFUNCEN 互斥(DP 0-00141 编排)
+    source_evidence_ids: [GWFD-110252/激活HTTP3.0 Host分析_07698710.md]
+notes: "GWFD-110251(Host识别)用 QUICIDENFUNCEN=ENABLE；GWFD-110252(Host分析)用 QUICPSRFUNCEN=ENABLE。两参数均 md 标'固定取值'，故 fixed。命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取（dependency_rule 集中标记于 feature task）。命令级审查(2026-07-02)：缺口 5 个(NORSTPKTNUM/CDNENHANCEDSW/QUICSASW/USRRLTRFRSHSW/SPECMETHODSW) 命令真相均 optional 且 2 特性数据规划表均未用到，按通用配置门槛不绑——主机特性场景不配。跨特性二选一(Host识别→QUICIDENFUNCEN / Host分析→QUICPSRFUNCEN) 已用 DP 0-00141 编排特性路由。rule 0-00352 投影 max_records=1 + 立即生效 + NORSTPKTNUM 不宜过小 + 默认 0 不控制 + QUIC 开关只针对 Quic 密文业务增强 SA。"

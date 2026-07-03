@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00156
+nf: UDG
+version: "20.15.2"
+task_layer: atom
+task_logical_name: 设置APN的IMS属性
+task_intent: 配置APN的IMS使能开关（SET APNIMSATTR），将IMS功能绑定到指定APN实例
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNIMSATTR
+status: inferred   # 命令级审查(2026-07-02) 校准：bound 2/2 与命令真相一致, 0 缺口；IMSSWITCH=ENABLE 固定合理(VoLTE 唯一激活方式)；扩展 source_evidence_ids 至全部 IMS 相关(若 IPV6 IMS 等启用)
+source_evidence_ids: [GWFD-020251/配置VoLTE基础语音业务_65928706.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00156:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNIMSATTR:APN
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD APN，如 ims）
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-020251/配置VoLTE基础语音业务_65928706.md]
+  - binding_id: UDG@20.15.2@Task@0-00156:IMSSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNIMSATTR:IMSSWITCH
+    binding_type: fixed
+    value: ENABLE   # 任务示例固定 ENABLE（激活IMS功能）
+    requiredness: required
+    source_evidence_ids: [GWFD-020251/配置VoLTE基础语音业务_65928706.md]
+notes: "GWFD-020251 VoLTE基础语音业务专属。IMSSWITCH=ENABLE 激活 APN 的 IMS 功能（VoLTE 信令承载前置）。APN 引用 ADD APN(0-00020) 已配置实例。命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取（dependency_rule 集中标记于 feature task 2-00053）。命令级审查(2026-07-02)：bound=2/2 与命令真相一致, 0 缺口；IMSSWITCH 命令真相标 optional(global_planned) 但本特性固定 ENABLE, 保留 fixed+ENABLE 合理。rule 0-00356 投影 cardinality 10000 + 立即生效 + SGW-U/I-UPF 触发 SIP 解析影响性能 + PGW-U/PSA-UPF QCI5 触发 filter 匹配 + filter 匹配依赖 ADD APNIMSSIGFLTR(0-00155) 配置 + 前置 ADD APN(0-00020)。"

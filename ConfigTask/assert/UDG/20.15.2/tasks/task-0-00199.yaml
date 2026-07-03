@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00199
+nf: UDG
+version: "20.15.2"
+task_layer: atom
+task_logical_name: 增加流行为(MQC)
+task_intent: "增加MQC流行为对象(QoS复杂流分类三件套之一: 流策略/流分类/流行为 CB对)。流动作通过 ADD QOSACTRDRNHP/ADD SQOSREMARK/SET QOSACTFILTER 等挂载"
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD MQCBEHAVIOR
+status: inferred   # 命令级审查(2026-07-02) 校准：bound 1/1 与命令真相一致, 0 缺口；MQCBEHAVIOR 是空行为容器, 仅含名称, 流动作(permit/redirect/remark/deny/cascade/URPF/CAR) 全部通过后续 ADD/SET 子命令挂载, 故命令本身无参数分叉
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00199:BEHAVIORNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MQCBEHAVIOR:BEHAVIORNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "流行为(MQCBEHAVIOR)是CB对的B侧。流动作 permit 可与其他共存，其余互斥(重定向/重标记/deny/级联/URPF/CAR)。CommandParameter 待抽取。命令级审查(2026-07-02)：bound=1/1 与命令真相一致, 0 缺口。MQCBEHAVIOR 为空行为容器, 仅 BEHAVIORNAME 单参, 命令无内嵌动作分叉；流动作通过 ADD QOSACTRDRNHP/ADD SQOSREMARK/SET QOSACTFILTER 等子命令挂载(后续 IPFD-012001 子 atom 待审)。rule 0-00357 投影 cardinality 8192 + 立即生效 + 前置 ADD MQCCLASSIFIER (MQC 三件套: classifier/behavior/policy, B 侧须在 C/P 侧绑定前先建)。"

@@ -1,0 +1,26 @@
+task_id: UDG@20.15.2@Task@0-00150
+nf: UDG
+version: "20.15.2"
+task_layer: atom
+task_logical_name: 设置rule级HTTP2.0协议回落开关
+task_intent: 开启/关闭/继承指定 PCC 策略组的 rule 级 HTTP2.0 协议回落开关（MOD PCCPOLICYGRP.HTTP2DEGRADESW=ENABLE/DISABLE/INHERIT），基于 rule 级别控制 HTTP2.0 协议回落；本 atom 严格限定为 HTTP2DEGRADESW 单参数使用，非 PCC 修改的完整功能面
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@MOD PCCPOLICYGRP
+status: inferred   # 命令级审查(2026-07-02) 校准：bound 2/18 (16 缺口为冷门 optional, 主特性场景不用) — atom 严格限定 HTTP2DEGRADESW 单一用途, 与 C1 PCC 修改(已审 0-00003 ADD)同命令族但不重复；HTTP2DEGRADESW 升级 decision_driven + DP 0-00143
+source_evidence_ids: [GWFD-110202/激活HTTP2.0协议回落_65157762.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00150:PCCPOLICYGRPNM
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD PCCPOLICYGRP:PCCPOLICYGRPNM
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD PCCPOLICYGRP.PCCPOLICYGRPNM)
+    source_ref: UDG@20.15.2@Task@0-00003:PCCPOLICYGRPNM
+    requiredness: required
+    source_evidence_ids: [GWFD-110202/激活HTTP2.0协议回落_65157762.md]
+  - binding_id: UDG@20.15.2@Task@0-00150:HTTP2DEGRADESW
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD PCCPOLICYGRP:HTTP2DEGRADESW
+    binding_type: decision_driven   # 3-way 配置决策, 由 DP 0-00143 编排(回落优先级最高层)
+    variable_source: local_planned   # 本端规划(rule 级回落开关 ENABLE/DISABLE/INHERIT, 默认 INHERIT 继承 APN 级)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00143
+    requiredness: required
+    source_evidence_ids: [GWFD-110202/激活HTTP2.0协议回落_65157762.md]
+notes: "GWFD-110202 rule 级回落开关。MOD PCCPOLICYGRP 与 ADD PCCPOLICYGRP(0-00003)同对象族(PCC 策略组)但命令不同(修改 vs 增加), 各自一 atom。本 atom 严格限定 HTTP2DEGRADESW 单一参数——命令真相 18 参数中 16 个(PCCACTPROPNAME/EXTENDPROPNAME/FUPSESSIONEXC/TOKEN*/SIGNALASSOCIATE/ADCMUTEFLAG/QOSPROPNAME/URRGROUPNAME/SIGURRGRPNAME/EVENTCHARGEFLAG/EVENTCHGPOINT/MMSCHARGETYPE/CFGDOMAINNAME) 主特性场景不用, 按通用配置门槛不绑(若后续计费/Token等特性要修改 PCC 策略组, 须新建独立 atom 承载, 本 atom 不承载)。PCCPOLICYGRPNM 引用 ADD PCCPOLICYGRP(0-00003)；HTTP2DEGRADESW 升级 decision_driven + DP 0-00143(3-way: ENABLE/DISABLE/INHERIT, default INHERIT)。回落优先级最高: rule 级 > APN 级 > 全局。命令在 mml_commands；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)：bound=2/18 缺口 16 个, 全部为命令真相 optional 且 1 特性(GWFD-110202)数据规划表均未用到——按通用配置门槛不绑, 不建独立 atom 承载(若需新增独立 atom 修改 PCC 策略组覆盖全 18 参数, 由后续计费/Token 特性 batch 单独审, 不在 C6b 范围)。rule 0-00354 投影 立即生效 + 参数全 optional+无选配则为空 + 前置 ADD PCCPOLICYGRP(0-00003) + INHERIT 继承 APN 级 HTTP2DEGRADESW(0-00149)。"

@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@0-00177
+nf: UDG
+version: "20.15.2"
+task_layer: atom
+task_logical_name: 设置APN Non-IP配置
+task_intent: 使能指定APN下的Non-IP数据传输功能（NONIPSWITCH=ENABLE），配置Non-IP用户面端口号（USERPORT），将全局Non-IP开关收敛到特定APN
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNNONIPFUNC
+status: inferred   # 命令级审查(2026-07-02) 校准：bound 3/3 与命令真相一致, 0 缺口；rule 0-00070 已覆盖前置 license/全局→非全局收敛/APN 必先建；本批不增新 rule, 仅 status 升级 + notes 增审计说明
+source_evidence_ids: [GWFD-110607/激活Non-IP数据传输_69972724.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00177:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNNONIPFUNC:APN
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(已通过 ADD APN 配置)
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-110607/激活Non-IP数据传输_69972724.md]
+  - binding_id: UDG@20.15.2@Task@0-00177:NONIPSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNNONIPFUNC:NONIPSWITCH
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划(ENABLE=该APN具有Non-IP功能)
+    requiredness: required
+    source_evidence_ids: [GWFD-110607/激活Non-IP数据传输_69972724.md]
+  - binding_id: UDG@20.15.2@Task@0-00177:USERPORT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNNONIPFUNC:USERPORT
+    binding_type: variable
+    variable_source: peer_planned   # 数据规划表: 与对端协商(Non-IP用户面端口号)
+    requiredness: required
+    source_evidence_ids: [GWFD-110607/激活Non-IP数据传输_69972724.md]
+notes: "GWFD-110607 Non-IP数据传输。APN 引用 ADD APN(0-00020)；md 注: SET APNNONIPFUNC 一旦配置即由全局场景转入非全局场景(仅 NONIPSWITCH=ENABLE 的 APN 具 Non-IP 功能)；必须先打开 license 该命令才生效；UDG 作 PGW-U 时必须配本命令。控制面需配相同 APN 并使能 Non-IP 开关(不在 UDG 命令域)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)：bound=3/3 与命令真相一致, 0 缺口。rule 0-00070 已覆盖：①前置 SET LICENSESWITCH(LKV3G5NOIP01) 打开 license；②SET APNNONIPFUNC 触发全局→非全局收敛；③APN 必先通过 ADD APN(0-00020) 配置。本批不增新 rule(rule 0-00070 已完备)。命令真相 max_records=10000 + 立即生效 + 系统初始记录 NONIPSWITCH=DISABLE/USERPORT=5683——属 SET 类常规规格, 由 atom-level 隐含。"

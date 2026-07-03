@@ -1,0 +1,35 @@
+task_id: UDG@20.15.2@Task@0-00109
+nf: UDG
+version: "20.15.2"
+task_layer: atom
+task_logical_name: 设置FPI差异化控制功能
+task_intent: 使能 FPI(业务流标识)差异化控制功能(SET FPIFUNC)，设置 FPI 使能开关与向 RAN 侧传递 FPI 信息的方式(DSCP/封装等)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET FPIFUNC
+status: inferred   # 命令级审查(2026-07-02) 校准：bound 3/3 与命令真相一致, 0 缺口；FPIPOLICYORIGIN 命令真相标 conditional (INTERNAL 时) 而特性 md 未用, 保持 optional 合理——已记 DP 0-00138 编排 FPIPOLICYORIGIN=INTERNAL 时的 spec 项要求(详见 review log)
+source_evidence_ids: [GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00109:FPISWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FPIFUNC:FPISWITCH
+    binding_type: variable
+    variable_source: global_planned   # 特性 md 数据规划表: 全网规划；取值 DISABLE|ENABLE；本特性须 ENABLE
+    requiredness: required
+    source_evidence_ids: [GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md]
+  - binding_id: UDG@20.15.2@Task@0-00109:FPITRANSMETHOD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FPIFUNC:FPITRANSMETHOD
+    binding_type: decision_driven   # 跨场景取值分叉(DSCP/GTPU 等)→DP 编排
+    variable_source: global_planned   # 特性 md: 全网规划；FPI 向 RAN 侧传递方式(DSCP 等)，要求无线侧同时支持
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00139
+    requiredness: conditional   # 命令: FPISWITCH=ENABLE 时为必选
+    source_evidence_ids: [GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md]
+  - binding_id: UDG@20.15.2@Task@0-00109:FPIPOLICYORIGIN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FPIFUNC:FPIPOLICYORIGIN
+    binding_type: variable
+    variable_source: local_planned   # 默认 NULL；特性 md 未列，按命令级推断(§4.5 fallback)
+    requiredness: optional
+    source_evidence_ids: [GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md]
+notes: |
+  GWFD-110331 基于业务流标识的无线资源优化专属(特性首步全局开关)。命令 SET FPIFUNC 在 mml_commands.jsonl，未在 by_command 复用索引(§6-B)。
+  全局 SET 类命令(max_records=1)；FPISWITCH/FPITRANSMETHOD 来源=全网规划(特性 md 明示，且需 RAN/PCRF 侧协同)。
+  FPITRANSMETHOD 条件必选: 仅当 FPISWITCH=ENABLE 时为必选——升级为 decision_driven + DP 0-00139(2-way: DSCP/GTPU)。默认 DSCP(本特性采用)。
+  FPIPOLICYORIGIN 命令真相标 conditional(INTERNAL 时必传)，特性 md 数据规划表仅显式配 FPISWITCH/FPITRANSMETHOD，FPIPOLICYORIGIN 未列——按 §4.5 fallback 保留 optional, 默认 NULL。命令级审查(2026-07-02)：bound=3/3 与命令真相一致, 0 缺口；FPITRANSMETHOD 升级为 decision_driven(原 variable + conditional, 现强化决策点表达, 跨场景分叉 DSCP/GTPU)。rule 0-00349 投影 max_records=1 + 立即生效 + 系统初始记录 FPISWITCH=ENABLE/FPITRANSMETHOD=DSCP/FPIPOLICYORIGIN=NULL。"
