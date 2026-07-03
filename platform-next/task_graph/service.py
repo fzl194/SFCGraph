@@ -177,6 +177,30 @@ class ConfigTaskService:
         return {"items": [self._slim(t) for t in items[start:start + size]], "total": total,
                 "page": page, "size": size}
 
+    def _endpoint_relations(self, short: str) -> list[dict]:
+        """该 task 作为端点出现的边(被别人的 task_relations 引用)。
+
+        仅含 _relations_by_task 的条目,补全 other 的 logical_name/layer。
+        叶子(atom/compound 多数)自己没有 task_relations,但作为端点会被引用。
+        """
+        out = []
+        seen_pair = set()
+        for e in self._relations_by_task.get(short, []):
+            other = self._by_short.get(e["other"], {})
+            key = (short, e["other"], e["direction"], e["relation_type"])
+            if key in seen_pair:
+                continue
+            seen_pair.add(key)
+            out.append({
+                "other": e["other"],
+                "other_logical_name": other.get("task_logical_name", ""),
+                "other_layer": other.get("task_layer", ""),
+                "direction": e["direction"],
+                "relation_type": e["relation_type"],
+                "condition_ref": e.get("condition_ref", ""),
+            })
+        return out
+
     def _resolve_relations(self, short: str) -> list[dict]:
         """返回该 task 自己作为端点出现的边 + 其作为父编排的子节点间边。
 
@@ -256,6 +280,7 @@ class ConfigTaskService:
             "parameter_bindings": t.get("parameter_bindings") or [],
             "source_evidence_ids": t.get("source_evidence_ids") or [],
             "task_relations": self._own_relations_resolved(t),
+            "endpoint_relations": self._endpoint_relations(short),
             "parents": self._parents(short),
             "rules": self._rules_by_owner.get(short, []),
             "decision_points": self._dps_by_owner.get(short, []),

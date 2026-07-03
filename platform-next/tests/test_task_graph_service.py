@@ -81,3 +81,20 @@ def test_task_tree():
     tr = svc.get_task_tree("0-00016")
     assert tr["center"] == "0-00016"
     assert any(n["id"] == "2-00002" for n in tr["nodes"])
+
+
+def test_get_task_endpoint_relations_for_leaf():
+    """atom 0-00016 是叶子(无 own task_relations),但作为端点被 2-00002 引用 → endpoint_relations 非空且含 1-00004/2-00002 侧"""
+    svc = get_service()
+    t = svc.get_task("UDG", "20.15.2", "0-00016")
+    assert t is not None
+    assert t["task_relations"] == []                      # 叶子无 own 边
+    assert len(t["endpoint_relations"]) >= 1              # 但作为端点有边
+    others = {e["other"] for e in t["endpoint_relations"]}
+    # 2-00002 编排 0-00016:它把 1-00004→0-00016 写在自己的 task_relations 里,
+    # 所以 0-00016 作为端点的 other 是 1-00004;orchestrator 2-00002 在 parents 里
+    assert "1-00004" in others or "2-00002" in others     # 引用方在
+    # 每条补全 name/layer
+    e0 = t["endpoint_relations"][0]
+    for k in ("other", "other_logical_name", "other_layer", "direction", "relation_type"):
+        assert k in e0
