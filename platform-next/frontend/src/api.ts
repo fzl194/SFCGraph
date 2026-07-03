@@ -69,6 +69,16 @@ export const featureGraphApi = {
   file: (path: string) => `${BASE}/feature-graph/file?path=${encodeURIComponent(path)}`,
 }
 
+export const taskGraphApi = {
+  stats: `${BASE}/task-graph/stats`,
+  tasks: `${BASE}/task-graph/tasks`,
+  task: (nf: string, version: string, taskId: string) => {
+    const p = new URLSearchParams({ nf, version, task_id: taskId })
+    return `${BASE}/task-graph/task?${p}`
+  },
+  taskTree: (taskId: string) => `${BASE}/task-graph/task-tree?task_id=${encodeURIComponent(taskId)}`,
+}
+
 export async function fetchJson(url: string): Promise<any> {
   const res = await fetch(url)
   if (!res.ok) throw new Error(`API error: ${res.status}`)

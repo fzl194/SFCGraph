@@ -30,6 +30,19 @@ const router = createRouter({
       component: () => import('./command_graph/CommandDetail.vue'),
     },
     {
+      path: '/task-graph',
+      component: () => import('./task_graph/TaskIndex.vue'),
+      children: [
+        { path: '', name: 'task-overview', component: () => import('./task_graph/TaskOverview.vue') },
+        { path: ':nf/:version', name: 'task-list', component: () => import('./task_graph/TaskList.vue') },
+      ],
+    },
+    {
+      path: '/task-graph/:nf/:version/:taskId',
+      name: 'task-detail',
+      component: () => import('./task_graph/TaskDetail.vue'),
+    },
+    {
       path: '/feature-graph',
       component: () => import('./feature_graph/FeatureIndex.vue'),
       children: [
