@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 扫描访问限制场景相关特性的所有md文件
-从feature-graph/data的CSV文件中筛选
+从FeatureGraph/data/legacy的CSV文件中筛选
 """
 
 import csv
@@ -33,7 +33,7 @@ def scan_features():
     results = {}
 
     # 扫描UDG
-    udg_csv = 'D:/mywork/KnowledgeBase/SFCGraph/feature-graph/data/UDG_feature_files.csv'
+    udg_csv = 'D:/mywork/KnowledgeBase/SFCGraph/FeatureGraph/data/legacy/UDG_feature_files.csv'
     with open(udg_csv, 'r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -45,7 +45,7 @@ def scan_features():
                 results[fid]['files'].append(full_path)
 
     # 扫描UNC
-    unc_csv = 'D:/mywork/KnowledgeBase/SFCGraph/feature-graph/data/UNC_feature_files.csv'
+    unc_csv = 'D:/mywork/KnowledgeBase/SFCGraph/FeatureGraph/data/legacy/UNC_feature_files.csv'
     with open(unc_csv, 'r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
         for row in reader:

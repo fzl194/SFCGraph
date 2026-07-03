@@ -81,24 +81,11 @@ SFCGraph/
 │   ├── UDG_Product_Documentation_CH_20.15.2/              # UDG 用户面产品文档（71,374 文件）
 │   └── UNC 20.15.2 产品文档(裸机容器) 05/                 # UNC 控制面产品文档（46,657 文件）
 │
-├── feature-graph/                                          # 特性图谱（中间层）
-│   ├── FEATURE_GRAPH_SCHEMA.md                             # 特性图谱 Schema 定义
-│   ├── UDG 20.15.2 特性清单 01.xlsx                        # UDG 特性清单源文件
-│   ├── UNC 20.15.2 特性清单 01.xlsx                        # UNC 特性清单源文件
-│   ├── step1_extract_features.py                           # Step 1: xlsx → 特性CSV
-│   ├── step2_map_docs.py                                   # Step 2: 特性 → 文档映射
-│   ├── step3_audit_report.py                               # Step 3: 映射审计报告
-│   ├── step4_extract_l1.py                                 # Step 4: L1-L4 自动化抽取
-│   └── data/                                               # 抽取输出数据
-│       ├── {UDG,UNC}_features.csv                          # 特性清单
-│       ├── {UDG,UNC}_feature_files.csv                     # 特性-文件映射
-│       ├── l1_{udg,unc}_feature_attributes.csv             # L1: Feature基础属性
-│       ├── l1_{udg,unc}_feature_dependency.csv             # L3: 特性依赖关系
-│       ├── l1_{udg,unc}_feature_license.csv                # L4: License映射
-│       ├── l1_{udg,unc}_doc_assets.csv                     # L2: 文档分类
-│       ├── audit_report.md                                 # 映射审计结果
-│       ├── l1_extraction_report.md                         # L1抽取统计报告
-│       └── review-unc-l1-extraction.md                     # UNC L1质量审查报告
+├── FeatureGraph/                                           # 特性图谱（特性层，三层图谱承接者）
+│   ├── 特性层对象与关系定义.md                              # 特性层 schema 权威定义
+│   ├── pipeline.yaml / build_all.py                        # 抽取 pipeline（半自动，对齐 ConfigTask 模式）
+│   ├── builder/{core,steps,agent}/                         # 模块化抽取（step1-4 逻辑已移植于此）
+│   └── data/{nf}/{version}/*.jsonl                         # 产物 + legacy/ 历史 CSV 种子
 │
 ├── business-graph/                                          # 业务图谱（上层）
 │   ├── 00-design-charter.md                                # 设计章程
@@ -162,27 +149,7 @@ SFCGraph/
 
 ### 6.3 处理管道
 
-```
-Step 1: step1_extract_features.py
-    输入: UDG/UNC 特性清单 xlsx
-    输出: data/{UDG,UNC}_features.csv
-    逻辑: 解析Excel，提取特性层级与NF支持信息
-
-Step 2: step2_map_docs.py
-    输入: features.csv + 产品文档目录
-    输出: data/{UDG,UNC}_feature_files.csv
-    逻辑: 扫描文档目录，将md文件映射到最深匹配的特性
-
-Step 3: step3_audit_report.py
-    输入: features.csv + feature_files.csv
-    输出: data/audit_report.md
-    逻辑: 发现无文档特性、无特性文件、映射异常等问题
-
-Step 4: step4_extract_l1.py
-    输入: features.csv + feature_files.csv + 概述md文件
-    输出: l1_*_feature_attributes/dependency/license/doc_assets.csv
-    逻辑: 解析概述md固定section，提取属性/依赖/License/文档分类
-```
+> **已迁移至 `FeatureGraph/builder/`**：特性抽取改由 `pipeline.yaml` + `build_all.py` 编排（半自动：自动步连续跑、Agent 步遇 PAUSE 停），产物落 `data/{nf}/{version}/*.jsonl` + 四段式实例键。历史 step1-4（xlsx→特性CSV、文档映射、L1-L4 抽取）的逻辑已移植进 `builder/core/`，旧脚本随 `feature-graph/` 目录移除；历史 CSV 作为种子保留在 `FeatureGraph/data/legacy/`。
 
 ### 6.4 已知质量问题
 
@@ -327,26 +294,16 @@ Step 4: step4_extract_l1.py
 ### 特性图谱构建
 
 ```bash
-cd feature-graph
-
-# Step 1: 从xlsx提取特性清单
-python step1_extract_features.py
-
-# Step 2: 映射文档到特性
-python step2_map_docs.py
-
-# Step 3: 生成审计报告
-python step3_audit_report.py
-
-# Step 4: L1-L4自动化抽取
-python step4_extract_l1.py
+# 特性层抽取 pipeline（半自动：自动步连续跑，Agent 步遇 PAUSE 停）
+python FeatureGraph/build_all.py UDG 20.15.2          # 全量（自动步 skip-if-exists）
+python FeatureGraph/build_all.py UDG 20.15.2 feature   # 只跑某步（显式单步不 skip）
 ```
 
 ### 查看结果
 
 ```python
 import csv
-with open('feature-graph/data/l1_udg_feature_attributes.csv', encoding='utf-8-sig') as f:
+with open('FeatureGraph/data/legacy/l1_udg_feature_attributes.csv', encoding='utf-8-sig') as f:
     reader = csv.DictReader(f)
     for row in reader:
         print(row['feature_id'], row['feature_name'], row['feature_type'])
@@ -360,9 +317,7 @@ with open('feature-graph/data/l1_udg_feature_attributes.csv', encoding='utf-8-si
 | 文档 | 路径 | 说明 |
 |------|------|------|
 | 项目全景设计 | `云核心网三层配置图谱与Agent可用知识体系构建上下文.md` | 项目目标、三层架构、技术路线、阶段规划 |
-| 特性图谱Schema | `feature-graph/FEATURE_GRAPH_SCHEMA.md` | 7节点2边完整数据模型、抽取策略、进度追踪 |
-| L1抽取报告 | `feature-graph/data/l1_extraction_report.md` | L1-L4抽取统计 |
-| 质量审查报告 | `feature-graph/data/review-unc-l1-extraction.md` | UNC 5特性抽样审查 |
+| 特性层 schema | `FeatureGraph/特性层对象与关系定义.md` | 特性层对象/关系权威定义（Feature/SubFeature/License/FeatureRule/DecisionPoint） |
 | 业务图谱设计章程 | `business-graph/00-design-charter.md` | Schema讨论范围与目标 |
 | 业务感知终稿 | `business-graph/06-business-awareness-business-graph-final.md` | 业务感知完整图谱定义与实例 |
 | 业务感知v2终稿 | `business-graph/myoutput/.../19-*-final_v2.md` | v2版本（7域32能力87流程218功能） |

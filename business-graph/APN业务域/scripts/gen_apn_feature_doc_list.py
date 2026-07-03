@@ -5,7 +5,7 @@
 生成 apn-feature-doc-list.md。
 
 参考: 带宽控制场景 scripts/gen_bandwidth_feature_doc_list.py
-数据源: feature-graph/data/{UDG,UNC}_feature_files.csv
+数据源: FeatureGraph/data/legacy/{UDG,UNC}_feature_files.csv
 特性来源: APN配置树.md (专家梳理的配置树叶子节点)
 """
 from __future__ import annotations
@@ -127,7 +127,7 @@ def load_feature_files(product: str) -> Dict[str, List[str]]:
 
     CSV 含 BOM 前缀,首列为 feature_id,file_path 列含 'path'。
     """
-    csv_path = os.path.join(ROOT, "feature-graph", "data", f"{product}_feature_files.csv")
+    csv_path = os.path.join(ROOT, "FeatureGraph", "data", "legacy", f"{product}_feature_files.csv")
     result: Dict[str, List[str]] = {}
     with open(csv_path, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
@@ -174,7 +174,7 @@ def build_markdown(udg_csv: Dict[str, List[str]],
     out.append("# APN业务域特性文档清单")
     out.append("")
     out.append("> 业务域: APN(接入与会话管理)")
-    out.append("> 从 `feature-graph/data/UDG_feature_files.csv` 和 `UNC_feature_files.csv` 提取")
+    out.append("> 从 `FeatureGraph/data/legacy/UDG_feature_files.csv` 和 `UNC_feature_files.csv` 提取")
     out.append(f"> 共 {len(FEATURES)} 个特性(配置树11 + T1核心补全26),按6大类组织(APN基础/地址分配/鉴权计费/接入方式/网元选择/接入控制)")
     out.append("> 特性来源: `APN配置树.md`(专家梳理的配置树叶子节点)")
     out.append("")

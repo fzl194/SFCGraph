@@ -36,7 +36,7 @@
 |---|---|---|
 | `ConfigTask/` | 可读写(工作目录) | Skill、资产、registry、review 队列 |
 | 根 `改进后三层图谱定义.md` | 只读 | schema 权威 |
-| `feature-graph/data/` | 只读 | 特性 → md 清单 |
+| `FeatureGraph/data/legacy/` | 只读 | 特性 → md 清单 |
 | `CommandGraph/data/assets/` | 只读 | mml_commands 命令真相 |
 | `output/…产品文档…/` | 只读 | 激活 md 真源 |
 

@@ -45,7 +45,7 @@ features_declared = [
 
 def load_csv_feature_files(product):
     """加载CSV，返回{feature_id: [file_path, ...]}"""
-    csv_path = os.path.join(ROOT, 'feature-graph', 'data',
+    csv_path = os.path.join(ROOT, 'FeatureGraph', 'data', 'legacy',
                             f'{product}_feature_files.csv')
     result = {}
     with open(csv_path, encoding='utf-8') as f:

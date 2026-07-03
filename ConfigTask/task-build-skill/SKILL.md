@@ -13,7 +13,7 @@
 ## 0. 边界规则（首条，硬约束）
 
 - **可写**：仅 `ConfigTask/`（本目录）。所有资产、Skill、archive 都在此。
-- **只读**（只查不改）：根目录 `改进后三层图谱定义.md`、`feature-graph/data/`、`CommandGraph/data/assets/`、`output/…产品文档…/`。
+- **只读**（只查不改）：根目录 `改进后三层图谱定义.md`、`FeatureGraph/data/legacy/`、`CommandGraph/data/assets/`、`output/…产品文档…/`。
 - 每次写文件前自检：路径是否在 `ConfigTask/` 下。越界即停。
 
 ---
@@ -126,7 +126,7 @@ ConfigTask/task-assets/{nf}/{version}/
 
 ```
 输入：
-  · 该特性全部相关 md（清单来自 feature-graph/data/{nf}_feature_files.csv，按 feature_id 过滤）
+  · 该特性全部相关 md（清单来自 FeatureGraph/data/legacy/{nf}_feature_files.csv，按 feature_id 过滤）
       主源：部署/激活 md（命令、配置意图、操作流程、数据规划表）
       辅源：概述/原理/参考信息/调测 md（决策维度、约束规格、证据）
   · 涉及命令的 CommandGraph mml_commands.jsonl（parameter_description：数据来源/可选必选/取值范围/配置原则）

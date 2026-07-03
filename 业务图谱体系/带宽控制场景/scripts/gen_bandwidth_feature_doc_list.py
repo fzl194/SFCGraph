@@ -45,7 +45,7 @@ features_ordered = [
 
 
 def load_csv_feature_files(product):
-    csv_path = os.path.join(ROOT, 'feature-graph', 'data', f'{product}_feature_files.csv')
+    csv_path = os.path.join(ROOT, 'FeatureGraph', 'data', 'legacy', f'{product}_feature_files.csv')
     result = {}
     with open(csv_path, encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -73,7 +73,7 @@ unc_csv = load_csv_feature_files('UNC')
 out = []
 out.append('# 带宽控制特性文档清单')
 out.append('')
-out.append('> 从 `feature-graph/data/UDG_feature_files.csv` 和 `feature-graph/data/UNC_feature_files.csv` 提取')
+out.append('> 从 `FeatureGraph/data/legacy/UDG_feature_files.csv` 和 `FeatureGraph/data/legacy/UNC_feature_files.csv` 提取')
 out.append(f'> 共 {len(features_ordered)} 个特性')
 out.append('')
 

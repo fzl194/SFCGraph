@@ -11,7 +11,7 @@
 
 | 输入 | 来源 |
 |---|---|
-| 该 feature 的**全部** md | `feature-graph/data/UDG_feature_files.csv` 按 feature_id 过滤(主配置/参考信息/数据规划/实现原理/部署 UPF) |
+| 该 feature 的**全部** md | `FeatureGraph/data/legacy/UDG_feature_files.csv` 按 feature_id 过滤(主配置/参考信息/数据规划/实现原理/部署 UPF) |
 | 涉及命令的 mml 真相 | `CommandGraph/data/assets/UDG/20.15.2/mml_commands.jsonl`(parameter_description / notes) |
 | 现有该 feature 的 task | `task-assets/UDG/20.15.2/tasks/task-2-XXXXX.yaml` + 其引用的 compound + atom |
 | canonical 复用登记表 | `task-assets/UDG/20.15.2/canonical-compounds.md`(复用查找;重跑 build_index.py 刷新) |

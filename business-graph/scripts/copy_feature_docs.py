@@ -20,7 +20,7 @@ print(f'Included features: {len(included_ids)}')
 # 2. Load file mappings from CSV
 file_map = {}  # feature_id -> [relative_paths]
 for csv_file in ['UDG_feature_files.csv', 'UNC_feature_files.csv']:
-    csv_path = f'{BASE}/feature-graph/data/{csv_file}'
+    csv_path = f'{BASE}/FeatureGraph/data/legacy/{csv_file}'
     if not os.path.exists(csv_path):
         continue
     with open(csv_path, 'r', encoding='utf-8-sig') as f:
