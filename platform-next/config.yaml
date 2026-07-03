@@ -9,3 +9,7 @@ command_graph:
 feature_graph:
   assets_root: "../FeatureGraph/data"
   doc_root: ".."
+
+task_graph:
+  assets_root: "../ConfigTask/assert"
+  doc_root: ".."

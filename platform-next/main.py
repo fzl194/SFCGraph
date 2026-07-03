@@ -14,6 +14,7 @@ from shared.config import load_config
 from feature_graph.router import router as feature_router
 from command_graph.router import router as command_router
 from business_graph.router import router as business_router
+from task_graph.router import router as task_router
 
 
 @asynccontextmanager
@@ -34,6 +35,7 @@ app.add_middleware(
 app.include_router(feature_router)
 app.include_router(command_router)
 app.include_router(business_router)
+app.include_router(task_router)
 
 # Serve frontend static files in production
 frontend_dist = Path(__file__).resolve().parent / "frontend" / "dist"
