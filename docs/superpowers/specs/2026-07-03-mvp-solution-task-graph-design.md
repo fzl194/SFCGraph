@@ -1,180 +1,152 @@
-# MVP-方案-任务图谱设计（递归式三层图谱重构）
+# MVP-方案-任务图谱：流程与场景层设计
 
 > 日期：2026-07-03
 > 状态：设计草案（待 spec 审查 + 用户复核）
-> 范围：计费场景三层图谱的解耦重构，以及一套可扩展到任意场景/图谱的通用构建流程
-> 相关：`三层图谱Schema-最终版-v0.1.md`、`FeatureGraph/特性层对象与关系定义.md`、`CommandGraph/COMMAND_GRAPH_SCHEMA.md`、`ConfigTask/task-build-skill/SKILL.md`
+> **对象模型与构建准则权威**：根目录 `改进后三层图谱定义.md` §3-§8 + `ConfigTask/task-build-skill/SKILL.md` v3。本 spec **不重定义**任何对象/字段/枚举，只补充这两份未覆盖的部分：① 通用构建流程框架；② 场景层目录与闭包引用约定；③ 现有计费场景 md 的迁移方向。
 
 ---
 
-## 1. 背景与问题
+## 1. 与现有权威的关系（必读）
 
-当前三层图谱（以计费场景为样本）存在三类结构性问题：
-
-1. **每层对象与关系只用 md 描述，缺结构化资产**。`业务图谱体系/计费场景/three-layer-graph/*.md` 是纯 markdown，机器不可读、不可推理、不可跨场景复用。
-2. **底部三层已有 canonical 结构化资产，但场景 md 把它们又重抽了一遍**，造成两套并行世界：
-   - `FeatureGraph/data/{NF}/{ver}/*.jsonl`（Feature/SubFeature/License + 层内边）
-   - `CommandGraph/data/assets/{NF}/{ver}/*.jsonl`（MMLCommand/ConfigObject/CommandParameter + 层内边）
-   - `ConfigTask/task-assets/{NF}/{ver}/`（Task/Rule/DecisionPoint，已建 UDG）
-   - 场景 md 又把这些对象及其关系重新手写一遍。
-3. **跨层关系"无家可归"**。`uses_feature` / `decomposes_to` / `FeatureTaskOrderEdge` / `FeatureRule` / `CommandRule` 等只在场景 md 里，canonical 里没有这些对象类型或边。
-
-### 1.1 关系覆盖现状（扫描结论）
-
-**已承载（canonical 里有边/字段）：**
-- 特性层：`depends_on` / `conflicts_with`（feature_relations.jsonl）、`requires_license`、`has_subfeature`（parent_feature_code 字段）
-- 命令层：`has_parameter` / `operates_on` / `refers_to` / `parameter_references` / `conditional_required`（5 个 edge jsonl）
-- 任务层：`invokes Command`（task.ref）、`targets Parameter`（parameter_bindings）、`param→DP`（decision_ref）；TaskRule/DecisionPoint 独立对象
-
-**未承载（只在场景 md 或未建）：**
-- 业务层全部（BD/NS/CS/DP/BR/SO + 关联边）
-- 跨层组合边（CS→Feature、CS→Task、Feature→Task）
-- 编排边（FeatureTaskOrderEdge、TaskCommandOrderEdge）
-- 规则对象（FeatureRule、CommandRule——canonical 无此对象类型）
-- 决策影响边（DP selects / sets_value_pattern）、跨层精化（refined_by）
-
-## 2. 核心设计原则
-
-1. **MVP 永远 = 单个方案（solution）**。不管构建什么图谱、输入是什么，工作单元始终是一个方案。规模靠"加方案"线性扩展，不靠重设计本体。
-2. **动态层对象类型压到最少**：只有 `Task` 一种主对象，`Rule` 与 `DecisionPoint` 挂其上。静态层（Feature / Command / ConfigObject / CommandParameter）保持独立对象类型不变。
-3. **结构高度一致、可嵌套迭代**：task 内含子 task，层层拆到底；任何层级遵守同一套拆解 SOP。
-4. **递归**：一个特性就是一个小方案，同一套 SOP 适用。
-5. **Feature / Command 独立构建**为静态字典，task 层只通过 ID 引用。
-6. **跨层连接全走 task 组合**，不建跨层静态边（Feature→Command 不直连）。
-
-## 3. 对象模型
-
-### 3.1 动态层（最小）
-
-| 对象 | 关键字段 | 说明 |
+| 主题 | 权威出处 | 本 spec 是否重定义 |
 |---|---|---|
-| **Task** | `task_id`, `task_layer`(solution/feature/generalized/compound/atom), `task_logical_name`, `task_intent`, `status`, `source_evidence_ids`, `feature_ref?`, `command_ref?`, `nf`, `version` | 统一节点；`task_layer` 已是 ConfigTask 现有字段，仅扩 `solution` 值 |
-| **Rule** | `rule_id`, `task_ref`, `rule_type`, `rule_logic`, `severity` | 挂 Task |
-| **DecisionPoint** | `dp_id`, `task_ref`, `question`, `options`, `impact_scope` | 挂 Task；`impact_scope` = 该 DP 触及的后代范围 |
-| **Task 组合边** | `from_task`, `to_task`, `relation`(推理得出，非冻结枚举), `condition_ref?`(DP) | Task 间 |
+| 静态业务图谱（BD/NS/CS/SO + 关系） | `改进后三层图谱定义.md` §3.1 | 否，采用 |
+| 静态特性图谱（Feature/SubFeature/License + 6 关系） | §3.2 | 否，采用 |
+| 静态命令图谱（MMLCommand/Param/ConfigObject + 关系） | §3.3 | 否，采用 |
+| 动态 Task 层对象（Task/TaskParameterBinding/TaskRule/DecisionPoint/TaskRelation） | §4-§7 | 否，采用 |
+| task_layer 取值（atom/compound/feature/**solution**/generalized）与 ID 前缀（0-/1-/2-/**3-**/4-） | §4 + SKILL.md §2.2 | 否；**`solution` 层已存在，非新增** |
+| TaskRelation 8 值 relation_type 枚举（precedes/depends_on/must_be_last/excludes/fallback_to/parallel_with/expands_to/contains） | SKILL.md §2 | 否，采用 |
+| TaskRelation 存储（内嵌父 task yaml `task_relations[]`，不建独立文件） | SKILL.md §3 | 否，采用 |
+| Task 递归组合 / 父子约束 / 复用合并 | §4.5（含 4.5.1 父 DP 锁子 DP、4.5.2 合并不新增对象类型） | 否，采用 |
+| 静态→动态投影（参数条件/命令引用/License/业务方案） | §8（含 §8.4 业务方案→Solution Task） | 否，采用 |
+| Task 层逐特性构建流程（atom→compound→feature→跨特性）+ 审查闭环 + 合并双闸 | SKILL.md §5/§7/§8 | 否，采用 |
+| 字段命名（`decision_id`、`owner_task_ref`、`task_category` 等） | §4-§7 | 否，采用 |
 
-### 3.2 静态层（独立、不变）
+> **审阅者注**：本表的每一行都是对 v1 草案矛盾/冗余处的明确让位。v1 曾把 relation_type 写成"不冻结"、把 `solution` 写成"新增"、自创 `dp_id/task_ref` 字段名、把 Task 组合边列为顶层对象——均撤回，改引权威。
 
-- `FeatureGraph` — Feature / SubFeature / License + 层内静态边
-- `CommandGraph` — MMLCommand / ConfigObject / CommandParameter + 层内静态边
+## 2. 本 spec 真正补充的内容
 
-### 3.3 `task_layer` 取值映射
+权威文档定义了"对象是什么、字段是什么、单特性怎么建"，但**没有**定义：
+1. 跨场景通用的"按方案 MVP 增量构建"流程框架（§3）；
+2. 场景层（业务闭包）的目录结构与"闭包如何引用 canonical Solution Task"（§4）；
+3. 现有计费场景 `three-layer-graph/*.md` 的迁移方向（§5）。
 
-| 现有值 | 含义 | 本设计角色 |
-|---|---|---|
-| `atom` | 原子，单命令 | command-task（叶子，复用已建） |
-| `compound` | 多命令组合 | step-task |
-| `feature` | 特性级 | feature-task（"小方案"，递归） |
-| `generalized` | 跨特性通用 | 通用 task |
-| `solution`（新增） | 方案级 | solution-task（闭包） |
+其余皆为对权威的引用或复述。
 
-## 4. 拆解优先级链（cascade）
+---
 
-给定任意 task（方案或子 task）往下拆，按顺序判定子节点粒度：
+## 3. 通用构建流程框架（NEW）
 
-```
-1. 能映射到某个已有 Feature？      → 子 = feature-task（feature_ref → FeatureGraph ID）
-2. 否则，是几条专属命令的组合？     → 子 = step-task（task_layer=compound，再递归）
-3. 否则，就一条命令？              → 子 = command-task（command_ref → CommandGraph ID，原子叶）
-```
+### 3.1 核心原则
+1. **MVP 永远 = 单个方案（ConfigurationSolution）**。不管什么图谱/输入，工作单元始终是一个方案；规模靠"加方案"线性扩展。
+2. **业务顶层（BD→NS→CS）由人+Agent 一次性定**，每场景独立。产物 = `business/` 下的 CS 定义（id/name/intent/scope/participants/design_intent + 非正式能力预期）。
+3. **每个 CS 独立拆解为 Solution Task**（动态层，`task_layer=solution`，ID 前缀 `3-`）。CS 间的复用由 Task 层处理（§4.5.2 合并机制），方案本身不互相耦合。
+4. **特性也是小方案**：feature-task 的拆解复用本流程，输入 = 该特性的激活文档（每种配置方式视为该特性的一个"方案"）。
+5. **Feature 静态抽取 ‖ feature-task 动态构建 可并行**；同步点 = feature-task 的 `feature_ref` 指向已存在的 FeatureGraph Feature。
 
-- 叶子永远是 command-task（已独立建好，复用）。
-- 命中 1 时，feature-task 继续往下拆（递归，"特性是小方案"）。
-- 命中 2 时，step-task 的子通常是一组 command-task。
+### 3.2 拆解选择顺序（复述 SKILL.md §4.1 的强制 anchor，给"选择顺序"表述）
 
-## 5. DecisionPoint 放置与作用域
-
-- **放置原则**：DP 尽量往下挂——挂在能覆盖其全部变体的**最深** task 上。
-- **作用域**：DP 的影响范围 = 该 task 及其向下能触及的**全部后代**（选子 task、定参数值模式、开关分支）。
-- 这保证 DP 局部化、不污染无关分支，又能在必要处统一裁决。
-
-## 6. task 间边的推理（不冻结枚举）
-
-- task↔task 的关系类型（composes / sequential / fallback / must_be_last / branch...）**不预设固定枚举**。
-- 边的语义在拆解时**从源材料推理得出**（激活文档/方案定义里"先 A 再 B"、"若 X 则 A"、"A 兜底"等表述）。
-- 推理结果记录在边的 `relation` 字段；相同语义自然收敛，不做强约束。
-
-## 7. 文件夹与归属
-
-| 资产 | 位置 | 性质 |
-|---|---|---|
-| Feature 静态字典 | `FeatureGraph/data/{NF}/{ver}/` | canonical，不变 |
-| Command 静态字典 | `CommandGraph/data/assets/{NF}/{ver}/` | canonical，不变 |
-| **command-task / step-task / feature-task / generalized-task** | `ConfigTask/task-assets/{NF}/{ver}/` | **canonical，跨场景复用** |
-| **solution-task（方案闭包）** | `业务图谱体系/{场景}/closures/` | **场景专属**，组合 canonical task |
-| BD / NS 静态对象 | `业务图谱体系/{场景}/business/` | 场景专属，人+Agent 定 |
-| md 残留 | `业务图谱体系/{场景}/docs/` | 图承载不了的叙述/原文 |
-
-> 跨场景复用底层三层；场景只 own "BD/NS + solution-task 闭包 + md"。
-
-## 8. 构建流程（可扩展 SOP）
+给定任意上层 Task 往下拆，按顺序判定子 Task 粒度：
 
 ```
-Phase A  业务顶层（人+Agent，一次性，每场景）
-  输入: 领域知识  →  输出: BD/NS + 每个 CS 的「MVP 方案定义」
-  方案定义 = id/name/intent/scope/participants/design_intent + 非正式能力/命令预期
-
-Phase B  方案拆解（每 CS 独立，可并行）
-  输入: 一个 MVP 方案定义
-  循环: 对当前 task 跑 §4 cascade → 产出子 task + Rule + DP（§5 放置）+ 边（§6 推理）
-  终止: 全部叶子命中 command-task
-  输出: 该方案的 solution-task 子树（闭包）
-
-Phase C  Feature 双轨并行
-  轨1: FeatureGraph 静态字段抽取（产品级，已基本完成，与本期解耦）
-  轨2: feature-task 动态构建（本期重点）
-        输入 = 该 Feature 的「激活文档」（每种配置方式 = 一个 feature-solution）
-        跑同一套 Phase B SOP；多个配置方式可合并为一个 feature-task + DP（人工评估）
-  同步点: 轨2 用 feature_ref 指向轨1 已存在的 Feature
-
-Phase D  command-task（已独立建好，UDG 基本完成，复用）
+1. 能映射到某个已有 Feature？        → 子 = feature-task（feature_ref → FeatureGraph）
+2. 否则，是几条专属命令的组合？       → 子 = compound/step-task（task_layer=compound，再递归）
+3. 否则，就一条命令？                → 子 = atom-task（ref → CommandGraph，叶子）
 ```
 
-### 8.1 递归一致性
+- 叶子永远是 atom-task（已建，复用）。
+- 命中 1 时，feature-task 继续往下拆（递归）。
+- 与 SKILL.md §4.1（atom 强制 / feature 强制 / compound 凝练 / solution-generalized 凝练）一致，本流程是其"自顶向下选择顺序"的对应表述。
 
-- 顶层方案（CS）、feature-task、step-task 都用 Phase B 的 cascade。
-- 输入契约统一：一个"方案定义"（顶层=CS定义；feature级=激活文档）。
-- 终止统一：叶子全是 command-task。
+### 3.3 DP 放置（复述 §4.5.1 + §6）
+- DP 尽量挂在**能覆盖其全部变体的最深 Task** 上。
+- 作用域 = 该 Task 及其向下能触及的全部后代（通过 `impacts[].target_ref` 指向子 DP / 子 task / 参数）。
+- 父 Task 固定子 Task 配置方法的两条路径（父 DP `selects_option` 子 DP；或父 TaskRule `rule_scope:relation` 约束）已在 §4.5.1 给出，本 spec 不另立。
 
-## 9. 方案合并
+### 3.4 task 间边（采用 8 值枚举，选择靠推理）
+- relation_type 用 SKILL.md §2 的 8 值枚举，**不自由命名**。
+- "从内容推理" = 拆解时根据源材料（激活文档/方案定义）判断该用 8 个里的哪一个（如"先 A 再 B"→`precedes`；"A 兜底"→`fallback_to`；"A 含 B"→`contains`）。
 
-- 两个 solution-task 发现结构大量重叠时，**合并 = 产出一个新 solution-task + DP 承载原两方案的差异**。
-- 合并需人参与评估（不自动合并）。
-- 合并后原两方案可退化为新方案在 DP 不同选项下的两个实例。
+---
 
-## 10. md 残留规则
+## 4. 场景层目录与闭包引用（NEW）
 
-图无法承载的 → md，挂场景 `docs/`。典型：
-- 方案 design_intent 叙述、端到端走查
-- 证据原文、特性激活文档原文
-- 方案合并评估记录、审查报告
-- 领域背景、术语
+权威文档定义了 Solution Task 对象，但未约定**场景层闭包**放哪、如何引用 canonical。本节补这项。
 
-判定线：**能表达为"节点 + 属性 + 边"的进图；只能叙述/推理/原文的进 md。**
+### 4.1 目录约定
 
-## 11. 对计费场景的迁移含义（方向，非实施步骤）
+```
+业务图谱体系/{场景}/                          # 场景专属，人+Agent 维护
+├── business/                                # 业务顶层（§3.1 原则 2 产物）
+│   ├── bd-ns.jsonl                          # BD/NS 静态对象 + contains/instantiated_as 边
+│   └── cs-definitions.jsonl                 # CS 定义（MVP 输入契约：id/name/intent/scope/participants/design_intent/预期能力）
+├── closures/                                # 场景闭包：引用 canonical Solution Task + 承载场景特定语义
+│   └── cs-{id}-closure.yaml                 # 一个 CS 一个闭包文件
+├── docs/                                    # md 残留：design_intent 叙述、端到端走查、证据原文、合并评估、审查报告
+└── (保留现有 feature-knowledge/ 等)
+```
 
-1. **保留**：FeatureGraph / CommandGraph / ConfigTask 的 command-task 资产不动。
-2. **新建（本期）**：feature-task / step-task / solution-task 子树，从现有 `three-layer-graph/*.md` + 特性激活文档抽。
-3. **改造**：原 `three-layer-graph/01-business-graph.md` 的 CS → solution-task；DP/BR/SO → 收进 solution-task 的 DP/Rule，少量进 md。
-4. **退役**：`three-layer-graph/02~05*.md` 里手写的 feature/command/task 重复内容，迁入结构化资产后降为只读视图或废弃。
-5. **保留 md**：`docs/` 承载 design_intent、端到端走查、证据。
+### 4.2 Solution Task 归属（关键决策）
 
-## 12. 范围与非目标
+- **Solution Task 本体在 ConfigTask**（遵 SKILL.md §0"可写仅 ConfigTask/"，ID 前缀 `3-`，按 `{NF}/{version}` 隔离）。
+  - 例：UDG 侧"离线计费"= `UDG@20.15.2@Task@3-xxxxx`（solution 层）；UNC 侧同理。
+- **场景闭包**（`closures/cs-{id}-closure.yaml`）= **薄引用层**：组合 UDG + UNC 的 Solution Task ID + 跨侧/跨 NF 的场景级 DP/Rule + 指向 `docs/` 的 md 残留。
+- 闭包**不重抽** canonical 实体内部；CS 的业务方案投影（§8.4）落在 Solution Task，闭包只做"场景视角的组合 + 引用"。
 
-**本期范围：**
-- 稳定构建动态 Task 层（feature-task / step-task / solution-task）的 SOP 与对象约定。
-- 计费场景作为首个落地样本。
+### 4.3 闭包文件契约（草案）
 
-**非目标（本期不做）：**
-- 改 FeatureGraph / CommandGraph 的静态字典结构。
-- 自动化方案合并（人工评估）。
-- 把所有 md 内容一次性迁完（按方案 MVP 增量推进）。
-- 图数据库落地（先 jsonl，图 DB 是后续演进）。
+```yaml
+closure_id: CS-CH-01            # 业务层 CS id
+scenario: 计费场景
+solution_tasks:                 # 引用 canonical（跨 NF）
+  - UDG@20.15.2@Task@3-00001
+  - UNC@20.15.2@Task@3-00002
+decision_points:                # 场景级跨侧 DP（如"配额耗尽动作"跨 UDG/UNC）
+  - <DP id 或内嵌>
+rules:                          # 场景级规则（跨侧一致性等）
+  - <TaskRule 或引用>
+docs_refs:                      # md 残留指引
+  - docs/cs-ch-01-walkthrough.md
+  - docs/cs-ch-01-merge-eval.md
+status: draft/inferred/active
+```
 
-## 13. 待定 / 未来
+---
 
-- 边的推理具体规则集（Phase B 执行细则，留给实施 plan）。
-- `generalized` task 在 cascade 中的确切位置（是否作为第 1.5 优先级："能复用通用 task？→ 用它"）。
-- 多场景方案合并的跨场景闭包（如计费+带宽共享某个 feature-task）的命名与归属。
-- review-ui 如何渲染新结构。
+## 5. 计费场景迁移方向（非实施步骤）
+
+1. **保留不动**：`FeatureGraph/`、`CommandGraph/`、`ConfigTask/` 现有 atom/compound/feature Task 资产。
+2. **本期构建**（按 §3 流程，MVP = 单个 CS）：
+   - feature-task / step-task / solution-task 子树：从特性激活文档 + 现有 `three-layer-graph/*.md` 抽，落 ConfigTask。
+   - 场景闭包：新建 `业务图谱体系/计费场景/{business,closures,docs}/`。
+3. **改造**：原 `three-layer-graph/01-business-graph.md` 的 CS → `business/cs-definitions.jsonl` + ConfigTask 里对应 Solution Task；DP/BR/SO → 收进 Solution Task 的 DP/Rule（§8 投影），少量进 `docs/`。
+4. **退役**：`three-layer-graph/02~05*.md` 里手写的 feature/command/task 重复内容，迁入结构化资产后降为只读视图或废弃；`00-overview.md` 可保留为入口导航。
+5. **md 残留入 `docs/`**：design_intent、端到端走查、证据、合并评估、审查报告。
+
+---
+
+## 6. 范围与非目标
+
+**本期范围**
+- §3 流程框架 + §4 场景层目录与闭包契约 + §5 迁移方向。
+- 计费场景作为首个落地样本，按方案 MVP 增量推进。
+
+**非目标**
+- 改 `改进后三层图谱定义.md` / FeatureGraph / CommandGraph 的对象定义。
+- 自动化方案合并（SKILL.md §7.1 双闸 + §8.4 人审攒批，保持人工）。
+- 一次性迁完所有 md（按 CS 增量）。
+- 图数据库落地（后续演进）。
+
+## 7. 待定 / 未来
+
+- `generalized` 层在 §3.2 cascade 中的确切插入点（"能复用通用 task？"是否作为优先级 1.5）——留实施 plan 验证。
+- 闭包文件契约（§4.3）字段最终化——随首个 CS 落地校正。
+- 跨场景闭包（计费+带宽共享 feature-task）的命名与归属——多场景接入时再定。
+- review-ui 如何渲染闭包层。
+
+## 8. 验收（设计层）
+
+- 本 spec 不与 `改进后三层图谱定义.md` §3-§8 或 SKILL.md v3 任何字段/枚举/存储约定冲突。
+- §3 流程的每一步都能映射到 SKILL.md §5 的现有 pass 步骤或 §4.5 的递归/合并机制（无悬空动作）。
+- §4 闭包契约只引用 canonical ID，不复制 canonical 实体内部字段。
+- §5 迁移不要求改 FeatureGraph/CommandGraph 静态字典。
