@@ -1,5 +1,7 @@
 <template>
-  <div v-if="error" class="tg-detail-error">
+  <div class="page-container">
+    <div class="page-inner">
+      <div v-if="error" class="tg-detail-error">
     <el-alert :title="error" type="error" show-icon :closable="false" />
   </div>
 
@@ -227,9 +229,11 @@
     </div>
   </div>
 
-  <div v-else class="tg-notfound">
-    <span v-if="loading">加载中…</span>
-    <span v-else>任务未找到：{{ nf }} / {{ version }} / {{ taskId }}</span>
+      <div v-else class="tg-notfound">
+        <span v-if="loading">加载中…</span>
+        <span v-else>任务未找到：{{ nf }} / {{ version }} / {{ taskId }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -775,10 +779,8 @@ onMounted(loadTask)
 }
 
 .tg-notfound {
-  height: calc(100vh - var(--navbar-height));
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: var(--space-12) 0;
+  text-align: center;
   color: var(--text-tertiary);
   font-size: var(--text-sm);
 }
