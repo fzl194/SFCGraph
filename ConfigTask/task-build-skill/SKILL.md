@@ -260,3 +260,40 @@ Agent 按 §5 提取（status=draft/inferred）
 - 中文 task_category（"配置"）必须转英文枚举（`configure`）。
 - 所有 status 初始为 draft/inferred，**不预设 active**（active 只由人工校准赋予）。
 - 跨网元/跨版本不合并，演进靠 diff。
+
+---
+
+## 12. 跨场景流程与场景闭包层
+
+> 本 Skill 建 canonical Task 层（`ConfigTask/`）；场景层（业务闭包）在人+Agent 协同下**消费**它。本节定两者接口与流程定位。**不引入新对象类型或字段**——对象模型仍以 §2 + 根目录 `改进后三层图谱定义.md` §4-§8 为准。
+
+### 12.1 MVP = 单个方案
+- 不管什么图谱/场景，工作单元始终是一个 `ConfigurationSolution`（方案）。规模靠"加方案"线性扩展。
+- 方案间复用由 Task 层承载（§7.1 双闸 + 改进后 §4.5.2 合并），方案本身不互相耦合。
+- 本 Skill 的"逐特性 pass"（§5）是方案内部的下沉路径之一；方案也可直接组合已有 feature-task / compound-task / atom-task。
+
+### 12.2 拆解选择顺序（自顶向下；对应 §4.1 强制 anchor）
+给定一个方案或上层 task 往下拆，按顺序选子节点粒度：
+
+1. 能映射到已有 Feature？ → `feature-task`（`feature_ref`）
+2. 否则，几条专属命令的组合？ → `compound-task`（再递归）
+3. 否则，单命令？ → `atom-task`（叶子）
+
+- feature-task 继续往下拆（"特性即小方案"，走同一 SOP）；叶子恒为 atom-task，缺命令按 §6 终止。
+
+### 12.3 业务顶层（人+Agent，场景级，不在本 Skill 可写范围）
+- BD→NS→CS 由人+Agent 一次性定，落 `业务图谱体系/{场景}/business/`（jsonl：BD/NS 静态对象 + CS 定义）。
+- §0 的可写边界（`ConfigTask/`）不变；业务顶层产物（CS 定义）作为方案 MVP 的**输入契约**喂给本 Skill。
+
+### 12.4 场景闭包层
+- **Solution Task 本体在 `ConfigTask/`**（§0 可写范围、§2.2 的 `3-` 前缀、按 `{NF}/{version}` 隔离）。
+- **场景闭包** = 薄引用层，落 `业务图谱体系/{场景}/closures/cs-{id}-closure.yaml`：组合跨 NF 的 Solution Task ID + 跨侧场景级 DP/Rule + 指向 `docs/` 的 md 残留。
+- 闭包**不重抽** canonical；其 DP/Rule 优先 **ID 引用** canonical（`owner_task_ref` 指回 `ConfigTask` 的 Solution Task），仅跨侧无 canonical 宿主时才内嵌。
+- md 残留（design_intent 叙述、端到端走查、证据原文、合并评估、审查报告）落 `业务图谱体系/{场景}/docs/`。
+
+### 12.5 现有 md 场景的迁移（一次性，按方案增量）
+现有 `业务图谱体系/{场景}/three-layer-graph/*.md`：
+- CS → `business/cs-definitions.jsonl` + ConfigTask 里对应 Solution Task；
+- 可投影的 DP/BR/SO 按 §8 投影为 Solution Task 的 DecisionPoint/TaskRule（BR→TaskRule 是语义映射，非搬运）；
+- 不可投影的纯业务叙述 → `docs/`；
+- 手写的 feature/command/task 重复内容迁入结构化资产后，降级为只读视图或废弃。
