@@ -50,12 +50,13 @@
 
 ```
 1. 能映射到某个已有 Feature？        → 子 = feature-task（feature_ref → FeatureGraph）
-2. 否则，是几条专属命令的组合？       → 子 = compound/step-task（task_layer=compound，再递归）
+2. 否则，是几条专属命令的组合？       → 子 = compound-task（task_layer=compound，再递归）
 3. 否则，就一条命令？                → 子 = atom-task（ref → CommandGraph，叶子）
 ```
 
 - 叶子永远是 atom-task（已建，复用）。
 - 命中 1 时，feature-task 继续往下拆（递归）。
+- 若特性无配置类命令、或命令不在 CommandGraph，叶子仍为 atom-task，按 SKILL.md §6 缺命令/缺参数处置（atom `ref` 写预期 ID + `dependency_rule` severity=warning + `status=draft`）——保证递归恒终止于 atom。
 - 与 SKILL.md §4.1（atom 强制 / feature 强制 / compound 凝练 / solution-generalized 凝练）一致，本流程是其"自顶向下选择顺序"的对应表述。
 
 ### 3.3 DP 放置（复述 §4.5.1 + §6）
@@ -111,6 +112,8 @@ docs_refs:                      # md 残留指引
 status: draft/inferred/active
 ```
 
+> **closure DP/Rule 归属**：优先用 ID 引用 canonical（`owner_task_ref` 指向 ConfigTask 里的跨 NF Solution Task），避免内嵌复制——与 §4.2"不重抽 canonical"一致。仅当 DP/Rule 确属场景级跨侧语义、无 canonical 宿主时才内嵌在闭包里。最终形态随首个 CS 落地校正（§7）。
+
 ---
 
 ## 5. 计费场景迁移方向（非实施步骤）
@@ -119,7 +122,7 @@ status: draft/inferred/active
 2. **本期构建**（按 §3 流程，MVP = 单个 CS）：
    - feature-task / step-task / solution-task 子树：从特性激活文档 + 现有 `three-layer-graph/*.md` 抽，落 ConfigTask。
    - 场景闭包：新建 `业务图谱体系/计费场景/{business,closures,docs}/`。
-3. **改造**：原 `three-layer-graph/01-business-graph.md` 的 CS → `business/cs-definitions.jsonl` + ConfigTask 里对应 Solution Task；DP/BR/SO → 收进 Solution Task 的 DP/Rule（§8 投影），少量进 `docs/`。
+3. **改造**：原 `three-layer-graph/01-business-graph.md` 的 CS → `business/cs-definitions.jsonl` + ConfigTask 里对应 Solution Task；DP/BR/SO 中**可投影到 Task 层的部分**按 §8 投影为 Solution Task 的 DecisionPoint/TaskRule（BR→TaskRule 是语义映射、非搬运）；不可投影的纯业务叙述入 `docs/`。
 4. **退役**：`three-layer-graph/02~05*.md` 里手写的 feature/command/task 重复内容，迁入结构化资产后降为只读视图或废弃；`00-overview.md` 可保留为入口导航。
 5. **md 残留入 `docs/`**：design_intent、端到端走查、证据、合并评估、审查报告。
 
@@ -150,3 +153,4 @@ status: draft/inferred/active
 - §3 流程的每一步都能映射到 SKILL.md §5 的现有 pass 步骤或 §4.5 的递归/合并机制（无悬空动作）。
 - §4 闭包契约只引用 canonical ID，不复制 canonical 实体内部字段。
 - §5 迁移不要求改 FeatureGraph/CommandGraph 静态字典。
+- §3.2 cascade 叶子恒为 atom-task；特性无配置类命令时按 SKILL.md §6 终止，不出现非 atom 叶子。
