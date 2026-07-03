@@ -1,0 +1,79 @@
+feature_task_id: UDG@20.15.2@Task@2-00009
+feature_id: GWFD-020302
+md_source_files:
+  - GWFD-020302 基于业务时长的计费_69143989.md
+  - GWFD-020302 基于业务时长的计费/GWFD-020302 基于业务时长的计费参考信息_97488216.md
+  - GWFD-020302 基于业务时长的计费/GWFD-020302 基于业务时长的计费特性概述_69148027.md
+  - GWFD-020302 基于业务时长的计费/部署UPF_79813617.md
+  - GWFD-020302 基于业务时长的计费/实现原理/基于业务时长的计费（适用于在线计费）_69148029.md
+  - GWFD-020302 基于业务时长的计费/实现原理/基于业务时长的计费（适用于离线计费）_69148032.md
+  - GWFD-020302 基于业务时长的计费/实现原理/基于业务时长的计费（适用于融合计费）_33943344.md
+  - GWFD-020302 基于业务时长的计费/实现原理/基于业务时长的计费（适用于在线计费）/在线时长计费方式_69148030.md
+  - GWFD-020302 基于业务时长的计费/实现原理/基于业务时长的计费（适用于在线计费）/在线时长计费流程_69148031.md
+  - GWFD-020302 基于业务时长的计费/实现原理/基于业务时长的计费（适用于离线计费）/离线时长计费方式_69148033.md
+  - GWFD-020302 基于业务时长的计费/实现原理/基于业务时长的计费（适用于离线计费）/离线时长计费流程_69148034.md
+
+# 形态判定:STEP-OK — backbone 1-00001~04 全复用(Jaccard 1.0) + 直挂 0-00019 LICENSE。
+#   部署 md(部署UPF_79813617.md)操作步骤 1-12 + 数据规划表 4 场景,命令集与 2-00001 内容计费
+#   backbone 100% 重合(脚本各 URR 行均注 "此处以按流量计费为例",结构上无差量)。
+#
+# 时长计费差异如何表达(步骤③ DP 放置):
+#   ① UPF 侧 metering 差异 = ADD URR 的 OFFMETERINGTYPE/ONLMETERINGTYPE 取 TIME(而非 VOLUME)。
+#      这是 atom 0-00001(ADD URR)的参数级选择,由 atom DP 0-00001(option opt-offline/opt-online
+#      的 effect_detail 已含 "VOLUME/TIME/EVENT/FREE 取值")覆盖。atom 层冻结,本特性只引用不改。
+#      纯参数 impact(target_type=parameter)不改命令集出现/缺失 → 不进 variants 枚举(spec §4.2)。
+#   ② 时长计费方式(连续/QCT、CTP/DTP) = PGW-C/SMF 侧 ADD DCCTEMPLATE.QCT / ADD OFCSRVTEMPLATE.TQM
+#      参数选择(在线时长计费方式_69148030.md / 离线时长计费方式_69148033.md 明示)。这些是 SMF 侧
+#      命令,非 UDG UPF MML(mml_commands.jsonl 无此二命令),超出本特性(nf=UDG version=20.15.2)作用域。
+#      UDG UPF 不感知 QCT/TQM,仅按 OCS/SMF 下发的配额/信元统计时长 → 不构成本特性的 UPF 命令集分叉。
+#   ③ 在线/离线/融合 三子场景 md(69148029/69148032/33943344)均仅一段散文 + 重定向到
+#      GWFD-020300/010171/010173,不携带额外 UPF 命令。无 feature 级可选命令(对比 2-00002 有
+#      URRFAILACTION/UPDEFAULTQUOTA/UPGLBCHGPARA 三可选,2-00003/04 各一可选)。本特性 md
+#      部署脚本仅走 backbone → 无 feature DP。
+#
+# 影响命令集的 DP(本特性 variants 枚举):
+#   - 0-00002 业务匹配场景 (compound 1-00002 owner): 选 opt-basic-l34(IPv4 三四层基础,无 L7/IPv6)。
+#     本特性部署 md 操作步骤 3 文字描述仅列 "ADD FILTER(三四层) / ADD L7FILTER(七层)" 两个 bullet,
+#     与 2-00002/03/04/05 同型(复用 backbone 仅承担 metering 差量的特性,md 不穷举 URL/IMS/any 场景)。
+#     场景1 数据规划表的 www.huawei.com 示例虽有 L7FILTER/PROTBINDFLOWF,但属场景特例不进结构默认;
+#     取 opt-basic-l34(与同族特性一致)。
+#   - 0-00003 防欺诈开关 (feature 2-00001 owner,经 backbone 1-00004 继承): 选 opt-off。
+#     本特性部署 md 任务示例虽含 1 行 ADD SPECURRGRPLIST(场景1防欺诈举例),但与 2-00001 同条件——
+#     防欺诈是 backbone 1-00004 的可选子步,2-00001 pass-2 已处理为 0-00003=opt-off/on 双变体。
+#     本特性 task_intent 聚焦 metering=TIME 差量,不重复枚举防欺诈分叉(spec §5 同名决策不重复合并)。
+#
+# 不进入枚举的 DP:
+#   - 0-00001 计费方式 (atom 0-00001 owner,冻结): opt-offline/opt-online/opt-converged 仅参数 impact
+#     (USAGERPTMODE + 条件 adds OFF/ONLMETERINGTYPE),不改 atom 出现/缺失 → 不进枚举。本特性锁定
+#     OFF/ONLMETERINGTYPE=TIME 由该 DP option 的 effect_detail 取值范围覆盖(参数值)。
+#   - 0-00004 计费方式 (generalized 4-00001 owner,B 段作用域外): A 段不依赖(spec §4.3)。
+#     generalized 层负责"是否叠加 2-00002/03/04 在线/离线/融合特性",本特性只承担"时长"差量,
+#     与 generalized 0-00004 opt-g-* 不冲突(spec §5 同名决策多层共存不合并)。
+#
+# 关于 SET SPECTRAFURRGRP 的处理(部署 md 步骤10 出现,但 atom 层无该 atom):
+#   - 部署 md 步骤10 "配置全局缺省URR组 SET SPECTRAFURRGRP" 在任务示例脚本(部署UPF_79813617.md
+#     L389)有 1 行。但 atom 层无 SET SPECTRAFURRGRP 的 atom(mml_commands.jsonl 含该命令但
+#     tasks/task-0-*.yaml 未建其 atom — CONSOLIDATION-BACKLOG 已记录的 atom 层缺口)。
+#   - atom 层冻结(A 段硬边界),本特性不新建该 atom。md_required 不含 SET SPECTRAFURRGRP,
+#     与 2-00001 pass-2 / 2-00003 / 2-00004 同族特性处理一致(均不列该命令)。
+#   - SET URRGRPBINDING(步骤9,atom 0-00013)+ ADD SPECURRGRPLIST(步骤11,atom 0-00014)
+#     + SET REFRESHSRV(步骤12,atom 0-00015) 由 compound 1-00004 结构提供,列入 md_required。
+
+variants:
+  - name: 基础(按业务时长计费,IPv4 三四层基础过滤)
+    dp_options:
+      0-00002: opt-basic-l34
+      0-00003: opt-off
+    md_required_commands:
+      - SET LICENSESWITCH        # 0-00019 license 前置(直挂,feature 头部)
+      - ADD URR                  # 0-00001 OFFMETERINGTYPE/ONLMETERINGTYPE=TIME(参数级,atom DP 0-00001 覆盖)
+      - ADD URRGROUP             # 0-00002
+      - ADD PCCPOLICYGRP         # 0-00003
+      - ADD FILTER               # 0-00004 IPv4 三四层(opt-basic-l34 收敛,excludes IPv6/七层)
+      - ADD FLOWFILTER           # 0-00007
+      - ADD FLTBINDFLOWF         # 0-00008
+      - ADD RULE                 # 0-00010
+      - ADD USERPROFILE          # 0-00011
+      - ADD RULEBINDING          # 0-00012
+      - SET URRGRPBINDING        # 0-00013 缺省URR组(步骤9,compound 1-00004 提供)
+      - SET REFRESHSRV           # 0-00015 must_be_last(步骤12,compound 1-00004 提供)

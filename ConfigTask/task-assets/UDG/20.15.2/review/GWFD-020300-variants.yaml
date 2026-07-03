@@ -1,0 +1,66 @@
+feature_task_id: UDG@20.15.2@Task@2-00002
+feature_id: GWFD-020300
+md_source_files:
+  - 配置Gy接口在线计费_83167737.md
+  - GWFD-020300 在线计费参考信息_02557786.md
+  - GWFD-020300 在线计费特性概述_66347600.md
+  - 在线计费流程（用户创建承载时下配额）_66692149.md
+  - 在线计费流程（用户创建承载时未下配额）_66692150.md
+
+# 影响命令集的 DP（本特性 variants 枚举）:
+#   - 0-00002 业务匹配场景 (compound 1-00002 owner): 选 opt-basic-l34(IPv4 三四层基础,无 L7/IPv6)
+#     本特性 md 操作步骤3 仅展示三四层 IPv4 FILTER 基础配法,未列举 URL/IMS/any/异常 场景
+#   - 0-00003 防欺诈开关 (feature 2-00001 owner,但通过 backbone 1-00004 继承): 选 opt-off
+#     本特性 md 无 SPECURRGRPLIST 防欺诈示例,与防欺诈关一致
+#   - 0-00154 在线专属SET开关 (feature 2-00002 owner,本特性级): on/off 切 3 个在线可选 SET 命令
+# 不进入枚举的 DP（纯参数 impact 或 B 段作用域外）:
+#   - 0-00001 计费方式 (atom 0-00001 owner, 冻结): opt-online 仅参数 impact(USAGERPTMODE=ONLINE +
+#     条件 adds ONLMETERINGTYPE)，不改 atom 出现/缺失 → 不进枚举（锁定为 opt-online 由特性本身决定）
+#   - 0-00004 计费方式 (generalized 4-00001 owner, B 段作用域外): A 段不依赖
+#
+# 关于 SET URRGRPBINDING 的处理:
+#   - 本特性 md 操作步骤 + 脚本均未显式列 SET URRGRPBINDING(简化展示,聚焦在线差量);
+#   - 但 SET URRGRPBINDING 由 compound 1-00004(收尾)结构提供,且是任何计费 backbone 部署的功能
+#     必需(设缺省费率组绑定)。2-00001 pass-2 已在 md_required 中含此命令(同 backbone 复用)。
+#   - 故本特性 md_required 含 SET URRGRPBINDING(反映 backbone 结构现实,与 2-00001 一致),
+#     不入"简化展示缺口"。
+
+variants:
+  - name: 基础-不含在线专属SET
+    dp_options:
+      0-00002: opt-basic-l34
+      0-00003: opt-off
+      0-00154: opt-off
+    md_required_commands:
+      - ADD URR
+      - ADD URRGROUP
+      - ADD PCCPOLICYGRP
+      - ADD FILTER
+      - ADD FLOWFILTER
+      - ADD FLTBINDFLOWF
+      - ADD RULE
+      - ADD USERPROFILE
+      - ADD RULEBINDING
+      - SET URRGRPBINDING      # backbone 1-00004 结构提供(简化展示但功能必需)
+      - SET REFRESHSRV
+
+  - name: 全在线专属SET追加
+    dp_options:
+      0-00002: opt-basic-l34
+      0-00003: opt-off
+      0-00154: opt-on
+    md_required_commands:
+      - ADD URR
+      - ADD URRGROUP
+      - ADD PCCPOLICYGRP
+      - ADD FILTER
+      - ADD FLOWFILTER
+      - ADD FLTBINDFLOWF
+      - ADD RULE
+      - ADD USERPROFILE
+      - ADD RULEBINDING
+      - SET URRGRPBINDING
+      - SET REFRESHSRV
+      - SET UPDEFAULTQUOTA       # md 步骤6 可选
+      - SET UPGLBCHGPARA         # md 步骤7 可选
+      - SET URRFAILACTION        # md 步骤8 可选

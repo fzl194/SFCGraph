@@ -1,0 +1,65 @@
+feature_task_id: UDG@20.15.2@Task@2-00005
+feature_id: GWFD-020351
+md_source_files:
+  - GWFD-020351 PCC基本功能参考信息_79592737.md
+  - GWFD-020351 PCC基本功能特性概述_47011385.md
+  - 调测PCC基本功能_42369277.md
+  - 配置动态PCC功能_74096530.md
+  - 配置本地PCC功能_74096529.md
+  - 实现原理/2_3_4_5G PCC功能差异_47013471.md
+  - 实现原理/Event Trigger_47013472.md
+  - 实现原理/业务流程_47013470.md
+  - 实现原理/相关概念_72244993.md
+
+# 影响命令集的 DP(本特性 variants 枚举):
+#   - 0-00002 业务匹配场景 (compound 1-00002 owner): 选 opt-basic-l34
+#     两激活 md(动态/本地)操作步骤3-4 仅展示 any-to-any 三四层 FILTER 基础配法(无 L7/IPv6),
+#     任务示例脚本明示"配置的是3/4层any to any的filter,未配置7层规则"。
+#     与 2-00002/03/04 同型(复用 backbone 仅承担特性差量,过滤链取最简子集)。
+#
+# 不进入枚举的 DP(纯参数 impact 或非命令集分叉):
+#   - 0-00007 PCC模式 (feature 2-00005 owner,本特性级): opt-pcc-dynamic / opt-pcc-local
+#     两 option 仅 target=parameter impact(changes_scope: RULENAME 由 PCF 动态下发 vs
+#     USERPROFILENAME 由 SMF 下发激活本地静态规则)。md 明示"动态PCC与本地PCC命令集完全相同"
+#     (两激活 md 操作步骤+脚本逐字相同)→ 不改 atom 出现/缺失,不进覆盖枚举。
+#     两 option 均 selects_option 下达 atom 层 DP 0-00005/0-00006(父子决策传播,与 DP 0-00004→0-00001 同型)。
+#
+# 关于 ADD QOSPROP(参考信息 md 命令清单中列出):
+#   - 参考信息 md 列出 ADD QOSPROP,但两激活 md(动态/本地)操作步骤1-7 与脚本均不含 QOSPROP。
+#   - QOSPROP 属 GWFD-010201 QoS与流量管理 特性(策略类型 QOS),非 PCC基本功能激活步骤。
+#   - 参考信息"本特性相关命令"清单含跨特性引用,激活步骤才是 md_required 权威源。
+#   - 故 ADD QOSPROP 不入 md_required。
+#
+# 关于 ADD URR / ADD URRGROUP(计费三件套 atom 0-00001/0-00002):
+#   - 两激活 md 操作步骤与脚本均不含 URR/URRGROUP。md 仅在 PCCPOLICYGRP 数据规划行注释
+#     "URRGROUPNAME 已通过 ADD URRGROUP 命令配置计费属性"(引用外部已配,非本特性步骤)。
+#   - md 明示"当需要计费时,请配置参数URRGROUPNAME"——这是 PCCPOLICYGRP 的参数级可选,
+#     不引入 URR/URRGROUP 命令进入本特性命令集(rule 0-00014 dependency 覆盖参数级关系)。
+#   - 故本特性不复用 1-00001 计费三件套,与 backbone 域其他特性(2-00001/2/3/4/6/9/10)不同。
+#     PCC 是策略控制特性,计费是叠加项,命令集无独立 URR 链。
+#   - 故 ADD URR / ADD URRGROUP 不入 md_required。
+#
+# 关于 SET URRGRPBINDING / SPECURRGRPLIST(收尾 compound 1-00004 命令):
+#   - 两激活 md 操作步骤与脚本均不含 SET URRGRPBINDING / ADD SPECURRGRPLIST。
+#   - 本特性不复用 1-00004 收尾 compound(那是计费专属缺省费率/防欺诈),仅直挂 REFRESHSRV atom。
+#   - 故 SET URRGRPBINDING / SPECURRGRPLIST 不入 md_required(与 2-00002 不同,后者含 URRGRPBINDING)。
+
+variants:
+  - name: PCC基本功能-动态PCC(any-to-any三四层)
+    dp_options:
+      0-00002: opt-basic-l34
+      # DP 0-00007 不枚举:opt-pcc-dynamic/opt-pcc-local 均纯参数 impact,命令集不变
+    md_required_commands:
+      - SET LICENSESWITCH       # 步骤1:打开License LKV3G5PCCB01
+      - ADD PCCPOLICYGRP        # 步骤2:配PCC策略组(直挂 atom 0-00003)
+      - ADD FILTER              # 步骤4a:三四层过滤条件(1-00002 opt-basic-l34)
+      - ADD FLOWFILTER          # 步骤3:流过滤器(1-00002 opt-basic-l34)
+      - ADD FLTBINDFLOWF        # 步骤4b:过滤条件与流过滤器绑定(1-00002 opt-basic-l34)
+      - ADD RULE                # 步骤5:配规则(1-00003)
+      - ADD USERPROFILE         # 步骤6a:用户模板(1-00003)
+      - ADD RULEBINDING         # 步骤6b:规则与用户模板绑定(1-00003)
+      - SET REFRESHSRV          # 步骤7:刷新生效(直挂 atom 0-00015,must_be_last)
+
+  # 注:本地PCC变体命令集与动态PCC逐字相同(两激活 md 操作步骤+脚本完全一致),
+  # 故不单列。DP 0-00007 opt-pcc-local 在覆盖校验中走同一 active_commands 集合,
+  # 不产生独立变体(spec §4.2:无 adds/skips 命令集 impact 的 DP 退化为单变体)。

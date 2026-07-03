@@ -1,0 +1,34 @@
+feature_task_id: UDG@20.15.2@Task@2-00007
+feature_id: GWFD-020308
+md_source_files:
+  - GWFD-020308 7层流量统计参考信息_13282496.md
+  - GWFD-020308 7层流量统计特性概述_59642319.md
+  - 激活7层流量统计_13442390.md
+
+# 形态判定:SINGLE — 仅 1 个 atom(0-00020 ADD APN),无 compound。
+#   procedure §1:候选 ≤2 命令且无复用命中 → 降级 feature→atom 直挂。
+#   spec §8.2:单命令步骤不成为候选 → feature→atom 直挂。
+#
+# 变体分析(步骤③ DP 放置):
+#   md 概述 §原理 / §计费与话单 + 激活 md 操作步骤 + 命令真相 APPLAYERVOLUME 取值,揭示一个二元开关:
+#     - APPLAYERVOLUME=ENABLE → 仅统计 L7 应用层流量(本特性 task_intent)
+#     - APPLAYERVOLUME=DISABLE → 统计 L7 + L3/L4 全部流量(命令默认值;= 本特性"未开启"/backbone 2-00001 默认口径)
+#   但该开关是 atom 0-00020 的参数级选择(variable_source: local_planned, requiredness: conditional,
+#   atom 层已绑定且冻结,见 task-0-00020 parameter_bindings APPLAYERVOLUME 行)。本特性 task_intent
+#   已锁定 ENABLE 侧(配置 APN 仅统计 7 层应用层流量),DISABLE 侧即"本特性未激活"(不构成 feature 内部
+#   命令集分叉 — 命令始终是 ADD APN,只是参数取值不同)。
+#   按 spec §4.2 "仅枚举改命令集(target_type∈{task,command})的 DP":参数级 ENABLE/DISABLE 不改命令集
+#   出现/缺失 → 不挂 feature DP → 退化为单变体(spec §4.2 末段:扁平并集校验)。
+#
+#   注:APPLAYERVOLUME=ENABLE/DISABLE 的"是否影响计费流量统计口径"由 feature 挂 rule 0-00017
+#   (dependency_rule)表达,属配置生成时前置合规约束,不进命令集覆盖枚举。
+#
+# 结构命令集:feature→atom 直挂(0-00038: 2-00007 contains 0-00020),atom 0-00020 ref=ADD APN
+#   → struct_commands = {ADD APN}
+#   → md_required_commands 同 {ADD APN}(激活 md 操作步骤唯一命令 + 数据规划表唯一命令)
+
+variants:
+  - name: 基础(配置仅统计7层应用层流量,APPLAYERVOLUME=ENABLE)
+    dp_options: {}   # 无 feature 级 DP 分支 → 扁平并集校验
+    md_required_commands:
+      - ADD APN

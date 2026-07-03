@@ -1,0 +1,77 @@
+feature_task_id: UDG@20.15.2@Task@2-00010
+feature_id: GWFD-020303
+md_source_files:
+  - GWFD-020303 基于业务流量的计费_69695706.md
+  - GWFD-020303 基于业务流量的计费/GWFD-020303 基于业务流量的计费参考信息_97488217.md
+  - GWFD-020303 基于业务流量的计费/GWFD-020303 基于业务流量的计费特性概述_67144065.md
+  - GWFD-020303 基于业务流量的计费/部署UPF_28813738.md
+
+# 形态判定:STEP-OK — backbone 1-00001~04 全复用(Jaccard=1.0) + 直挂 0-00019 LICENSE。
+#   部署 md(部署UPF_28813738.md)操作步骤 1-12 + 数据规划表 4 场景,命令集与 2-00001 内容计费
+#   backbone 100% 重合。metering=VOLUME 即内容计费默认形态(部署 md 任务示例脚本全用 VOLUME,
+#   与 2-00009 时长计费字节级同构——2-00009 notes 已明示"部署 md 任务示例全用 VOLUME,与 2-00010
+#   字节级同构")。
+#
+# 流量计费差异如何表达(步骤③ DP 放置):
+#   ① UPF 侧 metering 差异 = ADD URR 的 OFFMETERINGTYPE/ONLMETERINGTYPE 取 VOLUME。这是 atom 0-00001
+#      (ADD URR)的参数级取值,由 atom DP 0-00001(option opt-offline/opt-online 的 effect_detail
+#      已含 "VOLUME/TIME/EVENT/FREE 取值")覆盖。atom 层冻结,本特性只引用不改。纯参数 impact
+#      (target_type=parameter)不改命令集出现/缺失 → 不进 variants 枚举(spec §4.2)。
+#      **关键:VOLUME 是内容计费默认形态,本特性连参数级差量都没有**(对比 2-00009 时长计费至少
+#      在 metering=TIME 有参数值差量,本特性 VOLUME 即默认值)。命令集与参数值均与 2-00001 一致。
+#   ② feature DP:无。本特性部署 md 仅走 backbone,无 feature 级可选命令(对比 2-00002 三可选 /
+#      2-00003/04 各一可选 SET URRFAILACTION)。流量计费的统计由 UNC 话单/OCS CCA 信元承载
+#      (特性概述 §原理概述 离线/在线/融合三段:datavolumeFBCUplink/CC-Total-Octets/totalVolume 等
+#      AVP 字段),非 UDG UPF MML,不构成本特性的 UPF 命令集分叉。
+#   ③ rule:feature 挂 rule 0-00019(dependency_rule,license 82209824 LKV3G5VBCS01 + 内容计费前置)
+#      已存在并核实正确,指向 0-00019 + 2-00001。无需新增 rule(md 未揭示新 UPF 级约束:
+#      License 82209824 由 atom 0-00019 LICITEM 变量投影;BYTE301 软参"控制强制归并流量计费方式"
+#      是全局软参非 UPF MML 命令)。
+#
+# 影响命令集的 DP(本特性 variants 枚举):
+#   - 0-00002 业务匹配场景 (compound 1-00002 owner): 选 opt-basic-l34(IPv4 三四层基础,无 L7/IPv6)。
+#     本特性部署 md 操作步骤 3 文字描述仅列 "ADD FILTER(三四层) / ADD L7FILTER(七层)" 两个 bullet
+#     (部署UPF_28813738.md L233-236),与 2-00009 时长计费 / 2-00002/03/04 同型(复用 backbone 仅承担
+#     metering 差量的特性,md 不穷举 URL/IMS/any 场景)。任务示例虽展开 4 场景脚本(与 2-00001 字节级
+#     同构),但属 backbone 1-00002 通用示例,归 2-00001 owner,本特性不重复枚举(spec §5 不合并)。
+#   - 0-00003 防欺诈开关 (feature 2-00001 owner,经 backbone 1-00004 继承): 选 opt-off。
+#     本特性部署 md 任务示例含 1 行 ADD SPECURRGRPLIST(场景1防欺诈举例),与 2-00001/2-00009 同条件——
+#     防欺诈是 backbone 1-00004 的可选子步,2-00001 pass-2 已处理为 0-00003=opt-off/on 双变体。
+#     本特性 task_intent 聚焦 metering=VOLUME 差量(实为默认形态无差量),不重复枚举防欺诈分叉
+#     (spec §5 同名决策不重复合并)。
+#
+# 不进入枚举的 DP:
+#   - 0-00001 计费方式 (atom 0-00001 owner,冻结): opt-offline/opt-online/opt-converged 仅参数 impact
+#     (USAGERPTMODE + 条件 adds OFF/ONLMETERINGTYPE),不改 atom 出现/缺失 → 不进枚举。本特性锁定
+#     OFF/ONLMETERINGTYPE=VOLUME(默认值)由该 DP option 的 effect_detail 取值范围覆盖(参数值)。
+#   - 0-00004 计费方式 (generalized 4-00001 owner,B 段作用域外): A 段不依赖(spec §4.3)。
+#     generalized 层负责"是否叠加 2-00002/03/04 在线/离线/融合特性",本特性只承担"流量"差量
+#     (实为默认形态),与 generalized 0-00004 opt-g-* 不冲突(spec §5 同名决策多层共存不合并)。
+#
+# 关于 SET SPECTRAFURRGRP 的处理(部署 md 步骤10 出现,但 atom 层无该 atom):
+#   - 部署 md 步骤10 "配置全局缺省URR组 SET SPECTRAFURRGRP" 在任务示例脚本(部署UPF_28813738.md L389)
+#     有 1 行。但 atom 层无 SET SPECTRAFURRGRP 的 atom(mml_commands.jsonl 含该命令但
+#     tasks/task-0-*.yaml 未建其 atom — CONSOLIDATION-BACKLOG 已记录的 atom 层缺口)。
+#   - atom 层冻结(A 段硬边界),本特性不新建该 atom。md_required 不含 SET SPECTRAFURRGRP,
+#     与 2-00001 pass-2 / 2-00003 / 2-00004 / 2-00009 同族特性处理一致(均不列该命令)。
+#   - SET URRGRPBINDING(步骤9,atom 0-00013)+ ADD SPECURRGRPLIST(步骤11,atom 0-00014)
+#     + SET REFRESHSRV(步骤12,atom 0-00015) 由 compound 1-00004 结构提供,列入 md_required。
+
+variants:
+  - name: 基础(按业务流量计费,IPv4 三四层基础过滤)
+    dp_options:
+      0-00002: opt-basic-l34
+      0-00003: opt-off
+    md_required_commands:
+      - SET LICENSESWITCH        # 0-00019 license 前置(直挂,feature 头部,LICITEM=LKV3G5VBCS01)
+      - ADD URR                  # 0-00001 OFFMETERINGTYPE/ONLMETERINGTYPE=VOLUME(默认值,atom DP 0-00001 覆盖)
+      - ADD URRGROUP             # 0-00002
+      - ADD PCCPOLICYGRP         # 0-00003
+      - ADD FILTER               # 0-00004 IPv4 三四层(opt-basic-l34 收敛,excludes IPv6/七层)
+      - ADD FLOWFILTER           # 0-00007
+      - ADD FLTBINDFLOWF         # 0-00008
+      - ADD RULE                 # 0-00010
+      - ADD USERPROFILE          # 0-00011
+      - ADD RULEBINDING          # 0-00012
+      - SET URRGRPBINDING        # 0-00013 缺省URR组(步骤9,compound 1-00004 提供)
+      - SET REFRESHSRV           # 0-00015 must_be_last(步骤12,compound 1-00004 提供)

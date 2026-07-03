@@ -1,0 +1,30 @@
+feature_task_id: UDG@20.15.2@Task@2-00008
+feature_id: GWFD-020305
+md_source_files:
+  - GWFD-020305 终端异常下行流量检测参考信息_02455578.md
+  - GWFD-020305 终端异常下行流量检测特性概述_02456812.md
+  - 激活终端异常下行流量检测_02455576.md
+  - 调测终端异常流量下行检测_02455577.md
+
+# 形态判定(spec §8.2 / procedure §1):
+#   2 atom(0-00019 SET LICENSESWITCH / 0-00021 ADD ABNTRAFFICDT) → feature→atom 直挂,不建 compound。
+#
+# 变体口径:
+#   md「原理概述」描述两种检测方案(简单 / 基于流特征),由 ADD ABNTRAFFICDT 的
+#   TRAFFICBEHAVIORSWITCH 区分(简单=DISABLE / 流特征=ENABLE)。但:
+#     - md「操作步骤」+「数据规划表」+「任务示例」仅给出 基于流特征(SWITCH=ENABLE,
+#       TRAFFICBEHAVIORSWITCH=ENABLE)一条操作路径;
+#     - 「简单检测」仅在原理概述中作为概念说明,无独立步骤/示例,不构成 md_required 命令分支。
+#   因此按 md 收口 = 1 个变体(基础·基于流特征检测,命令集同结构基线)。
+#   TRAFFICBEHAVIORSWITCH 的语义分叉已由 atom 0-00021 的参数绑定(local_planned/required,
+#   默认 ENABLE)在 atom 层吸收;特性级不再重复升 DP(atom 层冻结,本特性亦无需特性级 DP)。
+#
+# 覆盖校验结构命令集 = 2 atom 的命令 = {SET LICENSESWITCH, ADD ABNTRAFFICDT},与 md_required 等价。
+#   注:md「参考信息」命令清单还含 SET ABNTRADTTHR/SET SRVCOMMONPARA/LST/EXP,但均不在「操作步骤」中
+#   (阈值 SET ABNTRADTTHR 经参考信息单列引用、非激活步骤;SET SRVCOMMONPARA SIGDEFERREDTIME≥60s
+#   是应用限制而非本特性配置步骤),不计入 md_required。
+
+variants:
+  - name: 基础·基于流特征检测(md 唯一操作路径)
+    dp_options: {}
+    md_required_commands: [SET LICENSESWITCH, ADD ABNTRAFFICDT]
