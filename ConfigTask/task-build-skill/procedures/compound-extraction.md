@@ -13,8 +13,8 @@
 |---|---|
 | 该 feature 的**全部** md | `FeatureGraph/data/legacy/UDG_feature_files.csv` 按 feature_id 过滤(主配置/参考信息/数据规划/实现原理/部署 UPF) |
 | 涉及命令的 mml 真相 | `CommandGraph/data/assets/UDG/20.15.2/mml_commands.jsonl`(parameter_description / notes) |
-| 现有该 feature 的 task | `task-assets/UDG/20.15.2/tasks/task-2-XXXXX.yaml` + 其引用的 compound + atom |
-| canonical 复用登记表 | `task-assets/UDG/20.15.2/canonical-compounds.md`(复用查找;重跑 build_index.py 刷新) |
+| 现有该 feature 的 task | `assert/UDG/20.15.2/tasks/task-2-XXXXX.yaml` + 其引用的 compound + atom |
+| canonical 复用登记表 | `assert/UDG/20.15.2/canonical-compounds.md`(复用查找;重跑 build_index.py 刷新) |
 | 现有 feature挂/compound挂 rule·DP | `task_rules/` + `decision_points/`(owner_task_ref 命中) |
 
 > **必读全特性 md**:一个 feature 含 3~11 个 md(主配置/参考信息/数据规划/实现原理/部署),都必须读,不能只读主配置。

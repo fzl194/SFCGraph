@@ -176,7 +176,7 @@ def main():
     feature_short = sys.argv[1]
     nf = sys.argv[2] if len(sys.argv) > 2 else "UDG"
     ver = sys.argv[3] if len(sys.argv) > 3 else "20.15.2"
-    A = ROOT / "task-assets" / nf / ver
+    A = ROOT / "assert" / nf / ver
 
     tasks = _load_yaml_dir(A / "tasks")
     dps = _load_yaml_dir(A / "decision_points")

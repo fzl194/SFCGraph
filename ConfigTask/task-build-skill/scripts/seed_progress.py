@@ -4,8 +4,8 @@
   python seed_progress.py UDG 20.15.2          # 初始化/刷新 progress.json（保留已 done/skipped）
   python seed_progress.py UDG 20.15.2 --check  # 只打印计数 + 未终态残留
 
-只读：FeatureGraph/data/legacy/UDG_feature_files.csv, UDG_features.csv, task-assets/.../index.json
-写入：task-assets/{nf}/{version}/progress.json
+只读：FeatureGraph/data/legacy/UDG_feature_files.csv, UDG_features.csv, assert/.../index.json
+写入：assert/{nf}/{version}/progress.json
 """
 import json
 import sys
@@ -21,7 +21,7 @@ CHECK = "--check" in sys.argv
 FG = ROOT.parent / "FeatureGraph" / "data" / "legacy"
 FILES_CSV = FG / f"{NF}_feature_files.csv"
 FEAT_CSV = FG / f"{NF}_features.csv"
-A = ROOT / "task-assets" / NF / VER
+A = ROOT / "assert" / NF / VER
 PROG = A / "progress.json"
 INDEX = A / "index.json"
 

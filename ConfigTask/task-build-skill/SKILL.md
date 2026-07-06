@@ -58,7 +58,7 @@ draft（刚建）→ inferred（投影/待审）→ active（人审过=stable）
 ## 3. 资产目录
 
 ```
-ConfigTask/task-assets/{nf}/{version}/
+ConfigTask/assert/{nf}/{version}/
 ├── tasks/{编号}.yaml               # atom 内嵌 parameter_bindings
 ├── decision_points/{编号}.yaml
 ├── task_rules/{编号}.yaml

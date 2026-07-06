@@ -1,7 +1,7 @@
 """Task 资产只读索引生成器（不是构建 pipeline——只读现有 Agent 产出的 yaml，生成查询索引）。
 
 每次 pass 末尾运行：python build_index.py [nf] [version]   （默认 UDG 20.15.2）
-产出 task-assets/{nf}/{version}/index.json，供：
+产出 assert/{nf}/{version}/index.json，供：
   - Agent 构建新特性前"快速查找已有 task"（命令→atom / 特性→tasks / atom→被谁用）
   - 审查 UI 渲染与检索
 """
@@ -17,7 +17,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[2]          # ConfigTask/
 NF = sys.argv[1] if len(sys.argv) > 1 else "UDG"
 VER = sys.argv[2] if len(sys.argv) > 2 else "20.15.2"
-A = ROOT / "task-assets" / NF / VER
+A = ROOT / "assert" / NF / VER
 
 
 def short(ref):

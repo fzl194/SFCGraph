@@ -15,7 +15,7 @@
 | **mml_commands.jsonl 可用** | `CommandGraph/data/assets/{nf}/{version}/mml_commands.jsonl` 含每命令的 `parameter_description`+`notes`+`source_evidence_ids` |
 | **特性激活 md 可达** | `output/{产品文档}/特性部署/特性指南/{nf}特性指南/` 下各特性的激活/配置 md |
 | **feature-graph CSV 可达** | `FeatureGraph/data/legacy/{nf}_feature_files.csv` 含 feature_id → md 路径映射 |
-| **index.json 已生成** | `task-assets/{nf}/{version}/index.json` 含 `atom_usage`（命令→特性反查）|
+| **index.json 已生成** | `assert/{nf}/{version}/index.json` 含 `atom_usage`（命令→特性反查）|
 
 ---
 
@@ -41,7 +41,7 @@
 
 **脚本**：`task-build-skill/scripts/build_command_review_index.py`
 **用法**：`python build_command_review_index.py [nf] [version]`（默认 UDG 20.15.2）
-**产物**：`task-assets/{nf}/{version}/command-review-index.json`
+**产物**：`assert/{nf}/{version}/command-review-index.json`
 
 每 atom 一张"审查卡"（JSON key = atom 短 id）：
 - `command_name` / `command_name_zh` / `original_md`（原始 md 路径，来自 mml_commands.jsonl 的 `source_evidence_ids`）
@@ -58,7 +58,7 @@
 
 **脚本**：`task-build-skill/scripts/build_command_evidence.py`
 **用法**：`python build_command_evidence.py [nf] [version] [--only {atom短id}]`
-**产物**：`task-assets/{nf}/{version}/command-evidence/{atom短id}.md`（每命令一个 MD 文件）
+**产物**：`assert/{nf}/{version}/command-evidence/{atom短id}.md`（每命令一个 MD 文件）
 
 **证据包 = 一个命令的全部审查资料，含两部分**：
 

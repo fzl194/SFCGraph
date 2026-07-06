@@ -13,7 +13,7 @@
 
 ## 1. 快速查找机制（已落地 ✅，回答"是否看已有 task"）
 
-**是的，每次构建前必查已有 task。** 机制：`task-assets/{nf}/{version}/index.json`（每次 pass 末尾由 `scripts/build_index.py` 重建）。
+**是的，每次构建前必查已有 task。** 机制：`assert/{nf}/{version}/index.json`（每次 pass 末尾由 `scripts/build_index.py` 重建）。
 
 | 查什么 | 索引键 | 用途 |
 |---|---|---|
@@ -39,7 +39,7 @@
 ```
 python task-build-skill/scripts/seed_progress.py UDG 20.15.2
 ```
-（读 CSV → 写 `task-assets/UDG/20.15.2/progress.json`，详见 §6）
+（读 CSV → 写 `assert/UDG/20.15.2/progress.json`，详见 §6）
 
 ---
 
@@ -56,7 +56,7 @@ python task-build-skill/scripts/seed_progress.py UDG 20.15.2
 
 ## 4. progress.json —— 跨会话状态（交接核心）
 
-结构（`task-assets/UDG/20.15.2/progress.json`）：
+结构（`assert/UDG/20.15.2/progress.json`）：
 ```json
 {
   "nf_version": "UDG@20.15.2",
@@ -111,8 +111,8 @@ python task-build-skill/scripts/seed_progress.py UDG 20.15.2
 
 **会话起手**（Agent 读这 4 个文件恢复上下文）：
 1. `task-build-skill/SKILL.md`（当前准则版本）
-2. `task-assets/UDG/20.15.2/progress.json`（进度 + 下一个）
-3. `task-assets/UDG/20.15.2/index.json`（已有 task 全景）
+2. `assert/UDG/20.15.2/progress.json`（进度 + 下一个）
+3. `assert/UDG/20.15.2/index.json`（已有 task 全景）
 4. 根目录 `改进后三层图谱定义.md`（schema，按需查）
 
 **取活**：从 `progress.json` 取一个 `in_progress`（续半成品）或首个 `not_started` 特性 → 按 §5 跑一个 pass。

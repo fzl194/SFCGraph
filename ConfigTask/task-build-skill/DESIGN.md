@@ -117,7 +117,7 @@ ConfigTask/
 │   ├── procedures/                   #   细则（特性 pass 流程、合并判据、投影规则、审查清单）
 │   └── templates/                    #   yaml 模板（5 类对象）
 │
-├── task-assets/{nf}/{version}/       # ← Task 资产（照搬 CommandGraph 的 nf×版本 隔离）
+├── assert/{nf}/{version}/       # ← Task 资产（照搬 CommandGraph 的 nf×版本 隔离）
 │   ├── tasks/{TaskID}.yaml           #   atom/compound/feature/solution/generalized
 │   │                                 #     （atom 内嵌 parameter_bindings）
 │   ├── decision_points/{DPID}.yaml
@@ -260,7 +260,7 @@ ConfigTask/
   - **ref 一致性**：CommandGraph 回填该命令时，若最终 `MMLCommand` ID 与本 atom 预写的 `ref` 不一致，需同步更新该 atom 的 `ref`（属只读边界外动作，由 CommandGraph 维护者协调或在 review md 标注）。
 
 ### 8.2 审查记录与人工校准格式
-每次 pass 在 `task-assets/{nf}/{version}/review/{feature-id}-pass-{N}.md` 留：
+每次 pass 在 `assert/{nf}/{version}/review/{feature-id}-pass-{N}.md` 留：
 - `## 自审发现` / `## 修改记录` / `## 缺命令清单`（如有）
 - `## 人工校准`（结构化，便于 §9 反哺 Skill 挖掘）：
   ```
@@ -298,7 +298,7 @@ Skill 内容大纲（v0 起草、持续修正）：定位与边界（§2-§3）/
 | **删除** | `CONFIGTASK_SCHEMA.md`、`UNIFIED_TASK_SCHEMA.md` | 被 `改进后三层图谱定义.md` 取代 |
 | **删除** | `计费场景-task资产/build_charging_assets.py`、`build_dashboard.py` | 硬编码生成器；seed 迁移后不再需要 |
 | **归档→`archive/`** | `ARCHITECTURE_REVIEW.md`、`ConfigTask设计.md`、`抽取指令-ConfigTask对象.md`、`审视报告-12特性.md`、`样板-内容计费-统一task架构.md`、`样板-计费功能-统一task架构.md`、`样例-IPSec@20.15.2-任务层实例.md`、`样例-内容计费@20.15.2-任务层实例.md` | 有可复用设计思考，留底 |
-| **保留并迁入** | `计费场景-task资产/*.yaml`（27 task/4 DP/10 rule）→ `task-assets/UDG/20.15.2/` | 按 §10.1 字段映射，作 seed |
+| **保留并迁入** | `计费场景-task资产/*.yaml`（27 task/4 DP/10 rule）→ `assert/UDG/20.15.2/` | 按 §10.1 字段映射，作 seed |
 
 > 清理仅作用于 `ConfigTask/`。只读目录不动。
 
@@ -331,7 +331,7 @@ Skill 内容大纲（v0 起草、持续修正）：定位与边界（§2-§3）/
 
 ## 11. 试点与落地顺序（写入后续 implementation plan）
 
-1. **清理与脚手架**：执行 §10 清理；建 `task-build-skill/`、`task-assets/UDG/20.15.2/`、`archive/` 骨架。
+1. **清理与脚手架**：执行 §10 清理；建 `task-build-skill/`、`assert/UDG/20.15.2/`、`archive/` 骨架。
 2. **seed 迁移**：计费 27 task/4 DP/10 rule 按 §10.1 迁入 + 字段映射 + 过自审（回归基线）。
 3. **Skill v0 起草**：写 SKILL.md + procedures/ + templates/。
 4. **试点 1：计费回归**（已迁入）→ 正向实例化验收 → 自审 → 人工校准。
