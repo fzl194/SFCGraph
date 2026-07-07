@@ -1,0 +1,44 @@
+task_id: UDG@20.15.2@Task@2-00003
+nf: UDG
+version: "20.15.2"
+task_logical_name: 离线计费
+task_layer: feature
+task_intent: Ga 接口离线计费：复用计费 backbone + 离线专属可选命令（URR 上报失败动作）
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-010171
+status: inferred
+source_evidence_ids:
+  - GWFD-010171/配置Ga接口离线计费_31927856.md
+  - GWFD-010171/GWFD-010171 离线计费参考信息_97563135.md
+  - GWFD-010171/GWFD-010171 离线计费特性概述_66342906.md
+  - GWFD-010171/实现原理_66342907.md
+task_relations:
+  # 复用 backbone compounds（与 2-00001 内容计费共享 backbone）
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00021, from_task_ref: UDG@20.15.2@Task@1-00001, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-010171/配置Ga接口离线计费_31927856.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00022, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-010171/配置Ga接口离线计费_31927856.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00023, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@1-00004, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-010171/配置Ga接口离线计费_31927856.md]}
+  # 离线专属可选 atom（feature 级 DP 0-00155 门控；md 步骤6 可选）
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00024, from_task_ref: UDG@20.15.2@Task@1-00004, to_task_ref: UDG@20.15.2@Task@0-00018, relation_type: precedes, requiredness: optional, condition_ref: UDG@20.15.2@DecisionPoint@0-00155, source_evidence_ids: [GWFD-010171/配置Ga接口离线计费_31927856.md]}
+notes: |
+  复用 atom 0-00001~0-00015 与 compound 1-00001~1-00004（与内容计费共享 backbone），新增离线专属可选 atom 0-00018（SET URRFAILACTION，与在线计费共享该 atom）。
+  计费方式=离线 由 atom DP 0-00001(option opt-offline)锁定——该 DP 仅参数 impact(USAGERPTMODE=OFFLINE
+  + 条件 adds OFFMETERINGTYPE),不改命令集出现/缺失,故不进入本特性 variants 枚举(纯参数 DP)。
+  A 段 6 步(pass-2, 2026-07-03)修订:
+  - 离线专属 atom 0-00018 的 condition_ref 由 DP 0-00004(generalized/owner 4-00001, B 段作用域外)
+    改为本特性级 DP 0-00155(离线专属SET开关)。spec §4.3 要求 A 段不依赖作用域外 DP;原版是
+    pass-1(B 段当时一并建)的遗留,A 段重建必须收回特性内。DP 0-00004 opt-g-offline 仍负责
+    "是否叠加 2-00003 特性"(跨特性层),与本 DP 不冲突(spec §5 同名决策可多层共存不合并)。
+  - 2-00002 是在线、2-00003 是离线,两者是互斥变体——但都在 A 段 feature 内表达(B 段 generalized
+    DP 0-00004 才用计费方式选 feature)。本 DP 0-00155 与 2-00002 的 DP 0-00154 同型对偶(均 boolean
+    feature 级),差异:在线 opt-on 切 3 个 SET(UPDEFAULTQUOTA/UPGLBCHGPARA/URRFAILACTION),
+    离线 opt-on 只切 1 个 SET(URRFAILACTION——md 唯一标注"离线"字样的可选命令)。
+  - md 步骤6 标注"可选",主示例脚本不含 SET URRFAILACTION → opt-off 变体为 md 证实;
+    步骤6 文字描述提供 SET URRFAILACTION 可选项(URR 上报失败动作) → opt-on 变体为 md 证实。
+  - md 配置示例仅展示三四层 FILTER(无 L7FILTER/PROTBINDFLOWF/IMS/any 场景列举),故本特性
+    variants 选 DP 0-00002 opt-basic-l34(2-00002 pass-2 已为复用 backbone 的差量特性补此 option);
+    过滤场景由 backbone 1-00002 内部承载,本特性只承担"离线"差量。
+  - 1-00004 收尾 backbone:md 主示例脚本中段含 SET REFRESHSRV:REFRESHTYPE=USERPROFILE(刷新生效,
+    命令级 ordering_rule 0-00008 强制末位);SET URRGRPBINDING/SPECURRGRPLIST 未在脚本显式列出
+    但由 backbone 结构提供(简化展示,与 2-00001/2-00002 同 backbone 复用一致处理)。
+  - 无 feature 挂 rule:md 概述/参考信息无 license 前置(本特性无需 License)、无配置值互斥约束
+    (atom 0-00018 自挂 rule 0-00119 + DP 0-00051 已闭环命令级约束)、无防欺诈(由 2-00001 承载)。

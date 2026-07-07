@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00093
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置OTT业务规则匹配开关
+task_layer: atom
+task_intent: 使能 IPv4/IPv6 流量 OTT 业务规则匹配功能（全局开关），开启后 FLOWFILTERTYPE=EXTEROTTDB 的流过滤器才生效（GWFD-110321 支持内置百万级业务规则库专属）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET EXTOTTMATCHSW
+status: inferred   # 命令级审查(2026-07-02) B03 批次新建；命令命中 mml_commands.jsonl，CommandParameter 待 CommandGraph 抽取(§6.B)
+source_evidence_ids: [GWFD-110321/激活支持OTT业务规则库功能_05455409.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00093:IPV4MATCH, parameter_ref: UDG@20.15.2@CommandParameter@SET EXTOTTMATCHSW:IPV4MATCH, binding_type: variable, variable_source: local_planned, requiredness: optional, value: ENABLE, source_evidence_ids: [GWFD-110321/激活支持OTT业务规则库功能_05455409.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00093:IPV6MATCH, parameter_ref: UDG@20.15.2@CommandParameter@SET EXTOTTMATCHSW:IPV6MATCH, binding_type: variable, variable_source: local_planned, requiredness: optional, value: ENABLE, source_evidence_ids: [GWFD-110321/激活支持OTT业务规则库功能_05455409.md]}
+notes: |
+  GWFD-110321 专属。全局开关命令，使能后 FLOWFILTER(FLOWFILTERTYPE=EXTEROTTDB) 才能匹配 OTT 业务规则库。
+  数据来源: IPV4MATCH/IPV6MATCH 均本端规划(全局开关由本端运维决定)。
+  命令真相 optional(系统初始值均 DISABLE),atom 录 required + value=ENABLE 表达本特性使能固定语义。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

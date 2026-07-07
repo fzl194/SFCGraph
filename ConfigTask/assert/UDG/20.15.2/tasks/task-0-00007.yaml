@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@0-00007
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置流过滤器
+task_layer: atom
+task_intent: 配置FLOWFILTER（聚合三四层/七层过滤条件的业务流过滤器）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD FLOWFILTER
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD FLOWFILTER:FLOWFILTERNAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  # TETHERDETFLAG：Tethering检测标识。多数场景不配(默认)；Proxy UPF漫游(2-00089)/双故障Bypass(2-00091)显式配 NONE 关闭检测
+  - {binding_id: UDG@20.15.2@Task@0-00007:TETHERDETFLAG, parameter_ref: UDG@20.15.2@CommandParameter@ADD FLOWFILTER:TETHERDETFLAG, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00057, requiredness: conditional, source_evidence_ids: [GWFD-112001/业务配置_80953432.md, GWFD-112000/激活双故障Bypass_14147877.md]}
+rules: [UDG@20.15.2@TaskRule@0-00123]
+notes: |
+  配置 FLOWFILTER（聚合三四层/七层过滤条件的业务流过滤器）。
+  命令级审查(2026-07-02)：补绑 TETHERDETFLAG（2-00089/2-00091 显式用 NONE 关闭 Tethering 检测，DP 0-00057）。
+  FLOWFILTERTYPE 不补 binding：遵循 DP 0-00019 既定边界"演进只记录不执行"（EXTEROTTDB 维度仅 GWFD-110321 用，重大分叉已建 DP 标注，不修改本 atom binding）。
+  冷门参数不绑：FILTERGRPNAME/CFGDOMAINNAME——29特性均未用到。
+  rule-0-00123：立即生效+100000上限+必须绑定过滤条件。

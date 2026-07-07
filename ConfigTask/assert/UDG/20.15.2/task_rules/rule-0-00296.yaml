@@ -1,0 +1,28 @@
+rule_id: UDG@20.15.2@TaskRule@0-00296
+owner_task_ref: UDG@20.15.2@Task@0-00090
+rule_name: 0-00090 最大记录数 2000 + 立即生效 + AND≤3 + 5组过滤器/5组IP
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00090
+  expression: |
+    ADD DNSOVERWRITING(atom 0-00090) 配置约束：
+    (1) 上限：系统最大记录数为 2000(命令 notes 强约束)。
+    (2) 立即生效：该命令执行后立即生效(命令 notes 强约束)。
+    (3) 扩展过滤器数量上限：一条 DNS 重写配置中最多 5 组扩展过滤器(命令 notes 强约束)；AND 组个数不得超过 3(命令 notes 强约束)——AND/OR/NOT 类型混用规则。
+    (4) 错误码范围数量：最多 5 组错误码范围(命令 notes 强约束)。
+    (5) 过滤器匹配逻辑(命令 notes 强约束)：需满足下述条件——匹配 AND 组中所有成功 OR 匹配 OR 组中任意一个 ExtFltName 成功，且匹配 NOT 组所有 ExtFltName 失败；未配置走默认(隐式逻辑)。
+    (6) EXTFLTTYPE2-5/EXTFLTNAME2-5/SERVERIP2-5/SERVERIPV6_1-5/CFGDOMAINNAME 缺口按多组过滤器/IPv6 配置场景补充(主特性 110283 DNS纠错仅用 1 组 AND 过滤器+1 个 IPv4 SERVERIP1，不补)。
+    (7) EXTFLTNAME1 引用 ADD EXTENDEDFILTER(0-00022)；BINDERRCODENAME 引用 ADD ERRORCODE(0-00089)——主特性 110283 用 l7-filter1/dnserrorcode。
+    (8) DNSOVERWRTNAME 产出对象被 ADD RULE(POLICYTYPE=SMARTREDIRECT) POLICYNAME 引用——须先于 RULE 配置。
+    (9) SERVERIP1 是第三方 Platform IP 属全网规划(主特性示例 192.168.1.1)——SERVERIPv4/IPv6 共 10 个槽位最多。
+violation_effect: 上限超限→ADD 失败；AND 组超 3→ADD 拒收；过滤器数量超 5→ADD 拒收；引用 EXTENDEDFILTER/ERRORCODE 不存在→ADD 拒收；未先配 DNSOVERWRTNAME→RULE 引用失败
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。本 atom 仅 1 特性使用(110283 DNS纠错专属)，无跨特性分叉；不建 DP。18 个缺口参数（EXTFLTTYPE2-5/EXTFLTNAME2-5/SERVERIP2-5/SERVERIPV6_1-5/CFGDOMAINNAME）按 §4.3 ③ 标注为主场景不补绑。"

@@ -1,0 +1,36 @@
+task_id: UDG@20.15.2@Task@0-00035
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定用户组到APN
+task_layer: atom
+task_intent: 绑定带宽管理用户组到指定APN(ADD APNBINDBWMUSRG)，界定该用户组在哪个 APN 下生效
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD APNBINDBWMUSRG
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00035:USERGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APNBINDBWMUSRG:USERGROUPNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表 020354 "已配置数据中获取(ADD BWMUSERGROUP)"; 110301 本端规划但仍引用 0-00033:USERGROUPNAME（用户组名唯一, 全网一致）
+    requiredness: required
+    source_ref: UDG@20.15.2@Task@0-00033:USERGROUPNAME
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00035:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APNBINDBWMUSRG:APN
+    binding_type: reference
+    variable_source: reference   # 数据规划表 020354 "已配置数据中获取(ADD APN)"; 110301 本端规划但仍引用 0-00020:APN
+    requiredness: required
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: |
+  GWFD-020354 基于业务的Shaping(URL整形) + GWFD-110301 基于终端系统的码率差异化控制 共享。命令 ADD APNBINDBWMUSRG 未在 by_command 复用索引(§6-B)。
+  APN 必须已通过 ADD APN(0-00020) 配置；USERGROUPNAME 引用 BWMUSERGROUP(0-00033)。
+  命令级审查(2026-07-02) 演进：status draft→inferred；source_evidence 扩展至 2 特性全量；变量源保持 reference（与命令真相 local_planned 不符——APN 跨网元本端规划但全网唯一，binding 维持 reference 串联关系，符合典型配置模式）。
+  0 缺口：命令真相仅 2 参数（USERGROUPNAME/APN），binding 覆盖率 100%。

@@ -1,0 +1,20 @@
+task_id: UDG@20.15.2@Task@0-00009
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定七层过滤条件到流过滤器
+task_layer: atom
+task_intent: 将七层L7FILTER与协议绑定到FLOWFILTER（ADD PROTBINDFLOWF）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD PROTBINDFLOWF
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00009:FLOWFILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD PROTBINDFLOWF:FLOWFILTERNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00009:PROTOCOLNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD PROTBINDFLOWF:PROTOCOLNAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00009:L7FILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD PROTBINDFLOWF:L7FILTERNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00006:L7FILTERNAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+rules: [UDG@20.15.2@TaskRule@0-00125]
+notes: |
+  将七层 L7FILTER 与协议绑定到 FLOWFILTER。
+  命令级审查(2026-07-02)：binding 完整（3参数全绑：FLOWFILTERNAME→0-00007 reference，PROTOCOLNAME→local_planned，L7FILTERNAME→0-00006 reference），无缺口。
+  PROTOCOLNAME 来源分布：本端规划17/全网规划1(HTTP3.0 icloudprivaterelay，2-00051)。主体本端规划，1/18 边缘分叉不强制改 decision_driven（协议名本质本端规划，icloudprivaterelay 属协议名取值而非来源分叉）。
+  补 rule-0-00125（60s生效+100000上限+单FlowFilter 32个Protocol上限）。

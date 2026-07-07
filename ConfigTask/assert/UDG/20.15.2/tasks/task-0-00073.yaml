@@ -1,0 +1,19 @@
+task_id: UDG@20.15.2@Task@0-00073
+nf: UDG
+version: "20.15.2"
+task_logical_name: 全局激活BFD
+task_layer: atom
+task_intent: 全局使能BFD（BFDENABLE=TRUE），为OSPF/OSPFv3/静态路由提供链路检测机制
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET BFD
+status: inferred   # 命令级审查(2026-07-02)：单特性(GWFD-010155)无分叉，4组网脚本均 BFDENABLE=TRUE 固定
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00073:BFDENABLE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BFD:BFDENABLE
+    binding_type: fixed
+    variable_source: local_planned   # 数据规划表: 本端规划
+    value: "TRUE"
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+notes: "GWFD-010155。全局开关，BFDENABLE=TRUE 固定取值（4种组网脚本均 SET BFD:BFDENABLE=TRUE）。md 注: DELAYUPTIMER/TOSEXP 可不输用默认值。审查结论(2026-07-02)：单特性无跨特性分叉，参数完整度/准确性通过——DELAYUPTIMER/TOSEXP/MPLSPASSIVE 均为可选默认(md 明示可不输用默认值)，当前特性不揭示，不绑。rule 0-00185=高危守护(去使能BFD不可恢复)。本 atom 仅录 BFDENABLE；其余 BFD 全局参数(DELAYUPTIMER/TOSEXP 等)待后续特性揭示时增量补全。命令级审查(2026-07-02)。"

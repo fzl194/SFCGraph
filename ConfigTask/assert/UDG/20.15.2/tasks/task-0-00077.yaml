@@ -1,0 +1,34 @@
+task_id: UDG@20.15.2@Task@0-00077
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置OSPF引入外部路由(IPv4)
+task_layer: atom
+task_intent: 将外部路由(wlr)引入OSPF域并在域中发布（PROCID+TOPOID+PROTOCOL）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD OSPFIMPORTROUTE
+status: inferred   # 命令级审查(2026-07-02): draft→inferred，补 TOPOID 关键参，PROTOCOL/PROCID 齐
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00077:PROCID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFIMPORTROUTE:PROCID
+    binding_type: reference
+    variable_source: reference   # 引用 ADD OSPF
+    source_ref: UDG@20.15.2@Task@0-00074:PROCID
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00077:TOPOID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFIMPORTROUTE:TOPOID
+    binding_type: fixed
+    variable_source: global_planned   # 命令级审查(2026-07-02): 补——③2特性脚本均显式 TOPOID=0(全网规划)
+    value: 0
+    requiredness: required   # 命令真相 optional/默认0，但③2特性脚本均显式传入→按"脚本实际用到"提为 required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00077:PROTOCOL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFIMPORTROUTE:PROTOCOL
+    binding_type: fixed
+    variable_source: global_planned   # 数据规划表: 全网规划(010155)/本端规划(010104)，取值固定 wlr
+    value: "wlr"
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+task_rules_ref: [UDG@20.15.2@TaskRule@0-00193]
+notes: "GWFD-010155 IPv4 OSPF 路径。PROCID 引用 ADD OSPF(0-00074)。命令级审查(2026-07-02): 补 TOPOID=0 关键参(③2特性脚本 ADD OSPFIMPORTROUTE:PROCID=X,TOPOID=0,PROTOCOL=wlr 均显式传入，原 atom 漏绑)；PROTOCOL 取值两特性均固定 wlr(010104本端规划/010155全网规划，取值同构无分叉，保 global_planned)。缺口10参数中 IMPTCOSTCFG/IMPTTAGCFG/IMPTTYPECFG=FALSE 虽 010155 脚本显式但=默认FALSE空操作且 010104 脚本未含(分叉+默认值)，按通用配置筛不绑；COST/TAG/TYPE/ROUPOLINAME/PROTOCOLPROCID/PERMITIBGPCFG 均未用不绑。md 说明'不能只发布WLR_SP/WLR_UD必须WLR发布所有'投影 rule 0-00193。原仅引 010155，补 010104(同用此命令)。"

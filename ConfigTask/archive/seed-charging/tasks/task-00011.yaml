@@ -1,0 +1,15 @@
+task_id: UDG@20.15.2@Task@00011
+task_logical_name: 配置用户模板
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD USERPROFILE
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD USERPROFILE:USERPROFILENAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 用户模板名,PCF/SMF/UPF间一致
+task_category: 配置
+status: active
+source_evidence_ids: []

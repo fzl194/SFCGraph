@@ -1,0 +1,64 @@
+task_id: UDG@20.15.2@Task@0-00048
+nf: UDG
+version: "20.15.2"
+task_logical_name: 启动PDN侧路由探测
+task_layer: atom
+task_intent: 启动UDG到PDN/DN侧服务器的路由连通性探测（PING/DNS/Tracert三种方式），用于业务调测/版本升级/地址扩容/异常投诉场景
+task_category: activate   # 探测为运行态激活动作(非配置态ADD/SET)，归 activate
+ref: UDG@20.15.2@MMLCommand@STR PDNROUTETST
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00048:IPPOOL
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:IPPOOL
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(LST POOL)
+    source_ref: UDG@20.15.2@Task@0-00043:POOLNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+  - binding_id: UDG@20.15.2@Task@0-00048:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:IPVERSION
+    binding_type: fixed
+    value: IPV4   # 任务示例脚本固定 IPV4
+    requiredness: required
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+  - binding_id: UDG@20.15.2@Task@0-00048:SRCIPV4ADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:SRCIPV4ADDR
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；建议空闲IP(在线IP会触发用户去激活)
+    requiredness: optional   # 不配则UDG随机选源IP
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+  - binding_id: UDG@20.15.2@Task@0-00048:DSTIPV4ADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:DSTIPV4ADDR
+    binding_type: variable
+    variable_source: peer_planned   # 数据规划表: 与对端协商(PDN/DN侧服务器IP)
+    requiredness: required
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+  - binding_id: UDG@20.15.2@Task@0-00048:TESTMETHOD
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:TESTMETHOD
+    binding_type: decision_driven   # 三选一(PING/DNS/TRACERT)由探测方式 DP(0-00014) 决定；来源本端规划但取值由决策点选
+    variable_source: local_planned
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00014
+    requiredness: required
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+  - binding_id: UDG@20.15.2@Task@0-00048:DOMAINVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:DOMAINVALUE
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: conditional   # TESTMETHOD=DNS 时必填
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00014
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+  - binding_id: UDG@20.15.2@Task@0-00048:WHOLEDETECT
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:WHOLEDETECT
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；Tracert方式不支持全量
+    requiredness: optional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00014
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+  - binding_id: UDG@20.15.2@Task@0-00048:SECTIONNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@STR PDNROUTETST:SECTIONNUM
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional   # WHOLEDETECT=ENABLE 时可选
+    source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+notes: "GWFD-010108。task_category=activate(STR=Start，运行态探测非配置态)。IPPOOL 引用 ADD POOL(0-00043)；TESTMETHOD/DOMAINVALUE/WHOLEDETECT 受探测方式 DP(0-00014)驱动。md 注意: 同一时间只能执行一个探测；Tracert不支持全量且约450s返回；建议空载环境使用。命令级审查(2026-07-02): 命令真相 13 参数，已绑 8(IPPOOL/IPVERSION/SRCIPV4ADDR/DSTIPV4ADDR/TESTMETHOD/DOMAINVALUE/WHOLEDETECT/SECTIONNUM)，缺口 5 全跳过——SRCIPV6PREFIX/DSTIPV6PREFIX 属 IPv6 探测路径(IPVERSION 固定 IPV4，不走 IPv6)；DSCPV/TCV(DSCP/Traffic-Class)/LENGTH(报文净荷长度) 6 特性中仅 GWFD-010108 用此命令且数据规划表/示例脚本均未引用(冷门)，按通用配置门槛跳过(演进债)。DSTIPV4ADDR 维持 peer_planned(truth=global_planned 但语义=与PDN/DN侧对端协商服务器IP，peer_planned 更准)。投影 2 规则: safety_rule 0-00166(高危:可能去活在线用户) + sequencing_rule 0-00167(并发互斥/地址池前置/目的IP有效/仅留末次/Tracert耗时)。"

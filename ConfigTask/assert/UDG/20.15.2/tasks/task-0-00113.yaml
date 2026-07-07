@@ -1,0 +1,32 @@
+task_id: UDG@20.15.2@Task@0-00113
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置匹配路由类型
+task_layer: atom
+task_intent: 为路由策略节点匹配指定路由类型（POLICYNAME+NODESEQUENCE+ROUTETYPE），如 nssaExternal1，用于OSPFv3引入WLR路由时的类型过滤
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD MATCHROUTETYPE
+status: inferred   # 命令级审查(2026-07-02): 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020401/激活IPv6承载上下文_38276176.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00113:POLICYNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MATCHROUTETYPE:POLICYNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取
+    source_ref: UDG@20.15.2@Task@0-00111:POLICYNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020401/激活IPv6承载上下文_38276176.md]
+  - binding_id: UDG@20.15.2@Task@0-00113:NODESEQUENCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MATCHROUTETYPE:NODESEQUENCE
+    binding_type: reference
+    variable_source: reference   # 引用 ADD ROUTEPOLICYNODE 节点号(复合键之一)
+    source_ref: UDG@20.15.2@Task@0-00112:NODESEQUENCE
+    requiredness: required
+    source_evidence_ids: [GWFD-020401/激活IPv6承载上下文_38276176.md]
+  - binding_id: UDG@20.15.2@Task@0-00113:ROUTETYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MATCHROUTETYPE:ROUTETYPE
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划(nssaExternal1 等 OSPF 路由类型枚举)
+    requiredness: required
+    source_evidence_ids: [GWFD-020401/激活IPv6承载上下文_38276176.md]
+notes: "GWFD-020401。双引用: POLICYNAME←ADD ROUTEPOLICY(0-00111), NODESEQUENCE←ADD ROUTEPOLICYNODE(0-00112)。ROUTETYPE 控制哪些外部路由类型被策略放行。命令级审查(2026-07-02): 参数完整度/准确性通过(三参数与命令真相一致，单特性无来源分叉)；新建 rule 0-00242 投影命令 notes(最大记录数65535 + 前置双依赖 ADD ROUTEPOLICY+ADD ROUTEPOLICYNODE + 立即生效；前置顺序已由 POLICYNAME/NODESEQUENCE 双 reference 隐式表达，rule 显式记录复合键依赖)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

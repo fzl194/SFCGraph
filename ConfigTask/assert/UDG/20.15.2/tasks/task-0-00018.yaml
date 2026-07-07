@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@0-00018
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置URR上报失败动作
+task_layer: atom
+task_intent: 设置在线计费 URR 上报失败后的处理动作（SET URRFAILACTION，在线/离线可选）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET URRFAILACTION
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md, GWFD-010171/配置Ga接口离线计费_31927856.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00018:RETRYINTERVAL, parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:RETRYINTERVAL, binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00018:RETRYTIMES, parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:RETRYTIMES, binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00018:RETRYFAILACT, parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:RETRYFAILACT, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00018:HOLDINGTIME, parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:HOLDINGTIME, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+notes: |
+  整个 atom 可选。RETRYFAILACT=CONTINUE 时放通不计费（业务可通行），=BLOCK/TERMINATE 时阻塞；HOLDINGTIME 条件必选（前提 RETRYFAILACT=BLOCK 或 CONTINUE）。复用于在线(2-00002)与离线(2-00003)计费特性。
+  命令级审查(2026-07-02):
+  - 准确性修正：RETRYINTERVAL/RETRYTIMES/RETRYFAILACT requiredness required→conditional（命令真相参数表全 optional；atom 本身可选，配了才需要这些值）。HOLDINGTIME 保留 conditional（命令真相 conditional）。variable_source 全部对齐命令真相（RETRYINTERVAL/RETRYTIMES=global_planned，RETRYFAILACT/HOLDINGTIME=local_planned）。
+  - source_evidence_ids 补离线(2-00003)，覆盖 atom 复用的在线+离线两类特性。
+  - 新增 atom-挂 rule 0-00119（cardinality 最大记录数1 + 高危漏计费风险提示）+ DP 0-00051（conditional_required：HOLDINGTIME 前提 RETRYFAILACT=BLOCK 或 CONTINUE）。

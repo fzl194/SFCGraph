@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00170
+owner_task_ref: UDG@20.15.2@Task@0-00056   # 挂 atom ADD INTERFACE
+rule_name: ADD INTERFACE 最大记录数规格 + 版本升级禁用
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD INTERFACE
+  expression: "ADD INTERFACE 命令最大记录数为 65535；该命令执行后立即生效；该命令在版本升级过程中禁止执行。"
+violation_effect: 超规格新增失败；版本升级期间执行将中断升级流程
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015002/激活支持GRE_06422610.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数65535' + '版本升级过程中禁止执行'。"

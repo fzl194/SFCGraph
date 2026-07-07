@@ -1,0 +1,58 @@
+task_id: UDG@20.15.2@Task@0-00257
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加内容分类组绑定关系
+task_layer: atom
+task_intent: "增加内容过滤策略与分类组的绑定关系及动作(ADD CONTCATEGBIND: CFPROFILENAME + CONTCATEGNAME + ACTION)"
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD CONTCATEGBIND
+status: inferred   # 命令级审查(2026-07-02):draft→inferred, 3 缺口补充 + ACTION→optional + DP/rule 投影
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00257:CFPROFILENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGBIND:CFPROFILENAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD CFPROFILE)
+    source_ref: UDG@20.15.2@Task@0-00252:CFPROFILENAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00257:CONTCATEGNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGBIND:CONTCATEGNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD CONTCATEGROUP)
+    source_ref: UDG@20.15.2@Task@0-00256:CONTCATEGNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00257:ACTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGBIND:ACTION
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional 默认 PASS; 数据规划表样例 BLOCK
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00257:REDIRECTNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGBIND:REDIRECTNAME
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 conditional: ACTION=REDIRECT 时必选; 引用 ADD REDIRECT(atom 待建)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00120
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00257:TIMERANGENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGBIND:TIMERANGENAME
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional: TimeRange 名称(对应 ADD TIMERANGE atom 待建, 主场景不配)
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00257:CFGDOMAINNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGBIND:CFGDOMAINNAME
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional: 配置域
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+decision_refs:
+  - UDG@20.15.2@DecisionPoint@0-00120   # ACTION 3-way(PASS/BLOCK/REDIRECT)→ REDIRECTNAME 配套必选/必不传
+notes: >-
+  GWFD-110471。命令级审查(2026-07-02):draft→inferred; 原 binding ACTION 标 required(违反命令真相 optional 默认 PASS)→ 改为 optional;
+  3 缺口补充: REDIRECTNAME/TIMERANGENAME/CFGDOMAINNAME;
+  REDIRECTNAME conditional 配套 ACTION=REDIRECT(DP 0-00120 编排);
+  TIMERANGENAME 对应 ADD TIMERANGE(atom 待建, 主场景不配); CFPROFILENAME 引用 ADD CFPROFILE(0-00252); CONTCATEGNAME 引用 ADD CONTCATEGROUP(0-00256);
+  命令不在 mml_commands.jsonl(§6.A), 待 CommandGraph 抽取回填。

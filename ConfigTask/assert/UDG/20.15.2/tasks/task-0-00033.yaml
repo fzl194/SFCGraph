@@ -1,0 +1,59 @@
+task_id: UDG@20.15.2@Task@0-00033
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置带宽管理用户组
+task_layer: atom
+task_intent: 配置带宽管理用户组(ADD BWMUSERGROUP)，定义流量整形的用户范围(组级/用户级)及优先级
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD BWMUSERGROUP
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00033:USERGROUPTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMUSERGROUP:USERGROUPTYPE
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表 2 特性均本端规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00033:USERGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMUSERGROUP:USERGROUPNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表 2 特性均本端规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00033:USERGROUPPRI
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMUSERGROUP:USERGROUPPRI
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表 2 特性均本端规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00033:USERLEVSRVTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMUSERGROUP:USERLEVSRVTYPE
+    binding_type: decision_driven
+    variable_source: local_planned   # 命令真相 optional 默认 TOS；020354 显式 NONTOS，110301 不配（用户组级场景走 USERGLEVSRVTYPE）
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00098
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - binding_id: UDG@20.15.2@Task@0-00033:USERGLEVSRVTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMUSERGROUP:USERGLEVSRVTYPE
+    binding_type: decision_driven
+    variable_source: local_planned   # 命令真相 optional 默认 TOS；110301 显式 NONTOS（用户组级），020354 不配（用户级场景走 USERLEVSRVTYPE）
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00098
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: |
+  GWFD-020354 基于业务的Shaping(URL整形) + GWFD-110301 基于终端系统的码率差异化控制 共享。命令 ADD BWMUSERGROUP 未在 by_command 复用索引(§6-B)。
+  USERGROUPPRI 同一用户级/用户组级下规则优先级不能相同(uniqueness_rule 0-00250 投影)。
+  USERLEVSRVTYPE/USERGLEVSRVTYPE 跨特性用户级/用户组级业务类型分叉 → DP 0-00098 编排（二选一：用户级→USERLEVSRVTYPE；用户组级→USERGLEVSRVTYPE）。
+  命令级审查(2026-07-02) 演进：status draft→inferred；USERLEVSRVTYPE requiredness 由 required 校正为 conditional（命令真相 optional）+ 升级 decision_driven；新增 USERGLEVSRVTYPE binding（110301 实际用到）。
+  不绑冷门（命令真相 optional/conditional 且 2 特性均未用）：CFGDOMAINNAME/USERLEVRULESW/USERGLEVRULESW（使能开关默认 ENABLE，组级/用户级规则开关）。

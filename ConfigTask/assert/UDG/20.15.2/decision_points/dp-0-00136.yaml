@@ -1,0 +1,45 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00136
+owner_task_ref: UDG@20.15.2@Task@0-00174   # 挂 atom SET APNDLBUFTIME
+decision_name: APN级下行数据缓存时长 用户类型三选一
+decision_question: |
+  SET APNDLBUFTIME 单次执行时, 选择配置哪种用户类型的下行数据缓存时长?
+  - NBIOT_USER: 配置 NB-IoT 用户下行数据缓存时长(3~200s), 由特性 GWFD-110601 (NB-IoT eDRX 模式) 选用。
+  - NORMAL_USER: 配置普通用户下行数据缓存时长(3~15s), 由特性 GWFD-110641 (eMTC eDRX 模式) 选用。
+  - REDCAP_NR_USER: 配置 RedCap-NR 用户下行数据缓存时长(3~200s), 由特性 GWFD-110661 (5G eDRX 模式) 选用。
+  命令 notes：3 个时长参数均 optional, 同一命令单次 SET 仅配其中一种用户类型时长；3 种用户类型时长互斥, 不可同时配。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110601/激活NB-IoT eDRX模式_67487577.md
+  - GWFD-110641/激活eMTC eDRX模式_70722748.md
+  - GWFD-110661/激活5G eDRX模式_58609938.md
+options:
+  - option_id: opt-nbiot-user
+    option_name: NB-IoT 用户缓存时长
+    option_value: NBIOT_USER
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:NBIOTUSER, effect_type: sets_requiredness, effect_detail: requiredness=required；本特性(NB-IoT eDRX)路由绑定该参数, 取值 3~200s 本端规划}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:NORMALUSER, effect_type: sets_requiredness, effect_detail: requiredness=absent(不传, 互斥)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:REDCAPNRUSER, effect_type: sets_requiredness, effect_detail: requiredness=absent(不传, 互斥)}
+  - option_id: opt-normal-user
+    option_name: 普通用户缓存时长
+    option_value: NORMAL_USER
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:NBIOTUSER, effect_type: sets_requiredness, effect_detail: requiredness=absent(不传, 互斥)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:NORMALUSER, effect_type: sets_requiredness, effect_detail: requiredness=required；本特性(eMTC eDRX)路由绑定该参数, 取值 3~15s 本端规划}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:REDCAPNRUSER, effect_type: sets_requiredness, effect_detail: requiredness=absent(不传, 互斥)}
+  - option_id: opt-redcap-nr-user
+    option_name: RedCap-NR 用户缓存时长
+    option_value: REDCAP_NR_USER
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:NBIOTUSER, effect_type: sets_requiredness, effect_detail: requiredness=absent(不传, 互斥)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:NORMALUSER, effect_type: sets_requiredness, effect_detail: requiredness=absent(不传, 互斥)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00174:REDCAPNRUSER, effect_type: sets_requiredness, effect_detail: requiredness=required；本特性(5G eDRX)路由绑定该参数, 取值 3~200s 本端规划；与 SMF 下发 DL Buffering Duration 取最小}
+default_option: opt-nbiot-user
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00136~0-00149）。管理 SET APNDLBUFTIME 单次执行的"用户类型三选一"互斥路由。
+  依据：命令真相 3 时长参数均 optional，3 特性数据规划表各选一种(NB-IoT/eMTC/5G)；3 种时长同一命令单次 SET 仅配其一, 互斥不可同时配。
+  注：本 atom 跨 3 特性共用, 但同一特性单次 SET 仅配一种时长——DP 把"特性路由→时长参数必选/不传"显化为决策点, 防止配置工程师误配多种时长(超出命令真相语义)。
+  与 rule 0-00347 联动(rule 校验前置 + 取值范围)。

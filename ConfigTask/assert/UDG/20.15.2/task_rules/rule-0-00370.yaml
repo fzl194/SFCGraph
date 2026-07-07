@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00370
+owner_task_ref: UDG@20.15.2@Task@0-00137   # 挂 atom SET SOFTPARAOFBIT
+rule_name: SET SOFTPARAOFBIT 全局唯一 + 立即生效
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00137
+  expression: |
+    SET SOFTPARAOFBIT 命令最大记录数为 1（全局唯一实例，软参表统一设置）。
+    立即生效：本命令执行后立即生效。
+    BYTE 索引 1~1200；BYTEPOSITION 1~8；BYTEVALUE 0~1。
+    DWord 类型（DWORDNUM/DWORDPOSITION/DWORDVALUE）：DWORDNUM 1~180，DWORDPOSITION 1~32，DWORDVALUE 0~1。
+    适用 NF：SGW-U、PGW-U、UPF。
+violation_effect: 重复执行覆盖前值；非立即生效导致快速流表/业务匹配未刷新
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务匹配策略/业务匹配公共配置/业务软参管理/软件参数比特位/设置软件参数表比特位的值（SET SOFTPARAOFBIT）_82837317.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+  - GWFD-020412/本地配置方式激活L2TP VPN_40342129.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 1 + 立即生效)。DWord 类型冷门不绑,记入 atom notes。"

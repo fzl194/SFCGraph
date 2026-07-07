@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@0-00046
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置APN地址分配属性
+task_layer: atom
+task_intent: 设置指定APN支持使用主机地址接入（HOSTROUTEIP=ENABLE，主机地址路由接入）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNADDRESSATTR
+status: draft   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)。命令级审查(2026-07-02): 投影规格→rule 0-00151/0-00152
+source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-110910/激活支持Routing Behind MS_74264904.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00046:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNADDRESSATTR:APN
+    binding_type: reference
+    variable_source: reference   # APN 引用已配置的 ADD APN
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00046:HOSTROUTEIP
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNADDRESSATTR:HOSTROUTEIP
+    binding_type: fixed
+    value: ENABLE   # 010104 场景固定 ENABLE(支持主机地址接入)
+    requiredness: conditional   # 场景相关: 010104 主机地址接入设 ENABLE
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00046:FRAMEDROUTE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNADDRESSATTR:FRAMEDROUTE
+    binding_type: fixed
+    value: ENABLE   # 110910 场景固定 ENABLE(使能 Routing Behind MS)
+    requiredness: conditional   # 场景相关: 110910 Routing Behind MS 设 ENABLE
+    source_evidence_ids: [GWFD-110910/激活支持Routing Behind MS_74264904.md]
+notes: "GWFD-010104(HOSTROUTEIP) + GWFD-110910(FRAMEDROUTE)。P0 收敛：合并原 variant 0-00221。SET APNADDRESSATTR 设场景相关开关: HOSTROUTEIP=ENABLE(010104 主机地址接入) 或 FRAMEDROUTE=ENABLE(110910 Routing Behind MS)，两 flag 各 feature 按需设其一(requiredness=conditional)。APN 引用 ADD APN(0-00020)。互斥/约束(110910): APN 已使能 L2TP 则无需本功能；使能后该 APN anti-spoofing 自动关闭；AAA Server 需先配终端IP段。命令级审查(2026-07-02): 投影 notes 10000上限→rule 0-00151、每APN一条+前置ADD APN→rule 0-00152；12 个缺口参数(SUPPORTIPV4/V6/ANTISPOOFINGDL/UL/IPTYPEFORDUALIP/SINGLEADDRCAUSE/CPCTRL/IPV6RAMTUSW/IPV6MTU/IPV6RALIFETIME/IGNOREV4POOLID/IGNOREV6POOLID)命令真相均 optional 且 2 特性数据规划表均未用到，按通用配置门槛不绑。CommandParameter 待 CommandGraph 抽取。"

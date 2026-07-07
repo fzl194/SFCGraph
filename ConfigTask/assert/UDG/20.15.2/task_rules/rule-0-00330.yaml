@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00330
+owner_task_ref: UDG@20.15.2@Task@0-00064   # SET REDUNDUSER (atom-挂 rule)
+rule_name: SET REDUNDUSER 最大记录数1+高危+立即生效+前置无静态路由冗余用户+地址池REDUNDFUNC=ENABLE
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00064:SWITCH
+  expression: "最大记录数为1(全局唯一); 本命令属于高危命令(改此配置前先确认是否存在静态地址冗余用户，否则可能导致此部分用户业务不通); 该命令执行后立即生效；修改此配置前需要保证无正在使用或者准备使用静态地址路由冗余的用户；此开关需与地址池 REDUNDFUNC=ENABLE(ADD POOL 0-00043 参数)同时打开才生效；主备UDG均需配置；存在系统初始记录(SWITCH=DISABLE)。"
+violation_effect: 高危配置错误导致用户业务不通；REDUNDFUNC未打开使开关不生效
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1+高危+立即生效+前置约束)
+source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]

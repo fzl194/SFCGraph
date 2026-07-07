@@ -1,0 +1,17 @@
+rule_id: UNC@20.15.2@TaskRule@0-00027
+owner_task_ref: UNC@20.15.2@Task@0-00025
+rule_name: ADD DEACTQFPLCY 最多 255 条 + 立即生效
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD DEACTQFPLCY]
+  expression: 记录数 ≤ 255；命令执行后立即生效；系统部署后已存在初始记录（RADIO_NETWORK/20/NOT_RELEASE/60 等）。
+  # APN 粒度（ADD APNDEACTQFPLCY）优先级高于全局粒度
+violation_effect: 超规格无法新增
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加去活用户面专有QoS Flow策略（ADD DEACTQFPLCY）_38788437.md]

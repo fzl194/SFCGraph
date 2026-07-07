@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00315
+owner_task_ref: UDG@20.15.2@Task@0-00253
+rule_name: 0-00253 最大记录数 100 + 立即生效 + 整机模板上限 100
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00253
+  expression: |
+    ADD CFTEMPLATE(atom 0-00253) 配置约束：
+    (1) 上限：单命令最大记录数为 100 + 整机最多可以配置 100 个内容过滤模板实例(命令 notes 强约束——两个上限等价同源)；超限→ADD 失败。
+    (2) 立即生效：该命令执行后立即生效(命令 notes)。
+    (3) ICAPSRVGMNAME 引用 ADD ICAPSVRGRP(atom 0-00260)：必选前置, ICAP 服务器组必须先建(数据规划表"已配置数据中获取")。
+    (4) ICAPSRVGSNAME 可选：主用故障时切换备用, 引用同一 ADD ICAPSVRGRP 的另一 ICAPSVRGRPNAME(命令真相 optional, 主特性场景不配)。
+    (5) TIMELIMITNUM 默认 100 / RESPTIMEOUT 默认 300ms：命令真相 optional 默认值——本 atom 当前未绑缺省值, 命令级审查 §4.3 ③ 缺口标注(主特性采用系统默认即可)。
+    (6) ACTION 3 路枚举 PASS/BLOCK/REDIRECT：原 binding ACTION 标 required(违反命令真相 optional 默认 PASS)→ 已改 optional；DP 0-00118 编排配套 DEFREDNAME 必选/必不传。
+    (7) DEFREDNAME conditional：ACTION=REDIRECT 时必选, 引用 ADD REDIRECT(atom 待建, 隐性前置依赖——REDIRNAME 必须先配置)。
+    (8) CFGDOMAINNAME optional：配置域, 主特性场景不配。
+violation_effect: 上限超限→ADD 失败；未先建 ICAPSVRGRP→ICAPSRVGMNAME 引用失败；DEFREDNAME 错配(ACTION≠REDIRECT 时配 / ACTION=REDIRECT 时未配)→命令拒收；ACTION requiredness 误标→配置生成器无谓强制必选
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。DP 0-00118 编排 ACTION 3-way + DEFREDNAME 配套必选。"

@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00352
+owner_task_ref: UDG@20.15.2@Task@0-00154
+rule_name: 0-00154 SET SACOMMONPARA max_records=1 + 立即生效 + NORSTPKTNUM 不宜过小 + QUIC 仅 Quic 密文增强 + DP 0-00141 编排
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00154
+  expression: |
+    SET SACOMMONPARA(atom 0-00154) 配置约束：
+    (1) 上限：单命令最大记录数为 1(命令 notes 强约束——SA 业务公共参数全局配置)；超限→SET 失败。
+    (2) 立即生效：该命令执行后立即生效(命令 notes)。
+    (3) NORSTPKTNUM 不宜过小：NoRstPktNum 参数配置过小会导致报文解析提前返回失败, 影响规则匹配(命令 notes 强约束)——本特性场景不配, 采用默认 0 不控制。
+    (4) 默认 0 不控制：NORSTPKTNUM 默认值 0 表示不开启此控制功能, 即不通过 NoRstPktNum 配置值控制确定业务的报文数(命令 notes)。
+    (5) QUIC 开关适用范围：QUICIDENFUNCEN 和 QUICPSRFUNCEN 开关只针对 Quic 密文业务增强 SA 协议识别/解析(命令 notes)——对非 Quic 业务无效。
+    (6) 跨特性二选一：QUICIDENFUNCEN (GWFD-110251 HTTP3.0 Host识别) 与 QUICPSRFUNCEN (GWFD-110252 HTTP3.0 Host分析) 互斥——DP 0-00141 编排特性路由。
+    (7) 缺口冷门参数：NORSTPKTNUM/CDNENHANCEDSW/QUICSASW/USRRLTRFRSHSW/SPECMETHODSW 命令真相均 optional 且 2 特性数据规划表均未用到, 按通用配置门槛不绑——主特性采用 QUIC 开关单配。
+violation_effect: 上限超限→SET 失败；NORSTPKTNUM 过小→规则匹配失败；QUIC 开关误用于非 Quic 业务→无效操作；QUICIDENFUNCEN/QUICPSRFUNCEN 同时配→命令拒收(按特性路由应单选)
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-110251/激活HTTP3.0 Host识别_56786521.md, GWFD-110252/激活HTTP3.0 Host分析_07698710.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。投影命令 notes 5 大约束(max_records/立即生效/NORSTPKTNUM 不宜过小/默认 0 不控制/QUIC 仅 Quic 密文增强) + DP 0-00141 编排联动(跨特性二选一)。"

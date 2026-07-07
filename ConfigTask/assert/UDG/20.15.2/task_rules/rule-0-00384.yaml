@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00384
+owner_task_ref: UDG@20.15.2@Task@0-00233   # 挂 atom SET IPSQMADJUST
+rule_name: SET IPSQMADJUST 规格 1 + 配置过小丢包过多 + 立即生效 + 5 参数范围
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET IPSQMADJUST
+  expression: |
+    SET IPSQMADJUST 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    该命令用于配置低传输能力下的最低保证带宽，配置过小会导致用户丢包过多（命令 notes 风险提示）。
+    该命令执行后立即生效（命令 notes）。
+    THRESHOLD 整数 1～50 Mbps（CommandParameter 校验）。
+    LOWBANDWIDTH/HIGHBANDWIDTH 整数 100～100000 kbps（CommandParameter 校验）。
+    LOWCBS/HIGHCBS 整数 500～100000000 字节（CommandParameter 校验）。
+    THRESHOLD 为 required（命令真相 required，本特性样例 30），其余 4 参数 optional。
+violation_effect: 上限超限→SET 失败；配置过小→丢包过多；超范围→报错
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 配置过小风险 + 立即生效 + 5 参数范围。THRESHOLD required 其余 optional（命令真相）。feature-挂 rule 0-00082（IPSQM 增强须先核心整形）已表达 SET IPSQMADJUST 后置依赖。"

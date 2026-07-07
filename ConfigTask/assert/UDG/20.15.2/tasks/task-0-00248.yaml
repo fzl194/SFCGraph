@@ -1,0 +1,60 @@
+task_id: UDG@20.15.2@Task@0-00248
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置NTP服务器
+task_layer: atom
+task_intent: 增加 NTP 服务器及其访问参数(服务器名/IP 地址类型/IPv4 地址/协议版本/身份验证标志/密钥号/密钥类型/密钥串), 用于网元直连 NTP 服务器或 OMC 同步时间信息
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD NTPSVR
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00248:SVRNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:SVRNAME
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（NTP 服务器名）
+    requiredness: required
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+  - binding_id: UDG@20.15.2@Task@0-00248:IPTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:IPTYPE
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（IP 地址类型, 取值样例 IPV4）
+    requiredness: required
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+  - binding_id: UDG@20.15.2@Task@0-00248:IPADDRESS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:IPADDRESS
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（IPv4 地址, 与 NTP 服务器规划一致）
+    requiredness: conditional   # IPTYPE=IPV4 时必填
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+  - binding_id: UDG@20.15.2@Task@0-00248:PROTOCOLVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:PROTOCOLVERSION
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（NTP 协议版本, 取值样例 NTPV4）
+    requiredness: required
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+  - binding_id: UDG@20.15.2@Task@0-00248:AUTHFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:AUTHFLAG
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（身份验证标志, 取值样例 YES）
+    requiredness: required
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+  - binding_id: UDG@20.15.2@Task@0-00248:KEYID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:KEYID
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（身份验证密钥号）
+    requiredness: conditional   # AUTHFLAG=YES 时必填
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+  - binding_id: UDG@20.15.2@Task@0-00248:SHASTRING
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:SHASTRING
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（密钥类型, 取值样例 SHA256）
+    requiredness: conditional   # AUTHFLAG=YES 时必填
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+  - binding_id: UDG@20.15.2@Task@0-00248:KEYSTRING
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD NTPSVR:KEYSTRING
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（密钥串, 敏感值; 任务示例 **** 为占位）
+    requiredness: conditional   # AUTHFLAG=YES 时必填
+    source_evidence_ids: [NPFD-010014/激活支持NTP功能_40755235.md]
+notes: "NPFD-010014。md 数据规划表 8 个参数全部标'全网规划'→ variable_source=global_planned。条件必选: IPADDRESS(IPTYPE=IPV4 时)、KEYID/SHASTRING/KEYSTRING(AUTHFLAG=YES 时)。KEYSTRING 为敏感凭据(密钥串), 取值样例 ***** 为占位, 实际部署由全网规划/密钥管理提供, 不硬编码。命令命中 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：8/9 参数绑定(无功能缺口)；缺 IPADDRESS6 为 conditional(IPTYPE=IPV6 时必填)，特性 md 取 IPV4 故 IPV6 路径冷门不绑，按 baseline §4.1 不绑。已绑参数 requiredness 全部对齐命令真相(IPADDRESS/KEYID/SHASTRING/KEYSTRING 均为 conditional)。KEYSTRING 为敏感凭据不硬编码，取值由全网规划/密钥管理提供。"

@@ -1,0 +1,44 @@
+task_id: UDG@20.15.2@Task@0-00210
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建IPsec微服务VPN与隧道接口(VNRS+IPSEC双配)
+task_layer: atom
+task_intent: 在IPsec微服务侧创建VPN实例与IPsec隧道接口并绑定VPN配置IP地址。VNRS微服务侧需同步双配(VNRS侧用 ADD L3VPNINST/VPNINSTAF/INTERFACE/IPBINDVPN/IFIPV4ADDRESS/ADD IPSECINTFCFG)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD L3VPNINSTIPSEC
+status: inferred  # 命令级审查(2026-07-02): 聚合 atom 5命令(L3VPNINSTIPSEC+VPNINSTAFIPSEC+INTERFACEIPSEC+IPBINDVPNIPSEC+IFIPV4ADDRESSIPSEC); bound 4/4(L3VPNINSTIPSEC:VRFNAME+VPNINSTAFIPSEC:AFTYPE+INTERFACEIPSEC:IFNAME+IFIPV4ADDRESSIPSEC:IFIPADDR); 4 IPSec场景子md 共享同一配置
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00210:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L3VPNINSTIPSEC:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 与 VNRS 侧 VRFNAME 一致(双配原则)
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00210:AFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNINSTAFIPSEC:AFTYPE
+    binding_type: fixed
+    value: ipv4uni
+    variable_source: local_planned   # 本端规划；主场景 IPv4，IPv6场景=ipv6uni
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00210:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD INTERFACEIPSEC:IFNAME
+    binding_type: reference
+    variable_source: reference   # 与 VNRS 侧 IPsec隧道接口名一致(如 Tunnel10/Tunnel2)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00210:IFIPADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV4ADDRESSIPSEC:IFIPADDR
+    binding_type: reference
+    variable_source: reference   # 与 VNRS 侧 IPsec隧道接口IP一致(IKE协商IP)
+    source_ref: UDG@20.15.2@Task@0-00058:IFIPADDR
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+notes: "聚合 atom: ADD L3VPNINSTIPSEC + ADD VPNINSTAFIPSEC + ADD INTERFACEIPSEC + ADD IPBINDVPNIPSEC + ADD IFIPV4ADDRESSIPSEC(IPsec微服务侧全链)。遵循双配原则: 接口名/接口IP/隧道类型/VPN 须与VNRS侧一对一一致，否则业务不通。CommandParameter 待抽取。命令级审查(2026-07-02): 聚合债(同0-00147 SET BGP类型) - 5 命令合 1 atom; bound 4(L3VPNINSTIPSEC:VRFNAME reference→0-00071 + VPNINSTAFIPSEC:AFTYPE=ipv4uni fixed + INTERFACEIPSEC:IFNAME reference→0-00056 + IFIPV4ADDRESSIPSEC:IFIPADDR reference→0-00058); 4 IPSec子场景子md(普通IPv4 IPsec隧道/GRE over IPsec/IPv4 IPsec主备/OSPF over IPsec)共享同一配置; AFTYPE=ipv4uni 固定(主场景 IPv4 单播)，IPv6 场景应改 ipv6uni 由 feature task 投影。VRFNAME 不能为 _public_/__mpp_vpn_inner__。"

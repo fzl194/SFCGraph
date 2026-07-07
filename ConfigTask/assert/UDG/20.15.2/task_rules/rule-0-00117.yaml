@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00117
+owner_task_ref: UDG@20.15.2@Task@0-00016   # 挂 atom SET UPDEFAULTQUOTA
+rule_name: 默认配额功能前置依赖配额配置
+rule_type: dependency_rule
+rule_scope: parameter
+condition: {expression_type: parameter_value, expression: "SET UPDEFAULTQUOTA:DFTQTSWITCH == ENABLE"}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00001
+  expression: "默认配额功能开启(DFTQTSWITCH=ENABLE)依赖已配置 DefaultQuota 的配额大小——应提前使用 ADD/MOD URR（设默认配额，对应 DFTQUOTAVOLUME/DFTQUOTATIME）和 SET SRVCOMMONPARA 设置默认配额的大小。否则开关使能后无可用默认配额。"
+violation_effect: 默认配额开关使能但未配配额大小，新业务首包无法使用默认配额
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '功能开启依赖配置DefaultQuota的配额，应提前使用ADD/MOD URR和SET SRVCOMMONPARA设置默认配额大小'。"

@@ -1,0 +1,19 @@
+task_id: UNC@20.15.2@Task@0-00023
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CPCGBINDING
+task_layer: atom
+task_intent: 增加抄送 CG 绑定关系（SGW-C/PGW-C/SMF）—— ⚠ 当前版本不支持本命令
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CPCGBINDING
+status: inferred
+source_evidence_ids:
+  - 增加抄送CG绑定（ADD CPCGBINDING）_09896869.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00023:CPCGGRPID", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CPCGBINDING:CPCGGRPID", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD CPCGGRP:CPCGGRPID", requiredness: required, source_evidence_ids: [增加抄送CG绑定（ADD CPCGBINDING）_09896869.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00023:CGIPVERSION", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CPCGBINDING:CGIPVERSION", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [增加抄送CG绑定（ADD CPCGBINDING）_09896869.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00023:CGPORT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CPCGBINDING:CGPORT", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [增加抄送CG绑定（ADD CPCGBINDING）_09896869.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00023:PRIORITY", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CPCGBINDING:PRIORITY", binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [增加抄送CG绑定（ADD CPCGBINDING）_09896869.md]}
+notes: |
+  UNC atom batch3（2026-07-06）。⚠ 命令 md 明示"当前版本不支持此命令"——建 atom 仅为图谱完整，实际不配置。
+  CPCGGRPID=reference(ADD CPCGGRP)。最多 32 条 → rule 0-00025。§6.B 见全局 rule 0-00001。

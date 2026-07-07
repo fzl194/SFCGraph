@@ -1,0 +1,22 @@
+rule_id: UNC@20.15.2@TaskRule@0-00030
+owner_task_ref: UNC@20.15.2@Task@0-00004
+rule_name: HASVPN=ENABLE 时 VPNINSTANCE 必填 + 前置 ADD VPNINST
+rule_type: dependency_rule
+rule_scope: parameter
+condition:
+  expression_type: param_value
+  expression: ADD APN:HASVPN == ENABLE
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UNC@20.15.2@CommandParameter@ADD APN:VPNINSTANCE
+    - UNC@20.15.2@MMLCommand@ADD VPNINST
+  expression: >-
+    HASVPN=ENABLE 时 VPNINSTANCE 必填；且 VPNINSTANCE 必须已由 ADD VPNINST 配置（VPNINSTANCE 绑定为 reference→ADD VPNINST）。
+    与 rule 0-00005（VIRTUALAPN=ENABLE→ADD VIRTUALAPNRULE）同型，均为 ADD APN 内开关→条件子段的前置依赖。
+violation_effect: APN 下用户 VPN 路由失败/激活失败
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加APN配置（ADD APN）_09653747.md]

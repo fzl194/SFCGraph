@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00171
+owner_task_ref: UDG@20.15.2@Task@0-00057   # 挂 atom ADD IPBINDVPN
+rule_name: ADD IPBINDVPN 最大记录数 + IFIPADDR 清空原地址行为
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD IPBINDVPN
+  expression: "ADD IPBINDVPN 命令最大记录数为 65535；执行后立即生效；版本升级过程中禁止执行；当 IFIPADDR 不指定时会清空该接口下原 IP 地址，指定时替换原地址（每主用接口最多 1 主 + 255 从 = 256 个 IP）。"
+violation_effect: 超规格新增失败；不指定 IFIPADDR 重绑 VPN 将清空接口原 IP（高危，需先备份/确认地址再操作）
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数65535' + 'IFIPADDR 不指定时清空原 IP / 指定时替换' + '每主用接口256个IP'。UDG 场景 IP 由 ADD IFIPV4ADDRESS 单独配，本命令不传 IFIPADDR，故重绑 VPN 会清空接口 IP——记录此高危行为。"

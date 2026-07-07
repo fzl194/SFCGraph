@@ -1,0 +1,34 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00155
+owner_task_ref: UDG@20.15.2@Task@2-00003   # 挂 feature task（特性级可选开关）
+decision_name: 是否配置离线专属可选命令
+decision_question: 离线计费部署后，是否追加可选的离线专属命令（URR 上报失败动作 SET URRFAILACTION）？
+decision_type: boolean
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: optional
+status: inferred
+source_evidence_ids: [GWFD-010171/配置Ga接口离线计费_31927856.md]
+notes: |
+  离线计费特性(md 操作步骤6)的 1 个可选 SET 命令开关。md 主示例脚本仅走 backbone(无 SET 命令),
+  属 opt-off 变体;md 步骤6 文字描述提供 SET URRFAILACTION 的可选项(URR 上报失败动作,
+  离线新业务场景下生效),属 opt-on 变体。
+  与 2-00002 在线计费的 DP 0-00155 同型对偶:0-00154 切在线专属 3 SET(UPDEFAULTQUOTA/
+  UPGLBCHGPARA/URRFAILACTION),本 DP 仅切离线专属 1 SET(URRFAILACTION——md 唯一标注"离线"
+  字样的可选命令)。SET URRFAILACTION atom 0-00018 由在线/离线两类特性复用,但每特性独立
+  决定是否追加(spec §5 同名决策可多层共存不合并;§4.2 按 md 收口——每特性按自身 md 支持的
+  option 子集枚举)。
+  上层 generalized DP 0-00004(opt-g-offline)决定"是否叠加 2-00003 特性";本 DP 在特性叠加后
+  内部决定是否追加该可选命令,与上层不冲突。
+  规则交互:atom 0-00018 自挂的 rule 0-00119(cardinality 最大记录数1 + 高危漏计费风险提示)
+  与 DP 0-00051(conditional_required: HOLDINGTIME 前提 RETRYFAILACT=BLOCK 或 CONTINUE)是
+  命令级审查已闭环的约束,覆盖校验只校命令集出现/缺失,参数合规由 atom 层规则强制。
+options:
+  - option_id: opt-off
+    option_name: 不追加
+    option_value: "false"
+    impacts:
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00018, effect_type: excludes, effect_detail: 跳过 SET URRFAILACTION}
+  - option_id: opt-on
+    option_name: 追加
+    option_value: "true"
+    impacts:
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00018, effect_type: adds, effect_detail: 配 SET URRFAILACTION(URR上报失败动作,离线新业务场景下生效)}

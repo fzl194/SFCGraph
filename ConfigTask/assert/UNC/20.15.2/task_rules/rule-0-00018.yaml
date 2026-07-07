@@ -1,0 +1,19 @@
+rule_id: UNC@20.15.2@TaskRule@0-00018
+owner_task_ref: UNC@20.15.2@Task@0-00016
+rule_name: ADD CHGAPN 最多 1000 条 + APNNI 唯一 + 前置 IGNOREFLG
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CHGAPN]
+  expression: >-
+    记录数 ≤ 1000；各记录 APNNI 不可重复。
+    本命令仅在 SET CHGCDR.IGNOREFLG 配置为忽略 HLR 签约 APN 计费属性时生效；
+    S-CDR 计费属性选择优先级：Gn 接口 IMSI 匹配 > APN计费属性 > 缺省。只对之后激活用户有效。
+violation_effect: 超规格无法新增；APNNI 重复失败；未设 IGNOREFLG 时不生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加APN计费属性(ADD CHGAPN)_72344965.md]

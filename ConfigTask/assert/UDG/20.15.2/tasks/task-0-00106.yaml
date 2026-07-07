@@ -1,0 +1,59 @@
+task_id: UDG@20.15.2@Task@0-00106
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置带宽管理生效范围
+task_layer: atom
+task_intent: 配置带宽管理参数(SET BANDWIDTHMNG)，设置用户组级业务带宽/连接数配置的生效范围(整机 SYSTEM 或业务处理单元 CPU)及统计周期/动态统计窗口等
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET BANDWIDTHMNG
+status: inferred   # 命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取(§6-B)
+source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00106:RANGE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BANDWIDTHMNG:RANGE
+    binding_type: variable
+    variable_source: local_planned   # 特性 md 数据规划表: 本端规划；取值 CPU|SYSTEM
+    requiredness: required
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+  - binding_id: UDG@20.15.2@Task@0-00106:PERIOD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BANDWIDTHMNG:PERIOD
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description 默认 5；特性 md 未列，按命令级推断(§4.5 命令级 fallback)
+    requiredness: optional
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+  - binding_id: UDG@20.15.2@Task@0-00106:CIRMINTHRES
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BANDWIDTHMNG:CIRMINTHRES
+    binding_type: variable
+    variable_source: local_planned   # 默认 0；特性 md 未列，命令级推断
+    requiredness: optional
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+  - binding_id: UDG@20.15.2@Task@0-00106:PIRMINTHRES
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BANDWIDTHMNG:PIRMINTHRES
+    binding_type: variable
+    variable_source: local_planned   # 默认 0；特性 md 未列，命令级推断
+    requiredness: optional
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+  - binding_id: UDG@20.15.2@Task@0-00106:BWMSUBSCRCTRL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BANDWIDTHMNG:BWMSUBSCRCTRL
+    binding_type: variable
+    variable_source: local_planned   # 默认 PCC_RULE_PRIOR；特性 md 未列，命令级推断
+    requiredness: optional
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+  - binding_id: UDG@20.15.2@Task@0-00106:ADJUSTVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BANDWIDTHMNG:ADJUSTVALUE
+    binding_type: variable
+    variable_source: local_planned   # 默认 10；特性 md 未列，命令级推断
+    requiredness: optional
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+  - binding_id: UDG@20.15.2@Task@0-00106:GRPBWMSHAPSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET BANDWIDTHMNG:GRPBWMSHAPSW
+    binding_type: variable
+    variable_source: local_planned   # 默认 DISABLE；特性 md 未列，命令级推断
+    requiredness: optional
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+notes: |
+  GWFD-110301 基于终端系统的码率差异化控制专属。命令 SET BANDWIDTHMNG 在 mml_commands.jsonl，未在 by_command 复用索引(§6-B)。
+  特性 md 任务示例脚本仅显式配 RANGE=SYSTEM；PERIOD/CIRMINTHRES/PIRMINTHRES/BWMSUBSCRCTRL/ADJUSTVALUE/GRPBWMSHAPSW 在示例中未出现，
+  按 §4.5 命令级 fallback 从 mml_commands parameter_description + initial_values 推断 variable_source=local_planned，标注 optional。
+  全局 SET 类命令(max_records=1)，对应整机生效范围调整；RANGE 由 CPU 切 SYSTEM 需整机无用户时执行(命令 notes 强约束)。
+  命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00286(severity=error: 最大记录数 1 + 高危命令标记 + Range 变化触发 bwm* 同步 + SYSTEM 容量评估前置 + 整机无用户时执行)；binding=7(命中真相全部 7 项，无缺口)。

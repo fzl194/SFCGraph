@@ -1,0 +1,34 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00139
+owner_task_ref: UDG@20.15.2@Task@0-00109   # 挂 atom SET FPIFUNC
+decision_name: FPI 传递类型 2-way 编排 (DSCP/GTPU)
+decision_question: |
+  SET FPIFUNC 配置 FPI 差异化控制功能时, 选择 FPI 向 RAN 侧传递的方式。
+  - DSCP: 配置 FPI 信息以 DSCP 方式向 RAN 侧传递——要求无线侧支持 DSCP 识别(本特性 GWFD-110331 默认采用)。
+  - GTPU: 配置 FPI 信息以 GTP-U 方式向 RAN 侧传递——要求无线侧支持 GTP-U 扩展头识别。
+  命令 notes：FPITRANSMETHOD 取值 DSCP 或 GTPU；FPISWITCH=ENABLE 时 FPITRANSMETHOD 必选(conditional)；配置工程师须按 RAN 能力选择对应类型——DSCP vs GTPU 是无线侧能力差异, 跨 RAN 厂商分叉。
+decision_type: single_choice
+trigger_condition:
+  expression_type: parameter_value
+  expression: SET FPIFUNC.FPISWITCH=ENABLE
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md
+options:
+  - option_id: opt-fpi-dscp
+    option_name: DSCP 传递 (本特性默认)
+    option_value: DSCP
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPITRANSMETHOD, effect_type: sets_value, effect_detail: value=DSCP；要求无线侧支持 DSCP 识别；与系统初始记录一致}
+  - option_id: opt-fpi-gtpu
+    option_name: GTP-U 传递
+    option_value: GTPU
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPITRANSMETHOD, effect_type: sets_value, effect_detail: value=GTPU；要求无线侧支持 GTP-U 扩展头识别}
+default_option: opt-fpi-dscp
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00136~0-00149）。管理 SET FPIFUNC FPITRANSMETHOD 2-way 编排。
+  依据：命令真相 FPITRANSMETHOD conditional(FPISWITCH=ENABLE 时必选) + 跨 RAN 厂商能力差异(DSCP vs GTPU)；本特性 GWFD-110331 任务示例取 DSCP, 与系统初始记录一致。
+  注：本 DP 与 DP 0-00138 互补——0-00138 管 FPIPOLICYORIGIN × FPITRANSMETHOD 联合编排(4-way);本 DP 0-00139 仅管 FPITRANSMETHOD 2-way。配置生成器可任选其一, 0-00139 更轻量(单参数)。
+  原 binding FPITRANSMETHOD 标 variable+conditional, 现升级 decision_driven + decision_ref 0-00139(2-way: DSCP/GTPU, default DSCP)。
+  与 rule 0-00349 联动(rule 校验 max_records=1 + 立即生效 + 系统初始 + 无线侧协同)。

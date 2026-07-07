@@ -1,0 +1,20 @@
+task_id: UDG@20.15.2@Task@00012
+task_logical_name: 绑定规则到用户模板
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD RULEBINDING
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULEBINDING:USERPROFILENAME
+        binding_type: reference
+        source_ref: ""  # ←ADD USERPROFILE
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULEBINDING:RULENAME
+        binding_type: reference
+        source_ref: ""  # ←ADD RULE
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULEBINDING:POLICYTYPE
+        binding_type: reference
+        source_ref: ""  # ←ADD RULE.POLICYTYPE
+task_category: 配置
+status: active
+source_evidence_ids: []

@@ -1,0 +1,14 @@
+task_id: UDG@20.15.2@Task@2-00008
+nf: UDG
+version: "20.15.2"
+task_logical_name: 终端异常下行流量检测
+task_layer: feature
+task_intent: 在APN下开启终端异常下行流量检测（含基于流行为的检测）
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020305
+status: inferred
+source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]
+task_relations:
+  # P1：移除 2-00008→0-00020 depends_on（APN 是前置已配对象、非本特性配置步骤；信息已在 note）
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00040, from_task_ref: UDG@20.15.2@Task@0-00019, to_task_ref: UDG@20.15.2@Task@0-00021, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]}
+notes: "GWFD-020305。license=LKV3G5ADTD01(0-00019)。前置=已配置APN(0-00020)。核心 ADD ABNTRAFFICDT(0-00021): APN+SWITCH+TRAFFICBEHAVIORSWITCH=ENABLE。\nA段重建(2026-07-03):形态=ATOM-CHAIN(2 atom:0-00019/0-00021),按 spec §8.2/procedure §1 判据 feature→atom 直挂,不建 compound。覆盖校验结构命令集={SET LICENSESWITCH, ADD ABNTRAFFICDT}=md「操作步骤」命令集(单变体·基于流特征检测,简单检测仅原理概述无独立步骤),exit 0。\n新增 feature 挂 rule 0-00409(consistency_rule):md「应用限制」SET SRVCOMMONPARA.SIGDEFERREDTIME≥60s(该命令非本特性步骤,以 feature 级一致性约束存档)。\nAPN(0-00020)为前置已配对象、非本特性步骤,记于本 note 非 graph 边。\n无特性级 DP:TRAFFICBEHAVIORSWITCH 的简单/流特征分叉由 atom 0-00021 参数绑定(local_planned/required,默认 ENABLE)吸收。"

@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@00001
+task_logical_name: 配置URR
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD URR
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:URRNAME
+        binding_type: variable
+        variable_source: decision_driven
+        note: URR名称，跨场景获取方法分叉
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:URRID
+        binding_type: variable
+        variable_source: global_planned
+        note: 全网唯一，建议从1000开始，SMF/UPF一致
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE
+        binding_type: variable
+        variable_source: decision_driven
+        note: OFFLINE/ONLINE/MONITORINGKEY 跨场景
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE
+        binding_type: variable
+        variable_source: decision_driven
+        note: 条件出现(USAGERPTMODE=OFFLINE)，取值VOLUME/FREE跨场景
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:ONLMETERINGTYPE
+        binding_type: variable
+        variable_source: decision_driven
+        note: 条件出现(USAGERPTMODE=ONLINE)，取值跨场景
+task_category: 配置
+status: active
+source_evidence_ids: []

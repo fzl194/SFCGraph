@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00407
+owner_task_ref: UDG@20.15.2@Task@0-00230   # 挂 atom SET LINKALMCFG
+rule_name: SET LINKALMCFG 系统初始记录与生效时机
+rule_type: consistency_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_match
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET LINKALMCFG
+  expression: "系统部署完成后已存在初始记录：THRESHOLD=10(取值1~100%，丢包率过高告警阈值)、CLEARTHRESHOLD=5(取值0~99%，恢复阈值)、PERIOD=30(取值10~180秒，检测周期)。命令执行后立即生效。三参均 optional，未输入时保持系统当前配置不变(可通过 LST LINKALMCFG 查询)。触发 ALM-100395 链路丢包率过高告警。"
+violation_effect: 取值超范围新增失败
+severity: info
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes 初始记录表(10/5/30)+'执行后立即生效'+各参取值范围。Light 模式独有(UDG 作发送端可测丢包率)。CLEARTHRESHOLD 须小于 THRESHOLD(恢复阈值<告警阈值)。"

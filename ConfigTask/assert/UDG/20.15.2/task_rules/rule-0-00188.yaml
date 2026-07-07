@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00188
+owner_task_ref: UDG@20.15.2@Task@0-00082
+rule_name: BFD 静态非自协商会话本地/远端标识符两端配对
+rule_type: consistency_rule
+rule_scope: parameter
+condition:
+  expression_type: condition
+  expression: CREATETYPE4=SESS_STATIC
+constraint:
+  constraint_type: invariant
+  target_refs:
+    - UDG@20.15.2@Task@0-00082:LOCALDISCR
+    - UDG@20.15.2@Task@0-00082:REMOTEDISCR
+  expression: 静态非自协商会话两端须提前规划好描述符 ID：本端 LOCALDISCR 须等于对端 REMOTEDISCR，本端 REMOTEDISCR 须等于对端 LOCALDISCR（两端标识符交叉配对）。
+violation_effect: 本地/远端标识符未交叉配对导致 BFD 会话无法 Up、检测失效
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+notes: 命令级审查(2026-07-02)。② 命令真相功能描述：静态非自协商会话两端已提前规划好描述符 ID。

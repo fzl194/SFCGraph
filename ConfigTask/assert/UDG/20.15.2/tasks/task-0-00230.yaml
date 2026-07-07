@@ -1,0 +1,33 @@
+task_id: UDG@20.15.2@Task@0-00230
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置链路丢包告警阈值(Light模式)
+task_layer: atom
+task_intent: 配置 TWAMP 探测链路丢包率过高告警(ALM-100395)阈值(THRESHOLD/CLEARTHRESHOLD/PERIOD)。Light 模式独有(UDG 作发送端可测丢包率)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET LINKALMCFG
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred
+source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00230:THRESHOLD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET LINKALMCFG:THRESHOLD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(丢包率过高告警阈值%)；命令真相 optional(系统已有初始记录 10)；特性示例取 30(非初始)
+    requiredness: optional
+    value: 30
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00230:CLEARTHRESHOLD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET LINKALMCFG:CLEARTHRESHOLD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(恢复阈值%)；命令真相 optional(系统已有初始记录 5)；特性示例取 10(非初始)
+    requiredness: optional
+    value: 10
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00230:PERIOD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET LINKALMCFG:PERIOD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(检测周期秒)；命令真相 optional(系统已有初始记录 30)；特性示例取 40(非初始)
+    requiredness: optional
+    value: 40
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+notes: "SET LINKALMCFG(Light 模式独有)。仅 Light(UDG 作发送端)可测丢包率/时延/抖动并触发 ALM-100395 告警；Full(响应端)不测。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02) 补审：参数完整(3/3)；requiredness 由 required 校准为 optional(命令真相三参均 optional，系统部署后已有初始记录 10/5/30)；特性脚本显式传 30/10/40(非初始值，按本场景告警需求调整)，故 value 取特性示例值。补 atom rule 0-00407(初始记录 10/5/30 + 立即生效 + 取值范围)。"

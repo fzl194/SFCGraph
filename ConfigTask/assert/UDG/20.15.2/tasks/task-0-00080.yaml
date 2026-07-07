@@ -1,0 +1,53 @@
+task_id: UDG@20.15.2@Task@0-00080
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置OSPFv3引入外部路由(IPv6)
+task_layer: atom
+task_intent: 将外部路由(wlr)引入OSPFv3域（PROCID+TOPOID+PROTOCOL）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD OSPFV3IMPORTROUTE
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+  - GWFD-020401/激活IPv6承载上下文_38276176.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+task_rules_ref: [UDG@20.15.2@TaskRule@0-00202]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00080:PROCID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3IMPORTROUTE:PROCID
+    binding_type: reference
+    variable_source: reference   # 引用 ADD OSPFV3 进程号
+    source_ref: UDG@20.15.2@Task@0-00078:PROCID
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00080:TOPOID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3IMPORTROUTE:TOPOID
+    binding_type: fixed   # ③3特性数据规划表+脚本均显式 TOPOID=0(全网规划);命令真相 optional 默认 0,与默认一致故 fixed:0
+    variable_source: global_planned
+    value: "0"
+    requiredness: optional   # 命令真相 optional(默认 0);UDG OSPFv3 引入路由场景固定用 base 拓扑(0)
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00080:PROTOCOL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3IMPORTROUTE:PROTOCOL
+    binding_type: fixed
+    variable_source: global_planned   # ③3特性均 wlr(全网规划/本端规划);md 说明: 路由策略方式发布时不能只选 WLR_SP/WLR_UD,必须 WLR 发布所有路由
+    value: "wlr"
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00080:ROUPOLINAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3IMPORTROUTE:ROUPOLINAME
+    binding_type: variable   # ③跨特性分叉: 020401 用 policy1(已配置数据中获取,LST ROUTEPOLICY 查询)走路由策略发布 vs 010155/020406 不配(全量发布);条件必选(路由策略发布场景必填)
+    variable_source: reference   # 引用已配置路由策略(LST ROUTEPOLICY 查询)
+    requiredness: conditional   # 采用路由策略方式发布路由时必填;不指定则全量发布(PROTOCOL=wlr)
+    source_evidence_ids:
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+notes: "GWFD-010155/020401/020406 IPv6 OSPFv3 路径。PROCID 引用 ADD OSPFV3(0-00078)。PROTOCOL=wlr 引入 WLR 全量路由(md 说明: 路由策略方式不能只选 WLR_SP/WLR_UD,必须 WLR 发布所有)。TOPOID=0 base 拓扑(3特性固定)。ROUPOLINAME 条件必选(020401 路由策略方式发布用 policy1,引用 LST ROUTEPOLICY 查询;010155/020406 不配走全量发布)。与 IPv4 ADD OSPFIMPORTROUTE(0-00077) 平行(由 DP 0-00017 ip-version 选择)。命令级审查(2026-07-02): 补漏绑 TOPOID(3特性脚本均显式=0,与 IPv4 0-00077 同步) + 补 ROUPOLINAME(020401 数据规划表显式 policy1);缺口11→9(IMPTCOSTCFG/IMPTTAGCFG/IMPTTYPECFG=FALSE=默认空操作,010155 脚本显式传等同默认,按通用配置筛不绑;COST/TAG/TYPE/PROTOCOLPROCID/PERMITIBGPCFG/INHERITCOSTCFG 为引入路由属性进阶,3特性均未用,不绑)。投影 rule 0-00202(前置 ADD OSPFV3/记录8000/WLR 全量发布约束)。"

@@ -1,0 +1,28 @@
+rule_id: UDG@20.15.2@TaskRule@0-00295
+owner_task_ref: UDG@20.15.2@Task@0-00023
+rule_name: 0-00023 最大记录数 1000 + 立即生效 + 字段默认名 + 加密配套必填
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00023
+  expression: |
+    ADD REDIRAPPENDINFO(atom 0-00023) 配置约束：
+    (1) 上限：系统最大记录数为 1000(命令 notes 强约束)。
+    (2) 立即生效：该命令执行后立即生效(命令 notes 强约束)——不需 REFRESHSRV 等额外激活步骤。
+    (3) 字段默认名：REQURL/MSISDN/IMSI/IMEI/MSIP/TIME 字段若不配 NAME 则采用默认(dest_url/msisdn/imsi/imei/msip/u)；REQURLNAME/MSISDNNAME/IMSINAME/IMEINAME/MSIPNAME/TIMENAME 缺口按定制名场景补充(主场景取默认值)。
+    (4) 加密配套(conditional + 一一对应)：MSISDNENCRYALGORI/IMSIIENCRYALGORI/IMEIENCRYALGORI/MSIPENCRYALGORI/TIMEENCRYALGORI 选配时必填对应 MSISDNSECRETKEY/IMSISECRETKEY/IMEISECRETKEY/MSIPSECRETKEY/TIMESECRETKEY；SECRETKEYCONFIRM 必填用于二次确认(命令真相 conditional)——主场景 020356 IMSIENCRYALGORI=AES256 必填 IMSISECRETKEY+IMSISECRETKEYCONFIRM，但 mml_commands 中 020356 任务示例仅传 IMSIENCRYALGORI 未传 SECRETKEY，列入 §4.3 ③ 缺参数清单待核(可能默认密钥或运维简化)。
+    (5) 该命令被 SET GYONESHOT(0-00024) 引用 APPENDINFONAME(reference)——APPENDINFONAME 须先配置方可被引用。
+    (6) 跨特性差异(已升 DP 0-00110)：020356 计费信息实时提醒 vs 110284 HTTP智能重定向 在 FLAG 集合（REQURLFLAG/MSISDNFLAG/IMSIFLAG/IMEIFLAG/MSIPFLAG/TIMEFLAG 启用项）+ IMSIENCRYALGORI 配套上分叉——DP 编排字段组合。
+    (7) CFGDOMAINNAME 缺口按配置域场景补充(命令真相 optional)，主场景不配。
+violation_effect: 上限超限→ADD 失败；ENCRYALGORI 选配但 SECRETKEY 漏填→ADD 拒收；SECRETKEYCONFIRM 漏填→二次确认失败；APPENDINFONAME 未先配→SET GYONESHOT 引用失败
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids:
+  - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - GWFD-110284/激活HTTP智能重定向_67075035.md
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。IMSISECRETKEY 缺口对应 020356 任务示例未传但 ENCRYALGORI 已传——按 §4.3 ③ 缺口标注(可能默认密钥)；CFGDOMAINNAME/REQURLNAME 等 NAME 缺口按默认名场景满足。ENCRYALGORI 五元组(SECRETKEY/SECRETKEYCONFIRM 配套)按加密算法配套规则投影。"

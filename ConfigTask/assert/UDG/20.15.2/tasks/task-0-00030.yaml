@@ -1,0 +1,23 @@
+task_id: UDG@20.15.2@Task@0-00030
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定PCC策略组业务属性
+task_layer: atom
+task_intent: 绑定PCC策略组与业务属性及动作属性(ADD SRVPBINDPCCPG)，组合非默认策略集合
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SRVPBINDPCCPG
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取
+source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00030:PCCPOLICYGRPNM, parameter_ref: UDG@20.15.2@CommandParameter@ADD SRVPBINDPCCPG:PCCPOLICYGRPNM, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00003:PCCPOLICYGRPNM, requiredness: required, source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00030:SRVPROPNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD SRVPBINDPCCPG:SRVPROPNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00029:SRVPROPNAME, requiredness: required, source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00030:PCCACTPROPNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD SRVPBINDPCCPG:PCCACTPROPNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00028:PCCACTPROPNAME, requiredness: conditional, source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00030:URRGROUPNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD SRVPBINDPCCPG:URRGROUPNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME, requiredness: conditional, source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]}
+notes: |
+  GWFD-020352 IPv6 SA 专属(策略组合绑定)。3 个 reference binding 分别引用 PCC策略组(0-00003)/业务属性(0-00029)/动作属性(0-00028)。
+  PCCPOLICYGRPNM/SRVPROPNAME 必选，PCCACTPROPNAME/URRGROUPNAME 可选(命令 parameter_description=本端规划,但值=已配置对象引用→ reference)。
+  URRGROUPNAME 仅当需要计费时配置(md 注释: "当需要计费时，ADD PCCPOLICYGRP 命令请配置参数 URRGROUPNAME")→ conditional。
+  冷门参数不绑(EXTENDPROPNAME: 扩展属性 1~63,UDG IPv6 SA 场景未配;FUPSESSIONEXC: Session级FUP累计标识,UDG IPv6 SA 场景未配)。
+  max_records=100000(命令 notes);每个 PCC 策略组最多配置 10 个基于业务属性的非默认组合;所有参数都是 optional,若一个都不选则配一个空的 PCC 策略组业务属性绑定组合。
+  跨策略组合匹配顺序: 若每个 PCC 策略组配多种非默认组合,匹配优先级由各组合决定(命令 notes 补充)。
+  前置依赖: 须先建 PCC策略组(0-00003)/业务属性(0-00029);PCCACTPROPNAME 引用 0-00028;URRGROUPNAME 引用 0-00002。

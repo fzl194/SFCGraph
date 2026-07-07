@@ -1,0 +1,48 @@
+task_id: UDG@20.15.2@Task@0-00042
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置地址池组
+task_layer: atom
+task_intent: 增加地址池组（POOLGRPNAME），作为地址池与APN映射的中间聚合对象；可选使能IPv4/IPv6地址池优先级分配算法
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD POOLGROUP
+status: inferred   # 命令级审查(2026-07-02)：补 IPV4ALLOCPRIALG/IPV6ALLOCPRIALG + cardinality rule 0-00140
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - GWFD-020482/激活入不转板功能_28210142.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00042:POOLGRPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLGROUP:POOLGRPNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # IPV4ALLOCPRIALG：可选，默认 DISABLE。010107/020403/020482 使能地址池优先级分配时置 ENABLE（用到→绑）
+  - binding_id: UDG@20.15.2@Task@0-00042:IPV4ALLOCPRIALG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLGROUP:IPV4ALLOCPRIALG
+    binding_type: variable
+    variable_source: local_planned   # 命令真相: local_planned；数据规划表: 本端规划(ENABLE)
+    requiredness: optional   # 命令真相 optional，默认 DISABLE
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+      - GWFD-020482/激活入不转板功能_28210142.md
+  # IPV6ALLOCPRIALG：可选，默认 DISABLE。020403/020482 双栈/优先级场景使能时置 ENABLE（用到→绑）
+  - binding_id: UDG@20.15.2@Task@0-00042:IPV6ALLOCPRIALG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLGROUP:IPV6ALLOCPRIALG
+    binding_type: variable
+    variable_source: local_planned   # 命令真相: local_planned；数据规划表: 本端规划(ENABLE)
+    requiredness: optional   # 命令真相 optional，默认 DISABLE
+    source_evidence_ids:
+      - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+      - GWFD-020482/激活入不转板功能_28210142.md
+rules: [UDG@20.15.2@TaskRule@0-00140]
+notes: |
+  GWFD-010104。POOLGRPNAME 为后续 ADD POOLBINDGROUP(0-00045)/ADD POOLGRPMAP(0-00047) 的引用源。
+  命令级审查(2026-07-02)：
+  - 补 IPV4ALLOCPRIALG/IPV6ALLOCPRIALG（命令真相 optional 默认 DISABLE；010107/020403/020482 数据规划表用到 ENABLE）。
+  - 补 cardinality_rule 0-00140（投影命令 notes：最大记录数 40000；执行后只对新激活用户生效）。
+  - source_evidence_ids 扩展至全部 5 个使用该命令的特性。

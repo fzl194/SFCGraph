@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00252
+owner_task_ref: UDG@20.15.2@Task@0-00035   # 挂 atom ADD APNBINDBWMUSRG
+rule_name: ADD APNBINDBWMUSRG 最大记录数 + 用户组成员配额 + 90%阈值告警
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD APNBINDBWMUSRG
+  expression: |
+    ADD APNBINDBWMUSRG 命令最大记录数为 31984。
+    当配置记录数大于规格的 90% 时，会上报 "ALM-135602215 配置数量超阈值" 告警；
+    当配置记录数小于等于规格 90% 时，恢复告警；阈值可通过 MOD CFGTHRESHOLD 修改。
+    强约束：一个用户组下包含的 APN、UserProfile 和切片的数量总和最大值为 16（per-user-group 配额，包含 APN 绑定 + 其他成员类型）。
+    APN 必须已通过 ADD APN(0-00020) 配置；USERGROUPNAME 必须已通过 ADD BWMUSERGROUP(0-00033) 配置。
+violation_effect: 超规格（>31984）新增失败；用户组 APN+UP+切片总和超 16 失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00250~0-00259）。投影自命令 notes '最大记录数为31984' + '90%阈值告警 ALM-135602215' + '一个用户组下包含的APN、UserProfile和切片的数量总和最大值为16'。前置 ADD APN/ADD BWMUSERGROUP 顺序约束已由 binding 级 source_ref 隐式表达，本 rule 显式记录用户组配额规格。"

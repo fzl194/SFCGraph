@@ -1,0 +1,51 @@
+task_id: UNC@20.15.2@Task@0-00027
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置DIAMCONNGRP
+task_layer: atom
+task_intent: 建立 Diameter 链路组——指定本端主机名与对端服务器（PCRF/OCS/DRA/AAA）之间的一组 Diameter 链路及链路选择模式
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD DIAMCONNGRP
+status: inferred
+source_evidence_ids:
+  - 增加Diameter链路组（ADD DIAMCONNGRP）_09897261.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00027:CONNGROUPNAME
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMCONNGRP:CONNGROUPNAME
+    binding_type: variable              # 本端规划；链路组命名
+    variable_source: local_planned
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/配置与PCRF对接数据_30805096.md, WSFD-104508/配置Gx over SCTP功能_30442391.md]
+  - binding_id: UNC@20.15.2@Task@0-00027:LOCALHOSTNAME
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMCONNGRP:LOCALHOSTNAME
+    binding_type: reference             # 全网规划；本端主机名必须已在 ADD DIAMLOCINFO 配置（Local Info）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD DIAMLOCINFO:LOCALHOSTNAME
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/配置与PCRF对接数据_30805096.md, WSFD-104508/配置Gx over SCTP功能_30442391.md]
+  - binding_id: UNC@20.15.2@Task@0-00027:APPLICATION
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMCONNGRP:APPLICATION
+    binding_type: variable              # 全网/本端规划；GX/GY/S6B，决定对端服务器类型与应用一致性
+    variable_source: global_planned
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/配置与PCRF对接数据_30805096.md, WSFD-011134/激活S6b over DRA（静态路由+BFD组网）_75821602.md]
+  - binding_id: UNC@20.15.2@Task@0-00027:PEERHOSTNAME
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMCONNGRP:PEERHOSTNAME
+    binding_type: reference             # 全网/本端规划；对端主机名必须已由对应 APPLICATION 类型服务器命令配置
+    variable_source: reference          # GX→ADD PCRF / GY→ADD OCS / S6b→ADD DIAMETERAAA / over DRA→ADD DRA
+    source_ref: UNC@20.15.2@CommandParameter@ADD PCRF:HOSTNAME   # 占位：按 APPLICATION 取 PCRF/OCS/DRA/AAA 之一
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/配置与PCRF对接数据_30805096.md, WSFD-109001/配置到OCS的数据(静态路由+BFD组网)_95923542.md]
+  - binding_id: UNC@20.15.2@Task@0-00027:SELECTMODE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMCONNGRP:SELECTMODE
+    binding_type: variable              # optional；默认 SESSION_ID；主备MASTER_SLAVE / 负荷分担SESSION_ID|ROUND_ROBIN
+    variable_source: global_planned
+    requiredness: optional
+    source_evidence_ids: [WSFD-109101/配置与PCRF对接数据_30805096.md, WSFD-011133/激活Gy over DRA（静态路由+BFD组网）_29725460.md]
+notes: |
+  UNC atom batch3（2026-07-06），手写自证据包 ADD_DIAMCONNGRP.md（8 特性用，5 参）—— Diameter 族"链路组"容器命令。
+  依赖：先 ADD DIAMLOCINFO(本端) + ADD PCRF/OCS/DRA/AAA(对端) + ADD DIAMPEERADDR，再本命令建组，最后 ADD DIAMCONNECTION 建链路。
+  LOCALHOSTNAME=reference(ADD DIAMLOCINFO)；PEERHOSTNAME=reference(按 APPLICATION 取 ADD PCRF/ADD OCS/ADD DRA/ADD DIAMETERAAA)。
+  APPLICATION 枚举 GX/GY/S6B，须与对端主机应用类型一致。
+  SELECTMODE：MASTER_SLAVE=主备，SESSION_ID=按用户粒度负荷分担，ROUND_ROBIN=按消息粒度负荷分担；默认 SESSION_ID。
+  notes 投影：最多 1000 条；PEERHOSTNAME≠LOCALHOSTNAME；本端主机多时每组对接一个对端 → rule 0-00029。§6.B 见全局 rule 0-00001。

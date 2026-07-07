@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00342
+owner_task_ref: UDG@20.15.2@Task@0-00218   # SET PFCPLOADRPT (atom-挂 rule)
+rule_name: SET PFCPLOADRPT 最大记录数1+立即生效+STOPTHD<RPTTHD阈值约束+系统初始DISABLE
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00218:LOADRPTSW
+    - UDG@20.15.2@Task@0-00218:RPTTHD
+    - UDG@20.15.2@Task@0-00218:STOPTHD
+  expression: "最大记录数为1(全局唯一); 该命令执行后立即生效；阈值约束: 停止上报阈值STOPTHD必须小于上报阈值RPTTHD(典型50/45)，变化范围阈值RANGETHD独立(典型5); 系统初始记录LOADRPTSW=DISABLE/RPTTHD=50/STOPTHD=45/RANGETHD=5；LOADRPTSW=ENABLE时使能PFCP负荷上报，UDG经PFCP向控制面(SGW-C/PGW-C/SMF)上报网元负荷供其选择用户面网元。"
+violation_effect: STOPTHD≥RPTTHD导致上报/恢复机制失效；LOADRPTSW未启用导致控制面无法获知网元负荷
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1+立即生效+阈值约束+系统初始)
+source_evidence_ids: [GWFD-020154/激活用户面负载信息上报_88713326.md]

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00405
+owner_task_ref: UDG@20.15.2@Task@0-00222   # 挂 atom SET APNFLOWMAXNUM
+rule_name: SET APNFLOWMAXNUM 记录数规格与 APN 前置
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET APNFLOWMAXNUM
+  expression: "SET APNFLOWMAXNUM 系统最多支持配置 10000 条；超过规格新增失败。对应的 APN(使用 ADD APN 配置)必须存在才能配置成功。每个 APN 初始的 APN 最大五元组节点数为 65535。命令针对单个用户控制，修改 FDMAXNUM 后对新接入的用户或更新用户生效(立即生效于新会话)。"
+violation_effect: 超规格新增失败；APN 不存在则配置失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110910/激活支持Routing Behind MS_74264904.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes '系统最多支持配置10000条'+'对应APN必须存在'+'每APN初始65535'+'对新接入用户生效'。APN 前置依赖由 APN binding(source_ref=0-00020:APN) reference 隐式表达，本 rule 显式记录 cardinality + 前置 + 初始值 + 生效范围。FDMAXNUM 取值 1~10000。"

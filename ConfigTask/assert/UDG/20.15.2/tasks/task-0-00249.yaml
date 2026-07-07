@@ -1,0 +1,32 @@
+task_id: UDG@20.15.2@Task@0-00249
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置用户面接口模式(入不转板总开关)
+task_layer: atom
+task_intent: >-
+  开启入不转板总开关(SET DATAPLANEINFMODE): MODE=Instance 固定, ROUTEENHANCEDSW 控制路由增强功能
+  (VNF+DC-GW 配合减少 DC-GW 对承载网发布的用户下行路由条数)。注意区分 SET DATAPLANEGIINFMODE(仅下行, 误用会导致上行入转板)。
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET DATAPLANEINFMODE
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00249:MODE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET DATAPLANEINFMODE:MODE
+    binding_type: fixed
+    value: Instance   # 数据规划表: 固定取值；开启入不转板必须用样例值
+    requiredness: required
+    source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+  - binding_id: UDG@20.15.2@Task@0-00249:ROUTEENHANCEDSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET DATAPLANEINFMODE:ROUTEENHANCEDSW
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（ENABLE 启用路由增强；DISABLE↔ENABLE 切换前需将用户下线）
+    requiredness: required
+    source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+notes: |
+  GWFD-020482。SET DATAPLANEINFMODE 为入不转板"总开关"(上下行均不转板)。
+  md 注意事项: 易与 SET DATAPLANEGIINFMODE 混淆——后者仅下行业务入不转板, 上行仍入转板, 不可误用。
+  ROUTEENHANCEDSW 变更(DISABLE→ENABLE 或反向)前需将用户下线; 路由增强生效条件: ROUTEENHANCEDSW=ENABLE 且
+  ADD AUTOSCALINGBGPLF 的 UDAD VCOM(发布的团体属性)不为 0(后者属于 BGP 自动化配置, 不在本特性命令域)。
+  命令不在 mml_commands.jsonl(§6.A 缺命令), ref/parameter_ref 预写预期 ID, 参数细节从特性 md 数据规划表+命令手册抽, 待 CommandGraph 抽取回填。
+  命令级审查(2026-07-02)：2/2 参数绑定完整；新增 atom rule 0-00386(safety: 高危 + 删除所有用户前置 + POD Type 检查 + 切片约束 + CPT SWITCH=DISABLE 前置 + 立即生效 + 命令 vs DATAPLANEGIINFMODE 防误用)。校正项：MODE=Instance 固定(特性 md 数据规划表强约束：开启入不转板必须用样例值 Instance)；ROUTEENHANCEDSW requiredness 保持 required(命令真相 conditional 但本特性必填仍给 required)。命令最大记录数 1 由 CommandParameter 校验承担。

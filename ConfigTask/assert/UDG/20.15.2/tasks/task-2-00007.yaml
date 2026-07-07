@@ -1,0 +1,17 @@
+task_id: UDG@20.15.2@Task@2-00007
+nf: UDG
+version: "20.15.2"
+task_logical_name: 7层流量统计
+task_layer: feature
+task_intent: 配置APN仅统计7层应用层流量（APPLAYERVOLUME=ENABLE），不统计L3/L4承载层流量
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020308
+status: inferred
+source_evidence_ids: [GWFD-020308/GWFD-020308 7层流量统计特性概述_59642319.md, GWFD-020308/激活7层流量统计_13442390.md, GWFD-020308/GWFD-020308 7层流量统计参考信息_13282496.md]
+task_relations:
+  # P1：移除伪边 2-00001→2-00007 depends_on（部署前置、非配置依赖，信息已在 note）
+  # P2(2026-07-03)：确认 SINGLE 形态 — 仅 1 atom(0-00020 ADD APN)，procedure §1/spec §8.2 降级
+  #   feature→atom 直挂，不建 compound。relation 0-00038 即该直挂边(contains atom 0-00020)。
+  #   feature→atom 直挂，无中间 compound；部署前置(2-00001 backbone)记于本 note 非 graph 边。
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00038, from_task_ref: UDG@20.15.2@Task@2-00007, to_task_ref: UDG@20.15.2@Task@0-00020, relation_type: contains, requiredness: required, source_evidence_ids: [GWFD-020308/激活7层流量统计_13442390.md, GWFD-020308/GWFD-020308 7层流量统计特性概述_59642319.md]}
+notes: GWFD-020308。前置=已完成部署UPF(内容计费 2-00001)+SA-Basic(概述§与其他特性交互)。核心步骤 ADD APN(APPLAYERVOLUME=ENABLE)(0-00020)。APPLAYERVOLUME 影响计费流量统计口径，修改需谨慎(概述§原理/激活md§操作步骤说明)。无独立 license 步骤(概述§可获得性明示"无需License")。P1 步骤层：单命令特性→feature contains atom(0-00020) 直挂，无中间 compound。P2(2026-07-03)复核：形态=SINGLE(仅 1 atom)，按 procedure §1/spec §8.2 降级直挂，canonical-compounds.md 无含 ADD APN 的同义 compound 可复用(1-00012 ADD APN+5地址池命令相位=地址分配，非本特性相位，Jaccard 1/7<0.4 且不同义)。变体：APPLAYERVOLUME ENABLE/DISABLE 是 atom 0-00020 参数级选择(已绑 local_planned/conditional，atom 层冻结)，不改命令集出现/缺失→不挂 feature DP→退化为单变体(spec §4.2)；DISABLE=本特性未开启(backbone 默认口径)，非 feature 内部分叉。覆盖校验：结构命令集 {ADD APN} == md_required {ADD APN}，1 变体全过(EXIT 0)。

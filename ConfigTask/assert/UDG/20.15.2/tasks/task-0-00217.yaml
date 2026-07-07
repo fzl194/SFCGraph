@@ -1,0 +1,40 @@
+task_id: UDG@20.15.2@Task@0-00217
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置IKE全局配置(DPD/NAT保活)
+task_layer: atom
+task_intent: 设置IKE全局配置(DPD检测类型/检查间隔/重试间隔、NAT保活时间间隔)。可选步骤，开启DPD检测对端存活或NAT保活
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IKEGLOBALCONFIG
+status: inferred  # 命令级审查(2026-07-02): 17 冷门缺口(DFBITCLEAR/FRAGBEFOREENCR/TRAFFSA/抗重放/本地名/历史信息/CPU告警/流控阈值等)按通用配置门槛不绑; 4/21 已绑
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00217:DPDTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IKEGLOBALCONFIG:DPDTYPE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(Periodic等)
+    requiredness: optional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00217:DPDINTERVAL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IKEGLOBALCONFIG:DPDINTERVAL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(秒)
+    requiredness: optional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00217:DPDRETRYINTRVL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IKEGLOBALCONFIG:DPDRETRYINTRVL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(秒)
+    requiredness: optional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00217:NATKLI
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IKEGLOBALCONFIG:NATKLI
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(NAT保活秒数)；IKEPEER NATTRAVERSAL=TRUE 时生效
+    requiredness: conditional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+notes: "IKE全局配置(可选)。DPD 检测对端是否存活，NATKLI 在 NAT穿越场景生效。CommandParameter 待抽取。命令级审查(2026-07-02): 17 冷门缺口(DFBITCLEAR/FRAGBEFOREENCR/TRAFFSADISFLG/TRAFFICSADURTN/TIMESADURTN/ANTIREPLFLG/WINDOWSIZE/LOCALNAME/NUMBER/DOSTHRESHOLD/CPUREPORTTHRES/CPUCLEARTHRES/UIKECHECKTIME/FLOWCTRLSTHRES/FLOWCTRLRTHRES)命令真相均 optional 且 4 IPSec 场景数据规划表均未用, 按通用配置门槛不绑; 4/21 已绑(DPDTYPE+DPDINTERVAL+DPDRETRYINTRVL+NATKLI); DPDTYPE 3 参数对应命令真相 optional 默认不变, 本特性场景 Periodic 模式使能; NATKLI 命令真相 conditional 仅 NATTRAVERSAL=TRUE 时生效, 数据规划表显式=30 配 NAT 穿越场景。"

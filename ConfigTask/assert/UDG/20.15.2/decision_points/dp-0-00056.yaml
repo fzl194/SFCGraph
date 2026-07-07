@@ -1,0 +1,35 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00056
+owner_task_ref: UDG@20.15.2@Task@0-00005   # 挂 atom（ADD FILTERIPV6 IPv6）
+decision_name: IPv6过滤条件匹配模式
+decision_question: |
+  ADD FILTERIPV6 的过滤条件采用何种匹配模式？决定是否配置服务器IPv6/端口等参数及其来源。
+  - any通配模式：仅 FILTERNAME+L34PROTTYPEV6+L34PROTOCOL，不配IP/端口。
+  - 服务器IPv6模式(IMS语音)：配 SVRIPMODE/SVRIPV6/SVRIPV6MASKTYPE/SVRIPV6MASKLEN，来源=与对端协商(peer)。
+  - 端口来源随场景分叉：IMS场景=与对端协商，any场景=本端规划。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020301/部署UPF_28493406.md
+  - GWFD-020352/激活IPv6 SA_80136513.md
+  - GWFD-112000/激活双故障Bypass_14147877.md
+options:
+  - option_id: opt-filteripv6-any
+    option_name: any通配过滤
+    option_value: ANY
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00005:MSSTARTPORT, effect_type: excludes, effect_detail: 不配端口（默认0/65535），L34PROTOCOL=ANY。any-to-any 基础业务场景}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00005:SVRIPMODE, effect_type: excludes, effect_detail: 不配服务器IPv6}
+  - option_id: opt-filteripv6-svrip-peer
+    option_name: 服务器IPv6过滤(IMS/与对端协商)
+    option_value: SVRIPV6_PEER
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00005:SVRIPMODE, effect_type: sets_value_pattern, effect_detail: SVRIPMODE=IP，SVRIPV6/SVRIPV6MASKTYPE/SVRIPV6MASKLEN 来源=与对端协商（IMS语音业务服务器IPv6、Bypass SBC-U媒体面IPv6）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00005:MSSTARTPORT, effect_type: sets_value_pattern, effect_detail: IMS场景端口来源=与对端协商(peer)；any场景=本端规划——端口来源由本选项场景决定}
+default_option: opt-filteripv6-any
+notes: |
+  命令级审查(2026-07-02)新增。管理 IPv6 过滤条件的匹配模式与端口/服务器IPv6来源分叉。
+  端口4参数(MSSTARTPORT/MSENDPORT/SVRSTARTPORT/SVRENDPORT) 的 variable_source=decision_driven 引用本 DP。
+  服务器IPv6组(SVRIPMODE/SVRIPV6/SVRIPV6MASKTYPE/SVRIPV6MASKLEN) 在 8 特性中始终 peer_planned（IMS/Bypass），保持 peer_planned 不变，本 DP 仅说明场景。
+  注：L34PROTTYPEV6 固定 STRING 时 L34PROTOCOL 实际必选（NUM 模式才用 L34PROTNUM 二选一），8特性均用 STRING+L34PROTOCOL。

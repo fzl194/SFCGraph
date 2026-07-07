@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00130
+owner_task_ref: UDG@20.15.2@Task@0-00003   # 挂 atom ADD PCCPOLICYGRP
+rule_name: PCCPOLICYGRP 配置规格与唯一性
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00003
+  expression: |
+    单板 PCCPOLICYGRP 最大记录数 40000。配置记录数 > 规格 90% 时上报 ALM-135602215 告警，≤90% 恢复；阈值可由 MOD CFGTHRESHOLD 修改。
+    唯一性：PCCPOLICYGRPNM 多条数据时不能相同(跨 PCC 策略组间不重复)。
+    生效：命令执行后立即生效。
+    组合：PccPolicyGrp 可包含 ServiceProp / URRGroup / PccActionP。
+violation_effect: 超规格新增失败；名称重复导致策略冲突
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务控制策略/PCC控制策略/PCC策略组/增加PCC策略组（ADD PCCPOLICYGRP）_82837606.md]
+notes: 命令级审查(2026-07-02) 投影自命令②notes(规格40000/唯一性/立即生效/组合项)。

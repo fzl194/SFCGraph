@@ -1,0 +1,60 @@
+decision_id: UDG@20.15.2@DecisionPoint@00003
+owner_ref: UDG@20.15.2@Task@00102
+decision_name: 过滤模式选择
+decision_question: 按什么方式识别业务（决定过滤链命令组合）？
+trigger_condition: 配置过滤链时
+options:
+  - option_name: URL场景
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00004
+        effect_type: adds
+        effect_detail: "配ADD FILTER三四层(DNS)"
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00006
+        effect_type: adds
+        effect_detail: "配ADD L7FILTER(URLTYPE=URL)"
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00009
+        effect_type: adds
+        effect_detail: "配ADD PROTBINDFLOWF七层绑定"
+  - option_name: IMS场景
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00005
+        effect_type: adds
+        effect_detail: "配ADD FILTERIPV6(IPv6三四层+服务器IP)"
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00006
+        effect_type: excludes
+        effect_detail: "无七层过滤"
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00009
+        effect_type: excludes
+        effect_detail: "无七层绑定"
+  - option_name: any场景
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00004
+        effect_type: adds
+        effect_detail: "配ADD FILTER(IPv4 any)"
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00005
+        effect_type: adds
+        effect_detail: "配ADD FILTERIPV6(IPv6 any)"
+      - target_type: parameter
+        target_ref: UDG@20.15.2@CommandParameter@ADD RULE:PRIORITY
+        effect_type: sets_value_pattern
+        effect_detail: "=65000最低"
+  - option_name: 异常场景
+    impacts:
+      - target_type: parameter
+        target_ref: UDG@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE
+        effect_type: sets_value_pattern
+        effect_detail: "=FREE免费标记"
+      - target_type: parameter
+        target_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTSIGURRGNAME
+        effect_type: adds
+        effect_detail: "配信令缺省URR组"
+status: active
+source_evidence_ids: []

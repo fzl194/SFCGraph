@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00281
+owner_task_ref: UDG@20.15.2@Task@0-00040
+rule_name: 0-00040 最大记录数 100 + PROTOCOLLEVEL 互斥二选一
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00040
+  expression: |
+    ADD SADEDICBEARER(atom 0-00040) 配置约束：
+    (1) 上限：系统最大记录数为 100(命令 notes 强约束)——(PROTOCOLLEVEL, PROTOCOLNAME/PROTGROUPNAME) 对的上限总数。
+    (2) PROTOCOLLEVEL 互斥二选一(DP 0-00102 协作)：PROTOCOLLEVEL=PROTOCOL 时 PROTOCOLNAME 必选、PROTGROUPNAME 不配；PROTOCOLLEVEL=PROTOCOLGROUP 时 PROTGROUPNAME 必选、PROTOCOLNAME 不配——本 atom 现行 binding requiredness=conditional 已正确投影二选一语义。
+    (3) TRIGGERMODE 默认 NOT_TRIGGER；FLOWNODE_BASED/DOWNLINK_ONLY 需特性启用(SA-Basic 场景)。
+    (4) 该命令执行后立即生效(命令 notes)。
+violation_effect: 上限超限→ADD 失败；PROTOCOLLEVEL/PROTOCOLNAME/PROTGROUPNAME 错配→命令拒收；TRIGGERMODE 误为非 NOT_TRIGGER→触发无效
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。PROTOCOLLEVEL 二选一编排交由 DP 0-00102 决策。"

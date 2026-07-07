@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00345
+owner_task_ref: UDG@20.15.2@Task@0-00172
+rule_name: 0-00172 SET GLBDLBUFTIME max_records=1 + 立即生效 + 不配APN场景生效 + 缓存时长过大告警
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00172
+  expression: |
+    SET GLBDLBUFTIME(atom 0-00172) 配置约束：
+    (1) 上限：单命令最大记录数为 1(命令 notes 强约束——整机级全局参数)；超限→SET 失败。
+    (2) 立即生效：该命令执行后立即生效(命令 notes)。
+    (3) 场景生效：仅在不配置APN场景下生效(命令 notes)；若 APN 级配置(atom 0-00174 SET APNDLBUFTIME), 优先级 APN>全局。
+    (4) 缓存时长过大性能下降告警：下行数据报文缓存时长设置过大可能导致性能下降(命令 notes 强约束)——配置工程师须按无线侧能力合理取值。
+    (5) 系统初始记录：NORMALUSER/NBIoTUser/REDCAPNRUSER 初始均=6s(命令 notes)；本 atom 仅绑 NBIOTUSER(NB-IoT 路径, 其他时长由 atom 0-00174 APN 级覆盖)。
+    (6) DDN ACK 协同：若 MME 通过 DDN ACK 下发缓存时长, 取 MME 下发值, 否则取本参数(命令 notes 隐式语义)。
+violation_effect: 上限超限→SET 失败；不配APN场景外执行→配置不生效；缓存时长过大→性能下降；未与 DDN ACK 协同→取错缓存时长
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-110601/激活NB-IoT eDRX模式_67487577.md, GWFD-110641/激活eMTC eDRX模式_70722748.md, GWFD-110661/激活5G eDRX模式_58609938.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。投影命令 notes 5 大约束(max_records/立即生效/场景生效/性能告警/系统初始)。与 atom 0-00174 APN 级时长配置优先级联动：APN>全局。"

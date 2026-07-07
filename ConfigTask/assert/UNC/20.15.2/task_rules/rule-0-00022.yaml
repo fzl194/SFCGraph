@@ -1,0 +1,18 @@
+rule_id: UNC@20.15.2@TaskRule@0-00022
+owner_task_ref: UNC@20.15.2@Task@0-00020
+rule_name: ADD CHGIMSICFG 最多 2048 条 + 前置 PLMNCTRL=IMSI
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CHGIMSICFG]
+  expression: >-
+    记录数 ≤ 2048；本命令仅在 SET CHGCDR.PLMNCTRL=IMSI 时生效（=LOCINFO 时走 ADD CHGPLMNCFG）。
+    SET CHGPLMNCHAR 禁止生成某话单时，无论本命令配什么都不生成。只对之后激活用户有效。
+violation_effect: 超规格无法新增；PLMNCTRL 不是 IMSI 时不生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加IMSI计费配置(ADD CHGIMSICFG)_26145384.md]

@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00353
+owner_task_ref: UDG@20.15.2@Task@0-00149
+rule_name: 0-00149 SET APNHTTP2DGRD cardinality 10000 + 立即生效 + 仅APN生效 + INHERIT继承全局 + 前置ADD APN
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00149
+    - UDG@20.15.2@Task@0-00148
+  expression: |
+    SET APNHTTP2DGRD(atom 0-00149) 配置约束：
+    (1) 上限：单命令最大记录数为 10000(命令 notes 强约束——整机最多 10000 条)；超限→SET 失败。
+    (2) 立即生效：该命令执行后立即生效(命令 notes)。
+    (3) 仅 APN 生效：此命令的生效范围限于 APN(命令 notes)；与 atom 0-00150 MOD PCCPOLICYGRP HTTP2DEGRADESW(rule 级) 优先级 rule>APN；与 atom 0-00148 SET SRVCOMMONPARA HTTP2DEGRADESW(全局级) 优先级 APN>全局。
+    (4) INHERIT 继承：HTTP2DEGRADESW=INHERIT 时继承 SET SRVCOMMONPARA 命令的 HTTP2DEGRADESW 开关(命令 notes 强约束)——APN 级未显式配置时按全局生效；DP 0-00142 编排 3-way(ENABLE/DISABLE/INHERIT)。
+    (5) 前置依赖：APN 必须先通过 ADD APN(atom 0-00020) 配置, 否则 SET 命令 APN 引用失败。
+    (6) 三层联动保护：rule 级(0-00150 DP 0-00143) + APN 级(0-00149 DP 0-00142) + 全局级(0-00148 SRVCOMMONPARA) 三层均 INHERIT 时无生效源——配置生成器应在 3-way DP default_option 编排上避免三 INHERIT 同时出现。
+violation_effect: 上限超限→SET 失败；未先建APN→APN引用失败；INHERIT 全链路 INHERIT→无生效源；3 层联动错配→回落到默认行为而非期望值
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-110202/激活HTTP2.0协议回落_65157762.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。投影命令 notes 4 大约束(cardinality 10000/立即生效/仅APN生效/INHERIT 继承)+ 隐式前置(ADD APN)+ DP 0-00142 编排联动 + 跨层 rule/APN/全局 三层联动保护(与 0-00150/0-00148 同步审)。"

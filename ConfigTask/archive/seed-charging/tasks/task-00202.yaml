@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@00202
+task_logical_name: 在线计费
+task_layer: feature
+nf: UDG
+version: 20.15.2
+task_summary: "在线计费：基础流程+在线专属可选命令"
+feature_ref: UDG@20.15.2@Feature@GWFD-020300
+task_relations:
+  - from_task_ref: UDG@20.15.2@Task@00101
+    to_task_ref: UDG@20.15.2@Task@00102
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00102
+    to_task_ref: UDG@20.15.2@Task@00103
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00103
+    to_task_ref: UDG@20.15.2@Task@00104
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00104
+    to_task_ref: UDG@20.15.2@Task@00017
+    relation_type: precedes
+    requiredness: optional
+  - from_task_ref: UDG@20.15.2@Task@00104
+    to_task_ref: UDG@20.15.2@Task@00018
+    relation_type: precedes
+    requiredness: optional
+  - from_task_ref: UDG@20.15.2@Task@00104
+    to_task_ref: UDG@20.15.2@Task@00016
+    relation_type: precedes
+    requiredness: optional
+status: active
+source_evidence_ids: []

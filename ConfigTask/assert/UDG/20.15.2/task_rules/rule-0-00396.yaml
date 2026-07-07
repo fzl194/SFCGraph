@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00396
+owner_task_ref: UDG@20.15.2@Task@0-00280   # 挂 atom SET NETYPE
+rule_name: SET NETYPE 规格 1 + 立即生效 + 初始值 NULL + ProxySGWU/ProxyUPF 仅限独立关口局
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: safety_constraint
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET NETYPE
+  expression: |
+    SET NETYPE 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    网元形态初始值由系统生成，该命令参数初始值为 NULL（命令 notes 明示）。
+    SET NETYPE 的 ProxySGWU 仅限于设备作为独立关口局设备，承接国际漫游语音业务的 ProxySGW 形态时配置；其他场景不能配置为 ProxySGWU（命令 notes 强约束 1）。
+    SET NETYPE 的 PorxyUPF 仅限于设备作为独立关口局设备，承接国际漫游语音业务的 PorxyUPF 形态时配置（命令 notes 强约束 2）。
+    该命令执行后立即生效（命令 notes）。
+    NETYPEENUM 位域类型按部署形态组合（SGWU/PGWU/UPF/GGSNU/ProxySGWU/ProxyUPF 等；CommandParameter 校验承担）。跨场景取值由 atom-挂 DP 0-00151（合一ProxyUPF/独立SGWU/独立PGW-U/独立UPF）驱动。
+violation_effect: 误配 ProxySGWU/ProxyUPF 在非独立关口局场景→国际漫游语音业务形态错误
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-112001/初始配置_80688502.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 立即生效 + 初始值 NULL + ProxySGWU/ProxyUPF 仅限独立关口局。NETYPEENUM 跨场景取值由新增 atom-挂 DP 0-00151（合一ProxyUPF(本特性合一形态)/独立SGWU Proxy漫游国际语音场景/独立PGW-U/独立UPF）驱动。"

@@ -1,0 +1,22 @@
+task_id: UDG@20.15.2@Task@0-00145
+nf: UDG
+version: "20.15.2"
+task_logical_name: 修改L3VPN实例地址族(路由交叉)
+task_layer: atom
+task_intent: 修改 L3VPN 实例地址族（MOD VPNINSTAF），为 VRF_networkA/VRF_networkB 设置路由标识 VRFRD 与标签分配模式 VRFLABELMODE=perInstance，MPLS OptionB 路由交叉前置
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@MOD VPNINSTAF
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；B04 新建；与 0-00072(ADD VPNINSTAF)同对象族不同命令(ADD 创建/MOD 修改)——MOD 专属路由交叉 VRFRD/标签设置
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00145:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD VPNINSTAF:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 整网规划(引用 ADD L3VPNINST.VRFNAME, VRF_networkA 或 VRF_networkB)
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+  - {binding_id: UDG@20.15.2@Task@0-00145:AFTYPE, parameter_ref: UDG@20.15.2@CommandParameter@MOD VPNINSTAF:AFTYPE, binding_type: variable, variable_source: local_planned, requiredness: required, value: ipv4uni, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00145:VRFRD, parameter_ref: UDG@20.15.2@CommandParameter@MOD VPNINSTAF:VRFRD, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00145:VRFLABELMODE, parameter_ref: UDG@20.15.2@CommandParameter@MOD VPNINSTAF:VRFLABELMODE, binding_type: variable, variable_source: local_planned, requiredness: required, value: perInstance, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+notes: "GWFD-020423 MPLS OptionB 路由交叉前置。MOD VPNINSTAF 与 ADD VPNINSTAF(0-00072)操作同对象族(L3VPN 实例地址族)但命令不同(修改 vs 增加), 各自一 atom。VRFNAME 引用 ADD L3VPNINST(0-00071); VRFRD=本端规划(不同 VPN 实例路由标识须不同, VRF_networkA=1:1, VRF_networkB=2:2); VRFLABELMODE=perInstance(每实例一标签, 比 perRoute 省标签)。md 步骤7a/8a 对 VRF_networkA/VRF_networkB 各执行一次。命令级审查(2026-07-02): 7 缺口(IMPOLICYNAME/EXPOLICYNAME 路由策略 + VRFLABEL 标签值 + TNLPOLICYNAME 隧道策略 + FRRENABLE FRR 使能 + LOCALCROSSNHPMOD/EXPLYADDERTFIRST 冷门 optional)路由交叉当前未用, 均不绑; 高危+删除 RD 副作用+mpp_vpn_inner 黑名单+前置 VPN 地址族已创建+立即生效投影 rule 0-00233。命令在 mml_commands; CommandParameter 待 CommandGraph 抽取。"

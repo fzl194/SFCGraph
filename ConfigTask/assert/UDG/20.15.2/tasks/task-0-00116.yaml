@@ -1,0 +1,33 @@
+task_id: UDG@20.15.2@Task@0-00116
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPv6路径MTU
+task_layer: atom
+task_intent: 添加IPv6路径MTU配置（VRFNAME+IPV6ADDRESS+PATHMTU），用于IPv6分片控制
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPV6PATHMTU
+status: inferred   # 命令级审查(2026-07-02): 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00116:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPV6PATHMTU:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 本端规划(引用 ADD L3VPNINST VRFNAME)；命令真相 optional 默认 _public_
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: conditional   # 命令级审查(2026-07-02) 升级 decision_driven(+DP 0-00097)：UDG 显式配 VPN_CN(非默认)；命令真相允许省略走默认 _public_
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00097
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+  - binding_id: UDG@20.15.2@Task@0-00116:IPV6ADDRESS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPV6PATHMTU:IPV6ADDRESS
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已在该配置任务中通过 ADD IFIPV6ADDRESS 配置
+    source_ref: UDG@20.15.2@Task@0-00061:IPV6ADDRESS
+    requiredness: required
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+  - binding_id: UDG@20.15.2@Task@0-00116:PATHMTU
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPV6PATHMTU:PATHMTU
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划；取值1280~10000
+    requiredness: required
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+notes: "GWFD-020402。双引用: VRFNAME←ADD L3VPNINST(0-00071), IPV6ADDRESS←ADD IFIPV6ADDRESS(0-00061)。任务示例 PATHMTU=1300。命令级审查(2026-07-02): 修 binding 1 升级 decision_driven(VRFNAME→DP 0-00097)——命令真相 optional 默认 _public_ vs UDG 显式配非默认 VPN_CN(配法分叉表达)；IPV6ADDRESS/PATHMTU 与命令真相一致；新建 rule 0-00245 投影命令 notes(最大记录数300 + 立即生效；300 为该命令显著小规格)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

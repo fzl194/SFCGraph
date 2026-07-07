@@ -1,0 +1,25 @@
+# TaskRule 模板。权威字段见 改进后三层图谱定义.md §5。
+# rule_type 12 类：binding_rule|consistency_rule|dependency_rule|conditional_rule|ordering_rule|selection_rule|
+#   scope_rule|cardinality_rule|uniqueness_rule|delete_constraint_rule|cross_nf_sync_rule|performance_rule
+rule_id: UDG@20.15.2@TaskRule@0-00001
+owner_task_ref: UDG@20.15.2@Task@1-00001     # 挂在哪个 Task（子侧 FK，关系只存这一处）
+rule_name: FLOWFILTER 必须绑定过滤条件
+rule_type: binding_rule                       # 见上方 12 类
+rule_scope: relation                          # task|relation|parameter|feature|solution
+condition:                                    # 触发条件（可选）
+  expression_type: none                       # none|parameter_value|decision_option|task_selected|feature_selected|object_exists
+  expression: ""
+constraint:                                   # 约束内容（必备）
+  constraint_type: must_reference             # must_exist|must_precede|must_reference|must_match|must_not_match|max_count|min_count|must_be_last|must_select_one|must_not_coexist
+  target_refs:
+    - UDG@20.15.2@Task@0-00007                # 被约束对象（通常是 task/参数实例键）
+  expression: FLOWFILTER 必须用 FLTBINDFLOWF/PROTBINDFLOWF 绑定三四层/七层过滤条件
+violation_effect: 未绑定的 FLOWFILTER 匹配失败，对应 Rule 无效
+severity: critical                            # critical|high|medium|low|info
+rule_expression_mode: explicit                # explicit|inferred|projected
+rule_source_kind: config                      # command|feature|business|config|projected
+source_static_refs:                           # 投影来源（静态对象/边），projected 时填
+  - UDG@20.15.2@CommandParameter@ADD FLOWFILTER:FLOWFILTERNAME
+status: draft                                 # draft|inferred|active|deprecated
+source_evidence_ids:
+  - output/.../部署UPF_28493406.md

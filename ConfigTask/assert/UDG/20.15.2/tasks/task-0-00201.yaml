@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00201
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加流分类(MQC)
+task_layer: atom
+task_intent: 增加MQC流分类对象(CB对的C侧)。通过 ADD QOSRULEACL 绑定 ACL 规则组
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD MQCCLASSIFIER
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred；IPFD命令；CommandParameter 待抽取(缺参数)
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00201:CLASSIFIERNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MQCCLASSIFIER:CLASSIFIERNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00201:OPERATOR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MQCCLASSIFIER:OPERATOR
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (or/and 多规则逻辑关系)；默认 or(命令真相默认)
+    requiredness: optional
+    value: or
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "流分类(MQCCLASSIFIER)是CB对的C侧。CommandParameter 待抽取。命令级审查(2026-07-02) 补审：参数完整(2/2 无缺口)；OPERATOR 补默认值 or(命令真相默认=or，特性脚本未显式传参取默认)。补 atom rule 0-00403(cardinality 10239)。variable_source=local_planned 与命令真相+数据规划表一致。"

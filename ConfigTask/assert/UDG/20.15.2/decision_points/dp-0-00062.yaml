@@ -1,0 +1,42 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00062
+owner_task_ref: UDG@20.15.2@Task@0-00044   # 挂 atom（ADD SECTION）：IPVERSION 决定地址段类型，跨特性核心分叉
+decision_name: 地址段 IP 地址类型（IPVERSION）
+decision_question: |
+  ADD SECTION 的 IPVERSION 取 IPV4 还是 IPV6？（决定本地址段配置哪一组起止地址参数。）
+  - IPV4：配置 V4STARTIP + V4ENDIP（IPv4 起止地址）。010104/010107/020403/020482 的 IPv4 地址段。
+  - IPV6：配置 V6PREFIXSTART + V6PREFIXEND + V6PREFIXLENGTH（IPv6 前缀起止及长度，前缀长度 49~64）。010107/020403/020406 的 IPv6 地址段。
+  注：一个地址池可多次执行 ADD SECTION 配置 IPv4 与 IPv6 地址段（双栈场景），每次本命令 IPVERSION 取其一。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - GWFD-020482/激活入不转板功能_28210142.md
+options:
+  - option_id: opt-ipversion-ipv4
+    option_name: IPv4地址段
+    option_value: IPV4
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00044:V4STARTIP, effect_type: requires, effect_detail: 配置 IPv4 起始地址（全网规划，全网唯一地址空间）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00044:V4ENDIP, effect_type: requires, effect_detail: 配置 IPv4 终止地址；起止地址不能倒置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00044:V6PREFIXSTART, effect_type: excludes, effect_detail: IPv4 段不配 IPv6 前缀参数}
+  - option_id: opt-ipversion-ipv6
+    option_name: IPv6地址段
+    option_value: IPV6
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00044:V6PREFIXSTART, effect_type: requires, effect_detail: 配置 IPv6 前缀起始地址（全网规划）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00044:V6PREFIXEND, effect_type: requires, effect_detail: 配置 IPv6 前缀结束地址；起止不能倒置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00044:V6PREFIXLENGTH, effect_type: requires, effect_detail: 配置 IPv6 前缀长度（49~64；<64 表示采用 IPv6 Prefix Delegation 方式分配，如 020406 取 63）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00044:V4STARTIP, effect_type: excludes, effect_detail: IPv6 段不配 IPv4 起止地址参数}
+default_option: opt-ipversion-ipv4
+notes: |
+  命令级审查(2026-07-02)新增。管理 ADD SECTION.IPVERSION 的取值分叉（地址池族核心演进点，见 CONSOLIDATION-BACKLOG 地址池族已知演进点）。
+  依据：5 特性数据规划表中 IPVERSION 取值分叉——
+    IPV4：010104 地址分配方式、010107 静态地址池(IPv4段)、020403 IPv4段、020482 入不转板；
+    IPV6：010107 静态地址池(IPv6段)、020403 IPv6段、020406 Prefix Delegation。
+  0-00044 原 binding fixed:IPV4（pass-1 仅覆盖 010104 IPv4 外部地址分配），无法表达双栈/PD 的 IPv6 段。按 SKILL §4.2 升级为 decision_driven：IPVERSION binding 改 variable+decision_driven+decision_ref(本 DP)，default_option=IPV4。
+  本 DP 选项联动 V4*/V6* 两组参数的 requires/excludes（命令真相参数为 conditional，由 IPVERSION 决定哪组生效）。

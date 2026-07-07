@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@0-00040
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置SA触发专有承载
+task_layer: atom
+task_intent: 使能基于业务感知(SA)能力的协议触发专有承载创建(ADD SADEDICBEARER)；仅 L7 业务触发 QoS 场景需要
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SADEDICBEARER
+status: inferred   # 命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取(§6-B)
+source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00040:PROTOCOLLEVEL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SADEDICBEARER:PROTOCOLLEVEL
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；PROTOCOLGROUP/PROTOCOL
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00040:PROTOCOLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SADEDICBEARER:PROTOCOLNAME
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；PROTOCOLLEVEL=PROTOCOL 时必选
+    requiredness: conditional   # PROTOCOLLEVEL=PROTOCOL 时必选
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00040:PROTGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SADEDICBEARER:PROTGROUPNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；PROTOCOLLEVEL=PROTOCOLGROUP 时必选
+    requiredness: conditional   # PROTOCOLLEVEL=PROTOCOLGROUP 时必选
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00040:TRIGGERMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SADEDICBEARER:TRIGGERMODE
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；NOT_TRIGGER/FLOWNODE_BASED/DOWNLINK_ONLY，默认 NOT_TRIGGER
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+notes: |
+  GWFD-020358 业务触发的QoS保证(七层)专属——三四层场景无此步骤。命令 ADD SADEDICBEARER 在 mml_commands.jsonl，未在 by_command 复用索引(§6-B)。
+  PROTOCOLLEVEL 与 PROTOCOLNAME/PROTGROUPNAME 互斥条件必选(conditional_required 投影)。
+  命令级审查(2026-07-02)：状态保持 inferred(原已 inferred)；新增 rule 0-00281(最大记录数 100 + PROTOCOLLEVEL 互斥 + TRIGGERMODE 语义)；新增 DP 0-00102(PROTOCOLLEVEL 二选一编排 + 配套 PROTOCOLNAME/PROTGROUPNAME 必选投影)；binding=4(命中真相全部 4 项，无缺口)。

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00186
+owner_task_ref: UDG@20.15.2@Task@0-00082
+rule_name: ADD BFDSESSION 前置依赖 SET BFD 全局使能
+rule_type: dependency_rule
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00073
+  expression: 使用 ADD BFDSESSION 创建静态 BFD 会话前，必须已通过 SET BFD 命令全局使能 BFD 功能(BFDENABLE=TRUE)，否则会话不生效。
+violation_effect: 未全局使能 BFD 时创建的静态会话无法生效/检测功能缺失
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+notes: 命令级审查(2026-07-02)。② 命令真相 notes 投影：必须先 SET BFD 全局使能。依赖 0-00073。

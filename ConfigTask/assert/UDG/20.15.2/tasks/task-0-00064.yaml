@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00064
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置静态地址用户路由冗余全局开关
+task_layer: atom
+task_intent: 使能静态地址用户路由冗余功能全局开关（SWITCH=ENABLE），主备UDG均需配置；激活本特性的总开关
+task_category: activate
+ref: UDG@20.15.2@MMLCommand@SET REDUNDUSER
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 1/1 已绑, SWITCH=ENABLE 固定, 高危命令
+source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00064:SWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET REDUNDUSER:SWITCH
+    binding_type: fixed
+    value: ENABLE   # 固定取值(激活场景固定 ENABLE; 去激活=DISABLE)
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+notes: "GWFD-010107 激活总开关(本特性命名'激活静态地址用户路由冗余')。task_category=activate(非configure, 因这是功能使能开关)。SWITCH=ENABLE 固定(数据规划表标'固定取值')。md注意: 此开关需与地址池 REDUNDFUNC=ENABLE(ADD POOL 参数, 待 atom 0-00043 演进补)同时打开才生效；开启/关闭前都要确保APN下无使用静态路由冗余的用户。本 atom 为特性链路最后一步(所有配置完成后使能)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02): 0 缺口(bound 1/1=SWITCH); SWITCH=ENABLE 固定对齐命令真相 required/枚举; 高危命令(配置前需先确认无静态地址冗余用户, 否则用户业务不通)。"

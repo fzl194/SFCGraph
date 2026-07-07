@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00250
+owner_task_ref: UDG@20.15.2@Task@0-00033   # 挂 atom ADD BWMUSERGROUP
+rule_name: ADD BWMUSERGROUP 最大记录数 + 90%阈值告警 + 不对在线用户生效 + USERGROUPPRI 唯一性
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD BWMUSERGROUP
+  expression: |
+    默认用户组和具体用户组最大记录数为 1999（全局用户组为系统默认配置不计入）。
+    当配置记录数大于规格的 90% 时，会上报 "ALM-135602215 配置数量超阈值" 告警；
+    当配置记录数小于等于规格 90% 时，恢复告警；阈值可通过 MOD CFGTHRESHOLD 修改。
+    增加一个带宽管理用户组对已经在线的用户不生效（仅对新激活用户生效）。
+    USERGROUPPRI 同一用户级/用户组级下规则优先级不能相同（uniqueness）。
+violation_effect: 超规格（>1999）新增失败；在线用户不受新增用户组影响
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00250~0-00259）。投影自命令 notes '默认和具体用户组最大记录数为1999' + '配置记录数>90% 上报告警' + '增加一个带宽管理用户组对已经在线的用户不生效'。USERGROUPPRI 唯一性由本 rule 显式记录；USERGROUPNAME 唯一性由 binding 级隐式表达（必选 + LST BWMUSERGROUP 查询）。"

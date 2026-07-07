@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00008
+task_ref: UDG@20.15.2@Task@00103
+rule_name: USERPROFILE/RULE跨网元一致
+rule_type: cross_nf_sync_rule
+rule_logic: USERPROFILE名在PCF/SMF/UPF间一致；RULENAME及RULE下POLICYTYPE/POLICYNAME在SMF和UPF上一致；不一致时PCF下发策略无法生效
+violation_effect: 策略无法生效
+severity: critical
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

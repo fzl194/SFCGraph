@@ -1,0 +1,16 @@
+rule_id: UDG@20.15.2@TaskRule@0-00002
+owner_task_ref: UDG@20.15.2@Task@1-00001
+rule_name: 融合计费 RGAPPLIED=DEFAULT 时 URRGROUP 不能同时配在线离线
+rule_type: conditional_rule
+rule_scope: task
+condition: {expression_type: parameter_value, expression: "SMF SET USRPROFCHARGE/SET APNCHARGECTRL/ADD CHARGEMETHOD 的 RGAPPLIED=DEFAULT"}
+constraint:
+  constraint_type: must_not_coexist
+  target_refs: [UDG@20.15.2@Task@0-00001]
+  expression: 融合计费且 RGAPPLIED=DEFAULT 时，URRGROUP 下不能同时配离线和在线 URR，否则计费冲突
+violation_effect: 计费冲突
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

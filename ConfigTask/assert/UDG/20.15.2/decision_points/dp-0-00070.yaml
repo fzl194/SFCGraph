@@ -1,0 +1,43 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00070
+owner_task_ref: UDG@20.15.2@Task@0-00056   # 挂 atom ADD INTERFACE：IFNAME 来源跨特性分叉
+decision_name: 接口名（IFNAME）规划来源
+decision_question: |
+  ADD INTERFACE 的 IFNAME 接口名采用何种规划来源？（接口编号语义因接口类型/场景而异。）
+  - 全局规划（全网协调）：LoopBack/Tunnel 等逻辑接口名需跨隧道两端/跨网元协调（如 010107 GRE 静态路由冗余 LoopBack1/Tunnel1，IP 全网唯一）。
+  - 本端规划：以太网子接口等物理衍生接口名由本端板位/VLAN 规划决定（如 020402 N6/Gi 组网 Ethernet70/0/4.1，IPFD GRE/IPsec LoopBack 本端分配）。
+  - 引用已配置数据：物理接口名可通过 LST INTERFACE 查询后引用（如 020402 部分 Ethernet 接口）。
+  注：命令真相 data_source=local_planned；UDG 多数激活场景以全局/本端规划为主，物理接口可查表引用。该决策不影响下游命令，仅决定 IFNAME 取值来源口径。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+options:
+  - option_id: opt-ifname-global
+    option_name: 全局规划（全网协调）
+    option_value: global_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00056:IFNAME, effect_type: sets_source, effect_detail: IFNAME variable_source=global_planned；LoopBack/Tunnel 逻辑接口名跨隧道两端/网元协调（010107 静态路由冗余场景）}
+  - option_id: opt-ifname-local
+    option_name: 本端规划
+    option_value: local_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00056:IFNAME, effect_type: sets_source, effect_detail: IFNAME variable_source=local_planned；以太网子接口/物理衍生接口名由本端板位/VLAN 规划决定（020402 N6/Gi 组网，IPFD GRE/IPsec LoopBack）}
+  - option_id: opt-ifname-reference
+    option_name: 引用已配置数据
+    option_value: reference
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00056:IFNAME, effect_type: sets_source, effect_detail: IFNAME variable_source=reference；物理接口名经 LST INTERFACE 查询后引用（020402 部分物理接口）}
+default_option: opt-ifname-global
+notes: |
+  命令级审查(2026-07-02)新增。管理 ADD INTERFACE.IFNAME 的来源分叉（接口族 §B 标记的跨特性核心参数）。
+  依据：4 特性数据规划表 IFNAME"获取方法"分叉——
+    全网规划（010107 LoopBack1/Tunnel1，接口 IP 全网唯一需协调）；
+    本端规划（020402 Ethernet70/0/4.1 以太网子接口按板位/VLAN；IPFD-015002/015004 LoopBack 本端分配）；
+    已配置数据中获取（020402 部分 Ethernet 接口经 LST INTERFACE 查询）。
+  0-00056 原 binding variable+global_planned（pass-1 仅覆盖 010107），无法表达以太网子接口本端/物理接口引用场景。按 SKILL §4.2 升级为 decision_driven：IFNAME binding 改 decision_driven+decision_ref(本 DP)，default_option=全局规划（多数 UDG 逻辑接口场景）。
+  本决策仅分流取值来源口径，不影响下游 IPBINDVPN/IFIPV4ADDRESS 等（它们通过 source_ref 引用本 atom 的 IFNAME，与来源口径无关）。

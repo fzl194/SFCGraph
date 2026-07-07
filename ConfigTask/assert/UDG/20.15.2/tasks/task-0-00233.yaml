@@ -1,0 +1,42 @@
+task_id: UDG@20.15.2@Task@0-00233
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPSQM调整参数
+task_layer: atom
+task_intent: 配置 IPSQM POD 最低保护带宽及突发尺寸(THRESHOLD/LOWBANDWIDTH/LOWCBS/HIGHBANDWIDTH/HIGHCBS)，区分高/低带宽域。可选增强步骤(缺省用系统初始值)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IPSQMADJUST
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00233:THRESHOLD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPSQMADJUST:THRESHOLD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(阈值 Mbps，整数 1~50)
+    requiredness: required   # 校正：命令真相为 required
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+  - binding_id: UDG@20.15.2@Task@0-00233:LOWBANDWIDTH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPSQMADJUST:LOWBANDWIDTH
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(低带宽域最低保护值 kbps，整数 100~100000)
+    requiredness: optional   # 命令真相为 optional(本特性样例 300 全网规划)
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+  - binding_id: UDG@20.15.2@Task@0-00233:LOWCBS
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPSQMADJUST:LOWCBS
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(低带宽域突发尺寸 字节，整数 500~100000000)
+    requiredness: optional   # 命令真相为 optional(本特性样例 2000 全网规划)
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+  - binding_id: UDG@20.15.2@Task@0-00233:HIGHBANDWIDTH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPSQMADJUST:HIGHBANDWIDTH
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(高带宽域最低保护值 kbps，整数 100~100000)
+    requiredness: optional   # 命令真相为 optional(本特性样例 1000 全网规划)
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+  - binding_id: UDG@20.15.2@Task@0-00233:HIGHCBS
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPSQMADJUST:HIGHCBS
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(高带宽域突发尺寸 字节，整数 500~100000000)
+    requiredness: optional   # 命令真相为 optional(本特性样例 10000 全网规划)
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "SET IPSQMADJUST(IPSQM 可选增强 atom)。THRESHOLD=本端规划，其余 4 参数=全网规划(md 数据规划表)。缺省用初始值。任务示例脚本未展开到本步骤(数据规划表已提供取值样例)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：5/5 参数绑定完整；校正 THRESHOLD requiredness 为 required(命令真相)；新增 atom rule 0-00384(cardinality 1 + 配置过小丢包过多 + 立即生效 + 5 参数范围)。feature-挂 rule 0-00082(IPSQM 增强须先核心整形) 已表达 SET IPSQMADJUST 后置依赖。"

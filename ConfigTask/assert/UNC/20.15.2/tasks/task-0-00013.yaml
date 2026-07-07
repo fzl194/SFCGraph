@@ -1,0 +1,22 @@
+task_id: UNC@20.15.2@Task@0-00013
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CGGRPBINDING
+task_layer: atom
+task_intent: 增加离线计费模板与 CG 组的绑定关系（SGW-C/PGW-C/SMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CGGRPBINDING
+status: inferred
+source_evidence_ids:
+  - 增加CG组绑定关系（ADD CGGRPBINDING）_09896884.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00013:OFCTEMPLATENAME", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGGRPBINDING:OFCTEMPLATENAME", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD OFCTEMPLATE:OFCTEMPLATENAME", requiredness: required, source_evidence_ids: [WSFD-011201/配置到CG的数据（GGSN_SGW-C_PGW-C）_95923479.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00013:CGGRPID", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGGRPBINDING:CGGRPID", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD CGGROUP:CGGRPID", requiredness: required, source_evidence_ids: [WSFD-011201/配置到CG的数据（GGSN_SGW-C_PGW-C）_95923479.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00013:SEGGROUPNAME", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGGRPBINDING:SEGGROUPNAME", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD SUBSCRIBERIDSEGGRP:SEGGROUPNAME", requiredness: optional, source_evidence_ids: [增加CG组绑定关系（ADD CGGRPBINDING）_09896884.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00013:IMSIPRIORITY", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGGRPBINDING:IMSIPRIORITY", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [增加CG组绑定关系（ADD CGGRPBINDING）_09896884.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CGGRPBINDING.md（1 特性 WSFD-011201，4 参）。
+  OFCTEMPLATENAME=reference(ADD OFCTEMPLATE)；CGGRPID=reference(ADD CGGROUP)；
+  SEGGROUPNAME=reference(ADD SUBSCRIBERIDSEGGRP，optional，号段组)；IMSIPRIORITY=本端（号段组优先级）。
+  notes：① 最多 2000 条；② 一个离线模板下最大 32 个 CG 组；③ 未配号段组的 CG 组最多 1 个；
+  ④ 引用号段组可能匹配不到→全局选 CG；⑤ 只对新激活用户生效。→ rule 0-00015 cardinality+constraint。

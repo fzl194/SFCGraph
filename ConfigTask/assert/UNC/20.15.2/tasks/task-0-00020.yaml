@@ -1,0 +1,25 @@
+task_id: UNC@20.15.2@Task@0-00020
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHGIMSICFG
+task_layer: atom
+task_intent: 基于 IMSI前缀/APNNI/拜访类型/计费属性 配置 S-CDR 话单生成策略（SGSN）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHGIMSICFG
+status: inferred
+source_evidence_ids:
+  - 增加IMSI计费配置(ADD CHGIMSICFG)_26145384.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00020:SUBRANGE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGIMSICFG:SUBRANGE", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00020:IMSIPRE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGIMSICFG:IMSIPRE", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00020:VISITTYPE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGIMSICFG:VISITTYPE", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00020:APNNI", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGIMSICFG:APNNI", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD APN:APN", requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00020:CC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGIMSICFG:CC", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00020:SP", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGIMSICFG:SP", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CHGIMSICFG.md（1 特性 WSFD-011201 SGSN，13 参）。
+  SGSN 专用。绑 6（SUBRANGE/IMSIPRE/VISITTYPE/APNNI/CC/SP），APNNI=reference(ADD APN:APN)。
+  未绑 7 个 S-CDR 生成控制 optional（SPP/SPL/SVP/SVL/SCCP/SCCL/SLCP）——按需补。
+  典型用法：抑制特定 IMSI 前缀+APN+拜访类型用户的 S-CDR（SP=NO）。
+  SET CHGCDR.PLMNCTRL=IMSI 时本命令生效；=LOCINFO 时走 ADD CHGPLMNCFG。
+  notes：最多 2048 条 → rule 0-00022。§6.B 见全局 rule 0-00001。

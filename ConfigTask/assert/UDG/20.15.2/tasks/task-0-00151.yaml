@@ -1,0 +1,20 @@
+task_id: UDG@20.15.2@Task@0-00151
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置Host
+task_layer: atom
+task_intent: 配置Host域名信息（ADD HOST），定义域名与服务器IP的对应关系，供FILTER按Host匹配HTTPS业务流
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD HOST
+status: inferred   # 命令级审查(2026-07-02) - HOSTNAME 数据源 global_planned→local_planned(对齐数据规划表); PRIORITY/CFGDOMAINNAME optional 缺口暂不绑(rule 投影默认)
+source_evidence_ids: [GWFD-110203/配置HTTPS业务地址识别_24082599.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00151:HOSTNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD HOST:HOSTNAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-110203/配置HTTPS业务地址识别_24082599.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00151:DOMAINVALUE, parameter_ref: UDG@20.15.2@CommandParameter@ADD HOST:DOMAINVALUE, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-110203/配置HTTPS业务地址识别_24082599.md]}
+notes: |
+  命令级审查(2026-07-02)：GWFD-110203 HTTPS业务地址识别专属(本 atom 当前仅 1 特性使用)。
+  UDG 解析 DNS 响应报文得到 Domain→ServerIP 对应关系，FILTER 按 HOSTNAME 引用本 Host 实现 HTTPS 业务流匹配。
+  数据源修正：HOSTNAME 原标 local_planned，命令 parameter_description 标 global_planned——按 SKILL §4.5 数据源以命令真相为准(数据规划表只显本端规划，本端规划等价 global_planned 表述)；本 atom 沿用 local_planned(数据规划表显式)，与命令描述差异在 rule notes 说明，不升 decision_driven(单特性无分叉)。
+  缺口 PRIORITY/CFGDOMAINNAME：均 optional 冷门参数(PRIORITY 默认 65535，CFGDOMAINNAME 配置域名称)——按 SKILL §4.3 主场景未用暂不绑，rule 投影说明默认行为与特殊字符约束。
+  rule 投影：见 UDG@20.15.2@TaskRule@0-00307 (60s 生效 + 上限 100000 + 90% 告警 + DOMAINVALUE 特殊字符 + PRIORITY/CFGDOMAINNAME 默认)。
+  CommandParameter 结构化对象待 CommandGraph 抽取（dependency_rule 集中标记于 feature task 2-00050）。

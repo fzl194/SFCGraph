@@ -1,0 +1,32 @@
+task_id: UNC@20.15.2@Task@0-00008
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置APNUSRPROFG
+task_layer: atom
+task_intent: 将 UserProfileGroup 绑定到 APN/DNN 下（PGW-C/SMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD APNUSRPROFG
+status: inferred
+source_evidence_ids:
+  - 增加APN用户模板组绑定关系（ADD APNUSRPROFG）_09897224.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00008:APN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNUSRPROFG:APN
+    binding_type: reference             # 引用 ADD APN 的 APN 名（须先存在）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD APN:APN
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/激活PCC基本功能_72467890.md]
+  - binding_id: UNC@20.15.2@Task@0-00008:USERPROFGNAME
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNUSRPROFG:USERPROFGNAME
+    binding_type: reference             # 引用 ADD USRPROFGROUP 的组名（须先存在）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD USRPROFGROUP:USERPROFGNAME
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/激活PCC基本功能_72467890.md]
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_APNUSRPROFG.md（17 特性用，2 参）。
+  两参均 reference（notes 明确"需先配置 ADD APN 和 ADD USRPROFGROUP"）。
+  证据 ④ source 分布 全网25/本端2/已配置13——"已配置"印证 reference；全网/本端是规划视角，对象仍须已存在。
+  notes 投影：① 最多 10000 条；② 每个 APN 只能绑一个 USRPROFGROUP（uniqueness）；③ 前置依赖 ADD APN + ADD USRPROFGROUP。
+  → rule 0-00009 cardinality+uniqueness，rule 0-00010 dependency。§6.B 见全局 rule 0-00001。

@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00231
+owner_task_ref: UDG@20.15.2@Task@0-00142   # 挂 atom ADD AUTOSCALINGSRROUTE
+rule_name: ADD AUTOSCALINGSRROUTE 规格 + 前置 SERVICENAME 依赖 AUTOSCALINGSERVICE + BFD 模板依赖 + 立即生效 + 掩码范围
+rule_type: dependency_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: required_predecessor
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD AUTOSCALINGSRROUTE
+  expression: |
+    ADD AUTOSCALINGSRROUTE 命令最大记录数为 2048。
+    依赖参数 SERVICENAME 值相同的 ADD AUTOSCALINGSERVICE（0-00141）已经配置（引用关系已由 SERVICENAME binding 的 source_ref=0-00141:SERVICENAME 表达）。
+    如使能了动态 BFD（DP 0-00024 取 opt-bfd-two-way），依赖参数 SERVICENAME 值相同的 ADD AUTOSCALINGSRBFD（0-00144）已配置。
+    如 DP 0-00024 取 opt-bfd-one-arm，BFDTEMPLATENAME 须填且引用 ADD AUTOSCALINGBFD.TEMPLATENAME（0-00143）（引用关系已由 binding source_ref 表达）。
+    IPv4 路由掩码长度 0~32，IPv6 路由掩码长度 0~128（取值范围由 CommandParameter 校验承担）。
+    该命令执行后立即生效。
+violation_effect: 超规格（>2048）新增失败；前置 SERVICENAME 未配置则报错；BFD 模板不匹配则忽略
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes: 规格 2048 + SERVICENAME 前置依赖 AUTOSCALINGSERVICE(0-00141) + 动态 BFD 前置依赖 AUTOSCALINGSRBFD(0-00144) + 立即生效 + IPv4/IPv6 掩码范围。6 缺口中 PREFIX6/NEXTHOPALLOCTYPE6/NEXTHOP6 为 IPv6 变体（路由交叉当前用 IPv4）+ PREFERENCE/TAG/DESCRIPTION 冷门 optional，均不绑。BFDTEMPLATENAME 由 binding decision_ref=0-00024 表达其 conditional requiredness，DP 0-00024 跨 atom 编排决定 BFD 类型与 BFDTEMPLATENAME 填写。"

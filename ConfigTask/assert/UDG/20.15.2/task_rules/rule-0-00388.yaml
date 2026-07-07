@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00388
+owner_task_ref: UDG@20.15.2@Task@0-00252   # 挂 atom ADD CFPROFILE
+rule_name: ADD CFPROFILE 规格 500 + 立即生效 + 命名防重
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD CFPROFILE
+  expression: |
+    ADD CFPROFILE 命令最大记录数为 500（命令 notes 强约束），超出被拒。
+    该命令执行后立即生效（命令 notes）。
+    参数 CFPROFILENAME 的取值不建议与 RULENAME/USERPROFILENAME 重复，若重复可能会导致内容过滤功能失效（命令 notes 命名约束）。
+    CFPROFILENAME 字符串 1～63 字符，不支持空格，不区分大小写（CommandParameter 校验承担）。
+violation_effect: 上限超限→ADD 失败；命名重复→内容过滤功能失效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 500 + 立即生效 + 命名防重（RULENAME/USERPROFILENAME）。缺 PRIORITY/CFGDOMAINNAME 均为 optional（命令真相 PRIORITY 默认 65535/CFGDOMAINNAME 配置域）冷门不绑。CFPROFILENAME 引用关系由 binding source_ref 表达（0-00255 引用 0-00252）。"

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00111
+owner_task_ref: UDG@20.15.2@Task@0-00001   # 挂 atom ADD URR
+rule_name: URRID 全网唯一且从 1000 起始分配
+rule_type: uniqueness_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_be_unique
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD URR:URRID
+  expression: "URRID 在所有 URR 内唯一（全网），取值范围 0~2147483646，从 1000 起始分配（命令 notes）；跨网元(SMF/UPF 或 PGW-C/PGW-U)亦须一致（见 cross_nf_sync_rule 0-00003）。"
+violation_effect: URRID 重复导致计费规则冲突/统计错配；跨网元不一致导致计费用量上报失败
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-112000/激活双故障Bypass_14147877.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes 'URRID 字段要求在所有 URR 内唯一，从 1000 起始分配'；2-00091 数据规划表说明亦强调 URRID 唯一。与既有 cross_nf_sync_rule 0-00003 互补（0-00003 管跨网元一致，0-00111 管本端唯一性）。"

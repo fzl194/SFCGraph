@@ -1,0 +1,27 @@
+task_id: UDG@20.15.2@Task@00002
+task_logical_name: 配置URR组
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD URRGROUP
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:URRGROUPNAME
+        binding_type: variable
+        variable_source: decision_driven
+        note: 跨场景获取方法分叉(URL全网/其余本端)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:UPURRNAME1
+        binding_type: reference
+        source_ref: ""  # ←ADD URR(离线URR)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:DOWNURRNAME1
+        binding_type: reference
+        source_ref: ""  # ←ADD URR(离线URR)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:UPURRNAME2
+        binding_type: reference
+        source_ref: ""  # ←ADD URR(在线URR)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:DOWNURRNAME2
+        binding_type: reference
+        source_ref: ""  # ←ADD URR(在线URR)
+task_category: 配置
+status: active
+source_evidence_ids: []

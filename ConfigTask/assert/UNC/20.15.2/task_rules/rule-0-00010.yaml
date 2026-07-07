@@ -1,0 +1,18 @@
+rule_id: UNC@20.15.2@TaskRule@0-00010
+owner_task_ref: UNC@20.15.2@Task@0-00008
+rule_name: ADD APNUSRPROFG 前置依赖 ADD APN + ADD USRPROFGROUP
+rule_type: dependency_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UNC@20.15.2@MMLCommand@ADD APN
+    - UNC@20.15.2@MMLCommand@ADD USRPROFGROUP
+  expression: 执行前须先 ADD APN（APN 名）与 ADD USRPROFGROUP（组名）已配置；绑定后对该 APN 已存在用户无效，只对新激活用户生效
+violation_effect: 引用对象不存在则绑定失败；存量用户不即时生效
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加APN用户模板组绑定关系（ADD APNUSRPROFG）_09897224.md]

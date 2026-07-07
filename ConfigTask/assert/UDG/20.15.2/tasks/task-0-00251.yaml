@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00251
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置APN内容过滤开关
+task_layer: atom
+task_intent: "基于APN粒度开启URL过滤功能(SET APNCFFUNC: CFSWITCHVALUE=ENABLE), APN 名引用 ADD APN"
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNCFFUNC
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00251:APNNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNCFFUNC:APNNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(与 ADD APN 配置的 APN 一致)
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00251:CFSWITCHVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNCFFUNC:CFSWITCHVALUE
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（ENABLE 开启 URL 过滤）
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "GWFD-110471。SET APNCFFUNC 基于 APN 粒度开启 URL 过滤(CFSWITCHVALUE=ENABLE)。APNNAME 引用 ADD APN(0-00020)。命令不在 mml_commands.jsonl(§6.A), ref/parameter_ref 预写预期 ID, 待 CommandGraph 抽取回填。命令级审查(2026-07-02)：2/2 参数绑定完整；CFSWITCHVALUE 数据来源=本端规划(对应命令真相'全局规划'偏差，特性 md 数据规划表标注'本端规划'以表达规划层权责)。新增 atom rule 0-00387(cardinality 10000 + 性能下降 + 立即生效 + 仅新承载/新激活用户生效)。"

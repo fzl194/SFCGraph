@@ -1,0 +1,48 @@
+task_id: UDG@20.15.2@Task@0-00052
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置N4接口GTP路径相关属性
+task_layer: atom
+task_intent: 设置N4/Sxb接口GTP路径探测参数（N4Echo开关/重发/去活策略），仅N4接口生效
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET UPN4UPATH
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 6/6 已绑, 参数对齐命令真相 optional(N4ECHO*5 + DEACTIVEFLAG 均场景必填因 N4ECHOSW=ENABLE)
+source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00052:N4ECHOSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPN4UPATH:N4ECHOSW
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(N4接口Echo开关)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00052:N4ECHOINTERVAL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPN4UPATH:N4ECHOINTERVAL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(N4 Echo请求间隔)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00052:N4T3RESPONSE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPN4UPATH:N4T3RESPONSE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(N4 Echo重发间隔)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00052:N4N3REQUEST
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPN4UPATH:N4N3REQUEST
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(N4 Echo最大重发次数)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00052:DEACTIVEFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPN4UPATH:DEACTIVEFLAG
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(N4路径断后是否去活)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00052:N4ECHOTIME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPN4UPATH:N4ECHOTIME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(N4告警后发Echo次数；示例取0=不重发)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+notes: "GWFD-010102。N4/Sxb接口专用GTP路径探测命令，与 SET UPGTPPATH(0-00051, 非N4接口)分离(不同命令、不同参数名前缀N4)，按一命令一atom。任务示例 N4ECHOTIME=0(告警后不发Echo但仍去活, DEACTIVEFLAG=ENABLE)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取(rule 0-00033)。命令级审查(2026-07-02): 0 缺口(bound 6/6=N4ECHOSW+N4ECHOINTERVAL+N4T3RESPONSE+N4N3REQUEST+DEACTIVEFLAG+N4ECHOTIME); 命令真相除N4ECHOSW为总开关optional，余5参数条件必选(N4ECHOSW=ENABLE时生效)，本特性场景N4ECHOSW=ENABLE故均按required绑。"

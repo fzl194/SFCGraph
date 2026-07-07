@@ -1,0 +1,18 @@
+rule_id: UNC@20.15.2@TaskRule@0-00015
+owner_task_ref: UNC@20.15.2@Task@0-00013
+rule_name: ADD CGGRPBINDING 最多 2000 条 + 模板下 CG 组上限
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CGGRPBINDING]
+  expression: >-
+    记录数 ≤ 2000；一个离线模板下最大 32 个 CG 组；未配 IMSI/MSISDN 号段组的 CG 组最多 1 个；
+    引用号段组匹配不到时在全局范围内选 CG 发话单；只对新激活用户生效。
+violation_effect: 超规格无法新增；号段匹配不到走全局 CG
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加CG组绑定关系（ADD CGGRPBINDING）_09896884.md]

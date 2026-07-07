@@ -1,0 +1,121 @@
+task_id: UDG@20.15.2@Task@0-00133
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建L2TP组(本地配置方式专属)
+task_layer: atom
+task_intent: 创建本地配置方式的 L2TP 组（组号/隧道鉴权/域名/本端名称/隐藏 AVP/HELLO/重发/VPN 实例/LNS 主备或负荷分担 IP 与密码/Magic-Number/发送窗口），L2TP 组绑定 APN 后按域名匹配建隧道
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD L2TPGROUP
+status: inferred   # 命令级审查(2026-07-02) 本地配置方式专属命令；命令在 mml_commands；CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00133:GROUPID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:GROUPID
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(L2TP 组号, 1~1500)
+    requiredness: required
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:AUTHENTICATION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:AUTHENTICATION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(隧道鉴权, 默认 ENABLE)
+    requiredness: optional   # 命令真相 optional 默认 ENABLE
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:DOMAINNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:DOMAINNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(隧道域名, 用户名域名匹配触发建隧道)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:LOCALNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:LOCALNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(隧道本端名称, 空则用 SET GLOBALL2TP 缺省)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:AVPHIDDEN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:AVPHIDDEN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(隐藏 AVP, 默认 DISABLE)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:HELLOINTERVALSW
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:HELLOINTERVALSW
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(HELLO 报文开关, 默认 DISABLE)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:HELLOINTERVAL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:HELLOINTERVAL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(秒, 60~10000)
+    requiredness: conditional   # 命令真相 conditional(HELLOINTERVALSW=ENABLE 时)
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:RETRYTIMES
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:RETRYTIMES
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(报文重发次数, 1~16, 默认 3)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:VPNINSTANCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:VPNINSTANCE
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD VPNINST)
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE
+    requiredness: optional   # 命令真相 optional(无 VPN 时走默认 VRF)
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:LOCALLNSMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:LOCALLNSMODE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(REDUNDANCY 主备 / LOAD_SHARING 负荷分担, 默认 REDUNDANCY)
+    requiredness: optional   # 命令真相 optional 默认 REDUNDANCY
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:FIRSTLNSIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:FIRSTLNSIP
+    binding_type: variable
+    variable_source: peer_planned   # 与对端 LNS 协商(主 LNS IP, 命令真相标"对端协商"; ③数据规划表标"本端规划"按基线以③为准但加 notes)
+    requiredness: conditional   # 命令真相 conditional(LOCALLNSMODE 决定)
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:FIRSTPWD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:FIRSTPWD
+    binding_type: variable
+    variable_source: peer_planned   # 与对端 LNS 协商(主 LNS 隧道认证密码)
+    requiredness: conditional   # 命令真相 conditional(FIRSTLNSIP 配时)
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:SECONDLNSIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:SECONDLNSIP
+    binding_type: variable
+    variable_source: peer_planned   # 与对端 LNS 协商(备 LNS IP)
+    requiredness: conditional   # LOCALLNSMODE=REDUNDANCY 时配主备两 LNS
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:SECONDPWD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:SECONDPWD
+    binding_type: variable
+    variable_source: peer_planned
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:CFMFIRSTPWD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:CFMFIRSTPWD
+    binding_type: variable
+    variable_source: peer_planned   # 确认主 LNS 密码(与 FIRSTPWD 一致)
+    requiredness: conditional   # 命令真相 conditional(FIRSTPWD 配时)
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:CFMSECONDPWD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:CFMSECONDPWD
+    binding_type: variable
+    variable_source: peer_planned
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:PPPMAGICNUMBER
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:PPPMAGICNUMBER
+    binding_type: variable
+    variable_source: peer_planned   # 与对端协商(Magic-Number, 默认 DISABLE)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00133:MAXSENDWINSIZE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPGROUP:MAXSENDWINSIZE
+    binding_type: variable
+    variable_source: peer_planned   # 与对端协商(发送窗口上限, 4~128, 默认 64)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+notes: "GWFD-020412 本地配置方式专属(AAA 方式不建 L2TP 组, 由 RADIUS 下发 LNS)。LNS IP/密码/Magic-Number/发送窗口=与对端协商; 其余本端规划。LOCALLNSMODE=REDUNDANCY 时 SECONDLNSIP/SECONDPWD/CFMSECONDPWD 必填(主备); LOAD_SHARING 可配 6 LNS(>2 或 IPv6 用 ADD L2TPLNSINFO, 见 md 注)。VPNINSTANCE 引用 ADD VPNINST(0-00041)。所有 binding 按命令真相校准 requiredness(LOCALLNSMODE/AVPHIDDEN/HELLOINTERVALSW/RETRYTIMES/AUTHENTICATION/DOMAINNAME/LOCALNAME/PPPMAGICNUMBER/MAXSENDWINSIZE/VPNINSTANCE=optional; HELLOINTERVAL/FIRSTLNSIP/FIRSTPWD/CFMFIRSTPWD=conditional; SECOND*/CFM*SECOND*=conditional-on-REDUNDANCY)。冷门参数不绑(THIRD/SIXTHLNSIP+PWD+CFM/DSCPV/INITTUNNELNUM/MAXSESSIONNUM: 命令真相均 optional/conditional 且 L2TPLNSINFO 不在本次 18 命令范围; ③数据规划表亦未配多 LNS 模式)。命令在 mml_commands；CommandParameter 待 CommandGraph 抽取。"

@@ -1,0 +1,27 @@
+task_id: UDG@20.15.2@Task@1-00003
+nf: UDG
+version: "20.15.2"
+task_logical_name: 规则与用户模板绑定
+task_layer: compound
+task_intent: 配置规则ADD RULE→用户模板ADD USERPROFILE→绑定ADD RULEBINDING
+task_category: configure
+ref: null
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+task_relations:
+  - relation_id: UDG@20.15.2@TaskRelation@0-00008
+    from_task_ref: UDG@20.15.2@Task@0-00010
+    to_task_ref: UDG@20.15.2@Task@0-00011
+    relation_type: precedes
+    requiredness: required
+    propagated_context:
+      - {context_name: RULENAME, source_ref: UDG@20.15.2@Task@0-00010:RULENAME, target_ref: UDG@20.15.2@Task@0-00012:RULENAME}
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - relation_id: UDG@20.15.2@TaskRelation@0-00009
+    from_task_ref: UDG@20.15.2@Task@0-00011
+    to_task_ref: UDG@20.15.2@Task@0-00012
+    relation_type: precedes
+    requiredness: required
+    propagated_context:
+      - {context_name: USERPROFILENAME, source_ref: UDG@20.15.2@Task@0-00011:USERPROFILENAME, target_ref: UDG@20.15.2@Task@0-00012:USERPROFILENAME}
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

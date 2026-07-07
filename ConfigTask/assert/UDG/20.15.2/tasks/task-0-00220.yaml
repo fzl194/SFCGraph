@@ -1,0 +1,48 @@
+task_id: UDG@20.15.2@Task@0-00220
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置会话核查功能
+task_layer: atom
+task_intent: 配置用户面会话核查(ESTABLISHCHK/SESSNUMTHD/PATHDWNCHK/DAYCHK/SGRECOVERYCHK/SESSLIMITCHK)，清除 UDG 上残留 EPS 承载/PDU 会话，避免用户面会话过载。系统已有初始记录(默认全使能)，多为确认/微调
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET SESSCHKFUNC
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 6/6 已绑, SESSNUMTHD 条件依赖 ESTABLISHCHK=ENABLE
+source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00220:ESTABLISHCHK
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SESSCHKFUNC:ESTABLISHCHK
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(ENABLE/DISABLE，默认使能)
+    requiredness: optional
+    source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]
+  - binding_id: UDG@20.15.2@Task@0-00220:SESSNUMTHD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SESSCHKFUNC:SESSNUMTHD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(1~21，仅 ESTABLISHCHK=ENABLE 时生效)
+    requiredness: conditional   # 依赖本命令 ESTABLISHCHK=ENABLE
+    source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]
+  - binding_id: UDG@20.15.2@Task@0-00220:PATHDWNCHK
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SESSCHKFUNC:PATHDWNCHK
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional
+    source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]
+  - binding_id: UDG@20.15.2@Task@0-00220:DAYCHK
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SESSCHKFUNC:DAYCHK
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional
+    source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]
+  - binding_id: UDG@20.15.2@Task@0-00220:SGRECOVERYCHK
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SESSCHKFUNC:SGRECOVERYCHK
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional
+    source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]
+  - binding_id: UDG@20.15.2@Task@0-00220:SESSLIMITCHK
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SESSCHKFUNC:SESSLIMITCHK
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional
+    source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]
+notes: "SET SESSCHKFUNC(单命令原子)。6 参数来源均=本端规划(md 数据规划表)。SESSNUMTHD 条件依赖本命令 ESTABLISHCHK=ENABLE(取值范围 1~21)。系统已有初始记录(默认全使能 SESSNUMTHD=4)，现网多为确认/微调。无 License 前置。适用 SGW-U/PGW-U/UPF。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02): 0 缺口(bound 6/6=ESTABLISHCHK+SESSNUMTHD+PATHDWNCHK+DAYCHK+SGRECOVERYCHK+SESSLIMITCHK); 命令真相5个开关为optional+SESSNUMTHD为conditional(ESTABLISHCHK=ENABLE时生效), 020162特性数据规划表显式全使能+阈值=4, 按 ③ 优先保留 requiredness 标注; 最大记录数1+立即生效+系统初始全使能。"

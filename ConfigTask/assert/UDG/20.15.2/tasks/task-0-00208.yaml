@@ -1,0 +1,43 @@
+task_id: UDG@20.15.2@Task@0-00208
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加以太/接口ACL规则(VNRS)
+task_layer: atom
+task_intent: 增加以太ACL规则(基于源MAC匹配，范围段4000-4999)与接口ACL规则(基于接口名匹配，范围段1000-1999)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ACLRULEETH
+status: inferred   # 命令级审查(2026-07-02): binding 准确(ACLSRCMAC条件=以太/IFNAME条件=接口),P0 聚合债已标注(rule 0-00271);IPFD命令CommandParameter 缺(rule 0-00076 标记)
+source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00208:ACLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEETH:ACLNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD ACLGROUP:ACLNAME (0-00197)
+    source_ref: UDG@20.15.2@Task@0-00197:ACLNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00208:ACLRULENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEETH:ACLRULENAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00208:ACLACTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEETH:ACLACTION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00208:ACLSRCMAC
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEETH:ACLSRCMAC
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(源MAC地址)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00208:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEIF:IFNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(接口ACL规则用)
+    requiredness: conditional   # 接口ACL规则时必填
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+notes: "聚合 atom: ADD ACLRULEETH(以太ACL,4000-4999,源MAC匹配) + ADD ACLRULEIF(接口ACL,1000-1999,接口名匹配)。两命令作用域互斥，按需选用。命令级审查(2026-07-02): P0 聚合遗留(§B 已标记应拆→独立 0-00208a ADD ACLRULEETH / 0-00208b ADD ACLRULEIF 两个 atom)，本 pass 不拆。ACLSRCMAC 为 ACLRULEETH 条件必填(IFNAME 时不填)；IFNAME 为 ACLRULEIF 条件必填(ACLRULEETH 时不填)。③ 未使用→不绑: ACLRULEID/ACLFRAMTYPE/ACLFRAMMASK/ACLSRCMACMASK/ACLDESTMAC/ACLDESTMACMASK/ACLVLANID/ACLVLANIDMASK/ACLRULEDESCRIPTION(冷门/垂直场景)。前置 ACLGROUP/范围段→rule 0-00076 投影；聚合互斥→rule 0-00271。CommandParameter 待抽取。"

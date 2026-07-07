@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00332
+owner_task_ref: UDG@20.15.2@Task@0-00021   # ADD ABNTRAFFICDT (atom-挂 rule)
+rule_name: ADD ABNTRAFFICDT 最大记录数10000+只对新激活用户生效+Normal用户不支持异常流检测
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00021:APN
+    - UDG@20.15.2@Task@0-00021:SWITCH
+    - UDG@20.15.2@Task@0-00021:TRAFFICBEHAVIORSWITCH
+  expression: "系统最多支持配置10000条ABNTRAFFICDT；该命令执行后只对新激活用户生效；Normal用户不支持异常流检测；APN引用ADD APN(0-00020)前置依赖；前置License LKV3G5ADTD01(0-00019)。"
+violation_effect: 超规格记录被拒；对在线用户不生效；Normal用户配异常流检测无效
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格10000+只对新激活生效+Normal用户不支持)
+source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]

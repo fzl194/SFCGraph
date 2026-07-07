@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00344
+owner_task_ref: UDG@20.15.2@Task@0-00220   # SET SESSCHKFUNC (atom-挂 rule)
+rule_name: SET SESSCHKFUNC 最大记录数1+立即生效+SESSNUMTHD范围1-21+初始全使能
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00220:ESTABLISHCHK
+    - UDG@20.15.2@Task@0-00220:SESSNUMTHD
+  expression: "最大记录数为1(全局唯一); 该命令执行后立即生效；SESSNUMTHD取值范围1~21且仅ESTABLISHCHK=ENABLE时生效；存在系统初始记录(默认全使能 SESSNUMTHD=4)；6参数配合实现6种核查(ESTABLISH创建/PATHDWN路径断/DAY每日/SGRECOVERY SG恢复/SESSLIMIT会话规格90%)，关闭全部导致UDG残留EPS承载/PDU会话无法清理；SESSLIMITCHK触发阈值为会话资源达90%。"
+violation_effect: SESSNUMTHD超范围(1-21)被拒；全部关闭导致UDG残留会话无法清理
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1+立即生效+SESSNUMTHD范围+初始全使能)
+source_evidence_ids: [GWFD-020162/配置用户面会话过载控制_43675114.md]

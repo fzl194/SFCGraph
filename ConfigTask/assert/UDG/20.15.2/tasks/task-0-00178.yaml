@@ -1,0 +1,62 @@
+task_id: UDG@20.15.2@Task@0-00178
+nf: UDG
+version: "20.15.2"
+task_logical_name: 修改GRE隧道增强配置
+task_layer: atom
+task_intent: 修改已建 GRE Tunnel 的端到端校验/识别关键字/Keepalive 增强配置(CHECKSUMEN/GREKEYEN/KEEPALVEN)，保障 GRE 隧道可靠性与安全
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@MOD GRETUNNEL
+status: inferred   # 命令级审查(2026-07-02)：单特性(IPFD-015002)无分叉，8参数精确匹配3条MOD脚本
+source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00178:TNLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:TNLNAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD GRETUNNEL 的 TNLNAME)
+    source_ref: UDG@20.15.2@Task@0-00059:TNLNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+  - binding_id: UDG@20.15.2@Task@0-00178:TNLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:TNLTYPE
+    binding_type: fixed
+    variable_source: local_planned   # 本端规划
+    value: gre
+    requiredness: required
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+  - binding_id: UDG@20.15.2@Task@0-00178:CHECKSUMEN
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:CHECKSUMEN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(端到端校验功能)
+    requiredness: conditional   # GRE增强-校验场景必填
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+  - binding_id: UDG@20.15.2@Task@0-00178:GREKEYEN
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:GREKEYEN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(识别关键字功能)
+    requiredness: conditional   # GRE增强-识别关键字场景必填
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+  - binding_id: UDG@20.15.2@Task@0-00178:GREKEY
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:GREKEY
+    binding_type: variable
+    variable_source: peer_planned   # md约束: 隧道两端识别关键字必须相同(与对端协商)
+    requiredness: conditional   # GREKEYEN=TRUE 时必填
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+  - binding_id: UDG@20.15.2@Task@0-00178:KEEPALVEN
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:KEEPALVEN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(Keepalive功能)
+    requiredness: conditional   # GRE增强-Keepalive场景必填
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+  - binding_id: UDG@20.15.2@Task@0-00178:KEEPALVPERIOD
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:KEEPALVPERIOD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(默认5秒)
+    requiredness: optional   # KEEPALVEN=TRUE 时可选, 不填默认5
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+  - binding_id: UDG@20.15.2@Task@0-00178:KEEPALVRETRYCNT
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD GRETUNNEL:KEEPALVRETRYCNT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(默认3次)
+    requiredness: optional   # KEEPALVEN=TRUE 时可选, 不填默认3
+    source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]
+notes: "IPFD-015002 GRE(IP基本特性/VNRS)。MOD GRETUNNEL 承载 3 类可选增强(任务示例拆3条MOD): ①端到端校验 CHECKSUMEN=TRUE ②识别关键字 GREKEYEN=TRUE+GREKEY(两端必须一致，见 rule 0-00074 一致性约束) ③Keepalive KEEPALVEN=TRUE+KEEPALVPERIOD(默认5)+KEEPALVRETRYCNT(默认3)。按一命令一atom(§4.2)合并, 三组参数互斥(requiredness=conditional, 由 feature 级 DP 0-00030 选定增强项)。TNLNAME 引用 ADD GRETUNNEL(0-00059)。审查结论(2026-07-02)：单特性无跨特性分叉，参数完整度/准确性均通过——源/目的重配参数(SRCTYPE/SRCIPADDR/SRCIFNAME/DSTIPADDR/DSTVPNNAME)及 STATENABLE/REDUNDANCYEN 无特性脚本使用，不绑；现有8参数与 015002 三条 MOD 脚本完全对齐。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)。"

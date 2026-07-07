@@ -1,0 +1,51 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00138
+owner_task_ref: UDG@20.15.2@Task@0-00109   # 挂 atom SET FPIFUNC
+decision_name: FPI 策略来源与 DSCP/GTPU 联合编排
+decision_question: |
+  SET FPIFUNC 配置 FPI 差异化控制功能时, 选择 FPI 策略来源 + FPI 传递类型的联合取值。
+  - FPI_INTERNAL_DSCP: FPI 来源 INTERNAL(网关内部策略) + FPI 传递类型 DSCP(向 RAN 侧通过 DSCP 传递)。
+  - FPI_INTERNAL_GTPU: FPI 来源 INTERNAL + FPI 传递类型 GTPU(向 RAN 侧通过 GTP-U 扩展头传递)。
+  - FPI_EXTERNAL_DSCP: FPI 来源 NULL/EXTERNAL(默认值, 不指定) + FPI 传递类型 DSCP——本特性 GWFD-110331 采用此组合(默认组合)。
+  - FPI_EXTERNAL_GTPU: FPI 来源 NULL/EXTERNAL + FPI 传递类型 GTPU。
+  命令 notes：FPISWITCH=ENABLE 时 FPITRANSMETHOD 必选；FPIPOLICYORIGIN 默认 NULL, 选 INTERNAL 时表示 FPI 值来源于网关内部策略；FPITRANSMETHOD=DSCP 要求无线侧识别 DSCP, FPITRANSMETHOD=GTPU 要求无线侧识别 GTP-U 扩展头——配置工程师须按 RAN 能力选择。
+decision_type: single_choice
+trigger_condition:
+  expression_type: parameter_value
+  expression: SET FPIFUNC.FPISWITCH=ENABLE
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md
+options:
+  - option_id: opt-fpi-internal-dscp
+    option_name: 内部策略 + DSCP 传递
+    option_value: FPI_INTERNAL_DSCP
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPIPOLICYORIGIN, effect_type: sets_value, effect_detail: value=INTERNAL；网关内部策略}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPITRANSMETHOD, effect_type: sets_value, effect_detail: value=DSCP；RAN 侧需识别 DSCP}
+  - option_id: opt-fpi-internal-gtpu
+    option_name: 内部策略 + GTP-U 传递
+    option_value: FPI_INTERNAL_GTPU
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPIPOLICYORIGIN, effect_type: sets_value, effect_detail: value=INTERNAL}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPITRANSMETHOD, effect_type: sets_value, effect_detail: value=GTPU；RAN 侧需识别 GTP-U 扩展头}
+  - option_id: opt-fpi-external-dscp
+    option_name: 默认 + DSCP 传递 (本特性默认)
+    option_value: FPI_EXTERNAL_DSCP
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPIPOLICYORIGIN, effect_type: sets_value, effect_detail: value=NULL(默认, 不指定)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPITRANSMETHOD, effect_type: sets_value, effect_detail: value=DSCP}
+  - option_id: opt-fpi-external-gtpu
+    option_name: 默认 + GTP-U 传递
+    option_value: FPI_EXTERNAL_GTPU
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPIPOLICYORIGIN, effect_type: sets_value, effect_detail: value=NULL}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00109:FPITRANSMETHOD, effect_type: sets_value, effect_detail: value=GTPU}
+default_option: opt-fpi-external-dscp
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00136~0-00149）。管理 SET FPIFUNC FPIPOLICYORIGIN 与 FPITRANSMETHOD 联合编排。
+  依据：命令真相 FPITRANSMETHOD conditional(FPISWITCH=ENABLE 时必选) + FPIPOLICYORIGIN conditional(INTERNAL 时必传 spec 项)；两参数相互独立但均与 RAN 协同相关, 由 DP 联合编排避免配置工程师漏选。
+  注：本特性(GWFD-110331) 默认采用 FPI_EXTERNAL_DSCP (FPIPOLICYORIGIN=NULL + FPITRANSMETHOD=DSCP, 与系统初始记录一致)。
+  注：本 DP 与 DP 0-00139 互补——0-00139 仅管 FPITRANSMETHOD 2-way(DSCP/GTPU);本 DP 0-00138 管 FPIPOLICYORIGIN × FPITRANSMETHOD 联合编排(4-way)。
+  与 rule 0-00349 联动(rule 校验 max_records=1 + 立即生效 + 系统初始 + 无线侧协同)。
+  实际编写：原 binding FPITRANSMETHOD 升级 decision_driven + decision_ref 0-00139 (2-way), 本 DP 0-00138 升级 FPIPOLICYORIGIN 用 decision_driven 路径——为简化决策网, 采用 DP 0-00139 编排 FPITRANSMETHOD 单参数, FPIPOLICYORIGIN 保持 variable+optional(默认 NULL)。

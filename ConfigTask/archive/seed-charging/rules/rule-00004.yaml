@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00004
+task_ref: UDG@20.15.2@Task@00001
+rule_name: URRID全网唯一
+rule_type: uniqueness_rule
+rule_logic: URRID字段要求在所有URR内唯一，建议从1000开始分配
+violation_effect: ID冲突，配置失败
+severity: critical
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

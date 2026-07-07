@@ -1,0 +1,68 @@
+task_id: UDG@20.15.2@Task@0-00211
+nf: UDG
+version: "20.15.2"
+task_logical_name: 定义IPsec保护数据流(IPsec ACL)
+task_layer: atom
+task_intent: 增加IPsec专用ACL规则组与高级ACL规则，定义需要IPsec保护的数据流(感兴趣流)。IPsec ACL 仅支持源/目的IP匹配，不支持端口
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ACLGROUPIPSEC
+status: inferred   # 命令级审查(2026-07-02): binding 准确(ACLRULEADV4IPSEC无端口+ACLACTION固定Permit),P0聚合债已标(rule 0-00273);IPFD命令CommandParameter 缺(rule 0-00077 标记)
+source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md, IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLGROUPIPSEC:ACLNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(规则组标识，可为编号或名称)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLRULENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:ACLRULENAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLACTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:ACLACTION
+    binding_type: fixed
+    value: Permit
+    variable_source: local_planned   # 本端规划；IPsec保护流固定 Permit
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLPROTOCOL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:ACLPROTOCOL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；0=IP
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLSOURCEIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:ACLSOURCEIP
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(本端保护子网/主机IP)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLSRCWILD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:ACLSRCWILD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(反掩码)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLDESTIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:ACLDESTIP
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(对端保护子网/主机IP)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:ACLDESTWILD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:ACLDESTWILD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00211:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4IPSEC:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 引用 VNRS 侧 VPN实例
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+notes: "聚合 atom: ADD ACLGROUPIPSEC(建规则组) + ADD ACLRULEADV4IPSEC(建高级IPv4 ACL规则)。注意: IPsec ACL 独立于 VNRS ACL(IPFD-012002),且仅支持源/目的IP匹配(不支持端口)。ACLACTION 固定 Permit(保护流)。命令级审查(2026-07-02): ACLRULEADV4IPSEC 真相表无端口段参数(SVRPORT* 等不存在)→不绑端口条件；ACLRULEID/ACLFRAGTYPE/ACLRULEDESCRIPTION ③ 未使用→不绑；ACLGROUPIPSEC 的 ACLSTEP/ACLTYPE/ACLMATCHORDER/ACLDESCRIPTION ③ 未使用→不绑(冷门参数)。聚合债(§B/E.2 未直接列但与 0-00209 同款)→rule 0-00273。VRFNAME 引用 0-00071 VPN实例(✓)。前置 ACLGROUPIPSEC + 协商链→rule 0-00077。CommandParameter 待抽取。"

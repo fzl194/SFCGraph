@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00318
+owner_task_ref: UDG@20.15.2@Task@0-00257
+rule_name: 0-00257 CFPROFILE≤20 + 上限 10000 + 立即生效 + 前置依赖
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00257
+  expression: |
+    ADD CONTCATEGBIND(atom 0-00257) 配置约束：
+    (1) 上限：单命令最大记录数为 10000(命令 notes 强约束)；超限→ADD 失败。
+    (2) CFPROFILE 绑定上限：每个 CFPROFILE 绑定的 CONTCATEGROUP 数量不能超过 20 个(命令 notes 强约束)；>20→ADD 失败。
+    (3) 立即生效：该命令执行后立即生效(命令 notes)。
+    (4) 前置依赖：CFPROFILENAME 引用 ADD CFPROFILE(atom 0-00252), CONTCATEGNAME 引用 ADD CONTCATEGROUP(atom 0-00256)——两者必须先建, 否则 ADD 失败。
+    (5) ACTION 3 路枚举 PASS/BLOCK/REDIRECT：原 binding ACTION 标 required(违反命令真相 optional 默认 PASS)→ 已改 optional；DP 0-00120 编排配套 REDIRECTNAME 必选/必不传。
+    (6) REDIRECTNAME conditional：ACTION=REDIRECT 时必选, 引用 ADD REDIRECT(atom 待建, 隐性前置依赖——REDIRECTNAME 必须先配置)。
+    (7) TIMERANGENAME optional：TimeRange 名称(对应 ADD TIMERANGE atom 待建, 主场景不配)。
+    (8) CFGDOMAINNAME optional：配置域, 主特性场景不配。
+violation_effect: 上限超限→ADD 失败；CFPROFILE 绑定 >20→ADD 失败；CFPROFILENAME/CONTCATEGNAME 未先建→命令引用失败；ACTION requiredness 误标→配置生成器无谓强制必选；REDIRECTNAME 错配(ACTION≠REDIRECT 时配 / ACTION=REDIRECT 时未配)→命令拒收
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。DP 0-00120 编排 ACTION 3-way + REDIRECTNAME 配套必选。"

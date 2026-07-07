@@ -51,7 +51,7 @@
       <div class="cmd-pane-head">
         <div class="doc-tabs" v-if="featureDocs.length > 1">
           <button v-for="(d, i) in featureDocs" :key="i" :class="['doc-tab', { active: activeDoc === i }]"
-                  @click="switchDoc(i)">{{ d.doc_title.slice(0, 22) }}</button>
+                  :title="d.doc_title" @click="switchDoc(i)">{{ docLabel(d) }}</button>
         </div>
         <span v-else>原始文档</span>
       </div>
@@ -83,7 +83,7 @@ const loading = ref(true)
 const feature = ref<any>(null)
 const mdContent = ref('')
 const leftTab = ref('feature')
-const featureDocs = ref<{ doc_path: string; doc_title: string }[]>([])
+const featureDocs = ref<{ doc_path: string; doc_title: string; doc_type?: string }[]>([])
 const activeDoc = ref(0)
 const currentDocPath = computed(() => featureDocs.value[activeDoc.value]?.doc_path || '')
 const relations = ref<any[]>([])
@@ -119,6 +119,14 @@ function renderValue(v: any): string {
   if (typeof v === 'boolean') return renderMarkdown(v ? '是' : '否')
   return renderMarkdown(String(v))
 }
+const DOC_TYPE_LABELS: Record<string, string> = {
+  overview: '概述', activation: '激活', reference: '参考信息', principle: '原理',
+  debug: '调测', flow: '流程', other: '文档',
+}
+function docLabel(d: { doc_type?: string; doc_title: string }): string {
+  return DOC_TYPE_LABELS[d.doc_type || ''] || d.doc_title.slice(0, 18)
+}
+
 const sections = computed(() => {
   if (!feature.value) return []
   const out: { key: string; label: string; html: string }[] = []

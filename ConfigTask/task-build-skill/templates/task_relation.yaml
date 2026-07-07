@@ -1,0 +1,20 @@
+# TaskRelation 模板（独立对象）。权威字段见 改进后三层图谱定义.md §7。
+# relation_type：precedes|depends_on|must_be_last|excludes|fallback_to|parallel_with|expands_to|contains
+relation_id: UDG@20.15.2@TaskRelation@0-00001
+from_task_ref: UDG@20.15.2@Task@0-00001
+to_task_ref: UDG@20.15.2@Task@0-00002
+relation_type: precedes
+requiredness: required                        # required|optional|conditional
+condition:                                    # 条件关系时填
+  expression_type: none                       # none|decision_option|feature_selected|parameter_value|task_selected
+  expression: ""
+condition_ref: ""                             # 触发该关系的决策点/选项/上游条件引用
+propagated_context:                           # 从前 task 向后传播的上下文
+  - context_name: URRNAME
+    source_ref: UDG@20.15.2@Task@0-00001:URRNAME
+    target_ref: UDG@20.15.2@Task@0-00002:UPURRNAME1
+source_static_refs:                           # 来源静态边（如命令层 references）
+  - UDG@20.15.2@CommandParameter@ADD URRGROUP:UPURRNAME1
+source_evidence_ids:
+  - output/.../部署UPF_28493406.md
+confidence: 0.9

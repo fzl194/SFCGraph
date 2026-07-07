@@ -1,0 +1,36 @@
+task_id: UDG@20.15.2@Task@0-00218
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置PFCP负荷上报
+task_layer: atom
+task_intent: 配置用户面负荷上报开关及阈值(LOADRPTSW/RPTTHD/STOPTHD/RANGETHD)，使 UDG 经 PFCP 向控制面(SGW-C/PGW-C/SMF)上报网元负荷，供其选择用户面网元
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET PFCPLOADRPT
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 4/4 已绑, LOADRPTSW=ENABLE 固定
+source_evidence_ids: [GWFD-020154/激活用户面负载信息上报_88713326.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00218:LOADRPTSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET PFCPLOADRPT:LOADRPTSW
+    binding_type: fixed
+    value: ENABLE
+    requiredness: required
+    source_evidence_ids: [GWFD-020154/激活用户面负载信息上报_88713326.md]
+  - binding_id: UDG@20.15.2@Task@0-00218:RPTTHD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET PFCPLOADRPT:RPTTHD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(负荷百分比，超阈值上报)
+    requiredness: required
+    source_evidence_ids: [GWFD-020154/激活用户面负载信息上报_88713326.md]
+  - binding_id: UDG@20.15.2@Task@0-00218:STOPTHD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET PFCPLOADRPT:STOPTHD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(停止上报阈值，须 < RPTTHD)
+    requiredness: required
+    source_evidence_ids: [GWFD-020154/激活用户面负载信息上报_88713326.md]
+  - binding_id: UDG@20.15.2@Task@0-00218:RANGETHD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET PFCPLOADRPT:RANGETHD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(变化范围阈值，负荷变化超此值触发上报)
+    requiredness: required
+    source_evidence_ids: [GWFD-020154/激活用户面负载信息上报_88713326.md]
+notes: "SET PFCPLOADRPT(单命令原子)。LOADRPTSW=ENABLE 固定(本特性目的即开启上报)；三个阈值来源=本端规划(md数据规划表)。适用 SGW-U/PGW-U/UPF。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02): 0 缺口(bound 4/4=LOADRPTSW+RPTTHD+STOPTHD+RANGETHD); 命令真相除LOADRPTSW为optional外其余3个均为conditional, 020154特性场景使能上报必设4参数故均按required绑; 阈值设计 STOPTHD(45) < RPTTHD(50) + RANGETHD(5) 配套, 数据规划表已正确; 系统初始记录DISABLE。"

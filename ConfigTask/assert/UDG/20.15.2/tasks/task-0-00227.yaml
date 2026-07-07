@@ -1,0 +1,62 @@
+task_id: UDG@20.15.2@Task@0-00227
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置TWAMP客户端(Light模式)
+task_layer: atom
+task_intent: 配置 TWAMP 客户端(CLIENTID/AFTYPE/TWAMPARCH=LIGHT/LOCALIPV4/PEERIPV4/LLOCALUDPPORT/LPEERUDPPORT/VRFNAME)，UDG 作发送端主动发起探测。Light 模式独有
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD TWAMPCLIENT
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00227:CLIENTID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:CLIENTID
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(客户端ID，整数 1~12000)
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00227:AFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:AFTYPE
+    binding_type: fixed
+    value: IPV4
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00227:TWAMPARCH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:TWAMPARCH
+    binding_type: fixed
+    value: LIGHT   # Light 模式固定
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00227:LOCALIPV4
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:LOCALIPV4
+    binding_type: reference
+    variable_source: global_planned   # 全网规划(须与逻辑接口IP一致)
+    source_ref: UDG@20.15.2@Task@0-00225:IPV4ADDRESS
+    requiredness: conditional   # 校正：命令真相为 conditional(AFTYPE=IPV4 时必填)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00227:PEERIPV4
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:PEERIPV4
+    binding_type: variable
+    variable_source: peer_planned   # 对端规划(对端 eNodeB/gNodeB IP)
+    requiredness: conditional   # 校正：命令真相为 conditional(AFTYPE=IPV4 时必填)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00227:LLOCALUDPPORT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:LLOCALUDPPORT
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(本端UDP端口，整数 65450~65530)
+    requiredness: conditional   # 校正：命令真相为 conditional(AFTYPE=IPV4 时必填)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00227:LPEERUDPPORT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:LPEERUDPPORT
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(对端UDP端口，整数 1~65535)
+    requiredness: conditional   # 校正：命令真相为 conditional(AFTYPE=IPV4 时必填)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00227:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPCLIENT:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD TWAMPVPNINST 的 VRFNAME
+    source_ref: UDG@20.15.2@Task@0-00224:VRFNAME
+    requiredness: optional   # 校正：命令真相为 optional，本特性实际必填(均引用 0-00224)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+notes: "ADD TWAMPCLIENT(Light 模式独有，UDG 作发送端)。TWAMPARCH=LIGHT 固定；LOCALIPV4 引用 ADD TWAMPLOGICINF(0-00225) 且须一致；VRFNAME 引用 ADD TWAMPVPNINST(0-00224)；CLIENTID 将被 ADD TWAMPSENDER(0-00228) 引用。Light 不走 TCP 控制连接(静态配置代替)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：8/10 参数绑定(无功能缺口)；缺 DSCP/DESCRIPTION 为 optional 冷门(命令真相，特性 md 未用)；校正 requiredness：LOCALIPV4/PEERIPV4/LLOCALUDPPORT/LPEERUDPPORT 改 conditional(命令真相 AF=IPV4 时)；VRFNAME 改 optional(命令真相，本特性必填)。feature-挂 DP 0-00036(TWAMP 模式)已表达 LIGHT/FULL 互斥；rule 0-00081(TWAMP 一致性)已表达 LOCALIPV4=逻辑接口IP/VRFNAME 一致性。命令最大记录数 12000 + CLIENTID 1~12000 + UDP 端口范围由 CommandParameter 校验承担。"

@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@0-00202
+nf: UDG
+version: "20.15.2"
+task_logical_name: 流分类绑定ACL规则
+task_layer: atom
+task_intent: 在流分类下绑定ACL规则组(将ACL匹配规则接入流分类)。支持按名称和编号两种绑定方式
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD QOSRULEACL
+status: inferred   # IPFD命令；CommandParameter 待抽取(缺参数)
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00202:CLASSIFIERNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSRULEACL:CLASSIFIERNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD MQCCLASSIFIER:CLASSIFIERNAME (0-00201)
+    source_ref: UDG@20.15.2@Task@0-00201:CLASSIFIERNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00202:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSRULEACL:IPVERSION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (IPv4/IPv6)
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00202:ACLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSRULEACL:ACLTYPE
+    binding_type: fixed
+    value: acl-name
+    variable_source: local_planned   # 本端规划；主场景固定 acl-name
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00202:ACLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSRULEACL:ACLNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD ACLGROUP:ACLNAME (0-00197)
+    source_ref: UDG@20.15.2@Task@0-00197:ACLNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "流分类←ACL规则组 绑定。ACLTYPE=acl-name(按名称)或 acl-number(按编号)，本特性主场景固定 acl-name。CommandParameter 待抽取。命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00289(最大记录数 65536 + ACLNUM 条件必填 + ACL 计数不参与 + IPVERSION 配套)；binding=4(命中真相 5 项中的 4 项主项)，未含 ACLNUM(命令真相 conditional，ACLTYPE=acl-number 时必填，§4.3 ③ 缺口标注)。"

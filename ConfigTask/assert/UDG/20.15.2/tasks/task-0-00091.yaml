@@ -1,0 +1,52 @@
+task_id: UDG@20.15.2@Task@0-00091
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置HTTP智能重定向动作
+task_layer: atom
+task_intent: 配置 HTTP 智能重定向动作（目标 server URL+多扩展过滤器组合+携带信息+错误码），按 HTTP 错误码触发重定向到第三方 server（GWFD-110284 HTTP智能重定向专属）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SMARTHTTPREDIR
+status: inferred   # 命令级审查(2026-07-02)：1 特性使用，无跨特性分叉；补 rule 投影
+source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00091:SMTHTTPREDINAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:SMTHTTPREDINAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00091:SERVERURL, parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:SERVERURL, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00091:EXTFLTTYPE1, parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:EXTFLTTYPE1, binding_type: variable, variable_source: local_planned, requiredness: required, value: AND, source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]}
+  - binding_id: UDG@20.15.2@Task@0-00091:EXTFLTNAME1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:EXTFLTNAME1
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD EXTENDEDFILTER 扩展过滤器1）
+    source_ref: UDG@20.15.2@Task@0-00022:EXTFLTNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]
+  - {binding_id: UDG@20.15.2@Task@0-00091:EXTFLTTYPE2, parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:EXTFLTTYPE2, binding_type: variable, variable_source: local_planned, requiredness: conditional, value: AND, source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]}
+  - binding_id: UDG@20.15.2@Task@0-00091:EXTFLTNAME2
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:EXTFLTNAME2
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD EXTENDEDFILTER 扩展过滤器2，可有多个）
+    source_ref: UDG@20.15.2@Task@0-00022:EXTFLTNAME
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]
+  - binding_id: UDG@20.15.2@Task@0-00091:APPENDINFONAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:APPENDINFONAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD REDIRAPPENDINFO 重定向携带信息名）
+    source_ref: UDG@20.15.2@Task@0-00023:APPENDINFONAME
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]
+  - binding_id: UDG@20.15.2@Task@0-00091:BINDERRCODENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SMARTHTTPREDIR:BINDERRCODENAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD ERRORCODE 错误码名）
+    source_ref: UDG@20.15.2@Task@0-00089:ERRORCODENAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]
+notes: |
+  命令级审查(2026-07-02) 演进。
+  1 特性使用(110284 HTTP智能重定向专属)，无跨特性分叉，不建 DP。
+  数据来源: SMTHTTPREDINAME/SERVERURL/EXTFLTTYPE1/EXTFLTTYPE2=本端规划；EXTFLTNAME1/EXTFLTNAME2/APPENDINFONAME/BINDERRCODENAME=已配置数据中获取(reference)。
+  任务示例绑定 2 个扩展过滤器(URL+USERAGENT 组合匹配)，EXTFLTTYPE2/EXTFLTNAME2 为条件必选(扩展过滤器可多个，重复 EXTFLTTYPE/N 对)。
+  缺参数清单（§4.3 ③ 缺口标注）：ERRCODEFLAG/ERRCODENAME/USERDEFINENAME/USERDEFINEVALUE/EXTFLTTYPE3-5/EXTFLTNAME3-5/CFGDOMAINNAME 共 11 个冷门参数不绑（主特性走 BINDERRCODENAME 不走 ERRCODEFLAG；2 组过滤器已足；USERDEFINENAME/VALUE 按定制键值场景不补）。
+  配套 rule 0-00297 投影：最大记录数 50 + 立即生效 + URL 特殊字符转义(?→%3f、 空格→%20、逗号→%2c) + 最多 5 组扩展过滤器 + 引用 EXTENDEDFILTER/REDIRAPPENDINFO/ERRORCODE + 引用 RULE(POLICYTYPE=SMARTREDIRECT)。
+  SMTHTTPREDINAME 产出对象被 ADD RULE(POLICYTYPE=SMARTREDIRECT) 的 POLICYNAME 引用(reference)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

@@ -1,0 +1,27 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00019
+owner_task_ref: UDG@20.15.2@Task@0-00007   # 挂 atom(ADD FLOWFILTER)：FLOWFILTERTYPE 决定流过滤器采用普通三四层/七层规则还是外部OTT规则库
+decision_name: 流过滤器类型
+decision_question: ADD FLOWFILTER 的 FLOWFILTERTYPE 取何值？（普通流过滤器匹配三四层/七层过滤条件；EXTEROTTDB 流过滤器匹配外部 OTT 业务规则库。命令集不变，仅匹配规则来源不同。）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-110321/激活支持OTT业务规则库功能_05455409.md]
+options:
+  - option_id: opt-flowfiltertype-normal
+    option_name: 普通流过滤器
+    option_value: NORMAL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, effect_type: changes_scope, effect_detail: 流过滤器绑定三四层(FILTER/FLTBINDFLOWF)+七层(L7FILTER/PROTBINDFLOWF)过滤条件，需 SET EXTOTTMATCHSW 不开启}
+  - option_id: opt-flowfiltertype-exterottdb
+    option_name: 外部OTT规则库流过滤器
+    option_value: EXTEROTTDB
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERTYPE, effect_type: sets_value_pattern, effect_detail: 流过滤器匹配 LOD EXTERNALDB 加载的外部 OTT 业务规则库；须先加载规则库+SET EXTOTTMATCHSW 全局开关使能}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00092, effect_type: requires, effect_detail: 须先 LOD EXTERNALDB 加载 OTT 规则库}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00093, effect_type: requires, effect_detail: 须 SET EXTOTTMATCHSW 使能全局 OTT 匹配开关}
+default_option: opt-flowfiltertype-normal
+notes: |
+  B03 批次反推新建(GWFD-110321)。ADD FLOWFILTER(0-00007) 当前仅录 FLOWFILTERNAME，未录 FLOWFILTERTYPE——本特性新增 EXTEROTTDB 维度。
+  按"演进只记录不执行"边界，本 pass 仅建 DP 标注演进建议，不修改 0-00007 的 binding。
+  GWFD-110321 选 opt-flowfiltertype-exterottdb；其余 17 个引用 0-00007 的特性选 opt-flowfiltertype-normal(默认)。

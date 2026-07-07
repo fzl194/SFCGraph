@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@00009
+task_logical_name: 绑定七层过滤条件到流过滤器
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD PROTBINDFLOWF
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD PROTBINDFLOWF:FLOWFILTERNAME
+        binding_type: reference
+        source_ref: ""  # ←ADD FLOWFILTER
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD PROTBINDFLOWF:PROTOCOLNAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 协议名
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD PROTBINDFLOWF:L7FILTERNAME
+        binding_type: reference
+        source_ref: ""  # ←ADD L7FILTER
+task_category: 配置
+status: active
+source_evidence_ids: []

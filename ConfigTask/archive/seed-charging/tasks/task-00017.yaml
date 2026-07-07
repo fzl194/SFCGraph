@@ -1,0 +1,27 @@
+task_id: UDG@20.15.2@Task@00017
+task_logical_name: 设置全局默认配额
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@SET UPDEFAULTQUOTA
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:USERTYPE
+        binding_type: variable
+        variable_source: decision_driven
+        note: 用户类型
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTSWITCH
+        binding_type: variable
+        variable_source: local_planned
+        note: 默认配额开关
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTNEWSER
+        binding_type: variable
+        variable_source: local_planned
+        note: 新用户默认配额
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTOTHER
+        binding_type: variable
+        variable_source: local_planned
+        note: 其他用户默认配额
+task_category: 配置
+status: active
+source_evidence_ids: []

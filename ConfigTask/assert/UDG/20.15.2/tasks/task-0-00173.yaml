@@ -1,0 +1,24 @@
+task_id: UDG@20.15.2@Task@0-00173
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置全局下行数据长时间缓存个数
+task_layer: atom
+task_intent: 配置 UDG 全局下行数据长时间缓存的最大缓存个数与储存方式（eDRX 模式下整机级长时间下行数据缓存）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET GLBDLLTBUFFER
+status: inferred   # 命令级审查(2026-07-02) 校准：bound 2/2 与命令真相一致, 0 缺口；MAXBUFFERNUM/BUFFERMODE 跨特性 3/3 一致 (本端规划, BUFF_MODE_RING)，无 decision_driven 需求
+source_evidence_ids: [GWFD-110601/激活NB-IoT eDRX模式_67487577.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00173:MAXBUFFERNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLBDLLTBUFFER:MAXBUFFERNUM
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；与 DDN ACK 携带缓存个数取最小值
+    requiredness: required
+    source_evidence_ids: [GWFD-110601/激活NB-IoT eDRX模式_67487577.md]
+  - binding_id: UDG@20.15.2@Task@0-00173:BUFFERMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLBDLLTBUFFER:BUFFERMODE
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-110601/激活NB-IoT eDRX模式_67487577.md]
+notes: "GWFD-110601(SGW-U 专属)。md 数据规划表 MAXBUFFERNUM=本端规划(取值样例 16)、BUFFERMODE=本端规划(取值样例 BUFF_MODE_RING)。md 注: MAXBUFFERNUM 与 DDN ACK 携带缓存个数取最小值；若 DDN ACK 未携带，用本参数；生效优先级 APN>全局。CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：bound=2/2 与命令真相一致，0 缺口；BUFFERMODE 跨 3 特性取值一致(BUFF_MODE_RING)，非 decision_driven；MAXBUFFERNUM 跨 3 特性均=16 局部规划，无分叉。rule 0-00346 投影 max_records=1 + 对新数据流生效 + 不配APN场景生效 + 超 Serving PLMN Downlink Rate Limit 丢包告警。"

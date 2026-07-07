@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00382
+owner_task_ref: UDG@20.15.2@Task@0-00231   # 挂 atom ADD IPSQMSHAPING
+rule_name: ADD IPSQMSHAPING 规格 4000 + 消耗 CPU 警告 + 只对新增承载生效
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD IPSQMSHAPING
+  expression: |
+    ADD IPSQMSHAPING 命令最大记录数为 4000（命令 notes 强约束），超出被拒。
+    该命令执行后只对之后发生承载更新的用户或者新激活用户生效（命令 notes 明示）。
+    配置 IPSQM 整形速率功能时会消耗 CPU，影响数据转发性能，开启前请联系华为技术人员确认（命令 notes 操作建议）。
+    CIR 取值范围 1～10000 Mbps（CommandParameter 校验承担）。
+violation_effect: 上限超限→ADD 失败；存量用户不生效→需提前评估；CPU 性能下降→未预警
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：最大记录数 4000 + 仅新增承载生效 + CPU 性能告警 + CIR 范围。3 缺口中 PEERIPV6（对端 IPv6 基站）/VPNINSTANCE（跨 VRF 整形）/DESCRIPTION（备注）均 optional(命令真相) 且特性 md 未用，冷门不绑。feature-挂 rule 0-00082（IPSQM 增强须先核心整形）已表达 ADD IPSQMSHAPING 前置。"

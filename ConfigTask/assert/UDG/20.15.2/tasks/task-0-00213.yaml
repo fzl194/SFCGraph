@@ -1,0 +1,62 @@
+task_id: UDG@20.15.2@Task@0-00213
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IKE安全提议
+task_layer: atom
+task_intent: 增加IKE安全提议(认证方法PSK/RSA、认证算法、加密算法、完整性算法、DH组)。PROPOSALNUMBER 仅本端记录编号，无需与对端一致
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IKEPROPOSAL
+status: inferred  # 命令级审查(2026-07-02): 4 冷门缺口(REAUTHINTERVAL/SIGHASHALGNEGSW/SIGNPADDING/ASYMENCRALG)按通用配置门槛不绑; 7/11 已绑, 4 个 DP0-00033 编排
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00213:PROPOSALNUMBER
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPROPOSAL:PROPOSALNUMBER
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(1-100, 仅本端记录编号)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00213:AUTHMETHOD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPROPOSAL:AUTHMETHOD
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商；缺省 PSK，国密/RSA 场景分叉
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00213:AUTHALGORITHM
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPROPOSAL:AUTHALGORITHM
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00213:ENCRALGORITHM
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPROPOSAL:ENCRALGORITHM
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商；国密场景=国密加密算法
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00213:INTEGALGORITHM
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPROPOSAL:INTEGALGORITHM
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: conditional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00213:DHGROUP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPROPOSAL:DHGROUP
+    binding_type: variable
+    variable_source: peer_planned   # 对端协商；不能为 None，建议 Dh_group19
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00213:SADURATION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPROPOSAL:SADURATION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(SA持续时长，秒)
+    requiredness: optional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+notes: "IKE安全提议。AUTHMETHOD 缺省 Pre_share(PSK)，需经 ADD IKEPEER 配 PRESHAREDKEY 否则 SA 协商失败。国密场景算法集分叉(DP 0-00033)。设备同时开 IKEv1+IKEv2，缺省 IKEv2，对端不支持则禁用 IKEv2 走 IKEv1。CommandParameter 待抽取。命令级审查(2026-07-02): 4 冷门缺口(REAUTHINTERVAL重认证间隔/SIGHASHALGNEGSW签名哈希算法协商开关/SIGNPADDING签名填充方式/ASYMENCRALG非对称加密算法)命令真相均 conditional 仅 AUTHMETHOD=RSA时生效, 4 IPSec场景均用 PSK → 按通用配置门槛不绑; 7/11 已绑(PROPOSALNUMBER+AUTHMETHOD+AUTHALGORITHM+ENCRALGORITHM+INTEGALGORITHM+DHGROUP+SADURATION); 4 算法 binding 由 DP 0-00033 编排 ESP/AH/算法/封装模式分叉。"

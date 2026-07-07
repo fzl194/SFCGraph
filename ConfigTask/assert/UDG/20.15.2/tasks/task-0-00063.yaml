@@ -1,0 +1,85 @@
+task_id: UDG@20.15.2@Task@0-00063
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPv6静态路由
+task_layer: atom
+task_intent: 增加IPv6静态路由（目的=冗余备份重定向IPv6→出接口=Tunnel），将下行IPv6流量导入GRE备份隧道；可选下行缺省低优先级用户网段路由
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SRROUTE6
+status: inferred   # 命令级审查(2026-07-02)：覆盖 010107/020402 多场景，跨场景分叉已 DP 化(IPv6 对偶于 SRROUTE)
+decision_refs: [UDG@20.15.2@DecisionPoint@0-00076]   # ADD SRROUTE6 场景选择(atom级)
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00063:AFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:AFTYPE
+    binding_type: fixed
+    value: ipv6unicast   # 固定取值
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:PREFIX
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:PREFIX
+    binding_type: reference
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨场景取源分叉——010107=ref(0-00055 重定向IPv6/128)；020402=peer_planned(如 fc00:1000::1)
+    source_ref: UDG@20.15.2@Task@0-00055:IPV6ADDRESS   # 默认场景(010107)；其余场景见 DP 0-00076
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:MASKLENGTH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:MASKLENGTH
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(重定向路由=128, 用户网段路由=64)
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:VRFNAME
+    binding_type: reference
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨场景分叉——010107=ref(0-00041 VPNINST)；020402=VPN_CN 等业务 VPN
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE   # 默认场景(010107)；其余场景见 DP 0-00076
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:IFNAME
+    binding_type: reference
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨场景分叉——010107=ref(0-00056 GRE Tunnel)；020402=Ethernet 子接口(如 Ethernet70/0/4.1)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME   # 默认场景(010107)；其余场景见 DP 0-00076
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:BFDENABLE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:BFDENABLE
+    binding_type: fixed
+    value: FALSE
+    requiredness: optional
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:DHCPENABLE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:DHCPENABLE
+    binding_type: fixed
+    value: FALSE
+    requiredness: optional
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:NEXTHOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:NEXTHOP
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：020402=peer_planned 必配(如 fc00:1000::3)；010107=不配(走 Tunnel 出接口)
+    requiredness: conditional   # 由 DP 0-00076 场景选定
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:DESTVRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:DESTVRFNAME
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：020402 脚本设置(如 VPN_CN)；010107 不配
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:SESSIONNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:SESSIONNAME
+    binding_type: reference
+    variable_source: reference   # 命令级审查(2026-07-02)：若需绑定静态BFD会话，引用 ADD BFDSESSION(0-00082).SESSNAME；当前无 IPv6 静态+BFD 特性脚本(020402 走 OSPFv3+IPv6 BFD)
+    source_ref: UDG@20.15.2@Task@0-00082:SESSNAME
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+  - binding_id: UDG@20.15.2@Task@0-00063:PREFERENCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE6:PREFERENCE
+    binding_type: variable
+    variable_source: local_planned   # 命令级审查(2026-07-02)：010107 可选下行低优先级路由(默认60)；020402 不显式配(默认60)；值越大优先级越低
+    requiredness: optional   # 不填默认 60
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+notes: "一命令一atom：ADD SRROUTE6 唯一 atom，IPv6 对偶于 ADD SRROUTE(0-00062)，服务 2 特性(GWFD-010107 冗余重定向IPv6 / GWFD-020402 N6/Gi/SGi 接口IPv6组网)。binding 默认值=010107(冗余重定向IPv6)：PREFIX=ref(0-00055 重定向IPv6/128)、VRFNAME=ref(0-00041 VPNINST)、IFNAME=ref(0-00056 GRE Tunnel)、BFDENABLE/DHCPENABLE=FALSE、NEXTHOP/DESTVRFNAME/SESSIONNAME 不配。跨场景取源分叉参数(PREFIX/VRFNAME/IFNAME/NEXTHOP/DESTVRFNAME)variable_source=decision_driven，由 atom 级 DP 0-00076 选定场景覆盖(binding 级单 source_ref 为 schema 限制，默认值+场景覆盖见 DP impacts)。任务示例010107: 重定向路由(fc00:3::1/128), 可选用户网段路由(fc00:1::1/64)。命令级审查(2026-07-02)：rule 0-00183=记录数上限100000；rule 0-00184=__mpp_vpn_inner__ 禁默认IPv6路由。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

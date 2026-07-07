@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@1-00004
+nf: UDG
+version: "20.15.2"
+task_logical_name: 收尾
+task_layer: compound
+task_intent: 配置缺省费率→（可选）防欺诈URR列表→刷新生效
+task_category: configure
+ref: null
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+task_relations:
+  - relation_id: UDG@20.15.2@TaskRelation@0-00010
+    from_task_ref: UDG@20.15.2@Task@0-00013
+    to_task_ref: UDG@20.15.2@Task@0-00014
+    relation_type: precedes
+    requiredness: optional
+    condition_ref: UDG@20.15.2@DecisionPoint@0-00003   # 防欺诈开关=启用 才走
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - relation_id: UDG@20.15.2@TaskRelation@0-00011
+    from_task_ref: UDG@20.15.2@Task@0-00014
+    to_task_ref: UDG@20.15.2@Task@0-00015
+    relation_type: must_be_last
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: 0-00014（防欺诈）可选，由 DP 0-00003 门控；0-00015 REFRESHSRV 必须最后（ordering_rule 0-00008）。

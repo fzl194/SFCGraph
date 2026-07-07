@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00234
+owner_task_ref: UDG@20.15.2@Task@0-00147   # 挂 atom SET BGP（三命令聚合：SET BGP+ADD BGPVRF+ADD IMPORTROUTE）
+rule_name: SET BGP 高危 + 去使能副作用 + GR/BGPRIDAUTOSEL 邻居复位 + ASNUM+BGPENABLE 必配 + 系统初始记录
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: safety_constraint
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET BGP
+    - UDG@20.15.2@MMLCommand@ADD BGPVRF
+    - UDG@20.15.2@MMLCommand@ADD IMPORTROUTE
+  expression: |
+    SET BGP 操作不当会去使能 BGP，导致 BGP 功能不可用，并且所有历史 BGP 配置全部删除（高危命令）。
+    GRACEFULRESTART、BGPRIDAUTOSEL 参数变更会导致 BGP 邻居复位（运维窗口期慎用）。
+    新创建 BGP 必须至少配置 ASNUM 和 BGPENABLE（取值为 TRUE）两个参数。
+    如果去使能 BGP（BGPENABLE=FALSE），BGP 进程将被删除（级联影响 ADD BGPVRF/ADD IMPORTROUTE 配置）。
+    命令存在系统初始记录：BGPENABLE=TRUE，GRACEFULRESTART=FALSE，TIMEWAITFORRIB=300s，BGPRIDAUTOSEL=FALSE 等。
+    11 缺口（GRACEFULRESTART/TIMEWAITFORRIB/ASPATHLIMIT/CONFEDIDNUMBER/CONFEDNONSTANDED/CHECKFIRSTAS/BGPRIDAUTOSEL/KEEPALLROUTES/MEMORYLIMIT/GRPEERRESET/ISSHUTDOWN）路由交叉当前场景均用系统默认（GR=BGPENABLE 后 system-default），冷门 optional 不绑。
+    聚合债：本 atom 合并三命令 SET BGP/ADD BGPVRF/ADD IMPORTROUTE 为单一 BGP-VRF 引入 atom，ref 主指向 SET BGP；演进建议拆分为 0-00147（SET BGP）/0-00148（ADD BGPVRF）/0-00149（ADD IMPORTROUTE）三 atom，受本批次 atom ID 预算约束（0-00141~0-00150）合并。
+violation_effect: 去使能会删除所有 BGP 历史配置；GR/BGPRIDAUTOSEL 变更触发邻居复位；缺 ASNUM+BGPENABLE 报错
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes: 高危命令 + 去使能副作用（删除所有 BGP 配置）+ GR/BGPRIDAUTOSEL 邻居复位 + ASNUM+BGPENABLE(TRUE) 必配（缺一不可）+ 系统初始记录（BGPENABLE/GRACEFULRESTART/TIMEWAITFORRIB/BGPRIDAUTOSEL 默认值）。ASNUM 取值范围 1~4294967295 由 CommandParameter 校验承担。本 atom 为三命令聚合（SET BGP 全局+ADD BGPVRF 实例+ADD IMPORTROUTE 引入 wlr），标记『演进建议拆分』债；本批次不拆。"

@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00372
+owner_task_ref: UDG@20.15.2@Task@0-00139   # 挂 atom SET APNPPPACCESS
+rule_name: SET APNPPPACCESS 上限 10000 + 立即生效 + 系统初始记录 + 已接入用户不生效
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00139
+  expression: |
+    SET APNPPPACCESS 系统最多支持配置 10000 条 ApnPppAccess，每 APN 一条。
+    立即生效：本命令执行后立即生效。
+    系统初始记录：存在系统初始记录，初始值为 AUTHENTICATION=DISABLE / MRU=NULL。
+    行为约束：APN 实例下有用户存在时允许修改 AUTHENTICATION 配置，但修改后的配置对已接入的用户不生效（新激活用户生效）。
+    适用 NF：PGW-U、UPF。
+violation_effect: 超 10000 上限新增失败；已激活用户配置不生效需重激活/刷新
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/会话管理/L2TP隧道管理/PPP接入/设置APN PPP配置（SET APNPPPACCESS）_35373547.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+  - GWFD-020412/本地配置方式激活L2TP VPN_40342129.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(10000 上限 + 立即生效 + 系统初始记录 + 已接入用户不生效)。L2TP 场景下为可选步骤。"

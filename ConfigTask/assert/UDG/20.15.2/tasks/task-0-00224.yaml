@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00224
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建TWAMP VPN实例
+task_layer: atom
+task_intent: 创建 TWAMP 探测专用的 VPN 实例(VRFNAME)，TWAMP Full/Light 两模式共有前置
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD TWAMPVPNINST
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00224:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPVPNINST:VRFNAME
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(须与外联口 VPN 实例一致)
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+notes: "ADD TWAMPVPNINST(TWAMP 公共前置，Full/Light 共有)。VRFNAME 来源=全网规划(md 数据规划表，须与外联口 VPN 实例一致)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：1/1 参数绑定完整(无缺口)；未配置 atom-挂 rule(命令 notes 无规格/上限/唯一性硬约束，最大记录数 32 适用 5 模组足够宽裕，无须独立 rule)；未配置 atom-挂 DP(VRFNAME 全网规划单一来源，无跨特性分叉)；feature-挂 rule 0-00081(TWAMP 一致性)+ DP 0-00036(模式) 已表达模式互斥与 IP/VRFNAME 一致性。"

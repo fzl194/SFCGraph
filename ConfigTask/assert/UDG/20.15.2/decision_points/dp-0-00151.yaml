@@ -1,0 +1,32 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00151
+owner_task_ref: UDG@20.15.2@Task@0-00280   # 挂 atom SET NETYPE（atom-级 DP，跨场景 网元形态 取值）
+decision_name: SET NETYPE 网元形态跨场景取值
+decision_question: UDG 实际部署的网元形态是什么？（合一形态 vs 各业务独立形态 vs 国际漫游独立关口局形态）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-112001/初始配置_80688502.md]
+options:
+  - option_id: opt-netype-combined-proxyupf
+    option_name: 合一形态（ProxyUPF+ProxySGWU+PGW-U 合一实例，本特性场景）
+    option_value: GGSNU-0&PGWU-1&ProxySGWU-1&SGWU-0&UPF-0&ProxyUPF-1
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00280:NETYPEENUM, effect_type: sets_value_pattern, effect_detail: NETYPEENUM 设为合一形态位图（本特性合一形态，可与 ProxySGWU 一起开启）}
+  - option_id: opt-netype-proxy-sgwu-standalone
+    option_name: 独立 ProxySGWU（独立关口局承载国际漫游语音业务的 ProxySGW 形态）
+    option_value: ProxySGWU-1
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00280:NETYPEENUM, effect_type: sets_value_pattern, effect_detail: NETYPEENUM=ProxySGWU-1（仅独立关口局设备，其他场景报错）}
+  - option_id: opt-netype-pgwu-standalone
+    option_name: 独立 PGW-U（PGW-U 形态，无 Proxy 漫游）
+    option_value: PGWU-1
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00280:NETYPEENUM, effect_type: sets_value_pattern, effect_detail: NETYPEENUM=PGWU-1（独立 PGW-U 形态）}
+  - option_id: opt-netype-upf-standalone
+    option_name: 独立 UPF（UPF 形态，无 Proxy 漫游）
+    option_value: UPF-1
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00280:NETYPEENUM, effect_type: sets_value_pattern, effect_detail: NETYPEENUM=UPF-1（独立 UPF 形态）}
+default_option: opt-netype-combined-proxyupf
+notes: "命令级审查(2026-07-02) 新建 atom-级 DP（不新建 feature-级 DP，挂在 atom 0-00280 上表达跨场景取值）。SET NETYPE 命令 notes 强约束：ProxySGWU 限于独立关口局设备承载国际漫游语音业务，其他场景不能配置；ProxyUPF 同上限制。GWFD-112001 合一形态场景（默认选项）数据规划表 NETYPEENUM=GGSNU-0&PGWU-1&ProxySGWU-1&SGWU-0&UPF-0&ProxyUPF-1。本 DP 驱动的 binding 已绑 0-00280:NETYPEENUM（decision_ref=dp-0-00151），rule 0-00396 表达 ProxySGWU/ProxyUPF 仅限独立关口局的安全约束。"

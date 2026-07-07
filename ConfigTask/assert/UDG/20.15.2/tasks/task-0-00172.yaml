@@ -1,0 +1,19 @@
+task_id: UDG@20.15.2@Task@0-00172
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置全局下行数据缓存时长
+task_layer: atom
+task_intent: 配置 UDG 全局 NB-IoT 用户下行数据缓存时长（eDRX 模式下 MME 未应答 DDN 时下行数据缓存）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET GLBDLBUFTIME
+status: draft   # B07 批次新建；命令命中 mml_commands.jsonl，CommandParameter 待 CommandGraph 抽取(§6.B)
+source_evidence_ids: [GWFD-110601/激活NB-IoT eDRX模式_67487577.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00172:NBIOTUSER
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLBDLBUFTIME:NBIOTUSER
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（缓存时长，单位秒/分由命令定义）
+    requiredness: required
+    source_evidence_ids: [GWFD-110601/激活NB-IoT eDRX模式_67487577.md]
+status: inferred   # 命令级审查(2026-07-02) 校准：补规则 max_records=1 + 不配置APN场景下生效
+notes: "GWFD-110601(SGW-U 专属)。md 数据规划表 NBIOTUSER=本端规划、取值样例 20。eDRX 模式下整机级下行数据缓存时长；若 MME 通过 DDN ACK 下发缓存时长，取 MME 下发值(生效优先级 APN>全局)。CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：缺口 NORMALUSER(3~15s 普通用户时长)/REDCAPNRUSER(3~200s RedCap-NR 时长) 命令真相均 optional 且每参数仅 1 特性数据规划表用到(NB-IoT/eMTC/5G 各取一参数)，按通用配置门槛不绑——该 atom 仅承载 NB-IoT 路径(NBIOTUSER)；eMTC 时长 NORMALUSER/5G 时长 REDCAPNRUSER 由 atom 0-00174 APN 级同参数覆盖(本端规划同上, 由 SET APNDLBUFTIME 替代配置全局), 不需重复绑全局参数。rule 0-00345 投影 max_records=1 + 立即生效 + 不配APN场景生效 + 缓存时长过大性能下降告警。"

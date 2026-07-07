@@ -1,0 +1,28 @@
+rule_id: UDG@20.15.2@TaskRule@0-00307
+owner_task_ref: UDG@20.15.2@Task@0-00151
+rule_name: 0-00151 60s 生效 + 上限 100000 + 90% 告警 + DOMAINVALUE 特殊字符 + PRIORITY/CFGDOMAINNAME 默认
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00151
+  expression: |
+    ADD HOST(atom 0-00151) 配置约束：
+    (1) 60s 生效：该命令执行后 60s 生效(命令 notes 强约束)——配置后立即下发业务流不会命中，需等待 60s。
+    (2) 上限 100000：该命令最大记录数为 100000(命令 notes 强约束)——超限→ADD 失败。
+    (3) 90% 告警：当配置记录数大于规格的 90% 时，会上报 ALM-135602215 "配置数量超阈值" 告警；配置记录数 ≤ 90% 时自动恢复(命令 notes)——阈值可通过 MOD CFGTHRESHOLD 命令修改。
+    (4) DOMAINVALUE 特殊字符：空格必须使用 %20 代替(命令 notes 强约束)——DOMAINVALUE 转义后长度不超过 120。
+    (5) HOSTNAME/DOMAINVALUE 长度：HOSTNAME 1~31 字符(不支持空格，不区分大小写)；DOMAINVALUE 1~63 字符(不区分大小写)。
+    (6) PRIORITY 缺口：optional 默认 65535(命令真相 optional)；1~65535 整数，值越小优先级越高——本 atom 当前 binding 缺口，主场景未用→按默认 65535 行为(rule 提示)。
+    (7) CFGDOMAINNAME 缺口：optional 配置域名称 1~31 字符——本 atom 当前 binding 缺口，主场景未用→不配。
+    (8) 数据源差异：HOSTNAME 命令 parameter_description=global_planned，数据规划表=本端规划——按 SKILL §4.5 数据源以命令真相为准；本 atom 沿用 local_planned 标注，单特性无分叉；如后续特性揭示 HOSTNAME 全局唯一性需求，则升 global_planned。
+violation_effect: 上限超限→ADD 失败；未等 60s→业务流未命中；DOMAINVALUE 含空格未转义→ADD 拒收；配置达 90% 阈值未扩容→ALM-135602215 告警
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids:
+  - GWFD-110203/配置HTTPS业务地址识别_24082599.md
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。独占段 0-00307~。PRIORITY/CFGDOMAINNAME optional 缺口按 §4.3 主场景未用暂不绑。"

@@ -1,0 +1,29 @@
+task_id: UDG@20.15.2@Task@2-00011
+nf: UDG
+version: "20.15.2"
+task_logical_name: 支持事件计费
+task_layer: feature
+task_intent: >-
+  UPF 按业务事件计费（metering=EVENT 变体）；命令集与内容计费 backbone 完全重合，
+  差异仅在 ADD URR 的 OFFMETERINGTYPE/ONLMETERINGTYPE 取 EVENT。
+  事件计费仅在线 SCUR；3 计费点（REQUEST/RESPONSE/FINISH）与 ECUR 在 UNC(PGW-C) 侧，
+  UDG 不感知；在线配额单位 serviceSpecificUnits。
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020306
+status: inferred
+source_evidence_ids:
+  - GWFD-020306/部署UPF_28654078.md
+  - GWFD-020306/GWFD-020306 支持事件计费特性概述_70518084.md
+  - GWFD-020306/GWFD-020306 支持事件计费参考信息_70518687.md
+  - GWFD-020306/实现原理（适用于Ga接口的离线计费用户）_73916515.md
+  - GWFD-020306/实现原理（适用于Gy接口的在线计费用户）_73548978.md
+  - GWFD-020306/实现原理（适用于Nchf_N40接口的融合计费用户）_70518685.md
+task_relations:
+  # 复用 backbone compounds（与 2-00001 内容计费共享），全程无新增 atom
+  - {relation_id: UDG@20.15.2@TaskRelation@0-01954, from_task_ref: UDG@20.15.2@Task@1-00001, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020306/部署UPF_28654078.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-01955, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020306/部署UPF_28654078.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-01956, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@1-00004, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020306/部署UPF_28654078.md]}
+notes: >-
+  GWFD-020306。metering=EVENT 由 DP 0-00001（计费方式）option 在 ADD URR 上选 EVENT 取值实现，
+  不另建 task 树。事件计费的三计费点（REQUEST/RESPONSE/FINISH）和 ECUR 是 UNC 侧逻辑，UDG 侧零额外命令。
+  与 2-00009（时长 TIME）/2-0000X（流量 VOLUME）同属"内容计费 backbone + metering 变体"族。

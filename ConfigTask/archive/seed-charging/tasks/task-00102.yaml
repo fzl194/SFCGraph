@@ -1,0 +1,29 @@
+task_id: UDG@20.15.2@Task@00102
+task_logical_name: 过滤链
+task_layer: compound
+nf: UDG
+version: 20.15.2
+task_summary: "配置三四层/七层过滤器→流过滤器→绑定"
+task_relations:
+  - from_task_ref: UDG@20.15.2@Task@00004
+    to_task_ref: UDG@20.15.2@Task@00007
+    relation_type: precedes
+    propagated_context: FILTERNAME
+  - from_task_ref: UDG@20.15.2@Task@00005
+    to_task_ref: UDG@20.15.2@Task@00007
+    relation_type: precedes
+    propagated_context: FILTERNAME
+  - from_task_ref: UDG@20.15.2@Task@00006
+    to_task_ref: UDG@20.15.2@Task@00007
+    relation_type: precedes
+    propagated_context: L7FILTERNAME
+  - from_task_ref: UDG@20.15.2@Task@00007
+    to_task_ref: UDG@20.15.2@Task@00008
+    relation_type: precedes
+    propagated_context: FLOWFILTERNAME
+  - from_task_ref: UDG@20.15.2@Task@00007
+    to_task_ref: UDG@20.15.2@Task@00009
+    relation_type: precedes
+    propagated_context: FLOWFILTERNAME
+status: active
+source_evidence_ids: []

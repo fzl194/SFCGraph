@@ -1,0 +1,24 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00007
+owner_task_ref: UDG@20.15.2@Task@2-00005   # 挂 feature（task 级：PCC 部署拓扑）
+decision_name: PCC模式
+decision_question: 网络中是否存在 PCRF/PCF？（决定规则标识的激活语义。命令集不变。）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+options:
+  - option_id: opt-pcc-dynamic
+    option_name: 动态PCC(有PCRF/PCF)
+    option_value: DYNAMIC
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00010:RULENAME, effect_type: changes_scope, effect_detail: 规则可由 PCF 动态下发(动态规则)或预定义(UPF/SMF/PCF 同 RULENAME)；PCF 可随时安装/删除规则}
+      - {target_type: decision_point, target_ref: UDG@20.15.2@DecisionPoint@0-00005, effect_type: selects_option, effect_detail: PCC规则(与对端协商)}
+  - option_id: opt-pcc-local
+    option_name: 本地PCC(无PCRF/PCF)
+    option_value: LOCAL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00011:USERPROFILENAME, effect_type: changes_scope, effect_detail: SMF 下发 USERPROFILENAME 作为规则组标识激活 UPF 本地静态规则；SMF 不支持实时更新规则}
+      - {target_type: decision_point, target_ref: UDG@20.15.2@DecisionPoint@0-00006, effect_type: selects_option, effect_detail: PCC(与对端协商)}
+default_option: opt-pcc-dynamic
+notes: 动态/本地 PCC 命令集完全相同，无 adds/skips 命令；差异仅为规则标识激活语义(sets_value_pattern/changes_scope)。两选项均隐含 RULENAME/USERPROFILENAME=peer_planned，经 selects_option 下达 atom 层 DP 0-00005/0-00006（父子决策传播，同 DP 0-00004→0-00001 模式）。

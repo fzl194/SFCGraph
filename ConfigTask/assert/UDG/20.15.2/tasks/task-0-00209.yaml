@@ -1,0 +1,84 @@
+task_id: UDG@20.15.2@Task@0-00209
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加IPv6 ACL规则组与规则(ACL6)
+task_layer: atom
+task_intent: 增加IPv6 ACL规则组(ADD ACLGROUP6)与IPv6 ACL规则(基本 ADD ACLRULEBAS6/高级 ADD ACLRULEADV6)。基本ACL6仅源IP匹配(2000-2999)，高级基于五元组(3000-3999)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ACLGROUP6
+status: inferred   # 命令级审查(2026-07-02): binding 准确(ACLGROUP6+ACLRULEADV6聚合),P0 聚合债已标(rule 0-00272);IPFD命令CommandParameter 缺(rule 0-00076 标记)
+source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLGROUP6:ACLNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(IPv6 ACL规则组标识)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLGROUP6:ACLTYPE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；ACLNAME为数字字符串时可省略
+    requiredness: optional
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLRULENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLRULENAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLACTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLACTION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (Permit/Deny)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLPROTOCOL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLPROTOCOL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；0=IP
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLSOURCEIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLSOURCEIP
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(源IPv6地址)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLSRCWILD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLSRCWILD
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划(IPv6 为正掩码长度，与 IPv4 反掩码不同)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLDESTIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLDESTIP
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(目的IPv6地址)
+    requiredness: conditional   # 高级ACL6必填，基本ACL6无
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLSRCPORTOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLSRCPORTOP
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLDESTPORTOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLDESTPORTOP
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLSRCPORTBEGIN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLSRCPORTBEGIN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+  - binding_id: UDG@20.15.2@Task@0-00209:ACLDESTPORTBEGIN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV6:ACLDESTPORTBEGIN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+notes: "聚合 atom: ADD ACLGROUP6(建IPv6规则组) + ADD ACLRULEADV6(高级IPv6 ACL) / ADD ACLRULEBAS6(基本IPv6 ACL)。注意 IPv6 掩码参数 ACLSRCWILD 为正掩码长度(IPv4 为反掩码)，是该 family 关键差异点。命令级审查(2026-07-02): 补绑 ACLSRCPORTOP/ACLDESTPORTOP/ACLSRCPORTBEGIN/ACLDESTPORTBEGIN(TCP/UDP时必填)；ACLGROUP6 的 ACLSTEP/ACLMATCHORDER/ACLDESCRIPTION ③ 未使用→不绑(冷门参数)。聚合债(§B/E.2 已标应拆为 ACLGROUP6 / ACLRULEADV6 / ACLRULEBAS6 三个独立 atom)→rule 0-00272。IPv4/IPv6 互斥→DP 0-00032；端口条件→rule 0-00270 同款(规则 0-00270 owner=0-00198 ACLRULEADV4，本 atom 复用其约束逻辑)。CommandParameter 待抽取。"

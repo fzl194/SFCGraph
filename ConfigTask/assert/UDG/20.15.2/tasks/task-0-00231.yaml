@@ -1,0 +1,30 @@
+task_id: UDG@20.15.2@Task@0-00231
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPSQM静态整形带宽
+task_layer: atom
+task_intent: 配置基于基站(对端IP)的静态整形带宽(IPTYPE/PEERIPV4/CIR)，对下行用户面流量整形避免突发丢包与重传带宽恶化。IPSQM 核心必选步骤
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPSQMSHAPING
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00231:IPTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSQMSHAPING:IPTYPE
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(IPv4/IPv6，本特性样例 IPv4)
+    requiredness: required
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+  - binding_id: UDG@20.15.2@Task@0-00231:PEERIPV4
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSQMSHAPING:PEERIPV4
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(对端基站 IPv4 地址)
+    requiredness: conditional   # 校正：命令真相为 conditional(IPTYPE=IPv4 时必填)；IPTYPE 固定 IPv4 实际必填
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+  - binding_id: UDG@20.15.2@Task@0-00231:CIR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSQMSHAPING:CIR
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(承诺信息速率 Mbps，整数 1~10000)
+    requiredness: required
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "ADD IPSQMSHAPING(IPSQM 核心必选 atom)。IPTYPE/PEERIPV4=全网规划(对端基站IP)，CIR=本端规划(md 数据规划表)。按对端 IP+承诺速率逐条配置(每基站一条)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：3/6 参数绑定(无功能缺口)；缺 PEERIPV6/VPNINSTANCE/DESCRIPTION 均为 optional(命令真相均有冷门场景：PEERIPV6 对端 IPv6 基站/VPNINSTANCE 跨 VRF 整形/DESCRIPTION 备注，特性 md 未用)，按 baseline §4.1 不绑。校正 PEERIPV4 requiredness 为 conditional(命令真相 IPTYPE=IPv4 时)。新增 atom rule 见 rule-0-00382(cardinality：规格 4000 + 消耗 CPU 影响性能 + 只对新增承载生效)。feature-挂 rule 0-00082(IPSQM 增强须先核心整形) 已表达依赖关系。"

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00161
+owner_task_ref: UDG@20.15.2@Task@0-00041   # 挂 atom ADD VPNINST
+rule_name: VPNINSTANCE 须与 L3VPNINST 同名且逻辑口/外联口一致
+rule_type: uniqueness_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_match_reference
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD VPNINST:VPNINSTANCE
+  expression: "VPNINSTANCE 必须满足两条一致性：(1) 须在 VNRS 上通过 ADD L3VPNINST 创建同名 VPN(VRFNAME)，否则此 VPN 业务不通（命令 notes）；(2) 承载该 VPN 的逻辑接口与其对应外联口的 VPN 实例必须相同，否则从逻辑接口发出的报文会查询路由失败（GWFD-020401/GWFD-010155 组网说明）。VPNINSTANCE 取值范围：字符串 1~31，区分大小写。"
+violation_effect: VPN 业务不通 / 报文路由失败
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-020401/激活IPv6承载上下文_38276176.md, GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '需要确保在VNRS上ADD L3VPNINST添加了同名的VPN配置' + 3 处特性激活 md 的外联口/逻辑口 VPN 一致性说明。VPNINST 是共享基础对象，跨 7 特性(地址分配/ePDG/IPv6承载/L2TP/IMS恢复/URL过滤等)复用，命名一致性是业务联通前提。"

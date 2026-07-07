@@ -1,0 +1,76 @@
+task_id: UDG@20.15.2@Task@0-00132
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置APN的L2TP属性
+task_layer: atom
+task_intent: 使能指定 APN 的 L2TP 功能并配置 L2TP 属性（L2TP 开关/IPv6 支持/L2TP 组号或 RADIUS 多 LNS 模式/Calling-number AVP/ICCN 鉴权/IPCP 协商/域名增剥）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNL2TPATTR
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00132:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:APN
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD APN)
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:L2TPSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:L2TPSWITCH
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(使能 L2TP)
+    requiredness: optional   # 命令真相 optional(L2TPSWITCH 必填是 APNL2TPATTR 启用前提)
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:SUPPORTIPV6
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:SUPPORTIPV6
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(L2TP 内层 IPv6 支持开关)
+    requiredness: optional   # 命令真相 conditional/optional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:RDSLNSMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:RDSLNSMODE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(RADIUS 返回多 LNS 工作模式)
+    requiredness: conditional   # AAA 下发方式使用(指定 RADIUS 返回多 LNS 模式)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00023
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:L2TPGROUPID
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:L2TPGROUPID
+    binding_type: reference
+    variable_source: reference   # 本地方式: 已配置数据中获取(引用 ADD L2TPGROUP.GROUPID)
+    source_ref: UDG@20.15.2@Task@0-00133:GROUPID
+    requiredness: conditional   # 本地配置方式必填(AAA 方式不填)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00023
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:ICRQ_CALLINGNO
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:ICRQ_CALLINGNO
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(MSISDN/IMSI/IMEI)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:ICCN_AUTH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:ICCN_AUTH
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(ICCN 携带鉴权信元开关)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:IPCP_NEGO
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:IPCP_NEGO
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(发起 IPCP 协商开关)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:DOMAINNAMEACT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:DOMAINNAMEACT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(增加/剥离域名)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00132:DOMAINNAMEPOS
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNL2TPATTR:DOMAINNAMEPOS
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(域名位置 PREFIX/SUFFIX)
+    requiredness: conditional   # 命令真相 conditional(DOMAINNAMEACT 配时)
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+notes: "GWFD-020412。RDSLNSMODE(AAA 方式)与 L2TPGROUPID(本地方式)互斥——由 DP 0-00023(激活方式)决定填哪个(requiredness=conditional + decision_driven 语义)。其余参数命令真相均为 conditional/optional(本地脚本和 AAA 脚本均显式配),按命令真相校准。冷门参数不绑(ICCN_PGROUPID/ICCN_TXSPEED/ICRQ_BEARER/ICCN_LCPNEGO: 命令真相均 optional 且无特性证据)。APN 引用 ADD APN(0-00020)；L2TPGROUPID 本地方式引用 ADD L2TPGROUP(0-00133)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

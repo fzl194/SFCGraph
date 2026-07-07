@@ -1,0 +1,63 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00119
+owner_task_ref: UDG@20.15.2@Task@0-00256   # 挂 atom ADD CONTCATEGROUP
+decision_name: CONTCATEGROUP 内容分类类型分叉（SPECIFIC/RANGE/PRIORITY/NAME）
+decision_question: |
+  ADD CONTCATEGROUP 的 CATEGORYTYPE 取哪个分支？四路互斥（命令真相枚举 SPECIFIC/RANGE/PRIORITY/NAME）：
+  - SPECIFIC：特定内容分类ID，CATEGORYID 必选；STARTID/ENDID/PRIORITY/CATEGORYNAME 不配。
+  - RANGE：分类ID范围，STARTID+ENDID 必选（STARTID ≤ ENDID, 区间不可重叠）；CATEGORYID/PRIORITY/CATEGORYNAME 不配。
+  - PRIORITY：优先级，PRIORITY 必选（全局唯一, 整机最多1条, 默认65535）；STARTID/ENDID/CATEGORYID/CATEGORYNAME 不配。
+  - NAME：内容分类名称，CATEGORYID+CATEGORYNAME 必选（注：命令真相 CATEGORYID 在 SPECIFIC 或 NAME 时必选）；STARTID/ENDID/PRIORITY 不配。
+  命令真相 CATEGORYTYPE required；STARTID/ENDID conditional (RANGE) / CATEGORYID conditional (SPECIFIC/NAME) / PRIORITY conditional (PRIORITY) / CATEGORYNAME conditional (NAME)。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110471/配置URL过滤_47348205.md
+options:
+  - option_id: opt-contcategroup-specific
+    option_name: 特定内容分类ID
+    option_value: SPECIFIC
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYTYPE, effect_type: sets_value, effect_detail: value=SPECIFIC（数据规划表样例, 对应 ICAP Server 已导入 URL 分类数据）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYID, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传内容分类值}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:STARTID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:ENDID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:PRIORITY, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-contcategroup-range
+    option_name: 分类ID范围
+    option_value: RANGE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYTYPE, effect_type: sets_value, effect_detail: value=RANGE}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:STARTID, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传起始值, STARTID ≤ ENDID}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:ENDID, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传结束值, STARTID ≤ ENDID}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:PRIORITY, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-contcategroup-priority
+    option_name: 优先级
+    option_value: PRIORITY
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYTYPE, effect_type: sets_value, effect_detail: value=PRIORITY（全局唯一, 整机最多1条, 默认65535）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:PRIORITY, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传优先级, 全局唯一, 值越小优先级越高}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:STARTID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:ENDID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-contcategroup-name
+    option_name: 内容分类名称
+    option_value: NAME
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYTYPE, effect_type: sets_value, effect_detail: value=NAME}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYID, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传内容分类值（命令真相 CATEGORYID 在 SPECIFIC/NAME 时必选）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传内容分类名称}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:STARTID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:ENDID, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:PRIORITY, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+default_option: opt-contcategroup-specific
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00118~0-00121）。管理 ADD CONTCATEGROUP 的 CATEGORYTYPE 4 路分叉编排 + 5 个配套必选/必不传参数。
+  依据：命令真相 CATEGORYTYPE 枚举 SPECIFIC/RANGE/PRIORITY/NAME；STARTID/ENDID conditional (RANGE) / CATEGORYID conditional (SPECIFIC/NAME) / PRIORITY conditional (PRIORITY) / CATEGORYNAME conditional (NAME)。
+  原 pass-1 录制：仅绑 CONTCATEGNAME/CATEGORYTYPE/CATEGORYID 3 个 required（CATEGORYID 错标 required，违反命令真相 conditional）→ 已升级为 decision_driven；5 缺口（STARTID/ENDID/PRIORITY/CATEGORYNAME/CFGDOMAINNAME）已补。
+  注：本 atom 仅 1 特性使用（GWFD-110471）不存在跨特性分叉；决策按主特性默认 SPECIFIC 路径（数据规划表样例）。PRIORITY 全局唯一性由 rule 0-00316 投影。

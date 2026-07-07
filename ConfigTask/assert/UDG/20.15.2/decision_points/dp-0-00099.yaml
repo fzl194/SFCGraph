@@ -1,0 +1,60 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00099
+owner_task_ref: UDG@20.15.2@Task@0-00034   # 挂 atom ADD BWMSERVICE
+decision_name: BWMSERVICE 业务类型分叉（CATEGORY_PROP/PROTOCOLGROUP/PROTOCOL/PROTOCOL+OSTYPE）
+decision_question: |
+  ADD BWMSERVICE 的 NONTOSSRVTYPE 取哪个分支？四个分支互斥：
+  - CATEGORY_PROP（分类属性）：020354 URL 整形场景走此分支，必配 CATEPROPNAME（引用 ADD CATEGORYPROP 0-00032）。
+  - PROTOCOLGROUP（协议组）：020354 协议组场景走此分支，必配 PROTGROUPNAME（引用 ADD PROTOCOLGROUP，命令不在 by_command 复用索引）。
+  - PROTOCOL（协议）：020354 + 110301 共用分支，必配 PROTOCOLNAME。
+  - PROTOCOL+OSTYPE（基于操作系统）：110301 基于终端系统的码率差异化控制专用分支，必配 PROTOCOLNAME + OSTYPE（IOS）。
+  命令真相 BWMSERVICETYPE required 默认无；NONTOSSRVTYPE/CATEPROPNAME/PROTGROUPNAME/PROTOCOLNAME/OSTYPE 均 conditional。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+options:
+  - option_id: opt-bwmsrv-categoryprop
+    option_name: CATEGORY_PROP 分支
+    option_value: CATEGORY_PROP
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:NONTOSSRVTYPE, effect_type: sets_value, effect_detail: value=CATEGORY_PROP（命令真相枚举值）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:CATEPROPNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传分类属性名（020354 URL 整形）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTGROUPNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTOCOLNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:OSTYPE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-bwmsrv-protocolgroup
+    option_name: PROTOCOLGROUP 分支
+    option_value: PROTOCOLGROUP
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:NONTOSSRVTYPE, effect_type: sets_value, effect_detail: value=PROTOCOLGROUP（命令真相枚举值）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:CATEPROPNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTGROUPNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传协议组名（020354 协议组场景）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTOCOLNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:OSTYPE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-bwmsrv-protocol
+    option_name: PROTOCOL 分支
+    option_value: PROTOCOL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:NONTOSSRVTYPE, effect_type: sets_value, effect_detail: value=PROTOCOL（命令真相枚举值）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:CATEPROPNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTGROUPNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTOCOLNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传协议名（020354 协议场景）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:OSTYPE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-bwmsrv-protocol-ostype
+    option_name: PROTOCOL+OSTYPE 分支
+    option_value: PROTOCOL_OSTYPE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:NONTOSSRVTYPE, effect_type: sets_value, effect_detail: value=PROTOCOL（命令真相枚举值）；OSTYPE 与 PROTOCOL 共用 NONTOSSRVTYPE=PROTOCOL 分支}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:CATEPROPNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTGROUPNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:PROTOCOLNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传协议名（110301 协议场景）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00034:OSTYPE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传操作系统类型 IOS（110301 终端系统码率差异）}
+default_option: opt-bwmsrv-protocol-ostype
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00098~0-00101）。管理 ADD BWMSERVICE 的 NONTOSSRVTYPE 4 路分叉编排。
+  依据：跨特性 NONTOSSRVTYPE 取值分叉（CATEGORY_PROP/PROTOCOLGROUP/PROTOCOL 三路径 020354 + PROTOCOL+OSTYPE 110301）；命令真相支持 OSTYPE（md 备注 "基于OSTYPE进行带宽控制场景"）。
+  原 pass-1 录制：BWMSERVICETYPE/NONTOSSRVTYPE/CATEPROPNAME 静态 fixed/conditional，无法表达 4 路分叉 + 配套必选参数。按 SKILL §4.5 升级为 decision_driven：4 个 option 互斥，default_option=PROTOCOL+OSTYPE（110301 主特性路径，覆盖最新 BWM 场景）。
+  注：BWMSERVICETYPE 命令真相 required，但 UDG 2 特性均走 NONTOS，本决策固定 BWMSERVICETYPE=NONTOS（实际为 sets_value=NONTOS，由 option 选项决定）。命令真相允许 TOS，但 UDG 当前未激活。

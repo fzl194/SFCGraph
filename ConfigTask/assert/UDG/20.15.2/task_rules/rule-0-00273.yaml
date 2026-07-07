@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00273
+owner_task_ref: UDG@20.15.2@Task@0-00211
+rule_name: 0-00211 聚合 atom 内部前置(ACLGROUPIPSEC→ACLRULEADV4IPSEC+无端口+Action固定Permit)
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00211
+  expression: "0-00211 为聚合 atom (ADD ACLGROUPIPSEC + ADD ACLRULEADV4IPSEC)。(1) 顺序约束: ACLGROUPIPSEC 必须先发(规则组前置)。(2) 端口约束: IPsec ACL 仅支持源/目的IP匹配，不支持端口(SVRPORT*/ACLPORTOP*/ACLRULEPROTOCOL/ACLSOURCEPORT 等参数不适用)。(3) 动作约束: ACLACTION 固定 Permit(保护流定义，非 Permit/Deny 任选)。(4) 上下文约束: ACLSOURCEIP/ACLDESTIP 取自 IPsec 保护子网(全网规划)，VRFNAME 引用 VNRS VPN实例(0-00071)。"
+violation_effect: 规则组未建→规则创建失败；下发非 Permit→SA 协商语义错；带端口参数→命令拒收
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md, IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+notes: "命令级审查(2026-07-02)新增 rule。CONSOLIDATION-BACKLOG.md §B/E.2 未直接列但与 0-00209 同款聚合债(本 pass 不拆)。与 0-00077 协商链前置互不冲突(rule 0-00077 关注 ACL→Proposal→Peer→Policy→接口应用 协商顺序，本 rule 关注 atom 内 顺序+端口+动作 约束)。"

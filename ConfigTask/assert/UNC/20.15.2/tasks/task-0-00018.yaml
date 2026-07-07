@@ -1,0 +1,20 @@
+task_id: UNC@20.15.2@Task@0-00018
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHGDCHAR
+task_layer: atom
+task_intent: 配置缺省计费属性（HLR 未为外网用户指定计费属性时，按 MCC/MNC 对应缺省方式计费）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHGDCHAR
+status: inferred
+source_evidence_ids:
+  - 增加缺省计费属性参数(ADD CHGDCHAR)_26145380.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00018:ST", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGDCHAR:ST", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00018:MCC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGDCHAR:MCC", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00018:MNC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGDCHAR:MNC", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00018:DCC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGDCHAR:DCC", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [增加缺省计费属性参数(ADD CHGDCHAR)_26145380.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CHGDCHAR.md（1 特性 WSFD-011201 SGSN，4 参）。
+  SGSN 专用。ST=用户类型(ROAMING/VISITING等)，MCC/MNC 标识外网 PLMN，DCC=缺省计费属性(NORMAL等)。
+  notes：同 ST 记录≤10，总≤20；同 ST 同 MCC 时 MNC 前两位不可重复 → rule 0-00020。§6.B 见全局 rule 0-00001。

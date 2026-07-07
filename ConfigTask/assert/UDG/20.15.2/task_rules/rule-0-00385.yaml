@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00385
+owner_task_ref: UDG@20.15.2@Task@0-00234   # 挂 atom ADD IPSQMVIPLIST
+rule_name: ADD IPSQMVIPLIST 规格 100 + 立即生效
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD IPSQMVIPLIST
+  expression: |
+    ADD IPSQMVIPLIST 命令最大记录数为 100（命令 notes 强约束），超出被拒。
+    该命令执行后立即生效（命令 notes）。
+    USERIDINFO 长度 1～15（IMSI 字符长度，CommandParameter 校验承担）。
+    USERID 枚举类型 IMSI/MSISDN 等（CommandParameter 校验承担）。
+violation_effect: 上限超限→ADD 失败；VIP 用户超限无法覆盖
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 100 + 立即生效。VIP 名单使 VIP 用户不做 IPSQM 整形以保障体验；缺 CFGDOMAINNAME 为 optional（命令真相配置域）冷门不绑。feature-挂 rule 0-00082（IPSQM 增强须先核心整形）已表达 ADD IPSQMVIPLIST 后置依赖。"

@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00009
+task_ref: UDG@20.15.2@Task@00104
+rule_name: SET REFRESHSRV必须最后执行
+rule_type: ordering_rule
+rule_logic: 不执行SET REFRESHSRV，FILTER的配置变更不会生效；必须作为收尾最后一步
+violation_effect: 配置不生效
+severity: critical
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

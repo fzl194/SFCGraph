@@ -1,0 +1,23 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00065
+owner_task_ref: UDG@20.15.2@Task@0-00020   # 挂 atom ADD APN：APN 名称源跨特性分叉
+decision_name: APN名称来源
+decision_question: ADD APN 的 APN 名称取值来源？（决定该 APN 是否需与控制面保持一致。多数业务(7层统计/地址分配/接入控制/过载控制/双栈/QoS/eDRX/Non-IP/URL过滤等)在本端独立规划即可；但 NB-IoT/eMTC 终端接入速率控制(110611/110612/110646/110647)需同时在控制面打开特性并配置 APN Rate Control，APN 必须与控制面协商一致。）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020308/激活7层流量统计_13442390.md, GWFD-010104/激活地址分配方式_71653959.md, GWFD-110611/激活基于APN的NB-IoT终端接入速率控制_70375132.md, GWFD-110612/激活基于服务PLMN的NB-IoT终端接入速率控制_70415328.md]
+options:
+  - option_id: opt-apn-local
+    option_name: 本端规划
+    option_value: local_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00020:APN, effect_type: sets_value, effect_detail: variable_source=local_planned；APN 名称由 UDG 侧独立规划，无需与控制面同步。适用于 7层统计/地址分配/接入控制/过载控制/双栈/QoS保证/eDRX/信令面传输/Non-IP/L2TP/Web Portal/Web Proxy/URL过滤 等}
+  - option_id: opt-apn-peer
+    option_name: 与控制面协商(peer)
+    option_value: peer
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00020:APN, effect_type: sets_value, effect_detail: variable_source=peer；APN 名称需与控制面(MME/SGW-C/PGW-C)保持一致。适用于 NB-IoT/eMTC 终端接入速率控制(110611/110612/110646/110647)，控制面同步配置 CCR/APN Rate Control}
+default_option: opt-apn-local
+notes: |
+  命令级审查(2026-07-02) 新建。③跨特性数据规划表"获取方法"列分布: 本端规划(23)占绝大多数, 但 NB-IoT/eMTC 速率控制(110611/110612/110646/110647)明确标"与对端协商"且 md 注"需要与控制面规划一致/控制面保持一致"。原 pass-1 录制 local_planned 作为默认保持向后兼容(绝大多数特性选默认不变)。APN 名称由 variable:local_planned 升级为 decision_driven 由本 DP 选。命令真相 APN 为 local_planned required 字符串(1~63)。

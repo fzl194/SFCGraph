@@ -1,0 +1,32 @@
+task_id: UDG@20.15.2@Task@0-00024
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置Gy接口一次重定向参数
+task_layer: atom
+task_intent: 绑定一次重定向的扩展过滤器与重定向携带信息，激活 Gy 接口一次重定向（GWFD-020356 计费信息实时提醒专属）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET GYONESHOT
+status: inferred   # 命令级审查(2026-07-02): 0 缺口, 3/3 已绑, 双 reference 引用(0-00022+0-00023)
+source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00024:EXTFLTNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GYONESHOT:EXTFLTNAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取
+    source_ref: UDG@20.15.2@Task@0-00022:EXTFLTNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]
+  - binding_id: UDG@20.15.2@Task@0-00024:APPENDINFONAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GYONESHOT:APPENDINFONAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取
+    source_ref: UDG@20.15.2@Task@0-00023:APPENDINFONAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]
+  - binding_id: UDG@20.15.2@Task@0-00024:REDIRAGETIME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GYONESHOT:REDIRAGETIME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；取值5~600秒（mml_commands）
+    requiredness: optional   # 特性 md 数据规划表未列；mml_commands 列为可选
+    source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]
+notes: "GWFD-020356 专属。EXTFLTNAME 引用 ADD EXTENDEDFILTER(0-00022)，APPENDINFONAME 引用 ADD REDIRAPPENDINFO(0-00023)。CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02): 0 缺口(bound 3/3=EXTFLTNAME+APPENDINFONAME+REDIRAGETIME); EXTFLTNAME/APPENDINFONAME 引用关系正确(0-00022.EXTFLTNAME + 0-00023.APPENDINFONAME 命中); 命令真相标 EXTFLTNAME+APPENDINFONAME+REDIRAGETIME 均 optional，但 020356 场景必设 EXTFLTNAME+APPENDINFONAME 故 required 合理。\""

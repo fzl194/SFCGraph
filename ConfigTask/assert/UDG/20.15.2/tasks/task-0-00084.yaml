@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00084
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置DDoS防攻击流控阈值
+task_layer: atom
+task_intent: 设置防DDoS攻击的TCP连接流控阈值（THRESHOLD），当UE向PDN侧发起SYN连接速率超过阈值时UDG丢弃报文，保护PDN侧网络设备
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET DDOS
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010253/激活防DDoS功能_24082259.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00084:THRESHOLD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET DDOS:THRESHOLD
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（允许发起最大TCP连接数）
+    requiredness: required
+    source_evidence_ids: [GWFD-010253/激活防DDoS功能_24082259.md]
+notes: "GWFD-010253。THRESHOLD=DDoS防护阈值(允许发起最大TCP连接数)，数据规划表取值样例 10，本端规划。需配合 ADD USERPROFILE.DDOSCHECK=ENABLE(0-00011 演进待补 DDOSCHECK binding，见 feature 2-00028 notes + dependency_rule 0-00038) 生效——阈值是全局开关，DDOSCHECK 决定哪个 UserProfile 启用防护。无 license 步骤(md未列)。"

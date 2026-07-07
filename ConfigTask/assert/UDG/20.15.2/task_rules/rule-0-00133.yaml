@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00133
+owner_task_ref: UDG@20.15.2@Task@0-00012   # 挂 atom ADD RULEBINDING
+rule_name: RULEBINDING 配置规格与生效行为
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00012
+  expression: |
+    最大记录数 200000，>90% 上报 ALM-135602215 告警，阈值可由 MOD CFGTHRESHOLD 修改。
+    单用户模板绑定规则数上限：默认规则用户模板(UPSPECTYPE=DEFAULT)最多 8000 个规则；规格受限用户模板(UPSPECTYPE=SPECIFICATION_LIMITED)上限更高(见命令②notes)。
+    一致性：USERPROFILE 下绑定的 RULENAME/POLICYTYPE 须与 SMF/UPF(或 PGW-C/PGW-U)保持一致，不一致则策略无法按预期生效。
+    生效行为：本命令执行后只对新激活用户生效(已激活用户不受影响)——故须配合 SET REFRESHSRV(0-00015) 刷新并对新用户生效。
+violation_effect: 超规格/超单 UP 绑定上限新增失败；绑定不一致策略失效；已激活用户不生效需重新激活或等待刷新
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务匹配策略/业务匹配公共配置/业务规则管理/规则绑定/增加用户模板和规则的绑定关系（ADD RULEBINDING）_82837272.md, GWFD-020301/部署UPF_28493406.md]
+notes: 命令级审查(2026-07-02) 投影自命令②notes(规格200000、单UP 8000、仅对新激活用户生效) + ③一致性约定。

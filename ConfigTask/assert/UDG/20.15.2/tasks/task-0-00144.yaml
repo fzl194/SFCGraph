@@ -1,0 +1,23 @@
+task_id: UDG@20.15.2@Task@0-00144
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置静态路由双向BFD自动化模板(路由交叉)
+task_layer: atom
+task_intent: 配置静态路由的双向 BFD 自动化检测模板（ADD AUTOSCALINGSRBFD），检测网络 B 链路双向可达性
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD AUTOSCALINGSRBFD
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；双向 BFD 专属(单臂 echo 用 ADD AUTOSCALINGBFD 0-00143)；命令在 mml_commands；CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00144:SERVICENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRBFD:SERVICENAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD AUTOSCALINGSERVICE.SERVICENAME)
+    source_ref: UDG@20.15.2@Task@0-00141:SERVICENAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+  - {binding_id: UDG@20.15.2@Task@0-00144:IPVERSION, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRBFD:IPVERSION, binding_type: fixed, variable_source: local_planned, requiredness: required, value: IPv4, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00144:MINRXINTERVAL, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRBFD:MINRXINTERVAL, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00144:MINTXINTERVAL, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRBFD:MINTXINTERVAL, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00144:MULTIPLIER, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRBFD:MULTIPLIER, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+notes: "GWFD-020423 双向 BFD 自动化检测模板。与 0-00143(单臂 echo BFD)二选一, 由 DP 0-00024(BFD 类型)决定。双向 BFD 时 AUTOSCALINGSRROUTE(0-00142)不填 BFDTEMPLATENAME。SERVICENAME 引用 AUTOSCALINGSERVICE(0-00141); MINRXINTERVAL/MINTXINTERVAL/MULTIPLIER=参见 5G Core LLD BGP 设计(min-rx/min-tx/detect-multiplier)。命令级审查(2026-07-02): 0 缺口(参数 5/5 全部绑定完整, 与命令真相一致); 规格+前置 SERVICENAME 依赖 AUTOSCALINGSERVICE+全局 BFD 使能前置+自动化配置开关前置+立即生效投影 rule 0-00232。命令在 mml_commands; CommandParameter 待 CommandGraph 抽取。"

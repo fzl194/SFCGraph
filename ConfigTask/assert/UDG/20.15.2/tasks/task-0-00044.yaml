@@ -1,0 +1,97 @@
+task_id: UDG@20.15.2@Task@0-00044
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置地址池IP地址段
+task_layer: atom
+task_intent: 为已配置的地址池添加地址段；IPVERSION 跨特性分叉（IPV4 配 V4* / IPV6 配 V6PREFIX*）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SECTION
+status: inferred   # 命令级审查(2026-07-02)：IPVERSION 升 decision_driven(DP 0-00062) + 补 V6PREFIX*/MASK + rule 0-00142
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - GWFD-020482/激活入不转板功能_28210142.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00044:POOLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:POOLNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(LST POOL)
+    source_ref: UDG@20.15.2@Task@0-00043:POOLNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00044:SECTIONNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:SECTIONNUM
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；取值 0~63
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # IPVERSION：地址池族核心演进点。跨特性取值分叉 IPV4(010104/020482) vs IPV6(020406) + 双栈两者(010107/020403) → decision_driven(DP 0-00062)
+  - binding_id: UDG@20.15.2@Task@0-00044:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:IPVERSION
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 required 默认 IPV4；跨特性 IPV4/IPV6 分叉
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00062
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-020403/激活IPv4v6双栈接入_38276180.md, GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+  # V4STARTIP：条件必选（IPVERSION=IPV4 时配）。010104/010107/020403/020482 IPv4 段用到（已绑保留）
+  - binding_id: UDG@20.15.2@Task@0-00044:V4STARTIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:V4STARTIP
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（全网唯一地址空间）
+    requiredness: conditional   # 命令真相 conditional，IPVERSION=IPV4 时必填
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # V4ENDIP：条件必选（IPVERSION=IPV4 时配）
+  - binding_id: UDG@20.15.2@Task@0-00044:V4ENDIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:V4ENDIP
+    binding_type: variable
+    variable_source: global_planned
+    requiredness: conditional   # 命令真相 conditional，IPVERSION=IPV4 时必填；起止不能倒置
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # V6PREFIXSTART：条件必选（IPVERSION=IPV6 时配）。010107/020403/020406 IPv6 段用到（用到→绑）
+  - binding_id: UDG@20.15.2@Task@0-00044:V6PREFIXSTART
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:V6PREFIXSTART
+    binding_type: variable
+    variable_source: global_planned   # 命令真相 conditional global_planned；数据规划表: 全网规划
+    requiredness: conditional   # IPVERSION=IPV6 时必填
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  # V6PREFIXEND：条件必选（IPVERSION=IPV6 时配）
+  - binding_id: UDG@20.15.2@Task@0-00044:V6PREFIXEND
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:V6PREFIXEND
+    binding_type: variable
+    variable_source: global_planned
+    requiredness: conditional   # IPVERSION=IPV6 时必填；起止不能倒置
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  # V6PREFIXLENGTH：条件必选（IPVERSION=IPV6 时配）。取值 49~64；<64 表示 IPv6 Prefix Delegation 方式（020406 取 63）
+  - binding_id: UDG@20.15.2@Task@0-00044:V6PREFIXLENGTH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:V6PREFIXLENGTH
+    binding_type: variable
+    variable_source: global_planned   # 命令真相 conditional global_planned；数据规划表: 全网规划
+    requiredness: conditional   # IPVERSION=IPV6 时必填
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  # MASK：可选。020482 入不转板功能必须配置（=9，按 ISU POD 划分子段），用到→绑
+  - binding_id: UDG@20.15.2@Task@0-00044:MASK
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SECTION:MASK
+    binding_type: variable
+    variable_source: global_planned   # 命令真相 optional global_planned；取值 5~15
+    requiredness: optional   # 命令真相 optional；020482 入不转板场景必配
+    source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+rules: [UDG@20.15.2@TaskRule@0-00142]
+notes: |
+  GWFD-010104。POOLNAME 引用 ADD POOL(0-00043)；地址段起止IP全网规划（全网唯一地址空间）。
+  命令级审查(2026-07-02)：
+  - IPVERSION 由 fixed:IPV4 升级为 decision_driven(DP 0-00062)——跨特性 IPV4(010104/020482) vs IPV6(020406) + 双栈两者(010107/020403) 取值分叉（地址池族核心演进点）。
+  - 补 V6PREFIXSTART/V6PREFIXEND/V6PREFIXLENGTH（IPV6 段条件必选，010107/020403/020406 用到）、MASK（020482 入不转板必配）。
+  - V4STARTIP/V4ENDIP requiredness 由 required 修正为 conditional（命令真相 conditional，IPV6 段时不配）。
+  - 补 cardinality_rule 0-00142（投影命令 notes：最大记录数 40000 + 每地址池最多 64 地址段 + 起始不大于终止 + 执行后立即生效）。
+  - source_evidence_ids 扩展至全部 5 个使用该命令的特性。

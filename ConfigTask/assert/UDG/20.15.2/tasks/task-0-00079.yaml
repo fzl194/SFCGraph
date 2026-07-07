@@ -1,0 +1,36 @@
+task_id: UDG@20.15.2@Task@0-00079
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建OSPFv3区域(IPv6)
+task_layer: atom
+task_intent: 在OSPFv3进程下创建区域（PROCID+AREAID）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD OSPFV3AREA
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+  - GWFD-020401/激活IPv6承载上下文_38276176.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+task_rules_ref: [UDG@20.15.2@TaskRule@0-00201]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00079:PROCID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3AREA:PROCID
+    binding_type: reference
+    variable_source: reference   # 引用 ADD OSPFV3 进程号
+    source_ref: UDG@20.15.2@Task@0-00078:PROCID
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00079:AREAID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3AREA:AREAID
+    binding_type: decision_driven   # ③跨特性获取方法分叉: 全网规划(010155/020401) vs 与对端协商(020406)；源解析分叉(取值语义不同: global 规划值 vs peer 协商一致)→升级 decision_driven，与 IPv4 ADD OSPFAREA(0-00075→DP 0-00078) 同构
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00082
+    requiredness: required   # IPv4 点分十进制；OSPF 区域号须与对端在同一区域一致,否则邻居无法建立
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+notes: "GWFD-010155/020401/020406 IPv6 OSPFv3 路径。PROCID 引用 ADD OSPFV3(0-00078)。AREAID 升级 decision_driven(③获取方法跨特性分叉: 全网规划 vs 与对端协商)→DP 0-00082,与 IPv4 ADD OSPFAREA(0-00075→DP 0-00078) 同构镜像;AREAID 同时被 ADD OSPFV3INTERFACE(0-00117) 引用,决策传递下游。与 IPv4 ADD OSPFAREA(0-00075) 平行(由 DP 0-00017 ip-version 选择)。命令级审查(2026-07-02): 缺口17参数全为 OSPF 区域进阶(AREATYPE/NSSA 系列/Stub 等),3特性数据规划表+脚本仅用 PROCID/AREAID 两参,严格按通用配置筛均不绑(进阶参数一律不绑);AREATYPE=NSSA 条件要求(须配 Loopback 发布)以 rule 0-00201 投影。投影 rule 0-00201(前置 ADD OSPFV3/区域规格/NSSA-Loopback 发布约束)。"

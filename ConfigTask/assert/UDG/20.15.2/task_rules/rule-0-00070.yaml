@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00070
+owner_task_ref: UDG@20.15.2@Task@0-00177
+rule_name: SET APNNONIPFUNC 前置 license + 全局/非全局收敛语义
+rule_type: dependency_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00019
+    - UDG@20.15.2@Task@0-00020
+  expression: 须先 SET LICENSESWITCH(LKV3G5NOIP01) 打开 license 该命令才生效；SET APNNONIPFUNC 一旦配置即将全局 Non-IP 场景收敛为非全局场景(仅 NONIPSWITCH=ENABLE 的 APN 生效)；APN 必须已通过 ADD APN 配置。
+violation_effect: SET APNNONIPFUNC 不生效或 Non-IP 功能未按 APN 粒度开启
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-110607/激活Non-IP数据传输_69972724.md]

@@ -1,0 +1,40 @@
+task_id: UDG@20.15.2@Task@0-00114
+nf: UDG
+version: "20.15.2"
+task_logical_name: 修改接口管理状态
+task_layer: atom
+task_intent: 修改主接口管理状态为up（IFNAME+IFADMINSTATUS=up），IPv6组网外联口物理主接口启用前置
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@MOD INTERFACE
+status: inferred   # 命令级审查(2026-07-02): 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids:
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00114:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD INTERFACE:IFNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划(可用 LST INTERFACE 查询)；2特性均本端规划无分叉
+    requiredness: required
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md, IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00114:IFADMINSTATUS
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD INTERFACE:IFADMINSTATUS
+    binding_type: fixed
+    value: up   # 任务示例脚本固定 up(启用主接口)；UDG 全部激活脚本均置 up，无 down 用法
+    requiredness: required
+    source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md, IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00114:IFMTU
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD INTERFACE:IFMTU
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 local_planned；IPFD-015004 IPsec 脚本显式 IFMTU=1500
+    requiredness: conditional   # 命令级审查(2026-07-02) 升级 decision_driven(+DP 0-00096)：仅 IPsec 场景配；020402 不配
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00096
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00114:IFDF
+    parameter_ref: UDG@20.15.2@CommandParameter@MOD INTERFACE:IFDF
+    binding_type: fixed
+    value: FALSE   # IPFD-015004 GRE over IPsec LoopBack1 显式 IFDF=FALSE(出接口不分片标记)
+    requiredness: conditional   # 命令级审查(2026-07-02) 升级 decision_driven(+DP 0-00096)：仅 IPsec GRE over IPsec LoopBack 场景配
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00096
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+notes: "GWFD-020402 N6/Gi/SGi接口IPv6组网 + IPFD-015004 IPsec功能。配置外联口物理IP前的主接口启用步骤(步骤4a)。IFNAME 为物理主接口(Ethernet70/0/4 等)，后续在其上建子接口(ADD INTERFACE 子接口 IFNAME=Ethernet70/0/4.1)。与 ADD INTERFACE(0-00056) 区别：MOD 改状态、ADD 建子接口。命令级审查(2026-07-02): 修 binding 2 升级 decision_driven(IFMTU+IFDF→DP 0-00096)——跨特性配法分叉：020402 仅启用主接口(IFMTU/IFDF 不绑) vs IPsec配置(IFMTU=1500 必配；GRE over IPsec LoopBack IFDF=FALSE 必配)；补参数 IFMTU+IFDF 路径(同 pass-1 静态 conditional 升级 DP 化)；IFDESCR/IFTRAPENABLE/IFSTATITVL 冷门 optional 无特性用到→不绑；IFSTATIENABLE 仅 GRE-over-IPsec 单脚本 TRUE→按通用配置门槛不绑(与 0-00056 一致)；IFNAME 2特性均本端规划无分叉→保留 local_planned(区别 0-00056 升级 decision_driven，后者含 010107 全网规划分叉)；IFADMINSTATUS=fixed:up 反映 UDG 启用主接口用途(命令真相 optional 但本 atom scope 内恒 up，up/down 能力的高危约束见 rule 0-00243)；source_evidence 扩展至 IPFD-015004。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

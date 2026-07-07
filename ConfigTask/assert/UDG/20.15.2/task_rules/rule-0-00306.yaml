@@ -1,0 +1,28 @@
+rule_id: UDG@20.15.2@TaskRule@0-00306
+owner_task_ref: UDG@20.15.2@Task@0-00092
+rule_name: 0-00092 加载间隔≥20s + 性能影响 + FlowFilter 冲突检查 + REFRESHSRV 后置 + 上传前置
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00092
+  expression: |
+    LOD EXTERNALDB(atom 0-00092) 配置约束：
+    (1) 加载间隔：加载或者卸载命令两次执行间隔不能小于 20 秒(命令 notes 强约束)——连续执行会触发系统拒绝。
+    (2) 性能影响：数据库加载过程中会导致系统负荷过高，CPU 占用率升高；本命令会影响性能，请评估性能后配[置](命令 notes 强约束)——执行需避开业务高峰期。
+    (3) 冲突检查：加载 OTT ISU 外置规则数据库后，会触发系统检查 FlowFilter 配置是否跟 ISU 外部规则数据库中的定义有冲突(命令 notes)；冲突可通过 DSP COLLISIONCHECK 查询(查询命令不建 atom)。
+    (4) 立即生效(命令 notes 强约束)。
+    (5) 后置命令：加载后必须 SET REFRESHSRV(0-00015) 刷新生效——任务示例在加载后立即刷新。
+    (6) 前置命令：OTT 业务规则库必须已上传至 UDG（通过网管/MAE 的"网元文件传输"或 OM Portal 的"文件传输"功能）；ESA VMPod 正常运行(atom notes 强约束)。
+    (7) 加载完成后，使用 DSP 命令检查是否成功(命令 notes)。
+    (8) 无损升级：系统可通过无损升级数据库的方式定义大规模匹配条件(命令功能描述)，加载不中断业务。
+violation_effect: 间隔<20s→命令拒收；性能评估未做→业务高峰期 CPU 占用过高可能丢包；冲突未查→FlowFilter 冲突影响匹配正确性；未 REFRESHSRV→规则库加载但业务流未刷新
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids:
+  - GWFD-110321/激活支持OTT业务规则库功能_05455409.md
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。独占段 0-00306~。"

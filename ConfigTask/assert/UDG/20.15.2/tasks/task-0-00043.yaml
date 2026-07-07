@@ -1,0 +1,86 @@
+task_id: UDG@20.15.2@Task@0-00043
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置地址池
+task_layer: atom
+task_intent: 增加地址池（POOLNAME）并指定类型/VPN绑定；POOLTYPE 跨特性分叉（EXTERNAL 外部地址分配 / LOCAL 本地地址池）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD POOL
+status: inferred   # 命令级审查(2026-07-02)：POOLTYPE 升 decision_driven(DP 0-00061) + 补 IPVERSION/CHECKIPVALID/REDUNDFUNC/MASTERFLAG + rule 0-00141
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - GWFD-020482/激活入不转板功能_28210142.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00043:POOLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:POOLNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # POOLTYPE：地址池族核心演进点。跨特性取值分叉 EXTERNAL(010104/010107/020406) vs LOCAL(020403/020482)→ decision_driven(DP 0-00061)
+  - binding_id: UDG@20.15.2@Task@0-00043:POOLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:POOLTYPE
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 optional 默认 LOCAL；UDG 跨特性 EXTERNAL/LOCAL 分叉
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00061
+    requiredness: required   # 命令真相 optional，但 UDG 配置地址池必显式指定类型（数据规划表均显式给值）
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-020403/激活IPv4v6双栈接入_38276180.md]
+  # IPVERSION：条件必选，默认 IPV4。010107/020403(IPv4+IPv6)/020406(IPv6)/020482(IPv4) 均显式配置（用到→绑）
+  - binding_id: UDG@20.15.2@Task@0-00043:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:IPVERSION
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 conditional；数据规划表: 本端规划
+    requiredness: conditional   # 命令真相 conditional，默认 IPV4
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+      - GWFD-020482/激活入不转板功能_28210142.md
+  # HASVPN：可选默认 DISABLE，UDG 场景普遍 ENABLE（地址池绑 VPN 实例）
+  - binding_id: UDG@20.15.2@Task@0-00043:HASVPN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:HASVPN
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional   # 命令真相 optional 默认 DISABLE
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # VPNINSTANCE：条件必选（HASVPN=ENABLE 时必填）；引用 ADD VPNINST(0-00041)，010107 亦可引 L3VPNINST
+  - binding_id: UDG@20.15.2@Task@0-00043:VPNINSTANCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:VPNINSTANCE
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(LST VPNINST / LST L3VPNINST)
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE
+    requiredness: conditional   # HASVPN=ENABLE 时必填
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  # CHECKIPVALID：条件可选默认 DISABLE。020406 静态地址白名单检测置 ENABLE（用到→绑）
+  - binding_id: UDG@20.15.2@Task@0-00043:CHECKIPVALID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:CHECKIPVALID
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 conditional；数据规划表(020406): 本端规划(ENABLE)
+    requiredness: conditional   # 命令真相 conditional，默认 DISABLE
+    source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+  # REDUNDFUNC：条件可选默认 DISABLE。010107 静态地址用户路由冗余固定取 ENABLE（用到→绑，需配合 SET REDUNDUSER 全局开关）
+  - binding_id: UDG@20.15.2@Task@0-00043:REDUNDFUNC
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:REDUNDFUNC
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 conditional；数据规划表(010107): 固定取值(ENABLE)
+    requiredness: conditional   # 命令真相 conditional，默认 DISABLE
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  # MASTERFLAG：条件可选默认 DISABLE。010107 UE互访场景显式配 ENABLE/DISABLE（用到→绑）
+  - binding_id: UDG@20.15.2@Task@0-00043:MASTERFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOL:MASTERFLAG
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 conditional；数据规划表(010107): 固定取值
+    requiredness: conditional   # 命令真相 conditional，默认 DISABLE
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+rules: [UDG@20.15.2@TaskRule@0-00141]
+notes: |
+  GWFD-010104 外部地址分配链路起点。POOLNAME 为后续 ADD SECTION(0-00044)/ADD POOLBINDGROUP(0-00045) 引用源；VPNINSTANCE 引用 ADD VPNINST(0-00041)。
+  命令级审查(2026-07-02)：
+  - POOLTYPE 由 fixed:EXTERNAL 升级为 decision_driven(DP 0-00061)——跨特性 EXTERNAL(010104/010107/020406) vs LOCAL(020403/020482) 取值分叉（地址池族核心演进点）。
+  - 补 IPVERSION（4 特性显式配，conditional）、CHECKIPVALID（020406 白名单检测 ENABLE）、REDUNDFUNC（010107 路由冗余 ENABLE）、MASTERFLAG（010107 UE互访）。
+  - 未绑冷门可选（任何特性数据规划表/脚本均未用到）：IPLEASE/RELEASETIME/SINGLEIPFLAG/ALARMSWITCH/IMSSW。
+  - 补 cardinality_rule 0-00141（投影命令 notes：最大记录数 40000 + 高危告警 + 执行后立即生效 + APN/POOL VPN 一致性约束）。
+  - source_evidence_ids 扩展至全部 5 个使用该命令的特性。

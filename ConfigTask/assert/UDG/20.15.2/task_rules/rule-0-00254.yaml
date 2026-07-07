@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00254
+owner_task_ref: UDG@20.15.2@Task@0-00037   # 挂 atom ADD BWMRULE
+rule_name: ADD BWMRULE 最大记录数 + 立即生效 + 90%阈值告警 + BWMRULEPRI 唯一性 + 与 BwmRuleGLOBAL 共享配额
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD BWMRULE
+  expression: |
+    ADD BWMRULE 命令最大记录数为 5000。
+    当配置记录数大于规格的 90% 时，会上报 "ALM-135602215 配置数量超阈值" 告警；
+    当配置记录数小于等于规格 90% 时，恢复告警；阈值可通过 MOD CFGTHRESHOLD 修改。
+    该命令执行后立即生效。
+    同一用户级、或用户组级下的带宽管理规则优先级（BWMRULEPRI）不能相同（uniqueness）。
+    ADD BWMRULE 与 ADD BWMRULEGLOBAL 同属 BwmRule 对象，共享规格 5000 上限（跨命令联合计数）。
+violation_effect: 超规格（>5000，与 BwmRuleGLOBAL 共享）新增失败；同用户级/组级下 BWMRULEPRI 重复冲突
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00250~0-00259）。投影自命令 notes '最大记录数为5000' + '执行后立即生效' + 'ADD BWMRULE命令与ADD BWMRULEGLOBAL命令同属于BwmRule对象，共享'。BWMRULENAME/BWMSERVICENAME/UPBWMCTRLNAME1/DNBWMCTRLNAME1 引用关系已由 binding 级 source_ref 隐式表达；BWMRULEPRI 唯一性由本 rule 显式记录。"

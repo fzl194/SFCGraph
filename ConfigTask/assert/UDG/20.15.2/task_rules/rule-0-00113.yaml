@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00113
+owner_task_ref: UDG@20.15.2@Task@0-00013   # 挂 atom SET URRGRPBINDING
+rule_name: 用户模板建议同时绑定业务与信令URR组
+rule_type: dependency_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: should_coexist
+  target_refs:
+    - UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTURRGRPNAME
+    - UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTSIGURRGNAME
+  expression: "建议用户模板下同时配置缺省URR组(DFTURRGRPNAME)和缺省信令URR组(DFTSIGURRGNAME)，否则可能导致使用该用户模板的用户部分流量无法计费。仅在线计费且 UserProfile 未绑定任何 Rule 时，数据包按全局使用量上报规则组计费，否则不计费。"
+violation_effect: 未绑信令URR组时部分流量无法计费
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '建议同时配置缺省URR组和缺省信令URR组，否则可能导致部分流量无法计费' + '只有在线计费且未绑Rule时按全局URR组计费'。"

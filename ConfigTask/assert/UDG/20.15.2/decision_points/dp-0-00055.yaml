@@ -1,0 +1,52 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00055
+owner_task_ref: UDG@20.15.2@Task@0-00004   # 挂 atom（ADD FILTER IPv4）
+decision_name: IPv4过滤条件匹配模式
+decision_question: |
+  ADD FILTER 的过滤条件采用何种匹配模式？决定是否配置服务器IP/手机IP/端口等参数，以及这些参数的来源（本端规划/与对端协商/全网规划）。
+  - any通配模式：仅 FILTERNAME+L34PROTTYPE+L34PROTOCOL，不配IP/端口（多数计费/PCC/URL过滤场景）。
+  - 协议+端口模式：配 SVRSTARTPORT/SVRENDPORT（如 TCP:80、DNS:53），来源多为本端规划。
+  - 服务器IP模式：配 SVRIPMODE/SVRIP/SVRIPMASKTYPE(+SVRIPMASK 或 SVRIPMASKLEN)，来源分叉（Shaping=peer、WebProxy=全网、Bypass=local）。
+  - 手机IP模式：配 MSIPMODE/MSIP/MSIPMASKTYPE/MSIPMASK（仅Shaping，peer）。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020301/部署UPF_28493406.md
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110282/配置Web Proxy_66987339.md
+  - GWFD-112000/激活双故障Bypass_14147877.md
+options:
+  - option_id: opt-filter-any
+    option_name: any通配过滤
+    option_value: ANY
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:MSSTARTPORT, effect_type: excludes, effect_detail: 不配端口（默认0/65535），L34PROTOCOL=ANY。用于内容计费/PCC/URL过滤等 any-to-any 场景}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:SVRIPMODE, effect_type: excludes, effect_detail: 不配服务器IP}
+  - option_id: opt-filter-proto-port
+    option_name: 协议+端口过滤
+    option_value: PROTO_PORT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:SVRSTARTPORT, effect_type: requires, effect_detail: 配置服务器端口（如 TCP:80、DNS:53、HTTPS:443），来源多为本端规划}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:SVRENDPORT, effect_type: requires, effect_detail: 配置服务器结束端口}
+  - option_id: opt-filter-svrip-peer
+    option_name: 服务器IP过滤(与对端协商)
+    option_value: SVRIP_PEER
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:SVRIPMODE, effect_type: sets_value_pattern, effect_detail: SVRIPMODE=IP，SVRIP/SVRIPMASK 来源=与对端协商（Shaping 业务服务器IP）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:SVRIP, effect_type: requires, effect_detail: 服务器IPv4地址，peer_planned}
+  - option_id: opt-filter-svrip-global
+    option_name: 服务器IP过滤(全网规划)
+    option_value: SVRIP_GLOBAL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:SVRIPMODE, effect_type: sets_value_pattern, effect_detail: SVRIPMODE=IP，SVRIP/SVRIPMASK 来源=全网规划（WebProxy 业务服务器IP）}
+  - option_id: opt-filter-svrip-local
+    option_name: 服务器IP过滤(本端规划)
+    option_value: SVRIP_LOCAL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00004:SVRIPMODE, effect_type: sets_value_pattern, effect_detail: SVRIPMODE=IP，SVRIPMASKTYPE=LENGTHTYPE+SVRIPMASKLEN（Bypass SBC-U媒体面IP，本端规划）}
+default_option: opt-filter-any
+notes: |
+  命令级审查(2026-07-02)新增。统一管理 IPv4 过滤条件的匹配模式与参数来源分叉。
+  端口4参数(MSSTARTPORT/MSENDPORT/SVRSTARTPORT/SVRENDPORT)、服务器IPv4组(SVRIPMODE/SVRIP/SVRIPMASKTYPE/SVRIPMASK/SVRIPMASKLEN)、手机IPv4组(MSIPMODE/MSIP/MSIPMASKTYPE/MSIPMASK) 的 variable_source=decision_driven 均引用本 DP。
+  来源分叉依据：SVRIP 在 Shaping=peer、WebProxy=全网、Bypass=local（CONSOLIDATION-BACKLOG §B 已标记）。

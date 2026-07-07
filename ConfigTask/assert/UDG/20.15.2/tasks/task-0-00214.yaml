@@ -1,0 +1,73 @@
+task_id: UDG@20.15.2@Task@0-00214
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IKE对等体
+task_layer: atom
+task_intent: 增加IKE对等体(预共享密钥、引用IKE安全提议、本端/远端地址、VPN绑定、NAT穿越、交换模式)。PSK认证时须配 PRESHAREDKEY 与对端一致
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IKEPEER
+status: inferred  # 命令级审查(2026-07-02): 13 冷门缺口(REMOTEID/VERSION1/2/AUTHADDRESS/ENDADDRESS/证书/IKEMSGSYNC/IPSECMSGSYNC/CUSTOMPARA等)按通用配置门槛不绑; 9/22 已绑
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00214:PEERNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:PEERNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(本端给对端起的标识)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:PRESHAREDKEY
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:PRESHAREDKEY
+    binding_type: variable
+    variable_source: peer_planned   # 对端协商(两端须一致)
+    requiredness: conditional   # PSK认证时必填
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:PROPOSAL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:PROPOSAL
+    binding_type: reference
+    variable_source: reference   # 引用 ADD IKEPROPOSAL:PROPOSALNUMBER (0-00213)
+    source_ref: UDG@20.15.2@Task@0-00213:PROPOSALNUMBER
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:LOWREMOTEADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:LOWREMOTEADDR
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(对端 IKE 协商IP)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:INVRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:INVRFNAME
+    binding_type: reference
+    variable_source: reference   # 引用 IPsec微服务 VPN
+    source_ref: UDG@20.15.2@Task@0-00210:VRFNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:OUTVRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:OUTVRFNAME
+    binding_type: reference
+    variable_source: reference   # 引用 远程地址VPN(全网规划)
+    source_ref: UDG@20.15.2@Task@0-00210:VRFNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:NATTRAVERSAL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:NATTRAVERSAL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；两端间有NAT设备时须 TRUE
+    requiredness: conditional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:EXCHANGEMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:EXCHANGEMODE
+    binding_type: variable
+    variable_source: peer_planned   # 对端协商(Main/Aggressive)
+    requiredness: conditional   # GRE over IPsec 等场景使用
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00214:LOCALIDTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IKEPEER:LOCALIDTYPE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (Ip/Fqdn/User-Fqdn)
+    requiredness: conditional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+notes: "IKE对等体。PEERNAME 本端规划(标识)；PRESHAREDKEY/EXCHANGEMODE/算法 对端协商；LOWREMOTEADDR/OUTVRFNAME 全网规划；NATTRAVERSAL 本端规划。CommandParameter 待抽取。命令级审查(2026-07-02): 13 冷门缺口(REMOTEID/VERSION1/VERSION2/AUTHADDRESS/AUTHENDADDRESS/CERTLOCALFILE/DPDHASHSEQ/IKEMSGSYNC/IPSECMSGSYNC/ENCCERTLOCFILE/CERTSCENARIO/ENCCERTSCENARIO/CUSTOMPARA)命令真相均 optional 且 4 IPSec 场景均用 PSK 不涉及证书/DPD/IKEv1/地址段认证等, 按通用配置门槛不绑; 9/22 已绑(PEERNAME+PRESHAREDKEY+PROPOSAL+LOWREMOTEADDR+INVRFNAME+OUTVRFNAME+NATTRAVERSAL+EXCHANGEMODE+LOCALIDTYPE); INVRFNAME/OUTVRFNAME/PROPOSAL 三 reference 引用关系正确(0-00210:VRFNAME / 0-00213:PROPOSALNUMBER 命中); LOWREMOTEADDR 命令真相=对端协商(peer_planned)但本特性场景全网规划(4 evidence md), 按 ③ 优先保留 global_planned, 跨场景分叉由 feature task 投影。"

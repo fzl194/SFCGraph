@@ -1,0 +1,26 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00082
+owner_task_ref: UDG@20.15.2@Task@0-00079   # 挂 atom ADD OSPFV3AREA：AREAID 获取方法跨特性分叉
+decision_name: OSPFv3区域号(AREAID)来源
+decision_question: ADD OSPFV3AREA 的 AREAID 取值来源？（OSPFv3 区域号须与对端路由器在同一区域达成一致，否则邻居无法建立。多数场景下 AREAID 由本端与对端协商确定(GWFD-020406 IPv6 Prefix Delegation，标'与对端协商'，backbone/常规区域常取 0.0.0.0)；UDG 到 ePDG/Untrusted Non-3GPP 动态路由组网(GWFD-010155/020401)则按全网规划取 0.0.0.1/0.0.0.1 等本端规划值。）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+  - GWFD-020401/激活IPv6承载上下文_38276176.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+options:
+  - option_id: opt-areaid-peer-v3
+    option_name: 与对端协商(peer)
+    option_value: peer
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00079:AREAID, effect_type: sets_value, effect_detail: variable_source=peer；AREAID 须与对端路由器在同一区域协商一致(backbone 常取 0.0.0.0)，否则 OSPFv3 邻居无法建立。适用于 IPv6 Prefix Delegation 等需与外部路由器对接的场景(020406)}
+  - option_id: opt-areaid-global-v3
+    option_name: 全网规划
+    option_value: global_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00079:AREAID, effect_type: sets_value, effect_detail: variable_source=global_planned；AREAID 由 UDG 侧全网规划(如 ePDG 动态路由组网取 0.0.0.1)，仍须与对端在同一区域。适用于 PGW-U 到 ePDG 的 OSPFv3 等价路由组网(010155/020401)}
+default_option: opt-areaid-global-v3
+notes: |
+  命令级审查(2026-07-02) 新建。IPv4 ADD OSPFAREA(DP 0-00078) 的 OSPFv3 镜像。③跨特性数据规划表"获取方法"列分布: 与对端协商(1, 020406) vs 全网规划(2, 010155/020401)，源解析分叉(取值语义不同: peer 协商 backbone 0.0.0.0 / global 规划 0.0.0.1)→升级 decision_driven。原 pass-1 录制 global_planned 作为默认(对齐 010155 主路径 GWFD-010155 IPv6 OSPFv3)，改为由本 DP 选；default 取 opt-areaid-global-v3(OSPFv3 路径主场景为 UDG 到 ePDG IPv6 动态路由组网,与 IPv4 DP 0-00078 取 peer 不同,因 IPv6 路径主特性 010155/020401 均全网规划占多数)。命令真相 AREAID 为 required IPv4 点分十进制。AREAID 同时被 ADD OSPFV3INTERFACE(0-00117) 引用，故本 DP 决策会传递至下游接口配置。

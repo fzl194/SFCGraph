@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00272
+owner_task_ref: UDG@20.15.2@Task@0-00209
+rule_name: 0-00209 聚合 atom 内部互斥(ACLGROUP6 vs ACLRULEADV6 vs ACLRULEBAS6)
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00209
+  expression: "0-00209 为 P0 聚合 atom (ADD ACLGROUP6 + ADD ACLRULEADV6 / ADD ACLRULEBAS6)。ACLGROUP6 必须先发(规则组前置)，后续 ACLRULEADV6 (高级,五元组,3000-3999) 或 ACLRULEBAS6 (基本,仅源IP,2000-2999) 二选一(由用户按匹配需求选，DP 0-00032 opt-acl-v6 已绑定 0-00209)。IPv4/IPv6 family 互斥由 DP 0-00032 顶层把控(已 select 时 excludes ACL4 链)。"
+violation_effect: 规则组未建→规则创建失败；选错 type→范围段错位被拒
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [IPFD-012002/激活支持ACL6_06381763.md]
+notes: "命令级审查(2026-07-02)新增 rule。CONSOLIDATION-BACKLOG.md §B/E.2 已标记 0-00209 应拆为 ACLGROUP6 / ACLRULEADV6 / ACLRULEBAS6 三个 atom，本 pass 不拆(留待专项聚合拆解 pass)。端口条件必填与 ACLRULEADV4 同步(参见 rule 0-00270)。"

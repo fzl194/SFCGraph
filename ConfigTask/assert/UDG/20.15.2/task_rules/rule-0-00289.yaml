@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00289
+owner_task_ref: UDG@20.15.2@Task@0-00202
+rule_name: 0-00202 最大记录数 65536 + ACLNUM 条件必填 + ACL 计数不计
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00202
+  expression: |
+    ADD QOSRULEACL(atom 0-00202) 配置约束：
+    (1) 上限：系统最大记录数为 65536(命令 notes 强约束)。
+    (2) ACLTYPE 必选且与 ACLNAME/ACLNUM 配套：ACLTYPE=acl-name 时 ACLNAME 必选(本 atom 主场景)；ACLTYPE=acl-number 时 ACLNUM 必选(整数范围 2000~4999)——本 atom 当前 ACLTYPE 固定 acl-name 仅绑 ACLNAME；ACLNUM 缺口按编号场景揭示后补充(binding requiredness 应升 decision_driven 或 conditional)。
+    (3) CLASSIFIERNAME 引用 ADD MQCCLASSIFIER(0-00201)：主场景示例 CLASSIFIERNAME=class1。
+    (4) ACLNAME 引用 ADD ACLGROUP(atom 0-00197) 已配 ACL 名称：主场景示例 ACLNAME=acl1。
+    (5) ACL 计数不参与：虽然引用了 ACL 规则，但在 ACL 规则匹配计数中不统计(命令 notes 强约束)——QoS 流分类匹配不影响 ACL 统计。
+    (6) IPVERSION 配套：IPVERSION=IPv4 时引用 IPv4 ACL(0-00197)；IPVERSION=IPv6 时引用 IPv6 ACL(0-00209)——本 atom 当前 binding IPVERSION required 已正确投影。
+    (7) 该命令执行后立即生效(命令 notes)。
+violation_effect: 上限超限→ADD 失败；ACLTYPE=acl-number 但仅 ACLNAME 配→ADD 拒收；ACLNUM 错填范围外→ADD 拒收；引用不存在 ACL→ADD 拒收
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。ACLNUM 缺口对应 ACLTYPE=acl-number 分支待后续特性揭示或升 decision_driven。"

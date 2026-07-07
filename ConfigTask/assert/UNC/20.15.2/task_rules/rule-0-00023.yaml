@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00023
+owner_task_ref: UNC@20.15.2@Task@0-00021
+rule_name: ADD CHGPLMNCFG 最多 1500 条 + 前置 PLMNCTRL=LOCINFO
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CHGPLMNCFG]
+  expression: 记录数 ≤ 1500；仅在 SET CHGCDR.PLMNCTRL=LOCINFO 时生效；与 ADD CHGIMSICFG 字段默认值互为无效值；SET CHGPLMNCHAR 禁止生成时本命令不生效。只对配置后激活用户有效。
+violation_effect: 超规格无法新增；PLMNCTRL 不是 LOCINFO 时不生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加PLMN计费配置(ADD CHGPLMNCFG)_72225071.md]

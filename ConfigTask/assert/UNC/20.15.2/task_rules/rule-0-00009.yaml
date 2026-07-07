@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00009
+owner_task_ref: UNC@20.15.2@Task@0-00008
+rule_name: ADD APNUSRPROFG 最多 10000 条 + 每 APN 唯一绑定
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD APNUSRPROFG]
+  expression: 记录数 ≤ 10000；每个 APN 只能绑定一个 USRPROFGROUP（APN→USRPROFGNAME 唯一）
+violation_effect: 超规格无法新增；同 APN 重复绑定失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加APN用户模板组绑定关系（ADD APNUSRPROFG）_09897224.md]

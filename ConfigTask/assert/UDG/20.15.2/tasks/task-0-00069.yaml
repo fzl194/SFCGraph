@@ -1,0 +1,43 @@
+task_id: UDG@20.15.2@Task@0-00069
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置下行PHB映射
+task_layer: atom
+task_intent: 配置DS域下行报文UDG内部服务等级(SERVICECLASS)和报文颜色(COLOR)与外部VLAN报文802.1p值(PHBVALUE)的对应关系（出口ToS→CoS映射）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET QOSPHB
+status: inferred   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00069:DSNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSPHB:DSNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD QOSDIFFERSERV 的 DSNAME
+    source_ref: UDG@20.15.2@Task@0-00066:DSNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00069:PHBTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSPHB:PHBTYPE
+    binding_type: fixed
+    value: 8021p   # 任务示例脚本固定 8021p
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00069:PHBVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSPHB:PHBVALUE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(802.1p 值)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00069:SERVICECLASS
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSPHB:SERVICECLASS
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00069:COLOR
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSPHB:COLOR
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+notes: "GWFD-010201。出口方向(ToS→CoS) PHB 映射命令, 与入口方向 SET QOSBA(0-00067) 对偶(不同命令)。DSNAME 引用 ADD QOSDIFFERSERV(0-00066)。任务示例: PHBVALUE=3/SERVICECLASS=be/COLOR=green/PHBTYPE=8021p。本 atom 仅出口方向配置(DP 0-00016 选 opt-egress 时使用)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)：status draft→inferred；rule 0-00283 已覆盖(入口+出口成对约束)；binding=5(命中真相全部 5 项，无缺口)。"

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00115
+owner_task_ref: UDG@20.15.2@Task@0-00014   # 挂 atom ADD SPECURRGRPLIST
+rule_name: 防欺诈流量仅统计离线URR流量
+rule_type: conditional_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: behavior
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD SPECURRGRPLIST:URRGROUPNAME
+  expression: "当特殊URR组列表用于防欺诈检测时，若用户同时使能离线计费和在线计费，欺诈流量统计只会使用 URR Group 中绑定的离线计费URR的流量（未绑则不统计），不统计在线计费URR流量。使用 N40 融合计费且采用 SID 级计费时，为避免欺诈流量统计重复，不要将 RG 对应的 URR Group 加入本列表。"
+violation_effect: 防欺诈流量统计口径与预期不符（在线流量不计/重复统计）
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes 关于防欺诈检测流量统计行为的说明（仅统计离线URR、N40融合SID级计费避免重复）。"

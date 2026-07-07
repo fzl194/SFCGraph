@@ -1,0 +1,41 @@
+task_id: UDG@20.15.2@Task@2-00002
+nf: UDG
+version: "20.15.2"
+task_logical_name: 在线计费
+task_layer: feature
+task_intent: Gy 接口在线计费：复用计费 backbone + 在线专属可选命令（默认配额/Credit Pooling/上报失败动作）
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020300
+status: inferred
+source_evidence_ids:
+  - GWFD-020300/配置Gy接口在线计费_83167737.md
+  - GWFD-020300/GWFD-020300 在线计费参考信息_02557786.md
+  - GWFD-020300/在线计费流程（用户创建承载时下配额）_66692149.md
+  - GWFD-020300/在线计费流程（用户创建承载时未下配额）_66692150.md
+task_relations:
+  # 复用 backbone compounds（与 2-00001 内容计费共享 backbone）
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00015, from_task_ref: UDG@20.15.2@Task@1-00001, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00016, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00017, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@1-00004, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  # 在线专属可选 atom（feature 级 DP 0-00154 门控；md 步骤6-8 可选）
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00018, from_task_ref: UDG@20.15.2@Task@1-00004, to_task_ref: UDG@20.15.2@Task@0-00016, relation_type: precedes, requiredness: optional, condition_ref: UDG@20.15.2@DecisionPoint@0-00154, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00019, from_task_ref: UDG@20.15.2@Task@1-00004, to_task_ref: UDG@20.15.2@Task@0-00017, relation_type: precedes, requiredness: optional, condition_ref: UDG@20.15.2@DecisionPoint@0-00154, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00020, from_task_ref: UDG@20.15.2@Task@1-00004, to_task_ref: UDG@20.15.2@Task@0-00018, relation_type: precedes, requiredness: optional, condition_ref: UDG@20.15.2@DecisionPoint@0-00154, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+notes: |
+  复用 atom 0-00001~0-00015 与 compound 1-00001~1-00004（与内容计费共享 backbone），新增在线专属可选 atom 0-00016/17/18。
+  计费方式=在线 由 atom DP 0-00001(option opt-online)锁定——该 DP 仅参数 impact(USAGERPTMODE=ONLINE
+  + 条件 adds ONLMETERINGTYPE),不改命令集出现/缺失,故不进入本特性 variants 枚举(纯参数 DP)。
+  A 段 6 步(pass-2, 2026-07-03)修订:
+  - 3 个在线专属 atom 的 condition_ref 由 DP 0-00004(generalized/owner 4-00001, B 段作用域外)
+    改为本特性级 DP 0-00154(在线专属SET开关)。spec §4.3 要求 A 段不依赖作用域外 DP;原版是
+    pass-1(B 段当时一并建)的遗留,A 段重建必须收回特性内。DP 0-00004 opt-g-online 仍负责
+    "是否叠加 2-00002 特性"(跨特性层),与本 DP 不冲突(spec §5 同名决策可多层共存不合并)。
+  - md 步骤6-8 标注"可选",主示例脚本不含 3 个 SET 命令 → opt-off 变体为 md 证实;
+    步骤6-8 文字描述提供 3 SET 可选项 → opt-on 变体为 md 证实。
+  - md 配置示例仅展示三四层 FILTER(无 L7FILTER/PROTBINDFLOWF/IMS/any 场景列举),故本特性
+    variants 不引用 DP 0-00002(过滤场景,compound 1-00002 owner);过滤场景由 backbone 1-00002
+    内部承载,本特性只承担"在线"差量。
+  - rule 0-00011(本特性挂,UPDEFAULTQUOTA.DFTQTSWITCH 与 UPGLBCHGPARA.CREDITPOOLSW 不能同 ENABLE)
+    是配置值互斥约束,覆盖校验只校命令集,规则合规由 conditional_rule 在配置生成时强制。
+  - forward-instantiation: md L87 prose 笔误("Credit Pooling 由 SET UPDEFAULTQUOTA 的 CREDITPOOLSW 控制"
+    实属 SET UPGLBCHGPARA,见 pass-2 0203 报告),task 层 rule 0-00011 按命令真实归属引用,未受影响。

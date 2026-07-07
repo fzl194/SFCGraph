@@ -1,0 +1,22 @@
+task_id: UNC@20.15.2@Task@0-00011
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CGBINDING
+task_layer: atom
+task_intent: 将 CG 绑定到 CG 组（指定 CG IP/端口/优先级）（SGW-C/PGW-C/SMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CGBINDING
+status: inferred
+source_evidence_ids:
+  - 增加CG绑定关系（ADD CGBINDING）_09896874.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00011:CGGRPID", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGBINDING:CGGRPID", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD CGGROUP:CGGRPID", requiredness: required, source_evidence_ids: [WSFD-011201/配置到CG的数据（GGSN_SGW-C_PGW-C）_95923479.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00011:CGIPVERSION", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGBINDING:CGIPVERSION", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [增加CG绑定关系（ADD CGBINDING）_09896874.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00011:CGIPV4ADDR", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGBINDING:CGIPV4ADDR", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [增加CG绑定关系（ADD CGBINDING）_09896874.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00011:CGIPV6ADDR", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGBINDING:CGIPV6ADDR", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [增加CG绑定关系（ADD CGBINDING）_09896874.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00011:CGPORT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGBINDING:CGPORT", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [增加CG绑定关系（ADD CGBINDING）_09896874.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00011:PRIORITY", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGBINDING:PRIORITY", binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [增加CG绑定关系（ADD CGBINDING）_09896874.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CGBINDING.md（1 特性用 WSFD-011201，6 参）。
+  CGGRPID=reference(ADD CGGROUP)；CG IP/端口=全网规划（CG 侧地址）；PRIORITY=本端规划。
+  notes：用户选定 CG Group 后，CG 优先级使用 CGBINDING 指定的（不使用 ADD CG 时的）。最多 1024 条 → rule 0-00013。

@@ -1,0 +1,49 @@
+task_id: UDG@20.15.2@Task@0-00056
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置逻辑接口
+task_layer: atom
+task_intent: 增加逻辑接口（LoopBack/Tunnel），指定管理状态/MTU/不分片标记（路由冗余GRE隧道、IPsec隧道、IPv6组网等场景的LoopBack/Tunnel接口承载）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD INTERFACE
+status: inferred   # 命令级审查(2026-07-02): draft→inferred。CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00056:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD INTERFACE:IFNAME
+    binding_type: decision_driven   # 命令级审查: 接口名来源跨特性分叉(010107 全网规划 / 020402 本端规划+已配置LST / IPFD 本端)，升级 decision_driven
+    variable_source: local_planned   # 命令真相=local_planned；默认按全局规划协调，DP 0-00070 分流
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00070
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+      - IPFD-015002/激活支持GRE_06422610.md
+      - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - binding_id: UDG@20.15.2@Task@0-00056:IFADMINSTATUS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD INTERFACE:IFADMINSTATUS
+    binding_type: fixed
+    value: up   # 任务示例脚本固定 up（LoopBack/IPsec Tunnel 接口启用）
+    requiredness: conditional   # LoopBack/IPsec Tunnel 接口配；GRE Tunnel/以太网子接口可不配
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00056:IFMTU
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD INTERFACE:IFMTU
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(Tunnel MTU; 原则: 封装GRE出外联口不分片，取值范围46~9600)
+    requiredness: conditional   # Tunnel 接口配（GRE/IPsec 隧道 1500；LoopBack/以太网子接口不配）
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+  - binding_id: UDG@20.15.2@Task@0-00056:IFDF
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD INTERFACE:IFDF
+    binding_type: variable   # 命令级审查新增: IPFD-015004 GRE over IPsec / OSPF over IPsec / 主备隧道脚本显式 IFDF=FALSE
+    variable_source: local_planned   # 本端规划（默认 FALSE；Tunnel 接口出向不分片标记）
+    requiredness: conditional   # Tunnel 接口配（GRE/IPsec 隧道显式 FALSE；LoopBack/以太网子接口不配）
+    source_evidence_ids:
+      - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+      - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+notes: "GWFD-010107 + GWFD-020402 + IPFD-015002 + IPFD-015004。同一 ADD INTERFACE 命令承载多类接口: ①LoopBack(IFADMINSTATUS=up) ②Tunnel(IFMTU=1500,IFDF=FALSE) ③以太网子接口(仅 IFNAME)。按一命令一atom(§4.2)合并，IFADMINSTATUS/IFMTU/IFDF 互斥(requiredness=conditional，由 IFNAME 类型决定)。命令级审查(2026-07-02): IFNAME 来源跨特性分叉(010107 全网规划/020402 本端规划+LST已配置/IPFD 本端)→升级 decision_driven(DP 0-00070，default 全局规划)；新增 IFDF binding(IPFD-015004 隧道脚本显式 FALSE)。不绑冷门: IFDESCR/IFSTATIENABLE/IFTRAPENABLE/IFSTATITVL(命令真相 optional 且多数特性未用)。后续 ADD IPBINDVPN(0-00057)/ADD IFIPV4ADDRESS(0-00058)/SET IFIPV6ENABLE(0-00060)/ADD IFIPV6ADDRESS(0-00061)/ADD GRETUNNEL(0-00059) 均引用本 atom 的 IFNAME。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

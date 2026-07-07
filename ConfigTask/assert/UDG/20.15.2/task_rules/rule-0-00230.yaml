@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00230
+owner_task_ref: UDG@20.15.2@Task@0-00141   # 挂 atom ADD AUTOSCALINGSERVICE
+rule_name: ADD AUTOSCALINGSERVICE 规格 + 地址池上限 + VNICID 范围 + 立即生效 + 自动化配置开关前置
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD AUTOSCALINGSERVICE
+  expression: |
+    ADD AUTOSCALINGSERVICE 命令最大记录数为 4096。
+    地址池范围（BEGINADDR*/ENDADDR*）不能超过 2048。
+    设置 VNICID 时须保证取值在设备物理主接口号有效范围内（命令枚举，规则由参数级 validates 取值范围承担）。
+    该命令执行后立即生效。
+    该命令在自动化配置开关为关闭的状态下才能执行（前置 SET AUTOCONFIG 关闭 → 执行 → SET AUTOCONFIG 开启）。
+violation_effect: 超规格（>4096）新增失败；地址池超 2048 失败；VNICID 越界失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes: 规格 4096 + 地址池 2048 上限 + VNICID 范围 + 立即生效 + 自动化配置开关前置(SET AUTOCONFIG 关闭/开启两步)。VNICID 取值范围（1~4294967295）由 CommandParameter 校验承担。26 缺口中 IPALLOCTYPE4 已在 atom 显式绑（md 脚本 L162 SR-IOV bonding 示例显式 USER_CONFIG），其余 25 均为冷门 optional 无特性用到（OSPF 族路由交叉不用 + TPIN/TPOUT 流量策略 + MTU + FLOWMODE + NETWORKINSTID + ISBACKUP + TRUSTUPSTREAM + OSPFGRPENABLE + OSPFGRPID + ADDRMODE + BEGIN/ENDADDR6 IPv6 变体）。"

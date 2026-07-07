@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00142
+owner_task_ref: UDG@20.15.2@Task@0-00044   # 挂 atom ADD SECTION
+rule_name: ADD SECTION 最大记录数 + 每池地址段数上限 + 起止顺序
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD SECTION
+  expression: |
+    ADD SECTION 命令最大记录数为 40000；当配置记录数大于规格 98% 时上报"ALM-135602215 配置数量超阈值"告警，≤95% 恢复，阈值可通过 MOD CFGTHRESHOLD 修改。
+    一个地址池最多可配置 64 个地址段（SECTIONNUM 取值 0~63）。
+    地址段起始地址不能大于终止地址（V4STARTIP ≤ V4ENDIP；V6PREFIXSTART ≤ V6PREFIXEND）；本地地址池每个 IPv4 地址段有容量上限。
+    执行后立即生效。
+violation_effect: 超规格新增失败；单池超 64 段失败；起止倒置致地址段非法；接近阈值产生配置数量超阈值告警
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数40000' + '98%阈值告警' + '一个地址池最多64个地址段' + '起始不大于终止' + '执行后立即生效'。"

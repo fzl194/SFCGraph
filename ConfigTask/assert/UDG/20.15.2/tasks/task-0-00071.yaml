@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00071
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置L3VPN实例
+task_layer: atom
+task_intent: 创建L3VPN实例（VRFNAME），用于Untrusted Non-3GPP/ePDG互通场景的VPN隔离（vpn-s2b）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD L3VPNINST
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00071:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L3VPNINST:VRFNAME
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（一条通信路径上所有节点VPN实例须一致）
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+notes: "GWFD-010155 PGW-U到ePDG互通。VRFNAME 为 VPN 实例名，全网统一规划，是后续 ADD VPNINSTAF/ADD VPNINST/ADD OSPF/ADD LOGICINF 的 VRFNAME 引用源(reference)。ADD VPNINSTAF(VRFNAME/AFTYPE/VRFRD) 与 ADD L3VPNINST 配套（同属 L3VPN 实例管理），本 atom 仅录 ADD L3VPNINST 主体；VPNINSTAF 的 AFTYPE/VRFRD 由 IPv4/IPv6 版本分叉表达于 DP 0-00017。命令级审查(2026-07-02): 命令真相 2 参数(VRFNAME/VRFDESCRIPTION)，VRFDESCRIPTION=optional/local_planned 是描述字段，6 特性数据规划表均未引用(冷门)，按通用配置门槛跳过不绑；VRFNAME 维持 global_planned——命令 truth 标 local_planned 但语义为跨节点全网一致(激活 md 明确'一条通信路径上所有节点绑定的VPN实例要一致')，取 global_planned 更准。投影 2 规则: cardinality 0-00162(最大记录数4096) + value_rule 0-00163(保留名 _public_/__mpp_vpn_inner__/__mpp_vpn_inner_server__ 禁用)。"

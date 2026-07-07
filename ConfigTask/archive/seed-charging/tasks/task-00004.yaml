@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@00004
+task_logical_name: 配置三四层过滤器-IPv4
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD FILTER
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:FILTERNAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 过滤器名
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:L34PROTTYPE
+        binding_type: fixed
+        fixed_value: STRING
+        note: 输入类型固定STRING
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:L34PROTOCOL
+        binding_type: variable
+        variable_source: local_planned
+        note: 三四层协议(ANY等)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSSTARTPORT
+        binding_type: variable
+        variable_source: local_planned
+        note: 手机起始端口
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSENDPORT
+        binding_type: variable
+        variable_source: local_planned
+        note: 手机结束端口
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRSTARTPORT
+        binding_type: variable
+        variable_source: local_planned
+        note: 服务器起始端口
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRENDPORT
+        binding_type: variable
+        variable_source: local_planned
+        note: 服务器结束端口
+task_category: 配置
+status: active
+source_evidence_ids: []

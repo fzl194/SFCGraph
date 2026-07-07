@@ -1,0 +1,27 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00001
+owner_task_ref: UDG@20.15.2@Task@0-00001   # 挂 atom ADD URR（参数级决策）
+decision_name: 计费方式选择
+decision_question: 该费率采用哪种计费方式（决定上报模式与统计类型参数）？
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+options:
+  - option_id: opt-offline
+    option_name: 离线
+    option_value: OFFLINE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE, effect_type: sets_value_pattern, effect_detail: "=OFFLINE"}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE, effect_type: adds, effect_detail: 条件出现，按 VOLUME/TIME/EVENT/FREE 取值}
+  - option_id: opt-online
+    option_name: 在线
+    option_value: ONLINE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE, effect_type: sets_value_pattern, effect_detail: "=ONLINE"}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD URR:ONLMETERINGTYPE, effect_type: adds, effect_detail: 条件出现，按 VOLUME/TIME/EVENT/FREE 取值}
+  - option_id: opt-converged
+    option_name: 融合
+    option_value: CONVERGED
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE, effect_type: sets_value_pattern, effect_detail: 同URRGROUP内在线+离线URR共存（UP/DOWNURRNAME1指离线、UP/DOWNURRNAME2指在线）}

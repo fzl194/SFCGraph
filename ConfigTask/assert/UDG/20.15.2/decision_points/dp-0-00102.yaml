@@ -1,0 +1,35 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00102
+owner_task_ref: UDG@20.15.2@Task@0-00040   # 挂 atom ADD SADEDICBEARER
+decision_name: SADEDICBEARER 协议等级互斥(PROTOCOL vs PROTOCOLGROUP)
+decision_question: |
+  ADD SADEDICBEARER 的 PROTOCOLLEVEL 取哪个分支？二选一（命令真相 PROTOCOLLEVEL=PROTOCOL/PROTOCOLGROUP）：
+  - PROTOCOL：按具体协议定义 SA 触发专有承载（PROTOCOLNAME 必配，PROTGROUPNAME 不配）。
+  - PROTOCOLGROUP：按协议组定义 SA 触发专有承载（PROTGROUPNAME 必配，PROTOCOLNAME 不配）。
+  命令 notes: PROTOCOLLEVEL=PROTOCOL 配 PROTOCOLNAME，PROTOCOLLEVEL=PROTOCOLGROUP 配 PROTGROUPNAME，二者一一对应互斥。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020358/配置七层业务触发的QOS保证_80361858.md
+options:
+  - option_id: opt-sadedicbearer-protocol
+    option_name: 协议级
+    option_value: PROTOCOL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00040:PROTOCOLLEVEL, effect_type: sets_value, effect_detail: value=PROTOCOL}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00040:PROTOCOLNAME, effect_type: sets_requiredness, effect_detail: requiredness=required}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00040:PROTGROUPNAME, effect_type: sets_requiredness, effect_detail: requiredness=optional}
+  - option_id: opt-sadedicbearer-protocolgroup
+    option_name: 协议组级
+    option_value: PROTOCOLGROUP
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00040:PROTOCOLLEVEL, effect_type: sets_value, effect_detail: value=PROTOCOLGROUP}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00040:PROTGROUPNAME, effect_type: sets_requiredness, effect_detail: requiredness=required}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00040:PROTOCOLNAME, effect_type: sets_requiredness, effect_detail: requiredness=optional}
+default_option: opt-sadedicbearer-protocol
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00102~）。管理 ADD SADEDICBEARER 的 PROTOCOLLEVEL 二选一编排 + 配套 PROTOCOLNAME/PROTGROUPNAME 必选/非必选。
+  依据：命令真相 PROTOCOLNAME conditional + PROTGROUPNAME conditional（PROTOCOLLEVEL 不同取值时分别必配，二者互斥）。
+  原 binding PROTOCOLNAME/PROTGROUPNAME 静态 conditional（无法表达 PROTOCOLLEVEL 选哪个分支时对应字段必选）；按 SKILL §4.5 升级为 decision_driven：2 个 option 互斥。
+  注：本 atom 仅 1 特性使用（GWFD-020358），不存在跨特性分叉——决策按主特性默认 PROTOCOL 路径，与 sub-Protocol 表记录配套(命令 notes：配置 ProtocolName 时，SubProtocol 表记录必须存在)。

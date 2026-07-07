@@ -1,0 +1,15 @@
+task_id: UDG@20.15.2@Task@2-00001
+nf: UDG
+version: "20.15.2"
+task_logical_name: 内容计费基本功能
+task_layer: feature
+task_intent: UPF 内容计费完整配置流程（业务费率→过滤规则→规则→用户模板→缺省费率→刷新）
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020301
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+task_relations:
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00012, from_task_ref: UDG@20.15.2@Task@1-00001, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00013, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00014, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@1-00004, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+notes: GWFD-020301。基础流程覆盖 4 场景（URL/IMS/any/异常）由 DP 0-00001（计费方式）与 DP 0-00002（过滤模式）的 option 动态组合，不建多套 task 树。

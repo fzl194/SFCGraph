@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00244
+owner_task_ref: UDG@20.15.2@Task@0-00115   # 挂 atom ADD ETHSUBIF
+rule_name: ADD ETHSUBIF 最大记录数 + VLAN 唯一性规格 + 前置创建子接口 + 立即生效
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD ETHSUBIF
+  expression: |
+    ADD ETHSUBIF 命令最大记录数为 262144。
+    该命令只允许配置在子接口上；每个子接口只可关联一个 VLAN（每子接口 VLAN 唯一）。
+    不同主接口下的子接口可以关联相同的 VLAN，但同一主接口下的不同子接口必须关联不同的 VLAN。
+    前置：执行该命令前必须先创建子接口（IFNAME 指向已建子接口）。
+    该命令执行后立即生效。
+    附加（md 注意事项，非命令 notes 但具配置约束力）：子接口配置 VLAN 后需在交换机/对接网关同步 VLAN；双平面组网两 trunk 的 VLAN 须不同以避免环路。
+violation_effect: 超规格新增失败；非子接口配置失败；同子接口重复关联 VLAN 失败；同主接口下子接口 VLAN 重复失败；未先建子接口致 IFNAME 引用悬空；VLAN 未在交换机同步致通信异常
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00240~0-00249）。投影自命令 notes '最大记录数262144' + '只允许配置在子接口上，每个子接口只可关联一个VLAN' + '不同主接口下子接口可同VLAN，同主接口下子接口须不同VLAN'(分主接口作用域的 VLAN 唯一性) + '执行前必须先创建子接口'(前置) + '立即生效'。前置创建子接口已由 IFNAME binding 的 source_ref=0-00056:IFNAME(reference) 隐式表达，本 rule 显式记录 VLAN 唯一性规格；另收录 md 注意事项的交换机同步/双平面防环路约束。"

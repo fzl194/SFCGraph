@@ -1,0 +1,20 @@
+task_id: UDG@20.15.2@Task@0-00029
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置业务属性
+task_layer: atom
+task_intent: 配置业务属性(ADD SERVICEPROP)，定义业务标识与优先级，供 PCC策略组业务属性绑定使用
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SERVICEPROP
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取
+source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00029:SRVPROPNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD SERVICEPROP:SRVPROPNAME, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00029:SERVICEID, parameter_ref: UDG@20.15.2@CommandParameter@ADD SERVICEPROP:SERVICEID, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00029:PRIORITY, parameter_ref: UDG@20.15.2@CommandParameter@ADD SERVICEPROP:PRIORITY, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md]}
+notes: |
+  GWFD-020352 IPv6 SA 专属(业务属性对象)。SRVPROPNAME/SERVICEID/PRIORITY 数据来源(命令 parameter_description + 特性 md 获取方法列)=全网规划(global_planned)。
+  SERVICEID 全局唯一，PRIORITY 全局唯一(取值越小优先级越高)。max_records=1000。
+  业务属性名/标识/优先级之间不能重复(命令 notes 约束→ uniqueness_rule 已挂 0-00380)。
+  本 atom 为 SRVPBINDPCCPG(0-00030) 的前置依赖。
+  冷门参数不绑(CFGDOMAINNAME: 配置域 1~31,UDG 场景不配)。

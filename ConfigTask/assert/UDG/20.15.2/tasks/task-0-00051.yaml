@@ -1,0 +1,67 @@
+task_id: UDG@20.15.2@Task@0-00051
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置GTP路径相关属性
+task_layer: atom
+task_intent: 设置非N4/Sxb接口GTP路径探测参数（Echo开关/重发/去活策略）及可选的探测接口类型(LOGICINFTYPE)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET UPGTPPATH
+status: inferred  # 命令级审查(2026-07-02): 3 冷门缺口(V0ECHOSW/UACT3RESPONSE/UACN3REQUEST)按通用配置门槛不绑; 9/12 已绑; DP 0-00015 已存在编排 ECHOLISTTYPE
+source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md, GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00051:V1DATAECHOSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:V1DATAECHOSW
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划(数据路径Echo开关)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:ECHOINTERVAL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:ECHOINTERVAL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(Echo请求间隔)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:T3RESPONSE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:T3RESPONSE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(Echo重发间隔)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:N3REQUEST
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:N3REQUEST
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(Echo最大重发次数)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:DEACTIVEFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:DEACTIVEFLAG
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(路径断后是否去活上下文)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:ECHOTIME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:ECHOTIME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(告警后发Echo次数)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:LOGICINFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:LOGICINFTYPE
+    binding_type: optional
+    variable_source: local_planned   # 本端规划；不配=对所有非N4/Sxb接口启动探测
+    requiredness: optional
+    source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:ECHOLISTSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:ECHOLISTSWITCH
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(黑白名单开关，黑白名单md)
+    requiredness: optional   # 仅启用黑白名单探测时配置
+    source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+  - binding_id: UDG@20.15.2@Task@0-00051:ECHOLISTTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET UPGTPPATH:ECHOLISTTYPE
+    binding_type: decision_driven
+    variable_source: local_planned   # 来源本端规划一致；黑白名单类型(WHITE/BLACK)由 DP 0-00015 选
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00015
+    requiredness: optional
+    source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+notes: "GWFD-010102。同一命令 SET UPGTPPATH 承载两类配置: ①路径探测参数(主md, 7参数) ②黑白名单开关(ECHOLISTSWITCH/ECHOLISTTYPE, 黑白名单md)。按一命令一atom(§4.2)合并为单 atom，参数集并集。ECHOLISTTYPE 取值 WHITE/BLACK 由 DP 0-00015 门控(来源固定本端规划+值由决策选, 非 decision_driven source)。LOGICINFTYPE 可选(不配=全量非N4接口)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取(rule 0-00033 集中标记)。命令级审查(2026-07-02): 3 冷门缺口(V0ECHOSW/V0 Echo开关, UACT3RESPONSE/UAC GTP重发间隔, UACN3REQUEST/UAC GTP最大次数)命令真相均 optional 且 010102 特性数据规划表+脚本均未用到→按通用配置门槛不绑; ECHOLISTSWITCH=ENABLE→ECHOLISTTYPE→DP0-00015→ADD ECHOIPLIST(0-00054) requires 编排已完整。"

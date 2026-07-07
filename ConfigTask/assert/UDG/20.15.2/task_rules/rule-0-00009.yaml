@@ -1,0 +1,17 @@
+rule_id: UDG@20.15.2@TaskRule@0-00009
+owner_task_ref: UDG@20.15.2@Task@2-00001
+rule_name: 内容计费依赖 SA-Basic 与 License
+rule_type: dependency_rule
+rule_scope: feature
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_exist
+  target_refs: [UDG@20.15.2@Feature@GWFD-110101]
+  expression: 执行内容计费配置前须完成加载 License、并已部署 SA-Basic 业务感知底座
+violation_effect: 特性无法生效
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: projected
+source_static_refs: [UDG@20.15.2@Feature@GWFD-020301]
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

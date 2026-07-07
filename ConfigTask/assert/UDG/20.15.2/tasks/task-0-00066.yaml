@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00066
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置DS域
+task_layer: atom
+task_intent: 增加Diff-Serv域实例（DSNAME），作为VLAN与IP网络优先级映射的容器
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD QOSDIFFERSERV
+status: inferred   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00066:DSNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSDIFFERSERV:DSNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(DS域名)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+notes: "GWFD-010201。DS 域为后续 SET QOSBA(0-00067, 入口)/SET QOSPHB(0-00069, 出口)/ADD QOSIFTRUST(0-00068) 提供命名容器, DSNAME 链路传递。任务示例两方向均 DSNAME=default。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00282(最大记录数 8 + 系统预置 default/5p3d 双域 + 改名断链)；binding=1(命中真相全部 1 项，无缺口)。"

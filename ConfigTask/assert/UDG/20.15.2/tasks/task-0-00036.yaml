@@ -1,0 +1,168 @@
+task_id: UDG@20.15.2@Task@0-00036
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置带宽管理控制器
+task_layer: atom
+task_intent: 配置带宽管理控制器(ADD BWMCONTROLLER)，定义流量整形/CAR 参数（速率/突发/色标记/队列深度/最大五元组数/调度策略）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD BWMCONTROLLER
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00036:BWMCNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:BWMCNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表 020354/110301 本端规划；110313 全网规划（控制器名跨网元一致）
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:CTRLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:CTRLTYPE
+    binding_type: decision_driven   # 跨特性分叉：SHAPING(020354/110313) vs CAR(110301)
+    variable_source: local_planned
+    requiredness: required
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:RATE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:RATE
+    binding_type: decision_driven   # SHAPING 分支必选（流量整形速率）；CAR 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:QUEDEPTH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:QUEDEPTH
+    binding_type: decision_driven   # SHAPING 分支必选（队列深度）；CAR 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:MAXFDNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:MAXFDNUM
+    binding_type: variable
+    variable_source: local_planned   # 020354 显式配 2000；110301/110313 不传（走默认无限制）
+    requiredness: optional
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - binding_id: UDG@20.15.2@Task@0-00036:CIR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:CIR
+    binding_type: decision_driven   # CAR 分支必选（承诺信息速率）；SHAPING 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00036:CBS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:CBS
+    binding_type: decision_driven   # CAR 分支必选（承诺突发缓存）；SHAPING 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00036:PIR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:PIR
+    binding_type: decision_driven   # CAR 分支必选（峰值信息速率）；SHAPING 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00036:PBS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:PBS
+    binding_type: decision_driven   # CAR 分支必选（峰值突发缓存）；SHAPING 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00036:GREEN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:GREEN
+    binding_type: decision_driven   # CAR 分支必选（绿色动作 PASS）；SHAPING 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00036:YELLOW
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:YELLOW
+    binding_type: decision_driven   # CAR 分支必选（黄色动作 PASS）；SHAPING 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00036:RED
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:RED
+    binding_type: decision_driven   # CAR 分支必选（红色动作 DISCARD）；SHAPING 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00036:SRVLEVELSPEC
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:SRVLEVELSPEC
+    binding_type: decision_driven   # SHAPING-AUTO 分支必选（智能组级 Shaping 业务等级规格）；SHAPING-MANUAL/CAR 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:USERFAIREN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:USERFAIREN
+    binding_type: decision_driven   # SHAPING-AUTO 分支必选（用户公平调度使能 ENABLE）；其他分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:WORKMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:WORKMODE
+    binding_type: decision_driven   # SHAPING-AUTO 分支必选（工作模式 MANUAL/AUTO 二选一）；其他分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:MAXPKTLOSTRATE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:MAXPKTLOSTRATE
+    binding_type: decision_driven   # SHAPING-AUTO 分支条件必选（最大丢包率）；MANUAL/CAR 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:PKTLOSTRATEDTL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:PKTLOSTRATEDTL
+    binding_type: decision_driven   # SHAPING-AUTO 分支条件必选（丢包率差值）；MANUAL/CAR 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00036:ASSUREMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMCONTROLLER:ASSUREMODE
+    binding_type: decision_driven   # SHAPING-AUTO 分支条件必选（保障模式 EXPFIRST）；MANUAL/CAR 分支不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00100
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+notes: |
+  GWFD-020354 基于业务的Shaping + GWFD-110301 基于终端系统的码率差异化控制(CAR) + GWFD-110313 基于智能Shaping的组级带宽控制(SHAPING AUTO) 三特性共享。命令 ADD BWMCONTROLLER 未在 by_command 复用索引(§6-B)。
+  CTRLTYPE 跨特性分叉：SHAPING(020354 用户级整形/110313 智能组级整形) vs CAR(110301 终端系统码率差异) → DP 0-00100 编排（3 路分叉：SHAPING-MANUAL/SHAPING-AUTO/CAR + 配套必选参数）。
+  命令级审查(2026-07-02) 演进：status draft→inferred；新增 14 个 binding（CAR 全套 CIR/CBS/PIR/PBS/GREEN/YELLOW/RED + SHAPING-AUTO 全套 SRVLEVELSPEC/USERFAIREN/WORKMODE/MAXPKTLOSTRATE/PKTLOSTRATEDTL/ASSUREMODE）；CTRLTYPE/RATE/QUEDEPTH 由 fixed/conditional 升级 decision_driven。
+  不绑冷门（命令真相 conditional 且 3 特性均未用）：GREENREMARKT/V/C + YELLOWREMARKT/V/C + REDREMARKT/V/C（色重标记 12 参数，3 特性仅用基本色动作）+ COLORISAWARE/PRIORITYISAWARE（CAR 颜色敏感/优先级敏感）+ CFGDOMAINNAME（配置域）。
+  推荐估算公式(命令 notes): QUEDEPTH = rate*RTT/pktlen；CAR 推荐 CIR = 0.5 * PIR / CBS >= CIR * 1.5 * 1000 / 8 / PBS >= PIR * 1.5 * 1000 / 8（110301 脚本备注）。

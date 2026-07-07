@@ -1,0 +1,49 @@
+task_id: UDG@20.15.2@Task@0-00225
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建TWAMP逻辑接口
+task_layer: atom
+task_intent: 创建 TWAMP 探测逻辑接口(NAME/AFTYPE/IPV4ADDRESS/IPV4MASK/VRFNAME/SHAREDTYPE)，作为探测报文收发接口。Full/Light 两模式共有前置
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD TWAMPLOGICINF
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00225:NAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPLOGICINF:NAME
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(逻辑接口名)
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00225:AFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPLOGICINF:AFTYPE
+    binding_type: fixed
+    value: IPV4
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00225:IPV4ADDRESS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPLOGICINF:IPV4ADDRESS
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(逻辑接口IP)
+    requiredness: conditional   # 校正：命令真相为 conditional(AFTYPE=IPV4 时必填)；本 atom AFTYPE=IPV4 固定，实际必填
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00225:IPV4MASK
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPLOGICINF:IPV4MASK
+    binding_type: fixed
+    value: "255.255.255.255"
+    requiredness: conditional   # 校正：命令真相为 conditional(AFTYPE=IPV4 时必填)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00225:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPLOGICINF:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD TWAMPVPNINST 的 VRFNAME
+    source_ref: UDG@20.15.2@Task@0-00224:VRFNAME
+    requiredness: optional   # 校正：命令真相为 optional，但本特性均引用 0-00224 实际必填
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00225:SHAREDTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPLOGICINF:SHAREDTYPE
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(TRUE=与业务 N3/S1-U 共用IP, FALSE=不共用)
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md, GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+notes: "ADD TWAMPLOGICINF(TWAMP 公共前置，Full/Light 共有)。VRFNAME 引用 ADD TWAMPVPNINST(0-00224)；其 IP 将被 TWAMPRESPONDER.LOCALIPV4 / TWAMPCLIENT.LOCALIPV4 引用(本端IP须一致)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：6/6 参数绑定完整(无缺口，命令真相 IPV6ADDRESS/IPV6MASK 冷门未绑)；校正 requiredness：IPV4ADDRESS/IPV4MASK 改 conditional(命令真相，AFTYPE=IPV4 时必填)；VRFNAME 改 optional(命令真相，本特性实际必填)；SHAREDTYPE 保持 required。SHAREDTYPE=TRUE 时与业务 N3/S1-U 共用 IP(命令原文说明)。feature-挂 rule 0-00081 已覆盖 VRFNAME 一致性。"

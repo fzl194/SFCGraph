@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@0-00065
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置业务公共参数
+task_layer: atom
+task_intent: 设置TunnelMarking开关（TUNNELMARKINGID=ENABLE），使能VLAN与IP网络间的优先级映射
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET SRVCOMMONPARA
+status: inferred  # 命令级审查(2026-07-02): 39 冷门缺口全部不绑(命令真相均 optional/conditional, 3 特性数据规划表均未用); 4/43 已绑
+source_evidence_ids:
+  - GWFD-010201/配置QoS与流量管理_03345155.md
+  - GWFD-110202/激活HTTP2.0协议回落_65157762.md
+  - GWFD-110910/激活支持Routing Behind MS_74264904.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00065:TUNNELMARKINGID
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SRVCOMMONPARA:TUNNELMARKINGID
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(TunnelMarking开关)
+    requiredness: conditional   # 场景相关: 010201 QoS 优先级映射设
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00065:HTTP2DEGRADESW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SRVCOMMONPARA:HTTP2DEGRADESW
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(全局 HTTP2.0 协议回落开关 ENABLE/DISABLE)
+    requiredness: conditional   # 场景相关: 110202 HTTP2.0 协议回落设
+    source_evidence_ids: [GWFD-110202/激活HTTP2.0协议回落_65157762.md]
+  - binding_id: UDG@20.15.2@Task@0-00065:FDMAXNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SRVCOMMONPARA:FDMAXNUM
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(全局单用户五元组上限，须 ≥ APN 级 SET APNFLOWMAXNUM.FDMAXNUM)
+    requiredness: conditional   # 场景相关: 110910 Routing Behind MS，超默认600 才配
+    source_evidence_ids: [GWFD-110910/激活支持Routing Behind MS_74264904.md]
+  - binding_id: UDG@20.15.2@Task@0-00065:USERFLOWADJSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET SRVCOMMONPARA:USERFLOWADJSW
+    binding_type: fixed
+    value: ENABLE   # 110910 任务示例固定 ENABLE(打开自动调整)
+    requiredness: conditional   # 场景相关: 110910 与 FDMAXNUM 同设
+    source_evidence_ids: [GWFD-110910/激活支持Routing Behind MS_74264904.md]
+notes: "GWFD-010201(TUNNELMARKINGID) + GWFD-110202(HTTP2DEGRADESW) + GWFD-110910(FDMAXNUM/USERFLOWADJSW)。P0 收敛：合并原 variant 0-00148/0-00223。SET SRVCOMMONPARA 承载多个独立全局开关/参数, 各 feature 按需设其一(requiredness=conditional): TUNNELMARKINGID=ENABLE(010201 QoS 优先级映射使能, 入口/出口两方向各一次)、HTTP2DEGRADESW(110202 HTTP2.0 回落, 回落优先级 rule>APN>全局)、FDMAXNUM+USERFLOWADJSW=ENABLE(110910 全局五元组上限, 超600才配, 须≥APN级 SET APNFLOWMAXNUM)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02): 39 冷门缺口逐个核: 全部命令真相均 optional/conditional 且 010201/110202/110910 三特性数据规划表+脚本均未用到, 严格按§4.1'通用配置'门槛不绑(典型冷门: RTSP计费模式/RTSP暂停收费/带宽规则匹配协议层级/ADC规则匹配协议层级/性能统计协议层级/默认流量配额/默认时长配额/防火墙策略矫正时间/DNS超长域名/内嵌IPv4的IPv6前缀功能/重定向报文FUP流量统计标识/X-Online-Host生效标识/token校验时间差/HTTP重定向返回码/计费节点老化开关/计费节点老化时间/更新特征库规则开关/SA支持URL最大长度/URL重定向最大长度/PCC动态重定向流控/重定向携带前缀URL/SA协议识别加速处理最大报文数/Proxy-Connection字段开关/特定类型DNS报文开关/HTTP connect X-Online-Host字段开关/包含路径信息的SNI匹配/重定向完成时间/SA流量统计开关/SA发现协议开关/报表协议层级/IPv6协议动态识别规则功能/默认流量配额单位), 不绑避免atom臃肿; 4/43 已绑(TUNNELMARKINGID/HTTP2DEGRADESW/FDMAXNUM/USERFLOWADJSW)全部对齐命令真相 requiredness=conditional/local_planned; 跨特性多用途并发已由 notes 表达, 跨特性分叉由 feature task 投影。"

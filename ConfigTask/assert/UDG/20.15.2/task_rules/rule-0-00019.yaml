@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00019
+owner_task_ref: UDG@20.15.2@Task@2-00010   # 挂 feature（GWFD-020303）
+rule_name: 基于业务流量计费 license 与内容计费前置依赖
+rule_type: dependency_rule
+rule_scope: feature
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00019
+    - UDG@20.15.2@Task@2-00001
+  expression: 须先打开 license(SET LICENSESWITCH 0-00019)；并以 GWFD-020301 内容计费 backbone 为基础。本特性=内容计费默认形态(OFFMETERINGTYPE/ONLMETERINGTYPE=VOLUME)，命令集与 2-00001 100% 重合，无差量命令。
+violation_effect: 流量计费不生效
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020303/部署UPF_28813738.md]

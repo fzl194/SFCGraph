@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00349
+owner_task_ref: UDG@20.15.2@Task@0-00109
+rule_name: 0-00109 SET FPIFUNC max_records=1 + 立即生效 + 系统初始 + 无线侧协同 + DP 0-00139 编排
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00109
+  expression: |
+    SET FPIFUNC(atom 0-00109) 配置约束：
+    (1) 上限：单命令最大记录数为 1(命令 notes 强约束——全局开关)；超限→SET 失败。
+    (2) 立即生效：该命令执行后立即生效(命令 notes)。
+    (3) 系统初始记录：FPISWITCH=ENABLE, FPITRANSMETHOD=DSCP, FPIPOLICYORIGIN=NULL(命令 notes 表格)；本 atom 特性首步必使能 FPISWITCH=ENABLE, FPITRANSMETHOD 升级为 decision_driven + DP 0-00139(2-way: DSCP/GTPU, default DSCP)。
+    (4) FPITRANSMETHOD 条件必选：仅当 FPISWITCH=ENABLE 时为必选(命令 notes 隐式语义)；DPISWITCH=DISABLE 时 FPITRANSMETHOD 可不传。
+    (5) 无线侧协同：开启本功能后, 要求无线侧同时也支持该功能(特性 md GWFD-110331 注)；FPITRANSMETHOD=DSCP 要求 RAN 识别 DSCP, FPITRANSMETHOD=GTPU 要求 RAN 识别 GTP-U 扩展头——配置工程师须按 RAN 能力选择。
+    (6) FPIPOLICYORIGIN 默认 NULL, 选 INTERNAL 时表示 FPI 值来源于网关内部策略(命令真相)；主特性场景保持 NULL。
+    (7) 前置依赖：典型路径下, GWFD-110331 特性步骤 1 配置 SET LICENSESWITCH 打开 license(不在本 atom 命令域, 由 feature task dependency_rule 编排)。
+violation_effect: 上限超限→SET 失败；FPITRANSMETHOD 错配(DSCP vs GTPU vs 无线不支持)→RAN 侧无法识别 FPI；FPISWITCH=DISABLE 时仍传 FPITRANSMETHOD→命令拒收；FPIPOLICYORIGIN=INTERNAL 时未配 spec→策略来源空
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。投影命令 notes 3 大约束(max_records/立即生效/系统初始)+ 特性 md 无线侧协同 + DP 0-00139 编排联动(FPITRANSMETHOD 2-way)。"

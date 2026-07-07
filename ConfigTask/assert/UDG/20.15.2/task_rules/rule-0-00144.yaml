@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00144
+owner_task_ref: UDG@20.15.2@Task@0-00047   # 挂 atom ADD POOLGRPMAP
+rule_name: ADD POOLGRPMAP 最大记录数 + 映射前置依赖
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD POOLGRPMAP
+  expression: |
+    ADD POOLGRPMAP 命令最大记录数为 40000。
+    前置依赖：执行 ADD POOLGRPMAP 前必须先执行 ADD POOLGROUP 配置地址池组；按实际组网还需先 ADD APN 配置 APN（UDG 地址分配场景必配），可选 ADD TACGROUP/ADD LACGROUP 配置 TAC-Group/LAC-Group、ADD CPNODEID 配置 SMF。
+    PoolGrpMap 对象本身为 SMF/APN 级映射规则。
+    执行后只对新激活用户生效。
+violation_effect: 超规格新增失败；缺前置（POOLGROUP/APN）致映射引用悬空；已激活用户不受影响需重激活
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数40000' + '前置必须先 ADD POOLGROUP/ADD APN(可选 TACGROUP/LACGROUP/CPNODEID)' + 'PoolGrpMap 为 SMF/APN 级' + '只对新激活用户生效'。"

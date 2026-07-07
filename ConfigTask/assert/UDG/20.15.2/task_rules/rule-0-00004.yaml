@@ -1,0 +1,17 @@
+rule_id: UDG@20.15.2@TaskRule@0-00004
+owner_task_ref: UDG@20.15.2@Task@1-00002
+rule_name: FLOWFILTER 必须绑定过滤条件
+rule_type: binding_rule
+rule_scope: relation
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_reference
+  target_refs: [UDG@20.15.2@Task@0-00008, UDG@20.15.2@Task@0-00009]
+  expression: FLOWFILTER 必须用 ADD FLTBINDFLOWF / ADD PROTBINDFLOWF 绑定三四层/七层过滤条件；未绑定的 FLOWFILTER 匹配失败，对应 Rule 无效
+violation_effect: Rule 无效配置
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+source_static_refs: [UDG@20.15.2@CommandParameter@ADD FLOWFILTER:FLOWFILTERNAME]
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

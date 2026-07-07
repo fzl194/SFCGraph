@@ -1,0 +1,18 @@
+rule_id: UNC@20.15.2@TaskRule@0-00012
+owner_task_ref: UNC@20.15.2@Task@0-00010
+rule_name: ADD CDRFIELDTEMP 最多 100 条 + 不支持字段
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CDRFIELDTEMP]
+  expression: >-
+    记录数 ≤ 100。当前版本不支持 EXTCHARGEID、THREEGPP2USRLOC、ULIWLAN 参数。
+    RecordExtType=GLB/DT 时，PGW 话单扩展字段是否携带 IP 层报文包数不受 PacketNum 控制。
+violation_effect: 超规格无法新增；不支持参数配置无效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加话单字段模板（ADD CDRFIELDTEMP）_09896890.md]

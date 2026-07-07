@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00374
+owner_task_ref: UDG@20.15.2@Task@0-00084   # 挂 atom SET DDOS
+rule_name: SET DDOS 全局唯一 + 立即生效 + 系统初始记录 + DDOSCHECK 协同
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00084
+  expression: |
+    SET DDOS 命令最大记录数为 1（全局唯一实例，DDoS 防护阈值统一设置）。
+    立即生效：本命令执行后立即生效。
+    系统初始记录：存在系统初始记录，初始值为 THRESHOLD=100。
+    取值范围：THRESHOLD 整数 1~10000。
+    行为约束：使能该命令时，如果 THRESHOLD 参数配置过小，会影响用户新建流速率，建议使用默认值。
+    协同约束：本命令只设全局阈值，DDOS 防护由 ADD USERPROFILE.DDOSCHECK(0-00011) 决定哪个 UserProfile 启用防护；DDOSCHECK=ENABLE 的 UserProfile 才受 THRESHOLD 约束。
+    适用 NF：SGW-U、PGW-U、UPF。
+violation_effect: 重复执行覆盖前值；阈值过小影响用户新建流速率；DDOSCHECK 未启用则阈值不生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务安全防护/用户攻击防护/DDoS防护/DDoS防护阈值/设置DDoS防攻击流控阈值（SET DDOS）_82837754.md
+  - GWFD-010253/激活防DDoS功能_24082259.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 1 + 立即生效 + 系统初始记录表 100) + ③DDOSCHECK 协同(2-00028/0-00038 已建,本规则不重复投影)。"

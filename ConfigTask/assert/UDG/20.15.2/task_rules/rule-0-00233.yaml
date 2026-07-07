@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00233
+owner_task_ref: UDG@20.15.2@Task@0-00145   # 挂 atom MOD VPNINSTAF
+rule_name: MOD VPNINSTAF 高危 + RD 删除副作用 + mpp_vpn_inner 黑名单 + 前置 VPN 地址族 + 立即生效
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: safety_constraint
+  target_refs:
+    - UDG@20.15.2@MMLCommand@MOD VPNINSTAF
+  expression: |
+    本命令属于高危命令，操作不当会导致此 VPN 实例地址族下的配置和此 VPN 实例在 BGP 中的相关配置被删除。
+    删除 VRFRD 会导致此 VPN 实例地址族下的配置和此 VPN 实例在 BGP 中的相关配置被删除。
+    不能修改 VPN 实例 __mpp_vpn_inner__、__mpp_vpn_inner_server__ 的配置（系统保留实例）。
+    配置该命令前，需要对应的 VPN 实例地址族已创建（前置 ADD VPNINSTAF，0-00072 ADD 族；本 atom 与 0-00072 操作同对象族不同命令 ADD/MOD）。
+    该命令执行后立即生效。
+violation_effect: 操作不当会删除 VPN 地址族下全部配置 + BGP 相关配置；误改系统保留实例报错
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes: 高危命令 + RD 删除副作用（删 RD 会级联删除该 VPN 地址族下配置 + BGP 配置）+ mpp_vpn_inner 保留实例黑名单 + 前置 VPN 地址族已创建 + 立即生效。7 缺口中 IMPOLICYNAME/EXPOLICYNAME（路由策略）/VRFLABEL（标签值）/TNLPOLICYNAME（隧道策略）/FRRENABLE（FRR 使能）路由交叉当前未用，LOCALCROSSNHPMOD/EXPLYADDERTFIRST 冷门 optional，均不绑。VRFRD 不同 VPN 实例必须不同（路由交叉 VRF_networkA=1:1, VRF_networkB=2:2）由 notes 表达，无需独立 rule（feature 级约束已由 0-00071 跨特性 DP 0-00017 表达 ip-version 关联）。VRFLABEL 取值范围 16~32767 由 CommandParameter 校验承担。"

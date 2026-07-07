@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00343
+owner_task_ref: UDG@20.15.2@Task@0-00219   # SET CPTEIDUALLOC (atom-挂 rule)
+rule_name: SET CPTEIDUALLOC 最大记录数1+只对新激活用户生效+高危(在线用户禁改)+系统初始DISABLE
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00219:SWITCH
+  expression: "最大记录数为1(全局唯一); 该命令执行后只对新激活用户生效；高危命令: 系统是否支持CP分配TEID-U的配置一般不要修改，如需修改(例如组网变化)需要执行DSP SESSIONNUMBER确认是否存在用户，如果存在请执行DEA SESSION先去活所有用户，用户下线后再修改此配置(在线用户时禁止修改); 当前产品仅支持UP本地分配TEID-U，不支持CP分配TEID-U，如果配置错误可能导致用户激活失败；CU Full Mesh组网下SWITCH必须配置为DISABLE；存在系统初始记录(SWITCH=ENABLE/DISABLE按产品初值)。"
+violation_effect: 在线用户时修改导致用户激活失败；SWITCH非DISABLE导致CU Full Mesh组网下用户激活失败
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1+只对新激活+高危禁改+Full Mesh强制DISABLE)
+source_evidence_ids: [GWFD-020161/激活CU Full Mesh组网（UPF）_51809001.md]

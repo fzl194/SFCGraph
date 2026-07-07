@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00328
+owner_task_ref: UDG@20.15.2@Task@0-00054   # ADD ECHOIPLIST (atom-挂 rule)
+rule_name: ADD ECHOIPLIST 最大记录数200+立即生效+前置SET UPGTPPATH ECHOLISTSWITCH=ENABLE
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00054:IPVERSION
+    - UDG@20.15.2@Task@0-00054:IPV4ADDR
+    - UDG@20.15.2@Task@0-00054:IPV6ADDR
+  expression: "最大记录数为200(每对端IP地址段一条记录); 该命令执行后立即生效；ADD ECHOIPLIST是配合SET UPGTPPATH(0-00051)使用的，受SET UPGTPPATH.ECHOLISTSWITCH=ENABLE门控；可使用LST UPGTPPATH查看EchoList类型为黑名单还是白名单；IPVERSION=IPV4时配IPV4ADDR+IPV4MASK，=IPV6时配IPV6ADDR+IPV6MASK(IPv4/IPv6二选一)。"
+violation_effect: 黑白名单成员缺失导致路径探测不到对端；超200条记录被拒
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格200+立即生效+前置SET UPGTPPATH)
+source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]

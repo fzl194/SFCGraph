@@ -1,0 +1,29 @@
+task_id: UDG@20.15.2@Task@0-00107
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置APN操作系统级带宽管理开关
+task_layer: atom
+task_intent: 打开指定 APN 的操作系统级带宽管理开关(SET APNOSLELBWMSW)，使该 APN 下用户按终端操作系统(OS Type)差异化执行码率控制
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNOSLELBWMSW
+status: inferred   # 命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取(§6-B)
+source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00107:APNNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNOSLELBWMSW:APNNAME
+    binding_type: reference
+    variable_source: reference   # 特性 md 数据规划表: 已配置数据中获取；引用 ADD APN 配置的 APN 名称
+    requiredness: required
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+  - binding_id: UDG@20.15.2@Task@0-00107:ISENABLE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNOSLELBWMSW:ISENABLE
+    binding_type: variable
+    variable_source: local_planned   # 特性 md: 本端规划；取值 ENABLE|DISABLE
+    requiredness: required
+    source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+notes: |
+  GWFD-110301 基于终端系统的码率差异化控制专属(特性末步开关)。命令 SET APNOSLELBWMSW 在 mml_commands.jsonl，未在 by_command 复用索引(§6-B)。
+  APNNAME 引用 ADD APN(0-00020) 已配置的 APN 名称(静态投影 reference binding)。
+  命令 notes: 该开关为承继，承继 SET GLBOSLELBWMSW 全局开关的 IsEnable 配置(本 atom 未录全局开关，待后续特性揭示)。
+  命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00287(最大记录数 10000 + ISENABLE 承继 GLBOSLELBWMSW 全局开关 + 立即生效)；binding=2(命中真相全部 2 项，无缺口)。

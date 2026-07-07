@@ -1,0 +1,20 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00003
+owner_task_ref: UDG@20.15.2@Task@2-00001   # 挂 feature task（特性级可选开关）
+decision_name: 是否启用计费防欺诈
+decision_question: 是否将高风险费率加入防欺诈费率列表？
+decision_type: boolean
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: optional
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+options:
+  - option_id: opt-on
+    option_name: 启用
+    option_value: "true"
+    impacts:
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00014, effect_type: adds, effect_detail: 执行 ADD SPECURRGRPLIST 配防欺诈费率列表}
+  - option_id: opt-off
+    option_name: 不启用
+    option_value: "false"
+    impacts:
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00014, effect_type: excludes, effect_detail: 跳过防欺诈配置}

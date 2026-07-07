@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00172
+owner_task_ref: UDG@20.15.2@Task@0-00058   # 挂 atom ADD IFIPV4ADDRESS
+rule_name: ADD IFIPV4ADDRESS 最大记录数 + 每接口地址数上限 + 版本升级禁用
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD IFIPV4ADDRESS
+  expression: "ADD IFIPV4ADDRESS 命令最大记录数为 65535；每个主用接口最大允许配置 256 个接口 IP 地址（1 主 + 255 从）；接口需支持配置 IP 地址；执行后立即生效；版本升级过程中禁止执行。"
+violation_effect: 超规格/超单接口地址数新增失败；版本升级期间执行将中断升级流程
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数65535' + '每主用接口256个IP(1主255从)' + '版本升级过程中禁止执行'。IFNAME 必选可通过 LST INTERFACE 查询。"

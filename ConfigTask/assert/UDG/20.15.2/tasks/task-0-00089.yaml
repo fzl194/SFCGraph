@@ -1,0 +1,23 @@
+task_id: UDG@20.15.2@Task@0-00089
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置错误码
+task_layer: atom
+task_intent: 配置重定向触发条件错误码范围（错误码名/操作码/起始值），用于 DNS纠错/HTTP智能重定向按返回错误码触发重定向动作
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ERRORCODE
+status: inferred   # 命令级审查(2026-07-02) B03 批次新建；命令命中 mml_commands.jsonl，CommandParameter 待 CommandGraph 抽取(§6.B)
+source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md, GWFD-110284/激活HTTP智能重定向_67075035.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00089:ERRORCODENAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD ERRORCODE:ERRORCODENAME, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md, GWFD-110284/激活HTTP智能重定向_67075035.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00089:ERRORCODEOP, parameter_ref: UDG@20.15.2@CommandParameter@ADD ERRORCODE:ERRORCODEOP, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md, GWFD-110284/激活HTTP智能重定向_67075035.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00089:ERRORCODESTART, parameter_ref: UDG@20.15.2@CommandParameter@ADD ERRORCODE:ERRORCODESTART, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md, GWFD-110284/激活HTTP智能重定向_67075035.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00089:ERRORCODEEND, parameter_ref: UDG@20.15.2@CommandParameter@ADD ERRORCODE:ERRORCODEEND, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md, GWFD-110284/激活HTTP智能重定向_67075035.md]}
+notes: |
+  GWFD-110283(DNS纠错)与GWFD-110284(HTTP智能重定向)共享 atom。
+  数据来源(获取方法列): ERRORCODENAME=全网规划(DNS/HTTP 错误码命名属全网策略)，ERRORCODEOP/ERRORCODESTART/ERRORCODEEND=本端规划(操作码 EQUAL/GT 与起始值 3/400 由本端按业务决定)。
+  GWFD-110283 任务示例: ERRORCODEOP=EQUAL, ERRORCODESTART=3(DNS 响应码 NXDOMAIN=3)。
+  GWFD-110284 任务示例: ERRORCODEOP=GT, ERRORCODESTART=400(HTTP 4xx/5xx 错误码)。
+  补绑 ERRORCODEEND 命令真相 conditional(0~1000,ERRORCODEOP=GE/LE 时必填,③脚本未显式配但与 START 同步控制错误码范围)。命令真相校准 ERRORCODESTART/ERRORCODEEND requiredness → conditional。
+  ERRORCODENAME 产出对象被 DNSOVERWRITING(0-00090)/SMARTHTTPREDIR(0-00091) 的 BINDERRCODENAME 引用(reference)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

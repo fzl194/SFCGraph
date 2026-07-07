@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00118
+owner_task_ref: UDG@20.15.2@Task@0-00017   # 挂 atom SET UPGLBCHGPARA
+rule_name: SET UPGLBCHGPARA 规格与取值约束
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET UPGLBCHGPARA
+  expression: "SET UPGLBCHGPARA 最大记录数为 1（全局参数）。VOLTHMININTVAL 不为 0 时限制流量阈值上报频率，会导致流量阈值控制不准，建议配置值 < 60（即 30 秒）。QUOTAAPPACTTYPE 配置为 DROP 时新业务申请配额期间报文丢弃，影响用户体验。CREDITPOOLSW 使能（Credit Pooling）与 SET UPDEFAULTQUOTA 的 DefaultQuota 功能不能同时使能。"
+violation_effect: 误配 VOLTHMININTVAL 过大致流量阈值控制不准；QUOTAAPPACTTYPE=DROP 致新业务报文丢弃；Credit Pooling 与 DefaultQuota 同时使能冲突
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数1' + 'VOLTHMININTVAL建议<60' + 'QUOTAAPPACTTYPE=DROP影响体验'；互斥约束参考 feature conditional_rule 0-00011（Credit Pooling vs DefaultQuota），atom 级一并表达。"

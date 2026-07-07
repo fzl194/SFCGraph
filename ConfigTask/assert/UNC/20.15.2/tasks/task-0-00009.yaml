@@ -1,0 +1,33 @@
+task_id: UNC@20.15.2@Task@0-00009
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CCT
+task_layer: atom
+task_intent: 新增融合计费模板（CCT），配置融合计费阈值/配额/终结方式等参数（PGW-C/SMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CCT
+status: inferred
+source_evidence_ids:
+  - 增加融合计费模板（ADD CCT）_09653176.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00009:CCTMPLTNAME", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:CCTMPLTNAME", binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:QHT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:QHT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:VQT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:VQT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:TQT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:TQT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:UQT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:UQT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:VT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:VT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:MAXNUMOFCCC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:MAXNUMOFCCC", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:PDUVOLUMELIMIT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:PDUVOLUMELIMIT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:PDUTIMELIMIT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:PDUTIMELIMIT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:RGVOLUMELIMIT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:RGVOLUMELIMIT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:RGTIMELIMIT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:RGTIMELIMIT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:FUATERMINATE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:FUATERMINATE", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:TIMEFORMAT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:TIMEFORMAT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:MAXSVCCONTAINER", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:MAXSVCCONTAINER", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00009:SECRUTHRESHOLD", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CCT:SECRUTHRESHOLD", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011206/配置融合计费模板_93400212.md]}
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_CCT.md（4 特性用，25 参）。
+  source 全 本端规划（融合计费阈值由本端规划）。绑 15 个范式高频用到（CCTMPLTNAME + 14 阈值/动作）。
+  未绑 10 个 optional 冷门（UCITIMER/QFVOLUMELIMIT/QFTIMELIMIT/MAXUSEDSRVNUM/QHTRPTTRIGGER/QHTEXPIREDRSU/
+  NOQUOTATRIGGER/BLKFREESRV/ROAMFUATERMACT/ROAMVOLUMELIMIT）。
+  系统部署后有初始记录（见命令 md 初始值表）。notes 投影：最多 101 条 → rule 0-00011 cardinality。§6.B 见全局 rule 0-00001。

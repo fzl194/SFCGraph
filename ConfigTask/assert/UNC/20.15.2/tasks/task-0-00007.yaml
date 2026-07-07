@@ -1,0 +1,43 @@
+task_id: UNC@20.15.2@Task@0-00007
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置APNPOLICYMODE
+task_layer: atom
+task_intent: 配置基于 APN 的策略接口选择方式（选 Gx/Npcf/PCRF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD APNPOLICYMODE
+status: inferred
+source_evidence_ids:
+  - 增加基于APN的策略接口的选择方式（ADD APNPOLICYMODE）_72001541.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00007:APN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNPOLICYMODE:APN
+    binding_type: reference             # 已配置数据中获取（引用 ADD APN）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD APN:APN
+    requiredness: required
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00007:TMACCTYPE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNPOLICYMODE:TMACCTYPE
+    binding_type: variable
+    variable_source: local_planned      # required；UE5G_RAT4G 等
+    requiredness: required
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00007:BY5GSIWKI
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNPOLICYMODE:BY5GSIWKI
+    binding_type: variable
+    variable_source: local_planned      # conditional；按 5GS 互操作指示选策略接口
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00007:FORCED
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNPOLICYMODE:FORCED
+    binding_type: variable
+    variable_source: local_planned      # conditional；Gx/Npcf（部署用 PCRF 还是 PCF 决定）
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_APNPOLICYMODE.md（4 特性用，6 参）。
+  绑 4（APN/TMACCTYPE/BY5GSIWKI/FORCED）；APN=reference(ADD APN)。
+  未绑 PCFRESELBYPCFID（optional，未用）/BY5GCNRI（conditional，未用）。
+  策略接口选择优先级：ADD APNPOLICYMODE > SET POLICYMODE（跨命令选择规则，notes）。
+  notes 投影：最多 20000 条 → rule 0-00008 cardinality。§6.B 见全局 rule 0-00001。

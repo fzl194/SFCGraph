@@ -1,0 +1,53 @@
+task_id: UDG@20.15.2@Task@0-00058
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置接口IPv4地址
+task_layer: atom
+task_intent: 为逻辑/物理接口（LoopBack/Tunnel/以太网口）配置IPv4地址与掩码（GRE隧道源/目的、LoopBack路由互通、IPsec隧道承载）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IFIPV4ADDRESS
+status: inferred   # 命令级审查(2026-07-02): draft→inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00058:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV4ADDRESS:IFNAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD INTERFACE)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - IPFD-015002/激活支持GRE_06422610.md
+      - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - binding_id: UDG@20.15.2@Task@0-00058:IFIPADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV4ADDRESS:IFIPADDR
+    binding_type: decision_driven   # 命令级审查: 来源跨特性分叉(010107 全网规划 / IPFD-015002·015004 本端规划)，升级 decision_driven
+    variable_source: local_planned   # 命令真相=local_planned；DP 0-00071 分流
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00071
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - IPFD-015002/激活支持GRE_06422610.md
+      - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - binding_id: UDG@20.15.2@Task@0-00058:SUBNETMASK
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV4ADDRESS:SUBNETMASK
+    binding_type: decision_driven   # 命令级审查: 来源随 IFIPADDR 联动(全网/本端)，升级 decision_driven
+    variable_source: local_planned
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00071
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - IPFD-015002/激活支持GRE_06422610.md
+      - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - binding_id: UDG@20.15.2@Task@0-00058:ADDRTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV4ADDRESS:ADDRTYPE
+    binding_type: variable   # 命令级审查新增: IPFD-015002·015004 脚本显式 ADDRTYPE=main(默认 main)
+    variable_source: local_planned   # 本端规划（主/从地址类型；UDG 普遍取 main）
+    requiredness: conditional   # GRE/IPsec 脚本显式 main；010107 静态路由冗余脚本省略(走默认 main)
+    source_evidence_ids:
+      - IPFD-015002/激活支持GRE_06422610.md
+      - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+notes: "GWFD-010107 + IPFD-015002 + IPFD-015004。IFNAME 引用 ADD INTERFACE(0-00056)。任务示例: LoopBack(10.11.1.1/255.255.255.255 主), Tunnel(10.11.1.3/255.255.255.0 主)。ADD GRETUNNEL(0-00059) 的 DSTIPADDR 引用对端LoopBack的IFIPADDR。命令级审查(2026-07-02): IFIPADDR/SUBNETMASK 来源跨特性分叉(010107 全网规划-接口IP全网唯一 vs IPFD 本端规划-本地LoopBack/Tunnel地址)→升级 decision_driven(DP 0-00071，default 全局规划)；新增 ADDRTYPE binding(IPFD GRE/IPsec 脚本显式 main)。命令真相: 每主用接口最大256个IP(1主+255从)，记录数上限65535。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

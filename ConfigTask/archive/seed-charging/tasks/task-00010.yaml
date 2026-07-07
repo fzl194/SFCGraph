@@ -1,0 +1,33 @@
+task_id: UDG@20.15.2@Task@00010
+task_logical_name: 配置规则
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD RULE
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:RULENAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 规则名,SMF/UPF一致
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:POLICYTYPE
+        binding_type: fixed
+        fixed_value: PCC
+        note: 计费场景固定PCC
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:FILTERINGMODE
+        binding_type: fixed
+        fixed_value: FLOWFILTER
+        note: 固定FLOWFILTER
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:FLOWFILTERNAME
+        binding_type: reference
+        source_ref: ""  # ←过滤链ADD FLOWFILTER
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:POLICYNAME
+        binding_type: reference
+        source_ref: ""  # ←计费三件套ADD PCCPOLICYGRP
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:PRIORITY
+        binding_type: variable
+        variable_source: decision_driven
+        note: 受RULE优先级相对约束(100/110/65000)
+task_category: 配置
+status: active
+source_evidence_ids: []

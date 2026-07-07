@@ -1,0 +1,31 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00018
+owner_task_ref: UDG@20.15.2@Task@0-00010   # 挂 atom(ADD RULE)：POLICYTYPE 决定规则动作类型，跨特性核心分叉
+decision_name: 规则策略类型
+decision_question: ADD RULE 的 POLICYTYPE 取何值？（决定规则执行的动作策略：PCC计费 / SMARTREDIRECT智能重定向 / WEBPROXY代理重定向。命令集不变，仅 POLICYNAME 引用对象不同。）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-110283/激活DNS纠错_67964199.md, GWFD-110284/激活HTTP智能重定向_67075035.md, GWFD-110321/激活支持OTT业务规则库功能_05455409.md]
+options:
+  - option_id: opt-policytype-pcc
+    option_name: PCC计费
+    option_value: PCC
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00010:POLICYNAME, effect_type: sets_value_pattern, effect_detail: POLICYNAME 引用 ADD PCCPOLICYGRP 产出的 PCC策略组名(计费三件套前置)}
+  - option_id: opt-policytype-smartredirect
+    option_name: SMARTREDIRECT智能重定向
+    option_value: SMARTREDIRECT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00010:POLICYNAME, effect_type: sets_value_pattern, effect_detail: POLICYNAME 引用重定向动作对象名(IPFarm名 / DNS重写动作名 / HTTP智能重定向名)}
+  - option_id: opt-policytype-webproxy
+    option_name: WEBPROXY代理重定向
+    option_value: WEBPROXY
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00010:POLICYNAME, effect_type: sets_value_pattern, effect_detail: POLICYNAME 引用 ADD IPFARM 产出的 IPFarm名(代理 server 池)}
+default_option: opt-policytype-pcc
+notes: |
+  B03 批次反推新建。ADD RULE(0-00010) 当前 POLICYTYPE=fixed:PCC(pass-1 计费场景录制)，无法表达 B03 五特性的 SMARTREDIRECT/WEBPROXY 多样性。
+  按 SKILL §4.2"一命令一 atom(不拆)"，POLICYTYPE 应升级为 decision_driven 由本 DP 选——但 0-00010 已被 18 特性引用且 status=inferred，按"演进只记录不执行"边界，本 pass 仅建 DP 标注演进建议，不修改 0-00010 的 POLICYTYPE binding。
+  五特性选 option：GWFD-110281(用户Portal)=SMARTREDIRECT+PCC双规则；GWFD-110282(Web Proxy)=WEBPROXY+PCC双规则；GWFD-110283(DNS纠错)=SMARTREDIRECT；GWFD-110284(HTTP智能重定向)=SMARTREDIRECT；GWFD-110321(OTT规则库)=PCC。
+  PCCPOLICYGRP/IPFARM/DNSOVERWRITING/SMARTHTTPREDIR 均为 POLICYNAME 的引用源——POLICYTYPE 决定引用哪类对象(sets_value_pattern)。

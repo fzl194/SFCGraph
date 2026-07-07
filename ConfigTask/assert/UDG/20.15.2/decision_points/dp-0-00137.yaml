@@ -1,0 +1,33 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00137
+owner_task_ref: UDG@20.15.2@Task@0-00175   # 挂 atom SET APNDLLTBUFFER
+decision_name: APN级长时间缓存储存方式 跨特性分叉
+decision_question: |
+  SET APNDLLTBUFFER 配置指定 APN 的下行数据长时间缓存时, 选择哪种储存方式？
+  - RING_MODE (BUFF_MODE_RING): 环形缓冲存储, 跨特性 NB-IoT eDRX(GWFD-110601)+5G eDRX(GWFD-110661) 采用。
+  - CHAIN_MODE (BUFF_MODE_CHAIN): 链式缓冲存储, 仅 eMTC eDRX(GWFD-110641) 采用。
+  命令 notes：BUFFERMODE 为枚举类型, 系统初始记录 BUFFERMODE=BUFF_MODE_RING；3 特性跨特性取值分叉(RING×2 / CHAIN×1) 是特性配置差异, 由 DP 编排。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110601/激活NB-IoT eDRX模式_67487577.md
+  - GWFD-110641/激活eMTC eDRX模式_70722748.md
+  - GWFD-110661/激活5G eDRX模式_58609938.md
+options:
+  - option_id: opt-ring-mode
+    option_name: 环形缓冲 (RING)
+    option_value: RING_MODE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00175:BUFFERMODE, effect_type: sets_value, effect_detail: value=BUFF_MODE_RING；NB-IoT eDRX + 5G eDRX 特性路由}
+  - option_id: opt-chain-mode
+    option_name: 链式缓冲 (CHAIN)
+    option_value: CHAIN_MODE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00175:BUFFERMODE, effect_type: sets_value, effect_detail: value=BUFF_MODE_CHAIN；仅 eMTC eDRX 特性路由}
+default_option: opt-ring-mode
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00136~0-00149）。管理 SET APNDLLTBUFFER BUFFERMODE 跨特性取值分叉。
+  依据：3 特性数据规划表 BUFFERMODE 实际取值——GWFD-110601=RING, GWFD-110641=CHAIN, GWFD-110661=RING(RING×2 / CHAIN×1 分布)；跨特性分叉由 DP 编排。
+  注：buffering 行为差异——RING(环形, 满覆盖) vs CHAIN(链式, 按序)。原 binding 标 variable+local_planned, 现升级 decision_driven 表达特性路由分叉。
+  与 rule 0-00348 联动(rule 校验 max_records=10000 + 新数据流生效 + 缓存>15s 触发)。

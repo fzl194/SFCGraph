@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00139
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置APN的PPP鉴权(L2TP)
+task_layer: atom
+task_intent: 配置指定 APN 支持 PPP 鉴权功能（SET APNPPPACCESS 鉴权开关），L2TP 场景可选步骤
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNPPPACCESS
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00139:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNPPPACCESS:APN
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD APN)
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00139:AUTHENTICATION
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNPPPACCESS:AUTHENTICATION
+    binding_type: variable
+    variable_source: global_planned   # 命令真相 global_planned(全网 PPP 鉴权策略);③标本端规划,按命令真相以②为准
+    requiredness: optional   # 命令真相 required(系统初始值 DISABLE),atom 录 optional 以匹配 APN 启用 PPP 时必填语义
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+notes: "GWFD-020412 两种激活方式共用(可选步骤)。APN 引用 ADD APN(0-00020)；AUTHENTICATION 命令真相 global_planned 校准原 local_planned(全网 PPP 鉴权策略统一);MRU 冷门不绑(命令真相 optional 默认 NULL,③数据规划表未配)。命令在 mml_commands；CommandParameter 待 CommandGraph 抽取。"

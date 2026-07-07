@@ -1,0 +1,29 @@
+task_id: UDG@20.15.2@Task@2-00005
+nf: UDG
+version: "20.15.2"
+task_logical_name: PCC基本功能
+task_layer: feature
+task_intent: UPF PCC策略控制完整配置流程（License→PCC策略组→过滤链→规则→用户模板绑定→刷新），覆盖动态PCC(有PCRF/PCF)与本地PCC(无PCRF/PCF)两种部署场景
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020351
+status: inferred
+source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+task_relations:
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00031, from_task_ref: UDG@20.15.2@Task@0-00019, to_task_ref: UDG@20.15.2@Task@0-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00032, from_task_ref: UDG@20.15.2@Task@0-00003, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00033, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, propagated_context: [{context_name: FLOWFILTERNAME, source_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, target_ref: UDG@20.15.2@Task@0-00010:FLOWFILTERNAME}], source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00034, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@0-00015, relation_type: must_be_last, requiredness: required, source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md]}
+notes: >-
+  GWFD-020351 (pass-2, 2026-07-03)。两激活 md(动态PCC 74096530 / 本地PCC 74096529)操作步骤+脚本逐字相同
+  → md_required 9 命令 = {SET LICENSESWITCH, ADD PCCPOLICYGRP, ADD FILTER, ADD FLOWFILTER,
+  ADD FLTBINDFLOWF, ADD RULE, ADD USERPROFILE, ADD RULEBINDING, SET REFRESHSRV}。动态/本地差异仅在
+  规则标识激活语义(DP 0-00007 两 option 纯参数 changes_scope,不改命令集):动态PCC由PCRF/PCF下发
+  (可动态安装/删除；预定义规则RULENAME须PCF/SMF/UPF一致)，本地PCC由SMF下发USERPROFILENAME规则组
+  标识激活本地静态规则(不支持实时更新)。结构=License atom(0-00019)→PCCPOLICYGRP atom(0-00003)→
+  过滤链 compound(1-00002)→规则绑定 compound(1-00003)→REFRESHSRV atom(0-00015, must_be_last)。
+  覆盖校验变体单条:DP 0-00002=opt-basic-l34(md any-to-any 三四层 FILTER,无 L7/IPv6,excludes
+  FILTERIPV6/L7FILTER/PROTBINDFLOWF 收敛结构并集 12→9)。不复用 1-00001 计费三件套(PCC 是策略控制特性,
+  md 操作步骤不含 URR/URRGROUP;URRGROUPNAME 仅 PCCPOLICYGRP 参数级可选,rule 0-00014 dependency
+  覆盖参数关系);不复用 1-00004 收尾(计费专属,本特性直挂 REFRESHSRV)。ADD QOSPROP 出现在参考信息
+  md 命令清单但不在激活步骤,属 GWFD-010201 QoS 特性,不入 md_required。跨网元 RULENAME/USERPROFILENAME
+  一致性由 1-00003 所挂 rule 0-00006 覆盖(复用继承)。覆盖校验 exit 0(结构 12 / 变体 1 / 通过)。

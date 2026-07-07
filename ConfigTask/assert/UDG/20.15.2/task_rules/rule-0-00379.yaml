@@ -1,0 +1,30 @@
+rule_id: UDG@20.15.2@TaskRule@0-00379
+owner_task_ref: UDG@20.15.2@Task@0-00028   # 挂 atom ADD PCCACTIONPROP
+rule_name: ADD PCCACTIONPROP 上限 200 + 立即生效 + 名称唯一 + 上下行门控一致性
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00028
+  expression: |
+    ADD PCCACTIONPROP 命令最大记录数为 200。
+    立即生效：本命令执行后立即生效。
+    默认行为：如果上行或下行发起业务的相应策略没有配置，则按照默认 Pass 处理。
+    一致性约束：报文动作需要上下行都配置且保持一致，配置不一致可能导致业务不通。
+    唯一性约束：PCCACTPROPNAME 全局唯一，不同 PCC 动作属性之间该参数不能重复。
+    门控枚举：UPINITUPGATE/UPINITDNGATE/DNINITUPGATE/DNINITDNGATE = PASS | DISCARD（默认 PASS）。
+    适用 NF：PGW-U、UPF。
+    协同约束：PCCACTPROPNAME 产出对象被 ADD SRVPBINDPCCPG(0-00030) 的 PCCACTPROPNAME 引用——必须先建 PCC 动作属性才能在策略组业务属性绑定中引用。
+violation_effect: 超 200 上限新增失败；PCCACTPROPNAME 重复导致冲突；上下行门控不一致导致业务不通
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务控制策略/PCC控制策略/PCC动作属性/增加PCC动作属性（ADD PCCACTIONPROP）_82837601.md
+  - GWFD-020352/激活IPv6 SA_80136513.md
+  - GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md
+  - GWFD-112001/业务配置_80953432.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(200 上限 + 立即生效 + 默认 PASS + 上下行一致性 + 名称唯一) + ③SRVPBINDPCCPG 前置依赖。冷门不绑(UPINITREDIRNM/DNINITREDIRNM/CFGDOMAINNAME)。"

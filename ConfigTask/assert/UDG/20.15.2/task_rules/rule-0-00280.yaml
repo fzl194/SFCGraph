@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00280
+owner_task_ref: UDG@20.15.2@Task@0-00039
+rule_name: 0-00039 最大记录数 200 + LOD SIGNATUREDB 前置
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00039
+  expression: |
+    ADD WELLKNOWNPORT(atom 0-00039) 配置约束：
+    (1) 上限：系统最大记录数为 200(命令 notes 强约束)，超出被拒。
+    (2) 前置约束：执行 ADD WELLKNOWNPORT 前必须已加载特征库文件(命令 notes 明示"执行该命令前，需要添加协议识别特征")——对应 LOD SIGNATUREDB 命令(命令 ID 待 CommandGraph 抽取)。
+    (3) 端口段：PORTOP 与 STARTPORT/ENDPORT 配套——当 PORTOP=EQUAL 仅 STARTPORT 必填；PORTOP=RANGE 时 STARTPORT+ENDPORT 均必填；本 atom 当前仅绑 STARTPORT(主场景单端口)，ENDPORT 缺口按 port段场景补绑或后续特性揭示(命令级审查 §4.3 ③ 缺口标注)。
+    (4) PRIORITY 整数范围 1~65535；建议按 5/10/15 阶梯配置(命令 notes)。
+    (5) 该命令执行后立即生效(命令 notes)。
+violation_effect: 上限超限→ADD 失败；特征库未加载→命令拒收；端口段参数缺→端口匹配失效
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md, GWFD-110203/配置HTTPS业务地址识别_24082599.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。配套 LOD SIGNATUREDB 前置为跨命令约束(本 atom 仅约束需求，未绑定具体 atom——LOD SIGNATUREDB atom 待 CommandGraph 抽取后再回填)。"

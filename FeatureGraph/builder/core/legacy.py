@@ -10,6 +10,7 @@
 from __future__ import annotations
 
 import csv
+from collections import defaultdict
 from pathlib import Path
 
 
@@ -64,3 +65,23 @@ def load_legacy_dependencies(legacy_dir: str | Path, nf: str) -> list[dict]:
                 "description": (row.get("description") or "").strip(),
             })
     return out
+
+
+def load_legacy_file_map(legacy_dir: str | Path, nf: str) -> dict[str, list[str]]:
+    """{feature_id: [file_path,...]} —— 历史 step2 特性→全部 md 映射（权威全量清单）。
+
+    新 feature 步的 file_map 主源：比自走语料更全（含部署/激活/参考/原理等全部 md），
+    同时兜住自走语料漏扫的少数特性。读 {nf}_feature_files.csv（列 feature_id,product_type,file_path）。
+    文件不存在返回 {}。
+    """
+    path = Path(legacy_dir) / f"{nf.lower()}_feature_files.csv"
+    if not path.exists():
+        return {}
+    out: dict[str, list[str]] = defaultdict(list)
+    with open(path, encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            fid = (row.get("feature_id") or "").strip()
+            fp = (row.get("file_path") or "").strip()
+            if fid and fp:
+                out[fid].append(fp)
+    return dict(out)

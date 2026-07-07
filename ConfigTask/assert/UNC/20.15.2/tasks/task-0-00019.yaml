@@ -1,0 +1,20 @@
+task_id: UNC@20.15.2@Task@0-00019
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHGHOLI
+task_layer: atom
+task_intent: 配置节假日（与费率时段配合，实现 S-CDR 不同费率时段计费）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHGHOLI
+status: inferred
+source_evidence_ids:
+  - 增加节假日配置(ADD CHGHOLI)_26145382.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00019:YEAR", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGHOLI:YEAR", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00019:MONTH", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGHOLI:MONTH", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00019:DAY", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGHOLI:DAY", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00019:CC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGHOLI:CC", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CHGHOLI.md（1 特性 WSFD-011201 SGSN，4 参全 required）。
+  SGSN 专用。节假日由 年/月/日/计费属性(CC) 唯一确定。与 ADD CHGTARI(费率时段) 配合做灵活费率控制。
+  notes：同 CC 节假日≤50，总≤200；年/月/日/CC 唯一 → rule 0-00021。§6.B 见全局 rule 0-00001。

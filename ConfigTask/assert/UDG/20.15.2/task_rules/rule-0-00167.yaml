@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00167
+owner_task_ref: UDG@20.15.2@Task@0-00048   # 挂 atom STR PDNROUTETST
+rule_name: PDN侧路由探测执行前置与时序约束
+rule_type: sequencing_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@MMLCommand@STR PDNROUTETST
+  expression: "探测执行须满足：(1) 同一时间只能执行一个探测命令，并发执行后者会失败；(2) 探测前需确定地址池(IPPOOL)下有可探测地址，否则探测失败；(3) DSTIPV4ADDR 须配置有效目的IP(非广播/非全0)，否则探测失败；(4) 多次执行只保留最后一次结果；(5) Tracert 方式约 450s 返回且不支持全量探测(WHOLEDETECT)。"
+violation_effect: 探测失败 / 结果丢失 / Tracert 长时间占用
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes 5 条执行约束（并发互斥/地址池前置/目的IP有效/仅留末次/Tracert耗时）。探测为运行态激活动作，建议空载环境使用。时序互斥由命令运行态保证，非配置态去重。"

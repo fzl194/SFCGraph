@@ -1,0 +1,29 @@
+task_id: UNC@20.15.2@Task@0-00002
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置ADCPARA
+task_layer: atom
+task_intent: 配置应用的流信息上报开关（ADC参数），建立 ADC 与流过滤器的对应，供 PCRF/PCF 下发精确策略
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD ADCPARA
+status: inferred
+source_evidence_ids:
+  - 增加ADC参数（ADD ADCPARA）_65996998.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00002:FLOWFILTERNAME
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD ADCPARA:FLOWFILTERNAME
+    binding_type: reference             # ③ 范式实际=已配置数据中获取（引用 ADD FLOWFILTER），纠正真相表的 local_planned
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD FLOWFILTER:FLOWFILTERNAME
+    requiredness: required
+    source_evidence_ids: [WSFD-109102/激活ADC基本功能_92582136.md]
+  - binding_id: UNC@20.15.2@Task@0-00002:FLOWINFORPT
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD ADCPARA:FLOWINFORPT
+    binding_type: variable
+    variable_source: local_planned      # 本端规划；PCRF/PCF 需要流信息时设 ENABLE，默认 DISABLE
+    requiredness: optional
+    source_evidence_ids: [WSFD-109102/激活ADC基本功能_92582136.md]
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_ADCPARA.md。
+  用该命令的特性：1（WSFD-109102 ADC基本功能）。
+  §6.B：UNC 缺 command_parameters.jsonl，parameter_ref 写预期 ID 待 CommandGraph 回填（全局见 rule 0-00001）。

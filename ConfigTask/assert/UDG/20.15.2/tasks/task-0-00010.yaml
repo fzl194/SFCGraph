@@ -1,0 +1,38 @@
+task_id: UDG@20.15.2@Task@0-00010
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置规则
+task_layer: atom
+task_intent: 配置业务策略规则ADD RULE，绑定流过滤器与PCC策略组，定优先级
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD RULE
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00010:RULENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:RULENAME
+    binding_type: decision_driven
+    variable_source: decision_driven   # pass-3 演进：计费场景=本端规划，PCC场景=与对端协商，跨特性分叉(DP 0-00005)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00005
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+  - binding_id: UDG@20.15.2@Task@0-00010:POLICYTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:POLICYTYPE
+    binding_type: decision_driven   # 命令级审查(2026-07-02)：由 fixed:PCC 升级。DP 0-00018 已存(pass-3 仅记录未执行)，本 pass 执行演进。计费/PCC=PCC(默认)、用户Portal/HTTP智能重定向/DNS纠错=SMARTREDIRECT、WebProxy=WEBPROXY。
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00018
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-110283/激活DNS纠错_67964199.md, GWFD-110284/激活HTTP智能重定向_67075035.md]
+  - {binding_id: UDG@20.15.2@Task@0-00010:FILTERINGMODE, parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:FILTERINGMODE, binding_type: fixed, value: FLOWFILTER, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00010:FLOWFILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:FLOWFILTERNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - binding_id: UDG@20.15.2@Task@0-00010:POLICYNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:POLICYNAME
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00003:PCCPOLICYGRPNM   # 默认 PCC 选项引用 PCC策略组；POLICYTYPE 由 DP 0-00018 决定，SMARTREDIRECT/WEBPROXY 时 POLICYNAME 改引用 IPFarm/DNSOverwriting/SmartHttpRedir(DP impacts 已编码 sets_value_pattern)
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - {binding_id: UDG@20.15.2@Task@0-00010:PRIORITY, parameter_ref: UDG@20.15.2@CommandParameter@ADD RULE:PRIORITY, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+notes: |
+  PRIORITY 数据来源=本端规划(local_planned)；取值受 RULE 优先级相对约束(selection_rule 0-00006)与 any 场景(DP 0-00002 sets_value_pattern=65000)影响，但"受约束"不改变 variable_source——值仍来自本端规划。pass-3(GWFD-020351)：RULENAME 跨特性分叉(计费=本端/PCC=对端)升级为 decision_driven(DP 0-00005)，默认本端保持计费向后兼容；POLICYNAME source_ref 顺带修正拼写 PCCPOLICYGRNM→PCCPOLICYGRPNM(对齐命令参数名)。PCC any-to-any 示例 PRIORITY=65535 与计费 any 场景 65000 均属 local_planned 合法取值(见 review P2)。
+  命令级审查(2026-07-02)：【演进执行】POLICYTYPE 由 fixed:PCC 升级为 decision_driven(DP 0-00018，pass-3 已建 DP 仅记录未执行，本 pass 落地)。证据：③ 用户Portal/HTTP智能重定向/DNS纠错=SMARTREDIRECT、WebProxy=WEBPROXY、计费/PCC/OTT=PCC。POLICYNAME 随 DP 选项切换引用对象(default=PCC→0-00003)。22 个缺口参数(RULESPECTYPE/FLWFLTRGRPNAME/TIMERANGENAME/RDS*/REDIR*/REMARK*/FPI*/SRVLBOFLAG/ADCMUTEFLAG/WORKER*/CFGDOMAINNAME/REPLACEUPNAME/ALGSWITCH/SAIVALUE)均未见于③计费/PCC特性数据规划表，按通用配置门槛不绑。规格 rule 0-00131(记录数 8000/100000) 已投影。

@@ -1,0 +1,35 @@
+task_id: UDG@20.15.2@Task@0-00057
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置接口绑定VPN
+task_layer: atom
+task_intent: 将逻辑接口（LoopBack/Tunnel/以太网子接口）绑定到VPN实例（VRF），实现物理与业务划分（LoopBack与Tunnel绑不同VPN）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPBINDVPN
+status: inferred   # 命令级审查(2026-07-02): draft→inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00057:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPBINDVPN:IFNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD INTERFACE)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+      - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - binding_id: UDG@20.15.2@Task@0-00057:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPBINDVPN:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(LST L3VPNINST / LST VPNINST)
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE   # 复用 ADD VPNINST 的 VPN 实例名
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+      - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+notes: "GWFD-010107 + GWFD-020402 + IPFD-015004。IFNAME 引用 ADD INTERFACE(0-00056)；VRFNAME 引用 ADD L3VPNINST/VPNINST(0-00041, 复用现有 VPN atom)。md注意: LoopBack 与 Tunnel 绑定不同VPN实例(物理/业务划分)——任务示例: LoopBack→vpn2, Tunnel→vpn1；IPv6组网/IPsec 场景以太网子接口与Tunnel 同绑一个 VPN。命令级审查(2026-07-02): IFNAME/VRFNAME binding 准确(reference)，source_evidence 扩展至3特性。不绑冷门: IFIPADDR/SUBNETMASK(命令真相 optional，IP 由 ADD IFIPV4ADDRESS 单独配置，3特性数据规划表均未用到)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00402
+owner_task_ref: UDG@20.15.2@Task@0-00088   # 挂 atom ADD IPFARMSERVER
+rule_name: ADD IPFARMSERVER 记录数规格与同 IPFarm 虚拟 IP 唯一性
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD IPFARMSERVER
+  expression: "ADD IPFARMSERVER 命令最大记录数为 7200；配置记录数大于规格 90% 时上报 ALM-135602215 配置数量超阈值告警(阈值可 MOD CFGTHRESHOLD 修改)。同一 IPFarm 中不允许有相同虚拟 IP 地址的 IPFarm 服务器(虚拟 IP 唯一)。命令执行后立即生效。"
+violation_effect: 超规格新增失败；同 IPFarm 虚拟 IP 重复导致负载均衡异常
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes '最大记录数7200'+'90%阈值告警'+'同一IPFarm中不允许有相同虚拟IP地址的IPFarm服务器'+'执行后立即生效'。IPFarm 多 server 负载均衡由重复执行本命令(不同 SERVERIPV4)实现。"

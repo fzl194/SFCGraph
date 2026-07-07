@@ -1,0 +1,30 @@
+task_id: UDG@20.15.2@Task@0-00070
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置QoS CAR功能
+task_layer: atom
+task_intent: 配置指定用户类型的上下行CAR功能（USERTYPE/ULRAT/DLRAT），实现基于用户漫游类型和RAT的流量限速
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET QOSCAR
+status: inferred   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00070:USERTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSCAR:USERTYPE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(用户漫游类型 HOME/ROAM...)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00070:ULRAT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSCAR:ULRAT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(上行RAT类型 eutran-1/geran...)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00070:DLRAT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSCAR:DLRAT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(下行RAT类型)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+notes: "GWFD-010201。QoS CAR(Committed Access Rate)用户级限速, 指定 4G 本地用户(HOME)开启上下行 CAR(任务示例 ULRAT=DLRAT=eutran-1)。与基于APN的QoS属性 SET APNQOSATTR(0-00049, 复用) 配合完成 QoS CAR 功能链。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00285(最大记录数 3 + 仅对新激活用户生效 + CAR/Shaping 互斥 + 初始记录不生效 + 性能下降 + 与 0-00049 协作)；binding=3(命中真相全部 3 项，无缺口)。注：USERTYPE 跨特性分叉(GWFD-020381 ROAMING vs GWFD-010201 HOME)由主特性默认值决定(无新建 feature-level DP/rule，跨特性分叉仅在本 atom 内部 requiredness=required 投影)；rule 0-00028 已覆盖会话类QoS ROAMING 维度基数。"

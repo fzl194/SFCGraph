@@ -1,0 +1,22 @@
+task_id: UNC@20.15.2@Task@0-00021
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHGPLMNCFG
+task_layer: atom
+task_intent: 基于 PLMN+APNNI 配置 S-CDR 话单生成策略（SGSN，与 CHGIMSICFG 互补）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHGPLMNCFG
+status: inferred
+source_evidence_ids:
+  - 增加PLMN计费配置(ADD CHGPLMNCFG)_72225071.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00021:SUBRANGE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGPLMNCFG:SUBRANGE", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/离线计费话单（SGSN）_02556787.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00021:MCC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGPLMNCFG:MCC", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-011201/离线计费话单（SGSN）_02556787.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00021:MNC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGPLMNCFG:MNC", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-011201/离线计费话单（SGSN）_02556787.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00021:APNNI", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGPLMNCFG:APNNI", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD APN:APN", requiredness: required, source_evidence_ids: [WSFD-011201/离线计费话单（SGSN）_02556787.md]}
+notes: |
+  UNC atom batch3（2026-07-06），手写自证据包 ADD_CHGPLMNCFG.md（1 特性 WSFD-011201 SGSN，12 参）。
+  绑 4（SUBRANGE/MCC/MNC/APNNI）；APNNI=reference(ADD APN:APN)。
+  S-CDR 控制 8 个 optional（SP/SPP/SPL/SVP/SVL/SCCP/SCCL/SLCP）与 CHGIMSICFG 同结构，按需补。
+  SET CHGCDR.PLMNCTRL=LOCINFO 时本命令生效；=IMSI 时走 ADD CHGIMSICFG。与 CHGIMSICFG 字段默认值互为无效值。
+  notes：最多 1500 条 → rule 0-00023。§6.B 见全局 rule 0-00001。

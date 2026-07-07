@@ -1,0 +1,17 @@
+rule_id: UDG@20.15.2@TaskRule@0-00012
+owner_task_ref: UDG@20.15.2@Task@2-00005
+rule_name: PCC特性 license 与业务感知配置前置依赖
+rule_type: dependency_rule
+rule_scope: feature
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Feature@GWFD-020351
+  expression: 激活 PCC 须先打开 License 项 LKV3G5PCCB01(SET LICENSESWITCH LICITEM=LKV3G5PCCB01, SWITCH=ENABLE)；并完成业务感知配置(UDG 业务感知专题)；PGW-C/SMF 侧 PCC 配置见 UNC 手册。纯策略控制可不配 URRGROUPNAME，叠加计费时须引用已配置的 URRGROUP(见 rule 0-00014)。
+violation_effect: PCC 策略无法生效或计费缺失
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]

@@ -1,0 +1,37 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00096
+owner_task_ref: UDG@20.15.2@Task@0-00114   # 挂 atom MOD INTERFACE
+decision_name: MOD INTERFACE 配置范围（启用主接口 vs IPsec配置）
+decision_question: |
+  MOD INTERFACE 在 UDG 激活场景下需要配置哪些参数？
+  - 启用主接口：仅置 IFADMINSTATUS=up（最小化配置，IPv6 组网外联口物理主接口启用前置）
+  - IPsec配置：IFADMINSTATUS=up + IFMTU + IFDF（GRE over IPsec 隧道场景对 LoopBack 口/物理口的额外配置；IFSTATIENABLE 仅 GRE over IPsec LoopBack 单脚本 TRUE，按通用配置门槛不绑）
+  UDG 当前 2 特性数据规划表分布：仅启用主接口(020402 N6/Gi/SGi IPv6 组网) vs IPsec配置(IPFD-015004 IPsec 含普通IPsec/GRE over IPsec/IPv4主备/OSPF over IPsec 等多子场景，均显式 IFMTU=1500；GRE over IPsec LoopBack1 显式 IFDF=FALSE)
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+options:
+  - option_id: opt-modif-enable-only
+    option_name: 仅启用主接口
+    option_value: enable_only
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00114:IFMTU, effect_type: sets_requiredness, effect_detail: requiredness=absent（不绑）；020402 场景脚本仅 IFADMINSTATUS=up}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00114:IFDF, effect_type: sets_requiredness, effect_detail: requiredness=absent（不绑）；020402 场景脚本无 IFDF}
+  - option_id: opt-modif-ipsec
+    option_name: IPsec配置（MTU+DF）
+    option_value: ipsec
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00114:IFMTU, effect_type: sets_requiredness, effect_detail: requiredness=conditional；IPFD-015004 IPsec 脚本显式 IFMTU=1500，仅 IPsec 场景配}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00114:IFDF, effect_type: sets_requiredness, effect_detail: requiredness=conditional；IPFD-015004 GRE over IPsec LoopBack 显式 IFDF=FALSE（出接口不分片标记）}
+default_option: opt-modif-enable-only
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00094~0-00097；0-00094/0-00095 已被 rule 占用(2-00084/2-00085)，本 DP 改用 0-00096）。管理 MOD INTERFACE 的参数配置范围跨特性分叉。
+  依据：2 特性数据规划表 / 任务示例脚本 —
+    020402 N6/Gi/SGi IPv6 组网：仅 `IFADMINSTATUS=up`，无 IFMTU/IFDF；
+    IPFD-015004 IPsec 多子场景：均显式 `IFMTU=1500`；GRE over IPsec 场景 LoopBack1 显式 `IFDF=FALSE`。
+  原 pass-1 录制：IFMTU/IFDF 静态 conditional（无法表达"020402 不需"vs"IPsec 需"的选择性）。按 SKILL §4.5 升级为 decision_driven：IFMTU/IFDF binding requiredness 由本 DP 选，default_option=仅启用主接口（020402 主特性路径）。
+  本决策决定 IFMTU/IFDF 绑不绑，不影响 IFNAME/IFADMINSTATUS（前者两特性均本端规划统一，后者 UDG 恒为 up 由 binding fixed:up 表达）。
+  IFSTATIENABLE 在 IPFD-015004 GRE over IPsec LoopBack1 单脚本 TRUE，按通用配置门槛不绑；不纳入本 DP。

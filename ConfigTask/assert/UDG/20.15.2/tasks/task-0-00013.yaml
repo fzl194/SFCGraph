@@ -1,0 +1,34 @@
+task_id: UDG@20.15.2@Task@0-00013
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置用户模板URR组绑定
+task_layer: atom
+task_intent: 为USERPROFILE绑定URR组（缺省业务/信令费率、TCP重传计费等；SET URRGRPBINDING，多用途）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET URRGRPBINDING
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020307/激活TCP重传识别_88299168.md, GWFD-020302/部署UPF_79813617.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00013:USERPROFILENAME, parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:USERPROFILENAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00011:USERPROFILENAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020307/激活TCP重传识别_88299168.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00013:DFTURRGRPNAME, parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTURRGRPNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME, requiredness: conditional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00013:DFTSIGURRGNAME, parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTSIGURRGNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME, requiredness: conditional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00013:TCPCHGPROFLAG, parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:TCPCHGPROFLAG, binding_type: fixed, value: CHARGING, requiredness: conditional, source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00013:TCPURRGRPNAME, parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:TCPURRGRPNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME, requiredness: conditional, source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]}
+  - binding_id: UDG@20.15.2@Task@0-00013:GLBDFTURRGSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:GLBDFTURRGSW
+    binding_type: variable
+    variable_source: local_planned   # 命令真相=local_planned,optional；开关值本端定，特性取ENABLE(配合SET SPECTRAFURRGRP全局缺省URR组)
+    requiredness: conditional   # 仅基于时长/流量/事件计费(2-00009/10/11)用全局缺省URR组时配
+    source_evidence_ids: [GWFD-020302/部署UPF_79813617.md]
+  - binding_id: UDG@20.15.2@Task@0-00013:GLBDFTSIGURRGSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:GLBDFTSIGURRGSW
+    binding_type: variable
+    variable_source: local_planned   # 命令真相=local_planned,optional；开关值本端定，特性取ENABLE(配合SET SPECTRAFURRGRP全局缺省信令URR组)
+    requiredness: conditional   # 仅基于时长/流量/事件计费(2-00009/10/11)用全局缺省信令URR组时配
+    source_evidence_ids: [GWFD-020302/部署UPF_79813617.md]
+notes: |
+  pass-3(GWFD-020307)：由"配置缺省费率"扩展为 SET URRGRPBINDING 多用途 atom——缺省费率(DFTURRGRPNAME/DFTSIGURRGNAME，计费场景) + TCP重传URR组绑定(TCPCHGPROFLAG=CHARGING/TCPURRGRPNAME，GWFD-020307 场景)。各 param subset requiredness 改 conditional 以适配多用途；计费特性仍配置 DFT 子集(向后兼容)。logical_name 随之泛化。DFTSIGURRGNAME 异常场景必配。
+  命令级审查(2026-07-02):
+  - 补绑 GLBDFTURRGSW/GLBDFTSIGURRGSW（命令真相 local_planned/optional，但 2-00009/10/11 基于时长/流量/事件计费的数据规划表实际用到=ENABLE，配合 SET SPECTRAFURRGRP 全局缺省URR组；开关值本端定故 local_planned）。
+  - 未绑 REDURRGRPNAME（命令真相 optional，③ 无特性数据规划表用到，冷门不追）。
+  - 新增 atom-挂 rule 0-00113（advisory：建议业务+信令URR组都配，否则部分流量无法计费）。

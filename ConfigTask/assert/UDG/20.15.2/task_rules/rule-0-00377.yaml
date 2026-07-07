@@ -1,0 +1,29 @@
+rule_id: UDG@20.15.2@TaskRule@0-00377
+owner_task_ref: UDG@20.15.2@Task@0-00089   # 挂 atom ADD ERRORCODE
+rule_name: ADD ERRORCODE 上限 100/500/2000 + 立即生效 + 前置 DNS纠错/HTTP重定向策略
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00089
+  expression: |
+    ADD ERRORCODE 命令最大记录数 100（ErrorCodeName 数量）。
+    单个 ErrorCodeName 下最多配置 500 组错误码范围。
+    整机最多可以配置 2000 组错误码范围。
+    立即生效：本命令执行后立即生效。
+    ERRORCODENAME 1~31 字符（不区分大小写，不支持空格）。
+    ERRORCODESTART/ERRORCODEEND 整数 0~1000；ERRORCODEOP=EQUAL 时仅 START 有效；ERRORCODEOP=GE/LE/GT/LT 时 START+END 共同控制范围。
+    适用 NF：PGW-U、UPF。
+    协同约束：ERRORCODENAME 产出对象被 DNSOVERWRITING(0-00090) / SMARTHTTPREDIR(0-00091) 的 BINDERRCODENAME 引用——必须先建 ErrorCode 才能在 DNS纠错/HTTP智能重定向策略中绑定。
+violation_effect: 超 100/500/2000 上限新增失败；未建 ErrorCode 直接引用导致重定向策略无法匹配错误码
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务控制策略/重定向控制/重定向公共参数管理/ErrorCode/增加错误码（ADD ERRORCODE）_09678504.md
+  - GWFD-110283/激活DNS纠错_67964199.md
+  - GWFD-110284/激活HTTP智能重定向_67075035.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 100 + 单名 500 + 整机 2000 + 立即生效) + ③ErrorCode→DNS纠错/HTTP智能重定向策略 前置依赖。ERRORCODEEND 补绑入 atom。"

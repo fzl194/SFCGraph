@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00410
+owner_task_ref: UDG@20.15.2@Task@2-00011   # 挂 feature（GWFD-020306）
+rule_name: 事件计费 license 与内容计费前置依赖
+rule_type: dependency_rule
+rule_scope: feature
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00019       # SET LICENSESWITCH（LICITEM=LKV3G5EBCS01）
+    - UDG@20.15.2@Task@2-00001       # GWFD-020301 内容计费 backbone
+  expression: >-
+    须先打开 license（SET LICENSESWITCH 0-00019，LICITEM=LKV3G5EBCS01）；并以 GWFD-020301 内容计费 backbone
+    为基础（URR/URRGROUP/PCCPOLICYGRP/过滤链/规则/用户模板/缺省费率/刷新已就绪）。本特性差异仅在 ADD URR 的
+    OFFMETERINGTYPE/ONLMETERINGTYPE=EVENT（由 DP 0-00001 option opt-offline/opt-online 覆盖）。事件计费仅在线 SCUR；
+    3 计费点（REQUEST/RESPONSE/FINISH）与 ECUR 在 UNC 侧，UDG 侧零额外命令。
+violation_effect: 事件计费不生效（按默认 metering 统计；或 UNC 侧无事件配额 serviceSpecificUnits 下发）
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020306/部署UPF_28654078.md, GWFD-020306/GWFD-020306 支持事件计费特性概述_70518084.md]

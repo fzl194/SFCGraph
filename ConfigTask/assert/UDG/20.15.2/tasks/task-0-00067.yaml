@@ -1,0 +1,43 @@
+task_id: UDG@20.15.2@Task@0-00067
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置上行BA映射
+task_layer: atom
+task_intent: 配置DS域上行VLAN报文802.1p值(BAVALUE)与UDG内部服务等级(SERVICECLASS)及报文颜色(COLOR)的对应关系（入口CoS→ToS映射）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET QOSBA
+status: inferred   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00067:DSNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSBA:DSNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD QOSDIFFERSERV 的 DSNAME
+    source_ref: UDG@20.15.2@Task@0-00066:DSNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00067:BATYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSBA:BATYPE
+    binding_type: fixed
+    value: 8021p   # 任务示例脚本固定 8021p(VLAN 802.1p 优先级)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00067:BAVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSBA:BAVALUE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(802.1p 值)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00067:SERVICECLASS
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSBA:SERVICECLASS
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(服务分类 be/af1/... )
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00067:COLOR
+    parameter_ref: UDG@20.15.2@CommandParameter@SET QOSBA:COLOR
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(报文颜色 green/yellow/red)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+notes: "GWFD-010201。入口方向(CoS→ToS) BA 映射命令, 与出口方向 SET QOSPHB(0-00069) 对偶(不同命令)。DSNAME 引用 ADD QOSDIFFERSERV(0-00066)。任务示例: BAVALUE=3/SERVICECLASS=be/COLOR=red/BATYPE=8021p。本 atom 仅入口方向配置(DP 0-00016 选 opt-ingress 时使用)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00283(即时生效 + BATYPE/PHBTYPE 跨方向互斥 + 入口出口均执行)；binding=5(命中真相全部 5 项，无缺口)。"

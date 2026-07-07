@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00175
+owner_task_ref: UDG@20.15.2@Task@0-00083   # 挂 atom ADD LOGICINF
+rule_name: ADD LOGICINF 最大记录数 + 阈值告警 + VPN 绑定前置
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD LOGICINF
+  expression: "ADD LOGICINF 命令最大记录数为 4096；当配置记录数大于规格 98% 时上报 ALM-135602215 配置数量超阈值告警（≤95% 恢复，阈值可 MOD CFGTHRESHOLD 修改）；若需绑定 VPN（VPNINSTANCE），须提前配置 ADD VPNINST/L3VPNINST；执行后立即生效。"
+violation_effect: 超规格新增失败；未前置 VPN 即绑 VPNINSTANCE 将失败；接近阈值触发告警
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数4096' + '98%/95% 阈值告警 ALM-135602215' + 'VPN 绑定需前置 ADD VPNINST'。适用 NF: SGW-U/PGW-U/UPF。VPNINSTANCE 用途相关(Paif→L3VPNINST/L2TP-Giif→VPNINST/IPFarm-IMS→VPN/IPFarm·S11-U 无)，绑定时须先建对应 VPN 实例。"

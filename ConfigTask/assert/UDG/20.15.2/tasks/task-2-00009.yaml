@@ -1,0 +1,52 @@
+task_id: UDG@20.15.2@Task@2-00009
+nf: UDG
+version: "20.15.2"
+task_logical_name: 基于业务时长的计费
+task_layer: feature
+task_intent: UPF 按业务时长计费（metering=TIME 变体）；命令集与内容计费 backbone 完全重合，差异仅在 ADD URR 的 OFFMETERINGTYPE/ONLMETERINGTYPE 取 TIME
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020302
+status: inferred
+source_evidence_ids:
+  - GWFD-020302/部署UPF_79813617.md
+  - GWFD-020302/GWFD-020302 基于业务时长的计费特性概述_69148027.md
+  - GWFD-020302/GWFD-020302 基于业务时长的计费参考信息_97488216.md
+  - GWFD-020302/实现原理/基于业务时长的计费（适用于在线计费）_69148029.md
+  - GWFD-020302/实现原理/基于业务时长的计费（适用于离线计费）_69148032.md
+  - GWFD-020302/实现原理/基于业务时长的计费（适用于融合计费）_33943344.md
+  - GWFD-020302/实现原理/基于业务时长的计费（适用于在线计费）/在线时长计费方式_69148030.md
+  - GWFD-020302/实现原理/基于业务时长的计费（适用于在线计费）/在线时长计费流程_69148031.md
+  - GWFD-020302/实现原理/基于业务时长的计费（适用于离线计费）/离线时长计费方式_69148033.md
+  - GWFD-020302/实现原理/基于业务时长的计费（适用于离线计费）/离线时长计费流程_69148034.md
+task_relations:
+  # 复用 backbone compounds（与 2-00001 内容计费共享），全程无新增 atom
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00041, from_task_ref: UDG@20.15.2@Task@1-00001, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020302/部署UPF_79813617.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00042, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020302/部署UPF_79813617.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00043, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@1-00004, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020302/部署UPF_79813617.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00044, from_task_ref: UDG@20.15.2@Task@0-00019, to_task_ref: UDG@20.15.2@Task@1-00001, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020302/部署UPF_79813617.md]}
+notes: |
+  GWFD-020302 基于业务时长的计费。形态 STEP-OK:backbone 1-00001~04 全复用(Jaccard=1.0,4 候选相位
+  完全同义)+ 直挂 0-00019(SET LICENSESWITCH) license 前置。无新建 compound / atom / feature DP。
+
+  时长计费差异的三层表达(A 段 pass-2 判定):
+  - 参数级(atom DP 0-00001,冻结):UPF 侧 metering 差异 = ADD URR 的 OFFMETERINGTYPE/ONLMETERINGTYPE
+    取 TIME(而非 VOLUME),由 atom 0-00001 挂 DP 0-00001 的 option(opt-offline/opt-online 的
+    effect_detail 已含 "VOLUME/TIME/EVENT/FREE 取值")覆盖。纯参数 impact,不改命令集 → 不进 variants
+    枚举(spec §4.2)。
+  - feature DP:无。本特性部署 md 仅走 backbone,无 feature 级可选命令(对比 2-00002 三可选 / 2-00003/04
+    各一可选 SET URRFAILACTION)。时长计费方式(QCT/连续/CTP/DTP)是 PGW-C/SMF 侧 ADD DCCTEMPLATE.QCT /
+    ADD OFCSRVTEMPLATE.TQM 参数选择(在线/离线时长计费方式 md 69148030/33948033 明示),非 UDG UPF MML
+    (mml_commands.jsonl 无此二命令),超出 nf=UDG 作用域,不构成本特性 UPF 命令集分叉。
+  - rule:feature 挂 rule 0-00018(dependency_rule,license 82209823 + 内容计费前置)已存在并核实,
+    指向 0-00019 + 2-00001。无需新增 rule(md 未揭示新 UPF 级约束)。
+
+  variants:1 变体(DP 0-00002=opt-basic-l34 + DP 0-00003=opt-off)。覆盖校验 exit 0(结构 16 /
+  md_required 12 / DP 收敛 4)。防欺诈分叉由 2-00001 pass-2 已承载,本特性不重复枚举(spec §5 不合并)。
+  generalized DP 0-00004(B 段作用域外)负责"是否叠加 2-00002/03/04 在线/离线/融合特性",本特性只承担
+  "时长"差量,与上层不冲突。
+
+  缺口(非 Task 层错误):
+  - 文档侧:部署 md 任务示例全用 VOLUME(与 2-00010/11 字节级同构),未展示 TIME。按特性语义建 task,
+    命令层无差量证据。详见 pass-2 报告。
+  - atom 层:SET SPECTRAFURRGRP(部署 md 步骤10)无 atom,mml_commands.jsonl 含但 tasks 无。A 段冻结,
+    md_required 不列,与 2-00001/03/04 同族一致。CONSOLIDATION-BACKLOG 已记,待 atom 层统一补建。

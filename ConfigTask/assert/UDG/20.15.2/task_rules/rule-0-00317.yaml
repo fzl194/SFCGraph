@@ -1,0 +1,31 @@
+rule_id: UDG@20.15.2@TaskRule@0-00317
+owner_task_ref: UDG@20.15.2@Task@0-00256
+rule_name: 0-00256 多层上限 + PRIORITY 全局唯一 + CATEGORYTYPE 互斥约束 + 立即生效
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00256
+  expression: |
+    ADD CONTCATEGROUP(atom 0-00256) 配置约束：
+    (1) 上限(5 层嵌套, 命令 notes 强约束)：
+        (a) 单命令最大记录数 20200；
+        (b) 整机支持 200 个内容分类组；
+        (c) 每个内容分类组最多可配置 101 条内容分类记录；
+        (d) RANGE/SPECIFIC/NAME 类型内容分类记录数量不超过 100 条；
+        (e) PRIORITY 类型的内容分类记录数量限制为 1 条(全局唯一)。
+    (2) PRIORITY 全局唯一：CATEGORYTYPE=PRIORITY 的内容分类组, 其 PRIORITY 全局唯一(命令 notes 强约束)；同 PRIORITY 重复→ADD 失败。DP 0-00119 的 PRIORITY 分支 + DP 0-00121 的整机默认行为共同编排。
+    (3) RANGE 区间约束：CATEGORYTYPE=RANGE 时 STARTID ≤ ENDID(命令 notes)；STARTID > ENDID→ADD 失败。同一内容分类组中 RANGE 类型所有记录的 [STARTID, ENDID] 不能重叠。
+    (4) 首次非 PRIORITY 自动追加 PRIORITY=65535：若内容分类组名称为系统首次添加, 且内容分类类型不是 PRIORITY, 系统自动追加一条 PRIORITY=65535 默认记录——该追加占整机 200 个内容分类组限额(隐性消耗, 由 DP 0-00121 编排)。
+    (5) 立即生效：该命令执行后立即生效(命令 notes)。
+    (6) CONTCATEGNAME 供 ADD CONTCATEGBIND(0-00257) 引用：本 atom 是 CONTCATEGBIND 前置。
+    (7) CATEGORYID 与 ICAP Server 已导入的 URL 分类数据对应：分类值需与 ICAP Server 端导入数据匹配(主特性 SPECIFIC 路径样例 CATEGORYID=1)。
+violation_effect: 5 层上限任一超限→ADD 失败；PRIORITY 重复→ADD 失败；RANGE 区间错配/重叠→ADD 失败；CONTCATEGNAME 未先建→后续 ADD CONTCATEGBIND 引用失败；CATEGORYID 与 ICAP 数据不匹配→URL 过滤匹配失效
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。DP 0-00119 管 CATEGORYTYPE 4-way 配套必选；DP 0-00121 管整机首次非 PRIORITY 自动追加 PRIORITY=65535 默认行为。两条 DP 互补, 本 rule 管全局唯一性 + 区间约束 + 5 层嵌套上限。"

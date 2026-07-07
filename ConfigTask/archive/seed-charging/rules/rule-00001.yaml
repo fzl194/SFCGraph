@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00001
+task_ref: UDG@20.15.2@Task@00101
+rule_name: URRGROUP必须同时配在线+离线URR
+rule_type: consistency_rule
+rule_logic: URRGROUP下UPURRNAME1/DOWNURRNAME1绑离线URR、UPURRNAME2/DOWNURRNAME2绑在线URR，必须同时配置；只配一种且与用户计费模式不匹配时无法计费
+violation_effect: 无法计费
+severity: warning
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

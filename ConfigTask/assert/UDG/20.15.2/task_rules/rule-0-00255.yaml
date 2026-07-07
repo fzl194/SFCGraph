@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00255
+owner_task_ref: UDG@20.15.2@Task@0-00108   # 挂 atom ADD BCSRVLEVELPLY
+rule_name: ADD BCSRVLEVELPLY 最大记录数 + 立即生效 + 同控制器 SHAPRATE 总和 ≤100% + CIR*RATE ≤ PIR*RATE
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD BCSRVLEVELPLY
+  expression: |
+    ADD BCSRVLEVELPLY 命令最大记录数为 30000。
+    该命令执行后立即生效。
+    强约束（per-controller 配额）：指定 BWM 控制器（BWMCNAME）下所有 BCSRVLEVELPLY 配置的 CIRRate 参数之和不能超过 100%（万分比 10000）；SHAPRATE 同理作为峰值带宽比例（SHAPRATE*100/BWMCONTROLLER.RATE）不得超过该控制器峰值带宽。
+    跨命令强约束：此命令配置的承诺信息速率（CIR * CIRRate）不能大于峰值信息速率（PIR * PIRRate），其中 CIR 与 PIR 为 BWMCONTROLLER(0-00036) 命令配置的保障带宽和峰值带宽。
+    SERVICELEVEL 取值范围 1~30（业务级别，值越小优先级越高）；同一 BWMCNAME 下 SERVICELEVEL 唯一（per-BwmController 下唯一索引）。
+violation_effect: 超规格（>30000）新增失败；同控制器 SHAPRATE 总和超 100% 失败；CIR*RATE > PIR*RATE 失败；同控制器 SERVICELEVEL 重复失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00250~0-00259）。投影自命令 notes '最大记录数为30000' + '指定BWM控制器下所有BCSrvLevelPly配置的CIRRate参数之和不能超过100%' + '配置的承诺信息速率（CIR*CIRRate）不能大于峰值信息速率（PIR*PIRRate）' + '执行后立即生效'。跨命令强约束（CIR/PIR 来自 0-00036）由 binding 级 source_ref=0-00036:BWMCNAME 串联 + 本 rule 显式记录推导约束。"

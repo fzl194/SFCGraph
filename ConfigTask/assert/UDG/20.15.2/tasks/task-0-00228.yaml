@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00228
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置TWAMP发送端(Light模式)
+task_layer: atom
+task_intent: 配置 TWAMP 发送端探测报文参数(CLIENTID/TIMEOUT)，依附于已建客户端。Light 模式独有
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD TWAMPSENDER
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00228:CLIENTID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPSENDER:CLIENTID
+    binding_type: reference
+    variable_source: reference   # 引用 ADD TWAMPCLIENT 的 CLIENTID
+    source_ref: UDG@20.15.2@Task@0-00227:CLIENTID
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+  - binding_id: UDG@20.15.2@Task@0-00228:TIMEOUT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPSENDER:TIMEOUT
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(超时秒数，整数 1~10，默认 5)
+    requiredness: optional   # 校正：命令真相为 optional(默认 5)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Light模式）_42385398.md]
+notes: "ADD TWAMPSENDER(Light 模式独有)。CLIENTID 引用 ADD TWAMPCLIENT(0-00227)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：6 缺口严格筛。缺 MODE/DSCP/PKTSIZETYPE/PKTSIZE/PADDINGTYPE/PERIOD 均为 optional/conditional(命令真相均有默认值：MODE=CONTINUAL/DSCP=0/PKTSIZETYPE=FIXED/PKTSIZE=128/PADDINGTYPE=PADDING_RANDOM/PERIOD=100)，特性 md 数据规划表与任务示例脚本均未涉及 6 参数，故按 baseline §4.1 冷门不绑(保持参数门槛，避免臃肿；现网按需可后续补绑)。校正 requiredness：TIMEOUT 改 optional(命令真相)。feature-挂 DP 0-00036(TWAMP 模式 LIGHT)已表达 TWAMPSENDER 仅 Light 模式配置。命令最大记录数 12000 + CLIENTID 1~12000 由 CommandParameter 校验承担。"

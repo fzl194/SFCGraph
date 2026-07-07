@@ -1,0 +1,30 @@
+task_id: UDG@20.15.2@Task@0-00055
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置冗余备份重定向IP
+task_layer: atom
+task_intent: 增加冗余备份虚拟重定向IP（IPv4/IPv6），主备UDG将业务流重定向到GRE Tunnel
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD REDUNDRDTIP
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 3/3 已绑, IPVERSION 由 local_planned 校正 global_planned(对齐命令真相+数据规划表)
+source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00055:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDUNDRDTIP:IPVERSION
+    binding_type: variable
+    variable_source: global_planned   # 命令真相 global_planned；数据规划表"全网规划"(010107 md说明 重定向IP全局规划)
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00055:IPV4ADDRESS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDUNDRDTIP:IPV4ADDRESS
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划(重定向IP全局规划, 主备可同可异)
+    requiredness: conditional   # IPVERSION=IPv4 时必填
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00055:IPV6ADDRESS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDUNDRDTIP:IPV6ADDRESS
+    binding_type: variable
+    variable_source: global_planned   # 全网规划
+    requiredness: conditional   # IPVERSION=IPv6 时必填
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+notes: "GWFD-010107。冗余备份虚拟重定向IP(每IP一条ADD REDUNDRDTIP)。md注意: 重定向IP全局规划, 仅内部重定向转发不对外发布, 主备UDG可同可异IP(只要不与其他路由冲突)。IPv4/IPv6 参数集互斥(IPVERSION门控), requiredness=conditional。静态路由 ADD SRROUTE(0-00061)/ADD SRROUTE6(0-00062) 的 PREFIX 必须与本 atom 的重定向IP一致。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取(rule 0-00034)。命令级审查(2026-07-02): 0 缺口(bound 3/3=IPVERSION+IPV4ADDRESS+IPV6ADDRESS); IPVERSION 由 local_planned 校正为 global_planned(命令真相+数据规划表均 global_planned, 重定向IP是全局规划)。IPV4/IPv6 二选一条件 requiredness 已正确(IPv4=IPV4ADDRESS, IPv6=IPV6ADDRESS)。"

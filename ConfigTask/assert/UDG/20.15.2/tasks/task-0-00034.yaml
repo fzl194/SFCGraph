@@ -1,0 +1,79 @@
+task_id: UDG@20.15.2@Task@0-00034
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置带宽管理业务
+task_layer: atom
+task_intent: 配置带宽管理业务(ADD BWMSERVICE)，定义业务范围(基于分类属性/协议组等)并绑定分类属性
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD BWMSERVICE
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00034:BWMSERVICENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMSERVICE:BWMSERVICENAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表 2 特性均本端规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00034:BWMSERVICETYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMSERVICE:BWMSERVICETYPE
+    binding_type: decision_driven   # 命令真相 required；020354/110301 均显式 NONTOS；保留分叉能力（特性级可升 TOS）
+    variable_source: local_planned
+    requiredness: required
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00099
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00034:NONTOSSRVTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMSERVICE:NONTOSSRVTYPE
+    binding_type: decision_driven   # 跨特性分叉：CATEGORY_PROP/PROTOCOL/PROTOCOLGROUP/OSTYPE
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00099
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00034:CATEPROPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMSERVICE:CATEPROPNAME
+    binding_type: decision_driven   # 020354 走 CATEGORY_PROP 分支时必选；其他分支不传
+    variable_source: reference
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00099
+    source_ref: UDG@20.15.2@Task@0-00032:CATEPROPNAME
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - binding_id: UDG@20.15.2@Task@0-00034:PROTGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMSERVICE:PROTGROUPNAME
+    binding_type: decision_driven   # 020354 走 PROTOCOLGROUP 分支时必选；其他分支不传
+    variable_source: reference
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00099
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - binding_id: UDG@20.15.2@Task@0-00034:PROTOCOLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMSERVICE:PROTOCOLNAME
+    binding_type: decision_driven   # 020354 PROTOCOL 分支 + 110301 PROTOCOL+OSTYPE 分支共用
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00099
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00034:OSTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMSERVICE:OSTYPE
+    binding_type: decision_driven   # 110301 OSTYPE 分支（基于操作系统类型 IOS）专用
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00099
+    source_evidence_ids:
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: |
+  GWFD-020354 基于业务的Shaping(URL整形) + GWFD-110301 基于终端系统的码率差异化控制 共享。命令 ADD BWMSERVICE 未在 by_command 复用索引(§6-B)。
+  BWMSERVICETYPE/NONTOSSRVTYPE/CATEPROPNAME/PROTOCOLNAME/PROTGROUPNAME/OSTYPE 跨特性分叉 → DP 0-00099 编排（4 路分叉：CATEGORY_PROP/PROTOCOLGROUP/PROTOCOL/PROTOCOL+OSTYPE）。
+  命令级审查(2026-07-02) 演进：status draft→inferred；新增 4 个 binding（PROTGROUPNAME/PROTOCOLNAME/OSTYPE 跨特性分叉显式必选 + PROTOCOLNAME 双特性共用）；BWMSERVICETYPE/NONTOSSRVTYPE/CATEPROPNAME 升级 decision_driven。
+  不绑冷门（命令真相 conditional/optional 且 2 特性均未用）：TOSCFGTYPE/TOSCLASSTYPE/TOSVALUE（TOS 业务场景，命令真相要求必选但 UDG 实际部署走 NONTOS 分支）+ CFGDOMAINNAME（配置域）。
+  注：commands notes "基于 OSTYPE 进行带宽控制场景，当用户的 O..." 表明 OSTYPE 路径是受支持的官方场景。

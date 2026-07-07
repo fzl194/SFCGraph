@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00409
+owner_task_ref: UDG@20.15.2@Task@2-00008
+rule_name: 终端异常下行流量检测 SIGDEFERREDTIME 应用限制
+rule_type: consistency_rule
+rule_scope: feature
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: min_value
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET SRVCOMMONPARA
+  expression: SET SRVCOMMONPARA 的 SIGDEFERREDTIME(信令报文关联业务计费的迟滞时间)取值必须 ≥ 60s。
+violation_effect: SIGDEFERREDTIME < 60s 时,信令报文关联业务计费迟滞过短,影响终端异常下行流量检测的判定与计费回退(已放行下行流量免费处理)的正确性
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020305/GWFD-020305 终端异常下行流量检测特性概述_02456812.md]
+notes: "md「应用限制」明示:通过 SET SRVCOMMONPARA 的 SIGDEFERREDTIME 配置信令报文关联业务计费的迟滞时间不能小于 60s。本特性激活步骤不直接配 SET SRVCOMMONPARA(该命令是全局业务公共参数,跨特性),故以 feature 级 consistency_rule 投影;target_type 非命令集影响(SET SRVCOMMONPARA 不进 md_required/不进结构基线),仅作一致性约束存档。"

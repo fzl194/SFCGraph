@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00326
+owner_task_ref: UDG@20.15.2@Task@0-00052   # SET UPN4UPATH (atom-挂 rule)
+rule_name: SET UPN4UPATH 最大记录数+高危+立即生效+N4ECHOSW门控5参数生效
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00052:N4ECHOSW
+  expression: "最大记录数为1(全局唯一); 本命令属于高危命令(配置UPF主动向SMF发送GTP请求消息的重发时间间隔和最大尝试发送次数，配置不合理可能导致用户激活失败或资源残留); 该命令执行后立即生效; N4ECHOSW=ENABLE时参数N4ECHOTIME/N4ECHOINTERVAL/DEACTIVEFLAG/N4T3RESPONSE/N4N3REQUEST才能生效；在基站数目较多时建议配置较大ECHOINTERVAL。"
+violation_effect: 高危配置错误导致用户激活失败或资源残留；N4ECHOSW关闭时其他5参数不生效
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格+高危+立即生效+N4ECHOSW门控)
+source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]

@@ -1,0 +1,23 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00060
+owner_task_ref: UDG@20.15.2@Task@0-00015   # 挂 atom SET REFRESHSRV：REFRESHTYPE 刷新范围跨特性分叉
+decision_name: 业务刷新范围
+decision_question: SET REFRESHSRV 的 REFRESHTYPE 取何值？（决定本次刷新的作用域。改动了 Filter/FilterGroup/Acl/AclNode→ALL；仅改动 UserProfile/Rule/RULEBINDING→USERPROFILE。ALL 为安全默认，刷新全集。）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020300/配置Gy接口在线计费_83167737.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-110281/配置用户Portal_66620114.md, GWFD-112000/激活双故障Bypass_14147877.md]
+options:
+  - option_id: opt-refresh-all
+    option_name: 全集刷新(ALL)
+    option_value: ALL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00015:REFRESHTYPE, effect_type: sets_value, effect_detail: REFRESHTYPE=ALL；刷新 Filter/FilterGroup/Acl/AclNode 全集。适用于改动了过滤条件的特性(内容计费/融合计费/时长流量事件计费/ADC/Shaping/双故障/ProxyUPF 等)}
+  - option_id: opt-refresh-userprofile
+    option_name: 仅刷新用户模板层(USERPROFILE)
+    option_value: USERPROFILE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00015:REFRESHTYPE, effect_type: sets_value, effect_detail: REFRESHTYPE=USERPROFILE；仅刷新 UserProfile/Rule 层。适用于未改 Filter、仅新增 RULE/USERPROFILE/RULEBINDING 的特性(在线/离线计费/计费提醒/URL核减/用户Portal/DNS纠错/HTTP重定向/视频承载/FUP/Host识别/URL过滤 等)}
+default_option: opt-refresh-all
+notes: |
+  命令级审查(2026-07-02) 新建。③跨 29 特性取值明显分叉：改 Filter 的场景③用 ALL，仅改 UP/Rule 的场景③用 USERPROFILE。ALL 为安全超集(刷新全集)，作为默认保持向后兼容(pass-1 录制 fixed:ALL)。REFRESHTYPE 由 fixed:ALL 升级为 decision_driven 由本 DP 选。命令真相 REFRESHTYPE 为 local_planned required 枚举。

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00180
+owner_task_ref: UDG@20.15.2@Task@0-00059
+rule_name: ADD GRETUNNEL 隧道记录数上限
+rule_type: capacity_rule
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: upper_bound
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD GRETUNNEL
+  expression: 该命令最大记录数为 4096 条 GRE 隧道。
+violation_effect: 超过 4096 条记录后新增 GRE 隧道失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+notes: 命令级审查(2026-07-02)。② 命令真相 notes 投影：最大记录数 4096。

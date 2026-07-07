@@ -1,0 +1,30 @@
+task_id: UDG@20.15.2@Task@0-00019
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置License开关
+task_layer: atom
+task_intent: 打开/关闭特性 License 项开关（特性激活前置；跨特性复用，每特性带各自 LICITEM）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET LICENSESWITCH
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 跨特性 56 特性复用, 参数对齐命令真相 required/local_planned/variable
+source_evidence_ids:
+  - GWFD-020351/配置动态PCC功能_74096530.md
+  - GWFD-020351/配置本地PCC功能_74096529.md
+  - GWFD-110202/激活HTTP2.0协议回落_65157762.md
+  - GWFD-110910/激活支持Routing Behind MS_74264904.md
+  - GWFD-020401/激活IPv6承载上下文_38276176.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00019:LICITEM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET LICENSESWITCH:LICITEM
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；具体 License 控制项码由特性决定（PCC=LKV3G5PCCB01）
+    requiredness: required
+    source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+  - binding_id: UDG@20.15.2@Task@0-00019:SWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET LICENSESWITCH:SWITCH
+    binding_type: variable
+    variable_source: local_planned   # 本端运维决定开关；激活场景=ENABLE，去激活=DISABLE
+    requiredness: required
+    source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+notes: "通用 License 开关命令，跨特性复用（每特性带各自 LICITEM）。PCC 特性 LICITEM=LKV3G5PCCB01、SWITCH=ENABLE（见 feature task 2-000005 与 rule 0-00012）。命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取（dependency_rule 0-00013 集中标记于 feature task）。命令级审查(2026-07-02): 0 缺口(bound 2/2 = LICITEM+SWITCH), 参数真相 2 参数均 required/local_planned, 跨特性 56 特性复用(每特性带各自 LICITEM 控制项码, SWITCH 场景值 ENABLE 或去激活 DISABLE); 跨特性分叉(feature-level decision)已在 feature task 投影(LICITEM 每特性固定取一个, 由 feature 决定), 不在本 atom 升 DP。"

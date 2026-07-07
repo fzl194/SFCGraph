@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00125
+owner_task_ref: UDG@20.15.2@Task@0-00009   # 挂 atom（ADD PROTBINDFLOWF 七层协议绑定）
+rule_name: ADD PROTBINDFLOWF 延时生效与记录数上限
+rule_type: operational_constraint
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: must_refresh_and_capacity
+  expression: |
+    1. 该命令执行后 60s 生效（固定延时）。
+    2. PROTBINDFLOWF 最大记录数 100000；超过规格 90% 上报 ALM-135602215 配置数量超阈值告警。阈值可由 MOD CFGTHRESHOLD 修改。
+    3. 单个 FlowFilter 最多配置 32 个 Protocol（PROTOCOLNAME）。
+violation_effect: 配置延时生效 / 容量超限告警 / 协议数超限
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: 命令级审查(2026-07-02)新增：投影自命令②notes 的规格/上限/延时（单FlowFilter 32 Protocol 约束）。

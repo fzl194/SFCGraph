@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00232
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPSQM整形队列深度
+task_layer: atom
+task_intent: 配置 IPSQM 整形队列深度(DEPTH，报文个数)。可选增强步骤(缺省用系统初始值)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IPSQMQDEPTH
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00232:DEPTH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPSQMQDEPTH:DEPTH
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(队列深度，报文个数，整数 1~1024)
+    requiredness: required   # 校正：命令真相为 required(本特性样例 256)
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "SET IPSQMQDEPTH(IPSQM 可选增强 atom)。DEPTH=本端规划。缺省用系统初始值，现网按需调整。任务示例脚本仅展开到本步骤。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：1/1 参数绑定完整；校正 DEPTH requiredness 为 required(命令真相，本特性样例 256 显式填)；新增 atom rule 0-00383(cardinality 1 + 队列深度公式 + 立即生效)。feature-挂 rule 0-00082(IPSQM 增强须先核心整形) 已表达 SET IPSQMQDEPTH 后置依赖。"

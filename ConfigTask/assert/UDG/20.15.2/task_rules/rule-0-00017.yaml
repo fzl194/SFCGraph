@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00017
+owner_task_ref: UDG@20.15.2@Task@2-00007
+rule_name: 7层流量统计前置与统计口径影响
+rule_type: dependency_rule
+rule_scope: feature
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@2-00001
+    - UDG@20.15.2@Task@0-00020
+  expression: 前置=已完成部署UPF(内容计费 2-00001)。ADD APN 的 APPLAYERVOLUME=ENABLE 时仅统计L7应用层流量，DISABLE 时统计L7+L3/L4；该开关影响用户计费流量统计口径，修改前需评估计费影响。
+violation_effect: 统计口径错误导致计费流量偏差
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020308/激活7层流量统计_13442390.md]

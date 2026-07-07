@@ -1,0 +1,27 @@
+task_id: UDG@20.15.2@Task@00006
+task_logical_name: 配置七层过滤器
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD L7FILTER
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:L7FILTERNAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 七层过滤器名
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:SUBL7FLTNAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 子七层过滤器名
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:URLTYPE
+        binding_type: fixed
+        fixed_value: URL
+        note: URL场景固定URL
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:URL
+        binding_type: variable
+        variable_source: decision_driven
+        note: URL内容,→过滤模式决策
+task_category: 配置
+status: active
+source_evidence_ids: []

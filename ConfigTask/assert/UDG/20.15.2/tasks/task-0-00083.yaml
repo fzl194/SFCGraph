@@ -1,0 +1,79 @@
+task_id: UDG@20.15.2@Task@0-00083
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建逻辑接口
+task_layer: atom
+task_intent: 创建用户面逻辑接口（用途维度：Paif-ePDG互通 / IPFarm心跳本端接口 / L2TP源端Giif / S11-U信令面），按 IPVERSION 配地址+VPN
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD LOGICINF
+status: inferred   # 命令级审查(2026-07-02): draft→inferred
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+  - GWFD-110281/配置用户Portal_66620114.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+  - GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md
+  - GWFD-110606/激活基于信令面的数据传输_69258754.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00083:NAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD LOGICINF:NAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 取值随用途分叉(Paif1/1/0·Paif1/0/0 / phif1/0/0 / giif1/0/1·giif1/0/0 / s11-uif1/1/0)，本端规划为主(5/6)，020253 全网规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md
+      - GWFD-110281/配置用户Portal_66620114.md
+      - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+      - GWFD-110606/激活基于信令面的数据传输_69258754.md
+  - binding_id: UDG@20.15.2@Task@0-00083:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD LOGICINF:IPVERSION
+    binding_type: decision_driven
+    variable_source: local_planned   # 来源本端规划；取值随 IP 版本分叉(IPv4/IPV6)由 DP 0-00017 决定
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00017
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-110281/配置用户Portal_66620114.md
+  - binding_id: UDG@20.15.2@Task@0-00083:IPV4ADDRESS1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD LOGICINF:IPV4ADDRESS1
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（IPVERSION=IPv4 时必填）
+    requiredness: conditional
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md
+      - GWFD-110281/配置用户Portal_66620114.md
+      - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+      - GWFD-110606/激活基于信令面的数据传输_69258754.md
+  - binding_id: UDG@20.15.2@Task@0-00083:IPV4MASK1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD LOGICINF:IPV4MASK1
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: conditional   # IPVERSION=IPv4 时必填
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md
+      - GWFD-110281/配置用户Portal_66620114.md
+      - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+      - GWFD-110606/激活基于信令面的数据传输_69258754.md
+  - binding_id: UDG@20.15.2@Task@0-00083:IPV6ADDRESS1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD LOGICINF:IPV6ADDRESS1
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: conditional   # IPVERSION=IPV6 时必填
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md]
+  - binding_id: UDG@20.15.2@Task@0-00083:IPV6PREFIXLEN1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD LOGICINF:IPV6PREFIXLEN1
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: conditional   # IPVERSION=IPV6 时必填
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md]
+  - binding_id: UDG@20.15.2@Task@0-00083:VPNINSTANCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD LOGICINF:VPNINSTANCE
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD L3VPNINST / ADD VPNINST）
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: conditional   # 用途相关: Paif(010155)→L3VPNINST(0-00071)/L2TP-Giif(020412)→VPNINST(0-00041)/IPFarm-IMS(020253)→VPN; IPFarm心跳(110281/282)·S11-U(110606) 无
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md
+      - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+      - GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md
+notes: "GWFD-010155(Paif) + GWFD-110281/110282(IPFarm心跳) + GWFD-020412(L2TP源端Giif) + GWFD-020253(IPFarm-IMS) + GWFD-110606(S11-U信令面)。P0 收敛：合并原 variant 0-00094/0-00136/0-00176。ADD LOGICINF 创建用户面逻辑接口，用途维度(各 feature 按需): Paif(Untrusted Non-3GPP 互通, 010155, IPVERSION 由 DP 0-00017 IPv4/IPV6)、IPFarm 心跳检测本端接口(110281/282, 仅 IPv4 NAME/IPV4ADDRESS1/IPV4MASK1 无 VPNINSTANCE)、IPFarm-IMS(020253, IPv4+VPN)、L2TP 源端 Giif(020412, IPv4, VPNINSTANCE→ADD VPNINST 0-00041, 须与 APN 绑定 VPN 一致)、S11-U 信令面数据传输(110606, IPv4, 无 VPNINSTANCE)。VPNINSTANCE 用途相关(Paif→0-00071 L3VPNINST / L2TP-Giif→0-00041 VPNINST / IPFarm-IMS→VPN / IPFarm·S11-U 无；binding 级单 source_ref 为 schema 限制，默认 0-00071)。NAME 本端规划取值随用途(Paif1/1/0·Paif1/0/0、phif1/0/0、giif1/0/1·giif1/0/0、s11-uif1/1/0)。命令级审查(2026-07-02): binding 准确(IPVERSION decision_driven→DP0-00017 / VPNINSTANCE conditional 用途相关)；source_evidence 扩展至6特性全量。不绑冷门: IPV4ADDRESS2/MASK2(次IPv4地址)、IPV4MTU/IPV6MTU(默认1500/1800)、SLICEATTRSW(接口切片属性)——命令真相 conditional/optional 且6特性均未用。命令真相: 记录数上限4096(98%阈值告警ALM-135602215)，VPN绑定需前置 ADD VPNINST/L3VPNINST。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

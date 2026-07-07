@@ -1,0 +1,89 @@
+task_id: UDG@20.15.2@Task@0-00023
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置重定向携带信息
+task_layer: atom
+task_intent: 配置一次重定向URL中可携带的用户原始请求URL/IMSI/IMEI/MS-IP信息（跨特性：020356 计费信息实时提醒 / 110284 HTTP智能重定向）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD REDIRAPPENDINFO
+status: inferred   # 命令级审查(2026-07-02)：跨特性 FLAG 组合分叉 → 升 decision_driven
+source_evidence_ids:
+  - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - GWFD-110284/激活HTTP智能重定向_67075035.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00023:APPENDINFONAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:APPENDINFONAME
+    binding_type: variable
+    variable_source: local_planned   # 特性 md 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+      - GWFD-110284/激活HTTP智能重定向_67075035.md
+  - binding_id: UDG@20.15.2@Task@0-00023:REQURLFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:REQURLFLAG
+    binding_type: decision_driven   # 跨特性分叉：020356/110284 均 ENABLE，DP 0-00110 编排
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00110
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+      - GWFD-110284/激活HTTP智能重定向_67075035.md
+  - binding_id: UDG@20.15.2@Task@0-00023:MSISDNFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:MSISDNFLAG
+    binding_type: decision_driven   # 跨特性分叉：020356 DISABLE / 110284 不配(默认 DISABLE)
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00110
+    requiredness: optional
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - binding_id: UDG@20.15.2@Task@0-00023:IMSIFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:IMSIFLAG
+    binding_type: decision_driven   # 跨特性分叉：020356 ENABLE+IMSIENCRYALGORI / 110284 ENABLE 无加密
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00110
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+      - GWFD-110284/激活HTTP智能重定向_67075035.md
+  - binding_id: UDG@20.15.2@Task@0-00023:IMEIFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:IMEIFLAG
+    binding_type: decision_driven   # 跨特性分叉：020356 ENABLE / 110284 不配
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00110
+    requiredness: optional
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - binding_id: UDG@20.15.2@Task@0-00023:MSIPFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:MSIPFLAG
+    binding_type: decision_driven   # 跨特性分叉：020356 ENABLE / 110284 不配
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00110
+    requiredness: optional
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - binding_id: UDG@20.15.2@Task@0-00023:IMSIENCRYALGORI
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:IMSIENCRYALGORI
+    binding_type: decision_driven   # 跨特性分叉：020356=AES256 / 110284 不配
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00110
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - binding_id: UDG@20.15.2@Task@0-00023:TIMEFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD REDIRAPPENDINFO:TIMEFLAG
+    binding_type: decision_driven   # 跨特性分叉：020356 不配 / 110284 不配 → 统一 absent
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00110
+    requiredness: optional
+    source_evidence_ids:
+      - GWFD-020356/激活计费信息实时提醒_64110489.md
+notes: |
+  命令级审查(2026-07-02) 演进。
+  跨特性 020356 计费信息实时提醒（5 个 FLAG+IMSIENCRYALGORI 配套）vs 110284 HTTP智能重定向（仅 REQURL+IMSI）→ 升 DP 0-00110 编排字段组合。
+  原 pass-1 录制 6 个 binding 中 REQURLFLAG/IMSIFLAG 固定 required+ENABLE、MSISDNFLAG fixed DISABLE、IMEIFLAG/MSIPFLAG fixed ENABLE——硬编码 020356 路径，无法表达 110284 精简场景。按 SKILL §4.5 升级为 decision_driven。
+  缺参数清单（§4.3 ③ 缺口标注）：REQURLNAME/MSISDNNAME/MSISDNENCRYALGORI/MSISDNSECRETKEY(+CONFIRM)/IMSINAME/IMSISECRETKEY(+CONFIRM)/IMEINAME/IMEIENCRYALGORI/IMEISECRETKEY(+CONFIRM)/MSIPNAME/MSIPENCRYALGORI/MSIPSECRETKEY(+CONFIRM)/TIMENAME/TIMETYPE/TIMEENCRYALGORI/TIMESECRETKEY(+CONFIRM)/CFGDOMAINNAME 18 个冷门参数不绑（主场景取字段默认名 dest_url/msisdn/imsi/imei/msip/u，020356 IMSISECRETKEY 未传列入待核）。
+  020356 任务示例 IMSIENCRYALGORI=AES256 与命令真相默认 AES256_GCM 不一致——按实操值采纳，列入 mml_commands 枚举待核（命令真相枚举可能含 AES256）。
+  配套 rule 0-00295 投影：最大记录数 1000 + 立即生效 + 字段默认名 + 加密配套必填 + 跨特性 FLAG 组合 + 引用 SET GYONESHOT(0-00024)。
+  DP 0-00110 编排 FLAG+IMSIENCRYALGORI；IMEI/MSIP/MSISDN/TIME 的 ENCRYALGORI/SECRETKEY/SECRETKEYCONFIRM 全 absent（两特性均不走这几项加密）。
+  APPENDINFONAME 产出对象被 SET GYONESHOT(0-00024) 引用(reference)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

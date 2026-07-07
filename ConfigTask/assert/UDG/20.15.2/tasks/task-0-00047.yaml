@@ -1,0 +1,44 @@
+task_id: UDG@20.15.2@Task@0-00047
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置地址池组与APN映射关系
+task_layer: atom
+task_intent: 建立地址池组(POOLGROUPNAME)与APN的映射(MAPPINGNAME)，完成APN→地址池组的外部地址分配链路
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD POOLGRPMAP
+status: inferred   # 命令级审查(2026-07-02)：补 rule 0-00144；gap 参数(LOCATIONGRP*/SMF/MCC/MNC)冷门未用到不绑
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - GWFD-020482/激活入不转板功能_28210142.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00047:MAPPINGNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLGRPMAP:MAPPINGNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # APN：命令真相 optional（映射可基于 TAC/LAC-Group/APN/SMF 之一），但 UDG 地址分配场景始终基于 APN 映射，5 特性均显式配 APN
+  - binding_id: UDG@20.15.2@Task@0-00047:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLGRPMAP:APN
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 本端规划(可 LST APN 查询)
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required   # UDG 地址分配场景必填（命令真相 optional，因映射规则类型可选 APN/TAC-Group/LAC-Group/SMF）
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-010107/激活静态地址用户路由冗余_19612403.md, GWFD-020403/激活IPv4v6双栈接入_38276180.md, GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md, GWFD-020482/激活入不转板功能_28210142.md]
+  - binding_id: UDG@20.15.2@Task@0-00047:POOLGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLGRPMAP:POOLGROUPNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(LST POOLBINDGROUP)
+    source_ref: UDG@20.15.2@Task@0-00042:POOLGRPNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+rules: [UDG@20.15.2@TaskRule@0-00144]
+notes: |
+  GWFD-010104 外部地址分配链路收口步骤。双引用: APN←ADD APN(0-00020), POOLGROUPNAME←ADD POOLGROUP(0-00042)。
+  命令级审查(2026-07-02)：
+  - 补 cardinality_rule 0-00144（投影命令 notes：最大记录数 40000 + 前置必须先 ADD POOLGROUP/ADD APN(按组网可选 ADD TACGROUP/LACGROUP/ADD CPNODEID) + 只对新激活用户生效）。
+  - 缺口参数 LOCATIONGRPTYPE/LOCATIONGRPNAME/SMF/MCC/MNC 命令真相 optional/conditional，但 5 特性数据规划表与脚本均未用到（冷门），按"只绑通用配置"门槛不绑。
+  - source_evidence_ids 扩展至全部 5 个使用该命令的特性。

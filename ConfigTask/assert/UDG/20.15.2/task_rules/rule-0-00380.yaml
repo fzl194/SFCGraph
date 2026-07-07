@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00380
+owner_task_ref: UDG@20.15.2@Task@0-00029   # 挂 atom ADD SERVICEPROP
+rule_name: ADD SERVICEPROP 上限 1000 + 立即生效 + 三元唯一(SRVPROPNAME/SERVICEID/PRIORITY)
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00029
+  expression: |
+    ADD SERVICEPROP 命令最大记录数为 1000。
+    立即生效：本命令执行后立即生效。
+    三元唯一性约束：系统配置的所有业务中业务属性名称(SRVPROPNAME)之间不能重复，业务标识(SERVICEID)之间不能重复，优先级(PRIORITY)之间不能重复。
+    取值范围：SRVPROPNAME 1~63（不区分大小写，不支持空格）；SERVICEID/PRIORITY 整数 1~4294967295（PRIORITY 数值越小优先级越高）。
+    适用 NF：PGW-U、UPF。
+    协同约束：SRVPROPNAME 产出对象被 ADD SRVPBINDPCCPG(0-00030) 的 SRVPROPNAME 引用——必须先建业务属性才能在策略组业务属性绑定中引用。
+violation_effect: 超 1000 上限新增失败；SRVPROPNAME/SERVICEID/PRIORITY 任一重复导致冲突；非立即生效导致 PCC 业务属性未生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务控制策略/业务控制公共配置/业务属性/增加业务属性（ADD SERVICEPROP）_82837590.md
+  - GWFD-020352/激活IPv6 SA_80136513.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(1000 上限 + 立即生效 + 三元唯一性约束) + ③SRVPBINDPCCPG 前置依赖。CFGDOMAINNAME 冷门不绑。"

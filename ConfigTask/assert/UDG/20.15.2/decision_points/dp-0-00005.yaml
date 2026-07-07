@@ -1,0 +1,22 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00005
+owner_task_ref: UDG@20.15.2@Task@0-00010   # 挂 atom ADD RULE（参数级：RULENAME 取值来源分叉）
+decision_name: 规则名称来源
+decision_question: RULE.RULENAME 的取值来源随业务场景分叉——计费规则本端自洽规划，PCC规则须与SMF/PCF协商一致。该规则用于哪种场景？
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+options:
+  - option_id: opt-rule-local
+    option_name: 计费规则(本端规划)
+    option_value: local_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00010:RULENAME, effect_type: sets_value_pattern, effect_detail: variable_source=local_planned；规则名与计费策略组自洽，本端规划}
+  - option_id: opt-rule-peer
+    option_name: PCC规则(与对端协商)
+    option_value: peer_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00010:RULENAME, effect_type: sets_value_pattern, effect_detail: variable_source=peer_planned；预定义规则 RULENAME 须与 SMF/PCF 一致(动态PCC)或由 SMF 下发激活(本地PCC)}
+default_option: opt-rule-local
+notes: pass-3 演进(GWFD-020351 反推)。跨特性分叉：GWFD-020301 计费=本端规划 / GWFD-020351 PCC=与对端协商，故 RULENAME variable_source 由 local_planned 升级为 decision_driven。同 URRNAME(pass-2) 同款演进。默认本端规划保持计费特性原行为(向后兼容)。待人工确认计费场景是否确为本端。

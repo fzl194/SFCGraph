@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00406
+owner_task_ref: UDG@20.15.2@Task@0-00229   # 挂 atom SET TCPKEEPALIVECFG
+rule_name: SET TCPKEEPALIVECFG 系统初始记录与生效时机
+rule_type: consistency_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_match
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET TCPKEEPALIVECFG
+  expression: "系统部署完成后已存在初始记录：KEEPALIVETIME=90(取值30~7200秒)、INTERVAL=30(取值10~300秒)、RETRY=9(取值3~20次)。命令执行后在 TCP 链路重建时生效(非立即生效)。三参均 optional，未输入时保持系统当前配置不变(可通过 LST TCPKEEPALIVECFG 查询)。"
+violation_effect: 取值超范围新增失败；改动需 TCP 链路重建才生效
+severity: info
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes 初始记录表(90/30/9)+'TCP链路重建时生效'+各参取值范围。Full 模式独有(Light 无 TCP 控制连接)。"

@@ -1,0 +1,28 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00051
+owner_task_ref: UDG@20.15.2@Task@0-00018   # 挂 atom SET URRFAILACTION
+decision_name: 重发失败后的动作取值
+decision_question: RETRYFAILACT 取哪个值（决定 HOLDINGTIME 是否必选及业务放通/阻塞行为）？
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]
+options:
+  - option_id: opt-continue
+    option_name: 放通不计费
+    option_value: CONTINUE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:HOLDINGTIME, effect_type: sets_requiredness, effect_detail: "required（保持时长必配）"}
+      - {target_type: behavior, target_ref: UDG@20.15.2@Task@0-00018, effect_type: note, effect_detail: "URR 对应业务将不计费（放通），用量上报恢复后恢复计费"}
+  - option_id: opt-block
+    option_name: 阻塞
+    option_value: BLOCK
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:HOLDINGTIME, effect_type: sets_requiredness, effect_detail: "required（保持时长必配）"}
+      - {target_type: behavior, target_ref: UDG@20.15.2@Task@0-00018, effect_type: note, effect_detail: "业务被阻塞"}
+  - option_id: opt-terminate
+    option_name: 终止
+    option_value: TERMINATE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:HOLDINGTIME, effect_type: excludes, effect_detail: "不配（终止无需保持时长）"}
+notes: "命令级审查(2026-07-02): 投影自命令 conditional_required——HOLDINGTIME 前提 RETRYFAILACT=BLOCK 或 CONTINUE。atom binding 现标 conditional，本 DP 表达 BLOCK/CONTINUE 时升为 required、TERMINATE 时排除。"

@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@0-00032
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置分类属性
+task_layer: atom
+task_intent: 配置分类属性(ADD CATEGORYPROP)，定义基于业务分类(如URL)的属性对象，供 BWMSERVICE 引用
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD CATEGORYPROP
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred；命令不在 by_command 复用索引；CommandParameter 结构化对象待 CommandGraph 抽取(§6-B)
+source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00032:CATEPROPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CATEGORYPROP:CATEPROPNAME
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划
+    requiredness: required
+    source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md]
+notes: |
+  GWFD-020354 基于业务的Shaping(URL整形)专属。命令 ADD CATEGORYPROP 未在 by_command 复用索引(§6-B)。
+  仅 CATEPROPNAME 一个参数出现在 URL 整形场景数据规划表；其余参数待其他特性揭示时增量补全。
+  命令级审查(2026-07-02) 补审：缺口 1(CFGDOMAINNAME)为命令真相 optional 且仅 1 特性(GWFD-020354)未用到，按"通用配置"门槛不绑(配置域名称为冷门)。补 atom rule 0-00401(cardinality 500)。CATEPROPNAME variable_source=global_planned 与命令真相+数据规划表(全网规划)一致。

@@ -1,0 +1,25 @@
+rule_id: UNC@20.15.2@TaskRule@0-00029
+owner_task_ref: UNC@20.15.2@Task@0-00027
+rule_name: ADD DIAMCONNGRP 最多 1000 条 + 本端/对端主机前置存在 + 应用一致 + 主机名不重复
+rule_type: dependency_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: require_prerequisite
+  target_refs:
+    - UNC@20.15.2@MMLCommand@ADD DIAMLOCINFO
+    - UNC@20.15.2@MMLCommand@ADD PCRF
+    - UNC@20.15.2@MMLCommand@ADD OCS
+    - UNC@20.15.2@MMLCommand@ADD DRA
+  expression: >-
+    记录数 ≤ 1000；命令执行后立即生效。
+    LOCALHOSTNAME 必须已配置 Local Info（ADD DIAMLOCINFO）。
+    PEERHOSTNAME 必须已配置与 APPLICATION 一致类型的服务器（GX→ADD PCRF / GY→ADD OCS / S6b→ADD DIAMETERAAA / over DRA→ADD DRA）。
+    APPLICATION 与对端主机应用类型必须一致；PEERHOSTNAME 与 LOCALHOSTNAME 不得重复。
+  # SELECTMODE 枚举 SESSION_ID(默认)/ROUND_ROBIN/MASTER_SLAVE
+violation_effect: 主机不存在/应用不一致/主机名重复/超规格均无法新增
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加Diameter链路组（ADD DIAMCONNGRP）_09897261.md]

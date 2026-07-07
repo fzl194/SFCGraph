@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00134
+owner_task_ref: UDG@20.15.2@Task@0-00015   # 挂 atom SET REFRESHSRV
+rule_name: REFRESHSRV 必须收尾最后执行(高危)
+rule_type: sequencing_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: must_be_last
+  target_refs:
+    - UDG@20.15.2@Task@0-00015
+  expression: |
+    SET REFRESHSRV 属高危命令，用于将新配置/修改的 Filter、FilterGroup、Acl、AclNode 置为生效。新增加或修改 Filter 配置后，只有执行本命令后配置才生效。
+    时序约束：必须在所有 Filter/FilterGroup/Acl/AclNode 及关联 RULE/USERPROFILE/RULEBINDING 配置完成后，作为收尾最后一步执行；多次配置可分批刷新。
+    行为：命令执行后立即生效；REFRESHTYPE 决定刷新范围(DP 0-00060：ALL=全集，USERPROFILE=仅 UP/Rule 层)。
+violation_effect: 不执行则 Filter 等配置变更不生效；时序错乱(先刷新后改配置)导致配置未生效或部分生效
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务匹配策略/业务过滤器管理/流过滤器管理/业务刷新/业务刷新（SET REFRESHSRV）_82837355.md, GWFD-020301/部署UPF_28493406.md]
+notes: 命令级审查(2026-07-02) 投影自命令②notes(高危、立即生效、必须刷新才生效) + atom 原 notes(must_be_last)。

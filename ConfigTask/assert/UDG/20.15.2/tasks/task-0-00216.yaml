@@ -1,0 +1,37 @@
+task_id: UDG@20.15.2@Task@0-00216
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建VNRS侧IPsec隧道接口并应用安全策略(VNRS+IPSEC双配)
+task_layer: atom
+task_intent: 在VNRS微服务侧创建IPsec隧道接口(ADD IPSECINTFCFG配隧道协议=IPSEC)，并在IPsec微服务侧的IPsec隧道接口上应用IPsec安全策略(ADD IPSECINTFCFGIPSEC)。VNRS+IPSEC 双配的最后生效点
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPSECINTFCFG
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 3/3 已绑, 2 个 reference 命中(0-00056:IFNAME/0-00215:POLICYNAME)
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00216:INTERFACENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECINTFCFG:INTERFACENAME
+    binding_type: reference
+    variable_source: reference   # 引用 VNRS 侧隧道接口名(如 Tunnel10)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00216:TNLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECINTFCFG:TNLTYPE
+    binding_type: fixed
+    value: IPSEC
+    variable_source: local_planned   # IPsec隧道固定 IPSEC
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00216:POLICYNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECINTFCFGIPSEC:POLICYNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD IPSECPOLICY:POLICYNAME (0-00215)
+    source_ref: UDG@20.15.2@Task@0-00215:POLICYNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+notes: "聚合 atom: ADD IPSECINTFCFG(VNRS侧: 建IPsec隧道接口配隧道协议=IPSEC) + ADD IPSECINTFCFGIPSEC(IPSEC侧: 应用安全策略)。VNRS+IPSEC 双配原则的最终生效点。CommandParameter 待抽取。命令级审查(2026-07-02): 0 缺口(bound 3/3=INTERFACENAME+TNLTYPE+POLICYNAME); 2 个 reference 命中 0-00056:IFNAME/0-00215:POLICYNAME 正确; TNLTYPE=IPSEC 固定(IPsec隧道协议类型); 最大记录数1024。"

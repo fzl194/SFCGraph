@@ -1,0 +1,40 @@
+task_id: UDG@20.15.2@Task@0-00142
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置跨VPN上行静态路由(路由交叉)
+task_layer: atom
+task_intent: 配置跨 VPN 转发上行报文的静态路由（ADD AUTOSCALINGSRROUTE），在 VRF_networkA 中配置到网络 B 服务器 IP 的静态路由（下一跳指向网络 B 网关），实现 UE 访问网络 B 定制服务器
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD AUTOSCALINGSRROUTE
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00142:SERVICENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:SERVICENAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD AUTOSCALINGSERVICE.SERVICENAME)
+    source_ref: UDG@20.15.2@Task@0-00141:SERVICENAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+  - binding_id: UDG@20.15.2@Task@0-00142:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 整网规划(引用 ADD L3VPNINST.VRFNAME, VRF_networkA 源 VRF)
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+  - {binding_id: UDG@20.15.2@Task@0-00142:IPVERSION, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:IPVERSION, binding_type: variable, variable_source: local_planned, requiredness: required, value: IPv4, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}   # 命令级审查(2026-07-02): value ipv4→IPv4, 与 0-00143/0-00144 及 md 脚本 IPv4 对齐
+  - {binding_id: UDG@20.15.2@Task@0-00142:PREFIX4, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:PREFIX4, binding_type: variable, variable_source: peer_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00142:MASKLENGTH, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:MASKLENGTH, binding_type: variable, variable_source: peer_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00142:NEXTHOPALLOCTYPE4, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:NEXTHOPALLOCTYPE4, binding_type: variable, variable_source: local_planned, requiredness: required, value: CONFIG, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00142:NEXTHOP4, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:NEXTHOP4, binding_type: variable, variable_source: peer_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00142:BFDENABLE, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:BFDENABLE, binding_type: variable, variable_source: local_planned, requiredness: required, value: ENABLE, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}   # 命令级审查(2026-07-02): value TRUE→ENABLE, 对齐③数据规划表实际取值(命令枚举 ENABLE/DISABLE, 默认 FALSE)
+  - binding_id: UDG@20.15.2@Task@0-00142:BFDTEMPLATENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSRROUTE:BFDTEMPLATENAME
+    binding_type: reference
+    variable_source: reference   # 单臂 BFD 探测时引用 ADD AUTOSCALINGBFD.TEMPLATENAME; 双向 BFD 不填
+    source_ref: UDG@20.15.2@Task@0-00143:TEMPLATENAME
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00024
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+notes: "GWFD-020423 跨 VPN 上行路由核心。SERVICENAME 引用 AUTOSCALINGSERVICE(0-00141)；VRFNAME=VRF_networkA(源 VRF, 引用 0-00071)；PREFIX4/MASKLENGTH/NEXTHOP4=从对端获取(服务器 IP 与网关 IP, 变更须与 UPF 协商)。BFDTEMPLATENAME 仅单臂 echo BFD 探测时填(引用 0-00143), 由 DP 0-00024(BFD 类型)决定 requiredness。命令级审查(2026-07-02): 校正 IPVERSION ipv4→IPv4(跨 atom 一致)、BFDENABLE TRUE→ENABLE(对齐③数据规划表, 命令枚举 ENABLE/DISABLE)；6 缺口(PREFIX6/NEXTHOPALLOCTYPE6/NEXTHOP6 IPv6 变体 + PREFERENCE/TAG/DESCRIPTION 冷门 optional)均不绑；规格+前置 SERVICENAME 依赖 AUTOSCALINGSERVICE+动态 BFD 前置依赖 AUTOSCALINGSRBFD+掩码范围+立即生效投影 rule 0-00231。"

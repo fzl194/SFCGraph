@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@0-00027
+nf: UDG
+version: "20.15.2"
+task_logical_name: 加载协议特征库
+task_layer: atom
+task_intent: 加载协议特征库(SIGNATUREDB)用于七层协议识别(IM类业务/IPv6 SA 等基于协议识别的过滤场景)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@LOD SIGNATUREDB
+status: inferred   # 命令级审查(2026-07-02) - 跨 6 特性，LOADMODE 实际取值 LATEST(3 特性) / SPECIFIC(2 特性)，fixed:LATEST 失真→改 variable
+source_evidence_ids: [GWFD-020359/激活IM类业务无线资源管控_39436118.md, GWFD-020352/激活IPv6 SA_80136513.md, GWFD-110281/配置用户Portal_66620114.md, GWFD-110203/配置HTTPS业务地址识别_24082599.md, GWFD-110283/激活DNS纠错_67964199.md, GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00027:LOADMODE, parameter_ref: UDG@20.15.2@CommandParameter@LOD SIGNATUREDB:LOADMODE, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020359/激活IM类业务无线资源管控_39436118.md, GWFD-020352/激活IPv6 SA_80136513.md, GWFD-110281/配置用户Portal_66620114.md, GWFD-110203/配置HTTPS业务地址识别_24082599.md, GWFD-110283/激活DNS纠错_67964199.md, GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00027:VERSION, parameter_ref: UDG@20.15.2@CommandParameter@LOD SIGNATUREDB:VERSION, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md, GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]}
+notes: |
+  命令级审查(2026-07-02)：跨 6 特性共享 atom——IM类业务(GWFD-020359)、IPv6 SA(GWFD-020352)、用户Portal(GWFD-110281)、HTTPS业务地址识别(GWFD-110203)、DNS纠错(GWFD-110283)、HTTPS业务行为识别(GWFD-110404)均依赖特征库识别七层协议(qq_im / http / DNS)。
+  LOADMODE 跨特性取值分叉：3 特性(020359/110352/110281/110203)取 LATEST；2 特性(110283/110404)取 SPECIFIC + VERSION——按 SKILL §4.5 跨特性取值分叉但本端规划来源一致（不强制 decision_driven），故 LOADMODE 改 variable:local_planned（取消 fixed:LATEST 误导）。
+  VERSION 仅 LOADMODE=SPECIFIC 时必选(条件必选)，5 特性未用 LATEST 故 conditional；2 特性(110283/110404)配套 SPECIFIC 必填版本号；source=本端规划。
+  特征库文件加载约5分钟，加载后需 DSP SIGNATUREDB 验证(查询命令不建 atom)。
+  与 LOD PARSERDB(0-00152 解析库) 配套使用(IM 场景)；IPv6 SA 仅需 SIGNATUREDB。
+  rule 投影：见 UDG@20.15.2@TaskRule@0-00305 (LOADMODE/VERSION 配套 + 跨特性取值 + 上传+升级约束)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

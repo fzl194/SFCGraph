@@ -1,0 +1,24 @@
+task_id: UDG@20.15.2@Task@0-00197
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加ACL规则组(VNRS)
+task_layer: atom
+task_intent: 增加VNRS微服务的ACL4规则组(IPFD-012002 ACL / IPFD-012001 QoS复杂流分类 共享)。ACL规则组用于组织基本/高级/以太/接口ACL规则
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ACLGROUP
+status: inferred   # 命令级审查(2026-07-02): binding 准确(ACLNAME+ACLTYPE),规格上限→rule 0-00076;IPFD命令CommandParameter 缺(rule 0-00076 标记)
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md, IPFD-012002/激活支持ACL_06381760.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00197:ACLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLGROUP:ACLNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md, IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00197:ACLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLGROUP:ACLTYPE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；ACLNAME为数字字符串时可省略
+    requiredness: optional
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+notes: "ADD ACLGROUP 为 ACL4/QoS复杂流分类 共享基础对象创建命令。ACLNAME 范围段约定: 基本2000-2999/高级3000-3999/以太4000-4999/接口1000-1999。命令级审查(2026-07-02): ACLSTEP(规则组步长,默认5)/ACLMATCHORDER(规则匹配顺序,默认Config)/ACLDESCRIPTION(规则组描述)③ 未使用→不绑(冷门参数)。执行后立即生效+最大记录数65535+单组最多16384条规则→rule 0-00076 投影。CommandParameter 结构化对象待 CommandGraph 抽取(IPFD批次)。"

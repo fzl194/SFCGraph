@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00389
+owner_task_ref: UDG@20.15.2@Task@0-00255   # 挂 atom ADD CFPROFBINDCFT
+rule_name: ADD CFPROFBINDCFT 规格 1000 + 单模板≤10策略 + 仅新承载生效 + CFTEMPLATE/CFPROFILE 前置依赖
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD CFPROFBINDCFT
+  expression: |
+    ADD CFPROFBINDCFT 命令最大记录数为 1000（命令 notes 强约束），超出被拒。
+    每个模板最大可以绑定 10 个策略（命令 notes 模板容量）。
+    该命令执行后只对之后发生承载更新的用户或者新激活用户生效（命令 notes 明示）。
+    CFTEMPLATENAME 引用 ADD CFTEMPLATE(0-00253)（已由 binding source_ref 表达），CFPROFILENAME 引用 ADD CFPROFILE(0-00252)（已由 binding source_ref 表达）。
+    缺 CFGDOMAINNAME 为 optional（命令真相配置域）冷门不绑。
+violation_effect: 上限超限→ADD 失败；单模板超 10 策略→绑定失败；存量用户不感知（仅新承载）
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1000 + 单模板≤10策略 + 仅新承载生效 + CFTEMPLATE/CFPROFILE 前置依赖。前置依赖已由 binding source_ref（0-00253/0-00252）表达。"

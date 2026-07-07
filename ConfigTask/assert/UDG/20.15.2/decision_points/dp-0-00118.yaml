@@ -1,0 +1,41 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00118
+owner_task_ref: UDG@20.15.2@Task@0-00253   # 挂 atom ADD CFTEMPLATE
+decision_name: CFTEMPLATE 缺省动作分叉（PASS/BLOCK/REDIRECT）
+decision_question: |
+  ADD CFTEMPLATE 的 ACTION 取哪个分支？三路互斥（命令真相枚举 PASS/BLOCK/REDIRECT, 默认 PASS）：
+  - PASS：报文转发（缺省动作），DEFREDNAME 不配。
+  - BLOCK：报文丢弃，DEFREDNAME 不配。
+  - REDIRECT：报文重定向，DEFREDNAME 必选（指向 ADD REDIRECT, atom 待建）。
+  命令真相 ACTION optional 默认 PASS；DEFREDNAME conditional（ACTION=REDIRECT 时必选）。
+  主特性 GWFD-110471 数据规划表样例 ACTION=BLOCK。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110471/配置URL过滤_47348205.md
+options:
+  - option_id: opt-cftemplate-action-pass
+    option_name: 缺省动作 PASS
+    option_value: PASS
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00253:ACTION, effect_type: sets_value, effect_detail: value=PASS（缺省默认, 不显式传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00253:DEFREDNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-cftemplate-action-block
+    option_name: 缺省动作 BLOCK
+    option_value: BLOCK
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00253:ACTION, effect_type: sets_value, effect_detail: value=BLOCK（显式传, 数据规划表样例）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00253:DEFREDNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-cftemplate-action-redirect
+    option_name: 缺省动作 REDIRECT
+    option_value: REDIRECT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00253:ACTION, effect_type: sets_value, effect_detail: value=REDIRECT（显式传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00253:DEFREDNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传缺省重定向名称（指向 ADD REDIRECT, atom 待建）}
+default_option: opt-cftemplate-action-pass
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00118~0-00121）。管理 ADD CFTEMPLATE 的 ACTION 3 路分叉编排 + DEFREDNAME 配套必选/必不传。
+  依据：命令真相 ACTION 枚举 PASS/BLOCK/REDIRECT；DEFREDNAME conditional（ACTION=REDIRECT 时必选, 配 REDIRECT 由 ADD REDIRECT 提前定义）。
+  原 pass-1 录制：ACTION 标 required（违反命令真相 optional 默认 PASS）→ 已改 requiredness=optional；DEFREDNAME 缺口（5 缺口之一）→ 已补 conditional+decision_ref。
+  注：本 atom 仅 1 特性使用（GWFD-110471）不存在跨特性分叉；决策按主特性默认 PASS 路径，BLOCK 为主特性样例，REDIRECT 需先建 ADD REDIRECT atom。

@@ -1,0 +1,21 @@
+rule_id: UNC@20.15.2@TaskRule@0-00001
+owner_task_ref: UNC@20.15.2@Task@0-00001   # 挂 ADD URR atom
+rule_name: UNC CommandParameter 结构化对象待 CommandGraph 抽取
+rule_type: dependency_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UNC@20.15.2@MMLCommand@ADD URR
+  expression: >-
+    UNC CommandGraph 目前只有 mml_commands/config_objects/command_object_edges 三个 jsonl，
+    缺 command_parameters.jsonl/parameter_references/parameter_conditional_required。
+    本 atom 的 parameter_bindings 从 mml_commands.jsonl 的 parameter_description 文本表解析（§6.B）。
+    parameter_ref 写预期 ID UNC@20.15.2@CommandParameter@ADD URR:<PARAM>；待 CommandGraph 抽取 UNC 参数层后回填校验。
+violation_effect: 配置生成时无法做参数级语法/互斥校验（不阻塞，仅降级）
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [配置URR（ADD URR）_09897158.md]

@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00337
+owner_task_ref: UDG@20.15.2@Task@0-00213   # ADD IKEPROPOSAL (atom-挂 rule)
+rule_name: ADD IKEPROPOSAL 立即生效+不安全算法提示+PSK前置IKEPEER PRESHAREDKEY+IKEv2默认
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00213:AUTHMETHOD
+    - UDG@20.15.2@Task@0-00213:DHGROUP
+  expression: "该命令执行后立即生效；该命令中的一些配置可能是不安全的；提议号80~91的IKE提议可以通过软参配置不安全算法MD5/DES/3DES；PROPOSALNUMBER取值范围1~4294967295(101不支持配置但可查询)；AUTHMETHOD 缺省Pre_share(PSK)，需经ADD IKEPEER(0-00214)配PRESHAREDKEY否则SA协商失败；DHGROUP不能为None，建议Dh_group19；设备同时开IKEv1+IKEv2，缺省IKEv2，对端不支持则禁用IKEv2走IKEv1；SIGHASHALGNEGSW/SIGNPADDING/ASYMENCRALG仅RSA场景必填，PSK场景不绑(已在atom留conditional由feature投影)。"
+violation_effect: AUTHMETHOD=PSK时未配IKEPEER PRESHAREDKEY导致SA协商失败；不安全算法配置被系统告警
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(立即生效+不安全算法提示+PSK前置+IKEv2默认)
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md

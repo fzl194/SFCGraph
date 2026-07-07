@@ -1,0 +1,89 @@
+task_id: UDG@20.15.2@Task@0-00037
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置带宽管理规则
+task_layer: atom
+task_intent: 配置带宽管理规则(ADD BWMRULE)，关联用户组+业务+整形控制器，定义上下行整形动作
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD BWMRULE
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00037:USERGROUPTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:USERGROUPTYPE
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表 2 特性均本端规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00037:USERGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:USERGROUPNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表 2 特性均引用 ADD BWMUSERGROUP(0-00033) 配置的 USERGROUPNAME
+    requiredness: required
+    source_ref: UDG@20.15.2@Task@0-00033:USERGROUPNAME
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00037:BWMRULETYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:BWMRULETYPE
+    binding_type: decision_driven   # 跨特性分叉：SUBSCRIBER_SPECIFIC(020354) vs GROUP_SPECIFIC(110301)
+    variable_source: local_planned
+    requiredness: required
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00101
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00037:BWMRULENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:BWMRULENAME
+    binding_type: decision_driven   # GROUP_SPECIFIC/SUBSCRIBER_SPECIFIC 时必选；其他类型不传
+    variable_source: local_planned
+    requiredness: conditional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00101
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00037:BWMSERVICENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:BWMSERVICENAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表 2 特性均引用 ADD BWMSERVICE(0-00034) 配置的 BWMSERVICENAME
+    requiredness: conditional
+    source_ref: UDG@20.15.2@Task@0-00034:BWMSERVICENAME
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00037:UPBWMCTRLNAME1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:UPBWMCTRLNAME1
+    binding_type: reference
+    variable_source: reference   # 数据规划表 2 特性均引用 ADD BWMCONTROLLER(0-00036) 配置的 BWMCNAME
+    requiredness: conditional
+    source_ref: UDG@20.15.2@Task@0-00036:BWMCNAME
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00037:DNBWMCTRLNAME1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:DNBWMCTRLNAME1
+    binding_type: reference
+    variable_source: reference   # 数据规划表 2 特性均引用 ADD BWMCONTROLLER(0-00036) 配置的 BWMCNAME
+    requiredness: conditional
+    source_ref: UDG@20.15.2@Task@0-00036:BWMCNAME
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - binding_id: UDG@20.15.2@Task@0-00037:BWMRULEPRI
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BWMRULE:BWMRULEPRI
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表 2 特性均本端规划
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+      - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: |
+  GWFD-020354 基于业务的Shaping + GWFD-110301 基于终端系统的码率差异化控制 共享。命令 ADD BWMRULE 未在 by_command 复用索引(§6-B)。
+  BWMRULETYPE 跨特性分叉：SUBSCRIBER_SPECIFIC(020354 用户级规则) vs GROUP_SPECIFIC(110301 用户组级规则) → DP 0-00101 编排（互斥二选一 + BWMRULENAME 配套必选）。
+  命令级审查(2026-07-02) 演进：status draft→inferred；BWMRULETYPE 由 variable 升级 decision_driven；BWMRULENAME 由 conditional 升级 decision_driven（命令真相 conditional 保留为 DP 影响）；source_evidence 扩展至 2 特性。
+  BWMRULEPRI 同一用户级/用户组级下规则优先级不能相同（uniqueness_rule 0-00254 投影）。
+  不绑冷门（命令真相 conditional/optional 且 2 特性均未用）：RATTYPE/ROAMINGTYPE（接入制式/漫游场景）+ TIMERANGENAME1-4 + UPBWMCTRLNAME2-4/DNBWMCTRLNAME2-4（多时段多控制器，本特性单时段单控制器）+ SERVICELEVEL（业务级别，本特性未启用）+ CFGDOMAINNAME（配置域）。

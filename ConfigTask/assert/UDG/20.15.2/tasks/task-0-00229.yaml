@@ -1,0 +1,33 @@
+task_id: UDG@20.15.2@Task@0-00229
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置TCP保活参数(Full模式)
+task_layer: atom
+task_intent: 配置 TWAMP-Control 连接的 TCP 保活参数(KEEPALIVETIME/INTERVAL/RETRY)，保障 Full 模式下 TCP 控制连接可用性。Full 模式独有
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET TCPKEEPALIVECFG
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred
+source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00229:KEEPALIVETIME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET TCPKEEPALIVECFG:KEEPALIVETIME
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(保活时间秒)；命令真相 optional(系统已有初始记录 90)
+    requiredness: optional
+    value: 90
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+  - binding_id: UDG@20.15.2@Task@0-00229:INTERVAL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET TCPKEEPALIVECFG:INTERVAL
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(保活间隔秒)；命令真相 optional(系统已有初始记录 30)
+    requiredness: optional
+    value: 30
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+  - binding_id: UDG@20.15.2@Task@0-00229:RETRY
+    parameter_ref: UDG@20.15.2@CommandParameter@SET TCPKEEPALIVECFG:RETRY
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(保活重试次数)；命令真相 optional(系统已有初始记录 9)
+    requiredness: optional
+    value: 9
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+notes: "SET TCPKEEPALIVECFG(Full 模式独有)。Full 走 TCP TWAMP-Control 连接故需 TCP 保活；Light 无 TCP 控制连接，不配。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02) 补审：参数完整(3/3)；requiredness 由 required 校准为 optional(命令真相三参均 optional，系统部署后已有初始记录 90/30/9，未输入则保持当前配置)——特性脚本显式传 90/30/9=初始记录值，故 value 补初始值。补 atom rule 0-00406(初始记录 90/30/9 + TCP 链路重建时生效 + 取值范围)。"

@@ -1,0 +1,76 @@
+task_id: UDG@20.15.2@Task@0-00283
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置RTSDNN参数
+task_layer: atom
+task_intent: 配置通用DNN漫游分流参数(SET RTSDNNPARA)，开启公网/专网分流开关、UE IP冲突检测、N4能力上报与NAT ALG地址替换
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET RTSDNNPARA
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00283:PUBLICNETSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:PUBLICNETSW
+    binding_type: decision_driven   # 校正：原 variable+value 自相矛盾，改为 decision_driven
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；公网UPF开启=ENABLE
+    requiredness: conditional   # 公网UPF角色时必填
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00152
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:PRIVATENETSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:PRIVATENETSW
+    binding_type: decision_driven
+    variable_source: local_planned   # 本端规划；专网UPF开启=ENABLE
+    requiredness: conditional   # 专网UPF角色时必填
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00152
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:N4RPTSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:N4RPTSW
+    binding_type: variable
+    variable_source: peer_planned   # 特性 md 数据规划表: 与对端协商(N4偶联消息上报能力开关)
+    requiredness: optional   # 校正：命令真相为 optional
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:UEIPCONFLICTCHK
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:UEIPCONFLICTCHK
+    binding_type: decision_driven
+    variable_source: local_planned   # 特性 md: 本端规划；UE IP与园区服务器IP冲突检测开关
+    requiredness: optional   # 校正：命令真相为 optional
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00152
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:UEIPREALLOC
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:UEIPREALLOC
+    binding_type: decision_driven
+    variable_source: local_planned   # 本端规划；冲突时UE IP重分配开关
+    requiredness: conditional   # UEIPCONFLICTCHK=ENABLE 时必填（命令真相 conditional）
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00152
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:UEIPREALLOCNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:UEIPREALLOCNUM
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；空闲地址列表非冲突IP最大尝试次数(整数 0~3000)
+    requiredness: conditional   # UEIPREALLOC=ENABLE 时必填（命令真相 conditional）
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:UEIPCONFLICTPLY
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:UEIPCONFLICTPLY
+    binding_type: decision_driven
+    variable_source: local_planned   # 本端规划；冲突时是否继续激活用户(BYPASS/拒绝)
+    requiredness: conditional   # UEIPCONFLICTCHK=ENABLE 时必填（命令真相 conditional）
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00152
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:NATALGPROTV4
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:NATALGPROTV4
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；位图(FTP/RTSP)指定IPv4 NAT ALG地址替换协议
+    requiredness: optional
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+  - binding_id: UDG@20.15.2@Task@0-00283:NATALGPROTV6
+    parameter_ref: UDG@20.15.2@CommandParameter@SET RTSDNNPARA:NATALGPROTV6
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；位图(FTP)指定IPv6 NAT ALG地址替换协议
+    requiredness: optional
+    source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+notes: |
+  GWFD-020531 通用DNN漫游分流专属。命令 SET RTSDNNPARA 在 mml_commands.jsonl，parameter_references 为空(§6-B)，参数从 parameter_description 文本抽取。
+  参数按公网UPF(PUBLICNETSW/N4RPTSW/UEIPCONFLICTCHK/UEIPREALLOC/UEIPREALLOCNUM/UEIPCONFLICTPLY)与专网UPF(PRIVATENETSW/NATALGPROTV4/NATALGPROTV6)角色分两组。N4RPTSW 数据来源为"与对端协商"(peer_planned)。
+  命令级审查(2026-07-02)：9/12 参数绑定(无功能缺口)；缺 RPTCTRLINTERVAL(流控时间秒数)/PKTPROCACTION(报文处理动作)/RESCHKINTERVAL(资源阈值核查间隔分钟数) 均为 optional(命令真相)；N4/NATALG 在本特性场景下用；RESCHKINTERVAL 由整网阈值管控非本特性场景。3 缺口按 baseline §4.1 冷门不绑。
+  校正 binding_type 自相矛盾(variable+value)：7 binding (PUBLICNETSW/PRIVATENETSW/UEIPCONFLICTCHK/UEIPREALLOC/UEIPCONFLICTPLY/UEIPREALLOCNUM等) 改为 decision_driven 由 atom-挂 DP 0-00152 公网UPF/专网UPF 角色编排（PUBLICNETSW/UEIP*为公网角色 mandatory；PRIVATENETSW/NATALG*为专网角色 mandatory），去除全部 value 字段(value 仅是 md 样例占位)。校正 requiredness：N4RPTSW/UEIPCONFLICTCHK 改 optional(命令真相)；UEIPREALLOC/UEIPREALLOCNUM/UEIPCONFLICTPLY 保持 conditional(命令真相，依赖 UEIPCONFLICTCHK)。
+  新增 atom rule 0-00399(cardinality 1 + 立即生效 + 系统初始记录默认值 + 路由增强生效条件: ROUTEENHANCEDSW=ENABLE 且 ADD AUTOSCALINGBGPLF 的 UDAD VCOM 不为 0)。LOD SIGNATUREDB 之类的前置依赖(特性 md 步骤编排)由 task_relations propagated_context 表达。

@@ -1,0 +1,44 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00110
+owner_task_ref: UDG@20.15.2@Task@0-00023   # 挂 atom ADD REDIRAPPENDINFO
+decision_name: REDIRAPPENDINFO 字段携带组合（020356 多字段+IMSI加密 vs 110284 精简）
+decision_question: |
+  ADD REDIRAPPENDINFO 的字段携带组合（REQURLFLAG/MSISDNFLAG/IMSIFLAG/IMEIFLAG/MSIPFLAG/TIMEFLAG + IMSIENCRYALGORI 配套）取哪个分支？二选一（UDG 2 特性）：
+  - 020356 计费信息实时提醒：要求 REQURLFLAG=ENABLE + MSISDNFLAG=DISABLE + IMSIFLAG=ENABLE + IMEIFLAG=ENABLE + MSIPFLAG=ENABLE + 配套 IMSIENCRYALGORI=AES256；不配 TIMEFLAG。
+  - 110284 HTTP智能重定向：仅要求 REQURLFLAG=ENABLE + IMSIFLAG=ENABLE；MSISDNFLAG/IMEIFLAG/MSIPFLAG/TIMEFLAG 不配(走默认 DISABLE)；不配 IMSIENCRYALGORI(IMSI 不加密)。
+  命令真相：6 个 FLAG optional 默认 DISABLE；IMSIENCRYALGORI conditional 默认 AES256_GCM(IMSIENABLED 时可加密)。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - GWFD-110284/激活HTTP智能重定向_67075035.md
+options:
+  - option_id: opt-redirappendinfo-billing-prompt
+    option_name: 020356 计费信息实时提醒
+    option_value: BILLING_PROMPT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:REQURLFLAG, effect_type: sets_value, effect_detail: value=ENABLE（020356 必传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:MSISDNFLAG, effect_type: sets_value, effect_detail: value=DISABLE（020356 显式禁）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:IMSIFLAG, effect_type: sets_value, effect_detail: value=ENABLE（020356 必传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:IMEIFLAG, effect_type: sets_value, effect_detail: value=ENABLE（020356 必传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:MSIPFLAG, effect_type: sets_value, effect_detail: value=ENABLE（020356 必传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:IMSIENCRYALGORI, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传 AES256（020356 任务示例 IMSIENCRYALGORI=AES256）；注意 mml_commands 显示 IMSIENCRYALGORI 枚举取值含 AES256，但命令真相默认值 AES256_GCM——020356 用了 AES256 而非默认 AES256_GCM,跨枚举取值，需核对 mml_commands 枚举完整性与 020356 实例合理性；IMSISECRETKEY/IMSISECRETKEYCONFIRM 列为本 atom 缺参数(命令真相 conditional)按 §4.3 ③ 不绑，配套必填约束由 rule 0-00295 投影承担}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:TIMEFLAG, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，020356 不配时间戳）}
+  - option_id: opt-redirappendinfo-smart-http
+    option_name: 110284 HTTP智能重定向
+    option_value: SMART_HTTP
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:REQURLFLAG, effect_type: sets_value, effect_detail: value=ENABLE（110284 必传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:IMSIFLAG, effect_type: sets_value, effect_detail: value=ENABLE（110284 必传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:MSISDNFLAG, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，走默认 DISABLE）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:IMEIFLAG, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，走默认 DISABLE）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:MSIPFLAG, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，走默认 DISABLE）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:IMSIENCRYALGORI, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，IMSI 不加密）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00023:TIMEFLAG, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+default_option: opt-redirappendinfo-billing-prompt
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00110~）。管理 ADD REDIRAPPENDINFO 的 6 个 FLAG + IMSIENCRYALGORI 配套组合编排。
+  依据：跨特性 020356（计费信息实时提醒，多字段+IMSI加密 AES256）vs 110284（HTTP智能重定向，仅 REQURL+IMSI 不加密）分叉；命令真相 6 个 FLAG optional 默认 DISABLE + IMSIENCRYALGORI conditional 默认 AES256_GCM。
+  原 pass-1 录制：REQURLFLAG/MSISDNFLAG/IMSIFLAG/IMEIFLAG/MSIPFLAG 5 个 FLAG 固定 local_planned+ENABLE/DISABLE 静态值——硬编码一个特性的 FLAG 组合，无法跨特性切换。按 SKILL §4.5 升级为 decision_driven：2 个 option 互斥，default_option=BILLING_PROMPT（020356 主特性路径，FLAG 多且带 IMSI 加密）。
+  注：本决策编排 FLAG 集合 + IMSIENCRYALGORI 配套；MSISDNENCRYALGORI/IMEIENCRYALGORI/MSIPENCRYALGORI/TIMEENCRYALGORI 及对应 SECRETKEY/SECRETKEYCONFIRM 保持 absent（不传），主场景两特性均不走这几项加密。020356 IMSIENCRYALGORI=AES256 与命令真相默认 AES256_GCM 不一致——按任务示例实操值采纳但列入 mml_commands 枚举待核项（命令真相枚举可能含 AES256 但默认值不同）。

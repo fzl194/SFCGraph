@@ -1,0 +1,17 @@
+task_id: UDG@20.15.2@Task@00101
+task_logical_name: 计费三件套
+task_layer: compound
+nf: UDG
+version: 20.15.2
+task_summary: "配置 URR→URRGROUP→PCCPOLICYGRP 三级引用链"
+task_relations:
+  - from_task_ref: UDG@20.15.2@Task@00001
+    to_task_ref: UDG@20.15.2@Task@00002
+    relation_type: precedes
+    propagated_context: URRNAME
+  - from_task_ref: UDG@20.15.2@Task@00002
+    to_task_ref: UDG@20.15.2@Task@00003
+    relation_type: precedes
+    propagated_context: URRGROUPNAME
+status: active
+source_evidence_ids: []

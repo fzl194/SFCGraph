@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00011
+owner_task_ref: UNC@20.15.2@Task@0-00009
+rule_name: ADD CCT 最多 101 条记录
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CCT]
+  expression: 记录数 ≤ 101；系统部署完成后已存在初始记录（见命令 md 初始值表）
+violation_effect: 超规格无法新增
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加融合计费模板（ADD CCT）_09653176.md]

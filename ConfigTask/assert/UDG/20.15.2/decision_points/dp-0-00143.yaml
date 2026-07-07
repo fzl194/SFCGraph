@@ -1,0 +1,40 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00143
+owner_task_ref: UDG@20.15.2@Task@0-00150   # 挂 atom MOD PCCPOLICYGRP
+decision_name: rule 级 HTTP2.0 协议回落开关 3-way 编排 (PCC 策略组层)
+decision_question: |
+  MOD PCCPOLICYGRP 配置指定 PCC 策略组的 rule 级 HTTP2.0 协议回落开关时, 选择哪种配置?
+  - ENABLE: rule 级开启 HTTP2.0 协议回落——本特性 GWFD-110202 示例采用。
+  - DISABLE: rule 级关闭 HTTP2.0 协议回落。
+  - INHERIT: 继承 APN 级 SET APNHTTP2DGRD HTTP2DEGRADESW 配置(默认)——当本参数不显式配置时按 APN 级生效。
+  命令 notes：rule 级 INHERIT 时, 实际生效值由 APN 级(0-00149) 决定——但 rule 级优先级最高, 一旦 rule 级显式配置, 不论 APN/全局为何值, 均按 rule 级生效。
+  回落优先级：rule 级(本 atom) > APN 级(0-00149) > 全局级(0-00148)——rule 级 3-way 编排是回落优先级最高层。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110202/激活HTTP2.0协议回落_65157762.md
+options:
+  - option_id: opt-rule-enable
+    option_name: rule 级开启 HTTP2.0 回落
+    option_value: ENABLE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00150:HTTP2DEGRADESW, effect_type: sets_value, effect_detail: value=ENABLE；rule 级强制开启, 优先级最高, 不论 APN/全局为何值均按 rule 级生效}
+  - option_id: opt-rule-disable
+    option_name: rule 级关闭 HTTP2.0 回落
+    option_value: DISABLE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00150:HTTP2DEGRADESW, effect_type: sets_value, effect_detail: value=DISABLE；rule 级强制关闭, 优先级最高}
+  - option_id: opt-rule-inherit
+    option_name: 继承 APN 级 (默认)
+    option_value: INHERIT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00150:HTTP2DEGRADESW, effect_type: sets_value, effect_detail: value=INHERIT(默认, 继承 SET APNHTTP2DGRD HTTP2DEGRADESW 0-00149)}
+default_option: opt-rule-inherit
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00136~0-00149）。管理 MOD PCCPOLICYGRP HTTP2DEGRADESW 3-way 编排 (rule 层)。
+  依据：命令真相 HTTP2DEGRADESW 3 路枚举 ENABLE/DISABLE/INHERIT(默认 INHERIT 继承 APN 级)；回落优先级 rule>APN>全局, 三层联动——rule 级 INHERIT 时继承 APN 级 SET APNHTTP2DGRD HTTP2DEGRADESW。
+  原 binding 标 variable+local_planned+required, 现升级 decision_driven + decision_ref 0-00143(3-way)。
+  注：本 atom 严格限定 HTTP2DEGRADESW 单一参数使用(其他 16 参数 PCC 修改场景若后续启用, 须建独立 atom)——本 DP 仅编排 HTTP2DEGRADESW 3-way, 不涉及其他参数。
+  与 DP 0-00142 (APN 级) + 全局级 SET SRVCOMMONPARA HTTP2DEGRADESW 三层联动, 防止 3 层均 INHERIT 时无生效源。
+  与 rule 0-00354 联动(rule 校验 立即生效 + 参数全可选 + 前置 ADD PCCPOLICYGRP + INHERIT 继承 APN)。

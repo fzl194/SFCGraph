@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00285
+owner_task_ref: UDG@20.15.2@Task@0-00070
+rule_name: 0-00070 最大记录数 3 + 仅对新激活用户生效 + CAR/Shaping 互斥 + 初始记录
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00070
+  expression: |
+    SET QOSCAR(atom 0-00070) 配置约束：
+    (1) 上限：系统最大记录数为 3(命令 notes 强约束)——USERTYPE × (ULRAT ⊕ DLRAT) 组合的总数。
+    (2) 仅对新激活用户生效：SET QOSCAR 执行后只对新激活用户生效，对已在线用户不生效(命令 notes 强约束)；此为设置时机策略，与 SET QOSSHAPE 同。
+    (3) CAR vs Shaping 互斥：用户 CAR 功能和 shaping 功能是系统控制带宽的两种方式，只能同时使能一种；CAR 开关与 shaping 开关同时使能时，系统优先按 shaping 控制(命令 notes 强约束)——SET QOSSHAPE(命令 ID 待抽取)不可同时启用。
+    (4) ULRAT 与 DLRAT 在系统初始记录中不生效(命令 notes)：初始记录默认生效，后续 ADD 时 ULRAT/DLRAT 才实际作用于新增记录的 RAT 匹配。
+    (5) 开启后会导致性能下降(命令 notes)：容量评估需考虑 PERF 影响。
+    (6) 该命令存在系统初始记录——首配本命令为 ADD 而非 SET。
+    (7) 与 SET APNQOSATTR(0-00049) 协作完成 QoS CAR 功能链：DP 0-00016 opt-qos-car 同时绑定 0-00070 与 0-00049。
+violation_effect: 上限超限→ADD 失败；已激活用户不变→期望限速不生效；CAR/Shaping 同开→shaping 优先(本 atom 配置无效)；ULRAT/DLRAT 在初始记录场景下不生效→RAT 维度限速缺失；性能下降→用户体验降级
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md, GWFD-020381/激活会话类QoS保证（PGW-U）_70910228.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。命令级事实分叉需谨慎：ULRAT/DLRAT 在命令真相标 optional 但实际命令 notes 明示系统在初始记录不生效——属系统初值/初始记录 vs 后续记录分叉(rule 层投影)。"

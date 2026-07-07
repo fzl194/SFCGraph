@@ -1,0 +1,20 @@
+decision_id: UDG@20.15.2@DecisionPoint@00004
+owner_ref: UDG@20.15.2@Task@00301
+decision_name: 是否启用计费防欺诈
+decision_question: 是否启用HTTP计费防欺诈？
+trigger_condition: 配置计费时
+options:
+  - option_name: 启用
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00014
+        effect_type: adds
+        effect_detail: "执行ADD SPECURRGRPLIST配防欺诈费率列表"
+  - option_name: 不启用
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00014
+        effect_type: excludes
+        effect_detail: "跳过防欺诈配置"
+status: active
+source_evidence_ids: []

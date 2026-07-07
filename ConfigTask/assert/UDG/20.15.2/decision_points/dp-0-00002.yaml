@@ -1,0 +1,68 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00002
+owner_task_ref: UDG@20.15.2@Task@1-00002   # 挂 compound 过滤链（task 级决策：增减子 task）
+decision_name: 业务匹配场景选择
+decision_question: 按什么方式识别业务（决定过滤链的命令组合与RULE优先级）？
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: 2026-07-02 演进(2-00001 A 段覆盖校验回炉)：补全各 option 的 excludes 子句，使 per-variant
+  active_commands 精确收敛到 md_required。原版只声明 adds 不声明 excludes，导致结构并集 6 命令全在
+  而每个变体 md 实际只用子集 → 覆盖校验报"多"。爆炸半径：1-00002 被 22 特性复用，连锁复审由
+  compound-review-queue-计费.md 攒批触发。
+  2026-07-03 演进(2-00002 A 段)：补 opt-basic-l34 option。2-00001 的 4 option(URL/IMS/any/异常)
+  全部假设 FILTER 与 L7FILTER 或 FILTERIPV6 配对(2-00001 md 4 场景列举)。2-00002/2-00003/2-00004
+  等"复用 backbone 仅承担计费方式差量"的特性 md 仅展示 IPv4 三四层 FILTER 基础配法(无 L7/IPv6),
+  原 4 option 无一匹配 → 覆盖校验报"多 L7FILTER/FILTERIPV6/PROTBINDFLOWF"。补 opt-basic-l34
+  收敛。爆炸半径仍是 22 特性,但只新增 option 不改既有 option,不影响已建特性的变体集。
+options:
+  - option_id: opt-url
+    option_name: URL场景
+    impacts:
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00004, effect_type: adds, effect_detail: 配 ADD FILTER 三四层(DNS)}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00006, effect_type: adds, effect_detail: 配 ADD L7FILTER(URLTYPE=URL)}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00009, effect_type: adds, effect_detail: 配 ADD PROTBINDFLOWF 七层绑定}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00005, effect_type: excludes, effect_detail: URL场景不配 IPv6 三四层 filter}
+  - option_id: opt-ims
+    option_name: IMS场景
+    impacts:
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00005, effect_type: adds, effect_detail: 配 ADD FILTERIPV6(IPv6 三四层+服务器IP，与对端协商)}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00004, effect_type: excludes, effect_detail: IMS场景不配 IPv4 三四层 filter}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00006, effect_type: excludes, effect_detail: 无七层过滤}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00009, effect_type: excludes, effect_detail: 无七层绑定}
+  - option_id: opt-any
+    option_name: any场景
+    impacts:
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00004, effect_type: adds, effect_detail: 配 ADD FILTER(IPv4 any)}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00005, effect_type: adds, effect_detail: 配 ADD FILTERIPV6(IPv6 any)}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00006, effect_type: excludes, effect_detail: any场景不配七层过滤}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00009, effect_type: excludes, effect_detail: any场景不配七层绑定}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD RULE:PRIORITY, effect_type: sets_value_pattern, effect_detail: "=65000 最低优先级"}
+  - option_id: opt-basic-l34
+    option_name: 三四层基础场景
+    impacts:
+      # md 仅展示三四层 IPv4 FILTER 基础配法(无七层/无 IPv6),如 GWFD-020300 在线计费 /
+      # GWFD-010171 离线计费 / GWFD-010173 融合计费 等"复用 backbone 仅承担计费方式差量"的特性
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00004, effect_type: adds, effect_detail: 配 ADD FILTER(IPv4 三四层)}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00005, effect_type: excludes, effect_detail: 基础场景不配 IPv6 三四层 filter}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00006, effect_type: excludes, effect_detail: 基础场景不配七层 filter}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00009, effect_type: excludes, effect_detail: 基础场景不配七层绑定}
+  - option_id: opt-abnormal
+    option_name: 异常场景
+    impacts:
+      # 异常场景：URR 仅 OFF/ONLMETERINGTYPE=FREE 改值，URR/URRGROUP/PCCPOLICYGRP 仍在
+      # 过滤链全免（异常走 SIGURRGRPNAME 路径，不再配 FILTER/L7FILTER/FLOWFILTER/绑定）
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00004, effect_type: excludes, effect_detail: 异常场景不配 IPv4 三四层 filter}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00005, effect_type: excludes, effect_detail: 异常场景不配 IPv6 三四层 filter}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00006, effect_type: excludes, effect_detail: 异常场景不配七层 filter}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00007, effect_type: excludes, effect_detail: 异常场景不配 FLOWFILTER}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00008, effect_type: excludes, effect_detail: 异常场景不配三四层绑定}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00009, effect_type: excludes, effect_detail: 异常场景不配七层绑定}
+      # 过滤链外的 RULE/USERPROFILE/RULEBINDING 在异常场景不配（信令费率走 SET URRGRPBINDING.DFTSIGURRGNAME）
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00010, effect_type: excludes, effect_detail: 异常场景不配 RULE}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00011, effect_type: excludes, effect_detail: 异常场景不配 USERPROFILE}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00012, effect_type: excludes, effect_detail: 异常场景不配 RULEBINDING}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE, effect_type: sets_value_pattern, effect_detail: "=FREE 免费标记"}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@ADD URR:ONLMETERINGTYPE, effect_type: sets_value_pattern, effect_detail: "=FREE 免费标记"}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTSIGURRGNAME, effect_type: adds, effect_detail: 配缺省信令URR组}

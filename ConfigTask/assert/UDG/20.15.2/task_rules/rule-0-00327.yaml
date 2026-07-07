@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00327
+owner_task_ref: UDG@20.15.2@Task@0-00053   # SET UPPFCPPATH (atom-挂 rule)
+rule_name: SET UPPFCPPATH 最大记录数+高危+只对新激活用户生效+T1+5秒≠T3RESPONSE整数倍
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00053:HEARTBEATINTERVAL
+    - UDG@20.15.2@Task@0-00053:T3RESPONSE
+  expression: "最大记录数为1(全局唯一); 本命令属于高危命令(配置不合理可能导致告警或用户去活); 该命令执行后只对新激活用户生效；对接的SMF上的SET T1N1PARA命令的T1+5秒时长之和不能是SET UPPFCPPATH命令T3RESPONSE时长的整数倍，否则MME故障的场景下可能因为系统重传PFCP Session Report Request消息导致SMF向MME发送冗余的DDN消息。"
+violation_effect: 高危配置错误导致告警/用户去活；T3RESPONSE与对端T1+5秒整数倍关系违反会导致冗余DDN消息
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格+高危+新激活生效+SMF T1+5s整数倍约束)
+source_evidence_ids: [GWFD-010102/配置GTP_PFCP路径管理参数_24082055.md]

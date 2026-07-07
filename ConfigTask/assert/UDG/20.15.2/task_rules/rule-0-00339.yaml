@@ -1,0 +1,28 @@
+rule_id: UDG@20.15.2@TaskRule@0-00339
+owner_task_ref: UDG@20.15.2@Task@0-00215   # ADD IPSECPOLICY (atom-挂 rule, 聚合3命令)
+rule_name: ADD IPSECPOLICY 立即生效+SEQUENCE范围+不安全算法提示+多引用前置ACL/IKEPEER/Proposal
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00215:SEQUENCENUMBER
+    - UDG@20.15.2@Task@0-00215:POLICYNAME
+    - UDG@20.15.2@Task@0-00215:ACLNUMBER
+    - UDG@20.15.2@Task@0-00215:IPSECPROPNAME
+    - UDG@20.15.2@Task@0-00215:IKEPEERNAME
+  expression: "该命令执行后立即生效；该命令影响协商及加解密性能，部分配置可能是不安全的；SEQUENCENUMBER取值范围1~10000；DH组dh_group1/dh_group2/dh_group5不推荐使用；ACLNUMBER引用前置ADD ACLGROUPIPSEC(0-00211:ACLNAME)；IPSECPROPNAME引用前置ADD IPSECPROPOSALIPSEC(0-00212:PROPOSALNAME)；IKEPEERNAME引用前置ADD IKEPEER(0-00214:PEERNAME)；多Sequence场景(主备/多感兴趣流)按SEQUENCENUMBER重复该组装；多Peer场景配PEERPRIORITY。"
+violation_effect: ACL/IKEPEER/PROPOSAL前置未配导致策略引用失败；不安全算法配置被系统告警
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(立即生效+SEQUENCE范围+不安全算法+多引用前置)
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（多Sequence的IPsec策略）_01_10008.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md

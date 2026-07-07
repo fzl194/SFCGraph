@@ -1,0 +1,37 @@
+task_id: UDG@20.15.2@Task@0-00031
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置ADC参数
+task_layer: atom
+task_intent: 配置ADC参数(ADD ADCPARA)，绑定流过滤器并设置流信息上报开关与应用级迟滞时间；仅当 PCRF/PCF 经预定义规则下发 APPLICATION_START/STOP Event-Trigger 时配置
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ADCPARA
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred；命令不在 mml_commands.jsonl（缺命令，§6-A）；CommandParameter 结构化对象待 CommandGraph 抽取
+source_evidence_ids: [GWFD-020357/激活增强的ADC基本功能_84866820.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00031:FLOWFILTERNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ADCPARA:FLOWFILTERNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(ADD FLOWFILTER)
+    requiredness: required
+    source_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME
+    source_evidence_ids: [GWFD-020357/激活增强的ADC基本功能_84866820.md]
+  - binding_id: UDG@20.15.2@Task@0-00031:FLOWINFORPT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ADCPARA:FLOWINFORPT
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；ENABLE=PCRF/PCF 需获取流信息(默认 DISABLE)
+    requiredness: optional
+    value: DISABLE
+    source_evidence_ids: [GWFD-020357/激活增强的ADC基本功能_84866820.md]
+  - binding_id: UDG@20.15.2@Task@0-00031:ADCHYSTIMER
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ADCPARA:ADCHYSTIMER
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划；取值范围 0~3600，0=关闭应用级延迟上报
+    requiredness: optional
+    value: 0
+    source_evidence_ids: [GWFD-020357/激活增强的ADC基本功能_84866820.md]
+notes: |
+  GWFD-020357 增强的ADC基本功能专属。命令 ADD ADCPARA 不在 mml_commands.jsonl（缺命令，§6-A 处置）；
+  参数细节从特性 md 数据规划表抽取。仅在 PCRF/PCF 经预定义规则下发 APPLICATION_START/STOP Event-Trigger 时配置。
+  FLOWINFORPT 默认 DISABLE(本端规划但取值受业务需求约束)，ADCHYSTIMER 默认 0(全网规划)。
+  命令级审查(2026-07-02) 补审：缺口 4(KEYFLOWDETECTSW/KEYFLOWTIME/KEYFLOWSPEED/REDIRECTNAME)均为命令真相 optional 且仅 1 特性(GWFD-020357)未用到，按"通用配置"门槛不绑(关键流检测/重定向为冷门场景)。补 atom rule 0-00400(cardinality 8000)。注：任务简报提及"ADCLEVEL/ADCNAME 跨特性分叉"经核 ADD ADCPARA 命令真相无此二参(属 ADC 规则族他命令)，本 atom 无跨特性分叉。

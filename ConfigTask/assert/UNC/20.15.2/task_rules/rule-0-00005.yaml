@@ -1,0 +1,18 @@
+rule_id: UNC@20.15.2@TaskRule@0-00005
+owner_task_ref: UNC@20.15.2@Task@0-00004   # 挂 ADD APN atom
+rule_name: VIRTUALAPN=ENABLE 前置依赖 ADD VIRTUALAPNRULE
+rule_type: dependency_rule
+rule_scope: parameter
+condition:
+  expression_type: param_value
+  expression: ADD APN:VIRTUALAPN == ENABLE
+constraint:
+  constraint_type: requires
+  target_refs: [UNC@20.15.2@MMLCommand@ADD VIRTUALAPNRULE]
+  expression: 开启 VIRTUALAPN 前，必须先通过 ADD VIRTUALAPNRULE 配置规划的虚拟 APN 映射规则
+violation_effect: 否则该 APN 下的用户激活失败
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加APN配置（ADD APN）_09653747.md]

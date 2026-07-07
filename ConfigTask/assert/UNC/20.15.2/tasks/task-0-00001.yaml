@@ -1,0 +1,71 @@
+task_id: UNC@20.15.2@Task@0-00001
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置URR
+task_layer: atom
+task_intent: 配置一条使用量上报规则(URR)，确定费率组/业务标识/计费方式(SMF侧)
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD URR
+status: inferred
+source_evidence_ids:
+  - 配置URR（ADD URR）_09897158.md   # CommandGraph UNC mml_commands 权威命令文档
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00001:URRNAME
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:URRNAME
+    binding_type: variable
+    variable_source: global_planned      # 全网规划（pilot；证据显示跨特性本端/全网分叉，refinement 改 decision_driven）
+    requiredness: required
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+  - binding_id: UNC@20.15.2@Task@0-00001:URRID
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:URRID
+    binding_type: variable
+    variable_source: global_planned      # 全网规划；URRID 全网唯一从 1000 起始
+    requiredness: required
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+  - binding_id: UNC@20.15.2@Task@0-00001:USAGERPTMODE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:USAGERPTMODE
+    binding_type: decision_driven
+    variable_source: global_planned      # 全网规划；具体枚举由 DP 决定
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00001
+    requiredness: required
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+  - binding_id: UNC@20.15.2@Task@0-00001:OFFCOMPOUNDTYPE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:OFFCOMPOUNDTYPE
+    binding_type: decision_driven        # 条件必选(USAGERPTMODE=OFFLINE 时)；ONLYRG/ONLYSID/UPDOWNSID/RGSID
+    variable_source: global_planned
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00001
+    requiredness: conditional
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+  - binding_id: UNC@20.15.2@Task@0-00001:ONLCOMPOUNDTYPE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:ONLCOMPOUNDTYPE
+    binding_type: decision_driven        # 条件必选(USAGERPTMODE=ONLINE 时)；ONLYRG/RGSID
+    variable_source: global_planned
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00001
+    requiredness: conditional
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+  - binding_id: UNC@20.15.2@Task@0-00001:OFFMETERINGTYPE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE
+    binding_type: decision_driven        # 条件必选(OFFLINE 时)；VOLUME/TIME/EVENT/FREE/组合
+    variable_source: global_planned
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00001
+    requiredness: conditional
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+  - binding_id: UNC@20.15.2@Task@0-00001:ONLMETERINGTYPE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:ONLMETERINGTYPE
+    binding_type: decision_driven        # 条件必选(ONLINE 时)；VOLUME/TIME/EVENT/FREE/组合
+    variable_source: global_planned
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00001
+    requiredness: conditional
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+  - binding_id: UNC@20.15.2@Task@0-00001:RG
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD URR:RG
+    binding_type: variable
+    variable_source: global_planned      # 条件必选(OFFCOMPOUNDTYPE/ONLCOMPOUNDTYPE 含 RG 时)
+    requiredness: conditional
+    source_evidence_ids: [配置URR（ADD URR）_09897158.md]
+notes: |
+  UNC pilot atom (2026-07-06)：参数从 CommandGraph UNC mml_commands.jsonl 的 parameter_description 文本表解析（§6.B）。
+  UNC ADD URR 共 19 参（比 UDG 多 OFFCOMPOUNDTYPE/ONLCOMPOUNDTYPE/SID族/UPSID/DOWNSID/ONLINERG/ONLINESID/
+  TIMERSUVALUE/VOLUMERSUVALUE/EVENTRSUVALUE/OFCSRVTMPLNAME/REDIRENDTOKEN/MONITORINGKEY/N40AGESW）。
+  本 pilot 先绑 8 个核心（必选 + 计费方式/metering/compound 选择 + RG），其余条件必选按特性数据规划表逐 pass 补。
+  TODO refinement：证据包 ADD_URR.md 显示 URRNAME 跨特性 本端84/全网12 分叉 → 应改 decision_driven。

@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00335
+owner_task_ref: UDG@20.15.2@Task@0-00210   # ADD L3VPNINSTIPSEC (atom-挂 rule, 聚合5命令)
+rule_name: ADD L3VPNINSTIPSEC 最大记录数1001+立即生效+VRFNAME黑名单+VNRS双配一致性
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00210:VRFNAME
+  expression: "最多可输入1001条记录；该命令执行后立即生效；VRFNAME不能为 _public_/__mpp_vpn_inner__(保留实例); IPsec微服务侧全链聚合(ADD L3VPNINSTIPSEC + ADD VPNINSTAFIPSEC + ADD INTERFACEIPSEC + ADD IPBINDVPNIPSEC + ADD IFIPV4ADDRESSIPSEC)须遵循双配原则: 接口名/接口IP/AFTYPE/VRFNAME 与VNRS侧一对一一致(分别对应0-00071:VRFNAME/0-00056:IFNAME/0-00058:IFIPADDR)，否则业务不通。"
+violation_effect: VRFNAME用保留名_public_/__mpp_vpn_inner__被拒；VNRS双配不一致导致IPsec隧道不通
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1001+立即生效+VRFNAME黑名单+双配)
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md

@@ -1,0 +1,49 @@
+task_id: UDG@20.15.2@Task@0-00226
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置TWAMP响应端(Full模式)
+task_layer: atom
+task_intent: 配置 TWAMP 响应端(RESPONDERID/AFTYPE/TWAMPARCH=FULL/LOCALIPV4/SERVWAIT/REFWAIT)，UDG 作响应端响应 eNodeB/gNodeB 发起的探测。Full 模式独有
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD TWAMPRESPONDER
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00226:RESPONDERID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPRESPONDER:RESPONDERID
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(响应端ID，整数 1~32)
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+  - binding_id: UDG@20.15.2@Task@0-00226:AFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPRESPONDER:AFTYPE
+    binding_type: fixed
+    value: IPV4
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+  - binding_id: UDG@20.15.2@Task@0-00226:TWAMPARCH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPRESPONDER:TWAMPARCH
+    binding_type: fixed
+    value: FULL   # Full 模式固定
+    requiredness: required
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+  - binding_id: UDG@20.15.2@Task@0-00226:LOCALIPV4
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPRESPONDER:LOCALIPV4
+    binding_type: reference
+    variable_source: local_planned   # 本端规划(须与逻辑接口IP一致) — md标注本端规划
+    source_ref: UDG@20.15.2@Task@0-00225:IPV4ADDRESS
+    requiredness: conditional   # 校正：命令真相为 conditional(AFTYPE=IPV4 时必填)；本 atom AFTYPE=IPV4 固定，实际必填
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+  - binding_id: UDG@20.15.2@Task@0-00226:SERVWAIT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPRESPONDER:SERVWAIT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(协商等待秒数，整数 10~1800，默认 900)
+    requiredness: optional   # 校正：命令真相为 optional(默认 900)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+  - binding_id: UDG@20.15.2@Task@0-00226:REFWAIT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD TWAMPRESPONDER:REFWAIT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(测试等待秒数，整数 10~1800，默认 900)
+    requiredness: optional   # 校正：命令真相为 optional(默认 900)
+    source_evidence_ids: [GWFD-110921/激活TWAMP（Full模式）_88305315.md]
+notes: "ADD TWAMPRESPONDER(Full 模式独有，UDG 作响应端)。TWAMPARCH=FULL 固定；LOCALIPV4 引用 ADD TWAMPLOGICINF(0-00225) 的 IPV4ADDRESS 且须一致。Full 走 TCP TWAMP-Control 协商 + UDP TWAMP-Test，故需配套 SET TCPKEEPALIVECFG(0-00229)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：6/6 参数绑定完整(无缺口)；校正 requiredness：LOCALIPV4 改 conditional(命令真相 AF=IPV4 时)；SERVWAIT/REFWAIT 改 optional(命令真相 默认 900)。feature-挂 DP 0-00036(TWAMP 模式) 已表达 FULL/LIGHT 互斥；rule 0-00081(TWAMP 一致性) 已表达 LOCALIPV4=逻辑接口IP 硬约束。RESPONDERID 1~32 + 命令最大记录数 32 由 CommandParameter 与 feature-级约束承担，无需 atom-挂独立 rule。"

@@ -1,0 +1,50 @@
+task_id: UDG@20.15.2@Task@0-00212
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPsec安全提议
+task_layer: atom
+task_intent: 增加IPsec安全提议(定义安全协议ESP/AH、认证算法、加密算法、封装模式Tunnel/Transport)。提议由 IPsec安全策略 引用
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPSECPROPOSALIPSEC
+status: inferred  # 命令级审查(2026-07-02): 1 冷门缺口(AHAUTHALGO)按通用配置门槛不绑; 5/6 已绑, 4 个 DP0-00033 编排
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00212:PROPOSALNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPROPOSALIPSEC:PROPOSALNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00212:IPSECPROTOCOL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPROPOSALIPSEC:IPSECPROTOCOL
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商(两端须一致)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00212:ESPAUTHALGO
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPROPOSALIPSEC:ESPAUTHALGO
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: conditional   # ESP协议时必填
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00212:ESPENCRYPTALGO
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPROPOSALIPSEC:ESPENCRYPTALGO
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: conditional   # ESP协议时必填
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00212:ENCAPMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPROPOSALIPSEC:ENCAPMODE
+    binding_type: decision_driven
+    variable_source: peer_planned   # 对端协商；GRE over IPsec/IKE协商= Tunnel
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00033
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+notes: "IPsec安全提议。IPSECPROTOCOL/ESPAUTHALGO/ESPENCRYPTALGO/ENCAPMODE 取值来源=对端协商(两端一致)，国密场景算法集分叉(见 DP 0-00033 option opt-ipsec-smcrypto)。CommandParameter 待抽取。命令级审查(2026-07-02): 1 冷门缺口(AHAUTHALGO/AH协议认证算法)命令真相 conditional 仅 IPSECPROTOCOL=AH 时必填，4 IPSec 场景均用 ESP 故不绑; 5/6 已绑(全部对齐命令真相 peer_planned/对端协商, 4 个由 DP 0-00033 编排 ESP/AH/算法/封装模式分叉); IPSECPROTOCOL 命令真相 optional 默认 Esp 但 4 场景均显式 Esp, 4 个算法 binding 配套 IPSECPROTOCOL 生效。"

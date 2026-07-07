@@ -1,0 +1,39 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00142
+owner_task_ref: UDG@20.15.2@Task@0-00149   # 挂 atom SET APNHTTP2DGRD
+decision_name: APN 级 HTTP2.0 协议回落开关 3-way 编排 (APN 层)
+decision_question: |
+  SET APNHTTP2DGRD 配置指定 APN 的 HTTP2.0 协议回落开关时, 选择哪种配置?
+  - ENABLE: APN 级开启 HTTP2.0 协议回落——本特性 GWFD-110202 示例采用。
+  - DISABLE: APN 级关闭 HTTP2.0 协议回落。
+  - INHERIT: 继承全局级 SET SRVCOMMONPARA HTTP2DEGRADESW 配置(默认)——当本参数不显式配置时按全局生效。
+  命令 notes：如果 HTTP2DEGRADESW 设置为继承, 则继承 SET SRVCOMMONPARA 命令的 HTTP2DEGRADESW 开关；APN 级 INHERIT 时, 实际生效值由全局级(0-00148) 决定。
+  回落优先级：rule 级(0-00150) > APN 级(本 atom) > 全局级(0-00148)——本 DP 与 rule 级 DP 0-00143/全局级 SET SRVCOMMONPARA HTTP2DEGRADESW 联动, 防止 3 层均 INHERIT 时无生效源。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110202/激活HTTP2.0协议回落_65157762.md
+options:
+  - option_id: opt-apn-enable
+    option_name: APN 级开启 HTTP2.0 回落
+    option_value: ENABLE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00149:HTTP2DEGRADESW, effect_type: sets_value, effect_detail: value=ENABLE；本特性示例采用, APN 级强制开启, 不继承全局}
+  - option_id: opt-apn-disable
+    option_name: APN 级关闭 HTTP2.0 回落
+    option_value: DISABLE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00149:HTTP2DEGRADESW, effect_type: sets_value, effect_detail: value=DISABLE；APN 级强制关闭, 不继承全局}
+  - option_id: opt-apn-inherit
+    option_name: 继承全局 (默认)
+    option_value: INHERIT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00149:HTTP2DEGRADESW, effect_type: sets_value, effect_detail: value=INHERIT(默认, 继承 SET SRVCOMMONPARA HTTP2DEGRADESW 0-00148)}
+default_option: opt-apn-inherit
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00136~0-00149）。管理 SET APNHTTP2DGRD HTTP2DEGRADESW 3-way 编排 (APN 层)。
+  依据：命令真相 HTTP2DEGRADESW 3 路枚举 ENABLE/DISABLE/INHERIT(默认 INHERIT 继承全局)；回落优先级 rule>APN>全局, 三层联动——APN 级 INHERIT 时继承全局级 SET SRVCOMMONPARA HTTP2DEGRADESW。
+  原 binding 标 variable+local_planned+required, 现升级 decision_driven + decision_ref 0-00142(3-way)。
+  注：本 DP 与 rule 级 DP 0-00143 / 全局级 SET SRVCOMMONPARA 联动, 防止 3 层均 INHERIT 时无生效源——配置生成器应在 3-way DP default_option 编排上避免三 INHERIT 同时出现。
+  与 rule 0-00353 联动(rule 校验 cardinality 10000 + 立即生效 + 仅APN生效 + INHERIT 继承全局)。

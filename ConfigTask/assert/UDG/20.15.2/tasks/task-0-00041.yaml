@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00041
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置VPN实例
+task_layer: atom
+task_intent: 增加用户面VPN实例（DN侧VPN，承載地址池与APN的VPN绑定）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD VPNINST
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00041:VPNINSTANCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNINST:VPNINSTANCE
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（Router ID/VPN实例名全网唯一语义）
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+notes: "GWFD-010104 外部地址分配前置对象。VPN实例名为后续 ADD POOL/ADD APN 的 VPNINSTANCE 参数源(reference)。本 pass 仅录 VPNINSTANCE；ADD VPNINST 其余参数待后续特性揭示时增量补全。命令级审查(2026-07-02): 命令真相仅 VPNINSTANCE 1 参数(无缺口)，已全绑；variable_source 维持 global_planned(命令真相口径，全网唯一语义)，数据规划表分布为全网9/本端2(本端=2-00041/2-00083 个别特性局部规划，未达 decision_driven 阈值)。投影 2 规则: cardinality 0-00160(最大记录数4096) + uniqueness 0-00161(须与 L3VPNINST 同名 + 逻辑口/外联口 VPN 一致，业务联通前提)。"

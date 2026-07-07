@@ -1,0 +1,71 @@
+task_id: UDG@20.15.2@Task@0-00078
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建OSPFv3进程(IPv6)
+task_layer: atom
+task_intent: 创建IPv6 OSPFv3动态路由进程（PROCID+ROUTERID+VRFNAME+BFD/环路/虚拟系统开关），用于UDG到ePDG的IPv6 OSPF等价路由
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD OSPFV3
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+  - GWFD-020401/激活IPv6承载上下文_38276176.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+task_rules_ref: [UDG@20.15.2@TaskRule@0-00200]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00078:PROCID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3:PROCID
+    binding_type: variable
+    variable_source: global_planned   # ③跨特性获取方法分叉: 全网规划(010155/020406) vs 本端规划(020401)；取值解析同构(OSPFv3 进程号整数)，按 IPv4 ADD OSPF(0-00074) 先例保 global_planned
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00078:ROUTERID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3:ROUTERID
+    binding_type: variable
+    variable_source: global_planned   # ③3特性均全网规划(020406标"已配置数据中获取"实为引用全网规划值)；md 强调 Router ID 必须全网唯一
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00078:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3:VRFNAME
+    binding_type: reference
+    variable_source: reference   # ③数据规划表"已配置数据中获取"(010155/020401/020406 均 LST VPNINST 查询)；创建引用源为 ADD L3VPNINST(0-00071)，与 IPv4 ADD OSPF(0-00074) 同源约定
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020401/激活IPv6承载上下文_38276176.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00078:BFDALLINTFFLG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3:BFDALLINTFFLG
+    binding_type: fixed
+    variable_source: global_planned   # ③010155/020406 数据规划表显式 TRUE；020401 未配(走默认 FALSE)
+    value: "TRUE"
+    requiredness: optional   # OSPFv3 路径下绑 BFD 时为 TRUE(010155/020406)；020401 不配
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00078:VPNINSCAPSIMFLG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3:VPNINSCAPSIMFLG
+    binding_type: fixed
+    variable_source: global_planned
+    value: "TRUE"
+    requiredness: required   # VPN 多实例须取消环路检查(020406 md 说明: 否则导致 OSPF 路由引入失败)；与 IPv4 ADD OSPF(0-00074) 先例一致——绑参而非仅 rule 投影(020406 数据规划表显式行+md 说明双重强调)
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - binding_id: UDG@20.15.2@Task@0-00078:VIRTUALSYSFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3:VIRTUALSYSFLAG
+    binding_type: decision_driven   # ③跨特性分叉: 010155/020406 共网段=TRUE(全网规划/固定取值) vs 020401 未配(走默认 TRUE)；条件必选(共网段场景必填)，由 DP 0-00022(OSPFv3共网段模式) 决定
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00022
+    requiredness: conditional   # 共网段场景必填 TRUE，须与 ADD OSPFV3INTERFACE(0-00117) 接口级同时配
+    source_evidence_ids:
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+      - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+notes: "GWFD-010155/020401/020406 IPv6 OSPFv3 路径。VRFNAME 引用 ADD L3VPNINST(0-00071)(与 IPv4 ADD OSPF 0-00074 同源约定；③LST VPNINST 为查询命令非创建源)。VPNINSCAPSIMFLG=TRUE 取消VPN环路检查(VPN多实例必需,020406 md 明示否则路由引入失败)。VIRTUALSYSFLAG 共网段虚拟系统使能(decision_driven→DP 0-00022,进程级与接口级须同时配)。BFDALLINTFFLG=TRUE 使能 BFD(010155/020406)。与 IPv4 ADD OSPF(0-00074) 平行(由 DP 0-00017 ip-version 选择)。命令级审查(2026-07-02): 缺口24参数全为 OSPF 协议进阶(BFD间隔/SPF/Stub/Domain/SA等)，3特性数据规划表+脚本仅用 PROCID/ROUTERID/VRFNAME/BFDALLINTFFLG/VPNINSCAPSIMFLG/VIRTUALSYSFLAG 六参，严格按通用配置筛均不绑(进阶参数一律不绑)；PROCID 跨特性获取方法分叉(全网/本端)但取值同构,按 0-00074 先例保 global_planned；VPNINSCAPSIMFLG 绑参(020406 数据规划表显式行+md 说明双重强调,强于 0-00074 的'仅 md 说明');VIRTUALSYSFLAG 由 notes 备补升级为 decision_driven 绑定(DP 0-00022 已建模其预期取值)。投影 rule 0-00200(进程规格/Router-ID全网唯一/VPN环路检查条件/共网段)。"

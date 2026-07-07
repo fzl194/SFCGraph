@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00245
+owner_task_ref: UDG@20.15.2@Task@0-00116   # 挂 atom ADD IPV6PATHMTU
+rule_name: ADD IPV6PATHMTU 最大记录数 + 立即生效
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD IPV6PATHMTU
+  expression: |
+    ADD IPV6PATHMTU 命令最大记录数为 300（该命令规格显著小于多数接口/路由类命令）。
+    该命令执行后立即生效。
+    VPN 名称（VRFNAME）可通过 LST L3VPNINST 命令获取（查询口径，引用关系已由 VRFNAME binding 的 source_ref=0-00071:VRFNAME 表达）。
+violation_effect: 超规格（>300）新增失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md]
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00240~0-00249）。投影自命令 notes '最大记录数300'(显著小规格，区别于接口族 65535/子接口 262144) + '执行后立即生效' + 'VPN名称可通过LST L3VPNINST获取'(查询口径)。LST 查询为信息性提示，VRFNAME 引用关系由 binding 表达。"

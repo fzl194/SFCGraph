@@ -1,0 +1,55 @@
+task_id: UNC@20.15.2@Task@0-00003
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置AMUEPLCYCTRL
+task_layer: atom
+task_intent: 为指定用户(群)或网络切片配置 AM 策略和 UE 策略的控制参数（AMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD AMUEPLCYCTRL
+status: inferred
+source_evidence_ids:
+  - 增加AM策略和UE策略控制参数（ADD AMUEPLCYCTRL）_09652143.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00003:SUBRANGE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD AMUEPLCYCTRL:SUBRANGE
+    binding_type: variable
+    variable_source: global_planned      # 全网规划；ALL_USER / IMSI_PREFIX / HOME_USER 等用户范围
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/激活PCC基本功能_72467890.md, WSFD-223003/部署基于漫游地动态签约的分流策略控制（AMF）_82619543.md]
+  - binding_id: UNC@20.15.2@Task@0-00003:IMSIPRE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD AMUEPLCYCTRL:IMSIPRE
+    binding_type: variable
+    variable_source: global_planned      # 条件必选(SUBRANGE=IMSI_PREFIX 时)
+    requiredness: conditional
+    source_evidence_ids: [WSFD-223003/部署基于漫游地动态签约的分流策略控制（AMF）_82619543.md]
+  - binding_id: UNC@20.15.2@Task@0-00003:NSGRPID
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD AMUEPLCYCTRL:NSGRPID
+    binding_type: variable
+    variable_source: global_planned      # 条件必选；0=无效切片群组
+    requiredness: conditional
+    source_evidence_ids: [WSFD-109101/激活PCC基本功能_72467890.md]
+  - binding_id: UNC@20.15.2@Task@0-00003:ISAMASSOC
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD AMUEPLCYCTRL:ISAMASSOC
+    binding_type: variable
+    variable_source: global_planned      # optional；应用网络侧 AM 策略时 YES
+    requiredness: optional
+    source_evidence_ids: [WSFD-109101/激活PCC基本功能_72467890.md]
+  - binding_id: UNC@20.15.2@Task@0-00003:ISUEASSOC
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD AMUEPLCYCTRL:ISUEASSOC
+    binding_type: variable
+    variable_source: global_planned      # optional；应用网络侧 UE 策略时 YES
+    requiredness: optional
+    source_evidence_ids: [WSFD-109101/激活PCC基本功能_72467890.md]
+  - binding_id: UNC@20.15.2@Task@0-00003:DESC
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD AMUEPLCYCTRL:DESC
+    binding_type: variable
+    variable_source: local_planned       # 本端规划；描述便于记忆
+    requiredness: optional
+    source_evidence_ids: [WSFD-109101/激活PCC基本功能_72467890.md]
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_AMUEPLCYCTRL.md。
+  用该命令的特性：4（WSFD-223003/010201/230001/109101）。
+  真相 21 参，绑 6 个范式实际用到（SUBRANGE/IMSIPRE/NSGRPID/ISAMASSOC/ISUEASSOC/DESC）；
+  未绑 15 个 optional/条件冷门（MSISDNPRE/AMFAILPLCY/UEFAILPLCY/AMTERPLCY/UETERPLCY/MECTOMALLSW/NEARBY*
+  /DNN*PLCY*/REGPDUREASW/LOCAMPLCYSW 等）——按 §5 step1 "冷门不追全量"。
+  §6.B：UNC 缺 command_parameters.jsonl（全局见 rule 0-00001）。

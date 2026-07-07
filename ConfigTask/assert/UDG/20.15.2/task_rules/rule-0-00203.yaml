@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00203
+owner_task_ref: UDG@20.15.2@Task@0-00117   # 挂 atom ADD OSPFV3INTERFACE
+rule_name: OSPFv3接口前置/规格/IPv6使能/DR优先级约束
+rule_type: constraint_rule
+rule_scope: parameter
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:PROCID
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:AREAID
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:IFNAME
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:DRPRI
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:VIRTUALSYSFLAG
+  expression: "ADD OSPFV3INTERFACE 须满足：(1) 前置——必须先执行 ADD OSPFV3(OSPFv3进程) 与 ADD OSPFV3AREA(OSPFv3区域) 后才能使用该命令；(2) OSPFv3接口规格默认单进程1200(实际以服务规格文件为准)，命令最大记录数8000；(3) 接口上需要先使能 IPv6(SET IFIPV6ENABLE) 才能加入 OSPFv3；(4) 可以把多个接口配置到一个区域中(多接口重复执行，每接口一条命令)；(5) DRPRI=0 表示不参与 DR/BDR 选举，建议 VNF 配 0 避免被选为 DR/BDR(对端配非0)；共网段(VIRTUALSYSFLAG=TRUE)生效时命令 notes 称 DRPRI 自动取 0；(6) OSPFv3共网段须进程级(ADD OSPFV3)与接口级(本命令) VIRTUALSYSFLAG 同时配 TRUE，Tunnel 接口不支持。"
+violation_effect: 接口使能失败 / 接口规格超限 / DR/BDR 误选 / 共网段配置不一致
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids:
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+notes: "命令级审查(2026-07-02) 新建。IPv4 ADD OSPFNETWORK(rule 0-00192) 的 OSPFv3 镜像(OSPFv3 用 ADD OSPFV3INTERFACE 替代 IPv4 的 ADD OSPFNETWORK+OSPFINTERFACE 二合一)。投影自命令 notes(前置 OSPFV3进程+区域/接口规格1200/记录8000/接口须先使能IPv6/多接口可同区域/DRPRI=0避免VNF当选DR)。DRPRI 已绑参(fixed:0)。VIRTUALSYSFLAG 已绑参(conditional,与进程级须同时配,DP 0-00022 协调)。CFGROUTERIDFLAG 已绑参(fixed:FALSE)。"

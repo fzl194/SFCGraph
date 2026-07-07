@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@0-00204
+nf: UDG
+version: "20.15.2"
+task_logical_name: 接口应用流策略
+task_layer: atom
+task_intent: 将流策略应用到指定以太主接口/子接口的出入方向。复杂流分类生效的最后一步
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD QOSAPPLICATION
+status: inferred   # IPFD命令；CommandParameter 待抽取(缺参数)
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00204:POLICYNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSAPPLICATION:POLICYNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD MQCPOLICY:POLICYNAME (0-00203)
+    source_ref: UDG@20.15.2@Task@0-00203:POLICYNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00204:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSAPPLICATION:IFNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00204:DIRECTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSAPPLICATION:DIRECTION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (inbound/outbound)
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "流策略应用到接口才生效。CommandParameter 待抽取。命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00290(最大记录数 131072 + 自动化配置维护助手前置查询 DSP OPSASSISTSTATE + LAYER 默认 default)；binding=3(命中真相 4 项中的 3 项主项)，未含 LAYER(命令真相 optional，默认 default 满足主场景，§4.3 ③ 缺口标注)。"

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00016
+owner_task_ref: UDG@20.15.2@Task@2-00008
+rule_name: 终端异常下行流量检测 license 与APN前置依赖
+rule_type: dependency_rule
+rule_scope: feature
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Feature@GWFD-020305
+    - UDG@20.15.2@Task@0-00020
+  expression: 须先打开 license LKV3G5ADTD01(SET LICENSESWITCH)；并已通过 ADD APN(0-00020) 配置目标 APN，再 ADD ABNTRAFFICDT 开启检测。
+violation_effect: 异常下行流量检测不生效
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]

@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00378
+owner_task_ref: UDG@20.15.2@Task@0-00093   # 挂 atom SET EXTOTTMATCHSW
+rule_name: SET EXTOTTMATCHSW 全局唯一 + 立即生效 + 高危 + 系统初始 DISABLE
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00093
+  expression: |
+    SET EXTOTTMATCHSW 命令最大记录数为 1（全局唯一实例，OTT 业务规则匹配开关统一设置）。
+    立即生效：本命令执行后立即生效。
+    本命令属于高危命令，操作不当会导致性能下降明显，请谨慎使用并联系华为技术支持协助操作。
+    系统初始记录：存在系统初始记录，初始值为 IPV4MATCH=DISABLE / IPV6MATCH=DISABLE。
+    协同约束：仅当 SET EXTOTTMATCHSW 使能后，FLOWFILTER(FLOWFILTERTYPE=EXTEROTTDB) 才能匹配 OTT 业务规则库；先 ADD FLOWFILTER 再 SET EXTOTTMATCHSW。
+    适用 NF：PGW-U、UPF。
+violation_effect: 重复执行覆盖前值；未先建 FLOWFILTER 时 SET 开关无效；非立即生效导致 OTT 业务规则匹配未生效
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务匹配策略/百万级业务规则库/全局OTT开关/OTT业务规则匹配功能是否使能（SET EXTOTTMATCHSW）_06453258.md
+  - GWFD-110321/激活支持OTT业务规则库功能_05455409.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 1 + 立即生效 + 高危 + 系统初始 DISABLE 表) + ③FLOWFILTER 协同。GWFD-110321 百万级 OTT 业务规则库专属。"

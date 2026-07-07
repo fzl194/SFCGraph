@@ -1,0 +1,16 @@
+task_id: UDG@20.15.2@Task@00104
+task_logical_name: 收尾
+task_layer: compound
+nf: UDG
+version: 20.15.2
+task_summary: "缺省费率→防欺诈(可选)→刷新生效"
+task_relations:
+  - from_task_ref: UDG@20.15.2@Task@00013
+    to_task_ref: UDG@20.15.2@Task@00014
+    relation_type: precedes
+    requiredness: optional
+  - from_task_ref: UDG@20.15.2@Task@00014
+    to_task_ref: UDG@20.15.2@Task@00015
+    relation_type: must_be_last
+status: active
+source_evidence_ids: []

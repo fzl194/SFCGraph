@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00014
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置防欺诈URR列表
+task_layer: atom
+task_intent: 将有欺诈风险的费率加入防欺诈费率列表（ADD SPECURRGRPLIST，可选）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SPECURRGRPLIST
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00014:URRGROUPNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD SPECURRGRPLIST:URRGROUPNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+notes: |
+  整个 atom 可选，由 DecisionPoint 0-00003（防欺诈开关）决定是否启用。
+  命令级审查(2026-07-02):
+  - 未绑 CFGDOMAINNAME（命令真相 optional，③ 无特性数据规划表用到，冷门不追）。
+  - URRGROUPNAME 现有 binding 准确（required + reference→0-00002）。
+  - 新增 atom-挂 rule 0-00114（cardinality 最大记录数40000）+ 0-00115（防欺诈流量统计行为约束：仅统计离线URR流量）。

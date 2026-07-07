@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@0-00076
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加OSPF运行接口网段(IPv4)
+task_layer: atom
+task_intent: 在OSPF进程区域下增加运行OSPF协议的接口网段（PROCID+AREAID+IPADDRESS+WILDCARDMASK）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD OSPFNETWORK
+status: inferred   # 命令级审查(2026-07-02): draft→inferred，4 必选参数齐全(PROCID/AREAID/IPADDRESS/WILDCARDMASK)
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00076:PROCID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:PROCID
+    binding_type: reference
+    variable_source: reference   # 引用 ADD OSPF
+    source_ref: UDG@20.15.2@Task@0-00074:PROCID
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+  - binding_id: UDG@20.15.2@Task@0-00076:AREAID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:AREAID
+    binding_type: reference
+    variable_source: reference   # 引用 ADD OSPFAREA
+    source_ref: UDG@20.15.2@Task@0-00075:AREAID
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+  - binding_id: UDG@20.15.2@Task@0-00076:IPADDRESS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:IPADDRESS
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+  - binding_id: UDG@20.15.2@Task@0-00076:WILDCARDMASK
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:WILDCARDMASK
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+task_rules_ref: [UDG@20.15.2@TaskRule@0-00192]
+notes: "GWFD-010155 IPv4 OSPF 路径。PROCID 引用 ADD OSPF(0-00074)，AREAID 引用 ADD OSPFAREA(0-00075)。IPADDRESS/WILDCARDMASK 全网规划，脚本对多网段重复执行(10.8.7.0/0.0.0.15 与 10.8.8.0/0.0.0.15)。可选 ADD OSPFINTERFACE(接口属性,优先级=0避免VNF被选DR/BDR) 记此 notes。命令级审查(2026-07-02): 缺口仅 DESCRIPTION(可选描述,③2特性数据规划表/脚本均未用)严格筛不绑；4 必选参数全绑且②③一致。IPADDRESS/WILDCARDMASK 在 010155 脚本对多网段重复执行属正常迭代(每网段一条命令)，非单参多值。原仅引 010155，补 010104(同用此命令)。"

@@ -1,0 +1,17 @@
+task_id: UDG@20.15.2@Task@00103
+task_logical_name: 规则与用户模板绑定
+task_layer: compound
+nf: UDG
+version: 20.15.2
+task_summary: "配置规则→用户模板→绑定"
+task_relations:
+  - from_task_ref: UDG@20.15.2@Task@00010
+    to_task_ref: UDG@20.15.2@Task@00011
+    relation_type: precedes
+    propagated_context: RULENAME
+  - from_task_ref: UDG@20.15.2@Task@00011
+    to_task_ref: UDG@20.15.2@Task@00012
+    relation_type: precedes
+    propagated_context: USERPROFILENAME
+status: active
+source_evidence_ids: []

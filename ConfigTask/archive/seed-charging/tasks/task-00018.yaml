@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@00018
+task_logical_name: 设置全局计费参数
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@SET UPGLBCHGPARA
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:QUOTAAPPACTTYPE
+        binding_type: variable
+        variable_source: local_planned
+        note: 配额申请动作类型
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:EVENTCHGMOD
+        binding_type: variable
+        variable_source: local_planned
+        note: 事件计费模式
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:CHGCHECKSW
+        binding_type: variable
+        variable_source: decision_driven
+        note: 计费校验开关
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:CREDITPOOLSW
+        binding_type: variable
+        variable_source: decision_driven
+        note: Credit Pooling开关(与DefaultQuota互斥)
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:VOLUMEBKPSW
+        binding_type: variable
+        variable_source: decision_driven
+        note: 流量备份开关
+task_category: 配置
+status: active
+source_evidence_ids: []

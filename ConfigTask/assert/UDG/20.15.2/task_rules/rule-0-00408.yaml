@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00408
+owner_task_ref: UDG@20.15.2@Task@0-00250   # 挂 atom SET IPALLOCRULE
+rule_name: SET IPALLOCRULE 全局唯一性与三级规则约束
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET IPALLOCRULE
+  expression: "SET IPALLOCRULE 命令最大记录数为 1(全局唯一实例，非 per-APN)。支持三种地址分配规则优先级配置；不同优先级的规则不可以配置为相同；三级优先级独立配置，配置低优先级时不要求必须配置高优先级。全局默认第一优先级开关使能、第一优先级规则为基于 APN 映射的地址范围分配地址，第二/三优先级规则开关不使能。命令执行后只对新激活用户生效。"
+violation_effect: 超过 1 条实例配置失败；不同优先级规则相同导致分配歧义
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes '最大记录数为1'+'支持三种地址分配规则优先级'+'不同优先级规则不可相同'+'三级独立配置'+'全局默认第一级使能'+'只对新激活用户生效'。入不转板场景(GWFD-020482)取第一级 APN 映射、二三级不使能。FIRSTRULE 位域格式 APN-{0|1}&LOCATION-{0|1}&SMF-{0|1}。"

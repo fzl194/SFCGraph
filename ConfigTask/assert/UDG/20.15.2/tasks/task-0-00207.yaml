@@ -1,0 +1,43 @@
+task_id: UDG@20.15.2@Task@0-00207
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加基本ACL规则(VNRS IPv4)
+task_layer: atom
+task_intent: 增加基本IPv4 ACL规则(仅基于源IP地址匹配)。范围段2000-2999
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ACLRULEBAS4
+status: inferred   # 命令级审查(2026-07-02): binding 准确(基本五参),仅源IP匹配;IPFD命令CommandParameter 缺(rule 0-00076 标记)
+source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md, IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00207:ACLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEBAS4:ACLNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD ACLGROUP:ACLNAME (0-00197)
+    source_ref: UDG@20.15.2@Task@0-00197:ACLNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00207:ACLRULENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEBAS4:ACLRULENAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00207:ACLACTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEBAS4:ACLACTION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (Permit/Deny)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00207:ACLSOURCEIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEBAS4:ACLSOURCEIP
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(源端主机IP)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00207:ACLSRCWILD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEBAS4:ACLSRCWILD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(反掩码)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+notes: "基本ACL(ACLNAME 2000-2999)仅基于源IP匹配。命令级审查(2026-07-02): ACLRULEID/ACLFRAGTYPE/VRFNAME/ACLRULEDESCRIPTION ③ 未使用→不绑(冷门参数)；前置 ACLGROUP/范围段2000-2999→rule 0-00076 投影。CommandParameter 待抽取。"

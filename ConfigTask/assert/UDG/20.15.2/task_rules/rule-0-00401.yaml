@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00401
+owner_task_ref: UDG@20.15.2@Task@0-00032   # 挂 atom ADD CATEGORYPROP
+rule_name: ADD CATEGORYPROP 最大记录数规格
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD CATEGORYPROP
+  expression: "ADD CATEGORYPROP 命令最大记录数为 500；超过规格新增失败。命令执行后立即生效。"
+violation_effect: 超规格新增失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes '该命令最大记录数为500'+'执行后立即生效'。CATEGORYPROP 为带宽控制分类属性对象，供 BWMSERVICE 引用。"

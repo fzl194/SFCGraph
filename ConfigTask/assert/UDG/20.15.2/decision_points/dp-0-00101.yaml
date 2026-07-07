@@ -1,0 +1,34 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00101
+owner_task_ref: UDG@20.15.2@Task@0-00037   # 挂 atom ADD BWMRULE
+decision_name: BWMRULE 规则类型分叉（SUBSCRIBER_SPECIFIC vs GROUP_SPECIFIC）
+decision_question: |
+  ADD BWMRULE 的 BWMRULETYPE 取哪个分支？二选一（UDG 2 特性）：
+  - SUBSCRIBER_SPECIFIC（用户级规则）：020354 基于业务的 Shaping 用户级规则场景；BWMRULENAME 必配。
+  - GROUP_SPECIFIC（用户组级规则）：110301 基于终端系统的码率差异化控制 用户组级规则场景；BWMRULENAME 必配。
+  命令真相 BWMRULETYPE conditional 默认无；BWMRULENAME conditional（GROUP_SPECIFIC/SUBSCRIBER_SPECIFIC 时生效）。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+options:
+  - option_id: opt-bwmrule-subscriber-specific
+    option_name: 用户级规则
+    option_value: SUBSCRIBER_SPECIFIC
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00037:BWMRULETYPE, effect_type: sets_value, effect_detail: value=SUBSCRIBER_SPECIFIC（命令真相枚举值）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00037:BWMRULENAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传规则名（020354 用户级）}
+  - option_id: opt-bwmrule-group-specific
+    option_name: 用户组级规则
+    option_value: GROUP_SPECIFIC
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00037:BWMRULETYPE, effect_type: sets_value, effect_detail: value=GROUP_SPECIFIC（命令真相枚举值）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00037:BWMRULENAME, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传规则名（110301 用户组级）}
+default_option: opt-bwmrule-subscriber-specific
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00098~0-00101）。管理 ADD BWMRULE 的 BWMRULETYPE 2 路分叉编排 + BWMRULENAME 配套必选。
+  依据：跨特性 BWMRULETYPE 取值分叉（SUBSCRIBER_SPECIFIC 020354 vs GROUP_SPECIFIC 110301）；命令真相 BWMRULENAME 在 GROUP_SPECIFIC/SUBSCRIBER_SPECIFIC 时生效（其他类型 BWMRULENAME 不配，命令类型枚举完整）。
+  原 pass-1 录制：BWMRULETYPE 静态 variable（无法表达 SUBSCRIBER vs GROUP 二选一）；BWMRULENAME 静态 conditional（无法表达 BWMRULETYPE 类型决定 BWMRULENAME 必选）。按 SKILL §4.5 升级为 decision_driven：2 个 option 互斥，default_option=SUBSCRIBER_SPECIFIC（020354 主特性路径）。
+  注：本决策仅决定 BWMRULETYPE/BWMRULENAME，不影响 USERGROUPTYPE/USERGROUPNAME/BWMSERVICENAME/UPBWMCTRLNAME1/DNBWMCTRLNAME1/BWMRULEPRI（均 required/conditional 跨特性一致）。

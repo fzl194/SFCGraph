@@ -1,0 +1,55 @@
+task_id: UDG@20.15.2@Task@00005
+task_logical_name: 配置三四层过滤器-IPv6
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD FILTERIPV6
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:FILTERNAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 过滤器名
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:L34PROTTYPEV6
+        binding_type: fixed
+        fixed_value: STRING
+        note: 输入类型固定STRING
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:L34PROTOCOL
+        binding_type: variable
+        variable_source: local_planned
+        note: 三四层协议
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:SVRIPMODE
+        binding_type: variable
+        variable_source: peer_planned
+        note: 服务器IP模式(IMS场景与对端协商)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:SVRIPV6
+        binding_type: variable
+        variable_source: peer_planned
+        note: 服务器IPv6地址(IMS场景)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:SVRIPV6MASKTYPE
+        binding_type: variable
+        variable_source: peer_planned
+        note: IPv6掩码类型
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:SVRIPV6MASKLEN
+        binding_type: variable
+        variable_source: peer_planned
+        note: IPv6掩码长度
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:MSSTARTPORT
+        binding_type: variable
+        variable_source: decision_driven
+        note: IMS=与对端协商/any=本端规划
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:MSENDPORT
+        binding_type: variable
+        variable_source: decision_driven
+        note: IMS=与对端协商/any=本端规划
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:SVRSTARTPORT
+        binding_type: variable
+        variable_source: decision_driven
+        note: IMS=与对端协商/any=本端规划
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTERIPV6:SVRENDPORT
+        binding_type: variable
+        variable_source: decision_driven
+        note: IMS=与对端协商/any=本端规划
+task_category: 配置
+status: active
+source_evidence_ids: []

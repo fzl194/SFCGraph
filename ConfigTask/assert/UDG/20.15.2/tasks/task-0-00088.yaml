@@ -1,0 +1,37 @@
+task_id: UDG@20.15.2@Task@0-00088
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPFarm服务器
+task_layer: atom
+task_intent: 为 IP Farm 配置重定向 server 目标地址（IPv4/IPv6）及可选 URL，作为重定向目标与心跳检测对端
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPFARMSERVER
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred；B03 批次新建；命令命中 mml_commands.jsonl，CommandParameter 待 CommandGraph 抽取(§6.B)
+source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00088:IPFARMNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARMSERVER:IPFARMNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD IPFARM 配置的 IPFarm 名）
+    source_ref: UDG@20.15.2@Task@0-00087:IPFARMNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - {binding_id: UDG@20.15.2@Task@0-00088:IPVERSION, parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARMSERVER:IPVERSION, binding_type: variable, variable_source: local_planned, requiredness: required, value: IPV4, source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]}
+  - binding_id: UDG@20.15.2@Task@0-00088:SERVERIPV4
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARMSERVER:SERVERIPV4
+    binding_type: variable
+    variable_source: decision_driven   # 跨特性源分叉：110281/110282=与对端协商(peer, Portal/Proxy 由第三方规划)；020253=全网规划/本端规划(P-CSCF 地址)。升 DP 0-00153
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00153
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - {binding_id: UDG@20.15.2@Task@0-00088:URL, parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARMSERVER:URL, binding_type: variable, variable_source: peer_planned, requiredness: optional, source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00088:DEFAULTACT, parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARMSERVER:DEFAULTACT, binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md]}
+notes: |
+  GWFD-110281(用户Portal) 数据规划表 SERVERIPV4/URL=与对端协商(重定向 server 地址由第三方 Portal/业务平台规划)。
+  GWFD-110282(Web Proxy) 数据规划表 SERVERIPV4=与对端协商(Proxy Server 地址)。
+  GWFD-020253(P-CSCF故障IMS恢复) 数据规划表 SERVERIPV4=全网规划(IP-Farm1)/本端规划(IP-Farm2)，P-CSCF 服务器地址。
+  SERVERIPV4 取值样例多条(192.168.10.123/124)对应 IP Farm 多 server 负载均衡——重复执行本命令增加 server。
+  URL 参数: GWFD-110281 列(GWFD-110282 未列)；SET SRVCOMMONPARA 开启内嵌IPv4地址的IPv6业务处理时建议配 URL。
+  DEFAULTACT: md 注释提及无法重定向时 PASS 放行(可选)；mml_commands 待核，暂列 optional。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。
+  命令级审查(2026-07-02) 补审：(1)SERVERIPV4 variable_source 由 peer_planned 升 decision_driven(+DP 0-00153)——跨特性源分叉(110281/110282=与对端协商 vs 020253=全网/本端规划)，原单一 peer_planned 无法覆盖 P-CSCF 场景；source_evidence_ids 增补 GWFD-020253。(2)缺口 2(SERVERIPV6/APPENDINFONAME)均命令真相 optional 且 3 特性全用 IPv4(IPVERSION=IPV4)未用到，按"通用配置"门槛不绑(SERVERIPV6 为 IPv6 路径冷门，APPENDINFONAME 重定向携带信息冷门)。(3)补 atom rule 0-00402(cardinality 7200 + 同 IPFarm 内虚拟 IP 唯一 + 90%阈值告警)。注：任务简报提及"SERVERIPV4/SERVERIPV6 跨特性，reference→0-00087"——经核 SERVERIPV4 是具体 IP 地址值(非引用名)，0-00087 引用关系仅在 IPFARMNAME(reference)；SERVERIPV6 无任何特性用到不绑。

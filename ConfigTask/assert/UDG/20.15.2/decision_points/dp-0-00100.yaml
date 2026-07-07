@@ -1,0 +1,84 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00100
+owner_task_ref: UDG@20.15.2@Task@0-00036   # 挂 atom ADD BWMCONTROLLER
+decision_name: BWMCONTROLLER 控制类型分叉（SHAPING-MANUAL/SHAPING-AUTO/CAR）
+decision_question: |
+  ADD BWMCONTROLLER 的 CTRLTYPE 取哪个分支？三路互斥（UDG 3 特性）：
+  - SHAPING（基础整形 MANUAL）：020354 URL 整形 + 110313 简单场景（脚本 L67 WORKMODE=MANUAL），必配 RATE/QUEDEPTH，可选 MAXFDNUM。
+  - SHAPING-AUTO（智能组级整形 WORKMODE=AUTO）：110313 智能组级带宽控制场景（脚本 L73 WORKMODE=AUTO），必配 RATE/QUEDEPTH + SRVLEVELSPEC/USERFAIREN/WORKMODE=AUTO + MAXPKTLOSTRATE/PKTLOSTRATEDTL/ASSUREMODE（保障模式 EXPFIRST）。
+  - CAR（承诺接入速率）：110301 基于终端系统的码率差异化控制，必配 CIR/CBS/PIR/PBS/GREEN=PASS/YELLOW=PASS/RED=DISCARD。
+  命令真相 CTRLTYPE optional 默认无；RATE/QUEDEPTH conditional（SHAPING 必选）；CIR/CBS/PIR/PBS conditional（CAR 必选）。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+  - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+options:
+  - option_id: opt-bwmc-shaping-manual
+    option_name: SHAPING 基础整形 MANUAL
+    option_value: SHAPING_MANUAL
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CTRLTYPE, effect_type: sets_value, effect_detail: value=SHAPING}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:RATE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传整形速率（020354 简单整形场景）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:QUEDEPTH, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传队列深度}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CIR, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CBS, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PIR, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PBS, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:GREEN, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:YELLOW, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:RED, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:SRVLEVELSPEC, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:USERFAIREN, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:WORKMODE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，走 MANUAL 默认）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:MAXPKTLOSTRATE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PKTLOSTRATEDTL, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:ASSUREMODE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-bwmc-shaping-auto
+    option_name: SHAPING 智能组级 AUTO
+    option_value: SHAPING_AUTO
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CTRLTYPE, effect_type: sets_value, effect_detail: value=SHAPING}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:RATE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传整形速率（110313 智能组级）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:QUEDEPTH, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传队列深度}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:SRVLEVELSPEC, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传业务等级规格 110313=10 或 3}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:USERFAIREN, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传 ENABLE（110313 强制使能）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:WORKMODE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传 AUTO（110313 智能组级）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:MAXPKTLOSTRATE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传最大丢包率（WORKMODE=AUTO 时必选）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PKTLOSTRATEDTL, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传丢包率差值（WORKMODE=AUTO 时必选）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:ASSUREMODE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传保障模式 EXPFIRST（WORKMODE=AUTO 时必选）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CIR, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CBS, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PIR, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PBS, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:GREEN, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:YELLOW, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:RED, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+  - option_id: opt-bwmc-car
+    option_name: CAR 承诺接入速率
+    option_value: CAR
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CTRLTYPE, effect_type: sets_value, effect_detail: value=CAR}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CIR, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传承诺信息速率（110301 CAR 必选）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:CBS, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传承诺突发缓存}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PIR, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传峰值信息速率}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PBS, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传峰值突发缓存}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:GREEN, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传 PASS（绿色动作）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:YELLOW, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传 PASS（黄色动作）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:RED, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传 DISCARD（红色动作）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:RATE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，CAR 走 CIR/PIR 体系）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:QUEDEPTH, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:SRVLEVELSPEC, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:USERFAIREN, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:WORKMODE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，走 MANUAL 默认）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:MAXPKTLOSTRATE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:PKTLOSTRATEDTL, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00036:ASSUREMODE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传）}
+default_option: opt-bwmc-shaping-manual
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00098~0-00101）。管理 ADD BWMCONTROLLER 的 CTRLTYPE 3 路分叉编排 + 16 个配套必选/必不传参数。
+  依据：跨特性 CTRLTYPE 分叉（SHAPING 020354/110313 vs CAR 110301）；SHAPING 内部又分 MANUAL（020354/110313 简单）与 AUTO（110313 智能组级）——WORKMODE 决定 SHAPING 子分支。
+  原 pass-1 录制：CTRLTYPE 静态 fixed=SHAPING，仅覆盖 020354；110301 CAR + 110313 AUTO 全部 14 个参数漏绑。按 SKILL §4.5 升级为 decision_driven：3 个 option 互斥，default_option=SHAPING-MANUAL（020354 主特性路径）。
+  注：本决策是 BWM 族核心演进债（§B 标记的"多用途 atom"——同一 BWMCONTROLLER atom 被 3 个特性以不同 CTRLTYPE 复用）。MAXFDNUM 三特性可选不参与 DP（保持 optional）；命令真相 CTRLTYPE optional 在本 DP 固定为 SHAPING/CAR 二选一（SHAPING 内部 MANUAL/AUTO 子分支）。

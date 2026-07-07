@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00143
+owner_task_ref: UDG@20.15.2@Task@0-00045   # 挂 atom ADD POOLBINDGROUP
+rule_name: ADD POOLBINDGROUP 最大记录数 + 每组每VPN地址池数上限 + 绑定后VPN不可改
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD POOLBINDGROUP
+  expression: |
+    ADD POOLBINDGROUP 命令最大记录数为 80000。
+    每个地址池组下，对每个 VPN 实例（含不配置 VPN 的场景），最多绑定 16 个相同 VPN 的 IPv4 地址池 + 16 个相同 VPN 的 IPv6 地址池；一个地址池可被多个地址池组绑定。
+    地址池已绑定到地址池组后，不允许修改该地址池（ADD POOL / MOD POOL）的 VPN 参数。
+    前置：执行 ADD POOLBINDGROUP 前必须先执行 ADD POOLGROUP 配置地址池组。
+    执行后只对新激活用户生效。
+violation_effect: 超规格新增失败；超每组每 VPN 16/16 上限失败；改已绑定池 VPN 致绑定关系异常；未先建 POOLGROUP 致引用悬空
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数80000' + '每组每VPN最多16个IPv4池+16个IPv6池' + '绑定后不允许改POOL的VPN' + '必须先执行ADD POOLGROUP' + '只对新激活用户生效'。"

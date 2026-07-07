@@ -1,0 +1,51 @@
+task_id: UDG@20.15.2@Task@0-00020
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置APN
+task_layer: atom
+task_intent: 配置APN（接入点名）及其属性（如仅统计7层应用层流量）。APN为多特性共享基础对象
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD APN
+status: inferred   # pass-3(B02 批次)增量补 HASVPN/VPNINSTANCE(GWFD-010104)；多特性共享基础对象，参数持续补全中
+source_evidence_ids: [GWFD-020308/激活7层流量统计_13442390.md, GWFD-010104/激活地址分配方式_71653959.md, GWFD-010151/激活接入控制_69675201.md, GWFD-010251/配置系统过载特性_05341700.md, GWFD-020403/激活IPv4v6双栈接入_38276180.md, GWFD-110611/激活基于APN的NB-IoT终端接入速率控制_70375132.md, GWFD-110612/激活基于服务PLMN的NB-IoT终端接入速率控制_70415328.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00020:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APN:APN
+    binding_type: decision_driven   # 跨特性源分叉: 多数特性本端规划; NB-IoT/eMTC 速率控制(110611/110612/110646/110647)需与控制面一致=peer。由 DP 0-00065 选
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00065
+    requiredness: required
+    source_evidence_ids: [GWFD-020308/激活7层流量统计_13442390.md, GWFD-010104/激活地址分配方式_71653959.md, GWFD-010151/激活接入控制_69675201.md, GWFD-010251/配置系统过载特性_05341700.md, GWFD-110611/激活基于APN的NB-IoT终端接入速率控制_70375132.md, GWFD-110612/激活基于服务PLMN的NB-IoT终端接入速率控制_70415328.md]
+  - binding_id: UDG@20.15.2@Task@0-00020:APPLAYERVOLUME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APN:APPLAYERVOLUME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；ENABLE=仅L7统计，DISABLE=L7+L3/L4
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020308/激活7层流量统计_13442390.md]
+  - binding_id: UDG@20.15.2@Task@0-00020:HASVPN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APN:HASVPN
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表(GWFD-010104): 本端规划
+    requiredness: conditional   # 启用APN的VPN绑定时必填
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00020:VPNINSTANCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APN:VPNINSTANCE
+    binding_type: reference
+    variable_source: reference   # 数据规划表(GWFD-010104/020403): 已配置数据中获取(可用 LST VPNINST 查询)；引用 ADD VPNINST
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE
+    requiredness: conditional   # HASVPN=ENABLE 时必填
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-020403/激活IPv4v6双栈接入_38276180.md]
+  - binding_id: UDG@20.15.2@Task@0-00020:HASVPNIPV6
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APN:HASVPNIPV6
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表(GWFD-020403 双栈): 本端规划
+    requiredness: conditional   # IPv6 VPN 绑定时必填(双栈/IPv6 场景)
+    source_evidence_ids: [GWFD-020403/激活IPv4v6双栈接入_38276180.md]
+  - binding_id: UDG@20.15.2@Task@0-00020:VPNINSTANCEIPV6
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD APN:VPNINSTANCEIPV6
+    binding_type: reference
+    variable_source: reference   # 数据规划表(GWFD-020403): 已配置数据中获取(可用 LST VPNINST 查询)；引用同一 ADD VPNINST 实例
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE
+    requiredness: conditional   # HASVPNIPV6=ENABLE 时必填
+    source_evidence_ids: [GWFD-020403/激活IPv4v6双栈接入_38276180.md]
+notes: "ADD APN 为 APN管理 基础命令，跨特性共享(GWFD-020308/GWFD-020305/GWFD-010104/GWFD-010151/GWFD-010251 前置)。pass-1 录 APN+APPLAYERVOLUME(GWFD-020308)；pass-3(B02 批次)补 HASVPN+VPNINSTANCE(GWFD-010104)；命令级审查(2026-07-02)补双栈 HASVPNIPV6+VPNINSTANCEIPV6(GWFD-020403) 并把 APN 名称源升级 decision_driven(NB-IoT/eMTC 速率控制需与控制面一致→DP 0-00065)，投影 10000 上限→rule 0-00150。APPLAYERVOLUME=ENABLE 影响计费流量统计口径(仅L7)。未绑冷门参数(命令真相 optional 且无特性数据规划表用到): PSEUDOACTSWITCH/RESTORPGWSWITCH/PDTNSWITCH/HEADENGRAYLIST/CFGDOMAINNAME，按通用配置门槛不绑。"

@@ -1,0 +1,17 @@
+task_id: UDG@20.15.2@Task@00008
+task_logical_name: 绑定三四层过滤条件到流过滤器
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD FLTBINDFLOWF
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FLTBINDFLOWF:FLOWFILTERNAME
+        binding_type: reference
+        source_ref: ""  # ←ADD FLOWFILTER
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FLTBINDFLOWF:FILTERNAME
+        binding_type: reference
+        source_ref: ""  # ←ADD FILTER/FILTERIPV6
+task_category: 配置
+status: active
+source_evidence_ids: []

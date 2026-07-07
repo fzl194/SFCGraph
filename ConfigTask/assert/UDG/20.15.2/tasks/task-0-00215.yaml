@@ -1,0 +1,68 @@
+task_id: UDG@20.15.2@Task@0-00215
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置并组装IPsec安全策略(策略+绑提议+绑IKE Peer)
+task_layer: atom
+task_intent: 增加IPsec安全策略(策略名/序列号/模式/模板模式/引用ACL编号)，并经 ADD PROPATTACHIPSECPROPOSAL 引用安全提议、经 ADD ATTACHIKEPEER 绑定IKE对等体。多 Sequence 场景下重复该组装
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPSECPOLICY
+status: inferred  # 命令级审查(2026-07-02): 22 冷门缺口(SA计长/PFS/DSCP/抗重放/限速/工作模式/模板名等IPsec协议进阶)按通用配置门槛不绑; 8/30 已绑, 4 个 reference 命中
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（多Sequence的IPsec策略）_01_10008.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00215:POLICYNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPOLICY:POLICYNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00215:SEQUENCENUMBER
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPOLICY:SEQUENCENUMBER
+    binding_type: variable
+    variable_source: peer_planned   # 对端协商；多Sequence场景多条
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00215:POLICYMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPOLICY:POLICYMODE
+    binding_type: variable
+    variable_source: peer_planned   # 对端协商；IKE协商= Isakmp
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00215:TEMPLATEMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPOLICY:TEMPLATEMODE
+    binding_type: variable
+    variable_source: peer_planned   # 对端协商；None/Template(被动端)
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00215:ACLNUMBER
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSECPOLICY:ACLNUMBER
+    binding_type: reference
+    variable_source: reference   # 引用 ADD ACLGROUPIPSEC:ACLNAME (0-00211)，规则组为编号时用 ACLNUMBER
+    source_ref: UDG@20.15.2@Task@0-00211:ACLNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00215:IPSECPROPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD PROPATTACHIPSECPROPOSAL:IPSECPROPNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD IPSECPROPOSALIPSEC:PROPOSALNAME (0-00212)
+    source_ref: UDG@20.15.2@Task@0-00212:PROPOSALNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00215:IKEPEERNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ATTACHIKEPEER:IKEPEERNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD IKEPEER:PEERNAME (0-00214)
+    source_ref: UDG@20.15.2@Task@0-00214:PEERNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md]
+  - binding_id: UDG@20.15.2@Task@0-00215:PEERPRIORITY
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ATTACHIKEPEER:PEERPRIORITY
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；主备隧道场景多Peer优先级
+    requiredness: required
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md]
+notes: "聚合 atom: ADD IPSECPOLICY(建策略) + ADD PROPATTACHIPSECPROPOSAL(绑提议) + ADD ATTACHIKEPEER(绑IKE Peer)。多 Sequence 场景(主备/多感兴趣流)按 SEQUENCENUMBER 重复该组装。CommandParameter 待抽取。命令级审查(2026-07-02): 22 冷门缺口(ACLNAME/SA计长/PFS/DSCP入出/抗重放+窗口/分片标记/限速/日志/工作模式/自动切回/ACL类型/ESN/TFC/模板名)命令真相均 conditional/IPSec协议进阶且 4 IPSec 场景数据规划表均未用到, 按通用配置门槛不绑; 8/30 已绑(POLICYNAME+SEQUENCENUMBER+POLICYMODE+TEMPLATEMODE+ACLNUMBER+IPSECPROPNAME+IKEPEERNAME+PEERPRIORITY); 4 个 reference 命中 0-00211:ACLNAME/0-00212:PROPOSALNAME/0-00214:PEERNAME 正确; PEERPRIORITY 016004 主备隧道场景必填, WORKMODE/AUTOSWITCHBACK 仅 016004 场景显式, 4场景冷门, 不绑(命令真相 conditional)。"

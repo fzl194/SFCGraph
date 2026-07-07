@@ -1,0 +1,94 @@
+task_id: UDG@20.15.2@Task@0-00062
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPv4静态路由
+task_layer: atom
+task_intent: 增加IPv4静态路由（目的=冗余备份重定向IP→出接口=Tunnel），将下行流量导入GRE备份隧道；可选下行缺省低优先级用户网段路由
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD SRROUTE
+status: inferred   # 命令级审查(2026-07-02)：覆盖 010107/010155/015002/015004 多场景，跨场景分叉已 DP 化
+decision_refs:
+  - UDG@20.15.2@DecisionPoint@0-00075   # ADD SRROUTE 场景选择(atom级)
+  # 010155 静态+BFD 场景亦由 feature 级 DP dp-0-00017(opt-route-static-bfd-ipv4) 选定，协同
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN缺省路由组网）_72489253.md
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00062:AFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:AFTYPE
+    binding_type: fixed
+    value: ipv4unicast   # 固定取值
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:PREFIX
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:PREFIX
+    binding_type: reference
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨场景取源分叉——010107=ref(0-00055 重定向IP/32)；010155/015002/015004=peer_planned
+    source_ref: UDG@20.15.2@Task@0-00055:IPV4ADDRESS   # 默认场景(010107)；其余场景取源见 DP 0-00075
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:MASKLENGTH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:MASKLENGTH
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(重定向路由=32, 用户网段路由=24)
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:VRFNAME
+    binding_type: reference
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨场景取源分叉——010107=ref(0-00041 VPNINST)；010155=ref L3VPNINST(0-00071,vpn-s2b)；015004=vrf1
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE   # 默认场景(010107)；其余场景见 DP 0-00075
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:IFNAME
+    binding_type: reference
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨场景分叉——010107=ref(0-00056 GRE Tunnel)；010155=fixed Invalid0；015004=Tunnel10/Invalid0
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME   # 默认场景(010107)；其余场景见 DP 0-00075
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:BFDENABLE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:BFDENABLE
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨场景分叉——010107/015004=FALSE；010155 静态+BFD=TRUE。原 fixed FALSE 对静态+BFD 场景错误
+    requiredness: conditional   # 由 DP 0-00075 场景选定：静态+BFD 场景=TRUE，其余=FALSE/不配
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md
+  - binding_id: UDG@20.15.2@Task@0-00062:DHCPENABLE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:DHCPENABLE
+    binding_type: fixed
+    value: FALSE
+    requiredness: optional
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:NEXTHOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:NEXTHOP
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：取源分叉——010155/015004=peer_planned(必配)；010107/015002=不配(走 Tunnel 出接口)
+    requiredness: conditional
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN缺省路由组网）_72489253.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:SESSIONNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:SESSIONNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD BFDSESSION.SESSNAME；仅静态路由+BFD 组网(GWFD-010155 72489255)
+    source_ref: UDG@20.15.2@Task@0-00082:SESSNAME
+    requiredness: conditional
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:DESTVRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:DESTVRFNAME
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：010155/015004 脚本设置(如 _public_/vrf1)；010107/015002 不配
+    requiredness: conditional   # 由 DP 0-00075 场景选定
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN缺省路由组网）_72489253.md]
+  - binding_id: UDG@20.15.2@Task@0-00062:PREFERENCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD SRROUTE:PREFERENCE
+    binding_type: variable
+    variable_source: local_planned   # 命令级审查(2026-07-02)：010107 可选下行低优先级路由(默认60)；015004 脚本显式 60；默认值 60，值越大优先级越低
+    requiredness: optional   # 不填默认 60
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+notes: "一命令一atom：ADD SRROUTE 唯一 atom，服务 4 特性(GWFD-010107 冗余重定向 / GWFD-010155 VPN缺省+静态BFD / IPFD-015002 GRE隧道间 / IPFD-015004 IPsec引流)。P0 收敛：合并原 variant 0-00081。binding 默认值=010107(冗余重定向)：PREFIX=ref(0-00055 重定向IP/32)、VRFNAME=ref(0-00041 VPNINST)、IFNAME=ref(0-00056 GRE Tunnel)、BFDENABLE/DHCPENABLE=FALSE、NEXTHOP/DESTVRFNAME/SESSIONNAME 不配。跨场景取源分叉参数(PREFIX/VRFNAME/IFNAME/NEXTHOP/BFDENABLE/DESTVRFNAME)variable_source=decision_driven，由 atom 级 DP 0-00075 选定场景覆盖(binding 级单 source_ref 为 schema 限制，默认值+场景覆盖见 DP impacts)；010155 静态+BFD 场景亦由 feature 级 DP dp-0-00017(opt-route-static-bfd-ipv4) 选定，两者协同。BFDENABLE 原固定 FALSE 对静态+BFD 场景错误，已改 conditional decision_driven。命令级审查(2026-07-02)：rule 0-00181=记录数上限100000；rule 0-00182=__mpp_vpn_inner__ 禁默认路由。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

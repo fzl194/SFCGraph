@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@0-00022
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置扩展过滤器
+task_layer: atom
+task_intent: 配置一次重定向的扩展过滤器（URL白名单），匹配上白名单的URL才能触发页面提醒（GWFD-020356 计费信息实时提醒专属）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD EXTENDEDFILTER
+status: inferred   # 命令级审查(2026-07-02): 4 冷门缺口(URLPOSTFIX/POSTFIXMUST/GROUPEDFLAG/CFGDOMAINNAME)按通用配置门槛不绑; 补 USERAGENT(110284 用到); 4/8 已绑
+source_evidence_ids:
+  - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - GWFD-110283/激活DNS纠错_67964199.md
+  - GWFD-110284/激活HTTP智能重定向_67075035.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00022:EXTFLTNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD EXTENDEDFILTER:EXTFLTNAME
+    binding_type: variable
+    variable_source: local_planned   # 特性 md 数据规划表: 本端规划（一次重定向URL白名单列表名）
+    requiredness: required
+    source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]
+  - binding_id: UDG@20.15.2@Task@0-00022:URL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD EXTENDEDFILTER:URL
+    binding_type: variable
+    variable_source: local_planned   # 特性 md 数据规划表: 本端规划（触发页面提醒的URL）
+    requiredness: required
+    source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]
+  - binding_id: UDG@20.15.2@Task@0-00022:CONTENTTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD EXTENDEDFILTER:CONTENTTYPE
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional   # mml_commands 列为可选；特性 md 未列
+    source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]
+  - binding_id: UDG@20.15.2@Task@0-00022:USERAGENT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD EXTENDEDFILTER:USERAGENT
+    binding_type: variable
+    variable_source: local_planned   # 110284 HTTP智能重定向数据规划表显式 USERAGENT=Mozilla/*
+    requiredness: optional   # 命令真相 optional, 与 URL/URLPOSTFIX/USERAGENT/CONTENTTYPE 至少其一
+    source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]
+notes: "跨特性 3 特性共用(020356 计费信息实时提醒URL白名单 / 110283 DNS纠错 / 110284 HTTP智能重定向)。EXTFLTNAME 产出对象被 SET GYONESHOT(0-00024) 引用(reference)。CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)，parameter_ref 按预期 ID 预写。命令级审查(2026-07-02): 4 冷门缺口(URLPOSTFIX/POSTFIXMUST/GROUPEDFLAG/CFGDOMAINNAME)命令真相均 optional 且 3 特性数据规划表均未用到→按通用配置门槛不绑; 补 USERAGENT(110284 HTTP智能重定向数据规划表显式 Mozilla/*); 5/8 已绑; 本 atom 多用途并发(URL白名单/DNS纠错/HTTP智能重定向)，跨特性分叉由 feature task 投影。\""

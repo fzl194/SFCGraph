@@ -1,0 +1,21 @@
+rule_id: UNC@20.15.2@TaskRule@0-00017
+owner_task_ref: UNC@20.15.2@Task@0-00015
+rule_name: ADD CHARGEMETHOD 最多 17 条 + 与 CHARGECHAR 计费方式一致
+rule_type: consistency_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_match
+  target_refs:
+    - UNC@20.15.2@MMLCommand@ADD CHARGECHAR
+  expression: >-
+    记录数 ≤ 17；针对同一用户，ADD CHARGECHAR 与 ADD CHARGEMETHOD 配置的计费方式结果须一致
+    （要么 ONLINE，要么 OFFLINE，或两者同时使能），否则用户计费方式错误。
+    normal/hotbilling/prepaid/flat-billing 关键字不允许配 MASK/PRIORITY；specificvalue(0x0800/0x0400/0x0200/0x0100)允许。
+    只对新激活用户生效。
+violation_effect: 超规格无法新增；两命令计费方式不一致导致用户计费错误
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加计费方式（ADD CHARGEMETHOD）_09896795.md]

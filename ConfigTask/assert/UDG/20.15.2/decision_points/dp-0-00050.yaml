@@ -1,0 +1,23 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00050
+owner_task_ref: UDG@20.15.2@Task@0-00016   # 挂 atom SET UPDEFAULTQUOTA
+decision_name: 默认配额使能开关取值
+decision_question: DFTQTSWITCH 是否使能（决定 DFTQTNEWSER/DFTQTOTHER 是否必选）？
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]
+options:
+  - option_id: opt-enable
+    option_name: 使能
+    option_value: ENABLE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTNEWSER, effect_type: sets_requiredness, effect_detail: "required（新业务默认配额使能开关必配）"}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTOTHER, effect_type: sets_requiredness, effect_detail: "required（非新业务场景默认配额使能开关必配）"}
+  - option_id: opt-disable
+    option_name: 不使能
+    option_value: DISABLE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTNEWSER, effect_type: excludes, effect_detail: "不配（默认配额关闭，子开关无意义）"}
+      - {target_type: parameter, target_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTOTHER, effect_type: excludes, effect_detail: "不配（默认配额关闭，子开关无意义）"}
+notes: "命令级审查(2026-07-02): 投影自命令 conditional_required——DFTQTNEWSER/DFTQTOTHER 前提 DFTQTSWITCH=ENABLE。atom binding 现标 conditional，本 DP 表达使能时升为 required。"

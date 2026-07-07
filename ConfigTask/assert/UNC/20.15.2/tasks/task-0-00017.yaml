@@ -1,0 +1,23 @@
+task_id: UNC@20.15.2@Task@0-00017
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHGCG
+task_layer: atom
+task_intent: 配置与本端 SGSN 对接的 CG 参数（SGSN 与 CG 对接必配）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHGCG
+status: inferred
+source_evidence_ids:
+  - 增加CG配置参数（ADD CHGCG）_72225055.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00017:PRO", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGCG:PRO", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-106202/激活SMS over GPRS_EDGE_WCDMA_84683740.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00017:CGR", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGCG:CGR", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-106202/激活SMS over GPRS_EDGE_WCDMA_84683740.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00017:IP", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGCG:IP", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-106202/激活SMS over GPRS_EDGE_WCDMA_84683740.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00017:GRD", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGCG:GRD", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-106202/激活SMS over GPRS_EDGE_WCDMA_84683740.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00017:DEFAULTCG", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGCG:DEFAULTCG", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [WSFD-106202/激活SMS over GPRS_EDGE_WCDMA_84683740.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00017:CGN", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGCG:CGN", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [WSFD-106202/激活SMS over GPRS_EDGE_WCDMA_84683740.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CHGCG.md（3 特性用，9 参）。
+  SGSN 专用。source 全 整网/全网规划（CG 对接地址全网统一）。绑 6（PRO/CGR/IP/GRD/DEFAULTCG/CGN）。
+  未绑 IPT/IPV6/SPN（范式未用到）。UMTS CDR 协议版本须与 CG 协议版本一致。
+  notes：最多 16 条；PRO+IP+SPN 唯一确定记录；只有本命令配的 CG 才能在 SET CHGCHAR 生效 → rule 0-00019。

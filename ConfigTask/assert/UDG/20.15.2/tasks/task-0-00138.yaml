@@ -1,0 +1,15 @@
+task_id: UDG@20.15.2@Task@0-00138
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置PPP协商参数(L2TP)
+task_layer: atom
+task_intent: 配置 L2TP 场景系统进行 PPP 协商时所使用的参数（本端主机名/最大接收单元 MRU/超时时间），可选步骤
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET PPPCFG
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00138:HOSTNAME, parameter_ref: UDG@20.15.2@CommandParameter@SET PPPCFG:HOSTNAME, binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00138:MRU, parameter_ref: UDG@20.15.2@CommandParameter@SET PPPCFG:MRU, binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00138:TIMEOUT, parameter_ref: UDG@20.15.2@CommandParameter@SET PPPCFG:TIMEOUT, binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]}
+notes: "GWFD-020412 两种激活方式共用(可选步骤)。本端规划: HOSTNAME(本端主机名, 1~31)/MRU(最大接收单元, 64~1500, 默认 1500)/TIMEOUT(超时秒数, 1~10, 默认 3),命令真相均为 optional。命令在 mml_commands；CommandParameter 待 CommandGraph 抽取。"

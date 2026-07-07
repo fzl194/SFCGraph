@@ -1,0 +1,26 @@
+task_id: UDG@20.15.2@Task@0-00134
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定APN到L2TP源端接口(AAA下发方式专属)
+task_layer: atom
+task_intent: AAA 下发方式下将 APN 绑定到指定源端 Gi 接口（ADD L2TPRDSCLIENT），作为系统与 LNS 交互的源端接口
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD L2TPRDSCLIENT
+status: inferred   # 命令级审查(2026-07-02) AAA 下发方式专属；命令在 mml_commands；CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00134:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPRDSCLIENT:APN
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD APN)
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+  - binding_id: UDG@20.15.2@Task@0-00134:INTERFACENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPRDSCLIENT:INTERFACENAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD LOGICINF.NAME, Giif 接口)
+    source_ref: UDG@20.15.2@Task@0-00083:NAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+notes: "GWFD-020412 AAA 下发方式专属(本地方式用 ADD L2TPCLIENTIP 绑 L2TP 组到接口)。APN 引用 ADD APN(0-00020)；INTERFACENAME 引用 ADD LOGICINF.NAME(0-00136, Giif 接口)。命令在 mml_commands；CommandParameter 待 CommandGraph 抽取。"

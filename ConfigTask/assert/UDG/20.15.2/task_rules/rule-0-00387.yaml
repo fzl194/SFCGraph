@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00387
+owner_task_ref: UDG@20.15.2@Task@0-00251   # 挂 atom SET APNCFFUNC
+rule_name: SET APNCFFUNC 规格 10000 + 性能下降风险 + 仅新承载/新激活用户生效
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET APNCFFUNC
+  expression: |
+    SET APNCFFUNC 系统最多支持配置 10000 个 APN 内容过滤开关（命令 notes 强约束），超出被拒。
+    该命令会导致用户匹配数发生变化，可能导致性能下降。执行命令前请评估对性能的影响（命令 notes 性能风险）。
+    该命令执行后只对之后发生承载更新的用户或者新激活用户生效（命令 notes 明示）。
+    APNNAME 字符串（1～127 字符，数字大小写字母和 ./- 组成，CommandParameter 校验承担）。
+    CFSWITCHVALUE 枚举 DISABLE/ENABLE（CommandParameter 校验承担）。
+violation_effect: 上限超限→SET 失败；性能下降→未预警评估
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 10000 + 性能下降风险 + 仅新承载生效。APNNAME 引用 ADD APN(0-00020) 由 binding source_ref 表达，已绑。"

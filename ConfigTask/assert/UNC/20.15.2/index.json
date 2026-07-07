@@ -1,0 +1,524 @@
+{
+  "nf_version": "UNC@20.15.2",
+  "generated_for": "Agent 构建前查找 + UI 渲染",
+  "counts": {
+    "atom": 27,
+    "compound": 0,
+    "feature": 0,
+    "solution": 0,
+    "generalized": 0,
+    "dp": 3,
+    "rule": 30
+  },
+  "by_command": {
+    "ADD URR": [
+      "UNC@20.15.2@Task@0-00001"
+    ],
+    "ADD ADCPARA": [
+      "UNC@20.15.2@Task@0-00002"
+    ],
+    "ADD AMUEPLCYCTRL": [
+      "UNC@20.15.2@Task@0-00003"
+    ],
+    "ADD APN": [
+      "UNC@20.15.2@Task@0-00004"
+    ],
+    "ADD APNCHGMODE": [
+      "UNC@20.15.2@Task@0-00005"
+    ],
+    "ADD APNDEACTQFPLCY": [
+      "UNC@20.15.2@Task@0-00006"
+    ],
+    "ADD APNPOLICYMODE": [
+      "UNC@20.15.2@Task@0-00007"
+    ],
+    "ADD APNUSRPROFG": [
+      "UNC@20.15.2@Task@0-00008"
+    ],
+    "ADD CCT": [
+      "UNC@20.15.2@Task@0-00009"
+    ],
+    "ADD CDRFIELDTEMP": [
+      "UNC@20.15.2@Task@0-00010"
+    ],
+    "ADD CGBINDING": [
+      "UNC@20.15.2@Task@0-00011"
+    ],
+    "ADD CGGROUP": [
+      "UNC@20.15.2@Task@0-00012"
+    ],
+    "ADD CGGRPBINDING": [
+      "UNC@20.15.2@Task@0-00013"
+    ],
+    "ADD CHARGECHAR": [
+      "UNC@20.15.2@Task@0-00014"
+    ],
+    "ADD CHARGEMETHOD": [
+      "UNC@20.15.2@Task@0-00015"
+    ],
+    "ADD CHGAPN": [
+      "UNC@20.15.2@Task@0-00016"
+    ],
+    "ADD CHGCG": [
+      "UNC@20.15.2@Task@0-00017"
+    ],
+    "ADD CHGDCHAR": [
+      "UNC@20.15.2@Task@0-00018"
+    ],
+    "ADD CHGHOLI": [
+      "UNC@20.15.2@Task@0-00019"
+    ],
+    "ADD CHGIMSICFG": [
+      "UNC@20.15.2@Task@0-00020"
+    ],
+    "ADD CHGPLMNCFG": [
+      "UNC@20.15.2@Task@0-00021"
+    ],
+    "ADD CHGTARI": [
+      "UNC@20.15.2@Task@0-00022"
+    ],
+    "ADD CPCGBINDING": [
+      "UNC@20.15.2@Task@0-00023"
+    ],
+    "ADD CPCGGRP": [
+      "UNC@20.15.2@Task@0-00024"
+    ],
+    "ADD DEACTQFPLCY": [
+      "UNC@20.15.2@Task@0-00025"
+    ],
+    "ADD DIAMPEERADDR": [
+      "UNC@20.15.2@Task@0-00026"
+    ],
+    "ADD DIAMCONNGRP": [
+      "UNC@20.15.2@Task@0-00027"
+    ]
+  },
+  "by_logical_name": {
+    "配置URR": [
+      "UNC@20.15.2@Task@0-00001"
+    ],
+    "配置ADCPARA": [
+      "UNC@20.15.2@Task@0-00002"
+    ],
+    "配置AMUEPLCYCTRL": [
+      "UNC@20.15.2@Task@0-00003"
+    ],
+    "配置APN": [
+      "UNC@20.15.2@Task@0-00004"
+    ],
+    "配置APNCHGMODE": [
+      "UNC@20.15.2@Task@0-00005"
+    ],
+    "配置APNDEACTQFPLCY": [
+      "UNC@20.15.2@Task@0-00006"
+    ],
+    "配置APNPOLICYMODE": [
+      "UNC@20.15.2@Task@0-00007"
+    ],
+    "配置APNUSRPROFG": [
+      "UNC@20.15.2@Task@0-00008"
+    ],
+    "配置CCT": [
+      "UNC@20.15.2@Task@0-00009"
+    ],
+    "配置CDRFIELDTEMP": [
+      "UNC@20.15.2@Task@0-00010"
+    ],
+    "配置CGBINDING": [
+      "UNC@20.15.2@Task@0-00011"
+    ],
+    "配置CGGROUP": [
+      "UNC@20.15.2@Task@0-00012"
+    ],
+    "配置CGGRPBINDING": [
+      "UNC@20.15.2@Task@0-00013"
+    ],
+    "配置CHARGECHAR": [
+      "UNC@20.15.2@Task@0-00014"
+    ],
+    "配置CHARGEMETHOD": [
+      "UNC@20.15.2@Task@0-00015"
+    ],
+    "配置CHGAPN": [
+      "UNC@20.15.2@Task@0-00016"
+    ],
+    "配置CHGCG": [
+      "UNC@20.15.2@Task@0-00017"
+    ],
+    "配置CHGDCHAR": [
+      "UNC@20.15.2@Task@0-00018"
+    ],
+    "配置CHGHOLI": [
+      "UNC@20.15.2@Task@0-00019"
+    ],
+    "配置CHGIMSICFG": [
+      "UNC@20.15.2@Task@0-00020"
+    ],
+    "配置CHGPLMNCFG": [
+      "UNC@20.15.2@Task@0-00021"
+    ],
+    "配置CHGTARI": [
+      "UNC@20.15.2@Task@0-00022"
+    ],
+    "配置CPCGBINDING": [
+      "UNC@20.15.2@Task@0-00023"
+    ],
+    "配置CPCGGRP": [
+      "UNC@20.15.2@Task@0-00024"
+    ],
+    "配置DEACTQFPLCY": [
+      "UNC@20.15.2@Task@0-00025"
+    ],
+    "配置DIAMPEERADDR": [
+      "UNC@20.15.2@Task@0-00026"
+    ],
+    "配置DIAMCONNGRP": [
+      "UNC@20.15.2@Task@0-00027"
+    ]
+  },
+  "by_feature": {},
+  "atom_usage": {},
+  "compounds": {},
+  "rules_by_owner": {
+    "0-00001": [
+      "UNC@20.15.2@TaskRule@0-00001"
+    ],
+    "0-00002": [
+      "UNC@20.15.2@TaskRule@0-00002"
+    ],
+    "0-00003": [
+      "UNC@20.15.2@TaskRule@0-00003"
+    ],
+    "0-00004": [
+      "UNC@20.15.2@TaskRule@0-00004",
+      "UNC@20.15.2@TaskRule@0-00005",
+      "UNC@20.15.2@TaskRule@0-00030"
+    ],
+    "0-00005": [
+      "UNC@20.15.2@TaskRule@0-00006"
+    ],
+    "0-00006": [
+      "UNC@20.15.2@TaskRule@0-00007"
+    ],
+    "0-00007": [
+      "UNC@20.15.2@TaskRule@0-00008"
+    ],
+    "0-00008": [
+      "UNC@20.15.2@TaskRule@0-00009",
+      "UNC@20.15.2@TaskRule@0-00010"
+    ],
+    "0-00009": [
+      "UNC@20.15.2@TaskRule@0-00011"
+    ],
+    "0-00010": [
+      "UNC@20.15.2@TaskRule@0-00012"
+    ],
+    "0-00011": [
+      "UNC@20.15.2@TaskRule@0-00013"
+    ],
+    "0-00012": [
+      "UNC@20.15.2@TaskRule@0-00014"
+    ],
+    "0-00013": [
+      "UNC@20.15.2@TaskRule@0-00015"
+    ],
+    "0-00014": [
+      "UNC@20.15.2@TaskRule@0-00016"
+    ],
+    "0-00015": [
+      "UNC@20.15.2@TaskRule@0-00017"
+    ],
+    "0-00016": [
+      "UNC@20.15.2@TaskRule@0-00018"
+    ],
+    "0-00017": [
+      "UNC@20.15.2@TaskRule@0-00019"
+    ],
+    "0-00018": [
+      "UNC@20.15.2@TaskRule@0-00020"
+    ],
+    "0-00019": [
+      "UNC@20.15.2@TaskRule@0-00021"
+    ],
+    "0-00020": [
+      "UNC@20.15.2@TaskRule@0-00022"
+    ],
+    "0-00021": [
+      "UNC@20.15.2@TaskRule@0-00023"
+    ],
+    "0-00022": [
+      "UNC@20.15.2@TaskRule@0-00024"
+    ],
+    "0-00023": [
+      "UNC@20.15.2@TaskRule@0-00025"
+    ],
+    "0-00024": [
+      "UNC@20.15.2@TaskRule@0-00026"
+    ],
+    "0-00025": [
+      "UNC@20.15.2@TaskRule@0-00027"
+    ],
+    "0-00026": [
+      "UNC@20.15.2@TaskRule@0-00028"
+    ],
+    "0-00027": [
+      "UNC@20.15.2@TaskRule@0-00029"
+    ]
+  },
+  "dps_by_owner": {
+    "0-00001": [
+      "UNC@20.15.2@DecisionPoint@0-00001"
+    ],
+    "0-00026": [
+      "UNC@20.15.2@DecisionPoint@0-00002"
+    ],
+    "0-00015": [
+      "UNC@20.15.2@DecisionPoint@0-00003"
+    ]
+  },
+  "tasks": [
+    {
+      "task_id": "0-00001",
+      "layer": "atom",
+      "logical_name": "配置URR",
+      "ref": "ADD URR",
+      "status": "inferred",
+      "n_params": 8,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00002",
+      "layer": "atom",
+      "logical_name": "配置ADCPARA",
+      "ref": "ADD ADCPARA",
+      "status": "inferred",
+      "n_params": 2,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00003",
+      "layer": "atom",
+      "logical_name": "配置AMUEPLCYCTRL",
+      "ref": "ADD AMUEPLCYCTRL",
+      "status": "inferred",
+      "n_params": 6,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00004",
+      "layer": "atom",
+      "logical_name": "配置APN",
+      "ref": "ADD APN",
+      "status": "inferred",
+      "n_params": 12,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00005",
+      "layer": "atom",
+      "logical_name": "配置APNCHGMODE",
+      "ref": "ADD APNCHGMODE",
+      "status": "inferred",
+      "n_params": 6,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00006",
+      "layer": "atom",
+      "logical_name": "配置APNDEACTQFPLCY",
+      "ref": "ADD APNDEACTQFPLCY",
+      "status": "inferred",
+      "n_params": 5,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00007",
+      "layer": "atom",
+      "logical_name": "配置APNPOLICYMODE",
+      "ref": "ADD APNPOLICYMODE",
+      "status": "inferred",
+      "n_params": 4,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00008",
+      "layer": "atom",
+      "logical_name": "配置APNUSRPROFG",
+      "ref": "ADD APNUSRPROFG",
+      "status": "inferred",
+      "n_params": 2,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00009",
+      "layer": "atom",
+      "logical_name": "配置CCT",
+      "ref": "ADD CCT",
+      "status": "inferred",
+      "n_params": 15,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00010",
+      "layer": "atom",
+      "logical_name": "配置CDRFIELDTEMP",
+      "ref": "ADD CDRFIELDTEMP",
+      "status": "inferred",
+      "n_params": 10,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00011",
+      "layer": "atom",
+      "logical_name": "配置CGBINDING",
+      "ref": "ADD CGBINDING",
+      "status": "inferred",
+      "n_params": 6,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00012",
+      "layer": "atom",
+      "logical_name": "配置CGGROUP",
+      "ref": "ADD CGGROUP",
+      "status": "inferred",
+      "n_params": 2,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00013",
+      "layer": "atom",
+      "logical_name": "配置CGGRPBINDING",
+      "ref": "ADD CGGRPBINDING",
+      "status": "inferred",
+      "n_params": 4,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00014",
+      "layer": "atom",
+      "logical_name": "配置CHARGECHAR",
+      "ref": "ADD CHARGECHAR",
+      "status": "inferred",
+      "n_params": 7,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00015",
+      "layer": "atom",
+      "logical_name": "配置CHARGEMETHOD",
+      "ref": "ADD CHARGEMETHOD",
+      "status": "inferred",
+      "n_params": 8,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00016",
+      "layer": "atom",
+      "logical_name": "配置CHGAPN",
+      "ref": "ADD CHGAPN",
+      "status": "inferred",
+      "n_params": 2,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00017",
+      "layer": "atom",
+      "logical_name": "配置CHGCG",
+      "ref": "ADD CHGCG",
+      "status": "inferred",
+      "n_params": 6,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00018",
+      "layer": "atom",
+      "logical_name": "配置CHGDCHAR",
+      "ref": "ADD CHGDCHAR",
+      "status": "inferred",
+      "n_params": 4,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00019",
+      "layer": "atom",
+      "logical_name": "配置CHGHOLI",
+      "ref": "ADD CHGHOLI",
+      "status": "inferred",
+      "n_params": 4,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00020",
+      "layer": "atom",
+      "logical_name": "配置CHGIMSICFG",
+      "ref": "ADD CHGIMSICFG",
+      "status": "inferred",
+      "n_params": 6,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00021",
+      "layer": "atom",
+      "logical_name": "配置CHGPLMNCFG",
+      "ref": "ADD CHGPLMNCFG",
+      "status": "inferred",
+      "n_params": 4,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00022",
+      "layer": "atom",
+      "logical_name": "配置CHGTARI",
+      "ref": "ADD CHGTARI",
+      "status": "inferred",
+      "n_params": 5,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00023",
+      "layer": "atom",
+      "logical_name": "配置CPCGBINDING",
+      "ref": "ADD CPCGBINDING",
+      "status": "inferred",
+      "n_params": 4,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00024",
+      "layer": "atom",
+      "logical_name": "配置CPCGGRP",
+      "ref": "ADD CPCGGRP",
+      "status": "inferred",
+      "n_params": 2,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00025",
+      "layer": "atom",
+      "logical_name": "配置DEACTQFPLCY",
+      "ref": "ADD DEACTQFPLCY",
+      "status": "inferred",
+      "n_params": 4,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00026",
+      "layer": "atom",
+      "logical_name": "配置DIAMPEERADDR",
+      "ref": "ADD DIAMPEERADDR",
+      "status": "inferred",
+      "n_params": 6,
+      "n_relations": 0
+    },
+    {
+      "task_id": "0-00027",
+      "layer": "atom",
+      "logical_name": "配置DIAMCONNGRP",
+      "ref": "ADD DIAMCONNGRP",
+      "status": "inferred",
+      "n_params": 5,
+      "n_relations": 0
+    }
+  ]
+}

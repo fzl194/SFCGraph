@@ -1,0 +1,40 @@
+task_id: UDG@20.15.2@Task@0-00011
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置用户模板
+task_layer: atom
+task_intent: 配置USERPROFILE（名称需PCF/SMF/UPF间一致）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD USERPROFILE
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00011:USERPROFILENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD USERPROFILE:USERPROFILENAME
+    binding_type: decision_driven
+    variable_source: decision_driven   # pass-3 演进：计费=本端规划，PCC=与对端协商，跨特性分叉(DP 0-00006)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00006
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+  # 命令级审查(2026-07-02)：补 3 个跨特性实证枚举参数(ALIASMARKFLAG/DDOSCHECK/CAPMODETHRES，§B 已标记演进点)。均本端规划、取值随特性分叉但获取方法稳定→variable/local_planned(非获取方法分叉，不升 decision_driven)。其余 8 缺口(UPSPECTYPE/LOCRPTSWITCH/EXTENDPROPNAME/USERPROFALIAS/TETHERINGMAXNUM/V4TCPMSSVALUE/V6TCPMSSVALUE/CFGDOMAINNAME)仅 ProxyUPF/双故障全量示例置默认值，按通用配置门槛不绑。
+  - binding_id: UDG@20.15.2@Task@0-00011:ALIASMARKFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD USERPROFILE:ALIASMARKFLAG
+    binding_type: variable
+    variable_source: local_planned   # 会话类QoS=ENABLE，ProxyUPF/双故障=DISABLE(default)。本端按特性取值
+    requiredness: optional
+    source_evidence_ids: [GWFD-020381/激活会话类QoS保证（PGW-U）_70910228.md, GWFD-112001/业务配置_80953432.md, GWFD-112000/激活双故障Bypass_14147877.md]
+  - binding_id: UDG@20.15.2@Task@0-00011:DDOSCHECK
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD USERPROFILE:DDOSCHECK
+    binding_type: variable
+    variable_source: local_planned   # 防DDoS=ENABLE，其余=DISABLE(default)
+    requiredness: optional
+    source_evidence_ids: [GWFD-010253/激活防DDoS功能_24082259.md, GWFD-112001/业务配置_80953432.md, GWFD-112000/激活双故障Bypass_14147877.md]
+  - binding_id: UDG@20.15.2@Task@0-00011:CAPMODETHRES
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD USERPROFILE:CAPMODETHRES
+    binding_type: variable
+    variable_source: local_planned   # 用户Portal/WebProxy=6，ProxyUPF=0(default)
+    requiredness: optional
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-112001/业务配置_80953432.md]
+notes: |
+  pass-3(GWFD-020351)：USERPROFILENAME 跨特性分叉(计费=本端/PCC=对端)由 local_planned 升级为 decision_driven(DP 0-00006)，默认本端保持计费向后兼容。命令 parameter_description 默认"全网规划"，特性 md 获取方法列覆盖(PCC=与对端协商)。
+  命令级审查(2026-07-02)：补 ALIASMARKFLAG/DDOSCHECK/CAPMODETHRES(§B 演进点，③实证 会话QoS/防DDoS/用户Portal/WebProxy/ProxyUPF/双故障 跨特性取值分叉)。3 参数获取方法稳定(本端规划)，仅取值随特性变→variable/local_planned optional。规格 rule 0-00132(记录数 5000/100000) 已投影。

@@ -1,0 +1,15 @@
+task_id: UDG@20.15.2@Task@00007
+task_logical_name: 配置流过滤器
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD FLOWFILTER
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD FLOWFILTER:FLOWFILTERNAME
+        binding_type: variable
+        variable_source: local_planned
+        note: 流过滤器名
+task_category: 配置
+status: active
+source_evidence_ids: []

@@ -1,0 +1,28 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00153
+owner_task_ref: UDG@20.15.2@Task@0-00088   # 挂 atom ADD IPFARMSERVER：SERVERIPV4 跨特性源分叉
+decision_name: IPFarm 服务器地址来源
+decision_question: ADD IPFARMSERVER 的 SERVERIPV4(重定向/心跳检测对端 server 地址)取值来源？重定向类业务(用户 Portal 110281 / Web Proxy 110282)的 server 由第三方 Portal/业务平台规划，需与对端协商；P-CSCF 故障 IMS 恢复(020253)的 P-CSCF 服务器地址由本端/全网规划。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+options:
+  - option_id: opt-srvip-peer
+    option_name: 与对端协商(peer)
+    option_value: peer_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00088:SERVERIPV4, effect_type: sets_value, effect_detail: variable_source=peer_planned；重定向 server 地址由第三方 Portal/业务平台/Proxy 规划，UDG 侧与对端协商获取。适用于 用户Portal(110281)/Web Proxy(110282) 等重定向类业务}
+  - option_id: opt-srvip-global
+    option_name: 全网规划
+    option_value: global_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00088:SERVERIPV4, effect_type: sets_value, effect_detail: variable_source=global_planned；server 地址按全网统一规划(如 P-CSCF IP-Farm1)。适用于 P-CSCF故障IMS恢复(020253) IP-Farm1}
+  - option_id: opt-srvip-local
+    option_name: 本端规划
+    option_value: local_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00088:SERVERIPV4, effect_type: sets_value, effect_detail: variable_source=local_planned；server 地址由 UDG 本端规划(如 P-CSCF IP-Farm2)。适用于 P-CSCF故障IMS恢复(020253) IP-Farm2}
+default_option: opt-srvip-peer
+notes: |
+  命令级审查(2026-07-02) 补审新建。③跨特性数据规划表"获取方法"列 SERVERIPV4 分布分叉：110281/110282=与对端协商(peer)；020253 IP-Farm1=全网规划、IP-Farm2=本端规划。原 atom 录单一 peer_planned 无法覆盖 P-CSCF 场景，升级为 decision_driven 由本 DP 选。default=peer_planned 保持重定向类业务(2特性)向后兼容。命令真相 SERVERIPV4 标 local_planned conditional(IPVERSION=IPV4 时必选)，但③特性实际来源分叉以③优先(基线§4.2)。

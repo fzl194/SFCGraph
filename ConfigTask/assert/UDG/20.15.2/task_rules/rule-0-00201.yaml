@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00201
+owner_task_ref: UDG@20.15.2@Task@0-00079   # 挂 atom ADD OSPFV3AREA
+rule_name: OSPFv3区域前置/规格/NSSA-Loopback发布约束
+rule_type: constraint_rule
+rule_scope: parameter
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3AREA:PROCID
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3AREA:AREAID
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3AREA:AREATYPE
+  expression: "ADD OSPFV3AREA 须满足：(1) 前置——必须先执行 ADD OSPFV3 创建对应 OSPFv3 进程(PROCID)才能使用此命令；(2) OSPFv3区域实例数规格默认单进程2000(实际以服务规格文件为准)，命令最大记录数8016；(3) AREAID(IPv4点分十进制)须与对端路由器在同一区域一致，否则 OSPFv3 邻居无法建立(backbone 常取 0.0.0.0)；(4) 若 AREATYPE=NSSA，则必须配置 Loopback 地址并在 OSPFv3 进程中发布出去，否则会造成负载分担不生效，极端情况下会造成业务受损；(5) AREATYPE 默认 Normal，可设 NSSA/Normal(NSSA 须配 Loopback 作为 FA)。"
+violation_effect: 负载分担不生效 / 业务受损 / 区域创建失败 / 邻居无法建立 / 区域实例超规格
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+  - GWFD-020401/激活IPv6承载上下文_38276176.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+notes: "命令级审查(2026-07-02) 新建。IPv4 ADD OSPFAREA(rule 0-00191) 的 OSPFv3 镜像。投影自命令 notes(前置 ADD OSPFV3/区域实例2000/记录8016/NSSA须配Loopback发布否则业务受损) + AREAID 邻居一致性约束(由 DP 0-00082 决策 peer/global)。AREATYPE 不绑参(不在③数据规划表，仅 md 说明提及)，但其 NSSA 条件要求强烈(critical)，以 rule 投影。AREAID 已绑参(decision_driven→DP 0-00082)，本 rule 重申其邻居一致约束。AREAID 同时被 ADD OSPFV3INTERFACE(0-00117) 引用。"

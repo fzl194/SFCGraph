@@ -1,0 +1,46 @@
+task_id: UNC@20.15.2@Task@0-00015
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHARGEMETHOD
+task_layer: atom
+task_intent: 基于用户计费属性 CC 配置在线/离线/融合计费方式（PGW-C/SMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHARGEMETHOD
+status: inferred
+source_evidence_ids:
+  - 增加计费方式（ADD CHARGEMETHOD）_09896795.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00015:CHARGECHARACT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:CHARGECHARACT", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线_在线计费方式（GGSN_PGW-C）_95923455.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00015:CCVALUE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:CCVALUE", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-011201/配置离线_在线计费方式（GGSN_PGW-C）_95923455.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00015:MASK", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:MASK", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-011201/配置离线_在线计费方式（GGSN_PGW-C）_95923455.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00015:PRIORITY", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:PRIORITY", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-011201/配置离线_在线计费方式（GGSN_PGW-C）_95923455.md]}
+  - binding_id: UNC@20.15.2@Task@0-00015:ONLINE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:ONLINE
+    binding_type: decision_driven       # 三选一互斥（ONLINE/OFFLINE/CONVERGED）→ 决策点 dp-0-00003
+    variable_source: decision_driven
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00003
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011201/配置离线_在线计费方式（GGSN_PGW-C）_95923455.md]
+  - binding_id: UNC@20.15.2@Task@0-00015:OFFLINE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:OFFLINE
+    binding_type: decision_driven       # 三选一互斥 → 决策点 dp-0-00003
+    variable_source: decision_driven
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00003
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011201/配置离线_在线计费方式（GGSN_PGW-C）_95923455.md]
+  - binding_id: UNC@20.15.2@Task@0-00015:CONVERGED
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:CONVERGED
+    binding_type: decision_driven       # 三选一互斥 → 决策点 dp-0-00003（融合时 RGAPPLIED 条件出现）
+    variable_source: decision_driven
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00003
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011206/使能融合计费功能_77691175.md]
+  - {binding_id: "UNC@20.15.2@Task@0-00015:RGAPPLIED", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:RGAPPLIED", binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [WSFD-011206/使能融合计费功能_77691175.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CHARGEMETHOD.md（4 特性用，9 参）。
+  修订（2026-07-06 审视）：ONLINE/OFFLINE/CONVERGED 原误标为 3 个独立 variable → 改 decision_driven，
+  统一挂决策点 dp-0-00003"用户计费方式使能选择"（schema L670 明示此类三选一必须 DP）。
+  source 全 全网规划（计费方式属全网统一规划）。未绑 QBCSW（conditional，范式未用到）。
+  RGAPPLIED=DEFAULT/ONLINERGONLY/OFFLINERGONLY 控 URRGROUP 选 URR（融合选项的下游条件参数，见 dp-0-00003 impacts）。
+  一致性：ADD CHARGECHAR 与 ADD CHARGEMETHOD 对同一用户计费方式结果须一致（否则计费错误）→ rule 0-00017。
+  notes：最多 17 条；normal/hotbilling/prepaid/flat-billing 关键字不允许配 MASK/PRIORITY，specificvalue(0x0800 等)允许。只对新激活用户生效。

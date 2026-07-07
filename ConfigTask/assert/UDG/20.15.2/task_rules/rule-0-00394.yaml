@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00394
+owner_task_ref: UDG@20.15.2@Task@0-00262   # 挂 atom ADD ICAPLOCALINFO
+rule_name: ADD ICAPLOCALINFO 规格 1 + 立即生效 + ICAPSERVER 前置依赖
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD ICAPLOCALINFO
+  expression: |
+    ADD ICAPLOCALINFO 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    该命令执行后立即生效（命令 notes）。
+    ICAPSERVERTYPE 引用 ADD ICAPSERVER(0-00259)，URL_FILTERING 跨 atom 一致性（前置依赖已由 binding source_ref 表达）。
+    USERAGENT 字符串 1～63 字符，区分大小写（CommandParameter 校验承担）。
+    缺 CFGDOMAINNAME 为 optional（命令真相配置域）冷门不绑。
+violation_effect: 上限超限→ADD 失败；前置未配→ICAPSERVERTYPE 报错
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110471/配置到ICAP Server的互通数据_75400117.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 立即生效 + ICAPSERVER 前置依赖。前置依赖已由 binding source_ref（0-00259→0-00262）表达。"

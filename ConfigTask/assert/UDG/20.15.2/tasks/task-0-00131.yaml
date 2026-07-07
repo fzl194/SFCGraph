@@ -1,0 +1,60 @@
+task_id: UDG@20.15.2@Task@0-00131
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置L2TP缺省配置
+task_layer: atom
+task_intent: 设置 L2TP 隧道缺省属性（本端名称/HELLO 报文开关与间隔/重发次数/Magic-Number 协商/发送窗口/初始隧道数/会话上限），为 AAA 下发与本地配置两种激活方式共享的隧道缺省参数
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET GLOBALL2TP
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00131:LOCALNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:LOCALNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00131:HELLOINTERVALSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:HELLOINTERVALSW
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(HELLO 报文发送开关)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00131:HELLOINTERVAL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:HELLOINTERVAL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(秒)
+    requiredness: conditional   # 命令真相 conditional(HELLOINTERVALSW=ENABLE 时)
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00131:RETRYTIMES
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:RETRYTIMES
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(报文重发次数)
+    requiredness: optional   # 命令真相 optional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00131:PPPMAGICNUMBER
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:PPPMAGICNUMBER
+    binding_type: variable
+    variable_source: peer_planned   # 数据规划表: 与对端协商(Magic-Number 协商)
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+  - binding_id: UDG@20.15.2@Task@0-00131:MAXSENDWINSIZE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:MAXSENDWINSIZE
+    binding_type: variable
+    variable_source: peer_planned   # 与对端协商(发送窗口上限)
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+  - binding_id: UDG@20.15.2@Task@0-00131:INITTUNNELNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:INITTUNNELNUM
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(初始隧道个数, AAA 方式数据规划表)
+    requiredness: conditional   # AAA 下发方式规划
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+  - binding_id: UDG@20.15.2@Task@0-00131:MAXSESSIONNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET GLOBALL2TP:MAXSESSIONNUM
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(每条隧道承载会话上限)
+    requiredness: conditional   # AAA 下发方式规划
+    source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md]
+notes: "GWFD-020412 两种激活方式共享的缺省参数。LOCALNAME/HELLO 报文三参数/RETRYTIMES 命令真相为可选(本地脚本和 AAA 脚本均显式配); PPPMAGICNUMBER 与 MAXSENDWINSIZE 数据来源=与对端协商; INITTUNNELNUM/MAXSESSIONNUM 仅 AAA 下发方式数据规划表列出(AAA 方式不配 L2TP 组, 用缺省会话上限控隧道)。本地方式 HELLO/Magic/窗口集中在 ADD L2TPGROUP, SET GLOBALL2TP 仅设 LOCALNAME+HELLO+RETRYTIMES(见本地脚本)。冷门参数不绑(INVTUNLEXISTDUR/LNSDETECTINR/LNSDETECTSW: 命令真相均 optional 且无特性证据)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

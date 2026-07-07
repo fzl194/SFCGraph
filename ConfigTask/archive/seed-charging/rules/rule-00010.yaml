@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00010
+task_ref: UDG@20.15.2@Task@00301
+rule_name: 防欺诈开启时URL类型RULE必须同绑三四层filter
+rule_type: conditional_rule
+rule_logic: 防欺诈功能开启时，RULE下绑定URL类型的7层filter时必须同时绑定三四层filter；防欺诈未开启时可仅绑URL类型7层filter
+violation_effect: 防欺诈校验失败
+severity: warning
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

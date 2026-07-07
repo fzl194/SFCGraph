@@ -1,0 +1,30 @@
+rule_id: UDG@20.15.2@TaskRule@0-00391
+owner_task_ref: UDG@20.15.2@Task@0-00259   # 挂 atom ADD ICAPSERVER
+rule_name: ADD ICAPSERVER 规格 30 + 单类型≤30 + 立即生效
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD ICAPSERVER
+  expression: |
+    ADD ICAPSERVER 命令最大记录数为 30（命令 notes 强约束），超出被拒。
+    每种类型的 ICAP 服务器最多可配置 30 个（命令 notes 类型配额）。
+    该命令执行后立即生效（命令 notes）。
+    ICAPSERVERTYPE 固定 URL_FILTERING（本特性场景；CommandParameter 校验承担）。
+    ICAPSVRIPTYPE 枚举 IPV4/IPV6（CommandParameter 校验承担）；本特性 IPV4 固定由 binding 表达。
+    ICAPSERVERIPV4 不支持 0.0.0.0 和 255.255.255.255（命令 notes 取值约束）。
+    ICAPSERVERIPV6 不支持全 F（命令 notes 取值约束）。
+    ICAPSERVERPORT 整数 1～65534，默认 1344（CommandParameter 校验承担）。
+    TCPRETRYTIME 整数 1～3600 秒，默认 5（CommandParameter 校验承担）。
+    OPTIONINTERVAL 整数 1～600 秒，默认 10（CommandParameter 校验承担）。
+    VPNINSTANCE 引用 ADD VPNINST(0-00041)（已由 binding source_ref 表达）。
+    当前特性统一走 IPv4 路径，IPv6 路径（ICAPSERVERIPV6）特性未用，按 baseline §4.1 冷门不绑。
+violation_effect: 上限超限→ADD 失败；类型超配→ADD 失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110471/配置到ICAP Server的互通数据_75400117.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 30 + 单类型≤30 + 立即生效 + 端口/重试/选项间隔默认值。5 缺口中 ICAPSERVERIPV6(IPV6)/ICAPSERVERPORT(默认 1344)/TCPRETRYTIME(默认 5)/OPTIONINTERVAL(默认 10)/CFGDOMAINNAME(配置域) 均为 optional/conditional(命令真相) 冷门不绑。VPNINSTANCE 一致性由 feature-级跨 atom 编排（与 ADD LOGICINF 的 VPNINSTANCE 保持一致）表达。"

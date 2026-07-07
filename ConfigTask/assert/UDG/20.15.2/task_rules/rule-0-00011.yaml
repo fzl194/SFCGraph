@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00011
+owner_task_ref: UDG@20.15.2@Task@2-00002
+rule_name: Credit Pooling 与 DefaultQuota 不能同时使能
+rule_type: conditional_rule
+rule_scope: parameter
+condition: {expression_type: parameter_value, expression: "SET UPDEFAULTQUOTA.DFTQTSWITCH=ENABLE 且 SET UPGLBCHGPARA.CREDITPOOLSW=ENABLE"}
+constraint:
+  constraint_type: must_not_coexist
+  target_refs:
+    - UDG@20.15.2@Task@0-00016
+    - UDG@20.15.2@Task@0-00017
+  expression: Credit Pooling 功能（SET UPGLBCHGPARA.CREDITPOOLSW=ENABLE）与 DefaultQuota 功能（SET UPDEFAULTQUOTA.DFTQTSWITCH=ENABLE）不能同时使用
+violation_effect: 功能冲突
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]

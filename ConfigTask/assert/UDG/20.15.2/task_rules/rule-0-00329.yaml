@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00329
+owner_task_ref: UDG@20.15.2@Task@0-00055   # ADD REDUNDRDTIP (atom-挂 rule)
+rule_name: ADD REDUNDRDTIP 最大记录数2+立即生效+主备路由SRROUTE前缀一致
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00055:IPVERSION
+    - UDG@20.15.2@Task@0-00055:IPV4ADDRESS
+    - UDG@20.15.2@Task@0-00055:IPV6ADDRESS
+  expression: "最大记录数为2(主备各一条/IPV版本各一条); 该命令执行后立即生效；执行该命令配置IPV4ADDRESS/IPV6ADDRESS参数时，需要确保对应路由存在(ADD SRROUTE 0-00061/ADD SRROUTE6 0-00062 的 PREFIX 与重定向IP一致)，否则主UPF故障期间在备UPF上激活的用户，在主UPF恢复后，这部分用户的下行业务不能发往备UPF；IPVERSION=IPv4配IPV4ADDRESS, =IPv6配IPV6ADDRESS(二选一)。"
+violation_effect: 重定向IP路由缺失导致主备切换后用户下行业务不能发往备UPF
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格2+立即生效+SRROUTE前缀一致)
+source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]

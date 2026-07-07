@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00338
+owner_task_ref: UDG@20.15.2@Task@0-00214   # ADD IKEPEER (atom-挂 rule)
+rule_name: ADD IKEPEER 立即生效+PSK必填+对端地址不能为地址段+IKEv1国密限制
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00214:PRESHAREDKEY
+    - UDG@20.15.2@Task@0-00214:LOWREMOTEADDR
+    - UDG@20.15.2@Task@0-00214:PROPOSAL
+  expression: "该命令执行后立即生效；参数IKEMSGSYNC/IPSECMSGSYNC只有在参数VERSION2为TRUE时才生效；IKEv1是不安全的协议，建议使用IKEv2；IKEv1国密IPSEC仅支持主模式；IKEv1国密IPSEC不支持NAT穿越；IKEv1国密IPSEC不支持主备隧道；当配置认证方式为预共享密钥(PSK)时必须配置预共享密钥且与对端设备相同；IKE对等体被IPsec安全策略引用时必须配置对端地址，对端地址不能配置为地址段；PROPOSAL引用前置ADD IKEPROPOSAL(0-00213:PROPOSALNUMBER)；INVRFNAME/OUTVRFNAME引用IPsec微服务VPN(0-00210:VRFNAME)；NAT设备场景必须部署IPSec NAT穿越NATTRAVERSAL=TRUE。"
+violation_effect: PSK未配导致SA协商失败；对端地址配置为地址段导致引用失败；IKEv1国密配置NAT穿越或主备隧道系统拒收
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(立即生效+PSK必填+对端地址+IKEv1国密限制)
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md

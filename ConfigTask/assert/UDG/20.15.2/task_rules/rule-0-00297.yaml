@@ -1,0 +1,29 @@
+rule_id: UDG@20.15.2@TaskRule@0-00297
+owner_task_ref: UDG@20.15.2@Task@0-00091
+rule_name: 0-00091 最大记录数 50 + 立即生效 + URL特殊字符转义 + APPENDINFONAME配套
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00091
+  expression: |
+    ADD SMARTHTTPREDIR(atom 0-00091) 配置约束：
+    (1) 上限：系统最大记录数为 50(命令 notes 强约束)——明显小于 DNSOVERWRITING 2000 / REDIRAPPENDINFO 1000。
+    (2) 立即生效：该命令执行后立即生效(命令 notes 强约束)。
+    (3) URL 特殊字符转义(命令 notes 强约束)：SERVERURL 中"?"→%3f、" "→%20、","→%2c(逗号特殊处理)；普通字符按 URL 编码规范——主特性示例 www.example.com 无特殊字符，若第三方 server URL 含特殊字符必须转义。
+    (4) 扩展过滤器上限：最多 5 组扩展过滤器(命令真相 EXTFLTTYPE1-5 + EXTFLTNAME1-5 对应)，AND/OR/NOT 类型可混用；主特性示例 2 组 AND(URL+USERAGENT 组合匹配)。
+    (5) EXTFLTTYPE1/EXTFLTNAME1 必选引用 ADD EXTENDEDFILTER(0-00022)——主特性 filter_http-redirect1；EXTFLTTYPE2/EXTFLTNAME2 条件必选——多组过滤器时配套。
+    (6) APPENDINFONAME 引用 ADD REDIRAPPENDINFO(0-00023) 重定向携带信息名——可设置 HTTP 响应报文中携带的用户信息(URL/MSISDN/IMSI/IMEI/MSIP)；主特性 testredirappendinfo 由 0-00023 产出于 110284 同特性链。
+    (7) BINDERRCODENAME 引用 ADD ERRORCODE(0-00089) 错误码名——按 HTTP 错误码触发重定向；主特性 httperrorcode。
+    (8) ERRCODEFLAG/ERRCODENAME/USERDEFINENAME/USERDEFINEVALUE 缺口按 Error Code 携带/自定义键值场景补充(主特性走 BINDERRCODENAME，不补)。
+    (9) EXTFLTTYPE3-5/EXTFLTNAME3-5/CFGDOMAINNAME 缺口按多组扩展过滤器/配置域场景补充(主特性 2 组已足)。
+    (10) SMTHTTPREDINAME 产出对象被 ADD RULE(POLICYTYPE=SMARTREDIRECT) POLICYNAME 引用——须先于 RULE 配置。
+violation_effect: 上限超限→ADD 失败；URL 特殊字符未转义→ADD 拒收或解析错误；引用 EXTENDEDFILTER/REDIRAPPENDINFO/ERRORCODE 不存在→ADD 拒收；未先配 SMTHTTPREDINAME→RULE 引用失败
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110284/激活HTTP智能重定向_67075035.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。本 atom 仅 1 特性使用(110284 HTTP智能重定向专属)，无跨特性分叉；不建 DP。11 个缺口参数(ERRCODEFLAG/ERRCODENAME/USERDEFINENAME/USERDEFINEVALUE/EXTFLTTYPE3-5/EXTFLTNAME3-5/CFGDOMAINNAME)按 §4.3 ③ 标注为主场景不补绑。"

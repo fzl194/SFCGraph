@@ -1,0 +1,29 @@
+rule_id: UDG@20.15.2@TaskRule@0-00376
+owner_task_ref: UDG@20.15.2@Task@0-00087   # 挂 atom ADD IPFARM
+rule_name: ADD IPFARM 上限 3600 + 90% 告警 + VirtualIP 唯一 + 立即生效 + 前置 LOGICINF
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00087
+  expression: |
+    ADD IPFARM 命令最大记录数 3600。配置记录数 >90% 时上报 ALM-135602215（配置数量超阈值）；<=90% 恢复告警；阈值可通过 MOD CFGTHRESHOLD 修改。
+    立即生效：本命令执行后立即生效。
+    唯一性约束：IPFARMNAME 全局唯一；VIRTUALIP 与 IPFarm 一一对应（不允许将同一个 virtual IP 配置到不同的 IPFarm 上）。
+    不同 IP Farm 下的服务器需要配置不同的心跳检测接口（INTERFACENAME）。
+    前置依赖：HEALTHCHECKFLAG=ENABLE 时必须先 ADD LOGICINF(0-00083) 创建心跳检测接口；VPNINSTANCE 引用时须先 ADD VPNINST(0-00041)。
+    适用 NF：PGW-U、UPF。
+    跨 SERVERTYPE 独立：REDIRECT 类型与 PCSCF 类型 IPFarm 各自独立计数。
+violation_effect: 超 3600 上限新增失败；VIRTUALIP 冲突导致重定向/P-CSCF 寻址失败；同 IPFarm 服务器共享心跳接口导致探测冲突
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/DN管理/IP Farm 管理/IPFarm参数/增加IPFarm（ADD IPFARM）_82837050.md
+  - GWFD-110281/配置用户Portal_66620114.md
+  - GWFD-110282/配置Web Proxy_66987339.md
+  - GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(3600 上限 + 90% 告警 + VirtualIP 唯一 + 立即生效) + ③前置依赖 LOGICINF/VPNINST。SERVERTYPE 跨特性分叉已升级 decision_driven + DP 0-00150(与 0-00086 共享)。"

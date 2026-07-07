@@ -1,0 +1,16 @@
+rule_id: UDG@20.15.2@TaskRule@0-00005
+owner_task_ref: UDG@20.15.2@Task@1-00003
+rule_name: RULE 优先级相对约束
+rule_type: selection_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_match
+  target_refs: [UDG@20.15.2@CommandParameter@ADD RULE:PRIORITY]
+  expression: 数字越小优先级越高；只绑三四层 filter 的 RULE 优先级应低于绑七层 filter 的；过滤条件为 any 的 RULE 优先级最低（如 65000）
+violation_effect: 规则匹配顺序错误，计费不准
+severity: info
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

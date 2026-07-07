@@ -1,0 +1,30 @@
+task_id: UDG@20.15.2@Task@0-00254
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置APN内容过滤模板
+task_layer: atom
+task_intent: 设置 APN 维度的 URL 过滤模板(SET APNCFTEMPLATE), 将内容过滤模板绑定到指定 APN
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNCFTEMPLATE
+status: inferred   # 命令级审查(2026-07-02):draft→inferred, 缺口0; 新增 rule 投影(上限+生效时机+1对1绑定)
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00254:APNNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNCFTEMPLATE:APNNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(与 ADD APN 配置的 APN 一致)
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00254:CFTEMPLATENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNCFTEMPLATE:CFTEMPLATENAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD CFTEMPLATE)
+    source_ref: UDG@20.15.2@Task@0-00253:CFTEMPLATENAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: >-
+  GWFD-110471。命令级审查(2026-07-02):draft→inferred; 缺口 0(命令真相 2 参数均已绑);
+  仅缺 rule 投影(rule 0-00315: 上限10000 + 仅新激活/新承载生效 + APN 与 CFTEMPLATE 1:1);
+  APNNAME 引用 ADD APN(0-00020), CFTEMPLATENAME 引用 ADD CFTEMPLATE(0-00253);
+  命令不在 mml_commands.jsonl(§6.A), 待 CommandGraph 抽取回填。

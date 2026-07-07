@@ -1,0 +1,19 @@
+task_id: UDG@20.15.2@Task@0-00085
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置物联网能力上报
+task_layer: atom
+task_intent: 使能NB-IoT终端标准接入功能（NBIOT=ENABLE），开启UDG的NB-IoT接入能力上报
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IOTCAPABILITY
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)。命令级审查(2026-07-02): 无缺口；投影 最大记录数1(全局唯一实例)→rule 0-00155
+source_evidence_ids: [GWFD-010296/激活NB-IoT终端标准接入_74275194.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00085:NBIOT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IOTCAPABILITY:NBIOT
+    binding_type: fixed
+    variable_source: local_planned   # 数据规划表: 本端规划
+    value: "ENABLE"
+    requiredness: required
+    source_evidence_ids: [GWFD-010296/激活NB-IoT终端标准接入_74275194.md]
+notes: "GWFD-010296。NBIOT=ENABLE 固定取值（使能NB-IoT终端标准接入功能），数据规划表取值样例 ENABLE，本端规划。md 注: 完整NB-IoT功能需用户面+控制面共同配置，控制面配置参考SGW-C/PGW-C上NB-IoT章节(本特性仅用户面UDG侧开关)。无 license 步骤(md未列)。命令真相 optional(系统初始值 ENABLE),atom 录 required 表达本特性使能固定语义。SET IOTCAPABILITY 其余参数(若有)待后续特性揭示时补全。"

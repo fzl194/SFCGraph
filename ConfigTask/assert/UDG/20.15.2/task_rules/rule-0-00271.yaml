@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00271
+owner_task_ref: UDG@20.15.2@Task@0-00208
+rule_name: 0-00208 聚合 atom 互斥(以太ACL ACLSRCMAC vs 接口ACL IFNAME)
+rule_type: mutex_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: mutex
+  target_refs:
+    - UDG@20.15.2@Task@0-00208:ACLSRCMAC
+    - UDG@20.15.2@Task@0-00208:IFNAME
+  expression: "0-00208 为 P0 聚合 atom (ADD ACLRULEETH + ADD ACLRULEIF)，ACLSRCMAC(以太ACL匹配,4000-4999) 与 IFNAME(接口ACL匹配,1000-1999) 互斥，按 ACL 规则组 ACLNAME 范围段选用其一: 4000-4999→ACLSRCMAC；1000-1999→IFNAME。"
+violation_effect: 同一规则组混用以太/接口匹配会导致规则语义不清或被拒收
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+notes: "命令级审查(2026-07-02)新增 rule。CONSOLIDATION-BACKLOG.md §B/E.2 已标记 0-00208 应拆为 0-00208a ACLRULEETH / 0-00208b ACLRULEIF 两个 atom，本 pass 不拆(留待专项聚合拆解 pass)。"

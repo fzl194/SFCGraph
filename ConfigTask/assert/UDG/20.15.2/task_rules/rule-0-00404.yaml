@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00404
+owner_task_ref: UDG@20.15.2@Task@0-00203   # 挂 atom ADD MQCPOLICY(聚合 MQCPOLICYNODE)
+rule_name: ADD MQCPOLICY 记录数规格与 CB 对前置依赖
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD MQCPOLICY
+  expression: "ADD MQCPOLICY 命令最大记录数为 1023；超过规格新增失败。命令执行后立即生效。绑 CB 对(ADD MQCPOLICYNODE)前，流分类(ADD MQCCLASSIFIER)与流行为(ADD MQCBEHAVIOR)必须已存在——CLASSIFIERNAME/BEHAVIORNAME 为 reference 引用，引用对象不存在则绑定失败。"
+violation_effect: 超规格新增失败；CB 对引用 dangling 导致流策略无效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes '该命令最大记录数为1023'+'执行后立即生效'。CB 对前置顺序由 CLASSIFIERNAME(source_ref=0-00201)/BEHAVIORNAME(source_ref=0-00199) reference binding 隐式表达，本 rule 显式记录 cardinality + 前置约束。"

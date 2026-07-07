@@ -1,0 +1,24 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00150
+owner_task_ref: UDG@20.15.2@Task@0-00086   # 挂 atom SET IPFARMGLOBAL
+decision_name: SET IPFARMGLOBAL SERVERTYPE 跨特性取值
+decision_question: SET IPFARMGLOBAL 的 SERVERTYPE 取值是 REDIRECT（用户Portal/Web Proxy 重定向场景）还是 PCSCF（P-CSCF 故障时 IMS 业务恢复场景）？
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+options:
+  - option_id: opt-ipfarmglobal-redirect
+    option_name: REDIRECT 重定向场景
+    option_value: REDIRECT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00086:LBMETHOD, effect_type: requires, effect_detail: REDIRECT 场景需配 LBMETHOD(ROUND_ROBIN/LEAST_RECENTLY_USED/LEAST_LOAD)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00086:TIMETHRESHOLD, effect_type: requires, effect_detail: REDIRECT 场景必配心跳检测时间阈值}
+  - option_id: opt-ipfarmglobal-pcscf
+    option_name: PCSCF IMS 故障恢复场景
+    option_value: PCSCF
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00086:LBMETHOD, effect_type: excludes, effect_detail: PCSCF 场景不配 LBMETHOD(IMS P-CSCF 故障恢复无需负载均衡模式)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00086:TIMETHRESHOLD, effect_type: requires, effect_detail: PCSCF 场景必配心跳检测时间阈值(默认 6 秒)}
+default_option: opt-ipfarmglobal-redirect
+notes: "跨 IPFarm 使用场景取值分叉: REDIRECT(用户Portal/Web Proxy 重定向/IPFarm 心跳+负载均衡) vs PCSCF(IMS P-CSCF 故障恢复 IPFarm 心跳)。LBMETHOD 仅 REDIRECT 场景有意义。SET IPFARMGLOBAL 全局唯一+最大记录数 3(命令真相)。"

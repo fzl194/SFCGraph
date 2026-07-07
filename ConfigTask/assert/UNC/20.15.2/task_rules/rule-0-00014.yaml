@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00014
+owner_task_ref: UNC@20.15.2@Task@0-00012
+rule_name: ADD CGGROUP 最多 32 条 + 须绑定才生效
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CGGROUP]
+  expression: 记录数 ≤ 32；CGGRPID 范围 1~32；CG 组须绑到离线计费模板或设为全局 CG 组才生效
+violation_effect: 超规格无法新增；未绑定的 CG 组不生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [添加CG组（ADD CGGROUP）_09896879.md]

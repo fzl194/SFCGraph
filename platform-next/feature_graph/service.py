@@ -149,15 +149,21 @@ class FeatureGraphService:
 
     # ---- feature detail: docs / relations / licenses ----
     def get_feature_docs(self, nf: str, version: str, code: str) -> list[dict]:
-        """读 features.jsonl 的 source_evidence_ids（全部 md），title 从文件名解析。"""
+        """读 features.jsonl 的 source_evidence_ids（全部 md）+ doc_assets 的文档类型。
+
+        doc_type 来自 doc_assets（概述/激活/参考信息/原理/部署/调测/other）；
+        旧 jsonl 无 doc_assets 时 doc_type="" 向后兼容。
+        """
         rec = self.get_feature(nf, version, code)
         if not rec:
             return []
+        type_by_path = {d.get("path"): d.get("type", "") for d in (rec.get("doc_assets") or [])}
         out = []
         for path in rec.get("source_evidence_ids") or []:
             fn = path.rsplit("/", 1)[-1].rsplit("\\", 1)[-1]
             title = fn.rsplit("_", 1)[0] if "_" in fn else fn
-            out.append({"doc_path": path, "doc_title": title})
+            out.append({"doc_path": path, "doc_title": title,
+                        "doc_type": type_by_path.get(path, "")})
         return out
 
     def get_feature_relations(self, nf: str, version: str, code: str) -> list[dict]:

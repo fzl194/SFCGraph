@@ -1,0 +1,56 @@
+decision_id: UDG@20.15.2@DecisionPoint@00001
+owner_ref: UDG@20.15.2@Task@00301
+decision_name: 计费方式选择
+decision_question: 该业务采用哪种计费方式（决定叠加哪个计费特性）？
+trigger_condition: 完成内容计费基础配置后
+options:
+  - option_name: 纯离线基础
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00202
+        effect_type: excludes
+        effect_detail: "不叠加在线计费"
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00203
+        effect_type: excludes
+        effect_detail: "不叠加离线计费额外命令"
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00204
+        effect_type: excludes
+        effect_detail: "不叠加融合计费"
+      - target_type: decision_point
+        target_ref: UDG@20.15.2@DecisionPoint@00002
+        effect_type: selects_option
+        effect_detail: "离线"
+  - option_name: 在线
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00202
+        effect_type: adds
+        effect_detail: "叠加在线计费特性（含SET UPDEFAULTQUOTA/UPGLBCHGPARA/URRFAILACTION可选）"
+      - target_type: decision_point
+        target_ref: UDG@20.15.2@DecisionPoint@00002
+        effect_type: selects_option
+        effect_detail: "在线"
+  - option_name: 离线
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00203
+        effect_type: adds
+        effect_detail: "叠加离线计费特性（含SET URRFAILACTION可选）"
+      - target_type: decision_point
+        target_ref: UDG@20.15.2@DecisionPoint@00002
+        effect_type: selects_option
+        effect_detail: "离线"
+  - option_name: 融合
+    impacts:
+      - target_type: task
+        target_ref: UDG@20.15.2@Task@00204
+        effect_type: adds
+        effect_detail: "叠加融合计费特性（SMF侧RGAPPLIED控制）"
+      - target_type: decision_point
+        target_ref: UDG@20.15.2@DecisionPoint@00002
+        effect_type: selects_option
+        effect_detail: "融合"
+status: active
+source_evidence_ids: []

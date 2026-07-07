@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00116
+owner_task_ref: UDG@20.15.2@Task@0-00016   # 挂 atom SET UPDEFAULTQUOTA
+rule_name: SET UPDEFAULTQUOTA 最大记录数与高危提示
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET UPDEFAULTQUOTA
+  expression: "SET UPDEFAULTQUOTA 命令最大记录数为 3（按用户漫游类型 USERTYPE 每类一条）。本命令为高危命令，修改默认配额使能开关会影响用户业务访问时延（配额耗尽申请配额期间若开关关闭，业务报文阻塞，时延变大）。仅对之后发生承载更新的用户或新激活用户生效。"
+violation_effect: 超规格新增失败；误改开关导致用户业务访问时延变大
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数3' + '高危命令影响业务访问时延' + '只对承载更新/新激活用户生效'。"

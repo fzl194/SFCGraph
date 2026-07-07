@@ -1,0 +1,17 @@
+rule_id: UDG@20.15.2@TaskRule@0-00014
+owner_task_ref: UDG@20.15.2@Task@0-00003
+rule_name: PCCPOLICYGRP.URRGROUPNAME 仅计费时必填
+rule_type: conditional_rule
+rule_scope: parameter
+condition: {expression_type: intent, expression: "feature intent 包含计费(叠加计费特性)"}
+constraint:
+  constraint_type: conditional_required
+  target_refs:
+    - UDG@20.15.2@Task@0-00003:URRGROUPNAME
+  expression: PCC 策略组用于纯策略控制时可省 URRGROUPNAME；当需要计费时必须配置 URRGROUPNAME(引用已通过 ADD URRGROUP 配置的 URR 组)。GWFD-020351 数据规划表明示"当需要计费时，请配置参数URRGROUPNAME"。计费特性(GWFD-020300/010171/010173)始终满足计费意图→对其仍等效必填。
+violation_effect: 纯策略控制无影响；计费场景漏配则计费不生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]

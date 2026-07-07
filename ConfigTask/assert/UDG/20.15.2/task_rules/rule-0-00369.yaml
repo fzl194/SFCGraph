@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00369
+owner_task_ref: UDG@20.15.2@Task@0-00135   # 挂 atom ADD L2TPCLIENTIP
+rule_name: ADD L2TPCLIENTIP 上限 1500 + 每 L2TP 组 1 源端 + 立即生效 + 前置 ADD L2TPGROUP/LOGICINF
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00135
+  expression: |
+    ADD L2TPCLIENTIP 命令最大记录数 1500。
+    每个 L2TP 组只能绑定 1 个源端 Gi 接口（GROUPID 唯一索引，唯一性约束）。
+    立即生效：本命令执行后立即生效。
+    前置依赖：必须先 ADD L2TPGROUP(0-00133, 提供 L2TP 组索引) 和 ADD LOGICINF(0-00083, 提供 Giif 接口)。
+    适用 NF：PGW-U、UPF。
+    本地配置方式专属：AAA 下发方式用 ADD L2TPRDSCLIENT(0-00134) 绑 APN 到接口。
+violation_effect: 超 1500 上限新增失败；同 L2TP 组重复绑接口导致源端冲突；未先 ADD L2TPGROUP/LOGICINF 则无引用源
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/会话管理/L2TP隧道管理/L2TP组绑定源端接口/增加L2TP绑定的接口（ADD L2TPCLIENTIP）_35373536.md
+  - GWFD-020412/本地配置方式激活L2TP VPN_40342129.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(1500 上限 + 每组 1 源端 + 立即生效) + ③前置依赖 ADD L2TPGROUP/ADD LOGICINF。"

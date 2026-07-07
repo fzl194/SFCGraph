@@ -1,0 +1,29 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00057
+owner_task_ref: UDG@20.15.2@Task@0-00007   # 挂 atom（ADD FLOWFILTER）：TETHERDETFLAG 开关
+decision_name: Tethering检测开关
+decision_question: |
+  是否对该流过滤器配置 Tethering 检测标识（TETHERDETFLAG）？
+  - 默认不配：普通业务流过滤器，不关注 Tethering（终端共享上网）检测。多数计费/PCC/URL过滤/重定向场景。
+  - 显式 NONE：明确关闭 Tethering 检测。Proxy UPF 漫游、双故障 Bypass 等特殊场景为确保业务透传而显式关闭。
+decision_type: boolean
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: optional
+status: inferred
+source_evidence_ids:
+  - GWFD-112001/业务配置_80953432.md
+  - GWFD-112000/激活双故障Bypass_14147877.md
+options:
+  - option_id: opt-tether-default
+    option_name: 不配置(默认)
+    option_value: DEFAULT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00007:TETHERDETFLAG, effect_type: excludes, effect_detail: 不配置 TETHERDETFLAG（缺省）。普通业务流过滤器（27/29 特性）}
+  - option_id: opt-tether-none
+    option_name: 显式关闭Tethering检测
+    option_value: NONE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00007:TETHERDETFLAG, effect_type: sets_value_pattern, effect_detail: TETHERDETFLAG=NONE，明确不做 Tethering 检测。Proxy UPF 漫游(GWFD-112001)/双故障Bypass(GWFD-112000)确保业务透传}
+default_option: opt-tether-default
+notes: |
+  命令级审查(2026-07-02)新增。管理 TETHERDETFLAG 的配置决策。
+  与 DP 0-00019（FLOWFILTERTYPE EXTEROTTDB 维度）独立：本 DP 仅管 Tethering 检测开关，FLOWFILTERTYPE 的演进建议见 DP 0-00019（遵循"演进只记录不执行"边界，未补 FLOWFILTERTYPE binding）。

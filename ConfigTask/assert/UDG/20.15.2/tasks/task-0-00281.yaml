@@ -1,0 +1,41 @@
+task_id: UDG@20.15.2@Task@0-00281
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置SA指纹识别
+task_layer: atom
+task_intent: 开启HTTPS业务行为识别功能(ADD FINGERIDENT)，对HTTPS业务报文做TLS指纹识别提升未携带SNI场景的业务识别精度
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD FINGERIDENT
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00281:CFGPROTMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD FINGERIDENT:CFGPROTMODE
+    binding_type: decision_driven   # 校正：跨特性分叉由 DP 0-00042 驱动
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；ALL=所有协议/SPECIFIC=指定协议
+    requiredness: required
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00042
+    source_evidence_ids: [GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]
+  - binding_id: UDG@20.15.2@Task@0-00281:PROTOCOLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD FINGERIDENT:PROTOCOLNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；指定协议名称(可空格不分大小写)
+    requiredness: conditional   # CFGPROTMODE=SPECIFIC 时必填，由 DP 0-00042 编排
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00042
+    source_evidence_ids: [GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]
+  - binding_id: UDG@20.15.2@Task@0-00281:FINGERIDENTCTRL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD FINGERIDENT:FINGERIDENTCTRL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；DISABLE=只统计不识别业务名称/STATIC_ONLY=只静态统计
+    requiredness: optional   # 校正：命令真相为 optional(默认 DISABLE)
+    source_evidence_ids: [GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]
+  - binding_id: UDG@20.15.2@Task@0-00281:CFGDOMAINNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD FINGERIDENT:CFGDOMAINNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；业务域名(1~31字符)
+    requiredness: conditional   # 命令真相 CFGPROTMODE=SPECIFIC 时可选
+    source_evidence_ids: [GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]
+notes: |
+  GWFD-110404 HTTPS业务行为识别专属。命令 ADD FINGERIDENT 在 mml_commands.jsonl，parameter_references 为空(§6-B)，参数从 parameter_description 文本抽取。
+  特性 md 样例 CFGPROTMODE=ALL(全协议指纹识别)，PROTOCOLNAME 未列(SPECIFIC 路径)。CFGPROTMODE 取 ALL/SPECIFIC 的协议配置方式分叉由 DP 0-00042 表达。
+  命令级审查(2026-07-02)：4/4 参数绑定完整；修正 binding_type 自相矛盾(CFGPROTMODE 改 decision_driven 由 feature-挂 DP 0-00042 驱动)；去除 FINGERIDENTCTRL 的 value 字段(binding_type variable 不应附 value)校正 requiredness 为 optional(命令真相默认 DISABLE)；PROTOCOLNAME 增加 decision_ref(由 DP 0-00042 编排 requiredness 切换)。新增 atom rule 0-00397(cardinality 128 + 立即生效 + ALL/SPECIFIC 同时配置时 SPECIFIC 优先 + 指纹识别只增强不替代特征库)。LOD SIGNATUREDB 前置依赖(特征库)由 feature-级/特性编排表达。

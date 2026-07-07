@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00308
+owner_task_ref: UDG@20.15.2@Task@0-00152
+rule_name: 0-00152 立即生效 + 启动自动加载 + 华为技术支持确认 + 上传通道 + 与 SIGNATUREDB 配套
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00152
+  expression: |
+    LOD PARSERDB(atom 0-00152) 配置约束：
+    (1) 立即生效：该命令执行后立即生效(命令 notes 强约束)。
+    (2) 启动自动加载：由于系统启动时，会自动加载协议解析数据库，一般情况下不需要手工更新协议解析数据库(命令 notes 强约束)——本 atom 主要用于 HTTPS 业务地址识别特性引导场景。
+    (3) 华为技术支持确认：此命令必须得到华为技术支持确认后，方可以执行，以避免协议解析数据库文件错误导致的系统异常(命令 notes 强约束)——非例行操作需走变更流程。
+    (4) 上传通道：新增协议解析数据库可以通过网管/MAE 的"网元文件传输"功能或者 OM Portal 的"文件传输"功能进行库文件上传(命令 notes)。
+    (5) 更新时长：协议解析数据库更新需要一段时间，为保证协议解析正确，此命令在[加载期间需保持协议解析功能](命令 notes 截断)。
+    (6) 不中断业务：此过程不中断和影响业务(命令功能描述)。
+    (7) 与 SIGNATUREDB 配套(0-00027)：HTTPS 业务地址识别场景两命令均需加载——LOD SIGNATUREDB 加载协议特征库；LOD PARSERDB 加载协议解析库；HTTP 协议识别依赖两者共同生效(特征库用于识别协议类型，解析库用于解析协议字段)。
+violation_effect: 未经华为确认执行→协议解析数据库错误导致系统异常；未配套 SIGNATUREDB→七层协议识别部分能力不可用
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids:
+  - GWFD-110203/配置HTTPS业务地址识别_24082599.md
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。独占段 0-00308~。"

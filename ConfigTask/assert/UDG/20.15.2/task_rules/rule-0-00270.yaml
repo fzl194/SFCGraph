@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00270
+owner_task_ref: UDG@20.15.2@Task@0-00198
+rule_name: 高级ACL4端口段参数条件依赖(协议=TCP/UDP→PORTOP/端口范围)
+rule_type: conditional_rule
+rule_scope: atom
+condition:
+  expression_type: parameter_in
+  expression: "UDG@20.15.2@Task@0-00198:ACLPROTOCOL"
+  value_set: ["6", "17"]   # 6=TCP, 17=UDP
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00198:ACLSRCPORTOP
+    - UDG@20.15.2@Task@0-00198:ACLDESTPORTOP
+    - UDG@20.15.2@Task@0-00198:ACLSRCPORTBEGIN
+    - UDG@20.15.2@Task@0-00198:ACLDESTPORTBEGIN
+  expression: "ACLRULEADV4 当 ACLPROTOCOL=TCP(6) 或 UDP(17) 时，端口范围相关参数(ACLSRCPORTOP/ACLDESTPORTOP + ACLSRCPORTBEGIN/ACLDESTPORTBEGIN)必填；ACLSRCPORTEND/ACLDESTPORTEND 在 PORTOP=Lt 或 Range 时必填(Gt/Eq/Neq 不需)。IP协议(0)场景下所有端口参数均不需。"
+violation_effect: 端口匹配参数缺失导致规则无法精确匹配端口段
+severity: error
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+notes: "命令级审查(2026-07-02)新增 rule: ACLRULEADV4 端口段参数的条件必填约束，源自 mml_commands.jsonl notes (ACLRULEPROTOCOL=TCP/UDP 时端口相关参数生效)。属 atom-level conditional_rule，对应 0-00198 binding requiredness=conditional。"

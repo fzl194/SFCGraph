@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00185
+owner_task_ref: UDG@20.15.2@Task@0-00073
+rule_name: SET BFD 全局去使能不可恢复(高危)
+rule_type: safety_rule
+rule_scope: command
+condition:
+  expression_type: condition
+  expression: BFDENABLE=FALSE
+constraint:
+  constraint_type: destructive
+  target_refs:
+    - UDG@20.15.2@Task@0-00073:BFDENABLE
+  expression: 本命令属高危命令。全局去使能 BFD(BFDENABLE=FALSE)后，BFD 所有历史配置全部删除且无法恢复；若有业务在使用 BFD 功能，可能导致去使能失败。除使能 BFD(BFDENABLE=TRUE)外，去使能操作须谨慎并联系华为技术支持。
+violation_effect: 误去使能 BFD 导致全部 BFD 配置丢失、链路检测中断、业务流量震荡
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+notes: 命令级审查(2026-07-02)。② 命令真相 notes 投影：高危/不可恢复/业务在用可能失败。本 atom 固定 BFDENABLE=TRUE 不触发去使能，但 rule 守护防误用。

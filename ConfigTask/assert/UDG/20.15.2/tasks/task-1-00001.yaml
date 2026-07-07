@@ -1,0 +1,29 @@
+task_id: UDG@20.15.2@Task@1-00001
+nf: UDG
+version: "20.15.2"
+task_logical_name: 计费三件套
+task_layer: compound
+task_intent: 配置 URR→URRGROUP→PCCPOLICYGRP 三级引用链，建立费率到策略组的绑定
+task_category: configure
+ref: null
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+task_relations:
+  - relation_id: UDG@20.15.2@TaskRelation@0-00001
+    from_task_ref: UDG@20.15.2@Task@0-00001
+    to_task_ref: UDG@20.15.2@Task@0-00002
+    relation_type: precedes
+    requiredness: required
+    propagated_context:
+      - {context_name: URRNAME, source_ref: UDG@20.15.2@Task@0-00001:URRNAME, target_ref: UDG@20.15.2@Task@0-00002:UPURRNAME1}
+    source_static_refs: [UDG@20.15.2@CommandParameter@ADD URRGROUP:UPURRNAME1]
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - relation_id: UDG@20.15.2@TaskRelation@0-00002
+    from_task_ref: UDG@20.15.2@Task@0-00002
+    to_task_ref: UDG@20.15.2@Task@0-00003
+    relation_type: precedes
+    requiredness: required
+    propagated_context:
+      - {context_name: URRGROUPNAME, source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME, target_ref: UDG@20.15.2@Task@0-00003:URRGROUPNAME}
+    source_static_refs: [UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:URRGROUPNAME]
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

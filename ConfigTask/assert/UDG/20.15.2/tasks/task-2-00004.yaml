@@ -1,0 +1,41 @@
+task_id: UDG@20.15.2@Task@2-00004
+nf: UDG
+version: "20.15.2"
+task_logical_name: 融合计费
+task_layer: feature
+task_intent: 融合计费：复用计费 backbone；URR 在线+离线共存，SMF 侧 RGAPPLIED 控制；UPF 侧可选拉起 SET URRFAILACTION 放通阻塞业务
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-010173
+status: inferred
+source_evidence_ids:
+  - GWFD-010173/部署UPF_79654301.md
+  - GWFD-010173/调测融合计费的费率标识_91966529.md
+  - GWFD-010173/GWFD-010173 融合计费特性概述_70301693.md
+  - GWFD-010173/实现原理_70301694.md
+  - GWFD-010173/GWFD-010173 融合计费参考信息_33931912.md
+task_relations:
+  # 4 backbone 复用(precedes 链 1-00001 → 1-00002 → 1-00003 → 1-00004)
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00025, from_task_ref: UDG@20.15.2@Task@1-00001, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-010173/部署UPF_79654301.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00026, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-010173/部署UPF_79654301.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00027, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@1-00004, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-010173/部署UPF_79654301.md]}
+  # 融合可选 atom: SET URRFAILACTION(0-00018),挂在收尾 backbone 之后,由本特性级 DP 0-00156 门控
+  # (与 2-00002/03 同型:可选 SET atom 挂在 1-00004 之后,feature 级 boolean DP 切 adds/excludes)
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00028, from_task_ref: UDG@20.15.2@Task@1-00004, to_task_ref: UDG@20.15.2@Task@0-00018, relation_type: precedes, requiredness: optional, condition_ref: UDG@20.15.2@DecisionPoint@0-00156, source_evidence_ids: [GWFD-010173/调测融合计费的费率标识_91966529.md]}
+notes: |
+  pass-2 重建(2026-07-03,A 段 procedure compound-extraction.md 6 步):
+  - 4 backbone(1-00001~04)全部纯复用 as-is,Jaccard=1.0(1-00001/03/04)+ 过滤链 1-00002 复用
+    (融合 md 部署UPF 完整列举 4 过滤场景 URL/IMS/any/异常,dp-0-00002 5 option 全覆盖)。
+  - 融合 md 主示例部署脚本(部署UPF_79654301.md §任务示例)仅走 backbone(11 命令含 SPECURRGRPLIST+
+    SET URRGRPBINDING+SET REFRESHSRV),无 SET URRFAILACTION → opt-off 证实。
+  - 调测 md(91966529.md)步骤 8 说明 提供 SET URRFAILACTION 可选项(业务被阻塞时放通,
+    RETRYFAILACT=CONTINUE) → opt-on 证实。
+  - 本次新建 feature 级 DP 0-00156(融合可选 URRFAILACTION 开关),对偶 2-00002 DP 0-00154(在线
+    3 SET)/ 2-00003 DP 0-00155(离线 1 SET)。本 DP opt-on 只切 1 SET(URRFAILACTION——md 唯一在
+    调测步骤标注的可选命令)。3 特性复用 atom 0-00018(SET URRFAILACTION)。
+  - 融合 URRGROUP 在线+离线共存(consistency_rule 0-00001)与 RGAPPLIED=DEFAULT 时不能共存
+    (conditional_rule 0-00002)是 1-00001 挂的命令级约束,覆盖校验只校命令集,规则合规由
+    compound 层规则在配置生成时强制。本 feature 无需新建 rule(已闭环)。
+  - 计费方式=融合 由 atom DP 0-00001(opt-converged)锁定,仅参数 impact(USAGERPTMODE=CONVERGED
+    描述 + 不 adds/excludes atom)→ 不进 variants 枚举(锁定由特性本身决定),只引用不改建(冻结)。
+  - 不依赖 B 段 generalized DP 0-00004(opt-g-converged 决定"是否叠加 2-00004 特性",B 段作用域外,
+    A 段不引用)。

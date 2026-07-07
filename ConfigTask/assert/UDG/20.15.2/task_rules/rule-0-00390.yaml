@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00390
+owner_task_ref: UDG@20.15.2@Task@0-00258   # 挂 atom SET CFCACHEPARA
+rule_name: SET CFCACHEPARA 规格 1 + 立即生效 + 缓存更新周期联动 + CACHEIDLETIME<60 按 60s 处理 + 性能/延迟双平衡
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET CFCACHEPARA
+  expression: |
+    SET CFCACHEPARA 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    该命令执行后立即生效（命令 notes）。
+    开启内容过滤缓存会导致 URL 过滤策略不能及时更新，具体更新周期取决于本命令和 ICAP Server 上的缓存过期时间（命令 notes 缓存联动）。
+    CACHEIDLETIME 参数配置值小于 60 秒时，系统实际按照 60s 进行缓存超时处理（命令 notes 截断规则）。
+    修改 CACHEIDLETIME 参数前请评估对业务的影响：配置过小→缓存策略更新过于频繁影响性能；配置过大→缓存策略更新延迟（命令 notes 性能权衡）。
+    CACHEIDLETIME 整数 0～4294967294 秒（CommandParameter 校验承担）。
+violation_effect: 上限超限→SET 失败；<60s 实际按 60s→忽略设置；过小→性能下降；过大→策略更新延迟
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 立即生效 + 缓存更新周期联动（ICAP Server 缓存过期时间）+ CACHEIDLETIME<60s 截断规则 + 性能/延迟双平衡。"

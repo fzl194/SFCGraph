@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00284
+owner_task_ref: UDG@20.15.2@Task@0-00068
+rule_name: 0-00068 最大记录数 65536 + FLAG8021P 接口类型约束
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00068
+  expression: |
+    ADD QOSIFTRUST(atom 0-00068) 配置约束：
+    (1) 上限：系统最大记录数为 65536(命令 notes 强约束)。
+    (2) 接口类型约束：FLAG8021P 仅以太子接口/GE 子接口/Eth-Trunk 主接口支持(IPFD-012001 md § L105 '说明' 显式标注)——本 atom binding FLAG8021P requiredness=optional 已正确投影此约束；其他接口类型错误置 FLAG8021P=true 将被拒收。
+    (3) IFNAME 引用 ADD INTERFACE(atom 0-00056, 物理接口)；可用 LST INTERFACE 查询；主场景示例 IFNAME=Ethernet66/0/5。
+    (4) DSNAME 引用 ADD QOSDIFFERSERV(0-00066)；同一接口可绑定不同 DSNAME(主场景两方向均 DSNAME=default)。
+    (5) 该命令执行后立即生效(命令 notes)。
+    (6) 与 DP 0-00016 两方向均需执行一次绑定：入口 opt-ingress / 出口 opt-egress / CAR opt-qos-car 三选项分别在各自执行路径上调用本 atom(方向选项由 SET QOSBA/SET QOSPHB 区分)。
+violation_effect: 上限超限→ADD 失败；接口不支持 802.1p→FLAG8021P=true 拒收；DSNAME 不存在→ADD 失败
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md, IPFD-012001/激活QoS简单流分类特性（VNRS_VNFC）_13119472.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。P0 已合并变体 0-00206(IPFD-012001 简单流分类 variant) 至本 atom，规则 0-00206 已删除/不再生效。"

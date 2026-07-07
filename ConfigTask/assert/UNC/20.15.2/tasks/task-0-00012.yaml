@@ -1,0 +1,18 @@
+task_id: UNC@20.15.2@Task@0-00012
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CGGROUP
+task_layer: atom
+task_intent: 增加 CG 组（离线计费基本配置，CG 组用来绑定 CG）（SGW-C/PGW-C/SMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CGGROUP
+status: inferred
+source_evidence_ids:
+  - 添加CG组（ADD CGGROUP）_09896879.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00012:CGGRPID", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGGROUP:CGGRPID", binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置到CG的数据（GGSN_SGW-C_PGW-C）_95923479.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00012:DESCRIPTION", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CGGROUP:DESCRIPTION", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [添加CG组（ADD CGGROUP）_09896879.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CGGROUP.md（1 特性 WSFD-011201，2 参）。
+  CG 组是离线计费 CG 绑定的容器；CGGRPID 范围 1~32。要使用 CG 组须绑到离线计费模板或设为全局 CG 组。
+  notes：最多 32 条 → rule 0-00014 cardinality。§6.B 见全局 rule 0-00001。

@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00333
+owner_task_ref: UDG@20.15.2@Task@0-00022   # ADD EXTENDEDFILTER (atom-挂 rule)
+rule_name: ADD EXTENDEDFILTER 最大记录数1000+每filter 20000条件+整机20000+60s生效+4过滤条件至少其一
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00022:EXTFLTNAME
+    - UDG@20.15.2@Task@0-00022:URL
+    - UDG@20.15.2@Task@0-00022:USERAGENT
+  expression: "该命令最大记录数为1000(扩展过滤器数); 每个ExtendedFilter下可以配置20000个过滤条件；整机最多可以配置20000个过滤条件；该命令执行后60s生效；该命令配置时应保证URL、CONTENTTYPE、USERAGENT、URLPOSTFIX至少输入其中一个过滤条件；ExtendedFilter用于配置过滤条件信息列表，可被用作特定动作的过滤条件(如SET GYONESHOT 0-00024引用)。"
+violation_effect: 超规格记录被拒；4过滤条件均不配时命令拒收
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1000+20000*2+60s生效+至少一过滤条件)
+source_evidence_ids:
+  - GWFD-020356/激活计费信息实时提醒_64110489.md
+  - GWFD-110283/激活DNS纠错_67964199.md
+  - GWFD-110284/激活HTTP智能重定向_67075035.md

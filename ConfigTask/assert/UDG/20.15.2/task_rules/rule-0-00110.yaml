@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00110
+owner_task_ref: UDG@20.15.2@Task@0-00001   # 挂 atom ADD URR
+rule_name: ADD URR 最大记录数规格
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD URR
+  expression: "ADD URR 命令最大记录数为 65000；当配置记录数大于规格 90% 时上报 ALM-135602215 配置数量超阈值告警，阈值可通过 MOD CFGTHRESHOLD 修改。"
+violation_effect: 超规格新增失败；接近阈值时产生配置数量超阈值告警
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数65000' + '90%阈值告警'。"

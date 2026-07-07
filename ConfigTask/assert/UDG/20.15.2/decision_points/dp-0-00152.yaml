@@ -1,0 +1,35 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00152
+owner_task_ref: UDG@20.15.2@Task@0-00283   # 挂 atom SET RTSDNNPARA（atom-级 DP，公网/专网 UPF 角色编排）
+decision_name: SET RTSDNNPARA UPF 角色分工
+decision_question: 当前 UDG 实例是公网 UPF 还是专网 UPF？（决定 RTSDNNPARA 哪些参数 mandatory）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+options:
+  - option_id: opt-rtsdnn-public-upf
+    option_name: 公网 UPF（通用 DNN 漫游公网出口）
+    option_value: PUBLIC_UPF
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:PUBLICNETSW, effect_type: requires, effect_detail: PUBLICNETSW mandatory(开启公网通用 DNN 漫游分流)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:UEIPCONFLICTCHK, effect_type: requires, effect_detail: UEIPCONFLICTCHK mandatory(UE IP 与园区服务器 IP 冲突检测)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:UEIPREALLOC, effect_type: requires, effect_detail: UEIPREALLOC mandatory(冲突时 UE IP 重分配)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:UEIPREALLOCNUM, effect_type: requires_conditional, effect_detail: UEIPREALLOCNUM 仅当 UEIPREALLOC=ENABLE 时必填}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:UEIPCONFLICTPLY, effect_type: requires_conditional, effect_detail: UEIPCONFLICTPLY 仅当 UEIPCONFLICTCHK=ENABLE 时必填}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:N4RPTSW, effect_type: optional, effect_detail: N4RPTSW optional(N4 偶联消息上报公网分流能力)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:PRIVATENETSW, effect_type: excludes, effect_detail: PRIVATENETSW 不配(公网角色)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:NATALGPROTV4, effect_type: excludes, effect_detail: NATALGPROTV4 不配(公网角色；公网无 NAT ALG 地址替换)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:NATALGPROTV6, effect_type: excludes, effect_detail: NATALGPROTV6 不配(公网角色)}
+  - option_id: opt-rtsdnn-private-upf
+    option_name: 专网 UPF（通用 DNN 漫游专网出口）
+    option_value: PRIVATE_UPF
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:PRIVATENETSW, effect_type: requires, effect_detail: PRIVATENETSW mandatory(开启专网通用 DNN 漫游分流)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:NATALGPROTV4, effect_type: optional, effect_detail: NATALGPROTV4 optional(指定协议 IPv4 NAT ALG 地址替换)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:NATALGPROTV6, effect_type: optional, effect_detail: NATALGPROTV6 optional(指定协议 IPv6 NAT ALG 地址替换)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:PUBLICNETSW, effect_type: excludes, effect_detail: PUBLICNETSW 不配(专网角色)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:UEIPCONFLICTCHK, effect_type: excludes, effect_detail: UEIPCONFLICTCHK 不配(专网无该场景)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00283:N4RPTSW, effect_type: excludes, effect_detail: N4RPTSW 不配(专网不需 N4 上报)}
+default_option: opt-rtsdnn-public-upf
+notes: "命令级审查(2026-07-02) 新建 atom-级 DP（不新建 feature-级 DP，挂在 atom 0-00283 上表达公网/专网 UPF 角色分叉）。原始 evidence 表明 SET RTSDNNPARA 在特性 md 的任务示例脚本中执行 3 次：1) 公网 UPF 配 PUBLICNETSW/N4RPTSW/UEIP*; 2) 专网 UPF 配 PRIVATENETSW; 3) 可选 NATALG 地址替换。本 DP 表达角色→参数 mandatory/excludes 编排；7 binding（PUBLICNETSW/PRIVATENETSW/UEIPCONFLICTCHK/UEIPREALLOC/UEIPREALLOCNUM/UEIPCONFLICTPLY）已 decision_ref=0-00152。本特性场景（GWFD-020531 通用 DNN 漫游分流）通常 UDG 实例先公网后专网部署，两选项对应不同实例。SET RTSDNNPARA 命令 notes（设置全局地址分配规则；如果按照 SMF 映射的地址范围内分配地址，需要通 N4 相关配置）——本 atom 不展开 SMF 侧；UEIPCONFLICTPLY=BYPASS 表示出现冲突时继续激活用户。"

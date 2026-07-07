@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00383
+owner_task_ref: UDG@20.15.2@Task@0-00232   # 挂 atom SET IPSQMQDEPTH
+rule_name: SET IPSQMQDEPTH 规格 1 + 队列深度公式 + 立即生效
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET IPSQMQDEPTH
+  expression: |
+    SET IPSQMQDEPTH 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    配置 DEPTH 参数时推荐按照算法 QUEDEPTH = rate*RTT/pktlen 估算队列深度（命令 notes 明示）：rate=RATE 转换字节/秒，RTT 需依网络估算（秒），pktlen=报文平均长度（字节）。
+    该命令执行后立即生效（命令 notes）。
+    DEPTH 取值范围 1～1024（整数，报文个数；CommandParameter 校验承担）。
+violation_effect: 上限超限→SET 失败；公式算错→缓存溢出或资源浪费；存量用户不感知（立即生效已包含）
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 队列深度公式算法 + 立即生效。DEPTH 1～1024 由 CommandParameter 校验。feature-挂 rule 0-00082（IPSQM 增强须先核心整形）已表达 SET IPSQMQDEPTH 后置依赖 ADD IPSQMSHAPING(0-00231)。"

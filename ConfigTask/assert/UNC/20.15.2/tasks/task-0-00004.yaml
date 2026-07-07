@@ -1,0 +1,96 @@
+task_id: UNC@20.15.2@Task@0-00004
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置APN
+task_layer: atom
+task_intent: 添加 APN 实例，定义 UNC 可接入的外部包交换网络（SMF/SGW-C/PGW-C/GGSN）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD APN
+status: inferred
+source_evidence_ids:
+  - 增加APN配置（ADD APN）_09653747.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00004:APN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:APN
+    binding_type: variable               # APN 名：计费/PCC 多全网规划，QoS/别名/虚拟APN 多本端规划（证据④）——非模式开关，不驱动下游参数集，按全网规划
+    variable_source: global_planned
+    requiredness: required
+    source_evidence_ids: [WSFD-011201/配置离线计费参数（GGSN_SGW-C_PGW-C）_95923590.md, WSFD-109202/激活会话类QOS保证（适用于GGSN）_28258187.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:VIRTUALAPN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:VIRTUALAPN
+    binding_type: variable
+    variable_source: local_planned      # optional；ENABLE 时必须先 ADD VIRTUALAPNRULE（见 rule 0-00005）
+    requiredness: optional
+    source_evidence_ids: [WSFD-205102/激活虚拟APN_70437186.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:HASVPN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:HASVPN
+    binding_type: variable
+    variable_source: local_planned      # optional；ENABLE 时 VPNINSTANCE 必填
+    requiredness: optional
+    source_evidence_ids: [WSFD-011306/配置到AAA Server的数据（单平面+静态路由+BFD组网）_32044985.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:VPNINSTANCE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:VPNINSTANCE
+    binding_type: reference             # 已配置数据中获取（引用 ADD VPNINST）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD VPNINST:VPNINSTANCE
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011306/配置到AAA Server的数据（单平面+静态路由+BFD组网）_32044985.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:HASVPNIPV6
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:HASVPNIPV6
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional
+    source_evidence_ids: [WSFD-011306/配置到AAA Server的数据（单平面+静态路由+BFD组网）_32044985.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:SERVINGNODEPLMN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:SERVINGNODEPLMN
+    binding_type: variable
+    variable_source: local_planned      # optional；按 SGSN/SGW 映射 PLMN
+    requiredness: optional
+    source_evidence_ids: [WSFD-011310/激活PLMN标识获取_66289935.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:ULCLFUNC
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:ULCLFUNC
+    binding_type: variable
+    variable_source: local_planned      # optional；使能 SMF 上的 ULCL
+    requiredness: optional
+    source_evidence_ids: [WSFD-108002/激活基于预定义规则的分流策略控制_28860590.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:TRAFFICDIST
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:TRAFFICDIST
+    binding_type: variable
+    variable_source: global_planned     # optional；基于漫游地动态签约分流
+    requiredness: optional
+    source_evidence_ids: [WSFD-223003/部署基于漫游地动态签约的分流策略控制（SMF）_82779459.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:ALWAYSPSAULCLSW
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:ALWAYSPSAULCLSW
+    binding_type: variable
+    variable_source: global_planned     # optional；主锚点 Always 分流
+    requiredness: optional
+    source_evidence_ids: [WSFD-228001/部署跨域业务漫游访问（反向分流）（SMF）_58568777.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:USRINTSECACTSW
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:USRINTSECACTSW
+    binding_type: variable
+    variable_source: local_planned      # optional；用户发起二次激活
+    requiredness: optional
+    source_evidence_ids: [WSFD-205104/激活支持用户发起的二次激活_39947740.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:REACWITHDEL
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:REACWITHDEL
+    binding_type: variable
+    variable_source: local_planned      # optional；去活消息携带 reactivation-request
+    requiredness: optional
+    source_evidence_ids: [WSFD-011306/配置到AAA Server的数据（单平面+静态路由+BFD组网）_32044985.md]
+  - binding_id: UNC@20.15.2@Task@0-00004:RESTORPGWSWITCH
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APN:RESTORPGWSWITCH
+    binding_type: variable
+    variable_source: local_planned      # optional INHERIT；故障重启业务恢复
+    requiredness: optional
+    source_evidence_ids: [WSFD-011306/配置到AAA Server的数据（单平面+静态路由+BFD组网）_32044985.md]
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_APN.md（44 特性用，34 参）。
+  绑 12 个范式高频用到；APN 名跨特性 全网/本端 source 分叉，但非模式开关（不驱动下游参数集），按 variable/global_planned 处理。
+  VPNINSTANCE/VPNINSTANCEIPV6 = reference（引用 ADD VPNINST）；HASVPN=ENABLE 时 VPNINSTANCE 必填 → rule 0-00030 dependency。
+  未绑 22 个 optional/conditional 冷门（VPNINSTANCEIPV6/SERVINGNODERAT/APPLAYERVOLUME/QCHATSWITCH/
+  EMERGENCYSWITCH/PSEUDOACTSWITCH/NTSRSWITCH/PDTNSWITCH/SCENELIST/CHARGEPROFILE/PPDSWITCH/LADN/
+  REACTTRANS/RELEASESKIPIND/S6BEMERGCYSERVICE/PPISWITCH/LOCREPORT/PARKINGAPN/CALLINGNUMTYPE/
+  NGHRVIRTUALAPN/INTELLSERSELUPF/EXPOSURELOCRPT）——按 §5 step1 冷门不追全量。
+  notes 投影：① 最多 20000 条 → rule 0-00004 cardinality；② VIRTUALAPN=ENABLE 前必须 ADD VIRTUALAPNRULE → rule 0-00005 dependency；
+  ③ 当前版本不支持 APPLAYERVOLUME/QCHATSWITCH/PSEUDOACTSWITCH（不绑，记此 note）。
+  §6.B：UNC 缺 command_parameters.jsonl（全局见 rule 0-00001）。

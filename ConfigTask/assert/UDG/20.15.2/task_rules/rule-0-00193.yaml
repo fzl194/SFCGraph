@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00193
+owner_task_ref: UDG@20.15.2@Task@0-00077   # 挂 atom ADD OSPFIMPORTROUTE
+rule_name: OSPF引入路由前置/WLR全量发布约束
+rule_type: constraint_rule
+rule_scope: parameter
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD OSPFIMPORTROUTE:PROCID
+    - UDG@20.15.2@CommandParameter@ADD OSPFIMPORTROUTE:PROTOCOL
+    - UDG@20.15.2@CommandParameter@ADD OSPFIMPORTROUTE:TOPOID
+  expression: "ADD OSPFIMPORTROUTE 须满足：(1) 前置——必须先执行 ADD OSPF 配置了 OSPF 进程(PROCID)才能使用此命令；(2) 命令最大记录数8000；(3) 采用路由策略方式发布路由时，PROTOCOL 不能只选 WLR_SP 或 WLR_UD，必须选 WLR 方式发布所有路由(md 说明 GWFD-010104)；(4) IMPTCOSTCFG/IMPTTAGCFG/IMPTTYPECFG 为引入路由开销/标签/类型的配置开关(默认FALSE=不配置)。"
+violation_effect: 路由引入失败 / 发布路由不全 / 进程未创建报错
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes(前置 ADD OSPF/记录8000) + ③GWFD-010104 md 说明 '不能只选发布WLR_SP或WLR_UD，必须WLR发布所有路由'(PROTOCOL 取值约束 critical)。IMPTCOSTCFG/IMPTTAGCFG/IMPTTYPECFG 不绑参(③仅 010155 脚本显式传 FALSE=默认空操作，010104 未含，分叉+默认值按通用配置筛不绑)，但作为引入路由开销/标签/类型配置开关记此约束。TOPOID 已补绑(两特性脚本均显式=0)。"

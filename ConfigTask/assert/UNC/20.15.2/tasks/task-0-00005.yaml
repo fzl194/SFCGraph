@@ -1,0 +1,55 @@
+task_id: UNC@20.15.2@Task@0-00005
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置APNCHGMODE
+task_layer: atom
+task_intent: 配置基于 APN 的计费接口选择方式（不同终端/接入类型选 GaGy/Nchf）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD APNCHGMODE
+status: inferred
+source_evidence_ids:
+  - 增加基于APN的计费接口选择方式（ADD APNCHGMODE）_72001540.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00005:APN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNCHGMODE:APN
+    binding_type: reference             # 已配置数据中获取（引用 ADD APN）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD APN:APN
+    requiredness: required
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00005:TMACCTYPE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNCHGMODE:TMACCTYPE
+    binding_type: variable
+    variable_source: local_planned      # required；UE5G_RAT4G 等终端/接入类型
+    requiredness: required
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00005:BY5GSIWKI
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNCHGMODE:BY5GSIWKI
+    binding_type: variable
+    variable_source: local_planned      # conditional；按 5GS 互操作指示选接口
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00005:FORCED
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNCHGMODE:FORCED
+    binding_type: variable
+    variable_source: local_planned      # conditional；GaGyMode/NchfMode（部署是否融合计费决定）
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00005:FORSGWONLY
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNCHGMODE:FORSGWONLY
+    binding_type: variable
+    variable_source: global_planned     # conditional；SGW 发起计费会话时的接口
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011201/配置计费和策略接口选择（GGSN_SGW-C_PGW-C）_97906843.md]
+  - binding_id: UNC@20.15.2@Task@0-00005:FORVSMFONLY
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNCHGMODE:FORVSMFONLY
+    binding_type: variable
+    variable_source: global_planned     # conditional；V-SMF 漫漫游接入接口
+    requiredness: conditional
+    source_evidence_ids: [WSFD-011206/配置计费和策略模式_77825710.md]
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_APNCHGMODE.md（3 特性用，8 参）。
+  绑 6（APN/TMACCTYPE/BY5GSIWKI/FORCED/FORSGWONLY/FORVSMFONLY）；APN=reference(ADD APN)。
+  未绑 ISMFCHGSW/BY5GCNRI（conditional，范式未用到，冷门）。
+  计费接口选择优先级：ADD ROAMCHGMODE > ADD APNCHGMODE > SET CHGMODE（见 notes，跨命令选择规则）。
+  notes 投影：最多 24000 条 → rule 0-00006 cardinality。§6.B 见全局 rule 0-00001。

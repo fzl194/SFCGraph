@@ -1,0 +1,23 @@
+rule_id: UDG@20.15.2@TaskRule@0-00341
+owner_task_ref: UDG@20.15.2@Task@0-00217   # SET IKEGLOBALCONFIG (atom-挂 rule)
+rule_name: SET IKEGLOBALCONFIG 立即生效+CPU告警上报≥恢复+NAT保活门控+执行后系统配置不变
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00217:NATKLI
+  expression: "该命令执行后立即生效；执行命令并不输入参数时该参数保持系统当前配置不变(可通过LST IKEGLOBALCONFIG查询)；需要CPU告警上报阈值(CPUREPORTTHRES)大于等于CPU告警恢复阈值(CPUCLEARTHRES)；如果安全日志阈值(DOSTHRESHOLD)不为0，链路协商失败时可能会导致日志大量打印；DPDTYPE=Periodic时DPDINTERVAL+DPDRETRYINTRVL配套生效；NATKLI在IKEPEER NATTRAVERSAL=TRUE(NAT穿越)场景生效。"
+violation_effect: CPU告警上报<恢复阈值导致告警/恢复异常；NATKLI未在NAT穿越时配置保活不生效
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(立即生效+CPU告警约束+NAT保活门控+系统配置不变)
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md

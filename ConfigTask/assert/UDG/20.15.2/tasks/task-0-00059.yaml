@@ -1,0 +1,85 @@
+task_id: UDG@20.15.2@Task@0-00059
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置GRE隧道
+task_layer: atom
+task_intent: 增加备份GRE Tunnel（源LoopBack→目的对端LoopBack），使能冗余备份与Keepalive，承载静态地址用户流量备份
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD GRETUNNEL
+status: inferred   # 命令级审查(2026-07-02)：覆盖 010107/015002/015004 三特性，跨特性分叉已 DP 化
+decision_refs: [UDG@20.15.2@DecisionPoint@0-00074]   # GRE隧道场景选择(备份冗余/基本GRE/GRE over IPsec)
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00059:TNLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:TNLNAME
+    binding_type: reference
+    variable_source: reference   # 从已配置数据获取(引用 ADD INTERFACE 的 Tunnel IFNAME)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:TNLTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:TNLTYPE
+    binding_type: fixed
+    value: gre   # 全网规划(隧道类型固定 gre)
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:SRCTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:SRCTYPE
+    binding_type: fixed
+    value: if_name   # 本端规划(源类型固定为接口)
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:SRCIFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:SRCIFNAME
+    binding_type: reference
+    variable_source: reference   # 从已配置数据获取(本端 LoopBack IFNAME)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:DSTIPADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:DSTIPADDR
+    binding_type: variable
+    variable_source: global_planned   # 从已配置数据获取(对端LoopBack的IFIPADDR, 全网规划)
+    requiredness: required
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:DSTVPNNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:DSTVPNNAME
+    binding_type: reference
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：010107 必填(引用 VPNINST/L3VPNINST)；015002/015004 不配
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE   # 默认场景(010107)；其余场景见 DP 0-00074
+    requiredness: conditional   # 由 DP 0-00074 场景选定：备份冗余场景必填，其余不配
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:REDUNDANCYEN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:REDUNDANCYEN
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨特性分叉——010107=TRUE固定；015002/015004不配(默认FALSE)
+    requiredness: conditional   # 由 DP 0-00074 场景选定：备份冗余场景=TRUE，其余=不配
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:KEEPALVEN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:KEEPALVEN
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：跨特性分叉——010107=TRUE；015004=FALSE；015002不配(默认FALSE)
+    requiredness: conditional   # 由 DP 0-00074 场景选定
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:CHECKSUMEN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:CHECKSUMEN
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：015004 显式 FALSE；015002 可选(常由 MOD GRETUNNEL 后续使能)；010107 不配
+    requiredness: conditional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:GREKEYEN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:GREKEYEN
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：015004 显式 FALSE；015002 可选；010107 不配
+    requiredness: conditional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+  - binding_id: UDG@20.15.2@Task@0-00059:STATENABLE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD GRETUNNEL:STATENABLE
+    binding_type: variable
+    variable_source: decision_driven   # 命令级审查(2026-07-02)：015004 显式 FALSE；其余特性不配
+    requiredness: conditional
+    source_evidence_ids: [IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md]
+notes: "一命令一atom：ADD GRETUNNEL 唯一 atom，服务 3 特性(GWFD-010107 静态地址用户路由冗余 / IPFD-015002 GRE / IPFD-015004 GRE over IPsec)。默认 binding 值=010107(备份冗余场景)：TNLNAME 引用 ADD INTERFACE(0-00056)的 Tunnel IFNAME；SRCIFNAME 引用本端 LoopBack IFNAME(0-00056)；DSTVPNNAME 引用 ADD VPNINST(0-00041)。任务示例010107: 主UDG Tunnel1(src=LoopBack1,dst=10.10.0.1), 备UDG Tunnel2(src=LoopBack2,dst=10.11.1.1)。跨特性分叉参数(REDUNDANCYEN/KEEPALVEN/DSTVPNNAME/CHECKSUMEN/GREKEYEN/STATENABLE)由 DP 0-00074 选定：010107=REDUNDANCYEN TRUE/KEEPALVEN TRUE/DSTVPNNAME必填/校验类不配；015002=均不配(校验/关键字常由 MOD GRETUNNEL 0-00178 + DP 0-00030 后续使能)；015004=KEEPALVEN FALSE/GREKEYEN FALSE/CHECKSUMEN FALSE/STATENABLE FALSE。rule 0-00180=记录数上限4096。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)。"

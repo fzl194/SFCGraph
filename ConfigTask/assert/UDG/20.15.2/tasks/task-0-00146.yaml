@@ -1,0 +1,22 @@
+task_id: UDG@20.15.2@Task@0-00146
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加VPN Target(路由交叉RT发布/引入)
+task_layer: atom
+task_intent: 增加 VPN Target（ADD VPNTARGET），为 VRF_networkA 配置 export_extcommunity RT 值发布路由、为 VRF_networkB 配置 import_extcommunity RT 值引入路由，实现跨 VPN 路由交叉
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD VPNTARGET
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00146:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNTARGET:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 整网规划(引用 ADD L3VPNINST.VRFNAME, VRF_networkA 或 VRF_networkB)
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+  - {binding_id: UDG@20.15.2@Task@0-00146:AFTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNTARGET:AFTYPE, binding_type: variable, variable_source: local_planned, requiredness: required, value: ipv4uni, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00146:VRFRTTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNTARGET:VRFRTTYPE, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00146:VRFRTVALUE, parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNTARGET:VRFRTVALUE, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+notes: "GWFD-020423 跨 VPN RT 发布/引入核心。VRF_networkA 配 VRFRTTYPE=export_extcommunity(发布 RT 1:1); VRF_networkB 配 VRFRTTYPE=import_extcommunity(引入 RT 1:1)——RT 值相同则将 VRF_networkA 路由加入 VRF_networkB 路由表。VRFRTTYPE=固定取值(export/import 二选一, 由 VRF 角色决定); VRFRTVALUE=全网规划。VRFNAME 引用 ADD L3VPNINST(0-00071)。命令级审查(2026-07-02): 0 缺口(参数 4/4 全部绑定完整, 与命令真相完全一致); 0 必补 rule/DP——notes 已充分表达 VRFRTTYPE 固定取值与 RT 值匹配的路由交叉语义, RT 匹配规则属于 feature 级逻辑(VRF_networkA export=VRF_networkB import=同 RT 值)而非 atom 级规格约束, 不投影为独立 rule。命令在 mml_commands; CommandParameter 待 CommandGraph 抽取。"

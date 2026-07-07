@@ -1,0 +1,25 @@
+task_id: UNC@20.15.2@Task@0-00014
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHARGECHAR
+task_layer: atom
+task_intent: 配置本地/漫游/拜访用户的计费属性 CC（计费类型：normal/prepaid/flat/hotbilling）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHARGECHAR
+status: inferred
+source_evidence_ids:
+  - 增加对本地用户、漫游用户、拜访用户所采用的计费属性（ADD CHARGECHAR）_09896809.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00014:CCNAME", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGECHAR:CCNAME", binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置计费属性CC（GGSN_SGW-C_PGW-C）_95923501.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00014:HOME", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGECHAR:HOME", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置计费属性CC（GGSN_SGW-C_PGW-C）_95923501.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00014:ROAM", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGECHAR:ROAM", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置计费属性CC（GGSN_SGW-C_PGW-C）_95923501.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00014:VISIT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGECHAR:VISIT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置计费属性CC（GGSN_SGW-C_PGW-C）_95923501.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00014:HOMESGSN", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGECHAR:HOMESGSN", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置计费属性CC（GGSN_SGW-C_PGW-C）_95923501.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00014:ROAMSGSN", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGECHAR:ROAMSGSN", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置计费属性CC（GGSN_SGW-C_PGW-C）_95923501.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00014:VISITSGSN", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHARGECHAR:VISITSGSN", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置计费属性CC（GGSN_SGW-C_PGW-C）_95923501.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CHARGECHAR.md（5 特性用，7 参全绑）。
+  CC 取值：0x0800=normal / 0x0400=prepaid / 0x0200=flat / 0x0100=hotbilling（十六进制计费类型）。
+  HOMESGSN/ROAMSGSN/VISITSGSN=ENABLE 用 UDM/SGSN 签约 CC，DISABLE 用本地配置 CC。
+  CC 优先级：UserProfile > APN > 全局 > normal。未绑 APN/UserProfile 的 CC 不生效。
+  notes：最多 1000 条 → rule 0-00016。§6.B 见全局 rule 0-00001。

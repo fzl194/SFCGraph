@@ -1,0 +1,72 @@
+task_id: UDG@20.15.2@Task@0-00253
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加内容过滤模板
+task_layer: atom
+task_intent: >-
+  增加内容过滤模板(ADD CFTEMPLATE): 绑定主用 CONTENT_FILTERING 类型 ICAP 服务器组 + 缺省动作(ACTION),
+  作为 URL 过滤执行模板供 SET APNCFTEMPLATE/APN 维度引用
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD CFTEMPLATE
+status: inferred   # 命令级审查(2026-07-02):draft→inferred, 5 缺口补充 + ACTION→optional + DP/rule 投影
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00253:CFTEMPLATENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:CFTEMPLATENAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00253:ICAPSRVGMNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:ICAPSRVGMNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD ICAPSVRGRP 的 ICAPSVRGRPNAME)
+    source_ref: UDG@20.15.2@Task@0-00260:ICAPSVRGRPNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00253:ICAPSRVGSNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:ICAPSRVGSNAME
+    binding_type: reference
+    variable_source: reference   # 命令真相 optional: 备用 ICAP 服务器组(主用故障时切换)
+    source_ref: UDG@20.15.2@Task@0-00260:ICAPSVRGRPNAME
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00253:TIMELIMITNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:TIMELIMITNUM
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional, 默认 100(响应超时限制次数)
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00253:RESPTIMEOUT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:RESPTIMEOUT
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional, 默认 300(响应超时时间毫秒)
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00253:ACTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:ACTION
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional 默认 PASS; 数据规划表样例 BLOCK
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00253:DEFREDNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:DEFREDNAME
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 conditional: ACTION=REDIRECT 时必选; 引用 ADD REDIRECT(atom 待建)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00118
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00253:CFGDOMAINNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CFTEMPLATE:CFGDOMAINNAME
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional: 配置域
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+decision_refs:
+  - UDG@20.15.2@DecisionPoint@0-00118   # ACTION 3-way(PASS/BLOCK/REDIRECT)→ DEFREDNAME 配套必选/必不传
+notes: >-
+  GWFD-110471。命令级审查(2026-07-02):draft→inferred; 原 binding ACTION 标 required(违反命令真相 optional 默认 PASS)→ 改为 optional;
+  5 缺口补充: ICAPSRVGSNAME/TIMELIMITNUM/RESPTIMEOUT/DEFREDNAME/CFGDOMAINNAME;
+  DEFREDNAME conditional 配套 ACTION=REDIRECT(DP 0-00118 编排), 对应 ADD REDIRECT(atom 待建);
+  ICAPSRVGMNAME 引用 ADD ICAPSVRGRP(atom 0-00260); CFTEMPLATENAME 供 SET APNCFTEMPLATE/ADD CFPROFBINDCFT 引用;
+  命令不在 mml_commands.jsonl(§6.A), 待 CommandGraph 抽取回填。

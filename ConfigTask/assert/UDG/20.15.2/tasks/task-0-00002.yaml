@@ -1,0 +1,51 @@
+task_id: UDG@20.15.2@Task@0-00002
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置URR组
+task_layer: atom
+task_intent: 配置URRGROUP，上行/下行分别绑定在线与离线URR
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD URRGROUP
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020300/配置Gy接口在线计费_83167737.md, GWFD-010171/配置Ga接口离线计费_31927856.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00002:URRGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:URRGROUPNAME
+    binding_type: variable
+    variable_source: decision_driven   # URL场景=全网规划，IMS/any/异常=本端规划，跨场景分叉
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00002:UPURRNAME1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:UPURRNAME1
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00001:URRNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00002:DOWNURRNAME1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:DOWNURRNAME1
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00001:URRNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00002:UPURRNAME2
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:UPURRNAME2
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00001:URRNAME
+    requiredness: conditional   # 命令真相=optional；2号位=在线URR，仅融合/混合计费场景配(2-00001)，纯在线(2-00002)/纯离线(2-00003)不配
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00002:DOWNURRNAME2
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URRGROUP:DOWNURRNAME2
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00001:URRNAME
+    requiredness: conditional   # 命令真相=optional；2号位=在线URR，仅融合/混合计费场景配(2-00001)，纯在线(2-00002)/纯离线(2-00003)不配
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: |
+  命令级审查(2026-07-02):
+  - 准确性修正：UPURRNAME2/DOWNURRNAME2 requiredness required→conditional（命令真相 optional；2号位绑在线URR，仅融合/混合计费场景配，纯在线/纯离线单一计费模式不配1号位之外的位）。
+  - UPURRNAME1/DOWNURRNAME1 保留 required（1号位是基础位，所有特性数据规划表都配，虽命令真相标 optional 但 atom 代表典型配置）。
+  - 未绑 UPURRNAME3/DOWNURRNAME3/CFGDOMAINNAME（命令真相 optional 且无特性数据规划表用到，冷门不追）。
+  - 新增 atom-挂 rule 0-00112（cardinality 最大记录数40000）。

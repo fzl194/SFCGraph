@@ -1,0 +1,40 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00121
+owner_task_ref: UDG@20.15.2@Task@0-00256   # 挂 atom ADD CONTCATEGROUP
+decision_name: CONTCATEGROUP 整机优先级分类组自动添加（首次非PRIORITY自动建PRIORITY=65535）
+decision_question: |
+  ADD CONTCATEGROUP 整机首次添加非 PRIORITY 类型分类组时, 系统是否自动添加 PRIORITY=65535 默认记录？
+  - AUTO_DEFAULT：首次添加且 CATEGORYTYPE ≠ PRIORITY, 系统自动追加 PRIORITY=65535 默认记录(命令 notes 强约束)；该自动追加不可见但占整机 200 个内容分类组限额。
+  - PRIORITY_EXPLICIT：用户显式选 PRIORITY 类型, PRIORITY 参数必填, 全局唯一。
+  - INCREMENT：后续 ADD 同一 CONTCATEGNAME 继续追加分类记录, 不再自动加 PRIORITY（首次已建）。
+  命令 notes：若内容分类组名称为系统首次添加，且内容分类类型不是 PRIORITY，添加该条记录的同时，会默认添加一条 PRIORITY 类型的记录，对应优先级为默认值 65535。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110471/配置URL过滤_47348205.md
+options:
+  - option_id: opt-contcategroup-auto-default
+    option_name: 首次非PRIORITY自动建默认
+    option_value: AUTO_DEFAULT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYTYPE, effect_type: sets_value, effect_detail: value=SPECIFIC 或 RANGE 或 NAME（首次非 PRIORITY 路径, 系统自动追加 PRIORITY=65535）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:PRIORITY, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传, 系统自动加默认 65535）}
+  - option_id: opt-contcategroup-priority-explicit
+    option_name: 显式PRIORITY
+    option_value: PRIORITY_EXPLICIT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CATEGORYTYPE, effect_type: sets_value, effect_detail: value=PRIORITY（显式）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:PRIORITY, effect_type: sets_requiredness, effect_detail: requiredness=required；显式传优先级(全局唯一, 由 DP 0-00119 编排)}
+  - option_id: opt-contcategroup-increment
+    option_name: 后续追加
+    option_value: INCREMENT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:CONTCATEGNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；引用已有 CONTCATEGNAME 继续追加分类记录(主场景单组单类型不触发)}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00256:PRIORITY, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传, 首次已建）}
+default_option: opt-contcategroup-auto-default
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00118~0-00121）。管理 ADD CONTCATEGROUP 的"首次非 PRIORITY 自动追加 PRIORITY=65535"系统默认行为。
+  依据：命令 notes 强约束——"若内容分类组名称为系统首次添加，且内容分类类型不是 PRIORITY，添加该条记录的同时，会默认添加一条 PRIORITY 类型的记录，对应优先级为默认值 65535"。
+  原 pass-1 录制：无该 DP；200 个内容分类组限额被该自动追加隐藏占用——属隐性消耗, 配置工程师易遗漏。本 DP 把"系统自动追加"显化为决策点, 提示 PRIORITY 全局唯一性 + 整机限额暗扣。
+  注：本 atom 仅 1 特性使用（GWFD-110471）不存在跨特性分叉；与 DP 0-00119 (CATEGORYTYPE 4-way 编排配套必选参数) 互补：0-00119 管参数必选, 0-00121 管整机默认行为/限额暗扣。

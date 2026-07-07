@@ -1,0 +1,18 @@
+task_id: UDG@20.15.2@Task@0-00219
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置F-TEID分配能力(CU Full Mesh)
+task_layer: atom
+task_intent: 配置用户面 F-TEID 分配能力开关(SWITCH)。CU Full Mesh 组网下必须配置为 DISABLE(强制由用户面分配 F-TEID，而非控制面分配)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET CPTEIDUALLOC
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 1/1 已绑, SWITCH=DISABLE 固定, 高危命令
+source_evidence_ids: [GWFD-020161/激活CU Full Mesh组网（UPF）_51809001.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00219:SWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET CPTEIDUALLOC:SWITCH
+    binding_type: fixed
+    value: DISABLE   # CU Full Mesh 组网下强制 DISABLE(用户面分配 F-TEID)
+    requiredness: required
+    source_evidence_ids: [GWFD-020161/激活CU Full Mesh组网（UPF）_51809001.md]
+notes: "SET CPTEIDUALLOC(单命令原子)。CU Full Mesh 组网(GWFD-020161) UPF 侧核心配置：SWITCH=DISABLE 固定(md 明确'该参数必须配置为 DISABLE')。前提：UDG 本端已完成 Sa/Sc/Pa 数据面逻辑接口与 N4 逻辑接口配置(基础组网，非本特性步骤)。有用户在线时禁止修改 F-TEID 分配能力(参考信息)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02): 0 缺口(bound 1/1=SWITCH); SWITCH=DISABLE 固定对齐命令真相 required/枚举; 命令 notes 高危'有用户在线时禁止修改'+最大记录数1+只对新激活用户生效。"

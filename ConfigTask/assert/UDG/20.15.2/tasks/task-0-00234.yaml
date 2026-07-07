@@ -1,0 +1,24 @@
+task_id: UDG@20.15.2@Task@0-00234
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加IPSQM VIP用户列表
+task_layer: atom
+task_intent: 增加 IPSQM VIP 用户列表(USERID/USERIDINFO)，使 VIP 用户不做整形以保障体验。可选增强步骤
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPSQMVIPLIST
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00234:USERID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSQMVIPLIST:USERID
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(用户标识类型，如 IMSI)
+    requiredness: required   # 校正：命令真相为 required
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+  - binding_id: UDG@20.15.2@Task@0-00234:USERIDINFO
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPSQMVIPLIST:USERIDINFO
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(用户ID信息，如 IMSI 号，长度 1~15)
+    requiredness: required   # 校正：命令真相为 required
+    source_evidence_ids: [GWFD-110941/激活基于基站粒度的IPSQM_77772003.md]
+notes: "ADD IPSQMVIPLIST(IPSQM 可选增强 atom)。USERID/USERIDINFO=本端规划(md 数据规划表)。逐个 VIP 用户增加。任务示例脚本未展开到本步骤。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：2/2 参数绑定完整；校正 requiredness 为 required(命令真相)；新增 atom rule 0-00385(cardinality 100 + 立即生效)。feature-挂 rule 0-00082(IPSQM 增强须先核心整形) 已表达 ADD IPSQMVIPLIST 后置依赖。"

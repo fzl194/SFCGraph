@@ -1,0 +1,44 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00074
+owner_task_ref: UDG@20.15.2@Task@0-00059   # 挂 atom（命令级：GRE 隧道场景选择）
+decision_name: GRE隧道场景选择
+decision_question: 该 GRE 隧道用于哪种场景？（决定 REDUNDANCYEN/KEEPALVEN/DSTVPNNAME/校验类开关取值）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+options:
+  - option_id: opt-gre-backup-redundancy
+    option_name: 静态地址用户路由冗余备份
+    option_value: BACKUP_REDUNDANCY
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:REDUNDANCYEN, effect_type: sets_value_pattern, effect_detail: REDUNDANCYEN=TRUE（固定，本特性核心开关）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:KEEPALVEN, effect_type: sets_value_pattern, effect_detail: KEEPALVEN=TRUE}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:DSTVPNNAME, effect_type: sets_value_pattern, effect_detail: 必填，引用 L3VPNINST/VPNINST}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:CHECKSUMEN, effect_type: sets_value_pattern, effect_detail: 不配置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:GREKEYEN, effect_type: sets_value_pattern, effect_detail: 不配置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:STATENABLE, effect_type: sets_value_pattern, effect_detail: 不配置}
+  - option_id: opt-gre-basic
+    option_name: 基本GRE隧道(IPFD-015002)
+    option_value: BASIC_GRE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:REDUNDANCYEN, effect_type: sets_value_pattern, effect_detail: 不配置（默认 FALSE）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:KEEPALVEN, effect_type: sets_value_pattern, effect_detail: 不配置（默认 FALSE）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:DSTVPNNAME, effect_type: sets_value_pattern, effect_detail: 不配置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:CHECKSUMEN, effect_type: adds, effect_detail: 可选 TRUE（端到端校验，通常由 MOD GRETUNNEL 后续使能）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:GREKEYEN, effect_type: adds, effect_detail: 可选 TRUE+GREKEY（识别关键字，通常由 MOD GRETUNNEL 后续使能）}
+  - option_id: opt-gre-ipsec
+    option_name: GRE over IPsec 隧道(IPFD-015004)
+    option_value: GRE_OVER_IPSEC
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:REDUNDANCYEN, effect_type: sets_value_pattern, effect_detail: 不配置（默认 FALSE）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:KEEPALVEN, effect_type: sets_value_pattern, effect_detail: KEEPALVEN=FALSE}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:DSTVPNNAME, effect_type: sets_value_pattern, effect_detail: 不配置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:GREKEYEN, effect_type: sets_value_pattern, effect_detail: GREKEYEN=FALSE}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:CHECKSUMEN, effect_type: sets_value_pattern, effect_detail: CHECKSUMEN=FALSE}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00059:STATENABLE, effect_type: sets_value_pattern, effect_detail: STATENABLE=FALSE}
+default_option: opt-gre-backup-redundancy
+notes: "命令级审查(2026-07-02)。REDUNDANCYEN/KEEPALVEN/DSTVPNNAME/CHECKSUMEN/GREKEYEN/STATENABLE 跨特性分叉(010107=TRUE/TRUE/必填/不配/不配/不配；015002 不配/不配/不配/可选/可选/不配；015004 不配/FALSE/不配/FALSE/FALSE/FALSE)。default=010107(与现有 binding 默认值一致)。校验/关键字增强通常由 MOD GRETUNNEL(0-00178)+DP 0-00030 完成。"

@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@0-00004
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置三四层过滤器-IPv4
+task_layer: atom
+task_intent: 配置IPv4三四层过滤条件（ADD FILTER）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD FILTER
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  # 核心参数：23特性通用
+  - {binding_id: UDG@20.15.2@Task@0-00004:FILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:FILTERNAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:L34PROTTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:L34PROTTYPE, binding_type: fixed, value: STRING, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:L34PROTOCOL, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:L34PROTOCOL, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  # 端口：真相optional(默认0/65535)；多数any场景不配，特定业务(如TCP:80/DNS:53)显式配。来源分叉(local/peer/全网)→decision_driven
+  - {binding_id: UDG@20.15.2@Task@0-00004:MSSTARTPORT, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSSTARTPORT, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:MSENDPORT, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSENDPORT, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:SVRSTARTPORT, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRSTARTPORT, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:SVRENDPORT, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRENDPORT, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  # 服务器IPv4组：Shaping/WebProxy/Bypass/HTTPS用。SVRIP来源分叉(peer/全网/local)→decision_driven
+  - {binding_id: UDG@20.15.2@Task@0-00004:SVRIPMODE, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRIPMODE, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-112000/激活双故障Bypass_14147877.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:SVRIP, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRIP, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-112000/激活双故障Bypass_14147877.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:SVRIPMASKTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRIPMASKTYPE, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-112000/激活双故障Bypass_14147877.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:SVRIPMASKLEN, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRIPMASKLEN, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:SVRIPMASK, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:SVRIPMASK, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md, GWFD-110282/配置Web Proxy_66987339.md]}
+  # 手机IPv4组：仅Shaping用，peer(与对端协商)
+  - {binding_id: UDG@20.15.2@Task@0-00004:MSIPMODE, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSIPMODE, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:MSIP, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSIP, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:MSIPMASKTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSIPMASKTYPE, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00004:MSIPMASK, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:MSIPMASK, binding_type: variable, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00055, requiredness: conditional, source_evidence_ids: [GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md]}
+  # HOSTNAME：HTTPS地址识别用，从ADD HOST已配置数据获取(来源atom不在本审查范围，按local_planned记)
+  - {binding_id: UDG@20.15.2@Task@0-00004:HOSTNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD FILTER:HOSTNAME, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-110203/配置HTTPS业务地址识别_24082599.md]}
+rules: [UDG@20.15.2@TaskRule@0-00120]
+notes: |
+  命令级审查(2026-07-02)：补绑服务器IPv4组(SVRIPMODE/SVRIP/SVRIPMASKTYPE/SVRIPMASK/SVRIPMASKLEN)、手机IPv4组(MSIPMODE/MSIP/MSIPMASKTYPE/MSIPMASK)、HOSTNAME——这些参数被 Shaping/WebProxy/Bypass/HTTPS 等特性用到，来源分叉(peer/全网/local)统一标 decision_driven(DP 0-00055)。
+  端口4参数 requiredness 由 required 修正为 conditional(真相optional,默认0/65535)，variable_source 由 local_planned 改 decision_driven(来源分叉)。
+  L34PROTOCOL requiredness 由 required 改 conditional(真相conditional,与L34PROTNUM二选一)。
+  冷门参数不绑：L34PROTNUM(数字协议,无特性用)、MSIPLISTNAME/SVRIPLISTNAME(IP列表)、DOMAINVALUE/HOSTPRIORITY(域名)、TOSCFGTYPE/TOSCLASSTYPE/TOSVALUE、CFGDOMAINNAME——23特性均未用到。

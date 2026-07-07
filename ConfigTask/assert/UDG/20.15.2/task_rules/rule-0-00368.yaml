@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00368
+owner_task_ref: UDG@20.15.2@Task@0-00134   # 挂 atom ADD L2TPRDSCLIENT
+rule_name: ADD L2TPRDSCLIENT 上限 10000 + 每 APN 1 源端 + 立即生效 + 前置 ADD APN/LOGICINF
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00134
+  expression: |
+    ADD L2TPRDSCLIENT 系统最多支持配置 10000 条 L2tpRdsClient。
+    每 APN 只能绑定 1 个源端 Gi 接口（APN 唯一索引，唯一性约束）。
+    立即生效：本命令执行后立即生效。
+    前置依赖：必须先 ADD APN（提供 APN 索引）和 ADD LOGICINF（提供 Giif 接口）。
+    适用 NF：PGW-U、UPF。
+    AAA 下发方式专属：本地配置方式用 ADD L2TPCLIENTIP(0-00135) 绑 L2TP 组到接口。
+violation_effect: 超 10000 上限新增失败；同 APN 重复绑接口导致源端冲突；未先 ADD APN/LOGICINF 则无引用源
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/会话管理/L2TP隧道管理/APN绑定L2TP接口/增加APN绑定的L2TP接口（ADD L2TPRDSCLIENT）_35373540.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(10000 上限 + 每 APN 1 源端 + 立即生效) + ③前置依赖 ADD APN/ADD LOGICINF。LNS 信息由 RADIUS 下发,本端不建 L2TP 组。"

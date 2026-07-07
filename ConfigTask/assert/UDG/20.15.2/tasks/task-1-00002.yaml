@@ -1,0 +1,17 @@
+task_id: UDG@20.15.2@Task@1-00002
+nf: UDG
+version: "20.15.2"
+task_logical_name: 过滤链
+task_layer: compound
+task_intent: 配置三四层/七层过滤器→聚合为FLOWFILTER→绑定（三四层FLTBINDFLOWF / 七层PROTBINDFLOWF）
+task_category: configure
+ref: null
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+task_relations:
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00003, from_task_ref: UDG@20.15.2@Task@0-00004, to_task_ref: UDG@20.15.2@Task@0-00007, relation_type: precedes, requiredness: optional, propagated_context: [{context_name: FILTERNAME, source_ref: UDG@20.15.2@Task@0-00004:FILTERNAME, target_ref: UDG@20.15.2@Task@0-00008:FILTERNAME}], source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00004, from_task_ref: UDG@20.15.2@Task@0-00005, to_task_ref: UDG@20.15.2@Task@0-00007, relation_type: precedes, requiredness: optional, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00005, from_task_ref: UDG@20.15.2@Task@0-00006, to_task_ref: UDG@20.15.2@Task@0-00007, relation_type: precedes, requiredness: optional, propagated_context: [{context_name: L7FILTERNAME, source_ref: UDG@20.15.2@Task@0-00006:L7FILTERNAME, target_ref: UDG@20.15.2@Task@0-00009:L7FILTERNAME}], source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00006, from_task_ref: UDG@20.15.2@Task@0-00007, to_task_ref: UDG@20.15.2@Task@0-00008, relation_type: precedes, requiredness: optional, propagated_context: [{context_name: FLOWFILTERNAME, source_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, target_ref: UDG@20.15.2@Task@0-00008:FLOWFILTERNAME}], source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00007, from_task_ref: UDG@20.15.2@Task@0-00007, to_task_ref: UDG@20.15.2@Task@0-00009, relation_type: precedes, requiredness: optional, propagated_context: [{context_name: FLOWFILTERNAME, source_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, target_ref: UDG@20.15.2@Task@0-00009:FLOWFILTERNAME}], source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+notes: 哪些过滤器出现由 DecisionPoint 0-00002（过滤模式选择）的 option 决定：URL场景→FILTER+L7FILTER+PROTBINDFLOWF；IMS场景→FILTERIPV6；any场景→FILTER+FILTERIPV6。FLOWFILTER 必须至少绑定一个过滤条件（binding_rule 0-00005）。

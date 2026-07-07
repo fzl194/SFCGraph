@@ -3,6 +3,7 @@ from builder.core.legacy import (
     load_legacy_attributes,
     load_legacy_licenses,
     load_legacy_dependencies,
+    load_legacy_file_map,
 )
 
 ATTRS = ("id,feature_id,feature_type,config_required,applicable_nf,first_release_version\n"
@@ -33,3 +34,18 @@ def test_missing_returns_empty(tmp_path):
     assert load_legacy_attributes(tmp_path, "UDG") == {}
     assert load_legacy_licenses(tmp_path, "UDG") == []
     assert load_legacy_dependencies(tmp_path, "UNC") == []
+
+
+FILES = ("feature_id,product_type,file_path\n"
+         "GWFD-020301,UDG,output/x/GWFD-020301 概述.md\n"
+         "GWFD-020301,UDG,output/x/GWFD-020301 激活.md\n"
+         "WSFD-109102,UNC,output/y/WSFD-109102 特性概述.md\n")
+
+
+def test_load_file_map(tmp_path):
+    (tmp_path / "udg_feature_files.csv").write_text(FILES, encoding="utf-8")
+    fm = load_legacy_file_map(tmp_path, "UDG")
+    assert len(fm["GWFD-020301"]) == 2  # 概述 + 激活 都进来
+    assert fm["GWFD-020301"][0].endswith("概述.md")
+    # UNC 文件不存在 → 空（按 nf.lower() 取文件名）
+    assert load_legacy_file_map(tmp_path, "UNC") == {}

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00119
+owner_task_ref: UDG@20.15.2@Task@0-00018   # 挂 atom SET URRFAILACTION
+rule_name: SET URRFAILACTION 规格与高危提示
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET URRFAILACTION
+  expression: "SET URRFAILACTION 最大记录数为 1（全局动作参数）。本命令为高危命令，执行可能导致漏计费风险——RETRYFAILACT=CONTINUE 时 URR 对应业务将不计费（放通），=BLOCK/TERMINATE 时阻塞业务。适用于业务部署调整导致 UPF 的 ADD URR 在 SMF 不存在时的容灾场景。"
+violation_effect: 误配 RETRYFAILACT=CONTINUE 导致漏计费；阻塞动作导致业务不可用
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md, GWFD-010171/配置Ga接口离线计费_31927856.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数1' + '高危命令可能导致漏计费风险' + 容灾场景说明。"

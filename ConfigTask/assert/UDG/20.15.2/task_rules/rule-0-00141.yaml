@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00141
+owner_task_ref: UDG@20.15.2@Task@0-00043   # 挂 atom ADD POOL
+rule_name: ADD POOL 最大记录数规格 + 高危告警 + APN/地址池 VPN 一致性
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD POOL
+  expression: |
+    ADD POOL 命令最大记录数为 40000；当配置记录数大于规格 98% 时上报"ALM-135602215 配置数量超阈值"告警，≤95% 恢复，阈值可通过 MOD CFGTHRESHOLD 修改。
+    高危：POOLTYPE=LOCAL 且 RELEASETIME 过大时，用户地址延迟释放可能导致地址池地址不足、用户激活失败。
+    VPN 一致性约束：若 APN 已绑定特定 VPN 实例，APN 下绑定的地址池必须绑定同一 VPN 实例（地址池/APN/SGi-N6 外联口三者 VPN 一致）。
+    执行后立即生效。
+violation_effect: 超规格新增失败；LOCAL 池 RELEASETIME 过大致地址不足/激活失败；VPN 不一致致地址分配或路由异常
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数40000' + '98%阈值告警' + 'LOCAL+RELEASETIME高危' + 'APN/地址池VPN一致性' + '执行后立即生效'。RELEASETIME/IMSSW 等参数 UDG 特性未用到未绑，但高危约束需留痕。"

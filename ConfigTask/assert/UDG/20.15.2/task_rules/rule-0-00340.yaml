@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00340
+owner_task_ref: UDG@20.15.2@Task@0-00216   # ADD IPSECINTFCFG (atom-挂 rule, 聚合2命令)
+rule_name: ADD IPSECINTFCFG 最大记录数1024+立即生效+TNLTYPE=IPSEC+双引用前置
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00216:INTERFACENAME
+    - UDG@20.15.2@Task@0-00216:TNLTYPE
+    - UDG@20.15.2@Task@0-00216:POLICYNAME
+  expression: "最大记录数为1024；该命令执行后立即生效；INTERFACENAME引用前置ADD INTERFACE(0-00056:IFNAME)；TNLTYPE=IPSEC固定(IPsec隧道协议类型)；POLICYNAME引用前置ADD IPSECPOLICY(0-00215:POLICYNAME)；VNRS+IPSEC 双配原则的最终生效点(同时配ADD IPSECINTFCFG+ADD IPSECINTFCFGIPSEC)。"
+violation_effect: TNLTYPE非IPSEC导致非IPsec隧道；前置INTERFACE/POLICY未配导致IPsec隧道不生效
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1024+立即生效+TNLTYPE固定+双引用前置)
+source_evidence_ids:
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+  - IPFD-015004/激活IPsec功能（IPv4 IPsec主备隧道）_01_10004.md
+  - IPFD-015004/激活IPsec功能（OSPF over IPsec）_01_10007.md

@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00288
+owner_task_ref: UDG@20.15.2@Task@0-00200
+rule_name: 0-00200 最大记录数 8192 + NP 卡不支持 + 重定向动作互斥
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00200
+  expression: |
+    ADD QOSACTRDRNHP(atom 0-00200) 配置约束：
+    (1) 上限：系统最大记录数为 8192(命令 notes 强约束)。
+    (2) NP 卡场景不支持：mml_commands IPFD 命令未明示但复杂流分类限制通用——主场景 PUP 卡(QoS 复杂流分类支持 PUP 卡)适用，NP 卡需确认替代方案(IPsec 接入场景常用 NP)。
+    (3) 重定向动作互斥：与同流行为(ADD MQCBEHAVIOR 0-00199)下其他重标记(ADD SQOSREMARK)/deny/级联/URPF/CAR 互斥——仅 permit 动作可与重定向共存(主特性场景，所有流策略绑定动作均为 permit+重定向)。
+    (4) IPVERSION 与 NEXTHOP/NEXTHOP6 配套：IPVERSION=IPv4 时 NEXTHOP 必选、NEXTHOP6 不配(0 缺口)；IPVERSION=IPv6 时 NEXTHOP6 必选、NEXTHOP 不配——本 atom 当前 IPVERSION 固定 IPv4 仅绑 NEXTHOP；NEXTHOP6 缺口按 IPv6 场景补充。
+    (5) VRFNAME/IFNAME 可选：本 atom 当前未绑 VRFNAME/IFNAME(命令真相标 optional)——命令级审查 §4.3 ③ 缺口标注，等 VRF/IFNAME 场景揭示后再补。
+    (6) 该命令执行后立即生效(命令 notes)。
+violation_effect: 上限超限→ADD 失败；NP 卡场景下 ADD 失败；动作互斥命令并存→只有最后生效动作被识别；IPVERSION=NEXTHOP 错配→命令拒收；VRFNAME/IFNAME 未配→重定向报文无法精确引导
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。本 atom 为 IPFD 命令(命令真相 CommandParameter 待抽取)；规则投影基于 mml_commands.jsonl 通用参数语义。"

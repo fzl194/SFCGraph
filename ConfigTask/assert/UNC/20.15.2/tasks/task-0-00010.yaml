@@ -1,0 +1,29 @@
+task_id: UNC@20.15.2@Task@0-00010
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CDRFIELDTEMP
+task_layer: atom
+task_intent: 新增话单字段模板，控制话单中是否携带对应字段（SGW-C/PGW-C/SMF）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CDRFIELDTEMP
+status: inferred
+source_evidence_ids:
+  - 增加话单字段模板（ADD CDRFIELDTEMP）_09896890.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00010:TEMPLATENAME", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:TEMPLATENAME", binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置话单字段（GGSN_SGW-C_PGW-C）_95923364.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:APNNETWORKID", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:APNNETWORKID", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置话单字段（GGSN_SGW-C_PGW-C）_95923364.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:MSTIMEZONE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:MSTIMEZONE", binding_type: variable, variable_source: peer_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置话单字段（GGSN_SGW-C_PGW-C）_95923364.md, WSFD-011309/激活支持用户属性反射_28361026.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:ULI", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:ULI", binding_type: variable, variable_source: peer_planned, requiredness: optional, source_evidence_ids: [WSFD-011309/激活支持用户属性反射_28361026.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:RATTYPE", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:RATTYPE", binding_type: variable, variable_source: peer_planned, requiredness: optional, source_evidence_ids: [WSFD-011309/激活支持用户属性反射_28361026.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:RECORDEXTENTION", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:RECORDEXTENTION", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-011201/配置话单字段（GGSN_SGW-C_PGW-C）_95923364.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:CPEPSOINDICATOR", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:CPEPSOINDICATOR", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-215101/激活基于信令面的数据传输（SGW-C）_77260996.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:UNIPDUCPONLY", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:UNIPDUCPONLY", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-215101/激活基于信令面的数据传输（SGW-C）_77260996.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:PDPTYPEEXT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:PDPTYPEEXT", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-215103/激活Non-IP数据传输（S_PGW-C）_77449667.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00010:SGIPTPTUNMETH", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CDRFIELDTEMP:SGIPTPTUNMETH", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [WSFD-215103/激活Non-IP数据传输（S_PGW-C）_77449667.md]}
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_CDRFIELDTEMP.md（9 特性用，56 参）。
+  56 参数全是话单字段 ENABLE/DISABLE 开关（枚举）。绑 TEMPLATENAME(必选) + 9 个范式实际 toggle 的字段。
+  未绑 ~45 个 optional 字段开关——按特性数据规划表按需补（CIoT/NB-IoT/eMTC 等场景各 toggle 不同字段）。
+  MSTIMEZONE/ULI/RATTYPE 的"与对端协商"语义：需 SGSN/S-GW 和 GGSN/PGW-C/SMF 双侧都支持才生效（peer_planned）。
+  当前版本不支持 EXTCHARGEID/THREEGPP2USRLOC/ULIWLAN（不绑）。notes 投影：最多 100 条 → rule 0-00012 cardinality。
+  §6.B 见全局 rule 0-00001。

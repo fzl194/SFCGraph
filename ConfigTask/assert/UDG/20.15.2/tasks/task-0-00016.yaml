@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@0-00016
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置全局默认配额开关
+task_layer: atom
+task_intent: 设置在线计费新业务触发申请配额期间是否允许使用默认配额（SET UPDEFAULTQUOTA，在线可选）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET UPDEFAULTQUOTA
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00016:USERTYPE, parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:USERTYPE, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00016:DFTQTSWITCH, parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTSWITCH, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00016:DFTQTNEWSER, parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTNEWSER, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00016:DFTQTOTHER, parameter_ref: UDG@20.15.2@CommandParameter@SET UPDEFAULTQUOTA:DFTQTOTHER, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+notes: |
+  整个 atom 可选，在线计费场景由 domain DP（计费方式=在线）决定是否启用。DFTQTNEWSER/DFTQTOTHER 条件必选（前提 DFTQTSWITCH=ENABLE）。
+  命令级审查(2026-07-02):
+  - 无缺口，4 参数全绑且准确性对齐命令真相（USERTYPE required/global；DFTQTSWITCH required/local；DFTQTNEWSER/DFTQTOTHER conditional/local）。
+  - 新增 atom-挂 rule 0-00116（cardinality 最大记录数3 + 高危提示）+ 0-00117（dependency 前置依赖 ADD/MOD URR + SET SRVCOMMONPARA 设默认配额）。
+  - 新增 atom-挂 DP 0-00050（conditional_required：DFTQTSWITCH=ENABLE 时 DFTQTNEWSER/DFTQTOTHER 必选）。

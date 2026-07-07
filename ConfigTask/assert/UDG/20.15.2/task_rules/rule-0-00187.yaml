@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00187
+owner_task_ref: UDG@20.15.2@Task@0-00082
+rule_name: ADD BFDSESSION 会话记录数上限
+rule_type: capacity_rule
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: upper_bound
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD BFDSESSION
+  expression: 该命令在非 NP 卡场景和 NP 卡非加速模式场景最大记录数为 7200，在 NP 卡加速模式场景最大记录数为 4096。
+violation_effect: 超过场景上限后新增 BFD 静态会话失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+notes: 命令级审查(2026-07-02)。② 命令真相 notes 投影：7200(普通)/4096(NP 加速)。

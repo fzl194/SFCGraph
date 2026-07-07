@@ -1,0 +1,37 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00071
+owner_task_ref: UDG@20.15.2@Task@0-00058   # 挂 atom ADD IFIPV4ADDRESS：IFIPADDR/SUBNETMASK 来源跨特性分叉
+decision_name: 接口IPv4地址与掩码（IFIPADDR/SUBNETMASK）规划来源
+decision_question: |
+  ADD IFIPV4ADDRESS 的接口 IPv4 地址(IFIPADDR)与掩码(SUBNETMASK)采用何种规划来源？（两者联动，由同一决策决定。）
+  - 全局规划（全网协调）：LoopBack/Tunnel 等承载路由协议的接口 IP 需跨网元全网唯一协调（如 010107 静态地址用户路由冗余，LoopBack 10.11.1.1/32、Tunnel 10.11.1.3/24，对端需知悉）。
+  - 本端规划：GRE/IPsec 隧道两端 LoopBack/Tunnel 地址、以太网外联口地址由本端规划分配（如 IPFD-015002 GRE 10.3.3.11、IPFD-015004 IPsec 192.168.1.1）。
+  注：命令真相 data_source=local_planned；UDG 静态路由冗余场景强调全网协调，GRE/IPsec/组网场景多为本端规划。SUBNETMASK 来源与 IFIPADDR 同源联动。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（普通IPv4 IPsec隧道）_01_10002.md
+options:
+  - option_id: opt-ifipv4-global
+    option_name: 全局规划（全网协调）
+    option_value: global_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00058:IFIPADDR, effect_type: sets_source, effect_detail: IFIPADDR variable_source=global_planned；承载路由协议的 LoopBack/Tunnel 接口 IP 全网唯一协调（010107 静态路由冗余）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00058:SUBNETMASK, effect_type: sets_source, effect_detail: SUBNETMASK variable_source=global_planned；掩码与 IFIPADDR 同源联动}
+  - option_id: opt-ifipv4-local
+    option_name: 本端规划
+    option_value: local_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00058:IFIPADDR, effect_type: sets_source, effect_detail: IFIPADDR variable_source=local_planned；GRE/IPsec 隧道两端 LoopBack/Tunnel 地址、以太网外联口地址本端分配（IPFD-015002/015004）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00058:SUBNETMASK, effect_type: sets_source, effect_detail: SUBNETMASK variable_source=local_planned；掩码与 IFIPADDR 同源联动}
+default_option: opt-ifipv4-global
+notes: |
+  命令级审查(2026-07-02)新增。管理 ADD IFIPV4ADDRESS.IFIPADDR/SUBNETMASK 的来源分叉（接口族 §B 标记的 IFIPV4ADDRESS.IFIPADDR 核心参数）。
+  依据：3 特性数据规划表 IFIPADDR"获取方法"分叉——
+    全网规划（010107 静态地址用户路由冗余，LoopBack/Tunnel IP 全网唯一，对端需知悉以建 GRE/静态路由）；
+    本端规划（IPFD-015002 GRE LoopBack/Tunnel 10.x、IPFD-015004 IPsec 192.168.x，本端分配）。
+  0-00058 原 binding variable+global_planned（pass-1 仅覆盖 010107），无法表达 GRE/IPsec 本端规划场景。按 SKILL §4.2 升级为 decision_driven：IFIPADDR/SUBNETMASK binding 改 decision_driven+decision_ref(本 DP)，default_option=全局规划（路由协调场景的口径）。
+  ADD GRETUNNEL(0-00059) 的 DSTIPADDR 引用对端 LoopBack 的 IFIPADDR，全局规划口径下需保证两端 IP 互通可达。

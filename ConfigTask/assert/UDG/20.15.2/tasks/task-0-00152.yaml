@@ -1,0 +1,17 @@
+task_id: UDG@20.15.2@Task@0-00152
+nf: UDG
+version: "20.15.2"
+task_logical_name: 加载协议解析库
+task_layer: atom
+task_intent: 加载协议解析特征库（LOD PARSERDB），用于协议深度解析；已加载则跳过
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@LOD PARSERDB
+status: inferred   # 命令级审查(2026-07-02) - 0 缺口；md-verify + rule 投影
+source_evidence_ids: [GWFD-110203/配置HTTPS业务地址识别_24082599.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00152:LOADMODE, parameter_ref: UDG@20.15.2@CommandParameter@LOD PARSERDB:LOADMODE, binding_type: fixed, value: LATEST, requiredness: required, source_evidence_ids: [GWFD-110203/配置HTTPS业务地址识别_24082599.md]}
+notes: |
+  命令级审查(2026-07-02)：GWFD-110203 协议识别库与解析库加载步骤（与 LOD SIGNATUREDB 0-00027 配对）。本 atom 仅 1 特性使用，LOADMODE 单值 LATEST 故 fixed。
+  已加载则跳过（幂等）。系统启动时自动加载协议解析数据库，一般不需要手工更新——本 atom 主要用于 HTTPS 业务地址识别特性引导场景。
+  rule 投影：见 UDG@20.15.2@TaskRule@0-00308 (立即生效 + 启动自动加载 + 华为技术支持确认 + 上传通道 + 与 SIGNATUREDB 配套)。
+  CommandParameter 结构化对象待 CommandGraph 抽取（dependency_rule 集中标记于 feature task 2-00050）。

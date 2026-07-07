@@ -1,0 +1,16 @@
+rule_id: UDG@20.15.2@TaskRule@0-00008
+owner_task_ref: UDG@20.15.2@Task@2-00001
+rule_name: 防欺诈开启时 URL 类型 RULE 必须同绑三四层 filter
+rule_type: conditional_rule
+rule_scope: relation
+condition: {expression_type: decision_option, expression: "DecisionPoint@0-00003 = 启用"}
+constraint:
+  constraint_type: must_reference
+  target_refs: [UDG@20.15.2@Task@0-00004]
+  expression: 防欺诈开启时，RULE 下绑 URL 类型 7层 filter 时必须同时绑三四层 filter；防欺诈未开启时可仅绑 URL 类型 7层 filter
+violation_effect: 防欺诈校验失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

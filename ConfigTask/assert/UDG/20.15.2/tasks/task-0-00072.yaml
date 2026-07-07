@@ -1,0 +1,33 @@
+task_id: UDG@20.15.2@Task@0-00072
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置L3VPN实例地址族
+task_layer: atom
+task_intent: 设置指定L3VPN实例下的地址族（AFTYPE+VRFRD），IPv4=ipv4uni、IPv6=ipv6uni
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD VPNINSTAF
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00072:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNINSTAF:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD L3VPNINST）
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+  - binding_id: UDG@20.15.2@Task@0-00072:AFTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNINSTAF:AFTYPE
+    binding_type: decision_driven
+    variable_source: local_planned   # 来源固定本端规划；取值随 IP 版本分叉(IPv4=ipv4uni/IPv6=ipv6uni)由 DP 0-00017 决定
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00017
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md]
+  - binding_id: UDG@20.15.2@Task@0-00072:VRFRD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD VPNINSTAF:VRFRD
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: conditional   # 命令级审查(2026-07-02): truth=optional；仅 AFTYPE=ipv4uni 组网示例(GWFD-010155 IPv4 三套)用 VRFRD=100:1，ipv6uni 组网(72490128)未用→conditional，AFTYPE=ipv4uni 时建议配
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00017
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+notes: "GWFD-010155。VRFNAME 引用 ADD L3VPNINST(0-00071)。AFTYPE 取值随 IP 版本分叉(IPv4=ipv4uni、IPv6=ipv6uni)，由 feature DP 0-00017(option ip-version-v4/v6) 驱动。命令级审查(2026-07-02): 命令真相 11 参数，缺口 8(IMPOLICYNAME/EXPOLICYNAME/LOCALCROSSNHPMOD/EXPLYADDERTFIRST/VRFLABELMODE/VRFLABEL/TNLPOLICYNAME/FRRENABLE)均为 BGP/MPLS 路由策略/标签/FRR 高级参数，6 特性(地址分配/ePDG/IPSec/IPv6承载/N6组网/路由交叉)数据规划表均未引用，属 L3VPN 跨VRF路由交叉/隧道策略进阶场景，按通用配置门槛跳过(演进债)。修 VRFRD: required→conditional+decision_ref(0-00017)，truth=optional 且 ipv6uni 组网未用、ipv4uni 用 100:1。投影 2 规则: cardinality 0-00164(最大记录数16378) + dependency_rule 0-00165(须先 L3VPNINST 落地 + 保留实例 __mpp_vpn_inner__ 禁加地址族)。"

@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00050
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置APN下用户接入速率
+task_layer: atom
+task_intent: 设置指定APN下用户的接入速率（WALNUMBER），用于系统过载控制场景的接入流控
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNACCESSWAL
+status: draft   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)。命令级审查(2026-07-02): 无缺口；投影 10000上限+流控失败原因值→rule 0-00154。WALNUMBER variable_source 保留 local_planned(对齐③数据规划表'本端规划'，命令真相标 global_planned 为参数元数据级，③优先)
+source_evidence_ids: [GWFD-010251/配置系统过载特性_05341700.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00050:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNACCESSWAL:APN
+    binding_type: reference
+    variable_source: reference   # APN 引用已配置的 ADD APN
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-010251/配置系统过载特性_05341700.md]
+  - binding_id: UDG@20.15.2@Task@0-00050:WALNUMBER
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNACCESSWAL:WALNUMBER
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划(APN下用户的接入速率)
+    requiredness: required
+    source_evidence_ids: [GWFD-010251/配置系统过载特性_05341700.md]
+notes: "GWFD-010251。APN 引用 ADD APN(0-00020)。WALNUMBER=接入速率阈值，过载控制的核心参数。SET DEACTIVERATE/SET SOFTPARA 同属本特性但超出本批 atom ID 预算(0-00041~0-00050)，已在 feature task(2-00023) 挂 dependency_rule 标记待后续 atom 预算补建。"

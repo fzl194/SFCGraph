@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00397
+owner_task_ref: UDG@20.15.2@Task@0-00281   # 挂 atom ADD FINGERIDENT
+rule_name: ADD FINGERIDENT 规格 128 + 立即生效 + ALL/SPECIFIC SPECIFIC 优先 + 指纹识别只增强不替代
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD FINGERIDENT
+  expression: |
+    ADD FINGERIDENT 命令最大记录数为 128（命令 notes 强约束），超出被拒。
+    该命令执行后立即生效（命令 notes）。
+    SA 指纹识别功能开启后，如果用户访问开启该功能的业务，系统会在正常的特征库识别之外，对业务做更进一步的指纹识别，以增强识别精度（命令 notes 功能定位）。
+    可以通过 FINGERIDENTCTRL 参数控制指纹识别结果只用于统计，不用于业务控制。如果同时配置了指定协议和所有协议的 FINGERIDENTCTRL 参数，则优先使用指定协议的配置（命令 notes SPECIFIC 优先）。
+    并不是所有特征库都能被指纹识别（命令 notes 范围限制）。
+    LOD SIGNATUREDB（加载协议特征库文件）前置依赖：执行本命令前需先加载特征库文件（命令 notes 说明；前置命令不在本 atom）。
+    CFGPROTMODE 跨特性分叉（ALL/SPECIFIC）由 feature-挂 DP 0-00042 驱动。
+    PROTOCOLNAME requiredness 切换（ALL=排除/SPECIFIC=必填）由 DP 0-00042 编排。
+violation_effect: 上限超限→ADD 失败；FINGERIDENTCTRL 同时配置 ALL+SPECIFIC→未按 SPECIFIC 优先；特征库未加载→命令拒收
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110404/激活HTTPS业务行为识别特性_56038531.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 128 + 立即生效 + SA 指纹识别只增强不替代特征库 + FINGERIDENTCTRL 同时配置 ALL+SPECIFIC 时 SPECIFIC 优先。CFGPROTMODE 跨特性 ALL/SPECIFIC 分叉由 feature-挂 DP 0-00042（指纹识别协议范围）驱动；本 atom 已将 CFGPROTMODE 改为 decision_driven（decision_ref=0-00042），PROTOCOLNAME 加 decision_ref 同源驱动 requiredness 切换。LOD SIGNATUREDB 前置依赖由 task_relations propagated_context 表达。"

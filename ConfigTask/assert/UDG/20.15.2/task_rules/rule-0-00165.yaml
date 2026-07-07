@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00165
+owner_task_ref: UDG@20.15.2@Task@0-00072   # 挂 atom ADD VPNINSTAF
+rule_name: VPNINSTAF 须先存在 L3VPNINST 且避开系统保留实例
+rule_type: dependency_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires_predecessor
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD VPNINSTAF:VRFNAME
+  expression: "VRFNAME 指定的 VPN 实例必须已通过 ADD L3VPNINST 创建（命令 notes：'需要确保指定的VPN实例在设备上已经通过ADD L3VPNINST创建'）。同时不能给系统保留实例 __mpp_vpn_inner__、__mpp_vpn_inner_server__ 添加地址族。VRFNAME 取值：字符串 1~31。"
+violation_effect: 地址族新增失败（VPN 实例不存在）/ 保留实例被污染
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '需要确保指定的VPN实例在设备上已经通过ADD L3VPNINST创建' + '不能给VPN实例__mpp_vpn_inner__、__mpp_vpn_inner_server__添加地址族'。atom binding VRFNAME 为 reference→0-00071:VRFNAME 已在参数层保证引用一致，本规则补充执行前置(目标实例必须已落地)与保留名约束。"

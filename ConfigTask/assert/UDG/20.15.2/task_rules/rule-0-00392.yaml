@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00392
+owner_task_ref: UDG@20.15.2@Task@0-00260   # 挂 atom ADD ICAPSVRGRP
+rule_name: ADD ICAPSVRGRP 规格 30 + 单类型≤30 + 立即生效
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD ICAPSVRGRP
+  expression: |
+    ADD ICAPSVRGRP 命令最大记录数为 30（命令 notes 强约束），超出被拒。
+    每种类型下最大为 30（命令 notes 类型配额）。
+    该命令执行后立即生效（命令 notes）。
+    ICAPSERVERTYPE 固定 URL_FILTERING（本特性场景；CommandParameter 校验承担）。
+    ICAPSVRGRPNAME 字符串 1～31 字符，不支持空格不区分大小写（CommandParameter 校验承担）。
+    缺 CFGDOMAINNAME 为 optional（命令真相配置域）冷门不绑。
+violation_effect: 上限超限→ADD 失败；类型超配→ADD 失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-110471/配置到ICAP Server的互通数据_75400117.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 30 + 单类型≤30 + 立即生效。ICAPSVRGRP 容器被 ADD ICAPSVRBINDISG(0-00261) 引用，绑定关系已由 binding source_ref（0-00261→0-00260）表达。"

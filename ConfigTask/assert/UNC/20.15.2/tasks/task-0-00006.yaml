@@ -1,0 +1,51 @@
+task_id: UNC@20.15.2@Task@0-00006
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置APNDEACTQFPLCY
+task_layer: atom
+task_intent: 配置基于 APN 的去活用户面专有 GBR QoS Flow 策略（SMF 收到 AMF 去活请求时）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD APNDEACTQFPLCY
+status: inferred
+source_evidence_ids:
+  - 增加基于APN去活用户面专有QoS Flow策略（ADD APNDEACTQFPLCY）_38692981.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00006:APN
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNDEACTQFPLCY:APN
+    binding_type: reference             # 已配置数据中获取（引用 ADD APN）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD APN:APN
+    requiredness: required
+    source_evidence_ids: [WSFD-109107/激活业务触发的QoS保证_85397058.md]
+  - binding_id: UNC@20.15.2@Task@0-00006:NGAPCAUSEGROUP
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNDEACTQFPLCY:NGAPCAUSEGROUP
+    binding_type: fixed                 # 范式固定取值 RADIO_NETWORK（无线连接丢失场景）
+    variable_source: local_planned
+    value: RADIO_NETWORK
+    requiredness: required
+    source_evidence_ids: [WSFD-109107/激活业务触发的QoS保证_85397058.md]
+  - binding_id: UNC@20.15.2@Task@0-00006:NGAPCAUSEVALUE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNDEACTQFPLCY:NGAPCAUSEVALUE
+    binding_type: fixed                 # 范式固定取值 21（radio-connection-with-ue-lost）
+    variable_source: local_planned
+    value: "21"
+    requiredness: required
+    source_evidence_ids: [WSFD-109107/激活业务触发的QoS保证_85397058.md]
+  - binding_id: UNC@20.15.2@Task@0-00006:QFPLCY
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNDEACTQFPLCY:QFPLCY
+    binding_type: fixed                 # 范式固定取值 DELAY_RELEASE（延迟释放，保护语音等业务）
+    variable_source: local_planned
+    value: DELAY_RELEASE
+    requiredness: required
+    source_evidence_ids: [WSFD-109107/激活业务触发的QoS保证_85397058.md]
+  - binding_id: UNC@20.15.2@Task@0-00006:DELAYTIMER
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD APNDEACTQFPLCY:DELAYTIMER
+    binding_type: variable
+    variable_source: local_planned      # conditional；延迟释放时长（秒），默认 60，范围 10~100
+    requiredness: conditional
+    source_evidence_ids: [WSFD-109107/激活业务触发的QoS保证_85397058.md]
+notes: |
+  UNC atom batch1（2026-07-06），手写自证据包 ADD_APNDEACTQFPLCY.md（3 特性用，5 参）。
+  范式高度一致：NGAPCAUSEGROUP=RADIO_NETWORK / NGAPCAUSEVALUE=21 / QFPLCY=DELAY_RELEASE 全固定；
+  DELAYTIMER=60（全网/本端均可，按本端运维）。
+  APN=reference(ADD APN)。notes 投影：最多 20000 条 → rule 0-00007 cardinality。

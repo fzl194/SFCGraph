@@ -1,0 +1,46 @@
+task_id: UNC@20.15.2@Task@0-00025
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置DEACTQFPLCY
+task_layer: atom
+task_intent: 配置整系统（全局）粒度的去活用户面专有 GBR QoS Flow 策略（SMF 收到 AMF 去活请求时）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD DEACTQFPLCY
+status: inferred
+source_evidence_ids:
+  - 增加去活用户面专有QoS Flow策略（ADD DEACTQFPLCY）_38788437.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00025:NGAPCAUSEGROUP
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DEACTQFPLCY:NGAPCAUSEGROUP
+    binding_type: fixed                 # 范式固定取值 RADIO_NETWORK（无线连接丢失场景）
+    variable_source: local_planned
+    value: RADIO_NETWORK
+    requiredness: required
+    source_evidence_ids: [WSFD-221001/激活VoNR承载延时保活_11685432.md]
+  - binding_id: UNC@20.15.2@Task@0-00025:NGAPCAUSEVALUE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DEACTQFPLCY:NGAPCAUSEVALUE
+    binding_type: fixed                 # 范式固定取值 21（radio-connection-with-ue-lost）
+    variable_source: local_planned
+    value: "21"
+    requiredness: required
+    source_evidence_ids: [WSFD-221001/激活VoNR承载延时保活_11685432.md]
+  - binding_id: UNC@20.15.2@Task@0-00025:QFPLCY
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DEACTQFPLCY:QFPLCY
+    binding_type: fixed                 # 范式固定取值 DELAY_RELEASE（延迟释放，保护语音等业务）
+    variable_source: local_planned
+    value: DELAY_RELEASE
+    requiredness: required
+    source_evidence_ids: [WSFD-221001/激活VoNR承载延时保活_11685432.md]
+  - binding_id: UNC@20.15.2@Task@0-00025:DELAYTIMER
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DEACTQFPLCY:DELAYTIMER
+    binding_type: variable
+    variable_source: local_planned      # conditional；延迟释放时长（秒），默认 60，范围 10~100
+    requiredness: conditional
+    source_evidence_ids: [WSFD-221001/激活VoNR承载延时保活_11685432.md]
+notes: |
+  UNC atom batch3（2026-07-06），手写自证据包 ADD_DEACTQFPLCY.md（3 特性用，4 参）。
+  全局粒度版（无 APN 参），与 APNDEACTQFPLCY(0-00006) 同构：APN 粒度优先级 > 全局粒度。
+  范式一致（WSFD-221001/WSFD-109107）：NGAPCAUSEGROUP=RADIO_NETWORK / NGAPCAUSEVALUE=21 /
+  QFPLCY=DELAY_RELEASE 三连固定；DELAYTIMER=60（默认，本端运维）。
+  notes 投影：最多 255 条；命令执行后立即生效；系统初始已有记录（RADIO_NETWORK/20/NOT_RELEASE/60）
+  → rule 0-00027 cardinality。§6.B 见全局 rule 0-00001。

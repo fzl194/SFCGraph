@@ -1,0 +1,64 @@
+task_id: UDG@20.15.2@Task@2-00006
+nf: UDG
+version: "20.15.2"
+task_logical_name: TCP重传识别
+task_layer: feature
+task_intent: >-
+  在内容计费 backbone 基础上识别 TCP重传报文并按 URR 组计费。完整配置 = 部署UPF backbone（License→计费三件套→过滤链→规则与用户模板绑定→收尾）+ TCP重传差量
+  （为 UserProfile 绑定 TCP重传 URR 组、打开 TCP重传计费）。md 明示"详细配置参考 部署UPF，此处仅描述差异"。
+task_category: configure
+ref: UDG@20.15.2@Feature@GWFD-020307
+status: inferred
+source_evidence_ids:
+  - GWFD-020307/激活TCP重传识别_88299168.md
+  - GWFD-020307/GWFD-020307 TCP重传识别特性概述_88618762.md
+task_relations:
+  # ===== 完整配置（md: 详细配置参考 部署UPF_28493406 = 2-00001 内容计费完整 backbone）=====
+  # P1 完整性修正(2026-07-02)：原仅编码差量(License+0-00013 共 2 命令)，漏掉所继承的 backbone；现按 md 补全复用 backbone compounds。
+  # P2 A 段重建(2026-07-03)：4 backbone 全复用；License 与 TCP 差量 atom 0-00013 直挂 feature（单命令/差量，降级，
+  #   参见 procedure §1 + spec §8.2 例）。不新建 compound，不为建而建。
+  # License → 计费三件套
+  - {relation_id: UDG@20.15.2@TaskRelation@0-00036, from_task_ref: UDG@20.15.2@Task@0-00019, to_task_ref: UDG@20.15.2@Task@1-00001, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]}
+  # backbone 链：计费三件套 → 过滤链 → 规则与用户模板绑定 → 收尾
+  - {relation_id: UDG@20.15.2@TaskRelation@0-01950, from_task_ref: UDG@20.15.2@Task@1-00001, to_task_ref: UDG@20.15.2@Task@1-00002, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-01951, from_task_ref: UDG@20.15.2@Task@1-00002, to_task_ref: UDG@20.15.2@Task@1-00003, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]}
+  - {relation_id: UDG@20.15.2@TaskRelation@0-01952, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@1-00004, relation_type: precedes, requiredness: required, source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]}
+  # TCP重传差量（md 步骤2）：UserProfile 绑 TCP重传 URR 组——在规则绑定(1-00003)之后，
+  # USERPROFILENAME 由 0-00011 传播，TCPURRGRPNAME 引用 0-00002 URRGROUP 名。
+  # 注：atom 0-00013 是多用途 atom（DFT 子集用于内容计费 backbone 由 1-00004 结构提供；
+  #   TCP 子集 TCPCHGPROFLAG=CHARGING/TCPURRGRPNAME 是本特性差量）。md 特性概述 §计费与话单
+  #   列 3 种 TCP 重传计费策略（单独费率/关联默认/不计费），但这 3 策略差异是 SET URRGRPBINDING
+  #   的参数子集/取值差异（atom 0-00013 已固定 TCPCHGPROFLAG=CHARGING 锁定 md 唯一证实的"单独费率"
+  #   路径），不改变命令出现/缺失 → 不构成命令集分叉 → 不挂 feature DP（spec §4.2 仅枚举改命令集的 DP）。
+  #   3 策略的参数层选择（含默认"关联计费"=不配 TCP 子集）属配置生成时按规则/规划定，不进 A 段覆盖枚举。
+  - {relation_id: UDG@20.15.2@TaskRelation@0-01953, from_task_ref: UDG@20.15.2@Task@1-00003, to_task_ref: UDG@20.15.2@Task@0-00013, relation_type: precedes, requiredness: required, propagated_context: [{context_name: USERPROFILENAME, source_ref: UDG@20.15.2@Task@0-00011:USERPROFILENAME, target_ref: UDG@20.15.2@Task@0-00013:USERPROFILENAME}, {context_name: TCPURRGRPNAME, source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME, target_ref: UDG@20.15.2@Task@0-00013:TCPURRGRPNAME}], source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]}
+notes: |-
+  GWFD-020307 TCP重传识别（差量特性）。license=LKV3G5TCPR01(0-00019)。md 明示"详细配置参考部署UPF，
+  此处仅描述差异"，故完整配置 = backbone(1-00001~04 全复用 2-00001)+TCP重传差量(atom 0-00013 子集
+  TCPCHGPROFLAG=CHARGING/TCPURRGRPNAME)。
+  差量挂载点：规则绑定(1-00003)之后——SET URRGRPBINDING 给 UserProfile(0-00011) 绑 TCP重传 URR 组
+  (引用 0-00002 URRGROUP 名)，REFRESHSRV(1-00004) 收尾使生效。
+  P1 完整性修正(2026-07-02)：原仅编码差量(License+0-00013)，遗漏 backbone，特性看上去只有 2 命令；
+  现按 md 补全 backbone compound 引用（与 2-00002/13/14/15 同款自包含完整分解）。
+  P2 A 段重建(2026-07-03, 按 compound-extraction.md 6 步)：
+  - 步骤① md 操作步骤分段：2 步——(a) License(0-00019)；(b) backbone + TCP 差量(0-00013 子集)。
+    backbone 4 候选命中 1-00001~04（Jaccard 1.0 + 相位同义，纯复用）；License 与 0-00013 单命令/差量
+    → 直挂 feature。
+  - 步骤② 复用签名闸：4 backbone 候选全部纯复用（详见 review/GWFD-020307-pass-2.md §3）。
+    License atom 0-00019 跨 56 特性复用（每特性带各自 LICITEM），无新建 compound。
+    atom 0-00013 是多用途 atom（DFT 子集用于内容计费 backbone、TCP 子集用于本特性），无需新建专用
+    compound（与 2-00002 在线 3 SET 同款"降级 feature→atom 直挂"）。
+  - 步骤③ 变体表达：md 特性概述 §计费与话单 列 3 种 TCP 重传计费策略（单独费率/关联默认/不计费），
+    但 3 策略仅是 SET URRGRPBINDING 参数子集/取值差异——atom 0-00013 已固定 TCPCHGPROFLAG=CHARGING
+    锁定 md 唯一证实的"单独费率"路径，"关联计费（默认）"与"不计费"无独立配置步骤（属参数口径调整）。
+    按 spec §4.2 仅枚举改命令集的 DP——本特性无改命令集的 feature 级 DP（backbone DP 0-00002/0-00003
+    继承自 2-00001 backbone 复用），退化为单变体（扁平并集校验）。
+  - 步骤④ 编排：4 backbone precedes 链 + License precedes 1-00001 + 1-00003→0-00013(propagated_context
+    USERPROFILENAME/TCPURRGRPNAME)。
+  - 步骤⑤ 覆盖校验：单变体（无 feature 级 DP），见 review/GWFD-020307-variants.yaml +
+    check_feature_coverage.py EXIT=0。
+  - 步骤⑥ 事件分流：纯复用 + 单命令/差量降级 → 无 compound 新建/演进事件，不入 review 队列。
+  0-00019 LICITEM 本端规划=LKV3G5TCPR01（md 脚本明示），参数值投影由 feature 决定（atom 0-00019 跨特性
+  56 复用，每特性固定一个 LICITEM，不在 atom 升 DP，已在 atom 0-00019 notes 记录）。
+  feature 挂 rule 0-00015（dependency_rule：license LKV3G5TCPR01 + 内容计费 backbone 前置）命令级审查
+  已闭环，保持不动。

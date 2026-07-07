@@ -1,0 +1,40 @@
+# DecisionPoint 模板。权威字段见 改进后三层图谱定义.md §6。
+decision_id: UDG@20.15.2@DecisionPoint@0-00001
+owner_task_ref: UDG@20.15.2@Task@0-00001   # 挂在哪个 Task 上（决策的主要作用域）
+decision_name: 计费方式选择
+decision_question: 该费率采用哪种计费方式？
+decision_type: single_choice               # single_choice|multi_choice|boolean|value_selection|object_selection
+trigger_condition:
+  expression_type: always                   # always|task_selected|feature_selected|parameter_value|previous_decision
+  expression: ""
+requiredness: required                       # required|optional|conditional
+default_option: ""                           # 可选
+status: draft                                # draft|inferred|active|deprecated
+source_evidence_ids:
+  - output/.../部署UPF_28493406.md
+
+options:
+  - option_id: opt-offline
+    option_name: 离线
+    option_value: "OFFLINE"
+    impacts:
+      - target_type: parameter               # task|command|parameter|feature|solution|decision_point|semantic_object|config_object
+        target_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE
+        effect_type: sets_value_pattern     # adds|skips|excludes|requires|sets_value_pattern|changes_command_set|selects_option|selects_solution|selects_feature|changes_scope
+        effect_detail: "=OFFLINE"
+      - target_type: parameter
+        target_ref: UDG@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE
+        effect_type: adds
+        effect_detail: 条件出现，取值 VOLUME/TIME/EVENT/FREE
+  - option_id: opt-online
+    option_name: 在线
+    option_value: "ONLINE"
+    impacts:
+      - target_type: parameter
+        target_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE
+        effect_type: sets_value_pattern
+        effect_detail: "=ONLINE"
+      - target_type: decision_point          # 决策传播：父决策锁定子决策（单向，存父侧）
+        target_ref: UDG@20.15.2@DecisionPoint@0-00002
+        effect_type: selects_option
+        effect_detail: 在线

@@ -1,0 +1,32 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00076
+owner_task_ref: UDG@20.15.2@Task@0-00063   # 挂 atom（命令级：IPv6 静态路由场景选择）
+decision_name: ADD SRROUTE6 场景选择
+decision_question: 该 IPv6 静态路由用于哪种场景？（决定 PREFIX/VRFNAME/IFNAME/NEXTHOP/DESTVRFNAME 的取源与是否必填）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+options:
+  - option_id: opt-srroute6-redundancy-redirect
+    option_name: 冗余备份重定向IPv6路由(GWFD-010107)
+    option_value: REDUNDANCY_REDIRECT_V6
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:PREFIX, effect_type: sets_value_pattern, effect_detail: 引用 0-00055 重定向 IPv6/128}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:VRFNAME, effect_type: sets_value_pattern, effect_detail: 引用 0-00041 VPNINST}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:IFNAME, effect_type: sets_value_pattern, effect_detail: 引用 0-00056 GRE Tunnel}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:NEXTHOP, effect_type: sets_value_pattern, effect_detail: 不配置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:DESTVRFNAME, effect_type: sets_value_pattern, effect_detail: 不配置}
+  - option_id: opt-srroute6-n6-ipv6
+    option_name: N6/Gi/SGi接口IPv6组网(GWFD-020402)
+    option_value: N6_IPV6
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:PREFIX, effect_type: sets_value_pattern, effect_detail: peer_planned（如 fc00:1000::1）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:VRFNAME, effect_type: sets_value_pattern, effect_detail: VPN_CN 等业务 VPN}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:IFNAME, effect_type: sets_value_pattern, effect_detail: Ethernet 子接口（如 Ethernet70/0/4.1）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:NEXTHOP, effect_type: adds, effect_detail: 必填 peer_planned}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00063:DESTVRFNAME, effect_type: adds, effect_detail: 可填（如 VPN_CN）}
+default_option: opt-srroute6-redundancy-redirect
+notes: "命令级审查(2026-07-02)。PREFIX/VRFNAME/IFNAME 跨场景分叉取源，binding 级单 source_ref(schema 限制)默认=010107(重定向 IPv6/128)，020402 场景覆盖见 impacts。IPv6 对偶于 SRROUTE(DP 0-00075)。若需绑定静态 BFD 会话，SESSIONNAME 引用 0-00082（IPv6 BFD 检测通常走 OSPFv3，非本 atom 静态+BFD 范围）。"

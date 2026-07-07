@@ -1,0 +1,26 @@
+decision_id: UNC@20.15.2@DecisionPoint@0-00002
+owner_task_ref: UNC@20.15.2@Task@0-00026
+decision_name: ADDRTYPE Diameter 对端地址类型选择
+options:
+  - option_name: IPv4（TCP 承载）
+    impacts:
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:ADDRTYPE, effect_type: sets_value_pattern, effect_detail: "=IPv4"}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:IPV4ADDRESS, effect_type: adds, effect_detail: 条件出现，对端 IPv4 地址（全网/对端规划）}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:PORT, effect_type: adds, effect_detail: 条件出现，默认 3868}
+  - option_name: IPv6（TCP 承载）
+    impacts:
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:ADDRTYPE, effect_type: sets_value_pattern, effect_detail: "=IPv6"}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:IPV6ADDRESS, effect_type: adds, effect_detail: 条件出现，对端 IPv6 地址}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:PORT, effect_type: adds, effect_detail: 条件出现，默认 3868}
+  - option_name: SCTP（SCTP 承载）
+    impacts:
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:ADDRTYPE, effect_type: sets_value_pattern, effect_detail: "=SCTP"}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:SCTPENDPOINT, effect_type: adds, effect_detail: 条件出现，引用 ADD SCTPENDPOINT 已配端点}
+default_option: IPv4（TCP 承载）
+status: inferred
+source_evidence_ids: [增加Diameter对端地址（ADD DIAMPEERADDR）_09897257.md]
+notes: |
+  范式来源：Gx/Gy/S6b over TCP(IPv4/IPv6) 与 over SCTP 两类组网（WSFD-104508/WSFD-109001/WSFD-011132~134）。
+  互斥：同一 DRA 不允许同时配 IP 与 SCTP 端点。默认 IPv4 为现网最常见。
+  重建（2026-07-06）：对齐权威 schema（decision_id + options[].option_name + options[].impacts[]），
+  原 decision_point_id/options[].condition 版本废弃——选项→下游参数的链接由 impacts[] 承载，不再丢失子段。

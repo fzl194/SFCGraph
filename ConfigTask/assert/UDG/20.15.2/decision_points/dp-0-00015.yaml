@@ -1,0 +1,24 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00015
+owner_task_ref: UDG@20.15.2@Task@0-00051   # 挂 atom(SET UPGTPPATH): 黑白名单类型选择
+decision_name: GTP路径管理名单类型
+decision_question: GTP路径管理黑白名单采用哪种名单类型？（决定 ECHOLISTTYPE 取值 WHITE/BLACK，并门控是否需配置 ADD ECHOIPLIST 成员）
+decision_type: single_choice
+trigger_condition: {expression_type: parameter_value, expression: "SET UPGTPPATH.ECHOLISTSWITCH=ENABLE"}   # 仅启用黑白名单时触发
+requiredness: optional   # 不启用黑白名单探测时整个名单配置可选
+status: draft
+source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+options:
+  - option_id: opt-white
+    option_name: 白名单(默认)
+    option_value: WHITE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00051:ECHOLISTTYPE, effect_type: sets_value_pattern, effect_detail: ECHOLISTTYPE=WHITE}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00054, effect_type: requires, effect_detail: 白名单仅探测 ADD ECHOIPLIST 列出的对端IP，必须配置成员}
+  - option_id: opt-black
+    option_name: 黑名单
+    option_value: BLACK
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00051:ECHOLISTTYPE, effect_type: sets_value_pattern, effect_detail: ECHOLISTTYPE=BLACK}
+      - {target_type: task, target_ref: UDG@20.15.2@Task@0-00054, effect_type: requires, effect_detail: 黑名单探测除 ADD ECHOIPLIST 外的所有对端，可选配置排除成员}
+default_option: opt-white
+notes: "GWFD-010102。来源(ECHOLISTTYPE)固定本端规划一致, 仅取值 WHITE/BLACK 由决策选→variable_source=local_planned + binding_type=decision_driven(§4.5)。两选项均 requires ADD ECHOIPLIST(0-00054)配置名单成员。md 任务示例取 WHITE。"

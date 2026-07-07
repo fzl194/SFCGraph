@@ -1,0 +1,26 @@
+task_id: UDG@20.15.2@Task@0-00147
+nf: UDG
+version: "20.15.2"
+task_logical_name: 使能全局BGP并配置VRF实例与路由引入(路由交叉)
+task_layer: atom
+task_intent: 使能全局 BGP（SET BGP AS 号）+ 增加 BGP VPN 实例（ADD BGPVRF, VRF_networkA）+ 增加 BGP 引入路由（ADD IMPORTROUTE, IMPORTPROTOCOL=wlr），为 MPLS OptionB 路由交叉提供 BGP 路由发布基础
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET BGP
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；三命令族(SET BGP/ADD BGPVRF/ADD IMPORTROUTE)共享 VRF_networkA BGP 上下文，按 SKILL §4.2 例外合并为单一 BGP-VRF atom(同 L3VPN BGP 引入逻辑组)；CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00147:BGPENABLE, parameter_ref: UDG@20.15.2@CommandParameter@SET BGP:BGPENABLE, binding_type: fixed, variable_source: local_planned, requiredness: required, value: "TRUE", source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00147:ASNUM, parameter_ref: UDG@20.15.2@CommandParameter@SET BGP:ASNUM, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - binding_id: UDG@20.15.2@Task@0-00147:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BGPVRF:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 整网规划(引用 ADD L3VPNINST.VRFNAME, VRF_networkA)
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+  - {binding_id: UDG@20.15.2@Task@0-00147:DEFAULTAFTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD BGPVRF:DEFAULTAFTYPE, binding_type: variable, variable_source: local_planned, requiredness: required, value: ipv4uni, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00147:IMPORTPROTOCOL, parameter_ref: UDG@20.15.2@CommandParameter@ADD IMPORTROUTE:IMPORTPROTOCOL, binding_type: variable, variable_source: local_planned, requiredness: required, value: wlr, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+notes: |
+  GWFD-020423 MPLS OptionB BGP 基础。SET BGP(全局使能+AS 号)+ADD BGPVRF(VRF_networkA BGP 实例)+ADD IMPORTROUTE(引入 wlr 本地路由)三命令共享 VRF_networkA BGP 引入逻辑组, 按 SKILL §4.2 例外合并为单一 atom(避免 BGP 族三 atom 碎片化); ref 主指向 SET BGP, ADD BGPVRF/IMPORTROUTE 为附属命令。
+  严格"一命令一 atom"应拆为 0-00147(SET BGP)/0-00148(ADD BGPVRF)/0-00149(ADD IMPORTROUTE)三 atom, 受本批次 atom ID 预算约束(0-00141~0-00150, 已用 0-00141~0-00146)合并, 演进建议记 review。
+  ASNUM=全网规划(5G Core LLD AS号 VNF); 若 UDG 已使能 BGP 则不重复配(md 注)。命令级审查(2026-07-02): 0 补参(参数 5/5 完整覆盖三命令的关键参数, ADD BGPVRF.VRFNAME+DEFAULTAFTYPE 覆盖 VRF 实例创建, ADD IMPORTROUTE.IMPORTPROTOCOL=wlr 覆盖本地路由引入); 11 缺口(GRACEFULRESTART/TIMEWAITFORRIB/ASPATHLIMIT/CONFEDIDNUMBER/CONFEDNONSTANDED/CHECKFIRSTAS/BGPRIDAUTOSEL/KEEPALLROUTES/MEMORYLIMIT/GRPEERRESET/ISSHUTDOWN)路由交叉当前场景均用系统默认, 冷门 optional 不绑; 高危+去使能副作用(删除所有 BGP 历史配置)+GR/BGPRIDAUTOSEL 邻居复位+ASNUM+BGPENABLE(TRUE) 必配+系统初始记录投影 rule 0-00234。**聚合债**: 本 atom 严格意义违反"一命令一 atom"(合 3 命令), 演进建议拆分为 0-00147/0-00148/0-00149 三 atom, 标记 CONVERGENCE-BACKLOG。命令在 mml_commands; CommandParameter 待 CommandGraph 抽取。

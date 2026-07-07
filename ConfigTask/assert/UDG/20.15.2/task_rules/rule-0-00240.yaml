@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00240
+owner_task_ref: UDG@20.15.2@Task@0-00111   # 挂 atom ADD ROUTEPOLICY
+rule_name: ADD ROUTEPOLICY 最大记录数 + 策略名唯一性 + 立即生效
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD ROUTEPOLICY
+  expression: |
+    ADD ROUTEPOLICY 命令最大记录数为 65535。
+    添加该路由策略时，要保证该路由策略名（POLICYNAME）未添加过（策略名全局唯一）。
+    该命令执行后立即生效。
+violation_effect: 超规格新增失败；同名策略重复添加失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020401/激活IPv6承载上下文_38276176.md]
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00240~0-00249）。投影自命令 notes '最大记录数65535' + '保证该路由策略未添加过'(策略名唯一) + '执行后立即生效'。POLICYNAME 为 ROUTEPOLICYNODE(0-00112)/MATCHROUTETYPE(0-00113) 的引用源，唯一性是引用链正确性的前提。"

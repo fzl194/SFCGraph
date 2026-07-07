@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00121
+owner_task_ref: UDG@20.15.2@Task@0-00005   # 挂 atom（ADD FILTERIPV6 IPv6 三四层过滤器）
+rule_name: ADD FILTERIPV6 刷新生效与记录数上限
+rule_type: operational_constraint
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: must_refresh_and_capacity
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET REFRESHSRV
+  expression: |
+    1. 该命令执行后需等待 SET REFRESHSRV（REFRESHTYPE=USERPROFILE 或 ALL）刷新后方可生效。
+    2. Filter 与 FilterIPv6 总记录数上限 150000；超过规格 98% 上报 ALM-135602215 配置数量超阈值告警，恢复阈值 95%。阈值可由 MOD CFGTHRESHOLD 修改。
+violation_effect: 配置不生效 / 容量超限告警
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: 命令级审查(2026-07-02)新增：投影自命令②notes 的规格/上限（IPv6 阈值 98%/95% 与 IPv4 的 85% 不同）。

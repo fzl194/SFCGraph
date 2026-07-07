@@ -1,0 +1,34 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00098
+owner_task_ref: UDG@20.15.2@Task@0-00033   # 挂 atom ADD BWMUSERGROUP
+decision_name: BWMUSERGROUP 业务类型（用户级 vs 用户组级）
+decision_question: |
+  ADD BWMUSERGROUP 的业务类型用哪个字段（用户级 vs 用户组级）？
+  - 用户级：USERLEVSRVTYPE。020354 基于业务的 Shaping（URL 整形）用户级规则场景，脚本显式传 USERLEVSRVTYPE=NONTOS。
+  - 用户组级：USERGLEVSRVTYPE。110301 基于终端系统的码率差异化控制 用户组级规则场景，脚本显式传 USERGLEVSRVTYPE=NONTOS。
+  命令真相 USERLEVSRVTYPE/USERGLEVSRVTYPE 均 optional 默认 TOS；UDG 实际部署二选一（用户级/用户组级分组互斥）。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+options:
+  - option_id: opt-user-lev-srvtype
+    option_name: 用户级业务类型
+    option_value: USERLEVSRVTYPE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00033:USERLEVSRVTYPE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式配 NONTOS 或 TOS 等取值；020354 路径}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00033:USERGLEVSRVTYPE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，省略走默认 TOS）}
+  - option_id: opt-user-glev-srvtype
+    option_name: 用户组级业务类型
+    option_value: USERGLEVSRVTYPE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00033:USERGLEVSRVTYPE, effect_type: sets_requiredness, effect_detail: requiredness=required；显式配 NONTOS 或 TOS 等取值；110301 路径}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00033:USERLEVSRVTYPE, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，省略走默认 TOS）}
+default_option: opt-user-lev-srvtype
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00098~0-00101）。管理 ADD BWMUSERGROUP 的 USERLEVSRVTYPE/USERGLEVSRVTYPE 二选一编排。
+  依据：跨特性业务类型字段分叉（020354 用户级走 USERLEVSRVTYPE，110301 用户组级走 USERGLEVSRVTYPE）；命令真相两者均 optional 默认 TOS，但 UDG 实际部署互斥二选一。
+  原 pass-1 录制：USERLEVSRVTYPE binding required（命令真相 optional 误校为 required）。按 SKILL §4.5 升级为 decision_driven：USERLEVSRVTYPE 与 USERGLEVSRVTYPE 同源 DP 选一，default_option=用户级（020354 主特性路径）。
+  注：本决策仅决定 USERLEVSRVTYPE/USERGLEVSRVTYPE 显式/省略 + 互斥，不影响 USERGROUPTYPE/USERGROUPNAME/USERGROUPPRI（均 required/必填无分叉）。

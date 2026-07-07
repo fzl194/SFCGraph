@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00381
+owner_task_ref: UDG@20.15.2@Task@0-00030   # 挂 atom ADD SRVPBINDPCCPG
+rule_name: ADD SRVPBINDPCCPG 上限 100000 + 每 PG 10 组合 + 立即生效 + 前置依赖
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00030
+  expression: |
+    ADD SRVPBINDPCCPG 命令最大记录数为 100000。
+    每个 PCC 策略组可以配置 10 个基于业务属性的非默认组合。
+    立即生效：本命令执行后立即生效。
+    空组合支持：所有参数都是 optional，如果一个都没有选，则配置一个空的 PCC 策略组业务属性绑定组合。
+    跨组合匹配：若每个 PCC 策略组配多种非默认组合,匹配优先级由各组合决定(命令 notes 补充)。
+    前置依赖：必须先建 PCCPOLICYGRPNM(0-00003 ADD PCCPOLICYGRP) 和 SRVPROPNAME(0-00029 ADD SERVICEPROP);可选 PCCACTPROPNAME(0-00028 ADD PCCACTIONPROP) 和 URRGROUPNAME(0-00002 ADD URRGROUP)。
+    适用 NF：PGW-U、UPF。
+violation_effect: 超 100000 上限新增失败；每 PG 超 10 组合冲突；未建 PG/业务属性导致引用失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务控制策略/PCC控制策略/PCC策略组业务属性绑定/增加PCC组业务属性绑定（ADD SRVPBINDPCCPG）_82837611.md
+  - GWFD-020352/激活IPv6 SA_80136513.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(100000 上限 + 每 PG 10 组合 + 立即生效 + 空组合支持) + ③前置依赖 PG/业务属性/可选动作属性/URR 组。冷门不绑(EXTENDPROPNAME/FUPSESSIONEXC)。"

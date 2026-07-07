@@ -1,0 +1,20 @@
+task_id: UDG@20.15.2@Task@0-00092
+nf: UDG
+version: "20.15.2"
+task_logical_name: 加载外置OTT业务规则库
+task_layer: atom
+task_intent: 加载外置百万级 OTT 业务规则数据库（DBTYPE=OTT + VERSION），为业务流匹配提供内置规则库（GWFD-110321 支持内置百万级业务规则库专属）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@LOD EXTERNALDB
+status: inferred   # 命令级审查(2026-07-02) - DBTYPE 仅 1 特性 1 取值 OTT，从 variable+value=OTT 收紧为 fixed:OTT
+source_evidence_ids: [GWFD-110321/激活支持OTT业务规则库功能_05455409.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00092:DBTYPE, parameter_ref: UDG@20.15.2@CommandParameter@LOD EXTERNALDB:DBTYPE, binding_type: fixed, value: OTT, requiredness: required, source_evidence_ids: [GWFD-110321/激活支持OTT业务规则库功能_05455409.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00092:VERSION, parameter_ref: UDG@20.15.2@CommandParameter@LOD EXTERNALDB:VERSION, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-110321/激活支持OTT业务规则库功能_05455409.md]}
+notes: |
+  命令级审查(2026-07-02)：GWFD-110321 专属。前置: OTT 业务规则库已上传至 UDG；ESA VMPod 正常运行。
+  DBTYPE: 本 atom 仅 GWFD-110321 1 特性使用且枚举值=OTT 固定，从原 variable+value=OTT 收紧为 fixed:OTT（单特性原子取值单一，无需 variable）。
+  VERSION=外置规则数据库版本号(任务示例 0020.01.0000.0000.001)，数据来源=本端规划(规则库版本由本端运维按上传文件决定)。
+  加载后需 SET REFRESHSRV(0-00015) 刷新生效(任务示例在加载后立即刷新)。
+  rule 投影：见 UDG@20.15.2@TaskRule@0-00306 (加载间隔≥20s + 性能影响 + FlowFilter 冲突检查 + REFRESHSRV 后置 + 上传前置)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

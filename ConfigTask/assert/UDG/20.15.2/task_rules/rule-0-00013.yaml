@@ -1,0 +1,17 @@
+rule_id: UDG@20.15.2@TaskRule@0-00013
+owner_task_ref: UDG@20.15.2@Task@2-00005
+rule_name: SET LICENSESWITCH 的 CommandParameter 结构化对象待 CommandGraph 抽取
+rule_type: dependency_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_exist
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET LICENSESWITCH
+  expression: SET LICENSESWITCH 命令已命中 mml_commands.jsonl(LICITEM/SWITCH 的 parameter_description 有据)，但其 CommandParameter 结构化对象不在 command_parameters.jsonl(与计费 15 命令同属静态层抽取缺口，见 rule 0-00010)。atom 0-00019 的 parameter_ref 暂以预期 ID 书写，参数细节从命令 parameter_description 抽取。
+violation_effect: parameter_ref 暂不命中结构化静态层(不阻塞配置生成)
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]

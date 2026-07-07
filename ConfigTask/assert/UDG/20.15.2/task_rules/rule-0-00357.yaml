@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00357
+owner_task_ref: UDG@20.15.2@Task@0-00199
+rule_name: 0-00199 ADD MQCBEHAVIOR cardinality 8192 + 立即生效 + 前置ADD MQCCLASSIFIER + 流动作互斥挂载
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00199
+  expression: |
+    ADD MQCBEHAVIOR(atom 0-00199) 配置约束：
+    (1) 上限：单命令最大记录数为 8192(命令 notes 强约束)；超限→ADD 失败。
+    (2) 立即生效：该命令执行后立即生效(命令 notes)。
+    (3) 空行为容器：本命令仅含 BEHAVIORNAME 单参——MQCBEHAVIOR 为空行为容器, 流动作(permit/redirect/remark/deny/cascade/URPF/CAR) 全部通过后续 ADD/SET 子命令挂载。
+    (4) 流动作互斥：permit 可与其他共存(deny 除外), 其余动作(重定向/重标记/deny/级联/URPF/CAR) 互斥(特性 md IPFD-012001 注)；同一 BEHAVIORNAME 下多个动作冲突时, 最后执行的动作生效或命令拒收。
+    (5) 前置依赖：典型路径下, MQC 三件套(流分类 ADD MQCCLASSIFIER + 流行为 ADD MQCBEHAVIOR + 流策略 ADD MQCPOLICY) 中, 流行为 B 侧须在 C 侧绑定前先建(不在本 atom 命令域, 由 feature task dependency_rule 编排)。
+    (6) 流动作挂载子命令：permit/deny 通过 SET QOSACTFILTER；重定向通过 ADD QOSACTRDRNHP；重标记通过 ADD SQOSREMARK；级联通过 ADD MQCCLASSIFIER 引用；URPF 通过 SET QOSACTFILTER 配套；CAR 通过 ADD QOSACTCAR——后续 IPFD-012001 子 atom 待审(不在 C6b 范围)。
+violation_effect: 上限超限→ADD 失败；流动作互斥错配→策略行为不符合预期；未配套 MQCCLASSIFIER→流策略无法引用 B 侧
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。投影命令 notes 2 大约束(cardinality 8192/立即生效) + 流动作挂载子命令注 + MQC 三件套前置(ADD MQCCLASSIFIER)。流动作(redirect/remark/deny/cascade/URPF/CAR) 子命令后续 IPFD-012001 子 atom 待审。"

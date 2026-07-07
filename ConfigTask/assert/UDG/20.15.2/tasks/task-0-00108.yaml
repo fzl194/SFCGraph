@@ -1,0 +1,54 @@
+task_id: UDG@20.15.2@Task@0-00108
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置带宽管理控制器业务等级策略
+task_layer: atom
+task_intent: 为指定 BWM 控制器配置业务等级策略(ADD BCSRVLEVELPLY)，定义各 ServiceLevel 的整形速率比例/最大丢包率/最大增加时延，实现组级 Shaping 公平调度
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD BCSRVLEVELPLY
+status: inferred
+source_evidence_ids:
+  - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00108:BWMCNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BCSRVLEVELPLY:BWMCNAME
+    binding_type: reference
+    variable_source: reference   # 特性 md 数据规划表: 全网规划（控制器名全网一致）；引用 ADD BWMCONTROLLER(0-00036) 配置的 BWMCNAME
+    requiredness: required
+    source_ref: UDG@20.15.2@Task@0-00036:BWMCNAME
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00108:SERVICELEVEL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BCSRVLEVELPLY:SERVICELEVEL
+    binding_type: variable
+    variable_source: local_planned   # 特性 md: 本端规划；值越小优先级越高
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00108:SHAPRATE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BCSRVLEVELPLY:SHAPRATE
+    binding_type: variable
+    variable_source: global_planned   # 特性 md: 全网规划；该业务等级最高峰值带宽比例（实际 CIR = SHAPRATE * BWMCONTROLLER.RATE）
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00108:MAXPKTLOSTRATE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BCSRVLEVELPLY:MAXPKTLOSTRATE
+    binding_type: variable
+    variable_source: global_planned   # 特性 md: 全网规划；该业务等级最大丢包率
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+  - binding_id: UDG@20.15.2@Task@0-00108:MAXINCRDELAY
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BCSRVLEVELPLY:MAXINCRDELAY
+    binding_type: variable
+    variable_source: global_planned   # 特性 md: 全网规划；该业务等级因 Shaping 队列缓存的最大增加时延
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-110313/激活基于智能Shaping的组级带宽控制_76107785.md
+notes: |
+  GWFD-110313 基于智能Shaping的组级带宽控制专属。命令 ADD BCSRVLEVELPLY 在 mml_commands.jsonl，未在 by_command 复用索引(§6-B)。
+  BWMCNAME 引用 ADD BWMCONTROLLER(0-00036) 已配置的控制器名（静态投影 reference binding）。
+  命令 notes 强约束：同一 BWM 控制器下所有 BCSRVLEVELPLY 的 SHAPRATE 之和不得超过 100%（cardinality_rule 0-00255 投影）。
+  此命令配置的承诺信息速率（CIR*CIRRate）不能大于峰值信息速率（PIR*PIRRate），其中 CIR/PIR 为 BWMCONTROLLER 命令配置的保障带宽和峰值带宽（cross-atom 强约束已由 0-00036:CIR/PIR 引用 + 本命令 SHAPRATE 推导隐式表达，记 rule 0-00255）。
+  命令级审查(2026-07-02) 演进：status draft→inferred；不补 CIRRATE/PIRRATE（命令真相 optional 默认 0/10000，1 特性数据规划表+脚本均未用——按通用配置门槛不绑）。

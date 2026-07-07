@@ -1,0 +1,22 @@
+task_id: UDG@20.15.2@Task@0-00280
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置网元形态
+task_layer: atom
+task_intent: 配置网元形态枚举(NETYPEENUM)，用于合一ProxyUPF/ProxySGWU/PGW-U 对接北向网管
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET NETYPE
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-112001/初始配置_80688502.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00280:NETYPEENUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET NETYPE:NETYPEENUM
+    binding_type: decision_driven   # 校正：原 variable+value 形式自相矛盾，改为 decision_driven 由 atom-挂 DP 决策
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；按部署形态位图组合(SGWU/PGWU/UPF/GGSNU/ProxySGWU/ProxyUPF 等)
+    requiredness: required
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00151   # 详见 dp-0-00151.yaml（atom-挂 NETYPEENUM 跨场景取值）
+    source_evidence_ids: [GWFD-112001/初始配置_80688502.md]
+notes: |
+  GWFD-112001 Proxy UPF漫游功能 初始配置专属(网元形态对接北向)。命令 SET NETYPE 在 mml_commands.jsonl，parameter_references 为空(§6-B)，参数从 parameter_description 文本抽取。
+  特性 md 初始配置仅给一条样例 NETYPEENUM=GGSNU-0&PGWU-1&ProxySGWU-1&SGWU-0&UPF-0&ProxyUPF-1(合一形态)，取值由现网部署形态决定(local_planned，故 value 仅作样例标记实际仍 variable)。
+  命令级审查(2026-07-02)：1/1 参数绑定完整；修正 binding_type 自相矛盾(binding_type=variable 但附 value 字段): 改为 decision_driven，由新增 atom-挂 DP 0-00151(NETYPEENUM 跨场景取值) 决策。DP 覆盖 4 选项：合一ProxyUPF(本特性合一形态)/独立SGWU(Proxy漫游国际语音场景)/独立PGW-U/独立UPF。命令 notes 强约束：ProxySGWU 仅限于独立关口局承载国际漫游语音业务；ProxyUPF 同前；本特性为合一形态示例。新增 atom rule 0-00396(cardinality 1 + 立即生效 + 初始值 NULL + ProxySGWU/ProxyUPF 限于独立关口局)。

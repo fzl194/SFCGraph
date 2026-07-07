@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00190
+owner_task_ref: UDG@20.15.2@Task@0-00074   # 挂 atom ADD OSPF
+rule_name: OSPF进程规格/Router-ID全网唯一/VPN环路检查条件
+rule_type: constraint_rule
+rule_scope: parameter
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD OSPF:PROCID
+    - UDG@20.15.2@CommandParameter@ADD OSPF:SCHEMAROUID
+    - UDG@20.15.2@CommandParameter@ADD OSPF:VRFNAME
+  expression: "ADD OSPF 须满足：(1) OSPF进程实例数规格默认整机2000(实际以服务规格文件为准)，命令最大记录数8016；(2) 设备的一个接口只能属于某一个OSPF进程，进程实例不可更改(仅第一次使能时指定VPN/全局归属)；(3) SCHEMAROUID(Router ID)必须全网唯一，优选用户配置值，未配则选VRF/公网内最大接口IP；(4) VPN多实例场景须配 VPNINSCAPSIMFLG=TRUE 去使能VPN路由环路检测，否则会导致OSPF路由引入失败(md 说明 GWFD-010155)；(5) OSPF共网段须 MOD OSPFAREA VIRTUALSYSFLAG=TRUE；(6) 建议配置协议认证(ADD OSPFAREAUTH)增强协议安全性。"
+violation_effect: 路由引入失败 / Router ID 冲突 / 进程实例超规格 / 接口归属冲突
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 5 条规格/约束(进程实例上限2000/记录8016/接口单进程归属/实例不可改/建议认证) + ③GWFD-010155 md 说明 VPNINSCAPSIMFLG=TRUE 必配(环路检查) + Router ID 全网唯一 + 共网段 VIRTUALSYSFLAG。VPNINSCAPSIMFLG 不入 binding(仅在 md 说明非数据规划表行，两特性脚本走默认FALSE)，但其条件要求强烈(critical)，以 rule 投影。MOD OSPF/MOD OSPFAREA 为修饰命令不单建 atom，相关约束记此。"

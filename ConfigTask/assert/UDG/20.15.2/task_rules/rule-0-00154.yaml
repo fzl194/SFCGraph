@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00154
+owner_task_ref: UDG@20.15.2@Task@0-00050   # 挂 atom SET APNACCESSWAL
+rule_name: APNACCESSWAL 最大记录数规格 + 流控失败返回值
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET APNACCESSWAL
+  expression: "SET APNACCESSWAL 命令最大记录数为 10000；命令执行后立即生效；流控失败将给用户返回无资源可用原因值。本命令属于高危命令，需配置合理的接入速率取值。WALNUMBER 取值范围 0,30~1000000 个/s，0 表示取消限制。"
+violation_effect: 超规格新增失败；流控触发时用户收到无资源可用原因值；取值不合理可能导致无法保护网元或用户激活失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010251/配置系统过载特性_05341700.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes '系统最多支持配置10000条ApnAccessWal' + '流控失败将给用户返回无资源可用原因值' + '本命令属于高危命令'。WALNUMBER 取值范围与 0 含义一并记录(命令真相 global_planned required，atom 录 local_planned 与数据规划表本端规划一致)。"

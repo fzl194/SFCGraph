@@ -1,0 +1,39 @@
+task_id: UDG@20.15.2@Task@0-00061
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置接口IPv6地址
+task_layer: atom
+task_intent: 为Tunnel/以太网子接口手工配置IPv6地址与前缀长度（GRE隧道IPv6业务承载地址 / N6-Gi外联口IPv6地址）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IFIPV6ADDRESS
+status: inferred   # 命令级审查(2026-07-02): draft→inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00061:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV6ADDRESS:IFNAME
+    binding_type: reference
+    variable_source: reference   # 从已配置数据获取(引用 ADD INTERFACE 的 Tunnel/以太网子接口 IFNAME)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - binding_id: UDG@20.15.2@Task@0-00061:IPV6ADDRESS
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV6ADDRESS:IPV6ADDRESS
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划(2特性均全网规划，无分叉)
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - binding_id: UDG@20.15.2@Task@0-00061:PREFIXLEN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IFIPV6ADDRESS:PREFIXLEN
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(取值范围1~128，UDG 取 64)
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+notes: "GWFD-010107 + GWFD-020402。IFNAME 引用 ADD INTERFACE(0-00056)。任务示例: 010107 Tunnel1(fc00:2::1/64), Tunnel2(fc00:2::2/64)；020402 以太网子接口(fc00:1000::1/64 等)。前置: SET IFIPV6ENABLE(0-00060) 使能IPv6。命令级审查(2026-07-02): binding 准确(IFNAME ref / IPV6ADDRESS·PREFIXLEN 全网规划-2特性一致无分叉)；source_evidence 扩展至2特性。不绑冷门: ADDRTYPE(默认 global)/IDGENTYPE(默认 none)(命令真相 optional，UDG 特性均未用)。命令真相: 记录数上限65535；可配 Ethernet/子接口/Eth-Trunk/Loopback/Tunnel 口。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

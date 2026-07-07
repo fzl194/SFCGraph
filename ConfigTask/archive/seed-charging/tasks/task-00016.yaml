@@ -1,0 +1,27 @@
+task_id: UDG@20.15.2@Task@00016
+task_logical_name: 设置URR上报失败动作
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@SET URRFAILACTION
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:RETRYINTERVAL
+        binding_type: variable
+        variable_source: local_planned
+        note: 重试间隔(在线计费申请配额场景)
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:RETRYTIMES
+        binding_type: variable
+        variable_source: local_planned
+        note: 重试次数
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:RETRYFAILACT
+        binding_type: variable
+        variable_source: decision_driven
+        note: 失败动作(CONTINUE放通不计费/BLOCK),关键决策
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET URRFAILACTION:HOLDINGTIME
+        binding_type: variable
+        variable_source: local_planned
+        note: 保持时间
+task_category: 配置
+status: active
+source_evidence_ids: []

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00152
+owner_task_ref: UDG@20.15.2@Task@0-00046   # 挂 atom SET APNADDRESSATTR
+rule_name: 每个 APN 仅一条地址属性配置 + 前置 ADD APN
+rule_type: uniqueness_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_be_unique
+  target_refs:
+    - UDG@20.15.2@CommandParameter@SET APNADDRESSATTR:APN
+  expression: "每个 APN 支持一条 APN 地址属性配置（APN 唯一）；执行该命令前必须先使用 ADD APN 命令配置 APN（前置依赖已由 APN 参数引用 0-00020:APN 表达）。"
+violation_effect: 同一 APN 重复配置地址属性失败；未先建 APN 则无目标可挂
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md, GWFD-110910/激活支持Routing Behind MS_74264904.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes '每个APN支持一条APN地址属性配置' + '执行该命令前必须先使用ADD APN'。前置 ADD APN 的顺序约束已由 APN binding 的 source_ref=0-00020:APN(reference) 隐式表达，本 rule 仅显式记录唯一性规格。"

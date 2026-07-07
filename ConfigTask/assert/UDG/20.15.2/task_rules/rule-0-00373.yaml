@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00373
+owner_task_ref: UDG@20.15.2@Task@0-00140   # 挂 atom SET L2TPN4KEY
+rule_name: SET L2TPN4KEY 全局唯一 + 立即生效 + 高危 + SMF 一致性
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00140
+  expression: |
+    SET L2TPN4KEY 命令最大记录数为 1（全局唯一实例，N4 接口 L2TP 加密密钥统一设置）。
+    立即生效：本命令执行后立即生效。
+    高危命令：本命令属于高危命令，需要与 SMF 的配置保持一致，否则可能会导致 L2TP 用户激活失败。
+    启用/清空规则：配置 N4KeyValue 和 CfmN4KeyValue 即启用密钥，N4KeyValue 和 CfmN4KeyValue 都输入空格即清空配置关闭密钥。
+    取值范围：不加密输入时 16~30 位字符串（只能输入 0-9、A-F，不区分大小写，最小 16 位）；CfmN4KeyValue 须与 N4KeyValue 一致。
+    适用 NF：PGW-U、UPF。
+violation_effect: 与 SMF 不一致时 L2TP 用户激活失败；非立即生效导致新密钥未启用；不配则明文携带 L2TP 私有信元有安全风险
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/会话管理/L2TP隧道管理/L2TP N4密码/设置L2TP N4密码配置（SET L2TPN4KEY）_64015280.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+  - GWFD-020412/本地配置方式激活L2TP VPN_40342129.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 1 + 立即生效 + 高危 + 启用/清空规则)。L2TP 场景下为可选步骤;若启用须与对端 SMF 同密钥。"

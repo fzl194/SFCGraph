@@ -1,0 +1,28 @@
+rule_id: UDG@20.15.2@TaskRule@0-00395
+owner_task_ref: UDG@20.15.2@Task@0-00279   # 挂 atom SET FLOWLETPARA
+rule_name: SET FLOWLETPARA 规格 1 + 立即生效 + 改参影响数据转发性能
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET FLOWLETPARA
+  expression: |
+    SET FLOWLETPARA 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    该命令执行后立即生效（命令 notes）。
+    修改该参数配置会影响数据转发性能和大流优化效果，请谨慎修改（命令 notes 警告）。
+    FLOWOPTSW 枚举 DISABLE/ENABLE/FLOWCHK（启用大流优化/关闭大流优化/仅启用大流检测；CommandParameter 校验承担）。
+    THREADUPDINT 整数 64～256 ms（CommandParameter 校验承担）。
+    FLOWCHKPPS 整数 50000～5000000 包/秒（CommandParameter 校验承担）。
+    FLOWGUARDPKTNUM 整数 0～65535 包（CommandParameter 校验承担）。
+    FLOWGUARDTIME 整数 5～500 ms（CommandParameter 校验承担）。
+    CPUOVERLOADTHR 整数 50～90 %（CommandParameter 校验承担；冷门不绑）。
+    CPUBIASDIFF 整数 5～50 %（CommandParameter 校验承担；冷门不绑）。
+violation_effect: 上限超限→SET 失败；改参影响→性能下降或大流优化失效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-112002/激活5G-A高通量会话_20666173.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 立即生效 + 改参影响数据转发性能 + 7 参数范围。缺 CPUOVERLOADTHR/CPUBIASDIFF 均为 optional（命令真相）冷门不绑（现网按需调测确定）。本 atom 5G-A 高通量会话专属核心开关；特性 md 数据规划表仅显式列 FLOWOPTSW=ENABLE，其余 4 调参按 conditional 抽取。"

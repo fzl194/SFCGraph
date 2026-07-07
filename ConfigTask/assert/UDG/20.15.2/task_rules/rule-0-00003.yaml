@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00003
+owner_task_ref: UDG@20.15.2@Task@0-00001
+rule_name: URR 关键参数跨网元一致
+rule_type: cross_nf_sync_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_match
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD URR:URRID
+    - UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE
+    - UDG@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE
+    - UDG@20.15.2@CommandParameter@ADD URR:ONLMETERINGTYPE
+  expression: URRID/USAGERPTMODE/OFFMETERINGTYPE/ONLMETERINGTYPE 在 SMF 和 UPF 上的配置必须保持一致
+violation_effect: 跨网元计费不一致
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

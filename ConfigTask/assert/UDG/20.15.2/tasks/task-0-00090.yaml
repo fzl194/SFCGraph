@@ -1,0 +1,36 @@
+task_id: UDG@20.15.2@Task@0-00090
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置DNS重写动作
+task_layer: atom
+task_intent: 配置 DNS 纠错重写动作（绑定扩展过滤器+错误码+目标 server IP），将 DNS 响应报文 IP 改写为第三方 Platform IP（GWFD-110283 DNS纠错专属）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD DNSOVERWRITING
+status: inferred   # 命令级审查(2026-07-02)：1 特性使用，无跨特性分叉；补 rule 投影
+source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00090:DNSOVERWRTNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD DNSOVERWRITING:DNSOVERWRTNAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00090:EXTFLTTYPE1, parameter_ref: UDG@20.15.2@CommandParameter@ADD DNSOVERWRITING:EXTFLTTYPE1, binding_type: variable, variable_source: local_planned, requiredness: required, value: AND, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md]}
+  - binding_id: UDG@20.15.2@Task@0-00090:EXTFLTNAME1
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD DNSOVERWRITING:EXTFLTNAME1
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD EXTENDEDFILTER 配置的扩展过滤器名）
+    source_ref: UDG@20.15.2@Task@0-00022:EXTFLTNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md]
+  - {binding_id: UDG@20.15.2@Task@0-00090:SERVERIP1, parameter_ref: UDG@20.15.2@CommandParameter@ADD DNSOVERWRITING:SERVERIP1, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md]}
+  - binding_id: UDG@20.15.2@Task@0-00090:BINDERRCODENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD DNSOVERWRITING:BINDERRCODENAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD ERRORCODE 配置的错误码名）
+    source_ref: UDG@20.15.2@Task@0-00089:ERRORCODENAME
+    requiredness: required
+    source_evidence_ids: [GWFD-110283/激活DNS纠错_67964199.md]
+notes: |
+  命令级审查(2026-07-02) 演进。
+  1 特性使用(110283 DNS纠错专属)，无跨特性分叉，不建 DP。
+  数据来源: DNSOVERWRTNAME/EXTFLTTYPE1=本端规划；SERVERIP1=全网规划(第三方 Platform IP 属全网规划)；EXTFLTNAME1/BINDERRCODENAME=已配置数据中获取(reference)。
+  缺参数清单（§4.3 ③ 缺口标注）：EXTFLTTYPE2-5/EXTFLTNAME2-5/SERVERIP2-5/SERVERIPV6_1-5/CFGDOMAINNAME 共 18 个冷门参数不绑（主场景 1 组 AND 过滤器+1 个 IPv4 已足；命令真相最多 5 组过滤器/5 组 IP/IPv6/CFGDOMAINNAME 按主特性不补）。
+  配套 rule 0-00296 投影：最大记录数 2000 + 立即生效 + AND≤3 + 最多 5 组过滤器/5 组错误码范围 + 匹配逻辑 + 引用 EXTENDEDFILTER/ERRORCODE + 引用 RULE(POLICYTYPE=SMARTREDIRECT)。
+  DNSOVERWRTNAME 产出对象被 ADD RULE(POLICYTYPE=SMARTREDIRECT) 的 POLICYNAME 引用(reference)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

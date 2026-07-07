@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00013
+owner_task_ref: UNC@20.15.2@Task@0-00011
+rule_name: ADD CGBINDING 最多 1024 条 + 优先级语义
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CGBINDING]
+  expression: 记录数 ≤ 1024；CG 优先级以 CGBINDING 绑定时指定的为准（非 ADD CG 时指定）
+violation_effect: 超规格无法新增
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加CG绑定关系（ADD CGBINDING）_09896874.md]

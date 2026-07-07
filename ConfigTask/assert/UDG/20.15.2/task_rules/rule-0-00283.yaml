@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00283
+owner_task_ref: UDG@20.15.2@Task@0-00067
+rule_name: 0-00067/0-00069 即时生效 + BATYPE/PHBTYPE 跨方向互斥
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00067
+    - UDG@20.15.2@Task@0-00069
+  expression: |
+    SET QOSBA(0-00067 入口 CoS→ToS) 与 SET QOSPHB(0-00069 出口 ToS→CoS) 配置约束：
+    (1) 即时生效：两条命令执行后立即生效(命令 notes 强约束)。
+    (2) 跨方向互斥：QA BA 与 PHB 为同一 DSNAME 下两套映射表，入口方向 BA 上行 802.1p/DSCP 映射入口 SERVICECLASS/COLOR；出口方向 PHB 下行 SERVICECLASS/COLOR 映射出口 802.1p/DSCP——BATYPE/PHBTYPE 配套取值可为 8021p 或 DSCP(主场景固定 8021p)。
+    (3) 方向入口+出口均需执行一次：DP 0-00016 (QoS优先级映射方向) 控制入口(opt-ingress)、出口(opt-egress)、CAR(opt-qos-car)三方向是否启用；同一 DSNAME 下两方向 802.1p 值可独立规划(主示例 BAVALUE=3 SERVICECLASS=be COLOR=red, PHBVALUE=3 SERVICECLASS=be COLOR=green)。
+    (4) BAVALUE/PHBVALUE 取值范围 0~63(802.1p 子范围 0~7)；BATYPE=8021p 时取 0~7，DSCP 取 0~63。
+    (5) COLOR 在 QOSBA 为 optional(命令真相必选=optional，默认无)，QOSPHB 为 required。
+violation_effect: 方向未配→DSCP 映射缺失；BATYPE/PHBTYPE 错配→取值越界被拒；BATYPE=DSCP 与 3GPP QoS-DSCP 并存时被后者覆盖(rule 0-00035)
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule(覆盖 0-00067+0-00069 成对约束)。DP 0-00016 已绑定两 atom。"

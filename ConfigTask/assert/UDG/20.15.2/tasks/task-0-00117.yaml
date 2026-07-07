@@ -1,0 +1,51 @@
+task_id: UDG@20.15.2@Task@0-00117
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置OSPFv3接口(IPv6)
+task_layer: atom
+task_intent: 将接口加入OSPFv3进程的区域下（PROCID+AREAID+IFNAME+DRPRI+VIRTUALSYSFLAG+CFGROUTERIDFLAG），用于OSPFv3动态路由接口使能
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD OSPFV3INTERFACE
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+task_rules_ref: [UDG@20.15.2@TaskRule@0-00203]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00117:PROCID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:PROCID
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD OSPFV3 进程号)
+    source_ref: UDG@20.15.2@Task@0-00078:PROCID
+    requiredness: required
+    source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+  - binding_id: UDG@20.15.2@Task@0-00117:AREAID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:AREAID
+    binding_type: reference
+    variable_source: reference   # 引用 ADD OSPFV3AREA 区域号(与对端协商)
+    source_ref: UDG@20.15.2@Task@0-00079:AREAID
+    requiredness: required
+    source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+  - binding_id: UDG@20.15.2@Task@0-00117:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:IFNAME
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划(接口名跨网元一致,Eth-trunk1.1);非"已配置数据中获取"故不引用 ADD INTERFACE(0-00056),取 global_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+  - binding_id: UDG@20.15.2@Task@0-00117:DRPRI
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:DRPRI
+    binding_type: fixed
+    value: "0"   # 数据规划表标注: VNF 建议配 0 避免被选为 DR/BDR(对端配非 0)
+    requiredness: optional   # 不参与 DR/BDR 选举;共网段生效时命令 notes 称 DRPRI 自动取 0
+    source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+  - binding_id: UDG@20.15.2@Task@0-00117:VIRTUALSYSFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:VIRTUALSYSFLAG
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 共网段时=TRUE;条件必选,须与进程级 ADD OSPFV3(0-00078) VIRTUALSYSFLAG 同时配
+    requiredness: conditional   # OSPFv3 共网段场景必填 TRUE(DP 0-00022 协调进程级+接口级)
+    source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+  - binding_id: UDG@20.15.2@Task@0-00117:CFGROUTERIDFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPFV3INTERFACE:CFGROUTERIDFLAG
+    binding_type: fixed
+    value: "FALSE"   # 任务示例脚本固定 FALSE(不使能接口级 Router ID)
+    requiredness: conditional   # VIRTUALSYSFLAG=TRUE 时为可选
+    source_evidence_ids: [GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md]
+notes: "GWFD-020406 IPv6 Prefix Delegation。双引用: PROCID←ADD OSPFV3(0-00078), AREAID←ADD OSPFV3AREA(0-00079)。VIRTUALSYSFLAG=TRUE 共网段虚拟系统使能(命令 notes: 进程级与接口级 VIRTUALSYSFLAG 须同时配;Tunnel 接口不支持)。DRPRI=0 避免 VNF 被选 DR/BDR。CFGROUTERIDFLAG=FALSE 不使能接口级 Router ID。与 IPv4 ADD OSPFINTERFACE/OSPFNETWORK(0-00076) 平行(由 DP 0-00017 ip-version 选择)。命令级审查(2026-07-02): 已绑 6 参(PROCID/AREAID/IFNAME/DRPRI/VIRTUALSYSFLAG/CFGROUTERIDFLAG)与③数据规划表+脚本完全一致,无需补参;缺口20参数全为 OSPF 接口进阶(BFD/定时器/MTU/NetworkType/认证等),020406 单特性未用,严格按通用配置筛均不绑。IFNAME 取 global_planned(③全网规划,接口名跨网元一致,非引用已配置)。投影 rule 0-00203(前置 ADD OSPFV3+AREA/规格8000/接口须先使能IPv6/DRPRI=0)。命令在 mml_commands.jsonl;CommandParameter 待 CommandGraph 抽取。"

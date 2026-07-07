@@ -1,0 +1,24 @@
+task_id: UDG@20.15.2@Task@0-00017
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置全局计费参数
+task_layer: atom
+task_intent: 设置全局 Credit Pooling 等在线计费参数（SET UPGLBCHGPARA，在线可选）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET UPGLBCHGPARA
+status: inferred
+source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00017:QUOTAAPPACTTYPE, parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:QUOTAAPPACTTYPE, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00017:VOLTHMININTVAL, parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:VOLTHMININTVAL, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00017:DFTOFLEVTTHD, parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:DFTOFLEVTTHD, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00017:EVENTCHGMOD, parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:EVENTCHGMOD, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00017:CHGCHECKSW, parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:CHGCHECKSW, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00017:VOLUMEBKPSW, parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:VOLUMEBKPSW, binding_type: variable, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00017:CREDITPOOLSW, parameter_ref: UDG@20.15.2@CommandParameter@SET UPGLBCHGPARA:CREDITPOOLSW, binding_type: variable, variable_source: global_planned, requiredness: conditional, source_evidence_ids: [GWFD-020300/配置Gy接口在线计费_83167737.md]}
+notes: |
+  整个 atom 可选，在线计费场景由 domain DP 决定。Credit Pooling 与 DefaultQuota 不能同时使能（conditional_rule 0-00011）。CREDITPOOLSW 数据来源=全网规划。
+  命令级审查(2026-07-02):
+  - 准确性修正：7 个 binding requiredness 全部 required→conditional（命令真相参数表标 optional；atom 本身可选，配了该 atom 才需要这些全局参数值）。CREDITPOOLSW 保留 global_planned（命令真相一致）。
+  - 未绑 VOLUMEBKPTHD/VOLUMEBKPINTV（命令真相 optional，③ 仅 1 特性在操作步骤提到"可选：设置全局Credit Pooling开关"，无数据规划表行用到这俩流量备份阈值/间隔参数，冷门不追）。
+  - 新增 atom-挂 rule 0-00118（cardinality 最大记录数1 + VOLTHMININTVAL<60建议 + QUOTAAPPACTTYPE=DROP影响体验 + CREDITPOOLSW与DefaultQuota互斥投影）。

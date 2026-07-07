@@ -1,0 +1,20 @@
+task_id: UDG@20.15.2@Task@0-00008
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定三四层过滤条件到流过滤器
+task_layer: atom
+task_intent: 将三四层FILTER绑定到FLOWFILTER（ADD FLTBINDFLOWF）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD FLTBINDFLOWF
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00008:FLOWFILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD FLTBINDFLOWF:FLOWFILTERNAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00007:FLOWFILTERNAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  # FILTERNAME 来源分叉：引用 IPv4 FILTER(0-00004) 或 IPv6 FILTERIPV6(0-00005)——同一参数名可绑两种过滤器
+  - {binding_id: UDG@20.15.2@Task@0-00008:FILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD FLTBINDFLOWF:FILTERNAME, binding_type: reference, variable_source: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00058, source_ref: UDG@20.15.2@Task@0-00004:FILTERNAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+rules: [UDG@20.15.2@TaskRule@0-00124]
+notes: |
+  将三四层 FILTER 绑定到 FLOWFILTER。
+  命令级审查(2026-07-02)：修正 FILTERNAME 来源分叉——同一 FILTERNAME 参数既可引用 IPv4 FILTER(ADD FILTER 0-00004) 也可引用 IPv6 FILTERIPV6(ADD FILTERIPV6 0-00005)，由过滤条件协议族决定(DP 0-00058)。source_ref 保留 0-00004(默认 IPv4)，variable_source 改 decision_driven。
+  补 rule-0-00124（REFRESHSRV刷新+300000上限+单FlowFilter Filter上限）。
+  2参数(FLOWFILTERNAME/FILTERNAME)已全绑，无缺口。

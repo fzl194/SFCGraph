@@ -1,0 +1,14 @@
+task_id: UDG@20.15.2@Task@0-00140
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置L2TP N4加密密钥
+task_layer: atom
+task_intent: 配置 L2TP 业务 N4 接口加密密钥（SET L2TPN4KEY），增强 N4 传输安全，对端 SMF 需配相同密钥，可选步骤
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET L2TPN4KEY
+status: inferred   # 命令级审查(2026-07-02) 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00140:N4KEYVALUE, parameter_ref: UDG@20.15.2@CommandParameter@SET L2TPN4KEY:N4KEYVALUE, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00140:CFMN4KEYVALUE, parameter_ref: UDG@20.15.2@CommandParameter@SET L2TPN4KEY:CFMN4KEYVALUE, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md, GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]}
+notes: "GWFD-020412 两种激活方式共用(可选步骤)。数据规划表: N4KEYVALUE/CFMN4KEYVALUE=全网规划(对端 SMF 须同密钥, md 注: 不配则明文携带 L2TP 私有信元有安全风险)。CFMN4KEYVALUE 须与 N4KEYVALUE 一致。命令真相 optional(配 N4KeyValue+CfmN4KeyValue 启用密钥,均输入空格即清空配置关闭密钥);atom 录 required 表达 L2TP N4 加密启用时的必填语义。命令在 mml_commands；CommandParameter 待 CommandGraph 抽取。"

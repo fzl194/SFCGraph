@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00287
+owner_task_ref: UDG@20.15.2@Task@0-00107
+rule_name: 0-00107 最大记录数 10000 + ISENABLE 承继 GLBOSLELBWMSW
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00107
+  expression: |
+    SET APNOSLELBWMSW(atom 0-00107) 配置约束：
+    (1) 上限：系统最大记录数为 10000(命令 notes 强约束)——APN 级别的最大实例数。
+    (2) 生效范围限于 APN：本命令仅作用于指定 APN，与全局 SET GLBOSLELBWMSW(命令 ID 待 CommandGraph 抽取) 形成'全局→APN'两级开关。
+    (3) ISENABLE 承继行为：若 ISENABLE 设置为继承(INHERIT/未明确枚举值)，则承继 SET GLBOSLELBWMSW 全局开关的 IsEnable 配置(命令 notes 强约束)——本 atom 当前 binding requiredness=required 静态=local_planned 仅覆盖 ENUM 直接显式值场景；后续全局 atom 揭示后建议升 decision_driven。
+    (4) APNNAME 引用 ADD APN(atom 0-00020) 配置：主场景示例 APNNAME=apn-test；与 ADD APNBINDBWMUSRG 共用同一 APN 配置。
+    (5) 该命令执行后立即生效(命令 notes)。
+violation_effect: 上限超限→SET 失败；承继未配全局开关→ISENABLE 静默失配；APNNAME 不存在→SET 失败
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。本 atom 为末步开关，需全局 GLBOSLELBWMSW atom 揭示后再补 decision_driven。注：承继行为在 commands/ISENABLE 默认无继承枚举值(命令真相仅枚举)；可能 INHERIT 来自另一枚举或为 INHERIT 等价字段。"

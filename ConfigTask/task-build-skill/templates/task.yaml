@@ -1,0 +1,50 @@
+# Task 模板（atom / compound / feature / solution / generalized 通用）
+# 权威字段见 改进后三层图谱定义.md §4.1。冲突以 schema 为准。
+task_id: UDG@20.15.2@Task@0-00001        # 编号：atom 0-/compound 1-/feature 2-/solution 3-/generalized 4- + 5位
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置URR                # 语义名，层内唯一
+task_layer: atom                          # atom | compound | feature | solution | generalized
+task_intent: 配置一条使用量上报规则(URR)   # 该 task 完成什么动作（一句话）
+task_category: configure                  # plan|configure|verify|activate|rollback|delete|query
+ref: UDG@20.15.2@MMLCommand@ADD URR       # atom→MMLCommand / feature→Feature / solution→ConfigurationSolution / compound+generalized 留空或null
+status: draft                             # draft|inferred|active|deprecated （初始 draft/inferred，不预设 active）
+source_evidence_ids:
+  - output/.../部署UPF_28493406.md
+confidence: 0.9                           # 可选
+notes: ""                                 # 可选
+
+# ---- atom 层才有 parameter_bindings（compound/feature/generalized 通常没有，删掉此段）----
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00001:URRNAME     # {task_id}:{PARAM}
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:URRNAME
+    binding_type: variable                # fixed|variable|reference|decision_driven|derived|optional
+    variable_source: local_planned        # variable 时填：global_planned|local_planned|peer_planned|reference|decision_driven
+    requiredness: required                # required|optional|conditional
+    # value: ""                           # fixed 时填固定值
+    # source_ref: ""                      # reference 时填来源（前序 task 传播的上下文 / 源命令参数）
+    # decision_ref: ""                    # decision_driven 时填 DecisionPoint 实例键
+    source_evidence_ids:
+      - output/.../部署UPF_28493406.md
+  - binding_id: UDG@20.15.2@Task@0-00001:USAGERPTMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE
+    binding_type: decision_driven
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00001
+    requiredness: required
+
+# ---- compound/feature/solution/generalized 层才有 task_relations（atom 删掉此段）----
+# task_relations 指向的子 task 承载内容；编排顺序/包含/依赖在此表达。
+# 注意：关系也可作为独立 TaskRelation 对象存 task_relations/ 目录（二选一，见 SKILL §3）。
+task_relations:
+  - relation_id: UDG@20.15.2@TaskRelation@0-00001
+    from_task_ref: UDG@20.15.2@Task@0-00001
+    to_task_ref: UDG@20.15.2@Task@0-00002
+    relation_type: precedes               # precedes|depends_on|must_be_last|excludes|fallback_to|parallel_with|expands_to|contains
+    requiredness: required                # required|optional|conditional
+    propagated_context:                   # 从前 task 向后传播的上下文
+      - context_name: URRNAME
+        source_ref: UDG@20.15.2@Task@0-00001:URRNAME
+        target_ref: UDG@20.15.2@Task@0-00002:UPURRNAME1
+    source_evidence_ids:
+      - output/.../部署UPF_28493406.md

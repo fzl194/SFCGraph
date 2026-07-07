@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00122
+owner_task_ref: UDG@20.15.2@Task@0-00006   # 挂 atom（ADD L7FILTER 七层过滤器）
+rule_name: ADD L7FILTER 延时生效与记录数上限
+rule_type: operational_constraint
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: must_refresh_and_capacity
+  expression: |
+    1. 该命令执行后 60s 生效（非立即，非 REFRESHSRV 刷新，而是固定延时）。
+    2. L7Filter 最大记录数 20000；超过规格 90% 上报 ALM-135602215 配置数量超阈值告警。阈值可由 MOD CFGTHRESHOLD 修改。
+    3. 每个 L7FILTERNAME 下最多配置 50000 个子七层过滤器名称（SUBL7FLTNAME）。
+violation_effect: 配置延时生效 / 容量超限告警 / 子过滤器超限
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: 命令级审查(2026-07-02)新增：投影自命令②notes 的规格/上限/延时。

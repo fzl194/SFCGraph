@@ -1,0 +1,15 @@
+task_id: UDG@20.15.2@Task@00015
+task_logical_name: 刷新生效
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@SET REFRESHSRV
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET REFRESHSRV:REFRESHTYPE
+        binding_type: fixed
+        fixed_value: ALL
+        note: 刷新全部,固定ALL
+task_category: 配置
+status: active
+source_evidence_ids: []

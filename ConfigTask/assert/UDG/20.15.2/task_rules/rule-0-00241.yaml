@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00241
+owner_task_ref: UDG@20.15.2@Task@0-00112   # 挂 atom ADD ROUTEPOLICYNODE
+rule_name: ADD ROUTEPOLICYNODE 最大记录数 + 节点唯一性 + 前置 ADD ROUTEPOLICY + 立即生效
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD ROUTEPOLICYNODE
+  expression: |
+    ADD ROUTEPOLICYNODE 命令最大记录数为 65535。
+    添加该路由策略节点时，要保证该（POLICYNAME+NODESEQUENCE）节点未添加过（同策略下节点号唯一）。
+    前置：必须已经通过 ADD ROUTEPOLICY 添加过指定的路由策略的名字（POLICYNAME）。
+    该命令执行后立即生效。
+violation_effect: 超规格新增失败；同策略同节点号重复添加失败；未先建 ROUTEPOLICY 致 POLICYNAME 引用悬空
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020401/激活IPv6承载上下文_38276176.md]
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00240~0-00249）。投影自命令 notes '最大记录数65535' + '保证该路由策略节点未添加过'(节点唯一) + '保证通过ADD ROUTEPOLICY添加过指定的路由策略的名字'(前置依赖) + '立即生效'。前置 ADD ROUTEPOLICY 的顺序约束已由 POLICYNAME binding 的 source_ref=0-00111:POLICYNAME(reference) 隐式表达，本 rule 显式记录节点唯一性规格。"

@@ -1,0 +1,33 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00014
+owner_task_ref: UDG@20.15.2@Task@0-00048   # 挂 atom（task 级：探测方式三选一，影响 STR PDNROUTETST 参数集）
+decision_name: PDN侧路由探测方式
+decision_question: 选择哪种 PDN/DN 侧路由探测方式？（决定 TESTMETHOD 取值及关联参数：DNS 需 DOMAINVALUE，Tracert 不支持全量探测）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+options:
+  - option_id: opt-probe-ping
+    option_name: PING探测(默认)
+    option_value: PING
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:TESTMETHOD, effect_type: sets_value_pattern, effect_detail: TESTMETHOD=PING}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:DOMAINVALUE, effect_type: excludes, effect_detail: PING 方式不需要 DOMAINVALUE}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:WHOLEDETECT, effect_type: requires, effect_detail: PING 支持 WHOLEDETECT=ENABLE 全量探测}
+  - option_id: opt-probe-dns
+    option_name: DNS探测(防火墙禁PING时)
+    option_value: DNS
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:TESTMETHOD, effect_type: sets_value_pattern, effect_detail: TESTMETHOD=DNS}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:DOMAINVALUE, effect_type: requires, effect_detail: DNS 方式必填 DOMAINVALUE，且 DSTIPV4ADDR 必须为 DNS Server IP}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:WHOLEDETECT, effect_type: requires, effect_detail: DNS 支持 WHOLEDETECT=ENABLE 全量探测}
+  - option_id: opt-probe-tracert
+    option_name: Tracert探测(故障定位)
+    option_value: TRACERT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:TESTMETHOD, effect_type: sets_value_pattern, effect_detail: TESTMETHOD=TRACERT}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:WHOLEDETECT, effect_type: excludes, effect_detail: "Tracert 不支持全量探测(WHOLEDETECT 不可用)"}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00048:DOMAINVALUE, effect_type: excludes, effect_detail: Tracert 方式不需要 DOMAINVALUE}
+default_option: opt-probe-ping
+notes: "三选项均使用同一 STR PDNROUTETST 命令，差异仅在参数集(sets_value_pattern/requires/excludes)，无 adds/skips 命令。PING=默认连通性探测；DNS=网络中存在防火墙禁PING报文时；Tracert=故障定位(查看网络故障位置，约450s返回)。md 注意: 同一时间只能执行一个探测。"

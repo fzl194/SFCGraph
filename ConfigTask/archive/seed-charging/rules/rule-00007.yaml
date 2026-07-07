@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00007
+task_ref: UDG@20.15.2@Task@00103
+rule_name: RULE优先级相对约束
+rule_type: selection_rule
+rule_logic: 数字越小优先级越高；只绑三四层filter的RULE优先级应低于绑七层filter的；过滤条件为any的RULE优先级最低(如65000)
+violation_effect: 规则匹配顺序错误，计费不准
+severity: info
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

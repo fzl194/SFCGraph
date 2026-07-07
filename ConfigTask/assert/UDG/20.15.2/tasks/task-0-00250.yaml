@@ -1,0 +1,46 @@
+task_id: UDG@20.15.2@Task@0-00250
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置地址分配规则(入不转板)
+task_layer: atom
+task_intent: >-
+  配置全局地址分配规则(SET IPALLOCRULE): 三级规则开关(FIRSTRULESW/SECONDRULESW/THIRDRULESW)及第一级规则内容(FIRSTRULE)。
+  入不转板场景默认第一级规则使能(FIRSTRULESW=ENABLE), 第二/三级默认不使能。
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IPALLOCRULE
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred；B13 批次新建；命令不在 mml_commands.jsonl(§6.A 缺命令), ref 预期 ID, 待 CommandGraph 抽取
+source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00250:FIRSTRULESW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPALLOCRULE:FIRSTRULESW
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；命令真相 optional(全局默认第一级使能)，特性显式 ENABLE
+    requiredness: optional
+    value: ENABLE
+    source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+  - binding_id: UDG@20.15.2@Task@0-00250:FIRSTRULE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPALLOCRULE:FIRSTRULE
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；取值样例 APN-1&LOCATION-0&SMF-0, 三段组合
+    requiredness: conditional   # FIRSTRULESW=ENABLE 时必填
+    value: APN-1&LOCATION-0&SMF-0
+    source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+  - binding_id: UDG@20.15.2@Task@0-00250:SECONDRULESW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPALLOCRULE:SECONDRULESW
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；命令真相 optional(默认不使能)，特性显式 DISABLE
+    requiredness: optional
+    value: DISABLE
+    source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+  - binding_id: UDG@20.15.2@Task@0-00250:THIRDRULESW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPALLOCRULE:THIRDRULESW
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；命令真相 optional(默认不使能)，特性显式 DISABLE
+    requiredness: optional
+    value: DISABLE
+    source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+notes: |
+  GWFD-020482。SET IPALLOCRULE 配置三级地址分配规则开关。FIRSTRULE 三段格式 "APN-{0|1}&LOCATION-{0|1}&SMF-{0|1}"
+  (取值样例 APN-1&LOCATION-0&SMF-0 表示第一级按 APN 分配)。SECONDRULESW/THIRDRULESW 默认 DISABLE(本特性场景)。
+  命令不在 mml_commands.jsonl(§6.A 缺命令), ref/parameter_ref 预写预期 ID, 待 CommandGraph 抽取回填。
+  命令级审查(2026-07-02) 补审：缺口 8 严格筛选——(a)SECONDRULE/THIRDRULE(IPv4 二/三级规则内容)为 conditional 但本特性 SECONDRULESW/THIRDRULESW=DISABLE 故规则内容不适用，不绑；(b)IPV6FIRSTRULESW/IPV6FIRSTRULE/IPV6SECRULESW/IPV6SECONDRULE/IPV6THIRDRULESW/IPV6THIRDRULE(6 IPv6 参数)为独立 IPv6 规则集，本特性仅 IPv4(FIRSTRULESW 非 IPV6*)未用到，按"通用配置"门槛不绑(IPv6 地址分配为冷门，待 IPv6 场景特性揭示时增量补)。requiredness 校准：三开关由 required→optional(命令真相 optional，全局默认第一级使能/二三级不使能)；补 value=ENABLE/APN-1&LOCATION-0&SMF-0/DISABLE/DISABLE(特性数据规划表显式值)。补 atom rule 0-00408(全局唯一 max=1 + 三级规则不可相同 + 默认第一级使能 + 仅对新激活用户生效)。

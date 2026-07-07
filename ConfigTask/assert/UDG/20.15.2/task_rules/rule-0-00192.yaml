@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00192
+owner_task_ref: UDG@20.15.2@Task@0-00076   # 挂 atom ADD OSPFNETWORK
+rule_name: OSPF网段前置/规格/接口优先级覆盖约束
+rule_type: constraint_rule
+rule_scope: parameter
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:PROCID
+    - UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:AREAID
+    - UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:IPADDRESS
+    - UDG@20.15.2@CommandParameter@ADD OSPFNETWORK:WILDCARDMASK
+  expression: "ADD OSPFNETWORK 须满足：(1) 前置——必须先执行 ADD OSPF(OSPF进程) 与 ADD OSPFAREA(OSPF区域) 后才能使用此命令；(2) OSPF网段规格默认单进程500(实际以服务规格文件为准)，命令最大记录数8016；(3) 可把多个接口配置到一个区域中(多网段重复执行，每网段一条命令)；(4) ADD OSPFINTERFACE 命令接口使能的优先级大于 ADD OSPFNETWORK(可选 ADD OSPFINTERFACE 配接口属性，优先级=0 避免 VNF 被选 DR/BDR)；(5) OSPF 不允许以从地址建网段。"
+violation_effect: 网段创建失败 / 网段规格超限 / DR/BDR 误选 / 接口使能冲突
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes(前置 OSPF进程+区域/网段规格500/记录8016/多接口可同区域/OSPFINTERFACE优先级大/不允许从地址建)。③GWFD-010155 脚本对多网段(10.8.7.0 与 10.8.8.0)重复执行属正常迭代，非单参多值。可选 ADD OSPFINTERFACE 不单建 atom(优先级=0 修饰，记此)。DESCRIPTION 可选描述③未用不绑。"

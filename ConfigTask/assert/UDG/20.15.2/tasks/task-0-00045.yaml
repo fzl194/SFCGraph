@@ -1,0 +1,46 @@
+task_id: UDG@20.15.2@Task@0-00045
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定地址池到地址池组
+task_layer: atom
+task_intent: 将地址池(POOLNAME)绑定到地址池组(POOLGROUPNAME)；多地址池场景可选配优先级(PRIORITY)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD POOLBINDGROUP
+status: inferred   # 命令级审查(2026-07-02)：补 PRIORITY + rule 0-00143
+source_evidence_ids:
+  - GWFD-010104/激活地址分配方式_71653959.md
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+  - GWFD-020482/激活入不转板功能_28210142.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00045:POOLGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLBINDGROUP:POOLGROUPNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(LST POOLBINDGROUP / LST POOLGROUP)
+    source_ref: UDG@20.15.2@Task@0-00042:POOLGRPNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00045:POOLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLBINDGROUP:POOLNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(LST POOL)
+    source_ref: UDG@20.15.2@Task@0-00043:POOLNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010104/激活地址分配方式_71653959.md]
+  # PRIORITY：可选默认 16。020403/020482 多地址池按优先级分配场景置显式值(=10)；单池场景省略取默认
+  - binding_id: UDG@20.15.2@Task@0-00045:PRIORITY
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD POOLBINDGROUP:PRIORITY
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional 默认 16；数据规划表: 本端规划；取值 1~16
+    requiredness: optional   # 命令真相 optional；仅同类型地址池(IPv4/IPv6 各自)间比较有优先级
+    source_evidence_ids:
+      - GWFD-020403/激活IPv4v6双栈接入_38276180.md
+      - GWFD-020482/激活入不转板功能_28210142.md
+rules: [UDG@20.15.2@TaskRule@0-00143]
+notes: |
+  GWFD-010104。双引用: POOLGROUPNAME←ADD POOLGROUP(0-00042), POOLNAME←ADD POOL(0-00043)。
+  命令级审查(2026-07-02)：
+  - 补 PRIORITY（命令真相 optional 默认 16；020403/020482 数据规划表用到 10，多池按优先级分配场景）。
+  - 补 cardinality_rule 0-00143（投影命令 notes：最大记录数 80000 + 每组每 VPN 最多 16 个 IPv4 池 + 16 个 IPv6 池 + 绑定后不允许改 POOL 的 VPN 参数 + 必须先执行 ADD POOLGROUP）。
+  - source_evidence_ids 扩展至全部 5 个使用该命令的特性。

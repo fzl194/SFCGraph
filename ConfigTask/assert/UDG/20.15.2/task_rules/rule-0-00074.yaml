@@ -1,0 +1,17 @@
+rule_id: UDG@20.15.2@TaskRule@0-00074
+owner_task_ref: UDG@20.15.2@Task@0-00178
+rule_name: GRE识别关键字两端一致性约束
+rule_type: consistency_rule
+rule_scope: parameter
+condition: {expression_type: condition, expression: "GREKEYEN=TRUE"}
+constraint:
+  constraint_type: invariant
+  target_refs:
+    - UDG@20.15.2@Task@0-00178:GREKEY
+  expression: 隧道两端设置识别关键字时必须指定相同 GREKEY；或隧道两端都不设置识别关键字。
+violation_effect: GRE 隧道两端关键字不匹配导致报文丢弃/隧道不通
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [IPFD-015002/激活支持GRE_06422610.md]

@@ -1,0 +1,72 @@
+task_id: UDG@20.15.2@Task@0-00256
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加内容分类组
+task_layer: atom
+task_intent: "增加内容分类组(ADD CONTCATEGROUP: CONTCATEGNAME + CATEGORYTYPE + 分类维度参数), 定义 URL 分类匹配维度"
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD CONTCATEGROUP
+status: inferred   # 命令级审查(2026-07-02):draft→inferred, 5 缺口补充(CATEGORYTYPE 4-way→DP)+ rule 投影
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00256:CONTCATEGNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:CONTCATEGNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00256:CATEGORYTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:CATEGORYTYPE
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 required: 内容分类类型(SPECIFIC/RANGE/PRIORITY/NAME 4 路, 主特性样例 SPECIFIC)
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00256:STARTID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:STARTID
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 conditional: CATEGORYTYPE=RANGE 时必选
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00119
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00256:ENDID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:ENDID
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 conditional: CATEGORYTYPE=RANGE 时必选
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00119
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00256:CATEGORYID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:CATEGORYID
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 conditional: CATEGORYTYPE=SPECIFIC/NAME 时必选; 主特性 SPECIFIC 路径
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00119
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00256:PRIORITY
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:PRIORITY
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 conditional: CATEGORYTYPE=PRIORITY 时必选(全局唯一)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00119
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00256:CATEGORYNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:CATEGORYNAME
+    binding_type: variable
+    variable_source: decision_driven   # 命令真相 conditional: CATEGORYTYPE=NAME 时必选
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00119
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00256:CFGDOMAINNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD CONTCATEGROUP:CFGDOMAINNAME
+    binding_type: variable
+    variable_source: local_planned   # 命令真相 optional: 配置域
+    requiredness: optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+decision_refs:
+  - UDG@20.15.2@DecisionPoint@0-00119   # CATEGORYTYPE 4-way(SPECIFIC/RANGE/PRIORITY/NAME)→ 配套必选/必不传
+notes: >-
+  GWFD-110471。命令级审查(2026-07-02):draft→inferred; 5 缺口补充: STARTID/ENDID/PRIORITY/CATEGORYNAME/CFGDOMAINNAME;
+  CATEGORYTYPE 4 路分叉(命令真相枚举 SPECIFIC/RANGE/PRIORITY/NAME)→ 投影 DP 0-00119;
+  STARTID/ENDID/CATEGORYID/PRIORITY/CATEGORYNAME 均按 CATEGORYTYPE 取值 conditional;
+  CONTCATEGNAME 供 ADD CONTCATEGBIND(0-00257)引用; CATEGORYID 对应 ICAP Server 已导入的 URL 分类数据;
+  命令不在 mml_commands.jsonl(§6.A), 待 CommandGraph 抽取回填。

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00155
+owner_task_ref: UDG@20.15.2@Task@0-00085   # 挂 atom SET IOTCAPABILITY
+rule_name: IOTCAPABILITY 全局唯一实例(最大记录数1)
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET IOTCAPABILITY
+  expression: "SET IOTCAPABILITY 命令最大记录数为 1（全局唯一实例，非按 APN/会话维度）；命令执行后立即生效。存在系统初始记录: NBIOT=ENABLE（即默认已使能）。"
+violation_effect: 重复配置失败（仅 1 条全局记录）
+severity: info
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010296/激活NB-IoT终端标准接入_74275194.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes '该命令最大记录数为1' + 系统初始记录 NBIOT=ENABLE。本命令为全局开关(非 per-APN)，NBIOT 命令真相 optional 但本特性(GWFD-010296)显式使能故 atom 录 required+ENABLE。"

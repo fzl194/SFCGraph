@@ -1,0 +1,33 @@
+task_id: UDG@20.15.2@Task@0-00282
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置IMS Bypass功能参数
+task_layer: atom
+task_intent: 开启PCF双故障Bypass功能(SET IMSBYPASS)，配置QoSURR流信息上报方式与迟滞时间，降低PCF双故障对语音业务影响
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IMSBYPASS
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00282:IMSBYPASSSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IMSBYPASS:IMSBYPASSSW
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；激活=ENABLE/去激活=DISABLE
+    requiredness: required
+    source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]
+  - binding_id: UDG@20.15.2@Task@0-00282:QOSURRFLOWRPT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IMSBYPASS:QOSURRFLOWRPT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；FLOW=按数据报五元组上报/FILTER=按FILTER上报
+    requiredness: conditional   # IMSBYPASSSW=ENABLE 时必填（命令真相 conditional）
+    source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]
+  - binding_id: UDG@20.15.2@Task@0-00282:QOSURRHYSTIMER
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IMSBYPASS:QOSURRHYSTIMER
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；QoSURR Stop 迟滞时间(整数 0~3600秒)；整机老化时间=APN老化时长+本迟滞时间
+    requiredness: conditional   # IMSBYPASSSW=ENABLE 时必填
+    source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]
+notes: |
+  GWFD-112000 双故障Bypass 专属核心开关。命令 SET IMSBYPASS 在 mml_commands.jsonl，parameter_references 为空(§6-B)，参数从 parameter_description 文本抽取。
+  特性 md 样例 IMSBYPASSSW=ENABLE, QOSURRFLOWRPT=FLOW, QOSURRHYSTIMER=0(整机老化=APN老化时长+0)。
+  命令级审查(2026-07-02)：3/3 参数绑定完整；去除 3 个 binding 的 value 字段(binding_type=variable 不应附 value，原有 value 仅是样例占位)；保持 requiredness=required(IMSBYPASSSW, 本特性必填)+conditional(其余 2, IMSBYPASSSW=ENABLE 时)。命令 notes 强约束：IMS Bypass 当前版本为测试特性(仅测试场景，不可现网部署) → 新增 atom rule 0-00398(cardinality 1 + 仅新数据流生效 + 测试特性限定 + 系统初始记录默认值)。SET REFRESHSRV 前置由任务编排表达。

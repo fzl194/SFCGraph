@@ -1,0 +1,22 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00006
+owner_task_ref: UDG@20.15.2@Task@0-00011   # 挂 atom ADD USERPROFILE（参数级：USERPROFILENAME 取值来源分叉）
+decision_name: 用户模板名称来源
+decision_question: USERPROFILE.USERPROFILENAME 的取值来源随场景分叉——计费本端规划，PCC须与SMF协商一致(本地PCC时作为规则组激活标识)。用于哪种场景？
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+options:
+  - option_id: opt-up-local
+    option_name: 计费(本端规划)
+    option_value: local_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00011:USERPROFILENAME, effect_type: sets_value_pattern, effect_detail: variable_source=local_planned}
+  - option_id: opt-up-peer
+    option_name: PCC(与对端协商)
+    option_value: peer_planned
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00011:USERPROFILENAME, effect_type: sets_value_pattern, effect_detail: variable_source=peer_planned；USERPROFILENAME 须与 SMF 一致；本地PCC 时作为规则组标识由 SMF 下发激活本地静态规则}
+default_option: opt-up-local
+notes: pass-3 演进(GWFD-020351 反推)。跨特性分叉：计费=本端 / PCC=对端。命令 parameter_description 默认"全网规划"，特性 md 获取方法列覆盖(PCC=与对端协商)，按 §4.5 特性 md 优先。USERPROFILENAME variable_source 由 local_planned 升级为 decision_driven。默认本端保持计费原行为。待人工确认。

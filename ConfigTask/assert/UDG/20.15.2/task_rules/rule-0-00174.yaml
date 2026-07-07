@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00174
+owner_task_ref: UDG@20.15.2@Task@0-00061   # 挂 atom ADD IFIPV6ADDRESS
+rule_name: ADD IFIPV6ADDRESS 最大记录数规格 + 适用接口范围
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD IFIPV6ADDRESS
+  expression: "ADD IFIPV6ADDRESS 命令最大记录数为 65535；执行后立即生效；可在 VNRS_VNFC 的 Ethernet 接口/子接口/Eth-Trunk 接口/子接口/Loopback/Tunnel 口上配置。"
+violation_effect: 超规格新增失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+notes: "命令级审查(2026-07-02): 投影自命令 notes '最大记录数65535' + '适用接口范围'。前置 SET IFIPV6ENABLE 使能 IPv6 后方可配地址。"

@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00371
+owner_task_ref: UDG@20.15.2@Task@0-00138   # 挂 atom SET PPPCFG
+rule_name: SET PPPCFG 全局唯一 + 立即生效 + 系统初始记录
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00138
+  expression: |
+    SET PPPCFG 命令最大记录数为 1（全局唯一实例，PPP 协商参数统一设置）。
+    立即生效：本命令执行后立即生效。
+    系统初始记录：存在系统初始记录，初始值为 HOSTNAME=UPF / MRU=1500 / TIMEOUT=3。
+    取值范围：HOSTNAME 字符串 1~31（区分大小写）；MRU 整数 64~1500；TIMEOUT 整数 1~10（秒）。
+    适用 NF：PGW-U、UPF。
+violation_effect: 重复执行覆盖前值；非立即生效导致后续 PPP 协商仍用旧值
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/会话管理/L2TP隧道管理/PPP配置/设置PPP配置（SET PPPCFG）_35373544.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+  - GWFD-020412/本地配置方式激活L2TP VPN_40342129.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 1 + 立即生效 + 系统初始记录表)。L2TP 场景下为可选步骤。"

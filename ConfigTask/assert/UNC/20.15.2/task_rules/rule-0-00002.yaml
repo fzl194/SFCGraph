@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00002
+owner_task_ref: UNC@20.15.2@Task@0-00002   # 挂 ADD ADCPARA atom
+rule_name: ADD ADCPARA 最大记录数 8000
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD ADCPARA]
+  expression: ADCPARA 记录数 ≤ 8000
+violation_effect: 超过规格无法新增
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加ADC参数（ADD ADCPARA）_65996998.md]

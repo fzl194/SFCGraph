@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@0-00171
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置全局业务快速恢复配置
+task_layer: atom
+task_intent: 配置 UDG 全局业务快速恢复开关（PGW/SGW 网络侧触发业务恢复、PDTN 触发 SGW-C 恢复），降低网元故障对语音业务的影响
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET FASTRECOVERY
+status: draft   # B06 批次新建；命令命中 mml_commands.jsonl，CommandParameter 待 CommandGraph 抽取(§6.B)
+source_evidence_ids: [GWFD-020254/配置VoLTE业务快速恢复_98918702.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00171:RESTORPGWSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FASTRECOVERY:RESTORPGWSWITCH
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（PGW 打开网络侧触发的业务恢复功能）
+    requiredness: required
+    source_evidence_ids: [GWFD-020254/配置VoLTE业务快速恢复_98918702.md]
+  - binding_id: UDG@20.15.2@Task@0-00171:RESTORSGWSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FASTRECOVERY:RESTORSGWSWITCH
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（SGW 打开网络侧触发的业务恢复功能）
+    requiredness: required
+    source_evidence_ids: [GWFD-020254/配置VoLTE业务快速恢复_98918702.md]
+  - binding_id: UDG@20.15.2@Task@0-00171:PDTNSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FASTRECOVERY:PDTNSWITCH
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（SGW-C 故障重启场景下，PGW-U 触发 SGW-C 业务恢复）
+    requiredness: required
+    source_evidence_ids: [GWFD-020254/配置VoLTE业务快速恢复_98918702.md]
+status: inferred   # 命令级审查(2026-07-02) 校准：核实 3 开关值正确（数据规划表/脚本一致），缺口 PRTFRQBRKTIME/HOLDONTIME 为冷门可选不绑；command notes max_records=1 由 atom-level 隐含，单命令一 atom 通过
+notes: "GWFD-020254(SGW-U/PGW-U 专属)。md 数据规划表 3 参均=全网规划、取值样例 ENABLE。三开关为网元故障容灾全局开关（非本端运维开关），故 variable_source=global_planned。无 license(md 必备事项未列)、无 REFRESHSRV(md 无)。CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02)：缺口 PRTFRQBRKTIME(0~300s 防闪断定时器)/HOLDONTIME(1~120min 保留承载超时) 命令真相均 optional 且 1 特性(GWFD-020254)数据规划表未用到，按通用配置门槛不绑（不增规则）。"

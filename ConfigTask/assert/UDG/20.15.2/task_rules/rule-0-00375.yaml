@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00375
+owner_task_ref: UDG@20.15.2@Task@0-00086   # 挂 atom SET IPFARMGLOBAL
+rule_name: SET IPFARMGLOBAL 全局最多 3 套 + 立即生效 + 90% 阈值告警
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00086
+  expression: |
+    SET IPFARMGLOBAL 命令最大记录数为 3（每 SERVERTYPE 取值最多 1 套：REDIRECT 1 套、LOADSHARE 1 套、PCSCF 1 套）。
+    立即生效：本命令执行后立即生效。
+    适用 NF：PGW-U、UPF。
+    跨 SERVERTYPE 互斥：同一 SERVERTYPE 取值不能重复配置（取同一类型将覆盖）；不同 SERVERTYPE 各自独立。
+violation_effect: 超过 3 套新增失败；同类型重复配置后一次执行覆盖前值；非立即生效导致 IPFarm 心跳/负载均衡未刷新
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/DN管理/IP Farm 管理/IPFarm全局参数/设置IPFarm全局参数（SET IPFARMGLOBAL）_82837062.md
+  - GWFD-110281/配置用户Portal_66620114.md
+  - GWFD-110282/配置Web Proxy_66987339.md
+  - GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 3 + 立即生效)。SERVERTYPE 跨特性分叉已升级 decision_driven + DP 0-00150。"

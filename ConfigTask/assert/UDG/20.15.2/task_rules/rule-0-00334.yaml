@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00334
+owner_task_ref: UDG@20.15.2@Task@0-00024   # SET GYONESHOT (atom-挂 rule)
+rule_name: SET GYONESHOT 最大记录数1+立即生效+双引用前置EXTENDEDFILTER+REDIRAPPENDINFO
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00024:EXTFLTNAME
+    - UDG@20.15.2@Task@0-00024:APPENDINFONAME
+  expression: "最大记录数为1(全局唯一); 该命令执行后立即生效；EXTFLTNAME引用前置ADD EXTENDEDFILTER(0-00022:EXTFLTNAME)；APPENDINFONAME引用前置ADD REDIRAPPENDINFO(0-00023:APPENDINFONAME)；若配置重定向URL中可包含重定向携带信息(原始请求URL reqUrlName/MSISDN msisdnName/IMSI imsiName/IMEI imeiName/IP msipName)，URL重定向中报文内容格式固定。"
+violation_effect: 未配前置扩展过滤器或重定向携带信息时一次重定向不生效
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1+立即生效+双引用前置)
+source_evidence_ids: [GWFD-020356/激活计费信息实时提醒_64110489.md]

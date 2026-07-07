@@ -1,0 +1,23 @@
+task_id: UDG@20.15.2@Task@00203
+task_logical_name: 离线计费
+task_layer: feature
+nf: UDG
+version: 20.15.2
+task_summary: "离线计费：基础流程+离线专属可选命令"
+feature_ref: UDG@20.15.2@Feature@GWFD-010171
+task_relations:
+  - from_task_ref: UDG@20.15.2@Task@00101
+    to_task_ref: UDG@20.15.2@Task@00102
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00102
+    to_task_ref: UDG@20.15.2@Task@00103
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00103
+    to_task_ref: UDG@20.15.2@Task@00104
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00104
+    to_task_ref: UDG@20.15.2@Task@00016
+    relation_type: precedes
+    requiredness: optional
+status: active
+source_evidence_ids: []

@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00200
+owner_task_ref: UDG@20.15.2@Task@0-00078   # 挂 atom ADD OSPFV3
+rule_name: OSPFv3进程规格/Router-ID全网唯一/VPN环路检查条件/共网段虚拟系统
+rule_type: constraint_rule
+rule_scope: parameter
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3:PROCID
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3:ROUTERID
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3:VRFNAME
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3:VPNINSCAPSIMFLG
+    - UDG@20.15.2@CommandParameter@ADD OSPFV3:VIRTUALSYSFLAG
+  expression: "ADD OSPFV3 须满足：(1) OSPFv3进程实例数规格默认整机(实际以服务规格文件为准)，命令最大记录数8016；(2) 设备的一个接口只能属于某一个OSPFv3进程，进程实例(VPN/全局归属)不可更改，只能在第一次使能该进程时指定；(3) 只有配置了 Router ID(ROUTERID) 进程才能正常运行(否则只能看到进程无法生成LSA)，ROUTERID 必须全网唯一(IPv4点分十进制格式)；(4) VPN多实例场景须配 VPNINSCAPSIMFLG=TRUE 去使能VPN路由环路检测，否则会导致OSPF路由引入失败(020406 md 说明)；(5) OSPFv3共网段须配 VIRTUALSYSFLAG=TRUE(进程级)，且须与 ADD OSPFV3INTERFACE(0-00117) 接口级 VIRTUALSYSFLAG 同时配(DP 0-00022 协调)；(6) 接口上需要先使能IPv6。"
+violation_effect: 路由引入失败 / Router ID 冲突 / 进程实例超规格 / 接口归属冲突 / LSA 无法生成
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids:
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（OSPFv3动态路由+IPv6 BF_4baebda6_72490128.md
+  - GWFD-020401/激活IPv6承载上下文_38276176.md
+  - GWFD-020406/激活外部网元地址分配的IPv6 Prefix Delegation功能_80269177.md
+notes: "命令级审查(2026-07-02) 新建。IPv4 ADD OSPF(rule 0-00190) 的 OSPFv3 镜像。投影自命令 notes 5 条规格/约束(进程实例上限/记录8016/接口单进程归属/实例不可改/Router ID 必配全网唯一) + ③GWFD-020406 md 说明 VPNINSCAPSIMFLG=TRUE 必配(环路检查) + 共网段 VIRTUALSYSFLAG=TRUE(进程级+接口级须同时配)。VPNINSCAPSIMFLG 已绑参(020406 数据规划表显式行+md 说明双重强调,强于 IPv4 0-00074 的'仅 md 说明'),仍在本 rule 重申其条件要求(critical)。VIRTUALSYSFLAG 已绑参(decision_driven→DP 0-00022)。"

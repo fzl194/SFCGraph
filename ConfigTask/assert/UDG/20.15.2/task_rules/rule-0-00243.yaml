@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00243
+owner_task_ref: UDG@20.15.2@Task@0-00114   # 挂 atom MOD INTERFACE
+rule_name: MOD INTERFACE 前置接口已存在 + SR-IOV/NP 场景管理状态高危约束
+rule_type: state_invariant_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: state_invariant
+  target_refs:
+    - UDG@20.15.2@MMLCommand@MOD INTERFACE
+  expression: |
+    前置：在使用该命令之前设备上已经存在该接口（IFNAME 必须指向已创建接口）。
+    管理状态（IFADMINSTATUS）高危约束：
+    - SR-IOV bonding 组网或 NP 卡直连 PE 场景下，不能使用该命令将 Eth-Trunk 成员接口的管理状态置为 Down，否则可能导致业务丢包或链路中断。
+    - NP 卡的物理口可能作为外联口或级联口；若该物理口规划为级联口，不能通过该命令将接口状态置为 Up，否则可能上报接口状态 Down 告警。
+    该命令执行后立即生效。
+    注：UDG 激活场景该命令恒用于置 IFADMINSTATUS=up（启用主接口），不触发上述置 Down/级联口置 Up 的高危路径，但命令本身支持 up/down 两种状态。
+violation_effect: 接口不存在致修改失败；SR-IOV/NP 场景误置状态致业务丢包、链路中断或误告警
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00240~0-00249）。投影自命令 notes '使用前设备已存在该接口'(前置) + SR-IOV bonding/NP 卡直连 PE 场景不能置 Eth-Trunk 成员 Down + NP 卡级联口不能置 Up（两条高危管理状态约束）。本 atom fixed:up 仅表达 UDG 启用主接口用途，rule 显式记录命令 up/down 全状态空间及其高危边界。"

@@ -1,0 +1,19 @@
+rule_id: UNC@20.15.2@TaskRule@0-00024
+owner_task_ref: UNC@20.15.2@Task@0-00022
+rule_name: ADD CHGTARI 上限 + 唯一 + 不重叠 + ≥10 分钟
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CHGTARI]
+  expression: >-
+    同 CC 同 TT 记录 ≤24，总 ≤288；TT+ST+ET+CC 唯一；
+    同 CC 同 TT 的新增时段不得与已有时段重叠；任一时段长度 ≥10 分钟；
+    起始/结束时间与零点间隔约束（见命令 md）。
+violation_effect: 超规格/重复/重叠/过短均无法新增
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加费率时段配置(ADD CHGTARI)_26305208.md]

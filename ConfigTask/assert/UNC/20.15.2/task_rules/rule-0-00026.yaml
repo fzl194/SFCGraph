@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00026
+owner_task_ref: UNC@20.15.2@Task@0-00024
+rule_name: ADD CPCGGRP 最多 1 条 + 当前版本不支持
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CPCGGRP]
+  expression: 记录数 ≤ 1（CPCGGRPID 固定=1）；⚠ 当前版本不支持本命令（建 atom 仅图谱完整，实际不配置）
+violation_effect: 当前版本不可用
+severity: info
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加抄送CG组（ADD CPCGGRP）_09896864.md]

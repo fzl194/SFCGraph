@@ -1,0 +1,26 @@
+task_id: UDG@20.15.2@Task@0-00135
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定L2TP组到源端接口(本地配置方式专属)
+task_layer: atom
+task_intent: 本地配置方式下将 L2TP 组绑定到指定源端 Gi 接口（ADD L2TPCLIENTIP），用户入网时系统以此接口作源端与 LNS 交互
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD L2TPCLIENTIP
+status: inferred   # 命令级审查(2026-07-02) 本地配置方式专属；命令在 mml_commands；CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00135:L2TPGROUPID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPCLIENTIP:L2TPGROUPID
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD L2TPGROUP.GROUPID)
+    source_ref: UDG@20.15.2@Task@0-00133:GROUPID
+    requiredness: required
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+  - binding_id: UDG@20.15.2@Task@0-00135:INTERFACENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD L2TPCLIENTIP:INTERFACENAME
+    binding_type: reference
+    variable_source: reference   # 已配置数据中获取(引用 ADD LOGICINF.NAME, Giif 接口)
+    source_ref: UDG@20.15.2@Task@0-00083:NAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020412/本地配置方式激活L2TP VPN_40342129.md]
+notes: "GWFD-020412 本地配置方式专属(AAA 方式用 ADD L2TPRDSCLIENT 绑 APN 到接口)。L2TPGROUPID 引用 ADD L2TPGROUP(0-00133)；INTERFACENAME 引用 ADD LOGICINF.NAME(0-00136)。命令在 mml_commands；CommandParameter 待 CommandGraph 抽取。"

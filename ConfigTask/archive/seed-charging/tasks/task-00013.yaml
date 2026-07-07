@@ -1,0 +1,20 @@
+task_id: UDG@20.15.2@Task@00013
+task_logical_name: 配置缺省费率
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@SET URRGRPBINDING
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:USERPROFILENAME
+        binding_type: reference
+        source_ref: ""  # ←ADD USERPROFILE
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTURRGRPNAME
+        binding_type: reference
+        source_ref: ""  # ←ADD URRGROUP(默认业务费率)
+      - parameter_ref: UDG@20.15.2@CommandParameter@SET URRGRPBINDING:DFTSIGURRGNAME
+        binding_type: reference
+        source_ref: ""  # ←ADD URRGROUP(默认信令费率)
+task_category: 配置
+status: active
+source_evidence_ids: []

@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00354
+owner_task_ref: UDG@20.15.2@Task@0-00150
+rule_name: 0-00150 MOD PCCPOLICYGRP 立即生效 + 参数全可选 + 无选配则为空 + 前置ADD PCCPOLICYGRP + INHERIT继承APN
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00150
+    - UDG@20.15.2@Task@0-00003
+    - UDG@20.15.2@Task@0-00149
+  expression: |
+    MOD PCCPOLICYGRP(atom 0-00150) 配置约束：
+    (1) 立即生效：该命令执行后立即生效(命令 notes)。
+    (2) 参数全可选：PCCPOLICYGRPNM + PCCACTPROPNAME/EXTENDPROPNAME/FUPSESSIONEXC/Token*/Signal*/ADCMUTEFLAG/QOSPROPNAME/HTTP2DEGRADESW/URRGROUPNAME/SIGURRGRPNAME/EVENT*/MMSCHARGETYPE/CFGDOMAINNAME 所有参数都是 optional(命令 notes 强约束)；如果一个都没有选, 则配置一个空的 PccPolicyGrp(命令 notes 隐式语义)——本 atom 严格限定 HTTP2DEGRADESW 单一参数, 不承载其他 16 参数修改。
+    (3) 前置依赖：PCCPOLICYGRPNM 引用必须先通过 ADD PCCPOLICYGRP(atom 0-00003) 配置——只有已经添加成功的 PccPolicyGrp 才能够修改(命令 notes 强约束)。
+    (4) INHERIT 继承 APN 级：HTTP2DEGRADESW=INHERIT 时继承 atom 0-00149 SET APNHTTP2DGRD HTTP2DEGRADESW(APN 级)(命令隐式层级)；DP 0-00143 编排 3-way(ENABLE/DISABLE/INHERIT, default INHERIT)。
+    (5) 优先级最高：rule 级 > APN 级 > 全局(特性 md GWFD-110202 注)；rule 级(本 atom) HTTP2DEGRADESW 生效时, APN 级(0-00149)/全局级(0-00148) 不生效。
+    (6) 缺口冷门参数：本 atom 严格限定 HTTP2DEGRADESW 单一参数——其他 16 参数(PCCACTPROPNAME/EXTENDPROPNAME/FUPSESSIONEXC/Token*/Signal*/ADCMUTEFLAG/QOSPROPNAME/URRGROUPNAME/SIGURRGRPNAME/EVENT*/MMSCHARGETYPE/CFGDOMAINNAME) 按通用配置门槛不绑, 主特性场景不用；若后续计费/Token 等特性要修改 PCC 策略组, 须新建独立 atom 承载(本 atom 不承载)。
+violation_effect: 未先建PCCPOLICYGRP→命令拒收(只有已添加成功的才能 MOD)；INHERIT 全链路 INHERIT→无生效源；3 层联动错配→回落到默认；缺失 HTTP2DEGRADESW 单一参数→配置无效(本 atom 单一参数限定)
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-110202/激活HTTP2.0协议回落_65157762.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。投影命令 notes 2 大约束(立即生效/参数全可选无选配则为空) + 隐式前置(ADD PCCPOLICYGRP 0-00003)+ DP 0-00143 编排联动 + 跨层 rule/APN/全局 三层联动(0-00149/0-00148)。本 atom 严格限定 HTTP2DEGRADESW 单一参数——其他 16 参数 PCC 修改场景若后续启用, 须建独立 atom。"

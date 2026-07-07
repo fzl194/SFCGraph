@@ -1,0 +1,31 @@
+rule_id: UDG@20.15.2@TaskRule@0-00010
+owner_task_ref: UDG@20.15.2@Task@2-00001
+rule_name: 本特性命令的 CommandParameter 结构化对象待 CommandGraph 抽取
+rule_type: dependency_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_exist
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD URR
+    - UDG@20.15.2@MMLCommand@ADD URRGROUP
+    - UDG@20.15.2@MMLCommand@ADD PCCPOLICYGRP
+    - UDG@20.15.2@MMLCommand@ADD FILTER
+    - UDG@20.15.2@MMLCommand@ADD FILTERIPV6
+    - UDG@20.15.2@MMLCommand@ADD L7FILTER
+    - UDG@20.15.2@MMLCommand@ADD FLOWFILTER
+    - UDG@20.15.2@MMLCommand@ADD FLTBINDFLOWF
+    - UDG@20.15.2@MMLCommand@ADD PROTBINDFLOWF
+    - UDG@20.15.2@MMLCommand@ADD RULE
+    - UDG@20.15.2@MMLCommand@ADD USERPROFILE
+    - UDG@20.15.2@MMLCommand@ADD RULEBINDING
+    - UDG@20.15.2@MMLCommand@SET URRGRPBINDING
+    - UDG@20.15.2@MMLCommand@ADD SPECURRGRPLIST
+    - UDG@20.15.2@MMLCommand@SET REFRESHSRV
+  expression: 这 15 条命令的 Task.ref 已命中 mml_commands.jsonl；但其 CommandParameter 结构化对象不在 command_parameters.jsonl（静态层抽取缺口）。58 条 parameter_ref 当前仅在 mml_commands 的 parameter_description 文本与 parameter_references.jsonl endpoint 中有据。待 CommandGraph 补齐 CommandParameter 后，parameter_ref 即可全量命中结构化静态层。
+violation_effect: parameter_ref 暂不命中结构化静态层（不阻塞配置生成，参数细节已从特性 md 数据规划表抽取）
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

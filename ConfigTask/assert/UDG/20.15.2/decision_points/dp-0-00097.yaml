@@ -1,0 +1,32 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00097
+owner_task_ref: UDG@20.15.2@Task@0-00116   # 挂 atom ADD IPV6PATHMTU
+decision_name: IPV6PATHMTU VPN 作用域（VRFNAME 是否显式配）
+decision_question: |
+  ADD IPV6PATHMTU 的 VRFNAME 何时显式配置？
+  - 配 VPN：UDG 实际部署场景（020402 N6/Gi/SGi IPv6 组网），脚本显式配 VRFNAME=VPN_CN 等非默认 VPN，用于在指定 VPN 范围内记录路径 MTU。
+  - 配默认值（_public_）：命令真相 VRFNAME optional 默认 _public_，表示本端面向公网的 IPv6 路径 MTU（不绑具体 VPN）。UDG 当前激活脚本未走此路径，但能力上命令支持。
+  UDG 当前 1 特性(020402)走"配 VPN"路径；命令真相允许省略走默认 _public_。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+options:
+  - option_id: opt-vrfname-explicit
+    option_name: 显式配 VPN
+    option_value: explicit
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00116:VRFNAME, effect_type: sets_requiredness, effect_detail: requiredness=required；UDG 实际部署显式配 VRFNAME=VPN_CN 等（020402 IPv6 组网脚本均显式传）}
+  - option_id: opt-vrfname-default
+    option_name: 配默认公网
+    option_value: default
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00116:VRFNAME, effect_type: sets_requiredness, effect_detail: requiredness=absent（不传，省略走默认 _public_）；本特性当前未走此路径，保留为能力选项}
+default_option: opt-vrfname-explicit
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00094~0-00097；0-00094/0-00095 已被 rule 占用(2-00084/2-00085)，本 DP 改用 0-00097）。管理 ADD IPV6PATHMTU 的 VRFNAME requiredness 跨配置口径分叉。
+  依据：命令真相 VRFNAME optional 默认 _public_（配公网路径 MTU 不传 VRFNAME）；UDG 实际部署 020402 脚本显式传 VRFNAME=VPN_CN（用于在指定 VPN 范围内记录路径 MTU）。
+  原 pass-1 录制：VRFNAME 静态 conditional（无法表达"显式必选"vs"省略走默认"的能力开关）。按 SKILL §4.5 升级为 decision_driven：VRFNAME binding requiredness 由本 DP 选，default_option=显式配 VPN（UDG 实际部署路径）。
+  本决策仅决定 VRFNAME 显式/省略，不影响 IPV6ADDRESS/PATHMTU（前者 reference 0-00061，后者 global_planned 均无分叉）。
+  注：VRFNAME binding source_ref=0-00071:L3VPNINST VRFNAME 不变；省略时取命令默认 _public_。

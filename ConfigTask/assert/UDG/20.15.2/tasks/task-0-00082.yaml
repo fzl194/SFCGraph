@@ -1,0 +1,71 @@
+task_id: UDG@20.15.2@Task@0-00082
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建静态BFD会话(IPv4)
+task_layer: atom
+task_intent: 新建IPv4静态BFD会话（SESSNAME+LOCALDISCR/REMOTEDISCR+DESTADDR4+VRFNAME），供静态路由绑定做链路检测
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD BFDSESSION
+status: inferred   # 命令级审查(2026-07-02)：单特性(GWFD-010155 静态+BFD)无分叉，补全 LINKTYPE/ONEARMECHO
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00082:SESSNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:SESSNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:ADDRTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:ADDRTYPE
+    binding_type: fixed
+    variable_source: local_planned
+    value: "IPv4"
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:CREATETYPE4
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:CREATETYPE4
+    binding_type: fixed
+    variable_source: local_planned
+    value: "SESS_STATIC"
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:ONEARMECHO
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:ONEARMECHO
+    binding_type: fixed
+    variable_source: local_planned   # 命令级审查(2026-07-02)：数据规划表+脚本显式 FALSE(静态非自协商双臂场景)
+    value: "FALSE"
+    requiredness: conditional   # CREATETYPE4=SESS_STATIC 时与单臂互斥
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:LINKTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:LINKTYPE
+    binding_type: fixed
+    variable_source: local_planned   # 命令级审查(2026-07-02)：数据规划表+脚本显式 IP(命令真相 required)
+    value: "IP"
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:LOCALDISCR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:LOCALDISCR
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（本地标识符须与远端配对）
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:REMOTEDISCR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:REMOTEDISCR
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:DESTADDR4
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:DESTADDR4
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（对端ePDG地址）
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+  - binding_id: UDG@20.15.2@Task@0-00082:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD BFDSESSION:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD L3VPNINST）
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md]
+notes: "GWFD-010155 静态+BFD 组网独有命令(缺省路由组网/OSPF组网不含)。SESSNAME 是 ADD SRROUTE.SESSIONNAME(0-00062) 的引用源。VRFNAME 引用 ADD L3VPNINST(0-00071)。审查结论(2026-07-02)：单特性无跨特性分叉，参数完整度/准确性通过——补全 LINKTYPE=IP(命令真相 required，原遗漏)、ONEARMECHO=FALSE(脚本显式)；MINTXINT/MINRXINT/DETECTMULTI/WTRTIMERINT/TOSEXP 等均默认(200/200/3/0/7)，特性脚本不显式配，不绑；IPv6/单臂Echo/源地址类参数(CREATETYPE6/DESTADDR6/SRCADDR4/SRCADDR6/MINECHORXINT/IFNAME)当前 IPv4 静态场景不涉及，不绑。rule 0-00186=前置依赖 SET BFD 全局使能(0-00073)；rule 0-00187=记录数上限7200/4096；rule 0-00188=LOCALDISCR/REMOTEDISCR 两端交叉配对(静态非自协商)。命令级审查(2026-07-02)。"

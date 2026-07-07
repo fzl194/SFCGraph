@@ -1,0 +1,21 @@
+task_id: UNC@20.15.2@Task@0-00022
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHGTARI
+task_layer: atom
+task_intent: 配置费率时段（工作日/周休日/节假日，与 SET CHGWKDY + ADD CHGHOLI 配合）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHGTARI
+status: inferred
+source_evidence_ids:
+  - 增加费率时段配置(ADD CHGTARI)_26305208.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00022:TT", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGTARI:TT", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00022:ST", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGTARI:ST", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00022:ET", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGTARI:ET", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00022:CC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGTARI:CC", binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费费率切换（SGSN）_01731138.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00022:TARIACCFLG", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGTARI:TARIACCFLG", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [增加费率时段配置(ADD CHGTARI)_26305208.md]}
+notes: |
+  UNC atom batch3（2026-07-06），手写自证据包 ADD_CHGTARI.md（1 特性 WSFD-011201 SGSN，5 参）。
+  SGSN 专用。TT=费率类型(WORK/HOLIDAY/WEEKEND等)，ST/ET=起止时间(时&分&秒)，CC=计费属性。
+  notes：同 CC 同 TT 记录≤24，总≤288；TT+ST+ET+CC 唯一；同 CC 同 TT 时段不可重叠；时段≥10 分钟 → rule 0-00024。

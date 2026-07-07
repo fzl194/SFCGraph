@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00331
+owner_task_ref: UDG@20.15.2@Task@0-00065   # SET SRVCOMMONPARA (atom-挂 rule)
+rule_name: SET SRVCOMMONPARA 最大记录数1+高危+立即生效
+rule_type: cardinality_rule
+rule_scope: atom
+condition:
+  expression_type: none
+  expression: ""
+constraint:
+  constraint_type: bound
+  target_refs:
+    - UDG@20.15.2@Task@0-00065:TUNNELMARKINGID
+    - UDG@20.15.2@Task@0-00065:HTTP2DEGRADESW
+    - UDG@20.15.2@Task@0-00065:FDMAXNUM
+    - UDG@20.15.2@Task@0-00065:USERFLOWADJSW
+  expression: "最大记录数为1(全局唯一); 本命令属于高危命令(可能会影响业务); 该命令执行后立即生效。本命令承载39个独立全局开关/参数(010201/110202/110910等特性按需设其一), 各特性requiredness=conditional。39个未绑参数按§4.1通用配置门槛均为冷门, 不进入atom binding。"
+violation_effect: 高危命令配置错误影响全局业务
+severity: critical
+rule_expression_mode: projected
+rule_source_kind: atom
+status: inferred   # 命令级审查(2026-07-02): 投影自命令 notes(规格1+高危+立即生效)
+source_evidence_ids:
+  - GWFD-010201/配置QoS与流量管理_03345155.md
+  - GWFD-110202/激活HTTP2.0协议回落_65157762.md
+  - GWFD-110910/激活支持Routing Behind MS_74264904.md

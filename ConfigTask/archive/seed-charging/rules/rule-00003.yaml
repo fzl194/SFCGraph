@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00003
+task_ref: UDG@20.15.2@Task@00001
+rule_name: URR关键参数跨网元一致
+rule_type: cross_nf_sync_rule
+rule_logic: URRID/USAGERPTMODE/OFFMETERINGTYPE/ONLMETERINGTYPE在SMF和UPF上的配置必须保持一致
+violation_effect: 计费不一致
+severity: critical
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

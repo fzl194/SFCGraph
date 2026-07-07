@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00016
+owner_task_ref: UNC@20.15.2@Task@0-00014
+rule_name: ADD CHARGECHAR 最多 1000 条
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CHARGECHAR]
+  expression: 记录数 ≤ 1000；CC 实例须绑到 APN 或 UserProfile 才生效（否则不生效）
+violation_effect: 超规格无法新增；未绑定的 CC 不生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加对本地用户、漫游用户、拜访用户所采用的计费属性（ADD CHARGECHAR）_09896809.md]

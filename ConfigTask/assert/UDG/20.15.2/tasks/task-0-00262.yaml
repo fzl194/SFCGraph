@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00262
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加ICAP本端信息
+task_layer: atom
+task_intent: "增加 UDG 与 ICAP Server 间逻辑接口相关的标识信息(ADD ICAPLOCALINFO: ICAPSERVERTYPE + USERAGENT)"
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ICAPLOCALINFO
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110471/配置到ICAP Server的互通数据_75400117.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00262:ICAPSERVERTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ICAPLOCALINFO:ICAPSERVERTYPE
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD ICAPSERVER 的 ICAPSERVERTYPE, URL_FILTERING)
+    source_ref: UDG@20.15.2@Task@0-00259:ICAPSERVERTYPE
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置到ICAP Server的互通数据_75400117.md]
+  - binding_id: UDG@20.15.2@Task@0-00262:USERAGENT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ICAPLOCALINFO:USERAGENT
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（User Agent, 字符串长度 1~63）
+    requiredness: required
+    source_evidence_ids: [GWFD-110471/配置到ICAP Server的互通数据_75400117.md]
+notes: "GWFD-110471(ICAP 互通 md)。ADD ICAPLOCALINFO 配置 UDG 本端 ICAP 标识信息(USERAGENT)。ICAPSERVERTYPE 引用 ADD ICAPSERVER(0-00259)。命令不在 mml_commands.jsonl(§6.A), 待 CommandGraph 抽取回填。命令级审查(2026-07-02)：2/3 参数绑定(无功能缺口)；缺 CFGDOMAINNAME 为 optional(命令真相)冷门不绑；ICAPSERVERTYPE 通过 reference 与 ICAPSERVER(0-00259)→ICAPLOCALINFO 编排形成 ICAPSERVERTYPE=URL_FILTERING 跨 atom 一致性(隐式通过 task_relations propagated_context 表达)。新增 atom rule 0-00394(cardinality 1 + 立即生效 + ICAPSERVER 前置依赖)。"

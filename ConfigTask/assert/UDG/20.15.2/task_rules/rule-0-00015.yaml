@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00015
+owner_task_ref: UDG@20.15.2@Task@2-00006
+rule_name: TCP重传识别 license 与内容计费前置依赖
+rule_type: dependency_rule
+rule_scope: feature
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Feature@GWFD-020307
+    - UDG@20.15.2@Task@2-00001
+  expression: 须先打开 license LKV3G5TCPR01(SET LICENSESWITCH)；并以 GWFD-020301 内容计费部署为基础(UserProfile/URR组已就绪)，再 SET URRGRPBINDING 绑定 TCP 重传 URR 组。
+violation_effect: TCP重传流量不计费
+severity: warning
+rule_expression_mode: projected
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-020307/激活TCP重传识别_88299168.md]

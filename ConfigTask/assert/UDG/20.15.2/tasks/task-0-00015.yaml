@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@0-00015
+nf: UDG
+version: "20.15.2"
+task_logical_name: 刷新生效
+task_layer: atom
+task_intent: 将新配置的Filter置为生效（SET REFRESHSRV，必须最后执行）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET REFRESHSRV
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00015:REFRESHTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET REFRESHSRV:REFRESHTYPE
+    binding_type: decision_driven   # 命令级审查(2026-07-02)：由 fixed:ALL 升级。③跨特性取值分叉：内容计费/融合/时长/流量/事件计费/ADC/Shaping/双故障/ProxyUPF=ALL(改Filter)，在线/离线计费/计费提醒/URL核减/Portal/DNS纠错/HTTP重定向/视频承载/FUP/Host识别/URL过滤=USERPROFILE(仅改UP/Rule)。DP 0-00060 选范围。
+    variable_source: decision_driven
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00060
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020300/配置Gy接口在线计费_83167737.md, GWFD-110281/配置用户Portal_66620114.md, GWFD-112000/激活双故障Bypass_14147877.md]
+notes: |
+  不执行 SET REFRESHSRV，FILTER 配置变更不生效。必须作为收尾最后一步（must_be_last）。
+  命令级审查(2026-07-02)：REFRESHTYPE 由 fixed:ALL 升级为 decision_driven(DP 0-00060)。③证据 29 特性中 ALL 与 USERPROFILE 明显分叉(改 Filter→ALL；仅改 UserProfile/Rule→USERPROFILE)。ALL 为安全默认(刷新全集)。高危+must_be_last 行为约束投影至 rule 0-00134。

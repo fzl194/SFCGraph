@@ -1,0 +1,43 @@
+task_id: UDG@20.15.2@Task@0-00049
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置APN的QoS带宽控制属性
+task_layer: atom
+task_intent: 在指定APN下绑定上下行带宽控制方式（CARSHAPEUL/CARSHAPEDL=CAR或SHAPE），实现带宽接入控制
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNQOSATTR
+status: draft   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)。命令级审查(2026-07-02): 无缺口；投影 10000上限+新激活用户生效→rule 0-00153
+source_evidence_ids: [GWFD-010151/激活接入控制_69675201.md, GWFD-020381/激活会话类QoS保证（PGW-U）_70910228.md, GWFD-010201/配置QoS与流量管理_03345155.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00049:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNQOSATTR:APN
+    binding_type: reference
+    variable_source: reference   # APN 引用已配置的 ADD APN
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-010151/激活接入控制_69675201.md]
+  - binding_id: UDG@20.15.2@Task@0-00049:CARSHAPESWUL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNQOSATTR:CARSHAPESWUL
+    binding_type: fixed
+    value: ENABLE   # 任务示例脚本固定 ENABLE(开启上行带宽控制开关)
+    requiredness: required
+    source_evidence_ids: [GWFD-010151/激活接入控制_69675201.md]
+  - binding_id: UDG@20.15.2@Task@0-00049:CARSHAPEUL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNQOSATTR:CARSHAPEUL
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；CAR=超出丢弃, SHAPE=超出缓存整形
+    requiredness: required
+    source_evidence_ids: [GWFD-010151/激活接入控制_69675201.md]
+  - binding_id: UDG@20.15.2@Task@0-00049:CARSHAPESWDL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNQOSATTR:CARSHAPESWDL
+    binding_type: fixed
+    value: ENABLE   # 任务示例脚本固定 ENABLE
+    requiredness: required
+    source_evidence_ids: [GWFD-010151/激活接入控制_69675201.md]
+  - binding_id: UDG@20.15.2@Task@0-00049:CARSHAPEDL
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNQOSATTR:CARSHAPEDL
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-010151/激活接入控制_69675201.md]
+notes: "GWFD-010151。APN 引用 ADD APN(0-00020)。数据规划表仅列 CARSHAPEUL/CARSHAPEDL(取值CAR)，任务示例脚本额外含 CARSHAPESWUL/CARSHAPESWDL=ENABLE 开关——本 atom 全录以保正向实例化可复现脚本。CAR vs SHAPE 为带宽控制方式分叉(数据规划表本场景取 CAR=超出丢弃)。"

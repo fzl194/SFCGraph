@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00166
+owner_task_ref: UDG@20.15.2@Task@0-00048   # 挂 atom STR PDNROUTETST
+rule_name: STR PDNROUTETST 高危命令可能去活在线用户
+rule_type: safety_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: side_effect_warning
+  target_refs:
+    - UDG@20.15.2@MMLCommand@STR PDNROUTETST
+  expression: "该命令属于高危命令，可能会导致在线用户被去活，请谨慎使用（命令 notes）。具体风险路径：SRCIPV4ADDR 若填已在线用户 IP，执行命令会导致该在线用户被去激活；建议 SRCIPV4ADDR 取空闲 IP。"
+violation_effect: 在线用户被去激活（业务中断）
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010108/激活用户面地址自动检测_04636908.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '本命令属于高危命令，此命令可能会导致在线用户被去活' + SRCIPV4ADDR 参数说明 '如果已经是在线用户IP，执行命令会导致在线的用户被去激活'。task_category=activate(运行态探测)，区别于配置态 ADD/SET。"

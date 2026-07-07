@@ -1,0 +1,59 @@
+task_id: UNC@20.15.2@Task@0-00026
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置DIAMPEERADDR
+task_layer: atom
+task_intent: 配置 Diameter 链路对端地址（PCRF/OCS/DRA/AAA 主机的地址类型+IP/SCTP端点），为 Diameter 链路建立提供对端信息
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD DIAMPEERADDR
+status: inferred
+source_evidence_ids:
+  - 增加Diameter对端地址（ADD DIAMPEERADDR）_09897257.md
+parameter_bindings:
+  - binding_id: UNC@20.15.2@Task@0-00026:HOSTNAME
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:HOSTNAME
+    binding_type: reference             # 已配置数据中获取（对端 Diameter 主机已由 ADD PCRF/ADD OCS/ADD DRA/ADD DIAMETERAAA 配置）
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD PCRF:HOSTNAME   # 占位：实际取自 ADD PCRF/ADD OCS/ADD DRA/ADD DIAMETERAAA 之一（按对接实体）
+    requiredness: required
+    source_evidence_ids: [WSFD-109101/配置与PCRF对接数据_30805096.md, WSFD-109001/配置普通在线计费实例_95923459.md]
+  - binding_id: UNC@20.15.2@Task@0-00026:ADDRTYPE
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:ADDRTYPE
+    binding_type: decision_driven       # 与对端协商；取值 IPv4/IPv6/SCTP 分叉下游地址参数 → 决策点 dp-0-00002
+    variable_source: peer_planned
+    decision_ref: UNC@20.15.2@DecisionPoint@0-00002
+    requiredness: required
+    source_evidence_ids: [WSFD-104508/配置Gx over SCTP功能_30442391.md, WSFD-109001/配置到OCS的数据(静态路由+BFD组网)_95923542.md]
+  - binding_id: UNC@20.15.2@Task@0-00026:IPV4ADDRESS
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:IPV4ADDRESS
+    binding_type: variable              # conditional；ADDRTYPE=IPv4 时使用；全网/对端规划对端 IPv4
+    variable_source: global_planned
+    requiredness: conditional
+    source_evidence_ids: [WSFD-109001/配置到OCS的数据(静态路由+BFD组网)_95923542.md, WSFD-109101/Gx Failover功能_31422950.md]
+  - binding_id: UNC@20.15.2@Task@0-00026:IPV6ADDRESS
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:IPV6ADDRESS
+    binding_type: variable              # conditional；ADDRTYPE=IPv6 时使用；对端规划 IPv6
+    variable_source: peer_planned
+    requiredness: conditional
+    source_evidence_ids: [增加Diameter对端地址（ADD DIAMPEERADDR）_09897257.md]
+  - binding_id: UNC@20.15.2@Task@0-00026:PORT
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:PORT
+    binding_type: variable              # conditional；ADDRTYPE=IPv4/IPv6(IP 类型)时使用；默认 3868，全网规划
+    variable_source: global_planned
+    requiredness: conditional
+    source_evidence_ids: [WSFD-109001/配置到OCS的数据(静态路由+BFD组网)_95923542.md, WSFD-011133/激活Gy over DRA（静态路由+BFD组网）_29725460.md]
+  - binding_id: UNC@20.15.2@Task@0-00026:SCTPENDPOINT
+    parameter_ref: UNC@20.15.2@CommandParameter@ADD DIAMPEERADDR:SCTPENDPOINT
+    binding_type: reference             # 已配置数据中获取（SCTP 端点已由 ADD SCTPENDPOINT 配置）；ADDRTYPE=SCTP 时使用
+    variable_source: reference
+    source_ref: UNC@20.15.2@CommandParameter@ADD SCTPENDPOINT:SCTPENDPOINT
+    requiredness: conditional
+    source_evidence_ids: [WSFD-104508/配置Gx over SCTP功能_30442391.md, WSFD-011133/激活Gy over DRA（静态路由+BFD组网）_29725460.md]
+notes: |
+  UNC atom batch3（2026-07-06），手写自证据包 ADD_DIAMPEERADDR.md（8 特性用，6 参）—— Diameter 族叶节点命令。
+  ADDRTYPE 为模式开关（IPv4/IPv6/SCTP），分叉下游地址参数集 → 决策点 dp-0-00002（三选一）：
+    - IPv4/IPv6 → IPV4ADDRESS/IPV6ADDRESS + PORT(默认3868)
+    - SCTP → SCTPENDPOINT(引用 ADD SCTPENDPOINT)
+  HOSTNAME=reference（对端主机已由 ADD PCRF/ADD OCS/ADD DRA/ADD DIAMETERAAA 之一配置，source_ref 占位 ADD PCRF）。
+  范式跨 Gx/Gy/S6b/3GPP AAA/DRA 五类对接一致。notes 投影：最多 510 条；单 PCRF/OCS/DRA 主机≤20 IP 或≤20 SCTP 端点；
+  单 AAA 主机≤2 IP 或≤2 SCTP 端点；主机不存在则不可配 → rule 0-00028 cardinality。§6.B 见全局 rule 0-00001。

@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00403
+owner_task_ref: UDG@20.15.2@Task@0-00201   # 挂 atom ADD MQCCLASSIFIER
+rule_name: ADD MQCCLASSIFIER 最大记录数规格
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD MQCCLASSIFIER
+  expression: "ADD MQCCLASSIFIER 命令最大记录数为 10239；超过规格新增失败。命令执行后立即生效。"
+violation_effect: 超规格新增失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "命令级审查(2026-07-02) 补审新建。投影自命令 notes '该命令最大记录数为10239'+'执行后立即生效'。MQCCLASSIFIER 为 CB 对的 C 侧(流分类)，经 ADD QOSRULEACL 绑定 ACL 规则组，最终由 MQCPOLICYNODE 挂入流策略。"

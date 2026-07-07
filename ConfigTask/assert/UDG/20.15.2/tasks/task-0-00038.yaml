@@ -1,0 +1,66 @@
+task_id: UDG@20.15.2@Task@0-00038
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置QoS属性
+task_layer: atom
+task_intent: 配置QoS属性(ADD QOSPROP)，定义上下行保证/最大比特率(GBR/MBR)及关联的 QoS URR；供 PCCPOLICYGRP 引用
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD QOSPROP
+status: inferred   # 命令在 mml_commands.jsonl；CommandParameter 结构化对象待 CommandGraph 抽取(§6-B)
+source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md, GWFD-020358/配置三四层业务触发的QOS保证_80318438.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00038:QOSPROPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:QOSPROPNAME
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00038:QOSURRNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:QOSURRNAME
+    binding_type: reference
+    variable_source: reference   # 命令 parameter_description: 本端规划(本特性 md)；命令明示 QOSURRNAME 须为已存在 QoS URR(ADD URR USAGERPTMODE=QOS)
+    requiredness: conditional
+    source_ref: UDG@20.15.2@Task@0-00001:URRNAME
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00038:GBRUPLKVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:GBRUPLKVALUE
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；取值 0~20000000(kbps)
+    requiredness: optional
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00038:GBRDNLKVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:GBRDNLKVALUE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；取值 0~20000000(kbps)
+    requiredness: optional
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00038:MBRUPLKVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:MBRUPLKVALUE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；取值 0~20000000(kbps)
+    requiredness: optional
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00038:MBRDNLKVALUE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:MBRDNLKVALUE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；取值 0~20000000(kbps)
+    requiredness: optional
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00038:DECOUPLINGSW
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:DECOUPLINGSW
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；DISABLE/ENABLE
+    requiredness: optional
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00038:KEYFLOWDETECTSW
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSPROP:KEYFLOWDETECTSW
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；DISABLE/ENABLE
+    requiredness: optional
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+notes: |
+  GWFD-020358 业务触发的QoS保证专属(L7/L3L4 共用)。命令 ADD QOSPROP 在 mml_commands.jsonl，未在 by_command 复用索引(§6-B)。
+  本 atom 录 QoS保证核心参数(QOSPROPNAME/四比特率/QOSURRNAME)+ 解耦/关键流开关；条件可选 KEYFLOWTIME/KEYFLOWSPEED 待后续特性揭示。
+  QOSURRNAME 须引用 ADD URR(USAGERPTMODE=QOS) 配置的 QoS URR——静态投影为 reference binding。
+  QoS URR 事件上报模式(ADD URR USAGERPTMODE=QOS)是本特性强约束(rule 0-00027)。
+  命令级审查(2026-07-02)：binding 数核对=8(命中真相 8 项)，未含 KEYFLOWTIME/KEYFLOWSPEED/CFGDOMAINNAME(均冷门 optional/条件/枚举，§4.3 ③ 缺口标注)；状态保持 inferred(原已 inferred)；无新增 rule/DP(主约束 rule 0-00027 已覆盖跨特性上报模式强约束+最大记录数)。

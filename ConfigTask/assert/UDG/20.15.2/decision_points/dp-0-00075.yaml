@@ -1,0 +1,62 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00075
+owner_task_ref: UDG@20.15.2@Task@0-00062   # 挂 atom（命令级：IPv4 静态路由场景选择）
+decision_name: ADD SRROUTE 场景选择
+decision_question: 该 IPv4 静态路由用于哪种场景？（决定 PREFIX/VRFNAME/IFNAME/BFDENABLE/NEXTHOP/DESTVRFNAME/SESSIONNAME 的取源与是否必填）
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN缺省路由组网）_72489253.md
+  - GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（静态路由+BFD组网）_72489255.md
+  - IPFD-015002/激活支持GRE_06422610.md
+  - IPFD-015004/激活IPsec功能（GRE over IPsec）_01_10006.md
+options:
+  - option_id: opt-srroute-redundancy-redirect
+    option_name: 冗余备份重定向路由(GWFD-010107)
+    option_value: REDUNDANCY_REDIRECT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:PREFIX, effect_type: sets_value_pattern, effect_detail: 引用 0-00055 重定向 IPv4/32}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:VRFNAME, effect_type: sets_value_pattern, effect_detail: 引用 0-00041 VPNINST}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:IFNAME, effect_type: sets_value_pattern, effect_detail: 引用 0-00056 GRE Tunnel}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:BFDENABLE, effect_type: sets_value_pattern, effect_detail: BFDENABLE=FALSE（可选下行缺省低优先级路由场景）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:NEXTHOP, effect_type: sets_value_pattern, effect_detail: 不配置}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:DESTVRFNAME, effect_type: sets_value_pattern, effect_detail: 不配置}
+  - option_id: opt-srroute-vpn-default
+    option_name: VPN缺省/明细路由(GWFD-010155 缺省路由组网)
+    option_value: VPN_DEFAULT
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:PREFIX, effect_type: sets_value_pattern, effect_detail: peer_planned（缺省 0.0.0.0 或明细网段）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:VRFNAME, effect_type: sets_value_pattern, effect_detail: 引用 L3VPNINST 0-00071（如 vpn-s2b）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:IFNAME, effect_type: sets_value_pattern, effect_detail: fixed Invalid0}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:NEXTHOP, effect_type: adds, effect_detail: 必填 peer_planned}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:DESTVRFNAME, effect_type: adds, effect_detail: 可填（如 _public_）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:BFDENABLE, effect_type: sets_value_pattern, effect_detail: 不配置（非 BFD 组网）}
+  - option_id: opt-srroute-static-bfd
+    option_name: 静态路由+BFD(GWFD-010155 静态路由+BFD组网)
+    option_value: STATIC_BFD
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:BFDENABLE, effect_type: sets_value_pattern, effect_detail: BFDENABLE=TRUE}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:SESSIONNAME, effect_type: adds, effect_detail: 必填，引用 0-00082 BFD 会话}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:NEXTHOP, effect_type: adds, effect_detail: 必填 peer_planned}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:PREFIX, effect_type: sets_value_pattern, effect_detail: peer_planned}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:IFNAME, effect_type: sets_value_pattern, effect_detail: fixed Invalid0}
+  - option_id: opt-srroute-gre-tunnel
+    option_name: GRE隧道间静态路由(IPFD-015002)
+    option_value: GRE_TUNNEL_ROUTE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:PREFIX, effect_type: sets_value_pattern, effect_detail: peer_planned（对端网段）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:IFNAME, effect_type: sets_value_pattern, effect_detail: 引用 0-00056 GRE Tunnel}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:VRFNAME, effect_type: sets_value_pattern, effect_detail: 不配置（公网）}
+  - option_id: opt-srroute-ipsec
+    option_name: IPsec引流静态路由(IPFD-015004)
+    option_value: IPSEC_ROUTE
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:VRFNAME, effect_type: sets_value_pattern, effect_detail: vrf1}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:DESTVRFNAME, effect_type: adds, effect_detail: 可填（如 vrf1）}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:NEXTHOP, effect_type: adds, effect_detail: 必填 peer_planned}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:IFNAME, effect_type: sets_value_pattern, effect_detail: Tunnel10/Invalid0}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00062:PREFERENCE, effect_type: sets_value_pattern, effect_detail: PREFERENCE=60}
+default_option: opt-srroute-redundancy-redirect
+notes: "命令级审查(2026-07-02)。PREFIX/VRFNAME/IFNAME 跨场景分叉取源，binding 级单 source_ref(schema 限制)默认=010107，各场景覆盖见 impacts。BFDENABLE 分叉(FALSE/TRUE)由本 DP 驱动(原 fixed FALSE 对静态+BFD 场景错误)。010155 静态+BFD 场景亦由 feature 级 DP dp-0-00017(opt-route-static-bfd-ipv4) 选定，两者协同。"

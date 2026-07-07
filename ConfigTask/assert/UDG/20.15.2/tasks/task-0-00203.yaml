@@ -1,0 +1,38 @@
+task_id: UDG@20.15.2@Task@0-00203
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加流策略并绑定CB对(MQCPOLICY+NODE)
+task_layer: atom
+task_intent: 增加MQC流策略并经 MQCPOLICYNODE 绑定流分类(C)与流行为(B)构成 CB 对。一个流策略可挂多个 CB 节点(按 PRECEDENCE 优先级)
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD MQCPOLICY
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred；IPFD命令；CommandParameter 待抽取(缺参数)
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00203:POLICYNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MQCPOLICY:POLICYNAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00203:CLASSIFIERNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MQCPOLICYNODE:CLASSIFIERNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD MQCCLASSIFIER:CLASSIFIERNAME (0-00201)
+    source_ref: UDG@20.15.2@Task@0-00201:CLASSIFIERNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00203:BEHAVIORNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MQCPOLICYNODE:BEHAVIORNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD MQCBEHAVIOR:BEHAVIORNAME (0-00199)
+    source_ref: UDG@20.15.2@Task@0-00199:BEHAVIORNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00203:PRECEDENCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD MQCPOLICYNODE:PRECEDENCE
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；多 CB 节点优先级，值小优先
+    requiredness: optional
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "聚合 atom: 含 ADD MQCPOLICY(创建策略) + ADD MQCPOLICYNODE(绑CB对)。CB节点 PRECEDENCE 决定多规则匹配顺序。CommandParameter 待抽取。命令级审查(2026-07-02) 补审：缺口 2(STCENABLE/SHAREMODE)均为 ADD MQCPOLICY 命令真相 optional 且 IPFD-012001 未用到(统计使能/共享模式为冷门)，按'通用配置'门槛不绑。CB 对引用链(0-00201 CLASSIFIERNAME→0-00199 BEHAVIORNAME→0-00203 绑定)已正确建模为 reference。补 atom rule 0-00404(cardinality 1023 + CB 前置: MQCCLASSIFIER/MQCBEHAVIOR 须先存在)。注：任务简报提及'CBNODESEQ/CBNODEPOLICY'经核 MQCPOLICYNODE 实际参数为 CLASSIFIERNAME/BEHAVIORNAME/PRECEDENCE(无 CBNODESEQ/CBNODEPOLICY)。"

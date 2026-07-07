@@ -1,0 +1,97 @@
+task_id: UDG@20.15.2@Task@0-00198
+nf: UDG
+version: "20.15.2"
+task_logical_name: 增加高级ACL规则(VNRS IPv4)
+task_layer: atom
+task_intent: "增加VNRS微服务的高级IPv4 ACL规则(五元组匹配: 协议/源IP/源反掩码/目的IP/目的反掩码/端口段)。QoS复杂流分类 与 IPFD-012002 ACL 共享"
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ACLRULEADV4
+status: inferred   # 命令级审查(2026-07-02): binding 准确+补 ACLSRCPORTOP/ACLDESTPORTOP(TCP/UDP时必选);IPFD命令CommandParameter 缺(rule 0-00075 标记)
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md, IPFD-012002/激活支持ACL_06381760.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD ACLGROUP:ACLNAME (0-00197)
+    source_ref: UDG@20.15.2@Task@0-00197:ACLNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md, IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLRULENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLRULENAME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLACTION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLACTION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (Permit/Deny)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLPROTOCOL
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLPROTOCOL
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；0=IP
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLSOURCEIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLSOURCEIP
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划(源端主机IP)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md, IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLSRCWILD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLSRCWILD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(反掩码，与源IP配套)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLDESTIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLDESTIP
+    binding_type: variable
+    variable_source: global_planned   # 全网规划(目的端主机IP)
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLDESTWILD
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLDESTWILD
+    binding_type: variable
+    variable_source: global_planned   # 全网规划
+    requiredness: required
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLSRCPORTBEGIN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLSRCPORTBEGIN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLDESTPORTBEGIN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLDESTPORTBEGIN
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLSRCPORTOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLSRCPORTOP
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效(Lt/Gt/Eq/Neq/Range)
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLDESTPORTOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLDESTPORTOP
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；TCP/UDP协议时生效(Lt/Gt/Eq/Neq/Range)
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLSRCPORTEND
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLSRCPORTEND
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；ACLSRCPORTOP=Lt/Range时必填
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+  - binding_id: UDG@20.15.2@Task@0-00198:ACLDESTPORTEND
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ACLRULEADV4:ACLDESTPORTEND
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；ACLDESTPORTOP=Lt/Range时必填
+    requiredness: conditional
+    source_evidence_ids: [IPFD-012002/激活支持ACL_06381760.md]
+notes: "高级IPv4 ACL规则。基本ACL只能基于源IP匹配(ACLRULEBAS4)，高级基于五元组。范围段3000-3999。源/目的IP及反掩码取自全网规划(需与对端主机IP一致)，规则行为/协议/端口取本端规划。命令级审查(2026-07-02): 补绑 ACLSRCPORTOP/ACLDESTPORTOP(TCP/UDP 时必选)+ ACLSRCPORTEND/ACLDESTPORTEND(PORTOP=Lt/Range时必填)，③ TCP/UDP场景必填；ACLRULEID/ACLFRAGTYPE/VRFNAME/ACLRULEDESCRIPTION/ACLPRECEDENCE/ACLTOS/ACLDSCP/ACLICMPNAME/ACLICMPTYPE/ACLICMPCODE/ACLSYNFLAG/ACLTTLOP/ACLTTL/ACLTTLEND ③ 未使用→不绑(冷门/垂直场景)；WebProxy 2-00031 路由策略引用 ACLRULEADV4 通过 0-00203 QOSRULEACL 跨 atom 引用(0-00198:ACLNAME)。WebProxy SVRIP/HOSTNAME 等高级匹配维度不在 ACLRULEADV4 范畴(FILTER/SVRIP 走 0-00004 ADD FILTER,见 §B 表)。执行后立即生效+最大记录数65535+前置 ACLGROUP→rule 0-00075/0-00076 投影。CommandParameter 待抽取。"

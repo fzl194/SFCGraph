@@ -1,0 +1,25 @@
+task_id: UDG@20.15.2@Task@0-00222
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置APN单用户五元组上限
+task_layer: atom
+task_intent: 配置指定 APN 下单用户所有业务允许创建的五元组最大数目(FDMAXNUM)，支撑 Routing Behind MS 多终端接入场景
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET APNFLOWMAXNUM
+status: inferred   # 命令级审查(2026-07-02) 补审 draft→inferred
+source_evidence_ids: [GWFD-110910/激活支持Routing Behind MS_74264904.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00222:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNFLOWMAXNUM:APN
+    binding_type: reference
+    variable_source: reference   # APN 引用已配置的 ADD APN
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-110910/激活支持Routing Behind MS_74264904.md]
+  - binding_id: UDG@20.15.2@Task@0-00222:FDMAXNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET APNFLOWMAXNUM:FDMAXNUM
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(APN级单用户五元组上限，须 ≥ 全局 SRVCOMMONPARA.FDMAXNUM)
+    requiredness: required
+    source_evidence_ids: [GWFD-110910/激活支持Routing Behind MS_74264904.md]
+notes: "SET APNFLOWMAXNUM(单命令原子，本特性专属)。APN 引用 ADD APN(0-00020)；FDMAXNUM 来源=本端规划。须与全局 SET SRVCOMMONPARA.FDMAXNUM 协同(全局级 ≥ APN级)。CommandParameter 待 CommandGraph 抽取(§6.B)。命令级审查(2026-07-02) 补审：参数完整(2/2 无缺口)；variable_source 校准——APN reference(数据规划表'已配置数据中获取'，③优先于命令真相 global_planned)、FDMAXNUM local_planned 一致。补 atom rule 0-00405(cardinality 10000 + 前置 APN 须存在 + 每 APN 初始 65535 + 仅对新接入用户生效)。"

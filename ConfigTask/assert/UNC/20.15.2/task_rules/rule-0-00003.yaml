@@ -1,0 +1,19 @@
+rule_id: UNC@20.15.2@TaskRule@0-00003
+owner_task_ref: UNC@20.15.2@Task@0-00003   # 挂 ADD AMUEPLCYCTRL atom
+rule_name: ADD AMUEPLCYCTRL 最多 128 条记录 + 切片群组优先级
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD AMUEPLCYCTRL]
+  expression: >-
+    AMUEPLCYCTRL 记录数 ≤ 128。
+    基于网络切片群组的控制仅适用于整网用户，且优先级低于基于用户属性（号段）的控制。
+    基于 NSSAI 建 AM/UE 策略时需用 ADD PLCYNSGRPMEM 把所有可用切片配进同一群组。
+violation_effect: 超过规格无法新增；切片群组与用户属性并存时按用户属性生效
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加AM策略和UE策略控制参数（ADD AMUEPLCYCTRL）_09652143.md]

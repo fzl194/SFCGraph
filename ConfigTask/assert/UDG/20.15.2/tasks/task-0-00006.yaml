@@ -1,0 +1,23 @@
+task_id: UDG@20.15.2@Task@0-00006
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置七层过滤器
+task_layer: atom
+task_intent: 配置七层URL过滤条件（ADD L7FILTER）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD L7FILTER
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00006:L7FILTERNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:L7FILTERNAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00006:SUBL7FLTNAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:SUBL7FLTNAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00006:URLTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:URLTYPE, binding_type: fixed, value: URL, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00006:URL, parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:URL, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00006:ISREFEREREN, parameter_ref: UDG@20.15.2@CommandParameter@ADD L7FILTER:ISREFEREREN, binding_type: decision_driven, decision_ref: UDG@20.15.2@DecisionPoint@0-00044, variable_source: local_planned, requiredness: conditional, source_evidence_ids: [GWFD-020304/激活关联URL核减_83120117.md]}
+rules: [UDG@20.15.2@TaskRule@0-00122]
+notes: |
+  ADD L7FILTER 七层 URL 过滤条件。P0 收敛：合并原 variant 0-00026（GWFD-020304 ISREFEREREN=ENABLE 关联URL核减变体）。
+  ISREFEREREN 为 decision_driven（DP 0-00044），默认 opt-referer-off 不配置（向后兼容已有引用特性）；GWFD-020304 选 opt-referer-on 使能 Referer 关联计费。
+  其余参数 L7FILTERNAME/SUBL7FLTNAME/URL 本端规划，URLTYPE 固定 URL。
+  命令级审查(2026-07-02)：binding 已完善（5参数覆盖14特性主体用法）。补 rule-0-00122(60s生效+20000上限+50000子过滤器/L7Filter)。
+  冷门参数不绑：HOST/USERAGENT/METHODTYPE/MMSBLURMATCH/XHEADERNAME/CFGDOMAINNAME——14特性均未用到（HOST类过滤由 L7FILTER URL 通配覆盖）。

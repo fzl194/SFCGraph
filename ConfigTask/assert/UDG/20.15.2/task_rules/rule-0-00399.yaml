@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00399
+owner_task_ref: UDG@20.15.2@Task@0-00283   # 挂 atom SET RTSDNNPARA
+rule_name: SET RTSDNNPARA 规格 1 + 立即生效 + 系统初始记录默认值 + 公网/专网 UPF 双轨角色
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET RTSDNNPARA
+  expression: |
+    SET RTSDNNPARA 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    该命令执行后立即生效（命令 notes）。
+    该命令存在系统初始记录，参数的初始设置值如下表（命令 notes 系统默认值）。
+    公网 UPF 角色 mandatory：PUBLICNETSW/N4RPTSW/UEIPCONFLICTCHK/UEIPREALLOC/UEIPREALLOCNUM/UEIPCONFLICTPLY（5 参数 mandatory，UEIPREALLOCNUM/UEIPCONFLICTPLY 仅 UEIPREALLOC=ENABLE 时必填）。
+    专网 UPF 角色 mandatory：PRIVATENETSW；可选 NATALGPROTV4/NATALGPROTV6（IPv4/IPv6 NAT ALG 地址替换）。
+    缺 RPTCTRLINTERVAL（流控时间秒数，0~3600）/PKTPROCACTION（报文处理动作）/RESCHKINTERVAL（资源阈值核查间隔 120~1440 分钟）均为 optional（命令真相）冷门不绑。
+    跨场景取值由 atom-挂 DP 0-00152（公网 UPF/专网 UPF 角色）驱动。
+violation_effect: 上限超限→SET 失败；公网/专网角色参数错配→配置失效；缺 UEIPREALLOCNUM 配错→冲突重分配次数不对
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020531/激活通用DNN漫游分流_07687889.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 立即生效 + 系统初始记录 + 公网/专网 UPF 双轨角色。7 binding 改 decision_driven（PUBLICNETSW/PRIVATENETSW/UEIPCONFLICTCHK/UEIPREALLOC/UEIPCONFLICTPLY）由 atom-挂 DP 0-00152 编排；UEIPREALLOCNUM/N4RPTSW/NATALG* 保持 variable（N4RPTSW/NATALG 为条件配置，UEIPREALLOCNUM 在 UEIPREALLOC=ENABLE 时必填）。本 atom 仅约束总命令规格与立即生效；公网/专网角色参数 mandatory 编排由 DP 0-00152 表达。"

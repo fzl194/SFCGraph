@@ -7,12 +7,12 @@
 ## 总量
 | 层 | 数量 |
 |---|---|
-| feature | 10 |
+| feature | 11 |
 | compound | 4 |
 | atom | 187 |
-| **合计** | **201** |
+| **合计** | **202** |
 
-## feature（10）
+## feature（11）
 
 | 编号 | logical_name | status | ref |
 |---|---|---|---|
@@ -26,6 +26,7 @@
 | 2-00008 | 终端异常下行流量检测 | inferred | GWFD-020305 |
 | 2-00009 | 基于业务时长的计费 | inferred | GWFD-020302 |
 | 2-00010 | 基于业务流量的计费 | inferred | GWFD-020303 |
+| 2-00011 | 支持事件计费 | inferred | GWFD-020306 |
 
 ## compound（4）
 

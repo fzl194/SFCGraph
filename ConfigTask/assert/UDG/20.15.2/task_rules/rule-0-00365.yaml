@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00365
+owner_task_ref: UDG@20.15.2@Task@0-00131   # 挂 atom SET GLOBALL2TP
+rule_name: SET GLOBALL2TP 全局唯一实例 + 立即生效 + 系统初始记录
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00131
+  expression: |
+    SET GLOBALL2TP 该命令最大记录数为 1（全局唯一实例），同一时刻全网仅一组 L2TP 缺省属性。
+    立即生效：本命令执行后立即生效，AAA 下发或本地建隧道时立即读取新缺省值。
+    系统初始记录：存在系统初始记录，初始值为：LOCALNAME=空 / HELLOINTERVALSW=DISABLE / HELLOINTERVAL=无 / RETRYTIMES=无 / PPPMAGICNUMBER=DISABLE / MAXSENDWINSIZE=64 / INITTUNNELNUM=1 / MAXSESSIONNUM=32767 / INVTUNLEXISTDUR=0 / LNSDETECTINR=0 / LNSDETECTSW=DISABLE。
+    适用 NF：PGW-U、UPF。
+violation_effect: 超规格(多实例)新建失败；非立即生效会导致 L2TP 隧道参数未刷新
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/会话管理/L2TP隧道管理/L2TP缺省配置/设置L2TP配置（SET GLOBALL2TP）_35373521.md
+  - GWFD-020412/AAA下发L2TP属性方式激活L2TP VPN_41487855.md
+  - GWFD-020412/本地配置方式激活L2TP VPN_40342129.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 1 + 立即生效 + 系统初始记录表)。"

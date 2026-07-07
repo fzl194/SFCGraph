@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00002
+task_ref: UDG@20.15.2@Task@00101
+rule_name: 融合计费RGAPPLIED=DEFAULT时URRGROUP不能同时配在线离线
+rule_type: conditional_rule
+rule_logic: SMF融合计费时SET USRPROFCHARGE/SET APNCHARGECTRL/ADD CHARGEMETHOD的RGAPPLIED=DEFAULT时，URRGROUP下不能同时配离线和在线URR，否则计费冲突
+violation_effect: 计费冲突
+severity: critical
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00123
+owner_task_ref: UDG@20.15.2@Task@0-00007   # 挂 atom（ADD FLOWFILTER 流过滤器）
+rule_name: ADD FLOWFILTER 立即生效与记录数上限
+rule_type: operational_constraint
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: must_capacity_and_bind
+  expression: |
+    1. 该命令执行后立即生效。
+    2. FlowFilter 最大记录数 100000；超过规格 90% 上报 ALM-135602215 配置数量超阈值告警。阈值可由 MOD CFGTHRESHOLD 修改。
+    3. FLOWFILTER 必须至少绑定一个 filter（ADD FLTBINDFLOWF）或一个 l7filter（ADD PROTBINDFLOWF），否则所有报文都匹配不上该流过滤器，对应 Rule 无效。
+violation_effect: 容量超限告警 / Rule 无效配置（未绑定过滤条件）
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: |
+  命令级审查(2026-07-02)新增：投影自命令②notes 的规格/上限/绑定约束。
+  注：FLOWFILTER 必须绑定过滤条件的约束在 compound 层已有 rule-0-00004（owner=1-00002）；本 rule 为 atom 层补充容量与生效约束。

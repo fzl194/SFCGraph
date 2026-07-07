@@ -1,0 +1,28 @@
+decision_id: UNC@20.15.2@DecisionPoint@0-00003
+owner_task_ref: UNC@20.15.2@Task@0-00015
+decision_name: 用户计费方式使能选择（基于计费特征 CC）
+options:
+  - option_name: 在线计费（ONLINE）
+    impacts:
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:ONLINE, effect_type: sets_value_pattern, effect_detail: "=ENABLE"}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:OFFLINE, effect_type: sets_value_pattern, effect_detail: "=DISABLE"}
+      - {target_type: command, target_ref: UNC@20.15.2@MMLCommand@ADD OCS, effect_type: adds, effect_detail: 需配置 OCS Diameter 对接（DIAM 族 atom + ADD OCS / ADD OCSGROUP）}
+  - option_name: 离线计费（OFFLINE）
+    impacts:
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:ONLINE, effect_type: sets_value_pattern, effect_detail: "=DISABLE"}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:OFFLINE, effect_type: sets_value_pattern, effect_detail: "=ENABLE"}
+      - {target_type: command, target_ref: UNC@20.15.2@MMLCommand@ADD CGGROUP, effect_type: adds, effect_detail: 需配置 CG / CGGROUP 对接（离线话单）}
+  - option_name: 融合计费（CONVERGED）
+    impacts:
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:CONVERGED, effect_type: sets_value_pattern, effect_detail: "=ENABLE"}
+      - {target_type: command, target_ref: UNC@20.15.2@MMLCommand@ADD CCT, effect_type: adds, effect_detail: 需配置融合计费模板 CCT（阈值/配额/终结方式，见 atom 0-00009）}
+      - {target_type: parameter, target_ref: UNC@20.15.2@CommandParameter@ADD CHARGEMETHOD:RGAPPLIED, effect_type: adds, effect_detail: 条件出现，控 URRGROUP 选 URR（DEFAULT/ONLINERGONLY/OFFLINERGONLY）}
+default_option: 离线计费（OFFLINE）
+status: inferred
+source_evidence_ids: [增加计费方式（ADD CHARGEMETHOD）_09896795.md]
+notes: |
+  schema L670 明示"在线、离线、融合计费选择"为 DecisionPoint 典型用例——原 atom 把 ONLINE/OFFLINE/CONVERGED
+  当 3 个独立 variable 参数是错的，三选一互斥，实为同一决策的三个使能位。
+  跨命令传播：在线→OCS 链路族（DIAMPEERADDR/DIAMCONNGRP 等）；离线→CG 族；融合→CCT+URRGROUP。
+  与 ADD URR 的 dp-0-00001（URR 上报模式）关联：CHARGEMETHOD 定用户级方式，URR 定该 URR 上报粒度，
+  二者结果须一致 → rule 0-00017 consistency。

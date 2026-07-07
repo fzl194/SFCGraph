@@ -1,0 +1,20 @@
+rule_id: UDG@20.15.2@TaskRule@0-00191
+owner_task_ref: UDG@20.15.2@Task@0-00075   # 挂 atom ADD OSPFAREA
+rule_name: OSPF区域前置/规格/NSSA-Loopback发布约束
+rule_type: constraint_rule
+rule_scope: parameter
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: execution_constraint
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD OSPFAREA:PROCID
+    - UDG@20.15.2@CommandParameter@ADD OSPFAREA:AREAID
+    - UDG@20.15.2@CommandParameter@ADD OSPFAREA:AREATYPE
+  expression: "ADD OSPFAREA 须满足：(1) 前置——必须先执行 ADD OSPF 创建对应 OSPF 进程(PROCID)才能使用此命令；(2) OSPF区域实例数规格默认单进程50(实际以服务规格文件为准)，命令最大记录数8016；(3) 若 AREATYPE=NSSA，则必须配置 Loopback 地址并在 OSPF 进程中发布出去，否则会造成负载分担不生效，极端情况下业务受损；(4) AREATYPE 默认 Normal，可设 NSSA/Normal(NSSA 须配 Loopback 作为 FA)；(5) 认证类型 ADD OSPFAREAAUTH 为可选修饰命令。"
+violation_effect: 负载分担不生效 / 业务受损 / 区域创建失败 / 区域实例超规格
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes(前置 ADD OSPF/区域实例50/记录8016/NSSA须配Loopback发布否则业务受损) + ③GWFD-010155 md 说明 AREATYPE=NSSA|Normal。AREATYPE 不绑参(不在③数据规划表，仅 md 说明提及)，但其 NSSA 条件要求强烈(critical)，以 rule 投影。"

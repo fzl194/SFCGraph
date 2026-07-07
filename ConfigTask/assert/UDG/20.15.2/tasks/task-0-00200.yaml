@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@0-00200
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置QoS重定向下一跳动作
+task_layer: atom
+task_intent: 在流行为下配置重定向下一跳动作(可选流动作之一)。QoS复杂流分类主场景示例脚本采用该动作
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD QOSACTRDRNHP
+status: inferred   # IPFD命令；CommandParameter 待抽取(缺参数)
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00200:BEHAVIORNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSACTRDRNHP:BEHAVIORNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD MQCBEHAVIOR:BEHAVIORNAME (0-00199)
+    source_ref: UDG@20.15.2@Task@0-00199:BEHAVIORNAME
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00200:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSACTRDRNHP:IPVERSION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划 (IPv4/IPv6)
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+  - binding_id: UDG@20.15.2@Task@0-00200:NEXTHOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSACTRDRNHP:NEXTHOP
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(公网IP)
+    requiredness: required
+    source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "重定向下一跳流动作。NP卡场景不支持。与重标记/deny/级联/URPF/CAR 互斥(仅 permit 可共存)。CommandParameter 待抽取。命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00288(最大记录数 8192 + NP 卡不支持 + 重定向动作互斥 + IPVERSION/NEXTHOP 配套)；binding=3(命中真相 6 项中的 3 项主项)，未含 IFNAME/VRFNAME(命令真相 optional，冷门，§4.3 ③ 缺口标注)、NEXTHOP6(IPVERSION=IPv6 分支，§4.3 ③ 缺口标注)。"

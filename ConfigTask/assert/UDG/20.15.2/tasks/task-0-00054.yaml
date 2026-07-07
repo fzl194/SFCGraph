@@ -1,0 +1,42 @@
+task_id: UDG@20.15.2@Task@0-00054
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置GTP路径管理IP地址
+task_layer: atom
+task_intent: 增加需探测的对端网元GTP信令面/数据面IP地址段（黑白名单成员），受 SET UPGTPPATH.ECHOLISTSWITCH=ENABLE 门控
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ECHOIPLIST
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 5/5 已绑, IPVERSION 命令真相 global_planned 但 010102 场景本端规划(IPV4/IPV6 多值), 按 ③ 优先保留 local_planned
+source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00054:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ECHOIPLIST:IPVERSION
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(IPV4/IPV6)
+    requiredness: required
+    source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+  - binding_id: UDG@20.15.2@Task@0-00054:IPV4ADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ECHOIPLIST:IPV4ADDR
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(IPv4对端地址)
+    requiredness: conditional   # IPVERSION=IPV4 时必填
+    source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+  - binding_id: UDG@20.15.2@Task@0-00054:IPV4MASK
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ECHOIPLIST:IPV4MASK
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: conditional   # IPVERSION=IPV4 时必填
+    source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+  - binding_id: UDG@20.15.2@Task@0-00054:IPV6ADDR
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ECHOIPLIST:IPV6ADDR
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(IPv6对端地址)
+    requiredness: conditional   # IPVERSION=IPV6 时必填
+    source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+  - binding_id: UDG@20.15.2@Task@0-00054:IPV6MASK
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ECHOIPLIST:IPV6MASK
+    binding_type: variable
+    variable_source: local_planned   # 本端规划
+    requiredness: conditional   # IPVERSION=IPV6 时必填
+    source_evidence_ids: [GWFD-010102/配置GTP路径管理黑白名单_24082056.md]
+notes: "GWFD-010102。黑白名单成员IP地址段(每地址段一条ADD ECHOIPLIST)。IPv4/IPv6 参数集互斥(IPVERSION 决定 IPV4ADDR+IPV4MASK 或 IPV6ADDR+IPV6MASK)，requiredness=conditional。本 atom 受 SET UPGTPPATH(0-00051).ECHOLISTSWITCH=ENABLE 门控(rule 0-00033 binding_rule)。任务示例: 3条IPv4(192.168.1.10/10.10/100.10 掩码24) + 1条IPv6(fc00::1/64)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02): 0 缺口(bound 5/5=IPVERSION+IPV4ADDR+IPV4MASK+IPV6ADDR+IPV6MASK); IPV4/IPv6 二选一条件 requiredness 已正确(IPv4=IPV4ADDR+IPV4MASK, IPv6=IPV6ADDR+IPV6MASK)。IPVERSION 命令真相标 global_planned 但本特性 010102 数据规划表 IPV4/IPV6 均本端规划（多值），按 ③ 优先保留 local_planned。"

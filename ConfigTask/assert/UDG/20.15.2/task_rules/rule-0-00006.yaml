@@ -1,0 +1,19 @@
+rule_id: UDG@20.15.2@TaskRule@0-00006
+owner_task_ref: UDG@20.15.2@Task@1-00003
+rule_name: USERPROFILE/RULE 跨网元一致
+rule_type: cross_nf_sync_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: must_match
+  target_refs:
+    - UDG@20.15.2@CommandParameter@ADD USERPROFILE:USERPROFILENAME
+    - UDG@20.15.2@CommandParameter@ADD RULE:RULENAME
+    - UDG@20.15.2@CommandParameter@ADD RULE:POLICYTYPE
+  expression: USERPROFILE 名在 PCF/SMF/UPF 间一致；RULENAME 及 RULE 下 POLICYTYPE/POLICYNAME 在 SMF 和 UPF 上一致；不一致时 PCF 下发策略无法生效
+violation_effect: 策略无法生效
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]

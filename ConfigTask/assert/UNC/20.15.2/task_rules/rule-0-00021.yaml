@@ -1,0 +1,16 @@
+rule_id: UNC@20.15.2@TaskRule@0-00021
+owner_task_ref: UNC@20.15.2@Task@0-00019
+rule_name: ADD CHGHOLI 同 CC ≤50 / 总 ≤200 + 年月日CC 唯一
+rule_type: cardinality_rule
+rule_scope: task
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_count
+  target_refs: [UNC@20.15.2@MMLCommand@ADD CHGHOLI]
+  expression: 同一计费属性节假日 ≤50，总 ≤200；年/月/日/计费属性(CC) 唯一确定一条记录
+violation_effect: 超规格无法新增；重复记录失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [增加节假日配置(ADD CHGHOLI)_26145382.md]

@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00290
+owner_task_ref: UDG@20.15.2@Task@0-00204
+rule_name: 0-00204 最大记录数 131072 + 自动化配置维护助手前置 + LAYER 默认 default
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00204
+  expression: |
+    ADD QOSAPPLICATION(atom 0-00204) 配置约束：
+    (1) 上限：系统最大记录数为 131072(命令 notes 强约束)。
+    (2) 自动化配置前置：原始命令 md 明示'本命令参数参与自动化配置，请在下发本 MML 命令前使用 DSP OPSASSISTSTATE 命令查询自动化配置维护助手 autoscaling_autoconfig.py，确保当前设备不在自动化配置过程中'——同时执行会增加失败风险(命令 notes 强约束)。
+    (3) POLICYNAME 引用 ADD MQCPOLICY(0-00203) 流量策略名称：主场景示例 POLICYNAME=policy1。
+    (4) IFNAME 仅支持以太主接口/子接口(命令 md 提及)；主场景示例 IFNAME=Ethernet64/0/3。
+    (5) DIRECTION 报文方向：枚举(inbound/outbound)，本 atom 当前 binding requiredness=required 已正确投影。
+    (6) LAYER 层信息：枚举，默认 default(命令真相 optional)——本 atom 当前 binding 缺口按二次流分类场景补充(主场景单层)。
+    (7) 该命令执行后立即生效(命令 notes)。
+violation_effect: 上限超限→ADD 失败；未检查 OPSASSISTSTATE→自动化配置过程中本命令参数被自动覆盖，最终生效配置不可预期；LAYER 不配→默认 default 满足主场景，复杂分层场景需显式配
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [IPFD-012001/激活QoS复杂流分类功能（VNRS_VNFC）_13119479.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。LAYER 缺口按 §4.3 ③ 缺口标注(主场景默认值 default 满足)。"

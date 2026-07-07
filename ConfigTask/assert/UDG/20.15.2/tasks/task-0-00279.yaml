@@ -1,0 +1,45 @@
+task_id: UDG@20.15.2@Task@0-00279
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置大流优化参数
+task_layer: atom
+task_intent: 开启大流优化功能开关（FLOWOPTSW）及大流检测/守护调参；5G-A高通量会话特性激活核心开关
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET FLOWLETPARA
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-112002/激活5G-A高通量会话_20666173.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00279:FLOWOPTSW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FLOWLETPARA:FLOWOPTSW
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；5G-A高通量会话激活=ENABLE，关闭=DISABLE，检测=FLOWCHK
+    requiredness: optional   # 校正：命令真相为 optional
+    source_evidence_ids: [GWFD-112002/激活5G-A高通量会话_20666173.md]
+  - binding_id: UDG@20.15.2@Task@0-00279:THREADUPDINT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FLOWLETPARA:THREADUPDINT
+    binding_type: variable
+    variable_source: local_planned   # 命令 parameter_description: 本端规划；线程CPU更新间隔(整数 64~256ms)
+    requiredness: optional   # 校正：命令真相(无说明)
+    source_evidence_ids: [GWFD-112002/激活5G-A高通量会话_20666173.md]
+  - binding_id: UDG@20.15.2@Task@0-00279:FLOWCHKPPS
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FLOWLETPARA:FLOWCHKPPS
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；大流检测阈值(整数 50000~5000000包/秒)
+    requiredness: optional   # 校正：命令真相(无说明)
+    source_evidence_ids: [GWFD-112002/激活5G-A高通量会话_20666173.md]
+  - binding_id: UDG@20.15.2@Task@0-00279:FLOWGUARDPKTNUM
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FLOWLETPARA:FLOWGUARDPKTNUM
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；大流优化切换报文阈值(整数 0~65535包)
+    requiredness: optional   # 校正：命令真相(无说明)
+    source_evidence_ids: [GWFD-112002/激活5G-A高通量会话_20666173.md]
+  - binding_id: UDG@20.15.2@Task@0-00279:FLOWGUARDTIME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET FLOWLETPARA:FLOWGUARDTIME
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；大流优化切换保持时长(整数 5~500ms)
+    requiredness: optional   # 校正：命令真相(无说明)
+    source_evidence_ids: [GWFD-112002/激活5G-A高通量会话_20666173.md]
+notes: |
+  GWFD-112002 5G-A高通量会话专属核心开关。命令 SET FLOWLETPARA 在 mml_commands.jsonl，parameter_references 为空(§6-B)，参数从 parameter_description 文本抽取。
+  特性 md 仅显式列 FLOWOPTSW=ENABLE；其余大流调参(THREADUPDINT/FLOWCHKPPS/FLOWGUARDPKTNUM/FLOWGUARDTIME/CPUOVERLOADTHR)为可选优化项，特性 md 未列具体值，按 conditional 抽取并标 source_evidence_ids 指向特性 md(命令全集在此特性首次引用)。具体取值待现网调测确定。
+  命令级审查(2026-07-02)：5/7 参数绑定(无功能缺口)；缺 CPUOVERLOADTHR(50~90%)/CPUBIASDIFF(5~50%) 均为 optional(命令真相)冷门不绑(现网按需调测确定)。校正 requiredness：5 参数全部改为 optional(命令真相未明示必选，特性场景下一并配齐)；FLOWOPTSW 仍按本特性 ENABLE 显式填。新增 atom rule 0-00395(cardinality 1 + 立即生效 + 改参影响数据转发性能)。

@@ -1,0 +1,10 @@
+rule_id: UDG@20.15.2@TaskRule@00005
+task_ref: UDG@20.15.2@Task@00001
+rule_name: ADD URR配置数量上限
+rule_type: cardinality_rule
+rule_logic: ADD URR最大记录数65000，配置记录数大于规格90%时上报ALM-135602215告警
+violation_effect: 超规格告警
+severity: info
+rule_source_kind: config
+status: active
+source_evidence_ids: [部署UPF_28493406.md]

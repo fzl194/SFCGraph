@@ -1,0 +1,49 @@
+task_id: UDG@20.15.2@Task@0-00003
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置PCC策略组
+task_layer: atom
+task_intent: 配置PCC业务策略组，绑定URR组（与信令URR组）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD PCCPOLICYGRP
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00003:PCCPOLICYGRPNM
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:PCCPOLICYGRPNM
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+  - binding_id: UDG@20.15.2@Task@0-00003:URRGROUPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:URRGROUPNAME
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME
+    requiredness: conditional   # pass-3 演进(GWFD-020351)：纯策略控制可省；仅计费时必填(rule 0-00014)。计费特性始终计费→对其等效必填
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020351/配置动态PCC功能_74096530.md, GWFD-020351/配置本地PCC功能_74096529.md]
+  - binding_id: UDG@20.15.2@Task@0-00003:SIGURRGRPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:SIGURRGRPNAME
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00002:URRGROUPNAME
+    requiredness: conditional   # 异常场景配信令缺省URR组
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  # 命令级审查(2026-07-02)：补 2 个跨特性结构化引用参数(PCCACTPROPNAME/QOSPROPNAME)，均"已配置数据中获取"，与 URRGROUPNAME 同属引用绑定。其余 13 个缺口(EXTENDPROPNAME/FUPSESSIONEXC/TOKEN*/SIGNALASSOCIATE/ADCMUTEFLAG/HTTP2DEGRADESW/EVENTCHARGE*/MMSCHARGETYPE/CFGDOMAINNAME)为冷门枚举/Token开关，多数仅 ProxyUPF/双故障全量示例置默认值，按通用配置门槛不绑。
+  - binding_id: UDG@20.15.2@Task@0-00003:PCCACTPROPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:PCCACTPROPNAME
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00028:PCCACTPROPNAME   # 引用 ADD PCCACTIONPROP(atom 0-00028) 产出的动作属性名(IPv6SA/无线资源优化/ADC/ProxyUPF/双故障均用)
+    requiredness: conditional   # 命令真相 optional；仅需 PCC 动作属性的特性配
+    source_evidence_ids: [GWFD-020352/激活IPv6 SA_80136513.md, GWFD-110331/激活基于业务流标识的无线资源优化_51849611.md, GWFD-110357/激活增强的ADC基本功能_84866820.md, GWFD-112001/业务配置_80953432.md]
+  - binding_id: UDG@20.15.2@Task@0-00003:QOSPROPNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:QOSPROPNAME
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00038:QOSPROPNAME   # 引用 ADD QOSPROP(atom 0-00038) 产出的 QoS属性名(视频承载信令控制/双故障用)
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110302/激活基于上下行解耦的视频承载信令控制_62146691.md, GWFD-112000/激活双故障Bypass_14147877.md]
+notes: |
+  pass-3(GWFD-020351)：URRGROUPNAME required→conditional(纯策略控制可省，计费时必填，rule 0-00014)。顺带修正参数名拼写 PCCPOLICYGRNM→PCCPOLICYGRPNM(对齐 mml_commands；同步 0-00010 POLICYNAME source_ref)。
+  命令级审查(2026-07-02)：补 PCCACTPROPNAME/QOSPROPNAME 两结构化引用(跨特性③实证 IPv6SA/ADC/无线资源优化/ProxyUPF/双故障/视频承载)；其余 13 缺口按通用配置门槛不绑。规格 rule 0-00130(最大记录数40000) 已投影。

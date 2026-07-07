@@ -1,0 +1,32 @@
+task_id: UDG@20.15.2@Task@0-00068
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置QoS接口信任
+task_layer: atom
+task_intent: 在物理接口上绑定DS域并配置trust CoS（简单流分类），支持对报文优先级修改（入口/出口两方向均需绑定）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD QOSIFTRUST
+status: inferred   # 命令在 mml_commands；CommandParameter 结构化对象待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00068:DSNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSIFTRUST:DSNAME
+    binding_type: reference
+    variable_source: reference   # 引用 ADD QOSDIFFERSERV 的 DSNAME
+    source_ref: UDG@20.15.2@Task@0-00066:DSNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00068:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSIFTRUST:IFNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 本端规划, 使用 LST INTERFACE 查询获得
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME   # 引用 ADD INTERFACE(物理接口, 复用现有 atom)
+    requiredness: required
+    source_evidence_ids: [GWFD-010201/配置QoS与流量管理_03345155.md]
+  - binding_id: UDG@20.15.2@Task@0-00068:FLAG8021P
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD QOSIFTRUST:FLAG8021P
+    binding_type: variable
+    variable_source: local_planned   # 本端规划；802.1p映射仅子接口/GE主接口/Eth-Trunk主接口支持
+    requiredness: optional
+    source_evidence_ids: [IPFD-012001/激活QoS简单流分类特性（VNRS_VNFC）_13119472.md]
+notes: "GWFD-010201 / IPFD-012001。接口绑定DS域+trust CoS, 入口与出口两方向均执行一次(任务示例两方向均 DSNAME=default/IFNAME=Ethernet66/0/5)。DSNAME 引用 ADD QOSDIFFERSERV(0-00066)；IFNAME 引用 ADD INTERFACE(0-00056, 物理接口, md 提示 LST INTERFACE 查询)。P0 收敛：合并原 variant 0-00206(IPFD-012001 简单流分类)，吸收 FLAG8021P(optional, 802.1p映射仅特定接口支持)。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00284(最大记录数 65536 + FLAG8021P 接口类型约束 + 与 DP 0-00016 方向绑定)；binding=3(命中真相全部 3 项，无缺口)。"

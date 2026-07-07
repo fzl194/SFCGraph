@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00351
+owner_task_ref: UDG@20.15.2@Task@0-00153
+rule_name: 0-00153 ADD USRRELATEIDEN 总记录数 64 + 60s 生效 + 仅支持协议 + 协议过多性能告警 + 软参BIT387 + 前置LOD PARSERDB
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00153
+  expression: |
+    ADD USRRELATEIDEN(atom 0-00153) 配置约束：
+    (1) 上限：单命令总记录数最大为 64(命令 notes 强约束)；超限→ADD 失败。
+    (2) 60s 生效：该命令执行后 60s 生效(命令 notes)；不立即生效, 配置工程师须等待 60s 再验证。
+    (3) 仅支持协议：只能对支持该功能的协议进行配置；如果指定的用户关联识别协议不支持其开启关联功能, 但不会执行失败——配置工程师可用 LST SUPPUSRRLTIDEN 命令查询支持列表。
+    (4) 协议过多性能告警：用户关联识别功能如果指定的协议过多, 会影响系统性能, 具体下降比例与话务模型相关(命令 notes 强约束)——若无内容计费等特别高的计费诉求, 不建议开启。
+    (5) 软参 BIT387：按需开启软参 BIT387(命令 notes)；具体作用待 CommandGraph 抽取。
+    (6) 前置依赖：典型路径下, GWFD-110203 特性步骤 5 配置 LOD PARSERDB 加载协议解析数据库(不在本 atom 命令域, 由 feature task dependency_rule 编排)。
+violation_effect: 上限超限→ADD 失败；未等待 60s→配置看似未生效(实际 60s 后生效)；协议不支持→不报错但识别准确率未提升；协议过多→性能下降；未开 BIT387→关联识别功能未启用
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: command
+status: inferred
+source_evidence_ids: [GWFD-110203/配置HTTPS业务地址识别_24082599.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。投影命令 notes 6 大约束(总记录数 64/60s 生效/仅支持协议/协议过多性能告警/软参 BIT387/前置 LOD PARSERDB)。"

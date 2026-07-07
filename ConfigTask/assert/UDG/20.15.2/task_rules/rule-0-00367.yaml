@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00367
+owner_task_ref: UDG@20.15.2@Task@0-00133   # 挂 atom ADD L2TPGROUP
+rule_name: ADD L2TPGROUP 上限 1500 + LNS 序号唯一 + L2TPLNSINFO 扩展 + 立即生效
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00133
+  expression: |
+    ADD L2TPGROUP 命令最大记录数 1500（GROUPID 取值 1~1500，全局唯一）。
+    立即生效：本命令执行后立即生效。
+    LNS 序号唯一约束：ADD L2TPGROUP 下的 LNS IP 序号（FIRSTLNSIP~SIXTHLNSIP 取值 1~6）与 ADD L2TPLNSINFO 的 LNSNO 取值 1~30 不能相同。例如使用 ADD L2TPLNSINFO 配置 LNSNO=1 的 LNS IP 信息后，不允许 ADD L2TPGROUP 配 FIRSTLNSIP（也对应序号 1）。
+    LNS 扩展上限：IPv4 LNS 数 >6 时需用 ADD L2TPLNSINFO 命令追加，每个 L2TP 组最多 30 个 IPv4 LNS；IPv6 LNS 必须用 ADD L2TPLNSINFO。
+    唯一性：GROUPID 全局唯一；同一 L2TP 组内的 LNS 序号必须唯一。
+    适用 NF：PGW-U、UPF。
+violation_effect: 超 1500 上限新增失败；LNS 序号冲突导致隧道无法建立；未用 L2TPLNSINFO 扩展时 LNS 数受 6 上限
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/会话管理/L2TP隧道管理/L2TP组/创建L2TP组（ADD L2TPGROUP）_35373524.md
+  - GWFD-020412/本地配置方式激活L2TP VPN_40342129.md
+notes: "命令级审查(2026-07-02): 投影自命令②notes(最大记录数 1500 + LNS 序号唯一约束 + L2TPLNSINFO 扩展 + 立即生效)。LNS 模式 REDUNDANCY(主备 2 LNS)/LOAD_SHARING(最多 6 LNS) 由 LOCALLNSMODE 决定,记入 atom notes。L2TPLNSINFO 不在本次 18 命令范围(扩展上限 30 IPv4 LNS)。"

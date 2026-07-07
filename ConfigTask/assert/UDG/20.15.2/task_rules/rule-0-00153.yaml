@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00153
+owner_task_ref: UDG@20.15.2@Task@0-00049   # 挂 atom SET APNQOSATTR
+rule_name: APNQOSATTR 最大记录数规格 + 新激活用户生效
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET APNQOSATTR
+  expression: "SET APNQOSATTR 命令最大记录数为 10000；命令执行后只对新激活用户生效（存量用户不受影响）。存在系统初始记录: CARSHAPESWUL/CARSHAPESWDL=INHERIT，CARSHAPEUL/DL=NULL。"
+violation_effect: 超规格新增失败；改配置后需用户重新激活才生效
+severity: info
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010151/激活接入控制_69675201.md, GWFD-020381/激活会话类QoS保证（PGW-U）_70910228.md, GWFD-010201/配置QoS与流量管理_03345155.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes '系统最多支持配置10000条ApnQosAttr' + '只对新激活用户生效' + 系统初始记录表。CARSHAPEUL/DL 为 conditional_required(当 CARSHAPESWUL/DL=ENABLE 时)，atom 已按 required 录制(本特性场景两开关均=ENABLE)。"

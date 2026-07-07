@@ -1,0 +1,31 @@
+task_id: UDG@20.15.2@Task@0-00021
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置APN下异常下行流量检测开关
+task_layer: atom
+task_intent: 在指定APN下开启终端异常下行流量检测（含基于流行为的检测）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD ABNTRAFFICDT
+status: inferred  # 命令级审查(2026-07-02): 0 缺口, 3/3 已绑, APN→0-00020 reference, SWITCH+TRAFFICBEHAVIORSWITCH 齐
+source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00021:APN
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ABNTRAFFICDT:APN
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00020:APN
+    requiredness: required
+    source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]
+  - binding_id: UDG@20.15.2@Task@0-00021:SWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ABNTRAFFICDT:SWITCH
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]
+  - binding_id: UDG@20.15.2@Task@0-00021:TRAFFICBEHAVIORSWITCH
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD ABNTRAFFICDT:TRAFFICBEHAVIORSWITCH
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-020305/激活终端异常下行流量检测_02455576.md]
+notes: "GWFD-020305 专属。APN 引用已配置的 ADD APN(0-00020)。前置: 已配置APN + license LKV3G5ADTD01。命令级审查(2026-07-02): 0 缺口(bound 3/3=APN+SWITCH+TRAFFICBEHAVIORSWITCH); TRAFFICBEHAVIORSWITCH 命令真相 conditional 默认 DISABLE, 020305 数据规划表显式 ENABLE 故按 required 绑; SWITCH/TRAFFICBEHAVIORSWITCH 对齐 local_planned/required。"

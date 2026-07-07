@@ -1,0 +1,17 @@
+task_id: UNC@20.15.2@Task@0-00024
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CPCGGRP
+task_layer: atom
+task_intent: 增加抄送 CG 组（SGW-C/PGW-C/SMF）—— ⚠ 当前版本不支持本命令
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CPCGGRP
+status: inferred
+source_evidence_ids:
+  - 增加抄送CG组（ADD CPCGGRP）_09896864.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00024:CPCGGRPID", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CPCGGRP:CPCGGRPID", binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [增加抄送CG组（ADD CPCGGRP）_09896864.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00024:DESCRIPTION", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CPCGGRP:DESCRIPTION", binding_type: variable, variable_source: local_planned, requiredness: optional, source_evidence_ids: [增加抄送CG组（ADD CPCGGRP）_09896864.md]}
+notes: |
+  UNC atom batch3（2026-07-06）。⚠ 命令 md 明示"当前版本不支持此命令"——建 atom 仅为图谱完整，实际不配置。
+  最多 1 条（CPCGGRPID 固定=1）→ rule 0-00026。§6.B 见全局 rule 0-00001。

@@ -1,0 +1,26 @@
+rule_id: UDG@20.15.2@TaskRule@0-00286
+owner_task_ref: UDG@20.15.2@Task@0-00106
+rule_name: 0-00106 最大记录数 1(全局) + 高危命令 + Range 变化触发其他 bwm* 同步
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00106
+  expression: |
+    SET BANDWIDTHMNG(atom 0-00106) 配置约束：
+    (1) 上限：系统最大记录数为 1(命令 notes 强约束)——SET 类全局命令，整机生效一份；与 SET 类多记录的命令模式不同。
+    (2) 高危命令标记：原始命令 md 一开头即标识 '本命令属于高危命令'(命令 notes)——下发前必须确认变更影响范围。
+    (3) Range 变化触发级联修改：Range 发生变化后，其他带宽管理命令(bwmcontroller/bwmservice 等)也需要同步修改(命令 notes 强约束)；前端执行本 atom 后须检查 ADD BWMCONTROLLER(命令 ID 待抽取)/SET 相关命令是否需联动调整。
+    (4) RANGE 切 SYSTEM 容量评估前置：SYSTEM 范围需整机级汇总，对系统性能有影响；执行命令前需重新进行容量评估，若无法评估请联系华为技术支持(命令 notes)。
+    (5) PERIOD 统计周期、CIRMINTHRES/PIRMINTHRES 最低保护值(BWMSUBSCRCTRL 控制策略为基准)；GRPBWMSHAPSW 基于 Shaping 的组级带宽控制开关——所有非必选参数当前 binding requiredness=optional 已正确投影。
+    (6) 整机无用户时执行：RANGE 从 CPU 切 SYSTEM 时需整机无在线用户，否则切换期间统计混乱(命令 notes 强约束)。
+    (7) 该命令执行后立即生效(命令 notes)。
+violation_effect: 上限超限→SET 失败(全局 SET 类)；高危误操作→bwmcontroller/bwmservice 配置不匹配；未做容量评估→SYSTEM 切后性能劣化；非空载切 RANGE→统计错乱
+severity: error
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。Severity=error 因 high-risk 命令误操作影响面大(影响所有带宽管理命令)。"

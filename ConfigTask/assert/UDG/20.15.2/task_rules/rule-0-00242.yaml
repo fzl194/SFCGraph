@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00242
+owner_task_ref: UDG@20.15.2@Task@0-00113   # 挂 atom ADD MATCHROUTETYPE
+rule_name: ADD MATCHROUTETYPE 最大记录数 + 前置双依赖(POLICYNAME+NODESEQUENCE) + 立即生效
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD MATCHROUTETYPE
+  expression: |
+    ADD MATCHROUTETYPE 命令最大记录数为 65535。
+    前置：配置该命令前，必须已经通过 ADD ROUTEPOLICY 配置了指定路由策略的名字（POLICYNAME），以及通过 ADD ROUTEPOLICYNODE 配置了该策略下的节点（NODESEQUENCE）。
+    该命令执行后立即生效。
+violation_effect: 超规格新增失败；未先建 ROUTEPOLICY/ROUTEPOLICYNODE 致 (POLICYNAME,NODESEQUENCE) 复合键引用悬空
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020401/激活IPv6承载上下文_38276176.md]
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00240~0-00249）。投影自命令 notes '最大记录数65535' + '配置前必须已通过 ADD ROUTEPOLICY 配置策略名 + 通过 ADD ROUTEPOLICYNODE 配置该策略下节点'(复合键前置双依赖) + '立即生效'。前置双依赖顺序已由 POLICYNAME→0-00111、NODESEQUENCE→0-00112 两条 reference binding 隐式表达，本 rule 显式记录复合键 (POLICYNAME,NODESEQUENCE) 依赖规格。"

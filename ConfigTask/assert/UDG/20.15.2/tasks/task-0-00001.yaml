@@ -1,0 +1,72 @@
+task_id: UDG@20.15.2@Task@0-00001
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置URR
+task_layer: atom
+task_intent: 配置一条使用量上报规则(URR)，确定费率与计费方式
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD URR
+status: inferred
+source_evidence_ids:
+  - GWFD-020301/部署UPF_28493406.md
+  - GWFD-020300/配置Gy接口在线计费_83167737.md
+  - GWFD-010171/配置Ga接口离线计费_31927856.md
+  - GWFD-110312/激活基于业务累计流量的策略控制_84034134.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00001:URRNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:URRNAME
+    binding_type: variable
+    variable_source: decision_driven   # pass-2 演进：内容计费=全网规划，在线计费=本端规划，跨特性分叉
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-020300/配置Gy接口在线计费_83167737.md]
+  - binding_id: UDG@20.15.2@Task@0-00001:URRID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:URRID
+    binding_type: variable
+    variable_source: global_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00001:USAGERPTMODE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:USAGERPTMODE
+    binding_type: decision_driven
+    variable_source: global_planned   # md获取方法=全网规划；具体枚举由DP决定(decision_ref)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00001
+    requiredness: required
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00001:OFFMETERINGTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:OFFMETERINGTYPE
+    binding_type: decision_driven
+    variable_source: global_planned   # md获取方法=全网规划；具体枚举由DP决定(decision_ref)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00001
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00001:ONLMETERINGTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:ONLMETERINGTYPE
+    binding_type: decision_driven
+    variable_source: global_planned   # md获取方法=全网规划；具体枚举由DP决定(decision_ref)
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00001
+    requiredness: conditional
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+  - binding_id: UDG@20.15.2@Task@0-00001:DFTQUOTAVOLUME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:DFTQUOTAVOLUME
+    binding_type: variable
+    variable_source: local_planned   # 命令真相=local_planned,conditional；在线流量计费场景配默认配额(2-00037取4294967295)
+    requiredness: conditional
+    source_evidence_ids: [GWFD-110312/激活基于业务累计流量的策略控制_84034134.md]
+  - binding_id: UDG@20.15.2@Task@0-00001:DFTQUOTAPARA
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:DFTQUOTAPARA
+    binding_type: variable
+    variable_source: local_planned   # 命令真相=local_planned,conditional(默认Byte)；在线计费默认配额的单位(2-00091取Byte)
+    requiredness: conditional
+    source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]
+  - binding_id: UDG@20.15.2@Task@0-00001:RG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD URR:RG
+    binding_type: variable
+    variable_source: local_planned   # 命令真相=local_planned,conditional；计费组(2-00091双故障Bypass用到10/15/20/25，需与SMF一致)
+    requiredness: conditional
+    source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]
+notes: |
+  命令级审查(2026-07-02):
+  - 补绑 DFTQUOTAVOLUME/DFTQUOTAPARA/RG（命令真相 conditional + 特性数据规划表实际用到：2-00037在线流量计费DFTQUOTAVOLUME=4294967295；2-00091双故障Bypass DFTQUOTAPARA=Byte/RG=10/15/20/25）。
+  - 未绑 DFTQUOTATIME/CFGDOMAINNAME/SID（命令真相 conditional/optional 且无特性数据规划表用到，冷门参数不追全量）。
+  - source_evidence_ids 扩充覆盖在线(2-00002)/离线(2-00003)/融合(2-00004 透传 2-00001)/累计流量(2-00037)主要用法。
+  - 新增 atom-挂 rule 0-00110(cardinality 最大记录数65000) + 0-00111(uniqueness URRID全网唯一从1000起始)。

@@ -1,0 +1,67 @@
+task_id: UDG@20.15.2@Task@0-00087
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPFarm
+task_layer: atom
+task_intent: 创建重定向或 P-CSCF 类型的 IP Farm 并绑定心跳检测接口/虚拟 IP/VPN（用户Portal/Web Proxy 重定向与 P-CSCF 故障恢复 IMS 业务的 server 池基础对象）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD IPFARM
+status: inferred   # 命令级审查(2026-07-02) B03 批次新建；命令命中 mml_commands.jsonl，CommandParameter 待 CommandGraph 抽取(§6.B)
+source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00087:IPFARMNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARM:IPFARMNAME
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: required
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00087:IPVERSION
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARM:IPVERSION
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: required
+    value: IPV4
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00087:SERVERTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARM:SERVERTYPE
+    binding_type: decision_driven
+    variable_source: local_planned   # 本端规划(跨 SERVERTYPE 取值分叉,与 0-00086 SET IPFARMGLOBAL 同源)
+    requiredness: optional   # 命令真相 optional(默认 REDIRECT),PCSCF 场景必填显式
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00150
+    source_evidence_ids: [GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00087:VPNINSTANCE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARM:VPNINSTANCE
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取(引用 ADD VPNINST)
+    source_ref: UDG@20.15.2@Task@0-00041:VPNINSTANCE
+    requiredness: optional   # 命令真相 optional(默认无 VPN 走默认 VRF)
+    source_evidence_ids: [GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00087:HEALTHCHECKFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARM:HEALTHCHECKFLAG
+    binding_type: variable
+    variable_source: local_planned
+    requiredness: optional   # 命令真相 optional(默认 ENABLE)
+    value: ENABLE
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00087:VIRTUALIP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARM:VIRTUALIP
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(IPv4 虚拟 IP, 唯一性约束:virtual IP 与 IPFarm 一一对应)
+    requiredness: conditional   # 命令真相 conditional(IPVERSION=IPV4 时,PCSCF 必配)
+    source_evidence_ids: [GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00087:INTERFACENAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD IPFARM:INTERFACENAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD LOGICINF 配置的心跳检测接口名）
+    source_ref: UDG@20.15.2@Task@0-00083:NAME
+    requiredness: conditional   # 命令真相 conditional(HEALTHCHECKFLAG=ENABLE 时必填)
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+notes: |
+  GWFD-110281(用户Portal)/GWFD-110282(Web Proxy)/GWFD-020253(P-CSCF 故障恢复) 共享 atom。
+  INTERFACENAME 引用心跳检测逻辑接口名(由 0-00083 ADD LOGICINF 配置,2-00091 IPFarm 变体)。
+  核心演进债(§B 跨特性分叉):SERVERTYPE 跨 REDIRECT(110281/110282) vs PCSCF(020253)分叉 → decision_driven + DP 0-00150(与 0-00086 SET IPFARMGLOBAL 共享 DP)。
+  补绑 3 参数:SERVERTYPE(跨特性,decision_driven)、VPNINSTANCE(PCSCF 场景 ims_vpn 必配)、VIRTUALIP(PCSCF 场景 10.1.1.1/10.2.2.2 必配,IPV4 时唯一性约束)。
+  冷门参数不绑(VIRTUALIPV6: IPv6 虚拟 IP,③无特性使用;WPSELECTMODE/WPCONFLICTACT: Web Proxy 服务器选择模式/冲突动作,③数据规划表未配)。
+  md 约束: 不同 IP Farm 下的服务器需要配置不同的心跳检测接口;不允许将同一个 virtual IP 配置到不同的 IP farm 上(virtual IP 与 IPFarm 一一对应)。
+  跨 SERVERTYPE 时 VIRTUALIP 必填(REDIRECT 场景 VIRTUALIP 可选,本端按 PCSCF 必填显式列,REDIRECT 场景由决策引擎跳过或取 null)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)。

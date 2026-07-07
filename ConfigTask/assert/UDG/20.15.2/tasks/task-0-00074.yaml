@@ -1,0 +1,32 @@
+task_id: UDG@20.15.2@Task@0-00074
+nf: UDG
+version: "20.15.2"
+task_logical_name: 创建OSPF进程(IPv4)
+task_layer: atom
+task_intent: 创建IPv4 OSPF动态路由进程（PROCID+VRFNAME+SCHEMAROUID），用于UDG到ePDG的OSPF等价路由负荷分担
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD OSPF
+status: inferred   # 命令级审查(2026-07-02): draft→inferred，4 必选/特性③用到参数齐全
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00074:PROCID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPF:PROCID
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+  - binding_id: UDG@20.15.2@Task@0-00074:VRFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPF:VRFNAME
+    binding_type: reference
+    variable_source: reference   # 数据规划表: 已配置数据中获取（引用 ADD L3VPNINST）
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+  - binding_id: UDG@20.15.2@Task@0-00074:SCHEMAROUID
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD OSPF:SCHEMAROUID
+    binding_type: variable
+    variable_source: global_planned   # 数据规划表: 全网规划（Router ID 全网唯一）
+    requiredness: required
+    source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md, GWFD-010104/激活地址分配方式_71653959.md]
+task_rules_ref: [UDG@20.15.2@TaskRule@0-00190]
+notes: "GWFD-010155 IPv4 OSPF 路径。VRFNAME 引用 ADD L3VPNINST(0-00071)；PROCID/SCHEMAROUID 全网规划(Router ID 全网唯一)。md 注: VPN 多实例需取消环路检查(VPNINSCAPSIMFLG=TRUE)；BFD 会话经 MOD OSPF BFDALLINTFFLG=TRUE 使能(脚本体现)。共网段需 MOD OSPFAREA VIRTUALSYSFLAG=TRUE。MOD OSPF/MOD OSPFAREA 视为修饰命令，记此 notes 不单建 atom（除非后续特性驱动）。命令级审查(2026-07-02): 缺口44参数全为OSPF协议进阶(BFD/LSA/SPF/Stub/MPLS等)，③2特性数据规划表+脚本仅用 PROCID/VRFNAME/SCHEMAROUID 三参，严格按通用配置筛均不绑(进阶参数一律不绑)；VPNINSCAPSIMFLG=TRUE 虽 md 说明强调必配，但仅在'说明'非数据规划表行，且两特性脚本均未显式传入(走默认FALSE需配合VPN场景)，记 rule 0-00190 投影环路检查条件要求而非绑参；PROCID variable_source 跨特性分叉(010104本端规划/010155全网规划)但取值解析同构无差异，保 global_planned。原仅引 010155，补 010104(同用此命令且参数范式一致)。"

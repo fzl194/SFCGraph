@@ -1,0 +1,28 @@
+task_id: UDG@20.15.2@Task@0-00141
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置外联口自动部署服务模板
+task_layer: atom
+task_intent: 配置 VRF_networkB 外联口自动部署服务模板（服务名/VPN/地址族/接口类型/Trunk 模板/VLAN/IPv4 地址池起止与掩码），路由交叉场景网络 B 侧外联口自动化部署
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD AUTOSCALINGSERVICE
+status: inferred   # 命令级审查(2026-07-02): draft→inferred；命令在 mml_commands；CommandParameter 待 CommandGraph 抽取(§6B)
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00141:SERVICENAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:SERVICENAME, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - binding_id: UDG@20.15.2@Task@0-00141:VPNNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:VPNNAME
+    binding_type: reference
+    variable_source: reference   # 已规划数据中获取(引用 ADD L3VPNINST.VRFNAME, VRF_networkB)
+    source_ref: UDG@20.15.2@Task@0-00071:VRFNAME
+    requiredness: required
+    source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+  - {binding_id: UDG@20.15.2@Task@0-00141:AFTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:AFTYPE, binding_type: variable, variable_source: local_planned, requiredness: required, value: IPv4, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00141:IPALLOCTYPE4, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:IPALLOCTYPE4, binding_type: variable, variable_source: local_planned, requiredness: conditional, value: USER_CONFIG, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}   # IPv4地址分配方式: md脚本L162 SR-IOV bonding示例显式 IPALLOCTYPE4=USER_CONFIG(命令默认USER_CONFIG, 此处按③脚本显式取值绑)
+  - {binding_id: UDG@20.15.2@Task@0-00141:AUTOCFGIFTYPE, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:AUTOCFGIFTYPE, binding_type: variable, variable_source: local_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00141:ETHTRUNKTMPID, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:ETHTRUNKTMPID, binding_type: reference, variable_source: reference, requiredness: conditional, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00141:VLANID, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:VLANID, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00141:BEGINADDR4, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:BEGINADDR4, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00141:ENDADDR4, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:ENDADDR4, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00141:MASKLEN, parameter_ref: UDG@20.15.2@CommandParameter@ADD AUTOSCALINGSERVICE:MASKLEN, binding_type: variable, variable_source: global_planned, requiredness: required, source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]}
+notes: "GWFD-020423 路由交叉网络 B 侧外联口自动部署。VPNNAME 引用 ADD L3VPNINST.VRFNAME(0-00071, VRF_networkB)；VLANID/地址池起止/掩码=全网规划(参见 5G Core LLD 业务IP对接设计)；ETHTRUNKTMPID=已配置数据获取(SR-IOV bonding 场景, LST AUTOSCALINGETHTRUNK 查, 无对应 atom 故 reference 无 source_ref)；AUTOCFGIFTYPE=ETHTRUNK(SR-IOV bonding)/VNIC(非 bonding)。IPv4v6 双栈需分别执行(各地址族一次)。命令级审查(2026-07-02): 补 IPALLOCTYPE4(md脚本显式 USER_CONFIG)；26 缺口经严格筛其余不绑(VNICID 仅 VNIC 路径/BEGINADDR6·ENDADDR6 仅 IPv6 路径/OSPF 族路由交叉不用静态路由+BGP/TPIN·TPOUT 流量策略/MTU/FLOWMODE/NETWORKINSTID/ISBACKUP/TRUSTUPSTREAM/OSPFGRPENABLE/OSPFGRPID/ADDRMODE 均冷门 optional 无特性用到)；规格+地址池上限+VNICID 范围+立即生效+自动化配置开关前置投影 rule 0-00230。"

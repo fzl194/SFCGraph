@@ -1,0 +1,42 @@
+decision_id: UDG@20.15.2@DecisionPoint@0-00141
+owner_task_ref: UDG@20.15.2@Task@0-00154   # 挂 atom SET SACOMMONPARA
+decision_name: SA 业务公共参数 QUIC 增强功能特性路由 (识别/解析)
+decision_question: |
+  SET SACOMMONPARA 配置 SA 业务公共参数时, 选择哪种 QUIC 增强功能开关?
+  - QUIC_IDEN_EN: 打开 QUIC 协议识别功能增强(QUICIDENFUNCEN=ENABLE)——由特性 GWFD-110251 (HTTP3.0 Host识别) 选用, 用于 Quic 密文业务增强 SA 协议识别。
+  - QUIC_PARSE_EN: 打开 QUIC 增强解析功能(QUICPSRFUNCEN=ENABLE)——由特性 GWFD-110252 (HTTP3.0 Host分析) 选用, 用于 Quic 密文业务增强 SA 协议解析。
+  - DISABLE_BOTH: 两个开关均关闭(DISABLE)——本特性场景下不采用。
+  命令 notes：QUICIDENFUNCEN 和 QUICPSRFUNCEN 开关只针对 Quic 密文业务增强 SA 协议识别/解析；两开关跨特性互斥——识别 vs 解析是不同业务场景, 由 DP 编排特性路由。
+decision_type: single_choice
+trigger_condition: {expression_type: always, expression: ""}
+requiredness: required
+status: inferred
+source_evidence_ids:
+  - GWFD-110251/激活HTTP3.0 Host识别_56786521.md
+  - GWFD-110252/激活HTTP3.0 Host分析_07698710.md
+options:
+  - option_id: opt-quic-iden-en
+    option_name: QUIC 协议识别增强
+    option_value: QUIC_IDEN_EN
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00154:QUICIDENFUNCEN, effect_type: sets_value, effect_detail: value=ENABLE；本特性(GWFD-110251 HTTP3.0 Host识别)路由绑定}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00154:QUICPSRFUNCEN, effect_type: sets_value, effect_detail: value=DISABLE；互斥不传}
+  - option_id: opt-quic-parse-en
+    option_name: QUIC 增强解析
+    option_value: QUIC_PARSE_EN
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00154:QUICIDENFUNCEN, effect_type: sets_value, effect_detail: value=DISABLE；互斥不传}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00154:QUICPSRFUNCEN, effect_type: sets_value, effect_detail: value=ENABLE；本特性(GWFD-110252 HTTP3.0 Host分析)路由绑定}
+  - option_id: opt-disable-both
+    option_name: 两个开关均关闭
+    option_value: DISABLE_BOTH
+    impacts:
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00154:QUICIDENFUNCEN, effect_type: sets_value, effect_detail: value=DISABLE；本特性场景不采用}
+      - {target_type: parameter, target_ref: UDG@20.15.2@Task@0-00154:QUICPSRFUNCEN, effect_type: sets_value, effect_detail: value=DISABLE}
+default_option: opt-quic-iden-en
+notes: |
+  命令级审查(2026-07-02) 新建（独占段 0-00136~0-00149）。管理 SET SACOMMONPARA QUIC 增强功能跨特性二选一(识别 vs 解析) 互斥编排。
+  依据：跨 2 特性数据规划表 QUIC 增强开关互斥——GWFD-110251 用 QUICIDENFUNCEN, GWFD-110252 用 QUICPSRFUNCEN；两开关功能差异(识别 vs 解析) 由特性路由分叉, 不应同开。
+  原 binding 两参数均标 fixed+ENABLE+conditional(各绑 1 特性)；现保留 fixed+ENABLE+conditional 形式, 由本 DP 编排特性路由决定哪 1 个 ENABLE, 另 1 个 DISABLE。
+  注：特性绑定是单向的(本特性启用其中 1 个), DP 把"特性路由→开关二选一 ENABLE"显化为决策点, 防止配置工程师误用 2 个开关同开或同关。
+  与 rule 0-00352 联动(rule 校验 max_records=1 + 立即生效 + NORSTPKTNUM 不宜过小 + QUIC 仅 Quic 密文增强)。

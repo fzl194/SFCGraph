@@ -1,0 +1,28 @@
+rule_id: UDG@20.15.2@TaskRule@0-00386
+owner_task_ref: UDG@20.15.2@Task@0-00249   # 挂 atom SET DATAPLANEINFMODE
+rule_name: SET DATAPLANEINFMODE 高危 + 删除所有用户前置 + POD Type 检查 + 切片约束 + CPT SWITCH=DISABLE 前置 + 立即生效 + 防误用 DATAPLANEGIINFMODE
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: safety_constraint
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET DATAPLANEINFMODE
+  expression: |
+    SET DATAPLANEINFMODE 属于高危命令（命令 notes 强警告）：操作不当会导致配置失效。
+    配置此命令时需要检查当前的 POD Type 是否是 ISU/APU POD，如果不是，不能开启入不转板功能（命令 notes 前置检查 1）。
+    修改此命令前需要删除所有用户（命令 notes 前置约束 1）。
+    配置此命令时需要检查 SET CPTEIDUALLOC 配置 SWITCH 是否是 DISABLE，如果不是，不能开启入不转板功能（命令 notes 前置检查 2）。
+    当有逻辑接口绑定切片时，不能开启入不转板功能（命令 notes 切片约束）。
+    当设置数据面接口模式为 Instance 后，需要通过 DSP IPSUIT 命令查询每个 IP Suit 的逻辑接口配置情况，保证每个 IP Suit 绑定逻辑接口（命令 notes 后续检查）。
+    MODE 固定 Instance（特性 md 数据规划表强约束：开启入不转板必须用样例值 Instance），Group 为默认值。
+    ROUTEENHANCEDSW 变更（DISABLE↔ENABLE）前需将用户下线（特性 md 数据规划表），路由增强生效条件：ROUTEENHANCEDSW=ENABLE 且 ADD AUTOSCALINGBGPLF 的 UDAD VCOM 不为 0。
+    该命令执行后立即生效（命令 notes）。
+    防误用：不可使用 SET DATAPLANEGIINFMODE（仅下行业务入不转板，上行仍入转板，特性 md 注意事项强提示）。
+violation_effect: 高危操作不当→配置失效或业务受损；前置不满足→开启入不转板失败；误用 DATAPLANEGIINFMODE→上行业务入转板违背预期
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020482/激活入不转板功能_28210142.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集 + 特性 md 数据规划表：高危 + 删除所有用户前置 + POD Type 检查 + 切片约束 + CPT SWITCH=DISABLE 前置 + 立即生效 + 防误用 DATAPLANEGIINFMODE + MODE=Instance 固定 + ROUTEENHANCEDSW 切换需用户下线 + 路由增强生效条件（ROUTEENHANCEDSW=ENABLE 且 UDAD VCOM≠0，BGP 自动化配置不在本特性命令域）。命令最大记录数 1 + ROUTEENHANCEDSW 枚举 DISABLE/ENABLE 由 CommandParameter 校验承担。"

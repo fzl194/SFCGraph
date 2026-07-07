@@ -1,0 +1,19 @@
+task_id: UDG@20.15.2@Task@00204
+task_logical_name: 融合计费
+task_layer: feature
+nf: UDG
+version: 20.15.2
+task_summary: "融合计费：基础流程（SMF侧RGAPPLIED控制）"
+feature_ref: UDG@20.15.2@Feature@GWFD-010173
+task_relations:
+  - from_task_ref: UDG@20.15.2@Task@00101
+    to_task_ref: UDG@20.15.2@Task@00102
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00102
+    to_task_ref: UDG@20.15.2@Task@00103
+    relation_type: precedes
+  - from_task_ref: UDG@20.15.2@Task@00103
+    to_task_ref: UDG@20.15.2@Task@00104
+    relation_type: precedes
+status: active
+source_evidence_ids: []

@@ -1,0 +1,45 @@
+task_id: UDG@20.15.2@Task@0-00039
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置知名端口
+task_layer: atom
+task_intent: 配置知名端口(ADD WELLKNOWNPORT)，为协议(如HTTP=80)定义默认端口识别规则；仅 L7 业务触发 QoS 场景需要
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD WELLKNOWNPORT
+status: inferred   # 命令不在 by_command 复用索引；CommandParameter 结构化对象待 CommandGraph 抽取(§6-B)
+source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00039:IDENPROTNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD WELLKNOWNPORT:IDENPROTNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00039:PROTOCOLNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD WELLKNOWNPORT:PROTOCOLNAME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00039:PORTOP
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD WELLKNOWNPORT:PORTOP
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划；EQUAL 等
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00039:STARTPORT
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD WELLKNOWNPORT:STARTPORT
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+  - binding_id: UDG@20.15.2@Task@0-00039:PRIORITY
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD WELLKNOWNPORT:PRIORITY
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划
+    requiredness: required
+    source_evidence_ids: [GWFD-020358/配置七层业务触发的QOS保证_80361858.md]
+notes: |
+  GWFD-020358 业务触发的QoS保证(七层)专属——三四层场景无此步骤。命令 ADD WELLKNOWNPORT 未在 by_command 复用索引(§6-B)。
+  参数细节从特性 md 数据规划表抽取。
+  命令级审查(2026-07-02)：status draft→inferred；新增 rule 0-00280(最大记录数 200 + LOD SIGNATUREDB 前置 + PORTOP/RANGE 端口段参数约束 + 立即生效)；binding=5(命中真相 5 项)，未含 ENDPORT(命令真相 conditional，PORTOP=RANGE 时必填，§4.3 ③ 缺口标注)。

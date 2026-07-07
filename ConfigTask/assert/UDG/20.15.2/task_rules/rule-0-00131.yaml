@@ -1,0 +1,22 @@
+rule_id: UDG@20.15.2@TaskRule@0-00131
+owner_task_ref: UDG@20.15.2@Task@0-00010   # 挂 atom ADD RULE
+rule_name: RULE 配置规格与优先级约束
+rule_type: spec_rule
+rule_scope: task
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: capacity_limit
+  target_refs:
+    - UDG@20.15.2@Task@0-00010
+  expression: |
+    最大记录数随 RULESPECTYPE 变化：DEFAULT(或未指定)=8000；SPECIFICATION_LIMITED=100000。两类配置记录总数规格合计 108000，>90% 上报 ALM-135602215 告警，阈值可由 MOD CFGTHRESHOLD 修改。
+    唯一性：RULENAME + POLICYTYPE 组合多条数据时不能完全相同。
+    PRIORITY：整数 1~4294967295，值越小优先级越高；过滤条件为 any 的 RULE 优先级应设为最低(③计费示例 any=65000/65010，PCC 示例 any=65535)。三四层 filter 的 RULE 优先级应低于七层 filter 的 RULE。相对约束详见 selection_rule 0-00006。
+    生效：命令执行后立即生效。
+violation_effect: 超规格新增失败；any 规则优先级过高将误匹配业务；三四层/七层优先级倒置导致匹配失序
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [output/UDG_Product_Documentation_CH_20.15.2/OM参考/命令/UDG MML命令/用户面服务管理/业务匹配策略/业务匹配公共配置/业务规则管理/规则/增加规则（ADD RULE）_82837266.md, GWFD-020301/部署UPF_28493406.md]
+notes: 命令级审查(2026-07-02) 投影自命令②notes(规格8000/100000/合计108000) + ③优先级约定(any最低、三四层<七层)。

@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00316
+owner_task_ref: UDG@20.15.2@Task@0-00254
+rule_name: 0-00254 仅新激活生效 + 上限 10000 + APN-CFTEMPLATE 1:1
+rule_type: dependency_rule
+rule_scope: atom
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: requires
+  target_refs:
+    - UDG@20.15.2@Task@0-00254
+  expression: |
+    SET APNCFTEMPLATE(atom 0-00254) 配置约束：
+    (1) 生效时机：该命令执行后只对之后发生承载更新的用户或者新激活用户生效——已激活/已在线用户不变(命令 notes 强约束)；此为设置时机策略, 不影响后续新用户。
+    (2) 上限：系统最多支持配置 10000 个 APN 内容过滤模板(命令 notes 强约束)；超限→SET 失败。
+    (3) 1:1 绑定：每个 APN 只可绑定一个内容过滤模板(命令 notes 强约束)——重复 SET 同一 APN 会覆盖前次模板;不存在 APN 维度的多模板并列。
+    (4) APNNAME 引用 ADD APN(atom 0-00020)：数据规划表"已配置数据中获取"——APN 必须先建。
+    (5) CFTEMPLATENAME 引用 ADD CFTEMPLATE(atom 0-00253)：数据规划表"已配置数据中获取"——内容过滤模板必须先建。
+violation_effect: 已激活用户不变→期望 URL 过滤策略对存量用户不生效, 需结合承载更新/重新激活触发；上限超限→SET 失败；1:1 误用→重复 SET 覆盖前次模板, 历史模板失效；APN/CFTEMPLATE 未先建→命令引用失败
+severity: warning
+rule_expression_mode: inferred
+rule_source_kind: feature
+status: inferred
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "命令级审查(2026-07-02)新增 rule。属 atom-level dependency_rule。本 atom 仅 2 参数(APNNAME/CFTEMPLATENAME)均已绑完整, 仅缺 rule 投影(生效时机/上限/1:1绑定)。"

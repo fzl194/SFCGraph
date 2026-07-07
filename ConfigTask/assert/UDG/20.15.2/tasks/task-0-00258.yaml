@@ -1,0 +1,24 @@
+task_id: UDG@20.15.2@Task@0-00258
+nf: UDG
+version: "20.15.2"
+task_logical_name: 设置内容过滤缓存参数
+task_layer: atom
+task_intent: "设置 URL 过滤本地缓存参数(SET CFCACHEPARA: CACHEIDLETIME + CACHESW), 开启本地 cache 降低 ICAP 查询频次"
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET CFCACHEPARA
+status: inferred   # 命令级审查(2026-07-02)
+source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00258:CACHEIDLETIME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET CFCACHEPARA:CACHEIDLETIME
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（本地缓存过期时间, 整数 0~4294967294 秒, 取值样例 7200）
+    requiredness: optional   # 校正：命令真相为 optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+  - binding_id: UDG@20.15.2@Task@0-00258:CACHESW
+    parameter_ref: UDG@20.15.2@CommandParameter@SET CFCACHEPARA:CACHESW
+    binding_type: variable
+    variable_source: local_planned   # 数据规划表: 本端规划（缓存开关, 枚举 DISABLE/ENABLE, 取值样例 ENABLE）
+    requiredness: optional   # 校正：命令真相为 optional
+    source_evidence_ids: [GWFD-110471/配置URL过滤_47348205.md]
+notes: "GWFD-110471。SET CFCACHEPARA 开启本地 cache(CACHESW=ENABLE), CACHEIDLETIME 控制过期时间。命令不在 mml_commands.jsonl(§6.A), 待 CommandGraph 抽取回填。命令级审查(2026-07-02)：2/2 参数绑定完整；校正 requiredness 为 optional(命令真相，本特性显式填)；新增 atom rule 0-00390(cardinality 1 + 立即生效 + 缓存更新周期取决于本命令和ICAP Server缓存过期时间 + CACHEIDLETIME<60 按 60s 处理 + 配置过小影响性能 + 配置过大导致策略更新延迟)。"

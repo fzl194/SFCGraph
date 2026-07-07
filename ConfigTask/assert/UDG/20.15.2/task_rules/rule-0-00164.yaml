@@ -1,0 +1,18 @@
+rule_id: UDG@20.15.2@TaskRule@0-00164
+owner_task_ref: UDG@20.15.2@Task@0-00072   # 挂 atom ADD VPNINSTAF
+rule_name: ADD VPNINSTAF 最大记录数规格
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD VPNINSTAF
+  expression: "ADD VPNINSTAF 命令最大记录数为 16378。"
+violation_effect: 超规格新增失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-010155/配置PGW-U到Untrusted Non-3GPP GW的数据（VPN+OSPF动态路由组网）（虚机容器）_72489252.md]
+notes: "命令级审查(2026-07-02): 投影自命令 notes '该命令最大记录数为16378'。VPNINSTAF 按 (VRFNAME, AFTYPE) 组合建实例地址族，单 L3VPN 实例可配 ipv4uni/ipv6uni 双栈，故规格高于 L3VPNINST(4096)。"

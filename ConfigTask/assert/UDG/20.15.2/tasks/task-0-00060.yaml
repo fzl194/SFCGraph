@@ -1,0 +1,37 @@
+task_id: UDG@20.15.2@Task@0-00060
+nf: UDG
+version: "20.15.2"
+task_logical_name: 使能接口IPv6并配置MTU
+task_layer: atom
+task_intent: 修改接口的IPv6使能标志，可选设置IPv6 MTU（GRE隧道IPv6业务承载 / N6-Gi以太网子接口IPv6组网前置）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IFIPV6ENABLE
+status: inferred   # 命令级审查(2026-07-02): draft→inferred
+source_evidence_ids:
+  - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+  - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00060:IFNAME
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IFIPV6ENABLE:IFNAME
+    binding_type: reference
+    variable_source: reference   # 从已配置数据获取(引用 ADD INTERFACE 的 Tunnel/以太网子接口 IFNAME)
+    source_ref: UDG@20.15.2@Task@0-00056:IFNAME
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - binding_id: UDG@20.15.2@Task@0-00060:ENABLEFLAG
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IFIPV6ENABLE:ENABLEFLAG
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(IPv6使能标志；缺省不使能，UDG IPv6场景置 TRUE)
+    requiredness: required
+    source_evidence_ids:
+      - GWFD-010107/激活静态地址用户路由冗余_19612403.md
+      - GWFD-020402/激活N6_Gi_SGi接口IPv6组网_64500399.md
+  - binding_id: UDG@20.15.2@Task@0-00060:MTU
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IFIPV6ENABLE:MTU
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(IPv6 MTU；原则: 封装GRE出外联口不分片，取值范围1280~9600)
+    requiredness: conditional   # 命令级审查校正: required→conditional（命令真相 conditional；010107 GRE Tunnel 显式 1500，020402 以太网子接口省略不配）
+    source_evidence_ids: [GWFD-010107/激活静态地址用户路由冗余_19612403.md]
+notes: "GWFD-010107 + GWFD-020402。IFNAME 引用 ADD INTERFACE(0-00056)。任务示例: 010107 Tunnel1/Tunnel2 ENABLEFLAG=TRUE MTU=1500；020402 以太网子接口仅 ENABLEFLAG=TRUE(不配 MTU)。命令级审查(2026-07-02): MTU requiredness 校正 required→conditional（命令真相 conditional，020402 以太网子接口省略 MTU 证明非必填）。本 atom 仅使能IPv6并设MTU，具体IPv6地址由 ADD IFIPV6ADDRESS(0-00061) 配置。不绑冷门: AUTOLINKLOCAL(命令真相 conditional，UDG 特性均未用)。命令真相: 缺省不使能IPv6；IPv4/IPv6 MTU 都配时取较大值。命令在 mml_commands.jsonl；CommandParameter 待 CommandGraph 抽取。"

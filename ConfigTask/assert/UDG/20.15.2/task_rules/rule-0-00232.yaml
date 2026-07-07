@@ -1,0 +1,24 @@
+rule_id: UDG@20.15.2@TaskRule@0-00232
+owner_task_ref: UDG@20.15.2@Task@0-00144   # 挂 atom ADD AUTOSCALINGSRBFD
+rule_name: ADD AUTOSCALINGSRBFD 规格 + 前置 SERVICENAME 依赖 AUTOSCALINGSERVICE + 自动化配置开关前置 + 立即生效
+rule_type: dependency_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: required_predecessor
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD AUTOSCALINGSRBFD
+  expression: |
+    ADD AUTOSCALINGSRBFD 命令最大记录数为 2048。
+    依赖参数 SERVICENAME 值相同的 ADD AUTOSCALINGSERVICE（0-00141）已经配置（引用关系已由 SERVICENAME binding 的 source_ref=0-00141:SERVICENAME 表达）。
+    该命令在自动化配置开关为关闭的状态下才能执行（前置 SET AUTOCONFIG 关闭 → 执行 → SET AUTOCONFIG 开启）。
+    使用此命令前必须先要全局使能 BFD 功能。
+    配置了使能 BFD 且参数 SERVICENAME 相同的静态路由（0-00142）须同步生效。
+    该命令执行后立即生效。
+violation_effect: 超规格（>2048）新增失败；SERVICENAME 前置未配置则报错；自动化配置开关未关闭则报错；BFD 未全局使能则报错
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020423/激活路由交叉功能_80899581.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes: 规格 2048 + SERVICENAME 前置依赖 AUTOSCALINGSERVICE(0-00141) + 自动化配置开关前置(SET AUTOCONFIG) + 全局 BFD 使能前置 + 立即生效。0 缺口（参数 5/5 全部绑定完整）。与 0-00143（ADD AUTOSCALINGBFD 单臂 echo BFD）由 DP 0-00024 二选一，DP 决策已由 0-00142.BFDTEMPLATENAME binding decision_ref 表达。MINRXINTERVAL/MINTXINTERVAL 取值范围 30~1000，MULTIPLIER 3~50 由 CommandParameter 校验承担。"

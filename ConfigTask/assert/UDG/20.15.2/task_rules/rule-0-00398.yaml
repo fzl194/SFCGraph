@@ -1,0 +1,27 @@
+rule_id: UDG@20.15.2@TaskRule@0-00398
+owner_task_ref: UDG@20.15.2@Task@0-00282   # 挂 atom SET IMSBYPASS
+rule_name: SET IMSBYPASS 规格 1 + 仅新数据流生效 + 测试特性限定 + 系统初始记录默认值
+rule_type: cardinality_rule
+rule_scope: command
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET IMSBYPASS
+  expression: |
+    SET IMSBYPASS 命令最大记录数为 1（命令 notes 强约束），超出被拒。
+    该命令执行后对新数据流生效（命令 notes 明示；存量会话不感知）。
+    IMS Bypass 功能在当前版本为测试特性，仅用于测试场景，不能用于现网业务部署（命令 notes 风险提示）。
+    该命令存在系统初始记录，参数的初始设置值如下表（命令 notes 系统默认值）：
+      IMSBYPASSSW=DISABLE，QOSURRFLOWRPT 默认值（FLOW），QOSURRHYSTIMER 默认值（0）。
+    IMSBYPASSSW 枚举 DISABLE/ENABLE（CommandParameter 校验承担）。
+    QOSURRFLOWRPT 枚举 FLOW/FILTER（CommandParameter 校验承担）。
+    QOSURRHYSTIMER 整数 0～3600 秒（CommandParameter 校验承担），整机老化时间 = APN 老化时长 + QOSURRHYSTIMER。
+    SET REFRESHSRV 前置由任务编排步骤表达。
+violation_effect: 现网部署→违背测试特性限定；规格超限→SET 失败；存量用户不感知→业务保护延迟
+severity: error
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-112000/激活双故障Bypass_14147877.md]
+notes: "命令级审查(2026-07-02) 新建。投影自命令 notes 全集：规格 1 + 仅新数据流生效 + 测试特性限定（不能用于现网）+ 系统初始记录默认值。GWFD-112000 双故障 Bypass 专属核心开关，本特性当前为测试特性 → severity=error（限制现网部署）。SET REFRESHSRV 前置由任务编排步骤表达。"

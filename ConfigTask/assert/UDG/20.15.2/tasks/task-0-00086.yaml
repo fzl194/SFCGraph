@@ -1,0 +1,57 @@
+task_id: UDG@20.15.2@Task@0-00086
+nf: UDG
+version: "20.15.2"
+task_logical_name: 配置IPFarm全局参数
+task_layer: atom
+task_intent: 配置整机 IP Farm 全局参数（服务器类型/心跳检测阈值/Ping超时/负载均衡模式），为用户Portal/Web Proxy 重定向与 P-CSCF 故障恢复 IMS 业务提供整机级心跳检测与负载均衡基础
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@SET IPFARMGLOBAL
+status: inferred   # 命令级审查(2026-07-02) B03 批次新建；命令命中 mml_commands.jsonl，CommandParameter 待 CommandGraph 抽取(§6.B)
+source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+parameter_bindings:
+  - binding_id: UDG@20.15.2@Task@0-00086:SERVERTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPFARMGLOBAL:SERVERTYPE
+    binding_type: decision_driven
+    variable_source: local_planned   # 数据规划表: 本端规划(跨特性 SERVERTYPE 取值分叉)
+    requiredness: required
+    decision_ref: UDG@20.15.2@DecisionPoint@0-00150
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00086:TIMETHRESHOLD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPFARMGLOBAL:TIMETHRESHOLD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(心跳检测间隔 6~60 秒)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00086:HEALTHSUCCLIMIT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPFARMGLOBAL:HEALTHSUCCLIMIT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(健康检查成功次数 1~10)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00086:HEALTHFAILLIMIT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPFARMGLOBAL:HEALTHFAILLIMIT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(健康检查失败次数 1~10)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md, GWFD-020253/激活P-CSCF故障时IMS业务恢复_83315488.md]
+  - binding_id: UDG@20.15.2@Task@0-00086:LBMETHOD
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPFARMGLOBAL:LBMETHOD
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(ROUND_ROBIN/LEAST_RECENTLY_USED/LEAST_LOAD)
+    requiredness: conditional   # 命令真相 conditional(仅 REDIRECT 类型有 LBMETHOD 含义,PCSCF 无效)
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md]
+  - binding_id: UDG@20.15.2@Task@0-00086:TIMEOUT
+    parameter_ref: UDG@20.15.2@CommandParameter@SET IPFARMGLOBAL:TIMEOUT
+    binding_type: variable
+    variable_source: local_planned   # 本端规划(Ping 探测超时 1~59 秒)
+    requiredness: conditional   # 命令真相 conditional
+    source_evidence_ids: [GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md]
+notes: |
+  GWFD-110281(用户Portal)/GWFD-110282(Web Proxy) / GWFD-020253(P-CSCF 故障恢复) 共享 atom——三者均用 SET IPFARMGLOBAL 配置整机 IPFarm 心跳/负载均衡基础。
+  数据来源(获取方法列): 6 参数均=本端规划。
+  核心演进债(§B 跨特性分叉)：SERVERTYPE 跨 REDIRECT(110281 用户Portal + 110282 Web Proxy 重定向场景) vs PCSCF(020253 IMS P-CSCF 故障恢复场景)分叉 → decision_driven + DP 0-00150。default=REDIRECT(主场景)。
+  LBMETHOD 仅 REDIRECT 类型生效(PCSCF 场景不配),③PCSCF 脚本省略此参数 → 校准 source_evidence_ids 排除 020253。
+  TIMETHRESHOLD 6~60 秒；HEALTHSUCCLIMIT/HEALTHFAILLIMIT 1~10；TIMEOUT 1~59 秒。
+  命令真相 requiredness 校准: SERVERTYPE=required(任何调用必选),其余 5 个均为 conditional(由 SERVERTYPE 类型决定配哪些)。
+  冷门参数不绑(无)。
+  CommandParameter 结构化对象待 CommandGraph 抽取(§6.B)，parameter_ref 按预期 ID 预写。

@@ -1,0 +1,21 @@
+rule_id: UDG@20.15.2@TaskRule@0-00124
+owner_task_ref: UDG@20.15.2@Task@0-00008   # 挂 atom（ADD FLTBINDFLOWF 三四层过滤器绑定）
+rule_name: ADD FLTBINDFLOWF 刷新生效与记录数上限
+rule_type: operational_constraint
+rule_scope: command
+condition: {expression_type: always, expression: ""}
+constraint:
+  constraint_type: must_refresh_and_capacity
+  target_refs:
+    - UDG@20.15.2@MMLCommand@SET REFRESHSRV
+  expression: |
+    1. 该命令执行后需等待 SET REFRESHSRV 刷新后对新数据流生效。
+    2. FLTBINDFLOWF 最大记录数 300000；超过规格 90% 上报 ALM-135602215 配置数量超阈值告警。阈值可由 MOD CFGTHRESHOLD 修改。
+    3. 单个 FlowFilter 可配置的 Filter 数量有上限（规格约束，见命令原始 md）。
+violation_effect: 新数据流不生效 / 容量超限告警
+severity: critical
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+notes: 命令级审查(2026-07-02)新增：投影自命令②notes 的规格/上限/刷新。

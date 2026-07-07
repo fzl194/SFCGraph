@@ -1,0 +1,22 @@
+task_id: UDG@20.15.2@Task@0-00012
+nf: UDG
+version: "20.15.2"
+task_logical_name: 绑定规则到用户模板
+task_layer: atom
+task_intent: 将RULE绑定到USERPROFILE（ADD RULEBINDING）
+task_category: configure
+ref: UDG@20.15.2@MMLCommand@ADD RULEBINDING
+status: inferred
+source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]
+parameter_bindings:
+  - {binding_id: UDG@20.15.2@Task@0-00012:USERPROFILENAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD RULEBINDING:USERPROFILENAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00011:USERPROFILENAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - {binding_id: UDG@20.15.2@Task@0-00012:RULENAME, parameter_ref: UDG@20.15.2@CommandParameter@ADD RULEBINDING:RULENAME, binding_type: reference, variable_source: reference, source_ref: UDG@20.15.2@Task@0-00010:RULENAME, requiredness: required, source_evidence_ids: [GWFD-020301/部署UPF_28493406.md]}
+  - binding_id: UDG@20.15.2@Task@0-00012:POLICYTYPE
+    parameter_ref: UDG@20.15.2@CommandParameter@ADD RULEBINDING:POLICYTYPE
+    binding_type: reference
+    variable_source: reference
+    source_ref: UDG@20.15.2@Task@0-00010:POLICYTYPE   # 继承 0-00010 的 POLICYTYPE(现为 decision_driven DP 0-00018)；用户Portal/WebProxy 等非PCC场景特性③中本命令省略 POLICYTYPE，故 requiredness 标 conditional
+    requiredness: conditional   # 命令级审查(2026-07-02)：命令真相 optional；③计费特性显式传 PCC，Portal/WebProxy 仅传 RULENAME。值由 0-00010 POLICYTYPE 决定
+    source_evidence_ids: [GWFD-020301/部署UPF_28493406.md, GWFD-110281/配置用户Portal_66620114.md, GWFD-110282/配置Web Proxy_66987339.md]
+notes: |
+  命令级审查(2026-07-02)：3 参数(USERPROFILENAME/RULENAME/POLICYTYPE)全部 reference，缺口为空(④)。POLICYTYPE requiredness 由 required 调整为 conditional——命令真相 optional，且③用户Portal/WebProxy 场景 RULEBINDING 仅传 RULENAME(省略 POLICYTYPE)；其值继承 0-00010 POLICYTYPE(已升 decision_driven)。规格/行为 rule 0-00133(记录数200000、单UP绑定8000规则、仅对新激活用户生效) 已投影。

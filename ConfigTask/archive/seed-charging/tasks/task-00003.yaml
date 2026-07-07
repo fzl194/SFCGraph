@@ -1,0 +1,21 @@
+task_id: UDG@20.15.2@Task@00003
+task_logical_name: 配置PCC策略组
+task_layer: atom
+nf: UDG
+version: 20.15.2
+task_summary: ""
+command_ref: UDG@20.15.2@MMLCommand@ADD PCCPOLICYGRP
+parameters:
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:PCCPOLICYGRNM
+        binding_type: variable
+        variable_source: local_planned
+        note: PCC策略组名
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:URRGROUPNAME
+        binding_type: reference
+        source_ref: ""  # ←ADD URRGROUP(默认业务费率)
+      - parameter_ref: UDG@20.15.2@CommandParameter@ADD PCCPOLICYGRP:SIGURRGRPNAME
+        binding_type: reference
+        source_ref: ""  # 可选,←ADD URRGROUP(信令费率,异常场景用)
+task_category: 配置
+status: active
+source_evidence_ids: []

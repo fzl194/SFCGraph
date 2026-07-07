@@ -1,0 +1,20 @@
+task_id: UNC@20.15.2@Task@0-00016
+nf: UNC
+version: "20.15.2"
+task_logical_name: 配置CHGAPN
+task_layer: atom
+task_intent: 配置基于 APN 的计费属性（SGSN，忽略 HLR 签约 APN 计费属性时用）
+task_category: configure
+ref: UNC@20.15.2@MMLCommand@ADD CHGAPN
+status: inferred
+source_evidence_ids:
+  - 增加APN计费属性(ADD CHGAPN)_72344965.md
+parameter_bindings:
+  - {binding_id: "UNC@20.15.2@Task@0-00016:APNNI", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGAPN:APNNI", binding_type: reference, variable_source: reference, source_ref: "UNC@20.15.2@CommandParameter@ADD APN:APN", requiredness: required, source_evidence_ids: [WSFD-011201/配置离线计费参数（SGSN）_01731207.md]}
+  - {binding_id: "UNC@20.15.2@Task@0-00016:CC", parameter_ref: "UNC@20.15.2@CommandParameter@ADD CHGAPN:CC", binding_type: variable, variable_source: global_planned, requiredness: optional, source_evidence_ids: [增加APN计费属性(ADD CHGAPN)_72344965.md]}
+notes: |
+  UNC atom batch2（2026-07-06），手写自证据包 ADD_CHGAPN.md（1 特性 WSFD-011201 SGSN，2 参）。
+  SGSN 专用（Pre 5G 接入）。APNNI=reference(ADD APN:APN)；CC=计费属性（默认 NORMAL）。
+  仅当 SET CHGCDR.IGNOREFLG 忽略 HLR 签约 APN 计费属性时本命令生效。
+  S-CDR 计费属性选择优先级：Gn 接口 IMSI 匹配 > APN计费属性(CHGAPN) > 缺省。
+  notes：最多 1000 条，APNNI 不可重复 → rule 0-00018。§6.B 见全局 rule 0-00001。

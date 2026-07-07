@@ -1,0 +1,25 @@
+rule_id: UDG@20.15.2@TaskRule@0-00251
+owner_task_ref: UDG@20.15.2@Task@0-00034   # 挂 atom ADD BWMSERVICE
+rule_name: ADD BWMSERVICE 最大记录数 + 立即生效 + 多对多绑定约束
+rule_type: cardinality_rule
+rule_scope: parameter
+condition: {expression_type: none, expression: ""}
+constraint:
+  constraint_type: max_records
+  target_refs:
+    - UDG@20.15.2@MMLCommand@ADD BWMSERVICE
+  expression: |
+    ADD BWMSERVICE 命令最大记录数为 1000。
+    当配置记录数大于规格的 90% 时，会上报 "ALM-135602215 配置数量超阈值" 告警；
+    当配置记录数小于等于规格 90% 时，恢复告警；阈值可通过 MOD CFGTHRESHOLD 修改。
+    该命令执行后立即生效。
+    一个带宽管理业务可以绑定在多个带宽管理规则下（多对多映射：BwmService 是被 BwmRule 0-00037 引用源，BWMSERVICENAME 唯一性隐式表达）。
+violation_effect: 超规格（>1000）新增失败
+severity: warning
+rule_expression_mode: explicit
+rule_source_kind: config
+status: inferred
+source_evidence_ids:
+  - GWFD-020354/针对URL应用基于用户的流量整形配置_83195646.md
+  - GWFD-110301/激活基于终端系统的码率差异化控制_69722139.md
+notes: "命令级审查(2026-07-02) 新建（独占段 0-00250~0-00259）。投影自命令 notes '最大记录数为1000' + '执行后立即生效' + '一个带宽管理业务可以绑定在多个带宽管理规则下'。BWMSERVICENAME 唯一性由 binding 级隐式表达（必选 + LST BWMSERVICE 查询）；引用关系由 0-00037:BWMSERVICENAME source_ref=0-00034:BWMSERVICENAME 显式串联。"
