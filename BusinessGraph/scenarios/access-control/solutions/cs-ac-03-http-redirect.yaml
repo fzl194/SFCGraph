@@ -1,0 +1,30 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-03
+solution_name: HTTP 重定向方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 基于 HTTP 错误码/URL/UserAgent/ContentType 等多条件触发，改写 HTTP 响应为 301/302/303 重定向，引导用户跳转到第三方服务器/内容过滤页
+design_intent: 解决"URL 纠错、内容过滤、错误码自动重定向"问题：将错误访问引导到正确页面
+core_mechanism_combo: EXTENDEDFILTER（多维度） → ERRORCODE → SMARTHTTPREDIR → RULE（POLICYTYPE=SMARTREDIRECT） → USERPROFILE → UDG 改写 HTTP 响应
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-05
+- EV-TK-AC-06
+scopes:
+- scope: service_selection
+  desc: 按 URL/UserAgent/ContentType 匹配
+participants:
+- name: UPF
+  role: L7 HTTP 响应改写
+  layer: user_plane
+- name: ADC/SA 引擎
+  role: L7 解析前置
+uses_feature:
+- GWFD-110284
+- GWFD-020357
+- GWFD-110261
+selected_by_decision:
+- DP-AC-01
+applies_decision_refs:
+- DP-AC-06
+- DP-AC-07

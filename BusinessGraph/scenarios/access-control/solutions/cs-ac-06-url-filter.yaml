@@ -1,0 +1,35 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-06
+solution_name: URL 过滤方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 通过 ICAP 协议将用户访问的 URL 上送给外部 ICAP Server 分类，根据返回的分类匹配本地套餐策略执行 BLOCK/PERMIT/REDIRECT；**访问限制场景唯一显式支持 PERMIT 的方案**，独立于 PCC 体系（轨道 B）
+design_intent: 解决"基于 URL 分类的内容过滤"问题：家长控制、企业内容过滤、合规要求；需要外部 URL 分类数据库支持
+core_mechanism_combo: VPNINST+LOGICINF+ICAPSERVER+ICAPSVRGRP（互通） → APN+APNCFFUNC+CFPROFILE+CFTEMPLATE（含 ACTION）+APNCFTEMPLATE+CFPROFBINDCFT+CONTCATEGROUP+CONTCATEGBIND（含 ACTION） → UDG 直接执行 BLOCK/PERMIT/REDIRECT
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-09
+- EV-TK-AC-07
+scopes:
+- scope: subscriber
+  desc: 单用户 URL 分类过滤
+- scope: service_selection
+  desc: 按 URL 分类匹配
+participants:
+- name: UPF
+  role: URL 提取与动作执行
+  layer: user_plane
+- name: ICAP Server
+  role: 外部 URL 分类数据库
+  layer: external_system
+- name: ADC/SA 引擎
+  role: URL/SNI 解析前置
+uses_feature:
+- GWFD-110471
+- GWFD-020357
+selected_by_decision:
+- DP-AC-01
+- DP-AC-03
+applies_decision_refs:
+- DP-AC-03
+- DP-AC-05

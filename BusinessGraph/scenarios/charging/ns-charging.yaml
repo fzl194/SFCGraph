@@ -1,0 +1,121 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+scenario_id: NS-CH-01
+scenario_name: 计费场景
+belongs_to_domain: BD-BSA-01
+scenario_summary: 对不同业务流采用不同计费方式，结合默认计费、免费业务和配额动作完成计费闭环
+judgment_basis: 用户需要按业务粒度差异化计费（离线/在线/融合），或需要按流量/时长/事件统计特定业务的使用量
+typical_outcome: 专项业务单独计费、免费业务不计费、普通业务默认计费，配额耗尽后切换到阻断或重定向
+status: active
+source_evidence_ids:
+- EV-KB-001
+- EV-BS-001
+coverage:
+  产品:
+  - UDG（用户面）+ UNC（控制面）
+  网元:
+  - SGW-U/PGW-U/UPF（UDG）
+  - SMF/PGW-C（UNC）
+  接口:
+  - Ga（离线）
+  - Gy/DCC（在线）
+  - N40/Nchf（融合）
+  - N4/PFCP（SMF↔UPF）
+  - Gx/N7（PCF↔PCEF/PGW）
+  控制维度:
+  - 业务类型（RG/SID）
+  - 计量方式（流量/时长/事件）
+  - 计费方式（离线/在线/融合）
+  - 配额动作（BLOCK/REDIRECT/FORWARD）
+non_coverage:
+- 带宽控制场景（套餐2）：差异化限速、整形、FUP降速、GBR保证
+- 访问限制场景（套餐3）：URL过滤、重定向阻断、接入控制
+contains_solutions:
+- CS-CH-01
+- CS-CH-02
+- CS-CH-03
+- CS-CH-04
+- CS-CH-05
+- CS-CH-06
+- CS-CH-07
+decision_points:
+- decision_id: DP-CH-01
+  decision_name: 计费方式选择
+  decision_question: 当前计费场景采用哪种计费方式
+  trigger_condition: 进入计费场景时
+  option_set:
+  - 离线计费
+  - 在线计费
+  - 融合计费
+  impact_summary: 决定URR的USAGERPTMODE、是否需要CCT模板、配额控制机制、CHF/OCS/CG交互模式；选择CS-CH-01/02/03
+  selects_solutions:
+  - CS-CH-01
+  - CS-CH-02
+  - CS-CH-03
+  selection_note: 计费方式选择决定方案闭包
+  status: active
+  source_evidence_ids:
+  - EV-BS-001
+  - EV-KB-001(K001-K004)
+  - EV-CFA
+- decision_id: DP-CH-02
+  decision_name: 配置网元范围选择
+  decision_question: 本次计费配置需要覆盖哪些网元
+  trigger_condition: 进入计费配置生成或核查任务时
+  option_set:
+  - UPF+SMF
+  - UPF only
+  - SMF only
+  impact_summary: 决定生成UPF执行链、SMF编排链，还是双侧协同链；影响跨网元一致性核查范围
+  status: active
+  source_evidence_ids:
+  - EV-BS-001
+  - EV-CFA
+- decision_id: DP-CH-04
+  decision_name: 配额耗尽动作选择
+  decision_question: 在线/融合计费配额耗尽后如何处理
+  trigger_condition: 在线/融合计费配额耗尽
+  option_set:
+  - BLOCK
+  - REDIRECT
+  - FORWARD
+  impact_summary: 决定是否配置QUOTAEXHAUSTACT/REDIRECT或放行；影响用户体验切换路径
+  owner_solutions:
+  - CS-CH-02
+  - CS-CH-03
+  - CS-CH-06
+  status: active
+  source_evidence_ids:
+  - EV-FK-Online
+  - EV-FK-Converged-UDG
+  - EV-CFA
+- decision_id: DP-CH-05
+  decision_name: 计费粒度选择
+  decision_question: 计费策略作用于哪个粒度
+  trigger_condition: 确定计费方式后
+  option_set:
+  - 会话级(普通计费)
+  - 业务级(内容计费)
+  - QoS flow级(漫游计费)
+  impact_summary: 决定是否需要SA识别和RG差异化；影响URR绑定方式和Feature选择
+  owner_solutions:
+  - CS-CH-04
+  status: active
+  source_evidence_ids:
+  - EV-KB-001(K013-K027)
+  - EV-CFA
+- decision_id: DP-CH-07
+  decision_name: 兜底策略选择
+  decision_question: 未命中规则流量如何计费
+  trigger_condition: 规划兜底策略时
+  option_set:
+  - 默认URR组(DFTURRGRPNAME)
+  - 异常费率(SIGURRGRPNAME)
+  - SPECTRAFURRGRP全局兜底
+  impact_summary: 决定DFTURRGRPNAME和DFTSIGURRGNAME绑定方案；影响计费完整性
+  owner_solutions:
+  - CS-CH-01
+  - CS-CH-07
+  status: active
+  source_evidence_ids:
+  - EV-FK-Content-UDG
+  - EV-CFA

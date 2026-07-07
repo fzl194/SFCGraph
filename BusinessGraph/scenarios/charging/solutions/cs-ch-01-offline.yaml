@@ -1,0 +1,41 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-CH-01
+solution_name: 离线计费方案
+belongs_to_scenario: NS-CH-01
+solution_summary: 通过RG标识业务，UPF侧URR累计流量/时长/事件，控制面按计费规则格式化为话单，通过Ga接口发送到CG，CG完成存储/标准化后定期上传BD域
+design_intent: 解决"按业务差异化离线计费"问题：特定业务单独RG，免费业务不计费，普通业务默认费率
+core_mechanism_combo: RG标识(URR.RG) → URR累计(USAGERPTMODE=OFFLINE) → Ga接口/GTP' → CG(话单预处理) → BD(营帐结算)
+status: active
+source_evidence_ids:
+- EV-KB-001(K001-K004, K012)
+- EV-KB-002(K015)
+- EV-BS-001
+- EV-FK-Offline-UDG
+- EV-FK-Content-UDG
+- EV-FK-Offline-UNC
+scopes:
+- scope: subscriber
+  desc: 按用户粒度计费
+- scope: subscription
+  desc: PDU会话级承载计费
+participants:
+- name: UDG/UPF
+  role: 流量统计与URR执行
+  layer: user_plane
+- name: UNC/SMF
+  role: 话单格式化与Ga发送
+  layer: control_plane
+- name: CG
+  role: CDR接收/预处理
+  layer: external_system
+- name: BD
+  role: 营帐结算
+  layer: external_system
+uses_feature:
+- GWFD-010171
+- GWFD-020301
+- WSFD-011201
+selected_by_decision:
+- DP-CH-01
+applies_decision_refs:
+- DP-CH-07

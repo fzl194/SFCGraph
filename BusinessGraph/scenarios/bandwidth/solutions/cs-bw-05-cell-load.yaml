@@ -1,0 +1,33 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-BW-05
+solution_name: 小区负荷动态带宽方案
+belongs_to_scenario: NS-BW-01
+solution_summary: 通过RAN上报小区负荷等级（Level 0-3），UDG转发至UNC/PCRF，PCRF下发动态带宽策略，实现拥塞时动态调整BWM
+design_intent: 解决"小区拥塞时动态限速"问题：拥塞时对低优先级用户限速，保障高价值用户
+core_mechanism_combo: RAN负荷上报 → UDG转发(GTP-U扩展头) → UNC上报PCRF → PCRF动态BWM策略下发
+status: active
+source_evidence_ids:
+- EV-FK-15
+- EV-FK-24
+- EV-CA-01
+- EV-CA-02
+scopes:
+- scope: access
+  desc: 小区级负荷感知
+participants:
+- name: RAN
+  role: 负荷感知与上报，access_side
+- name: UDG/UPF
+  role: 负荷信息转发
+  layer: user_plane
+- name: UNC/SMF
+  role: 事件上报PCRF
+  layer: control_plane
+- name: PCRF/PCF
+  role: 动态策略决策
+  layer: external_system
+uses_feature:
+- GWFD-110332
+- WSFD-211101
+selected_by_decision:
+- DP-BW-01

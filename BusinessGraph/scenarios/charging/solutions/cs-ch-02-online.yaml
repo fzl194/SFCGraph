@@ -1,0 +1,37 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-CH-02
+solution_name: 在线计费方案
+belongs_to_scenario: NS-CH-01
+solution_summary: SMF通过Gy接口/DCC协议实时向OCS申请配额，配额耗尽触发重授权或执行耗尽动作；实现实时信用控制和配额管理
+design_intent: 解决"实时余额控制"问题：预付费用户配额耗尽即阻断或重定向
+core_mechanism_combo: Gy接口/DCC协议 → CCR-I/U/T三阶段 → OCS配额分配(GSU) → 实时扣费 → 配额耗尽触发Final-Unit-Action(BLOCK/REDIRECT/RESTRICT)
+status: active
+source_evidence_ids:
+- EV-KB-001(K028-K048, K037, K043-K045)
+- EV-KB-002(K015)
+- EV-FK-Online
+- EV-FK-Content-UDG
+- EV-FK-Event
+scopes:
+- scope: subscriber
+  desc: 预付费用户
+- scope: subscription
+  desc: 配额粒度
+participants:
+- name: UNC/SMF
+  role: CTF角色，DCC客户端
+  layer: control_plane
+- name: OCS
+  role: OCF/ABMF/RF，DCC服务器
+  layer: external_system
+- name: UDG/UPF
+  role: UPF侧URR执行配额阈值上报
+  layer: user_plane
+uses_feature:
+- GWFD-020300
+- GWFD-020301
+- GWFD-020306
+selected_by_decision:
+- DP-CH-01
+applies_decision_refs:
+- DP-CH-04

@@ -1,0 +1,194 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+scenario_id: NS-AC-01
+scenario_name: 访问限制场景
+belongs_to_domain: BD-BSA-01
+scenario_summary: 对用户访问网络/业务/内容的请求，根据用户身份、位置、套餐配额、应用类型、URL 分类、接入网元等维度，执行阻塞（DISCARD）、头增强（HEADEN）、重定向（REDIRECT）、URL 过滤（BLOCK/PERMIT/REDIRECT）的差异化访问控制
+judgment_basis: 需阻塞非法内容/IP 访问；或需在请求报文头插入运营商字段（MSISDN/IMSI）；或需将用户访问引导到指定页面/服务器（充值页/Portal/纠错页）；或需基于 URL 分类执行 BLOCK/PERMIT/REDIRECT；或需在注册/会话阶段执行 SAR/区域/ODB 粗粒度接入控制
+typical_outcome: 实现 PCC 阻塞/头增强族/重定向族（轨道 A 五子轨）/URL 过滤（轨道 B 独立）/UNC 接入控制的差异化访问控制；双轨道可并存；与计费、带宽控制可叠加执行（类型独立原则）
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-CA-AC-02
+- EV-FK-AC-01
+- EV-TK-AC-01
+coverage:
+  产品:
+  - UDG（用户面
+  - 10特性）+ UNC（控制面
+  - 1特性 + 接入控制辅助特性）
+  网元:
+  - UPF/PGW-U（UDG
+  - 执行体）
+  - SMF/PGW-C/AMF（UNC
+  - 决策体+接入控制）
+  - PCF（策略决策源）
+  - ICAP Server（URL 过滤外部依赖）
+  接口:
+  - Gx（2/3/4G）
+  - N7（5G）
+  - N4（PFCP）
+  - ICAP（URL 过滤外部协议）
+  动作维度:
+  - DISCARD / HEADEN / REDIRECT / PERMIT（URL 过滤独有）/ BLOCK（URL 过滤）
+  控制维度:
+  - 用户身份
+  - 位置（CGI/ECGI/NCGI/PRA/PLMN）
+  - 套餐配额
+  - 应用类型（ADC）
+  - URL 分类
+  - 接入网元（SAR/区域/ODB）
+non_coverage:
+- 计费场景（套餐1）：差异化计费、免费业务、配额计费动作（URR/CG/Ga/Gy/N40 链路，由计费场景图谱承载）
+- 带宽控制场景（套餐2）：BWM 限速、Shaping 整形、FUP 降速、GBR 保证（由带宽控制场景图谱承载）
+- 访问限制场景不涉及独立协议层 SemanticObject（无 Ga/Gy/N40），这是与计费场景的关键差异
+contains_solutions:
+- CS-AC-01
+- CS-AC-02
+- CS-AC-03
+- CS-AC-04
+- CS-AC-05
+- CS-AC-06
+- CS-AC-07
+- CS-AC-08
+- CS-AC-09
+decision_points:
+- decision_id: DP-AC-01
+  decision_name: 动作类型选择
+  decision_question: 访问限制应执行哪种动作
+  trigger_condition: 进入访问限制配置时
+  option_set:
+  - DISCARD-阻塞
+  - HEADEN-头增强
+  - REDIRECT-重定向
+  - PERMIT-放行(仅URL过滤)
+  impact_summary: 决定 CS 闭包（CS-AC-01/02/03~05/06）和动作对象；决定 RULE.POLICYTYPE 或 CFTEMPLATE.ACTION 路径
+  selects_solutions:
+  - CS-AC-01
+  - CS-AC-02
+  - CS-AC-03
+  - CS-AC-06
+  - CS-AC-08
+  - CS-AC-09
+  selection_note: 动作类型选择决定方案闭包（DISCARD→01, HEADEN→02, REDIRECT→03~05/08/09, PERMIT→06）
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-01
+  - EV-TK-AC-02
+- decision_id: DP-AC-03
+  decision_name: 动作轨道选择
+  decision_question: 访问限制走轨道 A（PCC 体系）还是轨道 B（URL 过滤体系）
+  trigger_condition: 方案设计阶段
+  option_set:
+  - 轨道A-PCC体系(RULE.POLICYTYPE驱动)
+  - 轨道B-URL过滤体系(CFTEMPLATE.ACTION驱动)
+  impact_summary: 决定 ConfigObject 体系（RULE vs CFTEMPLATE）、动作指定方式（隐式 vs 显式）、外部依赖（可选 PCRF vs 必需 ICAP）、是否支持 PERMIT
+  selects_solutions:
+  - CS-AC-01
+  - CS-AC-08
+  - CS-AC-09
+  - CS-AC-06
+  selection_note: 动作轨道选择决定走 PCC 体系还是 URL 过滤体系
+  owner_solutions:
+  - CS-AC-06
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-07
+- decision_id: DP-AC-04
+  decision_name: 网元范围选择
+  decision_question: 访问限制规则应下发到哪些网元/UPF
+  trigger_condition: SMF 策略下发阶段
+  option_set:
+  - UPF执行(业务流细粒度)
+  - SMF决策翻译
+  - AMF接入控制(注册阶段)
+  - 主+辅锚点ALL
+  - 仅主锚点CENTRAL
+  - 仅辅锚点LOCAL
+  - DNAI指定辅锚点
+  impact_summary: 决定规则生效范围、配置一致性要求；UNC 侧粗粒度接入控制 vs UDG 侧细粒度业务控制
+  owner_solutions:
+  - CS-AC-07
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-02
+  - EV-TK-AC-03
+- decision_id: DP-AC-05
+  decision_name: 匹配层次选择
+  decision_question: 访问限制应基于哪个协议层匹配
+  trigger_condition: UPF 规则配置阶段
+  option_set:
+  - L3/L4-三四层(IP/端口)
+  - L7-七层(URL/SNI/Method/UserAgent)
+  - DNS层-DNS查询
+  - 应用层-ADC应用标识
+  impact_summary: 决定 Filter 类型（FILTER/L7FILTER/EXTENDEDFILTER）、SA 依赖、协议限制；HTTPS 场景 L7 只能基于 SNI
+  owner_solutions:
+  - CS-AC-01
+  - CS-AC-02
+  - CS-AC-06
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-01
+  - EV-TK-AC-04
+- decision_id: DP-AC-06
+  decision_name: 重定向目标选择
+  decision_question: REDIRECT 动作应重定向到哪种目标
+  trigger_condition: 选择 REDIRECT 动作后
+  option_set:
+  - 充值页(CS-AC-08)
+  - 套餐订购页(CS-AC-09/Portal)
+  - Portal服务器(CS-AC-05)
+  - Proxy服务器(CS-AC-05 WebProxy)
+  - 第三方服务器(CS-AC-03)
+  - 第三方Platform(CS-AC-04 DNS)
+  impact_summary: 决定重定向特性选择（HTTP 重定向/DNS/Portal/WebProxy）、IP Farm 需求、EXTENDEDFILTER 需求
+  owner_solutions:
+  - CS-AC-03
+  - CS-AC-04
+  - CS-AC-05
+  - CS-AC-08
+  - CS-AC-09
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-06
+- decision_id: DP-AC-07
+  decision_name: 协议支持选择
+  decision_question: 访问限制方案需支持哪些协议
+  trigger_condition: 方案设计阶段
+  option_set:
+  - 仅HTTP1.x
+  - HTTP1.x+HTTPS(TLS1.2/1.3)
+  - HTTP1.x+RTSP
+  - 任意TCP含HTTPS/HTTP2.0(仅WebProxy)
+  - DNS(UDP)
+  impact_summary: 决定特性选择、SA 依赖、加密算法需求；仅 WebProxy 能处理加密协议（L3 不依赖 L7 解析）
+  owner_solutions:
+  - CS-AC-02
+  - CS-AC-03
+  - CS-AC-04
+  - CS-AC-05
+  - CS-AC-08
+  - CS-AC-09
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-05
+  - EV-TK-AC-06
+- decision_id: DP-AC-08
+  decision_name: PCF 容灾决策
+  decision_question: PCF 故障时访问限制策略如何保证连续性
+  trigger_condition: SMF 容灾配置阶段
+  option_set:
+  - 回落本地PCC(SET PCCFAILACTION)
+  - 会话失败(严格模式)
+  - DNN粒度混合(动态+本地)
+  impact_summary: 决定访问限制策略的可靠性、容灾能力；本地 PCC 精细化程度低于 PCF 策略
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-03

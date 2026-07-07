@@ -1,0 +1,27 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-BW-06
+solution_name: 位置区域差异化带宽方案
+belongs_to_scenario: NS-BW-01
+solution_summary: 通过感知用户位置变化（WiFi接入点/PLMN/漫游区域），激活预定义差异化带宽规则，实现按位置区域限速
+design_intent: 解决"按位置区域差异化限速"问题：漫游时限制最大带宽为10Mbps
+core_mechanism_combo: 位置变化感知(UE_LOCAL_IP/PLMN_CH) → 预定义规则激活 → 位置差异化带宽(PIR限速)
+status: active
+source_evidence_ids:
+- EV-FK-23
+- EV-TK-28
+- EV-TK-29
+- EV-CA-02
+scopes:
+- scope: location
+  desc: 位置区域感知
+- scope: access
+  desc: WiFi接入点
+participants:
+- name: UNC/SMF
+  role: 位置变化感知与规则激活
+  layer: control_plane
+- name: PCRF/PCF
+  role: 位置条件策略决策
+  layer: external_system
+uses_feature:
+- WSFD-109108

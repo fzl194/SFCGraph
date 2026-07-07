@@ -1,0 +1,56 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-01
+solution_name: PCC 阻塞方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 通过 PCC 策略类型（POLICYTYPE=PCC）的兜底阻塞或显式阻塞动作丢弃用户报文，实现非法内容/IP 的访问禁止
+design_intent: 解决"禁止访问非法内容/IP"问题：阻塞不安全数据中心、非法网站、ADC 兜底阻塞
+core_mechanism_combo: FILTER/FLOWFILTER（L3/L4 匹配）[+L7FILTER（L7 匹配）] → RULE（POLICYTYPE=PCC） → PCCPOLICYGRP → USERPROFILE → UDG 执行 DISCARD
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-02
+- EV-TK-AC-01
+- EV-TK-AC-02
+- EV-TK-AC-04
+scopes:
+- scope: subscriber
+  desc: 单用户阻塞
+- scope: service_selection
+  desc: 按业务类型阻塞，如特定 APP
+participants:
+- name: UPF
+  role: 执行 DISCARD 丢弃报文
+  layer: user_plane
+- name: SMF
+  role: 规则下发与翻译
+  layer: control_plane
+- name: PCF
+  role: 动态阻塞策略决策
+  layer: external_system
+uses_feature:
+- GWFD-020351
+- WSFD-109101
+- GWFD-020357
+selected_by_decision:
+- DP-AC-01
+- DP-AC-03
+decision_points:
+- decision_id: DP-AC-02
+  decision_name: 规则类型选择
+  decision_question: 访问限制规则应使用动态、预定义还是本地
+  trigger_condition: 确定动作类型后
+  option_set:
+  - 动态规则(PCF实时
+  - 无L7)
+  - 预定义规则(UPF本地
+  - 支持L7)
+  - 本地规则(SMF兜底)
+  impact_summary: 决定规则生命周期、三网元一致性要求、是否支持 L7；URL 过滤/定向业务必须用预定义（PCF 无 L7 能力）
+  status: active
+  source_evidence_ids:
+  - EV-CA-AC-01
+  - EV-TK-AC-01
+  - EV-TK-AC-02
+  - EV-TK-AC-03
+applies_decision_refs:
+- DP-AC-05

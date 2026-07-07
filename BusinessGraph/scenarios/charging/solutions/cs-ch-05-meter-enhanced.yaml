@@ -1,0 +1,47 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-CH-05
+solution_name: 计量形态增强方案
+belongs_to_scenario: NS-CH-01
+solution_summary: 在内容计费基础上，按业务特性选择流量(VOLUME)、时长(DURATION)或事件(EVENT)计量方式；时长计费支持CTP/QCT两种模式，事件计费仅限在线SCUR
+design_intent: 解决"按资源类型差异化计量"问题：视频按流量、语音按时长、短信按事件
+core_mechanism_combo: URR.METERINGTYPE(VOLUME/DURATION/EVENT) → QCT(配额计费时间,CTP/QCT两种模式) → 在线:GSU携带CC-Time/CC-Total-Octets → 离线:仅累计上报
+status: active
+source_evidence_ids:
+- EV-KB-001(K014, K024, K126-K128, K140)
+- EV-BS-001
+- EV-FK-Content-UDG
+- EV-FK-Duration
+- EV-FK-Volume
+- EV-FK-Event
+scopes:
+- scope: service_selection
+  desc: 按业务类型选计量方式
+participants:
+- name: UDG/UPF
+  role: Measurement执行
+  layer: user_plane
+- name: UNC/SMF
+  role: Metering参数下发
+  layer: control_plane
+uses_feature:
+- GWFD-020301
+- GWFD-020302
+- GWFD-020303
+- GWFD-020306
+decision_points:
+- decision_id: DP-CH-06
+  decision_name: 计量方式选择
+  decision_question: 业务使用量按什么维度计量
+  trigger_condition: 确定计费粒度后
+  option_set:
+  - VOLUME(流量)
+  - DURATION(时长)
+  - EVENT(事件)
+  impact_summary: 决定URR.METERINGTYPE参数和Feature选择(GWFD-020302/020303/020306)；事件计费仅限在线SCUR
+  status: active
+  source_evidence_ids:
+  - EV-KB-001(K013-K027)
+  - EV-FK-Duration
+  - EV-FK-Volume
+  - EV-FK-Event
+  - EV-CFA

@@ -1,0 +1,27 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-04
+solution_name: DNS 重定向方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 构造新的 DNS 响应（DNS Overwriting），将解析失败域名的响应 IP 指向第三方 Platform，在用户建立 TCP 之前介入，实现错误域名引导
+design_intent: 解决"域名解析失败引导"问题：用户输错域名时跳转到纠错页
+core_mechanism_combo: EXTENDEDFILTER（URL） → ERRORCODE（DNS 错误码如 NXDOMAIN=3） → DNSOVERWRITING → RULE（POLICYTYPE=SMARTREDIRECT） → USERPROFILE → UDG 改写 DNS 响应
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-06
+- EV-TK-AC-06
+scopes:
+- scope: service_selection
+  desc: 按 DNS 查询域名匹配
+participants:
+- name: UPF
+  role: DNS 解析层重写
+  layer: user_plane
+- name: ADC/SA 引擎
+  role: DNS 解析前置
+uses_feature:
+- GWFD-110283
+- GWFD-020357
+applies_decision_refs:
+- DP-AC-06
+- DP-AC-07

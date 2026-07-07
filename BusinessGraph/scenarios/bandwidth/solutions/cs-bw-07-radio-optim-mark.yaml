@@ -1,0 +1,28 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-BW-07
+solution_name: 无线资源优化标记方案
+belongs_to_scenario: NS-BW-01
+solution_summary: 通过DSCP/FPI标记或终端OS差异化，影响无线侧调度优先级（非直接用户面限速），间接优化带宽体验
+design_intent: 解决"无线侧调度优化"问题：通过标记影响基站队列调度，间接提升业务带宽体验
+core_mechanism_combo: SA识别业务 → DSCP/FPI标记 / OSTYPE差异化 → RAN调度队列优化（非UPF限速）
+status: active
+source_evidence_ids:
+- EV-FK-14
+- EV-FK-11
+- EV-FK-12
+- EV-FK-13
+- EV-CA-01
+scopes:
+- scope: service_selection
+  desc: 按业务类型标记
+participants:
+- name: UDG/UPF
+  role: 业务识别与标记
+  layer: user_plane
+- name: RAN/BSC
+  role: 无线侧调度执行，access_side
+uses_feature:
+- GWFD-020359
+- GWFD-110301
+- GWFD-110302
+- GWFD-110331

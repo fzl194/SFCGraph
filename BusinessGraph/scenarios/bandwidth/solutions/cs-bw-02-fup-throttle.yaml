@@ -1,0 +1,65 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-BW-02
+solution_name: FUP配额降速方案
+belongs_to_scenario: NS-BW-01
+solution_summary: 通过URR累计用户流量，配额耗尽后由PCRF/PCF下发高优先级降速规则覆盖原规则，实现套餐超量降速
+design_intent: 解决"套餐配额超量后降速"问题：月套餐20GB后从100Mbps降至1Mbps
+core_mechanism_combo: URR流量累计 → 配额耗尽触发 → PCRF下发新QoS(MBR降低) / 预定义降速规则高优先级覆盖
+status: active
+source_evidence_ids:
+- EV-FK-07
+- EV-FK-18
+- EV-FK-08
+- EV-FK-20
+- EV-TK-01
+- EV-TK-22
+- EV-CA-01
+- EV-CA-02
+scopes:
+- scope: subscription
+  desc: 会话级FUP：整会话所有流量累计
+- scope: subscriber
+  desc: 用户级配额
+participants:
+- name: UDG/UPF
+  role: 流量计数与上报
+  layer: user_plane
+- name: UNC/SMF
+  role: URR下发与上报转发
+  layer: control_plane
+- name: PCRF/PCF
+  role: 配额管理与降速决策
+  layer: external_system
+uses_feature:
+- GWFD-020353
+- WSFD-109104
+- GWFD-110312
+- WSFD-211009
+selected_by_decision:
+- DP-BW-01
+decision_points:
+- decision_id: DP-BW-03
+  decision_name: 规则类型选择
+  decision_question: 当前场景应使用哪种PCC规则类型
+  trigger_condition: 确定控制粒度后
+  option_set:
+  - 动态规则
+  - 预定义规则
+  - 本地规则
+  impact_summary: 决定配置路径和三网元一致性要求；定向业务必须用预定义（PCF无L7能力）
+  status: active
+  source_evidence_ids:
+  - EV-CA-02
+  - EV-TK-26
+- decision_id: DP-BW-06
+  decision_name: FUP累计粒度选择
+  decision_question: FUP监控按会话还是按业务累计
+  trigger_condition: 选择FUP降速机制后
+  option_set:
+  - 会话级FUP
+  - 业务级FUP
+  impact_summary: 决定URR的Monitoring-Level（SESSION_LEVEL vs PCC_RULE_LEVEL）和SA依赖；业务级FUP依赖SA+BWM
+  status: active
+  source_evidence_ids:
+  - EV-CA-01
+  - EV-TK-01

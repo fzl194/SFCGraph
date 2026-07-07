@@ -1,0 +1,52 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-CH-04
+solution_name: 内容计费基础方案
+belongs_to_scenario: NS-CH-01
+solution_summary: 通过SA识别业务类型（L34或L7），将匹配条件与PCC计费链绑定，按RG实现不同业务差异化费率；每条业务一套独立的URR→URRGROUP→PCCPOLICYGRP三件套
+design_intent: 解决"按业务差异化计费"问题：视频业务RG=100、游戏业务RG=200、默认RG=999
+core_mechanism_combo: SA识别(FILTER/L7FILTER/PROTBINDFLOWF) → FLOWFILTER组合匹配 → RULE(POLICYTYPE=PCC)优先级裁决 → PCCPOLICYGRP→URRGROUP→URR(RG标识) → 计费链执行
+status: active
+source_evidence_ids:
+- EV-KB-001(K013, K020-K022, K136-K146, K214)
+- EV-BS-001
+- EV-FK-SA-Basic
+- EV-FK-Content-UDG
+- EV-FK-PCC-UDG
+- EV-FK-PCC-UNC
+- EV-FK-Content-UNC
+scopes:
+- scope: service_selection
+  desc: 按业务类型差异化计费
+- scope: subscriber
+  desc: 用户级策略绑定
+participants:
+- name: UDG/UPF
+  role: 业务识别与计费执行
+  layer: user_plane
+- name: UNC/SMF
+  role: 规则下发与配额管理
+  layer: control_plane
+uses_feature:
+- GWFD-110101
+- GWFD-020301
+- GWFD-020351
+- WSFD-109101
+- WSFD-109002
+decision_points:
+- decision_id: DP-CH-03
+  decision_name: 匹配层次选择
+  decision_question: 业务流通过哪层匹配
+  trigger_condition: 规划识别条件时
+  option_set:
+  - L34层匹配
+  - L7-URL匹配
+  - L7-协议匹配
+  - L34+L7混合匹配
+  impact_summary: 决定是否需要L7FILTER和PROTBINDFLOWF，影响配置对象链长度和Rule类型选择
+  status: active
+  source_evidence_ids:
+  - EV-FK-SA-Basic
+  - EV-FK-Content-UDG
+  - EV-CFA
+applies_decision_refs:
+- DP-CH-05

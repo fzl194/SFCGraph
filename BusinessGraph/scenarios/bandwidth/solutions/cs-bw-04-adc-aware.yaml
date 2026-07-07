@@ -1,0 +1,32 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-BW-04
+solution_name: ADC应用感知动态带宽方案
+belongs_to_scenario: NS-BW-01
+solution_summary: 通过ADC检测应用启动/停止事件（APP_STA/APP_STO），动态切换三策略组（Normal/Start/Stop）实现应用级带宽调整，无需用户重连
+design_intent: 解决"按应用类型实时调整带宽"问题：视频APP激活时分配GBR，停止时恢复Non-GBR
+core_mechanism_combo: ADC检测(APP_STA/APP_STO) → PCF决策 → 三策略组动态切换(Normal/Start/Stop) → QoS参数变更
+status: active
+source_evidence_ids:
+- EV-FK-09
+- EV-FK-21
+- EV-TK-27
+- EV-TK-28
+- EV-CA-02
+scopes:
+- scope: service_selection
+  desc: 应用级带宽，per APP
+participants:
+- name: UDG/UPF
+  role: L7 DPI引擎，应用检测
+  layer: user_plane
+- name: UNC/SMF
+  role: 事件转发与策略映射
+  layer: control_plane
+- name: PCRF/PCF
+  role: ADC策略决策
+  layer: external_system
+uses_feature:
+- GWFD-020357
+- WSFD-109102
+applies_decision_refs:
+- DP-BW-07

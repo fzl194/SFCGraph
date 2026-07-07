@@ -1,0 +1,35 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-CH-06
+solution_name: 配额降速与体验切换方案
+belongs_to_scenario: NS-CH-01
+solution_summary: 在线/融合计费配额耗尽后，通过高优先级降速规则覆盖原保障规则，或执行BLOCK/REDIRECT动作，实现套餐超量体验切换
+design_intent: 解决"配额耗尽后用户体验切换"问题：月套餐用完后从高速降至低速或阻断
+core_mechanism_combo: 配额耗尽触发(QUOTA_EXHAUSTED/Final-Unit-Indication) → Final-Unit-Action(BLOCK/REDIRECT/RESTRICT) 或 PCF下发高优先级降速PCC规则覆盖 → URRGRPBINDING.DFTURRGRPNAME兜底
+status: active
+source_evidence_ids:
+- EV-KB-001(K037, K110, K214)
+- EV-BS-001
+- EV-FK-Online
+- EV-FK-Converged-UDG
+- EV-FK-Converged-UNC
+scopes:
+- scope: subscription
+  desc: 配额控制会话级
+- scope: subscriber
+  desc: 用户级配额
+participants:
+- name: UNC/SMF
+  role: 配额管理与耗尽触发
+  layer: control_plane
+- name: OCS/CHF
+  role: 配额分配与Final-Unit-Action下发
+  layer: external_system
+- name: UDG/UPF
+  role: 降速执行或阻断执行
+  layer: user_plane
+uses_feature:
+- GWFD-020300
+- GWFD-010173
+- WSFD-011206
+applies_decision_refs:
+- DP-CH-04

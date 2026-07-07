@@ -1,0 +1,38 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-09
+solution_name: 区域引导重定向方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 用户进入特定位置区域（PRA）或漫游（PLMN 变更）时，PCF 决策下发重定向策略到套餐订购页或免费接入验证页；走轨道 A（PCC 体系）+ PCF 决策 + 位置触发
+design_intent: 解决"出国引导签约优惠套餐、热点接入区域引导订购"问题：基于用户位置变化主动推送业务
+core_mechanism_combo: WSFD-211001（USRLOCATION）+ UPCF 触发器（PRA_CH/PLMN_CH/SAREA_CH）+条件组+动作组（重定向） → PCF → SMF → UPF
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-11
+- EV-TK-AC-03
+- EV-TK-AC-07
+scopes:
+- scope: location
+  desc: 按 PRA/PLMN/服务区域触发
+- scope: subscriber
+  desc: 单用户位置策略
+participants:
+- name: PCF
+  role: 基于位置的重定向决策
+  layer: external_system
+- name: SMF
+  role: 位置触发上报与策略翻译
+  layer: control_plane
+- name: UPF
+  role: 重定向执行
+  layer: user_plane
+uses_feature:
+- WSFD-211001
+- GWFD-110284
+- GWFD-110281
+selected_by_decision:
+- DP-AC-01
+- DP-AC-03
+applies_decision_refs:
+- DP-AC-06
+- DP-AC-07

@@ -1,0 +1,37 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-07
+solution_name: 接入控制方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 在注册/会话阶段基于 SAR（服务区域限制）/区域漫游/ODB（所有权闭锁）/位置触发等执行粗粒度接入控制，决策"是否允许接入"；与 UDG 侧业务流细粒度控制构成完整访问限制链路
+design_intent: 解决"区域套餐、漫游限制、ODB 欠费禁用、拥塞小区流控"问题：在用户接入网络前完成粗粒度准入决策
+core_mechanism_combo: 移动接入控制：AMF 的 SAR/区域漫游/ODB；会话接入控制：SMF 的服务区域限制；位置触发：USRLOCATION+USRLOCATIONGRP+UPBINDUPG+APNUSRPROFG → 策略下发
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-10
+- EV-FK-AC-11
+- EV-TK-AC-03
+- EV-TK-AC-07
+scopes:
+- scope: access
+  desc: 按接入点/DNN 粒度
+- scope: location
+  desc: 按 CGI/ECGI/NCGI/PRA/PLMN 位置触发
+participants:
+- name: AMF
+  role: 注册阶段移动接入控制，SAR/区域/ODB
+  layer: control_plane
+- name: SMF
+  role: 会话阶段服务区域限制
+  layer: control_plane
+- name: PCF
+  role: 基于位置的策略决策
+  layer: external_system
+uses_feature:
+- WSFD-211001
+- WSFD-106003
+- WSFD-105003
+- WSFD-106005
+- WSFD-105006
+applies_decision_refs:
+- DP-AC-04

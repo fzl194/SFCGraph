@@ -1,0 +1,33 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-05
+solution_name: Portal/WebProxy 重定向方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 通过 IP Farm 服务器集群实现重定向：用户 Portal 为周期性 captive/non-captive 交替（业务订购/广告推送），WebProxy 为透明 IP NAT（网络加速/病毒防护/内容过滤，唯一能处理加密协议）
+design_intent: 解决"业务订购推送、透明网络加速、加密协议重定向"问题；Portal 用于感知型重定向，WebProxy 用于无感知代理（HTTPS/HTTP2.0 场景唯一选择）
+core_mechanism_combo: Portal：IPFARM+IPFARMSERVER+LOGICINF → PCCPOLICYGRP（含 captive） → USERPROFILE（CAPMODETHRES）；WebProxy：IPFARM+IPFARMSERVER+LOGICINF+BLACKLISTRULE → RULE（POLICYTYPE=WEBPROXY） → USERPROFILE
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-07
+- EV-FK-AC-08
+- EV-TK-AC-06
+scopes:
+- scope: subscriber
+  desc: 单用户 Portal captive
+- scope: service_selection
+  desc: WebProxy 按 TCP SYN 匹配
+participants:
+- name: UPF
+  role: Portal HTTP 响应改写 / WebProxy L3 IP NAT
+  layer: user_plane
+- name: IP Farm 服务器集群
+  role: Portal Server / Proxy Server，service_endpoint
+- name: ADC/SA 引擎
+  role: Portal 依赖 L7 解析
+uses_feature:
+- GWFD-110281
+- GWFD-110282
+- GWFD-020357
+applies_decision_refs:
+- DP-AC-06
+- DP-AC-07

@@ -1,0 +1,70 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-BW-01
+solution_name: SA-BWM带宽控制方案
+belongs_to_scenario: NS-BW-01
+solution_summary: 通过SA识别业务类型，在UDG用户面执行BWM三级控制（用户级/组级/全局级），实现基于业务感知的差异化限速
+design_intent: 解决"按业务类型差异化限速"问题：低价值业务（P2P）限速，高价值业务保障
+core_mechanism_combo: SA识别(SVC/APP) → BWM规则匹配 → CAR令牌桶(CIR/PIR/CBS/PBS) / SHAPING整形(RATE/QUEDEPTH)
+status: active
+source_evidence_ids:
+- EV-FK-04
+- EV-FK-01
+- EV-FK-03
+- EV-FK-17
+- EV-FK-19
+- EV-FK-05
+- EV-FK-05
+- EV-CA-01
+scopes:
+- scope: subscriber
+  desc: 单用户特定业务限速
+- scope: service_selection
+  desc: 按SVC/APP分类限速
+participants:
+- name: UDG/UPF
+  role: 用户面执行BWM限速
+  layer: user_plane
+- name: UNC/SMF
+  role: 控制面规则下发与策略编排
+  layer: control_plane
+- name: PCRF/PCF
+  role: 策略决策源
+  layer: external_system
+uses_feature:
+- GWFD-110311
+- GWFD-110101
+- GWFD-020351
+- WSFD-109101
+- WSFD-211005
+- GWFD-020354
+- GWFD-110313
+selected_by_decision:
+- DP-BW-01
+decision_points:
+- decision_id: DP-BW-02
+  decision_name: 控制粒度选择
+  decision_question: 带宽控制应作用于哪个粒度
+  trigger_condition: 确定控制机制后
+  option_set:
+  - 会话级
+  - 业务级
+  - 用户组级
+  - 全局级
+  impact_summary: 决定BWMRULETYPE（SUBSCRIBER_SPECIFIC/GROUP_SPECIFIC/GLOBAL）和URR绑定方式
+  status: active
+  source_evidence_ids:
+  - EV-CA-01
+- decision_id: DP-BW-05
+  decision_name: BWM控制类型选择
+  decision_question: BWM控制器采用CAR还是Shaping
+  trigger_condition: 选择BWM机制后
+  option_set:
+  - CAR-CIR保障
+  - CAR-PIR限速
+  - SHAPING整形
+  impact_summary: 决定BWMCONTROLLER参数模式（CIR/PIR/CBS/PBS vs RATE/QUEDEPTH）；决定超额报文丢弃还是缓存
+  status: active
+  source_evidence_ids:
+  - EV-CA-01
+applies_decision_refs:
+- DP-BW-07

@@ -1,0 +1,37 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-08
+solution_name: 配额耗尽重定向方案
+belongs_to_scenario: NS-AC-01
+solution_summary: FUP 配额耗尽触发 US_RE/NO_CREDIT 事件，PCF 决策下发携带 RedirectInformation 的 PCC 规则，重定向用户到充值页面；走轨道 A（PCC 体系）+ PCF 决策垄断
+design_intent: 解决"套餐耗尽后引导充值"问题：流量/时长配额耗尽或信用失效时禁止上网并跳转充值页
+core_mechanism_combo: UPCF 配额+触发器（US_RE/NO_CREDIT）+条件组+动作组（含重定向） → PCF 通过 N7 下发 → SMF 映射 N4 → UPF 执行重定向
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-FK-AC-02
+- EV-TK-AC-03
+scopes:
+- scope: subscriber
+  desc: 单用户配额状态
+- scope: subscription
+  desc: 会话级配额累计
+participants:
+- name: PCF
+  role: 配额管理与重定向决策
+  layer: external_system
+- name: SMF
+  role: N7→N4 策略翻译
+  layer: control_plane
+- name: UPF
+  role: 重定向执行
+  layer: user_plane
+uses_feature:
+- GWFD-020351
+- WSFD-109101
+- GWFD-110284
+selected_by_decision:
+- DP-AC-01
+- DP-AC-03
+applies_decision_refs:
+- DP-AC-06
+- DP-AC-07

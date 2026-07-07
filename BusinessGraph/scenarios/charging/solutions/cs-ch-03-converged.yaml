@@ -1,0 +1,57 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-CH-03
+solution_name: 融合计费方案
+belongs_to_scenario: NS-CH-01
+solution_summary: 5G SA场景下SMF通过N40/Nchf服务化接口与CHF交互，同一PDU会话中在线RG和离线RG共存，由CCT模板控制RG来源和配额闭环；CHF融合CG的CGF和OCS的ABMF+RF
+design_intent: 解决"在线+离线统一"问题：同一用户部分业务在线计费、部分离线计费，数据归一避免不一致
+core_mechanism_combo: N40/Nchf服务化接口 → ChargingData Create/Update/Release三阶段 → CCT模板(RG来源+配额阈值) → 在线RG(GSU配额)+离线RG(仅参数)共存 → CHF生成CHF-CDR
+status: active
+source_evidence_ids:
+- EV-KB-001(K001, K101-K121, K201, K202, K105)
+- EV-FK-Converged-UDG
+- EV-FK-Converged-UNC
+- EV-FK-Content-UDG
+scopes:
+- scope: subscriber
+  desc: 融合计费用户
+- scope: subscription
+  desc: PDU会话级
+participants:
+- name: UNC/SMF
+  role: Nchf消费者，配额管理
+  layer: control_plane
+- name: CHF
+  role: Nchf提供者，配额+话单
+  layer: external_system
+- name: PCF
+  role: 通过N7下发chargingInfo含CHF地址
+  layer: control_plane
+- name: NRF
+  role: CHF发现
+  layer: control_plane
+- name: UDG/UPF
+  role: PFCP URR执行
+  layer: user_plane
+uses_feature:
+- GWFD-010173
+- WSFD-011206
+- GWFD-020301
+selected_by_decision:
+- DP-CH-01
+decision_points:
+- decision_id: DP-CH-08
+  decision_name: 跨网元一致性策略
+  decision_question: CP和UP参数如何对齐
+  trigger_condition: 双产品部署或动态PCC场景
+  option_set:
+  - 双产品协同(UPF+SMF)
+  - 仅UPF本地规则
+  - SMF动态下发
+  impact_summary: 决定配置路径（预定义/动态/本地规则）、USERPROFILE/RULENAME/URRID跨侧一致性要求
+  status: active
+  source_evidence_ids:
+  - EV-FK-PCC-UDG
+  - EV-FK-PCC-UNC
+  - EV-CFA
+applies_decision_refs:
+- DP-CH-04

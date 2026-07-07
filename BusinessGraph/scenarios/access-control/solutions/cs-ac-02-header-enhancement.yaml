@@ -1,0 +1,37 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-AC-02
+solution_name: 头增强方案
+belongs_to_scenario: NS-AC-01
+solution_summary: 在 HTTP/HTTPS/RTSP 请求报文头插入运营商规划字段（MSISDN/IMSI/IMEI/APN/位置等），支持业务认证、个性化服务、防欺诈校验；可选启用头防欺诈作为前置安全检测
+design_intent: 解决"业务服务器需获取用户真实身份"问题：WAP 网关、业务认证、防欺诈校验、个性化服务
+core_mechanism_combo: FILTER/L7FILTER → FLOWFILTER → HEADEN 对象（含可选 ANTIFRAUD/GRAYLIST） → RULE（POLICYTYPE=HEADEN） → USERPROFILE → UDG 插入字段
+status: active
+source_evidence_ids:
+- EV-CA-AC-01
+- EV-CA-AC-02
+- EV-FK-AC-03
+- EV-FK-AC-04
+- EV-TK-AC-05
+- EV-TK-AC-08
+scopes:
+- scope: subscriber
+  desc: 单用户头增强
+- scope: service_selection
+  desc: 按业务类型/URL/SNI 触发
+participants:
+- name: UPF
+  role: L7 解析与字段插入
+  layer: user_plane
+- name: ADC/SA 引擎
+  role: L7 解析前置，提供 URL/SNI/Method
+uses_feature:
+- GWFD-110261
+- GWFD-110262
+- GWFD-110263
+- GWFD-110401
+- GWFD-020357
+selected_by_decision:
+- DP-AC-01
+applies_decision_refs:
+- DP-AC-05
+- DP-AC-07

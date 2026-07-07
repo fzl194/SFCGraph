@@ -1,0 +1,103 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+scenario_id: NS-BW-01
+scenario_name: 带宽控制场景
+belongs_to_domain: BD-BSA-01
+scenario_summary: 对用户流量按业务类型、用户等级、套餐配额、应用类型、位置区域等维度进行差异化的带宽分配与限速控制
+judgment_basis: 需按业务类型/用户等级/套餐配额/应用类型/位置区域等维度进行差异化带宽分配与限速；或需对超额流量执行降速/整形/门控；或需对高价值业务执行GBR带宽保证
+typical_outcome: 实现BWM CAR限速/Shaping整形/FUP降速/GBR保证等差异化带宽管理；上下行带宽可独立控制；与无线侧调度联动优化
+status: active
+source_evidence_ids:
+- EV-CA-02
+- EV-CA-01
+- EV-TK-19
+- EV-TK-18
+coverage:
+  产品:
+  - UDG（用户面
+  - 16特性）+ UNC（控制面
+  - 8特性）
+  网元:
+  - SGW-U/PGW-U/UPF（UDG）
+  - SMF/PGW-C/AMF/GGSN-C（UNC）
+  接口:
+  - Gx（2/3/4G）
+  - N7（5G）
+  - N4（PFCP）
+  - GTP-U扩展头
+  控制维度:
+  - 套餐配额
+  - 应用类型
+  - 位置区域
+  - 用户等级
+  - 时间窗口
+non_coverage:
+- 计费场景（套餐1）：差异化计费、免费业务、配额计费动作（由计费场景图谱承载）
+- 访问限制场景（套餐3）：URL过滤、重定向阻断、接入控制（由访问限制场景图谱承载）
+contains_solutions:
+- CS-BW-01
+- CS-BW-02
+- CS-BW-03
+- CS-BW-04
+- CS-BW-05
+- CS-BW-06
+- CS-BW-07
+decision_points:
+- decision_id: DP-BW-01
+  decision_name: 带宽控制机制选择
+  decision_question: 当前业务流应采用哪种带宽控制机制
+  trigger_condition: 进入带宽控制配置时
+  option_set:
+  - CAR限速
+  - Shaping整形
+  - GBR保证
+  - FUP降速
+  - 门控阻断
+  impact_summary: 决定使用哪些CS（CS-BW-01~05）和Feature；决定BWMCONTROLLER.CTRLTYPE或QOSPROP路径
+  selects_solutions:
+  - CS-BW-01
+  - CS-BW-02
+  - CS-BW-03
+  - CS-BW-05
+  selection_note: 带宽控制机制选择决定方案闭包
+  status: active
+  source_evidence_ids:
+  - EV-CA-01
+  - EV-CA-02
+- decision_id: DP-BW-04
+  decision_name: 接口代际选择
+  decision_question: 当前部署是4G还是5G
+  trigger_condition: 进入UNC侧配置时
+  option_set:
+  - Gx(4G)
+  - N7(5G)
+  impact_summary: 决定参数体系（QCI/MBR vs 5QI/Session-AMBR）和信令映射；FUP Gx需额外配置UMCH
+  status: active
+  source_evidence_ids:
+  - EV-CA-01
+  - EV-CA-02
+- decision_id: DP-BW-07
+  decision_name: 应用识别需求
+  decision_question: 当前场景是否需要L7应用识别
+  trigger_condition: 选择规则类型前
+  option_set:
+  - 需L7识别→预定义规则
+  - 仅L3L4→可用动态规则
+  impact_summary: 决定规则类型和SA依赖；定向业务/ADC必须用预定义规则
+  owner_solutions:
+  - CS-BW-01
+  - CS-BW-04
+  status: active
+  source_evidence_ids:
+  - EV-CA-02
+- decision_id: DP-BW-08
+  decision_name: 产品面配置分工
+  decision_question: 配置应在UDG、UNC还是双产品协作
+  trigger_condition: 进入配置实施时
+  option_set:
+  - UDG执行面
+  - UNC控制面
+  - 双产品协作
+  impact_summary: 决定配置入口和N4下发链路；BWM在UDG配置执行参数，在UNC配置策略规则
+  status: active
+  source_evidence_ids:
+  - EV-CA-01

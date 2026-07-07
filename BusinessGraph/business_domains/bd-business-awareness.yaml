@@ -1,0 +1,25 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+domain_id: BD-BSA-01
+domain_name: 业务感知
+domain_summary: 在用户会话过程中，对用户的数据报文进行解析，从而区分出用户使用的不同业务，以实现策略控制和计费控制
+status: active
+alias_ids:
+- BD-AC-01
+- BD-BW-01
+- BD-CH-01
+contains_scenarios:
+- NS-AC-01
+- NS-BW-01
+- NS-CH-01
+source_evidence_ids:
+- EV-KB-001
+- EV-BS-001
+- EV-CA-02
+- EV-CA-01
+- EV-TK-19
+- EV-TK-18
+- EV-CA-AC-01
+- EV-CA-AC-02
+- EV-FK-AC-01
+- EV-TK-AC-01
+notes: 源数据中 BD-CH-01 / BD-BW-01 / BD-AC-01 三者指同一根对象「业务感知」（计费/带宽控制/访问限制三场景共享 SA 基础设施），此处统一为单一业务域对象。

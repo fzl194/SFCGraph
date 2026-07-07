@@ -1,0 +1,28 @@
+# 由 BusinessGraph/scripts/gen_from_business_graph.py 自动生成；请勿手改，改源 md 后重跑。
+solution_id: CS-CH-07
+solution_name: 兜底默认计费方案
+belongs_to_scenario: NS-CH-01
+solution_summary: 通过DFTURRGRPNAME+DFTSIGURRGNAME双重兜底，确保未命中任何RULE的流量仍按默认费率计费；异常流量通过SIGURRGRPNAME引用异常URRGROUP单独计费
+design_intent: 解决"未匹配流量漏计费"问题：默认所有流量都有RG标识，无遗漏
+core_mechanism_combo: USERPROFILE.DFTURRGRPNAME(默认计费URR组) + DFTSIGURRGNAME(异常信令URR组) → 未命中RULE的流量自动走默认URR组 → SET SPECTRAFURRGRP(全局特殊流量兜底)
+status: active
+source_evidence_ids:
+- EV-KB-001(K216)
+- EV-BS-001
+- EV-FK-Content-UDG
+- EV-FK-PCC-UDG
+scopes:
+- scope: subscription
+  desc: UserProfile级兜底
+participants:
+- name: UDG/UPF
+  role: 默认URR组执行
+  layer: user_plane
+- name: UNC/SMF
+  role: 默认计费规则下发
+  layer: control_plane
+uses_feature:
+- GWFD-020301
+- GWFD-020351
+applies_decision_refs:
+- DP-CH-07
