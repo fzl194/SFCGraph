@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@FEATLOCREPORT]] · 基于特性的位置上报配置（FEATLOCREPORT）
+- [[configobject/UNC/20.15.2/FEATLOCREPORT]] · 基于特性的位置上报配置（FEATLOCREPORT）
 
 ## 使用实例
 

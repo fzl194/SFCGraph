@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NTPCFG]] · NTP时间同步参数（NTPCFG）
+- [[configobject/UDG/20.15.2/NTPCFG]] · NTP时间同步参数（NTPCFG）
 
 ## 使用实例
 

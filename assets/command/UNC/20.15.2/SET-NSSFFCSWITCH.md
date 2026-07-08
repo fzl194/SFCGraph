@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NSSFFCSWITCH]] · NSSF流控开关（NSSFFCSWITCH）
+- [[configobject/UNC/20.15.2/NSSFFCSWITCH]] · NSSF流控开关（NSSFFCSWITCH）
 
 ## 使用实例
 

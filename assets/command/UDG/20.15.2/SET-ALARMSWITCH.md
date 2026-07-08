@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ALARMSWITCH]] · 安全事件告警开关（ALARMSWITCH）
+- [[configobject/UDG/20.15.2/ALARMSWITCH]] · 安全事件告警开关（ALARMSWITCH）
 
 ## 使用实例
 

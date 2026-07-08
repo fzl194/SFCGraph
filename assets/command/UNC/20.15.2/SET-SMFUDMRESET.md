@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMFUDMRESET]] · SMF的UDM故障重选策略（SMFUDMRESET）
+- [[configobject/UNC/20.15.2/SMFUDMRESET]] · SMF的UDM故障重选策略（SMFUDMRESET）
 
 ## 使用实例
 

@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AUTOSCALINGSRBFD]] · 静态路由的动态BFD自动化配置模板（AUTOSCALINGSRBFD）
+- [[configobject/UNC/20.15.2/AUTOSCALINGSRBFD]] · 静态路由的动态BFD自动化配置模板（AUTOSCALINGSRBFD）
 
 ## 使用实例
 

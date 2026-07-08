@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@XSMINNERDATA]] · XSM模块与其他模块的组件间交互消息（XSMINNERDATA）
+- [[configobject/UNC/20.15.2/XSMINNERDATA]] · XSM模块与其他模块的组件间交互消息（XSMINNERDATA）
 
 ## 使用实例
 

@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ANTISPOOFINGTHD]] · 攻击用户去活报文的阈值（ANTISPOOFINGTHD）
+- [[configobject/UDG/20.15.2/ANTISPOOFINGTHD]] · 攻击用户去活报文的阈值（ANTISPOOFINGTHD）
 
 ## 使用实例
 

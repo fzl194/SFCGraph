@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@FABDIAGPARA]] · Pod Fabric平面亚健康诊断参数（FABDIAGPARA）
+- [[configobject/UDG/20.15.2/FABDIAGPARA]] · Pod Fabric平面亚健康诊断参数（FABDIAGPARA）
 
 ## 使用实例
 

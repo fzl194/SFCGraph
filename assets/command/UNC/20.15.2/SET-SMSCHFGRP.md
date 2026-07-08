@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMSCHFGRP]] · 短消息计费CHF组（SMSCHFGRP）
+- [[configobject/UNC/20.15.2/SMSCHFGRP]] · 短消息计费CHF组（SMSCHFGRP）
 
 ## 使用实例
 

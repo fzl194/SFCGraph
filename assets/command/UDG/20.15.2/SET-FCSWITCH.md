@@ -49,7 +49,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@FCSWITCH]] · 流控开关（FCSWITCH）
+- [[configobject/UDG/20.15.2/FCSWITCH]] · 流控开关（FCSWITCH）
 
 ## 使用实例
 

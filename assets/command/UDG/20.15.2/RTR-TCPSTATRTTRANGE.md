@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TCPSTATRTTRANGE]] · TCP统计功能的RTT区间为初始值（TCPSTATRTTRANGE）
+- [[configobject/UDG/20.15.2/TCPSTATRTTRANGE]] · TCP统计功能的RTT区间为初始值（TCPSTATRTTRANGE）
 
 ## 使用实例
 

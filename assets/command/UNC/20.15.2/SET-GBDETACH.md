@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GBDETACH]] · Gb分离非活动用户参数（GBDETACH）
+- [[configobject/UNC/20.15.2/GBDETACH]] · Gb分离非活动用户参数（GBDETACH）
 
 ## 使用实例
 

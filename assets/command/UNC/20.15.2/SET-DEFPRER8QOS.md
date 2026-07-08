@@ -79,7 +79,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DEFPRER8QOS]] · 缺省的Pre-R8 QoS参数（DEFPRER8QOS）
+- [[configobject/UNC/20.15.2/DEFPRER8QOS]] · 缺省的Pre-R8 QoS参数（DEFPRER8QOS）
 
 ## 使用实例
 

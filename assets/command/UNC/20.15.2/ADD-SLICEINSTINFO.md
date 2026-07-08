@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SLICEINSTINFO]] · 服务支持的切片实例（SLICEINSTINFO）
+- [[configobject/UNC/20.15.2/SLICEINSTINFO]] · 服务支持的切片实例（SLICEINSTINFO）
 
 ## 使用实例
 

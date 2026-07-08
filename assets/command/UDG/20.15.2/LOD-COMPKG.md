@@ -43,7 +43,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@COMPKG]] · 扩展包（COMPKG）
+- [[configobject/UDG/20.15.2/COMPKG]] · 扩展包（COMPKG）
 
 ## 使用实例
 

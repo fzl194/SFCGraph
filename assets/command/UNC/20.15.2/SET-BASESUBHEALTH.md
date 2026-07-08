@@ -50,7 +50,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@BASESUBHEALTH]] · base链路亚健康信息（BASESUBHEALTH）
+- [[configobject/UNC/20.15.2/BASESUBHEALTH]] · base链路亚健康信息（BASESUBHEALTH）
 
 ## 使用实例
 

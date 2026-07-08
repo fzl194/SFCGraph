@@ -73,7 +73,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHGCHAR]] · 计费属性参数（CHGCHAR）
+- [[configobject/UNC/20.15.2/CHGCHAR]] · 计费属性参数（CHGCHAR）
 
 ## 使用实例
 

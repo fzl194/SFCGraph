@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CNTCPUTHD]] · 容器CPU阈值（CNTCPUTHD）
+- [[configobject/UDG/20.15.2/CNTCPUTHD]] · 容器CPU阈值（CNTCPUTHD）
 
 ## 使用实例
 

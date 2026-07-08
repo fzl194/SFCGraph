@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NASCMPT]] · NAS兼容性参数（NASCMPT）
+- [[configobject/UNC/20.15.2/NASCMPT]] · NAS兼容性参数（NASCMPT）
 
 ## 使用实例
 

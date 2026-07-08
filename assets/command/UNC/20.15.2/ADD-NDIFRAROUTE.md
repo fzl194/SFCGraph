@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NDIFRAROUTE]] · 接口上ND RA路由配置信息（NDIFRAROUTE）
+- [[configobject/UNC/20.15.2/NDIFRAROUTE]] · 接口上ND RA路由配置信息（NDIFRAROUTE）
 
 ## 使用实例
 

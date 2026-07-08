@@ -1,0 +1,32 @@
+---
+id: UDG@20.15.2@ConfigObject@USER
+type: ConfigObject
+name: USER（用户操作权限）
+nf: UDG
+version: 20.15.2
+object_name: USER
+object_kind: entity
+status: active
+---
+
+# USER（用户操作权限）
+
+## 说明
+
+本命令用于创建OM Portal的操作用户。该用户可以通过OM Portal页面登录系统。
+
+- 账号策略：对于账号的一些特定要求，可以通过OM Portal的“ 安全 > 安全策略 ”查询。
+- 密码策略：对于密码的一些特定要求，可以通过OM Portal的“ 安全 > 安全策略 ”查询。
+- 默认用户：系统缺省已配置的用户，可以通过OM Portal的“ 安全 > 用户管理 ”查询。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-USER]] · ADD USER
+- [[command/UDG/20.15.2/MOD-USER]] · MOD USER
+- [[command/UDG/20.15.2/RMV-USER]] · RMV USER
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/USER.md`
+- 原始手册：`evidence/UDG/20.15.2/USER.md`
+- 原始手册：`evidence/UDG/20.15.2/USER.md`

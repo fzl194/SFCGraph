@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@REPORTFAILUREINFO]] · RU组件上报的故障信息（REPORTFAILUREINFO）
+- [[configobject/UDG/20.15.2/REPORTFAILUREINFO]] · RU组件上报的故障信息（REPORTFAILUREINFO）
 
 ## 使用实例
 

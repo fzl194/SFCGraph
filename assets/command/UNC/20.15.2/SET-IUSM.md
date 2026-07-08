@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IUSM]] · Iu模式SM协议参数（IUSM）
+- [[configobject/UNC/20.15.2/IUSM]] · Iu模式SM协议参数（IUSM）
 
 ## 使用实例
 

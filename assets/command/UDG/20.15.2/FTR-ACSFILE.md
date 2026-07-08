@@ -52,7 +52,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACSFILE]] · 文件传输（ACSFILE）
+- [[configobject/UDG/20.15.2/ACSFILE]] · 文件传输（ACSFILE）
 
 ## 使用实例
 

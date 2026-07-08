@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SHAREPLMNMEM]] · 共享PLMN群组成员（SHAREPLMNMEM）
+- [[configobject/UNC/20.15.2/SHAREPLMNMEM]] · 共享PLMN群组成员（SHAREPLMNMEM）
 
 ## 使用实例
 

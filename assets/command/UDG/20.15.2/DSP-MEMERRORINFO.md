@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MEMERRORINFO]] · 内存错误信息（MEMERRORINFO）
+- [[configobject/UDG/20.15.2/MEMERRORINFO]] · 内存错误信息（MEMERRORINFO）
 
 ## 使用实例
 

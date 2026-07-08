@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ERRCDRALM]] · 错误话单告警参数（ERRCDRALM）
+- [[configobject/UNC/20.15.2/ERRCDRALM]] · 错误话单告警参数（ERRCDRALM）
 
 ## 使用实例
 

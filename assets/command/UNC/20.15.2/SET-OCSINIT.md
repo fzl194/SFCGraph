@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OCSINIT]] · DCC模板OCS初始化（OCSINIT）
+- [[configobject/UNC/20.15.2/OCSINIT]] · DCC模板OCS初始化（OCSINIT）
 
 ## 使用实例
 

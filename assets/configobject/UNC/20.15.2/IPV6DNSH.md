@@ -1,0 +1,40 @@
+---
+id: UNC@20.15.2@ConfigObject@IPV6DNSH
+type: ConfigObject
+name: IPV6DNSH（IPV6 DNS Hostfile记录）
+nf: UNC
+version: 20.15.2
+object_name: IPV6DNSH
+object_kind: entity
+applicable_nf:
+- SGSN
+- MME
+status: active
+---
+
+# IPV6DNSH（IPV6 DNS Hostfile记录）
+
+## 说明
+
+**适用网元：SGSN、MME**
+
+该命令用于配置网元接口所对应的IPv6地址信息，该信息用于网元选择时DNS查询功能。
+
+如果配置了多个IP地址，域名解析结果中将会根据 “PRIORITY（优先级）” 和 “WEIGHT（权重）” 进行先后次序排列：
+
+1. 优先级别高的排前面。
+2. 同一优先级别的再按照权重来选择，权重越大，则排在前面的概率越高。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-IPV6DNSH]] · ADD IPV6DNSH
+- [[command/UNC/20.15.2/LST-IPV6DNSH]] · LST IPV6DNSH
+- [[command/UNC/20.15.2/MOD-IPV6DNSH]] · MOD IPV6DNSH
+- [[command/UNC/20.15.2/RMV-IPV6DNSH]] · RMV IPV6DNSH
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`
+- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`
+- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`
+- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`

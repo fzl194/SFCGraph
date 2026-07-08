@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CFIPWHITELIST]] · IP地址白名单列表（CFIPWHITELIST）
+- [[configobject/UDG/20.15.2/CFIPWHITELIST]] · IP地址白名单列表（CFIPWHITELIST）
 
 ## 使用实例
 

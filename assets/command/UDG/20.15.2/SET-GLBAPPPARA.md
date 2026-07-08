@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@GLBAPPPARA]] · 全局app参数（GLBAPPPARA）
+- [[configobject/UDG/20.15.2/GLBAPPPARA]] · 全局app参数（GLBAPPPARA）
 
 ## 使用实例
 

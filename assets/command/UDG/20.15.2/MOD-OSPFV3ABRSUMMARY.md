@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OSPFV3ABRSUMMARY]] · OSPFv3区域内路由聚合配置（OSPFV3ABRSUMMARY）
+- [[configobject/UDG/20.15.2/OSPFV3ABRSUMMARY]] · OSPFv3区域内路由聚合配置（OSPFV3ABRSUMMARY）
 
 ## 使用实例
 

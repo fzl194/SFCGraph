@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@BGPMULTIPEER
+type: ConfigObject
+name: BGPMULTIPEER（BGP多源对等体）
+nf: UNC
+version: 20.15.2
+object_name: BGPMULTIPEER
+object_kind: entity
+status: active
+---
+
+# BGPMULTIPEER（BGP多源对等体）
+
+## 说明
+
+该命令用于创建BGP多源对等体。当需要支持多个接口处理单元上的同网段IP地址与远端的同一个IP地址建立多个对等体关系时，可以执行此命令。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-BGPMULTIPEER]] · ADD BGPMULTIPEER
+- [[command/UNC/20.15.2/LST-BGPMULTIPEER]] · LST BGPMULTIPEER
+- [[command/UNC/20.15.2/MOD-BGPMULTIPEER]] · MOD BGPMULTIPEER
+- [[command/UNC/20.15.2/RMV-BGPMULTIPEER]] · RMV BGPMULTIPEER
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/BGPMULTIPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/BGPMULTIPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/BGPMULTIPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/BGPMULTIPEER.md`

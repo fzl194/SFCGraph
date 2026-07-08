@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@FEATUREDISABLE]] · 特性下线（FEATUREDISABLE）
+- [[configobject/UNC/20.15.2/FEATUREDISABLE]] · 特性下线（FEATUREDISABLE）
 
 ## 使用实例
 

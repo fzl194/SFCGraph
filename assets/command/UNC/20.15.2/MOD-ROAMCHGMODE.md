@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ROAMCHGMODE]] · 基于漫游属性的计费接口选择方式（ROAMCHGMODE）
+- [[configobject/UNC/20.15.2/ROAMCHGMODE]] · 基于漫游属性的计费接口选择方式（ROAMCHGMODE）
 
 ## 使用实例
 

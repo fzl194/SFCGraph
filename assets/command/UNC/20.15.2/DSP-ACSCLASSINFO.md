@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACSCLASSINFO]] · 配置表信息（ACSCLASSINFO）
+- [[configobject/UNC/20.15.2/ACSCLASSINFO]] · 配置表信息（ACSCLASSINFO）
 
 ## 使用实例
 

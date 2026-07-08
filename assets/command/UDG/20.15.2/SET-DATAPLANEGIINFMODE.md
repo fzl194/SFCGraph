@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DATAPLANEGIINFMODE]] · 用户面下行模式配置（DATAPLANEGIINFMODE）
+- [[configobject/UDG/20.15.2/DATAPLANEGIINFMODE]] · 用户面下行模式配置（DATAPLANEGIINFMODE）
 
 ## 使用实例
 

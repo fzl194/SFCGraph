@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGUSERNUMCTRL]] · 5G接入用户数控制参数（NGUSERNUMCTRL）
+- [[configobject/UNC/20.15.2/NGUSERNUMCTRL]] · 5G接入用户数控制参数（NGUSERNUMCTRL）
 
 ## 使用实例
 

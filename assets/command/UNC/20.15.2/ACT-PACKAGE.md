@@ -52,7 +52,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PACKAGE]] · 软件包（PACKAGE）
+- [[configobject/UNC/20.15.2/PACKAGE]] · 软件包（PACKAGE）
 
 ## 使用实例
 

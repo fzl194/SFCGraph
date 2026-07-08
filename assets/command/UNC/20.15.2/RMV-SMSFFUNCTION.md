@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMSFFUNCTION]] · SMSF功能实例信息（SMSFFUNCTION）
+- [[configobject/UNC/20.15.2/SMSFFUNCTION]] · SMSF功能实例信息（SMSFFUNCTION）
 
 ## 使用实例
 

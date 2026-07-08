@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PERFGTPVER]] · 版本粒度的测量对象（PERFGTPVER）
+- [[configobject/UDG/20.15.2/PERFGTPVER]] · 版本粒度的测量对象（PERFGTPVER）
 
 ## 使用实例
 

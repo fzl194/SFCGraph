@@ -50,7 +50,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CONFIG]] · 锁定配置（CONFIG）
+- [[configobject/UNC/20.15.2/CONFIG]] · 锁定配置（CONFIG）
 
 ## 使用实例
 

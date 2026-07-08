@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GLBCHARGECHAR]] · 对本地用户、漫游用户、拜访用户所采用的计费属性（GLBCHARGECHAR）
+- [[configobject/UNC/20.15.2/GLBCHARGECHAR]] · 对本地用户、漫游用户、拜访用户所采用的计费属性（GLBCHARGECHAR）
 
 ## 使用实例
 

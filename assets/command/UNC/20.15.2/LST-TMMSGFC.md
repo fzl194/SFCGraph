@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TMMSGFC]] · 跟踪消息流控状态（TMMSGFC）
+- [[configobject/UNC/20.15.2/TMMSGFC]] · 跟踪消息流控状态（TMMSGFC）
 
 ## 使用实例
 

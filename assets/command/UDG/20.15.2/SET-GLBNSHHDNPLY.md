@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@GLBNSHHDNPLY]] · NSH头增强全局策略（GLBNSHHDNPLY）
+- [[configobject/UDG/20.15.2/GLBNSHHDNPLY]] · NSH头增强全局策略（GLBNSHHDNPLY）
 
 ## 使用实例
 

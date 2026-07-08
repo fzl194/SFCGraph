@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@BGPPEERBFD]] · BGP对等体BFD检测（BGPPEERBFD）
+- [[configobject/UDG/20.15.2/BGPPEERBFD]] · BGP对等体BFD检测（BGPPEERBFD）
 
 ## 使用实例
 

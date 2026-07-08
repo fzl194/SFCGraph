@@ -1,0 +1,30 @@
+---
+id: UDG@20.15.2@ConfigObject@OSPFV3FILTERPOLICY
+type: ConfigObject
+name: OSPFV3FILTERPOLICY（OSPFv3过滤策略配置）
+nf: UDG
+version: 20.15.2
+object_name: OSPFV3FILTERPOLICY
+object_kind: entity
+status: active
+---
+
+# OSPFV3FILTERPOLICY（OSPFv3过滤策略配置）
+
+## 说明
+
+该命令用于创建OSPFv3过滤策略。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-OSPFV3FILTERPOLICY]] · ADD OSPFV3FILTERPOLICY
+- [[command/UDG/20.15.2/LST-OSPFV3FILTERPOLICY]] · LST OSPFV3FILTERPOLICY
+- [[command/UDG/20.15.2/MOD-OSPFV3FILTERPOLICY]] · MOD OSPFV3FILTERPOLICY
+- [[command/UDG/20.15.2/RMV-OSPFV3FILTERPOLICY]] · RMV OSPFV3FILTERPOLICY
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3FILTERPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3FILTERPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3FILTERPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3FILTERPOLICY.md`

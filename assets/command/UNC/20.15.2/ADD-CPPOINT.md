@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CPPOINT]] · CP端点信息（CPPOINT）
+- [[configobject/UNC/20.15.2/CPPOINT]] · CP端点信息（CPPOINT）
 
 ## 使用实例
 

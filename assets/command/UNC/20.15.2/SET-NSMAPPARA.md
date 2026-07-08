@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NSMAPPARA]] · 网络切片映射相关参数（NSMAPPARA）
+- [[configobject/UNC/20.15.2/NSMAPPARA]] · 网络切片映射相关参数（NSMAPPARA）
 
 ## 使用实例
 

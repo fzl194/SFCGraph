@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACSELECTSERVICE]] · 仲裁服务状态（ACSELECTSERVICE）
+- [[configobject/UDG/20.15.2/ACSELECTSERVICE]] · 仲裁服务状态（ACSELECTSERVICE）
 
 ## 使用实例
 

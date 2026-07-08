@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@INTPDUPLCY]] · 异网漫游PDU会话重建策略（INTPDUPLCY）
+- [[configobject/UNC/20.15.2/INTPDUPLCY]] · 异网漫游PDU会话重建策略（INTPDUPLCY）
 
 ## 使用实例
 

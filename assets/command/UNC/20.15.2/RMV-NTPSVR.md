@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NTPSVR]] · NTP服务器（NTPSVR）
+- [[configobject/UNC/20.15.2/NTPSVR]] · NTP服务器（NTPSVR）
 
 ## 使用实例
 

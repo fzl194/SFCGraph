@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OPSPROCESSSTATE]] · 通过OPS运行的应用程序的信息（OPSPROCESSSTATE）
+- [[configobject/UNC/20.15.2/OPSPROCESSSTATE]] · 通过OPS运行的应用程序的信息（OPSPROCESSSTATE）
 
 ## 使用实例
 

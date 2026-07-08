@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TOPROXYCFG]] · TCP代理配置（TOPROXYCFG）
+- [[configobject/UDG/20.15.2/TOPROXYCFG]] · TCP代理配置（TOPROXYCFG）
 
 ## 使用实例
 

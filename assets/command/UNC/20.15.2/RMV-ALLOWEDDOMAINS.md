@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ALLOWEDDOMAINS]] · 允许访问的域名（ALLOWEDDOMAINS）
+- [[configobject/UNC/20.15.2/ALLOWEDDOMAINS]] · 允许访问的域名（ALLOWEDDOMAINS）
 
 ## 使用实例
 

@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CACHEWHITELST]] · 异网白名单PLMN信息（CACHEWHITELST）
+- [[configobject/UNC/20.15.2/CACHEWHITELST]] · 异网白名单PLMN信息（CACHEWHITELST）
 
 ## 使用实例
 

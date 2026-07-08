@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMTIMER]] · 5GC会话管理定时器参数（SMTIMER）
+- [[configobject/UNC/20.15.2/SMTIMER]] · 5GC会话管理定时器参数（SMTIMER）
 
 ## 使用实例
 

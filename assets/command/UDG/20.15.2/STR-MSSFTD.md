@@ -53,7 +53,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MSSFTD]] · 微服务软件调测（MSSFTD）
+- [[configobject/UDG/20.15.2/MSSFTD]] · 微服务软件调测（MSSFTD）
 
 ## 使用实例
 

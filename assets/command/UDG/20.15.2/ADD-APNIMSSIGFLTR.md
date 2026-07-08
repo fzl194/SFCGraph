@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APNIMSSIGFLTR]] · APN的IMS分类器（APNIMSSIGFLTR）
+- [[configobject/UDG/20.15.2/APNIMSSIGFLTR]] · APN的IMS分类器（APNIMSSIGFLTR）
 
 ## 关联任务
 

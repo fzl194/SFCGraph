@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RESULTCODESCP]] · 配置MODELC/D组网的SCP原因码控制（RESULTCODESCP）
+- [[configobject/UNC/20.15.2/RESULTCODESCP]] · 配置MODELC/D组网的SCP原因码控制（RESULTCODESCP）
 
 ## 使用实例
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHARGECHAR]] · 对本地用户、漫游用户、拜访用户所采用的计费属性（CHARGECHAR）
+- [[configobject/UNC/20.15.2/CHARGECHAR]] · 对本地用户、漫游用户、拜访用户所采用的计费属性（CHARGECHAR）
 
 ## 使用实例
 

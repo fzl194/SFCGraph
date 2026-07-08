@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CELLBINDGRP]] · 小区和小区组绑定关系（CELLBINDGRP）
+- [[configobject/UDG/20.15.2/CELLBINDGRP]] · 小区和小区组绑定关系（CELLBINDGRP）
 
 ## 使用实例
 

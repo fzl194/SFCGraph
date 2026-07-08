@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@REASTIMEOUT]] · IPv4报文重组超时配置（REASTIMEOUT）
+- [[configobject/UDG/20.15.2/REASTIMEOUT]] · IPv4报文重组超时配置（REASTIMEOUT）
 
 ## 使用实例
 

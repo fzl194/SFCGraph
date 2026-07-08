@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SYSLOGTASK]] · 上报任务（SYSLOGTASK）
+- [[configobject/UDG/20.15.2/SYSLOGTASK]] · 上报任务（SYSLOGTASK）
 
 ## 使用实例
 

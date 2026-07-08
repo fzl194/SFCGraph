@@ -44,7 +44,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACSDATA]] · ACS管理服务数据（ACSDATA）
+- [[configobject/UDG/20.15.2/ACSDATA]] · ACS管理服务数据（ACSDATA）
 
 ## 使用实例
 

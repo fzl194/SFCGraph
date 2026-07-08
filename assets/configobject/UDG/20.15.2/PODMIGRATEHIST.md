@@ -1,0 +1,27 @@
+---
+id: UDG@20.15.2@ConfigObject@PODMIGRATEHIST
+type: ConfigObject
+name: PODMIGRATEHIST（节点扩缩容任务进展）
+nf: UDG
+version: 20.15.2
+object_name: PODMIGRATEHIST
+object_kind: query_target
+status: active
+---
+
+# PODMIGRATEHIST（节点扩缩容任务进展）
+
+## 说明
+
+查询最近一次下发命令 [**OPR PODMIGRATE**](操作节点扩缩容与Pod迁移任务（OPR PODMIGRATE）_42938091.md) 触发的节点扩容/缩容任务进度和状态。
+
+> **说明**
+> 该命令执行后立即生效。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-PODMIGRATEHIST]] · DSP PODMIGRATEHIST
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/PODMIGRATEHIST.md`

@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OPTLOG]] · 操作日志（OPTLOG）
+- [[configobject/UNC/20.15.2/OPTLOG]] · 操作日志（OPTLOG）
 
 ## 使用实例
 

@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NBOFFLOADBYMME]] · NB-IoT用户的MME迁移任务（NBOFFLOADBYMME）
+- [[configobject/UNC/20.15.2/NBOFFLOADBYMME]] · NB-IoT用户的MME迁移任务（NBOFFLOADBYMME）
 
 ## 使用实例
 

@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@QOSCAPWHITEAPNS]] · 不受SMFQOSCAP配置控制的APN白名单列表。（QOSCAPWHITEAPNS）
+- [[configobject/UNC/20.15.2/QOSCAPWHITEAPNS]] · 不受SMFQOSCAP配置控制的APN白名单列表。（QOSCAPWHITEAPNS）
 
 ## 使用实例
 

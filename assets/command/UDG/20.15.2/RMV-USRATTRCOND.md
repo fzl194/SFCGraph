@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@USRATTRCOND]] · 用户属性过滤条件（USRATTRCOND）
+- [[configobject/UDG/20.15.2/USRATTRCOND]] · 用户属性过滤条件（USRATTRCOND）
 
 ## 使用实例
 

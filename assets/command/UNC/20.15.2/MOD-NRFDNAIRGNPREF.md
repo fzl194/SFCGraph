@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFDNAIRGNPREF]] · DNAI区域优选规则（NRFDNAIRGNPREF）
+- [[configobject/UNC/20.15.2/NRFDNAIRGNPREF]] · DNAI区域优选规则（NRFDNAIRGNPREF）
 
 ## 使用实例
 

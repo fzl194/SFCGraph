@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UDMBYPASSSUB]] · UDM Bypass最小签约数据配置（UDMBYPASSSUB）
+- [[configobject/UNC/20.15.2/UDMBYPASSSUB]] · UDM Bypass最小签约数据配置（UDMBYPASSSUB）
 
 ## 使用实例
 

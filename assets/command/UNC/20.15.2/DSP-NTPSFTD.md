@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NTPSFTD]] · NTP软参（NTPSFTD）
+- [[configobject/UNC/20.15.2/NTPSFTD]] · NTP软参（NTPSFTD）
 
 ## 使用实例
 

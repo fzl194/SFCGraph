@@ -37,7 +37,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PODCPUTHD]] · POD CPU阈值（PODCPUTHD）
+- [[configobject/UNC/20.15.2/PODCPUTHD]] · POD CPU阈值（PODCPUTHD）
 
 ## 使用实例
 

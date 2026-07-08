@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMFN8CMPTPLCY]] · AMF N8接口兼容性策略（AMFN8CMPTPLCY）
+- [[configobject/UNC/20.15.2/AMFN8CMPTPLCY]] · AMF N8接口兼容性策略（AMFN8CMPTPLCY）
 
 ## 使用实例
 

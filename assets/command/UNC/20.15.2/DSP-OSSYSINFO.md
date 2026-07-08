@@ -40,7 +40,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OSSYSINFO]] · OS系统信息（OSSYSINFO）
+- [[configobject/UNC/20.15.2/OSSYSINFO]] · OS系统信息（OSSYSINFO）
 
 ## 使用实例
 

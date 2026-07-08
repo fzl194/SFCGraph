@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DHCP6CLIENTDUID]] · DHCPv6客户端DUID生成方式（DHCP6CLIENTDUID）
+- [[configobject/UDG/20.15.2/DHCP6CLIENTDUID]] · DHCPv6客户端DUID生成方式（DHCP6CLIENTDUID）
 
 ## 使用实例
 

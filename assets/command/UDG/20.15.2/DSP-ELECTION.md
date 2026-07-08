@@ -35,7 +35,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ELECTION]] · 集群选举实例信息（ELECTION）
+- [[configobject/UDG/20.15.2/ELECTION]] · 集群选举实例信息（ELECTION）
 
 ## 使用实例
 

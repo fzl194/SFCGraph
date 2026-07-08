@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGUSR]] · 5G用户（NGUSR）
+- [[configobject/UNC/20.15.2/NGUSR]] · 5G用户（NGUSR）
 
 ## 使用实例
 

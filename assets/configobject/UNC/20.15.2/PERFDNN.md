@@ -1,0 +1,32 @@
+---
+id: UNC@20.15.2@ConfigObject@PERFDNN
+type: ConfigObject
+name: PERFDNN（DNN性能统计对象）
+nf: UNC
+version: 20.15.2
+object_name: PERFDNN
+object_kind: entity
+applicable_nf:
+- SMF
+status: active
+---
+
+# PERFDNN（DNN性能统计对象）
+
+## 说明
+
+**适用NF：SMF**
+
+该命令用于增加DNN性能统计对象。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-PERFDNN]] · ADD PERFDNN
+- [[command/UNC/20.15.2/LST-PERFDNN]] · LST PERFDNN
+- [[command/UNC/20.15.2/RMV-PERFDNN]] · RMV PERFDNN
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/PERFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/PERFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/PERFDNN.md`

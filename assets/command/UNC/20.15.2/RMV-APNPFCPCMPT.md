@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNPFCPCMPT]] · 指定APN的PFCP私有信元携带配置（APNPFCPCMPT）
+- [[configobject/UNC/20.15.2/APNPFCPCMPT]] · 指定APN的PFCP私有信元携带配置（APNPFCPCMPT）
 
 ## 使用实例
 

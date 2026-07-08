@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IPV6GLOBALCONFIG]] · IPv6全局配置（IPV6GLOBALCONFIG）
+- [[configobject/UDG/20.15.2/IPV6GLOBALCONFIG]] · IPv6全局配置（IPV6GLOBALCONFIG）
 
 ## 使用实例
 

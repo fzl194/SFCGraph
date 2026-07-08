@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RECYCLE]] · 回收地址（RECYCLE）
+- [[configobject/UDG/20.15.2/RECYCLE]] · 回收地址（RECYCLE）
 
 ## 使用实例
 

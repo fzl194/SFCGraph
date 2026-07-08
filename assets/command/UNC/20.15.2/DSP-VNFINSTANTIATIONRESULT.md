@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@VNFINSTANTIATIONRESULT]] · 实例化完成结果查询（VNFINSTANTIATIONRESULT）
+- [[configobject/UNC/20.15.2/VNFINSTANTIATIONRESULT]] · 实例化完成结果查询（VNFINSTANTIATIONRESULT）
 
 ## 使用实例
 

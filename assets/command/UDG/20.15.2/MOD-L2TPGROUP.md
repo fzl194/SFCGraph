@@ -79,7 +79,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@L2TPGROUP]] · 指定L2TP组（L2TPGROUP）
+- [[configobject/UDG/20.15.2/L2TPGROUP]] · 指定L2TP组（L2TPGROUP）
 
 ## 使用实例
 

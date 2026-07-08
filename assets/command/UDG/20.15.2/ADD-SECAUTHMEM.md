@@ -43,7 +43,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SECAUTHMEM]] · 二次授权命令（SECAUTHMEM）
+- [[configobject/UDG/20.15.2/SECAUTHMEM]] · 二次授权命令（SECAUTHMEM）
 
 ## 使用实例
 

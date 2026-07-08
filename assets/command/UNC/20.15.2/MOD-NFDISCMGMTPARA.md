@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NFDISCMGMTPARA]] · 网元服务发现功能管理参数（NFDISCMGMTPARA）
+- [[configobject/UNC/20.15.2/NFDISCMGMTPARA]] · 网元服务发现功能管理参数（NFDISCMGMTPARA）
 
 ## 使用实例
 

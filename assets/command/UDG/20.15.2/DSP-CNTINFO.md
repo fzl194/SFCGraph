@@ -36,7 +36,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CNTINFO]] · 容器部署信息（CNTINFO）
+- [[configobject/UDG/20.15.2/CNTINFO]] · 容器部署信息（CNTINFO）
 
 ## 使用实例
 

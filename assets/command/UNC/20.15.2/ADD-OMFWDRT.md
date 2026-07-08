@@ -38,7 +38,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OMFWDRT]] · OM转发路由（OMFWDRT）
+- [[configobject/UNC/20.15.2/OMFWDRT]] · OM转发路由（OMFWDRT）
 
 ## 使用实例
 

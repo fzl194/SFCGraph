@@ -79,7 +79,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@INNER2PROTCAUSE]] · 内部原因值映射为协议原因值的配置（INNER2PROTCAUSE）
+- [[configobject/UNC/20.15.2/INNER2PROTCAUSE]] · 内部原因值映射为协议原因值的配置（INNER2PROTCAUSE）
 
 ## 使用实例
 

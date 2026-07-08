@@ -1,0 +1,24 @@
+---
+id: UDG@20.15.2@ConfigObject@DEVATTRSUB
+type: ConfigObject
+name: DEVATTRSUB（属性订阅信息）
+nf: UDG
+version: 20.15.2
+object_name: DEVATTRSUB
+object_kind: query_target
+status: active
+---
+
+# DEVATTRSUB（属性订阅信息）
+
+## 说明
+
+该命令用于显示资源单元上指定组件的设备属性订阅信息。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-DEVATTRSUB]] · DSP DEVATTRSUB
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/DEVATTRSUB.md`

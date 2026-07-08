@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@EPLMNGRPMEM]] · 等价PLMN组成员（EPLMNGRPMEM）
+- [[configobject/UNC/20.15.2/EPLMNGRPMEM]] · 等价PLMN组成员（EPLMNGRPMEM）
 
 ## 使用实例
 

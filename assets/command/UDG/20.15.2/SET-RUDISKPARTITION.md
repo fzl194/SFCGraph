@@ -61,7 +61,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RUDISKPARTITION]] · RU磁盘过载配置（RUDISKPARTITION）
+- [[configobject/UDG/20.15.2/RUDISKPARTITION]] · RU磁盘过载配置（RUDISKPARTITION）
 
 ## 使用实例
 

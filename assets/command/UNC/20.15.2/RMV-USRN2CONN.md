@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@USRN2CONN]] · N2接口AN信令连接（USRN2CONN）
+- [[configobject/UNC/20.15.2/USRN2CONN]] · N2接口AN信令连接（USRN2CONN）
 
 ## 使用实例
 

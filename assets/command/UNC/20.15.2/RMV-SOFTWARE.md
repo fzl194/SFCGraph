@@ -53,7 +53,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SOFTWARE]] · 下载软件仓软件（SOFTWARE）
+- [[configobject/UNC/20.15.2/SOFTWARE]] · 下载软件仓软件（SOFTWARE）
 
 ## 使用实例
 

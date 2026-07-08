@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SERVICEPROP]] · 业务属性（SERVICEPROP）
+- [[configobject/UNC/20.15.2/SERVICEPROP]] · 业务属性（SERVICEPROP）
 
 ## 使用实例
 

@@ -40,7 +40,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PODCONFIG]] · POD配置查询（PODCONFIG）
+- [[configobject/UDG/20.15.2/PODCONFIG]] · POD配置查询（PODCONFIG）
 
 ## 使用实例
 

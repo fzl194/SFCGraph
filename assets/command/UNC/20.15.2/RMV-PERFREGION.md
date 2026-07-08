@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PERFREGION]] · 区域性能统计对象（PERFREGION）
+- [[configobject/UNC/20.15.2/PERFREGION]] · 区域性能统计对象（PERFREGION）
 
 ## 使用实例
 

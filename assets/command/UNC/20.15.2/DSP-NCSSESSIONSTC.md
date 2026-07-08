@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NCSSESSIONSTC]] · NETCONF会话的统计信息（NCSSESSIONSTC）
+- [[configobject/UNC/20.15.2/NCSSESSIONSTC]] · NETCONF会话的统计信息（NCSSESSIONSTC）
 
 ## 使用实例
 

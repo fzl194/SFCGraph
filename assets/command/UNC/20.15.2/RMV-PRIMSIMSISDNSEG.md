@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PRIMSIMSISDNSEG]] · 代理IMSI/MSISDN号段（PRIMSIMSISDNSEG）
+- [[configobject/UNC/20.15.2/PRIMSIMSISDNSEG]] · 代理IMSI/MSISDN号段（PRIMSIMSISDNSEG）
 
 ## 使用实例
 

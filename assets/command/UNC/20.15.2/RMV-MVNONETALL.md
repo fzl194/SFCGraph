@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MVNONETALL]] · 所有MVNO网络配置信息（MVNONETALL）
+- [[configobject/UNC/20.15.2/MVNONETALL]] · 所有MVNO网络配置信息（MVNONETALL）
 
 ## 使用实例
 

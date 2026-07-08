@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SPECTRAFURRGRP]] · 全局缺省费率的流量使用量上报规则组（SPECTRAFURRGRP）
+- [[configobject/UDG/20.15.2/SPECTRAFURRGRP]] · 全局缺省费率的流量使用量上报规则组（SPECTRAFURRGRP）
 
 ## 使用实例
 

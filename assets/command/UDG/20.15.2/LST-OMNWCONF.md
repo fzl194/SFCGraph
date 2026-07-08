@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OMNWCONF]] · OM网络探测参数（OMNWCONF）
+- [[configobject/UDG/20.15.2/OMNWCONF]] · OM网络探测参数（OMNWCONF）
 
 ## 使用实例
 

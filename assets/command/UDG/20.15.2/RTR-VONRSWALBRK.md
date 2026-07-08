@@ -40,7 +40,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@VONRSWALBRK]] · VoNR滑窗相关的参数（VONRSWALBRK）
+- [[configobject/UDG/20.15.2/VONRSWALBRK]] · VoNR滑窗相关的参数（VONRSWALBRK）
 
 ## 使用实例
 

@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APPLYROUTETYPE]] · 路由类型设置（APPLYROUTETYPE）
+- [[configobject/UNC/20.15.2/APPLYROUTETYPE]] · 路由类型设置（APPLYROUTETYPE）
 
 ## 使用实例
 

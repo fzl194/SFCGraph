@@ -77,7 +77,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMFUNC]] · 会话管理扩展功能（SMFUNC）
+- [[configobject/UNC/20.15.2/SMFUNC]] · 会话管理扩展功能（SMFUNC）
 
 ## 使用实例
 

@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@VHACHGPEER]] · 转换vHA ETCD集群中节点间通讯地址的方式（VHACHGPEER）
+- [[configobject/UDG/20.15.2/VHACHGPEER]] · 转换vHA ETCD集群中节点间通讯地址的方式（VHACHGPEER）
 
 ## 使用实例
 

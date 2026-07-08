@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IPSQMSHAPING]] · IPSQM整形配置（IPSQMSHAPING）
+- [[configobject/UDG/20.15.2/IPSQMSHAPING]] · IPSQM整形配置（IPSQMSHAPING）
 
 ## 关联任务
 

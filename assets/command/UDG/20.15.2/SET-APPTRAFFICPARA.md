@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APPTRAFFICPARA]] · 应用流量参数（APPTRAFFICPARA）
+- [[configobject/UDG/20.15.2/APPTRAFFICPARA]] · 应用流量参数（APPTRAFFICPARA）
 
 ## 使用实例
 

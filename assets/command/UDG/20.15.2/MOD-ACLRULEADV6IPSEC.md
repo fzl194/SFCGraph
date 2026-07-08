@@ -70,7 +70,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACLRULEADV6IPSEC]] · 高级IPv6 ACL规则（ACLRULEADV6IPSEC）
+- [[configobject/UDG/20.15.2/ACLRULEADV6IPSEC]] · 高级IPv6 ACL规则（ACLRULEADV6IPSEC）
 
 ## 使用实例
 

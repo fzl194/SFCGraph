@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组；
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MAPGTFIXEDFC]] · VLR局向Map固定速率流控（MAPGTFIXEDFC）
+- [[configobject/UNC/20.15.2/MAPGTFIXEDFC]] · VLR局向Map固定速率流控（MAPGTFIXEDFC）
 
 ## 使用实例
 

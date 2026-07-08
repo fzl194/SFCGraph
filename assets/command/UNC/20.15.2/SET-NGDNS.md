@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGDNS]] · DNS运行参数（NGDNS）
+- [[configobject/UNC/20.15.2/NGDNS]] · DNS运行参数（NGDNS）
 
 ## 使用实例
 

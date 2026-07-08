@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RPTSVRADDR]] · 报表服务器接入点配置（RPTSVRADDR）
+- [[configobject/UDG/20.15.2/RPTSVRADDR]] · 报表服务器接入点配置（RPTSVRADDR）
 
 ## 使用实例
 

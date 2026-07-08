@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MSSWORKFILTER]] · Work过滤规则信息（MSSWORKFILTER）
+- [[configobject/UDG/20.15.2/MSSWORKFILTER]] · Work过滤规则信息（MSSWORKFILTER）
 
 ## 使用实例
 

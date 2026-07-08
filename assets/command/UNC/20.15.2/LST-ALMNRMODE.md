@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ALMNRMODE]] · 网管北向告警上报模式（ALMNRMODE）
+- [[configobject/UNC/20.15.2/ALMNRMODE]] · 网管北向告警上报模式（ALMNRMODE）
 
 ## 使用实例
 

@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MPACCOUNTERV6]] · IPv6 MPAC策略匹配统计计数（MPACCOUNTERV6）
+- [[configobject/UNC/20.15.2/MPACCOUNTERV6]] · IPv6 MPAC策略匹配统计计数（MPACCOUNTERV6）
 
 ## 使用实例
 

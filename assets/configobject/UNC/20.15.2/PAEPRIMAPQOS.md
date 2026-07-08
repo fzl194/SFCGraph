@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@PAEPRIMAPQOS
+type: ConfigObject
+name: PAEPRIMAPQOS（报文优先级与QoS映射信息）
+nf: UNC
+version: 20.15.2
+object_name: PAEPRIMAPQOS
+object_kind: query_target
+status: active
+---
+
+# PAEPRIMAPQOS（报文优先级与QoS映射信息）
+
+## 说明
+
+该命令用于显示报文优先级与QoS映射信息。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-PAEPRIMAPQOS]] · DSP PAEPRIMAPQOS
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/PAEPRIMAPQOS.md`

@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMFPROFILEPLCY]] · AMF上报NFPROFILE策略（AMFPROFILEPLCY）
+- [[configobject/UNC/20.15.2/AMFPROFILEPLCY]] · AMF上报NFPROFILE策略（AMFPROFILEPLCY）
 
 ## 使用实例
 

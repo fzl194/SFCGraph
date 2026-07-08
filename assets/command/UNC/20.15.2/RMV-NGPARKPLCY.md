@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGPARKPLCY]] · 园区策略（NGPARKPLCY）
+- [[configobject/UNC/20.15.2/NGPARKPLCY]] · 园区策略（NGPARKPLCY）
 
 ## 使用实例
 

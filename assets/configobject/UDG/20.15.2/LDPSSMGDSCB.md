@@ -1,0 +1,24 @@
+---
+id: UDG@20.15.2@ConfigObject@LDPSSMGDSCB
+type: ConfigObject
+name: LDPSSMGDSCB（LDP会话管理模块的下游信息）
+nf: UDG
+version: 20.15.2
+object_name: LDPSSMGDSCB
+object_kind: query_target
+status: active
+---
+
+# LDPSSMGDSCB（LDP会话管理模块的下游信息）
+
+## 说明
+
+该命令用于显示LDP会话管理模块的下游信息。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-LDPSSMGDSCB]] · DSP LDPSSMGDSCB
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/LDPSSMGDSCB.md`

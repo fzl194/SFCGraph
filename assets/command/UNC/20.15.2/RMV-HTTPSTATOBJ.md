@@ -40,7 +40,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@HTTPSTATOBJ]] · 基于对端结点的性能统计测量对象信息（HTTPSTATOBJ）
+- [[configobject/UNC/20.15.2/HTTPSTATOBJ]] · 基于对端结点的性能统计测量对象信息（HTTPSTATOBJ）
 
 ## 使用实例
 

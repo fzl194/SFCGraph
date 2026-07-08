@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGLANGRPCTX]] · 5G LAN组会话（NGLANGRPCTX）
+- [[configobject/UNC/20.15.2/NGLANGRPCTX]] · 5G LAN组会话（NGLANGRPCTX）
 
 ## 使用实例
 

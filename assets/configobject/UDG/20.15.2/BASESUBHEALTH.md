@@ -1,0 +1,28 @@
+---
+id: UDG@20.15.2@ConfigObject@BASESUBHEALTH
+type: ConfigObject
+name: BASESUBHEALTH（base链路亚健康信息）
+nf: UDG
+version: 20.15.2
+object_name: BASESUBHEALTH
+object_kind: global_setting
+status: active
+---
+
+# BASESUBHEALTH（base链路亚健康信息）
+
+## 说明
+
+该命令用于配置base亚健康信息。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-BASESUBHEALTH]] · DSP BASESUBHEALTH
+- [[command/UDG/20.15.2/LST-BASESUBHEALTH]] · LST BASESUBHEALTH
+- [[command/UDG/20.15.2/SET-BASESUBHEALTH]] · SET BASESUBHEALTH
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/BASESUBHEALTH.md`
+- 原始手册：`evidence/UDG/20.15.2/BASESUBHEALTH.md`
+- 原始手册：`evidence/UDG/20.15.2/BASESUBHEALTH.md`

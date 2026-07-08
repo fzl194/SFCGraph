@@ -43,7 +43,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@STARVATIONINFO]] · 长时间未被调度的组件消息（STARVATIONINFO）
+- [[configobject/UDG/20.15.2/STARVATIONINFO]] · 长时间未被调度的组件消息（STARVATIONINFO）
 
 ## 使用实例
 

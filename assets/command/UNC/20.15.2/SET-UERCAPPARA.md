@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UERCAPPARA]] · UE Radio Capability信元参数（UERCAPPARA）
+- [[configobject/UNC/20.15.2/UERCAPPARA]] · UE Radio Capability信元参数（UERCAPPARA）
 
 ## 使用实例
 

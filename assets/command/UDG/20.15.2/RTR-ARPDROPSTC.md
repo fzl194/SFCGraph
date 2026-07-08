@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ARPDROPSTC]] · ARP丢弃报文统计（ARPDROPSTC）
+- [[configobject/UDG/20.15.2/ARPDROPSTC]] · ARP丢弃报文统计（ARPDROPSTC）
 
 ## 使用实例
 

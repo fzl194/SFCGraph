@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@ACSCLIENTDBG
+type: ConfigObject
+name: ACSCLIENTDBG（ACS客户端调试操作）
+nf: UNC
+version: 20.15.2
+object_name: ACSCLIENTDBG
+object_kind: action
+status: active
+---
+
+# ACSCLIENTDBG（ACS客户端调试操作）
+
+## 说明
+
+该命令用于向ACS配置客户端发送调试操作。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/OPR-ACSCLIENTDBG]] · OPR ACSCLIENTDBG
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ACSCLIENTDBG.md`

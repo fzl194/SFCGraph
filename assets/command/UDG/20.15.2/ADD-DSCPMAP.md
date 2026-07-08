@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DSCPMAP]] · DSCP值到VLAN优先级的映射（DSCPMAP）
+- [[configobject/UDG/20.15.2/DSCPMAP]] · DSCP值到VLAN优先级的映射（DSCPMAP）
 
 ## 使用实例
 

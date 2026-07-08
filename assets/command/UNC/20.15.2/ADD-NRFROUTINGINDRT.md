@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFROUTINGINDRT]] · 选路指示器路由（NRFROUTINGINDRT）
+- [[configobject/UNC/20.15.2/NRFROUTINGINDRT]] · 选路指示器路由（NRFROUTINGINDRT）
 
 ## 使用实例
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DSCPPRIMCR]] · DSCP映射优先级配置表（DSCPPRIMCR）
+- [[configobject/UNC/20.15.2/DSCPPRIMCR]] · DSCP映射优先级配置表（DSCPPRIMCR）
 
 ## 使用实例
 

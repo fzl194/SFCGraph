@@ -1,0 +1,34 @@
+---
+id: UNC@20.15.2@ConfigObject@NGIPAREAGRP
+type: ConfigObject
+name: NGIPAREAGRP（5G IP区域群）
+nf: UNC
+version: 20.15.2
+object_name: NGIPAREAGRP
+object_kind: entity
+applicable_nf:
+- AMF
+status: active
+---
+
+# NGIPAREAGRP（5G IP区域群）
+
+## 说明
+
+**适用NF：AMF**
+
+该命令用于增加5G IP区域群。IP区域群是“基于位置的地址分配”功能的一个基本概念，由TAC组成，在同一个IP区域群中的用户具有相同的IP地址分配策略。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-NGIPAREAGRP]] · ADD NGIPAREAGRP
+- [[command/UNC/20.15.2/LST-NGIPAREAGRP]] · LST NGIPAREAGRP
+- [[command/UNC/20.15.2/MOD-NGIPAREAGRP]] · MOD NGIPAREAGRP
+- [[command/UNC/20.15.2/RMV-NGIPAREAGRP]] · RMV NGIPAREAGRP
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/NGIPAREAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/NGIPAREAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/NGIPAREAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/NGIPAREAGRP.md`

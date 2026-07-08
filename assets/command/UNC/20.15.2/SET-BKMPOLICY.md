@@ -49,7 +49,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@BKMPOLICY]] · 自动备份策略（BKMPOLICY）
+- [[configobject/UNC/20.15.2/BKMPOLICY]] · 自动备份策略（BKMPOLICY）
 
 ## 使用实例
 

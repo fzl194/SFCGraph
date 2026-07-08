@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AUTHSGSNADDR]] · 向AAA鉴权服务器发送消息中携带的地址信息（AUTHSGSNADDR）
+- [[configobject/UNC/20.15.2/AUTHSGSNADDR]] · 向AAA鉴权服务器发送消息中携带的地址信息（AUTHSGSNADDR）
 
 ## 使用实例
 

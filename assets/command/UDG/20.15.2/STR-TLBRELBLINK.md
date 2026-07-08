@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TLBRELBLINK]] · 触发HTTP服务端TCP链路重均衡检测及调整（TLBRELBLINK）
+- [[configobject/UDG/20.15.2/TLBRELBLINK]] · 触发HTTP服务端TCP链路重均衡检测及调整（TLBRELBLINK）
 
 ## 使用实例
 

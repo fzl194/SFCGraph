@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SCNDGWSELPLCY]] · 相同APN建立多个PDP/PDN连接的网关选择策略（SCNDGWSELPLCY）
+- [[configobject/UNC/20.15.2/SCNDGWSELPLCY]] · 相同APN建立多个PDP/PDN连接的网关选择策略（SCNDGWSELPLCY）
 
 ## 使用实例
 

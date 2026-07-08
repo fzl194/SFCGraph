@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IPOPTSECALL]] · IP全局选项安全配置（IPOPTSECALL）
+- [[configobject/UNC/20.15.2/IPOPTSECALL]] · IP全局选项安全配置（IPOPTSECALL）
 
 ## 使用实例
 

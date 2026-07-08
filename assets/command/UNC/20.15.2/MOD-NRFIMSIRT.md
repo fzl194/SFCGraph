@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFIMSIRT]] · IMSI号段路由（NRFIMSIRT）
+- [[configobject/UNC/20.15.2/NRFIMSIRT]] · IMSI号段路由（NRFIMSIRT）
 
 ## 使用实例
 

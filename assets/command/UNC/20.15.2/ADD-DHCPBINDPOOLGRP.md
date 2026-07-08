@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DHCPBINDPOOLGRP]] · DHCP服务器组与地址池组绑定关系（DHCPBINDPOOLGRP）
+- [[configobject/UNC/20.15.2/DHCPBINDPOOLGRP]] · DHCP服务器组与地址池组绑定关系（DHCPBINDPOOLGRP）
 
 ## 使用实例
 

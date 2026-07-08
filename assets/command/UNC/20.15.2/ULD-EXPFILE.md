@@ -43,7 +43,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@EXPFILE]] · 上传导出文件（EXPFILE）
+- [[configobject/UNC/20.15.2/EXPFILE]] · 上传导出文件（EXPFILE）
 
 ## 使用实例
 

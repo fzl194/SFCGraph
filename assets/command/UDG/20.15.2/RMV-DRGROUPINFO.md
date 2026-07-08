@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DRGROUPINFO]] · 容灾组信息（DRGROUPINFO）
+- [[configobject/UDG/20.15.2/DRGROUPINFO]] · 容灾组信息（DRGROUPINFO）
 
 ## 使用实例
 

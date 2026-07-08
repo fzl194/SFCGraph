@@ -1,0 +1,32 @@
+---
+id: UNC@20.15.2@ConfigObject@SMFSERVICELIST
+type: ConfigObject
+name: SMFSERVICELIST（特定SMF功能实例服务名）
+nf: UNC
+version: 20.15.2
+object_name: SMFSERVICELIST
+object_kind: entity
+applicable_nf:
+- SMF
+status: active
+---
+
+# SMFSERVICELIST（特定SMF功能实例服务名）
+
+## 说明
+
+**适用NF：SMF**
+
+本命令用于添加特定SMF功能实例服务。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-SMFSERVICELIST]] · ADD SMFSERVICELIST
+- [[command/UNC/20.15.2/LST-SMFSERVICELIST]] · LST SMFSERVICELIST
+- [[command/UNC/20.15.2/RMV-SMFSERVICELIST]] · RMV SMFSERVICELIST
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/SMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/SMFSERVICELIST.md`

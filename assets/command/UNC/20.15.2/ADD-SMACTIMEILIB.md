@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMACTIMEILIB]] · IMEI库记录（SMACTIMEILIB）
+- [[configobject/UNC/20.15.2/SMACTIMEILIB]] · IMEI库记录（SMACTIMEILIB）
 
 ## 使用实例
 

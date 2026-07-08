@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHFINIT]] · 融合计费模板中用户激活相关参数（CHFINIT）
+- [[configobject/UNC/20.15.2/CHFINIT]] · 融合计费模板中用户激活相关参数（CHFINIT）
 
 ## 使用实例
 

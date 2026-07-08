@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SESSCHKFUNC]] · 会话核查配置（SESSCHKFUNC）
+- [[configobject/UDG/20.15.2/SESSCHKFUNC]] · 会话核查配置（SESSCHKFUNC）
 
 ## 关联任务
 

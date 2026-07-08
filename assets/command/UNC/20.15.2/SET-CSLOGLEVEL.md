@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CSLOGLEVEL]] · 更新日志输出级别（CSLOGLEVEL）
+- [[configobject/UNC/20.15.2/CSLOGLEVEL]] · 更新日志输出级别（CSLOGLEVEL）
 
 ## 使用实例
 

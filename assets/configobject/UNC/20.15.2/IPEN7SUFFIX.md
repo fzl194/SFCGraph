@@ -1,0 +1,35 @@
+---
+id: UNC@20.15.2@ConfigObject@IPEN7SUFFIX
+type: ConfigObject
+name: IPEN7SUFFIX（智能业务后缀）
+nf: UNC
+version: 20.15.2
+object_name: IPEN7SUFFIX
+object_kind: entity
+applicable_nf:
+- SMF
+- PGW-C
+status: active
+---
+
+# IPEN7SUFFIX（智能业务后缀）
+
+## 说明
+
+**适用NF：SMF、PGW-C**
+
+该命令用于增加一个智能业务后缀，该后缀用于与PCF下发的PccRuleId后缀进行匹配，匹配成功则触发创建第二个N7会话。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-IPEN7SUFFIX]] · ADD IPEN7SUFFIX
+- [[command/UNC/20.15.2/LST-IPEN7SUFFIX]] · LST IPEN7SUFFIX
+- [[command/UNC/20.15.2/MOD-IPEN7SUFFIX]] · MOD IPEN7SUFFIX
+- [[command/UNC/20.15.2/RMV-IPEN7SUFFIX]] · RMV IPEN7SUFFIX
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`

@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MATCHDESTACL6]] · 匹配IPv6地址ACL（MATCHDESTACL6）
+- [[configobject/UNC/20.15.2/MATCHDESTACL6]] · 匹配IPv6地址ACL（MATCHDESTACL6）
 
 ## 使用实例
 

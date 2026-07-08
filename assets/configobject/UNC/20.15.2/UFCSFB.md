@@ -1,0 +1,34 @@
+---
+id: UNC@20.15.2@ConfigObject@UFCSFB
+type: ConfigObject
+name: UFCSFB（预留功能策略）
+nf: UNC
+version: 20.15.2
+object_name: UFCSFB
+object_kind: entity
+applicable_nf:
+- MME
+status: active
+---
+
+# UFCSFB（预留功能策略）
+
+## 说明
+
+**适用网元：MME**
+
+该命令用于增加系统的预留功能策略，配置允许哪些用户和终端使用预留功能。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-UFCSFB]] · ADD UFCSFB
+- [[command/UNC/20.15.2/LST-UFCSFB]] · LST UFCSFB
+- [[command/UNC/20.15.2/MOD-UFCSFB]] · MOD UFCSFB
+- [[command/UNC/20.15.2/RMV-UFCSFB]] · RMV UFCSFB
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`
+- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`
+- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`
+- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`

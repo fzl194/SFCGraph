@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGRANNEIBCFG]] · NG-RAN基站邻接关系配置（NGRANNEIBCFG）
+- [[configobject/UNC/20.15.2/NGRANNEIBCFG]] · NG-RAN基站邻接关系配置（NGRANNEIBCFG）
 
 ## 使用实例
 

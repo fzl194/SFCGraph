@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OPMMETRIC]] · 话统指标优化公式（OPMMETRIC）
+- [[configobject/UNC/20.15.2/OPMMETRIC]] · 话统指标优化公式（OPMMETRIC）
 
 ## 使用实例
 

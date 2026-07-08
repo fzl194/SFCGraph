@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@QOSRDRWLRFLOW]] · WLR引流重定向（QOSRDRWLRFLOW）
+- [[configobject/UNC/20.15.2/QOSRDRWLRFLOW]] · WLR引流重定向（QOSRDRWLRFLOW）
 
 ## 使用实例
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@POOLBINDAPN]] · APN实例与地址池绑定关系（POOLBINDAPN）
+- [[configobject/UNC/20.15.2/POOLBINDAPN]] · APN实例与地址池绑定关系（POOLBINDAPN）
 
 ## 使用实例
 

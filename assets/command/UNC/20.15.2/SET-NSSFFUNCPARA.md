@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NSSFFUNCPARA]] · NSSF数据源以及切片选择流程返回信元（NSSFFUNCPARA）
+- [[configobject/UNC/20.15.2/NSSFFUNCPARA]] · NSSF数据源以及切片选择流程返回信元（NSSFFUNCPARA）
 
 ## 使用实例
 

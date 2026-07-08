@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TMT3N3]] · Tm接口消息T3N3参数（TMT3N3）
+- [[configobject/UNC/20.15.2/TMT3N3]] · Tm接口消息T3N3参数（TMT3N3）
 
 ## 使用实例
 

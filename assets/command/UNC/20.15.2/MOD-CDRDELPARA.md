@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CDRDELPARA]] · 话单删除参数（CDRDELPARA）
+- [[configobject/UNC/20.15.2/CDRDELPARA]] · 话单删除参数（CDRDELPARA）
 
 ## 使用实例
 

@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFBNDWDFCPARA]] · NRF带宽流控配置（NRFBNDWDFCPARA）
+- [[configobject/UNC/20.15.2/NRFBNDWDFCPARA]] · NRF带宽流控配置（NRFBNDWDFCPARA）
 
 ## 使用实例
 

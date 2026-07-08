@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPBINDS11]] · SGW-U与SGW-C侧S11接口的绑定关系（UPBINDS11）
+- [[configobject/UNC/20.15.2/UPBINDS11]] · SGW-U与SGW-C侧S11接口的绑定关系（UPBINDS11）
 
 ## 使用实例
 

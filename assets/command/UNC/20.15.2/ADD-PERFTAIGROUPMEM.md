@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PERFTAIGROUPMEM]] · TAI组性能统计对象成员（PERFTAIGROUPMEM）
+- [[configobject/UNC/20.15.2/PERFTAIGROUPMEM]] · TAI组性能统计对象成员（PERFTAIGROUPMEM）
 
 ## 使用实例
 

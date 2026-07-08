@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CCLIMITRC]] · 在线计费欠费返回码（CCLIMITRC）
+- [[configobject/UNC/20.15.2/CCLIMITRC]] · 在线计费欠费返回码（CCLIMITRC）
 
 ## 使用实例
 

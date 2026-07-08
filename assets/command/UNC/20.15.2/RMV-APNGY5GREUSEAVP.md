@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNGY5GREUSEAVP]] · 基于apn的Gy接口重用字段的填写方式（APNGY5GREUSEAVP）
+- [[configobject/UNC/20.15.2/APNGY5GREUSEAVP]] · 基于apn的Gy接口重用字段的填写方式（APNGY5GREUSEAVP）
 
 ## 使用实例
 

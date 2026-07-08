@@ -38,7 +38,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OSPATCH]] · OS补丁版本号（OSPATCH）
+- [[configobject/UNC/20.15.2/OSPATCH]] · OS补丁版本号（OSPATCH）
 
 ## 使用实例
 

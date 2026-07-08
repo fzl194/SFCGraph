@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MPACV4POLICY]] · IPv4 MPAC策略（MPACV4POLICY）
+- [[configobject/UDG/20.15.2/MPACV4POLICY]] · IPv4 MPAC策略（MPACV4POLICY）
 
 ## 使用实例
 

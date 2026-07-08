@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRF]] · 测试服务发现的NF信息（NRF）
+- [[configobject/UNC/20.15.2/NRF]] · 测试服务发现的NF信息（NRF）
 
 ## 使用实例
 

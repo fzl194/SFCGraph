@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SESSNCHRCFG]] · 会话CHR上报策略（SESSNCHRCFG）
+- [[configobject/UNC/20.15.2/SESSNCHRCFG]] · 会话CHR上报策略（SESSNCHRCFG）
 
 ## 使用实例
 

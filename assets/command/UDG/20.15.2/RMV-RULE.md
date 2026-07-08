@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RULE]] · 规则（RULE）
+- [[configobject/UDG/20.15.2/RULE]] · 规则（RULE）
 
 ## 使用实例
 

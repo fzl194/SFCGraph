@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MEASOBJ]] · 话统测量对象实例（MEASOBJ）
+- [[configobject/UNC/20.15.2/MEASOBJ]] · 话统测量对象实例（MEASOBJ）
 
 ## 使用实例
 

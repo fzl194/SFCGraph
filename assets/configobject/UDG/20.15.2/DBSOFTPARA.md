@@ -1,0 +1,26 @@
+---
+id: UDG@20.15.2@ConfigObject@DBSOFTPARA
+type: ConfigObject
+name: DBSOFTPARA（CSDB软件调试参数表）
+nf: UDG
+version: 20.15.2
+object_name: DBSOFTPARA
+object_kind: global_setting
+status: active
+---
+
+# DBSOFTPARA（CSDB软件调试参数表）
+
+## 说明
+
+该命令用于设置CSDB功能开关。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/LST-DBSOFTPARA]] · LST DBSOFTPARA
+- [[command/UDG/20.15.2/SET-DBSOFTPARA]] · SET DBSOFTPARA
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/DBSOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/DBSOFTPARA.md`

@@ -51,7 +51,7 @@ G_1管理员级别命令组；G_2操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PERFAUTOSWITCH]] · 话统对象自动生成开关（PERFAUTOSWITCH）
+- [[configobject/UNC/20.15.2/PERFAUTOSWITCH]] · 话统对象自动生成开关（PERFAUTOSWITCH）
 
 ## 使用实例
 

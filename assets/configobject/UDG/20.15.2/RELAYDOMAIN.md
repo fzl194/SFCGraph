@@ -1,0 +1,35 @@
+---
+id: UDG@20.15.2@ConfigObject@RELAYDOMAIN
+type: ConfigObject
+name: RELAYDOMAIN（媒体中继域名配置）
+nf: UDG
+version: 20.15.2
+object_name: RELAYDOMAIN
+object_kind: entity
+applicable_nf:
+- PGW-U
+- UPF
+status: active
+---
+
+# RELAYDOMAIN（媒体中继域名配置）
+
+## 说明
+
+**适用NF：PGW-U、UPF**
+
+该命令用于添加媒体中继域名配置。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-RELAYDOMAIN]] · ADD RELAYDOMAIN
+- [[command/UDG/20.15.2/LST-RELAYDOMAIN]] · LST RELAYDOMAIN
+- [[command/UDG/20.15.2/MOD-RELAYDOMAIN]] · MOD RELAYDOMAIN
+- [[command/UDG/20.15.2/RMV-RELAYDOMAIN]] · RMV RELAYDOMAIN
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`

@@ -39,7 +39,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MPROCMEMSTAT]] · 进程内存信息（MPROCMEMSTAT）
+- [[configobject/UDG/20.15.2/MPROCMEMSTAT]] · 进程内存信息（MPROCMEMSTAT）
 
 ## 使用实例
 

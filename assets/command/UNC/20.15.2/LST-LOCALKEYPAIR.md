@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOCALKEYPAIR]] · 本地公钥（LOCALKEYPAIR）
+- [[configobject/UNC/20.15.2/LOCALKEYPAIR]] · 本地公钥（LOCALKEYPAIR）
 
 ## 使用实例
 

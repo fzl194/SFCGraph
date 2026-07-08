@@ -47,7 +47,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACTALM]] · 活动告警（ACTALM）
+- [[configobject/UNC/20.15.2/ACTALM]] · 活动告警（ACTALM）
 
 ## 使用实例
 

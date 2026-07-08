@@ -39,7 +39,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IPSAGING]] · IPS老化配置（IPSAGING）
+- [[configobject/UDG/20.15.2/IPSAGING]] · IPS老化配置（IPSAGING）
 
 ## 使用实例
 

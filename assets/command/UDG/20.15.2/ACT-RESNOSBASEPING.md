@@ -52,7 +52,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RESNOSBASEPING]] · NOS Base平面网络Ping功能（RESNOSBASEPING）
+- [[configobject/UDG/20.15.2/RESNOSBASEPING]] · NOS Base平面网络Ping功能（RESNOSBASEPING）
 
 ## 使用实例
 

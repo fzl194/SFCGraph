@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DNSIPRESOURCE]] · DNS IP地址资源列表（DNSIPRESOURCE）
+- [[configobject/UDG/20.15.2/DNSIPRESOURCE]] · DNS IP地址资源列表（DNSIPRESOURCE）
 
 ## 使用实例
 

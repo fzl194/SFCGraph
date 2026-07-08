@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHRRPTSUBID]] · CHR本地存盘用户（CHRRPTSUBID）
+- [[configobject/UNC/20.15.2/CHRRPTSUBID]] · CHR本地存盘用户（CHRRPTSUBID）
 
 ## 使用实例
 

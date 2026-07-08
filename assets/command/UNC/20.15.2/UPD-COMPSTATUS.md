@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@COMPSTATUS]] · 收集并推送RU的组件状态（COMPSTATUS）
+- [[configobject/UNC/20.15.2/COMPSTATUS]] · 收集并推送RU的组件状态（COMPSTATUS）
 
 ## 使用实例
 

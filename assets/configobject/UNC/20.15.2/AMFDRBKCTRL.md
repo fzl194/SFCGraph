@@ -1,0 +1,34 @@
+---
+id: UNC@20.15.2@ConfigObject@AMFDRBKCTRL
+type: ConfigObject
+name: AMFDRBKCTRL（AMF热备容灾控制参数）
+nf: UNC
+version: 20.15.2
+object_name: AMFDRBKCTRL
+object_kind: entity
+applicable_nf:
+- AMF
+status: active
+---
+
+# AMFDRBKCTRL（AMF热备容灾控制参数）
+
+## 说明
+
+**适用NF：AMF**
+
+该命令用于增加AMF热备容灾的控制参数。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-AMFDRBKCTRL]] · ADD AMFDRBKCTRL
+- [[command/UNC/20.15.2/LST-AMFDRBKCTRL]] · LST AMFDRBKCTRL
+- [[command/UNC/20.15.2/MOD-AMFDRBKCTRL]] · MOD AMFDRBKCTRL
+- [[command/UNC/20.15.2/RMV-AMFDRBKCTRL]] · RMV AMFDRBKCTRL
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`

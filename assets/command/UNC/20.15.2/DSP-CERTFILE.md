@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CERTFILE]] · 证书（CERTFILE）
+- [[configobject/UNC/20.15.2/CERTFILE]] · 证书（CERTFILE）
 
 ## 使用实例
 

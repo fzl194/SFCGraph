@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@EXCHANGE
+type: ConfigObject
+name: EXCHANGE（负载均衡交换表）
+nf: UNC
+version: 20.15.2
+object_name: EXCHANGE
+object_kind: query_target
+status: active
+---
+
+# EXCHANGE（负载均衡交换表）
+
+## 说明
+
+查询负载均衡交换表的详细信息
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-EXCHANGE]] · DSP EXCHANGE
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/EXCHANGE.md`

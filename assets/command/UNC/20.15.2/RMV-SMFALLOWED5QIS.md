@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMFALLOWED5QIS]] · 5G用户允许的5QI列表（SMFALLOWED5QIS）
+- [[configobject/UNC/20.15.2/SMFALLOWED5QIS]] · 5G用户允许的5QI列表（SMFALLOWED5QIS）
 
 ## 使用实例
 

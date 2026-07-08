@@ -61,7 +61,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NTPSVR]] · NTP服务器（NTPSVR）
+- [[configobject/UDG/20.15.2/NTPSVR]] · NTP服务器（NTPSVR）
 
 ## 关联任务
 

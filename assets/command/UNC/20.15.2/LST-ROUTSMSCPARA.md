@@ -40,7 +40,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ROUTSMSCPARA]] · SMSF/VLR选择SMSC的相关参数（ROUTSMSCPARA）
+- [[configobject/UNC/20.15.2/ROUTSMSCPARA]] · SMSF/VLR选择SMSC的相关参数（ROUTSMSCPARA）
 
 ## 使用实例
 

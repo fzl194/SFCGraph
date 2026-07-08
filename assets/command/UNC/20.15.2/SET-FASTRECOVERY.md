@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@FASTRECOVERY]] · 全局业务快速恢复配置（FASTRECOVERY）
+- [[configobject/UNC/20.15.2/FASTRECOVERY]] · 全局业务快速恢复配置（FASTRECOVERY）
 
 ## 使用实例
 

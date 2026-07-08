@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CUSTATECHK]] · SMF和UPF时间一致性检测（CUSTATECHK）
+- [[configobject/UDG/20.15.2/CUSTATECHK]] · SMF和UPF时间一致性检测（CUSTATECHK）
 
 ## 使用实例
 

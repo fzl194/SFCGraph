@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGNILRPARA]] · NI-LR功能参数（NGNILRPARA）
+- [[configobject/UNC/20.15.2/NGNILRPARA]] · NI-LR功能参数（NGNILRPARA）
 
 ## 使用实例
 

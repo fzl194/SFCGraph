@@ -40,7 +40,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NSSFMSGSTAT]] · NSSF收发消息内部统计（NSSFMSGSTAT）
+- [[configobject/UNC/20.15.2/NSSFMSGSTAT]] · NSSF收发消息内部统计（NSSFMSGSTAT）
 
 ## 使用实例
 

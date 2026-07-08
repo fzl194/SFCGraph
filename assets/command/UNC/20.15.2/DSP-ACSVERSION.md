@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACSVERSION]] · 系统版本信息（ACSVERSION）
+- [[configobject/UNC/20.15.2/ACSVERSION]] · 系统版本信息（ACSVERSION）
 
 ## 使用实例
 

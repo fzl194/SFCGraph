@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMSFMAPVERSION]] · SMSF使用的MAP接口版本（SMSFMAPVERSION）
+- [[configobject/UNC/20.15.2/SMSFMAPVERSION]] · SMSF使用的MAP接口版本（SMSFMAPVERSION）
 
 ## 使用实例
 

@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TTYUSER]] · 用户信息（TTYUSER）
+- [[configobject/UDG/20.15.2/TTYUSER]] · 用户信息（TTYUSER）
 
 ## 使用实例
 

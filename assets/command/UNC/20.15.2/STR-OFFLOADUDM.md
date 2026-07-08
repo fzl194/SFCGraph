@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OFFLOADUDM]] · UDM注册上下文的迁移（OFFLOADUDM）
+- [[configobject/UNC/20.15.2/OFFLOADUDM]] · UDM注册上下文的迁移（OFFLOADUDM）
 
 ## 使用实例
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OSPFV3FILTERPOLICY]] · OSPFv3过滤策略配置（OSPFV3FILTERPOLICY）
+- [[configobject/UNC/20.15.2/OSPFV3FILTERPOLICY]] · OSPFv3过滤策略配置（OSPFV3FILTERPOLICY）
 
 ## 使用实例
 

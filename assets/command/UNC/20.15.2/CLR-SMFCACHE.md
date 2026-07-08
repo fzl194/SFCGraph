@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMFCACHE]] · 缓存的SMF与TAI映射关系（SMFCACHE）
+- [[configobject/UNC/20.15.2/SMFCACHE]] · 缓存的SMF与TAI映射关系（SMFCACHE）
 
 ## 使用实例
 

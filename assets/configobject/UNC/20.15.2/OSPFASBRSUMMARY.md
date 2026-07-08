@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@OSPFASBRSUMMARY
+type: ConfigObject
+name: OSPFASBRSUMMARY（引入路由聚合配置）
+nf: UNC
+version: 20.15.2
+object_name: OSPFASBRSUMMARY
+object_kind: entity
+status: active
+---
+
+# OSPFASBRSUMMARY（引入路由聚合配置）
+
+## 说明
+
+该命令用于设置自治系统边界路由器ASBR对OSPF引入的路由进行路由聚合。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-OSPFASBRSUMMARY]] · ADD OSPFASBRSUMMARY
+- [[command/UNC/20.15.2/LST-OSPFASBRSUMMARY]] · LST OSPFASBRSUMMARY
+- [[command/UNC/20.15.2/MOD-OSPFASBRSUMMARY]] · MOD OSPFASBRSUMMARY
+- [[command/UNC/20.15.2/RMV-OSPFASBRSUMMARY]] · RMV OSPFASBRSUMMARY
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/OSPFASBRSUMMARY.md`
+- 原始手册：`evidence/UNC/20.15.2/OSPFASBRSUMMARY.md`
+- 原始手册：`evidence/UNC/20.15.2/OSPFASBRSUMMARY.md`
+- 原始手册：`evidence/UNC/20.15.2/OSPFASBRSUMMARY.md`

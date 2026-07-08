@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@IPV6IFICMPSECURITY
+type: ConfigObject
+name: IPV6IFICMPSECURITY（接口下安全配置）
+nf: UNC
+version: 20.15.2
+object_name: IPV6IFICMPSECURITY
+object_kind: entity
+status: active
+---
+
+# IPV6IFICMPSECURITY（接口下安全配置）
+
+## 说明
+
+该命令用于添加接口下安全配置。接口名称可以通过LST INTERFACE命令获取。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-IPV6IFICMPSECURITY]] · ADD IPV6IFICMPSECURITY
+- [[command/UNC/20.15.2/LST-IPV6IFICMPSECURITY]] · LST IPV6IFICMPSECURITY
+- [[command/UNC/20.15.2/MOD-IPV6IFICMPSECURITY]] · MOD IPV6IFICMPSECURITY
+- [[command/UNC/20.15.2/RMV-IPV6IFICMPSECURITY]] · RMV IPV6IFICMPSECURITY
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/IPV6IFICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/IPV6IFICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/IPV6IFICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/IPV6IFICMPSECURITY.md`

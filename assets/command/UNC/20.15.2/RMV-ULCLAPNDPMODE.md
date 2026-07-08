@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ULCLAPNDPMODE]] · 指定APN的ULCL部署模式（ULCLAPNDPMODE）
+- [[configobject/UNC/20.15.2/ULCLAPNDPMODE]] · 指定APN的ULCL部署模式（ULCLAPNDPMODE）
 
 ## 使用实例
 

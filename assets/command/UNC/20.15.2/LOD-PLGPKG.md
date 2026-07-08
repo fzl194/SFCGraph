@@ -52,7 +52,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PLGPKG]] · 扩展包（PLGPKG）
+- [[configobject/UNC/20.15.2/PLGPKG]] · 扩展包（PLGPKG）
 
 ## 使用实例
 

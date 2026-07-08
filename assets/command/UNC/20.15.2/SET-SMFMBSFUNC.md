@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMFMBSFUNC]] · MB-SMF组播广播功能参数（SMFMBSFUNC）
+- [[configobject/UNC/20.15.2/SMFMBSFUNC]] · MB-SMF组播广播功能参数（SMFMBSFUNC）
 
 ## 使用实例
 

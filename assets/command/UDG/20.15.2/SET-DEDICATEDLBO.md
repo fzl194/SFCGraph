@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DEDICATEDLBO]] · 系统是否开启专网UPF动态分流功能（DEDICATEDLBO）
+- [[configobject/UDG/20.15.2/DEDICATEDLBO]] · 系统是否开启专网UPF动态分流功能（DEDICATEDLBO）
 
 ## 使用实例
 

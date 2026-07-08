@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MEASSTAT]] · 话统指标测量状态（MEASSTAT）
+- [[configobject/UNC/20.15.2/MEASSTAT]] · 话统指标测量状态（MEASSTAT）
 
 ## 使用实例
 

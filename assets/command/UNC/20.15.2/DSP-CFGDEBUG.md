@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CFGDEBUG]] · CFG诊断日志（CFGDEBUG）
+- [[configobject/UNC/20.15.2/CFGDEBUG]] · CFG诊断日志（CFGDEBUG）
 
 ## 使用实例
 

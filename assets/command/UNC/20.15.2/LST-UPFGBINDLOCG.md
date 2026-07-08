@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPFGBINDLOCG]] · UPF组与Diameter本端主机组的关联关系（UPFGBINDLOCG）
+- [[configobject/UNC/20.15.2/UPFGBINDLOCG]] · UPF组与Diameter本端主机组的关联关系（UPFGBINDLOCG）
 
 ## 使用实例
 

@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOGBUFFER]] · Logbuffer中的数据（LOGBUFFER）
+- [[configobject/UNC/20.15.2/LOGBUFFER]] · Logbuffer中的数据（LOGBUFFER）
 
 ## 使用实例
 

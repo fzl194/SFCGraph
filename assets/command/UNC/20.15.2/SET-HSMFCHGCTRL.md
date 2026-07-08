@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@HSMFCHGCTRL]] · 漫游用户在归属地的计费方式和漫游参数的协商方式（HSMFCHGCTRL）
+- [[configobject/UNC/20.15.2/HSMFCHGCTRL]] · 漫游用户在归属地的计费方式和漫游参数的协商方式（HSMFCHGCTRL）
 
 ## 使用实例
 

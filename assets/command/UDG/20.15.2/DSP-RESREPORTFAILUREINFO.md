@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RESREPORTFAILUREINFO]] · 组件上报的故障信息（RESREPORTFAILUREINFO）
+- [[configobject/UDG/20.15.2/RESREPORTFAILUREINFO]] · 组件上报的故障信息（RESREPORTFAILUREINFO）
 
 ## 使用实例
 

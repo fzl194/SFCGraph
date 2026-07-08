@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGPAGINGDNNPRI]] · 基于DNN的Paging消息在流控期间放通的优先级（NGPAGINGDNNPRI）
+- [[configobject/UNC/20.15.2/NGPAGINGDNNPRI]] · 基于DNN的Paging消息在流控期间放通的优先级（NGPAGINGDNNPRI）
 
 ## 使用实例
 

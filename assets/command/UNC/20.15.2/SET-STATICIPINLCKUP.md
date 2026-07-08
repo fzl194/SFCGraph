@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@STATICIPINLCKUP]] · 静态地址段在锁定UPF的用户处理（STATICIPINLCKUP）
+- [[configobject/UNC/20.15.2/STATICIPINLCKUP]] · 静态地址段在锁定UPF的用户处理（STATICIPINLCKUP）
 
 ## 使用实例
 

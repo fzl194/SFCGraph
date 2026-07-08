@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LOWLATENCYSW]] · 低时延业务开关（LOWLATENCYSW）
+- [[configobject/UDG/20.15.2/LOWLATENCYSW]] · 低时延业务开关（LOWLATENCYSW）
 
 ## 使用实例
 

@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RESEXCEPTIONINFO]] · 异常信息（RESEXCEPTIONINFO）
+- [[configobject/UDG/20.15.2/RESEXCEPTIONINFO]] · 异常信息（RESEXCEPTIONINFO）
 
 ## 使用实例
 

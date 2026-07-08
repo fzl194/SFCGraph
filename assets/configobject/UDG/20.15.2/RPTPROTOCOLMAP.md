@@ -1,0 +1,35 @@
+---
+id: UDG@20.15.2@ConfigObject@RPTPROTOCOLMAP
+type: ConfigObject
+name: RPTPROTOCOLMAP（业务报表映射承载协议分类配置）
+nf: UDG
+version: 20.15.2
+object_name: RPTPROTOCOLMAP
+object_kind: entity
+applicable_nf:
+- PGW-U
+- UPF
+status: active
+---
+
+# RPTPROTOCOLMAP（业务报表映射承载协议分类配置）
+
+## 说明
+
+**适用NF：PGW-U、UPF**
+
+该命令用于增加业务报表承载协议映射配置。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-RPTPROTOCOLMAP]] · ADD RPTPROTOCOLMAP
+- [[command/UDG/20.15.2/LST-RPTPROTOCOLMAP]] · LST RPTPROTOCOLMAP
+- [[command/UDG/20.15.2/MOD-RPTPROTOCOLMAP]] · MOD RPTPROTOCOLMAP
+- [[command/UDG/20.15.2/RMV-RPTPROTOCOLMAP]] · RMV RPTPROTOCOLMAP
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/RPTPROTOCOLMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/RPTPROTOCOLMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/RPTPROTOCOLMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/RPTPROTOCOLMAP.md`

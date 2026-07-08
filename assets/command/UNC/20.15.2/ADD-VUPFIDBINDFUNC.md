@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@VUPFIDBINDFUNC]] · 虚拟UPF实例标识的绑定功能（VUPFIDBINDFUNC）
+- [[configobject/UNC/20.15.2/VUPFIDBINDFUNC]] · 虚拟UPF实例标识的绑定功能（VUPFIDBINDFUNC）
 
 ## 使用实例
 

@@ -36,7 +36,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SYSLOGCONTENTCFG]] · 日志内容配置（SYSLOGCONTENTCFG）
+- [[configobject/UNC/20.15.2/SYSLOGCONTENTCFG]] · 日志内容配置（SYSLOGCONTENTCFG）
 
 ## 使用实例
 

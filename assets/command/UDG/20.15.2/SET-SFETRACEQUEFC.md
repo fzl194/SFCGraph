@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SFETRACEQUEFC]] · VNRS IP消息跟踪的队列流控配置（SFETRACEQUEFC）
+- [[configobject/UDG/20.15.2/SFETRACEQUEFC]] · VNRS IP消息跟踪的队列流控配置（SFETRACEQUEFC）
 
 ## 使用实例
 

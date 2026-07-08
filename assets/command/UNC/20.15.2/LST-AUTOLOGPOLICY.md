@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AUTOLOGPOLICY]] · 日志自动备份策略（AUTOLOGPOLICY）
+- [[configobject/UNC/20.15.2/AUTOLOGPOLICY]] · 日志自动备份策略（AUTOLOGPOLICY）
 
 ## 使用实例
 

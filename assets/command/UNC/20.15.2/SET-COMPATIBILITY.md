@@ -76,7 +76,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@COMPATIBILITY]] · QoS兼容性配置（COMPATIBILITY）
+- [[configobject/UNC/20.15.2/COMPATIBILITY]] · QoS兼容性配置（COMPATIBILITY）
 
 ## 使用实例
 

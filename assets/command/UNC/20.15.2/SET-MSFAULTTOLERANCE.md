@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MSFAULTTOLERANCE]] · 故障检测参数（MSFAULTTOLERANCE）
+- [[configobject/UNC/20.15.2/MSFAULTTOLERANCE]] · 故障检测参数（MSFAULTTOLERANCE）
 
 ## 使用实例
 

@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACTIVEALARM]] · 活动告警（ACTIVEALARM）
+- [[configobject/UNC/20.15.2/ACTIVEALARM]] · 活动告警（ACTIVEALARM）
 
 ## 使用实例
 

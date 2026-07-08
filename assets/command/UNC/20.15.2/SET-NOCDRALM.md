@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NOCDRALM]] · 未接收到话单告警参数（NOCDRALM）
+- [[configobject/UNC/20.15.2/NOCDRALM]] · 未接收到话单告警参数（NOCDRALM）
 
 ## 使用实例
 

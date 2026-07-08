@@ -35,7 +35,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NFVIUPDRECVHIST]] · 分批升级历史（NFVIUPDRECVHIST）
+- [[configobject/UDG/20.15.2/NFVIUPDRECVHIST]] · 分批升级历史（NFVIUPDRECVHIST）
 
 ## 使用实例
 

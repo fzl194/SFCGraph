@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@QOSDIFFERSERV]] · DS域（QOSDIFFERSERV）
+- [[configobject/UNC/20.15.2/QOSDIFFERSERV]] · DS域（QOSDIFFERSERV）
 
 ## 使用实例
 

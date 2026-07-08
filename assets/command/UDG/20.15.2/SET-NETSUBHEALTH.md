@@ -50,7 +50,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NETSUBHEALTH]] · 网络亚健康参数（NETSUBHEALTH）
+- [[configobject/UDG/20.15.2/NETSUBHEALTH]] · 网络亚健康参数（NETSUBHEALTH）
 
 ## 使用实例
 

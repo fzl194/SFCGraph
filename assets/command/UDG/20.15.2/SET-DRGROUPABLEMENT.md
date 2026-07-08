@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DRGROUPABLEMENT]] · 是否使能热备容灾组（DRGROUPABLEMENT）
+- [[configobject/UDG/20.15.2/DRGROUPABLEMENT]] · 是否使能热备容灾组（DRGROUPABLEMENT）
 
 ## 使用实例
 

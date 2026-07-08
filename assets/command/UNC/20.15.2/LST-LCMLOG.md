@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LCMLOG]] · 网元生命周期管理日志（LCMLOG）
+- [[configobject/UNC/20.15.2/LCMLOG]] · 网元生命周期管理日志（LCMLOG）
 
 ## 使用实例
 

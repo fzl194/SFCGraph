@@ -1,0 +1,30 @@
+---
+id: UDG@20.15.2@ConfigObject@TUNNELSELECTORNODE
+type: ConfigObject
+name: TUNNELSELECTORNODE（隧道选择器节点）
+nf: UDG
+version: 20.15.2
+object_name: TUNNELSELECTORNODE
+object_kind: entity
+status: active
+---
+
+# TUNNELSELECTORNODE（隧道选择器节点）
+
+## 说明
+
+该命令用于添加隧道选择器节点。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-TUNNELSELECTORNODE]] · ADD TUNNELSELECTORNODE
+- [[command/UDG/20.15.2/LST-TUNNELSELECTORNODE]] · LST TUNNELSELECTORNODE
+- [[command/UDG/20.15.2/MOD-TUNNELSELECTORNODE]] · MOD TUNNELSELECTORNODE
+- [[command/UDG/20.15.2/RMV-TUNNELSELECTORNODE]] · RMV TUNNELSELECTORNODE
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`

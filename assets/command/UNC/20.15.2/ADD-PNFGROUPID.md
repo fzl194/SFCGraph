@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PNFGROUPID]] · 对端NF的群组信息（PNFGROUPID）
+- [[configobject/UNC/20.15.2/PNFGROUPID]] · 对端NF的群组信息（PNFGROUPID）
 
 ## 使用实例
 

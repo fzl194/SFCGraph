@@ -50,7 +50,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@BMBYPASSSTATUS]] · 裸机BYPASS状态（BMBYPASSSTATUS）
+- [[configobject/UDG/20.15.2/BMBYPASSSTATUS]] · 裸机BYPASS状态（BMBYPASSSTATUS）
 
 ## 使用实例
 

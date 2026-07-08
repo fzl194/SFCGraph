@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MEASMU]] · 话统测量单元模型（MEASMU）
+- [[configobject/UNC/20.15.2/MEASMU]] · 话统测量单元模型（MEASMU）
 
 ## 使用实例
 

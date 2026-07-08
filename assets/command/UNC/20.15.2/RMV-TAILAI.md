@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TAILAI]] · TAI与LAI对应关系（TAILAI）
+- [[configobject/UNC/20.15.2/TAILAI]] · TAI与LAI对应关系（TAILAI）
 
 ## 使用实例
 

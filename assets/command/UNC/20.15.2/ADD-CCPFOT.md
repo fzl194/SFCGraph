@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CCPFOT]] · 融合计费Proxy Failover模板（CCPFOT）
+- [[configobject/UNC/20.15.2/CCPFOT]] · 融合计费Proxy Failover模板（CCPFOT）
 
 ## 使用实例
 

@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PATHSTATUSRPT]] · 用户面路径状态上报功能（PATHSTATUSRPT）
+- [[configobject/UDG/20.15.2/PATHSTATUSRPT]] · 用户面路径状态上报功能（PATHSTATUSRPT）
 
 ## 使用实例
 

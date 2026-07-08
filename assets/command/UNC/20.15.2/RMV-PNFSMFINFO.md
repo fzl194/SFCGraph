@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PNFSMFINFO]] · 对端SMF的信息（PNFSMFINFO）
+- [[configobject/UNC/20.15.2/PNFSMFINFO]] · 对端SMF的信息（PNFSMFINFO）
 
 ## 使用实例
 

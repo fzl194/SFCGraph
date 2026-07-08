@@ -57,7 +57,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MEASTHRESHOLDRULE]] · 话统阈值规则（MEASTHRESHOLDRULE）
+- [[configobject/UNC/20.15.2/MEASTHRESHOLDRULE]] · 话统阈值规则（MEASTHRESHOLDRULE）
 
 ## 使用实例
 

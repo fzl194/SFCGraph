@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CNTRESSTAT]] · 容器资源信息（CNTRESSTAT）
+- [[configobject/UNC/20.15.2/CNTRESSTAT]] · 容器资源信息（CNTRESSTAT）
 
 ## 使用实例
 

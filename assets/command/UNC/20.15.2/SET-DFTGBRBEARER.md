@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DFTGBRBEARER]] · 缺省GBR承载参数（DFTGBRBEARER）
+- [[configobject/UNC/20.15.2/DFTGBRBEARER]] · 缺省GBR承载参数（DFTGBRBEARER）
 
 ## 使用实例
 

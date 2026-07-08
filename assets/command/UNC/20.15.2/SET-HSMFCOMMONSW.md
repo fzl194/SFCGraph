@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@HSMFCOMMONSW]] · H-SMF通用控制开关（HSMFCOMMONSW）
+- [[configobject/UNC/20.15.2/HSMFCOMMONSW]] · H-SMF通用控制开关（HSMFCOMMONSW）
 
 ## 使用实例
 

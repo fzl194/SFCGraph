@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PLUGINFO]] · 插件信息（PLUGINFO）
+- [[configobject/UNC/20.15.2/PLUGINFO]] · 插件信息（PLUGINFO）
 
 ## 使用实例
 

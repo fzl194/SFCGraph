@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACSUPDSTATUS]] · 升级状态（ACSUPDSTATUS）
+- [[configobject/UNC/20.15.2/ACSUPDSTATUS]] · 升级状态（ACSUPDSTATUS）
 
 ## 使用实例
 

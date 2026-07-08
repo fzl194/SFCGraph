@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@AFDB]] · 防欺诈业务规则数据库（AFDB）
+- [[configobject/UDG/20.15.2/AFDB]] · 防欺诈业务规则数据库（AFDB）
 
 ## 使用实例
 

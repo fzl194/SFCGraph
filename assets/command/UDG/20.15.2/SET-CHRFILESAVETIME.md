@@ -47,7 +47,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CHRFILESAVETIME]] · 文件存留期设置（CHRFILESAVETIME）
+- [[configobject/UDG/20.15.2/CHRFILESAVETIME]] · 文件存留期设置（CHRFILESAVETIME）
 
 ## 使用实例
 

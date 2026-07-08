@@ -106,7 +106,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NODECHKPARA]] · 节点检测参数（NODECHKPARA）
+- [[configobject/UNC/20.15.2/NODECHKPARA]] · 节点检测参数（NODECHKPARA）
 
 ## 使用实例
 

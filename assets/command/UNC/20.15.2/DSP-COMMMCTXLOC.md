@@ -50,7 +50,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@COMMMCTXLOC]] · 移动管理位置信息上下文（COMMMCTXLOC）
+- [[configobject/UNC/20.15.2/COMMMCTXLOC]] · 移动管理位置信息上下文（COMMMCTXLOC）
 
 ## 使用实例
 

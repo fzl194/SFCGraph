@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACSUPDRUVER]] · RU版本信息（ACSUPDRUVER）
+- [[configobject/UDG/20.15.2/ACSUPDRUVER]] · RU版本信息（ACSUPDRUVER）
 
 ## 使用实例
 

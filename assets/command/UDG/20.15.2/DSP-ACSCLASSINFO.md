@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACSCLASSINFO]] · 配置表信息（ACSCLASSINFO）
+- [[configobject/UDG/20.15.2/ACSCLASSINFO]] · 配置表信息（ACSCLASSINFO）
 
 ## 使用实例
 

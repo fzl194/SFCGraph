@@ -38,7 +38,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@POD]] · POD停止（POD）
+- [[configobject/UDG/20.15.2/POD]] · POD停止（POD）
 
 ## 使用实例
 

@@ -43,7 +43,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MEASTREND]] · 话统指标统计趋势（MEASTREND）
+- [[configobject/UDG/20.15.2/MEASTREND]] · 话统指标统计趋势（MEASTREND）
 
 ## 使用实例
 

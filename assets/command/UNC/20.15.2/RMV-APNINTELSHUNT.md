@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNINTELSHUNT]] · APN智能分流关键词（APNINTELSHUNT）
+- [[configobject/UNC/20.15.2/APNINTELSHUNT]] · APN智能分流关键词（APNINTELSHUNT）
 
 ## 使用实例
 

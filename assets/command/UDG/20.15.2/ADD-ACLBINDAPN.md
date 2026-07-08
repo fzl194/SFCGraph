@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACLBINDAPN]] · Acl绑定关系（ACLBINDAPN）
+- [[configobject/UDG/20.15.2/ACLBINDAPN]] · Acl绑定关系（ACLBINDAPN）
 
 ## 使用实例
 

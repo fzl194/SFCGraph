@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PWDBLACKLIST]] · 密码禁用词（PWDBLACKLIST）
+- [[configobject/UDG/20.15.2/PWDBLACKLIST]] · 密码禁用词（PWDBLACKLIST）
 
 ## 使用实例
 

@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHGINITPRI]] · RADIUS计费和在线计费消息优先级（CHGINITPRI）
+- [[configobject/UNC/20.15.2/CHGINITPRI]] · RADIUS计费和在线计费消息优先级（CHGINITPRI）
 
 ## 使用实例
 

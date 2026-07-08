@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OCSBINDING]] · Ocs绑定关系（OCSBINDING）
+- [[configobject/UNC/20.15.2/OCSBINDING]] · Ocs绑定关系（OCSBINDING）
 
 ## 使用实例
 

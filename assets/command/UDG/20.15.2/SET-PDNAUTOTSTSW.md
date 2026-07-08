@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PDNAUTOTSTSW]] · PDN自动探测开关状态（PDNAUTOTSTSW）
+- [[configobject/UDG/20.15.2/PDNAUTOTSTSW]] · PDN自动探测开关状态（PDNAUTOTSTSW）
 
 ## 使用实例
 

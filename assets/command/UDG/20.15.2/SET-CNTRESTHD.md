@@ -64,7 +64,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CNTRESTHD]] · 容器资源阈值（CNTRESTHD）
+- [[configobject/UDG/20.15.2/CNTRESTHD]] · 容器资源阈值（CNTRESTHD）
 
 ## 使用实例
 

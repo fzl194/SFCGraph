@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IFCMCFG]] · IFCM配置信息（IFCMCFG）
+- [[configobject/UDG/20.15.2/IFCMCFG]] · IFCM配置信息（IFCMCFG）
 
 ## 使用实例
 

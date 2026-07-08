@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TRFCDFDSWITCH]] · 大流量攻击防护配置（TRFCDFDSWITCH）
+- [[configobject/UDG/20.15.2/TRFCDFDSWITCH]] · 大流量攻击防护配置（TRFCDFDSWITCH）
 
 ## 使用实例
 

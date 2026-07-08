@@ -1,0 +1,73 @@
+---
+id: UNC@20.15.2@ConfigObject@SGWDNS
+type: ConfigObject
+name: SGWDNS（S-GW DNS域名策略）
+nf: UNC
+version: 20.15.2
+object_name: SGWDNS
+object_kind: entity
+applicable_nf:
+- SGSN
+- MME
+status: active
+---
+
+# SGWDNS（S-GW DNS域名策略）
+
+## 说明
+
+**适用网元：SGSN、MME**
+
+该命令用于在多PLMN共享跟踪区域或者位置区域场景时，定制S-GW域名中的PLMN组装策略，从而可以简化 [**ADD DNSN**](../../DNS/DNS NAPTR管理/增加DNS NAPTR记录(ADD DNSN)_72225569.md) 的配置信息。
+
+在E-UTRAN网络查询S-GW时使用的是TAI FQDN，在UTRAN网络查询S-GW时使用的是RAI FQDN。被多个PLMN共享的一组跟踪区域或者位置区域其对应的S-GW一般都是一样的，为了S-GW查询，则需要针对每一个PLMN配置一条DNSN记录。为了减少DNSN配置， UNC 系统提供该命令，指定一个特定的PLMN代替所有的PLMN来组装FQDN，进行S-GW查询。
+
+场景举例：
+
+以E-UTRAN网络为例，如果RAN侧的跟踪区域码为0x1234，分别被五个PLMN共享，PLMN1（111222）、PLMN2（111333）、PLMN3（111444）、PLMN4（111555）和PLMN（111666）。 该跟踪区对应如下S-GW：
+
+```
+ADD IPV4DNSH: HSINDEX=1, HOSTNAME="TOPON.S11.SGW1.PUDONG.3GPPNETWORK.ORG", ADDRSECTION=SECTION1, IPV4ADDR1="10.10.10.10";
+```
+
+- 当无此配置时，则需要配置如下五条查询DNSN记录，才可以满足在该跟踪区下选择不同PLMN的用户正常附着：
+  ```
+  ADD IPV4DNSH: HSINDEX=1, HOSTNAME="TOPON.S11.SGW1.PUDONG.3GPPNETWORK.ORG", ADDRSECTION=SECTION1, IPV4ADDR1="10.10.10.10";
+  ```
+  ```
+  ADD DNSN: FQDN="TAC-LB34.TAC-HB12.TAC.EPC.MNC222.MCC111.3GPPNETWORK.ORG", HSINDEX=1, ENTITY=SGW, INTYPE=S11;
+  ```
+  ```
+  ADD DNSN: FQDN="TAC-LB34.TAC-HB12.TAC.EPC.MNC333.MCC111.3GPPNETWORK.ORG", HSINDEX=1, ENTITY=SGW, INTYPE=S11;
+  ```
+  ```
+  ADD DNSN: FQDN="TAC-LB34.TAC-HB12.TAC.EPC.MNC444.MCC111.3GPPNETWORK.ORG", HSINDEX=1, ENTITY=SGW, INTYPE=S11;
+  ```
+  ```
+  ADD DNSN: FQDN="TAC-LB34.TAC-HB12.TAC.EPC.MNC555.MCC111.3GPPNETWORK.ORG", HSINDEX=1, ENTITY=SGW, INTYPE=S11;
+  ```
+  ```
+  ADD DNSN: FQDN="TAC-LB34.TAC-HB12.TAC.EPC.MNC666.MCC111.3GPPNETWORK.ORG", HSINDEX=1, ENTITY=SGW, INTYPE=S11;
+  ```
+- 当有如下配置（指定TAC 0x1234在组装FQDN选择S-GW时使用特定的PLMN：555666，该PLMN可以为任意PLMN）存在时：
+  ```
+  ADD SGWDNS: DNTYPE=TAI, TAC="0x1234", TACRANGE="0x1234", MCC="555", MNC="666";
+  ```
+  则只需要配置如下一条DNSN来代替上面五条：
+  ```
+  ADD DNSN: FQDN="TAC-LB34.TAC-HB12.TAC.EPC.MNC666.MCC555.3GPPNETWORK.ORG", HSINDEX=1, ENTITY=SGW, INTYPE=S11;
+  ```
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-SGWDNS]] · ADD SGWDNS
+- [[command/UNC/20.15.2/LST-SGWDNS]] · LST SGWDNS
+- [[command/UNC/20.15.2/MOD-SGWDNS]] · MOD SGWDNS
+- [[command/UNC/20.15.2/RMV-SGWDNS]] · RMV SGWDNS
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`

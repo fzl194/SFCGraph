@@ -1,0 +1,34 @@
+---
+id: UDG@20.15.2@ConfigObject@DBRUMEM
+type: ConfigObject
+name: DBRUMEM（CSDB RU内存信息）
+nf: UDG
+version: 20.15.2
+object_name: DBRUMEM
+object_kind: entity
+status: active
+---
+
+# DBRUMEM（CSDB RU内存信息）
+
+## 说明
+
+![](增加CSDB RU内存信息(ADD DBRUMEM)_58702520.assets/notice_3.0-zh-cn.png)
+
+该操作将修改CSDB RU上数据备份内存大小，不合理的修改将导致CSDB异常，修改后需要重启CSDB生效。
+
+该命令通过增加CSDB RU内存信息，来修改RU内存大小。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-DBRUMEM]] · ADD DBRUMEM
+- [[command/UDG/20.15.2/LST-DBRUMEM]] · LST DBRUMEM
+- [[command/UDG/20.15.2/MOD-DBRUMEM]] · MOD DBRUMEM
+- [[command/UDG/20.15.2/RMV-DBRUMEM]] · RMV DBRUMEM
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/DBRUMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/DBRUMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/DBRUMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/DBRUMEM.md`

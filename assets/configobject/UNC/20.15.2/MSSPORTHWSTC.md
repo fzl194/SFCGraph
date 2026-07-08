@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@MSSPORTHWSTC
+type: ConfigObject
+name: MSSPORTHWSTC（端口硬件统计信息）
+nf: UNC
+version: 20.15.2
+object_name: MSSPORTHWSTC
+object_kind: query_target
+status: active
+---
+
+# MSSPORTHWSTC（端口硬件统计信息）
+
+## 说明
+
+该命令用于查询指定端口的网卡硬件统计信息。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-MSSPORTHWSTC]] · DSP MSSPORTHWSTC
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MSSPORTHWSTC.md`

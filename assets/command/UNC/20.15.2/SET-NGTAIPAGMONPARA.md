@@ -64,7 +64,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGTAIPAGMONPARA]] · NG TAI组寻呼异常监控功能参数（NGTAIPAGMONPARA）
+- [[configobject/UNC/20.15.2/NGTAIPAGMONPARA]] · NG TAI组寻呼异常监控功能参数（NGTAIPAGMONPARA）
 
 ## 使用实例
 

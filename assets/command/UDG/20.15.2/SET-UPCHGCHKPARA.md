@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@UPCHGCHKPARA]] · 计费检查参数（UPCHGCHKPARA）
+- [[configobject/UDG/20.15.2/UPCHGCHKPARA]] · 计费检查参数（UPCHGCHKPARA）
 
 ## 使用实例
 

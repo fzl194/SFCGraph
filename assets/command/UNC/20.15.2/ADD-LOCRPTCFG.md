@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOCRPTCFG]] · 位置上报配置信息（LOCRPTCFG）
+- [[configobject/UNC/20.15.2/LOCRPTCFG]] · 位置上报配置信息（LOCRPTCFG）
 
 ## 使用实例
 

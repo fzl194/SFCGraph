@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CONFLICTIP]] · 冲突地址（CONFLICTIP）
+- [[configobject/UNC/20.15.2/CONFLICTIP]] · 冲突地址（CONFLICTIP）
 
 ## 使用实例
 

@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOGAPFM]] · 日志代理性能统计信息（LOGAPFM）
+- [[configobject/UNC/20.15.2/LOGAPFM]] · 日志代理性能统计信息（LOGAPFM）
 
 ## 使用实例
 

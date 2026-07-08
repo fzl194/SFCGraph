@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGTALST]] · 5G跟踪区列表（NGTALST）
+- [[configobject/UNC/20.15.2/NGTALST]] · 5G跟踪区列表（NGTALST）
 
 ## 使用实例
 

@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NODEMEMSTAT]] · Node的内存信息（NODEMEMSTAT）
+- [[configobject/UDG/20.15.2/NODEMEMSTAT]] · Node的内存信息（NODEMEMSTAT）
 
 ## 使用实例
 

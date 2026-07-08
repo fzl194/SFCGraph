@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@N26MMECHAR]] · N26接口MME属性（N26MMECHAR）
+- [[configobject/UNC/20.15.2/N26MMECHAR]] · N26接口MME属性（N26MMECHAR）
 
 ## 使用实例
 

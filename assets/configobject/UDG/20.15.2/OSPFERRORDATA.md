@@ -1,0 +1,24 @@
+---
+id: UDG@20.15.2@ConfigObject@OSPFERRORDATA
+type: ConfigObject
+name: OSPFERRORDATA（OSPF进程的错误信息）
+nf: UDG
+version: 20.15.2
+object_name: OSPFERRORDATA
+object_kind: query_target
+status: active
+---
+
+# OSPFERRORDATA（OSPF进程的错误信息）
+
+## 说明
+
+该命令用于显示OSPF的错误信息。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-OSPFERRORDATA]] · DSP OSPFERRORDATA
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/OSPFERRORDATA.md`

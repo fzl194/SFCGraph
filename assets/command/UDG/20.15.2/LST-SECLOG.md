@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SECLOG]] · 安全日志（SECLOG）
+- [[configobject/UDG/20.15.2/SECLOG]] · 安全日志（SECLOG）
 
 ## 使用实例
 

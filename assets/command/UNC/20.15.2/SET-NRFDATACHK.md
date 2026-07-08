@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFDATACHK]] · NRF数据一致性核查相关参数（NRFDATACHK）
+- [[configobject/UNC/20.15.2/NRFDATACHK]] · NRF数据一致性核查相关参数（NRFDATACHK）
 
 ## 使用实例
 

@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PSPKUBEPROBE]] · 是否放通管道大颗粒readiness就绪探测（PSPKUBEPROBE）
+- [[configobject/UDG/20.15.2/PSPKUBEPROBE]] · 是否放通管道大颗粒readiness就绪探测（PSPKUBEPROBE）
 
 ## 使用实例
 

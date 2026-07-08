@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TOPICSTAT]] · topic状态（TOPICSTAT）
+- [[configobject/UDG/20.15.2/TOPICSTAT]] · topic状态（TOPICSTAT）
 
 ## 使用实例
 

@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@OPSPROCESSSTATE
+type: ConfigObject
+name: OPSPROCESSSTATE（通过OPS运行的应用程序的信息）
+nf: UNC
+version: 20.15.2
+object_name: OPSPROCESSSTATE
+object_kind: query_target
+status: active
+---
+
+# OPSPROCESSSTATE（通过OPS运行的应用程序的信息）
+
+## 说明
+
+该命令用于显示通过OPS运行的应用程序的信息。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-OPSPROCESSSTATE]] · DSP OPSPROCESSSTATE
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/OPSPROCESSSTATE.md`

@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ULCLAREADPMODE]] · 指定DNAI服务区域的ULCL部署模式（ULCLAREADPMODE）
+- [[configobject/UNC/20.15.2/ULCLAREADPMODE]] · 指定DNAI服务区域的ULCL部署模式（ULCLAREADPMODE）
 
 ## 使用实例
 

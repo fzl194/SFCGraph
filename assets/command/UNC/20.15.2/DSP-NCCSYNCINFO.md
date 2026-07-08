@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NCCSYNCINFO]] · NETCONFC的配置同步信息（NCCSYNCINFO）
+- [[configobject/UNC/20.15.2/NCCSYNCINFO]] · NETCONFC的配置同步信息（NCCSYNCINFO）
 
 ## 使用实例
 

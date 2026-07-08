@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RDSACCTATTTEMP]] · 计费消息属性模板（RDSACCTATTTEMP）
+- [[configobject/UNC/20.15.2/RDSACCTATTTEMP]] · 计费消息属性模板（RDSACCTATTTEMP）
 
 ## 使用实例
 

@@ -1,0 +1,33 @@
+---
+id: UDG@20.15.2@ConfigObject@HTTPSTATPARA
+type: ConfigObject
+name: HTTPSTATPARA（HTTP统计参数）
+nf: UDG
+version: 20.15.2
+object_name: HTTPSTATPARA
+object_kind: entity
+status: active
+---
+
+# HTTPSTATPARA（HTTP统计参数）
+
+## 说明
+
+该命令用于增加一个HTTP对端地址，并将使用该地址的HTTP链路的内部统计信息打印到运行日志中。
+
+> **说明**
+> - 该命令执行后立即生效。
+>
+> - 最多可输入10条记录。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-HTTPSTATPARA]] · ADD HTTPSTATPARA
+- [[command/UDG/20.15.2/LST-HTTPSTATPARA]] · LST HTTPSTATPARA
+- [[command/UDG/20.15.2/RMV-HTTPSTATPARA]] · RMV HTTPSTATPARA
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/HTTPSTATPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/HTTPSTATPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/HTTPSTATPARA.md`

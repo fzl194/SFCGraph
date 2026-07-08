@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SNSSAI]] · NF支持的网络切片选择标识（SNSSAI）
+- [[configobject/UDG/20.15.2/SNSSAI]] · NF支持的网络切片选择标识（SNSSAI）
 
 ## 使用实例
 

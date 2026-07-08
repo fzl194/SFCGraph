@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组；
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@S1UBLACKLST]] · S1-U IP地址黑名单记录（S1UBLACKLST）
+- [[configobject/UNC/20.15.2/S1UBLACKLST]] · S1-U IP地址黑名单记录（S1UBLACKLST）
 
 ## 使用实例
 

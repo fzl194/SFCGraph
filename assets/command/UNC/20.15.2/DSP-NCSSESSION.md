@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NCSSESSION]] · NETCONF会话信息（NCSSESSION）
+- [[configobject/UNC/20.15.2/NCSSESSION]] · NETCONF会话信息（NCSSESSION）
 
 ## 使用实例
 

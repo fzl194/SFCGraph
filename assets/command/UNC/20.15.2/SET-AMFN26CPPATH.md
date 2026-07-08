@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组。
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMFN26CPPATH]] · AMF N26消息抄送路径（AMFN26CPPATH）
+- [[configobject/UNC/20.15.2/AMFN26CPPATH]] · AMF N26消息抄送路径（AMFN26CPPATH）
 
 ## 使用实例
 

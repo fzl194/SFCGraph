@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@STGALARMCTRL]] · 融合计费话单缓存告警上报的控制参数（STGALARMCTRL）
+- [[configobject/UNC/20.15.2/STGALARMCTRL]] · 融合计费话单缓存告警上报的控制参数（STGALARMCTRL）
 
 ## 使用实例
 

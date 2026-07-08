@@ -1,0 +1,32 @@
+---
+id: UNC@20.15.2@ConfigObject@NRFPLMNNF
+type: ConfigObject
+name: NRFPLMNNF（关口局NF信息）
+nf: UNC
+version: 20.15.2
+object_name: NRFPLMNNF
+object_kind: entity
+applicable_nf:
+- NRF
+status: active
+---
+
+# NRFPLMNNF（关口局NF信息）
+
+## 说明
+
+**适用NF：NRF**
+
+该命令用于增加本NRF管理的关口局NF，对于漫游业务，通过此命令可以使NRF在服务发现流程中优选返回关口局NF。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-NRFPLMNNF]] · ADD NRFPLMNNF
+- [[command/UNC/20.15.2/LST-NRFPLMNNF]] · LST NRFPLMNNF
+- [[command/UNC/20.15.2/RMV-NRFPLMNNF]] · RMV NRFPLMNNF
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/NRFPLMNNF.md`
+- 原始手册：`evidence/UNC/20.15.2/NRFPLMNNF.md`
+- 原始手册：`evidence/UNC/20.15.2/NRFPLMNNF.md`

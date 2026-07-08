@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMFADDRLOCWL]] · 位置区域地址分配用户白名单（SMFADDRLOCWL）
+- [[configobject/UNC/20.15.2/SMFADDRLOCWL]] · 位置区域地址分配用户白名单（SMFADDRLOCWL）
 
 ## 使用实例
 

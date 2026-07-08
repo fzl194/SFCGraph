@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OMMQ]] · 清理OMMQ数据（OMMQ）
+- [[configobject/UDG/20.15.2/OMMQ]] · 清理OMMQ数据（OMMQ）
 
 ## 使用实例
 

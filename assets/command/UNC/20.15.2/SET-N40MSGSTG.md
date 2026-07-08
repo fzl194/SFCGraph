@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@N40MSGSTG]] · 缓存开关、回放间隔、回放速率（N40MSGSTG）
+- [[configobject/UNC/20.15.2/N40MSGSTG]] · 缓存开关、回放间隔、回放速率（N40MSGSTG）
 
 ## 使用实例
 

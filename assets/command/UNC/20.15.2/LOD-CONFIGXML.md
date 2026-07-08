@@ -94,7 +94,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CONFIGXML]] · XML文件配置到数据库（CONFIGXML）
+- [[configobject/UNC/20.15.2/CONFIGXML]] · XML文件配置到数据库（CONFIGXML）
 
 ## 使用实例
 

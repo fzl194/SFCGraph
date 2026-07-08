@@ -56,7 +56,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NEWCERTSWITCH]] · 证书开关状态（NEWCERTSWITCH）
+- [[configobject/UDG/20.15.2/NEWCERTSWITCH]] · 证书开关状态（NEWCERTSWITCH）
 
 ## 使用实例
 

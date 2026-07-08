@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@GLBIPV6INFID]] · 整机IPv6接口ID配置（GLBIPV6INFID）
+- [[configobject/UDG/20.15.2/GLBIPV6INFID]] · 整机IPv6接口ID配置（GLBIPV6INFID）
 
 ## 使用实例
 

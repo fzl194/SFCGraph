@@ -47,7 +47,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LOGINALM]] · 登录告警策略（LOGINALM）
+- [[configobject/UDG/20.15.2/LOGINALM]] · 登录告警策略（LOGINALM）
 
 ## 使用实例
 

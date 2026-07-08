@@ -36,7 +36,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LBTOPO]] · SDRC中缓存的CSLB的拓扑（LBTOPO）
+- [[configobject/UNC/20.15.2/LBTOPO]] · SDRC中缓存的CSLB的拓扑（LBTOPO）
 
 ## 使用实例
 

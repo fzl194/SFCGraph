@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UCFCONFIG]] · UCF文件管理规格配置（UCFCONFIG）
+- [[configobject/UNC/20.15.2/UCFCONFIG]] · UCF文件管理规格配置（UCFCONFIG）
 
 ## 使用实例
 

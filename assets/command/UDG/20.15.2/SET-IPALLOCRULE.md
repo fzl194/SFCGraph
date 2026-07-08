@@ -68,7 +68,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IPALLOCRULE]] · 地址分配规则（IPALLOCRULE）
+- [[configobject/UDG/20.15.2/IPALLOCRULE]] · 地址分配规则（IPALLOCRULE）
 
 ## 关联任务
 

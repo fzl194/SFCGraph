@@ -61,7 +61,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DISKPARTITION]] · 资源磁盘分区过载配置（DISKPARTITION）
+- [[configobject/UDG/20.15.2/DISKPARTITION]] · 资源磁盘分区过载配置（DISKPARTITION）
 
 ## 使用实例
 

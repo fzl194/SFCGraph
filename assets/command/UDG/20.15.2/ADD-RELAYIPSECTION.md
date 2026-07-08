@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RELAYIPSECTION]] · 媒体中继IP段（RELAYIPSECTION）
+- [[configobject/UDG/20.15.2/RELAYIPSECTION]] · 媒体中继IP段（RELAYIPSECTION）
 
 ## 使用实例
 

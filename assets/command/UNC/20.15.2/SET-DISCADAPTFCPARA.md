@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DISCADAPTFCPARA]] · 服务发现自适应流控全局配置（DISCADAPTFCPARA）
+- [[configobject/UNC/20.15.2/DISCADAPTFCPARA]] · 服务发现自适应流控全局配置（DISCADAPTFCPARA）
 
 ## 使用实例
 

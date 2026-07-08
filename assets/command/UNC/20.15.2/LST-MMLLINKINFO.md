@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MMLLINKINFO]] · MML服务连接信息（MMLLINKINFO）
+- [[configobject/UNC/20.15.2/MMLLINKINFO]] · MML服务连接信息（MMLLINKINFO）
 
 ## 使用实例
 

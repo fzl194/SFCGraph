@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OPTLOG]] · 操作日志（OPTLOG）
+- [[configobject/UDG/20.15.2/OPTLOG]] · 操作日志（OPTLOG）
 
 ## 使用实例
 

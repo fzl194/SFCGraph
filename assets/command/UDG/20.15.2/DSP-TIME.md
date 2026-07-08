@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TIME]] · 系统时间（TIME）
+- [[configobject/UDG/20.15.2/TIME]] · 系统时间（TIME）
 
 ## 使用实例
 

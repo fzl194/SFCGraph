@@ -54,7 +54,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@P2PCOMTASK]] · SDR点对点通信质量检测任务（P2PCOMTASK）
+- [[configobject/UDG/20.15.2/P2PCOMTASK]] · SDR点对点通信质量检测任务（P2PCOMTASK）
 
 ## 使用实例
 

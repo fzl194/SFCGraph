@@ -79,7 +79,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@M2MPLCY]] · M2M策略参数（M2MPLCY）
+- [[configobject/UNC/20.15.2/M2MPLCY]] · M2M策略参数（M2MPLCY）
 
 ## 使用实例
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IFALLOWEDVLAN]] · 主接口允许通过的VLAN（IFALLOWEDVLAN）
+- [[configobject/UNC/20.15.2/IFALLOWEDVLAN]] · 主接口允许通过的VLAN（IFALLOWEDVLAN）
 
 ## 使用实例
 

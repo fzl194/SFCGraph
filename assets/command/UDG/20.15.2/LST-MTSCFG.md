@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MTSCFG]] · 消息跟踪配置参数（MTSCFG）
+- [[configobject/UDG/20.15.2/MTSCFG]] · 消息跟踪配置参数（MTSCFG）
 
 ## 使用实例
 

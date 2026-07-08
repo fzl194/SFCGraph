@@ -1,0 +1,28 @@
+---
+id: UDG@20.15.2@ConfigObject@OSPFV3IFIPSECSA
+type: ConfigObject
+name: OSPFV3IFIPSECSA（创建OSPFv3 接口的安全联盟SA）
+nf: UDG
+version: 20.15.2
+object_name: OSPFV3IFIPSECSA
+object_kind: entity
+status: active
+---
+
+# OSPFV3IFIPSECSA（创建OSPFv3 接口的安全联盟SA）
+
+## 说明
+
+该命令用于创建OSPFv3 接口的安全联盟SA。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-OSPFV3IFIPSECSA]] · ADD OSPFV3IFIPSECSA
+- [[command/UDG/20.15.2/LST-OSPFV3IFIPSECSA]] · LST OSPFV3IFIPSECSA
+- [[command/UDG/20.15.2/RMV-OSPFV3IFIPSECSA]] · RMV OSPFV3IFIPSECSA
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3IFIPSECSA.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3IFIPSECSA.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3IFIPSECSA.md`

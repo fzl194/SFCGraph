@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GBSM]] · Gb模式SM协议参数（GBSM）
+- [[configobject/UNC/20.15.2/GBSM]] · Gb模式SM协议参数（GBSM）
 
 ## 使用实例
 

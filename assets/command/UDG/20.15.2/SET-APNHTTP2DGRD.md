@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APNHTTP2DGRD]] · APN HTTP2.0协议回落开关（APNHTTP2DGRD）
+- [[configobject/UDG/20.15.2/APNHTTP2DGRD]] · APN HTTP2.0协议回落开关（APNHTTP2DGRD）
 
 ## 关联任务
 

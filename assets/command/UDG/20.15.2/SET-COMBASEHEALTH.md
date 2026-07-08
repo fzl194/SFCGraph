@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@COMBASEHEALTH]] · Base平面通信质量（COMBASEHEALTH）
+- [[configobject/UDG/20.15.2/COMBASEHEALTH]] · Base平面通信质量（COMBASEHEALTH）
 
 ## 使用实例
 

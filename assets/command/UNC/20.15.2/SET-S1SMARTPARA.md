@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@S1SMARTPARA]] · S1模式信令抑制参数（S1SMARTPARA）
+- [[configobject/UNC/20.15.2/S1SMARTPARA]] · S1模式信令抑制参数（S1SMARTPARA）
 
 ## 使用实例
 

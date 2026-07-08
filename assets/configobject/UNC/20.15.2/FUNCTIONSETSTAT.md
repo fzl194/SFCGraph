@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@FUNCTIONSETSTAT
+type: ConfigObject
+name: FUNCTIONSETSTAT（网络功能集状态）
+nf: UNC
+version: 20.15.2
+object_name: FUNCTIONSETSTAT
+object_kind: query_target
+status: active
+---
+
+# FUNCTIONSETSTAT（网络功能集状态）
+
+## 说明
+
+该命令用于显示网络功能集。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-FUNCTIONSETSTAT]] · DSP FUNCTIONSETSTAT
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/FUNCTIONSETSTAT.md`

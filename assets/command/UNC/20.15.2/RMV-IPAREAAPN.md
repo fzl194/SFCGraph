@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IPAREAAPN]] · IP区域APN网络标识（IPAREAAPN）
+- [[configobject/UNC/20.15.2/IPAREAAPN]] · IP区域APN网络标识（IPAREAAPN）
 
 ## 使用实例
 

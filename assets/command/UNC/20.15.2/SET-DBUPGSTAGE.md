@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DBUPGSTAGE]] · CSDB灰度升级阶段（DBUPGSTAGE）
+- [[configobject/UNC/20.15.2/DBUPGSTAGE]] · CSDB灰度升级阶段（DBUPGSTAGE）
 
 ## 使用实例
 

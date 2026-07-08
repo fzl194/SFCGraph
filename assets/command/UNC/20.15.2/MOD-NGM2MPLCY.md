@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGM2MPLCY]] · 5G M2M策略参数（NGM2MPLCY）
+- [[configobject/UNC/20.15.2/NGM2MPLCY]] · 5G M2M策略参数（NGM2MPLCY）
 
 ## 使用实例
 

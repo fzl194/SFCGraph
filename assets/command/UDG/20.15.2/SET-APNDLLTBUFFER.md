@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APNDLLTBUFFER]] · 基于APN的下行数据长时间缓存配置（APNDLLTBUFFER）
+- [[configobject/UDG/20.15.2/APNDLLTBUFFER]] · 基于APN的下行数据长时间缓存配置（APNDLLTBUFFER）
 
 ## 关联任务
 

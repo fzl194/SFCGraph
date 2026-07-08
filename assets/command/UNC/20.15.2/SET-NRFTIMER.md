@@ -80,7 +80,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFTIMER]] · NRF时长信息（NRFTIMER）
+- [[configobject/UNC/20.15.2/NRFTIMER]] · NRF时长信息（NRFTIMER）
 
 ## 使用实例
 

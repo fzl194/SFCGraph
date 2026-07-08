@@ -38,7 +38,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PROCINFO]] · 进程部署信息（PROCINFO）
+- [[configobject/UNC/20.15.2/PROCINFO]] · 进程部署信息（PROCINFO）
 
 ## 使用实例
 

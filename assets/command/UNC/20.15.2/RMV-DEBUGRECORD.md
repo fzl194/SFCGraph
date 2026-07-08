@@ -43,7 +43,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DEBUGRECORD]] · 异常信息记录（DEBUGRECORD）
+- [[configobject/UNC/20.15.2/DEBUGRECORD]] · 异常信息记录（DEBUGRECORD）
 
 ## 使用实例
 

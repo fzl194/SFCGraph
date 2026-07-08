@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APNSAPARA]] · 基于APN的业务感知参数（APNSAPARA）
+- [[configobject/UDG/20.15.2/APNSAPARA]] · 基于APN的业务感知参数（APNSAPARA）
 
 ## 使用实例
 

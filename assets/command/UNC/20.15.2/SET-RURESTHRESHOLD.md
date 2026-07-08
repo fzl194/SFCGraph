@@ -62,7 +62,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RURESTHRESHOLD]] · RU资源过载和去过载阈值（RURESTHRESHOLD）
+- [[configobject/UNC/20.15.2/RURESTHRESHOLD]] · RU资源过载和去过载阈值（RURESTHRESHOLD）
 
 ## 使用实例
 

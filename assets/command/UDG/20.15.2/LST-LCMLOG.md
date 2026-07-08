@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LCMLOG]] · 网元生命周期管理日志（LCMLOG）
+- [[configobject/UDG/20.15.2/LCMLOG]] · 网元生命周期管理日志（LCMLOG）
 
 ## 使用实例
 

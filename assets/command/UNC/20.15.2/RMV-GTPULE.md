@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GTPULE]] · GTP-U本地实体（GTPULE）
+- [[configobject/UNC/20.15.2/GTPULE]] · GTP-U本地实体（GTPULE）
 
 ## 使用实例
 

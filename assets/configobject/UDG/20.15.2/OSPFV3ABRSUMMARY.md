@@ -1,0 +1,30 @@
+---
+id: UDG@20.15.2@ConfigObject@OSPFV3ABRSUMMARY
+type: ConfigObject
+name: OSPFV3ABRSUMMARY（OSPFv3区域内路由聚合配置）
+nf: UDG
+version: 20.15.2
+object_name: OSPFV3ABRSUMMARY
+object_kind: entity
+status: active
+---
+
+# OSPFV3ABRSUMMARY（OSPFv3区域内路由聚合配置）
+
+## 说明
+
+该命令用于创建OSPFv3区域内路由聚合。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-OSPFV3ABRSUMMARY]] · ADD OSPFV3ABRSUMMARY
+- [[command/UDG/20.15.2/LST-OSPFV3ABRSUMMARY]] · LST OSPFV3ABRSUMMARY
+- [[command/UDG/20.15.2/MOD-OSPFV3ABRSUMMARY]] · MOD OSPFV3ABRSUMMARY
+- [[command/UDG/20.15.2/RMV-OSPFV3ABRSUMMARY]] · RMV OSPFV3ABRSUMMARY
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3ABRSUMMARY.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3ABRSUMMARY.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3ABRSUMMARY.md`
+- 原始手册：`evidence/UDG/20.15.2/OSPFV3ABRSUMMARY.md`

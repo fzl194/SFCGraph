@@ -1,0 +1,35 @@
+---
+id: UDG@20.15.2@ConfigObject@FWPOLICY
+type: ConfigObject
+name: FWPOLICY（防火墙策略）
+nf: UDG
+version: 20.15.2
+object_name: FWPOLICY
+object_kind: entity
+applicable_nf:
+- PGW-U
+- UPF
+status: active
+---
+
+# FWPOLICY（防火墙策略）
+
+## 说明
+
+**适用NF：PGW-U、UPF**
+
+该命令用于配置防火墙策略。防火墙策略用于控制上下行发起业务流的上下行报文处理策略，处理方式包括通过和丢弃两种。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-FWPOLICY]] · ADD FWPOLICY
+- [[command/UDG/20.15.2/LST-FWPOLICY]] · LST FWPOLICY
+- [[command/UDG/20.15.2/MOD-FWPOLICY]] · MOD FWPOLICY
+- [[command/UDG/20.15.2/RMV-FWPOLICY]] · RMV FWPOLICY
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/FWPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/FWPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/FWPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/FWPOLICY.md`

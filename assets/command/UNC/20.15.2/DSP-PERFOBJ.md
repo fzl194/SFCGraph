@@ -49,7 +49,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PERFOBJ]] · 性能对象信息（PERFOBJ）
+- [[configobject/UNC/20.15.2/PERFOBJ]] · 性能对象信息（PERFOBJ）
 
 ## 使用实例
 

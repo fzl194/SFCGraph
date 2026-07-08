@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGLANUPNODE]] · 指定实例名称的UPF节点特征（NGLANUPNODE）
+- [[configobject/UNC/20.15.2/NGLANUPNODE]] · 指定实例名称的UPF节点特征（NGLANUPNODE）
 
 ## 使用实例
 

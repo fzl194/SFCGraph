@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@FILTERGPMEMBER]] · 过滤器组成员（FILTERGPMEMBER）
+- [[configobject/UNC/20.15.2/FILTERGPMEMBER]] · 过滤器组成员（FILTERGPMEMBER）
 
 ## 使用实例
 

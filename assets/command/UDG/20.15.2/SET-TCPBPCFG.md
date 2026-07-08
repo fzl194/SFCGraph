@@ -53,7 +53,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TCPBPCFG]] · TCP过载反压HTTP流控配置（TCPBPCFG）
+- [[configobject/UDG/20.15.2/TCPBPCFG]] · TCP过载反压HTTP流控配置（TCPBPCFG）
 
 ## 使用实例
 

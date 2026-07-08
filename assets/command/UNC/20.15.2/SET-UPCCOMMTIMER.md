@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPCCOMMTIMER]] · 用户面控制通用定时器（UPCCOMMTIMER）
+- [[configobject/UNC/20.15.2/UPCCOMMTIMER]] · 用户面控制通用定时器（UPCCOMMTIMER）
 
 ## 使用实例
 

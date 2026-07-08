@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MTSPOLICY]] · 消息跟踪限制（MTSPOLICY）
+- [[configobject/UNC/20.15.2/MTSPOLICY]] · 消息跟踪限制（MTSPOLICY）
 
 ## 使用实例
 

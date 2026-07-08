@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SQOSPOLICYSTC]] · 查看端口流量策略报文统计（SQOSPOLICYSTC）
+- [[configobject/UNC/20.15.2/SQOSPOLICYSTC]] · 查看端口流量策略报文统计（SQOSPOLICYSTC）
 
 ## 使用实例
 

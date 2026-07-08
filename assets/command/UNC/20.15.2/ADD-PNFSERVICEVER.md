@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PNFSERVICEVER]] · 对端NF的服务实例的版本信息（PNFSERVICEVER）
+- [[configobject/UNC/20.15.2/PNFSERVICEVER]] · 对端NF的服务实例的版本信息（PNFSERVICEVER）
 
 ## 使用实例
 

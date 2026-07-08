@@ -66,7 +66,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFFCPKGMIX]] · NRF大小包协同返回功能参数（NRFFCPKGMIX）
+- [[configobject/UNC/20.15.2/NRFFCPKGMIX]] · NRF大小包协同返回功能参数（NRFFCPKGMIX）
 
 ## 使用实例
 

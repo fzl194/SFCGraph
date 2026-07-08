@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGMNO]] · 5G模式移动网络运营商信息（NGMNO）
+- [[configobject/UNC/20.15.2/NGMNO]] · 5G模式移动网络运营商信息（NGMNO）
 
 ## 使用实例
 

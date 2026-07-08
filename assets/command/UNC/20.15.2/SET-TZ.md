@@ -65,7 +65,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TZ]] · 时区和夏令时信息（TZ）
+- [[configobject/UNC/20.15.2/TZ]] · 时区和夏令时信息（TZ）
 
 ## 使用实例
 

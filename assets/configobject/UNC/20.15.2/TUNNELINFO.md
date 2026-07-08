@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@TUNNELINFO
+type: ConfigObject
+name: TUNNELINFO（隧道信息）
+nf: UNC
+version: 20.15.2
+object_name: TUNNELINFO
+object_kind: query_target
+status: active
+---
+
+# TUNNELINFO（隧道信息）
+
+## 说明
+
+该命令用于显示本设备上建立成功的隧道的基本信息。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-TUNNELINFO]] · DSP TUNNELINFO
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/TUNNELINFO.md`

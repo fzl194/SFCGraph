@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MK]] · 更新主密钥（MK）
+- [[configobject/UDG/20.15.2/MK]] · 更新主密钥（MK）
 
 ## 使用实例
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PBUFREUSE5GC]] · pbuf重用检测开关设置（PBUFREUSE5GC）
+- [[configobject/UDG/20.15.2/PBUFREUSE5GC]] · pbuf重用检测开关设置（PBUFREUSE5GC）
 
 ## 使用实例
 

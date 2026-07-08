@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DBSTARTPARAS]] · DB启动参数值（DBSTARTPARAS）
+- [[configobject/UNC/20.15.2/DBSTARTPARAS]] · DB启动参数值（DBSTARTPARAS）
 
 ## 使用实例
 

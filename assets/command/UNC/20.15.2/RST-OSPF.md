@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OSPF]] · OSPF进程配置（OSPF）
+- [[configobject/UNC/20.15.2/OSPF]] · OSPF进程配置（OSPF）
 
 ## 使用实例
 

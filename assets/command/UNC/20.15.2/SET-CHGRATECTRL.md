@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHGRATECTRL]] · 计费速率控制（CHGRATECTRL）
+- [[configobject/UNC/20.15.2/CHGRATECTRL]] · 计费速率控制（CHGRATECTRL）
 
 ## 使用实例
 

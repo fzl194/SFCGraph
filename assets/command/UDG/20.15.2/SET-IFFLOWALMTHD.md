@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IFFLOWALMTHD]] · 接口带宽利用率告警阈值（IFFLOWALMTHD）
+- [[configobject/UDG/20.15.2/IFFLOWALMTHD]] · 接口带宽利用率告警阈值（IFFLOWALMTHD）
 
 ## 使用实例
 

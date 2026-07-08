@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NCSFAILOPER]] · 操作失败信息（NCSFAILOPER）
+- [[configobject/UDG/20.15.2/NCSFAILOPER]] · 操作失败信息（NCSFAILOPER）
 
 ## 使用实例
 

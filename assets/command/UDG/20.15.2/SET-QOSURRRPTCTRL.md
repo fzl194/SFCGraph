@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@QOSURRRPTCTRL]] · QoS URR上报的相关参数（QOSURRRPTCTRL）
+- [[configobject/UDG/20.15.2/QOSURRRPTCTRL]] · QoS URR上报的相关参数（QOSURRRPTCTRL）
 
 ## 使用实例
 

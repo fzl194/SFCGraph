@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@HTTPLEGRP]] · HTTP本端实体组（HTTPLEGRP）
+- [[configobject/UNC/20.15.2/HTTPLEGRP]] · HTTP本端实体组（HTTPLEGRP）
 
 ## 使用实例
 

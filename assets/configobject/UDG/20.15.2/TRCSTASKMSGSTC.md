@@ -1,0 +1,24 @@
+---
+id: UDG@20.15.2@ConfigObject@TRCSTASKMSGSTC
+type: ConfigObject
+name: TRCSTASKMSGSTC（跟踪中心任务消息统计信息）
+nf: UDG
+version: 20.15.2
+object_name: TRCSTASKMSGSTC
+object_kind: query_target
+status: active
+---
+
+# TRCSTASKMSGSTC（跟踪中心任务消息统计信息）
+
+## 说明
+
+该命令用于查询跟踪中心任务消息5分钟内统计信息。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-TRCSTASKMSGSTC]] · DSP TRCSTASKMSGSTC
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/TRCSTASKMSGSTC.md`

@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PSAUPFBINDATSSS]] · PSA UPF和ATSSS UPF绑定关系中的ATSSS-UPF（PSAUPFBINDATSSS）
+- [[configobject/UNC/20.15.2/PSAUPFBINDATSSS]] · PSA UPF和ATSSS UPF绑定关系中的ATSSS-UPF（PSAUPFBINDATSSS）
 
 ## 使用实例
 

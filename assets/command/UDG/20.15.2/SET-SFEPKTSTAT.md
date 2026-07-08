@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SFEPKTSTAT]] · SFE报文统计信息（SFEPKTSTAT）
+- [[configobject/UDG/20.15.2/SFEPKTSTAT]] · SFE报文统计信息（SFEPKTSTAT）
 
 ## 使用实例
 

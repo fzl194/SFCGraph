@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@GLBDLBUFTIME]] · 全局下行数据缓存时长配置（GLBDLBUFTIME）
+- [[configobject/UDG/20.15.2/GLBDLBUFTIME]] · 全局下行数据缓存时长配置（GLBDLBUFTIME）
 
 ## 关联任务
 

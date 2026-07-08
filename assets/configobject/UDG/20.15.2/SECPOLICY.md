@@ -1,0 +1,28 @@
+---
+id: UDG@20.15.2@ConfigObject@SECPOLICY
+type: ConfigObject
+name: SECPOLICY（防攻击策略）
+nf: UDG
+version: 20.15.2
+object_name: SECPOLICY
+object_kind: entity
+status: active
+---
+
+# SECPOLICY（防攻击策略）
+
+## 说明
+
+该命令用于添加安全策略。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-SECPOLICY]] · ADD SECPOLICY
+- [[command/UDG/20.15.2/LST-SECPOLICY]] · LST SECPOLICY
+- [[command/UDG/20.15.2/RMV-SECPOLICY]] · RMV SECPOLICY
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/SECPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/SECPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/SECPOLICY.md`

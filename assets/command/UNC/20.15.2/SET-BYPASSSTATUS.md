@@ -48,7 +48,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@BYPASSSTATUS]] · BYPASS状态（BYPASSSTATUS）
+- [[configobject/UNC/20.15.2/BYPASSSTATUS]] · BYPASS状态（BYPASSSTATUS）
 
 ## 使用实例
 

@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@USERROUTINGSW]] · 用户路由可靠性配置（USERROUTINGSW）
+- [[configobject/UDG/20.15.2/USERROUTINGSW]] · 用户路由可靠性配置（USERROUTINGSW）
 
 ## 使用实例
 

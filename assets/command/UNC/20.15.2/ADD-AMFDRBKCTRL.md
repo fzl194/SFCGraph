@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMFDRBKCTRL]] · AMF热备容灾控制参数（AMFDRBKCTRL）
+- [[configobject/UNC/20.15.2/AMFDRBKCTRL]] · AMF热备容灾控制参数（AMFDRBKCTRL）
 
 ## 使用实例
 

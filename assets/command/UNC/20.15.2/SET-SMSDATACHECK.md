@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMSDATACHECK]] · 数据核查扫描参数（SMSDATACHECK）
+- [[configobject/UNC/20.15.2/SMSDATACHECK]] · 数据核查扫描参数（SMSDATACHECK）
 
 ## 使用实例
 

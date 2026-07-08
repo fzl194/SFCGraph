@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@AES256]] · Aes256加密算法的IV值（AES256）
+- [[configobject/UDG/20.15.2/AES256]] · Aes256加密算法的IV值（AES256）
 
 ## 使用实例
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SECPOLICYCAR]] · 安全防攻击CAR规则（SECPOLICYCAR）
+- [[configobject/UDG/20.15.2/SECPOLICYCAR]] · 安全防攻击CAR规则（SECPOLICYCAR）
 
 ## 使用实例
 

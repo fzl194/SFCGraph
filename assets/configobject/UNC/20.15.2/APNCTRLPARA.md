@@ -1,0 +1,36 @@
+---
+id: UNC@20.15.2@ConfigObject@APNCTRLPARA
+type: ConfigObject
+name: APNCTRLPARA（基于APN的信令控制参数）
+nf: UNC
+version: 20.15.2
+object_name: APNCTRLPARA
+object_kind: entity
+applicable_nf:
+- SGSN
+status: active
+---
+
+# APNCTRLPARA（基于APN的信令控制参数）
+
+## 说明
+
+**适用网元：SGSN**
+
+该命令用于增加基于APN的信令控制相关参数。
+
+现网中存在多类M2M用户，比如电力用户为一类用户，水表用户为另一类用户，这些M2M用户在服务器升级或者故障排除等操作时可能会触发信令风暴，导致网关过载。为了保护网关，可通过本命令配置开启基于APN的信令控制功能。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-APNCTRLPARA]] · ADD APNCTRLPARA
+- [[command/UNC/20.15.2/LST-APNCTRLPARA]] · LST APNCTRLPARA
+- [[command/UNC/20.15.2/MOD-APNCTRLPARA]] · MOD APNCTRLPARA
+- [[command/UNC/20.15.2/RMV-APNCTRLPARA]] · RMV APNCTRLPARA
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`

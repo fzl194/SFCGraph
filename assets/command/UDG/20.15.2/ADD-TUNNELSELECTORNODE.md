@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TUNNELSELECTORNODE]] · 隧道选择器节点（TUNNELSELECTORNODE）
+- [[configobject/UDG/20.15.2/TUNNELSELECTORNODE]] · 隧道选择器节点（TUNNELSELECTORNODE）
 
 ## 使用实例
 

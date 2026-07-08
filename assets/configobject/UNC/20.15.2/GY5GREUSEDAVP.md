@@ -1,0 +1,31 @@
+---
+id: UNC@20.15.2@ConfigObject@GY5GREUSEDAVP
+type: ConfigObject
+name: GY5GREUSEDAVP（5G用户接入时，Gy接口重用字段的填写方式）
+nf: UNC
+version: 20.15.2
+object_name: GY5GREUSEDAVP
+object_kind: global_setting
+applicable_nf:
+- SMF
+- PGW-C
+status: active
+---
+
+# GY5GREUSEDAVP（5G用户接入时，Gy接口重用字段的填写方式）
+
+## 说明
+
+**适用NF：SMF、PGW-C**
+
+该命令来控制Gy接口对接过程中可能产生的不兼容因素。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/LST-GY5GREUSEDAVP]] · LST GY5GREUSEDAVP
+- [[command/UNC/20.15.2/SET-GY5GREUSEDAVP]] · SET GY5GREUSEDAVP
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/GY5GREUSEDAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/GY5GREUSEDAVP.md`

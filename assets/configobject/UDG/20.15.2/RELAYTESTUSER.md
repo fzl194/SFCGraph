@@ -1,0 +1,33 @@
+---
+id: UDG@20.15.2@ConfigObject@RELAYTESTUSER
+type: ConfigObject
+name: RELAYTESTUSER（媒体中继拨测用户）
+nf: UDG
+version: 20.15.2
+object_name: RELAYTESTUSER
+object_kind: entity
+applicable_nf:
+- UPF
+- PGW-U
+status: active
+---
+
+# RELAYTESTUSER（媒体中继拨测用户）
+
+## 说明
+
+**适用NF：UPF、PGW-U**
+
+该命令用于增加媒体中继拨测用户。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-RELAYTESTUSER]] · ADD RELAYTESTUSER
+- [[command/UDG/20.15.2/LST-RELAYTESTUSER]] · LST RELAYTESTUSER
+- [[command/UDG/20.15.2/RMV-RELAYTESTUSER]] · RMV RELAYTESTUSER
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/RELAYTESTUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/RELAYTESTUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/RELAYTESTUSER.md`

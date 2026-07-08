@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@REGNFAGINGSW]] · NF实例老化开关（REGNFAGINGSW）
+- [[configobject/UNC/20.15.2/REGNFAGINGSW]] · NF实例老化开关（REGNFAGINGSW）
 
 ## 使用实例
 

@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@VLRMAPVERSION]] · VLR使用的MAP接口版本（VLRMAPVERSION）
+- [[configobject/UNC/20.15.2/VLRMAPVERSION]] · VLR使用的MAP接口版本（VLRMAPVERSION）
 
 ## 使用实例
 

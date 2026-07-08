@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SNMPINFO]] · 网元长连接信息（SNMPINFO）
+- [[configobject/UNC/20.15.2/SNMPINFO]] · 网元长连接信息（SNMPINFO）
 
 ## 使用实例
 

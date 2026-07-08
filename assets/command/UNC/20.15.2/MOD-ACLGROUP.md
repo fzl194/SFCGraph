@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACLGROUP]] · ACL规则匹配计数（ACLGROUP）
+- [[configobject/UNC/20.15.2/ACLGROUP]] · ACL规则匹配计数（ACLGROUP）
 
 ## 使用实例
 

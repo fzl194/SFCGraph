@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PERFCHKSWITCH]] · 性能统计核查开关（PERFCHKSWITCH）
+- [[configobject/UNC/20.15.2/PERFCHKSWITCH]] · 性能统计核查开关（PERFCHKSWITCH）
 
 ## 使用实例
 

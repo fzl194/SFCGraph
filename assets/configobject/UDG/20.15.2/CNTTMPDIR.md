@@ -1,0 +1,41 @@
+---
+id: UDG@20.15.2@ConfigObject@CNTTMPDIR
+type: ConfigObject
+name: CNTTMPDIR（容器引擎临时目录）
+nf: UDG
+version: 20.15.2
+object_name: CNTTMPDIR
+object_kind: global_setting
+status: active
+---
+
+# CNTTMPDIR（容器引擎临时目录）
+
+## 说明
+
+![](设置容器引擎临时目录（SET CNTTMPDIR）_89151642.assets/notice_3.0-zh-cn.png)
+
+该命令为高危命令，此命令会修改容器引擎临时目录并复位容器引擎，可能出现容器引擎启动失败或容器引擎启动过程中业务中断，最终导致业务受损，请务必在华为技术支持人员的指导下使用该命令。
+
+该命令用于设置节点的容器引擎临时目录。
+
+> **说明**
+> 该命令仅在 Full-stack 虚机场景下支持。
+
+> **说明**
+> - 若执行**SET CNTTMPDIR**返回结果节点“详细信息”为“容器引擎未启动”，请联系华为技术支持。
+>
+> - 该命令存在系统初始记录，参数的初始设置值如下：
+>   | CNTTMPDIR |
+>   | --- |
+>   | TMPFS（内存） |
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-CNTTMPDIR]] · DSP CNTTMPDIR
+- [[command/UDG/20.15.2/SET-CNTTMPDIR]] · SET CNTTMPDIR
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/CNTTMPDIR.md`
+- 原始手册：`evidence/UDG/20.15.2/CNTTMPDIR.md`

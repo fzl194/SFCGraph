@@ -1,0 +1,24 @@
+---
+id: UDG@20.15.2@ConfigObject@MGMDCTLMSG
+type: ConfigObject
+name: MGMDCTLMSG（IGMP报文统计计数）
+nf: UDG
+version: 20.15.2
+object_name: MGMDCTLMSG
+object_kind: action
+status: active
+---
+
+# MGMDCTLMSG（IGMP报文统计计数）
+
+## 说明
+
+该命令用来清除IGMP报文统计计数。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/RTR-MGMDCTLMSG]] · RTR MGMDCTLMSG
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MGMDCTLMSG.md`

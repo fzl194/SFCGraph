@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ANONYMOUSAPN]] · 匿名APN配置（ANONYMOUSAPN）
+- [[configobject/UNC/20.15.2/ANONYMOUSAPN]] · 匿名APN配置（ANONYMOUSAPN）
 
 ## 使用实例
 

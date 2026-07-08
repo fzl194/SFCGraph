@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RDSAUTHREQVSA]] · RADIUS鉴权请求携带的私有扩展属性（RDSAUTHREQVSA）
+- [[configobject/UNC/20.15.2/RDSAUTHREQVSA]] · RADIUS鉴权请求携带的私有扩展属性（RDSAUTHREQVSA）
 
 ## 使用实例
 

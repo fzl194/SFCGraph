@@ -1,0 +1,26 @@
+---
+id: UNC@20.15.2@ConfigObject@OPSBLACKBOX
+type: ConfigObject
+name: OPSBLACKBOX（开放可编程系统的维护信息）
+nf: UNC
+version: 20.15.2
+object_name: OPSBLACKBOX
+object_kind: query_target
+status: active
+---
+
+# OPSBLACKBOX（开放可编程系统的维护信息）
+
+## 说明
+
+该命令用于显示开放编程系统的维护信息。当python脚本执行失败时，可以通该命令查询系统维护信息。
+
+维护信息包含python虚拟机、助手状态机、脚本状态机和开放可编程接口的信息。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-OPSBLACKBOX]] · DSP OPSBLACKBOX
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/OPSBLACKBOX.md`

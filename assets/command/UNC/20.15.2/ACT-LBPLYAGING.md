@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LBPLYAGING]] · CSLB表项老化功能（LBPLYAGING）
+- [[configobject/UNC/20.15.2/LBPLYAGING]] · CSLB表项老化功能（LBPLYAGING）
 
 ## 使用实例
 

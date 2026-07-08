@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MMEIPTOMMEPOOL]] · MME IP（MMEIPTOMMEPOOL）
+- [[configobject/UNC/20.15.2/MMEIPTOMMEPOOL]] · MME IP（MMEIPTOMMEPOOL）
 
 ## 使用实例
 

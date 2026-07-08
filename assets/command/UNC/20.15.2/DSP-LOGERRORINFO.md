@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOGERRORINFO]] · 日志模块错误信息（LOGERRORINFO）
+- [[configobject/UNC/20.15.2/LOGERRORINFO]] · 日志模块错误信息（LOGERRORINFO）
 
 ## 使用实例
 

@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@HPATCH]] · 热补丁（HPATCH）
+- [[configobject/UNC/20.15.2/HPATCH]] · 热补丁（HPATCH）
 
 ## 使用实例
 

@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LICENSE]] · 失效License（LICENSE）
+- [[configobject/UDG/20.15.2/LICENSE]] · 失效License（LICENSE）
 
 ## 使用实例
 

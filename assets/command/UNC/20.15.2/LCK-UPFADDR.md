@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPFADDR]] · 解锁UPF地址（UPFADDR）
+- [[configobject/UNC/20.15.2/UPFADDR]] · 解锁UPF地址（UPFADDR）
 
 ## 使用实例
 

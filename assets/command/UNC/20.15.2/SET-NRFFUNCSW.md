@@ -121,7 +121,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFFUNCSW]] · NRF功能开关（NRFFUNCSW）
+- [[configobject/UNC/20.15.2/NRFFUNCSW]] · NRF功能开关（NRFFUNCSW）
 
 ## 使用实例
 

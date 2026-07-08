@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ASSERTINFO]] · RU断言信息（ASSERTINFO）
+- [[configobject/UDG/20.15.2/ASSERTINFO]] · RU断言信息（ASSERTINFO）
 
 ## 使用实例
 

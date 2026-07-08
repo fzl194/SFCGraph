@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DHCPPARAREQ]] · 向外部DHCPv4或者DHCPv6服务器发送的消息中的请求信元中的参数信息（DHCPPARAREQ）
+- [[configobject/UNC/20.15.2/DHCPPARAREQ]] · 向外部DHCPv4或者DHCPv6服务器发送的消息中的请求信元中的参数信息（DHCPPARAREQ）
 
 ## 使用实例
 

@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@THREADCALLSTACK]] · 线程调用栈信息（THREADCALLSTACK）
+- [[configobject/UNC/20.15.2/THREADCALLSTACK]] · 线程调用栈信息（THREADCALLSTACK）
 
 ## 使用实例
 

@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACSPATCH]] · 补丁（ACSPATCH）
+- [[configobject/UDG/20.15.2/ACSPATCH]] · 补丁（ACSPATCH）
 
 ## 使用实例
 

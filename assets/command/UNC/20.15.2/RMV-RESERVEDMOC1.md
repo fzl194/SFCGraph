@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RESERVEDMOC1]] · 补丁预留MOC1（RESERVEDMOC1）
+- [[configobject/UNC/20.15.2/RESERVEDMOC1]] · 补丁预留MOC1（RESERVEDMOC1）
 
 ## 使用实例
 

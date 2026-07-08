@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NCCPOLICY]] · NCC策略（NCCPOLICY）
+- [[configobject/UDG/20.15.2/NCCPOLICY]] · NCC策略（NCCPOLICY）
 
 ## 使用实例
 

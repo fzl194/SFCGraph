@@ -37,7 +37,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ELECTIONABILITY]] · 业务进程选举能力（ELECTIONABILITY）
+- [[configobject/UDG/20.15.2/ELECTIONABILITY]] · 业务进程选举能力（ELECTIONABILITY）
 
 ## 使用实例
 

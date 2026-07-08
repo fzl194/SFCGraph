@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GBACCAREALST]] · Gb模式区域漫游限制参数（GBACCAREALST）
+- [[configobject/UNC/20.15.2/GBACCAREALST]] · Gb模式区域漫游限制参数（GBACCAREALST）
 
 ## 使用实例
 

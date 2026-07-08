@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NGLOOPDETDEAUE]] · 5G LAN环路检测去活用户记录（NGLOOPDETDEAUE）
+- [[configobject/UDG/20.15.2/NGLOOPDETDEAUE]] · 5G LAN环路检测去活用户记录（NGLOOPDETDEAUE）
 
 ## 使用实例
 

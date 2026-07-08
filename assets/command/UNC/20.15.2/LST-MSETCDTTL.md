@@ -36,7 +36,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MSETCDTTL]] · 租约时长（MSETCDTTL）
+- [[configobject/UNC/20.15.2/MSETCDTTL]] · 租约时长（MSETCDTTL）
 
 ## 使用实例
 

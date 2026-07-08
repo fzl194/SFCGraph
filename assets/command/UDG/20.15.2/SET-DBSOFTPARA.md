@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DBSOFTPARA]] · CSDB软件调试参数表（DBSOFTPARA）
+- [[configobject/UDG/20.15.2/DBSOFTPARA]] · CSDB软件调试参数表（DBSOFTPARA）
 
 ## 使用实例
 

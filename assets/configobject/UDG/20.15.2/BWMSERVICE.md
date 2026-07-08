@@ -1,0 +1,40 @@
+---
+id: UDG@20.15.2@ConfigObject@BWMSERVICE
+type: ConfigObject
+name: BWMSERVICE（带宽管理业务）
+nf: UDG
+version: 20.15.2
+object_name: BWMSERVICE
+object_kind: entity
+applicable_nf:
+- PGW-U
+- UPF
+status: active
+---
+
+# BWMSERVICE（带宽管理业务）
+
+## 说明
+
+**适用NF：PGW-U、UPF**
+
+该命令用于增加一条带宽管理的业务范围，实现业务区分。该命令支持TOS类型业务，用报文的TOS区分业务，也支持非TOS类型业务，为带宽管理业务绑定一个分类属性、或者指定7层协议、或者绑定一个协议组来区分业务。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-BWMSERVICE]] · ADD BWMSERVICE
+- [[command/UDG/20.15.2/LST-BWMSERVICE]] · LST BWMSERVICE
+- [[command/UDG/20.15.2/MOD-BWMSERVICE]] · MOD BWMSERVICE
+- [[command/UDG/20.15.2/RMV-BWMSERVICE]] · RMV BWMSERVICE
+
+## 关联对象
+
+- [[configobject/UDG/20.15.2/BWMRULE]] · BWMRULE
+- [[configobject/UDG/20.15.2/CATEGORYPROP]] · CATEGORYPROP
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`
+- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`
+- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`
+- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`

@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PROCRESSTAT]] · 进程资源信息（PROCRESSTAT）
+- [[configobject/UDG/20.15.2/PROCRESSTAT]] · 进程资源信息（PROCRESSTAT）
 
 ## 使用实例
 

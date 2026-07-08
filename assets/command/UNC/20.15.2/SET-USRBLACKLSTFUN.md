@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@USRBLACKLSTFUN]] · 用户黑名单接入控制功能（USRBLACKLSTFUN）
+- [[configobject/UNC/20.15.2/USRBLACKLSTFUN]] · 用户黑名单接入控制功能（USRBLACKLSTFUN）
 
 ## 使用实例
 

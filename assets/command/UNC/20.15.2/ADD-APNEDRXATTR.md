@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNEDRXATTR]] · APN的终端接入eDRX模式属性（APNEDRXATTR）
+- [[configobject/UNC/20.15.2/APNEDRXATTR]] · APN的终端接入eDRX模式属性（APNEDRXATTR）
 
 ## 使用实例
 

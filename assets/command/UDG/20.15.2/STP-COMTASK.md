@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@COMTASK]] · SDR通信质量检测任务（COMTASK）
+- [[configobject/UDG/20.15.2/COMTASK]] · SDR通信质量检测任务（COMTASK）
 
 ## 使用实例
 

@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NODEREPSWITCH]] · 节点查询自动修复开关（NODEREPSWITCH）
+- [[configobject/UNC/20.15.2/NODEREPSWITCH]] · 节点查询自动修复开关（NODEREPSWITCH）
 
 ## 使用实例
 

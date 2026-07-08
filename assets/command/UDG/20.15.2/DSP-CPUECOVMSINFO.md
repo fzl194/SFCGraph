@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CPUECOVMSINFO]] · VM的CPU节能策略（CPUECOVMSINFO）
+- [[configobject/UDG/20.15.2/CPUECOVMSINFO]] · VM的CPU节能策略（CPUECOVMSINFO）
 
 ## 使用实例
 

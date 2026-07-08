@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SYNCFILESTATUS]] · 对账文件状态（SYNCFILESTATUS）
+- [[configobject/UDG/20.15.2/SYNCFILESTATUS]] · 对账文件状态（SYNCFILESTATUS）
 
 ## 使用实例
 

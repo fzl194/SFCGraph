@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MATCHDESTPREFIXFILTER]] · 匹配IPv4地址前缀列表（MATCHDESTPREFIXFILTER）
+- [[configobject/UNC/20.15.2/MATCHDESTPREFIXFILTER]] · 匹配IPv4地址前缀列表（MATCHDESTPREFIXFILTER）
 
 ## 使用实例
 

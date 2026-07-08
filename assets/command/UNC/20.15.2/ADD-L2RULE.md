@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@L2RULE]] · 层二规则（L2RULE）
+- [[configobject/UNC/20.15.2/L2RULE]] · 层二规则（L2RULE）
 
 ## 使用实例
 

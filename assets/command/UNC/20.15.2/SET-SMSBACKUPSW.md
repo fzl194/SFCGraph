@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMSBACKUPSW]] · SMSF热备容灾功能开关状态（SMSBACKUPSW）
+- [[configobject/UNC/20.15.2/SMSBACKUPSW]] · SMSF热备容灾功能开关状态（SMSBACKUPSW）
 
 ## 使用实例
 

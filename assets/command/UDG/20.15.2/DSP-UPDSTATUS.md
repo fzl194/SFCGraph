@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@UPDSTATUS]] · 升级状态（UPDSTATUS）
+- [[configobject/UDG/20.15.2/UPDSTATUS]] · 升级状态（UPDSTATUS）
 
 ## 使用实例
 

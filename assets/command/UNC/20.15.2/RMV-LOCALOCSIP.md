@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOCALOCSIP]] · 本省OCS的IP号段（LOCALOCSIP）
+- [[configobject/UNC/20.15.2/LOCALOCSIP]] · 本省OCS的IP号段（LOCALOCSIP）
 
 ## 使用实例
 

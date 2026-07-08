@@ -70,7 +70,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMUEPLCYCTRL]] · AM策略和UE策略控制参数（AMUEPLCYCTRL）
+- [[configobject/UNC/20.15.2/AMUEPLCYCTRL]] · AM策略和UE策略控制参数（AMUEPLCYCTRL）
 
 ## 关联任务
 

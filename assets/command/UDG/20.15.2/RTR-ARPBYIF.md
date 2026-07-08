@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ARPBYIF]] · 根据接口清除ARP动态表项（ARPBYIF）
+- [[configobject/UDG/20.15.2/ARPBYIF]] · 根据接口清除ARP动态表项（ARPBYIF）
 
 ## 使用实例
 

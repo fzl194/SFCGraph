@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@REVCERTFILE]] · 证书吊销列表（REVCERTFILE）
+- [[configobject/UDG/20.15.2/REVCERTFILE]] · 证书吊销列表（REVCERTFILE）
 
 ## 使用实例
 

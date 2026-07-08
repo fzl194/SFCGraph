@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NF]] · NF的锁定信息（NF）
+- [[configobject/UDG/20.15.2/NF]] · NF的锁定信息（NF）
 
 ## 使用实例
 

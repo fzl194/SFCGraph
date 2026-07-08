@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNPOLICYMODE]] · 基于APN的策略接口的选择方式（APNPOLICYMODE）
+- [[configobject/UNC/20.15.2/APNPOLICYMODE]] · 基于APN的策略接口的选择方式（APNPOLICYMODE）
 
 ## 关联任务
 

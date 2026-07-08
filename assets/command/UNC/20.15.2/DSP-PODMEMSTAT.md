@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PODMEMSTAT]] · pod内存信息（PODMEMSTAT）
+- [[configobject/UNC/20.15.2/PODMEMSTAT]] · pod内存信息（PODMEMSTAT）
 
 ## 使用实例
 

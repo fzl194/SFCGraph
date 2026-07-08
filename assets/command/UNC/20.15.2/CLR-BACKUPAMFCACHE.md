@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@BACKUPAMFCACHE]] · 缓存的备用AMF信息（BACKUPAMFCACHE）
+- [[configobject/UNC/20.15.2/BACKUPAMFCACHE]] · 缓存的备用AMF信息（BACKUPAMFCACHE）
 
 ## 使用实例
 

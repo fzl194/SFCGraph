@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MATCHRTSRCPREFIXFILTER]] · 匹配路由源IP前缀（MATCHRTSRCPREFIXFILTER）
+- [[configobject/UDG/20.15.2/MATCHRTSRCPREFIXFILTER]] · 匹配路由源IP前缀（MATCHRTSRCPREFIXFILTER）
 
 ## 使用实例
 

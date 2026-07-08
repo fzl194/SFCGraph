@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@KEYPAIRLABEL]] · 创建DSA/ECC密钥对标签（KEYPAIRLABEL）
+- [[configobject/UNC/20.15.2/KEYPAIRLABEL]] · 创建DSA/ECC密钥对标签（KEYPAIRLABEL）
 
 ## 使用实例
 

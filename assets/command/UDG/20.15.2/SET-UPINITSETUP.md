@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@UPINITSETUP]] · 主被动切换（UPINITSETUP）
+- [[configobject/UDG/20.15.2/UPINITSETUP]] · 主被动切换（UPINITSETUP）
 
 ## 使用实例
 

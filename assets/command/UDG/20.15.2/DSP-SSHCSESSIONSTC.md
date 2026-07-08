@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SSHCSESSIONSTC]] · SSH客户端的会话统计信息（SSHCSESSIONSTC）
+- [[configobject/UDG/20.15.2/SSHCSESSIONSTC]] · SSH客户端的会话统计信息（SSHCSESSIONSTC）
 
 ## 使用实例
 

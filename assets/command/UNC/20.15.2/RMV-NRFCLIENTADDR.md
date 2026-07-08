@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFCLIENTADDR]] · NRF实例客户端地址信息（NRFCLIENTADDR）
+- [[configobject/UNC/20.15.2/NRFCLIENTADDR]] · NRF实例客户端地址信息（NRFCLIENTADDR）
 
 ## 使用实例
 

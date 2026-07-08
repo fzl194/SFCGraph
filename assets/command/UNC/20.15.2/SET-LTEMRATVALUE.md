@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LTEMRATVALUE]] · LTE-M用户的RAT值（LTEMRATVALUE）
+- [[configobject/UNC/20.15.2/LTEMRATVALUE]] · LTE-M用户的RAT值（LTEMRATVALUE）
 
 ## 使用实例
 

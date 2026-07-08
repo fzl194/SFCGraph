@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AUTORP]] · Auto-RP配置（AUTORP）
+- [[configobject/UNC/20.15.2/AUTORP]] · Auto-RP配置（AUTORP）
 
 ## 使用实例
 

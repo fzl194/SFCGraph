@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TRCFILEDIAG]] · 跟踪文件可维护性信息（TRCFILEDIAG）
+- [[configobject/UDG/20.15.2/TRCFILEDIAG]] · 跟踪文件可维护性信息（TRCFILEDIAG）
 
 ## 使用实例
 

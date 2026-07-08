@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PROPATTACHIPSECPROPOSAL]] · IPsec策略绑定提议（PROPATTACHIPSECPROPOSAL）
+- [[configobject/UNC/20.15.2/PROPATTACHIPSECPROPOSAL]] · IPsec策略绑定提议（PROPATTACHIPSECPROPOSAL）
 
 ## 使用实例
 

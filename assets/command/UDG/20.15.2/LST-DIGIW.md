@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DIGIW]] · 电子保单信息（DIGIW）
+- [[configobject/UDG/20.15.2/DIGIW]] · 电子保单信息（DIGIW）
 
 ## 使用实例
 

@@ -70,7 +70,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GTPUINTFATTR]] · GTP-U IP地址接口属性（GTPUINTFATTR）
+- [[configobject/UNC/20.15.2/GTPUINTFATTR]] · GTP-U IP地址接口属性（GTPUINTFATTR）
 
 ## 使用实例
 

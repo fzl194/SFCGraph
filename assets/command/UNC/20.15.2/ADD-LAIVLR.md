@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LAIVLR]] · LAI与VLR号对应关系（LAIVLR）
+- [[configobject/UNC/20.15.2/LAIVLR]] · LAI与VLR号对应关系（LAIVLR）
 
 ## 使用实例
 

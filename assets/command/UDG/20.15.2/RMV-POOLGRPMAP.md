@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@POOLGRPMAP]] · 地址池组映射关系（POOLGRPMAP）
+- [[configobject/UDG/20.15.2/POOLGRPMAP]] · 地址池组映射关系（POOLGRPMAP）
 
 ## 使用实例
 

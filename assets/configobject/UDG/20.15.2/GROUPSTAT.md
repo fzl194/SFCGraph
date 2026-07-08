@@ -1,0 +1,28 @@
+---
+id: UDG@20.15.2@ConfigObject@GROUPSTAT
+type: ConfigObject
+name: GROUPSTAT（消费组状态）
+nf: UDG
+version: 20.15.2
+object_name: GROUPSTAT
+object_kind: query_target
+status: active
+---
+
+# GROUPSTAT（消费组状态）
+
+## 说明
+
+该命令用于查询消费组的状态，通过识别当前消费组的状态信息，判断是否存在消息积压。
+
+> **说明**
+> - 支持输入参数为空时的全量查询，支持按照group名称查询时进行模糊匹配。
+> - 对部分不需要对外展示的group信息（如拨测）会进行过滤。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-GROUPSTAT]] · DSP GROUPSTAT
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/GROUPSTAT.md`

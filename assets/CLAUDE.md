@@ -80,11 +80,22 @@ assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[
 ### 5.4 废弃编号
 旧业务编号（`BD-BSA-01` / `NS-CH-01` / `CS-CH-03` / `DP-CH-xx`）**全部废弃**，改用 §5.2 两段式。
 
-### 5.5 文件名
-文件名用 local_id 段（sanitized：空格/特殊字符转 `-`），目录承载 nf@version/type 段。
-- `command/UDG/20.15.2/ADD-URR.md` ← `UDG@20.15.2@MMLCommand@ADD URR`
-- `business/business-awareness/charging/ConfigurationSolution@charging-converged.md`（业务层无 nf@version 维度，文件名用完整两段式 ID）
-- wiki 链接用**完整 ID**；ID ↔ 文件路径映射由目录约定 + §5.1/5.2 规则解析。
+### 5.5 文件名与引用路径
+- 文件名用 local_id 段（sanitized：空格/特殊字符转 `-`），目录承载 nf@version/type 段：
+  - `command/UDG/20.15.2/ADD-URR.md` ← `UDG@20.15.2@MMLCommand@ADD URR`
+  - `configobject/UDG/20.15.2/URR.md` ← `UDG@20.15.2@ConfigObject@URR`
+  - 业务层（无 nf@version）：`business/<domain>/<scenario>/ConfigurationSolution@charging-converged.md`
+- **引用统一用 assets/ 根路径**（从 assets/ 起，**禁文件间相对路径**如 `../`），同证据 `evidence/...`：
+  - 已建对象：`[[command/UDG/20.15.2/ADD-URR]]`、`[[configobject/UDG/20.15.2/URR]]`
+  - **未建对象用 ID 占位**：`[[UDG@20.15.2@Task@0-00001]]`（标注待建）；该对象 md 建好后，Compile/Lint 回头把占位 ID 补成 assets 路径。
+
+### 5.6 关系双向链接（硬约束）
+每条关系必须在两端 md 互引（正向 + 反向）：
+- 命令 `operates_on` ConfigObject → 命令引 ConfigObject，**ConfigObject 反引命令**（"操作本对象的命令组"）。
+- Feature `requires_license` → Feature 引 License，License 反引 Feature。
+- 方案 `uses_feature`/`uses_task` → 方案引，特性/任务反引。
+- ConfigObject `object_refers_to` → 双向。
+反向链接由 Compile（建对象 md 时补全）+ Lint（查缺失反向链接）维护。
 
 ---
 

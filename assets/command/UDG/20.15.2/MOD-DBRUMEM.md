@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组；
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DBRUMEM]] · CSDB RU内存信息（DBRUMEM）
+- [[configobject/UDG/20.15.2/DBRUMEM]] · CSDB RU内存信息（DBRUMEM）
 
 ## 使用实例
 

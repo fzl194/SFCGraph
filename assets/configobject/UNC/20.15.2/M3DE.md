@@ -1,0 +1,38 @@
+---
+id: UNC@20.15.2@ConfigObject@M3DE
+type: ConfigObject
+name: M3DE（M3UA目的实体）
+nf: UNC
+version: 20.15.2
+object_name: M3DE
+object_kind: entity
+applicable_nf:
+- SGSN
+- MME
+- SMSF
+status: active
+---
+
+# M3DE（M3UA目的实体）
+
+## 说明
+
+**适用网元：SGSN、MME、SMSF**
+
+该命令用于增加M3UA目的实体，目的实体是从本地实体的角度出发，在本地实体所在的所有信令网络中可见的实体。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-M3DE]] · ADD M3DE
+- [[command/UNC/20.15.2/DSP-M3DE]] · DSP M3DE
+- [[command/UNC/20.15.2/LST-M3DE]] · LST M3DE
+- [[command/UNC/20.15.2/MOD-M3DE]] · MOD M3DE
+- [[command/UNC/20.15.2/RMV-M3DE]] · RMV M3DE
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
+- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
+- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
+- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
+- 原始手册：`evidence/UNC/20.15.2/M3DE.md`

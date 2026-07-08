@@ -1,0 +1,36 @@
+---
+id: UNC@20.15.2@ConfigObject@SELCHFGBYIMSI
+type: ConfigObject
+name: SELCHFGBYIMSI（IMSI与CHF组的绑定关系）
+nf: UNC
+version: 20.15.2
+object_name: SELCHFGBYIMSI
+object_kind: entity
+applicable_nf:
+- SMF
+- PGW-C
+- GGSN
+status: active
+---
+
+# SELCHFGBYIMSI（IMSI与CHF组的绑定关系）
+
+## 说明
+
+**适用NF：SMF、PGW-C、GGSN**
+
+该命令用于增加IMSI与CHF组的绑定关系。一般用于拨测场景，将指定IMSI的用户的计费信息发送到指定CHF上，测试CHF的基本功能。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-SELCHFGBYIMSI]] · ADD SELCHFGBYIMSI
+- [[command/UNC/20.15.2/LST-SELCHFGBYIMSI]] · LST SELCHFGBYIMSI
+- [[command/UNC/20.15.2/MOD-SELCHFGBYIMSI]] · MOD SELCHFGBYIMSI
+- [[command/UNC/20.15.2/RMV-SELCHFGBYIMSI]] · RMV SELCHFGBYIMSI
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`

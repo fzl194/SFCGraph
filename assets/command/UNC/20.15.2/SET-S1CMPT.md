@@ -64,7 +64,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@S1CMPT]] · S1接口兼容性（S1CMPT）
+- [[configobject/UNC/20.15.2/S1CMPT]] · S1接口兼容性（S1CMPT）
 
 ## 使用实例
 

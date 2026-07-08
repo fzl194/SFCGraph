@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFSMSFSEGLIST]] · SMSF号段白名单（NRFSMSFSEGLIST）
+- [[configobject/UNC/20.15.2/NRFSMSFSEGLIST]] · SMSF号段白名单（NRFSMSFSEGLIST）
 
 ## 使用实例
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@HTTPERRHANDLER]] · 间接路由代理故障重选配置（HTTPERRHANDLER）
+- [[configobject/UNC/20.15.2/HTTPERRHANDLER]] · 间接路由代理故障重选配置（HTTPERRHANDLER）
 
 ## 使用实例
 

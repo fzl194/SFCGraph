@@ -47,7 +47,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LOGFILE]] · 保存黑匣子的数据到日志文件中（LOGFILE）
+- [[configobject/UDG/20.15.2/LOGFILE]] · 保存黑匣子的数据到日志文件中（LOGFILE）
 
 ## 使用实例
 

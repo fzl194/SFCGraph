@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@S1TACID]] · TAC组内绑定的S1TAC号段（S1TACID）
+- [[configobject/UNC/20.15.2/S1TACID]] · TAC组内绑定的S1TAC号段（S1TACID）
 
 ## 使用实例
 

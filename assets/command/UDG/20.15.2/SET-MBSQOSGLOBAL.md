@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MBSQOSGLOBAL]] · MBS QosGlobal配置（MBSQOSGLOBAL）
+- [[configobject/UDG/20.15.2/MBSQOSGLOBAL]] · MBS QosGlobal配置（MBSQOSGLOBAL）
 
 ## 使用实例
 

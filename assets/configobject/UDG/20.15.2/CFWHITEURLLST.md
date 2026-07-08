@@ -1,0 +1,33 @@
+---
+id: UDG@20.15.2@ConfigObject@CFWHITEURLLST
+type: ConfigObject
+name: CFWHITEURLLST（URL过滤白名单列表）
+nf: UDG
+version: 20.15.2
+object_name: CFWHITEURLLST
+object_kind: entity
+applicable_nf:
+- PGW-U
+- UPF
+status: active
+---
+
+# CFWHITEURLLST（URL过滤白名单列表）
+
+## 说明
+
+**适用NF：PGW-U、UPF**
+
+该命令用于增加一个URL过滤白名单列表。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-CFWHITEURLLST]] · ADD CFWHITEURLLST
+- [[command/UDG/20.15.2/LST-CFWHITEURLLST]] · LST CFWHITEURLLST
+- [[command/UDG/20.15.2/RMV-CFWHITEURLLST]] · RMV CFWHITEURLLST
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/CFWHITEURLLST.md`
+- 原始手册：`evidence/UDG/20.15.2/CFWHITEURLLST.md`
+- 原始手册：`evidence/UDG/20.15.2/CFWHITEURLLST.md`

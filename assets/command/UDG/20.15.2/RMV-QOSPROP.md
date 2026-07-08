@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@QOSPROP]] · QoS属性（QOSPROP）
+- [[configobject/UDG/20.15.2/QOSPROP]] · QoS属性（QOSPROP）
 
 ## 使用实例
 

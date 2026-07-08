@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IMSSRVBEARER]] · 指定用户的IMS Bypass状态（IMSSRVBEARER）
+- [[configobject/UDG/20.15.2/IMSSRVBEARER]] · 指定用户的IMS Bypass状态（IMSSRVBEARER）
 
 ## 使用实例
 

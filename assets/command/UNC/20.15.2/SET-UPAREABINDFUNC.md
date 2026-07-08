@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPAREABINDFUNC]] · 获取UPF服务区绑定TAI/LAI的方式（UPAREABINDFUNC）
+- [[configobject/UNC/20.15.2/UPAREABINDFUNC]] · 获取UPF服务区绑定TAI/LAI的方式（UPAREABINDFUNC）
 
 ## 使用实例
 

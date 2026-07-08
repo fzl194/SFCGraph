@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APPLYEXTENDCOMMUNITY]] · 扩展团体属性设置（APPLYEXTENDCOMMUNITY）
+- [[configobject/UDG/20.15.2/APPLYEXTENDCOMMUNITY]] · 扩展团体属性设置（APPLYEXTENDCOMMUNITY）
 
 ## 使用实例
 

@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TOKENALLOCWT]] · 服务类型分配权重的管理策略（TOKENALLOCWT）
+- [[configobject/UNC/20.15.2/TOKENALLOCWT]] · 服务类型分配权重的管理策略（TOKENALLOCWT）
 
 ## 使用实例
 

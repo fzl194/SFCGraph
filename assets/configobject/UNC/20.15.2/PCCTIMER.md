@@ -1,0 +1,38 @@
+---
+id: UNC@20.15.2@ConfigObject@PCCTIMER
+type: ConfigObject
+name: PCCTIMER（复位PCC定时器）
+nf: UNC
+version: 20.15.2
+object_name: PCCTIMER
+object_kind: global_setting
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+status: active
+---
+
+# PCCTIMER（复位PCC定时器）
+
+## 说明
+
+**适用NF：PGW-C、SMF**
+
+![](设置PCC定时器（SET PCCTIMER）_09897082.assets/notice_3.0-zh-cn_2.png)
+
+本命令属于高危命令，执行命令配置超时时长不合理可能导致在超时场景下，激活响应的总时长过长，这可能会导致用户激活失败。在前期规划时，建议1：产品配置的等待右侧网元的最大时长小于产品ADD GTPCT3N3命令配置的T3N3时长及左侧（MME/SGSN等）的T3N3时长。建议2：产品配置的等待右侧网元的最大时长小于产品SET SMCOMMTIMER命令配置的TPOLICY(等待策略响应定时器)的时长。
+
+此命令用于PCC定时器控制。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/LST-PCCTIMER]] · LST PCCTIMER
+- [[command/UNC/20.15.2/RST-PCCTIMER]] · RST PCCTIMER
+- [[command/UNC/20.15.2/SET-PCCTIMER]] · SET PCCTIMER
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/PCCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/PCCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/PCCTIMER.md`

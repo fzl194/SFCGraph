@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TRCTASKSESSION]] · 跟踪任务Session信息（TRCTASKSESSION）
+- [[configobject/UNC/20.15.2/TRCTASKSESSION]] · 跟踪任务Session信息（TRCTASKSESSION）
 
 ## 使用实例
 

@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GBRBWCTRL]] · GBR承载带宽速率控制配置（GBRBWCTRL）
+- [[configobject/UNC/20.15.2/GBRBWCTRL]] · GBR承载带宽速率控制配置（GBRBWCTRL）
 
 ## 使用实例
 

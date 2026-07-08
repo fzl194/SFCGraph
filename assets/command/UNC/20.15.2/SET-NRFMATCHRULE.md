@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFMATCHRULE]] · 服务发现最长匹配处理规则（NRFMATCHRULE）
+- [[configobject/UNC/20.15.2/NRFMATCHRULE]] · 服务发现最长匹配处理规则（NRFMATCHRULE）
 
 ## 使用实例
 

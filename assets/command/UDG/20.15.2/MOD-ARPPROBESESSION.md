@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ARPPROBESESSION]] · ARP探测会话（ARPPROBESESSION）
+- [[configobject/UDG/20.15.2/ARPPROBESESSION]] · ARP探测会话（ARPPROBESESSION）
 
 ## 使用实例
 

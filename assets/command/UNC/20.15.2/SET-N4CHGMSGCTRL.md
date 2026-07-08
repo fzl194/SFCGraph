@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@N4CHGMSGCTRL]] · N4接口计费消息相关控制参数（N4CHGMSGCTRL）
+- [[configobject/UNC/20.15.2/N4CHGMSGCTRL]] · N4接口计费消息相关控制参数（N4CHGMSGCTRL）
 
 ## 使用实例
 

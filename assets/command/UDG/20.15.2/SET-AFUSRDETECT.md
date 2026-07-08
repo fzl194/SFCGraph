@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@AFUSRDETECT]] · 计费欺诈用户检测功能（AFUSRDETECT）
+- [[configobject/UDG/20.15.2/AFUSRDETECT]] · 计费欺诈用户检测功能（AFUSRDETECT）
 
 ## 使用实例
 

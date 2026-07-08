@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TRCFLOWCTRL]] · 流控通知相关信息（TRCFLOWCTRL）
+- [[configobject/UDG/20.15.2/TRCFLOWCTRL]] · 流控通知相关信息（TRCFLOWCTRL）
 
 ## 使用实例
 

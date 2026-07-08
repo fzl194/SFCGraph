@@ -43,7 +43,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MEASRST]] · 测量结果文件（MEASRST）
+- [[configobject/UDG/20.15.2/MEASRST]] · 测量结果文件（MEASRST）
 
 ## 使用实例
 

@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SRVMATCHSTAT]] · 业务匹配统计参数（SRVMATCHSTAT）
+- [[configobject/UDG/20.15.2/SRVMATCHSTAT]] · 业务匹配统计参数（SRVMATCHSTAT）
 
 ## 使用实例
 

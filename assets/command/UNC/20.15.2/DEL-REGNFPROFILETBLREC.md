@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@REGNFPROFILETBLREC]] · 注册NF的Profile表记录（REGNFPROFILETBLREC）
+- [[configobject/UNC/20.15.2/REGNFPROFILETBLREC]] · 注册NF的Profile表记录（REGNFPROFILETBLREC）
 
 ## 使用实例
 

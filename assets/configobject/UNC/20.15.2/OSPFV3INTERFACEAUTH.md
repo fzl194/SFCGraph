@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@OSPFV3INTERFACEAUTH
+type: ConfigObject
+name: OSPFV3INTERFACEAUTH（OSPFv3接口认证配置）
+nf: UNC
+version: 20.15.2
+object_name: OSPFV3INTERFACEAUTH
+object_kind: entity
+status: active
+---
+
+# OSPFV3INTERFACEAUTH（OSPFv3接口认证配置）
+
+## 说明
+
+该命令用于设置OSPFv3接口上所使用的验证模式及验证口令。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-OSPFV3INTERFACEAUTH]] · ADD OSPFV3INTERFACEAUTH
+- [[command/UNC/20.15.2/LST-OSPFV3INTERFACEAUTH]] · LST OSPFV3INTERFACEAUTH
+- [[command/UNC/20.15.2/MOD-OSPFV3INTERFACEAUTH]] · MOD OSPFV3INTERFACEAUTH
+- [[command/UNC/20.15.2/RMV-OSPFV3INTERFACEAUTH]] · RMV OSPFV3INTERFACEAUTH
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/OSPFV3INTERFACEAUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/OSPFV3INTERFACEAUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/OSPFV3INTERFACEAUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/OSPFV3INTERFACEAUTH.md`

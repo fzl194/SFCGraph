@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@RUCPUINFO
+type: ConfigObject
+name: RUCPUINFO（RU CPU信息）
+nf: UNC
+version: 20.15.2
+object_name: RUCPUINFO
+object_kind: query_target
+status: active
+---
+
+# RUCPUINFO（RU CPU信息）
+
+## 说明
+
+该命令用于查询指定RU的CPU信息，CPU信息包含CPU代数、CPU主频以及CPU类型。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/LST-RUCPUINFO]] · LST RUCPUINFO
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RUCPUINFO.md`

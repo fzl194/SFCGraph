@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNPCSCFSRVPRI]] · APN P-CSCF地址获取方式的优先级配置（APNPCSCFSRVPRI）
+- [[configobject/UNC/20.15.2/APNPCSCFSRVPRI]] · APN P-CSCF地址获取方式的优先级配置（APNPCSCFSRVPRI）
 
 ## 使用实例
 

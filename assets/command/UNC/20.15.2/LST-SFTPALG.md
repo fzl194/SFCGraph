@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SFTPALG]] · SFTP协议算法（SFTPALG）
+- [[configobject/UNC/20.15.2/SFTPALG]] · SFTP协议算法（SFTPALG）
 
 ## 使用实例
 

@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@FILEDELPOLICY]] · 文件删除策略（FILEDELPOLICY）
+- [[configobject/UDG/20.15.2/FILEDELPOLICY]] · 文件删除策略（FILEDELPOLICY）
 
 ## 使用实例
 

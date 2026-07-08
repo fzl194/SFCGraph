@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ACSPEERCFG]] · 或停止ACS与远端设备的配置同步（ACSPEERCFG）
+- [[configobject/UDG/20.15.2/ACSPEERCFG]] · 或停止ACS与远端设备的配置同步（ACSPEERCFG）
 
 ## 使用实例
 

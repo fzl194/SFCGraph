@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MCASTPAEGROUP]] · 组播组引流信息（MCASTPAEGROUP）
+- [[configobject/UDG/20.15.2/MCASTPAEGROUP]] · 组播组引流信息（MCASTPAEGROUP）
 
 ## 使用实例
 

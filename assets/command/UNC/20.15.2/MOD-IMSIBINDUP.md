@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IMSIBINDUP]] · 用户和UPF的绑定关系（IMSIBINDUP）
+- [[configobject/UNC/20.15.2/IMSIBINDUP]] · 用户和UPF的绑定关系（IMSIBINDUP）
 
 ## 使用实例
 

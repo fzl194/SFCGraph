@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@REDUNDRDTIP]] · 冗余备份重定向IP（REDUNDRDTIP）
+- [[configobject/UDG/20.15.2/REDUNDRDTIP]] · 冗余备份重定向IP（REDUNDRDTIP）
 
 ## 使用实例
 

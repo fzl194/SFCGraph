@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@BSFIPRANGEBIND]] · BSF实例与IPRANGE之间的绑定关系（BSFIPRANGEBIND）
+- [[configobject/UNC/20.15.2/BSFIPRANGEBIND]] · BSF实例与IPRANGE之间的绑定关系（BSFIPRANGEBIND）
 
 ## 使用实例
 

@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OSPFAREAAUTH]] · OSPF区域认证配置（OSPFAREAAUTH）
+- [[configobject/UDG/20.15.2/OSPFAREAAUTH]] · OSPF区域认证配置（OSPFAREAAUTH）
 
 ## 使用实例
 

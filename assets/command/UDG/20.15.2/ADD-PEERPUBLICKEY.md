@@ -51,7 +51,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PEERPUBLICKEY]] · 对端公钥（PEERPUBLICKEY）
+- [[configobject/UDG/20.15.2/PEERPUBLICKEY]] · 对端公钥（PEERPUBLICKEY）
 
 ## 使用实例
 

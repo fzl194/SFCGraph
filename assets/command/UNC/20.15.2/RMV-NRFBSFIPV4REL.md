@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFBSFIPV4REL]] · BSF索引和IPv4的关联关系（NRFBSFIPV4REL）
+- [[configobject/UNC/20.15.2/NRFBSFIPV4REL]] · BSF索引和IPv4的关联关系（NRFBSFIPV4REL）
 
 ## 使用实例
 

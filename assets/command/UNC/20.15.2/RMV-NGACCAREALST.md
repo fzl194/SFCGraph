@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGACCAREALST]] · 5G接入限制区域列表（NGACCAREALST）
+- [[configobject/UNC/20.15.2/NGACCAREALST]] · 5G接入限制区域列表（NGACCAREALST）
 
 ## 使用实例
 

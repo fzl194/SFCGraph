@@ -37,7 +37,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APPVERSION]] · 系统版本信息（APPVERSION）
+- [[configobject/UNC/20.15.2/APPVERSION]] · 系统版本信息（APPVERSION）
 
 ## 使用实例
 

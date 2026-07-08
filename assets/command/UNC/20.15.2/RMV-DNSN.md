@@ -54,7 +54,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DNSN]] · DNS NAPTR记录（DNSN）
+- [[configobject/UNC/20.15.2/DNSN]] · DNS NAPTR记录（DNSN）
 
 ## 使用实例
 

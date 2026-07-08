@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@REMINDTIME]] · 证书到期提醒时间（REMINDTIME）
+- [[configobject/UNC/20.15.2/REMINDTIME]] · 证书到期提醒时间（REMINDTIME）
 
 ## 使用实例
 

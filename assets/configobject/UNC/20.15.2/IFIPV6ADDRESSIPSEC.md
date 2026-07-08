@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@IFIPV6ADDRESSIPSEC
+type: ConfigObject
+name: IFIPV6ADDRESSIPSEC（接口IPv6地址）
+nf: UNC
+version: 20.15.2
+object_name: IFIPV6ADDRESSIPSEC
+object_kind: entity
+status: active
+---
+
+# IFIPV6ADDRESSIPSEC（接口IPv6地址）
+
+## 说明
+
+该命令用于手工配置接口的IPv6地址。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-IFIPV6ADDRESSIPSEC]] · ADD IFIPV6ADDRESSIPSEC
+- [[command/UNC/20.15.2/LST-IFIPV6ADDRESSIPSEC]] · LST IFIPV6ADDRESSIPSEC
+- [[command/UNC/20.15.2/MOD-IFIPV6ADDRESSIPSEC]] · MOD IFIPV6ADDRESSIPSEC
+- [[command/UNC/20.15.2/RMV-IFIPV6ADDRESSIPSEC]] · RMV IFIPV6ADDRESSIPSEC
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESSIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESSIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESSIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESSIPSEC.md`

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@M2MUPFBINDGRP]] · UPF和M2M关联的UPF组的绑定关系（M2MUPFBINDGRP）
+- [[configobject/UNC/20.15.2/M2MUPFBINDGRP]] · UPF和M2M关联的UPF组的绑定关系（M2MUPFBINDGRP）
 
 ## 使用实例
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@BGPVRF]] · BGP VPN实例（BGPVRF）
+- [[configobject/UNC/20.15.2/BGPVRF]] · BGP VPN实例（BGPVRF）
 
 ## 使用实例
 

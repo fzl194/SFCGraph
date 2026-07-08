@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MTSMODEL]] · 消息跟踪模型（MTSMODEL）
+- [[configobject/UDG/20.15.2/MTSMODEL]] · 消息跟踪模型（MTSMODEL）
 
 ## 使用实例
 

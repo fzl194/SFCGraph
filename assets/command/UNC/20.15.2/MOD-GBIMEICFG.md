@@ -64,7 +64,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GBIMEICFG]] · Gb模式IMEI配置（GBIMEICFG）
+- [[configobject/UNC/20.15.2/GBIMEICFG]] · Gb模式IMEI配置（GBIMEICFG）
 
 ## 使用实例
 

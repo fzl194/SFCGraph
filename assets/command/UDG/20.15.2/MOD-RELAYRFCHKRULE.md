@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RELAYRFCHKRULE]] · 媒体中继引用检查规则（RELAYRFCHKRULE）
+- [[configobject/UDG/20.15.2/RELAYRFCHKRULE]] · 媒体中继引用检查规则（RELAYRFCHKRULE）
 
 ## 使用实例
 

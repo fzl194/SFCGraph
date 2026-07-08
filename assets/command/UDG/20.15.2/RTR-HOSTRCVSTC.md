@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@HOSTRCVSTC]] · 接收方向协议报文统计计数（HOSTRCVSTC）
+- [[configobject/UDG/20.15.2/HOSTRCVSTC]] · 接收方向协议报文统计计数（HOSTRCVSTC）
 
 ## 使用实例
 

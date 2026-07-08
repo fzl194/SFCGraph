@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFRGNPREFPLY]] · NRF区域优选策略（NRFRGNPREFPLY）
+- [[configobject/UNC/20.15.2/NRFRGNPREFPLY]] · NRF区域优选策略（NRFRGNPREFPLY）
 
 ## 使用实例
 

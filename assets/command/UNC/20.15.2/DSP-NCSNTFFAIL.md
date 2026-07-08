@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NCSNTFFAIL]] · 通知消息发送失败信息（NCSNTFFAIL）
+- [[configobject/UNC/20.15.2/NCSNTFFAIL]] · 通知消息发送失败信息（NCSNTFFAIL）
 
 ## 使用实例
 

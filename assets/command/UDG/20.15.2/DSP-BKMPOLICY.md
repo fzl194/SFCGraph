@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@BKMPOLICY]] · 自动备份策略（BKMPOLICY）
+- [[configobject/UDG/20.15.2/BKMPOLICY]] · 自动备份策略（BKMPOLICY）
 
 ## 使用实例
 

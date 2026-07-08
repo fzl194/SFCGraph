@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GMLCSELGRP]] · GMLC选择策略组（GMLCSELGRP）
+- [[configobject/UNC/20.15.2/GMLCSELGRP]] · GMLC选择策略组（GMLCSELGRP）
 
 ## 使用实例
 

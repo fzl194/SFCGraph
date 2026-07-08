@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AUTOSCALINGSRROUTE]] · 静态路由自动化配置模板（AUTOSCALINGSRROUTE）
+- [[configobject/UNC/20.15.2/AUTOSCALINGSRROUTE]] · 静态路由自动化配置模板（AUTOSCALINGSRROUTE）
 
 ## 使用实例
 

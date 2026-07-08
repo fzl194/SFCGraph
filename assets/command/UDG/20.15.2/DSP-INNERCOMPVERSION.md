@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@INNERCOMPVERSION]] · 系统内部部件版本信息（INNERCOMPVERSION）
+- [[configobject/UDG/20.15.2/INNERCOMPVERSION]] · 系统内部部件版本信息（INNERCOMPVERSION）
 
 ## 使用实例
 

@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APPLYPREFERENCE]] · 路由优先级设置（APPLYPREFERENCE）
+- [[configobject/UDG/20.15.2/APPLYPREFERENCE]] · 路由优先级设置（APPLYPREFERENCE）
 
 ## 使用实例
 

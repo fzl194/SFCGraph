@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CFSHEALCTRL]] · 在复杂故障场景下自愈功能控制参数（CFSHEALCTRL）
+- [[configobject/UDG/20.15.2/CFSHEALCTRL]] · 在复杂故障场景下自愈功能控制参数（CFSHEALCTRL）
 
 ## 使用实例
 

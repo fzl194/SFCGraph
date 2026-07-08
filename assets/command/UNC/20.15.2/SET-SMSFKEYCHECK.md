@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMSFKEYCHECK]] · SMSF用户关键信息数据核查扫描参数（SMSFKEYCHECK）
+- [[configobject/UNC/20.15.2/SMSFKEYCHECK]] · SMSF用户关键信息数据核查扫描参数（SMSFKEYCHECK）
 
 ## 使用实例
 

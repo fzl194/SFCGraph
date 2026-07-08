@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RUNNINGCONFIG]] · 保存运行配置数据（RUNNINGCONFIG）
+- [[configobject/UNC/20.15.2/RUNNINGCONFIG]] · 保存运行配置数据（RUNNINGCONFIG）
 
 ## 使用实例
 

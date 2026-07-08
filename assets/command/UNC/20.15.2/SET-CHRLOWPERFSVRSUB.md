@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHRLOWPERFSVRSUB]] · 低性能CHR服务器的单据订阅条件（CHRLOWPERFSVRSUB）
+- [[configobject/UNC/20.15.2/CHRLOWPERFSVRSUB]] · 低性能CHR服务器的单据订阅条件（CHRLOWPERFSVRSUB）
 
 ## 使用实例
 

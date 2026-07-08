@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@FILTER]] · 过滤器（FILTER）
+- [[configobject/UDG/20.15.2/FILTER]] · 过滤器（FILTER）
 
 ## 使用实例
 

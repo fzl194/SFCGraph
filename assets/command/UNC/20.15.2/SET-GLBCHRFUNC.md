@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GLBCHRFUNC]] · 全局CHR功能配置（GLBCHRFUNC）
+- [[configobject/UNC/20.15.2/GLBCHRFUNC]] · 全局CHR功能配置（GLBCHRFUNC）
 
 ## 使用实例
 

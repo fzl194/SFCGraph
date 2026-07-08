@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SSHCCONNSTC]] · 客户端的连接统计信息（SSHCCONNSTC）
+- [[configobject/UDG/20.15.2/SSHCCONNSTC]] · 客户端的连接统计信息（SSHCCONNSTC）
 
 ## 使用实例
 

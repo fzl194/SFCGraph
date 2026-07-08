@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GTPALMMSK]] · GTP路径断告警屏蔽记录（GTPALMMSK）
+- [[configobject/UNC/20.15.2/GTPALMMSK]] · GTP路径断告警屏蔽记录（GTPALMMSK）
 
 ## 使用实例
 

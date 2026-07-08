@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ATTACHIKEPEER]] · 绑定IKE对等体（ATTACHIKEPEER）
+- [[configobject/UDG/20.15.2/ATTACHIKEPEER]] · 绑定IKE对等体（ATTACHIKEPEER）
 
 ## 使用实例
 

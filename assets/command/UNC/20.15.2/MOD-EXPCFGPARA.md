@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@EXPCFGPARA]] · MML导入导出密钥（EXPCFGPARA）
+- [[configobject/UNC/20.15.2/EXPCFGPARA]] · MML导入导出密钥（EXPCFGPARA）
 
 ## 使用实例
 

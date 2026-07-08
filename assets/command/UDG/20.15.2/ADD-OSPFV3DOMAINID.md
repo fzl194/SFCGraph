@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OSPFV3DOMAINID]] · 创建OSPFv3域标识符配置（OSPFV3DOMAINID）
+- [[configobject/UDG/20.15.2/OSPFV3DOMAINID]] · 创建OSPFv3域标识符配置（OSPFV3DOMAINID）
 
 ## 使用实例
 

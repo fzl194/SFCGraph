@@ -64,7 +64,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TOHVXLANPARA]] · 家庭网关业务使用VXLAN隧道传输业务参数配置（TOHVXLANPARA）
+- [[configobject/UDG/20.15.2/TOHVXLANPARA]] · 家庭网关业务使用VXLAN隧道传输业务参数配置（TOHVXLANPARA）
 
 ## 使用实例
 

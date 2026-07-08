@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MPROCRESSTAT]] · 进程资源数量（MPROCRESSTAT）
+- [[configobject/UDG/20.15.2/MPROCRESSTAT]] · 进程资源数量（MPROCRESSTAT）
 
 ## 使用实例
 

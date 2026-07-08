@@ -1,0 +1,33 @@
+---
+id: UDG@20.15.2@ConfigObject@CELLBINDGRP
+type: ConfigObject
+name: CELLBINDGRP（小区和小区组绑定关系）
+nf: UDG
+version: 20.15.2
+object_name: CELLBINDGRP
+object_kind: binding
+applicable_nf:
+- PGW-U
+- UPF
+status: active
+---
+
+# CELLBINDGRP（小区和小区组绑定关系）
+
+## 说明
+
+**适用NF：PGW-U、UPF**
+
+该命令用于增加小区和小区组的绑定关系，实现基于小区的TCP优化参数定制化功能。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-CELLBINDGRP]] · ADD CELLBINDGRP
+- [[command/UDG/20.15.2/LST-CELLBINDGRP]] · LST CELLBINDGRP
+- [[command/UDG/20.15.2/RMV-CELLBINDGRP]] · RMV CELLBINDGRP
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/CELLBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/CELLBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/CELLBINDGRP.md`

@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SIGDSCP]] · 信令报文DSCP值（SIGDSCP）
+- [[configobject/UDG/20.15.2/SIGDSCP]] · 信令报文DSCP值（SIGDSCP）
 
 ## 使用实例
 

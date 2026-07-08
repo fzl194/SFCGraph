@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TUNNELSELECTOR]] · 隧道选择器（TUNNELSELECTOR）
+- [[configobject/UNC/20.15.2/TUNNELSELECTOR]] · 隧道选择器（TUNNELSELECTOR）
 
 ## 使用实例
 

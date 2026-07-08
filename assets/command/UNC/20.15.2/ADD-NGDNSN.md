@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGDNSN]] · DNS NAPTR记录（NGDNSN）
+- [[configobject/UNC/20.15.2/NGDNSN]] · DNS NAPTR记录（NGDNSN）
 
 ## 使用实例
 

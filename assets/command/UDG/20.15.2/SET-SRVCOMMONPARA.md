@@ -112,7 +112,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SRVCOMMONPARA]] · 业务公共参数（SRVCOMMONPARA）
+- [[configobject/UDG/20.15.2/SRVCOMMONPARA]] · 业务公共参数（SRVCOMMONPARA）
 
 ## 关联任务
 

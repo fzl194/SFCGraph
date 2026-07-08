@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APNTETHERDETSW]] · APN Tethering终端数量检测开关（APNTETHERDETSW）
+- [[configobject/UDG/20.15.2/APNTETHERDETSW]] · APN Tethering终端数量检测开关（APNTETHERDETSW）
 
 ## 使用实例
 

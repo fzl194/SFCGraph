@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PKTFRAMEIDENT]] · 帧包识别功能相关参数（PKTFRAMEIDENT）
+- [[configobject/UDG/20.15.2/PKTFRAMEIDENT]] · 帧包识别功能相关参数（PKTFRAMEIDENT）
 
 ## 使用实例
 

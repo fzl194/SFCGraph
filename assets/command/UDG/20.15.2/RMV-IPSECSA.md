@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IPSECSA]] · IPsec安全联盟（IPSECSA）
+- [[configobject/UDG/20.15.2/IPSECSA]] · IPsec安全联盟（IPSECSA）
 
 ## 使用实例
 

@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@GLBOSLELBWMSW]] · 整机操作系统级带宽管理开关（GLBOSLELBWMSW）
+- [[configobject/UDG/20.15.2/GLBOSLELBWMSW]] · 整机操作系统级带宽管理开关（GLBOSLELBWMSW）
 
 ## 使用实例
 

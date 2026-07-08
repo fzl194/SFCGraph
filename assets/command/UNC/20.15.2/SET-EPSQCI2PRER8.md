@@ -102,7 +102,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@EPSQCI2PRER8]] · EPS QCI到Pre-R8 QoS映射规则（EPSQCI2PRER8）
+- [[configobject/UNC/20.15.2/EPSQCI2PRER8]] · EPS QCI到Pre-R8 QoS映射规则（EPSQCI2PRER8）
 
 ## 使用实例
 

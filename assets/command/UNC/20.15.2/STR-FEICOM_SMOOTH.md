@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@FEICOM_SMOOTH]] · 一次FEI与FES之间的数据平滑（FEICOM_SMOOTH）
+- [[configobject/UNC/20.15.2/FEICOM_SMOOTH]] · 一次FEI与FES之间的数据平滑（FEICOM_SMOOTH）
 
 ## 使用实例
 

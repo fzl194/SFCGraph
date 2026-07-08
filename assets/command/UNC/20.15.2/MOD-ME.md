@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ME]] · 网元信息（ME）
+- [[configobject/UNC/20.15.2/ME]] · 网元信息（ME）
 
 ## 使用实例
 

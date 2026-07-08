@@ -1,0 +1,24 @@
+---
+id: UDG@20.15.2@ConfigObject@EXPCFGPARA
+type: ConfigObject
+name: EXPCFGPARA（MML导入导出密钥）
+nf: UDG
+version: 20.15.2
+object_name: EXPCFGPARA
+object_kind: entity
+status: active
+---
+
+# EXPCFGPARA（MML导入导出密钥）
+
+## 说明
+
+该命令用于MML导入导出之前，下发对DB表中密码字段进行加解密的用户密钥。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/MOD-EXPCFGPARA]] · MOD EXPCFGPARA
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/EXPCFGPARA.md`

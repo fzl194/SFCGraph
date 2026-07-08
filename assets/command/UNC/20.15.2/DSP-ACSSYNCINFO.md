@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACSSYNCINFO]] · ACS的配置同步信息（ACSSYNCINFO）
+- [[configobject/UNC/20.15.2/ACSSYNCINFO]] · ACS的配置同步信息（ACSSYNCINFO）
 
 ## 使用实例
 

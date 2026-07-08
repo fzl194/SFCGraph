@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@FUIFLOWCTLPARA]] · 欠费重定向流控参数（FUIFLOWCTLPARA）
+- [[configobject/UDG/20.15.2/FUIFLOWCTLPARA]] · 欠费重定向流控参数（FUIFLOWCTLPARA）
 
 ## 使用实例
 

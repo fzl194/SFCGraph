@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PNFSRVNTFSUBS]] · 对端NF服务实例的回调信息（PNFSRVNTFSUBS）
+- [[configobject/UNC/20.15.2/PNFSRVNTFSUBS]] · 对端NF服务实例的回调信息（PNFSRVNTFSUBS）
 
 ## 使用实例
 

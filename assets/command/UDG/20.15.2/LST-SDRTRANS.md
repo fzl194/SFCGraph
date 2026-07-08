@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SDRTRANS]] · SDR传输能力（SDRTRANS）
+- [[configobject/UDG/20.15.2/SDRTRANS]] · SDR传输能力（SDRTRANS）
 
 ## 使用实例
 

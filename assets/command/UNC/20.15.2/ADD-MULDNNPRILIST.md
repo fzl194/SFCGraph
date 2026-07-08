@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MULDNNPRILIST]] · 本地专网DNN就近接入优先级（MULDNNPRILIST）
+- [[configobject/UNC/20.15.2/MULDNNPRILIST]] · 本地专网DNN就近接入优先级（MULDNNPRILIST）
 
 ## 使用实例
 

@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@IFIPV4ADDRESS
+type: ConfigObject
+name: IFIPV4ADDRESS（接口IPv4地址）
+nf: UNC
+version: 20.15.2
+object_name: IFIPV4ADDRESS
+object_kind: entity
+status: active
+---
+
+# IFIPV4ADDRESS（接口IPv4地址）
+
+## 说明
+
+该命令用于配置接口的IP地址，包括逻辑接口及物理接口。物理接口是真实存在的接口。逻辑接口是指能够实现数据交换功能但物理上不存在、需要通过配置建立的接口。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-IFIPV4ADDRESS]] · ADD IFIPV4ADDRESS
+- [[command/UNC/20.15.2/LST-IFIPV4ADDRESS]] · LST IFIPV4ADDRESS
+- [[command/UNC/20.15.2/MOD-IFIPV4ADDRESS]] · MOD IFIPV4ADDRESS
+- [[command/UNC/20.15.2/RMV-IFIPV4ADDRESS]] · RMV IFIPV4ADDRESS
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`

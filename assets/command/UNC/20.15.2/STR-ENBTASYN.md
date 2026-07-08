@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ENBTASYN]] · eNodeB跟踪区信息同步任务（ENBTASYN）
+- [[configobject/UNC/20.15.2/ENBTASYN]] · eNodeB跟踪区信息同步任务（ENBTASYN）
 
 ## 使用实例
 

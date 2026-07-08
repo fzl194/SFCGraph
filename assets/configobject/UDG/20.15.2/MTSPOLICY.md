@@ -1,0 +1,35 @@
+---
+id: UDG@20.15.2@ConfigObject@MTSPOLICY
+type: ConfigObject
+name: MTSPOLICY（消息跟踪限制）
+nf: UDG
+version: 20.15.2
+object_name: MTSPOLICY
+object_kind: entity
+status: active
+---
+
+# MTSPOLICY（消息跟踪限制）
+
+## 说明
+
+![](添加消息跟踪限制（ADD MTSPOLICY）_82775284.assets/notice_3.0-zh-cn.png)
+
+执行该命令后，可能会影响到跟踪任务的创建以及消息上报，请谨慎使用该命令。
+
+本命令用于添加对消息跟踪能力的限制，例如限制消息跟踪任务的创建。
+
+> **说明**
+> 无。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-MTSPOLICY]] · ADD MTSPOLICY
+- [[command/UDG/20.15.2/LST-MTSPOLICY]] · LST MTSPOLICY
+- [[command/UDG/20.15.2/RMV-MTSPOLICY]] · RMV MTSPOLICY
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MTSPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/MTSPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/MTSPOLICY.md`

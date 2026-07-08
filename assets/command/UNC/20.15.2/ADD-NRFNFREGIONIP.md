@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFNFREGIONIP]] · IP与NF区域映射关系配置（NRFNFREGIONIP）
+- [[configobject/UNC/20.15.2/NRFNFREGIONIP]] · IP与NF区域映射关系配置（NRFNFREGIONIP）
 
 ## 使用实例
 

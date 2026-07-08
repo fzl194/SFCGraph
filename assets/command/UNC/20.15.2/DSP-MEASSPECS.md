@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MEASSPECS]] · 话统规格（MEASSPECS）
+- [[configobject/UNC/20.15.2/MEASSPECS]] · 话统规格（MEASSPECS）
 
 ## 使用实例
 

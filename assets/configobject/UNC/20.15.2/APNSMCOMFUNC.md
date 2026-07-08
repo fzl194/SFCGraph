@@ -1,0 +1,35 @@
+---
+id: UNC@20.15.2@ConfigObject@APNSMCOMFUNC
+type: ConfigObject
+name: APNSMCOMFUNC（APN粒度的通用会话拓展功能控制）
+nf: UNC
+version: 20.15.2
+object_name: APNSMCOMFUNC
+object_kind: entity
+applicable_nf:
+- PGW-C
+- SMF
+status: active
+---
+
+# APNSMCOMFUNC（APN粒度的通用会话拓展功能控制）
+
+## 说明
+
+**适用NF：PGW-C、SMF**
+
+该命令用于增加APN粒度的通用会话拓展功能控制。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-APNSMCOMFUNC]] · ADD APNSMCOMFUNC
+- [[command/UNC/20.15.2/LST-APNSMCOMFUNC]] · LST APNSMCOMFUNC
+- [[command/UNC/20.15.2/MOD-APNSMCOMFUNC]] · MOD APNSMCOMFUNC
+- [[command/UNC/20.15.2/RMV-APNSMCOMFUNC]] · RMV APNSMCOMFUNC
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`

@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@T1N1PARA]] · PFCP T1N1参数配置（T1N1PARA）
+- [[configobject/UNC/20.15.2/T1N1PARA]] · PFCP T1N1参数配置（T1N1PARA）
 
 ## 使用实例
 

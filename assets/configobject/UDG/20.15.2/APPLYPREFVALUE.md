@@ -1,0 +1,30 @@
+---
+id: UDG@20.15.2@ConfigObject@APPLYPREFVALUE
+type: ConfigObject
+name: APPLYPREFVALUE（BGP路由首选值设置）
+nf: UDG
+version: 20.15.2
+object_name: APPLYPREFVALUE
+object_kind: entity
+status: active
+---
+
+# APPLYPREFVALUE（BGP路由首选值设置）
+
+## 说明
+
+该命令用于增加BGP路由首选值设置。使用ADD APPLYPREFVALUE命令配置优先级后，在不同协议发现到达同一目的地的不同路由时，优先级高的路由协议发现的路由将作为当前的有效路由。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-APPLYPREFVALUE]] · ADD APPLYPREFVALUE
+- [[command/UDG/20.15.2/LST-APPLYPREFVALUE]] · LST APPLYPREFVALUE
+- [[command/UDG/20.15.2/MOD-APPLYPREFVALUE]] · MOD APPLYPREFVALUE
+- [[command/UDG/20.15.2/RMV-APPLYPREFVALUE]] · RMV APPLYPREFVALUE
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/APPLYPREFVALUE.md`
+- 原始手册：`evidence/UDG/20.15.2/APPLYPREFVALUE.md`
+- 原始手册：`evidence/UDG/20.15.2/APPLYPREFVALUE.md`
+- 原始手册：`evidence/UDG/20.15.2/APPLYPREFVALUE.md`

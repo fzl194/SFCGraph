@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHGPLMNCG]] · PLMN-CG配置参数（CHGPLMNCG）
+- [[configobject/UNC/20.15.2/CHGPLMNCG]] · PLMN-CG配置参数（CHGPLMNCG）
 
 ## 使用实例
 

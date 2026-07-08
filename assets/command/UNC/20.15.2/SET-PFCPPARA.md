@@ -74,7 +74,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PFCPPARA]] · PFCP参数（PFCPPARA）
+- [[configobject/UNC/20.15.2/PFCPPARA]] · PFCP参数（PFCPPARA）
 
 ## 使用实例
 

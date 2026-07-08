@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PROCRESTHD]] · 进程资源告警阈值（PROCRESTHD）
+- [[configobject/UNC/20.15.2/PROCRESTHD]] · 进程资源告警阈值（PROCRESTHD）
 
 ## 使用实例
 

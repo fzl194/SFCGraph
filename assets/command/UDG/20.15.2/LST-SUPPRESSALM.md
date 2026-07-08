@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SUPPRESSALM]] · 被抑制告警（SUPPRESSALM）
+- [[configobject/UDG/20.15.2/SUPPRESSALM]] · 被抑制告警（SUPPRESSALM）
 
 ## 使用实例
 

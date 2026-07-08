@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNRDSACCTCTRL]] · APN RADIUS计费控制参数（APNRDSACCTCTRL）
+- [[configobject/UNC/20.15.2/APNRDSACCTCTRL]] · APN RADIUS计费控制参数（APNRDSACCTCTRL）
 
 ## 使用实例
 

@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GLBTARIFFGROUP]] · 全局费率切换组（GLBTARIFFGROUP）
+- [[configobject/UNC/20.15.2/GLBTARIFFGROUP]] · 全局费率切换组（GLBTARIFFGROUP）
 
 ## 使用实例
 

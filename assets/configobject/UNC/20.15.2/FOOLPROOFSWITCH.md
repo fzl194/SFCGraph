@@ -1,0 +1,26 @@
+---
+id: UNC@20.15.2@ConfigObject@FOOLPROOFSWITCH
+type: ConfigObject
+name: FOOLPROOFSWITCH（防呆开关状态）
+nf: UNC
+version: 20.15.2
+object_name: FOOLPROOFSWITCH
+object_kind: global_setting
+status: active
+---
+
+# FOOLPROOFSWITCH（防呆开关状态）
+
+## 说明
+
+该命令用于设置防呆开关状态。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-FOOLPROOFSWITCH]] · DSP FOOLPROOFSWITCH
+- [[command/UNC/20.15.2/SET-FOOLPROOFSWITCH]] · SET FOOLPROOFSWITCH
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/FOOLPROOFSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/FOOLPROOFSWITCH.md`

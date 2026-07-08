@@ -76,7 +76,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SOFTPARA]] · 软参记录（SOFTPARA）
+- [[configobject/UDG/20.15.2/SOFTPARA]] · 软参记录（SOFTPARA）
 
 ## 使用实例
 

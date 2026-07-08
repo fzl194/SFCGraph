@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SEGPROCESS]] · 复位NRF百万号段功能（SEGPROCESS）
+- [[configobject/UNC/20.15.2/SEGPROCESS]] · 复位NRF百万号段功能（SEGPROCESS）
 
 ## 使用实例
 

@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RVKLICINFO]] · License失效信息（RVKLICINFO）
+- [[configobject/UNC/20.15.2/RVKLICINFO]] · License失效信息（RVKLICINFO）
 
 ## 使用实例
 

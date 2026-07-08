@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SUFFIXLAIAREA]] · UPF服务区名称以LAC后缀方式绑定的LAI范围（SUFFIXLAIAREA）
+- [[configobject/UNC/20.15.2/SUFFIXLAIAREA]] · UPF服务区名称以LAC后缀方式绑定的LAI范围（SUFFIXLAIAREA）
 
 ## 使用实例
 

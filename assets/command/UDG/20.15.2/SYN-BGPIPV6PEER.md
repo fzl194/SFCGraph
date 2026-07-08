@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@BGPIPV6PEER]] · BGP IPv6对等体（BGPIPV6PEER）
+- [[configobject/UDG/20.15.2/BGPIPV6PEER]] · BGP IPv6对等体（BGPIPV6PEER）
 
 ## 使用实例
 

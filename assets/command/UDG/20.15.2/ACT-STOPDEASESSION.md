@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@STOPDEASESSION]] · 去活用户的处理（STOPDEASESSION）
+- [[configobject/UDG/20.15.2/STOPDEASESSION]] · 去活用户的处理（STOPDEASESSION）
 
 ## 使用实例
 

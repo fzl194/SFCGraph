@@ -1,0 +1,26 @@
+---
+id: UNC@20.15.2@ConfigObject@SYSTEMLOG
+type: ConfigObject
+name: SYSTEMLOG（系统日志）
+nf: UNC
+version: 20.15.2
+object_name: SYSTEMLOG
+object_kind: query_target
+status: active
+---
+
+# SYSTEMLOG（系统日志）
+
+## 说明
+
+本命令用于查询系统日志。
+
+该命令获取的日志与 OM Portal 界面 “ 安全>日志审计>系统日志 ” 相同。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/LST-SYSTEMLOG]] · LST SYSTEMLOG
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SYSTEMLOG.md`

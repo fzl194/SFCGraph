@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@UPNON3GPPPARA]] · 非3GPP业务配置参数（UPNON3GPPPARA）
+- [[configobject/UDG/20.15.2/UPNON3GPPPARA]] · 非3GPP业务配置参数（UPNON3GPPPARA）
 
 ## 使用实例
 

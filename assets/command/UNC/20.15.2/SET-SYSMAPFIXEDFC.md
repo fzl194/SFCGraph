@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组；
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SYSMAPFIXEDFC]] · VLR整系统Map固定速率流控（SYSMAPFIXEDFC）
+- [[configobject/UNC/20.15.2/SYSMAPFIXEDFC]] · VLR整系统Map固定速率流控（SYSMAPFIXEDFC）
 
 ## 使用实例
 

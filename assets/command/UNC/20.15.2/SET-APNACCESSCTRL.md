@@ -71,7 +71,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNACCESSCTRL]] · APN访问控制参数（APNACCESSCTRL）
+- [[configobject/UNC/20.15.2/APNACCESSCTRL]] · APN访问控制参数（APNACCESSCTRL）
 
 ## 使用实例
 

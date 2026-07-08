@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFSOFTPARA]] · NRF软参（NRFSOFTPARA）
+- [[configobject/UNC/20.15.2/NRFSOFTPARA]] · NRF软参（NRFSOFTPARA）
 
 ## 使用实例
 

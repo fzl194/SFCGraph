@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@FAULTUPBINDRAN]] · N3接口故障网元组绑定（FAULTUPBINDRAN）
+- [[configobject/UNC/20.15.2/FAULTUPBINDRAN]] · N3接口故障网元组绑定（FAULTUPBINDRAN）
 
 ## 使用实例
 

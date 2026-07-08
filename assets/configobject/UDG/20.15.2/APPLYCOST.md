@@ -1,0 +1,30 @@
+---
+id: UDG@20.15.2@ConfigObject@APPLYCOST
+type: ConfigObject
+name: APPLYCOST（路由开销值设置）
+nf: UDG
+version: 20.15.2
+object_name: APPLYCOST
+object_kind: entity
+status: active
+---
+
+# APPLYCOST（路由开销值设置）
+
+## 说明
+
+该命令用于添加路由开销值设置，可以通过调整开销值避免路由环路的产生。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-APPLYCOST]] · ADD APPLYCOST
+- [[command/UDG/20.15.2/LST-APPLYCOST]] · LST APPLYCOST
+- [[command/UDG/20.15.2/MOD-APPLYCOST]] · MOD APPLYCOST
+- [[command/UDG/20.15.2/RMV-APPLYCOST]] · RMV APPLYCOST
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`
+- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`
+- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`
+- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`

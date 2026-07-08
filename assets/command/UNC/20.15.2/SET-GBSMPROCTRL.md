@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GBSMPROCTRL]] · Gb模式SM流程控制参数（GBSMPROCTRL）
+- [[configobject/UNC/20.15.2/GBSMPROCTRL]] · Gb模式SM流程控制参数（GBSMPROCTRL）
 
 ## 使用实例
 

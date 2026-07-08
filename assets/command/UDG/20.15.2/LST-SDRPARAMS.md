@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SDRPARAMS]] · SDR参数（SDRPARAMS）
+- [[configobject/UDG/20.15.2/SDRPARAMS]] · SDR参数（SDRPARAMS）
 
 ## 使用实例
 

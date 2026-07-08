@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@L3VPNINST]] · L3VPN实例（L3VPNINST）
+- [[configobject/UNC/20.15.2/L3VPNINST]] · L3VPN实例（L3VPNINST）
 
 ## 使用实例
 

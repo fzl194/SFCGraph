@@ -73,7 +73,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RELAYSALMPARA]] · 媒体中继业务告警参数配置（RELAYSALMPARA）
+- [[configobject/UDG/20.15.2/RELAYSALMPARA]] · 媒体中继业务告警参数配置（RELAYSALMPARA）
 
 ## 使用实例
 

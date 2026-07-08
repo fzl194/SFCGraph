@@ -1,0 +1,27 @@
+---
+id: UDG@20.15.2@ConfigObject@HTTPRESUSG
+type: ConfigObject
+name: HTTPRESUSG（HTTP资源使用信息）
+nf: UDG
+version: 20.15.2
+object_name: HTTPRESUSG
+object_kind: query_target
+status: active
+---
+
+# HTTPRESUSG（HTTP资源使用信息）
+
+## 说明
+
+该命令用于显示HTTP资源使用信息。
+
+> **说明**
+> 无
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/DSP-HTTPRESUSG]] · DSP HTTPRESUSG
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/HTTPRESUSG.md`

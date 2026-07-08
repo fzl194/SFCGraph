@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@HOSTSNDSTC]] · 发送方向协议报文统计计数（HOSTSNDSTC）
+- [[configobject/UDG/20.15.2/HOSTSNDSTC]] · 发送方向协议报文统计计数（HOSTSNDSTC）
 
 ## 使用实例
 

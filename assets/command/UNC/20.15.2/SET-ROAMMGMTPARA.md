@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ROAMMGMTPARA]] · 漫游管理参数（ROAMMGMTPARA）
+- [[configobject/UNC/20.15.2/ROAMMGMTPARA]] · 漫游管理参数（ROAMMGMTPARA）
 
 ## 使用实例
 

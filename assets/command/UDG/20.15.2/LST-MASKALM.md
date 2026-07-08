@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MASKALM]] · 被屏蔽告警（MASKALM）
+- [[configobject/UDG/20.15.2/MASKALM]] · 被屏蔽告警（MASKALM）
 
 ## 使用实例
 

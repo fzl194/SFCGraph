@@ -61,7 +61,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MML]] · MML文件（MML）
+- [[configobject/UNC/20.15.2/MML]] · MML文件（MML）
 
 ## 使用实例
 

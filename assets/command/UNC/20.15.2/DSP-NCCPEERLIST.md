@@ -43,7 +43,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NCCPEERLIST]] · NETCONFC管理的远端设备的信息（NCCPEERLIST）
+- [[configobject/UNC/20.15.2/NCCPEERLIST]] · NETCONFC管理的远端设备的信息（NCCPEERLIST）
 
 ## 使用实例
 

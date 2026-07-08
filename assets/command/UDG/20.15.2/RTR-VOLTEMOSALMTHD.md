@@ -40,7 +40,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@VOLTEMOSALMTHD]] · 异常MOS告警阈值为系统初始设置值（VOLTEMOSALMTHD）
+- [[configobject/UDG/20.15.2/VOLTEMOSALMTHD]] · 异常MOS告警阈值为系统初始设置值（VOLTEMOSALMTHD）
 
 ## 使用实例
 

@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@MSSPBUFLEAK
+type: ConfigObject
+name: MSSPBUFLEAK（泄漏的PBUF缓存信息）
+nf: UNC
+version: 20.15.2
+object_name: MSSPBUFLEAK
+object_kind: query_target
+status: active
+---
+
+# MSSPBUFLEAK（泄漏的PBUF缓存信息）
+
+## 说明
+
+该命令用于显示泄漏的报文缓存信息。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-MSSPBUFLEAK]] · DSP MSSPBUFLEAK
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MSSPBUFLEAK.md`

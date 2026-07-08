@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GLBDCCTEMPLATE]] · 计费属性与在线计费模板绑定关系（GLBDCCTEMPLATE）
+- [[configobject/UNC/20.15.2/GLBDCCTEMPLATE]] · 计费属性与在线计费模板绑定关系（GLBDCCTEMPLATE）
 
 ## 使用实例
 

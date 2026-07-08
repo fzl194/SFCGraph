@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGIPAREACTRL]] · 基于位置的地址分配控制参数（NGIPAREACTRL）
+- [[configobject/UNC/20.15.2/NGIPAREACTRL]] · 基于位置的地址分配控制参数（NGIPAREACTRL）
 
 ## 使用实例
 

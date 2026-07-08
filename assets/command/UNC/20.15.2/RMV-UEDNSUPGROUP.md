@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UEDNSUPGROUP]] · DNS关联的UPF组（UEDNSUPGROUP）
+- [[configobject/UNC/20.15.2/UEDNSUPGROUP]] · DNS关联的UPF组（UEDNSUPGROUP）
 
 ## 使用实例
 

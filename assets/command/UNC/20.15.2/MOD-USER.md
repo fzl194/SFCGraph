@@ -46,7 +46,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@USER]] · 用户锁定状态（USER）
+- [[configobject/UNC/20.15.2/USER]] · 用户锁定状态（USER）
 
 ## 使用实例
 

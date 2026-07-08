@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMFEXITUDMBYPASS]] · 用户退出UDM Bypass状态任务（AMFEXITUDMBYPASS）
+- [[configobject/UNC/20.15.2/AMFEXITUDMBYPASS]] · 用户退出UDM Bypass状态任务（AMFEXITUDMBYPASS）
 
 ## 使用实例
 

@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SECALG]] · 安全算法（SECALG）
+- [[configobject/UDG/20.15.2/SECALG]] · 安全算法（SECALG）
 
 ## 使用实例
 

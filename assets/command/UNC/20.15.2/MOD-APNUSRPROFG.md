@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@APNUSRPROFG]] · APN用户模板组绑定关系（APNUSRPROFG）
+- [[configobject/UNC/20.15.2/APNUSRPROFG]] · APN用户模板组绑定关系（APNUSRPROFG）
 
 ## 使用实例
 

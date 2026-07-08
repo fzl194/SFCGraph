@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOGCLEANPOLICY]] · 日志老化策略（LOGCLEANPOLICY）
+- [[configobject/UNC/20.15.2/LOGCLEANPOLICY]] · 日志老化策略（LOGCLEANPOLICY）
 
 ## 使用实例
 

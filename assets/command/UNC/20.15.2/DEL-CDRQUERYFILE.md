@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CDRQUERYFILE]] · 话单查询结果文件（CDRQUERYFILE）
+- [[configobject/UNC/20.15.2/CDRQUERYFILE]] · 话单查询结果文件（CDRQUERYFILE）
 
 ## 使用实例
 

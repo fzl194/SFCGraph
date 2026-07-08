@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@COLOCATEDLBO]] · 本地分流共部署参数（COLOCATEDLBO）
+- [[configobject/UDG/20.15.2/COLOCATEDLBO]] · 本地分流共部署参数（COLOCATEDLBO）
 
 ## 使用实例
 

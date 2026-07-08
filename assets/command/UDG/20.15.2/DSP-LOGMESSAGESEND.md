@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LOGMESSAGESEND]] · 日志发送的信息（LOGMESSAGESEND）
+- [[configobject/UDG/20.15.2/LOGMESSAGESEND]] · 日志发送的信息（LOGMESSAGESEND）
 
 ## 使用实例
 

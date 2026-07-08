@@ -49,7 +49,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RUGROUP]] · 资源单元组成员信息（RUGROUP）
+- [[configobject/UDG/20.15.2/RUGROUP]] · 资源单元组成员信息（RUGROUP）
 
 ## 使用实例
 

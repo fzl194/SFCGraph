@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@EPRPDYNIP]] · EpRpDyn对象本端IP地址或者删除远端IP地址段（EPRPDYNIP）
+- [[configobject/UDG/20.15.2/EPRPDYNIP]] · EpRpDyn对象本端IP地址或者删除远端IP地址段（EPRPDYNIP）
 
 ## 使用实例
 

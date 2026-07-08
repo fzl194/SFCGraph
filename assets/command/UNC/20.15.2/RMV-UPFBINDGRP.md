@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPFBINDGRP]] · UPF和UPF组的绑定关系（UPFBINDGRP）
+- [[configobject/UNC/20.15.2/UPFBINDGRP]] · UPF和UPF组的绑定关系（UPFBINDGRP）
 
 ## 使用实例
 

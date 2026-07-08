@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHARGEMETHOD]] · 计费方式（CHARGEMETHOD）
+- [[configobject/UNC/20.15.2/CHARGEMETHOD]] · 计费方式（CHARGEMETHOD）
 
 ## 使用实例
 

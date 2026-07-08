@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IPALLOCBYLOCSW]] · 基于位置区分配地址的开关（IPALLOCBYLOCSW）
+- [[configobject/UDG/20.15.2/IPALLOCBYLOCSW]] · 基于位置区分配地址的开关（IPALLOCBYLOCSW）
 
 ## 使用实例
 

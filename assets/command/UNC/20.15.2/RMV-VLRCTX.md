@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@VLRCTX]] · VLR用户的上下文（VLRCTX）
+- [[configobject/UNC/20.15.2/VLRCTX]] · VLR用户的上下文（VLRCTX）
 
 ## 使用实例
 

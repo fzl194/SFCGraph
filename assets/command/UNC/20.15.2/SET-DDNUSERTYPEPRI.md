@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DDNUSERTYPEPRI]] · 基于用户属性的DDN消息优先级（DDNUSERTYPEPRI）
+- [[configobject/UNC/20.15.2/DDNUSERTYPEPRI]] · 基于用户属性的DDN消息优先级（DDNUSERTYPEPRI）
 
 ## 使用实例
 

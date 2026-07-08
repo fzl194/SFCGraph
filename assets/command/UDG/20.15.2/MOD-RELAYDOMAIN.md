@@ -63,7 +63,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RELAYDOMAIN]] · 媒体中继域名配置（RELAYDOMAIN）
+- [[configobject/UDG/20.15.2/RELAYDOMAIN]] · 媒体中继域名配置（RELAYDOMAIN）
 
 ## 使用实例
 

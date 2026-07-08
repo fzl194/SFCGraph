@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TRUNKATTR]] · 宽带集群属性配置（TRUNKATTR）
+- [[configobject/UDG/20.15.2/TRUNKATTR]] · 宽带集群属性配置（TRUNKATTR）
 
 ## 使用实例
 

@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RPTPROTOCOLMAP]] · 业务报表映射承载协议分类配置（RPTPROTOCOLMAP）
+- [[configobject/UDG/20.15.2/RPTPROTOCOLMAP]] · 业务报表映射承载协议分类配置（RPTPROTOCOLMAP）
 
 ## 使用实例
 

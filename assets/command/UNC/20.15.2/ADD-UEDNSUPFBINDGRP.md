@@ -53,7 +53,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UEDNSUPFBINDGRP]] · UPF和DNS关联的UPF组的绑定关系（UEDNSUPFBINDGRP）
+- [[configobject/UNC/20.15.2/UEDNSUPFBINDGRP]] · UPF和DNS关联的UPF组的绑定关系（UEDNSUPFBINDGRP）
 
 ## 使用实例
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NGBINDDFSRPAIR]] · 5G LAN实例绑定双发选收结对配置（NGBINDDFSRPAIR）
+- [[configobject/UDG/20.15.2/NGBINDDFSRPAIR]] · 5G LAN实例绑定双发选收结对配置（NGBINDDFSRPAIR）
 
 ## 使用实例
 

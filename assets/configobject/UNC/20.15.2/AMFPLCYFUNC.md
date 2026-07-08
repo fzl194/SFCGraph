@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@AMFPLCYFUNC
+type: ConfigObject
+name: AMFPLCYFUNC（AMF策略功能）
+nf: UNC
+version: 20.15.2
+object_name: AMFPLCYFUNC
+object_kind: global_setting
+applicable_nf:
+- AMF
+status: active
+---
+
+# AMFPLCYFUNC（AMF策略功能）
+
+## 说明
+
+**适用NF：AMF**
+
+该命令用于设置AMF策略功能。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/LST-AMFPLCYFUNC]] · LST AMFPLCYFUNC
+- [[command/UNC/20.15.2/SET-AMFPLCYFUNC]] · SET AMFPLCYFUNC
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/AMFPLCYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/AMFPLCYFUNC.md`

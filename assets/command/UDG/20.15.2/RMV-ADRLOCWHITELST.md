@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ADRLOCWHITELST]] · 位置区域地址分配用户白名单（ADRLOCWHITELST）
+- [[configobject/UDG/20.15.2/ADRLOCWHITELST]] · 位置区域地址分配用户白名单（ADRLOCWHITELST）
 
 ## 使用实例
 

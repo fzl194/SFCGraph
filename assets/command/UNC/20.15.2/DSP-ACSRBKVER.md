@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACSRBKVER]] · 升级可回退版本信息（ACSRBKVER）
+- [[configobject/UNC/20.15.2/ACSRBKVER]] · 升级可回退版本信息（ACSRBKVER）
 
 ## 使用实例
 

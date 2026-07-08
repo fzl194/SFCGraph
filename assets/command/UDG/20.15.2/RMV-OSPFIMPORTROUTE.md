@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OSPFIMPORTROUTE]] · OSPF引入路由配置（OSPFIMPORTROUTE）
+- [[configobject/UDG/20.15.2/OSPFIMPORTROUTE]] · OSPF引入路由配置（OSPFIMPORTROUTE）
 
 ## 使用实例
 

@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APNACCESSWAL]] · Apn接入速率配置（APNACCESSWAL）
+- [[configobject/UDG/20.15.2/APNACCESSWAL]] · Apn接入速率配置（APNACCESSWAL）
 
 ## 关联任务
 

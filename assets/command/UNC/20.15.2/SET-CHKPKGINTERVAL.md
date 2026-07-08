@@ -47,7 +47,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CHKPKGINTERVAL]] · 软件包检查间隔（CHKPKGINTERVAL）
+- [[configobject/UNC/20.15.2/CHKPKGINTERVAL]] · 软件包检查间隔（CHKPKGINTERVAL）
 
 ## 使用实例
 

@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ACLRULEBAS6]] · 基本IPv6 ACL规则（ACLRULEBAS6）
+- [[configobject/UNC/20.15.2/ACLRULEBAS6]] · 基本IPv6 ACL规则（ACLRULEBAS6）
 
 ## 使用实例
 

@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组。
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CPDATAFLOWCTRL]] · CP Data流控参数（CPDATAFLOWCTRL）
+- [[configobject/UNC/20.15.2/CPDATAFLOWCTRL]] · CP Data流控参数（CPDATAFLOWCTRL）
 
 ## 使用实例
 

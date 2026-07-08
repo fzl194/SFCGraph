@@ -73,7 +73,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OFCTHRESHOLD]] · 离线计费阈值（OFCTHRESHOLD）
+- [[configobject/UNC/20.15.2/OFCTHRESHOLD]] · 离线计费阈值（OFCTHRESHOLD）
 
 ## 使用实例
 

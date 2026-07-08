@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LICCTL]] · 紧急License（LICCTL）
+- [[configobject/UDG/20.15.2/LICCTL]] · 紧急License（LICCTL）
 
 ## 使用实例
 

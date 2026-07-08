@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@PLUGINFO]] · 插件信息（PLUGINFO）
+- [[configobject/UDG/20.15.2/PLUGINFO]] · 插件信息（PLUGINFO）
 
 ## 使用实例
 

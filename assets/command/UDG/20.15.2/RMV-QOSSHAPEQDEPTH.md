@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@QOSSHAPEQDEPTH]] · Qos Shape缓存队列深度与流量速率的对应关系（QOSSHAPEQDEPTH）
+- [[configobject/UDG/20.15.2/QOSSHAPEQDEPTH]] · Qos Shape缓存队列深度与流量速率的对应关系（QOSSHAPEQDEPTH）
 
 ## 使用实例
 

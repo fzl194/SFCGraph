@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMFUDMRESET]] · AMF的UDM故障处理策略（AMFUDMRESET）
+- [[configobject/UNC/20.15.2/AMFUDMRESET]] · AMF的UDM故障处理策略（AMFUDMRESET）
 
 ## 使用实例
 

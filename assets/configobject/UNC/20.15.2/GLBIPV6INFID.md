@@ -1,0 +1,32 @@
+---
+id: UNC@20.15.2@ConfigObject@GLBIPV6INFID
+type: ConfigObject
+name: GLBIPV6INFID（整机IPv6接口ID配置）
+nf: UNC
+version: 20.15.2
+object_name: GLBIPV6INFID
+object_kind: global_setting
+applicable_nf:
+- PGW-C
+- GGSN
+- SMF
+status: active
+---
+
+# GLBIPV6INFID（整机IPv6接口ID配置）
+
+## 说明
+
+**适用NF：PGW-C、GGSN、SMF**
+
+该命令用于控制为用户分配IPv6地址时，是否开启IMSI作为用户的IPv6地址Interface ID功能。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/LST-GLBIPV6INFID]] · LST GLBIPV6INFID
+- [[command/UNC/20.15.2/SET-GLBIPV6INFID]] · SET GLBIPV6INFID
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/GLBIPV6INFID.md`
+- 原始手册：`evidence/UNC/20.15.2/GLBIPV6INFID.md`

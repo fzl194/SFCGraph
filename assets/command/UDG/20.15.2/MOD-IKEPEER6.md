@@ -69,7 +69,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@IKEPEER6]] · IPv6 IKE对等体（IKEPEER6）
+- [[configobject/UDG/20.15.2/IKEPEER6]] · IPv6 IKE对等体（IKEPEER6）
 
 ## 使用实例
 

@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CERTESCAPESWITCH]] · 证书过期逃生开关状态（CERTESCAPESWITCH）
+- [[configobject/UDG/20.15.2/CERTESCAPESWITCH]] · 证书过期逃生开关状态（CERTESCAPESWITCH）
 
 ## 使用实例
 

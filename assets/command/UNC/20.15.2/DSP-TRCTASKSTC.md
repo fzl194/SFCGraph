@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TRCTASKSTC]] · 跟踪任务相关跟踪消息的统计信息（TRCTASKSTC）
+- [[configobject/UNC/20.15.2/TRCTASKSTC]] · 跟踪任务相关跟踪消息的统计信息（TRCTASKSTC）
 
 ## 使用实例
 

@@ -71,7 +71,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@OVERLOADRC]] · 判断对端过载的返回码（OVERLOADRC）
+- [[configobject/UNC/20.15.2/OVERLOADRC]] · 判断对端过载的返回码（OVERLOADRC）
 
 ## 使用实例
 

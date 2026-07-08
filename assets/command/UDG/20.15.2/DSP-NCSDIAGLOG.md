@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NCSDIAGLOG]] · 会话中NETCONF和其它组件的消息交互信息（NCSDIAGLOG）
+- [[configobject/UDG/20.15.2/NCSDIAGLOG]] · 会话中NETCONF和其它组件的消息交互信息（NCSDIAGLOG）
 
 ## 使用实例
 

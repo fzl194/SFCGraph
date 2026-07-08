@@ -47,7 +47,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@HISTALM]] · 历史告警（HISTALM）
+- [[configobject/UDG/20.15.2/HISTALM]] · 历史告警（HISTALM）
 
 ## 使用实例
 

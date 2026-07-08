@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AUTOSCALINGBGPLF]] · BGP入不转板自动化配置模板（AUTOSCALINGBGPLF）
+- [[configobject/UNC/20.15.2/AUTOSCALINGBGPLF]] · BGP入不转板自动化配置模板（AUTOSCALINGBGPLF）
 
 ## 使用实例
 

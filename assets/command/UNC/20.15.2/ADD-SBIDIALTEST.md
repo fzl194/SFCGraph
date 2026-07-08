@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SBIDIALTEST]] · 间接路由拨测用户配置（SBIDIALTEST）
+- [[configobject/UNC/20.15.2/SBIDIALTEST]] · 间接路由拨测用户配置（SBIDIALTEST）
 
 ## 使用实例
 

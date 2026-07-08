@@ -61,7 +61,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RESTHRESHOLD]] · 资源过载和过载恢复阈值（RESTHRESHOLD）
+- [[configobject/UNC/20.15.2/RESTHRESHOLD]] · 资源过载和过载恢复阈值（RESTHRESHOLD）
 
 ## 使用实例
 

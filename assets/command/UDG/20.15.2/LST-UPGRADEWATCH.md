@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@UPGRADEWATCH]] · 升级观察期（UPGRADEWATCH）
+- [[configobject/UDG/20.15.2/UPGRADEWATCH]] · 升级观察期（UPGRADEWATCH）
 
 ## 使用实例
 

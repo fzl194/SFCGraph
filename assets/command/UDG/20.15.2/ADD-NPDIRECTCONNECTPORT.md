@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NPDIRECTCONNECTPORT]] · 多框级联配置（NPDIRECTCONNECTPORT）
+- [[configobject/UDG/20.15.2/NPDIRECTCONNECTPORT]] · 多框级联配置（NPDIRECTCONNECTPORT）
 
 ## 使用实例
 

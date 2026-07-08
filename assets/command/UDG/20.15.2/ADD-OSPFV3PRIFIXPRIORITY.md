@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OSPFV3PRIFIXPRIORITY]] · OSPFv3路由收敛优先级配置（OSPFV3PRIFIXPRIORITY）
+- [[configobject/UDG/20.15.2/OSPFV3PRIFIXPRIORITY]] · OSPFv3路由收敛优先级配置（OSPFV3PRIFIXPRIORITY）
 
 ## 使用实例
 

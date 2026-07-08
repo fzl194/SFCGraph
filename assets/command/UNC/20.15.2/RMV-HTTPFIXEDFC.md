@@ -39,7 +39,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@HTTPFIXEDFC]] · HTTP流控组固定速率流控信息（HTTPFIXEDFC）
+- [[configobject/UNC/20.15.2/HTTPFIXEDFC]] · HTTP流控组固定速率流控信息（HTTPFIXEDFC）
 
 ## 使用实例
 

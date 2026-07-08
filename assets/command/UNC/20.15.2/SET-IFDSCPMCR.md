@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IFDSCPMCR]] · 接口DSCP配置（IFDSCPMCR）
+- [[configobject/UNC/20.15.2/IFDSCPMCR]] · 接口DSCP配置（IFDSCPMCR）
 
 ## 使用实例
 

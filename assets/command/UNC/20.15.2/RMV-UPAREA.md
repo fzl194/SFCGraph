@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPAREA]] · UPF服务区（UPAREA）
+- [[configobject/UNC/20.15.2/UPAREA]] · UPF服务区（UPAREA）
 
 ## 使用实例
 

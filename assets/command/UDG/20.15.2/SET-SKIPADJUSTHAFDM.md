@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SKIPADJUSTHAFDM]] · 跳过调整HAF域开关状态（SKIPADJUSTHAFDM）
+- [[configobject/UDG/20.15.2/SKIPADJUSTHAFDM]] · 跳过调整HAF域开关状态（SKIPADJUSTHAFDM）
 
 ## 使用实例
 

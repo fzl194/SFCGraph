@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PERFEPRPDYN]] · EpRpDyn性能统计对象（PERFEPRPDYN）
+- [[configobject/UNC/20.15.2/PERFEPRPDYN]] · EpRpDyn性能统计对象（PERFEPRPDYN）
 
 ## 使用实例
 

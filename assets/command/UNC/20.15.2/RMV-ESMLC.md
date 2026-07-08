@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ESMLC]] · E-SMLC配置（ESMLC）
+- [[configobject/UNC/20.15.2/ESMLC]] · E-SMLC配置（ESMLC）
 
 ## 使用实例
 

@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPPATHFAULTREST]] · 用户面链路故障恢复功能配置信息（UPPATHFAULTREST）
+- [[configobject/UNC/20.15.2/UPPATHFAULTREST]] · 用户面链路故障恢复功能配置信息（UPPATHFAULTREST）
 
 ## 使用实例
 

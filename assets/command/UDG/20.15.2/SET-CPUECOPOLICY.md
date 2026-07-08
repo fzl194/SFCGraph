@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CPUECOPOLICY]] · 全局的CPU调频和休眠策略（CPUECOPOLICY）
+- [[configobject/UDG/20.15.2/CPUECOPOLICY]] · 全局的CPU调频和休眠策略（CPUECOPOLICY）
 
 ## 使用实例
 

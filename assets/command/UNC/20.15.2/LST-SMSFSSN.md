@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SMSFSSN]] · SMSF本局SSN号（SMSFSSN）
+- [[configobject/UNC/20.15.2/SMSFSSN]] · SMSF本局SSN号（SMSFSSN）
 
 ## 使用实例
 

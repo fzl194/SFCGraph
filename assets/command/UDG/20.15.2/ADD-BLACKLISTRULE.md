@@ -70,7 +70,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@BLACKLISTRULE]] · 黑名单规则（BLACKLISTRULE）
+- [[configobject/UDG/20.15.2/BLACKLISTRULE]] · 黑名单规则（BLACKLISTRULE）
 
 ## 使用实例
 

@@ -61,7 +61,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RUFAULTTOLERANCE]] · 资源单元故障容忍时间（RUFAULTTOLERANCE）
+- [[configobject/UDG/20.15.2/RUFAULTTOLERANCE]] · 资源单元故障容忍时间（RUFAULTTOLERANCE）
 
 ## 使用实例
 

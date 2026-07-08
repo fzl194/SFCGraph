@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SSHCERRORLOG]] · SSH客户端的错误日志（SSHCERRORLOG）
+- [[configobject/UNC/20.15.2/SSHCERRORLOG]] · SSH客户端的错误日志（SSHCERRORLOG）
 
 ## 使用实例
 

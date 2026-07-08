@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGIPAREAGRP]] · 5G IP区域群（NGIPAREAGRP）
+- [[configobject/UNC/20.15.2/NGIPAREAGRP]] · 5G IP区域群（NGIPAREAGRP）
 
 ## 使用实例
 

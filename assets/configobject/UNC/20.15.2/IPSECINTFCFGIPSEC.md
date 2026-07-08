@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@IPSECINTFCFGIPSEC
+type: ConfigObject
+name: IPSECINTFCFGIPSEC（IPsec隧道接口）
+nf: UNC
+version: 20.15.2
+object_name: IPSECINTFCFGIPSEC
+object_kind: entity
+status: active
+---
+
+# IPSECINTFCFGIPSEC（IPsec隧道接口）
+
+## 说明
+
+该命令用于增加IPsec隧道。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-IPSECINTFCFGIPSEC]] · ADD IPSECINTFCFGIPSEC
+- [[command/UNC/20.15.2/LST-IPSECINTFCFGIPSEC]] · LST IPSECINTFCFGIPSEC
+- [[command/UNC/20.15.2/MOD-IPSECINTFCFGIPSEC]] · MOD IPSECINTFCFGIPSEC
+- [[command/UNC/20.15.2/RMV-IPSECINTFCFGIPSEC]] · RMV IPSECINTFCFGIPSEC
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`

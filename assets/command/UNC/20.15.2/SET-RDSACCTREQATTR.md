@@ -82,7 +82,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RDSACCTREQATTR]] · RADIUS计费服务器可选消息属性（RDSACCTREQATTR）
+- [[configobject/UNC/20.15.2/RDSACCTREQATTR]] · RADIUS计费服务器可选消息属性（RDSACCTREQATTR）
 
 ## 使用实例
 

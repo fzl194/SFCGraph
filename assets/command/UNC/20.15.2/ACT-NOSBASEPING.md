@@ -53,7 +53,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NOSBASEPING]] · NOS Base平面网络Ping功能（NOSBASEPING）
+- [[configobject/UNC/20.15.2/NOSBASEPING]] · NOS Base平面网络Ping功能（NOSBASEPING）
 
 ## 使用实例
 

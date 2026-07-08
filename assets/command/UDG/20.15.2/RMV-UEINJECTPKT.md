@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@UEINJECTPKT]] · UE灌包参数（UEINJECTPKT）
+- [[configobject/UDG/20.15.2/UEINJECTPKT]] · UE灌包参数（UEINJECTPKT）
 
 ## 使用实例
 

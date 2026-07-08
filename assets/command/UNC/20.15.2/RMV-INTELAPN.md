@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@INTELAPN]] · 可按携带智能分流关键词进行处理的APN（INTELAPN）
+- [[configobject/UNC/20.15.2/INTELAPN]] · 可按携带智能分流关键词进行处理的APN（INTELAPN）
 
 ## 使用实例
 

@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@NODECPUSTAT]] · Node的CPU信息（NODECPUSTAT）
+- [[configobject/UDG/20.15.2/NODECPUSTAT]] · Node的CPU信息（NODECPUSTAT）
 
 ## 使用实例
 

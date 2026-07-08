@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NGPAGINGPRIPLCY]] · 5G寻呼优先级策略参数配置（NGPAGINGPRIPLCY）
+- [[configobject/UNC/20.15.2/NGPAGINGPRIPLCY]] · 5G寻呼优先级策略参数配置（NGPAGINGPRIPLCY）
 
 ## 使用实例
 

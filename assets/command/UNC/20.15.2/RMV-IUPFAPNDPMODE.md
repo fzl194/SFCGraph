@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IUPFAPNDPMODE]] · I-UPF在特定园区专用APN下的部署模式配置（IUPFAPNDPMODE）
+- [[configobject/UNC/20.15.2/IUPFAPNDPMODE]] · I-UPF在特定园区专用APN下的部署模式配置（IUPFAPNDPMODE）
 
 ## 使用实例
 

@@ -69,7 +69,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RELAYWURLLIST]] · 媒体中继白名单URL列表（RELAYWURLLIST）
+- [[configobject/UDG/20.15.2/RELAYWURLLIST]] · 媒体中继白名单URL列表（RELAYWURLLIST）
 
 ## 使用实例
 

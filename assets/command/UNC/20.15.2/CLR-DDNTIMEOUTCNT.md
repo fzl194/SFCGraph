@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DDNTIMEOUTCNT]] · DDN超时延时删除功能运行信息记录（DDNTIMEOUTCNT）
+- [[configobject/UNC/20.15.2/DDNTIMEOUTCNT]] · DDN超时延时删除功能运行信息记录（DDNTIMEOUTCNT）
 
 ## 使用实例
 

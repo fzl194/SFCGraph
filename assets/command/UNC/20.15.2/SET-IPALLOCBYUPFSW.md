@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IPALLOCBYUPFSW]] · 基于UPF的地址分配开关（IPALLOCBYUPFSW）
+- [[configobject/UNC/20.15.2/IPALLOCBYUPFSW]] · 基于UPF的地址分配开关（IPALLOCBYUPFSW）
 
 ## 使用实例
 

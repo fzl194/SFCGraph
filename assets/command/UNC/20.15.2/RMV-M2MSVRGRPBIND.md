@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@M2MSVRGRPBIND]] · M2M服务器组绑定关系（M2MSVRGRPBIND）
+- [[configobject/UNC/20.15.2/M2MSVRGRPBIND]] · M2M服务器组绑定关系（M2MSVRGRPBIND）
 
 ## 使用实例
 

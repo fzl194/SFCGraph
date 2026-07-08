@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RESELAREAMEM]] · AMF重选功能区域成员（RESELAREAMEM）
+- [[configobject/UNC/20.15.2/RESELAREAMEM]] · AMF重选功能区域成员（RESELAREAMEM）
 
 ## 使用实例
 

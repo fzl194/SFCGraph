@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SRVCCLMTPLCY]] · SRVCC流程限制策略（SRVCCLMTPLCY）
+- [[configobject/UNC/20.15.2/SRVCCLMTPLCY]] · SRVCC流程限制策略（SRVCCLMTPLCY）
 
 ## 使用实例
 

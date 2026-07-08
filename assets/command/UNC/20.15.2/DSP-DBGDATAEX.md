@@ -50,7 +50,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DBGDATAEX]] · 调试信息（DBGDATAEX）
+- [[configobject/UNC/20.15.2/DBGDATAEX]] · 调试信息（DBGDATAEX）
 
 ## 使用实例
 

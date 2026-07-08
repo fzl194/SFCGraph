@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPFRDSSVR]] · 中转UPF与Radius服务器的绑定关系（UPFRDSSVR）
+- [[configobject/UNC/20.15.2/UPFRDSSVR]] · 中转UPF与Radius服务器的绑定关系（UPFRDSSVR）
 
 ## 使用实例
 

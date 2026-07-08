@@ -69,7 +69,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SRANGECHRCFG]] · 小范围CHR生成规则（SRANGECHRCFG）
+- [[configobject/UNC/20.15.2/SRANGECHRCFG]] · 小范围CHR生成规则（SRANGECHRCFG）
 
 ## 使用实例
 

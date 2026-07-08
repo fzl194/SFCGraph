@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@LOGAGENTSTC]] · 日志代理丢弃的日志信息（LOGAGENTSTC）
+- [[configobject/UDG/20.15.2/LOGAGENTSTC]] · 日志代理丢弃的日志信息（LOGAGENTSTC）
 
 ## 使用实例
 

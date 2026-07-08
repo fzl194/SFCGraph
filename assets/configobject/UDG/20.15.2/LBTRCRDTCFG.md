@@ -1,0 +1,28 @@
+---
+id: UDG@20.15.2@ConfigObject@LBTRCRDTCFG
+type: ConfigObject
+name: LBTRCRDTCFG（跟踪重定向）
+nf: UDG
+version: 20.15.2
+object_name: LBTRCRDTCFG
+object_kind: entity
+status: active
+---
+
+# LBTRCRDTCFG（跟踪重定向）
+
+## 说明
+
+该命令用于增加跟踪重定向参数的配置。因为跟踪报文数量过多，导致报文无法在跟踪界面完整显示，建议使用跟踪重定向功能将报文重定向到外部设备。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-LBTRCRDTCFG]] · ADD LBTRCRDTCFG
+- [[command/UDG/20.15.2/LST-LBTRCRDTCFG]] · LST LBTRCRDTCFG
+- [[command/UDG/20.15.2/RMV-LBTRCRDTCFG]] · RMV LBTRCRDTCFG
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/LBTRCRDTCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/LBTRCRDTCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/LBTRCRDTCFG.md`

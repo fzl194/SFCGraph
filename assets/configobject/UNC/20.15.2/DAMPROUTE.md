@@ -1,0 +1,30 @@
+---
+id: UNC@20.15.2@ConfigObject@DAMPROUTE
+type: ConfigObject
+name: DAMPROUTE（振荡抑制路由）
+nf: UNC
+version: 20.15.2
+object_name: DAMPROUTE
+object_kind: entity
+status: active
+---
+
+# DAMPROUTE（振荡抑制路由）
+
+## 说明
+
+该命令用于增加路由振荡抑制的配置参数。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-DAMPROUTE]] · ADD DAMPROUTE
+- [[command/UNC/20.15.2/LST-DAMPROUTE]] · LST DAMPROUTE
+- [[command/UNC/20.15.2/MOD-DAMPROUTE]] · MOD DAMPROUTE
+- [[command/UNC/20.15.2/RMV-DAMPROUTE]] · RMV DAMPROUTE
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`

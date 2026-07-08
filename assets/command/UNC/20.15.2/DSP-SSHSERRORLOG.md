@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SSHSERRORLOG]] · SSH服务器的错误日志（SSHSERRORLOG）
+- [[configobject/UNC/20.15.2/SSHSERRORLOG]] · SSH服务器的错误日志（SSHSERRORLOG）
 
 ## 使用实例
 

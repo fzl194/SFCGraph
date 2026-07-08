@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NETWORK]] · 网络查询（NETWORK）
+- [[configobject/UNC/20.15.2/NETWORK]] · 网络查询（NETWORK）
 
 ## 使用实例
 

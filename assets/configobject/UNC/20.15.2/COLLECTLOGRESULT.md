@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@COLLECTLOGRESULT
+type: ConfigObject
+name: COLLECTLOGRESULT（日志收集执行结果）
+nf: UNC
+version: 20.15.2
+object_name: COLLECTLOGRESULT
+object_kind: query_target
+status: active
+---
+
+# COLLECTLOGRESULT（日志收集执行结果）
+
+## 说明
+
+该命令用于显示日志收集执行结果。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/DSP-COLLECTLOGRESULT]] · DSP COLLECTLOGRESULT
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/COLLECTLOGRESULT.md`

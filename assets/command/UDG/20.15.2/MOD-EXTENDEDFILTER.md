@@ -74,7 +74,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@EXTENDEDFILTER]] · 扩展过滤器（EXTENDEDFILTER）
+- [[configobject/UDG/20.15.2/EXTENDEDFILTER]] · 扩展过滤器（EXTENDEDFILTER）
 
 ## 使用实例
 

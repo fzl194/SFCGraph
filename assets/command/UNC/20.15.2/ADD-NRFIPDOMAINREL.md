@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFIPDOMAINREL]] · BSF索引和IP Domain的关联关系（NRFIPDOMAINREL）
+- [[configobject/UNC/20.15.2/NRFIPDOMAINREL]] · BSF索引和IP Domain的关联关系（NRFIPDOMAINREL）
 
 ## 使用实例
 

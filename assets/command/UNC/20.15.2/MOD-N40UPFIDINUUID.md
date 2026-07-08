@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@N40UPFIDINUUID]] · N40接口非UUID格式与UUID格式的UPF实例标识的映射关系（N40UPFIDINUUID）
+- [[configobject/UNC/20.15.2/N40UPFIDINUUID]] · N40接口非UUID格式与UUID格式的UPF实例标识的映射关系（N40UPFIDINUUID）
 
 ## 使用实例
 

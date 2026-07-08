@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DEADLOOPINFO]] · RU死循环信息（DEADLOOPINFO）
+- [[configobject/UDG/20.15.2/DEADLOOPINFO]] · RU死循环信息（DEADLOOPINFO）
 
 ## 使用实例
 

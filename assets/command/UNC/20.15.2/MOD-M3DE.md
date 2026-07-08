@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@M3DE]] · M3UA目的实体（M3DE）
+- [[configobject/UNC/20.15.2/M3DE]] · M3UA目的实体（M3DE）
 
 ## 使用实例
 

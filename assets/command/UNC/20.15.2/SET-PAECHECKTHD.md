@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PAECHECKTHD]] · PAE寻呼反压流控检测阈值（PAECHECKTHD）
+- [[configobject/UNC/20.15.2/PAECHECKTHD]] · PAE寻呼反压流控检测阈值（PAECHECKTHD）
 
 ## 使用实例
 

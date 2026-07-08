@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@OMIP]] · OM IP（OMIP）
+- [[configobject/UDG/20.15.2/OMIP]] · OM IP（OMIP）
 
 ## 使用实例
 

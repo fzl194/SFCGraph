@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IMSIFORSMSC]] · 融合短消息功能共部署SMSC支持的IMSI号段配置（IMSIFORSMSC）
+- [[configobject/UNC/20.15.2/IMSIFORSMSC]] · 融合短消息功能共部署SMSC支持的IMSI号段配置（IMSIFORSMSC）
 
 ## 使用实例
 

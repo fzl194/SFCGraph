@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ICMPSECURITY]] · ICMP安全配置（ICMPSECURITY）
+- [[configobject/UDG/20.15.2/ICMPSECURITY]] · ICMP安全配置（ICMPSECURITY）
 
 ## 使用实例
 

@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@AFDNSSERVERALL]] · 所有防欺诈可信DNS服务器（AFDNSSERVERALL）
+- [[configobject/UDG/20.15.2/AFDNSSERVERALL]] · 所有防欺诈可信DNS服务器（AFDNSSERVERALL）
 
 ## 使用实例
 

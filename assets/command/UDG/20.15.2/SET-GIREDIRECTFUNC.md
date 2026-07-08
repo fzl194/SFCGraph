@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@GIREDIRECTFUNC]] · 全局Gi重定向信息（GIREDIRECTFUNC）
+- [[configobject/UDG/20.15.2/GIREDIRECTFUNC]] · 全局Gi重定向信息（GIREDIRECTFUNC）
 
 ## 使用实例
 

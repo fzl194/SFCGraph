@@ -1,0 +1,30 @@
+---
+id: UDG@20.15.2@ConfigObject@MATCHCOMMUNITYFILTER
+type: ConfigObject
+name: MATCHCOMMUNITYFILTER（匹配团体属性过滤器）
+nf: UDG
+version: 20.15.2
+object_name: MATCHCOMMUNITYFILTER
+object_kind: entity
+status: active
+---
+
+# MATCHCOMMUNITYFILTER（匹配团体属性过滤器）
+
+## 说明
+
+该命令用于添加匹配团体属性过滤器。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-MATCHCOMMUNITYFILTER]] · ADD MATCHCOMMUNITYFILTER
+- [[command/UDG/20.15.2/LST-MATCHCOMMUNITYFILTER]] · LST MATCHCOMMUNITYFILTER
+- [[command/UDG/20.15.2/MOD-MATCHCOMMUNITYFILTER]] · MOD MATCHCOMMUNITYFILTER
+- [[command/UDG/20.15.2/RMV-MATCHCOMMUNITYFILTER]] · RMV MATCHCOMMUNITYFILTER
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`

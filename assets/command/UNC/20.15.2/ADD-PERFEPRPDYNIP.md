@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PERFEPRPDYNIP]] · EpRpDyn对象的IP地址（PERFEPRPDYNIP）
+- [[configobject/UNC/20.15.2/PERFEPRPDYNIP]] · EpRpDyn对象的IP地址（PERFEPRPDYNIP）
 
 ## 使用实例
 

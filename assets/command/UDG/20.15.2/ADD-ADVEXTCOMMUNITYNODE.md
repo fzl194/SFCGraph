@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@ADVEXTCOMMUNITYNODE]] · 高级扩展团体属性过滤器节点（ADVEXTCOMMUNITYNODE）
+- [[configobject/UDG/20.15.2/ADVEXTCOMMUNITYNODE]] · 高级扩展团体属性过滤器节点（ADVEXTCOMMUNITYNODE）
 
 ## 使用实例
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PDUTRIGGER]] · PDU会话级的trigger参数（PDUTRIGGER）
+- [[configobject/UNC/20.15.2/PDUTRIGGER]] · PDU会话级的trigger参数（PDUTRIGGER）
 
 ## 使用实例
 

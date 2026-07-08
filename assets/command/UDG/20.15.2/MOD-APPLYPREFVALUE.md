@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@APPLYPREFVALUE]] · BGP路由首选值设置（APPLYPREFVALUE）
+- [[configobject/UDG/20.15.2/APPLYPREFVALUE]] · BGP路由首选值设置（APPLYPREFVALUE）
 
 ## 使用实例
 

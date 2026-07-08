@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CFGTABLEINDEX]] · CFG表索引信息和字段信息（CFGTABLEINDEX）
+- [[configobject/UNC/20.15.2/CFGTABLEINDEX]] · CFG表索引信息和字段信息（CFGTABLEINDEX）
 
 ## 使用实例
 

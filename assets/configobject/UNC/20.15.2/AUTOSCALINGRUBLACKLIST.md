@@ -1,0 +1,28 @@
+---
+id: UNC@20.15.2@ConfigObject@AUTOSCALINGRUBLACKLIST
+type: ConfigObject
+name: AUTOSCALINGRUBLACKLIST（自动部署RU黑名单）
+nf: UNC
+version: 20.15.2
+object_name: AUTOSCALINGRUBLACKLIST
+object_kind: entity
+status: active
+---
+
+# AUTOSCALINGRUBLACKLIST（自动部署RU黑名单）
+
+## 说明
+
+该命令用于向自动化配置RU黑名单中添加成员，所有自动化配置将不会在黑名单列表里的RU上生成。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-AUTOSCALINGRUBLACKLIST]] · ADD AUTOSCALINGRUBLACKLIST
+- [[command/UNC/20.15.2/LST-AUTOSCALINGRUBLACKLIST]] · LST AUTOSCALINGRUBLACKLIST
+- [[command/UNC/20.15.2/RMV-AUTOSCALINGRUBLACKLIST]] · RMV AUTOSCALINGRUBLACKLIST
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGRUBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGRUBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGRUBLACKLIST.md`

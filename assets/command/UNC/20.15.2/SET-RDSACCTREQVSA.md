@@ -82,7 +82,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@RDSACCTREQVSA]] · RADIUS计费服务器组的私有扩展属性（RDSACCTREQVSA）
+- [[configobject/UNC/20.15.2/RDSACCTREQVSA]] · RADIUS计费服务器组的私有扩展属性（RDSACCTREQVSA）
 
 ## 使用实例
 

@@ -1,0 +1,42 @@
+---
+id: UDG@20.15.2@ConfigObject@INNERTLSMODE
+type: ConfigObject
+name: INNERTLSMODE（TLS模式）
+nf: UDG
+version: 20.15.2
+object_name: INNERTLSMODE
+object_kind: global_setting
+status: active
+---
+
+# INNERTLSMODE（TLS模式）
+
+## 说明
+
+![](设置TLS模式（SET INNERTLSMODE）_63673351.assets/notice_3.0-zh-cn.png)
+
+SERVICETYPE选择HAFETCD后，执行该命令会导致整系统复位。
+
+该命令用于根据服务类型设置TLS模式。
+
+> **说明**
+> - 该命令执行后立即生效。
+>
+> - FusionStage裸机场景，本命令配置不生效。
+>
+> - 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+>
+> | SERVICETYPE | TLSMODE |
+> | --- | --- |
+> | HAFETCD | DEFAULT |
+> | CMF | DEFAULT |
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/LST-INNERTLSMODE]] · LST INNERTLSMODE
+- [[command/UDG/20.15.2/SET-INNERTLSMODE]] · SET INNERTLSMODE
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/INNERTLSMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/INNERTLSMODE.md`

@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AMFEVENTCMPT]] · 事件订阅通知消息的兼容性控制参数（AMFEVENTCMPT）
+- [[configobject/UNC/20.15.2/AMFEVENTCMPT]] · 事件订阅通知消息的兼容性控制参数（AMFEVENTCMPT）
 
 ## 使用实例
 

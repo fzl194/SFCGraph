@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NCARSTSSNSTATS]] · NETCONF会话统计信息（NCARSTSSNSTATS）
+- [[configobject/UNC/20.15.2/NCARSTSSNSTATS]] · NETCONF会话统计信息（NCARSTSSNSTATS）
 
 ## 使用实例
 

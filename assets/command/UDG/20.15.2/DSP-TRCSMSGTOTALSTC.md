@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TRCSMSGTOTALSTC]] · 跟踪中心消息统计信息（TRCSMSGTOTALSTC）
+- [[configobject/UDG/20.15.2/TRCSMSGTOTALSTC]] · 跟踪中心消息统计信息（TRCSMSGTOTALSTC）
 
 ## 使用实例
 

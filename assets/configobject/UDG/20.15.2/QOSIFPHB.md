@@ -1,0 +1,28 @@
+---
+id: UDG@20.15.2@ConfigObject@QOSIFPHB
+type: ConfigObject
+name: QOSIFPHB（禁止QoS优先级映射的类型）
+nf: UDG
+version: 20.15.2
+object_name: QOSIFPHB
+object_kind: entity
+status: active
+---
+
+# QOSIFPHB（禁止QoS优先级映射的类型）
+
+## 说明
+
+该命令用于添加接口下的禁止PHB映射的实例。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-QOSIFPHB]] · ADD QOSIFPHB
+- [[command/UDG/20.15.2/LST-QOSIFPHB]] · LST QOSIFPHB
+- [[command/UDG/20.15.2/RMV-QOSIFPHB]] · RMV QOSIFPHB
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/QOSIFPHB.md`
+- 原始手册：`evidence/UDG/20.15.2/QOSIFPHB.md`
+- 原始手册：`evidence/UDG/20.15.2/QOSIFPHB.md`

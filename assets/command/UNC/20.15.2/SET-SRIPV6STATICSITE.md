@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SRIPV6STATICSITE]] · IPv6静态路由全局属性（SRIPV6STATICSITE）
+- [[configobject/UNC/20.15.2/SRIPV6STATICSITE]] · IPv6静态路由全局属性（SRIPV6STATICSITE）
 
 ## 使用实例
 

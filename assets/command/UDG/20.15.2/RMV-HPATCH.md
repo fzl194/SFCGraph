@@ -38,7 +38,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@HPATCH]] · 热补丁（HPATCH）
+- [[configobject/UDG/20.15.2/HPATCH]] · 热补丁（HPATCH）
 
 ## 使用实例
 

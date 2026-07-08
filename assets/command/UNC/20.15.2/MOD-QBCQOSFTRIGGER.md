@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@QBCQOSFTRIGGER]] · QBC计费QoS Flow级的trigger参数（QBCQOSFTRIGGER）
+- [[configobject/UNC/20.15.2/QBCQOSFTRIGGER]] · QBC计费QoS Flow级的trigger参数（QBCQOSFTRIGGER）
 
 ## 使用实例
 

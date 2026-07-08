@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@IMSIHSS]] · IMSI-HSS对应关系（IMSIHSS）
+- [[configobject/UNC/20.15.2/IMSIHSS]] · IMSI-HSS对应关系（IMSIHSS）
 
 ## 使用实例
 

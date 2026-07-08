@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@DMAVPDICT]] · Diameter数据字典中的AVP参数（DMAVPDICT）
+- [[configobject/UNC/20.15.2/DMAVPDICT]] · Diameter数据字典中的AVP参数（DMAVPDICT）
 
 ## 使用实例
 

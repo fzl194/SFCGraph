@@ -1,0 +1,34 @@
+---
+id: UDG@20.15.2@ConfigObject@UPDIAMPEERADDR
+type: ConfigObject
+name: UPDIAMPEERADDR（Diameter对端地址）
+nf: UDG
+version: 20.15.2
+object_name: UPDIAMPEERADDR
+object_kind: entity
+applicable_nf:
+- UPF
+status: active
+---
+
+# UPDIAMPEERADDR（Diameter对端地址）
+
+## 说明
+
+**适用NF：UPF**
+
+该命令用于增加Diameter链路对端的地址信息，配置Diameter链路对端的地址类型、IP、端口号或端点信息。
+
+该命令和DRA等Diameter主机配合使用，指定这些服务器的地址信息，地址分为IP地址和SCTP端点地址。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/ADD-UPDIAMPEERADDR]] · ADD UPDIAMPEERADDR
+- [[command/UDG/20.15.2/LST-UPDIAMPEERADDR]] · LST UPDIAMPEERADDR
+- [[command/UDG/20.15.2/RMV-UPDIAMPEERADDR]] · RMV UPDIAMPEERADDR
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/UPDIAMPEERADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/UPDIAMPEERADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/UPDIAMPEERADDR.md`

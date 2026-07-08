@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@DFSRPAIRMEM]] · 双发选收结对成员配置（DFSRPAIRMEM）
+- [[configobject/UDG/20.15.2/DFSRPAIRMEM]] · 双发选收结对成员配置（DFSRPAIRMEM）
 
 ## 使用实例
 

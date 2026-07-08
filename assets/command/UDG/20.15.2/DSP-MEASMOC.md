@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MEASMOC]] · 话统测量对象类模型（MEASMOC）
+- [[configobject/UDG/20.15.2/MEASMOC]] · 话统测量对象类模型（MEASMOC）
 
 ## 使用实例
 

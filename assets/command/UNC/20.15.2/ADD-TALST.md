@@ -64,7 +64,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@TALST]] · 跟踪区列表（TALST）
+- [[configobject/UNC/20.15.2/TALST]] · 跟踪区列表（TALST）
 
 ## 使用实例
 

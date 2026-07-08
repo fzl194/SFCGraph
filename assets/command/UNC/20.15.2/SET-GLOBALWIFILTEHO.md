@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@GLOBALWIFILTEHO]] · 全局E-UTRAN和WLAN互操作控制属性（GLOBALWIFILTEHO）
+- [[configobject/UNC/20.15.2/GLOBALWIFILTEHO]] · 全局E-UTRAN和WLAN互操作控制属性（GLOBALWIFILTEHO）
 
 ## 使用实例
 

@@ -146,12 +146,14 @@ def project_command(rec: dict, edges: dict, config_objs: dict, task_refs: dict) 
     objs = edges.get(cid, [])
     if objs:
         parts += ["## 操作的配置对象", ""]
+        nf = rec.get("nf"); ver = rec.get("version")
         for oid in objs:
             o = config_objs.get(oid, {})
             local = str(oid).split('@')[-1]
             zh = o.get("object_name_zh") or o.get("object_name") or ""
             label = f"{zh}（{local}）" if zh else local
-            parts.append(f"- [[{oid}]] · {label}")
+            ref = f"configobject/{nf}/{ver}/{sanitize(local)}"   # assets 根路径（ConfigObject md 已建）
+            parts.append(f"- [[{ref}]] · {label}")
         parts.append("")
 
     tids = task_refs.get(cid, [])

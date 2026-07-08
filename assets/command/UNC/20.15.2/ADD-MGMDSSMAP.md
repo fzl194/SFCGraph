@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@MGMDSSMAP]] · IGMP SSM映射配置（MGMDSSMAP）
+- [[configobject/UNC/20.15.2/MGMDSSMAP]] · IGMP SSM映射配置（MGMDSSMAP）
 
 ## 使用实例
 

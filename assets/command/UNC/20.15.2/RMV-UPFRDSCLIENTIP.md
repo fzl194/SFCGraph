@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@UPFRDSCLIENTIP]] · 中转UPF与Radius客户端的绑定关系（UPFRDSCLIENTIP）
+- [[configobject/UNC/20.15.2/UPFRDSCLIENTIP]] · 中转UPF与Radius客户端的绑定关系（UPFRDSCLIENTIP）
 
 ## 使用实例
 

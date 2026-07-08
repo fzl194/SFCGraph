@@ -75,7 +75,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@URR]] · URR（URR）
+- [[configobject/UNC/20.15.2/URR]] · URR（URR）
 
 ## 关联任务
 

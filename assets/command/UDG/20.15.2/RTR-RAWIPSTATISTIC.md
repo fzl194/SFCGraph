@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RAWIPSTATISTIC]] · RawIP报文统计（RAWIPSTATISTIC）
+- [[configobject/UDG/20.15.2/RAWIPSTATISTIC]] · RawIP报文统计（RAWIPSTATISTIC）
 
 ## 使用实例
 

@@ -44,7 +44,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@UPGTSK]] · 升级/补丁任务（UPGTSK）
+- [[configobject/UDG/20.15.2/UPGTSK]] · 升级/补丁任务（UPGTSK）
 
 ## 使用实例
 

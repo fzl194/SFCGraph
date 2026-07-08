@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CDRPOOLTHRSH]] · 话单池空间告警阈值（CDRPOOLTHRSH）
+- [[configobject/UNC/20.15.2/CDRPOOLTHRSH]] · 话单池空间告警阈值（CDRPOOLTHRSH）
 
 ## 使用实例
 

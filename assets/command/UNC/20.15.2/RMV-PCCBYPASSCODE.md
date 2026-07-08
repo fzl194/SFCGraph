@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PCCBYPASSCODE]] · PCC故障场景维持BYPASS状态码配置（PCCBYPASSCODE）
+- [[configobject/UNC/20.15.2/PCCBYPASSCODE]] · PCC故障场景维持BYPASS状态码配置（PCCBYPASSCODE）
 
 ## 使用实例
 

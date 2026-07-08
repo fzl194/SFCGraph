@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ETCDTTL]] · 用于仲裁目的的key的租约信息（ETCDTTL）
+- [[configobject/UNC/20.15.2/ETCDTTL]] · 用于仲裁目的的key的租约信息（ETCDTTL）
 
 ## 使用实例
 

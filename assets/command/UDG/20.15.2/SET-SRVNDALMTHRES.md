@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@SRVNDALMTHRES]] · 业务节点资源不足告警阈值（SRVNDALMTHRES）
+- [[configobject/UDG/20.15.2/SRVNDALMTHRES]] · 业务节点资源不足告警阈值（SRVNDALMTHRES）
 
 ## 使用实例
 

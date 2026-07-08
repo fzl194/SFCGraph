@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@USRSECAUTH]] · 二次授权用户（USRSECAUTH）
+- [[configobject/UNC/20.15.2/USRSECAUTH]] · 二次授权用户（USRSECAUTH）
 
 ## 使用实例
 

@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@PCCCHGMODEBYPCFID]] · 基于PCF的计费策略接口类型（PCCCHGMODEBYPCFID）
+- [[configobject/UNC/20.15.2/PCCCHGMODEBYPCFID]] · 基于PCF的计费策略接口类型（PCCCHGMODEBYPCFID）
 
 ## 使用实例
 

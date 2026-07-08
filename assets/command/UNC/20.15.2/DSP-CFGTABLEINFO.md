@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CFGTABLEINFO]] · CFG表信息和内存信息（CFGTABLEINFO）
+- [[configobject/UNC/20.15.2/CFGTABLEINFO]] · CFG表信息和内存信息（CFGTABLEINFO）
 
 ## 使用实例
 

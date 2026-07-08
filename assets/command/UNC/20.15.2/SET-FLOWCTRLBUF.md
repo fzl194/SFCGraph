@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@FLOWCTRLBUF]] · 流量控制缓存配置（FLOWCTRLBUF）
+- [[configobject/UNC/20.15.2/FLOWCTRLBUF]] · 流量控制缓存配置（FLOWCTRLBUF）
 
 ## 使用实例
 

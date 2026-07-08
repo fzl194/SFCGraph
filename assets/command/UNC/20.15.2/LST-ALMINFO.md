@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@ALMINFO]] · 告警配置信息（ALMINFO）
+- [[configobject/UNC/20.15.2/ALMINFO]] · 告警配置信息（ALMINFO）
 
 ## 使用实例
 

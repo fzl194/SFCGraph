@@ -66,7 +66,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@BANDWIDTHMNG]] · 带宽管理参数（BANDWIDTHMNG）
+- [[configobject/UDG/20.15.2/BANDWIDTHMNG]] · 带宽管理参数（BANDWIDTHMNG）
 
 ## 关联任务
 

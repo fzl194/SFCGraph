@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@TAIGROUPBINDING]] · TAC号段与TAI组的绑定关系（TAIGROUPBINDING）
+- [[configobject/UDG/20.15.2/TAIGROUPBINDING]] · TAC号段与TAI组的绑定关系（TAIGROUPBINDING）
 
 ## 使用实例
 

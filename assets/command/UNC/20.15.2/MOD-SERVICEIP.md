@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SERVICEIP]] · 业务IP（SERVICEIP）
+- [[configobject/UNC/20.15.2/SERVICEIP]] · 业务IP（SERVICEIP）
 
 ## 使用实例
 

@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NBIOTRATVALUE]] · NB-IoT终端配置的RAT值（NBIOTRATVALUE）
+- [[configobject/UNC/20.15.2/NBIOTRATVALUE]] · NB-IoT终端配置的RAT值（NBIOTRATVALUE）
 
 ## 使用实例
 

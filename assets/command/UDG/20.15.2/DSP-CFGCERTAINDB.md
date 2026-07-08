@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CFGCERTAINDB]] · 指定DB表数据（CFGCERTAINDB）
+- [[configobject/UDG/20.15.2/CFGCERTAINDB]] · 指定DB表数据（CFGCERTAINDB）
 
 ## 使用实例
 

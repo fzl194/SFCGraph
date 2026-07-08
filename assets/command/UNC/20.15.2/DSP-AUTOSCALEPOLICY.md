@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@AUTOSCALEPOLICY]] · 自动弹性策略状态（AUTOSCALEPOLICY）
+- [[configobject/UNC/20.15.2/AUTOSCALEPOLICY]] · 自动弹性策略状态（AUTOSCALEPOLICY）
 
 ## 使用实例
 

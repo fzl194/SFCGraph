@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MMLCFGDOMAIN]] · 批量设置绑定域信息（MMLCFGDOMAIN）
+- [[configobject/UDG/20.15.2/MMLCFGDOMAIN]] · 批量设置绑定域信息（MMLCFGDOMAIN）
 
 ## 使用实例
 

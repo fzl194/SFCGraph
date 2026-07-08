@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RELAYIPBINDING]] · 媒体中继服务IP绑定配置（RELAYIPBINDING）
+- [[configobject/UDG/20.15.2/RELAYIPBINDING]] · 媒体中继服务IP绑定配置（RELAYIPBINDING）
 
 ## 使用实例
 

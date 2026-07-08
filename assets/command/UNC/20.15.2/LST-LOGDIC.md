@@ -39,7 +39,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@LOGDIC]] · 日志模型信息（LOGDIC）
+- [[configobject/UNC/20.15.2/LOGDIC]] · 日志模型信息（LOGDIC）
 
 ## 使用实例
 

@@ -36,7 +36,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@VNFMODE]] · VNF部署模式（VNFMODE）
+- [[configobject/UNC/20.15.2/VNFMODE]] · VNF部署模式（VNFMODE）
 
 ## 使用实例
 

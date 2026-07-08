@@ -1,0 +1,32 @@
+---
+id: UNC@20.15.2@ConfigObject@NRFPROXYSMF
+type: ConfigObject
+name: NRFPROXYSMF（NRF管理的ProxySMF）
+nf: UNC
+version: 20.15.2
+object_name: NRFPROXYSMF
+object_kind: entity
+applicable_nf:
+- NRF
+status: active
+---
+
+# NRFPROXYSMF（NRF管理的ProxySMF）
+
+## 说明
+
+**适用NF：NRF**
+
+该命令用于增加本NRF管理的ProxySMF，对于国际漫游业务，通过本命令配置的ProxySMF可以使NRF在服务发现流程中识别是否是ProxySMF。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-NRFPROXYSMF]] · ADD NRFPROXYSMF
+- [[command/UNC/20.15.2/LST-NRFPROXYSMF]] · LST NRFPROXYSMF
+- [[command/UNC/20.15.2/RMV-NRFPROXYSMF]] · RMV NRFPROXYSMF
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/NRFPROXYSMF.md`
+- 原始手册：`evidence/UNC/20.15.2/NRFPROXYSMF.md`
+- 原始手册：`evidence/UNC/20.15.2/NRFPROXYSMF.md`

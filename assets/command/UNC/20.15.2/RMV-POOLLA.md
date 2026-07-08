@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@POOLLA]] · POOL LA配置信息（POOLLA）
+- [[configobject/UNC/20.15.2/POOLLA]] · POOL LA配置信息（POOLLA）
 
 ## 使用实例
 

@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NSSFDFTNSMAP]] · 漫游切片默认映射配置（NSSFDFTNSMAP）
+- [[configobject/UNC/20.15.2/NSSFDFTNSMAP]] · 漫游切片默认映射配置（NSSFDFTNSMAP）
 
 ## 使用实例
 

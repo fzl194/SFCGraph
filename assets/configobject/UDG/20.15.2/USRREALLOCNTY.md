@@ -1,0 +1,31 @@
+---
+id: UDG@20.15.2@ConfigObject@USRREALLOCNTY
+type: ConfigObject
+name: USRREALLOCNTY（主动触发用户位置实时通知功能）
+nf: UDG
+version: 20.15.2
+object_name: USRREALLOCNTY
+object_kind: global_setting
+applicable_nf:
+- PGW-U
+- UPF
+status: active
+---
+
+# USRREALLOCNTY（主动触发用户位置实时通知功能）
+
+## 说明
+
+**适用NF：PGW-U、UPF**
+
+该命令用于设置主动触发用户位置实时通知功能。
+
+## 操作本对象的命令
+
+- [[command/UDG/20.15.2/LST-USRREALLOCNTY]] · LST USRREALLOCNTY
+- [[command/UDG/20.15.2/SET-USRREALLOCNTY]] · SET USRREALLOCNTY
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/USRREALLOCNTY.md`
+- 原始手册：`evidence/UDG/20.15.2/USRREALLOCNTY.md`

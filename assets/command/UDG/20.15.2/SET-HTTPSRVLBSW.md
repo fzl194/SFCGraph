@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@HTTPSRVLBSW]] · HTTP服务端负载重均衡功能（HTTPSRVLBSW）
+- [[configobject/UDG/20.15.2/HTTPSRVLBSW]] · HTTP服务端负载重均衡功能（HTTPSRVLBSW）
 
 ## 使用实例
 

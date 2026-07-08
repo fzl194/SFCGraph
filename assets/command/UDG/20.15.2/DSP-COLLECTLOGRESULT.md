@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@COLLECTLOGRESULT]] · 日志收集执行结果（COLLECTLOGRESULT）
+- [[configobject/UDG/20.15.2/COLLECTLOGRESULT]] · 日志收集执行结果（COLLECTLOGRESULT）
 
 ## 使用实例
 

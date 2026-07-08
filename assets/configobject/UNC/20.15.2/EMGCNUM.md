@@ -1,0 +1,33 @@
+---
+id: UNC@20.15.2@ConfigObject@EMGCNUM
+type: ConfigObject
+name: EMGCNUM（紧急号码信息表记录）
+nf: UNC
+version: 20.15.2
+object_name: EMGCNUM
+object_kind: entity
+applicable_nf:
+- SGSN
+- MME
+status: active
+---
+
+# EMGCNUM（紧急号码信息表记录）
+
+## 说明
+
+**适用网元：SGSN、MME**
+
+此命令用于配置紧急呼叫号码。系统在给MS发送ATTACH ACCEPT消息和TAU ACCEPT消息时，会将配置的MCC的紧急呼叫号码携带在消息中发送给MS。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/ADD-EMGCNUM]] · ADD EMGCNUM
+- [[command/UNC/20.15.2/LST-EMGCNUM]] · LST EMGCNUM
+- [[command/UNC/20.15.2/RMV-EMGCNUM]] · RMV EMGCNUM
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/EMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/EMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/EMGCNUM.md`

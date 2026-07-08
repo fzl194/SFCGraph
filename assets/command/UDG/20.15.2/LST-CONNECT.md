@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@CONNECT]] · 网元长连接信息（CONNECT）
+- [[configobject/UDG/20.15.2/CONNECT]] · 网元长连接信息（CONNECT）
 
 ## 使用实例
 

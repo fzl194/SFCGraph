@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@NRFFRCAVLNF]] · 强制可用NF实例（NRFFRCAVLNF）
+- [[configobject/UNC/20.15.2/NRFFRCAVLNF]] · 强制可用NF实例（NRFFRCAVLNF）
 
 ## 使用实例
 

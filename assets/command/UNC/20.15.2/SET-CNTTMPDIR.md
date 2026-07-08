@@ -47,7 +47,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@CNTTMPDIR]] · 容器引擎临时目录（CNTTMPDIR）
+- [[configobject/UNC/20.15.2/CNTTMPDIR]] · 容器引擎临时目录（CNTTMPDIR）
 
 ## 使用实例
 

@@ -1,0 +1,24 @@
+---
+id: UNC@20.15.2@ConfigObject@FEIDBGCMD
+type: ConfigObject
+name: FEIDBGCMD（FEI调试命令）
+nf: UNC
+version: 20.15.2
+object_name: FEIDBGCMD
+object_kind: action
+status: active
+---
+
+# FEIDBGCMD（FEI调试命令）
+
+## 说明
+
+该命令用于在VNRS_VNFC上执行FEI调试命令。
+
+## 操作本对象的命令
+
+- [[command/UNC/20.15.2/OPR-FEIDBGCMD]] · OPR FEIDBGCMD
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/FEIDBGCMD.md`

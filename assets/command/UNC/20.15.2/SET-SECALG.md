@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UNC@20.15.2@ConfigObject@SECALG]] · 安全算法（SECALG）
+- [[configobject/UNC/20.15.2/SECALG]] · 安全算法（SECALG）
 
 ## 使用实例
 

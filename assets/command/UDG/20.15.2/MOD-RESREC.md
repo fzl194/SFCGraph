@@ -69,7 +69,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@RESREC]] · DNS资源记录（RESREC）
+- [[configobject/UDG/20.15.2/RESREC]] · DNS资源记录（RESREC）
 
 ## 使用实例
 

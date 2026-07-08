@@ -36,7 +36,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[UDG@20.15.2@ConfigObject@MEASUNIT]] · 测量指标模型（MEASUNIT）
+- [[configobject/UDG/20.15.2/MEASUNIT]] · 测量指标模型（MEASUNIT）
 
 ## 使用实例
 
