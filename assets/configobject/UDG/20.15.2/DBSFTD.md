@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DBSFTD.md`
+- 原始手册：`evidence/UDG/20.15.2/发送CSDB的软件调试命令(STR-DBSFTD)_80429701.md`

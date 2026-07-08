@@ -96,4 +96,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSUBDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询签约数据纠正参数(LST-SMSUBDATA)_72225357.md`

@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-EXEMPTSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询豁免业务（LST-EXEMPTSERVICE）_81398991.md`

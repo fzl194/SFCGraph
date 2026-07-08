@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMPEERADDR.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMPEERADDR.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMPEERADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter对端地址（RMV-UPDIAMPEERADDR）_97080149.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter对端地址（ADD-UPDIAMPEERADDR）_45195172.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter对端地址（LST-UPDIAMPEERADDR）_45432688.md`

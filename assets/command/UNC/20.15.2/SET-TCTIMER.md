@@ -66,4 +66,4 @@ SET TCTIMER:TCTIMERLEN=3,TCMODE=FIXED;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-TCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/设置TC定时器（SET-TCTIMER）_09897236.md`

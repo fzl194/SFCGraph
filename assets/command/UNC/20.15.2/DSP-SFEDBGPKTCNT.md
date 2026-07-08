@@ -64,4 +64,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SFEDBGPKTCNT.md`
+- 原始手册：`evidence/UNC/20.15.2/SFE报文统计（DSP-SFEDBGPKTCNT）_00866581.md`

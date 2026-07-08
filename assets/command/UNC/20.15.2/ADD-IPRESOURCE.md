@@ -89,4 +89,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IPRESOURCE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP资源（ADD-IPRESOURCE）_51174282.md`

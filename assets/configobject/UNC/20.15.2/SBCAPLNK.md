@@ -32,8 +32,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SBc链路(MOD-SBCAPLNK)_72226053.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SBc链路(RMV-SBCAPLNK)_26146374.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SBc链路(ADD-SBCAPLNK)_72345973.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SBc链路状态(DSP-SBCAPLNK)_72345975.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SBc链路(LST-SBCAPLNK)_26306186.md`

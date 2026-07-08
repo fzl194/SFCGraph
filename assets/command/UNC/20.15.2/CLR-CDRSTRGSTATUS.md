@@ -59,4 +59,4 @@ CLR CDRSTRGSTATUS: PODNAME="PodName";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-CDRSTRGSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/清除话单缓存目录状态（CLR-CDRSTRGSTATUS）_70712108.md`

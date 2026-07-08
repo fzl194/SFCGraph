@@ -59,4 +59,4 @@ RMV QBCPDUTRIGGER: CCTMPLTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-QBCPDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QBC计费PDU会话级的trigger参数（RMV-QBCPDUTRIGGER）_09651494.md`

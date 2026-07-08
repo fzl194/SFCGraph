@@ -62,4 +62,4 @@ ADD APNNICHARACT: APNNI="example1.com", RSVIDLEUSER=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNNICHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI属性配置信息(ADD-APNNICHARACT)_72345265.md`

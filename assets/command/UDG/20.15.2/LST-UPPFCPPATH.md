@@ -73,4 +73,4 @@ PFCP路径配置
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPPFCPPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径相关属性（LST-UPPFCPPATH）_82837241.md`

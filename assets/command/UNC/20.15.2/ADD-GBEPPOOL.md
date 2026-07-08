@@ -71,4 +71,4 @@ ADD GBEPPOOL: IPTYPE=IPV4, IPV4="192.168.4.101", DESC="DEFAULT";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GBEPPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP地址到地址池(ADD-GBEPPOOL)_26145998.md`

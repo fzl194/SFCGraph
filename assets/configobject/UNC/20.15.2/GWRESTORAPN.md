@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GWRESTORAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/GWRESTORAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/GWRESTORAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网关容灾APN(RMV-GWRESTORAPN)_26305892.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网关容灾APN(ADD-GWRESTORAPN)_72225761.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网关容灾APN(LST-GWRESTORAPN)_72345683.md`

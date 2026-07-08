@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFAMFREGIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFAMFREGIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFAMFREGIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFAMFREGIDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF区域标识路由（MOD-NRFAMFREGIDRT）_09654179.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF区域标识路由（RMV-NRFAMFREGIDRT）_09651548.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF区域标识路由（ADD-NRFAMFREGIDRT）_09653041.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF区域标识路由（LST-NRFAMFREGIDRT）_09653756.md`

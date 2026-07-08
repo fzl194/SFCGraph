@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DHCPCLIENTSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCPv4客户端报文统计（DSP-DHCPCLIENTSTC）_00601349.md`

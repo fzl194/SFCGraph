@@ -52,4 +52,4 @@ RTR VOLTEMOSALMTHD:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-VOLTEMOSALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复异常MOS告警阈值为系统初始设置值（RTR-VOLTEMOSALMTHD）_69418600.md`

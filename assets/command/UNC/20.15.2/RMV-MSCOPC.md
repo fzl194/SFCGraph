@@ -57,4 +57,4 @@ RMV MSCOPC: OPX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MSCOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MSC信令点(RMV-MSCOPC)_28234925.md`

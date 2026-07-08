@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-HTROFCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示HTR局向信息(DSP-HTROFCINFO)_26305956.md`

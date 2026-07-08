@@ -57,4 +57,4 @@ SET QOSPHB:DSNAME="default",PHBTYPE=8021p,PHBVALUE=3,SERVICECLASS=be,COLOR=green
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-QOSPHB.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS-PHB（SET-QOSPHB）_00840685.md`

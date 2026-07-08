@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSVOPS.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSVOPS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VoPS配置(LST-IMSVOPS)_26146112.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VoPS配置(SET-IMSVOPS)_72345711.md`

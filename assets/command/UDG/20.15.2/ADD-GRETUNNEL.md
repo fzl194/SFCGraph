@@ -78,4 +78,4 @@ ADD GRETUNNEL:TNLNAME="Tunnel1",TNLTYPE=gre, SRCTYPE=if_name,SRCIFNAME="Ethernet
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-GRETUNNEL.md`
+- 原始手册：`evidence/UDG/20.15.2/增加GRE隧道（ADD-GRETUNNEL）_00841729.md`

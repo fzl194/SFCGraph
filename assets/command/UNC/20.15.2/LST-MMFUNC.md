@@ -89,4 +89,4 @@ Network policy携带策略
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询移动性管理扩展功能(LST-MMFUNC)_72225193.md`

@@ -57,4 +57,4 @@ RMV AFPROXYSRVALL:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-AFPROXYSRVALL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除所有防欺诈可信代理服务器（RMV-AFPROXYSRVALL）_08935041.md`

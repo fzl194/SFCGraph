@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPV6STAT.md`
-- 原始手册：`evidence/UDG/20.15.2/IPV6STAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6统计计数（DSP-IPV6STAT）_49962010.md`
+- 原始手册：`evidence/UDG/20.15.2/清除IPv6统计计数（RTR-IPV6STAT）_49802306.md`

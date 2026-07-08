@@ -67,4 +67,4 @@ CDR产生速率（%）  =  50
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CDRGENRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单产生速率（LST-CDRGENRATECTRL）_09896709.md`

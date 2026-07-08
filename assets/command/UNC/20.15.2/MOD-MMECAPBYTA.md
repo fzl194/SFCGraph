@@ -58,4 +58,4 @@ MOD MMECAPBYTA: MCC="123", MNC="03", TAC="0x200", CAP=100;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MMECAPBYTA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于跟踪区的MME相对权重配置(MOD-MMECAPBYTA)_26146266.md`

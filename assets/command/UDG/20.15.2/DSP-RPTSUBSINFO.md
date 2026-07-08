@@ -79,4 +79,4 @@ L7 Protocol Category : 207
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-RPTSUBSINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示报表订阅信息（DSP-RPTSUBSINFO）_61399540.md`

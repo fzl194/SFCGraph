@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NONIPSUBCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Non-IP-APNNI配置(LST-NONIPSUBCTRL)_26145774.md`

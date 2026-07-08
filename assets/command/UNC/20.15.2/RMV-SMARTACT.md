@@ -58,4 +58,4 @@ RMV SMARTACT: UETYPE=BLACKBERRY;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMARTACT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除激活抑制规则（RMV-SMARTACT）_26305552.md`

@@ -53,4 +53,4 @@ RTR SFEMSGSTC:RUNAME="VNODE_VNRS_VNFC_IPU_0065";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-SFEMSGSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除FEI消息统计（RTR-SFEMSGSTC）_50280594.md`

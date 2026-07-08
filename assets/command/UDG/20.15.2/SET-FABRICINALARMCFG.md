@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FABRICINALARMCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE告警配置（SET-FABRICINALARMCFG）_38482773.md`

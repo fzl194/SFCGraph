@@ -62,4 +62,4 @@ TAI上报策略  =  TAILIST格式
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFPROFILEPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF上报NFPROFILE策略（LST-AMFPROFILEPLCY）_95774946.md`

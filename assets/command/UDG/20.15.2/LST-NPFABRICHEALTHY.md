@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NPFABRICHEALTHY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局亚健康相关配置（LST-NPFABRICHEALTHY）_94730465.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUPAGING.md`
-- 原始手册：`evidence/UNC/20.15.2/IUPAGING.md`
-- 原始手册：`evidence/UNC/20.15.2/IUPAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu接口寻呼数据(RMV-IUPAGING)_72345635.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu接口寻呼数据(ADD-IUPAGING)_26305844.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu接口寻呼数据(LST-IUPAGING)_26146036.md`

@@ -63,4 +63,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-USERRUNINFOSTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/清除指定用户全部的运行信息记录（CLR-USERRUNINFOSTATE）_82837076.md`

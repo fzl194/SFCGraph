@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LBFLOWRULEV6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务IPv6引流规则（DSP-LBFLOWRULEV6）_41692201.md`

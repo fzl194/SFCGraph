@@ -75,4 +75,4 @@ ADD QCICONV: QCIEXT=10, QCISTEP=20, QCISTD=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-QCICONV.md`
+- 原始手册：`evidence/UNC/20.15.2/增加扩展QCI转换关系(ADD-QCICONV)_26306024.md`

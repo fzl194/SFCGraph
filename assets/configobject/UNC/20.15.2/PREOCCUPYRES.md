@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PREOCCUPYRES.md`
-- 原始手册：`evidence/UNC/20.15.2/PREOCCUPYRES.md`
+- 原始手册：`evidence/UNC/20.15.2/显示预占RU资源（DSP-PREOCCUPYRES）_51174357.md`
+- 原始手册：`evidence/UNC/20.15.2/预占RU资源（ACT-PREOCCUPYRES）_51174356.md`

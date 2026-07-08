@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UE灌包开关（LST-UEINJECTSWITCH）_82837096.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UE灌包开关（SET-UEINJECTSWITCH）_82837095.md`

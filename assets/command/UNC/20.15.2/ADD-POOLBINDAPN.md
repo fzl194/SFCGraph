@@ -63,4 +63,4 @@ ADD POOLBINDAPN:APN="huawei.com",POOLNAME="lap";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-POOLBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN实例与地址池绑定关系（ADD-POOLBINDAPN）_09653789.md`

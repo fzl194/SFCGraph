@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WHITEURLLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/WHITEURLLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/WHITEURLLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除URL白名单（RMV-WHITEURLLIST）_82837394.md`
+- 原始手册：`evidence/UDG/20.15.2/增加URL白名单（ADD-WHITEURLLIST）_82837393.md`
+- 原始手册：`evidence/UDG/20.15.2/查询URL白名单（LST-WHITEURLLIST）_82837395.md`

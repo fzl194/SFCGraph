@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PDNROUTETSTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/PDNROUTETSTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/PDNROUTETSTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/PDNROUTETSTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改UPF向PDN服务器发送探测消息的探测路径配置（MOD-PDNROUTETSTPATH）_64073333.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UPF向PDN服务器发送探测消息的探测路径（RMV-PDNROUTETSTPATH）_12872230.md`
+- 原始手册：`evidence/UDG/20.15.2/增加UPF向PDN服务器发送探测消息的探测路径（ADD-PDNROUTETSTPATH）_12635690.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UPF向PDN服务器发送探测消息的探测路径配置（LST-PDNROUTETSTPATH）_63911221.md`

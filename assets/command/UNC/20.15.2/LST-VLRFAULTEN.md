@@ -65,4 +65,4 @@ LST VLRFAULTEN:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VLRFAULTEN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR故障增强功能(LST-VLRFAULTEN)_35400473.md`

@@ -59,4 +59,4 @@ ADD MPACV4POLICY:POLICYNAME="policyV4",STEP=19,DESCRIPTION="a test desc";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MPACV4POLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv4-MPAC策略（ADD-MPACV4POLICY）_00865697.md`

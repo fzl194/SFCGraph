@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FEILOGSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/FEILOGSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询调测日志开关（LST-FEILOGSWITCH）_44653405.md`
+- 原始手册：`evidence/UDG/20.15.2/设置调测日志开关（SET-FEILOGSWITCH）_44651703.md`

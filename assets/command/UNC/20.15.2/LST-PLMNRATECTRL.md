@@ -64,4 +64,4 @@ Serving PLMN速率控制开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PLMNRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Serving-PLMN速率控制配置（LST-PLMNRATECTRL）_64343890.md`

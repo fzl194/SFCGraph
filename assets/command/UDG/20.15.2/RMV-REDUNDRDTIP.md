@@ -57,4 +57,4 @@ RMV REDUNDRDTIP:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-REDUNDRDTIP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除冗余备份重定向IP地址（RMV-REDUNDRDTIP）_75097446.md`

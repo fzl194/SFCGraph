@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DFTSRVNODERAT.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTSRVNODERAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询默认RAT类型（LST-DFTSRVNODERAT）_09652266.md`
+- 原始手册：`evidence/UNC/20.15.2/设置默认RAT类型（SET-DFTSRVNODERAT）_09653166.md`

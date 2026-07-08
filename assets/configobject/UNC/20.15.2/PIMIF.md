@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PIMIF.md`
-- 原始手册：`evidence/UNC/20.15.2/PIMIF.md`
-- 原始手册：`evidence/UNC/20.15.2/PIMIF.md`
-- 原始手册：`evidence/UNC/20.15.2/PIMIF.md`
-- 原始手册：`evidence/UNC/20.15.2/PIMIF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PIM接口配置（MOD-PIMIF）_00600853.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PIM接口配置（RMV-PIMIF）_00866441.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PIM接口信息（DSP-PIMIF）_00840745.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PIM接口配置（LST-PIMIF）_00840861.md`
+- 原始手册：`evidence/UNC/20.15.2/添加PIM接口配置（ADD-PIMIF）_50281190.md`

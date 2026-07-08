@@ -64,4 +64,4 @@ CHR存储配置
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SESSNCHRSTORECFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR存储配置（LST-SESSNCHRSTORECFG）_89030926.md`

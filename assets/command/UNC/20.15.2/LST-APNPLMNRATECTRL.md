@@ -67,4 +67,4 @@ APN Serving PLMN速率控制开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNPLMNRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-Serving-PLMN速率控制配置（LST-APNPLMNRATECTRL）_64343876.md`

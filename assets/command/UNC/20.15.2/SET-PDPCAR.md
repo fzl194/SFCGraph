@@ -60,4 +60,4 @@ SET PDPCAR: PDPSWITCH=ON, PDPMULTI=1, BURSTTIMES=9;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PDPCAR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PDP流控参数(SET-PDPCAR)_72345451.md`

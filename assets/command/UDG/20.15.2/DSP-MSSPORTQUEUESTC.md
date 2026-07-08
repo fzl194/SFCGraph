@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSPORTQUEUESTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示端口队列统计信息（DSP-MSSPORTQUEUESTC）_56281391.md`

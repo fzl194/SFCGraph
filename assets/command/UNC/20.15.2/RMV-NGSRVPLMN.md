@@ -63,4 +63,4 @@ RMV NGSRVPLMN: PLMNIDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-Serving-PLMN（RMV-NGSRVPLMN）_09653774.md`

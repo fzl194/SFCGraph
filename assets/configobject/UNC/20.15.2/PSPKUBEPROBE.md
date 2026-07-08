@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PSPKUBEPROBE.md`
-- 原始手册：`evidence/UNC/20.15.2/PSPKUBEPROBE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询是否放通管道大颗粒readiness就绪探测（LST-PSPKUBEPROBE）_30310421.md`
+- 原始手册：`evidence/UNC/20.15.2/设置是否放通管道大颗粒readiness就绪探测（SET-PSPKUBEPROBE）_30311805.md`

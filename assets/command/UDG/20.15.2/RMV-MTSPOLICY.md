@@ -72,4 +72,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MTSPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除消息跟踪限制（RMV-MTSPOLICY）_19414949.md`

@@ -78,4 +78,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GTPCINTFATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTP-C-IP地址接口属性(DSP-GTPCINTFATTR)_72225581.md`

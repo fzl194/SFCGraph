@@ -62,4 +62,4 @@ SET NPWATCHDOG: INTERVAL=500, TIMEOUT=24;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-NPWATCHDOG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置喂狗功能配置（SET-NPWATCHDOG）_18818232.md`

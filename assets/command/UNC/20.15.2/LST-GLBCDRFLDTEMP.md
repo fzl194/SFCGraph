@@ -71,4 +71,4 @@ SGW-CDR话单字段模板名  =  sgwcdr
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLBCDRFLDTEMP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局话单模板（LST-GLBCDRFLDTEMP）_09896896.md`

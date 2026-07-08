@@ -76,4 +76,4 @@ MOD15        OMU2       6        SCRIPT     2019-08-27 14:32:52    HM830001.mod
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PLGPKGDETAILINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询扩展包详细信息（DSP-PLGPKGDETAILINFO）_38829214.md`

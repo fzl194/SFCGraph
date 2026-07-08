@@ -54,4 +54,4 @@ RMV HTTPSTATUS: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-HTTPSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HTTP状态码判定配置（RMV-HTTPSTATUS）_04250405.md`

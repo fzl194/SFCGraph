@@ -57,4 +57,4 @@ ADD AMFSERVICELIST:SERVICENAME="namfComm";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF服务列表（ADD-AMFSERVICELIST）_09652200.md`

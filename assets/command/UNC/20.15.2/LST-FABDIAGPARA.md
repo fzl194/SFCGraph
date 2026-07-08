@@ -56,4 +56,4 @@ POD亚健康阈值 = 50
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FABDIAGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Pod-Fabric平面亚健康诊断参数（LST-FABDIAGPARA）_48150373.md`

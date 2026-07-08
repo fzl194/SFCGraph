@@ -66,4 +66,4 @@ Service flow aging time (s)  =  36
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SSUAGINGCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SSU容器业务相关老化功能配置（LST-SSUAGINGCFG）_28486287.md`

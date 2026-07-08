@@ -58,4 +58,4 @@ CLR SMFCACHE:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-SMFCACHE.md`
+- 原始手册：`evidence/UNC/20.15.2/清除SMF缓存信息（CLR-SMFCACHE）_35273617.md`

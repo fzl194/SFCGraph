@@ -66,4 +66,4 @@ vup-pod-0     目的端Pod  159         159
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PAEFABDETBRF.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Fabric链路探测简要结果（DSP-PAEFABDETBRF）_12631724.md`

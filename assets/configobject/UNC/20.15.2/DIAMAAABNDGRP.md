@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAABNDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAABNDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAABNDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter-AAA服务器组里的Diameter-AAA服务器（RMV-DIAMAAABNDGRP）_64343902.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter-AAA服务器到Diameter-AAA服务器组（ADD-DIAMAAABNDGRP）_64343819.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter-AAA服务器与Diameter-AAA服务器绑定关系（LST-DIAMAAABNDGRP）_64343880.md`

@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPOLICYMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPOLICYMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPOLICYMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPOLICYMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的策略接口的选择方式（MOD-APNPOLICYMODE）_96242548.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的策略接口的选择方式（RMV-APNPOLICYMODE）_96242744.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的策略接口的选择方式（ADD-APNPOLICYMODE）_72001541.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的策略接口的选择方式（LST-APNPOLICYMODE）_96242078.md`

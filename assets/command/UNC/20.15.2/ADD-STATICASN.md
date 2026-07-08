@@ -61,4 +61,4 @@ ADD STATICASN: SRVNODEIP="10.13.13.0", MASK="255.255.255.0", ASN=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-STATICASN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加静态ASN（ADD-STATICASN）_39850023.md`

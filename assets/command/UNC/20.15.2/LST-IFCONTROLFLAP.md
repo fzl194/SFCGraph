@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IFCONTROLFLAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口震荡抑制（LST-IFCONTROLFLAP）_00441165.md`

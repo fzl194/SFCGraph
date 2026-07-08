@@ -34,8 +34,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BFDSESSION.md`
-- 原始手册：`evidence/UDG/20.15.2/BFDSESSION.md`
-- 原始手册：`evidence/UDG/20.15.2/BFDSESSION.md`
-- 原始手册：`evidence/UDG/20.15.2/BFDSESSION.md`
-- 原始手册：`evidence/UDG/20.15.2/BFDSESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BFD会话参数（MOD-BFDSESSION）_00865653.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BFD会话（RMV-BFDSESSION）_00600649.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BFD会话（ADD-BFDSESSION）_49801434.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BFD会话的配置信息（LST-BFDSESSION）_49961114.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BFD的会话信息（DSP-BFDSESSION）_49802390.md`

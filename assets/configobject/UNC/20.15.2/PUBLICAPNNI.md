@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PUBLICAPNNI.md`
-- 原始手册：`evidence/UNC/20.15.2/PUBLICAPNNI.md`
-- 原始手册：`evidence/UNC/20.15.2/PUBLICAPNNI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除公共APN-NI配置(RMV-PUBLICAPNNI)_72225361.md`
+- 原始手册：`evidence/UNC/20.15.2/增加公共APN-NI配置(ADD-PUBLICAPNNI)_26145682.md`
+- 原始手册：`evidence/UNC/20.15.2/查询公共APN-NI配置(LST-PUBLICAPNNI)_26305492.md`

@@ -74,4 +74,4 @@ pdusession info
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MULDNNPDUSES.md`
+- 原始手册：`evidence/UNC/20.15.2/显示专用DNN会话信息（DSP-MULDNNPDUSES）_10370646.md`

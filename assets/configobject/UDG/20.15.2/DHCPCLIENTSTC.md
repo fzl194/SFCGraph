@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DHCPCLIENTSTC.md`
-- 原始手册：`evidence/UDG/20.15.2/DHCPCLIENTSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DHCPv4客户端报文统计（DSP-DHCPCLIENTSTC）_00601349.md`
+- 原始手册：`evidence/UDG/20.15.2/清除DHCPv4客户端报文统计（RTR-DHCPCLIENTSTC）_00841077.md`

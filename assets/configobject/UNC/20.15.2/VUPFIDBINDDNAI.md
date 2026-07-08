@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VUPFIDBINDDNAI.md`
-- 原始手册：`evidence/UNC/20.15.2/VUPFIDBINDDNAI.md`
-- 原始手册：`evidence/UNC/20.15.2/VUPFIDBINDDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除虚拟UPF实例标识的DNAI（RMV-VUPFIDBINDDNAI）_96243050.md`
+- 原始手册：`evidence/UNC/20.15.2/增加虚拟UPF实例标识的DNAI（ADD-VUPFIDBINDDNAI）_76311127.md`
+- 原始手册：`evidence/UNC/20.15.2/查询虚拟UPF实例标识的DNAI（LST-VUPFIDBINDDNAI）_96242534.md`

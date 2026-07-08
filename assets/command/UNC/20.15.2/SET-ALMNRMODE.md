@@ -62,4 +62,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-ALMNRMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网管北向告警上报模式（SET-ALMNRMODE）_92434720.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PODCPUTHD.md`
-- 原始手册：`evidence/UNC/20.15.2/PODCPUTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询POD-CPU阈值（LST-PODCPUTHD）_92620570.md`
+- 原始手册：`evidence/UNC/20.15.2/设置POD-CPU告警阈值（SET-PODCPUTHD）_37900461.md`

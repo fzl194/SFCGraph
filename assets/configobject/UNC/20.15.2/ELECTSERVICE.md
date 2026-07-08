@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ELECTSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/ELECTSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/ELECTSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询仲裁服务状态（DSP-ELECTSERVICE）_59103974.md`
+- 原始手册：`evidence/UNC/20.15.2/查询仲裁服务配置（LST-ELECTSERVICE）_43286257.md`
+- 原始手册：`evidence/UNC/20.15.2/设置仲裁服务配置（SET-ELECTSERVICE）_95628124.md`

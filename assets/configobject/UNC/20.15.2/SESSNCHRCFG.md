@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话CHR上报策略（LST-SESSNCHRCFG）_35628394.md`
+- 原始手册：`evidence/UNC/20.15.2/设置会话CHR上报策略（SET-SESSNCHRCFG）_35628398.md`

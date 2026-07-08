@@ -57,4 +57,4 @@ MOD ACLGROUP6: ACLNAME="2005",ACLDESCRIPTION="aclgroup";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-ACLGROUP6.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv6-ACL规则组（MOD-ACLGROUP6）_50120866.md`

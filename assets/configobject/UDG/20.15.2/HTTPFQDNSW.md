@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPFQDNSW.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPFQDNSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP是否支持FQDN（LST-HTTPFQDNSW）_04291629.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP是否支持FQDN（SET-HTTPFQDNSW）_54530882.md`

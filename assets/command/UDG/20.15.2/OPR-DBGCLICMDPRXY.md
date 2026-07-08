@@ -69,4 +69,4 @@ ML级别:     3
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OPR-DBGCLICMDPRXY.md`
+- 原始手册：`evidence/UDG/20.15.2/通过命令代理执行命令行调试命令（OPR-DBGCLICMDPRXY）_59104183.md`

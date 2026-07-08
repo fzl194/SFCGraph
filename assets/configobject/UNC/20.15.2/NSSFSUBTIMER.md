@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFSUBTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFSUBTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询订阅时长（LST-NSSFSUBTIMER）_09653717.md`
+- 原始手册：`evidence/UNC/20.15.2/设置订阅时长（SET-NSSFSUBTIMER）_09653815.md`

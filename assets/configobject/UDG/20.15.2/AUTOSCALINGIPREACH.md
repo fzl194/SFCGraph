@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGIPREACH.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGIPREACH.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGIPREACH.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGIPREACH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IP可达性检测自动化配置模板（MOD-AUTOSCALINGIPREACH）_00600637.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IP可达性检测自动化配置模板（RMV-AUTOSCALINGIPREACH）_00441449.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IP可达性检测自动化配置模板（ADD-AUTOSCALINGIPREACH）_00840617.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP可达性检测自动化配置模板（LST-AUTOSCALINGIPREACH）_00440453.md`

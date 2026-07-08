@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOGSERVERDROPSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示日志丢弃统计信息（DSP-LOGSERVERDROPSTC）_59103338.md`

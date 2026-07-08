@@ -65,4 +65,4 @@ SMSF信令点索引  网络指示语     本局信令点编码 本局SMSF号    
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSFOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF本局信令点(LST-SMSFOPC)_27137283.md`

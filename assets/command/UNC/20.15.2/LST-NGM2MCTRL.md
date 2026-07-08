@@ -65,4 +65,4 @@ AMF间移动性流程用户面建立优化  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGM2MCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-M2M控制参数（LST-NGM2MCTRL）_34572336.md`

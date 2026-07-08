@@ -60,4 +60,4 @@ RMV CCT: CCTMPLTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CCT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除融合计费模板（RMV-CCT）_09653730.md`

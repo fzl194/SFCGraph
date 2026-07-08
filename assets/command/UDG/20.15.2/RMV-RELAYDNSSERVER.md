@@ -56,4 +56,4 @@ RMV RELAYDNSSERVER:DNSSERVERNAME="dns01";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RELAYDNSSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继的DNS属性（RMV-RELAYDNSSERVER）_66956356.md`

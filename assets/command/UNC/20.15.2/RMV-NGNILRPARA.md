@@ -55,4 +55,4 @@ RMV NGNILRPARA:NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGNILRPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NI-LR功能参数（RMV-NGNILRPARA）_44007658.md`

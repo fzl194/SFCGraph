@@ -68,4 +68,4 @@ Rule删除时触发QoS URR Stop上报的开关  = 使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-QOSURRRPTCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoS-URR上报的相关参数（LST-QOSURRRPTCTRL）_14794665.md`

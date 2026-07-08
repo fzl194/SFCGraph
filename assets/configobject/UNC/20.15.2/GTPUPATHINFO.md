@@ -34,6 +34,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATHINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATHINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATHINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTPU路径（DEL-GTPUPATHINFO）_14280394.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTPU路径信息（DSP-GTPUPATHINFO）_58840349.md`
+- 原始手册：`evidence/UNC/20.15.2/测试GTPU路径（TST-GTPUPATHINFO）_13960454.md`

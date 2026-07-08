@@ -65,4 +65,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AFPROXYSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询防欺诈可信代理服务器（LST-AFPROXYSERVER）_82837790.md`

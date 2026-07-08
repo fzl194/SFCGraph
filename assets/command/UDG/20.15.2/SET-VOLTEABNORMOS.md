@@ -61,4 +61,4 @@ SET VOLTEABNORMOS: MOSABNORMTHD=15;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-VOLTEABNORMOS.md`
+- 原始手册：`evidence/UDG/20.15.2/指定MOS值的异常门限值（SET-VOLTEABNORMOS）_57738481.md`

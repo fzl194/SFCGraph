@@ -59,4 +59,4 @@ ADD PODALMTH: PODTYPE="sfm-pod",THTYPE=CPU,WARNTHD=80, RECVTHD=70;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PODALMTH.md`
+- 原始手册：`evidence/UNC/20.15.2/增加POD资源告警阈值（ADD-PODALMTH）_87483778.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADDRIP.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRIP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示地址缓存（DSP-ADDRIP）_06935664.md`
+- 原始手册：`evidence/UNC/20.15.2/清除地址（CLR-ADDRIP）_06775896.md`

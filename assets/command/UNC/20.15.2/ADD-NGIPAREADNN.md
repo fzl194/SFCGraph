@@ -61,4 +61,4 @@ ADD NGIPAREADNN: DNN="huawei.com", ISNSSAI=YES, SST=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGIPAREADNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-IP区域DNN（ADD-NGIPAREADNN）_96241727.md`

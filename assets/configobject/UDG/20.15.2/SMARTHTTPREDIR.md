@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SMARTHTTPREDIR.md`
-- 原始手册：`evidence/UDG/20.15.2/SMARTHTTPREDIR.md`
-- 原始手册：`evidence/UDG/20.15.2/SMARTHTTPREDIR.md`
-- 原始手册：`evidence/UDG/20.15.2/SMARTHTTPREDIR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改HTTP智能重定向配置（MOD-SMARTHTTPREDIR）_86528764.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTP智能重定向（RMV-SMARTHTTPREDIR）_82837558.md`
+- 原始手册：`evidence/UDG/20.15.2/新增HTTP智能重定向（ADD-SMARTHTTPREDIR）_82837555.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP重定向配置（LST-SMARTHTTPREDIR）_86528733.md`

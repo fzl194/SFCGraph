@@ -71,4 +71,4 @@ NONRAI信息
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NONRAI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询非广播RAI配置信息(LST-NONRAI)_72225789.md`

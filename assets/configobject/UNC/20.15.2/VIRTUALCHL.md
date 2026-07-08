@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALCHL.md`
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALCHL.md`
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALCHL.md`
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALCHL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改虚拟通道映射（MOD-VIRTUALCHL）_85382982.md`
+- 原始手册：`evidence/UNC/20.15.2/删除虚拟通道映射（RMV-VIRTUALCHL）_21982309.md`
+- 原始手册：`evidence/UNC/20.15.2/增加虚拟通道映射（ADD-VIRTUALCHL）_85542714.md`
+- 原始手册：`evidence/UNC/20.15.2/查询虚拟通道映射（LST-VIRTUALCHL）_21902793.md`

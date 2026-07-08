@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSTBMFILTER.md`
-- 原始手册：`evidence/UDG/20.15.2/MSSTBMFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MSS表项开关过滤状态（DSP-MSSTBMFILTER）_49802174.md`
+- 原始手册：`evidence/UDG/20.15.2/设置MSS表项开关过滤规则（SET-MSSTBMFILTER）_50281626.md`

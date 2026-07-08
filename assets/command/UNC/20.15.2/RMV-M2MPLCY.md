@@ -60,4 +60,4 @@ RMV M2MPLCY: SUBRANGE=ALL_USER, APNNI="HUAWEI1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-M2MPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M策略参数(RMV-M2MPLCY)_26305574.md`

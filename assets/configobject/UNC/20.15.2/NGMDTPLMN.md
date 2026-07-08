@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGMDTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMDTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除最小化路测的PLMN（RMV-NGMDTPLMN）_00293512.md`
+- 原始手册：`evidence/UNC/20.15.2/增加最小化路测的PLMN（ADD-NGMDTPLMN）_00293510.md`
+- 原始手册：`evidence/UNC/20.15.2/查询最小化路测的PLMN（LST-NGMDTPLMN）_46493497.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMIFCTLMSG.md`
+- 原始手册：`evidence/UDG/20.15.2/清除PIM接口报文统计计数（RTR-PIMIFCTLMSG）_00866105.md`

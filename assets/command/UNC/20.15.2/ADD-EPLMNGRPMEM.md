@@ -62,4 +62,4 @@ ADD EPLMNGRPMEM: GRPIDX=0, MCC="123", MNC="89", DESC="add eplmn 12389 for 12345"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-EPLMNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加等价PLMN组成员（ADD-EPLMNGRPMEM）_09654402.md`

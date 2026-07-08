@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REGNFSTATEREC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NF的状态变更记录（DSP-REGNFSTATEREC）_09653188.md`

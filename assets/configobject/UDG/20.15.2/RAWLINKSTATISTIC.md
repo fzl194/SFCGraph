@@ -24,5 +24,5 @@ Raw-link连接的流量统计信息主要分为发送和接收两大部分。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RAWLINKSTATISTIC.md`
-- 原始手册：`evidence/UDG/20.15.2/RAWLINKSTATISTIC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Raw-link报文统计（DSP-RAWLINKSTATISTIC）_00840985.md`
+- 原始手册：`evidence/UDG/20.15.2/清除Raw-link报文统计（RTR-RAWLINKSTATISTIC）_00865973.md`

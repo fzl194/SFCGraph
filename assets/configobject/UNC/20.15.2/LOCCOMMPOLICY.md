@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCCOMMPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCCOMMPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCCOMMPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCCOMMPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地Common-Policy配置（MOD-LOCCOMMPOLICY）_34100981.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地Common-Policy配置（RMV-LOCCOMMPOLICY）_84260806.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地Common-Policy配置（ADD-LOCCOMMPOLICY）_84420770.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地Common-Policy配置（LST-LOCCOMMPOLICY）_34300569.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HLRBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/HLRBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HLR故障Bypass功能控制参数(LST-HLRBYPASS)_04432482.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HLR故障Bypass功能控制参数(SET-HLRBYPASS)_04085588.md`

@@ -59,4 +59,4 @@ ADD QOSDIFFERSERV:DSNAME="d1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-QOSDIFFERSERV.md`
+- 原始手册：`evidence/UDG/20.15.2/增加DS域（ADD-QOSDIFFERSERV）_00841105.md`

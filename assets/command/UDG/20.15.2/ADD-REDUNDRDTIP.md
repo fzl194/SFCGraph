@@ -66,4 +66,4 @@ ADD REDUNDRDTIP: IPVERSION=IPv4, IPV4ADDRESS="192.168.0.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-REDUNDRDTIP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加冗余备份重定向IP地址（ADD-REDUNDRDTIP）_75097445.md`

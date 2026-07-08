@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DATAPLANEINFMODE.md`
-- 原始手册：`evidence/UDG/20.15.2/DATAPLANEINFMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询数据面接口模式（LST-DATAPLANEINFMODE）_07148234.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户面接口模式（SET-DATAPLANEINFMODE）_06677620.md`

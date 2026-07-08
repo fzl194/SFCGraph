@@ -55,4 +55,4 @@ RMV DAMPROUTE:VRFNAME="_public_",AFTYPE=ipv4uni;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DAMPROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除振荡抑制路由（RMV-DAMPROUTE）_50120806.md`

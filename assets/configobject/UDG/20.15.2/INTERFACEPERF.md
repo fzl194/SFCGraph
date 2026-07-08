@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/INTERFACEPERF.md`
-- 原始手册：`evidence/UDG/20.15.2/INTERFACEPERF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询逻辑口报文统计信息（DSP-INTERFACEPERF）_86526363.md`
+- 原始手册：`evidence/UDG/20.15.2/清除逻辑口报文统计信息（CLR-INTERFACEPERF）_86526346.md`

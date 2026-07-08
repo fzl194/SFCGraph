@@ -66,4 +66,4 @@ ADD MNO: MNOID=128, FULLNAME="aaa", SHORTNAME="a";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MNO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MNO配置信息(ADD-MNO)_72345671.md`

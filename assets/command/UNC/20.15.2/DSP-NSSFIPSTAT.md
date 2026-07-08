@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NSSFIPSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NSSF的局向内统概要数据（DSP-NSSFIPSTAT）_22836789.md`

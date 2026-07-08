@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FMTPKGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/FMTPKGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/FMTPKGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/FMTPKGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除格式引擎包软参（RMV-FMTPKGCFG）_51174302.md`
+- 原始手册：`evidence/UNC/20.15.2/增加格式引擎包软参（ADD-FMTPKGCFG）_51174301.md`
+- 原始手册：`evidence/UNC/20.15.2/显示格式引擎软参配置信息（DSP-FMTPKGCFG）_51174300.md`
+- 原始手册：`evidence/UNC/20.15.2/查询格式引擎软参配置信息（LST-FMTPKGCFG）_51174303.md`

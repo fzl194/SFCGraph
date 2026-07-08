@@ -64,4 +64,4 @@ MOD UPFGBINDLOCG: UPFGLOCGBNDGNAME="abc", UPFGRPNAME="upfgroup", DIAMLOCGRPNAME=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-UPFGBINDLOCG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF组与Diameter本端主机组的关联关系（MOD-UPFGBINDLOCG）_17057501.md`

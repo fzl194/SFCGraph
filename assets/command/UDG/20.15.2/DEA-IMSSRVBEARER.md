@@ -62,4 +62,4 @@ DEA IMSSRVBEARER: DEATYPE=IMSI, IMSI="46001123456789";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEA-IMSSRVBEARER.md`
+- 原始手册：`evidence/UDG/20.15.2/去激活指定用户的IMS-Bypass状态（DEA-IMSSRVBEARER）_94130730.md`

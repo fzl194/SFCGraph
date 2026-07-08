@@ -59,4 +59,4 @@ RMV IMSIBINDGRP: IMSIGROUPNAME="TestIMSIGroupName", IMSI="123456789";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-IMSIBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IMSI和IMSI组绑定关系（RMV-IMSIBINDGRP）_93615519.md`

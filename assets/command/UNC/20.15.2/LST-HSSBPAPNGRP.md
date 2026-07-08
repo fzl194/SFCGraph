@@ -71,4 +71,4 @@ APN本地签约索引  =  12
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HSSBPAPNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HSS-BYPASS最小APN签约数据群组-(LST-HSSBPAPNGRP)_63701290.md`

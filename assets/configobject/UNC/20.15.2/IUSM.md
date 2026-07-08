@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUSM.md`
-- 原始手册：`evidence/UNC/20.15.2/IUSM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式SM协议参数(LST-IUSM)_72345299.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Iu模式SM协议参数(SET-IUSM)_26305512.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BASICCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/BASICCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/BASICCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/BASICCOMMUNITYNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基础团体属性过滤器节点（MOD-BASICCOMMUNITYNODE）_00440753.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基础团体属性过滤器节点（RMV-BASICCOMMUNITYNODE）_49801506.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基础团体属性过滤器节点（ADD-BASICCOMMUNITYNODE）_50121570.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基础团体属性过滤器节点（LST-BASICCOMMUNITYNODE）_49802346.md`

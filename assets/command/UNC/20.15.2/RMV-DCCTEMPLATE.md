@@ -59,4 +59,4 @@ RMV DCCTEMPLATE:DCCTMPLTNAME="DccTemplate";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DCCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCC模板（RMV-DCCTEMPLATE）_09896925.md`

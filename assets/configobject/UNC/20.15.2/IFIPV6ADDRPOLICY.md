@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6地址策略（MOD-IFIPV6ADDRPOLICY）_49802314.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6地址策略（RMV-IFIPV6ADDRPOLICY）_50121374.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6地址策略（LST-IFIPV6ADDRPOLICY）_00840557.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IPv6地址策略（ADD-IFIPV6ADDRPOLICY）_49801666.md`

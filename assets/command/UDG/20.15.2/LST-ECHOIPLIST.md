@@ -69,4 +69,4 @@ IP地址段的地址  =  10.36.0.2
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ECHOIPLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询GTP路径管理IP地址（LST-ECHOIPLIST）_82837221.md`

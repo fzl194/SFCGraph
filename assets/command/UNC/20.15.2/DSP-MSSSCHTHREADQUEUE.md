@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSSCHTHREADQUEUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSS线程级调度队列的维测信息（DSP-MSSSCHTHREADQUEUE）_50121534.md`

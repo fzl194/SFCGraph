@@ -53,4 +53,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AUTHSOAP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网管登录认证策略（LST-AUTHSOAP）_97635699.md`

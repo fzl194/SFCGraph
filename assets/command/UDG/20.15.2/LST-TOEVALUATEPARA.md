@@ -64,4 +64,4 @@ TCP优化评估抽样比率 = 50
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOEVALUATEPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP优化评估配置信息（LST-TOEVALUATEPARA）_08865124.md`

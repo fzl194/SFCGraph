@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFN26CPPATH.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFN26CPPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF-N26消息抄送路径（LST-AMFN26CPPATH）_29829116.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF-N26消息抄送路径（SET-AMFN26CPPATH）_30308792.md`

@@ -57,4 +57,4 @@ AppId                 License Information             Is Refer To NF            
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DBGHAFG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示HAFG相关信息（DSP-DBGHAFG）_66924852.md`

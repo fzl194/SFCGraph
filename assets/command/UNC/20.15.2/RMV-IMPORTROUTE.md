@@ -56,4 +56,4 @@ RMV IMPORTROUTE:VRFNAME="vrf1", AFTYPE=ipv4uni, IMPORTPROTOCOL=static;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMPORTROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定协议中的入口路由配置（RMV-IMPORTROUTE）_49802358.md`

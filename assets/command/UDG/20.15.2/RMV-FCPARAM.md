@@ -52,4 +52,4 @@ RMV FCPARAM: SERVICETYPE="UesmCtrlSvc", SERVICEID=999, CASEID=0, PARAMCAT=GENERA
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-FCPARAM.md`
+- 原始手册：`evidence/UDG/20.15.2/删除流控参数（RMV-FCPARAM）_09587926.md`

@@ -38,7 +38,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改QoS属性（MOD-QOSPROP）_82837650.md`
+- 原始手册：`evidence/UDG/20.15.2/删除QoS属性（RMV-QOSPROP）_82837651.md`
+- 原始手册：`evidence/UDG/20.15.2/增加QoS属性（ADD-QOSPROP）_82837649.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoS属性（LST-QOSPROP）_82837652.md`

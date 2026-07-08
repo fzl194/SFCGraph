@@ -81,4 +81,4 @@ MCR_SP_RU_0064    7              94               正常
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SDAPRSTCNT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SDAP实体重启计数(DSP-SDAPRSTCNT)_26307106.md`

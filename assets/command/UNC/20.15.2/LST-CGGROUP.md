@@ -73,4 +73,4 @@ CG组描述  =  CGGroup1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CGGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG组（LST-CGGROUP）_09896882.md`

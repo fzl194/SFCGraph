@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ISUPODCPUTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/ISUPODCPUTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ISU-POD业务CPU过载告警阈值（LST-ISUPODCPUTHD）_83535543.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ISU-POD的业务CPU过载告警阈值（SET-ISUPODCPUTHD）_78614794.md`

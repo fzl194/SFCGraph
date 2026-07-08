@@ -35,6 +35,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/POOLGRPMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLGRPMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLGRPMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示地址池组映射关系（LST-POOLGRPMAP）_82837150.md`
+- 原始手册：`evidence/UDG/20.15.2/添加地址池组映射关系（ADD-POOLGRPMAP）_82837148.md`
+- 原始手册：`evidence/UDG/20.15.2/移除地址池组映射关系（RMV-POOLGRPMAP）_82837149.md`

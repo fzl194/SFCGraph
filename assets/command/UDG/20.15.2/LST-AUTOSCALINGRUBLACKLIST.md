@@ -65,4 +65,4 @@ RU ID
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AUTOSCALINGRUBLACKLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询自动部署RU黑名单（LST-AUTOSCALINGRUBLACKLIST）_00841333.md`

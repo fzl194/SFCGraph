@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFWILDCARDATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWILDCARDATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWILDCARDATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWILDCARDATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改分层互联通配属性（MOD-NRFWILDCARDATTR）_09652967.md`
+- 原始手册：`evidence/UNC/20.15.2/删除分层互联通配属性（RMV-NRFWILDCARDATTR）_09652345.md`
+- 原始手册：`evidence/UNC/20.15.2/增加分层互联通配属性（ADD-NRFWILDCARDATTR）_09653194.md`
+- 原始手册：`evidence/UNC/20.15.2/查询分层互联通配属性（LST-NRFWILDCARDATTR）_09652485.md`

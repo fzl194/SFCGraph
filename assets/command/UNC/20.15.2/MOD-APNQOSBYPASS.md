@@ -58,4 +58,4 @@ MOD APNQOSBYPASS:APN="huawei.com",SUBQOSINDEX=5;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNQOSBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BYPASS场景QoS描述配置（MOD-APNQOSBYPASS）_22556859.md`

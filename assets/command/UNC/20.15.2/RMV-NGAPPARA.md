@@ -57,4 +57,4 @@ RMV NGAPPARA: NGAPPARAIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGAPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NGAP协议参数（RMV-NGAPPARA）_09654185.md`

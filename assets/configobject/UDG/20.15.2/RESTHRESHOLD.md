@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESTHRESHOLD.md`
-- 原始手册：`evidence/UDG/20.15.2/RESTHRESHOLD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询资源过载和过载恢复阈值（LST-RESTHRESHOLD）_59037454.md`
+- 原始手册：`evidence/UDG/20.15.2/设置资源过载和过载恢复阈值（SET-RESTHRESHOLD）_47714373.md`

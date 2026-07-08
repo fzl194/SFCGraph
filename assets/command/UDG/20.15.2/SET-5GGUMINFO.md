@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-5GGUMINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/设置灰度升级所处于的阶段（SET-5GGUMINFO）_34181853.md`

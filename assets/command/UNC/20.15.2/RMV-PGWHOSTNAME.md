@@ -58,4 +58,4 @@ RMV PGWHOSTNAME: INTFTYPE=S5_P_OR_GN_OR_S2B;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PGWHOSTNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/删除逻辑接口的PGW主机名（RMV-PGWHOSTNAME）_64343908.md`

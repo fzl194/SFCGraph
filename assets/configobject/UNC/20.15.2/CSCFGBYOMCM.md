@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CSCFGBYOMCM.md`
-- 原始手册：`evidence/UNC/20.15.2/CSCFGBYOMCM.md`
-- 原始手册：`evidence/UNC/20.15.2/CSCFGBYOMCM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除业务读取OM缓存数据的配置（RMV-CSCFGBYOMCM）_51335401.md`
+- 原始手册：`evidence/UNC/20.15.2/增加业务读取OM缓存数据的配置（ADD-CSCFGBYOMCM）_51335373.md`
+- 原始手册：`evidence/UNC/20.15.2/查询业务读取OM缓存数据的配置（LST-CSCFGBYOMCM）_23736548.md`

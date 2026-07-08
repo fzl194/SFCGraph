@@ -68,4 +68,4 @@ VoNR吞字断续检测参数
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VONRSWALBRK.md`
+- 原始手册：`evidence/UDG/20.15.2/显示VoNR滑窗相关参数（LST-VONRSWALBRK）_91056086.md`

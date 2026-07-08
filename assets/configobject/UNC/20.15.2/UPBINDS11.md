@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPBINDS11.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDS11.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDS11.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDS11.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGW-U与SGW-C侧S11接口的绑定关系（MOD-UPBINDS11）_09653613.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-U与SGW-C侧S11接口的绑定关系（RMV-UPBINDS11）_09654182.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-U与SGW-C侧S11接口的绑定关系（ADD-UPBINDS11）_09653045.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-U与SGW-C侧S11接口的绑定关系（LST-UPBINDS11）_09652520.md`

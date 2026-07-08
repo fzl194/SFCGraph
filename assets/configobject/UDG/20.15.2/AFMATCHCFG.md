@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFMATCHCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/AFMATCHCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软参欺诈场景开关状态（LST-AFMATCHCFG）_86526224.md`
+- 原始手册：`evidence/UDG/20.15.2/设置软参欺诈场景功能开关（SET-AFMATCHCFG）_82837812.md`

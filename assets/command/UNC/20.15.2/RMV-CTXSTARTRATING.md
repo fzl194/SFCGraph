@@ -59,4 +59,4 @@ RMV CTXSTARTRATING:USERPROFILENAME="TestUserProfileName", CTXCHGPRMVT=SPECIFIC, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CTXSTARTRATING.md`
+- 原始手册：`evidence/UNC/20.15.2/删除给OCS_CHF发送的消息初始携带的计费属性（RMV-CTXSTARTRATING）_09897212.md`

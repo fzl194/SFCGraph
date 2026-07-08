@@ -62,4 +62,4 @@ ADD APNGWPROXYFUNC: APN="huawei.com", PROXYSW=ENABLE, ALIASAPN="huawei1.com", MU
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNGWPROXYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN网关Proxy功能配置（ADD-APNGWPROXYFUNC）_42853254.md`

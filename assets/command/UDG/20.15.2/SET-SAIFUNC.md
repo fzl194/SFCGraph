@@ -63,4 +63,4 @@ SET SAIFUNC: SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SAIFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SAI差异化控制功能（SET-SAIFUNC）_25238682.md`

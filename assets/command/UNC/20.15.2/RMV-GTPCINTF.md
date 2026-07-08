@@ -62,4 +62,4 @@ RMV GTPCINTF:INTFTYPE=E_GTPCINTF_ITFS11;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPCINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C接口信息（RMV-GTPCINTF）_09654360.md`

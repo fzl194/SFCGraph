@@ -68,4 +68,4 @@ SET UPSTATUS: STATUS=UP;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UP-状态信息（SET-UPSTATUS）_82837250.md`

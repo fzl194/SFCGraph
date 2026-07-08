@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFRTNSMAXNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFRTNSMAXNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF响应切片最大数量配置（LST-NSSFRTNSMAXNUM）_44461347.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSSF响应切片最大数量配置（SET-NSSFRTNSMAXNUM）_97901496.md`

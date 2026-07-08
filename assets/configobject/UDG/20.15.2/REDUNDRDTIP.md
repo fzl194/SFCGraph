@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REDUNDRDTIP.md`
-- 原始手册：`evidence/UDG/20.15.2/REDUNDRDTIP.md`
-- 原始手册：`evidence/UDG/20.15.2/REDUNDRDTIP.md`
-- 原始手册：`evidence/UDG/20.15.2/REDUNDRDTIP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改冗余备份重定向IP（MOD-REDUNDRDTIP）_75097448.md`
+- 原始手册：`evidence/UDG/20.15.2/删除冗余备份重定向IP地址（RMV-REDUNDRDTIP）_75097446.md`
+- 原始手册：`evidence/UDG/20.15.2/增加冗余备份重定向IP地址（ADD-REDUNDRDTIP）_75097445.md`
+- 原始手册：`evidence/UDG/20.15.2/查询冗余备份重定向IP（LST-REDUNDRDTIP）_75097447.md`

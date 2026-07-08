@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFVISITPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFVISITPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF拜访地默认策略（LST-NRFVISITPLY）_24956638.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF拜访地默认策略（SET-NRFVISITPLY）_71516457.md`

@@ -58,4 +58,4 @@ RMV SBCMME: MMEIDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SBCMME.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SBC-MME实体(RMV-SBCMME)_47994769.md`

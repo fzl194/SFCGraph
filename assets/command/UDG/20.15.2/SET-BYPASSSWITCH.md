@@ -81,4 +81,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-BYPASSSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置节点自动进入BYPASS开关（SET-BYPASSSWITCH）_97531594.md`

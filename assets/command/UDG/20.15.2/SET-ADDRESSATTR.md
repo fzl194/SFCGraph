@@ -72,4 +72,4 @@ SET ADDRESSATTR: V4POOLWILDCARDSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-ADDRESSATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局地址分配属性（SET-ADDRESSATTR）_06561538.md`

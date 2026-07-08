@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSPHB.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPHB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS-PHB（LST-QOSPHB）_00866029.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS-PHB（SET-QOSPHB）_00840685.md`

@@ -36,4 +36,4 @@ DNS服务器上的数据修改后，可以使用CLR DNSC命令清除MME网元整
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLRDNSCPROG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询离散清缓存进度(DSP-CLRDNSCPROG)_72246921.md`

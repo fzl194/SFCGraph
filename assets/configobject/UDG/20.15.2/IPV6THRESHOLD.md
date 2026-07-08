@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPV6THRESHOLD.md`
-- 原始手册：`evidence/UDG/20.15.2/IPV6THRESHOLD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6阈值（LST-IPV6THRESHOLD）_50281398.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv6阈值（SET-IPV6THRESHOLD）_00440921.md`

@@ -76,4 +76,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-HPATCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询热补丁信息(DSP-HPATCH)_13558792.md`

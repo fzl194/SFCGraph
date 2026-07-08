@@ -66,4 +66,4 @@ TCP代理允许处于TIME_WAIT状态的socket个数的上限值  =  5000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TORESMGTCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP资源管理配置（LST-TORESMGTCFG）_31139805.md`

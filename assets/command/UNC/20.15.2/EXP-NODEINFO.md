@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXP-NODEINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/导出节点信息（EXP-NODEINFO）_94730443.md`

@@ -70,4 +70,4 @@ ADD APNNBNS: APN="huawei.com", IPV4PRIMARYIP="10.1.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNNBNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN的NBNS属性（ADD-APNNBNS）_77037092.md`

@@ -56,4 +56,4 @@ RMV LCSPARAEX: NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LCSPARAEX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LCS扩展参数(RMV-LCSPARAEX)_72345415.md`

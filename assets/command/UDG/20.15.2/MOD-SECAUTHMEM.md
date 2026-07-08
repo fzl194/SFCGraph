@@ -54,4 +54,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-SECAUTHMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改二次授权命令（MOD-SECAUTHMEM）_88107919.md`

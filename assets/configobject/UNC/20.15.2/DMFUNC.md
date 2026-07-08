@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/DMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter配置(LST-DMFUNC)_26306082.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Diameter配置(SET-DMFUNC)_72225949.md`

@@ -61,4 +61,4 @@ ADD L2RULEBINDGRP: L2RULEGROUPNAME="rulegrp1", L2RULENAME="rule1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-L2RULEBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加层二规则与层二规则组的绑定关系（ADD-L2RULEBINDGRP）_70462509.md`

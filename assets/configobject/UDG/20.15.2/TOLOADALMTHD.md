@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOLOADALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/TOLOADALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询告警阈值（LST-TOLOADALMTHD）_31379113.md`
+- 原始手册：`evidence/UDG/20.15.2/设置告警阈值（SET-TOLOADALMTHD）_31139813.md`

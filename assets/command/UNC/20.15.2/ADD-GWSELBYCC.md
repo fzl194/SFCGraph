@@ -61,4 +61,4 @@ ADD GWSELBYCC: APNNI="HUAWEI.COM", SUBCC="0x1234";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GWSELBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于CC选择GGSN_P-GW(ADD-GWSELBYCC)_26145948.md`

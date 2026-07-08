@@ -54,4 +54,4 @@ RMV CHGBEHA: CB=B1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGBEHA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除计费行为参数(RMV-CHGBEHA)_72225047.md`

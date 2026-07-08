@@ -64,4 +64,4 @@ LST PORTGROUP:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PORTGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询端口组配置（LST-PORTGROUP）_49962022.md`

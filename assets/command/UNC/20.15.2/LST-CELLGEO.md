@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CELLGEO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CELLID与地理坐标对应关系(LST-CELLGEO)_72225469.md`

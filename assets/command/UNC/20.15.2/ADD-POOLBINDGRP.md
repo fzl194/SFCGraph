@@ -69,4 +69,4 @@ ADD POOLBINDGRP: POOLGRPNAME="spoolgrp1", POOLNAME="pool_1", PRIORITY=15;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-POOLBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加地址池和地址池组的绑定关系（ADD-POOLBINDGRP）_32232813.md`

@@ -92,4 +92,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NTPSVR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NTP服务器(ADD-NTPSVR)_54491176.md`

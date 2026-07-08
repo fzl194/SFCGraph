@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS4.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS4.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS4.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS4.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS4.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基本ACL规则（MOD-ACLRULEBAS4）_49802422.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基本ACL规则（RMV-ACLRULEBAS4）_00440553.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基本ACL规则（ADD-ACLRULEBAS4）_49960982.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基本ACL规则（DSP-ACLRULEBAS4）_00600521.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基本ACL规则配置（LST-ACLRULEBAS4）_50281326.md`

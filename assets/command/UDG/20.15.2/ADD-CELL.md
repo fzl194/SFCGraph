@@ -59,4 +59,4 @@ ADD CELL: CELLNAME="TestCellName",CELLID=123456789;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CELL.md`
+- 原始手册：`evidence/UDG/20.15.2/增加小区（ADD-CELL）_93415785.md`

@@ -59,4 +59,4 @@ RMV NRFBSFDNNREL: BSFINDEX=1, DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFBSFDNNREL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF索引和DNN的关联关系（RMV-NRFBSFDNNREL）_45612435.md`

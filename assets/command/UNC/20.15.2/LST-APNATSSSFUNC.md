@@ -66,4 +66,4 @@ ATSSS功能开关  =  disable
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNATSSSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-ATSSS功能（LST-APNATSSSFUNC）_96242064.md`

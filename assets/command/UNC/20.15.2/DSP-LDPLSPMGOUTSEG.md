@@ -87,4 +87,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-LDPLSPMGOUTSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LDP-LSP管理组件Outsegment转发表项（DSP-LDPLSPMGOUTSEG）_49801678.md`

@@ -79,4 +79,4 @@ SET UPURRCTRL: QHTRMVURRSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPURRCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/设置URR控制参数（SET-UPURRCTRL）_45342328.md`

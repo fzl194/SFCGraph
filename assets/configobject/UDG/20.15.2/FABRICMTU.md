@@ -26,5 +26,5 @@ MTU的大小决定了发送端一次能够发送报文的最大字节数。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABRICMTU.md`
-- 原始手册：`evidence/UDG/20.15.2/FABRICMTU.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PAE内联口MTU值（LST-FABRICMTU）_32426909.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE内联口的MTU值（SET-FABRICMTU）_85240592.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBCHARGECHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBCHARGECHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对本地用户、漫游用户、拜访用户所采用的计费属性（LST-GLBCHARGECHAR）_09896801.md`
+- 原始手册：`evidence/UNC/20.15.2/设置对本地用户、漫游用户、拜访用户所采用的计费属性（SET-GLBCHARGECHAR）_09896800.md`

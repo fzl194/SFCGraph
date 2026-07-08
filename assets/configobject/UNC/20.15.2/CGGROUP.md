@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CGGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/CGGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/CGGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/CGGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CG组（MOD-CGGROUP）_09896880.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CG组（RMV-CGGROUP）_09896881.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG组（LST-CGGROUP）_09896882.md`
+- 原始手册：`evidence/UNC/20.15.2/添加CG组（ADD-CGGROUP）_09896879.md`

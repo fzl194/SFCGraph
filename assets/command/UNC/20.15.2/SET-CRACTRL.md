@@ -66,4 +66,4 @@ SET CRACtrl: CRARULE=LOCAL,TAI=ENABLE,ECGI=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CRACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CRA控制参数（SET-CRACTRL）_09897044.md`

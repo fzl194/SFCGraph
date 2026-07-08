@@ -62,4 +62,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFALLOWEDARPS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户允许的ARP列表（RMV-SMFALLOWEDARPS）_58840355.md`

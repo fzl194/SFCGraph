@@ -81,4 +81,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PIMCTLMSGCNTVRF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PIM实例报文统计计数（DSP-PIMCTLMSGCNTVRF）_00866241.md`

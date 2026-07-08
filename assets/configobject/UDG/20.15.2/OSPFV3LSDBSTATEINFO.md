@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3LSDBSTATEINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3-LSDB的状态信息（DSP-OSPFV3LSDBSTATEINFO）_49801982.md`

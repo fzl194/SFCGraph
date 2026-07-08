@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BWMCONTROLLER.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMCONTROLLER.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMCONTROLLER.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMCONTROLLER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改带宽管理控制器（MOD-BWMCONTROLLER）_82837461.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理控制器（RMV-BWMCONTROLLER）_82837462.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理控制器（ADD-BWMCONTROLLER）_82837460.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理控制器（LST-BWMCONTROLLER）_82837463.md`

@@ -54,4 +54,4 @@ RMV NGMDTPLMN: PLMNIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGMDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除最小化路测的PLMN（RMV-NGMDTPLMN）_00293512.md`

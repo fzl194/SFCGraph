@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BMBYPASSSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/BMBYPASSSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询裸机节点自动进入BYPASS开关（DSP-BMBYPASSSWITCH）_08719037.md`
+- 原始手册：`evidence/UDG/20.15.2/设置裸机节点自动进入BYPASS开关（SET-BMBYPASSSWITCH）_58120294.md`

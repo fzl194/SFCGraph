@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ABSTIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/ABSTIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/ABSTIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/ABSTIMERANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改绝对时间段（MOD-ABSTIMERANGE）_82837424.md`
+- 原始手册：`evidence/UDG/20.15.2/删除绝对时间段（RMV-ABSTIMERANGE）_86527021.md`
+- 原始手册：`evidence/UDG/20.15.2/增加绝对时间段（ADD-ABSTIMERANGE）_82837423.md`
+- 原始手册：`evidence/UDG/20.15.2/查询绝对时间段（LST-ABSTIMERANGE）_82837426.md`

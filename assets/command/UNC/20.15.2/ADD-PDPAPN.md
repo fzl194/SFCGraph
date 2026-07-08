@@ -79,4 +79,4 @@ ADD PDPAPN: SUBRANGE=ALL_USER, PDPTYPE=PT_IPV4, APNNI="CNNET";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PDPAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地APN-NI配置(ADD-PDPAPN)_72345275.md`

@@ -66,4 +66,4 @@ ADD PNFEXGROUPID: NFINSTANCEID="UDM_Instance_0", EXGROUPID="externalGroupId01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFEXGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的外部群组信息（ADD-PNFEXGROUPID）_09652366.md`

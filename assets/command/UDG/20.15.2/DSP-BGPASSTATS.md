@@ -63,4 +63,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-BGPASSTATS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP-AS查询统计（DSP-BGPASSTATS）_50121338.md`

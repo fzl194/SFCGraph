@@ -61,4 +61,4 @@ ADD CCPCCACT: CCTYPE=VALUE, CHGCHAR="0x1234", FWDOCSENABLE=TRUE, FOTNM="ccpfot1"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CCPCCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加融合计费Proxy基于CC处理动作（ADD-CCPCCACT）_45110906.md`

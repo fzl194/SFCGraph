@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PAERULELOOP3T.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE上Loop口三元组规则信息（DSP-PAERULELOOP3T）_92520002.md`

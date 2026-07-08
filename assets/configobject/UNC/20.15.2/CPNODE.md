@@ -35,7 +35,7 @@ CP节点用于PFCP建立偶联时唯一标识控制面的SMF。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/CPNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/CPNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/CPNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CP节点信息（MOD-CPNODE）_09654361.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CP节点信息（RMV-CPNODE）_09654398.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CP节点信息（ADD-CPNODE）_09653136.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CP节点信息（LST-CPNODE）_09653121.md`

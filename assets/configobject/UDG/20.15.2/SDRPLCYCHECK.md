@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRPLCYCHECK.md`
+- 原始手册：`evidence/UDG/20.15.2/显示策略核查任务进度（DSP-SDRPLCYCHECK）_49379570.md`

@@ -59,4 +59,4 @@ RMV FAULTUPBINDGRP: UPFID="upf_instance_0", UPFGRPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-FAULTUPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障UPF与UPF组的绑定关系（RMV-FAULTUPBINDGRP）_94897068.md`

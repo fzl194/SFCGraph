@@ -58,4 +58,4 @@ LCK TMGIRNG: MCC="460", MNC="03", MBSIDRNGSTART="0x000001", LOCKED=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCK-TMGIRNG.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定TMGI号段（LCK-TMGIRNG）_48411841.md`

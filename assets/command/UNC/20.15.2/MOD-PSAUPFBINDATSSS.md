@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PSAUPFBINDATSSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PSA-UPF和ATSSS-UPF绑定关系中的ATSSS-UPF（MOD-PSAUPFBINDATSSS）_96242670.md`

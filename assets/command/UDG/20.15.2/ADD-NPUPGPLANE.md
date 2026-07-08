@@ -60,4 +60,4 @@ ADD NPUPGPLANE: RUID=66, PLANEID=plane_1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-NPUPGPLANE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加NP升级平面（ADD-NPUPGPLANE）_92175826.md`

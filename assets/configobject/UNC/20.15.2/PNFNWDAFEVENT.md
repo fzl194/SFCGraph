@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFNWDAFEVENT.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNWDAFEVENT.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNWDAFEVENT.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNWDAFEVENT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NWDAF信息（MOD-PNFNWDAFEVENT）_56105694.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NWDAF信息（RMV-PNFNWDAFEVENT）_56264018.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NWDAF信息（ADD-PNFNWDAFEVENT）_92104381.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NWDAF信息（LST-PNFNWDAFEVENT）_92262949.md`

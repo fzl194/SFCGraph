@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TALISTPAGINGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TALIST寻呼不重发TAC区间(LST-TALISTPAGINGCFG)_26306198.md`

@@ -118,4 +118,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-OSPFERRORDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF进程的错误信息（DSP-OSPFERRORDATA）_50280598.md`

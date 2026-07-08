@@ -66,4 +66,4 @@ UE Radio Capability信元最大长度  =  4096
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-UERADIOCAPLEN.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UE-Radio-Capability信元长度（DSP-UERADIOCAPLEN）_71436533.md`

@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPCCOMMTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCCOMMTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户面控制通用定时器（LST-UPCCOMMTIMER）_02357460.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户面控制通用定时器（SET-UPCCOMMTIMER）_49117425.md`

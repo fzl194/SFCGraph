@@ -57,4 +57,4 @@ RMV EXTENDPROP:EXTENDPROPNAME="textcategoryprop";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-EXTENDPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展属性配置（RMV-EXTENDPROP）_82837597.md`

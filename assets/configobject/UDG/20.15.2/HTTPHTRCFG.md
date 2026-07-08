@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPHTRCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPHTRCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTR流控全局配置（LST-HTTPHTRCFG）_35550174.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTR流控全局配置（SET-HTTPHTRCFG）_35071002.md`

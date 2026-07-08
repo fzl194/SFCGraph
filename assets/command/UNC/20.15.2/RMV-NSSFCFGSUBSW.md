@@ -55,4 +55,4 @@ RMV NSSFCFGSUBSW: MCC="235", MNC="36";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSSFCFGSUBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/删除按签约NSSAI分配Configed-NSSAI的PLMN级别开关（RMV-NSSFCFGSUBSW）_44701273.md`

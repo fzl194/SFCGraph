@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改扩展属性配置（MOD-EXTENDPROP）_82837596.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展属性配置（RMV-EXTENDPROP）_82837597.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展属性配置（ADD-EXTENDPROP）_82837595.md`
+- 原始手册：`evidence/UDG/20.15.2/查询扩展属性配置（LST-EXTENDPROP）_82837598.md`

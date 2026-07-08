@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ENBGNBNEIBS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示eNodeB邻接的en-gNB（DSP-ENBGNBNEIBS）_88506886.md`

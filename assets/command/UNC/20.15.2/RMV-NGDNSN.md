@@ -65,4 +65,4 @@ RMV NGDNSN: FQDN="mmec22.mmegi8001.mme.epc.mnc123.mcc456.3gppnetwork.org", HSIND
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGDNSN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS-NAPTR记录（RMV-NGDNSN）_09652521.md`

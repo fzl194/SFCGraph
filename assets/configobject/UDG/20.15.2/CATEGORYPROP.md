@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CATEGORYPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/CATEGORYPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/CATEGORYPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除分类属性（RMV-CATEGORYPROP）_82837505.md`
+- 原始手册：`evidence/UDG/20.15.2/增加分类属性（ADD-CATEGORYPROP）_82837504.md`
+- 原始手册：`evidence/UDG/20.15.2/查询分类属性（LST-CATEGORYPROP）_82837506.md`

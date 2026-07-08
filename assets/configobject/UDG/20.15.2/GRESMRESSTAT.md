@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GRESMRESSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示消费者申请资源的统计信息（DSP-GRESMRESSTAT）_00841389.md`

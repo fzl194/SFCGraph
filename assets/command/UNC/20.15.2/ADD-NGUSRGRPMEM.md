@@ -59,4 +59,4 @@ ADD NGUSRGRPMEM: USRGRPID=20, IMSIPRE="123456", DESC="SomeTown";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGUSRGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G用户群成员（ADD-NGUSRGRPMEM）_44006476.md`

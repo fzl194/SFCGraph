@@ -64,4 +64,4 @@ TCP流老化时间（秒）  =  500
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOFLOWAGINGCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP流老化功能配置（LST-TOFLOWAGINGCFG）_44038784.md`

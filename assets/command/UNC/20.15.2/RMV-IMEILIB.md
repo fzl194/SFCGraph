@@ -60,4 +60,4 @@ RMV IMEILIB: SELMODE=IMEI_TAC, IMEITAC="12345670";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMEILIB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMEI库记录（RMV-IMEILIB）_72225413.md`

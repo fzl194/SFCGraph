@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPSTATS.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPSTATS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示HTTP统计信息（DSP-HTTPSTATS）_83972184.md`
+- 原始手册：`evidence/UNC/20.15.2/清除HTTP统计信息（CLR-HTTPSTATS）_29291765.md`

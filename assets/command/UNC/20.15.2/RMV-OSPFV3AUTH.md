@@ -58,4 +58,4 @@ RMV OSPFV3AUTH:PROCID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-OSPFV3AUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPFv3认证配置（RMV-OSPFV3AUTH）_00841553.md`

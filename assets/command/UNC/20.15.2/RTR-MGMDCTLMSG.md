@@ -57,4 +57,4 @@ RTR MGMDCTLMSG: VRFNAME="_public_", ADDRESSFAMILY=ipv4unicast, IFNAME="Ethernet6
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-MGMDCTLMSG.md`
+- 原始手册：`evidence/UNC/20.15.2/清除IGMP报文统计计数（RTR-MGMDCTLMSG）_50121298.md`

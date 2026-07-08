@@ -69,4 +69,4 @@ NF IP是否与NFService端口号组合 = FALSE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SBILINKSETPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SBI链路集策略（LST-SBILINKSETPROP）_28971843.md`

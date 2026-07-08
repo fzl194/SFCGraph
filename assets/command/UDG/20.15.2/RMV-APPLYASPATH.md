@@ -54,4 +54,4 @@ RMV APPLYASPATH:POLICYNAME="bbb",NODESEQUENCE=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-APPLYASPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除AS路径设置（RMV-APPLYASPATH）_49802118.md`

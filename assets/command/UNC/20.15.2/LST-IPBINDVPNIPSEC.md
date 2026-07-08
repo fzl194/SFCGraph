@@ -63,4 +63,4 @@ IPv4地址掩码  =  255.255.0.0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IPBINDVPNIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口绑定VPN（LST-IPBINDVPNIPSEC）_26032195.md`

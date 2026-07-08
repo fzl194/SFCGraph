@@ -88,4 +88,4 @@ I-SMF/SGW使用的融合计费模板名称  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNCHARGECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的计费配置（LST-APNCHARGECTRL）_09896818.md`

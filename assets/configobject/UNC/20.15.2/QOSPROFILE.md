@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QoS描述配置（MOD-QOSPROFILE）_09652553.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS描述配置（RMV-QOSPROFILE）_09653062.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QoS描述配置（ADD-QOSPROFILE）_09654430.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS描述配置（LST-QOSPROFILE）_09652691.md`

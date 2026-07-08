@@ -72,4 +72,4 @@ ADD CGGRPBINDING: OFCTEMPLATENAME="ofctemplate1", CGGRPID=1, SEGGROUPNAME="seggr
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CGGRPBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CG组绑定关系（ADD-CGGRPBINDING）_09896884.md`

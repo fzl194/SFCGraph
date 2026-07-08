@@ -86,4 +86,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IUIMEICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式IMEI配置(LST-IUIMEICFG)_26145636.md`

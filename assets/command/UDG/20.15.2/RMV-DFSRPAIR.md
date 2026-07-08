@@ -57,4 +57,4 @@ RMV DFSRPAIR: DFSRPAIRID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DFSRPAIR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除双发选收结对配置（RMV-DFSRPAIR）_22918676.md`

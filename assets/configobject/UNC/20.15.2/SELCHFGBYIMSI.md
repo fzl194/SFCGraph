@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/SELCHFGBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI与CHF组的绑定关系（MOD-SELCHFGBYIMSI）_33863439.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI与CHF组的绑定关系（RMV-SELCHFGBYIMSI）_88622274.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI与CHF组的绑定关系（ADD-SELCHFGBYIMSI）_88303804.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI与CHF组的绑定关系（LST-SELCHFGBYIMSI）_88462354.md`

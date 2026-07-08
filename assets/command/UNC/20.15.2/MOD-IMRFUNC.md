@@ -58,4 +58,4 @@ MOD IMRFUNC: SUBRANGE=SPECIAL_USER, IMSIPRE="123000", INTERFACETYPE=S11-0&S6a-0&
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IMRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户消息统计功能配置(MOD-IMRFUNC)_26305222.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N2INFAMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/N2INFAMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/N2INFAMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF的N2接口信息（RMV-N2INFAMFINFO）_09651587.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF的N2接口信息（ADD-N2INFAMFINFO）_09651796.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的N2接口信息（LST-N2INFAMFINFO）_09652704.md`

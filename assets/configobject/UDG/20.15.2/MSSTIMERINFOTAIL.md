@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSTIMERINFOTAIL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询定时器详细信息（DSP-MSSTIMERINFOTAIL）_50281150.md`

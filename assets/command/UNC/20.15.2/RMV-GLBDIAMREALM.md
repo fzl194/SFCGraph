@@ -60,4 +60,4 @@ RMV GLBDIAMREALM: APPLICATION=GX, SCOPE=SPECIFIED, SEGMENTNAME="imsi_msisdn_segm
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GLBDIAMREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除全局Diameter域（RMV-GLBDIAMREALM）_09897282.md`

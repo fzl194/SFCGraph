@@ -68,4 +68,4 @@ ADD DETECTPATH: PATHNAME="testpath3", LOCALINF="phif1/0/1", IPVERSION=IPV6, PEER
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-DETECTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/添加探测路径配置（ADD-DETECTPATH）_44183448.md`

@@ -60,4 +60,4 @@ RMV ULCLDNAIDPMODE:APN="huawei1",DNAI="huawei2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ULCLDNAIDPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定DNAI的ULCL部署模式（RMV-ULCLDNAIDPMODE）_62084041.md`

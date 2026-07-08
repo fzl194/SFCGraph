@@ -74,4 +74,4 @@ ADD CONTCATEGROUP: CONTCATEGNAME="cf_contcategrprange1", CATEGORYTYPE=SPECIFIC, 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CONTCATEGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容分类组（ADD-CONTCATEGROUP）_39478824.md`

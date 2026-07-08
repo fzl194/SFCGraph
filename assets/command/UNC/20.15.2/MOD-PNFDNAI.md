@@ -70,4 +70,4 @@ MOD PNFDNAI: INDEX=1,NFINSTANCEID="UPF_Instance_0",DNAI="huawei.com",PNFDNNINDEX
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的DNAI信息（MOD-PNFDNAI）_09653103.md`

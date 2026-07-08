@@ -71,4 +71,4 @@ MOD SIGNADBRULE:SIGNADBRULENAME="test_signadbrule",PROTOCOLNAME="facebook_others
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-SIGNADBRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改特征库规则配置（MOD-SIGNADBRULE）_25895979.md`

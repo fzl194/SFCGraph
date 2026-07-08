@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGGUTISELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGGUTISELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGGUTISELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGGUTISELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF区域GUTI选网控制策略（MOD-NGGUTISELPLCY）_13939889.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF区域GUTI选网控制策略（RMV-NGGUTISELPLCY）_13939897.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF区域GUTI选网控制策略（ADD-NGGUTISELPLCY）_14059345.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF区域GUTI选网控制策略（LST-NGGUTISELPLCY）_13939881.md`

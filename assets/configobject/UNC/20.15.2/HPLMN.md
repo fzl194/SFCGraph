@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/HPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/HPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/HPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地PLMN(MOD-HPLMN)_26305884.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地PLMN(RMV-HPLMN)_72225753.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地PLMN(ADD-HPLMN)_26146074.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地PLMN(LST-HPLMN)_72345675.md`

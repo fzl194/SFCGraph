@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-TALISTNGRANINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示TALIST下5G基站接入数量信息（DSP-TALISTNGRANINFO）_62657154.md`

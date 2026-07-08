@@ -69,4 +69,4 @@ TerminateNotify消息接收速率 = 2000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCFLOWCONTROL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC流控配置（LST-PCCFLOWCONTROL）_34160974.md`

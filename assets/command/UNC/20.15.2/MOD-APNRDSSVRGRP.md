@@ -60,4 +60,4 @@ MOD APNRDSSVRGRP:APN="apntest",RDSSVRGRPNAME="rgtest",COPYINTERIMUPD=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNRDSSVRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN-Radius服务器组（MOD-APNRDSSVRGRP）_09896736.md`

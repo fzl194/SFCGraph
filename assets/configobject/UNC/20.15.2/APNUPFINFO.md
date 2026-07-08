@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNUPFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/APNUPFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/APNUPFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/APNUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定APN的UPF节点信息（MOD-APNUPFINFO）_96242549.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定APN的UPF节点信息（RMV-APNUPFINFO）_96242745.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定APN的UPF节点信息（ADD-APNUPFINFO）_96241630.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定APN的UPF节点信息（LST-APNUPFINFO）_96242084.md`

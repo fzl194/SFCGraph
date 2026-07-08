@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CFGERRCMD.md`
+- 原始手册：`evidence/UDG/20.15.2/显示CFG方式配置恢复的失败信息（DSP-CFGERRCMD）_59103943.md`

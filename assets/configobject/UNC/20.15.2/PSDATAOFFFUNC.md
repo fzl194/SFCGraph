@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PSDATAOFFFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/PSDATAOFFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询3GPP-PS-data-off功能相关的参数（LST-PSDATAOFFFUNC）_35439598.md`
+- 原始手册：`evidence/UNC/20.15.2/设置3GPP-PS-data-off功能相关的参数（SET-PSDATAOFFFUNC）_35599384.md`

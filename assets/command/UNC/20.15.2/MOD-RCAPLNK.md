@@ -58,4 +58,4 @@ MOD RCAPLNK: LNK=1, CROSSIPFLAG=Yes;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-RCAPLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改注册中心链路-(MOD-RCAPLNK)_46028502.md`

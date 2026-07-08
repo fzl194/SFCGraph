@@ -80,4 +80,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPPORTBANDWIDTHUSAGE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP端口带宽实时利用率（DSP-NPPORTBANDWIDTHUSAGE）_08596582.md`

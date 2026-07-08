@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFCACHE.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCACHE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示缓存的SMF与TAI映射关系（DSP-SMFCACHE）_88697028.md`
+- 原始手册：`evidence/UNC/20.15.2/清除SMF缓存信息（CLR-SMFCACHE）_35273617.md`

@@ -152,4 +152,4 @@ SAPI    SAPI的状态          标识每个SAPI上已有的NSAPI总数          
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DPHMS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示MS上下文信息(DSP-DPHMS)_72225697.md`

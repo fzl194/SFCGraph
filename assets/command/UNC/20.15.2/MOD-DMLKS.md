@@ -62,4 +62,4 @@ MOD DMLKS:LINKSIDX=0,PEERIDX=1,LSSELMODE=SELMODE_MASTER_SLAVE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DMLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路集配置(MOD-DMLKS)_72345879.md`

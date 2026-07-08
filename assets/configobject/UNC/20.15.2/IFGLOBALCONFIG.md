@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFGLOBALCONFIG.md`
-- 原始手册：`evidence/UNC/20.15.2/IFGLOBALCONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口全局配置（LST-IFGLOBALCONFIG）_00440533.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口全局配置（SET-IFGLOBALCONFIG）_50280646.md`

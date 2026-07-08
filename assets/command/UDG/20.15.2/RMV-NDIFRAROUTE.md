@@ -55,4 +55,4 @@ RMV NDIFRAROUTE: IFNAME="Ethernet65/0/8",PREFIX="2001:db8::11",PREFIXLENGTH=70;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-NDIFRAROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除接口上ND-RA路由配置信息（RMV-NDIFRAROUTE）_00840573.md`

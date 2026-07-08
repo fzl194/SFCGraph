@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLROFFLOADLAILST.md`
-- 原始手册：`evidence/UNC/20.15.2/VLROFFLOADLAILST.md`
-- 原始手册：`evidence/UNC/20.15.2/VLROFFLOADLAILST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置区列表(RMV-VLROFFLOADLAILST)_72345029.md`
+- 原始手册：`evidence/UNC/20.15.2/增加位置区列表(ADD-VLROFFLOADLAILST)_26305242.md`
+- 原始手册：`evidence/UNC/20.15.2/查询位置区列表(LST-VLROFFLOADLAILST)_26145428.md`

@@ -87,4 +87,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DBNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CSDB节点信息（DSP-DBNODE）_29626990.md`

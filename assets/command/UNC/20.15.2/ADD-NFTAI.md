@@ -67,4 +67,4 @@ ADD NFTAI: NFINSTANCENAME="SMF_Instance_0", MCC="460", MNC="01", TAC="000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-TAI信息（ADD-NFTAI）_09652077.md`

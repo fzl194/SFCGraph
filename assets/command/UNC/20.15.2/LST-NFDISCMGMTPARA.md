@@ -71,4 +71,4 @@ GPSI精细化选择开关  =  OFF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFDISCMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元服务发现功能管理参数（LST-NFDISCMGMTPARA）_42089657.md`

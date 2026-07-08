@@ -62,4 +62,4 @@ SET VLRMAPVERSION: MAPVERSION=V3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-VLRMAPVERSION.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR使用的MAP接口版本（SET-VLRMAPVERSION）_53801294.md`

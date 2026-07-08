@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPRAMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPRAMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPRAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PRA位置区成员（RMV-NGPRAMEM）_44007664.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PRA位置区成员（ADD-NGPRAMEM）_44006471.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PRA位置区成员（LST-NGPRAMEM）_44007017.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEBFDERECV.md`
+- 原始手册：`evidence/UNC/20.15.2/显示BFD-ERECV表（DSP-SFEBFDERECV）_49961770.md`

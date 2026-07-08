@@ -68,4 +68,4 @@ SET NRFFCPARA: FCLEVEL=LOW, FCRSP=TooManyRequest_429;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRFFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流控等级对应的流控参数（SET-NRFFCPARA）_09652224.md`

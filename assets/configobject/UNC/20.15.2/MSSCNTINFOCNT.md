@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSSCNTINFOCNT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定计数器ID的计数器信息（DSP-MSSCNTINFOCNT）_00841525.md`

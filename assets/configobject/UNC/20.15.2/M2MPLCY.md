@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/M2MPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改M2M策略参数(MOD-M2MPLCY)_72345365.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M策略参数(RMV-M2MPLCY)_26305574.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M策略参数(ADD-M2MPLCY)_72225443.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M策略参数(LST-M2MPLCY)_26145766.md`

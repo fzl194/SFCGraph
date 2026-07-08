@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OLNCHGPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/OLNCHGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示在线计费全局参数配置（LST-OLNCHGPARA）_09896982.md`
+- 原始手册：`evidence/UNC/20.15.2/配置在线计费全局参数（SET-OLNCHGPARA）_09896981.md`

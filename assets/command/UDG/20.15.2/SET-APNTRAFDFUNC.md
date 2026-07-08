@@ -59,4 +59,4 @@ SET APNTRAFDFUNC: APN="apn1", TRAFFICFDSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNTRAFDFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置流量转发APN开关（SET-APNTRAFDFUNC）_92313447.md`

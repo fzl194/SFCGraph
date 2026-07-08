@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGLANFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NGLANFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NGLAN扩展功能（LST-NGLANFUNC）_98868305.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NGLAN扩展功能（SET-NGLANFUNC）_98629449.md`

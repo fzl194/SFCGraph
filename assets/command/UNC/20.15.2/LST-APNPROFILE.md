@@ -58,4 +58,4 @@ LST APNPROFILE: APNNI="INTERNET";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN配置（LST-APNPROFILE）_17398474.md`

@@ -70,4 +70,4 @@ BEGINGPSI  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SBIDIALTEST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询间接路由拨测用户配置（LST-SBIDIALTEST）_06749459.md`

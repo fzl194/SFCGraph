@@ -84,4 +84,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CLRDNSCPROG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询离散清缓存进度(DSP-CLRDNSCPROG)_72246921.md`

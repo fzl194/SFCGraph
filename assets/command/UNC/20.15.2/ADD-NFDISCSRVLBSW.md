@@ -64,4 +64,4 @@ ADD NFDISCSRVLBSW: TARGETNFTYPE=NfUDM, LBSWITCH=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFDISCSRVLBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务发现NF-Service负载均衡开关（ADD-NFDISCSRVLBSW）_04217452.md`

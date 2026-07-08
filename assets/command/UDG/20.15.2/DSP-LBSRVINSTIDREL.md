@@ -64,4 +64,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LBSRVINSTIDREL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务ID与服务实例的关系（DSP-LBSRVINSTIDREL）_29627083.md`

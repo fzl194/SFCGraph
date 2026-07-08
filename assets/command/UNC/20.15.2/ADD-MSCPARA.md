@@ -62,4 +62,4 @@ ADD MSCPARA: IPTYPE=IPV4, IPV4="10.141.149.100", MSCNUM="123456789";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MSCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MSC参数(ADD-MSCPARA)_72225657.md`

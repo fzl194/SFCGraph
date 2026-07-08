@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/触发VLR向MME发送RESET消息（SND-VLRRESET）_11430785.md`

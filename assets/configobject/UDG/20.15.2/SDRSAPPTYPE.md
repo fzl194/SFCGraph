@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRSAPPTYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDRS中的APPTYPE信息（DSP-SDRSAPPTYPE）_05545720.md`

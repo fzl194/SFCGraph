@@ -60,4 +60,4 @@ RMV APNUPFINFO:APN="huawei.com",UPFINSTANCEID="upf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定APN的UPF节点信息（RMV-APNUPFINFO）_96242745.md`

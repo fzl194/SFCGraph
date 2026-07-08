@@ -66,4 +66,4 @@ IP类型 = IPV4
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LBRTCMTY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由团体属性信息（DSP-LBRTCMTY）_37187991.md`

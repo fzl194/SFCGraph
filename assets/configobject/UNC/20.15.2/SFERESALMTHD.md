@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFERESALMTHD.md`
-- 原始手册：`evidence/UNC/20.15.2/SFERESALMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VNRS内部资源不足告警的阈值参数（LST-SFERESALMTHD）_15691261.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VNRS内部资源不足告警的阈值参数（SET-SFERESALMTHD）_15771589.md`

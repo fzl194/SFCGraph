@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEACLTABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SFE-ACL表项（DSP-SFEACLTABLE）_00841709.md`

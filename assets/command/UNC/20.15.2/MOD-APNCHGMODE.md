@@ -70,4 +70,4 @@ MOD APNCHGMODE:APN="huawei.com", TMACCTYPE=UE5G_RAT4G, BY5GSIWKI=False, FORCED=N
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的计费接口选择方式（MOD-APNCHGMODE）_72001549.md`

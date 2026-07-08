@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/R8QOSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/R8QOSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS-QoS参数到Pre-R8-QoS参数映射规则（LST-R8QOSMAP）_72225913.md`
+- 原始手册：`evidence/UNC/20.15.2/设置EPS-QoS参数到Pre-R8-QoS参数映射规则（SET-R8QOSMAP）_26146234.md`

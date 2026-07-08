@@ -62,4 +62,4 @@ RMV SPECIFICAPNVAL:SUBSCRIBERAPN="apn1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SPECIFICAPNVAL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户APN与消息交互使用APN的映射关系（RMV-SPECIFICAPNVAL）_07016802.md`

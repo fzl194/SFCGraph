@@ -59,4 +59,4 @@ MOD SMFAPNGRP:GRPNAME="grp1",DESC="M2M";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMFAPNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS关联的APN组的描述信息（MOD-SMFAPNGRP）_35273627.md`

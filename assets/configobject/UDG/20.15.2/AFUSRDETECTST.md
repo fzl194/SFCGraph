@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFUSRDETECTST.md`
+- 原始手册：`evidence/UDG/20.15.2/显示欺诈用户检测结果（DSP-AFUSRDETECTST）_16216978.md`

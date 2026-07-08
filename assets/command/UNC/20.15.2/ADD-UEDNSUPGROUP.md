@@ -62,4 +62,4 @@ ADD UEDNSUPGROUP: UPFGRPNAME="upfgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UEDNSUPGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS关联的UPF组（ADD-UEDNSUPGROUP）_73321231.md`

@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HLRFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR向HLR发送请求的固定速率流控（LST-HLRFIXEDFC）_53641450.md`

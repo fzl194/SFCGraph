@@ -77,4 +77,4 @@ LDP分布式整数形式的编号  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LDPSSMGLSSOCK.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP的Listen-Socket信息（DSP-LDPSSMGLSSOCK）_00440549.md`

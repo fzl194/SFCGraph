@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFN26PLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF-N26接口策略（LST-AMFN26PLCY）_10017249.md`

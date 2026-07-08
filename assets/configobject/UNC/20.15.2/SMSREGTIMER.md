@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSREGTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSREGTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR_SMSF向注册中心注册的时间参数（LST-SMSREGTIMER）_03961133.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR_SMSF向注册中心注册的时间参数（SET-SMSREGTIMER）_53321882.md`

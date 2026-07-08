@@ -56,4 +56,4 @@ RMV INSAPROTOCOL:PROTOCOLNAME="http";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-INSAPROTOCOL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除黑白名单协议配置（RMV-INSAPROTOCOL）_06564541.md`

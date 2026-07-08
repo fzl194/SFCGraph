@@ -64,4 +64,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-REDUNDUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询静态地址用户路由冗余功能（LST-REDUNDUSER）_71074368.md`

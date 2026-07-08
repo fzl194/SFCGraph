@@ -81,4 +81,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFSETID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF集与切片的关系（LST-AMFSETID）_09651520.md`

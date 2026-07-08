@@ -72,4 +72,4 @@ Ipv6的优先级  =  7
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SQOSREMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询重标记配置（LST-SQOSREMARK）_00441201.md`

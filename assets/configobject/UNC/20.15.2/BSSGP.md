@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BSSGP.md`
-- 原始手册：`evidence/UNC/20.15.2/BSSGP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSSGP参数(LST-BSSGP)_26145988.md`
+- 原始手册：`evidence/UNC/20.15.2/设置BSSGP参数(SET-BSSGP)_72345587.md`

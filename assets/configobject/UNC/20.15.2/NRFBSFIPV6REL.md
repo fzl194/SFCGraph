@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFIPV6REL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFIPV6REL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFIPV6REL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF索引和IPv6的关联关系（RMV-NRFBSFIPV6REL）_45612437.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BSF索引和IPv6的关联关系（ADD-NRFBSFIPV6REL）_45612409.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSF索引和IPv6的关联关系（LST-NRFBSFIPV6REL）_45612433.md`

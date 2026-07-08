@@ -66,4 +66,4 @@ MOD UPDIAMLOCINFO:HOSTNAME="test",REALMNAME="test",PRODUCTNAME="product",VENDORI
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-UPDIAMLOCINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter本端信息（MOD-UPDIAMLOCINFO）_97080157.md`

@@ -57,4 +57,4 @@ RMV S1SMARTRULE: UETYPE=ANDROID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-S1SMARTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式信令抑制规则(RMV-S1SMARTRULE)_26305556.md`

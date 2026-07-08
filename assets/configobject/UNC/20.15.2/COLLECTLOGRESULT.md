@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COLLECTLOGRESULT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示日志收集执行结果（DSP-COLLECTLOGRESULT）_59103607.md`

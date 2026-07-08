@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOWPRIAPNFC.md`
-- 原始手册：`evidence/UNC/20.15.2/LOWPRIAPNFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询低优先级APN流控参数（LST-LOWPRIAPNFC）_26146158.md`
+- 原始手册：`evidence/UNC/20.15.2/设置低优先级APN流控参数(SET-LOWPRIAPNFC)_72345757.md`

@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BEARERNUM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示承载数（DSP-BEARERNUM）_16216973.md`

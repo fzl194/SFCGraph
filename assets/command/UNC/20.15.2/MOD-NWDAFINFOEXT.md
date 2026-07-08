@@ -52,4 +52,4 @@ MOD NWDAFINFOEXT: INSTANCENAME="NWDAF_Instance_0", ID="central", NWDAFEVENTS=QOS
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NWDAFINFOEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NWDAF扩展信息（MOD-NWDAFINFOEXT）_14059365.md`

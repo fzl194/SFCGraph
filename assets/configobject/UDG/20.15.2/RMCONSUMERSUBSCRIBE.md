@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMCONSUMERSUBSCRIBE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由管理消费者订阅信息（DSP-RMCONSUMERSUBSCRIBE）_00866217.md`

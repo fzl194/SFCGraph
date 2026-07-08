@@ -75,4 +75,4 @@ CHR单据设备号填充方式  =  SGSN号
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR配置（LST-CHRCFG）_26305426.md`

@@ -59,4 +59,4 @@ SET GTSM:ACTION=DROP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GTSM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTSM全局配置属性（SET-GTSM）_00866477.md`

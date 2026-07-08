@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRFAULTEN.md`
-- 原始手册：`evidence/UNC/20.15.2/VLRFAULTEN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR故障增强功能(LST-VLRFAULTEN)_35400473.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR故障增强功能(SET-VLRFAULTEN)_92948544.md`

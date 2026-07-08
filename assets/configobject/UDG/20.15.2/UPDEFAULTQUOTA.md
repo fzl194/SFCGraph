@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDEFAULTQUOTA.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDEFAULTQUOTA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局默认配额开关（LST-UPDEFAULTQUOTA）_82837624.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局默认配额开关（SET-UPDEFAULTQUOTA）_82837623.md`

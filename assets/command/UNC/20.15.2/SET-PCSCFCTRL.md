@@ -64,4 +64,4 @@ SET PCSCFCTRL: FAILRST=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PCSCFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置P-CSCF控制配置（SET-PCSCFCTRL）_09653206.md`

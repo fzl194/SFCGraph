@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-AUTOLOGPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置日志自动备份策略（SET-AUTOLOGPOLICY）_89632096.md`

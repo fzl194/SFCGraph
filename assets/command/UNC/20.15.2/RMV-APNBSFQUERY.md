@@ -58,4 +58,4 @@ RMV APNBSFQUERY: APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNBSFQUERY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN的BSF查询功能配置（RMV-APNBSFQUERY）_21443644.md`

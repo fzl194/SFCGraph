@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLROPC.md`
-- 原始手册：`evidence/UNC/20.15.2/VLROPC.md`
-- 原始手册：`evidence/UNC/20.15.2/VLROPC.md`
-- 原始手册：`evidence/UNC/20.15.2/VLROPC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR信令点(MOD-VLROPC)_45916360.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VLR信令点(RMV-VLROPC)_46075484.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VLR信令点(ADD-VLROPC)_46234740.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR信令点(LST-VLROPC)_92075657.md`

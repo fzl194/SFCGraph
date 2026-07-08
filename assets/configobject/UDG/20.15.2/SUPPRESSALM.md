@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SUPPRESSALM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询被抑制告警（LST-SUPPRESSALM）_39192239.md`

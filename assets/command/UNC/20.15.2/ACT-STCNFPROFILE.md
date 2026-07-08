@@ -64,4 +64,4 @@ ACT STCNFPROFILE: ROFILEFILENAME="instance1.json", SHA256INFO="b7f583a64f97c9f5b
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACT-STCNFPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/激活手动注册NFProfile（ACT-STCNFPROFILE）_44006304.md`

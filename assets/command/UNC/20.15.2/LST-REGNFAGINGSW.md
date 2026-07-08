@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-REGNFAGINGSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF实例老化开关（LST-REGNFAGINGSW）_09654407.md`

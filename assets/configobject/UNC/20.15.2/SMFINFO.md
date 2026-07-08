@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF信息（MOD-SMFINFO）_09652374.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF信息（RMV-SMFINFO）_09653154.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF信息（ADD-SMFINFO）_09653991.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF信息（LST-SMFINFO）_09651747.md`

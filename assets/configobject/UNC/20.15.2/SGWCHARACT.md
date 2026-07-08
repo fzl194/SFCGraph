@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S-GW特性对接配置(MOD-SGWCHARACT)_26145970.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S-GW特性对接配置(RMV-SGWCHARACT)_72345569.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S-GW特性对接配置(ADD-SGWCHARACT)_26305778.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S-GW特性对接配置(LST-SGWCHARACT)_72225649.md`

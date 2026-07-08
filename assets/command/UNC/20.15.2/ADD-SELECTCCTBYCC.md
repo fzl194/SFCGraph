@@ -67,4 +67,4 @@ ADD SELECTCCTBYCC: CCTYPE=VALUE, CCVALUE="1234", CCTMPLTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SELECTCCTBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于CC配置融合计费模板处理（ADD-SELECTCCTBYCC）_09654384.md`

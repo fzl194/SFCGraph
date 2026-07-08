@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DCCTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/DCCTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/DCCTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/DCCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DCC模板（MOD-DCCTEMPLATE）_09896924.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCC模板（RMV-DCCTEMPLATE）_09896925.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DCC模板（ADD-DCCTEMPLATE）_09896923.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCC模板（LST-DCCTEMPLATE）_09896933.md`

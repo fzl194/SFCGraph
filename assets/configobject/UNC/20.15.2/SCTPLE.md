@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCTP本地实体(MOD-SCTPLE)_11295829.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP本地实体(RMV-SCTPLE)_11295837.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCTP本地实体(ADD-SCTPLE)_11295747.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP本地实体(LST-SCTPLE)_11295784.md`

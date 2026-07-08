@@ -58,4 +58,4 @@ RMV EPRPDYN:EPRPDYNNAME="pgw1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-EPRPDYN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除EPRPDYN对象（RMV-EPRPDYN）_82837836.md`

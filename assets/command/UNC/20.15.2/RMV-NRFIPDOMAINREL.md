@@ -59,4 +59,4 @@ RMV NRFIPDOMAINREL:  BSFINDEX=1, IPDOMAIN="Huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFIPDOMAINREL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF索引和IP-Domain的关联关系（RMV-NRFIPDOMAINREL）_45612438.md`

@@ -95,4 +95,4 @@ HUAWEI1.COM    Both           低           开                       660       
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN控制参数配置(LST-APNCTRL)_72345069.md`

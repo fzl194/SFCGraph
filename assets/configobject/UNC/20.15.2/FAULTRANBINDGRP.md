@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N3接口故障RAN与RAN组的绑定关系（MOD-FAULTRANBINDGRP）_39737007.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障RAN与RAN组的绑定关系（RMV-FAULTRANBINDGRP）_40016985.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N3接口故障RAN与RAN组的绑定关系（ADD-FAULTRANBINDGRP）_39777019.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障RAN与RAN组的绑定关系（LST-FAULTRANBINDGRP）_94897066.md`

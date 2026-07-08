@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFGROUPID.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGROUPID.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF群组信息（RMV-NFGROUPID）_91460557.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF群组信息（ADD-NFGROUPID）_44339636.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF群组信息（LST-NFGROUPID）_44540604.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GRAYUPTSTUSER.md`
-- 原始手册：`evidence/UDG/20.15.2/GRAYUPTSTUSER.md`
-- 原始手册：`evidence/UDG/20.15.2/GRAYUPTSTUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除灰度升级拨测用户（RMV-GRAYUPTSTUSER）_67072876.md`
+- 原始手册：`evidence/UDG/20.15.2/增加灰度升级拨测用户（ADD-GRAYUPTSTUSER）_35710796.md`
+- 原始手册：`evidence/UDG/20.15.2/查询支持灰度升级拨测的用户（LST-GRAYUPTSTUSER）_40198963.md`

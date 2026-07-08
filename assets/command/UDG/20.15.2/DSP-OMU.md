@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OMU.md`
+- 原始手册：`evidence/UDG/20.15.2/显示主备操作维护单元信息（DSP-OMU）_59103381.md`

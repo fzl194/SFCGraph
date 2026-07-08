@@ -66,4 +66,4 @@ Tethering重新上报等待时间（秒） = 60
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRVRETRYTIMER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务重试等待时间（LST-SRVRETRYTIMER）_06055000.md`

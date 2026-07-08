@@ -62,4 +62,4 @@ SET RCLICIGNSW: RCLICIGNSW=FUNC_ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-RCLICIGNSW.md`
+- 原始手册：`evidence/UNC/20.15.2/设置注册中心用户数license忽略开关（SET-RCLICIGNSW）_54974858.md`

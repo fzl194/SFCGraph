@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DBGCMDPRXY.md`
+- 原始手册：`evidence/UDG/20.15.2/通过命令代理执行调试命令（OPR-DBGCMDPRXY）_29626981.md`

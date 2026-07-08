@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BWMRULEGLOBAL.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMRULEGLOBAL.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMRULEGLOBAL.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMRULEGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改全局带宽管理规则（MOD-BWMRULEGLOBAL）_82837483.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局带宽管理规则（RMV-BWMRULEGLOBAL）_82837484.md`
+- 原始手册：`evidence/UDG/20.15.2/增加全局带宽管理规则（ADD-BWMRULEGLOBAL）_82837482.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局带宽管理规则（LST-BWMRULEGLOBAL）_82837485.md`

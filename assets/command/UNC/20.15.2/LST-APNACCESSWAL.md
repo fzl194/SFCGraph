@@ -67,4 +67,4 @@ APN名称 = huawei.com
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNACCESSWAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN接入速率（LST-APNACCESSWAL）_09651641.md`

@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDNNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNN路由（MOD-NRFDNNRT）_86184262.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN路由（RMV-NRFDNNRT）_09653721.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN路由（ADD-NRFDNNRT）_09651515.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN路由（LST-NRFDNNRT）_09654353.md`

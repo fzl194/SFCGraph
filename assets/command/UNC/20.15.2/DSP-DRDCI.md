@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DRDCI.md`
+- 原始手册：`evidence/UNC/20.15.2/显示DC间通信通道运行状态（DSP-DRDCI）_23394826.md`

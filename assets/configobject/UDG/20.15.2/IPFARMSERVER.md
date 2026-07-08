@@ -35,8 +35,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPFARMSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/IPFARMSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/IPFARMSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/IPFARMSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/IPFARMSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPFarmServer（MOD-IPFARMSERVER）_86526412.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPFarmServer（RMV-IPFARMSERVER）_86526415.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPFarmServer（ADD-IPFARMSERVER）_82837056.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPFarmServer（LST-IPFARMSERVER）_82837059.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPFarm服务器状态（DSP-IPFARMSERVER）_86526404.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFFCSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFFCSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF流控开关（LST-NSSFFCSWITCH）_44007075.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSSF流控开关（SET-NSSFFCSWITCH）_44007994.md`

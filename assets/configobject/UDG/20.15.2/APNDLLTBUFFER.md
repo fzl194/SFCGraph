@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNDLLTBUFFER.md`
-- 原始手册：`evidence/UDG/20.15.2/APNDLLTBUFFER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于APN的下行数据长时间缓存配置（LST-APNDLLTBUFFER）_86530339.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的下行数据长时间缓存配置（SET-APNDLLTBUFFER）_86530338.md`

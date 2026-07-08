@@ -58,4 +58,4 @@ ADD OSPFHOSTNAME:PROCID=1, HOSTNAME="BLR";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-OSPFHOSTNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPF主机名配置（ADD-OSPFHOSTNAME）_50120658.md`

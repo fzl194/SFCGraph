@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PATHCTRLALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询大量路径断告警告警阈值（LST-PATHCTRLALMTHD）_82837860.md`

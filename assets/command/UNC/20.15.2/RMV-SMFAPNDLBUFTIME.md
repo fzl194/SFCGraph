@@ -57,4 +57,4 @@ RMV SMFAPNDLBUFTIME: APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFAPNDLBUFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN的下行报文缓存时长配置（RMV-SMFAPNDLBUFTIME）_96805500.md`

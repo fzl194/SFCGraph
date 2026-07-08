@@ -86,4 +86,4 @@ ADD POOL:POOLNAME="pool1",POOLTYPE=LOCAL,IPVERSION=IPV4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-POOL.md`
+- 原始手册：`evidence/UDG/20.15.2/添加地址池（ADD-POOL）_82837132.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBY5QI.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBY5QI.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBY5QI.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBY5QI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于5QI的QosFlow-QoS限制配置。（MOD-QOSCAPBY5QI）_26359905.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于5QI的QosFlow-QoS限制配置（RMV-QOSCAPBY5QI）_76079624.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于5QI的QosFlow-QoS限制配置（ADD-QOSCAPBY5QI）_76079620.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于5QI的QosFlow-QoS限制的配置（LST-QOSCAPBY5QI）_26519505.md`

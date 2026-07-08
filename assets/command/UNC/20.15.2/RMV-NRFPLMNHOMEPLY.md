@@ -56,4 +56,4 @@ RMV NRFPLMNHOMEPLY: MCC="466", MNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFPLMNHOMEPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定拜访地PLMN的归属地策略（RMV-NRFPLMNHOMEPLY）_71516451.md`

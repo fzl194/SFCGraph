@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFMAPVERSION.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFMAPVERSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF使用的MAP接口版本（LST-SMSFMAPVERSION）_44007231.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF使用的MAP接口版本（SET-SMSFMAPVERSION）_44008048.md`

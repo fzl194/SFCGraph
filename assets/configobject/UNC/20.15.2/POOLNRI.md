@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POOLNRI.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLNRI.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLNRI.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改POOL区NRI配置信息(MOD-POOLNRI)_72345707.md`
+- 原始手册：`evidence/UNC/20.15.2/删除POOL区NRI配置信息(RMV-POOLNRI)_26305916.md`
+- 原始手册：`evidence/UNC/20.15.2/增加POOL区NRI配置信息(ADD-POOLNRI)_72225785.md`
+- 原始手册：`evidence/UNC/20.15.2/查询POOL区NRI配置信息(LST-POOLNRI)_26146108.md`

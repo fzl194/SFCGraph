@@ -60,4 +60,4 @@ RMV SRVPBINDPCCPG:PCCPOLICYGRPNM ="TestPccPolicyGrpName";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SRVPBINDPCCPG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCC组业务属性绑定（RMV-SRVPBINDPCCPG）_09897180.md`

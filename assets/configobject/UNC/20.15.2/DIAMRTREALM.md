@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMRTREALM.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMRTREALM.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMRTREALM.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMRTREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter路由域名信息（MOD-DIAMRTREALM）_09897304.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter路由域名信息（RMV-DIAMRTREALM）_09897305.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter路由域名信息（ADD-DIAMRTREALM）_09897303.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter路由域名信息（LST-DIAMRTREALM）_09897306.md`

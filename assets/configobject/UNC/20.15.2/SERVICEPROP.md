@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SERVICEPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/SERVICEPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/SERVICEPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/SERVICEPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改业务属性（MOD-SERVICEPROP）_09897169.md`
+- 原始手册：`evidence/UNC/20.15.2/删除业务属性（RMV-SERVICEPROP）_09897170.md`
+- 原始手册：`evidence/UNC/20.15.2/增加业务属性（ADD-SERVICEPROP）_09897168.md`
+- 原始手册：`evidence/UNC/20.15.2/查询业务属性（LST-SERVICEPROP）_09897171.md`

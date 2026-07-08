@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STGALARMCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/STGALARMCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合计费话单缓存告警上报的控制参数（LST-STGALARMCTRL）_35273625.md`
+- 原始手册：`evidence/UNC/20.15.2/设置融合计费话单缓存告警上报的控制参数（SET-STGALARMCTRL）_88248962.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PUBCFGDOMAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/PUBCFGDOMAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/PUBCFGDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除公共配置域名称（RMV-PUBCFGDOMAIN）_68425108.md`
+- 原始手册：`evidence/UDG/20.15.2/查询域配置信息表（LST-PUBCFGDOMAIN）_68186120.md`
+- 原始手册：`evidence/UDG/20.15.2/添加配置域名称（ADD-PUBCFGDOMAIN）_55903165.md`

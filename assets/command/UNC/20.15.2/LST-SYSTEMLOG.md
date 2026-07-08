@@ -66,4 +66,4 @@ dmsetup              错误        csp          2023-07-21 07:30:36.697  2023-07
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SYSTEMLOG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询系统日志（LST-SYSTEMLOG）_99126968.md`

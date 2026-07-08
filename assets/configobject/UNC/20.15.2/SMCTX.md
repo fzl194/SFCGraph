@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMCTX.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCTX.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示承载上下文(DSP-SMCTX)_72226033.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SM上下文（RMV-SMCTX）_09653768.md`
+- 原始手册：`evidence/UNC/20.15.2/去激活或者停止去活SM上下文（DEA-SMCTX）_25120879.md`

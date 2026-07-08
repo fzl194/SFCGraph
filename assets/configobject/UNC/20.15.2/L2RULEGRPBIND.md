@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/L2RULEGRPBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/L2RULEGRPBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/L2RULEGRPBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/L2RULEGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/修改层二规则组与用户的绑定关系（MOD-L2RULEGRPBIND）_70382353.md`
+- 原始手册：`evidence/UNC/20.15.2/删除层二规则组与用户的绑定关系（RMV-L2RULEGRPBIND）_23622998.md`
+- 原始手册：`evidence/UNC/20.15.2/增加层二规则组与用户的绑定关系（ADD-L2RULEGRPBIND）_23782726.md`
+- 原始手册：`evidence/UNC/20.15.2/查询层二规则组与用户的绑定关系（LST-L2RULEGRPBIND）_70462545.md`

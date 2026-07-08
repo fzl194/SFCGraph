@@ -61,4 +61,4 @@ ADD LBTRCRDTCFG: INDEX=1, VPN="trcrdt", IPTYPE=IPV4, SRCIP="192.168.0.1", SRCPOR
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-LBTRCRDTCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/增加跟踪重定向（ADD-LBTRCRDTCFG）_80435275.md`

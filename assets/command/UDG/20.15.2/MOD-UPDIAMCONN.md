@@ -64,4 +64,4 @@ MOD UPDIAMCONN: DIAMCONNGRP="Grp1", LOCINTERFACE="swmif1/0/0", PeerSCTPEndpt="ep
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-UPDIAMCONN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter链路（MOD-UPDIAMCONN）_97080153.md`

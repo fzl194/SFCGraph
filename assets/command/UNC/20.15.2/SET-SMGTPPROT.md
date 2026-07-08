@@ -78,4 +78,4 @@ SET SMGTPPROT: GTPVERSION = GTPV2, BEARERPCOSW = ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMGTPPROT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置会话管理GTP协议功能参数配置（SET-SMGTPPROT）_09651420.md`

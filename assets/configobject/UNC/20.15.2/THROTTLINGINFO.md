@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/THROTTLINGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Throttling信息（DSP-THROTTLINGINFO）_09056535.md`

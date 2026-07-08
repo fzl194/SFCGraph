@@ -67,4 +67,4 @@ MOD SCCPNGT: NGTX=3, GTEXP=FOUR, ITUTT=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SCCPNGT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP新全局翻译码(MOD-SCCPNGT)_26306140.md`

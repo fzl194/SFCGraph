@@ -65,4 +65,4 @@ recoveryTime变化时重选AUSF开关  =  打开
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFAUSFRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的AUSF故障处理策略（LST-AMFAUSFRESET）_57496925.md`

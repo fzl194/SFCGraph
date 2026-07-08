@@ -32,4 +32,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BLACKLISTRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加黑名单规则（ADD-BLACKLISTRULE）_82837267.md`

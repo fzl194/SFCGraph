@@ -63,4 +63,4 @@ NB-IoT接入能力上报 = ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IOTCAPABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询物联网能力上报（LST-IOTCAPABILITY）_70824409.md`

@@ -59,4 +59,4 @@ ADD NGTAGP: NGTAGPID=1, DESC="shanghai";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGTAGP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-TA群组（ADD-NGTAGP）_09732730.md`

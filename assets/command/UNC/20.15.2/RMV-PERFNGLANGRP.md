@@ -55,4 +55,4 @@ RMV PERFNGLANGRP: GROUPID="A0000001-460-003-01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PERFNGLANGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用于性能统计的5G-LAN群组（RMV-PERFNGLANGRP）_79575224.md`

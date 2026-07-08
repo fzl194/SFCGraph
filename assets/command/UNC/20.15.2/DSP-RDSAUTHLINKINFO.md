@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-RDSAUTHLINKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Radius鉴权路径信息（DSP-RDSAUTHLINKINFO）_24956628.md`

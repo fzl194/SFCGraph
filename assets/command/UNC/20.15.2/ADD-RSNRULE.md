@@ -61,4 +61,4 @@ ADD RSNRULE:SST=1,SD="010101",DNN="huawei.com",RSN=V1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RSNRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RSN规则（ADD-RSNRULE）_05750161.md`

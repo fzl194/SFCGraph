@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOGFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/LOGFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/保存黑匣子的数据到日志文件中（SAV-LOGFILE）_59104043.md`
+- 原始手册：`evidence/UNC/20.15.2/获取审计日志文件（GET-LOGFILE）_36453925.md`

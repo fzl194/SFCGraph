@@ -63,4 +63,4 @@ MOD SRVPBINDPCCPG:PCCPOLICYGRPNM="TestPccPolicyGrpName",SRVPROPNAME="TestService
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SRVPBINDPCCPG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCC组业务属性绑定（MOD-SRVPBINDPCCPG）_09897179.md`

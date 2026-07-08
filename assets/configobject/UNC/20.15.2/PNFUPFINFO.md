@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFUPFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFUPFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFUPFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端UPF信息（MOD-PNFUPFINFO）_09654383.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端UPF信息（RMV-PNFUPFINFO）_09654161.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端UPF信息（ADD-PNFUPFINFO）_09653643.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端UPF信息（LST-PNFUPFINFO）_09652150.md`

@@ -57,4 +57,4 @@ RMV DCNPLCY: SUBRANGE=IMSI_PRE, IMSIPRE="123003";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DCNPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCN配置策略(RMV-DCNPLCY)_72345433.md`

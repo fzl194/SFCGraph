@@ -62,4 +62,4 @@ LCK CONFIG: LOCKED=LOCK, LOCKTIME=10, SERVICEINSTANCE="vnfc";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCK-CONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/锁定配置（LCK-CONFIG）_27994373.md`

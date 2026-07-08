@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFGTSM.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFGTSM.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFGTSM.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFGTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF的GTSM配置（MOD-OSPFGTSM）_00440613.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF的GTSM配置（ADD-OSPFGTSM）_50121270.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF的GTSM配置（RMV-OSPFGTSM）_49801806.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF的GTSM配置（LST-OSPFGTSM）_00866165.md`

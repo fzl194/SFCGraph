@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DRGROUPSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示容灾组的运行状态信息（DSP-DRGROUPSTATUS）_74554621.md`

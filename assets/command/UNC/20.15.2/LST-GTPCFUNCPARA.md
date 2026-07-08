@@ -93,4 +93,4 @@ Bearer Resource Command使用知名源端口号  =  关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPCFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C功能参数（LST-GTPCFUNCPARA）_09651330.md`

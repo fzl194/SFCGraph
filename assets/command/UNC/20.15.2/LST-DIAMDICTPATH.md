@@ -73,4 +73,4 @@ S6b   1         EPC标准字典路径
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DIAMDICTPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter字典加载路径（LST-DIAMDICTPATH）_09897250.md`

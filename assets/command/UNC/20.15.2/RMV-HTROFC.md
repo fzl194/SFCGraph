@@ -61,4 +61,4 @@ RMV HTROFC: HTROFCINDEX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-HTROFC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HTR局向(RMV-HTROFC)_26146154.md`

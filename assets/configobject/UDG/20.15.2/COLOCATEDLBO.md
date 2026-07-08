@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COLOCATEDLBO.md`
-- 原始手册：`evidence/UDG/20.15.2/COLOCATEDLBO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示本地分流共部署参数（LST-COLOCATEDLBO）_25895977.md`
+- 原始手册：`evidence/UDG/20.15.2/设置本地分流共部署参数（SET-COLOCATEDLBO）_25895976.md`

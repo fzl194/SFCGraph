@@ -74,4 +74,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-WLRTNLMSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询WLR组件与TNLM交互的统计信息（DSP-WLRTNLMSTC）_49802026.md`

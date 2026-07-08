@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-BFDGLOBALSTATS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BFD的全局会话统计信息（DSP-BFDGLOBALSTATS）_00600397.md`

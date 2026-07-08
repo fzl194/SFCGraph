@@ -72,4 +72,4 @@ grp1                   imsi4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PRIMSIMSISDNG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询代理IMSI_MSISDN号段组（LST-PRIMSIMSISDNG）_42693472.md`

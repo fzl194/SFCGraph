@@ -58,4 +58,4 @@ RMV PDPFILTERAPN: SUBRANGE=ALL_USER, APNNI="huawei1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PDPFILTERAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN优先级配置(RMV-PDPFILTERAPN)_72345285.md`

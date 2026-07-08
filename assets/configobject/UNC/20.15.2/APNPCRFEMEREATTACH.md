@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPCRFEMEREATTACH.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPCRFEMEREATTACH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的MBR删除PCC回滚空闲上下文配置（LST-APNPCRFEMEREATTACH）_09653281.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN的MBR删除PCC回滚空闲上下文配置（SET-APNPCRFEMEREATTACH）_67510500.md`

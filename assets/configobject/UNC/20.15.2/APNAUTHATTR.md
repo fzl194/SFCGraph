@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNAUTHATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAUTHATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN鉴权属性配置（LST-APNAUTHATTR）_28567627.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN鉴权属性配置（SET-APNAUTHATTR）_28567656.md`

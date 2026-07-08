@@ -62,4 +62,4 @@ SET LINKALMCFG: THRESHOLD=30, CLEARTHRESHOLD=10, PERIOD=40;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-LINKALMCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TWAMP的Light模式“链路丢包率过高告警”配置（SET-LINKALMCFG）_73302055.md`

@@ -54,4 +54,4 @@ RMV SMSCHRPRCTMPL: TMPLIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMSCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMS-CHR流程控制模板（RMV-SMSCHRPRCTMPL）_53481542.md`

@@ -64,4 +64,4 @@ RMV ALLOWEDOBJNAME: OBJNAME="objname001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWEDOBJNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/删除授权控制对象（RMV-ALLOWEDOBJNAME）_40906679.md`

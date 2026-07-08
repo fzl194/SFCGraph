@@ -49,5 +49,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OMSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/OMSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OM功能开关（LST-OMSWITCH）_86522834.md`
+- 原始手册：`evidence/UDG/20.15.2/设置OM功能开关（SET-OMSWITCH）_86362910.md`

@@ -75,4 +75,4 @@ SET VLRTIMERPARA: INSERTSUBDATA=6;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-VLRTIMERPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR网元定时器（SET-VLRTIMERPARA）_53481550.md`

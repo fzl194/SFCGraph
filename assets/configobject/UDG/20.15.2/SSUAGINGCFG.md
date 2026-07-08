@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SSUAGINGCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/SSUAGINGCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SSU容器业务相关老化功能配置（LST-SSUAGINGCFG）_28486287.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SSU容器业务相关老化功能配置（SET-SSUAGINGCFG）_28121355.md`

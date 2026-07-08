@@ -56,4 +56,4 @@ RMV L2RULEGRPBIND: GRPBINDNAME="bind1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-L2RULEGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/删除层二规则组与用户的绑定关系（RMV-L2RULEGRPBIND）_23622998.md`

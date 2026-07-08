@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定消息类型固定速率流控信息（LST-GTPCFIXEDFC）_88377440.md`
+- 原始手册：`evidence/UNC/20.15.2/设置指定消息类型固定速率流控信息（SET-GTPCFIXEDFC）_35636465.md`

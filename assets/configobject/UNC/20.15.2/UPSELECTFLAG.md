@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPSELECTFLAG.md`
-- 原始手册：`evidence/UNC/20.15.2/UPSELECTFLAG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF选择条件开关（LST-UPSELECTFLAG）_09651455.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UPF选择条件开关（SET-UPSELECTFLAG）_09652250.md`

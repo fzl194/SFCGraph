@@ -60,4 +60,4 @@ POD状态   正常  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-VNFINNERSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示网元内部状态（DSP-VNFINNERSTAT）_36685937.md`

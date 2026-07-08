@@ -61,4 +61,4 @@ RMV NRFIMSDNN: DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFIMSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMS-PCF的DNN（RMV-NRFIMSDNN）_96242888.md`

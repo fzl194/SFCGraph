@@ -70,4 +70,4 @@ PAE与软SDN间消息发送队列              80                   50
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PAECHECKTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE寻呼反压流控检测阈值(LST-PAECHECKTHD)_13911930.md`

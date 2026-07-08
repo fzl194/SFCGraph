@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GWSELBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于CC选择GGSN_P-GW(RMV-GWSELBYCC)_72225627.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于CC选择GGSN_P-GW(ADD-GWSELBYCC)_26145948.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于CC选择GGSN_P-GW(LST-GWSELBYCC)_26305758.md`

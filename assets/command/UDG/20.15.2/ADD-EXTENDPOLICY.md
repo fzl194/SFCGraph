@@ -79,4 +79,4 @@ ADD EXTENDPOLICY: RULENAME="rule", EXTENDPLYTYPE=NORMAL, SRVPROPNAME="srvprop", 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-EXTENDPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展策略配置（ADD-EXTENDPOLICY）_35373568.md`

@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFPROXYSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/AFPROXYSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/AFPROXYSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除防欺诈可信代理服务器（RMV-AFPROXYSERVER）_86526964.md`
+- 原始手册：`evidence/UDG/20.15.2/增加防欺诈可信代理服务器（ADD-AFPROXYSERVER）_82837788.md`
+- 原始手册：`evidence/UDG/20.15.2/查询防欺诈可信代理服务器（LST-AFPROXYSERVER）_82837790.md`

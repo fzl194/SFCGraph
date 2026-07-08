@@ -62,4 +62,4 @@ ucfexec-pod-0  UCFSVR         IPv4        10.10.0.6     ::            6667      
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-UCFSVRLNKSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UCF链路状态（DSP-UCFSVRLNKSTAT）_63673347.md`

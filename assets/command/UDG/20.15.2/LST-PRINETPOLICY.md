@@ -70,4 +70,4 @@ test 123457 DISABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PRINETPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/显示专网控制策略（LST-PRINETPOLICY）_19881186.md`

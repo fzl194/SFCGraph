@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示地址分配规则（LST-IPALLOCRULE）_82837153.md`
+- 原始手册：`evidence/UDG/20.15.2/设置地址分配规则（SET-IPALLOCRULE）_82837152.md`

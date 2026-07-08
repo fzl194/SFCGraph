@@ -73,4 +73,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-OMNWCONF.md`
+- 原始手册：`evidence/UNC/20.15.2/配置OM网络探测参数（MOD-OMNWCONF）_58550741.md`

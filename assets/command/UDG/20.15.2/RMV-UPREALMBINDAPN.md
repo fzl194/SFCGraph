@@ -60,4 +60,4 @@ RMV UPREALMBINDAPN: APN="isp", APPLICATION=SWM;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPREALMBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN与Diameter-Realm关联关系（RMV-UPREALMBINDAPN）_97080165.md`

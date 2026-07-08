@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCALHLR.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALHLR.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALHLR.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALHLR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地HLR(MOD-LOCALHLR)_72345677.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地HLR(RMV-LOCALHLR)_26305886.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地HLR(ADD-LOCALHLR)_72225755.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地HLR(LST-LOCALHLR)_26146078.md`

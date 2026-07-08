@@ -61,4 +61,4 @@ RMV APNBINDBWMUSRG:USERGROUPNAME="testbwmusergroup",APN="testapn";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-APNBINDBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理用户组APN绑定（RMV-APNBINDBWMUSRG）_86526866.md`

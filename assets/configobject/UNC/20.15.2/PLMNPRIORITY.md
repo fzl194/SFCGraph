@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PLMNPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询获取PLMN优先级（LST-PLMNPRIORITY）_09652282.md`
+- 原始手册：`evidence/UNC/20.15.2/设置获取PLMN优先级（SET-PLMNPRIORITY）_09653827.md`

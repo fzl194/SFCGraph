@@ -61,4 +61,4 @@ MOD AMFINFO: AMFINSTANCENAME="AMF_Instance_0", CAPACITY=100;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-AMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF信息（MOD-AMFINFO）_09651393.md`

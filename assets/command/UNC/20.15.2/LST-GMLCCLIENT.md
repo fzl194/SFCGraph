@@ -69,4 +69,4 @@ LCS客户端号码  =  861380123456789
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GMLCCLIENT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GMLC和LCS-Client对照关系(LST-GMLCCLIENT)_26145804.md`

@@ -77,4 +77,4 @@ MOD SBCMME: MMEIDX=0, IPTYPE=IPV4, IPV4_1="10.10.10.17", IPV4_2="10.10.10.18";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SBCMME.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SBC-MME实体(MOD-SBCMME)_12596110.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MCASTTIMER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询组播定时器信息（DSP-MCASTTIMER）_00441241.md`

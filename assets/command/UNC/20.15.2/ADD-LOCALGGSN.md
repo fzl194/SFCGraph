@@ -68,4 +68,4 @@ ADD LOCALGGSN: CFGTP=IPMASK, SIP="192.168.41.0", MASK="255.255.255.0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOCALGGSN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地GGSN列表(ADD-LOCALGGSN)_72345527.md`

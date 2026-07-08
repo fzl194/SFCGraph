@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFTAIRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFTAIRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFTAIRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFTAIRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的TAI范围（MOD-PNFTAIRANGE）_09651786.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的TAI范围（RMV-PNFTAIRANGE）_09653128.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的TAI范围（ADD-PNFTAIRANGE）_09652649.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的TAI范围（LST-PNFTAIRANGE）_09651561.md`

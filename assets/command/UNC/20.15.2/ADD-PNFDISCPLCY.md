@@ -64,4 +64,4 @@ ADD PNFDISCPLCY: NFTYPE=NfSMSF, POLICY=LOCAL_FIRST;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFDISCPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的服务发现策略（ADD-PNFDISCPLCY）_21742333.md`

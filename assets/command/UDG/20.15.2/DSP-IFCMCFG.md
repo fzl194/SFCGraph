@@ -55,4 +55,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-IFCMCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IFCM配置信息(DSP-IFCMCFG)_03372069.md`

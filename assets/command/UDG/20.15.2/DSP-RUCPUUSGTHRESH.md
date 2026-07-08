@@ -66,4 +66,4 @@ RETCODE = 0   操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-RUCPUUSGTHRESH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RU-CPU占用率、告警上报门限和告警恢复门限(DSP-RUCPUUSGTHRESH)_29626966.md`

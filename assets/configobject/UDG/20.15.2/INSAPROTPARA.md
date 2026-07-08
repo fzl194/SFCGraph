@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/修改单协议推理配置（MOD-INSAPROTPARA）_06764053.md`
+- 原始手册：`evidence/UDG/20.15.2/删除单协议推理配置（RMV-INSAPROTPARA）_06564539.md`
+- 原始手册：`evidence/UDG/20.15.2/增加单协议推理配置（ADD-INSAPROTPARA）_56405094.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单协议推理配置（LST-INSAPROTPARA）_56165568.md`

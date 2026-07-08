@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFRDSSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFRDSSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFRDSSVR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除中转UPF与Radius服务器的绑定关系（RMV-UPFRDSSVR）_35273631.md`
+- 原始手册：`evidence/UNC/20.15.2/增加中转UPF与Radius服务器的绑定关系（ADD-UPFRDSSVR）_35636449.md`
+- 原始手册：`evidence/UNC/20.15.2/查询中转UPF与Radius服务器的绑定关系（LST-UPFRDSSVR）_88248952.md`

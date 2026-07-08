@@ -65,4 +65,4 @@ RMV GBACCAREALST: AREA=OTHER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GBACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式区域漫游限制参数(RMV-GBACCAREALST)_26145552.md`

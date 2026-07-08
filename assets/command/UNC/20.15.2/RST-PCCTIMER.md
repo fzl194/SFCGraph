@@ -58,4 +58,4 @@ RST PCCTIMER: TIMERTYPE=SUPFEA_NEGO_TMR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-PCCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/复位PCC定时器（RST-PCCTIMER）_09897075.md`

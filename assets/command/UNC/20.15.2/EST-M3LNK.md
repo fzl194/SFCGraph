@@ -61,4 +61,4 @@ EST M3LNK: LNK=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EST-M3LNK.md`
+- 原始手册：`evidence/UNC/20.15.2/建立M3UA信令链路（EST-M3LNK）_26146308.md`

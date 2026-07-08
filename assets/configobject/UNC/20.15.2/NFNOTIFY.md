@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFNOTIFY.md`
+- 原始手册：`evidence/UNC/20.15.2/测试NRF通知（TST-NFNOTIFY）_09652531.md`

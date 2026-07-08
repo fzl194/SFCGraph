@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCSPARAEX.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSPARAEX.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSPARAEX.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSPARAEX.md`
+- 原始手册：`evidence/UNC/20.15.2/修改LCS扩展参数(MOD-LCSPARAEX)_26145816.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LCS扩展参数(RMV-LCSPARAEX)_72345415.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LCS扩展参数(ADD-LCSPARAEX)_26305624.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LCS扩展参数(LST-LCSPARAEX)_72225495.md`

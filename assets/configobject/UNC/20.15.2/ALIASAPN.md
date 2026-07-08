@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALIASAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/ALIASAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/ALIASAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/ALIASAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改别名APN配置(MOD-ALIASAPN)_72225365.md`
+- 原始手册：`evidence/UNC/20.15.2/删除别名APN配置(RMV-ALIASAPN)_26145686.md`
+- 原始手册：`evidence/UNC/20.15.2/增加别名APN配置(ADD-ALIASAPN)_72345281.md`
+- 原始手册：`evidence/UNC/20.15.2/查询别名APN配置(LST-ALIASAPN)_26305496.md`

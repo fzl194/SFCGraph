@@ -66,4 +66,4 @@ gcp-pod-1__103__0			On	0|258|4095	225
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-UFPLATENCYSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示UFP逐包转发时延度量开关（DSP-UFPLATENCYSTAT）_88226712.md`

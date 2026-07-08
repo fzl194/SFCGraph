@@ -59,4 +59,4 @@ MOD CCPCCACT: CCTYPE=VALUE, CHGCHAR="0x1234", CHGCHARMASK="0x4567";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CCPCCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改融合计费Proxy基于CC处理动作（MOD-CCPCCACT）_45110924.md`

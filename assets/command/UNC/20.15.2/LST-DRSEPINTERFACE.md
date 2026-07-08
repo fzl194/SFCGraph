@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DRSEPINTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询快速隔离接口（LST-DRSEPINTERFACE）_86255389.md`

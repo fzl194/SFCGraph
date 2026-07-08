@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GGSNCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/GGSNCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/GGSNCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/GGSNCHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GGSN属性配置信息(MOD-GGSNCHARACT)_72345535.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GGSN属性配置信息(RMV-GGSNCHARACT)_26305744.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GGSN属性配置信息(ADD-GGSNCHARACT)_72225613.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GGSN属性配置信息(LST-GGSNCHARACT)_26145936.md`

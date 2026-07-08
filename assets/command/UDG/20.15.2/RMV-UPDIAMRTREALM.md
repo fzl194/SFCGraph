@@ -60,4 +60,4 @@ RMV UPDIAMRTREALM:REALMNAME="example.com",APPLICATION=SWM;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPDIAMRTREALM.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter路由域名信息（RMV-UPDIAMRTREALM）_45432706.md`

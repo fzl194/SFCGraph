@@ -60,4 +60,4 @@ VPNIP版本信息           = 8870506278264828896
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SDRSVPNIP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDRS中的VPNIP信息（DSP-SDRSVPNIP）_82058145.md`

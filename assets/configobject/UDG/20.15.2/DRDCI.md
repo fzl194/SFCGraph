@@ -38,8 +38,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRDCI.md`
-- 原始手册：`evidence/UDG/20.15.2/DRDCI.md`
-- 原始手册：`evidence/UDG/20.15.2/DRDCI.md`
-- 原始手册：`evidence/UDG/20.15.2/DRDCI.md`
-- 原始手册：`evidence/UDG/20.15.2/DRDCI.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DC间通信通道信息（MOD-DRDCI）_85910093.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DC间通信通道信息（RMV-DRDCI）_23394830.md`
+- 原始手册：`evidence/UDG/20.15.2/增加DC间通信通道信息（ADD-DRDCI）_23554762.md`
+- 原始手册：`evidence/UDG/20.15.2/显示DC间通信通道运行状态（DSP-DRDCI）_23394826.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DC间通信通道信息（LST-DRDCI）_23714706.md`

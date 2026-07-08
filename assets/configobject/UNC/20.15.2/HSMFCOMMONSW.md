@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HSMFCOMMONSW.md`
-- 原始手册：`evidence/UNC/20.15.2/HSMFCOMMONSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询H-SMF通用控制开关（LST-HSMFCOMMONSW）_15082974.md`
+- 原始手册：`evidence/UNC/20.15.2/设置H-SMF通用控制开关（SET-HSMFCOMMONSW）_46482137.md`

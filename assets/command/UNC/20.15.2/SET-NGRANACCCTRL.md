@@ -71,4 +71,4 @@ SET NGRANACCCTRL: NGRANACCSW=ON, NGTAGPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGRANACCCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G基站接入控制策略（SET-NGRANACCCTRL）_58492657.md`

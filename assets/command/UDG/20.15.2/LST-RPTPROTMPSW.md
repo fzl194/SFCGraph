@@ -63,4 +63,4 @@ RETCODE = 0  操作成功.
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RPTPROTMPSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表承载协议映射开关（LST-RPTPROTMPSW）_19172444.md`

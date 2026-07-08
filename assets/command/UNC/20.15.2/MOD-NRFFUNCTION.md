@@ -59,4 +59,4 @@ MOD NRFFUNCTION:INSTANCEID="Instanceid01",NAME="nfdescription02",ADMINSTATE=Lock
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NRFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NRF功能实例信息（MOD-NRFFUNCTION）_09654376.md`

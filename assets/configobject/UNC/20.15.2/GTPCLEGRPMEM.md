@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCLEGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCLEGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCLEGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCLEGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-C本地实体组成员（MOD-GTPCLEGRPMEM）_09651344.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C本地实体组成员（RMV-GTPCLEGRPMEM）_09651766.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C本地实体组成员（ADD-GTPCLEGRPMEM）_09654422.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C本地实体组成员（LST-GTPCLEGRPMEM）_09654349.md`

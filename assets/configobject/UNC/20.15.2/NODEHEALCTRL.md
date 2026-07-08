@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NODEHEALCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/NODEHEALCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Node自愈策略控制参数（LST-NODEHEALCTRL）_48332254.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Node自愈策略控制参数（SET-NODEHEALCTRL）_48332256.md`

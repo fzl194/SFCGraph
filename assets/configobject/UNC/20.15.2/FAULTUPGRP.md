@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FAULTUPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTUPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTUPGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障UPF组（RMV-FAULTUPGRP）_38422729.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N3接口故障UPF组（ADD-FAULTUPGRP）_93702766.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障UPF组（LST-FAULTUPGRP）_38102755.md`

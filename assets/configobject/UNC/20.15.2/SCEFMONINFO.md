@@ -22,4 +22,4 @@ MME
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCEFMONINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询能力开放订阅任务信息(DSP-SCEFMONINFO)_72345055.md`

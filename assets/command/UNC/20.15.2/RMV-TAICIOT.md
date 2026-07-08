@@ -58,4 +58,4 @@ RMV TAICIOT: BEGINTAI="308015101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TAICIOT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CIoT能力配置(RMV-TAICIOT)_72345381.md`

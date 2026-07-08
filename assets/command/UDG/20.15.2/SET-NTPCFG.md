@@ -75,4 +75,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-NTPCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/配置NTP时间同步参数(SET-NTPCFG)_67679933.md`

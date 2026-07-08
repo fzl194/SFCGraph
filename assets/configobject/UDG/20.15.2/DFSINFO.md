@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DFSINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DFS集群信息（DSP-DFSINFO）_30144141.md`

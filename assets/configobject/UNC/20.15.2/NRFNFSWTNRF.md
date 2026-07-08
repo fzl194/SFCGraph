@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNFSWTNRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFSWTNRF.md`
+- 原始手册：`evidence/UNC/20.15.2/操作指示NF切换NRF（OPR-NRFNFSWTNRF）_89132374.md`
+- 原始手册：`evidence/UNC/20.15.2/显示网元切换NRF记录（DSP-NRFNFSWTNRF）_34571879.md`

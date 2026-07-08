@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NRF实例组（RMV-NRFGROUP）_09652301.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NRF实例组（ADD-NRFGROUP）_09653179.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NRF实例组（LST-NRFGROUP）_09652215.md`

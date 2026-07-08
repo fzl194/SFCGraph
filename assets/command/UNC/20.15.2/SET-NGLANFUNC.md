@@ -75,4 +75,4 @@ SET NGLANFUNC: GROUPIDFROMUDM=Support, N19SUPPORT=Support;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGLANFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NGLAN扩展功能（SET-NGLANFUNC）_98629449.md`

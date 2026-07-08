@@ -68,4 +68,4 @@ ADD GTPULE: GROUPID=2, IPTYPE=TPTADDR_TYPE_IPV4, LEIPV4="192.168.1.24";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-U本地实体(ADD-GTPULE)_72345581.md`

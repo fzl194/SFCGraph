@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBAPPPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBAPPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示全局app参数（LST-GLBAPPPARA）_74982444.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局app参数（SET-GLBAPPPARA）_74982443.md`

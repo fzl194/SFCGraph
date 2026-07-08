@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFSRVSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSRVSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSRVSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF支持服务区信息（RMV-NFSRVSCOPE）_16633752.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF支持服务区信息（ADD-NFSRVSCOPE）_16634725.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF支持服务区信息（LST-NFSRVSCOPE）_16634738.md`

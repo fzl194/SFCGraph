@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AREADECRYPT.md`
-- 原始手册：`evidence/UNC/20.15.2/AREADECRYPT.md`
-- 原始手册：`evidence/UNC/20.15.2/AREADECRYPT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于LAC_RAC关闭加密配置(RMV-AREADECRYPT)_72225321.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于LAC_RAC关闭加密配置(ADD-AREADECRYPT)_26145640.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于LAC_RAC关闭加密配置(LST-AREADECRYPT)_26305452.md`

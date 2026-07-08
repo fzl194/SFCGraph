@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFVERIFYPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFVERIFYPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF属性冲突核验参数（LST-NRFVERIFYPARA）_35636455.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF属性冲突核验参数（SET-NRFVERIFYPARA）_88697044.md`

@@ -69,4 +69,4 @@ SET QOSREMARK:DOWNLINK=ENABLE,UPLINK=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-QOSREMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局QoS到TOS_DSCP的映射规则（SET-QOSREMARK）_09653840.md`

@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CMFFCSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/CMFFCSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CMF流控开关配置数据（LST-CMFFCSWITCH）_84010349.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CMF流控开关（SET-CMFFCSWITCH）_37011290.md`

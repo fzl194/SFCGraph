@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEPORTGROUPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE端口组信息（DSP-PAEPORTGROUPINFO）_44950521.md`

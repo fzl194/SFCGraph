@@ -61,4 +61,4 @@ RMV NGMNO: NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGMNO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G模式移动网络运营商信息（RMV-NGMNO）_09652344.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N40UPFIDINUUID.md`
-- 原始手册：`evidence/UNC/20.15.2/N40UPFIDINUUID.md`
-- 原始手册：`evidence/UNC/20.15.2/N40UPFIDINUUID.md`
-- 原始手册：`evidence/UNC/20.15.2/N40UPFIDINUUID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N40接口非UUID格式与UUID格式的UPF实例标识的映射关系（MOD-N40UPFIDINUUID）_23782794.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N40接口非UUID格式与UUID格式的UPF实例标识的映射关系（RMV-N40UPFIDINUUID）_70462601.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N40接口非UUID格式与UUID格式的UPF实例标识的映射关系（ADD-N40UPFIDINUUID）_23622910.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40接口非UUID格式与UUID格式的UPF实例标识的映射关系（LST-N40UPFIDINUUID）_23782762.md`

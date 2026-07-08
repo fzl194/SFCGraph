@@ -64,4 +64,4 @@ ADD EXTENDPROP:EXTENDPROPNAME="textcategoryprop",EXTEND1=1000,EXTEND2=1002,EXTEN
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-EXTENDPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展属性配置（ADD-EXTENDPROP）_82837595.md`

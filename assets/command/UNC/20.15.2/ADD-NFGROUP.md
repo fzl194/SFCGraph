@@ -64,4 +64,4 @@ ADD NFGROUP: NFGROUPID="nfgroup001", NFTYPE=CHF, GROUPDESC="nfdescription001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF组（ADD-NFGROUP）_09652388.md`

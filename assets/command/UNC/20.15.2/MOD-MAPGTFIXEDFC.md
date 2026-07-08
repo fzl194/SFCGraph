@@ -60,4 +60,4 @@ MOD MAPGTFIXEDFC: GTNUM="1", MOTHD=500, MTTHD=500;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MAPGTFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR局向Map固定速率流控-(MOD-MAPGTFIXEDFC-)_19444169.md`

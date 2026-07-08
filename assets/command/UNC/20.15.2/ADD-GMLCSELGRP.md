@@ -61,4 +61,4 @@ ADD GMLCSELGRP: GMLCGRPID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GMLCSELGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GMLC选择策略组(ADD-GMLCSELGRP)_26145810.md`

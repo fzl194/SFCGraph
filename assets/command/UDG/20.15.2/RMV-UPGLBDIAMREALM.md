@@ -59,4 +59,4 @@ RMV UPGLBDIAMREALM: APPLICATION=SWM;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPGLBDIAMREALM.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局Diameter域（RMV-UPGLBDIAMREALM）_97080163.md`

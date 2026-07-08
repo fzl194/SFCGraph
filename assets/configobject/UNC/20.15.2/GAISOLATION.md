@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GAISOLATION.md`
-- 原始手册：`evidence/UNC/20.15.2/GAISOLATION.md`
-- 原始手册：`evidence/UNC/20.15.2/GAISOLATION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Ga业务隔离配置（RMV-GAISOLATION）_99921349.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Ga业务隔离配置（ADD-GAISOLATION）_63762720.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Ga业务隔离配置（LST-GAISOLATION）_99762889.md`

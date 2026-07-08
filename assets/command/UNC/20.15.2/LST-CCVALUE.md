@@ -69,4 +69,4 @@ c1              0x1234
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CCVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费特征值（LST-CCVALUE）_42853260.md`

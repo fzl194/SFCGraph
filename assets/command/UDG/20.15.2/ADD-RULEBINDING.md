@@ -71,4 +71,4 @@ ADD RULEBINDING: USERPROFILENAME="userprofile",RULENAME="rule";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RULEBINDING.md`
+- 原始手册：`evidence/UDG/20.15.2/增加用户模板和规则的绑定关系（ADD-RULEBINDING）_82837272.md`

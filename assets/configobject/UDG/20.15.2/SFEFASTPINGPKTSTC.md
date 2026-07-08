@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEFASTPINGPKTSTC.md`
-- 原始手册：`evidence/UDG/20.15.2/SFEFASTPINGPKTSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SFE-Fast-ping报文统计信息（DSP-SFEFASTPINGPKTSTC）_00440865.md`
+- 原始手册：`evidence/UDG/20.15.2/清除SFE-Fast-ping报文统计计数（RTR-SFEFASTPINGPKTSTC）_00600681.md`

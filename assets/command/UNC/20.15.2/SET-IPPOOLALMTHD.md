@@ -71,4 +71,4 @@ SET IPPOOLALMTHD:WARNTHRESH=81,RECVTHRESH=61;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-IPPOOLALMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置本地地址池组使用率告警阈值（SET-IPPOOLALMTHD）_64343916.md`

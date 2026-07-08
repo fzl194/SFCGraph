@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MEASTHRESHOLDRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/添加话统阈值规则(ADD-MEASTHRESHOLDRULE)_75942549.md`

@@ -64,4 +64,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VOLTEMOSEVAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VoLTE-AMR编解码的语音质量采用的评估方式（LST-VOLTEMOSEVAL）_63753119.md`

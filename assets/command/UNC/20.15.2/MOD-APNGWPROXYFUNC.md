@@ -60,4 +60,4 @@ MOD APNGWPROXYFUNC: APN="huawei.com", PROXYSW=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNGWPROXYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN网关Proxy功能配置（MOD-APNGWPROXYFUNC）_88733223.md`

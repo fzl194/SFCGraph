@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSPMDMATCH.md`
-- 原始手册：`evidence/UDG/20.15.2/MSSPMDMATCH.md`
+- 原始手册：`evidence/UDG/20.15.2/显示端口报文匹配统计信息（DSP-MSSPMDMATCH）_32309725.md`
+- 原始手册：`evidence/UDG/20.15.2/设置端口报文统计开关（SET-MSSPMDMATCH）_80692277.md`

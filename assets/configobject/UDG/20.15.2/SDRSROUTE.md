@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRSROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDRS中的APPROUTEINFO信息（DSP-SDRSROUTE）_43960913.md`

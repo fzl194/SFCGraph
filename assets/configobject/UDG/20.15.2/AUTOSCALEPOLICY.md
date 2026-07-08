@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALEPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询自动弹性策略状态(DSP-AUTOSCALEPOLICY)_68672358.md`

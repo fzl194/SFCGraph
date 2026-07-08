@@ -52,4 +52,4 @@ RTR VONRPERFTDELAY:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-VONRPERFTDELAY.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复理想到达报文的最小时延偏差、固定传输时延（RTR-VONRPERFTDELAY）_95174169.md`

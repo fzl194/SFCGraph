@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LARAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/LARAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/LARAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置区群组成员(RMV-LARAGPMEM)_26145484.md`
+- 原始手册：`evidence/UNC/20.15.2/增加位置区群组成员(ADD-LARAGPMEM)_72345081.md`
+- 原始手册：`evidence/UNC/20.15.2/查询位置区群组成员(LST-LARAGPMEM)_72225165.md`

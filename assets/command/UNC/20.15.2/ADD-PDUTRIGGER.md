@@ -88,4 +88,4 @@ ADD PDUTRIGGER: CCTMPLTNAME="test", QOSCHG=IMMEDIATE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PDU会话级的trigger参数（ADD-PDUTRIGGER）_09653225.md`

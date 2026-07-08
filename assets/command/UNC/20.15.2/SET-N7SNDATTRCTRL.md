@@ -66,4 +66,4 @@ SET N7SNDATTRCTRL: GERAN=TRUE, UTRAN=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N7SNDATTRCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N7发送信元处理控制（SET-N7SNDATTRCTRL）_72001557.md`

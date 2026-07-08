@@ -68,4 +68,4 @@ TST CHGCDR: CDRTYPE=MCDR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TST-CHGCDR.md`
+- 原始手册：`evidence/UNC/20.15.2/模拟SGSN话单(TST-CHGCDR)_72344975.md`

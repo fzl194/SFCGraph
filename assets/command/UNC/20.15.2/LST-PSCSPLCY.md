@@ -81,4 +81,4 @@ O&M    #1018
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PSCSPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询联合接入策略(LST-PSCSPLCY)_31993416.md`

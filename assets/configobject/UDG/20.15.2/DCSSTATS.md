@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DCSSTATS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示DCS打点统计信息（DSP-DCSSTATS）_91047508.md`

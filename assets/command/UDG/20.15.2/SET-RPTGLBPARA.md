@@ -75,4 +75,4 @@ SET RPTGLBPARA:NEID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RPTGLBPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置报表功能全局参数（SET-RPTGLBPARA）_06561546.md`

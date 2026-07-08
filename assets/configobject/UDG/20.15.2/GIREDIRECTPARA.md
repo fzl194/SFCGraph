@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GIREDIRECTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/GIREDIRECTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/GIREDIRECTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/GIREDIRECTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/修改单一Gi重定向信息（MOD-GIREDIRECTPARA）_82837770.md`
+- 原始手册：`evidence/UDG/20.15.2/删除单一Gi重定向信息（RMV-GIREDIRECTPARA）_86526574.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单一Gi重定向信息（LST-GIREDIRECTPARA）_82837769.md`
+- 原始手册：`evidence/UDG/20.15.2/添加单一Gi重定向信息（ADD-GIREDIRECTPARA）_82837767.md`

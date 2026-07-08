@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOS5QI2QCIMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOS5QI2QCIMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOS5QI2QCIMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOS5QI2QCIMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5QI到QCI的映射（MOD-QOS5QI2QCIMAP）_39800061.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5QI到标准QCI的映射（RMV-QOS5QI2QCIMAP）_87680064.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5QI到标准QCI的映射（ADD-QOS5QI2QCIMAP）_40119805.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5QI到标准QCI的映射（LST-QOS5QI2QCIMAP）_39919393.md`

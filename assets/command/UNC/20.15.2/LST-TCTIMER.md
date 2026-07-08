@@ -68,4 +68,4 @@ TC定时器时长（单位500ms）  =  3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TC定时器（LST-TCTIMER）_09897237.md`

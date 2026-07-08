@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS配置信息(LST-SMS)_26145732.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMS配置信息(SET-SMS)_72345329.md`

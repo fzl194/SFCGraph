@@ -76,4 +76,4 @@ huawei1         upf_instance_2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPFBINDGXUPFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF与Gx-UPF组的关联关系（LST-UPFBINDGXUPFGRP）_29420946.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询LDP-BFD配置（LST-LDPBFD）_50281682.md`
+- 原始手册：`evidence/UDG/20.15.2/设置LDP-BFD配置（SET-LDPBFD）_50281538.md`

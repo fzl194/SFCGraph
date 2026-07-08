@@ -67,4 +67,4 @@ MOD LOCRPTCFG: RANGE=SPECIFIC_GGSN/P-GW, IPT=IPV4, GWIPV4="10.10.10.18", MASKV4=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-LOCRPTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改位置上报配置信息(MOD-LOCRPTCFG)_26145938.md`

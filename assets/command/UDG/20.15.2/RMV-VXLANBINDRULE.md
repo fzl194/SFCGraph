@@ -61,4 +61,4 @@ RMV VXLANBINDRULE: RULENAME="rule";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-VXLANBINDRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道组绑定Rule（RMV-VXLANBINDRULE）_92033107.md`

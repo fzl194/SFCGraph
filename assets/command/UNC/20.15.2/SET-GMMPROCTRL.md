@@ -106,4 +106,4 @@ SET GMMPROCTRL: PROT=UPDATE_LOCATION, ULRHLRHSSREJ=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GMMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb模式移动性管理流程控制参数(SET-GMMPROCTRL)_72345113.md`

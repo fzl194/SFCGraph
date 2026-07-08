@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGIPAREADNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPAREADNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPAREADNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-IP区域DNN（RMV-NGIPAREADNN）_96242844.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-IP区域DNN（ADD-NGIPAREADNN）_96241727.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-IP区域DNN（LST-NGIPAREADNN）_96242250.md`

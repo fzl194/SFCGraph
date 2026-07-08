@@ -83,4 +83,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-WLRIFFLOWRULE6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询无线路由IPv6接口引流表信息（DSP-WLRIFFLOWRULE6）_49801406.md`

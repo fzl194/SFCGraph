@@ -71,4 +71,4 @@ huawei.com  非5G终端4G接入      否                           GaGy模式   
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的计费接口选择方式（LST-APNCHGMODE）_72001543.md`

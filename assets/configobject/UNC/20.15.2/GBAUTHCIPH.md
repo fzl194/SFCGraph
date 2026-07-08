@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBAUTHCIPH.md`
-- 原始手册：`evidence/UNC/20.15.2/GBAUTHCIPH.md`
-- 原始手册：`evidence/UNC/20.15.2/GBAUTHCIPH.md`
-- 原始手册：`evidence/UNC/20.15.2/GBAUTHCIPH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Gb模式用户安全参数（MOD-GBAUTHCIPH）_26305454.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式用户安全参数(RMV-GBAUTHCIPH)_72225323.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gb模式用户安全参数（ADD-GBAUTHCIPH）_26145642.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式用户安全参数(LST-GBAUTHCIPH)_72345241.md`

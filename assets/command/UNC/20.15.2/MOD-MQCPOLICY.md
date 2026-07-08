@@ -55,4 +55,4 @@ MOD MQCPOLICY:POLICYNAME="p1",STCENABLE=enable,SHAREMODE=unshared-mode;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MQCPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改流策略配置（MOD-MQCPOLICY）_00600949.md`

@@ -70,4 +70,4 @@ N2切换源侧AMF签约区域限制信息是否在目标AMF生效  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFROAMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF漫游功能管理参数（LST-AMFROAMFUNC）_69427700.md`

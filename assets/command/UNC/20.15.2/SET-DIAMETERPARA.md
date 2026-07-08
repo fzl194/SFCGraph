@@ -67,4 +67,4 @@ SET DIAMETERPARA:REALMBASEROUTE=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DIAMETERPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Diameter参数（SET-DIAMETERPARA）_09897315.md`

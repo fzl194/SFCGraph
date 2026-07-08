@@ -25,6 +25,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ETHSUBIF.md`
-- 原始手册：`evidence/UNC/20.15.2/ETHSUBIF.md`
-- 原始手册：`evidence/UNC/20.15.2/ETHSUBIF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除子接口配置（RMV-ETHSUBIF）_00866281.md`
+- 原始手册：`evidence/UNC/20.15.2/增加子接口配置（ADD-ETHSUBIF）_49801486.md`
+- 原始手册：`evidence/UNC/20.15.2/查询子接口配置信息（LST-ETHSUBIF）_49961422.md`

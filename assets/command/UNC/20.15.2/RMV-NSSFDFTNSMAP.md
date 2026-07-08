@@ -60,4 +60,4 @@ RMV NSSFDFTNSMAP: CTRLMODE=VPLMN, VMCC="123", VMNC="45";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSSFDFTNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫游切片默认映射配置（RMV-NSSFDFTNSMAP）_79416686.md`

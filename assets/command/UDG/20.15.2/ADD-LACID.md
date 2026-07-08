@@ -62,4 +62,4 @@ ADD LACID:LACGROUPNAME="beijing",LACSECNUM=2,LACSTARTID="0x000a",LACENDID="0x000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-LACID.md`
+- 原始手册：`evidence/UDG/20.15.2/在LAC组内添加一个LAC（ADD-LACID）_82837197.md`

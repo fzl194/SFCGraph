@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBAPPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示全局app参数（LST-GLBAPPPARA）_74982444.md`

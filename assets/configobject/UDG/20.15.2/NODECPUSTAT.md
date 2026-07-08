@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NODECPUSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Node的CPU信息（DSP-NODECPUSTAT）_09587921.md`

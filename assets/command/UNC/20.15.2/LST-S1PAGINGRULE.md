@@ -90,4 +90,4 @@ SGs接口业务指示  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-S1PAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1寻呼规则(LST-S1PAGINGRULE)_72225927.md`

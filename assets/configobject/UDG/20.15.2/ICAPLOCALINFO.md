@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ICAPLOCALINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPLOCALINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPLOCALINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPLOCALINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改ICAP本端信息（MOD-ICAPLOCALINFO）_32582495.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ICAP本端信息（RMV-ICAPLOCALINFO）_32059917.md`
+- 原始手册：`evidence/UDG/20.15.2/增加ICAP本端信息（ADD-ICAPLOCALINFO）_28984184.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICAP本端信息（LST-ICAPLOCALINFO）_28751566.md`

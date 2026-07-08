@@ -58,4 +58,4 @@ RMV PUBCFGDOMAIN: CFGDOMAINNAME="domain_a";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PUBCFGDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除公共配置域名称（RMV-PUBCFGDOMAIN）_68425108.md`

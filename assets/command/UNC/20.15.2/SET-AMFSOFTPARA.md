@@ -84,4 +84,4 @@ SET AMFSOFTPARA: DT=Dw, DWORDNUM=1, DWORDVALUE=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AMFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF软参（SET-AMFSOFTPARA）_09653628.md`

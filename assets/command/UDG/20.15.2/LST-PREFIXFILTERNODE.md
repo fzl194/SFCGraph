@@ -71,4 +71,4 @@ IP前缀列表匹配模式  =  拒绝
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PREFIXFILTERNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv4地址前缀列表过滤器节点（LST-PREFIXFILTERNODE）_00440853.md`

@@ -61,4 +61,4 @@ SET TOMSSCFG: V4TCPMSSVALUE=496, V6TCPMSSVALUE=1500;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-TOMSSCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Tcp-Mss配置（SET-TOMSSCFG）_44249090.md`

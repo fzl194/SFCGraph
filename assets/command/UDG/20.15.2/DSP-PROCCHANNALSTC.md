@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PROCCHANNALSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询逻辑链路统计信息（DSP-PROCCHANNALSTC）_59103742.md`

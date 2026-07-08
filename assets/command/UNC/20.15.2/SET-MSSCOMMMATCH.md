@@ -71,4 +71,4 @@ SET MSSCOMMMATCH: ENABLE=TRUE,SERVICETYPE=packet-discard,SRCTHREADID=1,DSTFBID=0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MSSCOMMMATCH.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通信模块规则匹配开关（SET-MSSCOMMMATCH）_49961350.md`

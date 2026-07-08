@@ -56,4 +56,4 @@ RMV CANDIDATEAMF: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CANDIDATEAMF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除候选AMF（RMV-CANDIDATEAMF）_18715637.md`

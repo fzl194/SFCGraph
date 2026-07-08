@@ -55,4 +55,4 @@ ADD HTTPLEGRP: INDEX=1, DESC="nrf";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-HTTPLEGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTP本端实体组（ADD-HTTPLEGRP）_29213277.md`

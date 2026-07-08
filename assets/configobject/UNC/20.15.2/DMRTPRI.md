@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMRTPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/DMRTPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter域路由优先级权重(MOD-DMRTPRI)_72345887.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter域路由优先级权重(LST-DMRTPRI)_26146288.md`

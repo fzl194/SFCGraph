@@ -71,4 +71,4 @@ TETHERING           sp01                 TETHERING_TERMINAL            cp01
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBEXTENDPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局扩展策略（LST-GLBEXTENDPOLICY）_09678530.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYSMAPFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/SYSMAPFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR整系统Map固定速率流控-(LST-SYSMAPFIXEDFC-)_19522769.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR整系统Map固定速率流控-(SET-SYSMAPFIXEDFC-)_68762914.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MPACV6POLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/MPACV6POLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/MPACV6POLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/MPACV6POLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv6-MPAC策略（MOD-MPACV6POLICY）_49801882.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-MPAC策略（RMV-MPACV6POLICY）_00601473.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6-MPAC策略（ADD-MPACV6POLICY）_50281454.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-MPAC策略（LST-MPACV6POLICY）_50280778.md`

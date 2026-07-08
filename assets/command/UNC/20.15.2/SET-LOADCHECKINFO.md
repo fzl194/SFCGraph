@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-LOADCHECKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSLB负载不均衡检测功能的参数（SET-LOADCHECKINFO）_48483930.md`

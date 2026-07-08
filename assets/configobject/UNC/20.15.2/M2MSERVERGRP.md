@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/M2MSERVERGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSERVERGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSERVERGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M服务器组（RMV-M2MSERVERGRP）_73321243.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M服务器组（ADD-M2MSERVERGRP）_73321226.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M服务器组（LST-M2MSERVERGRP）_73321234.md`

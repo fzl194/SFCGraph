@@ -68,4 +68,4 @@ ADD PROTREDEFINE: SRCPROTNAME="http", FILTERNAME="filter", DSTPROTNAME="https", 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PROTREDEFINE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加重定义协议（ADD-PROTREDEFINE）_52263844.md`

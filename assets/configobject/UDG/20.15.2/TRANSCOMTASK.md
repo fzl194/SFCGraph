@@ -31,4 +31,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TRANSCOMTASK.md`
+- 原始手册：`evidence/UDG/20.15.2/激活SDR进程间透明通信检测任务（ACT-TRANSCOMTASK）_94730385.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERAF.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERAF.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERAF.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERAF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BGP对等体地址族（MOD-BGPPEERAF）_00440493.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP对等体地址族（RMV-BGPPEERAF）_00441309.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BGP对等体地址族（ADD-BGPPEERAF）_50121606.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP对等体地址族（LST-BGPPEERAF）_00840717.md`

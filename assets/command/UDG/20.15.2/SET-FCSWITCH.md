@@ -61,4 +61,4 @@ SET FCSWITCH: SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FCSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置流控开关（SET-FCSWITCH）_09587940.md`

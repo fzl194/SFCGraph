@@ -84,12 +84,13 @@ def load_object_refers(nf: str, ver: str):
     return m
 
 
-def copy_evidence(src_rel: str, rec: dict, key: str) -> str:
+def copy_evidence(src_rel: str, rec: dict) -> str:
+    """以源手册文件名 stem 命名，跨对象复用（同手册命令/ConfigObject 引同一 evidence）。"""
     src = REPO / src_rel
     nf = rec.get("nf"); ver = rec.get("version")
     dst_dir = EVID / nf / ver
     dst_dir.mkdir(parents=True, exist_ok=True)
-    dst_name = sanitize(rec.get(key, "unknown")) + src.suffix
+    dst_name = sanitize(Path(src_rel).stem) + ".md"
     dst = dst_dir / dst_name
     if src.exists():
         shutil.copyfile(src, dst)
@@ -143,7 +144,7 @@ def project_config_object(rec: dict, rev_edges: dict, obj_refers: dict) -> str:
     if ev:
         parts += ["## 证据", ""]
         for e in ev:
-            ev_rel = copy_evidence(e, rec, "object_name")
+            ev_rel = copy_evidence(e, rec)
             parts.append(f"- 原始手册：`{ev_rel}`")
         parts.append("")
 

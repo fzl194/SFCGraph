@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGUSERNUMCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G接入用户数控制参数（LST-NGUSERNUMCTRL）_62497222.md`

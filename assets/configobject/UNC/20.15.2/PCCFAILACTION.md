@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCFAILACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCFAILACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC故障处理（LST-PCCFAILACTION）_33684768.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC故障处理（SET-PCCFAILACTION）_09897058.md`

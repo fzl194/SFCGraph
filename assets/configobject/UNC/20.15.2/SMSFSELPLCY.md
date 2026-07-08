@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMSF选择策略（MOD-SMSFSELPLCY）_91819425.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSF选择策略（RMV-SMSFSELPLCY）_91699949.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSF选择策略（ADD-SMSFSELPLCY）_45020376.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF选择策略（LST-SMSFSELPLCY）_91579981.md`

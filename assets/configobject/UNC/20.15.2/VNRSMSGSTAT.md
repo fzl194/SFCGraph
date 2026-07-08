@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VNRSMSGSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VNRS消息统计（DSP-VNRSMSGSTAT）_29627100.md`

@@ -70,4 +70,4 @@ ADD SMARTACT: UETYPE=IOS, SPECCAUSESW=OFF, PARKINGAPNSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMARTACT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加激活抑制规则（ADD-SMARTACT）_72225421.md`

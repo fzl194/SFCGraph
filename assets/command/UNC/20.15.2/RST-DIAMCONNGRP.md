@@ -65,4 +65,4 @@ RST DIAMCONNGRP: PEERHOSTNAME="pcrfhost";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-DIAMCONNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/重建Diameter链路组（RST-DIAMCONNGRP）_75494513.md`

@@ -66,4 +66,4 @@ SET PATHSTATUSRPT: PATHRPTSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PATHSTATUSRPT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户面路径状态上报功能（SET-PATHSTATUSRPT）_19426098.md`

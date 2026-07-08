@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-OMFWDRT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OM转发路由-(RMV-OMFWDRT)_21547908.md`

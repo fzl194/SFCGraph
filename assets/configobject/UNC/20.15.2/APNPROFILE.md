@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN配置（MOD-APNPROFILE）_17238510.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN配置（RMV-APNPROFILE）_67474993.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN配置（ADD-APNPROFILE）_67235537.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN配置（LST-APNPROFILE）_17398474.md`

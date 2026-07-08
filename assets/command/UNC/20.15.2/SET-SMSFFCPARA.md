@@ -69,4 +69,4 @@ SET SMSFFCPARA: FCSWITCH=ON, LOWRSP=ServiceUnavailable_503, MEDIUMRSP=ServiceUna
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMSFFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF自保流控的参数（SET-SMSFFCPARA）_49644938.md`

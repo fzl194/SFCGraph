@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MAPFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/MAPFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS的MAP接口固定速率流控（LST-MAPFIXEDFC）_36063248.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMS的MAP接口固定速率流控（SET-MAPFIXEDFC）_36063249.md`

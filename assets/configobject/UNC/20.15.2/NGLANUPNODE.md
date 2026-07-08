@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGLANUPNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGLANUPNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGLANUPNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGLANUPNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定实例名称的UPF节点特征（MOD-NGLANUPNODE）_52309616.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定实例名称的UPF节点特征（RMV-NGLANUPNODE）_52149912.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定实例名称的UPF节点特征（ADD-NGLANUPNODE）_52149908.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定实例名称的UPF节点特征（LST-NGLANUPNODE）_98748905.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OFCSRVTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/OFCSRVTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/OFCSRVTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/OFCSRVTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改离线业务模板（MOD-OFCSRVTEMPLATE）_09896900.md`
+- 原始手册：`evidence/UNC/20.15.2/删除离线业务模板（RMV-OFCSRVTEMPLATE）_09896901.md`
+- 原始手册：`evidence/UNC/20.15.2/增加离线业务模板（ADD-OFCSRVTEMPLATE）_09896899.md`
+- 原始手册：`evidence/UNC/20.15.2/查询离线业务模板（LST-OFCSRVTEMPLATE）_09896902.md`

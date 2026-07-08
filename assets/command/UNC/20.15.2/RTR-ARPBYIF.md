@@ -57,4 +57,4 @@ RTR ARPBYIF:IFNAME="Ethernet64/0/5";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-ARPBYIF.md`
+- 原始手册：`evidence/UNC/20.15.2/根据接口清除ARP动态表项（RTR-ARPBYIF）_00840969.md`

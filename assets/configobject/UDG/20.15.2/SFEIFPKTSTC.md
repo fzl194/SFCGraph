@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEIFPKTSTC.md`
-- 原始手册：`evidence/UDG/20.15.2/SFEIFPKTSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SFE接口报文统计（DSP-SFEIFPKTSTC）_50120638.md`
+- 原始手册：`evidence/UDG/20.15.2/清除SFE接口报文统计（RTR-SFEIFPKTSTC）_00865645.md`

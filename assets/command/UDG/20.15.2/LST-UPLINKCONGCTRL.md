@@ -69,4 +69,4 @@ Diameter链路拥塞控制
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPLINKCONGCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter链路拥塞控制（LST-UPLINKCONGCTRL）_45195182.md`

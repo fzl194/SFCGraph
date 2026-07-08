@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFVIUPDRECV.md`
+- 原始手册：`evidence/UNC/20.15.2/NFVI分批升级恢复（OPR-NFVIUPDRECV）_63673350.md`

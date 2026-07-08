@@ -62,4 +62,4 @@ SET NSACTRL: NRUSERPT = NO,NCNRFORPEER = NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NSACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSA控制参数(SET-NSACTRL)_26305942.md`

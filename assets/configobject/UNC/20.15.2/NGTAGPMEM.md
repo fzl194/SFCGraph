@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-TA群组成员（RMV-NGTAGPMEM）_09572746.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-TA群组成员（ADD-NGTAGPMEM）_09572742.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-TA群组成员（LST-NGTAGPMEM）_58372925.md`

@@ -64,4 +64,4 @@ RMV PERFMULTIDNN: DNN="huawei.com", SST=1, SD="010101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PERFMULTIDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MultiDNN性能统计对象（RMV-PERFMULTIDNN）_31551070.md`

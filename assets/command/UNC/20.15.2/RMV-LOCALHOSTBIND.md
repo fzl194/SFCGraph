@@ -60,4 +60,4 @@ RMV LOCALHOSTBIND: LOCGRPNAME="abc";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCALHOSTBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter本端主机与Diameter本端主机组的关联关系（RMV-LOCALHOSTBIND）_29660168.md`

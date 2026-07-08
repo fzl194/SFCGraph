@@ -60,4 +60,4 @@ STR LOCATEREPORT:IMSI="12",PDUSESSIONID=2,ReportType=OneTime,REPORTSTATUS=Start,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STR-LOCATEREPORT.md`
+- 原始手册：`evidence/UNC/20.15.2/开始位置上报（STR-LOCATEREPORT）_09653133.md`

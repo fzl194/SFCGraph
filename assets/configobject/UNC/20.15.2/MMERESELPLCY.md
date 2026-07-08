@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMERESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/MMERESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/MMERESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/MMERESELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MME重选策略(MOD-MMERESELPLCY)_26305438.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MME重选策略(RMV-MMERESELPLCY)_72225307.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MME重选策略(ADD-MMERESELPLCY)_26145626.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MME重选策略(LST-MMERESELPLCY)_72345225.md`

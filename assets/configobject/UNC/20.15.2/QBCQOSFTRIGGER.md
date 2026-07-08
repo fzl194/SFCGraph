@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QBCQOSFTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/QBCQOSFTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/QBCQOSFTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/QBCQOSFTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QBC计费QoS-Flow级的trigger参数（MOD-QBCQOSFTRIGGER）_09652685.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QBC计费QoS-Flow级的trigger参数（RMV-QBCQOSFTRIGGER）_09653273.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QBC计费QoS-Flow级的trigger参数（ADD-QBCQOSFTRIGGER）_09653288.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QBC计费QoS-Flow级的trigger参数（LST-QBCQOSFTRIGGER）_09653168.md`

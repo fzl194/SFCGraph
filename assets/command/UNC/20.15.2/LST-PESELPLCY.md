@@ -72,4 +72,4 @@ MME Group ID范围  =  0x0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PESELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGSN_MME选择策略(LST-PESELPLCY)_26305774.md`

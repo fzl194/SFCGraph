@@ -33,4 +33,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/P2PCOMTASK.md`
+- 原始手册：`evidence/UDG/20.15.2/激活SDR点对点通信质量检测任务（ACT-P2PCOMTASK）_63673341.md`

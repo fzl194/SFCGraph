@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DRCOMM.md`
-- 原始手册：`evidence/UNC/20.15.2/DRCOMM.md`
-- 原始手册：`evidence/UNC/20.15.2/DRCOMM.md`
-- 原始手册：`evidence/UNC/20.15.2/DRCOMM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改容灾实例地址(MOD-DRCOMM)_51012927.md`
+- 原始手册：`evidence/UNC/20.15.2/删除容灾实例地址(RMV-DRCOMM)_51012926.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾实例地址(ADD-DRCOMM)_51012925.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾实例地址(LST-DRCOMM)_51012928.md`

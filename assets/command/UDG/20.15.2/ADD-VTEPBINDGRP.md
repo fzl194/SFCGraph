@@ -65,4 +65,4 @@ ADD VTEPBINDGRP: VXLANGRPNAME="vxlangrp", VTEPNAME="vtep1", PRIFLAG=PRIMARY;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-VTEPBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加VXLAN隧道端点绑定隧道组（ADD-VTEPBINDGRP）_68354107.md`

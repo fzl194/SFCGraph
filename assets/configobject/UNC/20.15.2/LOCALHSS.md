@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCALHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地HSS(MOD-LOCALHSS)_26146080.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地HSS(RMV-LOCALHSS)_72345679.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地HSS(ADD-LOCALHSS)_26305888.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地HSS(LST-LOCALHSS)_72225759.md`

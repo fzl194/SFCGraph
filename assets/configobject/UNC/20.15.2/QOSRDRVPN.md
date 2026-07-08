@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSRDRVPN.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSRDRVPN.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSRDRVPN.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSRDRVPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QoS重定向VPN（MOD-QOSRDRVPN）_00441377.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS重定向VPN（RMV-QOSRDRVPN）_00600549.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QoS重定向VPN（ADD-QOSRDRVPN）_00441441.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS重定向VPN（LST-QOSRDRVPN）_49961018.md`

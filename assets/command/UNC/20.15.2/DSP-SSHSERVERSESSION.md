@@ -82,4 +82,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SSHSERVERSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SSH服务端会话信息（DSP-SSHSERVERSESSION）_00600885.md`

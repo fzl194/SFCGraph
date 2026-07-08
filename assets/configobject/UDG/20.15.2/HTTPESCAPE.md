@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPESCAPE.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPESCAPE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP对于URL转义的参数（LST-HTTPESCAPE）_01605352.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP对于URL转义的参数（SET-HTTPESCAPE）_01445548.md`

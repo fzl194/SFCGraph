@@ -53,4 +53,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RST-IPSECPATHMTU.md`
+- 原始手册：`evidence/UDG/20.15.2/复位IPsec-Path-MTU（RST-IPSECPATHMTU）_88183812.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/WLRSRBIF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询无线路由订阅的接口信息（DSP-WLRSRBIF）_49802074.md`

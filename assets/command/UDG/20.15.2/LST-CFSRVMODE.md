@@ -69,4 +69,4 @@ URL过滤功能业务模式   =  CUSTOMIZATION1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CFSRVMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询URL过滤功能业务模式（LST-CFSRVMODE）_19410194.md`

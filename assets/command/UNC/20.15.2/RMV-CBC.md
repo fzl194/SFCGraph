@@ -56,4 +56,4 @@ RMV CBC: CBCIDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CBC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CBC(RMV-CBC)_26306182.md`

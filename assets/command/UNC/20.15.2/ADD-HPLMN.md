@@ -75,4 +75,4 @@ ADD HPLMN: MCC="460", MNC="00", CC="86", MNOID=128, SM=YES, SMS=YES, PLMNN="nona
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-HPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地PLMN(ADD-HPLMN)_26146074.md`

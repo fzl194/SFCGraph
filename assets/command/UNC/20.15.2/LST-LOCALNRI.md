@@ -71,4 +71,4 @@ LOCALNRI表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCALNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本局NRI配置信息(LST-LOCALNRI)_72225779.md`

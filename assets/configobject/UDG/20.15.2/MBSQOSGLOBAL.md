@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MBSQOSGLOBAL.md`
-- 原始手册：`evidence/UDG/20.15.2/MBSQOSGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MBS-QosGlobal配置（LST-MBSQOSGLOBAL）_47782533.md`
+- 原始手册：`evidence/UDG/20.15.2/设置MBS-QosGlobal配置（SET-MBSQOSGLOBAL）_47263205.md`

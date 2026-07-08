@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CONSSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示消费者状态信息（DSP-CONSSTATE）_50121846.md`

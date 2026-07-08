@@ -73,4 +73,4 @@ Ocs在OcsGroup中的负荷分担比  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OCSBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Ocs绑定关系（LST-OCSBINDING）_09896966.md`

@@ -68,4 +68,4 @@ BFD最小传输间隔（ms） =  200
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRIPV4STATICSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv4静态路由全局属性（LST-SRIPV4STATICSITE）_49801494.md`

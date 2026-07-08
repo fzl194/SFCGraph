@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPARKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPARKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPARKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPARKPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改园区策略（MOD-NGPARKPLCY）_06399921.md`
+- 原始手册：`evidence/UNC/20.15.2/删除园区策略（RMV-NGPARKPLCY）_06399926.md`
+- 原始手册：`evidence/UNC/20.15.2/增加园区策略（ADD-NGPARKPLCY）_06399906.md`
+- 原始手册：`evidence/UNC/20.15.2/查询园区策略（LST-NGPARKPLCY）_06399913.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFNONDFTQOSCTL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFNONDFTQOSCTL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFNONDFTQOSCTL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFNONDFTQOSCTL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF的非Default-QoS-Flow配置（MOD-SMFNONDFTQOSCTL）_13800470.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF的非Default-QoS-Flow配置（RMV-SMFNONDFTQOSCTL）_58800311.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF的非Default-QoS-Flow配置（ADD-SMFNONDFTQOSCTL）_14120432.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF的非Default-QoS-Flow配置（LST-SMFNONDFTQOSCTL）_58680355.md`

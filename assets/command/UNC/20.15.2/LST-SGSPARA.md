@@ -83,4 +83,4 @@ MME复位指示MSC/VLR响应定时器(s)  =  4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGs参数(LST-SGSPARA)_72225121.md`

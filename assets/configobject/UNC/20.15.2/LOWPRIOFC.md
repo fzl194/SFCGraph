@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOWPRIOFC.md`
-- 原始手册：`evidence/UNC/20.15.2/LOWPRIOFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询低优先级流控参数(LST-LOWPRIOFC)_26146160.md`
+- 原始手册：`evidence/UNC/20.15.2/设置低优先级流控参数(SET-LOWPRIOFC)_72345759.md`

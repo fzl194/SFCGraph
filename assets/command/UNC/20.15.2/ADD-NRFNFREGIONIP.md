@@ -60,4 +60,4 @@ ADD NRFNFREGIONIP: IPTYPE=IPV4, IPV4="10.10.10.10", NFREGION="ff";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFNFREGIONIP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP与NF区域映射关系配置（ADD-NRFNFREGIONIP）_24796804.md`

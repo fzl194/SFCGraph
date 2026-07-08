@@ -69,4 +69,4 @@ NF和跨NRF路由数据冲突核验属性  =  IMSI&ROUTINGINDICATOR&TAI&IPV6PREF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFDISCVERIFY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现NF属性冲突核验参数（LST-NRFDISCVERIFY）_35374739.md`

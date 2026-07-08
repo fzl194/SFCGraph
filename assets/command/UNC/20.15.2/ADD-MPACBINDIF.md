@@ -60,4 +60,4 @@ ADD MPACBINDIF:IFNAME="Ethernet64/0/3",IPVERSION=IPv4,POLICYNAMEV4="policyV4";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MPACBINDIF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MPAC接口策略（ADD-MPACBINDIF）_49961922.md`

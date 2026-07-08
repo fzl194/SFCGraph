@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPGLBFIXEDBWFC.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPGLBFIXEDBWFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP全局固定带宽流控（LST-HTTPGLBFIXEDBWFC）_03315070.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HTTP全局固定带宽流控（SET-HTTPGLBFIXEDBWFC）_56474481.md`

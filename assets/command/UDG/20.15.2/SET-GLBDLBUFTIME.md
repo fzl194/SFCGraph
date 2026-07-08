@@ -70,4 +70,4 @@ SET GLBDLBUFTIME: NORMALUSER=9;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBDLBUFTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局下行数据缓存时长（SET-GLBDLBUFTIME）_82837186.md`

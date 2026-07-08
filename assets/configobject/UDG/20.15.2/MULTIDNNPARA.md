@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MULTIDNNPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTIDNNPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示MultiDNN参数（LST-MULTIDNNPARA）_70853530.md`
+- 原始手册：`evidence/UDG/20.15.2/设置MultiDNN参数（SET-MULTIDNNPARA）_71934848.md`

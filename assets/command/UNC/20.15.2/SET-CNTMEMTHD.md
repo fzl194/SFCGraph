@@ -57,4 +57,4 @@ SET CNTMEMTHD: WARNTHD=90,RECVTHD=80;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CNTMEMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容器内存告警阈值（SET-CNTMEMTHD）_32743963.md`

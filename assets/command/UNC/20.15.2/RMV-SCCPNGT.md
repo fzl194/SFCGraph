@@ -59,4 +59,4 @@ RMV SCCPNGT: NGTX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCCPNGT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP新全局翻译码(RMV-SCCPNGT)_72226007.md`

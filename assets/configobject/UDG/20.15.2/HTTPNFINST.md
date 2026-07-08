@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPNFINST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP服务存储的NF实例信息（LST-HTTPNFINST）_28971841.md`

@@ -37,7 +37,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Acl绑定关系（MOD-ACLBINDAPN）_82837725.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Acl绑定关系（RMV-ACLBINDAPN）_82837726.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Acl绑定关系（ADD-ACLBINDAPN）_82837724.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Acl绑定关系（LST-ACLBINDAPN）_82837727.md`

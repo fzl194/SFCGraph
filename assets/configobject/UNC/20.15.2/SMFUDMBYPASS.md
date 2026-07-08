@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFUDMBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFUDMBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF的UDM全故障Bypass相关功能（LST-SMFUDMBYPASS）_22678339.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF的UDM全故障Bypass相关功能（SET-SMFUDMBYPASS）_77037100.md`

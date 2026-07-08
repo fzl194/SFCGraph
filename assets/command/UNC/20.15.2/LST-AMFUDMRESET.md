@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFUDMRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的UDM故障处理策略（LST-AMFUDMRESET）_96242056.md`

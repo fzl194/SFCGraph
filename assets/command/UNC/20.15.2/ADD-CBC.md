@@ -81,4 +81,4 @@ ADD CBC: CBCIDX=0, MCC="123", MNC="03", IPTYPE=IPV4, IPV4_1="10.10.10.10", IPV4_
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CBC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CBC(ADD-CBC)_72226049.md`

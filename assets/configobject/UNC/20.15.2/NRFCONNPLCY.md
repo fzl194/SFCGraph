@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFCONNPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFCONNPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF国际漫游连接策略（LST-NRFCONNPLCY）_76878554.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF国际漫游连接策略（SET-NRFCONNPLCY）_76718590.md`

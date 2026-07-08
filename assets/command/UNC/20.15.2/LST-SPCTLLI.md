@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SPCTLLI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询特殊随机TLLI配置(LST-SPCTLLI)_26145496.md`

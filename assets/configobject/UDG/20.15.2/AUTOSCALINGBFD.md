@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BFD会话自动化配置模板（MOD-AUTOSCALINGBFD）_50121646.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BFD会话自动化配置模板（RMV-AUTOSCALINGBFD）_49961546.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BFD会话自动化配置模板（ADD-AUTOSCALINGBFD）_00600245.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BFD会话自动化配置模板（LST-AUTOSCALINGBFD）_00841725.md`

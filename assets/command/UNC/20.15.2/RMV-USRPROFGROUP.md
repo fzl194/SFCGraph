@@ -66,4 +66,4 @@ RMV USRPROFGROUP:USERPROFGNAME="userprofg1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-USRPROFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户模板组（RMV-USRPROFGROUP）_09897221.md`

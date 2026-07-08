@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGLOOPDETFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN环路检测配置（LST-NGLOOPDETFUNC）_75405267.md`

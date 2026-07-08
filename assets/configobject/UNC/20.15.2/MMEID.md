@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMEID.md`
-- 原始手册：`evidence/UNC/20.15.2/MMEID.md`
-- 原始手册：`evidence/UNC/20.15.2/MMEID.md`
-- 原始手册：`evidence/UNC/20.15.2/MMEID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MMEID配置(MOD-MMEID)_26305898.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MMEID配置(RMV-MMEID)_72225767.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MMEID配置(ADD-MMEID)_26146088.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MMEID配置(LST-MMEID)_72345689.md`

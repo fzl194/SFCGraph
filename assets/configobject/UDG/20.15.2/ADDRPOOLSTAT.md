@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADDRPOOLSTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/ADDRPOOLSTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/ADDRPOOLSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除地址池统计配置（RMV-ADDRPOOLSTAT）_26921002.md`
+- 原始手册：`evidence/UDG/20.15.2/增加地址池统计配置（ADD-ADDRPOOLSTAT）_15209021.md`
+- 原始手册：`evidence/UDG/20.15.2/查询地址池统计配置（LST-ADDRPOOLSTAT）_15006451.md`

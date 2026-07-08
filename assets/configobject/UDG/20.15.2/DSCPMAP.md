@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSCPMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/DSCPMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/DSCPMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/DSCPMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DSCP值到VLAN优先级的映射（MOD-DSCPMAP）_00841565.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DSCP值到VLAN优先级的映射（RMV-DSCPMAP）_00866185.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DSCP值到VLAN优先级的映射（LST-DSCPMAP）_50121842.md`
+- 原始手册：`evidence/UDG/20.15.2/添加DSCP值到VLAN优先级的映射（ADD-DSCPMAP）_00865545.md`

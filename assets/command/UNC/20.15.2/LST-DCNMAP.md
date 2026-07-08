@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DCNMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN映射关系(LST-DCNMAP)_26145830.md`

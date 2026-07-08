@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/POOLALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询本地指定地址池占用率告警阈值（LST-POOLALMTHD）_88368925.md`
+- 原始手册：`evidence/UDG/20.15.2/设置指定本地POOL占用率告警阈值（SET-POOLALMTHD）_37455140.md`

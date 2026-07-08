@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGMMSUBDATA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMMSUBDATA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMMSUBDATA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMMSUBDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户移动性管理参数（MOD-NGMMSUBDATA）_09652682.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户移动性管理参数（RMV-NGMMSUBDATA）_09652660.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户移动性管理参数（ADD-NGMMSUBDATA）_09651362.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户移动性管理参数（LST-NGMMSUBDATA）_09651400.md`

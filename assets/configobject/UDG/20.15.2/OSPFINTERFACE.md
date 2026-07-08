@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF接口配置（MOD-OSPFINTERFACE）_00600665.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF接口配置（ADD-OSPFINTERFACE）_00866569.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF接口配置（RMV-OSPFINTERFACE）_50281090.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF接口配置（LST-OSPFINTERFACE）_00866061.md`
+- 原始手册：`evidence/UDG/20.15.2/显示OSPF接口信息（DSP-OSPFINTERFACE）_00601065.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFNTRSDPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFNTRSDPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF通知重传参数（LST-NSSFNTRSDPARA）_96242341.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSSF通知重传参数（SET-NSSFNTRSDPARA）_96243185.md`

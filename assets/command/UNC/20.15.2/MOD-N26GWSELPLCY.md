@@ -64,4 +64,4 @@ MOD N26GWSELPLCY:SUBRANGE=ALL_USER, APNNI="HUAWEI1.com", CUSLABEL="Huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-N26GWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N26融合网关选择策略(MOD-N26GWSELPLCY)_26146138.md`

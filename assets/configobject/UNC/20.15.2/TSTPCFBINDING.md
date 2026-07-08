@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/修改拨测用户和PCF的绑定关系（MOD-TSTPCFBINDING）_22836793.md`
+- 原始手册：`evidence/UNC/20.15.2/删除拨测用户和PCF的绑定关系（RMV-TSTPCFBINDING）_22438295.md`
+- 原始手册：`evidence/UNC/20.15.2/增加拨测用户和PCF的绑定关系（ADD-TSTPCFBINDING）_22438289.md`
+- 原始手册：`evidence/UNC/20.15.2/查询拨测用户和PCF的绑定关系（LST-TSTPCFBINDING）_77037096.md`

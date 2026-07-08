@@ -75,4 +75,4 @@ SET SMPDUCTRL: PDUNUM=2, EXCEEDCAUSE=67;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMPDUCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PDU会话控制参数（SET-SMPDUCTRL）_44008047.md`

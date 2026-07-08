@@ -58,4 +58,4 @@ RMV GXUPFGROUP: UPFGRPNAME="upfgrp";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GXUPFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gx-UPF组（RMV-GXUPFGROUP）_29420944.md`

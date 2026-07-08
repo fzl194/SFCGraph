@@ -58,4 +58,4 @@ ADD SUBSMARTDNN: DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SUBSMARTDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能分流DNN（ADD-SUBSMARTDNN）_39800053.md`

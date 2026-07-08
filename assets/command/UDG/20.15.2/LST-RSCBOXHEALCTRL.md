@@ -57,4 +57,4 @@ ResourceBox部分故障Node正常升级自愈控制 = 去使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RSCBOXHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ResourceBox自愈策略控制参数（LST-RSCBOXHEALCTRL）_50921273.md`

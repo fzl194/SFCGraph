@@ -69,4 +69,4 @@ NgApCause值  专有GBR类型QoS Flow处理策略  延迟释放专有GBR类型Qo
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DEACTQFPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询去活用户面专有QoS-Flow策略（LST-DEACTQFPLCY）_92022694.md`

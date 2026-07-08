@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EVTHEALREC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示事件治理自愈结果（DSP-EVTHEALREC）_94753519.md`

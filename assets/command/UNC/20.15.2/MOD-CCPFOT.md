@@ -64,4 +64,4 @@ MOD CCPFOT: FOTNM="ccpfot1", FOENABLE=TRUE, DVDQ=5120;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CCPFOT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改融合计费Proxy-Failover模板（MOD-CCPFOT）_45110925.md`

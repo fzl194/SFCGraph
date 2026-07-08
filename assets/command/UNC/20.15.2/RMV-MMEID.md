@@ -67,4 +67,4 @@ RMV MMEID: MCC="123",MNC="01", MMEGI="8002",MMEC="01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MMEID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MMEID配置(RMV-MMEID)_72225767.md`

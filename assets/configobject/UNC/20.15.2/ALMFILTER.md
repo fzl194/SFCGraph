@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALMFILTER.md`
-- 原始手册：`evidence/UNC/20.15.2/ALMFILTER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询告警闪断振荡配置（LST-ALMFILTER）_39574029.md`
+- 原始手册：`evidence/UNC/20.15.2/设置告警闪断振荡配置（SET-ALMFILTER）_39451181.md`

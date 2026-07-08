@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PGWGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除P-GW组(RMV-PGWGROUP)_26305516.md`
+- 原始手册：`evidence/UNC/20.15.2/增加P-GW组(ADD-PGWGROUP)_72225385.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-GW组(LST-PGWGROUP)_72345303.md`

@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TMPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示TM路径（DSP-TMPATH）_68041226.md`

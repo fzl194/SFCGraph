@@ -58,4 +58,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MSSPBUFTRACELT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PBUF轨迹开关状态和持续时间（LST-MSSPBUFTRACELT）_61621989.md`

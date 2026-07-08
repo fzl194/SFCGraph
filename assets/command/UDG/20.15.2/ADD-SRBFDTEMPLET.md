@@ -65,4 +65,4 @@ ADD SRBFDTEMPLET:AFTYPE=ipv4unicast, NEXTHOP="10.1.1.1", LOCALADDRESS="10.1.1.2"
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SRBFDTEMPLET.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BFD模板（ADD-SRBFDTEMPLET）_00865873.md`

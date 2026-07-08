@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/M2MSIGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSIGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSIGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSIGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改M2M信令控制配置(MOD-M2MSIGCTRL)_26145768.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M信令控制配置(RMV-M2MSIGCTRL)_72345367.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M信令控制配置(ADD-M2MSIGCTRL)_26305576.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M信令控制配置(LST-M2MSIGCTRL)_72225447.md`

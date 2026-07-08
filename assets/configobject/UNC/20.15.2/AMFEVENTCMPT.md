@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFEVENTCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFEVENTCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询事件订阅通知消息的兼容性控制参数（LST-AMFEVENTCMPT）_57869699.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF事件订阅兼容性参数（SET-AMFEVENTCMPT）_57989673.md`

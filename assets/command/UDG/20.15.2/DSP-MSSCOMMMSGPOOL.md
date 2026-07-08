@@ -66,4 +66,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSCOMMMSGPOOL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询通信消息池信息（DSP-MSSCOMMMSGPOOL）_49961914.md`

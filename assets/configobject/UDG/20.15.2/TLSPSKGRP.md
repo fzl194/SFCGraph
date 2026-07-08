@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TLSPSKGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSPSKGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSPSKGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSPSKGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改预共享密钥组信息（MOD-TLSPSKGRP）_57349364.md`
+- 原始手册：`evidence/UDG/20.15.2/删除TLS预共享密钥组（RMV-TLSPSKGRP）_07589321.md`
+- 原始手册：`evidence/UDG/20.15.2/增加TLS预共享密钥组（ADD-TLSPSKGRP）_07789673.md`
+- 原始手册：`evidence/UDG/20.15.2/查询预共享密钥组（LST-TLSPSKGRP）_57229444.md`

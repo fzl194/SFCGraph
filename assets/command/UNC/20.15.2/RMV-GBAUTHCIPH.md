@@ -56,4 +56,4 @@ RMV GBAUTHCIPH: IMSIPRE="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GBAUTHCIPH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式用户安全参数(RMV-GBAUTHCIPH)_72225323.md`

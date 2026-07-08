@@ -56,4 +56,4 @@ RMV SRVTLSPLY: PLYNAME="ply1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SRVTLSPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除TLS认证策略（RMV-SRVTLSPLY）_44232378.md`

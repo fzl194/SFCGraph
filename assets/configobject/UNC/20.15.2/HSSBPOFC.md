@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HSSBPOFC.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBPOFC.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBPOFC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除故障状态HSS(RMV-HSSBPOFC)_21093317.md`
+- 原始手册：`evidence/UNC/20.15.2/增加故障状态HSS(ADD-HSSBPOFC)_70093526.md`
+- 原始手册：`evidence/UNC/20.15.2/查询故障状态HSS(LST-HSSBPOFC)_20653489.md`

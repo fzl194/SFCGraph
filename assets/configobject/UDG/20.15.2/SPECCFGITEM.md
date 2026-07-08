@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SPECCFGITEM.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECCFGITEM.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECCFGITEM.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECCFGITEM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改产品内部需要调整规格比例的项目（MOD-SPECCFGITEM）_55657468.md`
+- 原始手册：`evidence/UDG/20.15.2/删除产品内部需要调整规格比例的项目（RMV-SPECCFGITEM）_07854139.md`
+- 原始手册：`evidence/UDG/20.15.2/增加产品内部需要调整规格比例的项目（ADD-SPECCFGITEM）_07739899.md`
+- 原始手册：`evidence/UDG/20.15.2/查询产品内部需要调整规格比例的项目（LST-SPECCFGITEM）_55895152.md`

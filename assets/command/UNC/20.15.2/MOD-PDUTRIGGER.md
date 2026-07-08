@@ -80,4 +80,4 @@ MOD PDUTRIGGER: CCTMPLTNAME="test", QOSCHG=DEFERRED;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PDU会话级的trigger参数（MOD-PDUTRIGGER）_09653719.md`

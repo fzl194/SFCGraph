@@ -63,4 +63,4 @@ LKV7CDRS01     每秒话单数（CDR/秒）                  32000       0      
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-LICENSERES.md`
+- 原始手册：`evidence/UNC/20.15.2/显示License资源（DSP-LICENSERES）_51174310.md`

@@ -65,4 +65,4 @@ GT地址    MO 速率门限(个/秒)      MT 速率门限(个/秒)
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MAPGTFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR局向Map固定速率流控-(LST-MAPGTFIXEDFC-)_19362857.md`

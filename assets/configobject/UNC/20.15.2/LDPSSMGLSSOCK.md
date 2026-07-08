@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LDPSSMGLSSOCK.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LDP的Listen-Socket信息（DSP-LDPSSMGLSSOCK）_00440549.md`

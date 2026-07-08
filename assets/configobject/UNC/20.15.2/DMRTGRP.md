@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMRTGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DMRTGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DMRTGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter路由组(RMV-DMRTGRP)_72225971.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter路由组(ADD-DMRTGRP)_26146292.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter路由组(LST-DMRTGRP)_26306104.md`

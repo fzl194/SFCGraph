@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MTSCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/MTSCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询消息跟踪配置参数（LST-MTSCFG）_11983805.md`
+- 原始手册：`evidence/UDG/20.15.2/设置消息跟踪配置参数（SET-MTSCFG）_75263640.md`

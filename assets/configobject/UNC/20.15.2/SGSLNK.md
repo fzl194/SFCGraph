@@ -31,10 +31,10 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGs链路(MOD-SGSLNK)_72225115.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGs链路(RMV-SGSLNK)_26145430.md`
+- 原始手册：`evidence/UNC/20.15.2/去活SGs链路(DEA-SGSLNK)_72225117.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGs链路(ADD-SGSLNK)_72345031.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SGs链路状态(DSP-SGSLNK)_72345033.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGs链路(LST-SGSLNK)_26305246.md`
+- 原始手册：`evidence/UNC/20.15.2/激活SGs链路(ACT-SGSLNK)_26145432.md`

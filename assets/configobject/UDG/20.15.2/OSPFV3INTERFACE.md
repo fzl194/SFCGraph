@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPFv3接口配置（MOD-OSPFV3INTERFACE）_49801502.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPFv3接口配置（ADD-OSPFV3INTERFACE）_49801710.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3接口配置（RMV-OSPFV3INTERFACE）_50121730.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3接口配置（LST-OSPFV3INTERFACE）_50121594.md`
+- 原始手册：`evidence/UDG/20.15.2/显示OSPFv3接口信息（DSP-OSPFV3INTERFACE）_49802326.md`

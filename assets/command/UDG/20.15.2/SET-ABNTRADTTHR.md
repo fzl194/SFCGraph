@@ -63,4 +63,4 @@ SET ABNTRADTTHR: DETECTTHR=20;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-ABNTRADTTHR.md`
+- 原始手册：`evidence/UDG/20.15.2/设置异常流量检测报文阈值（SET-ABNTRADTTHR）_82837032.md`

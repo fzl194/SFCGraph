@@ -61,4 +61,4 @@ SERVICEINSTANCE="vnfc"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-VNFC.md`
+- 原始手册：`evidence/UNC/20.15.2/重启系统（RST-VNFC）_59103634.md`

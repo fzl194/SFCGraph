@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CGSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG状态（DSP-CGSTATUS）_09896853.md`

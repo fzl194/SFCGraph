@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/STR-PAEFABDETECT.md`
+- 原始手册：`evidence/UDG/20.15.2/启动Fabric链路探测任务（STR-PAEFABDETECT）_12471972.md`

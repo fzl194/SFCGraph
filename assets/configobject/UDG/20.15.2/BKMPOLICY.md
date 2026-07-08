@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BKMPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/BKMPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询自动备份策略(DSP-BKMPOLICY)_40700732.md`
+- 原始手册：`evidence/UDG/20.15.2/设置自动备份策略(SET-BKMPOLICY)_40859456.md`

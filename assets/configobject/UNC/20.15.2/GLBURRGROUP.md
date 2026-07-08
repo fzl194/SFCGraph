@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBURRGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBURRGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBURRGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除全局使用量上报规则组（RMV-GLBURRGROUP）_09897188.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局使用量上报规则组（LST-GLBURRGROUP）_09897189.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局使用量上报规则组（SET-GLBURRGROUP）_09897187.md`

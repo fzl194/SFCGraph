@@ -35,6 +35,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/TIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/TIMERANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除时间段（RMV-TIMERANGE）_82837420.md`
+- 原始手册：`evidence/UDG/20.15.2/增加时间段（ADD-TIMERANGE）_82837419.md`
+- 原始手册：`evidence/UDG/20.15.2/查询时间段（LST-TIMERANGE）_86526448.md`

@@ -58,4 +58,4 @@ RMV N26IWKPLCY: SUBRANGE=ALL_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-N26IWKPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EPS与5GS互操作本地策略(RMV-N26IWKPLCY)_26146136.md`

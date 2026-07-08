@@ -67,4 +67,4 @@ APNNI组号  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNNIGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI组(LST-APNNIGROUP)_26145700.md`

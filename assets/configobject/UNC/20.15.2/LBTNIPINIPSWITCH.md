@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LBTNIPINIPSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/LBTNIPINIPSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSLB隧道IP-in-IP开关（LST-LBTNIPINIPSWITCH）_21904504.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSLB隧道IP-in-IP开关（SET-LBTNIPINIPSWITCH）_21584628.md`

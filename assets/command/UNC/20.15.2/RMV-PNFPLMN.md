@@ -63,4 +63,4 @@ RMV PNFPLMN: NFINSTANCEID="SMF_Instance_0", MCC="460",MNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的PLMN信息（RMV-PNFPLMN）_09651592.md`

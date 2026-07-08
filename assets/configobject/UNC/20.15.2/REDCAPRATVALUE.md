@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REDCAPRATVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/REDCAPRATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RedCap接入用户的RAT填写值（LST-REDCAPRATVALUE）_68306125.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RedCap终端接入RAT填写值（SET-REDCAPRATVALUE）_68425885.md`

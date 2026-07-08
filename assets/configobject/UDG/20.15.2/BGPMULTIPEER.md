@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPMULTIPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPMULTIPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPMULTIPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPMULTIPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BGP多源对等体（MOD-BGPMULTIPEER）_49961406.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP多源对等体（RMV-BGPMULTIPEER）_50281170.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BGP多源对等体（ADD-BGPMULTIPEER）_50120886.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP多源对等体（LST-BGPMULTIPEER）_49802338.md`

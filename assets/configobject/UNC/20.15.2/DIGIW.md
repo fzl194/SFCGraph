@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIGIW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询电子保单信息（LST-DIGIW）_75544595.md`

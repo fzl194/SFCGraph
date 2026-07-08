@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RRC-Inactive参数（LST-RRCINACTPARA）_70462561.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RRC-Inactive参数（SET-RRCINACTPARA）_23623026.md`

@@ -61,4 +61,4 @@ LCK NF: LOCKSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCK-NF.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NF锁定开关（LCK-NF）_82837078.md`

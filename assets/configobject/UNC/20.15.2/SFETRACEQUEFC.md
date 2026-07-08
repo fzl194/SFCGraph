@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFETRACEQUEFC.md`
-- 原始手册：`evidence/UNC/20.15.2/SFETRACEQUEFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VNRS-IP消息跟踪的队列流控配置（LST-SFETRACEQUEFC）_98550217.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VNRS-IP消息跟踪的队列流控配置（SET-SFETRACEQUEFC）_62471544.md`

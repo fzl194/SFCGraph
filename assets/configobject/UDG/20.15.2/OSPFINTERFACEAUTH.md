@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACEAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACEAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACEAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFINTERFACEAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF接口认证配置（MOD-OSPFINTERFACEAUTH）_00600333.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF接口认证配置（ADD-OSPFINTERFACEAUTH）_00865817.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF接口认证配置（RMV-OSPFINTERFACEAUTH）_50280790.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF接口认证配置（LST-OSPFINTERFACEAUTH）_00600817.md`

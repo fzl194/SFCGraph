@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPUPGPLANE.md`
-- 原始手册：`evidence/UDG/20.15.2/NPUPGPLANE.md`
-- 原始手册：`evidence/UDG/20.15.2/NPUPGPLANE.md`
-- 原始手册：`evidence/UDG/20.15.2/NPUPGPLANE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改NP升级平面（MOD-NPUPGPLANE）_43457349.md`
+- 原始手册：`evidence/UDG/20.15.2/删除NP升级平面（RMV-NPUPGPLANE）_92657422.md`
+- 原始手册：`evidence/UDG/20.15.2/增加NP升级平面（ADD-NPUPGPLANE）_92175826.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP升级平面（LST-NPUPGPLANE）_43297437.md`

@@ -71,4 +71,4 @@ GGSN第三优先级  =  ULI
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PLMNPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询获取PLMN优先级（LST-PLMNPRIORITY）_09652282.md`

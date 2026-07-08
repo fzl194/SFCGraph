@@ -65,4 +65,4 @@ MOD NRFBINDGRP: NRFINSTNAME="nrfinstname001", GROUPNAME="nrfgroup001", ISREGED=T
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NRFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NRF实例组成员（MOD-NRFBINDGRP）_09651784.md`

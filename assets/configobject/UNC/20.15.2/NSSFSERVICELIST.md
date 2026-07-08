@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFSERVICELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFSERVICELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSSF功能实例服务（RMV-NSSFSERVICELIST）_09653059.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSSF功能实例服务列表（ADD-NSSFSERVICELIST）_09652211.md`
+- 原始手册：`evidence/UNC/20.15.2/查看NSSF功能实例服务列表（LST-NSSFSERVICELIST）_09651509.md`

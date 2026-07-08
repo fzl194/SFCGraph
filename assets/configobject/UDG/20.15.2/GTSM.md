@@ -24,5 +24,5 @@ GTSM（Generalized TTL Security Mechanism），即通用TTL安全保护机制。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GTSM.md`
-- 原始手册：`evidence/UDG/20.15.2/GTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询GTSM全局配置属性（LST-GTSM）_00601001.md`
+- 原始手册：`evidence/UDG/20.15.2/设置GTSM全局配置属性（SET-GTSM）_00866477.md`

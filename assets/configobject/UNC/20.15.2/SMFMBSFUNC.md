@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFMBSFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFMBSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MB-SMF组播广播功能参数（LST-SMFMBSFUNC）_82452582.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MB-SMF组播广播功能参数（SET-SMFMBSFUNC）_82612542.md`

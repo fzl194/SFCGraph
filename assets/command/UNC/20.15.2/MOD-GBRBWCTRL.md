@@ -64,4 +64,4 @@ MOD GBRBWCTRL:CTRLTYPE=APN_LEVEL,APN="huawei.com",MBRUL=2000,MBRDL=2000,GBRUL=20
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GBRBWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GBR承载带宽速率控制配置（MOD-GBRBWCTRL）_40119813.md`

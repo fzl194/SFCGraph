@@ -75,4 +75,4 @@ ADD SPECIFICAPNVAL: SUBSCRIBERAPN="huawei.com", PCRFAPN="pcrfname";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SPECIFICAPNVAL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户APN与消息交互使用APN的映射关系（ADD-SPECIFICAPNVAL）_09653027.md`

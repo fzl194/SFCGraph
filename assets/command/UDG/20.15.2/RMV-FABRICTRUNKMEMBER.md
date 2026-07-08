@@ -56,4 +56,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-FABRICTRUNKMEMBER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Fabric-Trunk成员接口（RMV-FABRICTRUNKMEMBER）_19886585.md`

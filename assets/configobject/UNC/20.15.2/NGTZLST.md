@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTZLST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTZLST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTZLST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTZLST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTZLST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G多时区参数（MOD-NGTZLST）_21153678.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G多时区参数（RMV-NGTZLST）_20674122.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G多时区参数（ADD-NGTZLST）_71994441.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G多时区参数（LST-NGTZLST）_72273645.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G多时区参数（DSP-NGTZLST）_71714149.md`

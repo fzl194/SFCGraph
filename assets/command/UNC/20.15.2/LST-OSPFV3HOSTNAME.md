@@ -65,4 +65,4 @@ OSPFv3进程号  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFV3HOSTNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3主机名配置（LST-OSPFV3HOSTNAME）_49960958.md`

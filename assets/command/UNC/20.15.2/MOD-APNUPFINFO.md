@@ -63,4 +63,4 @@ MOD APNUPFINFO:APN="huawei.com",UPFINSTANCEID="upf1",LOCATION=INHERIT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定APN的UPF节点信息（MOD-APNUPFINFO）_96242549.md`

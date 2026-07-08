@@ -60,4 +60,4 @@ AMF服务名称  =  namfComm
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF服务列表（LST-AMFSERVICELIST）_09651496.md`

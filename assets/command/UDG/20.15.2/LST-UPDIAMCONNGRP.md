@@ -71,4 +71,4 @@ Diameter链路组名  =  swmconngrp
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPDIAMCONNGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter链路组（LST-UPDIAMCONNGRP）_45432690.md`

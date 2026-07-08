@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TMAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TMAP本地实体(LST-TMAPLE)_88233908.md`

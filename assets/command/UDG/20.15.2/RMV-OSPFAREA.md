@@ -55,4 +55,4 @@ RMV OSPFAREA: PROCID=1, AREAID="0.0.0.0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-OSPFAREA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF区域配置（RMV-OSPFAREA）_49961418.md`

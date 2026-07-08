@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPBINDGNGP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDGNGP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDGNGP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDGNGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GGSN与Gn_Gp接口或PGW-U与S5_S8接口的绑定关系（MOD-UPBINDGNGP）_96242705.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GGSN与Gn_Gp接口或PGW-U与S5_S8接口的绑定关系（RMV-UPBINDGNGP）_96243040.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GGSN与Gn_Gp接口或PGW-U与S5_S8接口的绑定关系（ADD-UPBINDGNGP）_78029307.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GGSN与Gn_Gp接口或PGW-U与S5_S8接口的绑定关系（LST-UPBINDGNGP）_96242519.md`

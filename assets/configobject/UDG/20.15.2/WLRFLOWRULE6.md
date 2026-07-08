@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRFLOWRULE6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6引流表信息（DSP-WLRFLOWRULE6）_49961042.md`

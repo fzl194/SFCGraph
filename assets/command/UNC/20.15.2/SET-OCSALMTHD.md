@@ -70,4 +70,4 @@ SET OCSALMTHD:APPALMTHD=20,APPALMCLRTHD=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-OCSALMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置OCS告警阈值（SET-OCSALMTHD）_09897342.md`

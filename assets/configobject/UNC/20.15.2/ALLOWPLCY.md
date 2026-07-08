@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALLOWPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/提交允许访问策略配置（CMT-ALLOWPLCY）_09651378.md`
+- 原始手册：`evidence/UNC/20.15.2/测试允许访问策略配置（TST-ALLOWPLCY）_09653106.md`

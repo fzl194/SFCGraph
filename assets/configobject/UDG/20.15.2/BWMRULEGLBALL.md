@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BWMRULEGLBALL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除所有全局带宽管理规则（RMV-BWMRULEGLBALL）_08452607.md`

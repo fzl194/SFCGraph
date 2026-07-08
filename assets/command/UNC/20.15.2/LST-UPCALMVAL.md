@@ -65,4 +65,4 @@ UPC告警上报阈值(秒)  =  10
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPCALMVAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPC-DS粒度N4请求等待超时异常的告警阈值（LST-UPCALMVAL）_12701672.md`

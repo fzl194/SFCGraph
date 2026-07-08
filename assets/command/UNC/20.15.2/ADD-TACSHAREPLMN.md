@@ -59,4 +59,4 @@ ADD TACSHAREPLMN: TAC="0x5800", PLMNGPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-TACSHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于区域的PLMN管理(ADD-TACSHAREPLMN)_84022126.md`

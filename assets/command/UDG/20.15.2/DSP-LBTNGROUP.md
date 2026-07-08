@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LBTNGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询隧道组信息（DSP-LBTNGROUP）_29627089.md`

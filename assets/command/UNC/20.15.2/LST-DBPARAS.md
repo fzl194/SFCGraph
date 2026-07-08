@@ -50,4 +50,4 @@ LST DBPARAS: PARANAME=SdbBatchDuration;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DBPARAS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置的DB参数（LST-DBPARAS）_44040875.md`

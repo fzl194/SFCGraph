@@ -63,4 +63,4 @@ SET SSUAGINGCFG: FLOWAGINGTIME=56, SESSAGINGTIME=5;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SSUAGINGCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SSU容器业务相关老化功能配置（SET-SSUAGINGCFG）_28121355.md`

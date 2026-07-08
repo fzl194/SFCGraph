@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/KPITHD.md`
-- 原始手册：`evidence/UNC/20.15.2/KPITHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询KPI门限(LST-KPITHD)_26306012.md`
+- 原始手册：`evidence/UNC/20.15.2/设置KPI门限(SET-KPITHD)_72225879.md`

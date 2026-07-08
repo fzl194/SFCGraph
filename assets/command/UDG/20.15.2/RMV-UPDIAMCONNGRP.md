@@ -60,4 +60,4 @@ RMV UPDIAMCONNGRP:CONNGROUPNAME="swmconngrp";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPDIAMCONNGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter链路组（RMV-UPDIAMCONNGRP）_45195174.md`

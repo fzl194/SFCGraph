@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PROXYSGWACCLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSGWACCLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSGWACCLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSGWACCLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Proxy-SGW-C接入控制列表（MOD-PROXYSGWACCLIST）_06399922.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Proxy-SGW-C接入控制列表（RMV-PROXYSGWACCLIST）_06399927.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Proxy-SGW-C接入控制列表（ADD-PROXYSGWACCLIST）_06399907.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Proxy-SGW-C接入控制列表（LST-PROXYSGWACCLIST）_06399914.md`

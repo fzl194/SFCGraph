@@ -66,4 +66,4 @@ ADD UPLOGICINTF: UPFINSTANCEID="upf_instance_1", ITFTYPE=N3, NETWORKINSTNAME="hu
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPLOGICINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF逻辑接口（ADD-UPLOGICINTF）_96805379.md`

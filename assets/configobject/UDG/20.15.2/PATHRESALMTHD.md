@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATHRESALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/PATHRESALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径资源不足告警阈值（LST-PATHRESALMTHD）_82837871.md`
+- 原始手册：`evidence/UDG/20.15.2/设置路径资源不足告警阈值（SET-PATHRESALMTHD）_82837872.md`

@@ -56,4 +56,4 @@ RMV FEATLOCREPORT:FEATURE=QOSANA;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-FEATLOCREPORT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于特性的位置上报配置（RMV-FEATLOCREPORT）_70382369.md`

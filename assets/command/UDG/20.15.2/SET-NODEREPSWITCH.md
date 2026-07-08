@@ -69,4 +69,4 @@ I层虚拟机HA开关打开场景下，执行该命令打开Error节点故障自
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-NODEREPSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/节点设置自动修复开关（SET-NODEREPSWITCH）_72291815.md`

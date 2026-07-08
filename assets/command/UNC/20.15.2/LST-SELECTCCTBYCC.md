@@ -69,4 +69,4 @@ I-SMF/SGW使用的融合计费模板名称  =  servingcct
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SELECTCCTBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于CC配置融合计费模板处理（LST-SELECTCCTBYCC）_09653712.md`

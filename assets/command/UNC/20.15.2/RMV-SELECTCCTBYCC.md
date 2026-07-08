@@ -59,4 +59,4 @@ RMV SELECTCCTBYCC: CCTYPE=VALUE, CCVALUE="1234";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SELECTCCTBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于CC配置融合计费模板处理（RMV-SELECTCCTBYCC）_09651373.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPINITSETUP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPINITSETUP.md`
+- 原始手册：`evidence/UDG/20.15.2/主被动切换（SET-UPINITSETUP）_82837253.md`
+- 原始手册：`evidence/UDG/20.15.2/显示主被动切换（LST-UPINITSETUP）_82837254.md`

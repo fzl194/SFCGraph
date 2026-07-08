@@ -104,4 +104,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NODECPUSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Node的CPU信息（DSP-NODECPUSTAT）_09587921.md`

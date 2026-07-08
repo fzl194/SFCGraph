@@ -62,4 +62,4 @@ ACT NFUPDATE: SWITCHTYPE=PUTSWITCH, NFINSTANCENAME="AMF_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACT-NFUPDATE.md`
+- 原始手册：`evidence/UNC/20.15.2/更新NF注册信息（ACT-NFUPDATE）_09652336.md`

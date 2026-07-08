@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RSNRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/RSNRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/RSNRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/RSNRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RSN规则（MOD-RSNRULE）_05590149.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RSN规则（RMV-RSNRULE）_57910228.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RSN规则（ADD-RSNRULE）_05750161.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RSN规则（LST-RSNRULE）_05870169.md`

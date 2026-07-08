@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ALIASAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询别名APN配置(LST-ALIASAPN)_26305496.md`

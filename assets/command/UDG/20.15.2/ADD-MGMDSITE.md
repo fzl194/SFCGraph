@@ -63,4 +63,4 @@ ADD MGMDSITE:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ROBUSTNESS=3;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MGMDSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/添加IGMP全局配置（ADD-MGMDSITE）_00841633.md`

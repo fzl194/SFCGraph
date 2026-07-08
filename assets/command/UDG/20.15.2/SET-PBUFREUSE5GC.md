@@ -58,4 +58,4 @@ SET PBUFREUSE5GC:PODTYPE="aa",POOLNAME="PAE",REUSESWITCH=Enable;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PBUFREUSE5GC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置pbuf重用检测开关（SET-PBUFREUSE5GC）_99859361.md`

@@ -71,4 +71,4 @@ ADD MMEID: MCC="123",MNC="01",MMEGI="8001",MMEC="01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MMEID.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MMEID配置(ADD-MMEID)_26146088.md`

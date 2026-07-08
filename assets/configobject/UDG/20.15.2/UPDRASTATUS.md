@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDRASTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示DRA状态（DSP-UPDRASTATUS）_45195190.md`

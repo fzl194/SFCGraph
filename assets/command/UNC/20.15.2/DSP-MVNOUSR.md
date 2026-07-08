@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MVNOUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示MVNO用户信息(DSP-MVNOUSR)_72345667.md`

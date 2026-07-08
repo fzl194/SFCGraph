@@ -73,4 +73,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的切片信息（LST-PNFNS）_09652534.md`

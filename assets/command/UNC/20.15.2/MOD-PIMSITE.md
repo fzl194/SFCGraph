@@ -66,4 +66,4 @@ MOD PIMSITE: VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ASSERTHOLDTIME=65535,J
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PIMSITE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PIM全局配置（MOD-PIMSITE）_50281582.md`

@@ -56,4 +56,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-SFESWMSGSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除FEISW消息统计（RTR-SFESWMSGSTC）_00841409.md`

@@ -61,4 +61,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FABRICSUBHEALTHY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Fabric亚健康全局配置（LST-FABRICSUBHEALTHY）_92520019.md`

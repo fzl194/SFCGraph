@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOSERVERIPBYPASS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询异常Server-IP自动bypass功能配置（LST-TOSERVERIPBYPASS）_27956239.md`

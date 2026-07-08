@@ -64,4 +64,4 @@ RMV NFREGNRF: NFTYPE=NRF, NRFINSTANCENAME="NRF_Instance_1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFREGNRF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本端NF和对端NRF实例的注册关系（RMV-NFREGNRF）_09653172.md`

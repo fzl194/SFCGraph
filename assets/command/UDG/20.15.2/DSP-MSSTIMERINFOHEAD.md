@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSTIMERINFOHEAD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询定时器全局信息（DSP-MSSTIMERINFOHEAD）_00440365.md`

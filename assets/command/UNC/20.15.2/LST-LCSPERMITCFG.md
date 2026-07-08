@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LCSPERMITCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询定位服务权限配置（LST-LCSPERMITCFG）_17955726.md`

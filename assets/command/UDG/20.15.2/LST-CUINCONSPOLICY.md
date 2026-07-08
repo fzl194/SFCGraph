@@ -65,4 +65,4 @@ CP和UP关键配置不一致策略
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CUINCONSPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CP和UP关键配置不一致的处理策略（LST-CUINCONSPOLICY）_64015289.md`

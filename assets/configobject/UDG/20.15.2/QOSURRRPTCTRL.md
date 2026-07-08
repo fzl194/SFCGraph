@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSURRRPTCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSURRRPTCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoS-URR上报的相关参数（LST-QOSURRRPTCTRL）_14794665.md`
+- 原始手册：`evidence/UDG/20.15.2/设置QoS-URR上报的相关参数（SET-QOSURRRPTCTRL）_15006423.md`

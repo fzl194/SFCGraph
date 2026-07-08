@@ -117,4 +117,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NCSSESSIONSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NETCONF会话的统计信息（DSP-NCSSESSIONSTC）_59103725.md`

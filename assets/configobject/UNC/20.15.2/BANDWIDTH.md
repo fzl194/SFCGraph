@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BANDWIDTH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示带宽配置及使用情况（DSP-BANDWIDTH）_28213689.md`

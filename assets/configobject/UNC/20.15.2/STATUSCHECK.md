@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STATUSCHECK.md`
-- 原始手册：`evidence/UNC/20.15.2/STATUSCHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询状态核查参数（LST-STATUSCHECK）_50656831.md`
+- 原始手册：`evidence/UNC/20.15.2/设置状态核查参数（SET-STATUSCHECK）_50456771.md`

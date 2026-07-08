@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OMIP.md`
-- 原始手册：`evidence/UDG/20.15.2/OMIP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OM-IP-(LST-OMIP)_76163349.md`
+- 原始手册：`evidence/UDG/20.15.2/设置OM-IP-(SET-OMIP)_76163350.md`

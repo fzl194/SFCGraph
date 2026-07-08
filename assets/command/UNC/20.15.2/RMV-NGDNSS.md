@@ -61,4 +61,4 @@ RMV NGDNSS: IPTYPE=IPV4, IPV4="192.168.100.101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGDNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS服务器（RMV-NGDNSS）_25121204.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGs参数(LST-SGSPARA)_72225121.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGs参数(SET-SGSPARA)_26145440.md`

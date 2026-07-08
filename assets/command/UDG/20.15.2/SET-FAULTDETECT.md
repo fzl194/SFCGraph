@@ -74,4 +74,4 @@ SET FAULTDETECT:ISFASTDETECT=Enable,ISLINKCHECK=Enable,DUALOMUFORCERST=Disable
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FAULTDETECT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置故障策略配置（SET-FAULTDETECT）_59103724.md`

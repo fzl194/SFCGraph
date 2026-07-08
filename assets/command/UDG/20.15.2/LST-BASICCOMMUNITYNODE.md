@@ -86,4 +86,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-BASICCOMMUNITYNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基础团体属性过滤器节点（LST-BASICCOMMUNITYNODE）_49802346.md`

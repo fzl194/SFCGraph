@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSCHEMEPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSCHEMEPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSCHEMEPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSCHEMEPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改服务发现Scheme优选策略（MOD-NFDISCSCHEMEPLY）_57496929.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务发现Scheme优选策略（RMV-NFDISCSCHEMEPLY）_57337233.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务发现Scheme优选策略（ADD-NFDISCSCHEMEPLY）_57337225.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现Scheme优选策略（LST-NFDISCSCHEMEPLY）_04377316.md`

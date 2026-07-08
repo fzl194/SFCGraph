@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GULIWKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GULIWKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GULIWKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GULIWKPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GUL互操作本地策略-(MOD-GULIWKPLCY)_68470433.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GUL互操作本地策略-(RMV-GULIWKPLCY)_68230973.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GUL互操作本地策略-(ADD-GULIWKPLCY)_68175773.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GUL互操作本地策略-(LST-GULIWKPLCY)_68484737.md`

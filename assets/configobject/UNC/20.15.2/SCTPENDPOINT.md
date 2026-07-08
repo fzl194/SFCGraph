@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPENDPOINT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPENDPOINT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPENDPOINT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPENDPOINT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCTP端点（MOD-SCTPENDPOINT）_09897322.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP端点（RMV-SCTPENDPOINT）_09897323.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCTP端点（ADD-SCTPENDPOINT）_09897321.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP端点（LST-SCTPENDPOINT）_09897324.md`

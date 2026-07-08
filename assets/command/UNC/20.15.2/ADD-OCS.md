@@ -64,4 +64,4 @@ ADD OCS:OCSHOSTNAME="ocs1",REALMNAME="www.huawei.com",VPNINSTANCE="vpn1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-OCS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加OCS（ADD-OCS）_09896954.md`

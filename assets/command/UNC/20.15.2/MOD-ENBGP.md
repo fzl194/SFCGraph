@@ -60,4 +60,4 @@ MOD ENBGP: ENBGPID=1, TYPE=ENTRY, ENBGPNAME="highspeed_usercheck_entry";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ENBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改eNodeB群组(MOD-ENBGP)_72225287.md`

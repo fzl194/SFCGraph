@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DISCADAPTFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现自适应流控全局配置（LST-DISCADAPTFCPARA）_63169525.md`

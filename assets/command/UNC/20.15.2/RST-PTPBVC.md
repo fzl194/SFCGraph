@@ -61,4 +61,4 @@ RST PTPBVC: CELLID="123000001020003";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-PTPBVC.md`
+- 原始手册：`evidence/UNC/20.15.2/复位小区(RST-PTPBVC)_72345591.md`

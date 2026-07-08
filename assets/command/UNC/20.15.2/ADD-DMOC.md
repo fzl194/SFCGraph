@@ -72,4 +72,4 @@ ADD DMOC: INDEX=2, TYPE=BYREALMNAME, REALMNAME="epc.mnc015.mcc234.3gppnetwork.or
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DMOC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter流控节点(ADD-DMOC)_26146388.md`

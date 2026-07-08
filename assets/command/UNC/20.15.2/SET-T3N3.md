@@ -86,4 +86,4 @@ SET T3N3: GTPVER=GTPv1, V1MSGCLS=PM, V1SPMMSGTYPE=ECHO_REQ, T3RES=7, N3REQ=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-T3N3.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTP-C-T3_N3参数配置(SET-T3N3)_26305730.md`

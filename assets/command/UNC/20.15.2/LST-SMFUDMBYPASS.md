@@ -66,4 +66,4 @@ SMF的UDM全故障BYPASS开关  =  打开
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFUDMBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF的UDM全故障Bypass相关功能（LST-SMFUDMBYPASS）_22678339.md`

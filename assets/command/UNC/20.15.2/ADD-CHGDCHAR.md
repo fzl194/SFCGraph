@@ -78,4 +78,4 @@ ADD CHGDCHAR: ST=ROAMING, MCC="123", MNC="00", DCC=PREPAID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHGDCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加缺省计费属性参数(ADD-CHGDCHAR)_26145380.md`

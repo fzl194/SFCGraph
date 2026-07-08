@@ -58,4 +58,4 @@ OAM报文超时检测倍数  =  30
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NPFABRICOAM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局OAM相关配置（LST-NPFABRICOAM）_94730466.md`

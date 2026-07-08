@@ -88,4 +88,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSCOMMSVCID.md`
+- 原始手册：`evidence/UDG/20.15.2/查询指定服务号的服务类型信息（DSP-MSSCOMMSVCID）_00866649.md`

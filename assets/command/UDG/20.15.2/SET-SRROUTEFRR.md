@@ -57,4 +57,4 @@ SET SRROUTEFRR:AFTYPE=ipv4unicast,VRFNAME="_public_",FRRENABLE=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SRROUTEFRR.md`
+- 原始手册：`evidence/UDG/20.15.2/设置静态路由FRR（SET-SRROUTEFRR）_49960966.md`

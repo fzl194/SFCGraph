@@ -71,4 +71,4 @@ MOD EMGCFG: NOID=0, EMGAPN="1", ULAPNAMBR=10000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-EMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改运营商紧急呼叫功能配置（MOD-EMGCFG）_72345103.md`

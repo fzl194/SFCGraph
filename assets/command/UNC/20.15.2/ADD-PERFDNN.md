@@ -62,4 +62,4 @@ ADD PERFDNN: DNN="huawei.com", MCC="123", MNC="03", SNSSAI="1-010101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PERFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN性能统计对象（ADD-PERFDNN）_64471317.md`

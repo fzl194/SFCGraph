@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESTOUSR.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOUSR.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除容灾用户特征参数(RMV-RESTOUSR)_72345717.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾用户特征参数(ADD-RESTOUSR)_26305926.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾用户特征参数(LST-RESTOUSR)_26146118.md`

@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MMLCFGDOMAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/MMLCFGDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/批量设置绑定域信息（SET-MMLCFGDOMAIN）_56064769.md`
+- 原始手册：`evidence/UDG/20.15.2/清除绑定域信息（CLR-MMLCFGDOMAIN）_55903167.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UCFCONFIG.md`
-- 原始手册：`evidence/UNC/20.15.2/UCFCONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UCF文件管理规格配置（SET-UCFCONFIG）_63673352.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UCF文件管理规格配置（LST-UCFCONFIG）_63673349.md`

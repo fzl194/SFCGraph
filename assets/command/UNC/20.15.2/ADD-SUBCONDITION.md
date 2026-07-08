@@ -69,4 +69,4 @@ ADD SUBCONDITION: NFTYPE=NfAMF, CONDITION=NfInstanceId-1&NFType-0&ServiceName-0&
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SUBCONDITION.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF订阅条件（ADD-SUBCONDITION）_09651488.md`

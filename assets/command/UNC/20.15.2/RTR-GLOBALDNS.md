@@ -58,4 +58,4 @@ RTR GLOBALDNS: DNSSERVERTYPE=DNS_IPV4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-GLOBALDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复系统默认DNS（RTR-GLOBALDNS）_09652557.md`

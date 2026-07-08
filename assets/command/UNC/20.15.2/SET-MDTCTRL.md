@@ -56,4 +56,4 @@ SET MDTCTRL: MDTSW=ON, MDTCFGPLCY=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MDTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MDT控制参数(SET-MDTCTRL)_72345435.md`

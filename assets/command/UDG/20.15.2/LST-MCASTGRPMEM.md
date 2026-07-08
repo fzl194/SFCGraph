@@ -74,4 +74,4 @@ group       VTEP      null            vtep1              0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MCASTGRPMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询组播组成员配置（LST-MCASTGRPMEM）_15470553.md`

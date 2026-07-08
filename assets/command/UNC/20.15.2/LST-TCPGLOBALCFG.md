@@ -70,4 +70,4 @@ LST TCPGLOBALCFG:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TCPGLOBALCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TCP全局配置（LST-TCPGLOBALCFG）_00601361.md`

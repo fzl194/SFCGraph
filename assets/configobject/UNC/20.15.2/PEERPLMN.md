@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PEERPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/PEERPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/PEERPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对等PLMN配置(RMV-PEERPLMN)_72345697.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对等PLMN配置(ADD-PEERPLMN)_26305906.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对等PLMN配置(LST-PEERPLMN)_26146098.md`

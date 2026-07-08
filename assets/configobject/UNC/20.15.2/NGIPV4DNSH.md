@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGIPV4DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPV4DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPV4DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPV4DNSH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv4-DNS-Hostfile记录（MOD-NGIPV4DNSH）_09652694.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv4-DNS-Hostfile记录（RMV-NGIPV4DNSH）_09653031.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv4-DNS-Hostfile记录（ADD-NGIPV4DNSH）_09652472.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv4-DNS-Hostfile记录（LST-NGIPV4DNSH）_09651339.md`

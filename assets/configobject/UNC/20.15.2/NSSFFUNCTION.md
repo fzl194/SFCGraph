@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NSSF功能实例信息（MOD-NSSFFUNCTION）_09651336.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSSF功能实例信息（RMV-NSSFFUNCTION）_09653801.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF功能实例信息（LST-NSSFFUNCTION）_09651350.md`
+- 原始手册：`evidence/UNC/20.15.2/添加NSSF功能实例信息（ADD-NSSFFUNCTION）_09651443.md`

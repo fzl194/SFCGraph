@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCPBINDUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCPBINDUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCPBINDUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户模板组和PccProfile的绑定关系（RMV-PCCPBINDUPG）_09897038.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户模板组和PccProfile的绑定关系（ADD-PCCPBINDUPG）_09897037.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户模板组和PccProfile的绑定关系（LST-PCCPBINDUPG）_09897039.md`

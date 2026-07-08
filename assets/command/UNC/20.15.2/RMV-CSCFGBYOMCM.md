@@ -59,4 +59,4 @@ RMV CSCFGBYOMCM:MMLNAME="PLMNNS";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CSCFGBYOMCM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除业务读取OM缓存数据的配置（RMV-CSCFGBYOMCM）_51335401.md`

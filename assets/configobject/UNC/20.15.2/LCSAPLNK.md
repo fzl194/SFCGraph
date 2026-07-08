@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCSAPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSAPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSAPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSAPLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改LCSAP链路配置(MOD-LCSAPLNK)_72225487.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LCSAP链路配置(RMV-LCSAPLNK)_26145808.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LCSAP链路配置(ADD-LCSAPLNK)_72345407.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LCSAP链路配置(LST-LCSAPLNK)_26305618.md`

@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPALL.md`
+- 原始手册：`evidence/UDG/20.15.2/刷新BGP全部信息（SYN-BGPALL）_50281122.md`

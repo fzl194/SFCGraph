@@ -62,4 +62,4 @@ ADD TAIGROUP: TAIGROUPNAME="beijing", MCC="123", MNC="456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-TAIGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/添加一个新的TAI组（ADD-TAIGROUP）_25926885.md`

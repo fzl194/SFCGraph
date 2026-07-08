@@ -78,4 +78,4 @@ ADD LOGICINF: NAME="n4if1/0/0", IPVERSION=IPV4, IPV4ADDRESS1="192.168.1.1", IPV4
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-LOGICINF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加逻辑接口（ADD-LOGICINF）_82835378.md`

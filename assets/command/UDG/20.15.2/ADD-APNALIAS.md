@@ -67,4 +67,4 @@ ADD APNALIAS: ALIASNAME="test2", APN="mtest";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-APNALIAS.md`
+- 原始手册：`evidence/UDG/20.15.2/添加ApnAlias配置（ADD-APNALIAS）_82837023.md`

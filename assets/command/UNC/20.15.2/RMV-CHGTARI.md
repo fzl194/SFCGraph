@@ -58,4 +58,4 @@ RMV CHGTARI: TT=WEEKEND, ST=11&04&00, ET=23&04&00, CC=FLATRATE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGTARI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除费率时段配置(RMV-CHGTARI)_72344995.md`

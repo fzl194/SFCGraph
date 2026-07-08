@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DBSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/DBSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSDB软件调试参数表(LST-DBSOFTPARA)_80429703.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSDB软件调试参数表(SET-DBSOFTPARA)_80429704.md`

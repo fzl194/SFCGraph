@@ -67,4 +67,4 @@ UP 切换  =  ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPINITSETUP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示主被动切换（LST-UPINITSETUP）_82837254.md`

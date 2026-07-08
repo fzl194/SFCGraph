@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDIP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改预留IP资源（MOD-RESERVEDIP）_80629560.md`
+- 原始手册：`evidence/UNC/20.15.2/删除预留IP资源（RMV-RESERVEDIP）_32789633.md`
+- 原始手册：`evidence/UNC/20.15.2/增加预留IP资源（ADD-RESERVEDIP）_80594246.md`
+- 原始手册：`evidence/UNC/20.15.2/查询预留IP资源（LST-RESERVEDIP）_80309656.md`

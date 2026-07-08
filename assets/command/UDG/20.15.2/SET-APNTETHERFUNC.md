@@ -72,4 +72,4 @@ SET APNTETHERFUNC:APN="apn01",SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNTETHERFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-Tethering检测开关（SET-APNTETHERFUNC）_82837441.md`

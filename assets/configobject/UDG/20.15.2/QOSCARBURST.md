@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSCARBURST.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSCARBURST.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSCARBURST.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSCARBURST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改用户做car的参数（MOD-QOSCARBURST）_82837682.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户做car的参数（RMV-QOSCARBURST）_86528829.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户做car的参数（LST-QOSCARBURST）_82837684.md`
+- 原始手册：`evidence/UDG/20.15.2/配置用户做car的参数（ADD-QOSCARBURST）_82837681.md`

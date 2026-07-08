@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BSSIDFORNSEI.md`
-- 原始手册：`evidence/UNC/20.15.2/BSSIDFORNSEI.md`
-- 原始手册：`evidence/UNC/20.15.2/BSSIDFORNSEI.md`
-- 原始手册：`evidence/UNC/20.15.2/BSSIDFORNSEI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NSEI和BSSID值的对应关系(MOD-BSSIDFORNSEI)_72225675.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSEI和BSSID值的对应关系(RMV-BSSIDFORNSEI)_26145996.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSEI和BSSID值的对应关系(ADD-BSSIDFORNSEI)_72345595.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSEI和BSSID值的对应关系(LST-BSSIDFORNSEI)_26305806.md`

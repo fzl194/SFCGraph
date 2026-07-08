@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RUCONVERGENCE.md`
-- 原始手册：`evidence/UNC/20.15.2/RUCONVERGENCE.md`
-- 原始手册：`evidence/UNC/20.15.2/RUCONVERGENCE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改汇聚RU信息（MOD-RUCONVERGENCE）_77992477.md`
+- 原始手册：`evidence/UNC/20.15.2/显示汇聚RU信息（DSP-RUCONVERGENCE）_83976188.md`
+- 原始手册：`evidence/UNC/20.15.2/查询汇聚RU信息（LST-RUCONVERGENCE）_26952596.md`

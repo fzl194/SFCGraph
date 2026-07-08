@@ -57,4 +57,4 @@ RMV APNOLQCBLACKLIST: APN="testapn";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-APNOLQCBLACKLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除过载限速APN黑名单（RMV-APNOLQCBLACKLIST）_96809506.md`

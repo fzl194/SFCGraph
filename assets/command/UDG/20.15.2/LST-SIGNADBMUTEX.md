@@ -67,4 +67,4 @@ SA特征库加载条件信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SIGNADBMUTEX.md`
+- 原始手册：`evidence/UDG/20.15.2/显示特征库规则加载区域ID（LST-SIGNADBMUTEX）_40174859.md`

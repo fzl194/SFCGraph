@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNSRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNSRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNSRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNSRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络切片的路由（MOD-NRFNSRT）_86184263.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网络切片的路由（RMV-NRFNSRT）_09652206.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网络切片的路由（ADD-NRFNSRT）_09652449.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网络切片的路由（LST-NRFNSRT）_09653222.md`

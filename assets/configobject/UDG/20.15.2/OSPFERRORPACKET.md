@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFERRORPACKET.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF错误报文的信息（DSP-OSPFERRORPACKET）_49961186.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCGSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NCG软参（LST-NCGSOFTPARA）_06469322.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NCG软参（SET-NCGSOFTPARA）_53229141.md`

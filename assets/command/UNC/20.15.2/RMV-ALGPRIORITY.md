@@ -61,4 +61,4 @@ RMV ALGPRIORITY: ALGTYPE=CIPH, ALGCIPH=NOCIPH;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除算法优先级配置信息(RMV-ALGPRIORITY)_26305456.md`

@@ -71,4 +71,4 @@ OMU1        software    15481840                   2390604                    12
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-RESPARTITIONINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示资源的磁盘分区信息（DSP-RESPARTITIONINFO）_51162901.md`

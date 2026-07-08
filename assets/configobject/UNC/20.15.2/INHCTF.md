@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INHCTF.md`
-- 原始手册：`evidence/UNC/20.15.2/INHCTF.md`
-- 原始手册：`evidence/UNC/20.15.2/INHCTF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除禁止访问NCG的CTF实例（RMV-INHCTF）_45110931.md`
+- 原始手册：`evidence/UNC/20.15.2/增加禁止访问NCG的CTF实例（ADD-INHCTF）_45110909.md`
+- 原始手册：`evidence/UNC/20.15.2/查询禁止访问NCG的CTF实例（LST-INHCTF）_45110921.md`

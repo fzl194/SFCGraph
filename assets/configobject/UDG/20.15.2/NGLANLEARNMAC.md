@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGLANLEARNMAC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除5G-LAN学习的MAC地址（CLR-NGLANLEARNMAC）_66842544.md`

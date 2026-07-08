@@ -35,5 +35,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ASRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/ASRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾功能参数(LST-ASRFUNC)_26146126.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容灾功能参数(SET-ASRFUNC)_72345725.md`

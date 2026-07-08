@@ -74,4 +74,4 @@ SET NBEMM: T3422=246, N3422=5, T3450=246, N3450=5, T3460=246, N3460=5, T3470=246
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NBEMM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NB-S1模式MM协议参数（SET-NBEMM）_26305584.md`

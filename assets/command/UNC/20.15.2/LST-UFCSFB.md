@@ -73,4 +73,4 @@ IMEI群组标识  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UFCSFB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询预留功能策略(LST-UFCSFB)_72345045.md`

@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DFTIDLETIME.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTIDLETIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询默认空闲上下文定时器配置（LST-DFTIDLETIME）_09653130.md`
+- 原始手册：`evidence/UNC/20.15.2/设置默认空闲上下文定时器配置（SET-DFTIDLETIME）_09654414.md`

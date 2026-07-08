@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPSELECT.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPSELECT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-CSCF组选择模式（LST-PCSCFGRPSELECT）_09653049.md`
+- 原始手册：`evidence/UNC/20.15.2/设置P-CSCF组选择模式（SET-PCSCFGRPSELECT）_09651601.md`

@@ -82,4 +82,4 @@ SET UPPFCPPATH: T3RESPONSE=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPPFCPPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PFCP路径相关属性（SET-UPPFCPPATH）_82837240.md`

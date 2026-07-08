@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N2OVERLOAD.md`
-- 原始手册：`evidence/UNC/20.15.2/N2OVERLOAD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2过载控制信息（LST-N2OVERLOAD）_09653038.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N2过载控制信息（SET-N2OVERLOAD）_09654395.md`

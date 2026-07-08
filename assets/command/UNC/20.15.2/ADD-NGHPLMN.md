@@ -70,4 +70,4 @@ ADD NGHPLMN: NOID=0, MCC="123", MNC="68", DESC="new homeplmn 12368";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGHPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-Home-PLMN（ADD-NGHPLMN）_09651693.md`

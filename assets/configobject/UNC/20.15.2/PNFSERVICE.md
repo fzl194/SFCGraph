@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF服务实例信息（MOD-PNFSERVICE）_09653155.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF服务实例信息（RMV-PNFSERVICE）_09651474.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF服务实例信息（ADD-PNFSERVICE）_09652978.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF服务实例信息（LST-PNFSERVICE）_09654415.md`

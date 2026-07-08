@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTSVRSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询报表服务器状态（DSP-RPTSVRSTATUS）_93753147.md`

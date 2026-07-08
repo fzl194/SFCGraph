@@ -56,4 +56,4 @@ RMV LADN: DNN="huawei.com", BGNTAI="12303121201";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LADN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地数据网络（RMV-LADN）_09651729.md`

@@ -73,4 +73,4 @@ Back off timer最大值（秒）  =  1800
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NBFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查看NB流控数据(LST-NBFC)_72345765.md`

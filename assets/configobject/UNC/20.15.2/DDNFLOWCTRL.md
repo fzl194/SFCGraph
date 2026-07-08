@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNFLOWCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNFLOWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN流控参数（LST-DDNFLOWCTRL）_64343879.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DDN流控参数（SET-DDNFLOWCTRL）_64343914.md`

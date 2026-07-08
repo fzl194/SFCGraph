@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3AREAAUTH.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3AREAAUTH.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3AREAAUTH.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3AREAAUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OSPFv3区域认证配置（MOD-OSPFV3AREAAUTH）_00840949.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPFv3区域认证配置（ADD-OSPFV3AREAAUTH）_50120870.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPFv3区域认证配置（RMV-OSPFV3AREAAUTH）_00600997.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3区域认证配置（LST-OSPFV3AREAAUTH）_49802374.md`

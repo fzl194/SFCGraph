@@ -70,4 +70,4 @@ SGW-C S8接口发送5G小区位置信息给PGW-C  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSACTRLPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSA控制处理配置（LST-NSACTRLPROP）_96242332.md`

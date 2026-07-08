@@ -66,4 +66,4 @@ ADD PUREFWDUSER: USERTYPE=IMSI,IMSI="460011223344551";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PUREFWDUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/设置指定用户进行纯转发（ADD-PUREFWDUSER）_33458112.md`

@@ -52,4 +52,4 @@ STP NGUSRBATCHDEREG:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STP-NGUSRBATCHDEREG.md`
+- 原始手册：`evidence/UNC/20.15.2/停止批量去注册任务（STP-NGUSRBATCHDEREG）_35519287.md`

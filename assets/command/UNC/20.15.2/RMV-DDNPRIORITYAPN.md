@@ -58,4 +58,4 @@ RMV DDNPRIORITYAPN: APN="IMS";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DDNPRIORITYAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的DDN消息优先级配置（RMV-DDNPRIORITYAPN）_04284720.md`

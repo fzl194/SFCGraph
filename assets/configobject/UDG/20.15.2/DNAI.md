@@ -30,8 +30,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DNAI.md`
-- 原始手册：`evidence/UDG/20.15.2/DNAI.md`
-- 原始手册：`evidence/UDG/20.15.2/DNAI.md`
-- 原始手册：`evidence/UDG/20.15.2/DNAI.md`
-- 原始手册：`evidence/UDG/20.15.2/DNAI.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DNAI配置（MOD-DNAI）_53878563.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DNAI配置（RMV-DNAI）_53878564.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNAI配置（LST-DNAI）_53878585.md`
+- 原始手册：`evidence/UDG/20.15.2/添加DNAI配置（ADD-DNAI）_53878562.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DNAI锁定配置（LCK-DNAI）_54287986.md`

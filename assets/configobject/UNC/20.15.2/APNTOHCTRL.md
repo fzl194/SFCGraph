@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNTOHCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNTOHCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNTOHCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNTOHCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN粒度的智家随行会话控制（MOD-APNTOHCTRL）_21742353.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN粒度的智家随行会话控制（RMV-APNTOHCTRL）_21861985.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN粒度的智家随行会话控制（ADD-APNTOHCTRL）_21742325.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN粒度的智家随行功能控制（LST-APNTOHCTRL）_21861961.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFNGTAIGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNGTAIGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNGTAIGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNGTAIGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NG-TAI组性能统计对象（MOD-PERFNGTAIGROUP）_09653042.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NG-TAI组性能统计对象（RMV-PERFNGTAIGROUP）_09652434.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NG-TAI组性能统计对象（ADD-PERFNGTAIGROUP）_09653102.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NG-TAI组性能统计对象（LST-PERFNGTAIGROUP）_09652646.md`

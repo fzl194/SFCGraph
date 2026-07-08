@@ -67,4 +67,4 @@ MOD DIAMCONNECTION: DIAMCONNGRP="Grp1", LOCINTERFACE="gxif1/0/0", PeerSCTPEndpt=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DIAMCONNECTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路（MOD-DIAMCONNECTION）_09897267.md`

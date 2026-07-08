@@ -25,6 +25,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ICMPOPTSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ICMPOPTSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ICMPOPTSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除ICMP选项安全配置（RMV-ICMPOPTSECURITY）_00865857.md`
+- 原始手册：`evidence/UNC/20.15.2/增加ICMP选项安全配置（ADD-ICMPOPTSECURITY）_49801634.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ICMP选项安全配置（LST-ICMPOPTSECURITY）_00440761.md`

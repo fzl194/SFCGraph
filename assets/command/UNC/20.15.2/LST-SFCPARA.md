@@ -67,4 +67,4 @@ SFC实例ID  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFC参数（LST-SFCPARA）_83159234.md`

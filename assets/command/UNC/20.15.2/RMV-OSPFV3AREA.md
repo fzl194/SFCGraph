@@ -60,4 +60,4 @@ RMV OSPFV3AREA: PROCID=1, AREAID="0.0.0.0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-OSPFV3AREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPFv3区域配置（RMV-OSPFV3AREA）_49801530.md`

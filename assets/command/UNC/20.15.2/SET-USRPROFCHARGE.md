@@ -94,4 +94,4 @@ SET USRPROFCHARGE:USRPROFNAME="Test",TARIFFGRPNAME="Test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-USRPROFCHARGE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置User-Profile的计费配置（SET-USRPROFCHARGE）_09896814.md`

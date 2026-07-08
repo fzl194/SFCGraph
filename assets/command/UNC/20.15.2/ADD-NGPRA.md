@@ -62,4 +62,4 @@ ADD NGPRA: PRAID=8388616, DESC="for EastLake Campus";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGPRA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-PRA（ADD-NGPRA）_44006470.md`

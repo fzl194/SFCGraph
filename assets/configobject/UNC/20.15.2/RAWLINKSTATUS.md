@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RAWLINKSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Raw-link状态（DSP-RAWLINKSTATUS）_00866625.md`

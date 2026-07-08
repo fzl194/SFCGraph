@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BACKUPAMFCACHE.md`
-- 原始手册：`evidence/UNC/20.15.2/BACKUPAMFCACHE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示缓存的备用AMF信息（DSP-BACKUPAMFCACHE）_83021417.md`
+- 原始手册：`evidence/UNC/20.15.2/清除备用AMF缓存信息（CLR-BACKUPAMFCACHE）_82661413.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPRTDATA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP路由数据结构信息（DSP-BGPRTDATA）_00601113.md`

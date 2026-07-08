@@ -60,4 +60,4 @@ RMV APNNBNS: APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNNBNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN的NBNS属性（RMV-APNNBNS）_77037098.md`

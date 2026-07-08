@@ -100,4 +100,4 @@ SET GTPCFUNCPARA:V2ECHOSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GTPCFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTP-C功能参数（SET-GTPCFUNCPARA）_09653666.md`

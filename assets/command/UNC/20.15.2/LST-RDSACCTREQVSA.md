@@ -98,4 +98,4 @@ RADIUS计费请求消息私有扩展属性
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSACCTREQVSA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS计费服务器组的私有扩展属性（LST-RDSACCTREQVSA）_09896788.md`

@@ -58,4 +58,4 @@ RMV UPFBINDSELRULE: INDEX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPFBINDSELRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF和规则的绑定关系（RMV-UPFBINDSELRULE）_75823004.md`

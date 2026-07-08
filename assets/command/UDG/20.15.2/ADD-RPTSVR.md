@@ -65,4 +65,4 @@ ADD RPTSVR: RPTSVRNAME="report01", RPTSVRTYPE=UFDR, SUCCESSLT=2, FAILURELT=2, SV
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RPTSVR.md`
+- 原始手册：`evidence/UDG/20.15.2/配置报表服务器（ADD-RPTSVR）_79568179.md`

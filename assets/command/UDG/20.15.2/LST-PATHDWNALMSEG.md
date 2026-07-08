@@ -82,4 +82,4 @@ IPv6类型的eNodeB地址段终止地址  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PATHDWNALMSEG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单条路径断告警抑制参数的分段配置（LST-PATHDWNALMSEG）_82837866.md`

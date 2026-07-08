@@ -57,4 +57,4 @@ RMV MMEPOOL:MMEPOOLNAME="mmepool1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MMEPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MME-POOL（RMV-MMEPOOL）_31453522.md`

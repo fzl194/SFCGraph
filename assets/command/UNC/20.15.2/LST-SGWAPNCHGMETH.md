@@ -69,4 +69,4 @@ APN离线计费开关  =  禁止
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGWAPNCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-APN计费方式（LST-SGWAPNCHGMETH）_09896993.md`

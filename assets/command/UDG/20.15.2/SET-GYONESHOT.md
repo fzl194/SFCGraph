@@ -71,4 +71,4 @@ SET GYONESHOT: EXTFLTNAME="test", APPENDINFONAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GYONESHOT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Gy一次重定向参数（SET-GYONESHOT）_82837567.md`

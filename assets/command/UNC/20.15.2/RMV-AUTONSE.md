@@ -61,4 +61,4 @@ RMV AUTONSE: NSEI=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AUTONSE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除自动上报的NSE(RMV-AUTONSE)_72225673.md`

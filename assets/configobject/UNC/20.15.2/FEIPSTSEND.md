@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FEIPSTSEND.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PST广播开关状态（SET-FEIPSTSEND）_00840829.md`

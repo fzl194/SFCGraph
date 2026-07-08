@@ -57,4 +57,4 @@ RMV DFSRPAIRMEM: DFSRPAIRID=1, IMSI="460111111111111";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DFSRPAIRMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/删除双发选收结对成员配置（RMV-DFSRPAIRMEM）_22918678.md`

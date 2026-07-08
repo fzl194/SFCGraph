@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFABRSUMMARY.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFABRSUMMARY.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFABRSUMMARY.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFABRSUMMARY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改区域内路由聚合配置（MOD-OSPFABRSUMMARY）_50120894.md`
+- 原始手册：`evidence/UDG/20.15.2/创建区域内路由聚合配置（ADD-OSPFABRSUMMARY）_00440997.md`
+- 原始手册：`evidence/UDG/20.15.2/删除区域内路由聚合配置（RMV-OSPFABRSUMMARY）_00865933.md`
+- 原始手册：`evidence/UDG/20.15.2/查询区域内路由聚合配置（LST-OSPFABRSUMMARY）_49961502.md`

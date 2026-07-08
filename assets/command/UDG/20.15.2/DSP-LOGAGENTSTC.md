@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LOGAGENTSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志代理丢弃的日志信息（DSP-LOGAGENTSTC）_59103389.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AUTHNAMEPWDCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTHNAMEPWDCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTHNAMEPWDCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTHNAMEPWDCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对鉴权信元用户名和密码的控制（MOD-AUTHNAMEPWDCTRL）_70462573.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对鉴权信元用户名和密码的控制（RMV-AUTHNAMEPWDCTRL）_70462593.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对鉴权信元用户名和密码的控制（ADD-AUTHNAMEPWDCTRL）_23622902.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对鉴权信元用户名和密码的控制（LST-AUTHNAMEPWDCTRL）_70382309.md`

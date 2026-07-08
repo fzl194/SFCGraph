@@ -61,4 +61,4 @@ RMV APNIMSSIGFLTR:APN="huawei.com",PRIORITY=3;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-APNIMSSIGFLTR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN的IMS分类器（RMV-APNIMSSIGFLTR）_86527119.md`

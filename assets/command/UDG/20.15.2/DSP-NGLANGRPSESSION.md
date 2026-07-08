@@ -149,4 +149,4 @@ FAR ID      Redirect Address                                Tos Value   Tos Mask
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NGLANGRPSESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示5G-LAN组会话上下文（DSP-NGLANGRPSESSION）_81710396.md`

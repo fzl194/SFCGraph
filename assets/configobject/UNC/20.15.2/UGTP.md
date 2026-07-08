@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UGTP.md`
-- 原始手册：`evidence/UNC/20.15.2/UGTP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C路径扫描参数(LST-UGTP)_72225595.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTP-C路径扫描参数(SET-UGTP)_26145916.md`

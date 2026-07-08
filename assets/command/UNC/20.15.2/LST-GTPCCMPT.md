@@ -86,4 +86,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPCCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C-V0_V1协议兼容性配置(LST-GTPCCMPT)_26145924.md`

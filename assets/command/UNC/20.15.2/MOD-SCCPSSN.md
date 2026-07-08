@@ -68,4 +68,4 @@ MOD SCCPSSN: SSNX=1, SSN=SGSN, NI=NAT, SSNNAME="ssn9";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SCCPSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP子系统(MOD-SCCPSSN)_26146334.md`

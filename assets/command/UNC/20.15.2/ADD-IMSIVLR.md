@@ -69,4 +69,4 @@ ADD IMSIVLR: IMSI="123030000000001", VN="86139027";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IMSIVLR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI与VLR对应关系(ADD-IMSIVLR)_72225129.md`

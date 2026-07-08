@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MEASUNIT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询测量指标模型(LST-MEASUNIT)_47814449.md`

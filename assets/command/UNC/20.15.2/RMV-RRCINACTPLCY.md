@@ -58,4 +58,4 @@ RMV RRCINACTPLCY: IMSIBEGN="123450000000000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RRCINACTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RRC-Inactive策略（RMV-RRCINACTPLCY）_23782826.md`

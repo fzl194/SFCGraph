@@ -60,4 +60,4 @@ RMV NRFPLMNRT: MCC="123", MNC="456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFPLMNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN路由（RMV-NRFPLMNRT）_09653720.md`

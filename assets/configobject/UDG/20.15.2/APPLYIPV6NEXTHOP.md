@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPLYIPV6NEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYIPV6NEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYIPV6NEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYIPV6NEXTHOP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv6下一跳设置（MOD-APPLYIPV6NEXTHOP）_00440733.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6下一跳设置（RMV-APPLYIPV6NEXTHOP）_49961950.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6下一跳设置（ADD-APPLYIPV6NEXTHOP）_49802386.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6下一跳设置（LST-APPLYIPV6NEXTHOP）_00841305.md`

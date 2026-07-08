@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EMGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/EMGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/EMGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/EMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改运营商紧急呼叫功能配置（MOD-EMGCFG）_72345103.md`
+- 原始手册：`evidence/UNC/20.15.2/删除运营商紧急呼叫功能配置（RMV-EMGCFG）_26145506.md`
+- 原始手册：`evidence/UNC/20.15.2/增加运营商紧急呼叫功能配置（ADD-EMGCFG）_26305316.md`
+- 原始手册：`evidence/UNC/20.15.2/查询运营商紧急呼叫功能配置（LST-EMGCFG）_72225187.md`

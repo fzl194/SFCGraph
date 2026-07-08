@@ -40,5 +40,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSETCDTTL.md`
-- 原始手册：`evidence/UDG/20.15.2/MSETCDTTL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询租约时长（LST-MSETCDTTL）_48332253.md`
+- 原始手册：`evidence/UDG/20.15.2/设置租约时长（SET-MSETCDTTL）_48332255.md`

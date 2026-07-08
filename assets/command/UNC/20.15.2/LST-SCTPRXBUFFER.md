@@ -86,4 +86,4 @@ LST SCTPRXBUFFER: MODE=SHARE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCTPRXBUFFER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP接收缓冲区参数(LST-SCTPRXBUFFER)_50732715.md`

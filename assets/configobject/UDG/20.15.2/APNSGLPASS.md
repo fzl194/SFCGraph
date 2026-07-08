@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNSGLPASS.md`
-- 原始手册：`evidence/UDG/20.15.2/APNSGLPASS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN单通检测开关（LST-APNSGLPASS）_82837111.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN单通检测开关（SET-APNSGLPASS）_82837110.md`

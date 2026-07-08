@@ -56,4 +56,4 @@ RMV MATCHROUTETYPE:NODESEQUENCE=10,ROUTETYPE=external1, POLICYNAME="a";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MATCHROUTETYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除路由类型匹配路由策略（RMV-MATCHROUTETYPE）_49801714.md`

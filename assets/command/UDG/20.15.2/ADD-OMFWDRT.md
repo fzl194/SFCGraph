@@ -53,4 +53,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-OMFWDRT.md`
+- 原始手册：`evidence/UDG/20.15.2/增加OM转发路由-(ADD-OMFWDRT)_21547907.md`

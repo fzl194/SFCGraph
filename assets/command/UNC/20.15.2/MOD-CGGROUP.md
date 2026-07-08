@@ -62,4 +62,4 @@ MOD CGGROUP: CGGRPID=1, DESCRIPTION="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CGGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CG组（MOD-CGGROUP）_09896880.md`

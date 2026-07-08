@@ -71,4 +71,4 @@ DSP RAWLINKSTATUS:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-RAWLINKSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Raw-link状态（DSP-RAWLINKSTATUS）_00866625.md`

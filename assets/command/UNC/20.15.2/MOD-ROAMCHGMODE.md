@@ -71,4 +71,4 @@ MOD ROAMCHGMODE: TMACCTYPE=UE5G_RAT4G, CTRLTYPE=APN_LEVEL, APN="huawei.com", ROA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ROAMCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于漫游属性的计费接口选择方式（MOD-ROAMCHGMODE）_23622982.md`

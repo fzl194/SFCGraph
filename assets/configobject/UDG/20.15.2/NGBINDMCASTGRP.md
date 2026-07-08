@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGBINDMCASTGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/NGBINDMCASTGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/NGBINDMCASTGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除5G-LAN实例绑定组播组配置（RMV-NGBINDMCASTGRP）_15869843.md`
+- 原始手册：`evidence/UDG/20.15.2/增加5G-LAN实例绑定组播组配置（ADD-NGBINDMCASTGRP）_15669945.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN实例绑定组播组配置（LST-NGBINDMCASTGRP）_15711178.md`

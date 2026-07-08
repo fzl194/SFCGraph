@@ -61,4 +61,4 @@ RMV VXLANBINDAPN: APN="apn1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-VXLANBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道组绑定APN（RMV-VXLANBINDAPN）_81234594.md`

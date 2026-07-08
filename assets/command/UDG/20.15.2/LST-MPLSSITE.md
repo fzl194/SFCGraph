@@ -65,4 +65,4 @@ MPLS LSR ID  =  192.168.1.1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MPLSSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MPLS全局配置（LST-MPLSSITE）_49961326.md`

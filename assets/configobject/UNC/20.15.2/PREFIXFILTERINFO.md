@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PREFIXFILTERINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IP前缀列表信息（DSP-PREFIXFILTERINFO）_49961746.md`

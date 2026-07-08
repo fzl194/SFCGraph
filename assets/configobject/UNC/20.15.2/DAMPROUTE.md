@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/DAMPROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改振荡抑制路由（MOD-DAMPROUTE）_50120910.md`
+- 原始手册：`evidence/UNC/20.15.2/删除振荡抑制路由（RMV-DAMPROUTE）_50120806.md`
+- 原始手册：`evidence/UNC/20.15.2/增加振荡抑制路由（ADD-DAMPROUTE）_00841517.md`
+- 原始手册：`evidence/UNC/20.15.2/查询振荡抑制路由（LST-DAMPROUTE）_00841189.md`

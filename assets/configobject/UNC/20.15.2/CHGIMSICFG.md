@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGIMSICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGIMSICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGIMSICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGIMSICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI计费配置(MOD-CHGIMSICFG)_26305200.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI计费配置(RMV-CHGIMSICFG)_72225065.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI计费配置(ADD-CHGIMSICFG)_26145384.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI计费配置(LST-CHGIMSICFG)_72344987.md`

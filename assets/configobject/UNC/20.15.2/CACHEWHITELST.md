@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CACHEWHITELST.md`
-- 原始手册：`evidence/UNC/20.15.2/CACHEWHITELST.md`
-- 原始手册：`evidence/UNC/20.15.2/CACHEWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除异网白名单PLMN信息（RMV-CACHEWHITELST）_69277828.md`
+- 原始手册：`evidence/UNC/20.15.2/增加异网白名单PLMN信息（ADD-CACHEWHITELST）_18357777.md`
+- 原始手册：`evidence/UNC/20.15.2/查询异网白名单PLMN信息（LST-CACHEWHITELST）_17997837.md`

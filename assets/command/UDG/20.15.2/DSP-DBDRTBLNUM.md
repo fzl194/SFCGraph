@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DBDRTBLNUM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CSDB容灾主备本记录数(DSP-DBDRTBLNUM)_49902501.md`

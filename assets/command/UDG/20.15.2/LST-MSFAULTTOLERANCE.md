@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MSFAULTTOLERANCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询故障检测参数（LST-MSFAULTTOLERANCE）_09587939.md`

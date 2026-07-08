@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AUTOLOGPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志自动备份策略（LST-AUTOLOGPOLICY）_89951696.md`

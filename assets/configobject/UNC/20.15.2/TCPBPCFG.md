@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TCPBPCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/TCPBPCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TCP过载反压HTTP流控配置（LST-TCPBPCFG）_30355637.md`
+- 原始手册：`evidence/UNC/20.15.2/设置TCP过载反压HTTP流控配置（SET-TCPBPCFG）_94795792.md`

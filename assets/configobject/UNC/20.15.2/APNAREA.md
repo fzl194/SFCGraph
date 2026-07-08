@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN相关服务区域（RMV-APNAREA）_00789712.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN相关服务区域（ADD-APNAREA）_49830741.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN相关服务区域（LST-APNAREA）_49910161.md`

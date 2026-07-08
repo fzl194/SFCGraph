@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ARPIFLIMIT.md`
-- 原始手册：`evidence/UNC/20.15.2/ARPIFLIMIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ARP表项限制（LST-ARPIFLIMIT）_50281550.md`
+- 原始手册：`evidence/UNC/20.15.2/配置ARP表项限制（SET-ARPIFLIMIT）_00841401.md`

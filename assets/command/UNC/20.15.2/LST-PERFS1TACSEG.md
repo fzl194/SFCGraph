@@ -67,4 +67,4 @@ TAC段结束值  =  0x0002
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PERFS1TACSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1TAC段（LST-PERFS1TACSEG）_44529807.md`

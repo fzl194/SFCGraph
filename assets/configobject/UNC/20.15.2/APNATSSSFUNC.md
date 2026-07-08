@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNATSSSFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNATSSSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-ATSSS功能（LST-APNATSSSFUNC）_96242064.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-ATSSS功能（SET-APNATSSSFUNC）_96243070.md`

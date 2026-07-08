@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PIMNBR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PIM邻居信息（DSP-PIMNBR）_00866717.md`

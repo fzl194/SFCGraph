@@ -64,4 +64,4 @@ UP重选场景  =  SMF分配地址失败
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPRESELECTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UP重选功能（LST-UPRESELECTFUNC）_40101321.md`

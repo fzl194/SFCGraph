@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UE灌包白名单（RMV-UEINJECTLIST）_82837103.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UE灌包白名单（LST-UEINJECTLIST）_82837104.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UE灌包白名单（SET-UEINJECTLIST）_82837102.md`

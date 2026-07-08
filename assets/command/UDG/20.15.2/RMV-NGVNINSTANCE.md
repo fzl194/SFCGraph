@@ -57,4 +57,4 @@ RMV NGVNINSTANCE: VNINSTANCE="A0000001-460-003-01";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-NGVNINSTANCE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除5G-VNInstance的配置（RMV-NGVNINSTANCE）_24943458.md`

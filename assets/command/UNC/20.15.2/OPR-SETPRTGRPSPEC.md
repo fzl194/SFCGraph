@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OPR-SETPRTGRPSPEC.md`
+- 原始手册：`evidence/UNC/20.15.2/操作设置保护组规格值（OPR-SETPRTGRPSPEC）_52005197.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MECAREATAI.md`
-- 原始手册：`evidence/UNC/20.15.2/MECAREATAI.md`
-- 原始手册：`evidence/UNC/20.15.2/MECAREATAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-MEC-TAI信息（RMV-MECAREATAI）_85091977.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-MEC-TAI信息（ADD-MECAREATAI）_34892004.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-MEC-TAI信息（LST-MECAREATAI）_84932185.md`

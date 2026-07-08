@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGHOLI.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGHOLI.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGHOLI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除节假日配置(RMV-CHGHOLI)_72225063.md`
+- 原始手册：`evidence/UNC/20.15.2/增加节假日配置(ADD-CHGHOLI)_26145382.md`
+- 原始手册：`evidence/UNC/20.15.2/查询节假日配置(LST-CHGHOLI)_26305198.md`

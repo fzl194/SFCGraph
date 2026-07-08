@@ -66,4 +66,4 @@ two                 1                         允许                      2001:D
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IPV6PREFIXFILTERNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6前缀过滤器节点（LST-IPV6PREFIXFILTERNODE）_50121142.md`

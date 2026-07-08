@@ -66,4 +66,4 @@ Ethernet64/0/4  100         150
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IFALLOWEDVLAN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询主接口允许通过的VLAN（LST-IFALLOWEDVLAN）_25183529.md`

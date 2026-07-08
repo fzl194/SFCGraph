@@ -68,4 +68,4 @@ IPV6全局Gi重定向开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GIREDIRECTFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局Gi重定向信息（LST-GIREDIRECTFUNC）_82837765.md`

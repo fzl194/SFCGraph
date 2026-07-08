@@ -54,4 +54,4 @@ RMV OSPFPEER:PROCID=1,IPADDRESS="10.1.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-OSPFPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF的NBMA网络邻居路由器配置（RMV-OSPFPEER）_50280762.md`

@@ -80,4 +80,4 @@ ADD NGACCAREALST: AREARANGE=AREA_CODE, AREACODE="Jinqiao_Industrial_Park",  CTRL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G接入限制区域列表（ADD-NGACCAREALST）_44006447.md`

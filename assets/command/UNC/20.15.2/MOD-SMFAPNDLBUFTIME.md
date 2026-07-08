@@ -61,4 +61,4 @@ MOD SMFAPNDLBUFTIME: APN="huawei.com", NORMALUSER=7, NBIOTUSER=7;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMFAPNDLBUFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN的下行报文缓存时长配置（MOD-SMFAPNDLBUFTIME）_96805495.md`

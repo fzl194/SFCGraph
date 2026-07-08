@@ -58,4 +58,4 @@ RMV NGAREATZ: MCC="460", MNC="03", BGNTAC="000112";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGAREATZ.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G区域时区参数（RMV-NGAREATZ）_20993738.md`

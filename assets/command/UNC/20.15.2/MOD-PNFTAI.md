@@ -70,4 +70,4 @@ MOD PNFTAI: NFINSTANCEID="SMF_Instance_0", TAI="460001000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的TAI信息（MOD-PNFTAI）_52017195.md`

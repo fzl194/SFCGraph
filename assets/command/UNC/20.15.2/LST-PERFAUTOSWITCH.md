@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PERFAUTOSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话统对象自动生成开关(LST-PERFAUTOSWITCH)_72345793.md`

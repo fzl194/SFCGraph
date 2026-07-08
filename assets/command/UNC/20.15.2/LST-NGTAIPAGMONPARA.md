@@ -69,4 +69,4 @@ N2模式TAI组二次寻呼请求次数增幅阈值（%）  =  20
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGTAIPAGMONPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NG-TAI组寻呼异常监控功能参数（LST-NGTAIPAGMONPARA）_94289558.md`

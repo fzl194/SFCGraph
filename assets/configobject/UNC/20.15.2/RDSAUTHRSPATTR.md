@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSAUTHRSPATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSAUTHRSPATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询支持的Radius鉴权响应消息私有属性（LST-RDSAUTHRSPATTR）_28567654.md`
+- 原始手册：`evidence/UNC/20.15.2/设置支持的Radius鉴权响应消息私有属性（SET-RDSAUTHRSPATTR）_28567663.md`

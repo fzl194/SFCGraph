@@ -175,4 +175,4 @@ sdim module mast control changed:    824483968 824261824 824275648 824468544
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-COMMONDBGMCR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示调试信息(DSP-COMMONDBGMCR)_26307122.md`

@@ -61,4 +61,4 @@ RMV NFDISCSRVLBSW: TARGETNFTYPE=NfUDM;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFDISCSRVLBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务发现Service负载均衡功能（RMV-NFDISCSRVLBSW）_04217460.md`

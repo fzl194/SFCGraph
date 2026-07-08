@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFREFRESHNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFREFRESHNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFREFRESHNF.md`
+- 原始手册：`evidence/UNC/20.15.2/操作执行网元信息刷新（OPR-NRFREFRESHNF）_88537104.md`
+- 原始手册：`evidence/UNC/20.15.2/显示网元信息刷新记录（DSP-NRFREFRESHNF）_35636451.md`
+- 原始手册：`evidence/UNC/20.15.2/清除网元信息刷新记录（CLR-NRFREFRESHNF）_35374735.md`

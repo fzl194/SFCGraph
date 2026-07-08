@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCGCHLMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGCHLMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGCHLMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除话单通道一级目录类型映射表（RMV-NCGCHLMAP）_25111036.md`
+- 原始手册：`evidence/UNC/20.15.2/增加话单通道一级目录类型映射表（ADD-NCGCHLMAP）_73270905.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单通道一级目录类型映射表配置（LST-NCGCHLMAP）_24791136.md`

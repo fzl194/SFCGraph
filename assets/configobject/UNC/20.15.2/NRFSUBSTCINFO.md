@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSUBSTCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NF订阅统计信息（DSP-NRFSUBSTCINFO）_88537094.md`

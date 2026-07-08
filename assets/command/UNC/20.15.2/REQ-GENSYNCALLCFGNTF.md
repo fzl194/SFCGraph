@@ -54,4 +54,4 @@ SERVICEINSTANCE="vnfc"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REQ-GENSYNCALLCFGNTF.md`
+- 原始手册：`evidence/UNC/20.15.2/请求生成一个全量同步通知（REQ-GENSYNCALLCFGNTF）_59103801.md`

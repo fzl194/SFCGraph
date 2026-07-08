@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BGP.md`
-- 原始手册：`evidence/UNC/20.15.2/BGP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP（LST-BGP）_00840665.md`
+- 原始手册：`evidence/UNC/20.15.2/设置BGP（SET-BGP）_00866001.md`

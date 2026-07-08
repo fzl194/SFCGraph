@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ME.md`
-- 原始手册：`evidence/UNC/20.15.2/ME.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网元信息（MOD-ME）_00124818.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元配置信息（LST-ME）_47084797.md`

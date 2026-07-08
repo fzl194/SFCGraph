@@ -61,4 +61,4 @@ MOD MVNOFUN: MVNOID=1, SMS=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MVNOFUN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MVNO功能配置信息(MOD-MVNOFUN)_26146062.md`

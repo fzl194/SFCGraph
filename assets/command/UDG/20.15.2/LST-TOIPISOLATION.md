@@ -63,4 +63,4 @@ IP地址隔离功能开关  =  ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOIPISOLATION.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP地址隔离功能配置（LST-TOIPISOLATION）_59506584.md`

@@ -65,4 +65,4 @@ ADD HBUSRATTRCONF: CONFNAME="conf1", USRATTRCONDNM1="UsrAttrCondNm1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-HBUSRATTRCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/新增高带宽用户属性（ADD-HBUSRATTRCONF）_46287562.md`

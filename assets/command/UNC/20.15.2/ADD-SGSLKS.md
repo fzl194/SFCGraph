@@ -63,4 +63,4 @@ ADD SGSLKS: LSX=0, VN="11808", LSN="VLR8";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SGSLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGs链路集(ADD-SGSLKS)_72345035.md`

@@ -66,4 +66,4 @@ RedCap-NR用户下行数据缓存时长 = 6
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBDLBUFTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局下行数据缓存时长配置（LST-GLBDLBUFTIME）_82837187.md`

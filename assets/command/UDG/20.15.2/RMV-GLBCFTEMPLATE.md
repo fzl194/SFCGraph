@@ -54,4 +54,4 @@ RMV GLBCFTEMPLATE:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-GLBCFTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局内容过滤模板（RMV-GLBCFTEMPLATE）_51429108.md`

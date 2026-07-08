@@ -70,4 +70,4 @@ MOD CHGPLMNCG: MCC="123", MNC="001", IPT=IPV4, CGIP1="192.168.66.5", CGIP2="192.
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CHGPLMNCG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PLMN-CG配置参数(MOD-CHGPLMNCG)_72344989.md`

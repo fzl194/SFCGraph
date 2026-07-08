@@ -55,4 +55,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-ACLGROUP6.md`
+- 原始手册：`evidence/UNC/20.15.2/清除IPv6-ACL规则匹配计数（RTR-ACLGROUP6）_00440701.md`

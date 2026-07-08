@@ -76,4 +76,4 @@ PCC故障处理参数
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCFAILACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC故障处理（LST-PCCFAILACTION）_33684768.md`

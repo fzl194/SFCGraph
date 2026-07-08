@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBILINKSETPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILINKSETPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILINKSETPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILINKSETPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SBI链路集策略（MOD-SBILINKSETPROP）_29053335.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SBI链路集策略（RMV-SBILINKSETPROP）_29291777.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SBI链路集策略（ADD-SBILINKSETPROP）_29053325.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SBI链路集策略（LST-SBILINKSETPROP）_28971843.md`

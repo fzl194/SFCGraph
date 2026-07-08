@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSFLOWFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSFLOWFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS-Flow功能（LST-QOSFLOWFUNC）_39047315.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS-Flow扩展功能（SET-QOSFLOWFUNC）_38788439.md`

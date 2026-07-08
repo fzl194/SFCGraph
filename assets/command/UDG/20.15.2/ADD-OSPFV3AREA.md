@@ -80,4 +80,4 @@ ADD OSPFV3AREA: PROCID=1, AREAID="0.0.0.0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-OSPFV3AREA.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPFv3区域配置（ADD-OSPFV3AREA）_50120842.md`

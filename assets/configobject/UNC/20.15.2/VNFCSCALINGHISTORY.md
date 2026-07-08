@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VNFCSCALINGHISTORY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于VNFC的扩缩容历史信息(LST-VNFCSCALINGHISTORY)_29626920.md`

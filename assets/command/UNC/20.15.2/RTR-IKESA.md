@@ -62,4 +62,4 @@ RTR IKESA:RESETTYPE=ConnId,CONNECTIONID=1,IPVERSION=IPv4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-IKESA.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复IKE安全联盟（RTR-IKESA）_80592514.md`

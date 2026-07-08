@@ -65,4 +65,4 @@ SET ISUPODCPUTHD: WARNTHD=85, RECVTHD=75;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-ISUPODCPUTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ISU-POD的业务CPU过载告警阈值（SET-ISUPODCPUTHD）_78614794.md`

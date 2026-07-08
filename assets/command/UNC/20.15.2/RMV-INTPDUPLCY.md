@@ -58,4 +58,4 @@ RMV INTPDUPLCY:SUBRANGE=INTERNAT_ROAM_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-INTPDUPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除异网漫游PDU会话重建策略（RMV-INTPDUPLCY）_15146278.md`

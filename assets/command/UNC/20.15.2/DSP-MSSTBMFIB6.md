@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSTBMFIB6.md`
+- 原始手册：`evidence/UNC/20.15.2/通过关键字查询第六版因特网协议转发表的结果（DSP-MSSTBMFIB6）_00865577.md`

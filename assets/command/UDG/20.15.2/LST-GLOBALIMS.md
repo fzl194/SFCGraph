@@ -64,4 +64,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLOBALIMS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局IMS配置（LST-GLOBALIMS）_82837831.md`

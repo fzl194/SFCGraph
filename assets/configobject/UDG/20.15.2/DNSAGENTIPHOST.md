@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DNSAGENTIPHOST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS代理服务器域名（DSP-DNSAGENTIPHOST）_00841025.md`

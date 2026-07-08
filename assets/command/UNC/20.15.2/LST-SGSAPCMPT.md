@@ -71,4 +71,4 @@ TMSI based NRI container  =  不携带
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGSAPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGsAP协议兼容性(LST-SGSAPCMPT)_26145442.md`

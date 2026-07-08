@@ -78,4 +78,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFASBRSUMMARY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询引入路由聚合配置（LST-OSPFASBRSUMMARY）_50121290.md`

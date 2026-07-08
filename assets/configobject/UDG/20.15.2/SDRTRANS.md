@@ -41,5 +41,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRTRANS.md`
-- 原始手册：`evidence/UDG/20.15.2/SDRTRANS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SDR传输能力（LST-SDRTRANS）_30310141.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SDR传输能力（SET-SDRTRANS）_30310143.md`

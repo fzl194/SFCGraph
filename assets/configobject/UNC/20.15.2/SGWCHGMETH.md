@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWCHGMETH.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCHGMETH.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-Charge-Method（RMV-SGWCHGMETH）_09896986.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-Charge-Method（LST-SGWCHGMETH）_09896987.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGW-Charge-Method（SET-SGWCHGMETH）_09896985.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYRFCHKRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYRFCHKRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYRFCHKRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYRFCHKRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继引用检查规则（MOD-RELAYRFCHKRULE）_43992616.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继引用检查规则（RMV-RELAYRFCHKRULE）_94632065.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继引用检查规则（ADD-RELAYRFCHKRULE）_44232398.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继引用检查规则（LST-RELAYRFCHKRULE）_94871991.md`

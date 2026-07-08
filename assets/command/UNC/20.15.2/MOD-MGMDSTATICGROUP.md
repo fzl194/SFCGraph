@@ -64,4 +64,4 @@ MOD MGMDSTATICGROUP: VRFNAME="_public_", ADDRESSFAMILY=ipv4unicast, IFNAME="Ethe
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MGMDSTATICGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IGMP静态组配置（MOD-MGMDSTATICGROUP）_50121294.md`

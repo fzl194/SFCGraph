@@ -57,4 +57,4 @@ RMV MCASTENABLE:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MCASTENABLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除组播使能配置（RMV-MCASTENABLE）_50281414.md`

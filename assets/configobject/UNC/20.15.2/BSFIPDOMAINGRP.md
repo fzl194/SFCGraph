@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BSFIPDOMAINGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/BSFIPDOMAINGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/BSFIPDOMAINGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPDOMAIN组（RMV-BSFIPDOMAINGRP）_75822996.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPDOMAIN组（ADD-BSFIPDOMAINGRP）_75982828.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPDOMAIN组（LST-BSFIPDOMAINGRP）_75822972.md`

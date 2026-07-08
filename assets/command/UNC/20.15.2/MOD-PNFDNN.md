@@ -73,4 +73,4 @@ MOD PNFDNN: INDEX=1,NFINSTANCEID="UPF_Instance_0", DNN="huawei.com",PNFNSINDEX=1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的DNN信息（MOD-PNFDNN）_05497114.md`

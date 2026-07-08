@@ -59,4 +59,4 @@ RTR PIMROUTE:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ALLFLAG=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-PIMROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/清除PIM协议表项（RTR-PIMROUTE）_50120826.md`

@@ -56,4 +56,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AUTHSOAP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网管登录认证策略（SET-AUTHSOAP）_97634436.md`

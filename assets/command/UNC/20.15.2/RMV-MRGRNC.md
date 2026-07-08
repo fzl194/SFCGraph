@@ -56,4 +56,4 @@ RMV MRGRNC: RNCX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MRGRNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除融合RNC(RMV-MRGRNC)_19455577.md`

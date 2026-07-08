@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AUTOSCALINGBGPMSPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP自动化多源邻居配置模板（LST-AUTOSCALINGBGPMSPEER）_00441477.md`

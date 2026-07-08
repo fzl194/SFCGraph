@@ -88,4 +88,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFTAIRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的TAI范围（LST-PNFTAIRANGE）_09651561.md`

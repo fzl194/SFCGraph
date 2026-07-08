@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N40MSGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/N40MSGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40接口消息的控制参数（LST-N40MSGCTRL）_78553376.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N40接口消息的控制参数（SET-N40MSGCTRL）_78393532.md`

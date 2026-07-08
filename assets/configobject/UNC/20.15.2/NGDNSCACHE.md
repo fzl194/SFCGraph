@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGDNSCACHE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSCACHE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSCACHE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSCACHE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示DNS缓存（DSP-NGDNSCACHE）_10765244.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS缓存参数（LST-NGDNSCACHE）_55725191.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DNS缓存（CLR-NGDNSCACHE）_55845121.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DNS缓存参数（SET-NGDNSCACHE）_10765250.md`

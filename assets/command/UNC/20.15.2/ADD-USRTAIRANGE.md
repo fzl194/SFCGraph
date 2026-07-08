@@ -67,4 +67,4 @@ ADD USRTAIRANGE: RANGENAME="tai1", MCC="460", MNC="02", TACSTART="1234", TACEND=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-USRTAIRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户TAI区域（ADD-USRTAIRANGE）_88537092.md`

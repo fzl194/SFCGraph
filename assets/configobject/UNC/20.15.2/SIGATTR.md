@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SIGATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/SIGATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/SIGATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示信令网属性状态(DSP-SIGATTR)_72345943.md`
+- 原始手册：`evidence/UNC/20.15.2/查询信令网属性(LST-SIGATTR)_26306154.md`
+- 原始手册：`evidence/UNC/20.15.2/设置信令网属性(SET-SIGATTR)_72226021.md`

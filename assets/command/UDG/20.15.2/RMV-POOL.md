@@ -63,4 +63,4 @@ RMV POOL: POOLNAME="pool1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-POOL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除地址池（RMV-POOL）_82837134.md`

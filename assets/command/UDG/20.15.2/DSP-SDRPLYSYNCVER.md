@@ -61,4 +61,4 @@ app-1008-id-0  1654183778144333072
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SDRPLYSYNCVER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示策略同步版本（DSP-SDRPLYSYNCVER）_71333122.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VXLAN隧道组绑定APN（MOD-VXLANBINDAPN）_68194509.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道组绑定APN（RMV-VXLANBINDAPN）_81234594.md`
+- 原始手册：`evidence/UDG/20.15.2/新增VXLAN隧道组绑定APN（ADD-VXLANBINDAPN）_68354109.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN隧道组绑定APN（LST-VXLANBINDAPN）_80994834.md`

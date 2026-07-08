@@ -60,4 +60,4 @@ RMV SRVNODEGROUP:GROUPNAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SRVNODEGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务节点组（RMV-SRVNODEGROUP）_09653063.md`

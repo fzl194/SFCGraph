@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPUCAPABILITY.md`
-- 原始手册：`evidence/UNC/20.15.2/CPUCAPABILITY.md`
-- 原始手册：`evidence/UNC/20.15.2/CPUCAPABILITY.md`
-- 原始手册：`evidence/UNC/20.15.2/CPUCAPABILITY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CPU能力基线(RMV-CPUCAPABILITY)_58881889.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CPU能力基线(ADD-CPUCAPABILITY)_61800595.md`
+- 原始手册：`evidence/UNC/20.15.2/更新CPU能力基线(UPD-CPUCAPABILITY)_25484937.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CPU能力基线(LST-CPUCAPABILITY)_25485673.md`

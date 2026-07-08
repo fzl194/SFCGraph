@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFPFCPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFPFCPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFPFCPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFPFCPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF粒度PFCP参数（MOD-UPFPFCPPARA）_91957532.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF粒度PFCP参数（RMV-UPFPFCPPARA）_37197435.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF粒度PFCP参数（ADD-UPFPFCPPARA）_92277464.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF粒度PFCP参数（LST-UPFPFCPPARA）_92437462.md`

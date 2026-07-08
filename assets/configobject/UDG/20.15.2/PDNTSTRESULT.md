@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PDNTSTRESULT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PDN侧路由探测结果（DSP-PDNTSTRESULT）_70824405.md`

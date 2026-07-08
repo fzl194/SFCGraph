@@ -73,4 +73,4 @@ SET MMLCFGDOMAIN: CMDNAME="ADD APN", NEWDOMAINNAME="domain_a", OLDDOMAINNAME="do
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-MMLCFGDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/批量设置绑定域信息（SET-MMLCFGDOMAIN）_56064769.md`

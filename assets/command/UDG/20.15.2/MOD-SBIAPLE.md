@@ -51,4 +51,4 @@ MOD SBIAPLE: INDEX=1, DESCRIPTION="smf";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-SBIAPLE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改服务化接口本端实体（MOD-SBIAPLE）_83813638.md`

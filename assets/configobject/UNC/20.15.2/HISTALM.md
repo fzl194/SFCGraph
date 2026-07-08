@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HISTALM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询历史告警（LST-HISTALM）_39287689.md`

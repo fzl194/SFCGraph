@@ -66,4 +66,4 @@ SET HSMFCHGCTRL: CHGMODE=QBC, LOCALRCPSELMODE=LOCALCFG;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-HSMFCHGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置漫游用户在归属地的计费方式和漫游参数的协商方式（SET-HSMFCHGCTRL）_80169070.md`

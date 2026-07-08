@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNSESSIONSTATS.md`
+- 原始手册：`evidence/UDG/20.15.2/按照IP地址分配方式查看当前在线会话数（DSP-APNSESSIONSTATS）_06054802.md`

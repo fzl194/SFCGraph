@@ -53,4 +53,4 @@ CLR UERADIOCAPLEN:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-UERADIOCAPLEN.md`
+- 原始手册：`evidence/UNC/20.15.2/清除UE-Radio-Capability信元长度统计信息（CLR-UERADIOCAPLEN）_71436527.md`

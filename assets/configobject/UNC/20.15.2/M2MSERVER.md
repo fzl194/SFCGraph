@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/M2MSERVER.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSERVER.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSERVER.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSERVER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改M2M服务器（MOD-M2MSERVER）_96242583.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M服务器（RMV-M2MSERVER）_73321242.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M服务器（ADD-M2MSERVER）_73321225.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M服务器（LST-M2MSERVER）_73321233.md`

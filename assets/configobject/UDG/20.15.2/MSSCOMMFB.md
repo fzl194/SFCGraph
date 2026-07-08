@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSCOMMFB.md`
+- 原始手册：`evidence/UDG/20.15.2/查询通信功能块信息（DSP-MSSCOMMFB）_49961794.md`

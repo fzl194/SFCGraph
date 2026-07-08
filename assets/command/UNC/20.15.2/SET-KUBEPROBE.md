@@ -58,4 +58,4 @@ SET KUBEPROBE:READINESS=ENABLE,READINESSFE=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-KUBEPROBE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置是否放通就绪状态检测（SET-KUBEPROBE）_13782000.md`

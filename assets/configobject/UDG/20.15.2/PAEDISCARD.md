@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEDISCARD.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEDISCARD.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE丢包统计信息（DSP-PAEDISCARD）_92520020.md`
+- 原始手册：`evidence/UDG/20.15.2/清除PAE丢包统计信息（RTR-PAEDISCARD）_92520053.md`

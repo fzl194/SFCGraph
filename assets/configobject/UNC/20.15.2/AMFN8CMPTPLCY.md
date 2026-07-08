@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFN8CMPTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFN8CMPTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFN8CMPTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFN8CMPTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF-N8接口兼容性策略（MOD-AMFN8CMPTPLCY）_89742609.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF-N8接口兼容性策略（RMV-AMFN8CMPTPLCY）_39142806.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF-N8接口兼容性策略（ADD-AMFN8CMPTPLCY）_38983042.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF-N8接口兼容性策略（LST-AMFN8CMPTPLCY）_89422861.md`

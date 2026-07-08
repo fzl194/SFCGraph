@@ -75,4 +75,4 @@ eNodeB覆盖增强寻呼能力指示  =  不支持
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-ENBATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示eNodeB属性(DSP-ENBATTR)_72345861.md`

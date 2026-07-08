@@ -64,4 +64,4 @@ MOD SMFEMGCFG:NOID=0,UDMREG=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMFEMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改运营商紧急呼叫会话功能配置（MOD-SMFEMGCFG）_37903905.md`

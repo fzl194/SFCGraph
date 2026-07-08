@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRBFDTEMPLET.md`
-- 原始手册：`evidence/UDG/20.15.2/SRBFDTEMPLET.md`
-- 原始手册：`evidence/UDG/20.15.2/SRBFDTEMPLET.md`
-- 原始手册：`evidence/UDG/20.15.2/SRBFDTEMPLET.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BFD模板（MOD-SRBFDTEMPLET）_00440993.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BFD模板（RMV-SRBFDTEMPLET）_49801730.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BFD模板（ADD-SRBFDTEMPLET）_00865873.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BFD模板（LST-SRBFDTEMPLET）_50281218.md`

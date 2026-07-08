@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAECHECKTHD.md`
-- 原始手册：`evidence/UNC/20.15.2/PAECHECKTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE寻呼反压流控检测阈值(LST-PAECHECKTHD)_13911930.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE寻呼反压流控检测阈值(SET-PAECHECKTHD)_13751952.md`

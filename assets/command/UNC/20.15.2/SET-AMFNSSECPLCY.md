@@ -67,4 +67,4 @@ SET AMFNSSECPLCY: CRONSSECSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AMFNSSECPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF切片安全策略（SET-AMFNSSECPLCY）_97735773.md`

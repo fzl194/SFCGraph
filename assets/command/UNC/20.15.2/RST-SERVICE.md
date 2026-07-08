@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-SERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/复位业务（RST-SERVICE）_51174329.md`

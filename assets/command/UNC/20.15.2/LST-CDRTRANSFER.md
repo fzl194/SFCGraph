@@ -74,4 +74,4 @@ Data Record Transfer Request重传时间间隔（秒）  =  3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CDRTRANSFER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单发送控制参数（LST-CDRTRANSFER）_09896851.md`

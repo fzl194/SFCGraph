@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1TACID.md`
-- 原始手册：`evidence/UNC/20.15.2/S1TACID.md`
-- 原始手册：`evidence/UNC/20.15.2/S1TACID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TAC组内绑定的S1TAC号段（RMV-S1TACID）_09654426.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TAC组内绑定的S1TAC号段（ADD-S1TACID）_09651757.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TAC组内绑定的S1TAC号段（LST-S1TACID）_09653802.md`

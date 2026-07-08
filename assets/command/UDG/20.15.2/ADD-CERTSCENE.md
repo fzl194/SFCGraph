@@ -62,4 +62,4 @@ ADD CERTSCENE: SCENENAME="DeviceA", SCENETYPE=CA, ENDESCRIPTION="DeviceA", CNDES
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CERTSCENE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加证书场景（ADD-CERTSCENE）_25912241.md`

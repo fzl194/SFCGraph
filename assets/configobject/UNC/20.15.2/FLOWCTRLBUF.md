@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FLOWCTRLBUF.md`
-- 原始手册：`evidence/UNC/20.15.2/FLOWCTRLBUF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流量控制缓存配置(LST-FLOWCTRLBUF)_26305798.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流量控制缓存配置(SET-FLOWCTRLBUF)_72225667.md`

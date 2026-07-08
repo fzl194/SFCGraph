@@ -59,4 +59,4 @@ RMV IPBINDVPNIPSEC:IFNAME="Loopback1",VRFNAME="vrf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IPBINDVPNIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口绑定VPN（RMV-IPBINDVPNIPSEC）_25830701.md`

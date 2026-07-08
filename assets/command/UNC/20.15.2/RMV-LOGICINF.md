@@ -65,4 +65,4 @@ RMV LOGICINF: NAME="gxif1/0/1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOGICINF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除逻辑接口（RMV-LOGICINF）_09896725.md`

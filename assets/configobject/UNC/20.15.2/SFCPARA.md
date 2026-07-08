@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SFC参数（MOD-SFCPARA）_29118397.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SFC参数（RMV-SFCPARA）_83159238.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SFC参数（ADD-SFCPARA）_29118393.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFC参数（LST-SFCPARA）_83159234.md`

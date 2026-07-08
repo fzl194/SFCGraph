@@ -84,4 +84,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IMSIAPNBINDUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN下用户和UPF的绑定关系配置（ADD-IMSIAPNBINDUP）_21742329.md`

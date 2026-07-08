@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CCOPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/CCOPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CCO策略（LST-CCOPOLICY）_44415683.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CCO策略（SET-CCOPOLICY）_44536221.md`

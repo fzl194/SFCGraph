@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PODINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示已部署的Pod实例信息（DSP-PODINFO）_09587375.md`

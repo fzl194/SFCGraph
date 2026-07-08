@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-AMFCAP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示AMF相对容量信息（DSP-AMFCAP）_30167479.md`

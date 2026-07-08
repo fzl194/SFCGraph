@@ -60,4 +60,4 @@ ADD IPEN7SUFFIX: INTELLISUFFIX="intelligent", INTELLINAME="video";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IPEN7SUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能业务后缀（ADD-IPEN7SUFFIX）_16546777.md`

@@ -58,4 +58,4 @@ RMV L2RULE: L2RULENAME="rule1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-L2RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除层二规则（RMV-L2RULE）_70462597.md`

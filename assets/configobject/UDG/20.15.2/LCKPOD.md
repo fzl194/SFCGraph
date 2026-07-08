@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCKPOD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询锁定的POD（LST-LCKPOD）_64015272.md`

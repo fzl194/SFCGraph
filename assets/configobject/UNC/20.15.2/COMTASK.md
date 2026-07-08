@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMTASK.md`
+- 原始手册：`evidence/UNC/20.15.2/停止SDR通信质量检测任务（STP-COMTASK）_63673353.md`

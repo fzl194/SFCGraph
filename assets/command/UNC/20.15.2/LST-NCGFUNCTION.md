@@ -55,4 +55,4 @@ LST NCGFUNCTION: INSTANCEID="a";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NCGFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NCG功能实例信息（LST-NCGFUNCTION）_45110923.md`

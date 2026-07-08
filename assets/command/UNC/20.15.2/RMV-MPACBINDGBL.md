@@ -53,4 +53,4 @@ RMV MPACBINDGBL:IPVERSION=IPv4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MPACBINDGBL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MPAC全局策略（RMV-MPACBINDGBL）_49802258.md`

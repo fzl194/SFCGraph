@@ -55,4 +55,4 @@ MOD DSCPMAP:DSCP=8,VALUE=6,TYPE=8021p;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-DSCPMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DSCP值到VLAN优先级的映射（MOD-DSCPMAP）_00841565.md`

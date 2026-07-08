@@ -76,4 +76,4 @@ SPT计算最大距离的节点数量  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OSPFTOPOSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF拓扑的统计信息（DSP-OSPFTOPOSTC）_00601069.md`

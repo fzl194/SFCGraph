@@ -59,4 +59,4 @@ RMV SGWCHGMETH:CHARGECHAR=PREPAID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SGWCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-Charge-Method（RMV-SGWCHGMETH）_09896986.md`

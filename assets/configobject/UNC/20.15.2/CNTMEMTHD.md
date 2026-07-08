@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CNTMEMTHD.md`
-- 原始手册：`evidence/UNC/20.15.2/CNTMEMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容器内存阈值（LST-CNTMEMTHD）_32743961.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容器内存告警阈值（SET-CNTMEMTHD）_32743963.md`

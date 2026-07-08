@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECIPURPFSTAT.md`
-- 原始手册：`evidence/UNC/20.15.2/SECIPURPFSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示URPF丢弃报文计数信息（DSP-SECIPURPFSTAT）_50121378.md`
+- 原始手册：`evidence/UNC/20.15.2/清除URPF丢包信息（RTR-SECIPURPFSTAT）_00440305.md`

@@ -79,4 +79,4 @@ LST MPACIPV6RULE:POLICYNAME="policyV6";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MPACIPV6RULE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-MPAC策略规则（LST-MPACIPV6RULE）_00866397.md`

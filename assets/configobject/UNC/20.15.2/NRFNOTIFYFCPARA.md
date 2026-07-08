@@ -30,5 +30,5 @@ NFNTYNUM参数范围过大，会导致通知消息增多，引起cpu升高，影
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNOTIFYFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNOTIFYFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通知流控参数（LST-NRFNOTIFYFCPARA）_09654449.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通知流控参数（SET-NRFNOTIFYFCPARA）_09653165.md`

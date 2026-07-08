@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOG.md`
-- 原始手册：`evidence/UDG/20.15.2/LOG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置日志导出参数（EXP-LOG）_42491895.md`
+- 原始手册：`evidence/UDG/20.15.2/收集日志信息（COL-LOG）_35481180.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDATACHK.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDATACHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF数据一致性核查相关参数（LST-NRFDATACHK）_96805488.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF数据核查相关参数（SET-NRFDATACHK）_96805506.md`

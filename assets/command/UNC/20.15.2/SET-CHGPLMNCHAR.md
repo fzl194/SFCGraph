@@ -63,4 +63,4 @@ SET CHGPLMNCHAR: PLMN=HPLMN, SMOP=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHGPLMNCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PLMN的计费属性参数(SET-CHGPLMNCHAR)_26305204.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PEERPUBLICKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/PEERPUBLICKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/PEERPUBLICKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/PEERPUBLICKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端公钥（MOD-PEERPUBLICKEY）_49802146.md`
+- 原始手册：`evidence/UNC/20.15.2/创建对端公钥（ADD-PEERPUBLICKEY）_00441185.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端公钥（RMV-PEERPUBLICKEY）_50121078.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端公钥（LST-PEERPUBLICKEY）_50281774.md`

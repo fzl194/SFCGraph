@@ -60,4 +60,4 @@ RMV SGWDNS: DNTYPE=TAI, TAC="1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SGWDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S-GW-DNS域名策略（RMV-SGWDNS）_26145972.md`

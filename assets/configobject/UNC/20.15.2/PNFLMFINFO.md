@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFLMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFLMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFLMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFLMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端LMF信息（MOD-PNFLMFINFO）_02470584.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端LMF信息（RMV-PNFLMFINFO）_02910212.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端LMF的信息（ADD-PNFLMFINFO）_02870338.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端LMF的信息（LST-PNFLMFINFO）_49390203.md`

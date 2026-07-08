@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DISKPARTITION.md`
-- 原始手册：`evidence/UNC/20.15.2/DISKPARTITION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询资源磁盘分区过载配置（LST-DISKPARTITION）_59036254.md`
+- 原始手册：`evidence/UNC/20.15.2/设置资源磁盘分区过载配置（SET-DISKPARTITION）_59036385.md`

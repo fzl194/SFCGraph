@@ -62,4 +62,4 @@ SET FETMFLOW: SWITCH=ON, THRESHOLD=80;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FETMFLOW.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FETM流控配置（SET-FETMFLOW）_58971168.md`

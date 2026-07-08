@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DBTBL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSDB数据表信息（DSP-DBTBL）_29626992.md`

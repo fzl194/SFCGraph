@@ -72,4 +72,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SRVVNFCMSGSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务VNFC消息统计（DSP-SRVVNFCMSGSTAT）_29627051.md`

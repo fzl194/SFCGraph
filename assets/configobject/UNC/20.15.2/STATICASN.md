@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STATICASN.md`
-- 原始手册：`evidence/UNC/20.15.2/STATICASN.md`
-- 原始手册：`evidence/UNC/20.15.2/STATICASN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除静态ASN（RMV-STATICASN）_39850025.md`
+- 原始手册：`evidence/UNC/20.15.2/增加静态ASN（ADD-STATICASN）_39850023.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态ASN（LST-STATICASN）_40108905.md`

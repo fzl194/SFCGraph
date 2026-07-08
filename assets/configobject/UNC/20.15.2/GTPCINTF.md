@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTF.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTF.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C接口信息（RMV-GTPCINTF）_09654360.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C接口信息（ADD-GTPCINTF）_09651576.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C接口信息（LST-GTPCINTF）_09652563.md`

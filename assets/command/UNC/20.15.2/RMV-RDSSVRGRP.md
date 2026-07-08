@@ -62,4 +62,4 @@ RMV RDSSVRGRP:RDSSVRGRPNAME="rsg";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RDSSVRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Radius服务器组（RMV-RDSSVRGRP）_09896732.md`

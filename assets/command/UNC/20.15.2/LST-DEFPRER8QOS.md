@@ -87,4 +87,4 @@ Conversation业务残留比特误码率  =  1E-6
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DEFPRER8QOS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缺省的Pre-R8-QoS参数（LST-DEFPRER8QOS）_09651521.md`

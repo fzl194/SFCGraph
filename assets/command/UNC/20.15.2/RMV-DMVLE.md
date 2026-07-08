@@ -57,4 +57,4 @@ RMV DMVLE: LOINDEX=32;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DMVLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter虚拟本地实体(RMV-DMVLE)_72225975.md`

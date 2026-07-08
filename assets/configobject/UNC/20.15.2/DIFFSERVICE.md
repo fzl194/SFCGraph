@@ -33,8 +33,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIFFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/DIFFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/DIFFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/DIFFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/DIFFSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改差异化服务接入门限(MOD-DIFFSERVICE)_26305484.md`
+- 原始手册：`evidence/UNC/20.15.2/删除差异化服务接入门限(RMV-DIFFSERVICE)_72225353.md`
+- 原始手册：`evidence/UNC/20.15.2/增加差异化服务接入门限(ADD-DIFFSERVICE)_26145674.md`
+- 原始手册：`evidence/UNC/20.15.2/显示差异化服务信息(DSP-DIFFSERVICE)_26145676.md`
+- 原始手册：`evidence/UNC/20.15.2/查询差异化服务接入门限(LST-DIFFSERVICE)_72345271.md`

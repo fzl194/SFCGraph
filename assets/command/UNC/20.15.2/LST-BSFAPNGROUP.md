@@ -60,4 +60,4 @@ APN名称  =  huawei.com
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BSFAPNGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN组（LST-BSFAPNGROUP）_21742341.md`

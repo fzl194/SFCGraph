@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFMATCHRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFMATCHRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现最长匹配处理规则（LST-NRFMATCHRULE）_35273621.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务发现最长匹配处理规则（SET-NRFMATCHRULE）_88248960.md`

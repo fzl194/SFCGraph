@@ -64,4 +64,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFCLIENTADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF实例客户端地址信息（LST-NRFCLIENTADDR）_96242292.md`

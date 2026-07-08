@@ -56,4 +56,4 @@ CLR NGLANLEARNMAC: VNINSTANCE="A0000001-460-003-01", MACADDR="aa-bb-cc-dd-ee-ff"
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-NGLANLEARNMAC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除5G-LAN学习的MAC地址（CLR-NGLANLEARNMAC）_66842544.md`

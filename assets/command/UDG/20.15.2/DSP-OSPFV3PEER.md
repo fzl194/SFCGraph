@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OSPFV3PEER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3邻居信息（DSP-OSPFV3PEER）_00600589.md`

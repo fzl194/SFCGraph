@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFROUTESOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF路由源信息（DSP-OSPFROUTESOURCE）_49961190.md`

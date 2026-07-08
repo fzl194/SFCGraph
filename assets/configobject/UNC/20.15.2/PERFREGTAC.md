@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFREGTAC.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFREGTAC.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFREGTAC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域性能统计对象和TAC段的绑定关系（RMV-PERFREGTAC）_44530773.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域性能统计对象和TAC段的绑定关系（ADD-PERFREGTAC）_44529800.md`
+- 原始手册：`evidence/UNC/20.15.2/查询区域性能统计对象和TAC段的绑定关系（LST-PERFREGTAC）_44529806.md`

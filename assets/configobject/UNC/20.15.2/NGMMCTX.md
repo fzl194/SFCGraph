@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGMMCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G移动性管理上下文（DSP-NGMMCTX）_09651524.md`

@@ -62,4 +62,4 @@ ADD MMEGP: MMEGPIDX=1, MCC="123", MNC="001", MMEGI="0001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MMEGP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MME群组(ADD-MMEGP)_72225301.md`

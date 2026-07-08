@@ -59,4 +59,4 @@ RMV MULTREDIRECT:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MULTREDIRECT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除多级重定向密码（RMV-MULTREDIRECT）_06232192.md`

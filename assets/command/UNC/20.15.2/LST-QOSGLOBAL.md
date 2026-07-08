@@ -72,4 +72,4 @@ PreR8用户QoS索引  =  256
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-QOSGLOBAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局QoS配置（LST-QOSGLOBAL）_09652987.md`

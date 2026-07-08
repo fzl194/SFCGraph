@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFMSISDN.md`
-- 原始手册：`evidence/UNC/20.15.2/NFMSISDN.md`
-- 原始手册：`evidence/UNC/20.15.2/NFMSISDN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MSISDN号段（RMV-NFMSISDN）_09653751.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MSISDN号段（ADD-NFMSISDN）_09653258.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSISDN号段（LST-NFMSISDN）_09653764.md`

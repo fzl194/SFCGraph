@@ -58,4 +58,4 @@ RMV MAPGTFIXEDFC: GTNUM="1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MAPGTFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VLR局向Map固定速率流控-(RMV-MAPGTFIXEDFC-)_68922826.md`

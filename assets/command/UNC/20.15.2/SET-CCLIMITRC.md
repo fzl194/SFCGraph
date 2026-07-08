@@ -72,4 +72,4 @@ SET CCLIMITRC: MSCCRC1="4012", CMDRC1="4012";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CCLIMITRC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置在线计费欠费结果码（SET-CCLIMITRC）_09896950.md`

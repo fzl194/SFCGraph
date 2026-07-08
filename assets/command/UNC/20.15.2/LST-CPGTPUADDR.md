@@ -69,4 +69,4 @@ IP地址类型  =  IPv4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CPGTPUADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CP-GTP-U地址（LST-CPGTPUADDR）_96805384.md`

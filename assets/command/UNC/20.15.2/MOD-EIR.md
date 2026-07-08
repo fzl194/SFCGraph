@@ -56,4 +56,4 @@ MOD EIR: EIRRLM="huawei01.com", EIRHTN="eir0701.huawei01.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-EIR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改EIR配置(MOD-EIR)_72225133.md`

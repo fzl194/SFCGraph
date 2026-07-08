@@ -60,4 +60,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-ELECTIONABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置业务进程选举能力（SET-ELECTIONABILITY）_42938110.md`

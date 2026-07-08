@@ -61,4 +61,4 @@ RMV APNCTRL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN控制参数配置(RMV-APNCTRL)_72225151.md`

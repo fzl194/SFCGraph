@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGIPAREAGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPAREAGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPAREAGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-IP区域群成员（RMV-NGIPAREAGRPMEM）_09653279.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-IP区域群成员（ADD-NGIPAREAGRPMEM）_09654416.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-IP区域群成员（LST-NGIPAREAGRPMEM）_09654417.md`

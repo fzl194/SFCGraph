@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCPBINDUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户模板组和PccProfile的绑定关系（LST-PCCPBINDUPG）_09897039.md`

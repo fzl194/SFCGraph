@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFTAIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFTAIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFTAIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFTAIRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改TAI路由（MOD-NRFTAIRT）_09653134.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TAI路由（RMV-NRFTAIRT）_09653227.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TAI路由（ADD-NRFTAIRT）_09652595.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TAI路由（LST-NRFTAIRT）_09653255.md`

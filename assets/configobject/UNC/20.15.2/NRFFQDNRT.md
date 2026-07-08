@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFFQDNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFQDNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFQDNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除FQDN路由（RMV-NRFFQDNRT）_44007684.md`
+- 原始手册：`evidence/UNC/20.15.2/增加FQDN路由（ADD-NRFFQDNRT）_44006490.md`
+- 原始手册：`evidence/UNC/20.15.2/查询FQDN路由（LST-NRFFQDNRT）_44007040.md`

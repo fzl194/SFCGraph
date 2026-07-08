@@ -37,7 +37,7 @@ ADD NFPROFILE命令用于配置NF整体实例信息，本命令则用于配置NF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NF服务实例（MOD-NFSERVICE）_09654386.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF服务实例（RMV-NFSERVICE）_09652678.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF服务实例（ADD-NFSERVICE）_09652639.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF服务实例（LST-NFSERVICE）_09653171.md`

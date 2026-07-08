@@ -62,4 +62,4 @@ MOD QCICONV: QCIEXT=10, QCISTEP=30, QCISTD=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-QCICONV.md`
+- 原始手册：`evidence/UNC/20.15.2/修改扩展QCI转换关系(MOD-QCICONV)_72345813.md`

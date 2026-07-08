@@ -31,4 +31,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTSEND.md`
+- 原始手册：`evidence/UDG/20.15.2/发送UE灌包（ACT-UEINJECTSEND）_82837098.md`

@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDN2TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI服务区名称绑定的5G-TAI范围（RMV-DNAREABINDN2TAI）_24796832.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI服务区名称绑定的5G-TAI范围（ADD-DNAREABINDN2TAI）_24796802.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI服务区名称绑定的5G-TAI范围（LST-DNAREABINDN2TAI）_71436537.md`

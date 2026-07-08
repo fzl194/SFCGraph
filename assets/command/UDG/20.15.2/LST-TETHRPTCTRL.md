@@ -69,4 +69,4 @@ Tethering Stop消息上报迟滞时间（秒） = 0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TETHRPTCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询tethering事件上报的相关参数（LST-TETHRPTCTRL）_15208993.md`

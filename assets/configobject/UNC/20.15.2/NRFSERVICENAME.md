@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSERVICENAME.md`
+- 原始手册：`evidence/UNC/20.15.2/查看NRF功能实体服务列表（LST-NRFSERVICENAME）_09653039.md`

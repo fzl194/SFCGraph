@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TWAMPLOGICINF.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPLOGICINF.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPLOGICINF.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPLOGICINF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改本地逻辑接口（MOD-TWAMPLOGICINF）_73302051.md`
+- 原始手册：`evidence/UDG/20.15.2/删除本地逻辑接口（RMV-TWAMPLOGICINF）_73302053.md`
+- 原始手册：`evidence/UDG/20.15.2/增加本地逻辑接口（ADD-TWAMPLOGICINF）_27262282.md`
+- 原始手册：`evidence/UDG/20.15.2/查询本地逻辑接口（LST-TWAMPLOGICINF）_73142135.md`

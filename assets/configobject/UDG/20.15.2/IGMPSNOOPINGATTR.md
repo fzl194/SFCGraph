@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IGMPSNOOPINGATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/IGMPSNOOPINGATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP-Snooping属性配置（LST-IGMPSNOOPINGATTR）_06120061.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IGMP-Snooping属性（SET-IGMPSNOOPINGATTR）_06240611.md`

@@ -54,4 +54,4 @@ RMV AUTOSCALINGBFD:TEMPLATENAME="bfdtemp";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AUTOSCALINGBFD.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BFD会话自动化配置模板（RMV-AUTOSCALINGBFD）_49961546.md`

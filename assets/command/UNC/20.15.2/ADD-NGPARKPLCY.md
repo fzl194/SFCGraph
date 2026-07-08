@@ -62,4 +62,4 @@ ADD NGPARKPLCY: PARKID="park", AREACODE="huawei", DNNGRPID="BIG_GROUP", INERTIA=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGPARKPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加园区策略（ADD-NGPARKPLCY）_06399906.md`

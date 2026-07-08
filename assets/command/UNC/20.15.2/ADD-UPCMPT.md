@@ -85,4 +85,4 @@ ADD UPCMPT:UPFINSTANCEID="upf_instance_1",APNPOLICY=WITHOUTOI;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UP节点协议兼容性配置（ADD-UPCMPT）_35519267.md`

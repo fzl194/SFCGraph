@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESTOUSRSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOUSRSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOUSRSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOUSRSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改容灾用户号段参数-(MOD-RESTOUSRSEG)_10474089.md`
+- 原始手册：`evidence/UNC/20.15.2/删除容灾用户号段参数-(RMV-RESTOUSRSEG)_63473978.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾用户号段参数-(ADD-RESTOUSRSEG)_10674069.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾用户号段参数-(LST-RESTOUSRSEG)_10554145.md`

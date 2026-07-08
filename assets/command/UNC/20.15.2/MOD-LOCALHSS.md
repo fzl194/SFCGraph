@@ -57,4 +57,4 @@ MOD LOCALHSS: HSSHTNAM="hss1502.huawei03.com", HSSNAM="loaclhss2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-LOCALHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地HSS(MOD-LOCALHSS)_26146080.md`

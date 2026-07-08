@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MPLSSITE.md`
-- 原始手册：`evidence/UNC/20.15.2/MPLSSITE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MPLS全局配置（LST-MPLSSITE）_49961326.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MPLS全局配置（SET-MPLSSITE）_00600993.md`

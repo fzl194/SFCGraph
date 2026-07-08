@@ -62,4 +62,4 @@ MOD PERFOBJRULE: MOC=TAIGP, TAIGPRULEIDX=1, TAIGPN="huawei", BGNTAI="308014101",
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PERFOBJRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改性能对象规则(MOD-PERFOBJRULE)_72345795.md`

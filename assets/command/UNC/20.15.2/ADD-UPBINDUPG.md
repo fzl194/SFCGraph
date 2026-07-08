@@ -76,4 +76,4 @@ ADD UPBINDUPG:USERPROFGNAME="userprofg1",UPBINDTYPE=SPECIFIC,PRIORITY=10,USERPRO
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPBINDUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户模板组和用户模板的绑定关系（ADD-UPBINDUPG）_09897229.md`

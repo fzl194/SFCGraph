@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N40APIVER.md`
-- 原始手册：`evidence/UNC/20.15.2/N40APIVER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40接口协议版本和需要使用的FeatureList（LST-N40APIVER）_31773563.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N40接口协议版本和需要使用的FeatureList（SET-N40APIVER）_31773565.md`

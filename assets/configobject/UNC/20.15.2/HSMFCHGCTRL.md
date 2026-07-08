@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HSMFCHGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/HSMFCHGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游用户在归属地的计费方式和漫游参数的协商方式（LST-HSMFCHGCTRL）_25690221.md`
+- 原始手册：`evidence/UNC/20.15.2/设置漫游用户在归属地的计费方式和漫游参数的协商方式（SET-HSMFCHGCTRL）_80169070.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POLICYFCSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/POLICYFCSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询策略流控开关状态（LST-POLICYFCSWITCH）_57165605.md`
+- 原始手册：`evidence/UNC/20.15.2/设置策略流控开关（SET-POLICYFCSWITCH）_57085653.md`

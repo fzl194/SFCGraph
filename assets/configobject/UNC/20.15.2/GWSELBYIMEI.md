@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GWSELBYIMEI.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELBYIMEI.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELBYIMEI.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELBYIMEI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于IMEI选择GGSN_P-GW配置(MOD-GWSELBYIMEI)_72225621.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于IMEI选择GGSN_P-GW配置(RMV-GWSELBYIMEI)_26145942.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于IMEI选择GGSN_P-GW配置(ADD-GWSELBYIMEI)_72345541.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于IMEI选择GGSN_P-GW配置(LST-GWSELBYIMEI)_26305752.md`

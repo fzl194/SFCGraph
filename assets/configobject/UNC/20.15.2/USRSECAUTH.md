@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRSECAUTH.md`
-- 原始手册：`evidence/UNC/20.15.2/USRSECAUTH.md`
-- 原始手册：`evidence/UNC/20.15.2/USRSECAUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除二次授权用户（RMV-USRSECAUTH）_88031789.md`
+- 原始手册：`evidence/UNC/20.15.2/增加二次授权用户（ADD-USRSECAUTH）_88031788.md`
+- 原始手册：`evidence/UNC/20.15.2/查看二次授权用户（LST-USRSECAUTH）_88031787.md`

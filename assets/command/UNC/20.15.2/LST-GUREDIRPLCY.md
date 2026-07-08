@@ -76,4 +76,4 @@ Unsecured redirection to GERAN or UTRAN allowed
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GUREDIRPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GU重定向策略（LST-GUREDIRPLCY）_36144465.md`

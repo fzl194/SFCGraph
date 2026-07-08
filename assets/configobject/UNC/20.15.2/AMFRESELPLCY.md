@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFRESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFRESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFRESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFRESELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF重选控制策略（MOD-AMFRESELPLCY）_98333332.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF重选控制策略（RMV-AMFRESELPLCY）_98493196.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF重选控制策略（ADD-AMFRESELPLCY）_98333328.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF重选控制策略（LST-AMFRESELPLCY）_38212805.md`

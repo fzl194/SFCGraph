@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFTRCCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFTRCCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF跟踪控制功能（LST-SMFTRCCTRL）_77419812.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF跟踪控制功能（SET-SMFTRCCTRL）_77579580.md`

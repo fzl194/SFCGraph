@@ -67,4 +67,4 @@ DSP SMFDBGINFO: QRYTP=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SMFDBGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SMF相关的调试信息（DSP-SMFDBGINFO）_09654378.md`

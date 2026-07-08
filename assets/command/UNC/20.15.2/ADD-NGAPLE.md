@@ -64,4 +64,4 @@ ADD NGAPLE: NGAPLEIDX=1, SCTPGROUPID=1, NGAPPARAIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NGAP本端实体（ADD-NGAPLE）_09651338.md`

@@ -69,4 +69,4 @@ ICAP服务器组名称  =  isg2
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ICAPSVRGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICAP服务器组（LST-ICAPSVRGRP）_32059915.md`

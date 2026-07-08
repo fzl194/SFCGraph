@@ -67,4 +67,4 @@ ADD RRCINACTTAI: MCC="123", MNC="00", BGNTAC="000112", ENDTAC="000350";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RRCINACTTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RRC-Inactive生效的TAI范围（ADD-RRCINACTTAI）_23782738.md`

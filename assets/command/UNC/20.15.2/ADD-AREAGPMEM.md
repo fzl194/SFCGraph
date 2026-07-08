@@ -68,4 +68,4 @@ ADD AREAGPMEM: AREAID=1, IDTYPE=LA, MCC="111", MNC="222", LAC="0x3333";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AREAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域群成员(ADD-AREAGPMEM)_72225225.md`

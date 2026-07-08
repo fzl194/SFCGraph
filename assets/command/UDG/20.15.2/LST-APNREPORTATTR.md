@@ -72,4 +72,4 @@ APN的上报配置信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNREPORTATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ApnReportAttr配置（LST-APNREPORTATTR）_16615230.md`

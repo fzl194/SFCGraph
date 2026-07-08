@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPRA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPRA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPRA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-PRA（RMV-NGPRA）_44007663.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-PRA（ADD-NGPRA）_44006470.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-PRA（LST-NGPRA）_44007016.md`

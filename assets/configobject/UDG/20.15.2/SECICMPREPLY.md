@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SECICMPREPLY.md`
-- 原始手册：`evidence/UDG/20.15.2/SECICMPREPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICMP快回（LST-SECICMPREPLY）_49802478.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ICMP快回配置（SET-SECICMPREPLY）_00601101.md`

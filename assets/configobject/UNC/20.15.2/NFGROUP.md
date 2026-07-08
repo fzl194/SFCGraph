@@ -29,6 +29,6 @@ NF组是由一个或者多个NF实例组成的容灾/负荷分担的集群，组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF组（RMV-NFGROUP）_09652193.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF组（ADD-NFGROUP）_09652388.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF组（LST-NFGROUP）_09652621.md`

@@ -29,5 +29,5 @@ PGW-C根据协议检查用户携带的QoS参数的合法性，如果参数非法
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEFEPSQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/DEFEPSQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS缺省QoS参数（LST-DEFEPSQOS）_09653169.md`
+- 原始手册：`evidence/UNC/20.15.2/设置EPS缺省QoS参数（SET-DEFEPSQOS）_09653732.md`

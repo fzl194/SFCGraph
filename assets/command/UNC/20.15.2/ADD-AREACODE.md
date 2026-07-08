@@ -60,4 +60,4 @@ ADD AREACODE: AREACODE="jq001.pd006.sh.mcc123.mnc45", DESC="for zone1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域编码（ADD-AREACODE）_44006351.md`

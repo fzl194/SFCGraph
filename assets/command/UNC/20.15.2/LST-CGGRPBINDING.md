@@ -74,4 +74,4 @@ Imsi/Msisdn号码段组优先级 = 1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CGGRPBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG组绑定关系（LST-CGGRPBINDING）_09896887.md`

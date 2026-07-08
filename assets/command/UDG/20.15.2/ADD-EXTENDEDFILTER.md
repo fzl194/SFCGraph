@@ -94,4 +94,4 @@ ADD EXTENDEDFILTER:EXTFLTNAME="eftest",URL="www.huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-EXTENDEDFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展过滤器（ADD-EXTENDEDFILTER）_82837379.md`

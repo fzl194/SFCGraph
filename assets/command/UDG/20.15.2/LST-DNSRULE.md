@@ -78,4 +78,4 @@ DNS规则名称  =  rule1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DNSRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示DNS规则（LST-DNSRULE）_35373559.md`

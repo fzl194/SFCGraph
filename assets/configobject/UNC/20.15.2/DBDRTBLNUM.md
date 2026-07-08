@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DBDRTBLNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSDB容灾主备本记录数(DSP-DBDRTBLNUM)_49902501.md`

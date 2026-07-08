@@ -85,4 +85,4 @@ SMF/PGW/GGSN上控制漫游用户接入功能开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNACCESSCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN访问控制参数（LST-APNACCESSCTRL）_09652260.md`

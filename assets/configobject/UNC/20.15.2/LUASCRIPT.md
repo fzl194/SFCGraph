@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LUASCRIPT.md`
+- 原始手册：`evidence/UNC/20.15.2/加载Lua脚本（LOD-LUASCRIPT）_63081402.md`

@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NGIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/显示用户IMSI信息（DSP-NGIMSI）_09803702.md`

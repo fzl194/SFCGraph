@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUFFIXLAIAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/SUFFIXLAIAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/SUFFIXLAIAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF服务区名称以LAC后缀方式绑定的LAI范围（RMV-SUFFIXLAIAREA）_23623014.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF服务区名称以LAC后缀方式绑定的LAI范围（ADD-SUFFIXLAIAREA）_23782742.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF服务区名称以LAC后缀方式绑定的LAI范围（LST-SUFFIXLAIAREA）_23782782.md`

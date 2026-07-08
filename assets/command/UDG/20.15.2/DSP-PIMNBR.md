@@ -79,4 +79,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PIMNBR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PIM邻居信息（DSP-PIMNBR）_00866717.md`

@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDBGPPEERGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDBGPPEERGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDBGPPEERGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP对等体分组（RMV-UPDBGPPEERGROUP）_47101557.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP对等体分组（LST-UPDBGPPEERGROUP）_47061733.md`
+- 原始手册：`evidence/UDG/20.15.2/添加BGP对等体分组（ADD-UPDBGPPEERGROUP）_99341632.md`

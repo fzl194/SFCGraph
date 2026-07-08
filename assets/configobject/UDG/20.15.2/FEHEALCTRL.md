@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FEHEALCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/FEHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FE自愈功能配置（LST-FEHEALCTRL）_63193268.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FE自愈功能配置（SET-FEHEALCTRL）_10913261.md`

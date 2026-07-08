@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TRFCDFDSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/TRFCDFDSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询大流量攻击防护配置（LST-TRFCDFDSWITCH）_82837761.md`
+- 原始手册：`evidence/UDG/20.15.2/设置大流量攻击防护功能（SET-TRFCDFDSWITCH）_82837760.md`

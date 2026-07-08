@@ -65,4 +65,4 @@ ADD VXLANGRP: GRPNAME="vxlangrp", SRCINTF="nxucif1/1/0", HEARTBEAT=ENABLE, TIMET
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-VXLANGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/新增VXLAN组（ADD-VXLANGRP）_68354103.md`

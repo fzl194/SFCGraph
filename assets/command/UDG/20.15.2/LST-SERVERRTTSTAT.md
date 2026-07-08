@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SERVERRTTSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务器时延统计功能配置（LST-SERVERRTTSTAT）_24472787.md`

@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMGTPCPATHNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UAM-GTP-C路径数量（DSP-COMGTPCPATHNUM）_24956624.md`

@@ -65,4 +65,4 @@ ADD ACLBINDAPN:APN="testapn",DIRECTION=UPIN,ACLNAME="testacl1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ACLBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Acl绑定关系（ADD-ACLBINDAPN）_82837724.md`

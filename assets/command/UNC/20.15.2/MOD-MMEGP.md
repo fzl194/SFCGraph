@@ -60,4 +60,4 @@ MOD MMEGP: MMEGPIDX=1, MCC="123", MNC="001", MMEGI="0001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MMEGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MME群组(MOD-MMEGP)_26305432.md`

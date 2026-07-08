@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PAEMULTQUE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PAE多队列功能开关（LST-PAEMULTQUE）_11416582.md`

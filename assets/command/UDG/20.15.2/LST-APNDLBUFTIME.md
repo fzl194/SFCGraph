@@ -70,4 +70,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNDLBUFTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN的下行数据缓存时长配置（LST-APNDLBUFTIME）_82837190.md`

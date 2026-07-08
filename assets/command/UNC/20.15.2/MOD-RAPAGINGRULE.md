@@ -67,4 +67,4 @@ MOD RAPAGINGRULE: MCC="123", MNC="03", LAC="0x113", RAC="0x3E", WKDAY=SAT, START
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-RAPAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于路由区的寻呼参数设置(MOD-RAPAGINGRULE)_26305340.md`

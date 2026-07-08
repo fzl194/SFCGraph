@@ -70,4 +70,4 @@ TCP Socket配置
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOMEMCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP-Socket缓存配置（LST-TOMEMCFG）_44038780.md`

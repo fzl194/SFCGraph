@@ -59,4 +59,4 @@ ADD MCASTENABLE:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MCASTENABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/添加组播使能（ADD-MCASTENABLE）_50281530.md`

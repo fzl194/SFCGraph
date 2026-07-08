@@ -80,4 +80,4 @@ SCTP偶联测量对象实例标识  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCTPASSOC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP耦联测量对象（LST-SCTPASSOC）_09897353.md`

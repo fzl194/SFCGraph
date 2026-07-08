@@ -59,4 +59,4 @@ RMV QBCQOSFTRIGGER: CCTMPLTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-QBCQOSFTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QBC计费QoS-Flow级的trigger参数（RMV-QBCQOSFTRIGGER）_09653273.md`

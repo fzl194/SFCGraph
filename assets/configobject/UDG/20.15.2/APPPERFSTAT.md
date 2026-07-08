@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPPERFSTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/APPPERFSTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/APPPERFSTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/APPPERFSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改应用性能统计（MOD-APPPERFSTAT）_44232384.md`
+- 原始手册：`evidence/UDG/20.15.2/删除应用性能统计（RMV-APPPERFSTAT）_43992602.md`
+- 原始手册：`evidence/UDG/20.15.2/增加应用性能统计（ADD-APPPERFSTAT）_94871975.md`
+- 原始手册：`evidence/UDG/20.15.2/查询应用性能统计（LST-APPPERFSTAT）_94632051.md`

@@ -65,4 +65,4 @@ SMF实例ID  =  a6a61c6f-0d3a-4221-b1da-424eda3ccf67
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFPRESELBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于IMSI优选指定SMF配置（LST-SMFPRESELBYIMSI）_20333897.md`

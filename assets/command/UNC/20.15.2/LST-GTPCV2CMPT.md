@@ -87,4 +87,4 @@ UP Function Selection Indication Flags  =  Dual connectivity with NR
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPCV2CMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C-V2协议兼容性(LST-GTPCV2CMPT)_72225605.md`

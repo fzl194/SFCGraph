@@ -59,4 +59,4 @@ RMV NRFDNNDNAIRT: DNN="ims", DNAISUFFIX="huawei.com", NEXTNRFGRPNAME="L-NRF1", N
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFDNNDNAIRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN中数据网络访问标识最长后缀匹配转发路由（RMV-NRFDNNDNAIRT）_92900874.md`

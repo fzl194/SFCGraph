@@ -39,7 +39,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFREGNRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NFREGNRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NFREGNRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NFREGNRF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本端NF和对端NRF实例的注册关系（MOD-NFREGNRF）_09651371.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本端NF和对端NRF实例的注册关系（RMV-NFREGNRF）_09653172.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本端NF和对端NRF实例的注册关系（ADD-NFREGNRF）_09651495.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本端NF和对端NRF实例的注册关系（LST-NFREGNRF）_09653837.md`

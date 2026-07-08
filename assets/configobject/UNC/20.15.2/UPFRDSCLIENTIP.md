@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFRDSCLIENTIP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFRDSCLIENTIP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFRDSCLIENTIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除中转UPF与Radius客户端的绑定关系（RMV-UPFRDSCLIENTIP）_90026964.md`
+- 原始手册：`evidence/UNC/20.15.2/增加中转UPF与Radius客户端的绑定关系（ADD-UPFRDSCLIENTIP）_90026962.md`
+- 原始手册：`evidence/UNC/20.15.2/查询中转UPF与Radius客户端的绑定关系（LST-UPFRDSCLIENTIP）_36806369.md`

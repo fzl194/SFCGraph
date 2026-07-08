@@ -70,4 +70,4 @@ ADD MGMDSTATICGROUP: VRFNAME="_public_", ADDRESSFAMILY=ipv4unicast, IFNAME="Ethe
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MGMDSTATICGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IGMP静态组配置（ADD-MGMDSTATICGROUP）_00601281.md`

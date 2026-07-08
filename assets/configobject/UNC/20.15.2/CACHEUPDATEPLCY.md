@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CACHEUPDATEPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/CACHEUPDATEPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/CACHEUPDATEPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/CACHEUPDATEPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改缓存更新策略（MOD-CACHEUPDATEPLCY）_57616493.md`
+- 原始手册：`evidence/UNC/20.15.2/删除缓存更新策略（RMV-CACHEUPDATEPLCY）_04377320.md`
+- 原始手册：`evidence/UNC/20.15.2/增加缓存更新策略（ADD-CACHEUPDATEPLCY）_04377308.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缓存更新策略（LST-CACHEUPDATEPLCY）_57377033.md`

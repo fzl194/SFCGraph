@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF扩展功能（LST-SMFFUNC）_09652494.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF扩展功能（SET-SMFFUNC）_09653731.md`

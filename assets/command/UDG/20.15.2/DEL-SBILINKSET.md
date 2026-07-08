@@ -58,4 +58,4 @@ DEL SBILINKSET:PEERNFTYPE=NFTypeUDM;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEL-SBILINKSET.md`
+- 原始手册：`evidence/UDG/20.15.2/删除服务化接口链路集（DEL-SBILINKSET）_83653654.md`

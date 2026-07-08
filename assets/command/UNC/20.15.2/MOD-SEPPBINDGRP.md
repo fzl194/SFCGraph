@@ -60,4 +60,4 @@ MOD SEPPBINDGRP: NFINSTANCEID="SEPP_Instance_1", GROUPID=4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SEPPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SEPP绑定组关系（MOD-SEPPBINDGRP）_81080357.md`

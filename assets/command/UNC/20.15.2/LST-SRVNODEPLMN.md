@@ -75,4 +75,4 @@ PLMN = 13210
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SRVNODEPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGSN_SGW_PGW地址段和PLMN标识之间的映射关系（LST-SRVNODEPLMN）_09651504.md`

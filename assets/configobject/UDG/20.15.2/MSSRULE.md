@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/MSSRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询匹配规则（DSP-MSSRULE）_00600857.md`
+- 原始手册：`evidence/UDG/20.15.2/设置匹配规则（SET-MSSRULE）_00865565.md`

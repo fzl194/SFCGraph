@@ -60,4 +60,4 @@ RMV OFCTEMPLATE:OFCTEMPLATENAME="ofc_test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-OFCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除离线计费模板或者属性（RMV-OFCTEMPLATE）_09896913.md`

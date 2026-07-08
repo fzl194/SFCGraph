@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNNIDT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNIDT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNIDT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNIDT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APNNI-Direct-Tunnel配置(MOD-APNNIDT)_72225725.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI-Direct-Tunnel配置(RMV-APNNIDT)_26146046.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI-Direct-Tunnel配置(ADD-APNNIDT)_72345645.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI-Direct-Tunnel配置(LST-APNNIDT)_26305856.md`

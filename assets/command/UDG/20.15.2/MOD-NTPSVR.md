@@ -72,4 +72,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-NTPSVR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改NTP服务器(MOD-NTPSVR)_67551556.md`

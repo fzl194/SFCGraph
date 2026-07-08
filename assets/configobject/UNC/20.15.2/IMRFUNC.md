@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/IMRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/IMRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/IMRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户消息统计功能配置(MOD-IMRFUNC)_26305222.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户消息统计功能配置(RMV-IMRFUNC)_72345009.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户消息统计功能配置(ADD-IMRFUNC)_72225087.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户消息统计功能配置(LST-IMRFUNC)_26145408.md`

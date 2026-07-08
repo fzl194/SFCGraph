@@ -32,6 +32,6 @@ PAE的批收数与转发性能有关，设置不当会降低转发性能。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEBATCHRECVNUM.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEBATCHRECVNUM.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEBATCHRECVNUM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE批量接收报文数（DSP-PAEBATCHRECVNUM）_35145961.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PAE批量收包的数量（LST-PAEBATCHRECVNUM）_35145965.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE批量收包的数量（SET-PAEBATCHRECVNUM）_35145969.md`

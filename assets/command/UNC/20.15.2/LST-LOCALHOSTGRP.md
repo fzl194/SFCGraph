@@ -68,4 +68,4 @@ Diameter本端信息组名称  =  zk
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCALHOSTGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter本端信息组（LST-LOCALHOSTGRP）_17057499.md`

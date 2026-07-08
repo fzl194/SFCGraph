@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNSMCOMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN粒度的通用会话拓展功能控制（MOD-APNSMCOMFUNC）_77579564.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN粒度的通用会话拓展功能控制（RMV-APNSMCOMFUNC）_77419820.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN粒度的通用会话拓展功能控制（ADD-APNSMCOMFUNC）_13939865.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN粒度的通用会话拓展功能控制（LST-APNSMCOMFUNC）_77579552.md`

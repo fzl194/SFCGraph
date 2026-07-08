@@ -59,4 +59,4 @@ RMV SMFAPNGRPMEM:GRPNAME="grp1",APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFAPNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN和DNS关联的APN组的绑定关系（RMV-SMFAPNGRPMEM）_88697040.md`

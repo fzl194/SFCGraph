@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PRER8QOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8QOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8QOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8QOSACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Pre-R8-QoS控制动作配置（MOD-PRER8QOSACTION）_09653107.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Pre-R8-QoS控制动作配置（RMV-PRER8QOSACTION）_09654419.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Pre-R8-QoS控制动作配置（ADD-PRER8QOSACTION）_09652510.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Pre-R8-QoS控制动作配置（LST-PRER8QOSACTION）_09651831.md`

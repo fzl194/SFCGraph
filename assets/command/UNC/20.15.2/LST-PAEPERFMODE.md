@@ -63,4 +63,4 @@ lbpod        低性能模式0    使用默认性能模式
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PAEPERFMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置表中的PAE性能模式（LST-PAEPERFMODE）_04836050.md`

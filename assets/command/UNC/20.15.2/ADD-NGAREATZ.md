@@ -64,4 +64,4 @@ ADD NGAREATZ: MCC="460", MNC="03", BGNTAC="000112", ENDTAC="000350", TZID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGAREATZ.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G区域时区参数（ADD-NGAREATZ）_20674118.md`

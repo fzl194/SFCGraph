@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VXLANGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VXLAN组（MOD-VXLANGRP）_81234588.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN组（RMV-VXLANGRP）_68194503.md`
+- 原始手册：`evidence/UDG/20.15.2/新增VXLAN组（ADD-VXLANGRP）_68354103.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN组（LST-VXLANGRP）_80994828.md`

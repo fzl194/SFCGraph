@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PGWRESEL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地P-GW重选策略(LST-PGWRESEL)_72225393.md`

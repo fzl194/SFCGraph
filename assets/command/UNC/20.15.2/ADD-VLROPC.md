@@ -64,4 +64,4 @@ ADD VLROPC: OPX=1, NI=INT, OPC="0x55", VLRN="8615654029", VLRNAME="Peking"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-VLROPC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VLR信令点(ADD-VLROPC)_46234740.md`

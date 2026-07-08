@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFINTERFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFINTERFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询国际漫游功能参数（LST-NRFINTERFUNC）_24956636.md`
+- 原始手册：`evidence/UNC/20.15.2/设置国际漫游功能参数（SET-NRFINTERFUNC）_24796840.md`

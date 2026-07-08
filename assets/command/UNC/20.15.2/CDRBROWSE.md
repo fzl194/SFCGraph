@@ -53,4 +53,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRBROWSE.md`
+- 原始手册：`evidence/UNC/20.15.2/话单查询浏览（CDRBROWSE）_75506684.md`

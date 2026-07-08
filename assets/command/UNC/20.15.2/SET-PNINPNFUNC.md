@@ -67,4 +67,4 @@ SET PNINPNFUNC:PNINPNSW=ON,NONCAGCELLREGSW=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PNINPNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置公网集成非公网络管理功能（SET-PNINPNFUNC）_22678343.md`

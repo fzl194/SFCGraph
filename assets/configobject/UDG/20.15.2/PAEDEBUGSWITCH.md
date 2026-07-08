@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEDEBUGSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/使能或去使能PAE转发日志（SET-PAEDEBUGSWITCH）_92520051.md`

@@ -67,4 +67,4 @@ DDos防护阈值  =  5000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DDOS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DDoS防攻击流控阈值（LST-DDOS）_82837755.md`

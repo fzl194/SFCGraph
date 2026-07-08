@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MCSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/MCSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询多连接开关配置数据（LST-MCSWITCH）_46243299.md`
+- 原始手册：`evidence/UDG/20.15.2/设置多连接开关（SET-MCSWITCH）_46243300.md`

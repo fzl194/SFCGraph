@@ -66,4 +66,4 @@ SET CDRGENRATECTRL:CDRGENRATE=50;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CDRGENRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置话单产生速率（SET-CDRGENRATECTRL）_09896708.md`

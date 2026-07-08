@@ -56,4 +56,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ESN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元中的设备序列号（LST-ESN）_09651403.md`

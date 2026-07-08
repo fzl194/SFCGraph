@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSSFNTRSDPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF通知重传参数（LST-NSSFNTRSDPARA）_96242341.md`

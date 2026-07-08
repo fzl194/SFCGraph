@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EPSQCI2PRER8.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQCI2PRER8.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQCI2PRER8.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS-QCI到Pre-R8-QoS映射规则（LST-EPSQCI2PRER8）_09652501.md`
+- 原始手册：`evidence/UNC/20.15.2/清除EPS-QCI到Pre-R8-QoS映射规则-（CLR-EPSQCI2PRER8）_34190060.md`
+- 原始手册：`evidence/UNC/20.15.2/设置EPS-QCI到Pre-R8-QoS映射规则（SET-EPSQCI2PRER8）_09651491.md`

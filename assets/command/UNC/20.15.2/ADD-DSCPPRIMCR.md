@@ -61,4 +61,4 @@ ADD DSCPPRIMCR: SLTPR=DSCP, DSCPV=50, MAPPRI=PRI_2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DSCPPRIMCR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DSCP映射优先级配置表(ADD-DSCPPRIMCR)_71851003.md`

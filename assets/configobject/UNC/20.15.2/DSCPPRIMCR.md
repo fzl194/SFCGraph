@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSCPPRIMCR.md`
-- 原始手册：`evidence/UNC/20.15.2/DSCPPRIMCR.md`
-- 原始手册：`evidence/UNC/20.15.2/DSCPPRIMCR.md`
-- 原始手册：`evidence/UNC/20.15.2/DSCPPRIMCR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DSCP映射优先级配置表(MOD-DSCPPRIMCR)_71731089.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DSCP映射优先级配置表(RMV-DSCPPRIMCR)_25131370.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DSCP映射优先级配置表(ADD-DSCPPRIMCR)_71851003.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DSCP映射优先级配置表(LST-DSCPPRIMCR)_25291202.md`

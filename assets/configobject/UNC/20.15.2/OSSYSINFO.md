@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSSYSINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OS系统信息（DSP-OSSYSINFO）_51405534.md`

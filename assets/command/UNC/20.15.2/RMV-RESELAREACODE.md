@@ -58,4 +58,4 @@ RMV RESELAREACODE: RESELAREACODE="ReSelZone";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RESELAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF重选功能区域编码（RMV-RESELAREACODE）_23782822.md`

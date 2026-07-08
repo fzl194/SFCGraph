@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MULTICASTSOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IGMP-Snooping组播源配置（ADD-MULTICASTSOURCE）_55843916.md`

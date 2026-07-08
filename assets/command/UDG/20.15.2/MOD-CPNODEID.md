@@ -62,4 +62,4 @@ MOD CPNODEID: CPNAME="smfnode1", CPNODEIDTYPE=IPV4, IPV4NODEID="10.10.1.1", LOCA
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-CPNODEID.md`
+- 原始手册：`evidence/UDG/20.15.2/修改SMF的NodeID（MOD-CPNODEID）_16780316.md`

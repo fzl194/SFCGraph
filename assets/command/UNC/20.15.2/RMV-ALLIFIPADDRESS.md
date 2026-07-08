@@ -65,4 +65,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLIFIPADDRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/批量删除接口下IP地址（RMV-ALLIFIPADDRESS）_50121354.md`

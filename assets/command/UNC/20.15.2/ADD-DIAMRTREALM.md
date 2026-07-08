@@ -71,4 +71,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DIAMRTREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter路由域名信息（ADD-DIAMRTREALM）_09897303.md`

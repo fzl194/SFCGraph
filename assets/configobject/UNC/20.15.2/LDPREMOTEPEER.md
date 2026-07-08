@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LDPREMOTEPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/LDPREMOTEPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/LDPREMOTEPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/LDPREMOTEPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/LDPREMOTEPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改LDP远端邻居（MOD-LDPREMOTEPEER）_50121478.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LDP远端邻居（RMV-LDPREMOTEPEER）_49961730.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LDP远端邻居状态（DSP-LDPREMOTEPEER）_49961722.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LDP远端邻居配置（LST-LDPREMOTEPEER）_50280934.md`
+- 原始手册：`evidence/UNC/20.15.2/添加LDP远端邻居（ADD-LDPREMOTEPEER）_49802046.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DFSRPAIRMEM.md`
-- 原始手册：`evidence/UDG/20.15.2/DFSRPAIRMEM.md`
-- 原始手册：`evidence/UDG/20.15.2/DFSRPAIRMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/删除双发选收结对成员配置（RMV-DFSRPAIRMEM）_22918678.md`
+- 原始手册：`evidence/UDG/20.15.2/增加双发选收结对成员配置（ADD-DFSRPAIRMEM）_26352685.md`
+- 原始手册：`evidence/UDG/20.15.2/查询双发选收结对成员配置（LST-DFSRPAIRMEM）_26514781.md`

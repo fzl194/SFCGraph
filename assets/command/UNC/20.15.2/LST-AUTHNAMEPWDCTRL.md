@@ -59,4 +59,4 @@ LST AUTHNAMEPWDCTRL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AUTHNAMEPWDCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对鉴权信元用户名和密码的控制（LST-AUTHNAMEPWDCTRL）_70382309.md`

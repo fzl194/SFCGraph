@@ -78,4 +78,4 @@ SUB_T3413 （s）  =  48
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-EMTCBEMM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式eMTC-MM协议参数（LST-EMTCBEMM）_72225457.md`

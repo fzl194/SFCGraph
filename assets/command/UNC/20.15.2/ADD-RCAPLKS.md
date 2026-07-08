@@ -59,4 +59,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RCAPLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加注册中心链路集-(ADD-RCAPLKS)_45649102.md`

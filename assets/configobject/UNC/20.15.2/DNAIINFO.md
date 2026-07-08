@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNAIINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAIINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAIINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAIINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNAI信息（MOD-DNAIINFO）_55645137.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI信息（RMV-DNAIINFO）_10605252.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI信息（ADD-DNAIINFO）_10605246.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI信息（LST-DNAIINFO）_11085190.md`

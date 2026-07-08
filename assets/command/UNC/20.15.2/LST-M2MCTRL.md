@@ -82,4 +82,4 @@ MME发起的CP到UP切换速率(次/秒) =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-M2MCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M控制参数(LST-M2MCTRL)_26145770.md`

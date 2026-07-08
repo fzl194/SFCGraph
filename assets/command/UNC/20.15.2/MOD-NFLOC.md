@@ -65,4 +65,4 @@ MOD NFLOC: NFTYPE=NfAMF, TGTNFTYPE=SMF, LOCTYPE=PREFERRED_LOCALITY, PREFERLOC="D
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NFLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改目标NF发现和选择的位置匹配信息（MOD-NFLOC）_09651538.md`

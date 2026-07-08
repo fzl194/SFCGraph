@@ -64,4 +64,4 @@ RMV PROTOCOLGROUP:PROTGROUPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PROTOCOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除自定义协议组（RMV-PROTOCOLGROUP）_82837343.md`

@@ -63,4 +63,4 @@ ADD SMFAPNDLBUFTIME: APN="huawei.com", NORMALUSER=7, NBIOTUSER=7;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFAPNDLBUFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN的下行报文缓存时长配置（ADD-SMFAPNDLBUFTIME）_96805378.md`

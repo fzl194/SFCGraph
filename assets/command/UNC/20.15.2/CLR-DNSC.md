@@ -84,4 +84,4 @@ CLR DNSC: CACHETYPE=L1CACHE, SERVICETYPE="USN_VNFC";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-DNSC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DNS缓存(CLR-DNSC)_72345945.md`

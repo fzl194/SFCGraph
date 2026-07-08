@@ -67,4 +67,4 @@ Registration Request流控阈值作用范围  =  单POD
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-INTERAMFFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Inter-AMF流控参数（LST-INTERAMFFC）_96242171.md`

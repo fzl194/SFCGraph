@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/INSAFEATTMOUT.md`
-- 原始手册：`evidence/UDG/20.15.2/INSAFEATTMOUT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询流特征节点超时时间（LST-INSAFEATTMOUT）_93024011.md`
+- 原始手册：`evidence/UDG/20.15.2/设置流特征节点超时时间（SET-INSAFEATTMOUT）_92904615.md`

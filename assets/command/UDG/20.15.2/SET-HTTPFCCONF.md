@@ -72,4 +72,4 @@ SET HTTPFCCONF: CFGTYPE=Retry-After, RETRYAFTERSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-HTTPFCCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP流控属性（SET-HTTPFCCONF）_00360897.md`

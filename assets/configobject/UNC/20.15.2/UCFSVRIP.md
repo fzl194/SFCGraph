@@ -28,7 +28,7 @@ FTP协议为不安全协议，参数协议类型选择时请谨慎使用。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UCFSVRIP.md`
-- 原始手册：`evidence/UNC/20.15.2/UCFSVRIP.md`
-- 原始手册：`evidence/UNC/20.15.2/UCFSVRIP.md`
-- 原始手册：`evidence/UNC/20.15.2/UCFSVRIP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UCF报表服务器的接入点IP地址（MOD-UCFSVRIP）_51253796.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UCF报表服务器的接入点IP地址（RMV-UCFSVRIP）_51253798.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UCF报表服务器的接入点IP地址（LST-UCFSVRIP）_51253795.md`
+- 原始手册：`evidence/UNC/20.15.2/添加UCF报表服务器的接入点IP地址（ADD-UCFSVRIP）_51253793.md`

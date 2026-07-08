@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MAPGTFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/MAPGTFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/MAPGTFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/MAPGTFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR局向Map固定速率流控-(MOD-MAPGTFIXEDFC-)_19444169.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VLR局向Map固定速率流控-(RMV-MAPGTFIXEDFC-)_68922826.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VLR局向Map固定速率流控-(ADD-MAPGTFIXEDFC-)_19242981.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR局向Map固定速率流控-(LST-MAPGTFIXEDFC-)_19362857.md`

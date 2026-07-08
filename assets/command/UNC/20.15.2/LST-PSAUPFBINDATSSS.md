@@ -69,4 +69,4 @@ upf_none               upf_atsss_1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PSAUPFBINDATSSS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PSA-UPF和ATSSS-UPF的绑定关系（LST-PSAUPFBINDATSSS）_96242415.md`

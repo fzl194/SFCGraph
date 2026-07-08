@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADDRLACGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRLACGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRLACGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LAC组（RMV-ADDRLACGROUP）_49644925.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LAC组（ADD-ADDRLACGROUP）_49644906.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LAC组（LST-ADDRLACGROUP）_49644912.md`

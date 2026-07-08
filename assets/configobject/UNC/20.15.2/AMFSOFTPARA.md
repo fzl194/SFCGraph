@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF软参（LST-AMFSOFTPARA）_09652549.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF软参（SET-AMFSOFTPARA）_09653628.md`

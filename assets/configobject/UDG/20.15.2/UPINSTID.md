@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPINSTID.md`
-- 原始手册：`evidence/UDG/20.15.2/UPINSTID.md`
-- 原始手册：`evidence/UDG/20.15.2/UPINSTID.md`
+- 原始手册：`evidence/UDG/20.15.2/删除NF实例ID（RMV-UPINSTID）_06561536.md`
+- 原始手册：`evidence/UDG/20.15.2/显示当前配置的NF实例ID（LST-UPINSTID）_05977152.md`
+- 原始手册：`evidence/UDG/20.15.2/添加NF实例ID（ADD-UPINSTID）_93973671.md`

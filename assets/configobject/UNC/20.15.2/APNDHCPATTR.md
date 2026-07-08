@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNDHCPATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/APNDHCPATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-DHCP属性配置（LST-APNDHCPATTR）_96242067.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-DHCP属性配置（SET-APNDHCPATTR）_96243072.md`

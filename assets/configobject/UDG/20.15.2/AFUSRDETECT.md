@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFUSRDETECT.md`
-- 原始手册：`evidence/UDG/20.15.2/AFUSRDETECT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询计费欺诈用户检测功能（LST-AFUSRDETECT）_16216977.md`
+- 原始手册：`evidence/UDG/20.15.2/设置计费欺诈用户检测功能（SET-AFUSRDETECT）_16216976.md`

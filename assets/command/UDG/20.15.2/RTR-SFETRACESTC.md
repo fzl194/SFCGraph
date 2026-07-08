@@ -55,4 +55,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-SFETRACESTC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除SFE跟踪报文统计（RTR-SFETRACESTC）_50120626.md`

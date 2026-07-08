@@ -69,4 +69,4 @@ DEA IDLESESSION:SESSIDLETHD=120;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEA-IDLESESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/去激活空闲会话（DEA-IDLESESSION）_77631308.md`

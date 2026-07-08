@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MCASTSOCKSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询组播Socket信息（DSP-MCASTSOCKSTATE）_00840577.md`

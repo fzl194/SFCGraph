@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UEUSGTYPEGP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEUSGTYPEGP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEUSGTYPEGP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEUSGTYPEGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UE-USAGE-TYPE群组(MOD-UEUSGTYPEGP)_26305630.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UE-USAGE-TYPE群组(RMV-UEUSGTYPEGP)_72345421.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UE-USAGE-TYPE群组(ADD-UEUSGTYPEGP)_72225499.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE-USAGE-TYPE群组(LST-UEUSGTYPEGP)_26145822.md`

@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TLBRELBLINK.md`
+- 原始手册：`evidence/UDG/20.15.2/启动触发HTTP服务端TCP链路重均衡检测及调整（STR-TLBRELBLINK）_15914281.md`

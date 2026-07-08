@@ -61,4 +61,4 @@ RMV RESULTCODESCP: PCCTEMPLATE="pcctemplate", MODELTYPE=MODELC, ERRINFO="*", N7R
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RESULTCODESCP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配置MODELC_D组网的SCP原因码控制（RMV-RESULTCODESCP）_81322862.md`

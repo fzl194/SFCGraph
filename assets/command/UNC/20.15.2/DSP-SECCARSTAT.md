@@ -77,4 +77,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SECCARSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示安全CAR功能丢弃上送CPU报文的详细信息（DSP-SECCARSTAT）_00600781.md`

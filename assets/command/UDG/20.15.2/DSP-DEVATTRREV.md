@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DEVATTRREV.md`
+- 原始手册：`evidence/UDG/20.15.2/显示接收VNFC配置的属性信息（DSP-DEVATTRREV）_59103375.md`

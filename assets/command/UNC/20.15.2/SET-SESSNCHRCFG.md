@@ -68,4 +68,4 @@ SET SESSNCHRCFG: HISRVPRCTMPLIDX=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SESSNCHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置会话CHR上报策略（SET-SESSNCHRCFG）_35628398.md`

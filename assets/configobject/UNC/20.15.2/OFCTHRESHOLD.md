@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OFCTHRESHOLD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置离线计费阈值（SET-OFCTHRESHOLD）_09896910.md`

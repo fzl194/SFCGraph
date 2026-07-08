@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MEPINTERACT.md`
-- 原始手册：`evidence/UNC/20.15.2/MEPINTERACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MEP_SMF联动功能开关（LST-MEPINTERACT）_09652273.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MEP_SMF联动功能开关（SET-MEPINTERACT）_09652370.md`

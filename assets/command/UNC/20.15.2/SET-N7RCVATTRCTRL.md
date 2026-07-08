@@ -68,4 +68,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N7RCVATTRCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N7接收信元处理控制（SET-N7RCVATTRCTRL）_09653677.md`

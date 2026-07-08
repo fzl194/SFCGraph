@@ -65,4 +65,4 @@ MOD SGWDNS: DNTYPE=TAI, TAC="1", TACRANGE="5", MCC="461", MNC="121";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SGWDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S-GW-DNS域名策略（MOD-SGWDNS）_72225651.md`

@@ -37,7 +37,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPFIXEDFCINF.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPFIXEDFCINF.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPFIXEDFCINF.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPFIXEDFCINF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改HTTP接口类型固定速率流控信息（MOD-HTTPFIXEDFCINF）_00520129.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTP接口类型固定速率流控信息（RMV-HTTPFIXEDFCINF）_52280614.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTP接口类型固定速率流控信息（ADD-HTTPFIXEDFCINF）_52121330.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP接口类型固定速率流控信息（LST-HTTPFIXEDFCINF）_52121334.md`

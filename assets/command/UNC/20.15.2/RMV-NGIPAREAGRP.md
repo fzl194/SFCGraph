@@ -56,4 +56,4 @@ RMV NGIPAREAGRP: AREAID="AnotherCity";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGIPAREAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-IP区域群（RMV-NGIPAREAGRP）_09651406.md`

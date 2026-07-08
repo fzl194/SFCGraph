@@ -59,4 +59,4 @@ EXP SEGFILE: SEGTYPE=IMSI, NFTYPEIMSI=AUSF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXP-SEGFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/导出号段文件（EXP-SEGFILE）_09654176.md`

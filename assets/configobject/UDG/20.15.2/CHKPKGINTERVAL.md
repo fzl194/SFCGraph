@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CHKPKGINTERVAL.md`
-- 原始手册：`evidence/UDG/20.15.2/CHKPKGINTERVAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软件包检查间隔（LST-CHKPKGINTERVAL）_96368339.md`
+- 原始手册：`evidence/UDG/20.15.2/设置软件包检查间隔（SET-CHKPKGINTERVAL）_50368640.md`

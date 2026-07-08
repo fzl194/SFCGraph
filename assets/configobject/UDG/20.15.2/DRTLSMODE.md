@@ -38,5 +38,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRTLSMODE.md`
-- 原始手册：`evidence/UDG/20.15.2/DRTLSMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询容灾控制通道TLS模式（LST-DRTLSMODE）_56001165.md`
+- 原始手册：`evidence/UDG/20.15.2/设置容灾控制通道TLS模式（SET-DRTLSMODE）_55919521.md`

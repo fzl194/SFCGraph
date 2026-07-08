@@ -55,4 +55,4 @@ RMV SMFSELUDM: SUBRANGE=FOREIGN_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFSELUDM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF选择UDM策略（RMV-SMFSELUDM）_48290741.md`

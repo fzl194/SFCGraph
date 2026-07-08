@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DROPFINALPKT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示配额耗尽末包动作（LST-DROPFINALPKT）_06213368.md`

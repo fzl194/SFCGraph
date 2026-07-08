@@ -83,4 +83,4 @@ SET PCCTIMER: DYNPCRFAGETMR=30;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PCCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC定时器（SET-PCCTIMER）_09897082.md`

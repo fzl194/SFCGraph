@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBILCIPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILCIPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务化接口负载控制参数（LST-SBILCIPARA）_46692903.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务化接口负载控制参数（SET-SBILCIPARA）_46972873.md`

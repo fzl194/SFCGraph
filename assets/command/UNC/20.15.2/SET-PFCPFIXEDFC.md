@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PFCPFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置指定PFCP消息类型固定速率流控信息（SET-PFCPFIXEDFC）_20015330.md`

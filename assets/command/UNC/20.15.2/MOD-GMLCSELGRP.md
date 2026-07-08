@@ -58,4 +58,4 @@ MOD GMLCSELGRP: GMLCGRPID=0, DESC="proviceA";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GMLCSELGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GMLC选择策略组(MOD-GMLCSELGRP)_26305620.md`

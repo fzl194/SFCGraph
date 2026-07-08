@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMIPTRANSTYPE.md`
-- 原始手册：`evidence/UNC/20.15.2/SMIPTRANSTYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话管理接口IP传输类型（LST-SMIPTRANSTYPE）_12701670.md`
+- 原始手册：`evidence/UNC/20.15.2/设置会话管理接口IP传输类型（SET-SMIPTRANSTYPE）_12701673.md`

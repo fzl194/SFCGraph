@@ -71,4 +71,4 @@ N40接口请求消息的扩展QCI控制开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-EXTENQCIATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询应用扩展QCI参数属性（LST-EXTENQCIATTR）_09652237.md`

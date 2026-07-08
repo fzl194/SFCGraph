@@ -115,4 +115,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SFECERCIB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于子接口的上行_下行业务属性表（DSP-SFECERCIB）_49962054.md`

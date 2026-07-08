@@ -54,4 +54,4 @@ CLR FINGIDENSTATIC:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-FINGIDENSTATIC.md`
+- 原始手册：`evidence/UDG/20.15.2/清零SA指纹识别统计结果（CLR-FINGIDENSTATIC）_31865726.md`

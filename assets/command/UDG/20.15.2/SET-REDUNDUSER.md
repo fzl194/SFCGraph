@@ -73,4 +73,4 @@ SET REDUNDUSER: SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-REDUNDUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/配置静态地址用户路由冗余功能（SET-REDUNDUSER）_71074367.md`

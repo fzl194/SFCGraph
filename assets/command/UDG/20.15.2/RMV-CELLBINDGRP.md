@@ -59,4 +59,4 @@ RMV CELLBINDGRP: CELLGROUPNAME="TestCellGroupName", CELLNAME="TestCellName";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CELLBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除小区和小区组绑定关系（RMV-CELLBINDGRP）_93175449.md`

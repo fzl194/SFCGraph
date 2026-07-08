@@ -69,4 +69,4 @@ SET CDFFUNCPARA: CDR5GFILTER=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CDFFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CDF的功能参数（SET-CDFFUNCPARA）_23782834.md`

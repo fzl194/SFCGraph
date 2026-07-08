@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRFAULTEXIT.md`
-- 原始手册：`evidence/UNC/20.15.2/VLRFAULTEXIT.md`
+- 原始手册：`evidence/UNC/20.15.2/停止用户退出VLR故障增强状态(STP-VLRFAULTEXIT)_93021280.md`
+- 原始手册：`evidence/UNC/20.15.2/启动用户退出VLR故障增强状态(STR-VLRFAULTEXIT)_92963924.md`

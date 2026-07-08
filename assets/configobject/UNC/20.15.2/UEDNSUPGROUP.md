@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UEDNSUPGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSUPGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSUPGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS关联的UPF组（RMV-UEDNSUPGROUP）_73321248.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS关联的UPF组（ADD-UEDNSUPGROUP）_73321231.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS关联的UPF组（LST-UEDNSUPGROUP）_73321239.md`

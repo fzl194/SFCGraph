@@ -67,4 +67,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SEPPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SEPP绑定组关系（LST-SEPPBINDGRP）_31000042.md`

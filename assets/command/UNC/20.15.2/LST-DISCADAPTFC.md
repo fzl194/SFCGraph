@@ -73,4 +73,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DISCADAPTFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现自适应流控NF级配置（LST-DISCADAPTFC）_63250257.md`

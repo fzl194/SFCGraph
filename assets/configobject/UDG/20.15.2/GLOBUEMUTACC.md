@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLOBUEMUTACC.md`
-- 原始手册：`evidence/UDG/20.15.2/GLOBUEMUTACC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局用户互访控制配置（LST-GLOBUEMUTACC）_82837774.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局用户互访控制配置（SET-GLOBUEMUTACC）_82837773.md`

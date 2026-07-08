@@ -62,4 +62,4 @@ MOD UPLOGICINTF: UPFINSTANCEID="upf_instance_1", ITFTYPE=N3, NETWORKINSTNAME="hu
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-UPLOGICINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF逻辑接口（MOD-UPLOGICINTF）_96805496.md`

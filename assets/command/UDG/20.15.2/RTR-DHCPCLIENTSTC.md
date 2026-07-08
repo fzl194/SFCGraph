@@ -53,4 +53,4 @@ RTR DHCPCLIENTSTC: IFNAME="Ethernet64/0/4";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-DHCPCLIENTSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除DHCPv4客户端报文统计（RTR-DHCPCLIENTSTC）_00841077.md`

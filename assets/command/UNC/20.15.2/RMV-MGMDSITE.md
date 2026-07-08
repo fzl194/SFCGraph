@@ -62,4 +62,4 @@ RMV MGMDSITE:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ROBUSTNESS=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MGMDSITE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IGMP全局配置（RMV-MGMDSITE）_00600965.md`

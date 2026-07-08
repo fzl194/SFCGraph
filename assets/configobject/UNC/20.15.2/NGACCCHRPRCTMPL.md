@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGACCCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGACCCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGACCCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGACCCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NG接入CHR流程控制模板（MOD-NGACCCHRPRCTMPL）_34945605.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NG接入CHR流程控制模板（RMV-NGACCCHRPRCTMPL）_34945606.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NG接入CHR流程控制模板（ADD-NGACCCHRPRCTMPL）_34945602.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NG接入CHR流程控制模板（LST-NGACCCHRPRCTMPL）_34945604.md`

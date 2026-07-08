@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGAREATZ.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAREATZ.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAREATZ.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAREATZ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G区域时区参数（MOD-NGAREATZ）_72153845.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G区域时区参数（RMV-NGAREATZ）_20993738.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G区域时区参数（ADD-NGAREATZ）_20674118.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G区域时区参数（LST-NGAREATZ）_20833786.md`

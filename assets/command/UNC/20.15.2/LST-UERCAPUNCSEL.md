@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UERCAPUNCSEL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE无线能力选择UNC参数(LST-UERCAPUNCSEL)_72753621.md`

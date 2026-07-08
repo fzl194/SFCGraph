@@ -65,4 +65,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BTRUNCFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询宽带集群系统扩展功能(LST-BTRUNCFUNC)_41460225.md`

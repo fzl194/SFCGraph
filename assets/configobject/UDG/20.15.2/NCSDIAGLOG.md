@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NCSDIAGLOG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示会话中NETCONF和其它组件的消息交互信息（DSP-NCSDIAGLOG）_59103623.md`

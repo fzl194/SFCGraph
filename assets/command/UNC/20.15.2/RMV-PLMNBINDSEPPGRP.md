@@ -58,4 +58,4 @@ RMV PLMNBINDSEPPGRP: MCC="123", MNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PLMNBINDSEPPGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN与SEPP组的绑定关系（RMV-PLMNBINDSEPPGRP）_81320053.md`

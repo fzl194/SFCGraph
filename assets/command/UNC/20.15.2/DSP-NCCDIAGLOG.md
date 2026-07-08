@@ -109,4 +109,4 @@ Time            ChannelID  MsgID       Dir        Method  Operation
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NCCDIAGLOG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NETCONFC与其他组件的消息交互信息（DSP-NCCDIAGLOG）_59103509.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RGTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/RGTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/RGTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/RGTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RG级的trigger参数（MOD-RGTRIGGER）_09653135.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RG级的trigger参数（RMV-RGTRIGGER）_09654153.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RG级的trigger参数（ADD-RGTRIGGER）_09653787.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RG级的trigger参数（LST-RGTRIGGER）_09653261.md`

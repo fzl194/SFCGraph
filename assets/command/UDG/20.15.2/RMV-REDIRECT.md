@@ -60,4 +60,4 @@ RMV REDIRECT:REDIRECTNAME="testredirect";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-REDIRECT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除重定向（RMV-REDIRECT）_82837530.md`

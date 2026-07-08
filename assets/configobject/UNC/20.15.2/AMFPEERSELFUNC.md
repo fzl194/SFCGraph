@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFPEERSELFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFPEERSELFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF对端选择功能控制参数（LST-AMFPEERSELFUNC）_18717536.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF对端选择功能参数（SET-AMFPEERSELFUNC）_19037048.md`

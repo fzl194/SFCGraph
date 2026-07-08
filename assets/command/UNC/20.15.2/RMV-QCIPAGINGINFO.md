@@ -56,4 +56,4 @@ RMV QCIPAGINGINFO: QCI=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-QCIPAGINGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QCI寻呼策略参数配置(RMV-QCIPAGINGINFO)_26305342.md`

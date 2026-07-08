@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFMBSSESSION.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFMBSSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/去激活MB-SMF组播广播会话（DEA-SMFMBSSESSION）_32692301.md`
+- 原始手册：`evidence/UNC/20.15.2/显示MB-SMF会话上下文信息（DSP-SMFMBSSESSION）_32892345.md`

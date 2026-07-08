@@ -76,4 +76,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IKEPEER6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-IKE对等体（LST-IKEPEER6）_21521230.md`

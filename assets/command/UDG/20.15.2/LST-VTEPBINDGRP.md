@@ -70,4 +70,4 @@ VXLAN组名称  =  vxlangrp
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VTEPBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN隧道端点绑定隧道组（LST-VTEPBINDGRP）_80994832.md`

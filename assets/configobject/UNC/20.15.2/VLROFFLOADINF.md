@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLROFFLOADINF.md`
-- 原始手册：`evidence/UNC/20.15.2/VLROFFLOADINF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR迁移配置信息(LST-VLROFFLOADINF)_26145422.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR迁移配置信息(SET-VLROFFLOADINF)_72345023.md`

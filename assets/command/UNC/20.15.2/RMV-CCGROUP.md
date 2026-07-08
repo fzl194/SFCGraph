@@ -57,4 +57,4 @@ RMV CCGROUP: CCGROUPNAME="c1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CCGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除计费特征组（RMV-CCGROUP）_42693476.md`

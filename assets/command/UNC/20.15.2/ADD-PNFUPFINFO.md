@@ -64,4 +64,4 @@ ADD PNFUPFINFO: NFINSTANCEID="UPF_Instance_0", IWKEPSIND=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端UPF信息（ADD-PNFUPFINFO）_09653643.md`

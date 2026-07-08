@@ -57,4 +57,4 @@ RMV SCTPTEMPLATE: SCTPTEMPLNAME="sctp_tp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCTPTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP模板（RMV-SCTPTEMPLATE）_09897334.md`

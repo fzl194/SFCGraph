@@ -61,4 +61,4 @@ RMV EXTENDPOLICY: RULENAME="rule", EXTENDPLYTYPE=NORMAL, SRVPROPNAME="srvprop", 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-EXTENDPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展策略配置（RMV-EXTENDPOLICY）_35373570.md`

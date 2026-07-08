@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGLANCHGCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/NGLANCHGCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN计费控制相关参数（LST-NGLANCHGCTRL）_80175090.md`
+- 原始手册：`evidence/UDG/20.15.2/设置5G-LAN计费控制相关参数（SET-NGLANCHGCTRL）_85336259.md`

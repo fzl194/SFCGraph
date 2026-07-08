@@ -66,4 +66,4 @@ ICMPv6差错报文速率限制（ms）  =  100
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IPV6GLOBALCONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6全局配置（LST-IPV6GLOBALCONFIG）_00840525.md`

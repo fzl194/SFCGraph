@@ -61,4 +61,4 @@ UE当前驻留的基站全局标识  =  No
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFEVENTCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询事件订阅通知消息的兼容性控制参数（LST-AMFEVENTCMPT）_57869699.md`

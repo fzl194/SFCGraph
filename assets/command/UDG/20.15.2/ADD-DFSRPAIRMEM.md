@@ -62,4 +62,4 @@ ADD DFSRPAIRMEM: DFSRPAIRID=1, IMSI="460111111111111";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-DFSRPAIRMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/增加双发选收结对成员配置（ADD-DFSRPAIRMEM）_26352685.md`

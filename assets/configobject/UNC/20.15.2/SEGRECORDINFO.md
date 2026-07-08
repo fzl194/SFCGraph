@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEGRECORDINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NRF已导入号段数据（DSP-SEGRECORDINFO）_50738959.md`

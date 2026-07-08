@@ -60,4 +60,4 @@ SET NGMDTCTRL: MNGMDTSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGMDTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G-MDT控制参数（SET-NGMDTCTRL）_99813710.md`

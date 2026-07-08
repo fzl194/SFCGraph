@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSCAR.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSCAR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QosCar配置（LST-QOSCAR）_82837669.md`
+- 原始手册：`evidence/UDG/20.15.2/设置QosCar配置（SET-QOSCAR）_82837668.md`

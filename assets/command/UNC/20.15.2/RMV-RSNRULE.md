@@ -58,4 +58,4 @@ RMV RSNRULE:SST=1,SD="010101",DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RSNRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RSN规则（RMV-RSNRULE）_57910228.md`

@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SESSIONACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SESSIONACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询新创建会话或专载的锁定状态（LST-SESSIONACT）_96242452.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定新创建会话或专载（LCK-SESSIONACT）_96242019.md`

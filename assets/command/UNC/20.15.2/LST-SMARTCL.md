@@ -67,4 +67,4 @@ APN智能分流关键字定制标识位置  =  BEFORE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMARTCL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能分流功能(LST-SMARTCL)_27191013.md`

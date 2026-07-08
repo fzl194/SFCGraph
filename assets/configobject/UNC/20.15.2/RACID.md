@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RACID.md`
-- 原始手册：`evidence/UNC/20.15.2/RACID.md`
-- 原始手册：`evidence/UNC/20.15.2/RACID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RAC组内绑定的RAC号段（RMV-RACID）_09651581.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RAC组内绑定的RAC号段（ADD-RACID）_09652984.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RAC组内绑定的RAC号段（LST-RACID）_09652289.md`

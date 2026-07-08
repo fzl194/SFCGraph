@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1APPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/S1APPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1AP协议参数(LST-S1APPARA)_26306068.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1AP协议参数(SET-S1APPARA)_72225935.md`

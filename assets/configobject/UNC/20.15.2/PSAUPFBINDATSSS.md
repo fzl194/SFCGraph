@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PSAUPFBINDATSSS.md`
-- 原始手册：`evidence/UNC/20.15.2/PSAUPFBINDATSSS.md`
-- 原始手册：`evidence/UNC/20.15.2/PSAUPFBINDATSSS.md`
-- 原始手册：`evidence/UNC/20.15.2/PSAUPFBINDATSSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PSA-UPF和ATSSS-UPF绑定关系中的ATSSS-UPF（MOD-PSAUPFBINDATSSS）_96242670.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PSA-UPF和ATSSS-UPF的绑定关系（RMV-PSAUPFBINDATSSS）_96242969.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PSA-UPF和ATSSS-UPF的绑定关系配置（ADD-PSAUPFBINDATSSS）_96241851.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PSA-UPF和ATSSS-UPF的绑定关系（LST-PSAUPFBINDATSSS）_96242415.md`

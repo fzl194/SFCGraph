@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CREDITPOOLFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/CREDITPOOLFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Credit-Pooling功能（LST-CREDITPOOLFUNC）_75240938.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Credit-Pooling功能（SET-CREDITPOOLFUNC）_10761361.md`

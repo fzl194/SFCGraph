@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GGSNCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GGSNCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GGSNCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GGSNCAUSECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GGSN-C原因值控制参数（MOD-GGSNCAUSECTRL）_25121196.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GGSN-C原因值控制参数（RMV-GGSNCAUSECTRL）_25121201.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GGSN-C原因值控制参数（ADD-GGSNCAUSECTRL）_25120871.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GGSN-C原因值控制参数（LST-GGSNCAUSECTRL）_25120885.md`

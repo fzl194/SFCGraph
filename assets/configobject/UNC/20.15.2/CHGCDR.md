@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGCDR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCDR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCDR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCDR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCDR.md`
+- 原始手册：`evidence/UNC/20.15.2/强制生成用户话单（CRE-CHGCDR）_26145374.md`
+- 原始手册：`evidence/UNC/20.15.2/显示强制生成用户话单的结果信息(DSP-CHGCDR)_26305188.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费CDR参数（LST-CHGCDR）_72225053.md`
+- 原始手册：`evidence/UNC/20.15.2/模拟SGSN话单(TST-CHGCDR)_72344975.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费CDR参数（SET-CHGCDR）_26145372.md`

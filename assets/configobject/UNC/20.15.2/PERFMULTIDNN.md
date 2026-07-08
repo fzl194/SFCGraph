@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFMULTIDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFMULTIDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFMULTIDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MultiDNN性能统计对象（RMV-PERFMULTIDNN）_31551070.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MultiDNN性能统计对象（ADD-PERFMULTIDNN）_81671277.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MultiDNN性能统计对象（LST-PERFMULTIDNN）_82110977.md`

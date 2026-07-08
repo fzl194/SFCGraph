@@ -57,4 +57,4 @@ RMV APNUSRPROFG:APN="apn1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNUSRPROFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN用户模板组绑定关系（RMV-APNUSRPROFG）_09897226.md`

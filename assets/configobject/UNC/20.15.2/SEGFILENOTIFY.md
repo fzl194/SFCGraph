@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEGFILENOTIFY.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGFILENOTIFY.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGFILENOTIFY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除号段文件通知记录（RMV-SEGFILENOTIFY）_50738961.md`
+- 原始手册：`evidence/UNC/20.15.2/增加号段文件通知记录（ADD-SEGFILENOTIFY）_50738957.md`
+- 原始手册：`evidence/UNC/20.15.2/查询号段文件通知记录（LST-SEGFILENOTIFY）_50738960.md`

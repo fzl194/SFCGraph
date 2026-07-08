@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EXPBASICFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/EXPBASICFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询体验业务基本功能（LST-EXPBASICFUNC）_72322914.md`
+- 原始手册：`evidence/UDG/20.15.2/设置体验业务上报基本功能（SET-EXPBASICFUNC）_31719867.md`

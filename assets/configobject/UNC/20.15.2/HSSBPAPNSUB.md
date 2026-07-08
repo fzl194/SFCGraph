@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HSSBPAPNSUB.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBPAPNSUB.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBPAPNSUB.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBPAPNSUB.md`
+- 原始手册：`evidence/UNC/20.15.2/修改HSS-BYPASS最小APN签约数据配置-(MOD-HSSBPAPNSUB)_63705566.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HSS-BYPASS最小APN签约数据配置-(RMV-HSSBPAPNSUB)_63865462.md`
+- 原始手册：`evidence/UNC/20.15.2/增加HSS-BYPASS最小APN签约数据配置-(ADD-HSSBPAPNSUB)_11385437.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HSS-BYPASS最小APN签约数据配置-(LST-HSSBPAPNSUB)_64025366.md`

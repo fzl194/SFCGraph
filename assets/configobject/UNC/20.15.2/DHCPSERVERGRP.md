@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCPSERVERGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPSERVERGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPSERVERGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPSERVERGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DHCP服务器组（MOD-DHCPSERVERGRP）_32304095.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DHCP服务器组（RMV-DHCPSERVERGRP）_86824472.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DHCP服务器组（ADD-DHCPSERVERGRP）_32304093.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCP服务器组（LST-DHCPSERVERGRP）_32382545.md`

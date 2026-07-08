@@ -73,4 +73,4 @@ IGMP Snooping属性配置
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IGMPSNOOPINGATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP-Snooping属性配置（LST-IGMPSNOOPINGATTR）_06120061.md`

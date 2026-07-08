@@ -59,4 +59,4 @@ RMV NRFREGIDSETIDREL: AMFREGID="09", AMFSETID="123";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFREGIDSETIDREL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF区域标识和集合标识的关联关系（RMV-NRFREGIDSETIDREL）_09651341.md`

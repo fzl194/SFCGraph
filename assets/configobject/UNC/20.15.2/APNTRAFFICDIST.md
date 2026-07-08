@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNTRAFFICDIST.md`
-- 原始手册：`evidence/UNC/20.15.2/APNTRAFFICDIST.md`
-- 原始手册：`evidence/UNC/20.15.2/APNTRAFFICDIST.md`
-- 原始手册：`evidence/UNC/20.15.2/APNTRAFFICDIST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改漫游地动态签约分流控制（MOD-APNTRAFFICDIST）_70021109.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫游地动态签约分流控制（RMV-APNTRAFFICDIST）_70261217.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游地动态签约分流控制（ADD-APNTRAFFICDIST）_19141642.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游地动态签约分流控制（LST-APNTRAFFICDIST）_18982082.md`

@@ -73,4 +73,4 @@ ADD 5GCQOSACTION:QOSPROFILENAME="test",FIVEQI=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-5GCQOSACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5GC-QoS控制动作配置（ADD-5GCQOSACTION）_09652342.md`

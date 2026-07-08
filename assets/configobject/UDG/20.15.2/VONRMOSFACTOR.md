@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VONRMOSFACTOR.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRMOSFACTOR.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRMOSFACTOR.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS补偿因子（RTR-VONRMOSFACTOR）_81894388.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MOS计算值的补偿因子（LST-VONRMOSFACTOR）_91056084.md`
+- 原始手册：`evidence/UDG/20.15.2/设置MOS计算值的补偿因子（SET-VONRMOSFACTOR）_91775308.md`

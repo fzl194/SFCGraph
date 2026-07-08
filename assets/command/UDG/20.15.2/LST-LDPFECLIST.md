@@ -64,4 +64,4 @@ FEC列表名称  =  name1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LDPFECLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FEC列表配置（LST-LDPFECLIST）_49801438.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PCRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PCRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/PCRFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCRF组（MOD-PCRFGROUP）_09897091.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCRF组（RMV-PCRFGROUP）_09897092.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCRF组（ADD-PCRFGROUP）_09897090.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCRF组（LST-PCRFGROUP）_09897093.md`

@@ -62,4 +62,4 @@ ADD IPV6GPMEM: IPGPID=1, IPV6="2001:db8::", IPV6MSK =64 ;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IPV6GPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv6群组成员(ADD-IPV6GPMEM)_26145720.md`

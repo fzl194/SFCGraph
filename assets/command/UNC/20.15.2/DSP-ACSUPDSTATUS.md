@@ -67,4 +67,4 @@ ACS_OM_RU_0001             升级结束
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-ACSUPDSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示升级状态（DSP-ACSUPDSTATUS）_89080530.md`

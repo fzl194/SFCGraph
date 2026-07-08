@@ -54,4 +54,4 @@ RMV MPACIPV6RULE:POLICYNAME="policyV6",RULENAME="name-test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MPACIPV6RULE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-MPAC策略规则（RMV-MPACIPV6RULE）_00441153.md`

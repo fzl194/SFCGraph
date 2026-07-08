@@ -124,4 +124,4 @@ PduSessionCreateData.VsmfPduSessionUri                enable
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CURSMFIEADAPTER.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SMF当前信元携带的信息（DSP-CURSMFIEADAPTER）_57616489.md`

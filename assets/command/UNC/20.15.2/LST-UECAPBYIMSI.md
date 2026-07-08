@@ -61,4 +61,4 @@ IMSI  =  460011418603055
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UECAPBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE无线能力策略（LST-UECAPBYIMSI）_62586337.md`

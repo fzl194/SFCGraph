@@ -65,4 +65,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFV3IFIPSECSA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3-接口的安全联盟SA配置（LST-OSPFV3IFIPSECSA）_00440357.md`

@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSMFSERAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSMFSERAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSMFSERAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSMFSERAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的SMF服务区域信息（MOD-PNFSMFSERAREA）_52137135.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的SMF服务区域信息（RMV-PNFSMFSERAREA）_09653186.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的SMF服务区域信息（ADD-PNFSMFSERAREA）_09653019.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的SMF服务区域信息（LST-PNFSMFSERAREA）_09652242.md`

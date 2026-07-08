@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ALMNRMODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ALMNRMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网管北向告警上报模式（LST-ALMNRMODE）_39656853.md`
+- 原始手册：`evidence/UDG/20.15.2/设置网管北向告警上报模式（SET-ALMNRMODE）_92434720.md`

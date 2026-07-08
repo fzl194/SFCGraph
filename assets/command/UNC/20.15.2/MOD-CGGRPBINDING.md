@@ -64,4 +64,4 @@ MOD CGGRPBINDING: OFCTEMPLATENAME="ofctemplate1", CGGRPID=1, SEGGROUPNAME="seggr
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CGGRPBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CG组绑定关系（MOD-CGGRPBINDING）_09896885.md`

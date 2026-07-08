@@ -70,4 +70,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SFELOADALARM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询组件侧转发过载告警参数（DSP-SFELOADALARM）_00601029.md`

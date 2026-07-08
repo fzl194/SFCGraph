@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPV6GLOBALCONFIG.md`
-- 原始手册：`evidence/UDG/20.15.2/IPV6GLOBALCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6全局配置（LST-IPV6GLOBALCONFIG）_00840525.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv6全局配置（SET-IPV6GLOBALCONFIG）_00441465.md`

@@ -63,4 +63,4 @@ MOD OCSBINDING:OCSGRPNAME="test",OCSHOSTNAME="test01",SEGGROUPNAME="test03",IMSI
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-OCSBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Ocs绑定关系（MOD-OCSBINDING）_09896964.md`

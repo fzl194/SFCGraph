@@ -57,4 +57,4 @@ RMV IUPFAPNDPMODE: APN="huawei.com"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IUPFAPNDPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除I-UPF在特定园区专用APN下的部署模式配置（RMV-IUPFAPNDPMODE）_27209857.md`

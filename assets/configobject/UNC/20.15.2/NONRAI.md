@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NONRAI.md`
-- 原始手册：`evidence/UNC/20.15.2/NONRAI.md`
-- 原始手册：`evidence/UNC/20.15.2/NONRAI.md`
-- 原始手册：`evidence/UNC/20.15.2/NONRAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改非广播RAI配置信息(MOD-NONRAI)_26146110.md`
+- 原始手册：`evidence/UNC/20.15.2/删除非广播RAI配置信息(RMV-NONRAI)_72345709.md`
+- 原始手册：`evidence/UNC/20.15.2/增加非广播RAI配置信息(ADD-NONRAI)_26305918.md`
+- 原始手册：`evidence/UNC/20.15.2/查询非广播RAI配置信息(LST-NONRAI)_72225789.md`

@@ -67,4 +67,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LOWLATENCYSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询低时延业务开关（LST-LOWLATENCYSW）_68962489.md`

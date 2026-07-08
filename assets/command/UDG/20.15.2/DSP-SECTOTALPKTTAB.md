@@ -65,4 +65,4 @@ CAR速率（pps）  =  6000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SECTOTALPKTTAB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示安全总报文表项（DSP-SECTOTALPKTTAB）_00441553.md`

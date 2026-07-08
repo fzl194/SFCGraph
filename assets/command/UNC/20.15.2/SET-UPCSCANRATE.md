@@ -76,4 +76,4 @@ SET UPCSCANRATE: SCANTYPE=DEACTIVE, RATE=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-UPCSCANRATE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户面控制扫描速率（SET-UPCSCANRATE）_04284727.md`

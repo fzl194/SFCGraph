@@ -91,4 +91,4 @@ UNC
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LCSAPLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LCSAP链路配置(LST-LCSAPLNK)_26305618.md`

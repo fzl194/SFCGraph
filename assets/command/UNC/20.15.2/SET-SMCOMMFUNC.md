@@ -80,4 +80,4 @@ SET SMCOMMFUNC: LOCREPORT=Support, RTBEHINDMSSW=DISABLE, MULTIDNNSW=Support, UDM
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMCOMMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通用会话拓展功能（SET-SMCOMMFUNC）_08433263.md`

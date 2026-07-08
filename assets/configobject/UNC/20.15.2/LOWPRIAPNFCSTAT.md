@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOWPRIAPNFCSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示低优先级APN流控状态统计(DSP-LOWPRIAPNFCSTAT)_72225837.md`

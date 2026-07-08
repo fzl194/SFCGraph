@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BASESOFTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/BASESOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基础软件参数配置（LST-BASESOFTPARA）_59104134.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基础软件参数配置（SET-BASESOFTPARA）_59103695.md`

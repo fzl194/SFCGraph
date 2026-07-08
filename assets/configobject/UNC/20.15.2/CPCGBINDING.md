@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPCGBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/CPCGBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/CPCGBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/CPCGBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/修改抄送CG绑定关系（MOD-CPCGBINDING）_09896870.md`
+- 原始手册：`evidence/UNC/20.15.2/删除抄送CG绑定（RMV-CPCGBINDING）_09896871.md`
+- 原始手册：`evidence/UNC/20.15.2/增加抄送CG绑定（ADD-CPCGBINDING）_09896869.md`
+- 原始手册：`evidence/UNC/20.15.2/显示抄送CG绑定（LST-CPCGBINDING）_09896872.md`

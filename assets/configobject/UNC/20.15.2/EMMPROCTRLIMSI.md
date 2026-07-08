@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EMMPROCTRLIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/EMMPROCTRLIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/EMMPROCTRLIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/EMMPROCTRLIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定用户S1模式移动性管理流程控制参数(MOD-EMMPROCTRLIMSI)_80923542.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定用户S1模式移动性管理流程控制参数(RMV-EMMPROCTRLIMSI)_16322793.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定用户S1模式移动性管理流程控制参数(ADD-EMMPROCTRLIMSI)_16407797.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定用户S1模式移动性管理流程控制参数(LST-EMMPROCTRLIMSI)_80768782.md`

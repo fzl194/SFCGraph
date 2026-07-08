@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SDAPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SDAPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SDAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SDAP本地实体(RMV-SDAPLE)_72226967.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SDAP本地实体(ADD-SDAPLE)_26147290.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SDAP本地实体(LST-SDAPLE)_72346893.md`

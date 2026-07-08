@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NOSBASEPING.md`
+- 原始手册：`evidence/UNC/20.15.2/NOS-Base平面网络Ping功能（ACT-NOSBASEPING）_59113817.md`

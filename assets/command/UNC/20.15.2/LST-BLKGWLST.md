@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BLKGWLST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询被禁用网关配置(LST-BLKGWLST)_26305762.md`

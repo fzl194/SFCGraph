@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PLMNBINDSEPPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNBINDSEPPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNBINDSEPPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNBINDSEPPGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PLMN与SEPP组的绑定关系（MOD-PLMNBINDSEPPGRP）_81200057.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN与SEPP组的绑定关系（RMV-PLMNBINDSEPPGRP）_81320053.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PLMN与SEPP组的绑定关系（ADD-PLMNBINDSEPPGRP）_30680370.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PLMN与SEPP组的绑定关系（LST-PLMNBINDSEPPGRP）_30840094.md`

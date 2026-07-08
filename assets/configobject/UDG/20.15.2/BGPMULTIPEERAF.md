@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPMULTIPEERAF.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPMULTIPEERAF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BGP多源对等体地址族（MOD-BGPMULTIPEERAF）_49802050.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP多源对等体地址族（LST-BGPMULTIPEERAF）_50121790.md`

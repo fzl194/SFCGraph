@@ -60,4 +60,4 @@ ADD M2MUPFBINDGRP: UPFGRPNAME="upfgrp1", UPFID="upf_instance_1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-M2MUPFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF和M2M关联的UPF组的绑定关系（ADD-M2MUPFBINDGRP）_96241689.md`

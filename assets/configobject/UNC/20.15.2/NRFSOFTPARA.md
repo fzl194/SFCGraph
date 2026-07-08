@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF软参（LST-NRFSOFTPARA）_09653283.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF软参（SET-NRFSOFTPARA）_09653170.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPUCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户面控制参数(LST-GTPUCTRL)_72345439.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户面控制参数(SET-GTPUCTRL)_26305648.md`

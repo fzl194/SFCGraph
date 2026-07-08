@@ -62,4 +62,4 @@ SMSF号段白名单开关  =  关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFSMSFSEGSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF号段白名单功能开关-（LST-NRFSMSFSEGSW）_21943405.md`

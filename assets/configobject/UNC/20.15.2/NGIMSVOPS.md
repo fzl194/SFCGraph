@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGIMSVOPS.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIMSVOPS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VoPS配置（LST-NGIMSVOPS）_09653054.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VoPS配置（SET-NGIMSVOPS）_09653214.md`

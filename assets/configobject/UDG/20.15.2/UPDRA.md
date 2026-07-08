@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDRA.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDRA.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDRA.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDRA.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DRA（MOD-UPDRA）_97314571.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DRA（RMV-UPDRA）_45432704.md`
+- 原始手册：`evidence/UDG/20.15.2/增加DRA（ADD-UPDRA）_97080167.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DRA（LST-UPDRA）_45195194.md`

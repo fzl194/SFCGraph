@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBRDSACCT.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBRDSACCT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局RADIUS-Accounting配置（LST-GLBRDSACCT）_09896777.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局RADIUS-Accounting配置（SET-GLBRDSACCT）_09896776.md`

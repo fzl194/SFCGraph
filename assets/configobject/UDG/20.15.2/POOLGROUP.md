@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/POOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改地址池组（MOD-POOLGROUP）_82837139.md`
+- 原始手册：`evidence/UDG/20.15.2/删除地址池组（RMV-POOLGROUP）_82837140.md`
+- 原始手册：`evidence/UDG/20.15.2/显示地址池组（LST-POOLGROUP）_82837141.md`
+- 原始手册：`evidence/UDG/20.15.2/添加地址池组（ADD-POOLGROUP）_82837138.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REGNFLOADUPDTHR.md`
-- 原始手册：`evidence/UNC/20.15.2/REGNFLOADUPDTHR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF负载更新阈值（LST-REGNFLOADUPDTHR）_09652555.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF负载更新阈值（SET-REGNFLOADUPDTHR）_09652688.md`

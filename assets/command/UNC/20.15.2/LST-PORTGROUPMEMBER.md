@@ -68,4 +68,4 @@ LST PORTGROUPMEMBER:PORTGROUPNAME="ifm";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PORTGROUPMEMBER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询端口组成员配置（LST-PORTGROUPMEMBER）_49961894.md`

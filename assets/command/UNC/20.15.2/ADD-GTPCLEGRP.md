@@ -61,4 +61,4 @@ ADD GTPCLEGRP:GROUPID=0,DESC="for s11";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPCLEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C本地实体组（ADD-GTPCLEGRP）_09651623.md`

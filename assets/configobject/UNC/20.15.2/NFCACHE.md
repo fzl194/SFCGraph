@@ -35,5 +35,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFCACHE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFCACHE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF缓存信息（DSP-NFCACHE）_09651365.md`
+- 原始手册：`evidence/UNC/20.15.2/清除NF缓存（CLR-NFCACHE）_17555434.md`

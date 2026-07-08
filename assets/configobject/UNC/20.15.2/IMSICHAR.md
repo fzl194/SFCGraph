@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSICHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSICHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSICHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSICHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI号段属性配置(MOD-IMSICHAR)_72345651.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI号段属性配置(RMV-IMSICHAR)_26305860.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI号段属性配置(ADD-IMSICHAR)_72225729.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI号段属性配置(LST-IMSICHAR)_26146052.md`

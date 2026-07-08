@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMDICTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMDICTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMDICTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMDICTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter字典加载路径（MOD-UPDIAMDICTPATH）_45195170.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter字典加载路径（RMV-UPDIAMDICTPATH）_97314551.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter字典加载路径（ADD-UPDIAMDICTPATH）_45432684.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter字典加载路径（LST-UPDIAMDICTPATH）_97080147.md`

@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEACTIVERATE.md`
-- 原始手册：`evidence/UNC/20.15.2/DEACTIVERATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询去激活用户承载的速率（LST-DEACTIVERATE）_09652350.md`
+- 原始手册：`evidence/UNC/20.15.2/设置去激活用户承载的速率（SET-DEACTIVERATE）_09652156.md`

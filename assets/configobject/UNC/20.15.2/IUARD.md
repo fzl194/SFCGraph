@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUARD.md`
-- 原始手册：`evidence/UNC/20.15.2/IUARD.md`
-- 原始手册：`evidence/UNC/20.15.2/IUARD.md`
-- 原始手册：`evidence/UNC/20.15.2/IUARD.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Iu模式接入限制参数(MOD-IUARD)_72225157.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu模式接入限制参数(RMV-IUARD)_26145476.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu模式接入限制参数(ADD-IUARD)_72345073.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式接入限制参数(LST-IUARD)_26305288.md`

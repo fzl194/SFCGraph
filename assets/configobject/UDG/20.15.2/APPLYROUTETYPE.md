@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPLYROUTETYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYROUTETYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYROUTETYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYROUTETYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改路由类型设置（MOD-APPLYROUTETYPE）_00440605.md`
+- 原始手册：`evidence/UDG/20.15.2/删除路由类型设置（RMV-APPLYROUTETYPE）_00865709.md`
+- 原始手册：`evidence/UDG/20.15.2/增加路由类型设置（ADD-APPLYROUTETYPE）_00866521.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由类型设置（LST-APPLYROUTETYPE）_00841153.md`

@@ -69,4 +69,4 @@ IP协议版本  =  IPV4
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VTEP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN隧道端点（LST-VTEP）_80994830.md`

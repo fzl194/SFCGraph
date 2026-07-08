@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/L3SERVICEUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/L3SERVICEUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/L3SERVICEUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/L3SERVICEUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务升级进度（RMV-L3SERVICEUPG）_34023365.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务升级进度（ADD-L3SERVICEUPG）_33781925.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务升级进度（LST-L3SERVICEUPG）_88502328.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务升级进度（SET-L3SERVICEUPG）_33903415.md`

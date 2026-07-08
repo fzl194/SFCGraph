@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFAUSFRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFAUSFRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的AUSF故障处理策略（LST-AMFAUSFRESET）_57496925.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF的AUSF故障处理策略（SET-AMFAUSFRESET）_57496933.md`

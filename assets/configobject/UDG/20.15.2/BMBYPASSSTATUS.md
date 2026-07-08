@@ -40,5 +40,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BMBYPASSSTATUS.md`
-- 原始手册：`evidence/UDG/20.15.2/BMBYPASSSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询裸机BYPASS状态（DSP-BMBYPASSSTATUS）_58439178.md`
+- 原始手册：`evidence/UDG/20.15.2/设置裸机BYPASS状态（SET-BMBYPASSSTATUS）_58599098.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FAULTLNKDETCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTLNKDETCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询故障链路探测配置(LST-FAULTLNKDETCFG)_72225551.md`
+- 原始手册：`evidence/UNC/20.15.2/设置故障链路探测功能(SET-FAULTLNKDETCFG)_26145872.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCFMVNFMLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SCFMVNFMLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询超时时间配置（LST-SCFMVNFMLNK）_94730473.md`
+- 原始手册：`evidence/UNC/20.15.2/配置超时时间（SET-SCFMVNFMLNK）_94730521.md`

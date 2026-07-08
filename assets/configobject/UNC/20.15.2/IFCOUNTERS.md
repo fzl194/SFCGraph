@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFCOUNTERS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFCOUNTERS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口统计信息（DSP-IFCOUNTERS）_00841557.md`
+- 原始手册：`evidence/UNC/20.15.2/清除接口统计信息（RTR-IFCOUNTERS）_00866745.md`

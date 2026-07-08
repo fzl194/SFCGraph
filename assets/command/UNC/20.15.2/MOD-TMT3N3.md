@@ -60,4 +60,4 @@ MOD TMT3N3: TMMSGCFGMODE=TMMSG_ALL, TRSP=7, NREQ=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-TMT3N3.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Tm接口消息T3N3参数(MOD-TMT3N3)_89174552.md`

@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UDPCHECKSUM.md`
-- 原始手册：`evidence/UDG/20.15.2/UDPCHECKSUM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UDP报文是否携带checksum（LST-UDPCHECKSUM）_82837688.md`
+- 原始手册：`evidence/UDG/20.15.2/配置UDP报文中是否携带checksum（SET-UDPCHECKSUM）_82837687.md`

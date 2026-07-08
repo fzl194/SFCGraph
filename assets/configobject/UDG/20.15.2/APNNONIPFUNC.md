@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNNONIPFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNNONIPFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN-Non-IP功能配置（LST-APNNONIPFUNC）_15595101.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-Non-IP配置（SET-APNNONIPFUNC）_15595100.md`

@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BASESUBHEALTH.md`
-- 原始手册：`evidence/UDG/20.15.2/BASESUBHEALTH.md`
-- 原始手册：`evidence/UDG/20.15.2/BASESUBHEALTH.md`
+- 原始手册：`evidence/UDG/20.15.2/显示base链路亚健康信息（DSP-BASESUBHEALTH）_59104040.md`
+- 原始手册：`evidence/UDG/20.15.2/查询base链路亚健康信息（LST-BASESUBHEALTH）_71887721.md`
+- 原始手册：`evidence/UDG/20.15.2/配置base链路亚健康信息（SET-BASESUBHEALTH）_97738016.md`

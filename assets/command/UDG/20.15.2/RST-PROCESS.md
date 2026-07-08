@@ -60,4 +60,4 @@ RST PROCESS:PROCID=1002
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RST-PROCESS.md`
+- 原始手册：`evidence/UDG/20.15.2/复位进程(RST-PROCESS)_29626893.md`

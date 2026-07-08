@@ -86,4 +86,4 @@ SET NDIFCONFIG:IFNAME="Ethernet65/0/8",RAHALTFLAG=FALSE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-NDIFCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv6-ND接口配置（SET-NDIFCONFIG）_50281614.md`

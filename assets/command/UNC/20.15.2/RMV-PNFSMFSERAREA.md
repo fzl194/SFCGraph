@@ -65,4 +65,4 @@ RMV PNFSMFSERAREA: NFINSTANCEID="UPF_Instance_0", SMFSERVINGAREA="area01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFSMFSERAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的SMF服务区域信息（RMV-PNFSMFSERAREA）_09653186.md`

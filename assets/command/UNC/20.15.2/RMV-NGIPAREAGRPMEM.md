@@ -57,4 +57,4 @@ RMV NGIPAREAGRPMEM: AREAID="SomeCity", TAC="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGIPAREAGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-IP区域群成员（RMV-NGIPAREAGRPMEM）_09653279.md`

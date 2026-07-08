@@ -71,4 +71,4 @@ RMV PNFGPSI: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFGPSI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的GPSI信息（RMV-PNFGPSI）_09652998.md`

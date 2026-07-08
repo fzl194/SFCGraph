@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HTTPDIALUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP拨测用户信息（LST-HTTPDIALUSR）_96888408.md`

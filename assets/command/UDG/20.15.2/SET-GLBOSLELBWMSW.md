@@ -64,4 +64,4 @@ SET GlbOSLELBWMSW:ISENABLE=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBOSLELBWMSW.md`
+- 原始手册：`evidence/UDG/20.15.2/设置整机操作系统级带宽管理开关（SET-GLBOSLELBWMSW）_82837501.md`

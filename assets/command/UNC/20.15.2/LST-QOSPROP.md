@@ -82,4 +82,4 @@ QoS使用量上报规则名称  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-QOSPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS属性（LST-QOSPROP）_09897166.md`

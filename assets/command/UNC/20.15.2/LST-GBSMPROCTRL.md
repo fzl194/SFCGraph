@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GBSMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式SM流程控制参数（LST-GBSMPROCTRL）_72225371.md`

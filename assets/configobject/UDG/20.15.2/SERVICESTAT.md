@@ -37,7 +37,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SERVICESTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/SERVICESTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/SERVICESTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/SERVICESTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改业务统计配置（MOD-SERVICESTAT）_82837844.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务统计配置（RMV-SERVICESTAT）_86528354.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务统计配置（ADD-SERVICESTAT）_82837843.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务统计配置（LST-SERVICESTAT）_82837846.md`

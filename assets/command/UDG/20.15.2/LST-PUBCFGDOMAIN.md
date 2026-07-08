@@ -73,4 +73,4 @@ sss
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PUBCFGDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询域配置信息表（LST-PUBCFGDOMAIN）_68186120.md`

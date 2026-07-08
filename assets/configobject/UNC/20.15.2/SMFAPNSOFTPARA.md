@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复SMF-APN软参记录（RTR-SMFAPNSOFTPARA）_25121208.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF-APN软参记录（LST-SMFAPNSOFTPARA）_25121194.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF的APN软参记录（SET-SMFAPNSOFTPARA）_25121213.md`

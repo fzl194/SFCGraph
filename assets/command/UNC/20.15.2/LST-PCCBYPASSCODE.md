@@ -73,4 +73,4 @@ Gx Result Code Value  =  5012
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCBYPASSCODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC故障场景维持BYPASS状态码配置（LST-PCCBYPASSCODE）_83409210.md`

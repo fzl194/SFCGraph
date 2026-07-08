@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-CPUECOPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局的CPU调频和休眠策略（SET-CPUECOPOLICY）_87832965.md`

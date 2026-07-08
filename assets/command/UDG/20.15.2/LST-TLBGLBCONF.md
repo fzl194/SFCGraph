@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TLBGLBCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TLB全局配置（LST-TLBGLBCONF）_15834601.md`

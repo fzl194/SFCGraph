@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MGMDSITE.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSITE.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSITE.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSITE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IGMP全局配置（MOD-MGMDSITE）_50281430.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IGMP全局配置（RMV-MGMDSITE）_00600965.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IGMP全局配置（LST-MGMDSITE）_49961962.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IGMP全局配置（ADD-MGMDSITE）_00841633.md`

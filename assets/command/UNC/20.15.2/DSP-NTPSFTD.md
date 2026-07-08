@@ -72,4 +72,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NTPSFTD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NTP软参(DSP-NTPSFTD)_96379735.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNDEACTQFPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/APNDEACTQFPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/APNDEACTQFPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/APNDEACTQFPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN去活用户面专有QoS-Flow策略（MOD-APNDEACTQFPLCY）_92151170.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN去活用户面专有QoS-Flow策略（RMV-APNDEACTQFPLCY）_92310840.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN去活用户面专有QoS-Flow策略（ADD-APNDEACTQFPLCY）_38692981.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN去活用户面专有QoS-Flow策略（LST-APNDEACTQFPLCY）_38890149.md`

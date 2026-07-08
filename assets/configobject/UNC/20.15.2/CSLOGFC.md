@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CSLOGFC.md`
-- 原始手册：`evidence/UNC/20.15.2/CSLOGFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询日志流控开关（LST-CSLOGFC）_09587860.md`
+- 原始手册：`evidence/UNC/20.15.2/设置日志流控开关（SET-CSLOGFC）_09587953.md`

@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRLOCATIONGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/USRLOCATIONGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/USRLOCATIONGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户位置组（RMV-USRLOCATIONGRP）_09897149.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户位置组（ADD-USRLOCATIONGRP）_09897148.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户位置组（LST-USRLOCATIONGRP）_09897150.md`

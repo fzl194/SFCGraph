@@ -58,4 +58,4 @@ RMV APNCTRLPARA: APNGRPID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNCTRLPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的信令控制参数(RMV-APNCTRLPARA)_72225463.md`

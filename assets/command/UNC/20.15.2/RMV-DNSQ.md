@@ -61,4 +61,4 @@ RMV DNSQ: SUBRANGE=All, DNSUF="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNSQ.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS查询控制参数(RMV-DNSQ)_72345493.md`

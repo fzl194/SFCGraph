@@ -60,4 +60,4 @@ RMV UPFBINDGRP: UPFGRPNAME="upfgrp1", UPFID="upf_instance_1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF和UPF组的绑定关系（RMV-UPFBINDGRP）_32232828.md`

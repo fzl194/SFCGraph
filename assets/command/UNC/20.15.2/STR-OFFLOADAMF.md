@@ -80,4 +80,4 @@ STR OFFLOADAMF: TYPE=ALL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STR-OFFLOADAMF.md`
+- 原始手册：`evidence/UNC/20.15.2/启动AMF迁移任务（STR-OFFLOADAMF）_09653235.md`

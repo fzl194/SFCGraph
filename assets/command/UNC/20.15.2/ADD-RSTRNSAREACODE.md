@@ -59,4 +59,4 @@ ADD RSTRNSAREACODE:AREACODE="jq001.pd006.sh.mcc123.mnc45", DESC="for zone1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RSTRNSAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TA级切片限制区域码（ADD-RSTRNSAREACODE）_71516423.md`

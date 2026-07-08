@@ -59,4 +59,4 @@ RMV HSSBPOFC: HOSTNAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-HSSBPOFC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除故障状态HSS(RMV-HSSBPOFC)_21093317.md`

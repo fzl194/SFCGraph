@@ -62,4 +62,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SPECTRAFURRGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局缺省费率的流量使用量上报规则组（LST-SPECTRAFURRGRP）_36146716.md`

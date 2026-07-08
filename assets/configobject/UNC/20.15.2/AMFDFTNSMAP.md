@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFDFTNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFDFTNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFDFTNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫游切片默认映射配置（RMV-AMFDFTNSMAP）_58572693.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游切片默认映射配置（ADD-AMFDFTNSMAP）_58572689.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游切片默认映射配置（LST-AMFDFTNSMAP）_58492653.md`

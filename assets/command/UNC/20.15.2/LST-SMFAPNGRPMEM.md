@@ -58,4 +58,4 @@ LST SMFAPNGRPMEM:GRPNAME="grp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFAPNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN和DNS关联的APN组的绑定关系（LST-SMFAPNGRPMEM）_88697034.md`

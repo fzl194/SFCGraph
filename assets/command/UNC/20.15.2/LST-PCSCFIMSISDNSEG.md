@@ -69,4 +69,4 @@ huawei1             IMSI                10             20             NULL      
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCSCFIMSISDNSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI和MSISDN号段（LST-PCSCFIMSISDNSEG）_09652579.md`

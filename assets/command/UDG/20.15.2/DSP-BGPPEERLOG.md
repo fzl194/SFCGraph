@@ -93,4 +93,4 @@ State         : Up
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-BGPPEERLOG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP对等体日志信息（DSP-BGPPEERLOG）_00840825.md`

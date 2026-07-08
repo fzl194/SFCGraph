@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/5GGUMINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/5GGUMINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询灰度升级所处于的阶段（LST-5GGUMINFO）_88343780.md`
+- 原始手册：`evidence/UDG/20.15.2/设置灰度升级所处于的阶段（SET-5GGUMINFO）_34181853.md`

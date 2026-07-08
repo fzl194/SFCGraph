@@ -64,4 +64,4 @@ DDN Throttling功能开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DDNTHROTTLING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN-Throttling功能（LST-DDNTHROTTLING）_04284711.md`

@@ -78,4 +78,4 @@ ADD WHITEURLLIST:WHITELISTNAME="test",URL="www.huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-WHITEURLLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加URL白名单（ADD-WHITEURLLIST）_82837393.md`

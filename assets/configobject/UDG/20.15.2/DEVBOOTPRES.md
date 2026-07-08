@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEVBOOTPRES.md`
+- 原始手册：`evidence/UDG/20.15.2/显示BOOTP服务器本地资源信息（DSP-DEVBOOTPRES）_59103739.md`

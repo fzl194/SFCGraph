@@ -65,4 +65,4 @@ RMV RESELAREAMEM: RESELAREACODE="ReSelZone", MCC="123", MNC="45", BGNTAC="120101
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RESELAREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF重选功能区域成员（RMV-RESELAREAMEM）_23623006.md`

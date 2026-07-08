@@ -64,4 +64,4 @@ RMV LARAGPMEM: LARAGPID=55, IDTYPE=LA, MCC="123", MNC="05", LAC="0x1234";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LARAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置区群组成员(RMV-LARAGPMEM)_26145484.md`

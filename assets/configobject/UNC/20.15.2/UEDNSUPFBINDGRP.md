@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UEDNSUPFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSUPFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSUPFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF和DNS关联的UPF组的绑定关系（RMV-UEDNSUPFBINDGRP）_96243031.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF和DNS关联的UPF组的绑定关系（ADD-UEDNSUPFBINDGRP）_73321230.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF和DNS关联的UPF组的绑定关系（LST-UEDNSUPFBINDGRP）_96242511.md`

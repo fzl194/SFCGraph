@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFGRTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGRTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF容灾定时器时长（LST-NRFGRTIMER）_09654171.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF容灾定时器时长（SET-NRFGRTIMER）_09652583.md`

@@ -58,4 +58,4 @@ RMV NGLANGROUP: DNN="huawei.com", SST=1,SD="010101", PDUSESSIONTYPE=Ethernet;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGLANGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-LAN群组（RMV-NGLANGROUP）_04284722.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGSGWPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSGWPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSGWPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSGWPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGW-C-Home-PLMN（MOD-NGSGWPLMN）_70462581.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-C-Home-PLMN（RMV-NGSGWPLMN）_23782818.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-C-Home-PLMN（ADD-NGSGWPLMN）_70382289.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-C-Home-PLMN（LST-NGSGWPLMN）_23782766.md`

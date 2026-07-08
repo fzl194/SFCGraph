@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NGM2MUSERNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G-M2M用户资源数（DSP-NGM2MUSERNUM）_78121270.md`

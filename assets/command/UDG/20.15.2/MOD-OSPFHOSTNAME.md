@@ -56,4 +56,4 @@ MOD OSPFHOSTNAME:PROCID=1, HOSTNAME="BLR1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-OSPFHOSTNAME.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF主机名配置（MOD-OSPFHOSTNAME）_49961930.md`

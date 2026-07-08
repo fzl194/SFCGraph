@@ -98,4 +98,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IMSIBINDUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户和UPF的绑定关系（ADD-IMSIBINDUP）_09654380.md`

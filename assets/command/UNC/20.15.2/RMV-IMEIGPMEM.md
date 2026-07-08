@@ -60,4 +60,4 @@ RMV IMEIGPMEM: IMEIGPID=1, IMEITAC="35437906";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMEIGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMEI群组成员(RMV-IMEIGPMEM)_26145760.md`

@@ -56,4 +56,4 @@ MOD APNPGWRNS: APN="HUAWEI.COM", PGWRNSSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNPGWRNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PGW重定向功能设置（MOD-APNPGWRNS）_50919533.md`

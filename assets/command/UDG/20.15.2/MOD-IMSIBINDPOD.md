@@ -58,4 +58,4 @@ MOD IMSIBINDPOD: IMSI="123456789", PODNAME="ssgpod-0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-IMSIBINDPOD.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IMSI和Pod的绑定关系（MOD-IMSIBINDPOD）_64015276.md`

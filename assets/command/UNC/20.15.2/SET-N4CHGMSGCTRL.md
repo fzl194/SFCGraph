@@ -67,4 +67,4 @@ CACHEFULLACT=CONTINUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N4CHGMSGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N4接口计费消息相关控制参数（SET-N4CHGMSGCTRL）_58680359.md`

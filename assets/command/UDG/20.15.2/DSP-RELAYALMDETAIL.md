@@ -80,4 +80,4 @@ relay-pod-0  7           CPU Overload Alarm  NULL            NULL               
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-RELAYALMDETAIL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示媒体中继告警详情（DSP-RELAYALMDETAIL）_06110386.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPAPNDIAMAAAG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPAPNDIAMAAAG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPAPNDIAMAAAG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPAPNDIAMAAAG.md`
+- 原始手册：`evidence/UDG/20.15.2/修改APN的Diameter-AAA服务器组（MOD-UPAPNDIAMAAAG）_45432718.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN的Diameter-AAA服务器组（RMV-UPAPNDIAMAAAG）_97080181.md`
+- 原始手册：`evidence/UDG/20.15.2/增加APN的Diameter-AAA服务器组（ADD-UPAPNDIAMAAAG）_45195206.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN的Diameter-AAA服务器组（LST-UPAPNDIAMAAAG）_97314585.md`

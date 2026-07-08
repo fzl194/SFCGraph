@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF功能实例信息（MOD-AMFFUNCTION）_09651475.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF功能实体配置（RMV-AMFFUNCTION）_09652619.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF功能实例信息（LST-AMFFUNCTION）_09652592.md`
+- 原始手册：`evidence/UNC/20.15.2/添加AMF功能实体配置（ADD-AMFFUNCTION）_09653631.md`

@@ -69,4 +69,4 @@ USN_SP_RU_0066    0         192.168.253.1   通信正常    UDP            4007
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CHGCG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CG状态(DSP-CHGCG)_72225057.md`

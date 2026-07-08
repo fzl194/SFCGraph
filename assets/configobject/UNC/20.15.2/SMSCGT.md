@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSCGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCGT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSC的GT（RMV-SMSCGT）_24657785.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSC的GT（ADD-SMSCGT）_74378480.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSC的GT（LST-SMSCGT）_74538064.md`

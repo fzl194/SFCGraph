@@ -68,4 +68,4 @@ SET GLBCFFUNC: CFSWITCHGLOBAL=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBCFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置内容过滤全局开关（SET-GLBCFFUNC）_54628145.md`

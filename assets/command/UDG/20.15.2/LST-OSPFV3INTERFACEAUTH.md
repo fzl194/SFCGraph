@@ -74,4 +74,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFV3INTERFACEAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3接口认证配置（LST-OSPFV3INTERFACEAUTH）_00866421.md`

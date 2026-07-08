@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCPPARAREQ.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPPARAREQ.md`
+- 原始手册：`evidence/UNC/20.15.2/查询向外部DHCPv4或者DHCPv6服务器发送的消息中的请求信元中的参数信息（LST-DHCPPARAREQ）_86824470.md`
+- 原始手册：`evidence/UNC/20.15.2/设置向外部DHCPv4或者DHCPv6服务器发送的消息中的请求信元中的参数信息（SET-DHCPPARAREQ）_32224051.md`

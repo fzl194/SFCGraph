@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBYQCI.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBYQCI.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBYQCI.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPBYQCI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于QCI的Non-GBR承载QoS限制配置(MOD-QOSCAPBYQCI)_72345821.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于QCI的Non-GBR承载QoS限制配置(RMV-QOSCAPBYQCI)_26146222.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于QCI的Non-GBR承载QoS限制配置(ADD-QOSCAPBYQCI)_26306032.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于QCI的Non-GBR承载QoS限制配置(LST-QOSCAPBYQCI)_72225901.md`

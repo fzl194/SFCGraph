@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PMCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/PMCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询性能统计配置参数(LST-PMCFG)_11353212.md`
+- 原始手册：`evidence/UNC/20.15.2/设置性能统计配置参数(SET-PMCFG)_11513104.md`

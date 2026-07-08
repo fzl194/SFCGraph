@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TRUNKQOSGLOBAL.md`
-- 原始手册：`evidence/UDG/20.15.2/TRUNKQOSGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询宽带集群QosGlobal配置（LST-TRUNKQOSGLOBAL）_68723525.md`
+- 原始手册：`evidence/UDG/20.15.2/设置宽带集群QosGlobal配置（SET-TRUNKQOSGLOBAL）_70282536.md`

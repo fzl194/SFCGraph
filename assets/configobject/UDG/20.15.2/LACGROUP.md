@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LACGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/LACGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/LACGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除指定的LAC组（RMV-LACGROUP）_06054836.md`
+- 原始手册：`evidence/UDG/20.15.2/查看指定LAC组或者已配置所有LAC组的配置信息（LST-LACGROUP）_06054837.md`
+- 原始手册：`evidence/UDG/20.15.2/添加一个新的LAC组（ADD-LACGROUP）_82837193.md`

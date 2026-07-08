@@ -31,4 +31,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G寻呼表（DSP-NGPAGING）_09651526.md`

@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SPECURRGRPLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECURRGRPLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECURRGRPLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除特殊URR组列表（RMV-SPECURRGRPLIST）_82837644.md`
+- 原始手册：`evidence/UDG/20.15.2/增加特殊URR组列表（ADD-SPECURRGRPLIST）_82837643.md`
+- 原始手册：`evidence/UDG/20.15.2/查询特殊URR组列表（LST-SPECURRGRPLIST）_82837645.md`

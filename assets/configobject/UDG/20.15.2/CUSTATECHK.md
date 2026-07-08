@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CUSTATECHK.md`
-- 原始手册：`evidence/UDG/20.15.2/CUSTATECHK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SMF和UPF时间一致性检测（LST-CUSTATECHK）_79440357.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SMF和UPF的时间一致性校验（SET-CUSTATECHK）_79440356.md`

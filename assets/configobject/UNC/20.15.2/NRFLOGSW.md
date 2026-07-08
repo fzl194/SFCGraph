@@ -30,5 +30,5 @@ DISCLOGSW开启且MAXRATE设置过大，将会导致日志打印频繁，引起C
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFLOGSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFLOGSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF维护日志打印开关（LST-NRFLOGSW）_96242312.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF维护日志打印开关（SET-NRFLOGSW）_96243172.md`

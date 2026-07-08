@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DRINST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾实例(LST-DRINST)_51012924.md`

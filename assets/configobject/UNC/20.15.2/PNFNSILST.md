@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFNSILST.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNSILST.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNSILST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF实例网络切片标识（RMV-PNFNSILST）_09653278.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF实例网络切片标识（ADD-PNFNSILST）_09651458.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF实例网络切片标识（LST-PNFNSILST）_09652554.md`

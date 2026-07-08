@@ -69,4 +69,4 @@ MOD HPLMN: MCC="460", MNC="00", SM=NO, SMS=NO, S5S8TYPE=GTP, PLMNN="noname";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-HPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地PLMN(MOD-HPLMN)_26305884.md`

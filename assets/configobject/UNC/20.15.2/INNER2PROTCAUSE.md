@@ -36,6 +36,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INNER2PROTCAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/INNER2PROTCAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/INNER2PROTCAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除内部原因值映射为协议原因值的配置（RMV-INNER2PROTCAUSE）_44106693.md`
+- 原始手册：`evidence/UNC/20.15.2/增加内部原因值映射为协议原因值的配置（ADD-INNER2PROTCAUSE）_44226317.md`
+- 原始手册：`evidence/UNC/20.15.2/查询内部原因值映射为协议原因值的配置（LST-INNER2PROTCAUSE）_93747100.md`

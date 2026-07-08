@@ -55,4 +55,4 @@ RMV MULTREDIRECTEX:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MULTREDIRECTEX.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展的多级重定向密码（RMV-MULTREDIRECTEX）_27370105.md`

@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REDUNDUSER.md`
-- 原始手册：`evidence/UDG/20.15.2/REDUNDUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询静态地址用户路由冗余功能（LST-REDUNDUSER）_71074368.md`
+- 原始手册：`evidence/UDG/20.15.2/配置静态地址用户路由冗余功能（SET-REDUNDUSER）_71074367.md`

@@ -59,4 +59,4 @@ RMV PDUTRIGGER: CCTMPLTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PDU会话级的trigger参数（RMV-PDUTRIGGER）_09653028.md`

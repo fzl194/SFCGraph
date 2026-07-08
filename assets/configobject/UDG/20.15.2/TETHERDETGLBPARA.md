@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TETHERDETGLBPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/TETHERDETGLBPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/TETHERDETGLBPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复Tethering用户终端数量检测全局配置（RTR-TETHERDETGLBPARA）_82837445.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Tethering用户终端数量检测全局配置（LST-TETHERDETGLBPARA）_82837446.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Tethering用户终端数量检测全局配置（SET-TETHERDETGLBPARA）_82837444.md`

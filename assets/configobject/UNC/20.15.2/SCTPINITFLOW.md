@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPINITFLOW.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPINITFLOW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP接入流控(LST-SCTPINITFLOW)_86708204.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SCTP接入流控(SET-SCTPINITFLOW)_31987907.md`

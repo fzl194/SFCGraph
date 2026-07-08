@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DDNCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/DDNCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DDN控制策略（LST-DDNCTRL）_86527101.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DDN报文策略（SET-DDNCTRL）_82837183.md`

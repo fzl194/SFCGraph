@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PROCCHANNALEVENT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询逻辑链路事件（DSP-PROCCHANNALEVENT）_59103397.md`

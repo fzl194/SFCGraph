@@ -55,4 +55,4 @@ RMV AUTOSCALINGSRBFD:SERVICENAME="abc";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AUTOSCALINGSRBFD.md`
+- 原始手册：`evidence/UNC/20.15.2/删除静态路由的动态BFD自动化配置模板（RMV-AUTOSCALINGSRBFD）_49801674.md`

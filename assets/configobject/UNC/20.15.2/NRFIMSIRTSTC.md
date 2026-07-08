@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFIMSIRTSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IMSI路由统计信息（DSP-NRFIMSIRTSTC）_45684491.md`

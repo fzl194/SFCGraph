@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ICAPSVRGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSVRGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSVRGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSVRGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改ICAP服务器组（MOD-ICAPSVRGRP）_28751564.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ICAP服务器组（RMV-ICAPSVRGRP）_32582493.md`
+- 原始手册：`evidence/UDG/20.15.2/增加ICAP服务器组（ADD-ICAPSVRGRP）_28984182.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICAP服务器组（LST-ICAPSVRGRP）_32059915.md`

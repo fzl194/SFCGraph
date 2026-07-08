@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNNCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN兼容性控制参数（LST-DNNCMPT）_96242127.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DNN兼容性控制参数（SET-DNNCMPT）_96243110.md`

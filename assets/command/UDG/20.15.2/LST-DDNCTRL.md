@@ -67,4 +67,4 @@ DDN控制策略
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DDNCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DDN控制策略（LST-DDNCTRL）_86527101.md`

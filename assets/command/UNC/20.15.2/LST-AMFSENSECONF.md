@@ -62,4 +62,4 @@ SFC基站感知能力核查消息发送周期(min) =  5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFSENSECONF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF感知配置（LST-AMFSENSECONF）_13939873.md`

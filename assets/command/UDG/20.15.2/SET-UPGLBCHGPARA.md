@@ -82,4 +82,4 @@ SET UPGLBCHGPARA: QUOTAAPPACTTYPE=DROP;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPGLBCHGPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局计费参数（SET-UPGLBCHGPARA）_82837617.md`

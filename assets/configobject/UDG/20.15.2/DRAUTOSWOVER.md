@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRAUTOSWOVER.md`
-- 原始手册：`evidence/UDG/20.15.2/DRAUTOSWOVER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询热备模式下是否开启自动倒换功能（LST-DRAUTOSWOVER）_80076380.md`
+- 原始手册：`evidence/UDG/20.15.2/设置在热备容灾模式下是否开启自动倒换功能（SET-DRAUTOSWOVER）_28275349.md`

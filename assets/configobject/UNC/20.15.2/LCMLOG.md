@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCMLOG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元生命周期管理日志（LST-LCMLOG）_46924661.md`

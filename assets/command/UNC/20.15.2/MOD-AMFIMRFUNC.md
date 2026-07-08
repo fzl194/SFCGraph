@@ -56,4 +56,4 @@ MOD AMFIMRFUNC:SUBRANGE=ALL_USER,INTERFACETYPE=NAS-0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-AMFIMRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户消息统计功能配置（MOD-AMFIMRFUNC）_44007302.md`

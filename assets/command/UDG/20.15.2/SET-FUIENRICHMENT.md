@@ -81,4 +81,4 @@ SET FUIENRICHMENT:APPENDINFONAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FUIENRICHMENT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FUI增强参数（SET-FUIENRICHMENT）_82837534.md`

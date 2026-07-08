@@ -56,4 +56,4 @@ RTR SECCARSTAT:SECPOLICYTYPE=Protocol,SECPOLICYTYPEID=74;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-SECCARSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/清除承诺访问速率具体信息（RTR-SECCARSTAT）_50280698.md`

@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSRLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSRLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSRLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSRLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSRLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGS服务端链路-(MOD-SGSRLNK)_50587490.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGS服务端链路-(RMV-SGSRLNK)_50746762.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGS服务端链路-(ADD-SGSRLNK)_97266997.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SGS服务端链路(DSP-SGSRLNK)_14563449.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGS服务端链路-(LST-SGSRLNK)_97187029.md`

@@ -65,4 +65,4 @@ MOD DMLNK: LINKIDX=0, LINKSIDX=1, SCTPINDX=1, CROSSIPFLAG=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DMLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路配置(MOD-DMLNK)_72345875.md`

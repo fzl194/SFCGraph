@@ -65,4 +65,4 @@ MSC信令点索引     网络指示语  本局信令点编码   本局MSC号    
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MSCOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSC信令点(LST-MSCOPC)_78074604.md`

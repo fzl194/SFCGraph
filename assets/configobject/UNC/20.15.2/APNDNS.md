@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNDNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNDNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNDNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN-DNS域名策略(MOD-APNDNS)_26305742.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN-DNS域名策略(RMV-APNDNS)_72225611.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN-DNS域名策略(ADD-APNDNS)_26145932.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-DNS域名策略(LST-APNDNS)_72345533.md`

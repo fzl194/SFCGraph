@@ -65,4 +65,4 @@ SET STATICIPINLCKUP: ESTLOCKUPF=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-STATICIPINLCKUP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置静态地址段在锁定UPF的用户处理（SET-STATICIPINLCKUP）_49962081.md`

@@ -73,4 +73,4 @@ No.     MSISDN        SpecialRG(KB)    Total(KB)      Ratio(%)     Af-DB-Stats  
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-AFUSRDETECTST.md`
+- 原始手册：`evidence/UDG/20.15.2/显示欺诈用户检测结果（DSP-AFUSRDETECTST）_16216978.md`

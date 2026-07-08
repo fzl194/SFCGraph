@@ -73,4 +73,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SDRPLYSUBINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示所有策略订阅者信息（DSP-SDRPLYSUBINFO）_71652974.md`

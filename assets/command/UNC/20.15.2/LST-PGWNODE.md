@@ -72,4 +72,4 @@ P-GW Nodename后缀  =  GW01.CITY-B.PROVINCE-A.NODE.EPC.MNC000.MCC460.3GPPNETWOR
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PGWNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-GW局向(LST-PGWNODE)_72345305.md`

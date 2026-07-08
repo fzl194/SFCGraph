@@ -73,4 +73,4 @@ ADD NRF: NRFINSTANCENAME="NRF_Instance_0", TLS=TRUE,PRIORITY=0,CAPACITY=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF信息（ADD-NRF）_09652106.md`

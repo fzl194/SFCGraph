@@ -38,5 +38,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPSRVLBSW.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPSRVLBSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP服务端负载重均衡功能（LST-HTTPSRVLBSW）_29053331.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP服务端负载重均衡功能（SET-HTTPSRVLBSW）_29291779.md`

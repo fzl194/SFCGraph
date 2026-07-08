@@ -52,4 +52,4 @@ SET NCCPOLICY: POLICYITEM=MemOptFlag, POLICYVALUE=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NCCPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NCC策略(SET-NCCPOLICY)_69678032.md`

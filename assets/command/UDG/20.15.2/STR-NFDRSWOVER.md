@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/STR-NFDRSWOVER.md`
+- 原始手册：`evidence/UDG/20.15.2/启动人工倒回命令（STR-NFDRSWOVER）_66924856.md`

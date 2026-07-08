@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGSMARTDNNCL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSMARTDNNCL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能分流功能（LST-NGSMARTDNNCL）_40039917.md`
+- 原始手册：`evidence/UNC/20.15.2/设置智能分流功能（SET-NGSMARTDNNCL）_40039925.md`

@@ -59,4 +59,4 @@ ADD HOSTSTCIF: IFNAME="GigabitEthernet0/0/1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-HOSTSTCIF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口协议报文统计配置（ADD-HOSTSTCIF）_49961322.md`

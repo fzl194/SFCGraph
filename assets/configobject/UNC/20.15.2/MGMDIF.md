@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MGMDIF.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDIF.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDIF.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDIF.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDIF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IGMP接口配置（MOD-MGMDIF）_50281594.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IGMP接口配置（RMV-MGMDIF）_50280818.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IGMP接口信息（DSP-MGMDIF）_49961566.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IGMP接口配置（LST-MGMDIF）_49961098.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IGMP接口配置（ADD-MGMDIF）_00866393.md`

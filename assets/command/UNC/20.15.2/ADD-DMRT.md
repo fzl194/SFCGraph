@@ -72,4 +72,4 @@ ADD DMRT: ROUTEIDX=1, RSELMODE=SELMODE_ROUND_ROBIN, REALMNAME="example.com", PEE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DMRT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter域路由配置(ADD-DMRT)_26306100.md`

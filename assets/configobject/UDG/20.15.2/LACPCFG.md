@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LACPCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询LACP配置（LST-LACPCFG）_51971891.md`

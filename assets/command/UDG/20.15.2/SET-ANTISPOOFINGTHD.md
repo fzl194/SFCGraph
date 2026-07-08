@@ -63,4 +63,4 @@ SET ANTISPOOFINGTHD: THRESHOLD=5000;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-ANTISPOOFINGTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置攻击用户去活报文的阈值（SET-ANTISPOOFINGTHD）_16615232.md`

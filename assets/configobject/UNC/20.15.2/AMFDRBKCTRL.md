@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFDRBKCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF热备容灾控制参数（MOD-AMFDRBKCTRL）_93568658.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF热备容灾的控制参数（RMV-AMFDRBKCTRL）_61467250.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF热备容灾控制参数（ADD-AMFDRBKCTRL）_09027349.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF热备容灾的控制参数（LST-AMFDRBKCTRL）_61307350.md`

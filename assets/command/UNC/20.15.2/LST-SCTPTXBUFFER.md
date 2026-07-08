@@ -71,4 +71,4 @@ LST SCTPTXBUFFER: MODE=SHARE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCTPTXBUFFER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP发送缓冲区参数(LST-SCTPTXBUFFER)_81448868.md`

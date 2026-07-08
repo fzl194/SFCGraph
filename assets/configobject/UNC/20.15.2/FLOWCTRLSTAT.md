@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FLOWCTRLSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示流控统计信息(DSP-FLOWCTRLSTAT)_26145868.md`

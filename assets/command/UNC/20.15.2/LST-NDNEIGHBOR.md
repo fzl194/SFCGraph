@@ -67,4 +67,4 @@ LST NDNEIGHBOR:IFNAME="Ethernet65/0/8";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NDNEIGHBOR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态ND邻居表项（LST-NDNEIGHBOR）_50281138.md`

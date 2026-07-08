@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REGNFSUBINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/REGNFSUBINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除订阅信息（DEL-REGNFSUBINFO）_09652587.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NF订阅信息（DSP-REGNFSUBINFO）_09653819.md`

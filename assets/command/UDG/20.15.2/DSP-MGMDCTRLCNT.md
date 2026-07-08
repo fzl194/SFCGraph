@@ -125,4 +125,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MGMDCTRLCNT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP报文统计计数（DSP-MGMDCTRLCNT）_50120810.md`

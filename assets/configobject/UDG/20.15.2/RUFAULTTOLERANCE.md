@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RUFAULTTOLERANCE.md`
-- 原始手册：`evidence/UDG/20.15.2/RUFAULTTOLERANCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询资源单元故障容忍时间（LST-RUFAULTTOLERANCE）_35925560.md`
+- 原始手册：`evidence/UDG/20.15.2/设置资源单元故障容忍时间（SET-RUFAULTTOLERANCE）_20857597.md`

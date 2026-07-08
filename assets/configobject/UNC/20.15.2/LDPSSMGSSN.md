@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LDPSSMGSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LDP的会话信息（DSP-LDPSSMGSSN）_49802646.md`

@@ -65,4 +65,4 @@ ADD GBNSEGRP: GRPINDEX=0, NSEIBGN=1, NSEIEND=3, PARAINDEX=1, DESC="DEFAULT";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GBNSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSE和属性模板的关联(ADD-GBNSEGRP)_72345601.md`

@@ -78,4 +78,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MGMDSTATICGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP静态组配置（LST-MGMDSTATICGROUP）_49961718.md`

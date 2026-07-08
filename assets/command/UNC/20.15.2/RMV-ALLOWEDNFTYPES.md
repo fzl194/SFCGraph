@@ -62,4 +62,4 @@ RMV ALLOWEDNFTYPES: OBJNAME="objname001", ALLOWEDNFTYPE=NRF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWEDNFTYPES.md`
+- 原始手册：`evidence/UNC/20.15.2/删除允许访问的NF类型（RMV-ALLOWEDNFTYPES）_09653196.md`

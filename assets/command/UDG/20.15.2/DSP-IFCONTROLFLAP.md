@@ -67,4 +67,4 @@ Ethernet64/0/4    1000            0.100         抑制
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-IFCONTROLFLAP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示接口震荡抑制动态信息（DSP-IFCONTROLFLAP）_50281650.md`

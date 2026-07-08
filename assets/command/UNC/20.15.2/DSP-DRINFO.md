@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DRINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾信息(DSP-DRINFO)_51012929.md`

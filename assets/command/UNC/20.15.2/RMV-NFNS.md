@@ -68,4 +68,4 @@ RMV NFNS: NFTYPE=NfSMF, NSIDX=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF支持的网络切片（RMV-NFNS）_09651334.md`

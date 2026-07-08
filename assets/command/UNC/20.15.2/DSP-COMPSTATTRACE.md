@@ -102,4 +102,4 @@ Jun  5 2017 20:55:27.769+02:00 DST    SEMAGT: Receive backupready from app.
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-COMPSTATTRACE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示当前组件的状态记录信息（DSP-COMPSTATTRACE）_59104024.md`

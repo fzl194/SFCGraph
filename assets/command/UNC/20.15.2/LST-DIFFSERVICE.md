@@ -73,4 +73,4 @@ PDP数负荷恢复门限(%)  =  10
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DIFFSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询差异化服务接入门限(LST-DIFFSERVICE)_72345271.md`

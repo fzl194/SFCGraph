@@ -60,4 +60,4 @@ RMV UPFPERFRANGE: MEID=0, MOC="APN", MOIRANGE=SPECIFIC, MOIID="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPFPERFRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UPF上报性能指标范围配置（RMV-UPFPERFRANGE）_01838836.md`

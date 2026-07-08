@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOG.md`
+- 原始手册：`evidence/UNC/20.15.2/收集日志信息（COL-LOG）_35481180.md`

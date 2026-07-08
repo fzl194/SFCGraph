@@ -67,4 +67,4 @@ ADD PCFSSCOPEBIND: BINDNAME="towna", SSCOPEID="citya", BINDTYPE=USRTAIRANGE, USR
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PCFSSCOPEBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCF业务服务区的绑定关系（ADD-PCFSSCOPEBIND）_88537090.md`

@@ -70,4 +70,4 @@ vrf1        IPV4        10.2.2.3    Ethernet66/0/4      TRUE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-BGPMULTIPEERAF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP多源对等体地址族（LST-BGPMULTIPEERAF）_50121790.md`

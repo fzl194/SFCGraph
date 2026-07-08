@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OCSGRPBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/OCSGRPBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/OCSGRPBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/OCSGRPBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OCS组绑定关系（MOD-OCSGRPBINDING）_09896976.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OCS组绑定关系（RMV-OCSGRPBINDING）_09896977.md`
+- 原始手册：`evidence/UNC/20.15.2/增加OCS组绑定关系（ADD-OCSGRPBINDING）_09896975.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OCS组绑定关系（LST-OCSGRPBINDING）_09896978.md`

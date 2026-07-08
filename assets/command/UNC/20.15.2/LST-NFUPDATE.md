@@ -69,4 +69,4 @@ Patch更新缓存定时器时长(分钟)  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFUPDATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF更新方式（LST-NFUPDATE）_09653014.md`

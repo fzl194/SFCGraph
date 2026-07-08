@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NF实例概述信息（MOD-NFPROFILE）_09652236.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF实例概述信息（RMV-NFPROFILE）_09651742.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF实例概述信息（ADD-NFPROFILE）_09654146.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF实例概述信息（LST-NFPROFILE）_09651589.md`

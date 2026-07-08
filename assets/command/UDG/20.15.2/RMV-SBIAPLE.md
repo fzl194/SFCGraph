@@ -56,4 +56,4 @@ RMV SBIAPLE: INDEX=2;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SBIAPLE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除服务化接口本端实体（RMV-SBIAPLE）_84132108.md`

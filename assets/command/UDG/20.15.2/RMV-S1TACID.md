@@ -57,4 +57,4 @@ RMV S1TACID:TACGROUPNAME="beijing",TACSECNUM=2;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-S1TACID.md`
+- 原始手册：`evidence/UDG/20.15.2/从S1TAC组内删除一个S1TAC（RMV-S1TACID）_97358678.md`

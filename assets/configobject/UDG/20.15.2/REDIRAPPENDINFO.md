@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REDIRAPPENDINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/REDIRAPPENDINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/REDIRAPPENDINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/REDIRAPPENDINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改重定向携带信息（MOD-REDIRAPPENDINFO）_82837562.md`
+- 原始手册：`evidence/UDG/20.15.2/删除重定向携带信息（RMV-REDIRAPPENDINFO）_86528788.md`
+- 原始手册：`evidence/UDG/20.15.2/增加重定向携带信息（ADD-REDIRAPPENDINFO）_82837561.md`
+- 原始手册：`evidence/UDG/20.15.2/查询重定向携带信息（LST-REDIRAPPENDINFO）_86528789.md`

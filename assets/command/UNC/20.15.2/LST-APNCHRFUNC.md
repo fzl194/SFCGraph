@@ -67,4 +67,4 @@ APN CHR上报开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNCHRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-CHR功能配置（LST-APNCHRFUNC）_36148215.md`

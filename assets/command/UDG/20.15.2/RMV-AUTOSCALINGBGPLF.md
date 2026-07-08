@@ -53,4 +53,4 @@ RMV AUTOSCALINGBGPLF:POLICYNAME="bgppolicy",SERVICENAME="s1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-AUTOSCALINGBGPLF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP入不转板自动化配置模板（RMV-AUTOSCALINGBGPLF）_00601265.md`

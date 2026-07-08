@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ICAPSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改ICAP服务器（MOD-ICAPSERVER）_28511768.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ICAP服务器（RMV-ICAPSERVER）_29222370.md`
+- 原始手册：`evidence/UDG/20.15.2/增加ICAP服务器（ADD-ICAPSERVER）_28751562.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICAP服务器（LST-ICAPSERVER）_32421517.md`

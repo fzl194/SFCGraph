@@ -59,4 +59,4 @@ LST NGBINDDFSRPAIR:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGBINDDFSRPAIR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN实例绑定双发选收结对配置（LST-NGBINDDFSRPAIR）_26514783.md`

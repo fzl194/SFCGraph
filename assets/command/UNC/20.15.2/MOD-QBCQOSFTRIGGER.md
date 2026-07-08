@@ -61,4 +61,4 @@ MOD QBCQOSFTRIGGER: CCTMPLTNAME="test", QOSCHG=DEFERRED;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-QBCQOSFTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QBC计费QoS-Flow级的trigger参数（MOD-QBCQOSFTRIGGER）_09652685.md`

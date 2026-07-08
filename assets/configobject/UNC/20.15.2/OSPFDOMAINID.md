@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFDOMAINID.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFDOMAINID.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFDOMAINID.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPF域标识配置（ADD-OSPFDOMAINID）_00440729.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF域标识配置（RMV-OSPFDOMAINID）_00865837.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF域标识配置（LST-OSPFDOMAINID）_00866173.md`

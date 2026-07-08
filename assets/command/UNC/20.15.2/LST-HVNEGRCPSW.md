@@ -60,4 +60,4 @@ H-SMF漫游参数协商开关 =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HVNEGRCPSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游参数协商开关（LST-HVNEGRCPSW）_23782754.md`

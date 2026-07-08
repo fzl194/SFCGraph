@@ -64,4 +64,4 @@ SET GWPROXYFUNC:PROXYSW=ENABLE,RECOVERY=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GWPROXYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网关Proxy功能（SET-GWPROXYFUNC）_42853270.md`

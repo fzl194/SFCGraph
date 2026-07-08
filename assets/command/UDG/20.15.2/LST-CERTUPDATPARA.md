@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CERTUPDATPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询证书更新流程参数（LST-CERTUPDATPARA）_10285105.md`

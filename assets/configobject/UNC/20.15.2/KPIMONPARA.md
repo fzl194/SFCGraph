@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/KPIMONPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/KPIMONPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询KPI监控参数(LST-KPIMONPARA)_26146200.md`
+- 原始手册：`evidence/UNC/20.15.2/设置KPI监控参数(SET-KPIMONPARA)_72345799.md`

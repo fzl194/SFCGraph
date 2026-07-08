@@ -59,4 +59,4 @@ RMV APNNICHARACT: APNNI="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNNICHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI属性配置信息(RMV-APNNICHARACT)_26145670.md`

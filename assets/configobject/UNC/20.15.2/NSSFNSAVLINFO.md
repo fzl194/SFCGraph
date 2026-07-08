@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFNSAVLINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFNSAVLINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除切片可用性信息（DEL-NSSFNSAVLINFO）_96241943.md`
+- 原始手册：`evidence/UNC/20.15.2/显示切片可用性信息概要信息（DSP-NSSFNSAVLINFO）_96241982.md`

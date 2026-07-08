@@ -60,4 +60,4 @@ ADD LLCXID: SAPI=SAPI3, N201U=1520, T200=40;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LLCXID.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LLC协商参数(ADD-LLCXID)_72345615.md`

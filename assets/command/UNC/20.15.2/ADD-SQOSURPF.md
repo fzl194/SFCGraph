@@ -60,4 +60,4 @@ ADD SQOSURPF:BEHAVIORNAME="b1",URPFTYPE=strict,URPFDEFAULT=disallow;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SQOSURPF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加流行为安全URPF（ADD-SQOSURPF）_50280766.md`

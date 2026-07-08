@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTYPEFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTYPEFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTYPEFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTYPEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于NFType设置NRF的各类功能开关（MOD-NRFNFTYPEFUNC）_83319174.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于NFType设置NRF的各类功能开关（RMV-NRFNFTYPEFUNC）_29158013.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于NFType设置NRF的各类功能开关（ADD-NRFNFTYPEFUNC）_83319170.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于NFType设置NRF的各类功能开关（LST-NRFNFTYPEFUNC）_29158009.md`

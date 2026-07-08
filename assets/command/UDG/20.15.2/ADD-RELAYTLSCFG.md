@@ -61,4 +61,4 @@ ADD RELAYTLSCFG: TLSCONFIGNAME="douyintlscfg", UETLSPLYNAME="ue_douyinply";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RELAYTLSCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继业务TLS认证配置（ADD-RELAYTLSCFG）_94632039.md`

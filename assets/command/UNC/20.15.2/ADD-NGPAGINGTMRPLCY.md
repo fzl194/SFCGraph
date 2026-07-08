@@ -68,4 +68,4 @@ ADD NGPAGINGTMRPLCY: PLCYIDX=1,DNN="huawei.com",T3513=5,N3513=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGPAGINGTMRPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G寻呼定时器策略配置（ADD-NGPAGINGTMRPLCY）_09652229.md`

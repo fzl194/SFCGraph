@@ -60,4 +60,4 @@ RMV ALLOWEDNFNS: INDEX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWEDNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF或NF服务支持的切片（RMV-ALLOWEDNFNS）_09654194.md`

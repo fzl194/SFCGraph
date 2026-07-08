@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFDNAI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFDNAI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFDNAI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的DNAI信息（MOD-PNFDNAI）_09653103.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的DNAI信息（RMV-PNFDNAI）_09652252.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的DNAI信息（ADD-PNFDNAI）_09652965.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的DNAI信息（LST-PNFDNAI）_09654447.md`

@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLOBALL2TP.md`
-- 原始手册：`evidence/UDG/20.15.2/GLOBALL2TP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询L2TP配置（LST-GLOBALL2TP）_35373522.md`
+- 原始手册：`evidence/UDG/20.15.2/设置L2TP配置（SET-GLOBALL2TP）_35373521.md`

@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBINRFKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/SBINRFKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/SBINRFKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF密钥（RMV-SBINRFKEY）_83653666.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF密钥（ADD-SBINRFKEY）_83972182.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF密钥（LST-SBINRFKEY）_29053333.md`

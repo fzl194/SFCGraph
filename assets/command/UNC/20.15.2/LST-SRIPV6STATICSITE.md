@@ -67,4 +67,4 @@ BFD最小传输间隔（ms） =  200
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SRIPV6STATICSITE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6静态路由全局属性（LST-SRIPV6STATICSITE）_50121278.md`

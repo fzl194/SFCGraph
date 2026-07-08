@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/URRFAILACTION.md`
-- 原始手册：`evidence/UDG/20.15.2/URRFAILACTION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示计费URR上报失败动作参数（LST-URRFAILACTION）_42746596.md`
+- 原始手册：`evidence/UDG/20.15.2/设置URR上报失败后的动作处理参数（SET-URRFAILACTION）_42746595.md`

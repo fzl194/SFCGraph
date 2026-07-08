@@ -102,4 +102,4 @@ MOD PNFWILDCARD: NFTYPE=NfSMSF, DNNSWITCH=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFWILDCARD.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的通配策略（MOD-PNFWILDCARD）_35374745.md`

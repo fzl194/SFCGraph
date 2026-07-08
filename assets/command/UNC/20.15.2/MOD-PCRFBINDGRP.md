@@ -59,4 +59,4 @@ MOD PCRFBINDGRP:PCRFGRPNAME="abc",PCRFHOSTNAME="aaa",WEIGHT=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PCRFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCRF与PCRF-Group的关联关系（MOD-PCRFBINDGRP）_09897097.md`

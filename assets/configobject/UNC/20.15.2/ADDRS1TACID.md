@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADDRS1TACID.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRS1TACID.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRS1TACID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1TAC组内S1TAC号段（RMV-ADDRS1TACID）_49644928.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1TAC组内S1TAC号段（ADD-ADDRS1TACID）_49644909.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1TAC组内S1TAC号段（LST-ADDRS1TACID）_49644915.md`

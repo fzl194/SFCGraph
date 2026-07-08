@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPSELECTPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/UPSELECTPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF选择策略次序（LST-UPSELECTPRI）_09652669.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UPF选择策略次序（SET-UPSELECTPRI）_09652604.md`

@@ -71,4 +71,4 @@ x86_64    v5                                         25             1000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SESSLBCAPABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询会话均衡基线能力值（LST-SESSLBCAPABILITY）_27633936.md`

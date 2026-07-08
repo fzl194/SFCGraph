@@ -58,4 +58,4 @@ RMV APNCHRFUNC: APN="HUAWEI.COM"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNCHRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN-CHR功能配置（RMV-APNCHRFUNC）_88902438.md`

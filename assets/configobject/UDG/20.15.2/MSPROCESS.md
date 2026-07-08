@@ -35,6 +35,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSPROCESS.md`
-- 原始手册：`evidence/UDG/20.15.2/MSPROCESS.md`
-- 原始手册：`evidence/UDG/20.15.2/MSPROCESS.md`
+- 原始手册：`evidence/UDG/20.15.2/复位微服务进程（RST-MSPROCESS）_09587898.md`
+- 原始手册：`evidence/UDG/20.15.2/显示微服务进程信息（DSP-MSPROCESS）_09587887.md`
+- 原始手册：`evidence/UDG/20.15.2/清除进程（CLR-MSPROCESS）_00520125.md`

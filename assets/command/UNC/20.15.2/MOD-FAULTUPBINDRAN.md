@@ -63,4 +63,4 @@ MOD FAULTUPBINDRAN: RANGRPNAME="group1", UPFGRPNAME="group3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-FAULTUPBINDRAN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N3接口故障网元组绑定（MOD-FAULTUPBINDRAN）_39777021.md`

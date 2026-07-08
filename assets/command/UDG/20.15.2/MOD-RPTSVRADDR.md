@@ -63,4 +63,4 @@ MOD RPTSVRADDR: ACCESSNAME="access01", RPTSVRNAME="report01", IPTYPE=IPV4, IPV4_
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-RPTSVRADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改报表服务器接入点配置（MOD-RPTSVRADDR）_93531889.md`

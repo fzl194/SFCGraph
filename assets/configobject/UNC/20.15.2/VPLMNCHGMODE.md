@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VPLMNCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/VPLMNCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/VPLMNCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/VPLMNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于VPLMN配置的漫游用户归属地计费模式（MOD-VPLMNCHGMODE）_26686921.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于VPLMN配置的漫游用户归属地计费模式（RMV-VPLMNCHGMODE）_81088704.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于VPLMN配置的漫游用户归属地计费模式（ADD-VPLMNCHGMODE）_81407234.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于VPLMN配置的漫游用户归属地计费模式（LST-VPLMNCHGMODE）_26568361.md`

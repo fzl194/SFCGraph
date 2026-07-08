@@ -58,4 +58,4 @@ RMV EPSQOSACTION:QOSPROFILENAME="test",QCI=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EPSQOSACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EPS-QoS控制动作配置（RMV-EPSQOSACTION）_09652277.md`

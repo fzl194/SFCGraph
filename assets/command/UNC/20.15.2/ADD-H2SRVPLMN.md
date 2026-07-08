@@ -69,4 +69,4 @@ ADD H2SRVPLMN: HMCC="123", HMNC="68", SRVPLMNIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-H2SRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Home-PLMN到Serving-PLMN的对应关系（ADD-H2SRVPLMN）_94923873.md`

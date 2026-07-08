@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSCHARS.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCHARS.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCHARS.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCHARS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QoS特征（MOD-QOSCHARS）_71516445.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS特征（RMV-QOSCHARS）_24796836.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QoS特征（ADD-QOSCHARS）_24796806.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Qos特征（LST-QOSCHARS）_24796824.md`

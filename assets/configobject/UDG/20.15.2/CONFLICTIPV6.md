@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CONFLICTIPV6.md`
-- 原始手册：`evidence/UDG/20.15.2/CONFLICTIPV6.md`
-- 原始手册：`evidence/UDG/20.15.2/CONFLICTIPV6.md`
+- 原始手册：`evidence/UDG/20.15.2/删除本地地址池中冲突IPv6地址（RMV-CONFLICTIPV6）_93753135.md`
+- 原始手册：`evidence/UDG/20.15.2/查询本地地址池中冲突IPv6地址（LST-CONFLICTIPV6）_94212259.md`
+- 原始手册：`evidence/UDG/20.15.2/添加本地地址池中冲突IPv6地址（ADD-CONFLICTIPV6）_93531877.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPV6PARA.md`
-- 原始手册：`evidence/UDG/20.15.2/IPV6PARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6参数(LST-IPV6PARA)_29626975.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv6参数(SET-IPV6PARA)_29626974.md`

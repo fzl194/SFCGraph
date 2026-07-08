@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CACHEMBLACKBOX.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CACHEM黑匣子诊断信息（DSP-CACHEMBLACKBOX）_00440469.md`

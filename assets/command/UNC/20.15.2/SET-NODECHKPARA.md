@@ -141,4 +141,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NODECHKPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置节点检测参数（SET-NODECHKPARA）_95265008.md`

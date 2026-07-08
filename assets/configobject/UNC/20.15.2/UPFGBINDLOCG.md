@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFGBINDLOCG.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFGBINDLOCG.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFGBINDLOCG.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFGBINDLOCG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF组与Diameter本端主机组的关联关系（MOD-UPFGBINDLOCG）_17057501.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF组与Diameter本端主机组的关联关系（RMV-UPFGBINDLOCG）_29420952.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF组与Diameter本端主机组的关联关系（ADD-UPFGBINDLOCG）_29660172.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF组与Diameter本端主机组的关联关系（LST-UPFGBINDLOCG）_16858415.md`

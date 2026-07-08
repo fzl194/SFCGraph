@@ -60,4 +60,4 @@ MOD SGSMME: MMEX=1, MMEM="460008000101", POOLGRPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SGSMME.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGS-MME实体(MOD-SGSMME)_46963120.md`

@@ -60,4 +60,4 @@ ACT SMARTFCDURA: INFTYPE=GI_AUTH, DURATION=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACT-SMARTFCDURA.md`
+- 原始手册：`evidence/UNC/20.15.2/激活智能流控开始特定时长（ACT-SMARTFCDURA）_55845119.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ECHOIPLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/ECHOIPLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/ECHOIPLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除GTP路径管理IP地址（RMV-ECHOIPLIST）_82837220.md`
+- 原始手册：`evidence/UDG/20.15.2/查询GTP路径管理IP地址（LST-ECHOIPLIST）_82837221.md`
+- 原始手册：`evidence/UDG/20.15.2/配置GTP路径管理IP地址（ADD-ECHOIPLIST）_82837219.md`

@@ -63,4 +63,4 @@ ADD SAMUTEPROTOCOL:PROTOCOLNAME="socks5";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SAMUTEPROTOCOL.md`
+- 原始手册：`evidence/UDG/20.15.2/增加SA-EGN规则不启用协议（ADD-SAMUTEPROTOCOL）_69212198.md`

@@ -67,4 +67,4 @@ CSLB_VNFC扩展包生效状态  =  生效
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PLGPKGSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示扩展包运行状态(DSP-PLGPKGSTATE)_72345959.md`

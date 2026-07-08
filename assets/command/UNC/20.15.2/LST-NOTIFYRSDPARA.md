@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NOTIFYRSDPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询状态通知失败重传参数（LST-NOTIFYRSDPARA）_25121190.md`

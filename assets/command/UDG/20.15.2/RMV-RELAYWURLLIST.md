@@ -58,4 +58,4 @@ RMV RELAYWURLLIST: RELAYURLLISTNM="list01";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RELAYWURLLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继白名单URL列表（RMV-RELAYWURLLIST）_94632063.md`

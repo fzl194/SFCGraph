@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DCNMEMBER.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNMEMBER.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNMEMBER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCN成员(RMV-DCNMEMBER)_72345431.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DCN成员(ADD-DCNMEMBER)_26305640.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN成员(LST-DCNMEMBER)_26145832.md`

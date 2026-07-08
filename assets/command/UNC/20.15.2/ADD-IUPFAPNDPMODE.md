@@ -72,4 +72,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IUPFAPNDPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加I-UPF在特定园区专用APN下的部署模式配置（ADD-IUPFAPNDPMODE）_76930386.md`

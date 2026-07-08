@@ -57,4 +57,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-SFESWPATHSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除FEISW-Path统计（RTR-SFESWPATHSTC）_50120882.md`

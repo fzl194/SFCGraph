@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPPOLICYPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/APPPOLICYPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示应用策略参数（LST-APPPOLICYPARA）_64015285.md`
+- 原始手册：`evidence/UDG/20.15.2/设置应用策略参数（SET-APPPOLICYPARA）_64015284.md`

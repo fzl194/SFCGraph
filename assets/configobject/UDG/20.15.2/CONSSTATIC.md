@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CONSSTATIC.md`
-- 原始手册：`evidence/UDG/20.15.2/CONSSTATIC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示消费者统计信息（DSP-CONSSTATIC）_00440897.md`
+- 原始手册：`evidence/UDG/20.15.2/清除消费者消息统计计数（RTR-CONSSTATIC）_49802482.md`

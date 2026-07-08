@@ -60,4 +60,4 @@ RMV LOCBINDAREA: LOCALITY="locality1",AREANAME="area1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCBINDAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF位置信息与该UPF优先支持的服务区的绑定关系（RMV-LOCBINDAREA）_09652353.md`

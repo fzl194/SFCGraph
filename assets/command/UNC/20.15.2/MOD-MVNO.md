@@ -63,4 +63,4 @@ MOD MVNO: MVNOID=1, MVNON="bbb", SHORTNAME="b",S5S8TYPE=PMIP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MVNO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MVNO配置信息(MOD-MVNO)_72345669.md`

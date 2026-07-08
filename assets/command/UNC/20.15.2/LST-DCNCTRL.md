@@ -73,4 +73,4 @@ Back off timer最大值（秒）  =  1800
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DCNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN控制参数(LST-DCNCTRL)_72345425.md`

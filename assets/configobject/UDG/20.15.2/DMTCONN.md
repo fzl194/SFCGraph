@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DMTCONN.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Diameter基本信息或Peer连接相关信息（DSP-DMTCONN）_00600581.md`

@@ -69,4 +69,4 @@ UPF实例标识  =  up1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IMSIBINDUPFADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户和UPF的绑定关系（LST-IMSIBINDUPFADDR）_50121885.md`

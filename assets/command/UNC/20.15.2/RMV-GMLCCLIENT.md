@@ -58,4 +58,4 @@ RMV GMLCCLIENT: CLIENTNUM="861380123456789";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GMLCCLIENT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GMLC和LCS-Client对照关系(RMV-GMLCCLIENT)_26305612.md`

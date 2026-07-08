@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSILIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NSILIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NSILIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF支持切片信息（RMV-NSILIST）_09651541.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF支持切片信息（ADD-NSILIST）_09652997.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF支持切片信息（LST-NSILIST）_09654350.md`

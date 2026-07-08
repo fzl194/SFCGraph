@@ -62,4 +62,4 @@ ADD MSCOPC: OPX=1, NI=NAT, OPC="340012", MSCN="861390340012", MASTER=NO;"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MSCOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MSC信令点(ADD-MSCOPC)_77595448.md`

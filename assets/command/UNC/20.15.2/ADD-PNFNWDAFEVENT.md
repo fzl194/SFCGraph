@@ -65,4 +65,4 @@ ADD PNFNWDAFEVENT: NFINSTANCEID="NWDAF_Instance_1", NWDAFINFOID="central", NWDAF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFNWDAFEVENT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NWDAF信息（ADD-PNFNWDAFEVENT）_92104381.md`

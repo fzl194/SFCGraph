@@ -54,4 +54,4 @@ DSP SUBNSAVLINFO:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SUBNSAVLINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示网络切片可用性订阅信息（DSP-SUBNSAVLINFO）_30215896.md`

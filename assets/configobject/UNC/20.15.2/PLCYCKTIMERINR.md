@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PLCYCKTIMERINR.md`
-- 原始手册：`evidence/UNC/20.15.2/PLCYCKTIMERINR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询策略类型和核查间隔（LST-PLCYCKTIMERINR）_94850110.md`
+- 原始手册：`evidence/UNC/20.15.2/设置策略类型和核查间隔（SET-PLCYCKTIMERINR）_95010102.md`

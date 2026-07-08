@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TCPSTATISTIC.md`
-- 原始手册：`evidence/UNC/20.15.2/TCPSTATISTIC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TCP报文统计（DSP-TCPSTATISTIC）_50281546.md`
+- 原始手册：`evidence/UNC/20.15.2/清除TCP报文统计（RTR-TCPSTATISTIC）_00600721.md`

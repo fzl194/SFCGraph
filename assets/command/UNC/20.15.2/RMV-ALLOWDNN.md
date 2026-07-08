@@ -56,4 +56,4 @@ RMV ALLOWDNN: REQDNN="1234567", REPLDNN="abcdef";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除允许本地专网分流的DNN（RMV-ALLOWDNN）_42342470.md`

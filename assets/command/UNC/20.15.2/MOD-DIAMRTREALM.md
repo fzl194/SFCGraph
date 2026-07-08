@@ -64,4 +64,4 @@ MOD DIAMRTREALM: REALMNAME="example.com", APPLICATION=GX, SELECTMODE=SESSION_ID,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DIAMRTREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter路由域名信息（MOD-DIAMRTREALM）_09897304.md`

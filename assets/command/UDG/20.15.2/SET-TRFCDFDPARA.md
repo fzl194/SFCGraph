@@ -82,4 +82,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-TRFCDFDPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置大流量攻击防护参数（SET-TRFCDFDPARA）_82837757.md`

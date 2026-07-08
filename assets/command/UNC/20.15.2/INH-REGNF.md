@@ -63,4 +63,4 @@ INH REGNF: NFINSTANCEID="123e4567-e89b-12d3-a456-426655440000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INH-REGNF.md`
+- 原始手册：`evidence/UNC/20.15.2/禁止NF实例（INH-REGNF）_09651532.md`

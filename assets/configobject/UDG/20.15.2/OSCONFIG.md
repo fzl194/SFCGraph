@@ -38,5 +38,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSCONFIG.md`
-- 原始手册：`evidence/UDG/20.15.2/OSCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OS配置-(DSP-OSCONFIG)_71313093.md`
+- 原始手册：`evidence/UDG/20.15.2/设置OS配置-(SET-OSCONFIG)_23147326.md`

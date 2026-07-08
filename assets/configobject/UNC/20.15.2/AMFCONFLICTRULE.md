@@ -33,8 +33,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFCONFLICTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF冲突规则（MOD-AMFCONFLICTRULE）_61102349.md`
+- 原始手册：`evidence/UNC/20.15.2/删除冲突规则（RMV-AMFCONFLICTRULE）_60982529.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF冲突规则（ADD-AMFCONFLICTRULE）_10622468.md`
+- 原始手册：`evidence/UNC/20.15.2/显示AMF冲突规则生效状态（DSP-AMFCONFLICTRULE）_10302736.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF冲突规则（LST-AMFCONFLICTRULE）_10462636.md`

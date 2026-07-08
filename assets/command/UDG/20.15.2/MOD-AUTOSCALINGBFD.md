@@ -67,4 +67,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-AUTOSCALINGBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BFD会话自动化配置模板（MOD-AUTOSCALINGBFD）_50121646.md`

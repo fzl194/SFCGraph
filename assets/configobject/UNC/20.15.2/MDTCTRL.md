@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MDTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/MDTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MDT控制参数(LST-MDTCTRL)_26145836.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MDT控制参数(SET-MDTCTRL)_72345435.md`

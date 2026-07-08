@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DFTSRVNODEPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTSRVNODEPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTSRVNODEPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTSRVNODEPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改默认PLMN（MOD-DFTSRVNODEPLMN）_09652093.md`
+- 原始手册：`evidence/UNC/20.15.2/删除默认PLMN（RMV-DFTSRVNODEPLMN）_09652341.md`
+- 原始手册：`evidence/UNC/20.15.2/增加默认PLMN（ADD-DFTSRVNODEPLMN）_09653247.md`
+- 原始手册：`evidence/UNC/20.15.2/查询默认PLMN（LST-DFTSRVNODEPLMN）_09652630.md`

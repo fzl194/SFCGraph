@@ -57,4 +57,4 @@ RMV DNAIINFO: DNAI="cmnet_dnai";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNAIINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI信息（RMV-DNAIINFO）_10605252.md`

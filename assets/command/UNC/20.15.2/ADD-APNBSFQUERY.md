@@ -59,4 +59,4 @@ ADD APNBSFQUERY: APN="huawei.com", BSFDNNQUERYSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNBSFQUERY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN的BSF查询功能配置（ADD-APNBSFQUERY）_21763392.md`

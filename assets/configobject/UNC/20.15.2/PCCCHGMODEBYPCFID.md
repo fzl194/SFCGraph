@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCCHGMODEBYPCFID.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCCHGMODEBYPCFID.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCCHGMODEBYPCFID.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCCHGMODEBYPCFID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于PCF的计费策略接口类型（MOD-PCCCHGMODEBYPCFID）_72001551.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于PCF的计费策略接口类型（RMV-PCCCHGMODEBYPCFID）_72001554.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于PCF的计费策略接口类型（ADD-PCCCHGMODEBYPCFID）_72001542.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于PCF的计费策略接口类型（LST-PCCCHGMODEBYPCFID）_96242347.md`

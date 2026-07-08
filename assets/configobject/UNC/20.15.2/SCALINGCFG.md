@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCALINGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SCALINGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询自动扩缩容配置（LST-SCALINGCFG）_09587906.md`
+- 原始手册：`evidence/UNC/20.15.2/设置自动扩缩容配置（SET-SCALINGCFG）_09587850.md`

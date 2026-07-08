@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFTIMERPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFTIMERPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF网元定时器（LST-SMSFTIMERPARA）_96242483.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF网元定时器（SET-SMSFTIMERPARA）_96243227.md`

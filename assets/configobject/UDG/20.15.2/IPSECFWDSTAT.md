@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSECFWDSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示IPsec转发统计（DSP-IPSECFWDSTAT）_81179857.md`

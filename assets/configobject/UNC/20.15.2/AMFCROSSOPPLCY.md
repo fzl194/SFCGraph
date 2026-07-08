@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFCROSSOPPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFCROSSOPPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFCROSSOPPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFCROSSOPPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF跨运营商交互策略（MOD-AMFCROSSOPPLCY）_57839505.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF跨运营商交互策略（RMV-AMFCROSSOPPLCY）_57919445.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF跨运营商交互策略（ADD-AMFCROSSOPPLCY）_08399532.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF运营商交互策略（LST-AMFCROSSOPPLCY）_08559516.md`

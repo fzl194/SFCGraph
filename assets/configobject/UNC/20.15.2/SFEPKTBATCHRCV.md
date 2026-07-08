@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEPKTBATCHRCV.md`
-- 原始手册：`evidence/UNC/20.15.2/SFEPKTBATCHRCV.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFE批量收取的报文数量-（LST-SFEPKTBATCHRCV）_94196890.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SFE批量收取的报文数量（SET-SFEPKTBATCHRCV）_40875977.md`

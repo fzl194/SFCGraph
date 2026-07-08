@@ -72,4 +72,4 @@ SET PFRES: BWOTHD=75, BWNTHD=70, BWCTHD=85, BWRTHD=80, RPTF=20, RPTF3G=20, CPUBT
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PFRES.md`
+- 原始手册：`evidence/UNC/20.15.2/设置带宽资源管理参数(SET-PFRES)_26305658.md`

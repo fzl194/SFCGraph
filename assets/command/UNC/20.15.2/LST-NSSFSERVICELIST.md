@@ -53,4 +53,4 @@ LST NSSFSERVICELIST;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSSFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查看NSSF功能实例服务列表（LST-NSSFSERVICELIST）_09651509.md`

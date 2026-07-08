@@ -69,4 +69,4 @@ ARP数值  优先级
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DDNPRIORITYARP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于ARP的DDN消息优先级配置（LST-DDNPRIORITYARP）_04284710.md`

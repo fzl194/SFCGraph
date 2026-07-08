@@ -63,4 +63,4 @@ SET RPTPROTMPSW: SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RPTPROTMPSW.md`
+- 原始手册：`evidence/UDG/20.15.2/设置业务报表承载协议映射开关（SET-RPTPROTMPSW）_19410198.md`

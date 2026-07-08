@@ -98,4 +98,4 @@ SET DSCP: INTERFACE=Ga, DSCP=56;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DSCP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口DSCP配置（SET-DSCP）_51174294.md`

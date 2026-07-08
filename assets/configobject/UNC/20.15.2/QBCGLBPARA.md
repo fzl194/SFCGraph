@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QBCGLBPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/QBCGLBPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QBC计费全局参数（LST-QBCGLBPARA）_81567156.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QBC计费全局参数（SET-QBCGLBPARA）_81248674.md`

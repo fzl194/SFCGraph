@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/POOLBINDGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLBINDGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLBINDGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/POOLBINDGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改地址池绑定地址池组中的地址池优先级（MOD-POOLBINDGROUP）_82837144.md`
+- 原始手册：`evidence/UDG/20.15.2/将地址池从地址池组中移除（RMV-POOLBINDGROUP）_82837145.md`
+- 原始手册：`evidence/UDG/20.15.2/显示地址池与地址池组绑定关系（LST-POOLBINDGROUP）_82837146.md`
+- 原始手册：`evidence/UDG/20.15.2/绑定地址池到地址池组（ADD-POOLBINDGROUP）_82837143.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALAPNRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALAPNRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALAPNRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除虚拟APN映射策略配置（RMV-VIRTUALAPNRULE）_09652430.md`
+- 原始手册：`evidence/UNC/20.15.2/增加虚拟APN映射策略配置（ADD-VIRTUALAPNRULE）_09652380.md`
+- 原始手册：`evidence/UNC/20.15.2/查询虚拟APN映射策略配置（LST-VIRTUALAPNRULE）_09653739.md`

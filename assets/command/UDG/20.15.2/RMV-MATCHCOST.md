@@ -56,4 +56,4 @@ RMV MATCHCOST:NODESEQUENCE=10,COSTVALUE=10,POLICYNAME="a";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MATCHCOST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Cost匹配路由策略（RMV-MATCHCOST）_49962026.md`

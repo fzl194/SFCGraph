@@ -58,4 +58,4 @@ RMV VPLMNCHGMODE: VPLMN="08600";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-VPLMNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于VPLMN配置的漫游用户归属地计费模式（RMV-VPLMNCHGMODE）_81088704.md`

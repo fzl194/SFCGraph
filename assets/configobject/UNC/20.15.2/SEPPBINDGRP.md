@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEPPBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SEPPBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SEPPBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SEPPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SEPP绑定组关系（MOD-SEPPBINDGRP）_81080357.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SEPP绑定组关系（RMV-SEPPBINDGRP）_30840098.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SEPP绑定组关系（ADD-SEPPBINDGRP）_80800285.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SEPP绑定组关系（LST-SEPPBINDGRP）_31000042.md`

@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPLOADBALANCE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPLOADBALANCE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UP负载均衡功能（LST-UPLOADBALANCE）_44182099.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UP负载均衡功能（SET-UPLOADBALANCE）_97782146.md`

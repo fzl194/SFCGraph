@@ -58,4 +58,4 @@ BLK LOCALNRI: POOLID=1, NRIVBGN=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BLK-LOCALNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/闭塞本局NRI配置信息(BLK-LOCALNRI)_26305910.md`

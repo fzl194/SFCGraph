@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N26GWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N26GWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N26GWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N26GWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N26融合网关选择策略(MOD-N26GWSELPLCY)_26146138.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N26融合网关选择策略(RMV-N26GWSELPLCY)_72225817.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N26融合网关选择策略（ADD-N26GWSELPLCY）_72345737.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N26融合网关选择策略(LST-N26GWSELPLCY)_26305948.md`

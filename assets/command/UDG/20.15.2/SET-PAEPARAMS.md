@@ -66,4 +66,4 @@ SET PAEPARAMS: PARAID=0, PARAVALUE1=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PAEPARAMS.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE参数（SET-PAEPARAMS）_05415160.md`

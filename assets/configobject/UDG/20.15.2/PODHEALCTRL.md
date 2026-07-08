@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PODHEALCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/PODHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询自愈功能配置信息（LST-PODHEALCTRL）_09587931.md`
+- 原始手册：`evidence/UDG/20.15.2/设置自愈功能开关状态（SET-PODHEALCTRL）_09587383.md`

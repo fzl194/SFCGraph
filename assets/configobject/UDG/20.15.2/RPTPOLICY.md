@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基于策略的报表开关（MOD-RPTPOLICY）_93973683.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于策略的报表开关（RMV-RPTPOLICY）_04409549.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于策略的业务报表开关（LST-RPTPOLICY）_06561548.md`
+- 原始手册：`evidence/UDG/20.15.2/配置基于策略的报表开关（ADD-RPTPOLICY）_94212269.md`

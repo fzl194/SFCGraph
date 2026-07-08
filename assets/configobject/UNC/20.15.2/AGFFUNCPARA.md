@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AGFFUNCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/AGFFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AGF的功能参数（LST-AGFFUNCPARA）_45110915.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AGF的功能参数（SET-AGFFUNCPARA）_45110935.md`

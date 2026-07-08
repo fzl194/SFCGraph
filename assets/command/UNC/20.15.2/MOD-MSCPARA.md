@@ -60,4 +60,4 @@ MOD MSCPARA: IPTYPE=IPV4, IPV4="10.141.149.100", MSCNUM="987654321";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MSCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MSC参数(MOD-MSCPARA)_72345579.md`

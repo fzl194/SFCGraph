@@ -79,4 +79,4 @@ SGW状态信息                        不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PFCPPVTEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PFCP私有信元携带配置（LST-PFCPPVTEXT）_11712043.md`

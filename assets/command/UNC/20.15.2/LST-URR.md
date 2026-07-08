@@ -91,4 +91,4 @@ N40接口场景下是否允许老化  =  不允许该URR被老化
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-URR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询URR（LST-URR）_09897161.md`

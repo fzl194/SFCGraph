@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SERVUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/模拟设备故障删除用户信息(RMV-SERVUSR)_26305928.md`

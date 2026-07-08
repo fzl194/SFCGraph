@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEVMODFSM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示模块状态机信息（DSP-DEVMODFSM）_59103472.md`

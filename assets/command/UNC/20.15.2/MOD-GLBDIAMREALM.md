@@ -65,4 +65,4 @@ MOD GLBDIAMREALM:APPLICATION=GX,SEGMENTNAME="imsi_msisdn_segment_1",PRIORITY=101
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GLBDIAMREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改全局Diameter域（MOD-GLBDIAMREALM）_09897281.md`

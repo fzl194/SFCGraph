@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-DRDCI.md`
+- 原始手册：`evidence/UDG/20.15.2/增加DC间通信通道信息（ADD-DRDCI）_23554762.md`

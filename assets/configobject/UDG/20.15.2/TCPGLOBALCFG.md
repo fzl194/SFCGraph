@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TCPGLOBALCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPGLOBALCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP全局配置（LST-TCPGLOBALCFG）_00601361.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP全局配置（SET-TCPGLOBALCFG）_00440885.md`

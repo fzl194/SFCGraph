@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BATCHCUTFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/BATCHCUTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询分批割接功能(LST-BATCHCUTFUNC)_19313885.md`
+- 原始手册：`evidence/UNC/20.15.2/设置分批割接功能(SET-BATCHCUTFUNC)_83987808.md`

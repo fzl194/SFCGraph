@@ -64,4 +64,4 @@ ADD DMLKS: LINKSIDX=0, LOCALIDX=0, PEERIDX=0, LSSELMODE=SELMODE_ROUND_ROBIN, LIN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DMLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter链路集配置(ADD-DMLKS)_72225957.md`

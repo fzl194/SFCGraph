@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPUPGSTAGE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP灰度升级状态（LST-HTTPUPGSTAGE）_31559911.md`

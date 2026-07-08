@@ -61,4 +61,4 @@ SET APNTNLSTATUSRPT: APN="huawei.com", SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNTNLSTATUSRPT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置隧道状态上报（SET-APNTNLSTATUSRPT）_40964602.md`

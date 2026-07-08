@@ -65,4 +65,4 @@ DISC        关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFSUPFEATURES.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF服务能力参数（LST-NRFSUPFEATURES）_08839360.md`

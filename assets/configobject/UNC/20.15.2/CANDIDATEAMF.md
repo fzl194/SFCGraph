@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CANDIDATEAMF.md`
-- 原始手册：`evidence/UNC/20.15.2/CANDIDATEAMF.md`
-- 原始手册：`evidence/UNC/20.15.2/CANDIDATEAMF.md`
-- 原始手册：`evidence/UNC/20.15.2/CANDIDATEAMF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改候选AMF（MOD-CANDIDATEAMF）_18715635.md`
+- 原始手册：`evidence/UNC/20.15.2/删除候选AMF（RMV-CANDIDATEAMF）_18715637.md`
+- 原始手册：`evidence/UNC/20.15.2/增加候选AMF（ADD-CANDIDATEAMF）_18715631.md`
+- 原始手册：`evidence/UNC/20.15.2/查询候选AMF（LST-CANDIDATEAMF）_18715633.md`

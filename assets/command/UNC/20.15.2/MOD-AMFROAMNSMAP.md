@@ -65,4 +65,4 @@ MOD AMFROAMNSMAP: HMCC="245", HMNC="38", HSST=1, HSD="123FFF", VMCC="123", VMNC=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-AMFROAMNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改漫游切片映射配置（MOD-AMFROAMNSMAP）_77197034.md`

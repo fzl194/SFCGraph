@@ -77,4 +77,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TST-UAMGTPCPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/测试UAM-GTP-C路径状态（TST-UAMGTPCPATH）_71436561.md`

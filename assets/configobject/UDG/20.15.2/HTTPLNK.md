@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPLNK.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPLNK.md`
+- 原始手册：`evidence/UDG/20.15.2/显示HTTP链路信息（DSP-HTTPLNK）_83813630.md`
+- 原始手册：`evidence/UDG/20.15.2/重建HTTP链路（RST-HTTPLNK）_29053339.md`

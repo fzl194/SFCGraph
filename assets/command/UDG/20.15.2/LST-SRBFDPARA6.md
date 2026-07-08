@@ -73,4 +73,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRBFDPARA6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-BFD模板（LST-SRBFDPARA6）_00440401.md`

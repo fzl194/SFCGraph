@@ -59,4 +59,4 @@ ADD OSPFGTSM:VRFNAME="abc",TTL=5;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-OSPFGTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF的GTSM配置（ADD-OSPFGTSM）_50121270.md`

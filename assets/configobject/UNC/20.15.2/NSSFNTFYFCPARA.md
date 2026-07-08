@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFNTFYFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFNTFYFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通知流控参数配置（LST-NSSFNTFYFCPARA）_43978183.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通知流控参数配置（SET-NSSFNTFYFCPARA）_97258366.md`

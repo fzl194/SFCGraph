@@ -70,4 +70,4 @@ vrf1        10.2.2.2        Ethernet67/0/7         TRUE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-BGPMULTIPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP多源对等体（LST-BGPMULTIPEER）_49802338.md`

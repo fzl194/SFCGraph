@@ -57,4 +57,4 @@ RMV PRER8SUBQOS: SUBQOSINDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PRER8SUBQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Pre-R8签约QoS配置（RMV-PRER8SUBQOS）_09653173.md`

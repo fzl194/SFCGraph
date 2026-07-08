@@ -74,4 +74,4 @@ testpath1  phif1/0/0         10.8.1.13     ::            1                      
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DETECTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询探测路径配置（LST-DETECTPATH）_44662158.md`

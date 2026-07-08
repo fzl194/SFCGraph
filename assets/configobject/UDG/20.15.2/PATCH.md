@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATCH.md`
-- 原始手册：`evidence/UDG/20.15.2/PATCH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除补丁（RMV-PATCH）_59103386.md`
+- 原始手册：`evidence/UDG/20.15.2/校正补丁包（CLB-PATCH）_59103893.md`

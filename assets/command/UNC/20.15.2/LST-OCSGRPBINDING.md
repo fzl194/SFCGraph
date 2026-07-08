@@ -73,4 +73,4 @@ IMSI/MSIISDN号码段组优先级  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OCSGRPBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OCS组绑定关系（LST-OCSGRPBINDING）_09896978.md`

@@ -74,4 +74,4 @@ APN锁定或整机锁定导致流程拒绝的GTPv2原因值  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SPGWCAUSECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-C_PGW-C原因值控制参数（LST-SPGWCAUSECTRL）_09652447.md`

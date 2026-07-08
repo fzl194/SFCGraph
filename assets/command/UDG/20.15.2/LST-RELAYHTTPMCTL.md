@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYHTTPMCTL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继Http消息控制（LST-RELAYHTTPMCTL）_25275287.md`

@@ -61,4 +61,4 @@ RMV SIGNADBRULE:SIGNADBRULENAME="test_signadbrule";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SIGNADBRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除特征库规则配置（RMV-SIGNADBRULE）_25895980.md`

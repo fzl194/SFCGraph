@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESPARTITIONINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示资源的磁盘分区信息（DSP-RESPARTITIONINFO）_51162901.md`

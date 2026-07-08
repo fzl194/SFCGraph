@@ -61,4 +61,4 @@ RMV IUPAGING:LAI="123000001",RAC="01",RNCINDEX=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IUPAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu接口寻呼数据(RMV-IUPAGING)_72345635.md`

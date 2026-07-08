@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ESN.md`
-- 原始手册：`evidence/UNC/20.15.2/ESN.md`
-- 原始手册：`evidence/UNC/20.15.2/ESN.md`
+- 原始手册：`evidence/UNC/20.15.2/加载设备序列号（LOD-ESN）_09653138.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ESN(DSP-ESN)_00221880.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元中的设备序列号（LST-ESN）_09651403.md`

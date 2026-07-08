@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFIMPORTROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF引入路由配置（LST-OSPFIMPORTROUTE）_00441505.md`

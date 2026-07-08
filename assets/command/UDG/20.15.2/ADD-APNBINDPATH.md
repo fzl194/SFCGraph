@@ -61,4 +61,4 @@ ADD APNBINDPATH: APN="testapn", DETECTPATH="testpath3";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-APNBINDPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/添加APNBindPath配置（ADD-APNBINDPATH）_47981245.md`

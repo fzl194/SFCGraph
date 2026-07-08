@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继域名配置（MOD-RELAYDOMAIN）_64299166.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继域名配置（RMV-RELAYDOMAIN）_14541483.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继域名配置（ADD-RELAYDOMAIN）_14777351.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继域名配置（LST-RELAYDOMAIN）_64063394.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GMMPTMSIREALLOC.md`
-- 原始手册：`evidence/UNC/20.15.2/GMMPTMSIREALLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式PTMSI重分配控制参数(LST-GMMPTMSIREALLOC)_72225201.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb模式PTMSI重分配控制参数（SET-GMMPTMSIREALLOC）_26145520.md`

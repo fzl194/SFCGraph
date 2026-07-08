@@ -50,4 +50,4 @@ LST HAFFUNC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HAFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HAF服务内部功能的参数（LST-HAFFUNC）_68320997.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNACTNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/APNACTNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/APNACTNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/APNACTNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN激活数目限制(MOD-APNACTNUM)_26305468.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN激活数目限制(RMV-APNACTNUM)_72225337.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN激活数目限制(ADD-APNACTNUM)_26145656.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN激活数目限制(LST-APNACTNUM)_72345255.md`

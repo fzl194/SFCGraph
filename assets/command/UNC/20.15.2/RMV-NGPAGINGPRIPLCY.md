@@ -56,4 +56,4 @@ RMV NGPAGINGPRIPLCY: PLCYIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGPAGINGPRIPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G寻呼优先级策略参数配置（RMV-NGPAGINGPRIPLCY）_09652645.md`

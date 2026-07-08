@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SECPOLICYCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/SECPOLICYCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/SECPOLICYCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除应用防攻击策略（RMV-SECPOLICYCFG）_00440713.md`
+- 原始手册：`evidence/UDG/20.15.2/增加应用防攻击策略（ADD-SECPOLICYCFG）_00866069.md`
+- 原始手册：`evidence/UDG/20.15.2/查询应用防攻击策略（LST-SECPOLICYCFG）_00840761.md`

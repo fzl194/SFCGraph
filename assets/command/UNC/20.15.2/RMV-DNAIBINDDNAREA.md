@@ -59,4 +59,4 @@ RMV DNAIBINDDNAREA: DNAI="ulcl", AREANAME="dnarea1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNAIBINDDNAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI支持的服务区域（RMV-DNAIBINDDNAREA）_71516447.md`

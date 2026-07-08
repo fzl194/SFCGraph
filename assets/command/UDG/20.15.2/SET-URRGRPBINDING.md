@@ -81,4 +81,4 @@ SET URRGRPBINDING: USERPROFILENAME="testuserprofilename", TCPCHGPROFLAG=CHARGING
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-URRGRPBINDING.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户模板的URR组绑定关系（SET-URRGRPBINDING）_82837281.md`

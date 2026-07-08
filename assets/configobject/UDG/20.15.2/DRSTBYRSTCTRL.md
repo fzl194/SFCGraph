@@ -35,5 +35,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRSTBYRSTCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/DRSTBYRSTCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询运行备整系统复位开关（LST-DRSTBYRSTCTRL）_51001445.md`
+- 原始手册：`evidence/UDG/20.15.2/设置运行备整系统复位开关（SET-DRSTBYRSTCTRL）_00921394.md`

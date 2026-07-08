@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SFEPASSGREFRAG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SFE透传GRE分片报文使能配置（LST-SFEPASSGREFRAG）_60619580.md`

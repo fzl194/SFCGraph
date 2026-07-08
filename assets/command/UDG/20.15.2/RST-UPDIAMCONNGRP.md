@@ -62,4 +62,4 @@ RST UPDIAMCONNGRP: PEERHOSTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RST-UPDIAMCONNGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/重建Diameter链路组（RST-UPDIAMCONNGRP）_97314565.md`

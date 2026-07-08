@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ROUTERELAYTUNNEL.md`
-- 原始手册：`evidence/UDG/20.15.2/ROUTERELAYTUNNEL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由迭代隧道功能开关（LST-ROUTERELAYTUNNEL）_50281618.md`
+- 原始手册：`evidence/UDG/20.15.2/设置路由迭代隧道功能开关（SET-ROUTERELAYTUNNEL）_00865701.md`

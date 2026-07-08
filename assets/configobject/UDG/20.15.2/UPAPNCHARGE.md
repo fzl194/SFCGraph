@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPAPNCHARGE.md`
-- 原始手册：`evidence/UDG/20.15.2/UPAPNCHARGE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示APN计费配置（LST-UPAPNCHARGE）_30179324.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN的计费配置（SET-UPAPNCHARGE）_29940708.md`

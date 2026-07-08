@@ -75,4 +75,4 @@ SET SGSPARA: TS6_1=10, TS8=4, TS9=5, TS10=5, TS12_1DELTA=8, TS12_2=4, NS8=2, NS9
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SGSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGs参数(SET-SGSPARA)_26145440.md`

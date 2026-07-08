@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DBDRAGING.md`
-- 原始手册：`evidence/UDG/20.15.2/DBDRAGING.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CSDB容灾数据老化开关(LST-DBDRAGING)_92511652.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CSDB容灾数据老化开关(SET-DBDRAGING)_92511651.md`

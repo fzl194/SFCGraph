@@ -57,4 +57,4 @@ RMV NSMAPPARABYPLMN: MCC="123", MNC="45";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSMAPPARABYPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定PLMN的网络切片映射参数（RMV-NSMAPPARABYPLMN）_75823000.md`

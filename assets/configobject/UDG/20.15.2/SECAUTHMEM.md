@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SECAUTHMEM.md`
-- 原始手册：`evidence/UDG/20.15.2/SECAUTHMEM.md`
-- 原始手册：`evidence/UDG/20.15.2/SECAUTHMEM.md`
-- 原始手册：`evidence/UDG/20.15.2/SECAUTHMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改二次授权命令（MOD-SECAUTHMEM）_88107919.md`
+- 原始手册：`evidence/UDG/20.15.2/删除二次授权命令（RMV-SECAUTHMEM）_88107920.md`
+- 原始手册：`evidence/UDG/20.15.2/增加二次授权命令（ADD-SECAUTHMEM）_88107918.md`
+- 原始手册：`evidence/UDG/20.15.2/查看二次授权命令（LST-SECAUTHMEM）_88107917.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFIPDOMAINREL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIPDOMAINREL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIPDOMAINREL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF索引和IP-Domain的关联关系（RMV-NRFIPDOMAINREL）_45612438.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BSF索引和IP-Domain的关联关系（ADD-NRFIPDOMAINREL）_45612430.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSF索引和IP-Domain的关联关系（LST-NRFIPDOMAINREL）_45612434.md`

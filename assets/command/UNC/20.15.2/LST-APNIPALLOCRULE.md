@@ -71,4 +71,4 @@ huawei    继承全局配置      去使能              NULL             去使
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNIPALLOCRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的地址分配规则（LST-APNIPALLOCRULE）_49644918.md`

@@ -80,4 +80,4 @@ SFTP服务端密钥交换算法  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CGSECPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询安全策略（LST-CGSECPOLICY）_51174351.md`

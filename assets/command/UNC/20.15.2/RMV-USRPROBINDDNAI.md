@@ -61,4 +61,4 @@ RMV USRPROBINDDNAI: USRPRONAME="userprofile1", DNAI="huawei1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-USRPROBINDDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户模板关联的DNAI（RMV-USRPROBINDDNAI）_81690720.md`

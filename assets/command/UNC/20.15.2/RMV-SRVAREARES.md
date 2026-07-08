@@ -58,4 +58,4 @@ RMV SRVAREARES: SUBRANGE=HOME_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SRVAREARES.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地服务区域限制（RMV-SRVAREARES）_58575681.md`

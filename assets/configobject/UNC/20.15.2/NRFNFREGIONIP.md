@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNFREGIONIP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFREGIONIP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFREGIONIP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFREGIONIP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IP与NF区域映射关系配置（MOD-NRFNFREGIONIP）_71516443.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IP与NF区域映射关系配置（RMV-NRFNFREGIONIP）_24796834.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP与NF区域映射关系配置（ADD-NRFNFREGIONIP）_24796804.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IP与NF区域映射关系配置（LST-NRFNFREGIONIP）_71436541.md`

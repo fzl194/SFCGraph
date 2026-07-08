@@ -63,4 +63,4 @@ SET NPLINKCHECK: SWITCH=Enable, INTERVAL=100, MULTIPLIER=15;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-NPLINKCHECK.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NP交换网口检测配置（SET-NPLINKCHECK）_94730516.md`

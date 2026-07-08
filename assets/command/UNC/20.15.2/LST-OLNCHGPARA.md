@@ -68,4 +68,4 @@ Reporting Level为SID时的配额申请方式  =  按RG申请配额
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OLNCHGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示在线计费全局参数配置（LST-OLNCHGPARA）_09896982.md`

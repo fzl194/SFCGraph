@@ -75,4 +75,4 @@ FUI扩展过滤器绑定信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FUIEXTFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FUI扩展过滤器绑定配置（LST-FUIEXTFILTER）_82837540.md`

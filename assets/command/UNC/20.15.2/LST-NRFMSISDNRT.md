@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFMSISDNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSISDN号段路由（LST-NRFMSISDNRT）_09653023.md`

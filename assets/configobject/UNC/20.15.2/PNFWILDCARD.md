@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFWILDCARD.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFWILDCARD.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFWILDCARD.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFWILDCARD.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的通配策略（MOD-PNFWILDCARD）_35374745.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的通配策略（RMV-PNFWILDCARD）_35519281.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的通配策略（ADD-PNFWILDCARD）_35374733.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的通配策略（LST-PNFWILDCARD）_35519275.md`

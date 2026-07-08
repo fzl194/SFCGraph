@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DATACHKPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APP配置数据检查功能（LST-DATACHKPOLICY）_59103394.md`

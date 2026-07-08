@@ -59,4 +59,4 @@ RTR MGMDGROUP: VRFNAME="_public_", ADDRESSFAMILY=ipv4unicast, ALLFLAG=FALSE, IFN
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-MGMDGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/清除IGMP加入组信息（RTR-MGMDGROUP）_00866349.md`

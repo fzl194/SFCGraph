@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGSCTPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSCTPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2接口SCTP协议参数(LST-NGSCTPPARA)_72345941.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N2接口SCTP协议参数(SET-NGSCTPPARA)_26306152.md`

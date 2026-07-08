@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOGICIP.md`
-- 原始手册：`evidence/UDG/20.15.2/LOGICIP.md`
-- 原始手册：`evidence/UDG/20.15.2/LOGICIP.md`
-- 原始手册：`evidence/UDG/20.15.2/LOGICIP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改逻辑IP地址信息（MOD-LOGICIP）_09587870.md`
+- 原始手册：`evidence/UDG/20.15.2/删除逻辑IP地址（RMV-LOGICIP）_09587388.md`
+- 原始手册：`evidence/UDG/20.15.2/增加逻辑IP地址（ADD-LOGICIP）_09587376.md`
+- 原始手册：`evidence/UDG/20.15.2/查询逻辑IP地址（LST-LOGICIP）_09587854.md`

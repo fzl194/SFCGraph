@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFROAMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFROAMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF漫游功能管理参数（LST-AMFROAMFUNC）_69427700.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF漫游功能管理参数（SET-AMFROAMFUNC）_69587620.md`

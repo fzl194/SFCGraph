@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBILINKSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务化接口链路状态（DSP-SBILINKSTATUS）_29213281.md`

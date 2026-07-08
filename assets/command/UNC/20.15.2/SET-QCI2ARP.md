@@ -78,4 +78,4 @@ SET QCI2ARP:QCI=9,ARPPCI=0,ARPPL=1,ARPPVI=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-QCI2ARP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置标准QCI到ARP的映射规则（SET-QCI2ARP）_09652269.md`

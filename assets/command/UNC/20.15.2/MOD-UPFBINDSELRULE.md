@@ -60,4 +60,4 @@ MOD UPFBINDSELRULE: INDEX=0, NFINSTANCENAME="upf_instance_1", RULENAME="rulename
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-UPFBINDSELRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF和规则的绑定关系（MOD-UPFBINDSELRULE）_75822992.md`

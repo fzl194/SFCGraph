@@ -67,4 +67,4 @@ IPSpoof攻击防护
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPSPOOFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/展示IP防攻击功能状态（LST-IPSPOOFFUNC）_87728428.md`

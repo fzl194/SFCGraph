@@ -59,4 +59,4 @@ ADD CHGMCDRCFG: SUBRANGE=PLMNID, MCC="460", MNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHGMCDRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M-CDR计费配置(ADD-CHGMCDRCFG)_60137457.md`

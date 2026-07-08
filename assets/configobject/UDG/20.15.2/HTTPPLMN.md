@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPPLMN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP服务存储的PLMN（LST-HTTPPLMN）_83813634.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNVISITPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNVISITPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNVISITPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNVISITPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定归属地PLMN的拜访地策略（MOD-NRFPLMNVISITPLY）_71436547.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定归属地PLMN的拜访地策略（RMV-NRFPLMNVISITPLY）_24956650.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定归属地PLMN的拜访地策略（ADD-NRFPLMNVISITPLY）_24956620.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定归属地PLMN的拜访地策略（LST-NRFPLMNVISITPLY）_71516439.md`

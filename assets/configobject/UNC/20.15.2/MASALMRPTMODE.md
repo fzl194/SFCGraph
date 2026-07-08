@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MASALMRPTMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/MASALMRPTMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G告警上报模式（LST-MASALMRPTMODE）_80432530.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G告警上报模式（SET-MASALMRPTMODE）_26150765.md`

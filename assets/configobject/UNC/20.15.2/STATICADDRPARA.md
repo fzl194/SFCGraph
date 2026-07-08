@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STATICADDRPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/STATICADDRPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态地址参数（LST-STATICADDRPARA）_32232821.md`
+- 原始手册：`evidence/UNC/20.15.2/设置静态地址参数（SET-STATICADDRPARA）_32233051.md`

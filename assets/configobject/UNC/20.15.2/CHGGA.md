@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGGA.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGGA.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGGA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示计费Ga接口参数状态(DSP-CHGGA)_26305194.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费Ga接口参数(LST-CHGGA)_72225059.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费Ga接口参数(SET-CHGGA)_26145378.md`

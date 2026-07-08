@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUPFSELFAIL.md`
-- 原始手册：`evidence/UNC/20.15.2/IUPFSELFAIL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询I-UPF选择失败处理方式（LST-IUPFSELFAIL）_13960446.md`
+- 原始手册：`evidence/UNC/20.15.2/设置I-UPF选择失败处理方式（SET-IUPFSELFAIL）_59000295.md`

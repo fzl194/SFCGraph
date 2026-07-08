@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCNDGWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SCNDGWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SCNDGWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SCNDGWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改相同APN建立多个PDP_PDN连接的网关选择策略(MOD-SCNDGWSELPLCY)_26305756.md`
+- 原始手册：`evidence/UNC/20.15.2/删除相同APN建立多个PDP_PDN连接的网关选择策略(RMV-SCNDGWSELPLCY)_72225625.md`
+- 原始手册：`evidence/UNC/20.15.2/增加相同APN建立多个PDP_PDN连接的网关选择策略(ADD-SCNDGWSELPLCY)_26145946.md`
+- 原始手册：`evidence/UNC/20.15.2/查询相同APN建立多个PDP_PDN连接的网关选择策略(LST-SCNDGWSELPLCY)_72345547.md`

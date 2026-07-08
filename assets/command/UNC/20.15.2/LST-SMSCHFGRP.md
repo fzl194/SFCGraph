@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSCHFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询短消息计费CHF组（LST-SMSCHFGRP）_13939885.md`

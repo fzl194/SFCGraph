@@ -94,4 +94,4 @@ ADD REDIRAPPENDINFO: APPENDINFONAME="testredirappendinfo", REQURLFLAG=ENABLE, MS
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-REDIRAPPENDINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/增加重定向携带信息（ADD-REDIRAPPENDINFO）_82837561.md`

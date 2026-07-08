@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUIMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/IUIMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/IUIMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/IUIMEICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Iu模式IMEI配置(MOD-IUIMEICFG)_72345233.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu模式IMEI配置（RMV-IUIMEICFG）_26305446.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu模式IMEI配置(ADD-IUIMEICFG)_72225315.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式IMEI配置(LST-IUIMEICFG)_26145636.md`

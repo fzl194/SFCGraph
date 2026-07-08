@@ -56,4 +56,4 @@ CLR HSSINFO: HSSHTNAME="hss.epc.mnc123.mcc123.3gppnetwork.org";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-HSSINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/清除HSS信息(CLR-HSSINFO)_72225137.md`

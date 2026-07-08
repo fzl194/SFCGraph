@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N4CHGMSGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N4接口计费消息相关控制参数（LST-N4CHGMSGCTRL）_14120434.md`

@@ -63,4 +63,4 @@ RMV MVNONET: MVNOID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MVNONET.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MVNO网络配置信息(RMV-MVNONET)_26146064.md`

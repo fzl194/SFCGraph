@@ -60,4 +60,4 @@ ADD UPDIAMAAABNDG: GROUPNAME="diametergroup", SERVERTYPE=PARA_3GPP, HOSTNAME="di
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UPDIAMAAABNDG.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter-AAA服务器到Diameter-AAA服务器组（ADD-UPDIAMAAABNDG）_97080179.md`

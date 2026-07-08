@@ -74,4 +74,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYTESTUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继拨测用户（LST-RELAYTESTUSER）_94632067.md`

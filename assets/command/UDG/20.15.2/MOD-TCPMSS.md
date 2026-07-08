@@ -65,4 +65,4 @@ MOD TCPMSS: APN="apn1.com", ROAMINGTYPE=ROAMING-1, V4TCPMSSVALUE=1200, V6TCPMSSV
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-TCPMSS.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Tcp-Mss配置（MOD-TCPMSS）_82837695.md`

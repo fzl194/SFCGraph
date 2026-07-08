@@ -59,4 +59,4 @@ RMV RGTRIGGER: CCTMPLTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RGTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RG级的trigger参数（RMV-RGTRIGGER）_09654153.md`

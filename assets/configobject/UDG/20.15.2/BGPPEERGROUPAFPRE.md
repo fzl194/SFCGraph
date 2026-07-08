@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERGROUPAFPRE.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERGROUPAFPRE.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERGROUPAFPRE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP对等体组条件路由匹配前缀（RMV-BGPPEERGROUPAFPRE）_49802398.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BGP对等体组条件路由匹配前缀（ADD-BGPPEERGROUPAFPRE）_49961050.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP对等体组条件路由匹配前缀（LST-BGPPEERGROUPAFPRE）_00600461.md`

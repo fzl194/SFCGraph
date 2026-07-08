@@ -61,4 +61,4 @@ SET SDAPRETRSMT: SMSGCLS=RESM, TRSP=1, NREQ=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SDAPRETRSMT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Sdup消息重传参数(SET-SDAPRETRSMT)_26307104.md`

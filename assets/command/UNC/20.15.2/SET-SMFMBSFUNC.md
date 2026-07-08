@@ -69,4 +69,4 @@ SET SMFMBSFUNC: NGMBMSSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMFMBSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MB-SMF组播广播功能参数（SET-SMFMBSFUNC）_82612542.md`

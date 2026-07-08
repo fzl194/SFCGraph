@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UDGNRMINTF.md`
-- 原始手册：`evidence/UDG/20.15.2/UDGNRMINTF.md`
-- 原始手册：`evidence/UDG/20.15.2/UDGNRMINTF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除逻辑口（RMV-UDGNRMINTF）_89468160.md`
+- 原始手册：`evidence/UDG/20.15.2/增加逻辑口（ADD-UDGNRMINTF）_96709875.md`
+- 原始手册：`evidence/UDG/20.15.2/查询逻辑口（LST-UDGNRMINTF）_88763364.md`

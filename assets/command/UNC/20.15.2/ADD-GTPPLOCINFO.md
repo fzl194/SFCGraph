@@ -65,4 +65,4 @@ ADD GTPPLOCINFO: HOSTNAME="test", REALMNAME="test", SERVICECONTEXT="test", LOCIN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPPLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTPP本端信息（ADD-GTPPLOCINFO）_09896855.md`

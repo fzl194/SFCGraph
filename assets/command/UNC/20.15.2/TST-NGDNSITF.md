@@ -358,4 +358,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TST-NGDNSITF.md`
+- 原始手册：`evidence/UNC/20.15.2/DNS客户端查询接口（TST-NGDNSITF）_25121215.md`

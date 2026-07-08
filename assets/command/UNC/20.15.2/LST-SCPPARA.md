@@ -70,4 +70,4 @@ SCPDOMAIN开关  =  ON
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCP参数（LST-SCPPARA）_52469392.md`

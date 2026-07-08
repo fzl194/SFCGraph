@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFIMSIRT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI号段路由（LST-NRFIMSIRT）_09653131.md`

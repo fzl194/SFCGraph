@@ -57,4 +57,4 @@ MOD UPDIAMCONNGRP: CONNGROUPNAME="swmconngrp", SELECTMODE=SESSION_ID;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-UPDIAMCONNGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter链路组（MOD-UPDIAMCONNGRP）_97080151.md`

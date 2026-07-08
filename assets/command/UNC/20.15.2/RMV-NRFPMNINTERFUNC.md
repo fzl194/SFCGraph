@@ -56,4 +56,4 @@ RMV NRFPMNINTERFUNC: MCC="123", MNC="33";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFPMNINTERFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于对端PLMN国际漫游功能参数（RMV-NRFPMNINTERFUNC）_79850556.md`

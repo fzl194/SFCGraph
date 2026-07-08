@@ -66,4 +66,4 @@ ADD OSPFV3AUTH:PROCID=1, AUTHKEYID=1, AUTHMODE=hmac-sha256,AUTHTEXT="*****";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-OSPFV3AUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPFv3认证配置（ADD-OSPFV3AUTH）_00600605.md`

@@ -64,4 +64,4 @@ APN网络标识  =  HUAWEI.COM
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GWRESTORAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网关容灾APN(LST-GWRESTORAPN)_72345683.md`

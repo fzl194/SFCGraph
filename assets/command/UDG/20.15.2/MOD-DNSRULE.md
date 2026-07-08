@@ -70,4 +70,4 @@ MOD DNSRULE: APPLICATIONID="app1", DNSRULENAME="rule1", DOMAIN="huawei11.com", I
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-DNSRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DNS规则（MOD-DNSRULE）_35373557.md`

@@ -57,4 +57,4 @@ RMV TACGROUP:TACGROUPNAME="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TACGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除指定的TAC组（RMV-TACGROUP）_82837202.md`

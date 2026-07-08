@@ -70,4 +70,4 @@ APN当前剩余 PDP 带宽（千比特/秒）= 0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-BANDWIDTH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示带宽配置及使用情况（DSP-BANDWIDTH）_28213689.md`

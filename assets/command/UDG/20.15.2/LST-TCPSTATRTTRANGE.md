@@ -80,4 +80,4 @@ SP侧RTT区间4最大值（毫秒）  =  78
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TCPSTATRTTRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP统计功能的RTT区间（LST-TCPSTATRTTRANGE）_74749243.md`

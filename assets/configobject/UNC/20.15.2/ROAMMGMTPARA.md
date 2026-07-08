@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ROAMMGMTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游管理参数（LST-ROAMMGMTPARA）_06385409.md`
+- 原始手册：`evidence/UNC/20.15.2/设置漫游管理参数（SET-ROAMMGMTPARA）_06505061.md`

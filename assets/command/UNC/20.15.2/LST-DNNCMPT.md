@@ -67,4 +67,4 @@ AMF间LBO漫游会话的DNN格式  =  完整DNN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DNNCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN兼容性控制参数（LST-DNNCMPT）_96242127.md`

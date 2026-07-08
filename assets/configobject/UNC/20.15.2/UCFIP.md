@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UCFIP.md`
-- 原始手册：`evidence/UNC/20.15.2/UCFIP.md`
-- 原始手册：`evidence/UNC/20.15.2/UCFIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UCF报表本地IP资源池（RMV-UCFIP）_51253797.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UCF报表本地IP资源池（LST-UCFIP）_51253794.md`
+- 原始手册：`evidence/UNC/20.15.2/配置UCF报表本地IP资源池（ADD-UCFIP）_51253792.md`

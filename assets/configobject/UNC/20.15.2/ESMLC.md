@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ESMLC.md`
-- 原始手册：`evidence/UNC/20.15.2/ESMLC.md`
-- 原始手册：`evidence/UNC/20.15.2/ESMLC.md`
-- 原始手册：`evidence/UNC/20.15.2/ESMLC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改E-SMLC配置(MOD-ESMLC)_26305610.md`
+- 原始手册：`evidence/UNC/20.15.2/删除E-SMLC配置(RMV-ESMLC)_72225479.md`
+- 原始手册：`evidence/UNC/20.15.2/增加E-SMLC配置(ADD-ESMLC)_26145800.md`
+- 原始手册：`evidence/UNC/20.15.2/查询E-SMLC配置(LST-ESMLC)_72345401.md`

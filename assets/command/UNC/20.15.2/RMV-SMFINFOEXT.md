@@ -56,4 +56,4 @@ RMV SMFINFOEXT: SMFINSTANCENAME="SMF_Instance_0", ID="central";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFINFOEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF扩展信息（RMV-SMFINFOEXT）_70382389.md`

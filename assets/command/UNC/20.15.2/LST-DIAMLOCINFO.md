@@ -76,4 +76,4 @@ Supported-Vendor-Id AVP  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DIAMLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter本端信息（LST-DIAMLOCINFO）_09897274.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGDNSLE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSLE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS本端实体（RMV-NGDNSLE）_25121203.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS本端实体（ADD-NGDNSLE）_25120873.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS本端实体（LST-NGDNSLE）_25120887.md`

@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OPTLOG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询操作日志（LST-OPTLOG）_89503616.md`

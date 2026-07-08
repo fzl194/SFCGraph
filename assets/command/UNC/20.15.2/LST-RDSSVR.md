@@ -81,4 +81,4 @@ RADIUS Server Group名称  =  rdssvr
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSSVR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS服务器（LST-RDSSVR）_09896759.md`

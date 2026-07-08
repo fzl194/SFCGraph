@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-ACSSYNCINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ACS的配置同步信息(DSP-ACSSYNCINFO)_87082450.md`

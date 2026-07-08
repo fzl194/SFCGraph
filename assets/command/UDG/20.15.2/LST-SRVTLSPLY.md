@@ -77,4 +77,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRVTLSPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TLS认证策略（LST-SRVTLSPLY）_43992596.md`

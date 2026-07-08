@@ -68,4 +68,4 @@ LST ATTACKDEFEND:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ATTACKDEFEND.md`
+- 原始手册：`evidence/UNC/20.15.2/查询攻击防范参数（LST-ATTACKDEFEND）_49961062.md`

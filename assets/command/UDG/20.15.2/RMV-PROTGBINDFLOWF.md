@@ -64,4 +64,4 @@ RMV PROTGBINDFLOWF:FLOWFILTERNAME="testflowfiltername",PROTGROUPNAME ="p2p";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PROTGBINDFLOWF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除流过滤器协议组绑定关系（RMV-PROTGBINDFLOWF）_82837376.md`

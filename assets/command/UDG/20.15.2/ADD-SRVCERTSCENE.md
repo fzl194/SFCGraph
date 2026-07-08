@@ -63,4 +63,4 @@ ADD SRVCERTSCENE: SCENE="test01", TYPE=SCENE_CA;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SRVCERTSCENE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加配置证书场景（ADD-SRVCERTSCENE）_94632037.md`

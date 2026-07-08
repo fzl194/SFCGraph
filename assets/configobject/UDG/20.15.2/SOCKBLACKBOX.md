@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SOCKBLACKBOX.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SOCK黑匣子诊断信息（DSP-SOCKBLACKBOX）_50280726.md`

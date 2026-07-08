@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFMTUFRAGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/IFMTUFRAGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询分片方式（LST-IFMTUFRAGMODE）_49961402.md`
+- 原始手册：`evidence/UNC/20.15.2/设置分片方式（SET-IFMTUFRAGMODE）_00866285.md`

@@ -70,4 +70,4 @@ SET L2TPKEY: ENSWITCH=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-L2TPKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置L2TP加密参数（SET-L2TPKEY）_64343917.md`

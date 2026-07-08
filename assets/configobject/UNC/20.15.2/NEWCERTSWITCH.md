@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NEWCERTSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/NEWCERTSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询证书开关状态（LST-NEWCERTSWITCH）_59336676.md`
+- 原始手册：`evidence/UNC/20.15.2/设置证书开关状态（SET-NEWCERTSWITCH）_10015761.md`

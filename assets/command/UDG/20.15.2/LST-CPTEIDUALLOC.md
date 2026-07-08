@@ -66,4 +66,4 @@ CP分配TEID-U开关配置
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CPTEIDUALLOC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CP分配TEID-U开关（LST-CPTEIDUALLOC）_86527096.md`

@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LICCTRLALM.md`
-- 原始手册：`evidence/UDG/20.15.2/LICCTRLALM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询License容量告警配置（LST-LICCTRLALM）_09587927.md`
+- 原始手册：`evidence/UDG/20.15.2/设置License容量告警配置（SET-LICCTRLALM）_09587869.md`

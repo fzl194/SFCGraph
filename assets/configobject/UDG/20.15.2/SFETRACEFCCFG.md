@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFETRACEFCCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/SFETRACEFCCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNRS-IP消息跟踪的流控使能配置-(LST-SFETRACEFCCFG)_48203926.md`
+- 原始手册：`evidence/UDG/20.15.2/设置VNRS-IP消息跟踪的流控使能配置-(SET-SFETRACEFCCFG)_84321473.md`

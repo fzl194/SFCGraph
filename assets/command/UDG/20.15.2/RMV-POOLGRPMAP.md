@@ -61,4 +61,4 @@ RMV POOLGRPMAP: MAPPINGNAME="mapping1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-POOLGRPMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/移除地址池组映射关系（RMV-POOLGRPMAP）_82837149.md`

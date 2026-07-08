@@ -67,4 +67,4 @@ QoE智能分析开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-QOEBASICFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoE基本功能（LST-QOEBASICFUNC）_24347197.md`

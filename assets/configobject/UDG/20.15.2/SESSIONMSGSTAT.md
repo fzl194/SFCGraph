@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SESSIONMSGSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示信令失败统计的结果（DSP-SESSIONMSGSTAT）_34254378.md`

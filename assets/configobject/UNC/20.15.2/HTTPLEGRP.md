@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPLEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPLEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPLEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HTTP本端实体组（RMV-HTTPLEGRP）_83813640.md`
+- 原始手册：`evidence/UNC/20.15.2/增加HTTP本端实体组（ADD-HTTPLEGRP）_29213277.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP本端实体组（LST-HTTPLEGRP）_83653658.md`

@@ -79,4 +79,4 @@ SET APNL2TPATTR:APN="huawei.com",L2TPSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNL2TPATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-L2TP配置（SET-APNL2TPATTR）_35373518.md`

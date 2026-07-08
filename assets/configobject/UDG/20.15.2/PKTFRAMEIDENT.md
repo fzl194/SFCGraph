@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PKTFRAMEIDENT.md`
-- 原始手册：`evidence/UDG/20.15.2/PKTFRAMEIDENT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询帧包识别功能相关参数（LST-PKTFRAMEIDENT）_29298862.md`
+- 原始手册：`evidence/UDG/20.15.2/设置帧包识别功能相关参数（SET-PKTFRAMEIDENT）_29529276.md`

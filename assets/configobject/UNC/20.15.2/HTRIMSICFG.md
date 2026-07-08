@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTRIMSICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/HTRIMSICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/HTRIMSICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/HTRIMSICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改HTR号段(MOD-HTRIMSICFG)_26146152.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HTR号段(RMV-HTRIMSICFG)_72345751.md`
+- 原始手册：`evidence/UNC/20.15.2/增加HTR号段(ADD-HTRIMSICFG)_26305960.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTR号段(LST-HTRIMSICFG)_72225831.md`

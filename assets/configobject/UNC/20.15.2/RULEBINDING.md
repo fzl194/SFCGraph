@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RULEBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/RULEBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/RULEBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户模板和规则的绑定关系（RMV-RULEBINDING）_09897217.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户模板和规则的绑定关系（ADD-RULEBINDING）_09897216.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户模板和规则的绑定关系（LST-RULEBINDING）_09897218.md`

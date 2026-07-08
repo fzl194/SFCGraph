@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-WLRSRBIF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询无线路由订阅的接口信息（DSP-WLRSRBIF）_49802074.md`

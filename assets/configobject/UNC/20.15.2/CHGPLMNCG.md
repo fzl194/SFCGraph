@@ -30,7 +30,7 @@ SGSN和CG之间互通时，需要配置该命令。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PLMN-CG配置参数(MOD-CHGPLMNCG)_72344989.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN-CG配置参数(RMV-CHGPLMNCG)_26305202.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PLMN-CG配置参数（ADD-CHGPLMNCG）_72225067.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PLMN-CG配置参数(LST-CHGPLMNCG)_26145388.md`

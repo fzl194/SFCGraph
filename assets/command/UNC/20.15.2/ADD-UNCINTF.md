@@ -96,4 +96,4 @@ ADD UNCINTF:NRMVNFTYPE=ProxySMF,INTFTYPE="Mgt";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UNCINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UNC接口名称（ADD-UNCINTF）_21861957.md`

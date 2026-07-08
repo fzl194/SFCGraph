@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STATICWTPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/STATICWTPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/STATICWTPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/STATICWTPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改服务类型在POD实例下的静态权重（MOD-STATICWTPOLICY）_24015944.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务类型在POD实例下的静态权重（RMV-STATICWTPOLICY）_51175641.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务类型在POD实例下的静态权重（ADD-STATICWTPOLICY）_51175613.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务类型在POD实例下的静态权重（LST-STATICWTPOLICY）_51335393.md`

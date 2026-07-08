@@ -68,4 +68,4 @@ ADD MPACIPV6RULE:POLICYNAME="policyV6",RULENAME="name1",ACTION=permit,PROTTYPE=N
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MPACIPV6RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv6-MPAC策略规则（ADD-MPACIPV6RULE）_50281526.md`

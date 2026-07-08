@@ -57,4 +57,4 @@ RMV PNFSLCTSSCOPE: PEERNFTYPE=DEFAULT, SRVSCOPENAME="CityA";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFSLCTSSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除已配置的选择对端NF时使用的业务服务区（RMV-PNFSLCTSSCOPE）_32390459.md`

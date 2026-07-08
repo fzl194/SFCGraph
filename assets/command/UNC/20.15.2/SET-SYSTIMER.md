@@ -68,4 +68,4 @@ SET SYSTIMER: TIMERNAME=PDPs_Aging_Timer, OUTTIME=8888;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SYSTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/设置系统定时器（SET-SYSTIMER）_51174317.md`

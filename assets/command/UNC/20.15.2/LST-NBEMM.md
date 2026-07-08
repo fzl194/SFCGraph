@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NBEMM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NB-S1模式MM协议参数（LST-NBEMM）_72345375.md`

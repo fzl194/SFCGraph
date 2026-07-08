@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LACID.md`
+- 原始手册：`evidence/UDG/20.15.2/查看LAC与LAC组的绑定关系（LST-LACID）_82837199.md`

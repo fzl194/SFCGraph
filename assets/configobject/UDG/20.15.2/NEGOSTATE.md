@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NEGOSTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示所有进程的协商状态信息（DSP-NEGOSTATE）_59103655.md`

@@ -64,4 +64,4 @@ ADD ABNTRAFFICDT: APN="apn1.com", SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ABNTRAFFICDT.md`
+- 原始手册：`evidence/UDG/20.15.2/新增异常流量检测开关（ADD-ABNTRAFFICDT）_82837035.md`

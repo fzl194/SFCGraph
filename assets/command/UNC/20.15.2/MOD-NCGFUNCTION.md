@@ -56,4 +56,4 @@ MOD NCGFUNCTION: INSTANCEID="a", CDRPROCCAP=900;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NCGFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NCG功能实例信息（MOD-NCGFUNCTION）_45110927.md`

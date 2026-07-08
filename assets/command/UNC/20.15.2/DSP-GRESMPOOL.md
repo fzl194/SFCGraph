@@ -65,4 +65,4 @@ SLABEL        32752         16                32767             256           32
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GRESMPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Gresm资源池所有信息（DSP-GRESMPOOL）_00440785.md`

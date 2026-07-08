@@ -64,4 +64,4 @@ RMV GTPULE: DELTYPE=BYINDEX, INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-U本地实体(RMV-GTPULE)_26145982.md`

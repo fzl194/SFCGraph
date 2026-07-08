@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMMSGSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询路由管理消息统计信息（DSP-RMMSGSTC）_50121194.md`

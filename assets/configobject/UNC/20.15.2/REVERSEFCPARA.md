@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REVERSEFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/REVERSEFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE寻呼反压流控启动_恢复阈值(LST-REVERSEFCPARA)_58631837.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE寻呼反压流控启动_恢复阈值(SET-REVERSEFCPARA)_58751785.md`

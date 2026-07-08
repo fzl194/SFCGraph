@@ -63,4 +63,4 @@ ADD NSDNN: NSIDX=0, DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网络切片支持的DNN（ADD-NSDNN）_09652268.md`

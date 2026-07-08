@@ -58,4 +58,4 @@ MOD UACINFO: UACNAME="test", IPTYPE=IPV4, IPV4ADDRESS="192.168.0.10";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-UACINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改UAC信息（MOD-UACINFO）_19172442.md`

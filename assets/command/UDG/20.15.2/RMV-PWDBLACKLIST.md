@@ -52,4 +52,4 @@ RMV PWDBLACKLIST:FORBIDDENWORD="a";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PWDBLACKLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除密码禁用词（RMV-PWDBLACKLIST）_59036566.md`

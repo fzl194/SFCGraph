@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGLANFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/NGLANFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN功能配置（LST-NGLANFUNC）_20154433.md`
+- 原始手册：`evidence/UDG/20.15.2/设置5G-LAN功能配置（SET-NGLANFUNC）_20780167.md`

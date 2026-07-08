@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSRVLBSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSRVLBSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSRVLBSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCSRVLBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/修改服务发现Service负载均衡功能（MOD-NFDISCSRVLBSW）_04536948.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务发现Service负载均衡功能（RMV-NFDISCSRVLBSW）_04217460.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务发现NF-Service负载均衡开关（ADD-NFDISCSRVLBSW）_04217452.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现Service负载均衡功能（LST-NFDISCSRVLBSW）_57337229.md`

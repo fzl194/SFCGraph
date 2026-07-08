@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SLEMEMBER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示仲裁成员列表信息（DSP-SLEMEMBER）_35678578.md`

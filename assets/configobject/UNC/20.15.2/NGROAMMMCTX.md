@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGROAMMMCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G漫游用户移动性管理上下文（DSP-NGROAMMMCTX）_84925886.md`

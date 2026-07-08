@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CNTMEMSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询容器内存信息（DSP-CNTMEMSTAT）_09587920.md`

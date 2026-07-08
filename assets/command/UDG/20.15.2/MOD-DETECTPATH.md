@@ -66,4 +66,4 @@ MOD DETECTPATH: PATHNAME="testpath3", LOCALINF="phif1/0/1", IPVERSION=IPV6, PEER
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-DETECTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改探测路径配置（MOD-DETECTPATH）_43943792.md`

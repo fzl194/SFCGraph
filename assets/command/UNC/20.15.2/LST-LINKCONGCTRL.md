@@ -74,4 +74,4 @@ Diameter链路拥塞控制
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LINKCONGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter链路拥塞控制（LST-LINKCONGCTRL）_09897277.md`

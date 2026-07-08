@@ -67,4 +67,4 @@ ADD DMLE: LOINDEX=0, LOHSTNAME="mme.epc.mnc123.mcc123.3gppnetwork.org", LORLMNAM
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DMLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter本端实体(ADD-DMLE)_72345881.md`

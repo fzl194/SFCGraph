@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PBUFREUSE5GC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询pbuf重用检测开关状态（LST-PBUFREUSE5GC）_63259092.md`

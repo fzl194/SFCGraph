@@ -156,4 +156,4 @@ TST NFPROFILECHECK: NFINSTANCEID="639deb4b-b625-4fe8-bb64-d79c4d5a4aaa", DATACHK
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TST-NFPROFILECHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/测试NF和NRF上的网元信息是否一致（TST-NFPROFILECHECK）_35803156.md`

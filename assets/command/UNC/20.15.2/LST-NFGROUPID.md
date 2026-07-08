@@ -63,4 +63,4 @@ NF实例名称  =  SMSF_Instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF群组信息（LST-NFGROUPID）_44540604.md`

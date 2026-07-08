@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ARPSPEEDLIMIT.md`
-- 原始手册：`evidence/UDG/20.15.2/ARPSPEEDLIMIT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询速率限制（LST-ARPSPEEDLIMIT）_00441141.md`
+- 原始手册：`evidence/UDG/20.15.2/配置速率限制（SET-ARPSPEEDLIMIT）_00840941.md`

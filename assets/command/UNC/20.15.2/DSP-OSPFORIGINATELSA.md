@@ -72,4 +72,4 @@ Flush LSA计数  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-OSPFORIGINATELSA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Router-LSA生成流程的信息（DSP-OSPFORIGINATELSA）_49961438.md`

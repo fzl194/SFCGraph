@@ -69,4 +69,4 @@ ADD QBCQOSFTRIGGER: CCTMPLTNAME="test", QOSCHG=IMMEDIATE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-QBCQOSFTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QBC计费QoS-Flow级的trigger参数（ADD-QBCQOSFTRIGGER）_09653288.md`

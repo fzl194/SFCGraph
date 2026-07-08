@@ -65,4 +65,4 @@ TCP优化软参3  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOSOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP优化软参（LST-TOSOFTPARA）_30974552.md`

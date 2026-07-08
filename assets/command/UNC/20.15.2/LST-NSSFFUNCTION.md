@@ -53,4 +53,4 @@ LST NSSFFUNCTION;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSSFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF功能实例信息（LST-NSSFFUNCTION）_09651350.md`

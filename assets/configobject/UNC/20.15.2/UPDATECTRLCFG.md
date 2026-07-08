@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPDATECTRLCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询内部升级配置表（LST-UPDATECTRLCFG）_38848818.md`

@@ -66,4 +66,4 @@ ADD IPBINDVPN:IFNAME="Ethernet64/0/3",VRFNAME="vrf1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IPBINDVPN.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口绑定VPN（ADD-IPBINDVPN）_50120734.md`

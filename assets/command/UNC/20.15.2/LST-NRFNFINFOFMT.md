@@ -64,4 +64,4 @@ NF私有信息格式  =  ARRAY
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFNFINFOFMT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF私有信息格式（LST-NRFNFINFOFMT）_44888613.md`

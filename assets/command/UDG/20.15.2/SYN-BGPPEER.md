@@ -58,4 +58,4 @@ SYN BGPPEER:VRFNAME="_public_",AFTYPE=ipv4uni,DIRECTION=export,REMOTEADDRESS="10
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SYN-BGPPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/刷新BGP对等体（SYN-BGPPEER）_00441157.md`

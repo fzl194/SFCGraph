@@ -32,9 +32,9 @@ PS域网元的IP和端口号要根据实际配置。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ACTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ACTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ACTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ACTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接入控制（MOD-ACTRL）_51174234.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接入控制（RMV-ACTRL）_51174233.md`
+- 原始手册：`evidence/UNC/20.15.2/增加接入控制（ADD-ACTRL）_51174232.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CGF与对端网元链路状态（DSP-ACTRL）_51174236.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接入控制（LST-ACTRL）_51174235.md`
+- 原始手册：`evidence/UNC/20.15.2/检查链路分配信息（CHK-ACTRL）_51174237.md`

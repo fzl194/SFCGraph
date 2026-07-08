@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBIFQDNPORTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SBIFQDNPORTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SBIFQDNPORTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SBIFQDNPORTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改FQDN端口策略（MOD-SBIFQDNPORTPLCY）_78027902.md`
+- 原始手册：`evidence/UNC/20.15.2/删除FQDN端口策略（RMV-SBIFQDNPORTPLCY）_27748053.md`
+- 原始手册：`evidence/UNC/20.15.2/增加FQDN端口策略（ADD-SBIFQDNPORTPLCY）_78027898.md`
+- 原始手册：`evidence/UNC/20.15.2/查询FQDN端口策略（LST-SBIFQDNPORTPLCY）_27907825.md`

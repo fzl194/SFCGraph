@@ -74,4 +74,4 @@ Ga接口本端端口号  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG（LST-CG）_09896848.md`

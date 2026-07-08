@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYSLOGCONTENTCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SYSLOGCONTENTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询日志内容配置（LST-SYSLOGCONTENTCFG）_51800805.md`
+- 原始手册：`evidence/UNC/20.15.2/设置日志内容配置（SET-SYSLOGCONTENTCFG）_24521974.md`

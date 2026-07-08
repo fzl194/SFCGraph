@@ -65,4 +65,4 @@ RMV SUBCONDITION: NFTYPE=NfAMF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SUBCONDITION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF订阅条件（RMV-SUBCONDITION）_09653711.md`

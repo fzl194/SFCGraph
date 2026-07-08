@@ -61,4 +61,4 @@ RMV WEEKDAY: GLOBALFLG=CHARGE_CHARACT,CCVALUE="0x400";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-WEEKDAY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除计费星期表（RMV-WEEKDAY）_09896833.md`

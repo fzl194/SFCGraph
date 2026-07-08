@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IFIPV6NDRAPREFIX.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-RA通告前缀（LST-IFIPV6NDRAPREFIX）_00841705.md`

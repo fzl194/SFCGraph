@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGRANCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/清除NG-RAN上下文（CLR-NGRANCTX）_09651514.md`

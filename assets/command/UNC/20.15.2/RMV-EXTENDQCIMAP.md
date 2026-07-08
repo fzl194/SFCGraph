@@ -60,4 +60,4 @@ RMV EXTENDQCIMAP:EXTENDQCI=133;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EXTENDQCIMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除扩展QCI和标准QCI的映射关系（RMV-EXTENDQCIMAP）_09652170.md`

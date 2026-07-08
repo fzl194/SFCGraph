@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SFEBFDERECV.md`
+- 原始手册：`evidence/UDG/20.15.2/显示BFD-ERECV表（DSP-SFEBFDERECV）_49961770.md`

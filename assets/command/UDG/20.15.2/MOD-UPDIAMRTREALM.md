@@ -66,4 +66,4 @@ MOD UPDIAMRTREALM: REALMNAME="example.com", APPLICATION=SWM, SELECTMODE=SESSION_
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-UPDIAMRTREALM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter路由域名信息（MOD-UPDIAMRTREALM）_97314573.md`

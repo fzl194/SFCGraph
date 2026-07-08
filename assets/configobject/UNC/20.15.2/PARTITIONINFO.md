@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PARTITIONINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示RU的磁盘分区信息（DSP-PARTITIONINFO）_59104007.md`

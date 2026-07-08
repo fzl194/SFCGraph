@@ -68,4 +68,4 @@ UTC Time Consistency Check Switch  =  ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CUSTATECHK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SMF和UPF时间一致性检测（LST-CUSTATECHK）_79440357.md`

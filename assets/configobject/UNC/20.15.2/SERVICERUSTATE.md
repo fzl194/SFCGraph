@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SERVICERUSTATE.md`
-- 原始手册：`evidence/UNC/20.15.2/SERVICERUSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RU的信息(LST-SERVICERUSTATE)_29626965.md`
+- 原始手册：`evidence/UNC/20.15.2/查询业务RU的状态(DSP-SERVICERUSTATE)_29626970.md`

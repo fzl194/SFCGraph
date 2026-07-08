@@ -54,4 +54,4 @@ RMV INHCTF:NFINSTANCEID="nfinstanceid001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-INHCTF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除禁止访问NCG的CTF实例（RMV-INHCTF）_45110931.md`

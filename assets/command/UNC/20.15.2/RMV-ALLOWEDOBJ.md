@@ -60,4 +60,4 @@ RMV ALLOWEDOBJ: OBJNAME="objname001", FQDN="demo123com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWEDOBJ.md`
+- 原始手册：`evidence/UNC/20.15.2/删除授权控制对象信息（RMV-ALLOWEDOBJ）_09652585.md`

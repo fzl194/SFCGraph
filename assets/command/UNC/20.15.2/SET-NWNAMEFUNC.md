@@ -59,4 +59,4 @@ SET NWNAMEFUNC: UNSNDBYHSSID=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NWNAMEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置运营商名称信息功能(SET-NWNAMEFUNC)_45110281.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSRVSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSRVSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSRVSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的服务区信息（RMV-PNFSRVSCOPE）_55745520.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的服务区信息（ADD-PNFSRVSCOPE）_06625037.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的服务区信息（LST-PNFSRVSCOPE）_06345477.md`

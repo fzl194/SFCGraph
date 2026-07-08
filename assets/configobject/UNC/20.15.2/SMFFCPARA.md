@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF自保流控参数（LST-SMFFCPARA）_01214230.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF自保流控参数（SET-SMFFCPARA）_48054029.md`

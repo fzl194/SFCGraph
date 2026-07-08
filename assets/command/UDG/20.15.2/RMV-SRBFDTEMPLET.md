@@ -59,4 +59,4 @@ RMV SRBFDTEMPLET: NEXTHOP="10.1.1.1",AFTYPE=ipv4unicast,DESTVRFNAME="_public_", 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SRBFDTEMPLET.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BFD模板（RMV-SRBFDTEMPLET）_49801730.md`

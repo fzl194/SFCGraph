@@ -66,4 +66,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSSCHWORKM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示调度工作类型信息（DSP-MSSSCHWORKM）_92520013.md`

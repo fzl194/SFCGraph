@@ -54,4 +54,4 @@ RMV ACLRULEIF:ACLNAME="1000",ACLRULENAME="rule_5";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ACLRULEIF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除接口ACL规则（RMV-ACLRULEIF）_00841261.md`

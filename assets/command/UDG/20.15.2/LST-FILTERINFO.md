@@ -106,4 +106,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FILTERINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询流过滤器下的所有过滤器信息（LST-FILTERINFO）_34923479.md`

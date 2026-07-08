@@ -66,4 +66,4 @@ ADD AREAMEM: AREACODE="jq001.pd006.sh.mcc123.mnc45", MCC="460", MNC="03", BGNTAC
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加跟踪区成员（ADD-AREAMEM）_44006352.md`

@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DCSLIVEPARAS.md`
-- 原始手册：`evidence/UDG/20.15.2/DCSLIVEPARAS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DCS直播参数（LST-DCSLIVEPARAS）_76289642.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DCS直播参数（SET-DCSLIVEPARAS）_76129918.md`

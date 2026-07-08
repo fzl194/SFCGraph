@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-LCS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LCS资源状态(DSP-LCS)_72345417.md`

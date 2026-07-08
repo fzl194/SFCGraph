@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFETABLEVERBOSE.md`
+- 原始手册：`evidence/UNC/20.15.2/按摘要和详情两种方式显示SFE表项信息（DSP-SFETABLEVERBOSE）_49961774.md`

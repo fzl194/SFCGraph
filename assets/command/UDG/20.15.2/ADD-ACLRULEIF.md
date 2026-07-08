@@ -62,4 +62,4 @@ ADD ACLRULEIF:ACLNAME="1000",ACLRULENAME="rule_5",ACLACTION=Permit,IFNAME="Gigab
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ACLRULEIF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口ACL规则（ADD-ACLRULEIF）_49961886.md`

@@ -61,4 +61,4 @@ MOD MULDNNPRILIST: DEDDNN="special.dnn",NEARBYSUFF1ST="adcd",NEARBYSUFF2ND="defg
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MULDNNPRILIST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地专网DNN就近接入优先级（MOD-MULDNNPRILIST）_32893113.md`

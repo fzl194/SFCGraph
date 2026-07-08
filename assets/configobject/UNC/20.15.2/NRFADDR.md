@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NRF实例地址信息（MOD-NRFADDR）_09651463.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF实例地址信息（RMV-NRFADDR）_09654178.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF实例地址信息（ADD-NRFADDR）_09653061.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF实例地址信息（LST-NRFADDR）_09651659.md`

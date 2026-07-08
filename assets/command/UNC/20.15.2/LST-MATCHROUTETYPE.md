@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MATCHROUTETYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询路由类型匹配路由策略（LST-MATCHROUTETYPE）_49961486.md`

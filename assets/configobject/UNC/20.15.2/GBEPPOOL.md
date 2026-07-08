@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBEPPOOL.md`
-- 原始手册：`evidence/UNC/20.15.2/GBEPPOOL.md`
-- 原始手册：`evidence/UNC/20.15.2/GBEPPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除地址池中IP地址(RMV-GBEPPOOL)_72225677.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP地址到地址池(ADD-GBEPPOOL)_26145998.md`
+- 原始手册：`evidence/UNC/20.15.2/查询地址池中信息(LST-GBEPPOOL)_26305808.md`

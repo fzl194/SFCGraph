@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGSMARTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSMARTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G信令抑制参数（LST-NGSMARTPARA）_25120889.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G信令抑制参数（SET-NGSMARTPARA）_25121211.md`

@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFTD.md`
+- 原始手册：`evidence/UNC/20.15.2/启动软调操作(STR-SFTD)_72345467.md`

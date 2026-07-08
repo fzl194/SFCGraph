@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPN4UPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/UPN4UPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询N4U路径相关属性（LST-UPN4UPATH）_18404303.md`
+- 原始手册：`evidence/UDG/20.15.2/设置N4U路径相关属性（SET-UPN4UPATH）_18761567.md`

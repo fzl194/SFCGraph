@@ -86,4 +86,4 @@ ADD CHARGECHAR:CCNAME="cc",HOME="0x800",ROAM="0x100",VISIT="0x400",HOMESGSN=DISA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHARGECHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对本地用户、漫游用户、拜访用户所采用的计费属性（ADD-CHARGECHAR）_09896809.md`

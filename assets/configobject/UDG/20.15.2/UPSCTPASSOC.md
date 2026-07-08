@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPASSOC.md`
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPASSOC.md`
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPASSOC.md`
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPASSOC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SCTP耦联信息（DSP-UPSCTPASSOC）_45195216.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SCTP耦联测量对象（RMV-UPSCTPASSOC）_45432726.md`
+- 原始手册：`evidence/UDG/20.15.2/增加SCTP耦联测量对象（ADD-UPSCTPASSOC）_97080189.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SCTP耦联测量对象（LST-UPSCTPASSOC）_97314595.md`

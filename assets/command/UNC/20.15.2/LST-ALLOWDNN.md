@@ -65,4 +65,4 @@ PDU会话替换DNN  =  ABCDEF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ALLOWDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询允许本地专网分流的DNN（LST-ALLOWDNN）_88382225.md`

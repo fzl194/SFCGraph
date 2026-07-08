@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEPASSGREFRAG.md`
-- 原始手册：`evidence/UDG/20.15.2/SFEPASSGREFRAG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SFE透传GRE分片报文使能配置（LST-SFEPASSGREFRAG）_60619580.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SFE透传GRE分片报文使能配置（SET-SFEPASSGREFRAG）_06459513.md`

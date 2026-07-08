@@ -60,4 +60,4 @@ SET HTTPFQDNSW: GLOBALSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-HTTPFQDNSW.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HTTP是否支持FQDN（SET-HTTPFQDNSW）_54530882.md`

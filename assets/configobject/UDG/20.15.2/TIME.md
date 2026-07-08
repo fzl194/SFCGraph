@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TIME.md`
-- 原始手册：`evidence/UDG/20.15.2/TIME.md`
+- 原始手册：`evidence/UDG/20.15.2/查询系统时间（DSP-TIME）_33844132.md`
+- 原始手册：`evidence/UDG/20.15.2/设置系统时间（SET-TIME）_87176066.md`

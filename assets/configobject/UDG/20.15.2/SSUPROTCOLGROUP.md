@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SSUPROTCOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/SSUPROTCOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/SSUPROTCOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/SSUPROTCOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基于协议的质差检测策略（MOD-SSUPROTCOLGROUP）_15739991.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于协议的质差检测策略（RMV-SSUPROTCOLGROUP）_09982392.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于协议的质差检测策略（ADD-SSUPROTCOLGROUP）_10221266.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于协议的质差检测策略（LST-SSUPROTCOLGROUP）_15501061.md`

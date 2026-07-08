@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNBINDPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/APNBINDPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/APNBINDPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APNBindPath配置（RMV-APNBINDPATH）_47263203.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APNBindPath配置（LST-APNBINDPATH）_47782531.md`
+- 原始手册：`evidence/UDG/20.15.2/添加APNBindPath配置（ADD-APNBINDPATH）_47981245.md`

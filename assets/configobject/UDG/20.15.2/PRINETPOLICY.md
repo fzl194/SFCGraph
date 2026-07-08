@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PRINETPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/PRINETPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/PRINETPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/PRINETPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改专网控制策略（MOD-PRINETPOLICY）_28361123.md`
+- 原始手册：`evidence/UDG/20.15.2/删除专网控制策略（RMV-PRINETPOLICY）_19641394.md`
+- 原始手册：`evidence/UDG/20.15.2/显示专网控制策略（LST-PRINETPOLICY）_19881186.md`
+- 原始手册：`evidence/UDG/20.15.2/添加专网控制策略（ADD-PRINETPOLICY）_27889295.md`

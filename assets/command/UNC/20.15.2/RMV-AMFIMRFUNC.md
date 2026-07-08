@@ -55,4 +55,4 @@ RMV AMFIMRFUNC:SUBRANGE=ALL_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMFIMRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户消息统计功能配置（RMV-AMFIMRFUNC）_44007528.md`

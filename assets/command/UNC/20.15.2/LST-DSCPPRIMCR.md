@@ -91,4 +91,4 @@ DSCP映射结果如下
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DSCPPRIMCR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DSCP映射优先级配置表(LST-DSCPPRIMCR)_25291202.md`

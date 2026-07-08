@@ -54,4 +54,4 @@ RMV IPV6PATHMTU:VRFNAME="vpn1",IPV6ADDRESS="2001:db8::11";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-IPV6PATHMTU.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-Path-MTU配置（RMV-IPV6PATHMTU）_00601045.md`

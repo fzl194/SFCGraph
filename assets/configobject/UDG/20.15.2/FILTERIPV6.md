@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FILTERIPV6.md`
-- 原始手册：`evidence/UDG/20.15.2/FILTERIPV6.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv6过滤器（MOD-FILTERIPV6）_86528791.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6过滤器（ADD-FILTERIPV6）_82837350.md`

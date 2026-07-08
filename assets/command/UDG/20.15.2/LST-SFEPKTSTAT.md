@@ -63,4 +63,4 @@ IsEnable = FALSE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SFEPKTSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软转发报文统计记录开关（LST-SFEPKTSTAT）_00441373.md`

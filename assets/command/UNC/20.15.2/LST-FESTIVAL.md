@@ -76,4 +76,4 @@ Charge Characteristic 优先级  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FESTIVAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费节假日表（LST-FESTIVAL）_09896829.md`

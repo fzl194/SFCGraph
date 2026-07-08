@@ -61,4 +61,4 @@ RMV UPFGBINDLOCG: UPFGLOCGBNDGNAME="abc", UPFGRPNAME="upfgroup", DIAMLOCGRPNAME=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPFGBINDLOCG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF组与Diameter本端主机组的关联关系（RMV-UPFGBINDLOCG）_29420952.md`

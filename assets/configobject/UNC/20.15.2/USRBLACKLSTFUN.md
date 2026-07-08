@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRBLACKLSTFUN.md`
-- 原始手册：`evidence/UNC/20.15.2/USRBLACKLSTFUN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户黑名单接入控制功能（LST-USRBLACKLSTFUN）_65233886.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户黑名单接入控制功能（SET-USRBLACKLSTFUN）_65393486.md`

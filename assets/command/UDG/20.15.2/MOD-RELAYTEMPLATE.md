@@ -67,4 +67,4 @@ MOD RELAYTEMPLATE:RELAYTPLNAME="test",DNSCNAME="testcname",DNSLIVETIME=180;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-RELAYTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继模板（MOD-RELAYTEMPLATE）_16458465.md`

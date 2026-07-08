@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMAVPDICT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMAVPDICT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMAVPDICT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter数据字典中的AVP参数(MOD-DMAVPDICT)_26305668.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter-AVP表(RMV-DMAVPDICT)_72345459.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter-AVP表(LST-DMAVPDICT)_26145860.md`

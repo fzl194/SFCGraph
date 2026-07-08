@@ -60,4 +60,4 @@ SET DATACHKPOLICY:AUTOSWITCH=on
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DATACHKPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APP配置数据检查功能（SET-DATACHKPOLICY）_59104253.md`

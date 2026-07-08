@@ -60,4 +60,4 @@ RMV UEMUTWLISTBIND:APNNAME="testapn",WLISTTYPE=UPF,WLISTNAME="testwlist";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UEMUTWLISTBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN绑定PA口UE互访白名单（RMV-UEMUTWLISTBIND）_72322912.md`

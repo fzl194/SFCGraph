@@ -62,4 +62,4 @@ RMV LOWPRIDSCP: DSCP=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOWPRIDSCP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除低优先级业务DSCP(RMV-LOWPRIDSCP)_72225191.md`

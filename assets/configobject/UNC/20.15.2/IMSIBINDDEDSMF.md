@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDDEDSMF.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDDEDSMF.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDDEDSMF.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDDEDSMF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改拨测用户和专网SMF的绑定关系（MOD-IMSIBINDDEDSMF）_25477038.md`
+- 原始手册：`evidence/UNC/20.15.2/删除拨测用户和专网SMF的绑定关系（RMV-IMSIBINDDEDSMF）_25796922.md`
+- 原始手册：`evidence/UNC/20.15.2/增加拨测用户和专网SMF的绑定关系（ADD-IMSIBINDDEDSMF）_25317226.md`
+- 原始手册：`evidence/UNC/20.15.2/查询拨测用户和专网SMF的绑定关系（LST-IMSIBINDDEDSMF）_74276777.md`

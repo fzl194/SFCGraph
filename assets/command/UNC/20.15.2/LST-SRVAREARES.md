@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SRVAREARES.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF本地服务区域限制（LST-SRVAREARES）_11775830.md`

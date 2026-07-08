@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SCTPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCTP本地实体(MOD-SCTPLE)_11295829.md`

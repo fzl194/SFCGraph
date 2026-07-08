@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CFGERRCMD.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CFG方式配置恢复的失败信息（DSP-CFGERRCMD）_59103943.md`

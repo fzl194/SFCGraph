@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ELECTIONABILITY.md`
-- 原始手册：`evidence/UDG/20.15.2/ELECTIONABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务进程选举能力（LST-ELECTIONABILITY）_42938063.md`
+- 原始手册：`evidence/UDG/20.15.2/设置业务进程选举能力（SET-ELECTIONABILITY）_42938110.md`

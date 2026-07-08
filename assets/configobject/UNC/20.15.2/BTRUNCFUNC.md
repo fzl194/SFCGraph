@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BTRUNCFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/BTRUNCFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询宽带集群系统扩展功能(LST-BTRUNCFUNC)_41460225.md`
+- 原始手册：`evidence/UNC/20.15.2/设置宽带集群系统扩展功能(SET-BTRUNCFUNC)_41660661.md`

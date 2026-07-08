@@ -64,4 +64,4 @@ SET VLRSGSSELFFC: FCSWITCH=ON, LOCUPFCRSP=CongestionReject, MOFCRSP=UeTemporaril
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-VLRSGSSELFFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR的SGs接口自保流控参数（SET-VLRSGSSELFFC）_04281149.md`

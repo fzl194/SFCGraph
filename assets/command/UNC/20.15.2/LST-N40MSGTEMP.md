@@ -72,4 +72,4 @@ applicationserviceProviderIdentity  =  不携带该字段
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N40MSGTEMP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40消息属性模板（LST-N40MSGTEMP）_02197468.md`

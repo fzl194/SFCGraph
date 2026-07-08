@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRSNDPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRSNDPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRSNDPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CHR传输策略(RMV-CHRSNDPLCY)_26145612.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CHR传输策略(ADD-CHRSNDPLCY)_72345209.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR传输策略(LST-CHRSNDPLCY)_72225293.md`

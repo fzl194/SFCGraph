@@ -59,4 +59,4 @@ RMV ACLBINDAPN:APN="testapn",DIRECTION=UPIN;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ACLBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Acl绑定关系（RMV-ACLBINDAPN）_82837726.md`

@@ -70,4 +70,4 @@ ADD PNFPLMN: NFINSTANCEID="SMF_Instance_0", MCC="460",MNC="03", NFSETID="123";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的PLMN信息（ADD-PNFPLMN）_09651368.md`

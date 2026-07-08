@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PERFGTPVER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除版本粒度的测量对象（RMV-PERFGTPVER）_71791323.md`

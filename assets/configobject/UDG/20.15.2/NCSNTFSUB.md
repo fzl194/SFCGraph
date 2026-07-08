@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NCSNTFSUB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示所有订阅通知事件信息（DSP-NCSNTFSUB）_59104180.md`

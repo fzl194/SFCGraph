@@ -73,4 +73,4 @@ serving-gateway计费方式配置信息
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGWCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-Charge-Method（LST-SGWCHGMETH）_09896987.md`

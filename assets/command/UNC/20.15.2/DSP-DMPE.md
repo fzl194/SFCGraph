@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DMPE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter对端实体(DSP-DMPE)_72225965.md`

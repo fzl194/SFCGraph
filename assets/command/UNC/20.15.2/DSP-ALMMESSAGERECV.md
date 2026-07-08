@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-ALMMESSAGERECV.md`
+- 原始手册：`evidence/UNC/20.15.2/查询告警接收的信息（DSP-ALMMESSAGERECV）_59103706.md`

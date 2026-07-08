@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询匹配规则（DSP-MSSRULE）_00600857.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBOFCTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBOFCTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBOFCTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBOFCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改全局离线计费模板（MOD-GLBOFCTEMPLATE）_09896917.md`
+- 原始手册：`evidence/UNC/20.15.2/删除全局离线计费模板（RMV-GLBOFCTEMPLATE）_09896918.md`
+- 原始手册：`evidence/UNC/20.15.2/增加全局离线计费模板（ADD-GLBOFCTEMPLATE）_09896916.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局离线计费模板（LST-GLBOFCTEMPLATE）_09896919.md`

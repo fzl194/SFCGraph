@@ -60,4 +60,4 @@ RMV HTRIMSICFG: IMSIPRE="123030001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-HTRIMSICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HTR号段(RMV-HTRIMSICFG)_72345751.md`

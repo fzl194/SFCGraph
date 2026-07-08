@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/URR.md`
-- 原始手册：`evidence/UDG/20.15.2/URR.md`
-- 原始手册：`evidence/UDG/20.15.2/URR.md`
-- 原始手册：`evidence/UDG/20.15.2/URR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改URR（MOD-URR）_82837630.md`
+- 原始手册：`evidence/UDG/20.15.2/删除URR（RMV-URR）_86527145.md`
+- 原始手册：`evidence/UDG/20.15.2/增加URR（ADD-URR）_82837629.md`
+- 原始手册：`evidence/UDG/20.15.2/查询URR（LST-URR）_82837632.md`

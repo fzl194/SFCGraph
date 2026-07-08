@@ -67,4 +67,4 @@ ARP类型     目的IP         VNODE_VNRS_VNFC_OMU_0002      500
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ARPSPEEDLIMIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询速率限制（LST-ARPSPEEDLIMIT）_00441141.md`

@@ -59,4 +59,4 @@ ADD DRCOMM: DRINSTID=1, IPVERSION=COMM_IPV4, COMMIPV4="192.168.1.1", VPNNAME="_p
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-DRCOMM.md`
+- 原始手册：`evidence/UDG/20.15.2/增加容灾实例地址(ADD-DRCOMM)_51012925.md`

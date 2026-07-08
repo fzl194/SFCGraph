@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IMSIALLOWWKPOD.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSIALLOWWKPOD.md`
+- 原始手册：`evidence/UDG/20.15.2/允许IMSI在特定的Worker-Pod上激活配置（ACT-IMSIALLOWWKPOD）_87601019.md`
+- 原始手册：`evidence/UDG/20.15.2/查询允许IMSI在特定的Worker-Pod上激活信息（DSP-IMSIALLOWWKPOD）_87414915.md`

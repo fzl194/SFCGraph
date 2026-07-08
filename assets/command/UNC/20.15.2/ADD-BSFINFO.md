@@ -61,4 +61,4 @@ ADD BSFINFO: BSFINSTANCENAME="BSF_Instance_0", BSFNAME="bsf1.cluster1.net1.bsf.5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-BSFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BSF信息（ADD-BSFINFO）_09653792.md`

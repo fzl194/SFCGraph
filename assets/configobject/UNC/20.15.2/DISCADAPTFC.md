@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DISCADAPTFC.md`
-- 原始手册：`evidence/UNC/20.15.2/DISCADAPTFC.md`
-- 原始手册：`evidence/UNC/20.15.2/DISCADAPTFC.md`
-- 原始手册：`evidence/UNC/20.15.2/DISCADAPTFC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改服务发现自适应流控NF级配置（MOD-DISCADAPTFC）_10850094.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务发现自适应流控NF级配置（RMV-DISCADAPTFC）_63529953.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务发现自适应流控NF级配置（ADD-DISCADAPTFC）_10530606.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现自适应流控NF级配置（LST-DISCADAPTFC）_63250257.md`

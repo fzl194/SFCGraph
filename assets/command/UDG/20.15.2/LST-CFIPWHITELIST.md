@@ -70,4 +70,4 @@ IP地址    IP地址掩码长度  配置域名称
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CFIPWHITELIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP地址白名单列表（LST-CFIPWHITELIST）_28486281.md`

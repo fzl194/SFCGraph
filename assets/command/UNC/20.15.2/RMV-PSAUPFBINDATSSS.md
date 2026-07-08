@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PSAUPFBINDATSSS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PSA-UPF和ATSSS-UPF的绑定关系（RMV-PSAUPFBINDATSSS）_96242969.md`

@@ -70,4 +70,4 @@ MOD LCSPARAEX: NOID=0, NILRSWITCH=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-LCSPARAEX.md`
+- 原始手册：`evidence/UNC/20.15.2/修改LCS扩展参数(MOD-LCSPARAEX)_26145816.md`

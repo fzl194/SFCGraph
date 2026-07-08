@@ -58,4 +58,4 @@ ADD APNAREA: AREANAME="dnnarea1", AREATYPE=N2TAI;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN相关服务区域（ADD-APNAREA）_49830741.md`

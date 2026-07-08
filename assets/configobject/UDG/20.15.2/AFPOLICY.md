@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/AFPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/AFPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/AFPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改防欺诈策略配置（MOD-AFPOLICY）_86526988.md`
+- 原始手册：`evidence/UDG/20.15.2/删除防欺诈策略配置（RMV-AFPOLICY）_82837797.md`
+- 原始手册：`evidence/UDG/20.15.2/增加防欺诈策略配置（ADD-AFPOLICY）_82837795.md`
+- 原始手册：`evidence/UDG/20.15.2/查询防欺诈策略配置（LST-AFPOLICY）_86527026.md`

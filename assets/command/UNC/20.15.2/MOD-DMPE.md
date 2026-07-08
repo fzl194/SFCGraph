@@ -63,4 +63,4 @@ MOD DMPE: PEERIDX=2, PEERNAM="HSS1", APPCAP=S6a/S6d-0, CONGSW=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DMPE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter对端实体(MOD-DMPE)_72345885.md`

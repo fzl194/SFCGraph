@@ -67,4 +67,4 @@ SET NGIMSVOPS: AMFHOMO=SUPPORT, DCVOPS=SUPPORT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGIMSVOPS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VoPS配置（SET-NGIMSVOPS）_09653214.md`

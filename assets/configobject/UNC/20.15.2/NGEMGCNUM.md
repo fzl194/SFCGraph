@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGEMGCNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGEMGCNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGEMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除紧急号码配置信息（RMV-NGEMGCNUM）_09654354.md`
+- 原始手册：`evidence/UNC/20.15.2/增加紧急号码配置信息（ADD-NGEMGCNUM）_09652453.md`
+- 原始手册：`evidence/UNC/20.15.2/查询紧急号码配置信息（LST-NGEMGCNUM）_09653760.md`

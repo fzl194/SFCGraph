@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MEASMETRIC.md`
-- 原始手册：`evidence/UNC/20.15.2/MEASMETRIC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话统测量指标参数(LST-MEASMETRIC)_96855840.md`
+- 原始手册：`evidence/UNC/20.15.2/设置话统测量指标参数(SET-MEASMETRIC)_46417865.md`

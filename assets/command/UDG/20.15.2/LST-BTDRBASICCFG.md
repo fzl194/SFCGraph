@@ -71,4 +71,4 @@ UDP Packet Payload Maximum Length (bytes)  =  520
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-BTDRBASICCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BTDR单据上报参数（LST-BTDRBASICCFG）_19881190.md`

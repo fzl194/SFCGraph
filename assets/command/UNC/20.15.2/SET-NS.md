@@ -67,4 +67,4 @@ SET NS: BLOCKTMR=60;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NS参数(SET-NS)_72225703.md`

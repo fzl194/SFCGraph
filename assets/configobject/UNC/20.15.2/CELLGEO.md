@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CELLGEO.md`
-- 原始手册：`evidence/UNC/20.15.2/CELLGEO.md`
-- 原始手册：`evidence/UNC/20.15.2/CELLGEO.md`
-- 原始手册：`evidence/UNC/20.15.2/CELLGEO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CELLID与地理坐标对应关系(MOD-CELLGEO)_26145790.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CELLID与地理坐标对应关系(RMV-CELLGEO)_72345389.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CELLID与地理坐标对应关系(ADD-CELLGEO)_26305598.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CELLID与地理坐标对应关系(LST-CELLGEO)_72225469.md`

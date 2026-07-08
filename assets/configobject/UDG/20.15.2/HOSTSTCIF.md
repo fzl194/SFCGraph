@@ -25,6 +25,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HOSTSTCIF.md`
-- 原始手册：`evidence/UDG/20.15.2/HOSTSTCIF.md`
-- 原始手册：`evidence/UDG/20.15.2/HOSTSTCIF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除接口协议报文统计配置（RMV-HOSTSTCIF）_49802518.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口协议报文统计配置（ADD-HOSTSTCIF）_49961322.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口协议报文统计配置（LST-HOSTSTCIF）_00440561.md`

@@ -57,4 +57,4 @@ RMV IPEN7SUFFIX: INTELLISUFFIX="intelligent";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IPEN7SUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能业务后缀（RMV-IPEN7SUFFIX）_16546781.md`

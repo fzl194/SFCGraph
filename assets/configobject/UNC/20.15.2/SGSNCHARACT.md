@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSNCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSNCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSNCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSNCHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GnGp-SGSN属性配置信息(MOD-SGSNCHARACT)_72345555.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GnGp-SGSN属性配置信息(RMV-SGSNCHARACT)_26305764.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GnGp-SGSN属性配置信息(ADD-SGSNCHARACT)_72225633.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GnGp-SGSN属性配置信息(LST-SGSNCHARACT)_26145956.md`

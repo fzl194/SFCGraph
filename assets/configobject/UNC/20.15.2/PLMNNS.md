@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PLMNNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络切片（MOD-PLMNNS）_09651452.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网络切片（RMV-PLMNNS）_09652511.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网络切片（ADD-PLMNNS）_09652262.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网络切片（LST-PLMNNS）_09652528.md`

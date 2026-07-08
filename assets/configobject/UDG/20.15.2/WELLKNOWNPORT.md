@@ -29,7 +29,7 @@ ADD WELLKNOWNPORT此命令用来添加知名端口。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WELLKNOWNPORT.md`
-- 原始手册：`evidence/UDG/20.15.2/WELLKNOWNPORT.md`
-- 原始手册：`evidence/UDG/20.15.2/WELLKNOWNPORT.md`
-- 原始手册：`evidence/UDG/20.15.2/WELLKNOWNPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改知名端口（MOD-WELLKNOWNPORT）_82837333.md`
+- 原始手册：`evidence/UDG/20.15.2/删除知名端口（RMV-WELLKNOWNPORT）_82837334.md`
+- 原始手册：`evidence/UDG/20.15.2/增加知名端口（ADD-WELLKNOWNPORT）_82837332.md`
+- 原始手册：`evidence/UDG/20.15.2/查询知名端口（LST-WELLKNOWNPORT）_82837335.md`

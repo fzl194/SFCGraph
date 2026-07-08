@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DCNCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN控制参数(LST-DCNCTRL)_72345425.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DCN控制参数(SET-DCNCTRL)_26305634.md`

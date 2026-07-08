@@ -58,4 +58,4 @@ ADD ALLOWSERNAME: INDEX=0, NFINSTANCEID="SMF_Instance_0", SERVICENAME="nsmf-even
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ALLOWSERNAME.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于地址的白名单（ADD-ALLOWSERNAME）_83813626.md`

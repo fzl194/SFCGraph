@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ENBTASYN.md`
+- 原始手册：`evidence/UNC/20.15.2/启动eNodeB跟踪区信息同步任务（STR-ENBTASYN）_19280929.md`

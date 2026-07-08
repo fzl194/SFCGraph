@@ -59,4 +59,4 @@ RMV SCCPSSN: SSNX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCCPSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP子系统(RMV-SCCPSSN)_72345933.md`

@@ -58,4 +58,4 @@ CLR NGDNSC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-NGDNSC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DNS缓存（CLR-NGDNSC）_17555435.md`

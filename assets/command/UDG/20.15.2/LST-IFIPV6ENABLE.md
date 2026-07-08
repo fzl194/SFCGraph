@@ -66,4 +66,4 @@ Ethernet64/0/4          使能            1500                            FALSE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IFIPV6ENABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口IPv6使能（LST-IFIPV6ENABLE）_00600793.md`

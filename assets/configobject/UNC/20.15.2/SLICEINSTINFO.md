@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SLICEINSTINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SLICEINSTINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SLICEINSTINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务支持的切片实例（RMV-SLICEINSTINFO）_47815994.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务支持的切片实例（ADD-SLICEINSTINFO）_47815992.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务支持的切片实例（LST-SLICEINSTINFO）_47815993.md`

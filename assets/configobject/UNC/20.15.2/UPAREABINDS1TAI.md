@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDS1TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDS1TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDS1TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF服务区名称绑定的4G-TAI范围（RMV-UPAREABINDS1TAI）_09652633.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF服务区名称绑定的4G-TAI范围（ADD-UPAREABINDS1TAI）_09652565.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF服务区名称绑定的4G-TAI范围（LST-UPAREABINDS1TAI）_09652670.md`

@@ -38,7 +38,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RULE.md`
-- 原始手册：`evidence/UDG/20.15.2/RULE.md`
-- 原始手册：`evidence/UDG/20.15.2/RULE.md`
-- 原始手册：`evidence/UDG/20.15.2/RULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改规则（MOD-RULE）_82837268.md`
+- 原始手册：`evidence/UDG/20.15.2/删除规则（RMV-RULE）_82837269.md`
+- 原始手册：`evidence/UDG/20.15.2/增加规则（ADD-RULE）_82837266.md`
+- 原始手册：`evidence/UDG/20.15.2/查询规则（LST-RULE）_82837270.md`

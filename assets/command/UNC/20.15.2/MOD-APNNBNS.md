@@ -67,4 +67,4 @@ MOD APNNBNS: APN="huawei.com", IPV4PRIMARYIP="10.1.1.1", IPV4SECONDARYIP="10.2.2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNNBNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN的NBNS属性（MOD-APNNBNS）_22438293.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSQMSHAPING.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSQMSHAPING.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSQMSHAPING.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSQMSHAPING.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPSQM整形配置（MOD-IPSQMSHAPING）_08991779.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPSQM整形配置（RMV-IPSQMSHAPING）_21392218.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPSQM整形配置（ADD-IPSQMSHAPING）_08873213.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPSQM整形配置（LST-IPSQMSHAPING）_21153440.md`

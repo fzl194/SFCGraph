@@ -76,4 +76,4 @@ S1模式TAI组二次寻呼请求次数增幅阈值（%）  =  50
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-S1TAIPAGMONPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1-TAI组寻呼异常监控功能参数(LST-S1TAIPAGMONPARA)_27678301.md`

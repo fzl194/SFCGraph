@@ -78,4 +78,4 @@ Charge Characteristic 优先级  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TARIFFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询费率切换组（LST-TARIFFGROUP）_09896838.md`

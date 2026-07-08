@@ -57,4 +57,4 @@ RMV VTEP: VTEPNAME="vtep1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-VTEP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道端点（RMV-VTEP）_68194505.md`

@@ -68,4 +68,4 @@ MOD AREATZ: AREA=LA, MCC="123", MNC="03", LAC="112", LACRANGE="350", TZID=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-AREATZ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改区域时区参数(MOD-AREATZ)_72345185.md`

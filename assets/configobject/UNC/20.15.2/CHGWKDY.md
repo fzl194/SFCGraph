@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGWKDY.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGWKDY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询星期配置(LST-CHGWKDY)_72344997.md`
+- 原始手册：`evidence/UNC/20.15.2/设置星期配置(SET-CHGWKDY)_26305210.md`

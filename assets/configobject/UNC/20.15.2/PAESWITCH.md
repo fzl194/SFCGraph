@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAESWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/PAESWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE开关信息（DSP-PAESWITCH）_31405490.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE隔离核统计状态（SET-PAESWITCH）_31564778.md`

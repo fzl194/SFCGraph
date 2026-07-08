@@ -57,4 +57,4 @@ RMV GTPCPATHDP: RANGE=ROAMING;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPCPATHDP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C路径管理自定义策略(RMV-GTPCPATHDP)_26145914.md`

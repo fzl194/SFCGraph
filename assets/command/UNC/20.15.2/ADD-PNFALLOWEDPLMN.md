@@ -68,4 +68,4 @@ ADD PNFALLOWEDPLMN: NFINSTANCEID="SMF_Instance_0", SRVINSTANCEID="Service_Instan
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFALLOWEDPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF允许的PLMN信息（ADD-PNFALLOWEDPLMN）_09652467.md`

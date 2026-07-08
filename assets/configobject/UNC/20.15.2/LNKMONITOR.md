@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LNKMONITOR.md`
-- 原始手册：`evidence/UNC/20.15.2/LNKMONITOR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询链路频繁闪断监控配置（LST-LNKMONITOR）_72225541.md`
+- 原始手册：`evidence/UNC/20.15.2/设置链路频繁闪断监控功能（SET-LNKMONITOR）_26145862.md`

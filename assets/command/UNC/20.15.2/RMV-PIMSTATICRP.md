@@ -56,4 +56,4 @@ RMV PIMSTATICRP:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,STATICRPADDR="192.1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PIMSTATICRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PIM静态RP配置（RMV-PIMSTATICRP）_49961582.md`

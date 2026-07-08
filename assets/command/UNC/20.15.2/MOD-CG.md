@@ -74,4 +74,4 @@ MOD CG:IPVERSION=IPV4, IPV4ADDR="192.168.0.2",PORT=25009,PRIORITY=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CG（MOD-CG）_09896846.md`

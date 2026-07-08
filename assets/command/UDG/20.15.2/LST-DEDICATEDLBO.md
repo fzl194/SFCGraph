@@ -65,4 +65,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DEDICATEDLBO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询系统是否开启专网UPF动态分流功能（LST-DEDICATEDLBO）_43025982.md`

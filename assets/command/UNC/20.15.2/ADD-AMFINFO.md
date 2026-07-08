@@ -63,4 +63,4 @@ ADD AMFINFO: AMFINSTANCENAME="AMF_Instance_0", AMFNAME="amf1.cluster1.net1.amf.5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF信息（ADD-AMFINFO）_09652298.md`

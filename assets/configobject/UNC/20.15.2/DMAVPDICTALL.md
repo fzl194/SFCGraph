@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMAVPDICTALL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除所有Diameter-AVP表（RMV-DMAVPDICTALL）_14429817.md`

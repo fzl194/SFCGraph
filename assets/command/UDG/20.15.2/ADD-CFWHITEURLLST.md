@@ -60,4 +60,4 @@ ADD CFWHITEURLLST: WHITELISTNAME="whitelist1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CFWHITEURLLST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加URL过滤白名单列表（ADD-CFWHITEURLLST）_39717702.md`

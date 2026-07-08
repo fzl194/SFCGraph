@@ -58,4 +58,4 @@ RMV CHGHOLI: YEAR=2001, MONTH=5, DAY=1, CC=NORMAL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGHOLI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除节假日配置(RMV-CHGHOLI)_72225063.md`

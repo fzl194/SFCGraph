@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFPROTOCOLLST.md`
-- 原始手册：`evidence/UDG/20.15.2/CFPROTOCOLLST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询开启内容过滤的协议列表（LST-CFPROTOCOLLST）_43357967.md`
+- 原始手册：`evidence/UDG/20.15.2/设置开启内容过滤的协议列表（SET-CFPROTOCOLLST）_43076795.md`

@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ARPBYTYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/根据ARP表项类型清除ARP表项（RTR-ARPBYTYPE）_50280966.md`

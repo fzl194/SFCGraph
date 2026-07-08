@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PIMCTLMSGCNTIF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PIM接口报文统计计数（DSP-PIMCTLMSGCNTIF）_49961470.md`

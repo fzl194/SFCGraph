@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMESHAREPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/MMESHAREPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/MMESHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MME的共享PLMN（RMV-MMESHAREPLMN）_72225765.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MME的共享PLMN(ADD-MMESHAREPLMN)_26146086.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MME的共享PLMN(LST-MMESHAREPLMN)_26305896.md`

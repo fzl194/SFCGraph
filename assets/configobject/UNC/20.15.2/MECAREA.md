@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MECAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/MECAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/MECAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-MEC区域信息（RMV-MECAREA）_34892008.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-MEC区域信息（ADD-MECAREA）_34412856.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-MEC区域信息（LST-MECAREA）_85091973.md`

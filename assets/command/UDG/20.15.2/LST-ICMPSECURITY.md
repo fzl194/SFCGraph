@@ -67,4 +67,4 @@ LST ICMPSECURITY:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ICMPSECURITY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICMP安全配置（LST-ICMPSECURITY）_00600705.md`

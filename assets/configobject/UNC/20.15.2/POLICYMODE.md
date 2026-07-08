@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POLICYMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/POLICYMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询策略接口的选择方式（LST-POLICYMODE）_09652478.md`
+- 原始手册：`evidence/UNC/20.15.2/设置策略接口的选择方式（SET-POLICYMODE）_09653658.md`

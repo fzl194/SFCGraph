@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFRESEL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFRESEL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFRESEL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFRESEL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地SMF重选策略（MOD-SMFRESEL）_45495625.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地SMF重选策略（RMV-SMFRESEL）_45495626.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地SMF重选策略（ADD-SMFRESEL）_45495622.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地SMF重选策略（LST-SMFRESEL）_45495624.md`

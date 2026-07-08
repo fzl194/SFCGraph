@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMUEPLCYCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AMUEPLCYCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AMUEPLCYCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AMUEPLCYCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AM策略和UE策略控制参数（MOD-AMUEPLCYCTRL）_09654427.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AM策略和UE策略控制参数（RMV-AMUEPLCYCTRL）_09654397.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AM策略和UE策略控制参数（ADD-AMUEPLCYCTRL）_09652143.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AM策略和UE策略控制参数（LST-AMUEPLCYCTRL）_09653095.md`

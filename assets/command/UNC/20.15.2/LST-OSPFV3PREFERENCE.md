@@ -69,4 +69,4 @@ OSPFv3进程号  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFV3PREFERENCE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3路由优先级配置（LST-OSPFV3PREFERENCE）_00841493.md`

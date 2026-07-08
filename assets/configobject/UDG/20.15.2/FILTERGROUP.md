@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FILTERGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/FILTERGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/FILTERGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除过滤器组（RMV-FILTERGROUP）_95089583.md`
+- 原始手册：`evidence/UDG/20.15.2/增加过滤器组（ADD-FILTERGROUP）_95089582.md`
+- 原始手册：`evidence/UDG/20.15.2/查询过滤器组（LST-FILTERGROUP）_95089584.md`

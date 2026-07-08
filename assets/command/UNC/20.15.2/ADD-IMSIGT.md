@@ -65,4 +65,4 @@ ADD IMSIGT: IMSIPRE="3080107000", GT="86139", MNNAME="noname";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IMSIGT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI-GT对应关系(ADD-IMSIGT)_72345061.md`

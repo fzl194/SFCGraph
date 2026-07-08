@@ -59,4 +59,4 @@ ADD NSELST: NSEI=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NSELST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSE列表(ADD-NSELST)_72345621.md`

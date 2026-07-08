@@ -58,4 +58,4 @@ ADD EIR: EIRRLM="example01.com", EIRHTN="eir0701.example01.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-EIR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EIR配置(ADD-EIR)_72345049.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRMAPVERSION.md`
-- 原始手册：`evidence/UNC/20.15.2/VLRMAPVERSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR使用的MAP接口版本（LST-VLRMAPVERSION）_53321874.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR使用的MAP接口版本（SET-VLRMAPVERSION）_53801294.md`

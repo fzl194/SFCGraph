@@ -68,4 +68,4 @@ IPv4地址掩码  =  255.255.0.0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPBINDVPN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口绑定VPN（LST-IPBINDVPN）_00601457.md`

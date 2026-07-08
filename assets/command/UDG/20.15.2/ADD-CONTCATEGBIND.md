@@ -68,4 +68,4 @@ ADD CONTCATEGBIND: CFPROFILENAME="cf_profile1", CONTCATEGNAME="cf_contcategrpran
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CONTCATEGBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容分类组绑定关系（ADD-CONTCATEGBIND）_39478826.md`

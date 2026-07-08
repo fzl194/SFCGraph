@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVNODEGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODEGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODEGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务节点组（RMV-SRVNODEGROUP）_09653063.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务节点组（ADD-SRVNODEGROUP）_09651376.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务节点组（LST-SRVNODEGROUP）_09651531.md`

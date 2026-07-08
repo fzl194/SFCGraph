@@ -65,4 +65,4 @@ The result is as follows
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFIGNDISCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF服务发现忽略参数规则（LST-NRFIGNDISCPARA）_44928651.md`

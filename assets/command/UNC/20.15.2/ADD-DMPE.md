@@ -65,4 +65,4 @@ ADD DMPE: PEERIDX=1, PEERHTNAM="hss.epc.mnc123.mcc123.3gppnetwork.org", PEERNAM=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DMPE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter对端实体(ADD-DMPE)_72225963.md`

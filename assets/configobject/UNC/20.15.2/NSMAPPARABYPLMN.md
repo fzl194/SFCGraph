@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSMAPPARABYPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NSMAPPARABYPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NSMAPPARABYPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NSMAPPARABYPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定PLMN的网络切片映射参数（MOD-NSMAPPARABYPLMN）_75822988.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定PLMN的网络切片映射参数（RMV-NSMAPPARABYPLMN）_75823000.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定PLMN的网络切片映射参数（ADD-NSMAPPARABYPLMN）_75982832.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定PLMN的网络切片映射参数（LST-NSMAPPARABYPLMN）_75982848.md`

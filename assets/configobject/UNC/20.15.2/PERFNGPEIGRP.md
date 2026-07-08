@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFNGPEIGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNGPEIGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNGPEIGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NG-PEI组性能统计对象（RMV-PERFNGPEIGRP）_43079256.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NG-PEI组性能统计对象（ADD-PERFNGPEIGRP）_43239046.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NG-PEI组性能统计对象（LST-PERFNGPEIGRP）_89159153.md`

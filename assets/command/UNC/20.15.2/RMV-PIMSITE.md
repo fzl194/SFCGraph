@@ -68,4 +68,4 @@ RMV PIMSITE: VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ASSERTHOLDTIME=65535,J
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PIMSITE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PIM全局配置（RMV-PIMSITE）_49961082.md`

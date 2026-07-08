@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PDUTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PDU会话级的trigger参数（MOD-PDUTRIGGER）_09653719.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PDU会话级的trigger参数（RMV-PDUTRIGGER）_09653028.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PDU会话级的trigger参数（ADD-PDUTRIGGER）_09653225.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDU会话级的trigger参数（LST-PDUTRIGGER）_09653638.md`

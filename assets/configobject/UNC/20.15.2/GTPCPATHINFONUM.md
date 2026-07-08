@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCPATHINFONUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTPC路径数目（DSP-GTPCPATHINFONUM）_09651616.md`

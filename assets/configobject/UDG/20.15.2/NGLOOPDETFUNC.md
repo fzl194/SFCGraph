@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGLOOPDETFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/NGLOOPDETFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN环路检测配置（LST-NGLOOPDETFUNC）_75405267.md`
+- 原始手册：`evidence/UDG/20.15.2/设置5G-LAN环路检测配置（SET-NGLOOPDETFUNC）_25006878.md`

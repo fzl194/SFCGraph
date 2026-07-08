@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VPNAPPCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询下发的VPN的app类型信息（LST-VPNAPPCFG）_80592506.md`

@@ -66,4 +66,4 @@ total      2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-AMFMBSSESNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示AMF组播广播会话数（DSP-AMFMBSSESNUM）_88107262.md`

@@ -70,4 +70,4 @@ Forward Acknowledgement算法  =  ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOALGCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP算法配置（LST-TOALGCFG）_44249106.md`

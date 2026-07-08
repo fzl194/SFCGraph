@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTBASICRECCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTBASICRECCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基础单据上报功能开关（LST-RPTBASICRECCFG）_61159772.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基础单据上报配置开关（SET-RPTBASICRECCFG）_46919341.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LDMINNERDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LDM诊断信息（DSP-LDMINNERDATA）_50281178.md`

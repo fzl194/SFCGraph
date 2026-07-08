@@ -59,4 +59,4 @@ ADD VXLANBINDAPN: APN="apn1", VXLANGRPNAME="vxlangrp";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-VXLANBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/新增VXLAN隧道组绑定APN（ADD-VXLANBINDAPN）_68354109.md`

@@ -68,4 +68,4 @@ SET HEADENGLBPARA: MSISDNMINLEN=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-HEADENGLBPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置头增强全局参数（SET-HEADENGLBPARA）_82837513.md`

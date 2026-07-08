@@ -55,4 +55,4 @@ CLR DDNTIMEOUTCNT:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-DDNTIMEOUTCNT.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DDN超时延时删除功能运行信息记录（CLR-DDNTIMEOUTCNT）_46314490.md`

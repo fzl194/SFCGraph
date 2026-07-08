@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TSNINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示TSN信息（DSP-TSNINFO）_68723519.md`

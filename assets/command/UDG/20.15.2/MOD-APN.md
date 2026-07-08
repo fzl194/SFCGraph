@@ -69,4 +69,4 @@ MOD APN: APN="huawei.com", HASVPN=ENABLE, VPNINSTANCE="vpn1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-APN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改APN配置（MOD-APN）_86526458.md`

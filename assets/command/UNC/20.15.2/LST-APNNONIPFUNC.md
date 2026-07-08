@@ -66,4 +66,4 @@ APN Non-IP功能开关  =  继承全局
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNNONIPFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-Non-IP功能配置（LST-APNNONIPFUNC）_28567628.md`

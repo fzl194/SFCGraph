@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSERVICEVER.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSERVICEVER.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSERVICEVER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的服务实例的版本信息（RMV-PNFSERVICEVER）_09651625.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的服务实例的版本信息（ADD-PNFSERVICEVER）_09653832.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的服务实例的版本信息（LST-PNFSERVICEVER）_09653093.md`

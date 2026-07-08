@@ -93,4 +93,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-T3N3.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C-T3_N3参数配置(LST-T3N3)_72345521.md`

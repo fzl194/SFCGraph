@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFAULTCACHE.md`
+- 原始手册：`evidence/UNC/20.15.2/清除用户面故障缓存（CLR-UPFAULTCACHE）_56347538.md`

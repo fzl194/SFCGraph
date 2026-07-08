@@ -58,4 +58,4 @@ SYN BGPPEERTYPE:AFTYPE=ipv4uni,DIRECTION=import;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYN-BGPPEERTYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/刷新对等体类型（SYN-BGPPEERTYPE）_00600393.md`

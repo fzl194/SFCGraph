@@ -64,4 +64,4 @@ RMV NGLANGRPCTX:GROUPID="a0000001-460-003-01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGLANGRPCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-LAN组会话（RMV-NGLANGRPCTX）_04057524.md`

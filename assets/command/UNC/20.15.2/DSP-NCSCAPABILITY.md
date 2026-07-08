@@ -89,4 +89,4 @@ Sync-config           private     1.0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NCSCAPABILITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询设备所支持的NETCONF协议能力集（DSP-NCSCAPABILITY）_59103374.md`

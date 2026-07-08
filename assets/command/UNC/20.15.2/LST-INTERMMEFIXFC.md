@@ -73,4 +73,4 @@ Service Request流控阈值作用范围  =  单进程
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-INTERMMEFIXFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Inter-MME接入固定速率流控功能相关参数(LST-INTERMMEFIXFC)_57365241.md`

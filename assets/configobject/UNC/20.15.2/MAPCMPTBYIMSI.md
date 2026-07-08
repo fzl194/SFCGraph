@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MAPCMPTBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/MAPCMPTBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/MAPCMPTBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/MAPCMPTBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MAP协议接口兼容性IMSI号段配置(MOD-MAPCMPTBYIMSI)_72345065.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MAP协议接口兼容性IMSI号段配置(RMV-MAPCMPTBYIMSI)_26145468.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MAP协议接口兼容性IMSI号段配置(ADD-MAPCMPTBYIMSI)_26305278.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MAP协议接口兼容性IMSI号段配置(LST-MAPCMPTBYIMSI)_72225149.md`

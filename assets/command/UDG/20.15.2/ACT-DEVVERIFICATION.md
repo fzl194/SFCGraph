@@ -70,4 +70,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACT-DEVVERIFICATION.md`
+- 原始手册：`evidence/UDG/20.15.2/触发设备对账（ACT-DEVVERIFICATION）_59103469.md`

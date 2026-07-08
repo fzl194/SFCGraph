@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFNSAVLDETAIL.md`
+- 原始手册：`evidence/UNC/20.15.2/显示特定AMF下所有动态上报的切片可用性信息（DSP-NSSFNSAVLDETAIL）_56834605.md`

@@ -71,4 +71,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DMOCCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter流控控制参数(LST-DMOCCFG)_26146390.md`

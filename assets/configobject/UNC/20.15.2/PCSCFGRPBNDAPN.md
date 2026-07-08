@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBNDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBNDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBNDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBNDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN和P-CSCF组关联关系（MOD-PCSCFGRPBNDAPN）_09652533.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN和P-CSCF组关联关系（RMV-PCSCFGRPBNDAPN）_09651444.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN和P-CSCF组关联关系（ADD-PCSCFGRPBNDAPN）_09653091.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN和P-CSCF组关联关系（LST-PCSCFGRPBNDAPN）_09652537.md`

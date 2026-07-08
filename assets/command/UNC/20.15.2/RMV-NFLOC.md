@@ -67,4 +67,4 @@ RMV NFLOC: NFTYPE=NfAMF, TGTNFTYPE=SMF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除目标NF发现和选择的位置匹配信息（RMV-NFLOC）_09653223.md`

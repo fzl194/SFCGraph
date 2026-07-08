@@ -27,8 +27,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MGMDSTATICGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSTATICGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSTATICGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSTATICGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSTATICGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IGMP静态组配置（MOD-MGMDSTATICGROUP）_50121294.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IGMP静态组配置（RMV-MGMDSTATICGROUP）_50280782.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IGMP静态加入信息（DSP-MGMDSTATICGROUP）_00601369.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IGMP静态组配置（LST-MGMDSTATICGROUP）_49961718.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IGMP静态组配置（ADD-MGMDSTATICGROUP）_00601281.md`

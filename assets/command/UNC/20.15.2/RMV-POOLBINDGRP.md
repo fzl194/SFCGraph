@@ -60,4 +60,4 @@ RMV POOLBINDGRP: POOLGRPNAME="spoolgrp1", POOLNAME="spool1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-POOLBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除地址池与地址池组的绑定关系（RMV-POOLBINDGRP）_32232826.md`

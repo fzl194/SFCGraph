@@ -66,4 +66,4 @@ UPF实例标识  =  upf_instance_1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-M2MUPFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF和M2M关联的UPF组的绑定关系（LST-M2MUPFBINDGRP）_96242195.md`

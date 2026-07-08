@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRPOOLTHRSH.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRPOOLTHRSH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单池空间告警阈值（LST-CDRPOOLTHRSH）_09897348.md`
+- 原始手册：`evidence/UNC/20.15.2/设置话单池空间告警阈值（SET-CDRPOOLTHRSH）_09897347.md`

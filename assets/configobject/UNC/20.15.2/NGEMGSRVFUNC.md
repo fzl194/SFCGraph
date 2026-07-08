@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGEMGSRVFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NGEMGSRVFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G紧急服务功能（LST-NGEMGSRVFUNC）_64061200.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G紧急服务功能（SET-NGEMGSRVFUNC）_11421225.md`

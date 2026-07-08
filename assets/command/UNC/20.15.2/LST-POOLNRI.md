@@ -73,4 +73,4 @@ POOLNRI表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-POOLNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询POOL区NRI配置信息(LST-POOLNRI)_26146108.md`

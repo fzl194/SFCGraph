@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEDBGPKT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示调测捕获报文（DSP-SFEDBGPKT）_00600685.md`

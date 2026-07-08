@@ -57,4 +57,4 @@ MOD MDTPLMN: MCC="123", MNC="030", DESC="visit";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于管理的最小化路测的PLMN(MOD-MDTPLMN)_99234137.md`

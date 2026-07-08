@@ -72,4 +72,4 @@ ADD SQOSCAR:BEHAVIORNAME="b1",CIR=10,PIR=20,CBS=30,PBS=40,GREENACTION=remark,GRE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SQOSCAR.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流行为CAR配置（ADD-SQOSCAR）_50280710.md`

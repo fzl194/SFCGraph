@@ -61,4 +61,4 @@ ADD MCASTLOADSPLIT:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,LOADSPLITTING=BA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MCASTLOADSPLIT.md`
+- 原始手册：`evidence/UNC/20.15.2/添加组播负载分担配置（ADD-MCASTLOADSPLIT）_50281506.md`

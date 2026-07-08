@@ -67,4 +67,4 @@ ADD IPLIST:IPLISTNAME="test01",IPVERSION=IPV4,IPV4ADDR="10.0.0.1",MASKVALUE=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IPLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IP地址列表（ADD-IPLIST）_82837337.md`

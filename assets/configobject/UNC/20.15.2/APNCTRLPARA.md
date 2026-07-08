@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCTRLPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的信令控制参数(MOD-APNCTRLPARA)_26145784.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的信令控制参数(RMV-APNCTRLPARA)_72225463.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的信令控制参数(ADD-APNCTRLPARA)_72345383.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的信令控制参数(LST-APNCTRLPARA)_26305594.md`

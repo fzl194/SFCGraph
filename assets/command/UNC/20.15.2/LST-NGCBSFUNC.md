@@ -70,4 +70,4 @@ WarningAreaList信元精简开关  =  关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGCBSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询小区广播功能（LST-NGCBSFUNC）_51856022.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBIPRMTENDPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIPRMTENDPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIPRMTENDPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIPRMTENDPT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端端点配置(MOD-GBIPRMTENDPT)_26146014.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端端点配置(RMV-GBIPRMTENDPT)_72345613.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端端点配置(ADD-GBIPRMTENDPT)_26305822.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端端点配置(LST-GBIPRMTENDPT)_72225693.md`

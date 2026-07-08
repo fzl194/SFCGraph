@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACSSYNCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ACS的配置同步信息(DSP-ACSSYNCINFO)_87082450.md`

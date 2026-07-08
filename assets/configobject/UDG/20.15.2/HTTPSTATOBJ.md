@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPSTATOBJ.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPSTATOBJ.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于对端结点的性能统计测量对象信息（RMV-HTTPSTATOBJ）_86240312.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于对端结点的性能统计测量对象信息（LST-HTTPSTATOBJ）_31878393.md`

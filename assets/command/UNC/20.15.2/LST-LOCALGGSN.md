@@ -72,4 +72,4 @@ IP+掩码          IPv4          192.168.0.0     192.168.0.0     255.255.255.255
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCALGGSN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地GGSN列表(LST-LOCALGGSN)_26305738.md`

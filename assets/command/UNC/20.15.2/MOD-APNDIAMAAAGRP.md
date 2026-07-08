@@ -59,4 +59,4 @@ MOD APNDIAMAAAGRP:APN="apn",GROUPNAME="diametergroup1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNDIAMAAAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN的Diameter-AAA服务器组（MOD-APNDIAMAAAGRP）_64343895.md`

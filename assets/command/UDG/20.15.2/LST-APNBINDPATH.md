@@ -68,4 +68,4 @@ APN与探测路径的绑定关系
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNBINDPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APNBindPath配置（LST-APNBINDPATH）_47782531.md`

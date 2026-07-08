@@ -77,4 +77,4 @@ MOD BWMRULEGLOBAL:BWMRULENAME="testbwmruleglobal",BWMSERVICENAME="bs3",UPBWMCTRL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-BWMRULEGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改全局带宽管理规则（MOD-BWMRULEGLOBAL）_82837483.md`

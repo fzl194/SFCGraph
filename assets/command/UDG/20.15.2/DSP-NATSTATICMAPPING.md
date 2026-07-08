@@ -73,4 +73,4 @@ Start Port of the Global IPv4 Address  =  2048
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NATSTATICMAPPING.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NAT静态地址映射关系（DSP-NATSTATICMAPPING）_05939508.md`

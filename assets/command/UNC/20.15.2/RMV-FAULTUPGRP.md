@@ -58,4 +58,4 @@ RMV FAULTUPGRP: UPFGRPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-FAULTUPGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障UPF组（RMV-FAULTUPGRP）_38422729.md`

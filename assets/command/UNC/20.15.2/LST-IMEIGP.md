@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IMEIGP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMEI群组(LST-IMEIGP)_26145758.md`

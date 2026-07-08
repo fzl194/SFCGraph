@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMRTNEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMRTNEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMRTNEXTHOP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter路由下一跳（RMV-UPDIAMRTNEXTHOP）_97314575.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter路由下一跳（ADD-UPDIAMRTNEXTHOP）_45432708.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter路由下一跳（LST-UPDIAMRTNEXTHOP）_45195198.md`

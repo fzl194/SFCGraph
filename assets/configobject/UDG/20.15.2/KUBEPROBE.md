@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/KUBEPROBE.md`
-- 原始手册：`evidence/UDG/20.15.2/KUBEPROBE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询是否放通就绪状态检测（LST-KUBEPROBE）_61502717.md`
+- 原始手册：`evidence/UDG/20.15.2/设置是否放通就绪状态检测（SET-KUBEPROBE）_13782000.md`

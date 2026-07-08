@@ -26,5 +26,5 @@ SERVICETYPE选择HAFETCD后，执行该命令会导致整系统复位。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INNERTLSMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/INNERTLSMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TLS模式（LST-INNERTLSMODE）_63673348.md`
+- 原始手册：`evidence/UNC/20.15.2/设置TLS模式（SET-INNERTLSMODE）_63673351.md`

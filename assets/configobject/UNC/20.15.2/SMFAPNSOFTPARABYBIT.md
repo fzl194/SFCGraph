@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNSOFTPARABYBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNSOFTPARABYBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF-APN软件参数比特位（LST-SMFAPNSOFTPARABYBIT）_25121195.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF-APN软件参数比特位（SET-SMFAPNSOFTPARABYBIT）_25121214.md`

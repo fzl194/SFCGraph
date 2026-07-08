@@ -58,4 +58,4 @@ RMV L2TPRDSCLIENT:APN="huawei.com",INTERFACENAME="giif1/0/0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-L2TPRDSCLIENT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN绑定的L2TP接口（RMV-L2TPRDSCLIENT）_35373541.md`

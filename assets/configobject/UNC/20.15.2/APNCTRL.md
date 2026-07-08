@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN控制参数配置(MOD-APNCTRL)_26305282.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN控制参数配置(RMV-APNCTRL)_72225151.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN控制参数配置(ADD-APNCTRL)_26145470.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN控制参数配置(LST-APNCTRL)_72345069.md`

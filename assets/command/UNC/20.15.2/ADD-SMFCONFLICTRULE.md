@@ -69,4 +69,4 @@ ADD SMFCONFLICTRULE: CSTYPE=SMC_SM, PROCTYPE="ProcedureTypeN4DdnReportAsHsmfN11"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFCONFLICTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加冲突规则（ADD-SMFCONFLICTRULE）_60039241.md`

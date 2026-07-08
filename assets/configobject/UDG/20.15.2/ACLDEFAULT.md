@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLDEFAULT.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLDEFAULT.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLDEFAULT.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLDEFAULT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改缺省Acl绑定（MOD-ACLDEFAULT）_82837740.md`
+- 原始手册：`evidence/UDG/20.15.2/删除缺省Acl绑定（RMV-ACLDEFAULT）_82837741.md`
+- 原始手册：`evidence/UDG/20.15.2/增加缺省Acl绑定（ADD-ACLDEFAULT）_82837739.md`
+- 原始手册：`evidence/UDG/20.15.2/查询缺省Acl绑定（LST-ACLDEFAULT）_82837742.md`

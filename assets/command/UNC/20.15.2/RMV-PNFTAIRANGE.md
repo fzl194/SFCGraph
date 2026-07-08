@@ -67,4 +67,4 @@ RMV PNFTAIRANGE: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFTAIRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的TAI范围（RMV-PNFTAIRANGE）_09653128.md`

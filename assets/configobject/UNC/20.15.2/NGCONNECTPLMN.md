@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGCONNECTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGCONNECTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGCONNECTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGCONNECTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-Connect-PLMN（MOD-NGCONNECTPLMN）_09651707.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-Connect-PLMN（RMV-NGCONNECTPLMN）_09653618.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-Connect-PLMN（ADD-NGCONNECTPLMN）_09651402.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-Connect-PLMN（LST-NGCONNECTPLMN）_09653790.md`

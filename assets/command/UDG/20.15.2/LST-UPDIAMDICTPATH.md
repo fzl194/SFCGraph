@@ -65,4 +65,4 @@ Diameter字典加载路径
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPDIAMDICTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter字典加载路径（LST-UPDIAMDICTPATH）_97080147.md`

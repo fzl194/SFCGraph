@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ATTACKDEFEND.md`
-- 原始手册：`evidence/UDG/20.15.2/ATTACKDEFEND.md`
+- 原始手册：`evidence/UDG/20.15.2/查询攻击防范参数（LST-ATTACKDEFEND）_49961062.md`
+- 原始手册：`evidence/UDG/20.15.2/设置攻击防范参数（SET-ATTACKDEFEND）_49961362.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYALLPKTLEVEL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置上送报文总体速率等级（SET-SECPOLICYALLPKTLEVEL）_49960854.md`

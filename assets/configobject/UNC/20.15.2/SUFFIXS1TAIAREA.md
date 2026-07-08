@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUFFIXS1TAIAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/SUFFIXS1TAIAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/SUFFIXS1TAIAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF服务区名称以TAC后缀方式绑定的S1TAI范围（RMV-SUFFIXS1TAIAREA）_70462617.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF服务区名称以TAC后缀方式绑定的S1TAI范围（ADD-SUFFIXS1TAIAREA）_23622926.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF服务区名称以TAC后缀方式绑定的S1TAI范围（LST-SUFFIXS1TAIAREA）_23622966.md`

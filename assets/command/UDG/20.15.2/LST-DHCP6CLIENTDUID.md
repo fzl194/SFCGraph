@@ -61,4 +61,4 @@ DUID生成方式  =  链路地址加虚拟局域网标识号模式
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DHCP6CLIENTDUID.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DHCPv6客户端DUID生成方式（LST-DHCP6CLIENTDUID）_00841313.md`

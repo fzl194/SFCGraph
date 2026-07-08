@@ -73,4 +73,4 @@ SET UPINFO: HOSTNAME="UPF27";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UP信息（SET-UPINFO）_47230273.md`

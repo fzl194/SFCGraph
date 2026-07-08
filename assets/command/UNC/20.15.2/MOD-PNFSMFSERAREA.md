@@ -67,4 +67,4 @@ MOD PNFSMFSERAREA: NFINSTANCEID="UPF_Instance_0", SMFSERVINGAREA="area01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFSMFSERAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的SMF服务区域信息（MOD-PNFSMFSERAREA）_52137135.md`

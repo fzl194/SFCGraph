@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N16ASMFDATACHK.md`
-- 原始手册：`evidence/UNC/20.15.2/N16ASMFDATACHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N16aSMF数据核查功能（LST-N16ASMFDATACHK）_77579556.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N16aSMF数据核查开关（SET-N16ASMFDATACHK）_13939901.md`

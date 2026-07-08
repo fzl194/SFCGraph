@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFINDEXRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFINDEXRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFINDEXRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSFINDEX路由（RMV-NRFBSFINDEXRT）_44007679.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BSFINDEX路由（ADD-NRFBSFINDEXRT）_44006485.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSFINDEX路由（LST-NRFBSFINDEXRT）_44007034.md`

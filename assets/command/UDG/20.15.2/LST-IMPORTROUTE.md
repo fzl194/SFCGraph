@@ -70,4 +70,4 @@ vrf1           IPv4uni          静态路由             0                   NUL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IMPORTROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询指定协议中的入口路由配置（LST-IMPORTROUTE）_00440661.md`

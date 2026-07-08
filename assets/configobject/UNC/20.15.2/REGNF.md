@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REGNF.md`
-- 原始手册：`evidence/UNC/20.15.2/REGNF.md`
+- 原始手册：`evidence/UNC/20.15.2/禁止NF实例（INH-REGNF）_09651532.md`
+- 原始手册：`evidence/UNC/20.15.2/解禁NF实例（UIN-REGNF）_09652663.md`

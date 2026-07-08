@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LBPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询负载均衡策略（DSP-LBPLY）_29627115.md`

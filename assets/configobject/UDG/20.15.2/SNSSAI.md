@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SNSSAI.md`
-- 原始手册：`evidence/UDG/20.15.2/SNSSAI.md`
-- 原始手册：`evidence/UDG/20.15.2/SNSSAI.md`
+- 原始手册：`evidence/UDG/20.15.2/删除NF支持的网络切片选择标识（RMV-SNSSAI）_95089579.md`
+- 原始手册：`evidence/UDG/20.15.2/增加NF支持的网络切片选择标识（ADD-SNSSAI）_95089577.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NF支持的网络切片选择标识（LST-SNSSAI）_95089578.md`

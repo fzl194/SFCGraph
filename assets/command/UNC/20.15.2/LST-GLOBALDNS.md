@@ -77,4 +77,4 @@ IPv6 第四优先级服务器属性  =  pcrf
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLOBALDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询系统默认DNS（LST-GLOBALDNS）_09651751.md`

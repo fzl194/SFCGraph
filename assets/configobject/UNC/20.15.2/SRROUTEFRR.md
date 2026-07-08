@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRROUTEFRR.md`
-- 原始手册：`evidence/UNC/20.15.2/SRROUTEFRR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态路由FRR（LST-SRROUTEFRR）_00601389.md`
+- 原始手册：`evidence/UNC/20.15.2/设置静态路由FRR（SET-SRROUTEFRR）_49960966.md`

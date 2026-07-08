@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWEDPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWEDPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWEDPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF允许的PLMN信息（RMV-PNFALLOWEDPLMN）_09653099.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF允许的PLMN信息（ADD-PNFALLOWEDPLMN）_09652467.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF允许的PLMN信息（LST-PNFALLOWEDPLMN）_09653673.md`

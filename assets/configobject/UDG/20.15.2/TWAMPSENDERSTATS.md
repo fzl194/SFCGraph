@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TWAMPSENDERSTATS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示TWAMP发送端详细信息（DSP-TWAMPSENDERSTATS）_73142133.md`

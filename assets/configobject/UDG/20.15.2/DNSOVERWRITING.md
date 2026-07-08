@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DNSOVERWRITING.md`
-- 原始手册：`evidence/UDG/20.15.2/DNSOVERWRITING.md`
-- 原始手册：`evidence/UDG/20.15.2/DNSOVERWRITING.md`
-- 原始手册：`evidence/UDG/20.15.2/DNSOVERWRITING.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DNS重写动作配置（MOD-DNSOVERWRITING）_82837551.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DNS重写动作配置（RMV-DNSOVERWRITING）_82837552.md`
+- 原始手册：`evidence/UDG/20.15.2/新增DNS重写动作（ADD-DNSOVERWRITING）_82837549.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS重写动作配置（LST-DNSOVERWRITING）_82837550.md`

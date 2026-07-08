@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ZC.md`
-- 原始手册：`evidence/UNC/20.15.2/ZC.md`
-- 原始手册：`evidence/UNC/20.15.2/ZC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域码(RMV-ZC)_72345163.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域码(ADD-ZC)_26305376.md`
+- 原始手册：`evidence/UNC/20.15.2/查询区域码(LST-ZC)_26145566.md`

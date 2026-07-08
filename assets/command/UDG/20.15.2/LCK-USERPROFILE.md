@@ -63,4 +63,4 @@ LCK USERPROFILE:USERPROFILENAME="testuserprofilename",LOCKFLAG=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCK-USERPROFILE.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户模板的锁定（LCK-USERPROFILE）_97358675.md`

@@ -58,4 +58,4 @@ MOD MULTICASTGRP: MCASTGRPNAME="group", MCASTMACADDR="11-11-11-11-11-11";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-MULTICASTGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改组播组配置（MOD-MULTICASTGRP）_15869841.md`

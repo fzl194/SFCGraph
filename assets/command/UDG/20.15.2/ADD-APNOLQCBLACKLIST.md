@@ -58,4 +58,4 @@ ADD APNOLQCBLACKLIST: APN="testapn";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-APNOLQCBLACKLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加过载限速APN黑名单（ADD-APNOLQCBLACKLIST）_48935923.md`

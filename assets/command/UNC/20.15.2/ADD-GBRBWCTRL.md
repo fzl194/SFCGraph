@@ -66,4 +66,4 @@ ADD GBRBWCTRL:CTRLTYPE=APN_LEVEL,APN="huawei.com",MBRUL=1000,MBRDL=1000,GBRUL=10
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GBRBWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GBR承载带宽速率控制配置（ADD-GBRBWCTRL）_87360188.md`

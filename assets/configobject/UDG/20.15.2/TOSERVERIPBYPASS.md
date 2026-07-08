@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOSERVERIPBYPASS.md`
-- 原始手册：`evidence/UDG/20.15.2/TOSERVERIPBYPASS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询异常Server-IP自动bypass功能配置（LST-TOSERVERIPBYPASS）_27956239.md`
+- 原始手册：`evidence/UDG/20.15.2/设置异常Server-IP自动bypass功能（SET-TOSERVERIPBYPASS）_77522776.md`

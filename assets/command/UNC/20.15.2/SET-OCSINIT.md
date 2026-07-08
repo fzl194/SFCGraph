@@ -69,4 +69,4 @@ SET OCSINIT:DCCTMPLTNAME="DccTemplate",OCSINIT=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-OCSINIT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DCC模板OCS初始化（SET-OCSINIT）_09896932.md`

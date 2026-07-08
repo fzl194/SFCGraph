@@ -63,4 +63,4 @@ SET NGNTNFUNC:NTNTPACCSW=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGNTNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置卫星网络接入管理功能（SET-NGNTNFUNC）_70462625.md`

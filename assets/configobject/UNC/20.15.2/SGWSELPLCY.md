@@ -37,7 +37,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S-GW选择策略(MOD-SGWSELPLCY)_26305784.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S-GW选择策略(RMV-SGWSELPLCY)_72225653.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S-GW选择策略(ADD-SGWSELPLCY)_26145974.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S-GW选择策略(LST-SGWSELPLCY)_72345575.md`

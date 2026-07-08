@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/显示用户IMSI信息（DSP-NGIMSI）_09803702.md`

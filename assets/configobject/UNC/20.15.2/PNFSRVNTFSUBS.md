@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSRVNTFSUBS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSRVNTFSUBS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSRVNTFSUBS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSRVNTFSUBS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF服务实例的回调信息（MOD-PNFSRVNTFSUBS）_09651385.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF服务实例的回调信息（RMV-PNFSRVNTFSUBS）_09652257.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF服务实例的回调信息（ADD-PNFSRVNTFSUBS）_09652612.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF服务实例的回调信息（LST-PNFSRVNTFSUBS）_09652456.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改删除团体属性过滤器设置（MOD-APPLYCOMMUNITYFILTERDELETE）_00440789.md`
+- 原始手册：`evidence/UNC/20.15.2/增加删除团体属性过滤器设置（ADD-APPLYCOMMUNITYFILTERDELETE）_49802186.md`
+- 原始手册：`evidence/UNC/20.15.2/撤销删除团体属性过滤器设置（RMV-APPLYCOMMUNITYFILTERDELETE）_50281818.md`
+- 原始手册：`evidence/UNC/20.15.2/查询删除团体属性过滤器设置（LST-APPLYCOMMUNITYFILTERDELETE）_50281402.md`

@@ -61,4 +61,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCALELOADMON.md`
+- 原始手册：`evidence/UNC/20.15.2/删除自动扩缩容监测的虚机资源（RMV-SCALELOADMON）_24015948.md`

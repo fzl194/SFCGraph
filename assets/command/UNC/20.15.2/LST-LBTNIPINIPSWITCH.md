@@ -58,4 +58,4 @@ CSLB隧道IP-in-IP配置开关  =  CSLB隧道IP-in-IP开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LBTNIPINIPSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSLB隧道IP-in-IP开关（LST-LBTNIPINIPSWITCH）_21904504.md`

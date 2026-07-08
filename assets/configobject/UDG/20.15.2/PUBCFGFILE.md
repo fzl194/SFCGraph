@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PUBCFGFILE.md`
+- 原始手册：`evidence/UDG/20.15.2/上传绑定配置域信息（ULD-PUBCFGFILE）_68425110.md`

@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/SERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/复位业务（RST-SERVICE）_51174329.md`
+- 原始手册：`evidence/UNC/20.15.2/显示业务状态（DSP-SERVICE）_51174328.md`

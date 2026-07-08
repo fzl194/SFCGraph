@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCSCFCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-CSCF控制配置（LST-PCSCFCTRL）_09653780.md`
+- 原始手册：`evidence/UNC/20.15.2/设置P-CSCF控制配置（SET-PCSCFCTRL）_09653206.md`

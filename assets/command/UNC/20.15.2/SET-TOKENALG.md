@@ -66,4 +66,4 @@ SET TOKENALG:ALGNAME=RS384;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-TOKENALG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Token签名算法（SET-TOKENALG）_09653632.md`

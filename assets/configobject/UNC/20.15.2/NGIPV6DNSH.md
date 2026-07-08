@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGIPV6DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPV6DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPV6DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/NGIPV6DNSH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6-DNS-Hostfile记录（MOD-NGIPV6DNSH）_09652953.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6-DNS-Hostfile记录（RMV-NGIPV6DNSH）_09653120.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv6-DNS-Hostfile记录（ADD-NGIPV6DNSH）_09652334.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6-DNS-Hostfile记录（LST-NGIPV6DNSH）_09653303.md`

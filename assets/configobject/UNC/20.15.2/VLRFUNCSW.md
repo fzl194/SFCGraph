@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRFUNCSW.md`
-- 原始手册：`evidence/UNC/20.15.2/VLRFUNCSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR功能开关（LST-VLRFUNCSW）_53481538.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR功能开关（SET-VLRFUNCSW）_53641466.md`

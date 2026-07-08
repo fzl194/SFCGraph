@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS6.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS6.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS6.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS6.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLRULEBAS6.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基本IPv6-ACL规则（MOD-ACLRULEBAS6）_50121398.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基本IPv6-ACL规则（RMV-ACLRULEBAS6）_50280986.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基本IPv6-ACL规则（ADD-ACLRULEBAS6）_00601037.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基本IPv6-ACL规则（DSP-ACLRULEBAS6）_49801790.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基本IPv6-ACL规则配置（LST-ACLRULEBAS6）_00601501.md`

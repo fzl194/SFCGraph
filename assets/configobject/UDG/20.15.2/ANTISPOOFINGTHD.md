@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ANTISPOOFINGTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/ANTISPOOFINGTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询攻击用户去活报文的阈值（LST-ANTISPOOFINGTHD）_16615233.md`
+- 原始手册：`evidence/UDG/20.15.2/设置攻击用户去活报文的阈值（SET-ANTISPOOFINGTHD）_16615232.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGOSPFPROCGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGOSPFPROCGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGOSPFPROCGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGOSPFPROCGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF进程组自动化配置模板（MOD-AUTOSCALINGOSPFPROCGRP）_50280614.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF进程组自动化配置模板（RMV-AUTOSCALINGOSPFPROCGRP）_49802578.md`
+- 原始手册：`evidence/UDG/20.15.2/增加OSPF进程组自动化配置模板（ADD-AUTOSCALINGOSPFPROCGRP）_00841637.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF进程组自动化配置模板（LST-AUTOSCALINGOSPFPROCGRP）_49960986.md`

@@ -89,4 +89,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ALMINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询告警配置信息（LST-ALMINFO）_92594648.md`

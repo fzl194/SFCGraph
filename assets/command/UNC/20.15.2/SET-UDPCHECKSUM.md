@@ -67,4 +67,4 @@ SET UDPCHECKSUM:UDPTYPE=DHCP,SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-UDPCHECKSUM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UNC发送的UDP报文中是否携带checksum（SET-UDPCHECKSUM）_93899600.md`

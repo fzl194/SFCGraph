@@ -52,4 +52,4 @@ Plat_Base            online
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-FUNCTIONSETSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示网络功能集状态（DSP-FUNCTIONSETSTAT）_18818227.md`

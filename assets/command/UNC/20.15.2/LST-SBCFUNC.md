@@ -72,4 +72,4 @@ Warning IND消息选路优化  =  关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SBCFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询小区广播功能(LST-SBCFUNC)_72345979.md`

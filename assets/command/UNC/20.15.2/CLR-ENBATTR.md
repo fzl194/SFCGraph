@@ -61,4 +61,4 @@ CLR ENBATTR: ENBTYPE=HOME_ENODEB, MCC="123", MNC="01", ENBID=327697, ATTRTYPE=RA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-ENBATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/清除eNodeB属性(CLR-ENBATTR)_26146262.md`

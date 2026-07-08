@@ -59,4 +59,4 @@ RMV SERVUSR: RMVTP=IMSI, IMSI="123071104000955";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SERVUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/模拟设备故障删除用户信息(RMV-SERVUSR)_26305928.md`

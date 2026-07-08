@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOMEMCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TOMEMCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP-Socket缓存配置（LST-TOMEMCFG）_44038780.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP-Socket缓存配置（SET-TOMEMCFG）_31379097.md`

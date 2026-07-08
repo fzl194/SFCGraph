@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VERSION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示系统版本信息（DSP-VERSION）_59103553.md`

@@ -54,4 +54,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-HIGHRISKPERIOD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置高危时间段提示状态（SET-HIGHRISKPERIOD）_15084970.md`

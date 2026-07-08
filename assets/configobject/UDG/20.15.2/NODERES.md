@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NODERES.md`
+- 原始手册：`evidence/UDG/20.15.2/查询节点资源信息（DSP-NODERES）_86553878.md`

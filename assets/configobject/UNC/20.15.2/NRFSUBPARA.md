@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSUBPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSUBPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF订阅参数（LST-NRFSUBPARA）_04284715.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF订阅参数（SET-NRFSUBPARA）_04284726.md`

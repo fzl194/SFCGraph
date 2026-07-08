@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNAMBRCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAMBRCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAMBRCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAMBRCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN-AMBR控制的配置（MOD-APNAMBRCTRL）_87520120.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN-AMBR控制的配置（RMV-APNAMBRCTRL）_40039921.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN-AMBR控制的配置（ADD-APNAMBRCTRL）_39919385.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-AMBR控制的配置（LST-APNAMBRCTRL）_87839688.md`

@@ -61,4 +61,4 @@ MOD POOLBINDGRP: POOLGRPNAME="poolgroup1", POOLNAME="pool1", PRIORITY=15;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-POOLBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改地址池与地址池组的绑定关系（MOD-POOLBINDGRP）_64343898.md`

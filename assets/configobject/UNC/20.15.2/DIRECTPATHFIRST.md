@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIRECTPATHFIRST.md`
-- 原始手册：`evidence/UNC/20.15.2/DIRECTPATHFIRST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询直连路径优先开关（LST-DIRECTPATHFIRST）_61818782.md`
+- 原始手册：`evidence/UNC/20.15.2/设置直连路径优先开关（SET-DIRECTPATHFIRST）_09897318.md`

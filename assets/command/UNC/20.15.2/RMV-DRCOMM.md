@@ -59,4 +59,4 @@ RMV DRCOMM: DRINSTID=1, IPVERSION=COMM_IPV4, COMMIPV4="192.168.1.2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DRCOMM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除容灾实例地址(RMV-DRCOMM)_51012926.md`

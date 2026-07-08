@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSTRANS.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSTRANS.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSTRANS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除签约QoS转换配置(RMV-QOSTRANS)_26146232.md`
+- 原始手册：`evidence/UNC/20.15.2/增加签约QoS转换配置(ADD-QOSTRANS)_72345831.md`
+- 原始手册：`evidence/UNC/20.15.2/查询签约QoS转换配置(LST-QOSTRANS)_72225911.md`

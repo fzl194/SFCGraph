@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMSTATICRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PIMSTATICRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PIMSTATICRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PIMSTATICRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改PIM静态RP配置（MOD-PIMSTATICRP）_50281162.md`
+- 原始手册：`evidence/UDG/20.15.2/删除PIM静态RP配置（RMV-PIMSTATICRP）_49961582.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PIM静态RP配置（LST-PIMSTATICRP）_50121686.md`
+- 原始手册：`evidence/UDG/20.15.2/添加PIM静态RP配置（ADD-PIMSTATICRP）_00865753.md`

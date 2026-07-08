@@ -61,4 +61,4 @@ RMV POOLLA: BGNTAI="308011033";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-POOLLA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除POOL-LA配置信息（RMV-POOLLA）_26305914.md`

@@ -70,4 +70,4 @@ ADD CFTEMPLATE: CFTEMPLATENAME="test", ICAPSRVGMNAME="srg", ACTION=BLOCK;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CFTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容过滤模板（ADD-CFTEMPLATE）_73992447.md`

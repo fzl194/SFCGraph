@@ -51,10 +51,10 @@ CG支持PULL和PUSH两种方式分发话单到计费中心（本文档中又称B
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRDISTR.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRDISTR.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRDISTR.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRDISTR.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRDISTR.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRDISTR.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRDISTR.md`
+- 原始手册：`evidence/UNC/20.15.2/上传SFTP密钥文件到BS侧（UPL-CDRDISTR）_51174252.md`
+- 原始手册：`evidence/UNC/20.15.2/下载SFTP密钥文件到本端（DLD-CDRDISTR）_51174253.md`
+- 原始手册：`evidence/UNC/20.15.2/修改话单分发（MOD-CDRDISTR）_51174256.md`
+- 原始手册：`evidence/UNC/20.15.2/删除话单分发（RMV-CDRDISTR）_51174255.md`
+- 原始手册：`evidence/UNC/20.15.2/增加话单分发（ADD-CDRDISTR）_51174254.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Push及Local方式下分发任务状态（DSP-CDRDISTR）_51174251.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单分发（LST-CDRDISTR）_51174257.md`

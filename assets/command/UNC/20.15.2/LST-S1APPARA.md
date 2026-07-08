@@ -80,4 +80,4 @@ MME配置更新定时器超时重发次数(times)  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-S1APPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1AP协议参数(LST-S1APPARA)_26306068.md`

@@ -85,4 +85,4 @@ IPv4        192.168.100.102  ::        服务器优先等级3  dnsserver1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGDNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS服务器（LST-NGDNSS）_25120888.md`

@@ -72,4 +72,4 @@ Quic SA协议确定后进行匹配的开关 = 不使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SACOMMONPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SA业务公共参数（LST-SACOMMONPARA）_82837415.md`

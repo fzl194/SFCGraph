@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PFCPFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/PFCPFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定PFCP消息类型固定速率流控信息（LST-PFCPFIXEDFC）_70775281.md`
+- 原始手册：`evidence/UNC/20.15.2/设置指定PFCP消息类型固定速率流控信息（SET-PFCPFIXEDFC）_20015330.md`

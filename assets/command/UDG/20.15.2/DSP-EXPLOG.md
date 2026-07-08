@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-EXPLOG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志导出状态（DSP-EXPLOG）_91652968.md`

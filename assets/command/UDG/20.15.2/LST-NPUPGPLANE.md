@@ -62,4 +62,4 @@ RU编号  平面编号
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NPUPGPLANE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP升级平面（LST-NPUPGPLANE）_43297437.md`

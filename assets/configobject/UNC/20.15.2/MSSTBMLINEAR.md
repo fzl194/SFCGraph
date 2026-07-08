@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSSTBMLINEAR.md`
+- 原始手册：`evidence/UNC/20.15.2/通过关键字查询线性表的结果（DSP-MSSTBMLINEAR）_00440361.md`

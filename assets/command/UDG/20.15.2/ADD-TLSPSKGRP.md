@@ -60,4 +60,4 @@ ADD TLSPSKGRP: PSKGRPIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-TLSPSKGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加TLS预共享密钥组（ADD-TLSPSKGRP）_07789673.md`

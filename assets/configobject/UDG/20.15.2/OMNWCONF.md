@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OMNWCONF.md`
-- 原始手册：`evidence/UDG/20.15.2/OMNWCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OM网络探测参数（LST-OMNWCONF）_11910784.md`
+- 原始手册：`evidence/UDG/20.15.2/配置OM网络探测参数（MOD-OMNWCONF）_58550741.md`

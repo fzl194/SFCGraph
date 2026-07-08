@@ -63,4 +63,4 @@ ADD FAULTUPBINDGRP: UPFID="upf_instance_0", UPFGRPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-FAULTUPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N3接口故障UPF与UPF组的绑定关系（ADD-FAULTUPBINDGRP）_94577122.md`

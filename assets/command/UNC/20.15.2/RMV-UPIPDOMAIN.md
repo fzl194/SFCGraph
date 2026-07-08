@@ -61,4 +61,4 @@ RMV UPIPDOMAIN: UPNODE="upf_instance_1", DNNSWITCH=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPIPDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除当前UPF绑定的IP域（RMV-UPIPDOMAIN）_09652498.md`

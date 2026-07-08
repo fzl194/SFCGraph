@@ -74,4 +74,4 @@ UPF组与Diameter本端主机组的绑定关系组名称  =  upfgroup1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPFGBINDLOCG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF组与Diameter本端主机组的关联关系（LST-UPFGBINDLOCG）_16858415.md`

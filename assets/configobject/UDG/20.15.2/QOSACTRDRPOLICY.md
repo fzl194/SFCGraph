@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSACTRDRPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSACTRDRPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSACTRDRPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除流行为下级联流策略（RMV-QOSACTRDRPOLICY）_00440825.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流行为下级联流策略（ADD-QOSACTRDRPOLICY）_00600429.md`
+- 原始手册：`evidence/UDG/20.15.2/查询流行为下级联流策略（LST-QOSACTRDRPOLICY）_00441345.md`

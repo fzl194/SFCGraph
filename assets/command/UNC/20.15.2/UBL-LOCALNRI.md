@@ -57,4 +57,4 @@ UBL LOCALNRI: POOLID=1, NRIVBGN=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UBL-LOCALNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/解闭本局NRI配置信息(UBL-LOCALNRI)_72345701.md`

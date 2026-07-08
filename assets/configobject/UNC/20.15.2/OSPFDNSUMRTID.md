@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFDNSUMRTID.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFDNSUMRTID.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFDNSUMRTID.md`
+- 原始手册：`evidence/UNC/20.15.2/创建特定路由器禁止检查Summary-LSA的DN比特位配置（ADD-OSPFDNSUMRTID）_49802630.md`
+- 原始手册：`evidence/UNC/20.15.2/删除特定路由器禁止检查Summary-LSA的DN比特位配置（RMV-OSPFDNSUMRTID）_49802098.md`
+- 原始手册：`evidence/UNC/20.15.2/查询特定路由器禁止检查Summary-LSA的DN比特位配置（LST-OSPFDNSUMRTID）_00440721.md`

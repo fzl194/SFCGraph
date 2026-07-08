@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DNSIPRESOURCE.md`
-- 原始手册：`evidence/UDG/20.15.2/DNSIPRESOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS-IP地址资源列表（LST-DNSIPRESOURCE）_61928568.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DNS-IP地址资源列表（SET-DNSIPRESOURCE）_12206841.md`

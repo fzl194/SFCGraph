@@ -84,4 +84,4 @@ MOD IKEPEER:PEERNAME="peer1",EXCHANGEMODE=Aggressive;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IKEPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IKE对等体（MOD-IKEPEER）_25830697.md`

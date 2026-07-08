@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSMSFCUTPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSMSFCUTPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF割接场景NRF处理策略（LST-NRFSMSFCUTPLY）_71303602.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF割接场景NRF处理策略（SET-NRFSMSFCUTPLY）_71623462.md`

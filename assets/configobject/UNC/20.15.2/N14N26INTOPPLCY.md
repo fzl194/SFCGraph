@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N14N26INTOPPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N14N26INTOPPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N14N26INTOPPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N14N26INTOPPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N14N26接口跨运营商交互策略（MOD-N14N26INTOPPLCY）_75982856.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N14N26接口跨运营商交互策略（RMV-N14N26INTOPPLCY）_75982868.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N14N26接口跨运营商交互策略（ADD-N14N26INTOPPLCY）_75822960.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N14N26接口跨运营商交互策略（LST-N14N26INTOPPLCY）_21742345.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RGINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/RGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除费率组信息（RMV-RGINFO）_51174323.md`
+- 原始手册：`evidence/UNC/20.15.2/显示费率组信息（LST-RGINFO）_51174324.md`

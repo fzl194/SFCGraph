@@ -63,4 +63,4 @@ SET NGSMARTDNNCL: SMARTCLSW=ON, DNNKEY="multidomain";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGSMARTDNNCL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置智能分流功能（SET-NGSMARTDNNCL）_40039925.md`

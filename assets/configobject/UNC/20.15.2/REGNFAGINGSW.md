@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REGNFAGINGSW.md`
-- 原始手册：`evidence/UNC/20.15.2/REGNFAGINGSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF实例老化开关（LST-REGNFAGINGSW）_09654407.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF实例老化开关（SET-REGNFAGINGSW）_09652581.md`

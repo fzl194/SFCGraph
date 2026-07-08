@@ -57,4 +57,4 @@ RMV PDNROUTETSTPATH: PATHNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PDNROUTETSTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UPF向PDN服务器发送探测消息的探测路径（RMV-PDNROUTETSTPATH）_12872230.md`

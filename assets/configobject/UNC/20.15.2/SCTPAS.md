@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPAS.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPAS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SCTP统计信息(DSP-SCTPAS)_72225535.md`
+- 原始手册：`evidence/UNC/20.15.2/清除SCTP统计信息(CLR-SCTPAS)_26305666.md`

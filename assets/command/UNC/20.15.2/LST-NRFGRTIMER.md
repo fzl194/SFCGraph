@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFGRTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF容灾定时器时长（LST-NRFGRTIMER）_09654171.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VNFPKGS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示网元关联的软件包名称（DSP-VNFPKGS）_41791101.md`

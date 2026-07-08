@@ -140,4 +140,4 @@ NSE标识   RU名称            进程号         BSS编号    FLUSH监控定时
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NSE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NSE属性信息（DSP-NSE）_26146030.md`

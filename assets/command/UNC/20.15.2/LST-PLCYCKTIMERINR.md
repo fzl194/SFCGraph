@@ -58,4 +58,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PLCYCKTIMERINR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询策略类型和核查间隔（LST-PLCYCKTIMERINR）_94850110.md`

@@ -75,4 +75,4 @@ FE节点编号   = 4259585
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SFETABLEVERBOSE.md`
+- 原始手册：`evidence/UDG/20.15.2/按摘要和详情两种方式显示SFE表项信息（DSP-SFETABLEVERBOSE）_49961774.md`

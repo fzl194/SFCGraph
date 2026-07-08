@@ -59,4 +59,4 @@ RMV NGUSERNUMCTRL:PLMNIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGUSERNUMCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G接入用户数控制参数（RMV-NGUSERNUMCTRL）_10217221.md`

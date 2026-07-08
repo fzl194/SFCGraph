@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UERCAPUSNSEL.md`
-- 原始手册：`evidence/UNC/20.15.2/UERCAPUSNSEL.md`
-- 原始手册：`evidence/UNC/20.15.2/UERCAPUSNSEL.md`
-- 原始手册：`evidence/UNC/20.15.2/UERCAPUSNSEL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UE无线能力选择USN参数(MOD-UERCAPUSNSEL)_72911609.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UE无线能力选择USN参数(RMV-UERCAPUSNSEL)_72752281.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UE无线能力选择USN参数(ADD-UERCAPUSNSEL)_25231842.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE无线能力选择USN参数(LST-UERCAPUSNSEL)_25072458.md`

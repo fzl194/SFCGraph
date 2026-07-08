@@ -59,4 +59,4 @@ ADD RACGROUP:RACGROUPNAME="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RACGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RAC组（ADD-RACGROUP）_09652702.md`

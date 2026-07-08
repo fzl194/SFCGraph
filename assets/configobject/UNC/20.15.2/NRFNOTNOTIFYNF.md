@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNOTNOTIFYNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNOTNOTIFYNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNOTNOTIFYNF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除不通知NF实例（RMV-NRFNOTNOTIFYNF）_60089497.md`
+- 原始手册：`evidence/UNC/20.15.2/增加不通知NF实例（ADD-NRFNOTNOTIFYNF）_60329621.md`
+- 原始手册：`evidence/UNC/20.15.2/查询不通知NF实例（LST-NRFNOTNOTIFYNF）_07330082.md`

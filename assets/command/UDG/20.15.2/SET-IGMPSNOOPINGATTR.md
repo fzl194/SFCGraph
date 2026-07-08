@@ -67,4 +67,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-IGMPSNOOPINGATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IGMP-Snooping属性（SET-IGMPSNOOPINGATTR）_06240611.md`

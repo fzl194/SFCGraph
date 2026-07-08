@@ -64,4 +64,4 @@ SET ERRCDRALM: MONITORMODE=PERIOD;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-ERRCDRALM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置错误话单告警参数（SET-ERRCDRALM）_51174331.md`

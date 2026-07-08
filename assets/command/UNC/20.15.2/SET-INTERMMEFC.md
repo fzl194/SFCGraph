@@ -69,4 +69,4 @@ SET INTERMMEFC: FCSWITCH=ON, MINTHD=10, MAXTHD=200;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-INTERMMEFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Inter-MME流控参数(SET-INTERMMEFC)_72345763.md`

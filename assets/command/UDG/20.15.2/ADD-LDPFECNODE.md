@@ -57,4 +57,4 @@ ADD LDPFECNODE:FECLISTNAME="name1",IPADDRESS="192.168.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-LDPFECNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/添加FEC节点（ADD-LDPFECNODE）_50281126.md`

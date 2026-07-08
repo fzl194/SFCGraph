@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RABPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/RABPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RAB参数协商配置(LST-RABPARA)_26146228.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RAB参数协商配置(SET-RABPARA)_72345827.md`

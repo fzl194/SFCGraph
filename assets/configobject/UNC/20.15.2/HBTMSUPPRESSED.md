@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HBTMSUPPRESSED.md`
-- 原始手册：`evidence/UNC/20.15.2/HBTMSUPPRESSED.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF心跳超时抑制时长（LST-HBTMSUPPRESSED）_86184259.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF心跳超时抑制时长（SET-HBTMSUPPRESSED）_86184326.md`

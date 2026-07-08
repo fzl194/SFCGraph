@@ -69,4 +69,4 @@ APNNI组号  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PGWBACKOFF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-GW-Back-off流控参数(LST-PGWBACKOFF)_26146162.md`

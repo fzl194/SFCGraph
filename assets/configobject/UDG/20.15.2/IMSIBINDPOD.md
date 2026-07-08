@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IMSIBINDPOD.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSIBINDPOD.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSIBINDPOD.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSIBINDPOD.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IMSI和Pod的绑定关系（MOD-IMSIBINDPOD）_64015276.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IMSI和Pod的绑定关系（RMV-IMSIBINDPOD）_64015277.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IMSI和Pod绑定关系（ADD-IMSIBINDPOD）_64015275.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IMSI和Pod绑定关系（LST-IMSIBINDPOD）_64015278.md`

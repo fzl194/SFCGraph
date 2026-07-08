@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USRRELATEIDEN.md`
-- 原始手册：`evidence/UDG/20.15.2/USRRELATEIDEN.md`
-- 原始手册：`evidence/UDG/20.15.2/USRRELATEIDEN.md`
-- 原始手册：`evidence/UDG/20.15.2/USRRELATEIDEN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改用户关联识别（MOD-USRRELATEIDEN）_82837434.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户关联识别（RMV-USRRELATEIDEN）_82837435.md`
+- 原始手册：`evidence/UDG/20.15.2/增加用户关联识别（ADD-USRRELATEIDEN）_82837433.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户关联识别（LST-USRRELATEIDEN）_86526961.md`

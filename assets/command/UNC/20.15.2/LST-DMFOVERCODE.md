@@ -70,4 +70,4 @@ RETCODE = 0  执行成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DMFOVERCODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询触发重选路由的错误码(LST-DMFOVERCODE)_26306106.md`

@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CACHEPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/CACHEPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缓存策略（LST-CACHEPLCY）_18037977.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缓存策略（SET-CACHEPLCY）_17997841.md`

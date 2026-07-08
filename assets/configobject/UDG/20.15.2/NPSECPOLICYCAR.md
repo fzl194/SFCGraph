@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPSECPOLICYCAR.md`
-- 原始手册：`evidence/UDG/20.15.2/NPSECPOLICYCAR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP安全防攻击CAR规则(LST-NPSECPOLICYCAR)_60241155.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NP安全防攻击CAR规则(SET-NPSECPOLICYCAR)_15401278.md`

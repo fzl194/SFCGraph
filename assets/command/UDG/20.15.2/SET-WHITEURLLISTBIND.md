@@ -61,4 +61,4 @@ SET WHITEURLLISTBIND:USERPROFILENAME="testuserprofilename",WhiteListName="testwh
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-WHITEURLLISTBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户模板的URL白名单列表（SET-WHITEURLLISTBIND）_82837282.md`

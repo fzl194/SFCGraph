@@ -76,4 +76,4 @@ MOD RGTRIGGER: CCTMPLTNAME="test", QOSCHG=DEFERRED;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-RGTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RG级的trigger参数（MOD-RGTRIGGER）_09653135.md`

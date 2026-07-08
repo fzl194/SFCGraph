@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OPSASSISTSTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示系统助手的当前信息（DSP-OPSASSISTSTATE）_00601449.md`

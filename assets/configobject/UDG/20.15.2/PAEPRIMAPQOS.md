@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEPRIMAPQOS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示报文优先级与QoS映射信息（DSP-PAEPRIMAPQOS）_92520026.md`

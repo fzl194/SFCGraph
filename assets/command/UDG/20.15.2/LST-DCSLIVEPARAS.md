@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DCSLIVEPARAS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DCS直播参数（LST-DCSLIVEPARAS）_76289642.md`

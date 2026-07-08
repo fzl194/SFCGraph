@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MPLSLSPSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MPLS-LSP统计信息（DSP-MPLSLSPSTC）_50121070.md`

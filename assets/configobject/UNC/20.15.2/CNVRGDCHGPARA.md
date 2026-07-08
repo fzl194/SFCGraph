@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CNVRGDCHGPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/CNVRGDCHGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合计费全局参数（LST-CNVRGDCHGPARA）_09654403.md`
+- 原始手册：`evidence/UNC/20.15.2/设置融合计费全局参数（SET-CNVRGDCHGPARA）_09653056.md`

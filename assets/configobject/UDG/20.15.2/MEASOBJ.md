@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MEASOBJ.md`
+- 原始手册：`evidence/UDG/20.15.2/查询话统测量对象实例(DSP-MEASOBJ)_01094728.md`

@@ -60,4 +60,4 @@ RMV ALLOWEDNFDOMAIN: INDEX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWEDNFDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF或NF服务支持的域名（RMV-ALLOWEDNFDOMAIN）_09651481.md`

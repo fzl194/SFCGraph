@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTOCOL.md`
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTOCOL.md`
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTOCOL.md`
-- 原始手册：`evidence/UDG/20.15.2/INSAPROTOCOL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改黑白名单协议配置（MOD-INSAPROTOCOL）_06764055.md`
+- 原始手册：`evidence/UDG/20.15.2/删除黑白名单协议配置（RMV-INSAPROTOCOL）_06564541.md`
+- 原始手册：`evidence/UDG/20.15.2/增加黑白名单协议配置（ADD-INSAPROTOCOL）_56405096.md`
+- 原始手册：`evidence/UDG/20.15.2/查询黑白名单协议配置（LST-INSAPROTOCOL）_56165570.md`

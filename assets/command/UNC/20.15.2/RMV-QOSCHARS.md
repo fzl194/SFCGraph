@@ -59,4 +59,4 @@ RMV QOSCHARS: FQI=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-QOSCHARS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS特征（RMV-QOSCHARS）_24796836.md`

@@ -62,4 +62,4 @@ RMV SGWSEGGCHGMETH: SEGGROUPNAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SGWSEGGCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-IMSI_MSISDN-Group-Charge-Method（RMV-SGWSEGGCHGMETH）_09896997.md`

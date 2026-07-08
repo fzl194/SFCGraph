@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNOLQCBLACKLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/APNOLQCBLACKLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/APNOLQCBLACKLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除过载限速APN黑名单（RMV-APNOLQCBLACKLIST）_96809506.md`
+- 原始手册：`evidence/UDG/20.15.2/增加过载限速APN黑名单（ADD-APNOLQCBLACKLIST）_48935923.md`
+- 原始手册：`evidence/UDG/20.15.2/查询过载限速APN黑名单（LST-APNOLQCBLACKLIST）_97047260.md`

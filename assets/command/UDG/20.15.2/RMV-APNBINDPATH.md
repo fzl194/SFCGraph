@@ -56,4 +56,4 @@ RMV APNBINDPATH: APN="testapn", DETECTPATH="testpath3";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-APNBINDPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APNBindPath配置（RMV-APNBINDPATH）_47263203.md`

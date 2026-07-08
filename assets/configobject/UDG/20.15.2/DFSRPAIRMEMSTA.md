@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DFSRPAIRMEMSTA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示双发选收结对成员状态（DSP-DFSRPAIRMEMSTA）_23157714.md`

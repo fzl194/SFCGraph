@@ -68,4 +68,4 @@ LST HLRBYPASS:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HLRBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HLR故障Bypass功能控制参数(LST-HLRBYPASS)_04432482.md`

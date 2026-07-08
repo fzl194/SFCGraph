@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNCHARGECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCHARGECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的计费配置（LST-APNCHARGECTRL）_09896818.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN的计费配置（SET-APNCHARGECTRL）_09896817.md`

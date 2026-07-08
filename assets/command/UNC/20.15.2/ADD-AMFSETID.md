@@ -68,4 +68,4 @@ ADD AMFSETID: INDEX=1, SST=1, SD="010101", MCC="460", MNC="03", REGIONID="01", A
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFSETID.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF集与切片的关系（ADD-AMFSETID）_09651530.md`

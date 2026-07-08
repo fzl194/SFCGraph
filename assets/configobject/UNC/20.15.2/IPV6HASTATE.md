@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPV6HASTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6组件与其他组件交互信息（DSP-IPV6HASTATE）_00441329.md`

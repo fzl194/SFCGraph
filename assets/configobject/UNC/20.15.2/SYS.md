@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYS.md`
-- 原始手册：`evidence/UNC/20.15.2/SYS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询系统参数(LST-SYS)_26146348.md`
+- 原始手册：`evidence/UNC/20.15.2/设置系统参数(SET-SYS)_72345947.md`

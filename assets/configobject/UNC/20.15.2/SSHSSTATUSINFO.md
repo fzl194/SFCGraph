@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SSHSSTATUSINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示服务器运行状态信息（DSP-SSHSSTATUSINFO）_50281754.md`

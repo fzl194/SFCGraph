@@ -59,4 +59,4 @@ RMV MSCCRCACT:DCCTMPLTNAME="global",MSCCRC="5012";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MSCCRCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MSCC层异常返回码处理动作（RMV-MSCCRCACT）_09896942.md`

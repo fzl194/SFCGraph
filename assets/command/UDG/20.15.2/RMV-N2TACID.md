@@ -57,4 +57,4 @@ RMV N2TACID:TACGROUPNAME="beijing",TACSECNUM=2;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-N2TACID.md`
+- 原始手册：`evidence/UDG/20.15.2/从N2TAC组内删除一个TAC（RMV-N2TACID）_97358682.md`

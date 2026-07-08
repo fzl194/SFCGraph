@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNSDNNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNSDNNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNSDNNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN和网络切片路由（RMV-NRFNSDNNRT）_09653011.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN和网络切片路由（ADD-NRFNSDNNRT）_09651810.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN和网络切片路由（LST-NRFNSDNNRT）_09654157.md`

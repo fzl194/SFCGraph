@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUBSMARTDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBSMARTDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBSMARTDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能分流DNN（RMV-SUBSMARTDNN）_40119817.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能分流DNN（ADD-SUBSMARTDNN）_39800053.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能分流DNN（LST-SUBSMARTDNN）_87839692.md`

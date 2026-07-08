@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AGGREGATEROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/AGGREGATEROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/AGGREGATEROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/AGGREGATEROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BGP聚合路由（MOD-AGGREGATEROUTE）_00440969.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP聚合路由（RMV-AGGREGATEROUTE）_00866721.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP聚合路由（ADD-AGGREGATEROUTE）_00600909.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP聚合路由（LST-AGGREGATEROUTE）_49802086.md`

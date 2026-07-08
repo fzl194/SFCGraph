@@ -65,4 +65,4 @@ ADD DMVLE: LOINDEX=32, LOHSTNAME="mmec01.mmegi8001.mme.epc.mnc123.mcc123.3gppnet
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DMVLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter虚拟本地实体(ADD-DMVLE)_26146296.md`

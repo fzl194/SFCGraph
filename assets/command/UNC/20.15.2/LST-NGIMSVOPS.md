@@ -65,4 +65,4 @@ Data Centric类型终端支持VoPS  =  支持
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGIMSVOPS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VoPS配置（LST-NGIMSVOPS）_09653054.md`

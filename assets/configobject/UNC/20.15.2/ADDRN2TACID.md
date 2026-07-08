@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADDRN2TACID.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRN2TACID.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRN2TACID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N2TAC组内N2TAC号段（RMV-ADDRN2TACID）_49644927.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N2TAC组内N2TAC号段（ADD-ADDRN2TACID）_49644908.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2TAC组内N2TAC号段（LST-ADDRN2TACID）_49644914.md`

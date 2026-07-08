@@ -65,4 +65,4 @@ VPN实例名称  =  vrf1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPDBGPPEERGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP对等体分组（LST-UPDBGPPEERGROUP）_47061733.md`

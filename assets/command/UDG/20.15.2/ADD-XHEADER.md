@@ -70,4 +70,4 @@ ADD XHEADER: XHEADERNAME="testxheader", XHEADER="x-mms", XHEADERVALUE="1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-XHEADER.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展头域（ADD-XHEADER）_82361421.md`

@@ -65,4 +65,4 @@ MOD STDQOSID:QOSIDTYPE=QCI,QOSIDSV=65,QOSIDEV=66;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-STDQOSID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改标准QoS-ID配置（MOD-STDQOSID）_06399923.md`

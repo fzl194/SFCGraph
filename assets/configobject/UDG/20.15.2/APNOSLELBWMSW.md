@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNOSLELBWMSW.md`
-- 原始手册：`evidence/UDG/20.15.2/APNOSLELBWMSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN操作系统级带宽管理开关（LST-APNOSLELBWMSW）_82837499.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN操作系统级带宽管理开关（SET-APNOSLELBWMSW）_82837498.md`

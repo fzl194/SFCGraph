@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NWNAMEBYHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/NWNAMEBYHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/NWNAMEBYHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除不发送运营商名称的HSS(RMV-NWNAMEBYHSS)_08872280.md`
+- 原始手册：`evidence/UNC/20.15.2/增加不发送运营商名称的HSS(ADD-NWNAMEBYHSS)_09030572.md`
+- 原始手册：`evidence/UNC/20.15.2/查询不发送运营商名称的HSS(LST-NWNAMEBYHSS)_45110285.md`

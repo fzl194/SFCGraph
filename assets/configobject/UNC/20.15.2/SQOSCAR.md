@@ -26,7 +26,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SQOSCAR.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSCAR.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSCAR.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSCAR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改流行为CAR配置（MOD-SQOSCAR）_49802418.md`
+- 原始手册：`evidence/UNC/20.15.2/删除流行为CAR配置（RMV-SQOSCAR）_00440429.md`
+- 原始手册：`evidence/UNC/20.15.2/增加流行为CAR配置（ADD-SQOSCAR）_50280710.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流行为CAR配置（LST-SQOSCAR）_49961358.md`

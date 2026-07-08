@@ -66,4 +66,4 @@ ADD PNFGUAMI: NFINSTANCEID="AMF_Instance_1", MCC="460", MNC="03", AMFID="000001"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFGUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端AMF的GUAMI信息（ADD-PNFGUAMI）_09653092.md`

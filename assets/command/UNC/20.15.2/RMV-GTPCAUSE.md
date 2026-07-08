@@ -59,4 +59,4 @@ RMV GTPCAUSE: GTPVERSION=GTPV0V1, REJCAUSE=194;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPCAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP原因值(RMV-GTPCAUSE)_26305596.md`

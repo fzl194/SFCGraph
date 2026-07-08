@@ -57,4 +57,4 @@ RMV RESTOAPN: APNNI="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RESTOAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除容灾APN特征参数(RMV-RESTOAPN)_72345715.md`

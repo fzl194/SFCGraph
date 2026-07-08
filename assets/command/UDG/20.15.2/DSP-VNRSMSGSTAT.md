@@ -85,4 +85,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-VNRSMSGSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNRS消息统计（DSP-VNRSMSGSTAT）_29627100.md`

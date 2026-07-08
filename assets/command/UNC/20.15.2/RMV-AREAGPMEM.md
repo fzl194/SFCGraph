@@ -66,4 +66,4 @@ RMV AREAGPMEM: AREAID=1, IDTYPE=LA, MCC="111", MNC="222", LAC="0x3333";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AREAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域群成员(RMV-AREAGPMEM)_26305356.md`

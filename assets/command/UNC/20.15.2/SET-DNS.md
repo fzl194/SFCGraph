@@ -89,4 +89,4 @@ SET DNS: LOCALTTL=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DNS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DNS运行参数(SET-DNS)_72345495.md`

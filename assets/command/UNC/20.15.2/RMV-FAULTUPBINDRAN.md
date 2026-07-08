@@ -62,4 +62,4 @@ RMV FAULTUPBINDRAN: RANGRPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-FAULTUPBINDRAN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障网元组绑定（RMV-FAULTUPBINDRAN）_93222844.md`

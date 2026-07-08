@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMS-CHR流程控制模板（MOD-SMSCHRPRCTMPL）_03961137.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMS-CHR流程控制模板（RMV-SMSCHRPRCTMPL）_53481542.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMS-CHR流程控制模板（ADD-SMSCHRPRCTMPL）_53481530.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS-CHR流程控制模板（LST-SMSCHRPRCTMPL）_04041269.md`

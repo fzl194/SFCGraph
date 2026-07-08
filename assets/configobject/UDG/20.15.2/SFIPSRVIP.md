@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFIPSRVIP.md`
-- 原始手册：`evidence/UDG/20.15.2/SFIPSRVIP.md`
-- 原始手册：`evidence/UDG/20.15.2/SFIPSRVIP.md`
-- 原始手册：`evidence/UDG/20.15.2/SFIPSRVIP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改SFIP业务IP（MOD-SFIPSRVIP）_91652972.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SFIP业务IP（RMV-SFIPSRVIP）_42536159.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SFIP业务IP（LST-SFIPSRVIP）_91417212.md`
+- 原始手册：`evidence/UDG/20.15.2/添加SFIP业务IP（ADD-SFIPSRVIP）_42491899.md`

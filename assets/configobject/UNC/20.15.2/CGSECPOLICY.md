@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CGSECPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/CGSECPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询安全策略（LST-CGSECPOLICY）_51174351.md`
+- 原始手册：`evidence/UNC/20.15.2/设置安全策略（SET-CGSECPOLICY）_51174350.md`

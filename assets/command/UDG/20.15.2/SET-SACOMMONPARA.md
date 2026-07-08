@@ -80,4 +80,4 @@ SET SACOMMONPARA:  NORSTPKTNUM=4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SACOMMONPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SA业务公共参数（SET-SACOMMONPARA）_82837416.md`

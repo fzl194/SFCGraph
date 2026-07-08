@@ -54,4 +54,4 @@ RMV IFALLOWEDVLAN: IFNAME="Ethernet64/0/4",  VLANBEGIN=20, VLANEND=25;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-IFALLOWEDVLAN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除主接口允许通过的VLAN（RMV-IFALLOWEDVLAN）_79264164.md`

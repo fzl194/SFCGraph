@@ -73,4 +73,4 @@ CLR EPSQCI2PRER8:QCI=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-EPSQCI2PRER8.md`
+- 原始手册：`evidence/UNC/20.15.2/清除EPS-QCI到Pre-R8-QoS映射规则-（CLR-EPSQCI2PRER8）_34190060.md`

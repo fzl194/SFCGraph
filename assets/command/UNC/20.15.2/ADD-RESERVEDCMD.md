@@ -73,4 +73,4 @@ ADD RESERVEDCMD: CMDNAME="BALCKLIST", PARASTR1="parameter1", PARASTR2="parameter
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RESERVEDCMD.md`
+- 原始手册：`evidence/UNC/20.15.2/新增补丁预留配置（ADD-RESERVEDCMD）_50558738.md`

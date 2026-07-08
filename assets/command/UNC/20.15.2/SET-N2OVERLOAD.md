@@ -67,4 +67,4 @@ SET N2OVERLOAD:SWITCH=On,OVERLDACTION=RejectNonEmergencyMoDt,REJRATEIND=No;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N2OVERLOAD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N2过载控制信息（SET-N2OVERLOAD）_09654395.md`

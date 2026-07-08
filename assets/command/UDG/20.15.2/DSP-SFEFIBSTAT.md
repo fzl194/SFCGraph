@@ -66,4 +66,4 @@ Fib总数  =  4
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SFEFIBSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示FIB统计信息（DSP-SFEFIBSTAT）_49801954.md`

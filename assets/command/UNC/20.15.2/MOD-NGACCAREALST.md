@@ -67,4 +67,4 @@ MOD NGACCAREALST: AREARANGE=AREA_CODE, AREACODE="Some_Shopping_Mall", CTRLMODE=W
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G接入限制区域列表（MOD-NGACCAREALST）_44007375.md`

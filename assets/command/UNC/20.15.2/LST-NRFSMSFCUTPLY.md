@@ -62,4 +62,4 @@ SMSF割接场景NRF发现匹配开关  =  关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFSMSFCUTPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF割接场景NRF处理策略（LST-NRFSMSFCUTPLY）_71303602.md`

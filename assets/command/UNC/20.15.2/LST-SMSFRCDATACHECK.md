@@ -61,4 +61,4 @@ SMSF核查注册中心状态周期(分钟) = 5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSFRCDATACHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF核查注册中心状态功能配置（LST-SMSFRCDATACHECK）_53641454.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGBGPLF.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGBGPLF.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGBGPLF.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGBGPLF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BGP入不转板自动化配置模板（MOD-AUTOSCALINGBGPLF）_50121802.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP入不转板自动化配置模板（RMV-AUTOSCALINGBGPLF）_00601265.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP入不转板自动化配置模板（ADD-AUTOSCALINGBGPLF）_00840925.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP入不转板自动化配置模板（LST-AUTOSCALINGBGPLF）_00840589.md`

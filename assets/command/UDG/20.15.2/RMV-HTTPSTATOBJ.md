@@ -51,4 +51,4 @@ RMV HTTPSTATOBJ: PTYPE="AMF", PADDR="192.168.111.222";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-HTTPSTATOBJ.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于对端结点的性能统计测量对象信息（RMV-HTTPSTATOBJ）_86240312.md`

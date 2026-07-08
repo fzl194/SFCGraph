@@ -58,4 +58,4 @@ RMV NOCENTCNCHL: RUID=64, CHLNAME="00/ABNORMAL";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NOCENTCNCHL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RU通道过滤规则（RMV-NOCENTCNCHL）_36376001.md`

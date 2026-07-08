@@ -62,4 +62,4 @@ SET AMFSENSECONF: SFCCHKSW=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AMFSENSECONF.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF感知配置（SET-AMFSENSECONF）_77419828.md`

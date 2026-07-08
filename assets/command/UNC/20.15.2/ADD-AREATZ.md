@@ -70,4 +70,4 @@ ADD AREATZ: AREA=LA, MCC="123", MNC="03", LAC="112", LACRANGE="350", TZID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AREATZ.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域时区参数(ADD-AREATZ)_72225267.md`

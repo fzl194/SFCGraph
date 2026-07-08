@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSBICMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSBICMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF服务化接口兼容性参数（LST-AMFSBICMPT）_48331685.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF服务化接口兼容性参数（SET-AMFSBICMPT）_98011756.md`

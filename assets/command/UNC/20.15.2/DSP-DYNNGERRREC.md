@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DYNNGERRREC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询域名查询失败的记录（DSP-DYNNGERRREC）_16634376.md`

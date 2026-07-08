@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VOICEDEPLOY.md`
-- 原始手册：`evidence/UNC/20.15.2/VOICEDEPLOY.md`
-- 原始手册：`evidence/UNC/20.15.2/VOICEDEPLOY.md`
-- 原始手册：`evidence/UNC/20.15.2/VOICEDEPLOY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改语音部署配置(MOD-VOICEDEPLOY)_26145762.md`
+- 原始手册：`evidence/UNC/20.15.2/删除语音部署配置(RMV-VOICEDEPLOY)_72225441.md`
+- 原始手册：`evidence/UNC/20.15.2/增加语音部署配置(ADD-VOICEDEPLOY)_72345361.md`
+- 原始手册：`evidence/UNC/20.15.2/查询语音部署配置(LST-VOICEDEPLOY)_26305572.md`

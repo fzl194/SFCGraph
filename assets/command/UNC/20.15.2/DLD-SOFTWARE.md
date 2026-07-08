@@ -73,4 +73,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DLD-SOFTWARE.md`
+- 原始手册：`evidence/UNC/20.15.2/下载软件仓软件（DLD-SOFTWARE）_59037011.md`

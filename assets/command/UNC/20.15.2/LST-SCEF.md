@@ -69,4 +69,4 @@ SCEF主机名  =  scef0701.huawei01.com
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCEF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCEF配置(LST-SCEF)_72345057.md`

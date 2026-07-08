@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询特定SMF功能实例服务名（LST-SMFSERVICELIST）_09653267.md`

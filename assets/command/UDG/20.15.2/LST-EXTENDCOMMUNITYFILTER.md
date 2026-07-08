@@ -67,4 +67,4 @@ a                            基础
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-EXTENDCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询扩展团体属性过滤器（LST-EXTENDCOMMUNITYFILTER）_00840777.md`

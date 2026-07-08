@@ -67,4 +67,4 @@ APN防欺诈功能信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNAFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN防欺诈功能（LST-APNAFFUNC）_82837801.md`

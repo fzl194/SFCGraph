@@ -57,4 +57,4 @@ LST DFSRATTR:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DFSRATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询双发选收属性配置（LST-DFSRATTR）_23157710.md`

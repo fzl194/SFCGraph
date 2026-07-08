@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSTBMLINEAR.md`
+- 原始手册：`evidence/UDG/20.15.2/通过关键字查询线性表的结果（DSP-MSSTBMLINEAR）_00440361.md`

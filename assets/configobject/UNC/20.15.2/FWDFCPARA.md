@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FWDFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/FWDFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询转发面流控参数（LST-FWDFCPARA）_59863069.md`
+- 原始手册：`evidence/UNC/20.15.2/设置转发面流控参数（SET-FWDFCPARA）_59903035.md`

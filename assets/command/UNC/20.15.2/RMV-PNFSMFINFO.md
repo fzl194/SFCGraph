@@ -60,4 +60,4 @@ RMV PNFSMFINFO: NFINSTANCEID="SMF_Instance_0", PGWFQDN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFSMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端SMF的信息（RMV-PNFSMFINFO）_09653763.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRFIELDTYPE.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRFIELDTYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询字段映射关系（LST-CDRFIELDTYPE）_45110920.md`
+- 原始手册：`evidence/UNC/20.15.2/设置字段映射关系（SET-CDRFIELDTYPE）_45110937.md`

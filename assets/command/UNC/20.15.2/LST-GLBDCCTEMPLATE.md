@@ -74,4 +74,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLBDCCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费属性与在线计费模板绑定关系（LST-GLBDCCTEMPLATE）_09896938.md`

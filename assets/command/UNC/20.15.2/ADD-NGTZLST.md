@@ -79,4 +79,4 @@ ADD NGTZLST: TZID=1, TZONE=E0000, DST=YES, SM=DATE, SMONTH=JAN, SDAY=15, ST=18&1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGTZLST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G多时区参数（ADD-NGTZLST）_71994441.md`

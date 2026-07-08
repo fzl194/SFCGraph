@@ -61,4 +61,4 @@ DNN替换功能开关  =  是
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DNNREPLACEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN替换功能管理参数（LST-DNNREPLACEFUNC）_23622934.md`

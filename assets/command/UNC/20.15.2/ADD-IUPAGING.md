@@ -63,4 +63,4 @@ ADD IUPAGING:LAI="123000001",RAC="01",RNCINDEX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IUPAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu接口寻呼数据(ADD-IUPAGING)_26305844.md`

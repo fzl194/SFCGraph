@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMRP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RP信息（DSP-PIMRP）_49961258.md`

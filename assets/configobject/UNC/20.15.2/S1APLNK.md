@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1APLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/S1APLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/S1APLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1AP连接(RMV-S1APLNK)_26306064.md`
+- 原始手册：`evidence/UNC/20.15.2/复位S1AP连接(RST-S1APLNK)_72225931.md`
+- 原始手册：`evidence/UNC/20.15.2/显示S1AP连接状态(DSP-S1APLNK)_26146252.md`

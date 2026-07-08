@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TRC_CFG.md`
-- 原始手册：`evidence/UNC/20.15.2/TRC_CFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询跟踪参数(LST-TRC_CFG)_72344999.md`
+- 原始手册：`evidence/UNC/20.15.2/设置跟踪参数(SET-TRC_CFG)_26305212.md`

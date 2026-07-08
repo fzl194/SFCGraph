@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNSAPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/APNSAPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于APN的业务感知参数（LST-APNSAPARA）_49128369.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的业务感知参数（SET-APNSAPARA）_97004596.md`

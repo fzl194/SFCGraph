@@ -53,4 +53,4 @@ RMV SQOSREMARK:BEHAVIORNAME="b1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SQOSREMARK.md`
+- 原始手册：`evidence/UDG/20.15.2/删除重标记配置（RMV-SQOSREMARK）_00601341.md`

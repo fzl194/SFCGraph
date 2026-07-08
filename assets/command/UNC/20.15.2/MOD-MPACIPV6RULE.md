@@ -65,4 +65,4 @@ MOD MPACIPV6RULE:POLICYNAME="policyV6",RULENAME="name1",ACTION=deny,PROTTYPE=Num
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MPACIPV6RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6-MPAC策略规则（MOD-MPACIPV6RULE）_49961110.md`

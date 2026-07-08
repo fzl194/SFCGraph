@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIFORSMSC.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIFORSMSC.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIFORSMSC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除融合短消息功能共部署SMSC支持的IMSI号段配置（RMV-IMSIFORSMSC）_04281141.md`
+- 原始手册：`evidence/UNC/20.15.2/增加融合短消息功能共部署SMSC支持的IMSI号段（ADD-IMSIFORSMSC）_04281129.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合短消息功能共部署SMSC支持的IMSI号段配置（LST-IMSIFORSMSC）_03961129.md`

@@ -58,4 +58,4 @@ SYN BGPPEERGROUP:AFTYPE=ipv4uni,DIRECTION=import,GROUPNAME="a";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYN-BGPPEERGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/刷新对等体组（SYN-BGPPEERGROUP）_50121346.md`

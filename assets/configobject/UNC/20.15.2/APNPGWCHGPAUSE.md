@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPGWCHGPAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPGWCHGPAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPGWCHGPAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPGWCHGPAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的PGW计费暂停功能配置（MOD-APNPGWCHGPAUSE）_42853264.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的计费暂停功能配置（RMV-APNPGWCHGPAUSE）_42853266.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的PGW计费暂停功能配置（ADD-APNPGWCHGPAUSE）_42693464.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的PGW计费暂停功能配置（LST-APNPGWCHGPAUSE）_88613379.md`

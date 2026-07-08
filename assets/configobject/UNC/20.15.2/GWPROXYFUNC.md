@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GWPROXYFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/GWPROXYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网关Proxy功能配置（LST-GWPROXYFUNC）_42693470.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网关Proxy功能（SET-GWPROXYFUNC）_42853270.md`

@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNACCESSWAL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNACCESSWAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN接入速率（LST-APNACCESSWAL）_09651641.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN接入速率（SET-APNACCESSWAL）_09652087.md`

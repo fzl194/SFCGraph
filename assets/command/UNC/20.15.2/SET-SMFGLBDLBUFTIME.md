@@ -67,4 +67,4 @@ SET SMFGLBDLBUFTIME: NORMALUSER=9;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMFGLBDLBUFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局下行报文缓存时长（SET-SMFGLBDLBUFTIME）_96805509.md`

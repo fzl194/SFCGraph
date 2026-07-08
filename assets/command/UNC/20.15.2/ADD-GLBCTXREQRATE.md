@@ -62,4 +62,4 @@ ADD GLBCTXREQRATE: CTXRURRGRPNAME="urrgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GLBCTXREQRATE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加全局初始请求计费绑定关系（ADD-GLBCTXREQRATE）_09897183.md`

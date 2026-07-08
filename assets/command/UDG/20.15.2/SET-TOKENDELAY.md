@@ -72,4 +72,4 @@ SET TOKENDELAY: DELAYTIME = 50;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-TOKENDELAY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Token延时迁移时间（SET-TOKENDELAY）_79244269.md`

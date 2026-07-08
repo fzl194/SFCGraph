@@ -61,4 +61,4 @@ RMV NFIMSI: NFGROUPID="nfgroup01", SEGSTART="12345678914", SEGEND="12345678916";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI号段（RMV-NFIMSI）_09651337.md`

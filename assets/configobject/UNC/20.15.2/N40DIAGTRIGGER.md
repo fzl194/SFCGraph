@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N40DIAGTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/N40DIAGTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/N40DIAGTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N40去活原因的映射关系（RMV-N40DIAGTRIGGER）_35102635.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N40去活原因的映射关系（ADD-N40DIAGTRIGGER）_35102633.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40去活原因的映射关系（LST-N40DIAGTRIGGER）_35102634.md`

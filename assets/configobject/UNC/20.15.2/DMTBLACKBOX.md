@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMTBLACKBOX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter黑匣子信息（DSP-DMTBLACKBOX）_00600913.md`

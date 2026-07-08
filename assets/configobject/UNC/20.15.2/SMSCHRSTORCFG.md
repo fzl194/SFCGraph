@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRSTORCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRSTORCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS小范围CHR存储配置（LST-SMSCHRSTORCFG）_53321870.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMS小范围CHR存储配置（SET-SMSCHRSTORCFG）_04281145.md`

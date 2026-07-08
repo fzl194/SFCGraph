@@ -77,4 +77,4 @@ MSG_Diagnose:
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-FESDIAGINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示FES诊断信息（DSP-FESDIAGINFO）_50281146.md`

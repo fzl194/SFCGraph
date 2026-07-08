@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CERTUPDATPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/CERTUPDATPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询证书更新流程参数（LST-CERTUPDATPARA）_10285105.md`
+- 原始手册：`evidence/UNC/20.15.2/设置证书更新流程参数（SET-CERTUPDATPARA）_10405457.md`

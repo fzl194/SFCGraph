@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSCAP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Non-GBR承载QoS限制配置(MOD-QOSCAP)_72345819.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Non-GBR承载QoS限制配置(RMV-QOSCAP)_26306030.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Non-GBR承载QoS限制配置(ADD-QOSCAP)_72225897.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Non-GBR承载QoS限制配置(LST-QOSCAP)_26146220.md`

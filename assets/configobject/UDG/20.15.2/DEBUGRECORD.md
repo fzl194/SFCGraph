@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEBUGRECORD.md`
+- 原始手册：`evidence/UDG/20.15.2/清除异常信息记录（RMV-DEBUGRECORD）_82006611.md`

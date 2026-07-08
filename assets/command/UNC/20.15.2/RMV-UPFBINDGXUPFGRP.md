@@ -60,4 +60,4 @@ RMV UPFBINDGXUPFGRP: UPFGRPNAME="upfgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPFBINDGXUPFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF与Gx-UPF组的关联关系（RMV-UPFBINDGXUPFGRP）_16858409.md`

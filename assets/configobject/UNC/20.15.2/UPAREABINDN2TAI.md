@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDN2TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF服务区名称绑定的5G-TAI范围（RMV-UPAREABINDN2TAI）_09652246.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF服务区名称绑定的5G-TAI范围（ADD-UPAREABINDN2TAI）_09653098.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF服务区名称绑定的5G-TAI范围（LST-UPAREABINDN2TAI）_09654409.md`

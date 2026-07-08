@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HNOSRVPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/HNOSRVPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/HNOSRVPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/HNOSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改归属网络Serving-PLMN信息(MOD-HNOSRVPLMN)_72225735.md`
+- 原始手册：`evidence/UNC/20.15.2/删除归属网络Serving-PLMN信息(RMV-HNOSRVPLMN)_26146056.md`
+- 原始手册：`evidence/UNC/20.15.2/增加归属网络Serving-PLMN信息(ADD-HNOSRVPLMN)_72345655.md`
+- 原始手册：`evidence/UNC/20.15.2/查询归属网络Serving-PLMN信息(LST-HNOSRVPLMN)_26305866.md`

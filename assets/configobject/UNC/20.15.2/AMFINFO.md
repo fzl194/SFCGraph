@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF信息（MOD-AMFINFO）_09651393.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF信息（RMV-AMFINFO）_09653047.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF信息（ADD-AMFINFO）_09652298.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF信息（LST-AMFINFO）_09653129.md`

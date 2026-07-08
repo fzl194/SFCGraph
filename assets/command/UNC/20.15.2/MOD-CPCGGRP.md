@@ -63,4 +63,4 @@ MOD CPCGGRP: CPCGGRPID=1, DESCRIPTION="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CPCGGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改抄送CG组（MOD-CPCGGRP）_09896865.md`

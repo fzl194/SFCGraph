@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DRASTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示DRA状态（DSP-DRASTATUS）_09897296.md`

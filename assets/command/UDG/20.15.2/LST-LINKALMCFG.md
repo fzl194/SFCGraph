@@ -58,4 +58,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LINKALMCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TWAMP的Light模式“链路丢包率过高告警”配置（LST-LINKALMCFG）_73302047.md`

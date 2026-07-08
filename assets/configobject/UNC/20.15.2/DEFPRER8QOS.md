@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEFPRER8QOS.md`
-- 原始手册：`evidence/UNC/20.15.2/DEFPRER8QOS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缺省的Pre-R8-QoS参数（LST-DEFPRER8QOS）_09651521.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缺省的Pre-R8-QoS参数（SET-DEFPRER8QOS）_09654401.md`

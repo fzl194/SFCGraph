@@ -56,4 +56,4 @@ ADD TUNNELSELECTOR:TNLSELECTORNAME="a";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-TUNNELSELECTOR.md`
+- 原始手册：`evidence/UDG/20.15.2/增加隧道选择器（ADD-TUNNELSELECTOR）_00840853.md`

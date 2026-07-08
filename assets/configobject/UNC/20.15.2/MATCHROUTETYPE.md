@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MATCHROUTETYPE.md`
-- 原始手册：`evidence/UNC/20.15.2/MATCHROUTETYPE.md`
-- 原始手册：`evidence/UNC/20.15.2/MATCHROUTETYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除路由类型匹配路由策略（RMV-MATCHROUTETYPE）_49801714.md`
+- 原始手册：`evidence/UNC/20.15.2/增加路由类型匹配路由策略（ADD-MATCHROUTETYPE）_49801558.md`
+- 原始手册：`evidence/UNC/20.15.2/查询路由类型匹配路由策略（LST-MATCHROUTETYPE）_49961486.md`

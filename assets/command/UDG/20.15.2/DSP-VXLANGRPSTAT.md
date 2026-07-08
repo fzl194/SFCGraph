@@ -70,4 +70,4 @@ VXLAN Group 服务器数目  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-VXLANGRPSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示VXLAN组链路状态（DSP-VXLANGRPSTAT）_42091189.md`

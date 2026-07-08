@@ -64,4 +64,4 @@ RMV APNCHGMODE: APN="huawei.com", TMACCTYPE=UE5G_RAT4G;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的计费接口选择方式（RMV-APNCHGMODE）_96242742.md`

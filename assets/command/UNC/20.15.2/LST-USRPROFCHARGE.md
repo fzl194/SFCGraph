@@ -93,4 +93,4 @@ GGSN离线计费模板名  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-USRPROFCHARGE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询User-Profile的计费配置（LST-USRPROFCHARGE）_09896815.md`

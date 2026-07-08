@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPIPDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/UPIPDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/UPIPDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/UPIPDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改当前UPF绑定的IP域（MOD-UPIPDOMAIN）_09653633.md`
+- 原始手册：`evidence/UNC/20.15.2/删除当前UPF绑定的IP域（RMV-UPIPDOMAIN）_09652498.md`
+- 原始手册：`evidence/UNC/20.15.2/增加当前UPF绑定的IP域（ADD-UPIPDOMAIN）_09652582.md`
+- 原始手册：`evidence/UNC/20.15.2/查询当前UPF绑定的IP域（LST-UPIPDOMAIN）_09651493.md`

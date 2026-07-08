@@ -85,4 +85,4 @@ SET SRVSTH: LINKSWITCH=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SRVSTH.md`
+- 原始手册：`evidence/UNC/20.15.2/设置业务功能开关（SET-SRVSTH）_41302357.md`

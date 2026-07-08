@@ -58,4 +58,4 @@ RMV M2MSVRGRPBIND: APN="isp", GROUPNAME="m2msrvgroup01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-M2MSVRGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M服务器组绑定关系（RMV-M2MSVRGRPBIND）_73321244.md`

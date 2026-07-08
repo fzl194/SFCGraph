@@ -63,4 +63,4 @@ SET SMFAPNSOFTPARA: APN="huawei.com", DT=Byte, BYTENUM=8, BYTEVALUE=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMFAPNSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF的APN软参记录（SET-SMFAPNSOFTPARA）_25121213.md`

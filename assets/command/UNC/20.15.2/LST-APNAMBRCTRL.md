@@ -62,4 +62,4 @@ LST APNAMBRCTRL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNAMBRCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-AMBR控制的配置（LST-APNAMBRCTRL）_87839688.md`

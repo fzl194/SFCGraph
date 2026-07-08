@@ -67,4 +67,4 @@ Tethering TTL值  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TETHERINGTTL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询tethering的TTL值（LST-TETHERINGTTL）_97140232.md`

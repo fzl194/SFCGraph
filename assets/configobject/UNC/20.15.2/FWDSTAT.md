@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FWDSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询转发消息统计（DSP-FWDSTAT）_29627095.md`

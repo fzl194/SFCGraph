@@ -70,4 +70,4 @@ ADD USRLOCATION: LOCATIONNAME="TestLocName", LOCATIONTYPE=RAI, MCC="123", MNC="1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-USRLOCATION.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户位置（ADD-USRLOCATION）_09897143.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PGWCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWCHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWCHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改P-GW特性对接配置（MOD-PGWCHARACT）_26145940.md`
+- 原始手册：`evidence/UNC/20.15.2/删除P-GW特性对接配置（RMV-PGWCHARACT）_72345539.md`
+- 原始手册：`evidence/UNC/20.15.2/增加P-GW特性对接配置（ADD-PGWCHARACT）_26305748.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-GW特性对接配置（LST-PGWCHARACT）_72225619.md`

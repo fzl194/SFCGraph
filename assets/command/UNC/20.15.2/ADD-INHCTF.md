@@ -66,4 +66,4 @@ ADD INHCTF:NFINSTANCEID="nfinstanceid001",IPADDRESSTYPE=IPV4,IPV4ADDRESS="192.16
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-INHCTF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加禁止访问NCG的CTF实例（ADD-INHCTF）_45110909.md`

@@ -61,4 +61,4 @@ RMV RELAYIPBINDING: RELAYIPNAME="testIP", RELAYTPLNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RELAYIPBINDING.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继服务IP绑定配置（RMV-RELAYIPBINDING）_14541481.md`

@@ -31,8 +31,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
-- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
-- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
-- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
-- 原始手册：`evidence/UNC/20.15.2/M3DE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改M3UA目的实体(MOD-M3DE)_72225981.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M3UA目的实体(RMV-M3DE)_26146302.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M3UA目的实体(ADD-M3DE)_72345901.md`
+- 原始手册：`evidence/UNC/20.15.2/显示M3UA目的实体状态(DSP-M3DE)_72345903.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M3UA目的实体(LST-M3DE)_26306114.md`

@@ -61,4 +61,4 @@ ADD VPLMNCHGMODE: VPLMN="08600", CHGMODE=FBC;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-VPLMNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于VPLMN配置的漫游用户归属地计费模式（ADD-VPLMNCHGMODE）_81407234.md`

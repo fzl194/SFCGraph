@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFNGLANGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNGLANGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNGLANGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用于性能统计的5G-LAN群组（RMV-PERFNGLANGRP）_79575224.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用于性能统计的5G-LAN群组（ADD-PERFNGLANGRP）_25214873.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用于性能统计的5G-LAN群组（LST-PERFNGLANGRP）_79256716.md`

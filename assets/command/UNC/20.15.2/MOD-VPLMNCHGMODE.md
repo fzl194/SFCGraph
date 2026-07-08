@@ -59,4 +59,4 @@ MOD VPLMNCHGMODE: VPLMN="08600", CHGMODE=QBC;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-VPLMNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于VPLMN配置的漫游用户归属地计费模式（MOD-VPLMNCHGMODE）_26686921.md`

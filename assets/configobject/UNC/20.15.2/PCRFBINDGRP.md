@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCRFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PCRFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PCRFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PCRFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCRF与PCRF-Group的关联关系（MOD-PCRFBINDGRP）_09897097.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCRF与PCRF-Group的关联关系（RMV-PCRFBINDGRP）_09897098.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCRF与PCRF-Group的关联关系（ADD-PCRFBINDGRP）_09897096.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCRF与PCRF-Group的关联关系（LST-PCRFBINDGRP）_09897099.md`

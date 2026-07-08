@@ -27,7 +27,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MMLTRAN.md`
-- 原始手册：`evidence/UDG/20.15.2/MMLTRAN.md`
-- 原始手册：`evidence/UDG/20.15.2/MMLTRAN.md`
-- 原始手册：`evidence/UDG/20.15.2/MMLTRAN.md`
+- 原始手册：`evidence/UDG/20.15.2/取消配置（CNL-MMLTRAN）_00282056.md`
+- 原始手册：`evidence/UDG/20.15.2/启动事务模式（STR-MMLTRAN）_00442052.md`
+- 原始手册：`evidence/UDG/20.15.2/提交配置（CMT-MMLTRAN）_47002029.md`
+- 原始手册：`evidence/UDG/20.15.2/结束事务模式（STP-MMLTRAN）_47082049.md`

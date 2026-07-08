@@ -67,4 +67,4 @@ CLR NGRANNEIBS: OPTYPE=ALL, LUT=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-NGRANNEIBS.md`
+- 原始手册：`evidence/UNC/20.15.2/清除NG-RAN基站邻接关系（CLR-NGRANNEIBS）_09653167.md`

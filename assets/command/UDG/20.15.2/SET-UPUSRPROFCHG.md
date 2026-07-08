@@ -71,4 +71,4 @@ SET UPUSRPROFCHG: USRPROFNAME="userprofile1", DFTQTSWITCH=ENABLE, DFTQTNEWSER=EN
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPUSRPROFCHG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置User-Profile的计费配置（SET-UPUSRPROFCHG）_35339021.md`

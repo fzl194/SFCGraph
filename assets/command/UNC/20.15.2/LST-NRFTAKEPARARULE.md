@@ -76,4 +76,4 @@ NWDAF       关闭                                 关闭                       
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFTAKEPARARULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF携带参数处理规则（LST-NRFTAKEPARARULE）_35519273.md`

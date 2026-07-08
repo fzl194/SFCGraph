@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGSRCHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSRCHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSRCHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSRCHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF小范围CHR上报规则配置（MOD-NGSRCHRCFG）_58840353.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF小范围CHR上报规则配置（RMV-NGSRCHRCFG）_58680357.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF小范围CHR上报规则配置（ADD-NGSRCHRCFG）_13800464.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF小范围CHR上报规则配置（LST-NGSRCHRCFG）_58840351.md`

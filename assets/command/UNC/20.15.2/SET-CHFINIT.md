@@ -69,4 +69,4 @@ SET CHFINIT: CCTMPLTNAME="test", CHFINIT=SENDREQ;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHFINIT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置融合计费模板中用户激活相关参数（SET-CHFINIT）_09653178.md`

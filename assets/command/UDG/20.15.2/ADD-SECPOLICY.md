@@ -56,4 +56,4 @@ ADD SECPOLICY:POLICYID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SECPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/增加防攻击策略（ADD-SECPOLICY）_00866361.md`

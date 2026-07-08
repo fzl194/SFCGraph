@@ -91,4 +91,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TST-GTPCPATHINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/测试GTP-C路径以及查询非知名端口号范围（TST-GTPCPATHINFO）_09653181.md`

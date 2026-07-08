@@ -63,4 +63,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DBDRAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSDB容灾数据老化开关(LST-DBDRAGING)_92511652.md`

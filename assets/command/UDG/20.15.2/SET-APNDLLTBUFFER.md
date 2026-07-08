@@ -68,4 +68,4 @@ SET APNDLLTBUFFER: APN="apn1.com", MAXBUFFERNUM=64, BUFFERMODE=BUFF_MODE_RING;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNDLLTBUFFER.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的下行数据长时间缓存配置（SET-APNDLLTBUFFER）_86530338.md`

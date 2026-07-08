@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPFRMPOOL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示转发资源池使用信息（DSP-NPFRMPOOL）_06416865.md`

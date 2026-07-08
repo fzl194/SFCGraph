@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRRATVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/NRRATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G接入用户的RAT填写值（LST-NRRATVALUE）_52071370.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G接入用户的RAT填写值（SET-NRRATVALUE）_52071376.md`

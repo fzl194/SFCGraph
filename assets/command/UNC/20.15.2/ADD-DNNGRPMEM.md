@@ -58,4 +58,4 @@ ADD DNNGRPMEM: DNNGRPID="BIG_GROUP", DNN="DNNa";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN群组成员（ADD-DNNGRPMEM）_64343823.md`

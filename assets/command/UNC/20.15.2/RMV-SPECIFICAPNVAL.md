@@ -59,4 +59,4 @@ RMV SPECIFICAPNVAL:SUBSCRIBERAPN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SPECIFICAPNVAL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户APN与消息交互使用APN的映射关系（RMV-SPECIFICAPNVAL）_09652261.md`

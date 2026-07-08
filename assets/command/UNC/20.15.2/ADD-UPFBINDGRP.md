@@ -66,4 +66,4 @@ ADD UPFBINDGRP: UPFGRPNAME="upfgrp1", UPFID="upf_instance_1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF和UPF组的绑定关系（ADD-UPFBINDGRP）_32232815.md`

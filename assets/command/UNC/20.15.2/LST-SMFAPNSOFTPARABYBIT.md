@@ -69,4 +69,4 @@ huawei.com  Dword      2                 NULL          0000 0000 0000 0000 0000 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFAPNSOFTPARABYBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF-APN软件参数比特位（LST-SMFAPNSOFTPARABYBIT）_25121195.md`

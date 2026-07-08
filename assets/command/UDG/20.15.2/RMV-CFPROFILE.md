@@ -58,4 +58,4 @@ RMV CFPROFILE: CFPROFILENAME="cfp1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CFPROFILE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除内容过滤策略（RMV-CFPROFILE）_39957524.md`

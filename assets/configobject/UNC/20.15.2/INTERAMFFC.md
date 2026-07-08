@@ -32,5 +32,5 @@ AMF组Pool时，如果某个AMF故障，则故障AMF上的用户会接入到Pool
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INTERAMFFC.md`
-- 原始手册：`evidence/UNC/20.15.2/INTERAMFFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Inter-AMF流控参数（LST-INTERAMFFC）_96242171.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Inter-AMF流控参数（SET-INTERAMFFC）_96243129.md`

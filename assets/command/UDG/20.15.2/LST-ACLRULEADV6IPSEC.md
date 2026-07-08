@@ -85,4 +85,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ACLRULEADV6IPSEC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询高级IPv6-ACL规则配置（LST-ACLRULEADV6IPSEC）_68320995.md`

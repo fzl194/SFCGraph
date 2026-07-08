@@ -73,4 +73,4 @@ ADD RULE:RULENAME="testrule",POLICYTYPE=PCC,PRIORITY=50,POLICYNAME="testpccpolic
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加规则（ADD-RULE）_09897200.md`

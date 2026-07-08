@@ -63,4 +63,4 @@ ADD MULDNNPRILIST: DEDDNN="special.dnn",NEARBYSUFF1ST="adc",NEARBYSUFF2ND="def",
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MULDNNPRILIST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地专网DNN就近接入优先级（ADD-MULDNNPRILIST）_87893230.md`

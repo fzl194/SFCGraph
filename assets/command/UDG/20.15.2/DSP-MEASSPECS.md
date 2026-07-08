@@ -105,4 +105,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MEASSPECS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询话统规格(DSP-MEASSPECS)_01454532.md`

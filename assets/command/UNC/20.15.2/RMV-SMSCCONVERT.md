@@ -62,4 +62,4 @@ RMV SMSCCONVERT: REQADDR="8613951701";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMSCCONVERT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSC转换配置记录(RMV-SMSCCONVERT)_26305538.md`

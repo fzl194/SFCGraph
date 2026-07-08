@@ -75,4 +75,4 @@ ADD URR: URRNAME="onlineURR", URRID=1000, USAGERPTMODE=ONLINE, ONLMETERINGTYPE=F
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-URR.md`
+- 原始手册：`evidence/UDG/20.15.2/增加URR（ADD-URR）_82837629.md`

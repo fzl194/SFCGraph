@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IFALLOWEDVLAN.md`
-- 原始手册：`evidence/UDG/20.15.2/IFALLOWEDVLAN.md`
-- 原始手册：`evidence/UDG/20.15.2/IFALLOWEDVLAN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除主接口允许通过的VLAN（RMV-IFALLOWEDVLAN）_79264164.md`
+- 原始手册：`evidence/UDG/20.15.2/增加主接口允许通过的VLAN（ADD-IFALLOWEDVLAN）_25343153.md`
+- 原始手册：`evidence/UDG/20.15.2/查询主接口允许通过的VLAN（LST-IFALLOWEDVLAN）_25183529.md`

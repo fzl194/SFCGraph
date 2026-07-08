@@ -62,4 +62,4 @@ SET GLBTARIFFGROUP:GLBTARIFFGRP="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GLBTARIFFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/配置全局费率切换组（SET-GLBTARIFFGROUP）_09896840.md`

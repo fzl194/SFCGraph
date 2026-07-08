@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/TUNNELSELECTORNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改隧道选择器节点（MOD-TUNNELSELECTORNODE）_49961954.md`
+- 原始手册：`evidence/UDG/20.15.2/删除隧道选择器节点（RMV-TUNNELSELECTORNODE）_00841225.md`
+- 原始手册：`evidence/UDG/20.15.2/增加隧道选择器节点（ADD-TUNNELSELECTORNODE）_00865901.md`
+- 原始手册：`evidence/UDG/20.15.2/查询隧道选择器节点（LST-TUNNELSELECTORNODE）_00440813.md`

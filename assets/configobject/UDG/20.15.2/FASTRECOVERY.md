@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FASTRECOVERY.md`
-- 原始手册：`evidence/UDG/20.15.2/FASTRECOVERY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局业务快速恢复配置（LST-FASTRECOVERY）_97884700.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局业务快速恢复配置（SET-FASTRECOVERY）_97884699.md`

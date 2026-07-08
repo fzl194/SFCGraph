@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IMSIBLOCKWKPOD.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSIBLOCKWKPOD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询阻塞IMSI在特定的Worker-Pod上激活信息（DSP-IMSIBLOCKWKPOD）_00658878.md`
+- 原始手册：`evidence/UDG/20.15.2/阻塞IMSI在特定的Worker-Pod上激活配置（ACT-IMSIBLOCKWKPOD）_00205642.md`

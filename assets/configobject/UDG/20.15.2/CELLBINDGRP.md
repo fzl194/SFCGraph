@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CELLBINDGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/CELLBINDGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/CELLBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除小区和小区组绑定关系（RMV-CELLBINDGRP）_93175449.md`
+- 原始手册：`evidence/UDG/20.15.2/增加小区和小区组绑定关系（ADD-CELLBINDGRP）_86856888.md`
+- 原始手册：`evidence/UDG/20.15.2/查询小区和小区组绑定关系（LST-CELLBINDGRP）_93335771.md`

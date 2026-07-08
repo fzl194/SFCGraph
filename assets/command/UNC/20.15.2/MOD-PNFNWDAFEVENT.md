@@ -63,4 +63,4 @@ MOD PNFNWDAFEVENT: NFINSTANCEID="NWDAF_Instance_1", NWDAFINFOID="central", NWDAF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFNWDAFEVENT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NWDAF信息（MOD-PNFNWDAFEVENT）_56105694.md`

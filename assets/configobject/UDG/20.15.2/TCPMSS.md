@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TCPMSS.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPMSS.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPMSS.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPMSS.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Tcp-Mss配置（MOD-TCPMSS）_82837695.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Tcp-Mss配置（RMV-TCPMSS）_82837696.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Tcp-Mss配置（LST-TCPMSS）_82837697.md`
+- 原始手册：`evidence/UDG/20.15.2/添加Tcp-Mss配置（ADD-TCPMSS）_82837694.md`

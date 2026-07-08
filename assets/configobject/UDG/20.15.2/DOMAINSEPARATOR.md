@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DOMAINSEPARATOR.md`
-- 原始手册：`evidence/UDG/20.15.2/DOMAINSEPARATOR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询前后缀分隔符（LST-DOMAINSEPARATOR）_35373551.md`
+- 原始手册：`evidence/UDG/20.15.2/配置前后缀分隔符（SET-DOMAINSEPARATOR）_35373550.md`

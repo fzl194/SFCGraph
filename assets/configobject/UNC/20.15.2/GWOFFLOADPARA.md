@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GWOFFLOADPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/GWOFFLOADPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网关迁移参数（LST-GWOFFLOADPARA）_26146082.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网关迁移参数（SET-GWOFFLOADPARA）_72345681.md`

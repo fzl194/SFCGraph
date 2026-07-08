@@ -60,4 +60,4 @@ MOD GBNSEGRP: GRPINDEX=0, NSEIBGN=2, NSEIEND=5;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GBNSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NSE和属性模板的关联(MOD-GBNSEGRP)_72225681.md`

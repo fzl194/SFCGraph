@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCSSYNCFULLSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示全量同步操作期间的统计信息（DSP-NCSSYNCFULLSTC）_59103790.md`

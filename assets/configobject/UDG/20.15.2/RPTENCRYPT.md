@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTENCRYPT.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTENCRYPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表加密算法配置（LST-RPTENCRYPT）_06561550.md`
+- 原始手册：`evidence/UDG/20.15.2/设置业务报表加密算法（SET-RPTENCRYPT）_93973685.md`

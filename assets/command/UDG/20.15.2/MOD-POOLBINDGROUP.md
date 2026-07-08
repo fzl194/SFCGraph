@@ -58,4 +58,4 @@ MOD POOLBINDGROUP: POOLGROUPNAME="poolgroup1", POOLNAME="pool1", PRIORITY=15;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-POOLBINDGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改地址池绑定地址池组中的地址池优先级（MOD-POOLBINDGROUP）_82837144.md`

@@ -59,4 +59,4 @@ RMV BGPVRF:VRFNAME="vrf1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-BGPVRF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP-VPN实例（RMV-BGPVRF）_00440925.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSACTFILTER.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSACTFILTER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流行为规则（LST-QOSACTFILTER）_50281522.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流行为规则（SET-QOSACTFILTER）_49802526.md`

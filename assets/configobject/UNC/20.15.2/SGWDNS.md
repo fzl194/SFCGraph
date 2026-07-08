@@ -67,7 +67,7 @@ ADD IPV4DNSH: HSINDEX=1, HOSTNAME="TOPON.S11.SGW1.PUDONG.3GPPNETWORK.ORG", ADDRS
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S-GW-DNS域名策略（MOD-SGWDNS）_72225651.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S-GW-DNS域名策略（RMV-SGWDNS）_26145972.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S-GW-DNS域名策略（ADD-SGWDNS）_72345571.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S-GW-DNS域名策略（LST-SGWDNS）_26305782.md`

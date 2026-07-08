@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FUIFLOWCTLPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询欠费重定向流控参数（LST-FUIFLOWCTLPARA）_82837546.md`

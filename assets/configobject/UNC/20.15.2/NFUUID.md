@@ -34,6 +34,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFUUID.md`
-- 原始手册：`evidence/UNC/20.15.2/NFUUID.md`
-- 原始手册：`evidence/UNC/20.15.2/NFUUID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF-UUID信息（RMV-NFUUID）_09652547.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-UUID信息（ADD-NFUUID）_09652589.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-UUID信息（LST-NFUUID）_09653839.md`

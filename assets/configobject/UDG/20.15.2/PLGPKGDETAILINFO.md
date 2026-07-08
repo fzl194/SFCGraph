@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PLGPKGDETAILINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询扩展包详细信息（DSP-PLGPKGDETAILINFO）_38829214.md`

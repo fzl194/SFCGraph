@@ -56,4 +56,4 @@ CLR RESETINFO:RUNAME="CSDB_OM_RU_0001"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-RESETINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/清除资源单元复位信息（CLR-RESETINFO）_59103830.md`

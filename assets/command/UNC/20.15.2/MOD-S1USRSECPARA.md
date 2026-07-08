@@ -74,4 +74,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-S1USRSECPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式用户安全配置(MOD-S1USRSECPARA)_26145650.md`

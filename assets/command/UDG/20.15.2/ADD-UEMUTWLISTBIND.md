@@ -65,4 +65,4 @@ ADD UEMUTWLISTBIND:APNNAME="testapn",WLISTTYPE=UPF,WLISTNAME="testwlist1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UEMUTWLISTBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/增加APN绑定PA口UE互访白名单（ADD-UEMUTWLISTBIND）_31719865.md`

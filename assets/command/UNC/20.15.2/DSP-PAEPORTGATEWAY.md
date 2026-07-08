@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PAEPORTGATEWAY.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE端口网关信息（DSP-PAEPORTGATEWAY）_48803866.md`

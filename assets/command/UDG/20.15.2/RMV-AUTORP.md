@@ -55,4 +55,4 @@ RMV AUTORP:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-AUTORP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Auto-RP配置（RMV-AUTORP）_49961958.md`

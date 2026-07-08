@@ -54,4 +54,4 @@ RMV ACLGROUP6: ACLNAME="2005";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ACLGROUP6.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-ACL规则组（RMV-ACLGROUP6）_49961250.md`

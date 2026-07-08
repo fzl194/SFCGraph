@@ -71,4 +71,4 @@ RU故障反向容忍时间（ms）  =  8000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RUFAULTTOLERANCE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询资源单元故障容忍时间（LST-RUFAULTTOLERANCE）_35925560.md`

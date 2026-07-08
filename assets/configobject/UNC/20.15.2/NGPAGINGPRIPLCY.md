@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGPRIPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGPRIPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGPRIPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGPRIPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G寻呼优先级策略参数配置（MOD-NGPAGINGPRIPLCY）_09652515.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G寻呼优先级策略参数配置（RMV-NGPAGINGPRIPLCY）_09652645.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G寻呼优先级策略参数配置（ADD-NGPAGINGPRIPLCY）_09652363.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G寻呼优先级策略参数配置（LST-NGPAGINGPRIPLCY）_09653161.md`

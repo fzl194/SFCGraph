@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBCHRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBCHRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局CHR功能配置（LST-GLBCHRFUNC）_89350516.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局CHR功能配置（SET-GLBCHRFUNC）_36148217.md`

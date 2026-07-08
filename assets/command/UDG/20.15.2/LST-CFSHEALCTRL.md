@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CFSHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询在复杂故障场景下自愈功能控制参数（LST-CFSHEALCTRL）_28195461.md`

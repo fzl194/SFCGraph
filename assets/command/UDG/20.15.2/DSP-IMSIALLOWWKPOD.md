@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-IMSIALLOWWKPOD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询允许IMSI在特定的Worker-Pod上激活信息（DSP-IMSIALLOWWKPOD）_87414915.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSISEGMENT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSISEGMENT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSISEGMENT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI号码段（RMV-IMSISEGMENT）_05100889.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI号码段（ADD-IMSISEGMENT）_05220473.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI号码段（LST-IMSISEGMENT）_54980970.md`

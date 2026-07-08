@@ -81,4 +81,4 @@ E-UTRAN小区全球标识  =  ECGI1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-VLRCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示VLR注册用户的上下文信息（DSP-VLRCTX）_04121601.md`

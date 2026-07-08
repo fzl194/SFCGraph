@@ -67,4 +67,4 @@ UPF实例标识的UUID格式值  =  00000000-0000-0000-0000-000000000001
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N40UPFIDINUUID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40接口非UUID格式与UUID格式的UPF实例标识的映射关系（LST-N40UPFIDINUUID）_23782762.md`

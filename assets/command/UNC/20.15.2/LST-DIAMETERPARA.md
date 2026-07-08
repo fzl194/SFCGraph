@@ -67,4 +67,4 @@ Diameter参数信息
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DIAMETERPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter参数（LST-DIAMETERPARA）_09897316.md`

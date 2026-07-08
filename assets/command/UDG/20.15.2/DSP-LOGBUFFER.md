@@ -85,4 +85,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LOGBUFFER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Logbuffer中的数据（DSP-LOGBUFFER）_59103460.md`

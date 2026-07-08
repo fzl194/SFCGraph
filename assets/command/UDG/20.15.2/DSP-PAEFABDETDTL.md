@@ -81,4 +81,4 @@ Fabric平面ID  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PAEFABDETDTL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Fabric链路探测任务的详细结果（DSP-PAEFABDETDTL）_12471968.md`

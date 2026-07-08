@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/FIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/FIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示固定速率流控信息(DSP-FIXEDFC)_26305952.md`
+- 原始手册：`evidence/UNC/20.15.2/查询固定速率流控信息(LST-FIXEDFC)_72225821.md`
+- 原始手册：`evidence/UNC/20.15.2/设置固定速率流控信息(SET-FIXEDFC)_26146142.md`

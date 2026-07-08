@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ASPATHFILTERNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ASPATHFILTERNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ASPATHFILTERNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ASPATHFILTERNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改AS路径过滤节点（MOD-ASPATHFILTERNODE）_50121482.md`
+- 原始手册：`evidence/UDG/20.15.2/删除AS路径过滤节点（RMV-ASPATHFILTERNODE）_50120878.md`
+- 原始手册：`evidence/UDG/20.15.2/增加AS路径过滤节点（ADD-ASPATHFILTERNODE）_00600769.md`
+- 原始手册：`evidence/UDG/20.15.2/查询AS路径过滤节点（LST-ASPATHFILTERNODE）_00840729.md`

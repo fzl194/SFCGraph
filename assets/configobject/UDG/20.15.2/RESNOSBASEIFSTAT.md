@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESNOSBASEIFSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NOS-Base平面网络的报文统计信息（DSP-RESNOSBASEIFSTAT）_59260501.md`

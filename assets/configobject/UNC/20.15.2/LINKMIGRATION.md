@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LINKMIGRATION.md`
+- 原始手册：`evidence/UNC/20.15.2/激活一次链路迁移操作（ACT-LINKMIGRATION）_63466285.md`

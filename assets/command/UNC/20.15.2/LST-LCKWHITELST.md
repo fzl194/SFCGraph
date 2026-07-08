@@ -68,4 +68,4 @@ MSISDN      000000000000000  123456789012345
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LCKWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询锁定白名单记录（LST-LCKWHITELST）_29906473.md`

@@ -78,4 +78,4 @@ PGW-C/SMF同时携带FQDN和IP时处理策略  =  FQDN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PGWRNSI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PGW重定向配置(LST-PGWRNSI)_18410968.md`

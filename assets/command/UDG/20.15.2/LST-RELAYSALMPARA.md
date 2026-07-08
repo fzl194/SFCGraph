@@ -87,4 +87,4 @@ Relay资源不足告警恢复阈值（百分比）  =  75
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYSALMPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继业务告警参数配置（LST-RELAYSALMPARA）_25355077.md`

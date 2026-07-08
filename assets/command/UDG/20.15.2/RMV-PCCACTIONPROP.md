@@ -57,4 +57,4 @@ RMV PCCACTIONPROP:PCCACTPROPNAME="TestPccActPropName";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PCCACTIONPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除PCC动作属性（RMV-PCCACTIONPROP）_86528583.md`

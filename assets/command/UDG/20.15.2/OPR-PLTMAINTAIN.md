@@ -74,4 +74,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OPR-PLTMAINTAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/执行uniplt调试命令（OPR-PLTMAINTAIN）_29626901.md`

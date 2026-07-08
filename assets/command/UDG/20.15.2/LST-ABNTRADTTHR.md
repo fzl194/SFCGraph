@@ -65,4 +65,4 @@ Abnormal Traffic detect threshold of packet  =  20
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ABNTRADTTHR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询异常流量检测报文阈值（LST-ABNTRADTTHR）_82837031.md`

@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/L2TPCLIENTIP.md`
-- 原始手册：`evidence/UDG/20.15.2/L2TPCLIENTIP.md`
-- 原始手册：`evidence/UDG/20.15.2/L2TPCLIENTIP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除L2TP绑定的接口（RMV-L2TPCLIENTIP）_35373537.md`
+- 原始手册：`evidence/UDG/20.15.2/增加L2TP绑定的接口（ADD-L2TPCLIENTIP）_35373536.md`
+- 原始手册：`evidence/UDG/20.15.2/查询L2TP绑定的接口（LST-L2TPCLIENTIP）_35373538.md`

@@ -59,4 +59,4 @@ RMV DHCPBINDPOOLGRP:POOLGRPNAME="poolgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DHCPBINDPOOLGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DHCP服务器组与地址池组绑定关系（RMV-DHCPBINDPOOLGRP）_87302922.md`

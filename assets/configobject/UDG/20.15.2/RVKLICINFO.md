@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RVKLICINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示License失效信息(DSP-RVKLICINFO)_00381870.md`

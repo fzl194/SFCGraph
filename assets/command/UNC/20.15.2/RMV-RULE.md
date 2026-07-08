@@ -67,4 +67,4 @@ RMV RULE:RULENAME="testrule";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除规则（RMV-RULE）_09897203.md`

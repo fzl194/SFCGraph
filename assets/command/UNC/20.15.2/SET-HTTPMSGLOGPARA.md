@@ -59,4 +59,4 @@ SET HTTPMSGLOGPARA: TCPMSGSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-HTTPMSGLOGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HTTP消息日志参数（SET-HTTPMSGLOGPARA）_59288797.md`

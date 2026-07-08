@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBSMFATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBSMFATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局SMF属性（LST-GLBSMFATTR）_38390790.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局SMF属性（SET-GLBSMFATTR）_44389967.md`

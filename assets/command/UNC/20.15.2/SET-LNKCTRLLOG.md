@@ -56,4 +56,4 @@ SET LNKCTRLLOG: SCTP=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-LNKCTRLLOG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置链路控制消息日志开关(SET-LNKCTRLLOG)_58047743.md`

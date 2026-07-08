@@ -58,4 +58,4 @@ RMV SEGFILEPUBKEY: KEYNAME="keyname001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SEGFILEPUBKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除号段配置文件的签名验证公钥（RMV-SEGFILEPUBKEY）_09652232.md`

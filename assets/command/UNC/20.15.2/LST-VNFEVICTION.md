@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VNFEVICTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元重调度策略（LST-VNFEVICTION）_26089553.md`

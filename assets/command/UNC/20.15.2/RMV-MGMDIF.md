@@ -68,4 +68,4 @@ RMV MGMDIF:IFNAME="Ethernet64/0/3",VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MGMDIF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IGMP接口配置（RMV-MGMDIF）_50280818.md`

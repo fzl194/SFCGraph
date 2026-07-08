@@ -75,4 +75,4 @@ IPsec跟踪的恢复流控的CPU阈值（%） = 65
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IKEGLOBALCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IKE全局配置（LST-IKEGLOBALCONFIG）_25912247.md`

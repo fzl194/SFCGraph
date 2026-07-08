@@ -62,4 +62,4 @@ MOD PNFDISCPLCY: NFTYPE=NfSMSF, POLICY=LOCAL_ONLY;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFDISCPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的服务发现策略（MOD-PNFDISCPLCY）_21861981.md`

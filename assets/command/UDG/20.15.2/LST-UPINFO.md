@@ -69,4 +69,4 @@ IPv4地址类型的Node Id = 0.0.0.0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询-UP-参数信息（LST-UPINFO）_47230274.md`

@@ -92,4 +92,4 @@ LDP发送报文时PDU中可以存在的最大的消息个数  =  100
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LDPSSMGTCPSOCK.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP的TCP-Socket信息（DSP-LDPSSMGTCPSOCK）_00866141.md`

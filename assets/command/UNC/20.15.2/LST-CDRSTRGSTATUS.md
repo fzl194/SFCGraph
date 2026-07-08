@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CDRSTRGSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单缓存目录状态（LST-CDRSTRGSTATUS）_09897007.md`

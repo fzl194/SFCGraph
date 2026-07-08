@@ -63,4 +63,4 @@ RMV IMSIDT: SUBRANGE=IMSI_PREFIX, IMSIPRE="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMSIDT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI-Direct-Tunnel配置(RMV-IMSIDT)_26146048.md`

@@ -64,4 +64,4 @@ Proxy功能开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GWPROXYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网关Proxy功能配置（LST-GWPROXYFUNC）_42693470.md`

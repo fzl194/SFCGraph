@@ -71,4 +71,4 @@ ADD LOGICINF: NAME="gxif1/0/0", IPVERSION=IPV6, IPV6ADDRESS1="FC12:1233:4567:982
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOGICINF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加逻辑接口（ADD-LOGICINF）_09896723.md`

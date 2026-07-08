@@ -94,4 +94,4 @@ SET HTTPCONF: SIGNALROUTING=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-HTTPCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP属性（SET-HTTPCONF）_83972196.md`

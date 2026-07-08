@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LICENSERES.md`
+- 原始手册：`evidence/UDG/20.15.2/显示License资源（DSP-LICENSERES）_09587935.md`

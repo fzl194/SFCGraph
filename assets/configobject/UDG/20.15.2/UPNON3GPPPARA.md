@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPNON3GPPPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/UPNON3GPPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询非3GPP业务配置参数（LST-UPNON3GPPPARA）_56514301.md`
+- 原始手册：`evidence/UDG/20.15.2/设置非3GPP业务配置参数（SET-UPNON3GPPPARA）_97080143.md`

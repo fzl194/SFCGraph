@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRSMASTERNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示HAF向SDRS推送的主节点信息（DSP-SDRSMASTERNODE）_05225906.md`

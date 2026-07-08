@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPRUREACH.md`
-- 原始手册：`evidence/UDG/20.15.2/IPRUREACH.md`
-- 原始手册：`evidence/UDG/20.15.2/IPRUREACH.md`
-- 原始手册：`evidence/UDG/20.15.2/IPRUREACH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改RU到网关的可达性检测配置（MOD-IPRUREACH）_00865657.md`
+- 原始手册：`evidence/UDG/20.15.2/删除RU到网关的可达性检测配置（RMV-IPRUREACH）_00440693.md`
+- 原始手册：`evidence/UDG/20.15.2/增加RU到网关的可达性检测配置（ADD-IPRUREACH）_49802266.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RU到网关的可达性检测配置（LST-IPRUREACH）_00440741.md`

@@ -64,4 +64,4 @@ NF携带信元防呆故障检测时长(秒)  =  600
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFDETECTTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF检测时长信息（LST-NRFDETECTTIMER）_45168567.md`

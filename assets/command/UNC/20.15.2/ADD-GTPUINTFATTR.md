@@ -80,4 +80,4 @@ ADD GTPUINTFATTR: SUBRANGE=ALL_USER, INTFTP1=S11, GRPID=9, DESC="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPUINTFATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-U-IP地址接口属性(ADD-GTPUINTFATTR)_26145984.md`

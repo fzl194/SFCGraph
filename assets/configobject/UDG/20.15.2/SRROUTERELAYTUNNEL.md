@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRROUTERELAYTUNNEL.md`
-- 原始手册：`evidence/UDG/20.15.2/SRROUTERELAYTUNNEL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询静态路由迭代隧道功能开关（LST-SRROUTERELAYTUNNEL）_50281734.md`
+- 原始手册：`evidence/UDG/20.15.2/设置静态路由迭代隧道功能开关（SET-SRROUTERELAYTUNNEL）_00866269.md`

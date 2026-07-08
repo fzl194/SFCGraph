@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DNSLITEPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/DNSLITEPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示轻量DNS参数（LST-DNSLITEPARA）_35373562.md`
+- 原始手册：`evidence/UDG/20.15.2/设置轻量DNS参数（SET-DNSLITEPARA）_35373561.md`

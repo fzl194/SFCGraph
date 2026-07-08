@@ -38,7 +38,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PCCPOLICYGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PCCPOLICYGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PCCPOLICYGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PCCPOLICYGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改PCC策略组（MOD-PCCPOLICYGRP）_86528530.md`
+- 原始手册：`evidence/UDG/20.15.2/删除PCC策略组（RMV-PCCPOLICYGRP）_82837608.md`
+- 原始手册：`evidence/UDG/20.15.2/增加PCC策略组（ADD-PCCPOLICYGRP）_82837606.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PCC策略组（LST-PCCPOLICYGRP）_82837609.md`

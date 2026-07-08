@@ -64,4 +64,4 @@ ADD PERFOBJRULE: MOC=TAIGP, TAIGPN="huawei", BGNTAI="308014101", ENDTAI="3080141
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PERFOBJRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加性能对象规则(ADD-PERFOBJRULE)_72225873.md`

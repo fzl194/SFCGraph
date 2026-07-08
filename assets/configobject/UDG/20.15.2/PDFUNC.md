@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PDFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/PDFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询报文检测功能配置（LST-PDFUNC）_68723527.md`
+- 原始手册：`evidence/UDG/20.15.2/设置报文检测功能配置（SET-PDFUNC）_70282538.md`

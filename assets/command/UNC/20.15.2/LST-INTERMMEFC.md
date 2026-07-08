@@ -70,4 +70,4 @@ Inter-MME接入流控功能开关  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-INTERMMEFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Inter-MME流控参数(LST-INTERMMEFC)_26146164.md`

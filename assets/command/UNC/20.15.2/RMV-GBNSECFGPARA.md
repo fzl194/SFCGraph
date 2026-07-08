@@ -57,4 +57,4 @@ RMV GBNSECFGPARA: PARAINDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GBNSECFGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSE属性模板(RMV-GBNSECFGPARA)_72225683.md`

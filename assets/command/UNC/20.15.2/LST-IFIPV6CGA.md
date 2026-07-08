@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IFIPV6CGA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6-CGA地址信息（LST-IFIPV6CGA）_00440461.md`

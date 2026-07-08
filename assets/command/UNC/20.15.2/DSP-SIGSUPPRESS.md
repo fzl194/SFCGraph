@@ -102,4 +102,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SIGSUPPRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示S11接口信令风暴抑制功能的控制与统计信息(DSP-SIGSUPPRESS)_72225847.md`

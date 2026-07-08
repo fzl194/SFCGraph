@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PLMN计费配置(MOD-CHGPLMNCFG)_72344993.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN计费配置(RMV-CHGPLMNCFG)_26305206.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PLMN计费配置(ADD-CHGPLMNCFG)_72225071.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PLMN计费配置(LST-CHGPLMNCFG)_26145392.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VTEP.md`
-- 原始手册：`evidence/UDG/20.15.2/VTEP.md`
-- 原始手册：`evidence/UDG/20.15.2/VTEP.md`
-- 原始手册：`evidence/UDG/20.15.2/VTEP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VXLAN隧道端点（MOD-VTEP）_81234590.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道端点（RMV-VTEP）_68194505.md`
+- 原始手册：`evidence/UDG/20.15.2/增加VXLAN隧道端点配置（ADD-VTEP）_68354105.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN隧道端点（LST-VTEP）_80994830.md`

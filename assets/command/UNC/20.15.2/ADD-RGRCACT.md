@@ -74,4 +74,4 @@ ADD RGRCACT: CCTMPLTNAME="global", RCCODE=SERVICEDENIED, RCACT=TERMINATE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RGRCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RG级异常返回码处理动作（ADD-RGRCACT）_09654186.md`

@@ -61,4 +61,4 @@ MOD PLMNNS: NSIDX=0, STATE=ACTIVE, DESC="for TAXI";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PLMNNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络切片（MOD-PLMNNS）_09651452.md`

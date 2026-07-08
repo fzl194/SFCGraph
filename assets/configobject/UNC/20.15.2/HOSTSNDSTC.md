@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HOSTSNDSTC.md`
-- 原始手册：`evidence/UNC/20.15.2/HOSTSNDSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询发送方向协议报文统计计数（DSP-HOSTSNDSTC）_50281690.md`
+- 原始手册：`evidence/UNC/20.15.2/清除发送方向协议报文统计计数（RTR-HOSTSNDSTC）_00866117.md`

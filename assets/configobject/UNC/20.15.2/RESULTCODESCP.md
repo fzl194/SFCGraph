@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODESCP.md`
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODESCP.md`
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODESCP.md`
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODESCP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改配置MODELC_D组网的SCP原因码控制（MOD-RESULTCODESCP）_16763161.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配置MODELC_D组网的SCP原因码控制（RMV-RESULTCODESCP）_81322862.md`
+- 原始手册：`evidence/UNC/20.15.2/增加配置MODELC_D组网的SCP原因码控制（ADD-RESULTCODESCP）_81322858.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置MODELC_D组网的SCP原因码（LST-RESULTCODESCP）_16808737.md`

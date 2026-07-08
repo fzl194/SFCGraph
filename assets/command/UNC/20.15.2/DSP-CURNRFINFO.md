@@ -71,4 +71,4 @@ NRF绑定的NF类型  =  non-NRF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CURNRFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示当前NRF实例信息（DSP-CURNRFINFO）_12701646.md`

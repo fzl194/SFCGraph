@@ -62,4 +62,4 @@ NF白名单开关 =  关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFWHITELISTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF白名单开关（LST-NRFWHITELISTSW）_88697032.md`

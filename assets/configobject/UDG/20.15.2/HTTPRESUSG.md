@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPRESUSG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示HTTP资源使用信息（DSP-HTTPRESUSG）_54343961.md`

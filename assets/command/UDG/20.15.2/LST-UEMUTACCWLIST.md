@@ -61,4 +61,4 @@ LST UEMUTACCWLIST:WLISTNAME = "testwlist1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UEMUTACCWLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PA口UE互访白名单（LST-UEMUTACCWLIST）_72561940.md`

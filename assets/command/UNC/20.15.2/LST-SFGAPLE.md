@@ -64,4 +64,4 @@ SCTP本端实体组标识  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SFGAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFGAP本端实体（LST-SFGAPLE）_75822980.md`

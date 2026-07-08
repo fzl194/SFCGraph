@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMPATIBILITY.md`
-- 原始手册：`evidence/UNC/20.15.2/COMPATIBILITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS兼容性配置(LST-COMPATIBILITY)_26146236.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS兼容性配置(SET-COMPATIBILITY)_72345835.md`

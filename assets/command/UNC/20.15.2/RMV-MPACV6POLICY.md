@@ -53,4 +53,4 @@ RMV MPACV6POLICY:POLICYNAME="policyV6";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MPACV6POLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6-MPAC策略（RMV-MPACV6POLICY）_00601473.md`

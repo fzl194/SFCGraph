@@ -37,6 +37,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPDIRECTCONNECTPORT.md`
-- 原始手册：`evidence/UDG/20.15.2/NPDIRECTCONNECTPORT.md`
-- 原始手册：`evidence/UDG/20.15.2/NPDIRECTCONNECTPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除多框级联配置（RMV-NPDIRECTCONNECTPORT）_38525051.md`
+- 原始手册：`evidence/UDG/20.15.2/增加多框级联配置（ADD-NPDIRECTCONNECTPORT）_38407891.md`
+- 原始手册：`evidence/UDG/20.15.2/查询多框级联配置（LST-NPDIRECTCONNECTPORT）_91460428.md`

@@ -55,4 +55,4 @@ RMV HTTPFCMSG: NFTYPE=NFTypeAMF;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-HTTPFCMSG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTP流控消息类型（RMV-HTTPFCMSG）_54503221.md`

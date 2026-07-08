@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S11INTFSUBNET.md`
-- 原始手册：`evidence/UNC/20.15.2/S11INTFSUBNET.md`
-- 原始手册：`evidence/UNC/20.15.2/S11INTFSUBNET.md`
-- 原始手册：`evidence/UNC/20.15.2/S11INTFSUBNET.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S11接口子网配置-(MOD-S11INTFSUBNET)_19337295.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S11接口子网配置-(RMV-S11INTFSUBNET)_19337703.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S11接口子网配置-(ADD-S11INTFSUBNET)_19330999.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S11接口子网配置-(LST-S11INTFSUBNET)_19337754.md`

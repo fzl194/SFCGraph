@@ -66,4 +66,4 @@ Service Node信令IP  =  10.13.13.0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-STATICASN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态ASN（LST-STATICASN）_40108905.md`

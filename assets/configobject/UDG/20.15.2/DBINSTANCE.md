@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DBINSTANCE.md`
-- 原始手册：`evidence/UDG/20.15.2/DBINSTANCE.md`
+- 原始手册：`evidence/UDG/20.15.2/复位CSDB子实例（RST-DBINSTANCE）_29626988.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CSDB子实例信息（DSP-DBINSTANCE）_29626987.md`

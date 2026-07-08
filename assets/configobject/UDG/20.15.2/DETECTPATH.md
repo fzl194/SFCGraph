@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DETECTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/DETECTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/DETECTPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/DETECTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改探测路径配置（MOD-DETECTPATH）_43943792.md`
+- 原始手册：`evidence/UDG/20.15.2/删除探测路径配置（RMV-DETECTPATH）_47501345.md`
+- 原始手册：`evidence/UDG/20.15.2/查询探测路径配置（LST-DETECTPATH）_44662158.md`
+- 原始手册：`evidence/UDG/20.15.2/添加探测路径配置（ADD-DETECTPATH）_44183448.md`

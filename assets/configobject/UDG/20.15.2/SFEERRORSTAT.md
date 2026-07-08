@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEERRORSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SFE错误统计信息（DSP-SFEERRORSTAT）_49801402.md`

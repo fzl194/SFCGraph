@@ -60,4 +60,4 @@ MTU值（byte）  =  1800
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FABRICMTU.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE内联口MTU值（LST-FABRICMTU）_32426909.md`

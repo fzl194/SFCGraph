@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ULCLPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除ULCL属性（RMV-ULCLPROP）_16935566.md`
+- 原始手册：`evidence/UNC/20.15.2/增加ULCL属性（ADD-ULCLPROP）_16935565.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ULCL属性（LST-ULCLPROP）_16935567.md`

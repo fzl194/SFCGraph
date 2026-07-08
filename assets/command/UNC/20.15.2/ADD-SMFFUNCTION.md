@@ -65,4 +65,4 @@ ADD SMFFUNCTION: INSTANCEID="Instanceid01", NAME="nfdescription01", ADMINSTATE=L
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/添加SMF功能实例信息（ADD-SMFFUNCTION）_09653246.md`

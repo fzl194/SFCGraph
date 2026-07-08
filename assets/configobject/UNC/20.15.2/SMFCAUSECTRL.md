@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCAUSECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF流程控制参数（MOD-SMFCAUSECTRL）_09652290.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF流程控制参数（RMV-SMFCAUSECTRL）_09653009.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF流程控制参数（ADD-SMFCAUSECTRL）_09652124.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF流程控制参数（LST-SMFCAUSECTRL）_09652371.md`

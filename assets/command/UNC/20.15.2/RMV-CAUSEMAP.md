@@ -62,4 +62,4 @@ RMV CAUSEMAP: CAUSEGRPID=126, CAUSERANGE=DEFAULT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CAUSEMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除原因值映射配置(RMV-CAUSEMAP)_72225171.md`

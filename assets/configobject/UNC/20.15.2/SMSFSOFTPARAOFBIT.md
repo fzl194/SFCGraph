@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFSOFTPARAOFBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFSOFTPARAOFBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF软件参数比特位（LST-SMSFSOFTPARAOFBIT）_34775088.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF软件参数比特位（SET-SMSFSOFTPARAOFBIT）_34615168.md`

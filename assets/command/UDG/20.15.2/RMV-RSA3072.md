@@ -57,4 +57,4 @@ RMV RSA3072: RSA3072NAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RSA3072.md`
+- 原始手册：`evidence/UDG/20.15.2/删除RSA3072公钥配置（RMV-RSA3072）_55126573.md`

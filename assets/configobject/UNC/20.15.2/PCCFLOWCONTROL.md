@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCFLOWCONTROL.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCFLOWCONTROL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC流控配置（LST-PCCFLOWCONTROL）_34160974.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC流控配置（SET-PCCFLOWCONTROL）_09897059.md`

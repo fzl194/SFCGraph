@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VONRSWALBRK.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRSWALBRK.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRSWALBRK.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复VoNR滑窗相关的参数（RTR-VONRSWALBRK）_94614221.md`
+- 原始手册：`evidence/UDG/20.15.2/显示VoNR滑窗相关参数（LST-VONRSWALBRK）_91056086.md`
+- 原始手册：`evidence/UDG/20.15.2/设置VoNR滑窗相关的参数（SET-VONRSWALBRK）_91775310.md`

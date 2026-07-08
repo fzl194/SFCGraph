@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GMLCAU.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCAU.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCAU.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GMLC权限配置(RMV-GMLCAU)_72225473.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GMLC权限配置(ADD-GMLCAU)_26145794.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GMLC权限配置(LST-GMLCAU)_26305604.md`

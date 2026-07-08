@@ -92,4 +92,4 @@ BFD会话与接口链路状态绑定标志  =  FALSE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFV3.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3进程配置（LST-OSPFV3）_00441233.md`

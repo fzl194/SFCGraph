@@ -58,4 +58,4 @@ ADD OSPFV3GTSM:VRFNAME="abc",TTL=5;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-OSPFV3GTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPFv3-GTSM配置（ADD-OSPFV3GTSM）_49801650.md`

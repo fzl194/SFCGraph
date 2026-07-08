@@ -62,4 +62,4 @@ SET APNFLOWAGETIME:APN="aa",FDAGETIME=100;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNFLOWAGETIME.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN五元组老化时间（SET-APNFLOWAGETIME）_82837300.md`

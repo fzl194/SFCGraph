@@ -58,4 +58,4 @@ RMV CHGMCDRCFG: SUBRANGE=PLMNID, MCC="460", MNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGMCDRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M-CDR计费配置(RMV-CHGMCDRCFG)_60057269.md`

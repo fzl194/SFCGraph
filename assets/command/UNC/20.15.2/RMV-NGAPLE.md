@@ -59,4 +59,4 @@ RMV NGAPLE: NGAPLEIDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NGAP本端实体（RMV-NGAPLE）_09653776.md`

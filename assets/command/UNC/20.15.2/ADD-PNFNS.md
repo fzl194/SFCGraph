@@ -72,4 +72,4 @@ ADD PNFNS: INDEX=1,NFINSTANCEID="SMF_Instance_0", SST=1, SD="000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的切片信息（ADD-PNFNS）_09652622.md`

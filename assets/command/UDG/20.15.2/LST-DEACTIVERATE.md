@@ -66,4 +66,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DEACTIVERATE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示去活用户会话的速率（LST-DEACTIVERATE）_82837082.md`

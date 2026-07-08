@@ -67,4 +67,4 @@ ADD PROCLMTPLCY: SUBRANGE=HOME_USER, NOID=1, SRVCC=YES, CS=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PROCLMTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加流程限制策略(ADD-PROCLMTPLCY)_72225309.md`

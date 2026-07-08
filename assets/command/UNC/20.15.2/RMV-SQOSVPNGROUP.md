@@ -54,4 +54,4 @@ RMV SQOSVPNGROUP:VPNGROUPNAME="vg1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SQOSVPNGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VPN组（RMV-SQOSVPNGROUP）_00440585.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FWDPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/FWDPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询转发参数（LST-FWDPARA）_29627124.md`
+- 原始手册：`evidence/UNC/20.15.2/设置转发参数（SET-FWDPARA）_29627123.md`

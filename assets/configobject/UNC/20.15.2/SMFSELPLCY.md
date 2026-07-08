@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF选择策略（MOD-SMFSELPLCY）_09651762.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF选择策略（RMV-SMFSELPLCY）_09652104.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF选择策略（ADD-SMFSELPLCY）_09653765.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF选择策略（LST-SMFSELPLCY）_09653111.md`

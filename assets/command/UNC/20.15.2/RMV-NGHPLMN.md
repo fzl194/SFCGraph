@@ -66,4 +66,4 @@ RMV NGHPLMN: MCC="123", MNC="68";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGHPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-Home-PLMN（RMV-NGHPLMN）_09653738.md`

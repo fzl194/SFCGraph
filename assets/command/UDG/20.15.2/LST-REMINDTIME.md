@@ -51,4 +51,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-REMINDTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/查询证书到期提醒时间（LST-REMINDTIME）_92173706.md`

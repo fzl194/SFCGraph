@@ -66,4 +66,4 @@ Delay信元处理开关  =  关闭
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DDNATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN消息参数以及Delay信元处理开关（LST-DDNATTR）_09653228.md`

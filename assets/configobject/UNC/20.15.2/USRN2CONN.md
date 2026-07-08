@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRN2CONN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N2接口AN信令连接（RMV-USRN2CONN）_49644931.md`

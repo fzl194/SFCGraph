@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DFSRATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/DFSRATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询双发选收属性配置（LST-DFSRATTR）_23157710.md`
+- 原始手册：`evidence/UDG/20.15.2/设置双发选收属性配置（SET-DFSRATTR）_26514777.md`

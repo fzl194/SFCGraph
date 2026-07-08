@@ -77,4 +77,4 @@ eNodeB群组标识  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ENBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询eNodeB群组成员(LST-ENBGPMEM)_72345207.md`

@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NDIFRAROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口上ND-RA路由配置信息（LST-NDIFRAROUTE）_50121382.md`

@@ -65,4 +65,4 @@ ADD NSILIST: NFINSTANCENAME="AMF_Instance_0", NSI="NS_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NSILIST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF支持切片信息（ADD-NSILIST）_09652997.md`

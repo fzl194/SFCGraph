@@ -66,4 +66,4 @@ MOD NGMNO: NOID=0, FULLNAME="Operator B", SHORTNAME="OB";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGMNO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G模式移动网络运营商信息（MOD-NGMNO）_09654365.md`

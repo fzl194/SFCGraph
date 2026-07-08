@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定NF在NRF上的时长信息（MOD-NRFNFTIMER）_07170130.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定NF在NRF上的时长信息（RMV-NRFNFTIMER）_60449037.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定NF在NRF上的时长信息（ADD-NRFNFTIMER）_07649542.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定NF在NRF上的时长信息（LST-NRFNFTIMER）_07489930.md`

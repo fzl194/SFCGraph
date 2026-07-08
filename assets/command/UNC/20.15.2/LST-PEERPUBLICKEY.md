@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PEERPUBLICKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端公钥（LST-PEERPUBLICKEY）_50281774.md`

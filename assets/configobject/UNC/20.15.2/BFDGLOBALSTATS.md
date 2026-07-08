@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BFDGLOBALSTATS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BFD的全局会话统计信息（DSP-BFDGLOBALSTATS）_00600397.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LCS参数表记录(LST-LCSPARA)_26305608.md`
+- 原始手册：`evidence/UNC/20.15.2/设置LCS参数表记录(SET-LCSPARA)_72225477.md`

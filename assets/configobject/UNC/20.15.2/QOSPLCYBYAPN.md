@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSPLCYBYAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPLCYBYAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPLCYBYAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPLCYBYAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的QoS策略(MOD-QOSPLCYBYAPN)_88513258.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的QoS策略(RMV-QOSPLCYBYAPN)_38832489.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的QoS策略(ADD-QOSPLCYBYAPN)_88832402.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的QoS策略(LST-QOSPLCYBYAPN)_88672790.md`

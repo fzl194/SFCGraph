@@ -63,4 +63,4 @@ RMV POOL: POOLID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-POOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除POOL配置信息(RMV-POOL)_26305912.md`

@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DCSSDPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DCS直通存储慢盘检测参数（LST-DCSSDPARA）_41105089.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EPLMNGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/EPLMNGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/EPLMNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除等价PLMN组成员（RMV-EPLMNGRPMEM）_09653022.md`
+- 原始手册：`evidence/UNC/20.15.2/增加等价PLMN组成员（ADD-EPLMNGRPMEM）_09654402.md`
+- 原始手册：`evidence/UNC/20.15.2/查询等价PLMN组成员（LST-EPLMNGRPMEM）_09653779.md`

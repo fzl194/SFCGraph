@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CELL.md`
-- 原始手册：`evidence/UDG/20.15.2/CELL.md`
-- 原始手册：`evidence/UDG/20.15.2/CELL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除小区（RMV-CELL）_87336170.md`
+- 原始手册：`evidence/UDG/20.15.2/增加小区（ADD-CELL）_93415785.md`
+- 原始手册：`evidence/UDG/20.15.2/查询小区（LST-CELL）_86616994.md`

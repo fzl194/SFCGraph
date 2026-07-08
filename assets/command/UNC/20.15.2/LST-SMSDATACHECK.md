@@ -64,4 +64,4 @@ SMSF上用户数据的有效时长(小时)  =  48
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSDATACHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询数据核查扫描参数（LST-SMSDATACHECK）_64343892.md`

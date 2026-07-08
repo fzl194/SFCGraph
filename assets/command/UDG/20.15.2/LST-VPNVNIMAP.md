@@ -71,4 +71,4 @@ Rule开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VPNVNIMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VPN-VNI映射（LST-VPNVNIMAP）_80994836.md`

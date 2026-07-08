@@ -57,4 +57,4 @@ RMV BCSRVLEVELPLY: BWMCNAME="bc1", SERVICELEVEL=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-BCSRVLEVELPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理控策略制器业务级别（RMV-BCSRVLEVELPLY）_92577471.md`

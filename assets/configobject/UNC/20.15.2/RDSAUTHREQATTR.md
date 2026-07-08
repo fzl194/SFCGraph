@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSAUTHREQATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSAUTHREQATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Radius鉴权请求消息携带的属性（LST-RDSAUTHREQATTR）_28567652.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Radius鉴权请求消息携带的属性（SET-RDSAUTHREQATTR）_28567661.md`

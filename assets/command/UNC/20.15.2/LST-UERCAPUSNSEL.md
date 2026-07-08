@@ -78,4 +78,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UERCAPUSNSEL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE无线能力选择USN参数(LST-UERCAPUSNSEL)_25072458.md`

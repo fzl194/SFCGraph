@@ -67,4 +67,4 @@ ARP数值  优先级
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGPAGINGARPPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于ARP的Paging消息在流控期间放通的优先级（LST-NGPAGINGARPPRI）_98627533.md`

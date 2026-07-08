@@ -57,4 +57,4 @@ ADD SBINRFKEY: NRFID="bf33a517-7789-4637-b675-b3591b0d706b", NRFKEY="-----BEGIN 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SBINRFKEY.md`
+- 原始手册：`evidence/UDG/20.15.2/增加NRF密钥（ADD-SBINRFKEY）_83972182.md`

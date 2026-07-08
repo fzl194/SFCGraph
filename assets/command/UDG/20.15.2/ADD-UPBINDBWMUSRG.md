@@ -62,4 +62,4 @@ ADD UPBINDBWMUSRG:USERGROUPNAME="testbwmusergroup",USERPROFILENAME="testuserprof
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UPBINDBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理用户组User-Profile绑定（ADD-UPBINDBWMUSRG）_82837491.md`

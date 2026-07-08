@@ -57,4 +57,4 @@ RMV SAMUTEPROTOCOL:PROTOCOLNAME="socks5";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SAMUTEPROTOCOL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SA-EGN规则不启用协议（RMV-SAMUTEPROTOCOL）_69450618.md`

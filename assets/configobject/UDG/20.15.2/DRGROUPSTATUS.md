@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRGROUPSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示容灾组的运行状态信息（DSP-DRGROUPSTATUS）_74554621.md`

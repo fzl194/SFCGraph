@@ -62,4 +62,4 @@ ADD ALLOWEDOBJ:OBJNAME="objname001",FQDN="huawei1.com.apn.epc.mnc456.mcc123.3gpp
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALLOWEDOBJ.md`
+- 原始手册：`evidence/UNC/20.15.2/增加授权控制对象信息（ADD-ALLOWEDOBJ）_09651389.md`

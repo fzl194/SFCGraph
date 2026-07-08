@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFESWMSGSTC.md`
-- 原始手册：`evidence/UNC/20.15.2/SFESWMSGSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询FEISW消息统计（DSP-SFESWMSGSTC）_00600789.md`
+- 原始手册：`evidence/UNC/20.15.2/清除FEISW消息统计（RTR-SFESWMSGSTC）_00841409.md`

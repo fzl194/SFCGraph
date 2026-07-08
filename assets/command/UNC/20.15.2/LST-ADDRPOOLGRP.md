@@ -70,4 +70,4 @@ IPv6基于地址池优先级分配地址算法  =  去使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ADDRPOOLGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询地址池组（LST-ADDRPOOLGRP）_32232818.md`

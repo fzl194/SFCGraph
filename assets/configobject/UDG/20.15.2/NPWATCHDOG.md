@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPWATCHDOG.md`
-- 原始手册：`evidence/UDG/20.15.2/NPWATCHDOG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询喂狗功能相关配置（LST-NPWATCHDOG）_18818230.md`
+- 原始手册：`evidence/UDG/20.15.2/设置喂狗功能配置（SET-NPWATCHDOG）_18818232.md`

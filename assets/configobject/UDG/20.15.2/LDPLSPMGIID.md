@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPLSPMGIID.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP的IID信息（DSP-LDPLSPMGIID）_49802610.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCSPERMITCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSPERMITCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LCSPERMITCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除定位服务权限配置（RMV-LCSPERMITCFG）_18115686.md`
+- 原始手册：`evidence/UNC/20.15.2/增加定位服务权限配置（ADD-LCSPERMITCFG）_62595587.md`
+- 原始手册：`evidence/UNC/20.15.2/查询定位服务权限配置（LST-LCSPERMITCFG）_17955726.md`

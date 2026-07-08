@@ -62,4 +62,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPCONCENPOINT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询集中点部署模式（LST-UPCONCENPOINT）_45195200.md`

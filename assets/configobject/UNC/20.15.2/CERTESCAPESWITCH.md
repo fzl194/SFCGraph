@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CERTESCAPESWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/CERTESCAPESWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询证书过期逃生开关状态（LST-CERTESCAPESWITCH）_06110022.md`
+- 原始手册：`evidence/UNC/20.15.2/设置证书过期逃生开关状态（SET-CERTESCAPESWITCH）_55469701.md`

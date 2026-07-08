@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTYPERT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTYPERT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFTYPERT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF类型路由（RMV-NRFNFTYPERT）_25121205.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF类型路由（ADD-NRFNFTYPERT）_25120875.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF类型路由（LST-NRFNFTYPERT）_25121191.md`

@@ -71,4 +71,4 @@ ADD PIMIF:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,IFNAME="Ethernet64/0/3",H
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PIMIF.md`
+- 原始手册：`evidence/UDG/20.15.2/添加PIM接口配置（ADD-PIMIF）_50281190.md`

@@ -62,4 +62,4 @@ ADD LOCALHOSTBIND: LOCGRPNAME="abc", LOCHOSTNAME="aaa";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOCALHOSTBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter本端主机与Diameter本端主机组的关联关系（ADD-LOCALHOSTBIND）_17057495.md`

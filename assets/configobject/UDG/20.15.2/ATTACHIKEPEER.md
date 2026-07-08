@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ATTACHIKEPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/ATTACHIKEPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/ATTACHIKEPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除绑定IKE对等体（RMV-ATTACHIKEPEER）_80592510.md`
+- 原始手册：`evidence/UDG/20.15.2/增加绑定IKE对等体（ADD-ATTACHIKEPEER）_80910984.md`
+- 原始手册：`evidence/UDG/20.15.2/查询绑定的IKE对等体（LST-ATTACHIKEPEER）_26032193.md`

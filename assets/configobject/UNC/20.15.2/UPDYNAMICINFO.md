@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPDYNAMICINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UP节点动态信息（DSP-UPDYNAMICINFO）_24796814.md`

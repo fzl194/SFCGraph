@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFCLIENTADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFCLIENTADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFCLIENTADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF实例客户端地址信息（RMV-NRFCLIENTADDR）_96242878.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF实例客户端地址信息（ADD-NRFCLIENTADDR）_74859869.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF实例客户端地址信息（LST-NRFCLIENTADDR）_96242292.md`

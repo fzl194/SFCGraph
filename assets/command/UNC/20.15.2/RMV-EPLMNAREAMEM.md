@@ -57,4 +57,4 @@ RMV EPLMNAREAMEM: TACGRPID=20, BGNTAC="120101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EPLMNAREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除跟踪区域组成员（RMV-EPLMNAREAMEM）_23897881.md`

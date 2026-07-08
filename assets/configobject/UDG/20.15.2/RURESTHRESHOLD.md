@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RURESTHRESHOLD.md`
-- 原始手册：`evidence/UDG/20.15.2/RURESTHRESHOLD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RU资源过载和去过载阈值（LST-RURESTHRESHOLD）_56175397.md`
+- 原始手册：`evidence/UDG/20.15.2/设置RU资源过载和去过载阈值（SET-RURESTHRESHOLD）_10095498.md`

@@ -71,4 +71,4 @@ MOD MMEID: MCC="123", MNC="020", MMEGI="8001", MMEC="01", MMECNUM=32;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MMEID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MMEID配置(MOD-MMEID)_26305898.md`

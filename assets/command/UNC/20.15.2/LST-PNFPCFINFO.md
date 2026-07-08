@@ -69,4 +69,4 @@ Rx接口Diameter主机名 = huawei.com
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFPCFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端PCF信息（LST-PNFPCFINFO）_09653010.md`

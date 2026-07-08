@@ -69,4 +69,4 @@ MOD NCGALMSRV:ALMSRVNAME="AlarmServerCfg",IPTYPE=IPV4,PIPV4="192.168.100.3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NCGALMSRV.md`
+- 原始手册：`evidence/UNC/20.15.2/修改告警服务器相关配置信息（MOD-NCGALMSRV）_77419816.md`

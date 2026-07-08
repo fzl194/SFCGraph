@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPLOGICINTF.md`
-- 原始手册：`evidence/UNC/20.15.2/UPLOGICINTF.md`
-- 原始手册：`evidence/UNC/20.15.2/UPLOGICINTF.md`
-- 原始手册：`evidence/UNC/20.15.2/UPLOGICINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF逻辑接口（MOD-UPLOGICINTF）_96805496.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF逻辑接口（RMV-UPLOGICINTF）_96805501.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF逻辑接口（ADD-UPLOGICINTF）_96805379.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF逻辑接口（LST-UPLOGICINTF）_96805493.md`

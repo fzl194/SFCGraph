@@ -59,4 +59,4 @@ RMV ADDRPOOLGRP: POOLGRPNAME="spoolgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ADDRPOOLGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除地址池组（RMV-ADDRPOOLGRP）_32232825.md`

@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FLOWAGETIME.md`
-- 原始手册：`evidence/UDG/20.15.2/FLOWAGETIME.md`
-- 原始手册：`evidence/UDG/20.15.2/FLOWAGETIME.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复五元组老化时间（RTR-FLOWAGETIME）_82837292.md`
+- 原始手册：`evidence/UDG/20.15.2/查询五元组老化时间（LST-FLOWAGETIME）_82837293.md`
+- 原始手册：`evidence/UDG/20.15.2/设置五元组老化时间（SET-FLOWAGETIME）_82837291.md`

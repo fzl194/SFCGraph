@@ -60,4 +60,4 @@ MOD NGEMGCFG: NOID=0, EMGMODE=VALIDUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGEMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改运营商紧急呼叫功能配置（MOD-NGEMGCFG）_09651472.md`

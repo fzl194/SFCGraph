@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/CAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/CAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/CAUSEMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改原因值映射配置(MOD-CAUSEMAP)_26305302.md`
+- 原始手册：`evidence/UNC/20.15.2/删除原因值映射配置(RMV-CAUSEMAP)_72225171.md`
+- 原始手册：`evidence/UNC/20.15.2/增加原因值映射配置(ADD-CAUSEMAP)_26145490.md`
+- 原始手册：`evidence/UNC/20.15.2/查询原因值映射配置(LST-CAUSEMAP)_72345089.md`

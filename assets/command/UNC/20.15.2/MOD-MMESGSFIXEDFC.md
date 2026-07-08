@@ -61,4 +61,4 @@ MOD MMESGSFIXEDFC: MMEIDX=0, LURTHD=1000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MMESGSFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR局向Sgs固定速率流控-(MOD-MMESGSFIXEDFC)_19362853.md`

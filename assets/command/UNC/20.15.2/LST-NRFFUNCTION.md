@@ -65,4 +65,4 @@ Instanceid02   nfdescription02  锁定        运行          fqdn02          10
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF功能实体配置信息（LST-NRFFUNCTION）_09652771.md`

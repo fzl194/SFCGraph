@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MVNOFUN.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNOFUN.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNOFUN.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNOFUN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MVNO功能配置信息(MOD-MVNOFUN)_26146062.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MVNO功能配置信息(RMV-MVNOFUN)_72345661.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MVNO功能配置信息(ADD-MVNOFUN)_26305870.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MVNO功能配置信息(LST-MVNOFUN)_72225741.md`

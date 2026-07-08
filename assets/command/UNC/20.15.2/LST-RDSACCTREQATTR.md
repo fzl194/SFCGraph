@@ -96,4 +96,4 @@ radius Server Group的AAA计费私有扩展属性
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSACCTREQATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS计费服务器可选消息属性（LST-RDSACCTREQATTR）_09896780.md`

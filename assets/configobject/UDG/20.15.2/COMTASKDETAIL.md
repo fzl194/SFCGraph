@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COMTASKDETAIL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDR通信质量检测结果详情（DSP-COMTASKDETAIL）_63673342.md`

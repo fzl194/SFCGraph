@@ -65,4 +65,4 @@ ADD AMFDNNPLCY: DNNNI="huawei.com", SST=1, SD="000001", SSSW=YES, SERVINGSCOPE="
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFDNNPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN接入选择策略（ADD-AMFDNNPLCY）_96640805.md`

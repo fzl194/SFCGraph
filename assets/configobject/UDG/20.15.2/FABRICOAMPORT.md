@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABRICOAMPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE各链路OAM报文统计结果（DSP-FABRICOAMPORT）_92520009.md`

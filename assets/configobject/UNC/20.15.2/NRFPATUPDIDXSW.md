@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFPATUPDIDXSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPATUPDIDXSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PATCH更新携带下标处理开关（LST-NRFPATUPDIDXSW）_88377442.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PATCH更新携带下标处理开关（SET-NRFPATUPDIDXSW）_35519285.md`

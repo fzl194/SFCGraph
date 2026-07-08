@@ -73,4 +73,4 @@ ADD EMGCFG: NOID=0, EMGMODE=AUTHUE, EMGAPN="1", ULAPNAMBR=20000, DLAPNAMBR=40000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-EMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加运营商紧急呼叫功能配置（ADD-EMGCFG）_26305316.md`

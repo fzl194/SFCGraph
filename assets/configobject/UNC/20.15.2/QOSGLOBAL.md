@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSGLOBAL.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSGLOBAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局QoS配置（LST-QOSGLOBAL）_09652987.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局QoS配置（SET-QOSGLOBAL）_09652976.md`

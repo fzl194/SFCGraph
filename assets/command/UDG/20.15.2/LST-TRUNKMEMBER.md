@@ -67,4 +67,4 @@ Eth-Trunk1        Ethernet64/0/4
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TRUNKMEMBER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Trunk成员接口信息（LST-TRUNKMEMBER）_49802114.md`

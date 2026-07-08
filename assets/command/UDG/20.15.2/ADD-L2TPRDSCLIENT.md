@@ -63,4 +63,4 @@ ADD L2TPRDSCLIENT:APN="huawei.com",INTERFACENAME="giif1/0/0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-L2TPRDSCLIENT.md`
+- 原始手册：`evidence/UDG/20.15.2/增加APN绑定的L2TP接口（ADD-L2TPRDSCLIENT）_35373540.md`

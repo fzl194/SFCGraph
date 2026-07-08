@@ -68,4 +68,4 @@ ADD PNFALLOWEDNFNS: NFINSTANCEID="SMF_Instance_0", SRVINSTANCEID="Service_Instan
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFALLOWEDNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF允许的切片信息（ADD-PNFALLOWEDNFNS）_09651719.md`

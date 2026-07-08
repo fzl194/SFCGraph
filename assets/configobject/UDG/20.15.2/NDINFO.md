@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NDINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ND控制块信息（DSP-NDINFO）_00600861.md`

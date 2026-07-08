@@ -69,4 +69,4 @@ APN用户模板组绑定关系信息
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNUSRPROFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN用户模板组绑定关系（LST-APNUSRPROFG）_09897227.md`

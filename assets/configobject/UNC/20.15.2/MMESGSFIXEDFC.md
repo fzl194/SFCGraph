@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMESGSFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/MMESGSFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/MMESGSFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/MMESGSFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR局向Sgs固定速率流控-(MOD-MMESGSFIXEDFC)_19362853.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VLR局向Sgs固定速率流控-(RMV-MMESGSFIXEDFC)_68762910.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VLR局向Sgs固定速率流控-(ADD-MMESGSFIXEDFC)_68922822.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR局向Sgs固定速率流控-(LST-MMESGSFIXEDFC)_19522765.md`

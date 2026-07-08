@@ -68,4 +68,4 @@ ADD CPCGGRP: CPCGGRPID=1, DESCRIPTION="CpCGGroup1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CPCGGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加抄送CG组（ADD-CPCGGRP）_09896864.md`

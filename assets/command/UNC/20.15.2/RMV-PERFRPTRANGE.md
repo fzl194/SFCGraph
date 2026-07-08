@@ -61,4 +61,4 @@ RMV PERFRPTRANGE: MOC=APN_GW, RULERANGE=SPECIFICMOI, MOIID="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PERFRPTRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除性能指标上报范围（RMV-PERFRPTRANGE）_59999367.md`

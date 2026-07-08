@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADDRESSATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRESSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE-IP地址属性（LST-ADDRESSATTR）_09652481.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UE-IP地址属性（SET-ADDRESSATTR）_09653185.md`

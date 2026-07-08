@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COMPKG.md`
-- 原始手册：`evidence/UDG/20.15.2/COMPKG.md`
-- 原始手册：`evidence/UDG/20.15.2/COMPKG.md`
+- 原始手册：`evidence/UDG/20.15.2/加载扩展包（LOD-COMPKG）_42742473.md`
+- 原始手册：`evidence/UDG/20.15.2/查询加载扩展包（LST-COMPKG）_55136286.md`
+- 原始手册：`evidence/UDG/20.15.2/移除加载扩展包（RMV-COMPKG）_55136287.md`

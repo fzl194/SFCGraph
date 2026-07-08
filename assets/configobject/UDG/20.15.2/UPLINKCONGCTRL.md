@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPLINKCONGCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/UPLINKCONGCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter链路拥塞控制（LST-UPLINKCONGCTRL）_45195182.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Diameter链路拥塞控制（SET-UPLINKCONGCTRL）_97314561.md`

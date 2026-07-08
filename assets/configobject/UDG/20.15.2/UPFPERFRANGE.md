@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPFPERFRANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/UPFPERFRANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/UPFPERFRANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/UPFPERFRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UPF上报性能指标范围配置（RMV-UPFPERFRANGE）_01838836.md`
+- 原始手册：`evidence/UDG/20.15.2/显示UPF上报性能指标范围配置（LST-UPFPERFRANGE）_01603376.md`
+- 原始手册：`evidence/UDG/20.15.2/更新UPF上报性能指标范围配置（MOD-UPFPERFRANGE）_87359209.md`
+- 原始手册：`evidence/UDG/20.15.2/添加UPF上报性能指标范围配置（ADD-UPFPERFRANGE）_87598869.md`

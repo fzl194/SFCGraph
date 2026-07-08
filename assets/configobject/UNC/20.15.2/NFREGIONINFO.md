@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFREGIONINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/NFREGIONINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本端NF大区和省份数据管理参数（LST-NFREGIONINFO）_24956634.md`
+- 原始手册：`evidence/UNC/20.15.2/设置本端NF大区和省份数据管理参数（SET-NFREGIONINFO）_71516455.md`

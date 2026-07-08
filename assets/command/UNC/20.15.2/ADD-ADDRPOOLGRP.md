@@ -64,4 +64,4 @@ ADD ADDRPOOLGRP: POOLGRPNAME="spoolgrp1", POOLGRPTYPE=UDM;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ADDRPOOLGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加地址池组（ADD-ADDRPOOLGRP）_32232812.md`

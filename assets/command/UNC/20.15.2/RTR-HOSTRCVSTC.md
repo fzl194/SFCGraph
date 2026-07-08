@@ -67,4 +67,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-HOSTRCVSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除接收方向协议报文统计计数（RTR-HOSTRCVSTC）_50281042.md`

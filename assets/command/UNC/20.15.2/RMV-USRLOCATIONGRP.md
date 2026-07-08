@@ -61,4 +61,4 @@ RMV USRLOCATIONGRP: LOCGROUPNAME="test01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-USRLOCATIONGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户位置组（RMV-USRLOCATIONGRP）_09897149.md`

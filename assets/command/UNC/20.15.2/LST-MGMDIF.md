@@ -79,4 +79,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MGMDIF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IGMP接口配置（LST-MGMDIF）_49961098.md`

@@ -94,4 +94,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SFESWMSGSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FEISW消息统计（DSP-SFESWMSGSTC）_00600789.md`

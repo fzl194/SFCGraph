@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OCSGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/OCSGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/OCSGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Ocs组（RMV-OCSGROUP）_09896960.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Ocs组（ADD-OCSGROUP）_09896959.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Ocs组（LST-OCSGROUP）_09896961.md`

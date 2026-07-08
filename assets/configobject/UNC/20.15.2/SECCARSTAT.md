@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECCARSTAT.md`
-- 原始手册：`evidence/UNC/20.15.2/SECCARSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示安全CAR功能丢弃上送CPU报文的详细信息（DSP-SECCARSTAT）_00600781.md`
+- 原始手册：`evidence/UNC/20.15.2/清除承诺访问速率具体信息（RTR-SECCARSTAT）_50280698.md`

@@ -64,4 +64,4 @@ MOD DNSQ: SUBRANGE=All, DNSUF="gprs", DNSQUERYMODE=NAPTR, DESC="For huawei rule0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DNSQ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS查询控制参数(MOD-DNSQ)_26145894.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFSEL.md`
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFSEL.md`
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFSEL.md`
-- 原始手册：`evidence/UNC/20.15.2/TSTPCFSEL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改拨测用户与PCF服务区的绑定关系（MOD-TSTPCFSEL）_70462589.md`
+- 原始手册：`evidence/UNC/20.15.2/删除拨测用户与PCF服务区的绑定关系（RMV-TSTPCFSEL）_70382393.md`
+- 原始手册：`evidence/UNC/20.15.2/增加拨测用户与PCF服务区的绑定关系（ADD-TSTPCFSEL）_70462529.md`
+- 原始手册：`evidence/UNC/20.15.2/查询拨测用户与PCF服务区的绑定关系（LST-TSTPCFSEL）_70462569.md`

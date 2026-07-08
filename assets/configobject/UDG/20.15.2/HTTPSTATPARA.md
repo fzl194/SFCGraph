@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPSTATPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPSTATPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPSTATPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTP统计参数（RMV-HTTPSTATPARA）_29053337.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTP统计参数（ADD-HTTPSTATPARA）_29291763.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP统计参数（LST-HTTPSTATPARA）_83972188.md`

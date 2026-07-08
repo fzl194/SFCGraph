@@ -73,4 +73,4 @@ AAA未下发地址池通配符的情况下是否开启通配功能 = 去使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ADDRESSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE-IP地址属性（LST-ADDRESSATTR）_09652481.md`

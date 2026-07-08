@@ -59,4 +59,4 @@ RMV PCCCHGMODEBYPCFID: PCFINSID="pcf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PCCCHGMODEBYPCFID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于PCF的计费策略接口类型（RMV-PCCCHGMODEBYPCFID）_72001554.md`

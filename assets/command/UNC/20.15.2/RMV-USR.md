@@ -67,4 +67,4 @@ RMV USR: RMVOPTION=BYIMSI, IMSI="123071104000955", DTMODE=EXPLICIT, DTTYPE=Re-at
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-USR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户(RMV-USR)_26306166.md`

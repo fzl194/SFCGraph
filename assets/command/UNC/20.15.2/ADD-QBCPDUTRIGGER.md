@@ -78,4 +78,4 @@ ADD QBCPDUTRIGGER: CCTMPLTNAME="test", ULCHG=IMMEDIATE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-QBCPDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QBC计费PDU会话级的trigger参数（ADD-QBCPDUTRIGGER）_09652707.md`

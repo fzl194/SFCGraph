@@ -87,4 +87,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHGCDR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费CDR参数（LST-CHGCDR）_72225053.md`

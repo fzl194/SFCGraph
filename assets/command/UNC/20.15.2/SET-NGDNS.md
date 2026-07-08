@@ -68,4 +68,4 @@ SET NGDNS: RCRSPTM=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DNS运行参数（SET-NGDNS）_09651853.md`

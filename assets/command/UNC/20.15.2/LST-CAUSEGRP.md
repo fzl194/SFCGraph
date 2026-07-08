@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CAUSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询原因值映射组配置(LST-CAUSEGRP)_26145494.md`

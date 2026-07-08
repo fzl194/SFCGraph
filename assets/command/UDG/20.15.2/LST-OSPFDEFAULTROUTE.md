@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFDEFAULTROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF默认宣告路由配置（LST-OSPFDEFAULTROUTE）_49961550.md`

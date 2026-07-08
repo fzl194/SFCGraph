@@ -70,4 +70,4 @@ VPN实例名称  =  _public_
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ARPSTATICTABLE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态ARP表项（LST-ARPSTATICTABLE）_00600701.md`

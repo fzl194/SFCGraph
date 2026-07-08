@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFCACHEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF映射关系的本地缓存策略（LST-SMFCACHEFUNC）_35374743.md`

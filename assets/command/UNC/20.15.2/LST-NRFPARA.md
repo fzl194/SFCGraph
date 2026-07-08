@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF协议参数（LST-NRFPARA）_09653029.md`

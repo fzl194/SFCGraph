@@ -58,4 +58,4 @@ ADD MATCHROUTETYPE:NODESEQUENCE=10,ROUTETYPE=external1, POLICYNAME="a";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MATCHROUTETYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加路由类型匹配路由策略（ADD-MATCHROUTETYPE）_49801558.md`

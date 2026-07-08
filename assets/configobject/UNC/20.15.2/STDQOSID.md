@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STDQOSID.md`
-- 原始手册：`evidence/UNC/20.15.2/STDQOSID.md`
-- 原始手册：`evidence/UNC/20.15.2/STDQOSID.md`
-- 原始手册：`evidence/UNC/20.15.2/STDQOSID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改标准QoS-ID配置（MOD-STDQOSID）_06399923.md`
+- 原始手册：`evidence/UNC/20.15.2/删除标准QoS-ID配置（RMV-STDQOSID）_06399929.md`
+- 原始手册：`evidence/UNC/20.15.2/增加标准QoS-ID配置（ADD-STDQOSID）_06399909.md`
+- 原始手册：`evidence/UNC/20.15.2/查询标准QoS-ID配置（LST-STDQOSID）_06399918.md`

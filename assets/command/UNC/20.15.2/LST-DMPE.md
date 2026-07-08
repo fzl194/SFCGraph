@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DMPE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter对端实体(LST-DMPE)_26146286.md`

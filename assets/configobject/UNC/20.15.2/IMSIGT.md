@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIGT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIGT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIGT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIGT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI-GT对应关系(MOD-IMSIGT)_72225145.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI-GT对应关系(RMV-IMSIGT)_26145464.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI-GT对应关系(ADD-IMSIGT)_72345061.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI-GT对应关系(LST-IMSIGT)_26305276.md`

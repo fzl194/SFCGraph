@@ -61,4 +61,4 @@ ADD RESELAREACODE: RESELAREACODE="ReSelZone", DESC="for zone1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RESELAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF重选功能区域编码（ADD-RESELAREACODE）_70382293.md`

@@ -65,4 +65,4 @@ RMV IMEISVSEG:SEGMENTNAME="TestSegmentName";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMEISVSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMEISV号段（RMV-IMEISVSEG）_09897140.md`

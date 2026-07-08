@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPLYLOCALPREFERENCE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYLOCALPREFERENCE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYLOCALPREFERENCE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYLOCALPREFERENCE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改路由BGP本地优先级设置（MOD-APPLYLOCALPREFERENCE）_00866549.md`
+- 原始手册：`evidence/UDG/20.15.2/删除路由BGP本地优先级设置（RMV-APPLYLOCALPREFERENCE）_49802130.md`
+- 原始手册：`evidence/UDG/20.15.2/增加路由BGP本地优先级设置（ADD-APPLYLOCALPREFERENCE）_00600957.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由BGP本地优先级设置（LST-APPLYLOCALPREFERENCE）_50281258.md`

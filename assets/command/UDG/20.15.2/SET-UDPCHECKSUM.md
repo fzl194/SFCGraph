@@ -72,4 +72,4 @@ SET UDPCHECKSUM:UDPTYPE=L2TP_CTRL,SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UDPCHECKSUM.md`
+- 原始手册：`evidence/UDG/20.15.2/配置UDP报文中是否携带checksum（SET-UDPCHECKSUM）_82837687.md`

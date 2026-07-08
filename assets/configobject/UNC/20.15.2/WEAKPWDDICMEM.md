@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/WEAKPWDDICMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/WEAKPWDDICMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/WEAKPWDDICMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除弱口令字典成员（RMV-WEAKPWDDICMEM）_89255128.md`
+- 原始手册：`evidence/UNC/20.15.2/增加弱口令字典成员（ADD-WEAKPWDDICMEM）_89415068.md`
+- 原始手册：`evidence/UNC/20.15.2/查询弱口令字典成员（LST-WEAKPWDDICMEM）_89575016.md`

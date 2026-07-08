@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESTOSMCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示容灾用户SM上下文信息（DSP-RESTOSMCTX）_26307108.md`

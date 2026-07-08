@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CFGTHRESHOLD.md`
-- 原始手册：`evidence/UNC/20.15.2/CFGTHRESHOLD.md`
-- 原始手册：`evidence/UNC/20.15.2/CFGTHRESHOLD.md`
-- 原始手册：`evidence/UNC/20.15.2/CFGTHRESHOLD.md`
+- 原始手册：`evidence/UNC/20.15.2/修改配置对象告警阈值(MOD-CFGTHRESHOLD)_36569360.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配置对象告警阈值(RMV-CFGTHRESHOLD)_72490293.md`
+- 原始手册：`evidence/UNC/20.15.2/增加配置对象告警阈值(ADD-CFGTHRESHOLD)_72647329.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置对象告警阈值(LST-CFGTHRESHOLD)_72648877.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCARSTSSNSTATS.md`
+- 原始手册：`evidence/UNC/20.15.2/清除NETCONF会话统计信息（RTR-NCARSTSSNSTATS）_59103632.md`

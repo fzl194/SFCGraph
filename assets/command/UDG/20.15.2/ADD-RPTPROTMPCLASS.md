@@ -60,4 +60,4 @@ ADD RPTPROTMPCLASS: MPPROTCLASSNM="p2p", MPPROTCLASSIDX=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RPTPROTMPCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务报表映射承载协议分类配置（ADD-RPTPROTMPCLASS）_19881188.md`

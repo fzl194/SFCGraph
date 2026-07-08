@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RSCBOXHEALCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/RSCBOXHEALCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ResourceBox自愈策略控制参数（LST-RSCBOXHEALCTRL）_50921273.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ResourceBox自愈策略控制参数（SET-RSCBOXHEALCTRL）_00601674.md`

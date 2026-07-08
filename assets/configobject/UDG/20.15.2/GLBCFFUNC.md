@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBCFFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBCFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询内容过滤全局开关（LST-GLBCFFUNC）_50710734.md`
+- 原始手册：`evidence/UDG/20.15.2/设置内容过滤全局开关（SET-GLBCFFUNC）_54628145.md`

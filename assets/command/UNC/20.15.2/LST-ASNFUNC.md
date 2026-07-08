@@ -63,4 +63,4 @@ ASN 同步时长(小时)  =  5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ASNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ASN功能（LST-ASNFUNC）_35273619.md`

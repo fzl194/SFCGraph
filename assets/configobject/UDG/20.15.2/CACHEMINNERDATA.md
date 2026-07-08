@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CACHEMINNERDATA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CACHEM诊断信息（DSP-CACHEMINNERDATA）_49961342.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USERROUTINGSW.md`
-- 原始手册：`evidence/UDG/20.15.2/USERROUTINGSW.md`
+- 原始手册：`evidence/UDG/20.15.2/显示用户路由可靠性配置（LST-USERROUTINGSW）_19881178.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户路由可靠性配置（SET-USERROUTINGSW）_19641386.md`

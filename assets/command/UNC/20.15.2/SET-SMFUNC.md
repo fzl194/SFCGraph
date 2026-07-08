@@ -87,4 +87,4 @@ SET SMFUNC: DUALFLAG=NO, INDFWD=YES, TOPSELCFG=YES, APNRES=NO, PDPRMD=MAX, PDPTY
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置会话管理扩展功能(SET-SMFUNC)_26145684.md`

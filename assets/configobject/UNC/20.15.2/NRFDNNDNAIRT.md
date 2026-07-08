@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDNNDNAIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNNDNAIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNNDNAIRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN中数据网络访问标识最长后缀匹配转发路由（RMV-NRFDNNDNAIRT）_92900874.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN中数据网络访问标识最长后缀匹配转发路由（ADD-NRFDNNDNAIRT）_43540609.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN中数据网络访问标识最长后缀匹配转发路由（LST-NRFDNNDNAIRT）_92740998.md`

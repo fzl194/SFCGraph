@@ -64,4 +64,4 @@ ADD RULEBINDSRVS:SRVSTATNAME="stat1",RULENAME="rule1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RULEBINDSRVS.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务统计规则绑定配置（ADD-RULEBINDSRVS）_82837851.md`

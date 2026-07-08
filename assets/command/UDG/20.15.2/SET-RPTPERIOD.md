@@ -64,4 +64,4 @@ SET RPTPERIOD: RPTPERIOD=4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RPTPERIOD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-N6故障状态上报周期（SET-RPTPERIOD）_12203663.md`

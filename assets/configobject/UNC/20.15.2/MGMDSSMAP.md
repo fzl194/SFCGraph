@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MGMDSSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDSSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IGMP-SSM映射配置（RMV-MGMDSSMAP）_00440893.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IGMP-SSM映射加入信息（DSP-MGMDSSMAP）_49961122.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IGMP-SSM映射配置（LST-MGMDSSMAP）_00601125.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IGMP-SSM映射配置（ADD-MGMDSSMAP）_49961978.md`

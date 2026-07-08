@@ -62,4 +62,4 @@ IP过滤规则 =  Permit
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPOPTSECALL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP全局选项安全配置（LST-IPOPTSECALL）_49961990.md`

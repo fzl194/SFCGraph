@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询软件参数表(LST-SOFTPARA)_72225861.md`

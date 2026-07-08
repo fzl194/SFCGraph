@@ -62,4 +62,4 @@ ADD TLSPSK: PSKIDX=1, PSKGRPIDX=1, MODE=Client, PSKID="psktest", PSKTYPE=HEXADEC
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-TLSPSK.md`
+- 原始手册：`evidence/UNC/20.15.2/增加预共享密钥（ADD-TLSPSK）_07669721.md`

@@ -58,4 +58,4 @@ ADD AMFIMRFUNC:SUBRANGE=ALL_USER,INTERFACETYPE=NAS-1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFIMRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户消息统计功能配置（ADD-AMFIMRFUNC）_44006340.md`

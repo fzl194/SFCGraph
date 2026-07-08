@@ -67,4 +67,4 @@ RETCODE = 0 操作成功.
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-EXTOTTMATCHSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OTT业务规则匹配功能是否使能配置（LST-EXTOTTMATCHSW）_93531881.md`

@@ -59,4 +59,4 @@ SET BWRATIO: STATICBW=30;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-BWRATIO.md`
+- 原始手册：`evidence/UNC/20.15.2/设置带宽占用比例表(SET-BWRATIO)_72345447.md`

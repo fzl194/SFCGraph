@@ -60,4 +60,4 @@ RMV ADRLOCWHITELST: MSISDN="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ADRLOCWHITELST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除位置区域地址分配用户白名单（RMV-ADRLOCWHITELST）_06054823.md`

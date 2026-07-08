@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HSSBPFAULTCODE.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBPFAULTCODE.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBPFAULTCODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HSS-BYPASS故障状态码(RMV-HSSBPFAULTCODE)_10494885.md`
+- 原始手册：`evidence/UNC/20.15.2/增加HSS-BYPASS故障状态码(ADD-HSSBPFAULTCODE)_62774744.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HSS-BYPASS故障状态码(LST-HSSBPFAULTCODE)_62934708.md`

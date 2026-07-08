@@ -64,4 +64,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PCCBYPASSCODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCC故障场景维持BYPASS状态码配置（RMV-PCCBYPASSCODE）_18689757.md`

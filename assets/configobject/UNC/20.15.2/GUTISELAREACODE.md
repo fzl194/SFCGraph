@@ -29,6 +29,6 @@ AMF可基于运营商规划的区域进行GUTI选网功能的差异化控制。A
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GUTISELAREACODE.md`
-- 原始手册：`evidence/UNC/20.15.2/GUTISELAREACODE.md`
-- 原始手册：`evidence/UNC/20.15.2/GUTISELAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GUTI选网功能区域编码（RMV-GUTISELAREACODE）_13939893.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GUTI选网功能区域编码（ADD-GUTISELAREACODE）_14059341.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GUTI选网功能区域编码（LST-GUTISELAREACODE）_77419804.md`

@@ -65,4 +65,4 @@ MOD PROCLMTPLCY: SUBRANGE=HOME_USER, NOID=1, SRVCC=NO, CS=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PROCLMTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改流程限制策略(MOD-PROCLMTPLCY)_26305440.md`

@@ -60,4 +60,4 @@ IPDOMAIN名称  =  Domain_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BSFIPDOMAINGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPDOMAIN组（LST-BSFIPDOMAINGRP）_75822972.md`

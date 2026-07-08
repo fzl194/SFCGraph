@@ -60,4 +60,4 @@ RMV S1LOCRPT: AREA=TA, MCC="111", MNC="222", TAC="0x3333";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-S1LOCRPT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式实时小区位置订阅(RMV-S1LOCRPT)_72225253.md`

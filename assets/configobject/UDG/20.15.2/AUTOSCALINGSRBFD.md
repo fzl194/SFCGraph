@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGSRBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGSRBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGSRBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGSRBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/修改静态路由的动态BFD自动化配置模板（MOD-AUTOSCALINGSRBFD）_00840773.md`
+- 原始手册：`evidence/UDG/20.15.2/删除静态路由的动态BFD自动化配置模板（RMV-AUTOSCALINGSRBFD）_49801674.md`
+- 原始手册：`evidence/UDG/20.15.2/增加静态路由的动态BFD自动化配置模板（ADD-AUTOSCALINGSRBFD）_49961254.md`
+- 原始手册：`evidence/UDG/20.15.2/查询静态路由的动态BFD自动化配置模板（LST-AUTOSCALINGSRBFD）_00600545.md`

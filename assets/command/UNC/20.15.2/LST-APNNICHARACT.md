@@ -73,4 +73,4 @@ HUAWEI2.COM  是                      NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNNICHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI属性配置信息(LST-APNNICHARACT)_26305480.md`

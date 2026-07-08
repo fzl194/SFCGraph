@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFAMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFAMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFAMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFAMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端AMF信息（MOD-PNFAMFINFO）_09652259.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端AMF信息（RMV-PNFAMFINFO）_09651512.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端AMF信息（ADD-PNFAMFINFO）_09653234.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端AMF信息（LST-PNFAMFINFO）_09652470.md`

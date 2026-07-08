@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGAREARESELCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAREARESELCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF区域重选功能控制参数（LST-NGAREARESELCTRL）_23622946.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF区域重选功能控制参数（SET-NGAREARESELCTRL）_23623022.md`

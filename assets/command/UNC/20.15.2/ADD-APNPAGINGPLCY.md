@@ -59,4 +59,4 @@ ADD APNPAGINGPLCY: APNNI="huawei.com", PAGINGPRIORITY=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN寻呼策略参数配置(ADD-APNPAGINGPLCY)_72225389.md`

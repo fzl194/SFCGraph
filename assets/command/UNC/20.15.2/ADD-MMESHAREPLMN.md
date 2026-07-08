@@ -62,4 +62,4 @@ ADD MMESHAREPLMN: MCC="123", MNC="01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MMESHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MME的共享PLMN(ADD-MMESHAREPLMN)_26146086.md`

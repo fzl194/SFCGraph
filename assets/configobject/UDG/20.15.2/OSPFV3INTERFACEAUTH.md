@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACEAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACEAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACEAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3INTERFACEAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPFv3接口认证配置（MOD-OSPFV3INTERFACEAUTH）_00440325.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPFv3接口认证配置（ADD-OSPFV3INTERFACEAUTH）_49801382.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3接口认证配置（RMV-OSPFV3INTERFACEAUTH）_00840881.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3接口认证配置（LST-OSPFV3INTERFACEAUTH）_00866421.md`

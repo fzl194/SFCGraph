@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DCNPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DCN配置策略(MOD-DCNPLCY)_26145834.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCN配置策略(RMV-DCNPLCY)_72345433.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DCN配置策略(ADD-DCNPLCY)_26305642.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN配置策略(LST-DCNPLCY)_72225513.md`

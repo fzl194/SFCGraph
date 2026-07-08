@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPTTFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPTTFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPTTFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPTTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的一键通功能配置（MOD-APNPTTFUNC）_06399919.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的一键通功能配置（RMV-APNPTTFUNC）_06399924.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的一键通功能配置（ADD-APNPTTFUNC）_06399904.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的一键通功能配置（LST-APNPTTFUNC）_06399911.md`

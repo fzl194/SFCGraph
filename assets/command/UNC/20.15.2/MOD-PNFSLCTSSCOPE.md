@@ -57,4 +57,4 @@ MOD PNFSLCTSSCOPE: PEERNFTYPE=DEFAULT, SRVSCOPENAME="CityB";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFSLCTSSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改选择对端NF时使用的业务服务区（MOD-PNFSLCTSSCOPE）_30787898.md`

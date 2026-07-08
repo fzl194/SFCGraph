@@ -61,4 +61,4 @@ MOD NONRAI: NONRAI="123000000000", IPTYPE=IPV4, IPV4="192.168.0.0", SGSNN="sgsn1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NONRAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改非广播RAI配置信息(MOD-NONRAI)_26146110.md`

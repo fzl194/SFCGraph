@@ -65,4 +65,4 @@ ADD NGTALST: TALISTID=1, TAI="12345100011", DESC="AREA2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGTALST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G跟踪区列表（ADD-NGTALST）_09651355.md`

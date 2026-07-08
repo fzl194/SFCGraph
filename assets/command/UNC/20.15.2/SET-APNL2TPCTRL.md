@@ -66,4 +66,4 @@ SET APNL2TPCTRL: APN="huawei.com", L2TPSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-APNL2TPCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-L2TP-CTRL配置（SET-APNL2TPCTRL）_25121210.md`

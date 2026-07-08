@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/S1TACID.md`
-- 原始手册：`evidence/UDG/20.15.2/S1TACID.md`
-- 原始手册：`evidence/UDG/20.15.2/S1TACID.md`
+- 原始手册：`evidence/UDG/20.15.2/从S1TAC组内删除一个S1TAC（RMV-S1TACID）_97358678.md`
+- 原始手册：`evidence/UDG/20.15.2/在S1TAC组内添加一个S1TAC（ADD-S1TACID）_97358677.md`
+- 原始手册：`evidence/UDG/20.15.2/查看S1TAC与S1TAC组的绑定关系（LST-S1TACID）_97358679.md`

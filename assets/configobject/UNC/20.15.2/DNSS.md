@@ -35,8 +35,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNSS.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSS.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSS.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSS.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS服务器(MOD-DNSS)_72225577.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS服务器(RMV-DNSS)_26145898.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS服务器(ADD-DNSS)_72345497.md`
+- 原始手册：`evidence/UNC/20.15.2/显示DNS服务器状态(DSP-DNSS)_72345499.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS服务器(LST-DNSS)_26305708.md`

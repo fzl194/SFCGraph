@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SQOSRDRVPNGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/SQOSRDRVPNGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/SQOSRDRVPNGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除QoS重定向VPN组（RMV-SQOSRDRVPNGROUP）_00865581.md`
+- 原始手册：`evidence/UDG/20.15.2/增加QoS重定向VPN组（ADD-SQOSRDRVPNGROUP）_00441265.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoS重定向VPN组（LST-SQOSRDRVPNGROUP）_00841137.md`

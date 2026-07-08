@@ -54,4 +54,4 @@ MOD DHCP6CLIENT: IFNAME="Ethernet64/0/4", ISDHCPV6CENABLE=FALSE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DHCP6CLIENT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DHCPv6客户端（MOD-DHCP6CLIENT）_00865673.md`

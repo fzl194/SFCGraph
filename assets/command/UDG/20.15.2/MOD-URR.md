@@ -68,4 +68,4 @@ MOD URR: URRNAME="onlineURR", URRID=100, USAGERPTMODE=ONLINE, ONLMETERINGTYPE=VO
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-URR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改URR（MOD-URR）_82837630.md`

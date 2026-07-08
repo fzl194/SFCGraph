@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFWHITEURLLST.md`
-- 原始手册：`evidence/UDG/20.15.2/CFWHITEURLLST.md`
-- 原始手册：`evidence/UDG/20.15.2/CFWHITEURLLST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除URL过滤白名单列表（RMV-CFWHITEURLLST）_39478828.md`
+- 原始手册：`evidence/UDG/20.15.2/增加URL过滤白名单列表（ADD-CFWHITEURLLST）_39717702.md`
+- 原始手册：`evidence/UDG/20.15.2/查询URL过滤白名单列表（LST-CFWHITEURLLST）_43518653.md`

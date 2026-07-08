@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N2PAGINGFCPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N2PAGINGFCPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2模式寻呼消息反压流控策略（LST-N2PAGINGFCPLCY）_58680353.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N2模式寻呼消息反压流控策略（SET-N2PAGINGFCPLCY）_13960452.md`

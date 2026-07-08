@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERGROUPBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERGROUPBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERGROUPBFD.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEERGROUPBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BGP对等体组BFD检测（MOD-BGPPEERGROUPBFD）_50281498.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP对等体组BFD检测（RMV-BGPPEERGROUPBFD）_00600845.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BGP对等体组BFD检测（ADD-BGPPEERGROUPBFD）_49961210.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP对等体组BFD检测（LST-BGPPEERGROUPBFD）_00866045.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BGPPEERGROUPAF.md`
-- 原始手册：`evidence/UNC/20.15.2/BGPPEERGROUPAF.md`
-- 原始手册：`evidence/UNC/20.15.2/BGPPEERGROUPAF.md`
-- 原始手册：`evidence/UNC/20.15.2/BGPPEERGROUPAF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BGP对等体组地址族（MOD-BGPPEERGROUPAF）_00601453.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP对等体组地址族（RMV-BGPPEERGROUPAF）_00866169.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP对等体组地址族（ADD-BGPPEERGROUPAF）_00840805.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP对等体组地址族（LST-BGPPEERGROUPAF）_49802058.md`

@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LINKMIGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/LINKMIGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询链路迁移控制参数（LST-LINKMIGCTRL）_81482578.md`
+- 原始手册：`evidence/UNC/20.15.2/设置链路迁移控制参数（SET-LINKMIGCTRL）_81482582.md`

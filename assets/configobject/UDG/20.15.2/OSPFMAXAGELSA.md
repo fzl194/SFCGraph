@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFMAXAGELSA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF-MaxAge-LSA信息（DSP-OSPFMAXAGELSA）_50281670.md`

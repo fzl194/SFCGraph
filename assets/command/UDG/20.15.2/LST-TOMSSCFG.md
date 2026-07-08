@@ -64,4 +64,4 @@ IPv6 TCP报文长度（字节） = 1500
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOMSSCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Tcp-Mss配置（LST-TOMSSCFG）_31139797.md`

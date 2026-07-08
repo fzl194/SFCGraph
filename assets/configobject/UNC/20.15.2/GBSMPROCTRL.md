@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBSMPROCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GBSMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式SM流程控制参数（LST-GBSMPROCTRL）_72225371.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb模式SM流程控制参数（SET-GBSMPROCTRL）_26145692.md`

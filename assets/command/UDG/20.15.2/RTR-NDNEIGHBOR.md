@@ -57,4 +57,4 @@ RTR NDNEIGHBOR:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-NDNEIGHBOR.md`
+- 原始手册：`evidence/UDG/20.15.2/清除IPv6-ND邻居表项（RTR-NDNEIGHBOR）_00601313.md`

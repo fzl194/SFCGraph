@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ISMFASMFRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/ISMFASMFRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询I-SMF对A-SMF的故障恢复策略（LST-ISMFASMFRESET）_23622938.md`
+- 原始手册：`evidence/UNC/20.15.2/设置I-SMF对A-SMF的故障恢复策略（SET-ISMFASMFRESET）_70382397.md`

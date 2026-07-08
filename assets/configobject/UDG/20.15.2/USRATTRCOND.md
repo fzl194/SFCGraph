@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USRATTRCOND.md`
-- 原始手册：`evidence/UDG/20.15.2/USRATTRCOND.md`
-- 原始手册：`evidence/UDG/20.15.2/USRATTRCOND.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户属性过滤条件（RMV-USRATTRCOND）_47006828.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户属性过滤条件（LST-USRATTRCOND）_42287009.md`
+- 原始手册：`evidence/UDG/20.15.2/配置用户属性过滤条件（ADD-USRATTRCOND）_46767424.md`

@@ -77,4 +77,4 @@ ADD SRROUTE6:AFTYPE=ipv6unicast,PREFIX="2001:DB8::1",MASKLENGTH=128,VRFNAME="_pu
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SRROUTE6.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6静态路由（ADD-SRROUTE6）_50280922.md`

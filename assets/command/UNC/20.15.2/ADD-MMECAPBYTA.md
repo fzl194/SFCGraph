@@ -65,4 +65,4 @@ ADD MMECAPBYTA: MCC="123", MNC="03", TAC="0x1223", CAP=200;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MMECAPBYTA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于跟踪区的MME相对权重配置(ADD-MMECAPBYTA)_72345865.md`

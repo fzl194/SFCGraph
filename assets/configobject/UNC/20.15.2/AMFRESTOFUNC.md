@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFRESTOFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFRESTOFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF热备容灾（LST-AMFRESTOFUNC）_35374737.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF热备容灾（SET-AMFRESTOFUNC）_88248958.md`

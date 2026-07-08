@@ -67,4 +67,4 @@ ADD USRATTRCOND: CONDNAME="user_cond1", ITEMID=1, CONTENTTYPE=USER_PROFILE, USER
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-USRATTRCOND.md`
+- 原始手册：`evidence/UDG/20.15.2/配置用户属性过滤条件（ADD-USRATTRCOND）_46767424.md`

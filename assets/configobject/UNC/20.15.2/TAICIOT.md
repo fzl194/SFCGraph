@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TAICIOT.md`
-- 原始手册：`evidence/UNC/20.15.2/TAICIOT.md`
-- 原始手册：`evidence/UNC/20.15.2/TAICIOT.md`
-- 原始手册：`evidence/UNC/20.15.2/TAICIOT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CIoT能力配置(MOD-TAICIOT)_26145782.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CIoT能力配置(RMV-TAICIOT)_72345381.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CIoT能力配置(ADD-TAICIOT)_26305590.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CIoT能力配置(LST-TAICIOT)_72225461.md`

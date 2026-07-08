@@ -66,4 +66,4 @@ TST PATH: IPVERSION=IPV4, LOCALIPV4="10.6.6.1", PEERIPV4="192.168.5.33", PROTOCO
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TST-PATH.md`
+- 原始手册：`evidence/UDG/20.15.2/探测路径（TST-PATH）_82837231.md`

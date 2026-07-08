@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNINPNFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/PNINPNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询公网集成非公网络管理功能（LST-PNINPNFUNC）_22836791.md`
+- 原始手册：`evidence/UNC/20.15.2/设置公网集成非公网络管理功能（SET-PNINPNFUNC）_22678343.md`

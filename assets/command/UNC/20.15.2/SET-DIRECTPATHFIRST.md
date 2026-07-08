@@ -67,4 +67,4 @@ SET DIRECTPATHFIRST: GXSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DIRECTPATHFIRST.md`
+- 原始手册：`evidence/UNC/20.15.2/设置直连路径优先开关（SET-DIRECTPATHFIRST）_09897318.md`

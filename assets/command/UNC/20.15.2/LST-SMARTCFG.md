@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMARTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能用户功能（LST-SMARTCFG）_72225429.md`

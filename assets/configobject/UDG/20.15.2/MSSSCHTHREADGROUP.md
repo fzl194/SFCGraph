@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSSCHTHREADGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MSS线程级调度组的维测信息（DSP-MSSSCHTHREADGROUP）_00840837.md`

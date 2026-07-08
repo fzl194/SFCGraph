@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALLOWDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除允许本地专网分流的DNN（RMV-ALLOWDNN）_42342470.md`
+- 原始手册：`evidence/UNC/20.15.2/增加允许本地专网分流的DNN（ADD-ALLOWDNN）_42502264.md`
+- 原始手册：`evidence/UNC/20.15.2/查询允许本地专网分流的DNN（LST-ALLOWDNN）_88382225.md`

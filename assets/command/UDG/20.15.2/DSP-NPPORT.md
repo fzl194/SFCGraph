@@ -82,4 +82,4 @@ NP端口名称    虚拟网口名称  网口功能  物理状态  链路状态  
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP端口状态（DSP-NPPORT）_71028287.md`

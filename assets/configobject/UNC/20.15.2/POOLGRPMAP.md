@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POOLGRPMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLGRPMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLGRPMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除地址池组映射关系（RMV-POOLGRPMAP）_32232827.md`
+- 原始手册：`evidence/UNC/20.15.2/增加地址池组映射关系（ADD-POOLGRPMAP）_32232814.md`
+- 原始手册：`evidence/UNC/20.15.2/查询地址池组映射关系（LST-POOLGRPMAP）_32232820.md`

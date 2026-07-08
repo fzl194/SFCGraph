@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CONFCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/CONFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查看冲突控制参数（LST-CONFCTRL）_09654431.md`
+- 原始手册：`evidence/UNC/20.15.2/设置冲突控制参数（SET-CONFCTRL）_09651408.md`

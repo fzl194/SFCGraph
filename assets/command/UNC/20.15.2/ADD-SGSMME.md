@@ -61,4 +61,4 @@ ADD SGSMME: MMEX=1, MMEM="460008000101", POOLGRPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SGSMME.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGS-MME实体(ADD-SGSMME)_93164005.md`

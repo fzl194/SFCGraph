@@ -61,4 +61,4 @@ RMV SGSLNK: LNK=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SGSLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGs链路(RMV-SGSLNK)_26145430.md`

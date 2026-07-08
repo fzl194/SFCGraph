@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFGMLCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGMLCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGMLCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGMLCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端GMLC信息（MOD-PNFGMLCINFO）_49470335.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端GMLC信息（RMV-PNFGMLCINFO）_49070375.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端GMLC的信息（ADD-PNFGMLCINFO）_02910210.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端GMLC的信息（LST-PNFGMLCINFO）_49590261.md`

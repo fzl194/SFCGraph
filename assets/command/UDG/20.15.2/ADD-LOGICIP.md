@@ -58,4 +58,4 @@ ADD LOGICIP: IPVERSION=IPv4, LOGICIPV4="192.168.1.1", VPNINSTNAME="_public_", DE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-LOGICIP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加逻辑IP地址（ADD-LOGICIP）_09587376.md`

@@ -69,4 +69,4 @@ VXLAN组名称  =  vxlangrp2
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VXLANBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN隧道组绑定APN（LST-VXLANBINDAPN）_80994834.md`

@@ -61,4 +61,4 @@ ADD PREURLGBINDUP:USERPROFILENAME="testprofile",PREURLGRPNAME="testurlgroup";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PREURLGBINDUP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加用户模板的前缀URL组绑定关系（ADD-PREURLGBINDUP）_82837411.md`

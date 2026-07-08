@@ -78,4 +78,4 @@ SET NETYPE:NETYPEENUM=GGSNU-0&PGWU-1&ProxySGWU-0&SGWU-0&UPF-1&ProxyUPF-0;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-NETYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/设置-NE-类型（SET-NETYPE）_84967916.md`

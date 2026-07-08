@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRTOKEN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SDRC中的TOKEN信息（DSP-SDRTOKEN）_94730435.md`

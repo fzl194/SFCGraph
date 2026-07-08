@@ -55,4 +55,4 @@ RMV APNPGWRNS: APN="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNPGWRNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PGW重定向功能设置（RMV-APNPGWRNS）_01878822.md`

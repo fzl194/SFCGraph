@@ -64,4 +64,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFALLOWED5QIS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户允许的5QI列表（RMV-SMFALLOWED5QIS）_14280400.md`

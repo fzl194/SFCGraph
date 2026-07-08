@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SESSNCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话CHR流程控制模板（LST-SESSNCHRPRCTMPL）_35628395.md`

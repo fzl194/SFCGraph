@@ -56,4 +56,4 @@ RMV SNSSAI: SST=1, SD="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SNSSAI.md`
+- 原始手册：`evidence/UDG/20.15.2/删除NF支持的网络切片选择标识（RMV-SNSSAI）_95089579.md`

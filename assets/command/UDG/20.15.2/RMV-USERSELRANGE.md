@@ -58,4 +58,4 @@ RMV USERSELRANGE: NAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-USERSELRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户选择范围列表（RMV-USERSELRANGE）_86133376.md`

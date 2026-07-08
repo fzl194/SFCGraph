@@ -36,5 +36,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFNRFMGMTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NFNRFMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF与NRF间的全局管理参数（LST-NFNRFMGMTPARA）_32041711.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF与NRF间的全局管理参数（SET-NFNRFMGMTPARA）_32041712.md`

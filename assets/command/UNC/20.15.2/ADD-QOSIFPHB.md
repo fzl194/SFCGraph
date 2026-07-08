@@ -56,4 +56,4 @@ ADD QOSIFPHB : IFNAME="Ethernet66/0/3",PHBTYPE=dscp;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-QOSIFPHB.md`
+- 原始手册：`evidence/UNC/20.15.2/添加禁止QoS优先级映射的类型（ADD-QOSIFPHB）_00841181.md`

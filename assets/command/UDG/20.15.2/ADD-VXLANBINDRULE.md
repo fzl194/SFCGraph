@@ -59,4 +59,4 @@ ADD VXLANBINDRULE: RULENAME="rule", VXLANGRPNAME="vxlangrp";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-VXLANBINDRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/新增VXLAN隧道组绑定Rule（ADD-VXLANBINDRULE）_92513331.md`

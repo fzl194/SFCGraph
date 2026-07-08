@@ -73,4 +73,4 @@ ADD SCCPGT: GTX=1, NI=INT, RT=DPC, GTEXP=FOUR, ADDR="123", DPC="0x12";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCCPGT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP全局翻译码(ADD-SCCPGT)_26306136.md`

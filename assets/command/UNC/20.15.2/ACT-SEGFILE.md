@@ -68,4 +68,4 @@ ACT SEGFILE: SEGTYPE=IMSI, NFTYPEIMSI=UDR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACT-SEGFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/激活号段文件（ACT-SEGFILE）_09654192.md`

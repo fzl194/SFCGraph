@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPEBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPEBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPEBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPEBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCF业务服务区的绑定关系（MOD-PCFSSCOPEBIND）_88697036.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCF业务服务区的绑定关系（RMV-PCFSSCOPEBIND）_88377450.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCF业务服务区的绑定关系（ADD-PCFSSCOPEBIND）_88537090.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCF业务服务区的绑定关系（LST-PCFSSCOPEBIND）_88377444.md`

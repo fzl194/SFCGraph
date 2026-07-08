@@ -64,4 +64,4 @@ MOD IMSIHSS: IMSIPRE="3080107000", HSSRLM="epc.mnc015.mcc234.3gppnetwork.org", G
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IMSIHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI-HSS对应关系(MOD-IMSIHSS)_26305266.md`

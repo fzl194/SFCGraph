@@ -66,4 +66,4 @@ QoSFlow级Trigger填写方式  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-QBCGLBPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QBC计费全局参数（LST-QBCGLBPARA）_81567156.md`

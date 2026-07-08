@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DYNDIAMAAA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示动态Diameter-AAA服务器（DSP-DYNDIAMAAA）_96241958.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BFDSESSIONRUNNING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BFD会话的运行信息（DSP-BFDSESSIONRUNNING）_49802122.md`

@@ -66,4 +66,4 @@ VNFC ID   VNFC名称    VNFC类型名称     VNFC状态    VNFC创建时间     
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-VNFC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示VNFC（DSP-VNFC）_59036773.md`

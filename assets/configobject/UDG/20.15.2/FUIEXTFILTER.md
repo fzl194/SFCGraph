@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FUIEXTFILTER.md`
-- 原始手册：`evidence/UDG/20.15.2/FUIEXTFILTER.md`
-- 原始手册：`evidence/UDG/20.15.2/FUIEXTFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改FUI扩展过滤器绑定配置（SET-FUIEXTFILTER）_82837538.md`
+- 原始手册：`evidence/UDG/20.15.2/删除FUI扩展过滤器绑定配置（RMV-FUIEXTFILTER）_86528385.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FUI扩展过滤器绑定配置（LST-FUIEXTFILTER）_82837540.md`

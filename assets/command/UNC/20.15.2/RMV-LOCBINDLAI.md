@@ -60,4 +60,4 @@ RMV LOCBINDLAI: LOCALITY="locality1", MCC="460", MNC="03", LACSTART="1301", LACE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCBINDLAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF位置信息与UPF优先支持的LAI范围的绑定关系（RMV-LOCBINDLAI）_96242798.md`

@@ -64,4 +64,4 @@ ModelD模式PCF Schema填充策略  =  HTTP优先
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFSBIINFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的SBI接口控制参数（LST-AMFSBIINFCTRL）_08368061.md`

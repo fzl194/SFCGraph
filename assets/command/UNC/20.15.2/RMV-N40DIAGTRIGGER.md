@@ -57,4 +57,4 @@ RMV N40DIAGTRIGGER: DIAGNOSTICS =259;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-N40DIAGTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N40去活原因的映射关系（RMV-N40DIAGTRIGGER）_35102635.md`

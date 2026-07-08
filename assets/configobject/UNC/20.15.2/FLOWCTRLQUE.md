@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FLOWCTRLQUE.md`
-- 原始手册：`evidence/UNC/20.15.2/FLOWCTRLQUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流控队列信息(LST-FLOWCTRLQUE)_26305984.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流控队列信息(SET-FLOWCTRLQUE)_72225853.md`

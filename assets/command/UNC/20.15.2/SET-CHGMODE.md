@@ -88,4 +88,4 @@ SET CHGMODE: TMACCTYPE=UE5G_RAT4G, BY5GSIWKI=False, FORCED=NchfMode;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费接口选择方式（SET-CHGMODE）_09651465.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRIPV6STATICSITE.md`
-- 原始手册：`evidence/UDG/20.15.2/SRIPV6STATICSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6静态路由全局属性（LST-SRIPV6STATICSITE）_50121278.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv6静态路由全局属性（SET-SRIPV6STATICSITE）_00440633.md`

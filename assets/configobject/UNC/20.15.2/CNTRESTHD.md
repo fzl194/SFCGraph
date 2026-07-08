@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CNTRESTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容器资源阈值（SET-CNTRESTHD）_61025381.md`

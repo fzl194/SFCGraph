@@ -76,4 +76,4 @@ Restful接口查询PCF/PCRF地址开关  =  不支持
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMCOMMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通用会话拓展功能（LST-SMCOMMFUNC）_08433262.md`

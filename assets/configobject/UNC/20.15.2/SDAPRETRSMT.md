@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SDAPRETRSMT.md`
-- 原始手册：`evidence/UNC/20.15.2/SDAPRETRSMT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Sdup接口可靠性(LST-SDAPRETRSMT)_26147294.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Sdup消息重传参数(SET-SDAPRETRSMT)_26307104.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSRSPADDRCHK.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSRSPADDRCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局RADIUS响应消息源端口检查配置（LST-RDSRSPADDRCHK）_09896745.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局RADIUS响应消息源IP_端口检查配置（SET-RDSRSPADDRCHK）_09896744.md`

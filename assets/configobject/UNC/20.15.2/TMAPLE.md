@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TMAPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/TMAPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/TMAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TMAP本地实体(RMV-TMAPLE)_41153601.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TMAP本地实体(ADD-TMAPLE)_40833853.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TMAP本地实体(LST-TMAPLE)_88233908.md`

@@ -90,4 +90,4 @@ PLMN变化生成特定原因值S-CDR  =  不生成
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHGCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费属性参数(LST-CHGCHAR)_72225049.md`

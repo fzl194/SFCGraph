@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询获取UPF服务区绑定TAI_LAI的方式（LST-UPAREABINDFUNC）_70382345.md`
+- 原始手册：`evidence/UNC/20.15.2/设置获取UPF服务区绑定TAI_LAI的方式（SET-UPAREABINDFUNC）_70462629.md`

@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFNFTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定NF在NRF上的时长信息（LST-NRFNFTIMER）_07489930.md`

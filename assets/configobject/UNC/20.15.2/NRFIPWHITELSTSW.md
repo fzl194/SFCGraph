@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFIPWHITELSTSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIPWHITELSTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-IP白名单开关（LST-NRFIPWHITELSTSW）_75789401.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF-IP白名单开关（SET-NRFIPWHITELSTSW）_29869622.md`

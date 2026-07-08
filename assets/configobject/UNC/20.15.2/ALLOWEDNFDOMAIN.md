@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDNFDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDNFDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDNFDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF或NF服务支持的域名（RMV-ALLOWEDNFDOMAIN）_09651481.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF或NF服务支持的域名（ADD-ALLOWEDNFDOMAIN）_09651550.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF或NF服务支持的域名（LST-ALLOWEDNFDOMAIN）_09653662.md`

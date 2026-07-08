@@ -70,4 +70,4 @@ SET GBSM:T3385=8;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GBSM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb模式SM协议参数(SET-GBSM)_72345297.md`

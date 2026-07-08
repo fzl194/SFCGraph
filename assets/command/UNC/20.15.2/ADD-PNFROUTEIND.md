@@ -67,4 +67,4 @@ ADD PNFROUTEIND: NFINSTANCEID="AUSF_Instance_0", ROUTINGIND="0001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFROUTEIND.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的路由指示信息（ADD-PNFROUTEIND）_09652440.md`

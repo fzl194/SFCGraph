@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPBFDTNNLSESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示BFD-For-LDP-Tunnel的BFD会话（DSP-LDPBFDTNNLSESSION）_50121702.md`

@@ -54,4 +54,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-USER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户(RMV-USER)_06404641.md`

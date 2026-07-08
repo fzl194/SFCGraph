@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMCOMMTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCOMMTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通用会话管理定时器参数（LST-SMCOMMTIMER）_10484606.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通用会话管理定时器参数（SET-SMCOMMTIMER）_10484608.md`

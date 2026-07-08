@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PKICRLCHECK.md`
-- 原始手册：`evidence/UDG/20.15.2/PKICRLCHECK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CRL检查（LST-PKICRLCHECK）_41422663.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CRL检查（SET-PKICRLCHECK）_41702627.md`

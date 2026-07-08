@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNEDRXATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的终端接入eDRX模式属性（LST-APNEDRXATTR）_32221484.md`

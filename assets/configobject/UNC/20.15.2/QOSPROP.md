@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPROP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QoS属性（MOD-QOSPROP）_09897164.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS属性（RMV-QOSPROP）_09897165.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QoS属性（ADD-QOSPROP）_09897163.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS属性（LST-QOSPROP）_09897166.md`

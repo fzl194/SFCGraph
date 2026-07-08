@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYSLOGTASK.md`
-- 原始手册：`evidence/UNC/20.15.2/SYSLOGTASK.md`
-- 原始手册：`evidence/UNC/20.15.2/SYSLOGTASK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除上报任务（RMV-SYSLOGTASK）_02790369.md`
+- 原始手册：`evidence/UNC/20.15.2/查询上报任务（LST-SYSLOGTASK）_36709385.md`
+- 原始手册：`evidence/UNC/20.15.2/设置上报任务（SET-SYSLOGTASK）_36611107.md`

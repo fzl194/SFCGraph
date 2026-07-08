@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFDNSSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/AFDNSSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/AFDNSSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除防欺诈可信DNS服务器（RMV-AFDNSSERVER）_82837809.md`
+- 原始手册：`evidence/UDG/20.15.2/增加防欺诈可信DNS服务器（ADD-AFDNSSERVER）_82837807.md`
+- 原始手册：`evidence/UDG/20.15.2/查询防欺诈可信DNS服务器（LST-AFDNSSERVER）_86526284.md`

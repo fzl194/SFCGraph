@@ -45,4 +45,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/STP-MMLTRAN.md`
+- 原始手册：`evidence/UDG/20.15.2/结束事务模式（STP-MMLTRAN）_47082049.md`

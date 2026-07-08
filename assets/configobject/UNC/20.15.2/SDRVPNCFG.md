@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SDRVPNCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SDR-VPN配置信息（LST-SDRVPNCFG）_74451061.md`

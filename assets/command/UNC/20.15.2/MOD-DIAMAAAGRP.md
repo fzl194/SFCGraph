@@ -57,4 +57,4 @@ MOD DIAMAAAGRP:GROUPNAME="diametergroup",PGWIDENTITY=HOST_NAME;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DIAMAAAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter-AAA服务器组（MOD-DIAMAAAGRP）_64343896.md`

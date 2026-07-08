@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMSERVICE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改带宽管理业务（MOD-BWMSERVICE）_82837474.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理业务（RMV-BWMSERVICE）_82837475.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理业务（ADD-BWMSERVICE）_82837473.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理业务（LST-BWMSERVICE）_82837476.md`

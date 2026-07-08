@@ -98,4 +98,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-M3LNK.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M3UA信令链路(ADD-M3LNK)_72225983.md`

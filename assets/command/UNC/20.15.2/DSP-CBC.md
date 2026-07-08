@@ -78,4 +78,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CBC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CBC链路状态(DSP-CBC)_72226051.md`

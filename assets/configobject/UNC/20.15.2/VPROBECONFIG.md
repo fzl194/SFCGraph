@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VPROBECONFIG.md`
-- 原始手册：`evidence/UNC/20.15.2/VPROBECONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询vProbe文件管理规格配置（LST-VPROBECONFIG）_39522413.md`
+- 原始手册：`evidence/UNC/20.15.2/设置vProbe文件管理规格配置（SET-VPROBECONFIG）_39242825.md`

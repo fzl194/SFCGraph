@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TNFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询目标NF组（LST-TNFGRP）_09652113.md`

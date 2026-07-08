@@ -57,4 +57,4 @@ RMV MCRDRNHP: VPNNAME="vrf1", IPVERSION=IPv4, NEXTHOPADDRV4="192.168.0.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MCRDRNHP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除组播报文重定向策略（RMV-MCRDRNHP）_40982897.md`

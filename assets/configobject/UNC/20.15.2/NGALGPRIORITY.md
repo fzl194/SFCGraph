@@ -34,7 +34,7 @@ AMF根据加密或完整性算法的优先级属性，在UE和AMF同时支持的
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G算法优先级属性（MOD-NGALGPRIORITY）_09653199.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G算法优先级属性（RMV-NGALGPRIORITY）_09652634.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G算法优先级属性（ADD-NGALGPRIORITY）_09652959.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G算法优先级属性（LST-NGALGPRIORITY）_09652999.md`

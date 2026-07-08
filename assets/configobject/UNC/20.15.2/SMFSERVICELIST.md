@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFSERVICELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSERVICELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除特定SMF功能实例服务名（RMV-SMFSERVICELIST）_09654435.md`
+- 原始手册：`evidence/UNC/20.15.2/增加特定SMF功能实例服务名（ADD-SMFSERVICELIST）_09654442.md`
+- 原始手册：`evidence/UNC/20.15.2/查询特定SMF功能实例服务名（LST-SMFSERVICELIST）_09653267.md`

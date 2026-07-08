@@ -56,4 +56,4 @@ SET SKIPADJUSTHAFDM:SWITCH=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SKIPADJUSTHAFDM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置跳过调整HAF域开关（SET-SKIPADJUSTHAFDM）_68321035.md`

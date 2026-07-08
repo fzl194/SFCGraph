@@ -55,4 +55,4 @@ RMV USERSELPLCY: POLICYNAME="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-USERSELPLCY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户策略选择（RMV-USERSELPLCY）_83909789.md`

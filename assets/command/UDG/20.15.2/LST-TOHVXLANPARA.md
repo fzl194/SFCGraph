@@ -74,4 +74,4 @@ Ping探测超时时长（秒）  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOHVXLANPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询家庭网关业务使用VXLAN隧道传输业务参数配置（LST-TOHVXLANPARA）_29481111.md`

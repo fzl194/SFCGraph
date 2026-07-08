@@ -54,4 +54,4 @@ SET DBSOFTPARA: PARAID=1, PARAVALUE=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DBSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSDB软件调试参数表(SET-DBSOFTPARA)_80429704.md`

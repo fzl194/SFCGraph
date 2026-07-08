@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLNODEBINDACL.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLNODEBINDACL.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLNODEBINDACL.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLNODEBINDACL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Acl节点绑定关系（MOD-ACLNODEBINDACL）_82837735.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Acl节点绑定关系（RMV-ACLNODEBINDACL）_82837736.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Acl节点绑定关系（ADD-ACLNODEBINDACL）_82837734.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Acl节点绑定关系（LST-ACLNODEBINDACL）_82837737.md`

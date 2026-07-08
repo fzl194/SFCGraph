@@ -56,4 +56,4 @@ RMV EPLMNGRPMEM: GRPIDX=0, MCC="123", MNC="89";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EPLMNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除等价PLMN组成员（RMV-EPLMNGRPMEM）_09653022.md`

@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECND.md`
-- 原始手册：`evidence/UNC/20.15.2/SECND.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ND快回（LST-SECND）_00441197.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ND快回配置（SET-SECND）_50281250.md`

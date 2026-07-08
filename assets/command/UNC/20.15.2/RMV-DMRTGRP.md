@@ -69,4 +69,4 @@ RMV DMRTGRP: GRPIDX=6;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DMRTGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter路由组(RMV-DMRTGRP)_72225971.md`

@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBURRGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBURRGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBURRGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局计费属性（RMV-GLBURRGROUP）_86528078.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局计费属性（LST-GLBURRGROUP）_82837641.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局计费属性（SET-GLBURRGROUP）_82837639.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ANTIATTACK.md`
-- 原始手册：`evidence/UNC/20.15.2/ANTIATTACK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询防报文攻击上限(LST-ANTIATTACK)_72225583.md`
+- 原始手册：`evidence/UNC/20.15.2/设置防报文攻击上限(SET-ANTIATTACK)_26145904.md`

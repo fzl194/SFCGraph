@@ -63,4 +63,4 @@ ADD PGWHOSTNAME:PGWHOSTNAME="topon.Eth-0.canonical-node-name.gw32.california.wes
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PGWHOSTNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/增加逻辑接口的PGW主机名（ADD-PGWHOSTNAME）_64343865.md`

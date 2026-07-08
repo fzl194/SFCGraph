@@ -74,4 +74,4 @@ IPv6地址段的地址  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNWHITENODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN设备白名单列表（LST-APNWHITENODE）_58382748.md`

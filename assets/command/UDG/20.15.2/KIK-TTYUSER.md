@@ -59,4 +59,4 @@ KIK TTYUSER:INDEX=54;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/KIK-TTYUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/释放用户界面（KIK-TTYUSER）_00441193.md`

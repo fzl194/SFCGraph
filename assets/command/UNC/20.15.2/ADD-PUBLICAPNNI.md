@@ -60,4 +60,4 @@ ADD PUBLICAPNNI: APNNI="cmwap";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PUBLICAPNNI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加公共APN-NI配置(ADD-PUBLICAPNNI)_26145682.md`

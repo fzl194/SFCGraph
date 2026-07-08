@@ -75,4 +75,4 @@ ADD IPAREAGPMEM: AREAID=1, IDTYPE=LAC, LAC="0x1234";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IPAREAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP区域群成员(ADD-IPAREAGPMEM)_26305410.md`

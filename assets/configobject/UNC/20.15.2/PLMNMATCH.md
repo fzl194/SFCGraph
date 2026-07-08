@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PLMNMATCH.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNMATCH.md`
-- 原始手册：`evidence/UNC/20.15.2/PLMNMATCH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MCC与MNC的归属关系（RMV-PLMNMATCH）_63709202.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MCC与MNC归属关系（ADD-PLMNMATCH）_11789037.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MCC与MNC的归属（LST-PLMNMATCH）_11669105.md`

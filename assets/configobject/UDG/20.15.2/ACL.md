@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACL.md`
-- 原始手册：`evidence/UDG/20.15.2/ACL.md`
-- 原始手册：`evidence/UDG/20.15.2/ACL.md`
-- 原始手册：`evidence/UDG/20.15.2/ACL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改ACL（MOD-ACL）_86526661.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ACL（RMV-ACL）_82837749.md`
+- 原始手册：`evidence/UDG/20.15.2/增加ACL（ADD-ACL）_82837747.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ACL（LST-ACL）_82837750.md`

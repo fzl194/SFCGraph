@@ -67,4 +67,4 @@ SET BACKOFFTIMECTRL: APNLOCKBOTSW = ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-BACKOFFTIMECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置异常场景的Back-off-Time开关（SET-BACKOFFTIMECTRL）_96243091.md`

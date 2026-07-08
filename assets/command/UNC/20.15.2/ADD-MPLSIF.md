@@ -56,4 +56,4 @@ ADD MPLSIF:IFNAME="Ethernet64/0/3",MTUVALUE=1500;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MPLSIF.md`
+- 原始手册：`evidence/UNC/20.15.2/添加MPLS接口（ADD-MPLSIF）_50281798.md`

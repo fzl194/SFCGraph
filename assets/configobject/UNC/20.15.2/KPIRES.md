@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/KPIRES.md`
+- 原始手册：`evidence/UNC/20.15.2/显示关键资源信息（DSP-KPIRES）_24015928.md`

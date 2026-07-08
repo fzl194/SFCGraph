@@ -59,4 +59,4 @@ RMV S1SUBRRLST: SUBRANGE=IMSI_PREFIX, IMSIPRE="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-S1SUBRRLST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式用户漫游限制列表(RMV-S1SUBRRLST)_72225239.md`

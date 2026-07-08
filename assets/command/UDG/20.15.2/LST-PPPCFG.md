@@ -67,4 +67,4 @@ PPP配置信息:
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PPPCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PPP配置（LST-PPPCFG）_35373545.md`

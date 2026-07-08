@@ -88,4 +88,4 @@ PM_MULTIDNN_DOMAIN_HASH_NODE_NUM                      12256
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SPECCFGINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示规格配置项信息（DSP-SPECCFGINFO）_07739901.md`

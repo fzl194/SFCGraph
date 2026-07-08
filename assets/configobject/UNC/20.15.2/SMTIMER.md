@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/SMTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5GC会话管理定时器参数（LST-SMTIMER）_09654352.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5GC会话管理定时器参数（SET-SMTIMER）_09653823.md`

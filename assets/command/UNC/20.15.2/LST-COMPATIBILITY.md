@@ -91,4 +91,4 @@ GTPV1通道允许发送QoS98信元  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-COMPATIBILITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS兼容性配置(LST-COMPATIBILITY)_26146236.md`

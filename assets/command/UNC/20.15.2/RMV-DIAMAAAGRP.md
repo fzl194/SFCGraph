@@ -59,4 +59,4 @@ RMV DIAMAAAGRP:GROUPNAME="diametergroup";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DIAMAAAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter-AAA服务器组（RMV-DIAMAAAGRP）_64343903.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOADCHECKINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/LOADCHECKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSLB负载不均衡检测功能的参数（LST-LOADCHECKINFO）_97964757.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSLB负载不均衡检测功能的参数（SET-LOADCHECKINFO）_48483930.md`

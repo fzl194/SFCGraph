@@ -61,4 +61,4 @@ _22.1.0.1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PLUGINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询插件信息(LST-PLUGINFO)_99748749.md`

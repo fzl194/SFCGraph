@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPVPNMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPVPNMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPVPNMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HTTP-VPN映射关系（RMV-HTTPVPNMAP）_99472510.md`
+- 原始手册：`evidence/UNC/20.15.2/增加HTTP-VPN映射关系（ADD-HTTPVPNMAP）_46111673.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP-VPN映射关系（LST-HTTPVPNMAP）_46031597.md`

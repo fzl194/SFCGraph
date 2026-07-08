@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PREURLGBINDUP.md`
-- 原始手册：`evidence/UDG/20.15.2/PREURLGBINDUP.md`
-- 原始手册：`evidence/UDG/20.15.2/PREURLGBINDUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户模板的前缀URL组绑定关系（RMV-PREURLGBINDUP）_82837412.md`
+- 原始手册：`evidence/UDG/20.15.2/增加用户模板的前缀URL组绑定关系（ADD-PREURLGBINDUP）_82837411.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户模板的前缀URL组绑定关系（LST-PREURLGBINDUP）_82837413.md`

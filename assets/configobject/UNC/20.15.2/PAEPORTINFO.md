@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAEPORTINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE端口基本信息（DSP-PAEPORTINFO）_92520040.md`

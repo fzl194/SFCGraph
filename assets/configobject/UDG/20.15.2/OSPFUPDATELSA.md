@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFUPDATELSA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF接收的LSA的更新信息（DSP-OSPFUPDATELSA）_00841445.md`

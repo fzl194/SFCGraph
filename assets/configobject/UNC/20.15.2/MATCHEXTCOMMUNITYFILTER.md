@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MATCHEXTCOMMUNITYFILTER.md`
-- 原始手册：`evidence/UNC/20.15.2/MATCHEXTCOMMUNITYFILTER.md`
-- 原始手册：`evidence/UNC/20.15.2/MATCHEXTCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除匹配扩展团体属性过滤器（RMV-MATCHEXTCOMMUNITYFILTER）_00841301.md`
+- 原始手册：`evidence/UNC/20.15.2/增加匹配扩展团体属性过滤器（ADD-MATCHEXTCOMMUNITYFILTER）_49801622.md`
+- 原始手册：`evidence/UNC/20.15.2/查询匹配扩展团体属性过滤器（LST-MATCHEXTCOMMUNITYFILTER）_00600377.md`

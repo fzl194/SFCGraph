@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFTPALG.md`
-- 原始手册：`evidence/UNC/20.15.2/SFTPALG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFTP协议算法(LST-SFTPALG)_18398712.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SFTP协议算法(SET-SFTPALG)_18542196.md`

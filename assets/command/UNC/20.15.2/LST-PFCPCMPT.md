@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PFCPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PFCP接口兼容性参数（LST-PFCPCMPT）_96242371.md`

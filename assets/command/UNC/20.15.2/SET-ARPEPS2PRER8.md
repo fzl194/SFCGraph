@@ -74,4 +74,4 @@ SET ARPEPS2PRER8:HIGH=6,MEDIUM=7;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-ARPEPS2PRER8.md`
+- 原始手册：`evidence/UNC/20.15.2/设置EPS-ARP到Pre-R8-ARP的映射规则（SET-ARPEPS2PRER8）_09652254.md`

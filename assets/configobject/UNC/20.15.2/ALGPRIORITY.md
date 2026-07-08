@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改算法优先级配置信息(MOD-ALGPRIORITY)_72345243.md`
+- 原始手册：`evidence/UNC/20.15.2/删除算法优先级配置信息(RMV-ALGPRIORITY)_26305456.md`
+- 原始手册：`evidence/UNC/20.15.2/增加算法优先级配置信息（ADD-ALGPRIORITY）_72225325.md`
+- 原始手册：`evidence/UNC/20.15.2/查询算法优先级配置信息(LST-ALGPRIORITY)_26145646.md`

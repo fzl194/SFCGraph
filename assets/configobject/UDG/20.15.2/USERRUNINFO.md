@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USERRUNINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/USERRUNINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/USERRUNINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除网关对IMSI_MSISDN指定的用户的运行信息进行收集配置（RMV-USERRUNINFO）_82837072.md`
+- 原始手册：`evidence/UDG/20.15.2/显示运行信息进行收集配置用户（LST-USERRUNINFO）_82837073.md`
+- 原始手册：`evidence/UDG/20.15.2/添加网关对IMSI_MSISDN指定的用户的运行信息进行收集配置（ADD-USERRUNINFO）_82837071.md`

@@ -72,4 +72,4 @@ FullMesh 5G LAN组会话接入开关 = 不使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LCKPOD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询锁定的POD（LST-LCKPOD）_64015272.md`

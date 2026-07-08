@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ISMFDFTQOSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ISMFDFTQOSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ISMFDFTQOSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/ISMFDFTQOSCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改I-SMF的Default-QoS-Flow配置（MOD-ISMFDFTQOSCTRL）_14280398.md`
+- 原始手册：`evidence/UNC/20.15.2/删除I-SMF的Default-QoS-Flow配置（RMV-ISMFDFTQOSCTRL）_13960450.md`
+- 原始手册：`evidence/UNC/20.15.2/增加I-SMF的Default-QoS-Flow配置（ADD-ISMFDFTQOSCTRL）_58800303.md`
+- 原始手册：`evidence/UNC/20.15.2/查询I-SMF的Default-QoS-Flow配置（LST-ISMFDFTQOSCTRL）_59000289.md`

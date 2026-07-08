@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOGCLEANPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/LOGCLEANPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志老化策略（LST-LOGCLEANPOLICY）_36328275.md`
+- 原始手册：`evidence/UDG/20.15.2/设置日志老化策略（SET-LOGCLEANPOLICY）_89791758.md`

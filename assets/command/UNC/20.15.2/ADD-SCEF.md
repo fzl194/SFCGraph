@@ -58,4 +58,4 @@ ADD SCEF: SCEFRLM="example01.com", SCEFHTN="scef0701.example01.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCEF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCEF配置(ADD-SCEF)_72225139.md`

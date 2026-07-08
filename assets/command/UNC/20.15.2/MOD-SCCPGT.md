@@ -71,4 +71,4 @@ MOD SCCPGT: GTX=1, NI=NAT, GTEXP=FOUR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SCCPGT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP全局翻译码(MOD-SCCPGT)_26146326.md`

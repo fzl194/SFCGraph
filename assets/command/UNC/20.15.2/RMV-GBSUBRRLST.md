@@ -59,4 +59,4 @@ RMV GBSUBRRLST: SUBRANGE=IMSI_PREFIX, IMSIPRE="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GBSUBRRLST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式用户漫游限制列表(RMV-GBSUBRRLST)_26305358.md`

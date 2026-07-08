@@ -58,4 +58,4 @@ RMV LOCUPDQOS: APN="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCUPDQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地更新QoS值（RMV-LOCUPDQOS）_88697038.md`

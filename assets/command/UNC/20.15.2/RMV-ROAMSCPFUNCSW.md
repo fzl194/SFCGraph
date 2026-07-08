@@ -58,4 +58,4 @@ RMV ROAMSCPFUNCSW: LNFTYPE=AMF, PNFTYPE=UDM;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ROAMSCPFUNCSW.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫游跨PLMN场景间接路由配置（RMV-ROAMSCPFUNCSW）_79735156.md`

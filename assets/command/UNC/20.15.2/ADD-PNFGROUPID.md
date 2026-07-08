@@ -64,4 +64,4 @@ ADD PNFGROUPID: NFINSTANCEID="UDM_Instance_0", GROUPID="GROUP01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的群组信息（ADD-PNFGROUPID）_09653180.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMAAABNDG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMAAABNDG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMAAABNDG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter-AAA服务器组里的Diameter-AAA服务器（RMV-UPDIAMAAABNDG）_45432716.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter-AAA服务器到Diameter-AAA服务器组（ADD-UPDIAMAAABNDG）_97080179.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter-AAA服务器与Diameter-AAA服务器绑定关系（LST-UPDIAMAAABNDG）_97314583.md`

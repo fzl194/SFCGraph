@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMARTAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN智能分流配置-(MOD-SMARTAPN)_33924477.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN智能分流配置-(RMV-SMARTAPN)_81523980.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN智能分流配置-(ADD-SMARTAPN)_34044349.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN智能分流配置-(LST-SMARTAPN)_81444400.md`

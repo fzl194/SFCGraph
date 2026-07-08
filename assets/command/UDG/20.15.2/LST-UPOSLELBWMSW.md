@@ -68,4 +68,4 @@ User Profile OS Level Bandwidth Managament Switch Information
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPOSLELBWMSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询User-Profile操作系统级带宽管理开关（LST-UPOSLELBWMSW）_82837496.md`

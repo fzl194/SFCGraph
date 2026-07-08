@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPPLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPPLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPPLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPPLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTPP本端信息（MOD-GTPPLOCINFO）_09896856.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTPP本端信息（RMV-GTPPLOCINFO）_09896857.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTPP本端信息（ADD-GTPPLOCINFO）_09896855.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTPP本端信息（LST-GTPPLOCINFO）_09896858.md`

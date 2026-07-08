@@ -62,4 +62,4 @@ ADD SEPPBINDGRP: NFINSTANCEID="SEPP_Instance_1", GROUPID=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SEPPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SEPP绑定组关系（ADD-SEPPBINDGRP）_80800285.md`

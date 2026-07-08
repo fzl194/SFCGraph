@@ -71,4 +71,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-UPLOADBALANCE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UP负载均衡功能（SET-UPLOADBALANCE）_97782146.md`

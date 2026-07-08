@@ -65,4 +65,4 @@ _public_       22                       2                        IPv4的单播So
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-LDPNEMGSOCKET.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LDP邻居管理的Socket信息（DSP-LDPNEMGSOCKET）_00841161.md`

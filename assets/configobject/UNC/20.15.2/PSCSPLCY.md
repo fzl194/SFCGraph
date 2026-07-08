@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PSCSPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PSCSPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询联合接入策略(LST-PSCSPLCY)_31993416.md`
+- 原始手册：`evidence/UNC/20.15.2/设置联合接入策略(SET-PSCSPLCY)_31833948.md`

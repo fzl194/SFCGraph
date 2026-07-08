@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFHOSTNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFHOSTNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFHOSTNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFHOSTNAME.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF主机名配置（MOD-OSPFHOSTNAME）_49961930.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF主机名配置（ADD-OSPFHOSTNAME）_50120658.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF主机名配置（RMV-OSPFHOSTNAME）_00866589.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF主机名配置（LST-OSPFHOSTNAME）_00600561.md`

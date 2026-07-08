@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CONCENPOINT.md`
-- 原始手册：`evidence/UNC/20.15.2/CONCENPOINT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询集中点部署模式（LST-CONCENPOINT）_09896705.md`
+- 原始手册：`evidence/UNC/20.15.2/设置集中点部署模式（SET-CONCENPOINT）_09896704.md`

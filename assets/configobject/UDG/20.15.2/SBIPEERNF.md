@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SBIPEERNF.md`
+- 原始手册：`evidence/UDG/20.15.2/显示服务化接口对端NF信息（DSP-SBIPEERNF）_29291767.md`

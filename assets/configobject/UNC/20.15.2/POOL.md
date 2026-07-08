@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POOL.md`
-- 原始手册：`evidence/UNC/20.15.2/POOL.md`
-- 原始手册：`evidence/UNC/20.15.2/POOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除POOL配置信息(RMV-POOL)_26305912.md`
+- 原始手册：`evidence/UNC/20.15.2/增加POOL配置信息(ADD-POOL)_72225781.md`
+- 原始手册：`evidence/UNC/20.15.2/查询POOL配置信息(LST-POOL)_72345703.md`

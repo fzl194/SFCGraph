@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MULTICASTSOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IGMP-Snooping组播源配置（RMV-MULTICASTSOURCE）_55604486.md`

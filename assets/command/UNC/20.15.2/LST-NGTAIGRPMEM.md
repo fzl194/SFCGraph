@@ -67,4 +67,4 @@ NG TAI组名  =  Hangzhou
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGTAIGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-TAI组性能统计对象成员（LST-NGTAIGRPMEM）_96242272.md`

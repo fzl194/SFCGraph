@@ -57,4 +57,4 @@ ADD MPACV6POLICY:POLICYNAME="policyV6",STEP=19,DESCRIPTION="a test desc";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MPACV6POLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6-MPAC策略（ADD-MPACV6POLICY）_50281454.md`

@@ -63,4 +63,4 @@ RMV GBEPPOOL: IPTYPE=IPV4, IPV4="192.168.4.101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GBEPPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除地址池中IP地址(RMV-GBEPPOOL)_72225677.md`

@@ -63,4 +63,4 @@ ADD M2MSVRGRPBIND:  GROUPNAME="m2msrvgroup01",APN="isp";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-M2MSVRGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M服务器组绑定关系（ADD-M2MSVRGRPBIND）_73321227.md`

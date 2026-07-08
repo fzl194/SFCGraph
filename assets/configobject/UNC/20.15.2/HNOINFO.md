@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HNOINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/HNOINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/HNOINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/HNOINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改归属网络信息(MOD-HNOINFO)_26146054.md`
+- 原始手册：`evidence/UNC/20.15.2/删除归属网络信息(RMV-HNOINFO)_72345653.md`
+- 原始手册：`evidence/UNC/20.15.2/增加归属网络信息(ADD-HNOINFO)_26305862.md`
+- 原始手册：`evidence/UNC/20.15.2/查询归属网络信息(LST-HNOINFO)_72225733.md`

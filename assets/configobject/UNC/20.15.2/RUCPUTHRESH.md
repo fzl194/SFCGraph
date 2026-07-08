@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RUCPUTHRESH.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RU-CPU占用率告警上报门限和告警恢复门限(SET-RUCPUTHRESH)_29626959.md`

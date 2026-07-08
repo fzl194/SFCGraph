@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSERVICELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSERVICELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF服务列表（RMV-AMFSERVICELIST）_09652985.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF服务列表（ADD-AMFSERVICELIST）_09652200.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF服务列表（LST-AMFSERVICELIST）_09651496.md`

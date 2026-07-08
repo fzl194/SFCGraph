@@ -54,4 +54,4 @@ RMV EIR:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EIR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EIR配置(RMV-EIR)_26145452.md`

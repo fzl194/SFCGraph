@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNCFFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNCFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN内容过滤开关（LST-APNCFFUNC）_54750057.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN内容过滤开关（SET-APNCFFUNC）_54188227.md`

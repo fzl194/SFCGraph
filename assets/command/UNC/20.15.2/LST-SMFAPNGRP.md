@@ -58,4 +58,4 @@ LST SMFAPNGRP:GRPNAME="grp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFAPNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS关联的APN组（LST-SMFAPNGRP）_88537100.md`

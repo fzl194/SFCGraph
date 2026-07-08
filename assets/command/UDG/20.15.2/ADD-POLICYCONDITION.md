@@ -67,4 +67,4 @@ ADD POLICYCONDITION: POLICYCNDNAME="policyname", UPLINKAVGRATE=100;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-POLICYCONDITION.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务质差检测策略（ADD-POLICYCONDITION）_10221268.md`

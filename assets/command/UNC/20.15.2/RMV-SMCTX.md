@@ -69,4 +69,4 @@ RMV SMCTX:RMVTYPE = IMSI,  IMSI="351521004992889";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SM上下文（RMV-SMCTX）_09653768.md`

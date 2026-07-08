@@ -67,4 +67,4 @@ RD过滤索引节点号   =  10
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDFILTERNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RD路由过滤节点（LST-RDFILTERNODE）_50121262.md`

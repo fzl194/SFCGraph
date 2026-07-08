@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ENABLE.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ENABLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接口IPv6使能（SET-IFIPV6ENABLE）_00601329.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口IPv6使能（LST-IFIPV6ENABLE）_00600793.md`

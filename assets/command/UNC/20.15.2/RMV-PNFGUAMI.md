@@ -64,4 +64,4 @@ RMV PNFGUAMI: NFINSTANCEID="AMF_Instance_1", MCC="460", MNC="03", AMFID="000001"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFGUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端AMF的GUAMI信息（RMV-PNFGUAMI）_09654193.md`

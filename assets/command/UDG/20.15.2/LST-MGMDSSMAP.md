@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MGMDSSMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP-SSM映射配置（LST-MGMDSSMAP）_00601125.md`

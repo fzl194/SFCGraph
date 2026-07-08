@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CUINCONSCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示CP和UP不一致的关键配置（DSP-CUINCONSCONFIG）_72134994.md`

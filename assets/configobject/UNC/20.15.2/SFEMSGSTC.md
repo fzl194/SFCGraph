@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEMSGSTC.md`
-- 原始手册：`evidence/UNC/20.15.2/SFEMSGSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询FEI消息统计（DSP-SFEMSGSTC）_50280982.md`
+- 原始手册：`evidence/UNC/20.15.2/清除FEI消息统计（RTR-SFEMSGSTC）_50280594.md`

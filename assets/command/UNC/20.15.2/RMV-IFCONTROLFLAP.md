@@ -52,4 +52,4 @@ RMV IFCONTROLFLAP:IFNAME="ethernet64/0/3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IFCONTROLFLAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口震荡抑制（RMV-IFCONTROLFLAP）_50120586.md`

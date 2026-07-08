@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GMM.md`
-- 原始手册：`evidence/UNC/20.15.2/GMM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式MM协议参数(LST-GMM)_26145524.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb模式MM协议参数(SET-GMM)_72345121.md`

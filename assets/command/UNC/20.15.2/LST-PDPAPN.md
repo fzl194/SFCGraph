@@ -77,4 +77,4 @@ PDP/PDN类型  =  IPV4协议
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PDPAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地APN-NI配置(LST-PDPAPN)_26305490.md`

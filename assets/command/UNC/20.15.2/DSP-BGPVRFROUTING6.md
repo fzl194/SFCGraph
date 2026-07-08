@@ -100,4 +100,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-BGPVRFROUTING6.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP-VPN-IPv6路由表（DSP-BGPVRFROUTING6）_49802254.md`

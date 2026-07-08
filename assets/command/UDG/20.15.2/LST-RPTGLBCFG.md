@@ -77,4 +77,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RPTGLBCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表全局开关（LST-RPTGLBCFG）_94212267.md`

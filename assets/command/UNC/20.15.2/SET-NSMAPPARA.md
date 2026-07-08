@@ -66,4 +66,4 @@ SET NSMAPPARA: LOCALNSMAPSW=ON, CFGNSENCSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NSMAPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网络切片映射相关参数（SET-NSMAPPARA）_82264266.md`

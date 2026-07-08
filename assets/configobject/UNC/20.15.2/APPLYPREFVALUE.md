@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APPLYPREFVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYPREFVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYPREFVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYPREFVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BGP路由首选值设置（MOD-APPLYPREFVALUE）_49801734.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP路由首选值设置（RMV-APPLYPREFVALUE）_00440989.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP路由首选值设置（ADD-APPLYPREFVALUE）_49961906.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP路由首选值设置（LST-APPLYPREFVALUE）_00441217.md`

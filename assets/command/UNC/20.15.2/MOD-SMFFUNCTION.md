@@ -61,4 +61,4 @@ MOD SMFFUNCTION: INSTANCEID="Instanceid01", NAME="nfdescription02", ADMINSTATE=L
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF功能实例信息（MOD-SMFFUNCTION）_09651658.md`

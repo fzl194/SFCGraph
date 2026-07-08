@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADVANCEDCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ADVANCEDCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ADVANCEDCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ADVANCEDCOMMUNITYNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改高级团体属性过滤器节点（MOD-ADVANCEDCOMMUNITYNODE）_49801898.md`
+- 原始手册：`evidence/UDG/20.15.2/删除高级团体属性过滤器节点（RMV-ADVANCEDCOMMUNITYNODE）_50281786.md`
+- 原始手册：`evidence/UDG/20.15.2/增加高级团体属性过滤器节点（ADD-ADVANCEDCOMMUNITYNODE）_00841469.md`
+- 原始手册：`evidence/UDG/20.15.2/查询高级团体属性过滤器节点（LST-ADVANCEDCOMMUNITYNODE）_00600557.md`

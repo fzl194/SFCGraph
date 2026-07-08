@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGMMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G移动性管理功能（LST-NGMMFUNC）_09653016.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G移动性管理功能（SET-NGMMFUNC）_09653748.md`

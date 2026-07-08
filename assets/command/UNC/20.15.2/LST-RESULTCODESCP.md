@@ -78,4 +78,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RESULTCODESCP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置MODELC_D组网的SCP原因码（LST-RESULTCODESCP）_16808737.md`

@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LACGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查看指定LAC组或者已配置所有LAC组的配置信息（LST-LACGROUP）_06054837.md`

@@ -83,4 +83,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N2DTLSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2接口的DTLS参数(LST-N2DTLSPARA)_54302475.md`

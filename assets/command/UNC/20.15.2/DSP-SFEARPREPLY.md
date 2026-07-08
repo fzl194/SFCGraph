@@ -80,4 +80,4 @@ RU名称  =  VNODE_VNRS_VNFC_IPU_0064
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SFEARPREPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/显示指定的ARP-REPLY表项（DSP-SFEARPREPLY）_00440829.md`

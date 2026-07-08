@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUPFAPNDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/IUPFAPNDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/IUPFAPNDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/IUPFAPNDPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改I-UPF在特定园区专用APN下的部署模式配置（MOD-IUPFAPNDPMODE）_77089954.md`
+- 原始手册：`evidence/UNC/20.15.2/删除I-UPF在特定园区专用APN下的部署模式配置（RMV-IUPFAPNDPMODE）_27209857.md`
+- 原始手册：`evidence/UNC/20.15.2/增加I-UPF在特定园区专用APN下的部署模式配置（ADD-IUPFAPNDPMODE）_76930386.md`
+- 原始手册：`evidence/UNC/20.15.2/查询I-UPF在特定园区专用APN下的部署模式配置（LST-IUPFAPNDPMODE）_27249661.md`

@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPULE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPULE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPULE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-U本地实体(MOD-GTPULE)_72225661.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-U本地实体(RMV-GTPULE)_26145982.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-U本地实体(ADD-GTPULE)_72345581.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-U本地实体(LST-GTPULE)_26305792.md`

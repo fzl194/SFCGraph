@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATHDWNALMSEG.md`
-- 原始手册：`evidence/UDG/20.15.2/PATHDWNALMSEG.md`
-- 原始手册：`evidence/UDG/20.15.2/PATHDWNALMSEG.md`
-- 原始手册：`evidence/UDG/20.15.2/PATHDWNALMSEG.md`
+- 原始手册：`evidence/UDG/20.15.2/修改单条路径断告警抑制参数的分段配置（MOD-PATHDWNALMSEG）_82837868.md`
+- 原始手册：`evidence/UDG/20.15.2/删除单条路径断告警抑制参数的分段配置（RMV-PATHDWNALMSEG）_82837869.md`
+- 原始手册：`evidence/UDG/20.15.2/增加单条路径断告警抑制参数的分段配置（ADD-PATHDWNALMSEG）_82837867.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单条路径断告警抑制参数的分段配置（LST-PATHDWNALMSEG）_82837866.md`

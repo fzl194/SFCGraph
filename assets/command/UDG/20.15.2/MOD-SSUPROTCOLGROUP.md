@@ -58,4 +58,4 @@ MOD SSUPROTCOLGROUP: DEFPRTGRPNAME="ssuprotclogroupname", PROTOCOLNAME="http", P
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-SSUPROTCOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基于协议的质差检测策略（MOD-SSUPROTCOLGROUP）_15739991.md`

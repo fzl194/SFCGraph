@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PIMCTLMSG.md`
+- 原始手册：`evidence/UNC/20.15.2/清除PIM实例报文统计计数（RTR-PIMCTLMSG）_50281494.md`

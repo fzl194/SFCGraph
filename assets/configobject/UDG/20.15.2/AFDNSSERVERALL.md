@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFDNSSERVERALL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除所有防欺诈可信DNS服务器（RMV-AFDNSSERVERALL）_05304032.md`

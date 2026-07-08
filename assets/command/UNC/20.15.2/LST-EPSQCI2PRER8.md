@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-EPSQCI2PRER8.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS-QCI到Pre-R8-QoS映射规则（LST-EPSQCI2PRER8）_09652501.md`

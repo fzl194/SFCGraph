@@ -58,4 +58,4 @@ RMV 5GCQOSACTION:QOSPROFILENAME="test",FIVEQI=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-5GCQOSACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5GC-QoS控制动作配置（RMV-5GCQOSACTION）_09652131.md`

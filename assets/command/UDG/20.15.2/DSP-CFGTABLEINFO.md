@@ -76,4 +76,4 @@ StpTBL          0x0             0x1000          0x2             0x94            
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CFGTABLEINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示CFG表信息和内存信息（DSP-CFGTABLEINFO）_59103470.md`

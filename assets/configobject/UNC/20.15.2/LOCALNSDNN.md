@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCALNSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALNSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALNSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALNSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络切片或DNN纠正配置（MOD-LOCALNSDNN）_12701648.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网络切片或DNN纠正配置（RMV-LOCALNSDNN）_09651699.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网络切片或DNN纠正配置（ADD-LOCALNSDNN）_09652139.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网络切片或DNN纠正配置（LST-LOCALNSDNN）_09651462.md`

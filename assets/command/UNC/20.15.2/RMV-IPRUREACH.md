@@ -57,4 +57,4 @@ RMV IPRUREACH:VPNNAME="vrf",IPVERSION=ipv4unicast,DESTADDR4="10.1.1.1",SOURCERU=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IPRUREACH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RU到网关的可达性检测配置（RMV-IPRUREACH）_00440693.md`

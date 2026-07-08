@@ -57,4 +57,4 @@ MOD NGTAGP: NGTAGPID=1, DESC="nanjing";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGTAGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-TA群组（MOD-NGTAGP）_58252981.md`

@@ -62,4 +62,4 @@ ADD SMARTDT: UETYPE=WINDOWS, DTLIMIT=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMARTDT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于终端类型的DT限制(ADD-SMARTDT)_26145738.md`

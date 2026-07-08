@@ -67,4 +67,4 @@ ADD DNSQ: SUBRANGE=All, DNSUF="gprs", DNSQUERYMODE=AAAA/A, GROUPID=1, DESC="For 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNSQ.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS查询控制参数(ADD-DNSQ)_26305702.md`

@@ -43,4 +43,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NETWORK.md`
+- 原始手册：`evidence/UDG/20.15.2/网络查询（LST-NETWORK）_18720724.md`

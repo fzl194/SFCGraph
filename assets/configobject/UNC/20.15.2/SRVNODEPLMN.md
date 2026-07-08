@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVNODEPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODEPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODEPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODEPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGSN_SGW_PGW地址段和PLMN标识之间的映射关系（MOD-SRVNODEPLMN）_09653656.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGSN_SGW_PGW地址段和PLMN标识之间的映射关系（RMV-SRVNODEPLMN）_09653257.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGSN_SGW_PGW地址段和PLMN标识之间的映射关系（ADD-SRVNODEPLMN）_09652097.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGSN_SGW_PGW地址段和PLMN标识之间的映射关系（LST-SRVNODEPLMN）_09651504.md`

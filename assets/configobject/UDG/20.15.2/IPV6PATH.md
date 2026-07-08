@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPV6PATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-Path信息（DSP-IPV6PATH）_00440537.md`

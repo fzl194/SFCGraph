@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFGR.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFGR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF的平滑重启配置（LST-OSPFGR）_49802062.md`
+- 原始手册：`evidence/UNC/20.15.2/设置OSPF的平滑重启（SET-OSPFGR）_49961154.md`

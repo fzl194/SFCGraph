@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFEMGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFEMGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFEMGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFEMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改运营商紧急呼叫会话功能配置（MOD-SMFEMGCFG）_37903905.md`
+- 原始手册：`evidence/UNC/20.15.2/删除运营商紧急呼叫会话功能配置（RMV-SMFEMGCFG）_91284506.md`
+- 原始手册：`evidence/UNC/20.15.2/增加运营商紧急呼叫会话功能配置（ADD-SMFEMGCFG）_91124570.md`
+- 原始手册：`evidence/UNC/20.15.2/查询运营商紧急呼叫会话功能配置（LST-SMFEMGCFG）_90836434.md`

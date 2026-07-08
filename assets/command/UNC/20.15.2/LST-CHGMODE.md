@@ -75,4 +75,4 @@ LTE-M接入           否                           否                         
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费接口选择方式（LST-CHGMODE）_09652191.md`

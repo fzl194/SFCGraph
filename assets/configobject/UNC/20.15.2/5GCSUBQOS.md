@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/5GCSUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCSUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCSUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCSUBQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5GC签约QoS配置（MOD-5GCSUBQOS）_09652586.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5GC签约QoS配置（RMV-5GCSUBQOS）_09652552.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5GC签约QoS配置（ADD-5GCSUBQOS）_09652601.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5GC签约QoS配置（LST-5GCSUBQOS）_09652527.md`

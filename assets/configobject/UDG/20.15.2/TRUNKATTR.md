@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TRUNKATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/TRUNKATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询宽带集群属性配置（LST-TRUNKATTR）_68962483.md`
+- 原始手册：`evidence/UDG/20.15.2/设置宽带集群属性配置（SET-TRUNKATTR）_69122701.md`

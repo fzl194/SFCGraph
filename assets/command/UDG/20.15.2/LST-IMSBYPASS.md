@@ -67,4 +67,4 @@ Hysteresis Time for QoS type URR Stop (s)  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IMSBYPASS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示IMS-Bypass功能的相关参数（LST-IMSBYPASS）_08806803.md`

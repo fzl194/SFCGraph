@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AGFCHGINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/AGFCHGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AGF的计费上下文信息（RMV-AGFCHGINFO）_77825285.md`
+- 原始手册：`evidence/UNC/20.15.2/显示AGF的计费上下文信息（DSP-AGFCHGINFO）_45110912.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSCSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/MSCSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSC选择策略(LST-MSCSELPLCY)_72345577.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MSC选择策略(SET-MSCSELPLCY)_26305786.md`

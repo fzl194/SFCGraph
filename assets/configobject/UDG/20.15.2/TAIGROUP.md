@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TAIGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/TAIGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/TAIGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除指定的TAI组（RMV-TAIGROUP）_26089115.md`
+- 原始手册：`evidence/UDG/20.15.2/查看指定TAI组或者已配置所有TAI组的配置信息（LST-TAIGROUP）_19691738.md`
+- 原始手册：`evidence/UDG/20.15.2/添加一个新的TAI组（ADD-TAIGROUP）_25926885.md`

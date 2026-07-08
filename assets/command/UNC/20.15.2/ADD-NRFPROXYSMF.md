@@ -58,4 +58,4 @@ ADD NRFPROXYSMF: NFINSTANCEID="Nfinstanceid01", NFNAME="ProxySMF01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFPROXYSMF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF管理的ProxySMF（ADD-NRFPROXYSMF）_23782730.md`

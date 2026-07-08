@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEACTQFPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DEACTQFPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DEACTQFPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DEACTQFPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改去活用户面专有QoS-Flow策略（MOD-DEACTQFPLCY）_92470772.md`
+- 原始手册：`evidence/UNC/20.15.2/删除去活用户面专有QoS-Flow策略（RMV-DEACTQFPLCY）_38692983.md`
+- 原始手册：`evidence/UNC/20.15.2/增加去活用户面专有QoS-Flow策略（ADD-DEACTQFPLCY）_38788437.md`
+- 原始手册：`evidence/UNC/20.15.2/查询去活用户面专有QoS-Flow策略（LST-DEACTQFPLCY）_92022694.md`

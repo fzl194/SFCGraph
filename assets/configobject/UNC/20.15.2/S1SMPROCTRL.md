@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1SMPROCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/S1SMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式SM流程控制参数(LST-S1SMPROCTRL)_72345291.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1模式SM流程控制参数(SET-S1SMPROCTRL)_26305504.md`

@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SBILNKCTRLSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务化接口链路自动控制功能开关（LST-SBILNKCTRLSW）_83813636.md`

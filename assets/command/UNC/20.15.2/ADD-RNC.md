@@ -92,4 +92,4 @@ ADD RNC: RNCX=1, RNCN="TEST", RNCMCC="460", RNCMNC="00", RNCID=1, NI=NATB, SPC="
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RNC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu接口RNC信息(ADD-RNC)_26146040.md`

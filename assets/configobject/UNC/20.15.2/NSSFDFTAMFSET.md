@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFDFTAMFSET.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFDFTAMFSET.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFDFTAMFSET.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFDFTAMFSET.md`
+- 原始手册：`evidence/UNC/20.15.2/修改默认AMF集所支持的S-NSSAI范围（MOD-NSSFDFTAMFSET）_64551189.md`
+- 原始手册：`evidence/UNC/20.15.2/删除默认AMF集所支持的S-NSSAI范围（RMV-NSSFDFTAMFSET）_12111346.md`
+- 原始手册：`evidence/UNC/20.15.2/增加默认AMF集所支持的S-NSSAI范围（ADD-NSSFDFTAMFSET）_64670737.md`
+- 原始手册：`evidence/UNC/20.15.2/查询默认AMF集所支持的S-NSSAI范围（LST-NSSFDFTAMFSET）_64791517.md`

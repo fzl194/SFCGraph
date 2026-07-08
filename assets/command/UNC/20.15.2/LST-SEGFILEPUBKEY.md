@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SEGFILEPUBKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询号段配置文件的签名验证公钥（LST-SEGFILEPUBKEY）_09653001.md`

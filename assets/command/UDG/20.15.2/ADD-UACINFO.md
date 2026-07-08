@@ -61,4 +61,4 @@ ADD UACINFO: UACNAME="test", IPTYPE=IPV4, IPV4ADDRESS="192.168.0.10";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UACINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/添加UAC信息（ADD-UACINFO）_19410196.md`

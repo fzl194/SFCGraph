@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCF选择策略（MOD-PCFSELPLCY）_44007430.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCF选择策略（RMV-PCFSELPLCY）_44007721.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCF选择策略（ADD-PCFSELPLCY）_44006528.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCF选择策略（LST-PCFSELPLCY）_44007098.md`

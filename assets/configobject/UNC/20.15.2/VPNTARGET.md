@@ -33,6 +33,6 @@ Import Target：PE收到其它PE发布的VPN-IPv4路由时，检查其Export Tar
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VPNTARGET.md`
-- 原始手册：`evidence/UNC/20.15.2/VPNTARGET.md`
-- 原始手册：`evidence/UNC/20.15.2/VPNTARGET.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VPN-Target（RMV-VPNTARGET）_49961586.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VPN-Target（ADD-VPNTARGET）_00866341.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VPN-Target（LST-VPNTARGET）_00600353.md`

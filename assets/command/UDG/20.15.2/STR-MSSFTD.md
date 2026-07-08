@@ -284,4 +284,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/STR-MSSFTD.md`
+- 原始手册：`evidence/UDG/20.15.2/微服务软件调测（STR-MSSFTD）_72887590.md`

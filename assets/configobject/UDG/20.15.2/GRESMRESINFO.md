@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GRESMRESINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Gresm资源信息（DSP-GRESMRESINFO）_00441029.md`

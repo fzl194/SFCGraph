@@ -77,4 +77,4 @@ SET RURESTHRESHOLD
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RURESTHRESHOLD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置RU资源过载和去过载阈值（SET-RURESTHRESHOLD）_10095498.md`

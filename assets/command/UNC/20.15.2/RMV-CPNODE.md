@@ -68,4 +68,4 @@ RMV CPNODE:CPNODEINDEX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CPNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CP节点信息（RMV-CPNODE）_09654398.md`

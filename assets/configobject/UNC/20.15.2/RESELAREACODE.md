@@ -29,6 +29,6 @@ AMF可基于运营商规划的区域进行AMF重选功能的差异化控制。AM
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESELAREACODE.md`
-- 原始手册：`evidence/UNC/20.15.2/RESELAREACODE.md`
-- 原始手册：`evidence/UNC/20.15.2/RESELAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF重选功能区域编码（RMV-RESELAREACODE）_23782822.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF重选功能区域编码（ADD-RESELAREACODE）_70382293.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF重选功能区域编码（LST-RESELAREACODE）_70462557.md`

@@ -80,4 +80,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMCOMMTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通用会话管理定时器参数（LST-SMCOMMTIMER）_10484606.md`

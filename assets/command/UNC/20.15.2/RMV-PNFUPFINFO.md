@@ -60,4 +60,4 @@ RMV PNFUPFINFO:NFINSTANCEID="UPF_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端UPF信息（RMV-PNFUPFINFO）_09654161.md`

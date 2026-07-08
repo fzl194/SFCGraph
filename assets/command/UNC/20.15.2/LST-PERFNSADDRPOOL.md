@@ -66,4 +66,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PERFNSADDRPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询切片地址池性能统计对象（LST-PERFNSADDRPOOL）_12701647.md`

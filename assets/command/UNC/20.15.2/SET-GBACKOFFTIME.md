@@ -66,4 +66,4 @@ SET GBACKOFFTIME: BACKOFFTIMER = 600;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GBACKOFFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局Back-off-Time信息（SET-GBACKOFFTIME）_76686936.md`

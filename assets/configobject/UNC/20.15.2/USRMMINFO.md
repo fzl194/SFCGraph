@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRMMINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/USRMMINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/USRMMINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/USRMMINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络名称(MOD-USRMMINFO)_26305868.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网络名称(RMV-USRMMINFO)_72225737.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网络名称(ADD-USRMMINFO)_26146058.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网络名称(LST-USRMMINFO)_72345659.md`

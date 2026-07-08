@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LLCXID.md`
-- 原始手册：`evidence/UNC/20.15.2/LLCXID.md`
-- 原始手册：`evidence/UNC/20.15.2/LLCXID.md`
-- 原始手册：`evidence/UNC/20.15.2/LLCXID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改LLC协商参数(MOD-LLCXID)_72225695.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LLC协商参数(RMV-LLCXID)_26146016.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LLC协商参数(ADD-LLCXID)_72345615.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LLC协商参数(LST-LLCXID)_26305826.md`

@@ -60,4 +60,4 @@ MOD DCN: DCNID=0, MCC="123", MNC="01", DCNTYPE=DEFAULT, DESC="eMtc";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DCN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DCN(MOD-DCN)_26305636.md`

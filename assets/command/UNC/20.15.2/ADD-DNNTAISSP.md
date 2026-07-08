@@ -65,4 +65,4 @@ ADD DNNTAISSP: DNNNI="huawei.com", MCC="460", MNC="03", BGNTAC="000112", ENDTAC=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNNTAISSP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN的TAI和ServingScope映射（ADD-DNNTAISSP）_46041326.md`

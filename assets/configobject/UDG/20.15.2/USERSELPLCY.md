@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USERSELPLCY.md`
-- 原始手册：`evidence/UDG/20.15.2/USERSELPLCY.md`
-- 原始手册：`evidence/UDG/20.15.2/USERSELPLCY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户策略选择（RMV-USERSELPLCY）_83909789.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户策略选择（LST-USERSELPLCY）_83909790.md`
+- 原始手册：`evidence/UDG/20.15.2/添加用户策略选择（ADD-USERSELPLCY）_83909788.md`

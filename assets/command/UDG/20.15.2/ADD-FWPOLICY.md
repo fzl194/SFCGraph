@@ -63,4 +63,4 @@ ADD FWPOLICY: FWPOLICYNAME="testfwpolicy", UPINITUPACTION=PASS, UPINITDNACTION=P
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-FWPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/增加防火墙策略（ADD-FWPOLICY）_68602075.md`

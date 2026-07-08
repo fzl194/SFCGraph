@@ -60,4 +60,4 @@ MOD RRCINACTTAI: MCC="123", MNC="00", BGNTAC="000112", ENDTAC="000220";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-RRCINACTTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RRC-Inactive生效的TAI范围（MOD-RRCINACTTAI）_70382361.md`

@@ -50,4 +50,4 @@ RMV TWAMPLOGICINF: NAME="n3if1/1/0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TWAMPLOGICINF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除本地逻辑接口（RMV-TWAMPLOGICINF）_73302053.md`

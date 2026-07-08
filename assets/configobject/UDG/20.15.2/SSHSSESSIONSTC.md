@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SSHSSESSIONSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SSH服务器的会话统计信息（DSP-SSHSSESSIONSTC）_00841733.md`

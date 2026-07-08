@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGIPAREACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于位置的地址分配控制参数（LST-NGIPAREACTRL）_96242249.md`

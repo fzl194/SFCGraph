@@ -64,4 +64,4 @@ SET ASNFUNC:ASNSWITCH=ENABLE,SYNCINTERVAL=5;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-ASNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ASN功能（SET-ASNFUNC）_35519283.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSAUTHREQVSA.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSAUTHREQVSA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS鉴权请求携带的私有扩展属性（LST-RDSAUTHREQVSA）_28567653.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RADIUS鉴权请求携带的私有扩展属性（SET-RDSAUTHREQVSA）_28567662.md`

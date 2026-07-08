@@ -59,4 +59,4 @@ MOD RELAYTLSCFG: TLSCONFIGNAME="douyintlscfg", UETLSPLYNAME="ue_douyinply";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-RELAYTLSCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继业务TLS认证配置（MOD-RELAYTLSCFG）_94871967.md`

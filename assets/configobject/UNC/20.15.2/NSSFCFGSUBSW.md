@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFCFGSUBSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFCFGSUBSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFCFGSUBSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFCFGSUBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/修改按签约NSSAI分配Configed-NSSAI的PLMN级别开关（MOD-NSSFCFGSUBSW）_98061326.md`
+- 原始手册：`evidence/UNC/20.15.2/删除按签约NSSAI分配Configed-NSSAI的PLMN级别开关（RMV-NSSFCFGSUBSW）_44701273.md`
+- 原始手册：`evidence/UNC/20.15.2/增加按签约NSSAI分配Configed-NSSAI的PLMN级别开关（ADD-NSSFCFGSUBSW）_44581263.md`
+- 原始手册：`evidence/UNC/20.15.2/查询按签约NSSAI分配Configed-NSSAI的PLMN级别开关（LST-NSSFCFGSUBSW）_98101324.md`

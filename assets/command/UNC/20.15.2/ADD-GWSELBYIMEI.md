@@ -78,4 +78,4 @@ ADD GWSELBYIMEI: IMEIGPID=1, LABEL="CAT6";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GWSELBYIMEI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于IMEI选择GGSN_P-GW配置(ADD-GWSELBYIMEI)_72345541.md`

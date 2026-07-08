@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMCMPTBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/DMCMPTBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/DMCMPTBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/DMCMPTBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI对应的Diameter兼容性(MOD-DMCMPTBYIMSI)_26306110.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI对应的Diameter兼容性(RMV-DMCMPTBYIMSI)_72345899.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI对应的Diameter兼容性(ADD-DMCMPTBYIMSI)_72225977.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI对应的Diameter兼容性(LST-DMCMPTBYIMSI)_26146300.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCALINGSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/SCALINGSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩缩容开关（LST-SCALINGSWITCH）_09587929.md`
+- 原始手册：`evidence/UNC/20.15.2/设置扩缩容开关（SET-SCALINGSWITCH）_09587379.md`

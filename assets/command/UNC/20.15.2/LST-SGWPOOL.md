@@ -64,4 +64,4 @@ SGW POOL名称  =  sgwpool1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGWPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-POOL（LST-SGWPOOL）_31453518.md`

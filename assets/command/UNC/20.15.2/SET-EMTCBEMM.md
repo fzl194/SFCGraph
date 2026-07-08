@@ -77,4 +77,4 @@ SET EMTCBEMM: T3422=48, N3422=5, T3450=48, N3450=5, T3460=48, N3460=5, T3470=48,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-EMTCBEMM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1模式eMTC-MM协议参数（SET-EMTCBEMM）_26145778.md`

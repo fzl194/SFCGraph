@@ -67,4 +67,4 @@ CHR上报本地存储错误类型
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CHRRECORDSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CHR本地存盘开关（LST-CHRRECORDSW）_53604161.md`

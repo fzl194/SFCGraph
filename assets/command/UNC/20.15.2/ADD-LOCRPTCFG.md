@@ -67,4 +67,4 @@ ADD LOCRPTCFG: RANGE=SPECIFIC_GGSN/P-GW, IPT=IPV4, GWIPV4="10.10.10.17", MASKV4=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOCRPTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加位置上报配置信息(ADD-LOCRPTCFG)_26305746.md`

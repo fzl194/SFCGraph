@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RU.md`
-- 原始手册：`evidence/UDG/20.15.2/RU.md`
-- 原始手册：`evidence/UDG/20.15.2/RU.md`
-- 原始手册：`evidence/UDG/20.15.2/RU.md`
+- 原始手册：`evidence/UDG/20.15.2/解闭CSDB-RU（UBLK-RU）_36508137.md`
+- 原始手册：`evidence/UDG/20.15.2/闭塞CSDB-RU（BLK-RU）_36508136.md`
+- 原始手册：`evidence/UDG/20.15.2/显示资源单元信息（DSP-RU）_59103857.md`
+- 原始手册：`evidence/UDG/20.15.2/重启资源单元（RST-RU）_59103467.md`

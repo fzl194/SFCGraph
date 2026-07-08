@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFACCLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFACCLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFACCLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFACCLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Proxy-SMF接入控制列表（MOD-PROXYSMFACCLIST）_23782798.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Proxy-SMF接入控制列表（RMV-PROXYSMFACCLIST）_70382381.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Proxy-SMF接入控制列表（ADD-PROXYSMFACCLIST）_70462517.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Proxy-SMF接入控制列表（LST-PROXYSMFACCLIST）_23782770.md`

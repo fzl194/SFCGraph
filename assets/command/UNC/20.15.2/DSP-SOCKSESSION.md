@@ -84,4 +84,4 @@ DSP SOCKSESSION: APPCID="0x8069003D",SOCKID=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SOCKSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SOCK会话诊断信息（DSP-SOCKSESSION）_49802494.md`

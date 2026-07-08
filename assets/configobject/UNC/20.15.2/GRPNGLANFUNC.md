@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GRPNGLANFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/GRPNGLANFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/GRPNGLANFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/GRPNGLANFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定群组的5G-LAN会话扩展参数（MOD-GRPNGLANFUNC）_90298740.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定群组的5G-LAN会话扩展参数（RMV-GRPNGLANFUNC）_26938413.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定群组的5G-LAN会话扩展参数（ADD-GRPNGLANFUNC）_90458520.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定群组的5G-LAN会话扩展参数（LST-GRPNGLANFUNC）_27017965.md`

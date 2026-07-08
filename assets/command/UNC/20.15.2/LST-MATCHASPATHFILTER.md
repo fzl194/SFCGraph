@@ -66,4 +66,4 @@ AS路径过滤器名字或号  =  a
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MATCHASPATHFILTER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询匹配AS路径过滤器（LST-MATCHASPATHFILTER）_00841457.md`

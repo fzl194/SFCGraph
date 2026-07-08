@@ -67,4 +67,4 @@ VNRS_VNFC    版本包    BaseApp           基础版本      V100R005C10B300   
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SOFTWARE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示软件仓软件（DSP-SOFTWARE）_59036808.md`

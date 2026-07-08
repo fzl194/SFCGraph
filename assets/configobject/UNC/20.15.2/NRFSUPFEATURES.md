@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSUPFEATURES.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSUPFEATURES.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF服务能力参数（LST-NRFSUPFEATURES）_08839360.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF服务能力参数（SET-NRFSUPFEATURES）_09279254.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SESSSTATIC.md`
-- 原始手册：`evidence/UNC/20.15.2/SESSSTATIC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示会话消息统计信息（DSP-SESSSTATIC）_00865601.md`
+- 原始手册：`evidence/UNC/20.15.2/清除Diameter会话消息统计计数（RTR-SESSSTATIC）_00841173.md`

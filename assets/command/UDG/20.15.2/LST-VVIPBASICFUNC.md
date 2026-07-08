@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VVIPBASICFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示重点业务保障基本功能（LST-VVIPBASICFUNC）_15739995.md`

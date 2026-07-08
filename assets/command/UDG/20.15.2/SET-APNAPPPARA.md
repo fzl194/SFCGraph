@@ -60,4 +60,4 @@ SET APNAPPPARA: APN="apn1", APPRVALIDCOND=INHERIT;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNAPPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的应用参数（SET-APNAPPPARA）_74982441.md`

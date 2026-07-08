@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SDUPPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/测试SDUP路径(TST-SDUPPATH)_01405830.md`

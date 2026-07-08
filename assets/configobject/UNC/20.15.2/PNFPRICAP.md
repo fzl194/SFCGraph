@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFPRICAP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UPF优先级和权重（DSP-PNFPRICAP）_71516429.md`

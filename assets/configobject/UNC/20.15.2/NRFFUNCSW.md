@@ -40,5 +40,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFFUNCSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFUNCSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF功能开关（LST-NRFFUNCSW）_09652285.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF功能开关（SET-NRFFUNCSW）_09651606.md`

@@ -35,5 +35,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNIMSATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/APNIMSATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ApnImsAttr配置（LST-APNIMSATTR）_86527128.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ApnImsAttr配置（SET-APNIMSATTR）_82837822.md`

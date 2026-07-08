@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-COMBASEHEALTH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Base平面通信质量（DSP-COMBASEHEALTH）_32217474.md`

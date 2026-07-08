@@ -83,4 +83,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地PLMN(LST-HPLMN)_72345675.md`

@@ -62,4 +62,4 @@ NF实例标识  =  88888888-4444-1234-5678-123456789abc
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFSMSFWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF白名单（LST-NRFSMSFWHITELST）_22103389.md`

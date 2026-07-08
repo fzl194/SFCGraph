@@ -66,4 +66,4 @@ ADD APNNILIB: APNNI="huawei1", APNTYPE=REQUEST_APN, UETYPE=ANDROID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNNILIB.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI库记录（ADD-APNNILIB）_26145736.md`

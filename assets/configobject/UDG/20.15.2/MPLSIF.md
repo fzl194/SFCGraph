@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MPLSIF.md`
-- 原始手册：`evidence/UDG/20.15.2/MPLSIF.md`
-- 原始手册：`evidence/UDG/20.15.2/MPLSIF.md`
-- 原始手册：`evidence/UDG/20.15.2/MPLSIF.md`
-- 原始手册：`evidence/UDG/20.15.2/MPLSIF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改MPLS接口（MOD-MPLSIF）_00601153.md`
+- 原始手册：`evidence/UDG/20.15.2/删除MPLS接口（RMV-MPLSIF）_50121554.md`
+- 原始手册：`evidence/UDG/20.15.2/显示MPLS接口信息（DSP-MPLSIF）_00440669.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MPLS接口配置（LST-MPLSIF）_49802554.md`
+- 原始手册：`evidence/UDG/20.15.2/添加MPLS接口（ADD-MPLSIF）_50281798.md`

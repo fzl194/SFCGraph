@@ -64,4 +64,4 @@ ADD NGSGWPLMN: NOID=0, MCC="123", MNC="68", DESC="new homeplmn 12368";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGSGWPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-C-Home-PLMN（ADD-NGSGWPLMN）_70382289.md`

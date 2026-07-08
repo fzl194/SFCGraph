@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPLOGICINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF逻辑接口（LST-UPLOGICINTF）_96805493.md`

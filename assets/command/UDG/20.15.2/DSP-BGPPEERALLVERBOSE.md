@@ -139,4 +139,4 @@ No routing policy is configured
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-BGPPEERALLVERBOSE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP所有VPN对等体详细信息（DSP-BGPPEERALLVERBOSE）_00866277.md`

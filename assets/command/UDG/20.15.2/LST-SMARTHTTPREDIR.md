@@ -86,4 +86,4 @@ Error Code 携带标识  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SMARTHTTPREDIR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP重定向配置（LST-SMARTHTTPREDIR）_86528733.md`

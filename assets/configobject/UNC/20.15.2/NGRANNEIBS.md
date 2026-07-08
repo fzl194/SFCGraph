@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGRANNEIBS.md`
-- 原始手册：`evidence/UNC/20.15.2/NGRANNEIBS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NG-RAN基站邻接关系（DSP-NGRANNEIBS）_09652278.md`
+- 原始手册：`evidence/UNC/20.15.2/清除NG-RAN基站邻接关系（CLR-NGRANNEIBS）_09653167.md`

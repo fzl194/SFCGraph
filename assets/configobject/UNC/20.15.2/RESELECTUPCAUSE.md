@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESELECTUPCAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/RESELECTUPCAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/RESELECTUPCAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除重选UPF故障原因值（RMV-RESELECTUPCAUSE）_06399928.md`
+- 原始手册：`evidence/UNC/20.15.2/增加重选UPF的故障原因值（ADD-RESELECTUPCAUSE）_06399908.md`
+- 原始手册：`evidence/UNC/20.15.2/查询重选UPF故障原因值（LST-RESELECTUPCAUSE）_06399917.md`

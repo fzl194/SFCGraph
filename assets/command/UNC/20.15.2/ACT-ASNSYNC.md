@@ -55,4 +55,4 @@ ACT ASNSYNC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACT-ASNSYNC.md`
+- 原始手册：`evidence/UNC/20.15.2/触发ASN同步（ACT-ASNSYNC）_90209058.md`

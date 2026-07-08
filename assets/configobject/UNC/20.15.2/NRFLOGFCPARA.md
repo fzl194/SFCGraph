@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFLOGFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFLOGFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF日志流控参数（LST-NRFLOGFCPARA）_93702768.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF日志流控参数（SET-NRFLOGFCPARA）_38302735.md`

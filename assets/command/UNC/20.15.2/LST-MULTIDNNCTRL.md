@@ -86,4 +86,4 @@ UE IP地址冲突后是否丢弃MulDnnSessRule  =  丢弃MulDnnSessRule
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MULTIDNNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询2B2C漫游双DNN特性相关的功能控制（LST-MULTIDNNCTRL）_39800057.md`

@@ -58,4 +58,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PAESCHEDMOD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE-Channel调度模式（SET-PAESCHEDMOD）_61378197.md`

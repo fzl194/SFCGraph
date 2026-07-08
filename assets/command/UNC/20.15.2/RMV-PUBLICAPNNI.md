@@ -58,4 +58,4 @@ RMV PUBLICAPNNI: APNNI="cmwap";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PUBLICAPNNI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除公共APN-NI配置(RMV-PUBLICAPNNI)_72225361.md`

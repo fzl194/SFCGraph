@@ -65,4 +65,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF软参（LST-AMFSOFTPARA）_09652549.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGAPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NGAP协议参数（MOD-NGAPPARA）_09654199.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NGAP协议参数（RMV-NGAPPARA）_09654185.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NGAP协议参数（ADD-NGAPPARA）_09653208.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NGAP协议参数（LST-NGAPPARA）_09653097.md`

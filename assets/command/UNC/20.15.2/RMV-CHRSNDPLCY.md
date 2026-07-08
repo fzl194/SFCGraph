@@ -59,4 +59,4 @@ RMV CHRSNDPLCY: TYPE=APNNI, APNNI="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHRSNDPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CHR传输策略(RMV-CHRSNDPLCY)_26145612.md`

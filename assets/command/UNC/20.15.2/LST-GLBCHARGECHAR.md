@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLBCHARGECHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对本地用户、漫游用户、拜访用户所采用的计费属性（LST-GLBCHARGECHAR）_09896801.md`

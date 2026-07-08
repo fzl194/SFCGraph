@@ -66,4 +66,4 @@ LOD DIAMDICT:DICTFILESELECT=ALL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOD-DIAMDICT.md`
+- 原始手册：`evidence/UNC/20.15.2/加载Diameter字典（LOD-DIAMDICT）_09897254.md`

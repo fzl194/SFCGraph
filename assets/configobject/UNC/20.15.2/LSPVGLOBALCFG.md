@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LSPVGLOBALCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LSPVGLOBALCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LSPV全局属性（LST-LSPVGLOBALCFG）_00866665.md`
+- 原始手册：`evidence/UNC/20.15.2/设置LSPV全局属性（SET-LSPVGLOBALCFG）_50280878.md`

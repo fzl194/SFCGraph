@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCP6CLIENTSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCPv6客户端状态信息（DSP-DHCP6CLIENTSTAT）_49802498.md`

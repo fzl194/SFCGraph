@@ -68,4 +68,4 @@ LST POOLBINDGRP:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-POOLBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询地址池与地址池组的绑定关系（LST-POOLBINDGRP）_32232819.md`

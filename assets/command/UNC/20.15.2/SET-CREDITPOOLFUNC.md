@@ -64,4 +64,4 @@ SET CREDITPOOLFUNC:CREDITPOOLSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CREDITPOOLFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Credit-Pooling功能（SET-CREDITPOOLFUNC）_10761361.md`

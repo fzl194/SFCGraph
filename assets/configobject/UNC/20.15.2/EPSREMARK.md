@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EPSREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSREMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改EPS-QoS到TOS_DSCP的映射规则（MOD-EPSREMARK）_09652198.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EPS-QoS到TOS_DSCP的映射规则（RMV-EPSREMARK）_09652512.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EPS-QoS到TOS_DSCP的映射规则（ADD-EPSREMARK）_09652275.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS-QoS到TOS_DSCP的映射规则（LST-EPSREMARK）_09654195.md`

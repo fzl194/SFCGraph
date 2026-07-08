@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MDTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/MDTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/MDTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/MDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于管理的最小化路测的PLMN(MOD-MDTPLMN)_99234137.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于管理的最小化路测的PLMN(RMV-MDTPLMN)_99355689.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于管理的最小化路测的PLMN(ADD-MDTPLMN)_63155530.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于管理的最小化路测的PLMN(LST-MDTPLMN)_63157190.md`

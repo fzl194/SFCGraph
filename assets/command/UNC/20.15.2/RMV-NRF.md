@@ -66,4 +66,4 @@ RMV NRF: NRFINSTANCENAME="NRF_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF信息（RMV-NRF）_09651366.md`

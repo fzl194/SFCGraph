@@ -60,4 +60,4 @@ RMV MMESHAREPLMN: MCC="123", MNC="01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MMESHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MME的共享PLMN（RMV-MMESHAREPLMN）_72225765.md`

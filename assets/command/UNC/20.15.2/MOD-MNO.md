@@ -60,4 +60,4 @@ MOD MNO: MNOID=128, FULLNAME="bbb", SHORTNAME="b";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MNO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MNO配置信息(MOD-MNO)_72225751.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GXUPFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GXUPFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GXUPFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gx-UPF组（RMV-GXUPFGROUP）_29420944.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gx-UPF组（ADD-GXUPFGROUP）_16858407.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gx-UPF组（LST-GXUPFGROUP）_17057493.md`

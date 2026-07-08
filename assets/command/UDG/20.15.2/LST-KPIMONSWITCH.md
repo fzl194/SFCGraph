@@ -55,4 +55,4 @@ KPI异常检测开关  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-KPIMONSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询KPI异常检测功能开关（LST-KPIMONSWITCH）_87483782.md`

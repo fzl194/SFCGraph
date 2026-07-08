@@ -61,4 +61,4 @@ SET UGTP: ICI=180, SSI=60, MSI=60, PATHVERCHKINT=60;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-UGTP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTP-C路径扫描参数(SET-UGTP)_26145916.md`

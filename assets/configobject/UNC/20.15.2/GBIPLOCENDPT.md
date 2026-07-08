@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBIPLOCENDPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIPLOCENDPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIPLOCENDPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIPLOCENDPT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地端点配置(MOD-GBIPLOCENDPT)_72345611.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本端端点配置(RMV-GBIPLOCENDPT)_26305820.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本端端点配置(ADD-GBIPLOCENDPT)_72225689.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本端端点配置(LST-GBIPLOCENDPT)_26146012.md`

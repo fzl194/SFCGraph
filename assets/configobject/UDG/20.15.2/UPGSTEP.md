@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPGSTEP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPGSTEP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询灰度升级Pod滚动步长（LST-UPGSTEP）_88662248.md`
+- 原始手册：`evidence/UDG/20.15.2/设置灰度升级pod滚动步长（SET-UPGSTEP）_88502330.md`

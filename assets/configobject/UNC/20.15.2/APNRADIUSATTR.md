@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNRADIUSATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/APNRADIUSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-RADIUS配置（LST-APNRADIUSATTR）_28567629.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-RADIUS配置（SET-APNRADIUSATTR）_28567658.md`

@@ -67,4 +67,4 @@ PLMN标识  =  12345
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DFTSRVNODEPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询默认PLMN（LST-DFTSRVNODEPLMN）_09652630.md`

@@ -59,4 +59,4 @@ ADD IFIPV6CGA:IFNAME="ethernet64/0/3",KEYPAIRLABEL="aa",SECLEVEL=high;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IFIPV6CGA.md`
+- 原始手册：`evidence/UDG/20.15.2/添加IPv6-CGA地址信息（ADD-IFIPV6CGA）_00866573.md`

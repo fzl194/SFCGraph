@@ -64,4 +64,4 @@ RMV PNFALLOWEDNFNS: NFINSTANCEID="SMF_Instance_0", SRVINSTANCEID="Service_Instan
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFALLOWEDNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF允许的切片信息（RMV-PNFALLOWEDNFNS）_09652542.md`

@@ -26,7 +26,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PODHEALCPUTHR.md`
-- 原始手册：`evidence/UNC/20.15.2/PODHEALCPUTHR.md`
-- 原始手册：`evidence/UNC/20.15.2/PODHEALCPUTHR.md`
-- 原始手册：`evidence/UNC/20.15.2/PODHEALCPUTHR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对应PODTYPE下的阈值配置（MOD-PODHEALCPUTHR）_60114921.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对应PODTYPE的配置记录（RMV-PODHEALCPUTHR）_24675206.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对应PODTYPE下CPU的阈值配置（ADD-PODHEALCPUTHR）_60073345.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对应PODTYPE的配置记录（LST-PODHEALCPUTHR）_24833370.md`

@@ -56,4 +56,4 @@ RMV TETHERDB:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TETHERDB.md`
+- 原始手册：`evidence/UDG/20.15.2/卸载Tethering检测特征库（RMV-TETHERDB）_82837455.md`

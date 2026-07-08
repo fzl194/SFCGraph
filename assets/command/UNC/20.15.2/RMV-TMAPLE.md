@@ -61,4 +61,4 @@ RMV TMAPLE: TMINTFTP=Tm1,IPT=IPV4, IPV4="10.10.10.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TMAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TMAP本地实体(RMV-TMAPLE)_41153601.md`

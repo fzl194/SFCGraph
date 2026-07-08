@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBIDIALTEST.md`
-- 原始手册：`evidence/UNC/20.15.2/SBIDIALTEST.md`
-- 原始手册：`evidence/UNC/20.15.2/SBIDIALTEST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除间接路由拨测用户配置（RMV-SBIDIALTEST）_60710966.md`
+- 原始手册：`evidence/UNC/20.15.2/增加间接路由拨测用户配置（ADD-SBIDIALTEST）_06510925.md`
+- 原始手册：`evidence/UNC/20.15.2/查询间接路由拨测用户配置（LST-SBIDIALTEST）_06749459.md`

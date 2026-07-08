@@ -67,4 +67,4 @@ UP链路故障处理模式 = 直接隔离
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FAULTRANGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障RAN组（LST-FAULTRANGRP）_93382802.md`

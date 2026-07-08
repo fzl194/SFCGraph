@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EDNS.md`
-- 原始手册：`evidence/UDG/20.15.2/EDNS.md`
-- 原始手册：`evidence/UDG/20.15.2/EDNS.md`
-- 原始手册：`evidence/UDG/20.15.2/EDNS.md`
+- 原始手册：`evidence/UDG/20.15.2/修改EDNS（MOD-EDNS）_83909785.md`
+- 原始手册：`evidence/UDG/20.15.2/删除EDNS（RMV-EDNS）_83909786.md`
+- 原始手册：`evidence/UDG/20.15.2/增加EDNS（ADD-EDNS）_83909784.md`
+- 原始手册：`evidence/UDG/20.15.2/查询EDNS（LST-EDNS）_83909787.md`

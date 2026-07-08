@@ -68,4 +68,4 @@ FPI传递类型  =  DSCP
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FPIFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FPI差异化控制功能（LST-FPIFUNC）_75405265.md`

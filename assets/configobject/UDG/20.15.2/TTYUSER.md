@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TTYUSER.md`
-- 原始手册：`evidence/UDG/20.15.2/TTYUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示用户信息（DSP-TTYUSER）_00841101.md`
+- 原始手册：`evidence/UDG/20.15.2/释放用户界面（KIK-TTYUSER）_00441193.md`

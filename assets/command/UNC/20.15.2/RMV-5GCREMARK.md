@@ -59,4 +59,4 @@ RMV 5GCREMARK:QOSPROFILENAME="profile",FIVEQI=5,ARPPL=5;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-5GCREMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5GC-QoS到TOS_DSCP的映射规则（RMV-5GCREMARK）_09652352.md`

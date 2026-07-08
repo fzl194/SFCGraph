@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HSSBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/HSSBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HSS故障Bypass功能控制参数(LST-HSSBYPASS)_09911473.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HSS故障Bypass功能控制参数(SET-HSSBYPASS)_62871280.md`

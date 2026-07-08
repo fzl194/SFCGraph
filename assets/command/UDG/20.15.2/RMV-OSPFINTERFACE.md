@@ -57,4 +57,4 @@ RMV OSPFINTERFACE: PROCID=1, AREAID="0.0.0.0", IFNAME="Ethernet64/0/5";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-OSPFINTERFACE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF接口配置（RMV-OSPFINTERFACE）_50281090.md`

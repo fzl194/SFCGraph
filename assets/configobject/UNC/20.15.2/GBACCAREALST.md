@@ -34,6 +34,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBACCAREALST.md`
-- 原始手册：`evidence/UNC/20.15.2/GBACCAREALST.md`
-- 原始手册：`evidence/UNC/20.15.2/GBACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式区域漫游限制参数(RMV-GBACCAREALST)_26145552.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gb模式区域漫游限制参数（ADD-GBACCAREALST）_72345149.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式区域漫游限制参数(LST-GBACCAREALST)_72225233.md`

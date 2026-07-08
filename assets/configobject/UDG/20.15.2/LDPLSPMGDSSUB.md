@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPLSPMGDSSUB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP的下游信息（DSP-LDPLSPMGDSSUB）_49962110.md`

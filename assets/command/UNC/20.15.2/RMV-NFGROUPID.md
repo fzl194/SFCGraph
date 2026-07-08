@@ -56,4 +56,4 @@ RMV NFGROUPID: NFINSTANCENAME="SMSF_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF群组信息（RMV-NFGROUPID）_91460557.md`

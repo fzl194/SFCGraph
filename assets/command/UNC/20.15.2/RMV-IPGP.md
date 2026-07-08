@@ -58,4 +58,4 @@ RMV IPGP: IPGPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IPGP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IP群组(RMV-IPGP)_72225395.md`

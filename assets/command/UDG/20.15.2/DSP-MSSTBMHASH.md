@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSTBMHASH.md`
+- 原始手册：`evidence/UDG/20.15.2/通过关键字查询哈希表的结果（DSP-MSSTBMHASH）_50281686.md`

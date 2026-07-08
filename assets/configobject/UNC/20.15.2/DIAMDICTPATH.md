@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMDICTPATH.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMDICTPATH.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMDICTPATH.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMDICTPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter字典加载路径（MOD-DIAMDICTPATH）_09897248.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter字典加载路径（RMV-DIAMDICTPATH）_09897249.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter字典加载路径（ADD-DIAMDICTPATH）_09897247.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter字典加载路径（LST-DIAMDICTPATH）_09897250.md`

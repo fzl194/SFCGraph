@@ -77,4 +77,4 @@ ND               52      0         65536     0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPTABSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP表项简要信息（DSP-NPTABSTAT）_56529218.md`

@@ -56,4 +56,4 @@ MOD MCASTLOADSPLIT:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,LOADSPLITTING=BA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MCASTLOADSPLIT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改组播负载分担配置（MOD-MCASTLOADSPLIT）_50280622.md`

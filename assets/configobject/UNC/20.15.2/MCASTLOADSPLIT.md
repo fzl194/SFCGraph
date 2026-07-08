@@ -26,7 +26,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MCASTLOADSPLIT.md`
-- 原始手册：`evidence/UNC/20.15.2/MCASTLOADSPLIT.md`
-- 原始手册：`evidence/UNC/20.15.2/MCASTLOADSPLIT.md`
-- 原始手册：`evidence/UNC/20.15.2/MCASTLOADSPLIT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改组播负载分担配置（MOD-MCASTLOADSPLIT）_50280622.md`
+- 原始手册：`evidence/UNC/20.15.2/删除组播负载分担配置（RMV-MCASTLOADSPLIT）_00866709.md`
+- 原始手册：`evidence/UNC/20.15.2/查询组播负载分担配置（LST-MCASTLOADSPLIT）_00440457.md`
+- 原始手册：`evidence/UNC/20.15.2/添加组播负载分担配置（ADD-MCASTLOADSPLIT）_50281506.md`

@@ -66,4 +66,4 @@ ADD AREADECRYPT: IDTYPE=RA, MCC="123", MNC="02", LAC="0x0628", RAC="0x52";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AREADECRYPT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于LAC_RAC关闭加密配置(ADD-AREADECRYPT)_26145640.md`

@@ -185,4 +185,4 @@ NON_3GPP_ACCESS = 2。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFDISC.md`
+- 原始手册：`evidence/UNC/20.15.2/测试服务发现（TST-NFDISC）_09652471.md`

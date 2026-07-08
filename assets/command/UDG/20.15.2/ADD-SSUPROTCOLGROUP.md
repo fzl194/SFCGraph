@@ -61,4 +61,4 @@ ADD SSUPROTCOLGROUP: DEFPRTGRPNAME="ssuprotclogroupname", PROTOCOLNAME="http", P
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SSUPROTCOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于协议的质差检测策略（ADD-SSUPROTCOLGROUP）_10221266.md`

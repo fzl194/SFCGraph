@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PLCYCHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/创建策略核查任务（STR-PLCYCHECK）_49379571.md`

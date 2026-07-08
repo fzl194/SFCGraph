@@ -65,4 +65,4 @@ PLMN间BSF名称 = NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BSFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSF信息（LST-BSFINFO）_09653008.md`

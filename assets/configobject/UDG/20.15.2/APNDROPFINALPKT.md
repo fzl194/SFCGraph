@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNDROPFINALPKT.md`
-- 原始手册：`evidence/UDG/20.15.2/APNDROPFINALPKT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示指定APN配额耗尽末包动作（LST-APNDROPFINALPKT）_93973679.md`
+- 原始手册：`evidence/UDG/20.15.2/配置指定APN配额耗尽末包动作（SET-APNDROPFINALPKT）_94212265.md`

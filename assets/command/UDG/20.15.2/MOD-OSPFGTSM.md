@@ -57,4 +57,4 @@ MOD OSPFGTSM:VRFNAME="abc",TTL=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-OSPFGTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF的GTSM配置（MOD-OSPFGTSM）_00440613.md`

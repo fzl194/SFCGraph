@@ -60,4 +60,4 @@ RMV EXTRFSP:TYPE=SPEC_MOVE_SUB, ARETYPE=TAGP, TAGPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EXTRFSP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除扩展RFSP策略组成员(RMV-EXTRFSP)_72225217.md`

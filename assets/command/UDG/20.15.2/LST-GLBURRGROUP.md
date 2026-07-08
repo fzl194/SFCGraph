@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBURRGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局计费属性（LST-GLBURRGROUP）_82837641.md`

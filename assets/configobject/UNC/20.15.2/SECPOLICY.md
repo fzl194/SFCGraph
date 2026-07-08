@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除防攻击策略（RMV-SECPOLICY）_00866041.md`
+- 原始手册：`evidence/UNC/20.15.2/增加防攻击策略（ADD-SECPOLICY）_00866361.md`
+- 原始手册：`evidence/UNC/20.15.2/查询防攻击策略（LST-SECPOLICY）_00840693.md`

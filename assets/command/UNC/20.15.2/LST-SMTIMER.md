@@ -73,4 +73,4 @@ EPS Fallback保护定时器时长(秒)  =  5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5GC会话管理定时器参数（LST-SMTIMER）_09654352.md`

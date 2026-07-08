@@ -56,4 +56,4 @@ RMV SMARTDT: UETYPE=WINDOWS;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMARTDT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于终端类型的DT限制（RMV-SMARTDT）_72225417.md`

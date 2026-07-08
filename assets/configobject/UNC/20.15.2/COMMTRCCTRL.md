@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMMTRCCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/COMMTRCCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通用模块跟踪控制功能（LST-COMMTRCCTRL）_35043601.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通用模块跟踪控制功能（SET-COMMTRCCTRL）_00083280.md`

@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLBEDRXATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局终端接入eDRX模式属性（LST-GLBEDRXATTR）_82861629.md`

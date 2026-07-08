@@ -61,4 +61,4 @@ RMV NGTALST: TALISTID=0, TAI="30801510111";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGTALST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G跟踪区列表（RMV-NGTALST）_09652473.md`

@@ -59,4 +59,4 @@ MOD SERVICEPROP:SRVPROPNAME="test",SERVICEID=1,PRIORITY=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SERVICEPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改业务属性（MOD-SERVICEPROP）_09897169.md`

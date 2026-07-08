@@ -59,4 +59,4 @@ RMV WEAKPWDDICMEM: WEAKPWD="qazQAZ123!@#";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-WEAKPWDDICMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除弱口令字典成员（RMV-WEAKPWDDICMEM）_89255128.md`

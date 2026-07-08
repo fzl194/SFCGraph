@@ -67,4 +67,4 @@ SET BSSAPPTMR: T6_1=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-BSSAPPTMR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置BSSAPP协议定时器表(SET-BSSAPPTMR)_26145412.md`

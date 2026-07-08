@@ -62,4 +62,4 @@ DEA SGSLNK: LNK=1,DEAMODE=UNGR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEA-SGSLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/去活SGs链路(DEA-SGSLNK)_72225117.md`

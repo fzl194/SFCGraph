@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEVATTRSND.md`
+- 原始手册：`evidence/UDG/20.15.2/显示VNFC同步到VNFP的属性信息（DSP-DEVATTRSND）_59103440.md`

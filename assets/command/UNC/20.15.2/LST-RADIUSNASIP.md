@@ -73,4 +73,4 @@ NAS IPv6地址  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RADIUSNASIP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS-NAS-IP（LST-RADIUSNASIP）_09896754.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSNIPNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSNIPNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSNIPNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSNIPNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGSN控制面IP地址与SGSN号码对应关系(MOD-SGSNIPNUM)_26145806.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGSN控制面IP地址与SGSN号码对应关系(RMV-SGSNIPNUM)_72345405.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGSN控制面IP地址与SGSN号码对应关系(ADD-SGSNIPNUM)_26305614.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGSN控制面IP地址与SGSN号码对应关系(LST-SGSNIPNUM)_72225485.md`

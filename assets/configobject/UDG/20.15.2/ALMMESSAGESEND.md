@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ALMMESSAGESEND.md`
+- 原始手册：`evidence/UDG/20.15.2/查询告警发送的信息（DSP-ALMMESSAGESEND）_59104023.md`

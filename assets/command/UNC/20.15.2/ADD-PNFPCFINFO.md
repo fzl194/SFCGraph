@@ -65,4 +65,4 @@ ADD PNFPCFINFO: NFINSTANCEID="PCF_Instance_0", RXDIAMHOST="huawei.com", RXDIAMRE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFPCFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端PCF信息（ADD-PNFPCFINFO）_09652989.md`

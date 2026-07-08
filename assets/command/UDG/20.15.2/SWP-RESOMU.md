@@ -60,4 +60,4 @@ SWP RESOMU: RESNAME="OMU2";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SWP-RESOMU.md`
+- 原始手册：`evidence/UDG/20.15.2/倒换主备操作维护单元（SWP-RESOMU）_04480462.md`

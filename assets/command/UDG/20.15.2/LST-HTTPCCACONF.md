@@ -58,4 +58,4 @@ CCA的有效时长(s)  =  86400
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HTTPCCACONF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP-CCA属性（LST-HTTPCCACONF）_54738721.md`

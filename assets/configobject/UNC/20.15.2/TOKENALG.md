@@ -28,5 +28,5 @@ NF服务消费者获取到Token后，携带Token访问NF服务提供方的服务
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TOKENALG.md`
-- 原始手册：`evidence/UNC/20.15.2/TOKENALG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Token签名算法（LST-TOKENALG）_09652335.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Token签名算法（SET-TOKENALG）_09653632.md`

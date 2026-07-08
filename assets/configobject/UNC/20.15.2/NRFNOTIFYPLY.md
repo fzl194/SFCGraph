@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNOTIFYPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNOTIFYPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF通知策略（LST-NRFNOTIFYPLY）_60209801.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF通知策略（SET-NRFNOTIFYPLY）_07649546.md`

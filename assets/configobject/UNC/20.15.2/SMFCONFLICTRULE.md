@@ -36,8 +36,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCONFLICTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCONFLICTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改冲突规则（MOD-SMFCONFLICTRULE）_06799832.md`
+- 原始手册：`evidence/UNC/20.15.2/删除冲突规则（RMV-SMFCONFLICTRULE）_06639896.md`
+- 原始手册：`evidence/UNC/20.15.2/增加冲突规则（ADD-SMFCONFLICTRULE）_60039241.md`
+- 原始手册：`evidence/UNC/20.15.2/显示冲突规则生效状态（DSP-SMFCONFLICTRULE）_06959700.md`
+- 原始手册：`evidence/UNC/20.15.2/查询冲突规则（LST-SMFCONFLICTRULE）_59999565.md`

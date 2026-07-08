@@ -57,4 +57,4 @@ MOD SMFSELUDM: SUBRANGE=FOREIGN_USER, NSSW=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMFSELUDM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF选择UDM策略（MOD-SMFSELUDM）_48290739.md`

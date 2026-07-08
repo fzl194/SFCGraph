@@ -65,4 +65,4 @@ ADD CFPROFBINDCFT: CFTEMPLATENAME="test", CFPROFILENAME="testprofile";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CFPROFBINDCFT.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容过滤策略绑定关系（ADD-CFPROFBINDCFT）_43236707.md`

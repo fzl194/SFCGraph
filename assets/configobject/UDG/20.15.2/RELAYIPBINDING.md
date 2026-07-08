@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPBINDING.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPBINDING.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPBINDING.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继服务IP绑定配置（RMV-RELAYIPBINDING）_14541481.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继服务IP绑定配置（ADD-RELAYIPBINDING）_64299164.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继服务IP绑定配置（LST-RELAYIPBINDING）_64063392.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MNCLEN.md`
-- 原始手册：`evidence/UDG/20.15.2/MNCLEN.md`
-- 原始手册：`evidence/UDG/20.15.2/MNCLEN.md`
-- 原始手册：`evidence/UDG/20.15.2/MNCLEN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改MNC长度信息（MOD-MNCLEN）_44865462.md`
+- 原始手册：`evidence/UDG/20.15.2/删除MNC长度信息（RMV-MNCLEN）_44865463.md`
+- 原始手册：`evidence/UDG/20.15.2/显示MNC长度信息（LST-MNCLEN）_44865464.md`
+- 原始手册：`evidence/UDG/20.15.2/设置MNC长度信息（ADD-MNCLEN）_44865461.md`

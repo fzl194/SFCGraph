@@ -85,4 +85,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-ASRCHN.md`
+- 原始手册：`evidence/UNC/20.15.2/显示容灾业务通道状态(DSP-ASRCHN)_26305938.md`

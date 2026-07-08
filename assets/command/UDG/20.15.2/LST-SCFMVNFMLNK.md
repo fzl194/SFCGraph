@@ -55,4 +55,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SCFMVNFMLNK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询超时时间配置（LST-SCFMVNFMLNK）_94730473.md`

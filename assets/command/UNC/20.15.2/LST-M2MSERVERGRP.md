@@ -66,4 +66,4 @@ M2M服务器IP地址类型  =  IPv4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-M2MSERVERGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M服务器组（LST-M2MSERVERGRP）_73321234.md`

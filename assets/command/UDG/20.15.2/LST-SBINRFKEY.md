@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SBINRFKEY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NRF密钥（LST-SBINRFKEY）_29053333.md`

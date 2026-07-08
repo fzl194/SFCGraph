@@ -61,4 +61,4 @@ RMV AREADNS: DNTYPE=SGW_TAI, TAC="0x0001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AREADNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置区域DNS域名(RMV-AREADNS)_26145960.md`

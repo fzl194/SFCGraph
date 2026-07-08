@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DCSSDPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/DCSSDPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DCS直通存储慢盘检测参数（LST-DCSSDPARA）_41105089.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DCS直通存储慢盘检测参数（SET-DCSSDPARA）_41185261.md`

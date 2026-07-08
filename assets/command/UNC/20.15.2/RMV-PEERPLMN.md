@@ -71,4 +71,4 @@ RMV PEERPLMN: AREA=LA, MCC="111", MNC="11", LAC="0x0111", SUBRANGE=IMSI_PREFIX, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PEERPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对等PLMN配置(RMV-PEERPLMN)_72345697.md`

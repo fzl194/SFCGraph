@@ -93,4 +93,4 @@ ADD SRANGECHRCFG: SUBRANGE=E_SPECIAL_APNQCI, APNNI="Huawei.com", QCI=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SRANGECHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加小范围CHR生成规则（ADD-SRANGECHRCFG）_72345215.md`

@@ -37,6 +37,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDMOC3.md`
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDMOC3.md`
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDMOC3.md`
+- 原始手册：`evidence/UNC/20.15.2/删除补丁预留MOC3（RMV-RESERVEDMOC3）_50558770.md`
+- 原始手册：`evidence/UNC/20.15.2/新增补丁预留MOC3（ADD-RESERVEDMOC3）_50558741.md`
+- 原始手册：`evidence/UNC/20.15.2/查询补丁预留MOC3（LST-RESERVEDMOC3）_50558746.md`

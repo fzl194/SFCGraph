@@ -102,4 +102,4 @@ SET SMFFUNC: AOI=Support;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF扩展功能（SET-SMFFUNC）_09653731.md`

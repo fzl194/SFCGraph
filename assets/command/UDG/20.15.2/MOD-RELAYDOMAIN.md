@@ -75,4 +75,4 @@ MOD RELAYDOMAIN: RELAYDOMAINNAME="test001", DOMAINVALUE="modDomain";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-RELAYDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继域名配置（MOD-RELAYDOMAIN）_64299166.md`

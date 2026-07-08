@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ZCCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/ZCCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/ZCCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/ZCCONVERT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改区域码转换策略(MOD-ZCCONVERT)_72345165.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域码转换策略(RMV-ZCCONVERT)_26145568.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域码转换策略(ADD-ZCCONVERT)_26305378.md`
+- 原始手册：`evidence/UNC/20.15.2/查询区域码转换策略(LST-ZCCONVERT)_72225249.md`

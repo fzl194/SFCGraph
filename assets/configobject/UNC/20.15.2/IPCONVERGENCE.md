@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPCONVERGENCE.md`
-- 原始手册：`evidence/UNC/20.15.2/IPCONVERGENCE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Bi口IPCONVERGENCE开关状态（LST-IPCONVERGENCE）_83656620.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Bi口IPCONVERGENCE开关（SET-IPCONVERGENCE）_36016493.md`

@@ -85,4 +85,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BFDSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BFD会话的配置信息（LST-BFDSESSION）_49961114.md`

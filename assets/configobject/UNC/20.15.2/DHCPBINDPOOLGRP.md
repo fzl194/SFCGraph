@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCPBINDPOOLGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPBINDPOOLGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPBINDPOOLGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DHCP服务器组与地址池组绑定关系（RMV-DHCPBINDPOOLGRP）_87302922.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DHCP服务器组与地址池组绑定关系（ADD-DHCPBINDPOOLGRP）_32382543.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCP服务器组与地址池组绑定关系（LST-DHCPBINDPOOLGRP）_32102615.md`

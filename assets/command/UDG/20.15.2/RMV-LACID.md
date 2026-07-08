@@ -57,4 +57,4 @@ RMV LACID:LACGROUPNAME="beijing",LACSECNUM=2;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-LACID.md`
+- 原始手册：`evidence/UDG/20.15.2/从LAC组内删除一个LAC（RMV-LACID）_82837198.md`

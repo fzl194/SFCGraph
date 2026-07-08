@@ -66,4 +66,4 @@ DSCP值     优先级类型   优先级数值
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DSCPMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DSCP值到VLAN优先级的映射（LST-DSCPMAP）_50121842.md`

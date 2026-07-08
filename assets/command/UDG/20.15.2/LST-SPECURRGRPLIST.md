@@ -66,4 +66,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SPECURRGRPLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询特殊URR组列表（LST-SPECURRGRPLIST）_82837645.md`

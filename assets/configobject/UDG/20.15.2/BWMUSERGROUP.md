@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BWMUSERGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMUSERGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMUSERGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMUSERGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改带宽管理用户组（MOD-BWMUSERGROUP）_82837469.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理用户组（RMV-BWMUSERGROUP）_86526876.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理用户组（ADD-BWMUSERGROUP）_82837468.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理用户组（LST-BWMUSERGROUP）_82837471.md`

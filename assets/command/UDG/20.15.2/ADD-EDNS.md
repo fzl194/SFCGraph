@@ -76,4 +76,4 @@ ADD EDNS: EDNSNAME="edns1", DATATYPE=USERDEF1, OPTIONCODE=10, USERDEFINEVAL="tes
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-EDNS.md`
+- 原始手册：`evidence/UDG/20.15.2/增加EDNS（ADD-EDNS）_83909784.md`

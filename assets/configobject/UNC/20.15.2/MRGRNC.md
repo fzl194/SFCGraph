@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MRGRNC.md`
-- 原始手册：`evidence/UNC/20.15.2/MRGRNC.md`
-- 原始手册：`evidence/UNC/20.15.2/MRGRNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除融合RNC(RMV-MRGRNC)_19455577.md`
+- 原始手册：`evidence/UNC/20.15.2/增加融合RNC(ADD-MRGRNC)_19541121.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合RNC(LST-MRGRNC)_84095374.md`

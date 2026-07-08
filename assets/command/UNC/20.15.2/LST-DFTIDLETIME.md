@@ -85,4 +85,4 @@ PGW-C和SGW-C/PGW-C网元的上下文核查开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DFTIDLETIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询默认空闲上下文定时器配置（LST-DFTIDLETIME）_09653130.md`

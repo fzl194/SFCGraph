@@ -34,6 +34,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUACCAREALST.md`
-- 原始手册：`evidence/UNC/20.15.2/IUACCAREALST.md`
-- 原始手册：`evidence/UNC/20.15.2/IUACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu模式区域漫游限制参数(RMV-IUACCAREALST)_26145554.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu模式区域漫游限制参数(ADD-IUACCAREALST)_72345151.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式区域漫游限制参数(LST-IUACCAREALST)_72225235.md`

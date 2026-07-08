@@ -60,4 +60,4 @@ ADD APNFUNC: APNNI="huawei1.com", APNPURPOSE=VIP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI功能配置(ADD-APNFUNC)_26145654.md`

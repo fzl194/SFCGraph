@@ -58,4 +58,4 @@ RMV NRFAMFSETIDRT:AMFSETID="086";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFAMFSETIDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF集合标识路由（RMV-NRFAMFSETIDRT）_09652995.md`

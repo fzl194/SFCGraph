@@ -65,4 +65,4 @@ ADD AMFDRBKCTRL: SUBRANGE=ALL_USER, FEATURECOND=DNN_NSSAI, DNN="huawei.com", SST
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFDRBKCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF热备容灾控制参数（ADD-AMFDRBKCTRL）_09027349.md`

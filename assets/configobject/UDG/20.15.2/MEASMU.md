@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MEASMU.md`
-- 原始手册：`evidence/UDG/20.15.2/MEASMU.md`
+- 原始手册：`evidence/UDG/20.15.2/查询话统测量单元模型(LST-MEASMU)_32442313.md`
+- 原始手册：`evidence/UDG/20.15.2/设置话统测量单元模型(SET-MEASMU)_32481237.md`

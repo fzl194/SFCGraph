@@ -58,4 +58,4 @@ RMV EXEMPTSERVICE: EXEMPTAPN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EXEMPTSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除豁免业务（RMV-EXEMPTSERVICE）_35439600.md`

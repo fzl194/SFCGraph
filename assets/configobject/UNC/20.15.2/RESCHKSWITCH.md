@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESCHKSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/RESCHKSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RCF核查开关状态（LST-RESCHKSWITCH）_56594041.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RCF核查开关状态（SET-RESCHKSWITCH）_03794482.md`

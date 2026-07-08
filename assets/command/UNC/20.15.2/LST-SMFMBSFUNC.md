@@ -67,4 +67,4 @@ N11mb接口等待基站侧响应消息最大时长(s)  =  120
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFMBSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MB-SMF组播广播功能参数（LST-SMFMBSFUNC）_82452582.md`

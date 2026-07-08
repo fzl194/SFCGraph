@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VSMFDFTQOSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/VSMFDFTQOSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/VSMFDFTQOSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/VSMFDFTQOSCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VSMF的Default-QoS-Flow配置（MOD-VSMFDFTQOSCTRL）_81945786.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VSMF的Default-QoS-Flow配置（RMV-VSMFDFTQOSCTRL）_82104340.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VSMF的Default-QoS-Flow配置（ADD-VSMFDFTQOSCTRL）_81785814.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VSMF的Default-QoS-Flow配置（LST-VSMFDFTQOSCTRL）_27385509.md`

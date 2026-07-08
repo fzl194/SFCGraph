@@ -73,4 +73,4 @@ N16a接口SMF上激活的专用DNN PDU会话数  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MULDNNSESSNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示专用DNN会话数（DSP-MULDNNSESSNUM）_63370069.md`

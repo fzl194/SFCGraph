@@ -57,4 +57,4 @@ SYN BGPALL:VRFNAME="_public_",AFTYPE=ipv4uni,DIRECTION=export;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYN-BGPALL.md`
+- 原始手册：`evidence/UNC/20.15.2/刷新BGP全部信息（SYN-BGPALL）_50281122.md`

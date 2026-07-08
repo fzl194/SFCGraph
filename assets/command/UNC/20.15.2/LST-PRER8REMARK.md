@@ -73,4 +73,4 @@ QoS Profile名  =  qosprofile1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PRER8REMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Pre-R8-QoS到TOS_DSCP的映射规则（LST-PRER8REMARK）_09653284.md`

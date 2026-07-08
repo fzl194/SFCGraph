@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN寻呼策略参数配置(MOD-APNPAGINGPLCY)_26305520.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN寻呼策略参数配置(RMV-APNPAGINGPLCY)_72345307.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN寻呼策略参数配置(ADD-APNPAGINGPLCY)_72225389.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN寻呼策略参数配置(LST-APNPAGINGPLCY)_26145712.md`

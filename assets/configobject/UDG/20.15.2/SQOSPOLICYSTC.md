@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SQOSPOLICYSTC.md`
-- 原始手册：`evidence/UDG/20.15.2/SQOSPOLICYSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查看端口流量策略报文统计（DSP-SQOSPOLICYSTC）_00866685.md`
+- 原始手册：`evidence/UDG/20.15.2/清除端口流量策略报文统计（RTR-SQOSPOLICYSTC）_00866309.md`

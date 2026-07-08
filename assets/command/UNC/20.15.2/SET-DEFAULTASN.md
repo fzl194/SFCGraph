@@ -67,4 +67,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DEFAULTASN.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缺省ASN值（SET-DEFAULTASN）_37559375.md`

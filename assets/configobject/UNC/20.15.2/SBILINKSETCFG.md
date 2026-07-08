@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBILINKSETCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILINKSETCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务化接口链路集属性（LST-SBILINKSETCFG）_83653660.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务化接口链路集属性（SET-SBILINKSETCFG）_83653668.md`

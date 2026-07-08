@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-TWAMPRESPONDER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示TWAMP响应端状态信息（DSP-TWAMPRESPONDER）_27262284.md`

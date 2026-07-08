@@ -35,8 +35,8 @@ NF服务消费者获取到Token后，携带Token访问NF服务提供方的服务
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF密钥（RMV-NRFKEY）_09652231.md`
+- 原始手册：`evidence/UNC/20.15.2/去激活NRF的密钥信息（DEA-NRFKEY）_25120878.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF密钥（ADD-NRFKEY）_09651563.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF密钥（LST-NRFKEY）_09652451.md`
+- 原始手册：`evidence/UNC/20.15.2/激活NRF密钥（ACT-NRFKEY）_09652288.md`

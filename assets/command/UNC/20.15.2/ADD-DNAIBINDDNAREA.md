@@ -61,4 +61,4 @@ ADD DNAIBINDDNAREA: DNAI="ulcl", AREANAME="dnarea1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNAIBINDDNAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI支持的服务区域名称（ADD-DNAIBINDDNAREA）_71516417.md`

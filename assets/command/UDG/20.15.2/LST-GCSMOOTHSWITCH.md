@@ -56,4 +56,4 @@ GC平滑开关  =  打开GC平滑开关
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GCSMOOTHSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询GC平滑开关（LST-GCSMOOTHSWITCH）_43960919.md`

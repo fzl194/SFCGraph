@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SDBTMR.md`
-- 原始手册：`evidence/UNC/20.15.2/SDBTMR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询核查定时器配置（LST-SDBTMR）_26305396.md`
+- 原始手册：`evidence/UNC/20.15.2/设置核查定时器配置（SET-SDBTMR）_72225265.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBOSLELBWMSW.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBOSLELBWMSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询整机操作系统级带宽管理开关（LST-GLBOSLELBWMSW）_82837502.md`
+- 原始手册：`evidence/UDG/20.15.2/设置整机操作系统级带宽管理开关（SET-GLBOSLELBWMSW）_82837501.md`

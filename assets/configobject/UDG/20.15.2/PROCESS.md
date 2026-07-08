@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PROCESS.md`
+- 原始手册：`evidence/UDG/20.15.2/复位进程(RST-PROCESS)_29626893.md`

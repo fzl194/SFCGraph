@@ -58,4 +58,4 @@ MOD VTEPBINDGRP: VXLANGRPNAME="vxlangrp", VTEPNAME="vtep1", PRIFLAG=SECONDARY;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-VTEPBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VXLAN隧道端点绑定隧道组（MOD-VTEPBINDGRP）_81234592.md`

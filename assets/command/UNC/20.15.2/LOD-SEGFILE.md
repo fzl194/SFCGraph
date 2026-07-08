@@ -70,4 +70,4 @@ LOD SEGFILE: SEGPACKAGENAME="segpackage01", SEGTYPE=IMSI, NFTYPEIMSI=UDR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOD-SEGFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/加载号段文件（LOD-SEGFILE）_09653034.md`

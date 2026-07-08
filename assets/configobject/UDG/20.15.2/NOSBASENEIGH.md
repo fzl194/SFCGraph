@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NOSBASENEIGH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NOS-Base平面网络的邻居信息（DSP-NOSBASENEIGH）_99180360.md`

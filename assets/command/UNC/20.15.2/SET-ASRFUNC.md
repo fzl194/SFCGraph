@@ -67,4 +67,4 @@ SET ASRFUNC:GRSWITCH=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-ASRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容灾功能参数(SET-ASRFUNC)_72345725.md`

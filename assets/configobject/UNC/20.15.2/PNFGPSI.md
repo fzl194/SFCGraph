@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFGPSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGPSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGPSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGPSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的GPSI信息（MOD-PNFGPSI）_09653229.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的GPSI信息（RMV-PNFGPSI）_09652998.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的GPSI信息（ADD-PNFGPSI）_09652127.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的GPSI信息（LST-PNFGPSI）_09653639.md`

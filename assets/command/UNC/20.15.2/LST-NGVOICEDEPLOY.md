@@ -70,4 +70,4 @@ Data Centric类型终端支持VoPS  =  不支持
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGVOICEDEPLOY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G语音部署配置（LST-NGVOICEDEPLOY）_86180366.md`

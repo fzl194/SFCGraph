@@ -77,4 +77,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DMTLINKGROUPSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Diameter链路组信息和链路信息（DSP-DMTLINKGROUPSTC）_00600337.md`

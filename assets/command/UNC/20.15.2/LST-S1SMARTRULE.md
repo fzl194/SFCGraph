@@ -81,4 +81,4 @@ Back off timer最大值（秒）  =  3000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-S1SMARTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式信令抑制规则(LST-S1SMARTRULE)_72345347.md`

@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PFCPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/PFCPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PFCP参数（LST-PFCPPARA）_09651492.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PFCP参数（SET-PFCPPARA）_09652597.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHARGECHARCHK.md`
-- 原始手册：`evidence/UNC/20.15.2/CHARGECHARCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询是否检查Serving-Node携带的CC（LST-CHARGECHARCHK）_09896803.md`
+- 原始手册：`evidence/UNC/20.15.2/设置是否检查Serving-Node携带的CC（SET-CHARGECHARCHK）_09896802.md`

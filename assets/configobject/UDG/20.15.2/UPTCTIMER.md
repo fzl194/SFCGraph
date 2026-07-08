@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPTCTIMER.md`
-- 原始手册：`evidence/UDG/20.15.2/UPTCTIMER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TC定时器（LST-UPTCTIMER）_45195168.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TC定时器（SET-UPTCTIMER）_45432682.md`

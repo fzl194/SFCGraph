@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVNODERAT.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODERAT.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODERAT.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODERAT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGSN_SGW-IP与RAT类型间的映射关系（MOD-SRVNODERAT）_09652673.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGSN_SGW-IP与RAT类型间的映射关系（RMV-SRVNODERAT）_09653671.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGSN_SGW-IP与RAT类型间的映射关系（ADD-SRVNODERAT）_09653221.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGSN_SGW-IP与RAT类型间的映射关系（LST-SRVNODERAT）_09653057.md`

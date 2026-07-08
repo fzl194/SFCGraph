@@ -64,4 +64,4 @@ MOD N40MSGTEMP: TEMPLATENAME="n40attr", SECRATUSAGE=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-N40MSGTEMP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N40消息属性模板（MOD-N40MSGTEMP）_48877301.md`

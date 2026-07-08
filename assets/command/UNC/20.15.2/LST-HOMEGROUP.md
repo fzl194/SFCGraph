@@ -69,4 +69,4 @@ Home Group绑定的用户号码段组名  =  grp1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HOMEGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Home-Group（LST-HOMEGROUP）_88613381.md`

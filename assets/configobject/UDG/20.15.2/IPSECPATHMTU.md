@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSECPATHMTU.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECPATHMTU.md`
+- 原始手册：`evidence/UDG/20.15.2/复位IPsec-Path-MTU（RST-IPSECPATHMTU）_88183812.md`
+- 原始手册：`evidence/UDG/20.15.2/显示IPsec-Path-MTU（DSP-IPSECPATHMTU）_34023363.md`

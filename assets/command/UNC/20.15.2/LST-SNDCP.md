@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SNDCP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SNDCP参数(LST-SNDCP)_72225705.md`

@@ -59,4 +59,4 @@ SET QOSACTFILTER:BEHAVIORNAME="b5",FILTER=deny;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-QOSACTFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/设置流行为规则（SET-QOSACTFILTER）_49802526.md`

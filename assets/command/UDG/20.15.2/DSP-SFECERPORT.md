@@ -111,4 +111,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SFECERPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示指定端口出_入方向的表项（DSP-SFECERPORT）_00841581.md`

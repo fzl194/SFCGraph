@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPCONFED.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPCONFED.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPCONFED.md`
+- 原始手册：`evidence/UDG/20.15.2/删除联盟中自治系统（RMV-BGPCONFED）_50280926.md`
+- 原始手册：`evidence/UDG/20.15.2/增加联盟中自治系统（ADD-BGPCONFED）_00840705.md`
+- 原始手册：`evidence/UDG/20.15.2/查询联盟中自治系统（LST-BGPCONFED）_00841113.md`

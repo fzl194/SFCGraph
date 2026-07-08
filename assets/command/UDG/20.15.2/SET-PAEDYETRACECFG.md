@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PAEDYETRACECFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE染色流控开关及阈值参数（SET-PAEDYETRACECFG）_20679422.md`

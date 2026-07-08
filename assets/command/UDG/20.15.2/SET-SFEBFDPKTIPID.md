@@ -57,4 +57,4 @@ SET SFEBFDPKTIPID: ENABLE = TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SFEBFDPKTIPID.md`
+- 原始手册：`evidence/UDG/20.15.2/设置BFD报文IPID的使能标记（SET-SFEBFDPKTIPID）_00601345.md`

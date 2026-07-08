@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGRANNEIBCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGRANNEIBCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGRANNEIBCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NG-RAN基站邻接关系配置（RMV-NGRANNEIBCFG）_09653236.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NG-RAN基站邻接关系配置（ADD-NGRANNEIBCFG）_09654363.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NG-RAN基站邻接关系配置（LST-NGRANNEIBCFG）_09652382.md`

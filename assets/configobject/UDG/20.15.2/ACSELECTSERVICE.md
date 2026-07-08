@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACSELECTSERVICE.md`
-- 原始手册：`evidence/UDG/20.15.2/ACSELECTSERVICE.md`
-- 原始手册：`evidence/UDG/20.15.2/ACSELECTSERVICE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询仲裁服务状态（DSP-ACSELECTSERVICE）_44102978.md`
+- 原始手册：`evidence/UDG/20.15.2/查询仲裁服务配置（LST-ACSELECTSERVICE）_44102993.md`
+- 原始手册：`evidence/UDG/20.15.2/设置仲裁服务配置（SET-ACSELECTSERVICE）_44102825.md`

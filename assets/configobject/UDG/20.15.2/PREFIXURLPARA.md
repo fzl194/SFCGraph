@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PREFIXURLPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/PREFIXURLPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询前缀URL参数（LST-PREFIXURLPARA）_82837409.md`
+- 原始手册：`evidence/UDG/20.15.2/设置前缀URL匹配时的控制参数（SET-PREFIXURLPARA）_82837408.md`

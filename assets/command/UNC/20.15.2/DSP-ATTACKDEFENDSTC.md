@@ -71,4 +71,4 @@ DSP ATTACKDEFENDSTC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-ATTACKDEFENDSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示攻击防范统计信息（DSP-ATTACKDEFENDSTC）_50280910.md`

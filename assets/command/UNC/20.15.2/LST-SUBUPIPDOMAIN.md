@@ -70,4 +70,4 @@ upf_instance_1    Domain_0          使用Vpn实例进行绑定        vpn1     
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SUBUPIPDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询当前UPF扩展类型绑定的IP域（LST-SUBUPIPDOMAIN）_23484622.md`

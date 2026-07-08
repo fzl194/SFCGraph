@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NFVIUPDRECVHIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询分批升级历史（DSP-NFVIUPDRECVHIST）_63673344.md`

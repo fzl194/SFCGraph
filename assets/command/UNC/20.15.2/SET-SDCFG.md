@@ -73,4 +73,4 @@ SET SDCFG: AOG=NO, IOG=NO, HOG=NO, ZOG=NO, HZOG=NO, HIZOG=NO, APS=NO, RAH=NO, RA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SDCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置签约数据配置(SET-SDCFG)_72225433.md`

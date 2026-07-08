@@ -81,4 +81,4 @@ QoS可保证的下行比特速率  =  1 Mbps
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SMFMBSSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/显示MB-SMF会话上下文信息（DSP-SMFMBSSESSION）_32892345.md`

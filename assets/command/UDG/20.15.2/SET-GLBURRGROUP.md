@@ -64,4 +64,4 @@ SET GLBURRGROUP: UPURRNAME1="uponurr", UPURRNAME2="upoffurr", DOWNURRNAME1="down
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBURRGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局计费属性（SET-GLBURRGROUP）_82837639.md`

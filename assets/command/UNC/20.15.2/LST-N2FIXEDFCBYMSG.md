@@ -73,4 +73,4 @@ PWS Failure Indication            开启              1000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N2FIXEDFCBYMSG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定消息类型固定速率流控信息（LST-N2FIXEDFCBYMSG）_96805486.md`

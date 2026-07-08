@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RSTRNSAREAMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/RSTRNSAREAMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/RSTRNSAREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA级限制切片所属跟踪区成员（RMV-RSTRNSAREAMEM）_24956652.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TA级限制切片所属跟踪区成员（ADD-RSTRNSAREAMEM）_24956622.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TA级限制切片所属跟踪区成员（LST-RSTRNSAREAMEM）_24956640.md`

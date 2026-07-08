@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFWILDCARDSTRRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWILDCARDSTRRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWILDCARDSTRRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除分层互联信元字符串通配属性路由（RMV-NRFWILDCARDSTRRT）_96242905.md`
+- 原始手册：`evidence/UNC/20.15.2/增加分层互联信元字符串通配属性路由（ADD-NRFWILDCARDSTRRT）_96241787.md`
+- 原始手册：`evidence/UNC/20.15.2/查询分层互联信元字符串通配属性路由（LST-NRFWILDCARDSTRRT）_96242330.md`

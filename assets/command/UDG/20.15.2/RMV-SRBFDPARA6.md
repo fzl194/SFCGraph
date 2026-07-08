@@ -59,4 +59,4 @@ RMV SRBFDPARA6:AFTYPE=ipv6unicast, NEXTHOP="2001:DB8::1",DESTVRFNAME="_public_",
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SRBFDPARA6.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-BFD模板（RMV-SRBFDPARA6）_00601409.md`

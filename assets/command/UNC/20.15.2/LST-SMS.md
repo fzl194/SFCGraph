@@ -77,4 +77,4 @@ S-SMO-CDR中记录的短消息中心  =  请求的短消息中心
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS配置信息(LST-SMS)_26145732.md`

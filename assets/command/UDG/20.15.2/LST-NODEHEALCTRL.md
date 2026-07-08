@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NODEHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Node自愈策略控制参数（LST-NODEHEALCTRL）_48332254.md`

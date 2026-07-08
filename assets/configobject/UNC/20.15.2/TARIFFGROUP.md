@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TARIFFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/TARIFFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/TARIFFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除费率切换组（RMV-TARIFFGROUP）_09896837.md`
+- 原始手册：`evidence/UNC/20.15.2/查询费率切换组（LST-TARIFFGROUP）_09896838.md`
+- 原始手册：`evidence/UNC/20.15.2/配置费率切换组（ADD-TARIFFGROUP）_09896836.md`

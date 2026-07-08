@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFIPSTAT.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFIPSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NSSF的局向内统概要数据（DSP-NSSFIPSTAT）_22836789.md`
+- 原始手册：`evidence/UNC/20.15.2/清除NSSF局向内统概要数据（CLR-NSSFIPSTAT）_22556855.md`

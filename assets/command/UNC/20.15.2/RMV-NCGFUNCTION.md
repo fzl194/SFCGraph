@@ -55,4 +55,4 @@ RMV NCGFUNCTION: INSTANCEID="a";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NCGFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NCG功能实例信息（RMV-NCGFUNCTION）_45110933.md`

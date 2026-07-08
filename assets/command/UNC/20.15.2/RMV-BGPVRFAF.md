@@ -58,4 +58,4 @@ RMV BGPVRFAF:VRFNAME="vrf1",AFTYPE=ipv4uni;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-BGPVRFAF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP-VPN地址族（RMV-BGPVRFAF）_49961802.md`

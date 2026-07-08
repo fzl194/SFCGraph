@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNNREPLACEFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNREPLACEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN替换功能管理参数（LST-DNNREPLACEFUNC）_23622934.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DNN替换功能管理参数（SET-DNNREPLACEFUNC）_23623018.md`

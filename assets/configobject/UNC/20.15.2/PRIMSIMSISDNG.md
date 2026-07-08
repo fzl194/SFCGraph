@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PRIMSIMSISDNG.md`
-- 原始手册：`evidence/UNC/20.15.2/PRIMSIMSISDNG.md`
-- 原始手册：`evidence/UNC/20.15.2/PRIMSIMSISDNG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除代理IMSI_MSISDN号段组（RMV-PRIMSIMSISDNG）_88613389.md`
+- 原始手册：`evidence/UNC/20.15.2/增加代理IMSI_MSISDN号段组（ADD-PRIMSIMSISDNG）_88733217.md`
+- 原始手册：`evidence/UNC/20.15.2/查询代理IMSI_MSISDN号段组（LST-PRIMSIMSISDNG）_42693472.md`

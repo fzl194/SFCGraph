@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPPOOL.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPPOOL.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPPOOL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继IP池（RMV-RELAYIPPOOL）_24142603.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继IP池（ADD-RELAYIPPOOL）_73589008.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继IP池（LST-RELAYIPPOOL）_73824722.md`

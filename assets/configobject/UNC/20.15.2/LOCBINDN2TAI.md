@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDN2TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF位置信息与UPF优先支持的5G-TAI范围的绑定关系（RMV-LOCBINDN2TAI）_96242799.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF位置信息与UPF优先支持的5G-TAI范围的绑定关系（ADD-LOCBINDN2TAI）_96241683.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF位置信息与UPF优先支持的5G-TAI范围的绑定关系（LST-LOCBINDN2TAI）_96242188.md`

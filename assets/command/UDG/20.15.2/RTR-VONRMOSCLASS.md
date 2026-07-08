@@ -52,4 +52,4 @@ RTR VONRMOSCLASS:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-VONRMOSCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS分类区间值（RTR-VONRMOSCLASS）_91295982.md`

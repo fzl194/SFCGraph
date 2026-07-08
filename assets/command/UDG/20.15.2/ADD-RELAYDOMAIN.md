@@ -74,4 +74,4 @@ ADD RELAYDOMAIN: RELAYTPLNAME="test", RELAYDOMAINNAME="test001", DOMAINVALUE="ww
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RELAYDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继域名配置（ADD-RELAYDOMAIN）_14777351.md`

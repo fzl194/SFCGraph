@@ -72,4 +72,4 @@ S1TAC终止ID  =  0x1F
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ADDRS1TACID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1TAC组内S1TAC号段（LST-ADDRS1TACID）_49644915.md`

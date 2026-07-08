@@ -54,4 +54,4 @@ RTR LOGAGENTSTC:PROCESSID=3
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-LOGAGENTSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除日志代理丢弃的日志信息（RTR-LOGAGENTSTC）_59104150.md`

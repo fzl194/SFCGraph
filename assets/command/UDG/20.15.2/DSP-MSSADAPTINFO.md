@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSADAPTINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询适配层全局信息（DSP-MSSADAPTINFO）_49960930.md`

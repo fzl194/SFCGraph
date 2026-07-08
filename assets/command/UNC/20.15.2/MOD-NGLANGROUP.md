@@ -59,4 +59,4 @@ MOD NGLANGROUP: DNN="huawei.com", SST=1,SD="010101", PDUSESSIONTYPE=Ethernet,GRO
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGLANGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-LAN群组（MOD-NGLANGROUP）_04284719.md`

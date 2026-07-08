@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VNFEVICTION.md`
-- 原始手册：`evidence/UNC/20.15.2/VNFEVICTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元重调度策略（LST-VNFEVICTION）_26089553.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网元重调度开关（SET-VNFEVICTION）_26089552.md`

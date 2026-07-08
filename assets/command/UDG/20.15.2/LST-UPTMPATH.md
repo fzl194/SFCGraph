@@ -73,4 +73,4 @@ TM路径配置
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPTMPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TM路径相关属性（LST-UPTMPATH）_70762236.md`

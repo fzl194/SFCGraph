@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECT.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECT.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECT.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改多级重定向密码（MOD-MULTREDIRECT）_93749059.md`
+- 原始手册：`evidence/UDG/20.15.2/删除多级重定向密码（RMV-MULTREDIRECT）_06232192.md`
+- 原始手册：`evidence/UDG/20.15.2/增加多级重定向密码（ADD-MULTREDIRECT）_93630843.md`
+- 原始手册：`evidence/UDG/20.15.2/显示多级重定向密码（LST-MULTREDIRECT）_05993250.md`

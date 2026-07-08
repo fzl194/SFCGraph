@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRPOLICYINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDRC中的策略版本信息（DSP-SDRPOLICYINFO）_21972917.md`

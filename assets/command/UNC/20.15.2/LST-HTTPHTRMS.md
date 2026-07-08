@@ -67,4 +67,4 @@ NFTypeCHF    NFTypeCUSTOM_OCS  1000              3000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HTTPHTRMS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTR流控安全边界配置（LST-HTTPHTRMS）_35070998.md`

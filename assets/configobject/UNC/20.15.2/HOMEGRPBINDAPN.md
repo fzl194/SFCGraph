@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HOMEGRPBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/HOMEGRPBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/HOMEGRPBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Home-Group和APN的绑定关系（RMV-HOMEGRPBINDAPN）_42853268.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Home-Group和APN的绑定关系（ADD-HOMEGRPBINDAPN）_42693466.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Home-Group和APN的绑定关系（LST-HOMEGRPBINDAPN）_88733221.md`

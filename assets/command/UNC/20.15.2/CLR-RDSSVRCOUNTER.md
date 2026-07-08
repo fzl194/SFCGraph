@@ -66,4 +66,4 @@ RETCODE = 0  Operation Success.
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-RDSSVRCOUNTER.md`
+- 原始手册：`evidence/UNC/20.15.2/清除RADIUS相关消息发送接收个数的统计信息（CLR-RDSSVRCOUNTER）_09896764.md`

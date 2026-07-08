@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SMSUSERSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CS粒度或DS粒度的用户数（DSP-SMSUSERSTAT）_53321866.md`

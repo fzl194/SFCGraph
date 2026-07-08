@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFROAMNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFROAMNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFROAMNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFROAMNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改漫游切片映射配置（MOD-NSSFROAMNSMAP）_24796828.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫游切片映射配置（RMV-NSSFROAMNSMAP）_71436555.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游切片映射配置（ADD-NSSFROAMNSMAP）_71436525.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游切片映射配置（LST-NSSFROAMNSMAP）_71436543.md`

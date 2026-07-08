@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OFCCDRPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/OFCCDRPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示离线计费话单参数（LST-OFCCDRPARA）_09896906.md`
+- 原始手册：`evidence/UNC/20.15.2/配置离线计费话单参数（SET-OFCCDRPARA）_09896905.md`

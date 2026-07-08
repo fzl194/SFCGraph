@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EPRPDYNIP.md`
-- 原始手册：`evidence/UDG/20.15.2/EPRPDYNIP.md`
-- 原始手册：`evidence/UDG/20.15.2/EPRPDYNIP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除EpRpDyn对象本端IP地址或者删除远端IP地址段（RMV-EPRPDYNIP）_82837841.md`
+- 原始手册：`evidence/UDG/20.15.2/查询EpRpDyn对象的IP配置结果（LST-EPRPDYNIP）_82837839.md`
+- 原始手册：`evidence/UDG/20.15.2/配置EpRpDyn对象本端IP地址或者配置远端IP地址段（ADD-EPRPDYNIP）_82837840.md`

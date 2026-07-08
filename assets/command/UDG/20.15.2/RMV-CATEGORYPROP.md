@@ -57,4 +57,4 @@ RMV CATEGORYPROP:CATEPROPNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CATEGORYPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除分类属性（RMV-CATEGORYPROP）_82837505.md`

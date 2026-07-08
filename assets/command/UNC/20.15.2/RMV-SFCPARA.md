@@ -59,4 +59,4 @@ RMV SFCPARA: SFCINSTANCEID="1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SFC参数（RMV-SFCPARA）_83159238.md`

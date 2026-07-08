@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ALLOWEDNFDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF或NF服务支持的域名（LST-ALLOWEDNFDOMAIN）_09653662.md`

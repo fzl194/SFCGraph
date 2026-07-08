@@ -67,4 +67,4 @@ ADD SMSFOPC: OPX=1, NI=INT, OPC="0x55", SMSFN="8615654029",OPN="Peking", MASTER=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMSFOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSF本局信令点(ADD-SMSFOPC)_27079076.md`

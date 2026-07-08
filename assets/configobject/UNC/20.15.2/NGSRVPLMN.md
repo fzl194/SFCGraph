@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGSRVPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSRVPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSRVPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-Serving-PLMN（MOD-NGSRVPLMN）_09653241.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-Serving-PLMN（RMV-NGSRVPLMN）_09653774.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-Serving-PLMN（ADD-NGSRVPLMN）_09654167.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-Serving-PLMN（LST-NGSRVPLMN）_09652615.md`

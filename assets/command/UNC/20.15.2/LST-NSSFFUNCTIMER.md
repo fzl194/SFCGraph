@@ -61,4 +61,4 @@ TPS平滑取值周期数  =  20
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSSFFUNCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF功能时长（LST-NSSFFUNCTIMER）_76718586.md`

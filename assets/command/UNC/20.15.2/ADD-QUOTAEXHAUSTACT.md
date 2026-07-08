@@ -62,4 +62,4 @@ ADD QUOTAEXHAUSTACT: CCTMPLTNAME="global", ACTION=BLOCK;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-QUOTAEXHAUSTACT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加配额耗尽后的动作（ADD-QUOTAEXHAUSTACT）_95129686.md`

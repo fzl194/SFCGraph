@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-C-V0_V1协议兼容性配置(MOD-GTPCCMPT)_72345523.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C-V0_V1协议兼容性配置(RMV-GTPCCMPT)_26305732.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C-V0_V1协议兼容性配置(ADD-GTPCCMPT)_72225601.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C-V0_V1协议兼容性配置(LST-GTPCCMPT)_26145924.md`

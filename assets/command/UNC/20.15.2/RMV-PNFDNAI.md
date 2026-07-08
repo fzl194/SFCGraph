@@ -62,4 +62,4 @@ RMV PNFDNAI: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的DNAI信息（RMV-PNFDNAI）_09652252.md`

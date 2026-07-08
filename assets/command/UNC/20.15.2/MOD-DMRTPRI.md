@@ -61,4 +61,4 @@ MOD DMRTPRI: ROUTEIDX=0, PEERIDX=1, PRIORITY=255;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DMRTPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter域路由优先级权重(MOD-DMRTPRI)_72345887.md`

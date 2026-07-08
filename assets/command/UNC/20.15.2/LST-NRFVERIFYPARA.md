@@ -69,4 +69,4 @@ NF和跨NRF路由数据冲突核验属性  =  IMSI&MSISDN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFVERIFYPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF属性冲突核验参数（LST-NRFVERIFYPARA）_35636455.md`

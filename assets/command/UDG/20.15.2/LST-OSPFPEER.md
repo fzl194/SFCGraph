@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF的NBMA网络邻居路由器配置（LST-OSPFPEER）_49802650.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESETINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/RESETINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/清除资源单元复位信息（CLR-RESETINFO）_59103830.md`
+- 原始手册：`evidence/UDG/20.15.2/显示资源单元复位信息（DSP-RESETINFO）_59104168.md`

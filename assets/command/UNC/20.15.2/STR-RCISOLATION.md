@@ -56,4 +56,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STR-RCISOLATION.md`
+- 原始手册：`evidence/UNC/20.15.2/启动人工恢复已隔离的Pod（STR-RCISOLATION）_60073349.md`

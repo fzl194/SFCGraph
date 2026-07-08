@@ -59,4 +59,4 @@ VPN实例名称  =  ck
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TWAMPVPNINST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VPN实例名称（LST-TWAMPVPNINST）_27262288.md`

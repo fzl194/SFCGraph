@@ -54,4 +54,4 @@ RMV INTERFACE: IFNAME="LoopBack4";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-INTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口（RMV-INTERFACE）_50281434.md`

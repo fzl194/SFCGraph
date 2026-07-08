@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACSCLIENTDBG.md`
+- 原始手册：`evidence/UNC/20.15.2/ACS客户端调试操作(OPR-ACSCLIENTDBG)_13590372.md`

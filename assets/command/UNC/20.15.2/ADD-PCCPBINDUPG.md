@@ -63,4 +63,4 @@ ADD PCCPBINDUPG:USERPROFGNAME="userprofg1",PCCPROFILENAME="userprofile1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PCCPBINDUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户模板组和PccProfile的绑定关系（ADD-PCCPBINDUPG）_09897037.md`

@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGLANCONFLICTMAC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示5G-LAN冲突MAC地址信息（DSP-NGLANCONFLICTMAC）_71960169.md`

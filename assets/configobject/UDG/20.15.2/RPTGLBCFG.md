@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTGLBCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTGLBCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表全局开关（LST-RPTGLBCFG）_94212267.md`
+- 原始手册：`evidence/UDG/20.15.2/设置报表功能全局开关（SET-RPTGLBCFG）_93753143.md`

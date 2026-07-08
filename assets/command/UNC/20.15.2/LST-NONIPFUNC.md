@@ -63,4 +63,4 @@ Non-IP功能开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NONIPFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Non-IP功能配置（LST-NONIPFUNC）_28567650.md`

@@ -54,4 +54,4 @@ RMV SMSFKEYDATA: SUPI="460023500100001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMSFKEYDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户的SMSF关键信息（RMV-SMSFKEYDATA）_31000046.md`

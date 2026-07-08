@@ -69,4 +69,4 @@ N4计费上报消息冲突检查时长 = 0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBSMFATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局SMF属性（LST-GLBSMFATTR）_38390790.md`

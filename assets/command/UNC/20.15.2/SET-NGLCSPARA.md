@@ -81,4 +81,4 @@ SET NGLCSPARA:POSEXPR=30;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGLCSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G定位服务参数（SET-NGLCSPARA）_44007975.md`

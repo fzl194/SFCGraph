@@ -69,4 +69,4 @@ SET APNNONIPFUNC:APN="apn1.com",NONIPSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNNONIPFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-Non-IP配置（SET-APNNONIPFUNC）_15595100.md`

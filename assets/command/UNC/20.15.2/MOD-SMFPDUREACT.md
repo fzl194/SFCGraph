@@ -64,4 +64,4 @@ MOD SMFPDUREACT: DNN="IMS", ISNSSAI=NO, NBEGIN=3, NEND=6;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMFPDUREACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改跨区域PDU会话重建策略（MOD-SMFPDUREACT）_64343899.md`

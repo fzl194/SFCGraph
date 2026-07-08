@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBDETACH.md`
-- 原始手册：`evidence/UNC/20.15.2/GBDETACH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb分离非活动用户参数(LST-GBDETACH)_26145498.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb分离非活动用户参数(SET-GBDETACH)_72345095.md`

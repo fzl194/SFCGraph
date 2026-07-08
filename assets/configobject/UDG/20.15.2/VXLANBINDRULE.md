@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/VXLANBINDRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VXLAN隧道组绑定Rule（MOD-VXLANBINDRULE）_06074648.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道组绑定Rule（RMV-VXLANBINDRULE）_92033107.md`
+- 原始手册：`evidence/UDG/20.15.2/新增VXLAN隧道组绑定Rule（ADD-VXLANBINDRULE）_92513331.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN隧道组绑定Rule（LST-VXLANBINDRULE）_06314168.md`

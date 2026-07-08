@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMARTACTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTACTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询激活抑制参数（LST-SMARTACTPARA）_72345341.md`
+- 原始手册：`evidence/UNC/20.15.2/设置激活抑制参数（SET-SMARTACTPARA）_26305550.md`

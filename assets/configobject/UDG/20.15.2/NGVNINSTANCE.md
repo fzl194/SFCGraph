@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGVNINSTANCE.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNINSTANCE.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNINSTANCE.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNINSTANCE.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNINSTANCE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改5G-VNInstance配置（MOD-NGVNINSTANCE）_20594007.md`
+- 原始手册：`evidence/UDG/20.15.2/删除5G-VNInstance的配置（RMV-NGVNINSTANCE）_24943458.md`
+- 原始手册：`evidence/UDG/20.15.2/增加5G-LAN组的配置（ADD-NGVNINSTANCE）_24704442.md`
+- 原始手册：`evidence/UDG/20.15.2/查看5G-VNInstance的配置（LST-NGVNINSTANCE）_12516585.md`
+- 原始手册：`evidence/UDG/20.15.2/设置VnInstance锁定配置（LCK-NGVNINSTANCE）_12743363.md`

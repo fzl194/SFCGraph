@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ALMFLAPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询告警震荡信息（LST-ALMFLAPINFO）_59103455.md`

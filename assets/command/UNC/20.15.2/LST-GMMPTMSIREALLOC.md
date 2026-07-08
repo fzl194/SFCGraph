@@ -68,4 +68,4 @@ P-TMSI重分配流程间隔时长（小时）  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GMMPTMSIREALLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式PTMSI重分配控制参数(LST-GMMPTMSIREALLOC)_72225201.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNFATTRVRY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFATTRVRY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFATTRVRY.md`
+- 原始手册：`evidence/UNC/20.15.2/操作执行NF属性冲突核验（OPR-NRFNFATTRVRY）_35636461.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NF属性冲突核验记录（DSP-NRFNFATTRVRY）_35519269.md`
+- 原始手册：`evidence/UNC/20.15.2/清除NF属性冲突核验记录（CLR-NRFNFATTRVRY）_88697026.md`

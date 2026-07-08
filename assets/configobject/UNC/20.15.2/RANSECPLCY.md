@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RANSECPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/RANSECPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RAN侧安全策略（LST-RANSECPLCY）_09653115.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RAN侧安全策略（SET-RANSECPLCY）_09652638.md`

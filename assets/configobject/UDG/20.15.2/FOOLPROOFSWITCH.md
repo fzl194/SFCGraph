@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FOOLPROOFSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/FOOLPROOFSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/显示防呆开关状态（DSP-FOOLPROOFSWITCH）_19125360.md`
+- 原始手册：`evidence/UDG/20.15.2/设置防呆开关状态（SET-FOOLPROOFSWITCH）_66925361.md`

@@ -62,4 +62,4 @@ PAE使能状态 =  TRUE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-WLRPAESTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询无线路由PAE使能状态（LST-WLRPAESTATE）_50281814.md`

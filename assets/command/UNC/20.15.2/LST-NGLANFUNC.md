@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGLANFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NGLAN扩展功能（LST-NGLANFUNC）_98868305.md`

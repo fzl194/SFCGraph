@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECACL6TAB.md`
+- 原始手册：`evidence/UNC/20.15.2/显示安全ACL6表项（DSP-SECACL6TAB）_00440465.md`

@@ -58,4 +58,4 @@ RMV FAULTRANGRP: RANGRPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-FAULTRANGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障RAN组（RMV-FAULTRANGRP）_38182771.md`

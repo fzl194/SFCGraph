@@ -31,8 +31,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCCPGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPGT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP全局翻译码(MOD-SCCPGT)_26146326.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP全局翻译码(RMV-SCCPGT)_72345925.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP全局翻译码(ADD-SCCPGT)_26306136.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP全局翻译码(LST-SCCPGT)_72226005.md`
+- 原始手册：`evidence/UNC/20.15.2/测试SCCP全局翻译码(TST-SCCPGT)_26306138.md`

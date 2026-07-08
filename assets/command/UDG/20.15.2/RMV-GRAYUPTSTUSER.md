@@ -57,4 +57,4 @@ RMV GRAYUPTSTUSER: GRAYUSERNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-GRAYUPTSTUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除灰度升级拨测用户（RMV-GRAYUPTSTUSER）_67072876.md`

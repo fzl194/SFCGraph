@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGINITPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGINITPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS计费和在线计费消息优先级（LST-CHGINITPRI）_09896805.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RADIUS计费和在线计费消息优先级（SET-CHGINITPRI）_09896804.md`

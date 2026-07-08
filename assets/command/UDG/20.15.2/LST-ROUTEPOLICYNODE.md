@@ -66,4 +66,4 @@ a               19                允许        NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ROUTEPOLICYNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由策略节点（LST-ROUTEPOLICYNODE）_50121758.md`

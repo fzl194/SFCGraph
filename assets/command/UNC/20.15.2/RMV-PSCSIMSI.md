@@ -57,4 +57,4 @@ RMV PSCSIMSI: IMSIPRE="12345";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PSCSIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除联合接入IMSI白名单(RMV-PSCSIMSI)_86673117.md`

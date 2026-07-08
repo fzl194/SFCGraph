@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSCP.md`
-- 原始手册：`evidence/UNC/20.15.2/DSCP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示接口DSCP配置（LST-DSCP）_51174295.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口DSCP配置（SET-DSCP）_51174294.md`

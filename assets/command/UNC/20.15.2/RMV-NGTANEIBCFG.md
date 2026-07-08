@@ -55,4 +55,4 @@ RMV NGTANEIBCFG: TAI="12345100010";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGTANEIBCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA邻接关系配置（RMV-NGTANEIBCFG）_76181743.md`

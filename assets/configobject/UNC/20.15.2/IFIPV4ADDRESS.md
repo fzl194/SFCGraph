@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV4ADDRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接口IPv4地址（MOD-IFIPV4ADDRESS）_00601333.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口IPv4地址（RMV-IFIPV4ADDRESS）_00841397.md`
+- 原始手册：`evidence/UNC/20.15.2/增加接口IPv4地址（ADD-IFIPV4ADDRESS）_00865509.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口IPv4地址（LST-IFIPV4ADDRESS）_49960942.md`

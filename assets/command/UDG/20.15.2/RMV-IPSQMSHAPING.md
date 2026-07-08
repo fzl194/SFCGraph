@@ -59,4 +59,4 @@ RMV IPSQMSHAPING: IPTYPE=IPv4, PEERIPV4="10.0.0.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-IPSQMSHAPING.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPSQM整形配置（RMV-IPSQMSHAPING）_21392218.md`

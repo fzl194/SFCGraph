@@ -61,4 +61,4 @@ RMV N26GWSELPLCY: SUBRANGE=ALL_USER, APNNI="HUAWEI1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-N26GWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N26融合网关选择策略(RMV-N26GWSELPLCY)_72225817.md`

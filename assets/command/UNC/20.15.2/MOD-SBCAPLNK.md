@@ -59,4 +59,4 @@ MOD SBCAPLNK: LNKINDEX=0,SCTPINDX=1, CROSSIPFLAG=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SBCAPLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SBc链路(MOD-SBCAPLNK)_72226053.md`

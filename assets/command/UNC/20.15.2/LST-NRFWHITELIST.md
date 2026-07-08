@@ -62,4 +62,4 @@ NF实例标识  =  instance_01
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFWHITELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF白名单（LST-NRFWHITELIST）_88537098.md`

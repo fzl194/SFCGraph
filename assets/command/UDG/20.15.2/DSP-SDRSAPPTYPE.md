@@ -56,4 +56,4 @@ app类型  = 114 126 127
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SDRSAPPTYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDRS中的APPTYPE信息（DSP-SDRSAPPTYPE）_05545720.md`

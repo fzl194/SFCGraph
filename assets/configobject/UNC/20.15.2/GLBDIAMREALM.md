@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBDIAMREALM.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBDIAMREALM.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBDIAMREALM.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBDIAMREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改全局Diameter域（MOD-GLBDIAMREALM）_09897281.md`
+- 原始手册：`evidence/UNC/20.15.2/删除全局Diameter域（RMV-GLBDIAMREALM）_09897282.md`
+- 原始手册：`evidence/UNC/20.15.2/增加全局Diameter域（ADD-GLBDIAMREALM）_09897280.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局Diameter域（LST-GLBDIAMREALM）_09897283.md`

@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BANDWIDTHMNG.md`
-- 原始手册：`evidence/UDG/20.15.2/BANDWIDTHMNG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理参数（LST-BANDWIDTHMNG）_86526893.md`
+- 原始手册：`evidence/UDG/20.15.2/设置带宽管理参数（SET-BANDWIDTHMNG）_82837465.md`

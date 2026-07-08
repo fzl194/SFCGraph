@@ -53,4 +53,4 @@ RMV ARPSTATICTABLE:VRFNAME="_public_";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ARPSTATICTABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除静态ARP表项（RMV-ARPSTATICTABLE）_50281478.md`

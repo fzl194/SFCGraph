@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMUDMBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示会话UDM-Bypass信息（DSP-SMUDMBYPASS）_30087429.md`

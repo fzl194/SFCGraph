@@ -68,4 +68,4 @@ SET MAPFUNC: SEG=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MAPFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MAP功能配置(SET-MAPFUNC)_26145466.md`

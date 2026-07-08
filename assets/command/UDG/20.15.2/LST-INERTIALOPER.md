@@ -66,4 +66,4 @@ PFCP路径断后进入惯性运行的时间  =  30
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-INERTIALOPER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询惯性运行功能配置（LST-INERTIALOPER）_15208957.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VUPFIDBINDFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/VUPFIDBINDFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/VUPFIDBINDFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除虚拟UPF实例标识的绑定功能（RMV-VUPFIDBINDFUNC）_08039994.md`
+- 原始手册：`evidence/UNC/20.15.2/增加虚拟UPF实例标识绑定的功能（ADD-VUPFIDBINDFUNC）_08199834.md`
+- 原始手册：`evidence/UNC/20.15.2/查询虚拟UPF实例标识绑定的功能（LST-VUPFIDBINDFUNC）_61159693.md`

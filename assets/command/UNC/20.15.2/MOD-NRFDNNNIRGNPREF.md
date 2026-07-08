@@ -56,4 +56,4 @@ MOD NRFDNNNIRGNPREF: DNNNI="huawei.com", PREFERRULE="01-02;03-05";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NRFDNNNIRGNPREF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNNNI区域优选规则（MOD-NRFDNNNIRGNPREF）_43780677.md`

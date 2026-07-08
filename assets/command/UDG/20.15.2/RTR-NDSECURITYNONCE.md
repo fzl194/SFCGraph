@@ -53,4 +53,4 @@ RTR NDSECURITYNONCE:IFNAME="Ethernet65/0/8";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-NDSECURITYNONCE.md`
+- 原始手册：`evidence/UDG/20.15.2/清除ND安全随机数（RTR-NDSECURITYNONCE）_00865541.md`

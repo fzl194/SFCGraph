@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRMSGSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示WLR与各Partner的消息统计（DSP-WLRMSGSTC）_00841049.md`

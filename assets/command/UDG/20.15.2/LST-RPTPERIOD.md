@@ -65,4 +65,4 @@ APN N6故障状态上报周期  =  4
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RPTPERIOD.md`
+- 原始手册：`evidence/UDG/20.15.2/显示APN-N6故障状态上报周期（LST-RPTPERIOD）_12563795.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DFTGLBPCRFGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTGLBPCRFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局缺省PCRF组（LST-DFTGLBPCRFGRP）_09897114.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局缺省PCRF组（SET-DFTGLBPCRFGRP）_09897113.md`

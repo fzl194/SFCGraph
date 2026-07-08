@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFRESELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF重选控制策略（LST-AMFRESELPLCY）_38212805.md`

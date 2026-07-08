@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter本端信息（MOD-DIAMLOCINFO）_09897272.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter本端信息（RMV-DIAMLOCINFO）_09897273.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter本端信息（ADD-DIAMLOCINFO）_09897271.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter本端信息（LST-DIAMLOCINFO）_09897274.md`

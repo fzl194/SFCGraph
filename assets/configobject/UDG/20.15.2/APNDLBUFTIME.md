@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNDLBUFTIME.md`
-- 原始手册：`evidence/UDG/20.15.2/APNDLBUFTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN的下行数据缓存时长配置（LST-APNDLBUFTIME）_82837190.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的下行数据缓存时长（SET-APNDLBUFTIME）_82837189.md`

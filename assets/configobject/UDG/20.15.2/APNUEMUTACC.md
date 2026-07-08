@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNUEMUTACC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNUEMUTACC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN下用户互访控制配置（LST-APNUEMUTACC）_82837777.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN下用户互访控制配置（SET-APNUEMUTACC）_82837776.md`

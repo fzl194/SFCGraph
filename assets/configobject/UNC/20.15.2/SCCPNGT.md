@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCCPNGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPNGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPNGT.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPNGT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP新全局翻译码(MOD-SCCPNGT)_26306140.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP新全局翻译码(RMV-SCCPNGT)_72226007.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP新全局翻译码(ADD-SCCPNGT)_26146328.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP新全局翻译码(LST-SCCPNGT)_72345929.md`

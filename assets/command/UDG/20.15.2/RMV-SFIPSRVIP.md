@@ -50,4 +50,4 @@ RMV SFIPSRVIP: SERVICETYPENAME="dns";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SFIPSRVIP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SFIP业务IP（RMV-SFIPSRVIP）_42536159.md`

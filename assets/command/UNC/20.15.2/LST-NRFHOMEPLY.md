@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFHOMEPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF归属地默认策略（LST-NRFHOMEPLY）_71516437.md`

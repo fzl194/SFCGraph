@@ -66,4 +66,4 @@ SET CHFSELECTMODE: FIRSTMODE=NRF, SECONDMODE=LOCAL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHFSELECTMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户激活和在线恢复场景CHF的选择模式（SET-CHFSELECTMODE）_34667404.md`

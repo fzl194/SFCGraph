@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LDPFECNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/LDPFECNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/LDPFECNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除FEC节点（RMV-LDPFECNODE）_49961710.md`
+- 原始手册：`evidence/UNC/20.15.2/查询FEC节点配置（LST-LDPFECNODE）_49961106.md`
+- 原始手册：`evidence/UNC/20.15.2/添加FEC节点（ADD-LDPFECNODE）_50281126.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFIEADAPTER.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFIEADAPTER.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFIEADAPTER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除信元携带控制配置（RMV-SMFIEADAPTER）_57616497.md`
+- 原始手册：`evidence/UNC/20.15.2/增加信元携带控制配置（ADD-SMFIEADAPTER）_04057516.md`
+- 原始手册：`evidence/UNC/20.15.2/查询信元携带控制配置（LST-SMFIEADAPTER）_04217456.md`

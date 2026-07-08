@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSOFTPARAOFBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSOFTPARAOFBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF软件参数比特位（LST-NRFSOFTPARAOFBIT）_09654173.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF软件参数比特位（SET-NRFSOFTPARAOFBIT）_09653032.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LAIVLRBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/LAIVLRBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/LAIVLRBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LAIVLR黑名单(RMV-LAIVLRBLACKLIST)_72345025.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LAIVLR黑名单(ADD-LAIVLRBLACKLIST)_26305238.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LAIVLR黑名单(LST-LAIVLRBLACKLIST)_26145424.md`

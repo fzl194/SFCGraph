@@ -75,4 +75,4 @@ Work精度维测开关      OFF            0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSDEBUGINFOM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示维测开关状态（DSP-MSSDEBUGINFOM）_92520034.md`

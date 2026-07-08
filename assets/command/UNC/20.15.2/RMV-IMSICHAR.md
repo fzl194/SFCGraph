@@ -60,4 +60,4 @@ RMV IMSICHAR: SUBRANGE=IMSI_PREFIX, IMSIPRE="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMSICHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI号段属性配置(RMV-IMSICHAR)_26305860.md`

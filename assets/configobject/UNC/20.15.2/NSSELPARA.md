@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSELPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSELPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网络切片选择相关参数（LST-NSSELPARA）_09653728.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网络切片选择相关参数（SET-NSSELPARA）_09652484.md`

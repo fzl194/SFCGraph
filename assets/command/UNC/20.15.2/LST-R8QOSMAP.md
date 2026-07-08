@@ -82,4 +82,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-R8QOSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS-QoS参数到Pre-R8-QoS参数映射规则（LST-R8QOSMAP）_72225913.md`

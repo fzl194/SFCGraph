@@ -67,4 +67,4 @@ LCK POD: PODNAME="ssgpod-0", LOCKSWITCH=ENABLE, MULPDN=DISABLE,FULLMESHNGVN=DISA
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCK-POD.md`
+- 原始手册：`evidence/UDG/20.15.2/锁定_解锁POD（LCK-POD）_64015273.md`

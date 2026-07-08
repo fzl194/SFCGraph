@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DRGROUPINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾组信息（ADD-DRGROUPINFO）_74675437.md`

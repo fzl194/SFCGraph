@@ -53,4 +53,4 @@ ADD NWDAFINFO: INSTANCENAME="nwdaf_Instance_1", NWDAFEVENTS=QOS_ANALYSIS-1&QOS_E
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NWDAFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NWDAF信息（ADD-NWDAFINFO）_23622914.md`

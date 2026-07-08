@@ -26,9 +26,9 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPV6PATHMTU.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6PATHMTU.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6PATHMTU.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6PATHMTU.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6PATHMTU.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6PATHMTU.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6-Path-MTU配置（MOD-IPV6PATHMTU）_49801934.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6-Path-MTU配置（RMV-IPV6PATHMTU）_00601045.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IPv6-Path-MTU配置（DSP-IPV6PATHMTU）_00841589.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6-Path-MTU配置（LST-IPV6PATHMTU）_50281082.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IPv6-Path-MTU配置（ADD-IPV6PATHMTU）_50280838.md`
+- 原始手册：`evidence/UNC/20.15.2/清除IPv6-Path-MTU配置（RTR-IPV6PATHMTU）_50121742.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABRICSUBHEALTHYSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE内联口亚健康统计信息（DSP-FABRICSUBHEALTHYSTAT）_03213622.md`

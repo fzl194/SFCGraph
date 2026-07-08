@@ -69,4 +69,4 @@ MOD VLR: VN="86139027", VNM="test1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-VLR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR配置信息(MOD-VLR)_26145444.md`

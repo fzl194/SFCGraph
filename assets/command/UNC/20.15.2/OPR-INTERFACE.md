@@ -59,4 +59,4 @@ OPR INTERFACE:IFNAME="Ethernet66/0/3",IFACTSTATUS=up;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OPR-INTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口维护状态（OPR-INTERFACE）_50121206.md`

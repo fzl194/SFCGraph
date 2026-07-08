@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSACLINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软转发支撑访问控制列表模块全局信息（DSP-MSSACLINFO）_49802506.md`

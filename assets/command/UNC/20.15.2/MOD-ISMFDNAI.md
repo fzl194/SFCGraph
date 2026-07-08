@@ -59,4 +59,4 @@ MOD ISMFDNAI: DNAI="huawei.com.dnai", DNAITYPE=GLOBAL_LEVEL, AUXDNAISELECTSW=ENA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ISMFDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改I-SMF支持的DNAI（MOD-ISMFDNAI）_47720781.md`

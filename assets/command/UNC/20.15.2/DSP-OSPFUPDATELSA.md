@@ -82,4 +82,4 @@ Network Summary类型LSA的更新次数  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-OSPFUPDATELSA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF接收的LSA的更新信息（DSP-OSPFUPDATELSA）_00841445.md`

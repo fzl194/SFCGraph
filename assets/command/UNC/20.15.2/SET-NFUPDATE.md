@@ -76,4 +76,4 @@ SET NFUPDATE: CACHENUM=5, CACHETIMERLEN=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NFUPDATE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF更新方式（SET-NFUPDATE）_09651782.md`

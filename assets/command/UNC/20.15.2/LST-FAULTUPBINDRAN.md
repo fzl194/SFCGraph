@@ -68,4 +68,4 @@ UPF组名  =  group2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FAULTUPBINDRAN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障网元组绑定（LST-FAULTUPBINDRAN）_38422727.md`

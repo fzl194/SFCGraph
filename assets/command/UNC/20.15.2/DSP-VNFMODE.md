@@ -59,4 +59,4 @@ Vnfm接口模式 =  stack
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-VNFMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VNF部署模式（DSP-VNFMODE）_49306990.md`

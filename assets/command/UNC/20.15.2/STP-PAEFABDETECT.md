@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STP-PAEFABDETECT.md`
+- 原始手册：`evidence/UNC/20.15.2/停止Fabric链路探测任务（STP-PAEFABDETECT）_12631728.md`

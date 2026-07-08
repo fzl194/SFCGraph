@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PDUSCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDU异常返回码动作（LST-PDUSCACT）_09654180.md`

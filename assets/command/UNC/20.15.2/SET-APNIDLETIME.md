@@ -92,4 +92,4 @@ SET APNIDLETIME:APN="HUAWEI.COM",INHERIT=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-APNIDLETIME.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN空闲上下文定时器配置（SET-APNIDLETIME）_09653122.md`

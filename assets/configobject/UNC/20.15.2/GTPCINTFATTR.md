@@ -37,8 +37,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTFATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTFATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTFATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTFATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCINTFATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-C-IP地址接口属性(MOD-GTPCINTFATTR)_72345501.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C-IP地址接口属性(RMV-GTPCINTFATTR)_26305710.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C-IP地址接口属性(ADD-GTPCINTFATTR)_72225579.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTP-C-IP地址接口属性(DSP-GTPCINTFATTR)_72225581.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C-IP地址接口属性(LST-GTPCINTFATTR)_26145902.md`

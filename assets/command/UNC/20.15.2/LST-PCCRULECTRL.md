@@ -54,4 +54,4 @@ LST PCCRULECTRL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCRULECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC规则相关控制（LST-PCCRULECTRL）_09652541.md`

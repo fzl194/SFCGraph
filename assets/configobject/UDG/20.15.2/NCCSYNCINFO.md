@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NCCSYNCINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NETCONFC的配置同步信息（DSP-NCCSYNCINFO）_59104235.md`

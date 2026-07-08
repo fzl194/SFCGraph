@@ -64,4 +64,4 @@ ADD NGLANGROUP: GROUPID="A0000001-460-003-01", DNN="huawei.com", SST=1, SD="0101
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGLANGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-LAN群组（ADD-NGLANGROUP）_04284708.md`

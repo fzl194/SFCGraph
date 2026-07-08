@@ -60,4 +60,4 @@ RMV DNNRANSECPLCY:DNN="huawei.com", NSIDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNNRANSECPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN-RAN侧安全策略（RMV-DNNRANSECPLCY）_96805499.md`

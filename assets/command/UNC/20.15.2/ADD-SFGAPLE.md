@@ -62,4 +62,4 @@ ADD SFGAPLE: SFGAPLEIDX=1, SCTPGROUPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SFGAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SFGAP本端实体（ADD-SFGAPLE）_75822964.md`

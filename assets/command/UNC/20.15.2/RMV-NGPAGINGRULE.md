@@ -58,4 +58,4 @@ RMV NGPAGINGRULE: RULEIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGPAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G寻呼规则（RMV-NGPAGINGRULE）_09653219.md`

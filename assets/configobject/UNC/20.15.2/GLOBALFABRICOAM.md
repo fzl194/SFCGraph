@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLOBALFABRICOAM.md`
-- 原始手册：`evidence/UNC/20.15.2/GLOBALFABRICOAM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OAM全局配置（LST-GLOBALFABRICOAM）_92520025.md`
+- 原始手册：`evidence/UNC/20.15.2/设置OAM全局配置（SET-GLOBALFABRICOAM）_92520017.md`

@@ -71,4 +71,4 @@ IPv6 address  0.0.0.0       0.0.0.0       2001:db8:6:6:6:6:6:6  2001:db8:20:20:2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFIPWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-IP白名单（LST-NRFIPWHITELST）_29709830.md`

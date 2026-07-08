@@ -59,4 +59,4 @@ RMV AMFINFO: AMFINSTANCENAME="AMF_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF信息（RMV-AMFINFO）_09653047.md`

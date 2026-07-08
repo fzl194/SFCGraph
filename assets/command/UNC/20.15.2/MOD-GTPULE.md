@@ -64,4 +64,4 @@ MOD GTPULE: MODTYPE=BYINDEX, INDEX=1, DESC="private";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GTPULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-U本地实体(MOD-GTPULE)_72225661.md`

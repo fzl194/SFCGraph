@@ -59,4 +59,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/STR-PLCYCHECK.md`
+- 原始手册：`evidence/UDG/20.15.2/创建策略核查任务（STR-PLCYCHECK）_49379571.md`

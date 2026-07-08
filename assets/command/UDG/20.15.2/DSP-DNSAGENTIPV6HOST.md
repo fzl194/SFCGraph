@@ -66,4 +66,4 @@ DSP DNSAGENTIPV6HOST:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DNSAGENTIPV6HOST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS代理服务器IPv6域名（DSP-DNSAGENTIPV6HOST）_49802202.md`

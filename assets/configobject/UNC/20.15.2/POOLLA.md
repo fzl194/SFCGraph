@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POOLLA.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLLA.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLLA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除POOL-LA配置信息（RMV-POOLLA）_26305914.md`
+- 原始手册：`evidence/UNC/20.15.2/增加POOL-LA配置信息（ADD-POOLLA）_72225783.md`
+- 原始手册：`evidence/UNC/20.15.2/查询POOL-LA配置信息（LST-POOLLA）_72345705.md`

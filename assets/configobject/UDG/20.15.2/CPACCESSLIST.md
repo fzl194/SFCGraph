@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CPACCESSLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/CPACCESSLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/CPACCESSLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除CP白名单（RMV-CPACCESSLIST）_86530486.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CP白名单（LST-CPACCESSLIST）_86530487.md`
+- 原始手册：`evidence/UDG/20.15.2/添加CP白名单（ADD-CPACCESSLIST）_86530485.md`

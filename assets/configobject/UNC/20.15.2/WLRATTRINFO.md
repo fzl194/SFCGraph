@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/WLRATTRINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询无线路由属性信息（DSP-WLRATTRINFO）_49802018.md`

@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTAIPAGMONPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAIPAGMONPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NG-TAI组寻呼异常监控功能参数（LST-NGTAIPAGMONPARA）_94289558.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NG-TAI组寻呼异常监控功能参数（SET-NGTAIPAGMONPARA）_75982876.md`

@@ -96,4 +96,4 @@ ADD SMARTHTTPREDIR: SMTHTTPREDINAME="test", SERVERURL="www.huawei.com", ERRCODEF
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SMARTHTTPREDIR.md`
+- 原始手册：`evidence/UDG/20.15.2/新增HTTP智能重定向（ADD-SMARTHTTPREDIR）_82837555.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PDPFILTERCTL.md`
-- 原始手册：`evidence/UNC/20.15.2/PDPFILTERCTL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDP过滤功能参数(LST-PDPFILTERCTL)_72225367.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PDP过滤功能参数(SET-PDPFILTERCTL)_26145688.md`

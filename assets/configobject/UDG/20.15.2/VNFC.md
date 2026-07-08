@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VNFC.md`
-- 原始手册：`evidence/UDG/20.15.2/VNFC.md`
-- 原始手册：`evidence/UDG/20.15.2/VNFC.md`
+- 原始手册：`evidence/UDG/20.15.2/重启系统（RST-VNFC）_59103634.md`
+- 原始手册：`evidence/UDG/20.15.2/显示VNFC（DSP-VNFC）_59036773.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNFC（LST-VNFC）_59036046.md`

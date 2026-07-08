@@ -73,4 +73,4 @@ ADD M3DE: DEX=1, LEX=1, DPC="123", DET=SGP, DEN="TEST", STPF=DISABLE, NMD=EXCLUS
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-M3DE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M3UA目的实体(ADD-M3DE)_72345901.md`

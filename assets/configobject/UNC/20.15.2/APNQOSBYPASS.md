@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNQOSBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNQOSBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNQOSBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNQOSBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BYPASS场景QoS描述配置（MOD-APNQOSBYPASS）_22556859.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BYPASS场景QoS描述配置（RMV-APNQOSBYPASS）_77197036.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BYPASS场景QoS描述配置（ADD-APNQOSBYPASS）_77197030.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BYPASS场景QoS描述配置（LST-APNQOSBYPASS）_22438291.md`

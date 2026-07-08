@@ -69,4 +69,4 @@ SET LOWPRIOFC: FCSWITCH=ON, MINTHD=10, MAXTHD=300;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-LOWPRIOFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置低优先级流控参数(SET-LOWPRIOFC)_72345759.md`

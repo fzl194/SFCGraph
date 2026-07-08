@@ -61,4 +61,4 @@ RMV NSILIST: NFINSTANCENAME="AMF_Instance_0", NSI="NS_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSILIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF支持切片信息（RMV-NSILIST）_09651541.md`

@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FUNCTIONSETINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示网络功能集全局列表（DSP-FUNCTIONSETINFO）_18818226.md`

@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RULEALL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除所有规则（RMV-RULEALL）_06014580.md`

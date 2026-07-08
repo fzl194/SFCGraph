@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNSSTATISTICS.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSSTATISTICS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS报文统计计数（DSP-DNSSTATISTICS）_50281426.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DNS报文统计计数（RTR-DNSSTATISTICS）_49961758.md`

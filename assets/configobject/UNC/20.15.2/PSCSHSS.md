@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PSCSHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/PSCSHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/PSCSHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除联合接入HSS白名单(RMV-PSCSHSS)_86553345.md`
+- 原始手册：`evidence/UNC/20.15.2/增加联合接入HSS白名单(ADD-PSCSHSS)_35873478.md`
+- 原始手册：`evidence/UNC/20.15.2/查询联合接入HSS白名单(LST-PSCSHSS)_36033226.md`

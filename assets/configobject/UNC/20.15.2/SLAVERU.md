@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SLAVERU.md`
+- 原始手册：`evidence/UNC/20.15.2/迁移热备RU（MIG-SLAVERU）_00841197.md`

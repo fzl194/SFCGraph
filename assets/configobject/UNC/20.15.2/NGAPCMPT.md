@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGAPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NGAP兼容性参数（LST-NGAPCMPT）_09653275.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NGAP兼容性参数（SET-NGAPCMPT）_09652644.md`

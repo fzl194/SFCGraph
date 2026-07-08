@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/STDSESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示用户上下文（DSP-STDSESSION）_43134487.md`

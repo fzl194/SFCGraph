@@ -35,10 +35,10 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP目的信令点(MOD-SCCPDPC)_26146320.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP目的信令点(RMV-SCCPDPC)_72345919.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP目的信令点(ADD-SCCPDPC)_26306130.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SCCP目的信令点状态(DSP-SCCPDPC)_26306132.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP目的信令点(LST-SCCPDPC)_72225999.md`
+- 原始手册：`evidence/UNC/20.15.2/禁止SCCP目的信令点(INH-SCCPDPC)_72345921.md`
+- 原始手册：`evidence/UNC/20.15.2/解禁SCCP目的信令点(UIN-SCCPDPC)_26146322.md`

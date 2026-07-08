@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSTATISTIC.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSTATISTIC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP报文统计（DSP-IPSTATISTIC）_50121210.md`
+- 原始手册：`evidence/UDG/20.15.2/清除IP报文统计（RTR-IPSTATISTIC）_49961982.md`

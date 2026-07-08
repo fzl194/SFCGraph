@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGIOPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGIOPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合计费惯性运行参数（LST-CHGIOPARA）_71436535.md`
+- 原始手册：`evidence/UNC/20.15.2/设置融合计费惯性运行参数（SET-CHGIOPARA）_24796838.md`

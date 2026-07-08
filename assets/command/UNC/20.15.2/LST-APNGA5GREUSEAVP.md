@@ -80,4 +80,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNGA5GREUSEAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于apn的Ga接口重用字段的填写方式（LST-APNGA5GREUSEAVP）_23622930.md`

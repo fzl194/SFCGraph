@@ -65,4 +65,4 @@ OsNode链路检查使能标志  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FAULTDETECT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示故障策略信息（LST-FAULTDETECT）_59103703.md`

@@ -67,4 +67,4 @@ ADD NWNAMEBYHSS: INDEX=2, SELMODE=HOST, HOST="hss.epc.mnc123.mcc123.3gppnetwork.
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NWNAMEBYHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加不发送运营商名称的HSS(ADD-NWNAMEBYHSS)_09030572.md`

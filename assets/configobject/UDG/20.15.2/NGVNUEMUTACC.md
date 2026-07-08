@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGVNUEMUTACC.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNUEMUTACC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN组下用户互访控制配置（LST-NGVNUEMUTACC）_49128371.md`
+- 原始手册：`evidence/UDG/20.15.2/设置5G-LAN用户互访控制配置（SET-NGVNUEMUTACC）_97004598.md`

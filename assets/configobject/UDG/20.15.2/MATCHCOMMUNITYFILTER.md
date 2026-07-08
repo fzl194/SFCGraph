@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改匹配团体属性过滤器（MOD-MATCHCOMMUNITYFILTER）_00601309.md`
+- 原始手册：`evidence/UDG/20.15.2/删除匹配团体属性过滤器（RMV-MATCHCOMMUNITYFILTER）_50281086.md`
+- 原始手册：`evidence/UDG/20.15.2/增加匹配团体属性过滤器（ADD-MATCHCOMMUNITYFILTER）_49802110.md`
+- 原始手册：`evidence/UDG/20.15.2/查询匹配团体属性过滤器（LST-MATCHCOMMUNITYFILTER）_00440769.md`

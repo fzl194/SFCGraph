@@ -65,4 +65,4 @@ IMSI前缀  =  12303
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RESTOUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾用户特征参数(LST-RESTOUSR)_26146118.md`

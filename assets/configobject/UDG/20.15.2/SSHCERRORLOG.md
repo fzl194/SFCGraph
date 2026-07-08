@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SSHCERRORLOG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SSH客户端的错误日志（DSP-SSHCERRORLOG）_59103856.md`

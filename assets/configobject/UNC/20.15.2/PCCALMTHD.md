@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCALMTHD.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCALMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC告警阈值（LST-PCCALMTHD）_96782687.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC告警阈值（SET-PCCALMTHD）_09897345.md`

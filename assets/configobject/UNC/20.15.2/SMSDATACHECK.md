@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSDATACHECK.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSDATACHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询数据核查扫描参数（LST-SMSDATACHECK）_64343892.md`
+- 原始手册：`evidence/UNC/20.15.2/设置数据核查扫描参数（SET-SMSDATACHECK）_64343919.md`

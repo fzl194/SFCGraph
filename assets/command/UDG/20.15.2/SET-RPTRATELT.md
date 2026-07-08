@@ -66,4 +66,4 @@ SET RPTRATELT: USRRESENDPERIOD=10, USRRESENDRATE=100;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RPTRATELT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置报表消息流控配置（SET-RPTRATELT）_06453264.md`

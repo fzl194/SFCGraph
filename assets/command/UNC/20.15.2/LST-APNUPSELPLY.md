@@ -74,4 +74,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNUPSELPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN粒度的UP选择策略（LST-APNUPSELPLY）_96242085.md`

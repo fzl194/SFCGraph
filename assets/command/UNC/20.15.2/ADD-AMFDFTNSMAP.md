@@ -67,4 +67,4 @@ ADD AMFDFTNSMAP: CTRLMODE=VPLMN, VMCC="123", VMNC="45", VSST=8, VSD="ABC123";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFDFTNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游切片默认映射配置（ADD-AMFDFTNSMAP）_58572689.md`

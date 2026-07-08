@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFAULTOPERPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFAULTOPERPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UP故障处理系统参数（LST-UPFAULTOPERPARA）_30518083.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UP故障处理系统参数（SET-UPFAULTOPERPARA）_30518084.md`

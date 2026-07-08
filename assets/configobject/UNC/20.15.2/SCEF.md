@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCEF.md`
-- 原始手册：`evidence/UNC/20.15.2/SCEF.md`
-- 原始手册：`evidence/UNC/20.15.2/SCEF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCEF配置(RMV-SCEF)_26305270.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCEF配置(ADD-SCEF)_72225139.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCEF配置(LST-SCEF)_72345057.md`

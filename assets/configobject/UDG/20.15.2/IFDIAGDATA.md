@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IFDIAGDATA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口诊断数据（DSP-IFDIAGDATA）_00841133.md`

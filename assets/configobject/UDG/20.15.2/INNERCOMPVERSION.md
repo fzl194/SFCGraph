@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/INNERCOMPVERSION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示系统内部部件版本信息（DSP-INNERCOMPVERSION）_59103441.md`

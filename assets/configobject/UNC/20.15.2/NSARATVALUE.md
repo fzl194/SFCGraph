@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSARATVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/NSARATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSA用户的RAT值（LST-NSARATVALUE）_35374741.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSA用户的RAT值（SET-NSARATVALUE）_35273635.md`

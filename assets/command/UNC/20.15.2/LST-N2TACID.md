@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N2TACID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TAC组内绑定的N2TAC号段（LST-N2TACID）_09651430.md`

@@ -64,4 +64,4 @@ ADD PIMSTATICRP:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,STATICRPADDR="192.1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PIMSTATICRP.md`
+- 原始手册：`evidence/UDG/20.15.2/添加PIM静态RP配置（ADD-PIMSTATICRP）_00865753.md`

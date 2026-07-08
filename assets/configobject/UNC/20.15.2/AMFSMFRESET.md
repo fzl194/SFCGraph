@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSMFRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSMFRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的SMF故障处理策略（LST-AMFSMFRESET）_96805381.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF的SMF故障处理策略（SET-AMFSMFRESET）_96805502.md`

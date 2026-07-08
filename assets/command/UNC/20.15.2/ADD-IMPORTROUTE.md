@@ -74,4 +74,4 @@ ADD IMPORTROUTE:VRFNAME="vrf1", AFTYPE=ipv4uni, IMPORTPROTOCOL=static;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IMPORTROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定协议中的入口路由配置（ADD-IMPORTROUTE）_49801554.md`

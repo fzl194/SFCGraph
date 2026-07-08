@@ -63,4 +63,4 @@ SET SMARTCL: SMARTCLSW=ON, APNKEY="multidomain", LABELPOS=BEFORE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMARTCL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置智能分流功能(SET-SMARTCL)_76951144.md`

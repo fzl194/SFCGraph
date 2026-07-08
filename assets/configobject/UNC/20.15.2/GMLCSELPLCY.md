@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GMLCSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GMLC选择策略(MOD-GMLCSELPLCY)_72345413.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GMLC选择策略(RMV-GMLCSELPLCY)_26305622.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GMLC选择策略(ADD-GMLCSELPLCY)_72225491.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GMLC选择策略(LST-GMLCSELPLCY)_26145814.md`

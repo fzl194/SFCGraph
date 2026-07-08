@@ -70,4 +70,4 @@ APIURI版本号 = v1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFSERVICEVER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的服务实例的版本信息（LST-PNFSERVICEVER）_09653093.md`

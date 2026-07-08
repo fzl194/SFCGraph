@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTSMSTATISTICS.md`
-- 原始手册：`evidence/UNC/20.15.2/GTSMSTATISTICS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTSM统计（DSP-GTSMSTATISTICS）_00440545.md`
+- 原始手册：`evidence/UNC/20.15.2/清除GTSM统计（RTR-GTSMSTATISTICS）_00866405.md`

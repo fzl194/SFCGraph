@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATHCTRLALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/PATHCTRLALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询大量路径断告警告警阈值（LST-PATHCTRLALMTHD）_82837860.md`
+- 原始手册：`evidence/UDG/20.15.2/设置大量路径断告警的告警阈值（SET-PATHCTRLALMTHD）_82837861.md`

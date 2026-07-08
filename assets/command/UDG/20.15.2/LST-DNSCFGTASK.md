@@ -167,4 +167,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DNSCFGTASK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS配置任务状态（LST-DNSCFGTASK）_12050995.md`

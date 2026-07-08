@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCPCRFMSGATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCPCRFMSGATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCRF返回消息属性（LST-PCCPCRFMSGATTR）_96782685.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCRF返回消息属性（SET-PCCPCRFMSGATTR）_09897077.md`

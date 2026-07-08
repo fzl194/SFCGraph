@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRVRETRYTIMER.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVRETRYTIMER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务重试等待时间（LST-SRVRETRYTIMER）_06055000.md`
+- 原始手册：`evidence/UDG/20.15.2/设置服务重试等待时间（SET-SRVRETRYTIMER）_06054999.md`

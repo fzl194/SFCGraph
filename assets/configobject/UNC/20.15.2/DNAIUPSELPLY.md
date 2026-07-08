@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNAIUPSELPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAIUPSELPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAIUPSELPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAIUPSELPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNAI粒度的UPF选择策略（MOD-DNAIUPSELPLY）_18357781.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI粒度的UPF选择策略（RMV-DNAIUPSELPLY）_18037981.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI粒度的UPF选择策略（ADD-DNAIUPSELPLY）_68957892.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI粒度的UPF选择策略（LST-DNAIUPSELPLY）_18197841.md`

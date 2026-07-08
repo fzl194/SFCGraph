@@ -106,4 +106,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DBTBL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CSDB数据表信息（DSP-DBTBL）_29626992.md`

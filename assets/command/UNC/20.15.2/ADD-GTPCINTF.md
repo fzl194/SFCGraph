@@ -66,4 +66,4 @@ ADD GTPCINTF:INTFTYPE=E_GTPCINTF_ITFS11,GROUPID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPCINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C接口信息（ADD-GTPCINTF）_09651576.md`

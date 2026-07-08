@@ -65,4 +65,4 @@ MOD HTTPFIXEDFC: GROUP=1, SENDTHD=100;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-HTTPFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改HTTP流控组固定速率流控信息（MOD-HTTPFIXEDFC）_83653662.md`

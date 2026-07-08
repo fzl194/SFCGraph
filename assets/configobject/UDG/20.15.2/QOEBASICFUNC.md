@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOEBASICFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/QOEBASICFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoE基本功能（LST-QOEBASICFUNC）_24347197.md`
+- 原始手册：`evidence/UDG/20.15.2/设置QoE基本功能（SET-QOEBASICFUNC）_72665978.md`

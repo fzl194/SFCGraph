@@ -66,4 +66,4 @@ DHCPv4客户端使能  =  TRUE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DHCPCLIENT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCPv4客户端配置（LST-DHCPCLIENT）_50121566.md`

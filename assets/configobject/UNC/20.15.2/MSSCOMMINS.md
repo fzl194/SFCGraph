@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSSCOMMINS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通信实例信息（DSP-MSSCOMMINS）_00865797.md`

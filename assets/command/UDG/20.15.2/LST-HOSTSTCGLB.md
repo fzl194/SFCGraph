@@ -63,4 +63,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HOSTSTCGLB.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局协议报文统计配置（LST-HOSTSTCGLB）_49802002.md`

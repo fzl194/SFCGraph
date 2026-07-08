@@ -61,4 +61,4 @@ RMV LOCALNRI: POOLID=1, NRIVBGN=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCALNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本局NRI配置信息(RMV-LOCALNRI)_26146100.md`

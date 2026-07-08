@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REFRESHSRV.md`
+- 原始手册：`evidence/UDG/20.15.2/业务刷新（SET-REFRESHSRV）_82837355.md`

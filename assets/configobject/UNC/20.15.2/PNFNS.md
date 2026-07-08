@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的切片信息（MOD-PNFNS）_09652367.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的切片信息（RMV-PNFNS）_09652629.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的切片信息（ADD-PNFNS）_09652622.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的切片信息（LST-PNFNS）_09652534.md`

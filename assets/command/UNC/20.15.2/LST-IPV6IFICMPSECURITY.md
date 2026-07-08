@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IPV6IFICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口下安全配置（LST-IPV6IFICMPSECURITY）_49801466.md`

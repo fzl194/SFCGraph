@@ -32,5 +32,5 @@ Non-UE辅助定位流程中，AMF是否支持Namf_Communication_NonUeN2InfoSubsc
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGLCSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGLCSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G定位服务参数（LST-NGLCSPARA）_44007004.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G定位服务参数（SET-NGLCSPARA）_44007975.md`

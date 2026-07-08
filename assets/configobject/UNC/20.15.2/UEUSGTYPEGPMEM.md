@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UEUSGTYPEGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/UEUSGTYPEGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/UEUSGTYPEGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UE-USAGE-TYPE群组成员(RMV-UEUSGTYPEGPMEM)_72345423.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UE-USAGE-TYPE群组成员(ADD-UEUSGTYPEGPMEM)_26305632.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE-USAGE-TYPE群组成员(LST-UEUSGTYPEGPMEM)_26145824.md`

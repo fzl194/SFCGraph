@@ -61,4 +61,4 @@ ADD LCSPERMITCFG: OPTYPE=Namf_Location_ProvidePositioningInfo, IPTYPE=IPTypeV4, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LCSPERMITCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加定位服务权限配置（ADD-LCSPERMITCFG）_62595587.md`

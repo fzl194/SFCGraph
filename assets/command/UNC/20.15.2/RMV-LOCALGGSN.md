@@ -61,4 +61,4 @@ RMV LOCALGGSN: IPT=IPV4, IP="192.168.3.4";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCALGGSN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地GGSN列表(RMV-LOCALGGSN)_72225607.md`

@@ -59,4 +59,4 @@ MOD ABNTRAFFICDT: APN="apn1.com", SWITCH=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-ABNTRAFFICDT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改异常流量检测开关（MOD-ABNTRAFFICDT）_82837036.md`

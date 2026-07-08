@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/NFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/NFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF支持的网络切片（RMV-NFNS）_09651334.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF支持的网络切片（ADD-NFNS）_09651407.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF支持的网络切片（LST-NFNS）_09651556.md`

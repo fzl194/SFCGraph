@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGACCAREALST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGACCAREALST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGACCAREALST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G接入限制区域列表（MOD-NGACCAREALST）_44007375.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G接入限制区域列表（RMV-NGACCAREALST）_44007640.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G接入限制区域列表（ADD-NGACCAREALST）_44006447.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G接入限制区域列表（LST-NGACCAREALST）_44006984.md`

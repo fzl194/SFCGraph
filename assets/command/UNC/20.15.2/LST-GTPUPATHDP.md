@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPUPATHDP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-U路径管理自定义策略(LST-GTPUPATHDP)_26145844.md`

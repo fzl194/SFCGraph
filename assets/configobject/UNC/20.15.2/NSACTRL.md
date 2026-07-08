@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSACTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/NSACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSA控制参数(LST-NSACTRL)_72345733.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSA控制参数(SET-NSACTRL)_26305942.md`

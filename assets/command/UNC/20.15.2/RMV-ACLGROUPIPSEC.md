@@ -59,4 +59,4 @@ RMV ACLGROUPIPSEC: ACLNAME="3005";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ACLGROUPIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除ACL规则组（RMV-ACLGROUPIPSEC）_80432534.md`

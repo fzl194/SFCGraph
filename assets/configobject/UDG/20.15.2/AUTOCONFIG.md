@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTOCONFIG.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTOCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询自动配置开关（LST-AUTOCONFIG）_00441109.md`
+- 原始手册：`evidence/UDG/20.15.2/设置自动配置开关（SET-AUTOCONFIG）_00840833.md`

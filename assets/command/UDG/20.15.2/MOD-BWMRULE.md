@@ -92,4 +92,4 @@ MOD BWMRULE:USERGROUPTYPE=SPECIFIC_GROUP,USERGROUPNAME="testbwmusergroup",BWMRUL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-BWMRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改带宽管理规则（MOD-BWMRULE）_82837479.md`

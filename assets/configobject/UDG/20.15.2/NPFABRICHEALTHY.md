@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPFABRICHEALTHY.md`
-- 原始手册：`evidence/UDG/20.15.2/NPFABRICHEALTHY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局亚健康相关配置（LST-NPFABRICHEALTHY）_94730465.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局亚健康相关配置（SET-NPFABRICHEALTHY）_94730514.md`

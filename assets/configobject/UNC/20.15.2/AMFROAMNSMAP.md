@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFROAMNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFROAMNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFROAMNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFROAMNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改漫游切片映射配置（MOD-AMFROAMNSMAP）_77197034.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫游切片映射配置（RMV-AMFROAMNSMAP）_22678341.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游切片映射配置（ADD-AMFROAMNSMAP）_22678335.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游切片映射配置（LST-AMFROAMNSMAP）_77037094.md`

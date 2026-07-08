@@ -62,4 +62,4 @@ ADD NFMSISDN: NFGROUPID="nfgroupid-city1", SEGSTART="11111", SEGEND="99999";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFMSISDN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MSISDN号段（ADD-NFMSISDN）_09653258.md`

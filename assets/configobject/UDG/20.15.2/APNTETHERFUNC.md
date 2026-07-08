@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNTETHERFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNTETHERFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN-Tethering检测开关（LST-APNTETHERFUNC）_82837442.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-Tethering检测开关（SET-APNTETHERFUNC）_82837441.md`

@@ -76,4 +76,4 @@ SCTP偶联测量对象实例标识  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPSCTPASSOC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SCTP耦联测量对象（LST-UPSCTPASSOC）_97314595.md`

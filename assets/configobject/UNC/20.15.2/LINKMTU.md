@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LINKMTU.md`
-- 原始手册：`evidence/UNC/20.15.2/LINKMTU.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Link-MTU值（LST-LINKMTU）_35519271.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Link-MTU值（SET-LINKMTU）_88697042.md`

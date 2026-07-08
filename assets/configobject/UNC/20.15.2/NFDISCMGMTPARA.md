@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFDISCMGMTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCMGMTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCMGMTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NFDISCMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网元服务发现功能管理参数（MOD-NFDISCMGMTPARA）_94809866.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网元服务发现功能管理参数（RMV-NFDISCMGMTPARA）_41969689.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网元服务发现功能管理参数（ADD-NFDISCMGMTPARA）_94969700.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元服务发现功能管理参数（LST-NFDISCMGMTPARA）_42089657.md`

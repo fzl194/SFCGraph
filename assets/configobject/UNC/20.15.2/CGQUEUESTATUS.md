@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CGQUEUESTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NCG队列状态（DSP-CGQUEUESTATUS）_28534237.md`

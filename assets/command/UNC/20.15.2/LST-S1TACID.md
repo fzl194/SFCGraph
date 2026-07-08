@@ -69,4 +69,4 @@ TAC截止ID  =  0x0010
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-S1TACID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TAC组内绑定的S1TAC号段（LST-S1TACID）_09653802.md`

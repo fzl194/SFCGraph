@@ -62,4 +62,4 @@ RMV NFGROUPMEM:NFGROUPID="nfgroup001",NFINSTANCEID="Instanceid01", NFNAME="super
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFGROUPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF组成员（RMV-NFGROUPMEM）_09653818.md`

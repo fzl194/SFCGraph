@@ -74,4 +74,4 @@ RMV DIAMCONNECTION:DIAMCONNGRP="Grp1",LOCINTERFACE="gxif1/0/0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DIAMCONNECTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter链路（RMV-DIAMCONNECTION）_09897268.md`

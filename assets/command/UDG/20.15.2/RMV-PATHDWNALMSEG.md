@@ -62,4 +62,4 @@ RMV PATHDWNALMSEG: ENBIPVERSION=IPV4, V4STARTIP="10.1.1.1", V4ENDIP="10.1.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PATHDWNALMSEG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除单条路径断告警抑制参数的分段配置（RMV-PATHDWNALMSEG）_82837869.md`

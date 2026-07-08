@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CONNECTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/CONNECTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/CONNECTPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/CONNECTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改互联PLMN(MOD-CONNECTPLMN)_26146044.md`
+- 原始手册：`evidence/UNC/20.15.2/删除互联PLMN(RMV-CONNECTPLMN)_72345643.md`
+- 原始手册：`evidence/UNC/20.15.2/增加互联PLMN(ADD-CONNECTPLMN)_26305852.md`
+- 原始手册：`evidence/UNC/20.15.2/查询互联PLMN(LST-CONNECTPLMN)_72225723.md`

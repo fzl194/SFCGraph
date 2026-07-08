@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRFILESAVETIME.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRFILESAVETIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询文件存留期设置（LST-CHRFILESAVETIME）_14567104.md`
+- 原始手册：`evidence/UNC/20.15.2/设置文件存留期（SET-CHRFILESAVETIME）_14567105.md`

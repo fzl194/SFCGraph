@@ -45,5 +45,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSFAULTTOLERANCE.md`
-- 原始手册：`evidence/UDG/20.15.2/MSFAULTTOLERANCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询故障检测参数（LST-MSFAULTTOLERANCE）_09587939.md`
+- 原始手册：`evidence/UDG/20.15.2/设置故障检测参数（SET-MSFAULTTOLERANCE）_09587879.md`

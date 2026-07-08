@@ -78,4 +78,4 @@ IP+掩码             192.168.5.5           192.168.5.255        255.255.255.0  
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPALMMSK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP路径断告警屏蔽记录(LST-GTPALMMSK)_26145910.md`

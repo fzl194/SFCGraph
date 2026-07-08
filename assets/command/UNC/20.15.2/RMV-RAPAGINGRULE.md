@@ -67,4 +67,4 @@ RMV RAPAGINGRULE: MCC="123", MNC="03", LAC="0x113", RAC="0x3E";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RAPAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于路由区的寻呼参数设置(RMV-RAPAGINGRULE)_72225209.md`

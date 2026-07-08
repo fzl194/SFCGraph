@@ -82,4 +82,4 @@ ADD UPDIAMCONN: DIAMCONNGRP="Grp1", LOCINTERFACE="swmif1/0/0", PEERADDRTYPE=IPv4
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UPDIAMCONN.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter链路（ADD-UPDIAMCONN）_45195178.md`

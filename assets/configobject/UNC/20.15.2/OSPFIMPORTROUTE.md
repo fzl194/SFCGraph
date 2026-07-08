@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFIMPORTROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFIMPORTROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFIMPORTROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFIMPORTROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OSPF引入路由配置（MOD-OSPFIMPORTROUTE）_50121654.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPF引入路由配置（ADD-OSPFIMPORTROUTE）_00601057.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF引入路由配置（RMV-OSPFIMPORTROUTE）_50120774.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF引入路由配置（LST-OSPFIMPORTROUTE）_00441505.md`

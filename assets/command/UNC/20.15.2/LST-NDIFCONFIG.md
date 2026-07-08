@@ -84,4 +84,4 @@ ND报文收发时刻最大差值（s）  =  300
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NDIFCONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6-ND接口配置（LST-NDIFCONFIG）_50121718.md`

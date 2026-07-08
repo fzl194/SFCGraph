@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLE.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SBCAP本地实体(MOD-SBCAPLE)_72345977.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SBCAP本地实体(RMV-SBCAPLE)_26306188.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SBCAP本地实体(ADD-SBCAPLE)_72226055.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SBCAP本地实体(LST-SBCAPLE)_26146378.md`

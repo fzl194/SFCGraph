@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVRECFG.md`
+- 原始手册：`evidence/UNC/20.15.2/重配置业务数据（ACT-SRVRECFG）_29627078.md`

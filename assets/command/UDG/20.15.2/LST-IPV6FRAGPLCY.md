@@ -67,4 +67,4 @@ IPV6分片策略
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPV6FRAGPLCY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6分片策略（LST-IPV6FRAGPLCY）_82837703.md`

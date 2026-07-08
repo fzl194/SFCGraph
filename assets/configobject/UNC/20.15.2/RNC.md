@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RNC.md`
-- 原始手册：`evidence/UNC/20.15.2/RNC.md`
-- 原始手册：`evidence/UNC/20.15.2/RNC.md`
-- 原始手册：`evidence/UNC/20.15.2/RNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Iu接口RNC信息(MOD-RNC)_26305850.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu接口RNC信息(RMV-RNC)_72225719.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu接口RNC信息(ADD-RNC)_26146040.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu接口RNC信息(LST-RNC)_72345641.md`

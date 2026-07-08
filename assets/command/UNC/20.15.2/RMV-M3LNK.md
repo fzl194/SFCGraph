@@ -64,4 +64,4 @@ RMV M3LNK: LNK=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-M3LNK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M3UA信令链路(RMV-M3LNK)_26306116.md`

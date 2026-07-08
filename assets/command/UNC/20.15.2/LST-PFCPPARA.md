@@ -84,4 +84,4 @@ PfcpSessionReport响应消息缓存队列的老化时长  =  16
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PFCPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PFCP参数（LST-PFCPPARA）_09651492.md`

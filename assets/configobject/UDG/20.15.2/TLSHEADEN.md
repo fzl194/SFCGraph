@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TLSHEADEN.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSHEADEN.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSHEADEN.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSHEADEN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改HTTPS头增强（MOD-TLSHEADEN）_82837522.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTPS头增强（RMV-TLSHEADEN）_82837523.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTPS头增强（ADD-TLSHEADEN）_82837521.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTPS头增强（LST-TLSHEADEN）_82837524.md`

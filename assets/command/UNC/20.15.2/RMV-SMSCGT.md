@@ -54,4 +54,4 @@ RMV SMSCGT: GT="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMSCGT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSC的GT（RMV-SMSCGT）_24657785.md`

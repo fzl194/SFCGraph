@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SSHCSESSIONSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SSH客户端的会话统计信息（DSP-SSHCSESSIONSTC）_50281266.md`

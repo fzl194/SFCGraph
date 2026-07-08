@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RULEMATCHCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/RULEMATCHCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/安装规则匹配控制面信息（TST-RULEMATCHCTRL）_89889241.md`
+- 原始手册：`evidence/UDG/20.15.2/显示规则匹配控制信息下发状态（DSP-RULEMATCHCTRL）_91209836.md`

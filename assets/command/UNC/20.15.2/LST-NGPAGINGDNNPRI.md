@@ -67,4 +67,4 @@ IMS          高
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGPAGINGDNNPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于DNN的Paging消息在流控期间放通的优先级（LST-NGPAGINGDNNPRI）_52547822.md`

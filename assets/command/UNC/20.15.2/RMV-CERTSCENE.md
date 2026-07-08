@@ -59,4 +59,4 @@ RMV CERTSCENE: SCENENAME="DeviceA";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CERTSCENE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除证书场景（RMV-CERTSCENE）_26032201.md`

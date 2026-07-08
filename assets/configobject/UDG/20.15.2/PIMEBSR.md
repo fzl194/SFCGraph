@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMEBSR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询EBSR信息（DSP-PIMEBSR）_50121218.md`

@@ -59,4 +59,4 @@ CLR SCTPAS: CLRAST=GLBTR, RUNAME="USN_VSU1", PN=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-SCTPAS.md`
+- 原始手册：`evidence/UNC/20.15.2/清除SCTP统计信息(CLR-SCTPAS)_26305666.md`

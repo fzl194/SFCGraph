@@ -63,4 +63,4 @@ ADD NRFGROUP: GROUPNAME="nrfgroup001", GROUPATTR=LNRF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NRF实例组（ADD-NRFGROUP）_09653179.md`

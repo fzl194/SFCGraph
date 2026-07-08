@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOCALKEYPAIR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询本地公钥（LST-LOCALKEYPAIR）_59036289.md`

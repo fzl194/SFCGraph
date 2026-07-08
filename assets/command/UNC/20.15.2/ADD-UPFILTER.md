@@ -68,4 +68,4 @@ ADD UPFILTER: NFINSTANCENAME="UPF1", DNN="huawei.com", FILTERGPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPFILTER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF过滤组（ADD-UPFILTER）_09651422.md`

@@ -72,4 +72,4 @@ RETCODE = 0  执行成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FLOWCTRLBUF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流量控制缓存配置(LST-FLOWCTRLBUF)_26305798.md`

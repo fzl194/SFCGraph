@@ -56,4 +56,4 @@ RMV POLICYCONDITION: POLICYCNDNAME="policyname";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-POLICYCONDITION.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务质差检测策略（RMV-POLICYCONDITION）_09982394.md`

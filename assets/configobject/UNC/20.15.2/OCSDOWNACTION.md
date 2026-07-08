@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OCSDOWNACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DCC模板OCS状态Down动作（SET-OCSDOWNACTION）_09896931.md`

@@ -66,4 +66,4 @@ Eth-Trunk1     Ethernet64/0/4    接口选中    接口down
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-TRUNKMEMBER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Trunk成员接口信息（DSP-TRUNKMEMBER）_50121638.md`

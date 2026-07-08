@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FESTABLESTATICS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示FES表项统计信息（DSP-FESTABLESTATICS）_50281386.md`

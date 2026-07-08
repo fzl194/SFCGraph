@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCSCFRESTOPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFRESTOPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFRESTOPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFRESTOPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改P-CSCF故障恢复策略(MOD-PCSCFRESTOPLCY)_40761873.md`
+- 原始手册：`evidence/UNC/20.15.2/删除P-CSCF故障恢复策略(RMV-PCSCFRESTOPLCY)_05162794.md`
+- 原始手册：`evidence/UNC/20.15.2/增加P-CSCF故障恢复策略(ADD-PCSCFRESTOPLCY)_40921453.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-CSCF故障恢复策略(LST-PCSCFRESTOPLCY)_05322582.md`

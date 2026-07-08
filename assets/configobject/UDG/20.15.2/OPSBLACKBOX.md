@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OPSBLACKBOX.md`
+- 原始手册：`evidence/UDG/20.15.2/显示开放可编程系统的维护信息（DSP-OPSBLACKBOX）_50281102.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NDNBVERBOSE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询邻居表项详细信息（DSP-NDNBVERBOSE）_00841353.md`

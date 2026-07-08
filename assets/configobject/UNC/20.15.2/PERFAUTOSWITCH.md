@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFAUTOSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFAUTOSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话统对象自动生成开关(LST-PERFAUTOSWITCH)_72345793.md`
+- 原始手册：`evidence/UNC/20.15.2/设置话统对象自动生成开关(SET-PERFAUTOSWITCH)_26306004.md`

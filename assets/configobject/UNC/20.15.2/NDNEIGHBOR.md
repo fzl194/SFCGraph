@@ -26,9 +26,9 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NDNEIGHBOR.md`
-- 原始手册：`evidence/UNC/20.15.2/NDNEIGHBOR.md`
-- 原始手册：`evidence/UNC/20.15.2/NDNEIGHBOR.md`
-- 原始手册：`evidence/UNC/20.15.2/NDNEIGHBOR.md`
-- 原始手册：`evidence/UNC/20.15.2/NDNEIGHBOR.md`
-- 原始手册：`evidence/UNC/20.15.2/NDNEIGHBOR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改静态ND邻居表项（MOD-NDNEIGHBOR）_50281518.md`
+- 原始手册：`evidence/UNC/20.15.2/删除静态ND邻居表项（RMV-NDNEIGHBOR）_49961130.md`
+- 原始手册：`evidence/UNC/20.15.2/增加静态ND邻居表项（ADD-NDNEIGHBOR）_00600305.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IPv6-ND邻居表项（DSP-NDNEIGHBOR）_49801918.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态ND邻居表项（LST-NDNEIGHBOR）_50281138.md`
+- 原始手册：`evidence/UNC/20.15.2/清除IPv6-ND邻居表项（RTR-NDNEIGHBOR）_00601313.md`

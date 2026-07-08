@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NOCENTCNCHL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RU通道过滤规则（LST-NOCENTCNCHL）_36216641.md`

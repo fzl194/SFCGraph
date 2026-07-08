@@ -34,8 +34,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LICENSE.md`
-- 原始手册：`evidence/UNC/20.15.2/LICENSE.md`
-- 原始手册：`evidence/UNC/20.15.2/LICENSE.md`
-- 原始手册：`evidence/UNC/20.15.2/LICENSE.md`
-- 原始手册：`evidence/UNC/20.15.2/LICENSE.md`
+- 原始手册：`evidence/UNC/20.15.2/失效License(RVK-LICENSE)_00061904.md`
+- 原始手册：`evidence/UNC/20.15.2/显示License(DSP-LICENSE)_00360098.md`
+- 原始手册：`evidence/UNC/20.15.2/查询License(LST-LICENSE)_00220006.md`
+- 原始手册：`evidence/UNC/20.15.2/比较License(CMP-LICENSE)_46941849.md`
+- 原始手册：`evidence/UNC/20.15.2/激活License(ACT-LICENSE)_99793370.md`

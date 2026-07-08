@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询虚拟节点信息（LST-VNODE）_59037562.md`

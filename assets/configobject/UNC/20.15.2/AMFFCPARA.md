@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF自保流控参数（LST-AMFFCPARA）_25120883.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF自保流控参数（SET-AMFFCPARA）_25121209.md`

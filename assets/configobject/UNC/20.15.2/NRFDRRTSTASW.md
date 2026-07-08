@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDRRTSTASW.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDRRTSTASW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF双活备份状态忽略开关（LST-NRFDRRTSTASW）_52070869.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF双活备份状态忽略开关（SET-NRFDRRTSTASW）_52071375.md`

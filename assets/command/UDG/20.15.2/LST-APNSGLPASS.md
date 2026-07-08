@@ -69,4 +69,4 @@ APN单通检测开关
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNSGLPASS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN单通检测开关（LST-APNSGLPASS）_82837111.md`

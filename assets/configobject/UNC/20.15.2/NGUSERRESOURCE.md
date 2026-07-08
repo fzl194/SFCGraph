@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGUSERRESOURCE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G用户资源（DSP-NGUSERRESOURCE）_07201321.md`

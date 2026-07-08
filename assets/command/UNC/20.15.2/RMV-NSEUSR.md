@@ -62,4 +62,4 @@ RMV NSEUSR:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSEUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSE列表下的用户(RMV-NSEUSR)_26305832.md`

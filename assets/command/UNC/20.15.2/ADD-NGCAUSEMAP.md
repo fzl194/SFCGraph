@@ -70,4 +70,4 @@ ADD NGCAUSEMAP: PROT=INIT_REG, SCAUSE=27, TCAUSE=111;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGCAUSEMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G原因值映射配置（ADD-NGCAUSEMAP）_19478931.md`

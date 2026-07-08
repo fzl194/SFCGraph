@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SFEPKTBATCHRCV.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFE批量收取的报文数量-（LST-SFEPKTBATCHRCV）_94196890.md`

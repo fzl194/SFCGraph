@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFGROUPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGROUPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGROUPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF组成员（RMV-NFGROUPMEM）_09653818.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF组成员（ADD-NFGROUPMEM）_09652338.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF组成员（LST-NFGROUPMEM）_09652297.md`

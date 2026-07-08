@@ -63,4 +63,4 @@ ADD UPAREA: AREANAME="UPAREA1", AREATYPE=S1TAI;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF服务区（ADD-UPAREA）_09652457.md`

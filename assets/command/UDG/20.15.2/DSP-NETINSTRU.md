@@ -67,4 +67,4 @@ NetInstanceDefault 0              SG0_CSLB_IPFWD     0                  64      
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NETINSTRU.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网络实例对应RU信息(DSP-NETINSTRU)_29626916.md`

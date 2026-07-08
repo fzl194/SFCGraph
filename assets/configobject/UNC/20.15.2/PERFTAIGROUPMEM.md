@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFTAIGROUPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFTAIGROUPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFTAIGROUPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TAI组性能统计对象成员（RMV-PERFTAIGROUPMEM）_17625958.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TAI组性能统计对象成员（ADD-PERFTAIGROUPMEM）_17625954.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TAI组性能统计对象成员（LST-PERFTAIGROUPMEM）_68506245.md`

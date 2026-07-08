@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TNFINS.md`
-- 原始手册：`evidence/UNC/20.15.2/TNFINS.md`
-- 原始手册：`evidence/UNC/20.15.2/TNFINS.md`
-- 原始手册：`evidence/UNC/20.15.2/TNFINS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改目标NF实例（MOD-TNFINS）_09651413.md`
+- 原始手册：`evidence/UNC/20.15.2/删除目标NF实例（RMV-TNFINS）_09651333.md`
+- 原始手册：`evidence/UNC/20.15.2/增加目标NF实例（ADD-TNFINS）_09652354.md`
+- 原始手册：`evidence/UNC/20.15.2/查询目标NF实例（LST-TNFINS）_09652356.md`

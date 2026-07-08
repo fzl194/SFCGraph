@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UNIHTR.md`
-- 原始手册：`evidence/UNC/20.15.2/UNIHTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询统一HTR功能(LST-UNIHTR)_72345745.md`
+- 原始手册：`evidence/UNC/20.15.2/设置统一HTR功能(SET-UNIHTR)_26305954.md`

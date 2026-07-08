@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PROXYSMFACCLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Proxy-SMF接入控制列表（LST-PROXYSMFACCLIST）_23782770.md`

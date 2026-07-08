@@ -53,4 +53,4 @@ RMV ACLRULEBAS4:ACLNAME="2000",ACLRULENAME="rule_5";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ACLRULEBAS4.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基本ACL规则（RMV-ACLRULEBAS4）_00440553.md`

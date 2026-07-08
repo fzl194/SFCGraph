@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSUBDATA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSUBDATA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSUBDATA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSUBDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改签约数据纠正参数(MOD-SMSUBDATA)_26145678.md`
+- 原始手册：`evidence/UNC/20.15.2/删除签约数据纠正参数(RMV-SMSUBDATA)_72345273.md`
+- 原始手册：`evidence/UNC/20.15.2/增加签约数据纠正参数(ADD-SMSUBDATA)_26305486.md`
+- 原始手册：`evidence/UNC/20.15.2/查询签约数据纠正参数(LST-SMSUBDATA)_72225357.md`

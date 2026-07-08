@@ -59,4 +59,4 @@ ACT PREOCCUPYRES: RUTYPE=CG_SP_RU, IDLENUM=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACT-PREOCCUPYRES.md`
+- 原始手册：`evidence/UNC/20.15.2/预占RU资源（ACT-PREOCCUPYRES）_51174356.md`

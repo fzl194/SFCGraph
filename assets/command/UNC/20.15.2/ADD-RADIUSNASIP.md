@@ -66,4 +66,4 @@ ADD RADIUSNASIP:APN="huawei.com",NASIP="192.168.10.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RADIUSNASIP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RADIUS-NAS-IP（ADD-RADIUSNASIP）_09896751.md`

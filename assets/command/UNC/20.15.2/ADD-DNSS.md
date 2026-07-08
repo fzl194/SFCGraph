@@ -75,4 +75,4 @@ ADD DNSS: GRPID=1, IPT=IPV4, IP="192.168.100.101", PRI=PRI1, PRO=TCP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS服务器(ADD-DNSS)_72345497.md`

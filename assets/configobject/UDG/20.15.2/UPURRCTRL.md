@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPURRCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/UPURRCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询URR控制参数（LST-UPURRCTRL）_45582088.md`
+- 原始手册：`evidence/UDG/20.15.2/设置URR控制参数（SET-UPURRCTRL）_45342328.md`

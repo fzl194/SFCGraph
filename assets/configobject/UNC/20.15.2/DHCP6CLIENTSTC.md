@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCP6CLIENTSTC.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCP6CLIENTSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCPv6客户端报文统计（DSP-DHCP6CLIENTSTC）_00440793.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DHCPv6客户端报文统计（RTR-DHCP6CLIENTSTC）_49801542.md`

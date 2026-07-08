@@ -66,4 +66,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MCASTLOADSPLIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询组播负载分担配置（LST-MCASTLOADSPLIT）_00440457.md`

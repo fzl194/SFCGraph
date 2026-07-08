@@ -57,4 +57,4 @@ LCK RELAYIPSECTION: POOLNAME="pool_relay", SECTIONID=1, ISLOCKED=LOCK;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCK-RELAYIPSECTION.md`
+- 原始手册：`evidence/UDG/20.15.2/锁定媒体中继IP段（LCK-RELAYIPSECTION）_73824724.md`

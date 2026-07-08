@@ -71,4 +71,4 @@ VNFC ID    时间                       通道ID    操作码    结果
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DEVNETCONFREQ.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NETCONF请求信息（DSP-DEVNETCONFREQ）_59103496.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC功能（LST-PCCFUNC）_21559291.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC功能（SET-PCCFUNC）_09897057.md`

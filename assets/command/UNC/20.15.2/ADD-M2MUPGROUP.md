@@ -59,4 +59,4 @@ ADD M2MUPGROUP: UPFGRPNAME="upfgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-M2MUPGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M关联的UPF组（ADD-M2MUPGROUP）_96241690.md`

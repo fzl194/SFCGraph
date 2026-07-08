@@ -58,4 +58,4 @@ RMV QOSPROP:QOSPROPNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-QOSPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除QoS属性（RMV-QOSPROP）_82837651.md`

@@ -75,4 +75,4 @@ RSA3072公钥名称  =  test
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RSA3072.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RSA3072公钥配置（LST-RSA3072）_46609224.md`

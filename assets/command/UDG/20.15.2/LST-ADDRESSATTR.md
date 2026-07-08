@@ -67,4 +67,4 @@ IPv6地址池通配功能开关  =  DISABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ADDRESSATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询AddressAttr配置（LST-ADDRESSATTR）_05977154.md`

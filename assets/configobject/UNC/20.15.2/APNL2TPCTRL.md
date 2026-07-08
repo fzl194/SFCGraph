@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNL2TPCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNL2TPCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-L2TP-CTRL配置（LST-APNL2TPCTRL）_25120884.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-L2TP-CTRL配置（SET-APNL2TPCTRL）_25121210.md`

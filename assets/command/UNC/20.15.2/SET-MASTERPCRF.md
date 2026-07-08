@@ -62,4 +62,4 @@ SET MASTERPCRF:PCRFGRPNAME="huawei",MASTERPCRF="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MASTERPCRF.md`
+- 原始手册：`evidence/UNC/20.15.2/设置主用PCRF（SET-MASTERPCRF）_09897094.md`

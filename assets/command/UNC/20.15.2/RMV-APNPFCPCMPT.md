@@ -58,4 +58,4 @@ RMV APNPFCPCMPT:APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNPFCPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定APN的PFCP私有信元携带配置（RMV-APNPFCPCMPT）_93906692.md`

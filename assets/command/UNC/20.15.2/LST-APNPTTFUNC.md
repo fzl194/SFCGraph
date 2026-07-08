@@ -67,4 +67,4 @@ LTE一键通功能开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNPTTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的一键通功能配置（LST-APNPTTFUNC）_06399911.md`

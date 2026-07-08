@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PLCYNSGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PLCYNSGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/PLCYNSGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用于策略控制的网络切片群组（RMV-PLCYNSGRP）_25121206.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用于策略控制的网络切片群组（ADD-PLCYNSGRP）_25120876.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用于策略控制的网络切片群组（LST-PLCYNSGRP）_25121192.md`

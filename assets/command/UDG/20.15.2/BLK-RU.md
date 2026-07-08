@@ -57,4 +57,4 @@ BLK RU: SCALEGROUP="SG1_CSDB_ForCommon", RULIST="64,65";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BLK-RU.md`
+- 原始手册：`evidence/UDG/20.15.2/闭塞CSDB-RU（BLK-RU）_36508136.md`

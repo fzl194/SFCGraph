@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPCSCFSRVPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPCSCFSRVPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-P-CSCF地址获取方式的优先级配置（LST-APNPCSCFSRVPRI）_09653843.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-P-CSCF地址获取方式的优先级配置（SET-APNPCSCFSRVPRI）_33845577.md`

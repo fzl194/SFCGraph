@@ -67,4 +67,4 @@ RMV CPPOINT: CPPOINTINDEX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CPPOINT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CP端点信息（RMV-CPPOINT）_09654362.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RES.md`
-- 原始手册：`evidence/UDG/20.15.2/RES.md`
+- 原始手册：`evidence/UDG/20.15.2/显示资源信息（DSP-RES）_59036939.md`
+- 原始手册：`evidence/UDG/20.15.2/查询资源配置信息（LST-RES）_59036515.md`

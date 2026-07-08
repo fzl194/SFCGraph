@@ -69,4 +69,4 @@ SET HBUSRCTRL: FASTFWDSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-HBUSRCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/设置高带宽用户功能控制参数（SET-HBUSRCTRL）_41687093.md`

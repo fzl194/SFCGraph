@@ -69,4 +69,4 @@ anti spoofing告警开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPSPOOFALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP-Spoofing攻击告警阈值（LST-IPSPOOFALMTHD）_82837780.md`

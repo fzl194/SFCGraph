@@ -54,4 +54,4 @@ RMV LDPAUTHGROUP:VRFNAME="_public_",AUTHPEERGROUPNAME="bb";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LDPAUTHGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LDP认证组（RMV-LDPAUTHGROUP）_00841341.md`

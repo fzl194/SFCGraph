@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPUECOPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/CPUECOPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局的CPU调频和休眠策略（LST-CPUECOPOLICY）_53585048.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局的CPU调频和休眠策略（SET-CPUECOPOLICY）_87832965.md`

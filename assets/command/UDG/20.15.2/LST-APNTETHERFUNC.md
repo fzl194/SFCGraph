@@ -69,4 +69,4 @@ APN Tethering检测开关信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNTETHERFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN-Tethering检测开关（LST-APNTETHERFUNC）_82837442.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SPECIFICAPNVAL.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECIFICAPNVAL.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECIFICAPNVAL.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECIFICAPNVAL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改用户APN与消息交互使用APN的映射关系（MOD-SPECIFICAPNVAL）_07016801.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户APN与消息交互使用APN的映射关系（RMV-SPECIFICAPNVAL）_07016802.md`
+- 原始手册：`evidence/UDG/20.15.2/增加用户APN与消息交互使用APN的映射关系（ADD-SPECIFICAPNVAL）_07016800.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户APN与消息交互使用APN的映射关系（LST-SPECIFICAPNVAL）_07016803.md`

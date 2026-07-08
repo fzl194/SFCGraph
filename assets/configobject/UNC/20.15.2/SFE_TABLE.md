@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFE_TABLE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示指定资源单元上的SFE的表项信息（DSP-SFE_TABLE）_50121002.md`

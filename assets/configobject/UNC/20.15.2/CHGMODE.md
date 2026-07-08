@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费接口选择方式（LST-CHGMODE）_09652191.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费接口选择方式（SET-CHGMODE）_09651465.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1ALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/S1ALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/S1ALGPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/S1ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式加密和完整性算法优先级配置信息(MOD-S1ALGPRIORITY)_26145652.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式加密和完整性算法优先级配置信息(RMV-S1ALGPRIORITY)_72345249.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式加密和完整性算法优先级配置信息(ADD-S1ALGPRIORITY)_26305462.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式加密和完整性算法优先级配置信息(LST-S1ALGPRIORITY)_72225333.md`

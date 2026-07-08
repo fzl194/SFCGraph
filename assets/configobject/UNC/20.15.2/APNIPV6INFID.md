@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNIPV6INFID.md`
-- 原始手册：`evidence/UNC/20.15.2/APNIPV6INFID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-IPv6接口ID配置（LST-APNIPV6INFID）_96242072.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-IPv6接口ID配置（SET-APNIPV6INFID）_96243076.md`

@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询应用信息(LST-APPINFO)_15736940.md`

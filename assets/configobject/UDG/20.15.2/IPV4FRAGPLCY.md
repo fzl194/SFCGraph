@@ -36,5 +36,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPV4FRAGPLCY.md`
-- 原始手册：`evidence/UDG/20.15.2/IPV4FRAGPLCY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv4分片策略（LST-IPV4FRAGPLCY）_86526767.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv4报文分片策略（SET-IPV4FRAGPLCY）_82837699.md`

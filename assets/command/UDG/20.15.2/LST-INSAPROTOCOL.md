@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-INSAPROTOCOL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询黑白名单协议配置（LST-INSAPROTOCOL）_56165570.md`

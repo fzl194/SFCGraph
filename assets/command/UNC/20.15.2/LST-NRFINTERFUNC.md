@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFINTERFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询国际漫游功能参数（LST-NRFINTERFUNC）_24956636.md`

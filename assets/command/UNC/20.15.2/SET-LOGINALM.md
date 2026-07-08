@@ -59,4 +59,4 @@ SET LOGINALM:REPORTTIMES=10,RESUMETIMES=5,PERIOD=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-LOGINALM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置登录告警策略（SET-LOGINALM）_59036112.md`

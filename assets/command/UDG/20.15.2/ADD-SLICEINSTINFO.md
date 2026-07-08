@@ -59,4 +59,4 @@ ADD SLICEINSTINFO: NSSIID="1", NsiInfo="test";RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SLICEINSTINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/添加切片实例信息（ADD-SLICEINSTINFO）_51061262.md`

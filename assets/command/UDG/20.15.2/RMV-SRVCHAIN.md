@@ -54,4 +54,4 @@ RMV SRVCHAIN:SRVCHAINNAME="TestSrvChain";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SRVCHAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务链（RMV-SRVCHAIN）_42287013.md`

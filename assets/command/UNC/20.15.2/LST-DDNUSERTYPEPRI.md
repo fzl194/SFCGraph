@@ -67,4 +67,4 @@ DDN用户类型优先级开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DDNUSERTYPEPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于用户属性的DDN消息优先级（LST-DDNUSERTYPEPRI）_04284712.md`

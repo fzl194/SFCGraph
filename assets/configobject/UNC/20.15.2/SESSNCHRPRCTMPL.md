@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRPRCTMPL.md`
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改会话CHR流程控制模板（MOD-SESSNCHRPRCTMPL）_35628396.md`
+- 原始手册：`evidence/UNC/20.15.2/删除会话CHR流程控制模板（RMV-SESSNCHRPRCTMPL）_35628397.md`
+- 原始手册：`evidence/UNC/20.15.2/增加会话CHR流程控制模板（ADD-SESSNCHRPRCTMPL）_35628393.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话CHR流程控制模板（LST-SESSNCHRPRCTMPL）_35628395.md`

@@ -56,4 +56,4 @@ RMV MULDNNBINDAREA: DEDDNN="special.dnn", AREANAME="dnnarea1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MULDNNBINDAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能分流专网DNN支持的服务区域（RMV-MULDNNBINDAREA）_47819741.md`

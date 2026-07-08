@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DCSVODPARAS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DCS点播参数（LST-DCSVODPARAS）_11535957.md`

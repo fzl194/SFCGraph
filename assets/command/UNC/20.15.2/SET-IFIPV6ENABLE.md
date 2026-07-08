@@ -58,4 +58,4 @@ SET IFIPV6ENABLE:IFNAME="Ethernet64/0/3",ENABLEFLAG=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-IFIPV6ENABLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接口IPv6使能（SET-IFIPV6ENABLE）_00601329.md`

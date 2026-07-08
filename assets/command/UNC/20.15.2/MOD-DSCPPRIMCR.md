@@ -59,4 +59,4 @@ MOD DSCPPRIMCR: SLTPR=DSCP, DSCPV=56, MAPPRI=PRI_2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DSCPPRIMCR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DSCP映射优先级配置表(MOD-DSCPPRIMCR)_71731089.md`

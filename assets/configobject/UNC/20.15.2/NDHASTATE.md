@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NDHASTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ND与其他组件之间交互状态信息（DSP-NDHASTATE）_50280798.md`

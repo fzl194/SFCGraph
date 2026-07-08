@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VNFCRES.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNFC内的资源配置信息（LST-VNFCRES）_59036883.md`

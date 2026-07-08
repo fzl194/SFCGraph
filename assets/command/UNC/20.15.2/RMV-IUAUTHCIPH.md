@@ -56,4 +56,4 @@ RMV IUAUTHCIPH:IMSIPRE="012544";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IUAUTHCIPH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu模式用户安全参数(RMV-IUAUTHCIPH)_26305458.md`

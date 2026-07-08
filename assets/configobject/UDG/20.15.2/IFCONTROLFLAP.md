@@ -31,8 +31,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IFCONTROLFLAP.md`
-- 原始手册：`evidence/UDG/20.15.2/IFCONTROLFLAP.md`
-- 原始手册：`evidence/UDG/20.15.2/IFCONTROLFLAP.md`
-- 原始手册：`evidence/UDG/20.15.2/IFCONTROLFLAP.md`
-- 原始手册：`evidence/UDG/20.15.2/IFCONTROLFLAP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除接口震荡抑制（RMV-IFCONTROLFLAP）_50120586.md`
+- 原始手册：`evidence/UDG/20.15.2/显示接口震荡抑制动态信息（DSP-IFCONTROLFLAP）_50281650.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口震荡抑制（LST-IFCONTROLFLAP）_00441165.md`
+- 原始手册：`evidence/UDG/20.15.2/添加接口震荡抑制（ADD-IFCONTROLFLAP）_50121362.md`
+- 原始手册：`evidence/UDG/20.15.2/清除接口震荡抑制信息（RTR-IFCONTROLFLAP）_50281094.md`

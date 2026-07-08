@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSACTRLPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NSACTRLPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NSACTRLPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NSACTRLPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NSA控制策略(MOD-NSACTRLPLCY)_26305940.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSA控制策略(RMV-NSACTRLPLCY)_72345731.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSA控制策略(ADD-NSACTRLPLCY)_72225809.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSA控制策略(LST-NSACTRLPLCY)_26146132.md`

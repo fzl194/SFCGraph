@@ -58,4 +58,4 @@ RMV M2MSERVER: GROUPNAME="m2msrvgroup01", SERVERINDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-M2MSERVER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M服务器（RMV-M2MSERVER）_73321242.md`

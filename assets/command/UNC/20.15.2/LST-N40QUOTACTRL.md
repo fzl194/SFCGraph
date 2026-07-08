@@ -67,4 +67,4 @@ RG级阻塞处理时间间隔(分钟)  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N40QUOTACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40接口配额的控制参数（LST-N40QUOTACTRL）_96805487.md`

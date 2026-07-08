@@ -85,4 +85,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PFCPPATHINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PFCP链路相关数据（DSP-PFCPPATHINFO）_10290311.md`

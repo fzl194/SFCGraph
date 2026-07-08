@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCALNRI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALNRI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALNRI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALNRI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本局NRI配置信息(RMV-LOCALNRI)_26146100.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本局NRI配置信息(ADD-LOCALNRI)_72345699.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本局NRI配置信息(LST-LOCALNRI)_72225779.md`
+- 原始手册：`evidence/UNC/20.15.2/解闭本局NRI配置信息(UBL-LOCALNRI)_72345701.md`
+- 原始手册：`evidence/UNC/20.15.2/闭塞本局NRI配置信息(BLK-LOCALNRI)_26305910.md`

@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CELL.md`
-- 原始手册：`evidence/UNC/20.15.2/CELL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除小区(RMV-CELL)_72225669.md`
+- 原始手册：`evidence/UNC/20.15.2/查询小区(LST-CELL)_26145990.md`

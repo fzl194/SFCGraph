@@ -58,4 +58,4 @@ ADD MNCLEN:MCC="460",MNCLEN=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MNCLEN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MNC长度信息（ADD-MNCLEN）_09651501.md`

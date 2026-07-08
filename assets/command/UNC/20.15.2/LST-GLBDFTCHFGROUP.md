@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLBDFTCHFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局默认CHF组（LST-GLBDFTCHFGROUP）_09651740.md`

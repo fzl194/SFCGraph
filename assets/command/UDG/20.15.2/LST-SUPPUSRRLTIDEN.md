@@ -71,4 +71,4 @@ pokemongo_data             pokemongo
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SUPPUSRRLTIDEN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询支持用户关联识别协议（LST-SUPPUSRRLTIDEN）_82837438.md`

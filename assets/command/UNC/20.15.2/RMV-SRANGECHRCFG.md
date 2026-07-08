@@ -73,4 +73,4 @@ RMV SRANGECHRCFG: SUBRANGE=E_SPECIAL_APNQCI, APNNI="Huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SRANGECHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除小范围CHR生成规则（RMV-SRANGECHRCFG）_72225299.md`

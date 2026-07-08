@@ -82,4 +82,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSQUEDETINFOM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示指定队列详细信息（DSP-MSSQUEDETINFOM）_92520015.md`

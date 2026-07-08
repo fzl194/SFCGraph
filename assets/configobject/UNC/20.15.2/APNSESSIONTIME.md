@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNSESSIONTIME.md`
-- 原始手册：`evidence/UNC/20.15.2/APNSESSIONTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN会话上下文定时器配置（LST-APNSESSIONTIME）_96242083.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN会话上下文定时器配置（SET-APNSESSIONTIME）_96243086.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GUTISELAREAMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/GUTISELAREAMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/GUTISELAREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GUTI选网功能区域成员（RMV-GUTISELAREAMEM）_14059369.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GUTI选网功能区域成员（ADD-GUTISELAREAMEM）_77579544.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GUTI选网功能区域成员（LST-GUTISELAREAMEM）_13939877.md`

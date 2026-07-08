@@ -101,4 +101,4 @@ ADD BWMRULE: USERGROUPTYPE=SPECIFIC_GROUP, USERGROUPNAME="testusergroup", BWMRUL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-BWMRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理规则（ADD-BWMRULE）_82837478.md`

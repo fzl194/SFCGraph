@@ -59,4 +59,4 @@ ADD DSCPMAP:DSCP=8,VALUE=4,TYPE=8021p;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DSCPMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/添加DSCP值到VLAN优先级的映射（ADD-DSCPMAP）_00865545.md`

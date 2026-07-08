@@ -85,4 +85,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPUINTFATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-U-IP地址接口属性(LST-GTPUINTFATTR)_72345585.md`

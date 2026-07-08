@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TLSPSK.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSPSK.md`
-- 原始手册：`evidence/UDG/20.15.2/TLSPSK.md`
+- 原始手册：`evidence/UDG/20.15.2/删除预共享密钥（RMV-TLSPSK）_57029816.md`
+- 原始手册：`evidence/UDG/20.15.2/增加预共享密钥（ADD-TLSPSK）_07669721.md`
+- 原始手册：`evidence/UDG/20.15.2/查询预共享密钥信息（LST-TLSPSK）_56870528.md`

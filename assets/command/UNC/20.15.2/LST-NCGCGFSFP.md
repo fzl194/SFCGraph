@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NCGCGFSFP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询软参（LST-NCGCGFSFP）_86022188.md`

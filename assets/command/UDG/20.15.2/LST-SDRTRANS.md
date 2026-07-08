@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SDRTRANS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SDR传输能力（LST-SDRTRANS）_30310141.md`

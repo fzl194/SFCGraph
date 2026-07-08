@@ -26,7 +26,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPOFC.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPOFC.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPOFC.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPOFC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改HTTP局向（MOD-HTTPOFC）_86030329.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HTTP局向（RMV-HTTPOFC）_35550178.md`
+- 原始手册：`evidence/UNC/20.15.2/增加HTTP局向（ADD-HTTPOFC）_35230482.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP局向（LST-HTTPOFC）_86150085.md`

@@ -60,4 +60,4 @@ SET APNNONIPFUNC:APN="isp",NONIPSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-APNNONIPFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-Non-IP功能配置（SET-APNNONIPFUNC）_28567657.md`

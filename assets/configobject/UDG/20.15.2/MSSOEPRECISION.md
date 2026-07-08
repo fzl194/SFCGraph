@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSOEPRECISION.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MSS保序队列调度信息（DSP-MSSOEPRECISION）_00601317.md`

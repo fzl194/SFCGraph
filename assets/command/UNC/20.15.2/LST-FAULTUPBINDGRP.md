@@ -68,4 +68,4 @@ UPF实例标识  =  upf_instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FAULTUPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障UPF与UPF组的绑定关系（LST-FAULTUPBINDGRP）_95057050.md`

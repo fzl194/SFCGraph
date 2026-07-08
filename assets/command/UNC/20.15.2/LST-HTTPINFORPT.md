@@ -58,4 +58,4 @@ HTTP动态头域压缩字典上报定时器  =  60
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HTTPINFORPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP连接信息上报参数（LST-HTTPINFORPT）_84132100.md`

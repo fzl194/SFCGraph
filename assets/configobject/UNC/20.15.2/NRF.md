@@ -35,8 +35,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRF.md`
+- 原始手册：`evidence/UNC/20.15.2/测试服务发现的NF信息（TST-NRF）_46812823.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NRF信息（MOD-NRF）_09652605.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF信息（RMV-NRF）_09651366.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF信息（ADD-NRF）_09652106.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF信息（LST-NRF）_09653174.md`

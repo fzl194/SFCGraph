@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFMANUSENDNTY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFMANUSENDNTY.md`
+- 原始手册：`evidence/UNC/20.15.2/操作手动发送订阅通知（OPR-NRFMANUSENDNTY）_71436549.md`
+- 原始手册：`evidence/UNC/20.15.2/显示手动发送订阅通知结果（DSP-NRFMANUSENDNTY）_71436531.md`

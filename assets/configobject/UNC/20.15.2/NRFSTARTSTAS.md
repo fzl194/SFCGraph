@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSTARTSTAS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NRF开工状态（DSP-NRFSTARTSTAS）_09651466.md`

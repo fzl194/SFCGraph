@@ -67,4 +67,4 @@ SET N2FIXEDFC: FCSWITCH=On, RCVTHD=4000, SNDTHD=40000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N2FIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N2接口固定速率流控信息（SET-N2FIXEDFC）_09651711.md`

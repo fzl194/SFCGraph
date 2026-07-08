@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNUSRPROFG.md`
-- 原始手册：`evidence/UNC/20.15.2/APNUSRPROFG.md`
-- 原始手册：`evidence/UNC/20.15.2/APNUSRPROFG.md`
-- 原始手册：`evidence/UNC/20.15.2/APNUSRPROFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN用户模板组绑定关系（MOD-APNUSRPROFG）_09897225.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN用户模板组绑定关系（RMV-APNUSRPROFG）_09897226.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN用户模板组绑定关系（ADD-APNUSRPROFG）_09897224.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN用户模板组绑定关系（LST-APNUSRPROFG）_09897227.md`

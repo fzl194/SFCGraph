@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TOKENALLOCWT.md`
-- 原始手册：`evidence/UNC/20.15.2/TOKENALLOCWT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务类型分配权重的管理策略（LST-TOKENALLOCWT）_24015940.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务类型分配权重的管理策略（SET-TOKENALLOCWT）_23736568.md`

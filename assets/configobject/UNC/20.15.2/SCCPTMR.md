@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCCPTMR.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPTMR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP定时器参数(LST-SCCPTMR)_72345937.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SCCP定时器参数(SET-SCCPTMR)_26306148.md`

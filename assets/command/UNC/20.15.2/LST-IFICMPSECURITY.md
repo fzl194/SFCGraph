@@ -70,4 +70,4 @@ LST IFICMPSECURITY:IFNAME="Ethernet64/0/3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IFICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口下ICMP安全配置（LST-IFICMPSECURITY）_00865849.md`

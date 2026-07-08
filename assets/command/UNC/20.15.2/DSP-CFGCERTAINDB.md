@@ -81,4 +81,4 @@ TrillNickname   0x12            0x100f          0x0             0x21            
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CFGCERTAINDB.md`
+- 原始手册：`evidence/UNC/20.15.2/显示指定DB表数据（DSP-CFGCERTAINDB）_59103949.md`

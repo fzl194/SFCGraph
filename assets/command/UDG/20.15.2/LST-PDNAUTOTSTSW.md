@@ -67,4 +67,4 @@ Path Fault Tracert Test Switch = ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PDNAUTOTSTSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PDN自动探测开关状态（LST-PDNAUTOTSTSW）_12872232.md`

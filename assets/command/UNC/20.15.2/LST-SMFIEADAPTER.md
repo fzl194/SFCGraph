@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFIEADAPTER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询信元携带控制配置（LST-SMFIEADAPTER）_04217456.md`

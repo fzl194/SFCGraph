@@ -57,4 +57,4 @@ ADD PERFNGLANGRP: GROUPID="A0000001-460-003-01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PERFNGLANGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用于性能统计的5G-LAN群组（ADD-PERFNGLANGRP）_25214873.md`

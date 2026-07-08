@@ -66,4 +66,4 @@ Sv接口域名解析策略 = LAI
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MSCSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSC选择策略(LST-MSCSELPLCY)_72345577.md`

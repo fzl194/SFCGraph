@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LICCTL.md`
-- 原始手册：`evidence/UNC/20.15.2/LICCTL.md`
-- 原始手册：`evidence/UNC/20.15.2/LICCTL.md`
+- 原始手册：`evidence/UNC/20.15.2/停止紧急License(DEA-LICCTL)_46861743.md`
+- 原始手册：`evidence/UNC/20.15.2/启动紧急License(ACT-LICCTL)_46781803.md`
+- 原始手册：`evidence/UNC/20.15.2/查询紧急License状态信息(DSP-LICCTL)_46661889.md`

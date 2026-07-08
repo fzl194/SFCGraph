@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EPSSUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSSUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSSUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSSUBQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改EPS签约QoS配置（MOD-EPSSUBQOS）_09654145.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EPS签约QoS配置（RMV-EPSSUBQOS）_09653729.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EPS签约QoS配置（ADD-EPSSUBQOS）_09653648.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS签约QoS配置（LST-EPSSUBQOS）_09651639.md`

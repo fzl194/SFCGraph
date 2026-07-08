@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSUPI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSUPI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSUPI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的SUPI信息（RMV-PNFSUPI）_09652379.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的SUPI信息（ADD-PNFSUPI）_09651473.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的SUPI信息（LST-PNFSUPI）_09652497.md`

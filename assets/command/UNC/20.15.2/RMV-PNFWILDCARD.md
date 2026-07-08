@@ -62,4 +62,4 @@ RMV PNFWILDCARD: NFTYPE=Nf5G_EIR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFWILDCARD.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的通配策略（RMV-PNFWILDCARD）_35519281.md`

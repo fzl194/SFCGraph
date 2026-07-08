@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNAFFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNAFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN防欺诈功能（LST-APNAFFUNC）_82837801.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN防欺诈功能（SET-APNAFFUNC）_82837800.md`

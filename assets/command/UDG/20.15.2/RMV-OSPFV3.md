@@ -59,4 +59,4 @@ RMV OSPFV3: PROCID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-OSPFV3.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3进程配置（RMV-OSPFV3）_00866049.md`

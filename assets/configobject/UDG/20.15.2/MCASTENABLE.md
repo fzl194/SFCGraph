@@ -25,6 +25,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MCASTENABLE.md`
-- 原始手册：`evidence/UDG/20.15.2/MCASTENABLE.md`
-- 原始手册：`evidence/UDG/20.15.2/MCASTENABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除组播使能配置（RMV-MCASTENABLE）_50281414.md`
+- 原始手册：`evidence/UDG/20.15.2/查询组播使能开关配置（LST-MCASTENABLE）_49801642.md`
+- 原始手册：`evidence/UDG/20.15.2/添加组播使能（ADD-MCASTENABLE）_50281530.md`

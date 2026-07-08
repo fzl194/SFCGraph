@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFNASFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定消息类型的AMF-NAS固定速率流控信息（LST-AMFNASFIXEDFC）_06990498.md`

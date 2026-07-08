@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGCHRSTORCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGCHRSTORCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF小范围CHR存储配置（LST-NGCHRSTORCFG）_14280396.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF小范围CHR存储配置（SET-NGCHRSTORCFG）_14120442.md`

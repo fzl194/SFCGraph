@@ -52,4 +52,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OMSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OM功能开关（LST-OMSWITCH）_86522834.md`

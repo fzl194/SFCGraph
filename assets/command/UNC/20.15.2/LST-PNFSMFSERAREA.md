@@ -78,4 +78,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFSMFSERAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的SMF服务区域信息（LST-PNFSMFSERAREA）_09652242.md`

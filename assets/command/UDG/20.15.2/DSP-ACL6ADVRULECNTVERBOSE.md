@@ -67,4 +67,4 @@ IPv6 ACL规则组标识  =  3000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-ACL6ADVRULECNTVERBOSE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询高级ACL6规则匹配详细计数（DSP-ACL6ADVRULECNTVERBOSE）_00440805.md`

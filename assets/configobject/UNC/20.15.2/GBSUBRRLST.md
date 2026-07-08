@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBSUBRRLST.md`
-- 原始手册：`evidence/UNC/20.15.2/GBSUBRRLST.md`
-- 原始手册：`evidence/UNC/20.15.2/GBSUBRRLST.md`
-- 原始手册：`evidence/UNC/20.15.2/GBSUBRRLST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Gb模式用户漫游限制列表(MOD-GBSUBRRLST)_72345145.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式用户漫游限制列表(RMV-GBSUBRRLST)_26305358.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gb模式用户漫游限制列表(ADD-GBSUBRRLST)_72225227.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式用户漫游限制列表(LST-GBSUBRRLST)_26145548.md`

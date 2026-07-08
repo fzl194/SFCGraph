@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EVTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/EVTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询策略参数值（LST-EVTPARA）_36260906.md`
+- 原始手册：`evidence/UDG/20.15.2/设置策略参数值（SET-EVTPARA）_82500407.md`

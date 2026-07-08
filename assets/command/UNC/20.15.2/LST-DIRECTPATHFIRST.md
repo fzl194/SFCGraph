@@ -69,4 +69,4 @@ Gx接口直连路径优先开关 = 允许
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DIRECTPATHFIRST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询直连路径优先开关（LST-DIRECTPATHFIRST）_61818782.md`

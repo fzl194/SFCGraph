@@ -67,4 +67,4 @@ ADD PCRFBINDGRP:PCRFGRPNAME="abc",PCRFHOSTNAME="aaa", WEIGHT=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PCRFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCRF与PCRF-Group的关联关系（ADD-PCRFBINDGRP）_09897096.md`

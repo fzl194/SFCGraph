@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NCCPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/NCCPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NCC策略(LST-NCCPOLICY)_69362704.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NCC策略(SET-NCCPOLICY)_69678032.md`

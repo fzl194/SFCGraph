@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFV3DEFAULTROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3默认路由宣告配置（LST-OSPFV3DEFAULTROUTE）_00440649.md`

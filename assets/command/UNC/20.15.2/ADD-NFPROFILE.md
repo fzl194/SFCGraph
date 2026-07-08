@@ -73,4 +73,4 @@ ADD NFPROFILE: NFINSTANCENAME="AMF_Instance_0", NFTYPE=NfAMF, NFSTATUS=Registere
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF实例概述信息（ADD-NFPROFILE）_09654146.md`

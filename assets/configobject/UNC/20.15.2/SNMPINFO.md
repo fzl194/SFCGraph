@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SNMPINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元长连接信息（LST-SNMPINFO）_86563519.md`

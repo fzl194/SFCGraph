@@ -61,4 +61,4 @@ IMS DDN流量控制上报CHR配置开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IMSDDNFLOWCTRLCHR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMS-DDN流量控制上报CHR配置开关（LST-IMSDDNFLOWCTRLCHR）_13337934.md`

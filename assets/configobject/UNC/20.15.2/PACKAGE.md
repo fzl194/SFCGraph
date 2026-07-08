@@ -26,9 +26,9 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PACKAGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PACKAGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PACKAGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PACKAGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PACKAGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PACKAGE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除软件包（RMV-PACKAGE）_59103573.md`
+- 原始手册：`evidence/UNC/20.15.2/加载软件包（LOD-PACKAGE）_59104019.md`
+- 原始手册：`evidence/UNC/20.15.2/回退升级操作（RBK-PACKAGE）_59103831.md`
+- 原始手册：`evidence/UNC/20.15.2/激活软件包（ACT-PACKAGE）_59103426.md`
+- 原始手册：`evidence/UNC/20.15.2/显示系统软件信息（DSP-PACKAGE）_59103342.md`
+- 原始手册：`evidence/UNC/20.15.2/下载软件包（DLD-PACKAGE）_59036083.md`

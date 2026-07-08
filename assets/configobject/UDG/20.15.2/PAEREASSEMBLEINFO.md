@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEREASSEMBLEINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEREASSEMBLEINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE分片重组统计信息（DSP-PAEREASSEMBLEINFO）_92520036.md`
+- 原始手册：`evidence/UDG/20.15.2/清除PAE分片重组统计计数（RTR-PAEREASSEMBLEINFO）_92520006.md`

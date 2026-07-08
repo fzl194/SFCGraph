@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TTPLUGDBGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩展VNFC插件调试信息（DSP-TTPLUGDBGINFO）_26145864.md`

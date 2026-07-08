@@ -70,4 +70,4 @@ ADD POOLBINDGROUP: POOLGROUPNAME="poolgroup1", POOLNAME="pool1", PRIORITY=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-POOLBINDGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/绑定地址池到地址池组（ADD-POOLBINDGROUP）_82837143.md`

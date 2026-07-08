@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRVCERTSCENE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询配置证书场景（LST-SRVCERTSCENE）_43992592.md`

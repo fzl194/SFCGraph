@@ -55,4 +55,4 @@ CLR DYNNRFSTAT:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-DYNNRFSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/清除内部统计信息（CLR-DYNNRFSTAT）_17555433.md`

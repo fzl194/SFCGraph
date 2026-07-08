@@ -61,4 +61,4 @@ ADD DIAMAAAGRP:GROUPNAME="diametergroup",PGWIDENTITY=IP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DIAMAAAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter-AAA服务器组（ADD-DIAMAAAGRP）_64343820.md`

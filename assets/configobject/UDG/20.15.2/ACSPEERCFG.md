@@ -31,4 +31,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACSPEERCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/启动或停止ACS与远端设备的配置同步(SYN-ACSPEERCFG)_87242094.md`

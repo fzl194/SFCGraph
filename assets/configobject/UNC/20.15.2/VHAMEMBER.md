@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VHAMEMBER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询vHA-ETCD集群节点详细信息（DSP-VHAMEMBER）_51852642.md`

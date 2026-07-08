@@ -56,4 +56,4 @@ RMV OSPFPREFERENCE:PROCID=1,TOPOID=0,ROUTETYPE=intra;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-OSPFPREFERENCE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF协议路由的优先级配置（RMV-OSPFPREFERENCE）_00865869.md`

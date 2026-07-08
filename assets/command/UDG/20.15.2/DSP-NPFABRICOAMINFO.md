@@ -66,4 +66,4 @@ FRAME-0-SLOT-8  FRAME-0-SLOT-8-NP-0  1112      1116        up
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPFABRICOAMINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NP-OAM链路信息（DSP-NPFABRICOAMINFO）_43641445.md`

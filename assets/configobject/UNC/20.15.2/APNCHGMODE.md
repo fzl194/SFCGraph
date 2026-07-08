@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的计费接口选择方式（MOD-APNCHGMODE）_72001549.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的计费接口选择方式（RMV-APNCHGMODE）_96242742.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的计费接口选择方式（ADD-APNCHGMODE）_72001540.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的计费接口选择方式（LST-APNCHGMODE）_72001543.md`

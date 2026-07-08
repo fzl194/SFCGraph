@@ -67,4 +67,4 @@ LST IPOPTSECURITYIF: OPTIONTYPE=routeRecord, IFNAME="Ethernet66/0/4";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPOPTSECURITYIF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口IP选项安全配置（LST-IPOPTSECURITYIF）_49961306.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCGFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NCG功能实例信息（MOD-NCGFUNCTION）_45110927.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NCG功能实例信息（RMV-NCGFUNCTION）_45110933.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NCG功能实例信息（ADD-NCGFUNCTION）_45110911.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NCG功能实例信息（LST-NCGFUNCTION）_45110923.md`

@@ -66,4 +66,4 @@ ADD PNFSERVICEVER: NFINSTANCEID="AMF_Instance_0", SRVINSTANCEID="Service_Instanc
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFSERVICEVER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的服务实例的版本信息（ADD-PNFSERVICEVER）_09653832.md`

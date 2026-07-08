@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSMSFWHLISTSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSMSFWHLISTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF白名单开关（LST-NRFSMSFWHLISTSW）_71463514.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF白名单开关（SET-NRFSMSFWHLISTSW）_22223361.md`

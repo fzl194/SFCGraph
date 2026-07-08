@@ -69,4 +69,4 @@ TARGETADDR  BYPLMN            12303     NOTUSEPORT
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SBIFQDNPORTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询FQDN端口策略（LST-SBIFQDNPORTPLCY）_27907825.md`

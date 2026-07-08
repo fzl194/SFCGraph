@@ -74,4 +74,4 @@ SMSF计费开关 = 否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AGFFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AGF的功能参数（LST-AGFFUNCPARA）_45110915.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPFABRICOAMSTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/NPFABRICOAMSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NP-Fabric统计数据（DSP-NPFABRICOAMSTAT）_87337576.md`
+- 原始手册：`evidence/UDG/20.15.2/清除NP-Fabric统计数据（RTR-NPFABRICOAMSTAT）_87356184.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询proxy-SMF功能配置（LST-PROXYSMFFUNC）_23622954.md`
+- 原始手册：`evidence/UNC/20.15.2/设置proxy-SMF功能配置（SET-PROXYSMFFUNC）_23782842.md`

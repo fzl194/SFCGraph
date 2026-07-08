@@ -88,4 +88,4 @@ PGW-C和SGW-C/PGW-C空闲上下文检查开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNIDLETIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN空闲上下文定时器配置（LST-APNIDLETIME）_09653829.md`

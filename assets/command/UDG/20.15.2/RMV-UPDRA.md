@@ -61,4 +61,4 @@ RMV UPDRA:HOSTNAME="dra1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPDRA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DRA（RMV-UPDRA）_45432704.md`

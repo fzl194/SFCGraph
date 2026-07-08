@@ -58,4 +58,4 @@ RMV PERFDNN: DNN="huawei.com", MCC="123", MNC="03", SNSSAI="1-010101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PERFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN性能统计对象（RMV-PERFDNN）_64670741.md`

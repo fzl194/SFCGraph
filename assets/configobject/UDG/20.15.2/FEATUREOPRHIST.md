@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FEATUREOPRHIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询特性上下线历史（DSP-FEATUREOPRHIST）_14567237.md`

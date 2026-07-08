@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NOCENTCNCHL.md`
-- 原始手册：`evidence/UNC/20.15.2/NOCENTCNCHL.md`
-- 原始手册：`evidence/UNC/20.15.2/NOCENTCNCHL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RU通道过滤规则（RMV-NOCENTCNCHL）_36376001.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RU通道过滤规则（ADD-NOCENTCNCHL）_83816556.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RU通道过滤规则（LST-NOCENTCNCHL）_36216641.md`

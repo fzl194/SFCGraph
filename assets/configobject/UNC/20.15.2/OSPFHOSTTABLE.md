@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFHOSTTABLE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF动态主机名的信息（DSP-OSPFHOSTTABLE）_00866737.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTANEIBCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTANEIBCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTANEIBCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA邻接关系配置（RMV-NGTANEIBCFG）_76181743.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TA邻接关系配置（ADD-NGTANEIBCFG）_76181739.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TA邻接关系配置（LST-NGTANEIBCFG）_76181742.md`

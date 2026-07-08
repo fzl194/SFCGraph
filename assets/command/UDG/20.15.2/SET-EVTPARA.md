@@ -53,4 +53,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-EVTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置策略参数值（SET-EVTPARA）_82500407.md`

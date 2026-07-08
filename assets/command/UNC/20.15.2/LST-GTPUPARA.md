@@ -80,4 +80,4 @@ GTPU路径的Echo探测的T3 Response时长  =  7
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPUPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-U协议参数(LST-GTPUPARA)_72345445.md`

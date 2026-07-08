@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESREPORTFAILUREINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示组件上报的故障信息（DSP-RESREPORTFAILUREINFO）_51002633.md`

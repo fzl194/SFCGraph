@@ -59,4 +59,4 @@ ADD UEUSGTYPEGP: UEUSGTYPEGPID=1, DESC="eMtc";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UEUSGTYPEGP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UE-USAGE-TYPE群组(ADD-UEUSGTYPEGP)_72225499.md`

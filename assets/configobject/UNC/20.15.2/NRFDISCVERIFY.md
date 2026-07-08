@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDISCVERIFY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDISCVERIFY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现NF属性冲突核验参数（LST-NRFDISCVERIFY）_35374739.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务发现NF属性冲突核验参数（SET-NRFDISCVERIFY）_88377454.md`

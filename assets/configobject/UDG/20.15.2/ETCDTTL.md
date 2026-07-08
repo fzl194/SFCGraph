@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ETCDTTL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用于仲裁目的的key的租约信息（DSP-ETCDTTL）_94730406.md`

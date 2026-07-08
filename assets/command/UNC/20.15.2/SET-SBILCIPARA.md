@@ -66,4 +66,4 @@ SET SBILCIPARA: SWITCH=ON, THRESHOLD=90, STEPS=6;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SBILCIPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务化接口负载控制参数（SET-SBILCIPARA）_46972873.md`

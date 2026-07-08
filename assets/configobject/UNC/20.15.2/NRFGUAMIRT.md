@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFGUAMIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGUAMIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGUAMIRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGUAMIRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GUAMI路由（MOD-NRFGUAMIRT）_09653263.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GUAMI路由（RMV-NRFGUAMIRT）_09652546.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GUAMI路由（ADD-NRFGUAMIRT）_09652588.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GUAMI路由（LST-NRFGUAMIRT）_09654421.md`

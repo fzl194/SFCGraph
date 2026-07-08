@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRSTORECFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SESSNCHRSTORECFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR存储配置（LST-SESSNCHRSTORECFG）_89030926.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CHR存储配置（SET-SESSNCHRSTORECFG）_89190590.md`

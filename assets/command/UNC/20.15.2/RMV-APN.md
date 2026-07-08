@@ -68,4 +68,4 @@ RMV APN:APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN配置（RMV-APN）_09653148.md`

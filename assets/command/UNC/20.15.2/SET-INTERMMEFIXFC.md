@@ -73,4 +73,4 @@ SET INTERMMEFIXFC: ATTACHFCSWITCH=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-INTERMMEFIXFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Inter-MME接入固定速率流控功能相关参数(SET-INTERMMEFIXFC)_04085540.md`

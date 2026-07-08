@@ -40,5 +40,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TLBGLBCONF.md`
-- 原始手册：`evidence/UDG/20.15.2/TLBGLBCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TLB全局配置（LST-TLBGLBCONF）_15834601.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TLB全局配置（SET-TLBGLBCONF）_69954926.md`

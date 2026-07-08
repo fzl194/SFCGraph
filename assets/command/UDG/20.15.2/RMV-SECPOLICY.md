@@ -53,4 +53,4 @@ RMV SECPOLICY:POLICYID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SECPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除防攻击策略（RMV-SECPOLICY）_00866041.md`

@@ -70,4 +70,4 @@ paeFmeaInfo  254     0         -
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSPBUFREUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PBUF重用信息（DSP-MSSPBUFREUSE）_32207987.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPLSPMGPEERADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP的邻居地址信息（DSP-LDPLSPMGPEERADDR）_49801738.md`

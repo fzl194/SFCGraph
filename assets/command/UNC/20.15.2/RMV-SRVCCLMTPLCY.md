@@ -60,4 +60,4 @@ RMV SRVCCLMTPLCY: SUBRANGE=ALL_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SRVCCLMTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SRVCC流程限制策略(RMV-SRVCCLMTPLCY)_36482584.md`

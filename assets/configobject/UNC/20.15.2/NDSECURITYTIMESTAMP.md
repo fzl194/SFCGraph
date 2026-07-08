@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NDSECURITYTIMESTAMP.md`
-- 原始手册：`evidence/UNC/20.15.2/NDSECURITYTIMESTAMP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ND安全时间戳（DSP-NDSECURITYTIMESTAMP）_00840629.md`
+- 原始手册：`evidence/UNC/20.15.2/清除ND安全时间戳（RTR-NDSECURITYTIMESTAMP）_50121578.md`

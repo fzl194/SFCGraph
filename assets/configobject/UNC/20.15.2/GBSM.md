@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBSM.md`
-- 原始手册：`evidence/UNC/20.15.2/GBSM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式SM协议参数(LST-GBSM)_26145702.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb模式SM协议参数(SET-GBSM)_72345297.md`

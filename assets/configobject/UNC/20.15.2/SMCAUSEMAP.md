@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SM原因值映射配置（MOD-SMCAUSEMAP）_09654181.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SM原因值映射配置（RMV-SMCAUSEMAP）_09651423.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SM原因值映射配置（ADD-SMCAUSEMAP）_09652445.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SM原因值映射配置（LST-SMCAUSEMAP）_09652358.md`

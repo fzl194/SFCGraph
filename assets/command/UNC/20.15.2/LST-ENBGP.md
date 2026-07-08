@@ -73,4 +73,4 @@ eNodeB群组名称  =  highspeed_usercheck_entry
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ENBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询eNodeB群组(LST-ENBGP)_72345205.md`

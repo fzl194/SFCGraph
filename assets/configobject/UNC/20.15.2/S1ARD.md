@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1ARD.md`
-- 原始手册：`evidence/UNC/20.15.2/S1ARD.md`
-- 原始手册：`evidence/UNC/20.15.2/S1ARD.md`
-- 原始手册：`evidence/UNC/20.15.2/S1ARD.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式接入限制参数(MOD-S1ARD)_26305290.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式接入限制参数(RMV-S1ARD)_72225159.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式接入限制参数(ADD-S1ARD)_26145478.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式接入限制参数(LST-S1ARD)_72345077.md`

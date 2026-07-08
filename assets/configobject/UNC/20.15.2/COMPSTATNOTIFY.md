@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMPSTATNOTIFY.md`
+- 原始手册：`evidence/UNC/20.15.2/显示组件状态通知记录（DSP-COMPSTATNOTIFY）_59104123.md`

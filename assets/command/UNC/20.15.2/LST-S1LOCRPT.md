@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-S1LOCRPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式实时小区位置订阅(LST-S1LOCRPT)_72345171.md`

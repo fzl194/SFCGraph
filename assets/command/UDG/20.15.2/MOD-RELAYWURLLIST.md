@@ -78,4 +78,4 @@ MOD RELAYWURLLIST: RELAYURLLISTNM="list01", RELAYURLNAME="url01",URL="www.huawei
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-RELAYWURLLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继白名单URL列表（MOD-RELAYWURLLIST）_43992614.md`

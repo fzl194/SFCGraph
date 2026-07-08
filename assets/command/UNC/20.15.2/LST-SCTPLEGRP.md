@@ -64,4 +64,4 @@ SCTP 本端实体组标识  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCTPLEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP本地实体组(LST-SCTPLEGRP)_19187146.md`

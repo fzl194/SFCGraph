@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFRGNPREFPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFRGNPREFPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF区域优选策略（LST-NRFRGNPREFPLY）_93220678.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF区域优选策略（SET-NRFRGNPREFPLY）_92741002.md`

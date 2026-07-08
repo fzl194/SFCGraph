@@ -64,4 +64,4 @@ scale in/out load resource category  =  SM session memory resource
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCALELOADMON.md`
+- 原始手册：`evidence/UNC/20.15.2/查询自动扩缩容监测的虚机资源（LST-SCALELOADMON）_23736552.md`

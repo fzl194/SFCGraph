@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EPSQOS4DEFBER.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQOS4DEFBER.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQOS4DEFBER.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQOS4DEFBER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Qos-Profile缺省承载QoS属性（MOD-EPSQOS4DEFBER）_24796826.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Qos-Profile缺省承载QoS属性（RMV-EPSQOS4DEFBER）_71516449.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Qos-Profile缺省承载QoS属性（ADD-EPSQOS4DEFBER）_71516419.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Qos-Profile缺省承载QoS属性（LST-EPSQOS4DEFBER）_24796818.md`

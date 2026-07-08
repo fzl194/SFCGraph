@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNALIAS.md`
-- 原始手册：`evidence/UDG/20.15.2/APNALIAS.md`
-- 原始手册：`evidence/UDG/20.15.2/APNALIAS.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ApnAlias配置（RMV-APNALIAS）_86526641.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ApnAlias配置（LST-APNALIAS）_82837025.md`
+- 原始手册：`evidence/UDG/20.15.2/添加ApnAlias配置（ADD-APNALIAS）_82837023.md`

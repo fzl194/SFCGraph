@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TMAPINTF.md`
-- 原始手册：`evidence/UNC/20.15.2/TMAPINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Tm接口参数(LST-TMAPINTF)_40967673.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Tm接口参数(SET-TMAPINTF)_88088456.md`

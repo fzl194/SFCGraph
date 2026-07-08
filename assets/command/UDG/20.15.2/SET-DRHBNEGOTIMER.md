@@ -77,4 +77,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DRHBNEGOTIMER.md`
+- 原始手册：`evidence/UDG/20.15.2/设置容灾定时器（SET-DRHBNEGOTIMER）_23714710.md`

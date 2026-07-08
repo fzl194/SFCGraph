@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUREPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/IUREPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/IUREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除3G重定向PLMN(RMV-IUREPLMN)_19455573.md`
+- 原始手册：`evidence/UNC/20.15.2/增加3G重定向PLMN(ADD-IUREPLMN)_19541117.md`
+- 原始手册：`evidence/UNC/20.15.2/查询3G重定向PLMN(LST-IUREPLMN)_84095370.md`

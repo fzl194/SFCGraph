@@ -57,4 +57,4 @@ SET E2ETRCCFG: SGS=YES, SV=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-E2ETRCCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置端到端用户跟踪参数(SET-E2ETRCCFG)_26305220.md`

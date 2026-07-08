@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PGWNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWNODE.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除P-GW局向(RMV-PGWNODE)_26305518.md`
+- 原始手册：`evidence/UNC/20.15.2/增加P-GW局向(ADD-PGWNODE)_72225387.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-GW局向(LST-PGWNODE)_72345305.md`

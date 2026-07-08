@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NETSUBHEALTH.md`
-- 原始手册：`evidence/UNC/20.15.2/NETSUBHEALTH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网络亚健康参数（LST-NETSUBHEALTH）_88422284.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网络亚健康参数（SET-NETSUBHEALTH）_88773788.md`

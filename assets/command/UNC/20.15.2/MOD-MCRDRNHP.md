@@ -58,4 +58,4 @@ MOD MCRDRNHP: VPNNAME="vrf1", IPVERSION=IPv4, NEXTHOPADDRV4="192.168.0.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MCRDRNHP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改组播报文重定向策略（MOD-MCRDRNHP）_94223896.md`

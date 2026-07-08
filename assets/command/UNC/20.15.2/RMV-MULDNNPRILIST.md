@@ -56,4 +56,4 @@ RMV MULDNNPRILIST: DEDDNN="special.dnn";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MULDNNPRILIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地专网DNN就近接入优先级（RMV-MULDNNPRILIST）_87893234.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYPLMNLOCSW.md`
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYPLMNLOCSW.md`
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYPLMNLOCSW.md`
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYPLMNLOCSW.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基于位置区+PLMN分配地址的开关（MOD-IPALLOCBYPLMNLOCSW）_37284281.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于位置区+PLMN分配地址的开关（RMV-IPALLOCBYPLMNLOCSW）_41443958.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于位置区+PLMN分配地址的开关（LST-IPALLOCBYPLMNLOCSW）_36924187.md`
+- 原始手册：`evidence/UDG/20.15.2/添加基于位置区+PLMN分配地址的开关（ADD-IPALLOCBYPLMNLOCSW）_37484063.md`

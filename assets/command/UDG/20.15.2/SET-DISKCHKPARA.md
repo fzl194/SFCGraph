@@ -89,4 +89,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DISKCHKPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置存储检测参数（SET-DISKCHKPARA）_80543423.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEPORTBYTB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE-Fabric端口的TB统计信息（DSP-PAEPORTBYTB）_74582037.md`

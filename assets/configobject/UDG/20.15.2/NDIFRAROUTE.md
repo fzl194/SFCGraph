@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NDIFRAROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/NDIFRAROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/NDIFRAROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/NDIFRAROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改接口上ND-RA路由配置信息（MOD-NDIFRAROUTE）_00600525.md`
+- 原始手册：`evidence/UDG/20.15.2/删除接口上ND-RA路由配置信息（RMV-NDIFRAROUTE）_00840573.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口上ND-RA路由配置信息（ADD-NDIFRAROUTE）_00841429.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口上ND-RA路由配置信息（LST-NDIFRAROUTE）_50121382.md`

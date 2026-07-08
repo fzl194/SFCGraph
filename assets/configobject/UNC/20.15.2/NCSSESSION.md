@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCSSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NETCONF会话信息（DSP-NCSSESSION）_59103552.md`

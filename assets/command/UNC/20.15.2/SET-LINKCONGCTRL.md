@@ -73,4 +73,4 @@ SET LINKCONGCTRL: ALMSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-LINKCONGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Diameter链路拥塞控制（SET-LINKCONGCTRL）_09897276.md`

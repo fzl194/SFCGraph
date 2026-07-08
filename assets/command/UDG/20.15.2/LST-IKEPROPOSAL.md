@@ -66,4 +66,4 @@ SA持续长度（s）  =  86400
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IKEPROPOSAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IKE提议（LST-IKEPROPOSAL）_25830693.md`

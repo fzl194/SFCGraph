@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFUDMRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF的UDM故障重选策略（LST-SMFUDMRESET）_96242475.md`

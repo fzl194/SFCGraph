@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SLADBGDATA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SLA调试数据（DSP-SLADBGDATA）_00840741.md`

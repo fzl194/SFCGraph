@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GGSN_P-GW选择策略（MOD-GWSELPLCY）_26305754.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GGSN_P-GW选择策略（RMV-GWSELPLCY）_72225623.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GGSN_P-GW选择策略（ADD-GWSELPLCY）_26145944.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GGSN_P-GW选择策略（LST-GWSELPLCY）_72345545.md`

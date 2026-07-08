@@ -96,4 +96,4 @@ MOD PNFPROFILE: NFINSTANCEID="SMF_Instance_0", NFSTATUS=Registered, FQDN="huawei
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PNFPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF实例概述信息（MOD-PNFPROFILE）_09653668.md`

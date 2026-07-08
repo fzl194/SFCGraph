@@ -70,4 +70,4 @@ SET BFD:BFDENABLE=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-BFD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置BFD全局属性（SET-BFD）_00840937.md`

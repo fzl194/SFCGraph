@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DEACTIVERATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询去激活用户承载的速率（LST-DEACTIVERATE）_09652350.md`

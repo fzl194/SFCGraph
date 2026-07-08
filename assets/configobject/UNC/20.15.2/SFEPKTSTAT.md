@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEPKTSTAT.md`
-- 原始手册：`evidence/UNC/20.15.2/SFEPKTSTAT.md`
-- 原始手册：`evidence/UNC/20.15.2/SFEPKTSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SFE报文统计信息（DSP-SFEPKTSTAT）_50120990.md`
+- 原始手册：`evidence/UNC/20.15.2/查询软转发报文统计记录开关（LST-SFEPKTSTAT）_00441373.md`
+- 原始手册：`evidence/UNC/20.15.2/设置报文统计记录开关（SET-SFEPKTSTAT）_50280870.md`

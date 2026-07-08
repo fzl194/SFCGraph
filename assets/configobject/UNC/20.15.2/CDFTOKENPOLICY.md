@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDFTOKENPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/CDFTOKENPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CDF-token策略（LST-CDFTOKENPOLICY）_66773960.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CDF-token策略（SET-CDFTOKENPOLICY）_14295033.md`

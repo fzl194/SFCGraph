@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSIFTRUST.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSIFTRUST.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSIFTRUST.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSIFTRUST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改QoS接口信任（MOD-QOSIFTRUST）_00441385.md`
+- 原始手册：`evidence/UDG/20.15.2/删除QoS接口信任（RMV-QOSIFTRUST）_00865805.md`
+- 原始手册：`evidence/UDG/20.15.2/增加QoS接口信任（ADD-QOSIFTRUST）_50121734.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoS接口信任（LST-QOSIFTRUST）_50280970.md`

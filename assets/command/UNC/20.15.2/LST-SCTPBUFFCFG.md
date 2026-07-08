@@ -66,4 +66,4 @@ LST SCTPBUFFCFG:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCTPBUFFCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP缓冲区参数源(LST-SCTPBUFFCFG)_50812805.md`

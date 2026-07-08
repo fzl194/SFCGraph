@@ -61,4 +61,4 @@ EXP LOG: SWITCH=ENABLE, IPVERSION=IPV4, IPV4="10.104.64.129", PORT=22, USER="use
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EXP-LOG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置日志导出参数（EXP-LOG）_42491895.md`

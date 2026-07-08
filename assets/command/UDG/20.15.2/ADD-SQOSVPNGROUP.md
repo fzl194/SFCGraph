@@ -56,4 +56,4 @@ ADD SQOSVPNGROUP:VPNGROUPNAME="vg1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SQOSVPNGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加VPN组（ADD-SQOSVPNGROUP）_00600349.md`

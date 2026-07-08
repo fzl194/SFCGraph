@@ -55,4 +55,4 @@ RMV AMFSERVICELIST: SERVICENAME="namfComm";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF服务列表（RMV-AMFSERVICELIST）_09652985.md`

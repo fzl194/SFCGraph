@@ -66,4 +66,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RPTENCRYPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表加密算法配置（LST-RPTENCRYPT）_06561550.md`

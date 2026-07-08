@@ -65,4 +65,4 @@ ADD MGMDSSMAP:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ISSSMMAPINGMASK=TRUE,
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MGMDSSMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/添加IGMP-SSM映射配置（ADD-MGMDSSMAP）_49961978.md`

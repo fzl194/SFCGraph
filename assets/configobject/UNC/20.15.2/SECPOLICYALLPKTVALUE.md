@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYALLPKTVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置上送报文总体速率值（SET-SECPOLICYALLPKTVALUE）_00866461.md`

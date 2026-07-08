@@ -67,4 +67,4 @@ VPLMN信息  =  08600
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VPLMNCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于VPLMN配置的漫游用户归属地计费模式（LST-VPLMNCHGMODE）_26568361.md`

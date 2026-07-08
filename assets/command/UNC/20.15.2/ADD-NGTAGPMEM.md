@@ -63,4 +63,4 @@ ADD NGTAGPMEM: NGTAGPID=1, BGNTAC="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGTAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-TA群组成员（ADD-NGTAGPMEM）_09572742.md`

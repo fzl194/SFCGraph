@@ -53,4 +53,4 @@ SET LBSOFTPARA: PARAID=1023, PARAVALUE=2;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-LBSOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CSLB软件调试参数表（SET-LBSOFTPARA）_29627111.md`

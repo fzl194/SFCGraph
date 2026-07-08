@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TMGIRNG.md`
-- 原始手册：`evidence/UNC/20.15.2/TMGIRNG.md`
-- 原始手册：`evidence/UNC/20.15.2/TMGIRNG.md`
-- 原始手册：`evidence/UNC/20.15.2/TMGIRNG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TMGI号段（RMV-TMGIRNG）_77708362.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TMGI号段（ADD-TMGIRNG）_27748049.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TMGI号段（LST-TMGIRNG）_77548762.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定TMGI号段（LCK-TMGIRNG）_48411841.md`

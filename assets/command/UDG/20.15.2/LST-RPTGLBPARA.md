@@ -74,4 +74,4 @@ TCP业务分析上报功能流抽样率  =  1000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RPTGLBPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表全局参数（LST-RPTGLBPARA）_05977162.md`

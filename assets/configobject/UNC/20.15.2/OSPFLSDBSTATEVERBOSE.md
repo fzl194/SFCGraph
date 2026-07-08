@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFLSDBSTATEVERBOSE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF-LSDB详细信息（DSP-OSPFLSDBSTATEVERBOSE）_49801974.md`

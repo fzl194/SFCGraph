@@ -61,4 +61,4 @@ RMV SMFRESEL: DNN="IMS", ISNSSAI=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFRESEL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地SMF重选策略（RMV-SMFRESEL）_45495626.md`

@@ -56,4 +56,4 @@ RMV GRETUNNEL:TNLNAME="Tunnel1",TNLTYPE=gre;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GRETUNNEL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GRE隧道（RMV-GRETUNNEL）_00600977.md`

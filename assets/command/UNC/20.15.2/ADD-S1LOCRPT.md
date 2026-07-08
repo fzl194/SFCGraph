@@ -66,4 +66,4 @@ ADD S1LOCRPT: AREA=TA, MCC="111", MNC="222", TAC="0x3333", TACRANGE="0x4444", SU
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-S1LOCRPT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式实时小区位置订阅(ADD-S1LOCRPT)_26145572.md`

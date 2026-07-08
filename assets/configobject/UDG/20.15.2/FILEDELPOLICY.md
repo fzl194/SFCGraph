@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FILEDELPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/FILEDELPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询文件删除策略(LST-FILEDELPOLICY)_29626887.md`
+- 原始手册：`evidence/UDG/20.15.2/设置文件删除策略(SET-FILEDELPOLICY)_29626886.md`

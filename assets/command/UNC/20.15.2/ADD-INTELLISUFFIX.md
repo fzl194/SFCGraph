@@ -61,4 +61,4 @@ ADD INTELLISUFFIX: INTELLISUFFIX="intelligent", INTELLINAME="video" ;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-INTELLISUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能业务后缀（ADD-INTELLISUFFIX）_22378012.md`

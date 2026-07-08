@@ -81,4 +81,4 @@ EPC 位置信息表老化时长(min)  =  60
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LCSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LCS参数表记录(LST-LCSPARA)_26305608.md`

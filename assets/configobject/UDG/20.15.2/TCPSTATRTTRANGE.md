@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TCPSTATRTTRANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPSTATRTTRANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPSTATRTTRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复TCP统计功能的RTT区间为初始值（RTR-TCPSTATRTTRANGE）_74589219.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP统计功能的RTT区间（LST-TCPSTATRTTRANGE）_74749243.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP统计功能的RTT区间（SET-TCPSTATRTTRANGE）_87938410.md`

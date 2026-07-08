@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VSMFCHGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/VSMFCHGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询V-SMF的计费模式和CHF选择参数（LST-VSMFCHGCTRL）_25328709.md`
+- 原始手册：`evidence/UNC/20.15.2/设置V-SMF的计费模式和CHF选择参数（SET-VSMFCHGCTRL）_25690223.md`

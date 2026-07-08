@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MVNO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MVNO配置信息(LST-MVNO)_26146070.md`

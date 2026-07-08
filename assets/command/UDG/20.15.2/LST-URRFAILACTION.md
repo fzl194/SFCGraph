@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-URRFAILACTION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示计费URR上报失败动作参数（LST-URRFAILACTION）_42746596.md`

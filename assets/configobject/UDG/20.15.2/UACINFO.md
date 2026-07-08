@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UACINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/UACINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/UACINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/UACINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改UAC信息（MOD-UACINFO）_19172442.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UAC信息（RMV-UACINFO）_28121351.md`
+- 原始手册：`evidence/UDG/20.15.2/显示UAC信息（LST-UACINFO）_28486283.md`
+- 原始手册：`evidence/UDG/20.15.2/添加UAC信息（ADD-UACINFO）_19410196.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRKEYCHECK.md`
-- 原始手册：`evidence/UNC/20.15.2/VLRKEYCHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR用户关键信息数据核查扫描参数（LST-VLRKEYCHECK）_80800289.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR用户关键信息数据核查扫描参数（SET-VLRKEYCHECK）_81200061.md`

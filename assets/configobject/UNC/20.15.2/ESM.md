@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ESM.md`
-- 原始手册：`evidence/UNC/20.15.2/ESM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式SM协议参数(LST-ESM)_26305514.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1模式SM协议参数(SET-ESM)_72225383.md`

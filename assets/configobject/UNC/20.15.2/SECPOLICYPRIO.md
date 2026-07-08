@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYPRIO.md`
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYPRIO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询报文上送优先级（LST-SECPOLICYPRIO）_49960882.md`
+- 原始手册：`evidence/UNC/20.15.2/设置报文上送优先级（SET-SECPOLICYPRIO）_00601093.md`

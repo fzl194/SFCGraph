@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCKWHITELST.md`
-- 原始手册：`evidence/UNC/20.15.2/LCKWHITELST.md`
-- 原始手册：`evidence/UNC/20.15.2/LCKWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除锁定白名单记录（RMV-LCKWHITELST）_94466596.md`
+- 原始手册：`evidence/UNC/20.15.2/增加锁定白名单记录（ADD-LCKWHITELST）_29991961.md`
+- 原始手册：`evidence/UNC/20.15.2/查询锁定白名单记录（LST-LCKWHITELST）_29906473.md`

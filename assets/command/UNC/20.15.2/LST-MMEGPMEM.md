@@ -70,4 +70,4 @@ MME群组索引  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MMEGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MME群组成员(LST-MMEGPMEM)_72225305.md`

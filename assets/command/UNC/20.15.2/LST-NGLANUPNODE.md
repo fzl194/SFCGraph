@@ -107,4 +107,4 @@ upf2         a0000001-460-003-a000000001  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGLANUPNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定实例名称的UPF节点特征（LST-NGLANUPNODE）_98748905.md`

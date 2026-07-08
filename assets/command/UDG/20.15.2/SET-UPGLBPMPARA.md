@@ -71,4 +71,4 @@ SET UPGLBPMPARA: QOSURRAGETIME=60;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPGLBPMPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局策略管理参数（SET-UPGLBPMPARA）_82837620.md`

@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATHDP.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATHDP.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATHDP.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATHDP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-U路径管理自定义策略(MOD-GTPUPATHDP)_72345443.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-U路径管理自定义策略(RMV-GTPUPATHDP)_26305652.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-U路径管理自定义策略(ADD-GTPUPATHDP)_72225521.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-U路径管理自定义策略(LST-GTPUPATHDP)_26145844.md`

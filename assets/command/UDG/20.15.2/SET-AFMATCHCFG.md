@@ -62,4 +62,4 @@ SET AFMATCHCFG:SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-AFMATCHCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置软参欺诈场景功能开关（SET-AFMATCHCFG）_82837812.md`

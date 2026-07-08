@@ -65,4 +65,4 @@ SET VOLTEMOSCLASS: MOSEXECGOOD=41;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-VOLTEMOSCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/配置MOS分类的区间值（SET-VOLTEMOSCLASS）_69418602.md`

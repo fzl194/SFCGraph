@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BWMRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/BWMRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改带宽管理规则（MOD-BWMRULE）_82837479.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理规则（RMV-BWMRULE）_82837480.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理规则（ADD-BWMRULE）_82837478.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理规则（LST-BWMRULE）_82837481.md`

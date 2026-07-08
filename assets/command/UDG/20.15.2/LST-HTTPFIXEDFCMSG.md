@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HTTPFIXEDFCMSG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP指定消息类型固定速率流控信息（LST-HTTPFIXEDFCMSG）_83972186.md`

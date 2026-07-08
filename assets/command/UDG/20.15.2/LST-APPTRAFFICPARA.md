@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APPTRAFFICPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示应用流量参数（LST-APPTRAFFICPARA）_49101654.md`

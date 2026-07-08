@@ -85,4 +85,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RESERVEDIP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询预留IP资源（LST-RESERVEDIP）_80309656.md`

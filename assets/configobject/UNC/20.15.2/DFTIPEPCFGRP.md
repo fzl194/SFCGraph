@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DFTIPEPCFGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTIPEPCFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局默认智能PCF组（LST-DFTIPEPCFGRP）_82282718.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局默认智能PCF组（SET-DFTIPEPCFGRP）_17806957.md`

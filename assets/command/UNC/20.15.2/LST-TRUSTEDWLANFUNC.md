@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TRUSTEDWLANFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询可信Non-3GPP接入开关（LST-TRUSTEDWLANFUNC）_14117605.md`

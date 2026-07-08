@@ -71,4 +71,4 @@ CP Data CPU 过载流控功能开关 = 打开
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CPDATAFLOWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CP-Data流控参数(LST-CPDATAFLOWCTRL)_26146170.md`

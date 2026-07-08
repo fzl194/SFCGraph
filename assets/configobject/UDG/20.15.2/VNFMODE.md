@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VNFMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNF部署模式（DSP-VNFMODE）_49306990.md`

@@ -56,4 +56,4 @@ RTR SFEPKTSTATS:STATISTTYPE=fei_packet_count,STATISTSUBTYPE=fei_sub_discard,RUNA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-SFEPKTSTATS.md`
+- 原始手册：`evidence/UNC/20.15.2/清除SFE统计信息（RTR-SFEPKTSTATS）_49961854.md`

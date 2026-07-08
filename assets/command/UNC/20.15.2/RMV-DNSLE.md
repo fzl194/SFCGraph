@@ -67,4 +67,4 @@ RMV DNSLE:IPT=IPV4,IPV4="192.168.97.26",LOCPORT=15001;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNSLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS-Client-IP与DNS实体的绑定关系(RMV-DNSLE)_26305698.md`

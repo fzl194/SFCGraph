@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDFFUNCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/CDFFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CDF的功能参数（LST-CDFFUNCPARA）_23782750.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CDF的功能参数（SET-CDFFUNCPARA）_23782834.md`

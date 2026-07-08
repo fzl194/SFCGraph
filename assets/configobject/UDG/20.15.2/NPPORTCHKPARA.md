@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPPORTCHKPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/NPPORTCHKPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP端口检测的参数（LST-NPPORTCHKPARA）_44195169.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NP端口检测的参数（SET-NPPORTCHKPARA）_44275545.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGs链路集(MOD-SGSLKS)_72225119.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGs链路集(RMV-SGSLKS)_26145436.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGs链路集(ADD-SGSLKS)_72345035.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGs链路集(LST-SGSLKS)_26305250.md`

@@ -65,4 +65,4 @@ RMV TNFINSIP: TNFINSINDEX=1, IPTYPE=IPV4, IPV4ADDR="10.168.0.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TNFINSIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除目标NF实例IP地址（RMV-TNFINSIP）_09652384.md`

@@ -59,4 +59,4 @@ RMV QOSCARBURST:RATE=128;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-QOSCARBURST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户做car的参数（RMV-QOSCARBURST）_86528829.md`

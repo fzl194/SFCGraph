@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SECAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/SECAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/查看二次授权功能状态（LST-SECAUTH）_88029625.md`
+- 原始手册：`evidence/UDG/20.15.2/设置二次授权功能状态（SET-SECAUTH）_88029947.md`

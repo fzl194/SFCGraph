@@ -76,4 +76,4 @@ SCCP本局信令点表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCCPOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP本局信令点(LST-SCCPOPC)_26146332.md`

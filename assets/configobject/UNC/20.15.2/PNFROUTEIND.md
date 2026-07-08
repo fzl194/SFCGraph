@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFROUTEIND.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFROUTEIND.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFROUTEIND.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的路由指示信息（RMV-PNFROUTEIND）_09653309.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的路由指示信息（ADD-PNFROUTEIND）_09652440.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的路由指示信息（LST-PNFROUTEIND）_09653249.md`

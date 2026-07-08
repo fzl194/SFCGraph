@@ -56,4 +56,4 @@ RMV LOCALHSS: HSSHTNAM="hss1502.huawei03.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCALHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地HSS(RMV-LOCALHSS)_72345679.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDS1TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDS1TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDS1TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF位置信息与UPF优先支持的4G-TAI范围的绑定关系（RMV-LOCBINDS1TAI）_96242800.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF位置信息与UPF优先支持的4G-TAI范围的绑定关系（ADD-LOCBINDS1TAI）_96241684.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF位置信息与UPF优先支持的4G-TAI范围的绑定关系（LST-LOCBINDS1TAI）_96242189.md`

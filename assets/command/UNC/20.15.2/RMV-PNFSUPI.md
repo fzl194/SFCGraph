@@ -73,4 +73,4 @@ RMV PNFSUPI: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFSUPI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的SUPI信息（RMV-PNFSUPI）_09652379.md`

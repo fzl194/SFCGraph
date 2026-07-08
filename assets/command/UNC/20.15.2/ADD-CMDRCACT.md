@@ -70,4 +70,4 @@ ADD CMDRCACT:DCCTMPLTNAME="global",CMDRC="5012",CMDRCACT=TERM_NO_CCRT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CMDRCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加命令层异常返回码处理动作（ADD-CMDRCACT）_09896945.md`

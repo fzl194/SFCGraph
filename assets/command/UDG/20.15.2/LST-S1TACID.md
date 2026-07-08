@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-S1TACID.md`
+- 原始手册：`evidence/UDG/20.15.2/查看S1TAC与S1TAC组的绑定关系（LST-S1TACID）_97358679.md`

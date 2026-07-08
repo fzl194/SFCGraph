@@ -83,4 +83,4 @@ SET CHGCHAR: CC=HOTBILLING, MPL=120, SMOP=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHGCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费属性参数(SET-CHGCHAR)_26145368.md`

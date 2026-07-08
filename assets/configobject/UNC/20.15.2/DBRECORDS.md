@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DBRECORDS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除数据库中的表记录（RMV-DBRECORDS）_70132935.md`

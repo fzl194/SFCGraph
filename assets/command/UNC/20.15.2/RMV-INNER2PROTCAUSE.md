@@ -63,4 +63,4 @@ RMV INNER2PROTCAUSE: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-INNER2PROTCAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除内部原因值映射为协议原因值的配置（RMV-INNER2PROTCAUSE）_44106693.md`

@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSUSRNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SMSF中注册的用户数（DSP-SMSUSRNUM）_25120882.md`

@@ -30,5 +30,5 @@ MAXREGSEGNUM、MAXDISCSEGNUM、MAXPKGSIZE参数配置过小，服务发现结果
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFBIGPKGPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBIGPKGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF大包控制参数（LST-NRFBIGPKGPARA）_86184260.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF大包控制参数（SET-NRFBIGPKGPARA）_86184327.md`

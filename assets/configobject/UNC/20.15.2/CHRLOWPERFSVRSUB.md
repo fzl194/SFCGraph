@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRLOWPERFSVRSUB.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRLOWPERFSVRSUB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询低性能CHR服务器的单据订阅条件（LST-CHRLOWPERFSVRSUB）_26145486.md`
+- 原始手册：`evidence/UNC/20.15.2/设置低性能CHR服务器的单据订阅条件（SET-CHRLOWPERFSVRSUB）_72345083.md`

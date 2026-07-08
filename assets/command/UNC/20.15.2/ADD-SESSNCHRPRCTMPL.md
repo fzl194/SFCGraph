@@ -77,4 +77,4 @@ ADD SESSNCHRPRCTMPL: TMPLIDX=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SESSNCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加会话CHR流程控制模板（ADD-SESSNCHRPRCTMPL）_35628393.md`

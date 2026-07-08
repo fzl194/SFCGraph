@@ -54,4 +54,4 @@ RMV LDPREMOTEPEER:VRFNAME="_public_",REMOTEPEERNAME="r3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LDPREMOTEPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LDP远端邻居（RMV-LDPREMOTEPEER）_49961730.md`

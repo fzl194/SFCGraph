@@ -114,4 +114,4 @@ ADD BGPVRFAF:VRFNAME="_public_",AFTYPE=ipv6vpn;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-BGPVRFAF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BGP-VPN地址族（ADD-BGPVRFAF）_00865685.md`

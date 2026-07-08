@@ -56,4 +56,4 @@ RMV INSAPROTPARA:PROTOCOLNAME="http";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-INSAPROTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除单协议推理配置（RMV-INSAPROTPARA）_06564539.md`

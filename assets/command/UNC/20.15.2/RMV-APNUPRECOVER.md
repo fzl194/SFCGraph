@@ -61,4 +61,4 @@ RMV APNUPRECOVER: APN="apn1", MASTERUPFID="upf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNUPRECOVER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定UPF的APN级别链路故障恢复处理（RMV-APNUPRECOVER）_75982864.md`

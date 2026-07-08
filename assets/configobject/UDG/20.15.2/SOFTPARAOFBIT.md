@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SOFTPARAOFBIT.md`
-- 原始手册：`evidence/UDG/20.15.2/SOFTPARAOFBIT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软件参数指定比特位的值（LST-SOFTPARAOFBIT）_86528610.md`
+- 原始手册：`evidence/UDG/20.15.2/设置软件参数表比特位的值（SET-SOFTPARAOFBIT）_82837317.md`

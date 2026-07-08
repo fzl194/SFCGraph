@@ -74,4 +74,4 @@ SET APNIMSATTR:APN="huawei.com",IMSSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNIMSATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ApnImsAttr配置（SET-APNIMSATTR）_82837822.md`

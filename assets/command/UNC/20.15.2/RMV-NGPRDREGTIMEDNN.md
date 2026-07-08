@@ -63,4 +63,4 @@ RMV NGPRDREGTIMEDNN:DNNNI="abc";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGPRDREGTIMEDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于DNN的周期性注册时长配置（RMV-NGPRDREGTIMEDNN）_21742369.md`

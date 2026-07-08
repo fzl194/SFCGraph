@@ -70,4 +70,4 @@ No follow on without PDP场景Iu连接管理 (s)  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IUCONNPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu连接控制参数(LST-IUCONNPARA)_72225195.md`

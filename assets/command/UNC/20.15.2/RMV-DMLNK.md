@@ -63,4 +63,4 @@ RMV DMLNK: LINKIDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DMLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter链路配置(RMV-DMLNK)_26306086.md`

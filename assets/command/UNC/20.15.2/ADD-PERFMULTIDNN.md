@@ -68,4 +68,4 @@ ADD PERFMULTIDNN: DNN="huawei.com", SST=1, SD="010101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PERFMULTIDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MultiDNN性能统计对象（ADD-PERFMULTIDNN）_81671277.md`

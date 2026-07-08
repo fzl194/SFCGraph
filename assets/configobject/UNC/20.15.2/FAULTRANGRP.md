@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTRANGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N3接口故障RAN组（MOD-FAULTRANGRP）_52628648.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障RAN组（RMV-FAULTRANGRP）_38182771.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N3接口故障RAN组（ADD-FAULTRANGRP）_38102753.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障RAN组（LST-FAULTRANGRP）_93382802.md`

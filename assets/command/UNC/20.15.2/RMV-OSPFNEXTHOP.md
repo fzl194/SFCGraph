@@ -55,4 +55,4 @@ RMV OSPFNEXTHOP:PROCID=1,TOPOID=0,NBRIPADDRESS="10.1.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-OSPFNEXTHOP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF等价路由优先级配置（RMV-OSPFNEXTHOP）_00865749.md`

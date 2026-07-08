@@ -61,4 +61,4 @@ MOD ASRCHN: CHNID=0, DETITERVAL=500, DETTIMES=25;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ASRCHN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改容灾业务通道配置(MOD-ASRCHN)_72345727.md`

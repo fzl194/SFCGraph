@@ -35,5 +35,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPCONF.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP属性（LST-HTTPCONF）_28971839.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP属性（SET-HTTPCONF）_83972196.md`

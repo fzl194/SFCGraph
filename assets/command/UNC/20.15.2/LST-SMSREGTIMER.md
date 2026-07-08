@@ -60,4 +60,4 @@ VLR向注册中心注册更新的时间间隔(分钟) =  24
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSREGTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR_SMSF向注册中心注册的时间参数（LST-SMSREGTIMER）_03961133.md`

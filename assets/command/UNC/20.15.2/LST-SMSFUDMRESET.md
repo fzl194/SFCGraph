@@ -62,4 +62,4 @@ UDM重选时是否重新获取签约数据  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSFUDMRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UDM重选参数（LST-SMSFUDMRESET）_99973534.md`

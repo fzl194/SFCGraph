@@ -68,4 +68,4 @@ TAI组类型  =  S1TAC
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PERFTAIGROUPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TAI组性能统计对象成员（LST-PERFTAIGROUPMEM）_68506245.md`

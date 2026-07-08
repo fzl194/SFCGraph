@@ -60,4 +60,4 @@ SET APNSAPARA: APNNAME="apn1", NORSTPKTNUM=4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNSAPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的业务感知参数（SET-APNSAPARA）_97004596.md`

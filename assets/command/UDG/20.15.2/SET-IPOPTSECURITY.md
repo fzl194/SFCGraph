@@ -58,4 +58,4 @@ SET IPOPTSECURITY: OPTIONTYPE=routeRecord, SWITCHOP=enable;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-IPOPTSECURITY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IP选项安全配置（SET-IPOPTSECURITY）_00865745.md`

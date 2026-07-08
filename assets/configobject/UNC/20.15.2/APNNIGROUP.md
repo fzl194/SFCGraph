@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNNIGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNIGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNIGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI组(RMV-APNNIGROUP)_72345295.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI组(ADD-APNNIGROUP)_26305508.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI组(LST-APNNIGROUP)_26145700.md`

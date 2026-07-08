@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VVIPBASICFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/VVIPBASICFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示重点业务保障基本功能（LST-VVIPBASICFUNC）_15739995.md`
+- 原始手册：`evidence/UDG/20.15.2/设置重点业务保障基本功能（SET-VVIPBASICFUNC）_10221270.md`

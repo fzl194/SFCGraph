@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N40APIVER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40接口协议版本和需要使用的FeatureList（LST-N40APIVER）_31773563.md`

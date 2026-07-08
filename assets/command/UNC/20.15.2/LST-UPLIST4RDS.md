@@ -70,4 +70,4 @@ UP实例标识  =  up1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPLIST4RDS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS服务器使用的UP列表配置（LST-UPLIST4RDS）_52749062.md`

@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPOPTSECALL.md`
-- 原始手册：`evidence/UNC/20.15.2/IPOPTSECALL.md`
-- 原始手册：`evidence/UNC/20.15.2/IPOPTSECALL.md`
-- 原始手册：`evidence/UNC/20.15.2/IPOPTSECALL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IP全局选项安全配置（MOD-IPOPTSECALL）_50121042.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IP全局选项安全配置（RMV-IPOPTSECALL）_00601105.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IP全局选项安全配置（LST-IPOPTSECALL）_49961990.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IP全局选项安全配置（ADD-IPOPTSECALL）_00840613.md`

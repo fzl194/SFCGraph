@@ -65,4 +65,4 @@ FOC GENERATECDR:RANGE=IMSI,IMSI="13631112221";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FOC-GENERATECDR.md`
+- 原始手册：`evidence/UNC/20.15.2/强制生成话单（FOC-GENERATECDR）_09897016.md`

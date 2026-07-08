@@ -61,4 +61,4 @@ ADD SNSSAI: SST=1, SD="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SNSSAI.md`
+- 原始手册：`evidence/UDG/20.15.2/增加NF支持的网络切片选择标识（ADD-SNSSAI）_95089577.md`

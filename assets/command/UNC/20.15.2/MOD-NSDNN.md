@@ -61,4 +61,4 @@ MOD NSDNN: NSIDX=0, DNN="huawei.com", DEFIWKIND=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络切片支持的DNN（MOD-NSDNN）_96242642.md`

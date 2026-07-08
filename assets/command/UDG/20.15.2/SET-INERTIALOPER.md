@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-INERTIALOPER.md`
+- 原始手册：`evidence/UDG/20.15.2/设置惯性运行功能（SET-INERTIALOPER）_14588115.md`

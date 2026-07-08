@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMRTREALM.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMRTREALM.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMRTREALM.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMRTREALM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter路由域名信息（MOD-UPDIAMRTREALM）_97314573.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter路由域名信息（RMV-UPDIAMRTREALM）_45432706.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter路由域名信息（ADD-UPDIAMRTREALM）_97080169.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter路由域名信息（LST-UPDIAMRTREALM）_45195196.md`

@@ -63,4 +63,4 @@ ADD SDAPLE: IPTYPE=TPTADDR_TYPE_IPV4, LEIPV4="192.168.15.10";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SDAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SDAP本地实体(ADD-SDAPLE)_26147290.md`

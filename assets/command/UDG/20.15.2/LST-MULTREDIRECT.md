@@ -68,4 +68,4 @@ AES256 CBC密码信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MULTREDIRECT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示多级重定向密码（LST-MULTREDIRECT）_05993250.md`

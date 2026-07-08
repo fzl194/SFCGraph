@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LICENSESWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/LICENSESWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询License配置项开关（LST-LICENSESWITCH）_09651570.md`
+- 原始手册：`evidence/UNC/20.15.2/设置License项的开关（SET-LICENSESWITCH）_09654190.md`

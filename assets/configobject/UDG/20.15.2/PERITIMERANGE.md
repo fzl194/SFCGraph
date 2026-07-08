@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PERITIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/PERITIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/PERITIMERANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/PERITIMERANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改周期时间段（MOD-PERITIMERANGE）_25012146.md`
+- 原始手册：`evidence/UDG/20.15.2/删除周期时间段（RMV-PERITIMERANGE）_82837430.md`
+- 原始手册：`evidence/UDG/20.15.2/增加周期时间段（ADD-PERITIMERANGE）_82837428.md`
+- 原始手册：`evidence/UDG/20.15.2/查询周期时间段（LST-PERITIMERANGE）_82837431.md`

@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRSVPN.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDRS中的VPN信息（DSP-SDRSVPN）_10972324.md`

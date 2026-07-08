@@ -67,4 +67,4 @@ ADD L2RULEGRPBIND: GRPBINDNAME="bind1", SEGMENTNAME="imsi1", APN="apn1", SST=1, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-L2RULEGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/增加层二规则组与用户的绑定关系（ADD-L2RULEGRPBIND）_23782726.md`

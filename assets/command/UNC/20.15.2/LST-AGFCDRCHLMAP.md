@@ -65,4 +65,4 @@ Fields that determine CDR channel sorting  =  SUPI or GPSI
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AGFCDRCHLMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单通道一级目录映射表配置（LST-AGFCDRCHLMAP）_79296320.md`

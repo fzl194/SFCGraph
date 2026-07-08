@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMETERPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMETERPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter参数（LST-DIAMETERPARA）_09897316.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Diameter参数（SET-DIAMETERPARA）_09897315.md`

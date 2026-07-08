@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NOSHETEROMODE.md`
-- 原始手册：`evidence/UDG/20.15.2/NOSHETEROMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NOS异构模式(DSP-NOSHETEROMODE)_74671533.md`
+- 原始手册：`evidence/UDG/20.15.2/转换NOS异构模式(CVT-NOSHETEROMODE)_77109417.md`

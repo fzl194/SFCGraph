@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LLAINNERDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LLA诊断信息（DSP-LLAINNERDATA）_50281666.md`

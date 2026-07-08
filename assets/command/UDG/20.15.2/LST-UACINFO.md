@@ -69,4 +69,4 @@ UAC IPv6 Address  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UACINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示UAC信息（LST-UACINFO）_28486283.md`

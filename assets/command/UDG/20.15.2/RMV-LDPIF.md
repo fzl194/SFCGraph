@@ -54,4 +54,4 @@ RMV LDPIF:VRFNAME="_public_",IFNAME="Ethernet64/0/3";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-LDPIF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除LDP接口（RMV-LDPIF）_50281482.md`

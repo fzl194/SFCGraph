@@ -68,4 +68,4 @@ SET CPGTPUPARA: ECHOSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CPGTPUPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTPU参数（SET-CPGTPUPARA）_13800472.md`

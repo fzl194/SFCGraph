@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N26MMECHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/N26MMECHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/N26MMECHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/N26MMECHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N26接口MME属性（MOD-N26MMECHAR）_09653182.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N26接口MME属性（RMV-N26MMECHAR）_09653285.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N26接口MME属性（ADD-N26MMECHAR）_09652516.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N26接口MME属性（LST-N26MMECHAR）_09652148.md`

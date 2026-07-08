@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAEQUEUE.md`
-- 原始手册：`evidence/UNC/20.15.2/PAEQUEUE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE队列统计信息（DSP-PAEQUEUE）_92520046.md`
+- 原始手册：`evidence/UNC/20.15.2/清除PAE队列统计信息（RTR-PAEQUEUE）_92520044.md`

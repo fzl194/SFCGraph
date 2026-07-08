@@ -62,4 +62,4 @@ RMV UPDIAMETERAAA:HOSTNAME="diameteraaa1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPDIAMETERAAA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter-AAA服务器（RMV-UPDIAMETERAAA）_45432712.md`

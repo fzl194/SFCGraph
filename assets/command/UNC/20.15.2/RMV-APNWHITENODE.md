@@ -64,4 +64,4 @@ RMV APNWHITENODE: APN="huawei.com", NODETYPE=SGW, IPVERSION=IPV4, NODEIPV4="10.0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNWHITENODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN设备白名单（RMV-APNWHITENODE）_58542676.md`

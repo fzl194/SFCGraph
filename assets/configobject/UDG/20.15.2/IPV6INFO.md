@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPV6INFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6诊断信息（DSP-IPV6INFO）_49802022.md`

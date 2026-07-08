@@ -62,4 +62,4 @@ SET HTTPCCACONF: CCACHECKSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-HTTPCCACONF.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP-CCA属性（SET-HTTPCCACONF）_54538297.md`

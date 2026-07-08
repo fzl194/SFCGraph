@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXTENDQCIMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/EXTENDQCIMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/EXTENDQCIMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/EXTENDQCIMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改扩展QCI和标准QCI的映射关系（MOD-EXTENDQCIMAP）_09653202.md`
+- 原始手册：`evidence/UNC/20.15.2/删除扩展QCI和标准QCI的映射关系（RMV-EXTENDQCIMAP）_09652170.md`
+- 原始手册：`evidence/UNC/20.15.2/增加扩展QCI和标准QCI的映射关系（ADD-EXTENDQCIMAP）_09653762.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩展QCI和标准QCI的映射关系（LST-EXTENDQCIMAP）_09652611.md`

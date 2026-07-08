@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RCAPLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/RCAPLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/RCAPLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/RCAPLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改注册中心链路集-(MOD-RCAPLKS)_91969981.md`
+- 原始手册：`evidence/UNC/20.15.2/删除注册中心链路集-(RMV-RCAPLKS)_92249365.md`
+- 原始手册：`evidence/UNC/20.15.2/增加注册中心链路集-(ADD-RCAPLKS)_45649102.md`
+- 原始手册：`evidence/UNC/20.15.2/查询注册中心链路集-(LST-RCAPLKS)_45330038.md`

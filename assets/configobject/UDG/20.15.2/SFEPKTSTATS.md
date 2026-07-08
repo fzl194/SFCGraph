@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEPKTSTATS.md`
+- 原始手册：`evidence/UDG/20.15.2/清除SFE统计信息（RTR-SFEPKTSTATS）_49961854.md`

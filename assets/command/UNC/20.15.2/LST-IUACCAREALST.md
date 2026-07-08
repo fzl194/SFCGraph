@@ -92,4 +92,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IUACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式区域漫游限制参数(LST-IUACCAREALST)_72225235.md`

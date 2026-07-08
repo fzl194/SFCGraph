@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AUTOSCALINGETHTRUNK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询以太网隧道自动化多虚拟网卡配置模板（LST-AUTOSCALINGETHTRUNK）_00841505.md`

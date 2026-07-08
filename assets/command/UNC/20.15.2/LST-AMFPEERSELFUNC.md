@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFPEERSELFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF对端选择功能控制参数（LST-AMFPEERSELFUNC）_18717536.md`

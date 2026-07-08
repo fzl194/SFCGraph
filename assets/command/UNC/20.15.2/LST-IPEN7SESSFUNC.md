@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IPEN7SESSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能双N7会话特性是否使能（LST-IPEN7SESSFUNC）_80872788.md`

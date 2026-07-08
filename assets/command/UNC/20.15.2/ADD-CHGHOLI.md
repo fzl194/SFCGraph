@@ -63,4 +63,4 @@ ADD CHGHOLI: YEAR=2001, MONTH=5, DAY=1, CC=PREPAID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHGHOLI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加节假日配置(ADD-CHGHOLI)_26145382.md`

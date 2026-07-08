@@ -58,4 +58,4 @@ RMV NRFAMFREGIDRT:AMFREGID="09";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFAMFREGIDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF区域标识路由（RMV-NRFAMFREGIDRT）_09651548.md`

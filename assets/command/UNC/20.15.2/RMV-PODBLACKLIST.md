@@ -50,4 +50,4 @@ RMV PODBLACKLIST: PODTYPE="sbim-pod";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PODBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Pod自愈黑名单（RMV-PODBLACKLIST）_09587924.md`

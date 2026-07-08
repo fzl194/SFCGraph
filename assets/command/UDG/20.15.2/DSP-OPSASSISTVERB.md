@@ -85,4 +85,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OPSASSISTVERB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示系统助手的详细信息（DSP-OPSASSISTVERB）_49960878.md`

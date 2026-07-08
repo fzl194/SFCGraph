@@ -58,4 +58,4 @@ ADD PERFNS:SNSSAI="1-010101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PERFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加切片性能统计对象（ADD-PERFNS）_37024655.md`

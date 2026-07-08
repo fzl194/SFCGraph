@@ -88,4 +88,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MVNORES.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MVNO资源配置信息(LST-MVNORES)_26305876.md`

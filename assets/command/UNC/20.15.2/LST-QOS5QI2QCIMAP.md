@@ -63,4 +63,4 @@ LST QOS5QI2QCIMAP:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-QOS5QI2QCIMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5QI到标准QCI的映射（LST-QOS5QI2QCIMAP）_39919393.md`

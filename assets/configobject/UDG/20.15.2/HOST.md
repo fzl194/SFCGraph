@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HOST.md`
-- 原始手册：`evidence/UDG/20.15.2/HOST.md`
-- 原始手册：`evidence/UDG/20.15.2/HOST.md`
-- 原始手册：`evidence/UDG/20.15.2/HOST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Host（MOD-HOST）_82837323.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Host（RMV-HOST）_86528750.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Host（ADD-HOST）_82837322.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Host（LST-HOST）_82837325.md`

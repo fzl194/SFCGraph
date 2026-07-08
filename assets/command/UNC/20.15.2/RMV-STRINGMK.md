@@ -57,4 +57,4 @@ RMV STRINGMK: MKSTRVALUE="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-STRINGMK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除字符串Monitoring-Key（RMV-STRINGMK）_23782830.md`

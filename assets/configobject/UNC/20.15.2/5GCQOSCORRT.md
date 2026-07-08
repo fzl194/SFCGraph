@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/5GCQOSCORRT.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCQOSCORRT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5GC-QoS纠错配置（LST-5GCQOSCORRT）_09651697.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5GC-QoS纠错配置（SET-5GCQOSCORRT）_09652438.md`

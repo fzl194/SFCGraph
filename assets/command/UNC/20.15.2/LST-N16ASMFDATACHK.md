@@ -58,4 +58,4 @@ USERAGENTCHK  =  ON
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N16ASMFDATACHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N16aSMF数据核查功能（LST-N16ASMFDATACHK）_77579556.md`

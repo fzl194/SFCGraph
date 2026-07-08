@@ -67,4 +67,4 @@ MOD SUBCONDITION: NFTYPE=NfAMF, CONDITION=NfInstanceId-1&NFType-1&ServiceName-0&
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SUBCONDITION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NF订阅条件（MOD-SUBCONDITION）_09652286.md`

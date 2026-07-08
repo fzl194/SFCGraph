@@ -72,4 +72,4 @@ MOD CHARGECHAR:CCNAME="cc",HOME="0x0800",ROAM="0x0100",VISIT="0x0400",HOMESGSN=E
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CHARGECHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对本地用户、漫游用户、拜访用户所采用的计费属性（MOD-CHARGECHAR）_09896810.md`

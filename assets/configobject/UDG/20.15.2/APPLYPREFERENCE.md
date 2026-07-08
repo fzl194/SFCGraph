@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPLYPREFERENCE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYPREFERENCE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYPREFERENCE.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYPREFERENCE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改路由优先级设置（MOD-APPLYPREFERENCE）_00601285.md`
+- 原始手册：`evidence/UDG/20.15.2/删除路由优先级设置（RMV-APPLYPREFERENCE）_49962034.md`
+- 原始手册：`evidence/UDG/20.15.2/增加路由优先级设置（ADD-APPLYPREFERENCE）_49961170.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由优先级设置（LST-APPLYPREFERENCE）_00841549.md`

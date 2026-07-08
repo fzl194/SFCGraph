@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BSFIPRANGEBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/BSFIPRANGEBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/BSFIPRANGEBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF实例与IPRANGE之间的绑定关系（RMV-BSFIPRANGEBIND）_09652154.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BSF实例与IPRANGE之间的绑定关系（ADD-BSFIPRANGEBIND）_09653749.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSF实例与IPRANGE之间的绑定关系（LST-BSFIPRANGEBIND）_09651737.md`

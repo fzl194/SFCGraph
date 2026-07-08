@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFPROFBINDCFT.md`
-- 原始手册：`evidence/UDG/20.15.2/CFPROFBINDCFT.md`
-- 原始手册：`evidence/UDG/20.15.2/CFPROFBINDCFT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除内容过滤策略绑定关系（RMV-CFPROFBINDCFT）_39239150.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容过滤策略绑定关系（ADD-CFPROFBINDCFT）_43236707.md`
+- 原始手册：`evidence/UDG/20.15.2/查询内容过滤策略绑定关系（LST-CFPROFBINDCFT）_39957526.md`

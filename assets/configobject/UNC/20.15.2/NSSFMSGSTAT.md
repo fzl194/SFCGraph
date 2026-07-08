@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFMSGSTAT.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFMSGSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NSSF收发消息内部统计（DSP-NSSFMSGSTAT）_64343868.md`
+- 原始手册：`evidence/UNC/20.15.2/清除收发消息内部统计（CLR-NSSFMSGSTAT）_76878552.md`

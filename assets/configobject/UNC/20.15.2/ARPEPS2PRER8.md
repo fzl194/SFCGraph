@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ARPEPS2PRER8.md`
-- 原始手册：`evidence/UNC/20.15.2/ARPEPS2PRER8.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS-ARP到Pre-R8-ARP的映射规则（LST-ARPEPS2PRER8）_09652234.md`
+- 原始手册：`evidence/UNC/20.15.2/设置EPS-ARP到Pre-R8-ARP的映射规则（SET-ARPEPS2PRER8）_09652254.md`

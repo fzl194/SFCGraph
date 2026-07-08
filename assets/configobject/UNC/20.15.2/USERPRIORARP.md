@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USERPRIORARP.md`
-- 原始手册：`evidence/UNC/20.15.2/USERPRIORARP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户ARP优先级配置（LST-USERPRIORARP）_28093181.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户ARP优先级配置（SET-USERPRIORARP）_27933281.md`

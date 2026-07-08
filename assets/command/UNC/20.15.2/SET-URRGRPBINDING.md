@@ -60,4 +60,4 @@ SET URRGRPBINDING:USERPROFILENAME="testuserprofilename",DFTURRGRPNAME="dfturrgrp
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-URRGRPBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户模板的计费属性绑定关系（SET-URRGRPBINDING）_09897209.md`

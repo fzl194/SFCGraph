@@ -66,4 +66,4 @@ QoS Rule优先级设置原则 = 等于PCC Rule优先级
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PCCRULECTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PCC-QoS相关控制参数（LST-PCCRULECTRL）_08342474.md`

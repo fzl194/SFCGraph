@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DRSEPINTERFACE.md`
-- 原始手册：`evidence/UNC/20.15.2/DRSEPINTERFACE.md`
-- 原始手册：`evidence/UNC/20.15.2/DRSEPINTERFACE.md`
-- 原始手册：`evidence/UNC/20.15.2/DRSEPINTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除故障隔离接口（RMV-DRSEPINTERFACE）_35390226.md`
+- 原始手册：`evidence/UNC/20.15.2/增加接口故障隔离（ADD-DRSEPINTERFACE）_86150081.md`
+- 原始手册：`evidence/UNC/20.15.2/显示故障隔离逻辑接口的状态（DSP-DRSEPINTERFACE）_86030325.md`
+- 原始手册：`evidence/UNC/20.15.2/查询快速隔离接口（LST-DRSEPINTERFACE）_86255389.md`

@@ -67,4 +67,4 @@ HA状态 = 正常
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-HASTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询系统HA状态（DSP-HASTAT）_59104008.md`

@@ -58,4 +58,4 @@ ADD BGPCONFED:CONFEDASNUMBER="65002";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-BGPCONFED.md`
+- 原始手册：`evidence/UNC/20.15.2/增加联盟中自治系统（ADD-BGPCONFED）_00840705.md`

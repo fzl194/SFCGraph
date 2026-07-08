@@ -62,4 +62,4 @@ ADD SCTPLEGRP: SCTPGROUPID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCTPLEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCTP本地实体组(ADD-SCTPLEGRP)_19186931.md`

@@ -76,4 +76,4 @@ SCTP发送心跳消息的间隔周期（毫秒）  =  30000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCTPTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP模板（LST-SCTPTEMPLATE）_09897335.md`

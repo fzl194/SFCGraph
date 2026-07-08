@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFASBRSUMMARY.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFASBRSUMMARY.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFASBRSUMMARY.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFASBRSUMMARY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改引入路由聚合配置（MOD-OSPFASBRSUMMARY）_50281810.md`
+- 原始手册：`evidence/UDG/20.15.2/创建引入路由聚合配置（ADD-OSPFASBRSUMMARY）_50120822.md`
+- 原始手册：`evidence/UDG/20.15.2/删除引入路由聚合配置（RMV-OSPFASBRSUMMARY）_49802486.md`
+- 原始手册：`evidence/UDG/20.15.2/查询引入路由聚合配置（LST-OSPFASBRSUMMARY）_50121290.md`

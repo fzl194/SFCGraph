@@ -55,4 +55,4 @@ CLR AFMATCHSTATIC:AFMATCHTYPE=AF_SOFTWARE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-AFMATCHSTATIC.md`
+- 原始手册：`evidence/UDG/20.15.2/清零欺诈场景的匹配统计计数（CLR-AFMATCHSTATIC）_82837811.md`

@@ -70,4 +70,4 @@ LCK APNFORBYPASS: APN="test", LOCKED=ENABLE, CONFIRM=Y;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LCK-APNFORBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定存储ByPass场景下的APN（LCK-APNFORBYPASS）_83967246.md`

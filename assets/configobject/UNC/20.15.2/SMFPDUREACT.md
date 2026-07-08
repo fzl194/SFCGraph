@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFPDUREACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFPDUREACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFPDUREACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFPDUREACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改跨区域PDU会话重建策略（MOD-SMFPDUREACT）_64343899.md`
+- 原始手册：`evidence/UNC/20.15.2/删除跨区域PDU会话重建策略（RMV-SMFPDUREACT）_64343909.md`
+- 原始手册：`evidence/UNC/20.15.2/增加跨区域PDU会话重建策略（ADD-SMFPDUREACT）_64343866.md`
+- 原始手册：`evidence/UNC/20.15.2/查询跨区域PDU会话重建策略（LST-SMFPDUREACT）_64343891.md`

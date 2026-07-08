@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MAPCMPTBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MAP协议接口兼容性IMSI号段配置(LST-MAPCMPTBYIMSI)_72225149.md`

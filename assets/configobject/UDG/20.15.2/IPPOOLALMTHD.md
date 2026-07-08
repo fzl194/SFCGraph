@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPPOOLALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/IPPOOLALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询本地地址池占用率告警阈值（LST-IPPOOLALMTHD）_82837877.md`
+- 原始手册：`evidence/UDG/20.15.2/设置本地地址池占用率告警阈值（SET-IPPOOLALMTHD）_82837878.md`

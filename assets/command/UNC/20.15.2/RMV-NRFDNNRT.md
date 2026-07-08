@@ -59,4 +59,4 @@ RMV NRFDNNRT: DNN="huawei.com", NEXTNRFGRPNAME="L-NRF1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFDNNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN路由（RMV-NRFDNNRT）_09653721.md`

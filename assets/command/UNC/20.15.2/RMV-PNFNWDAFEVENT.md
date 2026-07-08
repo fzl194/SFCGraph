@@ -62,4 +62,4 @@ RMV PNFNWDAFEVENT: NFINSTANCEID="NWDAF_Instance_1", NWDAFINFOID="central";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFNWDAFEVENT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NWDAF信息（RMV-PNFNWDAFEVENT）_56264018.md`

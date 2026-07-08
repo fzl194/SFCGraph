@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMMONSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/COMMONSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询公共软参（LST-COMMONSOFTPARA）_26254833.md`
+- 原始手册：`evidence/UNC/20.15.2/设置公共软参（SET-COMMONSOFTPARA）_26254845.md`

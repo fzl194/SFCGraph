@@ -66,4 +66,4 @@ PLMN索引
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGMDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询最小化路测的PLMN（LST-NGMDTPLMN）_46493497.md`

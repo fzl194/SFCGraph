@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UE灌包状态（DSP-UEINJECTSTAT）_82837100.md`

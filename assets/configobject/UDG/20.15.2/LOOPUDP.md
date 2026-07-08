@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOOPUDP.md`
-- 原始手册：`evidence/UDG/20.15.2/LOOPUDP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UDP环回配置（LST-LOOPUDP）_70043012.md`
+- 原始手册：`evidence/UDG/20.15.2/配置UDP环回功能（SET-LOOPUDP）_70522424.md`

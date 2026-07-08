@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DRSEPINTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示故障隔离逻辑接口的状态（DSP-DRSEPINTERFACE）_86030325.md`

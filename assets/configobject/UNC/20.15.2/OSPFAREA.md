@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OSPF区域配置（MOD-OSPFAREA）_50121130.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPF区域配置（ADD-OSPFAREA）_50120650.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF区域配置（RMV-OSPFAREA）_49961418.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF区域配置（LST-OSPFAREA）_49801990.md`

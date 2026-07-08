@@ -57,4 +57,4 @@ RMV PRINETPOLICY: APN="test1", DNAI="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PRINETPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除专网控制策略（RMV-PRINETPOLICY）_19641394.md`

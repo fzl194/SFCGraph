@@ -58,4 +58,4 @@ RMV APNPTTFUNC: APN="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNPTTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的一键通功能配置（RMV-APNPTTFUNC）_06399924.md`

@@ -61,4 +61,4 @@ SET PAECHECKPARA: CHECKINTERVAL=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PAECHECKPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE寻呼反压流控检测参数(SET-PAECHECKPARA)_14231878.md`

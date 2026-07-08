@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PRALSTMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/PRALSTMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/PRALSTMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PRA列表成员(RMV-PRALSTMEM)_26305404.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PRA列表成员(ADD-PRALSTMEM)_72225273.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PRA列表成员(LST-PRALSTMEM)_72345191.md`

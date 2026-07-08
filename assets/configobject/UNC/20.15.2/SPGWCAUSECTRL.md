@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SPGWCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SPGWCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SPGWCAUSECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SPGWCAUSECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGW-C_PGW-C原因值控制参数（MOD-SPGWCAUSECTRL）_09652982.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-C_PGW-C原因值控制参数（RMV-SPGWCAUSECTRL）_09652355.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-C_PGW-C原因值控制参数（ADD-SPGWCAUSECTRL）_09653621.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-C_PGW-C原因值控制参数（LST-SPGWCAUSECTRL）_09652447.md`

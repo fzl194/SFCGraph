@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSSHAPE.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSSHAPE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QosShape配置（LST-QOSSHAPE）_82837672.md`
+- 原始手册：`evidence/UDG/20.15.2/设置QosShape配置（SET-QOSSHAPE）_82837671.md`

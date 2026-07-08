@@ -81,4 +81,4 @@ ADD RELAYWURLLIST: RELAYURLLISTNM="list01", RELAYURLNAME="url01",URL="www.huawei
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RELAYWURLLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继白名单URL列表（ADD-RELAYWURLLIST）_44232396.md`

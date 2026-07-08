@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPRDREGTIMEDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPRDREGTIMEDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPRDREGTIMEDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPRDREGTIMEDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于DNN的周期性注册时长配置（MOD-NGPRDREGTIMEDNN）_21742357.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于DNN的周期性注册时长配置（RMV-NGPRDREGTIMEDNN）_21742369.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于DNN的周期性注册时长配置（ADD-NGPRDREGTIMEDNN）_21861953.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于DNN的周期性注册时长配置（LST-NGPRDREGTIMEDNN）_75822976.md`

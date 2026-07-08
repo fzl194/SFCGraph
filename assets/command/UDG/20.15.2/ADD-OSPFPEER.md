@@ -59,4 +59,4 @@ ADD OSPFPEER:PROCID=1,IPADDRESS="10.1.1.1",DRPRIORITY=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-OSPFPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF的NBMA网络邻居路由器配置（ADD-OSPFPEER）_49961046.md`

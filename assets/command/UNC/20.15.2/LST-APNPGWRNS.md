@@ -64,4 +64,4 @@ PGW重定向功能开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNPGWRNS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PGW重定向功能设置（LST-APNPGWRNS）_01560902.md`

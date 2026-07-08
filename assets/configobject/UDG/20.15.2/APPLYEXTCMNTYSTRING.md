@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPLYEXTCMNTYSTRING.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYEXTCMNTYSTRING.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYEXTCMNTYSTRING.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展团体属性值设置（RMV-APPLYEXTCMNTYSTRING）_00841221.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展团体属性值设置（ADD-APPLYEXTCMNTYSTRING）_00840789.md`
+- 原始手册：`evidence/UDG/20.15.2/查询扩展团体属性值设置（LST-APPLYEXTCMNTYSTRING）_00600973.md`

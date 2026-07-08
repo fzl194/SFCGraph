@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPRUREACH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RU到网关的可达性检测配置（LST-IPRUREACH）_00440741.md`

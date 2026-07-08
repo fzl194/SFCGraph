@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFFRR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF-IP-FRR配置（LST-OSPFFRR）_00866329.md`

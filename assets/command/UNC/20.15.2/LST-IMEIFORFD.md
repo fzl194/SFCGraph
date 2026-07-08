@@ -70,4 +70,4 @@ IMEISV  =  1234567890123456
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IMEIFORFD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询强制分离策略(LST-IMEIFORFD)_72225169.md`

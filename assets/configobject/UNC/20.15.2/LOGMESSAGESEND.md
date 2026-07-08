@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOGMESSAGESEND.md`
+- 原始手册：`evidence/UNC/20.15.2/查询日志发送的信息（DSP-LOGMESSAGESEND）_59103653.md`

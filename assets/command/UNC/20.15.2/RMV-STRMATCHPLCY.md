@@ -57,4 +57,4 @@ RMV STRMATCHPLCY:FILEPATH="b/test.go",LINEPOS=100,VERSION="23.1.0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-STRMATCHPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除字符串匹配策略（RMV-STRMATCHPLCY）_78820742.md`

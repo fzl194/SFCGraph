@@ -58,4 +58,4 @@ RMV L2TPLNSINFO: GROUPID=1, LNSNO=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-L2TPLNSINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除L2TP组中的LNS信息（RMV-L2TPLNSINFO）_61837959.md`

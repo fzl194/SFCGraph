@@ -58,4 +58,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CHK-BLK.md`
+- 原始手册：`evidence/UDG/20.15.2/CSDB检查闭塞RU（CHK-BLK）_52427868.md`

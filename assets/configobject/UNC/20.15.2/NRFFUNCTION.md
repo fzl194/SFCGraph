@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NRF功能实例信息（MOD-NRFFUNCTION）_09654376.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF功能实例信息（RMV-NRFFUNCTION）_09651490.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF功能实体配置信息（LST-NRFFUNCTION）_09652771.md`
+- 原始手册：`evidence/UNC/20.15.2/添加NRF功能实例信息（ADD-NRFFUNCTION）_09652375.md`

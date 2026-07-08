@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MPACBINDIF.md`
-- 原始手册：`evidence/UNC/20.15.2/MPACBINDIF.md`
-- 原始手册：`evidence/UNC/20.15.2/MPACBINDIF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MPAC接口策略（RMV-MPACBINDIF）_50281062.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MPAC接口策略（ADD-MPACBINDIF）_49961922.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MPAC接口策略（LST-MPACBINDIF）_00865717.md`

@@ -79,4 +79,4 @@ SET UPGPATTIMER:NAME="UpgradeStackUpdateTimer" ,VALUE=45;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPGPATTIMER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改升级补丁定时器（SET-UPGPATTIMER）_30310144.md`

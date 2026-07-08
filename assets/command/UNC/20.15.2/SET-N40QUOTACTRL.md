@@ -67,4 +67,4 @@ SET N40QUOTACTRL: ZEROQUOTAACT=BLCK_NO_RPT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N40QUOTACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N40接口配额的控制参数（SET-N40QUOTACTRL）_96805505.md`

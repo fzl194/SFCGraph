@@ -68,4 +68,4 @@ SET PLMNRATECTRL:PLMNRATECTRLSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PLMNRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Serving-PLMN速率控制配置（SET-PLMNRATECTRL）_64343918.md`

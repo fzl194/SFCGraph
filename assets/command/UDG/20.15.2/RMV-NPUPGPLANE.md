@@ -53,4 +53,4 @@ RMV NPUPGPLANE: RUID=66;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-NPUPGPLANE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除NP升级平面（RMV-NPUPGPLANE）_92657422.md`

@@ -68,4 +68,4 @@ All Message Type        开启              30000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPCFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定消息类型固定速率流控信息（LST-GTPCFIXEDFC）_88377440.md`

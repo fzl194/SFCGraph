@@ -52,4 +52,4 @@ CLR NSSFMSGSTAT:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-NSSFMSGSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/清除收发消息内部统计（CLR-NSSFMSGSTAT）_76878552.md`

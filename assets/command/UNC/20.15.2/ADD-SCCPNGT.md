@@ -83,4 +83,4 @@ ADD SCCPNGT: NGTX=1, GTEXP=FOUR, ADDR="123", DESC="FOR HLR1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCCPNGT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP新全局翻译码(ADD-SCCPNGT)_26146328.md`

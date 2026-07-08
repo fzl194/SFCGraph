@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSCHFGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCHFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询短消息计费CHF组（LST-SMSCHFGRP）_13939885.md`
+- 原始手册：`evidence/UNC/20.15.2/设置短消息计费CHF组（SET-SMSCHFGRP）_77419832.md`

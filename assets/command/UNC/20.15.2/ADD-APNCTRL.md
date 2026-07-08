@@ -69,4 +69,4 @@ ADD APNCTRL: SUBSCRIBEDAPN="huawei.com", APNTYPE=BOTH, APNPRIORITY=MIDDLE, READY
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN控制参数配置(ADD-APNCTRL)_26145470.md`

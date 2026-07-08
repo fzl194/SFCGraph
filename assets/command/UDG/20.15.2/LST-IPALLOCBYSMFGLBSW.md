@@ -66,4 +66,4 @@ IPv6开关 = 使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPALLOCBYSMFGLBSW.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于SMF分配地址的全局开关（LST-IPALLOCBYSMFGLBSW）_82837158.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNTNLSTATUSRPT.md`
-- 原始手册：`evidence/UDG/20.15.2/APNTNLSTATUSRPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询隧道状态上报开关（LST-APNTNLSTATUSRPT）_37044445.md`
+- 原始手册：`evidence/UDG/20.15.2/设置隧道状态上报（SET-APNTNLSTATUSRPT）_40964602.md`

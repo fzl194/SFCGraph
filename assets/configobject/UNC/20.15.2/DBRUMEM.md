@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DBRUMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/DBRUMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/DBRUMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/DBRUMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CSDB-RU内存信息(MOD-DBRUMEM)_04873821.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CSDB-RU内存信息(RMV-DBRUMEM)_04794317.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CSDB-RU内存信息(ADD-DBRUMEM)_58702520.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSDB-RU内存信息(LST-DBRUMEM)_58555076.md`

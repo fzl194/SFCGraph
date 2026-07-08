@@ -66,4 +66,4 @@ LOD EXTERNALDB: DBTYPE=OTT,VERSION="0020.02.0000.0002.001";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOD-EXTERNALDB.md`
+- 原始手册：`evidence/UDG/20.15.2/加载外置规则数据库（LOD-EXTERNALDB）_94212263.md`

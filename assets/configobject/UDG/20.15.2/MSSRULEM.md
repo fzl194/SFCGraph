@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSRULEM.md`
-- 原始手册：`evidence/UDG/20.15.2/MSSRULEM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示匹配规则（DSP-MSSRULEM）_32207991.md`
+- 原始手册：`evidence/UDG/20.15.2/设置匹配规则（SET-MSSRULEM）_85250674.md`

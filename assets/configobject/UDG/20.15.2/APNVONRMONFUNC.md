@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNVONRMONFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNVONRMONFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VoNR语音质量监控功能开关（LST-APNVONRMONFUNC）_91775306.md`
+- 原始手册：`evidence/UDG/20.15.2/设置VoNR语音质量监控功能开关（SET-APNVONRMONFUNC）_91056082.md`

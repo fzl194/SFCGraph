@@ -63,4 +63,4 @@ KPI       2000000003  MOIID_3      5分钟     7天平均值同比  80        15
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-KPIMONRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询KPI异常检测规则（LST-KPIMONRULE）_87324058.md`

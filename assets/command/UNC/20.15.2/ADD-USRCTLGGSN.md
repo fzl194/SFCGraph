@@ -66,4 +66,4 @@ ADD USRCTLGGSN: IPT=IPV4, IPV4="192.168.66.6";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-USRCTLGGSN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加手工恢复GGSN地址(ADD-USRCTLGGSN)_72345505.md`

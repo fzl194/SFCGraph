@@ -36,6 +36,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFUPDATE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFUPDATE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFUPDATE.md`
+- 原始手册：`evidence/UNC/20.15.2/更新NF注册信息（ACT-NFUPDATE）_09652336.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF更新方式（LST-NFUPDATE）_09653014.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF更新方式（SET-NFUPDATE）_09651782.md`

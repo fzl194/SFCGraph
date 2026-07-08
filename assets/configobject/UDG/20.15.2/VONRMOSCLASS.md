@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VONRMOSCLASS.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRMOSCLASS.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRMOSCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS分类区间值（RTR-VONRMOSCLASS）_91295982.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MOS分类信息（LST-VONRMOSCLASS）_95174167.md`
+- 原始手册：`evidence/UDG/20.15.2/配置MOS分类的区间值（SET-VONRMOSCLASS）_91535712.md`

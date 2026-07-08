@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFSOFTPARAOFBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFSOFTPARAOFBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF软件参数比特位（LST-NSSFSOFTPARAOFBIT）_09651342.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSSF软件参数比特位（SET-NSSFSOFTPARAOFBIT）_09653769.md`

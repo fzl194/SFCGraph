@@ -60,4 +60,4 @@ SET WLRSITE:GRTIMER=80000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-WLRSITE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置无线路由全局属性（SET-WLRSITE）_00841257.md`

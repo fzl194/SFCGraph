@@ -62,4 +62,4 @@ RMV CPCGGRP: CPCGGRPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CPCGGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除抄送CG组（RMV-CPCGGRP）_09896866.md`

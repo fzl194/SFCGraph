@@ -65,4 +65,4 @@ SET AGFFCPARA: FCLEVEL=LOW, FCRSP=NoResponse;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AGFFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流控等级对应的流控参数（SET-AGFFCPARA）_45110934.md`

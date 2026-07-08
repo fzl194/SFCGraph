@@ -63,4 +63,4 @@ SET UPFSTARTPARA: INTERVAL=80;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPFSTARTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置系统开工流程中系统开工、系统参数更新、系统停工消息的参数（SET-UPFSTARTPARA）_82837243.md`

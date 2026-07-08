@@ -58,4 +58,4 @@ ADD MULDNNBINDAREA: DEDDNN="special.dnn",AREANAME="dnnarea1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MULDNNBINDAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能分流专网DNN支持的服务区域（ADD-MULDNNBINDAREA）_97781638.md`

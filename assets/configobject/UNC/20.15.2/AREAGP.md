@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AREAGP.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAGP.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAGP.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改区域群(MOD-AREAGP)_26305354.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域群(RMV-AREAGP)_72225223.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域群(ADD-AREAGP)_26145542.md`
+- 原始手册：`evidence/UNC/20.15.2/查询区域群(LST-AREAGP)_72345141.md`

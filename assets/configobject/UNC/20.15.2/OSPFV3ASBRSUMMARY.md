@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3ASBRSUMMARY.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3ASBRSUMMARY.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3ASBRSUMMARY.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3ASBRSUMMARY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OSPFv3引入路由聚合配置（MOD-OSPFV3ASBRSUMMARY）_00441181.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPFv3引入路由聚合配置（ADD-OSPFV3ASBRSUMMARY）_00441089.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPFv3引入路由聚合配置（RMV-OSPFV3ASBRSUMMARY）_49961282.md`
+- 原始手册：`evidence/UNC/20.15.2/显示OSPFv3引入路由聚合配置（LST-OSPFV3ASBRSUMMARY）_00866753.md`

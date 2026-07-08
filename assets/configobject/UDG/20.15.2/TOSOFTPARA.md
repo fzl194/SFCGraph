@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOSOFTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/TOSOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP优化软参（LST-TOSOFTPARA）_30974552.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP优化软参（SET-TOSOFTPARA）_81774263.md`

@@ -166,4 +166,4 @@ Partner ID    接口类型    子接口类型    消息类型    类ID    事物
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-RMMSGDETAIL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由管理消息明细（DSP-RMMSGDETAIL）_50121190.md`

@@ -54,4 +54,4 @@ RTR PAEDISCARD:CELLTYPE="aa", CELLINSTANCE="bb";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-PAEDISCARD.md`
+- 原始手册：`evidence/UNC/20.15.2/清除PAE丢包统计信息（RTR-PAEDISCARD）_92520053.md`

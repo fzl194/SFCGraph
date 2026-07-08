@@ -57,4 +57,4 @@ RMV HBUSRATTRCONF: CONFNAME="conf1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-HBUSRATTRCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除高带宽用户属性（RMV-HBUSRATTRCONF）_41926885.md`

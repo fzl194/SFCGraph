@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNUPSELPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/APNUPSELPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN粒度的UP选择策略（LST-APNUPSELPLY）_96242085.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN粒度的UP选择策略（SET-APNUPSELPLY）_96243087.md`

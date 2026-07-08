@@ -26,7 +26,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACLRULEADV6IPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/ACLRULEADV6IPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/ACLRULEADV6IPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/ACLRULEADV6IPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改高级IPv6-ACL规则（MOD-ACLRULEADV6IPSEC）_68321009.md`
+- 原始手册：`evidence/UNC/20.15.2/删除高级IPv6-ACL规则（RMV-ACLRULEADV6IPSEC）_21361348.md`
+- 原始手册：`evidence/UNC/20.15.2/增加高级IPv6-ACL规则（ADD-ACLRULEADV6IPSEC）_68200943.md`
+- 原始手册：`evidence/UNC/20.15.2/查询高级IPv6-ACL规则配置（LST-ACLRULEADV6IPSEC）_68320995.md`

@@ -60,4 +60,4 @@ RESOURCEBOX   0                0                0                0              
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CMFFC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CMF流控参数（LST-CMFFC）_21100212.md`

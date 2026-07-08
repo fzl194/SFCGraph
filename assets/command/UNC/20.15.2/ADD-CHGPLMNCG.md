@@ -75,4 +75,4 @@ ADD CHGPLMNCG: MCC="123", MNC="001", IPT=IPV4, CGIP1="192.168.66.5", CGIP2="192.
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHGPLMNCG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PLMN-CG配置参数（ADD-CHGPLMNCG）_72225067.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRKEYDATA.md`
-- 原始手册：`evidence/UNC/20.15.2/VLRKEYDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户的VLR关键信息（RMV-VLRKEYDATA）_30520902.md`
+- 原始手册：`evidence/UNC/20.15.2/显示VLR用户关键信息（DSP-VLRKEYDATA）_81320049.md`

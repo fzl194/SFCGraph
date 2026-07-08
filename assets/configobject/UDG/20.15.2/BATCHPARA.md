@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BATCHPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/BATCHPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询批量调度参数（LST-BATCHPARA）_50377175.md`
+- 原始手册：`evidence/UDG/20.15.2/设置批量调度参数（SET-BATCHPARA）_50533657.md`

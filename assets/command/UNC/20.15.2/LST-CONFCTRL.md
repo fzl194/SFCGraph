@@ -68,4 +68,4 @@ EPS消息缓存重发的时间间隔(s)  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CONFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查看冲突控制参数（LST-CONFCTRL）_09654431.md`

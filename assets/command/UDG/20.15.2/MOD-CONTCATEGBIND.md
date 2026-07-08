@@ -61,4 +61,4 @@ MOD CONTCATEGBIND: CFPROFILENAME="cf_profile1", CONTCATEGNAME="cf_contcategrpran
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-CONTCATEGBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/修改内容分类组绑定关系（MOD-CONTCATEGBIND）_43518651.md`

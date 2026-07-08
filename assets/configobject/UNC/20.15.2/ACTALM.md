@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACTALM.md`
-- 原始手册：`evidence/UNC/20.15.2/ACTALM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示活动告警（DSP-ACTALM）_59104140.md`
+- 原始手册：`evidence/UNC/20.15.2/查询活动告警（LST-ACTALM）_92570030.md`

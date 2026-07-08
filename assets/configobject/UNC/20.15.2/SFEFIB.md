@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEFIB.md`
+- 原始手册：`evidence/UNC/20.15.2/显示FIB表项信息（DSP-SFEFIB）_50280738.md`

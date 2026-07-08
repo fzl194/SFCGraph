@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMDBGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示承载上下文相关的调试信息(DSP-SMDBGINFO)_72225555.md`

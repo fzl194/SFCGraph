@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNAREABNDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAREABNDN2TAI.md`
-- 原始手册：`evidence/UNC/20.15.2/APNAREABNDN2TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN相关服务区域绑定的5G-TAI范围（RMV-APNAREABNDN2TAI）_00470288.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN相关服务区域绑定的5G-TAI范围（ADD-APNAREABNDN2TAI）_00630020.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN相关服务区域绑定的5G-TAI范围（LST-APNAREABNDN2TAI）_50069521.md`

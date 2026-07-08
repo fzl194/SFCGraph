@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRROUTE6.md`
-- 原始手册：`evidence/UNC/20.15.2/SRROUTE6.md`
-- 原始手册：`evidence/UNC/20.15.2/SRROUTE6.md`
-- 原始手册：`evidence/UNC/20.15.2/SRROUTE6.md`
-- 原始手册：`evidence/UNC/20.15.2/SRROUTE6.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6静态路由（MOD-SRROUTE6）_00600893.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6静态路由（RMV-SRROUTE6）_49960894.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv6静态路由（ADD-SRROUTE6）_50280922.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6静态路由（LST-SRROUTE6）_50281306.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IPv6静态路由表（DSP-SRROUTE6）_00840897.md`

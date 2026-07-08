@@ -63,4 +63,4 @@ MOD POLICYCONDITION: POLICYCNDNAME="policyname", UPLINKAVGRATE=50;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-POLICYCONDITION.md`
+- 原始手册：`evidence/UDG/20.15.2/修改业务质差检测策略（MOD-POLICYCONDITION）_15739993.md`

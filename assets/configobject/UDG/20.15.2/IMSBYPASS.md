@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IMSBYPASS.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSBYPASS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示IMS-Bypass功能的相关参数（LST-IMSBYPASS）_08806803.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IMS-Bypass功能相关参数（SET-IMSBYPASS）_08965289.md`

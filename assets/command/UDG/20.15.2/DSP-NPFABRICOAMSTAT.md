@@ -66,4 +66,4 @@ FRAME-0-SLOT-8  FRAME-0-SLOT-7-0  776586        776586        0              0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPFABRICOAMSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NP-Fabric统计数据（DSP-NPFABRICOAMSTAT）_87337576.md`

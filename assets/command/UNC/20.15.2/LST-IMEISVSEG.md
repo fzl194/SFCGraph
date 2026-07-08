@@ -76,4 +76,4 @@ IMEI号段结束字符串  =  22222222999999
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IMEISVSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMEISV号段（LST-IMEISVSEG）_09897141.md`

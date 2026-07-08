@@ -70,4 +70,4 @@ all-protocol  不使能                不使能（关闭）  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FINGERIDENT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SA指纹识别配置（LST-FINGERIDENT）_86723149.md`

@@ -69,4 +69,4 @@ SET GLBNSHHDNPLY: NSHNAME="nsh", REDIRIPVER=IPV4, REDIRIPV4="10.0.0.0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBNSHHDNPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/配置NSH头增强全局策略（SET-GLBNSHHDNPLY）_27889291.md`

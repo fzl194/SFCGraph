@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PROPATTACHIPSECPROPOSAL.md`
-- 原始手册：`evidence/UNC/20.15.2/PROPATTACHIPSECPROPOSAL.md`
-- 原始手册：`evidence/UNC/20.15.2/PROPATTACHIPSECPROPOSAL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPsec策略绑定提议（RMV-PROPATTACHIPSECPROPOSAL）_80911000.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPsec策略绑定提议（ADD-PROPATTACHIPSECPROPOSAL）_80592500.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPsec策略绑定提议（LST-PROPATTACHIPSECPROPOSAL）_25830695.md`

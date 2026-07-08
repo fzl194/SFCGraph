@@ -56,4 +56,4 @@ RMV LOCALHLR: HLRIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCALHLR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地HLR(RMV-LOCALHLR)_26305886.md`

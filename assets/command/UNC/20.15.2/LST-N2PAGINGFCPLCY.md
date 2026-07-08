@@ -63,4 +63,4 @@ N2寻呼反压流控功能开关 = 开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N2PAGINGFCPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2模式寻呼消息反压流控策略（LST-N2PAGINGFCPLCY）_58680353.md`

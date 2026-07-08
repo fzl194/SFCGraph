@@ -68,4 +68,4 @@ SET SIGDSCP:PROTOCOL=PFCP,DSCPV=25;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SIGDSCP.md`
+- 原始手册：`evidence/UDG/20.15.2/设置信令报文DSCP值（SET-SIGDSCP）_82837690.md`

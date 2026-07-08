@@ -61,4 +61,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FILEDELPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询文件删除策略(LST-FILEDELPOLICY)_29626887.md`

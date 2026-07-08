@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NPPORTCHKPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP端口检测的参数（LST-NPPORTCHKPARA）_44195169.md`

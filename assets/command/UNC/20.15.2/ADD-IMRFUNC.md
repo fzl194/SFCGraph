@@ -60,4 +60,4 @@ ADD IMRFUNC: SUBRANGE=SPECIAL_USER, IMSIPRE="123000", INTERFACETYPE=S11-1&S6a-1&
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IMRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户消息统计功能配置(ADD-IMRFUNC)_72225087.md`

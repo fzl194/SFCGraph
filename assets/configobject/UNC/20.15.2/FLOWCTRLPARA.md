@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FLOWCTRLPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/FLOWCTRLPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流控系统参数(LST-FLOWCTRLPARA)_72345773.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流控系统参数(SET-FLOWCTRLPARA)_26305982.md`

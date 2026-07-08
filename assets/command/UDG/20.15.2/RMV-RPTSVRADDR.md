@@ -55,4 +55,4 @@ RMV RPTSVRADDR: ACCESSNAME="access01":;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RPTSVRADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除报表服务器接入点配置（RMV-RPTSVRADDR）_06453266.md`

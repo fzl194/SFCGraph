@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TWAMPSENDER.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPSENDER.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPSENDER.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPSENDER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改TWAMP发送端（MOD-TWAMPSENDER）_27262290.md`
+- 原始手册：`evidence/UDG/20.15.2/删除TWAMP发送端（RMV-TWAMPSENDER）_27262292.md`
+- 原始手册：`evidence/UDG/20.15.2/增加TWAMP发送端（ADD-TWAMPSENDER）_73302045.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TWAMP发送端（LST-TWAMPSENDER）_27102478.md`

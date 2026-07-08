@@ -63,4 +63,4 @@ ADD PNFSMFINFO: NFINSTANCEID="SMF_Instance_0", PGWFQDN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFSMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端SMF的信息（ADD-PNFSMFINFO）_09653822.md`

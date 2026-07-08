@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FEIDBGCMD.md`
+- 原始手册：`evidence/UDG/20.15.2/执行FEI调试命令（OPR-FEIDBGCMD）_07465522.md`

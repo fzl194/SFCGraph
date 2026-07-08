@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSACCTREQATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSACCTREQATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS计费服务器可选消息属性（LST-RDSACCTREQATTR）_09896780.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RADIUS计费服务器可选消息属性（SET-RDSACCTREQATTR）_09896779.md`

@@ -60,4 +60,4 @@ MOD SMARTDT: UETYPE=WINDOWS, DTLIMIT=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMARTDT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于终端类型的DT限制（MOD-SMARTDT）_26305548.md`

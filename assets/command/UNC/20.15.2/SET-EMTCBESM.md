@@ -69,4 +69,4 @@ SET EMTCBESM: T3485=48, N3485=5, T3486=48, N3486=5, T3489=48, N3489=5, T3495=48,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-EMTCBESM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1模式eMTC-SM协议参数（SET-EMTCBESM）_72345379.md`

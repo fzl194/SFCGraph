@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEVNETCONFREQ.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NETCONF请求信息（DSP-DEVNETCONFREQ）_59103496.md`

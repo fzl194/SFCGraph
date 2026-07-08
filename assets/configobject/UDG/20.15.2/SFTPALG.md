@@ -42,5 +42,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFTPALG.md`
-- 原始手册：`evidence/UDG/20.15.2/SFTPALG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SFTP协议算法(LST-SFTPALG)_80253905.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SFTP协议算法(SET-SFTPALG)_33293650.md`

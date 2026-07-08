@@ -45,6 +45,6 @@ UPF支持三种类型的用户：本地用户、漫游用户、拜访用户。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HPLMNLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/HPLMNLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/HPLMNLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UPF设备的归属PLMN（RMV-HPLMNLIST）_44865466.md`
+- 原始手册：`evidence/UDG/20.15.2/查看UPF设备的归属PLMN（LST-HPLMNLIST）_44865467.md`
+- 原始手册：`evidence/UDG/20.15.2/配置UPF设备的归属PLMN（ADD-HPLMNLIST）_44865465.md`

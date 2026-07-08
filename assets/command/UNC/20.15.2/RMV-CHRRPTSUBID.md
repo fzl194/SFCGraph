@@ -60,4 +60,4 @@ RMV CHRRPTSUBID,RANGE=ALL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHRRPTSUBID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CHR本地存盘用户（RMV-CHRRPTSUBID）_35847111.md`

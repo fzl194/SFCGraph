@@ -63,4 +63,4 @@ LST ICMPOPTSECURITY:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ICMPOPTSECURITY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICMP选项安全配置（LST-ICMPOPTSECURITY）_00440761.md`

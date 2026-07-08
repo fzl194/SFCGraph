@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PLCYCLSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询冗余策略老化开关（LST-PLCYCLSWITCH）_45881145.md`

@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SERVICEPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务属性（LST-SERVICEPROP）_86528666.md`

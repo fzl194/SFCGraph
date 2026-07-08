@@ -68,4 +68,4 @@ LST MPACBINDIF:IFNAME="Ethernet64/0/3",IPVERSION=IPv4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MPACBINDIF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MPAC接口策略（LST-MPACBINDIF）_00865717.md`

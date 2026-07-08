@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-MSSPBUFTRACE.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PBUF轨迹设置的开关（SET-MSSPBUFTRACE）_85410312.md`

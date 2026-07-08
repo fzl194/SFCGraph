@@ -70,4 +70,4 @@ ADD RFSP: SUBRANGE=ALL_IMSI, RFSPSOURCE=USE_CFG, TRFSP=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RFSP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RFSP配置(ADD-RFSP)_26305350.md`

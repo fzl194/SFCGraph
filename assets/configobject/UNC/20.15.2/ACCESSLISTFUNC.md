@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACCESSLISTFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/ACCESSLISTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接入控制名单功能（LST-ACCESSLISTFUNC）_96242026.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接入控制名单功能（SET-ACCESSLISTFUNC）_72373079.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HVNEGRCPSW.md`
-- 原始手册：`evidence/UNC/20.15.2/HVNEGRCPSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游参数协商开关（LST-HVNEGRCPSW）_23782754.md`
+- 原始手册：`evidence/UNC/20.15.2/设置漫游参数协商开关（SET-HVNEGRCPSW）_70462621.md`

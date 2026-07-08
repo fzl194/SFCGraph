@@ -62,4 +62,4 @@ NFTypeNSSF   NSSF_Instance_0   00000000-0000-0000-0000-000000000014
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HTTPNFINST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP服务存储的NF实例信息（LST-HTTPNFINST）_28971841.md`

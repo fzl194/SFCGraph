@@ -59,4 +59,4 @@ RMV RACGROUP:RACGROUPNAME="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RACGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RAC组（RMV-RACGROUP）_09654439.md`

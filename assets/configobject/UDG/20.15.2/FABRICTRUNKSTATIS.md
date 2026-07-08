@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABRICTRUNKSTATIS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Fabric-Trunk成员接口统计（DSP-FABRICTRUNKSTATIS）_85021296.md`

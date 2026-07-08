@@ -59,4 +59,4 @@ MOD PIMSTATICRP:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,STATICRPADDR="192.1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-PIMSTATICRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改PIM静态RP配置（MOD-PIMSTATICRP）_50281162.md`

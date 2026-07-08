@@ -91,4 +91,4 @@ SIG PATH ONLY  UP          IPV4             127.16.1.5         192.168.1.6      
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PATHINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径信息（DSP-PATHINFO）_82837223.md`

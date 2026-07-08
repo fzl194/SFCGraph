@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NASCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/NASCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NAS兼容性参数（LST-NASCMPT）_11472420.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NAS兼容性参数（SET-NASCMPT）_58192283.md`

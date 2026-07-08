@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-USRBLACKLSTFUN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户黑名单接入控制功能（LST-USRBLACKLSTFUN）_65233886.md`

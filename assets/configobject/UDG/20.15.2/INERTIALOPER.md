@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/INERTIALOPER.md`
-- 原始手册：`evidence/UDG/20.15.2/INERTIALOPER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询惯性运行功能配置（LST-INERTIALOPER）_15208957.md`
+- 原始手册：`evidence/UDG/20.15.2/设置惯性运行功能（SET-INERTIALOPER）_14588115.md`

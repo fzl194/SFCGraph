@@ -51,4 +51,4 @@ RTR SESSSTATIC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-SESSSTATIC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除Diameter会话消息统计计数（RTR-SESSSTATIC）_00841173.md`

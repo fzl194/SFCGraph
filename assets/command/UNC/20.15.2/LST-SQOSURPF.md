@@ -65,4 +65,4 @@ URPF检查类型  =  松散检查
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SQOSURPF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流行为安全URPF（LST-SQOSURPF）_00841749.md`

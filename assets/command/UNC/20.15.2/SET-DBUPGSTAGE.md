@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DBUPGSTAGE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSDB灰度升级阶段(SET-DBUPGSTAGE)_32965409.md`

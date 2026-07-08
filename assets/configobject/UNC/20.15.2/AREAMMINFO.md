@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AREAMMINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAMMINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAMMINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAMMINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于区域的网络名称-(MOD-AREAMMINFO)_92632080.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于区域的网络名称-(RMV-AREAMMINFO)_42711749.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于区域的网络名称-(ADD-AREAMMINFO)_42831705.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于区域的网络名称-(LST-AREAMMINFO)_42552113.md`

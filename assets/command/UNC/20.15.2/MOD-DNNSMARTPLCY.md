@@ -57,4 +57,4 @@ MOD DNNSMARTPLCY: DNN="huawei.com", SMFSELSW=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DNNSMARTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNN智能分流配置（MOD-DNNSMARTPLCY）_87680060.md`

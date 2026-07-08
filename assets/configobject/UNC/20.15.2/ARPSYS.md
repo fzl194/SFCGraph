@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ARPSYS.md`
-- 原始手册：`evidence/UNC/20.15.2/ARPSYS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ARP系统信息（LST-ARPSYS）_00600693.md`
+- 原始手册：`evidence/UNC/20.15.2/配置ARP系统信息（SET-ARPSYS）_49801498.md`

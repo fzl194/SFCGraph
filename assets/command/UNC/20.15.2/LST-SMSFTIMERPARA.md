@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSFTIMERPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF网元定时器（LST-SMSFTIMERPARA）_96242483.md`

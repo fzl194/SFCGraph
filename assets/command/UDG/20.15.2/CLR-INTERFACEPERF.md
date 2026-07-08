@@ -58,4 +58,4 @@ CLR INTERFACEPERF:INTERFACENAME="saif1/0/0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-INTERFACEPERF.md`
+- 原始手册：`evidence/UDG/20.15.2/清除逻辑口报文统计信息（CLR-INTERFACEPERF）_86526346.md`

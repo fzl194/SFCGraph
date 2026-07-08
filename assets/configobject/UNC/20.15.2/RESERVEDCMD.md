@@ -37,6 +37,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDCMD.md`
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDCMD.md`
-- 原始手册：`evidence/UNC/20.15.2/RESERVEDCMD.md`
+- 原始手册：`evidence/UNC/20.15.2/删除补丁预留配置（RMV-RESERVEDCMD）_50558747.md`
+- 原始手册：`evidence/UNC/20.15.2/新增补丁预留配置（ADD-RESERVEDCMD）_50558738.md`
+- 原始手册：`evidence/UNC/20.15.2/查询补丁预留配置（LST-RESERVEDCMD）_50558743.md`

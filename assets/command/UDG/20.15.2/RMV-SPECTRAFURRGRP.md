@@ -58,4 +58,4 @@ RMV SPECTRAFURRGRP:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SPECTRAFURRGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局缺省费率的流量使用量上报规则组（RMV-SPECTRAFURRGRP）_36146717.md`

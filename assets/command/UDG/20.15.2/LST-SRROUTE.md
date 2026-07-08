@@ -83,4 +83,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv4静态路由（LST-SRROUTE）_50120606.md`

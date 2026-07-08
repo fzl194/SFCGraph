@@ -56,4 +56,4 @@ RMV NGTAPAGINGPLCY: TALISTID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGTAPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G跟踪区列表的寻呼策略配置（RMV-NGTAPAGINGPLCY）_48290740.md`

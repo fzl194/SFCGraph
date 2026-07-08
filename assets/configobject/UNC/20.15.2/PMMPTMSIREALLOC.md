@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PMMPTMSIREALLOC.md`
-- 原始手册：`evidence/UNC/20.15.2/PMMPTMSIREALLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式PTMSI重分配控制参数(LST-PMMPTMSIREALLOC)_26145522.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Iu模式PTMSI重分配控制参数(SET-PMMPTMSIREALLOC)_72345119.md`

@@ -70,4 +70,4 @@ RMV UPDIAMCONN:DIAMCONNGRP="Grp1",LOCINTERFACE="swmif1/0/0";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPDIAMCONN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter链路（RMV-UPDIAMCONN）_97314557.md`

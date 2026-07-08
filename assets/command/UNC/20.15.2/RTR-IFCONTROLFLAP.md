@@ -54,4 +54,4 @@ RTR IFCONTROLFLAP:IFNAME="ethernet64/0/3",FLAPCOUNT=TRUE,PENALTY=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-IFCONTROLFLAP.md`
+- 原始手册：`evidence/UNC/20.15.2/清除接口震荡抑制信息（RTR-IFCONTROLFLAP）_50281094.md`

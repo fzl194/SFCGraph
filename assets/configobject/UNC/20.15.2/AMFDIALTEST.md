@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFDIALTEST.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFDIALTEST.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFDIALTEST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF拨测用户配置（RMV-AMFDIALTEST）_70382365.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF拨测用户配置（ADD-AMFDIALTEST）_70462501.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF拨测用户配置（LST-AMFDIALTEST）_23782746.md`

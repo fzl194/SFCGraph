@@ -60,4 +60,4 @@ ADD PRAID: PRAID="0x800001", NONLOCAL=ON, PRANAME="praname1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PRAID.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PRA标识(ADD-PRAID)_72225275.md`

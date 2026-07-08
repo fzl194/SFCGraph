@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFEXITUDMBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFEXITUDMBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/停止用户退出UDM-Bypass状态任务（STP-AMFEXITUDMBYPASS）_58840357.md`
+- 原始手册：`evidence/UNC/20.15.2/启动用户退出UDM-Bypass状态任务（STR-AMFEXITUDMBYPASS）_13800474.md`

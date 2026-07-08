@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DRKEYNF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询监控的关键部件信息（LST-DRKEYNF）_23554766.md`

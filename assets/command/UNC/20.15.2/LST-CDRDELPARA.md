@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CDRDELPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单删除参数（LST-CDRDELPARA）_51174270.md`

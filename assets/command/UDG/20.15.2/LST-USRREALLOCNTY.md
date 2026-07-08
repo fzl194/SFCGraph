@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-USRREALLOCNTY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询主动触发用户位置实时通知功能（LST-USRREALLOCNTY）_19172436.md`

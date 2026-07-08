@@ -60,4 +60,4 @@ RMV CHGPLMNCG: MCC="123", MNC="001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGPLMNCG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN-CG配置参数(RMV-CHGPLMNCG)_26305202.md`

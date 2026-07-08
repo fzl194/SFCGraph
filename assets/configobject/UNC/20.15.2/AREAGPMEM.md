@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AREAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/AREAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域群成员(RMV-AREAGPMEM)_26305356.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域群成员(ADD-AREAGPMEM)_72225225.md`
+- 原始手册：`evidence/UNC/20.15.2/查询区域群成员(LST-AREAGPMEM)_72345143.md`

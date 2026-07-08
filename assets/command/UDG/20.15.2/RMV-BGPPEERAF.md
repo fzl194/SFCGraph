@@ -64,4 +64,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-BGPPEERAF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP对等体地址族（RMV-BGPPEERAF）_00441309.md`

@@ -58,4 +58,4 @@ ADD ADRLOCWHITELST: MSISDN="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ADRLOCWHITELST.md`
+- 原始手册：`evidence/UDG/20.15.2/添加区域地址分配用户白名单（ADD-ADRLOCWHITELST）_06054824.md`

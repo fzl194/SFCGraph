@@ -58,4 +58,4 @@ RMV RRCINACTTAI: MCC="123", MNC="00", BGNTAC="000112";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RRCINACTTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RRC-Inactive生效的TAI范围（RMV-RRCINACTTAI）_23623010.md`

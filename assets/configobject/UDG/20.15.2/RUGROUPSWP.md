@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RUGROUPSWP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示资源单元组主备倒换状态信息（DSP-RUGROUPSWP）_59103985.md`

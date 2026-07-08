@@ -58,4 +58,4 @@ MOD DMVLE: LOINDEX=32, PDTNAME="MME1", LOINFONAME="DMVLE";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DMVLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter虚拟本地实体(MOD-DMVLE)_26306108.md`

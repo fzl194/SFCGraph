@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPCCTRLPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPCCTRLPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RAN侧拥塞检测功能参数(LST-SCTPCCTRLPARA)_06728413.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RAN侧拥塞检测功能参数(SET-SCTPCCTRLPARA)_56488512.md`

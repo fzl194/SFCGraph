@@ -57,4 +57,4 @@ RMV UECAPBYIMSI: IMSI="460011418603055";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UECAPBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UE无线能力策略（RMV-UECAPBYIMSI）_27148246.md`

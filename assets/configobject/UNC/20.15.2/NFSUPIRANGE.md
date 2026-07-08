@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFSUPIRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSUPIRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSUPIRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF-SUPIRANGE信息（RMV-NFSUPIRANGE）_45020380.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-SUPIRANGE信息（ADD-NFSUPIRANGE）_91460553.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-SUPIRANGE信息（LST-NFSUPIRANGE）_44060908.md`

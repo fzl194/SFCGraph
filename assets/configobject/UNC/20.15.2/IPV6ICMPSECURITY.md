@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPV6ICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6ICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6ICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6ICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6安全配置（MOD-IPV6ICMPSECURITY）_49961650.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6安全配置（RMV-IPV6ICMPSECURITY）_49961142.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6安全配置（LST-IPV6ICMPSECURITY）_49961394.md`
+- 原始手册：`evidence/UNC/20.15.2/添加IPv6安全配置（ADD-IPV6ICMPSECURITY）_00840585.md`

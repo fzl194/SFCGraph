@@ -57,4 +57,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MEASMU.md`
+- 原始手册：`evidence/UNC/20.15.2/设置话统测量单元模型(SET-MEASMU)_32481237.md`

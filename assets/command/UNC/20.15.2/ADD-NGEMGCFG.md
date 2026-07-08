@@ -64,4 +64,4 @@ ADD NGEMGCFG: NOID=0, EMGMODE=VALIDUE,DNN="huawei.com",SST=0,SD="FFFFFF" ;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGEMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加运营商紧急呼叫功能配置（ADD-NGEMGCFG）_09653659.md`

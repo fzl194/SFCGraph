@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ROUTE6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6路由表（DSP-ROUTE6）_49961994.md`

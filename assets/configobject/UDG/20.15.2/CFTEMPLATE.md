@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFTEMPLATE.md`
-- 原始手册：`evidence/UDG/20.15.2/CFTEMPLATE.md`
-- 原始手册：`evidence/UDG/20.15.2/CFTEMPLATE.md`
-- 原始手册：`evidence/UDG/20.15.2/CFTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改内容过滤模板（MOD-CFTEMPLATE）_73790545.md`
+- 原始手册：`evidence/UDG/20.15.2/删除内容过滤模板（RMV-CFTEMPLATE）_74191815.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容过滤模板（ADD-CFTEMPLATE）_73992447.md`
+- 原始手册：`evidence/UDG/20.15.2/查询内容过滤模板（LST-CFTEMPLATE）_74390565.md`

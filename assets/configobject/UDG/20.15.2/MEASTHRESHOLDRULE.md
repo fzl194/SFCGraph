@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MEASTHRESHOLDRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/MEASTHRESHOLDRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/MEASTHRESHOLDRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/MEASTHRESHOLDRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改话统阈值规则(MOD-MEASTHRESHOLDRULE)_29263060.md`
+- 原始手册：`evidence/UDG/20.15.2/删除话统阈值规则(RMV-MEASTHRESHOLDRULE)_29103316.md`
+- 原始手册：`evidence/UDG/20.15.2/查询话统阈值规则(LST-MEASTHRESHOLDRULE)_75782757.md`
+- 原始手册：`evidence/UDG/20.15.2/添加话统阈值规则(ADD-MEASTHRESHOLDRULE)_75942549.md`

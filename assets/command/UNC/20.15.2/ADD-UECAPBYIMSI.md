@@ -60,4 +60,4 @@ ADD UECAPBYIMSI: IMSI="460011418603055";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UECAPBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UE无线能力策略（ADD-UECAPBYIMSI）_62467881.md`

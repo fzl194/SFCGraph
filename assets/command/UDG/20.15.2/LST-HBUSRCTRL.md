@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HBUSRCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询高带宽用户功能控制参数（LST-HBUSRCTRL）_42127243.md`

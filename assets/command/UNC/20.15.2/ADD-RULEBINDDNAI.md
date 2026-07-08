@@ -67,4 +67,4 @@ ADD RULEBINDDNAI: RULENAME="rule1", DNAI="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RULEBINDDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加预定义规则关联的DNAI（ADD-RULEBINDDNAI）_27170471.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MCASTPAEGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/MCASTPAEGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询组播组引流信息（DSP-MCASTPAEGROUP）_49801894.md`
+- 原始手册：`evidence/UDG/20.15.2/清除组播组引流信息表项（RTR-MCASTPAEGROUP）_50121394.md`

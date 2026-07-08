@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFPROXYSMF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPROXYSMF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPROXYSMF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF管理的ProxySMF（RMV-NRFPROXYSMF）_23623002.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF管理的ProxySMF（ADD-NRFPROXYSMF）_23782730.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF管理的ProxySMF（LST-NRFPROXYSMF）_70462553.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCRPTCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCRPTCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCRPTCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCRPTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改位置上报配置信息(MOD-LOCRPTCFG)_26145938.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置上报配置信息(RMV-LOCRPTCFG)_72345537.md`
+- 原始手册：`evidence/UNC/20.15.2/增加位置上报配置信息(ADD-LOCRPTCFG)_26305746.md`
+- 原始手册：`evidence/UNC/20.15.2/查询位置上报配置信息(LST-LOCRPTCFG)_72225617.md`

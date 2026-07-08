@@ -88,4 +88,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-BFDSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BFD的会话信息（DSP-BFDSESSION）_49802390.md`

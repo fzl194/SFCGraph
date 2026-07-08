@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LTEMRATVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/LTEMRATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LTE-M用户的RAT值（LST-LTEMRATVALUE）_04284713.md`
+- 原始手册：`evidence/UNC/20.15.2/设置LTE-M用户的RAT值（SET-LTEMRATVALUE）_04284725.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWEDNFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWEDNFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWEDNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF允许的切片信息（RMV-PNFALLOWEDNFNS）_09652542.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF允许的切片信息（ADD-PNFALLOWEDNFNS）_09651719.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF允许的切片信息（LST-PNFALLOWEDNFNS）_09651631.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ANONYMOUSAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/ANONYMOUSAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询匿名APN配置（LST-ANONYMOUSAPN）_09654387.md`
+- 原始手册：`evidence/UNC/20.15.2/设置匿名APN配置（SET-ANONYMOUSAPN）_09651574.md`

@@ -58,4 +58,4 @@ LST PKICRLCHECK:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PKICRLCHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CRL检查（LST-PKICRLCHECK）_41422663.md`

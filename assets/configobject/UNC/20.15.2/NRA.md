@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除空路由区对照表(RMV-NRA)_26145418.md`
+- 原始手册：`evidence/UNC/20.15.2/增加空路由区对照表(ADD-NRA)_72345019.md`
+- 原始手册：`evidence/UNC/20.15.2/查询空路由区对照表(LST-NRA)_72225101.md`

@@ -62,4 +62,4 @@ VLR等待接收MME SGsAP-RESET-ACK响应(秒) = 5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VLRRESETTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置（LST-VLRRESETTIMER）_11591169.md`

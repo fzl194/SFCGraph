@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF时长信息（LST-NRFTIMER）_09653268.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF时长信息（SET-NRFTIMER）_09652276.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPPORTPODTBMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NP卡和Pod-TB出端口映射信息（DSP-NPPORTPODTBMAP）_20420301.md`

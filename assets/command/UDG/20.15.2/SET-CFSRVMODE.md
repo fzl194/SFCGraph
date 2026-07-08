@@ -72,4 +72,4 @@ SET CFSRVMODE: DBMODE=STANDARD;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-CFSRVMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/配置-URL过滤业务模式（SET-CFSRVMODE）_19881182.md`

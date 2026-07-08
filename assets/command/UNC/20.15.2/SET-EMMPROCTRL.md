@@ -108,4 +108,4 @@ SET EMMPROCTRL: PROT=UPDATE_LOCATION, ULRHSSREJ=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-EMMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1模式移动性管理流程控制参数(SET-EMMPROCTRL)_72225199.md`

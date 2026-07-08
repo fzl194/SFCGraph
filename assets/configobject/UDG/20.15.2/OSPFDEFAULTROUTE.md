@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFDEFAULTROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFDEFAULTROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFDEFAULTROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFDEFAULTROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF默认宣告路由配置（MOD-OSPFDEFAULTROUTE）_50121834.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF默认宣告路由配置（ADD-OSPFDEFAULTROUTE）_50280802.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF默认宣告路由配置（RMV-OSPFDEFAULTROUTE）_50281658.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF默认宣告路由配置（LST-OSPFDEFAULTROUTE）_49961550.md`

@@ -57,4 +57,4 @@ RMV BACKUPGUAMI: INDEX=11;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-BACKUPGUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除供备GUAMI信息（RMV-BACKUPGUAMI）_09653060.md`

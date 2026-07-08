@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NCSSYNCFULL.md`
+- 原始手册：`evidence/UNC/20.15.2/显示全量同步操作的诊断信息（DSP-NCSSYNCFULL）_59104089.md`

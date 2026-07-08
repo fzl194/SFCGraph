@@ -59,4 +59,4 @@ RMV GTPCCMPT: IDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPCCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C-V0_V1协议兼容性配置(RMV-GTPCCMPT)_26305732.md`

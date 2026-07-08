@@ -62,4 +62,4 @@ ADD CCVALUE: CCGROUPNAME="c1", CCVALUE="0x0000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CCVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加计费特征值（ADD-CCVALUE）_88733215.md`

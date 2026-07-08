@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TALSTPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/TALSTPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/TALSTPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/TALSTPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改TA-List寻呼策略配置(MOD-TALSTPAGINGPLCY)_72345863.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA-List寻呼策略配置(RMV-TALSTPAGINGPLCY)_26146264.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TA-List寻呼策略配置(ADD-TALSTPAGINGPLCY)_26306074.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TA-List寻呼策略配置(LST-TALSTPAGINGPLCY)_72225943.md`

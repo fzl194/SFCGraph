@@ -58,4 +58,4 @@ ADD UPDIAMAAAGRP:GROUPNAME="diametergroup";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UPDIAMAAAGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter-AAA服务器组（ADD-UPDIAMAAAGRP）_97080177.md`

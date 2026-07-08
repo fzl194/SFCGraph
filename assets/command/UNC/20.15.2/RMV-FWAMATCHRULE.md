@@ -54,4 +54,4 @@ RMV FWAMATCHRULE:MATCHTYPE=MatchTypeRule,MATCHFUNC=MatchFuncFull,RULE="up_870000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-FWAMATCHRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除FWA用户匹配规则（RMV-FWAMATCHRULE）_54773972.md`

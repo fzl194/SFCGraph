@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGDNS.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS运行参数（LST-NGDNS）_09652584.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DNS运行参数（SET-NGDNS）_09651853.md`

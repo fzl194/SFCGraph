@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SERVINGCHGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SERVINGCHGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询I-SMF_SGW的计费模式和CHF选择参数（LST-SERVINGCHGCTRL）_13800468.md`
+- 原始手册：`evidence/UNC/20.15.2/设置I-SMF_SGW的计费模式和CHF选择参数（SET-SERVINGCHGCTRL）_14280402.md`

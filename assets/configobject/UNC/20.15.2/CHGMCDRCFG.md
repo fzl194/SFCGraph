@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGMCDRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGMCDRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGMCDRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M-CDR计费配置(RMV-CHGMCDRCFG)_60057269.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M-CDR计费配置(ADD-CHGMCDRCFG)_60137457.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M-CDR计费配置(LST-CHGMCDRCFG)_09617638.md`

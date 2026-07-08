@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMDICTSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Diameter字典加载状态（DSP-UPDIAMDICTSTAT）_45432686.md`

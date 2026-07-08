@@ -57,4 +57,4 @@ RMV SUBGPMEM: IMSIPRE="12345";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SUBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户群成员(RMV-SUBGPMEM)_72345161.md`

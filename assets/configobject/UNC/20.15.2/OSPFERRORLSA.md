@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFERRORLSA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF错误LSA的信息（DSP-OSPFERRORLSA）_00440385.md`

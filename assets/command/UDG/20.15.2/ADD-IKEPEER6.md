@@ -84,4 +84,4 @@ ADD IKEPEER6:PEERNAME="peer1",EXCHANGEMODE=Main;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IKEPEER6.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6-IKE对等体（ADD-IKEPEER6）_21361306.md`

@@ -64,4 +64,4 @@ ADD LOCALNRI: POOLID=1, NRIVBGN=10, NRINUM=1, STATE=UNBLOCKED;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOCALNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本局NRI配置信息(ADD-LOCALNRI)_72345699.md`

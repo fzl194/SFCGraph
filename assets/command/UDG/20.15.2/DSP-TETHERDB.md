@@ -68,4 +68,4 @@ Tethering检测特征库版本号 = 9001.01.0000.0000.115
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-TETHERDB.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Tethering检测特征库（DSP-TETHERDB）_82837456.md`

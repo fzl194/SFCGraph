@@ -63,4 +63,4 @@ RMV PREURLGBINDUP:USERPROFILENAME="testprofile",PREURLGRPNAME="testurlgroup";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PREURLGBINDUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户模板的前缀URL组绑定关系（RMV-PREURLGBINDUP）_82837412.md`

@@ -51,4 +51,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-USRSECAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除二次授权用户（RMV-USRSECAUTH）_88031789.md`

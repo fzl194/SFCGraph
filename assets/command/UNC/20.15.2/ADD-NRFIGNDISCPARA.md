@@ -66,4 +66,4 @@ ADD NRFIGNDISCPARA: NFTYPE=NRF, IGNDISCPARA=Tai;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFIGNDISCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF服务发现忽略参数规则（ADD-NRFIGNDISCPARA）_98328634.md`

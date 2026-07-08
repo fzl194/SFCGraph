@@ -70,4 +70,4 @@ VNODE_UGW_VNFC_SPU_0065    升级结束
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-UPDSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示升级状态（DSP-UPDSTATUS）_88089822.md`

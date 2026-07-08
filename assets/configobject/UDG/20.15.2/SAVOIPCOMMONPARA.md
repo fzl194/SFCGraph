@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SAVOIPCOMMONPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SA-VOIP业务公共参数（SET-SAVOIPCOMMONPARA）_82837311.md`

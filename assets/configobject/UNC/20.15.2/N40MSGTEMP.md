@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N40MSGTEMP.md`
-- 原始手册：`evidence/UNC/20.15.2/N40MSGTEMP.md`
-- 原始手册：`evidence/UNC/20.15.2/N40MSGTEMP.md`
-- 原始手册：`evidence/UNC/20.15.2/N40MSGTEMP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N40消息属性模板（MOD-N40MSGTEMP）_48877301.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N40消息属性模板（RMV-N40MSGTEMP）_49237355.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N40消息属性模板（ADD-N40MSGTEMP）_48957459.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40消息属性模板（LST-N40MSGTEMP）_02197468.md`

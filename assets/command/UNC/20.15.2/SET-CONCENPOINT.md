@@ -76,4 +76,4 @@ SET CONCENPOINT: GACONCENMODE=SINGLE_CONNECT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CONCENPOINT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置集中点部署模式（SET-CONCENPOINT）_09896704.md`

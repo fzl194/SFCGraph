@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CPACCESSLISTFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/CPACCESSLISTFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CP白名单开关（LST-CPACCESSLISTFUNC）_86530397.md`
+- 原始手册：`evidence/UDG/20.15.2/配置CP白名单开关（SET-CPACCESSLISTFUNC）_86530396.md`

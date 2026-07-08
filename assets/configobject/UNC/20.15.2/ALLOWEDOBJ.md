@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDOBJ.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDOBJ.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDOBJ.md`
+- 原始手册：`evidence/UNC/20.15.2/删除授权控制对象信息（RMV-ALLOWEDOBJ）_09652585.md`
+- 原始手册：`evidence/UNC/20.15.2/增加授权控制对象信息（ADD-ALLOWEDOBJ）_09651389.md`
+- 原始手册：`evidence/UNC/20.15.2/查询授权控制对象信息（LST-ALLOWEDOBJ）_09653649.md`

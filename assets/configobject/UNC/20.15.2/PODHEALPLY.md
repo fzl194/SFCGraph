@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PODHEALPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/PODHEALPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Pod自愈策略（LST-PODHEALPLY）_09587873.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Pod自愈策略（SET-PODHEALPLY）_09587937.md`

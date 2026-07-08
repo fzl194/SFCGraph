@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNNRANSECPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNRANSECPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNRANSECPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNRANSECPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNN-RAN侧安全策略（MOD-DNNRANSECPLCY）_96805494.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN-RAN侧安全策略（RMV-DNNRANSECPLCY）_96805499.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN-RAN侧安全策略（ADD-DNNRANSECPLCY）_96805377.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN-RAN侧安全策略（LST-DNNRANSECPLCY）_96805485.md`

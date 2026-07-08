@@ -54,4 +54,4 @@ RMV QOSIFPHB : IFNAME="Ethernet66/0/3",PHBTYPE=dscp;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-QOSIFPHB.md`
+- 原始手册：`evidence/UDG/20.15.2/删除禁止QoS优先级映射的类型（RMV-QOSIFPHB）_00866693.md`

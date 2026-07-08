@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAASTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter-AAA服务器状态（DSP-DIAMAAASTATUS）_64343867.md`

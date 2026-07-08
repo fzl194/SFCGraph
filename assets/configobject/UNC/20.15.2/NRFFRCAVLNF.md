@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFFRCAVLNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFRCAVLNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFRCAVLNF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除强制可用NF实例（RMV-NRFFRCAVLNF）_71436553.md`
+- 原始手册：`evidence/UNC/20.15.2/增加强制可用NF实例（ADD-NRFFRCAVLNF）_71436523.md`
+- 原始手册：`evidence/UNC/20.15.2/查询强制可用NF实例（LST-NRFFRCAVLNF）_24796820.md`

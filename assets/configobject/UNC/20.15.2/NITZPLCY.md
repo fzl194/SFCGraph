@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NITZPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NITZPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NITZPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NITZPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NITZ策略（MOD-NITZPLCY）_09653096.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NITZ策略（RMV-NITZPLCY）_09652658.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NITZ策略（ADD-NITZPLCY）_09652255.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NITZ策略（LST-NITZPLCY）_09653785.md`

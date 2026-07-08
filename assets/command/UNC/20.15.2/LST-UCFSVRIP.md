@@ -68,4 +68,4 @@ UCF服务器IPv6地址  =  fc00::5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UCFSVRIP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UCF报表服务器的接入点IP地址（LST-UCFSVRIP）_51253795.md`

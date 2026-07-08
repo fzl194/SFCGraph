@@ -65,4 +65,4 @@ SET APNHTTP2DGRD:APN="huawei.com",HTTP2DEGRADESW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNHTTP2DGRD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-HTTP2.0协议回落开关（SET-APNHTTP2DGRD）_82837306.md`

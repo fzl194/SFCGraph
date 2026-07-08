@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBEXTENDPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBEXTENDPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBEXTENDPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBEXTENDPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改全局扩展策略（MOD-GLBEXTENDPOLICY）_09678508.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局扩展策略（RMV-GLBEXTENDPOLICY）_09678531.md`
+- 原始手册：`evidence/UDG/20.15.2/增加全局扩展策略（ADD-GLBEXTENDPOLICY）_09678509.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局扩展策略（LST-GLBEXTENDPOLICY）_09678530.md`

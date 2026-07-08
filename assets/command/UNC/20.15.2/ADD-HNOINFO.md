@@ -61,4 +61,4 @@ ADD HNOINFO: NOID=128, SGSNN="123";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-HNOINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加归属网络信息(ADD-HNOINFO)_26305862.md`

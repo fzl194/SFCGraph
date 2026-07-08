@@ -120,4 +120,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MMECHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MME属性配置信息（LST-MMECHARACT）_72225637.md`

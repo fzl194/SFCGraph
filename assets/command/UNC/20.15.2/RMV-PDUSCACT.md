@@ -59,4 +59,4 @@ RMV PDUSCACT: CCTMPLTNAME="test", CODETYPE=VALUE, STATUSCODE=300;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PDUSCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PDU异常返回码动作（RMV-PDUSCACT）_09652225.md`

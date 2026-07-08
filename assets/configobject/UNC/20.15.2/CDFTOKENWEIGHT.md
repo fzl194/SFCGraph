@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDFTOKENWEIGHT.md`
-- 原始手册：`evidence/UNC/20.15.2/CDFTOKENWEIGHT.md`
-- 原始手册：`evidence/UNC/20.15.2/CDFTOKENWEIGHT.md`
-- 原始手册：`evidence/UNC/20.15.2/CDFTOKENWEIGHT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改cdf-token权重（MOD-CDFTOKENWEIGHT）_87360196.md`
+- 原始手册：`evidence/UNC/20.15.2/删除cdf-token权重（RMV-CDFTOKENWEIGHT）_39919397.md`
+- 原始手册：`evidence/UNC/20.15.2/增加cdf的token权重（ADD-CDFTOKENWEIGHT）_87839684.md`
+- 原始手册：`evidence/UNC/20.15.2/查询cdf-token权重（LST-CDFTOKENWEIGHT）_87520116.md`

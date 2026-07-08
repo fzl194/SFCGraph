@@ -62,4 +62,4 @@ SET VLRLOCALINFO: VLRNRI=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-VLRLOCALINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR的本局信息（SET-VLRLOCALINFO）_03961145.md`

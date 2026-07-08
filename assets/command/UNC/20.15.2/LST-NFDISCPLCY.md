@@ -87,4 +87,4 @@ NF缓存服务发现是否支持perPlmnSnssaiList开关  =  OFF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFDISCPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF的服务发现策略（LST-NFDISCPLCY）_09651379.md`

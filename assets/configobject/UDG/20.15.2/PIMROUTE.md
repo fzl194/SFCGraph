@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/清除PIM协议表项（RTR-PIMROUTE）_50120826.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSPBUFINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/根据索引号查询PBUF信息（DSP-MSSPBUFINFO）_85570266.md`

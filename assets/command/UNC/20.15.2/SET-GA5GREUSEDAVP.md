@@ -71,4 +71,4 @@ SET GA5GREUSEDAVP: RAT=FIXVALUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GA5GREUSEDAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G用户接入时，Ga接口重用字段的填写方式（SET-GA5GREUSEDAVP）_52071373.md`

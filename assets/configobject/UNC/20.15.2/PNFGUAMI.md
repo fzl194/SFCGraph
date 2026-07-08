@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFGUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFGUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端AMF的GUAMI信息（RMV-PNFGUAMI）_09654193.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端AMF的GUAMI信息（ADD-PNFGUAMI）_09653092.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端AMF的GUAMI信息（LST-PNFGUAMI）_09653685.md`

@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PMMPROCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PMMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式移动性管理流程控制参数(LST-PMMPROCTRL)_72345115.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Iu模式移动性管理流程控制参数（SET-PMMPROCTRL）_26305328.md`

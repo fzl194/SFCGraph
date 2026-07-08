@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REDIRECT.md`
-- 原始手册：`evidence/UDG/20.15.2/REDIRECT.md`
-- 原始手册：`evidence/UDG/20.15.2/REDIRECT.md`
-- 原始手册：`evidence/UDG/20.15.2/REDIRECT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改重定向（MOD-REDIRECT）_82837529.md`
+- 原始手册：`evidence/UDG/20.15.2/删除重定向（RMV-REDIRECT）_82837530.md`
+- 原始手册：`evidence/UDG/20.15.2/增加重定向（ADD-REDIRECT）_82837528.md`
+- 原始手册：`evidence/UDG/20.15.2/查询重定向（LST-REDIRECT）_82837531.md`

@@ -56,4 +56,4 @@ SGU_A       10.0.0.0     31372.41
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DISKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示节点磁盘部署规格（DSP-DISKINFO）_72196070.md`

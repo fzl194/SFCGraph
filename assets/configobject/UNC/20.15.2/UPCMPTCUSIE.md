@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPCMPTCUSIE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCMPTCUSIE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCMPTCUSIE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCMPTCUSIE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UP节点定制信元兼容性配置（MOD-UPCMPTCUSIE）_75982860.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UP节点定制信元兼容性配置（RMV-UPCMPTCUSIE）_21742373.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UP节点定制信元兼容性配置（ADD-UPCMPTCUSIE）_75982836.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UP节点定制信元兼容性配置（LST-UPCMPTCUSIE）_21861973.md`

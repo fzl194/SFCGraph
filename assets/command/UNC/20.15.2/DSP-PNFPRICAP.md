@@ -62,4 +62,4 @@ DSP PNFPRICAP: QUERYTYPE=TAI, TAI="FFFFFF",NS="255-19CDE0"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PNFPRICAP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UPF优先级和权重（DSP-PNFPRICAP）_71516429.md`

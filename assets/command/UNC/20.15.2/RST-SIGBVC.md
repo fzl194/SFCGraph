@@ -59,4 +59,4 @@ RST SIGBVC: NSEI=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-SIGBVC.md`
+- 原始手册：`evidence/UNC/20.15.2/复位SigBvc(RST-SIGBVC)_26305840.md`

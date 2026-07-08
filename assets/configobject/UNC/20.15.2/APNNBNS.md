@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNNBNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNBNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNBNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNBNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN的NBNS属性（MOD-APNNBNS）_22438293.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN的NBNS属性（RMV-APNNBNS）_77037098.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN的NBNS属性（ADD-APNNBNS）_77037092.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的NBNS属性（LST-APNNBNS）_77197032.md`

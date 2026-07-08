@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSENSECONF.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSENSECONF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF感知配置（LST-AMFSENSECONF）_13939873.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF感知配置（SET-AMFSENSECONF）_77419828.md`

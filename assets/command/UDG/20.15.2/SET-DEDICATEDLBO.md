@@ -64,4 +64,4 @@ SET DEDICATEDLBO: ULCLSWITCH= ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DEDICATEDLBO.md`
+- 原始手册：`evidence/UDG/20.15.2/设置系统是否开启专网UPF动态分流功能（SET-DEDICATEDLBO）_49785469.md`

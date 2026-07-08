@@ -74,4 +74,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGMMSUBDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户移动性管理参数（MOD-NGMMSUBDATA）_09652682.md`

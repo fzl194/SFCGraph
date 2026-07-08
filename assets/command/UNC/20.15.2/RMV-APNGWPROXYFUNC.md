@@ -57,4 +57,4 @@ RMV APNGWPROXYFUNC: APN="huawei2.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNGWPROXYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN网关Proxy功能配置（RMV-APNGWPROXYFUNC）_88733225.md`

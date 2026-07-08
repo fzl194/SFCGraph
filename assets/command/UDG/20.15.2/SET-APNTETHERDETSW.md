@@ -62,4 +62,4 @@ SET APNTETHERDETSW: APN="huawei.com", SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNTETHERDETSW.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-Tethering终端数量检测开关（SET-APNTETHERDETSW）_82837451.md`

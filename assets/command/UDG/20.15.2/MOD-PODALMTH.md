@@ -54,4 +54,4 @@ MOD PODALMTH: PODTYPE="sfm-pod",THTYPE=CPU,WARNTHD=80, RECVTHD=70;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-PODALMTH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改POD资源告警阈值（MOD-PODALMTH）_87324062.md`

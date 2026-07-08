@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSEALL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除所有信令实体（RMV-NSEALL）_15193313.md`

@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LINKMTU.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Link-MTU值（LST-LINKMTU）_35519271.md`

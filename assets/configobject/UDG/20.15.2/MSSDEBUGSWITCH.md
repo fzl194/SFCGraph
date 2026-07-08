@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSDEBUGSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置维测信息统计开关（SET-MSSDEBUGSWITCH）_00441413.md`

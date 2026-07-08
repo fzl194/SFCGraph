@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCMSGATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCMSGATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC消息属性（LST-PCCMSGATTR）_09897080.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC消息属性（SET-PCCMSGATTR）_09897079.md`

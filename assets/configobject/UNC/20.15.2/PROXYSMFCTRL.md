@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PROXYSMFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改proxy-SMF控制（MOD-PROXYSMFCTRL）_91763225.md`
+- 原始手册：`evidence/UNC/20.15.2/删除proxy-SMF控制（RMV-PROXYSMFCTRL）_91643489.md`
+- 原始手册：`evidence/UNC/20.15.2/增加proxy-SMF控制（ADD-PROXYSMFCTRL）_41323418.md`
+- 原始手册：`evidence/UNC/20.15.2/查询proxy-SMF控制（LST-PROXYSMFCTRL）_91923233.md`

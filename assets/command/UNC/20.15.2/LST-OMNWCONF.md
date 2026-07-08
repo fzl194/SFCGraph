@@ -54,4 +54,4 @@ VIRTUALIP   IPV6        2               3         NULL      ON            NULL  
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OMNWCONF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OM网络探测参数（LST-OMNWCONF）_11910784.md`

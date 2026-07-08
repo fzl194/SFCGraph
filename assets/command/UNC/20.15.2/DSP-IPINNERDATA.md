@@ -76,4 +76,4 @@ DSP IPINNERDATA: TYPE=LSM_LIB, CID="0x80660019";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-IPINNERDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PP4模块内部数据（DSP-IPINNERDATA）_49960998.md`

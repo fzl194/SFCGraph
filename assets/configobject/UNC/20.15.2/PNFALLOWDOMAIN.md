@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFALLOWDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF允许的域名信息（RMV-PNFALLOWDOMAIN）_09652469.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF允许的域名信息（ADD-PNFALLOWDOMAIN）_09653836.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF允许的域名信息（LST-PNFALLOWDOMAIN）_09652089.md`

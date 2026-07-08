@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NEWCERTSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询证书开关状态（LST-NEWCERTSWITCH）_59336676.md`

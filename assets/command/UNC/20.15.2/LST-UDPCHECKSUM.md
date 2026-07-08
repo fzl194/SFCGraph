@@ -65,4 +65,4 @@ Checksum开关 = 不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UDPCHECKSUM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UNC发送的UDP报文是否携带checksum（LST-UDPCHECKSUM）_94059550.md`

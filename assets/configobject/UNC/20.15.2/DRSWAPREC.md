@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DRSWAPREC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾倒换记录（LST-DRSWAPREC）_74675441.md`

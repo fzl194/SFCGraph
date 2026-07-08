@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNBINDUP.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNBINDUP.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNBINDUP.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNBINDUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN下用户和UPF的绑定关系配置（MOD-IMSIAPNBINDUP）_21861977.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN下用户和UPF的绑定关系配置（RMV-IMSIAPNBINDUP）_21861989.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN下用户和UPF的绑定关系配置（ADD-IMSIAPNBINDUP）_21742329.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN下用户和UPF的绑定关系配置（LST-IMSIAPNBINDUP）_75982844.md`

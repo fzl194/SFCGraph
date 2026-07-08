@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IFSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口状态信息（DSP-IFSTATUS）_49960906.md`

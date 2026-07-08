@@ -78,4 +78,4 @@ ADD GBNSECFGPARA: PARAINDEX=1, FLUSTHT=50;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GBNSECFGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSE属性模板(ADD-GBNSECFGPARA)_26146004.md`

@@ -70,4 +70,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPAPNCHARGE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示APN计费配置（LST-UPAPNCHARGE）_30179324.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTAPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAPAGINGPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G跟踪区列表的寻呼策略配置（MOD-NGTAPAGINGPLCY）_48290738.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G跟踪区列表的寻呼策略配置（RMV-NGTAPAGINGPLCY）_48290740.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G跟踪区列表的寻呼策略配置（ADD-NGTAPAGINGPLCY）_48290734.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G跟踪区列表的寻呼策略配置（LST-NGTAPAGINGPLCY）_48290736.md`

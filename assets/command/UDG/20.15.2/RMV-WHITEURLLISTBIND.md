@@ -61,4 +61,4 @@ RMV WHITEURLLISTBIND:USERPROFILENAME="TestUserProfileName";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-WHITEURLLISTBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户模板的URL白名单列表（RMV-WHITEURLLISTBIND）_82837284.md`

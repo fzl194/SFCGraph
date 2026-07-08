@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGRUBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGRUBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGRUBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除自动部署RU黑名单（RMV-AUTOSCALINGRUBLACKLIST）_00441325.md`
+- 原始手册：`evidence/UNC/20.15.2/增加自动部署RU黑名单（ADD-AUTOSCALINGRUBLACKLIST）_50281806.md`
+- 原始手册：`evidence/UNC/20.15.2/查询自动部署RU黑名单（LST-AUTOSCALINGRUBLACKLIST）_00841333.md`

@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PROTBINDSRVS.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTBINDSRVS.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTBINDSRVS.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务统计协议绑定配置（RMV-PROTBINDSRVS）_82837389.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务统计协议绑定配置（ADD-PROTBINDSRVS）_82837388.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务统计协议绑定配置（LST-PROTBINDSRVS）_86527040.md`

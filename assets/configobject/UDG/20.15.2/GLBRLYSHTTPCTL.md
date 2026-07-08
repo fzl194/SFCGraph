@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBRLYSHTTPCTL.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBRLYSHTTPCTL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继全局业务HTTP控制（LST-GLBRLYSHTTPCTL）_44232392.md`
+- 原始手册：`evidence/UDG/20.15.2/设置媒体中继全局业务HTTP控制（SET-GLBRLYSHTTPCTL）_94871983.md`

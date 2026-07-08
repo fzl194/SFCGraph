@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADRLOCWHITELST.md`
-- 原始手册：`evidence/UDG/20.15.2/ADRLOCWHITELST.md`
-- 原始手册：`evidence/UDG/20.15.2/ADRLOCWHITELST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除位置区域地址分配用户白名单（RMV-ADRLOCWHITELST）_06054823.md`
+- 原始手册：`evidence/UDG/20.15.2/查询位置区域地址分配用户白名单（LST-ADRLOCWHITELST）_06054825.md`
+- 原始手册：`evidence/UDG/20.15.2/添加区域地址分配用户白名单（ADD-ADRLOCWHITELST）_06054824.md`

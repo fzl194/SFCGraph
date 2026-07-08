@@ -70,4 +70,4 @@ ADD UNCLOGCTRL: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UNCLOGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UNC日志控制记录（ADD-UNCLOGCTRL）_23736536.md`

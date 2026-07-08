@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IMSIBINDGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSIBINDGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/IMSIBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IMSI和IMSI组绑定关系（RMV-IMSIBINDGRP）_93615519.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IMSI和IMSI组绑定关系（ADD-IMSIBINDGRP）_93335769.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IMSI和IMSI组绑定关系（LST-IMSIBINDGRP）_87096438.md`

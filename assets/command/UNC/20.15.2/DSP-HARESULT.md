@@ -81,4 +81,4 @@ S1链路接入管理功能模块     USN_SP_RU_0064      LCP            1026    
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-HARESULT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示HA选举结果(DSP-HARESULT)_72345473.md`

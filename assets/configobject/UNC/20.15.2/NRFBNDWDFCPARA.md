@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFBNDWDFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBNDWDFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF带宽流控配置（LST-NRFBNDWDFCPARA）_19010713.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF带宽流控功能参数（SET-NRFBNDWDFCPARA）_68371714.md`

@@ -55,4 +55,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LIMITMBSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询有界邮箱开关配置状态（LST-LIMITMBSWITCH）_70582615.md`

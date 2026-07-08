@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APPLYCOMMUNITYFILTERDELETE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询删除团体属性过滤器设置（LST-APPLYCOMMUNITYFILTERDELETE）_50281402.md`

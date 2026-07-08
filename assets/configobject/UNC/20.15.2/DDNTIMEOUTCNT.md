@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNTIMEOUTCNT.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNTIMEOUTCNT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示DDN超时延时删除功能运行信息记录（DSP-DDNTIMEOUTCNT）_46314491.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DDN超时延时删除功能运行信息记录（CLR-DDNTIMEOUTCNT）_46314490.md`

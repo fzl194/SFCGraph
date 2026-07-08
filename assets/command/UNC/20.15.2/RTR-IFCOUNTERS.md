@@ -56,4 +56,4 @@ RTR IFCOUNTERS:RSTTYPE=ByName,IFNAME="ethernet64/0/3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-IFCOUNTERS.md`
+- 原始手册：`evidence/UNC/20.15.2/清除接口统计信息（RTR-IFCOUNTERS）_00866745.md`

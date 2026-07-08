@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDNFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDNFNS.md`
-- 原始手册：`evidence/UNC/20.15.2/ALLOWEDNFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF或NF服务支持的切片（RMV-ALLOWEDNFNS）_09654194.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF或NF服务支持的切片（ADD-ALLOWEDNFNS）_09652539.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF或NF服务支持的切片（LST-ALLOWEDNFNS）_09652600.md`

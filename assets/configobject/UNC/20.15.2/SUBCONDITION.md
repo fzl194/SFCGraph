@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUBCONDITION.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBCONDITION.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBCONDITION.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBCONDITION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NF订阅条件（MOD-SUBCONDITION）_09652286.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF订阅条件（RMV-SUBCONDITION）_09653711.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF订阅条件（ADD-SUBCONDITION）_09651488.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF订阅条件（LST-SUBCONDITION）_09653783.md`

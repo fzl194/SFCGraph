@@ -60,4 +60,4 @@ RMV NFDISCMGMTPARA:NFTYPE=NfAMF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFDISCMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网元服务发现功能管理参数（RMV-NFDISCMGMTPARA）_41969689.md`

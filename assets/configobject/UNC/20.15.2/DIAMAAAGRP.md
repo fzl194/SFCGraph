@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAAGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAAGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAAGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMAAAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter-AAA服务器组（MOD-DIAMAAAGRP）_64343896.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter-AAA服务器组（RMV-DIAMAAAGRP）_64343903.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter-AAA服务器组（ADD-DIAMAAAGRP）_64343820.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter-AAA服务器组（LST-DIAMAAAGRP）_64343881.md`

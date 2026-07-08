@@ -94,4 +94,4 @@ SET MMFUNC: NETWKPLCY=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置移动性管理扩展功能(SET-MMFUNC)_26145512.md`

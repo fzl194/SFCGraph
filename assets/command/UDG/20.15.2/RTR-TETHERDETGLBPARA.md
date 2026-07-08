@@ -57,4 +57,4 @@ RTR TETHERDETGLBPARA:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-TETHERDETGLBPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复Tethering用户终端数量检测全局配置（RTR-TETHERDETGLBPARA）_82837445.md`

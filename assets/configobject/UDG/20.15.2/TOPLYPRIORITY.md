@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOPLYPRIORITY.md`
-- 原始手册：`evidence/UDG/20.15.2/TOPLYPRIORITY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP优化策略组合优先级（LST-TOPLYPRIORITY）_86616998.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP优化策略组合优先级（SET-TOPLYPRIORITY）_87336172.md`

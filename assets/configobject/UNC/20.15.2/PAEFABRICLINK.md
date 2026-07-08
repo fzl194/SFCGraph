@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAEFABRICLINK.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE链路信息（DSP-PAEFABRICLINK）_92520014.md`

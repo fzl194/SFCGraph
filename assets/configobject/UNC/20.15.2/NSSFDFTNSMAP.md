@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFDFTNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFDFTNSMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFDFTNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫游切片默认映射配置（RMV-NSSFDFTNSMAP）_79416686.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游切片默认映射配置（ADD-NSSFDFTNSMAP）_79735154.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游切片默认映射配置（LST-NSSFDFTNSMAP）_25136383.md`

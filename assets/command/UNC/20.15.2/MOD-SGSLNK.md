@@ -61,4 +61,4 @@ MOD SGSLNK: LNK=1, SGSLNKNM="test", CROSSIPFLAG=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SGSLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGs链路(MOD-SGSLNK)_72225115.md`

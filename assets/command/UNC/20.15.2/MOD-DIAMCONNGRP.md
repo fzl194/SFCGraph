@@ -60,4 +60,4 @@ MOD DIAMCONNGRP: CONNGROUPNAME="gxconngrp", SELECTMODE=SESSION_ID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DIAMCONNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路组（MOD-DIAMCONNGRP）_09897262.md`

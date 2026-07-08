@@ -64,4 +64,4 @@ DNN条件类型  =  DNN名称以DNNCONDVAL结束
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MULTIDNNCOND.md`
+- 原始手册：`evidence/UDG/20.15.2/查询多DNN条件（LST-MULTIDNNCOND）_15895831.md`

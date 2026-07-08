@@ -68,4 +68,4 @@ VPN名称 = _public_
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYIPPOOL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继IP池（LST-RELAYIPPOOL）_73824722.md`

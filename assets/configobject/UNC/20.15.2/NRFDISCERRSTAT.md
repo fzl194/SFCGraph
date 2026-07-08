@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDISCERRSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NRF记录的错误统计信息（DSP-NRFDISCERRSTAT）_09653006.md`

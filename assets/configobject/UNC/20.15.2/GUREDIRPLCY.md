@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GUREDIRPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GUREDIRPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GUREDIRPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/GUREDIRPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GU重定向策略（MOD-GUREDIRPLCY）_36104809.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GU重定向策略（RMV-GUREDIRPLCY）_00545428.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GU重定向策略（ADD-GUREDIRPLCY）_00385612.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GU重定向策略（LST-GUREDIRPLCY）_36144465.md`

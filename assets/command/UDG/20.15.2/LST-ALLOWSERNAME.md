@@ -62,4 +62,4 @@ NF实例标识  =  SMF_Instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ALLOWSERNAME.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于地址的白名单（LST-ALLOWSERNAME）_83653656.md`

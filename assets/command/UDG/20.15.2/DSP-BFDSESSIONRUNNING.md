@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-BFDSESSIONRUNNING.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BFD会话的运行信息（DSP-BFDSESSIONRUNNING）_49802122.md`

@@ -54,4 +54,4 @@ RMV CHGAPN: APNNI="huawei1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN计费属性(RMV-CHGAPN)_26145364.md`

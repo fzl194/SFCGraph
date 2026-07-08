@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USERSELRANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/USERSELRANGE.md`
-- 原始手册：`evidence/UDG/20.15.2/USERSELRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户选择范围列表（RMV-USERSELRANGE）_86133376.md`
+- 原始手册：`evidence/UDG/20.15.2/显示用户选择范围列表（LST-USERSELRANGE）_86133377.md`
+- 原始手册：`evidence/UDG/20.15.2/添加用户选择范围列表（ADD-USERSELRANGE）_86133375.md`

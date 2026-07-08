@@ -75,4 +75,4 @@ Initial流程回滚后使能Holding-Time = 不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RESULTCODEDRA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DRA返回码控制（LST-RESULTCODEDRA）_67261101.md`

@@ -63,4 +63,4 @@ SET APNCFFUNC: APNNAME="huawei.com", CFSWITCHVALUE=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNCFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN内容过滤开关（SET-APNCFFUNC）_54188227.md`

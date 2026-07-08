@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DRDCI.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DC间通信通道信息（RMV-DRDCI）_23394830.md`

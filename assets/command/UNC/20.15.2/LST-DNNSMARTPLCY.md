@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DNNSMARTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN智能分流配置（LST-DNNSMARTPLCY）_87360192.md`

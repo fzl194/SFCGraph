@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSMME.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSMME.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSMME.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSMME.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGS-MME实体(MOD-SGSMME)_46963120.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGS-MME实体(RMV-SGSMME)_46803876.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGS-MME实体(ADD-SGSMME)_93164005.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGS-MME实体(LST-SGSMME)_46644108.md`

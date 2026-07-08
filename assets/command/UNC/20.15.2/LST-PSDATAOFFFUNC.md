@@ -64,4 +64,4 @@ PS data off功能开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PSDATAOFFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询3GPP-PS-data-off功能相关的参数（LST-PSDATAOFFFUNC）_35439598.md`

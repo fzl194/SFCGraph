@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUDETACH.md`
-- 原始手册：`evidence/UNC/20.15.2/IUDETACH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu分离非活动用户参数(LST-IUDETACH)_72345097.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Iu分离非活动用户参数(SET-IUDETACH)_26305310.md`

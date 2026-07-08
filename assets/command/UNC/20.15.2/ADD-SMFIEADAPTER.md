@@ -67,4 +67,4 @@ ADD SMFIEADAPTER: ITFNODEROLE=N16_VSMF, PROCTYPE="PduSessionEstAsVsmf", PROCMSGI
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFIEADAPTER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加信元携带控制配置（ADD-SMFIEADAPTER）_04057516.md`

@@ -68,4 +68,4 @@ SET DDNFLOWCTRL:WALVALUE=1000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DDNFLOWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DDN流控参数（SET-DDNFLOWCTRL）_64343914.md`

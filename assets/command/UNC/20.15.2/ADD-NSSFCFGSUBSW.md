@@ -58,4 +58,4 @@ ADD NSSFCFGSUBSW: MCC="245", MNC="38", CFGWITHSUBSW=FUNC_ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NSSFCFGSUBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/增加按签约NSSAI分配Configed-NSSAI的PLMN级别开关（ADD-NSSFCFGSUBSW）_44581263.md`

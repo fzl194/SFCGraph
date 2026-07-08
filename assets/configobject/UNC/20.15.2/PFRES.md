@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PFRES.md`
-- 原始手册：`evidence/UNC/20.15.2/PFRES.md`
-- 原始手册：`evidence/UNC/20.15.2/PFRES.md`
+- 原始手册：`evidence/UNC/20.15.2/显示带宽资源使用明细(DSP-PFRES)_26145850.md`
+- 原始手册：`evidence/UNC/20.15.2/查询带宽资源管理参数(LST-PFRES)_72345449.md`
+- 原始手册：`evidence/UNC/20.15.2/设置带宽资源管理参数(SET-PFRES)_26305658.md`

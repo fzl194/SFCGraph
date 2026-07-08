@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFDNSCHKTPALL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除所有需要进行防欺诈检查的DNS报文类型（RMV-AFDNSCHKTPALL）_05543948.md`

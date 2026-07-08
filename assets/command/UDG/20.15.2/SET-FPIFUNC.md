@@ -69,4 +69,4 @@ SET FPIFUNC: FPISWITCH=ENABLE, FPITRANSMETHOD=DSCP;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FPIFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FPI差异化控制功能（SET-FPIFUNC）_25006876.md`

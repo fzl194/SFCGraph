@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SSHCCONNSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示客户端的连接统计信息（DSP-SSHCCONNSTC）_00841345.md`

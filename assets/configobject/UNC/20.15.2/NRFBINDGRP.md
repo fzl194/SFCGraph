@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NRF实例组成员（MOD-NRFBINDGRP）_09651784.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NRF实例组成员（RMV-NRFBINDGRP）_09653113.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NRF实例组成员（ADD-NRFBINDGRP）_09651542.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NRF实例组成员（LST-NRFBINDGRP）_09651838.md`

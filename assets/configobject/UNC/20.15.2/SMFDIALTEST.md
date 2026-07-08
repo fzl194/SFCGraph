@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFDIALTEST.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFDIALTEST.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFDIALTEST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF拨测用户配置（RMV-SMFDIALTEST）_70462613.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF拨测用户配置（ADD-SMFDIALTEST）_23622922.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF拨测用户配置（LST-SMFDIALTEST）_23622962.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NDSECURITYSTATISTICS.md`
-- 原始手册：`evidence/UNC/20.15.2/NDSECURITYSTATISTICS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ND安全统计（DSP-NDSECURITYSTATISTICS）_00866013.md`
+- 原始手册：`evidence/UNC/20.15.2/清除ND安全统计（RTR-NDSECURITYSTATISTICS）_50121302.md`

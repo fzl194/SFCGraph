@@ -75,4 +75,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PDNROUTETSTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/增加UPF向PDN服务器发送探测消息的探测路径（ADD-PDNROUTETSTPATH）_12635690.md`

@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1IMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/S1IMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/S1IMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/S1IMEICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式IMEI配置(MOD-S1IMEICFG)_26145638.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式IMEI配置（RMV-S1IMEICFG）_72345235.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式IMEI配置(ADD-S1IMEICFG)_26305448.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式IMEI配置(LST-S1IMEICFG)_72225319.md`

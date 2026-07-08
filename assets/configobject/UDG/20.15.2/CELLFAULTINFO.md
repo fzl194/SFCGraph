@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CELLFAULTINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示故障进程历史记录（DSP-CELLFAULTINFO）_94730394.md`

@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFREGNRFSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF向NRF注册状态（DSP-NFREGNRFSTATUS）_12701649.md`

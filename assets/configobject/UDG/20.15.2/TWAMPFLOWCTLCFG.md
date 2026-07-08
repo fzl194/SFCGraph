@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TWAMPFLOWCTLCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPFLOWCTLCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询跟踪流控配置（LST-TWAMPFLOWCTLCFG）_07287404.md`
+- 原始手册：`evidence/UDG/20.15.2/设置跟踪流控参数配置（SET-TWAMPFLOWCTLCFG）_42846237.md`

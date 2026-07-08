@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGLANINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G-LAN组会话信息（DSP-NGLANINFO）_35962934.md`

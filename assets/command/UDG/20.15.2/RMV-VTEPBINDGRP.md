@@ -62,4 +62,4 @@ RMV VTEPBINDGRP: VXLANGRPNAME="vxlangrp";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-VTEPBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道端点绑定隧道组（RMV-VTEPBINDGRP）_68194507.md`

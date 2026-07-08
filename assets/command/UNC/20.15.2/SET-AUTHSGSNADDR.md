@@ -63,4 +63,4 @@ SET AUTHSGSNADDR: AUTHSGSNADDR=PAIF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AUTHSGSNADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置向AAA鉴权服务器发送消息中携带的地址信息（SET-AUTHSGSNADDR）_96243089.md`

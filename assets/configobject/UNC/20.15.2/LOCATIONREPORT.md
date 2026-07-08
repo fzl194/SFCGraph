@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCATIONREPORT.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCATIONREPORT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户位置信息（LST-LOCATIONREPORT）_04484293.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户位置信息（SET-LOCATIONREPORT）_04484294.md`

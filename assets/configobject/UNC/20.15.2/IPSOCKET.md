@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPSOCKET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IP-Socket状态（DSP-IPSOCKET）_49801862.md`

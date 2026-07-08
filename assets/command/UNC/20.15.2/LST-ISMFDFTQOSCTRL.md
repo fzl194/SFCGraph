@@ -71,4 +71,4 @@ Mobile Country Code  Mobile Network Code  Control Type  DNN   Uplink Session AMB
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ISMFDFTQOSCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询I-SMF的Default-QoS-Flow配置（LST-ISMFDFTQOSCTRL）_59000289.md`

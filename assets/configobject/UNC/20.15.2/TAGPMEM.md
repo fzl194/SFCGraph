@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/TAGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/TAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA群组成员(RMV-TAGPMEM)_26305394.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TA群组成员(ADD-TAGPMEM)_72225263.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TA群组成员(LST-TAGPMEM)_72345181.md`

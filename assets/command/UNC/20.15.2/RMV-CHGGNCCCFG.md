@@ -55,4 +55,4 @@ RMV CHGGNCCCFG: IMSIPRE="10010";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGGNCCCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gn接口计费属性选择策略(RMV-CHGGNCCCFG)_26145370.md`

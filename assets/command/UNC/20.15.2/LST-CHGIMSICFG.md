@@ -80,4 +80,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHGIMSICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI计费配置(LST-CHGIMSICFG)_72344987.md`

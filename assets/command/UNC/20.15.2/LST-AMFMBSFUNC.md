@@ -79,4 +79,4 @@ N11mb接口携带基站TAI列表开关  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFMBSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF组播广播功能参数（LST-AMFMBSFUNC）_86212798.md`

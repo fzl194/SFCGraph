@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMRTNEXTHOP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMRTNEXTHOP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMRTNEXTHOP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter路由下一跳（RMV-DIAMRTNEXTHOP）_09897311.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter路由下一跳（ADD-DIAMRTNEXTHOP）_09897310.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter路由下一跳（LST-DIAMRTNEXTHOP）_09897312.md`

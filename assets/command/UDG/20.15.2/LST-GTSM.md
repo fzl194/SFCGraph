@@ -61,4 +61,4 @@ LST GTSM:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询GTSM全局配置属性（LST-GTSM）_00601001.md`

@@ -72,4 +72,4 @@ SET NRFLOGSW: DISCLOGSW=FUNC_ON, REGUPDSW=FUNC_ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRFLOGSW.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF维护日志打印开关（SET-NRFLOGSW）_96243172.md`

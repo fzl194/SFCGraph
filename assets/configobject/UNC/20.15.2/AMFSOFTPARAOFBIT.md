@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSOFTPARAOFBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSOFTPARAOFBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF软件参数比特位（LST-AMFSOFTPARAOFBIT）_09652441.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF软件参数比特位（SET-AMFSOFTPARAOFBIT）_09651487.md`

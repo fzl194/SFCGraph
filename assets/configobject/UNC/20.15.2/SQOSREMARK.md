@@ -26,7 +26,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SQOSREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSREMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改重标记配置（MOD-SQOSREMARK）_00600285.md`
+- 原始手册：`evidence/UNC/20.15.2/删除重标记配置（RMV-SQOSREMARK）_00601341.md`
+- 原始手册：`evidence/UNC/20.15.2/增加重标记配置（ADD-SQOSREMARK）_00441017.md`
+- 原始手册：`evidence/UNC/20.15.2/查询重标记配置（LST-SQOSREMARK）_00441201.md`

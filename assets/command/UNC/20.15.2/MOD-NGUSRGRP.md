@@ -56,4 +56,4 @@ MOD NGUSRGRP: USRGRPID=20, DESC="My City";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGUSRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G用户群（MOD-NGUSRGRP）_44007397.md`

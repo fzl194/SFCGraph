@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NTPCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NTPCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NTP时间同步参数(LST-NTPCFG)_67679934.md`
+- 原始手册：`evidence/UNC/20.15.2/配置NTP时间同步参数(SET-NTPCFG)_67679933.md`

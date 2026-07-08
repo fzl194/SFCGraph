@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CGBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/CGBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/CGBINDING.md`
-- 原始手册：`evidence/UNC/20.15.2/CGBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CG绑定关系（MOD-CGBINDING）_09896875.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CG绑定关系（RMV-CGBINDING）_09896876.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CG绑定关系（ADD-CGBINDING）_09896874.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG绑定关系（LST-CGBINDING）_09896877.md`

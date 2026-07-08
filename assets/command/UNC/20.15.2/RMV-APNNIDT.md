@@ -61,4 +61,4 @@ RMV APNNIDT: APNNI="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNNIDT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI-Direct-Tunnel配置(RMV-APNNIDT)_26146046.md`

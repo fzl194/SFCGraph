@@ -62,4 +62,4 @@ MOD DNAI: DNAI="huawei.com", HASVPN=ENABLE, VPNINSTANCE="abcd", HASVPNIPV6=DISAB
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-DNAI.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DNAI配置（MOD-DNAI）_53878563.md`

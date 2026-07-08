@@ -74,4 +74,4 @@ Tethering User Num = 0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-TETHERINGINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示tethering用户终端接入数量（DSP-TETHERINGINFO）_10261520.md`

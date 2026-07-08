@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGLANMACEXINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示5G-LAN-MAC地址超规格信息（DSP-NGLANMACEXINFO）_23157708.md`

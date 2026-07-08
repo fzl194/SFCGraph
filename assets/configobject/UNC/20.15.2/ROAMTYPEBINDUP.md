@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ROAMTYPEBINDUP.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMTYPEBINDUP.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMTYPEBINDUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF与用户漫游类型的绑定关系（RMV-ROAMTYPEBINDUP）_51465242.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF与用户漫游类型的绑定关系（ADD-ROAMTYPEBINDUP）_51145562.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF与用户漫游类型的绑定关系（LST-ROAMTYPEBINDUP）_51625170.md`

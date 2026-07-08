@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWCHGPAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCHGPAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW的计费暂停功能（LST-SGWCHGPAUSE）_89078989.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGW的计费暂停能力（SET-SGWCHGPAUSE）_89159155.md`

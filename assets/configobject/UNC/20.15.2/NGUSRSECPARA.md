@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGUSRSECPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRSECPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRSECPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRSECPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G用户安全配置（MOD-NGUSRSECPARA）_09651517.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户安全配置（RMV-NGUSRSECPARA）_09653270.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G用户安全配置（ADD-NGUSRSECPARA）_09653737.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户安全配置（LST-NGUSRSECPARA）_09651449.md`

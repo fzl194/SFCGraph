@@ -60,4 +60,4 @@ ADD SRVNODEGROUP:GROUPNAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SRVNODEGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务节点组（ADD-SRVNODEGROUP）_09651376.md`

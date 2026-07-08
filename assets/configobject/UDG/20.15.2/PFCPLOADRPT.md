@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PFCPLOADRPT.md`
-- 原始手册：`evidence/UDG/20.15.2/PFCPLOADRPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询系统负荷上报开关（LST-PFCPLOADRPT）_93531879.md`
+- 原始手册：`evidence/UDG/20.15.2/设置负荷上报开关（SET-PFCPLOADRPT）_93753137.md`

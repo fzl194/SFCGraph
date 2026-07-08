@@ -68,4 +68,4 @@ MOD NGDNSN: FQDN="mmec22.mmegi8001.mme.epc.mnc123.mcc456.3gppnetwork.org", HSIND
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGDNSN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS-NAPTR记录（MOD-NGDNSN）_09653687.md`

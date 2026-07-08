@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BGPPEERINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP对等体信息（DSP-BGPPEERINFO）_49802242.md`

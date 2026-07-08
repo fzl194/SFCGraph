@@ -63,4 +63,4 @@ LST HOSTGLBCONFIG:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HOSTGLBCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询主机收发全局属性（LST-HOSTGLBCONFIG）_00441209.md`

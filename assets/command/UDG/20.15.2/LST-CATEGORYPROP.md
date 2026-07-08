@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CATEGORYPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询分类属性（LST-CATEGORYPROP）_82837506.md`

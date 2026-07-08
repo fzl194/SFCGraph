@@ -64,4 +64,4 @@ MT消息流控速率(个/秒) =  10001
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MAPFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS的MAP接口固定速率流控（LST-MAPFIXEDFC）_36063248.md`

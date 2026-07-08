@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COMBASESUM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示BASE亚健康概况（DSP-COMBASESUM）_97800864.md`

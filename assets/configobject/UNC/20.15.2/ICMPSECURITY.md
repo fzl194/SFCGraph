@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/ICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改ICMP安全配置（MOD-ICMPSECURITY）_00440777.md`
+- 原始手册：`evidence/UNC/20.15.2/删除ICMP安全配置（RMV-ICMPSECURITY）_00441301.md`
+- 原始手册：`evidence/UNC/20.15.2/新增ICMP安全配置（ADD-ICMPSECURITY）_49960994.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ICMP安全配置（LST-ICMPSECURITY）_00600705.md`

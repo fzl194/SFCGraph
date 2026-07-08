@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-OSPFBFD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF-BFD状态（DSP-OSPFBFD）_00440617.md`

@@ -65,4 +65,4 @@ SET RPTENCRYPT: ENCRYMODE=DEFAULT;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RPTENCRYPT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置业务报表加密算法（SET-RPTENCRYPT）_93973685.md`

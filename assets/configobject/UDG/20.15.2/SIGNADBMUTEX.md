@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SIGNADBMUTEX.md`
-- 原始手册：`evidence/UDG/20.15.2/SIGNADBMUTEX.md`
+- 原始手册：`evidence/UDG/20.15.2/显示特征库规则加载区域ID（LST-SIGNADBMUTEX）_40174859.md`
+- 原始手册：`evidence/UDG/20.15.2/配置特征库规则的加载条件（SET-SIGNADBMUTEX）_40174858.md`

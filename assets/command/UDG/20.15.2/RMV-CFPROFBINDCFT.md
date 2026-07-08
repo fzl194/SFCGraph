@@ -61,4 +61,4 @@ RMV CFPROFBINDCFT: CFTEMPLATENAME="test", CFPROFILENAME="testprofile";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CFPROFBINDCFT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除内容过滤策略绑定关系（RMV-CFPROFBINDCFT）_39239150.md`

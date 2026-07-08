@@ -63,4 +63,4 @@ MOD SELECTCCTBYCC: CCTYPE=VALUE, CCVALUE="1234", CCTMPLTNAME="global";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SELECTCCTBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于CC配置融合计费模板处理（MOD-SELECTCCTBYCC）_09651590.md`

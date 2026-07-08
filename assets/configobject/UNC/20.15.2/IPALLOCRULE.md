@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPALLOCRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/IPALLOCRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局地址分配规则（LST-IPALLOCRULE）_49644923.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局地址分配规则（SET-IPALLOCRULE）_49644937.md`

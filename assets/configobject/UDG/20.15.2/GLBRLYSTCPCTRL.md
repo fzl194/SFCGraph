@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBRLYSTCPCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBRLYSTCPCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继全局业务TCP控制（LST-GLBRLYSTCPCTRL）_44232390.md`
+- 原始手册：`evidence/UDG/20.15.2/设置媒体中继全局业务TCP控制（SET-GLBRLYSTCPCTRL）_94871981.md`

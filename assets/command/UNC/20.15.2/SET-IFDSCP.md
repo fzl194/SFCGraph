@@ -75,4 +75,4 @@ SET IFDSCP: MSGCLS=SIGNALLING, INTFTP_SHOW=S1_MME, DSCPV=46;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-IFDSCP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口DSCP配置(SET-IFDSCP)_26306022.md`

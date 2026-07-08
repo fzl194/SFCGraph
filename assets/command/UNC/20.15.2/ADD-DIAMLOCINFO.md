@@ -66,4 +66,4 @@ ADD DIAMLOCINFO: HOSTNAME="test", REALMNAME="test", PRODUCTNAME="product", VENDO
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DIAMLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter本端信息（ADD-DIAMLOCINFO）_09897271.md`

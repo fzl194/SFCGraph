@@ -70,4 +70,4 @@ DNS查询对等网元时是否携带NCNR标志  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSA控制参数(LST-NSACTRL)_72345733.md`

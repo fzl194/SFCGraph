@@ -71,4 +71,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-INSAGLBCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询智能识别全局配置（LST-INSAGLBCFG）_56165566.md`

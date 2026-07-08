@@ -61,4 +61,4 @@ RMV NRFDNNNIRT: DNNNISUFFIX="huawei.com", NEXTNRFGRPNAME="L-NRF1", NFTYPE=ALL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFDNNNIRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN中网络标识最长后缀匹配转发路由（RMV-NRFDNNNIRT）_64343907.md`

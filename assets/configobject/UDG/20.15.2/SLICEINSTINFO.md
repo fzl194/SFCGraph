@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SLICEINSTINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/SLICEINSTINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/SLICEINSTINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除切片实例信息（RMV-SLICEINSTINFO）_51061263.md`
+- 原始手册：`evidence/UDG/20.15.2/显示切片实例信息（LST-SLICEINSTINFO）_51061264.md`
+- 原始手册：`evidence/UDG/20.15.2/添加切片实例信息（ADD-SLICEINSTINFO）_51061262.md`

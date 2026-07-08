@@ -65,4 +65,4 @@ MOD PGWRESEL: APNNI="HUAWEI", NBEGIN=1, NEND=2, TRIGGER=TIME, ST=00&00&00, ET=23
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PGWRESEL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地P-GW重选策略(MOD-PGWRESEL)_26145714.md`

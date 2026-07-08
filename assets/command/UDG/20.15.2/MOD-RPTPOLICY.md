@@ -61,4 +61,4 @@ MOD RPTPOLICY:POLICYNAME="policy01",USERSELPLYTYPE=SPECIFIC,USERSELPLYNAME="user
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-RPTPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基于策略的报表开关（MOD-RPTPOLICY）_93973683.md`

@@ -55,4 +55,4 @@ RMV PLMNMATCH: MCC="123", MNC="678";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PLMNMATCH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MCC与MNC的归属关系（RMV-PLMNMATCH）_63709202.md`

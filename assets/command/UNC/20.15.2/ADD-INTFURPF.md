@@ -61,4 +61,4 @@ ADD INTFURPF: IFNAME="Ethernet66/0/2", SECURPFLOOSE=loose, SECURFPDEFAULT=allow,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-INTFURPF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加安全接口URPF（ADD-INTFURPF）_50281318.md`

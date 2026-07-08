@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSDEBUGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询维测开关状态（DSP-MSSDEBUGINFO）_49961158.md`

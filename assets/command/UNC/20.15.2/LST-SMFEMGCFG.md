@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFEMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询运营商紧急呼叫会话功能配置（LST-SMFEMGCFG）_90836434.md`

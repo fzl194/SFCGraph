@@ -65,4 +65,4 @@ SET NRFSMSFSEGSW: SEGWHITELISTSW=FUNC_ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRFSMSFSEGSW.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF号段白名单功能开关-（SET-NRFSMSFSEGSW）_71303606.md`

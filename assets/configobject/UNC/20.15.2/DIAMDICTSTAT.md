@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMDICTSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter字典加载状态（DSP-DIAMDICTSTAT）_09897252.md`

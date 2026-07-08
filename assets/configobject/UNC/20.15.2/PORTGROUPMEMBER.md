@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PORTGROUPMEMBER.md`
-- 原始手册：`evidence/UNC/20.15.2/PORTGROUPMEMBER.md`
-- 原始手册：`evidence/UNC/20.15.2/PORTGROUPMEMBER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除端口组成员（RMV-PORTGROUPMEMBER）_00841193.md`
+- 原始手册：`evidence/UNC/20.15.2/增加端口组成员（ADD-PORTGROUPMEMBER）_00866713.md`
+- 原始手册：`evidence/UNC/20.15.2/查询端口组成员配置（LST-PORTGROUPMEMBER）_49961894.md`

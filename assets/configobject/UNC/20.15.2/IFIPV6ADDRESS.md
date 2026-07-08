@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/IFIPV6ADDRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接口IPv6地址（MOD-IFIPV6ADDRESS）_00841693.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口IPv6地址（RMV-IFIPV6ADDRESS）_50280978.md`
+- 原始手册：`evidence/UNC/20.15.2/增加接口IPv6地址（ADD-IFIPV6ADDRESS）_49961222.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IPv6地址信息（DSP-IFIPV6ADDRESS）_00841373.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口IPv6地址（LST-IFIPV6ADDRESS）_00866605.md`

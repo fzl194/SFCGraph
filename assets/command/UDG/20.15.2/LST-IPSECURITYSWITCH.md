@@ -59,4 +59,4 @@ IPv6扩展头选项安全配置开关  =  IP安全开关关闭
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPSECURITYSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP选项安全开关（LST-IPSECURITYSWITCH）_38232949.md`

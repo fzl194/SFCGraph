@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRPLYSUBINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示所有策略订阅者信息（DSP-SDRPLYSUBINFO）_71652974.md`

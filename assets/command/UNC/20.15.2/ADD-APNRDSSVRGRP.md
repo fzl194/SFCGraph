@@ -62,4 +62,4 @@ ADD APNRDSSVRGRP:APN="apntest",RDSSVRGRPNAME="rgtest";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNRDSSVRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-Radius服务器组（ADD-APNRDSSVRGRP）_09896735.md`

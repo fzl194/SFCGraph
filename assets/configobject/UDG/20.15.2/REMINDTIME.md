@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REMINDTIME.md`
-- 原始手册：`evidence/UDG/20.15.2/REMINDTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/修改证书到期提醒时间（MOD-REMINDTIME）_92045220.md`
+- 原始手册：`evidence/UDG/20.15.2/查询证书到期提醒时间（LST-REMINDTIME）_92173706.md`

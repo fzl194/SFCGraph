@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ULCLAREADPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLAREADPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLAREADPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLAREADPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定DNAI服务区域的ULCL部署模式（MOD-ULCLAREADPMODE）_61764781.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定DNAI服务区域的ULCL部署模式（RMV-ULCLAREADPMODE）_08565144.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定DNAI服务区域的ULCL部署模式（ADD-ULCLAREADPMODE）_08725092.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定DNAI服务区域的ULCL部署模式（LST-ULCLAREADPMODE）_62004469.md`

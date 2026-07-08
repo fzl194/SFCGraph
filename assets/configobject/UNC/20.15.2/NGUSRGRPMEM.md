@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGUSRGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户群成员（RMV-NGUSRGRPMEM）_44007670.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G用户群成员（ADD-NGUSRGRPMEM）_44006476.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户群成员（LST-NGUSRGRPMEM）_44007023.md`

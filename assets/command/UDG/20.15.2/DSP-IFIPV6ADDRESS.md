@@ -67,4 +67,4 @@ Ethernet64/0/3    2001:DB8::11                64              全球单播地址
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-IFIPV6ADDRESS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示IPv6地址信息（DSP-IFIPV6ADDRESS）_00841373.md`

@@ -63,4 +63,4 @@ ADD NFIMSI: NFGROUPID="nfgroup01", SEGSTART="12345678914", SEGEND="12345678916";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI号段（ADD-NFIMSI）_09653306.md`

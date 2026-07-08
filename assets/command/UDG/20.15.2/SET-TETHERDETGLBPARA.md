@@ -72,4 +72,4 @@ SET TETHERDETGLBPARA: AGETIME=100;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-TETHERDETGLBPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Tethering用户终端数量检测全局配置（SET-TETHERDETGLBPARA）_82837444.md`

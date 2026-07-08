@@ -58,4 +58,4 @@ ADD RESTOAPN: APNNI="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RESTOAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾APN特征参数(ADD-RESTOAPN)_26305924.md`

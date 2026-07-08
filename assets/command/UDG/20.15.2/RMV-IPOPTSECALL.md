@@ -53,4 +53,4 @@ RMV IPOPTSECALL:SWITCHOP=permit;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-IPOPTSECALL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IP全局选项安全配置（RMV-IPOPTSECALL）_00601105.md`

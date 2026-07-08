@@ -77,4 +77,4 @@ license_xx3.xml      LIC201602296XXXXX    LIC20171116012XXX:66326438736BC7FBCC0C
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-RVKLICINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示License失效信息(DSP-RVKLICINFO)_00381870.md`

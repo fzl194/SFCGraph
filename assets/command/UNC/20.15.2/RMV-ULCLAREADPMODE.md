@@ -61,4 +61,4 @@ RMV ULCLAREADPMODE:APN="huawei1",DNAI="huawei2",DNAREANAME="dnarea1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ULCLAREADPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定DNAI服务区域的ULCL部署模式（RMV-ULCLAREADPMODE）_08565144.md`

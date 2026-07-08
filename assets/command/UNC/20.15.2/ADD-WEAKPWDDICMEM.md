@@ -63,4 +63,4 @@ ADD WEAKPWDDICMEM: WEAKPWD="qazQAZ123!@#";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-WEAKPWDDICMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加弱口令字典成员（ADD-WEAKPWDDICMEM）_89415068.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBDLLTBUFFER.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBDLLTBUFFER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局下行数据长时间缓存配置（LST-GLBDLLTBUFFER）_86530269.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局下行数据长时间缓存个数（SET-GLBDLLTBUFFER）_86530268.md`

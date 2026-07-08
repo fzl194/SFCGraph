@@ -60,4 +60,4 @@ LST PFCPSSUSTATERPT:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PFCPSSUSTATERPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询智能单元状态上报相关属性（LST-PFCPSSUSTATERPT）_04214318.md`

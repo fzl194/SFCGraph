@@ -70,4 +70,4 @@ Intelligence验证流的有效率  =  9900
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AIFUNCPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SA-Intelligence功能参数（LST-AIFUNCPARA）_93749057.md`

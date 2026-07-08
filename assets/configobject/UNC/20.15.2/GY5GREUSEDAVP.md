@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GY5GREUSEDAVP.md`
-- 原始手册：`evidence/UNC/20.15.2/GY5GREUSEDAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户接入时，Gy接口重用字段的填写方式（LST-GY5GREUSEDAVP）_52070868.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G用户接入时，Gy接口重用字段的填写方式（SET-GY5GREUSEDAVP）_52071374.md`

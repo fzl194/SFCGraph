@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRPDPCAP.md`
-- 原始手册：`evidence/UNC/20.15.2/USRPDPCAP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户面PDP规格表(LST-USRPDPCAP)_72345453.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户面PDP规格表(SET-USRPDPCAP)_26305662.md`

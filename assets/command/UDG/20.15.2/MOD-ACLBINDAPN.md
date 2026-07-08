@@ -64,4 +64,4 @@ MOD ACLBINDAPN:APN="testapn",DIRECTION=UPIN,ACLNAME="testacl2";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-ACLBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Acl绑定关系（MOD-ACLBINDAPN）_82837725.md`

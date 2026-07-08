@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-WLRTBLSMTHINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于表无线路由平滑统计信息（DSP-WLRTBLSMTHINFO）_50280746.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SHAREPLMNGP.md`
-- 原始手册：`evidence/UNC/20.15.2/SHAREPLMNGP.md`
-- 原始手册：`evidence/UNC/20.15.2/SHAREPLMNGP.md`
-- 原始手册：`evidence/UNC/20.15.2/SHAREPLMNGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改共享PLMN群组(MOD-SHAREPLMNGP)_19287293.md`
+- 原始手册：`evidence/UNC/20.15.2/删除共享PLMN群组(RMV-SHAREPLMNGP)_19372845.md`
+- 原始手册：`evidence/UNC/20.15.2/增加共享PLMN群组(ADD-SHAREPLMNGP)_84046770.md`
+- 原始手册：`evidence/UNC/20.15.2/查询共享PLMN群组(LST-SHAREPLMNGP)_83887094.md`

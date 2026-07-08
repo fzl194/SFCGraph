@@ -62,4 +62,4 @@ RST RU:RUNAME="CSDB_SD_RU_0067"
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RST-RU.md`
+- 原始手册：`evidence/UDG/20.15.2/重启资源单元（RST-RU）_59103467.md`

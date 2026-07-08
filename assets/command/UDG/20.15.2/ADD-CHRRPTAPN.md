@@ -63,4 +63,4 @@ ADD CHRRPTAPN:APN="apn1.com",SESSIONNUM=3;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CHRRPTAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/增加指定某个APN下选择少量会话做本地存储CHR表单的策略（ADD-CHRRPTAPN）_52040851.md`

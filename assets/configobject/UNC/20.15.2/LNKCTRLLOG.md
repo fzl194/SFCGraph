@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LNKCTRLLOG.md`
-- 原始手册：`evidence/UNC/20.15.2/LNKCTRLLOG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询链路控制消息日志开关(LST-LNKCTRLLOG)_13287832.md`
+- 原始手册：`evidence/UNC/20.15.2/设置链路控制消息日志开关(SET-LNKCTRLLOG)_58047743.md`

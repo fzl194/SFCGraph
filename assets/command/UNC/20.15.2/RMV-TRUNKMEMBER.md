@@ -54,4 +54,4 @@ RMV TRUNKMEMBER: TRUNKIFNAME="Eth-Trunk1", MEMBERIFNAME="Ethernet64/0/3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TRUNKMEMBER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Trunk成员接口（RMV-TRUNKMEMBER）_49962066.md`

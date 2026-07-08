@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OVERLOADRC.md`
-- 原始手册：`evidence/UNC/20.15.2/OVERLOADRC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询判断对端过载的返回码（LST-OVERLOADRC）_09896712.md`
+- 原始手册：`evidence/UNC/20.15.2/设置判断对端过载的返回码（SET-OVERLOADRC）_09896711.md`

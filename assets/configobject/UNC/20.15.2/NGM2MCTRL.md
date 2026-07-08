@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGM2MCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGM2MCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-M2M控制参数（LST-NGM2MCTRL）_34572336.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G-M2M控制参数（SET-NGM2MCTRL）_84932189.md`

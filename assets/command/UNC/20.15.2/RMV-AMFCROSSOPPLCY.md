@@ -59,4 +59,4 @@ RMV AMFCROSSOPPLCY: PEERMCC="123", PEERMNC="45";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMFCROSSOPPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF跨运营商交互策略（RMV-AMFCROSSOPPLCY）_57919445.md`

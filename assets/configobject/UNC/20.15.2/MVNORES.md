@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MVNORES.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNORES.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNORES.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNORES.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MVNO资源配置信息(MOD-MVNORES)_72225745.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MVNO资源配置信息(RMV-MVNORES)_26146066.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MVNO资源配置信息(ADD-MVNORES)_72345665.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MVNO资源配置信息(LST-MVNORES)_26305876.md`

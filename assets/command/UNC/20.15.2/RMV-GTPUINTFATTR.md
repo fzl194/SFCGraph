@@ -67,4 +67,4 @@ RMV GTPUINTFATTR: DELTYPE=BYINDEX, INDEX=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPUINTFATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-U-IP地址接口属性(RMV-GTPUINTFATTR)_72225663.md`

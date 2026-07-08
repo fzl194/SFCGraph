@@ -32,4 +32,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NODEBATCH.md`
+- 原始手册：`evidence/UNC/20.15.2/节点批量复位（RST-NODEBATCH）_73743460.md`

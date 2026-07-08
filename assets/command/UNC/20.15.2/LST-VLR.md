@@ -71,4 +71,4 @@ VLR表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VLR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR配置信息(LST-VLR)_72225125.md`

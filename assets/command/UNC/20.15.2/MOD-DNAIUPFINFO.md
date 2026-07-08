@@ -59,4 +59,4 @@ MOD DNAIUPFINFO:DNAI="huawei.com",UPFINSTANCEID="upf1",SHAREDUPFSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DNAIUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定DNAI的UPF节点信息（MOD-DNAIUPFINFO）_69117884.md`

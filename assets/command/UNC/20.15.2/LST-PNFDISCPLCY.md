@@ -70,4 +70,4 @@ NF类型  =  NfSMF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFDISCPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的服务发现策略（LST-PNFDISCPLCY）_21742349.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMETERAAA.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMETERAAA.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMETERAAA.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMETERAAA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter-AAA服务器（MOD-DIAMETERAAA）_64343897.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter-AAA服务器（RMV-DIAMETERAAA）_64343904.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter-AAA服务器（ADD-DIAMETERAAA）_64343821.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter-AAA服务器（LST-DIAMETERAAA）_64343882.md`

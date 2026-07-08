@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DOMAINSEPARATOR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询域名前后缀分隔符（LST-DOMAINSEPARATOR）_09654359.md`

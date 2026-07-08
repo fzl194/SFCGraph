@@ -68,4 +68,4 @@ bb          bb            PAE_PKTCNT_DROP_FAB_INVALID_PKT           2           
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PAEDISCARD.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE丢包统计信息（DSP-PAEDISCARD）_92520020.md`

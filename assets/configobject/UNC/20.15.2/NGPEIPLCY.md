@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-PEI策略（MOD-NGPEIPLCY）_09652460.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-PEI策略（RMV-NGPEIPLCY）_09652235.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-PEI策略（ADD-NGPEIPLCY）_09651346.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-PEI策略（LST-NGPEIPLCY）_09653007.md`

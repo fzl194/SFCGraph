@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFUDMRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFUDMRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFUDMRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/启动SMSF的UDM重选（STR-SMSFUDMRESET）_46413383.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UDM重选参数（LST-SMSFUDMRESET）_99973534.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UDM重选参数（SET-SMSFUDMRESET）_46573525.md`

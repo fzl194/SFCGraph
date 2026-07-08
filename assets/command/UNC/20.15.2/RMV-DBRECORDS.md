@@ -359,4 +359,4 @@ local id: 12620318485627178670, server type: default, server id: 126349187888615
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DBRECORDS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除数据库中的表记录（RMV-DBRECORDS）_70132935.md`

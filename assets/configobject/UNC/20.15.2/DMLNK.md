@@ -32,10 +32,10 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路配置(MOD-DMLNK)_72345875.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter链路配置(RMV-DMLNK)_26306086.md`
+- 原始手册：`evidence/UNC/20.15.2/去活Diameter链路(DEA-DMLNK)_72345877.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter链路配置(ADD-DMLNK)_72225953.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter链路状态(DSP-DMLNK)_72225955.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter链路配置(LST-DMLNK)_26146276.md`
+- 原始手册：`evidence/UNC/20.15.2/激活Diameter链路(ACT-DMLNK)_26306088.md`

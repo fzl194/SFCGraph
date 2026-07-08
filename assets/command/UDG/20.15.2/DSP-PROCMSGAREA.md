@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PROCMSGAREA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示进程消息分区信息（DSP-PROCMSGAREA）_59104241.md`

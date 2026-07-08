@@ -65,4 +65,4 @@ ADD UPFGBINDLOCG: UPFGLOCGBNDGNAME="abc", UPFGRPNAME="upfgroup", DIAMLOCGRPNAME=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPFGBINDLOCG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF组与Diameter本端主机组的关联关系（ADD-UPFGBINDLOCG）_29660172.md`

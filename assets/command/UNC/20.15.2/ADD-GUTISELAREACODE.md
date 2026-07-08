@@ -61,4 +61,4 @@ ADD GUTISELAREACODE: GUTISELAREACODE="GUTISelZone", DESC="for zone1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GUTISELAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GUTI选网功能区域编码（ADD-GUTISELAREACODE）_14059341.md`

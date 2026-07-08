@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSCCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCCONVERT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMSC转换配置记录(MOD-SMSCCONVERT)_72345325.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSC转换配置记录(RMV-SMSCCONVERT)_26305538.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSC转换配置记录(ADD-SMSCCONVERT)_72225407.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSC转换配置记录(LST-SMSCCONVERT)_26145730.md`

@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRRECEIVE.md`
+- 原始手册：`evidence/UNC/20.15.2/停止接收话单（STP-CDRRECEIVE）_51174326.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VTEPBINDGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/VTEPBINDGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/VTEPBINDGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/VTEPBINDGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VXLAN隧道端点绑定隧道组（MOD-VTEPBINDGRP）_81234592.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VXLAN隧道端点绑定隧道组（RMV-VTEPBINDGRP）_68194507.md`
+- 原始手册：`evidence/UDG/20.15.2/增加VXLAN隧道端点绑定隧道组（ADD-VTEPBINDGRP）_68354107.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VXLAN隧道端点绑定隧道组（LST-VTEPBINDGRP）_80994832.md`

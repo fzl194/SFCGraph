@@ -65,4 +65,4 @@ Start Procedure Interval  =  80
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPFSTARTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UPF系统开工流程消息的参数（LST-UPFSTARTPARA）_86526951.md`

@@ -62,4 +62,4 @@ RMV VPNVNIMAP:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-VPNVNIMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VPN-VNI映射（RMV-VPNVNIMAP）_68194513.md`

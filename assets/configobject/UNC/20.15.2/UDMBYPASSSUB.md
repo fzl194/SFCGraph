@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UDMBYPASSSUB.md`
-- 原始手册：`evidence/UNC/20.15.2/UDMBYPASSSUB.md`
-- 原始手册：`evidence/UNC/20.15.2/UDMBYPASSSUB.md`
-- 原始手册：`evidence/UNC/20.15.2/UDMBYPASSSUB.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UDM-Bypass最小签约数据配置（MOD-UDMBYPASSSUB）_32414327.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UDM-Bypass最小签约数据配置（RMV-UDMBYPASSSUB）_32335887.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UDM-Bypass最小签约数据配置（ADD-UDMBYPASSSUB）_86856256.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UDM-Bypass最小签约数据配置（LST-UDMBYPASSSUB）_32654395.md`

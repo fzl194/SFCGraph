@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/URRGRPBINDING.md`
-- 原始手册：`evidence/UDG/20.15.2/URRGRPBINDING.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户模板的URR组绑定关系（RMV-URRGRPBINDING）_82837283.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户模板的URR组绑定关系（SET-URRGRPBINDING）_82837281.md`

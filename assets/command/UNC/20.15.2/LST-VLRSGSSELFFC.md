@@ -61,4 +61,4 @@ MO流控响应 =  临时不可达
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VLRSGSSELFFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR的SGs接口自保流控参数（LST-VLRSGSSELFFC）_04121609.md`

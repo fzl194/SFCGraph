@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-USRPROBINDDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户模板关联的DNAI（LST-USRPROBINDDNAI）_81530800.md`

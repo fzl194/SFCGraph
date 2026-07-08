@@ -54,4 +54,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LOGCLEANPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志老化策略（LST-LOGCLEANPOLICY）_36328275.md`

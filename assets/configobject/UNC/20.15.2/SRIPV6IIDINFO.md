@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRIPV6IIDINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IPv6静态路由IID信息（DSP-SRIPV6IIDINFO）_50121798.md`

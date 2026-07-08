@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNDLBUFTIME.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNDLBUFTIME.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNDLBUFTIME.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFAPNDLBUFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN的下行报文缓存时长配置（MOD-SMFAPNDLBUFTIME）_96805495.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN的下行报文缓存时长配置（RMV-SMFAPNDLBUFTIME）_96805500.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN的下行报文缓存时长配置（ADD-SMFAPNDLBUFTIME）_96805378.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的下行报文缓存时长配置（LST-SMFAPNDLBUFTIME）_96805491.md`

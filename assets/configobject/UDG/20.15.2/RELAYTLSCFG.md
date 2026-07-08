@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYTLSCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYTLSCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYTLSCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYTLSCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继业务TLS认证配置（MOD-RELAYTLSCFG）_94871967.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继业务TLS认证配置（RMV-RELAYTLSCFG）_44232376.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继业务TLS认证配置（ADD-RELAYTLSCFG）_94632039.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继业务TLS认证配置（LST-RELAYTLSCFG）_43992594.md`

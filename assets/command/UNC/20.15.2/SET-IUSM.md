@@ -68,4 +68,4 @@ SET IUSM: T3385=10, T3386=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-IUSM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Iu模式SM协议参数(SET-IUSM)_26305512.md`

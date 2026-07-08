@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NOSBASEIFSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NOS-Base平面网络的报文统计信息（DSP-NOSBASEIFSTAT）_05574396.md`

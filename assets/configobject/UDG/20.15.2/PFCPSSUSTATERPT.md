@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PFCPSSUSTATERPT.md`
-- 原始手册：`evidence/UDG/20.15.2/PFCPSSUSTATERPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询智能单元状态上报相关属性（LST-PFCPSSUSTATERPT）_04214318.md`
+- 原始手册：`evidence/UDG/20.15.2/设置智能单元状态上报开关相关属性（SET-PFCPSSUSTATERPT）_56142801.md`

@@ -67,4 +67,4 @@ AS路径过滤器名字或号  =  a
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ASPATHFILTERNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询AS路径过滤节点（LST-ASPATHFILTERNODE）_00840729.md`

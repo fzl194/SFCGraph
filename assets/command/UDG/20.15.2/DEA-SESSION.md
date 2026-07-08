@@ -111,4 +111,4 @@ DEA SESSION:DEATYPE=IMSI,IMSI="46001123456789";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEA-SESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/去活用户会话（DEA-SESSION）_82837084.md`

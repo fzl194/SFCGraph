@@ -59,4 +59,4 @@ MOD NGDNSS: IPTYPE=IPV4, IPV4="192.168.100.101", PRI=PRI1, NGDNSSNAME="dnsserver
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGDNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS服务器（MOD-NGDNSS）_25121198.md`

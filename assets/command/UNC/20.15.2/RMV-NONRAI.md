@@ -56,4 +56,4 @@ RMV NONRAI: NONRAI="123000000000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NONRAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除非广播RAI配置信息(RMV-NONRAI)_72345709.md`

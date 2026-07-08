@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFGLOCGBNDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFGLOCGBNDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFGLOCGBNDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF组与Diameter本端主机组的绑定关系组（RMV-UPFGLOCGBNDGRP）_17057497.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF组与Diameter本端主机组的绑定关系组（ADD-UPFGLOCGBNDGRP）_29420948.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF组与Diameter本端主机组的绑定关系组（LST-UPFGLOCGBNDGRP）_29660170.md`

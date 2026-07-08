@@ -58,4 +58,4 @@ RMV PERFOBJRULE: MOC=TAIGP, TAIGPRULEIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PERFOBJRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除性能对象规则(RMV-PERFOBJRULE)_26306006.md`

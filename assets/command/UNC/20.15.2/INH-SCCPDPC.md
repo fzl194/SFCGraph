@@ -66,4 +66,4 @@ INH SCCPDPC: DPX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INH-SCCPDPC.md`
+- 原始手册：`evidence/UNC/20.15.2/禁止SCCP目的信令点(INH-SCCPDPC)_72345921.md`

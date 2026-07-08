@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/UPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询-UP-参数信息（LST-UPINFO）_47230274.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UP信息（SET-UPINFO）_47230273.md`

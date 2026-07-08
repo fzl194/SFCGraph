@@ -66,4 +66,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PROXYSMFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询proxy-SMF功能配置（LST-PROXYSMFFUNC）_23622954.md`

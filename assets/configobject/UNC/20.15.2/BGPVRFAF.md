@@ -26,7 +26,7 @@ BGP VPN实例创建的时候会默认创建IPv4的地址族。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BGPVRFAF.md`
-- 原始手册：`evidence/UNC/20.15.2/BGPVRFAF.md`
-- 原始手册：`evidence/UNC/20.15.2/BGPVRFAF.md`
-- 原始手册：`evidence/UNC/20.15.2/BGPVRFAF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BGP-VPN地址族（MOD-BGPVRFAF）_49961310.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP-VPN地址族（RMV-BGPVRFAF）_49961802.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP-VPN地址族（ADD-BGPVRFAF）_00865685.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP-VPN地址族（LST-BGPVRFAF）_50121286.md`

@@ -59,4 +59,4 @@ SET RSCBOXHEALCTRL:RSCALFTNODFTSW=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RSCBOXHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ResourceBox自愈策略控制参数（SET-RSCBOXHEALCTRL）_00601674.md`

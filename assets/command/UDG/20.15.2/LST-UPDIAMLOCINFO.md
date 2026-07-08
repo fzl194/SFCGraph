@@ -71,4 +71,4 @@ Supported-Vendor-Id AVP使能开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPDIAMLOCINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter本端信息（LST-UPDIAMLOCINFO）_45432694.md`

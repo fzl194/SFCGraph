@@ -87,4 +87,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-EMMPROCTRLIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定用户S1模式移动性管理流程控制参数(LST-EMMPROCTRLIMSI)_80768782.md`

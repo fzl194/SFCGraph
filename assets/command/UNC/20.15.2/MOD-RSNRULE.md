@@ -59,4 +59,4 @@ MOD RSNRULE:SST=1,SD="010101",DNN="huawei.com",RSN=V1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-RSNRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RSN规则（MOD-RSNRULE）_05590149.md`

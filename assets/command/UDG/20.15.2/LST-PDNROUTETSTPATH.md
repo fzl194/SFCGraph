@@ -77,4 +77,4 @@ Destination IPv6 Prefix Address  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PDNROUTETSTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UPF向PDN服务器发送探测消息的探测路径配置（LST-PDNROUTETSTPATH）_63911221.md`

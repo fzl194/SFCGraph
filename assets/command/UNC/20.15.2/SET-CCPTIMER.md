@@ -71,4 +71,4 @@ SET CCPTIMER: TID=CCTIMEOUT, VALUE=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CCPTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/设置融合计费Proxy定时器（SET-CCPTIMER）_45110936.md`

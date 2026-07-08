@@ -68,4 +68,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SOFTWARE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除软件仓软件（RMV-SOFTWARE）_59036626.md`

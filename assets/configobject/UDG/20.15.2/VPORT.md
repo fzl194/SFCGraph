@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示虚拟端口信息（DSP-VPORT）_59037219.md`

@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSSCHGRPFIX.md`
+- 原始手册：`evidence/UDG/20.15.2/查询调度组详细统计信息（DSP-MSSSCHGRPFIX）_50280610.md`

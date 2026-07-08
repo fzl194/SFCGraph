@@ -63,4 +63,4 @@ SET MEPINTERACT: SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MEPINTERACT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置MEP_SMF联动功能开关（SET-MEPINTERACT）_09652370.md`

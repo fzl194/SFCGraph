@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SAMUTEPROTOCOL.md`
-- 原始手册：`evidence/UDG/20.15.2/SAMUTEPROTOCOL.md`
-- 原始手册：`evidence/UDG/20.15.2/SAMUTEPROTOCOL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SA-EGN规则不启用协议（RMV-SAMUTEPROTOCOL）_69450618.md`
+- 原始手册：`evidence/UDG/20.15.2/增加SA-EGN规则不启用协议（ADD-SAMUTEPROTOCOL）_69212198.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SA-EGN规则不启用协议（LST-SAMUTEPROTOCOL）_74004971.md`

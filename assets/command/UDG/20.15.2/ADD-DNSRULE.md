@@ -73,4 +73,4 @@ ADD DNSRULE: APPLICATIONID="app1", DNSRULENAME="rule1", DOMAIN="www.huawei1.com"
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-DNSRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/添加DNS规则（ADD-DNSRULE）_35373556.md`

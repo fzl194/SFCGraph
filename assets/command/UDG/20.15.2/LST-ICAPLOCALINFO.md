@@ -69,4 +69,4 @@ ICAP服务器类型  =  URL过滤
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ICAPLOCALINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICAP本端信息（LST-ICAPLOCALINFO）_28751566.md`

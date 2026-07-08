@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-PAEFABDETECT.md`
+- 原始手册：`evidence/UNC/20.15.2/清除Fabric链路探测结果（CLR-PAEFABDETECT）_12471964.md`

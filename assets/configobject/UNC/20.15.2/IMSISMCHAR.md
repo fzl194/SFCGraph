@@ -43,7 +43,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSISMCHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSISMCHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSISMCHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSISMCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QoS协商参数(MOD-IMSISMCHAR)_26146230.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS协商参数(RMV-IMSISMCHAR)_72345829.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QoS协商参数(ADD-IMSISMCHAR)_26306040.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS协商参数(LST-IMSISMCHAR)_72225909.md`

@@ -86,4 +86,4 @@ SA按流量计长 (kbyte)  =  1843200
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPSECPOLICY6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPsec-IPv6策略（LST-IPSECPOLICY6）_68200975.md`

@@ -55,4 +55,4 @@ SET PAESWITCH: SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PAESWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE隔离核统计状态（SET-PAESWITCH）_31564778.md`

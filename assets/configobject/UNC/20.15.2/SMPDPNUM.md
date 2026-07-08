@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMPDPNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话管理的PDP上下文数（DSP-SMPDPNUM）_09653799.md`

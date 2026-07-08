@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NBIOTRATVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/NBIOTRATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NB-IoT终端配置的RAT值（LST-NBIOTRATVALUE）_09896821.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NB-IoT用户的RAT值（SET-NBIOTRATVALUE）_09896820.md`

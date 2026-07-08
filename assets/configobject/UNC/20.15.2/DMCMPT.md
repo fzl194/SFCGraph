@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter兼容配置(LST-DMCMPT)_72345869.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Diameter兼容性(SET-DMCMPT)_26306080.md`

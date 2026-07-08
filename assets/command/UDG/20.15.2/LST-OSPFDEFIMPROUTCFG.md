@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFDEFIMPROUTCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF引入路由默认配置（LST-OSPFDEFIMPROUTCFG）_49801726.md`

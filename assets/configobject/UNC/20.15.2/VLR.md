@@ -32,8 +32,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLR.md`
-- 原始手册：`evidence/UNC/20.15.2/VLR.md`
-- 原始手册：`evidence/UNC/20.15.2/VLR.md`
-- 原始手册：`evidence/UNC/20.15.2/VLR.md`
-- 原始手册：`evidence/UNC/20.15.2/VLR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR配置信息(MOD-VLR)_26145444.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VLR配置信息(RMV-VLR)_72345041.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VLR配置信息(ADD-VLR)_26305254.md`
+- 原始手册：`evidence/UNC/20.15.2/显示VLR迁移进度(DSP-VLR)_26305256.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR配置信息(LST-VLR)_72225125.md`

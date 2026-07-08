@@ -64,4 +64,4 @@ MOD TNFINS: TNFINSINDEX=1, FQDN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-TNFINS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改目标NF实例（MOD-TNFINS）_09651413.md`

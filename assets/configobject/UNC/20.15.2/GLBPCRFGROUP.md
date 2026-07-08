@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBPCRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBPCRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBPCRFGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBPCRFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改全局PCRF组绑定关系（MOD-GLBPCRFGROUP）_09897117.md`
+- 原始手册：`evidence/UNC/20.15.2/删除全局PCRF组绑定关系（RMV-GLBPCRFGROUP）_09897118.md`
+- 原始手册：`evidence/UNC/20.15.2/增加全局PCRF组绑定关系（ADD-GLBPCRFGROUP）_09897116.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局PCRF组绑定关系（LST-GLBPCRFGROUP）_09897119.md`

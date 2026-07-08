@@ -63,4 +63,4 @@ RMV PNFSRVNTFSUBS: NFINSTANCEID="AMF_Instance_1", SRVINSTANCEID="Service_Instanc
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFSRVNTFSUBS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF服务实例的回调信息（RMV-PNFSRVNTFSUBS）_09652257.md`

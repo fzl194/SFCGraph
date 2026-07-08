@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UEMUTACCWLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/UEMUTACCWLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/UEMUTACCWLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除PA口UE互访白名单（RMV-UEMUTACCWLIST）_72322910.md`
+- 原始手册：`evidence/UDG/20.15.2/增加PA口UE互访白名单（ADD-UEMUTACCWLIST）_31719863.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PA口UE互访白名单（LST-UEMUTACCWLIST）_72561940.md`

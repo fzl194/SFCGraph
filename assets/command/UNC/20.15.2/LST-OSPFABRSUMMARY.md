@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFABRSUMMARY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询区域内路由聚合配置（LST-OSPFABRSUMMARY）_49961502.md`

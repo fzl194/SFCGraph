@@ -68,4 +68,4 @@ SET APNDLBUFTIME: APN="apn1.com", NORMALUSER=9;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNDLBUFTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的下行数据缓存时长（SET-APNDLBUFTIME）_82837189.md`

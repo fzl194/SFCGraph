@@ -63,4 +63,4 @@ MOD UPDIAMETERAAA:HOSTNAME="diameteraaa1",VPNINSTANCE="vpn2";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-UPDIAMETERAAA.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter-AAA服务器（MOD-UPDIAMETERAAA）_97314579.md`

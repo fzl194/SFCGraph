@@ -59,4 +59,4 @@ Token:129    2       2         2022-05-16 14:04:05
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SDRPOLICYINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDRC中的策略版本信息（DSP-SDRPOLICYINFO）_21972917.md`

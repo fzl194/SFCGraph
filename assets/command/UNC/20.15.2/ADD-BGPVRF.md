@@ -65,4 +65,4 @@ ADD BGPVRF:VRFNAME="vrf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-BGPVRF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP-VPN实例（ADD-BGPVRF）_00600613.md`

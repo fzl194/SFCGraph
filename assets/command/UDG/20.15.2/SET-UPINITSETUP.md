@@ -68,4 +68,4 @@ SET UPINITSETUP: UPSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPINITSETUP.md`
+- 原始手册：`evidence/UDG/20.15.2/主被动切换（SET-UPINITSETUP）_82837253.md`

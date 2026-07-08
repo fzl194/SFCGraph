@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFTAKEPARARULE.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFTAKEPARARULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF携带参数处理规则（LST-NRFTAKEPARARULE）_35519273.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF携带参数处理规则（SET-NRFTAKEPARARULE）_88537110.md`

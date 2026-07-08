@@ -64,4 +64,4 @@ ADD MECAREA: AREAID=1, SERVINGSCOPE="West Lake", DESC="West Lake";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MECAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-MEC区域信息（ADD-MECAREA）_34412856.md`

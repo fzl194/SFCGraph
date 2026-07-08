@@ -75,4 +75,4 @@ ADD NFREGNRF: NFTYPE=NRF, NRFINSTANCENAME="NRF_Instance_1", PRIORITY=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFREGNRF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本端NF和对端NRF实例的注册关系（ADD-NFREGNRF）_09651495.md`

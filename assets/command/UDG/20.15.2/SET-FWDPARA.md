@@ -61,4 +61,4 @@ SET FWDPARA: RSTIME=6, FWDSWITCH=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FWDPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置转发参数（SET-FWDPARA）_29627123.md`

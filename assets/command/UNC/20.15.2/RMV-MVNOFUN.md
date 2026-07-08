@@ -64,4 +64,4 @@ RMV MVNOFUN: MVNOID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MVNOFUN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MVNO功能配置信息(RMV-MVNOFUN)_72345661.md`

@@ -60,4 +60,4 @@ runlog     runlog     7          0         0         0           Dynamic_1-12e33
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-GROUPSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询消费组状态（DSP-GROUPSTAT）_21110027.md`

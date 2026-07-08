@@ -59,4 +59,4 @@ vusn-pod     vusn-pod-at133es4ed     22.1.RC1.B070    22.1.RC1.B070
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-UPGPODINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示已部署的Pod的版本号（DSP-UPGPODINFO）_34181851.md`

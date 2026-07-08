@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF功能时长（LST-NSSFFUNCTIMER）_76718586.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSSF功能时长（SET-NSSFFUNCTIMER）_22836795.md`

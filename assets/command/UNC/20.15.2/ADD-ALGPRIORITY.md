@@ -61,4 +61,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加算法优先级配置信息（ADD-ALGPRIORITY）_72225325.md`

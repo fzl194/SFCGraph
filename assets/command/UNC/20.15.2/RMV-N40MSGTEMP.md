@@ -57,4 +57,4 @@ RMV N40MSGTEMP: TEMPLATENAME="n40attr";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-N40MSGTEMP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N40消息属性模板（RMV-N40MSGTEMP）_49237355.md`

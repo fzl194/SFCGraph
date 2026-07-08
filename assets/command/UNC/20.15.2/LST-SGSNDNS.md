@@ -87,4 +87,4 @@ DNS域名组装形式  =  4位十进制MNC和MCC
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGSNDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGSN-DNS域名策略(LST-SGSNDNS)_72345563.md`

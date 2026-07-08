@@ -61,4 +61,4 @@ RMV UPLIST4RDS: UPLISTNAME="uplist1", UPINSTANCEID="up1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RDSUPFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RADIUS服务器的UP列表中指定UP的功能属性（RMV-RDSUPFCTRL）_82242449.md`

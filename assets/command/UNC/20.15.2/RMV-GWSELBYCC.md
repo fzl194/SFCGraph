@@ -58,4 +58,4 @@ RMV GWSELBYCC: APNNI="HUAWEI.COM", SUBCC="0x1234";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GWSELBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于CC选择GGSN_P-GW(RMV-GWSELBYCC)_72225627.md`

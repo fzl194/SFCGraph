@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRSMOOTHSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询无线路由与对端平滑状态机状态（DSP-WLRSMOOTHSTAT）_49801426.md`

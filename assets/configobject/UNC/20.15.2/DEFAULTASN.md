@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEFAULTASN.md`
-- 原始手册：`evidence/UNC/20.15.2/DEFAULTASN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缺省ASN值（LST-DEFAULTASN）_90657140.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缺省ASN值（SET-DEFAULTASN）_37559375.md`

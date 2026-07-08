@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFNSSUBDETAIL.md`
+- 原始手册：`evidence/UNC/20.15.2/显示切片可用性订阅详细信息（DSP-NSSFNSSUBDETAIL）_56547717.md`

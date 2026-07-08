@@ -67,4 +67,4 @@ RMV NRFADDR: NRFINSTANCENAME="NRF_Instance_0", IPADDRESSTYPE=IPTypeV4, IPV4ADDRE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF实例地址信息（RMV-NRFADDR）_09654178.md`

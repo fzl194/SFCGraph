@@ -65,4 +65,4 @@ RMV DNSS: GRPID=1, IPT=IPV4, IP="192.168.100.101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS服务器(RMV-DNSS)_26145898.md`

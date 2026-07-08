@@ -61,4 +61,4 @@ RMV AFDNSSERVER:IPVERSION=IPV4,IPV4ADDR="192.168.0.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-AFDNSSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除防欺诈可信DNS服务器（RMV-AFDNSSERVER）_82837809.md`

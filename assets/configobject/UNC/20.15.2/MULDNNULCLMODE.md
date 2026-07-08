@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MULDNNULCLMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/MULDNNULCLMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/MULDNNULCLMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/MULDNNULCLMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改智能分流ULCL部署模式（MOD-MULDNNULCLMODE）_98259254.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能分流ULCL部署模式（RMV-MULDNNULCLMODE）_47540305.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能分流ULCL部署模式（ADD-MULDNNULCLMODE）_47819737.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能分流ULCL部署模式（LST-MULDNNULCLMODE）_97939838.md`

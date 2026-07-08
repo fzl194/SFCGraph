@@ -61,4 +61,4 @@ ADD LOCALHSS: HSSHTNAM="hss1502.example03.com", HSSNAM="localhss1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOCALHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地HSS(ADD-LOCALHSS)_26305888.md`

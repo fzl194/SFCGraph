@@ -55,4 +55,4 @@ RMV SMFEMGCFG:NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFEMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除运营商紧急呼叫会话功能配置（RMV-SMFEMGCFG）_91284506.md`

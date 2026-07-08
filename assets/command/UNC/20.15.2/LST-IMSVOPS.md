@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IMSVOPS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VoPS配置(LST-IMSVOPS)_26146112.md`

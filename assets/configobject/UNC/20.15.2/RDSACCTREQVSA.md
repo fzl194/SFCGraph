@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSACCTREQVSA.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSACCTREQVSA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS计费服务器组的私有扩展属性（LST-RDSACCTREQVSA）_09896788.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RADIUS计费服务器组的私有扩展属性（SET-RDSACCTREQVSA）_09896787.md`

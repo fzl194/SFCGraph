@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPRESELECTFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/UPRESELECTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UP重选功能（LST-UPRESELECTFUNC）_40101321.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UP重选功能（SET-UPRESELECTFUNC）_95141456.md`

@@ -56,4 +56,4 @@ RMV RELAYDOMAIN: RELAYDOMAINNAME="test001";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RELAYDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继域名配置（RMV-RELAYDOMAIN）_14541483.md`

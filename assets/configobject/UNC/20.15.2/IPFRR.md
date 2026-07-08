@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPFRR.md`
-- 原始手册：`evidence/UNC/20.15.2/IPFRR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IP-FRR（LST-IPFRR）_49960910.md`
+- 原始手册：`evidence/UNC/20.15.2/设置IP-FRR（SET-IPFRR）_00841149.md`

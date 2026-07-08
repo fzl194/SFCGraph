@@ -71,4 +71,4 @@ MSISDN前缀  =  12345
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MSISDNSUBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSISDN用户群成员(LST-MSISDNSUBGPMEM)_72225251.md`

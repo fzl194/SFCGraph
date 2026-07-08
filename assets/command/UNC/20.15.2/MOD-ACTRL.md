@@ -69,4 +69,4 @@ MOD ACTRL:ACID="ps_actrl",AGID="PS_GROUP_1",IPRID="IP_Ga_CDRReceive_1st",PORT=99
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接入控制（MOD-ACTRL）_51174234.md`

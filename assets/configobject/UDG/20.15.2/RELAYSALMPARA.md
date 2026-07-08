@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYSALMPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYSALMPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继业务告警参数配置（LST-RELAYSALMPARA）_25355077.md`
+- 原始手册：`evidence/UDG/20.15.2/设置媒体中继业务告警参数配置（SET-RELAYSALMPARA）_43992610.md`

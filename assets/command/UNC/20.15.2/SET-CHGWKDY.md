@@ -59,4 +59,4 @@ SET CHGWKDY: WKDAY=SAT, CC=FLATRATE, TT=WORK;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHGWKDY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置星期配置(SET-CHGWKDY)_26305210.md`

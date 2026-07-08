@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATHNUMBER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径数（DSP-PATHNUMBER）_82837225.md`

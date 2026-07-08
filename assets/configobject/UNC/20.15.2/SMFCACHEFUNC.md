@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFCACHEFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFCACHEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF映射关系的本地缓存策略（LST-SMFCACHEFUNC）_35374743.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF映射关系的本地缓存策略（SET-SMFCACHEFUNC）_88377456.md`

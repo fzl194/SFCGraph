@@ -67,4 +67,4 @@ RETCODE = 0  执行成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SEQCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询序号检查信息表(LST-SEQCHK)_72345633.md`

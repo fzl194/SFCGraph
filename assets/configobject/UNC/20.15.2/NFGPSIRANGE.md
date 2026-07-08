@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFGPSIRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGPSIRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/NFGPSIRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF-GPSIRANGE信息（RMV-NFGPSIRANGE）_44339640.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-GPSIRANGE信息（ADD-NFGPSIRANGE）_91819421.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-GPSIRANGE信息（LST-NFGPSIRANGE）_91699945.md`

@@ -55,4 +55,4 @@ RMV IMSIVLR: IMSI="123030000000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMSIVLR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI与VLR对应关系(RMV-IMSIVLR)_26305260.md`

@@ -58,4 +58,4 @@ RMV GUREDIRPLCY: AREA=PLMN, MCC="460", MNC="01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GUREDIRPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GU重定向策略（RMV-GUREDIRPLCY）_00545428.md`

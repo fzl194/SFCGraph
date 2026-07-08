@@ -59,4 +59,4 @@ LST NGDFSRFUNC:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGDFSRFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询双发选收配置（LST-NGDFSRFUNC）_22918674.md`

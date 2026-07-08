@@ -60,4 +60,4 @@ ADD CHRRPTSUBID: IMSI="460030123456789";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CHRRPTSUBID.md`
+- 原始手册：`evidence/UDG/20.15.2/增加CHR本地存盘用户（ADD-CHRRPTSUBID）_64015292.md`

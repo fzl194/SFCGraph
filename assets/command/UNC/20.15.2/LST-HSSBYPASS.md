@@ -71,4 +71,4 @@ HSS Bypass自动退出开关  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HSSBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HSS故障Bypass功能控制参数(LST-HSSBYPASS)_09911473.md`

@@ -66,4 +66,4 @@ VPN实例名  =  _public_
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFV3GTSM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3-GTSM配置（LST-OSPFV3GTSM）_00840633.md`

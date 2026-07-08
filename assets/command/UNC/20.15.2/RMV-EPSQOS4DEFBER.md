@@ -58,4 +58,4 @@ RMV EPSQOS4DEFBER:QOSPROFILENAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EPSQOS4DEFBER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Qos-Profile缺省承载QoS属性（RMV-EPSQOS4DEFBER）_71516449.md`

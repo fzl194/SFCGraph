@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPPATHFAULTREST.md`
-- 原始手册：`evidence/UNC/20.15.2/UPPATHFAULTREST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户面链路故障恢复功能配置信息（LST-UPPATHFAULTREST）_45986071.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户面链路故障恢复功能（SET-UPPATHFAULTREST）_99546092.md`

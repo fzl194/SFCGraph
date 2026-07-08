@@ -105,4 +105,4 @@ ADD SGWDNS: DNTYPE=TAI, TAC="1", TACRANGE="9", MCC="123", MNC="120";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SGWDNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S-GW-DNS域名策略（ADD-SGWDNS）_72345571.md`

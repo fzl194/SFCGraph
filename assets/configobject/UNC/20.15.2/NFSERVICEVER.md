@@ -36,6 +36,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFSERVICEVER.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSERVICEVER.md`
-- 原始手册：`evidence/UNC/20.15.2/NFSERVICEVER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF服务版本信息（RMV-NFSERVICEVER）_09652116.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF服务版本信息（LST-NFSERVICEVER）_09652677.md`
+- 原始手册：`evidence/UNC/20.15.2/添加NF服务版本信息（ADD-NFSERVICEVER）_09653292.md`

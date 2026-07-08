@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRIID.md`
+- 原始手册：`evidence/UDG/20.15.2/显示无线路由IID信息（DSP-WLRIID）_00840505.md`

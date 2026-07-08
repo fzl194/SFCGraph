@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TSTPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UPC到UPF或者PFCP到UPF的路径状态（DSP-TSTPATH）_12701645.md`

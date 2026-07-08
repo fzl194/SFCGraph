@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPSPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPSPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPSPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPEIPSPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于分组的智能寻呼策略（MOD-NGPEIPSPLCY）_99839628.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于分组的智能寻呼策略（RMV-NGPEIPSPLCY）_35398669.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于分组的智能寻呼策略（ADD-NGPEIPSPLCY）_35319045.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于分组的智能寻呼策略（LST-NGPEIPSPLCY）_99679800.md`

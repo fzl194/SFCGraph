@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1USRSECPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/S1USRSECPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/S1USRSECPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/S1USRSECPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式用户安全配置(MOD-S1USRSECPARA)_26145650.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式用户安全配置(RMV-S1USRSECPARA)_72345247.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式用户安全配置(ADD-S1USRSECPARA)_26305460.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式用户安全配置(LST-S1USRSECPARA)_72225331.md`

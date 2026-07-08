@@ -63,4 +63,4 @@ SET GB: GIRD=YES, AUTO=NO, UDPCHK=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GB.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb通用信息(SET-GB)_72225685.md`

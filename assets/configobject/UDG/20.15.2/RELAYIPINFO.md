@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYIPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继IP信息（MOD-RELAYIPINFO）_14541479.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继IP信息（RMV-RELAYIPINFO）_64063390.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继IP信息（ADD-RELAYIPINFO）_64299162.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继IP信息（LST-RELAYIPINFO）_14777349.md`

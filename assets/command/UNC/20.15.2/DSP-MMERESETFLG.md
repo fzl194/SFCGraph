@@ -65,4 +65,4 @@ MME复位标志  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MMERESETFLG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MME复位标志(DSP-MMERESETFLG)_72226027.md`

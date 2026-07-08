@@ -58,4 +58,4 @@ RMV GLBCTXREQRATE: CTXRURRGRPNAME="urrgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GLBCTXREQRATE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除全局初始请求计费绑定关系（RMV-GLBCTXREQRATE）_09897184.md`

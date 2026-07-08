@@ -71,4 +71,4 @@ DHCPv6服务器IP地址  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DHCPSERVER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCP服务器（LST-DHCPSERVER）_32224049.md`

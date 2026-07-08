@@ -77,4 +77,4 @@ StpTBL          0x0             0x1000          0x2             0x94            
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CFGTABLEDATA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示满足条件的CFG表数据（DSP-CFGTABLEDATA）_59103913.md`

@@ -88,4 +88,4 @@ SET NRFPKGRATIO: NFType=AMF, RATIO=30;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRFPKGRATIO.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF内外包长比例（SET-NRFPKGRATIO）_35636467.md`

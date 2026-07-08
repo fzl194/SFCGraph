@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PROTOCOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTOCOLGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTOCOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除自定义协议组（RMV-PROTOCOLGROUP）_82837343.md`
+- 原始手册：`evidence/UDG/20.15.2/增加自定义协议组（ADD-PROTOCOLGROUP）_82837342.md`
+- 原始手册：`evidence/UDG/20.15.2/查询自定义协议组（LST-PROTOCOLGROUP）_86528709.md`

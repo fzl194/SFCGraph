@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FEIEXTPORTPKTDEBUGRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/设置外联口报文调测规则（OPR-FEIEXTPORTPKTDEBUGRULE）_00600837.md`

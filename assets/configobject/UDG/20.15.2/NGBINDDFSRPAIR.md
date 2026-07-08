@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGBINDDFSRPAIR.md`
-- 原始手册：`evidence/UDG/20.15.2/NGBINDDFSRPAIR.md`
-- 原始手册：`evidence/UDG/20.15.2/NGBINDDFSRPAIR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除5G-LAN实例绑定双发选收结对配置（RMV-NGBINDDFSRPAIR）_22918680.md`
+- 原始手册：`evidence/UDG/20.15.2/增加5G-LAN实例绑定双发选收结对配置（ADD-NGBINDDFSRPAIR）_26352687.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN实例绑定双发选收结对配置（LST-NGBINDDFSRPAIR）_26514783.md`

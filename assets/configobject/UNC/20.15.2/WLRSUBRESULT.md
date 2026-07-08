@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/WLRSUBRESULT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示APP订阅结果信息（DSP-WLRSUBRESULT）_00840529.md`

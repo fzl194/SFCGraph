@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHKPKGINTERVAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询软件包检查间隔（LST-CHKPKGINTERVAL）_96368339.md`

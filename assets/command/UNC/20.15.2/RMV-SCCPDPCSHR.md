@@ -59,4 +59,4 @@ RMV SCCPDPCSHR: MAINDPX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCCPDPCSHR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DPC多点负荷分担记录(RMV-SCCPDPCSHR)_72345923.md`

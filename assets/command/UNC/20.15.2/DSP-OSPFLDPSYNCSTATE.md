@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-OSPFLDPSYNCSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF-LDP联动状态信息（DSP-OSPFLDPSYNCSTATE）_49801630.md`

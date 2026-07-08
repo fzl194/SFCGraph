@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ALLOWEDOBJNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询授权控制对象（LST-ALLOWEDOBJNAME）_93466876.md`

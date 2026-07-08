@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IKEALLSTATISTIC.md`
-- 原始手册：`evidence/UNC/20.15.2/IKEALLSTATISTIC.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复全部IKE统计信息（RTR-IKEALLSTATISTIC）_98034046.md`
+- 原始手册：`evidence/UNC/20.15.2/显示全部IKE统计信息（DSP-IKEALLSTATISTIC）_42793957.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYPROTODEF.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYPROTODEF.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYPROTODEF.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYPROTODEF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继协议定义（MOD-RELAYPROTODEF）_94871963.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继协议定义（RMV-RELAYPROTODEF）_44232372.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继协议定义（ADD-RELAYPROTODEF）_94632035.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继协议定义（LST-RELAYPROTODEF）_43992590.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNREPORTATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/APNREPORTATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ApnReportAttr配置（LST-APNREPORTATTR）_16615230.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ApnReportAttr配置（SET-APNREPORTATTR）_16615169.md`

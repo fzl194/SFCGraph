@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRSNDPLCYCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRSNDPLCYCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR传输策略控制参数(LST-CHRSNDPLCYCFG)_72345211.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CHR传输策略控制参数(SET-CHRSNDPLCYCFG)_26305424.md`

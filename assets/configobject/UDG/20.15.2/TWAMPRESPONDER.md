@@ -30,8 +30,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TWAMPRESPONDER.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPRESPONDER.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPRESPONDER.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPRESPONDER.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPRESPONDER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改TWAMP响应端（MOD-TWAMPRESPONDER）_27102480.md`
+- 原始手册：`evidence/UDG/20.15.2/删除TWAMP响应端（RMV-TWAMPRESPONDER）_27102482.md`
+- 原始手册：`evidence/UDG/20.15.2/增加TWAMP响应端（ADD-TWAMPRESPONDER）_73142131.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TWAMP响应端（LST-TWAMPRESPONDER）_73302049.md`
+- 原始手册：`evidence/UDG/20.15.2/显示TWAMP响应端状态信息（DSP-TWAMPRESPONDER）_27262284.md`

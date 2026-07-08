@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPAUTHGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPAUTHGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPAUTHGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPAUTHGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改LDP认证组（MOD-LDPAUTHGROUP）_00840549.md`
+- 原始手册：`evidence/UDG/20.15.2/删除LDP认证组（RMV-LDPAUTHGROUP）_00841341.md`
+- 原始手册：`evidence/UDG/20.15.2/查询LDP认证组配置（LST-LDPAUTHGROUP）_50281554.md`
+- 原始手册：`evidence/UDG/20.15.2/添加LDP认证组（ADD-LDPAUTHGROUP）_49801802.md`

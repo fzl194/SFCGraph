@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COMPSTATTRACE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示当前组件的状态记录信息（DSP-COMPSTATTRACE）_59104024.md`

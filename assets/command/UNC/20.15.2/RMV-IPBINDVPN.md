@@ -54,4 +54,4 @@ RMV IPBINDVPN:IFNAME="Ethernet64/0/3",VRFNAME="vrf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IPBINDVPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口绑定VPN（RMV-IPBINDVPN）_50281362.md`

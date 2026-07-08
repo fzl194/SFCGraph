@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LIMITMBSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/LIMITMBSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询有界邮箱开关配置状态（LST-LIMITMBSWITCH）_70582615.md`
+- 原始手册：`evidence/UDG/20.15.2/设置有界邮箱开关（SET-LIMITMBSWITCH）_24062794.md`

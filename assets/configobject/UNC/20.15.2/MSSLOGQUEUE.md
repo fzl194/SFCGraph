@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSSLOGQUEUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询日志队列详细信息（DSP-MSSLOGQUEUE）_00440917.md`

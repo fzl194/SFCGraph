@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRVCHAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCHAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCHAIN.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCHAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改业务链（MOD-SRVCHAIN）_47006830.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务链（RMV-SRVCHAIN）_42287013.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务链（LST-SRVCHAIN）_41687095.md`
+- 原始手册：`evidence/UDG/20.15.2/添加业务链（ADD-SRVCHAIN）_46767426.md`

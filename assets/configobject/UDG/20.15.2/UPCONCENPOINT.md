@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPCONCENPOINT.md`
-- 原始手册：`evidence/UDG/20.15.2/UPCONCENPOINT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询集中点部署模式（LST-UPCONCENPOINT）_45195200.md`
+- 原始手册：`evidence/UDG/20.15.2/设置集中点部署模式（SET-UPCONCENPOINT）_97314577.md`

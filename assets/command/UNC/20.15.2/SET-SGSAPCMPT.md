@@ -63,4 +63,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SGSAPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGsAP协议兼容性(SET-SGSAPCMPT)_72345039.md`

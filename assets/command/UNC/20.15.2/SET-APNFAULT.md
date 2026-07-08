@@ -71,4 +71,4 @@ SET APNFAULT: APN="test",UPFAULTMODE=DETECTION;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-APNFAULT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN粒度的故障处理开关（SET-APNFAULT）_98988893.md`

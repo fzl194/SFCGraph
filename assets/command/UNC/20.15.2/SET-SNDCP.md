@@ -58,4 +58,4 @@ SET SNDCP: MAXNPDU=20000, NSAPIMAXNPDU=5;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SNDCP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SNDCP参数(SET-SNDCP)_26146026.md`

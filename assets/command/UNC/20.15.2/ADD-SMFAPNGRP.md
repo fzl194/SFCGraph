@@ -61,4 +61,4 @@ ADD SMFAPNGRP: GRPNAME="grp1", DESC="M2M";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFAPNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS关联的APN组（ADD-SMFAPNGRP）_88377436.md`

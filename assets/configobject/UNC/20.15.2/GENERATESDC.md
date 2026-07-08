@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GENERATESDC.md`
-- 原始手册：`evidence/UNC/20.15.2/GENERATESDC.md`
+- 原始手册：`evidence/UNC/20.15.2/强制产生业务数据容器（FOC-GENERATESDC）_09897028.md`
+- 原始手册：`evidence/UNC/20.15.2/查询强制产生业务数据容器结果（DSP-GENERATESDC）_09897026.md`

@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SYN-LBSRVADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/CSLB向VNRS同步服务实例地址（SYN-LBSRVADDR）_29627071.md`

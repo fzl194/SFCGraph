@@ -70,4 +70,4 @@ NCG代应答时的配额类型选择  =  时长额度&流量总额度
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CCPFOT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合计费Proxy-Failover模板（LST-CCPFOT）_45110917.md`

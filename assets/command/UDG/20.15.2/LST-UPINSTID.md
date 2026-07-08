@@ -65,4 +65,4 @@ UUID  =  4947a69a-f61b-4bc1-b9da-47c9c5d14b64
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPINSTID.md`
+- 原始手册：`evidence/UDG/20.15.2/显示当前配置的NF实例ID（LST-UPINSTID）_05977152.md`

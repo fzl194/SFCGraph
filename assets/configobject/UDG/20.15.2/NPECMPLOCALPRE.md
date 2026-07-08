@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPECMPLOCALPRE.md`
-- 原始手册：`evidence/UDG/20.15.2/NPECMPLOCALPRE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询优选本单板TRUNK出接口开关（LST-NPECMPLOCALPRE）_84858620.md`
+- 原始手册：`evidence/UDG/20.15.2/设置优选本单板TRUNK出接口开关（SET-NPECMPLOCALPRE）_85018276.md`

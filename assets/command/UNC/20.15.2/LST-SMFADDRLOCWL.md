@@ -62,4 +62,4 @@ MSISDN  =  123456
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFADDRLOCWL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询位置区域地址分配用户白名单（LST-SMFADDRLOCWL）_35636457.md`

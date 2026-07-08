@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTSVRADDR.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTSVRADDR.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTSVRADDR.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTSVRADDR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改报表服务器接入点配置（MOD-RPTSVRADDR）_93531889.md`
+- 原始手册：`evidence/UDG/20.15.2/删除报表服务器接入点配置（RMV-RPTSVRADDR）_06453266.md`
+- 原始手册：`evidence/UDG/20.15.2/显示报表服务器接入点配置（LST-RPTSVRADDR）_04210935.md`
+- 原始手册：`evidence/UDG/20.15.2/添加报表服务器接入点配置（ADD-RPTSVRADDR）_06213372.md`

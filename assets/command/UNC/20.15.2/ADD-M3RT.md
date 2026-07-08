@@ -66,4 +66,4 @@ ADD M3RT: RTX=1, DEX=1, LSX=1, RTN="TEST";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-M3RT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M3UA信令路由(ADD-M3RT)_72345915.md`

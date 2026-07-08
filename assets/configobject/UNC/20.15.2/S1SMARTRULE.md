@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1SMARTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/S1SMARTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/S1SMARTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/S1SMARTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式信令抑制规则(MOD-S1SMARTRULE)_72225425.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式信令抑制规则(RMV-S1SMARTRULE)_26305556.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式信令抑制规则(ADD-S1SMARTRULE)_26145746.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式信令抑制规则(LST-S1SMARTRULE)_72345347.md`

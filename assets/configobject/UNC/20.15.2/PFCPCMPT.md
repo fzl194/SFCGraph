@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PFCPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/PFCPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PFCP接口兼容性参数（LST-PFCPCMPT）_96242371.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PFCP接口兼容性参数（SET-PFCPCMPT）_96243192.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADDRLACID.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRLACID.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRLACID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LAC组内LAC号段（RMV-ADDRLACID）_49644926.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LAC组内LAC号段（ADD-ADDRLACID）_49644907.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LAC组内LAC号段（LST-ADDRLACID）_49644913.md`

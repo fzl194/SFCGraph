@@ -53,4 +53,4 @@ VNFM备站点IP  =  10.10.10.11
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VNFMINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNFM对接信息（LST-VNFMINFO）_69516020.md`

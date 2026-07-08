@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCCPOPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPOPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPOPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP本局信令点(MOD-SCCPOPC)_72345931.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP本局信令点(RMV-SCCPOPC)_26306142.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP本局信令点(ADD-SCCPOPC)_72226009.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP本局信令点(LST-SCCPOPC)_26146332.md`

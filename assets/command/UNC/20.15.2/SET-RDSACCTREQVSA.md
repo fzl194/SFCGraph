@@ -94,4 +94,4 @@ SET RDSACCTREQVSA: RDSSVRGRPNAME="radiusgroup", THREEGPP=ENABLE, IMSI=DISABLE, C
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-RDSACCTREQVSA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RADIUS计费服务器组的私有扩展属性（SET-RDSACCTREQVSA）_09896787.md`

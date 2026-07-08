@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSCCONVERT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSC转换配置记录(LST-SMSCCONVERT)_26145730.md`

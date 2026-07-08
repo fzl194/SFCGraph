@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNCONVERT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIAPNCONVERT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APNNI转换配置(MOD-IMSIAPNCONVERT)_72345257.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI转换配置(RMV-IMSIAPNCONVERT)_26305470.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI转换配置(ADD-IMSIAPNCONVERT)_72225339.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI转换配置(LST-IMSIAPNCONVERT)_26145662.md`

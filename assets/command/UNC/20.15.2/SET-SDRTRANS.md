@@ -78,4 +78,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SDRTRANS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SDR传输能力（SET-SDRTRANS）_30310143.md`

@@ -64,4 +64,4 @@ SET PTTFUNC: LTEPTTSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PTTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置一键通配置（SET-PTTFUNC）_06399931.md`

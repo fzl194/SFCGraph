@@ -74,4 +74,4 @@ SET GLBCHARGECHAR:HOME="0x1",ROAM="0x1", VISIT="0x1", HOMESGSN=ENABLE, ROAMSGSN=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GLBCHARGECHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置对本地用户、漫游用户、拜访用户所采用的计费属性（SET-GLBCHARGECHAR）_09896800.md`

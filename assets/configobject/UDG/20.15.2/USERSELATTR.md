@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USERSELATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/USERSELATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/USERSELATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户选择属性（RMV-USERSELATTR）_86133379.md`
+- 原始手册：`evidence/UDG/20.15.2/显示用户选择属性（LST-USERSELATTR）_86133380.md`
+- 原始手册：`evidence/UDG/20.15.2/添加用户选择属性列表（ADD-USERSELATTR）_86133378.md`

@@ -79,4 +79,4 @@ TransNo SsnID CommitTimeStamp SpendTime(ms) AppCid AppOwnerCid AppCompInsance Da
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CFGDEBUG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示CFG诊断日志（DSP-CFGDEBUG）_59104261.md`

@@ -62,4 +62,4 @@ MOD CPNODE: CPNODEINDEX=0, CPFUNCTION=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CPNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CP节点信息（MOD-CPNODE）_09654361.md`

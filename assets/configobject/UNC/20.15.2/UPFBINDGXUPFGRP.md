@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDGXUPFGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDGXUPFGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDGXUPFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF与Gx-UPF组的关联关系（RMV-UPFBINDGXUPFGRP）_16858409.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF与Gx-UPF组的关联关系（ADD-UPFBINDGXUPFGRP）_29660166.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF与Gx-UPF组的关联关系（LST-UPFBINDGXUPFGRP）_29420946.md`

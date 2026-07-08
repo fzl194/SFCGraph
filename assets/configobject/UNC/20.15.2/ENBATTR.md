@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ENBATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/ENBATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示eNodeB属性(DSP-ENBATTR)_72345861.md`
+- 原始手册：`evidence/UNC/20.15.2/清除eNodeB属性(CLR-ENBATTR)_26146262.md`

@@ -60,4 +60,4 @@ RMV BWMRULEGLOBAL:BWMRULENAME="testbwmruleglobal";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-BWMRULEGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局带宽管理规则（RMV-BWMRULEGLOBAL）_82837484.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GENSYNCALLCFGNTF.md`
+- 原始手册：`evidence/UDG/20.15.2/请求生成一个全量同步通知（REQ-GENSYNCALLCFGNTF）_59103801.md`

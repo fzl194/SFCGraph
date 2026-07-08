@@ -54,4 +54,4 @@ RTR ATTACKDEFENDSTC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-ATTACKDEFENDSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除攻击防范统计信息（RTR-ATTACKDEFENDSTC）_00441269.md`

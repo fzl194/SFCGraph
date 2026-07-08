@@ -73,4 +73,4 @@ DHCP与GGSN IP地址的对应关系表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DHCPGIP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询支持DHCP服务的GGSN-IP地址（LST-DHCPGIP）_26305760.md`

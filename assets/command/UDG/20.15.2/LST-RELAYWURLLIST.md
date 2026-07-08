@@ -73,4 +73,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYWURLLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继白名单URL列表（LST-RELAYWURLLIST）_94871989.md`

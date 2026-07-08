@@ -59,4 +59,4 @@ RMV SCTPLEGRP: SCTPGROUPID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCTPLEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP本地实体组(RMV-SCTPLEGRP)_19187105.md`

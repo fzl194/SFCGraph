@@ -55,4 +55,4 @@ RMV NRFFUNCTION:INSTANCEID="Instanceid01":
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF功能实例信息（RMV-NRFFUNCTION）_09651490.md`

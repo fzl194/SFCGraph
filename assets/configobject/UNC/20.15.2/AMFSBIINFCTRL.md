@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSBIINFCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSBIINFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的SBI接口控制参数（LST-AMFSBIINFCTRL）_08368061.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF的SBI接口控制参数（SET-AMFSBIINFCTRL）_72448426.md`

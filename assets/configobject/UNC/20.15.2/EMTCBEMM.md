@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EMTCBEMM.md`
-- 原始手册：`evidence/UNC/20.15.2/EMTCBEMM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式eMTC-MM协议参数（LST-EMTCBEMM）_72225457.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1模式eMTC-MM协议参数（SET-EMTCBEMM）_26145778.md`

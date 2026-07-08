@@ -84,4 +84,4 @@ ADD GTPCAUSE: GTPVERSION=GTPV0V1, REJCAUSE=194;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPCAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP原因值(ADD-GTPCAUSE)_72225465.md`

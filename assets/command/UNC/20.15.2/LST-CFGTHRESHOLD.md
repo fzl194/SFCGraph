@@ -79,4 +79,4 @@ testforSPS4    40                     30                         1              
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CFGTHRESHOLD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置对象告警阈值(LST-CFGTHRESHOLD)_72648877.md`

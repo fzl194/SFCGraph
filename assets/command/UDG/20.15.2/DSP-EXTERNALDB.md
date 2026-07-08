@@ -71,4 +71,4 @@ RETCODE = 0  操作成功.
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-EXTERNALDB.md`
+- 原始手册：`evidence/UDG/20.15.2/查询外置规则数据库（DSP-EXTERNALDB）_06561542.md`

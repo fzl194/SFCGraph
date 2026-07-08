@@ -70,4 +70,4 @@ huawei.com  Radio Network Layer  41           不释放专有QoS Flow           
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNDEACTQFPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN去活用户面专有QoS-Flow策略（LST-APNDEACTQFPLCY）_38890149.md`

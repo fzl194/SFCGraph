@@ -79,4 +79,4 @@ ADD TZLST: TZID=1, TZONE=E0000, DST=YES, SM=DATE, SMONTH=JAN, SDAY=15, ST=18&10&
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-TZLST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加多时区参数(ADD-TZLST)_26305400.md`

@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPTMPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/UPTMPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TM路径相关属性（LST-UPTMPATH）_70762236.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TM路径相关属性（SET-UPTMPATH）_68602067.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVPBINDPCCPG.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVPBINDPCCPG.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVPBINDPCCPG.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVPBINDPCCPG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCC组业务属性绑定（MOD-SRVPBINDPCCPG）_09897179.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCC组业务属性绑定（RMV-SRVPBINDPCCPG）_09897180.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCC组业务属性绑定（ADD-SRVPBINDPCCPG）_09897178.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC组业务属性绑定（LST-SRVPBINDPCCPG）_09897181.md`

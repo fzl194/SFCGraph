@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRPAESTATE.md`
-- 原始手册：`evidence/UDG/20.15.2/WLRPAESTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询无线路由PAE使能状态（LST-WLRPAESTATE）_50281814.md`
+- 原始手册：`evidence/UDG/20.15.2/设置无线路由PAE使能状态（SET-WLRPAESTATE）_49801786.md`

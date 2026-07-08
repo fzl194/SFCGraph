@@ -125,4 +125,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSTBMDETINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/通过表号查询表的详细信息（DSP-MSSTBMDETINFO）_50121186.md`

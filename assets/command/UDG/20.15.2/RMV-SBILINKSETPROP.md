@@ -54,4 +54,4 @@ RMV SBILINKSETPROP: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SBILINKSETPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SBI链路集策略（RMV-SBILINKSETPROP）_29291777.md`

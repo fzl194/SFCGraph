@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PAERULEEXTERN.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE上外联口规则信息（DSP-PAERULEEXTERN）_92520007.md`

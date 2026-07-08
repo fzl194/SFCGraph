@@ -63,4 +63,4 @@ MOD DAMPROUTE:VRFNAME="_public_",AFTYPE=ipv4uni,PEERTYPE=ebgp,REUSE=200;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DAMPROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改振荡抑制路由（MOD-DAMPROUTE）_50120910.md`

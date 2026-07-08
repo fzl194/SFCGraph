@@ -94,4 +94,4 @@ ADD OSPFINTERFACE:PROCID=1, AREAID="0.0.0.0", IFNAME="Ethernet64/0/5";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-OSPFINTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPF接口配置（ADD-OSPFINTERFACE）_00866569.md`

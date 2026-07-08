@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IFIPV6ENABLEIPSEC.md`
-- 原始手册：`evidence/UDG/20.15.2/IFIPV6ENABLEIPSEC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口IPv6使能（LST-IFIPV6ENABLEIPSEC）_68320999.md`
+- 原始手册：`evidence/UDG/20.15.2/设置接口IPv6使能（SET-IFIPV6ENABLEIPSEC）_68201005.md`

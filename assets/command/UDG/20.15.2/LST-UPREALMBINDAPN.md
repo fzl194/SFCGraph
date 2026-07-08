@@ -68,4 +68,4 @@ APN与Diameter Realm关联关系
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPREALMBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN与Diameter-Realm关联关系（LST-UPREALMBINDAPN）_97314569.md`

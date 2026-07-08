@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCALAPNNIGP.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALAPNNIGP.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALAPNNIGP.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALAPNNIGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地APNNI组(MOD-LOCALAPNNIGP)_16323685.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地APNNI组(RMV-LOCALAPNNIGP)_81117480.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地APNNI组(ADD-LOCALAPNNIGP)_16438089.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地APNNI组(LST-LOCALAPNNIGP)_80957788.md`

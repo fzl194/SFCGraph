@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FUIENRICHMENT.md`
-- 原始手册：`evidence/UDG/20.15.2/FUIENRICHMENT.md`
-- 原始手册：`evidence/UDG/20.15.2/FUIENRICHMENT.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复FUI增强参数（RTR-FUIENRICHMENT）_82837536.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FUI增强参数（LST-FUIENRICHMENT）_86528461.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FUI增强参数（SET-FUIENRICHMENT）_82837534.md`

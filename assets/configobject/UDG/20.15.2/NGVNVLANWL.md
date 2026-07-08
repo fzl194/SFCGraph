@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGVNVLANWL.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNVLANWL.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNVLANWL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于5G-LAN组的VLAN白名单（RMV-NGVNVLANWL）_26352689.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于5G-LAN组的VLAN白名单（ADD-NGVNVLANWL）_23157716.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于5G-LAN组的VLAN白名单（LST-NGVNVLANWL）_22918682.md`

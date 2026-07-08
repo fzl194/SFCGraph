@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPPFCPPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/UPPFCPPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径相关属性（LST-UPPFCPPATH）_82837241.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PFCP路径相关属性（SET-UPPFCPPATH）_82837240.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DRLIMITINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示已发生的倒换和复位次数和距离限制结束的时间（DSP-DRLIMITINFO）_42635008.md`

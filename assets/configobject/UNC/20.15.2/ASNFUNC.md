@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ASNFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/ASNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ASN功能（LST-ASNFUNC）_35273619.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ASN功能（SET-ASNFUNC）_35519283.md`

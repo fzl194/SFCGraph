@@ -58,4 +58,4 @@ RMV MNCLEN:MCC="460";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MNCLEN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除MNC长度信息（RMV-MNCLEN）_44865463.md`

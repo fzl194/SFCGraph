@@ -64,4 +64,4 @@ RMV PNFALLOWEDPLMN: NFINSTANCEID="SMF_Instance_0", SRVINSTANCEID="Service_Instan
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFALLOWEDPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF允许的PLMN信息（RMV-PNFALLOWEDPLMN）_09653099.md`

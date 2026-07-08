@@ -64,4 +64,4 @@ ADD SESSLBCAPABILITY: TYPE="x86_64", VERSION="Intel(R) Xeon(R) CPU E5-2658 v4 @ 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SESSLBCAPABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/添加会话均衡基线能力值（ADD-SESSLBCAPABILITY）_15006393.md`

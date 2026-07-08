@@ -99,4 +99,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-FEIHEALTHSTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示FEI健康状态（DSP-FEIHEALTHSTATE）_00600829.md`

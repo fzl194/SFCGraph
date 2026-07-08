@@ -60,4 +60,4 @@ ADD IPSECINTFCFG:INTERFACENAME="Tunnel1/1/1",TNLTYPE=IPSEC;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IPSECINTFCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/创建IPsec隧道接口（ADD-IPSECINTFCFG）_50281406.md`

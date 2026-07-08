@@ -65,4 +65,4 @@ ADD NGPAGINGPRIPLCY: PLCYIDX=1,DNN="huawei.com", PAGINGPRIORITY=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGPAGINGPRIPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G寻呼优先级策略参数配置（ADD-NGPAGINGPRIPLCY）_09652363.md`

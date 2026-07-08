@@ -65,4 +65,4 @@ ADD APNPFCPCMPT:APN="huawei.com", CREATEQERSW=ENABLE,PFCPQCISW=INHERIT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNPFCPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定APN的PFCP私有信元携带配置（ADD-APNPFCPCMPT）_43946517.md`

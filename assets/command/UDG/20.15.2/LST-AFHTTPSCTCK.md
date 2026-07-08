@@ -69,4 +69,4 @@ all-protocol  使能（开启）  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AFHTTPSCTCK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTPS证书检查功能配置（LST-AFHTTPSCTCK）_01168648.md`

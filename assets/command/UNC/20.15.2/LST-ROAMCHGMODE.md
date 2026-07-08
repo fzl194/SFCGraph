@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ROAMCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于漫游属性的计费接口选择方式（LST-ROAMCHGMODE）_23782774.md`

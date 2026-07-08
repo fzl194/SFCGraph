@@ -39,4 +39,4 @@ DNS服务器上的数据修改后，可以使用该命令清除 UNC 整系统DNS
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNSC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DNS缓存(CLR-DNSC)_72345945.md`

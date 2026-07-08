@@ -59,4 +59,4 @@ RMV LCSPERMITCFG: OPTYPE=Namf_Location_ProvidePositioningInfo, IPTYPE=IPTypeV4, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LCSPERMITCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除定位服务权限配置（RMV-LCSPERMITCFG）_18115686.md`

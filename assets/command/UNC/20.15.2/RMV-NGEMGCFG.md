@@ -56,4 +56,4 @@ RMV NGEMGCFG: NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGEMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除运营商紧急呼叫功能配置（RMV-NGEMGCFG）_09652963.md`

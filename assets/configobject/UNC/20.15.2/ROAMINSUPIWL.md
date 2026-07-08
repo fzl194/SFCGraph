@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ROAMINSUPIWL.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMINSUPIWL.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMINSUPIWL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除漫入场景SUPI白名单（RMV-ROAMINSUPIWL）_70382385.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫入场景SUPI白名单（ADD-ROAMINSUPIWL）_70462521.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫入场景SUPI白名单（LST-ROAMINSUPIWL）_23622958.md`

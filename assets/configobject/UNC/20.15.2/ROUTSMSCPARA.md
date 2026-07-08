@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ROUTSMSCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/ROUTSMSCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF_VLR选择SMSC的相关参数（LST-ROUTSMSCPARA）_04281133.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF_VLR选择SMSC的相关参数（SET-ROUTSMSCPARA）_03961141.md`

@@ -61,4 +61,4 @@ RMV SMSCTX: SUPI="460023500100001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMSCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户的SMS上下文（RMV-SMSCTX）_96243010.md`

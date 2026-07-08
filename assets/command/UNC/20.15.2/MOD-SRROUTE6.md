@@ -71,4 +71,4 @@ MOD SRROUTE6:AFTYPE=ipv6unicast,PREFIX="2001:DB8::1",MASKLENGTH=128,VRFNAME="_pu
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SRROUTE6.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6静态路由（MOD-SRROUTE6）_00600893.md`

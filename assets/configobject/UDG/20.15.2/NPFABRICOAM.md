@@ -38,5 +38,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPFABRICOAM.md`
-- 原始手册：`evidence/UDG/20.15.2/NPFABRICOAM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局OAM相关配置（LST-NPFABRICOAM）_94730466.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局OAM相关配置（SET-NPFABRICOAM）_94730515.md`

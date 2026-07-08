@@ -56,4 +56,4 @@ RMV SUBSMARTDNN: DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SUBSMARTDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能分流DNN（RMV-SUBSMARTDNN）_40119817.md`

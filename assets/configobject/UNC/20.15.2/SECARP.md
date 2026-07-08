@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECARP.md`
-- 原始手册：`evidence/UNC/20.15.2/SECARP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ARP快回（LST-SECARP）_50121366.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ARP快回配置（SET-SECARP）_49961622.md`

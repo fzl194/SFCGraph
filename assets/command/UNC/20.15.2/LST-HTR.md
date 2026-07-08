@@ -83,4 +83,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTR功能(LST-HTR)_26146150.md`

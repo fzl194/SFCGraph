@@ -76,4 +76,4 @@ SET QOSCAR: USERTYPE=ROAMING, ULRAT=geran-1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-QOSCAR.md`
+- 原始手册：`evidence/UDG/20.15.2/设置QosCar配置（SET-QOSCAR）_82837668.md`

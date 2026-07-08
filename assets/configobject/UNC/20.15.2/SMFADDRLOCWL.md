@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFADDRLOCWL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFADDRLOCWL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFADDRLOCWL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置区域地址分配用户白名单（RMV-SMFADDRLOCWL）_35636463.md`
+- 原始手册：`evidence/UNC/20.15.2/增加位置区域地址分配用户白名单（ADD-SMFADDRLOCWL）_35273615.md`
+- 原始手册：`evidence/UNC/20.15.2/查询位置区域地址分配用户白名单（LST-SMFADDRLOCWL）_35636457.md`

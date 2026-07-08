@@ -63,4 +63,4 @@ SET MSSLOGRULE: RULE=filter,MODULEID=2,LEVELID=1,LOGLEVELTYPE=above,ENABLE=TRUE,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MSSLOGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Log过滤或非抑制开关（SET-MSSLOGRULE）_00841605.md`

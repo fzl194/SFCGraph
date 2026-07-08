@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPTEMPLATE.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCTP模板（MOD-SCTPTEMPLATE）_09897333.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP模板（RMV-SCTPTEMPLATE）_09897334.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCTP模板（ADD-SCTPTEMPLATE）_09897332.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP模板（LST-SCTPTEMPLATE）_09897335.md`

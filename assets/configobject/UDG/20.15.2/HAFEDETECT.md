@@ -43,5 +43,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HAFEDETECT.md`
-- 原始手册：`evidence/UDG/20.15.2/HAFEDETECT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HAFETCD网络亚健康探测参数（LST-HAFEDETECT）_11896664.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HAFETCD网络亚健康探测参数（SET-HAFEDETECT）_59776225.md`

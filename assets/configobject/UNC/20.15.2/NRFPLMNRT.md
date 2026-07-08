@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PLMN路由（MOD-NRFPLMNRT）_09652637.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN路由（RMV-NRFPLMNRT）_09653720.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PLMN路由（ADD-NRFPLMNRT）_09651822.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PLMN路由（LST-NRFPLMNRT）_09654379.md`

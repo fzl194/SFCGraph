@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMCOMMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCOMMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通用会话拓展功能（LST-SMCOMMFUNC）_08433262.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通用会话拓展功能（SET-SMCOMMFUNC）_08433263.md`

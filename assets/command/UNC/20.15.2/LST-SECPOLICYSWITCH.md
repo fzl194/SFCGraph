@@ -71,4 +71,4 @@ TCP/IP防攻击类型  =  UDP泛洪报文
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SECPOLICYSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TCPIP报文以及应用层、黑名单、白名单防御机制使能状态（LST-SECPOLICYSWITCH）_49801574.md`

@@ -31,4 +31,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFCACHESYNC.md`
+- 原始手册：`evidence/UNC/20.15.2/操作远端NF缓存同步（OPR-NFCACHESYNC）_24956644.md`

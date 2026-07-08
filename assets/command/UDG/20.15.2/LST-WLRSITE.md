@@ -63,4 +63,4 @@ PAE延时定时器（s）  =  30
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-WLRSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询无线路由全局属性配置（LST-WLRSITE）_49961286.md`

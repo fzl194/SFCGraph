@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USERRUNINFOSTATE.md`
-- 原始手册：`evidence/UDG/20.15.2/USERRUNINFOSTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询指定用户的运行信息（DSP-USERRUNINFOSTATE）_86526349.md`
+- 原始手册：`evidence/UDG/20.15.2/清除指定用户全部的运行信息记录（CLR-USERRUNINFOSTATE）_82837076.md`

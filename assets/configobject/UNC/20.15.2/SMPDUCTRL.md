@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMPDUCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMPDUCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDU会话控制参数（LST-SMPDUCTRL）_44007229.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PDU会话控制参数（SET-SMPDUCTRL）_44008047.md`

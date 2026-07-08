@@ -59,4 +59,4 @@ LST CHRRECORDANONY:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CHRRECORDANONY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CHR单据的匿名化配置。（LST-CHRRECORDANONY）_48922721.md`

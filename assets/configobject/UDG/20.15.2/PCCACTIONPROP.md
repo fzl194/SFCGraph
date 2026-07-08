@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PCCACTIONPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/PCCACTIONPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/PCCACTIONPROP.md`
-- 原始手册：`evidence/UDG/20.15.2/PCCACTIONPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改PCC动作属性（MOD-PCCACTIONPROP）_82837602.md`
+- 原始手册：`evidence/UDG/20.15.2/删除PCC动作属性（RMV-PCCACTIONPROP）_86528583.md`
+- 原始手册：`evidence/UDG/20.15.2/增加PCC动作属性（ADD-PCCACTIONPROP）_82837601.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PCC动作属性（LST-PCCACTIONPROP）_82837604.md`

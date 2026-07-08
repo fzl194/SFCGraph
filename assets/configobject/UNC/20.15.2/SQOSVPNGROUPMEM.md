@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SQOSVPNGROUPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSVPNGROUPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VPN组成员（RMV-SQOSVPNGROUPMEM）_00441045.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VPN组成员（ADD-SQOSVPNGROUPMEM）_50280994.md`

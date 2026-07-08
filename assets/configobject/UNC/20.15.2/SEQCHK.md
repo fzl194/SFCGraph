@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEQCHK.md`
-- 原始手册：`evidence/UNC/20.15.2/SEQCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询序号检查信息表(LST-SEQCHK)_72345633.md`
+- 原始手册：`evidence/UNC/20.15.2/设置序号检查信息表(SET-SEQCHK)_26305842.md`

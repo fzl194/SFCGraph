@@ -168,4 +168,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NCSPROXYSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/显示所有NETCONF代理VNFC会话信息（DSP-NCSPROXYSESSION）_59037222.md`

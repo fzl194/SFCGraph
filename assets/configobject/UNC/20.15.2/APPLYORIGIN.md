@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APPLYORIGIN.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYORIGIN.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYORIGIN.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYORIGIN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改BGP路由信息的路由源设置（MOD-APPLYORIGIN）_50280546.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP路由信息的路由源设置（RMV-APPLYORIGIN）_00441137.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP路由信息的路由源设置（ADD-APPLYORIGIN）_00866429.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP路由信息的路由源设置（LST-APPLYORIGIN）_49802126.md`

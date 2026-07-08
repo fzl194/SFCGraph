@@ -70,4 +70,4 @@ RMV RESERVEDMOC3: PARAIDX=32, PARAMETER1="parameter1", PARAMETER2="parameter2", 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RESERVEDMOC3.md`
+- 原始手册：`evidence/UNC/20.15.2/删除补丁预留MOC3（RMV-RESERVEDMOC3）_50558770.md`

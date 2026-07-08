@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPFCCONF.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPFCCONF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP流控属性（LST-HTTPFCCONF）_00360893.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP流控属性（SET-HTTPFCCONF）_00360897.md`

@@ -69,4 +69,4 @@ ims
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFIMSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMS-PCF的DNN（LST-NRFIMSDNN）_96242306.md`

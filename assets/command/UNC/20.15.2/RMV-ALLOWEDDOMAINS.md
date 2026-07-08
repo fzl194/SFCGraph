@@ -62,4 +62,4 @@ RMV ALLOWEDDOMAINS:OBJNAME="objname001",ALLOWEDFQDN="huawei1.com.apn.epc.mnc45.m
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWEDDOMAINS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除允许访问的域名（RMV-ALLOWEDDOMAINS）_09654367.md`

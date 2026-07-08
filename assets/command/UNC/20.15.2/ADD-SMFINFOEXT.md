@@ -62,4 +62,4 @@ ADD SMFINFOEXT: SMFINSTANCENAME="SMF_Instance_0", ID="central", PRIORITY=100;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFINFOEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF扩展信息（ADD-SMFINFOEXT）_70462525.md`

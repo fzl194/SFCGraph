@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SERVICENAME.md`
+- 原始手册：`evidence/UDG/20.15.2/显示注册的服务名称（DSP-SERVICENAME）_52606173.md`

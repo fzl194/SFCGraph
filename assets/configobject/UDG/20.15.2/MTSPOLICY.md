@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MTSPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/MTSPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/MTSPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除消息跟踪限制（RMV-MTSPOLICY）_19414949.md`
+- 原始手册：`evidence/UDG/20.15.2/查询消息跟踪限制（LST-MTSPOLICY）_82615576.md`
+- 原始手册：`evidence/UDG/20.15.2/添加消息跟踪限制（ADD-MTSPOLICY）_82775284.md`

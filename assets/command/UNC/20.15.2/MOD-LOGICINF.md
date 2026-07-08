@@ -74,4 +74,4 @@ MOD LOGICINF: NAME="gxif1/0/1", IPVERSION=IPV6, IPV6ADDRESS1="fc12:1233:4345:454
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-LOGICINF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改逻辑接口（MOD-LOGICINF）_09896724.md`

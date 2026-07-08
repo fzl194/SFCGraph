@@ -70,4 +70,4 @@ QCI  ARP的优先级别  标记类型  DSCP  AF级别  AF丢弃优先级  TOS值
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBTRUNKREMARK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询整机Trunk-Remark配置（LST-GLBTRUNKREMARK）_70522432.md`

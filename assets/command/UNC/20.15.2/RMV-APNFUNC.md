@@ -57,4 +57,4 @@ RMV APNFUNC: APNNI="huawei1.com", APNPURPOSE=VIP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI功能配置(RMV-APNFUNC)_72225335.md`

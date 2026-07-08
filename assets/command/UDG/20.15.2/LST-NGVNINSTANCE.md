@@ -91,4 +91,4 @@ N6学习的MAC地址空闲时长开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGVNINSTANCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查看5G-VNInstance的配置（LST-NGVNINSTANCE）_12516585.md`

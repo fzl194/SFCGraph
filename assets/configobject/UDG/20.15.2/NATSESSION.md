@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NATSESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NAT用户会话信息（DSP-NATSESSION）_06523902.md`

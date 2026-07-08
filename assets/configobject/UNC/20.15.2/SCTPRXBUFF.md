@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPRXBUFF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP接收缓冲区(DSP-SCTPRXBUFF)_40592607.md`

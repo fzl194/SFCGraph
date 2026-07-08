@@ -57,4 +57,4 @@ RMV PCFSELPLCY: SUBRANGE=FOREIGN_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PCFSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCF选择策略（RMV-PCFSELPLCY）_44007721.md`

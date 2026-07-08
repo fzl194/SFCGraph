@@ -69,4 +69,4 @@ _public_    FC00::                 7                    20                      
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IFIPV6ADDRPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6地址策略（LST-IFIPV6ADDRPOLICY）_00840557.md`

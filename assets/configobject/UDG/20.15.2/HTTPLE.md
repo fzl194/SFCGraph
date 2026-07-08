@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPLE.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPLE.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPLE.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPLE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改HTTP本端实体（MOD-HTTPLE）_28971845.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTP本端实体（RMV-HTTPLE）_28971847.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTP本端实体（ADD-HTTPLE）_84132094.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP本端实体（LST-HTTPLE）_29291769.md`

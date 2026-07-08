@@ -46,4 +46,4 @@ RMV CFGTHRESHOLD: OBJECTNAME="TcmcTypeInner";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CFGTHRESHOLD.md`
+- 原始手册：`evidence/UDG/20.15.2/删除配置对象告警阈值(RMV-CFGTHRESHOLD)_72490293.md`

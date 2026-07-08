@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFOPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFOPC.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSF本局信令点(RMV-SMSFOPC)_27137542.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSF本局信令点(ADD-SMSFOPC)_27079076.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF本局信令点(LST-SMSFOPC)_27137283.md`

@@ -61,4 +61,4 @@ RMV UERCAPUNCSEL: SUBRANGE=ALL_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UERCAPUNCSEL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UE无线能力选择UNC参数(RMV-UERCAPUNCSEL)_72912941.md`

@@ -93,4 +93,4 @@ ADD CCT: CCTMPLTNAME="Cct", FUATERMINATE=TERM_SERVICE, TIMEFORMAT=LocalTime;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CCT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加融合计费模板（ADD-CCT）_09653176.md`

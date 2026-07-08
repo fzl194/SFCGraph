@@ -59,4 +59,4 @@ ADD PSCSIMSI: IMSIPRE="12345";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PSCSIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加联合接入IMSI白名单(ADD-PSCSIMSI)_36193194.md`

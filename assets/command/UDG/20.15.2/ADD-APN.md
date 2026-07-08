@@ -73,4 +73,4 @@ ADD APN: APN="huawei.com", HASVPN=DISABLE, HASVPNIPV6=DISABLE, RESTORPGWSWITCH=I
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-APN.md`
+- 原始手册：`evidence/UDG/20.15.2/添加APN配置（ADD-APN）_82837014.md`

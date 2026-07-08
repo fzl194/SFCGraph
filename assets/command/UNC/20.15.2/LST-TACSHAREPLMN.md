@@ -67,4 +67,4 @@ PLMN群组标识 =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TACSHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于区域的PLMN管理(LST-TACSHAREPLMN)_19348221.md`

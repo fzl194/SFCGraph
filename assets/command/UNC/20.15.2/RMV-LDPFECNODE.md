@@ -54,4 +54,4 @@ RMV LDPFECNODE:FECLISTNAME="name1",IPADDRESS="192.168.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LDPFECNODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除FEC节点（RMV-LDPFECNODE）_49961710.md`

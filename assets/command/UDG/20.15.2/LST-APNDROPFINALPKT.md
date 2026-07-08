@@ -69,4 +69,4 @@ APN  =  net
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNDROPFINALPKT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示指定APN配额耗尽末包动作（LST-APNDROPFINALPKT）_93973679.md`

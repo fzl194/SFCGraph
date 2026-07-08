@@ -65,4 +65,4 @@ SET GLBAPPPARA: APPRVALIDCOND=N4_INDICATION;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBAPPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局app参数（SET-GLBAPPPARA）_74982443.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNTHROTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNTHROTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNTHROTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示DDN信令抑制状态(DSP-DDNTHROTPARA)_26146172.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN信令抑制参数(LST-DDNTHROTPARA)_72345771.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DDN信令抑制参数(SET-DDNTHROTPARA)_26305980.md`

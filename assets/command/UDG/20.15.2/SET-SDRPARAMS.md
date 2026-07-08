@@ -75,4 +75,4 @@ SET SDRPARAMS: PARAID=6, PARAVALUE1=1, PARAVALUE2="10";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SDRPARAMS.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SDR参数（SET-SDRPARAMS）_09587912.md`

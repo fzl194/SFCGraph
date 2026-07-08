@@ -59,4 +59,4 @@ MOD TSTPCFSEL:IMSI="123456789012345",SERVINGSCOPE="testservingscope";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-TSTPCFSEL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改拨测用户与PCF服务区的绑定关系（MOD-TSTPCFSEL）_70462589.md`

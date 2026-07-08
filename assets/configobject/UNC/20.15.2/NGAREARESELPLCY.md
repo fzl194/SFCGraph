@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGAREARESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAREARESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAREARESELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAREARESELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF区域重选控制策略（MOD-NGAREARESELPLCY）_23622978.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF区域重选控制策略（RMV-NGAREARESELPLCY）_70382377.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF区域重选控制策略（ADD-NGAREARESELPLCY）_70462513.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF区域重选控制策略（LST-NGAREARESELPLCY）_70462549.md`

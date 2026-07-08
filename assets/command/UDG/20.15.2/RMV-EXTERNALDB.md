@@ -61,4 +61,4 @@ RMV EXTERNALDB: DBTYPE=OTT;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-EXTERNALDB.md`
+- 原始手册：`evidence/UDG/20.15.2/卸载外置规则数据库（RMV-EXTERNALDB）_93973677.md`

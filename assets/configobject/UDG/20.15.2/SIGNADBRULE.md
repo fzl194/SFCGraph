@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SIGNADBRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/SIGNADBRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/SIGNADBRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/SIGNADBRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改特征库规则配置（MOD-SIGNADBRULE）_25895979.md`
+- 原始手册：`evidence/UDG/20.15.2/删除特征库规则配置（RMV-SIGNADBRULE）_25895980.md`
+- 原始手册：`evidence/UDG/20.15.2/增加特征库规则配置（ADD-SIGNADBRULE）_25895978.md`
+- 原始手册：`evidence/UDG/20.15.2/查询特征库规则配置（LST-SIGNADBRULE）_25895981.md`

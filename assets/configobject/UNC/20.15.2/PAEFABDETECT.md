@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAEFABDETECT.md`
-- 原始手册：`evidence/UNC/20.15.2/PAEFABDETECT.md`
-- 原始手册：`evidence/UNC/20.15.2/PAEFABDETECT.md`
+- 原始手册：`evidence/UNC/20.15.2/停止Fabric链路探测任务（STP-PAEFABDETECT）_12631728.md`
+- 原始手册：`evidence/UNC/20.15.2/启动Fabric链路探测任务（STR-PAEFABDETECT）_12471972.md`
+- 原始手册：`evidence/UNC/20.15.2/清除Fabric链路探测结果（CLR-PAEFABDETECT）_12471964.md`

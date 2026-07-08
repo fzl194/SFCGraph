@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COSTOS.md`
-- 原始手册：`evidence/UDG/20.15.2/COSTOS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询COS-TOS映射策略（LST-COSTOS）_82837706.md`
+- 原始手册：`evidence/UDG/20.15.2/设置COS-TOS映射策略（SET-COSTOS）_82837705.md`

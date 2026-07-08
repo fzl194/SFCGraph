@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNLOCREPORT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNLOCREPORT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNLOCREPORT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNLOCREPORT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的位置上报配置（MOD-APNLOCREPORT）_36332725.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的位置上报配置（RMV-APNLOCREPORT）_85893636.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的位置上报配置（ADD-APNLOCREPORT）_36292485.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户位置上报配置（LST-APNLOCREPORT）_86372758.md`

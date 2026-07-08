@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSLCTSSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSLCTSSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSLCTSSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSLCTSSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改选择对端NF时使用的业务服务区（MOD-PNFSLCTSSCOPE）_30787898.md`
+- 原始手册：`evidence/UNC/20.15.2/删除已配置的选择对端NF时使用的业务服务区（RMV-PNFSLCTSSCOPE）_32390459.md`
+- 原始手册：`evidence/UNC/20.15.2/增加选择对端NF时使用的业务服务区（ADD-PNFSLCTSSCOPE）_32390457.md`
+- 原始手册：`evidence/UNC/20.15.2/查询选择对端NF时使用的业务服务区（LST-PNFSLCTSSCOPE）_32390458.md`

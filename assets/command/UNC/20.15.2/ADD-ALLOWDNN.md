@@ -60,4 +60,4 @@ ADD ALLOWDNN: REQDNN="1234567", REPLDNN="abcdef";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALLOWDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加允许本地专网分流的DNN（ADD-ALLOWDNN）_42502264.md`

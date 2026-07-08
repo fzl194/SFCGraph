@@ -64,4 +64,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AUTOSCALINGMPLS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MPLS自动化配置模板（LST-AUTOSCALINGMPLS）_00601253.md`

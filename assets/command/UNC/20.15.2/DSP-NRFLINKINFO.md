@@ -87,4 +87,4 @@ Link information  =  {
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NRFLINKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NRF管理的链路信息（DSP-NRFLINKINFO）_31773562.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FEHEARTBEAT.md`
-- 原始手册：`evidence/UDG/20.15.2/FEHEARTBEAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FE心跳功能开关（LST-FEHEARTBEAT）_12463033.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FE心跳功能开关（SET-FEHEARTBEAT）_12703105.md`

@@ -70,4 +70,4 @@ IPv6前缀长度= 63
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CONFLICTIPV6.md`
+- 原始手册：`evidence/UDG/20.15.2/查询本地地址池中冲突IPv6地址（LST-CONFLICTIPV6）_94212259.md`

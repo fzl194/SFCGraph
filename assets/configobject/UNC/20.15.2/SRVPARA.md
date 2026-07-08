@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改业务参数配置（MOD-SRVPARA）_51174334.md`
+- 原始手册：`evidence/UNC/20.15.2/查询业务参数配置（LST-SRVPARA）_51174335.md`

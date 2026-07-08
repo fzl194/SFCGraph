@@ -69,4 +69,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFNTFPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端网元的通知抑制时间（LST-PNFNTFPLCY）_96242392.md`

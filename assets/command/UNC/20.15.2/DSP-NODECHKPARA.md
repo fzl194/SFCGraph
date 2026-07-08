@@ -85,4 +85,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NODECHKPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询节点检测参数（DSP-NODECHKPARA）_42184981.md`

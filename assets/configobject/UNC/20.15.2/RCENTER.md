@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RCENTER.md`
-- 原始手册：`evidence/UNC/20.15.2/RCENTER.md`
-- 原始手册：`evidence/UNC/20.15.2/RCENTER.md`
-- 原始手册：`evidence/UNC/20.15.2/RCENTER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改注册中心-(MOD-RCENTER)_45159154.md`
+- 原始手册：`evidence/UNC/20.15.2/删除注册中心-(RMV-RCENTER)_92397653.md`
+- 原始手册：`evidence/UNC/20.15.2/增加注册中心-(ADD-RCENTER)_45318842.md`
+- 原始手册：`evidence/UNC/20.15.2/查询注册中心-(LST-RCENTER)_91958809.md`

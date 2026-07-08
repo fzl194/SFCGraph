@@ -61,4 +61,4 @@ MOD IMSIGT: IMSIPRE="3080107000", GT="86138", MNNAME="noname";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IMSIGT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI-GT对应关系(MOD-IMSIGT)_72225145.md`

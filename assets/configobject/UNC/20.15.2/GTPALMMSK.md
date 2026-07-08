@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPALMMSK.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPALMMSK.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPALMMSK.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPALMMSK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP路径断告警屏蔽记录(MOD-GTPALMMSK)_72345509.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP路径断告警屏蔽记录(RMV-GTPALMMSK)_26305718.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP路径断告警屏蔽记录(ADD-GTPALMMSK)_72225587.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP路径断告警屏蔽记录(LST-GTPALMMSK)_26145910.md`

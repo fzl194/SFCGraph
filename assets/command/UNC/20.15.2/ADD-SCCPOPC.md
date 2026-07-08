@@ -71,4 +71,4 @@ ADD SCCPOPC: OPX=1, NI=INT, OPC="0x55", SPN=IUONLY, OPN="Peking";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCCPOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP本局信令点(ADD-SCCPOPC)_72226009.md`

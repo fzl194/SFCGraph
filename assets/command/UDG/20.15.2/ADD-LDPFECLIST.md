@@ -56,4 +56,4 @@ ADD LDPFECLIST:FECLISTNAME="name1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-LDPFECLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/添加FEC列表（ADD-LDPFECLIST）_00841377.md`

@@ -76,4 +76,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OSPFLSDBSTATEINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF-LSDB的状态信息（DSP-OSPFLSDBSTATEINFO）_50120670.md`

@@ -72,4 +72,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OPR-NSAVLINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/操作网络切片可用性信息（OPR-NSAVLINFO）_09652145.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI-HSS对应关系(MOD-IMSIHSS)_26305266.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI-HSS对应关系(RMV-IMSIHSS)_72225135.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI-HSS对应关系(ADD-IMSIHSS)_26145454.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI-HSS对应关系(LST-IMSIHSS)_72345053.md`

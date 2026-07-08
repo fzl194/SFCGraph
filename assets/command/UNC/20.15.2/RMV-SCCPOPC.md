@@ -64,4 +64,4 @@ RMV SCCPOPC: OPX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCCPOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP本局信令点(RMV-SCCPOPC)_26306142.md`

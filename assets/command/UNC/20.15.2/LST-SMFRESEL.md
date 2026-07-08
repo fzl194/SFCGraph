@@ -96,4 +96,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFRESEL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地SMF重选策略（LST-SMFRESEL）_45495624.md`

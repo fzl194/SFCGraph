@@ -69,4 +69,4 @@ SET NBESM: T3485=188, N3485=5, T3486=188, N3486=5, T3489=184, N3489=5, T3495=188
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NBESM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NB-S1模式SM协议参数（SET-NBESM）_72225455.md`

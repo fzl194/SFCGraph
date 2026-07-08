@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNGY5GREUSEAVP.md`
-- 原始手册：`evidence/UNC/20.15.2/APNGY5GREUSEAVP.md`
-- 原始手册：`evidence/UNC/20.15.2/APNGY5GREUSEAVP.md`
-- 原始手册：`evidence/UNC/20.15.2/APNGY5GREUSEAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于apn的Gy接口重用字段的填写方式（MOD-APNGY5GREUSEAVP）_23622970.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于apn的Gy接口重用字段的填写方式（RMV-APNGY5GREUSEAVP）_23622990.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于apn的Gy接口重用字段的填写方式（ADD-APNGY5GREUSEAVP）_23782718.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于apn的Gy接口重用字段的填写方式（LST-APNGY5GREUSEAVP）_70462533.md`

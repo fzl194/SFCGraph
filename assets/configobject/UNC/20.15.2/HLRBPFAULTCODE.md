@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HLRBPFAULTCODE.md`
-- 原始手册：`evidence/UNC/20.15.2/HLRBPFAULTCODE.md`
-- 原始手册：`evidence/UNC/20.15.2/HLRBPFAULTCODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除HLR-BYPASS故障状态码(RMV-HLRBPFAULTCODE)_04932762.md`
+- 原始手册：`evidence/UNC/20.15.2/增加HLR-BYPASS故障状态码(ADD-HLRBPFAULTCODE)_04923686.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HLR-BYPASS故障状态码(LST-HLRBPFAULTCODE)_54937361.md`

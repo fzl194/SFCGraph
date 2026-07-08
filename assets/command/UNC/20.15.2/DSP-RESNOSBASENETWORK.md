@@ -72,4 +72,4 @@ Base IP地址来源  =  系统内部分配
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-RESNOSBASENETWORK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NOS-Base平面网络信息（DSP-RESNOSBASENETWORK）_15247350.md`

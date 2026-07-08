@@ -57,4 +57,4 @@ RMV APNEDRXATTR: APN="apn1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNEDRXATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN的终端接入eDRX模式属性（RMV-APNEDRXATTR）_32061748.md`

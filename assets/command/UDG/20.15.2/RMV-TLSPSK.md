@@ -51,4 +51,4 @@ RMV TLSPSK: PSKIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TLSPSK.md`
+- 原始手册：`evidence/UDG/20.15.2/删除预共享密钥（RMV-TLSPSK）_57029816.md`

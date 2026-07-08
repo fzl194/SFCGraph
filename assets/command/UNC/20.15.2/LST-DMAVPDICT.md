@@ -72,4 +72,4 @@ RETCODE = 0  执行成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DMAVPDICT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter-AVP表(LST-DMAVPDICT)_26145860.md`

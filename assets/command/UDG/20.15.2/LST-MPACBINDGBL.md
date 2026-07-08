@@ -66,4 +66,4 @@ LST MPACBINDGBL:IPVERSION=IPv6;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MPACBINDGBL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MPAC全局策略（LST-MPACBINDGBL）_00865761.md`

@@ -71,4 +71,4 @@ N3395(times)  =  4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IUSM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式SM协议参数(LST-IUSM)_72345299.md`

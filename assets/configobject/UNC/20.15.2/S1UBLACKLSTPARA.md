@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1UBLACKLSTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/S1UBLACKLSTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1-U黑名单参数(LST-S1UBLACKLSTPARA)_88986582.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1-U黑名单参数(SET-S1UBLACKLSTPARA)_89145434.md`

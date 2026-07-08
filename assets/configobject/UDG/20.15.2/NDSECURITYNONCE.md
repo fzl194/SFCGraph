@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NDSECURITYNONCE.md`
-- 原始手册：`evidence/UDG/20.15.2/NDSECURITYNONCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ND安全随机数（DSP-NDSECURITYNONCE）_49802290.md`
+- 原始手册：`evidence/UDG/20.15.2/清除ND安全随机数（RTR-NDSECURITYNONCE）_00865541.md`

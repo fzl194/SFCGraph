@@ -48,7 +48,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSECPOLICY6.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECPOLICY6.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECPOLICY6.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECPOLICY6.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPsec-IPv6策略（MOD-IPSECPOLICY6）_68200989.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPsec-IPv6策略（RMV-IPSECPOLICY6）_68200999.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPsec-Ipv6策略（ADD-IPSECPOLICY6）_68320981.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPsec-IPv6策略（LST-IPSECPOLICY6）_68200975.md`

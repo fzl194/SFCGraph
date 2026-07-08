@@ -50,4 +50,4 @@ RMV TWAMPSENDER: CLIENTID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TWAMPSENDER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除TWAMP发送端（RMV-TWAMPSENDER）_27262292.md`

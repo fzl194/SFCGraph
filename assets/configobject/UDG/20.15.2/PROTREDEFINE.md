@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PROTREDEFINE.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTREDEFINE.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTREDEFINE.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTREDEFINE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改重定义协议（MOD-PROTREDEFINE）_39393613.md`
+- 原始手册：`evidence/UDG/20.15.2/删除重定义协议（RMV-PROTREDEFINE）_52053412.md`
+- 原始手册：`evidence/UDG/20.15.2/增加重定义协议（ADD-PROTREDEFINE）_52263844.md`
+- 原始手册：`evidence/UDG/20.15.2/查询重定义协议（LST-PROTREDEFINE）_39554397.md`

@@ -53,4 +53,4 @@ RMV PODALMTH: PODTYPE="sfm-pod",THTYPE=CPU;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PODALMTH.md`
+- 原始手册：`evidence/UNC/20.15.2/删除POD资源告警阈值（RMV-PODALMTH）_35442893.md`

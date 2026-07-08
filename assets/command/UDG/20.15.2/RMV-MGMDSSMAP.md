@@ -60,4 +60,4 @@ RMV MGMDSSMAP:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ISSSMMAPINGMASK=TRUE,
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MGMDSSMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IGMP-SSM映射配置（RMV-MGMDSSMAP）_00440893.md`

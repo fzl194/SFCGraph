@@ -53,4 +53,4 @@ RMV QOSDIFFERSERV:DSNAME="d1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-QOSDIFFERSERV.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DS域（RMV-QOSDIFFERSERV）_00866565.md`

@@ -58,4 +58,4 @@ RMV EMGCNUM: MCC="123", NUM="119";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除紧急号码信息表记录(RMV-EMGCNUM)_72345101.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/NFIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/NFIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI号段（RMV-NFIMSI）_09651337.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI号段（ADD-NFIMSI）_09653306.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI号段（LST-NFIMSI）_09651705.md`

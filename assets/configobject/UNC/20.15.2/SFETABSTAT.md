@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFETABSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SFE表项简要信息（DSP-SFETABSTAT）_00840517.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPIPV6PEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPIPV6PEER.md`
+- 原始手册：`evidence/UDG/20.15.2/刷新BGP-IPv6对等体（SYN-BGPIPV6PEER）_49801942.md`
+- 原始手册：`evidence/UDG/20.15.2/复位BGP-IPv6邻居（RBL-BGPIPV6PEER）_50120730.md`

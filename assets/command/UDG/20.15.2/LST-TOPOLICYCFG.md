@@ -55,4 +55,4 @@ LST TOPOLICYCFG:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TOPOLICYCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP优化策略配置（LST-TOPOLICYCFG）_93335773.md`

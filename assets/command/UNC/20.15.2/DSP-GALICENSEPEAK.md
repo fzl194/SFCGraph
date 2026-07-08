@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GALICENSEPEAK.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GA接口话务高峰信息（DSP-GALICENSEPEAK）_81572754.md`

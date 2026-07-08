@@ -121,4 +121,4 @@ LDP建立会话失败后的指数回退的剩余时间（ms）  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-LDPSSMGSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LDP的会话信息（DSP-LDPSSMGSSN）_49802646.md`

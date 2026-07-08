@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMARTDT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTDT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTDT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTDT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于终端类型的DT限制（MOD-SMARTDT）_26305548.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于终端类型的DT限制（RMV-SMARTDT）_72225417.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于终端类型的DT限制(ADD-SMARTDT)_26145738.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于终端类型的DT限制（LST-SMARTDT）_72345339.md`

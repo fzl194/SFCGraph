@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRTNLMSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询WLR组件与TNLM交互的统计信息（DSP-WLRTNLMSTC）_49802026.md`

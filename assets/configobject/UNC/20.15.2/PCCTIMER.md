@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/复位PCC定时器（RST-PCCTIMER）_09897075.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC定时器（LST-PCCTIMER）_96782686.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC定时器（SET-PCCTIMER）_09897082.md`

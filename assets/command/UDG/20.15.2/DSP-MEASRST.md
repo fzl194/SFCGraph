@@ -81,4 +81,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MEASRST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询话统测量结果(DSP-MEASRST)_75539859.md`

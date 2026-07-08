@@ -73,4 +73,4 @@ ADD UDGNRMINTF: INTNAME="pgwusxif", NETYPE=PGWU, EXINTTYPE=PGWUSx, IPV4ADDR1="12
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UDGNRMINTF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加逻辑口（ADD-UDGNRMINTF）_96709875.md`

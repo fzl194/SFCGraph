@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LACID.md`
-- 原始手册：`evidence/UDG/20.15.2/LACID.md`
-- 原始手册：`evidence/UDG/20.15.2/LACID.md`
+- 原始手册：`evidence/UDG/20.15.2/从LAC组内删除一个LAC（RMV-LACID）_82837198.md`
+- 原始手册：`evidence/UDG/20.15.2/在LAC组内添加一个LAC（ADD-LACID）_82837197.md`
+- 原始手册：`evidence/UDG/20.15.2/查看LAC与LAC组的绑定关系（LST-LACID）_82837199.md`

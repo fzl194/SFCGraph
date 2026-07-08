@@ -79,4 +79,4 @@ SCCP子系统表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCCPSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP子系统(LST-SCCPSSN)_72226013.md`

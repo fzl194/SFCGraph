@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PREFIXLIMIT.md`
-- 原始手册：`evidence/UDG/20.15.2/PREFIXLIMIT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询前缀限制（LST-PREFIXLIMIT）_50281698.md`
+- 原始手册：`evidence/UDG/20.15.2/设置前缀限制（SET-PREFIXLIMIT）_49801446.md`

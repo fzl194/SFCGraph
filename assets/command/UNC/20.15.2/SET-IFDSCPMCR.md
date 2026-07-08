@@ -71,4 +71,4 @@ SET IFDSCPMCR: INTFTP_SHOW=Sdup, MSGTP=OTHERS, DSCPV=46;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-IFDSCPMCR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口DSCP配置(SET-IFDSCPMCR)_71850995.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/IFICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/IFICMPSECURITY.md`
-- 原始手册：`evidence/UNC/20.15.2/IFICMPSECURITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接口下ICMP安全配置（MOD-IFICMPSECURITY）_50280786.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口下ICMP安全配置（RMV-IFICMPSECURITY）_49802334.md`
+- 原始手册：`evidence/UNC/20.15.2/新增接口下ICMP安全配置（ADD-IFICMPSECURITY）_00441149.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口下ICMP安全配置（LST-IFICMPSECURITY）_00865849.md`

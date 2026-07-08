@@ -63,4 +63,4 @@ DEL SEGDATA: SEGTYPE=IMSI, NFTYPEIMSI=UDM;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEL-SEGDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除号段数据（DEL-SEGDATA）_09651798.md`

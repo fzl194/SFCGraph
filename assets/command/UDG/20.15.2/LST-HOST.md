@@ -71,4 +71,4 @@ Host配置名称  =  huawei
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HOST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Host（LST-HOST）_82837325.md`

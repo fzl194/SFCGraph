@@ -159,4 +159,4 @@ Command层异常返回码动作为Block时阻塞免费业务  =  通过
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DCCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCC模板（LST-DCCTEMPLATE）_09896933.md`

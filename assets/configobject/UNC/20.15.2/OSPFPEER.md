@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OSPF的NBMA网络邻居路由器配置（MOD-OSPFPEER）_50281610.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPF的NBMA网络邻居路由器配置（ADD-OSPFPEER）_49961046.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF的NBMA网络邻居路由器配置（RMV-OSPFPEER）_50280762.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF的NBMA网络邻居路由器配置（LST-OSPFPEER）_49802650.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF邻居状态（DSP-OSPFPEER）_49802262.md`

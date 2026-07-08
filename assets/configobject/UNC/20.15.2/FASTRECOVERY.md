@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FASTRECOVERY.md`
-- 原始手册：`evidence/UNC/20.15.2/FASTRECOVERY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局业务快速恢复配置（LST-FASTRECOVERY）_31453514.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局业务快速恢复配置（SET-FASTRECOVERY）_31453525.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询容灾信息(DSP-DRINFO)_51012929.md`

@@ -59,4 +59,4 @@ ADD DFSRPAIR: DFSRPAIRID=1, DFSRPAIRMODE=FRER_SRC_MAC;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-DFSRPAIR.md`
+- 原始手册：`evidence/UDG/20.15.2/增加双发选收结对配置（ADD-DFSRPAIR）_26352683.md`

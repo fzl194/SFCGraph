@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRVINSTTYPEREL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务实例与业务类型关系（DSP-SRVINSTTYPEREL）_29627064.md`

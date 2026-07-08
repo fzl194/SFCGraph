@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSETIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSETIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSETIDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF-Set-ID最长匹配后缀转发路由（RMV-NRFSETIDRT）_26878906.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-Set-ID最长匹配后缀转发路由（ADD-NRFSETIDRT）_72598769.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-Set-ID最长匹配后缀转发路由（LST-NRFSETIDRT）_72758681.md`

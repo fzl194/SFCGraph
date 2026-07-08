@@ -101,4 +101,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-TRCFILEDIAG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示跟踪文件可维护性信息（DSP-TRCFILEDIAG）_59103525.md`

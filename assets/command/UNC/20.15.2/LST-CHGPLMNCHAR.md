@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHGPLMNCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PLMN的计费属性参数(LST-CHGPLMNCHAR)_72344991.md`

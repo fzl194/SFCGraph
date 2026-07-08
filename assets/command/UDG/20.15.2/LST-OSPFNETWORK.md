@@ -69,4 +69,4 @@ IP地址  =  192.168.7.0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFNETWORK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF运行的接口及所属区域（LST-OSPFNETWORK）_00841057.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ARPSTATICTABLE.md`
-- 原始手册：`evidence/UDG/20.15.2/ARPSTATICTABLE.md`
-- 原始手册：`evidence/UDG/20.15.2/ARPSTATICTABLE.md`
-- 原始手册：`evidence/UDG/20.15.2/ARPSTATICTABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改静态ARP表项（MOD-ARPSTATICTABLE）_49801794.md`
+- 原始手册：`evidence/UDG/20.15.2/删除静态ARP表项（RMV-ARPSTATICTABLE）_50281478.md`
+- 原始手册：`evidence/UDG/20.15.2/查询静态ARP表项（LST-ARPSTATICTABLE）_00600701.md`
+- 原始手册：`evidence/UDG/20.15.2/配置静态ARP表项（ADD-ARPSTATICTABLE）_00441273.md`

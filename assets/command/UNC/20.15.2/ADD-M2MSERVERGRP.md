@@ -63,4 +63,4 @@ ADD M2MSERVERGRP: GROUPNAME="m2msrvgroup01", SERVERIPTYPE=IPV4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-M2MSERVERGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M服务器组（ADD-M2MSERVERGRP）_73321226.md`

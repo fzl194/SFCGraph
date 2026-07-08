@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REALMBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/REALMBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/REALMBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/REALMBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN与Diameter-Realm关联关系（MOD-REALMBINDAPN）_09897286.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN与Diameter-Realm关联关系（RMV-REALMBINDAPN）_09897287.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN与Diameter-Realm关联关系（ADD-REALMBINDAPN）_09897285.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN与Diameter-Realm关联关系（LST-REALMBINDAPN）_09897288.md`

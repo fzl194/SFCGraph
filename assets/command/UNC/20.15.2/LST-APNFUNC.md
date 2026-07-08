@@ -69,4 +69,4 @@ HUAWEI2.COM  VIP 用户
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI功能配置(LST-APNFUNC)_26305466.md`

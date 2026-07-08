@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BTDRBASICCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/BTDRBASICCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BTDR单据上报参数（LST-BTDRBASICCFG）_19881190.md`
+- 原始手册：`evidence/UDG/20.15.2/设置BTDR单据上报参数（SET-BTDRBASICCFG）_19641398.md`

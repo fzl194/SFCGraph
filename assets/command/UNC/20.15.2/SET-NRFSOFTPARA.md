@@ -84,4 +84,4 @@ SET NRFSOFTPARA: DT=Dw, DWORDNUM=1, DWORDVALUE=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF软参（SET-NRFSOFTPARA）_09653170.md`

@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SAMUTEPROTOCOL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SA-EGN规则不启用协议（LST-SAMUTEPROTOCOL）_74004971.md`

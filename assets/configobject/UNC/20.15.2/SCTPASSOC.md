@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPASSOC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPASSOC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPASSOC.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPASSOC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SCTP耦联信息（DSP-SCTPASSOC）_09897330.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP耦联测量对象（RMV-SCTPASSOC）_09897352.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCTP耦联测量对象（ADD-SCTPASSOC）_09897351.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP耦联测量对象（LST-SCTPASSOC）_09897353.md`

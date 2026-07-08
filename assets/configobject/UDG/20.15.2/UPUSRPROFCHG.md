@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPUSRPROFCHG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPUSRPROFCHG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询User-Profile的计费配置（LST-UPUSRPROFCHG）_35537639.md`
+- 原始手册：`evidence/UDG/20.15.2/设置User-Profile的计费配置（SET-UPUSRPROFCHG）_35339021.md`

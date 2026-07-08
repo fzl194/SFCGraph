@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PRAID.md`
-- 原始手册：`evidence/UNC/20.15.2/PRAID.md`
-- 原始手册：`evidence/UNC/20.15.2/PRAID.md`
-- 原始手册：`evidence/UNC/20.15.2/PRAID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PRA标识(MOD-PRAID)_72345193.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PRA标识(RMV-PRAID)_26305406.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PRA标识(ADD-PRAID)_72225275.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PRA标识(LST-PRAID)_26145596.md`

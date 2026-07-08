@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSERVICELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSERVICELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF实例服务名称（RMV-NRFSERVICELIST）_09651500.md`
+- 原始手册：`evidence/UNC/20.15.2/添加NRF服务名称（ADD-NRFSERVICELIST）_09654440.md`

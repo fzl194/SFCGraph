@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALMRPTMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ALMRPTMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询告警上报模式(LST-ALMRPTMODE)_72225883.md`
+- 原始手册：`evidence/UNC/20.15.2/设置告警上报模式(SET-ALMRPTMODE)_26146204.md`

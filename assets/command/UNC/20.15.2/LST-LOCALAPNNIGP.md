@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCALAPNNIGP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地APNNI组(LST-LOCALAPNNIGP)_80957788.md`

@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMEIFORFD.md`
-- 原始手册：`evidence/UNC/20.15.2/IMEIFORFD.md`
-- 原始手册：`evidence/UNC/20.15.2/IMEIFORFD.md`
-- 原始手册：`evidence/UNC/20.15.2/IMEIFORFD.md`
+- 原始手册：`evidence/UNC/20.15.2/修改强制分离策略(MOD-IMEIFORFD)_26145488.md`
+- 原始手册：`evidence/UNC/20.15.2/删除强制分离策略(RMV-IMEIFORFD)_72345085.md`
+- 原始手册：`evidence/UNC/20.15.2/增加强制分离策略(ADD-IMEIFORFD)_26305298.md`
+- 原始手册：`evidence/UNC/20.15.2/查询强制分离策略(LST-IMEIFORFD)_72225169.md`

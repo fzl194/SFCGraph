@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APPLYORIGIN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP路由信息的路由源设置（LST-APPLYORIGIN）_49802126.md`

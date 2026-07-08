@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BGPPEERAFPRE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP对等体条件路由匹配前缀（LST-BGPPEERAFPRE）_50281574.md`

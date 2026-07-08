@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GRPPFCPSESSINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PFCP的组会话信息（DSP-GRPPFCPSESSINFO）_40039913.md`

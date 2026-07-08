@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LBTRCRDTCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LBTRCRDTCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/LBTRCRDTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除跟踪重定向（RMV-LBTRCRDTCFG）_80435276.md`
+- 原始手册：`evidence/UNC/20.15.2/增加跟踪重定向（ADD-LBTRCRDTCFG）_80435275.md`
+- 原始手册：`evidence/UNC/20.15.2/查询跟踪重定向（LST-LBTRCRDTCFG）_80435274.md`

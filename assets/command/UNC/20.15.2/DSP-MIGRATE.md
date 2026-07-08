@@ -60,4 +60,4 @@ DSP MIGRATE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MIGRATE.md`
+- 原始手册：`evidence/UNC/20.15.2/异构迁移查询（DSP-MIGRATE）_86513705.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYLOCSW.md`
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYLOCSW.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于位置区分配地址的开关（LST-IPALLOCBYLOCSW）_82837161.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于位置区分配地址的开关（SET-IPALLOCBYLOCSW）_82837160.md`

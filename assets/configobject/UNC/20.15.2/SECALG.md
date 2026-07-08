@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECALG.md`
-- 原始手册：`evidence/UNC/20.15.2/SECALG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询安全算法（LST-SECALG）_55386938.md`
+- 原始手册：`evidence/UNC/20.15.2/设置安全算法（SET-SECALG）_01666249.md`

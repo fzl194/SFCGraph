@@ -56,4 +56,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NPWATCHDOG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询喂狗功能相关配置（LST-NPWATCHDOG）_18818230.md`

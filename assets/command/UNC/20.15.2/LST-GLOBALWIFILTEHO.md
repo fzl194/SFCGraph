@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLOBALWIFILTEHO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局E-UTRAN和WLAN互操作控制属性（LST-GLOBALWIFILTEHO）_82122527.md`

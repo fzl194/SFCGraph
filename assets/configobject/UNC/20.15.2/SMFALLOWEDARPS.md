@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFALLOWEDARPS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFALLOWEDARPS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFALLOWEDARPS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFALLOWEDARPS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G用户允许的ARP列表（MOD-SMFALLOWEDARPS）_58800309.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户允许的ARP列表（RMV-SMFALLOWEDARPS）_58840355.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G用户允许的ARP列表（ADD-SMFALLOWEDARPS）_58680351.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户允许的ARP列表（LST-SMFALLOWEDARPS）_13960448.md`

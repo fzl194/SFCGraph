@@ -65,4 +65,4 @@ RTO重发超时的初始值（毫秒）  =  500
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPGLBSCTPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SCTP全局参数（LST-UPGLBSCTPPARA）_45195214.md`

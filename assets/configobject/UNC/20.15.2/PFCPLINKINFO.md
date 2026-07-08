@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PFCPLINKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PFCP链路当前及历史状态（DSP-PFCPLINKINFO）_24796812.md`

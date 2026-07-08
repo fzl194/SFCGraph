@@ -60,4 +60,4 @@ ADD FAULTUPGRP: UPFGRPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-FAULTUPGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N3接口故障UPF组（ADD-FAULTUPGRP）_93702766.md`

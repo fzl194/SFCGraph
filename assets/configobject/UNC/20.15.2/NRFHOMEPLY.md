@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFHOMEPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFHOMEPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF归属地默认策略（LST-NRFHOMEPLY）_71516437.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF归属地默认策略（SET-NRFHOMEPLY）_71436559.md`

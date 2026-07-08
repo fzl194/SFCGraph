@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGCAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NGCAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NGCAUSEMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G原因值映射配置（RMV-NGCAUSEMAP）_19478935.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G原因值映射配置（ADD-NGCAUSEMAP）_19478931.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G原因值映射配置（LST-NGCAUSEMAP）_19478934.md`

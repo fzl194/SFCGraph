@@ -32,8 +32,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFOBJ.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFOBJ.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFOBJ.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFOBJ.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFOBJ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改性能对象信息(MOD-PERFOBJ)_26146188.md`
+- 原始手册：`evidence/UNC/20.15.2/删除性能对象信息(RMV-PERFOBJ)_72345787.md`
+- 原始手册：`evidence/UNC/20.15.2/增加性能对象信息(ADD-PERFOBJ)_26305998.md`
+- 原始手册：`evidence/UNC/20.15.2/显示性能对象信息(DSP-PERFOBJ)_72225867.md`
+- 原始手册：`evidence/UNC/20.15.2/查询性能对象信息(LST-PERFOBJ)_26306000.md`

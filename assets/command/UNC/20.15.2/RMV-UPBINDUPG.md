@@ -69,4 +69,4 @@ RMV UPBINDUPG:USERPROFGNAME="userprofg1",UPREMOVETYPE=USER_PROFILE_NAME,USERPROF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPBINDUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户模板组和用户模板的绑定关系（RMV-UPBINDUPG）_09897231.md`

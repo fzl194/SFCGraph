@@ -74,4 +74,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-RTMPERFCNTLINK.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LINK性能统计实时结果(DSP-RTMPERFCNTLINK)_53163160.md`

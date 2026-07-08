@@ -68,4 +68,4 @@ Shared UPF Preferential Selection Switch in Traffic Distribution  =  INHERIT
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DNAIUPSELPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI粒度的UPF选择策略（LST-DNAIUPSELPLY）_18197841.md`

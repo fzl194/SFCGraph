@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NETWORKINSTVPNMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/NETWORKINSTVPNMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/NETWORKINSTVPNMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除网络实例配置（RMV-NETWORKINSTVPNMAP）_78724937.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网络实例配置（LST-NETWORKINSTVPNMAP）_91144212.md`
+- 原始手册：`evidence/UDG/20.15.2/添加网络实例配置（ADD-NETWORKINSTVPNMAP）_78764775.md`

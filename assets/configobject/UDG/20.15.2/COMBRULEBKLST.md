@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COMBRULEBKLST.md`
-- 原始手册：`evidence/UDG/20.15.2/COMBRULEBKLST.md`
+- 原始手册：`evidence/UDG/20.15.2/显示组合规则黑名单（LST-COMBRULEBKLST）_86530160.md`
+- 原始手册：`evidence/UDG/20.15.2/设置组合规则黑名单（SET-COMBRULEBKLST）_86530161.md`

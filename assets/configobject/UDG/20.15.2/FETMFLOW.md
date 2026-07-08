@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FETMFLOW.md`
-- 原始手册：`evidence/UDG/20.15.2/FETMFLOW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FETM流控配置（LST-FETMFLOW）_59131112.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FETM流控配置（SET-FETMFLOW）_58971168.md`

@@ -59,4 +59,4 @@ LST DFSRPAIRMEM:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DFSRPAIRMEM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询双发选收结对成员配置（LST-DFSRPAIRMEM）_26514781.md`

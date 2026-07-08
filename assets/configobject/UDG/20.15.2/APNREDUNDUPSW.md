@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNREDUNDUPSW.md`
-- 原始手册：`evidence/UDG/20.15.2/APNREDUNDUPSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询指定APN静态地址路由冗余上行报文隧道转发功能开关（LST-APNREDUNDUPSW）_75097450.md`
+- 原始手册：`evidence/UDG/20.15.2/配置APN路由冗余上行报文隧道转发功能开关（SET-APNREDUNDUPSW）_75097449.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFIMSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIMSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIMSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMS-PCF的DNN（RMV-NRFIMSDNN）_96242888.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMS-PCF的DNN（ADD-NRFIMSDNN）_96241770.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMS-PCF的DNN（LST-NRFIMSDNN）_96242306.md`

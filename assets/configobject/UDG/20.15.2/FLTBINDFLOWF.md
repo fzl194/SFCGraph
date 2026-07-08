@@ -34,6 +34,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FLTBINDFLOWF.md`
-- 原始手册：`evidence/UDG/20.15.2/FLTBINDFLOWF.md`
-- 原始手册：`evidence/UDG/20.15.2/FLTBINDFLOWF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除流过滤器的过滤器绑定关系（RMV-FLTBINDFLOWF）_82837367.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流过滤器的过滤器绑定关系（ADD-FLTBINDFLOWF）_82837366.md`
+- 原始手册：`evidence/UDG/20.15.2/查询流过滤器的过滤器绑定关系（LST-FLTBINDFLOWF）_82837368.md`

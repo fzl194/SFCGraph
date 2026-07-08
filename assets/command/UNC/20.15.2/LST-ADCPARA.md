@@ -69,4 +69,4 @@ ADC参数信息
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ADCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ADC参数（LST-ADCPARA）_65997001.md`

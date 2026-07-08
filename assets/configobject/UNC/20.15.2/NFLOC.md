@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFLOC.md`
-- 原始手册：`evidence/UNC/20.15.2/NFLOC.md`
-- 原始手册：`evidence/UNC/20.15.2/NFLOC.md`
-- 原始手册：`evidence/UNC/20.15.2/NFLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改目标NF发现和选择的位置匹配信息（MOD-NFLOC）_09651538.md`
+- 原始手册：`evidence/UNC/20.15.2/删除目标NF发现和选择的位置匹配信息（RMV-NFLOC）_09653223.md`
+- 原始手册：`evidence/UNC/20.15.2/增加目标NF发现和选择的位置匹配信息（ADD-NFLOC）_09652578.md`
+- 原始手册：`evidence/UNC/20.15.2/查询目标NF发现和选择的位置匹配信息（LST-NFLOC）_09653245.md`

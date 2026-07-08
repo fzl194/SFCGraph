@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HEADENPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/HEADENPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/HEADENPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/HEADENPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/修改头增强参数（MOD-HEADENPARA）_09257564.md`
+- 原始手册：`evidence/UDG/20.15.2/删除头增强参数（RMV-HEADENPARA）_13700305.md`
+- 原始手册：`evidence/UDG/20.15.2/增加头增强参数（ADD-HEADENPARA）_09021542.md`
+- 原始手册：`evidence/UDG/20.15.2/查询头增强参数（LST-HEADENPARA）_13496743.md`

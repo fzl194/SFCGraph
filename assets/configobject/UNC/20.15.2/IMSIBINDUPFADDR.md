@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDUPFADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDUPFADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDUPFADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIBINDUPFADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户和UPF地址的绑定关系（MOD-IMSIBINDUPFADDR）_99921812.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户和UPF地址的绑定关系（RMV-IMSIBINDUPFADDR）_99761844.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户和UPF地址的绑定关系（ADD-IMSIBINDUPFADDR）_49962077.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户和UPF的绑定关系（LST-IMSIBINDUPFADDR）_50121885.md`

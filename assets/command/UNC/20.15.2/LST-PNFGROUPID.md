@@ -68,4 +68,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的群组信息（LST-PNFGROUPID）_09652446.md`

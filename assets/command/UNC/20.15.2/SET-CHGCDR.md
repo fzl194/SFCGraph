@@ -93,4 +93,4 @@ SET CHGCDR: ML=SERVED_IMEI-1, HCC=HOTBILLING;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHGCDR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费CDR参数（SET-CHGCDR）_26145372.md`

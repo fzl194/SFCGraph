@@ -64,4 +64,4 @@ MME索引     MME名          MME POOL标识     MME容量权重
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGSMME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGS-MME实体(LST-SGSMME)_46644108.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFFUNCTION.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF功能实例信息（MOD-SMFFUNCTION）_09651658.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF功能实例信息（RMV-SMFFUNCTION）_09651399.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF功能实例信息（LST-SMFFUNCTION）_09653251.md`
+- 原始手册：`evidence/UNC/20.15.2/添加SMF功能实例信息（ADD-SMFFUNCTION）_09653246.md`

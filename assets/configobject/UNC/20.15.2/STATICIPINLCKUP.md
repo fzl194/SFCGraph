@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STATICIPINLCKUP.md`
-- 原始手册：`evidence/UNC/20.15.2/STATICIPINLCKUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态地址段在锁定UPF的用户处理（LST-STATICIPINLCKUP）_99442132.md`
+- 原始手册：`evidence/UNC/20.15.2/设置静态地址段在锁定UPF的用户处理（SET-STATICIPINLCKUP）_49962081.md`

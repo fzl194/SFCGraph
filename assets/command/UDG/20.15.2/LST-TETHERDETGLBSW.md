@@ -66,4 +66,4 @@ Tethering 用户终端数量检测全局开关
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TETHERDETGLBSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Tethering用户终端数量检测全局开关（LST-TETHERDETGLBSW）_82837449.md`

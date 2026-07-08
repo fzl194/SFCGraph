@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MVNONET.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNONET.md`
-- 原始手册：`evidence/UNC/20.15.2/MVNONET.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MVNO网络配置信息(RMV-MVNONET)_26146064.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MVNO网络配置信息(ADD-MVNONET)_72345663.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MVNO网络配置信息(LST-MVNONET)_72225743.md`

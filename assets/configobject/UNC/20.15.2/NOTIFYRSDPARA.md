@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NOTIFYRSDPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NOTIFYRSDPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询状态通知失败重传参数（LST-NOTIFYRSDPARA）_25121190.md`
+- 原始手册：`evidence/UNC/20.15.2/设置状态通知失败重传参数（SET-NOTIFYRSDPARA）_25121212.md`

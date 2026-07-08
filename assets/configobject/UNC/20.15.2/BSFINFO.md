@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BSFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/BSFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/BSFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF信息（RMV-BSFINFO）_09652302.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BSF信息（ADD-BSFINFO）_09653792.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSF信息（LST-BSFINFO）_09653008.md`

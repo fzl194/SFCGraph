@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PMM.md`
-- 原始手册：`evidence/UNC/20.15.2/PMM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式MM协议参数(LST-PMM)_72345123.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Iu模式MM协议参数(SET-PMM)_26305336.md`

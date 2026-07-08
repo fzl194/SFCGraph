@@ -65,4 +65,4 @@ APN MBR 删除承载配置  =  ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNPCRFEMEREATTACH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的MBR删除PCC回滚空闲上下文配置（LST-APNPCRFEMEREATTACH）_09653281.md`

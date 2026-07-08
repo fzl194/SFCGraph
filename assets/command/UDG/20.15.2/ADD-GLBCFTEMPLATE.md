@@ -58,4 +58,4 @@ ADD GLBCFTEMPLATE: CFTEMPLATENAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-GLBCFTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加全局内容过滤模板（ADD-GLBCFTEMPLATE）_50950412.md`

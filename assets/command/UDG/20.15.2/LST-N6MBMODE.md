@@ -66,4 +66,4 @@ N6mb接口数据传输的优选方式  =  unicast
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-N6MBMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询N6mb接口数据传输的优选方式及端口配置（LST-N6MBMODE）_47981249.md`

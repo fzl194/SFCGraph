@@ -67,4 +67,4 @@ RMV SRROUTE:AFTYPE=ipv4unicast,PREFIX="10.0.0.1",MASKLENGTH=32,VRFNAME="_public_
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SRROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv4静态路由（RMV-SRROUTE）_00441041.md`

@@ -82,4 +82,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UP节点协议兼容性配置（LST-UPCMPT）_88377446.md`

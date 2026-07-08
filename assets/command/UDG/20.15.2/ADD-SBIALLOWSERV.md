@@ -57,4 +57,4 @@ ADD SBIALLOWSERV: INDEX=1, SERVICENAME="nnrf-nfm", NFTYPE=NFTypeNRF;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SBIALLOWSERV.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于服务的白名单（ADD-SBIALLOWSERV）_83653652.md`

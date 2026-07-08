@@ -60,4 +60,4 @@ RMV PLGPKG:PLGTYPE="Listening",VERSIONID="V100R020C00SPH153"
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PLGPKG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展包（RMV-PLGPKG）_59103532.md`

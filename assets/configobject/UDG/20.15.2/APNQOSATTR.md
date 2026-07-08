@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNQOSATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/APNQOSATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ApnQosAttr配置（LST-APNQOSATTR）_82837666.md`
+- 原始手册：`evidence/UDG/20.15.2/设置ApnQosAttr配置（SET-APNQOSATTR）_82837665.md`

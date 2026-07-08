@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNNF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPLMNNF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除关口局NF信息（RMV-NRFPLMNNF）_80010524.md`
+- 原始手册：`evidence/UNC/20.15.2/增加关口局NF信息（ADD-NRFPLMNNF）_80010522.md`
+- 原始手册：`evidence/UNC/20.15.2/查询关口局NF信息（LST-NRFPLMNNF）_80329008.md`

@@ -60,4 +60,4 @@ MOD ULCLAREADPMODE:APN="huawei1",DNAI="huawei2",DNAREANAME="dnarea1",ULCLDEPLOYM
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ULCLAREADPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定DNAI服务区域的ULCL部署模式（MOD-ULCLAREADPMODE）_61764781.md`

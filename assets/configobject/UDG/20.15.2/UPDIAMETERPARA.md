@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMETERPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMETERPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter参数（LST-UPDIAMETERPARA）_45432710.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Diameter参数（SET-UPDIAMETERPARA）_97080173.md`

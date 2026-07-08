@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRCHANNELPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/DRCHANNELPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询容灾通道参数(LST-DRCHANNELPARA)_28994702.md`
+- 原始手册：`evidence/UDG/20.15.2/设置容灾通道参数(SET-DRCHANNELPARA)_74954301.md`

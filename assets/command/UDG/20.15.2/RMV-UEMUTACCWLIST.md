@@ -58,4 +58,4 @@ RMV UEMUTACCWLIST: WLISTNAME = "pawlist";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UEMUTACCWLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除PA口UE互访白名单（RMV-UEMUTACCWLIST）_72322910.md`

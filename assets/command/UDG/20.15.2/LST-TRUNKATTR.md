@@ -67,4 +67,4 @@ Sequence Number开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TRUNKATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询宽带集群属性配置（LST-TRUNKATTR）_68962483.md`

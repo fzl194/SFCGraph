@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BACKUPGUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/BACKUPGUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/BACKUPGUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/BACKUPGUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改供备GUAMI信息（MOD-BACKUPGUAMI）_09653090.md`
+- 原始手册：`evidence/UNC/20.15.2/删除供备GUAMI信息（RMV-BACKUPGUAMI）_09653060.md`
+- 原始手册：`evidence/UNC/20.15.2/增加供备GUAMI信息（ADD-BACKUPGUAMI）_09654446.md`
+- 原始手册：`evidence/UNC/20.15.2/查询供备GUAMI信息（LST-BACKUPGUAMI）_09652263.md`

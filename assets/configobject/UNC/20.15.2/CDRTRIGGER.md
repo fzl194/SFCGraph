@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/配置离线计费话单产生开关（SET-CDRTRIGGER）_09896911.md`

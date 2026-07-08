@@ -61,4 +61,4 @@ ADD ADDRPOOLSTAT: POOLSTATNAME="stat1", POOLNAME="pool1", SST=1, SD="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ADDRPOOLSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/增加地址池统计配置（ADD-ADDRPOOLSTAT）_15209021.md`

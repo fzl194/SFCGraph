@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ROAMCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMCHGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于漫游属性的计费接口选择方式（MOD-ROAMCHGMODE）_23622982.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于漫游属性的计费接口选择方式（RMV-ROAMCHGMODE）_70462609.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于漫游属性的计费接口选择方式（ADD-ROAMCHGMODE）_23622918.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于漫游属性的计费接口选择方式（LST-ROAMCHGMODE）_23782774.md`

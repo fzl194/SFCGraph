@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EMMPROCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/EMMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式移动性管理流程控制参数(LST-EMMPROCTRL)_26305330.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1模式移动性管理流程控制参数(SET-EMMPROCTRL)_72225199.md`

@@ -72,4 +72,4 @@ LTE-M接入           不使能                           不使能             
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-POLICYMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询策略接口的选择方式（LST-POLICYMODE）_09652478.md`

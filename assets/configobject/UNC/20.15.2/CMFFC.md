@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CMFFC.md`
-- 原始手册：`evidence/UNC/20.15.2/CMFFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CMF流控参数（LST-CMFFC）_21100212.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CMF流控参数（SET-CMFFC）_68820021.md`

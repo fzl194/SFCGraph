@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ENBGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/ENBGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/ENBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除eNodeB群组成员(RMV-ENBGPMEM)_26305420.md`
+- 原始手册：`evidence/UNC/20.15.2/增加eNodeB群组成员(ADD-ENBGPMEM)_72225289.md`
+- 原始手册：`evidence/UNC/20.15.2/查询eNodeB群组成员(LST-ENBGPMEM)_72345207.md`

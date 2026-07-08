@@ -80,4 +80,4 @@ PERF_STORAGE_DURATION(话统存储时长)                    1天周期         
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PMCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询性能统计配置参数(LST-PMCFG)_11353212.md`

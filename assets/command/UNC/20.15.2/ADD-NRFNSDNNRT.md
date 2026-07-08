@@ -70,4 +70,4 @@ ADD NRFNSDNNRT: DNN="huawei.com", SST=0, SD="000001", NEXTNRFGRPNAME="nrfgroup00
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFNSDNNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN和网络切片路由（ADD-NRFNSDNNRT）_09651810.md`

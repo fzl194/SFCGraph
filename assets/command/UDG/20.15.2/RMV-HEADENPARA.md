@@ -61,4 +61,4 @@ RMV HEADENPARA:HEADERENNAME="headen1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-HEADENPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除头增强参数（RMV-HEADENPARA）_13700305.md`

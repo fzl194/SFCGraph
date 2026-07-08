@@ -59,4 +59,4 @@ RMV DNNTAISSP: DNNNI="huawei.com", MCC="460", MNC="03", BGNTAC="000112";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNNTAISSP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN的TAI和ServingScope映射（RMV-DNNTAISSP）_45881874.md`

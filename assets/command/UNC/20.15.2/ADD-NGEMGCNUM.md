@@ -65,4 +65,4 @@ ADD NGEMGCNUM: MCC="460", ESC=FIREBRIGADE, NUM="119";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGEMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加紧急号码配置信息（ADD-NGEMGCNUM）_09652453.md`

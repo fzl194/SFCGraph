@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HEADENGLBPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询头增强全局参数（LST-HEADENGLBPARA）_82837514.md`

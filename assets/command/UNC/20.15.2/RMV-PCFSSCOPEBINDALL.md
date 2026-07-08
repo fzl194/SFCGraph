@@ -60,4 +60,4 @@ RMV PCFSSCOPEBINDALL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PCFSSCOPEBINDALL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除所有的PCF业务服务区的绑定关系（RMV-PCFSSCOPEBINDALL）_38569369.md`

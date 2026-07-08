@@ -71,4 +71,4 @@ RST AN: RESETTYPE=ResetAll, NGRANNODETYPE=Gnb, PLMNID=12303, GNBTYPE=Gnb, GNBID=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-AN.md`
+- 原始手册：`evidence/UNC/20.15.2/复位AN（RST-AN）_09653159.md`

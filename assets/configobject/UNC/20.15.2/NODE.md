@@ -26,9 +26,9 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NODE.md`
-- 原始手册：`evidence/UNC/20.15.2/NODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询节点信息（LST-NODE）_59103764.md`
+- 原始手册：`evidence/UNC/20.15.2/停止节点（STP-NODE）_45545153.md`
+- 原始手册：`evidence/UNC/20.15.2/启动节点（STR-NODE）_92785240.md`
+- 原始手册：`evidence/UNC/20.15.2/节点复位（RST-NODE）_71765322.md`
+- 原始手册：`evidence/UNC/20.15.2/节点查询（DSP-NODE）_71678755.md`
+- 原始手册：`evidence/UNC/20.15.2/节点重建（REB-NODE）_71765323.md`

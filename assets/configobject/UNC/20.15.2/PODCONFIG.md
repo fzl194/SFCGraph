@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PODCONFIG.md`
-- 原始手册：`evidence/UNC/20.15.2/PODCONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/POD配置查询（DSP-PODCONFIG）_95277150.md`
+- 原始手册：`evidence/UNC/20.15.2/POD配置设置（SET-PODCONFIG）_95117138.md`

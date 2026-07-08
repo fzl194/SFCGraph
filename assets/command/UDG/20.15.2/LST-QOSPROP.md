@@ -79,4 +79,4 @@ QoS属性信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-QOSPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询QoS属性（LST-QOSPROP）_82837652.md`

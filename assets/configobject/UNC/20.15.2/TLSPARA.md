@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TLSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/TLSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/TLSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/TLSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改TLS参数（MOD-TLSPARA）_83972192.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TLS参数（RMV-TLSPARA）_28971849.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TLS参数（ADD-TLSPARA）_84132096.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TLS参数（LST-TLSPARA）_84132104.md`

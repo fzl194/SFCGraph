@@ -30,8 +30,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMRT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMRT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMRT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMRT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter域路由配置(MOD-DMRT)_26146290.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter域路由配置(RMV-DMRT)_72345889.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter域路由配置(ADD-DMRT)_26306100.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter域路由状态(DSP-DMRT)_26306102.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter域路由配置(LST-DMRT)_72225969.md`

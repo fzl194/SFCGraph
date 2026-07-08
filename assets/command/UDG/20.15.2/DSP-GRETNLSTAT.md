@@ -63,4 +63,4 @@ DSP GRETNLSTAT:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-GRETNLSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询GRE隧道数目（DSP-GRETNLSTAT）_00600385.md`

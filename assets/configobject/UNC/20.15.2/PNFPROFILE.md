@@ -42,7 +42,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF实例概述信息（MOD-PNFPROFILE）_09653668.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF实例概述信息（RMV-PNFPROFILE）_09653775.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF实例概述信息（ADD-PNFPROFILE）_09653772.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF实例概述信息（LST-PNFPROFILE）_09651432.md`

@@ -58,4 +58,4 @@ RMV IKEPEER:PEERNAME="peer1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-IKEPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IKE对等体（RMV-IKEPEER）_80910998.md`

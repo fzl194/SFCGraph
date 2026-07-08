@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPGTPUPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/CPGTPUPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTPU参数（LST-CPGTPUPARA）_13800466.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTPU参数（SET-CPGTPUPARA）_13800472.md`

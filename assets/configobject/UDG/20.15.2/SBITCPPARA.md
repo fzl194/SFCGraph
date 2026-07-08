@@ -37,5 +37,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SBITCPPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/SBITCPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SBI接口TCP控制参数（LST-SBITCPPARA）_83972190.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SBI接口TCP控制参数（SET-SBITCPPARA）_83813644.md`

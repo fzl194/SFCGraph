@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TORESMGTCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TORESMGTCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP资源管理配置（LST-TORESMGTCFG）_31139805.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP资源管理配置（SET-TORESMGTCFG）_44249098.md`

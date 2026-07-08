@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS控制配置（LST-QOSCTRL）_09652687.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS控制配置（SET-QOSCTRL）_09653269.md`

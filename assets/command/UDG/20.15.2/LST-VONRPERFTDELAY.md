@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VONRPERFTDELAY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询理想报文的最小时延偏差、固定传输时延（LST-VONRPERFTDELAY）_91295984.md`

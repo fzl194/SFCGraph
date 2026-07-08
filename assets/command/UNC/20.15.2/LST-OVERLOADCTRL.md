@@ -67,4 +67,4 @@ NAS Message Failure Cause  =  INSUFFICIENT_RESOURCES
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OVERLOADCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询过载控制的配置信息（LST-OVERLOADCTRL）_35803152.md`

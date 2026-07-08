@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TRCSMSGTOTALSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询跟踪中心消息统计信息（DSP-TRCSMSGTOTALSTC）_59103938.md`

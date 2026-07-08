@@ -62,4 +62,4 @@ HOSTNAME  =  huawei
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HSSBPOFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询故障状态HSS(LST-HSSBPOFC)_20653489.md`

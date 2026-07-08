@@ -59,4 +59,4 @@ RMV NFROUTINGIND: NFGROUPID="nfgroup001", ROUTINGIND="1000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFROUTINGIND.md`
+- 原始手册：`evidence/UNC/20.15.2/删除选路指示器（RMV-NFROUTINGIND）_09654372.md`

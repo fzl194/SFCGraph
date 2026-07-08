@@ -89,4 +89,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DBUSERINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CSDB使用者信息(DSP-DBUSERINFO)_77661137.md`

@@ -61,4 +61,4 @@ RMV MDTCTX: RMVOPTION=BYIMSI, IMSI="123032201000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MDTCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MDT上下文(RMV-MDTCTX)_26305646.md`

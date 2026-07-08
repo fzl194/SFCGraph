@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSLOGQUEUE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志队列详细信息（DSP-MSSLOGQUEUE）_00440917.md`

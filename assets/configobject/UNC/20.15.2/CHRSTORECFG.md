@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRSTORECFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRSTORECFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR存盘配置(LST-CHRSTORECFG)_72225297.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CHR存盘配置（SET-CHRSTORECFG）_26145616.md`

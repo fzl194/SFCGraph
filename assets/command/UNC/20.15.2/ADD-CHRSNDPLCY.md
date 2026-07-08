@@ -69,4 +69,4 @@ ADD CHRSNDPLCY: TYPE=APNNI, APNNI="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHRSNDPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CHR传输策略(ADD-CHRSNDPLCY)_72345209.md`

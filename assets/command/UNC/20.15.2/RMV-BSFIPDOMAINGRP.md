@@ -52,4 +52,4 @@ RMV BSFIPDOMAINGRP: GRPNAME="ipdomaingroup1", IPDOMAIN="Domain_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-BSFIPDOMAINGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPDOMAIN组（RMV-BSFIPDOMAINGRP）_75822996.md`

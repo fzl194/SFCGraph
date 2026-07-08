@@ -65,4 +65,4 @@ RMV PDPAPN: SUBRANGE=ALL_USER, PDPTYPE=PT_IPV4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PDPAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地APN-NI配置(RMV-PDPAPN)_26145680.md`

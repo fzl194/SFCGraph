@@ -74,4 +74,4 @@ EVS AMR-WB IO     0               0                 0               0           
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VONRMOSFACTOR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MOS计算值的补偿因子（LST-VONRMOSFACTOR）_91056084.md`

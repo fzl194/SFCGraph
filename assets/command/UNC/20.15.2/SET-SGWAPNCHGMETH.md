@@ -70,4 +70,4 @@ SET SGWAPNCHGMETH: APN="aa",OFFLINE=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SGWAPNCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGW-APN计费方式（SET-SGWAPNCHGMETH）_09896992.md`

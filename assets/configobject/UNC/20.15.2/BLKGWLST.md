@@ -24,6 +24,6 @@ SGSN，MME
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BLKGWLST.md`
-- 原始手册：`evidence/UNC/20.15.2/BLKGWLST.md`
-- 原始手册：`evidence/UNC/20.15.2/BLKGWLST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除被禁用网关配置(RMV-BLKGWLST)_72225631.md`
+- 原始手册：`evidence/UNC/20.15.2/增加被禁用网关配置(ADD-BLKGWLST)_26145952.md`
+- 原始手册：`evidence/UNC/20.15.2/查询被禁用网关配置(LST-BLKGWLST)_26305762.md`

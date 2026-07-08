@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PDUSCACT.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUSCACT.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUSCACT.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUSCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PDU异常返回码动作（MOD-PDUSCACT）_09652181.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PDU异常返回码动作（RMV-PDUSCACT）_09652225.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PDU异常返回码动作（ADD-PDUSCACT）_09652165.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDU异常返回码动作（LST-PDUSCACT）_09654180.md`

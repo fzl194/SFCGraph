@@ -67,4 +67,4 @@ RU的ID  操作类型  RU角色  客户端数量  当前汇聚RUID  历史汇聚
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-RUCONVERGENCE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示汇聚RU信息（DSP-RUCONVERGENCE）_83976188.md`

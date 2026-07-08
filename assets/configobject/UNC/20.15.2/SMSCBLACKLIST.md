@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSCBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSC黑名单记录(RMV-SMSCBLACKLIST)_26305536.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSC黑名单记录(ADD-SMSCBLACKLIST)_72225405.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSC黑名单记录(LST-SMSCBLACKLIST)_72345323.md`

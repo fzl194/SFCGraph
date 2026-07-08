@@ -54,4 +54,4 @@ ADD PWDBLACKLIST:FORBIDDENWORD="a";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PWDBLACKLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加密码禁用词（ADD-PWDBLACKLIST）_59036534.md`

@@ -60,4 +60,4 @@ RETCODE = 0 执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSSFNTFYFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询通知流控参数配置（LST-NSSFNTFYFCPARA）_43978183.md`

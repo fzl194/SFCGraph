@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SOFTPARAOFBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/SOFTPARAOFBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询软件参数表比特位(LST-SOFTPARAOFBIT)_26146184.md`
+- 原始手册：`evidence/UNC/20.15.2/设置软件参数表比特位(SET-SOFTPARAOFBIT)_72345783.md`

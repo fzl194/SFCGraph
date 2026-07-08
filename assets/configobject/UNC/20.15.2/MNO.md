@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MNO.md`
-- 原始手册：`evidence/UNC/20.15.2/MNO.md`
-- 原始手册：`evidence/UNC/20.15.2/MNO.md`
-- 原始手册：`evidence/UNC/20.15.2/MNO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MNO配置信息(MOD-MNO)_72225751.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MNO配置信息(RMV-MNO)_26146072.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MNO配置信息(ADD-MNO)_72345671.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MNO配置信息(LST-MNO)_26305882.md`

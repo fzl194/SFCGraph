@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RADIUSNASIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RADIUSNASIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RADIUSNASIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RADIUSNASIP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RADIUS-NAS-IP（MOD-RADIUSNASIP）_09896752.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RADIUS-NAS-IP（RMV-RADIUSNASIP）_09896753.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RADIUS-NAS-IP（ADD-RADIUSNASIP）_09896751.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS-NAS-IP（LST-RADIUSNASIP）_09896754.md`

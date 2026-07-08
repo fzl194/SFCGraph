@@ -56,4 +56,4 @@ RMV ABNTRAFFICDT: APN="apn1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ABNTRAFFICDT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除异常流量检测开关（RMV-ABNTRAFFICDT）_82837037.md`

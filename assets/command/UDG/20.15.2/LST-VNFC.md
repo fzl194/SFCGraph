@@ -67,4 +67,4 @@ yy          CSDB_VNFC        无          NULL         NULL         V100R018C00B
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VNFC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNFC（LST-VNFC）_59036046.md`

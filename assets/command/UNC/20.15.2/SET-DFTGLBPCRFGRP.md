@@ -59,4 +59,4 @@ SET DFTGLBPCRFGRP:PCRFGRPNAME="pcr";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DFTGLBPCRFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局缺省PCRF组（SET-DFTGLBPCRFGRP）_09897113.md`

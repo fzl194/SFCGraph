@@ -68,4 +68,4 @@ MSISDN = NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PUREFWDUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示纯转发用户配置（LST-PUREFWDUSER）_33110040.md`

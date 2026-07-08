@@ -58,4 +58,4 @@ SET BTRUNCFUNC:BTRUNC=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-BTRUNCFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置宽带集群系统扩展功能(SET-BTRUNCFUNC)_41660661.md`

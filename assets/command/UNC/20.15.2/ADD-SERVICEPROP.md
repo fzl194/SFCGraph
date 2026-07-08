@@ -62,4 +62,4 @@ ADD SERVICEPROP:SRVPROPNAME="test",SERVICEID=1,PRIORITY=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SERVICEPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加业务属性（ADD-SERVICEPROP）_09897168.md`

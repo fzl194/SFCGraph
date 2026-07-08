@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOGBUFFER.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Logbuffer中的数据（DSP-LOGBUFFER）_59103460.md`

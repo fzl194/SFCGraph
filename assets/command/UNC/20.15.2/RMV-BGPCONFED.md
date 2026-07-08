@@ -54,4 +54,4 @@ RMV BGPCONFED:CONFEDASNUMBER="65002";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-BGPCONFED.md`
+- 原始手册：`evidence/UNC/20.15.2/删除联盟中自治系统（RMV-BGPCONFED）_50280926.md`

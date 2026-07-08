@@ -61,4 +61,4 @@ CLR MMLCFGDOMAIN: CMDNAME="ADD APN";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-MMLCFGDOMAIN.md`
+- 原始手册：`evidence/UDG/20.15.2/清除绑定域信息（CLR-MMLCFGDOMAIN）_55903167.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTOSCALINGIPPOOL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示自动化配置地址池信息（DSP-AUTOSCALINGIPPOOL）_49961602.md`

@@ -72,4 +72,4 @@ MD5/HMAC-MD5/HMAC-SHA256 密码  =  *****
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFAREAAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF区域认证配置（LST-OSPFAREAAUTH）_49961934.md`

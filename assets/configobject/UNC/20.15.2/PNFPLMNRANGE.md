@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFPLMNRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPLMNRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPLMNRANGE.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPLMNRANGE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的PLMN范围（MOD-PNFPLMNRANGE）_09653187.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的PLMN范围（RMV-PNFPLMNRANGE）_09652099.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的PLMN范围（ADD-PNFPLMNRANGE）_09651357.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的PLMN范围（LST-PNFPLMNRANGE）_09653224.md`

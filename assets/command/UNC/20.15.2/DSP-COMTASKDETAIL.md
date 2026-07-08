@@ -69,4 +69,4 @@ Pod间测量 vsm-pod-6b4c899fc9-6rxzp vusn-pod-0 11     响应     BDRS2APP_7   
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-COMTASKDETAIL.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SDR通信质量检测结果详情（DSP-COMTASKDETAIL）_63673342.md`

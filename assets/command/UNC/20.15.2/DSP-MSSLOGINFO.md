@@ -92,4 +92,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSLOGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询日志详细信息（DSP-MSSLOGINFO）_50121538.md`

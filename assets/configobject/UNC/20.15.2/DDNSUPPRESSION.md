@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNSUPPRESSION.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNSUPPRESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN抑制功能配置（LST-DDNSUPPRESSION）_92846780.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DDN抑制功能（SET-DDNSUPPRESSION）_92686816.md`

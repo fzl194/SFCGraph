@@ -72,4 +72,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NRF实例组成员（ADD-NRFBINDGRP）_09651542.md`

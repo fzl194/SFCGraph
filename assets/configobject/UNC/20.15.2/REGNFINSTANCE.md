@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/REGNFINSTANCE.md`
-- 原始手册：`evidence/UNC/20.15.2/REGNFINSTANCE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF实例（DEL-REGNFINSTANCE）_09651386.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NF实例（DSP-REGNFINSTANCE）_09653688.md`

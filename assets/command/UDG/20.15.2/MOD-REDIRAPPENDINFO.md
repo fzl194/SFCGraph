@@ -88,4 +88,4 @@ MOD REDIRAPPENDINFO: APPENDINFONAME="testredirappendinfo", REQURLFLAG=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-REDIRAPPENDINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改重定向携带信息（MOD-REDIRAPPENDINFO）_82837562.md`

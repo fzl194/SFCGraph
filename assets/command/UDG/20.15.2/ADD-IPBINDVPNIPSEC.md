@@ -66,4 +66,4 @@ ADD IPBINDVPNIPSEC:IFNAME="Loopback1",VRFNAME="vrf1",IPTYPECHECK=Ipv4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IPBINDVPNIPSEC.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口绑定VPN（ADD-IPBINDVPNIPSEC）_80751060.md`

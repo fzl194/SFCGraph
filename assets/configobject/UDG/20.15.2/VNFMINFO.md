@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VNFMINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/VNFMINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VNFM对接信息（MOD-VNFMINFO）_49249944.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNFM对接信息（LST-VNFMINFO）_69516020.md`

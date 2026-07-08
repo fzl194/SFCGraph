@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TORELIABLECFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TORELIABLECFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP可靠性配置（LST-TORELIABLECFG）_31379109.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP可靠性配置（SET-TORELIABLECFG）_31139809.md`

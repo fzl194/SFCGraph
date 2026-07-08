@@ -59,4 +59,4 @@ RMV RADIUSNASIP:APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RADIUSNASIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RADIUS-NAS-IP（RMV-RADIUSNASIP）_09896753.md`

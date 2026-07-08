@@ -64,4 +64,4 @@ ADD MVNO: MVNOID=1, MVNON="aaa", SHORTNAME="a", S5S8TYPE=GTP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MVNO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MVNO配置信息(ADD-MVNO)_72225747.md`

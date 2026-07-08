@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CFGDEBUG.md`
-- 原始手册：`evidence/UNC/20.15.2/CFGDEBUG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CFG诊断日志（DSP-CFGDEBUG）_59104261.md`
+- 原始手册：`evidence/UNC/20.15.2/设置调试配置信息（SET-CFGDEBUG）_83893741.md`

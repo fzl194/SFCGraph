@@ -48,5 +48,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AGFOUTFC.md`
-- 原始手册：`evidence/UNC/20.15.2/AGFOUTFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询出局流控参数（LST-AGFOUTFC）_32847667.md`
+- 原始手册：`evidence/UNC/20.15.2/设置出局流控参数（SET-AGFOUTFC）_87446492.md`

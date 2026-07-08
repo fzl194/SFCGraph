@@ -52,4 +52,4 @@ RTR UPGLBSCTPPARA:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-UPGLBSCTPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复SCTP全局参数（RTR-UPGLBSCTPPARA）_45432724.md`

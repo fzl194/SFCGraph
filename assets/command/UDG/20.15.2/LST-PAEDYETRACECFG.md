@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PAEDYETRACECFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PAE染色流控开关及阈值参数（LST-PAEDYETRACECFG）_20521310.md`

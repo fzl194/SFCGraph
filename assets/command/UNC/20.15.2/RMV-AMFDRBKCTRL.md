@@ -61,4 +61,4 @@ RMV AMFDRBKCTRL: SUBRANGE=ALL_USER, FEATURECOND=DNN_NSSAI, DNN="huawei.com", SST
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMFDRBKCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF热备容灾的控制参数（RMV-AMFDRBKCTRL）_61467250.md`

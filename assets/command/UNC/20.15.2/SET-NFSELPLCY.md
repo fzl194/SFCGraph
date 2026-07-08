@@ -66,4 +66,4 @@ SET NFSELPLCY: TGTNFTYPE=SMF, REQNSSW=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NFSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置目标NF选择策略（SET-NFSELPLCY）_53103373.md`

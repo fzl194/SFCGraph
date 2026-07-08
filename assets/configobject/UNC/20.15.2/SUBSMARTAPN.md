@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUBSMARTAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBSMARTAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBSMARTAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能分流APN-(RMV-SUBSMARTAPN)_33902845.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能分流APN-(ADD-SUBSMARTAPN)_81502368.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能分流APN-(LST-SUBSMARTAPN)_81422784.md`

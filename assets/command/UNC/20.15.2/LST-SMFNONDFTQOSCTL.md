@@ -74,4 +74,4 @@ Mobile Country Code  Mobile Network Code  Control Type  DNN   Maximum Uplink Rat
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFNONDFTQOSCTL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF的非Default-QoS-Flow配置（LST-SMFNONDFTQOSCTL）_58680355.md`

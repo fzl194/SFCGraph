@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIDT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIDT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIDT.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIDT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI-Direct-Tunnel配置(MOD-IMSIDT)_72225727.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI-Direct-Tunnel配置(RMV-IMSIDT)_26146048.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI-Direct-Tunnel配置(ADD-IMSIDT)_72345647.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI-Direct-Tunnel配置(LST-IMSIDT)_26305858.md`

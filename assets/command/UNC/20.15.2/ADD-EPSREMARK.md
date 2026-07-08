@@ -104,4 +104,4 @@ ADD EPSREMARK: QOSPROFILENAME="qosprofile1", QCI=1, ARPPL=15, REMARKTYPE=DSCP, D
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-EPSREMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EPS-QoS到TOS_DSCP的映射规则（ADD-EPSREMARK）_09652275.md`

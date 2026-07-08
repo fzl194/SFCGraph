@@ -114,4 +114,4 @@ BFD会话与接口链路状态绑定标志  =  FALSE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-OSPFV3INTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示OSPFv3接口信息（DSP-OSPFV3INTERFACE）_49802326.md`

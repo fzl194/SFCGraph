@@ -58,4 +58,4 @@ RMV CHGCDPIP: IPT=IPv4, IPV4ADDR="172.22.5.50", PORTBGN=3699, PORTEND=3700;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGCDPIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除计费相关的IP配置参数(RMV-CHGCDPIP)_26145360.md`

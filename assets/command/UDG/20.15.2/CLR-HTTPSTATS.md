@@ -50,4 +50,4 @@ CLR HTTPSTATS: MT= HTTPLINK;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-HTTPSTATS.md`
+- 原始手册：`evidence/UDG/20.15.2/清除HTTP统计信息（CLR-HTTPSTATS）_29291765.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCCBYPASSCODE.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCBYPASSCODE.md`
-- 原始手册：`evidence/UNC/20.15.2/PCCBYPASSCODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCC故障场景维持BYPASS状态码配置（RMV-PCCBYPASSCODE）_18689757.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCC故障场景维持BYPASS状态码配置（ADD-PCCBYPASSCODE）_83249518.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCC故障场景维持BYPASS状态码配置（LST-PCCBYPASSCODE）_83409210.md`

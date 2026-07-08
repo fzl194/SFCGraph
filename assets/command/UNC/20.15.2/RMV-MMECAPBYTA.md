@@ -58,4 +58,4 @@ RMV MMECAPBYTA: MCC="123", MNC="03", TAC="0x200";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MMECAPBYTA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于跟踪区的MME相对权重配置(RMV-MMECAPBYTA)_72225945.md`

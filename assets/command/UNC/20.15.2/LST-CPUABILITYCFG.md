@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CPUABILITYCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询不同CPU类型的能力系数和基础消耗。（LST-CPUABILITYCFG）_24015932.md`

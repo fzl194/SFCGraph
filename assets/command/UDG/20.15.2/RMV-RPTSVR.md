@@ -56,4 +56,4 @@ RMV RPTSVR: RPTSVRNAME="report01";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RPTSVR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除报表服务器（RMV-RPTSVR）_79568180.md`

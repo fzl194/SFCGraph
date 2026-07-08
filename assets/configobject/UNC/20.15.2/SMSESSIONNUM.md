@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSESSIONNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示会话管理的会话上下文数（DSP-SMSESSIONNUM）_09652085.md`

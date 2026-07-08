@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PLYFLUSHSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置集合类型策略刷新开关（SET-PLYFLUSHSWITCH）_57215396.md`

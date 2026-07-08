@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PROTBINDFLOWF.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTBINDFLOWF.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTBINDFLOWF.md`
-- 原始手册：`evidence/UDG/20.15.2/PROTBINDFLOWF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改流过滤器协议绑定关系（MOD-PROTBINDFLOWF）_82837371.md`
+- 原始手册：`evidence/UDG/20.15.2/删除流过滤器协议绑定关系（RMV-PROTBINDFLOWF）_82837372.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流过滤器协议绑定关系（ADD-PROTBINDFLOWF）_82837370.md`
+- 原始手册：`evidence/UDG/20.15.2/查询流过滤器协议绑定关系（LST-PROTBINDFLOWF）_82837373.md`

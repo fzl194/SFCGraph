@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3PREFERENCE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3PREFERENCE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPFv3路由优先级配置（MOD-OSPFV3PREFERENCE）_50280990.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3路由优先级配置（LST-OSPFV3PREFERENCE）_00841493.md`

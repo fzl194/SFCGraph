@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FWSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/FWSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ServiceFabric软参（LST-FWSOFTPARA）_18818229.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ServiceFabric软参（SET-FWSOFTPARA）_18818231.md`

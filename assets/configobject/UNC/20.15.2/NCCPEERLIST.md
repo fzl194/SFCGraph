@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCCPEERLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NETCONFC管理的远端设备的信息（DSP-NCCPEERLIST）_59103577.md`

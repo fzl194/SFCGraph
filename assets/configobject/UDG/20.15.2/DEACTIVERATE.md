@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEACTIVERATE.md`
-- 原始手册：`evidence/UDG/20.15.2/DEACTIVERATE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示去活用户会话的速率（LST-DEACTIVERATE）_82837082.md`
+- 原始手册：`evidence/UDG/20.15.2/配置去活用户会话的速率（SET-DEACTIVERATE）_82837081.md`

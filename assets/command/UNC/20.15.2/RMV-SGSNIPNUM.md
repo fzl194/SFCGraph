@@ -58,4 +58,4 @@ RMV SGSNIPNUM: IPT=IPV4, IPV4="10.10.10.15";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SGSNIPNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGSN控制面IP地址与SGSN号码对应关系(RMV-SGSNIPNUM)_72345405.md`

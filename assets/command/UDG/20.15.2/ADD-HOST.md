@@ -94,4 +94,4 @@ ADD HOST:HOSTNAME="huawei",DOMAINVALUE="www.huawei.com",PRIORITY=100;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-HOST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Host（ADD-HOST）_82837322.md`

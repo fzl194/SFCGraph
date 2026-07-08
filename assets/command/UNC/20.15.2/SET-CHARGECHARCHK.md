@@ -67,4 +67,4 @@ SET CHARGECHARCHK:CHARGECHARCHK=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHARGECHARCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/设置是否检查Serving-Node携带的CC（SET-CHARGECHARCHK）_09896802.md`

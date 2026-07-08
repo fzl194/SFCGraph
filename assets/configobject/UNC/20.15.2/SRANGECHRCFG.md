@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRANGECHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SRANGECHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SRANGECHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SRANGECHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改小范围CHR生成规则（MOD-SRANGECHRCFG）_26145618.md`
+- 原始手册：`evidence/UNC/20.15.2/删除小范围CHR生成规则（RMV-SRANGECHRCFG）_72225299.md`
+- 原始手册：`evidence/UNC/20.15.2/增加小范围CHR生成规则（ADD-SRANGECHRCFG）_72345215.md`
+- 原始手册：`evidence/UNC/20.15.2/查询小范围CHR生成规则（LST-SRANGECHRCFG）_26305430.md`

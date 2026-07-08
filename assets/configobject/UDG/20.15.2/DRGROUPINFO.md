@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRGROUPINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/DRGROUPINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/DRGROUPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除容灾组信息（RMV-DRGROUPINFO）_74554625.md`
+- 原始手册：`evidence/UDG/20.15.2/增加容灾组信息（ADD-DRGROUPINFO）_74675437.md`
+- 原始手册：`evidence/UDG/20.15.2/查询容灾组信息（LST-DRGROUPINFO）_74835153.md`

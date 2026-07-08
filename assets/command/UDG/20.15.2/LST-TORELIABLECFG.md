@@ -70,4 +70,4 @@ TCP流控策略  =  DISABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TORELIABLECFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP可靠性配置（LST-TORELIABLECFG）_31379109.md`

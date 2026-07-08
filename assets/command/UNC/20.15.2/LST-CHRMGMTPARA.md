@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHRMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询关键流程CHR上报管理参数（LST-CHRMGMTPARA）_28868621.md`

@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFIGNDISCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIGNDISCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIGNDISCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF服务发现忽略参数规则（RMV-NRFIGNDISCPARA）_45048573.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF服务发现忽略参数规则（ADD-NRFIGNDISCPARA）_98328634.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF服务发现忽略参数规则（LST-NRFIGNDISCPARA）_44928651.md`

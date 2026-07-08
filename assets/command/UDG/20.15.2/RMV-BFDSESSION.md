@@ -57,4 +57,4 @@ RMV BFDSESSION:SESSNAME="Huawei123";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-BFDSESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BFD会话（RMV-BFDSESSION）_00600649.md`

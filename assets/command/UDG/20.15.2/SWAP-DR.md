@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SWAP-DR.md`
+- 原始手册：`evidence/UDG/20.15.2/容灾实例主备倒换（SWAP-DR）_23235166.md`

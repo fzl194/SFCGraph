@@ -30,8 +30,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路组（MOD-DIAMCONNGRP）_09897262.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter链路组（RMV-DIAMCONNGRP）_09897263.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter链路组（ADD-DIAMCONNGRP）_09897261.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter链路组（LST-DIAMCONNGRP）_09897264.md`
+- 原始手册：`evidence/UNC/20.15.2/重建Diameter链路组（RST-DIAMCONNGRP）_75494513.md`

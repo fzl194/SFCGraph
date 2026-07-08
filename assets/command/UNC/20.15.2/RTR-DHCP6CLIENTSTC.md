@@ -53,4 +53,4 @@ RTR DHCP6CLIENTSTC: IFNAME="Ethernet64/0/4";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-DHCP6CLIENTSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/清除DHCPv6客户端报文统计（RTR-DHCP6CLIENTSTC）_49801542.md`

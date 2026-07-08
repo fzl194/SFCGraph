@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXCEPTIONINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示RU异常信息（DSP-EXCEPTIONINFO）_59104276.md`

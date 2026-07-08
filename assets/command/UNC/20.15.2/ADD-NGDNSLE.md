@@ -62,4 +62,4 @@ ADD NGDNSLE:IPTYPE=IPV4,IPV4="192.168.101.100",LENAME="dnsle01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGDNSLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS本端实体（ADD-NGDNSLE）_25120873.md`

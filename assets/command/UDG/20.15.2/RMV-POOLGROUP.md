@@ -61,4 +61,4 @@ RMV POOLGROUP: POOLGRPNAME="poolgroup1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-POOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除地址池组（RMV-POOLGROUP）_82837140.md`

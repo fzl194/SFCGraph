@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-HPATCH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除热补丁(RMV-HPATCH)_25343986.md`

@@ -70,4 +70,4 @@ MME组识别码  =  A1B3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DCNMEMBER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN成员(LST-DCNMEMBER)_26145832.md`

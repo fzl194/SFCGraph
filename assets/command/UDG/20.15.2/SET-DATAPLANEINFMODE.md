@@ -78,4 +78,4 @@ SET DATAPLANEINFMODE: MODE=Instance;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DATAPLANEINFMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户面接口模式（SET-DATAPLANEINFMODE）_06677620.md`

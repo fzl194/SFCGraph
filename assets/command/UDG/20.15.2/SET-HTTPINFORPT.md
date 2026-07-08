@@ -57,4 +57,4 @@ SET HTTPINFORPT: DYNHDRPTMR=60;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-HTTPINFORPT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HTTP连接信息上报参数（SET-HTTPINFORPT）_29213293.md`

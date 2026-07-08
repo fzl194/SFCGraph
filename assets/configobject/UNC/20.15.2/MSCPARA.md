@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/MSCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/MSCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/MSCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MSC参数(MOD-MSCPARA)_72345579.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MSC参数(RMV-MSCPARA)_26305788.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MSC参数(ADD-MSCPARA)_72225657.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSC参数(LST-MSCPARA)_26145980.md`

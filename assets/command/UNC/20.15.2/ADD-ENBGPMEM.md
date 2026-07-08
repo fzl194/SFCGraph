@@ -66,4 +66,4 @@ ADD ENBGPMEM: ENBGPID=1, ENBTYPE=MACRO_ENODEB, MCC="456", MNC="12", BGNENBID=123
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ENBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加eNodeB群组成员(ADD-ENBGPMEM)_72225289.md`

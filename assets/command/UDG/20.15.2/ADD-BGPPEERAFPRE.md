@@ -66,4 +66,4 @@ ADD BGPPEERAFPRE:VRFNAME="vrf1",AFTYPE=ipv4uni,REMOTEADDRESS="10.2.2.2",DEFAULTR
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-BGPPEERAFPRE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BGP对等体条件路由匹配前缀（ADD-BGPPEERAFPRE）_00600941.md`

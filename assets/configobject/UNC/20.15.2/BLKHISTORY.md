@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BLKHISTORY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSDB-RU闭塞信息（LST-BLKHISTORY）_36508138.md`

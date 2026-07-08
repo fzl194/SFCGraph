@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNFORBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNFORBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示APN锁定状态（DSP-APNFORBYPASS）_29208339.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定存储ByPass场景下的APN（LCK-APNFORBYPASS）_83967246.md`

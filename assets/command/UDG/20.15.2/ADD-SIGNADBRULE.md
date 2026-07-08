@@ -73,4 +73,4 @@ ADD SIGNADBRULE:SIGNADBRULENAME="test_signadbrule",PROTOCOLNAME="facebook_others
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SIGNADBRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加特征库规则配置（ADD-SIGNADBRULE）_25895978.md`

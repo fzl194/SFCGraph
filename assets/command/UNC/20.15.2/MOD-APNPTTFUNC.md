@@ -59,4 +59,4 @@ MOD APNPTTFUNC: APN="HUAWEI.COM",LTEPTTSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNPTTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的一键通功能配置（MOD-APNPTTFUNC）_06399919.md`

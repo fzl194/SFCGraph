@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HIGHRISKPERIOD.md`
-- 原始手册：`evidence/UDG/20.15.2/HIGHRISKPERIOD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询高危时间段提示状态（LST-HIGHRISKPERIOD）_15404818.md`
+- 原始手册：`evidence/UDG/20.15.2/设置高危时间段提示状态（SET-HIGHRISKPERIOD）_15084970.md`

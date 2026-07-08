@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATH.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTP-U路径(DSP-GTPUPATH)_26305650.md`
+- 原始手册：`evidence/UNC/20.15.2/测试GTP-U路径(TST-GTPUPATH)_72225519.md`

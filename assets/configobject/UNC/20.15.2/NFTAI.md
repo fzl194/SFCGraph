@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFTAI.md`
-- 原始手册：`evidence/UNC/20.15.2/NFTAI.md`
-- 原始手册：`evidence/UNC/20.15.2/NFTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF-TAI信息（RMV-NFTAI）_09652202.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-TAI信息（ADD-NFTAI）_09652077.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-TAI信息（LST-NFTAI）_09654437.md`

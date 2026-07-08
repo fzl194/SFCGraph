@@ -61,4 +61,4 @@ ADD ESMLC: ESMLCID=1, PRIORITY=2, ESMLCNAME="ESMLC1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ESMLC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加E-SMLC配置(ADD-ESMLC)_26145800.md`

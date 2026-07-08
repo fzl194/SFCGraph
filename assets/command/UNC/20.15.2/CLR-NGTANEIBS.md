@@ -63,4 +63,4 @@ CLR NGTANEIBS: OPTYPE=ALL, LUT=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-NGTANEIBS.md`
+- 原始手册：`evidence/UNC/20.15.2/清除TA邻接关系（CLR-NGTANEIBS）_96241938.md`

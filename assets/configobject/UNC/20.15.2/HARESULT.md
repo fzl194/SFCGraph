@@ -32,4 +32,4 @@ HA选举是用于从多个同类进程中选举出主进程和备进程的一套
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HARESULT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示HA选举结果(DSP-HARESULT)_72345473.md`

@@ -62,4 +62,4 @@ VLR非短信用户数核查周 期(小时) = 168
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VLRUSRNUMCHECK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR非短信用户数核查扫描参数（LST-VLRUSRNUMCHECK）_54495450.md`

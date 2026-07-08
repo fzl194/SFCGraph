@@ -74,4 +74,4 @@ LCK SECTION:POOLNAME="pool1",SECTIONNUM=0,ISLOCKED=LOCK;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCK-SECTION.md`
+- 原始手册：`evidence/UDG/20.15.2/锁定地址段（LCK-SECTION）_82837117.md`

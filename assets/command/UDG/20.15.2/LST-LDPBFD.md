@@ -68,4 +68,4 @@ BFD For LDP Tunnel的BFD最小接收时间间隔（ms）  =  45
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LDPBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询LDP-BFD配置（LST-LDPBFD）_50281682.md`

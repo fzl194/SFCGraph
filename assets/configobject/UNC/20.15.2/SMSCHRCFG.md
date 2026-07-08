@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSCHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS-CHR单据上报策略（LST-SMSCHRCFG）_53481534.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMS-CHR单据上报策略（SET-SMSCHRCFG）_53801290.md`

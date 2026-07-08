@@ -71,4 +71,4 @@ SET CTXSTARTRATING:USERPROFILENAME="testuserprofilename",CTXRURRGRPNAME1="testct
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CTXSTARTRATING.md`
+- 原始手册：`evidence/UNC/20.15.2/设置给OCS_CHF发送的消息初始携带的计费属性（SET-CTXSTARTRATING）_09897210.md`

@@ -60,4 +60,4 @@ ADD MULTICASTGRP: MCASTGRPNAME="group", MCASTMACADDR="11-11-11-11-11-11";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MULTICASTGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加组播组配置（ADD-MULTICASTGRP）_15669943.md`

@@ -186,4 +186,4 @@ KVBS034PVG01  basicfun3   NUll        1                      1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CMP-LICENSE.md`
+- 原始手册：`evidence/UNC/20.15.2/比较License(CMP-LICENSE)_46941849.md`

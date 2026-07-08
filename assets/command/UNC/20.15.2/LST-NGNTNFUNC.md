@@ -61,4 +61,4 @@ NTN透明模式接入开关  =  YES
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGNTNFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询卫星网络接入管理功能（LST-NGNTNFUNC）_70382325.md`

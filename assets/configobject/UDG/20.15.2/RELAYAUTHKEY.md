@@ -34,8 +34,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYAUTHKEY.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYAUTHKEY.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYAUTHKEY.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYAUTHKEY.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYAUTHKEY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继鉴权密钥（MOD-RELAYAUTHKEY）_94871973.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继鉴权密钥（RMV-RELAYAUTHKEY）_44232382.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继鉴权密钥（ADD-RELAYAUTHKEY）_94632047.md`
+- 原始手册：`evidence/UDG/20.15.2/更新媒体中继鉴权密钥（UPD-RELAYAUTHKEY）_94632049.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继鉴权密钥（LST-RELAYAUTHKEY）_43992600.md`

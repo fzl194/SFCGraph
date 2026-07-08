@@ -65,4 +65,4 @@ SET GLBRLYOTCPCTRL: IPV4MSS=1460;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBRLYOTCPCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/设置媒体中继全局回源TCP控制（SET-GLBRLYOTCPCTRL）_43992608.md`

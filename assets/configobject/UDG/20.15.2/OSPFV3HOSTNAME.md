@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3HOSTNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3HOSTNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3HOSTNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3HOSTNAME.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPFv3主机名配置（MOD-OSPFV3HOSTNAME）_00441445.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPFv3主机名配置（ADD-OSPFV3HOSTNAME）_50280678.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3主机名配置（RMV-OSPFV3HOSTNAME）_49801718.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3主机名配置（LST-OSPFV3HOSTNAME）_49960958.md`

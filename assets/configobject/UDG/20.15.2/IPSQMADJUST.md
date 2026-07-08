@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSQMADJUST.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSQMADJUST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPSQM调整参数（LST-IPSQMADJUST）_08991781.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPSQM调整参数（SET-IPSQMADJUST）_08873215.md`

@@ -73,4 +73,4 @@ tor                       tor
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SUPPFINGERIDEN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SA指纹识别协议（LST-SUPPFINGERIDEN）_39608925.md`

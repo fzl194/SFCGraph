@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PFRESSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询资源状态表(LST-PFRESSTAT)_72225533.md`

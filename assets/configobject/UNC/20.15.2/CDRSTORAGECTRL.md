@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRSTORAGECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRSTORAGECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单存储控制参数（LST-CDRSTORAGECTRL）_09897002.md`
+- 原始手册：`evidence/UNC/20.15.2/设置话单存储控制参数（SET-CDRSTORAGECTRL）_09897001.md`

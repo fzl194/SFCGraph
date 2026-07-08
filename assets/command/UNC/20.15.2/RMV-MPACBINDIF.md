@@ -54,4 +54,4 @@ RMV MPACBINDIF:IFNAME="Ethernet64/0/3",IPVERSION=IPv4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MPACBINDIF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MPAC接口策略（RMV-MPACBINDIF）_50281062.md`

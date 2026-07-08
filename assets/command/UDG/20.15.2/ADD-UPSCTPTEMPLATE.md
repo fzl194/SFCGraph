@@ -63,4 +63,4 @@ ADD UPSCTPTEMPLATE: SCTPTEMPLNAME="sctp_tp1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UPSCTPTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加SCTP模板（ADD-UPSCTPTEMPLATE）_45432720.md`

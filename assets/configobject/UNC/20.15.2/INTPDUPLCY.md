@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INTPDUPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/INTPDUPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/INTPDUPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/INTPDUPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改异网漫游PDU会话重建策略（MOD-INTPDUPLCY）_63626149.md`
+- 原始手册：`evidence/UNC/20.15.2/删除异网漫游PDU会话重建策略（RMV-INTPDUPLCY）_15146278.md`
+- 原始手册：`evidence/UNC/20.15.2/增加异网漫游PDU会话重建策略（ADD-INTPDUPLCY）_15306282.md`
+- 原始手册：`evidence/UNC/20.15.2/查询异网漫游PDU会话重建策略（LST-INTPDUPLCY）_63346301.md`

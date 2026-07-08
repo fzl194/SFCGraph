@@ -58,4 +58,4 @@ RMV EPSSUBQOS: SUBQOSINDEX=123;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EPSSUBQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EPS签约QoS配置（RMV-EPSSUBQOS）_09653729.md`

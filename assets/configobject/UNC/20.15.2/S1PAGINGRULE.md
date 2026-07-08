@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1寻呼规则(MOD-S1PAGINGRULE)_26146248.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1寻呼规则(RMV-S1PAGINGRULE)_72345847.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1寻呼规则(ADD-S1PAGINGRULE)_26306058.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1寻呼规则(LST-S1PAGINGRULE)_72225927.md`

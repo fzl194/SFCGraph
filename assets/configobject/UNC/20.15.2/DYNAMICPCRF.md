@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DYNAMICPCRF.md`
-- 原始手册：`evidence/UNC/20.15.2/DYNAMICPCRF.md`
+- 原始手册：`evidence/UNC/20.15.2/显示动态PCRF（DSP-DYNAMICPCRF）_09897124.md`
+- 原始手册：`evidence/UNC/20.15.2/清除动态PCRF（CLR-DYNAMICPCRF）_09897123.md`

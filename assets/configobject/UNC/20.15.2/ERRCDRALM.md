@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ERRCDRALM.md`
-- 原始手册：`evidence/UNC/20.15.2/ERRCDRALM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询错误话单告警参数（LST-ERRCDRALM）_51174332.md`
+- 原始手册：`evidence/UNC/20.15.2/设置错误话单告警参数（SET-ERRCDRALM）_51174331.md`

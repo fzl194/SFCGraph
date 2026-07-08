@@ -60,4 +60,4 @@ SET APNDROPFINALPKT: APN="net", SWITCH=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNDROPFINALPKT.md`
+- 原始手册：`evidence/UDG/20.15.2/配置指定APN配额耗尽末包动作（SET-APNDROPFINALPKT）_94212265.md`

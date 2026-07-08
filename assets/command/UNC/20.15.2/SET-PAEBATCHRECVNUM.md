@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PAEBATCHRECVNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE批量收包的数量（SET-PAEBATCHRECVNUM）_35145969.md`

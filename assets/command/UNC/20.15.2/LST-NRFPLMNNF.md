@@ -67,4 +67,4 @@ NF实例标识  =  123e4567-e89b-12d3-a456-426655440000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFPLMNNF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询关口局NF信息（LST-NRFPLMNNF）_80329008.md`

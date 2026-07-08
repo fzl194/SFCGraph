@@ -62,4 +62,4 @@ RMV IMSIMSISDNSEG:SEGMENTNAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMSIMSISDNSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI和MSISDN号段（RMV-IMSIMSISDNSEG）_09897130.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFINSTRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFINSTRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFINSTRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFINSTRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NF实例路由（MOD-NRFINSTRT）_09653796.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF实例路由（RMV-NRFINSTRT）_09651410.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF实例路由（ADD-NRFINSTRT）_09654393.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF实例路由（LST-NRFINSTRT）_09651348.md`

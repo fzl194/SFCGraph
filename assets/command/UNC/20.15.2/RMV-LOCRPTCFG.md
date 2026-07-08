@@ -66,4 +66,4 @@ RMV LOCRPTCFG: RANGE=SPECIFIC_GGSN/P-GW, IPT=IPV4, GWIPV4="10.10.10.10", MASKV4=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCRPTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置上报配置信息(RMV-LOCRPTCFG)_72345537.md`

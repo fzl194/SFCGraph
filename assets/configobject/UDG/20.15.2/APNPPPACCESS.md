@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNPPPACCESS.md`
-- 原始手册：`evidence/UDG/20.15.2/APNPPPACCESS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN-PPP配置（LST-APNPPPACCESS）_35373548.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-PPP配置（SET-APNPPPACCESS）_35373547.md`

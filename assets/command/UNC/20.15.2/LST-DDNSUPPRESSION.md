@@ -65,4 +65,4 @@ DDN抑制功能开关  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DDNSUPPRESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN抑制功能配置（LST-DDNSUPPRESSION）_92846780.md`

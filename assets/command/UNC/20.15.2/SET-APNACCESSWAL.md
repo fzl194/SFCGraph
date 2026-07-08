@@ -63,4 +63,4 @@ SET APNACCESSWAL:APN="huawei.com",WALNUMBER=300;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-APNACCESSWAL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN接入速率（SET-APNACCESSWAL）_09652087.md`

@@ -62,4 +62,4 @@ ADD ACLDEFAULT:DIRECTION=UPIN,ACLNAME="testacl1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ACLDEFAULT.md`
+- 原始手册：`evidence/UDG/20.15.2/增加缺省Acl绑定（ADD-ACLDEFAULT）_82837739.md`

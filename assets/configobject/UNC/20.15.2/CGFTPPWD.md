@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CGFTPPWD.md`
+- 原始手册：`evidence/UNC/20.15.2/更新CG-FTP密码（UPL-CGFTPPWD）_81288845.md`

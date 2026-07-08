@@ -59,4 +59,4 @@ RMV SUBGP: SUBID=30;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SUBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户群(RMV-SUBGP)_26305372.md`

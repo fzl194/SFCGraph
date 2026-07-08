@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PLGPKG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询加载的扩展包（LST-PLGPKG）_59103370.md`

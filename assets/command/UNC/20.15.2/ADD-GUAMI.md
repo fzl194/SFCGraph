@@ -68,4 +68,4 @@ ADD GUAMI: INDEX=0, PLMNIDX=0, AMFREGIONID="88", AMFSETID="366", AMFPOINTER="11"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF全局标识（ADD-GUAMI）_09653726.md`

@@ -30,5 +30,5 @@ GB OVER IP自动配置功能开启后再关闭有可能影响业务。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GB.md`
-- 原始手册：`evidence/UNC/20.15.2/GB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb通用信息(LST-GB)_26305816.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb通用信息(SET-GB)_72225685.md`

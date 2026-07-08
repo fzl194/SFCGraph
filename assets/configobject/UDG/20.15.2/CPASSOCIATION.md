@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CPASSOCIATION.md`
-- 原始手册：`evidence/UDG/20.15.2/CPASSOCIATION.md`
-- 原始手册：`evidence/UDG/20.15.2/CPASSOCIATION.md`
+- 原始手册：`evidence/UDG/20.15.2/删除CP（RMV-CPASSOCIATION）_19141524.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CP配置（LST-CPASSOCIATION）_19141525.md`
+- 原始手册：`evidence/UDG/20.15.2/添加CP（ADD-CPASSOCIATION）_19141523.md`

@@ -66,4 +66,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ALMNRMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网管北向告警上报模式（LST-ALMNRMODE）_39656853.md`

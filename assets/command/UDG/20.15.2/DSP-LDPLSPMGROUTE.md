@@ -87,4 +87,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LDPLSPMGROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP-LSP管理组件的路由信息（DSP-LDPLSPMGROUTE）_49802442.md`

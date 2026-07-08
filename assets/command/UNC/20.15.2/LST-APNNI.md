@@ -70,4 +70,4 @@ APNNI组号  =  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNNI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI(LST-APNNI)_26145698.md`

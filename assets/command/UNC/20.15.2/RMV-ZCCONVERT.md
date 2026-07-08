@@ -61,4 +61,4 @@ RMV ZCCONVERT: SUBRANGE=HOME_USER, NOID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ZCCONVERT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域码转换策略(RMV-ZCCONVERT)_26145568.md`

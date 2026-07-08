@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNNGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN群组（RMV-DNNGRP）_64343905.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN群组（ADD-DNNGRP）_64343822.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN群组（LST-DNNGRP）_64343883.md`

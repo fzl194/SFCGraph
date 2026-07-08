@@ -56,4 +56,4 @@ SYN BGPIPV6PEER:AFTYPE=ipv6uni,DIRECTION=import;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYN-BGPIPV6PEER.md`
+- 原始手册：`evidence/UNC/20.15.2/刷新BGP-IPv6对等体（SYN-BGPIPV6PEER）_49801942.md`

@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IPALLOCBYUPFSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于UPF的地址分配开关（LST-IPALLOCBYUPFSW）_49644922.md`

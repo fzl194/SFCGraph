@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SIGDSCP.md`
-- 原始手册：`evidence/UDG/20.15.2/SIGDSCP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询信令报文DSCP值（LST-SIGDSCP）_82837691.md`
+- 原始手册：`evidence/UDG/20.15.2/设置信令报文DSCP值（SET-SIGDSCP）_82837690.md`

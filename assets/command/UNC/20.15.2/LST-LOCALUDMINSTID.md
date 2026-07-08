@@ -66,4 +66,4 @@ UDM实例标识  =  udm_instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCALUDMINSTID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本省UDM实例标识（LST-LOCALUDMINSTID）_14059353.md`

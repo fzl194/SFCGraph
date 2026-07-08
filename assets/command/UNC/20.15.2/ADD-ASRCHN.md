@@ -76,4 +76,4 @@ ADD ASRCHN: LOCALIP1="192.168.1.1", LOCALIP2="192.168.1.2", PEERIP1="192.168.1.3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ASRCHN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾业务通道配置(ADD-ASRCHN)_26305936.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ARPANTISPOOFING.md`
-- 原始手册：`evidence/UNC/20.15.2/ARPANTISPOOFING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ARP防欺骗信息（LST-ARPANTISPOOFING）_00440441.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ARP防欺骗信息（SET-ARPANTISPOOFING）_50121098.md`

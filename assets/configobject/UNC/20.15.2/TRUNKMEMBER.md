@@ -24,7 +24,7 @@ Trunk是一种捆绑技术。将多个物理接口捆绑成一个逻辑接口，
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TRUNKMEMBER.md`
-- 原始手册：`evidence/UNC/20.15.2/TRUNKMEMBER.md`
-- 原始手册：`evidence/UNC/20.15.2/TRUNKMEMBER.md`
-- 原始手册：`evidence/UNC/20.15.2/TRUNKMEMBER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Trunk成员接口（RMV-TRUNKMEMBER）_49962066.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Trunk成员接口（ADD-TRUNKMEMBER）_50121754.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Trunk成员接口信息（DSP-TRUNKMEMBER）_50121638.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Trunk成员接口信息（LST-TRUNKMEMBER）_49802114.md`

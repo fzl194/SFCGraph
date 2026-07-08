@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PWDBLACKLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/PWDBLACKLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/PWDBLACKLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除密码禁用词（RMV-PWDBLACKLIST）_59036566.md`
+- 原始手册：`evidence/UDG/20.15.2/增加密码禁用词（ADD-PWDBLACKLIST）_59036534.md`
+- 原始手册：`evidence/UDG/20.15.2/查询密码禁用词（LST-PWDBLACKLIST）_59036662.md`

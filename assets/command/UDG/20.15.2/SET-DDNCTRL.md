@@ -67,4 +67,4 @@ SET DDNCTRL: PKTTYPE=TCPSIG, SWITCH=ENABLE, ACTION=DROP;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DDNCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DDN报文策略（SET-DDNCTRL）_82837183.md`

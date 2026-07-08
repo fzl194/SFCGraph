@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CRACTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/CRACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CRA控制参数（LST-CRACTRL）_09897045.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CRA控制参数（SET-CRACTRL）_09897044.md`

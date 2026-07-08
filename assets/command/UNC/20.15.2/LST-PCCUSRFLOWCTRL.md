@@ -56,4 +56,4 @@ LST PCCUSRFLOWCTRL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCUSRFLOWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流控策略（LST-PCCUSRFLOWCTRL）_11712042.md`

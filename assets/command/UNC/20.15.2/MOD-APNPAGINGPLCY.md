@@ -57,4 +57,4 @@ MOD APNPAGINGPLCY: APNNI="huawei.com", PAGINGPRIORITY=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN寻呼策略参数配置(MOD-APNPAGINGPLCY)_26305520.md`

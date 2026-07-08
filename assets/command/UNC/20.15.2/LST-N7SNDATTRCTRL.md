@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N7SNDATTRCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N7发送信元处理控制（LST-N7SNDATTRCTRL）_96242211.md`

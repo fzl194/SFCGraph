@@ -62,4 +62,4 @@ SCTP  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LNKCTRLLOG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询链路控制消息日志开关(LST-LNKCTRLLOG)_13287832.md`

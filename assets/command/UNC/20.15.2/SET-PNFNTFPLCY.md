@@ -89,4 +89,4 @@ SET PNFNTFPLCY: NFTYPE=NfSMF, NTFTIME=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PNFNTFPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置对端网元的通知抑制时间（SET-PNFNTFPLCY）_96243197.md`

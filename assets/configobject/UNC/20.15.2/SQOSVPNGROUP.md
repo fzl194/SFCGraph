@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SQOSVPNGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSVPNGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/SQOSVPNGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除VPN组（RMV-SQOSVPNGROUP）_00440585.md`
+- 原始手册：`evidence/UNC/20.15.2/增加VPN组（ADD-SQOSVPNGROUP）_00600349.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VPN组（LST-SQOSVPNGROUP）_50280654.md`

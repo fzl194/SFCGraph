@@ -61,4 +61,4 @@ MOD S1ALGPRIORITY: ALGTYPE=INTE, ALGINTE=EIA1, ALGPRI=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-S1ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式加密和完整性算法优先级配置信息(MOD-S1ALGPRIORITY)_26145652.md`

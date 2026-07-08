@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话管理扩展功能(LST-SMFUNC)_72225363.md`
+- 原始手册：`evidence/UNC/20.15.2/设置会话管理扩展功能(SET-SMFUNC)_26145684.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NWDAFINFOEXT.md`
-- 原始手册：`evidence/UNC/20.15.2/NWDAFINFOEXT.md`
-- 原始手册：`evidence/UNC/20.15.2/NWDAFINFOEXT.md`
-- 原始手册：`evidence/UNC/20.15.2/NWDAFINFOEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NWDAF扩展信息（MOD-NWDAFINFOEXT）_14059365.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NWDAF扩展信息（RMV-NWDAFINFOEXT）_14059373.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NWDAF扩展信息（ADD-NWDAFINFOEXT）_77579548.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NWDAF扩展信息（LST-NWDAFINFOEXT）_14059357.md`

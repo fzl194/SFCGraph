@@ -39,5 +39,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEPARAMS.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEPARAMS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PAE参数（LST-PAEPARAMS）_52213925.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE参数（SET-PAEPARAMS）_05415160.md`

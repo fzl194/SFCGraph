@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DBSTARTPARAS.md`
-- 原始手册：`evidence/UDG/20.15.2/DBSTARTPARAS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DB启动参数值(LST-DBSTARTPARAS)_01330005.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DB启动参数值(SET-DBSTARTPARAS)_51449964.md`

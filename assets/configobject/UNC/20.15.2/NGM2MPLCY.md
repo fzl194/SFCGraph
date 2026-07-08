@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGM2MPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGM2MPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGM2MPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGM2MPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-M2M策略参数（MOD-NGM2MPLCY）_34732060.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-M2M策略参数（RMV-NGM2MPLCY）_84812261.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-M2M策略参数（ADD-NGM2MPLCY）_85251937.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-M2M策略参数（LST-NGM2MPLCY）_34412860.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPDATAFLOWCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/CPDATAFLOWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CP-Data流控参数(LST-CPDATAFLOWCTRL)_26146170.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CP-Data流控参数(SET-CPDATAFLOWCTRL)_72345769.md`

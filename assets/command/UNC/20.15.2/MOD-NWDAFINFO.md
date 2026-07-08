@@ -51,4 +51,4 @@ MOD NWDAFINFO: INSTANCENAME="nwdaf_Instance_1", NWDAFEVENTS=QOS_ANALYSIS-1&QOS_E
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NWDAFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NWDAF信息（MOD-NWDAFINFO）_70382357.md`

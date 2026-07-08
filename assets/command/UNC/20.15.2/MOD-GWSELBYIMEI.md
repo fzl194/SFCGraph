@@ -61,4 +61,4 @@ MOD GWSELBYIMEI: IMEIGPID=1, LABEL="CAT6";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GWSELBYIMEI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于IMEI选择GGSN_P-GW配置(MOD-GWSELBYIMEI)_72225621.md`

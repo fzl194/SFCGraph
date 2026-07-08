@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMEIGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/IMEIGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/IMEIGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/IMEIGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMEI群组成员(MOD-IMEIGPMEM)_72345359.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMEI群组成员(RMV-IMEIGPMEM)_26145760.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMEI群组成员(ADD-IMEIGPMEM)_26305568.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMEI群组成员(LST-IMEIGPMEM)_72225439.md`

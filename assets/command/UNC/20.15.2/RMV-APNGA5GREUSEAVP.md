@@ -57,4 +57,4 @@ RMV APNGA5GREUSEAVP: APN="APN1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNGA5GREUSEAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于apn的Ga接口重用字段的填写方式（RMV-APNGA5GREUSEAVP）_23782806.md`

@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PUREFWDUSER.md`
-- 原始手册：`evidence/UDG/20.15.2/PUREFWDUSER.md`
-- 原始手册：`evidence/UDG/20.15.2/PUREFWDUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除纯转发用户配置（RMV-PUREFWDUSER）_20788153.md`
+- 原始手册：`evidence/UDG/20.15.2/显示纯转发用户配置（LST-PUREFWDUSER）_33110040.md`
+- 原始手册：`evidence/UDG/20.15.2/设置指定用户进行纯转发（ADD-PUREFWDUSER）_33458112.md`

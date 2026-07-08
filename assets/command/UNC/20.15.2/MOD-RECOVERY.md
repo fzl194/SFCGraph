@@ -65,4 +65,4 @@ MOD RECOVERY: RECOVERYVALUE=9;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-RECOVERY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本端重启次数(MOD-RECOVERY)_72225609.md`

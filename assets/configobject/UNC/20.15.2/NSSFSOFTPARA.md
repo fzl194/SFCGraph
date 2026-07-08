@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF软参（LST-NSSFSOFTPARA）_09652179.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSSF软参（SET-NSSFSOFTPARA）_09652450.md`

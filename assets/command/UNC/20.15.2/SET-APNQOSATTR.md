@@ -66,4 +66,4 @@ SET APNQOSATTR:APN="huawei.com",BWCTRL=DISABLE,HASQOSPROFILE=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-APNQOSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置指定APN的QoS属性配置信息（SET-APNQOSATTR）_09651825.md`

@@ -62,4 +62,4 @@ SET PAECHECKTHD: RESTYPE=PBUF, TRIGTHD=60, RESUMTHD=30;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PAECHECKTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE寻呼反压流控检测阈值(SET-PAECHECKTHD)_13751952.md`

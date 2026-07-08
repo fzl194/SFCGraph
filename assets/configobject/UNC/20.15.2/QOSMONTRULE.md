@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSMONTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSMONTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSMONTRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSMONTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QoS监测规则（MOD-QOSMONTRULE）_81398993.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS监测规则（RMV-QOSMONTRULE）_81558913.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QoS监测规则（ADD-QOSMONTRULE）_35599380.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS监测规则（LST-QOSMONTRULE）_35599382.md`

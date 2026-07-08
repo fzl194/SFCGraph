@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGDNSS.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSS.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSS.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS服务器（MOD-NGDNSS）_25121198.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS服务器（RMV-NGDNSS）_25121204.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS服务器（ADD-NGDNSS）_25120874.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS服务器（LST-NGDNSS）_25120888.md`

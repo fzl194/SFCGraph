@@ -69,4 +69,4 @@ S5-P/GN接口  2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPCINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C接口信息（LST-GTPCINTF）_09652563.md`

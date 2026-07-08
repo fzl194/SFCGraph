@@ -75,4 +75,4 @@ IP前缀过滤策略名称  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFFILTERPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF过滤策略配置（LST-OSPFFILTERPOLICY）_50121662.md`

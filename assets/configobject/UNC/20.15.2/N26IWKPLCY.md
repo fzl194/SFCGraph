@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N26IWKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N26IWKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N26IWKPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/N26IWKPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改EPS与5GS互操作本地策略(MOD-N26IWKPLCY)_72345735.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EPS与5GS互操作本地策略(RMV-N26IWKPLCY)_26146136.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EPS与5GS互操作本地策略(ADD-N26IWKPLCY)_26305944.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS与5GS互操作本地策略(LST-N26IWKPLCY)_72225815.md`

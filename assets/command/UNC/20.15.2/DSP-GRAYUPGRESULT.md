@@ -124,4 +124,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GRAYUPGRESULT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示灰度升级结果(DSP-GRAYUPGRESULT)_72225881.md`

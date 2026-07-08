@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSACTRDRNHP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSACTRDRNHP.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSACTRDRNHP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QoS重定向下一跳信息（RMV-QOSACTRDRNHP）_49961646.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QoS重定向下一跳信息（ADD-QOSACTRDRNHP）_00865777.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS重定向下一跳信息（LST-QOSACTRDRNHP）_49802450.md`

@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLOBALIMS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局IMS互通配置信息（LST-GLOBALIMS）_09654168.md`

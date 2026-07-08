@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DFTGBRBEARER.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTGBRBEARER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缺省GBR承载参数（LST-DFTGBRBEARER）_09897062.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缺省GBR承载参数（SET-DFTGBRBEARER）_09897061.md`

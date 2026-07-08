@@ -64,4 +64,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CONNECT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网元长连接信息（LST-CONNECT）_81901697.md`

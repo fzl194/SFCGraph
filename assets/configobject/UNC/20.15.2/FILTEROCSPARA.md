@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FILTEROCSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/FILTEROCSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/FILTEROCSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/FILTEROCSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改需要过滤掉的OCS实例信息（MOD-FILTEROCSPARA）_96242569.md`
+- 原始手册：`evidence/UNC/20.15.2/删除需要过滤掉的OCS实例信息（RMV-FILTEROCSPARA）_96242777.md`
+- 原始手册：`evidence/UNC/20.15.2/增加需要过滤掉的OCS实例信息（ADD-FILTEROCSPARA）_96241662.md`
+- 原始手册：`evidence/UNC/20.15.2/查询需要过滤掉的OCS实例信息（LST-FILTEROCSPARA）_96242144.md`

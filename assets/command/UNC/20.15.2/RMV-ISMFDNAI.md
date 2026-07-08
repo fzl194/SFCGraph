@@ -56,4 +56,4 @@ RMV ISMFDNAI: DNAI="huawei.com.dnai";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ISMFDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除I-SMF支持的DNAI（RMV-ISMFDNAI）_47600749.md`

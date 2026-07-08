@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNREFPOOLGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示APN和地址池组映射关系（LST-APNREFPOOLGRP）_06054821.md`

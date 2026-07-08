@@ -55,4 +55,4 @@ RTR PAEQUEUE:CELLTYPE="aa", CELLINSTANCE="bb";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-PAEQUEUE.md`
+- 原始手册：`evidence/UNC/20.15.2/清除PAE队列统计信息（RTR-PAEQUEUE）_92520044.md`

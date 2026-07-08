@@ -72,4 +72,4 @@ TAI组与TAI号段绑定关系
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TAIGROUPBINDING.md`
+- 原始手册：`evidence/UDG/20.15.2/查看TAI组绑定的TAC号段（LST-TAIGROUPBINDING）_26089117.md`

@@ -69,4 +69,4 @@ UPF实例名称  =  upf_instance_1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UEDNSUPFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF和DNS关联的UPF组的绑定关系（LST-UEDNSUPFBINDGRP）_96242511.md`

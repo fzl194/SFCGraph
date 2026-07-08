@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAEDYETRACEINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE染色跟踪信息（DSP-PAEDYETRACEINFO）_20679418.md`

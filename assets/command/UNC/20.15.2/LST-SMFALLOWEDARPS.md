@@ -68,4 +68,4 @@ ARP Priority Level  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFALLOWEDARPS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户允许的ARP列表（LST-SMFALLOWEDARPS）_13960448.md`

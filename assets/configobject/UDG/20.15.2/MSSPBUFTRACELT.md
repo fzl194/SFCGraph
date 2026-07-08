@@ -35,5 +35,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSPBUFTRACELT.md`
-- 原始手册：`evidence/UDG/20.15.2/MSSPBUFTRACELT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PBUF轨迹开关状态和持续时间（LST-MSSPBUFTRACELT）_61621989.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PBUF轨迹开关和持续时间（SET-MSSPBUFTRACELT）_45801325.md`

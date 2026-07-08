@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G寻呼策略控制表（LST-NGPAGINGCTRL）_09653141.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G寻呼策略控制表（SET-NGPAGINGCTRL）_09652258.md`

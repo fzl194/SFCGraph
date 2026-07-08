@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CHGDATASTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/CHGDATASTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示计费数据统计信息（DSP-CHGDATASTAT）_75387238.md`
+- 原始手册：`evidence/UDG/20.15.2/清除计费数据统计信息（CLR-CHGDATASTAT）_75626870.md`

@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABRICSUBHEALTHYLINK.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Fabric平面亚健康链路信息（DSP-FABRICSUBHEALTHYLINK）_70609581.md`

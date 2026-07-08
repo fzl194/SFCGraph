@@ -77,4 +77,4 @@ MOD MVNORES: MVNOID=1, GMSNUM=4000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-MVNORES.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MVNO资源配置信息(MOD-MVNORES)_72225745.md`

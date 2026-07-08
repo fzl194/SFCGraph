@@ -53,4 +53,4 @@ RMV ACLRULEADV6:ACLNAME="3000",ACLRULENAME="rule_6";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ACLRULEADV6.md`
+- 原始手册：`evidence/UDG/20.15.2/删除高级IPv6-ACL规则（RMV-ACLRULEADV6）_50281570.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTALST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTALST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTALST.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTALST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G跟踪区列表（MOD-NGTALST）_09652580.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G跟踪区列表（RMV-NGTALST）_09652473.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G跟踪区列表（ADD-NGTALST）_09651355.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G跟踪区列表（LST-NGTALST）_09651772.md`

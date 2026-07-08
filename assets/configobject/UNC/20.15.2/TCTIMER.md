@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TCTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/TCTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TC定时器（LST-TCTIMER）_09897237.md`
+- 原始手册：`evidence/UNC/20.15.2/设置TC定时器（SET-TCTIMER）_09897236.md`

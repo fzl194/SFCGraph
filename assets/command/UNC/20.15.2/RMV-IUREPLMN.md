@@ -58,4 +58,4 @@ RMV IUREPLMN: MCC="460", MNC="05";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IUREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除3G重定向PLMN(RMV-IUREPLMN)_19455573.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPIMSIMSSEG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPIMSIMSSEG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPIMSIMSSEG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPIMSIMSSEG.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IMSI和MSISDN号段（MOD-UPIMSIMSSEG）_87041552.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IMSI和MSISDN号段（RMV-UPIMSIMSSEG）_85042561.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IMSI和MSISDN号段（ADD-UPIMSIMSSEG）_86322306.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IMSI和MSISDN号段（LST-UPIMSIMSSEG）_86561854.md`

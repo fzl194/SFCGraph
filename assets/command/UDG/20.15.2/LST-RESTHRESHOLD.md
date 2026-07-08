@@ -74,4 +74,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RESTHRESHOLD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询资源过载和过载恢复阈值（LST-RESTHRESHOLD）_59037454.md`

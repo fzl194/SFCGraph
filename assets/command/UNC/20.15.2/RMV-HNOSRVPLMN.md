@@ -58,4 +58,4 @@ RMV HNOSRVPLMN: NOID=0, MCC="123", MNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-HNOSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除归属网络Serving-PLMN信息(RMV-HNOSRVPLMN)_26146056.md`

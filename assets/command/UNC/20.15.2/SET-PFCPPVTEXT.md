@@ -92,4 +92,4 @@ SET PFCPPVTEXT: FEATURE=QER_TYPE, SWITCH=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PFCPPVTEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PFCP私有信元携带配置（SET-PFCPPVTEXT）_11712045.md`

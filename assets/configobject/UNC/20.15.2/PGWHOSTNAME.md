@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PGWHOSTNAME.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWHOSTNAME.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWHOSTNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/删除逻辑接口的PGW主机名（RMV-PGWHOSTNAME）_64343908.md`
+- 原始手册：`evidence/UNC/20.15.2/增加逻辑接口的PGW主机名（ADD-PGWHOSTNAME）_64343865.md`
+- 原始手册：`evidence/UNC/20.15.2/查询逻辑接口的PGW主机名（LST-PGWHOSTNAME）_64343889.md`

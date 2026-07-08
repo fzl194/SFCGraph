@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUCONNPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/IUCONNPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu连接控制参数(LST-IUCONNPARA)_72225195.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Iu连接控制参数(SET-IUCONNPARA)_26145514.md`

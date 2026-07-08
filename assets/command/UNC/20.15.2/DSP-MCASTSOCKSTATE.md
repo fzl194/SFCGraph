@@ -74,4 +74,4 @@ Socket组件CID  =  0x80650080
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MCASTSOCKSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询组播Socket信息（DSP-MCASTSOCKSTATE）_00840577.md`

@@ -91,4 +91,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SRROUTE6.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IPv6静态路由表（DSP-SRROUTE6）_00840897.md`

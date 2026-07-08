@@ -87,4 +87,4 @@ ADD IKEPEER:PEERNAME="peer1",EXCHANGEMODE=Main;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IKEPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IKE对等体（ADD-IKEPEER）_80592498.md`

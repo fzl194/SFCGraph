@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FWSOFTPARABITS.md`
-- 原始手册：`evidence/UDG/20.15.2/FWSOFTPARABITS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ServiceFabric软参比特位（LST-FWSOFTPARABITS）_37780471.md`
+- 原始手册：`evidence/UDG/20.15.2/设置软件参数比特位（SET-FWSOFTPARABITS）_37580503.md`

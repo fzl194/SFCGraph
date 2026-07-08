@@ -62,4 +62,4 @@ RMV H2SRVPLMN: HMCC="123", HMNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-H2SRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Home-PLMN到Serving-PLMN的对应关系（RMV-H2SRVPLMN）_48604326.md`

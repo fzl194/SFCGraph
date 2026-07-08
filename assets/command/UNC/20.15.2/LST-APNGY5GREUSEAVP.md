@@ -80,4 +80,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNGY5GREUSEAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于apn的Gy接口重用字段的填写方式（LST-APNGY5GREUSEAVP）_70462533.md`

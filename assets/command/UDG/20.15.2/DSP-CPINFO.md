@@ -95,4 +95,4 @@ ALL CPInfo Number = 16
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示CP信息（DSP-CPINFO）_82837261.md`

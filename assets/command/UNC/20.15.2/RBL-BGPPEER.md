@@ -61,4 +61,4 @@ RBL BGPPEER: VRFNAME="_public_", AFTYPE=ipv4uni;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RBL-BGPPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/复位BGP邻居（RBL-BGPPEER）_49802162.md`

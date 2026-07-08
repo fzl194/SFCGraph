@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFREGIDSETIDREL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFREGIDSETIDREL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFREGIDSETIDREL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFREGIDSETIDREL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF区域标识和集合标识的关联关系（MOD-NRFREGIDSETIDREL）_10484607.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF区域标识和集合标识的关联关系（RMV-NRFREGIDSETIDREL）_09651341.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF区域标识和集合标识的关联关系（ADD-NRFREGIDSETIDREL）_09654410.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF区域标识和集合标识的关联关系（LST-NRFREGIDSETIDREL）_09652661.md`

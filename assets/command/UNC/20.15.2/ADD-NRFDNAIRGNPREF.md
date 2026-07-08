@@ -59,4 +59,4 @@ ADD NRFDNAIRGNPREF: DNN="ims", DNAI="huawei.com", PREFERRULE="01-02:03-04";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFDNAIRGNPREF.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI区域优选规则（ADD-NRFDNAIRGNPREF）_43780673.md`

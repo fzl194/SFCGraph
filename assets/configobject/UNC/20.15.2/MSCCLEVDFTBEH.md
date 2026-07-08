@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSCCLEVDFTBEH.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DCC模板MSCC层缺省返回码动作（SET-MSCCLEVDFTBEH）_09896929.md`

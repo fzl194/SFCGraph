@@ -61,4 +61,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-COMBASEHEALTH.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Base平面的亚健康检测参数（SET-COMBASEHEALTH）_32217476.md`

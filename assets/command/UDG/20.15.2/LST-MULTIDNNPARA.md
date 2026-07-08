@@ -76,4 +76,4 @@ Check Interval for the Campus Resource Threshold  =  240
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MULTIDNNPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示MultiDNN参数（LST-MULTIDNNPARA）_70853530.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SELECTCHFGBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTCHFGBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTCHFGBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTCHFGBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于CC选择CHF处理（MOD-SELECTCHFGBYCC）_09651411.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于CC选择CHF处理（RMV-SELECTCHFGBYCC）_09652362.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于CC选择CHF处理（ADD-SELECTCHFGBYCC）_09652118.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于CC选择CHF处理（LST-SELECTCHFGBYCC）_09653040.md`

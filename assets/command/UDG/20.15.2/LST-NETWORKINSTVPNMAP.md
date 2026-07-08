@@ -68,4 +68,4 @@ IPv6 VPN实例名 = NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NETWORKINSTVPNMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网络实例配置（LST-NETWORKINSTVPNMAP）_91144212.md`

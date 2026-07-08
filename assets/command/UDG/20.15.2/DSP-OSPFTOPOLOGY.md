@@ -73,4 +73,4 @@ SPF节点标识  =  10.10.10.1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OSPFTOPOLOGY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF拓扑信息（DSP-OSPFTOPOLOGY）_50280618.md`

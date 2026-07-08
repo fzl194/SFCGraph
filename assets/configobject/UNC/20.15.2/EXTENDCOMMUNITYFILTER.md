@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXTENDCOMMUNITYFILTER.md`
-- 原始手册：`evidence/UNC/20.15.2/EXTENDCOMMUNITYFILTER.md`
-- 原始手册：`evidence/UNC/20.15.2/EXTENDCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除扩展团体属性过滤器（RMV-EXTENDCOMMUNITYFILTER）_00440601.md`
+- 原始手册：`evidence/UNC/20.15.2/增加扩展团体属性过滤器（ADD-EXTENDCOMMUNITYFILTER）_50121094.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩展团体属性过滤器（LST-EXTENDCOMMUNITYFILTER）_00840777.md`

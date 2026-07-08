@@ -79,4 +79,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MASKALM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询被屏蔽告警（LST-MASKALM）_92275050.md`

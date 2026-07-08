@@ -74,4 +74,4 @@ MD5/HMAC-MD5/HMAC-SHA256 密码  =  *****
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFINTERFACEAUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF接口认证配置（LST-OSPFINTERFACEAUTH）_00600817.md`

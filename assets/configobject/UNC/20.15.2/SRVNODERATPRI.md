@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVNODERATPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNODERATPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询获取RAT-Type的优先级（LST-SRVNODERATPRI）_09651736.md`
+- 原始手册：`evidence/UNC/20.15.2/设置获取RAT-Type的优先级（SET-SRVNODERATPRI）_09652385.md`

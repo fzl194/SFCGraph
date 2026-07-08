@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POOLALMPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLALMPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地地址池使用率告警参数（LST-POOLALMPARA）_37497449.md`
+- 原始手册：`evidence/UNC/20.15.2/设置本地地址池使用率告警参数（SET-POOLALMPARA）_92057522.md`

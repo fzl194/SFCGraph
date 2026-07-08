@@ -66,4 +66,4 @@ SET R8QoSMAP: QCI=1, TC=CC, MAXSDU=1, DO=ORDER, RBER=E_RESIDUAL_BIT_ERR_RATIO_2,
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-R8QOSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置EPS-QoS参数到Pre-R8-QoS参数映射规则（SET-R8QOSMAP）_26146234.md`

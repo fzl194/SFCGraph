@@ -70,4 +70,4 @@ SET TETHERDETGLBSW: SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-TETHERDETGLBSW.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Tethering用户终端数量检测全局开关（SET-TETHERDETGLBSW）_82837448.md`

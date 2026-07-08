@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFPROUTPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFPROUTPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFPROUTPRIORITY.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFPROUTPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OSPF路由的收敛优先级配置（MOD-OSPFPROUTPRIORITY）_49961162.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPF路由的收敛优先级配置（ADD-OSPFPROUTPRIORITY）_50121666.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPF路由的收敛优先级配置（RMV-OSPFPROUTPRIORITY）_49802618.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF路由的收敛优先级配置（LST-OSPFPROUTPRIORITY）_49961102.md`

@@ -59,4 +59,4 @@ MOD HNOINFO: NOID=128, SGSNN="321";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-HNOINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改归属网络信息(MOD-HNOINFO)_26146054.md`

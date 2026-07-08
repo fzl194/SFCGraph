@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN性能统计对象（RMV-PERFDNN）_64670741.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN性能统计对象（ADD-PERFDNN）_64471317.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN性能统计对象（LST-PERFDNN）_11791866.md`

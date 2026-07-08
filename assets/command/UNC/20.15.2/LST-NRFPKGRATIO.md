@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFPKGRATIO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF内外包长比例（LST-NRFPKGRATIO）_88248948.md`

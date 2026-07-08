@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMRPF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PIM-RPF路由信息（DSP-PIMRPF）_50280706.md`

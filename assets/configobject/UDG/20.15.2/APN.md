@@ -41,8 +41,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APN.md`
-- 原始手册：`evidence/UDG/20.15.2/APN.md`
-- 原始手册：`evidence/UDG/20.15.2/APN.md`
-- 原始手册：`evidence/UDG/20.15.2/APN.md`
-- 原始手册：`evidence/UDG/20.15.2/APN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改APN配置（MOD-APN）_86526458.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN配置（RMV-APN）_86526622.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN配置（LST-APN）_82837017.md`
+- 原始手册：`evidence/UDG/20.15.2/添加APN配置（ADD-APN）_82837014.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN锁定配置（LCK-APN）_82837018.md`

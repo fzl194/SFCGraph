@@ -63,4 +63,4 @@ FEI通告IFM端口UP事件的时间  =  2017-08-22 14:23:17.647
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-FEINOTIFYIFMIFUPTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询FEI通告IFM端口UP事件的时间（DSP-FEINOTIFYIFMIFUPTIME）_50121674.md`

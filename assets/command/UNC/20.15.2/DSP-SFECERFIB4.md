@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SFECERFIB4.md`
+- 原始手册：`evidence/UNC/20.15.2/显示指定IPv4的FIB表（DSP-SFECERFIB4）_00601261.md`

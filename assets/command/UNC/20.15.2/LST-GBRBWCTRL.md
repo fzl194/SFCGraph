@@ -64,4 +64,4 @@ LST GBRBWCTRL:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GBRBWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GBR承载带宽速率控制配置（LST-GBRBWCTRL）_87680056.md`

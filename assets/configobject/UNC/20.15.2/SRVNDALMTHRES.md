@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVNDALMTHRES.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVNDALMTHRES.md`
+- 原始手册：`evidence/UNC/20.15.2/查询业务节点资源不足告警阈值（LST-SRVNDALMTHRES）_09897340.md`
+- 原始手册：`evidence/UNC/20.15.2/设置业务节点资源不足告警阈值（SET-SRVNDALMTHRES）_09897339.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSSVR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RADIUS服务器（MOD-RDSSVR）_09896757.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RADIUS服务器（RMV-RDSSVR）_09896758.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RADIUS服务器（ADD-RDSSVR）_09896756.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS服务器（LST-RDSSVR）_09896759.md`

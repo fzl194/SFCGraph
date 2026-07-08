@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INTELAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/INTELAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/INTELAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除可按携带智能分流关键词进行处理的APN（RMV-INTELAPN）_87360200.md`
+- 原始手册：`evidence/UNC/20.15.2/增加可按携带智能分流关键词进行处理的APN（ADD-INTELAPN）_87680052.md`
+- 原始手册：`evidence/UNC/20.15.2/查询可按携带智能分流关键词进行处理的APN（LST-INTELAPN）_40119809.md`

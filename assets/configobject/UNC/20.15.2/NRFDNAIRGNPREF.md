@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDNAIRGNPREF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNAIRGNPREF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNAIRGNPREF.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDNAIRGNPREF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNAI区域优选规则（MOD-NRFDNAIRGNPREF）_43420805.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI区域优选规则（RMV-NRFDNAIRGNPREF）_43540613.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI区域优选规则（ADD-NRFDNAIRGNPREF）_43780673.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI区域优选规则（LST-NRFDNAIRGNPREF）_43660777.md`

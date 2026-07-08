@@ -67,4 +67,4 @@ SET MSSRULE:ENABLE=TRUE,RULEID=1,OFFSETTYPE=ufp-pkt-ctrl,OFFSET=0,PATTERN="FFFF"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MSSRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置匹配规则（SET-MSSRULE）_00865565.md`

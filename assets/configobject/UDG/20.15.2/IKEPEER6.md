@@ -39,7 +39,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IKEPEER6.md`
-- 原始手册：`evidence/UDG/20.15.2/IKEPEER6.md`
-- 原始手册：`evidence/UDG/20.15.2/IKEPEER6.md`
-- 原始手册：`evidence/UDG/20.15.2/IKEPEER6.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv6-IKE对等体（MOD-IKEPEER6）_21521242.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-IKE对等体（RMV-IKEPEER6）_21521252.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6-IKE对等体（ADD-IKEPEER6）_21361306.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-IKE对等体（LST-IKEPEER6）_21521230.md`

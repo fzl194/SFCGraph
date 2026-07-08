@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFSOFTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF软参（LST-SMFSOFTPARA）_09652535.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF软参（SET-SMFSOFTPARA）_09653002.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HSFNTIME.md`
-- 原始手册：`evidence/UNC/20.15.2/HSFNTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询H-SFN参考时间(LST-HSFNTIME)_72345371.md`
+- 原始手册：`evidence/UNC/20.15.2/设置H-SFN参考时间(SET-HSFNTIME)_26305580.md`

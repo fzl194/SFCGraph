@@ -62,4 +62,4 @@ RMV IULOCRPT: AREA=RA, MCC="111", MNC="222", LAC="0x3333", RAC="0x44";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IULOCRPT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu模式实时小区位置订阅(RMV-IULOCRPT)_26305386.md`

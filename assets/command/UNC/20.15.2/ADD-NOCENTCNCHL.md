@@ -59,4 +59,4 @@ ADD NOCENTCNCHL: RUID=64, CHLNAME="00/ABNORMAL";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NOCENTCNCHL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RU通道过滤规则（ADD-NOCENTCNCHL）_83816556.md`

@@ -60,4 +60,4 @@ PAE批收数量  =  批收数224
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PAEBATCHRECVNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE批量收包的数量（LST-PAEBATCHRECVNUM）_35145965.md`

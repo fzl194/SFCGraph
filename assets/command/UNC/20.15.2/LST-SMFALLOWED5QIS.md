@@ -69,4 +69,4 @@ Start value of the 5QI range  =  3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFALLOWED5QIS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户允许的5QI列表（LST-SMFALLOWED5QIS）_59000291.md`

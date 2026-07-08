@@ -60,4 +60,4 @@ RMV NGCONNECTPLMN: NOID=0, MCC="123", MNC="45";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGCONNECTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-Connect-PLMN（RMV-NGCONNECTPLMN）_09653618.md`

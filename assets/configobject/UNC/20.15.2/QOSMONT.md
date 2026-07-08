@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSMONT.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSMONT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS监测配置（LST-QOSMONT）_81558911.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS监测配置（SET-QOSMONT）_81398995.md`

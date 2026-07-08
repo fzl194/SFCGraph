@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXEMPTSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/EXEMPTSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/EXEMPTSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除豁免业务（RMV-EXEMPTSERVICE）_35439600.md`
+- 原始手册：`evidence/UNC/20.15.2/增加豁免业务（ADD-EXEMPTSERVICE）_81558909.md`
+- 原始手册：`evidence/UNC/20.15.2/查询豁免业务（LST-EXEMPTSERVICE）_81398991.md`

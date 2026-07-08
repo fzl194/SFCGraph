@@ -87,4 +87,4 @@ RETCODE = 0  执行成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GMM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式MM协议参数(LST-GMM)_26145524.md`

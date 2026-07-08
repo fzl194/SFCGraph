@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABDIAGPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/FABDIAGPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Pod-Fabric平面亚健康诊断参数（LST-FABDIAGPARA）_48150373.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Pod-Fabric平面亚健康诊断参数（SET-FABDIAGPARA）_48110865.md`

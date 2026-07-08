@@ -81,4 +81,4 @@ E-UTRAN Cell Identifier转换策略 = 默认策略
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PROXYSMFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询proxy-SMF控制（LST-PROXYSMFCTRL）_91923233.md`

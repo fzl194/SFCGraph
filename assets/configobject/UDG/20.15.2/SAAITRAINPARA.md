@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SAAITRAINPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/SAAITRAINPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于SA的Intelligence训练参数（LST-SAAITRAINPARA）_69640518.md`
+- 原始手册：`evidence/UDG/20.15.2/配置基于SA的Intelligence训练参数（SET-SAAITRAINPARA）_55639713.md`

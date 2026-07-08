@@ -58,4 +58,4 @@ MOD APNNIDT: APNNI="huawei.com", DT=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNNIDT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APNNI-Direct-Tunnel配置(MOD-APNNIDT)_72225725.md`

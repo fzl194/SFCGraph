@@ -58,4 +58,4 @@ RMV UPIMSIMSSEG:SEGMENTNAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPIMSIMSSEG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IMSI和MSISDN号段（RMV-UPIMSIMSSEG）_85042561.md`

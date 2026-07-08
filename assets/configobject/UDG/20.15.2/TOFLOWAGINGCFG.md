@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOFLOWAGINGCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TOFLOWAGINGCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP流老化功能配置（LST-TOFLOWAGINGCFG）_44038784.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP流老化功能配置（SET-TOFLOWAGINGCFG）_31379101.md`

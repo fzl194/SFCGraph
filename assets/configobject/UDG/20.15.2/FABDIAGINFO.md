@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABDIAGINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Fabric平面亚健康诊断结果（DSP-FABDIAGINFO）_48150369.md`

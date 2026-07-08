@@ -53,4 +53,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NODEREPSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/节点查询自动修复开关（LST-NODEREPSWITCH）_72291814.md`

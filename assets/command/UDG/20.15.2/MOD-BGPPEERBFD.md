@@ -65,4 +65,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-BGPPEERBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BGP对等体BFD检测（MOD-BGPPEERBFD）_00865705.md`

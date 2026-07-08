@@ -69,4 +69,4 @@ huawei.com  非5G终端4G接入      不使能                           Npcf接
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNPOLICYMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的策略接口的选择方式（LST-APNPOLICYMODE）_96242078.md`

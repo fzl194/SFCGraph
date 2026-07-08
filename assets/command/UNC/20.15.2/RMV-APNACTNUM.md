@@ -56,4 +56,4 @@ RMV APNACTNUM: APNNI="HUAWEI";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNACTNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN激活数目限制(RMV-APNACTNUM)_72225337.md`

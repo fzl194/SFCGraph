@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QCICONV.md`
-- 原始手册：`evidence/UNC/20.15.2/QCICONV.md`
-- 原始手册：`evidence/UNC/20.15.2/QCICONV.md`
-- 原始手册：`evidence/UNC/20.15.2/QCICONV.md`
+- 原始手册：`evidence/UNC/20.15.2/修改扩展QCI转换关系(MOD-QCICONV)_72345813.md`
+- 原始手册：`evidence/UNC/20.15.2/删除扩展QCI转换关系(RMV-QCICONV)_26146214.md`
+- 原始手册：`evidence/UNC/20.15.2/增加扩展QCI转换关系(ADD-QCICONV)_26306024.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩展QCI转换关系(LST-QCICONV)_72225893.md`

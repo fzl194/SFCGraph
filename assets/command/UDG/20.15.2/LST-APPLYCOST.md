@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APPLYCOST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由开销值设置（LST-APPLYCOST）_50281586.md`

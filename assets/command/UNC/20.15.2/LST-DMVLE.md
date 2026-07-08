@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DMVLE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter虚拟本地实体(LST-DMVLE)_72345897.md`

@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBPCCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局PCC参数（LST-GLBPCCPARA）_09897032.md`

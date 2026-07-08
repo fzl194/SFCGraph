@@ -70,4 +70,4 @@ MOD QBCPDUTRIGGER: CCTMPLTNAME="test", ULCHG=DEFERRED;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-QBCPDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QBC计费PDU会话级的trigger参数（MOD-QBCPDUTRIGGER）_09652270.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/VNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询虚拟节点信息（LST-VNODE）_59037562.md`
+- 原始手册：`evidence/UDG/20.15.2/重启虚拟节点（RST-VNODE）_59037037.md`

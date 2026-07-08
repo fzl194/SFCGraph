@@ -59,4 +59,4 @@ SET WLRPAESTATE:ISENABLENTF = TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-WLRPAESTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置无线路由PAE使能状态（SET-WLRPAESTATE）_49801786.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DBUPGSTAGE.md`
-- 原始手册：`evidence/UNC/20.15.2/DBUPGSTAGE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSDB灰度升级阶段(LST-DBUPGSTAGE)_33083965.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSDB灰度升级阶段(SET-DBUPGSTAGE)_32965409.md`

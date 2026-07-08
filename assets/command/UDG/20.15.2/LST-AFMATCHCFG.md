@@ -64,4 +64,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AFMATCHCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软参欺诈场景开关状态（LST-AFMATCHCFG）_86526224.md`

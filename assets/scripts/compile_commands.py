@@ -85,13 +85,14 @@ def load_task_refs(nf: str, ver: str):
 
 
 def copy_evidence(src_rel: str, rec: dict) -> str:
-    """把原始命令手册拷进 assets/evidence/{nf}/{version}/，返回 assets 内相对路径。"""
+    """把原始手册拷进 assets/evidence/{nf}/{version}/，返回 assets 内相对路径。
+    以**源手册文件名 stem** 命名（非对象名）——同一份手册只拷一次，命令和 ConfigObject 共用。"""
     src = REPO / src_rel
     nf = rec.get("nf")
     ver = rec.get("version")
     dst_dir = EVID / nf / ver
     dst_dir.mkdir(parents=True, exist_ok=True)
-    dst_name = sanitize(rec.get("command_name", "unknown")) + src.suffix
+    dst_name = sanitize(Path(src_rel).stem) + ".md"
     dst = dst_dir / dst_name
     if src.exists():
         shutil.copyfile(src, dst)

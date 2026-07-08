@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`
-- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`
-- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`
-- 原始手册：`evidence/UNC/20.15.2/IPEN7SUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/修改智能业务后缀（MOD-IPEN7SUFFIX）_16631861.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能业务后缀（RMV-IPEN7SUFFIX）_16546781.md`
+- 原始手册：`evidence/UNC/20.15.2/增加智能业务后缀（ADD-IPEN7SUFFIX）_16546777.md`
+- 原始手册：`evidence/UNC/20.15.2/查询智能业务后缀（LST-IPEN7SUFFIX）_81027524.md`

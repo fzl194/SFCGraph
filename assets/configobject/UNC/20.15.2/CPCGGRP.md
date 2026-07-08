@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPCGGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/CPCGGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/CPCGGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/CPCGGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改抄送CG组（MOD-CPCGGRP）_09896865.md`
+- 原始手册：`evidence/UNC/20.15.2/删除抄送CG组（RMV-CPCGGRP）_09896866.md`
+- 原始手册：`evidence/UNC/20.15.2/增加抄送CG组（ADD-CPCGGRP）_09896864.md`
+- 原始手册：`evidence/UNC/20.15.2/显示抄送CG组（LST-CPCGGRP）_09896867.md`

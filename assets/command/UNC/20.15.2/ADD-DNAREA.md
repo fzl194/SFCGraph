@@ -61,4 +61,4 @@ ADD DNAREA: AREANAME="DNAREA1", AREATYPE=N2TAI;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI服务区域（ADD-DNAREA）_24956616.md`

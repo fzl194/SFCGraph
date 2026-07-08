@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALMDETAIL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询告警详细信息（LST-ALMDETAIL）_26306016.md`

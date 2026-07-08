@@ -75,4 +75,4 @@ IPSQM配置信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPSQMSHAPING.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPSQM整形配置（LST-IPSQMSHAPING）_21153440.md`

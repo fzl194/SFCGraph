@@ -70,4 +70,4 @@ APP规则生效条件  =  INHERIT
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNAPPPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于APN的应用参数（LST-APNAPPPARA）_74982442.md`

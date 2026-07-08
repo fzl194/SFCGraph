@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFPRESELBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFPRESELBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFPRESELBYIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFPRESELBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于IMSI优选指定SMF配置（MOD-SMFPRESELBYIMSI）_84854076.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于IMSI优选指定SMF配置（RMV-SMFPRESELBYIMSI）_84694168.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于IMSI优选指定SMF配置（ADD-SMFPRESELBYIMSI）_20453853.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于IMSI优选指定SMF配置（LST-SMFPRESELBYIMSI）_20333897.md`

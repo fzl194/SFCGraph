@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/KPIMONRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/KPIMONRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/KPIMONRULE.md`
-- 原始手册：`evidence/UDG/20.15.2/KPIMONRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改KPI异常检测规则（MOD-KPIMONRULE）_35322749.md`
+- 原始手册：`evidence/UDG/20.15.2/删除KPI异常检测规则（RMV-KPIMONRULE）_87483786.md`
+- 原始手册：`evidence/UDG/20.15.2/增加KPI异常检测规则（ADD-KPIMONRULE）_87324054.md`
+- 原始手册：`evidence/UDG/20.15.2/查询KPI异常检测规则（LST-KPIMONRULE）_87324058.md`

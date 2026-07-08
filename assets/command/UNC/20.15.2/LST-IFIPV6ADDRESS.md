@@ -68,4 +68,4 @@ IPv6地址计算类型  = none
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IFIPV6ADDRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口IPv6地址（LST-IFIPV6ADDRESS）_00866605.md`

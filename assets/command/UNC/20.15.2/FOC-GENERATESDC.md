@@ -66,4 +66,4 @@ FOC GENERATESDC: SDCTYPE=TARIFFCHG, CCVALUE="0x0010";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FOC-GENERATESDC.md`
+- 原始手册：`evidence/UNC/20.15.2/强制产生业务数据容器（FOC-GENERATESDC）_09897028.md`

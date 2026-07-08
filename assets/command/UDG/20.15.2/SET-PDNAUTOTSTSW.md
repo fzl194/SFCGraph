@@ -73,4 +73,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PDNAUTOTSTSW.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PDN自动探测功能开关（SET-PDNAUTOTSTSW）_12635692.md`

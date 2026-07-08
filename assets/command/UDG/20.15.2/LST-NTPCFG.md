@@ -70,4 +70,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NTPCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NTP时间同步参数(LST-NTPCFG)_67679934.md`

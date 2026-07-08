@@ -61,4 +61,4 @@ RMV NSDNN: NSIDX=0, DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网络切片支持的DNN（RMV-NSDNN）_09651768.md`

@@ -109,4 +109,4 @@ DNS的serverip和domain对应关系老化时间配置（小时）  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRVCOMMONPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务公共参数（LST-SRVCOMMONPARA）_82837310.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWCID.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCID.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCID.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWCID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGW-C网络标识符（MOD-SGWCID）_36923529.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-C网络标识符（RMV-SGWCID）_89867032.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-C网络标识符（ADD-SGWCID）_89867030.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-C网络标识符（LST-SGWCID）_36529189.md`

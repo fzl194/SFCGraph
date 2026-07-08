@@ -63,4 +63,4 @@ RMV PNFALLOWDOMAIN: NFINSTANCEID="SMF_Instance_0", SRVINSTANCEID="Service_Instan
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFALLOWDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF允许的域名信息（RMV-PNFALLOWDOMAIN）_09652469.md`

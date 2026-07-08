@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DCSDISKINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示DCS直通存储使用率（DSP-DCSDISKINFO）_26367873.md`

@@ -69,4 +69,4 @@ SET CACHEPLCY: CACHEPOLICY=ALLCACHE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CACHEPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缓存策略（SET-CACHEPLCY）_17997841.md`

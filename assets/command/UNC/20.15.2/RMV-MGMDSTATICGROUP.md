@@ -63,4 +63,4 @@ RMV MGMDSTATICGROUP: VRFNAME="_public_", ADDRESSFAMILY=ipv4unicast, IFNAME="Ethe
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MGMDSTATICGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IGMP静态组配置（RMV-MGMDSTATICGROUP）_50280782.md`

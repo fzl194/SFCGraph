@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTAIGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAIGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTAIGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-TAI组性能统计对象成员（RMV-NGTAIGRPMEM）_96242860.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-TAI组性能统计对象成员（ADD-NGTAIGRPMEM）_96241743.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-TAI组性能统计对象成员（LST-NGTAIGRPMEM）_96242272.md`

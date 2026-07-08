@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEGFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/加载号段文件（LOD-SEGFILE）_09653034.md`
+- 原始手册：`evidence/UNC/20.15.2/导出号段文件（EXP-SEGFILE）_09654176.md`
+- 原始手册：`evidence/UNC/20.15.2/检查导入号段配置文件合法性（CHK-SEGFILE）_50738958.md`
+- 原始手册：`evidence/UNC/20.15.2/激活号段文件（ACT-SEGFILE）_09654192.md`

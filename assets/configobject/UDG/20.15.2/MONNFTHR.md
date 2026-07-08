@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MONNFTHR.md`
-- 原始手册：`evidence/UDG/20.15.2/MONNFTHR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询正常状态网元的占比阈值（LST-MONNFTHR）_02844813.md`
+- 原始手册：`evidence/UDG/20.15.2/设置正常状态网元的占比阈值（SET-MONNFTHR）_66605040.md`

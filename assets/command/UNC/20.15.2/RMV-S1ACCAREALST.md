@@ -67,4 +67,4 @@ RMV S1ACCAREALST: AREA=OTHER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-S1ACCAREALST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式接入控制配置（RMV-S1ACCAREALST）_72225237.md`

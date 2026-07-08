@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FEATLOCREPORT.md`
-- 原始手册：`evidence/UNC/20.15.2/FEATLOCREPORT.md`
-- 原始手册：`evidence/UNC/20.15.2/FEATLOCREPORT.md`
-- 原始手册：`evidence/UNC/20.15.2/FEATLOCREPORT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于特性的位置上报配置（MOD-FEATLOCREPORT）_70382349.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于特性的位置上报配置（RMV-FEATLOCREPORT）_70382369.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于特性的位置上报配置（ADD-FEATLOCREPORT）_70462505.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于特性的位置上报配置（LST-FEATLOCREPORT）_70462537.md`

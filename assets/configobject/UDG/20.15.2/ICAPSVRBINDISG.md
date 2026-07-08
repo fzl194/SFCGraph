@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ICAPSVRBINDISG.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSVRBINDISG.md`
-- 原始手册：`evidence/UDG/20.15.2/ICAPSVRBINDISG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ICAP服务器绑定关系（RMV-ICAPSVRBINDISG）_32421519.md`
+- 原始手册：`evidence/UDG/20.15.2/增加ICAP服务器绑定关系（ADD-ICAPSVRBINDISG）_29222372.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICAP服务器绑定关系（LST-ICAPSVRBINDISG）_32260089.md`

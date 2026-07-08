@@ -58,4 +58,4 @@ RMV INTELLISUFFIX: INTELLISUFFIX="intelligent";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-INTELLISUFFIX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除智能业务后缀（RMV-INTELLISUFFIX）_72857885.md`

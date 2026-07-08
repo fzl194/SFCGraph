@@ -61,4 +61,4 @@ RMV USRATTRCOND: CONDNAME="user_cond1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-USRATTRCOND.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户属性过滤条件（RMV-USRATTRCOND）_47006828.md`

@@ -53,4 +53,4 @@ RMV SQOSCAR:BEHAVIORNAME="b1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SQOSCAR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除流行为CAR配置（RMV-SQOSCAR）_00440429.md`

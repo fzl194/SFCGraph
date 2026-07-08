@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SELECTCCTBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTCCTBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTCCTBYCC.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTCCTBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于CC配置融合计费模板处理（MOD-SELECTCCTBYCC）_09651590.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于CC配置融合计费模板处理（RMV-SELECTCCTBYCC）_09651373.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于CC配置融合计费模板处理（ADD-SELECTCCTBYCC）_09654384.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于CC配置融合计费模板处理（LST-SELECTCCTBYCC）_09653712.md`

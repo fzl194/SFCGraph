@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-CLTVFYSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置双向认证开关（SET-CLTVFYSWITCH）_84238196.md`

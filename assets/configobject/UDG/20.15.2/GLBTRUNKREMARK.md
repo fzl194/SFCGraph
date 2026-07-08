@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBTRUNKREMARK.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBTRUNKREMARK.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBTRUNKREMARK.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBTRUNKREMARK.md`
+- 原始手册：`evidence/UDG/20.15.2/修改整机Trunk-Remark配置（MOD-GLBTRUNKREMARK）_70762240.md`
+- 原始手册：`evidence/UDG/20.15.2/删除整机Trunk-Remark配置（RMV-GLBTRUNKREMARK）_70043020.md`
+- 原始手册：`evidence/UDG/20.15.2/查询整机Trunk-Remark配置（LST-GLBTRUNKREMARK）_70522432.md`
+- 原始手册：`evidence/UDG/20.15.2/添加整机Trunk-Remark配置（ADD-GLBTRUNKREMARK）_68602073.md`

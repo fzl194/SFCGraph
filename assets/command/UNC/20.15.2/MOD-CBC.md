@@ -73,4 +73,4 @@ MOD CBC: CBCIDX=0, IPTYPE=IPV4, IPV4_1="10.10.10.17", IPV4_2="10.10.10.18";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CBC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CBC(MOD-CBC)_72345971.md`

@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter流控信息(DSP-DMOCINFO)_72226069.md`

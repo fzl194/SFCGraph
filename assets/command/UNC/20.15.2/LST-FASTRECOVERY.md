@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FASTRECOVERY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局业务快速恢复配置（LST-FASTRECOVERY）_31453514.md`

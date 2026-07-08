@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNUSERTYPEPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNUSERTYPEPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于用户属性的DDN消息优先级（LST-DDNUSERTYPEPRI）_04284712.md`
+- 原始手册：`evidence/UNC/20.15.2/设置基于用户属性的DDN消息优先级（SET-DDNUSERTYPEPRI）_04284724.md`

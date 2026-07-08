@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DCSVODVIDEO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示指定点播视频信息（DSP-DCSVODVIDEO）_11530321.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRGLOBALINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询无线路由全局信息（DSP-WLRGLOBALINFO）_00866353.md`

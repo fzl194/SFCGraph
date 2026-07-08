@@ -62,4 +62,4 @@ ADD DCN: DCNID=0, MCC="123", MNC="01", DCNTYPE=COMMON, DESC="eMtc";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DCN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DCN(ADD-DCN)_72225505.md`

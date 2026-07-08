@@ -58,4 +58,4 @@ RMV MSCPARA: IPTYPE=IPV4, IPV4="10.141.149.100";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MSCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MSC参数(RMV-MSCPARA)_26305788.md`

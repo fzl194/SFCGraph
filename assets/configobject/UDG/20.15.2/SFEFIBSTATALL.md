@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEFIBSTATALL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示FIB所有统计信息（DSP-SFEFIBSTATALL）_00866037.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCALELOADMON.md`
-- 原始手册：`evidence/UNC/20.15.2/SCALELOADMON.md`
-- 原始手册：`evidence/UNC/20.15.2/SCALELOADMON.md`
+- 原始手册：`evidence/UNC/20.15.2/删除自动扩缩容监测的虚机资源（RMV-SCALELOADMON）_24015948.md`
+- 原始手册：`evidence/UNC/20.15.2/增加自动扩缩容监测的虚机资源（ADD-SCALELOADMON）_24015920.md`
+- 原始手册：`evidence/UNC/20.15.2/查询自动扩缩容监测的虚机资源（LST-SCALELOADMON）_23736552.md`

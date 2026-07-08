@@ -66,4 +66,4 @@ ADD INTERFACE: IFNAME="LoopBack4", IFDESCR="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-INTERFACE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口（ADD-INTERFACE）_49960870.md`

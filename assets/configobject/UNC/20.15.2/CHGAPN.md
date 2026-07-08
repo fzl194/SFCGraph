@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN计费属性(MOD-CHGAPN)_72225045.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN计费属性(RMV-CHGAPN)_26145364.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN计费属性(ADD-CHGAPN)_72344965.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN计费属性(LST-CHGAPN)_26305180.md`

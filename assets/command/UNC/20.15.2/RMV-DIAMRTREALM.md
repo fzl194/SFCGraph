@@ -59,4 +59,4 @@ RMV DIAMRTREALM:REALMNAME="example.com",APPLICATION=GX;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DIAMRTREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter路由域名信息（RMV-DIAMRTREALM）_09897305.md`

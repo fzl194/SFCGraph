@@ -67,4 +67,4 @@ SET APNSOFTPARA:APN="huawei.com",DT=BYTE,BYTENUM=8,BYTEVALUE=3;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNSOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/配置APN软参记录（SET-APNSOFTPARA）_82837027.md`

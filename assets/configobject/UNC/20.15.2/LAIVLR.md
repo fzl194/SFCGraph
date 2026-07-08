@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LAIVLR.md`
-- 原始手册：`evidence/UNC/20.15.2/LAIVLR.md`
-- 原始手册：`evidence/UNC/20.15.2/LAIVLR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LAI与VLR号对应关系(RMV-LAIVLR)_26145414.md`
+- 原始手册：`evidence/UNC/20.15.2/增加LAI与VLR号对应关系(ADD-LAIVLR)_72345015.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LAI与VLR号对应关系(LST-LAIVLR)_72225095.md`

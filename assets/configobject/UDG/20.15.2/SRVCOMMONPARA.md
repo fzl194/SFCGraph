@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRVCOMMONPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCOMMONPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务公共参数（LST-SRVCOMMONPARA）_82837310.md`
+- 原始手册：`evidence/UDG/20.15.2/设置业务公共参数（SET-SRVCOMMONPARA）_82837309.md`

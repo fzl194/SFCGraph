@@ -60,4 +60,4 @@ STR VLRFAULTEXIT: EXITPLCY=IMSI_DETACH;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STR-VLRFAULTEXIT.md`
+- 原始手册：`evidence/UNC/20.15.2/启动用户退出VLR故障增强状态(STR-VLRFAULTEXIT)_92963924.md`

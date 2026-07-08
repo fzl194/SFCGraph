@@ -78,4 +78,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NTPSVR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NTP服务器(LST-NTPSVR)_54491178.md`

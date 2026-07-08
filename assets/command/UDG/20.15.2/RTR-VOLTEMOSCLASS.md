@@ -52,4 +52,4 @@ RTR VOLTEMOSCLASS:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-VOLTEMOSCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS分类区间值（RTR-VOLTEMOSCLASS）_69178844.md`

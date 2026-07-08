@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SDRPLYSUBSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SDRC中保存的策略订阅关系（DSP-SDRPLYSUBSTATUS）_94588828.md`

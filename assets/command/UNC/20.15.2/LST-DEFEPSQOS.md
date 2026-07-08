@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DEFEPSQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS缺省QoS参数（LST-DEFEPSQOS）_09653169.md`

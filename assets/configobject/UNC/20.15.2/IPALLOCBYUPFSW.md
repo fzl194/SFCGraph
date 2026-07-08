@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPALLOCBYUPFSW.md`
-- 原始手册：`evidence/UNC/20.15.2/IPALLOCBYUPFSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于UPF的地址分配开关（LST-IPALLOCBYUPFSW）_49644922.md`
+- 原始手册：`evidence/UNC/20.15.2/设置基于UPF的地址分配开关（SET-IPALLOCBYUPFSW）_49644936.md`

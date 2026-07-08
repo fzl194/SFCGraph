@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RULEBINDSRVS.md`
-- 原始手册：`evidence/UDG/20.15.2/RULEBINDSRVS.md`
-- 原始手册：`evidence/UDG/20.15.2/RULEBINDSRVS.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务统计规则绑定配置（RMV-RULEBINDSRVS）_82837852.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务统计规则绑定配置（ADD-RULEBINDSRVS）_82837851.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务统计规则绑定配置（LST-RULEBINDSRVS）_82837853.md`

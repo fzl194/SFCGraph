@@ -56,4 +56,4 @@ RMV NCGCHLMAP: FIELDTYPE=GPSI, PREFIX="8610640", FIRSTDIRTYPE=CBN2B;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NCGCHLMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除话单通道一级目录类型映射表（RMV-NCGCHLMAP）_25111036.md`

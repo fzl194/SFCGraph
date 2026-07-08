@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBARD.md`
-- 原始手册：`evidence/UNC/20.15.2/GBARD.md`
-- 原始手册：`evidence/UNC/20.15.2/GBARD.md`
-- 原始手册：`evidence/UNC/20.15.2/GBARD.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Gb模式接入限制参数(MOD-GBARD)_26145474.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式接入限制参数(RMV-GBARD)_72345071.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gb模式接入限制参数(ADD-GBARD)_26305284.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式接入限制参数(LST-GBARD)_72225155.md`

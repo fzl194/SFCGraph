@@ -67,4 +67,4 @@ SET DOMAINSEPARATOR:PREFIX="@%",SUFFIX="#/";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DOMAINSEPARATOR.md`
+- 原始手册：`evidence/UDG/20.15.2/配置前后缀分隔符（SET-DOMAINSEPARATOR）_35373550.md`

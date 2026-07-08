@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDISCPARARULE.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDISCPARARULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF发现参数防呆规则（LST-NRFDISCPARARULE）_88697030.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF服务发现参数处理规则（SET-NRFDISCPARARULE）_35273633.md`

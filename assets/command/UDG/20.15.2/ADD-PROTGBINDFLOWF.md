@@ -62,4 +62,4 @@ ADD PROTGBINDFLOWF:FLOWFILTERNAME="testflowfiltername",PROTGROUPNAME ="p2p";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PROTGBINDFLOWF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流过滤器协议组绑定关系（ADD-PROTGBINDFLOWF）_82837375.md`

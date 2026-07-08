@@ -67,4 +67,4 @@ ADD GTPCPATHDP: RANGE=ROAMING, PAS_COE=3, GP_ALMID=INDEP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPCPATHDP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C路径管理自定义策略(ADD-GTPCPATHDP)_72345513.md`

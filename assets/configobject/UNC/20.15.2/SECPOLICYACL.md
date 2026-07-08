@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYACL.md`
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYACL.md`
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYACL.md`
-- 原始手册：`evidence/UNC/20.15.2/SECPOLICYACL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改安全策略ACL规则（MOD-SECPOLICYACL）_00841393.md`
+- 原始手册：`evidence/UNC/20.15.2/删除安全策略ACL规则（RMV-SECPOLICYACL）_50280586.md`
+- 原始手册：`evidence/UNC/20.15.2/增加安全策略ACL规则（ADD-SECPOLICYACL）_50281338.md`
+- 原始手册：`evidence/UNC/20.15.2/查询安全策略ACL规则（LST-SECPOLICYACL）_00441405.md`

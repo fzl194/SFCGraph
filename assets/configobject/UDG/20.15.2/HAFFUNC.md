@@ -36,5 +36,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HAFFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/HAFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HAF服务内部功能的参数（LST-HAFFUNC）_68320997.md`
+- 原始手册：`evidence/UDG/20.15.2/设置HAF服务内部功能的相关参数（SET-HAFFUNC）_68321033.md`

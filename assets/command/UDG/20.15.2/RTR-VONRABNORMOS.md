@@ -52,4 +52,4 @@ RTR VONRABNORMOS:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-VONRABNORMOS.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS值的异常门限为系统初始设置值（RTR-VONRABNORMOS）_94774059.md`

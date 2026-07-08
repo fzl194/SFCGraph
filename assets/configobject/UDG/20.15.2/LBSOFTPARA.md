@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LBSOFTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/LBSOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CSLB软件调试参数表（LST-LBSOFTPARA）_29627112.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CSLB软件调试参数表（SET-LBSOFTPARA）_29627111.md`

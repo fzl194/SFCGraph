@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNWHITENODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNWHITENODE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNWHITENODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN设备白名单（RMV-APNWHITENODE）_58542676.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN设备白名单（ADD-APNWHITENODE）_08542633.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN设备白名单列表（LST-APNWHITENODE）_58382748.md`

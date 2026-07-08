@@ -60,4 +60,4 @@ DEA TMGI: DEATYPE=TMGI, MCC="460", MNC="03", MBSSERVICEID="000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEA-TMGI.md`
+- 原始手册：`evidence/UNC/20.15.2/去激活TMGI（DEA-TMGI）_96822090.md`

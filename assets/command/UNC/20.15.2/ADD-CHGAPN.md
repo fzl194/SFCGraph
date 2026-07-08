@@ -77,4 +77,4 @@ ADD CHGAPN: APNNI="huawei1.com", CC=PREPAID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHGAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN计费属性(ADD-CHGAPN)_72344965.md`

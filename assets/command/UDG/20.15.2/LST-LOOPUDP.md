@@ -79,4 +79,4 @@ Tx-U接口UDP环回目的IPv4地址  =  0.0.0.0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-LOOPUDP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UDP环回配置（LST-LOOPUDP）_70043012.md`

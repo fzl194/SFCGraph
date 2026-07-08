@@ -72,4 +72,4 @@ SET CFSHEALCTRL: SUBHEALTHSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CFSHEALCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置在复杂故障场景下自愈功能控制参数（SET-CFSHEALCTRL）_80236120.md`

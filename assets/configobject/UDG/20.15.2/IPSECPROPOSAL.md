@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSECPROPOSAL.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECPROPOSAL.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECPROPOSAL.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECPROPOSAL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPsec提议（MOD-IPSECPROPOSAL）_00440657.md`
+- 原始手册：`evidence/UDG/20.15.2/创建IPsec提议（ADD-IPSECPROPOSAL）_49801874.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPsec提议（RMV-IPSECPROPOSAL）_50120786.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPsec提议（LST-IPSECPROPOSAL）_00601237.md`

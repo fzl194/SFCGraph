@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFNTFPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFNTFPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端网元的通知抑制时间（LST-PNFNTFPLCY）_96242392.md`
+- 原始手册：`evidence/UNC/20.15.2/设置对端网元的通知抑制时间（SET-PNFNTFPLCY）_96243197.md`

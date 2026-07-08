@@ -68,4 +68,4 @@ RAC号段配置信息
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RACID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RAC组内绑定的RAC号段（LST-RACID）_09652289.md`

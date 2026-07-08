@@ -61,4 +61,4 @@ ADD CSCFGBYOMCM:MMLNAME="PLMNNS";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CSCFGBYOMCM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加业务读取OM缓存数据的配置（ADD-CSCFGBYOMCM）_51335373.md`

@@ -60,4 +60,4 @@ RST OSPFV3: PROCID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RST-OSPFV3.md`
+- 原始手册：`evidence/UDG/20.15.2/重置OSPFv3进程（RST-OSPFV3）_00601085.md`

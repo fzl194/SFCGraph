@@ -66,4 +66,4 @@ RMV RESULTCODECTRL:PCCTEMPLATE="global";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RESULTCODECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除返回码控制（RMV-RESULTCODECTRL）_09897086.md`

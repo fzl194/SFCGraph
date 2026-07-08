@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ULCLDNAIDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLDNAIDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLDNAIDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLDNAIDPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定DNAI的ULCL部署模式（MOD-ULCLDNAIDPMODE）_08884936.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定DNAI的ULCL部署模式（RMV-ULCLDNAIDPMODE）_62084041.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定DNAI的ULCL部署模式（ADD-ULCLDNAIDPMODE）_08565140.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定DNAI的ULCL部署模式（LST-ULCLDNAIDPMODE）_09044576.md`

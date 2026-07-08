@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TCPRST.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPRST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询欠费用户下行RST报文处理动作（LST-TCPRST）_82837627.md`
+- 原始手册：`evidence/UDG/20.15.2/设置欠费用户下行RST报文处理动作（SET-TCPRST）_82837626.md`

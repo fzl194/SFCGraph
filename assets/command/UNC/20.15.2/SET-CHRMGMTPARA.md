@@ -69,4 +69,4 @@ SET CHRMGMTPARA: PROCRPTRATE=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHRMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置关键流程CHR上报管理参数（SET-CHRMGMTPARA）_78748326.md`

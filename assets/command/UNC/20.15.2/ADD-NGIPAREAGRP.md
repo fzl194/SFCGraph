@@ -60,4 +60,4 @@ ADD NGIPAREAGRP: AREAID="SomeCity", IPAREASW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGIPAREAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-IP区域群（ADD-NGIPAREAGRP）_09653204.md`

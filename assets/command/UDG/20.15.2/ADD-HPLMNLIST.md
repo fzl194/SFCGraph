@@ -79,4 +79,4 @@ ADD HPLMNLIST:MCC="460",MNC="02";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-HPLMNLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/配置UPF设备的归属PLMN（ADD-HPLMNLIST）_44865465.md`

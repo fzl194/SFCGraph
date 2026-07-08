@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GCSMOOTHSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/GCSMOOTHSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GC平滑开关（LST-GCSMOOTHSWITCH）_43960919.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GC平滑开关（SET-GCSMOOTHSWITCH）_44040889.md`

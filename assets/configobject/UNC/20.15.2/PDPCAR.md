@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PDPCAR.md`
-- 原始手册：`evidence/UNC/20.15.2/PDPCAR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDP流控参数(LST-PDPCAR)_26145852.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PDP流控参数(SET-PDPCAR)_72345451.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MPACIPV6RULE.md`
-- 原始手册：`evidence/UNC/20.15.2/MPACIPV6RULE.md`
-- 原始手册：`evidence/UNC/20.15.2/MPACIPV6RULE.md`
-- 原始手册：`evidence/UNC/20.15.2/MPACIPV6RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6-MPAC策略规则（MOD-MPACIPV6RULE）_49961110.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6-MPAC策略规则（RMV-MPACIPV6RULE）_00441153.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv6-MPAC策略规则（ADD-MPACIPV6RULE）_50281526.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6-MPAC策略规则（LST-MPACIPV6RULE）_00866397.md`

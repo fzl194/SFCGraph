@@ -67,4 +67,4 @@ RMV SRROUTE6:AFTYPE=ipv6unicast,PREFIX="2001:DB8::1",MASKLENGTH=128,VRFNAME="_pu
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SRROUTE6.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6静态路由（RMV-SRROUTE6）_49960894.md`

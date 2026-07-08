@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFMBSSESCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示AMF组播广播会话上下文（DSP-AMFMBSSESCTX）_88267226.md`

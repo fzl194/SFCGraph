@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEFIB6.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6的FIB表项信息（DSP-SFEFIB6）_49802462.md`

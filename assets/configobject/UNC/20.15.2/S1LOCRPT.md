@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1LOCRPT.md`
-- 原始手册：`evidence/UNC/20.15.2/S1LOCRPT.md`
-- 原始手册：`evidence/UNC/20.15.2/S1LOCRPT.md`
-- 原始手册：`evidence/UNC/20.15.2/S1LOCRPT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改S1模式实时小区位置订阅(MOD-S1LOCRPT)_26305384.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式实时小区位置订阅(RMV-S1LOCRPT)_72225253.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式实时小区位置订阅(ADD-S1LOCRPT)_26145572.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式实时小区位置订阅(LST-S1LOCRPT)_72345171.md`

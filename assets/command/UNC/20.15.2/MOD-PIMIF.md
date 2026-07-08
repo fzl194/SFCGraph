@@ -68,4 +68,4 @@ MOD PIMIF:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,IFNAME="Ethernet64/0/3",H
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PIMIF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PIM接口配置（MOD-PIMIF）_00600853.md`

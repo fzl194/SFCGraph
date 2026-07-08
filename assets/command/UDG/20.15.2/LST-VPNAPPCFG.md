@@ -56,4 +56,4 @@ App类型  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VPNAPPCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询下发的VPN的app类型信息（LST-VPNAPPCFG）_80592506.md`

@@ -55,4 +55,4 @@ ACT SRVRECFG: SRVTYPE=SRVADDR;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACT-SRVRECFG.md`
+- 原始手册：`evidence/UDG/20.15.2/重配置业务数据（ACT-SRVRECFG）_29627078.md`

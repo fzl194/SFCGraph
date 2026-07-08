@@ -71,4 +71,4 @@ NSH对端设备端口号  =  6633
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBNSHHDNPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NSH头增强全局策略（LST-GLBNSHHDNPLY）_28361119.md`

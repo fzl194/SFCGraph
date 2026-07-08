@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/ADCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/ADCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/ADCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改ADC参数（MOD-ADCPARA）_65996999.md`
+- 原始手册：`evidence/UNC/20.15.2/删除ADC参数（RMV-ADCPARA）_65997000.md`
+- 原始手册：`evidence/UNC/20.15.2/增加ADC参数（ADD-ADCPARA）_65996998.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ADC参数（LST-ADCPARA）_65997001.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFABILITY.md`
-- 原始手册：`evidence/UNC/20.15.2/NFABILITY.md`
-- 原始手册：`evidence/UNC/20.15.2/NFABILITY.md`
-- 原始手册：`evidence/UNC/20.15.2/NFABILITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改配置NF的能力信息（MOD-NFABILITY）_44007369.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配置NF的能力信息（RMV-NFABILITY）_44007623.md`
+- 原始手册：`evidence/UNC/20.15.2/增加配置NF的能力信息（ADD-NFABILITY）_44006431.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置NF的能力信息（LST-NFABILITY）_44006965.md`

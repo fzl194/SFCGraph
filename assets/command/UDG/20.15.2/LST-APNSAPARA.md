@@ -71,4 +71,4 @@ HTTPS业务流进行解析的最大包数  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNSAPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于APN的业务感知参数（LST-APNSAPARA）_49128369.md`

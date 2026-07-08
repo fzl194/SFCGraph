@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGTMRPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGTMRPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGTMRPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGTMRPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G寻呼定时器策略配置（MOD-NGPAGINGTMRPLCY）_09654339.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G寻呼定时器策略配置（RMV-NGPAGINGTMRPLCY）_09651513.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G寻呼定时器策略配置（ADD-NGPAGINGTMRPLCY）_09652229.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G寻呼定时器策略配置（LST-NGPAGINGTMRPLCY）_09654348.md`

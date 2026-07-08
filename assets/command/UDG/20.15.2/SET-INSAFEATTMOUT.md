@@ -62,4 +62,4 @@ SET INSAFEATTMOUT:TIMEOUT=30;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-INSAFEATTMOUT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置流特征节点超时时间（SET-INSAFEATTMOUT）_92904615.md`

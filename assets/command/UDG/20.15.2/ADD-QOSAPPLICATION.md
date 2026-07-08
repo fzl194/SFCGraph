@@ -63,4 +63,4 @@ ADD QOSAPPLICATION:IFNAME="Ethernet66/0/3", DIRECTION=inbound, POLICYNAME="p1",L
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-QOSAPPLICATION.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流策略（ADD-QOSAPPLICATION）_50281230.md`

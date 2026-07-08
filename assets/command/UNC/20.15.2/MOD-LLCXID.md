@@ -57,4 +57,4 @@ MOD LLCXID: SAPI=SAPI3, N201U=1520, T200=40;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-LLCXID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改LLC协商参数(MOD-LLCXID)_72225695.md`

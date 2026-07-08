@@ -57,4 +57,4 @@ MOD TACSHAREPLMN: TAC="0x5800", PLMNGPID=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-TACSHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于区域的PLMN管理(MOD-TACSHAREPLMN)_19262665.md`

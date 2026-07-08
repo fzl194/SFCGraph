@@ -61,4 +61,4 @@ MOD ALGPRIORITY: ALGTYPE=CIPH, ALGCIPH=NOCIPH, ALGPRI=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改算法优先级配置信息(MOD-ALGPRIORITY)_72345243.md`

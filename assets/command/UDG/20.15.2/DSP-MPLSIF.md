@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MPLSIF.md`
+- 原始手册：`evidence/UDG/20.15.2/显示MPLS接口信息（DSP-MPLSIF）_00440669.md`

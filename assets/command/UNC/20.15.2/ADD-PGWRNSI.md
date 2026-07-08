@@ -69,4 +69,4 @@ ADD PGWRNSI: SUBRANGE=ALL_USER, APNNI="HUAWEI.COM", PGWRNSISW=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PGWRNSI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PGW重定向配置(ADD-PGWRNSI)_18730832.md`

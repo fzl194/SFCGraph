@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNDDNFLOWCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/APNDDNFLOWCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN的下行数据DDN寻呼流控方式（LST-APNDDNFLOWCTRL）_16619148.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于APN的下行数据DDN寻呼流控方式（SET-APNDDNFLOWCTRL）_16858968.md`

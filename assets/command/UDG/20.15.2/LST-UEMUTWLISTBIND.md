@@ -61,4 +61,4 @@ LST UEMUTWLISTBIND:APNNAME="testapn";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UEMUTWLISTBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN绑定PA口UE互访白名单（LST-UEMUTWLISTBIND）_72561942.md`

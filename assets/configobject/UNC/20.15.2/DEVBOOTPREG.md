@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEVBOOTPREG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示BOOTP服务端的注册信息（DSP-DEVBOOTPREG）_59104163.md`

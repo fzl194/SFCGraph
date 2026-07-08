@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMROUTEUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PIM表项上游信息（DSP-PIMROUTEUP）_00600477.md`

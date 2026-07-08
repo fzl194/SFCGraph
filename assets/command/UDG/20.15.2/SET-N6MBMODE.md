@@ -68,4 +68,4 @@ SET N6MBMODE: MODE=UNICAST, UDPSTARTPORT=1024, UDPENDPORT=4023;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-N6MBMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/配置N6mb接口数据传输的优选方式及端口范围（SET-N6MBMODE）_44422306.md`

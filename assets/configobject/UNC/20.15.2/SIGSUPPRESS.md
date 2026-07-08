@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SIGSUPPRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/SIGSUPPRESS.md`
-- 原始手册：`evidence/UNC/20.15.2/SIGSUPPRESS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示S11接口信令风暴抑制功能的控制与统计信息(DSP-SIGSUPPRESS)_72225847.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S11接口信令风暴抑制功能参数(LST-SIGSUPPRESS)_26146168.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S11接口信令风暴抑制功能参数(SET-SIGSUPPRESS)_72345767.md`

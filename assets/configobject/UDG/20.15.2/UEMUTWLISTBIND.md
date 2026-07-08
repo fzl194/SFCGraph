@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UEMUTWLISTBIND.md`
-- 原始手册：`evidence/UDG/20.15.2/UEMUTWLISTBIND.md`
-- 原始手册：`evidence/UDG/20.15.2/UEMUTWLISTBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN绑定PA口UE互访白名单（RMV-UEMUTWLISTBIND）_72322912.md`
+- 原始手册：`evidence/UDG/20.15.2/增加APN绑定PA口UE互访白名单（ADD-UEMUTWLISTBIND）_31719865.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN绑定PA口UE互访白名单（LST-UEMUTWLISTBIND）_72561942.md`

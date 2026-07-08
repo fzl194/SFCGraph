@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACSUPDSTATUS.md`
-- 原始手册：`evidence/UNC/20.15.2/ACSUPDSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示升级状态（DSP-ACSUPDSTATUS）_89080530.md`
+- 原始手册：`evidence/UNC/20.15.2/设置升级状态（SET-ACSUPDSTATUS）_34280051.md`

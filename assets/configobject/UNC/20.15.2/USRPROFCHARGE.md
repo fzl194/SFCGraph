@@ -40,5 +40,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRPROFCHARGE.md`
-- 原始手册：`evidence/UNC/20.15.2/USRPROFCHARGE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询User-Profile的计费配置（LST-USRPROFCHARGE）_09896815.md`
+- 原始手册：`evidence/UNC/20.15.2/设置User-Profile的计费配置（SET-USRPROFCHARGE）_09896814.md`

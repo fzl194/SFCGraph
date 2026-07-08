@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TACGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查看指定TAC组或者已配置所有TAC组的配置信息（LST-TACGROUP）_82837203.md`

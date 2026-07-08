@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PGWESTNSR.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWESTNSR.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWESTNSR.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWESTNSR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改E-STN-SR和PGW关系配置表(MOD-PGWESTNSR)_26145508.md`
+- 原始手册：`evidence/UNC/20.15.2/删除E-STN-SR和PGW关系配置表(RMV-PGWESTNSR)_72225189.md`
+- 原始手册：`evidence/UNC/20.15.2/增加E-STN-SR和PGW关系配置表(ADD-PGWESTNSR)_72345105.md`
+- 原始手册：`evidence/UNC/20.15.2/查询E-STN-SR和PGW关系配置表(LST-PGWESTNSR)_26305320.md`

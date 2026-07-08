@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNACCESSCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNACCESSCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN访问控制参数（LST-APNACCESSCTRL）_09652260.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN访问控制参数（SET-APNACCESSCTRL）_09654434.md`

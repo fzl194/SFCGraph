@@ -76,4 +76,4 @@ ADD PNFTAI: NFINSTANCEID="SMF_Instance_0", TAI="460001000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的TAI信息（ADD-PNFTAI）_09652455.md`

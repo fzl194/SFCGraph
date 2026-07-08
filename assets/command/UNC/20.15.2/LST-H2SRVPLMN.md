@@ -72,4 +72,4 @@ Home PLMN移动国家码  =  123
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-H2SRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Home-PLMN到Serving-PLMN的对应关系（LST-H2SRVPLMN）_48763590.md`

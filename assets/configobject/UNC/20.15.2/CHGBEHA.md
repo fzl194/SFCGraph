@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGBEHA.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGBEHA.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGBEHA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除计费行为参数(RMV-CHGBEHA)_72225047.md`
+- 原始手册：`evidence/UNC/20.15.2/增加计费行为参数(ADD-CHGBEHA)_26145366.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费行为参数(LST-CHGBEHA)_26305182.md`

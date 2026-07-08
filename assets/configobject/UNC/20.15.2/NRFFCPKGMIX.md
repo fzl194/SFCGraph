@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFFCPKGMIX.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFCPKGMIX.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF大小包协同返回功能参数（LST-NRFFCPKGMIX）_96805489.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF大小包协同返回功能参数（SET-NRFFCPKGMIX）_96805507.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/L2TPKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/L2TPKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询L2TP加密配置（LST-L2TPKEY）_64343887.md`
+- 原始手册：`evidence/UNC/20.15.2/设置L2TP加密参数（SET-L2TPKEY）_64343917.md`

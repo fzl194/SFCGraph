@@ -77,4 +77,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MGMDGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP加入组信息（DSP-MGMDGROUP）_49802502.md`

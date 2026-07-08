@@ -67,4 +67,4 @@ USM_0  sm2-pod-0 192.168.1.4  192.168.1.5  1.000   STATIC
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CURRENTWEIGHT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示服务类型当前时间的非动态权重（DSP-CURRENTWEIGHT）_27256388.md`

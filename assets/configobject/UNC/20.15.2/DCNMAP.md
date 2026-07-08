@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DCNMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/DCNMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCN映射关系(RMV-DCNMAP)_72345429.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DCN映射关系(ADD-DCNMAP)_26305638.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN映射关系(LST-DCNMAP)_26145830.md`

@@ -74,4 +74,4 @@ IPv6前缀段范围结束值  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-BSFIPRANGEBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSF实例与IPRANGE之间的绑定关系（LST-BSFIPRANGEBIND）_09651737.md`

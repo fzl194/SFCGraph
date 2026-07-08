@@ -56,4 +56,4 @@ MOD NSSFCFGSUBSW: MCC="248", MNC="37", CFGWITHSUBSW=FUNC_ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NSSFCFGSUBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/修改按签约NSSAI分配Configed-NSSAI的PLMN级别开关（MOD-NSSFCFGSUBSW）_98061326.md`

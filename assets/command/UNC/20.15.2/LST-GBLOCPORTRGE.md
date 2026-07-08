@@ -70,4 +70,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GBLOCPORTRGE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本端端口号选择范围(LST-GBLOCPORTRGE)_72225679.md`

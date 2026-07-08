@@ -59,4 +59,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-NPFABRICOAMSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/清除NP-Fabric统计数据（RTR-NPFABRICOAMSTAT）_87356184.md`

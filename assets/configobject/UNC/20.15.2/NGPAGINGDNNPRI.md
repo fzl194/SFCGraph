@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGDNNPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGDNNPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGDNNPRI.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGDNNPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于DNN的Paging消息在流控期间放通的优先级（MOD-NGPAGINGDNNPRI）_98467637.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于DNN的Paging消息在流控期间放通的优先级（RMV-NGPAGINGDNNPRI）_52547824.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于DNN的Paging消息在流控期间放通的优先级（ADD-NGPAGINGDNNPRI）_98467635.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于DNN的Paging消息在流控期间放通的优先级（LST-NGPAGINGDNNPRI）_52547822.md`

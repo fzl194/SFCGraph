@@ -90,4 +90,4 @@ SET AGFOUTFC:FCID=ALL,GFCSWITCHTHOD=20000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AGFOUTFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置出局流控参数（SET-AGFOUTFC）_87446492.md`

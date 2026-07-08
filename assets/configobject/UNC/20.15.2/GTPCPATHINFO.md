@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCPATHINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCPATHINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCPATHINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C路径（RMV-GTPCPATHINFO）_09654147.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTP-C链路信息（DSP-GTPCPATHINFO）_09652568.md`
+- 原始手册：`evidence/UNC/20.15.2/测试GTP-C路径以及查询非知名端口号范围（TST-GTPCPATHINFO）_09653181.md`

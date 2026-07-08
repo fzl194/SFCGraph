@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BGPPEERALLVERBOSE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP所有VPN对等体详细信息（DSP-BGPPEERALLVERBOSE）_00866277.md`

@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNNILIB.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNILIB.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNILIB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI库记录（RMV-APNNILIB）_72225415.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI库记录（ADD-APNNILIB）_26145736.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APNNI库记录（LST-APNNILIB）_26305546.md`

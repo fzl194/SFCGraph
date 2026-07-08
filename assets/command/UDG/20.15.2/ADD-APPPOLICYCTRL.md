@@ -66,4 +66,4 @@ ADD APPPOLICYCTRL: APPIDNAME="zhibo", SUBAPPIDNAME="huya", DEFPRTGRPNAME="testht
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-APPPOLICYCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于应用的质差上报策略（ADD-APPPOLICYCTRL）_10221264.md`

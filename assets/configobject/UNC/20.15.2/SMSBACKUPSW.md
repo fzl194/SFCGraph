@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSBACKUPSW.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSBACKUPSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF热备容灾功能开关状态（LST-SMSBACKUPSW）_30520898.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF热备容灾功能开关状态（SET-SMSBACKUPSW）_30680378.md`

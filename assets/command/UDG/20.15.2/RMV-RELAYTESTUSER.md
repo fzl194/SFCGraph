@@ -56,4 +56,4 @@ RMV RELAYTESTUSER:TESTUSERNAME="user01";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RELAYTESTUSER.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继拨测用户（RMV-RELAYTESTUSER）_43992618.md`

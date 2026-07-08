@@ -62,4 +62,4 @@ ADD UPLIST4RDS: UPLISTNAME="uplist1", UPINSTANCEID="up1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPLIST4RDS.md`
+- 原始手册：`evidence/UNC/20.15.2/向RADIUS服务器使用的UP列表中增加UP（ADD-UPLIST4RDS）_52749060.md`

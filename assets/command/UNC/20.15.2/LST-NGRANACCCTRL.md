@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGRANACCCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G基站接入控制策略（LST-NGRANACCCTRL）_09253254.md`

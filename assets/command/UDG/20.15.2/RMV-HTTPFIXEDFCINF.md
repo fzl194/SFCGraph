@@ -51,4 +51,4 @@ RMV HTTPFIXEDFCINF: OFCIDX=1, LETYPE=CLIENT;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-HTTPFIXEDFCINF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTP接口类型固定速率流控信息（RMV-HTTPFIXEDFCINF）_52280614.md`

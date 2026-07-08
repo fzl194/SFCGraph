@@ -57,4 +57,4 @@ RMV QCICONV: QCIEXT=10, QCISTEP=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-QCICONV.md`
+- 原始手册：`evidence/UNC/20.15.2/删除扩展QCI转换关系(RMV-QCICONV)_26146214.md`

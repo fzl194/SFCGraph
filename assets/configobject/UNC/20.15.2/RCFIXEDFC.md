@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RCFIXEDFC.md`
-- 原始手册：`evidence/UNC/20.15.2/RCFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询注册中心固定速率流控（LST-RCFIXEDFC）_53801278.md`
+- 原始手册：`evidence/UNC/20.15.2/设置注册中心固定速率流控（SET-RCFIXEDFC）_53641462.md`

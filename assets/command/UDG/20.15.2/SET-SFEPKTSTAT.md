@@ -53,4 +53,4 @@ SET SFEPKTSTAT: ISENABLE = TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SFEPKTSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置报文统计记录开关（SET-SFEPKTSTAT）_50280870.md`

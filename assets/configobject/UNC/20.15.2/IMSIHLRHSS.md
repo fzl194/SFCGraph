@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIHLRHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIHLRHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIHLRHSS.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIHLRHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI对应的HLR_HSS接口（MOD-IMSIHLRHSS）_26305562.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI对应的HLR_HSS接口(RMV-IMSIHLRHSS)_72225431.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI对应的HLR_HSS接口(ADD-IMSIHLRHSS)_26145752.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI对应的HLR_HSS接口（LST-IMSIHLRHSS）_72345353.md`

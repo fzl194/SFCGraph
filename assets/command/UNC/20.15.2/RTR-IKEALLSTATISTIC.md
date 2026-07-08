@@ -53,4 +53,4 @@ RTR IKEALLSTATISTIC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-IKEALLSTATISTIC.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复全部IKE统计信息（RTR-IKEALLSTATISTIC）_98034046.md`

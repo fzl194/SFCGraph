@@ -55,4 +55,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-VNFMINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VNFM对接信息（MOD-VNFMINFO）_49249944.md`

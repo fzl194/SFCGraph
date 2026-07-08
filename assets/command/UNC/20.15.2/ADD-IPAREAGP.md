@@ -64,4 +64,4 @@ ADD IPAREAGP: AREAID=1, IPAREASW=ON, ROAMUSRSW=ON, AREAN="hss1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IPAREAGP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP区域群(ADD-IPAREAGP)_26305412.md`

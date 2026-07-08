@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FABPORTSUBDTL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Fabric端口亚健康通信质量信息（DSP-FABPORTSUBDTL）_76129914.md`

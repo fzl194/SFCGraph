@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DATAPLANEGIINFMODE.md`
-- 原始手册：`evidence/UDG/20.15.2/DATAPLANEGIINFMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户面下行模式配置（LST-DATAPLANEGIINFMODE）_64675045.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户面下行模式（SET-DATAPLANEGIINFMODE）_76796630.md`

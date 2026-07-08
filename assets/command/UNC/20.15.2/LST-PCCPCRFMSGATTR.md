@@ -69,4 +69,4 @@ PCRF消息属性信息
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCPCRFMSGATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCRF返回消息属性（LST-PCCPCRFMSGATTR）_96782685.md`

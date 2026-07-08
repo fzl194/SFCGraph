@@ -57,4 +57,4 @@ RMV GTPCV2CMPT: IDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPCV2CMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C-V2协议兼容性(RMV-GTPCV2CMPT)_72345525.md`

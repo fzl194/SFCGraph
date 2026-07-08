@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNTHROTTLING.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNTHROTTLING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN-Throttling功能（LST-DDNTHROTTLING）_04284711.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DDN-Throttling功能（SET-DDNTHROTTLING）_04284723.md`

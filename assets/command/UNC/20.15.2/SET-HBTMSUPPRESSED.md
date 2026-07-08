@@ -65,4 +65,4 @@ SET HBTMSUPPRESSED: DRDURATION=800;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-HBTMSUPPRESSED.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF心跳超时抑制时长（SET-HBTMSUPPRESSED）_86184326.md`

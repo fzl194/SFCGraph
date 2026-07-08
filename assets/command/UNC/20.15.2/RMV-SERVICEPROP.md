@@ -59,4 +59,4 @@ RMV SERVICEPROP:OPTYPE=SRV_PROP_NAME,SRVPROPNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SERVICEPROP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除业务属性（RMV-SERVICEPROP）_09897170.md`

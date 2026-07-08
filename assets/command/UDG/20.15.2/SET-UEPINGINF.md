@@ -70,4 +70,4 @@ SET UEPINGINF:PINGSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UEPINGINF.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UE-Ping逻辑接口开关（SET-UEPINGINF）_79568175.md`

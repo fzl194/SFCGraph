@@ -69,4 +69,4 @@ _public_       Attr        0       0         1         0         0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-WLRTBLSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于表无线路由数据信息（DSP-WLRTBLSTAT）_00600917.md`

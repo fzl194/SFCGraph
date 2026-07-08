@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUBGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBGPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户群成员(RMV-SUBGPMEM)_72345161.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户群成员(ADD-SUBGPMEM)_26305374.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户群成员(LST-SUBGPMEM)_26145564.md`

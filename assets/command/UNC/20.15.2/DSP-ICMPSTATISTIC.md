@@ -101,4 +101,4 @@ DSP ICMPSTATISTIC:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-ICMPSTATISTIC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ICMP报文统计（DSP-ICMPSTATISTIC）_00840689.md`

@@ -57,4 +57,4 @@ RMV RSA1024: RSA1024NAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-RSA1024.md`
+- 原始手册：`evidence/UDG/20.15.2/删除RSA1024公钥配置（RMV-RSA1024）_82837573.md`

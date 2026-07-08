@@ -62,4 +62,4 @@ MOD ADCPARA:FLOWFILTERNAME="testflowfiltername",FLOWINFORPT=DISABLE, KEYFLOWDETE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-ADCPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/修改ADC参数（MOD-ADCPARA）_01905961.md`

@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HPLMNLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/查看UPF设备的归属PLMN（LST-HPLMNLIST）_44865467.md`

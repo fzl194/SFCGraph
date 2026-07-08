@@ -95,4 +95,4 @@ GTPv2消息ULI信元中Macro eNodeB ID和Extended Macro eNodeB ID支持携带策
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话管理扩展功能(LST-SMFUNC)_72225363.md`

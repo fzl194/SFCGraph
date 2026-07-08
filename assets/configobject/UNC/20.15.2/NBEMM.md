@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NBEMM.md`
-- 原始手册：`evidence/UNC/20.15.2/NBEMM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NB-S1模式MM协议参数（LST-NBEMM）_72345375.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NB-S1模式MM协议参数（SET-NBEMM）_26305584.md`

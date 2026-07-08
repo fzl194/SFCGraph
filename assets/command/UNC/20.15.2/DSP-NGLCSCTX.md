@@ -75,4 +75,4 @@ Location Notification Uri  =  http://192.168.118.1:5080/ngmlc-loc/hgmlc/v1/provi
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NGLCSCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G定位上下文信息（DSP-NGLCSCTX）_33696293.md`

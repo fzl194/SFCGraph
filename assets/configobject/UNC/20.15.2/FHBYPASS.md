@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FHBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/FHBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/FHBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复旁路失败处理的配置参数（RTR-FHBYPASS）_09896716.md`
+- 原始手册：`evidence/UNC/20.15.2/查询失败旁路处理配置（LST-FHBYPASS）_09896715.md`
+- 原始手册：`evidence/UNC/20.15.2/设置失败旁路处理（SET-FHBYPASS）_09896714.md`

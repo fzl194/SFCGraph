@@ -57,4 +57,4 @@ RMV QUOTAEXHAUSTACT: CCTMPLTNAME="global";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-QUOTAEXHAUSTACT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配额耗尽后的动作（RMV-QUOTAEXHAUSTACT）_42209649.md`

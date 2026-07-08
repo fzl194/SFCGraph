@@ -59,4 +59,4 @@ ADD PLMNMATCH: MCC="123", MNC="678";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PLMNMATCH.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MCC与MNC归属关系（ADD-PLMNMATCH）_11789037.md`

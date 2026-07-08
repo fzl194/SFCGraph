@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRMGMTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询关键流程CHR上报管理参数（LST-CHRMGMTPARA）_28868621.md`
+- 原始手册：`evidence/UNC/20.15.2/设置关键流程CHR上报管理参数（SET-CHRMGMTPARA）_78748326.md`

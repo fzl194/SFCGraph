@@ -66,4 +66,4 @@ MOD NGNILRPARA: NOID=0, NILR=NO;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGNILRPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NI-LR功能参数（MOD-NGNILRPARA）_44007390.md`

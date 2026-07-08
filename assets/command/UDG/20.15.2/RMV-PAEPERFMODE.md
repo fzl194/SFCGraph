@@ -55,4 +55,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PAEPERFMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除配置表中的PAE性能模式（RMV-PAEPERFMODE）_41355453.md`

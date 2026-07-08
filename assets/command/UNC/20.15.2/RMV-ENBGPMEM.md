@@ -63,4 +63,4 @@ RMV ENBGP: ENBGPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ENBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除eNodeB群组成员(RMV-ENBGPMEM)_26305420.md`

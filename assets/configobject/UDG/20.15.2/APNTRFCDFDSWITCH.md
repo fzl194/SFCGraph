@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNTRFCDFDSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/APNTRFCDFDSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN大流量攻击防护配置（LST-APNTRFCDFDSWITCH）_86530452.md`
+- 原始手册：`evidence/UDG/20.15.2/设置大流量攻击防护APN开关（SET-APNTRFCDFDSWITCH）_86530451.md`

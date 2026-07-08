@@ -67,4 +67,4 @@ ACL名称  =  testacl1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ACLDEFAULT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询缺省Acl绑定（LST-ACLDEFAULT）_82837742.md`

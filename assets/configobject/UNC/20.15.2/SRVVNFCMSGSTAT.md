@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVVNFCMSGSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务VNFC消息统计（DSP-SRVVNFCMSGSTAT）_29627051.md`

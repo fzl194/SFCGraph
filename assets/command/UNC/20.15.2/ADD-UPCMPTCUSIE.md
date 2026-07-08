@@ -64,4 +64,4 @@ ADD UPCMPTCUSIE: UPFINSTANCE="upf_instance_1", IENAME=EFSEID, CUSTOMTYPE=37101, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPCMPTCUSIE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UP节点定制信元兼容性配置（ADD-UPCMPTCUSIE）_75982836.md`

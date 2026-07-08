@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NEINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示-NeInfo（DSP-NEINFO）_85057902.md`

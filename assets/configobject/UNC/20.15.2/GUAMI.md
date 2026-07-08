@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/GUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/GUAMI.md`
-- 原始手册：`evidence/UNC/20.15.2/GUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF全局标识（MOD-GUAMI）_09652503.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF全局标识（RMV-GUAMI）_09652172.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF全局标识（ADD-GUAMI）_09653726.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF全局标识（LST-GUAMI）_09652365.md`

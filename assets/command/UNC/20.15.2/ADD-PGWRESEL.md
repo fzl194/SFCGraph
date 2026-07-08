@@ -67,4 +67,4 @@ ADD PGWRESEL: APNNI="HUAWEI", NBEGIN=1, NEND=2, TRIGGER=TIME, ST=00&00&00, ET=03
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PGWRESEL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地P-GW重选策略(ADD-PGWRESEL)_26305522.md`

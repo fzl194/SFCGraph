@@ -56,4 +56,4 @@ RMV MDTPLMN: MCC="123", MNC="030";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于管理的最小化路测的PLMN(RMV-MDTPLMN)_99355689.md`

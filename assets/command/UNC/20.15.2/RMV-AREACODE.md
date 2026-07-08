@@ -57,4 +57,4 @@ RMV AREACODE: AREACODE="jq007.pd666.sh008";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域编码（RMV-AREACODE）_44007539.md`

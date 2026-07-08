@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFTOKEN.md`
+- 原始手册：`evidence/UNC/20.15.2/测试Token分配（TST-NFTOKEN）_09653304.md`

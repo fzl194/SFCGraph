@@ -67,4 +67,4 @@ ADD N26GWSELPLCY: SUBRANGE=ALL_USER, APNNI="HUAWEI1.com", CUSLABEL="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-N26GWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N26融合网关选择策略（ADD-N26GWSELPLCY）_72345737.md`

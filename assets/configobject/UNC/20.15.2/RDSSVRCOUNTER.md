@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSSVRCOUNTER.md`
-- 原始手册：`evidence/UNC/20.15.2/RDSSVRCOUNTER.md`
+- 原始手册：`evidence/UNC/20.15.2/显示RADIUS相关消息发送接收个数的统计信息（DSP-RDSSVRCOUNTER）_09896765.md`
+- 原始手册：`evidence/UNC/20.15.2/清除RADIUS相关消息发送接收个数的统计信息（CLR-RDSSVRCOUNTER）_09896764.md`

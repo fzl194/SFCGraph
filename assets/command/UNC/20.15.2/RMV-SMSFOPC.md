@@ -58,4 +58,4 @@ RMV SMSFOPC: OPX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMSFOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSF本局信令点(RMV-SMSFOPC)_27137542.md`

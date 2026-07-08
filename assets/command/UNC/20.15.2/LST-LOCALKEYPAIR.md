@@ -95,4 +95,4 @@ OpenSSH格式的公钥编码  =  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClDXxy/ry
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCALKEYPAIR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地公钥（LST-LOCALKEYPAIR）_59036289.md`

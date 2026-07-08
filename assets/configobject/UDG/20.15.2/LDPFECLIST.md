@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPFECLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPFECLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPFECLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除FEC列表（RMV-LDPFECLIST）_50121438.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FEC列表配置（LST-LDPFECLIST）_49801438.md`
+- 原始手册：`evidence/UDG/20.15.2/添加FEC列表（ADD-LDPFECLIST）_00841377.md`

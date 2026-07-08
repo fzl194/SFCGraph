@@ -54,4 +54,4 @@ ADD NWDAFINFOEXT: INSTANCENAME="NWDAF_Instance_0", ID="central",NWDAFEVENTS=QOS_
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NWDAFINFOEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NWDAF扩展信息（ADD-NWDAFINFOEXT）_77579548.md`

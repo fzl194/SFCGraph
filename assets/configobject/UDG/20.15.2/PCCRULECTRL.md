@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PCCRULECTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/PCCRULECTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PCC-QoS相关控制参数（LST-PCCRULECTRL）_08342474.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PCC-QoS相关控制参数（SET-PCCRULECTRL）_08342473.md`

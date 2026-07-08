@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/5GCQOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCQOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCQOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCQOSACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5GC-QoS控制动作配置（MOD-5GCQOSACTION）_09651409.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5GC-QoS控制动作配置（RMV-5GCQOSACTION）_09652131.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5GC-QoS控制动作配置（ADD-5GCQOSACTION）_09652342.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5GC-QoS控制动作配置（LST-5GCQOSACTION）_09652147.md`

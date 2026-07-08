@@ -62,4 +62,4 @@ RMV PRALSTMEM: PRAID="0x800001", LOCIDTYPE=TAI, MCC="123", MNC="01", TACBEGIN="0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PRALSTMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PRA列表成员(RMV-PRALSTMEM)_26305404.md`

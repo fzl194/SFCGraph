@@ -58,4 +58,4 @@ RMV AMFDNNPLCY: DNNNI="huawei.com", SST=1, SD="000001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMFDNNPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN接入选择策略（RMV-AMFDNNPLCY）_46361062.md`

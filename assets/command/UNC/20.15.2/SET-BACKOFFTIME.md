@@ -70,4 +70,4 @@ SET BACKOFFTIME: APNNAME = "huawei.com", OVERLOADSW = ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-BACKOFFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Back-off-Time信息（SET-BACKOFFTIME）_09652083.md`

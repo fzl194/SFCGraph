@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBSCTPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBSCTPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBSCTPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复SCTP全局参数（RTR-GLBSCTPPARA）_09897327.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP全局参数（LST-GLBSCTPPARA）_09897328.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SCTP全局参数（SET-GLBSCTPPARA）_09897326.md`

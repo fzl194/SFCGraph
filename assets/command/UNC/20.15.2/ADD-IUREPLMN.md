@@ -60,4 +60,4 @@ ADD IUREPLMN: MCC="460", MNC="05";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IUREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加3G重定向PLMN(ADD-IUREPLMN)_19541117.md`

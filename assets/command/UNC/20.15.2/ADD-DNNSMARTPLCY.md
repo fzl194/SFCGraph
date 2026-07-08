@@ -62,4 +62,4 @@ ADD DNNSMARTPLCY: DNN="huawei.com", SMFSELSW=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNNSMARTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN智能分流配置（ADD-DNNSMARTPLCY）_87520112.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTTAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTTAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTTAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTTAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RRC-Inactive生效的TAI范围（MOD-RRCINACTTAI）_70382361.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RRC-Inactive生效的TAI范围（RMV-RRCINACTTAI）_23623010.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RRC-Inactive生效的TAI范围（ADD-RRCINACTTAI）_23782738.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RRC-Inactive生效的TAI范围（LST-RRCINACTTAI）_23782778.md`

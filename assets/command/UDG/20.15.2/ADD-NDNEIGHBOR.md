@@ -58,4 +58,4 @@ ADD NDNEIGHBOR:IFNAME="Ethernet65/0/8",IPV6ADDRESS="2001:db8::11",MACADDRESS="00
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-NDNEIGHBOR.md`
+- 原始手册：`evidence/UDG/20.15.2/增加静态ND邻居表项（ADD-NDNEIGHBOR）_00600305.md`

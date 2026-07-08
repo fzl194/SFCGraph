@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOALGCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TOALGCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP算法配置（LST-TOALGCFG）_44249106.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP算法配置（SET-TOALGCFG）_44038792.md`

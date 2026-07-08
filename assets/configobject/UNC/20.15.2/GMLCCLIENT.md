@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GMLCCLIENT.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCCLIENT.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCCLIENT.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLCCLIENT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GMLC和LCS-Client对照关系(MOD-GMLCCLIENT)_72345403.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GMLC和LCS-Client对照关系(RMV-GMLCCLIENT)_26305612.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GMLC和LCS-Client对照关系(ADD-GMLCCLIENT)_72225481.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GMLC和LCS-Client对照关系(LST-GMLCCLIENT)_26145804.md`

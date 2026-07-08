@@ -61,4 +61,4 @@ SET NCGCGFSFP: SFPID=1, SFPVALUE=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NCGCGFSFP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置软参（SET-NCGCGFSFP）_85862272.md`

@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACSFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/文件传输（FTR-ACSFILE）_05338967.md`

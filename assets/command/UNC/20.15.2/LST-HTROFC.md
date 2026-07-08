@@ -74,4 +74,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HTROFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTR局向(LST-HTROFC)_26305964.md`

@@ -65,4 +65,4 @@ SET APNIPV6INFID: APN="apn1", IMSI=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNIPV6INFID.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-IPv6接口ID配置（SET-APNIPV6INFID）_71074281.md`

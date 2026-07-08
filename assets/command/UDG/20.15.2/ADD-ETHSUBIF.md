@@ -65,4 +65,4 @@ ADD ETHSUBIF: IFNAME="Ethernet64/0/3.1", VLANTYPEVID=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-ETHSUBIF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加子接口配置（ADD-ETHSUBIF）_49801486.md`

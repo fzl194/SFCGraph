@@ -68,4 +68,4 @@ SGW的IPv6地址  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGWIPTOSGWPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-IP（LST-SGWIPTOSGWPOOL）_31453517.md`

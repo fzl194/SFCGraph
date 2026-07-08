@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/T1N1PARA.md`
-- 原始手册：`evidence/UNC/20.15.2/T1N1PARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PFCP-T1N1参数配置（LST-T1N1PARA）_09653758.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PFCP-T1N1参数配置（SET-T1N1PARA）_09651332.md`

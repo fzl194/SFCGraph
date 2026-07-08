@@ -70,4 +70,4 @@ Diameter本端信息组名  =  abc
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCALHOSTBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter本端主机与Diameter本端主机组的关联关系（LST-LOCALHOSTBIND）_16858411.md`

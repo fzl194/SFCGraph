@@ -68,4 +68,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OSPFHOSTTABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF动态主机名的信息（DSP-OSPFHOSTTABLE）_00866737.md`

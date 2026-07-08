@@ -74,4 +74,4 @@ ADD NRFKEY: KEYNAME="keyname001", KEYINFO="*****", AUTHPWD="*****",NRFKEYIDSW=FU
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF密钥（ADD-NRFKEY）_09651563.md`

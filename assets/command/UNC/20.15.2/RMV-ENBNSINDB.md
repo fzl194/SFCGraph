@@ -58,4 +58,4 @@ RMV ENBNSINDB: ENBTYPE=HOME_ENODEB, MCC="123", MNC="01", ENBID=327697;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ENBNSINDB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配置的eNodeB邻接关系(RMV-ENBNSINDB)_26146260.md`

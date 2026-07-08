@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCPCLIENTSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCPv4客户端状态信息（DSP-DHCPCLIENTSTAT）_50281374.md`

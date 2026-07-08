@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PODHEALCPUTHR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对应PODTYPE下CPU的阈值配置（ADD-PODHEALCPUTHR）_60073345.md`

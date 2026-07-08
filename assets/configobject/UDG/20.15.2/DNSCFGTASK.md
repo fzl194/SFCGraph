@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DNSCFGTASK.md`
-- 原始手册：`evidence/UDG/20.15.2/DNSCFGTASK.md`
+- 原始手册：`evidence/UDG/20.15.2/执行DNS配置任务（EXC-DNSCFGTASK）_14541487.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS配置任务状态（LST-DNSCFGTASK）_12050995.md`

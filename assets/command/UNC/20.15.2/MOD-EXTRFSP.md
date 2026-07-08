@@ -65,4 +65,4 @@ MOD EXTRFSP: TYPE=SPEC_MOVE_SUB, ARETYPE=TAGP, TAGPID=1, TRFSP=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-EXTRFSP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改扩展RFSP策略组成员(MOD-EXTRFSP)_26305348.md`

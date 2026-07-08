@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNL2TPATTR.md`
-- 原始手册：`evidence/UDG/20.15.2/APNL2TPATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN-L2TP配置（LST-APNL2TPATTR）_35373519.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN-L2TP配置（SET-APNL2TPATTR）_35373518.md`

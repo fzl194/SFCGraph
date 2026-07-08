@@ -59,4 +59,4 @@ RMV GUAMI: INDEX=9;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF全局标识（RMV-GUAMI）_09652172.md`

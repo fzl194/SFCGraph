@@ -67,4 +67,4 @@ BFD自动化配置模板名称  =  bfdtemp1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AUTOSCALINGIPREACH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP可达性检测自动化配置模板（LST-AUTOSCALINGIPREACH）_00440453.md`

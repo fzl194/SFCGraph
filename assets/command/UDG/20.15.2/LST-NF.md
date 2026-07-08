@@ -67,4 +67,4 @@ NF锁定状态开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NF的锁定信息（LST-NF）_86526378.md`

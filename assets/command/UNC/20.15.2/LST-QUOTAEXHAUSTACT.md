@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-QUOTAEXHAUSTACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配额耗尽后的动作（LST-QUOTAEXHAUSTACT）_41849755.md`

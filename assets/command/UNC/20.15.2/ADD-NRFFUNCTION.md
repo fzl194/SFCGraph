@@ -63,4 +63,4 @@ ADD NRFFUNCTION:INSTANCEID="Instanceid01",NAME="nfdescription01",ADMINSTATE=Lock
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/添加NRF功能实例信息（ADD-NRFFUNCTION）_09652375.md`

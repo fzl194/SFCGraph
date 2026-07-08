@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBNSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/GBNSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/GBNSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/GBNSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NSE和属性模板的关联(MOD-GBNSEGRP)_72225681.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSE和属性模板的关联(RMV-GBNSEGRP)_26146002.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSE和属性模板的关联(ADD-GBNSEGRP)_72345601.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSE和属性模板的关联(LST-GBNSEGRP)_26305812.md`

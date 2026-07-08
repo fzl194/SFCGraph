@@ -77,4 +77,4 @@ UE Radio Capability信元内存使用信息     USN_SP_RU_0065    SPP          0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SYSRESINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示系统资源使用信息(DSP-SYSRESINFO)_72225559.md`

@@ -58,4 +58,4 @@ RMV NGEMGCNUM: MCC="460", ESC=FIREBRIGADE, NUM="119";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGEMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除紧急号码配置信息（RMV-NGEMGCNUM）_09654354.md`

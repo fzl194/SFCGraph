@@ -60,4 +60,4 @@ RMV GTPPLOCINFO: HOSTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GTPPLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTPP本端信息（RMV-GTPPLOCINFO）_09896857.md`

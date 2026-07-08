@@ -74,4 +74,4 @@ MOD M2MSIGCTRL: CFGINDEX=1, CTRLSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-M2MSIGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改M2M信令控制配置(MOD-M2MSIGCTRL)_26145768.md`

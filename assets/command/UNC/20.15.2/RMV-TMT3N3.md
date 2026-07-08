@@ -58,4 +58,4 @@ RMV TMT3N3: TMSPECIALMSGCFG=SPECIAL_TM_MSG, TMMSG=TRK_USR_ATT_REQ;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TMT3N3.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Tm接口指定消息T3N3参数(RMV-TMT3N3)_89014960.md`

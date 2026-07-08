@@ -70,4 +70,4 @@ TAI组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TAIGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查看指定TAI组或者已配置所有TAI组的配置信息（LST-TAIGROUP）_19691738.md`

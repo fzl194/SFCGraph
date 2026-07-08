@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSCPDOMAINRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSCPDOMAINRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSCPDOMAINRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCP-Domain最长匹配后缀转发路由（RMV-NRFSCPDOMAINRT）_83743802.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCP-Domain最长匹配后缀转发路由（ADD-NRFSCPDOMAINRT）_29543429.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCP-Domain最长匹配后缀转发路由（LST-NRFSCPDOMAINRT）_29461977.md`

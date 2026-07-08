@@ -64,4 +64,4 @@ SET MULTISRVPLMNEN:MULTISRVPLMNEN=SUPPORT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-MULTISRVPLMNEN.md`
+- 原始手册：`evidence/UNC/20.15.2/设置多Serving-Plmn增强功能（SET-MULTISRVPLMNEN）_47541753.md`

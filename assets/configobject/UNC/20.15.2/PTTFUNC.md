@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PTTFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/PTTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询一键通功能配置（LST-PTTFUNC）_06399916.md`
+- 原始手册：`evidence/UNC/20.15.2/设置一键通配置（SET-PTTFUNC）_06399931.md`

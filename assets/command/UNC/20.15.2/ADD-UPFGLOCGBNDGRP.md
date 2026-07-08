@@ -60,4 +60,4 @@ ADD UPFGLOCGBNDGRP: UPFGLOCGBNDGNAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPFGLOCGBNDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF组与Diameter本端主机组的绑定关系组（ADD-UPFGLOCGBNDGRP）_29420948.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AIFUNCPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/AIFUNCPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/SA-Intelligence功能参数（SET-AIFUNCPARA）_93630841.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SA-Intelligence功能参数（LST-AIFUNCPARA）_93749057.md`

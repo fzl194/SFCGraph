@@ -71,4 +71,4 @@ SET SIGNADBMUTEX: MUTEXID=2, AREAID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SIGNADBMUTEX.md`
+- 原始手册：`evidence/UDG/20.15.2/配置特征库规则的加载条件（SET-SIGNADBMUTEX）_40174858.md`

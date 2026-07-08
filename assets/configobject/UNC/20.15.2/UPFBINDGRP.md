@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF和UPF组的绑定关系（RMV-UPFBINDGRP）_32232828.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF和UPF组的绑定关系（ADD-UPFBINDGRP）_32232815.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF和UPF组的绑定关系（LST-UPFBINDGRP）_32232822.md`

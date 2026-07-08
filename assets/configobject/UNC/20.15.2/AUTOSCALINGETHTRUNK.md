@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGETHTRUNK.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGETHTRUNK.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGETHTRUNK.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGETHTRUNK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改以太网隧道自动化多虚拟网卡配置模板（MOD-AUTOSCALINGETHTRUNK）_00841465.md`
+- 原始手册：`evidence/UNC/20.15.2/删除以太网隧道自动化多虚拟网卡配置模板（RMV-AUTOSCALINGETHTRUNK）_49801826.md`
+- 原始手册：`evidence/UNC/20.15.2/增加以太网隧道自动化多虚拟网卡配置模板（ADD-AUTOSCALINGETHTRUNK）_50121226.md`
+- 原始手册：`evidence/UNC/20.15.2/查询以太网隧道自动化多虚拟网卡配置模板（LST-AUTOSCALINGETHTRUNK）_00841505.md`

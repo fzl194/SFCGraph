@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ETHSUBIF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询子接口配置信息（LST-ETHSUBIF）_49961422.md`

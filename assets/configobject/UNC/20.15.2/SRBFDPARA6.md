@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRBFDPARA6.md`
-- 原始手册：`evidence/UNC/20.15.2/SRBFDPARA6.md`
-- 原始手册：`evidence/UNC/20.15.2/SRBFDPARA6.md`
-- 原始手册：`evidence/UNC/20.15.2/SRBFDPARA6.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPv6-BFD模板（MOD-SRBFDPARA6）_49801386.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6-BFD模板（RMV-SRBFDPARA6）_00601409.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv6-BFD模板（ADD-SRBFDPARA6）_49802550.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6-BFD模板（LST-SRBFDPARA6）_00440401.md`

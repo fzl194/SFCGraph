@@ -61,4 +61,4 @@ RMV SMCAUSEGRP: CAUSEGRPID=126;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMCAUSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SM原因值映射组配置（RMV-SMCAUSEGRP）_09654432.md`

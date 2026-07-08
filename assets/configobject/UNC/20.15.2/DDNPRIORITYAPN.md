@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNPRIORITYAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNPRIORITYAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNPRIORITYAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNPRIORITYAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的DDN消息优先级配置（MOD-DDNPRIORITYAPN）_04284717.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的DDN消息优先级配置（RMV-DDNPRIORITYAPN）_04284720.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的DDN消息优先级配置（ADD-DDNPRIORITYAPN）_04284706.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的DDN消息优先级配置（LST-DDNPRIORITYAPN）_04284709.md`

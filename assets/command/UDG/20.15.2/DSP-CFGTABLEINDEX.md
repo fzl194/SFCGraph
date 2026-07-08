@@ -74,4 +74,4 @@ defaultrec      0x8             0xfffff         0x9be           0x36            
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CFGTABLEINDEX.md`
+- 原始手册：`evidence/UDG/20.15.2/显示CFG表索引信息和字段信息（DSP-CFGTABLEINDEX）_59104085.md`

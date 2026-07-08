@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOSTTYPE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOSTTYPE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOSTTYPE.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYCOSTTYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改开销值类型设置（MOD-APPLYCOSTTYPE）_50281210.md`
+- 原始手册：`evidence/UNC/20.15.2/删除开销值类型设置（RMV-APPLYCOSTTYPE）_49801694.md`
+- 原始手册：`evidence/UNC/20.15.2/增加开销值类型设置（ADD-APPLYCOSTTYPE）_00865661.md`
+- 原始手册：`evidence/UNC/20.15.2/查询开销值类型设置（LST-APPLYCOSTTYPE）_00600969.md`

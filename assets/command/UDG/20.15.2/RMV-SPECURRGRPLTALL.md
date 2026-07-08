@@ -59,4 +59,4 @@ RMV SPECURRGRPLTALL:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SPECURRGRPLTALL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除所有特殊URR组列表（RMV-SPECURRGRPLTALL）_05776418.md`

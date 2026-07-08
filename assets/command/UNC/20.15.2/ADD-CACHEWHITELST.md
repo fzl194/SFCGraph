@@ -66,4 +66,4 @@ ADD CACHEWHITELST: MCC="460",MNC="03";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CACHEWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/增加异网白名单PLMN信息（ADD-CACHEWHITELST）_18357777.md`

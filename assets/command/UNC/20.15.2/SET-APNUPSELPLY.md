@@ -100,4 +100,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-APNUPSELPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN粒度的UP选择策略（SET-APNUPSELPLY）_96243087.md`

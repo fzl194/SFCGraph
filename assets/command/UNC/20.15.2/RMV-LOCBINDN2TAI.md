@@ -60,4 +60,4 @@ RMV LOCBINDN2TAI: LOCALITY="locality1",MCC="460",MNC="03",N2TACSTART="130101",N2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCBINDN2TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF位置信息与UPF优先支持的5G-TAI范围的绑定关系（RMV-LOCBINDN2TAI）_96242799.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EPSQOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQOSACTION.md`
-- 原始手册：`evidence/UNC/20.15.2/EPSQOSACTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改EPS-QoS控制动作配置（MOD-EPSQOSACTION）_09652244.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EPS-QoS控制动作配置（RMV-EPSQOSACTION）_09652277.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EPS-QoS控制动作配置（ADD-EPSQOSACTION）_09654382.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EPS-QoS控制动作配置（LST-EPSQOSACTION）_09652483.md`

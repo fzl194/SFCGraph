@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SFEMSGSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FEI消息统计（DSP-SFEMSGSTC）_50280982.md`

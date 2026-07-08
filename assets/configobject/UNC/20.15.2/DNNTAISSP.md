@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNNTAISSP.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNTAISSP.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNTAISSP.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNTAISSP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNN的TAI和ServingScope映射（MOD-DNNTAISSP）_46201086.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN的TAI和ServingScope映射（RMV-DNNTAISSP）_45881874.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN的TAI和ServingScope映射（ADD-DNNTAISSP）_46041326.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN的TAI和ServingScope映射（LST-DNNTAISSP）_96506117.md`

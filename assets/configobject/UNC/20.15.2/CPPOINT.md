@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPPOINT.md`
-- 原始手册：`evidence/UNC/20.15.2/CPPOINT.md`
-- 原始手册：`evidence/UNC/20.15.2/CPPOINT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CP端点信息（RMV-CPPOINT）_09654362.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CP端点信息（ADD-CPPOINT）_09653065.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CP端点信息（LST-CPPOINT）_09654424.md`

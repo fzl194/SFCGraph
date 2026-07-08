@@ -68,4 +68,4 @@ PLMN群组标识 =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SHAREPLMNMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询共享PLMN群组成员(LST-SHAREPLMNMEM)_83919368.md`

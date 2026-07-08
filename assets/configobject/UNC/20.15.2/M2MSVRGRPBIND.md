@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/M2MSVRGRPBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSVRGRPBIND.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MSVRGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M服务器组绑定关系（RMV-M2MSVRGRPBIND）_73321244.md`
+- 原始手册：`evidence/UNC/20.15.2/增加M2M服务器组绑定关系（ADD-M2MSVRGRPBIND）_73321227.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M服务器组绑定关系（LST-M2MSVRGRPBIND）_73321235.md`

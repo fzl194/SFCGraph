@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UEDNSBINDUPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSBINDUPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSBINDUPGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSBINDUPGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF组的DNS属性（MOD-UEDNSBINDUPGRP）_73321241.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF组的DNS属性（RMV-UEDNSBINDUPGRP）_73321246.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF组的DNS属性（ADD-UEDNSBINDUPGRP）_73321229.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF组的DNS属性（LST-UEDNSBINDUPGRP）_73321237.md`

@@ -65,4 +65,4 @@ MOD ALIASAPN: SUBRANGE=ALL_USER, OLDAPN="WCDMA", NEWAPN="HUAWEI1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ALIASAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改别名APN配置(MOD-ALIASAPN)_72225365.md`

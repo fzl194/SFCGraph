@@ -33,5 +33,5 @@ MME组Pool时，如果某个MME故障，则故障MME上的用户会接入到Pool
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INTERMMEFC.md`
-- 原始手册：`evidence/UNC/20.15.2/INTERMMEFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Inter-MME流控参数(LST-INTERMMEFC)_26146164.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Inter-MME流控参数(SET-INTERMMEFC)_72345763.md`

@@ -100,4 +100,4 @@ BSF支持基于DNN过滤查询会话绑定信息特性开关  =  不支持
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF扩展功能（LST-SMFFUNC）_09652494.md`

@@ -36,7 +36,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPRESOURCE.md`
-- 原始手册：`evidence/UNC/20.15.2/IPRESOURCE.md`
-- 原始手册：`evidence/UNC/20.15.2/IPRESOURCE.md`
-- 原始手册：`evidence/UNC/20.15.2/IPRESOURCE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IP资源（MOD-IPRESOURCE）_51174284.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IP资源（RMV-IPRESOURCE）_51174283.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP资源（ADD-IPRESOURCE）_51174282.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IP资源（LST-IPRESOURCE）_51174285.md`

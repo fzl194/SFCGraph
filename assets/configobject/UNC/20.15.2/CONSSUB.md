@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CONSSUB.md`
+- 原始手册：`evidence/UNC/20.15.2/显示消费者订阅信息（DSP-CONSSUB）_00600565.md`

@@ -53,4 +53,4 @@ RMV OSPFV3HOSTNAME:PROCID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-OSPFV3HOSTNAME.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3主机名配置（RMV-OSPFV3HOSTNAME）_49801718.md`

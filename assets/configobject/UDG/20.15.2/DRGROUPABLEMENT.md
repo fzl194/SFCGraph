@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DRGROUPABLEMENT.md`
-- 原始手册：`evidence/UDG/20.15.2/DRGROUPABLEMENT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询是否使能热备容灾组（LST-DRGROUPABLEMENT）_00761578.md`
+- 原始手册：`evidence/UDG/20.15.2/设置是否使能热备容灾组（SET-DRGROUPABLEMENT）_01081370.md`

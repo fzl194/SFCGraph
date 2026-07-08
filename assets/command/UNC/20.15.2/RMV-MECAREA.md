@@ -57,4 +57,4 @@ RMV MECAREA: AREAID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MECAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-MEC区域信息（RMV-MECAREA）_34892008.md`

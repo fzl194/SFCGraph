@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSELPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IP地址选择策略(MOD-IPSELPLCY)_26305272.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IP地址选择策略(RMV-IPSELPLCY)_72345059.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP地址选择策略(ADD-IPSELPLCY)_72225141.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IP地址选择策略(LST-IPSELPLCY)_26145462.md`

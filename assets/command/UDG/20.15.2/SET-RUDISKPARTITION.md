@@ -86,4 +86,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RUDISKPARTITION.md`
+- 原始手册：`evidence/UDG/20.15.2/设置RU磁盘过载配置（SET-RUDISKPARTITION）_59103406.md`

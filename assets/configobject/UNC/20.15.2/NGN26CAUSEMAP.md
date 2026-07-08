@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGN26CAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NGN26CAUSEMAP.md`
-- 原始手册：`evidence/UNC/20.15.2/NGN26CAUSEMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-N26接口原因值映射配置（RMV-NGN26CAUSEMAP）_70519289.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-N26接口原因值映射配置（ADD-NGN26CAUSEMAP）_71278785.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-N26接口原因值映射配置（LST-NGN26CAUSEMAP）_70798977.md`

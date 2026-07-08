@@ -74,4 +74,4 @@ SET DBPARAS: PARANAME=SdbBatchDuration, PARAVALUE="111";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DBPARAS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DB参数（SET-DBPARAS）_97800890.md`

@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSRULEACL.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSRULEACL.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSRULEACL.md`
+- 原始手册：`evidence/UDG/20.15.2/流分类下删除ACL规则组（RMV-QOSRULEACL）_00841669.md`
+- 原始手册：`evidence/UDG/20.15.2/流分类下增加ACL规则组（ADD-QOSRULEACL）_00600841.md`
+- 原始手册：`evidence/UDG/20.15.2/流分类下查询ACL规则组（LST-QOSRULEACL）_49801690.md`

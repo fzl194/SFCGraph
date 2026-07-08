@@ -73,4 +73,4 @@ SET N40MSGSTG: STGSWITCH=ENABLE, REPLAYINTERVAL=20, REPLAYRATE=600;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N40MSGSTG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缓存开关、回放间隔、回放速率（SET-N40MSGSTG）_34667405.md`

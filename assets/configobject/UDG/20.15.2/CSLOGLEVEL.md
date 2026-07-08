@@ -37,7 +37,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CSLOGLEVEL.md`
-- 原始手册：`evidence/UDG/20.15.2/CSLOGLEVEL.md`
-- 原始手册：`evidence/UDG/20.15.2/CSLOGLEVEL.md`
-- 原始手册：`evidence/UDG/20.15.2/CSLOGLEVEL.md`
+- 原始手册：`evidence/UDG/20.15.2/更新日志输出级别（STR-CSLOGLEVEL）_09587386.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志级别（DSP-CSLOGLEVEL）_09587892.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志输出级别（LST-CSLOGLEVEL）_09587888.md`
+- 原始手册：`evidence/UDG/20.15.2/设置日志输出级别（SET-CSLOGLEVEL）_09587910.md`

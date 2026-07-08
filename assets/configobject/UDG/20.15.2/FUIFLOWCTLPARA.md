@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FUIFLOWCTLPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/FUIFLOWCTLPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询欠费重定向流控参数（LST-FUIFLOWCTLPARA）_82837546.md`
+- 原始手册：`evidence/UDG/20.15.2/设置欠费重定向流控参数（SET-FUIFLOWCTLPARA）_82837545.md`

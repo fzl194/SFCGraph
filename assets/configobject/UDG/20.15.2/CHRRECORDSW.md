@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CHRRECORDSW.md`
-- 原始手册：`evidence/UDG/20.15.2/CHRRECORDSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CHR本地存盘开关（LST-CHRRECORDSW）_53604161.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CHR本地存盘开关（SET-CHRRECORDSW）_53443167.md`

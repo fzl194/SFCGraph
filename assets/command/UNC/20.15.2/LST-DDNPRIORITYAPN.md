@@ -69,4 +69,4 @@ huawei.com    低
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DDNPRIORITYAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的DDN消息优先级配置（LST-DDNPRIORITYAPN）_04284709.md`

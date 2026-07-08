@@ -66,4 +66,4 @@ ADD IMSIHSS: IMSIPRE="1230107000", HSSRLM="epc.mnc123.mcc123.3gppnetwork.org", G
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IMSIHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI-HSS对应关系(ADD-IMSIHSS)_26145454.md`

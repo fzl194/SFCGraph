@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BACKOFFTIMECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/BACKOFFTIMECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询异常场景的Back-off-Time开关（LST-BACKOFFTIMECTRL）_96242091.md`
+- 原始手册：`evidence/UNC/20.15.2/设置异常场景的Back-off-Time开关（SET-BACKOFFTIMECTRL）_96243091.md`

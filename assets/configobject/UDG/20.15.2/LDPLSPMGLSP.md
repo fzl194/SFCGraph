@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPLSPMGLSP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP的LSP信息（DSP-LDPLSPMGLSP）_50281794.md`

@@ -50,4 +50,4 @@ RMV HTTPRESCFG: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-HTTPRESCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTP资源流控门限（RMV-HTTPRESCFG）_54223649.md`

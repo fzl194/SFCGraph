@@ -89,4 +89,4 @@ ADD RDSSVRGRP:RDSSVRGRPNAME="rsg",SIGOPTACCTMSG=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RDSSVRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Radius服务器组（ADD-RDSSVRGRP）_09896730.md`

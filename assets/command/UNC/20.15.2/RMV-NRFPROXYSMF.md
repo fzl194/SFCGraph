@@ -55,4 +55,4 @@ RMV NRFPROXYSMF: NFINSTANCEID="Nfinstanceid01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFPROXYSMF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF管理的ProxySMF（RMV-NRFPROXYSMF）_23623002.md`

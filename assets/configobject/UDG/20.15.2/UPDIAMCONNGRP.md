@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONNGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONNGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONNGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONNGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONNGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter链路组（MOD-UPDIAMCONNGRP）_97080151.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter链路组（RMV-UPDIAMCONNGRP）_45195174.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter链路组（ADD-UPDIAMCONNGRP）_97314555.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter链路组（LST-UPDIAMCONNGRP）_45432690.md`
+- 原始手册：`evidence/UDG/20.15.2/重建Diameter链路组（RST-UPDIAMCONNGRP）_97314565.md`

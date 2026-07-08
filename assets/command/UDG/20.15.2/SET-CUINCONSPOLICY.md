@@ -70,4 +70,4 @@ SET CUINCONSPOLICY: BYPASSSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-CUINCONSPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CP和UP关键配置不一致的处理策略（SET-CUINCONSPOLICY）_64015288.md`

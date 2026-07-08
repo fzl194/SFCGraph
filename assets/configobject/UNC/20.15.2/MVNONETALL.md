@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MVNONETALL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除所有MVNO网络配置信息（RMV-MVNONETALL）_14719677.md`

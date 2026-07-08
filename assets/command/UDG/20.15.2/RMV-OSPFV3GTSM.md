@@ -53,4 +53,4 @@ RMV OSPFV3GTSM:VRFNAME="abc";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-OSPFV3GTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3-GTSM配置（RMV-OSPFV3GTSM）_00840869.md`

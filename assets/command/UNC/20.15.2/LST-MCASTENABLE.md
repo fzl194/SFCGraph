@@ -65,4 +65,4 @@ VPN实例名称  =  _public_
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MCASTENABLE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询组播使能开关配置（LST-MCASTENABLE）_49801642.md`

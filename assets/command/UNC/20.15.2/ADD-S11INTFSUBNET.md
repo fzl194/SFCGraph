@@ -71,4 +71,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-S11INTFSUBNET.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S11接口子网配置-(ADD-S11INTFSUBNET)_19330999.md`

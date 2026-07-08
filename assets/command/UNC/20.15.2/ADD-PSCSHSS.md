@@ -59,4 +59,4 @@ ADD PSCSHSS: HSSHOST="HUAWEI";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PSCSHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加联合接入HSS白名单(ADD-PSCSHSS)_35873478.md`

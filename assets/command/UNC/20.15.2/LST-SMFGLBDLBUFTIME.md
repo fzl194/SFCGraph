@@ -63,4 +63,4 @@ NB-IoT用户下行报文缓存时长(秒)  =  6
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFGLBDLBUFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局下行报文缓存时长（LST-SMFGLBDLBUFTIME）_96805492.md`

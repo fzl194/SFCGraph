@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPENDPOINT.md`
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPENDPOINT.md`
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPENDPOINT.md`
-- 原始手册：`evidence/UDG/20.15.2/UPSCTPENDPOINT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改SCTP端点（MOD-UPSCTPENDPOINT）_45195212.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SCTP端点（RMV-UPSCTPENDPOINT）_97314589.md`
+- 原始手册：`evidence/UDG/20.15.2/增加SCTP端点（ADD-UPSCTPENDPOINT）_45432722.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SCTP端点（LST-UPSCTPENDPOINT）_97080187.md`

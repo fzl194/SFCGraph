@@ -64,4 +64,4 @@ MOD REALMBINDAPN: APN="isp", APPLICATION=GX, CONSTBYIMSISW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-REALMBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN与Diameter-Realm关联关系（MOD-REALMBINDAPN）_09897286.md`

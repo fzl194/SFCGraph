@@ -68,4 +68,4 @@ MOD SCCPDPC: DPX=1, LDP=BACKUP, BDPX=3, DPN="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SCCPDPC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP目的信令点(MOD-SCCPDPC)_26146320.md`

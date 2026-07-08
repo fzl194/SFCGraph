@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SFETRACEFCCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VNRS-IP消息跟踪的流控使能配置-(LST-SFETRACEFCCFG)_48203926.md`

@@ -72,4 +72,4 @@ SMF发现拒绝原因值(Not Found)  =  10
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMPDUCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDU会话控制参数（LST-SMPDUCTRL）_44007229.md`

@@ -65,4 +65,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TRFCDFDSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询大流量攻击防护配置（LST-TRFCDFDSWITCH）_82837761.md`

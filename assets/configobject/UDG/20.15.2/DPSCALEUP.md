@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DPSCALEUP.md`
-- 原始手册：`evidence/UDG/20.15.2/DPSCALEUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询硬盘分区扩容进展(DSP-DPSCALEUP)_29626978.md`
+- 原始手册：`evidence/UDG/20.15.2/硬盘分区扩容(ACT-DPSCALEUP)_29626977.md`

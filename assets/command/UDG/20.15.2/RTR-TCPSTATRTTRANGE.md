@@ -54,4 +54,4 @@ RTR TCPSTATRTTRANGE:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-TCPSTATRTTRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复TCP统计功能的RTT区间为初始值（RTR-TCPSTATRTTRANGE）_74589219.md`

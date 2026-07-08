@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-BGPCONGESTATISTICS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP流控信息（DSP-BGPCONGESTATISTICS）_00866057.md`

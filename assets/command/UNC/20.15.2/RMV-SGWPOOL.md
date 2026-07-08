@@ -56,4 +56,4 @@ RMV SGWPOOL:SGWPOOLNAME="sgwpool1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SGWPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-POOL（RMV-SGWPOOL）_31453524.md`

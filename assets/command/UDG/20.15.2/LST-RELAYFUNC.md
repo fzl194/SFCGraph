@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继功能配置（LST-RELAYFUNC）_14541477.md`

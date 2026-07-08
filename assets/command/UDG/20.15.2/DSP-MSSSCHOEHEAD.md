@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSSCHOEHEAD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询保序统计信息（DSP-MSSSCHOEHEAD）_49801994.md`

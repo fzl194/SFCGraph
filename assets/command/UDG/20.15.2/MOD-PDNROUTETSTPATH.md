@@ -71,4 +71,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-PDNROUTETSTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改UPF向PDN服务器发送探测消息的探测路径配置（MOD-PDNROUTETSTPATH）_64073333.md`

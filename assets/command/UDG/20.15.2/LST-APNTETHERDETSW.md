@@ -69,4 +69,4 @@ APN Tethering终端数量检测开关
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNTETHERDETSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN-Tethering终端数量检测开关（LST-APNTETHERDETSW）_86526930.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SECCARINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示当前安全CAR信息（DSP-SECCARINFO）_49961714.md`

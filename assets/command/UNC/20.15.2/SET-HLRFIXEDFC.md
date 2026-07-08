@@ -62,4 +62,4 @@ SET HLRFIXEDFC: UPLOCFCSW=ON, UPLOCFCRATE=10000, RATELEVEL=WholeSystem;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-HLRFIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR向HLR发送请求的固定速率流控（SET-HLRFIXEDFC）_04121613.md`

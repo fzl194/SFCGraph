@@ -74,4 +74,4 @@ ADD GLBDIAMREALM:APPLICATION=GX,SEGMENTNAME="imsi_msisdn_segment_1",PRIORITY=100
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GLBDIAMREALM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加全局Diameter域（ADD-GLBDIAMREALM）_09897280.md`

@@ -57,4 +57,4 @@ RMV PCCTEMPLATE: PCCTEMPNAME="new_pcc_template";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PCCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCC模板（RMV-PCCTEMPLATE）_09897066.md`

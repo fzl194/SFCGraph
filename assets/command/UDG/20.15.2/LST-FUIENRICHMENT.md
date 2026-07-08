@@ -80,4 +80,4 @@ FUI重定向加速功能使用的端口 10  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FUIENRICHMENT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FUI增强参数（LST-FUIENRICHMENT）_86528461.md`

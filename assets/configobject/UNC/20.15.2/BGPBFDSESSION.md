@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BGPBFDSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP建立的BFD会话信息（DSP-BGPBFDSESSION）_00865681.md`

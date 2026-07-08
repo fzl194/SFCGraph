@@ -58,4 +58,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/NP状态查询（DSP-NPNODE）_18818228.md`

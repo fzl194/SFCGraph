@@ -59,4 +59,4 @@ RMV AMUEPLCYCTRL: SUBRANGE=FOREIGN_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMUEPLCYCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AM策略和UE策略控制参数（RMV-AMUEPLCYCTRL）_09654397.md`

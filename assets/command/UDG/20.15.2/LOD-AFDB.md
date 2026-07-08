@@ -61,4 +61,4 @@ LOD AFDB: VERSION="0001.01.0086.0001.001";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOD-AFDB.md`
+- 原始手册：`evidence/UDG/20.15.2/加载防欺诈业务规则数据库（LOD-AFDB）_82837784.md`

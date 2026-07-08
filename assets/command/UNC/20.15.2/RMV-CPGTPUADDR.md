@@ -64,4 +64,4 @@ RMV CPGTPUADDR:IPVERSION=IPV4;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CPGTPUADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CP-GTP-U地址（RMV-CPGTPUADDR）_96805498.md`

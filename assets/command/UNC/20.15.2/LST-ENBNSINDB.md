@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ENBNSINDB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置的eNodeB邻接关系(LST-ENBNSINDB)_72225939.md`

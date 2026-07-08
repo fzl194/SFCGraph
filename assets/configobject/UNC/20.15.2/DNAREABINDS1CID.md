@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDS1CID.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDS1CID.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDS1CID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI服务区名称绑定的4G-Cell-ID范围（RMV-DNAREABINDS1CID）_61530999.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI服务区名称绑定的4G-Cell-ID范围（ADD-DNAREABINDS1CID）_16531126.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI服务区名称绑定的4G-Cell-ID范围（LST-DNAREABINDS1CID）_16691118.md`

@@ -68,4 +68,4 @@ SET RELAYFUNC: RELAYSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-RELAYFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置媒体中继功能配置（SET-RELAYFUNC）_64299160.md`

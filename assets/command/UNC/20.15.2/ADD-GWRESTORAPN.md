@@ -58,4 +58,4 @@ ADD GWRESTORAPN: APNNI="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GWRESTORAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网关容灾APN(ADD-GWRESTORAPN)_72225761.md`

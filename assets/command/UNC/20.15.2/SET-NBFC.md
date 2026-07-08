@@ -66,4 +66,4 @@ SET NBFC: NBFCSW=ON, CPUBTHD=65, MINTHD=10, MAXTHD=300, MINBOT=900, MAXBOT=1800;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NBFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NB流控参数(SET-NBFC)_26305974.md`

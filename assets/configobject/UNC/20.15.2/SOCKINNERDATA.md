@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SOCKINNERDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SOCK诊断信息（DSP-SOCKINNERDATA）_50121446.md`

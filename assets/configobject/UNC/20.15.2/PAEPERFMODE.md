@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAEPERFMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/PAEPERFMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/PAEPERFMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/PAEPERFMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配置表中的PAE性能模式（RMV-PAEPERFMODE）_41355453.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE的性能模式（DSP-PAEPERFMODE）_39408166.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配置表中的PAE性能模式（LST-PAEPERFMODE）_04836050.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE的性能模式（SET-PAEPERFMODE）_39566906.md`

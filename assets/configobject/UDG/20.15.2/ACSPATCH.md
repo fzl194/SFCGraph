@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACSPATCH.md`
-- 原始手册：`evidence/UDG/20.15.2/ACSPATCH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除补丁（RMV-ACSPATCH）_05338959.md`
+- 原始手册：`evidence/UDG/20.15.2/校正补丁包（CLB-ACSPATCH）_31115871.md`

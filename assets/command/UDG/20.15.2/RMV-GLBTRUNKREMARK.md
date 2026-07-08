@@ -58,4 +58,4 @@ RMV GLBTRUNKREMARK: QCI=1, ARPPL=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-GLBTRUNKREMARK.md`
+- 原始手册：`evidence/UDG/20.15.2/删除整机Trunk-Remark配置（RMV-GLBTRUNKREMARK）_70043020.md`

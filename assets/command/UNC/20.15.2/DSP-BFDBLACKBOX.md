@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-BFDBLACKBOX.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BFD黑匣子信息（DSP-BFDBLACKBOX）_00601513.md`

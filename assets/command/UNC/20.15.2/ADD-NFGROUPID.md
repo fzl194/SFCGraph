@@ -59,4 +59,4 @@ ADD NFGROUPID: NFINSTANCENAME="SMSF_Instance_0", GROUPID="GROUP01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF群组信息（ADD-NFGROUPID）_44339636.md`

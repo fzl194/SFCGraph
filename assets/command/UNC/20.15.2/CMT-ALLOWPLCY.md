@@ -62,4 +62,4 @@ CMT ALLOWPLCY: CMTTYPE=ALL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CMT-ALLOWPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/提交允许访问策略配置（CMT-ALLOWPLCY）_09651378.md`

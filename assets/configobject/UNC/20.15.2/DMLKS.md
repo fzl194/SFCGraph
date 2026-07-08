@@ -30,8 +30,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路集配置(MOD-DMLKS)_72345879.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter链路集配置(RMV-DMLKS)_26306090.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter链路集配置(ADD-DMLKS)_72225957.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter链路集状态(DSP-DMLKS)_72225959.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter链路集配置(LST-DMLKS)_26146280.md`

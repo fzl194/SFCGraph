@@ -28,5 +28,5 @@ SMSF/VLR仍然向AMF/MME响应注册成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RCLICIGNSW.md`
-- 原始手册：`evidence/UNC/20.15.2/RCLICIGNSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询注册中心用户数license忽略开关（LST-RCLICIGNSW）_54815038.md`
+- 原始手册：`evidence/UNC/20.15.2/设置注册中心用户数license忽略开关（SET-RCLICIGNSW）_54974858.md`

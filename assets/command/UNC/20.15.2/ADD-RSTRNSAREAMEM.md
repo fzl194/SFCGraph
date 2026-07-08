@@ -65,4 +65,4 @@ ADD RSTRNSAREAMEM:AREACODE="jq001.pd006.sh.mcc123.mnc45", MCC="460", MNC="03", B
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RSTRNSAREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TA级限制切片所属跟踪区成员（ADD-RSTRNSAREAMEM）_24956622.md`

@@ -61,4 +61,4 @@ RMV AREAMMINFO: BGNTAI="1111111111", SUBRANGE=HOME_USER, NOID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AREAMMINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于区域的网络名称-(RMV-AREAMMINFO)_42711749.md`

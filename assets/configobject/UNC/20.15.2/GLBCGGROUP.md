@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBCGGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBCGGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局CG组（LST-GLBCGGROUP）_09896862.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局CG组（SET-GLBCGGROUP）_09896861.md`

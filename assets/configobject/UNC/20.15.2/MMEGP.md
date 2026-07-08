@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMEGP.md`
-- 原始手册：`evidence/UNC/20.15.2/MMEGP.md`
-- 原始手册：`evidence/UNC/20.15.2/MMEGP.md`
-- 原始手册：`evidence/UNC/20.15.2/MMEGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MME群组(MOD-MMEGP)_26305432.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MME群组(RMV-MMEGP)_72345219.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MME群组(ADD-MMEGP)_72225301.md`
+- 原始手册：`evidence/UNC/20.15.2/显示MME群组(LST-MMEGP)_26145622.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBINDIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBINDIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBINDIMSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PCSCFGRPBINDIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改P-CSCF组和IMSI_MSISDN号段的绑定关系（MOD-PCSCFGRPBINDIMSI）_76878556.md`
+- 原始手册：`evidence/UNC/20.15.2/删除P-CSCF组和IMSI_MSISDN号段的绑定关系（RMV-PCSCFGRPBINDIMSI）_09653017.md`
+- 原始手册：`evidence/UNC/20.15.2/增加P-CSCF组和IMSI_MSISDN号段的绑定关系（ADD-PCSCFGRPBINDIMSI）_09654389.md`
+- 原始手册：`evidence/UNC/20.15.2/查询P-CSCF组和IMSI_MSISDN号段的绑定关系（LST-PCSCFGRPBINDIMSI）_09652383.md`

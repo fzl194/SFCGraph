@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UP节点协议兼容性配置（MOD-UPCMPT）_88377448.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UP节点协议兼容性配置（RMV-UPCMPT）_35374749.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UP节点协议兼容性配置（ADD-UPCMPT）_35519267.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UP节点协议兼容性配置（LST-UPCMPT）_88377446.md`

@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOGICINF.md`
-- 原始手册：`evidence/UDG/20.15.2/LOGICINF.md`
-- 原始手册：`evidence/UDG/20.15.2/LOGICINF.md`
-- 原始手册：`evidence/UDG/20.15.2/LOGICINF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改逻辑接口（MOD-LOGICINF）_86526348.md`
+- 原始手册：`evidence/UDG/20.15.2/删除逻辑接口（RMV-LOGICINF）_82835380.md`
+- 原始手册：`evidence/UDG/20.15.2/增加逻辑接口（ADD-LOGICINF）_82835378.md`
+- 原始手册：`evidence/UDG/20.15.2/查询逻辑接口（LST-LOGICINF）_86526672.md`

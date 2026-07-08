@@ -59,4 +59,4 @@ SET SFERESALMTHD: RESTYPE=IPv4RecmpNode, TRIGGERTHD=90, RESUMETHD=80;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SFERESALMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VNRS内部资源不足告警的阈值参数（SET-SFERESALMTHD）_15771589.md`

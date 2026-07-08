@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATHSTATUSRPT.md`
-- 原始手册：`evidence/UDG/20.15.2/PATHSTATUSRPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户面路径状态上报功能（LST-PATHSTATUSRPT）_19905872.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户面路径状态上报功能（SET-PATHSTATUSRPT）_19426098.md`

@@ -64,4 +64,4 @@ ADD SPECURRGRPLIST: URRGROUPNAME="cp_token";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SPECURRGRPLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/增加特殊URR组列表（ADD-SPECURRGRPLIST）_82837643.md`

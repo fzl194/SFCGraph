@@ -69,4 +69,4 @@ MOD IMSIAPNBINDUP: IMSI="11111111111111", ACCESSTYPE=NG, APN="huawei.com", PAUPN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IMSIAPNBINDUP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN下用户和UPF的绑定关系配置（MOD-IMSIAPNBINDUP）_21861977.md`

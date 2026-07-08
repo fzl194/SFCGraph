@@ -69,4 +69,4 @@ ADD NRFIMSDNN: DNN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFIMSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMS-PCF的DNN（ADD-NRFIMSDNN）_96241770.md`

@@ -85,4 +85,4 @@ MOD HOST:HOSTNAME="huawei",DOMAINVALUE="www.huawei.com",PRIORITY=100;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-HOST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Host（MOD-HOST）_82837323.md`

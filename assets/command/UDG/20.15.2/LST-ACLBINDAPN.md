@@ -71,4 +71,4 @@ ACL绑定信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ACLBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Acl绑定关系（LST-ACLBINDAPN）_82837727.md`

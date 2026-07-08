@@ -30,8 +30,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSIMSISDNSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIMSISDNSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIMSISDNSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIMSISDNSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSIMSISDNSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI和MSISDN号段（MOD-IMSIMSISDNSEG）_09897129.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI和MSISDN号段（RMV-IMSIMSISDNSEG）_09897130.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IMSI和MSISDN号段（ADD-IMSIMSISDNSEG）_09897128.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IMSI和MSISDN号段（LST-IMSIMSISDNSEG）_09897131.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定IMSI和MSISDN号段（LCK-IMSIMSISDNSEG）_09897132.md`

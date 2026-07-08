@@ -58,4 +58,4 @@ MOD SUBGP: SUBID=30, SUBN="group30";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SUBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户群(MOD-SUBGP)_72345159.md`

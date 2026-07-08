@@ -61,4 +61,4 @@ RMV SESSNCHRPRCTMPL: TMPLIDX=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SESSNCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除会话CHR流程控制模板（RMV-SESSNCHRPRCTMPL）_35628397.md`

@@ -56,4 +56,4 @@ RMV GWPRESELBYIMSI: IMSI="123030000100001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GWPRESELBYIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定用户优选网关（RMV-GWPRESELBYIMSI）_95723013.md`

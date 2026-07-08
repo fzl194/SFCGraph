@@ -73,4 +73,4 @@ ADD EXTRFSP: TYPE=SPEC_MOVE_SUB, ARETYPE=ENBGP, ENBGPID=2, TRFSP=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-EXTRFSP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加扩展RFSP策略组成员(ADD-EXTRFSP)_26145536.md`

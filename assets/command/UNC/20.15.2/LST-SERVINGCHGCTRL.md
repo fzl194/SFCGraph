@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SERVINGCHGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询I-SMF_SGW的计费模式和CHF选择参数（LST-SERVINGCHGCTRL）_13800468.md`

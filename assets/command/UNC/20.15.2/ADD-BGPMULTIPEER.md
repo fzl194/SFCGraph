@@ -67,4 +67,4 @@ ADD BGPMULTIPEER:VRFNAME="vrf1",PEERADDR="10.2.2.2",SOURCEIFNAME="Ethernet66/0/3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-BGPMULTIPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP多源对等体（ADD-BGPMULTIPEER）_50120886.md`

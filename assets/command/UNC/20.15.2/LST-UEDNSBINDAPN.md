@@ -81,4 +81,4 @@ IPv6 第四优先级服务器属性  =  pcrf
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UEDNSBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的DNS属性（LST-UEDNSBINDAPN）_09652680.md`

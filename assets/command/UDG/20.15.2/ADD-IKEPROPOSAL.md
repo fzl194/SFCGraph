@@ -94,4 +94,4 @@ ADD IKEPROPOSAL:PROPOSALNUMBER=1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IKEPROPOSAL.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IKE提议（ADD-IKEPROPOSAL）_26032189.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBRBWCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GBRBWCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GBRBWCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GBRBWCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GBR承载带宽速率控制配置（MOD-GBRBWCTRL）_40119813.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GBR承载带宽速率控制配置（RMV-GBRBWCTRL）_87520124.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GBR承载带宽速率控制配置（ADD-GBRBWCTRL）_87360188.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GBR承载带宽速率控制配置（LST-GBRBWCTRL）_87680056.md`

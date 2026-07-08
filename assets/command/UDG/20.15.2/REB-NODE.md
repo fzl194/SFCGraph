@@ -104,4 +104,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REB-NODE.md`
+- 原始手册：`evidence/UDG/20.15.2/节点重建（REB-NODE）_71765323.md`

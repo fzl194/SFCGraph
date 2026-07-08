@@ -66,4 +66,4 @@ ADD GMLCAU: GMLCID=1, CLTTYPE=VALUE_ADDED_SERVICES, SERTYPE=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GMLCAU.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GMLC权限配置(ADD-GMLCAU)_26145794.md`

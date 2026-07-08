@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPPDPNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示用户面PDP上下文数目(DSP-GTPPDPNUM)_72226029.md`

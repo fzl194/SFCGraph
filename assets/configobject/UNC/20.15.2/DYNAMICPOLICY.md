@@ -33,5 +33,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DYNAMICPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/DYNAMICPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务类型分配动态权重的管理策略（LST-DYNAMICPOLICY）_24015936.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务类型分配动态权重的管理策略（SET-DYNAMICPOLICY）_24015952.md`

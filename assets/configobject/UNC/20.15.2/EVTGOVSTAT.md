@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EVTGOVSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示事件诊断失败状态（DSP-EVTGOVSTAT）_94913407.md`

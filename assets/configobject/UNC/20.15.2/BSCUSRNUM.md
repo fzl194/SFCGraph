@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BSCUSRNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示BSC下用户数(DSP-BSCUSRNUM)_72226031.md`

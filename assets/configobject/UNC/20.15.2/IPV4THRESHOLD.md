@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPV4THRESHOLD.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV4THRESHOLD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv4阈值（LST-IPV4THRESHOLD）_50121214.md`
+- 原始手册：`evidence/UNC/20.15.2/设置IPv4阈值（SET-IPV4THRESHOLD）_49961442.md`

@@ -78,4 +78,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LDPNEMGADJ.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP的邻居信息（DSP-LDPNEMGADJ）_00841245.md`

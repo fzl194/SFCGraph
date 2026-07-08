@@ -58,4 +58,4 @@ RMV S1PAGINGRULE: RECID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-S1PAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1寻呼规则(RMV-S1PAGINGRULE)_72345847.md`

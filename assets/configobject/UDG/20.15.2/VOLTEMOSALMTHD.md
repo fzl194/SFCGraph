@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复异常MOS告警阈值为系统初始设置值（RTR-VOLTEMOSALMTHD）_69418600.md`
+- 原始手册：`evidence/UDG/20.15.2/查询异常MOS告警阈值（LST-VOLTEMOSALMTHD）_57538681.md`
+- 原始手册：`evidence/UDG/20.15.2/设置异常MOS告警阈值（SET-VOLTEMOSALMTHD）_69178840.md`

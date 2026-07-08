@@ -55,4 +55,4 @@ RMV CCPRGACT: RGTYPE=VALUE, RATINGGROUP=2000000009;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CCPRGACT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除融合计费Proxy基于RG处理动作（RMV-CCPRGACT）_92852766.md`

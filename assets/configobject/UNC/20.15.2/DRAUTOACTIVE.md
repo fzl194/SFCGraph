@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DRAUTOACTIVE.md`
-- 原始手册：`evidence/UNC/20.15.2/DRAUTOACTIVE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询冷备容灾自动升主功能参数（LST-DRAUTOACTIVE）_74494005.md`
+- 原始手册：`evidence/UNC/20.15.2/设置冷备容灾自动升主功能（SET-DRAUTOACTIVE）_46854420.md`

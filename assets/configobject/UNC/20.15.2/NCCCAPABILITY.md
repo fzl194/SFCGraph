@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCCCAPABILITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询设备所支持的NETCONFC协议能力集（DSP-NCCCAPABILITY）_59103534.md`

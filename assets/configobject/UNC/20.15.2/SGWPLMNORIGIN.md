@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWPLMNORIGIN.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWPLMNORIGIN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S-GW-PLMN-ID来源（LST-SGWPLMNORIGIN）_09652690.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S-GW-PLMN-ID来源（SET-SGWPLMNORIGIN）_09651723.md`

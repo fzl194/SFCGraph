@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/IPLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/IPLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/IPLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IP地址列表（MOD-IPLIST）_82837338.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IP地址列表（RMV-IPLIST）_82837339.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IP地址列表（ADD-IPLIST）_82837337.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP地址列表（LST-IPLIST）_82837340.md`

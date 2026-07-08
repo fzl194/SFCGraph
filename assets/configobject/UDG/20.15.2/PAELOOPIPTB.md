@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAELOOPIPTB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Loop口IP和TB映射信息（DSP-PAELOOPIPTB）_92520038.md`

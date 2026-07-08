@@ -56,4 +56,4 @@ CLR ACSDATA: CLEARTYPE=all;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CLR-ACSDATA.md`
+- 原始手册：`evidence/UDG/20.15.2/清除ACS管理服务数据(CLR-ACSDATA)_98165797.md`

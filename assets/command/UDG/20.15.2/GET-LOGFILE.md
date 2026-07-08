@@ -99,4 +99,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GET-LOGFILE.md`
+- 原始手册：`evidence/UDG/20.15.2/获取审计日志文件（GET-LOGFILE）_36453925.md`

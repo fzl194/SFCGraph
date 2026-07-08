@@ -63,4 +63,4 @@ RMV DHCPSERVER:GROUPNAME="group1",ISPRIMARY=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DHCPSERVER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DHCP服务器（RMV-DHCPSERVER）_32102617.md`

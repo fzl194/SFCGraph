@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APPLYEXTENDCOMMUNITY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩展团体属性设置（LST-APPLYEXTENDCOMMUNITY）_00866669.md`

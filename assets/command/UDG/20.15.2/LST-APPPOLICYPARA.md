@@ -68,4 +68,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APPPOLICYPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示应用策略参数（LST-APPPOLICYPARA）_64015285.md`

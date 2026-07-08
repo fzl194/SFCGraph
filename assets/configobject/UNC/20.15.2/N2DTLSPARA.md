@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N2DTLSPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/N2DTLSPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2接口的DTLS参数(LST-N2DTLSPARA)_54302475.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N2接口的DTLS参数(SET-N2DTLSPARA)_54302474.md`

@@ -66,4 +66,4 @@ RMV SMFCONFLICTRULE: CSTYPE=SMC_SM, PROCTYPE="ProcedureTypeN4DdnReportAsHsmfN11"
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFCONFLICTRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除冲突规则（RMV-SMFCONFLICTRULE）_06639896.md`

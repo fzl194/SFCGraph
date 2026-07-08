@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DHCP6CLIENT.md`
-- 原始手册：`evidence/UDG/20.15.2/DHCP6CLIENT.md`
-- 原始手册：`evidence/UDG/20.15.2/DHCP6CLIENT.md`
-- 原始手册：`evidence/UDG/20.15.2/DHCP6CLIENT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DHCPv6客户端（MOD-DHCP6CLIENT）_00865673.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DHCPv6客户端（RMV-DHCP6CLIENT）_50281534.md`
+- 原始手册：`evidence/UDG/20.15.2/增加DHCPv6客户端（ADD-DHCP6CLIENT）_50120726.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DHCPv6客户端配置（LST-DHCP6CLIENT）_00866313.md`

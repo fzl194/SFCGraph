@@ -61,4 +61,4 @@ SET PROCFAULTALM:ISTRGALMIMMDTLY=Enable
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PROCFAULTALM.md`
+- 原始手册：`evidence/UDG/20.15.2/设置进程故障告警上报模式（SET-PROCFAULTALM）_59103391.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FINGERIDENT.md`
-- 原始手册：`evidence/UDG/20.15.2/FINGERIDENT.md`
-- 原始手册：`evidence/UDG/20.15.2/FINGERIDENT.md`
-- 原始手册：`evidence/UDG/20.15.2/FINGERIDENT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改SA指纹识别配置（MOD-FINGERIDENT）_86288981.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SA指纹识别配置（RMV-FINGERIDENT）_86523551.md`
+- 原始手册：`evidence/UDG/20.15.2/增加SA指纹识别配置（ADD-FINGERIDENT）_86851945.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SA指纹识别配置（LST-FINGERIDENT）_86723149.md`

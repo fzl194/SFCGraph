@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DDNTIMEOUTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/DDNTIMEOUTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DDN定时器超时参数（LST-DDNTIMEOUTCTRL）_46314492.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DDN定时器超时参数（SET-DDNTIMEOUTCTRL）_46314493.md`

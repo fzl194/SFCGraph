@@ -69,4 +69,4 @@ IPTypeV6  0.0.0.0   2001:DB8::1  1             120               65535         1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OFFICEFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定NF的流控参数（LST-OFFICEFCPARA）_86184261.md`

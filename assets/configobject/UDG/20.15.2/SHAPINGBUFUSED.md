@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SHAPINGBUFUSED.md`
+- 原始手册：`evidence/UDG/20.15.2/查询整形使用的缓存（DSP-SHAPINGBUFUSED）_86528803.md`

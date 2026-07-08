@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定配置（LCK-CONFIG）_27994373.md`

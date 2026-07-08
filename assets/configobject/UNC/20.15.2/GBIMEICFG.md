@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBIMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIMEICFG.md`
-- 原始手册：`evidence/UNC/20.15.2/GBIMEICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Gb模式IMEI配置(MOD-GBIMEICFG)_26305444.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gb模式IMEI配置（RMV-GBIMEICFG）_72225313.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gb模式IMEI配置(ADD-GBIMEICFG)_26145632.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式IMEI配置(LST-GBIMEICFG)_72345231.md`

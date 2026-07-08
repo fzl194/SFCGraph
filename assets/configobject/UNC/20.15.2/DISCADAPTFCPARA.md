@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DISCADAPTFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/DISCADAPTFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现自适应流控全局配置（LST-DISCADAPTFCPARA）_63169525.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务发现自适应流控全局配置（SET-DISCADAPTFCPARA）_10690450.md`

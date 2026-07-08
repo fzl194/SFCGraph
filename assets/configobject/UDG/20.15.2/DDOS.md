@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DDOS.md`
-- 原始手册：`evidence/UDG/20.15.2/DDOS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DDoS防攻击流控阈值（LST-DDOS）_82837755.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DDoS防攻击流控阈值（SET-DDOS）_82837754.md`

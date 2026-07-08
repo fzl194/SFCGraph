@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RAPAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/RAPAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/RAPAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/RAPAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于路由区的寻呼参数设置(MOD-RAPAGINGRULE)_26305340.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于路由区的寻呼参数设置(RMV-RAPAGINGRULE)_72225209.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于路由区的寻呼参数设置(ADD-RAPAGINGRULE)_26145528.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于路由区的寻呼参数设置(LST-RAPAGINGRULE)_72345127.md`

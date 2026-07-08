@@ -39,5 +39,5 @@ S1模式寻呼流控过程有三种状态：正常状态、流控状态和恢复
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGFC.md`
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1寻呼流控参数(LST-S1PAGINGFC)_72225835.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1寻呼流控参数(SET-S1PAGINGFC)_26146156.md`

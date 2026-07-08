@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QUOTAEXHAUSTACT.md`
-- 原始手册：`evidence/UNC/20.15.2/QUOTAEXHAUSTACT.md`
-- 原始手册：`evidence/UNC/20.15.2/QUOTAEXHAUSTACT.md`
-- 原始手册：`evidence/UNC/20.15.2/QUOTAEXHAUSTACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改配额耗尽后的动作（MOD-QUOTAEXHAUSTACT）_95289692.md`
+- 原始手册：`evidence/UNC/20.15.2/删除配额耗尽后的动作（RMV-QUOTAEXHAUSTACT）_42209649.md`
+- 原始手册：`evidence/UNC/20.15.2/增加配额耗尽后的动作（ADD-QUOTAEXHAUSTACT）_95129686.md`
+- 原始手册：`evidence/UNC/20.15.2/查询配额耗尽后的动作（LST-QUOTAEXHAUSTACT）_41849755.md`

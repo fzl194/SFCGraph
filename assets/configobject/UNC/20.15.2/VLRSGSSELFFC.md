@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VLRSGSSELFFC.md`
-- 原始手册：`evidence/UNC/20.15.2/VLRSGSSELFFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR的SGs接口自保流控参数（LST-VLRSGSSELFFC）_04121609.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VLR的SGs接口自保流控参数（SET-VLRSGSSELFFC）_04281149.md`

@@ -68,4 +68,4 @@ LAC组名 = beijing
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LACID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LAC组内绑定的LAC号段（LST-LACID）_09651456.md`

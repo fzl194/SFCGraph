@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TUNNELINFOVERBOSE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示隧道详细信息（DSP-TUNNELINFOVERBOSE）_00440505.md`

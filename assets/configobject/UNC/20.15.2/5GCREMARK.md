@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/5GCREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCREMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/5GCREMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5GC-QoS到TOS_DSCP的映射规则（MOD-5GCREMARK）_09652540.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5GC-QoS到TOS_DSCP的映射规则（RMV-5GCREMARK）_09652352.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5GC-QoS到TOS_DSCP的映射规则（ADD-5GCREMARK）_09653051.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5GC-QoS到TOS_DSCP的映射规则（LST-5GCREMARK）_09652281.md`

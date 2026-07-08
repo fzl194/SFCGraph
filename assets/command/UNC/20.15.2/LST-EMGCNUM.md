@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-EMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询紧急号码配置信息(LST-EMGCNUM)_26145504.md`

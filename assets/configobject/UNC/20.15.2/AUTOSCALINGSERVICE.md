@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSERVICE.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改自动化配置参数（MOD-AUTOSCALINGSERVICE）_16580121.md`
+- 原始手册：`evidence/UNC/20.15.2/删除自动化配置参数（RMV-AUTOSCALINGSERVICE）_49961346.md`
+- 原始手册：`evidence/UNC/20.15.2/增加自动化配置参数（ADD-AUTOSCALINGSERVICE）_00601493.md`
+- 原始手册：`evidence/UNC/20.15.2/查询自动化配置参数（LST-AUTOSCALINGSERVICE）_50120950.md`

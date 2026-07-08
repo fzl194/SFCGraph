@@ -64,4 +64,4 @@ MOD NGAPPARA: NGAPPARAIDX=1, RESETTMR=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGAPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NGAP协议参数（MOD-NGAPPARA）_09654199.md`

@@ -74,4 +74,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SDRDBG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SDR调试信息（DSP-SDRDBG）_94730428.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`
-- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`
-- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`
-- 原始手册：`evidence/UNC/20.15.2/UFCSFB.md`
+- 原始手册：`evidence/UNC/20.15.2/修改预留功能策略(MOD-UFCSFB)_72225127.md`
+- 原始手册：`evidence/UNC/20.15.2/删除预留功能策略(RMV-UFCSFB)_26305258.md`
+- 原始手册：`evidence/UNC/20.15.2/增加预留功能策略(ADD-UFCSFB)_26145446.md`
+- 原始手册：`evidence/UNC/20.15.2/查询预留功能策略(LST-UFCSFB)_72345045.md`

@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VLRLOCALINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VLR的本局信息（LST-VLRLOCALINFO）_04041273.md`

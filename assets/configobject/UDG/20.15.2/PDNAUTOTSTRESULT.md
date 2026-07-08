@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PDNAUTOTSTRESULT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PDN自动探测结果（DSP-PDNAUTOTSTRESULT）_64073335.md`

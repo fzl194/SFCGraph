@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFNSE.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNSE.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFNSE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSE标识(RMV-PERFNSE)_26146190.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSE标识(ADD-PERFNSE)_72345789.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSE标识(LST-PERFNSE)_72225869.md`

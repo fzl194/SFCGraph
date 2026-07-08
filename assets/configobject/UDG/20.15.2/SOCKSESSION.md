@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SOCKSESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SOCK会话诊断信息（DSP-SOCKSESSION）_49802494.md`

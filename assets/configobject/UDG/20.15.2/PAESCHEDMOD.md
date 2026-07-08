@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAESCHEDMOD.md`
-- 原始手册：`evidence/UDG/20.15.2/PAESCHEDMOD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PAE-Channel调度模式（LST-PAESCHEDMOD）_61218393.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PAE-Channel调度模式（SET-PAESCHEDMOD）_61378197.md`

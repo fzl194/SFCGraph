@@ -70,4 +70,4 @@ VNODE_UGW_VNFC_SPU_0065    NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-UPDRUVER.md`
+- 原始手册：`evidence/UDG/20.15.2/显示RU版本信息（DSP-UPDRUVER）_90871556.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRVCERTUPDCFG.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCERTUPDCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询证书更新拆链配置（LST-SRVCERTUPDCFG）_94871985.md`
+- 原始手册：`evidence/UDG/20.15.2/设置证书更新拆链配置（SET-SRVCERTUPDCFG）_94632059.md`

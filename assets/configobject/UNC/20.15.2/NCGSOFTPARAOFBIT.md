@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCGSOFTPARAOFBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGSOFTPARAOFBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NCG软件参数比特位（LST-NCGSOFTPARAOFBIT）_79952321.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NCG软件参数比特位（SET-NCGSOFTPARAOFBIT）_33832962.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFDNBITSET.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFDNBITSET.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFDNBITSET.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFDNBITSET.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DN比特位配置（MOD-OSPFDNBITSET）_49802238.md`
+- 原始手册：`evidence/UDG/20.15.2/创建DN比特位配置（ADD-OSPFDNBITSET）_00865801.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DN比特位配置（RMV-OSPFDNBITSET）_49961490.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DN比特位配置（LST-OSPFDNBITSET）_49961086.md`

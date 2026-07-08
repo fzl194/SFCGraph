@@ -68,4 +68,4 @@ ADD CFGSNSSAI: INDEX=1, MCC="460", MNC="03", SST=1, SD="010101", PRIORITY=1025, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CFGSNSSAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加支持的S-NSSAI（ADD-CFGSNSSAI）_09652955.md`

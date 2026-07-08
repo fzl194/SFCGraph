@@ -60,4 +60,4 @@ Ru就绪状态检测  =  真实检测
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PSPKUBEPROBE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询是否放通管道大颗粒readiness就绪探测（LST-PSPKUBEPROBE）_30310421.md`

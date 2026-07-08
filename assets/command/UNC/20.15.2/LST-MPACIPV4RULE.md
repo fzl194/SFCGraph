@@ -77,4 +77,4 @@ LST MPACIPV4RULE:POLICYNAME="policyV4",RULENAME="name-test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MPACIPV4RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv4-MPAC策略规则（LST-MPACIPV4RULE）_50280742.md`

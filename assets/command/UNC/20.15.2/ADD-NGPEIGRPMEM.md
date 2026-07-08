@@ -61,4 +61,4 @@ ADD NGPEIGRPMEM: NGPEIGPN="phone_xx", PEITAC="12345678",UEDESC="phone_xx_1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGPEIGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NG-PEI组性能统计对象成员（ADD-NGPEIGRPMEM）_89078987.md`

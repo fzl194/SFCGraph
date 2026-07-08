@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VOLTEONEWAYSIL.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEONEWAYSIL.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEONEWAYSIL.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复单通检测的系统初始设置值（RTR-VOLTEONEWAYSIL）_57538687.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单通检测信息（LST-VOLTEONEWAYSIL）_69178846.md`
+- 原始手册：`evidence/UDG/20.15.2/设置单通检测信息（SET-VOLTEONEWAYSIL）_57738485.md`

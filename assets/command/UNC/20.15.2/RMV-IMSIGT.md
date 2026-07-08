@@ -61,4 +61,4 @@ RMV IMSIGT: IMSIPRE="3080107000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMSIGT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IMSI-GT对应关系(RMV-IMSIGT)_26145464.md`

@@ -34,8 +34,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEPORTGATEWAY.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEPORTGATEWAY.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEPORTGATEWAY.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEPORTGATEWAY.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEPORTGATEWAY.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE端口网关信息（DSP-PAEPORTGATEWAY）_48803866.md`
+- 原始手册：`evidence/UDG/20.15.2/修改网关转发地址（MOD-PAEPORTGATEWAY）_98683661.md`
+- 原始手册：`evidence/UDG/20.15.2/删除网关转发地址（RMV-PAEPORTGATEWAY）_98164009.md`
+- 原始手册：`evidence/UDG/20.15.2/增加网关转发地址（ADD-PAEPORTGATEWAY）_49003774.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网关转发地址（LST-PAEPORTGATEWAY）_48164178.md`

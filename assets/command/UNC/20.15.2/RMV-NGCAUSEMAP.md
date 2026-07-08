@@ -60,4 +60,4 @@ RMV NGCAUSEMAP: PROT=INIT_REG, SCAUSE=27;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGCAUSEMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G原因值映射配置（RMV-NGCAUSEMAP）_19478935.md`

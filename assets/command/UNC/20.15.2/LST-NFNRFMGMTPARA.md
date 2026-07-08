@@ -88,4 +88,4 @@ NRF服务发现流控告警检测周期(分钟)  =  5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFNRFMGMTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF与NRF间的全局管理参数（LST-NFNRFMGMTPARA）_32041711.md`

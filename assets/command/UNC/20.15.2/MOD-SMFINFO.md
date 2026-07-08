@@ -61,4 +61,4 @@ MOD SMFINFO: SMFINSTANCENAME="SMF_Instance_0", SMFNAME="smf2.cluster1.net1.smf.5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF信息（MOD-SMFINFO）_09652374.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNALIAS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNALIAS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNALIAS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNALIAS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN别名配置（RMV-APNALIAS）_28567655.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN别名配置（ADD-APNALIAS）_28567622.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN别名配置（LST-APNALIAS）_28567626.md`
+- 原始手册：`evidence/UNC/20.15.2/锁定APN别名配置（LCK-APNALIAS）_28567625.md`

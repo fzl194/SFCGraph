@@ -60,4 +60,4 @@ SET DRSTBYRSTCTRL: STANDBYRESETSW=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DRSTBYRSTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置运行备整系统复位开关（SET-DRSTBYRSTCTRL）_00921394.md`

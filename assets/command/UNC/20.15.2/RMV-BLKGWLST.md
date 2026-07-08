@@ -58,4 +58,4 @@ RMV BLKGWLST: GWTYPE=S-GW, GWIPTYPE=IPv4, GWIPV4="192.168.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-BLKGWLST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除被禁用网关配置(RMV-BLKGWLST)_72225631.md`

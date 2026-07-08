@@ -87,4 +87,4 @@ IMEI群组标识  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GWSELBYIMEI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于IMEI选择GGSN_P-GW配置(LST-GWSELBYIMEI)_26305752.md`

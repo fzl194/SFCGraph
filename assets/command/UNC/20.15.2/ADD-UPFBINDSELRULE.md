@@ -62,4 +62,4 @@ ADD UPFBINDSELRULE: INDEX=0, NFINSTANCENAME="upf_instance_1", RULENAME="rulename
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-UPFBINDSELRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF和规则的绑定关系（ADD-UPFBINDSELRULE）_21742337.md`

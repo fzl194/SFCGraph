@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCLE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCLE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCLE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-C本地实体(MOD-GTPCLE)_26305776.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C本地实体(RMV-GTPCLE)_72225645.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C本地实体(ADD-GTPCLE)_26145966.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C本地实体(LST-GTPCLE)_72345567.md`

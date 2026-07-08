@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNDLLTBUFFER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于APN的下行数据长时间缓存配置（LST-APNDLLTBUFFER）_86530339.md`

@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMDBGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示MM移动性管理相关的调试信息(DSP-MMDBGINFO)_26145878.md`

@@ -55,4 +55,4 @@ RTR GLBSCTPPARA:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-GLBSCTPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复SCTP全局参数（RTR-GLBSCTPPARA）_09897327.md`

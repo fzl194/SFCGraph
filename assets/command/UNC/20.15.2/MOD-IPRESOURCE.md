@@ -71,4 +71,4 @@ MOD IPRESOURCE: IPRID="IP_Bi_CDRDistribution_1st", IPRPURPOSE=Bi, RUID=66, IPTYP
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IPRESOURCE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IP资源（MOD-IPRESOURCE）_51174284.md`

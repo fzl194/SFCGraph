@@ -67,4 +67,4 @@ TMGI过期时间  =  2022-11-25 14:34:28
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-TMGI.md`
+- 原始手册：`evidence/UNC/20.15.2/显示TMGI（DSP-TMGI）_47342117.md`

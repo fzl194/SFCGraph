@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSCNTINFOGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定组ID的计数器信息（DSP-MSSCNTINFOGRP）_49801534.md`

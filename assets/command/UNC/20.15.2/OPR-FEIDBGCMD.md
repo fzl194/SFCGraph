@@ -77,4 +77,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OPR-FEIDBGCMD.md`
+- 原始手册：`evidence/UNC/20.15.2/执行FEI调试命令（OPR-FEIDBGCMD）_07465522.md`

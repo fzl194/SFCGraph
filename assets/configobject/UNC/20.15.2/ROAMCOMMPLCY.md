@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ROAMCOMMPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/ROAMCOMMPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询漫游通信策略（LST-ROAMCOMMPLCY）_79048182.md`
+- 原始手册：`evidence/UNC/20.15.2/设置漫游通信策略（SET-ROAMCOMMPLCY）_24207973.md`

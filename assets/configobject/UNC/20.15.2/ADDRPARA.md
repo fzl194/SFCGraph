@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADDRPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/ADDRPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ADDR参数（LST-ADDRPARA）_37657441.md`
+- 原始手册：`evidence/UNC/20.15.2/设置ADDR参数（SET-ADDRPARA）_37417403.md`

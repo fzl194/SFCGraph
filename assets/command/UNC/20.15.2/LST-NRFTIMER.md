@@ -68,4 +68,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF时长信息（LST-NRFTIMER）_09653268.md`

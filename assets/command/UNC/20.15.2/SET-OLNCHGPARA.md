@@ -67,4 +67,4 @@ SET OLNCHGPARA: RPTLVLSID=REQBYRG;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-OLNCHGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/配置在线计费全局参数（SET-OLNCHGPARA）_09896981.md`

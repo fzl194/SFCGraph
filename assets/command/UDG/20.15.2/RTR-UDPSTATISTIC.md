@@ -55,4 +55,4 @@ RTR UDPSTATISTIC:IPVERSION=IPv4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-UDPSTATISTIC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除UDP报文统计（RTR-UDPSTATISTIC）_49961478.md`

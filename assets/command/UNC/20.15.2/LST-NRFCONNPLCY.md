@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFCONNPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF国际漫游连接策略（LST-NRFCONNPLCY）_76878554.md`

@@ -66,4 +66,4 @@ VVIP业务大流速率（千比特/秒）  =  800
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SSUBIGFLOWCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询智能板的大流判断速率阈值（LST-SSUBIGFLOWCTRL）_28361127.md`

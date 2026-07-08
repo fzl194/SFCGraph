@@ -59,4 +59,4 @@ MOD MNCLEN:MCC="460",MNCLEN=3;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-MNCLEN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改MNC长度信息（MOD-MNCLEN）_44865462.md`

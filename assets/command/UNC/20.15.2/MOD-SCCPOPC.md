@@ -59,4 +59,4 @@ MOD SCCPOPC: OPX=1, OPN="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SCCPOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCCP本局信令点(MOD-SCCPOPC)_72345931.md`

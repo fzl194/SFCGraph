@@ -61,4 +61,4 @@ ADD APNPTTFUNC: APN="HUAWEI.COM", LTEPTTSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNPTTFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的一键通功能配置（ADD-APNPTTFUNC）_06399904.md`

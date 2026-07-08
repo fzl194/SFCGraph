@@ -64,4 +64,4 @@ ADD NGDNSS: IPTYPE=IPV4, IPV4="192.168.100.101", PRI=PRI1, NGDNSSNAME="dnsserver
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGDNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS服务器（ADD-NGDNSS）_25120874.md`

@@ -65,4 +65,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COL-APPINFORMATION.md`
+- 原始手册：`evidence/UDG/20.15.2/第三方APP信息采集（COL-APPINFORMATION）_42536153.md`

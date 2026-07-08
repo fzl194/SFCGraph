@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPSTATUS.md`
-- 原始手册：`evidence/UDG/20.15.2/UPSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示UP-状态（LST-UPSTATUS）_82837251.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UP-状态信息（SET-UPSTATUS）_82837250.md`

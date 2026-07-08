@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AREATZ.md`
-- 原始手册：`evidence/UNC/20.15.2/AREATZ.md`
-- 原始手册：`evidence/UNC/20.15.2/AREATZ.md`
-- 原始手册：`evidence/UNC/20.15.2/AREATZ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改区域时区参数(MOD-AREATZ)_72345185.md`
+- 原始手册：`evidence/UNC/20.15.2/删除区域时区参数(RMV-AREATZ)_26305398.md`
+- 原始手册：`evidence/UNC/20.15.2/增加区域时区参数(ADD-AREATZ)_72225267.md`
+- 原始手册：`evidence/UNC/20.15.2/查询区域时区参数(LST-AREATZ)_26145588.md`

@@ -67,4 +67,4 @@ CSDB_OM_RU
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RESINSTANCETYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询资源实例类型（LST-RESINSTANCETYPE）_59103378.md`

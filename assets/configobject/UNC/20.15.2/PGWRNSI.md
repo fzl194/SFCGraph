@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PGWRNSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWRNSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWRNSI.md`
-- 原始手册：`evidence/UNC/20.15.2/PGWRNSI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PGW重定向配置(MOD-PGWRNSI)_66890937.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PGW重定向配置(RMV-PGWRNSI)_66930905.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PGW重定向配置(ADD-PGWRNSI)_18730832.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PGW重定向配置(LST-PGWRNSI)_18410968.md`

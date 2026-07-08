@@ -349,4 +349,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SSHCMSGDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SSH客户端的消息数据（DSP-SSHCMSGDATA）_59104067.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFUDMRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFUDMRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的UDM故障处理策略（LST-AMFUDMRESET）_96242056.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF的UDM故障处理策略（SET-AMFUDMRESET）_96243065.md`

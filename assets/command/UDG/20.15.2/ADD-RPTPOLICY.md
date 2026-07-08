@@ -65,4 +65,4 @@ ADD RPTPOLICY:POLICYNAME="policy01",USERSELPLYTYPE=SPECIFIC,USERSELPLYNAME="user
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-RPTPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/配置基于策略的报表开关（ADD-RPTPOLICY）_94212269.md`

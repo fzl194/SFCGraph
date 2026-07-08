@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SOCKSTATISTICS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SOCK统计诊断信息（DSP-SOCKSTATISTICS）_00440681.md`

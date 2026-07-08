@@ -34,6 +34,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCBINDAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF位置信息与该UPF优先支持的服务区的绑定关系（RMV-LOCBINDAREA）_09652353.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF位置信息与该UPF优先支持的服务区的绑定关系（ADD-LOCBINDAREA）_09653286.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF位置信息与该UPF优先支持的服务区的绑定关系（LST-LOCBINDAREA）_09652960.md`

@@ -73,4 +73,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SYSPLTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询产品平台参数(LST-SYSPLTPARA)_72345949.md`

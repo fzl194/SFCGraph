@@ -59,4 +59,4 @@ RMV DSCPPRI: SLTPR=DSCP, DSCPV=50;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DSCPPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DSCP映射优先级配置表(RMV-DSCPPRI)_72345807.md`

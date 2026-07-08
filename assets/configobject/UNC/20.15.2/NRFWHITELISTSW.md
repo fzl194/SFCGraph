@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFWHITELISTSW.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWHITELISTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF白名单开关（LST-NRFWHITELISTSW）_88697032.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF白名单开关（SET-NRFWHITELISTSW）_35374753.md`

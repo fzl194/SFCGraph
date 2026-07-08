@@ -76,4 +76,4 @@ MOD LOGICINF: NAME="n4if1/0/0", IPVERSION=IPV4, IPV4ADDRESS1="192.168.100.1", IP
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-LOGICINF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改逻辑接口（MOD-LOGICINF）_86526348.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRFILESTGMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRFILESTGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询上传至文件服务器的CHR文件转储方式（LST-CHRFILESTGMODE）_28275345.md`
+- 原始手册：`evidence/UNC/20.15.2/设置上传至文件服务器的CHR文件转储方式（SET-CHRFILESTGMODE）_28195465.md`

@@ -72,4 +72,4 @@ OCS链路状态采样间隔 （秒）  =  5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OCSALMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OCS告警阈值（LST-OCSALMTHD）_09897343.md`

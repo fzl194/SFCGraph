@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEVATTRNOTIFY.md`
+- 原始手册：`evidence/UNC/20.15.2/显示属性变更通知消息记录（DSP-DEVATTRNOTIFY）_59103965.md`

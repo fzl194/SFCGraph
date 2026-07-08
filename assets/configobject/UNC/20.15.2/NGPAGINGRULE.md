@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/NGPAGINGRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G寻呼规则（MOD-NGPAGINGRULE）_09652703.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G寻呼规则（RMV-NGPAGINGRULE）_09653219.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G寻呼规则（ADD-NGPAGINGRULE）_09652969.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G寻呼规则（LST-NGPAGINGRULE）_09652433.md`

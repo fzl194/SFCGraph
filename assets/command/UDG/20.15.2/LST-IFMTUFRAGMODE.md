@@ -62,4 +62,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IFMTUFRAGMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询分片方式（LST-IFMTUFRAGMODE）_49961402.md`

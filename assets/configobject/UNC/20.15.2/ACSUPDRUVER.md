@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ACSUPDRUVER.md`
+- 原始手册：`evidence/UNC/20.15.2/显示RU版本信息（DSP-ACSUPDRUVER）_89240442.md`

@@ -73,4 +73,4 @@ ADD SCCPSSN: SSNX=1, SSN=SCMG, NI=INT, DPC="0x12", OPC="0x3", SSNNAME="rnc", LOA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCCPSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP子系统(ADD-SCCPSSN)_26306144.md`

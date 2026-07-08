@@ -61,4 +61,4 @@ NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DBGHAFD.md`
+- 原始手册：`evidence/UNC/20.15.2/显示HAFD调试命令结果（DSP-DBGHAFD）_94730404.md`

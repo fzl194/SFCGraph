@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPUPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPUPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-U协议参数(LST-GTPUPARA)_72345445.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTP-U协议参数(SET-GTPUPARA)_26305654.md`

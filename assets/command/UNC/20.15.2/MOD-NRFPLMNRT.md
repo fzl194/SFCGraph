@@ -62,4 +62,4 @@ ADD NRFPLMNRT: MCC="123", MNC="456", NEXTNRFGRPNAME="L-NRF2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NRFPLMNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PLMN路由（MOD-NRFPLMNRT）_09652637.md`

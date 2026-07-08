@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GENERATECDR.md`
-- 原始手册：`evidence/UNC/20.15.2/GENERATECDR.md`
-- 原始手册：`evidence/UNC/20.15.2/GENERATECDR.md`
+- 原始手册：`evidence/UNC/20.15.2/立即生成话单（SYN-GENERATECDR）_51174309.md`
+- 原始手册：`evidence/UNC/20.15.2/强制生成话单（FOC-GENERATECDR）_09897016.md`
+- 原始手册：`evidence/UNC/20.15.2/查询强制生成话单结果（DSP-GENERATECDR）_09897018.md`

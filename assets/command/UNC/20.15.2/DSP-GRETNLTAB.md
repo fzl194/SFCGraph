@@ -100,4 +100,4 @@ DSP GRETNLTAB:TNLNAME="tunnel1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GRETNLTAB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GRE隧道信息（DSP-GRETNLTAB）_00840669.md`

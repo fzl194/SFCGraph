@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTPROTMPCLASS.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTPROTMPCLASS.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTPROTMPCLASS.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTPROTMPCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/修改业务报表映射承载协议分类配置（MOD-RPTPROTMPCLASS）_19172446.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务报表映射承载协议分类配置（RMV-RPTPROTMPCLASS）_19410200.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务报表映射承载协议分类配置（ADD-RPTPROTMPCLASS）_19881188.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表映射承载协议分类配置（LST-RPTPROTMPCLASS）_19641396.md`

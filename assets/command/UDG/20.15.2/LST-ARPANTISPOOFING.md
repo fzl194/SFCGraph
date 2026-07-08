@@ -65,4 +65,4 @@ ARP防欺骗告警使能  =  去使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ARPANTISPOOFING.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ARP防欺骗信息（LST-ARPANTISPOOFING）_00440441.md`

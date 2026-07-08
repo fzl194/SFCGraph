@@ -72,4 +72,4 @@ SET NSARATVALUE: OCS=EUTRAN, CG=NR;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NSARATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSA用户的RAT值（SET-NSARATVALUE）_35273635.md`

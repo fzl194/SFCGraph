@@ -60,4 +60,4 @@ MOD APNGY5GREUSEAVP: APN="APNGY", RAT=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-APNGY5GREUSEAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于apn的Gy接口重用字段的填写方式（MOD-APNGY5GREUSEAVP）_23622970.md`

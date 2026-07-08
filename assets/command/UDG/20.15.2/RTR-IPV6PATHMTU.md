@@ -53,4 +53,4 @@ RTR IPV6PATHMTU:VRFNAME="vpn1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-IPV6PATHMTU.md`
+- 原始手册：`evidence/UDG/20.15.2/清除IPv6-Path-MTU配置（RTR-IPV6PATHMTU）_50121742.md`

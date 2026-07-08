@@ -66,4 +66,4 @@ ADD DHCPBINDPOOLGRP:POOLGRPNAME="poolgrp1",GROUPNAME="group1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DHCPBINDPOOLGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DHCP服务器组与地址池组绑定关系（ADD-DHCPBINDPOOLGRP）_32382543.md`

@@ -66,4 +66,4 @@ ADD FLTBINDFLOWF:FLOWFILTERNAME="testflowfiltername",FILTERNAME="testfiltername"
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-FLTBINDFLOWF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流过滤器的过滤器绑定关系（ADD-FLTBINDFLOWF）_82837366.md`

@@ -67,4 +67,4 @@ SET NRRATVALUE: OCS=RAT51;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRRATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G接入用户的RAT填写值（SET-NRRATVALUE）_52071376.md`

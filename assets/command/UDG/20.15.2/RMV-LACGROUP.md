@@ -57,4 +57,4 @@ RMV LACGROUP:LACGROUPNAME="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-LACGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除指定的LAC组（RMV-LACGROUP）_06054836.md`

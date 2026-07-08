@@ -63,4 +63,4 @@ ADD PERFEPRPDYN: INTERFACETYPE=S5S8PGW, EPRPDYNNAME="pgw1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PERFEPRPDYN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EpRpDyn性能统计对象（ADD-PERFEPRPDYN）_44529796.md`

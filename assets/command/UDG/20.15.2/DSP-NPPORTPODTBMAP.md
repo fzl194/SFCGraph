@@ -73,4 +73,4 @@ Tick变化信息  =  1[1672531200 2025-02-25 10:00:01] 2[167253199 2025-02-25 10
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPPORTPODTBMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NP卡和Pod-TB出端口映射信息（DSP-NPPORTPODTBMAP）_20420301.md`

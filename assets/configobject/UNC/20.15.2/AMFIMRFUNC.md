@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFIMRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFIMRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFIMRFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFIMRFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户消息统计功能配置（MOD-AMFIMRFUNC）_44007302.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户消息统计功能配置（RMV-AMFIMRFUNC）_44007528.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户消息统计功能配置（ADD-AMFIMRFUNC）_44006340.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户消息统计功能配置（LST-AMFIMRFUNC）_44006790.md`

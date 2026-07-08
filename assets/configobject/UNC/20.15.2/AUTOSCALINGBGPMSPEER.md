@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGBGPMSPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGBGPMSPEER.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGBGPMSPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP自动化多源邻居配置模板（RMV-AUTOSCALINGBGPMSPEER）_00600617.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BGP自动化多源邻居配置模板（ADD-AUTOSCALINGBGPMSPEER）_50280686.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BGP自动化多源邻居配置模板（LST-AUTOSCALINGBGPMSPEER）_00441477.md`

@@ -85,4 +85,4 @@ UE-Local-IP-Address和UE-UDP-Port  =  禁止
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSAUTHREQATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Radius鉴权请求消息携带的属性（LST-RDSAUTHREQATTR）_28567652.md`

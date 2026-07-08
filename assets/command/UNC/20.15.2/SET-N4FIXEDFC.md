@@ -75,4 +75,4 @@ SET N4FIXEDFC: MSGTYPE=DLDATA, FCSWITCH=ON, THRESHOLD=2000;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N4FIXEDFC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置指定消息类型固定速率流控信息（SET-N4FIXEDFC）_35374751.md`

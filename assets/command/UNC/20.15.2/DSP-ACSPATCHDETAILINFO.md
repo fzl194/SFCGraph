@@ -76,4 +76,4 @@ VNODE_CSDB_VNFC_OMU_0001       6              运行    SCRIPT      是         
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-ACSPATCHDETAILINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示补丁信息（DSP-ACSPATCHDETAILINFO）_05338962.md`

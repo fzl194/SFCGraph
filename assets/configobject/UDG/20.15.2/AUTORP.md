@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AUTORP.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTORP.md`
-- 原始手册：`evidence/UDG/20.15.2/AUTORP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Auto-RP配置（RMV-AUTORP）_49961958.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Auto-RP配置（LST-AUTORP）_00866725.md`
+- 原始手册：`evidence/UDG/20.15.2/添加Auto-RP配置（ADD-AUTORP）_49961218.md`

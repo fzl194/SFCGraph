@@ -65,4 +65,4 @@ RMV CGGROUP: CGGRPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CGGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CG组（RMV-CGGROUP）_09896881.md`

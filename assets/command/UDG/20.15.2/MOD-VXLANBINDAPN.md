@@ -58,4 +58,4 @@ MOD VXLANBINDAPN: APN="apn1", VXLANGRPNAME="vxlangrp2";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-VXLANBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改VXLAN隧道组绑定APN（MOD-VXLANBINDAPN）_68194509.md`

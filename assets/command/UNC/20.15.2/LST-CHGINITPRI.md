@@ -67,4 +67,4 @@ RADIUS计费消息交互的优先级  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHGINITPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS计费和在线计费消息优先级（LST-CHGINITPRI）_09896805.md`

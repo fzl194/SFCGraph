@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TMT3N3.md`
-- 原始手册：`evidence/UNC/20.15.2/TMT3N3.md`
-- 原始手册：`evidence/UNC/20.15.2/TMT3N3.md`
-- 原始手册：`evidence/UNC/20.15.2/TMT3N3.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Tm接口消息T3N3参数(MOD-TMT3N3)_89174552.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Tm接口指定消息T3N3参数(RMV-TMT3N3)_89014960.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Tm接口指定消息T3N3参数(ADD-TMT3N3)_41654657.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Tm接口消息T3N3参数(LST-TMT3N3)_88854992.md`

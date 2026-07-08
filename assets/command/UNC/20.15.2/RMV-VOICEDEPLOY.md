@@ -62,4 +62,4 @@ RMV VOICEDEPLOY: SUBRANGE=FOREIGN_USER, NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-VOICEDEPLOY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除语音部署配置(RMV-VOICEDEPLOY)_72225441.md`

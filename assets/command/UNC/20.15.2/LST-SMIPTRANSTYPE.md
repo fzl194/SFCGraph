@@ -76,4 +76,4 @@ I-UPF home routed N9接口IP类型  =  IPv4优先
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMIPTRANSTYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话管理接口IP传输类型（LST-SMIPTRANSTYPE）_12701670.md`

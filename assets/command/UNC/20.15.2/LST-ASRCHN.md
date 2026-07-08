@@ -77,4 +77,4 @@ RETCODE = 0  Operation Success.
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-ASRCHN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾业务通道配置(LST-ASRCHN)_72225807.md`

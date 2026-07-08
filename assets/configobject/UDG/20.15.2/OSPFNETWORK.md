@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFNETWORK.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFNETWORK.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFNETWORK.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFNETWORK.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF运行的接口及所属区域（MOD-OSPFNETWORK）_50120754.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF运行的接口及所属区域（RMV-OSPFNETWORK）_49960922.md`
+- 原始手册：`evidence/UDG/20.15.2/指定OSPF运行的接口及所属区域（ADD-OSPFNETWORK）_00601465.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF运行的接口及所属区域（LST-OSPFNETWORK）_00841057.md`

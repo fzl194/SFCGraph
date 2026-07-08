@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNQOSATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/APNQOSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定APN的QoS属性配置信息（LST-APNQOSATTR）_09651477.md`
+- 原始手册：`evidence/UNC/20.15.2/设置指定APN的QoS属性配置信息（SET-APNQOSATTR）_09651825.md`

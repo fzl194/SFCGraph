@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QBCPDUTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/QBCPDUTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/QBCPDUTRIGGER.md`
-- 原始手册：`evidence/UNC/20.15.2/QBCPDUTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QBC计费PDU会话级的trigger参数（MOD-QBCPDUTRIGGER）_09652270.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QBC计费PDU会话级的trigger参数（RMV-QBCPDUTRIGGER）_09651494.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QBC计费PDU会话级的trigger参数（ADD-QBCPDUTRIGGER）_09652707.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QBC计费PDU会话级的trigger参数（LST-QBCPDUTRIGGER）_09653679.md`

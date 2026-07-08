@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATHINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径信息（DSP-PATHINFO）_82837223.md`

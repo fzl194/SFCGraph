@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSCOPC.md`
-- 原始手册：`evidence/UNC/20.15.2/MSCOPC.md`
-- 原始手册：`evidence/UNC/20.15.2/MSCOPC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MSC信令点(RMV-MSCOPC)_28234925.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MSC信令点(ADD-MSCOPC)_77595448.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MSC信令点(LST-MSCOPC)_78074604.md`

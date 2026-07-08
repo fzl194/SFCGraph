@@ -36,5 +36,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOGIFDSCP.md`
-- 原始手册：`evidence/UNC/20.15.2/LOGIFDSCP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询逻辑接口DSCP配置（LST-LOGIFDSCP）_50558742.md`
+- 原始手册：`evidence/UNC/20.15.2/设置逻辑接口DSCP值（SET-LOGIFDSCP）_50558771.md`

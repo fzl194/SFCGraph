@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SESSCHKFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/SESSCHKFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询会话核查配置（LST-SESSCHKFUNC）_37678017.md`
+- 原始手册：`evidence/UDG/20.15.2/设置会话核查配置（SET-SESSCHKFUNC）_37678016.md`

@@ -52,4 +52,4 @@ RTR VOLTEONEWAYSIL:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-VOLTEONEWAYSIL.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复单通检测的系统初始设置值（RTR-VOLTEONEWAYSIL）_57538687.md`

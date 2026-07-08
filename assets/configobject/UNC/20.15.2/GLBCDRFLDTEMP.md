@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBCDRFLDTEMP.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBCDRFLDTEMP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局话单模板（LST-GLBCDRFLDTEMP）_09896896.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局话单模板（SET-GLBCDRFLDTEMP）_09896895.md`

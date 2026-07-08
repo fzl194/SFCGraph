@@ -31,8 +31,8 @@ SGSN与CG对接时，需要配置该命令。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGCG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CG配置参数(MOD-CHGCG)_72344977.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CG配置参数(RMV-CHGCG)_26305190.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CG配置参数（ADD-CHGCG）_72225055.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CG状态(DSP-CHGCG)_72225057.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG配置参数(LST-CHGCG)_26145376.md`

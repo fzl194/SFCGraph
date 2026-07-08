@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SNSSAIUPINTF.md`
-- 原始手册：`evidence/UDG/20.15.2/SNSSAIUPINTF.md`
-- 原始手册：`evidence/UDG/20.15.2/SNSSAIUPINTF.md`
-- 原始手册：`evidence/UDG/20.15.2/SNSSAIUPINTF.md`
+- 原始手册：`evidence/UDG/20.15.2/修改网络切片和逻辑接口绑定关系（MOD-SNSSAIUPINTF）_51061266.md`
+- 原始手册：`evidence/UDG/20.15.2/删除网络切片和逻辑接口绑定关系（RMV-SNSSAIUPINTF）_51061267.md`
+- 原始手册：`evidence/UDG/20.15.2/增加网络切片和逻辑接口绑定关系（ADD-SNSSAIUPINTF）_51061265.md`
+- 原始手册：`evidence/UDG/20.15.2/查询网络切片和逻辑接口绑定关系（LST-SNSSAIUPINTF）_51061268.md`

@@ -66,4 +66,4 @@ SET QBCGLBPARA: QFSTARTRPT=REPORT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-QBCGLBPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QBC计费全局参数（SET-QBCGLBPARA）_81248674.md`

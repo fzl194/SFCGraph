@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CFGTABLEDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示满足条件的CFG表数据（DSP-CFGTABLEDATA）_59103913.md`

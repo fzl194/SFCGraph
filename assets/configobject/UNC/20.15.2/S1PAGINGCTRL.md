@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1寻呼策略控制表(LST-S1PAGINGCTRL)_26146246.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1寻呼策略控制表(SET-S1PAGINGCTRL)_72345845.md`

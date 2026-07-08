@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWSEGGCHGMETH.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWSEGGCHGMETH.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWSEGGCHGMETH.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWSEGGCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGW-IMSI_MSISDN-Group-Charge-Method（MOD-SGWSEGGCHGMETH）_09896996.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-IMSI_MSISDN-Group-Charge-Method（RMV-SGWSEGGCHGMETH）_09896997.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-IMSI_MSISDN-Group-Charge-Method（ADD-SGWSEGGCHGMETH）_09896995.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-IMSI_MSISDN-Group-Charge-Method（LST-SGWSEGGCHGMETH）_09896998.md`

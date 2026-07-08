@@ -66,4 +66,4 @@ MBS QosShape 功能  =  ENABLE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MBSQOSGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MBS-QosGlobal配置（LST-MBSQOSGLOBAL）_47782533.md`

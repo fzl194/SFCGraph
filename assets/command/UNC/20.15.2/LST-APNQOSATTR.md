@@ -71,4 +71,4 @@ AAA和PCRF共同协商QoS  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNQOSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定APN的QoS属性配置信息（LST-APNQOSATTR）_09651477.md`

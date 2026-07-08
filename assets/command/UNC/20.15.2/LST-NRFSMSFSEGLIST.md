@@ -72,4 +72,4 @@ MSISDN结束号码  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFSMSFSEGLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF号段白名单（LST-NRFSMSFSEGLIST）_22223357.md`

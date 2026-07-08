@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESTOFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾功能(LST-RESTOFUNC)_26146114.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容灾功能(SET-RESTOFUNC)_72345713.md`

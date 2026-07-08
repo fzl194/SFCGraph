@@ -57,4 +57,4 @@ RTR ARPBYTYPE:CLEARARPTYPE=ClearDynamicArp;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-ARPBYTYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/根据ARP表项类型清除ARP表项（RTR-ARPBYTYPE）_50280966.md`

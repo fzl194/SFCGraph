@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GRETNLSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GRE隧道数目（DSP-GRETNLSTAT）_00600385.md`

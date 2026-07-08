@@ -65,4 +65,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SESSNCHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询会话CHR上报策略（LST-SESSNCHRCFG）_35628394.md`

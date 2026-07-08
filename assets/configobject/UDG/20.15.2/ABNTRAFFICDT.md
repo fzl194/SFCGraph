@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ABNTRAFFICDT.md`
-- 原始手册：`evidence/UDG/20.15.2/ABNTRAFFICDT.md`
-- 原始手册：`evidence/UDG/20.15.2/ABNTRAFFICDT.md`
-- 原始手册：`evidence/UDG/20.15.2/ABNTRAFFICDT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改异常流量检测开关（MOD-ABNTRAFFICDT）_82837036.md`
+- 原始手册：`evidence/UDG/20.15.2/删除异常流量检测开关（RMV-ABNTRAFFICDT）_82837037.md`
+- 原始手册：`evidence/UDG/20.15.2/新增异常流量检测开关（ADD-ABNTRAFFICDT）_82837035.md`
+- 原始手册：`evidence/UDG/20.15.2/查询异常流量功能开关（LST-ABNTRAFFICDT）_86526441.md`

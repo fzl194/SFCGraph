@@ -58,4 +58,4 @@ ADD APNPGWRNS: APN= "huawei.com", PGWRNSSWITCH= ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNPGWRNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PGW重定向功能设置（ADD-APNPGWRNS）_51240809.md`

@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWPOOL.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWPOOL.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-POOL（RMV-SGWPOOL）_31453524.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-POOL（ADD-SGWPOOL）_31453512.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-POOL（LST-SGWPOOL）_31453518.md`

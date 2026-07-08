@@ -62,4 +62,4 @@ SMSF白名单开关 =  打开
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFSMSFWHLISTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF白名单开关（LST-NRFSMSFWHLISTSW）_71463514.md`

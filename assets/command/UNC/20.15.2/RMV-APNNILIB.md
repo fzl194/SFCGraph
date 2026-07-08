@@ -59,4 +59,4 @@ RMV APNNILIB: SELMODE=UE_TYPE, UETYPE=ANDROID;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNNILIB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI库记录（RMV-APNNILIB）_72225415.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFGRPIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGRPIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGRPIDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFGRPIDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NF组标识路由（MOD-NRFGRPIDRT）_09653150.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF组标识路由（RMV-NRFGRPIDRT）_09654355.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF组标识路由（ADD-NRFGRPIDRT）_09654189.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF组标识路由（LST-NRFGRPIDRT）_09653153.md`

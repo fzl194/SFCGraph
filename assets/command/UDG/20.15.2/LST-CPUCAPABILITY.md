@@ -63,4 +63,4 @@ CPU基线值  =  1000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CPUCAPABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CPU能力基线(LST-CPUCAPABILITY)_25485673.md`

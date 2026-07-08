@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USNRSVCMD1.md`
-- 原始手册：`evidence/UNC/20.15.2/USNRSVCMD1.md`
-- 原始手册：`evidence/UNC/20.15.2/USNRSVCMD1.md`
-- 原始手册：`evidence/UNC/20.15.2/USNRSVCMD1.md`
+- 原始手册：`evidence/UNC/20.15.2/修改预埋命令1-(MOD-USNRSVCMD1)_67313261.md`
+- 原始手册：`evidence/UNC/20.15.2/删除预埋命令1-(RMV-USNRSVCMD1)_22713156.md`
+- 原始手册：`evidence/UNC/20.15.2/增加预埋命令1(ADD-USNRSVCMD1)_23033092.md`
+- 原始手册：`evidence/UNC/20.15.2/查询预埋命令1-(LST-USNRSVCMD1)_23193068.md`

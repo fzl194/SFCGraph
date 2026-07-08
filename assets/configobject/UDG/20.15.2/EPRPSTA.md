@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EPRPSTA.md`
-- 原始手册：`evidence/UDG/20.15.2/EPRPSTA.md`
-- 原始手册：`evidence/UDG/20.15.2/EPRPSTA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除EPRPSTA对象（RMV-EPRPSTA）_95919472.md`
+- 原始手册：`evidence/UDG/20.15.2/查询EPRPSTA对象（LST-EPRPSTA）_95919473.md`
+- 原始手册：`evidence/UDG/20.15.2/添加EPRPSTA对象（ADD-EPRPSTA）_95919471.md`

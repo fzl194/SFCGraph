@@ -58,4 +58,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SYSRUNNINGSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/系统状态查询（DSP-SYSRUNNINGSTAT）_34307331.md`

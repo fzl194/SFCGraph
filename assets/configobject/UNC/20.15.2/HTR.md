@@ -42,5 +42,5 @@ HTR功能提供如下配置功能：
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTR.md`
-- 原始手册：`evidence/UNC/20.15.2/HTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTR功能(LST-HTR)_26146150.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HTR功能(SET-HTR)_72345749.md`

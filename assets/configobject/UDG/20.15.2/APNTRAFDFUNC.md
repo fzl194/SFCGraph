@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNTRAFDFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNTRAFDFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN流量转发配置（LST-APNTRAFDFUNC）_92153143.md`
+- 原始手册：`evidence/UDG/20.15.2/设置流量转发APN开关（SET-APNTRAFDFUNC）_92313447.md`

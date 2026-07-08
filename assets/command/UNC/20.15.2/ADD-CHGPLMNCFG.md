@@ -75,4 +75,4 @@ ADD CHGPLMNCFG: SUBRANGE=CELL_PLMNID, MCC="123", MNC="001", APNNI="huawei", SPL=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CHGPLMNCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PLMN计费配置(ADD-CHGPLMNCFG)_72225071.md`

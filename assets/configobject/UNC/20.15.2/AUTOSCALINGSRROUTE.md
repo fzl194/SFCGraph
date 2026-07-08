@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSRROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSRROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSRROUTE.md`
-- 原始手册：`evidence/UNC/20.15.2/AUTOSCALINGSRROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改静态路由自动化配置模板（MOD-AUTOSCALINGSRROUTE）_00841625.md`
+- 原始手册：`evidence/UNC/20.15.2/删除静态路由自动化配置模板（RMV-AUTOSCALINGSRROUTE）_00841361.md`
+- 原始手册：`evidence/UNC/20.15.2/增加静态路由自动化配置模板（ADD-AUTOSCALINGSRROUTE）_00866765.md`
+- 原始手册：`evidence/UNC/20.15.2/查询静态路由自动化配置模板（LST-AUTOSCALINGSRROUTE）_00441257.md`

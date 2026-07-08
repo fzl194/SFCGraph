@@ -75,4 +75,4 @@ NfNSSF   NSSF_Instance_0   00000000-0000-0000-0000-000000000014
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFUUID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-UUID信息（LST-NFUUID）_09653839.md`

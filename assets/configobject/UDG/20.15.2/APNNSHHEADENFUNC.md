@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNNSHHEADENFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/APNNSHHEADENFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NSH头增强功能开关（LST-APNNSHHEADENFUNC）_19881180.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NSH头增强功能开关（SET-APNNSHHEADENFUNC）_19641388.md`

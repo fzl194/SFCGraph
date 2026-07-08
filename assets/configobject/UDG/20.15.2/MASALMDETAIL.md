@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MASALMDETAIL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示5G告警详细信息（DSP-MASALMDETAIL）_80432526.md`

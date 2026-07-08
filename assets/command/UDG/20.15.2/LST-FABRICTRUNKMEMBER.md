@@ -66,4 +66,4 @@ Fabric-Trunk20         9                  1     4       3
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FABRICTRUNKMEMBER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Fabric-Trunk成员接口（LST-FABRICTRUNKMEMBER）_84640500.md`

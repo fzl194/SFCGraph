@@ -38,7 +38,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHARGECHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHARGECHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHARGECHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHARGECHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对本地用户、漫游用户、拜访用户所采用的计费属性（MOD-CHARGECHAR）_09896810.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对本地用户、漫游用户、拜访用户所采用的计费属性（RMV-CHARGECHAR）_09896811.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对本地用户、漫游用户、拜访用户所采用的计费属性（ADD-CHARGECHAR）_09896809.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对本地用户、漫游用户、拜访用户所采用的计费属性（LST-CHARGECHAR）_09896812.md`

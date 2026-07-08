@@ -82,4 +82,4 @@ ADD PNFDNN: INDEX=1,NFINSTANCEID="UPF_Instance_0", DNN="huawei.com",PNFNSINDEX=1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的DNN信息（ADD-PNFDNN）_09654342.md`

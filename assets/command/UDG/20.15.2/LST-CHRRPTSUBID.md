@@ -67,4 +67,4 @@ CHR 类型 = 信令CHR
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CHRRPTSUBID.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CHR上报用户（LST-CHRRPTSUBID）_64015294.md`

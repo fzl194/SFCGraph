@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYBURLLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYBURLLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYBURLLIST.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYBURLLIST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继黑名单URL列表（MOD-RELAYBURLLIST）_43992612.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继黑名单URL列表（RMV-RELAYBURLLIST）_94632061.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继黑名单URL列表（ADD-RELAYBURLLIST）_44232394.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继黑名单URL列表（LST-RELAYBURLLIST）_94871987.md`

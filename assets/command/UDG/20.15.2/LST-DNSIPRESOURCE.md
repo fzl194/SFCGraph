@@ -69,4 +69,4 @@ Mgt       IPv4和IPv6  NULL                     NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DNSIPRESOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS-IP地址资源列表（LST-DNSIPRESOURCE）_61928568.md`

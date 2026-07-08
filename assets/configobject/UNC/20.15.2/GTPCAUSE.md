@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCAUSE.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCAUSE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP原因值(RMV-GTPCAUSE)_26305596.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP原因值(ADD-GTPCAUSE)_72225465.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP原因值(LST-GTPCAUSE)_72345387.md`

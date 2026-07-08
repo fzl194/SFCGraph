@@ -67,4 +67,4 @@ Intelligence训练周期（分钟）  =  30
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SAAITRAINPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于SA的Intelligence训练参数（LST-SAAITRAINPARA）_69640518.md`

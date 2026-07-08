@@ -74,4 +74,4 @@ APN的QoS配置信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNQOSATTR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ApnQosAttr配置（LST-APNQOSATTR）_82837666.md`

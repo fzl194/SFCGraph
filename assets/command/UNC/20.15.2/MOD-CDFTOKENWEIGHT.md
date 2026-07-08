@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CDFTOKENWEIGHT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改cdf-token权重（MOD-CDFTOKENWEIGHT）_87360196.md`

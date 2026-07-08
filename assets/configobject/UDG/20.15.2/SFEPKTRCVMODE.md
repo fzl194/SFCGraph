@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFEPKTRCVMODE.md`
-- 原始手册：`evidence/UDG/20.15.2/SFEPKTRCVMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SFE当前收包模式（LST-SFEPKTRCVMODE）_00441053.md`
+- 原始手册：`evidence/UDG/20.15.2/配置SFE收包模式（SET-SFEPKTRCVMODE）_49961330.md`

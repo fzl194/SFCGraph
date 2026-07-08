@@ -62,4 +62,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PERFOBJ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改性能对象信息(MOD-PERFOBJ)_26146188.md`

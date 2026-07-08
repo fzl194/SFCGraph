@@ -59,4 +59,4 @@ RMV ASRCHN: CHNID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ASRCHN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除容灾业务通道配置(RMV-ASRCHN)_26146128.md`

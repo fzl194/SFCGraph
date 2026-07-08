@@ -72,4 +72,4 @@ SET COMMTRCCTRL: USERNOTREPORT=TOPO-1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-COMMTRCCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置通用模块跟踪控制功能（SET-COMMTRCCTRL）_00083280.md`

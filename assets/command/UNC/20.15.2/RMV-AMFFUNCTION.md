@@ -57,4 +57,4 @@ RMV AMFFUNCTION: INSTANCEID="b7b621d82dfb4a009d492491bd9d72a4";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF功能实体配置（RMV-AMFFUNCTION）_09652619.md`

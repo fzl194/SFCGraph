@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPPUB.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPPUB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C协议参数(LST-GTPPUB)_72225599.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTP-C协议参数(SET-GTPPUB)_26145920.md`

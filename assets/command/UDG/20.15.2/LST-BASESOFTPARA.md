@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-BASESOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基础软件参数配置（LST-BASESOFTPARA）_59104134.md`

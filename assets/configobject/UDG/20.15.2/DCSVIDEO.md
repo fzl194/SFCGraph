@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DCSVIDEO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DCS点播视频资源（RMV-DCSVIDEO）_11530325.md`

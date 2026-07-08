@@ -67,4 +67,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MEASMOC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询话统测量对象类模型(DSP-MEASMOC)_29740062.md`

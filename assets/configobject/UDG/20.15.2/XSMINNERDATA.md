@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/XSMINNERDATA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示XSM模块与其他模块的组件间交互消息（DSP-XSMINNERDATA）_59104187.md`

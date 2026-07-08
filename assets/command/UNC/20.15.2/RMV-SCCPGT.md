@@ -59,4 +59,4 @@ RMV SCCPGT: GTX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SCCPGT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCCP全局翻译码(RMV-SCCPGT)_72345925.md`

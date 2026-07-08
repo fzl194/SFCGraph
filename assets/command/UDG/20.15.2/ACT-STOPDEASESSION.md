@@ -55,4 +55,4 @@ ACT STOPDEASESSION:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACT-STOPDEASESSION.md`
+- 原始手册：`evidence/UDG/20.15.2/停止去活用户的处理（ACT-STOPDEASESSION）_97358672.md`

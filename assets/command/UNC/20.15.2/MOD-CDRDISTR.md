@@ -140,4 +140,4 @@ MOD CDRDISTR: CDRDISTRID="Distri_1st_scdr_BS1", ISSINGLEBI=NO, TRANSMODE=PUSH, A
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-CDRDISTR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改话单分发（MOD-CDRDISTR）_51174256.md`

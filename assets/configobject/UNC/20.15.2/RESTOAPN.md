@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESTOAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTOAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除容灾APN特征参数(RMV-RESTOAPN)_72345715.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾APN特征参数(ADD-RESTOAPN)_26305924.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾APN特征参数(LST-RESTOAPN)_26146116.md`

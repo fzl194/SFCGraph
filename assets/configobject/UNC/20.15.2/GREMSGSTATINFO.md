@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GREMSGSTATINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GRE消息诊断信息（DSP-GREMSGSTATINFO）_49961454.md`

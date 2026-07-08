@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/EXTENDPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改扩展策略配置（MOD-EXTENDPOLICY）_35373569.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展策略配置（RMV-EXTENDPOLICY）_35373570.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展策略配置（ADD-EXTENDPOLICY）_35373568.md`
+- 原始手册：`evidence/UDG/20.15.2/查询扩展策略配置（LST-EXTENDPOLICY）_35373571.md`

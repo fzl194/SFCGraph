@@ -64,4 +64,4 @@ RMV TCPMSS: APN="apn1.com", ROAMINGTYPE=ROAMING-1;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TCPMSS.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Tcp-Mss配置（RMV-TCPMSS）_82837696.md`

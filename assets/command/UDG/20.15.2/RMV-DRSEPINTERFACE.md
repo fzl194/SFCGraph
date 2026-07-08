@@ -52,4 +52,4 @@ RMV DRSEPINTERFACE: DRGROUPID=1, IFNAME="itf1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DRSEPINTERFACE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除故障隔离接口（RMV-DRSEPINTERFACE）_35390226.md`

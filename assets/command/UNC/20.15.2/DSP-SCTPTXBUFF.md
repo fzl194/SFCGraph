@@ -95,4 +95,4 @@ LINK_SP_RU_0065  0       0                       0                       3000000
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SCTPTXBUFF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP发送缓冲区(DSP-SCTPTXBUFF)_95432714.md`

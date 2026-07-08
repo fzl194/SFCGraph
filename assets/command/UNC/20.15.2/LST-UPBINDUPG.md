@@ -82,4 +82,4 @@ IMSI/MSISDN号段名称  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPBINDUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户模板组和用户模板的绑定关系（LST-UPBINDUPG）_09897232.md`

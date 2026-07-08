@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NASCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NAS兼容性参数（LST-NASCMPT）_11472420.md`

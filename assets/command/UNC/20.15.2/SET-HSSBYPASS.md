@@ -68,4 +68,4 @@ SET HSSBYPASS: SCANRATE=100, SCANINTERVAL=200;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-HSSBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HSS故障Bypass功能控制参数(SET-HSSBYPASS)_62871280.md`

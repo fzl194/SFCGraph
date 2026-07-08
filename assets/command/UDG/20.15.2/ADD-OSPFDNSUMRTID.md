@@ -58,4 +58,4 @@ ADD OSPFDNSUMRTID:PROCID=1,ROUTERID="10.1.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-OSPFDNSUMRTID.md`
+- 原始手册：`evidence/UDG/20.15.2/创建特定路由器禁止检查Summary-LSA的DN比特位配置（ADD-OSPFDNSUMRTID）_49802630.md`

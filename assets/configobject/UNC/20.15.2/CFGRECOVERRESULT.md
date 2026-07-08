@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CFGRECOVERRESULT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示系统配置恢复结果（DSP-CFGRECOVERRESULT）_59103548.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SGLPASSPERIOD.md`
-- 原始手册：`evidence/UDG/20.15.2/SGLPASSPERIOD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单通检测周期（LST-SGLPASSPERIOD）_82837108.md`
+- 原始手册：`evidence/UDG/20.15.2/设置单通检测周期（SET-SGLPASSPERIOD）_82837107.md`

@@ -56,4 +56,4 @@ RMV DETECTPATH: PATHNAME="testpath3";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DETECTPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/删除探测路径配置（RMV-DETECTPATH）_47501345.md`

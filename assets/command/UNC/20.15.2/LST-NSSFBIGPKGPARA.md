@@ -61,4 +61,4 @@ MAXTAINSNUM  =  30
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSSFBIGPKGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF大包控制参数（LST-NSSFBIGPKGPARA）_46413381.md`

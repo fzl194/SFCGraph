@@ -55,4 +55,4 @@ RMV NSSFFUNCTION:INSTANCEID="Instanceid01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSSFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSSF功能实例信息（RMV-NSSFFUNCTION）_09653801.md`

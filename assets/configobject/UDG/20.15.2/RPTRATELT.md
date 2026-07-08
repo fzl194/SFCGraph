@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RPTRATELT.md`
-- 原始手册：`evidence/UDG/20.15.2/RPTRATELT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务报表消息流控配置（LST-RPTRATELT）_93531887.md`
+- 原始手册：`evidence/UDG/20.15.2/设置报表消息流控配置（SET-RPTRATELT）_06453264.md`

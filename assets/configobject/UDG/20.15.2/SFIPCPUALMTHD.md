@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFIPCPUALMTHD.md`
-- 原始手册：`evidence/UDG/20.15.2/SFIPCPUALMTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询告警阈值（LST-SFIPCPUALMTHD）_91417206.md`
+- 原始手册：`evidence/UDG/20.15.2/设置告警阈值（SET-SFIPCPUALMTHD）_42536151.md`

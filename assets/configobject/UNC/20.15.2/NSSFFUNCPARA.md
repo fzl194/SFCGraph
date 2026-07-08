@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF数据源以及切片选择流程返回信元（LST-NSSFFUNCPARA）_44007076.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NSSF数据源以及切片选择流程返回信元（SET-NSSFFUNCPARA）_44007995.md`

@@ -66,4 +66,4 @@ S-NSSAI信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SNSSAI.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NF支持的网络切片选择标识（LST-SNSSAI）_95089578.md`

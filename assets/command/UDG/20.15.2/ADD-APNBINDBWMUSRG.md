@@ -67,4 +67,4 @@ ADD APNBINDBWMUSRG:USERGROUPNAME="testbwmusergroup",APN="testapn";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-APNBINDBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理用户组APN绑定（ADD-APNBINDBWMUSRG）_82837487.md`

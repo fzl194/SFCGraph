@@ -74,4 +74,4 @@ ADD VPNTARGET:VRFNAME="vrf1", AFTYPE=ipv4uni, VRFRTTYPE=export_extcommunity,VRFR
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-VPNTARGET.md`
+- 原始手册：`evidence/UDG/20.15.2/增加VPN-Target（ADD-VPNTARGET）_00866341.md`

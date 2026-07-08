@@ -68,4 +68,4 @@ ADD PNFSRVNTFSUBS: NFINSTANCEID="AMF_Instance_1", SRVINSTANCEID="Service_Instanc
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFSRVNTFSUBS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF服务实例的回调信息（ADD-PNFSRVNTFSUBS）_09652612.md`

@@ -67,4 +67,4 @@ RMV DMRT: ROUTEIDX=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DMRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter域路由配置(RMV-DMRT)_72345889.md`

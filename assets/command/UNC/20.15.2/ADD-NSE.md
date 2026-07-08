@@ -73,4 +73,4 @@ ADD NSE: OTHERNODE="ShangHai", NSEI=10, BSSID=1, FLUSTHT=500, PFC=NO, CBL=NO, IN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NSE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加信令实体(ADD-NSE)_26146028.md`

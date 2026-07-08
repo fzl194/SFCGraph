@@ -88,4 +88,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSAUTHREQVSA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS鉴权请求携带的私有扩展属性（LST-RDSAUTHREQVSA）_28567653.md`

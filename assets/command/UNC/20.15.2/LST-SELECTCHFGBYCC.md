@@ -68,4 +68,4 @@ Charge Characteristic特定值掩码  =  0xFFFF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SELECTCHFGBYCC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于CC选择CHF处理（LST-SELECTCHFGBYCC）_09653040.md`

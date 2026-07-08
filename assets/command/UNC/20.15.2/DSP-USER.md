@@ -69,4 +69,4 @@ BS        未锁定      CG_SP_RU_0065    Distribution_1st
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-USER.md`
+- 原始手册：`evidence/UNC/20.15.2/显示用户锁定状态（DSP-USER）_51174353.md`

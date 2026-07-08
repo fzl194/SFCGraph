@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUAUTHCIPH.md`
-- 原始手册：`evidence/UNC/20.15.2/IUAUTHCIPH.md`
-- 原始手册：`evidence/UNC/20.15.2/IUAUTHCIPH.md`
-- 原始手册：`evidence/UNC/20.15.2/IUAUTHCIPH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Iu模式用户安全参数(MOD-IUAUTHCIPH)_72345245.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu模式用户安全参数(RMV-IUAUTHCIPH)_26305458.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu模式用户安全参数(ADD-IUAUTHCIPH)_72225327.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式用户安全参数(LST-IUAUTHCIPH)_26145648.md`

@@ -62,4 +62,4 @@ RMV NGSGWPLMN: MCC="123", MNC="68";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGSGWPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-C-Home-PLMN（RMV-NGSGWPLMN）_23782818.md`

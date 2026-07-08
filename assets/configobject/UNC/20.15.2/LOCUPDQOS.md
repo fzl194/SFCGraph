@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCUPDQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCUPDQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCUPDQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCUPDQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地更新QoS值（MOD-LOCUPDQOS）_35636459.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地更新QoS值（RMV-LOCUPDQOS）_88697038.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地更新QoS值（ADD-LOCUPDQOS）_88248940.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地更新QoS值（LST-LOCUPDQOS）_35636453.md`

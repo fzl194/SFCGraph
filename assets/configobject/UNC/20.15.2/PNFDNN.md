@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改对端NF的DNN信息（MOD-PNFDNN）_05497114.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的DNN信息（RMV-PNFDNN）_09653190.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的DNN信息（ADD-PNFDNN）_09654342.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF的DNN信息（LST-PNFDNN）_09652972.md`

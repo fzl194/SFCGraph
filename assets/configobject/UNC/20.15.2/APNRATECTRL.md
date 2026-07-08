@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNRATECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN速率控制配置（LST-APNRATECTRL）_64343877.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN速率控制配置（SET-APNRATECTRL）_64343913.md`

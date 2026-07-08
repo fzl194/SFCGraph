@@ -56,4 +56,4 @@ RMV PLCYNSGRP: NSGRPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PLCYNSGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用于策略控制的网络切片群组（RMV-PLCYNSGRP）_25121206.md`

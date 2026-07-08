@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOST.md`
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOST.md`
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOST.md`
-- 原始手册：`evidence/UDG/20.15.2/MATCHCOST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Cost匹配路由策略（MOD-MATCHCOST）_49961858.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Cost匹配路由策略（RMV-MATCHCOST）_49962026.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Cost匹配路由策略（ADD-MATCHCOST）_49961590.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Cost匹配路由策略（LST-MATCHCOST）_00866529.md`

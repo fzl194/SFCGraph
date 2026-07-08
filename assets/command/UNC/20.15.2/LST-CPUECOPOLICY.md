@@ -58,4 +58,4 @@ CPU调频策略  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CPUECOPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局的CPU调频和休眠策略（LST-CPUECOPOLICY）_53585048.md`

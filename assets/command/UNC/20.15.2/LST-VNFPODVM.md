@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-VNFPODVM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网元的POD与虚拟机位置关系（LST-VNFPODVM）_26089554.md`

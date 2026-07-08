@@ -70,4 +70,4 @@ LST RDSUPFCTRL: UPLISTNAME="uplist1",UPINSTANCEID="up1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSUPFCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RADIUS服务器使用的UP列表中UP的功能属性（LST-RDSUPFCTRL）_82242447.md`

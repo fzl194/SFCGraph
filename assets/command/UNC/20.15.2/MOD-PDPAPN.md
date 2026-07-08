@@ -66,4 +66,4 @@ MOD PDPAPN: SUBRANGE=ALL_USER, PDPTYPE=PT_IPV4, APNNI="CMNET";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-PDPAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地APN-NI配置(MOD-PDPAPN)_72225359.md`

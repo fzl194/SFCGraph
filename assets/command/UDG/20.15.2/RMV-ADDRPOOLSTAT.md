@@ -56,4 +56,4 @@ RMV ADDRPOOLSTAT: POOLSTATNAME="stat1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ADDRPOOLSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除地址池统计配置（RMV-ADDRPOOLSTAT）_26921002.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSSTIMERSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询定时器精度统计信息（DSP-MSSTIMERSTAT）_49802182.md`

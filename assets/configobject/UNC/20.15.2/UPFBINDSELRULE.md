@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDSELRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDSELRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDSELRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPFBINDSELRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF和规则的绑定关系（MOD-UPFBINDSELRULE）_75822992.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF和规则的绑定关系（RMV-UPFBINDSELRULE）_75823004.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF和规则的绑定关系（ADD-UPFBINDSELRULE）_21742337.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF和规则的绑定关系（LST-UPFBINDSELRULE）_75982852.md`

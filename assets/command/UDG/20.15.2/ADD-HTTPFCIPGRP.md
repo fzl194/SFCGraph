@@ -62,4 +62,4 @@ ADD HTTPFIXEDFC: GROUP=1, SENDTHD=500, RECVTHD=600, STATUSCODE=ServiceUnavailabl
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-HTTPFCIPGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTP流控组（ADD-HTTPFCIPGRP）_29053323.md`

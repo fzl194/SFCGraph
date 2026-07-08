@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGLANCHGCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN计费控制相关参数（LST-NGLANCHGCTRL）_80175090.md`

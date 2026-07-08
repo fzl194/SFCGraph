@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYURLAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYURLAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYURLAUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYURLAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继URL鉴权配置（MOD-RELAYURLAUTH）_94871971.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继URL鉴权配置（RMV-RELAYURLAUTH）_44232380.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继URL鉴权配置（ADD-RELAYURLAUTH）_94632045.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继URL鉴权配置（LST-RELAYURLAUTH）_43992598.md`

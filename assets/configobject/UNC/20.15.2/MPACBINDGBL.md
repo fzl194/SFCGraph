@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MPACBINDGBL.md`
-- 原始手册：`evidence/UNC/20.15.2/MPACBINDGBL.md`
-- 原始手册：`evidence/UNC/20.15.2/MPACBINDGBL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MPAC全局策略（RMV-MPACBINDGBL）_49802258.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MPAC全局策略（ADD-MPACBINDGBL）_49961826.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MPAC全局策略（LST-MPACBINDGBL）_00865761.md`

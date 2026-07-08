@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UNCLOGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/UNCLOGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/UNCLOGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/UNCLOGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UNC日志控制记录（MOD-UNCLOGCTRL）_51175637.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UNC日志控制记录（RMV-UNCLOGCTRL）_23736564.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UNC日志控制记录（ADD-UNCLOGCTRL）_23736536.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UNC日志控制记录（LST-UNCLOGCTRL）_54295965.md`

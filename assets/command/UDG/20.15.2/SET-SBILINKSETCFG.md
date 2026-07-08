@@ -59,4 +59,4 @@ SET SBILINKSETCFG:SETAGINGTIME=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SBILINKSETCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置服务化接口链路集属性（SET-SBILINKSETCFG）_83653668.md`

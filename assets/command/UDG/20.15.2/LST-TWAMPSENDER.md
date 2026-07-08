@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TWAMPSENDER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TWAMP发送端（LST-TWAMPSENDER）_27102478.md`

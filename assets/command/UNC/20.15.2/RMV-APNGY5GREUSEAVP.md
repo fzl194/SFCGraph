@@ -57,4 +57,4 @@ RMV APNGY5GREUSEAVP: APN="APNGY";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNGY5GREUSEAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于apn的Gy接口重用字段的填写方式（RMV-APNGY5GREUSEAVP）_23622990.md`

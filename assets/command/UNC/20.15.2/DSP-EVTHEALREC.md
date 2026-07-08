@@ -61,4 +61,4 @@ SDRS				1				关联诊断						2021-08-04 09:17:10		自愈进程					gtp-pod-6d7
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-EVTHEALREC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示事件治理自愈结果（DSP-EVTHEALREC）_94753519.md`

@@ -59,4 +59,4 @@ SET PODCPUTHD: WARNTHD=80,RECVTHD=70;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PODCPUTHD.md`
+- 原始手册：`evidence/UDG/20.15.2/设置POD-CPU告警阈值（SET-PODCPUTHD）_37900461.md`

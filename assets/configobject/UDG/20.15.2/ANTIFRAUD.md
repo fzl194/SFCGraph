@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ANTIFRAUD.md`
-- 原始手册：`evidence/UDG/20.15.2/ANTIFRAUD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询防欺诈配置（LST-ANTIFRAUD）_82837793.md`
+- 原始手册：`evidence/UDG/20.15.2/设置防欺诈配置（SET-ANTIFRAUD）_82837792.md`

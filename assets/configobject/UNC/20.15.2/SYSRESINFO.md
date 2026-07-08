@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYSRESINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示系统资源使用信息(DSP-SYSRESINFO)_72225559.md`

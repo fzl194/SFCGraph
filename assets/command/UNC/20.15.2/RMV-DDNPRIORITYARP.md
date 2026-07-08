@@ -58,4 +58,4 @@ RMV DDNPRIORITYARP: ARP=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DDNPRIORITYARP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于ARP的DDN消息优先级配置（RMV-DDNPRIORITYARP）_04284721.md`

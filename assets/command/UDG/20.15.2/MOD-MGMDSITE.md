@@ -60,4 +60,4 @@ MOD MGMDSITE:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ROBUSTNESS=4;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-MGMDSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IGMP全局配置（MOD-MGMDSITE）_50281430.md`

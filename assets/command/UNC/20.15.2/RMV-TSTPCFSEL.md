@@ -58,4 +58,4 @@ RMV TSTPCFSEL: IMSI="123456789012345";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TSTPCFSEL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除拨测用户与PCF服务区的绑定关系（RMV-TSTPCFSEL）_70382393.md`

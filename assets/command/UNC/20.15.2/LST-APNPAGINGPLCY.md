@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN寻呼策略参数配置(LST-APNPAGINGPLCY)_26145712.md`

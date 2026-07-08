@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPPATH.md`
+- 原始手册：`evidence/UNC/20.15.2/测试HTTP链路（TST-HTTPPATH）_63037028.md`

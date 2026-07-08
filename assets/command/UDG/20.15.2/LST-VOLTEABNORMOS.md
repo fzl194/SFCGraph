@@ -64,4 +64,4 @@ MOS值的异常门限  =  10
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VOLTEABNORMOS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询配置的MOS值异常门限值信息（LST-VOLTEABNORMOS）_69178842.md`

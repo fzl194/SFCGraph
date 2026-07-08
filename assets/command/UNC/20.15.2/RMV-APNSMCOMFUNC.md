@@ -58,4 +58,4 @@ RMV APNSMCOMFUNC: APN="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNSMCOMFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN粒度的通用会话拓展功能控制（RMV-APNSMCOMFUNC）_77419820.md`

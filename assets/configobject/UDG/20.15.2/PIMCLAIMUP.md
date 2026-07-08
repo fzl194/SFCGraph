@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PIMCLAIMUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PIM使用的路由信息（DSP-PIMCLAIMUP）_00441497.md`

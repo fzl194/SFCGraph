@@ -70,4 +70,4 @@ SET GLBIPV6INFID: IMSI=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBIPV6INFID.md`
+- 原始手册：`evidence/UDG/20.15.2/设置整机IPv6接口ID配置（SET-GLBIPV6INFID）_71074283.md`

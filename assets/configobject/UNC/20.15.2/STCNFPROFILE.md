@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STCNFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/STCNFPROFILE.md`
-- 原始手册：`evidence/UNC/20.15.2/STCNFPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/去激活手动注册的NFProfile（DEACT-STCNFPROFILE）_44006686.md`
+- 原始手册：`evidence/UNC/20.15.2/查询手动注册的NFProfile（LST-STCNFPROFILE）_44007244.md`
+- 原始手册：`evidence/UNC/20.15.2/激活手动注册NFProfile（ACT-STCNFPROFILE）_44006304.md`

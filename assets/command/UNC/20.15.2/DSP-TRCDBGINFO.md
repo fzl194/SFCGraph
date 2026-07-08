@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-TRCDBGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询跟踪调试信息(DSP-TRCDBGINFO)_29626899.md`

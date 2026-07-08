@@ -53,4 +53,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NCCPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NCC策略(LST-NCCPOLICY)_69362704.md`

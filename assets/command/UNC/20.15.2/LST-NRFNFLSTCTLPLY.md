@@ -67,4 +67,4 @@ LST NRFNFLSTCTLPLY:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFNFLSTCTLPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NFINFOLIST处理策略（LST-NRFNFLSTCTLPLY）_23622950.md`

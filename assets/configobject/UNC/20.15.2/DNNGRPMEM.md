@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNNGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNGRPMEM.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN群组成员（RMV-DNNGRPMEM）_64343906.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN群组成员（ADD-DNNGRPMEM）_64343823.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN群组成员（LST-DNNGRPMEM）_64343884.md`

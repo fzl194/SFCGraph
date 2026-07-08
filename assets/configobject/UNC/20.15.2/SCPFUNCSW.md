@@ -42,5 +42,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCPFUNCSW.md`
-- 原始手册：`evidence/UNC/20.15.2/SCPFUNCSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询间接路由功能（LST-SCPFUNCSW）_02630398.md`
+- 原始手册：`evidence/UNC/20.15.2/设置间接路由功能（SET-SCPFUNCSW）_02870340.md`

@@ -56,4 +56,4 @@ RMV MULTICASTGRP: MCASTGRPNAME="group";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MULTICASTGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除组播组配置（RMV-MULTICASTGRP）_15711176.md`

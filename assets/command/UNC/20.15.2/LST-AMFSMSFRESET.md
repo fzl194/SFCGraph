@@ -62,4 +62,4 @@ SMSF故障重选开关  =  打开
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFSMSFRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的SMSF故障处理策略（LST-AMFSMSFRESET）_96805382.md`

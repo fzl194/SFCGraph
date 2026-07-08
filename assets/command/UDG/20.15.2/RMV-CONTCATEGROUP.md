@@ -66,4 +66,4 @@ RMV CONTCATEGROUP: CONTCATEGNAME="cf_contcategrprange1", CATEGORYTYPE=SPECIFIC, 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CONTCATEGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除内容分类组（RMV-CONTCATEGROUP）_43076791.md`

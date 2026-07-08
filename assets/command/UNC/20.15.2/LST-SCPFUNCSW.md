@@ -83,4 +83,4 @@ CHF         CUSTOM_OCS  OFF               OFF               OFF           OFF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCPFUNCSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询间接路由功能（LST-SCPFUNCSW）_02630398.md`

@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PREFIXURLGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PREFIXURLGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/PREFIXURLGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除前缀URL组（RMV-PREFIXURLGRP）_82837403.md`
+- 原始手册：`evidence/UDG/20.15.2/增加前缀URL组（ADD-PREFIXURLGRP）_82837402.md`
+- 原始手册：`evidence/UDG/20.15.2/查询前缀URL组（LST-PREFIXURLGRP）_86526656.md`

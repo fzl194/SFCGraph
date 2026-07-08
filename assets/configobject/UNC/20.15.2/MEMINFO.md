@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MEMINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示APP内存信息（DSP-MEMINFO）_59104223.md`

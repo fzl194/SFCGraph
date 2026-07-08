@@ -77,4 +77,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-ICMP6STAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ICMP6统计（DSP-ICMP6STAT）_49961378.md`

@@ -58,4 +58,4 @@ MOD EPLMNGRP: GRPIDX=0, PLMNIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-EPLMNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改等价PLMN组（MOD-EPLMNGRP）_09651849.md`

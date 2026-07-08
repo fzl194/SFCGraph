@@ -65,4 +65,4 @@ SET IOTCAPABILITY:NBIOT=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-IOTCAPABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/设置物联网能力上报（SET-IOTCAPABILITY）_70824408.md`

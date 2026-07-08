@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNNSMARTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNSMARTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNSMARTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/DNNSMARTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNN智能分流配置（MOD-DNNSMARTPLCY）_87680060.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNN智能分流配置（RMV-DNNSMARTPLCY）_87839696.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN智能分流配置（ADD-DNNSMARTPLCY）_87520112.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNN智能分流配置（LST-DNNSMARTPLCY）_87360192.md`

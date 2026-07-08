@@ -68,4 +68,4 @@ The result is as follows
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLBRLYOTCPCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继全局回源TCP控制（LST-GLBRLYOTCPCTRL）_94632057.md`

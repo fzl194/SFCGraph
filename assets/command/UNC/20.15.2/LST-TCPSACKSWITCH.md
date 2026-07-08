@@ -70,4 +70,4 @@ Gy接口TCP协议支持SACK选项开关  =  允许
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TCPSACKSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TCP-SACK开关配置（LST-TCPSACKSWITCH）_09897244.md`

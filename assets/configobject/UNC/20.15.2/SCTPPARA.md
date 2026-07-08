@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SCTP协议参数(MOD-SCTPPARA)_26146340.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP协议参数(RMV-SCTPPARA)_72345939.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCTP协议参数(ADD-SCTPPARA)_26306150.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP协议参数(LST-SCTPPARA)_72226019.md`

@@ -103,4 +103,4 @@ bb          bb            控制线程死循环            否        NULL      
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PAEEXAMSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE故障信息（DSP-PAEEXAMSTATE）_92520033.md`

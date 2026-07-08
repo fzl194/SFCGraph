@@ -76,4 +76,4 @@ ADD PNFSERVICE: NFINSTANCEID="SMF_Instance_0", SRVINSTANCEID="Service_Instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF服务实例信息（ADD-PNFSERVICE）_09652978.md`

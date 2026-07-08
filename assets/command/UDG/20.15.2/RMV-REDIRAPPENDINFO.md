@@ -59,4 +59,4 @@ RMV REDIRAPPENDINFO: APPENDINFONAME="testredirappendinfo";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-REDIRAPPENDINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除重定向携带信息（RMV-REDIRAPPENDINFO）_86528788.md`

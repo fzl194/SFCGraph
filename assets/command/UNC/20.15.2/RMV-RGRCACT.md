@@ -60,4 +60,4 @@ RMV RGRCACT: CCTMPLTNAME="global", RCCODE=SERVICEDENIED;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RGRCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RG级异常返回码处理动作（RMV-RGRCACT）_09652671.md`

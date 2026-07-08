@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UEDNSBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/UEDNSBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复APN的DNS属性（RTR-UEDNSBINDAPN）_09652442.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的DNS属性（LST-UEDNSBINDAPN）_09652680.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN的DNS属性（SET-UEDNSBINDAPN）_33845579.md`

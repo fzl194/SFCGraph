@@ -63,4 +63,4 @@ SET SMSCHFGRP: PRIMARYCHFGRP="SMS CHF Group1", SECONDARYCHFGRP="SMS CHF Group2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMSCHFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置短消息计费CHF组（SET-SMSCHFGRP）_77419832.md`

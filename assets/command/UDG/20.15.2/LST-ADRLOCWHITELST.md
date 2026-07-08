@@ -65,4 +65,4 @@ MSISDN  =  123456
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ADRLOCWHITELST.md`
+- 原始手册：`evidence/UDG/20.15.2/查询位置区域地址分配用户白名单（LST-ADRLOCWHITELST）_06054825.md`

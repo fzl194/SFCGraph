@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FAULTCHECKBYFABRIC.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTCHECKBYFABRIC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询故障快速检测配置信息（LST-FAULTCHECKBYFABRIC）_76551421.md`
+- 原始手册：`evidence/UNC/20.15.2/设置故障快速检测配置（SET-FAULTCHECKBYFABRIC）_76431669.md`

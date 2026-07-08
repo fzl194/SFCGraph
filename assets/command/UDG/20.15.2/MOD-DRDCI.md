@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-DRDCI.md`
+- 原始手册：`evidence/UDG/20.15.2/修改DC间通信通道信息（MOD-DRDCI）_85910093.md`

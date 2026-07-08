@@ -63,4 +63,4 @@ RMV SECTION:POOLNAME="pool1",SECTIONNUM=0;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SECTION.md`
+- 原始手册：`evidence/UDG/20.15.2/删除地址池IP地址段（RMV-SECTION）_82837115.md`

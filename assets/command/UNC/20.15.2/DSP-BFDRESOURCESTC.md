@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-BFDRESOURCESTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BFD资源统计信息（DSP-BFDRESOURCESTC）_00441293.md`

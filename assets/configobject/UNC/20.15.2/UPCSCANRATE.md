@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPCSCANRATE.md`
-- 原始手册：`evidence/UNC/20.15.2/UPCSCANRATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户面控制扫描速率（LST-UPCSCANRATE）_04284716.md`
+- 原始手册：`evidence/UNC/20.15.2/设置用户面控制扫描速率（SET-UPCSCANRATE）_04284727.md`

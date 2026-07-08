@@ -64,4 +64,4 @@ SET SOFTPARA: DT=BYTE, PARANUM=181, VALUE="3";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置软件参数表(SET-SOFTPARA)_26146182.md`

@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLGROUP6IPSEC.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLGROUP6IPSEC.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLGROUP6IPSEC.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLGROUP6IPSEC.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv6-ACL规则组（MOD-ACLGROUP6IPSEC）_21361338.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-ACL规则组（RMV-ACLGROUP6IPSEC）_68321017.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv6-ACL规则组（ADD-ACLGROUP6IPSEC）_21521202.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-ACL规则组配置（LST-ACLGROUP6IPSEC）_21361324.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFFQDN.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFQDN.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFQDN.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFFQDN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NRF的FQDN（MOD-NRFFQDN）_09652626.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NRF的FQDN（RMV-NRFFQDN）_09651446.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF的FQDN（ADD-NRFFQDN）_09652294.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF的FQDN（LST-NRFFQDN）_09654163.md`

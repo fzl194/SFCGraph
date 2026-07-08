@@ -70,4 +70,4 @@ RU的ID  RU的名字         ScaleGroup的名字   RU的状态
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SERVICERUSTATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RU的信息(LST-SERVICERUSTATE)_29626965.md`

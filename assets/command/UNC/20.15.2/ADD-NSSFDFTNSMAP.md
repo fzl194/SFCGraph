@@ -63,4 +63,4 @@ ADD NSSFDFTNSMAP: CTRLMODE=VPLMN, VMCC="123", VMNC="45", VSST=8, VSD="ABC123";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NSSFDFTNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游切片默认映射配置（ADD-NSSFDFTNSMAP）_79735154.md`

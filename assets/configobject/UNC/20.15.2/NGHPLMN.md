@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGHPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGHPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGHPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGHPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-Home-PLMN（MOD-NGHPLMN）_09652653.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-Home-PLMN（RMV-NGHPLMN）_09653738.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-Home-PLMN（ADD-NGHPLMN）_09651693.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-Home-PLMN（LST-NGHPLMN）_09653743.md`

@@ -59,4 +59,4 @@ MOD HNOSRVPLMN: NOID=0, MCC="123", MNC="03", PLMNN="BBB";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-HNOSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改归属网络Serving-PLMN信息(MOD-HNOSRVPLMN)_72225735.md`

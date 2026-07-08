@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPLEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPLEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPLEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SCTP本地实体组(RMV-SCTPLEGRP)_19187105.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCTP本地实体组(ADD-SCTPLEGRP)_19186931.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP本地实体组(LST-SCTPLEGRP)_19187146.md`

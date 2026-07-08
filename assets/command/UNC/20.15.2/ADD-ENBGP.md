@@ -68,4 +68,4 @@ UE从入口ENBGP进入低速ENBGP时，最大驻留时长为“驻留时长（mi
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ENBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加eNodeB群组(ADD-ENBGP)_26145606.md`

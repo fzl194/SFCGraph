@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFSETID.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSETID.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSETID.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFSETID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF集与切片的关系（MOD-AMFSETID）_09652632.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF集与切片的关系（RMV-AMFSETID）_09652598.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF集与切片的关系（ADD-AMFSETID）_09651530.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF集与切片的关系（LST-AMFSETID）_09651520.md`

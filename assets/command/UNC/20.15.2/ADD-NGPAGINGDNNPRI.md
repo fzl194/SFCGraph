@@ -64,4 +64,4 @@ ADD NGPAGINGDNNPRI: DNN="IMS", PRIORITY=PAGING_HIGH;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGPAGINGDNNPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于DNN的Paging消息在流控期间放通的优先级（ADD-NGPAGINGDNNPRI）_98467635.md`

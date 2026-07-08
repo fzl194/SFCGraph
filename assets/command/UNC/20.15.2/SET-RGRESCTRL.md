@@ -75,4 +75,4 @@ SET RGRESCTRL: ONLRGAGESW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-RGRESCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置RG资源控制配置（SET-RGRESCTRL）_96243210.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SADEDICBEARER.md`
-- 原始手册：`evidence/UDG/20.15.2/SADEDICBEARER.md`
-- 原始手册：`evidence/UDG/20.15.2/SADEDICBEARER.md`
-- 原始手册：`evidence/UDG/20.15.2/SADEDICBEARER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改业务感知专有承载配置（MOD-SADEDICBEARER）_82837655.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务感知专有承载配置（RMV-SADEDICBEARER）_82837656.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务感知专有承载配置（ADD-SADEDICBEARER）_82837654.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务感知专有承载配置（LST-SADEDICBEARER）_86528486.md`

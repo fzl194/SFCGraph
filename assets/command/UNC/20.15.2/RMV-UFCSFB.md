@@ -57,4 +57,4 @@ RMV UFCSFB: SUBRANGE=FOREIGN_USER, NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UFCSFB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除预留功能策略(RMV-UFCSFB)_26305258.md`

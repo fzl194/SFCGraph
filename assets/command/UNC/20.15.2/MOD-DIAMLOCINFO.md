@@ -69,4 +69,4 @@ MOD DIAMLOCINFO:HOSTNAME="vepcs50.epc.mnc004.mcc123.3gppnetwork.org",REALMNAME="
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DIAMLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter本端信息（MOD-DIAMLOCINFO）_09897272.md`

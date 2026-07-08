@@ -61,4 +61,4 @@ ADD PNFSLCTSSCOPE: PEERNFTYPE=DEFAULT, SRVSCOPENAME="CityA";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFSLCTSSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加选择对端NF时使用的业务服务区（ADD-PNFSLCTSSCOPE）_32390457.md`

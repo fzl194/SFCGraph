@@ -65,4 +65,4 @@ SET IULOAD: IUSHSPT=YES, NTMR=5, OVERLOADTMR=40;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-IULOAD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGP负荷配置(SET-IULOAD)_26305846.md`

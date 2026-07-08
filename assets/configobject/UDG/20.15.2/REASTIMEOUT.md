@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/REASTIMEOUT.md`
-- 原始手册：`evidence/UDG/20.15.2/REASTIMEOUT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv4报文重组超时配置（LST-REASTIMEOUT）_50121726.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv4报文重组超时配置（SET-REASTIMEOUT）_50281006.md`

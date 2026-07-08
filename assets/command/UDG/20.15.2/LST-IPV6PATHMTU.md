@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-IPV6PATHMTU.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-Path-MTU配置（LST-IPV6PATHMTU）_50281082.md`

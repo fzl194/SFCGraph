@@ -30,8 +30,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DMLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter本端实体(MOD-DMLE)_72225961.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter本端实体(RMV-DMLE)_26146282.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter本端实体(ADD-DMLE)_72345881.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Diameter本端实体(DSP-DMLE)_72345883.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter本端实体(LST-DMLE)_26306094.md`

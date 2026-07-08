@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HEADENRATTYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/HEADENRATTYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/HEADENRATTYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复头增强RAT类型定义（RTR-HEADENRATTYPE）_86527135.md`
+- 原始手册：`evidence/UDG/20.15.2/查询头增强RAT类型定义（LST-HEADENRATTYPE）_82837510.md`
+- 原始手册：`evidence/UDG/20.15.2/设置头增强RAT类型定义（SET-HEADENRATTYPE）_82837509.md`

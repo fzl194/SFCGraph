@@ -66,4 +66,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF功能实例信息（LST-SMFFUNCTION）_09653251.md`

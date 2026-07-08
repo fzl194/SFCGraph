@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTPKT.md`
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTPKT.md`
-- 原始手册：`evidence/UDG/20.15.2/UEINJECTPKT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除UE灌包参数（RMV-UEINJECTPKT）_82837092.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UE灌包参数（LST-UEINJECTPKT）_82837093.md`
+- 原始手册：`evidence/UDG/20.15.2/设置UE灌包参数（SET-UEINJECTPKT）_82837091.md`

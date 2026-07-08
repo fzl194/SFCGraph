@@ -63,4 +63,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-USERRUNINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除网关对IMSI_MSISDN指定的用户的运行信息进行收集配置（RMV-USERRUNINFO）_82837072.md`

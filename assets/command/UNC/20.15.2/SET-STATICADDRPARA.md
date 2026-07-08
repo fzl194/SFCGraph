@@ -68,4 +68,4 @@ SET STATICADDRPARA: SCANSWT=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-STATICADDRPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置静态地址参数（SET-STATICADDRPARA）_32233051.md`

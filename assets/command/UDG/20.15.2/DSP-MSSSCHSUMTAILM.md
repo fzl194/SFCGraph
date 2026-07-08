@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSSCHSUMTAILM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示调度部署详细信息（DSP-MSSSCHSUMTAILM）_92520023.md`

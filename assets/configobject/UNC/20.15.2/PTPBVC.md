@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PTPBVC.md`
-- 原始手册：`evidence/UNC/20.15.2/PTPBVC.md`
+- 原始手册：`evidence/UNC/20.15.2/复位小区(RST-PTPBVC)_72345591.md`
+- 原始手册：`evidence/UNC/20.15.2/显示小区上下文信息(DSP-PTPBVC)_26305800.md`

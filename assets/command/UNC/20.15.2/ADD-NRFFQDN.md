@@ -62,4 +62,4 @@ ADD NRFFQDN: INDEX=1, MCC="460", MNC="03", SST=1, FQDN="TAC-LB01.TAC-HB71.TAC.EP
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFFQDN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF的FQDN（ADD-NRFFQDN）_09652294.md`

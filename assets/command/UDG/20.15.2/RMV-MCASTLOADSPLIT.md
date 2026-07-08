@@ -55,4 +55,4 @@ RMV MCASTLOADSPLIT:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MCASTLOADSPLIT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除组播负载分担配置（RMV-MCASTLOADSPLIT）_00866709.md`

@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MASALMCHECK.md`
-- 原始手册：`evidence/UDG/20.15.2/MASALMCHECK.md`
+- 原始手册：`evidence/UDG/20.15.2/启动5G告警核查（STR-MASALMCHECK）_80751076.md`
+- 原始手册：`evidence/UDG/20.15.2/显示5G告警核查状态（DSP-MASALMCHECK）_32103567.md`

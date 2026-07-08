@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GTPCT3N3.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCT3N3.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCT3N3.md`
-- 原始手册：`evidence/UNC/20.15.2/GTPCT3N3.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GTP-C-T3N3参数（MOD-GTPCT3N3）_09651568.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GTP-C-T3N3参数（RMV-GTPCT3N3）_09652152.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C-T3N3参数（ADD-GTPCT3N3）_09651701.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C-T3N3参数（LST-GTPCT3N3）_09652994.md`

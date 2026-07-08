@@ -54,4 +54,4 @@ RMV GLBURRGROUP:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-GLBURRGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局计费属性（RMV-GLBURRGROUP）_86528078.md`

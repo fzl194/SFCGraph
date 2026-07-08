@@ -67,4 +67,4 @@ ADD CCPRCACT: RCTYPE=VALUE, CODETYPE=900, FOTNM="ccpfot1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CCPRCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加融合计费Proxy结果码处理动作（ADD-CCPRCACT）_45110908.md`

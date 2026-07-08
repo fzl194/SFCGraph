@@ -55,4 +55,4 @@ RMV N2INFAMFINFO: NFINSTANCENAME="AMF_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-N2INFAMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除AMF的N2接口信息（RMV-N2INFAMFINFO）_09651587.md`

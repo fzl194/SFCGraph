@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DRAUTOSWOVER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询热备模式下是否开启自动倒换功能（LST-DRAUTOSWOVER）_80076380.md`

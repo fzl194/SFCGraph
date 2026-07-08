@@ -60,4 +60,4 @@ RMV NRFBSFIPV6REL: BSFINDEX=1, START="2001:0db8::1", END="2001:0db8::1000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFBSFIPV6REL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF索引和IPv6的关联关系（RMV-NRFBSFIPV6REL）_45612437.md`

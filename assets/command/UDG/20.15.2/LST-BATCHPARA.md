@@ -59,4 +59,4 @@ LST BATCHPARA: STAGENAME=FASTSTAGE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-BATCHPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询批量调度参数（LST-BATCHPARA）_50377175.md`

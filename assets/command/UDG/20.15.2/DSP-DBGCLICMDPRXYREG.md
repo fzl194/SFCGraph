@@ -69,4 +69,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-DBGCLICMDPRXYREG.md`
+- 原始手册：`evidence/UDG/20.15.2/显示通过命令代理可执行命令行调试命令的白名单（DSP-DBGCLICMDPRXYREG）_59103592.md`

@@ -70,4 +70,4 @@ ADD NGSRVPLMN: PLMNIDX=0, NOID=0, MCC="123", MNC="45";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-Serving-PLMN（ADD-NGSRVPLMN）_09654167.md`

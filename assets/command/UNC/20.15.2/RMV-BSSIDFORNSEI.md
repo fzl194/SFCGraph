@@ -57,4 +57,4 @@ RMV BSSIDFORNSEI: NSEI=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-BSSIDFORNSEI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSEI和BSSID值的对应关系(RMV-BSSIDFORNSEI)_26145996.md`

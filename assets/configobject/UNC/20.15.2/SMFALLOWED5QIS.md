@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFALLOWED5QIS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFALLOWED5QIS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFALLOWED5QIS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户允许的5QI列表（RMV-SMFALLOWED5QIS）_14280400.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G用户允许的5QI列表（ADD-SMFALLOWED5QIS）_13960444.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户允许的5QI列表（LST-SMFALLOWED5QIS）_59000291.md`

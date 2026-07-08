@@ -69,4 +69,4 @@ MOD AREADNS: DNTYPE=SGW_RAI, LAC="0x01", RAC="0x01", RACRANGE="0x09";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-AREADNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改位置区域DNS域名(MOD-AREADNS)_72225639.md`

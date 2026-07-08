@@ -37,7 +37,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NTPSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/NTPSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/NTPSVR.md`
-- 原始手册：`evidence/UNC/20.15.2/NTPSVR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NTP服务器(MOD-NTPSVR)_67551556.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NTP服务器(RMV-NTPSVR)_54491177.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NTP服务器(ADD-NTPSVR)_54491176.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NTP服务器(LST-NTPSVR)_54491178.md`

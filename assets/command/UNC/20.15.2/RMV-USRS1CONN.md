@@ -60,4 +60,4 @@ RMV USRS1CONN: RMVOPTION= BYIMSI, IMSI="123071104000955";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-USRS1CONN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1接口用户连接(RMV-USRS1CONN)_72225921.md`

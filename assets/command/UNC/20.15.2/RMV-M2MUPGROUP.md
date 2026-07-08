@@ -57,4 +57,4 @@ RMV M2MUPGROUP: UPFGRPNAME="upfgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-M2MUPGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M关联的UPF组（RMV-M2MUPGROUP）_96242806.md`

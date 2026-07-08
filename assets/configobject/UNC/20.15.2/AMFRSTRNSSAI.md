@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFRSTRNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFRSTRNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFRSTRNSSAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA级限制切片（RMV-AMFRSTRNSSAI）_24796830.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TA级限制切片（ADD-AMFRSTRNSSAI）_24796800.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TA级限制切片（LST-AMFRSTRNSSAI）_24956630.md`

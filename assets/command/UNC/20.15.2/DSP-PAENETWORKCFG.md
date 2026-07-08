@@ -62,4 +62,4 @@ aa           bb           控制平面  L2        IPv4      SYSASSIGN  否      
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PAENETWORKCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE网络配置信息（DSP-PAENETWORKCFG）_74963460.md`

@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MIGRATE.md`
-- 原始手册：`evidence/UDG/20.15.2/MIGRATE.md`
+- 原始手册：`evidence/UDG/20.15.2/异构迁移查询（DSP-MIGRATE）_86513705.md`
+- 原始手册：`evidence/UDG/20.15.2/异构迁移（ACT-MIGRATE）_35833852.md`

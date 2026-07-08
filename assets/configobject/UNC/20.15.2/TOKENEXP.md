@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TOKENEXP.md`
-- 原始手册：`evidence/UNC/20.15.2/TOKENEXP.md`
-- 原始手册：`evidence/UNC/20.15.2/TOKENEXP.md`
-- 原始手册：`evidence/UNC/20.15.2/TOKENEXP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Token有效期（MOD-TOKENEXP）_09651804.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Token有效期（RMV-TOKENEXP）_09652332.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Token有效期（ADD-TOKENEXP）_09654165.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Token有效期（LST-TOKENEXP）_09652435.md`

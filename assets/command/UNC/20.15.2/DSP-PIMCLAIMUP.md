@@ -78,4 +78,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PIMCLAIMUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PIM使用的路由信息（DSP-PIMCLAIMUP）_00441497.md`

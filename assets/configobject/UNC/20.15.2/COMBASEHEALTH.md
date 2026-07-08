@@ -25,6 +25,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMBASEHEALTH.md`
-- 原始手册：`evidence/UNC/20.15.2/COMBASEHEALTH.md`
-- 原始手册：`evidence/UNC/20.15.2/COMBASEHEALTH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示Base平面通信质量（DSP-COMBASEHEALTH）_32217474.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Base平面的亚健康检测参数（LST-COMBASEHEALTH）_32217475.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Base平面的亚健康检测参数（SET-COMBASEHEALTH）_32217476.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPGWRNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPGWRNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPGWRNS.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPGWRNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PGW重定向功能设置（MOD-APNPGWRNS）_50919533.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PGW重定向功能设置（RMV-APNPGWRNS）_01878822.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PGW重定向功能设置（ADD-APNPGWRNS）_51240809.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PGW重定向功能设置（LST-APNPGWRNS）_01560902.md`

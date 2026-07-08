@@ -102,4 +102,4 @@ RAN-SecondaryRAT-Usage-Report上报CHF的阈值  =  100
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CCT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合计费模板（LST-CCT）_09653820.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGSRLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSRLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSRLKS.md`
-- 原始手册：`evidence/UNC/20.15.2/SGSRLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGS服务端链路集-(MOD-SGSRLKS)_97067569.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGS服务端链路集-(RMV-SGSRLKS)_50427734.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGS服务端链路集-(ADD-SGSRLKS)_96986429.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGS服务端链路集-(LST-SGSRLKS)_50268010.md`

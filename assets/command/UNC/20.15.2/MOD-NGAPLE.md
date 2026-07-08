@@ -56,4 +56,4 @@ MOD NGAPLE: NGAPLEIDX=1, NGAPPARAIDX=5;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGAPLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NGAP本端实体（MOD-NGAPLE）_09653766.md`

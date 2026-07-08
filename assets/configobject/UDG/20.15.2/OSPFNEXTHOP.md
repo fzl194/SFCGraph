@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFNEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFNEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFNEXTHOP.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFNEXTHOP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPF等价路由优先级配置（MOD-OSPFNEXTHOP）_00601297.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPF等价路由优先级配置（ADD-OSPFNEXTHOP）_50121470.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPF等价路由优先级配置（RMV-OSPFNEXTHOP）_00865749.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF等价路由优先级配置（LST-OSPFNEXTHOP）_00841773.md`

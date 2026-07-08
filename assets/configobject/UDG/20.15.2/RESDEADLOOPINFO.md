@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESDEADLOOPINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示死循环信息（DSP-RESDEADLOOPINFO）_04802650.md`

@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPBINDUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDUPG.md`
-- 原始手册：`evidence/UNC/20.15.2/UPBINDUPG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户模板组和用户模板的绑定关系（MOD-UPBINDUPG）_09897230.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户模板组和用户模板的绑定关系（RMV-UPBINDUPG）_09897231.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户模板组和用户模板的绑定关系（ADD-UPBINDUPG）_09897229.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户模板组和用户模板的绑定关系（LST-UPBINDUPG）_09897232.md`

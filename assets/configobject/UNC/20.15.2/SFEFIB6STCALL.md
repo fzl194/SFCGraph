@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFEFIB6STCALL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6所有的路由表项的统计（DSP-SFEFIB6STCALL）_00865569.md`

@@ -61,4 +61,4 @@ MOD DNNTAISSP: DNNNI="huawei.com", MCC="460", MNC="03", BGNTAC="000112", ENDTAC=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DNNTAISSP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNN的TAI和ServingScope映射（MOD-DNNTAISSP）_46201086.md`

@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AAADHCPPATHSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/复位RADIUS或DHCP链路状态（RST-AAADHCPPATHSTAT）_15764440.md`

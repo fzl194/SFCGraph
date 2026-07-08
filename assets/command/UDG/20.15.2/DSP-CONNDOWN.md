@@ -64,4 +64,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CONNDOWN.md`
+- 原始手册：`evidence/UDG/20.15.2/显示连接中断信息（DSP-CONNDOWN）_00601185.md`

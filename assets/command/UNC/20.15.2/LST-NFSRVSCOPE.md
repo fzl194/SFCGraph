@@ -68,4 +68,4 @@ NF实例名称  =  AMF_Instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFSRVSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF支持服务区信息（LST-NFSRVSCOPE）_16634738.md`

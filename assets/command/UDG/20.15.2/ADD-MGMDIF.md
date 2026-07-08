@@ -70,4 +70,4 @@ ADD MGMDIF:IFNAME="Ethernet64/0/3",VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MGMDIF.md`
+- 原始手册：`evidence/UDG/20.15.2/添加IGMP接口配置（ADD-MGMDIF）_00866393.md`

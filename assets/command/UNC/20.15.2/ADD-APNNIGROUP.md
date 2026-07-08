@@ -61,4 +61,4 @@ ADD APNNIGROUP: GRPID=2, DESC="M2M APNNI Group";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNNIGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APNNI组(ADD-APNNIGROUP)_26305508.md`

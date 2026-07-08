@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXTENQCIATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/EXTENQCIATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询应用扩展QCI参数属性（LST-EXTENQCIATTR）_09652237.md`
+- 原始手册：`evidence/UNC/20.15.2/设置应用扩展QCI参数属性（SET-EXTENQCIATTR）_09653201.md`

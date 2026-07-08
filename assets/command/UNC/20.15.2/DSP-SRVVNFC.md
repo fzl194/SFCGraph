@@ -65,4 +65,4 @@ IP接入网络个数  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SRVVNFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务VNFC（DSP-SRVVNFC）_29627049.md`

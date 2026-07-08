@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCGALMSRV.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGALMSRV.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGALMSRV.md`
-- 原始手册：`evidence/UNC/20.15.2/NCGALMSRV.md`
+- 原始手册：`evidence/UNC/20.15.2/修改告警服务器相关配置信息（MOD-NCGALMSRV）_77419816.md`
+- 原始手册：`evidence/UNC/20.15.2/删除告警服务器相关配置信息（RMV-NCGALMSRV）_77419824.md`
+- 原始手册：`evidence/UNC/20.15.2/增加告警服务器相关配置信息（ADD-NCGALMSRV）_13939869.md`
+- 原始手册：`evidence/UNC/20.15.2/查询告警服务器相关配置信息（LST-NCGALMSRV）_77419808.md`

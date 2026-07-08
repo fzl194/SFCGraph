@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYSMFSW.md`
-- 原始手册：`evidence/UDG/20.15.2/IPALLOCBYSMFSW.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于SMF分配地址开关（LST-IPALLOCBYSMFSW）_82837156.md`
+- 原始手册：`evidence/UDG/20.15.2/设置基于SMF分配地址的开关（SET-IPALLOCBYSMFSW）_82837155.md`

@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMVLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DMVLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DMVLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DMVLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter虚拟本地实体(MOD-DMVLE)_26306108.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter虚拟本地实体(RMV-DMVLE)_72225975.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter虚拟本地实体(ADD-DMVLE)_26146296.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter虚拟本地实体(LST-DMVLE)_72345897.md`

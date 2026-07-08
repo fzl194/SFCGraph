@@ -55,4 +55,4 @@ ADD DRSEPINTERFACE: DRGROUPID=1, IFNAME="itf1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-DRSEPINTERFACE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口故障隔离（ADD-DRSEPINTERFACE）_86150081.md`

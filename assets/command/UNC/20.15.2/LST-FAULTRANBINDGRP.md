@@ -76,4 +76,4 @@ RAN基站标识长度(比特)  =  24
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FAULTRANBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障RAN与RAN组的绑定关系（LST-FAULTRANBINDGRP）_94897066.md`

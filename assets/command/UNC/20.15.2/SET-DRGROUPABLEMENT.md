@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DRGROUPABLEMENT.md`
+- 原始手册：`evidence/UNC/20.15.2/设置是否使能热备容灾组（SET-DRGROUPABLEMENT）_01081370.md`

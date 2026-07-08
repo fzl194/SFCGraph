@@ -63,4 +63,4 @@ ADD CATEGORYPROP:CATEPROPNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CATEGORYPROP.md`
+- 原始手册：`evidence/UDG/20.15.2/增加分类属性（ADD-CATEGORYPROP）_82837504.md`

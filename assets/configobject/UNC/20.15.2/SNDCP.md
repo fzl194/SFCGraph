@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SNDCP.md`
-- 原始手册：`evidence/UNC/20.15.2/SNDCP.md`
-- 原始手册：`evidence/UNC/20.15.2/SNDCP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SNDCP参数状态(DSP-SNDCP)_26305836.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SNDCP参数(LST-SNDCP)_72225705.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SNDCP参数(SET-SNDCP)_26146026.md`

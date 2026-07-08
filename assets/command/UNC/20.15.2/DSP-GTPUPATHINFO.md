@@ -62,4 +62,4 @@ DSP GTPUPATHINFO: QUERYTYPE=ALL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GTPUPATHINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTPU路径信息（DSP-GTPUPATHINFO）_58840349.md`

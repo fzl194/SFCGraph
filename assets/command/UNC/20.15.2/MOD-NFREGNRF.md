@@ -66,4 +66,4 @@ MOD NFREGNRF: NFTYPE=NRF, NRFINSTANCENAME="NRF_Instance_0", PRIORITY=50;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NFREGNRF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本端NF和对端NRF实例的注册关系（MOD-NFREGNRF）_09651371.md`

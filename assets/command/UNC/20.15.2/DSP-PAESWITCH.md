@@ -56,4 +56,4 @@ PAE隔离核统计开关 =  去除PAE隔离核
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PAESWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/显示PAE开关信息（DSP-PAESWITCH）_31405490.md`

@@ -68,4 +68,4 @@ Gy一次重定向参数信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GYONESHOT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Gy一次重定向参数（LST-GYONESHOT）_86528909.md`

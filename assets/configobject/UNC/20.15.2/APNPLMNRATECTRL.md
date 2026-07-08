@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPLMNRATECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPLMNRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-Serving-PLMN速率控制配置（LST-APNPLMNRATECTRL）_64343876.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-Serving-PLMN速率控制配置（SET-APNPLMNRATECTRL）_64343912.md`

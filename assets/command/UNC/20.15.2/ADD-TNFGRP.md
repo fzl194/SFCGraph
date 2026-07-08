@@ -68,4 +68,4 @@ ADD TNFGRP: TNFGRPINDEX=0, TNFTYPE=CHF, TNFGRPNAME="CHF_GROUP_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-TNFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加目标NF组（ADD-TNFGRP）_09651791.md`

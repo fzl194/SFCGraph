@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LOCALGGSN.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALGGSN.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALGGSN.md`
-- 原始手册：`evidence/UNC/20.15.2/LOCALGGSN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地GGSN列表(MOD-LOCALGGSN)_26145928.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地GGSN列表(RMV-LOCALGGSN)_72225607.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地GGSN列表(ADD-LOCALGGSN)_72345527.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本地GGSN列表(LST-LOCALGGSN)_26305738.md`

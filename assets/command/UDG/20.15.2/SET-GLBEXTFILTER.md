@@ -77,4 +77,4 @@ SET GLBEXTFILTER:EXTFLTNAME1="ExtFilter1",EXTFLTTYPE1=AND,EXTFLTNAME2="ExtFilter
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-GLBEXTFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/配置全局扩展过滤器绑定关系（SET-GLBEXTFILTER）_82837357.md`

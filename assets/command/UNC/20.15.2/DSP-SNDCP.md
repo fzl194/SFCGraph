@@ -73,4 +73,4 @@ USN_SP_RU_0064    0         成功        20000              5                  
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SNDCP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SNDCP参数状态(DSP-SNDCP)_26305836.md`

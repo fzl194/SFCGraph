@@ -77,4 +77,4 @@ Charge Characteristic特定值掩码  =  0x0003
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GLBOFCTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局离线计费模板（LST-GLBOFCTEMPLATE）_09896919.md`

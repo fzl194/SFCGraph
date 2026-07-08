@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RULEBINDDNAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RULEBINDDNAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RULEBINDDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除预定义规则关联的DNAI（RMV-RULEBINDDNAI）_26931973.md`
+- 原始手册：`evidence/UNC/20.15.2/增加预定义规则关联的DNAI（ADD-RULEBINDDNAI）_27170471.md`
+- 原始手册：`evidence/UNC/20.15.2/查询预定义规则关联的DNAI（LST-RULEBINDDNAI）_26850415.md`

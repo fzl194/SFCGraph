@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPALLOCBYLOCGLBSW.md`
-- 原始手册：`evidence/UNC/20.15.2/IPALLOCBYLOCGLBSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于位置区地址分配的全局开关（LST-IPALLOCBYLOCGLBSW）_49644919.md`
+- 原始手册：`evidence/UNC/20.15.2/设置基于位置区地址分配的全局开关（SET-IPALLOCBYLOCGLBSW）_49644933.md`

@@ -79,4 +79,4 @@ LINK_SP_RU_0066    SGP             3              24 位               14 位   
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SIGATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示信令网属性状态(DSP-SIGATTR)_72345943.md`

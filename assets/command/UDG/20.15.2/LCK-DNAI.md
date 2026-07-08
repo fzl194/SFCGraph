@@ -62,4 +62,4 @@ LCK DNAI: DNAI="mtest", LOCKED=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LCK-DNAI.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DNAI锁定配置（LCK-DNAI）_54287986.md`

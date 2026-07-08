@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OBJVERBOSEQRY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询对象反向绑定关系（DSP-OBJVERBOSEQRY）_86526194.md`

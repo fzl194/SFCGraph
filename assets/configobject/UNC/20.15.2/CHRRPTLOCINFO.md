@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTLOCINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CHR本地存盘位置配置（MOD-CHRRPTLOCINFO）_79789962.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CHR本地存盘位置配置（RMV-CHRRPTLOCINFO）_15343997.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CHR本地存盘位置配置（ADD-CHRRPTLOCINFO）_15429033.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR本地存盘位置配置（LST-CHRRPTLOCINFO）_79944706.md`

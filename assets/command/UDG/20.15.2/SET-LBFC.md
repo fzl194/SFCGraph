@@ -50,4 +50,4 @@ SET LBFC: FCSWITCH=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-LBFC.md`
+- 原始手册：`evidence/UDG/20.15.2/设置流控开关（SET-LBFC）_29627126.md`

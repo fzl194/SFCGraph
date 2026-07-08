@@ -73,4 +73,4 @@ RETCODE = 0 操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HTRIMSICFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTR号段(LST-HTRIMSICFG)_72225831.md`

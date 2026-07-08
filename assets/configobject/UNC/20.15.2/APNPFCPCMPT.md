@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNPFCPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPFCPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPFCPCMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/APNPFCPCMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定APN的PFCP私有信元携带配置（MOD-APNPFCPCMPT）_94066644.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定APN的PFCP私有信元携带配置（RMV-APNPFCPCMPT）_93906692.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定APN的PFCP私有信元携带配置（ADD-APNPFCPCMPT）_43946517.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定APN的PFCP私有信元携带配置（LST-APNPFCPCMPT）_93587564.md`

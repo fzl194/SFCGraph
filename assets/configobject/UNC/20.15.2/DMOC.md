@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMOC.md`
-- 原始手册：`evidence/UNC/20.15.2/DMOC.md`
-- 原始手册：`evidence/UNC/20.15.2/DMOC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter流控节点(RMV-DMOC)_72226067.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter流控节点(ADD-DMOC)_26146388.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter流控节点(LST-DMOC)_26306200.md`

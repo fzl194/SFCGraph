@@ -70,4 +70,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SBIAPLE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加服务化接口本端实体（ADD-SBIAPLE）_28971835.md`

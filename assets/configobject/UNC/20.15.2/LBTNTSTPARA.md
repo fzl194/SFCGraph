@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LBTNTSTPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/LBTNTSTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSLB隧道探测参数（LST-LBTNTSTPARA）_50911923.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CSLB隧道探测参数（SET-LBTNTSTPARA）_50911922.md`

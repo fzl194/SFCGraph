@@ -62,4 +62,4 @@ RMV RESERVEDIP: IPRID="IP_66_Reserved_1st";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RESERVEDIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除预留IP资源（RMV-RESERVEDIP）_32789633.md`

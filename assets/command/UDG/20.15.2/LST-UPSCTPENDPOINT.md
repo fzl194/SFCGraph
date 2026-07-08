@@ -71,4 +71,4 @@ SCTP模板名称  =  sctp_tp1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPSCTPENDPOINT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SCTP端点（LST-UPSCTPENDPOINT）_97080187.md`

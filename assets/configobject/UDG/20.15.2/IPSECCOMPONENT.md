@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSECCOMPONENT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPsec组件信息（DSP-IPSECCOMPONENT）_00601365.md`

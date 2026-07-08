@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFPLCYFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFPLCYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF策略功能（LST-AMFPLCYFUNC）_96472701.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF策略功能（SET-AMFPLCYFUNC）_96792665.md`

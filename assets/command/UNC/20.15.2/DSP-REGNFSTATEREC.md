@@ -84,4 +84,4 @@ UPF     ff08-001    心跳丢失    nf heartbeat loss  2019-10-12 07:10:51
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-REGNFSTATEREC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NF的状态变更记录（DSP-REGNFSTATEREC）_09653188.md`

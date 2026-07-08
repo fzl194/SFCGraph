@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SDRTOPIC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SDRC中的TOPIC信息（DSP-SDRTOPIC）_94730436.md`

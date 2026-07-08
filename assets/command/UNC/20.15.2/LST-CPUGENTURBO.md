@@ -58,4 +58,4 @@ LST CPUGENTURBO:CPUGENERATION=Icelake;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CPUGENTURBO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CPU代际睿频开关（LST-CPUGENTURBO）_51175625.md`

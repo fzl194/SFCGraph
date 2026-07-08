@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IFIPV4UNNUM.md`
-- 原始手册：`evidence/UDG/20.15.2/IFIPV4UNNUM.md`
-- 原始手册：`evidence/UDG/20.15.2/IFIPV4UNNUM.md`
-- 原始手册：`evidence/UDG/20.15.2/IFIPV4UNNUM.md`
+- 原始手册：`evidence/UDG/20.15.2/修改接口IPv4借用地址（MOD-IFIPV4UNNUM）_49802530.md`
+- 原始手册：`evidence/UDG/20.15.2/删除接口IPv4借用地址（RMV-IFIPV4UNNUM）_49801754.md`
+- 原始手册：`evidence/UDG/20.15.2/增加接口IPv4借用地址（ADD-IFIPV4UNNUM）_00841053.md`
+- 原始手册：`evidence/UDG/20.15.2/查询接口IPv4借用地址（LST-IFIPV4UNNUM）_50280554.md`

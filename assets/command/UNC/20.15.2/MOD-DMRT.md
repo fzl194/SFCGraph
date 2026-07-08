@@ -63,4 +63,4 @@ MOD DMRT: ROUTEIDX=0, RSELMODE=SELMODE_MASTER_SLAVE, ROUTENAM="DIAM_ROUTNAM_NAME
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DMRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter域路由配置(MOD-DMRT)_26146290.md`

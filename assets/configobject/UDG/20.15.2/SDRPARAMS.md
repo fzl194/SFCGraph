@@ -49,5 +49,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SDRPARAMS.md`
-- 原始手册：`evidence/UDG/20.15.2/SDRPARAMS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SDR参数（LST-SDRPARAMS）_09587932.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SDR参数（SET-SDRPARAMS）_09587912.md`

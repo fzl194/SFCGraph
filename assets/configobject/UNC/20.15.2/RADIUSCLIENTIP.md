@@ -28,6 +28,6 @@ ADD RADIUSCLIENTIP命令用来增加Radius Group Client IP接口，输入值为R
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RADIUSCLIENTIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RADIUSCLIENTIP.md`
-- 原始手册：`evidence/UNC/20.15.2/RADIUSCLIENTIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Radius-Group-Client-IP接口（RMV-RADIUSCLIENTIP）_09896741.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Radius-Group-Client-IP接口（ADD-RADIUSCLIENTIP）_09896740.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Radius-Group-Client-IP接口（LST-RADIUSCLIENTIP）_09896742.md`

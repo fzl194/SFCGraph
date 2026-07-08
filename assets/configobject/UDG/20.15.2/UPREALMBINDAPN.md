@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPREALMBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/UPREALMBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/UPREALMBINDAPN.md`
-- 原始手册：`evidence/UDG/20.15.2/UPREALMBINDAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改APN与Diameter-Realm关联关系（MOD-UPREALMBINDAPN）_45432702.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN与Diameter-Realm关联关系（RMV-UPREALMBINDAPN）_97080165.md`
+- 原始手册：`evidence/UDG/20.15.2/增加APN与Diameter-Realm关联关系（ADD-UPREALMBINDAPN）_45195188.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN与Diameter-Realm关联关系（LST-UPREALMBINDAPN）_97314569.md`

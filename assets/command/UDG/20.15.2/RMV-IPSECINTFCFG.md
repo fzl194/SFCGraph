@@ -55,4 +55,4 @@ RMV IPSECINTFCFG:INTERFACENAME="Tunnel 1/1/1",TNLTYPE=IPSEC;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-IPSECINTFCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPsec隧道接口（RMV-IPSECINTFCFG）_00440521.md`

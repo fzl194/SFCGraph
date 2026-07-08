@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/COMPSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/收集并推送RU的组件状态（UPD-COMPSTATUS）_39786878.md`

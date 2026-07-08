@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBACKOFFTIME.md`
-- 原始手册：`evidence/UNC/20.15.2/GBACKOFFTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局Back-off-Time信息（LST-GBACKOFFTIME）_76686930.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局Back-off-Time信息（SET-GBACKOFFTIME）_76686936.md`

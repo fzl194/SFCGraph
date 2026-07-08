@@ -83,4 +83,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-AUTOSCALINGSRROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/增加静态路由自动化配置模板（ADD-AUTOSCALINGSRROUTE）_00866765.md`

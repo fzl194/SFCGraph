@@ -60,4 +60,4 @@ RMV IMSIBINDUP: IMSI="111111", ACCESSTYPE=NG;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IMSIBINDUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户和UPF的绑定关系（RMV-IMSIBINDUP）_09653627.md`

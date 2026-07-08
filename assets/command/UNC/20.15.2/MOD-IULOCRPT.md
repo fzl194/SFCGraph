@@ -65,4 +65,4 @@ MOD IULOCRPT: AREA=RA, MCC="111", MNC="222", LAC="0x3333", RAC="0x44", RACRANGE=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IULOCRPT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Iu模式实时小区位置订阅(MOD-IULOCRPT)_72345173.md`

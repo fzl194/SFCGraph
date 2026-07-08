@@ -61,4 +61,4 @@ RMV CPNODEID: CPNAME="smfnode1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CPNODEID.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SMF的NodeID（RMV-CPNODEID）_16780317.md`

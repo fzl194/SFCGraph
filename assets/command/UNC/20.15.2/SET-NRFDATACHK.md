@@ -66,4 +66,4 @@ SET NRFDATACHK: HBRSPSWITCH=FUNC_OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRFDATACHK.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF数据核查相关参数（SET-NRFDATACHK）_96805506.md`

@@ -64,4 +64,4 @@ ADD CPNODEID: CPNAME="smfnode1", CPNODEIDTYPE=IPV4, IPV4NODEID="10.0.0.1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-CPNODEID.md`
+- 原始手册：`evidence/UDG/20.15.2/添加SMF的NodeID（ADD-CPNODEID）_16780315.md`

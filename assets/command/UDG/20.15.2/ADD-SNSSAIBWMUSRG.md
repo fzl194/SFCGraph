@@ -65,4 +65,4 @@ ADD SNSSAIBWMUSRG: USERGROUPNAME="test", SST=1, SD="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SNSSAIBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理用户组切片绑定（ADD-SNSSAIBWMUSRG）_16930642.md`

@@ -75,4 +75,4 @@ MOD EXTENDPOLICY: RULENAME="rule", EXTENDPLYTYPE=NORMAL, SRVPROPNAME="srvprop", 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-EXTENDPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改扩展策略配置（MOD-EXTENDPOLICY）_35373569.md`

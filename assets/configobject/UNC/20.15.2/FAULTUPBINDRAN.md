@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FAULTUPBINDRAN.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTUPBINDRAN.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTUPBINDRAN.md`
-- 原始手册：`evidence/UNC/20.15.2/FAULTUPBINDRAN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N3接口故障网元组绑定（MOD-FAULTUPBINDRAN）_39777021.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N3接口故障网元组绑定（RMV-FAULTUPBINDRAN）_93222844.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N3接口故障网元组绑定（ADD-FAULTUPBINDRAN）_93542772.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障网元组绑定（LST-FAULTUPBINDRAN）_38422727.md`

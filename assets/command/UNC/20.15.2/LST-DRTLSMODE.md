@@ -56,4 +56,4 @@ TLS模式  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-DRTLSMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾控制通道TLS模式（LST-DRTLSMODE）_56001165.md`

@@ -58,7 +58,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AREADNS.md`
-- 原始手册：`evidence/UNC/20.15.2/AREADNS.md`
-- 原始手册：`evidence/UNC/20.15.2/AREADNS.md`
-- 原始手册：`evidence/UNC/20.15.2/AREADNS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改位置区域DNS域名(MOD-AREADNS)_72225639.md`
+- 原始手册：`evidence/UNC/20.15.2/删除位置区域DNS域名(RMV-AREADNS)_26145960.md`
+- 原始手册：`evidence/UNC/20.15.2/增加位置区域DNS域名(ADD-AREADNS)_72345559.md`
+- 原始手册：`evidence/UNC/20.15.2/查询位置区域DNS域名(LST-AREADNS)_26305770.md`

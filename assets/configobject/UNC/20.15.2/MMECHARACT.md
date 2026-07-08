@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMECHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/MMECHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/MMECHARACT.md`
-- 原始手册：`evidence/UNC/20.15.2/MMECHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改MME属性配置信息（MOD-MMECHARACT）_26145958.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MME属性配置信息（RMV-MMECHARACT）_72345557.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MME属性配置信息（ADD-MMECHARACT）_26305766.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MME属性配置信息（LST-MMECHARACT）_72225637.md`

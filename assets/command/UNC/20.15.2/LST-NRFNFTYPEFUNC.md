@@ -80,4 +80,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFNFTYPEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于NFType设置NRF的各类功能开关（LST-NRFNFTYPEFUNC）_29158009.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGCHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费属性参数(LST-CHGCHAR)_72225049.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费属性参数(SET-CHGCHAR)_26145368.md`

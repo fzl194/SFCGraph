@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSUIT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示IPsuit信息（DSP-IPSUIT）_09988681.md`

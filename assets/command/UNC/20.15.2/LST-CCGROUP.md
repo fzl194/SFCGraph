@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CCGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费特征组（LST-CCGROUP）_88733219.md`

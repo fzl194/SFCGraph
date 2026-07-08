@@ -64,4 +64,4 @@ TALIST下基站过载检测开关  =  OFF
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NGRANOVERLOADCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G基站过载监控参数（LST-NGRANOVERLOADCTRL）_09227301.md`

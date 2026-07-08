@@ -56,4 +56,4 @@ SET FEHEALCTRL: MESHFAULTSW=Enable, FEFAULTSW=Enable;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FEHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FE自愈功能配置（SET-FEHEALCTRL）_10913261.md`

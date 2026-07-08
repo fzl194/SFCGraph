@@ -65,4 +65,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSSFSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSSF软参（LST-NSSFSOFTPARA）_09652179.md`

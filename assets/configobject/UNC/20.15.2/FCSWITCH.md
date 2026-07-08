@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FCSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/FCSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流控开关（LST-FCSWITCH）_09587891.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流控开关（SET-FCSWITCH）_09587940.md`

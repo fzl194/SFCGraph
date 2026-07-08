@@ -92,4 +92,4 @@ ShortMacro ng-eNB标识  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-EXTANINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示扩展的AN信息（DSP-EXTANINFO）_70382305.md`

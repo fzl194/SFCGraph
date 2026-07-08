@@ -69,4 +69,4 @@ SET CHGRATECTRL: ONLINEREC=500;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHGRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/计费速率控制（SET-CHGRATECTRL）_09896823.md`

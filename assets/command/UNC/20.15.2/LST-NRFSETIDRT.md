@@ -65,4 +65,4 @@ NF Set ID后缀  =  NRF001
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFSETIDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-Set-ID最长匹配后缀转发路由（LST-NRFSETIDRT）_72758681.md`

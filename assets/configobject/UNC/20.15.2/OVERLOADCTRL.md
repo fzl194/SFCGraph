@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OVERLOADCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/OVERLOADCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询过载控制的配置信息（LST-OVERLOADCTRL）_35803152.md`
+- 原始手册：`evidence/UNC/20.15.2/设置信令抑制功能开关以及老化定时器时长（SET-OVERLOADCTRL）_82122531.md`

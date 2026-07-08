@@ -59,4 +59,4 @@ RMV RSTRNSAREAMEM:AREACODE="jq001.pd006.sh.mcc123.mnc45", MCC="460", MNC="03", B
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RSTRNSAREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA级限制切片所属跟踪区成员（RMV-RSTRNSAREAMEM）_24956652.md`

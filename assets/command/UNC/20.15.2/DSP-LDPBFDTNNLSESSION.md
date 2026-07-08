@@ -71,4 +71,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-LDPBFDTNNLSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/显示BFD-For-LDP-Tunnel的BFD会话（DSP-LDPBFDTNNLSESSION）_50121702.md`

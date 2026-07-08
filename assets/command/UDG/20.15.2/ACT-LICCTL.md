@@ -52,4 +52,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACT-LICCTL.md`
+- 原始手册：`evidence/UDG/20.15.2/启动紧急License(ACT-LICCTL)_46781803.md`

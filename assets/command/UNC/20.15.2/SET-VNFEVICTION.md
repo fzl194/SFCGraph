@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-VNFEVICTION.md`
+- 原始手册：`evidence/UNC/20.15.2/设置网元重调度开关（SET-VNFEVICTION）_26089552.md`

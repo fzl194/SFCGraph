@@ -58,4 +58,4 @@ RMV DNAIUPFINFO:DNAI="huawei.com",UPFINSTANCEID="upf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DNAIUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定DNAI的UPF节点信息（RMV-DNAIUPFINFO）_68957896.md`

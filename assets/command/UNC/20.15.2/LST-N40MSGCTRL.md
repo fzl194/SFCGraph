@@ -69,4 +69,4 @@ GERAN/UTRAN接入场景携带Presence Reporting Area Infomation  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-N40MSGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N40接口消息的控制参数（LST-N40MSGCTRL）_78553376.md`

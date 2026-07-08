@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESNOSBASEPING.md`
+- 原始手册：`evidence/UDG/20.15.2/NOS-Base平面网络Ping功能（ACT-RESNOSBASEPING）_59135269.md`

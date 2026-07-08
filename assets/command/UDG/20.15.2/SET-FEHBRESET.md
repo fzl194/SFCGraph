@@ -61,4 +61,4 @@ SET FEHBRESET: SWITCH=Enable;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FEHBRESET.md`
+- 原始手册：`evidence/UDG/20.15.2/设置FE心跳故障复位功能开关（SET-FEHBRESET）_65383310.md`

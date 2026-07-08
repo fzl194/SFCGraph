@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFDB.md`
-- 原始手册：`evidence/UDG/20.15.2/AFDB.md`
-- 原始手册：`evidence/UDG/20.15.2/AFDB.md`
+- 原始手册：`evidence/UDG/20.15.2/加载防欺诈业务规则数据库（LOD-AFDB）_82837784.md`
+- 原始手册：`evidence/UDG/20.15.2/卸载计费防欺诈业务规则数据库（RMV-AFDB）_82837785.md`
+- 原始手册：`evidence/UDG/20.15.2/查询防欺诈业务规则数据库（DSP-AFDB）_82837786.md`

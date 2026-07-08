@@ -84,4 +84,4 @@ libpthread.so.0(+0x7df5) [0x00007f0143d68df5]
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-RESREPORTFAILUREINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示组件上报的故障信息（DSP-RESREPORTFAILUREINFO）_51002633.md`

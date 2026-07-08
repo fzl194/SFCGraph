@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/POLICYCONDITION.md`
-- 原始手册：`evidence/UDG/20.15.2/POLICYCONDITION.md`
-- 原始手册：`evidence/UDG/20.15.2/POLICYCONDITION.md`
-- 原始手册：`evidence/UDG/20.15.2/POLICYCONDITION.md`
+- 原始手册：`evidence/UDG/20.15.2/修改业务质差检测策略（MOD-POLICYCONDITION）_15739993.md`
+- 原始手册：`evidence/UDG/20.15.2/删除业务质差检测策略（RMV-POLICYCONDITION）_09982394.md`
+- 原始手册：`evidence/UDG/20.15.2/增加业务质差检测策略（ADD-POLICYCONDITION）_10221268.md`
+- 原始手册：`evidence/UDG/20.15.2/显示业务质差检测策略（LST-POLICYCONDITION）_15501063.md`

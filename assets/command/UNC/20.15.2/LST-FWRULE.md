@@ -56,4 +56,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FWRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询转发规则（LST-FWRULE）_02004268.md`

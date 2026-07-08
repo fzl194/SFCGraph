@@ -64,4 +64,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFDATACHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF数据一致性核查相关参数（LST-NRFDATACHK）_96805488.md`

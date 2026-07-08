@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/URRGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/URRGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/URRGROUP.md`
-- 原始手册：`evidence/UDG/20.15.2/URRGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改URR组（MOD-URRGROUP）_82837635.md`
+- 原始手册：`evidence/UDG/20.15.2/删除URR组（RMV-URRGROUP）_86528311.md`
+- 原始手册：`evidence/UDG/20.15.2/增加URR组（ADD-URRGROUP）_82837634.md`
+- 原始手册：`evidence/UDG/20.15.2/查询URR组（LST-URRGROUP）_82837637.md`

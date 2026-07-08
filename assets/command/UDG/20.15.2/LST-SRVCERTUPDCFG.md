@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRVCERTUPDCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询证书更新拆链配置（LST-SRVCERTUPDCFG）_94871985.md`

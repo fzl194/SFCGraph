@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNSQ.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSQ.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSQ.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSQ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS查询控制参数(MOD-DNSQ)_26145894.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS查询控制参数(RMV-DNSQ)_72345493.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS查询控制参数(ADD-DNSQ)_26305702.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS查询控制参数(LST-DNSQ)_72225573.md`

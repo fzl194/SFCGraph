@@ -62,4 +62,4 @@ SET VOLTEPERFTDELAY: MINDELAYERROR=20, FIXTRANSTIME=20;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-VOLTEPERFTDELAY.md`
+- 原始手册：`evidence/UDG/20.15.2/配置理想到达报文的最小时延偏差、固定传输时延（SET-VOLTEPERFTDELAY）_69418606.md`

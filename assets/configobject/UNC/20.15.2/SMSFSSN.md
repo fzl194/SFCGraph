@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFSSN.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF本局SSN号（LST-SMSFSSN）_67848008.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF本局SSN号（SET-SMSFSSN）_79926770.md`

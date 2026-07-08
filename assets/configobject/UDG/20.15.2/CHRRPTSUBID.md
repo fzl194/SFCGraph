@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CHRRPTSUBID.md`
-- 原始手册：`evidence/UDG/20.15.2/CHRRPTSUBID.md`
-- 原始手册：`evidence/UDG/20.15.2/CHRRPTSUBID.md`
+- 原始手册：`evidence/UDG/20.15.2/删除CHR上报用户（RMV-CHRRPTSUBID）_64015293.md`
+- 原始手册：`evidence/UDG/20.15.2/增加CHR本地存盘用户（ADD-CHRRPTSUBID）_64015292.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CHR上报用户（LST-CHRRPTSUBID）_64015294.md`

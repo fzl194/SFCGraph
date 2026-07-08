@@ -69,4 +69,4 @@ SET GLBCGGROUP: CGGRPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GLBCGGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局CG组（SET-GLBCGGROUP）_09896861.md`

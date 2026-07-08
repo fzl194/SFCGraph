@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP端口状态（DSP-NPPORT）_71028287.md`

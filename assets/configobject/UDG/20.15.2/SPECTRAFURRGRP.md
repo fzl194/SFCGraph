@@ -40,6 +40,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SPECTRAFURRGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECTRAFURRGRP.md`
-- 原始手册：`evidence/UDG/20.15.2/SPECTRAFURRGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除全局缺省费率的流量使用量上报规则组（RMV-SPECTRAFURRGRP）_36146717.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局缺省费率的流量使用量上报规则组（LST-SPECTRAFURRGRP）_36146716.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局缺省费率的流量使用量上报规则组（SET-SPECTRAFURRGRP）_36146715.md`

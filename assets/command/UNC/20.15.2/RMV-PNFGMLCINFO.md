@@ -57,4 +57,4 @@ RMV PNFGMLCINFO: NFINSTANCEID="GMLC_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFGMLCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端GMLC信息（RMV-PNFGMLCINFO）_49070375.md`

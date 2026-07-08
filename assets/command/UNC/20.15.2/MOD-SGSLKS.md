@@ -58,4 +58,4 @@ MOD SGSLKS: LSX=0, LSN="VLR808";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SGSLKS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SGs链路集(MOD-SGSLKS)_72225119.md`

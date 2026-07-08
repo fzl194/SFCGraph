@@ -57,4 +57,4 @@ RMV TETHERINGTTL: TTLVALUE=56;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TETHERINGTTL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除tethering的TTL值（RMV-TETHERINGTTL）_84083735.md`

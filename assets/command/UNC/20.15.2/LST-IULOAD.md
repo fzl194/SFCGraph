@@ -67,4 +67,4 @@ IU负荷配置表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IULOAD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGP负荷配置(LST-IULOAD)_72345637.md`

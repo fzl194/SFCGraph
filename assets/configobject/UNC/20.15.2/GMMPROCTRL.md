@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GMMPROCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GMMPROCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb模式移动性管理流程控制参数(LST-GMMPROCTRL)_26145516.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Gb模式移动性管理流程控制参数(SET-GMMPROCTRL)_72345113.md`

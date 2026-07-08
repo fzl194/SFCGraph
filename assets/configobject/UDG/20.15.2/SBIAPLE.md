@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SBIAPLE.md`
-- 原始手册：`evidence/UDG/20.15.2/SBIAPLE.md`
-- 原始手册：`evidence/UDG/20.15.2/SBIAPLE.md`
-- 原始手册：`evidence/UDG/20.15.2/SBIAPLE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改服务化接口本端实体（MOD-SBIAPLE）_83813638.md`
+- 原始手册：`evidence/UDG/20.15.2/删除服务化接口本端实体（RMV-SBIAPLE）_84132108.md`
+- 原始手册：`evidence/UDG/20.15.2/增加服务化接口本端实体（ADD-SBIAPLE）_28971835.md`
+- 原始手册：`evidence/UDG/20.15.2/查询服务化接口本端实体（LST-SBIAPLE）_29213285.md`

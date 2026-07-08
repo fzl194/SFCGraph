@@ -75,4 +75,4 @@ NRF实例名称  =  NRF_Instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF信息（LST-NRF）_09653174.md`

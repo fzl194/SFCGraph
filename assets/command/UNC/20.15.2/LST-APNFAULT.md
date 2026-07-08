@@ -70,4 +70,4 @@ SMF是否支持用户面链路故障恢复  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNFAULT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN粒度的故障处理开关（LST-APNFAULT）_98629445.md`

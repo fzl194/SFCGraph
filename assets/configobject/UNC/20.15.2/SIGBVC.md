@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SIGBVC.md`
-- 原始手册：`evidence/UNC/20.15.2/SIGBVC.md`
+- 原始手册：`evidence/UNC/20.15.2/复位SigBvc(RST-SIGBVC)_26305840.md`
+- 原始手册：`evidence/UNC/20.15.2/显示SigBvc上下文信息(DSP-SIGBVC)_72225709.md`

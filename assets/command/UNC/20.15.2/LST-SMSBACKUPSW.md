@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSBACKUPSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF热备容灾功能开关状态（LST-SMSBACKUPSW）_30520898.md`

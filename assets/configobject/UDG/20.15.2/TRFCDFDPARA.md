@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TRFCDFDPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/TRFCDFDPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询大流量攻击防护配置参数（LST-TRFCDFDPARA）_82837758.md`
+- 原始手册：`evidence/UDG/20.15.2/设置大流量攻击防护参数（SET-TRFCDFDPARA）_82837757.md`

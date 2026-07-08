@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MATCHEXTCOMMUNITYFILTER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询匹配扩展团体属性过滤器（LST-MATCHEXTCOMMUNITYFILTER）_00600377.md`

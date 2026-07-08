@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMARTFCDURA.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTFCDURA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示智能流控开启时长（DSP-SMARTFCDURA）_10605248.md`
+- 原始手册：`evidence/UNC/20.15.2/激活智能流控开始特定时长（ACT-SMARTFCDURA）_55845119.md`

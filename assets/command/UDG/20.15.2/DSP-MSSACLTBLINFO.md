@@ -73,4 +73,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSACLTBLINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软转发支撑访问控制列表详细信息（DSP-MSSACLTBLINFO）_00440653.md`

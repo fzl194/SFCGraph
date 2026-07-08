@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFIPWHITELIST.md`
-- 原始手册：`evidence/UDG/20.15.2/CFIPWHITELIST.md`
-- 原始手册：`evidence/UDG/20.15.2/CFIPWHITELIST.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IP地址白名单列表（RMV-CFIPWHITELIST）_28121349.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容过滤IP白名单（ADD-CFIPWHITELIST）_19172440.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP地址白名单列表（LST-CFIPWHITELIST）_28486281.md`

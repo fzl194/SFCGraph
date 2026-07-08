@@ -78,4 +78,4 @@ ADD REDIRECT: REDIRECTNAME="testredirect2", URL="www.huawei.com", FLOWCONTROL=DI
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-REDIRECT.md`
+- 原始手册：`evidence/UDG/20.15.2/增加重定向（ADD-REDIRECT）_82837528.md`

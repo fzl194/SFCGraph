@@ -61,4 +61,4 @@ ADD IPGP: IPGPID=1,NAME="DCNR_SGW";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-IPGP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IP群组(ADD-IPGP)_18995796.md`

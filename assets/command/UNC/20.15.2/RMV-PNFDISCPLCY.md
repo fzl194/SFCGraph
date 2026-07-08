@@ -61,4 +61,4 @@ RMV PNFDISCPLCY: NFTYPE=NfSMF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFDISCPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的服务发现策略（RMV-PNFDISCPLCY）_21861993.md`

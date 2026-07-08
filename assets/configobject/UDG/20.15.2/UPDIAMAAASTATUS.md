@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMAAASTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter-AAA服务器状态（DSP-UPDIAMAAASTATUS）_42886338.md`

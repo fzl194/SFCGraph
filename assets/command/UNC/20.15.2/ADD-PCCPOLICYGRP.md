@@ -68,4 +68,4 @@ ADD PCCPOLICYGRP:PCCPOLICYGRPNM="TestPccPolicyGrpNm",URRGROUPNAME="TestChargePro
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PCCPOLICYGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCC策略组（ADD-PCCPOLICYGRP）_09897173.md`

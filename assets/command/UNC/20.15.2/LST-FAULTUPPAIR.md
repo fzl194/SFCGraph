@@ -78,4 +78,4 @@ RAN基站标识长度(比特)  =  24
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FAULTUPPAIR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N3接口故障网元对（LST-FAULTUPPAIR）_93542774.md`

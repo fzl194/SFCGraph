@@ -71,4 +71,4 @@ RMV GWSELPLCY: SUBRANGE=ALL_USER, APNNI="HUAWEI1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GGSN_P-GW选择策略（RMV-GWSELPLCY）_72225623.md`

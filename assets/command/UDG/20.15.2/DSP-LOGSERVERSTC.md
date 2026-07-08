@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-LOGSERVERSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询日志中心5分钟内消息统计信息（DSP-LOGSERVERSTC）_59104190.md`

@@ -78,4 +78,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-QOSCAPGBR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GBR承载QoS限制配置(MOD-QOSCAPGBR)_26306028.md`

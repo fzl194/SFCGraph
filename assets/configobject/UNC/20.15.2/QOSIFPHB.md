@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSIFPHB.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSIFPHB.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSIFPHB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除禁止QoS优先级映射的类型（RMV-QOSIFPHB）_00866693.md`
+- 原始手册：`evidence/UNC/20.15.2/查询禁止QoS优先级映射的类型（LST-QOSIFPHB）_00841321.md`
+- 原始手册：`evidence/UNC/20.15.2/添加禁止QoS优先级映射的类型（ADD-QOSIFPHB）_00841181.md`

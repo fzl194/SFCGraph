@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECTEX.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECTEX.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECTEX.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTREDIRECTEX.md`
+- 原始手册：`evidence/UDG/20.15.2/修改扩展的多级重定向密码（MOD-MULTREDIRECTEX）_19543972.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展的多级重定向密码（RMV-MULTREDIRECTEX）_27370105.md`
+- 原始手册：`evidence/UDG/20.15.2/增加扩展的多级重定向密码（ADD-MULTREDIRECTEX）_20248706.md`
+- 原始手册：`evidence/UDG/20.15.2/显示扩展的多级重定向密码（LST-MULTREDIRECTEX）_27223631.md`

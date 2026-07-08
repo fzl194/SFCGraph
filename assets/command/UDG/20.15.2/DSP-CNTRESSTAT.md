@@ -139,4 +139,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CNTRESSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询容器资源信息（DSP-CNTRESSTAT）_60785913.md`

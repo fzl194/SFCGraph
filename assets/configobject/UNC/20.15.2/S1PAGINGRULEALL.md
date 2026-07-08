@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1PAGINGRULEALL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除所有S1寻呼规则（RMV-S1PAGINGRULEALL）_15056745.md`

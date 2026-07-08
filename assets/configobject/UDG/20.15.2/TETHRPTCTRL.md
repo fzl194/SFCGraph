@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TETHRPTCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/TETHRPTCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询tethering事件上报的相关参数（LST-TETHRPTCTRL）_15208993.md`
+- 原始手册：`evidence/UDG/20.15.2/设置tethering事件上报的相关参数（SET-TETHRPTCTRL）_14588143.md`

@@ -71,4 +71,4 @@ SET GLBURRGROUP: UPOFFURRNAME="UpURRName1", DOWNOFFURRNAME="DownURRName1", UPONL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GLBURRGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局使用量上报规则组（SET-GLBURRGROUP）_09897187.md`

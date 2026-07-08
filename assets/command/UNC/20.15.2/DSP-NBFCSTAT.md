@@ -78,4 +78,4 @@ USN_SP_RU_0066       2          正常状态      300                 0         
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NBFCSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NB流控状态统计(DSP-NBFCSTAT)_26146166.md`

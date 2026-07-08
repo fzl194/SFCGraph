@@ -73,4 +73,4 @@ N4接口的GTP-U路径断告警后发送echo消息的次数  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPN4UPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询N4U路径相关属性（LST-UPN4UPATH）_18404303.md`

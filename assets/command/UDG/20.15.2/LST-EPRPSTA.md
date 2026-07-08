@@ -72,4 +72,4 @@ EpRpSta 配置
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-EPRPSTA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询EPRPSTA对象（LST-EPRPSTA）_95919473.md`

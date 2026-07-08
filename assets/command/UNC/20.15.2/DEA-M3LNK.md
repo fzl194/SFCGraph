@@ -66,4 +66,4 @@ DEA M3LNK: LNK=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEA-M3LNK.md`
+- 原始手册：`evidence/UNC/20.15.2/去活M3UA信令链路(DEA-M3LNK)_26306118.md`

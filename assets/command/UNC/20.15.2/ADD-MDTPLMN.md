@@ -64,4 +64,4 @@ ADD MDTPLMN: MCC="123", MNC="030", DESC="visit";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于管理的最小化路测的PLMN(ADD-MDTPLMN)_63155530.md`

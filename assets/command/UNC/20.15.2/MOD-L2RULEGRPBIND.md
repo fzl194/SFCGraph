@@ -63,4 +63,4 @@ MOD L2RULEGRPBIND: GRPBINDNAME="bind1", APN="apn1", L2RULEGRPNAME="rulegrp2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-L2RULEGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/修改层二规则组与用户的绑定关系（MOD-L2RULEGRPBIND）_70382353.md`

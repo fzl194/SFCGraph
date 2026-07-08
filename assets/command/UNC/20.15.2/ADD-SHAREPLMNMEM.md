@@ -60,4 +60,4 @@ ADD SHAREPLMNMEM: PLMNGPID=1, MCC="460", MNC="05";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SHAREPLMNMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加共享PLMN群组成员(ADD-SHAREPLMNMEM)_19405129.md`

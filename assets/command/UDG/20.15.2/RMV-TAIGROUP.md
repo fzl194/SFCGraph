@@ -58,4 +58,4 @@ RMV TAIGROUP: TAIGROUPNAME="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-TAIGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除指定的TAI组（RMV-TAIGROUP）_26089115.md`

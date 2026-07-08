@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继功能配置（LST-RELAYFUNC）_14541477.md`
+- 原始手册：`evidence/UDG/20.15.2/设置媒体中继功能配置（SET-RELAYFUNC）_64299160.md`

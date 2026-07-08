@@ -58,4 +58,4 @@ MOD VLROPC: OPX=1, SSN=MSC;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-VLROPC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改VLR信令点(MOD-VLROPC)_45916360.md`

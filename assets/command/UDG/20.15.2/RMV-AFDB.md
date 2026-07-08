@@ -58,4 +58,4 @@ RMV AFDB:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-AFDB.md`
+- 原始手册：`evidence/UDG/20.15.2/卸载计费防欺诈业务规则数据库（RMV-AFDB）_82837785.md`

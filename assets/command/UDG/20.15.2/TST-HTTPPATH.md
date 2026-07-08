@@ -66,4 +66,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TST-HTTPPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/测试HTTP链路（TST-HTTPPATH）_63037028.md`

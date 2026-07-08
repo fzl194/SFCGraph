@@ -55,4 +55,4 @@ RMV GRPNGLANFUNC: GROUPID="A0000001-460-003-01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GRPNGLANFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定群组的5G-LAN会话扩展参数（RMV-GRPNGLANFUNC）_26938413.md`

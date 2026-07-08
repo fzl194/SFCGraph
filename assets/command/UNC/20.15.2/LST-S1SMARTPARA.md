@@ -78,4 +78,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-S1SMARTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式信令抑制参数(LST-S1SMARTPARA)_26305558.md`

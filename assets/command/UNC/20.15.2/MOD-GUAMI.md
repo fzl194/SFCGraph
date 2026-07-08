@@ -61,4 +61,4 @@ MOD GUAMI: INDEX=0, AMFPOINTER="01", BACKUPAMFNAME="amf1.cluster1.net1.amf.5gc.m
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GUAMI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改AMF全局标识（MOD-GUAMI）_09652503.md`

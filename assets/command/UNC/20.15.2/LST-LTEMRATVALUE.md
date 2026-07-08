@@ -72,4 +72,4 @@ UNC作为SGW-C发送给PGW-C时使用的RAT值  =  LTE_M
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LTEMRATVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询LTE-M用户的RAT值（LST-LTEMRATVALUE）_04284713.md`

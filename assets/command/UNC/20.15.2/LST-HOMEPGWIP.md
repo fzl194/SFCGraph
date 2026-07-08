@@ -73,4 +73,4 @@ IP地址版本类型  =  IPV4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HOMEPGWIP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询归属地PGW-C-IP地址（LST-HOMEPGWIP）_06399912.md`

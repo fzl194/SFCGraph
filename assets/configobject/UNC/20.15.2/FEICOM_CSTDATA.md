@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FEICOM_CSTDATA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示存储池存储的表项信息（DSP-FEICOM_CSTDATA）_49961778.md`

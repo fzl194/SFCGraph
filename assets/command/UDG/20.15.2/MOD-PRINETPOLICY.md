@@ -57,4 +57,4 @@ MOD PRINETPOLICY: APN="test1", DNAI="123456", SINGLENETACCSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-PRINETPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改专网控制策略（MOD-PRINETPOLICY）_28361123.md`

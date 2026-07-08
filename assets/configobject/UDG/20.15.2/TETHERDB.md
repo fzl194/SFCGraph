@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TETHERDB.md`
-- 原始手册：`evidence/UDG/20.15.2/TETHERDB.md`
-- 原始手册：`evidence/UDG/20.15.2/TETHERDB.md`
+- 原始手册：`evidence/UDG/20.15.2/加载Tethering检测特征库（LOD-TETHERDB）_82837454.md`
+- 原始手册：`evidence/UDG/20.15.2/卸载Tethering检测特征库（RMV-TETHERDB）_82837455.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Tethering检测特征库（DSP-TETHERDB）_82837456.md`

@@ -70,4 +70,4 @@ GA隔离标识  =  iso1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GAISOLATION.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Ga业务隔离配置（LST-GAISOLATION）_99762889.md`

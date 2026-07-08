@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SOFTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/SOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询软参记录（LST-SOFTPARA）_86528606.md`
+- 原始手册：`evidence/UDG/20.15.2/配置软参记录（SET-SOFTPARA）_82837314.md`

@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MESYS.md`
+- 原始手册：`evidence/UDG/20.15.2/复位网元服务（RST-MESYS）_72247081.md`

@@ -66,4 +66,4 @@ SET NGIPAREACTRL: DEAUSRSW=ON, NGMMCAUSE=15;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGIPAREACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置基于位置的地址分配控制参数（SET-NGIPAREACTRL）_96243157.md`

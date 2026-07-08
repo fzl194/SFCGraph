@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-STRMATCHPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询字符串匹配策略（LST-STRMATCHPLCY）_78980734.md`

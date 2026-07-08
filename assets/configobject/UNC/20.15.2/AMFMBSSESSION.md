@@ -31,4 +31,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFMBSSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/去激活AMF组播广播会话（DEA-AMFMBSSESSION）_87947654.md`

@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PSAUPFBINDATSSS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PSA-UPF和ATSSS-UPF的绑定关系配置（ADD-PSAUPFBINDATSSS）_96241851.md`

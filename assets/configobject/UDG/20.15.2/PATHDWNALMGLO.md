@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PATHDWNALMGLO.md`
-- 原始手册：`evidence/UDG/20.15.2/PATHDWNALMGLO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单条路径断告警抑制参数全局配置（LST-PATHDWNALMGLO）_82837864.md`
+- 原始手册：`evidence/UDG/20.15.2/设置单条路径断告警抑制参数的全局配置（SET-PATHDWNALMGLO）_82837863.md`

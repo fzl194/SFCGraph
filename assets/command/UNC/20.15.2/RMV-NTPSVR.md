@@ -55,4 +55,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NTPSVR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NTP服务器(RMV-NTPSVR)_54491177.md`

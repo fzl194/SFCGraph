@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ENBGP.md`
-- 原始手册：`evidence/UNC/20.15.2/ENBGP.md`
-- 原始手册：`evidence/UNC/20.15.2/ENBGP.md`
-- 原始手册：`evidence/UNC/20.15.2/ENBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改eNodeB群组(MOD-ENBGP)_72225287.md`
+- 原始手册：`evidence/UNC/20.15.2/删除eNodeB群组(RMV-ENBGP)_26305418.md`
+- 原始手册：`evidence/UNC/20.15.2/增加eNodeB群组(ADD-ENBGP)_26145606.md`
+- 原始手册：`evidence/UNC/20.15.2/查询eNodeB群组(LST-ENBGP)_72345205.md`

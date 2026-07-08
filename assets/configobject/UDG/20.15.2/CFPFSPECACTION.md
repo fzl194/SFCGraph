@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFPFSPECACTION.md`
-- 原始手册：`evidence/UDG/20.15.2/CFPFSPECACTION.md`
-- 原始手册：`evidence/UDG/20.15.2/CFPFSPECACTION.md`
-- 原始手册：`evidence/UDG/20.15.2/CFPFSPECACTION.md`
+- 原始手册：`evidence/UDG/20.15.2/修改指定内容过滤策略特殊场景下的业务动作（MOD-CFPFSPECACTION）_28361121.md`
+- 原始手册：`evidence/UDG/20.15.2/删除指定内容过滤策略特殊场景下的业务动作（RMV-CFPFSPECACTION）_19641392.md`
+- 原始手册：`evidence/UDG/20.15.2/增加指定内容过滤策略特殊场景下的业务动作（ADD-CFPFSPECACTION）_27889293.md`
+- 原始手册：`evidence/UDG/20.15.2/查询内容过滤策略特殊场景下的业务动作（LST-CFPFSPECACTION）_19881184.md`

@@ -67,4 +67,4 @@ ADD ALLOWEDNFTYPES: OBJNAME="objname001", ALLOWEDNFTYPE=NRF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALLOWEDNFTYPES.md`
+- 原始手册：`evidence/UNC/20.15.2/增加允许访问的NF类型（ADD-ALLOWEDNFTYPES）_09652560.md`

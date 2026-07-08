@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TWAMPCLIENT.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPCLIENT.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPCLIENT.md`
-- 原始手册：`evidence/UDG/20.15.2/TWAMPCLIENT.md`
+- 原始手册：`evidence/UDG/20.15.2/修改TWAMP客户端（MOD-TWAMPCLIENT）_73142137.md`
+- 原始手册：`evidence/UDG/20.15.2/删除TWAMP客户端（RMV-TWAMPCLIENT）_73142139.md`
+- 原始手册：`evidence/UDG/20.15.2/增加TWAMP客户端（ADD-TWAMPCLIENT）_27102472.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TWAMP客户端（LST-TWAMPCLIENT）_27262286.md`

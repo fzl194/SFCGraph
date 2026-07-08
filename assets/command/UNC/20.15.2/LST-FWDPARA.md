@@ -63,4 +63,4 @@ IPv6报文重组超时时长（秒）  =  6
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-FWDPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询转发参数（LST-FWDPARA）_29627124.md`

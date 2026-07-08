@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/RRCINACTPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改RRC-Inactive策略（MOD-RRCINACTPLCY）_70462585.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RRC-Inactive策略（RMV-RRCINACTPLCY）_23782826.md`
+- 原始手册：`evidence/UNC/20.15.2/增加RRC-Inactive策略（ADD-RRCINACTPLCY）_70382297.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RRC-Inactive策略（LST-RRCINACTPLCY）_70382337.md`

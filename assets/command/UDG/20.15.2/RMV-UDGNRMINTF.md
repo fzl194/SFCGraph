@@ -58,4 +58,4 @@ RMV UDGNRMINTF: INTNAME="pgwusxif";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UDGNRMINTF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除逻辑口（RMV-UDGNRMINTF）_89468160.md`

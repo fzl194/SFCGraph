@@ -66,4 +66,4 @@ MOD GMLC: GMLCID=1, GMLCIPT=IPV4, GMLCIPV4="10.10.10.13";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-GMLC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GMLC配置(MOD-GMLC)_26305606.md`

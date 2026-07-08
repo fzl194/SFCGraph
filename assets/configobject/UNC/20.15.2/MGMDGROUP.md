@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MGMDGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/MGMDGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IGMP加入组信息（DSP-MGMDGROUP）_49802502.md`
+- 原始手册：`evidence/UNC/20.15.2/清除IGMP加入组信息（RTR-MGMDGROUP）_00866349.md`

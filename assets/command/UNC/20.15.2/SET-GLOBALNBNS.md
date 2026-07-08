@@ -74,4 +74,4 @@ SET GLOBALNBNS: MNBNSSERVER="10.1.1.1", BNBNSSERVER="10.2.2.2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GLOBALNBNS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置系统默认NBNS（SET-GLOBALNBNS）_76878558.md`

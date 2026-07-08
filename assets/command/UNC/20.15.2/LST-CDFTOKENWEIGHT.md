@@ -65,4 +65,4 @@ token权重  =  80
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CDFTOKENWEIGHT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询cdf-token权重（LST-CDFTOKENWEIGHT）_87520116.md`

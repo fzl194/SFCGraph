@@ -65,4 +65,4 @@ ADD AUTORP:VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AUTORP.md`
+- 原始手册：`evidence/UNC/20.15.2/添加Auto-RP配置（ADD-AUTORP）_49961218.md`

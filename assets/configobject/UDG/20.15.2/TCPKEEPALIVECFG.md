@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TCPKEEPALIVECFG.md`
-- 原始手册：`evidence/UDG/20.15.2/TCPKEEPALIVECFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询TCP保活参数（LST-TCPKEEPALIVECFG）_27102476.md`
+- 原始手册：`evidence/UDG/20.15.2/设置TCP保活参数（SET-TCPKEEPALIVECFG）_27102484.md`

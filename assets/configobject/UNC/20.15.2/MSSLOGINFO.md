@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSSLOGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询日志详细信息（DSP-MSSLOGINFO）_50121538.md`

@@ -31,4 +31,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EXTANINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示扩展的AN信息（DSP-EXTANINFO）_70382305.md`

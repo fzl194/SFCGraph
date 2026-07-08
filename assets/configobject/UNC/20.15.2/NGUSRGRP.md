@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGUSRGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/NGUSRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G用户群（MOD-NGUSRGRP）_44007397.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户群（RMV-NGUSRGRP）_44007669.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G用户群（ADD-NGUSRGRP）_44006475.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户群（LST-NGUSRGRP）_44007022.md`

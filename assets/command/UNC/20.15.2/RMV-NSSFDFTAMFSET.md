@@ -56,4 +56,4 @@ RMV NSSFDFTAMFSET: INDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NSSFDFTAMFSET.md`
+- 原始手册：`evidence/UNC/20.15.2/删除默认AMF集所支持的S-NSSAI范围（RMV-NSSFDFTAMFSET）_12111346.md`

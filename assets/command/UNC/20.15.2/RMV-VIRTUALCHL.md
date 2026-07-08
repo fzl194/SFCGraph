@@ -63,4 +63,4 @@ RMV VIRTUALCHL: SOURCECHL="98/OFFLINE", AGID="PS1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-VIRTUALCHL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除虚拟通道映射（RMV-VIRTUALCHL）_21982309.md`

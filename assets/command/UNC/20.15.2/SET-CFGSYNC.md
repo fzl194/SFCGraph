@@ -59,4 +59,4 @@ SET CFGSYNC:SYNCFLAG=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CFGSYNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置配置同步开关(SET-CFGSYNC)_26305670.md`

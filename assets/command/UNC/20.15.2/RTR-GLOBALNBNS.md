@@ -58,4 +58,4 @@ RTR GLOBALNBNS:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-GLOBALNBNS.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复系统默认NBNS（RTR-GLOBALNBNS）_22556861.md`

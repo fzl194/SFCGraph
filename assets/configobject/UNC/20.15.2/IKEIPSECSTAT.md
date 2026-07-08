@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IKEIPSECSTAT.md`
-- 原始手册：`evidence/UNC/20.15.2/IKEIPSECSTAT.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复IKE-IPsec统计信息（RTR-IKEIPSECSTAT）_98194026.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IKE-IPsec统计信息（DSP-IKEIPSECSTAT）_97874058.md`

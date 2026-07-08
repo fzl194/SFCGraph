@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NETYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/NETYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复-NeType默认值（RTR-NETYPE）_72598863.md`
+- 原始手册：`evidence/UDG/20.15.2/设置-NE-类型（SET-NETYPE）_84967916.md`

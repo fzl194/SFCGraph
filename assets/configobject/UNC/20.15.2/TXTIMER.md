@@ -30,4 +30,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TXTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DCC模板Tx定时器（SET-TXTIMER）_09896927.md`

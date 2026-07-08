@@ -50,4 +50,4 @@ ACT MIGRATE该命令用于OMU异构迁移，异构迁移是系统性工程，需
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACT-MIGRATE.md`
+- 原始手册：`evidence/UDG/20.15.2/异构迁移（ACT-MIGRATE）_35833852.md`

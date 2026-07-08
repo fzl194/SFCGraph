@@ -66,4 +66,4 @@ gcp-pod-1__103__0				224
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PAEBATCHRECVNUM.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE批量接收报文数（DSP-PAEBATCHRECVNUM）_35145961.md`

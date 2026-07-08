@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCPGIP.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPGIP.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPGIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除支持DHCP服务的GGSN-IP地址（RMV-DHCPGIP）_72225629.md`
+- 原始手册：`evidence/UNC/20.15.2/增加支持DHCP服务的GGSN-IP地址（ADD-DHCPGIP）_26145950.md`
+- 原始手册：`evidence/UNC/20.15.2/查询支持DHCP服务的GGSN-IP地址（LST-DHCPGIP）_26305760.md`

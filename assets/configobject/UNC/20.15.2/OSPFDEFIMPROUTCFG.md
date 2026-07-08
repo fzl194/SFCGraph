@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFDEFIMPROUTCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFDEFIMPROUTCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPF引入路由默认配置（LST-OSPFDEFIMPROUTCFG）_49801726.md`
+- 原始手册：`evidence/UNC/20.15.2/设置OSPF引入路由默认配置（SET-OSPFDEFIMPROUTCFG）_50120858.md`

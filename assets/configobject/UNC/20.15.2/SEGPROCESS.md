@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEGPROCESS.md`
+- 原始手册：`evidence/UNC/20.15.2/复位NRF百万号段功能（RST-SEGPROCESS）_64343911.md`

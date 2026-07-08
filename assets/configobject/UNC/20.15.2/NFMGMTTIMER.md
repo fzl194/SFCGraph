@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NFMGMTTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NFMGMTTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF管理模块的定时器配置（LST-NFMGMTTIMER）_01006689.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF管理模块的定时器配置（SET-NFMGMTTIMER）_01126445.md`

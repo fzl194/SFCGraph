@@ -65,4 +65,4 @@ ADD SMFINFO: SMFINSTANCENAME="SMF_Instance_0", SMFNAME="smf1.cluster1.net1.smf.5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF信息（ADD-SMFINFO）_09653991.md`

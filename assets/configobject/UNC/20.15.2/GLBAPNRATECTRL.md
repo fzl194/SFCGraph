@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLBAPNRATECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/GLBAPNRATECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局APN速率控制配置（LST-GLBAPNRATECTRL）_64343885.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局APN速率控制配置（SET-GLBAPNRATECTRL）_64343915.md`

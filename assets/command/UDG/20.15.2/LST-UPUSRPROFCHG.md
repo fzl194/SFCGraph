@@ -70,4 +70,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPUSRPROFCHG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询User-Profile的计费配置（LST-UPUSRPROFCHG）_35537639.md`

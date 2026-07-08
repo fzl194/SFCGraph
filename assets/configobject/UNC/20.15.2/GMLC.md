@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GMLC.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLC.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLC.md`
-- 原始手册：`evidence/UNC/20.15.2/GMLC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改GMLC配置(MOD-GMLC)_26305606.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GMLC配置(RMV-GMLC)_72225475.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GMLC配置(ADD-GMLC)_26145796.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GMLC配置(LST-GMLC)_72345397.md`

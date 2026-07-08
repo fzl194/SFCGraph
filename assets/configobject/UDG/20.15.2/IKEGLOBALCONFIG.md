@@ -38,5 +38,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IKEGLOBALCONFIG.md`
-- 原始手册：`evidence/UDG/20.15.2/IKEGLOBALCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IKE全局配置（LST-IKEGLOBALCONFIG）_25912247.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IKE全局配置（SET-IKEGLOBALCONFIG）_26032205.md`

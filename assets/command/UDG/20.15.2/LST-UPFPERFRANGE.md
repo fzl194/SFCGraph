@@ -75,4 +75,4 @@ UPFPERFRANGE 信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPFPERFRANGE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示UPF上报性能指标范围配置（LST-UPFPERFRANGE）_01603376.md`

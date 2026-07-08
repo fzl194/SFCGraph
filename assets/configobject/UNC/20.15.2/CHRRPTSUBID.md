@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTSUBID.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTSUBID.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTSUBID.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRRPTSUBID.md`
+- 原始手册：`evidence/UNC/20.15.2/修改CHR本地存盘用户（MOD-CHRRPTSUBID）_36049943.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CHR本地存盘用户（RMV-CHRRPTSUBID）_35847111.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CHR本地存盘用户（ADD-CHRRPTSUBID）_35847109.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR本地存盘用户（LST-CHRRPTSUBID）_89190588.md`

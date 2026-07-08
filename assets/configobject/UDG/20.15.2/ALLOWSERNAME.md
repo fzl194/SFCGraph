@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ALLOWSERNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/ALLOWSERNAME.md`
-- 原始手册：`evidence/UDG/20.15.2/ALLOWSERNAME.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于地址的白名单（RMV-ALLOWSERNAME）_29213289.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于地址的白名单（ADD-ALLOWSERNAME）_83813626.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于地址的白名单（LST-ALLOWSERNAME）_83653656.md`

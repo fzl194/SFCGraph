@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CONTCATEGBIND.md`
-- 原始手册：`evidence/UDG/20.15.2/CONTCATEGBIND.md`
-- 原始手册：`evidence/UDG/20.15.2/CONTCATEGBIND.md`
-- 原始手册：`evidence/UDG/20.15.2/CONTCATEGBIND.md`
+- 原始手册：`evidence/UDG/20.15.2/修改内容分类组绑定关系（MOD-CONTCATEGBIND）_43518651.md`
+- 原始手册：`evidence/UDG/20.15.2/删除内容分类组绑定关系（RMV-CONTCATEGBIND）_43076793.md`
+- 原始手册：`evidence/UDG/20.15.2/增加内容分类组绑定关系（ADD-CONTCATEGBIND）_39478826.md`
+- 原始手册：`evidence/UDG/20.15.2/查询内容分类组绑定关系（LST-CONTCATEGBIND）_43357965.md`

@@ -65,4 +65,4 @@ SET RDSRSPADDRCHK: AUTH=ENABLE, ACCT=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-RDSRSPADDRCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局RADIUS响应消息源IP_端口检查配置（SET-RDSRSPADDRCHK）_09896744.md`

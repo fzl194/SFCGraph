@@ -72,4 +72,4 @@ lgn2020@linux@RD
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-WEAKPWDDICMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询弱口令字典成员（LST-WEAKPWDDICMEM）_89575016.md`

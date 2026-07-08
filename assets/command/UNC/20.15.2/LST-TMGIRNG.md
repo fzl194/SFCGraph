@@ -70,4 +70,4 @@ MBS Service ID区域结束值  =  0x000002
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TMGIRNG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TMGI号段（LST-TMGIRNG）_77548762.md`

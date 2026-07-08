@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDETECTTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDETECTTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NRF检测时长信息（LST-NRFDETECTTIMER）_45168567.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF检测时长信息（SET-NRFDETECTTIMER）_98008806.md`

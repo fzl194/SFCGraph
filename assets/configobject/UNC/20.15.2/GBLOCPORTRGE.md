@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBLOCPORTRGE.md`
-- 原始手册：`evidence/UNC/20.15.2/GBLOCPORTRGE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询本端端口号选择范围(LST-GBLOCPORTRGE)_72225679.md`
+- 原始手册：`evidence/UNC/20.15.2/设置本端端口号选择范围(SET-GBLOCPORTRGE)_26146000.md`

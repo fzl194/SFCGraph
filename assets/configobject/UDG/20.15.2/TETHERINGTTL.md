@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TETHERINGTTL.md`
-- 原始手册：`evidence/UDG/20.15.2/TETHERINGTTL.md`
-- 原始手册：`evidence/UDG/20.15.2/TETHERINGTTL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除tethering的TTL值（RMV-TETHERINGTTL）_84083735.md`
+- 原始手册：`evidence/UDG/20.15.2/查询tethering的TTL值（LST-TETHERINGTTL）_97140232.md`
+- 原始手册：`evidence/UDG/20.15.2/配置tethering的TTL值（ADD-TETHERINGTTL）_96925966.md`

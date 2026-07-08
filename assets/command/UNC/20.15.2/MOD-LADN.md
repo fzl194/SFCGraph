@@ -58,4 +58,4 @@ MOD LADN: DNN="huawei.com", BGNTAI="12300121201", ENDTAI="12300121210", DESC="fo
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-LADN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地数据网络（MOD-LADN）_09652228.md`

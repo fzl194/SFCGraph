@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CONFLICTIP.md`
-- 原始手册：`evidence/UDG/20.15.2/CONFLICTIP.md`
-- 原始手册：`evidence/UDG/20.15.2/CONFLICTIP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除本地地址池中冲突IPv4地址（RMV-CONFLICTIP）_82837121.md`
+- 原始手册：`evidence/UDG/20.15.2/查询本地地址池中冲突地址（LST-CONFLICTIP）_82837122.md`
+- 原始手册：`evidence/UDG/20.15.2/添加本地地址池中冲突IPv4地址（ADD-CONFLICTIP）_82837120.md`

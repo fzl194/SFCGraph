@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SDRROUTE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SDRC中的APPROUTERINFO信息（DSP-SDRROUTE）_94730433.md`

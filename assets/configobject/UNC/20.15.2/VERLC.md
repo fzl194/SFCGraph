@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VERLC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询设备EOS时间（LST-VERLC）_23736556.md`

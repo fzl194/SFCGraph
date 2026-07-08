@@ -61,4 +61,4 @@ ADD DIAMETERAAA:HOSTNAME="diameteraaa1",REALMNAME="www.huawei.com",VPNINSTANCE="
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DIAMETERAAA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter-AAA服务器（ADD-DIAMETERAAA）_64343821.md`

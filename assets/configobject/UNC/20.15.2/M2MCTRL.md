@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/M2MCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/M2MCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M控制参数(LST-M2MCTRL)_26145770.md`
+- 原始手册：`evidence/UNC/20.15.2/设置M2M控制参数(SET-M2MCTRL)_72345369.md`

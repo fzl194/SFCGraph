@@ -54,4 +54,4 @@ Mesh网口故障自愈功能开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-FEHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询FE自愈功能配置（LST-FEHEALCTRL）_63193268.md`

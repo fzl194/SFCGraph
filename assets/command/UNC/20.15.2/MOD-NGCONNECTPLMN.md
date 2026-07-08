@@ -69,4 +69,4 @@ MOD NGCONNECTPLMN: NOID=0, MCC="123", MNC="45", DESC="for MNO B";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGCONNECTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-Connect-PLMN（MOD-NGCONNECTPLMN）_09651707.md`

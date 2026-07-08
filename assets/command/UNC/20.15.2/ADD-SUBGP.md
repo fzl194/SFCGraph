@@ -63,4 +63,4 @@ ADD SUBGP: SUBID=30;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SUBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户群(ADD-SUBGP)_72225241.md`

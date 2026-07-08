@@ -67,4 +67,4 @@ ADD DNSLE:IPT=IPV4,IPV4="192.168.97.26",LOCPORT=15001,VPNNAME="_abc_",LENAME="Dn
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNSLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS实体绑定DNS-Client-IP(ADD-DNSLE)_72225567.md`

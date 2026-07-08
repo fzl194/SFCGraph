@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSMSFSEGLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSMSFSEGLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSMSFSEGLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMSF号段白名单（RMV-NRFSMSFSEGLIST）_71783394.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSF号段白名单（ADD-NRFSMSFSEGLIST）_21823525.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF号段白名单（LST-NRFSMSFSEGLIST）_22223357.md`

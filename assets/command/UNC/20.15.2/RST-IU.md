@@ -59,4 +59,4 @@ RST IU: RNCNO=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RST-IU.md`
+- 原始手册：`evidence/UNC/20.15.2/复位Iu接口(RST-IU)_26305848.md`

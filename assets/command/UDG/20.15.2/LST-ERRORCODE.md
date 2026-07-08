@@ -72,4 +72,4 @@ testerrorcode    Less Than or Equal To       0                       5
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ERRORCODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询错误码（LST-ERRORCODE）_09678507.md`

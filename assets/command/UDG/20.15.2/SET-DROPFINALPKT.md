@@ -63,4 +63,4 @@ SET DROPFINALPKT: SWITCH=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DROPFINALPKT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置配额耗尽末包动作（SET-DROPFINALPKT）_05977160.md`

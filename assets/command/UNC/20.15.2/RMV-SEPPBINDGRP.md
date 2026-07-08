@@ -57,4 +57,4 @@ RMV SEPPBINDGRP: NFINSTANCEID="SEPP_Instance_1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SEPPBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SEPP绑定组关系（RMV-SEPPBINDGRP）_30840098.md`

@@ -70,4 +70,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GY5GREUSEDAVP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G用户接入时，Gy接口重用字段的填写方式（LST-GY5GREUSEDAVP）_52070868.md`

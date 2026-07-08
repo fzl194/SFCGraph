@@ -65,4 +65,4 @@ SET FUIFLOWCTLACT: ACTION=CONTROL;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FUIFLOWCTLACT.md`
+- 原始手册：`evidence/UDG/20.15.2/设置欠费重定向流控动作（SET-FUIFLOWCTLACT）_82837542.md`

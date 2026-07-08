@@ -69,4 +69,4 @@ BGP入不转板策略名称   =  bgppolicy
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AUTOSCALINGBGPLF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP入不转板自动化配置模板（LST-AUTOSCALINGBGPLF）_00840589.md`

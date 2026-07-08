@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSCHRPRCTMPL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMS-CHR流程控制模板（LST-SMSCHRPRCTMPL）_04041269.md`

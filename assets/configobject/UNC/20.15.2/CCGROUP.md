@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CCGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/CCGROUP.md`
-- 原始手册：`evidence/UNC/20.15.2/CCGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除计费特征组（RMV-CCGROUP）_42693476.md`
+- 原始手册：`evidence/UNC/20.15.2/增加计费特征组（ADD-CCGROUP）_88613375.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费特征组（LST-CCGROUP）_88733219.md`

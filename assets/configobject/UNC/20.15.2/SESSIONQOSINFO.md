@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SESSIONQOSINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示会话QoS信息（DSP-SESSIONQOSINFO）_64343871.md`

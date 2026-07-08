@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IUSUBRRLST.md`
-- 原始手册：`evidence/UNC/20.15.2/IUSUBRRLST.md`
-- 原始手册：`evidence/UNC/20.15.2/IUSUBRRLST.md`
-- 原始手册：`evidence/UNC/20.15.2/IUSUBRRLST.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Iu模式用户漫游限制列表(MOD-IUSUBRRLST)_26145550.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Iu模式用户漫游限制列表(RMV-IUSUBRRLST)_72345147.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Iu模式用户漫游限制列表(ADD-IUSUBRRLST)_26305360.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Iu模式用户漫游限制列表(LST-IUSUBRRLST)_72225231.md`

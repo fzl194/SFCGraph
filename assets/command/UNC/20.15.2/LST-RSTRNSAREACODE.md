@@ -67,4 +67,4 @@ jq007.pd666.sh008            NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RSTRNSAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TA级切片限制区域码（LST-RSTRNSAREACODE）_71516441.md`

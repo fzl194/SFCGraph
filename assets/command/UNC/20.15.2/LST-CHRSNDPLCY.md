@@ -71,4 +71,4 @@ CHR传输策略类型  =  签约APNNI
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHRSNDPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR传输策略(LST-CHRSNDPLCY)_72225293.md`

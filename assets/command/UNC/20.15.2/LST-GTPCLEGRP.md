@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-GTPCLEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询GTP-C本地实体组（LST-GTPCLEGRP）_09653069.md`

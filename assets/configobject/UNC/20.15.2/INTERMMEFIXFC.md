@@ -28,5 +28,5 @@ MME组Pool时，如果某个MME故障，则故障MME上的用户会接入到Pool
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INTERMMEFIXFC.md`
-- 原始手册：`evidence/UNC/20.15.2/INTERMMEFIXFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Inter-MME接入固定速率流控功能相关参数(LST-INTERMMEFIXFC)_57365241.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Inter-MME接入固定速率流控功能相关参数(SET-INTERMMEFIXFC)_04085540.md`

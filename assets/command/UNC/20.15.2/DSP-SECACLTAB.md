@@ -69,4 +69,4 @@ VNODE_VNRS_VNFC_IPU_0066    IP配置有效          IP配置有效            19
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SECACLTAB.md`
+- 原始手册：`evidence/UNC/20.15.2/显示安全ACL表项（DSP-SECACLTAB）_00866053.md`

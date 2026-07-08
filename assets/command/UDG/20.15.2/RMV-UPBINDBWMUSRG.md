@@ -61,4 +61,4 @@ RMV UPBINDBWMUSRG:USERGROUPNAME="testbwmusergroup",USERPROFILENAME="testuserprof
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPBINDBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理用户组User-Profile绑定（RMV-UPBINDBWMUSRG）_82837492.md`

@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBILINKCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILINKCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILINKCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SBI接口链路属性配置（RMV-SBILINKCFG）_29213291.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SBI接口链路属性配置（ADD-SBILINKCFG）_83813628.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SBI接口链路属性配置（LST-SBILINKCFG）_29291771.md`

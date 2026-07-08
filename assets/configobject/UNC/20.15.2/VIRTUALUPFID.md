@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALUPFID.md`
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALUPFID.md`
-- 原始手册：`evidence/UNC/20.15.2/VIRTUALUPFID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除虚拟UPF实例标识（RMV-VIRTUALUPFID）_96243048.md`
+- 原始手册：`evidence/UNC/20.15.2/增加虚拟UPF实例标识（ADD-VIRTUALUPFID）_76311126.md`
+- 原始手册：`evidence/UNC/20.15.2/查询虚拟UPF实例标识（LST-VIRTUALUPFID）_96242532.md`

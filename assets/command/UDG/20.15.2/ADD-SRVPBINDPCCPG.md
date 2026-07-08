@@ -70,4 +70,4 @@ ADD SRVPBINDPCCPG:PCCPOLICYGRPNM="TestPccPolicyGrpName",SRVPROPNAME="TestService
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SRVPBINDPCCPG.md`
+- 原始手册：`evidence/UDG/20.15.2/增加PCC组业务属性绑定（ADD-SRVPBINDPCCPG）_82837611.md`

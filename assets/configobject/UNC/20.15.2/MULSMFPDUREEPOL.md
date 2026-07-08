@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MULSMFPDUREEPOL.md`
-- 原始手册：`evidence/UNC/20.15.2/MULSMFPDUREEPOL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询是否支持多SMFInfo场景下的会话重建功能（LST-MULSMFPDUREEPOL）_70382321.md`
+- 原始手册：`evidence/UNC/20.15.2/设置是否支持多SMFInfo场景下的PDU会话重建策略（SET-MULSMFPDUREEPOL）_23782838.md`

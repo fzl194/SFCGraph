@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MMLLINKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询MML服务连接信息（LST-MMLLINKINFO）_00120128.md`

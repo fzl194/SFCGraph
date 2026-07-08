@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLOBALNBNS.md`
-- 原始手册：`evidence/UNC/20.15.2/GLOBALNBNS.md`
-- 原始手册：`evidence/UNC/20.15.2/GLOBALNBNS.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复系统默认NBNS（RTR-GLOBALNBNS）_22556861.md`
+- 原始手册：`evidence/UNC/20.15.2/查询系统默认NBNS（LST-GLOBALNBNS）_22556857.md`
+- 原始手册：`evidence/UNC/20.15.2/设置系统默认NBNS（SET-GLOBALNBNS）_76878558.md`

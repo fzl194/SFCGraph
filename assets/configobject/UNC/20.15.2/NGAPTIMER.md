@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGAPTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/NGAPTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2定时器参数（LST-NGAPTIMER）_33431273.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N2定时器参数（SET-NGAPTIMER）_33151729.md`

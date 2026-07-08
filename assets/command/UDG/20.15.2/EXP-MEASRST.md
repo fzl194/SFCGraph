@@ -87,4 +87,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EXP-MEASRST.md`
+- 原始手册：`evidence/UDG/20.15.2/导出测量结果文件(EXP-MEASRST)_92314776.md`

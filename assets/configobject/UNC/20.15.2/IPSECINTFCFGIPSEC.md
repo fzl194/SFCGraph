@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSECINTFCFGIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPsec隧道接口（MOD-IPSECINTFCFGIPSEC）_80751070.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPsec隧道接口（RMV-IPSECINTFCFGIPSEC）_80592512.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPsec隧道接口（ADD-IPSECINTFCFGIPSEC）_80910986.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPsec隧道接口（LST-IPSECINTFCFGIPSEC）_26150755.md`

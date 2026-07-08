@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DRAUTOACTIVE.md`
+- 原始手册：`evidence/UDG/20.15.2/设置冷备容灾自动升主功能（SET-DRAUTOACTIVE）_46854420.md`

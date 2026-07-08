@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSSFFCPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NSSFFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询流控等级对应的流控参数（LST-NSSFFCPARA）_44007074.md`
+- 原始手册：`evidence/UNC/20.15.2/设置流控等级对应的流控参数（SET-NSSFFCPARA）_44007993.md`

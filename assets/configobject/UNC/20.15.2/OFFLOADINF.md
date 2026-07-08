@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OFFLOADINF.md`
-- 原始手册：`evidence/UNC/20.15.2/OFFLOADINF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询迁移配置信息（LST-OFFLOADINF）_26146096.md`
+- 原始手册：`evidence/UNC/20.15.2/设置迁移配置表（SET-OFFLOADINF）_72345695.md`

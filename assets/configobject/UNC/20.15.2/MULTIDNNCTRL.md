@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MULTIDNNCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/MULTIDNNCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询2B2C漫游双DNN特性相关的功能控制（LST-MULTIDNNCTRL）_39800057.md`
+- 原始手册：`evidence/UNC/20.15.2/设置2B2C漫游双DNN特性相关的功能控制（SET-MULTIDNNCTRL）_39800065.md`

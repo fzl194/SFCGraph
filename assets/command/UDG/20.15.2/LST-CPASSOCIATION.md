@@ -75,4 +75,4 @@ CP 标识信息 = cp1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CPASSOCIATION.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CP配置（LST-CPASSOCIATION）_19141525.md`

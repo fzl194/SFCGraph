@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPWHITEAPNS.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPWHITEAPNS.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSCAPWHITEAPNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除不受SMFQOSCAP配置控制的APN白名单列表。（RMV-QOSCAPWHITEAPNS）_26639425.md`
+- 原始手册：`evidence/UNC/20.15.2/增加不受SMFQOSCAP配置控制的APN白名单列表。（ADD-QOSCAPWHITEAPNS）_26639421.md`
+- 原始手册：`evidence/UNC/20.15.2/查询不受SMFQOSCAP配置控制的APN白名单列表（LST-QOSCAPWHITEAPNS）_75760456.md`

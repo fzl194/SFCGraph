@@ -67,4 +67,4 @@ ADD APNUPFINFO:APN="huawei.com",UPFINSTANCEID="upf1",LOCATION=INHERIT;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNUPFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定APN的UPF节点信息（ADD-APNUPFINFO）_96241630.md`

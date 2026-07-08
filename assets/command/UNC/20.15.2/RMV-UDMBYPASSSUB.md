@@ -56,4 +56,4 @@ RMV UDMBYPASSSUB: SUBRANGE=ALL_USER;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UDMBYPASSSUB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UDM-Bypass最小签约数据配置（RMV-UDMBYPASSSUB）_32335887.md`

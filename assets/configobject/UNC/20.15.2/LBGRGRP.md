@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LBGRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容灾组信息（DSP-LBGRGRP）_29627057.md`

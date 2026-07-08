@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPTRAFFICPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/APPTRAFFICPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示应用流量参数（LST-APPTRAFFICPARA）_49101654.md`
+- 原始手册：`evidence/UDG/20.15.2/设置应用流量参数（SET-APPTRAFFICPARA）_49101653.md`

@@ -68,4 +68,4 @@ SET SBILNKCTRLSW: LNKCTRLSW=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SBILNKCTRLSW.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务化接口链路自动控制功能开关（SET-SBILNKCTRLSW）_28971851.md`

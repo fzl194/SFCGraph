@@ -82,4 +82,4 @@ SET GTPPUB: PRVEXT=ON, ECHOSIG=ALL, EI=239, V2EI=239, OTSIE=DENY, POTHD=85, PNTH
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-GTPPUB.md`
+- 原始手册：`evidence/UNC/20.15.2/设置GTP-C协议参数(SET-GTPPUB)_26145920.md`

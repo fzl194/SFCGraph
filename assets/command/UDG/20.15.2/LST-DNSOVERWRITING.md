@@ -90,4 +90,4 @@ DNS重写动作名字 = test
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DNSOVERWRITING.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS重写动作配置（LST-DNSOVERWRITING）_82837550.md`

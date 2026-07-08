@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ACLNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改ACL节点（MOD-ACLNODE）_86526702.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ACL节点（RMV-ACLNODE）_82837731.md`
+- 原始手册：`evidence/UDG/20.15.2/增加ACL节点（ADD-ACLNODE）_82837729.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ACL节点（LST-ACLNODE）_86526723.md`

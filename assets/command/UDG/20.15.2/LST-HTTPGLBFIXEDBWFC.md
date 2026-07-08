@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HTTPGLBFIXEDBWFC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP全局固定带宽流控（LST-HTTPGLBFIXEDBWFC）_03315070.md`

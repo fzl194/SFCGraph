@@ -90,4 +90,4 @@ MOD SMARTHTTPREDIR: SMTHTTPREDINAME="test", SERVERURL="www.huawei.com",  EXTFLTT
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-SMARTHTTPREDIR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改HTTP智能重定向配置（MOD-SMARTHTTPREDIR）_86528764.md`

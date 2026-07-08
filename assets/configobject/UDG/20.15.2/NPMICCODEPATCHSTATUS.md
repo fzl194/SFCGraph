@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPMICCODEPATCHSTATUS.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NP微码补丁加载状态（DSP-NPMICCODEPATCHSTATUS）_71168450.md`

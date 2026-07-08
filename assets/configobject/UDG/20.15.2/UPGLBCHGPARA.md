@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPGLBCHGPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/UPGLBCHGPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局计费参数（LST-UPGLBCHGPARA）_82837618.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全局计费参数（SET-UPGLBCHGPARA）_82837617.md`

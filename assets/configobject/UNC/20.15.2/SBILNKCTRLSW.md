@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBILNKCTRLSW.md`
-- 原始手册：`evidence/UNC/20.15.2/SBILNKCTRLSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务化接口链路自动控制功能开关（LST-SBILNKCTRLSW）_83813636.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务化接口链路自动控制功能开关（SET-SBILNKCTRLSW）_28971851.md`

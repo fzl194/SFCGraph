@@ -80,4 +80,4 @@ ADD BWMRULEGLOBAL:BWMRULENAME="testbwmruleglobal",BWMSERVICENAME="bs1",UPBWMCTRL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-BWMRULEGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/增加全局带宽管理规则（ADD-BWMRULEGLOBAL）_82837482.md`

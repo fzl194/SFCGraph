@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPPATHFAULTREST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户面链路故障恢复功能配置信息（LST-UPPATHFAULTREST）_45986071.md`

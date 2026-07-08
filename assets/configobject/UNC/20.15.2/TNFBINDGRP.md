@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TNFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/TNFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/TNFBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/TNFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改目标NF实例绑定组（MOD-TNFBINDGRP）_09652550.md`
+- 原始手册：`evidence/UNC/20.15.2/删除目标NF实例绑定组（RMV-TNFBINDGRP）_09653620.md`
+- 原始手册：`evidence/UNC/20.15.2/增加目标NF实例绑定组（ADD-TNFBINDGRP）_09651533.md`
+- 原始手册：`evidence/UNC/20.15.2/查询目标NF实例绑定组（LST-TNFBINDGRP）_09651395.md`

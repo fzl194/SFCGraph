@@ -77,4 +77,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-TRCSMSGTOTALSTC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询跟踪中心消息统计信息（DSP-TRCSMSGTOTALSTC）_59103938.md`

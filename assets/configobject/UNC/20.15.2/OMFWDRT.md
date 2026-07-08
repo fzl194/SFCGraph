@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OMFWDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/OMFWDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/OMFWDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OM转发路由-(RMV-OMFWDRT)_21547908.md`
+- 原始手册：`evidence/UNC/20.15.2/增加OM转发路由-(ADD-OMFWDRT)_21547907.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OM转发路由-(LST-OMFWDRT)_26758529.md`

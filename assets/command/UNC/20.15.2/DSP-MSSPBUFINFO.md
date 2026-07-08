@@ -79,4 +79,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSPBUFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/根据索引号查询PBUF信息（DSP-MSSPBUFINFO）_85570266.md`

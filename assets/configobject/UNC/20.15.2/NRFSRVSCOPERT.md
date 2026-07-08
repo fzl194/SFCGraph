@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFSRVSCOPERT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSRVSCOPERT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFSRVSCOPERT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除ServingScope路由（RMV-NRFSRVSCOPERT）_44007703.md`
+- 原始手册：`evidence/UNC/20.15.2/增加ServingScope路由（ADD-NRFSRVSCOPERT）_44006510.md`
+- 原始手册：`evidence/UNC/20.15.2/查询ServingScope路由（LST-NRFSRVSCOPERT）_44007065.md`

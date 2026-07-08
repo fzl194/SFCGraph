@@ -74,4 +74,4 @@ APN下用户互访禁止开关
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNUEMUTACC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN下用户互访控制配置（LST-APNUEMUTACC）_82837777.md`

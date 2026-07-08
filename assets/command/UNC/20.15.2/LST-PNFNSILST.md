@@ -68,4 +68,4 @@ NF切片实例标识 = 10001
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFNSILST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF实例网络切片标识（LST-PNFNSILST）_09652554.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONN.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONN.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONN.md`
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMCONN.md`
+- 原始手册：`evidence/UDG/20.15.2/修改Diameter链路（MOD-UPDIAMCONN）_97080153.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter链路（RMV-UPDIAMCONN）_97314557.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter链路（ADD-UPDIAMCONN）_45195178.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Diameter链路（LST-UPDIAMCONN）_45432692.md`

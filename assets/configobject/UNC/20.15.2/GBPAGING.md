@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GBPAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gb接口寻呼数据(LST-GBPAGING)_26146008.md`

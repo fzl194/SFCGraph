@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USRTRCPLY.md`
-- 原始手册：`evidence/UDG/20.15.2/USRTRCPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户跟踪策略（LST-USRTRCPLY）_81234600.md`
+- 原始手册：`evidence/UDG/20.15.2/设置用户跟踪策略（SET-USRTRCPLY）_68354113.md`

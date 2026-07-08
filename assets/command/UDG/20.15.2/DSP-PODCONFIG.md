@@ -50,4 +50,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-PODCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/POD配置查询（DSP-PODCONFIG）_95277150.md`

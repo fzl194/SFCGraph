@@ -32,7 +32,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UERADIOCAPLEN.md`
-- 原始手册：`evidence/UNC/20.15.2/UERADIOCAPLEN.md`
-- 原始手册：`evidence/UNC/20.15.2/UERADIOCAPLEN.md`
-- 原始手册：`evidence/UNC/20.15.2/UERADIOCAPLEN.md`
+- 原始手册：`evidence/UNC/20.15.2/显示UE-Radio-Capability信元长度（DSP-UERADIOCAPLEN）_71436533.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UE-Radio-Capability信元配置（LST-UERADIOCAPLEN）_71436545.md`
+- 原始手册：`evidence/UNC/20.15.2/清除UE-Radio-Capability信元长度统计信息（CLR-UERADIOCAPLEN）_71436527.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UE-Radio-Capability信元信息（SET-UERADIOCAPLEN）_24956656.md`

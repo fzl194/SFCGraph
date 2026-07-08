@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPGLOBAL.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询LDP全局配置（LST-LDPGLOBAL）_49802510.md`
+- 原始手册：`evidence/UDG/20.15.2/设置LDP全局配置（SET-LDPGLOBAL）_00441289.md`

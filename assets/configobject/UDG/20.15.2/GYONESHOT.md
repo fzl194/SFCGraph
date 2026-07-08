@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GYONESHOT.md`
-- 原始手册：`evidence/UDG/20.15.2/GYONESHOT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Gy一次重定向参数（LST-GYONESHOT）_86528909.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Gy一次重定向参数（SET-GYONESHOT）_82837567.md`

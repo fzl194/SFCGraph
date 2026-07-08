@@ -69,4 +69,4 @@ gNB标识长度(比特)  =  24
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NGRANNEIBS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NG-RAN基站邻接关系（DSP-NGRANNEIBS）_09652278.md`

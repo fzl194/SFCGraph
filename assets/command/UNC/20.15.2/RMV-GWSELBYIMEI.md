@@ -58,4 +58,4 @@ RMV GWSELBYIMEI: IMEIGPID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GWSELBYIMEI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于IMEI选择GGSN_P-GW配置(RMV-GWSELBYIMEI)_26145942.md`

@@ -67,4 +67,4 @@ FRAME-0-SLOT-8  FRAME-0-SLOT-8-NP-0  1112      1116        FALSE       0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-NPFABRICSUBHEALTHY.md`
+- 原始手册：`evidence/UDG/20.15.2/显示NP-FABRIC亚健康信息（DSP-NPFABRICSUBHEALTHY）_44203950.md`

@@ -54,4 +54,4 @@ RMV NDNEIGHBOR:IFNAME="Ethernet65/0/8",IPV6ADDRESS="2001:db8::11";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-NDNEIGHBOR.md`
+- 原始手册：`evidence/UDG/20.15.2/删除静态ND邻居表项（RMV-NDNEIGHBOR）_49961130.md`

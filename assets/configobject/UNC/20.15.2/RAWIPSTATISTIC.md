@@ -26,5 +26,5 @@ OSPF、ICMP报文封装在RawIP报文中进行发送。因此，例如当进行p
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RAWIPSTATISTIC.md`
-- 原始手册：`evidence/UNC/20.15.2/RAWIPSTATISTIC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RawIP报文统计（DSP-RAWIPSTATISTIC）_00440557.md`
+- 原始手册：`evidence/UNC/20.15.2/清除RawIP报文统计（RTR-RAWIPSTATISTIC）_00600421.md`

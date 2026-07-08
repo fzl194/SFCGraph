@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DMHOSTRT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMHOSTRT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMHOSTRT.md`
-- 原始手册：`evidence/UNC/20.15.2/DMHOSTRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter主机路由(MOD-DMHOSTRT)_26306084.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter主机路由(RMV-DMHOSTRT)_72225951.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter主机路由(ADD-DMHOSTRT)_26146272.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter主机路由(LST-DMHOSTRT)_72345873.md`

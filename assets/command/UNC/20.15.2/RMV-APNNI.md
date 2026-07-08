@@ -59,4 +59,4 @@ RMV APNNI: GRPID=2, APNNI="HUAWEI.COM";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNNI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APNNI(RMV-APNNI)_72345293.md`

@@ -60,4 +60,4 @@ MOD REDUNDRDTIP: IPVERSION=IPv4, IPV4ADDRESS="192.168.0.2";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-REDUNDRDTIP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改冗余备份重定向IP（MOD-REDUNDRDTIP）_75097448.md`

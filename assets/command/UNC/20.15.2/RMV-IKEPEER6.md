@@ -59,4 +59,4 @@ RMV IKEPEER6:PEERNAME="peer1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IKEPEER6.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPv6-IKE对等体（RMV-IKEPEER6）_21521252.md`

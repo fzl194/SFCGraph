@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGMNO.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMNO.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMNO.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMNO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G模式移动网络运营商信息（MOD-NGMNO）_09654365.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G模式移动网络运营商信息（RMV-NGMNO）_09652344.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G模式移动网络运营商信息（ADD-NGMNO）_09652141.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G模式移动网络运营商信息（LST-NGMNO）_09652431.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSQMQDEPTH.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSQMQDEPTH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPSQM缓存队列深度（LST-IPSQMQDEPTH）_21153442.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPSQM缓存队列深度（SET-IPSQMQDEPTH）_21392220.md`

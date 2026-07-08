@@ -66,4 +66,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SFEFIB6STC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6指定的VPN路由表项统计（DSP-SFEFIB6STC）_49962058.md`

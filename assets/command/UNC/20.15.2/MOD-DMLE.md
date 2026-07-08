@@ -59,4 +59,4 @@ MOD DMLE: LOINDEX=0, PDTNAME="MME1", LOINFONAME="DMLE";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DMLE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter本端实体(MOD-DMLE)_72225961.md`

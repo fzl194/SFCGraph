@@ -67,4 +67,4 @@ MOS值为excellent和good之间的边界值  =  40
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VONRMOSCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MOS分类信息（LST-VONRMOSCLASS）_95174167.md`

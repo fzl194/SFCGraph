@@ -63,4 +63,4 @@ RMV HOMEGROUP: HOMEGROUPINDX=2, CONFIRM=Y;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-HOMEGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Home-Group（RMV-HOMEGROUP）_88733227.md`

@@ -73,4 +73,4 @@ RG级重定向处理重定向IPv6地址  =  ::
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RGRCACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RG级异常返回码处理动作（LST-RGRCACT）_09652230.md`

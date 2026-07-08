@@ -63,4 +63,4 @@ ADD ISMFDNAI: DNAI="huawei.com.dnai", DNAITYPE=DNN_LEVEL, DNN="huawei.com", AUXD
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ISMFDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加I-SMF支持的DNAI（ADD-ISMFDNAI）_01120970.md`

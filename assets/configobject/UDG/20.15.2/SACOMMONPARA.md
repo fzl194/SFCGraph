@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SACOMMONPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/SACOMMONPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SA业务公共参数（LST-SACOMMONPARA）_82837415.md`
+- 原始手册：`evidence/UDG/20.15.2/设置SA业务公共参数（SET-SACOMMONPARA）_82837416.md`

@@ -63,4 +63,4 @@ ADD NGPAGINGARPPRI: ARP=1, PRIORITY=PAGING_HIGH;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGPAGINGARPPRI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于ARP的Paging消息在流控期间放通的优先级（ADD-NGPAGINGARPPRI）_52388014.md`

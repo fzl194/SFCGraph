@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSECURITYSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSECURITYSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IP选项安全开关（LST-IPSECURITYSWITCH）_38232949.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IP选项安全开关（SET-IPSECURITYSWITCH）_93752960.md`

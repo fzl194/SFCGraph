@@ -73,4 +73,4 @@ ADD PNFSMFSERAREA: NFINSTANCEID="UPF_Instance_0", SMFSERVINGAREA="area01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFSMFSERAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的SMF服务区域信息（ADD-PNFSMFSERAREA）_09653019.md`

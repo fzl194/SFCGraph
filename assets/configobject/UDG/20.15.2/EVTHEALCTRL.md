@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/EVTHEALCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/EVTHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询事件全局开关（LST-EVTHEALCTRL）_82500405.md`
+- 原始手册：`evidence/UDG/20.15.2/设置事件全局开关（SET-EVTHEALCTRL）_36101118.md`

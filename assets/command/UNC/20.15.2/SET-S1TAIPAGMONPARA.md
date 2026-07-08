@@ -72,4 +72,4 @@ SET S1TAIPAGMONPARA: SWITCH=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-S1TAIPAGMONPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1-TAI组寻呼异常监控功能参数(SET-S1TAIPAGMONPARA)_92192794.md`

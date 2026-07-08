@@ -53,4 +53,4 @@ ADD DRINST: DRINSTID=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DRINST.md`
+- 原始手册：`evidence/UNC/20.15.2/配置容灾实例(ADD-DRINST)_51011025.md`

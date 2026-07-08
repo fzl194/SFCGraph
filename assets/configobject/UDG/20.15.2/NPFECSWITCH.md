@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NPFECSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/NPFECSWITCH.md`
-- 原始手册：`evidence/UDG/20.15.2/NPFECSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP-FEC状态（DSP-NPFECSWITCH）_71467900.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NP-FEC配置（LST-NPFECSWITCH）_50068406.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NP-FEC配置（SET-NPFECSWITCH）_50068362.md`

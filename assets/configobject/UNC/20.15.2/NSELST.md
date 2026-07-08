@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSELST.md`
-- 原始手册：`evidence/UNC/20.15.2/NSELST.md`
-- 原始手册：`evidence/UNC/20.15.2/NSELST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NSE列表(RMV-NSELST)_26146022.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NSE列表(ADD-NSELST)_72345621.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NSE列表(LST-NSELST)_72225701.md`

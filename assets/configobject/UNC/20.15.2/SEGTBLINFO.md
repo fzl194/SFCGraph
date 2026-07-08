@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEGTBLINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示号段表信息（DSP-SEGTBLINFO）_09651717.md`

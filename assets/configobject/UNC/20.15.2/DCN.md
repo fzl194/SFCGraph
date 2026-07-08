@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DCN.md`
-- 原始手册：`evidence/UNC/20.15.2/DCN.md`
-- 原始手册：`evidence/UNC/20.15.2/DCN.md`
-- 原始手册：`evidence/UNC/20.15.2/DCN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DCN(MOD-DCN)_26305636.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCN(RMV-DCN)_72345427.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DCN(ADD-DCN)_72225505.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DCN(LST-DCN)_26145828.md`

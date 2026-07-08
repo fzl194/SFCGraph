@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SBISTATICLINK.md`
+- 原始手册：`evidence/UDG/20.15.2/激活静态链路（ACT-SBISTATICLINK）_28971833.md`

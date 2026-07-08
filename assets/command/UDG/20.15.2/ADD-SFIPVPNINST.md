@@ -57,4 +57,4 @@ ADD SFIPVPNINST: VPNINSTANCE="vpn1", DESC="vpn";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-SFIPVPNINST.md`
+- 原始手册：`evidence/UDG/20.15.2/添加SFIP-VPN实例（ADD-SFIPVPNINST）_42491897.md`

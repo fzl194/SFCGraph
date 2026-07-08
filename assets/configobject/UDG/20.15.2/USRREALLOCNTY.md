@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/USRREALLOCNTY.md`
-- 原始手册：`evidence/UDG/20.15.2/USRREALLOCNTY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询主动触发用户位置实时通知功能（LST-USRREALLOCNTY）_19172436.md`
+- 原始手册：`evidence/UDG/20.15.2/设置主动触发用户位置实时通知功能（SET-USRREALLOCNTY）_19410190.md`

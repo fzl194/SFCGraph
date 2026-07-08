@@ -71,4 +71,4 @@ SET UPLINKCONGCTRL: ALMSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-UPLINKCONGCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Diameter链路拥塞控制（SET-UPLINKCONGCTRL）_97314561.md`

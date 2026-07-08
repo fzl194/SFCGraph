@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EVTSW.md`
-- 原始手册：`evidence/UNC/20.15.2/EVTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询事件开关状态（LST-EVTSW）_82380493.md`
+- 原始手册：`evidence/UNC/20.15.2/设置事件开关状态（SET-EVTSW）_36260908.md`

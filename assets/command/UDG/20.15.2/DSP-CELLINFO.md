@@ -65,4 +65,4 @@ CELL_SDRE     cmf-pod-2__103__0  就绪状态  10.0.0.1     0x00000000
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CELLINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示微服务进程信息（DSP-CELLINFO）_94730395.md`

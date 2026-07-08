@@ -79,4 +79,4 @@ SET UEDNSBINDAPN: APN="huawei.com", MDNSSERVERV4="10.1.1.1", BDNSSERVERV4="10.2.
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-UEDNSBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN的DNS属性（SET-UEDNSBINDAPN）_33845579.md`

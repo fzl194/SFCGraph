@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ALLIFIPADDRESS.md`
+- 原始手册：`evidence/UDG/20.15.2/批量删除接口下IP地址（RMV-ALLIFIPADDRESS）_50121354.md`

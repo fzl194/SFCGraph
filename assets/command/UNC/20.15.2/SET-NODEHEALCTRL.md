@@ -66,4 +66,4 @@ SET NODEHEALCTRL: BONDINGHEALSW=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NODEHEALCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Node自愈策略控制参数（SET-NODEHEALCTRL）_48332256.md`

@@ -113,4 +113,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NCSDATAMODEL.md`
+- 原始手册：`evidence/UNC/20.15.2/显示设备当前已加载的NETCONF数据模型（DSP-NCSDATAMODEL）_59104259.md`

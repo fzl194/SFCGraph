@@ -59,4 +59,4 @@ LST MULTICASTGRP: MCASTGRPNAME="group";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MULTICASTGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询组播组配置（LST-MULTICASTGRP）_15471326.md`

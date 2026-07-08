@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESTRICTSNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTRICTSNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTRICTSNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/RESTRICTSNSSAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改受限的S-NSSAI（MOD-RESTRICTSNSSAI）_09654388.md`
+- 原始手册：`evidence/UNC/20.15.2/删除受限的S-NSSAI（RMV-RESTRICTSNSSAI）_09651808.md`
+- 原始手册：`evidence/UNC/20.15.2/增加受限的S-NSSAI（ADD-RESTRICTSNSSAI）_09653681.md`
+- 原始手册：`evidence/UNC/20.15.2/查询受限的S-NSSAI（LST-RESTRICTSNSSAI）_09653797.md`

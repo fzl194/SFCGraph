@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/TOHVXLANPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/TOHVXLANPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询家庭网关业务使用VXLAN隧道传输业务参数配置（LST-TOHVXLANPARA）_29481111.md`
+- 原始手册：`evidence/UDG/20.15.2/设置家庭网关业务使用VXLAN隧道传输业务参数配置（SET-TOHVXLANPARA）_78279090.md`

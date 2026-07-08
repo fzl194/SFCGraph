@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RDSTRING.md`
-- 原始手册：`evidence/UDG/20.15.2/RDSTRING.md`
-- 原始手册：`evidence/UDG/20.15.2/RDSTRING.md`
+- 原始手册：`evidence/UDG/20.15.2/删除RD字符（RMV-RDSTRING）_49961754.md`
+- 原始手册：`evidence/UDG/20.15.2/增加RD字符（ADD-RDSTRING）_00840885.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RD字符（LST-RDSTRING）_50121066.md`

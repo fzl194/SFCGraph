@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFGTSM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF的GTSM配置（LST-OSPFGTSM）_00866165.md`

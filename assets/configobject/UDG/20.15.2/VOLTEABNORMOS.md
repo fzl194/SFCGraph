@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VOLTEABNORMOS.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEABNORMOS.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEABNORMOS.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS值的异常门限为系统初始设置值（RTR-VOLTEABNORMOS）_57538683.md`
+- 原始手册：`evidence/UDG/20.15.2/指定MOS值的异常门限值（SET-VOLTEABNORMOS）_57738481.md`
+- 原始手册：`evidence/UDG/20.15.2/查询配置的MOS值异常门限值信息（LST-VOLTEABNORMOS）_69178842.md`

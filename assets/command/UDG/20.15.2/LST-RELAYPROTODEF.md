@@ -76,4 +76,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYPROTODEF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继协议定义（LST-RELAYPROTODEF）_43992590.md`

@@ -71,4 +71,4 @@ SET N40MSGCTRL: ROAMOFFSTARTSW=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-N40MSGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N40接口消息的控制参数（SET-N40MSGCTRL）_78393532.md`

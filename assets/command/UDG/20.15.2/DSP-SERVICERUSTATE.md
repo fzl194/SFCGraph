@@ -69,4 +69,4 @@ RU的ID  RU的名字         ScaleGroup的名字   RU的状态
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-SERVICERUSTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询业务RU的状态(DSP-SERVICERUSTATE)_29626970.md`

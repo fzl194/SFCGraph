@@ -66,4 +66,4 @@ RMV HPLMN: MCC="123", MNC="30";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-HPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地PLMN(RMV-HPLMN)_72225753.md`

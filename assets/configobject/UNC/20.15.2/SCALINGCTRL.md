@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCALINGCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SCALINGCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩缩容业务控制参数(LST-SCALINGCTRL)_72345465.md`
+- 原始手册：`evidence/UNC/20.15.2/设置扩缩容业务控制参数(SET-SCALINGCTRL)_26305674.md`

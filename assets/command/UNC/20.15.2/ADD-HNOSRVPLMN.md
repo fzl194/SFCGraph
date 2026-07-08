@@ -67,4 +67,4 @@ ADD HNOSRVPLMN: NOID=0, MCC="123", MNC="03", PLMNN="AAA";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-HNOSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加归属网络Serving-PLMN信息(ADD-HNOSRVPLMN)_72345655.md`

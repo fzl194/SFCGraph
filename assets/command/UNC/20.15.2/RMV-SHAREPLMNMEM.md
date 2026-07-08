@@ -58,4 +58,4 @@ RMV SHAREPLMNMEM: PLMNGPID=1, MCC="460", MNC="05";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SHAREPLMNMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除共享PLMN群组成员(RMV-SHAREPLMNMEM)_84079056.md`

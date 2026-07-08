@@ -38,5 +38,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFSHEALCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/CFSHEALCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询在复杂故障场景下自愈功能控制参数（LST-CFSHEALCTRL）_28195461.md`
+- 原始手册：`evidence/UDG/20.15.2/设置在复杂故障场景下自愈功能控制参数（SET-CFSHEALCTRL）_80236120.md`

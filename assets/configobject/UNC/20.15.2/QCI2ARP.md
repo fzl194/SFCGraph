@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QCI2ARP.md`
-- 原始手册：`evidence/UNC/20.15.2/QCI2ARP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询标准QCI到ARP的映射规则（LST-QCI2ARP）_09653066.md`
+- 原始手册：`evidence/UNC/20.15.2/设置标准QCI到ARP的映射规则（SET-QCI2ARP）_09652269.md`

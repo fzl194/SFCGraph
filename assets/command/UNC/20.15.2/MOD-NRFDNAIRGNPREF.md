@@ -57,4 +57,4 @@ MOD NRFDNAIRGNPREF: DNN="ims", DNAI="huawei.com", PREFERRULE="01-02:03-05";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NRFDNAIRGNPREF.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNAI区域优选规则（MOD-NRFDNAIRGNPREF）_43420805.md`

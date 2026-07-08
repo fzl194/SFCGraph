@@ -60,4 +60,4 @@ RMV LOCCOMMPOLICY: USERPROFILENAME= "testuserprofilename1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCCOMMPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地Common-Policy配置（RMV-LOCCOMMPOLICY）_84260806.md`

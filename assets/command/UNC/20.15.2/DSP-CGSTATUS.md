@@ -83,4 +83,4 @@ uncpod-0  172.20.10.70  25010     R10 ALL  abnormal  10601     192.168.61.60
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CGSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG状态（DSP-CGSTATUS）_09896853.md`

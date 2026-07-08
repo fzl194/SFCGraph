@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MULTISRVPLMNEN.md`
-- 原始手册：`evidence/UNC/20.15.2/MULTISRVPLMNEN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询多Serving-Plmn增强功能（LST-MULTISRVPLMNEN）_97141802.md`
+- 原始手册：`evidence/UNC/20.15.2/设置多Serving-Plmn增强功能（SET-MULTISRVPLMNEN）_47541753.md`

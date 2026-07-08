@@ -57,4 +57,4 @@ RMV APNCFTEMPLATE: APNNAME="huawei.com", CFTEMPLATENAME="testcftemplate";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-APNCFTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN内容过滤模板（RMV-APNCFTEMPLATE）_50710732.md`

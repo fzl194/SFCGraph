@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DNSIPRESOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DNS-IP地址资源列表（SET-DNSIPRESOURCE）_12206841.md`

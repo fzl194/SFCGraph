@@ -69,4 +69,4 @@ TW定时器配置
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TWTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TW定时器（LST-TWTIMER）_09897239.md`

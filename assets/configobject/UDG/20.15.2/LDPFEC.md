@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPFEC.md`
+- 原始手册：`evidence/UDG/20.15.2/显示LDP-FEC（DSP-LDPFEC）_49802378.md`

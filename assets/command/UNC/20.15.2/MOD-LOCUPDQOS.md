@@ -62,4 +62,4 @@ MOD LOCUPDQOS: APN="HUAWEI.COM",UPLINKBW=0, DOWNLINKBW=1024;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-LOCUPDQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地更新QoS值（MOD-LOCUPDQOS）_35636459.md`

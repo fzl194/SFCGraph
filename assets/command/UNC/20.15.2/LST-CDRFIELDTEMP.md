@@ -124,4 +124,4 @@ charge-characteristic-selection-mode  =  包含该字段。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CDRFIELDTEMP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单字段模板（LST-CDRFIELDTEMP）_09896893.md`

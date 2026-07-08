@@ -65,4 +65,4 @@ RETCODE = 0  执行成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NRFTPSPEAK.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NRF每秒事务数峰值（DSP-NRFTPSPEAK）_76718584.md`

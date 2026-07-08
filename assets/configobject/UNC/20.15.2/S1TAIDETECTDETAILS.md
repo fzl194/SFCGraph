@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1TAIDETECTDETAILS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示S1-TAI对象寻呼流控状态明细(DSP-S1TAIDETECTDETAILS)_94695664.md`

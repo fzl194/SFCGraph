@@ -60,4 +60,4 @@ RMV IPAREAGPMEM: AREAID=1, IDTYPE=LAC, LAC="0x1234";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-IPAREAGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IP区域群成员(RMV-IPAREAGPMEM)_72345197.md`

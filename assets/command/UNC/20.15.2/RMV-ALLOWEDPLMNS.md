@@ -63,4 +63,4 @@ RMV ALLOWEDPLMNS:OBJNAME="objname001",MCC="123",MNC="02";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ALLOWEDPLMNS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除允许访问的PLMN（RMV-ALLOWEDPLMNS）_09653053.md`

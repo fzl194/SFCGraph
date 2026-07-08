@@ -28,4 +28,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DEASMCTXSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示去活操作状态（DSP-DEASMCTXSTATUS）_11712041.md`

@@ -69,4 +69,4 @@ ADD NFSERVICEVER: NFINSTANCENAME="AMF_Instance_0", SRVINSTANCEID="Service_Instan
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFSERVICEVER.md`
+- 原始手册：`evidence/UNC/20.15.2/添加NF服务版本信息（ADD-NFSERVICEVER）_09653292.md`

@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CHRRECORDANONY.md`
-- 原始手册：`evidence/UDG/20.15.2/CHRRECORDANONY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询CHR单据的匿名化配置。（LST-CHRRECORDANONY）_48922721.md`
+- 原始手册：`evidence/UDG/20.15.2/设置CHR单据的匿名化配置（SET-CHRRECORDANONY）_97242206.md`

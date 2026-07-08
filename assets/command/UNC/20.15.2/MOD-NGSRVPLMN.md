@@ -67,4 +67,4 @@ MOD NGSRVPLMN: PLMNIDX=0, NOID=0, MCC="123", MNC="46";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGSRVPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G-Serving-PLMN（MOD-NGSRVPLMN）_09653241.md`

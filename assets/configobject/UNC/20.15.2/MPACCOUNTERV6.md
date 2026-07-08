@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MPACCOUNTERV6.md`
+- 原始手册：`evidence/UNC/20.15.2/清除IPv6-MPAC策略匹配统计计数（RTR-MPACCOUNTERV6）_49961078.md`

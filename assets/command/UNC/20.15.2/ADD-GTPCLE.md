@@ -71,4 +71,4 @@ ADD GTPCLE: GROUPID=0, IPTYPE=TPTADDR_TYPE_IPV4, LEIPV4="192.168.1.1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GTPCLE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GTP-C本地实体(ADD-GTPCLE)_26145966.md`

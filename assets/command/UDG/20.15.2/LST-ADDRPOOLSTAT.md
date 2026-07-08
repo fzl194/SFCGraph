@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ADDRPOOLSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询地址池统计配置（LST-ADDRPOOLSTAT）_15006451.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PDNAUTOTSTSW.md`
-- 原始手册：`evidence/UDG/20.15.2/PDNAUTOTSTSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询PDN自动探测开关状态（LST-PDNAUTOTSTSW）_12872232.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PDN自动探测功能开关（SET-PDNAUTOTSTSW）_12635692.md`

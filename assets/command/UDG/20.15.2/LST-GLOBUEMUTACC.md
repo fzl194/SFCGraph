@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-GLOBUEMUTACC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局用户互访控制配置（LST-GLOBUEMUTACC）_82837774.md`

@@ -77,4 +77,4 @@ ADD ROAMCHGMODE: TMACCTYPE=UE5G_RAT4G, CTRLTYPE=APN_LEVEL, APN="huawei.com", ROA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ROAMCHGMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于漫游属性的计费接口选择方式（ADD-ROAMCHGMODE）_23622918.md`

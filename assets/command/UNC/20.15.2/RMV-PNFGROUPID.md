@@ -62,4 +62,4 @@ RMV PNFGROUPID:NFINSTANCEID="SMF_Instance_0", GROUPID="GROUP01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的群组信息（RMV-PNFGROUPID）_09653640.md`

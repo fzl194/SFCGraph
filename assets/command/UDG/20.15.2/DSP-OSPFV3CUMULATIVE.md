@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-OSPFV3CUMULATIVE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3统计信息（DSP-OSPFV3CUMULATIVE）_50121014.md`

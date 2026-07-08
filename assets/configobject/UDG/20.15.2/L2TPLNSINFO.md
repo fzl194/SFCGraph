@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/L2TPLNSINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/L2TPLNSINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/L2TPLNSINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/L2TPLNSINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/修改L2TP组的LNS信息（MOD-L2TPLNSINFO）_55841264.md`
+- 原始手册：`evidence/UDG/20.15.2/删除L2TP组中的LNS信息（RMV-L2TPLNSINFO）_61837959.md`
+- 原始手册：`evidence/UDG/20.15.2/查询L2TP组的LNS信息（LST-L2TPLNSINFO）_61600085.md`
+- 原始手册：`evidence/UDG/20.15.2/添加LNS与L2TP组绑定关系（ADD-L2TPLNSINFO）_55603814.md`

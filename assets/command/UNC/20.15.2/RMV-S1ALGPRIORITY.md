@@ -63,4 +63,4 @@ RMV S1ALGPRIORITY: ALGTYPE=CIPH, ALGCIPH=EEA1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-S1ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除S1模式加密和完整性算法优先级配置信息(RMV-S1ALGPRIORITY)_72345249.md`

@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCPPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/SCPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCP参数（LST-SCPPARA）_52469392.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SCP参数（SET-SCPPARA）_98868309.md`

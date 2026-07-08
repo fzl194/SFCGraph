@@ -62,4 +62,4 @@ ADD SMCAUSEGRP: CAUSEGRPID=126, CAUSEGRPNM="default1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMCAUSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SM原因值映射组配置（ADD-SMCAUSEGRP）_09651511.md`

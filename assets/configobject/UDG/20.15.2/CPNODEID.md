@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CPNODEID.md`
-- 原始手册：`evidence/UDG/20.15.2/CPNODEID.md`
-- 原始手册：`evidence/UDG/20.15.2/CPNODEID.md`
-- 原始手册：`evidence/UDG/20.15.2/CPNODEID.md`
+- 原始手册：`evidence/UDG/20.15.2/修改SMF的NodeID（MOD-CPNODEID）_16780316.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SMF的NodeID（RMV-CPNODEID）_16780317.md`
+- 原始手册：`evidence/UDG/20.15.2/显示SMF的NodeID（LST-CPNODEID）_16780318.md`
+- 原始手册：`evidence/UDG/20.15.2/添加SMF的NodeID（ADD-CPNODEID）_16780315.md`

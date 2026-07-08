@@ -57,4 +57,4 @@ CLR NGREQMSGCACHE:
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CLR-NGREQMSGCACHE.md`
+- 原始手册：`evidence/UNC/20.15.2/清空DNS客户端的缓存消息（CLR-NGREQMSGCACHE）_17555436.md`

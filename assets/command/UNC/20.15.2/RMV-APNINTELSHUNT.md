@@ -58,4 +58,4 @@ RMV APNINTELSHUNT: APN="huawei.com", INTELSHUNT="huawei1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNINTELSHUNT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN智能分流关键词（RMV-APNINTELSHUNT）_11820237.md`

@@ -65,4 +65,4 @@ RMV UPLOGICINTF: UPFINSTANCEID="upf_instance_1", ITFTYPE=N3, NETWORKINSTNAME="hu
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPLOGICINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF逻辑接口（RMV-UPLOGICINTF）_96805501.md`

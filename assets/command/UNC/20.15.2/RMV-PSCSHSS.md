@@ -57,4 +57,4 @@ RMV PSCSHSS: HSSHOST="HUAWEI";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PSCSHSS.md`
+- 原始手册：`evidence/UNC/20.15.2/删除联合接入HSS白名单(RMV-PSCSHSS)_86553345.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPRTSTATISTICS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP路由统计信息（DSP-BGPRTSTATISTICS）_00841273.md`

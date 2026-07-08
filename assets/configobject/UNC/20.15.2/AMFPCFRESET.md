@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFPCFRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFPCFRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF的PCF故障处理策略（LST-AMFPCFRESET）_71516431.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF的PCF故障处理策略（SET-AMFPCFRESET）_71436557.md`

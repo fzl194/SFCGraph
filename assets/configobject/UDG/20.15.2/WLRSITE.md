@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/WLRSITE.md`
-- 原始手册：`evidence/UDG/20.15.2/WLRSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询无线路由全局属性配置（LST-WLRSITE）_49961286.md`
+- 原始手册：`evidence/UDG/20.15.2/设置无线路由全局属性（SET-WLRSITE）_00841257.md`

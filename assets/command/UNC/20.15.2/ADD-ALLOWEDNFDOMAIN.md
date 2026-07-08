@@ -72,4 +72,4 @@ ADD ALLOWEDNFDOMAIN: INDEX=0, REGTYPE= RegService, NFINSTANCENAME="SMF_Instance_
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALLOWEDNFDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF或NF服务支持的域名（ADD-ALLOWEDNFDOMAIN）_09651550.md`

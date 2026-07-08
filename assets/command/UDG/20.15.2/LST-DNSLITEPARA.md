@@ -68,4 +68,4 @@ DNS规则状态控制开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DNSLITEPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/显示轻量DNS参数（LST-DNSLITEPARA）_35373562.md`

@@ -67,4 +67,4 @@ UPF组与Diameter本端主机组的绑定关系组名称  =  huawei
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UPFGLOCGBNDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF组与Diameter本端主机组的绑定关系组（LST-UPFGLOCGBNDGRP）_29660170.md`

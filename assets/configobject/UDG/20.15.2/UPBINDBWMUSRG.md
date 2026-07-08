@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPBINDBWMUSRG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPBINDBWMUSRG.md`
-- 原始手册：`evidence/UDG/20.15.2/UPBINDBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理用户组User-Profile绑定（RMV-UPBINDBWMUSRG）_82837492.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理用户组User-Profile绑定（ADD-UPBINDBWMUSRG）_82837491.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理用户组User-Profile绑定（LST-UPBINDBWMUSRG）_82837493.md`

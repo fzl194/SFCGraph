@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-PROTREDEFINE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询重定义协议（LST-PROTREDEFINE）_39554397.md`

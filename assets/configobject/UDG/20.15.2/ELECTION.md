@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ELECTION.md`
+- 原始手册：`evidence/UDG/20.15.2/显示集群选举实例信息（DSP-ELECTION）_09587911.md`

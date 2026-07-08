@@ -60,4 +60,4 @@ ADD TETHERINGTTL: TTLVALUE=56;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-TETHERINGTTL.md`
+- 原始手册：`evidence/UDG/20.15.2/配置tethering的TTL值（ADD-TETHERINGTTL）_96925966.md`

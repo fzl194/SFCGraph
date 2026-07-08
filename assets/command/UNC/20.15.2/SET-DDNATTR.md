@@ -66,4 +66,4 @@ SET DDNATTR: EBI=Enable, EBIVALUE=DefaultBearer, ARP=Enable, ARPVALUE=DefaultBea
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DDNATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DDN消息参数以及Delay信元处理开关（SET-DDNATTR）_09651485.md`

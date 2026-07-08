@@ -63,4 +63,4 @@ MOD SUBUPIPDOMAIN: UPNODE="upf_instance_1", IPDOMAIN="Domain_1", BINDINGTYPE=Vpn
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-SUBUPIPDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改当前UPF扩展类型绑定的IP域（MOD-SUBUPIPDOMAIN）_72004513.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFROUTINGINDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFROUTINGINDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFROUTINGINDRT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFROUTINGINDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改选路指示器路由（MOD-NRFROUTINGINDRT）_09652652.md`
+- 原始手册：`evidence/UNC/20.15.2/删除选路指示器路由（RMV-NRFROUTINGINDRT）_09651650.md`
+- 原始手册：`evidence/UNC/20.15.2/增加选路指示器路由（ADD-NRFROUTINGINDRT）_09651833.md`
+- 原始手册：`evidence/UNC/20.15.2/查询选路指示器路由（LST-NRFROUTINGINDRT）_09652642.md`

@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CACHESPECS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缓存数据规格（LST-CACHESPECS）_62337370.md`

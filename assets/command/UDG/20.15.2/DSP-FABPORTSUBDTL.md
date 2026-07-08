@@ -59,4 +59,4 @@ vusn-pod-0__103__0        192.168.1.1       host-1          gtp-pod-669d99bdb7-9
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-FABPORTSUBDTL.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Fabric端口亚健康通信质量信息（DSP-FABPORTSUBDTL）_76129914.md`

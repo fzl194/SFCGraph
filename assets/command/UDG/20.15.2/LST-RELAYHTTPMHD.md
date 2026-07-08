@@ -73,4 +73,4 @@ HTTP消息头名称  =  http01
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYHTTPMHD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继HTTP消息头（LST-RELAYHTTPMHD）_94632053.md`

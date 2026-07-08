@@ -95,4 +95,4 @@ SET NGMMPARA: T3522=6, N3522=4, T3550=6, N3550=4, T3560=6, N3560=4, T3570=6, N35
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NGMMPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G-MM协议参数（SET-NGMMPARA）_09653645.md`

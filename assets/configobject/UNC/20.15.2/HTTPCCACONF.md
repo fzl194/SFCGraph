@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HTTPCCACONF.md`
-- 原始手册：`evidence/UNC/20.15.2/HTTPCCACONF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HTTP-CCA属性（LST-HTTPCCACONF）_54738721.md`
+- 原始手册：`evidence/UNC/20.15.2/设置HTTP-CCA属性（SET-HTTPCCACONF）_54538297.md`

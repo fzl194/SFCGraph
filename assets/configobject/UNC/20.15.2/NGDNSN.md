@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGDNSN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSN.md`
-- 原始手册：`evidence/UNC/20.15.2/NGDNSN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS-NAPTR记录（MOD-NGDNSN）_09653687.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS-NAPTR记录（RMV-NGDNSN）_09652521.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS-NAPTR记录（ADD-NGDNSN）_09652291.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS-NAPTR记录（LST-NGDNSN）_09653672.md`

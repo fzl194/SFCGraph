@@ -58,4 +58,4 @@ RMV NGPRA: PRAID=16777211;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGPRA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-PRA（RMV-NGPRA）_44007663.md`

@@ -64,4 +64,4 @@ RMV SEGFILENOTIFY: SEGTYPE=IMSI, NFTYPE=CHF, NFGROUPID="nfgroup001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SEGFILENOTIFY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除号段文件通知记录（RMV-SEGFILENOTIFY）_50738961.md`

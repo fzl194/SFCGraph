@@ -69,4 +69,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGVNVLANMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于5G-LAN组的VLAN映射信息（LST-NGVNVLANMAP）_22918684.md`

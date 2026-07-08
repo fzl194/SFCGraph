@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SOFTPARAEXP.md`
-- 原始手册：`evidence/UNC/20.15.2/SOFTPARAEXP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询软件参数配置导出模式(LST-SOFTPARAEXP)_72345785.md`
+- 原始手册：`evidence/UNC/20.15.2/设置软件参数配置导出模式(SET-SOFTPARAEXP)_26305996.md`

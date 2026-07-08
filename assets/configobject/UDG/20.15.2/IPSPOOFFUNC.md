@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPSPOOFFUNC.md`
-- 原始手册：`evidence/UDG/20.15.2/IPSPOOFFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/展示IP防攻击功能状态（LST-IPSPOOFFUNC）_87728428.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IP防护开关（SET-IPSPOOFFUNC）_74589217.md`

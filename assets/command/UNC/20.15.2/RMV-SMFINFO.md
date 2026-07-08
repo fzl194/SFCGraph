@@ -55,4 +55,4 @@ RMV SMFINFO: SMFINSTANCENAME="SMF_Instance_0";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF信息（RMV-SMFINFO）_09653154.md`

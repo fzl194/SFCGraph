@@ -56,4 +56,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-SECALG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置安全算法（SET-SECALG）_01666249.md`

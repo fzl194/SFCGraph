@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/BIGSCTPRXNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/BIGSCTPRXNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询大端模式SCTP接收缓冲区参数(LST-BIGSCTPRXNUM)_61676129.md`
+- 原始手册：`evidence/UNC/20.15.2/设置大端模式SCTP接收缓冲区参数(SET-BIGSCTPRXNUM)_26238016.md`

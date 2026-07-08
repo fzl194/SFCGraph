@@ -61,4 +61,4 @@ ADD PNFLMFINFO: NFINSTANCEID="LMF_Instance_0", LMFID="0001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFLMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端LMF的信息（ADD-PNFLMFINFO）_02870338.md`

@@ -31,4 +31,4 @@ ACT RECYCLE命令用于回收本地地址池、组播地址池或远端地址池
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RECYCLE.md`
+- 原始手册：`evidence/UDG/20.15.2/回收地址（ACT-RECYCLE）_82837124.md`

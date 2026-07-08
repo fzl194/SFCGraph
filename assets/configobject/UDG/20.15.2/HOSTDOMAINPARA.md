@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HOSTDOMAINPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/HOSTDOMAINPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询主机域参数（LST-HOSTDOMAINPARA）_25540725.md`
+- 原始手册：`evidence/UDG/20.15.2/设置主机域参数（SET-HOSTDOMAINPARA）_39781320.md`

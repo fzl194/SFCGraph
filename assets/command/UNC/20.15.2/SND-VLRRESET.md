@@ -61,4 +61,4 @@ SND VLRRESET: MMENAME="MME1", VLRNAME="VLR1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SND-VLRRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/触发VLR向MME发送RESET消息（SND-VLRRESET）_11430785.md`

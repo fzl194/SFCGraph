@@ -77,4 +77,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-RMCONSUMERINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询路由管理消费者信息（DSP-RMCONSUMERINFO）_00601273.md`

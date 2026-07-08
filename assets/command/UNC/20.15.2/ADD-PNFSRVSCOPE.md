@@ -64,4 +64,4 @@ ADD PNFSRVSCOPE: NFINSTANCEID="SMF_Instance_0", SCOPENAME="CityA";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFSRVSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的服务区信息（ADD-PNFSRVSCOPE）_06625037.md`

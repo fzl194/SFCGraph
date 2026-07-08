@@ -68,4 +68,4 @@ RADIUS计费响应消息源IP/端口检查开关  =  允许
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSRSPADDRCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局RADIUS响应消息源端口检查配置（LST-RDSRSPADDRCHK）_09896745.md`

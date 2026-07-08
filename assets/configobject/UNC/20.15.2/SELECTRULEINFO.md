@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SELECTRULEINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTRULEINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTRULEINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/SELECTRULEINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改UPF选择规则信息（MOD-SELECTRULEINFO）_10553558.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF选择规则信息（RMV-SELECTRULEINFO）_44232741.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF选择规则信息（ADD-SELECTRULEINFO）_44232737.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF选择规则信息（LST-SELECTRULEINFO）_10513594.md`

@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DEACTIVESTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示去活操作状态（DSP-DEACTIVESTATE）_97358674.md`

@@ -61,4 +61,4 @@ ADD RESTOUSR: IMSIPRE="465231";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RESTOUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/增加容灾用户特征参数(ADD-RESTOUSR)_26305926.md`

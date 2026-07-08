@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`
-- 原始手册：`evidence/UDG/20.15.2/APPLYCOST.md`
+- 原始手册：`evidence/UDG/20.15.2/修改路由开销值设置（MOD-APPLYCOST）_00441481.md`
+- 原始手册：`evidence/UDG/20.15.2/删除设置路由开销值（RMV-APPLYCOST）_00840817.md`
+- 原始手册：`evidence/UDG/20.15.2/增加路由开销值设置（ADD-APPLYCOST）_49961534.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由开销值设置（LST-APPLYCOST）_50281586.md`

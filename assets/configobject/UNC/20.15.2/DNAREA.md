@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI服务区域（RMV-DNAREA）_24956646.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI服务区域（ADD-DNAREA）_24956616.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI服务区域（LST-DNAREA）_71516433.md`

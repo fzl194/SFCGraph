@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SNSSAIBWMUSRG.md`
-- 原始手册：`evidence/UDG/20.15.2/SNSSAIBWMUSRG.md`
-- 原始手册：`evidence/UDG/20.15.2/SNSSAIBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理用户组切片绑定（RMV-SNSSAIBWMUSRG）_04649171.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理用户组切片绑定（ADD-SNSSAIBWMUSRG）_16930642.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理用户组切片绑定（LST-SNSSAIBWMUSRG）_04150393.md`

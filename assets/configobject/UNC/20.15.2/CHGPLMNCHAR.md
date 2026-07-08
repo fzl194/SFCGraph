@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGPLMNCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PLMN的计费属性参数(LST-CHGPLMNCHAR)_72344991.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PLMN的计费属性参数(SET-CHGPLMNCHAR)_26305204.md`

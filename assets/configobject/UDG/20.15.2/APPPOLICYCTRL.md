@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPPOLICYCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/APPPOLICYCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/APPPOLICYCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/APPPOLICYCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基于应用的质差上报策略（MOD-APPPOLICYCTRL）_15739989.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于应用的质差上报策略（RMV-APPPOLICYCTRL）_09982390.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于应用的质差上报策略（ADD-APPPOLICYCTRL）_10221264.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基于应用的质差上报策略（LST-APPPOLICYCTRL）_15501059.md`

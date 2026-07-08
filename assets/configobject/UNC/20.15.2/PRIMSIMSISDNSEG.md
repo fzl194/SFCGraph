@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PRIMSIMSISDNSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/PRIMSIMSISDNSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/PRIMSIMSISDNSEG.md`
-- 原始手册：`evidence/UNC/20.15.2/PRIMSIMSISDNSEG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改代理IMSI_MSISDN号段（MOD-PRIMSIMSISDNSEG）_88613385.md`
+- 原始手册：`evidence/UNC/20.15.2/删除代理IMSI_MSISDN号段（RMV-PRIMSIMSISDNSEG）_88733229.md`
+- 原始手册：`evidence/UNC/20.15.2/增加代理IMSI_MSISDN号段（ADD-PRIMSIMSISDNSEG）_42853258.md`
+- 原始手册：`evidence/UNC/20.15.2/查询代理IMSI_MSISDN号段（LST-PRIMSIMSISDNSEG）_88613383.md`

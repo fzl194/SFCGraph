@@ -66,4 +66,4 @@ OSPF进程号  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFDNSUMRTID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询特定路由器禁止检查Summary-LSA的DN比特位配置（LST-OSPFDNSUMRTID）_00440721.md`

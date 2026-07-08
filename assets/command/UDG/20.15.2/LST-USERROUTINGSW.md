@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-USERROUTINGSW.md`
+- 原始手册：`evidence/UDG/20.15.2/显示用户路由可靠性配置（LST-USERROUTINGSW）_19881178.md`

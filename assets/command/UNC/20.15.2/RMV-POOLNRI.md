@@ -57,4 +57,4 @@ RMV POOLNRI: POOLID=1, NRIV=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-POOLNRI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除POOL区NRI配置信息(RMV-POOLNRI)_26305916.md`

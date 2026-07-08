@@ -65,4 +65,4 @@ CPU主频  =  2100
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RUCPUINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询RU-CPU信息(LST-RUCPUINFO)_04847994.md`

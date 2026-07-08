@@ -47,4 +47,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-REMINDTIME.md`
+- 原始手册：`evidence/UDG/20.15.2/修改证书到期提醒时间（MOD-REMINDTIME）_92045220.md`

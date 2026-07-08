@@ -61,4 +61,4 @@ RMV SUBUPIPDOMAIN: UPNODE="upf_instance_1", BINDINGTYPE=VpnInstance, VPNINSTANCE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SUBUPIPDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除当前UPF扩展类型绑定的IP域（RMV-SUBUPIPDOMAIN）_23804526.md`

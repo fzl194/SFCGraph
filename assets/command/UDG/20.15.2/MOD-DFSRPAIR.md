@@ -58,4 +58,4 @@ MOD DFSRPAIR: DFSRPAIRID=1, DFSRPAIRMODE=FRER_SRC_MAC;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-DFSRPAIR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改双发选收结对配置（MOD-DFSRPAIR）_26514779.md`

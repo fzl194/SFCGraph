@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/HOMESMFINSTID.md`
-- 原始手册：`evidence/UNC/20.15.2/HOMESMFINSTID.md`
-- 原始手册：`evidence/UNC/20.15.2/HOMESMFINSTID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定归属地SMF实例标识（RMV-HOMESMFINSTID）_23782810.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定归属地SMF实例标识（ADD-HOMESMFINSTID）_70382281.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定归属地SMF实例标识（LST-HOMESMFINSTID）_70382313.md`

@@ -64,4 +64,4 @@ ADD VUPFIDBINDDNAI:VUPFINSTANCEID="v_upf1",DNAI="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-VUPFIDBINDDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加虚拟UPF实例标识的DNAI（ADD-VUPFIDBINDDNAI）_76311127.md`

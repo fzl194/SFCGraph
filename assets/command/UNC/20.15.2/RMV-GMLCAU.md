@@ -61,4 +61,4 @@ RMV GMLCAU: GMLCID=1, CLTTYPE=VALUE_ADDED_SERVICES,SERTYPE=3;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GMLCAU.md`
+- 原始手册：`evidence/UNC/20.15.2/删除GMLC权限配置(RMV-GMLCAU)_72225473.md`

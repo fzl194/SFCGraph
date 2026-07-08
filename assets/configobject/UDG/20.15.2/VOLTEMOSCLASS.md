@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSCLASS.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSCLASS.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSCLASS.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS分类区间值（RTR-VOLTEMOSCLASS）_69178844.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MOS分类区间值（LST-VOLTEMOSCLASS）_57738483.md`
+- 原始手册：`evidence/UDG/20.15.2/配置MOS分类的区间值（SET-VOLTEMOSCLASS）_69418602.md`

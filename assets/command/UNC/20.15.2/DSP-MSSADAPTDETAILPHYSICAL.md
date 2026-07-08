@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MSSADAPTDETAILPHYSICAL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询适配层物理表详细信息（DSP-MSSADAPTDETAILPHYSICAL）_00865809.md`

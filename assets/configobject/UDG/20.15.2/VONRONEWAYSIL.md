@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VONRONEWAYSIL.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRONEWAYSIL.md`
-- 原始手册：`evidence/UDG/20.15.2/VONRONEWAYSIL.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复单通检测的系统初始设置值（RTR-VONRONEWAYSIL）_94614219.md`
+- 原始手册：`evidence/UDG/20.15.2/查询单通检测信息（LST-VONRONEWAYSIL）_94774061.md`
+- 原始手册：`evidence/UDG/20.15.2/设置单通检测信息（SET-VONRONEWAYSIL）_94974005.md`

@@ -71,4 +71,4 @@ CDN认证策略名称  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYTLSCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继业务TLS认证配置（LST-RELAYTLSCFG）_43992594.md`

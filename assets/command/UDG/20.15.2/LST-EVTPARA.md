@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-EVTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询策略参数值（LST-EVTPARA）_36260906.md`

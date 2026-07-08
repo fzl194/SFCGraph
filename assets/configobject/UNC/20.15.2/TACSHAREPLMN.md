@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TACSHAREPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/TACSHAREPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/TACSHAREPLMN.md`
-- 原始手册：`evidence/UNC/20.15.2/TACSHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于区域的PLMN管理(MOD-TACSHAREPLMN)_19262665.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于区域的PLMN管理(RMV-TACSHAREPLMN)_83862446.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于区域的PLMN管理(ADD-TACSHAREPLMN)_84022126.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于区域的PLMN管理(LST-TACSHAREPLMN)_19348221.md`

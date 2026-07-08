@@ -68,4 +68,4 @@ VNI = 258
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGVNBINDVXLAN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN实例绑定VXLAN组（LST-NGVNBINDVXLAN）_12222377.md`

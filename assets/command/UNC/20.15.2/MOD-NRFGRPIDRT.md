@@ -60,4 +60,4 @@ MOD NRFGRPIDRT:NFTYPE=PCF,NFGROUPID="nfgroupid01",NEXTNRFGRPNAME="L-NRF2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NRFGRPIDRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NF组标识路由（MOD-NRFGRPIDRT）_09653150.md`

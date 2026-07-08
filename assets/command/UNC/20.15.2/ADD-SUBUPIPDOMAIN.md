@@ -64,4 +64,4 @@ ADD SUBUPIPDOMAIN: UPNODE="upf_instance_1", IPDOMAIN="Domain_0", BINDINGTYPE=Vpn
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SUBUPIPDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加当前UPF扩展类型绑定的IP域（ADD-SUBUPIPDOMAIN）_71924421.md`

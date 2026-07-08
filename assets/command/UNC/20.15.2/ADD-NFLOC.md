@@ -70,4 +70,4 @@ ADD NFLOC: NFTYPE=NfAMF, TGTNFTYPE=SMF, LOCTYPE=PREFERRED_LOCALITY, PREFERLOC="D
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加目标NF发现和选择的位置匹配信息（ADD-NFLOC）_09652578.md`

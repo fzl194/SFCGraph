@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EIR.md`
-- 原始手册：`evidence/UNC/20.15.2/EIR.md`
-- 原始手册：`evidence/UNC/20.15.2/EIR.md`
-- 原始手册：`evidence/UNC/20.15.2/EIR.md`
+- 原始手册：`evidence/UNC/20.15.2/修改EIR配置(MOD-EIR)_72225133.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EIR配置(RMV-EIR)_26145452.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EIR配置(ADD-EIR)_72345049.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EIR配置(LST-EIR)_26305264.md`

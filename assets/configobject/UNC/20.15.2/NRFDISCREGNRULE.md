@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFDISCREGNRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFDISCREGNRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询服务发现区域识别规则（LST-NRFDISCREGNRULE）_71436539.md`
+- 原始手册：`evidence/UNC/20.15.2/设置服务发现区域识别规则（SET-NRFDISCREGNRULE）_24956654.md`

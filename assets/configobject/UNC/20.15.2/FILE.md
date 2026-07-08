@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FILE.md`
-- 原始手册：`evidence/UNC/20.15.2/FILE.md`
-- 原始手册：`evidence/UNC/20.15.2/FILE.md`
+- 原始手册：`evidence/UNC/20.15.2/文件传输（FTR-FILE）_59103901.md`
+- 原始手册：`evidence/UNC/20.15.2/多节点文件同步（SYNC-FILE）_39188701.md`
+- 原始手册：`evidence/UNC/20.15.2/查询文件信息（DSP-FILE）_92118410.md`

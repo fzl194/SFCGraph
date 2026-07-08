@@ -52,4 +52,4 @@ UBLK RU: SCALEGROUP="SG1_CSDB_ForCommon";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UBLK-RU.md`
+- 原始手册：`evidence/UNC/20.15.2/解闭CSDB-RU（UBLK-RU）_36508137.md`

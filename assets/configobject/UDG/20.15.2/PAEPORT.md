@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PAEPORT.md`
-- 原始手册：`evidence/UDG/20.15.2/PAEPORT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示PAE端口统计信息（DSP-PAEPORT）_92520027.md`
+- 原始手册：`evidence/UDG/20.15.2/清除PAE端口统计信息（RTR-PAEPORT）_92520050.md`

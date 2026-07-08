@@ -69,4 +69,4 @@ URI地址表扫描间隔  =  60
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NFMGMTTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF管理模块的定时器配置（LST-NFMGMTTIMER）_01006689.md`

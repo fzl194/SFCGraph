@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFIPWHITELST.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIPWHITELST.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFIPWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF-IP白名单（RMV-NRFIPWHITELST）_75909313.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-IP白名单（ADD-NRFIPWHITELST）_29869620.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-IP白名单（LST-NRFIPWHITELST）_29709830.md`

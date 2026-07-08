@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFQOSCAP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFQOSCAP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFQOSCAP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFQOSCAP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QosFlow-QoS限制的配置（MOD-SMFQOSCAP）_76239568.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QosFlow-QoS限制的配置（RMV-SMFQOSCAP）_26279741.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QosFlow-QoS限制的配置（ADD-SMFQOSCAP）_26279737.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QosFlow-QoS限制的配置（LST-SMFQOSCAP）_75920012.md`

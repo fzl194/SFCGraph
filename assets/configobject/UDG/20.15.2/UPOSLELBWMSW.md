@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPOSLELBWMSW.md`
-- 原始手册：`evidence/UDG/20.15.2/UPOSLELBWMSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询User-Profile操作系统级带宽管理开关（LST-UPOSLELBWMSW）_82837496.md`
+- 原始手册：`evidence/UDG/20.15.2/设置User-Profile操作系统级带宽管理开关（SET-UPOSLELBWMSW）_82837495.md`

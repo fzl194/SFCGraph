@@ -65,4 +65,4 @@ ADD FAULTUPBINDRAN: RANGRPNAME="group1", UPFGRPNAME="group2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-FAULTUPBINDRAN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N3接口故障网元组绑定（ADD-FAULTUPBINDRAN）_93542772.md`

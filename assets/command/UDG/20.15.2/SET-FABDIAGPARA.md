@@ -55,4 +55,4 @@ SET FABDIAGPARA: PODSUBHEALTHD=50;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-FABDIAGPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置Pod-Fabric平面亚健康诊断参数（SET-FABDIAGPARA）_48110865.md`

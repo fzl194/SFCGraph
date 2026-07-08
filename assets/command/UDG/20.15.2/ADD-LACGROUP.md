@@ -58,4 +58,4 @@ ADD LACGROUP:LACGROUPNAME="beijing";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-LACGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/添加一个新的LAC组（ADD-LACGROUP）_82837193.md`

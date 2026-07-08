@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGGNCCCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGGNCCCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGGNCCCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGGNCCCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Gn接口计费属性选择策略(MOD-CHGGNCCCFG)_72225051.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Gn接口计费属性选择策略(RMV-CHGGNCCCFG)_26145370.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gn接口计费属性选择策略(ADD-CHGGNCCCFG)_72344971.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Gn接口计费属性选择策略(LST-CHGGNCCCFG)_26305186.md`

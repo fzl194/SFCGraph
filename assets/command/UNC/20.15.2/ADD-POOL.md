@@ -65,4 +65,4 @@ ADD POOL: POOLID=1, NRILENGTH=5;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-POOL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加POOL配置信息(ADD-POOL)_72225781.md`

@@ -54,4 +54,4 @@ RMV KEYPAIRLABEL:KEYTYPE=DSA,KEYPAIRLABEL="hw_key";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-KEYPAIRLABEL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DSA_ECC密钥对标签（RMV-KEYPAIRLABEL）_50281778.md`

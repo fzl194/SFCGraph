@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFDSCP.md`
-- 原始手册：`evidence/UNC/20.15.2/IFDSCP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口DSCP配置(LST-IFDSCP)_72345811.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口DSCP配置(SET-IFDSCP)_26306022.md`

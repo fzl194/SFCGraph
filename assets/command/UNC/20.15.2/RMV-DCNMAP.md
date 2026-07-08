@@ -57,4 +57,4 @@ RMV DCNMAP: DCNID=1, BGNUEUSAGETYPE=150;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DCNMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DCN映射关系(RMV-DCNMAP)_72345429.md`

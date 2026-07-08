@@ -54,4 +54,4 @@ RMV OSPFDNSUMRTID:PROCID=1,ROUTERID="10.2.2.2";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-OSPFDNSUMRTID.md`
+- 原始手册：`evidence/UDG/20.15.2/删除特定路由器禁止检查Summary-LSA的DN比特位配置（RMV-OSPFDNSUMRTID）_49802098.md`

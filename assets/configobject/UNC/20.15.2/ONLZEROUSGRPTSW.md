@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ONLZEROUSGRPTSW.md`
-- 原始手册：`evidence/UNC/20.15.2/ONLZEROUSGRPTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询在线业务零用量容器上报方式（LST-ONLZEROUSGRPTSW）_89347055.md`
+- 原始手册：`evidence/UNC/20.15.2/设置在线业务零用量容器上报方式（SET-ONLZEROUSGRPTSW）_43466960.md`

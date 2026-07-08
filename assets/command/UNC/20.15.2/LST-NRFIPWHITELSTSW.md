@@ -62,4 +62,4 @@ NF IP白名单开关  =  打开
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NRFIPWHITELSTSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-IP白名单开关（LST-NRFIPWHITELSTSW）_75789401.md`

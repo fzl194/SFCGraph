@@ -66,4 +66,4 @@ Ping开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UEPINGINF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询UE-Ping逻辑接口开关（LST-UEPINGINF）_79568176.md`

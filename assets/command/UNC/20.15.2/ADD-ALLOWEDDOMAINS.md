@@ -67,4 +67,4 @@ ADD ALLOWEDDOMAINS: OBJNAME="objname001", ALLOWEDFQDN="huawei1.com.apn.epc.mnc45
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALLOWEDDOMAINS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加允许访问的域名（ADD-ALLOWEDDOMAINS）_09652490.md`

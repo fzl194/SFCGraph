@@ -68,4 +68,4 @@ RD过滤器节点号  =  10
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RDSTRING.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RD字符（LST-RDSTRING）_50121066.md`

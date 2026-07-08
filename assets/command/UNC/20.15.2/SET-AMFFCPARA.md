@@ -72,4 +72,4 @@ SET AMFFCPARA:CPUTHD=70,FCACT=DISCARD;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-AMFFCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF自保流控参数（SET-AMFFCPARA）_25121209.md`

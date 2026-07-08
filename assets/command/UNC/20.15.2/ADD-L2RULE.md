@@ -60,4 +60,4 @@ ADD L2RULE: L2RULENAME="rule1", QOSPROPNAME="qosprop1", L2FILTERNAME="filter1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-L2RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加层二规则（ADD-L2RULE）_23622906.md`

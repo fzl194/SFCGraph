@@ -30,5 +30,5 @@ SET SGWAPNCHGMETH命令用来控制APN下的用户是否产生S-GW话单。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWAPNCHGMETH.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWAPNCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-APN计费方式（LST-SGWAPNCHGMETH）_09896993.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SGW-APN计费方式（SET-SGWAPNCHGMETH）_09896992.md`

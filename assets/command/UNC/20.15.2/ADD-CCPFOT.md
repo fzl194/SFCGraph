@@ -66,4 +66,4 @@ ADD CCPFOT: FOTNM="ccpfot1", FOENABLE=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CCPFOT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加融合计费Proxy-Failover模板（ADD-CCPFOT）_45110907.md`

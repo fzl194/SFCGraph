@@ -85,4 +85,4 @@ Trigger中是否支持填写AbnormalRelease  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CNVRGDCHGPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合计费全局参数（LST-CNVRGDCHGPARA）_09654403.md`

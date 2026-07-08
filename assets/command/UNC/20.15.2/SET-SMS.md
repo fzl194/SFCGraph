@@ -70,4 +70,4 @@ SET SMS: RC=1, PRI=1, DC=1, PT=9, MT=18, SMSMRT=3, TR1=20000, TR2=6500, TR3=6500
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMS配置信息(SET-SMS)_72345329.md`

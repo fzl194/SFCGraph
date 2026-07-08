@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RELAYDNSSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYDNSSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYDNSSERVER.md`
-- 原始手册：`evidence/UDG/20.15.2/RELAYDNSSERVER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改媒体中继的DNS属性（MOD-RELAYDNSSERVER）_17394317.md`
+- 原始手册：`evidence/UDG/20.15.2/删除媒体中继的DNS属性（RMV-RELAYDNSSERVER）_66956356.md`
+- 原始手册：`evidence/UDG/20.15.2/增加媒体中继的DNS属性（ADD-RELAYDNSSERVER）_17630205.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继的DNS属性（LST-RELAYDNSSERVER）_67192106.md`

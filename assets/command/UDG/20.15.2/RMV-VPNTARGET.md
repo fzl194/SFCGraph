@@ -57,4 +57,4 @@ RMV VPNTARGET:VRFNAME="vrf1", AFTYPE=ipv4uni, VRFRTTYPE=export_extcommunity,VRFR
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-VPNTARGET.md`
+- 原始手册：`evidence/UDG/20.15.2/删除VPN-Target（RMV-VPNTARGET）_49961586.md`

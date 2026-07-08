@@ -51,4 +51,4 @@ RMV PBUFREUSE5GC:PODTYPE="aa",POOLNAME="PAE";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-PBUFREUSE5GC.md`
+- 原始手册：`evidence/UDG/20.15.2/删除pbuf重用检测开关设置（RMV-PBUFREUSE5GC）_99779937.md`

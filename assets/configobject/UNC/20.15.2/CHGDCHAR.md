@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHGDCHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGDCHAR.md`
-- 原始手册：`evidence/UNC/20.15.2/CHGDCHAR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除缺省计费属性参数(RMV-CHGDCHAR)_72225061.md`
+- 原始手册：`evidence/UNC/20.15.2/增加缺省计费属性参数(ADD-CHGDCHAR)_26145380.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缺省计费属性参数(LST-CHGDCHAR)_26305196.md`

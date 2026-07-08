@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPGPATTIMER.md`
-- 原始手册：`evidence/UNC/20.15.2/UPGPATTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/修改升级补丁定时器（SET-UPGPATTIMER）_30310144.md`
+- 原始手册：`evidence/UNC/20.15.2/查询升级补丁定时器（LST-UPGPATTIMER）_30310142.md`

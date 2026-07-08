@@ -68,4 +68,4 @@ RETCODE = 0  执行成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NSEUSR.md`
+- 原始手册：`evidence/UNC/20.15.2/显示删除NSE列表下的用户任务运行状态(DSP-NSEUSR)_72345623.md`

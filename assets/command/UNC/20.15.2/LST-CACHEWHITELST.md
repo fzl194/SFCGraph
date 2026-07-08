@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CACHEWHITELST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询异网白名单PLMN信息（LST-CACHEWHITELST）_17997837.md`

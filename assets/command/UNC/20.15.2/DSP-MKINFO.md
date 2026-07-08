@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-MKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询主密钥信息（DSP-MKINFO）_59103373.md`

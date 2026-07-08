@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NWNAMEFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NWNAMEFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询运营商名称信息功能(LST-NWNAMEFUNC)_45191233.md`
+- 原始手册：`evidence/UNC/20.15.2/设置运营商名称信息功能(SET-NWNAMEFUNC)_45110281.md`

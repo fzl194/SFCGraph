@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNGWPROXYFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNGWPROXYFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNGWPROXYFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNGWPROXYFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改APN网关Proxy功能配置（MOD-APNGWPROXYFUNC）_88733223.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN网关Proxy功能配置（RMV-APNGWPROXYFUNC）_88733225.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN网关Proxy功能配置（ADD-APNGWPROXYFUNC）_42853254.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN网关Proxy功能配置（LST-APNGWPROXYFUNC）_42693468.md`

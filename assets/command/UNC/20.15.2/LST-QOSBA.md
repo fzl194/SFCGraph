@@ -72,4 +72,4 @@ default   8021p     4          af4         绿
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-QOSBA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS-BA（LST-QOSBA）_00441337.md`

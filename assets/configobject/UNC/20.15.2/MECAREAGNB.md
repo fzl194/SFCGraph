@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MECAREAGNB.md`
-- 原始手册：`evidence/UNC/20.15.2/MECAREAGNB.md`
-- 原始手册：`evidence/UNC/20.15.2/MECAREAGNB.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G-MEC-gNodeB信息（RMV-MECAREAGNB）_85251941.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G-MEC-gNodeB信息（ADD-MECAREAGNB）_34732056.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-MEC-gNodeB信息（LST-MECAREAGNB）_84812257.md`

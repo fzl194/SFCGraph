@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/FABRICINALARMCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/FABRICINALARMCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE告警配置（LST-FABRICINALARMCFG）_38263899.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE告警配置（SET-FABRICINALARMCFG）_38482773.md`

@@ -58,4 +58,4 @@ RMV SNSSAIBWMUSRG: USERGROUPNAME="test", SST=1, SD="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SNSSAIBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理用户组切片绑定（RMV-SNSSAIBWMUSRG）_04649171.md`

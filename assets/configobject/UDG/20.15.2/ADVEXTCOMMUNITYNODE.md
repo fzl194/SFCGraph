@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADVEXTCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ADVEXTCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ADVEXTCOMMUNITYNODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ADVEXTCOMMUNITYNODE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改高级扩展团体属性过滤器节点（MOD-ADVEXTCOMMUNITYNODE）_00866033.md`
+- 原始手册：`evidence/UDG/20.15.2/删除高级扩展团体属性过滤器节点（RMV-ADVEXTCOMMUNITYNODE）_00865957.md`
+- 原始手册：`evidence/UDG/20.15.2/增加高级扩展团体属性过滤器节点（ADD-ADVEXTCOMMUNITYNODE）_00865625.md`
+- 原始手册：`evidence/UDG/20.15.2/查询高级扩展团体属性过滤器节点（LST-ADVEXTCOMMUNITYNODE）_49802454.md`

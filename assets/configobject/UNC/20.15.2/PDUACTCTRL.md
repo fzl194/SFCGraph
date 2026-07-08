@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PDUACTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUACTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUACTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/PDUACTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PDU会话激活控制参数（MOD-PDUACTCTRL）_54841333.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PDU会话激活控制参数（RMV-PDUACTCTRL）_19641134.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PDU会话激活控制参数（ADD-PDUACTCTRL）_19641130.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PDU会话激活控制参数（LST-PDUACTCTRL）_19483038.md`

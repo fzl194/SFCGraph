@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSBA.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSBA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QoS-BA（LST-QOSBA）_00441337.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS-BA（SET-QOSBA）_00441521.md`

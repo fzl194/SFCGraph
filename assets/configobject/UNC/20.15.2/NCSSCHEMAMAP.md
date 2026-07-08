@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NCSSCHEMAMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示应用模型间模型映射关联关系（DSP-NCSSCHEMAMAP）_59103881.md`

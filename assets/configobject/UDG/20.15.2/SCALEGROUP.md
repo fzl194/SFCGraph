@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SCALEGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ScaleGroup信息(DSP-SCALEGROUP)_29626972.md`

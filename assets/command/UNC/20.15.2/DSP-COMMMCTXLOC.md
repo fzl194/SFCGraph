@@ -77,4 +77,4 @@ RETCODE = 0  Operation succeeded
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-COMMMCTXLOC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示移动管理位置信息上下文（DSP-COMMMCTXLOC）_77419800.md`

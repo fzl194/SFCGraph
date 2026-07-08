@@ -53,4 +53,4 @@ RMV AUTOSCALINGSERVICE:SERVICENAME="service4";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AUTOSCALINGSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除自动化配置参数（RMV-AUTOSCALINGSERVICE）_49961346.md`

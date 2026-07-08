@@ -75,4 +75,4 @@ CG IP地址  =  192.168.0.2
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CGBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CG绑定关系（LST-CGBINDING）_09896877.md`

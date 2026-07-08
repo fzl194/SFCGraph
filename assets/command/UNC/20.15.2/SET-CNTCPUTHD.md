@@ -57,4 +57,4 @@ SET CNTCPUTHD: WARNTHD=90,RECVTHD=80;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CNTCPUTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容器CPU告警阈值（SET-CNTCPUTHD）_32743962.md`

@@ -63,4 +63,4 @@ MOD NRFNSRT: SST=0, SD="000001", NFTYPE=SMF, NEXTNRFGRPNAME="L-NRF2";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NRFNSRT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络切片的路由（MOD-NRFNSRT）_86184263.md`

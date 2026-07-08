@@ -55,4 +55,4 @@ RMV SMFFUNCTION: INSTANCEID="Instanceid01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF功能实例信息（RMV-SMFFUNCTION）_09651399.md`

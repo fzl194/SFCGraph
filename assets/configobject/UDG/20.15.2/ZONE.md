@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ZONE.md`
-- 原始手册：`evidence/UDG/20.15.2/ZONE.md`
-- 原始手册：`evidence/UDG/20.15.2/ZONE.md`
-- 原始手册：`evidence/UDG/20.15.2/ZONE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改区域（MOD-ZONE）_81694199.md`
+- 原始手册：`evidence/UDG/20.15.2/删除区域（RMV-ZONE）_61692890.md`
+- 原始手册：`evidence/UDG/20.15.2/增加区域（ADD-ZONE）_14777353.md`
+- 原始手册：`evidence/UDG/20.15.2/查询区域（LST-ZONE）_12206839.md`

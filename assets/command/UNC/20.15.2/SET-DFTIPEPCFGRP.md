@@ -65,4 +65,4 @@ SET DFTIPEPCFGRP: PRIMIPEPCFGRP="PCF1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-DFTIPEPCFGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局默认智能PCF组（SET-DFTIPEPCFGRP）_17806957.md`

@@ -60,4 +60,4 @@ SET FAULTLNKDETCFG: SWITCH=ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-FAULTLNKDETCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置故障链路探测功能(SET-FAULTLNKDETCFG)_26145872.md`

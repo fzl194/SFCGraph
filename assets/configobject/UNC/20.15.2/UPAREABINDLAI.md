@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDLAI.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDLAI.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREABINDLAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF服务区名称绑定的LAI范围（RMV-UPAREABINDLAI）_09651353.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF服务区名称绑定的LAI范围（ADD-UPAREABINDLAI）_09653651.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF服务区名称绑定的LAI范围（LST-UPAREABINDLAI）_09653838.md`

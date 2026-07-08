@@ -75,4 +75,4 @@ MME组识别码  =  0001
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MMEGP.md`
+- 原始手册：`evidence/UNC/20.15.2/显示MME群组(LST-MMEGP)_26145622.md`

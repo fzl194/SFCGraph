@@ -76,4 +76,4 @@ IPV6掩码长度  =  0
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RELAYIPSECTION.md`
+- 原始手册：`evidence/UDG/20.15.2/查询媒体中继IP段（LST-RELAYIPSECTION）_24142605.md`

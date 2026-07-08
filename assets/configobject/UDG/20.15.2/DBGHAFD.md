@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DBGHAFD.md`
+- 原始手册：`evidence/UDG/20.15.2/显示HAFD调试命令结果（DSP-DBGHAFD）_94730404.md`

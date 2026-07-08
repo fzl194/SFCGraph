@@ -57,4 +57,4 @@ RMV ADCPARA:FLOWFILTERNAME="testflowfiltername";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ADCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除ADC参数（RMV-ADCPARA）_65997000.md`

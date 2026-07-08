@@ -58,4 +58,4 @@ ADD NGMDTPLMN: PLMNIDX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGMDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加最小化路测的PLMN（ADD-NGMDTPLMN）_00293510.md`

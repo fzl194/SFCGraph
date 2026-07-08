@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ULCLAPNDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLAPNDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLAPNDPMODE.md`
-- 原始手册：`evidence/UNC/20.15.2/ULCLAPNDPMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改指定APN的ULCL部署模式（MOD-ULCLAPNDPMODE）_61884593.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定APN的ULCL部署模式（RMV-ULCLAPNDPMODE）_08725096.md`
+- 原始手册：`evidence/UNC/20.15.2/增加指定APN的ULCL部署模式（ADD-ULCLAPNDPMODE）_08884932.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定APN的ULCL部署模式（LST-ULCLAPNDPMODE）_62084037.md`

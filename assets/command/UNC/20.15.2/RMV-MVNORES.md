@@ -63,4 +63,4 @@ RMV MVNORES: MVNOID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-MVNORES.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MVNO资源配置信息(RMV-MVNORES)_26146066.md`

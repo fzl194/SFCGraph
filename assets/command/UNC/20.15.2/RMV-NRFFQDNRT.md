@@ -60,4 +60,4 @@ RMV NRFFQDNRT: NFTYPE=SMF, FQDNSUFFIX="huawei1.com.apn.epc.mnc456.mcc123.3gppnet
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NRFFQDNRT.md`
+- 原始手册：`evidence/UNC/20.15.2/删除FQDN路由（RMV-NRFFQDNRT）_44007684.md`

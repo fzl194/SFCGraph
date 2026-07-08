@@ -58,4 +58,4 @@ NP交换网口检测超时检测倍数  =  15
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NPLINKCHECK.md`
+- 原始手册：`evidence/UDG/20.15.2/查询全局NP交换网口检测配置（LST-NPLINKCHECK）_94730467.md`

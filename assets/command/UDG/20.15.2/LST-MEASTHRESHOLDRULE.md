@@ -60,4 +60,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MEASTHRESHOLDRULE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询话统阈值规则(LST-MEASTHRESHOLDRULE)_75782757.md`

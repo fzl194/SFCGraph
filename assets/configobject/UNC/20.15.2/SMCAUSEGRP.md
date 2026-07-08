@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/SMCAUSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SM原因值映射组配置（MOD-SMCAUSEGRP）_09652650.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SM原因值映射组配置（RMV-SMCAUSEGRP）_09654432.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SM原因值映射组配置（ADD-SMCAUSEGRP）_09651511.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SM原因值映射组配置（LST-SMCAUSEGRP）_09653123.md`

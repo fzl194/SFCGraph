@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDN2CID.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDN2CID.md`
-- 原始手册：`evidence/UNC/20.15.2/DNAREABINDN2CID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNAI服务区名称绑定的5G-Cell-ID范围（RMV-DNAREABINDN2CID）_71436551.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNAI服务区名称绑定的5G-Cell-ID范围（ADD-DNAREABINDN2CID）_71436521.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNAI服务区名称绑定的5G-Cell-ID范围（LST-DNAREABINDN2CID）_24956632.md`

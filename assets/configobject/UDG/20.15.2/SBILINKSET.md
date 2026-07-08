@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SBILINKSET.md`
-- 原始手册：`evidence/UDG/20.15.2/SBILINKSET.md`
+- 原始手册：`evidence/UDG/20.15.2/删除服务化接口链路集（DEL-SBILINKSET）_83653654.md`
+- 原始手册：`evidence/UDG/20.15.2/显示服务化接口链路集信息（DSP-SBILINKSET）_84132098.md`

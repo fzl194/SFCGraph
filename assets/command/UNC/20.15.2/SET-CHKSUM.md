@@ -67,4 +67,4 @@ SET CHKSUM: NETPURPOSE=Ga, RCVUDPCHKSW=OFF, SENDUDPCHKSW=OFF;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-CHKSUM.md`
+- 原始手册：`evidence/UNC/20.15.2/设置校验和开关（SET-CHKSUM）_51174297.md`

@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFDNSCHECKTYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/AFDNSCHECKTYPE.md`
-- 原始手册：`evidence/UDG/20.15.2/AFDNSCHECKTYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除需要进行防欺诈检查的DNS报文类型（RMV-AFDNSCHECKTYPE）_82837804.md`
+- 原始手册：`evidence/UDG/20.15.2/增加需要进行防欺诈检查的DNS报文类型（ADD-AFDNSCHECKTYPE）_82837803.md`
+- 原始手册：`evidence/UDG/20.15.2/查询需要进行防欺诈检查的DNS报文类型（LST-AFDNSCHECKTYPE）_82837805.md`

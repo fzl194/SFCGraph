@@ -66,4 +66,4 @@ SET APNREDUNDUPSW: APN="huawei.com", IPV4SWITCH=ENABLE, IPV6SWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-APNREDUNDUPSW.md`
+- 原始手册：`evidence/UDG/20.15.2/配置APN路由冗余上行报文隧道转发功能开关（SET-APNREDUNDUPSW）_75097449.md`

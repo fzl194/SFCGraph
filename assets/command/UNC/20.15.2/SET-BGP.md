@@ -77,4 +77,4 @@ SET BGP:ASNUM="100", BGPENABLE=TRUE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-BGP.md`
+- 原始手册：`evidence/UNC/20.15.2/设置BGP（SET-BGP）_00866001.md`

@@ -56,4 +56,4 @@ RMV RSTRNSAREACODE:AREACODE="jq001.pd006.sh.mcc123.mnc45";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RSTRNSAREACODE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TA级切片限制区域码（RMV-RSTRNSAREACODE）_71516453.md`

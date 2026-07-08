@@ -57,4 +57,4 @@ RMV CHRRPTAPN:APN="apn1.com";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-CHRRPTAPN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除指定某个APN做本地存储CHR表单的策略（RMV-CHRRPTAPN）_52120359.md`

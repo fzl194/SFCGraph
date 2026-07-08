@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APPLYEXTENDCOMMUNITY.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYEXTENDCOMMUNITY.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYEXTENDCOMMUNITY.md`
-- 原始手册：`evidence/UNC/20.15.2/APPLYEXTENDCOMMUNITY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改扩展团体属性设置（MOD-APPLYEXTENDCOMMUNITY）_49961182.md`
+- 原始手册：`evidence/UNC/20.15.2/删除扩展团体属性设置（RMV-APPLYEXTENDCOMMUNITY）_00600937.md`
+- 原始手册：`evidence/UNC/20.15.2/增加扩展团体属性设置（ADD-APPLYEXTENDCOMMUNITY）_00866577.md`
+- 原始手册：`evidence/UNC/20.15.2/查询扩展团体属性设置（LST-APPLYEXTENDCOMMUNITY）_00866669.md`

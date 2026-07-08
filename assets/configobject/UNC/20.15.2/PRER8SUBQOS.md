@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PRER8SUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8SUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8SUBQOS.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8SUBQOS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Pre-R8签约QoS配置（MOD-PRER8SUBQOS）_09652556.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Pre-R8签约QoS配置（RMV-PRER8SUBQOS）_09653173.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Pre-R8签约QoS配置（ADD-PRER8SUBQOS）_09653616.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Pre-R8签约QoS配置（LST-PRER8SUBQOS）_09653203.md`

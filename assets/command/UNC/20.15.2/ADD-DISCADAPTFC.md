@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DISCADAPTFC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加服务发现自适应流控NF级配置（ADD-DISCADAPTFC）_10530606.md`

@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DHCPCLIENT.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPCLIENT.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPCLIENT.md`
-- 原始手册：`evidence/UNC/20.15.2/DHCPCLIENT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DHCPv4客户端（MOD-DHCPCLIENT）_00600529.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DHCPv4客户端（RMV-DHCPCLIENT）_49801902.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DHCPv4客户端（ADD-DHCPCLIENT）_50120978.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DHCPv4客户端配置（LST-DHCPCLIENT）_50121566.md`

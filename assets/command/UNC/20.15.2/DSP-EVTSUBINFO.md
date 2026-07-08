@@ -85,4 +85,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-EVTSUBINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示网络开放事件的订阅信息（DSP-EVTSUBINFO）_45495623.md`

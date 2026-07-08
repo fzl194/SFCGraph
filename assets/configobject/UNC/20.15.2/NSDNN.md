@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NSDNN.md`
-- 原始手册：`evidence/UNC/20.15.2/NSDNN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改网络切片支持的DNN（MOD-NSDNN）_96242642.md`
+- 原始手册：`evidence/UNC/20.15.2/删除网络切片支持的DNN（RMV-NSDNN）_09651768.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网络切片支持的DNN（ADD-NSDNN）_09652268.md`
+- 原始手册：`evidence/UNC/20.15.2/查询网络切片支持的DNN（LST-NSDNN）_09652609.md`

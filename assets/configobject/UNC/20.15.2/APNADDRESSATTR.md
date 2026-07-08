@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNADDRESSATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/APNADDRESSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的地址分配属性（LST-APNADDRESSATTR）_09651663.md`
+- 原始手册：`evidence/UNC/20.15.2/设置基于APN的地址分配属性（SET-APNADDRESSATTR）_33845575.md`

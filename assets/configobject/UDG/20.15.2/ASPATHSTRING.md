@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ASPATHSTRING.md`
-- 原始手册：`evidence/UDG/20.15.2/ASPATHSTRING.md`
-- 原始手册：`evidence/UDG/20.15.2/ASPATHSTRING.md`
-- 原始手册：`evidence/UDG/20.15.2/ASPATHSTRING.md`
+- 原始手册：`evidence/UDG/20.15.2/修改替换AS路径值（MOD-ASPATHSTRING）_00866729.md`
+- 原始手册：`evidence/UDG/20.15.2/删除替换AS路径值（RMV-ASPATHSTRING）_49802350.md`
+- 原始手册：`evidence/UDG/20.15.2/增加替换AS路径值（ADD-ASPATHSTRING）_50121054.md`
+- 原始手册：`evidence/UDG/20.15.2/查询替换AS路径值（LST-ASPATHSTRING）_50121086.md`

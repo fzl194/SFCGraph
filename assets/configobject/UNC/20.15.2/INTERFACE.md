@@ -25,8 +25,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INTERFACE.md`
-- 原始手册：`evidence/UNC/20.15.2/INTERFACE.md`
-- 原始手册：`evidence/UNC/20.15.2/INTERFACE.md`
-- 原始手册：`evidence/UNC/20.15.2/INTERFACE.md`
-- 原始手册：`evidence/UNC/20.15.2/INTERFACE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改接口（MOD-INTERFACE）_50281674.md`
+- 原始手册：`evidence/UNC/20.15.2/删除接口（RMV-INTERFACE）_50281434.md`
+- 原始手册：`evidence/UNC/20.15.2/增加接口（ADD-INTERFACE）_49960870.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口（LST-INTERFACE）_49801850.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口维护状态（OPR-INTERFACE）_50121206.md`

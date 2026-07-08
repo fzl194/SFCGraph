@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSFACTOR.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSFACTOR.md`
-- 原始手册：`evidence/UDG/20.15.2/VOLTEMOSFACTOR.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复MOS补偿因子（RTR-VOLTEMOSFACTOR）_75753662.md`
+- 原始手册：`evidence/UDG/20.15.2/查询MOS计算值的补偿因子（LST-VOLTEMOSFACTOR）_69418604.md`
+- 原始手册：`evidence/UDG/20.15.2/设置MOS计算值的补偿因子（SET-VOLTEMOSFACTOR）_57538685.md`

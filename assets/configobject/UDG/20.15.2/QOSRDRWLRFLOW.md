@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/QOSRDRWLRFLOW.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSRDRWLRFLOW.md`
-- 原始手册：`evidence/UDG/20.15.2/QOSRDRWLRFLOW.md`
+- 原始手册：`evidence/UDG/20.15.2/删除WLR引流重定向（RMV-QOSRDRWLRFLOW）_50281186.md`
+- 原始手册：`evidence/UDG/20.15.2/增加WLR引流重定向（ADD-QOSRDRWLRFLOW）_00600289.md`
+- 原始手册：`evidence/UDG/20.15.2/查询WLR引流重定向（LST-QOSRDRWLRFLOW）_00841593.md`

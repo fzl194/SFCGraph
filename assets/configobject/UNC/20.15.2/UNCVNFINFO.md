@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UNCVNFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/UNCVNFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/UNCVNFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除北向NF实例信息（RMV-UNCVNFINFO）_09652514.md`
+- 原始手册：`evidence/UNC/20.15.2/增加北向NF实例信息（ADD-UNCVNFINFO）_09654420.md`
+- 原始手册：`evidence/UNC/20.15.2/查询北向NF实例信息（LST-UNCVNFINFO）_09651753.md`

@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFSELUDM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF选择UDM策略（LST-SMFSELUDM）_48290737.md`

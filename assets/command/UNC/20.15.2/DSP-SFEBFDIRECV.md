@@ -69,4 +69,4 @@ RU名称  =  VNODE_VNRS_VNFC_IPU_0064
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SFEBFDIRECV.md`
+- 原始手册：`evidence/UNC/20.15.2/显示BFD-IRECV表（DSP-SFEBFDIRECV）_50280938.md`

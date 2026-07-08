@@ -68,4 +68,4 @@ ADD CELLGEO: CID="123090755123400", LAT=NLA, LAD=5, LAM=15, LAS=25, LOT=WLO, LOD
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-CELLGEO.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CELLID与地理坐标对应关系(ADD-CELLGEO)_26305598.md`

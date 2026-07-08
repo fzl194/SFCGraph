@@ -44,4 +44,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CMT-MMLTRAN.md`
+- 原始手册：`evidence/UDG/20.15.2/提交配置（CMT-MMLTRAN）_47002029.md`

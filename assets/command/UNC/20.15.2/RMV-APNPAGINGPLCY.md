@@ -56,4 +56,4 @@ RMV APNPAGINGPLCY: APNNI="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNPAGINGPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN寻呼策略参数配置(RMV-APNPAGINGPLCY)_72345307.md`

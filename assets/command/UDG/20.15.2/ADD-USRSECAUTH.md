@@ -51,4 +51,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-USRSECAUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/增加二次授权用户（ADD-USRSECAUTH）_88031788.md`

@@ -66,4 +66,4 @@ SET LINKMTU: MTUSW=ENABLE, IPV4LINKMTU=300;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-LINKMTU.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Link-MTU值（SET-LINKMTU）_88697042.md`

@@ -68,4 +68,4 @@ SET INSAFULLIFSW:INFERSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-INSAFULLIFSW.md`
+- 原始手册：`evidence/UDG/20.15.2/设置全量智能SA识别开关（SET-INSAFULLIFSW）_56405098.md`

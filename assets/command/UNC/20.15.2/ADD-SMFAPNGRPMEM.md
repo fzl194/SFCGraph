@@ -61,4 +61,4 @@ ADD SMFAPNGRPMEM: GRPNAME="grp1", APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFAPNGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN和DNS关联的APN组的绑定关系（ADD-SMFAPNGRPMEM）_88248942.md`

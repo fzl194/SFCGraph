@@ -62,4 +62,4 @@ SFTP协议算法开关  =  关闭兼容算法
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SFTPALG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFTP协议算法(LST-SFTPALG)_18398712.md`

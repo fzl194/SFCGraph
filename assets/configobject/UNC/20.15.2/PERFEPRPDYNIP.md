@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFEPRPDYNIP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFEPRPDYNIP.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFEPRPDYNIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除EpRpDyn对象的IP地址（RMV-PERFEPRPDYNIP）_44529809.md`
+- 原始手册：`evidence/UNC/20.15.2/增加EpRpDyn对象的IP地址（ADD-PERFEPRPDYNIP）_44529797.md`
+- 原始手册：`evidence/UNC/20.15.2/查询EpRpDyn对象的IP地址（LST-PERFEPRPDYNIP）_44529803.md`

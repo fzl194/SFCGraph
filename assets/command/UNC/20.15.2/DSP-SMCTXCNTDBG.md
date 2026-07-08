@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SMCTXCNTDBG.md`
+- 原始手册：`evidence/UNC/20.15.2/显示指定CS类型的上下文数量（DSP-SMCTXCNTDBG）_09652986.md`

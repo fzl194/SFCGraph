@@ -72,4 +72,4 @@ ADD GMLC: GMLCID=2, MCC="520", MNC="02", GMLCIPT=IPV4, GMLCIPV4="10.10.10.11", G
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-GMLC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加GMLC配置(ADD-GMLC)_26145796.md`

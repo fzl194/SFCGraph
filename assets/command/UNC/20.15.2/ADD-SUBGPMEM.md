@@ -61,4 +61,4 @@ ADD SUBGPMEM: SUBID=30, IMSIPRE="12345";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SUBGPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户群成员(ADD-SUBGPMEM)_26305374.md`

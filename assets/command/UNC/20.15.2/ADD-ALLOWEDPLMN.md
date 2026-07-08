@@ -72,4 +72,4 @@ ADD ALLOWEDPLMN: INDEX=0, REGTYPE= RegService, NFINSTANCENAME="SMF_Instance_0", 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALLOWEDPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF或NF服务支持的PLMN（ADD-ALLOWEDPLMN）_09652458.md`

@@ -69,4 +69,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMSCBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSC黑名单记录(LST-SMSCBLACKLIST)_72345323.md`

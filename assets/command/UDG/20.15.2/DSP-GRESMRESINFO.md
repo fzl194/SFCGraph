@@ -83,4 +83,4 @@ APP ID      资源类型    资源状态    资源ID
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-GRESMRESINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示Gresm资源信息（DSP-GRESMRESINFO）_00441029.md`

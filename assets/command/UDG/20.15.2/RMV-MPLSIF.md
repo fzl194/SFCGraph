@@ -53,4 +53,4 @@ RMV MPLSIF:IFNAME="Ethernet64/0/3";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-MPLSIF.md`
+- 原始手册：`evidence/UDG/20.15.2/删除MPLS接口（RMV-MPLSIF）_50121554.md`

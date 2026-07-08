@@ -118,4 +118,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DIFFSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示差异化服务信息(DSP-DIFFSERVICE)_26145676.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMAMEVTEXPPLY.md`
-- 原始手册：`evidence/UNC/20.15.2/SMAMEVTEXPPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF向AMF下发事件订阅时的老化策略（LST-SMAMEVTEXPPLY）_77579560.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF向AMF下发事件订阅时的老化策略（SET-SMAMEVTEXPPLY）_14059377.md`

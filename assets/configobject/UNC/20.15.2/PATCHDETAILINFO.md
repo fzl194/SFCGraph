@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PATCHDETAILINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示补丁信息（DSP-PATCHDETAILINFO）_59103933.md`

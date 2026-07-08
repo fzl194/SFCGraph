@@ -96,4 +96,4 @@ SET PCCFUNC: HOMEPCCSWITCH=ENABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PCCFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PCC功能（SET-PCCFUNC）_09897057.md`

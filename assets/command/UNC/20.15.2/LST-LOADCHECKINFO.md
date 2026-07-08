@@ -62,4 +62,4 @@ CSLB负载不均衡检测开关  =  开启
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOADCHECKINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CSLB负载不均衡检测功能的参数（LST-LOADCHECKINFO）_97964757.md`

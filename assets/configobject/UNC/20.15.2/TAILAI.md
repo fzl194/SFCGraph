@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TAILAI.md`
-- 原始手册：`evidence/UNC/20.15.2/TAILAI.md`
-- 原始手册：`evidence/UNC/20.15.2/TAILAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TAI与LAI对应关系(RMV-TAILAI)_26145416.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TAI与LAI对应关系(ADD-TAILAI)_72345017.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TAI与LAI对应关系(LST-TAILAI)_72225097.md`

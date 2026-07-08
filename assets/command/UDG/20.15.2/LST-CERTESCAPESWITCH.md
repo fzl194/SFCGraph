@@ -50,4 +50,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-CERTESCAPESWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询证书过期逃生开关状态（LST-CERTESCAPESWITCH）_06110022.md`

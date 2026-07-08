@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IFIPV6NDRAPREFIX.md`
-- 原始手册：`evidence/UDG/20.15.2/IFIPV6NDRAPREFIX.md`
-- 原始手册：`evidence/UDG/20.15.2/IFIPV6NDRAPREFIX.md`
-- 原始手册：`evidence/UDG/20.15.2/IFIPV6NDRAPREFIX.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv6-RA通告前缀（MOD-IFIPV6NDRAPREFIX）_50281726.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv6-RA通告前缀（RMV-IFIPV6NDRAPREFIX）_49802082.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-RA通告前缀（LST-IFIPV6NDRAPREFIX）_00841705.md`
+- 原始手册：`evidence/UDG/20.15.2/添加IPv6-RA通告前缀（ADD-IFIPV6NDRAPREFIX）_00600261.md`

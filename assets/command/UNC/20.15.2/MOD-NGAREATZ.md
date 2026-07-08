@@ -60,4 +60,4 @@ MOD NGAREATZ: MCC="460", MNC="03", BGNTAC="000112", ENDTAC="000350", TZID=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NGAREATZ.md`
+- 原始手册：`evidence/UNC/20.15.2/修改5G区域时区参数（MOD-NGAREATZ）_72153845.md`

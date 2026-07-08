@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/GLOBALWIFILTEHO.md`
-- 原始手册：`evidence/UNC/20.15.2/GLOBALWIFILTEHO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局E-UTRAN和WLAN互操作控制属性（LST-GLOBALWIFILTEHO）_82122527.md`
+- 原始手册：`evidence/UNC/20.15.2/设置全局E-UTRAN和WLAN互操作控制属性（SET-GLOBALWIFILTEHO）_35962940.md`

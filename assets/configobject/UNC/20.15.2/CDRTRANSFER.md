@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRTRANSFER.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRTRANSFER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单发送控制参数（LST-CDRTRANSFER）_09896851.md`
+- 原始手册：`evidence/UNC/20.15.2/设置话单发送控制参数（SET-CDRTRANSFER）_09896850.md`

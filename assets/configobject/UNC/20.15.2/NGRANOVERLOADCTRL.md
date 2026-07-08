@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGRANOVERLOADCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGRANOVERLOADCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G基站过载监控参数（LST-NGRANOVERLOADCTRL）_09227301.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G基站过载监控参数（SET-NGRANOVERLOADCTRL）_61307354.md`

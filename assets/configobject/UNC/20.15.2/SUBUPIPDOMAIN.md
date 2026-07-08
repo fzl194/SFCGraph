@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUBUPIPDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBUPIPDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBUPIPDOMAIN.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBUPIPDOMAIN.md`
+- 原始手册：`evidence/UNC/20.15.2/修改当前UPF扩展类型绑定的IP域（MOD-SUBUPIPDOMAIN）_72004513.md`
+- 原始手册：`evidence/UNC/20.15.2/删除当前UPF扩展类型绑定的IP域（RMV-SUBUPIPDOMAIN）_23804526.md`
+- 原始手册：`evidence/UNC/20.15.2/增加当前UPF扩展类型绑定的IP域（ADD-SUBUPIPDOMAIN）_71924421.md`
+- 原始手册：`evidence/UNC/20.15.2/查询当前UPF扩展类型绑定的IP域（LST-SUBUPIPDOMAIN）_23484622.md`

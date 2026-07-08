@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-HTTPFQDNSW.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTP是否支持FQDN（LST-HTTPFQDNSW）_04291629.md`

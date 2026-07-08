@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPSECPROPOSALIPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSECPROPOSALIPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSECPROPOSALIPSEC.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSECPROPOSALIPSEC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPsec提议（MOD-IPSECPROPOSALIPSEC）_25912253.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPsec提议（RMV-IPSECPROPOSALIPSEC）_26150763.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPsec提议（ADD-IPSECPROPOSALIPSEC）_80432524.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPsec提议（LST-IPSECPROPOSALIPSEC）_80910992.md`

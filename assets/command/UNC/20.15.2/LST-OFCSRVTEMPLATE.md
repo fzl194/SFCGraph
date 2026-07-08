@@ -75,4 +75,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OFCSRVTEMPLATE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询离线业务模板（LST-OFCSRVTEMPLATE）_09896902.md`

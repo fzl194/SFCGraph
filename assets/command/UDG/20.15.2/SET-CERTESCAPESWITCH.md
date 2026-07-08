@@ -57,4 +57,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-CERTESCAPESWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置证书过期逃生开关状态（SET-CERTESCAPESWITCH）_55469701.md`

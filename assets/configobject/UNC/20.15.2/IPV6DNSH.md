@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`
-- 原始手册：`evidence/UNC/20.15.2/IPV6DNSH.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPV6-DNS-Hostfile记录(MOD-IPV6DNSH)_26305696.md`
+- 原始手册：`evidence/UNC/20.15.2/删除IPV6-DNS-Hostfile记录(RMV-IPV6DNSH)_72225565.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPV6-DNS-Hostfile记录(ADD-IPV6DNSH)_26145886.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPV6-DNS-Hostfile记录(LST-IPV6DNSH)_72345487.md`

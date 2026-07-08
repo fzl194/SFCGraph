@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CAUSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/CAUSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/CAUSEGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/CAUSEGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改原因值映射组配置(MOD-CAUSEGRP)_72345091.md`
+- 原始手册：`evidence/UNC/20.15.2/删除原因值映射组配置(RMV-CAUSEGRP)_26305304.md`
+- 原始手册：`evidence/UNC/20.15.2/增加原因值映射组配置(ADD-CAUSEGRP)_72225173.md`
+- 原始手册：`evidence/UNC/20.15.2/查询原因值映射组配置(LST-CAUSEGRP)_26145494.md`

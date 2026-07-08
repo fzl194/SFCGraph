@@ -78,4 +78,4 @@ Hello消息中否决Prune剪枝的时间间隔（ms）  =  2500
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PIMIF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PIM接口配置（LST-PIMIF）_00840861.md`

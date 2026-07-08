@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNECTION.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNECTION.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNECTION.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMCONNECTION.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Diameter链路（MOD-DIAMCONNECTION）_09897267.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter链路（RMV-DIAMCONNECTION）_09897268.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter链路（ADD-DIAMCONNECTION）_09897266.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter链路（LST-DIAMCONNECTION）_09897269.md`

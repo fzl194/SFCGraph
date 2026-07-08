@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNWIFILTEHO.md`
-- 原始手册：`evidence/UNC/20.15.2/APNWIFILTEHO.md`
-- 原始手册：`evidence/UNC/20.15.2/APNWIFILTEHO.md`
-- 原始手册：`evidence/UNC/20.15.2/APNWIFILTEHO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于APN的E-UTRAN和WLAN互操作控制属性（MOD-APNWIFILTEHO）_35962938.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于APN的E-UTRAN和WLAN互操作控制属性（RMV-APNWIFILTEHO）_35803154.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于APN的E-UTRAN和WLAN互操作控制属性（ADD-APNWIFILTEHO）_82122523.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的E-UTRAN和WLAN互操作控制属性（LST-APNWIFILTEHO）_35962936.md`

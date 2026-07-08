@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PERFCHKSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/PERFCHKSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询性能统计核查开关(LST-PERFCHKSWITCH)_72225877.md`
+- 原始手册：`evidence/UNC/20.15.2/设置性能统计核查开关(SET-PERFCHKSWITCH)_26146198.md`

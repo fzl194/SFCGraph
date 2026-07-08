@@ -67,4 +67,4 @@ ADD RESELAREAMEM: RESELAREACODE="ReSelZone", MCC="123", MNC="45", BGNTAC="120101
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-RESELAREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加AMF重选功能区域成员（ADD-RESELAREAMEM）_23782734.md`

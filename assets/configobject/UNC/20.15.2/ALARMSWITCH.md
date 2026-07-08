@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ALARMSWITCH.md`
-- 原始手册：`evidence/UNC/20.15.2/ALARMSWITCH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询安全事件告警开关（LST-ALARMSWITCH）_42999599.md`
+- 原始手册：`evidence/UNC/20.15.2/设置安全事件告警开关（SET-ALARMSWITCH）_42999600.md`

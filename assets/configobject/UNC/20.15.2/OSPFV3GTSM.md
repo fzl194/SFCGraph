@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3GTSM.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3GTSM.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3GTSM.md`
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3GTSM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改OSPFv3-GTSM配置（MOD-OSPFV3GTSM）_00601325.md`
+- 原始手册：`evidence/UNC/20.15.2/创建OSPFv3-GTSM配置（ADD-OSPFV3GTSM）_49801650.md`
+- 原始手册：`evidence/UNC/20.15.2/删除OSPFv3-GTSM配置（RMV-OSPFV3GTSM）_00840869.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3-GTSM配置（LST-OSPFV3GTSM）_00840633.md`

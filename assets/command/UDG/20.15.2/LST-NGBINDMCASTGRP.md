@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-NGBINDMCASTGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN实例绑定组播组配置（LST-NGBINDMCASTGRP）_15711178.md`

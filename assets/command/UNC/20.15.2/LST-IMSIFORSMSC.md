@@ -63,4 +63,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IMSIFORSMSC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合短消息功能共部署SMSC支持的IMSI号段配置（LST-IMSIFORSMSC）_03961129.md`

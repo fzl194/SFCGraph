@@ -67,4 +67,4 @@ ADD AMFFUNCTION: INSTANCEID="b7b621d82dfb4a009d492491bd9d72a4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFFUNCTION.md`
+- 原始手册：`evidence/UNC/20.15.2/添加AMF功能实体配置（ADD-AMFFUNCTION）_09653631.md`

@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPE.md`
-- 原始手册：`evidence/UNC/20.15.2/PCFSSCOPE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改PCF的业务服务区（MOD-PCFSSCOPE）_88537102.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PCF的业务服务区（RMV-PCFSSCOPE）_35273629.md`
+- 原始手册：`evidence/UNC/20.15.2/增加PCF的业务服务区（ADD-PCFSSCOPE）_35636447.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PCF的业务服务区（LST-PCFSSCOPE）_35273623.md`

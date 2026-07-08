@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CFGTABLEINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/显示CFG表信息和内存信息（DSP-CFGTABLEINFO）_59103470.md`

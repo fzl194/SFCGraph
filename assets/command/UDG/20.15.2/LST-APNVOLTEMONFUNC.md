@@ -66,4 +66,4 @@ VoLTE语音质量监控功能开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-APNVOLTEMONFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/该命令用于查询VoLTE语音质量监控功能开关（LST-APNVOLTEMONFUNC）_57738479.md`

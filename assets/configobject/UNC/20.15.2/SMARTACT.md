@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMARTACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTACT.md`
-- 原始手册：`evidence/UNC/20.15.2/SMARTACT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改激活抑制规则（MOD-SMARTACT）_72345343.md`
+- 原始手册：`evidence/UNC/20.15.2/删除激活抑制规则（RMV-SMARTACT）_26305552.md`
+- 原始手册：`evidence/UNC/20.15.2/增加激活抑制规则（ADD-SMARTACT）_72225421.md`
+- 原始手册：`evidence/UNC/20.15.2/查询激活抑制规则（LST-SMARTACT）_26145744.md`

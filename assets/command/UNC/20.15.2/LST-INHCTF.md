@@ -71,4 +71,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-INHCTF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询禁止访问NCG的CTF实例（LST-INHCTF）_45110921.md`

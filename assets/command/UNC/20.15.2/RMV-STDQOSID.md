@@ -63,4 +63,4 @@ RMV STDQOSID:QOSIDTYPE=QCI,QOSIDSV=90;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-STDQOSID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除标准QoS-ID配置（RMV-STDQOSID）_06399929.md`

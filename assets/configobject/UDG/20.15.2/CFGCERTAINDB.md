@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFGCERTAINDB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示指定DB表数据（DSP-CFGCERTAINDB）_59103949.md`

@@ -55,4 +55,4 @@ RMV DSCPMAP:DSCP=8,VALUE=6,TYPE=8021p;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DSCPMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DSCP值到VLAN优先级的映射（RMV-DSCPMAP）_00866185.md`

@@ -95,4 +95,4 @@ IP地址类型  =  IPTypeV4
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PNFPROFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端NF实例概述信息（LST-PNFPROFILE）_09651432.md`

@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/HTTPOAUTHKEY.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPOAUTHKEY.md`
-- 原始手册：`evidence/UDG/20.15.2/HTTPOAUTHKEY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTPOauth密钥（RMV-HTTPOAUTHKEY）_96728956.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTPOauth密钥（ADD-HTTPOAUTHKEY）_44728569.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTPOauth密钥（LST-HTTPOAUTHKEY）_44648417.md`

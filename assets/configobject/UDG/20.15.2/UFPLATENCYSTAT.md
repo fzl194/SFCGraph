@@ -25,5 +25,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UFPLATENCYSTAT.md`
-- 原始手册：`evidence/UDG/20.15.2/UFPLATENCYSTAT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示UFP逐包转发时延度量开关（DSP-UFPLATENCYSTAT）_88226712.md`
+- 原始手册：`evidence/UDG/20.15.2/激活UFP逐包转发时延度量开关（ACT-UFPLATENCYSTAT）_04560596.md`

@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFTDMCR.md`
+- 原始手册：`evidence/UNC/20.15.2/启动软调操作(STR-SFTDMCR)_25131368.md`

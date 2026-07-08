@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMACTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMACTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMACTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/SMACTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改激活过程控制参数（MOD-SMACTCTRL）_26145664.md`
+- 原始手册：`evidence/UNC/20.15.2/删除激活过程控制参数（RMV-SMACTCTRL）_72345259.md`
+- 原始手册：`evidence/UNC/20.15.2/增加激活过程控制参数（ADD-SMACTCTRL）_26305472.md`
+- 原始手册：`evidence/UNC/20.15.2/查询激活过程控制参数（LST-SMACTCTRL）_72225343.md`

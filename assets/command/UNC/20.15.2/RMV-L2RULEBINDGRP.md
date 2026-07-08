@@ -62,4 +62,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-L2RULEBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除层二规则与层二规则组的绑定关系（RMV-L2RULEBINDGRP）_70382373.md`

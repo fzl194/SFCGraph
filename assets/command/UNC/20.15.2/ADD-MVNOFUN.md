@@ -64,4 +64,4 @@ ADD MVNOFUN: MVNOID=2, LCS=NO, CMP=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MVNOFUN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MVNO功能配置信息(ADD-MVNOFUN)_26305870.md`

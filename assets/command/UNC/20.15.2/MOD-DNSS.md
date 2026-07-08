@@ -64,4 +64,4 @@ MOD DNSS: GRPID=1, IPT=IPV4, IP="192.168.100.101", PRI=PRI2, PRO=TCP;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-DNSS.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNS服务器(MOD-DNSS)_72225577.md`

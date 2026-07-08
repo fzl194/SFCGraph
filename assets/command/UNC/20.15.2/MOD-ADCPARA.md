@@ -58,4 +58,4 @@ MOD ADCPARA:FLOWFILTERNAME="testflowfiltername",FLOWINFORPT=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-ADCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改ADC参数（MOD-ADCPARA）_65996999.md`

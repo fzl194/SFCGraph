@@ -59,4 +59,4 @@ RTR SMFAPNSOFTPARA: APN="huawei.com", DT=Byte, BYTENUM=8;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RTR-SMFAPNSOFTPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复SMF-APN软参记录（RTR-SMFAPNSOFTPARA）_25121208.md`

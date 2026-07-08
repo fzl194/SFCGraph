@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGBINDUEMUTWL.md`
-- 原始手册：`evidence/UDG/20.15.2/NGBINDUEMUTWL.md`
-- 原始手册：`evidence/UDG/20.15.2/NGBINDUEMUTWL.md`
+- 原始手册：`evidence/UDG/20.15.2/删除5G-LAN组绑定PA口UE互访白名单（RMV-NGBINDUEMUTWL）_48922723.md`
+- 原始手册：`evidence/UDG/20.15.2/增加5G-LAN组绑定PA口UE互访白名单（ADD-NGBINDUEMUTWL）_97242208.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN组绑定PA口UE互访白名单（LST-NGBINDUEMUTWL）_97004600.md`

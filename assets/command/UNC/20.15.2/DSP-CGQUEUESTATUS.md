@@ -81,4 +81,4 @@ RU的ID  进程名  队列类型      队列名称          队列容量  当前
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CGQUEUESTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NCG队列状态（DSP-CGQUEUESTATUS）_28534237.md`

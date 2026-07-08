@@ -59,4 +59,4 @@ vha-pod-0  https://192.168.0.333:32199  https://vha-pod-0.vha.fenix:32198  c27db
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-VHAMEMBER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询vHA-ETCD集群节点详细信息（DSP-VHAMEMBER）_51852642.md`

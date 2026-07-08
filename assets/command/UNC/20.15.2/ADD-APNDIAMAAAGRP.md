@@ -59,4 +59,4 @@ ADD APNDIAMAAAGRP:APN="apn",GROUPNAME="diametergroup";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-APNDIAMAAAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN的Diameter-AAA服务器组（ADD-APNDIAMAAAGRP）_64343817.md`

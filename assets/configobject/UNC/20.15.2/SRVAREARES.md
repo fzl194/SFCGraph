@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVAREARES.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVAREARES.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVAREARES.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVAREARES.md`
+- 原始手册：`evidence/UNC/20.15.2/修改本地服务区域限制（MOD-SRVAREARES）_11935726.md`
+- 原始手册：`evidence/UNC/20.15.2/删除本地服务区域限制（RMV-SRVAREARES）_58575681.md`
+- 原始手册：`evidence/UNC/20.15.2/增加本地服务区域限制（ADD-SRVAREARES）_58735671.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF本地服务区域限制（LST-SRVAREARES）_11775830.md`

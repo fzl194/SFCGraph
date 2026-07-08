@@ -74,4 +74,4 @@ App软件包        热补丁           V100R018C20B050          PAEDP          
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-PACKAGE.md`
+- 原始手册：`evidence/UNC/20.15.2/显示系统软件信息（DSP-PACKAGE）_59103342.md`

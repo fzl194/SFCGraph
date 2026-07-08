@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POOLBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLBINDAPN.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLBINDAPN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN实例与地址池绑定关系（RMV-POOLBINDAPN）_09652513.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN实例与地址池绑定关系（ADD-POOLBINDAPN）_09653789.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN实例与地址池绑定关系（LST-POOLBINDAPN）_09651611.md`

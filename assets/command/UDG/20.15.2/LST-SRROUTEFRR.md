@@ -67,4 +67,4 @@ IPv4单播    __mpp_vpn_inner__ TRUE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SRROUTEFRR.md`
+- 原始手册：`evidence/UDG/20.15.2/查询静态路由FRR（LST-SRROUTEFRR）_00601389.md`

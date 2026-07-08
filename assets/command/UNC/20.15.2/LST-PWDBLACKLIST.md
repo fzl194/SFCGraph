@@ -61,4 +61,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PWDBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询密码禁用词（LST-PWDBLACKLIST）_59036662.md`

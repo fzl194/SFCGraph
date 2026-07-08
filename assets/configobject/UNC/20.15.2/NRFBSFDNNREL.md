@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFDNNREL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFDNNREL.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFBSFDNNREL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BSF索引和DNN的关联关系（RMV-NRFBSFDNNREL）_45612435.md`
+- 原始手册：`evidence/UNC/20.15.2/增加BSF索引和DNN的关联关系（ADD-NRFBSFDNNREL）_45612407.md`
+- 原始手册：`evidence/UNC/20.15.2/查询BSF索引和DNN的关联关系（LST-NRFBSFDNNREL）_45612431.md`

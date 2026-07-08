@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RUDISKPARTITION.md`
-- 原始手册：`evidence/UDG/20.15.2/RUDISKPARTITION.md`
+- 原始手册：`evidence/UDG/20.15.2/查询RU磁盘过载配置（LST-RUDISKPARTITION）_59103387.md`
+- 原始手册：`evidence/UDG/20.15.2/设置RU磁盘过载配置（SET-RUDISKPARTITION）_59103406.md`

@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-AUTOSCALINGSRBFD.md`
+- 原始手册：`evidence/UDG/20.15.2/查询静态路由的动态BFD自动化配置模板（LST-AUTOSCALINGSRBFD）_00600545.md`

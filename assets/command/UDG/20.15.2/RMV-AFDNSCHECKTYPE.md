@@ -59,4 +59,4 @@ RMV AFDNSCHECKTYPE: TYPEVALUE=10;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-AFDNSCHECKTYPE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除需要进行防欺诈检查的DNS报文类型（RMV-AFDNSCHECKTYPE）_82837804.md`

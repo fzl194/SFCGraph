@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MSSQUEDETINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定队列详细信息（DSP-MSSQUEDETINFO）_00865733.md`

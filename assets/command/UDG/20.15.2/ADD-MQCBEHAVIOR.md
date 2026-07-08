@@ -59,4 +59,4 @@ ADD MQCBEHAVIOR:BEHAVIORNAME="b1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-MQCBEHAVIOR.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流行为（ADD-MQCBEHAVIOR）_50281310.md`

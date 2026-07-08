@@ -61,4 +61,4 @@ ADD S1ALGPRIORITY: ALGTYPE=INTE, ALGINTE=EIA0, ALGPRI=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-S1ALGPRIORITY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加S1模式加密和完整性算法优先级配置信息(ADD-S1ALGPRIORITY)_26305462.md`

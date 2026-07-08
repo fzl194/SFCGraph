@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNNONIPFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/APNNONIPFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN-Non-IP功能配置（LST-APNNONIPFUNC）_28567628.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN-Non-IP功能配置（SET-APNNONIPFUNC）_28567657.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DOMAINSEPARATOR.md`
-- 原始手册：`evidence/UNC/20.15.2/DOMAINSEPARATOR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询域名前后缀分隔符（LST-DOMAINSEPARATOR）_09654359.md`
+- 原始手册：`evidence/UNC/20.15.2/设置域名前后缀分隔符（SET-DOMAINSEPARATOR）_09654169.md`

@@ -66,4 +66,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SAIFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SAI差异化控制功能（LST-SAIFUNC）_75556849.md`

@@ -58,4 +58,4 @@ RMV SMFAPNGRP:GRPNAME="grp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SMFAPNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS关联的APN组（RMV-SMFAPNGRP）_88537106.md`

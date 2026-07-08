@@ -23,6 +23,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QOSDIFFERSERV.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSDIFFERSERV.md`
-- 原始手册：`evidence/UNC/20.15.2/QOSDIFFERSERV.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DS域（RMV-QOSDIFFERSERV）_00866565.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DS域（ADD-QOSDIFFERSERV）_00841105.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DS域（LST-QOSDIFFERSERV）_49962062.md`

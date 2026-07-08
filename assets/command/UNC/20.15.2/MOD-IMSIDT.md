@@ -60,4 +60,4 @@ MOD IMSIDT: SUBRANGE=IMSI_PREFIX, IMSIPRE="123456", DT=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-IMSIDT.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IMSI-Direct-Tunnel配置(MOD-IMSIDT)_72225727.md`

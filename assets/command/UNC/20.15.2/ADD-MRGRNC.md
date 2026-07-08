@@ -59,4 +59,4 @@ ADD MRGRNC: RNCX=0, RNCN="HUAWEI";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MRGRNC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加融合RNC(ADD-MRGRNC)_19541121.md`

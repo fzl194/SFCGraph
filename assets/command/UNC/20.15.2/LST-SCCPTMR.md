@@ -83,4 +83,4 @@ SCCP协议定时器
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCCPTMR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP定时器参数(LST-SCCPTMR)_72345937.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CNTCPUTHD.md`
-- 原始手册：`evidence/UNC/20.15.2/CNTCPUTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询容器CPU阈值（LST-CNTCPUTHD）_32743960.md`
+- 原始手册：`evidence/UNC/20.15.2/设置容器CPU告警阈值（SET-CNTCPUTHD）_32743962.md`

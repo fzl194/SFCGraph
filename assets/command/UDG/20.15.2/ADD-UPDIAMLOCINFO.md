@@ -63,4 +63,4 @@ ADD UPDIAMLOCINFO: HOSTNAME="test", REALMNAME="test", PRODUCTNAME="product", VEN
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-UPDIAMLOCINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/增加Diameter本端信息（ADD-UPDIAMLOCINFO）_97314559.md`

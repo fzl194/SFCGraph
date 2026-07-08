@@ -69,4 +69,4 @@ SET PPPCFG:HOSTNAME="upf",MRU=1500,TIMEOUT=3;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-PPPCFG.md`
+- 原始手册：`evidence/UDG/20.15.2/设置PPP配置（SET-PPPCFG）_35373544.md`

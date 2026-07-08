@@ -64,4 +64,4 @@ paeFmeaInfo    4096            4096                        0                    
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-MSSFMMSUMMARY.md`
+- 原始手册：`evidence/UDG/20.15.2/显示FMM的PBUF概要信息（DSP-MSSFMMSUMMARY）_92520028.md`

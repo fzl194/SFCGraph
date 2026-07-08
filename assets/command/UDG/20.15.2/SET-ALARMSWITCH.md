@@ -54,4 +54,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-ALARMSWITCH.md`
+- 原始手册：`evidence/UDG/20.15.2/设置安全事件告警开关（SET-ALARMSWITCH）_42999600.md`

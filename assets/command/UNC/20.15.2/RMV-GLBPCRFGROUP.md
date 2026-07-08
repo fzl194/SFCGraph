@@ -58,4 +58,4 @@ RMV GLBPCRFGROUP:IMSIMSISDNSEG="ims";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-GLBPCRFGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除全局PCRF组绑定关系（RMV-GLBPCRFGROUP）_09897118.md`

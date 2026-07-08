@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PRER8REMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8REMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8REMARK.md`
-- 原始手册：`evidence/UNC/20.15.2/PRER8REMARK.md`
+- 原始手册：`evidence/UNC/20.15.2/修改Pre-R8-QoS到TOS_DSCP的映射规则（MOD-PRER8REMARK）_09652464.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Pre-R8-QoS到TOS_DSCP的映射规则（RMV-PRER8REMARK）_09652655.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Pre-R8-QoS到TOS_DSCP的映射规则（ADD-PRER8REMARK）_09654400.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Pre-R8-QoS到TOS_DSCP的映射规则（LST-PRER8REMARK）_09653284.md`

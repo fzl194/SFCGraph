@@ -59,4 +59,4 @@ LST CDFFUNCPARA:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CDFFUNCPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CDF的功能参数（LST-CDFFUNCPARA）_23782750.md`

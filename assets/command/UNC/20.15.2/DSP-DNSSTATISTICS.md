@@ -74,4 +74,4 @@ DSP DNSSTATISTICS:;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-DNSSTATISTICS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS报文统计计数（DSP-DNSSTATISTICS）_50281426.md`

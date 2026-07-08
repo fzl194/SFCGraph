@@ -64,4 +64,4 @@ UPD RELAYAUTHKEY: RELAYAUTHKEYNAME="auth1", NEWAUTHKEY="*****", NEWKEYCONFIRM="*
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPD-RELAYAUTHKEY.md`
+- 原始手册：`evidence/UDG/20.15.2/更新媒体中继鉴权密钥（UPD-RELAYAUTHKEY）_94632049.md`

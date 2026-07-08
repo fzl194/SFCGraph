@@ -58,4 +58,4 @@ RMV APNDIAMAAAGRP:APN="apn";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-APNDIAMAAAGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除APN的Diameter-AAA服务器组（RMV-APNDIAMAAAGRP）_64343900.md`

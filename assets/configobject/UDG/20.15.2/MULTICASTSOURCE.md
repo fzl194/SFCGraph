@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MULTICASTSOURCE.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTICASTSOURCE.md`
-- 原始手册：`evidence/UDG/20.15.2/MULTICASTSOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IGMP-Snooping组播源配置（RMV-MULTICASTSOURCE）_55604486.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IGMP-Snooping组播源配置（ADD-MULTICASTSOURCE）_55843916.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP-Snooping组播源配置。（LST-MULTICASTSOURCE）_06240613.md`

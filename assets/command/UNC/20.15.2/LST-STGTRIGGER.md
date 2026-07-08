@@ -69,4 +69,4 @@ PDU时长阈值(分钟)  =  30
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-STGTRIGGER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询融合计费消息缓存期间融合计费消息生成的trigger（LST-STGTRIGGER）_34667403.md`

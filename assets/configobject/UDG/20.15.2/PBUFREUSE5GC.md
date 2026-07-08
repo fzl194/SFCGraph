@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PBUFREUSE5GC.md`
-- 原始手册：`evidence/UDG/20.15.2/PBUFREUSE5GC.md`
-- 原始手册：`evidence/UDG/20.15.2/PBUFREUSE5GC.md`
+- 原始手册：`evidence/UDG/20.15.2/删除pbuf重用检测开关设置（RMV-PBUFREUSE5GC）_99779937.md`
+- 原始手册：`evidence/UDG/20.15.2/查询pbuf重用检测开关状态（LST-PBUFREUSE5GC）_63259092.md`
+- 原始手册：`evidence/UDG/20.15.2/设置pbuf重用检测开关（SET-PBUFREUSE5GC）_99859361.md`

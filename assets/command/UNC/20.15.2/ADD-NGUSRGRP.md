@@ -62,4 +62,4 @@ ADD NGUSRGRP: USRGRPID=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NGUSRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加5G用户群（ADD-NGUSRGRP）_44006475.md`

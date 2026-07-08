@@ -59,4 +59,4 @@ RMV SRVNODEIP:GROUPNAME="huawei",IPSECTIONID=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-SRVNODEIP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除服务节点IP（RMV-SRVNODEIP）_09651417.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFREDCAPFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFREDCAPFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF-RedCap功能（LST-AMFREDCAPFUNC）_17306398.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF-RedCap功能（SET-AMFREDCAPFUNC）_17306402.md`

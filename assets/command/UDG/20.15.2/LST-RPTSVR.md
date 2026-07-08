@@ -67,4 +67,4 @@ dbcs2            UFDR           6                     6                       10
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-RPTSVR.md`
+- 原始手册：`evidence/UDG/20.15.2/显示报表服务器（LST-RPTSVR）_27634000.md`

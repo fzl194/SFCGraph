@@ -67,4 +67,4 @@ ADD LOCBINDS1TAI: LOCALITY="locality1", MCC="460", MNC="03", S1TACSTART="1301", 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOCBINDS1TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF位置信息与UPF优先支持的4G-TAI范围的绑定关系（ADD-LOCBINDS1TAI）_96241684.md`

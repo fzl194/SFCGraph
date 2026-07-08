@@ -62,4 +62,4 @@ RMV AREAMEM: AREACODE="jq001.pd006.sh.mcc123.mnc45", BGNTAC="120101";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-AREAMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除跟踪区成员（RMV-AREAMEM）_44007540.md`

@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SFELINEARTABLE.md`
+- 原始手册：`evidence/UDG/20.15.2/显示指定的线性表记录（DSP-SFELINEARTABLE）_50120966.md`

@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPGTPUADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/CPGTPUADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/CPGTPUADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除CP-GTP-U地址（RMV-CPGTPUADDR）_96805498.md`
+- 原始手册：`evidence/UNC/20.15.2/增加CP-GTP-U地址（ADD-CPGTPUADDR）_96805376.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CP-GTP-U地址（LST-CPGTPUADDR）_96805384.md`

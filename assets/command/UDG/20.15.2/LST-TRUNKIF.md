@@ -67,4 +67,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TRUNKIF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询Trunk工作模式配置（LST-TRUNKIF）_00865665.md`

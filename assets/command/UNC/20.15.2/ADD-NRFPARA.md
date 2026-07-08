@@ -76,4 +76,4 @@ ADD NRFPARA: NRFINSTANCENAME="NRF_Instance_0", WAITINTERVAL=5, MAXRETRYTIMES=3, 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NRFPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NRF协议参数（ADD-NRFPARA）_09652551.md`

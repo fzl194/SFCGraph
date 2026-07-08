@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ACLBASIC6RULECNT.md`
+- 原始手册：`evidence/UDG/20.15.2/显示基本IPv6-ACL规则匹配计数（DSP-ACLBASIC6RULECNT）_49960990.md`

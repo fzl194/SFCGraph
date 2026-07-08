@@ -60,4 +60,4 @@ RMV LOCBINDS1TAI: LOCALITY="locality1",MCC="460",MNC="03",S1TACSTART="1301",S1TA
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCBINDS1TAI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF位置信息与UPF优先支持的4G-TAI范围的绑定关系（RMV-LOCBINDS1TAI）_96242800.md`

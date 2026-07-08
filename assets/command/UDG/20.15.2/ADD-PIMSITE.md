@@ -70,4 +70,4 @@ ADD PIMSITE: VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast,ASSERTHOLDTIME=65535,J
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PIMSITE.md`
+- 原始手册：`evidence/UDG/20.15.2/添加PIM全局配置（ADD-PIMSITE）_50280906.md`

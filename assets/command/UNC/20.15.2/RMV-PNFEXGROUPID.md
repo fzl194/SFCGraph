@@ -62,4 +62,4 @@ RMV PNFEXGROUPID: NFINSTANCEID="UDM_Instance_0", EXGROUPID="externalGroupId01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFEXGROUPID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF的外部群组信息（RMV-PNFEXGROUPID）_09652500.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFUDMRESET.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFUDMRESET.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF的UDM故障重选策略（LST-SMFUDMRESET）_96242475.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMF的UDM故障处理策略（SET-SMFUDMRESET）_96243219.md`

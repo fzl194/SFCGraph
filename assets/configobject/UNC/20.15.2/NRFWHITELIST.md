@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFWHITELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWHITELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFWHITELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF白名单（RMV-NRFWHITELIST）_35374747.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF白名单（ADD-NRFWHITELIST）_35519265.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF白名单（LST-NRFWHITELIST）_88537098.md`

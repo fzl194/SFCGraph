@@ -67,4 +67,4 @@ RMV DIAMLOCINFO:HOSTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DIAMLOCINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter本端信息（RMV-DIAMLOCINFO）_09897273.md`

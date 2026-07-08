@@ -60,4 +60,4 @@ RMV NGUSRGRPMEM: USRGRPID=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NGUSRGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除5G用户群成员（RMV-NGUSRGRPMEM）_44007670.md`

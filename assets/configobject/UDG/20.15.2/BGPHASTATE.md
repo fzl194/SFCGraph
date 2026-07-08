@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPHASTATE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP-HA状态信息（DSP-BGPHASTATE）_50281174.md`

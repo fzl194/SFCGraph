@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMFSELUDM.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSELUDM.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSELUDM.md`
-- 原始手册：`evidence/UNC/20.15.2/SMFSELUDM.md`
+- 原始手册：`evidence/UNC/20.15.2/修改SMF选择UDM策略（MOD-SMFSELUDM）_48290739.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SMF选择UDM策略（RMV-SMFSELUDM）_48290741.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMF选择UDM策略（ADD-SMFSELUDM）_48290735.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF选择UDM策略（LST-SMFSELUDM）_48290737.md`

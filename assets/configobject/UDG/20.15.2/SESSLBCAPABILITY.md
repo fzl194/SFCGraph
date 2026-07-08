@@ -34,7 +34,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SESSLBCAPABILITY.md`
-- 原始手册：`evidence/UDG/20.15.2/SESSLBCAPABILITY.md`
-- 原始手册：`evidence/UDG/20.15.2/SESSLBCAPABILITY.md`
-- 原始手册：`evidence/UDG/20.15.2/SESSLBCAPABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改会话均衡基线能力值（MOD-SESSLBCAPABILITY）_14794635.md`
+- 原始手册：`evidence/UDG/20.15.2/删除会话均衡基线能力值（RMV-SESSLBCAPABILITY）_27399646.md`
+- 原始手册：`evidence/UDG/20.15.2/查询会话均衡基线能力值（LST-SESSLBCAPABILITY）_27633936.md`
+- 原始手册：`evidence/UDG/20.15.2/添加会话均衡基线能力值（ADD-SESSLBCAPABILITY）_15006393.md`

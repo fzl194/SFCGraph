@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/GLBNSHHDNPLY.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBNSHHDNPLY.md`
-- 原始手册：`evidence/UDG/20.15.2/GLBNSHHDNPLY.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复NSH头增强全局策略（RTR-GLBNSHHDNPLY）_19641390.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NSH头增强全局策略（LST-GLBNSHHDNPLY）_28361119.md`
+- 原始手册：`evidence/UDG/20.15.2/配置NSH头增强全局策略（SET-GLBNSHHDNPLY）_27889291.md`

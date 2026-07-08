@@ -59,4 +59,4 @@ RMV EMMPROCTRLIMSI: SUBRANGE=IMSI_PREFIX, IMSIPRE="12345" ;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EMMPROCTRLIMSI.md`
+- 原始手册：`evidence/UNC/20.15.2/删除指定用户S1模式移动性管理流程控制参数(RMV-EMMPROCTRLIMSI)_16322793.md`

@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFFUNCSW.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFFUNCSW.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMSF功能开关（LST-SMSFFUNCSW）_04121605.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SMSF功能开关（SET-SMSFFUNCSW）_53481546.md`

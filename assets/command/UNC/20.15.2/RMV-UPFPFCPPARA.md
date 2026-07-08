@@ -61,4 +61,4 @@ RMV UPFPFCPPARA: UPFINSTANCEID="upf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UPFPFCPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF粒度PFCP参数（RMV-UPFPFCPPARA）_37197435.md`

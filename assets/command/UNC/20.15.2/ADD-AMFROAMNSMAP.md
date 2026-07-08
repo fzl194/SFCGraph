@@ -67,4 +67,4 @@ ADD AMFROAMNSMAP: HMCC="245", HMNC="38", HSST=1, HSD="123FFF", VMCC="123", VMNC=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-AMFROAMNSMAP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加漫游切片映射配置（ADD-AMFROAMNSMAP）_22678335.md`

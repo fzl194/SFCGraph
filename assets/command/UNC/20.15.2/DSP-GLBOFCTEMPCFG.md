@@ -211,4 +211,4 @@ RAN-SecondaryRAT-Usage-Report生成话单的阈值  =  3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GLBOFCTEMPCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询全局生效离线计费模板配置（DSP-GLBOFCTEMPCFG）_09897012.md`

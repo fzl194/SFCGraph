@@ -33,8 +33,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/USRCTLGGSN.md`
-- 原始手册：`evidence/UNC/20.15.2/USRCTLGGSN.md`
-- 原始手册：`evidence/UNC/20.15.2/USRCTLGGSN.md`
-- 原始手册：`evidence/UNC/20.15.2/USRCTLGGSN.md`
-- 原始手册：`evidence/UNC/20.15.2/USRCTLGGSN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除手工恢复GGSN地址(RMV-USRCTLGGSN)_26145906.md`
+- 原始手册：`evidence/UNC/20.15.2/增加手工恢复GGSN地址(ADD-USRCTLGGSN)_72345505.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复可用的GGSN地址(RES-USRCTLGGSN)_72345507.md`
+- 原始手册：`evidence/UNC/20.15.2/显示手工恢复GGSN地址状态(DSP-USRCTLGGSN)_26305716.md`
+- 原始手册：`evidence/UNC/20.15.2/查询手工恢复GGSN地址(LST-USRCTLGGSN)_72225585.md`

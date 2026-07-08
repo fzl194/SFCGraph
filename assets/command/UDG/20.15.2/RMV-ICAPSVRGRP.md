@@ -59,4 +59,4 @@ RMV ICAPSVRGRP: ICAPSVRGRPNAME="isg1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-ICAPSVRGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ICAP服务器组（RMV-ICAPSVRGRP）_32582493.md`

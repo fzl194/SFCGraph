@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DIAMPEERADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMPEERADDR.md`
-- 原始手册：`evidence/UNC/20.15.2/DIAMPEERADDR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter对端地址（RMV-DIAMPEERADDR）_09897258.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Diameter对端地址（ADD-DIAMPEERADDR）_09897257.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Diameter对端地址（LST-DIAMPEERADDR）_09897259.md`

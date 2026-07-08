@@ -31,7 +31,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SUBGP.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBGP.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBGP.md`
-- 原始手册：`evidence/UNC/20.15.2/SUBGP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改用户群(MOD-SUBGP)_72345159.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户群(RMV-SUBGP)_26305372.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用户群(ADD-SUBGP)_72225241.md`
+- 原始手册：`evidence/UNC/20.15.2/查询用户群(LST-SUBGP)_26145562.md`

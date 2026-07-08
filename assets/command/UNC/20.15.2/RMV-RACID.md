@@ -58,4 +58,4 @@ RMV RACID:RACGROUPNAME="beijing",RACSECNUM=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-RACID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除RAC组内绑定的RAC号段（RMV-RACID）_09651581.md`

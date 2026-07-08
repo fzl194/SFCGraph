@@ -63,4 +63,4 @@ MOD AMFDNNPLCY: DNNNI="huawei.com", SST=1, SD="000001", SSSW=YES, SERVINGSCOPE="
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-AMFDNNPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/修改DNN接入选择策略（MOD-AMFDNNPLCY）_96800829.md`

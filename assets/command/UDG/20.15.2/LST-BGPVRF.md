@@ -72,4 +72,4 @@ VPN路由器号自动选择  =  FALSE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-BGPVRF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP-VPN实例（LST-BGPVRF）_49801970.md`

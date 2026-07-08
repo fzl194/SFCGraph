@@ -36,6 +36,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TAIRANGELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/TAIRANGELIST.md`
-- 原始手册：`evidence/UNC/20.15.2/TAIRANGELIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NF-TAI区域信息（RMV-TAIRANGELIST）_09653841.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF-TAI区域信息（ADD-TAIRANGELIST）_09654429.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF-TAI区域信息（LST-TAIRANGELIST）_09653101.md`

@@ -68,4 +68,4 @@ IKE对等体名称  =  1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-ATTACHIKEPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/查询绑定的IKE对等体（LST-ATTACHIKEPEER）_26032193.md`

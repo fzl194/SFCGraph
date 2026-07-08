@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPCSHR.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPCSHR.md`
-- 原始手册：`evidence/UNC/20.15.2/SCCPDPCSHR.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DPC多点负荷分担记录(RMV-SCCPDPCSHR)_72345923.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DPC多点负荷分担记录(ADD-SCCPDPCSHR)_26306134.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DPC多点负荷分担记录(LST-SCCPDPCSHR)_26146324.md`

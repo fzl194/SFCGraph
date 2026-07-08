@@ -35,5 +35,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PSEUDONYPOLICY.md`
-- 原始手册：`evidence/UNC/20.15.2/PSEUDONYPOLICY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR假名化本地策略（LST-PSEUDONYPOLICY）_51175629.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CHR假名化本地策略（SET-PSEUDONYPOLICY）_51175645.md`

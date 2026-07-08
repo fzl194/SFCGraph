@@ -69,4 +69,4 @@ AES256 密码信息
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MULTREDIRECTEX.md`
+- 原始手册：`evidence/UDG/20.15.2/显示扩展的多级重定向密码（LST-MULTREDIRECTEX）_27223631.md`

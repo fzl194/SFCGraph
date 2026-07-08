@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/L2TPSTATISTICS.md`
-- 原始手册：`evidence/UDG/20.15.2/L2TPSTATISTICS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询L2TP报文统计信息（DSP-L2TPSTATISTICS）_35373533.md`
+- 原始手册：`evidence/UDG/20.15.2/清除L2TP报文统计信息（CLR-L2TPSTATISTICS）_35373534.md`

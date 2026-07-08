@@ -64,4 +64,4 @@ RMV PNFSERVICE: NFINSTANCEID="SMF_Instance_0", SRVINSTANCEID="Service_Instance_0
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-PNFSERVICE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端NF服务实例信息（RMV-PNFSERVICE）_09651474.md`

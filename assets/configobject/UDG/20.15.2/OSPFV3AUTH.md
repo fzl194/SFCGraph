@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3AUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3AUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3AUTH.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3AUTH.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPFv3认证配置（MOD-OSPFV3AUTH）_49801514.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPFv3认证配置（ADD-OSPFV3AUTH）_00600605.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3认证配置（RMV-OSPFV3AUTH）_00841553.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3进程认证配置（LST-OSPFV3AUTH）_49961174.md`

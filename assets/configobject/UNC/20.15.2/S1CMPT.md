@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/S1CMPT.md`
-- 原始手册：`evidence/UNC/20.15.2/S1CMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1接口兼容性(LST-S1CMPT)_26146238.md`
+- 原始手册：`evidence/UNC/20.15.2/设置S1接口兼容性(SET-S1CMPT)_72345837.md`

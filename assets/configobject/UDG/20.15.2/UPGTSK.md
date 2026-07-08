@@ -32,4 +32,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPGTSK.md`
+- 原始手册：`evidence/UDG/20.15.2/停止升级_补丁任务(STP-UPGTSK)_29989793.md`

@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SPECRFSPVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/SPECRFSPVALUE.md`
-- 原始手册：`evidence/UNC/20.15.2/SPECRFSPVALUE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除特征RFSP取值(RMV-SPECRFSPVALUE)_72225215.md`
+- 原始手册：`evidence/UNC/20.15.2/增加特征RFSP取值(ADD-SPECRFSPVALUE)_26145534.md`
+- 原始手册：`evidence/UNC/20.15.2/查询特征RFSP取值(LST-SPECRFSPVALUE)_26305346.md`

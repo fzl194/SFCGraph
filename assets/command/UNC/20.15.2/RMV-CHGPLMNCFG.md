@@ -57,4 +57,4 @@ RMV CHGPLMNCFG: SUBRANGE=CELL_PLMNID, MCC="123", MNC="001", APNNI="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-CHGPLMNCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除PLMN计费配置(RMV-CHGPLMNCFG)_26305206.md`

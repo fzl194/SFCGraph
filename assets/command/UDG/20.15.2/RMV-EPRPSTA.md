@@ -56,4 +56,4 @@ RMV EPRPSTA: EPRPSTANAME="huawei";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-EPRPSTA.md`
+- 原始手册：`evidence/UDG/20.15.2/删除EPRPSTA对象（RMV-EPRPSTA）_95919472.md`

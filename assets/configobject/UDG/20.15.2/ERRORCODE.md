@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ERRORCODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ERRORCODE.md`
-- 原始手册：`evidence/UDG/20.15.2/ERRORCODE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除错误码（RMV-ERRORCODE）_09678506.md`
+- 原始手册：`evidence/UDG/20.15.2/增加错误码（ADD-ERRORCODE）_09678504.md`
+- 原始手册：`evidence/UDG/20.15.2/查询错误码（LST-ERRORCODE）_09678507.md`

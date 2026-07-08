@@ -59,4 +59,4 @@ UIN SCCPDPC: DPX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UIN-SCCPDPC.md`
+- 原始手册：`evidence/UNC/20.15.2/解禁SCCP目的信令点(UIN-SCCPDPC)_26146322.md`

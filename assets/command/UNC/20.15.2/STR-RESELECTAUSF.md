@@ -59,4 +59,4 @@ STR RESELECTAUSF:AUSFID="AUSF1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/STR-RESELECTAUSF.md`
+- 原始手册：`evidence/UNC/20.15.2/启动重选AUSF（STR-RESELECTAUSF）_96766645.md`

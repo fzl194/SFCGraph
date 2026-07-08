@@ -75,4 +75,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TST-ALLOWPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/测试允许访问策略配置（TST-ALLOWPLCY）_09653106.md`

@@ -55,4 +55,4 @@ RTR PIMCTLMSG: VRFNAME="_public_",ADDRESSFAMILY=ipv4unicast;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-PIMCTLMSG.md`
+- 原始手册：`evidence/UDG/20.15.2/清除PIM实例报文统计计数（RTR-PIMCTLMSG）_50281494.md`

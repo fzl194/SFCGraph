@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-SECPOLICYAPPLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/显示应用联动默认动作（DSP-SECPOLICYAPPLNK）_50120690.md`

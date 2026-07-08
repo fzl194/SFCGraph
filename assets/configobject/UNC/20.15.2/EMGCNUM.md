@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/EMGCNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/EMGCNUM.md`
-- 原始手册：`evidence/UNC/20.15.2/EMGCNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/删除紧急号码信息表记录(RMV-EMGCNUM)_72345101.md`
+- 原始手册：`evidence/UNC/20.15.2/增加紧急号码配置信息(ADD-EMGCNUM)_26305314.md`
+- 原始手册：`evidence/UNC/20.15.2/查询紧急号码配置信息(LST-EMGCNUM)_26145504.md`

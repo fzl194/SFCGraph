@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PFCPOVERLOADRPT.md`
-- 原始手册：`evidence/UDG/20.15.2/PFCPOVERLOADRPT.md`
+- 原始手册：`evidence/UDG/20.15.2/查询过载上报开关（LST-PFCPOVERLOADRPT）_93973675.md`
+- 原始手册：`evidence/UDG/20.15.2/设置过载上报开关（SET-PFCPOVERLOADRPT）_06561540.md`

@@ -75,4 +75,4 @@ SET TXTIMER:DCCTMPLTNAME="DccTemplate",TXTIMERFLAG=TXTIMER_VALUE,TXTIMER=10;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-TXTIMER.md`
+- 原始手册：`evidence/UNC/20.15.2/设置DCC模板Tx定时器（SET-TXTIMER）_09896927.md`

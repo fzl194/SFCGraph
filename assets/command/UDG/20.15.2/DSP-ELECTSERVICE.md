@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-ELECTSERVICE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询仲裁服务状态（DSP-ELECTSERVICE）_59103974.md`

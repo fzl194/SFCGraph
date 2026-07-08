@@ -72,4 +72,4 @@ S1模式流程失败时上报选项  =  Other Procedure & Attach & Detach & Trac
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CHRLOWPERFSVRSUB.md`
+- 原始手册：`evidence/UNC/20.15.2/查询低性能CHR服务器的单据订阅条件（LST-CHRLOWPERFSVRSUB）_26145486.md`

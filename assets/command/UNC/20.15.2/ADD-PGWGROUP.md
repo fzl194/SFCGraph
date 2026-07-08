@@ -61,4 +61,4 @@ ADD PGWGROUP: GRPID=2, DESC="M2M P-GW Group";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PGWGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加P-GW组(ADD-PGWGROUP)_72225385.md`

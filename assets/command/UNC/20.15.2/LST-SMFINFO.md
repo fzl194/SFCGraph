@@ -69,4 +69,4 @@ PLMN间SMF名称  =  smf1.cluster1.net1.smf.5gc.mnc012.mcc345.3gppnetwork.org
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SMF信息（LST-SMFINFO）_09651747.md`

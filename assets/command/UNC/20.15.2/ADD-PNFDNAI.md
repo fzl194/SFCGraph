@@ -74,4 +74,4 @@ ADD PNFDNAI: INDEX=1,NFINSTANCEID="UPF_Instance_0", DNAI="huawei.com", PNFDNNIND
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PNFDNAI.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端NF的DNAI信息（ADD-PNFDNAI）_09652965.md`

@@ -57,4 +57,4 @@ RMV M2MSERVERGRP:GROUPNAME="m2msrvgroup01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-M2MSERVERGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除M2M服务器组（RMV-M2MSERVERGRP）_73321243.md`

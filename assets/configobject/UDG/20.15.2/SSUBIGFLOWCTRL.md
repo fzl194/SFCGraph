@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SSUBIGFLOWCTRL.md`
-- 原始手册：`evidence/UDG/20.15.2/SSUBIGFLOWCTRL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询智能板的大流判断速率阈值（LST-SSUBIGFLOWCTRL）_28361127.md`
+- 原始手册：`evidence/UDG/20.15.2/设置智能板的大流判断速率阈值（SET-SSUBIGFLOWCTRL）_27889299.md`

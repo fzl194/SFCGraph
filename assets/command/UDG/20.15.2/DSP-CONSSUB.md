@@ -64,4 +64,4 @@ RETCODE = 0 操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DSP-CONSSUB.md`
+- 原始手册：`evidence/UDG/20.15.2/显示消费者订阅信息（DSP-CONSSUB）_00600565.md`

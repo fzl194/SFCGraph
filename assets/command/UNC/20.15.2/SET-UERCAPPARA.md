@@ -58,4 +58,4 @@ SET UERCAPPARA: REPORTALM=20;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-UERCAPPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/设置UE-Radio-Capability信元参数（SET-UERCAPPARA）_72749349.md`

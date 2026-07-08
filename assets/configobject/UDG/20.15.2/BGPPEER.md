@@ -26,9 +26,9 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/BGPPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEER.md`
-- 原始手册：`evidence/UDG/20.15.2/BGPPEER.md`
+- 原始手册：`evidence/UDG/20.15.2/修改BGP对等体（MOD-BGPPEER）_00440489.md`
+- 原始手册：`evidence/UDG/20.15.2/删除BGP对等体（RMV-BGPPEER）_00841537.md`
+- 原始手册：`evidence/UDG/20.15.2/增加BGP对等体（ADD-BGPPEER）_49801602.md`
+- 原始手册：`evidence/UDG/20.15.2/查询BGP对等体（LST-BGPPEER）_50120942.md`
+- 原始手册：`evidence/UDG/20.15.2/刷新BGP对等体（SYN-BGPPEER）_00441157.md`
+- 原始手册：`evidence/UDG/20.15.2/复位BGP邻居（RBL-BGPPEER）_49802162.md`

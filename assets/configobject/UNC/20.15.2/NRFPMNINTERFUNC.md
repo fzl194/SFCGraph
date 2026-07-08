@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFPMNINTERFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPMNINTERFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPMNINTERFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFPMNINTERFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/修改基于对端PLMN国际漫游功能参数（MOD-NRFPMNINTERFUNC）_25570271.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于对端PLMN国际漫游功能参数（RMV-NRFPMNINTERFUNC）_79850556.md`
+- 原始手册：`evidence/UNC/20.15.2/增加基于对端PLMN国际漫游功能参数（ADD-NRFPMNINTERFUNC）_79850554.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于对端PLMN国际漫游功能参数（LST-NRFPMNINTERFUNC）_25448787.md`

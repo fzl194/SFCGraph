@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N7RCVATTRCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/N7RCVATTRCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N7接收信元处理控制（LST-N7RCVATTRCTRL）_09651331.md`
+- 原始手册：`evidence/UNC/20.15.2/设置N7接收信元处理控制（SET-N7RCVATTRCTRL）_09653677.md`

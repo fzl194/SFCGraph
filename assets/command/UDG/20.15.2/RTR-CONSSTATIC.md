@@ -51,4 +51,4 @@ RTR CONSSTATIC:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RTR-CONSSTATIC.md`
+- 原始手册：`evidence/UDG/20.15.2/清除消费者消息统计计数（RTR-CONSSTATIC）_49802482.md`

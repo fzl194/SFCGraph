@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/AMFNSSECPLCY.md`
-- 原始手册：`evidence/UNC/20.15.2/AMFNSSECPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF切片安全策略（LST-AMFNSSECPLCY）_97815871.md`
+- 原始手册：`evidence/UNC/20.15.2/设置AMF切片安全策略（SET-AMFNSSECPLCY）_97735773.md`

@@ -70,4 +70,4 @@ SET QOSCTRL USERTYPE=VISITING, RATTYPE=GETRAN-1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-QOSCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/设置QoS控制配置（SET-QOSCTRL）_09653269.md`

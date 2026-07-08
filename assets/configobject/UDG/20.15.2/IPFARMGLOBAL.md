@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IPFARMGLOBAL.md`
-- 原始手册：`evidence/UDG/20.15.2/IPFARMGLOBAL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPFarm全局参数（LST-IPFARMGLOBAL）_86526405.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPFarm全局参数（SET-IPFARMGLOBAL）_82837062.md`

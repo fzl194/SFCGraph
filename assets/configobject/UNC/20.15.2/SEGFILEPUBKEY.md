@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEGFILEPUBKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGFILEPUBKEY.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGFILEPUBKEY.md`
+- 原始手册：`evidence/UNC/20.15.2/删除号段配置文件的签名验证公钥（RMV-SEGFILEPUBKEY）_09652232.md`
+- 原始手册：`evidence/UNC/20.15.2/增加号段配置文件的签名验证公钥（ADD-SEGFILEPUBKEY）_09652608.md`
+- 原始手册：`evidence/UNC/20.15.2/查询号段配置文件的签名验证公钥（LST-SEGFILEPUBKEY）_09653001.md`

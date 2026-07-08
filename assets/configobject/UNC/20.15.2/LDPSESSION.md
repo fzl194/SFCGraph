@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LDPSESSION.md`
-- 原始手册：`evidence/UNC/20.15.2/LDPSESSION.md`
+- 原始手册：`evidence/UNC/20.15.2/显示LDP会话（DSP-LDPSESSION）_50281462.md`
+- 原始手册：`evidence/UNC/20.15.2/重启LDP会话（RBL-LDPSESSION）_00866609.md`

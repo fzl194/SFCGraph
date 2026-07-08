@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNIPALLOCRULE.md`
-- 原始手册：`evidence/UNC/20.15.2/APNIPALLOCRULE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的地址分配规则（LST-APNIPALLOCRULE）_49644918.md`
+- 原始手册：`evidence/UNC/20.15.2/设置基于APN的地址分配规则（SET-APNIPALLOCRULE）_49644932.md`

@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/CFCACHEPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/CFCACHEPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询内容过滤缓存参数（LST-CFCACHEPARA）_50950414.md`
+- 原始手册：`evidence/UDG/20.15.2/设置内容过滤缓存参数（SET-CFCACHEPARA）_54389381.md`

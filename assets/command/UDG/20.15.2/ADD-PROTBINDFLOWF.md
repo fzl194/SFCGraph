@@ -68,4 +68,4 @@ ADD PROTBINDFLOWF:FLOWFILTERNAME="testflowfiltername",PROTOCOLNAME="http",L7FILT
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-PROTBINDFLOWF.md`
+- 原始手册：`evidence/UDG/20.15.2/增加流过滤器协议绑定关系（ADD-PROTBINDFLOWF）_82837370.md`

@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPDIAMDICT.md`
+- 原始手册：`evidence/UDG/20.15.2/加载Diameter字典（LOD-UPDIAMDICT）_97314553.md`

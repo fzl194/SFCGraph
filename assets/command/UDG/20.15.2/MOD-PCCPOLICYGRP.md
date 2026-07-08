@@ -84,4 +84,4 @@ MOD PCCPOLICYGRP:PCCPOLICYGRPNM="TestPccPolicyGrpNm",URRGROUPNAME="TestURRGrpNam
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-PCCPOLICYGRP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改PCC策略组（MOD-PCCPOLICYGRP）_86528530.md`

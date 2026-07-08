@@ -73,4 +73,4 @@ MOD NSE: NSEI=10, BSSID=1, FLUSTHT=1000, PFC=YES, CBL=YES, INR=YES, ARP=YES, RAC
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/MOD-NSE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改信令实体(MOD-NSE)_26305838.md`

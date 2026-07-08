@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/AFHTTPSCTCK.md`
-- 原始手册：`evidence/UDG/20.15.2/AFHTTPSCTCK.md`
-- 原始手册：`evidence/UDG/20.15.2/AFHTTPSCTCK.md`
+- 原始手册：`evidence/UDG/20.15.2/删除HTTPS证书检查功能配置（RMV-AFHTTPSCTCK）_01402348.md`
+- 原始手册：`evidence/UDG/20.15.2/增加HTTPS证书检查功能配置（ADD-AFHTTPSCTCK）_00708650.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTPS证书检查功能配置（LST-AFHTTPSCTCK）_01168648.md`

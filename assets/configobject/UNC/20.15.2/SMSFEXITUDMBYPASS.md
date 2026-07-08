@@ -30,5 +30,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SMSFEXITUDMBYPASS.md`
-- 原始手册：`evidence/UNC/20.15.2/SMSFEXITUDMBYPASS.md`
+- 原始手册：`evidence/UNC/20.15.2/停止用户退出UDM-Bypass任务（STP-SMSFEXITUDMBYPASS）_04735169.md`
+- 原始手册：`evidence/UNC/20.15.2/启动用户退出UDM-Bypass任务（STR-SMSFEXITUDMBYPASS）_54655106.md`

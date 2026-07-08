@@ -66,4 +66,4 @@ S-GW ACL功能  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SGWACLFUNC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询SGW-ACL功能（LST-SGWACLFUNC）_82837745.md`

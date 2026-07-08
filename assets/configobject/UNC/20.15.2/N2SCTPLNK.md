@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/N2SCTPLNK.md`
-- 原始手册：`evidence/UNC/20.15.2/N2SCTPLNK.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N2接口SCTP链路(RMV-N2SCTPLNK)_96296530.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2接口SCTP链路状态(DSP-N2SCTPLNK)_07993874.md`

@@ -61,4 +61,4 @@ ADD PERFGBPAGING: LAI="123031111",RAC="08";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PERFGBPAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/增加Gb接口寻呼数据(ADD-PERFGBPAGING)_26306002.md`

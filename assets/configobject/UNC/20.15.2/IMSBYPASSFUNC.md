@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IMSBYPASSFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/IMSBYPASSFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询语音PCF_PCRF故障Bypass场景功能（LST-IMSBYPASSFUNC）_13938054.md`
+- 原始手册：`evidence/UNC/20.15.2/设置语音PCF_PCRF故障Bypass场景功能（SET-IMSBYPASSFUNC）_49496669.md`

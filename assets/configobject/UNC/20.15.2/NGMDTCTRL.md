@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGMDTCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/NGMDTCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-MDT控制参数（LST-NGMDTCTRL）_46573523.md`
+- 原始手册：`evidence/UNC/20.15.2/设置5G-MDT控制参数（SET-NGMDTCTRL）_99813710.md`

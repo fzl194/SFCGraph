@@ -79,4 +79,4 @@ UAC GTP请求消息的最大尝试发送次数  =  5
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-UPGTPPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径相关属性（LST-UPGTPPATH）_82837228.md`

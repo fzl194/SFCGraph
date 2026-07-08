@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LDPPEERPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPPEERPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPPEERPOLICY.md`
-- 原始手册：`evidence/UDG/20.15.2/LDPPEERPOLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/修改LDP邻居策略（MOD-LDPPEERPOLICY）_49961506.md`
+- 原始手册：`evidence/UDG/20.15.2/删除LDP邻居策略（RMV-LDPPEERPOLICY）_00866437.md`
+- 原始手册：`evidence/UDG/20.15.2/查询LDP邻居策略配置（LST-LDPPEERPOLICY）_00866321.md`
+- 原始手册：`evidence/UDG/20.15.2/添加LDP邻居策略（ADD-LDPPEERPOLICY）_00865845.md`

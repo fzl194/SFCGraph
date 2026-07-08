@@ -60,4 +60,4 @@ RMV TNFBINDGRP: TNFGRPINDEX=0, TNFINSINDEX=1;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TNFBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除目标NF实例绑定组（RMV-TNFBINDGRP）_09653620.md`

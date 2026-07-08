@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PAERESOVLDTRHD.md`
-- 原始手册：`evidence/UNC/20.15.2/PAERESOVLDTRHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE关键资源不足告警参数（LST-PAERESOVLDTRHD）_25021333.md`
+- 原始手册：`evidence/UNC/20.15.2/设置PAE关键资源不足告警参数（SET-PAERESOVLDTRHD）_53828096.md`

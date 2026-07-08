@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNSOFTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/APNSOFTPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/APNSOFTPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复APN软参记录（RTR-APNSOFTPARA）_82837029.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN软参记录（LST-APNSOFTPARA）_86526445.md`
+- 原始手册：`evidence/UDG/20.15.2/配置APN软参记录（SET-APNSOFTPARA）_82837027.md`

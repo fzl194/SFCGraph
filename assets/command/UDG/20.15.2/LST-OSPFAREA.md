@@ -81,4 +81,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-OSPFAREA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPF区域配置（LST-OSPFAREA）_49801990.md`

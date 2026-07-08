@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IKESA.md`
-- 原始手册：`evidence/UNC/20.15.2/IKESA.md`
+- 原始手册：`evidence/UNC/20.15.2/恢复IKE安全联盟（RTR-IKESA）_80592514.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IKE安全联盟（DSP-IKESA）_25912245.md`

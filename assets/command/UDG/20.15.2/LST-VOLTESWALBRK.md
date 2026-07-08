@@ -68,4 +68,4 @@ VoLTE吞字断续检测参数
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VOLTESWALBRK.md`
+- 原始手册：`evidence/UDG/20.15.2/显示VoLTE滑窗相关参数（LST-VOLTESWALBRK）_69418608.md`

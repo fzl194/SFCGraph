@@ -71,4 +71,4 @@ PPP信令       46
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-SIGDSCP.md`
+- 原始手册：`evidence/UDG/20.15.2/查询信令报文DSCP值（LST-SIGDSCP）_82837691.md`

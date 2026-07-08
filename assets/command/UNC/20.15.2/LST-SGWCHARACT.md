@@ -102,4 +102,4 @@ S-GW支持User Location Information For S-GW  =  不支持
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGWCHARACT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S-GW特性对接配置(LST-SGWCHARACT)_72225649.md`

@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MECAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/查询5G-MEC区域信息（LST-MECAREA）_85091973.md`

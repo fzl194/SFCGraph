@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CEAORIGHOSTCHK.md`
-- 原始手册：`evidence/UNC/20.15.2/CEAORIGHOSTCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对Gy接口的cea消息中的Origin-Host检查开关（LST-CEAORIGHOSTCHK）_09897241.md`
+- 原始手册：`evidence/UNC/20.15.2/设置对Gy接口的cea消息中的Origin-Host检查开关（SET-CEAORIGHOSTCHK）_09897240.md`

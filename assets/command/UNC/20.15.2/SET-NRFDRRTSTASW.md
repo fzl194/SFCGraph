@@ -61,4 +61,4 @@ SET NRFDRRTSTASW: FCSWITCH=FUNC_ON;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-NRFDRRTSTASW.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NRF双活备份状态忽略开关（SET-NRFDRRTSTASW）_52071375.md`

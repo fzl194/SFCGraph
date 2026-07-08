@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/FEICOM_SMOOTH.md`
+- 原始手册：`evidence/UDG/20.15.2/启动一次FEI与FES之间的数据平滑（STR-FEICOM_SMOOTH）_00601137.md`

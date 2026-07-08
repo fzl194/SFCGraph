@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHRCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CHRCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CHR配置（LST-CHRCFG）_26305426.md`
+- 原始手册：`evidence/UNC/20.15.2/设置CHR配置（SET-CHRCFG）_72225295.md`

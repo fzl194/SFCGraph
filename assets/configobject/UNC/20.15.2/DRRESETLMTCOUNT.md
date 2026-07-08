@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DRRESETLMTCOUNT.md`
-- 原始手册：`evidence/UNC/20.15.2/DRRESETLMTCOUNT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询复位限制的次数（LST-DRRESETLMTCOUNT）_42155864.md`
+- 原始手册：`evidence/UNC/20.15.2/设置复位限制的次数（SET-DRRESETLMTCOUNT）_93394829.md`

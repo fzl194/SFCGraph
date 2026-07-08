@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NRFNFINFOFMT.md`
-- 原始手册：`evidence/UNC/20.15.2/NRFNFINFOFMT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NF私有信息格式（LST-NRFNFINFOFMT）_44888613.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NF私有信息格式（SET-NRFNFINFOFMT）_98288628.md`

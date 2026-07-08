@@ -68,4 +68,4 @@ M2M服务器组名称  =  m2msrvgroup01
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-M2MSVRGRPBIND.md`
+- 原始手册：`evidence/UNC/20.15.2/查询M2M服务器组绑定关系（LST-M2MSVRGRPBIND）_73321235.md`

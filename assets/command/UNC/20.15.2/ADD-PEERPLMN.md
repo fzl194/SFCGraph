@@ -110,4 +110,4 @@ ADD PEERPLMN: AREA=TA, MCC="460", MNC="01", TAC="2301", SUBRANGE=IMSI_PREFIX, IM
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PEERPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对等PLMN配置(ADD-PEERPLMN)_26305906.md`

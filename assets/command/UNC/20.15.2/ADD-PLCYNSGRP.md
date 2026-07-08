@@ -62,4 +62,4 @@ ADD PLCYNSGRP: NSGRPID=1, DESC="for eMBB";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PLCYNSGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用于策略控制的网络切片群组（ADD-PLCYNSGRP）_25120876.md`

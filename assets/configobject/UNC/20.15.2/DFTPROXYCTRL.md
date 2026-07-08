@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DFTPROXYCTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/DFTPROXYCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询缺省代理控制配置（LST-DFTPROXYCTRL）_21861965.md`
+- 原始手册：`evidence/UNC/20.15.2/设置缺省的代理功能（SET-DFTPROXYCTRL）_21861997.md`

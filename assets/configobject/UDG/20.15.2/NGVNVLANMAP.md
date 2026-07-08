@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGVNVLANMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNVLANMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNVLANMAP.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNVLANMAP.md`
+- 原始手册：`evidence/UDG/20.15.2/修改基于5G-LAN组的VLAN映射信息（MOD-NGVNVLANMAP）_26352691.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于5G-LAN组的VLAN映射信息（RMV-NGVNVLANMAP）_23157718.md`
+- 原始手册：`evidence/UDG/20.15.2/增加基于5G-LAN组的VLAN映射信息（ADD-NGVNVLANMAP）_26514785.md`
+- 原始手册：`evidence/UDG/20.15.2/查询基于5G-LAN组的VLAN映射信息（LST-NGVNVLANMAP）_22918684.md`

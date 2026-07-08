@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/PLGPKG.md`
-- 原始手册：`evidence/UDG/20.15.2/PLGPKG.md`
-- 原始手册：`evidence/UDG/20.15.2/PLGPKG.md`
-- 原始手册：`evidence/UDG/20.15.2/PLGPKG.md`
-- 原始手册：`evidence/UDG/20.15.2/PLGPKG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除扩展包（RMV-PLGPKG）_59103532.md`
+- 原始手册：`evidence/UDG/20.15.2/加载扩展包（LOD-PLGPKG）_59103740.md`
+- 原始手册：`evidence/UDG/20.15.2/显示扩展包版本信息（DSP-PLGPKG）_59104292.md`
+- 原始手册：`evidence/UDG/20.15.2/查询加载的扩展包（LST-PLGPKG）_59103370.md`
+- 原始手册：`evidence/UDG/20.15.2/激活扩展包（ACT-PLGPKG）_59103877.md`

@@ -66,4 +66,4 @@ TOS策略  =  不使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-COSTOS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询COS-TOS映射策略（LST-COSTOS）_82837706.md`

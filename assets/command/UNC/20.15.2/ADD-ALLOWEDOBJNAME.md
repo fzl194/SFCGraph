@@ -64,4 +64,4 @@ ADD ALLOWEDOBJNAME: OBJNAME="objname001";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ALLOWEDOBJNAME.md`
+- 原始手册：`evidence/UNC/20.15.2/增加授权控制对象（ADD-ALLOWEDOBJNAME）_40386783.md`

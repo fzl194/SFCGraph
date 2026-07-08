@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/QCIPAGINGINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/QCIPAGINGINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/QCIPAGINGINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/QCIPAGINGINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/修改QCI寻呼策略参数配置(MOD-QCIPAGINGINFO)_72345129.md`
+- 原始手册：`evidence/UNC/20.15.2/删除QCI寻呼策略参数配置(RMV-QCIPAGINGINFO)_26305342.md`
+- 原始手册：`evidence/UNC/20.15.2/增加QCI寻呼策略参数配置(ADD-QCIPAGINGINFO)_72225211.md`
+- 原始手册：`evidence/UNC/20.15.2/查询QCI寻呼策略参数配置(LST-QCIPAGINGINFO)_26145532.md`

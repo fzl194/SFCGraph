@@ -55,4 +55,4 @@ LST PCCCHGMODEBYPCFID: PCFINSID="pcf1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PCCCHGMODEBYPCFID.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于PCF的计费策略接口类型（LST-PCCCHGMODEBYPCFID）_96242347.md`

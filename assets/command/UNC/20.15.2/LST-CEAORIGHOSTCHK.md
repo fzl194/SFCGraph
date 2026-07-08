@@ -67,4 +67,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CEAORIGHOSTCHK.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对Gy接口的cea消息中的Origin-Host检查开关（LST-CEAORIGHOSTCHK）_09897241.md`

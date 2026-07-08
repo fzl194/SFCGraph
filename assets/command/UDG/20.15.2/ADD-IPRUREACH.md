@@ -61,4 +61,4 @@ ADD IPRUREACH:VPNNAME="vrf",IPVERSION=ipv4unicast,DESTADDR4="10.1.1.1",SOURCERU=
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADD-IPRUREACH.md`
+- 原始手册：`evidence/UDG/20.15.2/增加RU到网关的可达性检测配置（ADD-IPRUREACH）_49802266.md`

@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/COMMONSOFTPARAOFBIT.md`
-- 原始手册：`evidence/UNC/20.15.2/COMMONSOFTPARAOFBIT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询公共软件参数比特位（LST-COMMONSOFTPARAOFBIT）_26494589.md`
+- 原始手册：`evidence/UNC/20.15.2/设置公共软件参数比特位（SET-COMMONSOFTPARAOFBIT）_26494601.md`

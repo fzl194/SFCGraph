@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CDRDELPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/CDRDELPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改话单删除参数（MOD-CDRDELPARA）_51174269.md`
+- 原始手册：`evidence/UNC/20.15.2/查询话单删除参数（LST-CDRDELPARA）_51174270.md`

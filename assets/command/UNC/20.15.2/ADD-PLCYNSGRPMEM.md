@@ -61,4 +61,4 @@ ADD PLCYNSGRPMEM: NSGRPID=6, NSIDX=18;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PLCYNSGRPMEM.md`
+- 原始手册：`evidence/UNC/20.15.2/增加用于策略控制的网络切片群组成员（ADD-PLCYNSGRPMEM）_25120877.md`

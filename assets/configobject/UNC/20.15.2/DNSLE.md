@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DNSLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSLE.md`
-- 原始手册：`evidence/UNC/20.15.2/DNSLE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS-Client-IP与DNS实体的绑定关系(RMV-DNSLE)_26305698.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNS实体绑定DNS-Client-IP(ADD-DNSLE)_72225567.md`
+- 原始手册：`evidence/UNC/20.15.2/查询DNS-Client-IP与DNS实体的绑定关系(LST-DNSLE)_72345489.md`

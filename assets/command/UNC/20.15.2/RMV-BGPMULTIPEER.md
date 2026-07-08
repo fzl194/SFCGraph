@@ -55,4 +55,4 @@ RMV BGPMULTIPEER:VRFNAME="vrf1",PEERADDR="10.2.2.2",SOURCEIFNAME="Ethernet66/0/3
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-BGPMULTIPEER.md`
+- 原始手册：`evidence/UNC/20.15.2/删除BGP多源对等体（RMV-BGPMULTIPEER）_50281170.md`

@@ -58,4 +58,4 @@ RMV UPSCTPTEMPLATE: SCTPTEMPLNAME="sctp_tp1";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPSCTPTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除SCTP模板（RMV-UPSCTPTEMPLATE）_97314587.md`

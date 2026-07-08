@@ -66,4 +66,4 @@ ADD EPLMNGRP: GRPIDX=0, PLMNIDX=0, USRGRPID=1, TACGRPID=3, DESC="for ServingPLMN
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-EPLMNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加等价PLMN组（ADD-EPLMNGRP）_09653623.md`

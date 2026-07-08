@@ -25,4 +25,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGLCSCTX.md`
+- 原始手册：`evidence/UNC/20.15.2/显示5G定位上下文信息（DSP-NGLCSCTX）_33696293.md`

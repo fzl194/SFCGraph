@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IPSAGING.md`
-- 原始手册：`evidence/UNC/20.15.2/IPSAGING.md`
+- 原始手册：`evidence/UNC/20.15.2/修改IPS老化配置（MOD-IPSAGING）_59554659.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPS老化配置（LST-IPSAGING）_14954720.md`

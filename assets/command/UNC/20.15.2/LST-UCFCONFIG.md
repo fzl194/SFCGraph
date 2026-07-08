@@ -59,4 +59,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-UCFCONFIG.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UCF文件管理规格配置（LST-UCFCONFIG）_63673349.md`

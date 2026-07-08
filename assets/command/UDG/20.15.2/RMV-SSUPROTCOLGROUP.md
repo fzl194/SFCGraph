@@ -57,4 +57,4 @@ RMV SSUPROTCOLGROUP: DEFPRTGRPNAME="testadc", PROTOCOLNAME="adc";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SSUPROTCOLGROUP.md`
+- 原始手册：`evidence/UDG/20.15.2/删除基于协议的质差检测策略（RMV-SSUPROTCOLGROUP）_09982392.md`

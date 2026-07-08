@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/IKEIPSECSA.md`
-- 原始手册：`evidence/UDG/20.15.2/IKEIPSECSA.md`
+- 原始手册：`evidence/UDG/20.15.2/恢复IPSEC安全联盟（RTR-IKEIPSECSA）_25830703.md`
+- 原始手册：`evidence/UDG/20.15.2/显示IKE-IPsec安全联盟（DSP-IKEIPSECSA）_80910988.md`

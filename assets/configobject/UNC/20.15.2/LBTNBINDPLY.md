@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LBTNBINDPLY.md`
+- 原始手册：`evidence/UNC/20.15.2/查询业务服务ID与隧道组ID的关系（DSP-LBTNBINDPLY）_29627087.md`

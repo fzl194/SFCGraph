@@ -74,4 +74,4 @@ NF实例标识集合  =  NULL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-NRFNFATTRVRY.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NF属性冲突核验记录（DSP-NRFNFATTRVRY）_35519269.md`

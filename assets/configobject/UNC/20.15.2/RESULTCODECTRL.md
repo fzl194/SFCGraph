@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/RESULTCODECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/修改返回码控制（MOD-RESULTCODECTRL）_09897085.md`
+- 原始手册：`evidence/UNC/20.15.2/删除返回码控制（RMV-RESULTCODECTRL）_09897086.md`
+- 原始手册：`evidence/UNC/20.15.2/增加返回码控制（ADD-RESULTCODECTRL）_09897084.md`
+- 原始手册：`evidence/UNC/20.15.2/查询返回码控制（LST-RESULTCODECTRL）_09897087.md`

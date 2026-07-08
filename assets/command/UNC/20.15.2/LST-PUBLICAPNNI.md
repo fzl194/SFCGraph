@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PUBLICAPNNI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询公共APN-NI配置(LST-PUBLICAPNNI)_26305492.md`

@@ -62,4 +62,4 @@ RMV UPDIAMLOCINFO:HOSTNAME="test";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-UPDIAMLOCINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/删除Diameter本端信息（RMV-UPDIAMLOCINFO）_45195180.md`

@@ -28,7 +28,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CFGSNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/CFGSNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/CFGSNSSAI.md`
-- 原始手册：`evidence/UNC/20.15.2/CFGSNSSAI.md`
+- 原始手册：`evidence/UNC/20.15.2/修改支持的S-NSSAI（MOD-CFGSNSSAI）_09652681.md`
+- 原始手册：`evidence/UNC/20.15.2/删除支持的S-NSSAI（RMV-CFGSNSSAI）_09654364.md`
+- 原始手册：`evidence/UNC/20.15.2/增加支持的S-NSSAI（ADD-CFGSNSSAI）_09652955.md`
+- 原始手册：`evidence/UNC/20.15.2/查询支持的S-NSSAI（LST-CFGSNSSAI）_09651857.md`

@@ -61,4 +61,4 @@ ADD SMFADDRLOCWL: MSISDN="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMFADDRLOCWL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加位置区域地址分配用户白名单（ADD-SMFADDRLOCWL）_35273615.md`

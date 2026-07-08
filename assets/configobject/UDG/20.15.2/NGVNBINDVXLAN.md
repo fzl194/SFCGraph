@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NGVNBINDVXLAN.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNBINDVXLAN.md`
-- 原始手册：`evidence/UDG/20.15.2/NGVNBINDVXLAN.md`
+- 原始手册：`evidence/UDG/20.15.2/删除5G-LAN实例绑定VXLAN组配置（RMV-NGVNBINDVXLAN）_12316747.md`
+- 原始手册：`evidence/UDG/20.15.2/增加5G-LAN实例绑定VXLAN组（ADD-NGVNBINDVXLAN）_25397182.md`
+- 原始手册：`evidence/UDG/20.15.2/查询5G-LAN实例绑定VXLAN组（LST-NGVNBINDVXLAN）_12222377.md`

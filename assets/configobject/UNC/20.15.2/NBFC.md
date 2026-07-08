@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NBFC.md`
-- 原始手册：`evidence/UNC/20.15.2/NBFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查看NB流控数据(LST-NBFC)_72345765.md`
+- 原始手册：`evidence/UNC/20.15.2/设置NB流控参数(SET-NBFC)_26305974.md`

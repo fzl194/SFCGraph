@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CCLIMITRC.md`
-- 原始手册：`evidence/UNC/20.15.2/CCLIMITRC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询在线计费欠费返回码（LST-CCLIMITRC）_09896951.md`
+- 原始手册：`evidence/UNC/20.15.2/设置在线计费欠费结果码（SET-CCLIMITRC）_09896950.md`

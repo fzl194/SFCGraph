@@ -68,4 +68,4 @@ G_1，管理员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-TRC_CFG.md`
+- 原始手册：`evidence/UNC/20.15.2/设置跟踪参数(SET-TRC_CFG)_26305212.md`

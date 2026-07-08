@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYNCFILESTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对账文件状态(DSP-SYNCFILESTATUS)_47679431.md`

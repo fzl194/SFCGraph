@@ -80,4 +80,4 @@ N14接口是否携带PEIPS信元以及寻呼分组标识  =  否
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-AMFSBICMPT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询AMF服务化接口兼容性参数（LST-AMFSBICMPT）_48331685.md`

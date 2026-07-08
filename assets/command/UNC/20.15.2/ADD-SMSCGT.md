@@ -56,4 +56,4 @@ ADD SMSCGT: GT="123456";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SMSCGT.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SMSC的GT（ADD-SMSCGT）_74378480.md`

@@ -60,4 +60,4 @@ RMV NFMSISDN: NFGROUPID="nfgroupid-city1", SEGSTART="11111", SEGEND="99999";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-NFMSISDN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除MSISDN号段（RMV-NFMSISDN）_09653751.md`

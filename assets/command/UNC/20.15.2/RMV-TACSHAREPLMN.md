@@ -56,4 +56,4 @@ RMV TACSHAREPLMN: TAC="0x5800";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-TACSHAREPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/删除基于区域的PLMN管理(RMV-TACSHAREPLMN)_83862446.md`

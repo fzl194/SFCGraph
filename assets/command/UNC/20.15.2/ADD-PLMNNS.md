@@ -67,4 +67,4 @@ ADD PLMNNS: NSIDX=8, PLMNIDX=0, SST=1, SD="010101", STATE=ACTIVE, NSSCOPE=GLOBAL
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-PLMNNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加网络切片（ADD-PLMNNS）_09652262.md`

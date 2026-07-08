@@ -71,4 +71,4 @@ segdata1591149233424568600.zip  IMSI      ausf     download zip file err,please 
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHK-SEGFILE.md`
+- 原始手册：`evidence/UNC/20.15.2/检查导入号段配置文件合法性（CHK-SEGFILE）_50738958.md`

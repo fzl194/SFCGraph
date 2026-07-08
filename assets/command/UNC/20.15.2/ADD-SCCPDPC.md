@@ -78,4 +78,4 @@ ADD SCCPDPC: DPX=1, OPX=1, DPC="0x12", LDP=LOADSHARE, SDPX=2, DPN="rnc";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCCPDPC.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SCCP目的信令点(ADD-SCCPDPC)_26306130.md`

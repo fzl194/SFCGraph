@@ -85,4 +85,4 @@ SET SMIPTRANSTYPE:SGWS11CIPTYPE=DUAL;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SMIPTRANSTYPE.md`
+- 原始手册：`evidence/UNC/20.15.2/设置会话管理接口IP传输类型（SET-SMIPTRANSTYPE）_12701673.md`

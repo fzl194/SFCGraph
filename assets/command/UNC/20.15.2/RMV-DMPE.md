@@ -58,4 +58,4 @@ RMV DMPE: PEERIDX=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-DMPE.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter对端实体(RMV-DMPE)_26306096.md`

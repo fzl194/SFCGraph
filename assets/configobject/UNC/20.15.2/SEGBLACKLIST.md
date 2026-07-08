@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SEGBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGBLACKLIST.md`
-- 原始手册：`evidence/UNC/20.15.2/SEGBLACKLIST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除导入号段黑名单（RMV-SEGBLACKLIST）_96242990.md`
+- 原始手册：`evidence/UNC/20.15.2/增加导入号段黑名单（ADD-SEGBLACKLIST）_73321228.md`
+- 原始手册：`evidence/UNC/20.15.2/查询导入号段黑名单（LST-SEGBLACKLIST）_96242447.md`

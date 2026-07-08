@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFSMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSMFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFSMFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端SMF的信息（RMV-PNFSMFINFO）_09653763.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端SMF的信息（ADD-PNFSMFINFO）_09653822.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端SMF的信息（LST-PNFSMFINFO）_09651351.md`

@@ -65,4 +65,4 @@ ADD NFNS: NFTYPE=NfAMF, NSIDX=11, DESC="add urllc ns for amf";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-NFNS.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NF支持的网络切片（ADD-NFNS）_09651407.md`

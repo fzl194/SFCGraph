@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGTALISTPAGINGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTALISTPAGINGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTALISTPAGINGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/NGTALISTPAGINGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改N2模式TALIST寻呼不重发TAC区间（MOD-NGTALISTPAGINGCFG）_08867405.md`
+- 原始手册：`evidence/UNC/20.15.2/删除N2模式TALIST寻呼不重发TAC区间（RMV-NGTALISTPAGINGCFG）_09027353.md`
+- 原始手册：`evidence/UNC/20.15.2/增加N2模式TALIST寻呼不重发TAC区间（ADD-NGTALISTPAGINGCFG）_61147454.md`
+- 原始手册：`evidence/UNC/20.15.2/查询N2模式TALIST寻呼不重发TAC区间（LST-NGTALISTPAGINGCFG）_61627198.md`

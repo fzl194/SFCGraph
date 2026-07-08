@@ -67,4 +67,4 @@ ADD MVNONET: MVNOMCC="460", MVNOMNC="00", MATCHIMSI="111", MVNOCC="860", MVNOID=
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MVNONET.md`
+- 原始手册：`evidence/UNC/20.15.2/增加MVNO网络配置信息(ADD-MVNONET)_72345663.md`

@@ -68,4 +68,4 @@ ADD MPACIPV4RULE:POLICYNAME="policyV4",RULENAME="name-test",ACTION=deny,PROTTYPE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-MPACIPV4RULE.md`
+- 原始手册：`evidence/UNC/20.15.2/增加IPv4-MPAC策略规则（ADD-MPACIPV4RULE）_49802318.md`

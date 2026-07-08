@@ -58,4 +58,4 @@ NWDAF事件类型  =  QOS分析
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NWDAFINFOEXT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NWDAF扩展信息（LST-NWDAFINFOEXT）_14059357.md`

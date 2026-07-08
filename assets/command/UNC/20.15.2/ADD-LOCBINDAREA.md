@@ -66,4 +66,4 @@ ADD LOCBINDAREA: LOCALITY="locality1",AREANAME="area1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-LOCBINDAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF位置信息与该UPF优先支持的服务区的绑定关系（ADD-LOCBINDAREA）_09653286.md`

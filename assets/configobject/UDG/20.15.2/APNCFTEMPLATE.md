@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNCFTEMPLATE.md`
-- 原始手册：`evidence/UDG/20.15.2/APNCFTEMPLATE.md`
-- 原始手册：`evidence/UDG/20.15.2/APNCFTEMPLATE.md`
+- 原始手册：`evidence/UDG/20.15.2/删除APN内容过滤模板（RMV-APNCFTEMPLATE）_50710732.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APN内容过滤模板（LST-APNCFTEMPLATE）_54389379.md`
+- 原始手册：`evidence/UDG/20.15.2/设置APN内容过滤模板（SET-APNCFTEMPLATE）_54628141.md`

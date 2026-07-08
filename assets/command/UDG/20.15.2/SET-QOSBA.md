@@ -61,4 +61,4 @@ SET QOSBA:DSNAME="default",BATYPE=8021p,BAVALUE=1,SERVICECLASS=be,COLOR=red;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-QOSBA.md`
+- 原始手册：`evidence/UDG/20.15.2/设置QoS-BA（SET-QOSBA）_00441521.md`

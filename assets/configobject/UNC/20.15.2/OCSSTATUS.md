@@ -26,4 +26,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OCSSTATUS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OCS状态（DSP-OCSSTATUS）_09896968.md`

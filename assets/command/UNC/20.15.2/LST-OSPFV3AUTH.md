@@ -67,4 +67,4 @@ HMAC-SHA256 密码   =  *****
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-OSPFV3AUTH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3进程认证配置（LST-OSPFV3AUTH）_49961174.md`

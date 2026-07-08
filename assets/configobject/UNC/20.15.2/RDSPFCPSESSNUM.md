@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RDSPFCPSESSNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示RADIUS中转UPF的PFCP会话数目（DSP-RDSPFCPSESSNUM）_35232166.md`

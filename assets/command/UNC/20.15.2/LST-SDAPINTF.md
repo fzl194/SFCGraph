@@ -69,4 +69,4 @@ Sdup接口探测间隔时长  =  60
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SDAPINTF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Sdup接口参数(LST-SDAPINTF)_72226969.md`

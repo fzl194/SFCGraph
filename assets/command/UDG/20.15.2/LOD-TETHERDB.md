@@ -61,4 +61,4 @@ LOD TETHERDB: VERSION="9001.01.0000.0000.115";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LOD-TETHERDB.md`
+- 原始手册：`evidence/UDG/20.15.2/加载Tethering检测特征库（LOD-TETHERDB）_82837454.md`

@@ -66,4 +66,4 @@ SA配置是否完整  =  TRUE
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-IPSECSA.md`
+- 原始手册：`evidence/UNC/20.15.2/显示IPsec安全联盟（DSP-IPSECSA）_50280750.md`

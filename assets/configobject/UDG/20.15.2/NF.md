@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NF.md`
-- 原始手册：`evidence/UDG/20.15.2/NF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NF的锁定信息（LST-NF）_86526378.md`
+- 原始手册：`evidence/UDG/20.15.2/设置NF锁定开关（LCK-NF）_82837078.md`

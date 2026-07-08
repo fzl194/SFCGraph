@@ -68,4 +68,4 @@ ADD ACTRL: ACID="ps_actrl", AGID="PS_GROUP_1", IPRID="IP_Ga_CDRReceive_1st", POR
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-ACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/增加接入控制（ADD-ACTRL）_51174232.md`

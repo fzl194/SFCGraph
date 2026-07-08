@@ -33,6 +33,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APNBINDBWMUSRG.md`
-- 原始手册：`evidence/UDG/20.15.2/APNBINDBWMUSRG.md`
-- 原始手册：`evidence/UDG/20.15.2/APNBINDBWMUSRG.md`
+- 原始手册：`evidence/UDG/20.15.2/删除带宽管理用户组APN绑定（RMV-APNBINDBWMUSRG）_86526866.md`
+- 原始手册：`evidence/UDG/20.15.2/增加带宽管理用户组APN绑定（ADD-APNBINDBWMUSRG）_82837487.md`
+- 原始手册：`evidence/UDG/20.15.2/查询带宽管理用户组APN绑定（LST-APNBINDBWMUSRG）_82837489.md`

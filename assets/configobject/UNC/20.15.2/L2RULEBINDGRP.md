@@ -27,6 +27,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/L2RULEBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/L2RULEBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/L2RULEBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除层二规则与层二规则组的绑定关系（RMV-L2RULEBINDGRP）_70382373.md`
+- 原始手册：`evidence/UNC/20.15.2/增加层二规则与层二规则组的绑定关系（ADD-L2RULEBINDGRP）_70462509.md`
+- 原始手册：`evidence/UNC/20.15.2/查询层二规则与层二规则组的绑定关系（LST-L2RULEBINDGRP）_23782758.md`

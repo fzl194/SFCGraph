@@ -80,4 +80,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-GTPCPATHNUM.md`
+- 原始手册：`evidence/UNC/20.15.2/显示GTP-C路径个数(DSP-GTPCPATHNUM)_26305720.md`

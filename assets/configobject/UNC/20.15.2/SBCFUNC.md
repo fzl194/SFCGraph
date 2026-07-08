@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SBCFUNC.md`
-- 原始手册：`evidence/UNC/20.15.2/SBCFUNC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询小区广播功能(LST-SBCFUNC)_72345979.md`
+- 原始手册：`evidence/UNC/20.15.2/设置小区广播功能(SET-SBCFUNC)_26306190.md`

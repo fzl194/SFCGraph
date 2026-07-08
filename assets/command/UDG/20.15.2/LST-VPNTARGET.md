@@ -71,4 +71,4 @@ VPN实例名称  =  vpn1
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-VPNTARGET.md`
+- 原始手册：`evidence/UDG/20.15.2/查询VPN-Target（LST-VPNTARGET）_00600353.md`

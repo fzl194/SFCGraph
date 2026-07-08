@@ -67,4 +67,4 @@ actrll          GTP'        PS1                 192.168.99.78       6001        
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHK-ACTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/检查链路分配信息（CHK-ACTRL）_51174237.md`

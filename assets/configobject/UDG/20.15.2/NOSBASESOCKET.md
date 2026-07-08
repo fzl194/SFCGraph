@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NOSBASESOCKET.md`
+- 原始手册：`evidence/UDG/20.15.2/查询NOS-Base平面网络的Socket信息（DSP-NOSBASESOCKET）_01516712.md`

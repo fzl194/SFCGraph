@@ -80,4 +80,4 @@ SET RDSAUTHREQATTR:RDSSVRGRPNAME="radiusgroup",NASID=DISABLE;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-RDSAUTHREQATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/设置Radius鉴权请求消息携带的属性（SET-RDSAUTHREQATTR）_28567661.md`

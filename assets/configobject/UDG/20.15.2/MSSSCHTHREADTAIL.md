@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSSSCHTHREADTAIL.md`
+- 原始手册：`evidence/UDG/20.15.2/查询调度线程组信息（DSP-MSSSCHTHREADTAIL）_50120598.md`

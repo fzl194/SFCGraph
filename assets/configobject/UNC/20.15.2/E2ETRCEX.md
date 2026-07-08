@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/E2ETRCEX.md`
-- 原始手册：`evidence/UNC/20.15.2/E2ETRCEX.md`
+- 原始手册：`evidence/UNC/20.15.2/删除端到端用户跟踪(RMV-E2ETRCEX)_26305684.md`
+- 原始手册：`evidence/UNC/20.15.2/显示端到端用户跟踪(DSP-E2ETRCEX)_72225553.md`

@@ -76,4 +76,4 @@ SET SYS: NM="UNC", PROVER=R99;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-SYS.md`
+- 原始手册：`evidence/UNC/20.15.2/设置系统参数(SET-SYS)_72345947.md`

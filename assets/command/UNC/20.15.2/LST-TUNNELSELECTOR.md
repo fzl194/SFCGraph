@@ -62,4 +62,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TUNNELSELECTOR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询隧道选择器（LST-TUNNELSELECTOR）_49961686.md`

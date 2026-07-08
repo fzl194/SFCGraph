@@ -54,4 +54,4 @@ ADD BSFAPNGROUP: GRPNAME="apngroup1", APN="huawei.com";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-BSFAPNGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加APN组（ADD-BSFAPNGROUP）_21861949.md`

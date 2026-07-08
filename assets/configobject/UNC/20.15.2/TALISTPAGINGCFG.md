@@ -29,6 +29,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/TALISTPAGINGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/TALISTPAGINGCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/TALISTPAGINGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除TALIST寻呼不重发TAC区间(RMV-TALISTPAGINGCFG)_72226065.md`
+- 原始手册：`evidence/UNC/20.15.2/增加TALIST寻呼不重发TAC区间(ADD-TALISTPAGINGCFG)_26146386.md`
+- 原始手册：`evidence/UNC/20.15.2/查询TALIST寻呼不重发TAC区间(LST-TALISTPAGINGCFG)_26306198.md`

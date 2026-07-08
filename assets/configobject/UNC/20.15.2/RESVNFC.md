@@ -27,4 +27,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RESVNFC.md`
+- 原始手册：`evidence/UNC/20.15.2/复位VNFC（RST-RESVNFC）_51149357.md`

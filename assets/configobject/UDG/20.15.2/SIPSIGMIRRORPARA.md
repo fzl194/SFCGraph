@@ -27,5 +27,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SIPSIGMIRRORPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/SIPSIGMIRRORPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/查询镜像SIP信令功能（LST-SIPSIGMIRRORPARA）_30165424.md`
+- 原始手册：`evidence/UDG/20.15.2/设置镜像SIP信令功能（SET-SIPSIGMIRRORPARA）_33682697.md`

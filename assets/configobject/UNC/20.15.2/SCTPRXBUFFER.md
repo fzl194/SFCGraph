@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SCTPRXBUFFER.md`
-- 原始手册：`evidence/UNC/20.15.2/SCTPRXBUFFER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCTP接收缓冲区参数(LST-SCTPRXBUFFER)_50732715.md`
+- 原始手册：`evidence/UNC/20.15.2/设置SCTP接收缓冲区参数(SET-SCTPRXBUFFER)_50932653.md`

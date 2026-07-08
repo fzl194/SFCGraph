@@ -62,4 +62,4 @@ SFE收包模式  =  相对优先级
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SFEPKTRCVMODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SFE当前收包模式（LST-SFEPKTRCVMODE）_00441053.md`

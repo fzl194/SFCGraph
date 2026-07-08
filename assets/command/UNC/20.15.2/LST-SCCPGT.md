@@ -78,4 +78,4 @@ SCCP全局翻译码表
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SCCPGT.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SCCP全局翻译码(LST-SCCPGT)_72226005.md`

@@ -28,5 +28,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNIMSATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/APNIMSATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的IMS属性（LST-APNIMSATTR）_09653158.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN的IMS属性（SET-APNIMSATTR）_33845576.md`

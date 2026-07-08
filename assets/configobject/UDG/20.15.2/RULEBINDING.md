@@ -32,6 +32,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RULEBINDING.md`
-- 原始手册：`evidence/UDG/20.15.2/RULEBINDING.md`
-- 原始手册：`evidence/UDG/20.15.2/RULEBINDING.md`
+- 原始手册：`evidence/UDG/20.15.2/删除用户模板和规则的绑定关系（RMV-RULEBINDING）_82837274.md`
+- 原始手册：`evidence/UDG/20.15.2/增加用户模板和规则的绑定关系（ADD-RULEBINDING）_82837272.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户模板和规则的绑定关系（LST-RULEBINDING）_86526204.md`

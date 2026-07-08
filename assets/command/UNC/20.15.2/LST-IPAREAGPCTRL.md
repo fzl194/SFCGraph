@@ -72,4 +72,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-IPAREAGPCTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于位置分配IP地址策略(LST-IPAREAGPCTRL)_26145598.md`

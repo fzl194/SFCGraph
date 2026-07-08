@@ -61,4 +61,4 @@ RMV ADDRLACID:LACGROUPNAME="beijing",LACSECNUM=2;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-ADDRLACID.md`
+- 原始手册：`evidence/UNC/20.15.2/删除LAC组内LAC号段（RMV-ADDRLACID）_49644926.md`

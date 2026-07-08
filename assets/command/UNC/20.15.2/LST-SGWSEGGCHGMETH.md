@@ -69,4 +69,4 @@ test                       5                            允许
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SGWSEGGCHGMETH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-IMSI_MSISDN-Group-Charge-Method（LST-SGWSEGGCHGMETH）_09896998.md`

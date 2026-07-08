@@ -64,4 +64,4 @@ ULCL功能开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-COLOCATEDLBO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示本地分流共部署参数（LST-COLOCATEDLBO）_25895977.md`

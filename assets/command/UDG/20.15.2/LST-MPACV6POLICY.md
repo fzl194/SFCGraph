@@ -66,4 +66,4 @@ LST MPACV6POLICY:;
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-MPACV6POLICY.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-MPAC策略（LST-MPACV6POLICY）_50280778.md`

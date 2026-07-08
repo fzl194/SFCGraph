@@ -29,4 +29,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DISCREC.md`
+- 原始手册：`evidence/UNC/20.15.2/显示服务发现记录（DSP-DISCREC）_09651770.md`

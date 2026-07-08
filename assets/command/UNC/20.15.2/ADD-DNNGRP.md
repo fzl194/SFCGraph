@@ -58,4 +58,4 @@ ADD DNNGRP: DNNGRPID="BIG_GROUP", DESC="for SMF selection";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-DNNGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/增加DNN群组（ADD-DNNGRP）_64343822.md`

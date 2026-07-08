@@ -64,4 +64,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SET-DRCOUPLINGRESET.md`
+- 原始手册：`evidence/UDG/20.15.2/设置是否开启负荷分担容灾功能（SET-DRCOUPLINGRESET）_74474841.md`

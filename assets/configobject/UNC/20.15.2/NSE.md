@@ -29,8 +29,8 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NSE.md`
-- 原始手册：`evidence/UNC/20.15.2/NSE.md`
-- 原始手册：`evidence/UNC/20.15.2/NSE.md`
-- 原始手册：`evidence/UNC/20.15.2/NSE.md`
-- 原始手册：`evidence/UNC/20.15.2/NSE.md`
+- 原始手册：`evidence/UNC/20.15.2/修改信令实体(MOD-NSE)_26305838.md`
+- 原始手册：`evidence/UNC/20.15.2/删除信令实体(RMV-NSE)_72225707.md`
+- 原始手册：`evidence/UNC/20.15.2/增加信令实体(ADD-NSE)_26146028.md`
+- 原始手册：`evidence/UNC/20.15.2/显示NSE属性信息（DSP-NSE）_26146030.md`
+- 原始手册：`evidence/UNC/20.15.2/查询信令实体（LST-NSE）_72345629.md`

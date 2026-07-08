@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DCSVODPARAS.md`
-- 原始手册：`evidence/UDG/20.15.2/DCSVODPARAS.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DCS点播参数（LST-DCSVODPARAS）_11535957.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DCS点播参数（SET-DCSVODPARAS）_76289646.md`

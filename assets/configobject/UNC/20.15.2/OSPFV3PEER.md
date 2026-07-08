@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/OSPFV3PEER.md`
+- 原始手册：`evidence/UNC/20.15.2/查询OSPFv3邻居信息（DSP-OSPFV3PEER）_00600589.md`

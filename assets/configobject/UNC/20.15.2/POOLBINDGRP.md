@@ -30,7 +30,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/POOLBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLBINDGRP.md`
-- 原始手册：`evidence/UNC/20.15.2/POOLBINDGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/修改地址池与地址池组的绑定关系（MOD-POOLBINDGRP）_64343898.md`
+- 原始手册：`evidence/UNC/20.15.2/删除地址池与地址池组的绑定关系（RMV-POOLBINDGRP）_32232826.md`
+- 原始手册：`evidence/UNC/20.15.2/增加地址池和地址池组的绑定关系（ADD-POOLBINDGRP）_32232813.md`
+- 原始手册：`evidence/UNC/20.15.2/查询地址池与地址池组的绑定关系（LST-POOLBINDGRP）_32232819.md`

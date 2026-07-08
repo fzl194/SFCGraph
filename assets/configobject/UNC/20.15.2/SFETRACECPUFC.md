@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SFETRACECPUFC.md`
-- 原始手册：`evidence/UNC/20.15.2/SFETRACECPUFC.md`
+- 原始手册：`evidence/UNC/20.15.2/查询VNRS-IP消息跟踪的CPU流控阈值（LST-SFETRACECPUFC）_91245389.md`
+- 原始手册：`evidence/UNC/20.15.2/设置VNRS-IP消息跟踪的CPU流控阈值（SET-SFETRACECPUFC）_91125205.md`

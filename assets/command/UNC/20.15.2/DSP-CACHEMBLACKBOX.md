@@ -77,4 +77,4 @@ DSP CACHEMBLACKBOX: TYPE=HA, PID="0x650009";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-CACHEMBLACKBOX.md`
+- 原始手册：`evidence/UNC/20.15.2/查询CACHEM黑匣子诊断信息（DSP-CACHEMBLACKBOX）_00440469.md`

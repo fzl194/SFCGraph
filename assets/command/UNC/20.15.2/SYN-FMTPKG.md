@@ -70,4 +70,4 @@ SYN FMTPKG: PRFNAME="PS_R9_V940_NM_RT.tar.gz", REVSYN=YES;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SYN-FMTPKG.md`
+- 原始手册：`evidence/UNC/20.15.2/同步格式引擎包（SYN-FMTPKG）_51174304.md`

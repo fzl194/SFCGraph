@@ -72,4 +72,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-HSSBPFAULTCODE.md`
+- 原始手册：`evidence/UNC/20.15.2/查询HSS-BYPASS故障状态码(LST-HSSBPFAULTCODE)_62934708.md`

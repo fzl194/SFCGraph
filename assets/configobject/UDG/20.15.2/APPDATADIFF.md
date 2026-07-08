@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/APPDATADIFF.md`
+- 原始手册：`evidence/UDG/20.15.2/查询APP与OMU配置数据差异信息（DSP-APPDATADIFF）_59103640.md`

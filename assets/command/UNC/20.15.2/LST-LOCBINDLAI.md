@@ -84,4 +84,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-LOCBINDLAI.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF位置信息与UPF优先支持的LAI范围的绑定关系（LST-LOCBINDLAI）_96242187.md`

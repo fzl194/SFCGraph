@@ -62,4 +62,4 @@ RMV OCSBINDING:OCSGRPNAME="test",OCSHOSTNAME="test01";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-OCSBINDING.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Ocs绑定关系（RMV-OCSBINDING）_09896965.md`

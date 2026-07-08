@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMSMOOTHSTC.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路由管理平滑统计信息（DSP-RMSMOOTHSTC）_50120738.md`

@@ -92,4 +92,4 @@ HomeZone功能TLS报文头域的Sub Type值  =  255
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-TLSHEADEN.md`
+- 原始手册：`evidence/UDG/20.15.2/查询HTTPS头增强（LST-TLSHEADEN）_82837524.md`

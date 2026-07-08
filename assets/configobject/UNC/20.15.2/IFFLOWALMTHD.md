@@ -24,5 +24,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/IFFLOWALMTHD.md`
-- 原始手册：`evidence/UNC/20.15.2/IFFLOWALMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/查询接口带宽利用率告警阈值（LST-IFFLOWALMTHD）_00840873.md`
+- 原始手册：`evidence/UNC/20.15.2/设置接口带宽利用率告警阈值（SET-IFFLOWALMTHD）_00440541.md`

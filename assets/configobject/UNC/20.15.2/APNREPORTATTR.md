@@ -29,5 +29,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/APNREPORTATTR.md`
-- 原始手册：`evidence/UNC/20.15.2/APNREPORTATTR.md`
+- 原始手册：`evidence/UNC/20.15.2/查询APN的上报属性（LST-APNREPORTATTR）_09653252.md`
+- 原始手册：`evidence/UNC/20.15.2/设置APN的上报属性（SET-APNREPORTATTR）_33845578.md`

@@ -60,4 +60,4 @@ SET PODMEMTHD: WARNTHD=95,RECVTHD=90;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SET-PODMEMTHD.md`
+- 原始手册：`evidence/UNC/20.15.2/设置POD内存告警阈值（SET-PODMEMTHD）_37740493.md`

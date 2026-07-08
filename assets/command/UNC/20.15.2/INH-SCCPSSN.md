@@ -71,4 +71,4 @@ INH SCCPSSN: NI=NAT, DPC="0x290270", SSN=RANAP, OPC="0x290333";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/INH-SCCPSSN.md`
+- 原始手册：`evidence/UNC/20.15.2/禁止SCCP子系统(INH-SCCPSSN)_72345935.md`

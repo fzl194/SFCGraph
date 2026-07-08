@@ -86,4 +86,4 @@ Accounting Request On/Off消息间的时间间隔（秒）  =  9
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-RDSSVRGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询Radius服务器组（LST-RDSSVRGRP）_09896733.md`

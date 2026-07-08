@@ -65,4 +65,4 @@ RETCODE = 0  操作成功。
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/LST-DATAPLANEGIINFMODE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询用户面下行模式配置（LST-DATAPLANEGIINFMODE）_64675045.md`

@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-NSMAPPARABYPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询指定PLMN的网络切片映射参数（LST-NSMAPPARABYPLMN）_75982848.md`

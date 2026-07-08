@@ -28,6 +28,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SGWIPTOSGWPOOL.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWIPTOSGWPOOL.md`
-- 原始手册：`evidence/UNC/20.15.2/SGWIPTOSGWPOOL.md`
+- 原始手册：`evidence/UNC/20.15.2/删除SGW-IP（RMV-SGWIPTOSGWPOOL）_31453523.md`
+- 原始手册：`evidence/UNC/20.15.2/增加SGW-IP（ADD-SGWIPTOSGWPOOL）_31453511.md`
+- 原始手册：`evidence/UNC/20.15.2/查询SGW-IP（LST-SGWIPTOSGWPOOL）_31453517.md`

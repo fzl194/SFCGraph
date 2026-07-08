@@ -65,4 +65,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-PAEPARAMS.md`
+- 原始手册：`evidence/UNC/20.15.2/查询PAE参数（LST-PAEPARAMS）_52213925.md`

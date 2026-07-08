@@ -83,4 +83,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-SRROUTE6.md`
+- 原始手册：`evidence/UNC/20.15.2/查询IPv6静态路由（LST-SRROUTE6）_50281306.md`

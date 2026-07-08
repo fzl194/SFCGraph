@@ -59,4 +59,4 @@ RMV LOCALHOSTGRP: LOCGRPNAME="localgroup";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-LOCALHOSTGRP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除Diameter本端主机组（RMV-LOCALHOSTGRP）_29420950.md`

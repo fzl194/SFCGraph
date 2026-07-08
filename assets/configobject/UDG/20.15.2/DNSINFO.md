@@ -26,5 +26,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/DNSINFO.md`
-- 原始手册：`evidence/UDG/20.15.2/DNSINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/查询DNS信息（LST-DNSINFO）_61692892.md`
+- 原始手册：`evidence/UDG/20.15.2/设置DNS信息（SET-DNSINFO）_64063398.md`

@@ -67,4 +67,4 @@ S2a接口切换开关  =  使能
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-APNWIFILTEHO.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于APN的E-UTRAN和WLAN互操作控制属性（LST-APNWIFILTEHO）_35962936.md`

@@ -62,4 +62,4 @@ UIN REGNF:NFINSTANCEID="123e4567-e89b-12d3-a456-426655440000";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UIN-REGNF.md`
+- 原始手册：`evidence/UNC/20.15.2/解禁NF实例（UIN-REGNF）_09652663.md`

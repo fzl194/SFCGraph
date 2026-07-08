@@ -33,7 +33,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/ADCPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/ADCPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/ADCPARA.md`
-- 原始手册：`evidence/UDG/20.15.2/ADCPARA.md`
+- 原始手册：`evidence/UDG/20.15.2/修改ADC参数（MOD-ADCPARA）_01905961.md`
+- 原始手册：`evidence/UDG/20.15.2/删除ADC参数（RMV-ADCPARA）_01905962.md`
+- 原始手册：`evidence/UDG/20.15.2/增加ADC参数（ADD-ADCPARA）_01905960.md`
+- 原始手册：`evidence/UDG/20.15.2/查询ADC参数（LST-ADCPARA）_01905963.md`

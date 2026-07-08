@@ -21,4 +21,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MGMDSOURCE.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IGMP加入源信息（DSP-MGMDSOURCE）_00440869.md`

@@ -30,6 +30,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/UPAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREA.md`
-- 原始手册：`evidence/UNC/20.15.2/UPAREA.md`
+- 原始手册：`evidence/UNC/20.15.2/删除UPF服务区（RMV-UPAREA）_09651668.md`
+- 原始手册：`evidence/UNC/20.15.2/增加UPF服务区（ADD-UPAREA）_09652457.md`
+- 原始手册：`evidence/UNC/20.15.2/查询UPF服务区（LST-UPAREA）_09651370.md`

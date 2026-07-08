@@ -58,4 +58,4 @@ RMV EMGCFG: NOID=0;
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-EMGCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/删除运营商紧急呼叫功能配置（RMV-EMGCFG）_26145506.md`

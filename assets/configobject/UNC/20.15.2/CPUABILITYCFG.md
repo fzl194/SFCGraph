@@ -35,7 +35,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CPUABILITYCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CPUABILITYCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CPUABILITYCFG.md`
-- 原始手册：`evidence/UNC/20.15.2/CPUABILITYCFG.md`
+- 原始手册：`evidence/UNC/20.15.2/修改不同CPU类型的能力系数和基础消耗。（MOD-CPUABILITYCFG）_51335397.md`
+- 原始手册：`evidence/UNC/20.15.2/删除不同CPU类型的能力系数和基础消耗。（RMV-CPUABILITYCFG）_23736560.md`
+- 原始手册：`evidence/UNC/20.15.2/增加不同CPU类型的能力系数和基础消耗。（ADD-CPUABILITYCFG）_23736532.md`
+- 原始手册：`evidence/UNC/20.15.2/查询不同CPU类型的能力系数和基础消耗。（LST-CPUABILITYCFG）_24015932.md`

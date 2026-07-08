@@ -38,5 +38,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/SRVSTH.md`
-- 原始手册：`evidence/UNC/20.15.2/SRVSTH.md`
+- 原始手册：`evidence/UNC/20.15.2/查询业务功能开关状态（LST-SRVSTH）_41462209.md`
+- 原始手册：`evidence/UNC/20.15.2/设置业务功能开关（SET-SRVSTH）_41302357.md`

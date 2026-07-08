@@ -24,4 +24,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RCISOLATION.md`
+- 原始手册：`evidence/UDG/20.15.2/启动人工恢复已隔离的Pod（STR-RCISOLATION）_60073349.md`

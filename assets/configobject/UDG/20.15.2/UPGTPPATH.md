@@ -32,5 +32,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/UPGTPPATH.md`
-- 原始手册：`evidence/UDG/20.15.2/UPGTPPATH.md`
+- 原始手册：`evidence/UDG/20.15.2/查询路径相关属性（LST-UPGTPPATH）_82837228.md`
+- 原始手册：`evidence/UDG/20.15.2/设置GTP路径相关属性（SET-UPGTPPATH）_82837227.md`

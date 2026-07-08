@@ -60,4 +60,4 @@ RMV UEDNSUPGROUP: UPFGRPNAME="upfgrp1";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-UEDNSUPGROUP.md`
+- 原始手册：`evidence/UNC/20.15.2/删除DNS关联的UPF组（RMV-UEDNSUPGROUP）_73321248.md`

@@ -74,4 +74,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-TNFINSIP.md`
+- 原始手册：`evidence/UNC/20.15.2/查询目标NF实例IP地址（LST-TNFINSIP）_09651383.md`

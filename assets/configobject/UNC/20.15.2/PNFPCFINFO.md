@@ -31,6 +31,6 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/PNFPCFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPCFINFO.md`
-- 原始手册：`evidence/UNC/20.15.2/PNFPCFINFO.md`
+- 原始手册：`evidence/UNC/20.15.2/删除对端PCF信息（RMV-PNFPCFINFO）_09654343.md`
+- 原始手册：`evidence/UNC/20.15.2/增加对端PCF信息（ADD-PNFPCFINFO）_09652989.md`
+- 原始手册：`evidence/UNC/20.15.2/查询对端PCF信息（LST-PNFPCFINFO）_09653010.md`

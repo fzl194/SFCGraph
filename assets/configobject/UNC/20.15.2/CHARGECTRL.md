@@ -31,5 +31,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/CHARGECTRL.md`
-- 原始手册：`evidence/UNC/20.15.2/CHARGECTRL.md`
+- 原始手册：`evidence/UNC/20.15.2/查询计费控制配置（LST-CHARGECTRL）_09896793.md`
+- 原始手册：`evidence/UNC/20.15.2/设置计费控制配置（SET-CHARGECTRL）_09896792.md`

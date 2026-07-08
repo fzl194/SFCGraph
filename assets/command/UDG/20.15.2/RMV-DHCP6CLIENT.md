@@ -53,4 +53,4 @@ RMV DHCP6CLIENT: IFNAME="Ethernet64/0/4";
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-DHCP6CLIENT.md`
+- 原始手册：`evidence/UDG/20.15.2/删除DHCPv6客户端（RMV-DHCP6CLIENT）_50281534.md`

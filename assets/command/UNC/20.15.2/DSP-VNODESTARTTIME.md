@@ -72,4 +72,4 @@ VNODE_CSLB_VNFC_OMU_0002    kk           2018-12-10 08:57:58    2018-12-12 02:45
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/DSP-VNODESTARTTIME.md`
+- 原始手册：`evidence/UNC/20.15.2/显示虚拟节点启动时间信息（DSP-VNODESTARTTIME）_78752530.md`

@@ -68,4 +68,4 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/ADD-SCNDGWSELPLCY.md`
+- 原始手册：`evidence/UNC/20.15.2/增加相同APN建立多个PDP_PDN连接的网关选择策略(ADD-SCNDGWSELPLCY)_26145946.md`

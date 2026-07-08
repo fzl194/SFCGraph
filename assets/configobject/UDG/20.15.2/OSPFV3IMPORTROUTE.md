@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3IMPORTROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3IMPORTROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3IMPORTROUTE.md`
-- 原始手册：`evidence/UDG/20.15.2/OSPFV3IMPORTROUTE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改OSPFv3引入路由配置（MOD-OSPFV3IMPORTROUTE）_00440581.md`
+- 原始手册：`evidence/UDG/20.15.2/创建OSPFv3引入路由配置（ADD-OSPFV3IMPORTROUTE）_00840849.md`
+- 原始手册：`evidence/UDG/20.15.2/删除OSPFv3引入路由配置（RMV-OSPFV3IMPORTROUTE）_00865557.md`
+- 原始手册：`evidence/UDG/20.15.2/查询OSPFv3引入路由配置（LST-OSPFV3IMPORTROUTE）_49961414.md`

@@ -73,4 +73,4 @@ AMF集合标识  =  001
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-CANDIDATEAMF.md`
+- 原始手册：`evidence/UNC/20.15.2/查询候选AMF（LST-CANDIDATEAMF）_18715633.md`

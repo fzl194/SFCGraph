@@ -23,4 +23,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RESASSERTINFO.md`
+- 原始手册：`evidence/UDG/20.15.2/显示断言信息（DSP-RESASSERTINFO）_11313380.md`

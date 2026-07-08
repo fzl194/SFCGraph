@@ -58,4 +58,4 @@ RMV USRBLACKLST: IMSI="123456789012345";
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/RMV-USRBLACKLST.md`
+- 原始手册：`evidence/UNC/20.15.2/删除用户黑名单限制列表（RMV-USRBLACKLST）_15553257.md`

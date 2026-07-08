@@ -67,4 +67,4 @@ MOD SQOSCAR:BEHAVIORNAME="b1",CIR=20,PIR=20,CBS=30,PBS=40,GREENACTION=remark,GRE
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MOD-SQOSCAR.md`
+- 原始手册：`evidence/UDG/20.15.2/修改流行为CAR配置（MOD-SQOSCAR）_49802418.md`

@@ -73,4 +73,4 @@ N3495 （times）  =  5
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-EMTCBESM.md`
+- 原始手册：`evidence/UNC/20.15.2/查询S1模式eMTC-SM协议参数（LST-EMTCBESM）_26145780.md`

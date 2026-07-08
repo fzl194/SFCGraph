@@ -22,5 +22,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/NDGLOBALCONFIG.md`
-- 原始手册：`evidence/UDG/20.15.2/NDGLOBALCONFIG.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv6-ND系统配置（LST-NDGLOBALCONFIG）_00866085.md`
+- 原始手册：`evidence/UDG/20.15.2/设置IPv6-ND系统配置（SET-NDGLOBALCONFIG）_00601205.md`

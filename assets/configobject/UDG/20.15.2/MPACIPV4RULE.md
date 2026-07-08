@@ -24,7 +24,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MPACIPV4RULE.md`
-- 原始手册：`evidence/UDG/20.15.2/MPACIPV4RULE.md`
-- 原始手册：`evidence/UDG/20.15.2/MPACIPV4RULE.md`
-- 原始手册：`evidence/UDG/20.15.2/MPACIPV4RULE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改IPv4-MPAC策略规则（MOD-MPACIPV4RULE）_50281054.md`
+- 原始手册：`evidence/UDG/20.15.2/删除IPv4-MPAC策略规则（RMV-MPACIPV4RULE）_50281790.md`
+- 原始手册：`evidence/UDG/20.15.2/增加IPv4-MPAC策略规则（ADD-MPACIPV4RULE）_49802318.md`
+- 原始手册：`evidence/UDG/20.15.2/查询IPv4-MPAC策略规则（LST-MPACIPV4RULE）_50280742.md`

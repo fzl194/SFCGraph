@@ -29,7 +29,7 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/SRVCERTSCENE.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCERTSCENE.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCERTSCENE.md`
-- 原始手册：`evidence/UDG/20.15.2/SRVCERTSCENE.md`
+- 原始手册：`evidence/UDG/20.15.2/修改配置证书场景（MOD-SRVCERTSCENE）_94871965.md`
+- 原始手册：`evidence/UDG/20.15.2/删除配置证书场景（RMV-SRVCERTSCENE）_44232374.md`
+- 原始手册：`evidence/UDG/20.15.2/增加配置证书场景（ADD-SRVCERTSCENE）_94632037.md`
+- 原始手册：`evidence/UDG/20.15.2/查询配置证书场景（LST-SRVCERTSCENE）_43992592.md`

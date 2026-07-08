@@ -62,4 +62,4 @@ RMV SESSLBCAPABILITY: TYPE="x86_64", VERSION="Intel(R) Xeon(R) CPU E5-2658 v4 @ 
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/RMV-SESSLBCAPABILITY.md`
+- 原始手册：`evidence/UDG/20.15.2/删除会话均衡基线能力值（RMV-SESSLBCAPABILITY）_27399646.md`

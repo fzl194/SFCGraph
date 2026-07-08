@@ -67,4 +67,4 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MEASRST.md`
+- 原始手册：`evidence/UNC/20.15.2/查询测量结果文件(LST-MEASRST)_01254542.md`

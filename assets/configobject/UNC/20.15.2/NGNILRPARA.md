@@ -30,7 +30,7 @@ Non-UE辅助定位流程中，AMF是否支持Namf_Communication_NonUeN2InfoSubsc
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/NGNILRPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGNILRPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGNILRPARA.md`
-- 原始手册：`evidence/UNC/20.15.2/NGNILRPARA.md`
+- 原始手册：`evidence/UNC/20.15.2/修改NI-LR功能参数（MOD-NGNILRPARA）_44007390.md`
+- 原始手册：`evidence/UNC/20.15.2/删除NI-LR功能参数（RMV-NGNILRPARA）_44007658.md`
+- 原始手册：`evidence/UNC/20.15.2/增加NI-LR功能参数（ADD-NGNILRPARA）_44006465.md`
+- 原始手册：`evidence/UNC/20.15.2/查询NI-LR功能参数（LST-NGNILRPARA）_44007010.md`

@@ -34,5 +34,5 @@ status: active
 
 ## 证据
 
-- 原始手册：`evidence/UDG/20.15.2/MSFAULTALARM.md`
-- 原始手册：`evidence/UDG/20.15.2/MSFAULTALARM.md`
+- 原始手册：`evidence/UDG/20.15.2/查询告警开关配置数据（LST-MSFAULTALARM）_09587938.md`
+- 原始手册：`evidence/UDG/20.15.2/设置告警开关（SET-MSFAULTALARM）_09587862.md`

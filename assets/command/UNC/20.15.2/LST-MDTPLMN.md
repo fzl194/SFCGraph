@@ -68,4 +68,4 @@ RETCODE = 0  操作成功
 
 ## 证据
 
-- 原始手册：`evidence/UNC/20.15.2/LST-MDTPLMN.md`
+- 原始手册：`evidence/UNC/20.15.2/查询基于管理的最小化路测的PLMN(LST-MDTPLMN)_63157190.md`
