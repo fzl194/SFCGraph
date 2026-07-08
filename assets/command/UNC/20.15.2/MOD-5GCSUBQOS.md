@@ -1,0 +1,65 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD 5GCSUBQOS
+type: MMLCommand
+name: MOD 5GCSUBQOS（修改5GC签约QoS配置）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: 5GCSUBQOS
+command_category: 配置类
+applicable_nf:
+- SMF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- QoS
+- 5GC QoS配置
+- 本地5GC QoS
+status: active
+---
+
+# MOD 5GCSUBQOS（修改5GC签约QoS配置）
+
+## 功能
+
+**适用NF：SMF**
+
+该命令用来修改5G用户的签约QoS属性。
+
+## 注意事项
+
+命令执行后只对新接入用户生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SUBQOSINDEX | 用户QoS索引 | 可选必选说明：必选参数<br>参数含义：该参数表示用户QoS索引。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~255。<br>默认值：无<br>配置原则：无 |
+| FIVEQI | 标准5QI | 可选必选说明：可选参数<br>参数含义：该参数表示QoS 5QI参数。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是5~80。<br>默认值：无<br>配置原则：<br>该参数的有效取值为5~9、69、70、79、80。 |
+| AMBRDL | 下行Session AMBR(千比特/秒) | 可选必选说明：可选参数<br>参数含义：该参数用于设置下行Session AMBR比特率。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~20000000。<br>默认值：无<br>配置原则：无 |
+| AMBRUL | 上行Session AMBR(千比特/秒) | 可选必选说明：可选参数<br>参数含义：该参数用于设置上行Session AMBR比特率。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~20000000。<br>默认值：无<br>配置原则：无 |
+| ARPPL | ARP的优先级别 | 可选必选说明：可选参数<br>参数含义：该参数表示ARP的优先级别。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~15。<br>默认值：无<br>配置原则：无 |
+| QOS5QIPL | 5QI的优先级别 | 可选必选说明：可选参数<br>参数含义：该参数表示5QI优先级。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~127。<br>默认值：无<br>配置原则：<br>5QI Priority Level取值为0时，表示无效值。此时给RAN的“Non Dynamic 5QI Descriptor”中不携带“Priority Level”。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@5GCSUBQOS]] · 5GC签约QoS配置（5GCSUBQOS）
+
+## 使用实例
+
+修改5GC用户签约QoS配置，“用户QoS索引”为“1”，将“标准5QI”修改为“6”，“下行Session AMBR”修改为“1111”：
+
+```
+MOD 5GCSUBQOS:FIVEQI=6, QOS5QIPL=2, ARPPL=2, AMBRDL=1111, AMBRUL=2222,SUBQOSINDEX=1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-5GCSUBQOS.md`

@@ -1,0 +1,67 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV PCFSSCOPEBIND
+type: MMLCommand
+name: RMV PCFSSCOPEBIND（删除PCF业务服务区的绑定关系）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: PCFSSCOPEBIND
+command_category: 配置类
+applicable_nf:
+- SMF
+- PGW-C
+- GGSN
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- PCC管理
+- PCF发现和选择管理
+- PCF业务服务区绑定
+status: active
+---
+
+# RMV PCFSSCOPEBIND（删除PCF业务服务区的绑定关系）
+
+## 功能
+
+![](删除PCF业务服务区的绑定关系（RMV PCFSSCOPEBIND）_88377450.assets/notice_3.0-zh-cn_2.png)
+
+删除PCF业务服务区的绑定关系不当，可能导致基于业务服务区选择的PCF不符合预期，进而影响用户使用业务。
+
+**适用NF：SMF、PGW-C、GGSN**
+
+该命令用于删除指定BINDNAME的PCF业务服务区的绑定关系。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 如需删除所有记录，请使用RMV PCFSSCOPEBINDALL命令。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| BINDNAME | 绑定名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定绑定记录的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~32。不区分大小写，转为小写存储。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@PCFSSCOPEBIND]] · PCF业务服务区的绑定关系（PCFSSCOPEBIND）
+
+## 使用实例
+
+删除PCFSSCOPEBIND的一条配置，BINDNAME为towna。
+
+```
+RMV PCFSSCOPEBIND: BINDNAME="towna";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-PCFSSCOPEBIND.md`

@@ -1,0 +1,78 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD IPAREAGPMEM
+type: MMLCommand
+name: ADD IPAREAGPMEM（增加IP区域群成员）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: IPAREAGPMEM
+command_category: 配置类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 2048
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 移动性管理
+- 基于位置分配IP地址管理
+- IP区域群成员管理
+status: active
+---
+
+# ADD IPAREAGPMEM（增加IP区域群成员）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+该命令用于为一个区域群增加一条区域群成员记录，同一个区域群中的成员具有相同的IP地址分配策略。
+
+## 注意事项
+
+- 此命令最大记录数为2048。
+- 此命令执行后立即生效。
+- 此命令配置的LAC或者TAC不能重复。
+- 不同区域群中的TAC不能同属于一个TAI LIST，否则UNC无法实时感知用户在4G下的位置变化，可执行[**LST TALST**](../../TA List管理/查询跟踪区列表(LST TALST)_72225259.md)命令查看TAI LIST配置。
+- 此命令添加的区域群成员中的用户具有相同的IP地址分配策略。
+  [**ADD IPAREAGP**](../IP区域群管理/增加IP区域群(ADD IPAREAGP)_26305412.md) 命令中参数 “IPAREASW(IP区域开关)” 开启后，用户移动符合如下情况时，漫游用户会被下线，而本网本地用户和本网异地用户的PDP或者PDN的APN在“IP区域APN网络标识”列表中时，这些用户才会被去激活PDP、断连PDN或者分离；“IP区域APN网络标识”通过 [**ADD IPAREAAPN**](../基于位置分配IP地址APN信息配置/增加IP区域APN网络标识(ADD IPAREAAPN)_72345201.md) 命令配置。
+
+  - 从IP区域群外移动到IP区域群内
+    - 从IP区域群内移动到IP区域群外
+    - 从一个IP区域群移动到另一个IP区域群
+  同时，如果 [**SET IPAREAGPCTRL**](../基于位置分配IP地址策略管理/设置基于位置分配IP地址策略(SET IPAREAGPCTRL)_72345195.md) 命令中参数 “DEAUSRSW(用户下线开关)” 开启，则会将已经附着在该IP区域群中的用户下线。
+
+  - 2G和3G用户，则发起网络侧去激活PDP或者网络侧分离，具体类型由[**SET IPAREAGPCTRL**](../基于位置分配IP地址策略管理/设置基于位置分配IP地址策略(SET IPAREAGPCTRL)_72345195.md)命令设置。
+    - 4G用户，发起网络侧分离。
+- 此配置涉及License（License部件编码：LKV2IPRL01），执行命令请使用[**DSP LICENSE**](../../../../../../平台服务管理/操作维护/License管理/显示License(DSP LICENSE)_00360098.md)命令确认对应特性license是否得到授权，执行[**LST LICENSESWITCH**](../../../../../../平台服务管理/操作维护/License管理/查询License配置项开关（LST LICENSESWITCH）_09651570.md)命令确认特性开关状态为“ENABLE(打开)”。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| AREAID | 区域群标识 | 可选必选说明：必选参数<br>参数含义：该参数用于指定区域群标识。<br>数据来源：整网规划<br>取值范围：1~256<br>默认值：无 |
+| IDTYPE | 标识类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定区域的标识类型。<br>数据来源：整网规划<br>取值范围：<br>- “LAC(位置区域码)”<br>- “TAC(跟踪区域码)”<br>默认值：无 |
+| LAC | 位置区域码 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定位置区域码。<br>前提条件：该参数在“IDTYPE(标识类型)”设置为“LAC(位置区)”时生效。<br>数据来源：整网规划<br>取值范围：0x0000~0xFFFF<br>默认值：无 |
+| TAC | 跟踪区域码 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定跟踪区域码。<br>前提条件：该参数在“IDTYPE(标识类型)”设置为“TAC(跟踪区)”时生效。<br>数据来源：整网规划<br>取值范围：0x0000~0xFFFF<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@IPAREAGPMEM]] · IP区域群成员（IPAREAGPMEM）
+
+## 使用实例
+
+增加一条IP区域群成员记录，区域群标识为1，标识类型为LAC，位置区域码为0x1234：
+
+ADD IPAREAGPMEM: AREAID=1, IDTYPE=LAC, LAC="0x1234";
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-IPAREAGPMEM.md`

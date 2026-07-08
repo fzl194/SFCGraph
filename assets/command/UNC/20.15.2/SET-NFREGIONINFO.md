@@ -1,0 +1,70 @@
+---
+id: UNC@20.15.2@MMLCommand@SET NFREGIONINFO
+type: MMLCommand
+name: SET NFREGIONINFO（设置本端NF大区和省份数据管理参数）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: NFREGIONINFO
+command_category: 配置类
+applicable_nf:
+- AMF
+- SMF
+- NCG
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 接口管理
+- 服务化接口管理
+- 注册与服务发现
+- NF概述信息管理
+status: active
+---
+
+# SET NFREGIONINFO（设置本端NF大区和省份数据管理参数）
+
+## 功能
+
+**适用NF：AMF、SMF、NCG**
+
+该命令用于设置运营商规划的网元所在的区域信息。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| REGIONSTARTBIT | REGIONENDBIT | PROVSTARTBIT | PROVENDBIT |
+| --- | --- | --- | --- |
+| 9 | 16 | 17 | 24 |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| REGIONSTARTBIT | 网元ID中区域起始位 | 可选必选说明：必选参数<br>参数含义：该参数用于标识网元UUID中NODE部分区域标识的起始比特位。网络中对自治管理的NF的实例ID的按UUID格式编值，并自定义了其中的NODE的48bit，各个不同的运营商的自定义可能存在差异，可通过该参数和结束位参数配合修改进行调整。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是1~48。<br>默认值：无。<br>配置原则：<br>各个运营商对UUID中NODE部分进行了自定义，需基于对UUID中NODE部分的自定义情况进行配置，默认值为各大运营商普遍使用的自定义方式。该参数配置或修改前需要联系华为技术支持。 |
+| REGIONENDBIT | 网元ID中区域结束位 | 可选必选说明：必选参数<br>参数含义：该参数用于标识网元UUID中NODE部分区域标识的结束比特位。网络中对自治管理的NF的实例ID的按UUID格式编值，并自定义了其中的NODE的48bit，各个不同的运营商的自定义可能存在差异，可通过该参数和起始位参数配合修改进行调整。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是1~48。<br>默认值：无。<br>配置原则：<br>各个运营商对UUID中NODE部分进行了自定义，需基于对UUID中NODE部分的自定义情况进行配置，默认值为各大运营商普遍使用的自定义方式。该参数配置或修改前需要联系华为技术支持。 |
+| PROVSTARTBIT | 网元ID中省份起始位 | 可选必选说明：必选参数<br>参数含义：该参数用于标识网元UUID中NODE部分省份标识的起始比特位。网络中对自治管理的NF的实例ID的按UUID格式编值，并自定义了其中的NODE的48bit，各个不同的运营商的自定义可能存在差异，可通过该参数和结束位参数配合修改进行调整。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是1~48。<br>默认值：无。<br>配置原则：<br>各个运营商对UUID中NODE部分进行了自定义，需基于对UUID中NODE部分的自定义情况进行配置，默认值为各大运营商普遍使用的自定义方式。该参数配置或修改前需要联系华为技术支持。 |
+| PROVENDBIT | 网元ID中省份结束位 | 可选必选说明：必选参数<br>参数含义：该参数用于标识网元UUID中NODE部分省份标识的结束比特位。网络中对自治管理的NF的实例ID的按UUID格式编值，并自定义了其中的NODE的48bit，各个不同的运营商的自定义可能存在差异，可通过该参数和起始位参数配合修改进行调整。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是1~48。<br>默认值：无。<br>配置原则：<br>各个运营商对UUID中NODE部分进行了自定义，需基于对UUID中NODE部分的自定义情况进行配置，默认值为各大运营商普遍使用的自定义方式。该参数配置或修改前需要联系华为技术支持。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NFREGIONINFO]] · 本端NF大区和省份数据管理参数（NFREGIONINFO）
+
+## 使用实例
+
+运营商规划了网元区域信息配置，UUID采用版本4格式（RFC4122），区域标识起始于NODE中第9位结束于16位，省份标识起始于NODE中第17位结束于24位时：
+
+```
+SET NFREGIONINFO: REGIONSTARTBIT=9,REGIONENDBIT=16,PROVSTARTBIT=17,PROVENDBIT=24;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-NFREGIONINFO.md`

@@ -1,0 +1,50 @@
+# 修改P-GW特性对接配置（MOD PGWCHARACT）
+
+- [命令功能](#ZH-CN_CONCEPT_0000001126145940__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0000001126145940__1.3.2.1)
+- [本地用户权限](#ZH-CN_CONCEPT_0000001126145940__1.3.3.1)
+- [网管用户权限](#ZH-CN_CONCEPT_0000001126145940__1.3.4.1)
+- [参数说明](#ZH-CN_CONCEPT_0000001126145940__1.3.5.1)
+- [使用实例](#ZH-CN_CONCEPT_0000001126145940__1.3.6.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0000001126145940)
+
+**适用网元：SGSN、MME**
+
+该命令用于修改需要匹配的对端P-GW的属性信息。MME将此配置作为与对端网元间信令交互时的参考条件。
+
+#### [注意事项](#ZH-CN_CONCEPT_0000001126145940)
+
+- 该命令执行后立即生效。
+- 该命令部分参数与相关特性License共同完成该特性的开启，请在设置参数前使用[**DSP LICENSE**](../../../../../../平台服务管理/操作维护/License管理/显示License(DSP LICENSE)_00360098.md)命令确认对应特性License是否得到授权，执行[**LST LICENSESWITCH**](../../../../../../平台服务管理/操作维护/License管理/查询License配置项开关（LST LICENSESWITCH）_09651570.md)命令确认特性开关状态为“ENABLE（打开）”，具体相关特性请参考参数的说明。
+- 该命令只能修改参数MMEID（P-GW支持MME ID）和RATTYPELTEM（是否向P-GW转发LTE-M类型的RAT TYPE）。
+
+#### [本地用户权限](#ZH-CN_CONCEPT_0000001126145940)
+
+manage-ug；system-ug
+
+#### [网管用户权限](#ZH-CN_CONCEPT_0000001126145940)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0000001126145940)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RANGE | 对端设备范围 | 可选必选说明：必选参数<br>参数含义：该参数用于指定需要设置属性信息的对端P-GW范围。<br>数据来源：本端规划<br>取值范围：<br>- “ALL（所有P-GW）”<br>- “HOME（本网P-GW）”<br>- “FOREIGN（外网P-GW）”<br>- “SPECIFIC（指定IP的P-GW）”<br>默认值：无 |
+| IPT | IP地址类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定P-GW信令面IP地址类型。<br>前提条件：只有在<br>“RANGE（对端设备范围）”<br>配置为<br>“SPECIFIC（指定IP的P-GW）”<br>时，该参数有效。<br>数据来源：本端规划<br>取值范围：<br>- “IPV4（IPv4）”<br>- “IPV6（IPv6）”<br>默认值：无 |
+| IPV4 | IPv4地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定P-GW信令面IPv4地址。<br>前提条件：只有在<br>“IPT（IP地址类型）”<br>配置为<br>“IPV4（IPv4）”<br>时，才需要配置该类型的IP地址。<br>数据来源：本端规划<br>取值范围：0.0.0.0～255.255.255.255<br>默认值：无 |
+| IPV4MASK | IPv4地址掩码 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定对端P-GW的信令面IPv4地址的掩码。<br>前提条件：只有在<br>“IPT（IP地址类型）”<br>配置为<br>“IPV4（IPv4）”<br>时，才需要配置该类型的IP地址。<br>数据来源：本端规划<br>取值范围：0.0.0.1～255.255.255.255<br>默认值：无 |
+| IPV6 | IPv6地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定P-GW信令面IPv6地址。<br>前提条件：只有在<br>“IPT（IP地址类型）”<br>配置为<br>“IPV6（IPv6）”<br>时，才需要配置该参数。<br>数据来源：本端规划<br>取值范围：:: ～FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF<br>默认值：无 |
+| IPV6MASK | IPv6地址前缀长度 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定子网前缀的长度。<br>前提条件：只有在<br>“IPT（IP地址类型）”<br>配置为<br>“IPV6（IPv6）”<br>时，才需要配置该参数。<br>数据来源：本端规划<br>取值范围：1～128<br>默认值：无 |
+| MMEID | P-GW支持MME ID | 可选必选说明：可选参数<br>参数含义：该参数用于设置P-GW是否支持MME ID信元。<br>数据来源：本端规划<br>取值范围：<br>- “YES（支持）”<br>- “NO（不支持）”<br>默认值：无 |
+| RATTYPELTEM | 是否向P-GW转发LTE-M类型的RAT TYPE | 可选必选说明：可选参数<br>参数含义：该参数用于设置UNC是否通知S-GW向P-GW上报LTE-M类型的RAT TYPE。<br>数据来源：本端规划<br>取值范围：<br>“NO（不支持）”<br>“YES（支持）”<br>默认值：无<br>配置原则：<br>- 针对LTE-M类型的用户，UNC向SGW发送Create Seesion Request消息或者Moddify Bearer Request消息时，如果参数设置为“YES”，消息中的Indication-flag的“LTE-M RAT type reporting to PGW”会设置为1；否则消息中Indication-flag的“LTE-M RAT type reporting to PGW”会设置为0。<br>- 当ADD GTPCV2CMPT命令支持LTE-M类型的RAT TYPE且SGW感知到RAT TYPE为LTE-M，该配置命令才生效。<br>说明：- Indication-flag信元中的“LTE-M RAT type reporting to PGW”用于指示SGW向PGW传递LTE-M类型的RAT TYPE。 |
+| PCSCFRESTOIND | P-GW支持P-CSCF Restoration Indication | 可选必选说明：可选参数<br>参数含义：该参数用于指定P-GW是否支持indication Flags信元内的“P-CSCF Restoration Indication”标志位。<br>数据来源：全网规划<br>取值范围：<br>- "NO（不支持）"<br>- "YES（支持）"<br>默认值："NO（不支持）"<br>配置原则：<br>- “ 基于HSS的P-CSCF故障恢复”特性的相关License授权并开启后，此参数配置才生效（特性编号：WSFD-201205，License部件编码：LKV2FRPH02）<br>- 如果P-GW支持“P-CSCF Restoration Indication”标志位，才设置本参数为“YES（支持）”；否则设置本参数为“NO（不支持）”。 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0000001126145940)
+
+当“S-GW/P-GW故障下的业务恢复”特性开启时，如果UE选择的S-GW和P-GW非合一并且P-GW不支持MME ID信元，将一条已存在的指定IP的P-GW配置修改为不支持MME ID信元：
+
+```
+MOD PGWCHARACT: RANGE=SPECIFIC, IPT=IPV4, IPV4="10.141.196.197", IPV4MASK="255.255.255.0", MMEID=NO;
+```

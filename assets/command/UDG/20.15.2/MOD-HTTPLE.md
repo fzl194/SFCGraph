@@ -1,0 +1,64 @@
+---
+id: UDG@20.15.2@MMLCommand@MOD HTTPLE
+type: MMLCommand
+name: MOD HTTPLE（修改HTTP本端实体）
+nf: UDG
+version: 20.15.2
+verb: MOD
+object_keyword: HTTPLE
+command_category: 配置类
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 平台服务管理
+- HTTP功能管理
+- HTTP管理
+- HTTP本端实体管理
+status: active
+---
+
+# MOD HTTPLE（修改HTTP本端实体）
+
+## 功能
+
+![](修改HTTP本端实体（MOD HTTPLE）_28971845.assets/notice_3.0-zh-cn.png)
+
+修改TLS的证书索引，可能造成业务受损。
+
+该命令用于修改HTTP本端实体配置信息。当HTTP本端实体加入到HTTP本端实体组且本端实体组被服务化接口引用以后，可修改该HTTP本端实体的TLS索引和描述。
+
+> **说明**
+> - 该命令执行后立即生效。
+>
+> - 如果修改HTTP本端实体为SERVER端，只有在TLSFLG开关打开的情况下才允许修改TLS的证书索引。
+> - 可能造成业务受损，建议业务迁移后再操作。
+> - 如果需要修改HTTP本端实体类型为CLIENT的记录的TLS索引，需要将该记录关联的本端实体组内其他HTTP本端实体类型为CLIENT的记录的TLS索引同步修改，以保证同一个本端实体组内所有实体类型为CLIENT的记录关联的TLS索引一致。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| INDEX | HTTPLE本端实体索引 | 可选必选说明：必选参数<br>参数含义：该参数用于指定HTTP本端实体的索引信息。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~128。<br>默认值：无<br>配置原则：无 |
+| TLSIDX | TLS索引 | 可选必选说明：可选参数<br>参数含义：该参数用于指定关联的TLSPARA的索引。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是1~128。<br>默认值：无<br>配置原则：无 |
+| DESC | 描述 | 可选必选说明：可选参数<br>参数含义：该参数用于指定HTTP本端实体的描述信息。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~255。<br>默认值：无<br>配置原则：<br>数字“0～9”、大写字母“A～Z”、小写字母“a～z”、特殊字符“-”、“_”、“.”、“+”、空格符以及中文字符，其他均为非法字符。 |
+| RFLAG | 路由标记 | 可选必选说明：可选参数<br>参数含义：网元处于主备容灾场景下时，备网元上是否抑制该地址对外发布路由。<br>数据来源：本端规划<br>取值范围：<br>- TRUE(TRUE)<br>- FALSE(FALSE)<br>默认值：无<br>配置原则：<br>TRUE表示抑制备网元发布路由，FALSE表示不抑制备网元发布路由。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@HTTPLE]] · HTTP本端实体（HTTPLE）
+
+## 使用实例
+
+若运营商想修改索引为1的HTTP本端实体配置信息，将描述信息修改为“HTTPLE”；
+
+```
+MOD HTTPLE: INDEX=1, DESC="HTTPLE";
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MOD-HTTPLE.md`

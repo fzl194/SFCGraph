@@ -1,0 +1,65 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD PAEPORTGATEWAY
+type: MMLCommand
+name: ADD PAEPORTGATEWAY（增加网关转发地址）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: PAEPORTGATEWAY
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 系统调测
+- PAE 调测命令
+- 配置
+status: active
+---
+
+# ADD PAEPORTGATEWAY（增加网关转发地址）
+
+## 功能
+
+该命令用于增加指定平面下内联口网关转发地址信息。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 需要根据网关地址和掩码计算网络地址，并校验是否存在相同记录（即平面ID和网络地址相同），如果存在相同记录，不允许添加。通过该命令添加网关地址时需要确保网关地址已经在网关或交换机上完成配置且路由正常。
+
+- 最多可输入100条记录。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NETWORKINDEX | 网段索引 | 可选必选说明：必选参数<br>参数含义：该参数用于指定网段索引。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~4294967295。<br>默认值：无<br>配置原则：无 |
+| PLANEID | 平面ID | 可选必选说明：必选参数<br>参数含义：该参数用于指定平面ID。可以通过<br>[**DSP PAEPORTGROUPINFO**](../端口/显示PAE端口组信息（DSP PAEPORTGROUPINFO）_44950521.md)<br>指令查询。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是0~1，3~6。<br>默认值：无<br>配置原则：无 |
+| IPVERSION | IP地址类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定IP地址的类型。<br>数据来源：全网规划<br>取值范围：<br>- IPv4（IPv4）<br>- IPv6（IPv6）<br>默认值：无<br>配置原则：<br>参考当前环境使用的IP类型。 |
+| GATEWAYIPV4 | 网关IPv4地址 | 可选必选说明：该参数在"IPVERSION"配置为"IPv4"时为条件必选参数。<br>参数含义：该参数用于指定网关IPv4地址。<br>数据来源：全网规划<br>取值范围：IPv4地址类型。<br>默认值：无<br>配置原则：<br>网关地址必须与平面内的端口IP地址同网段。可通过<br>[**DSP PAEPORTINFO**](../端口/显示PAE端口基本信息（DSP PAEPORTINFO）_92520040.md)<br>命令查看。 |
+| IPV4MASK | IPv4地址掩码 | 可选必选说明：该参数在"IPVERSION"配置为"IPv4"时为条件必选参数。<br>参数含义：该参数用于指定网关IPv4地址的网络掩码。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。0.0.0.0～255.255.255.254。<br>默认值：无<br>配置原则：<br>使用网络规划的接口IP所属网段的掩码。 |
+| GATEWAYIPV6 | 网关IPv6地址 | 可选必选说明：该参数在"IPVERSION"配置为"IPv6"时为条件必选参数。<br>参数含义：该参数用于指定网关IPv6地址。<br>数据来源：全网规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：<br>网关地址必须与平面内的端口IP同网段。可以通过<br>[**DSP PAEPORTINFO**](../端口/显示PAE端口基本信息（DSP PAEPORTINFO）_92520040.md)<br>命令查看。 |
+| IPV6PREFIXLEN | IPv6地址前缀 | 可选必选说明：该参数在"IPVERSION"配置为"IPv6"时为条件必选参数。<br>参数含义：该参数用于指定网关IPv6地址前缀。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~127。<br>默认值：无<br>配置原则：无 |
+| DESC | 描述 | 可选必选说明：可选参数<br>参数含义：该参数用于描述逻辑IP地址的其他信息。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是0~255。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@PAEPORTGATEWAY]] · PAE端口网关信息（PAEPORTGATEWAY）
+
+## 使用实例
+
+设置网段索引为1，平面ID为0的内联口的网关地址，网关地址类型为IPv4，网关地址为192.168.1.1，网关地址掩码为255.255.0.0：
+
+```
+ADD PAEPORTGATEWAY: NETWORKINDEX=1, PLANEID=0, IPVERSION=IPv4, GATEWAYIPV4="192.168.1.1", IPV4MASK="255.255.0.0";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-PAEPORTGATEWAY.md`

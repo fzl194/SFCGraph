@@ -1,0 +1,80 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD VLR
+type: MMLCommand
+name: ADD VLR（增加VLR配置信息）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: VLR
+command_category: 配置类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 电路域联合业务
+- VLR管理
+status: active
+---
+
+# ADD VLR（增加VLR配置信息）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+增加一个与本局 UNC 相连的VLR。
+
+此命令有一个参数POOLNM，POOLNM唯一标识一个MSC POOL。MSC POOL的作用是将多个MSC组成一个POOL，当POOL中某个MSC不可用的时候，可以将此MSC上的用户迁移到POOL中其他的MSC上。
+
+## 注意事项
+
+- VLR表可以动态设定。
+- 该表最大可配记录数为256。
+- 当MSC POOL中有VLR处于手动迁移的时候，不允许向此MSC POOL中增加VLR配置。
+- 一个MSC POOL中的VLR只能配一个最大V和最小V值区间。
+- 同一个VLR的最大V值不能小于最小V值。
+- MSC POOL中某个VLR的最大V值和最小V值区间不能和其他VLR的交叠。
+- MSC POOL中的所有VLR的V值配置建议覆盖0~999。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| VN | VLR号 | 可选必选说明：必选参数<br>参数说明：该参数用于指定VLR在移动网络中的设备号。<br>数据来源：整网规划<br>取值范围： 1～15位十进制数字<br>默认值： 无。 |
+| VNM | VLR名称 | 可选必选说明：可选参数<br>参数说明：该参数用于指定修改后的VLR名称。<br>数据来源：整网规划<br>取值范围： 长度不超过255的字符串<br>默认值： noname |
+| SVSGS | Sv/SGs合一 | 可选必选说明：可选参数<br>参数说明：该参数用于设置SRVCC流程中选择的Sv接口的MSC/VLR与用户在CS域注册的MSC/VLR是否为同一个。其中用户在CS域注册的MSC/VLR是通过SGs接口与MME通信的。<br>数据来源：对端协商<br>取值范围：<br>- “INCONSISTENCY（不合一）”：表示SRVCC流程中使用RAI FQDN或LAI FQDN来解析MSC。<br>- “CONSISTENT_SELECTION（CSFB触发合一）”：表示SRVCC流程中使用“MSC主机名”来查找MSC，使选择的Sv接口的MSC与用户在CS域注册的MSC/VLR为同一个。<br>默认值：INCONSISTENCY（不合一）<br>说明：当CSFB触发SRVCC，如果是MSC POOL场景，该参数需要设置为“CSFB触发合一”。CSFB触发SRVCC：UE在E-UTRAN网络下同时在PS域和CS域进行注册，并且也在IMS域进行注册。用户的语音业务优选IMS VoPS方式进行，LCS、USSD等业务仍然通过CS域进行。如果在通话过程中，用户需要回落到GERAN/UTRAN网络进行LCS、USSD等业务，语音通话会以SRVCC方式切换到MSC/VLR。SRVCC过程中Sv接口选择的MSC/VLR与用户在CS域注册的MSC/VLR需要保持一致，来保证回落到GERAN/UTRAN网络后，LCS、USSD等业务和语音通话都能正常进行。 |
+| MSCHOSTNAME | MSC主机名 | 可选必选说明：条件必选参数<br>参数含义：该参数用于配置主机名。<br>数据来源：整网规划<br>取值范围：1~255位字符串<br>默认值：无<br>配置原则：该参数只能由字母（A-Z或者a-z）、数字（0-9）、连字符（-）和点（.）组成。<br>说明：当<br>“Sv/SGs合一”<br>取值为<br>“CONSISTENT_SELECTION（CSFB触发合一）”<br>时，该参数有效。<br>配置的MSC主机名需要与<br>[**ADD IPV4DNSH**](../../GTP-C接口管理/DNS/DNS Hostfile管理/增加IPV4 DNS Hostfile记录(ADD IPV4DNSH)_26145884.md)<br>或DNS Server中已配置的对应MSC主机名保持一致。 |
+| POOLNM | MSC POOL名称 | 可选必选说明：可选参数<br>参数说明：该参数用于指定MSC POOL名称。<br>数据来源：整网规划<br>取值范围：最大长度为19的字符串<br>默认值：无<br>说明：- POOLNM唯一标识一个MSC POOL。当此参数没有输入任何值的时候表示新增加的VLR不属于任何MSC POOL。此参数大小写敏感，不支持含有中文字符，不支持包含非法字符，如逗号、分号、冒号、等号、加号、减号、单引号、双引号、百分号。<br>- POOLNM的值不能设置为NULL（这里字符N，U和L不区分大小写）。 |
+| MINV | 最小V值 | 可选必选说明：可选参数<br>参数说明：该参数用于指定最小的V值。与最大V值组合，形成V值区间。<br>UNC<br>系统采用一种算法从IMSI得到一个V值，V值的范围是0－999。<br>UNC<br>系统再根据本表配置的V值区间，查看从IMSI计算出来的V值在本表的哪个V值区间中，从而选择一个VLR。<br>数据来源：整网规划<br>取值范围：0~999<br>默认值：0<br>说明：从IMSI计算V值的算法参见协议3GPP TS 23.236。在MSC POOL中，推荐把0~999的V值分配到所有的VLR上，同时保证POOL内每套设备的V值分段分配互不重叠。在正常情况下，不使用<br>[**ADD LAIVLR**](../LAI与VLR号对应关系/增加LAI与VLR号对应关系(ADD LAIVLR)_72345015.md)<br>命令配置缺省VLR。 |
+| MAXV | 最大V值 | 可选必选说明：可选参数<br>参数说明：该参数用于指定最大的V值。与最小V值组合，形成V值区间。<br>UNC<br>系统采用一种算法从IMSI得到一个V值，V值的范围是0－999。<br>UNC<br>系统再根据本表配置的V值区间，查看从IMSI计算出来的V值在本表的哪个V值区间中，从而选择一个VLR。<br>数据来源：整网规划<br>取值范围：0~999<br>默认值：999<br>说明：从IMSI计算V值的算法参见协议3GPP TS 23.236。在MSC POOL中，推荐把0~999的V值分配到所有的VLR上，同时保证POOL内每套设备的V值分段分配互不重叠。在正常情况下，不使用<br>[**ADD LAIVLR**](../LAI与VLR号对应关系/增加LAI与VLR号对应关系(ADD LAIVLR)_72345015.md)<br>命令配置缺省VLR。 |
+| MOSR | SGs主叫通知功能 | 可选必选说明：可选参数<br>参数说明：该参数用于在CSFB流程中，控制MME在收到主叫Extended Service Request时是否向MSC发送SGsAP-SERVICE-REQUEST消息。<br>数据来源：整网规划<br>取值范围：<br>- “SUPPORT（支持）”：表示该主叫场景下，MME支持向MSC发送SGsAP-SERVICE-REQUEST消息。<br>- “NOT_SUPPORT（不支持）”：表示该主叫场景下，MME不支持向MSC发送SGsAP-SERVICE-REQUEST消息。<br>默认值：NOT_SUPPORT（不支持）<br>说明：该SGsAP-SERVICE-REQUEST消息中携带定制信元用于通知MSC已触发CSFB主叫流程，这样MSC可以统计此流程成功率。 |
+| CSFBRESTORE | CSFB被叫恢复功能 | 可选必选说明：可选参数<br>参数含义：该参数用于控制MME故障场景下，MSC向新MME发送SGsAP-PAGING-REQUEST时，新MME是否寻呼用户。<br>数据来源：整网规划<br>取值范围：<br>- “SUPPORT（支持）”：表示该被叫场景下，新MME支持寻呼用户。<br>- “NOT_SUPPORT（不支持）”：表示该被叫场景下，新MME不支持寻呼用户，向MSC回复SGsAP-PAGING-REJECT消息。<br>默认值：“SUPPORT（支持）”<br>配置原则：当ADD TAILAI命令中一个LAI对应的TAI过多时，建议配置成NOT_SUPPORT（不支持）避免出现大范围寻呼用户，导致MME过载的场景。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@VLR]] · VLR配置信息（VLR）
+
+## 使用实例
+
+1. 增加VLR信息，VLR号为86139027，VLR名称为test：
+  ```
+  ADD VLR: VN="86139027", VNM="test";
+  ```
+2. 增加VLR信息，VLR号为86139027，VLR名称为vlr12，Sv/SGs合一为INCONSISTENCY（不合一），MSC POOL名称为POOL11，最小V值为0，最大V值为300，SGs主叫通知功能为NOT_SUPPORT（不支持）：
+  ```
+  ADD VLR: VN="86139027", VNM="vlr12", SVSGS=INCONSISTENCY, POOLNM="POOL11", MINV=0, MAXV=300, MOSR=NOT_SUPPORT;
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-VLR.md`

@@ -1,0 +1,60 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV NRFFRCAVLNF
+type: MMLCommand
+name: RMV NRFFRCAVLNF（删除强制可用NF实例）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: NRFFRCAVLNF
+command_category: 配置类
+applicable_nf:
+- NRF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- NRF业务及策略管理
+- NRF业务参数
+- NRF服务能力参数管理
+status: active
+---
+
+# RMV NRFFRCAVLNF（删除强制可用NF实例）
+
+## 功能
+
+**适用NF：NRF**
+
+当NF不需要再被设置为强制可用状态时，此命令用于将NF从强制可用列表中删除。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 主备或双活组网的场景下，如果需要配置此命令，则两个NRF上均需执行此命令，且配置参数一致。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NFINSTANCEID | NF实例标识 | 可选必选说明：必选参数<br>参数含义：该参数表示需要设置为强制可用的NF实例标识。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~36。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NRFFRCAVLNF]] · 强制可用NF实例（NRFFRCAVLNF）
+
+## 使用实例
+
+运营商希望在NRF上删除强制可用的NF实例123e4567-e89b-12d3-a456-426655440000时，执行此命令。
+
+```
+RMV NRFFRCAVLNF: NFINSTANCEID="123e4567-e89b-12d3-a456-426655440000";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-NRFFRCAVLNF.md`

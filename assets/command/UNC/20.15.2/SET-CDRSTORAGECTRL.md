@@ -1,0 +1,69 @@
+---
+id: UNC@20.15.2@MMLCommand@SET CDRSTORAGECTRL
+type: MMLCommand
+name: SET CDRSTORAGECTRL（设置话单存储控制参数）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: CDRSTORAGECTRL
+command_category: 配置类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 1
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费管理
+- 计费缓存
+- 缓存控制
+status: active
+---
+
+# SET CDRSTORAGECTRL（设置话单存储控制参数）
+
+## 功能
+
+**适用NF：SGW-C、PGW-C、SMF**
+
+命令用来配置缓存话单文件的超期时间，配置的天数加上周数乘以七为配置的超期总天数。如果一个话单文件被缓存的时间超过配置的超期时间，该话单不会再发往CG/CHF。当配置的超期时间为0时，所有缓存文件不进行超期检测且不上报超期话单缓存告警，CG/CHF状态恢复正常后，所有的缓存话单都将发往CG/CHF。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为1。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| 参数标识 | CDREXPIREDAY | CDREXPIREWEEK |
+| --- | --- | --- |
+| 初始值 | 2 | 4 |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CDREXPIREDAY | 话单缓存超期天数 | 可选必选说明：可选参数<br>参数含义：用于配置缓存话单文件的超期天数。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～6，单位是天。<br>默认值：无<br>配置原则：无 |
+| CDREXPIREWEEK | 话单缓存超期周数 | 可选必选说明：可选参数<br>参数含义：用于配置缓存话单文件的超期周数。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～52。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@CDRSTORAGECTRL]] · 话单存储控制参数（CDRSTORAGECTRL）
+
+## 使用实例
+
+配置缓存话单文件的超期时间为10天。话单缓存超期天数为3，话单缓存超期周数为1：
+
+```
+SET CDRSTORAGECTRL:CDREXPIREDAY=3,CDREXPIREWEEK=1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-CDRSTORAGECTRL.md`

@@ -1,0 +1,59 @@
+---
+id: UNC@20.15.2@MMLCommand@STR RCISOLATION
+type: MMLCommand
+name: STR RCISOLATION（启动人工恢复已隔离的Pod）
+nf: UNC
+version: 20.15.2
+verb: STR
+object_keyword: RCISOLATION
+command_category: 动作类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 可靠性管理
+- 微服务可靠性管理
+status: active
+---
+
+# STR RCISOLATION（启动人工恢复已隔离的Pod）
+
+## 功能
+
+该命令用于启动人工恢复已隔离的Pod。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PODNAME | POD名称 | 可选必选说明：该参数在"RCSCOPE"配置为"POD"时为条件必选参数。<br>参数含义：用于选择执行指定pod的podname做恢复处理。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~1024。<br>默认值：无<br>配置原则：无 |
+| MEID | 网元标识 | 可选必选说明：可选参数<br>参数含义：用于选择执行恢复的网元标识。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~40。<br>默认值：无<br>配置原则：无 |
+| RCGRANULARITY | 恢复粒度 | 可选必选说明：可选参数<br>参数含义：用于选择执行恢复的粒度。<br>数据来源：本端规划<br>取值范围：<br>- POD（POD粒度）<br>- MODULE（模块粒度）<br>- SERVICE（业务粒度）<br>- ALL（恢复所有）<br>默认值：无<br>配置原则：无 |
+| RCSCOPE | 恢复范围 | 可选必选说明：可选参数<br>参数含义：用于选择执行恢复的范围。<br>数据来源：本端规划<br>取值范围：<br>- POD（恢复指定POD）<br>- ALL（恢复所有）<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@RCISOLATION]] · 人工恢复已隔离的Pod（RCISOLATION）
+
+## 使用实例
+
+启动人工恢复已隔离的Pod
+
+```
+%%STR RCISOLATION: MEID="0", RCGRANULARITY=ALL, RCSCOPE=ALL;%%
+RETCODE = 0  操作成功
+
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/STR-RCISOLATION.md`

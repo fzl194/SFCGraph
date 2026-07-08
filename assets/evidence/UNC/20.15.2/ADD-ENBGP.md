@@ -1,0 +1,49 @@
+# 增加eNodeB群组(ADD ENBGP)
+
+- [命令功能](#ZH-CN_MMLREF_0000001126145606__1.3.1.1)
+- [注意事项](#ZH-CN_MMLREF_0000001126145606__1.3.2.1)
+- [本地用户权限](#ZH-CN_MMLREF_0000001126145606__1.3.3.1)
+- [网管用户权限](#ZH-CN_MMLREF_0000001126145606__1.3.4.1)
+- [参数说明](#ZH-CN_MMLREF_0000001126145606__1.3.5.1)
+- [使用实例](#ZH-CN_MMLREF_0000001126145606__1.3.6.1)
+
+#### [命令功能](#ZH-CN_MMLREF_0000001126145606)
+
+**适用网元：MME**
+
+此命令用于增加eNdoeB群组记录。eNdoeB群组用于定义一组eNdoeB组成的区域，以该区域为粒度进行业务策略控制。需要结合 [**ADD ENBGPMEM**](../eNodeB群组成员管理/增加eNodeB群组成员(ADD ENBGPMEM)_72225289.md) 命令为eNodeB群组添加成员。
+
+#### [注意事项](#ZH-CN_MMLREF_0000001126145606)
+
+- 此命令最大记录数为2048。
+- 此命令执行后立即生效。
+
+#### [本地用户权限](#ZH-CN_MMLREF_0000001126145606)
+
+manage-ug；system-ug
+
+#### [网管用户权限](#ZH-CN_MMLREF_0000001126145606)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_MMLREF_0000001126145606)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| ENBGPID | eNodeB群组标识 | 可选必选说明：必选参数<br>参数含义：该参数用于指定eNodeB群组标识。<br>数据来源：本端规划<br>取值范围：1~2048<br>默认值：无 |
+| TYPE | 类型 | 可选必选说明：必选参数<br>参数含义：用于指定该eNodeB群组的类型。<br>数据来源：整网规划<br>取值范围：<br>- “ENTRY(入口)”<br>- “INSIDE(内部)”<br>默认值：无<br>配置原则：<br>- ENTRY(入口)：入口eNodeB群组用于定义在MME覆盖边界专用网络区域和高铁站候车厅配置专网入口的eNodeB群组。对于从入口eNodeB进入内部eNodeB群组覆盖区域的用户，当其驻留时长超过三倍“驻留时长（min）”时，UNC将其从该区域迁出。<br>- INSIDE(内部)：内部eNodeB群组用于定义低速区域专用网络的eNodeB群组。对于在内部eNodeB群组覆盖区域的用户，当驻留时长超过“驻留时长（min）”时，UNC将其从该区域迁出。 |
+| STICK_TIME | 驻留时长（min） | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置UE在内部eNodeB群组覆盖区域的驻留时间阈值，当UE在区域内的驻留时间超过配置值，或者UE在该参数配置的周期内接入次数超过参数“接入次数”配置值时，<br>UNC<br>将其从该区域迁出。<br>前提条件：该参数在“TYPE（类型）”参数配置为“INSIDE(内部)”后生效。<br>数据来源：本端规划<br>取值范围：10min~120min<br>默认值：30min |
+| ACC_TIMES | 接入次数 | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置UE在内部eNodeB群组覆盖区域的接入次数阈值。如果在“驻留时长（min）”参数配置的时间里，UE连续接入内部eNodeB群组次数超过配置值，<br>UNC<br>将其从该区域迁出。<br>前提条件：该参数在<br>“TYPE（类型）”<br>参数配置为<br>“INSIDE(内部)”<br>后生效。<br>数据来源：本端规划<br>取值范围：0,3~100<br>默认值：0<br>配置原则：参数设置为0时，依据接入次数迁出功能不生效。 |
+| ENBGPNAME | eNodeB群组名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定eNodeB群组名称。<br>数据来源：本端规划<br>取值范围：0~32位字符串<br>默认值：noname |
+
+#### [使用实例](#ZH-CN_MMLREF_0000001126145606)
+
+增加一个eNodeB群组，eNodeB群组标识为“1”，群组类型为“入口”，群组名称为“highspeed_usercheck_entry”:
+
+ADD ENBGP: ENBGPID=1, TYPE=ENTRY, ENBGPNAME="highspeed_usercheck_entry";
+
+增加一个eNodeB群组，eNodeB群组标识为“2”，群组类型为“内部”，群组名称为“lowspeed_inside”:
+
+ADD ENBGP: ENBGPID=2, TYPE=INSIDE, STICK_TIME=60, ENBGPNAME="lowspeed_inside";
+
+UE从入口ENBGP进入低速ENBGP时，最大驻留时长为“驻留时长（min）”参数配置值的三倍。

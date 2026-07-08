@@ -1,0 +1,59 @@
+---
+id: UNC@20.15.2@MMLCommand@OPR NRFNFATTRVRY
+type: MMLCommand
+name: OPR NRFNFATTRVRY（操作执行NF属性冲突核验）
+nf: UNC
+version: 20.15.2
+verb: OPR
+object_keyword: NRFNFATTRVRY
+command_category: 动作类
+applicable_nf:
+- NRF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- NRF业务及策略管理
+- NRF业务参数
+- NF属性冲突核验
+status: active
+---
+
+# OPR NRFNFATTRVRY（操作执行NF属性冲突核验）
+
+## 功能
+
+**适用NF：NRF**
+
+该命令用于触发某个NF的属性冲突核验，核验参数可通过SET NRFVERIFYPARA命令设置。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NFINSTANCEID | NF实例标识 | 可选必选说明：必选参数<br>参数含义：该参数表示进行属性冲突核验的NF实例标识。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~36。<br>默认值：无<br>配置原则：<br>该参数只能由字母（A-Z或者a-z）、数字（0-9）、中划线（-）组成。不区分大小写。 |
+| PODNAME | Pod名称 | 可选必选说明：可选参数<br>参数含义：该参数表示进行属性冲突核验所指定的Pod名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~128。<br>默认值：无<br>配置原则：<br>若该参数不设置，NRF会选中一个固定Pod来执行OPR NRFNFATTRVRY命令。<br>由于单Pod上不支持并发执行NF核验，如果要同时执行多个NF的核验，可以指定不同的Pod分开执行。可通过DSP NRFNFATTRVRY命令查看正在执行核验任务的Pod名称，可以通过DSP POD: MEID="0", TYPE=byType, PODTYPE="nrf-pod";命令查看所有可以执行核验命令的Pod名称。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NRFNFATTRVRY]] · 操作执行NF属性冲突核验（NRFNFATTRVRY）
+
+## 使用实例
+
+执行NF实例标识为123e4567-e89b-12d3-a456-426655440000的冲突核验：
+
+```
+OPR NRFNFATTRVRY: NFINSTANCEID="123e4567-e89b-12d3-a456-426655440000";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/OPR-NRFNFATTRVRY.md`

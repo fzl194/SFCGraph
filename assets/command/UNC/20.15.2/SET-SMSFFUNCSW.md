@@ -1,0 +1,75 @@
+---
+id: UNC@20.15.2@MMLCommand@SET SMSFFUNCSW
+type: MMLCommand
+name: SET SMSFFUNCSW（设置SMSF功能开关）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: SMSFFUNCSW
+command_category: 配置类
+applicable_nf:
+- SMSF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- SMSF业务管理
+- SMSF功能开关
+status: active
+---
+
+# SET SMSFFUNCSW（设置SMSF功能开关）
+
+## 功能
+
+**适用NF：SMSF**
+
+该命令用于设置SMSF的各类功能开关。运营商可以根据需要设置SMSF的不同功能。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 双活组网的场景下，如果需要配置此命令，则两个SMSF上均需执行此命令，且配置参数一致。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| SMSFREGRCSW | METRICSSTATSW | SMSFUDMUNSUBSW | UNSUBEXPIRE | MOCARRYULISW | SMSFUDMRESUBSW | RESUBTIME | AMFBINDREDISCSW | NCGALMSW | NCGALMTIMERLEN | NCGALMRECHECKSW |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| FUNC_OFF | FUNC_ON | FUNC_OFF | 1440 | FUNC_OFF | FUNC_OFF | 120 | FUNC_ON | FUNC_OFF | 30 | FUNC_ON |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SMSFREGRCSW | SMSF向注册中心注册开关 | 可选必选说明：可选参数<br>参数含义：该参数用于表示SMSF到注册中心注册的开关。<br>数据来源：本端规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| METRICSSTATSW | SMSF内部统计功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于表示SMSF内部统计功能开关。<br>数据来源：本端规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| SMSFUDMUNSUBSW | SMSF是否向UDM显式去订阅 | 可选必选说明：可选参数<br>参数含义：该参数用于表示SMSF是否向UDM显式去订阅的功能开关。<br>数据来源：本端规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| UNSUBEXPIRE | SMSF向UDM显式去订阅超时时限(分钟) | 可选必选说明：该参数在"SMSFUDMUNSUBSW"配置为"FUNC_ON"时为条件可选参数。<br>参数含义：该参数用于表示SMSF向UDM显式去订阅超时时限。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~1440，单位是分钟。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| MOCARRYULISW | 转发MO消息携带ULI信息开关 | 可选必选说明：可选参数<br>参数含义：该参数用于表示是否开启SMSF转发MO消息携带ULI信息功能开关。开关打开时，SMSF在向SMSC发送MAP_MO_FORWARD_SHORT_MESSAGE_REQ消息时，会携带用户ULI信息。<br>数据来源：本端规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| SMSFUDMRESUBSW | SMSF向UDM续订阅功能开关 | 可选必选说明：该参数在"SMSFUDMUNSUBSW"配置为"FUNC_ON"时为条件可选参数。<br>参数含义：该参数用于表示是否开启SMSF向UDM续订阅功能开关。当“SMSF是否向UDM显式去订阅”开关打开，且本开关打开时，SMSF会在订阅超期前，向UDM重新发起订阅。<br>数据来源：本端规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| RESUBTIME | SMSF向UDM续订阅冗余时长 | 可选必选说明：该参数在"SMSFUDMRESUBSW"配置为"FUNC_ON"时为条件可选参数。<br>参数含义：该参数用于表示SMSF向UDM续订阅冗余时长。SMSF向UDM续订阅时，距离订阅超时时间多久之内发送续订阅请求。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~1440，单位是分钟。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| AMFBINDREDISCSW | 优先使用AMF Binding头域重选备份AMF功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制AMF故障后是否开启优先使用3gpp-Sbi-Binding头域重选备份AMF功能。<br>数据来源：全网规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| NCGALMSW | 转发NCG告警开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制转发NCG告警的开关，打开开关后可以转发NCG的告警到OMC。<br>数据来源：对端协商<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：<br>在中国移动场景下，当VLRFUNCSW中的本网用户计费开关（HOMECHARGINGSW）或外网用户计费开关（FOREIGNCHARGSW）打开后，需打开此开关。 |
+| NCGALMTIMERLEN | NCG告警核查恢复时长 | 可选必选说明：该参数在"NCGALMSW"配置为"FUNC_ON"时为条件可选参数。<br>参数含义：该参数用于指定NCG告警核查恢复的时长，用于NCG故障、丢失NCG恢复告警、NCG切换SMSF后NCG的故障告警和恢复告警发送到不同的SMSF等场景下故障告警核查恢复。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~1440，单位是分钟。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+| NCGALMRECHECKSW | NCG告警内部资源核查开关 | 可选必选说明：该参数在"NCGALMSW"配置为"FUNC_ON"时为条件可选参数。<br>参数含义：该参数用于控制是否核查NCG转发告警流程中的使用的内部资源，开关打开后，会将上报至OMC的告警资源和SMSF内部保存的资源进行核查，用于清除内部资源中的残留信息。核查周期固定1次/天。<br>数据来源：本端规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFUNCSW查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SMSFFUNCSW]] · SMSF功能开关（SMSFFUNCSW）
+
+## 使用实例
+
+运营商希望设置“SMSF向注册中心注册开关”为“打开”，“SMSF内部统计功能开关”为“打开”，“SMSF是否向UDM显去订阅”为打开，“SMSF向UDM显式去订阅超时时限(分钟)”为1440，“转发MO消息携带ULI信息开关”为打开，“SMSF向UDM续订阅功能开关”为打开，“SMSF向UDM续订阅冗余时长”为120，“转发NCG告警开关”为打开，“NCG告警核查恢复时长”为30，“NCG告警内部资源核查开关”为打开，执行如下命令：
+
+```
+SET SMSFFUNCSW: SMSFREGRCSW=FUNC_ON, METRICSSTATSW=FUNC_ON, SMSFUDMUNSUBSW=FUNC_ON, UNSUBEXPIRE=1440, MOCARRYULISW=FUNC_ON, SMSFUDMRESUBSW=FUNC_ON, RESUBTIME=120, AMFBINDREDISCSW=FUNC_ON, NCGALMSW=FUNC_ON, NCGALMTIMERLEN=30, NCGALMRECHECKSW=FUNC_ON;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-SMSFFUNCSW.md`

@@ -1,0 +1,78 @@
+---
+id: UNC@20.15.2@MMLCommand@DSP TMPATH
+type: MMLCommand
+name: DSP TMPATH（显示TM路径）
+nf: UNC
+version: 20.15.2
+verb: DSP
+object_keyword: TMPATH
+command_category: 查询类
+applicable_nf:
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- Tm接口管理
+- Tm路径管理
+status: active
+---
+
+# DSP TMPATH（显示TM路径）
+
+## 功能
+
+**适用NF：MME**
+
+该命令用于查询TM路径状态，如果输入路径在系统中已经存在则输出这条路径的状态。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令可用于SPP进程/UPP进程。
+- 当“进程类型”未输入时，默认查询UPP进程上的路径状态信息。
+- 当本命令QRYTP参数取值DDB（数据库）时，[SET TMAPINTF](../Tm接口参数管理/设置Tm接口参数(SET TMAPINTF)_88088456.md)命令ECHOSIG参数开关必须是ON，否则查询不出结果。
+
+## 权限
+
+manage-ug;system-ug;monitor-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RUNAME | RU名称 | 可选必选说明：必须参数<br>参数含义：该参数用于指定资源单元名称。该参数可以通过<br>**[DSP RU](../../../../../平台服务管理/单体服务公共功能管理/系统管理/资源管理/RU管理/显示资源单元信息（DSP RU）_59103857.md)**<br>命令查询。<br>取值范围：1~63位字符串<br>默认值：无 |
+| PROCTP | 进程类型 | 可选必选说明：可选参数<br>参数含义：该参数用于指定进程的进程类型。<br>取值范围：<br>- “SPP”<br>- “UPP”<br>默认值：无 |
+| PROCNO | 进程号 | 可选必选说明：可选参数<br>参数含义：该参数用于指定进程的序号。该参数可以通过<br>**[DSP PROCESSUSN](../../../../../平台服务管理/操作维护/VNFC公共功能管理/操作维护/系统调测/进程管理/查询USN进程信息(DSP PROCESSUSN)_11295773.md)**<br>命令查询，选取结果中的“相同进程类型的索引”列。<br>取值范围：0~20<br>默认值：0 |
+| QRYTP | 查询类型 | 可选必选说明：可选参数<br>参数含义：该参数用于指定查询类型。<br>取值范围：<br>- “MEMORY（内存）”<br>- “DDB（数据库）”<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@TMPATH]] · TM路径（TMPATH）
+
+## 使用实例
+
+查询资源单元为USN_SP_RU_0064上的TM PATH信息：
+
+DSP TMPATH: RUNAME="USN_SP_RU_0064", PROCNO=0, QRYTP=MEMORY;
+
+```
+%%DSP TMPATH: RUNAME="USN_SP_RU_0064", PROCNO=0, QRYTP=MEMORY;%%
+RETCODE = 0  操作成功
+
+操作结果如下:
+-------------------------
+本端IP地址       对端IP地址      TM路径接口类型      TM路径状态     对端Recovery值      端口号 
+
+10.10.10.1       10.10.10.1      Tm1 path            正常            0                 29527
+10.10.10.1       10.10.10.1      Tm1 path            正常            NULL              29527
+(结果数目 = 2)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/DSP-TMPATH.md`

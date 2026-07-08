@@ -1,0 +1,87 @@
+---
+id: UNC@20.15.2@MMLCommand@DSP CHGGA
+type: MMLCommand
+name: DSP CHGGA（显示计费Ga接口参数状态）
+nf: UNC
+version: 20.15.2
+verb: DSP
+object_keyword: CHGGA
+command_category: 查询类
+applicable_nf:
+- SGSN
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 计费管理
+- 计费Ga接口参数
+status: active
+---
+
+# DSP CHGGA（显示计费Ga接口参数状态）
+
+## 功能
+
+**适用网元：SGSN**
+
+该命令用于查询当前进程计费Ga接口参数，包括SGSN生成话单的协议版本等。系统初始化时会加载数据配置表中的Ga接口参数配置数据，当使用 [**SET CHGGA**](设置计费Ga接口参数(SET CHGGA)_26145378.md) 修改数据库中的配置后，新修改的数据并不会即时生效，所以此时数据配置表中的配置与当前进程使用的配置不一致，需要重启SPP、GTP/UPP和CDP进程使之生效。此命令的功能为查询进程当前使用的配置。关于数据表中的配置数据，请使用 [**LST CHGGA**](查询计费Ga接口参数(LST CHGGA)_72225059.md) 命令查询。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令只能对GTP/UPP、SPP和CDP进程进行查询。
+- 不输入参数，表示查询SGSN系统内所有CHGGA状态信息；输入参数“RUNAME”，表示查询该RU上所有CHGGA状态信息。
+
+## 权限
+
+manage-ug；system-ug；monitor-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RUNAME | RU名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定要查询的资源单元名称。该参数可以通过<br>[DSP RU](../../../../平台服务管理/单体服务公共功能管理/系统管理/资源管理/RU管理/显示资源单元信息（DSP RU）_59103857.md)<br>命令查询。<br>取值范围：0～63位字符串<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@CHGGA]] · 计费Ga接口参数状态（CHGGA）
+
+## 使用实例
+
+查询计费Ga接口参数的配置信息，配置格式如下：
+
+DSP CHGGA:;
+
+```
+%%DSP CHGGA: RUNAME="USN_SP_RU_0067";%%
+RETCODE = 0  操作成功。
+
+输出结果如下
+--------------
+                  RU名称  =  USN_SP_RU_0067
+                  进程号  =  0
+                进程类型  =  SPP
+                操作结果  =  查询成功
+        GPRS CDR协议版本  =  R98
+        UMTS CDR协议版本  =  R99
+             R98 CDR版本  =  中国移动计费网关规范V1.3.0
+             R99 CDR版本  =  3GPP 32.015 V3.6.0
+              R4 CDR版本  =  3GPP 32.215 V4.4.0          
+              R5 CDR版本  =  3GPP 32.215 V5.6.0          
+              R6 CDR版本  =  3GPP 32.251 V6.6.0        
+              R7 CDR版本  =  3GPP 32.251 V7.4.0          
+              R9 CDR版本  =  3GPP 32.251 V9.4.0          
+          CDR重发间隔(s)  =  NULL   
+             CDR重发次数  =  NULL
+硬盘操作失败告警次数门限  =  NULL
+     硬盘空间不足门限(%)  =  NULL 
+   重定向帧最大占用率(%)  =  NULL
+(结果个数 = 1)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/DSP-CHGGA.md`

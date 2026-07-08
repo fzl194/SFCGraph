@@ -1,0 +1,87 @@
+---
+id: UNC@20.15.2@MMLCommand@SET RDSAUTHREQVSA
+type: MMLCommand
+name: SET RDSAUTHREQVSA（设置RADIUS鉴权请求携带的私有扩展属性）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: RDSAUTHREQVSA
+command_category: 配置类
+applicable_nf:
+- PGW-C
+- GGSN
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- RADIUS管理
+- 鉴权管理
+- 请求消息信元控制
+status: active
+---
+
+# SET RDSAUTHREQVSA（设置RADIUS鉴权请求携带的私有扩展属性）
+
+## 功能
+
+**适用NF：PGW-C、GGSN、SMF**
+
+该命令用来设置RADIUS服务器组的鉴权请求消息中是否支持各个3GPP（26/10415）扩展属性。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 使用该命令设置RADIUS服务器组的可选鉴权消息属性，当有用户需要去这个RADIUS服务器组鉴权时，依据这条命令的配置携带或者不携带某些鉴权消息属性。
+- 需要先执行ADD RDSSVRGRP命令，才能执行SET RDSAUTHREQVSA命令。
+- RDSSVRGRPNAME的值由ADD RDSSVRGRP命令添加，THREEGPP、CGIPV6ADDRESS的初始设置值是DISABLE，IMSI、CHARGINGID、PDPTYPE、CGADDRESS、NEGOTIAEDQOS、SGSNSGWADDRESS、GGSNADDRESS、IMSIMCCMNC、GGSNMCCMNC、NSAPI、SELECTIONMODE、CHARGINGCHAR、SGSNSGWMCCMNC、IMEISV、RATTYPE、ULI、MSTIMEZONE、NEGOTIAEDDSCP、SGSNIPV6ADDRESS、GGSNIPV6ADDRESS的初始设置值是ENABLE。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RDSSVRGRPNAME | RADIUS服务器组名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定鉴权服务器组名。<br>数据来源：对端协商<br>取值范围：字符串类型，输入长度范围是1~31。<br>默认值：无。<br>配置原则：<br>配置RADIUS服务器组名前，需要先使用ADD RDSSVRGRP命令配置RADIUS服务器组信息。 |
+| THREEGPP | 3GPP私有扩展属性开关 | 可选必选说明：可选参数<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带26/10415这组属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| IMSI | 3GPP-IMSI | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-IMSI属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| CHARGINGID | 3GPP-Charging-ID | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-Charging-ID属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| PDPTYPE | 3GPP-PDP-Type | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-PDP-Type属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| CGADDRESS | 3GPP-CG-Address | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-CG-Address属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| NEGOTIAEDQOS | 3GPP-GPRS-Negotiated-QoS-Profile | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-GPRS-Negotiated-QoS-Profile属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| SGSNSGWADDRESS | 3GPP-SGSN(SGW)-Address | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-SGSN（SGW）-Address属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| GGSNADDRESS | 3GPP-GGSN-Address | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-GGSN-Address属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| IMSIMCCMNC | 3GPP-IMSI-MCC-MNC | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-IMSI-MCC-MNC属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| GGSNMCCMNC | 3GPP-GGSN-MCC-MNC | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-GGSN-MCC-MNC属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| NSAPI | 3GPP-NSAPI | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-NSAPI属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| SELECTIONMODE | 3GPP-Selection-Mode | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-Selection-Mode属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| CHARGINGCHAR | 3GPP-Charging-Characteristics | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-Charging-Characteristics属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| SGSNSGWMCCMNC | 3GPP-SGSN(SGW)-MCC-MNC | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-SGSN（SGW）-MCC-MNC属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| IMEISV | 3GPP-IMEISV | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-IMEISV属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| RATTYPE | 3GPP-RAT-Type | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-RAT-Type属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| ULI | 3GPP-User-Location-Info | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-User-Location-Info属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| MSTIMEZONE | 3GPP-MS-TimeZone | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-MS-TimeZone属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| NEGOTIAEDDSCP | 3GPP-Negotiated-DSCP | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-Negotiated-DSCP属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| SGSNIPV6ADDRESS | 3GPP-SGSN-IPv6-Address | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-SGSN-IPv6-Address属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| GGSNIPV6ADDRESS | 3GPP-GGSN-IPv6-Address | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-GGSN-IPv6-Address属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+| CGIPV6ADDRESS | 3GPP-CG-IPv6-Address | 可选必选说明：该参数在"THREEGPP"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于配置是否支持鉴权请求消息中携带3GPP-CG-IPv6Address属性。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（禁止）”：否。<br>- “ENABLE（允许）”：是。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST RDSAUTHREQVSA查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@RDSAUTHREQVSA]] · RADIUS鉴权请求携带的私有扩展属性（RDSAUTHREQVSA）
+
+## 使用实例
+
+配置鉴权请求消息中不支持携带3GPP-GPRS-Negotiated-QoS-Profile属性，其余属性使用默认值，也即支持携带：
+
+```
+SET RDSAUTHREQVSA:RDSSVRGRPNAME="rds",THREEGPP=ENABLE,NEGOTIAEDQoS=DISABLE;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-RDSAUTHREQVSA.md`

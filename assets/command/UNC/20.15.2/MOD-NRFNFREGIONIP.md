@@ -1,0 +1,61 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD NRFNFREGIONIP
+type: MMLCommand
+name: MOD NRFNFREGIONIP（修改IP与NF区域映射关系配置）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: NRFNFREGIONIP
+command_category: 配置类
+applicable_nf:
+- NRF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- NRF业务及策略管理
+- NRF业务参数
+- NF区域与IP映射关系配置管理
+status: active
+---
+
+# MOD NRFNFREGIONIP（修改IP与NF区域映射关系配置）
+
+## 功能
+
+**适用NF：NRF**
+
+该命令用于修改IP与NF区域的映射关系。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IPTYPE | IP类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定NF客户端地址的IP类型。<br>数据来源：本端规划<br>取值范围：<br>- IPV4（IPv4地址）<br>- IPV6（IPv6地址）<br>默认值：无<br>配置原则：无 |
+| IPV4 | IPv4地址 | 可选必选说明：该参数在"IPTYPE"配置为"IPV4"时为条件必选参数。<br>参数含义：该参数用于表示NF客户端的IPv4地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无<br>配置原则：无 |
+| IPV6 | IPv6地址 | 可选必选说明：该参数在"IPTYPE"配置为"IPV6"时为条件必选参数。<br>参数含义：该参数用于表示NF的客户端IPv6地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| NFREGION | NF归属区域 | 可选必选说明：必选参数<br>参数含义：该参数用于表示NF归属区域。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~36。该字段大小写不敏感 。<br>默认值：无<br>配置原则：<br>NF归属区域由运营商规划。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NRFNFREGIONIP]] · IP与NF区域映射关系配置（NRFNFREGIONIP）
+
+## 使用实例
+
+修改IP类型为IPV4，IPV4值为"10.10.10.10"的IP与NF区域的映射关系。
+
+```
+MOD NRFNFREGIONIP: IPTYPE=IPV4, IPV4="10.10.10.10", NFREGION="ff";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-NRFNFREGIONIP.md`

@@ -1,0 +1,69 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV GTPALMMSK
+type: MMLCommand
+name: RMV GTPALMMSK（删除GTP路径断告警屏蔽记录）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: GTPALMMSK
+command_category: 配置类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- GTP-C接口管理
+- GTP-C协议管理
+- 路径告警屏蔽
+status: active
+---
+
+# RMV GTPALMMSK（删除GTP路径断告警屏蔽记录）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+该命令用于删除一条屏蔽GTP路径告警的配置。
+
+## 注意事项
+
+- 执行该命令前，需要提前配置[**ADD GTPALMMSK**](增加GTP路径断告警屏蔽记录(ADD GTPALMMSK)_72225587.md)命令添加IP地址/网段/IP地址范围的GTP路径告警屏蔽记录。
+- 该命令执行后立即生效。
+- 该命令可以多次执行。
+- 该命令执行后，仅对配置的IP地址网段新产生的GTP路径告警有效，不会恢复其之前产生的GTP路径告警。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CFGTP | 配置类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指示配置屏蔽GTP路径告警的类型。<br>取值范围：<br>- “IPMASK(IP+掩码)”<br>- “SENDIP(起始IP+终止IP)”<br>- “IPV6MASK(IPv6+前缀)”<br>- “SENDIPV6(起始IPv6+终止IPv6)”<br>默认值：无 |
+| IPV4ADDR | 起始对端设备IP地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备起始IPv4地址。<br>前提条件：<br>在“MML命令行-UNC”窗口上执行命令<br>[**ADD GTPALMMSK**](增加GTP路径断告警屏蔽记录(ADD GTPALMMSK)_72225587.md)<br>。<br>取值范围：0.0.0.0~255.255.255.255<br>默认值：无 |
+| EIPV4ADDR | 终止对端设备IP地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备终止IPv4地址。<br>前提条件：<br>在“MML命令行-UNC”窗口上执行命令<br>[**ADD GTPALMMSK**](增加GTP路径断告警屏蔽记录(ADD GTPALMMSK)_72225587.md)<br>。<br>取值范围：0.0.0.0~255.255.255.255<br>默认值：无<br>说明：- 本参数的取值应该大于等于“起始对端设备IP地址”的取值。 |
+| MASKV4 | 掩码 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备的IPv4地址的掩码。<br>前提条件：<br>在“MML命令行-UNC”窗口上执行命令<br>[**ADD GTPALMMSK**](增加GTP路径断告警屏蔽记录(ADD GTPALMMSK)_72225587.md)<br>。<br>取值范围：0.0.0.0~255.255.255.255<br>默认值：无 |
+| IPV6ADDR | 起始对端设备IPv6地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备起始IPv6地址。<br>前提条件：<br>在“MML命令行-UNC”窗口上执行命令<br>[**ADD GTPALMMSK**](增加GTP路径断告警屏蔽记录(ADD GTPALMMSK)_72225587.md)<br>。<br>取值范围：0:0:0:0:0:0:0:0 ~ FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF<br>默认值：无 |
+| EIPV6ADDR | 终止对端设备IPv6地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备终止IPv6地址。<br>前提条件：<br>在“MML命令行-UNC”窗口上执行命令<br>[**ADD GTPALMMSK**](增加GTP路径断告警屏蔽记录(ADD GTPALMMSK)_72225587.md)<br>。<br>取值范围：0:0:0:0:0:0:0:0 ~ FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF<br>默认值：无<br>说明：- 本参数的取值应该大于等于“起始对端设备IPv6地址”的取值。 |
+| PRELEN | 前缀长度 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备的IPv6地址的前缀长度。<br>前提条件：<br>在“MML命令行-UNC”窗口上执行命令<br>[**ADD GTPALMMSK**](增加GTP路径断告警屏蔽记录(ADD GTPALMMSK)_72225587.md)<br>。<br>取值范围：0~128<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@GTPALMMSK]] · GTP路径断告警屏蔽记录（GTPALMMSK）
+
+## 使用实例
+
+1.数据配置错误或者指定的对端设备已经不存在，对应的IP地址为：192.168.168.12，掩码为：255.255.255.255，需要删除此设备的数据：
+
+RMV GTPALMMSK: CFGTP=IPMASK, IPV4ADDR="192.168.168.12", MASKV4="255.255.255.255";
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-GTPALMMSK.md`

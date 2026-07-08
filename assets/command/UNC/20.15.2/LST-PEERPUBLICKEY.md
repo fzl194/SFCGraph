@@ -1,0 +1,72 @@
+---
+id: UNC@20.15.2@MMLCommand@LST PEERPUBLICKEY
+type: MMLCommand
+name: LST PEERPUBLICKEY（查询对端公钥）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: PEERPUBLICKEY
+command_category: 查询类
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- 操作维护
+- 接入配置管理
+- 密钥配置
+- 公钥配置
+status: active
+---
+
+# LST PEERPUBLICKEY（查询对端公钥）
+
+## 功能
+
+该命令用于查询对端公钥。
+
+## 注意事项
+
+无。
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| KEYNAME | 密钥名称 | 可选必选说明：可选参数<br>参数含义：密钥名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无 |
+| PUBKEYTYPE | 密钥类型 | 可选必选说明：必选参数<br>参数含义：密钥类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- RSA：RSA公钥。<br>- DSA：DSA公钥。<br>- ECC：ECC公钥。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@PEERPUBLICKEY]] · 对端公钥（PEERPUBLICKEY）
+
+## 使用实例
+
+查询对端公钥：
+
+```
+LST PEERPUBLICKEY: KEYNAME="rsa2",PUBKEYTYPE=RSA;
+```
+
+```
+
+RETCODE = 0  操作成功
+
+结果如下
+-------------------------
+密钥名称  =  rsa2
+密钥类型  =  RSA
+    密钥  =  3082010A0282010100BB7B948B9E1124233E2AEBD29E131FC3D2587AF5B8814485376B32F1AD567D12AFFBC66B05360D80431D3DF573E565B9394C28CE0361F06CB52A4249DD8DCD011BE9C9F4FA19B6F03DCB52EA8D75C6D5B851AD35538854AE7356E6FA9E1943A20A38BE728CE4BF2A4E2E44511595C0D0503300C9F2CC556283A7A060432D07E469A706F3A2C6D13537B546B48AED53F080B0DB9B665143CFB0C665172266B5B460F1CE76C1555FDB90822E80F121007CC52C8A54F8731BC0C35F7A3CAAFA805B12ED5F4D83FB7A15C61F4D7BD9F0494DAEF967A4497359990E284B0AEA323AF4EE05C4968F3281A1C285DE830C5836E929E051FF44BCB85B114A2EBD762A2A8D0203010001
+编码类型  =  DER
+公钥指纹  =  28:f9:28:23:07:87:3d:a3:56:61:4d:14:3a:4a:2a:04
+(结果个数 = 1)
+---   END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-PEERPUBLICKEY.md`

@@ -1,0 +1,59 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD MQCCLASSIFIER
+type: MMLCommand
+name: ADD MQCCLASSIFIER（增加流分类）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: MQCCLASSIFIER
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 10239
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 安全管理
+- MQC
+- 流分类
+status: active
+---
+
+# ADD MQCCLASSIFIER（增加流分类）
+
+## 功能
+
+该命令用于创建流分类；在复杂流分类的QoS策略中，需要对某些特性规则的流量进行分类从而执行相同的流量策略时，可以通过该命令配置流分类，并在流分类下定义流量规则；配置流分类后，符合该流量规则的流量会按照该流分类绑定的流行为执行流量策略。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为10239。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CLASSIFIERNAME | 分类名称 | 可选必选说明：必选参数<br>参数含义：指定流分类的名称。类名不允许为系统预定义类的名称default-class。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：区分大小写，不支持空格。 |
+| OPERATOR | 关系类型 | 可选必选说明：可选参数<br>参数含义：该参数用于指定各规则之间的逻辑运算符关系。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- or：或操作。<br>默认值：or |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@MQCCLASSIFIER]] · 流分类（MQCCLASSIFIER）
+
+## 使用实例
+
+创建流分类c1：
+
+```
+ADD MQCCLASSIFIER:CLASSIFIERNAME="c1";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-MQCCLASSIFIER.md`

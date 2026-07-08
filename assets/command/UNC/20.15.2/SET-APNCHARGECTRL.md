@@ -1,0 +1,91 @@
+---
+id: UNC@20.15.2@MMLCommand@SET APNCHARGECTRL
+type: MMLCommand
+name: SET APNCHARGECTRL（设置APN的计费配置）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: APNCHARGECTRL
+command_category: 配置类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 20000
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费管理
+- 计费控制
+- APN计费配置
+status: active
+---
+
+# SET APNCHARGECTRL（设置APN的计费配置）
+
+## 功能
+
+**适用NF：SGW-C、PGW-C、SMF**
+
+该命令用来为APN实例设置计费参数。
+
+此命令可以为APN实例绑定离线计费模板、话单字段模板、计费属性模板、费率切换组、DCC模板、CCT模板以及配置在线计费、离线计费和融合计费方式。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为20000。
+- 全局在线模板（DccTemplate名称为global）不允许绑定在APN下。
+- 模板名不支持包含空格，但是支持仅输入一个空格。当模板名仅输入一个空格时，表示删除该APN和对应模板的绑定关系。
+- 当前版本不支持此命令的SMFOFCTEMPLATE参数。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| 参数标识 | OnlineSW | OfflineSW | CONVERGEDSW | PGWOFCTEMPLATE | SGWOFCTEMPLATE | GGSNOFCTEMPLATE | PGWCDRTEMPLATE | SGWCDRTEMPLATE | GCDRTEMPLATE | DCCTEMPLATE | TARIFFGRPNAME | CCNAME | CCTEMPLATE | SMFOFCTEMPLATE | RGApplied | QBCSW |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 初始值 | INHERIT | INHERIT | INHERIT | NULL | NULL | NULL | NULL | NULL | NULL | NULL | NULL | NULL | NULL | NULL | DEFAULT | ENABLE |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定APN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”特殊字符，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD APN命令配置生成。 |
+| ONLINESW | 在线计费开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定APN实例下是否开启在线计费开关。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：禁止。<br>- ENABLE：允许。<br>- INHERIT：继承。<br>默认值：无<br>配置原则：<br>- ENABLE：用户执行在线计费功能。<br>- DISABLE：用户不执行在线计费功能。<br>- INHERIT：用户继承基于命令ADD CHARGEMETHOD或者MOD CHARGEMETHOD的配置。 |
+| OFFLINESW | 离线计费开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定APN实例下是否开启离线计费开关。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：禁止。<br>- ENABLE：允许。<br>- INHERIT：继承。<br>默认值：无<br>配置原则：<br>- ENABLE：用户执行离线计费功能。<br>- DISABLE：用户不执行离线计费功能。<br>- INHERIT：用户继承基于命令ADD CHARGEMETHOD或者MOD CHARGEMETHOD的配置。 |
+| CONVERGEDSW | 融合计费开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定APN实例下是否开启融合计费开关。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：禁止。<br>- ENABLE：允许。<br>- INHERIT：继承。<br>默认值：无<br>配置原则：<br>- ENABLE：用户开启融合计费功能。<br>- DISABLE：用户不开启融合计费功能。<br>- INHERIT：用户继承基于命令ADD CHARGEMETHOD或者MOD CHARGEMETHOD的配置。 |
+| PGWOFCTEMPLATE | PGW离线计费模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，为APN实例下绑定PGW形态取用的离线计费模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD OFCTEMPLATE命令配置生成。<br>- UNC获取离线配置的优先级顺序由高到低为：User Profile、APN、Charge Characteristic、Global。<br>- 当高级别没有绑定离线计费模板时，则会采用下一个级别的离线计费模板配置，如果所有的级别都没有绑定离线计费模板，则取系统缺省值。<br>- 如果获取到了绑定的离线计费模板，则采用此模板的配置，对应此模板下没有配置的参数，取用参数的缺省值。当对应离线计费模板中THRESHINHERIT参数为INHERIT时，表示继承下一个级别的模板中SET OFCTHRESHOLD命令中的配置。 |
+| SGWOFCTEMPLATE | SGW离线计费模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，为APN实例下绑定SGW形态取用的离线计费模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD OFCTEMPLATE命令配置生成。<br>- UNC获取离线配置的优先级顺序由高到低为：User Profile、APN、Charge Characteristic、Global。<br>- 当高级别没有绑定离线计费模板时，则会采用下一个级别的离线计费模板配置，如果所有的级别都没有绑定离线计费模板，则取系统缺省值。<br>- 如果获取到了绑定的离线计费模板，则采用此模板的配置，对应此模板下没有配置的参数，取用参数的缺省值。当对应离线计费模板中THRESHINHERIT参数为INHERIT时，表示继承下一个级别的模板中SET OFCTHRESHOLD命令中的配置。 |
+| GGSNOFCTEMPLATE | GGSN离线计费模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，为APN实例下绑定GGSN形态取用的离线计费模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD OFCTEMPLATE命令配置生成。<br>- UNC获取离线配置的优先级顺序由高到低为：User Profile、APN、Charge Characteristic、Global。<br>- 当高级别没有绑定离线计费模板时，则会采用下一个级别的离线计费模板配置，如果所有的级别都没有绑定离线计费模板，则取系统缺省值。<br>- 如果获取到了绑定的离线计费模板，则采用此模板的配置，对应此模板下没有配置的参数，取用参数的缺省值。当对应离线计费模板中THRESHINHERIT参数为INHERIT时，表示继承下一个级别的模板中SET OFCTHRESHOLD命令中的配置。 |
+| PGWCDRTEMPLATE | PGW-CDR话单字段模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，在APN实例下为PGW-CDR绑定话单字段模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：该参数使用ADD CDRFIELDTEMP命令配置生成。 |
+| SGWCDRTEMPLATE | SGW-CDR话单字段模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，在APN实例下为SGW-CDR绑定话单字段模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：该参数使用ADD CDRFIELDTEMP命令配置生成。 |
+| GCDRTEMPLATE | G-CDR话单字段模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，在APN实例下为G-CDR绑定话单字段模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD CDRFIELDTEMP命令配置生成。<br>- 配置该命令前，需要先创建ADD CDRFIELDTEMP模板。 |
+| DCCTEMPLATE | DCC模板名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，为APN实例下绑定在线计费模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：该参数使用ADD DCCTEMPLATE命令配置生成。 |
+| TARIFFGRPNAME | 费率切换组名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定费率切换组名，为APN实例下绑定费率切换组。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD TARIFFGROUP命令配置生成。<br>- 每个APN只能绑定一个费率切换组。 |
+| CCNAME | 计费属性名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定计费属性名称，为APN实例下绑定计费属性。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：该参数使用ADD CHARGECHAR命令配置生成。 |
+| CCTEMPLATE | 融合计费模板 | 可选必选说明：可选参数<br>参数含义：该参数用于指定CCtemplate名称，为APN实例下绑定融合计费模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：配置该命令前，需要先配置命令ADD CCT。 |
+| SMFOFCTEMPLATE | SMF离线计费模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定template名称，为APN实例下绑定SMF形态取用的离线计费模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格。<br>默认值：无<br>配置原则：该参数使用ADD OFCTEMPLATE命令配置生成。 |
+| RGAPPLIED | 业务申请上报模式 | 可选必选说明：条件可选参数<br>前提条件：该参数在“CONVERGEDSW”配置为“ENABLE”时为可选参数。<br>参数含义：该参数用于指定SMF与CHF交互时的业务申请上报模式。<br>数据来源：全网规划<br>取值范围：枚举类型。<br>- DEFAULT：融合业务申请上报模式，表示在线RG与离线RG均可向CHF进行业务申请和上报。<br>- ONLINERGONLY：在线业务申请上报模式，表示仅在线RG向CHF进行业务申请和上报，不能使用离线RG。<br>- OFFLINERGONLY：离线业务申请上报模式，表示仅离线RG向CHF进行业务申请和上报，不能使用在线RG。<br>- NOCHG：配置非QBC计费场景下，不使能融合计费功能。<br>默认值：无<br>配置原则：该参数仅在“CONVERGEDSW”配置为“ENABLE”时生效。 |
+| N40MSGTEMP | N40消息属性模板 | 可选必选说明：可选参数<br>参数含义：该参数用于指定N40消息属性模板名称，在APN实例下为N40消息绑定属性模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：配置该命令前，需要先配置命令ADD N40MSGTEMP。 |
+| QBCSW | QBC计费开关 | 可选必选说明：条件可选参数<br>前提条件：该参数在“CONVERGEDSW”配置为“ENABLE”时为可选参数。<br>参数含义：该参数设置QBC计费场景下，是否使能计费功能。<br>数据来源：全网规划<br>取值范围：枚举类型。<br>- ENABLE：使能计费功能。<br>- DISABLE：不使能计费功能。<br>默认值：无<br>配置原则：该参数仅在“CONVERGEDSW”配置为“ENABLE”时生效。 |
+| SERVINGCCT | I-SMF/SGW使用的融合计费模板名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定I-SMF/SGW使用的CCtemplate名称，为APN实例下绑定融合计费模板。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度为1~63。<br>默认值：无<br>配置原则：1. 配置该命令前，需要先配置命令ADD CCT。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@APNCHARGECTRL]] · APN的计费配置（APNCHARGECTRL）
+
+## 使用实例
+
+配置APN名称为“apn-test”的计费参数，配置在线计费模板为“dcc”：
+
+```
+SET APNCHARGECTRL:APN="apn-test",DCCTEMPLATE="dcc";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-APNCHARGECTRL.md`

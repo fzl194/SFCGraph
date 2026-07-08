@@ -1,0 +1,70 @@
+---
+id: UDG@20.15.2@MMLCommand@ADD OSPFABRSUMMARY
+type: MMLCommand
+name: ADD OSPFABRSUMMARY（创建区域内路由聚合配置）
+nf: UDG
+version: 20.15.2
+verb: ADD
+object_keyword: OSPFABRSUMMARY
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 4000
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 路由管理
+- OSPF管理
+- OSPF区域内路由聚合配置
+status: active
+---
+
+# ADD OSPFABRSUMMARY（创建区域内路由聚合配置）
+
+## 功能
+
+该命令用于设置区域边界路由器ABR对区域内路由进行路由聚合。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为4000。
+- 只有执行ADD OSPF配置了OSPF进程和ADD OSPFAREA配置了OSPF区域后才能使用此命令。
+- 本命令只适用于ABR，对区域内的路由进行路由聚合。
+- 在相同进程的不同区域下，ABR不能配置路由聚合。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROCID | OSPF进程号 | 可选必选说明：必选参数<br>参数含义：OSPF进程号。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～4294967295。<br>默认值：无<br>配置原则：OSPF进程必须已经存在。请使用LST OSPF命令查看可用的OSPF进程。 |
+| AREAID | 区域ID | 可选必选说明：必选参数<br>参数含义：区域ID。<br>数据来源：对端协商<br>取值范围：IPv4地址类型。点分十进制格式。<br>默认值：无<br>配置原则：OSPF区域必须已经存在。请使用LST OSPFAREA命令查看可用的OSPF区域。 |
+| TOPONAME | 拓扑标识 | 可选必选说明：必选参数<br>参数含义：拓扑标识。<br>数据来源：全网规划<br>取值范围：枚举类型。<br>- base：基础类型。<br>默认值：无 |
+| IPADDRESS | IP地址 | 可选必选说明：必选参数<br>参数含义：IP地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。点分十进制格式。<br>默认值：无 |
+| ADDRESSMASK | IP地址的掩码 | 可选必选说明：必选参数<br>参数含义：IP地址的掩码。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。点分十进制格式。<br>默认值：无 |
+| ADVERTISE | 发布路由标识 | 可选必选说明：可选参数<br>参数含义：是否发布这条聚合路由。缺省时发布聚合路由。<br>数据来源：本端规划<br>取值范围：布尔类型，输入格式为“TRUE”或者“FALSE”。<br>默认值：TRUE<br>配置原则：缺省情况下，发布聚合路由。 |
+| CONFIGCOST | 使能开销配置 | 可选必选说明：可选参数<br>参数含义：表示开销配置使能/去使能。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- FALSE：不使能。<br>- TRUE：使能。<br>默认值：FALSE |
+| COST | 聚合路由的开销 | 可选必选说明：条件必选参数<br>前提条件：该参数在“CONFIGCOST”配置为“TRUE”时为必选参数。<br>参数含义：设置聚合路由的开销，当此参数缺省时，则取所有被聚合的路由中最大的那个开销值作为聚合路由的开销。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～16777214。<br>默认值：无<br>配置原则：缺省情况下，聚合路由的开销值是所有被聚合路由的最大开销值。 |
+| INHERITMINCOST | 继承最小cost | 可选必选说明：可选参数<br>参数含义：设置聚合前所有路由开销值中的最小值为聚合后路由的开销值。<br>数据来源：本端规划<br>取值范围：布尔类型，输入格式为“TRUE”或者“FALSE”。<br>默认值：FALSE |
+| GENERATENULLZERO | 生成路由黑洞 | 可选必选说明：可选参数<br>参数含义：是否生成路由黑洞。<br>数据来源：本端规划<br>取值范围：布尔类型，输入格式为“TRUE”或者“FALSE”。<br>默认值：FALSE |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@OSPFABRSUMMARY]] · 区域内路由聚合配置（OSPFABRSUMMARY）
+
+## 使用实例
+
+在OSPF进程1下配置10.2.0.0的区域内路由聚合，Cost值为100：
+
+```
+ADD OSPFABRSUMMARY:PROCID=1,AREAID="0.0.0.1",TOPONAME=base,IPADDRESS="10.2.0.0",ADDRESSMASK="255.255.0.0",CONFIGCOST=TRUE,COST=100;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/ADD-OSPFABRSUMMARY.md`

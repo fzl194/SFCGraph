@@ -1,0 +1,78 @@
+---
+id: UNC@20.15.2@MMLCommand@DSP MSSDEBUGINFOM
+type: MMLCommand
+name: DSP MSSDEBUGINFOM（显示维测开关状态）
+nf: UNC
+version: 20.15.2
+verb: DSP
+object_keyword: MSSDEBUGINFOM
+command_category: 查询类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 系统调测
+- MSS 调测命令
+status: active
+---
+
+# DSP MSSDEBUGINFOM（显示维测开关状态）
+
+## 功能
+
+该命令用于显示维测开关状态信息。
+
+维测开关包括调度、保序和定时器维测开关，默认是关闭的。
+
+例如，当需要定位调度线程是否异常切换，打开调度轨迹维测开关后通过查询维测命令查看开关是否打开。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CELLTYPE | 微服务类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定微服务类型。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为0～63。数字“0～9”、大写字母“A～Z”、小写字母“a～z”、特殊字符“-”、“_”、“.”、“+”、空格符以及中文字符，其他均为非法字符。<br>默认值：无<br>配置原则：使用<br>**[DSP PAENODE](../../服务通信管理/策略查询/显示PAE节点信息（DSP PAENODE）_92520008.md)**<br>查看工作角色为数据转发对应的微服务类型。 |
+| CELLINSTANCE | 微服务实例号 | 可选必选说明：必选参数<br>参数含义：该参数用于指定微服务实例号。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为0～127。数字“0～9”、大写字母“A～Z”、小写字母“a～z”、特殊字符“-”、“_”、“.”、“+”、空格符以及中文字符，其他均为非法字符。<br>默认值：无<br>配置原则：使用<br>**[DSP PAENODE](../../服务通信管理/策略查询/显示PAE节点信息（DSP PAENODE）_92520008.md)**<br>查看工作角色为数据转发对应的微服务实例号。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@MSSDEBUGINFOM]] · 维测开关状态（MSSDEBUGINFOM）
+
+## 使用实例
+
+显示微服务类型为“CCellCpcSrv”微服务实例为“4588453”上维测开关信息：
+
+```
+DSP MSSDEBUGINFOM: CELLTYPE="CCellCpcSrv", CELLINSTANCE="4588453";
+```
+
+```
+RETCODE = 0  操作成功。
+
+结果如下
+------------------------
+开关类型              开关状态       开关剩余时间(s)  
+
+Work精度维测开关      OFF            0                         
+调度组精度开关        OFF            0                         
+调度队列维测开关      OFF            0                         
+绿色节能维测开关      OFF            0                         
+保序校验维测开关      OFF            0                         
+保序精度维测开关      OFF            0                         
+定时器事件维测开关    OFF            0                         
+定时器精度维测开关    OFF            0                         
+调度轨迹维测开关      OFF            0 
+(结果个数 = 9)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/DSP-MSSDEBUGINFOM.md`

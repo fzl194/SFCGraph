@@ -1,0 +1,66 @@
+---
+id: UNC@20.15.2@MMLCommand@SET SRIPV4STATICSITE
+type: MMLCommand
+name: SET SRIPV4STATICSITE（设置IPv4静态路由全局属性）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: SRIPV4STATICSITE
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 路由管理
+- 静态路由管理
+- IPv4静态路由全局属性管理
+status: active
+---
+
+# SET SRIPV4STATICSITE（设置IPv4静态路由全局属性）
+
+## 功能
+
+该命令用于设置IPv4静态路由全局属性值。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 可选参数至少选一项。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| PREFERENCE | MINRXINTERVAL | MINTXINTERVAL | MULTIPLIER | RELAYSWITCH |
+| --- | --- | --- | --- | --- |
+| 60 | 200 | 200 | 3 | False |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PREFERENCE | 全局默认优先级 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4静态路由的全局默认优先级。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～255。<br>默认值：无 |
+| MINRXINTERVAL | BFD最小接收间隔（ms） | 可选必选说明：可选参数<br>参数含义：该参数用于指定期望从对端接收IPv4 BFD报文的缺省最小接收间隔。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为30～1000，单位是毫秒。<br>默认值：无 |
+| MINTXINTERVAL | BFD最小传输间隔（ms） | 可选必选说明：可选参数<br>参数含义：该参数用于指定向对端发送IPv4 BFD报文的缺省最小传输间隔。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为30～1000，单位是毫秒。<br>默认值：无 |
+| MULTIPLIER | 本地检测倍数 | 可选必选说明：可选参数<br>参数含义：该参数用于指定会话检测倍数，如果BFD会话在设置的检测周期内没有收到对端发来的BFD报文，则认为链路发生了故障，BFD会话的状态将会置为Down。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为3～50。<br>默认值：无 |
+| RELAYSWITCH | 迭代深度开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制静态路由按迭代深度进行优选。<br>数据来源：本端规划<br>取值范围：布尔类型，输入格式为“TRUE”或者“FALSE”。<br>默认值：无<br>配置原则：系统中存在若干同一前缀的静态路由，其优先级相同，迭代深度不同，配置了基于迭代深度优选之后，静态路由模块会选择迭代深度较小的静态路由作为活跃路由，并下发FIB，其他路由为不活跃路由。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SRIPV4STATICSITE]] · IPv4静态路由全局属性（SRIPV4STATICSITE）
+
+## 使用实例
+
+修改静态路由的默认优先级为100：
+
+```
+SET SRIPV4STATICSITE: PREFERENCE=100;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-SRIPV4STATICSITE.md`

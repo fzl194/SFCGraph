@@ -1,0 +1,80 @@
+# 显示端口硬件统计信息（DSP MSSPORTHWSTC）
+
+- [命令功能](#ZH-CN_CONCEPT_0192520021__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0192520021__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0192520021__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0192520021__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0192520021__1.3.5.1)
+- [输出结果说明](#ZH-CN_CONCEPT_0192520021__1.3.6.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0192520021)
+
+该命令用于查询指定端口的网卡硬件统计信息。
+
+#### [注意事项](#ZH-CN_CONCEPT_0192520021)
+
+- 该命令执行后立即生效。
+- 该命令仅支持pmd驱动类型。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0192520021)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0192520021)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CELLTYPE | 微服务类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定微服务类型。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为0～63。数字“0～9”、大写字母“A～Z”、小写字母“a～z”、特殊字符“-”、“_”、“.”、“+”、空格符以及中文字符，其他均为非法字符。<br>默认值：无<br>配置原则：使用<br>**[DSP PAENODE](../../服务通信管理/策略查询/显示PAE节点信息（DSP PAENODE）_92520008.md)**<br>查看工作角色为数据转发对应的微服务类型。 |
+| CELLINSTANCE | 微服务实例号 | 可选必选说明：必选参数<br>参数含义：该参数用于指定微服务实例号。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为0～127。数字“0～9”、大写字母“A～Z”、小写字母“a～z”、特殊字符“-”、“_”、“.”、“+”、空格符以及中文字符，其他均为非法字符。<br>默认值：无<br>配置原则：使用<br>**[DSP PAENODE](../../服务通信管理/策略查询/显示PAE节点信息（DSP PAENODE）_92520008.md)**<br>查看工作角色为数据转发对应的微服务实例号。 |
+| PORTID | 端口号 | 可选必选说明：必选参数<br>参数含义：该参数用于表示端口号。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～4294967295。<br>默认值：无<br>配置原则：使用<br>**[DSP MSSPORTINFO](显示端口信息（DSP MSSPORTINFO）_92520022.md)**<br>命令获取驱动类型为pmd端口号。 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0192520021)
+
+显示类型为aa的微服务bb的上端口硬件统计信息：
+
+```
+DSP MSSPORTHWSTC:CELLTYPE="aa", CELLINSTANCE="bb",PORTID=1;
+```
+
+```
+RETCODE = 0  操作成功。
+
+结果如下
+-------------------------
+统计类型                                    数量
+rx_good_packets_0                           0
+rx_good_bytes_0                             0
+rx_errors_0                                 0
+rx_multicast_packets_0                      0
+rx_broadcast_packets_0                      0
+rx_undersize_packets_0                      0
+rx_size_64_packets_0                        0
+rx_size_65_127_packets_0                    0
+rx_size_128_255_packets_0                   0
+rx_size_256_511_packets_0                   0
+rx_size_512_1023_packets_0                  0
+rx_size_1024_1517_packets_0                 0
+rx_size_1518_max_packets_0                  0
+tx_good_packets_0                           0
+tx_good_bytes_0                             0
+tx_errors_0                                 0
+tx_multicast_packets_0                      0
+tx_broadcast_packets_0                      0
+tx_undersize_packets_0                      0
+tx_size_64_packets_0                        0
+tx_size_65_127_packets_0                    0
+tx_size_128_255_packets_0                   0
+tx_size_256_511_packets_0                   0
+tx_size_512_1023_packets_0                  0
+tx_size_1024_1517_packets_0                 0
+tx_size_1518_max_packets_0                  0
+(结果个数 = 26)
+---    END
+```
+
+#### [输出结果说明](#ZH-CN_CONCEPT_0192520021)
+
+| 输出项名称 | 输出项解释 |
+| --- | --- |
+| 统计类型 | 用于表示端口硬件统计类型。 |
+| 数量 | 用于表示统计计数的数量。 |

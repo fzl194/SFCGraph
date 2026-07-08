@@ -1,0 +1,75 @@
+---
+id: UDG@20.15.2@MMLCommand@SET APNTETHERFUNC
+type: MMLCommand
+name: SET APNTETHERFUNC（设置APN Tethering检测开关）
+nf: UDG
+version: 20.15.2
+verb: SET
+object_keyword: APNTETHERFUNC
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: ''
+is_dangerous: true
+category_path:
+- 用户面服务管理
+- 业务匹配策略
+- 业务过滤器管理
+- Tethering检测
+- APN Tethering检测功能
+status: active
+---
+
+# SET APNTETHERFUNC（设置APN Tethering检测开关）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+![](设置APN Tethering检测开关（SET APNTETHERFUNC）_82837441.assets/notice_3.0-zh-cn.png)
+
+本命令属于高危命令，该命令会导致用户匹配范围发生变化，可能导致性能下降。执行命令前请评估对性能的影响，如果无法评估请联系华为技术支持。
+
+该命令用于在APN下配置该APN是否启用Tethering检测功能。如果该APN是专属于支持Tethering的用户接入，则配置为使能，所有该APN接入用户都会被识别为Tethering用户。
+
+## 注意事项
+
+- 该命令执行后只对之后发生承载更新的用户或者新激活用户生效。
+- 系统最多支持配置10000条。
+- 如果APN启用了Tethering功能，该APN激活的用户都将属于Tethering用户。
+- 对于license选项“Tethering用户识别” 没有进行申请， 所以用户都为非Tethering用户。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| 参数标识 | SWITCH |
+| --- | --- |
+| 初始值 | DISABLE |
+
+- 该命令会导致用户匹配范围发生变化，可能导致性能下降。执行命令前请评估对性能的影响，如果无法评估请联系华为技术支持。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN | 可选必选说明：必选参数<br>参数含义：该参数用于指定APN实例名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”特殊字符，不区分大小写。<br>默认值：无<br>配置原则：无 |
+| SWITCH | 开关标识 | 可选必选说明：必选参数<br>参数含义：该参数用于指定开关标识。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：Tethering检测功能关闭。<br>- ENABLE：Tethering检测功能打开。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@APNTETHERFUNC]] · APN Tethering检测开关（APNTETHERFUNC）
+
+## 使用实例
+
+如果在apn01下配置该APN是启用Tethering检测功能，使所有该APN接入用户都会被识别为Tethering用户：
+
+```
+SET APNTETHERFUNC:APN="apn01",SWITCH=ENABLE;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/SET-APNTETHERFUNC.md`

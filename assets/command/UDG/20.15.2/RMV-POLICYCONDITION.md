@@ -1,0 +1,59 @@
+---
+id: UDG@20.15.2@MMLCommand@RMV POLICYCONDITION
+type: MMLCommand
+name: RMV POLICYCONDITION（删除业务质差检测策略）
+nf: UDG
+version: 20.15.2
+verb: RMV
+object_keyword: POLICYCONDITION
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 智能板管理
+- vvip
+- 质差检测策略
+status: active
+---
+
+# RMV POLICYCONDITION（删除业务质差检测策略）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于删除业务质差检测策略。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- POLICYCNDNAME如果在SSUPROTCOLGROUP中被绑定，需先解除绑定后再删除。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| POLICYCNDNAME | 策略参数名 | 可选必选说明：必选参数<br>参数含义：该参数用于指定业务质量检测的策略名称。<br>数据来源：本端规划<br>取值范围：字符串类型，不区分大小写，长度1~63。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@POLICYCONDITION]] · 业务质差检测策略（POLICYCONDITION）
+
+## 使用实例
+
+删除策略参数名为policyname的质差检测策略：
+
+```
+RMV POLICYCONDITION: POLICYCNDNAME="policyname";
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/RMV-POLICYCONDITION.md`

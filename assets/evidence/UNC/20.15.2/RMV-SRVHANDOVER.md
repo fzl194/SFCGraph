@@ -1,0 +1,46 @@
+# 删除业务切换策略(RMV SRVHANDOVER)
+
+- [命令功能](#ZH-CN_MMLREF_0000001172345263__1.3.1.1)
+- [注意事项](#ZH-CN_MMLREF_0000001172345263__1.3.2.1)
+- [本地用户权限](#ZH-CN_MMLREF_0000001172345263__1.3.3.1)
+- [网管用户权限](#ZH-CN_MMLREF_0000001172345263__1.3.4.1)
+- [参数说明](#ZH-CN_MMLREF_0000001172345263__1.3.5.1)
+- [使用实例](#ZH-CN_MMLREF_0000001172345263__1.3.6.1)
+
+#### [命令功能](#ZH-CN_MMLREF_0000001172345263)
+
+![](删除业务切换策略(RMV SRVHANDOVER)_72345263.assets/notice_3.0-zh-cn_2.png)
+
+- 执行此命令将导致2G和3G网络之间将不能正常切换。
+- 如果不输入任何参数，执行该命令会删除所有记录。
+
+**适用网元：SGSN**
+
+该命令用于删除业务切换的配置信息。切换策略控制就是根据业务级别、用户级别确定用户在2G和3G网络中的切换策略，来引导2G和3G的网络业务承载和网络负荷。切换策略可以由运营商配置。
+
+#### [注意事项](#ZH-CN_MMLREF_0000001172345263)
+
+- 该命令执行后立即生效。
+- 执行此命令将导致2G和3G网络之间将不能正常切换。
+- 如果不输入任何参数，执行该命令会删除所有记录。
+
+#### [本地用户权限](#ZH-CN_MMLREF_0000001172345263)
+
+manage-ug；system-ug
+
+#### [网管用户权限](#ZH-CN_MMLREF_0000001172345263)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_MMLREF_0000001172345263)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SRVLVL | 业务级别 | 可选必选说明：可选参数<br>参数含义：该参数需根据用户PDP上下文QoS中的流量等级（Traffic class）、下行保证速率（Guaranteed bit rate for downlink）和发送控制优先级（Traffic handling priority）确定。<br>取值范围：<br>- “CONVERSATION(Conversation)”：流量等级为Conversational class。<br>- “STREAMINGGBRMORE25KBPS(StreamGBRMore25kbps)”：流量等级为Streaming class，下行保证速率大于等于25kbit/s。<br>- “STREAMINGGBRLESS24KBPS(StreamGBRLess24kbps)”：流量等级为Streaming class，下行保证速率小于24kbit/s。<br>- “INTERACTIVETRAFFICPRI1(InteractiveTrafficPri1)”：流量等级为Interactive class，发送控制优先级为1。<br>- “INTERACTIVETRAFFICPRI2(InteractiveTrafficPri2)”：流量等级为Interactive class，发送控制优先级为2。<br>- “INTERACTIVETRAFFICPRI3(InteractiveTrafficPri3)”：流量等级为Interactive class，发送控制优先级为3。<br>- “BACKGROUND(Background)”：流量等级为Background class。<br>默认值：无 |
+| USRPRI | 用户级别 | 可选必选说明：可选参数<br>参数含义：待删除的用户签约QoS属性中的分配保留优先级（Allocation/Retention Priority）。<br>取值范围：<br>- “HIGHLEVELUSER(高端用户)”：分配/保留优先级为1。<br>- “NORMALUSER(普通用户)”：分配/保留优先级为2。<br>- “LOWLEVELUSER(低端用户)”：分配/保留优先级为3。<br>- “NONE(None)”：通用用户级别，表示该用户没有用户级别，设置的门限就是该业务级别所有用户级别的切换策略。<br>默认值：无 |
+
+#### [使用实例](#ZH-CN_MMLREF_0000001172345263)
+
+删除业务级别为 “BACKGROUND(Background)” ，用户级别为 “HIGHLEVELUSER(高端用户)” 的业务切换策略：
+
+RMV SRVHANDOVER: SRVLVL=BACKGROUND, USRPRI=HIGHLEVELUSER;

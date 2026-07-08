@@ -1,0 +1,42 @@
+# 添加DNAI配置（ADD DNAI）
+
+- [命令功能](#ZH-CN_CONCEPT_0253878562__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0253878562__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0253878562__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0253878562__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0253878562__1.3.5.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0253878562)
+
+**适用NF：PGW-U、UPF**
+
+该命令用于添加一个新的DNAI实例。
+
+#### [注意事项](#ZH-CN_CONCEPT_0253878562)
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为1600。当配置记录数大于规格的98%时，会上报“ALM-135602215 配置数量超阈值”告警。当配置记录数小于等于配置规格95%时，恢复“ALM-135602215 配置数量超阈值”告警。阈值可以通过MOD CFGTHRESHOLD命令修改。
+- 执行该命令时，IPv4 VPN和IPv6 VPN至少配置一个。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0253878562)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0253878562)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| DNAI | 数据网络接入标识 | 可选必选说明：必选参数<br>参数含义：数据网络接入标识。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。名称中不能包含空格，不区分大小写。<br>默认值：无<br>配置原则：输入的DNAI名称需要符合DNAI命名规则。 |
+| HASVPN | 绑定VPN | 可选必选说明：可选参数<br>参数含义：该参数用于DNAI实例指定是否绑定IPv4 VPN。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：DISABLE<br>配置原则：<br>- 当接入用户为IPv4单栈或IPv4v6双栈用户时，需要绑定IPv4 VPN。<br>- 该参数为ENABLE时，表示DNAI实例绑定IPv4 VPN。<br>- 该参数为DISABLE时，表示DNAI实例不绑定IPv4 VPN。 |
+| VPNINSTANCE | VPN实例名 | 可选必选说明：条件必选参数<br>前提条件：该参数在“HASVPN”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv4 VPN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：DNAI实例绑定的IPv4 VPN必须是已经配置过的。 |
+| HASVPNIPV6 | 绑定IPv6 VPN | 可选必选说明：可选参数<br>参数含义：该参数用于DNAI实例指定是否绑定IPv6 VPN。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：DISABLE<br>配置原则：<br>- 接入用户为IPv6单栈或IPv4v6双栈用户时，需要绑定IPv6 VPN。<br>- 该参数为ENABLE时，表示DNAI实例绑定IPv6 VPN。<br>- 该参数为DISABLE时，表示DNAI实例不绑定IPv6 VPN。 |
+| VPNINSTANCEIPV6 | IPv6 VPN实例名 | 可选必选说明：条件必选参数<br>前提条件：该参数在“HASVPNIPV6”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv6 VPN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：DNAI实例绑定的IPv6 VPN必须是已经配置过的。 |
+| NATSWITCH | NAT功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于设置是否打开NAT功能。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：DISABLE<br>配置原则：1. 该参数使能情况下，系统将对使用该DNAI实例的用户使能NAT功能，通过NAT实例进行数据转发，并忽略ADD RULE命令中的WORKERNAME参数配置为nat定义规则的匹配结果。 2. 该参数如果发生修改，修改仅对新接入用户生效，对在线用户不生效。建议在DNAI实例下无在线用户时，再修改该参数配置。 3. 该参数配置为ENABLE前，需要根据“配置NAT基本功能章节”完成NAT实例的基础配置。 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0253878562)
+
+添加一个新的DNAI实例"Huawei.com"，配置DNAI和绑定VPN:"abcd"：
+
+```
+ADD DNAI: DNAI="huawei.com", HASVPN=ENABLE, VPNINSTANCE="abcd",HASVPNIPV6=DISABLE;
+```

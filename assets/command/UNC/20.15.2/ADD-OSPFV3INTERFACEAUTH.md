@@ -1,0 +1,71 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD OSPFV3INTERFACEAUTH
+type: MMLCommand
+name: ADD OSPFV3INTERFACEAUTH（创建OSPFv3接口认证配置）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: OSPFV3INTERFACEAUTH
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 8000
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 路由管理
+- OSPFv3管理
+- OSPFv3接口认证配置
+status: active
+---
+
+# ADD OSPFV3INTERFACEAUTH（创建OSPFv3接口认证配置）
+
+## 功能
+
+该命令用于设置OSPFv3接口上所使用的验证模式及验证口令。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为8000。
+- 创建OSPFv3接口认证，请确保和邻居认证配置相同，否则会导致邻接关系中断，影响业务。
+- 只有执行ADD OSPFV3INTERFACE配置了OSPFv3接口后才能使用该命令。
+- 进程验证方式的优先级低于区域验证方式的优先级。
+- 区域验证方式的优先级低于接口验证方式的优先级。
+- 当前支持配置的认证算法及密码长度均符合IETF标准规定。
+- 配置的密码至少包含大写、小写、数字、特殊字符中的2种，并且长度不能小于8。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROCID | OSPFv3进程号 | 可选必选说明：必选参数<br>参数含义：OSPFv3进程号。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～4294967295。<br>默认值：无<br>配置原则：OSPFv3进程必须已经存在。 |
+| AREAID | OSPFv3区域号 | 可选必选说明：必选参数<br>参数含义：OSPFv3区域号。<br>数据来源：对端协商<br>取值范围：IPv4地址类型。点分十进制格式。<br>默认值：无 |
+| IFNAME | 接口名 | 可选必选说明：必选参数<br>参数含义：接口名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：使用LST OSPFV3INTERFACE命令查看可用OSPFv3接口。 |
+| AUTHENTYPE | 认证密码类型 | 可选必选说明：可选参数<br>参数含义：接口认证密码类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- cipher：ciphertext。<br>默认值：cipher<br>配置原则：cipher类型可以键入简单口令或密文口令，但在查看配置文件时均以密文方式显示口令。 |
+| AUTHENMODE | 认证模式 | 可选必选说明：必选参数<br>参数含义：接口认证模式。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- hmac-sha256：HMAC-SHA256密文验证模式。<br>默认值：无 |
+| AUTHTEXTMD5 | 密文验证密码 | 可选必选说明：必选参数<br>参数含义：密文验证密码。<br>数据来源：本端规划<br>取值范围：密码类型，输入长度范围为1～255。<br>默认值：无<br>配置原则：<br>- 字符不允许包括“？”和空格。<br>- 配置密码时，使用明文格式，长度范围为1~255。<br>- 配置的密码建议至少包含大写、小写、数字、特殊字符中的2种，并且长度不能小于8。 |
+| KEYID | 密文验证字标识符 | 可选必选说明：必选参数<br>参数含义：密文验证字标识符。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～65535。<br>默认值：无<br>配置原则：KeyID需要跟对端保持一致。 |
+| INSTANCEID | 实例号 | 可选必选说明：必选参数<br>参数含义：实例号。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～255。<br>默认值：无<br>配置原则：与对端配置一致，如果对端未配置该参数，则本端配成0。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@OSPFV3INTERFACEAUTH]] · OSPFv3接口认证配置（OSPFV3INTERFACEAUTH）
+
+## 使用实例
+
+在接口Ethernet64/0/3设置OSPFv3 HMAC-SHA256验证模式：
+
+```
+ADD OSPFV3INTERFACEAUTH:PROCID=1,AREAID="0.0.0.0",IFNAME="Ethernet64/0/3",AUTHENTYPE=cipher,AUTHENMODE=hmac-sha256,AUTHTEXTMD5="*****",KEYID=10,INSTANCEID=1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-OSPFV3INTERFACEAUTH.md`

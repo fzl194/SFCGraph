@@ -1,0 +1,63 @@
+---
+id: UDG@20.15.2@MMLCommand@MOD INSAPROTPARA
+type: MMLCommand
+name: MOD INSAPROTPARA（修改单协议推理配置）
+nf: UDG
+version: 20.15.2
+verb: MOD
+object_keyword: INSAPROTPARA
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 业务匹配策略
+- 智能SA管理
+- 基于协议的识别功能配置
+status: active
+---
+
+# MOD INSAPROTPARA（修改单协议推理配置）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+修改单协议推理配置。
+
+## 注意事项
+
+参数INFERSWITCH对新流生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROTOCOLNAME | 协议名称 | 可选必选说明：必选参数<br>参数含义：该参数用来表示协议组包含的协议的名字。<br>数据来源：本端规划<br>取值范围：1、字符串类型，输入长度范围为1～31; 2、不支持空格，不区分大小写。<br>默认值：无<br>配置原则：配置协议前需使用工程命令smctrldsp protocol-list sub-protocol查询三级协议表；使用MML命令DSP CFGTABLEDATA: OMUTYPE=master, DBTYPE=running, QUERYTYPE=table-data, TABLENAME="AISAppProtocol", SERVICEINSTANCE="ACS";查询INSA自定义协议表。 |
+| INFERSWITCH | 智能识别推理能力开关 | 可选必选说明：可选参数<br>参数含义：该参数用于配置智能识别在线推理开关。该参数暂不生效。<br>数据来源：本端规划<br>取值范围：<br>- INHERIT：继承全局参数设置。<br>- DISABLE：智能识别在线推理不使能。<br>- ENABLE：智能识别在线推理使能。<br>默认值：无<br>配置原则：无 |
+| POLICYSWITCH | 智能识别结果用于策略匹配开关 | 可选必选说明：可选参数<br>参数含义：该参数用于配置智能识别结果用于策略匹配开关。<br>数据来源：本端规划<br>取值范围：<br>- INHERIT：继承全局参数设置。<br>- DISABLE：智能识别结果应用策略匹配不使能。<br>- ENABLE：智能识别结果应用策略匹配使能。<br>默认值：无<br>配置原则：无 |
+| INFERTHRES | 智能识别阈值(千分比) | 可选必选说明：可选参数<br>参数含义：该参数用于配置智能识别推理任务中推理结果有效判断阈值，推理结果的置信度如果大于等于阈值，认为推理结果有效。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围0~1000，单位千分比。<br>默认值：无<br>配置原则：新增记录时，若不填写该参数，或填写4294967295（无效值），则默认为继承智能识别全局配置中的智能识别阈值。 |
+| CFGDOMAINNAME | 配置域名称 | 可选必选说明：可选参数<br>参数含义：该参数表示命令所属公共配置域的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@INSAPROTPARA]] · 单协议推理配置（INSAPROTPARA）
+
+## 使用实例
+
+修改协议名称为http的相关配置，将智能识别推理能力开关设置为使能，将智能识别结果用于策略匹配开关设置为继承，将智能识别阈值设为600：
+
+```
+MOD INSAPROTPARA:PROTOCOLNAME="http", INFERSWITCH=ENABLE, POLICYSWITCH=INHERIT, INFERTHRES=600;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MOD-INSAPROTPARA.md`

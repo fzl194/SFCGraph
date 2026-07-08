@@ -1,0 +1,74 @@
+---
+id: UNC@20.15.2@MMLCommand@SET GLBURRGROUP
+type: MMLCommand
+name: SET GLBURRGROUP（设置全局使用量上报规则组）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: GLBURRGROUP
+command_category: 配置类
+applicable_nf:
+- PGW-C
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 1
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费和策略的业务管理
+- 业务策略
+- 全局使用量上报规则组
+status: active
+---
+
+# SET GLBURRGROUP（设置全局使用量上报规则组）
+
+## 功能
+
+**适用NF：PGW-C、SMF**
+
+本条命令用于PDP用户设置全局使用量上报规则组，指定上下行发起使用的URR，即指定上下行报文是如何计费的。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为1。
+- 不允许只配置下行URR，不配置上行URR。
+- 不允许离线的URR既绑定到URRGroup又绑定到GlbURRGroup下。
+- 当前版本不支持此命令。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| 参数标识 | NOCHARGINGFLAG |
+| --- | --- |
+| 初始值 | NONE |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| UPOFFURRNAME | 上行发起离线URR名称 | 可选必选说明：可选参数<br>参数含义：该参数用于设置上行发起使用的离线计费URR，需要通过ADD URR配置相应的URR。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD URR命令配置生成。<br>- 输入单空格将删除该参数已有配置项。<br>- 如果运营商希望指定无userprofile时的离线计费方式上行发起的报文是如何计费的，可以配置该参数。设置的UPURRNAME1必须是系统已经存在的离线URR名称。 |
+| DOWNOFFURRNAME | 下行发起离线URR名称 | 可选必选说明：可选参数<br>参数含义：该参数用于设置下行发起使用的离线计费URR，需要通过ADD URR配置相应的URR。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD URR命令配置生成。<br>- 输入单空格将删除该参数已有配置项。<br>- 如果运营商希望指定无userprofile时的离线计费方式下行发起的报文是如何计费的，可以配置该参数。设置的DOWNURRNAME1必须是系统已经存在的离线URR名称。 |
+| UPONLURRNAME | 上行发起在线URR名称 | 可选必选说明：可选参数<br>参数含义：该参数用于设置上行发起使用的在线计费URR，需要通过ADD URR配置相应的URR。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD URR命令配置生成。<br>- 输入单空格将删除该参数已有配置项。<br>- 如果运营商希望指定无userprofile时的在线计费方式上行发起的报文是如何计费的，可以配置该参数。设置的ONLUPURRNAME必须是系统已经存在的在线URR名称。 |
+| DNONLURRNAME | 下行发起在线URR名称 | 可选必选说明：可选参数<br>参数含义：该参数用于设置下行发起使用的在线计费URR，需要通过ADD URR配置相应的URR。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD URR命令配置生成。<br>- 输入单空格将删除该参数已有配置项。<br>- 如果运营商希望指定无userprofile时的在线计费方式下行发起的报文是如何计费的，可以配置该参数。设置的ONLDNURRNAME必须是系统已经存在的在线URR名称。 |
+| NOCHARGINGFLAG | 不计费标记 | 可选必选说明：可选参数<br>参数含义：该参数用于设置流量不计费标记。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- NONE：正常计费。<br>- UPLINK：上行不计费。<br>- DOWNLINK：下行不计费。<br>- UPLINK_DOWNLINK：上下行都不计费。<br>默认值：无<br>配置原则：特定方向流量不做计费时，使用此参数。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@GLBURRGROUP]] · 全局使用量上报规则组（GLBURRGROUP）
+
+## 使用实例
+
+假如用户想要配置这样一条全局使用量上报规则组，上行发起离线URR名称为UpURRName1，下行发起离线URR名称为DownURRName1，上行发起在线URR名称为DnURRName2，下行发起在线URR名称为UpURRName2：
+
+```
+SET GLBURRGROUP: UPOFFURRNAME="UpURRName1", DOWNOFFURRNAME="DownURRName1", UPONLURRNAME="DnURRName2", DNONLURRNAME="UpURRName2";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-GLBURRGROUP.md`

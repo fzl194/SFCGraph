@@ -1,0 +1,84 @@
+---
+id: UDG@20.15.2@MMLCommand@DSP MSSTIMERSTAT
+type: MMLCommand
+name: DSP MSSTIMERSTAT（查询定时器精度统计信息）
+nf: UDG
+version: 20.15.2
+verb: DSP
+object_keyword: MSSTIMERSTAT
+command_category: 查询类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- 操作维护
+- 系统调测
+- MSS
+- 定时器统计查询
+status: active
+---
+
+# DSP MSSTIMERSTAT（查询定时器精度统计信息）
+
+## 功能
+
+该命令用于查询定时器的精度统计信息。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RUNAME | RU名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定RU名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，区分大小写。<br>默认值：无<br>配置原则：使用DSP RU查看RU名称。 |
+| TIMERID | 定时器ID | 可选必选说明：必选参数<br>参数含义：该参数用于指定定时器ID。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～9223372036854775807。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@MSSTIMERSTAT]] · 定时器精度统计信息（MSSTIMERSTAT）
+
+## 使用实例
+
+查询定时器精度统计信息：
+
+```
+DSP MSSTIMERSTAT:TIMERID=1,RUNAME="VNODE_VNRS_VNFC_IPU_0064";
+```
+
+```
+
+RETCODE = 0  操作成功。
+
+结果如下
+--------
+                              定时器序列号  = 1
+                                定时器状态  = TICKING
+                                定时器模式  = PERIOD
+                                定时器类型  = NORMAL
+                        定时器绑定的调度组  = 1
+                      定时器超时时长（ms）  = 10
+                            定时器回调次数  = 856410
+                              抢锁失败次数  = 10
+        超时异常次数（5%/10%/20%/30%/40%）  = 0/0/0/0/0
+           定时器触发时间最大/平均值（ms）  = 10/8
+连续两次异常时间间隔最小值（5%/10%）（ms）  = 100/65
+           时钟源处理时间最大/平均值（ms）  = 120/86
+      时钟源异常次数（5%/10%/20%/30%/40%）  = 0/0/0/0/0
+  时间轮操作时间最大/平均值（microsecond）  = 100/50
+Work队列滞留时间最大/平均值（microsecond）  = 423/382
+    回调函数处理最大/平均值（microsecond）  = 124/38
+                                  回调函数  = ufp_SchCpuSamping
+(结果个数 = 1)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/DSP-MSSTIMERSTAT.md`

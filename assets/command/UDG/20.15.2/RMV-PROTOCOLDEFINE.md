@@ -1,0 +1,61 @@
+---
+id: UDG@20.15.2@MMLCommand@RMV PROTOCOLDEFINE
+type: MMLCommand
+name: RMV PROTOCOLDEFINE（删除自定义协议）
+nf: UDG
+version: 20.15.2
+verb: RMV
+object_keyword: PROTOCOLDEFINE
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 业务匹配策略
+- 业务过滤器管理
+- 三四层规则管理
+- 自定义协议
+status: active
+---
+
+# RMV PROTOCOLDEFINE（删除自定义协议）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用来删除所有PROTOCOLDEFINE配置信息，或者根据PROTDEFINENAME删除指定的PROTOCOLDEFINE配置信息。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 如果自定义协议被引用，不允许执行删除操作，必须先解除引用关系。执行该命令后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROTDEFINENAME | 自定义协议名称 | 可选必选说明：可选参数<br>参数含义：该参数用于设置自定义协议名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。必须和默认的协议大类/协议/协议子类名称不同。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@PROTOCOLDEFINE]] · 自定义协议（PROTOCOLDEFINE）
+
+## 使用实例
+
+删除自定义协议protdefine：
+
+```
+RMV PROTOCOLDEFINE:PROTDEFINENAME="protdefine";
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/RMV-PROTOCOLDEFINE.md`

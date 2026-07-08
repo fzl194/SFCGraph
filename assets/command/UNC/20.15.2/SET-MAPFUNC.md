@@ -1,0 +1,71 @@
+---
+id: UNC@20.15.2@MMLCommand@SET MAPFUNC
+type: MMLCommand
+name: SET MAPFUNC（设置MAP功能配置）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: MAPFUNC
+command_category: 配置类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- MAP应用协议
+- MAP功能配置
+status: active
+---
+
+# SET MAPFUNC（设置MAP功能配置）
+
+## 功能
+
+![](设置MAP功能配置(SET MAPFUNC)_26145466.assets/notice_3.0-zh-cn_2.png)
+
+修改MAP的功能参数会导致与对端网元协商流程和消息信元的变化，可能造成后续接入用户的Attach/RAU流程的失败。
+
+**适用网元：SGSN、MME**
+
+该命令用于设置MAP各项功能属性。
+
+## 注意事项
+
+- 系统初次运行时，会执行系统初始设置值。
+- 该命令执行后立即生效。
+- 修改MAP的功能表会导致部分附着的用户属性与SGSN的配置不一致。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SEG | 分段插入鉴权集 | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否支持分段插入鉴权集。SGSN在MAP V3版本取鉴权集请求里，携带是否支持分段插入鉴权集指示，如果支持，HLR可以在一个取鉴权集对话中多次返回取鉴权集响应。<br>数据来源：整网规划<br>取值范围：<br>- “YES（支持）”<br>- “NO（不支持）”<br>系统初始设置值：<br>“YES（支持）” |
+| GE | GPRS增强功能 | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否支持GPRS增强功能。SGSN在GPRS位置更新请求消息里携带是否支持GPRS增强功能指示，如果支持，HLR可以在插入签约数据的PDP上下文里携带Ext-QoS（即R99 QoS）和Ext2–QoS（即R5 QoS）。具体是否携带扩展QoS由HLR决定。<br>数据来源：整网规划<br>取值范围：<br>- “YES（支持）”<br>- “NO（不支持）”<br>系统初始设置值：<br>“YES（支持）” |
+| MV | MAP版本 | 可选必选说明：可选参数<br>参数含义：该参数用于指定支持的MAP版本。<br>数据来源：整网规划<br>取值范围：<br>- “V2+（版本2+）”<br>系统初始设置值：<br>“V2+（版本2+）” |
+| SPS | 是否支持SPS功能 | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否支持SPS功能。该功能是指在CHECK IMEI过程中SGSN发送给EIR的CHECK IMEI消息可携带IMSI、路由区、小区或服务区扩展信元。<br>数据来源：整网规划<br>取值范围：<br>- “YES（支持）”<br>- “NO（不支持）”<br>系统初始设置值：<br>“NO（不支持）” |
+| EIR | 缺省EIR | 可选必选说明：可选参数<br>参数含义：该参数用于指定缺省EIR号码。需要使用Gf接口时，指定与SGSN连接的EIR的编号。<br>数据来源：整网规划<br>取值范围：1～15位十进制数字<br>系统初始设置值：无 |
+| REATTACHSW | 是否支持Reattach Required | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否支持Reattach Required功能。该功能是指SGSN收到HLR的cancel location消息，如果Cancel Type为“subscription withdrawn”，并且指示了reattach required，SGSN给终端发起Detach Request消息，在消息中携带的detach type为reattach required，指示终端重新附着。<br>数据来源：整网规划<br>取值范围：<br>- “NO（不支持）”:SGSN给终端发起Detach Request消息，但不要求终端重新附着。<br>- “YES（支持）”:SGSN给终端发起Detach Request消息，在消息中携带的detach type为reattach required，指示终端重新附着。<br>系统初始设置值：<br>“YES（支持）” |
+| PSISW | PSI功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制SGSN是否支持ProvideSubscriberInfo的处理。<br>数据来源：整网规划<br>取值范围：<br>- “YES（支持）”<br>- “NO（不支持）”<br>系统初始设置值：<br>“No（不支持）” |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@MAPFUNC]] · MAP功能配置（MAPFUNC）
+
+## 使用实例
+
+设置MAP支持分段插入鉴权集:
+
+SET MAPFUNC: SEG=YES;
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-MAPFUNC.md`

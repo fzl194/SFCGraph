@@ -1,0 +1,50 @@
+# 修改带宽管理业务（MOD BWMSERVICE）
+
+- [命令功能](#ZH-CN_CONCEPT_0182837474__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0182837474__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0182837474__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0182837474__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0182837474__1.3.5.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0182837474)
+
+**适用NF：PGW-U、UPF**
+
+该命令用于修改带宽控制的业务范围，实现业务区分。当运营商希望修改带宽管理业务的类型、绑定的分类属性、协议、或协议组时，则执行该命令。
+
+#### [注意事项](#ZH-CN_CONCEPT_0182837474)
+
+- 该命令执行后立即生效。
+- 如果带宽管理业务正在被引用，则不允许被修改。
+- 当修改业务类型时，如果与BwmRule绑定，则不允许修改该参数。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0182837474)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0182837474)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| BWMSERVICENAME | 带宽控制业务名称 | 可选必选说明：必选参数<br>参数含义：该参数用于配置带宽管理业务的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD BWMSERVICE命令配置生成。 |
+| BWMSERVICETYPE | 业务类型 | 可选必选说明：必选参数<br>参数含义：该参数用于配置带宽管理业务的类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- TOS：TOS类型。<br>- NONTOS：非TOS类型。<br>默认值：无<br>配置原则：<br>- TOS：如果运营商希望设置该带宽管理业务按照报文的TOS类型区分时，则配置该参数。<br>- NONTOS：如果运营商希望设置该带宽管理业务基于非TOS区分，即分类属性、或者协议组、或者协议，则配置该参数。 |
+| NONTOSSRVTYPE | 非TOS业务类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“BWMSERVICETYPE”配置为“NONTOS”时为必选参数。<br>参数含义：该参数用于配置带宽管理业务的非TOS类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- CATEGORY_PROP：基于分类属性的业务区分。<br>- PROTOCOLGROUP：基于协议组的业务区分。<br>- PROTOCOL：基于协议的业务区分。<br>默认值：无<br>配置原则：<br>- CATEGORY_PROP：如果运营商希望设置该带宽管理业务按照报文匹配到的内容计费规则来区分时，则配置该参数。<br>- PROTOCOLGROUP：如果运营商希望设置该带宽管理业务按照报文所属的7层协议组区分，则配置该参数。<br>- PROTOCOL：如果运营商希望设置该带宽管理业务按照报文的7层协议区分，则配置该参数。 |
+| CATEPROPNAME | 分类属性名称 | 可选必选说明：条件必选参数<br>前提条件：该参数在“NONTOSSRVTYPE”配置为“CATEGORY_PROP”时为必选参数。<br>参数含义：该参数用于配置绑定在该带宽管理业务下的分类属性名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD CATEGORYPROP命令配置生成。 |
+| PROTGROUPNAME | 协议组名称 | 可选必选说明：条件必选参数<br>前提条件：该参数在“NONTOSSRVTYPE”配置为“PROTOCOLGROUP”时为必选参数。<br>参数含义：该参数用于配置绑定在该带宽管理业务下的协议组名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：数据源为系统支持识别的所有类型的协议组，或者通过ADD PROTOCOLGROUP命令配置的协议组。 |
+| PROTOCOLNAME | 协议名称 | 可选必选说明：条件必选参数<br>前提条件：该参数在“NONTOSSRVTYPE”配置为“PROTOCOL”时为必选参数。<br>参数含义：该参数用于配置绑定在该带宽管理业务下的协议名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：数据源为系统支持识别的所有类型的协议、子协议。 |
+| TOSCFGTYPE | Tos配置类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“BWMSERVICETYPE”配置为“TOS”时为必选参数。<br>参数含义：该参数用于配置TOS类型的配置方式。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- CLASS：使用TOS类别名称配置。<br>- TOS_VALUE：使用TOS值配置。<br>默认值：无<br>配置原则：<br>- CLASS：如果运营商希望设置以TOS类别名称配置TOS类型，则配置该参数。<br>- TOS_VALUE：如果运营商希望设置以TOS类别值配置TOS类型，则配置该参数。 |
+| TOSCLASSTYPE | Tos分类类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“TOSCFGTYPE”配置为“CLASS”时为必选参数。<br>参数含义：该参数用于配置TOS类型业务的类别名，即IP报文中DSCP字段的Precedence（3bit）。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- BE：Precedence的值为000。<br>- AF1：Precedence的值为001。<br>- AF2：Precedence的值为010。<br>- AF3：Precedence的值为011。<br>- AF4：Precedence的值为100。<br>- EF：Precedence的值为101。<br>- CS6：Precedence的值为110。<br>- CS7：Precedence的值为111。<br>默认值：无<br>配置原则：无 |
+| TOSVALUE | 服务类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“TOSCFGTYPE”配置为“TOS_VALUE”时为必选参数。<br>参数含义：该参数用于配置TOS类型业务的类别值，即IP报文中DSCP字段的Precedence。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～7。<br>默认值：无<br>配置原则：TOS类型业务的类别名称与类别值的对应关系是：BE（0），AF1（1），AF2（2），AF3（3），AF4（4）， EF（5），CS6（6），CS7（7）。 |
+| OSTYPE | 操作系统类型 | 可选必选说明：条件可选参数<br>前提条件：该参数在“BWMSERVICETYPE”配置为“NONTOS”时为可选参数。<br>参数含义：该参数用于配置绑定在该带宽管理业务下的操作系统类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- IOS：IOS操作系统。<br>- ANDROID：Android操作系统。<br>- WINDOWS：windows操作系统。<br>- OTHERS：其他操作系统类型。<br>默认值：无<br>配置原则：<br>- 如果运营商希望设置以操作系统类型匹配相应带宽控制策略，则配置该参数。<br>- 需要先设置SET GLBOSLELBWMSW、SET APNOSLELBWMSW和SET UPOSLELBWMSW命令，以开启操作系统带宽管理开关。 |
+| CFGDOMAINNAME | 配置域名称 | 可选必选说明：可选参数<br>参数含义：该参数表示命令所属公共配置域的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：无 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0182837474)
+
+- 假如运营商需要修改名为“testbwmservice1”的带宽管理业务，以“EF”的TOS类型区分业务：
+  ```
+  MOD BWMSERVICE:BWMSERVICENAME="testbwmservice1",BWMSERVICETYPE=TOS,TOSCFGTYPE=CLASS,TOSCLASSTYPE=EF;
+  ```
+- 假如运营商需要修改名为“testbwmservice2”的带宽管理业务，以“http”的7层协议区分的业务：
+  ```
+  MOD BWMSERVICE:BWMSERVICENAME="testbwmservice2",BWMSERVICETYPE=NONTOS,NONTOSSRVTYPE=PROTOCOL,PROTOCOLNAME="http";
+  ```

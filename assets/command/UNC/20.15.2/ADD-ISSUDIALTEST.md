@@ -1,0 +1,70 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD ISSUDIALTEST
+type: MMLCommand
+name: ADD ISSUDIALTEST（增加拨测用户配置）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: ISSUDIALTEST
+command_category: 配置类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: ''
+is_dangerous: false
+max_records: 80
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 网络管理
+- 灰度升级
+- 拨测管理
+status: active
+---
+
+# ADD ISSUDIALTEST（增加拨测用户配置）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+- 该命令用于新增拨测用户列表，通过起始IMSI/MSISDN和终止IMSI/MSISDN的方式，配置一组拨测用户。
+- 在灰度升级场景下，符合拨测条件的用户，在附着过程中会被接入新版本的USN_VNFC，以便对新版本的USN_VNFC功能进行测试。
+
+## 注意事项
+
+- 此命令最大记录数为80。
+- 新增配置后，对于符合条件的在线用户，旧侧USN_VNFC会分离用户(Re-attach required)，在重新附着的过程中将用户迁移到新侧USN_VNFC；对于使用IMSI附着方式新接入的用户，如果符合拨测条件则直接被迁移到新侧USN_VNFC，使用P-TMSI/GUTI附着方式新接入的用户，如果符合拨测条件则先分离用户(Re-attach required)，在重新附着的过程中将用户迁移到新侧USN_VNFC。
+- 相同拨测用户范围的两条记录的拨测用户范围不可以重叠。
+- 该命令的匹配拨测用户的方式为全匹配，不支持IMSI/MSISDN前缀匹配。
+- 该命令每条记录配置的拨测用户数不大于100。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TSTUSRRANGE | 用户标识类型 | 可选必选说明：必选参数<br>参数含义：该参数用于配置拨测用户范围。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- “MSISDN(MSISDN)”<br>- “IMSI(IMSI)”<br>默认值：无 |
+| BEGMSISDN | 起始MSISDN | 可选必选说明：条件必选参数<br>参数含义：该参数用于配置拨测用户的起始MSISDN。<br>前提条件：该参数在<br>“用户标识类型”<br>参数配置为<br>“MSISDN(MSISDN)”<br>后生效。<br>数据来源：本端规划<br>取值范围：1～15位十进制数字字符串<br>默认值：无 |
+| ENDMSISDN | 终止MSISDN | 可选必选说明：条件可选参数<br>参数含义：该参数用于配置拨测用户的终止MSISDN。<br>前提条件：该参数在<br>“用户标识类型”<br>参数配置为<br>“MSISDN(MSISDN)”<br>后生效。<br>数据来源：本端规划<br>取值范围：1～15位十进制数字字符串。终止MSISDN取值应大于等于起始MSISDN。如果终止MSISDN不输入则默认等于起始MSISDN。<br>默认值：无 |
+| BEGIMSI | 起始IMSI | 可选必选说明：条件必选参数<br>参数含义：该参数用于配置拨测用户的起始IMSI。<br>前提条件：该参数在<br>“用户标识类型”<br>参数配置为<br>“IMSI(IMSI)”<br>后生效。<br>数据来源：本端规划<br>取值范围：6～15位十进制数字字符串<br>默认值：无 |
+| ENDIMSI | 终止IMSI | 可选必选说明：条件可选参数<br>参数含义：该参数用于配置拨测用户的终止IMSI。<br>前提条件：该参数在<br>“用户标识类型”<br>参数配置为<br>“IMSI(IMSI)”<br>后生效。<br>数据来源：本端规划<br>取值范围：6～15位十进制数字字符串。终止IMSI取值应大于等于起始IMSI。如果终止IMSI不输入，则默认等于起始IMSI。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@ISSUDIALTEST]] · 拨测用户配置（ISSUDIALTEST）
+
+## 使用实例
+
+增加一条拨测用户配置，TSTUSRRANGE类型为IMSI，待拨测用着IMSI长度为15位，用户范围为123001111111111~123001111111122。
+
+ADD ISSUDIALTEST: TSTUSRRANGE=IMSI, BEGIMSI="123001111111111", ENDIMSI="123001111111122";
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-ISSUDIALTEST.md`

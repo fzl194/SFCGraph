@@ -1,0 +1,77 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD GBIPLOCENDPT
+type: MMLCommand
+name: ADD GBIPLOCENDPT（增加本端端点配置）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: GBIPLOCENDPT
+command_category: 配置类
+applicable_nf:
+- SGSN
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 8192
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- Gb接口管理
+- Gb over IP管理
+- 本端IP端点配置
+status: active
+---
+
+# ADD GBIPLOCENDPT（增加本端端点配置）
+
+## 功能
+
+**适用网元：SGSN**
+
+该命令用于在Gb OVER IP时增加一个Gb接口本端端点配置。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 本表最大记录数为8192。
+- 配置本端端点时，必须通过[**ADD NSE**](../../信令实体管理/增加信令实体(ADD NSE)_26146028.md)命令先配置NSE，且NSE的承载类型为IP。
+- SGSN仅支持一个NSE下配置10个IPv4类型的本端端点。
+- SGSN仅支持一个NSE下配置10个IPv6类型的本端端点。
+- 配置本端端点的时候需要使用[**DSP IPNSVC**](../IP网络NSVC链路管理/显示IP网络NSVC配置表(DSP IPNSVC)_72345609.md)查看已有IPNSVC链路数，增加时考虑是否超过单进程和整系统的规格。SGSN支持每个进程上1024条IPNsvc链路，整系统16384条IPNsvc链路。
+- 目前暂不支持IPv6。
+- 如果新添加的本端端点的IP地址在Gb地址池中，且端口号与GBLOCPORTRGE的预置端口相等，则添加失败。
+- 不能使用Gb自动配置的预配置端点作为手动配置NSE的本端端点。预配置端点的IP地址是通过[**ADD GBEPPOOL**](../../Gb自动配置管理/Gb地址池管理/增加IP地址到地址池(ADD GBEPPOOL)_26145998.md)配置的，而其端口号是通过[**SET GBLOCPORTRGE**](../../Gb自动配置管理/本端端点端口号管理/设置本端端口号选择范围(SET GBLOCPORTRGE)_26146000.md)设置的。
+- IP地址和vpn名称必须在SERVICEIP表中已经配置，可以用[**LST SERVICEIP**](../../../业务IP管理/业务IP/查询业务IP(LST SERVICEIP)_72226047.md)查询。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NSEI | NSE标识 | 可选必选说明：必选参数<br>参数含义：该参数用于指定端点所在的网络服务实体标识。<br>数据来源：整网规划<br>取值范围：0～65535<br>默认值：无<br>说明：必须已经配置成IP承载类型的NSE。 |
+| IPT | IP地址类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定IP地址类型。<br>数据来源：整网规划<br>取值范围：<br>- “IPV4(IPv4)”<br>- “IPV6(IPv6)”<br>默认值：无 |
+| LIPV4 | 本端IPv4地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定本端使用的IPv4地址。<br>前提条件：该参数在<br>“IP地址类型”<br>设置为<br>“IPV4(IPv4)”<br>时才生效。<br>数据来源：整网规划<br>取值范围：0.0.0.0～255.255.255.255<br>默认值：无 |
+| LIPV6 | 本端IPv6地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定本端使用的IPv6地址。<br>前提条件：该参数在<br>“IP地址类型”<br>设置为<br>“IPV6(IPv6)”<br>时才生效。<br>数据来源：整网规划<br>取值范围： ::～FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF<br>默认值：无<br>说明：目前不支持IPV6地址的配置。 |
+| LUP | 本端UDP端口号 | 可选必选说明：必选参数<br>参数含义：该参数用于指定本端使用的UDP端口号。<br>数据来源：整网规划<br>取值范围：1024～65535<br>默认值：无 |
+| SW | 信令权重 | 可选必选说明：可选参数<br>参数含义：该参数为保留参数，暂未实现。<br>数据来源：整网规划<br>取值范围：0～255<br>默认值：255<br>配置原则：数值越大，权重越大。<br>说明：在NSE为IP动态配置类型时，信令权重可以通过相关流程下发PCU。 |
+| DW | 数据权重 | 可选必选说明：可选参数<br>参数含义：该参数为保留参数，暂未实现。<br>数据来源：整网规划<br>取值范围：0～255<br>默认值：255<br>说明：在NSE为IP动态配置类型时，数据权重可以通过相关流程下发PCU。 |
+| DESC | 描述 | 可选必选说明：可选参数<br>参数含义：该参数用于指定本端端点名称。<br>数据来源：整网规划<br>取值范围：长度不超过32的字符串<br>默认值：无 |
+| VPNNAME | vpn名称 | 可选必选说明：可选参数<br>参数含义：VPN名称。<br>数据来源：全网规划<br>取值范围：1～31位字符串<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@GBIPLOCENDPT]] · 本地端点配置（GBIPLOCENDPT）
+
+## 使用实例
+
+增加一个本端端点，IPv4地址为192.168.2.1，UDP端口为2001，对应BSC1：
+
+ADD GBIPLOCENDPT: NSEI=600, IPT=IPV4, LIPV4="192.168.2.1", LUP=2001, DESC="FOR BSC1";
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-GBIPLOCENDPT.md`

@@ -1,0 +1,98 @@
+---
+id: UNC@20.15.2@MMLCommand@LST DMLNK
+type: MMLCommand
+name: LST DMLNK（查询Diameter链路配置）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: DMLNK
+command_category: 查询类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 信令传输管理
+- Diameter管理
+- Diameter链路
+status: active
+---
+
+# LST DMLNK（查询Diameter链路配置）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+该命令用于查看Diameter链路配置数据。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+manage-ug；system-ug；monitor-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| LINKIDX | 链路索引 | 可选必选说明：可选参数<br>参数含义：该参数用于指定准备显示的Diameter链路的索引。<br>取值范围：0~1279<br>默认值：无<br>说明：如果不输入，表示查询系统内所有Diameter链路配置数据。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@DMLNK]] · Diameter链路配置（DMLNK）
+
+## 使用实例
+
+1. 不输入Diameter链路索引，查询已经配置的所有Diameter链路数据：
+  LST DMLNK:;
+  ```
+  %%LST DMLNK:;%%
+  RETCODE = 0  操作成功。
+
+  输出结果如下
+  --------------
+   vpn名称        链路索引  IP地址类型  协议类型  本地地址1      本地地址2        本地端口号  对端地址1      对端地址2        对端端口号  C/S模式   Diameter链路集索引  SCTP协议参数索引  链路名称  交叉路径是否可用
+
+   UNC1           0         IPv4        SCTP      192.168.15.10  255.255.255.255  3868        192.168.15.16  255.255.255.255  3868       服务器端   0                   0                 To-HSS0   否              
+   UNC2           1         IPv4        SCTP      192.168.15.20  192.168.15.30    3868        192.168.15.26  192.168.15.36    3868       服务器端   1                   0                 To-HSS1   是              
+  (结果个数 = 2)
+  ---    END
+  ```
+2. 输入Diameter链路索引，查询指定的Diameter链路数据：
+  LST DMLNK: LINKIDX=0;
+  ```
+  %%LST DMLNK: LINKIDX=0;%%
+  RETCODE = 0  操作成功。
+
+  输出结果如下
+  --------------
+             vpn名称  =  UNC1
+            链路索引  =  0
+          IP地址类型  =  IPv4
+            协议类型  =  SCTP
+           本地地址1  =  192.168.15.10
+           本地地址2  =  255.255.255.255
+          本地端口号  =  3868
+           对端地址1  =  192.168.15.16 
+           对端地址2  =  255.255.255.255
+          对端端口号  =  3868
+             C/S模式  =  服务器端
+  Diameter链路集索引  =  0
+    SCTP协议参数索引  =  0
+            链路名称  =  To-HSS0
+    交叉路径是否可用  =  否
+  (结果个数 = 1)
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-DMLNK.md`

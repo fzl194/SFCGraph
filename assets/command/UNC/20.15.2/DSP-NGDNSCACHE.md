@@ -1,0 +1,86 @@
+---
+id: UNC@20.15.2@MMLCommand@DSP NGDNSCACHE
+type: MMLCommand
+name: DSP NGDNSCACHE（显示DNS缓存）
+nf: UNC
+version: 20.15.2
+verb: DSP
+object_keyword: NGDNSCACHE
+command_category: 查询类
+applicable_nf:
+- AMF
+- SGW-C
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- NRF业务及策略管理
+- NRF业务参数
+- DNS客户端缓存管理
+status: active
+---
+
+# DSP NGDNSCACHE（显示DNS缓存）
+
+## 功能
+
+![](显示DNS缓存（DSP NGDNSCACHE）_10765244.assets/notice_3.0-zh-cn_2.png)
+
+若查询整系统缓存数据，可能导致耗时较长，影响其他命令查询。
+
+**适用NF：AMF、SGW-C**
+
+该命令用于显示DNS缓存。
+
+## 注意事项
+
+无
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PODNAME | Pod名称 | 可选必选说明：可选参数<br>参数含义：该参数用于显示Pod名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是3~100。<br>默认值：无<br>配置原则：无 |
+| QUERYTYPE | 查询类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定DNS查询类型。<br>数据来源：本端规划<br>取值范围：<br>- QUERY_TYPE_A（AAAA/A类型查询）<br>- QUERY_TYPE_NAPTR（NAPTR类型查询）<br>默认值：无<br>配置原则：无 |
+| DISPLAYMANNER | 显示方式 | 可选必选说明：可选参数<br>参数含义：该参数用于指定缓存的显示方式。<br>数据来源：本端规划<br>取值范围：<br>- “All（所有缓存）”：所有缓存记录<br>- “BYDOMAINNAME（指定域名）”：指定域名的记录<br>- “SUBSTRMATCH（子串匹配）”：域名包含指定子串的所有记录<br>默认值：无<br>配置原则：<br>该参数设置为“所有缓存”或“子串匹配”时，如果记录较多，可能一次无法显示完整，请重复执行该命令以显示完整记录。 |
+| DOMAINNAME | 域名 | 可选必选说明：该参数在"DISPLAYMANNER"配置为"BYDOMAINNAME"时为条件必选参数。<br>参数含义：该参数用于显示域名/主机名，对于NAPTR类型此参数代表FQDN，对于A/AAAA类型此参数代表主机名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~255。<br>默认值：无<br>配置原则：<br>按照协议RFC1035规定，域名最大有效字符数为253，并且每个Label最大长度为63个字节。 |
+| SUBDOMAINNAME | 域名子串 | 可选必选说明：该参数在"DISPLAYMANNER"配置为"SUBSTRMATCH"时为条件必选参数。<br>参数含义：该参数用于指定待查询的域名子串。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~255。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NGDNSCACHE]] · DNS缓存（NGDNSCACHE）
+
+## 使用实例
+
+显示查询类型为QUERY_TYPE_A，显示方式为BYDOMAINNAME，域名为mmec01.mmegi8002.mme.epc.mnc003.mcc460.3gppnetwork.org的DNS缓存。
+
+```
+%%DSP NGDNSCACHE: QUERYTYPE=QUERY_TYPE_NAPTR, DISPLAYMANNER=BYDOMAINNAME, DOMAINNAME="mmec01.mmegi8002.mme.epc.mnc003.mcc460.3gppnetwork.org";%%
+RETCODE = 0  操作成功
+
+操作结果如下
+------------------------
+     Pod名称  =  NULL
+        域名  =  mmec01.mmegi8002.mme.epc.mnc003.mcc460.3gppnetwork.org
+缓存创建时间  =  2022-03-11 15:42:35
+         TTL  =  85900
+      主机名  =  mmec01.mmegi8002.mme.epc.mnc003.mcc460.3gppnetwork.org
+   主机名TTL  =  85900
+    网元类型  =  NULL
+    接口类型  =  NULL
+      优先级  =  0
+        权重  =  0
+IPv4地址列表  =  10.0.0.0
+IPv6地址列表  =  NULL
+(结果个数 = 1)
+
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/DSP-NGDNSCACHE.md`

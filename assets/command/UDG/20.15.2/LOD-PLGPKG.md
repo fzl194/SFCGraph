@@ -1,0 +1,69 @@
+---
+id: UDG@20.15.2@MMLCommand@LOD PLGPKG
+type: MMLCommand
+name: LOD PLGPKG（加载扩展包）
+nf: UDG
+version: 20.15.2
+verb: LOD
+object_keyword: PLGPKG
+command_category: 动作类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 单体服务公共功能管理
+- 系统管理
+- 系统维护
+- 扩展包管理
+status: active
+---
+
+# LOD PLGPKG（加载扩展包）
+
+## 功能
+
+当系统需要添加侦听、跟踪等功能时，使用该命令用于加载该功能的扩展包，将扩展包下载到本地，并加载到系统中。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PKGSOURCE | 包来源 | 可选必选说明：可选参数<br>参数含义：该参数用于指定包来源。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- REMOTE：文件来自远端。<br>- LOCAL：文件来自本地。<br>默认值：REMOTE |
+| IPVERSION | 服务器IP版本 | 可选必选说明：条件可选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“REMOTE”<br>时为可选参数。<br>参数含义：该参数用于指定服务器地址族。<br>数据来源：对端协商<br>取值范围：枚举类型。<br>- IPv4：IPv4地址。<br>- IPv6：IPv6地址。<br>默认值：IPv4 |
+| SERVERIP | 服务器IPv4地址 | 可选必选说明：条件必选参数，该参数在<br>“IPVERSION”<br>配置为<br>“IPv4”<br>时为必选参数。<br>参数含义：该参数用于指定服务器IP地址。<br>数据来源：对端协商<br>取值范围：IPv4地址类型。<br>默认值：无 |
+| SERVERPORT | 服务器端口号 | 可选必选说明：条件必选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“REMOTE”<br>时为必选参数。<br>参数含义：该参数用于指定服务器端口号。<br>数据来源：对端协商<br>取值范围：整数类型，取值范围为0～65535。<br>默认值：无 |
+| USERNAME | 用户名 | 可选必选说明：条件必选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“REMOTE”<br>时为必选参数。<br>参数含义：该参数用于指定服务器的用户名。<br>数据来源：对端协商<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无 |
+| PASSWORD | 密码 | 可选必选说明：条件必选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“REMOTE”<br>时为必选参数。<br>参数含义：该参数用于指定服务器的密码。<br>数据来源：对端协商<br>取值范围：密码类型，输入长度范围为1～127。<br>默认值：无 |
+| FILENAMEDIR | 软件路径 | 可选必选说明：条件必选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“REMOTE”<br>时为必选参数。<br>参数含义：该参数用于指定软件路径。<br>数据来源：对端协商<br>取值范围：字符串类型，输入长度范围为1～127。<br>默认值：无 |
+| FN | 文件名 | 可选必选说明：条件必选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“REMOTE”<br>时为必选参数。<br>参数含义：该参数用于指定软件包的文件名。<br>数据来源：对端协商<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无 |
+| TRANSFERPRTL | 传输协议 | 可选必选说明：可选参数<br>参数含义：该参数用于指定下载扩展包使用的传输协议。<br>数据来源：对端协商<br>取值范围：枚举类型。<br>- SFTP：使用SFTP协议下载文件。<br>默认值：SFTP |
+| SERVERIPV6 | 服务器IPv6地址 | 可选必选说明：条件必选参数，该参数在<br>“IPVERSION”<br>配置为<br>“IPv6”<br>时为必选参数。<br>参数含义：该参数用于指定服务器IPv6地址，服务器需要提前放置新的软件包。<br>数据来源：对端协商<br>取值范围：IPv6地址类型。<br>默认值：无 |
+| PLGTYPE | 扩展包类型 | 可选必选说明：条件必选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“LOCAL”<br>时为必选参数。<br>参数含义：该参数用于指定扩展包的类型。可通过<br>[**LST PLGPKG**](查询加载的扩展包（LST PLGPKG）_59103370.md)<br>或<br>[**DSP SOFTWARE**](../../../../单体服务平台功能管理/系统管理/系统维护/软件仓软件/显示软件仓软件（DSP SOFTWARE）_59036808.md)<br>查询获取。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无 |
+| VERSIONID | 版本号 | 可选必选说明：条件必选参数，该参数在<br>“PKGSOURCE”<br>配置为<br>“LOCAL”<br>时为必选参数。<br>参数含义：该参数用于指定扩展包的版本号。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无 |
+| SERVICEINSTANCE | 服务实例 | 可选必选说明：必选参数<br>参数含义：该参数表示大颗粒服务实例名称。<br>数据来源：本端规划<br>取值范围：字符串类型，通过LST VNFC命令获取。<br>默认值：无<br>配置原则：只能填写通过LST VNFC命令查询到的管理代理标识。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@PLGPKG]] · 扩展包（PLGPKG）
+
+## 使用实例
+
+加载侦听扩展包：
+
+```
+LOD PLGPKG:PKGSOURCE=REMOTE,SERVERIP="192.168.0.15",SERVERPORT=22,USERNAME="HUAWEI-123",PASSWORD="*****",FILENAMEDIR="/home/plgpkg",FN="vVNFPV100R005C00MODPlug_1.8.zip"
+,SERVICEINSTANCE="vnfc"
+;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/LOD-PLGPKG.md`

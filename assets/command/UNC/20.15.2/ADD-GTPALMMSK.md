@@ -1,0 +1,77 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD GTPALMMSK
+type: MMLCommand
+name: ADD GTPALMMSK（增加GTP路径断告警屏蔽记录）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: GTPALMMSK
+command_category: 配置类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 1024
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- GTP-C接口管理
+- GTP-C协议管理
+- 路径告警屏蔽
+status: active
+---
+
+# ADD GTPALMMSK（增加GTP路径断告警屏蔽记录）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+该命令通过增加IP地址/网段/IP地址范围以达到屏蔽GTP路径告警的目的。GTP路径告警包括GTPC路径故障告警（告警ID=80610，参见 **ALM-80610 GTPC路径故障** 告警处理），GTPU路径故障告警（告警ID=80661，参见 **ALM-80661 GTPU路径故障** 告警处理）。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令可以多次执行。
+- 请慎重屏蔽本网网段的GTPC路径告警，否则可能会造成本网GTPC路径故障无法通过告警及时感知，导致业务受损。
+- 配置的IP地址网段可以全包含其他IP地址网段或者被其他IP地址网段全包含，但是不能重复或部分交叉。当IP地址同时落在多个配置的IP地址网段内时，以覆盖范围最小的IP地址网段的配置开关为准。
+- 该表的最大记录数为1024。
+- 命令执行后仅对配置的IP网段、IP地址范围内新产生的GTP告警有效，不会对执行该命令前配置的IP网段、IP地址范围内产生或屏蔽的告警进行处理。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数ID | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CFGTP | 配置类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指示配置屏蔽GTP路径告警的类型。<br>数据来源：本端规划<br>取值范围：<br>- “IPMASK(IP+掩码)”<br>- “SENDIP(起始IP+终止IP)”<br>- “IPV6MASK(IPv6+前缀)”<br>- “SENDIPV6(起始IPv6+终止IPv6)”<br>默认值：无<br>配置原则：可以配置多条记录，但是IP网段区间可以重叠，不可以交叉。 |
+| IPV4ADDR | 起始对端设备IP地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备起始IPv4地址。<br>前提条件：在<br>“CFGTP”<br>配置为<br>“IPMASK(IP+掩码)”<br>和<br>“SENDIP(起始IP+终止IP)”<br>时，才需要配置本参数。<br>数据来源：整网规划<br>取值范围：0.0.0.0~255.255.255.255<br>默认值：无<br>配置原则：<br>- 有效的IPv4地址不能为255.255.255.255，或0.x.y.z。<br>- 有效的IPv4地址不能为环回地址(127.x.y.z)，或组播地址(224.x.y.z)。<br>- 有效的IPv4地址必须是A、B或者C类地址。 |
+| EIPV4ADDR | 终止对端设备IP地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备终止IPv4地址。<br>前提条件：只有在<br>“CFGTP”<br>配置为<br>“SENDIP(起始IP+终止IP)”<br>时，才需要配置本参数。<br>数据来源：整网规划<br>取值范围：0.0.0.0~255.255.255.255<br>默认值：无<br>配置原则：<br>- 有效的IPv4地址不能为255.255.255.255，或0.x.y.z。<br>- 有效的IPv4地址不能为环回地址(127.x.y.z)，或组播地址(224.x.y.z)。<br>- 有效的IPv4地址必须是A、B或者C类地址。<br>- 本参数要大于等于“起始对端设备IP地址”。 |
+| MASKV4 | 掩码 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备的IPv4地址的掩码。<br>前提条件：只有在<br>“CFGTP”<br>配置为<br>“IPMASK(IP+掩码)”<br>时，才需要配置本参数。<br>数据来源：整网规划<br>取值范围：0.0.0.0~255.255.255.255<br>默认值：无<br>配置原则：<br>- “0.0.0.0”是合法掩码，表示全网段。<br>- 输入的掩码要求对应的二进制值1和1之间不允许存在0。例如：“255.255.0.0”是有效掩码；“123.123.123.123”是无效掩码。因为123对应的二进制为“1111011”，1之间存在0。 |
+| IPV6ADDR | 起始对端设备IPv6地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备起始IPv6地址。<br>前提条件：在<br>“CFGTP”<br>配置为<br>“IPV6MASK(IPv6+前缀)”<br>和<br>“SENDIPV6(起始IPv6+终止IPv6)”<br>时，才需要配置本参数。<br>数据来源：整网规划<br>取值范围：:: ~ FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF<br>默认值：无<br>配置原则：<br>- IPv6地址必须是全球单播地址，不能为FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF、环回地址(::1)、链路本地地址(FE80::/10)和组播地址(FF00::/8)。 |
+| EIPV6ADDR | 终止对端设备IPv6地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备终止IPv6地址。<br>前提条件：只有在<br>“CFGTP”<br>配置为<br>“SENDIPV6(起始IPv6+终止IPv6)”<br>时，才需要配置本参数。<br>数据来源：整网规划<br>取值范围：:: ~ FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF<br>默认值：无<br>配置原则：<br>- 本参数要大于等于“起始对端设备IPv6地址”。<br>- IPv6地址必须是全球单播地址，不能为FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF、环回地址(::1)、链路本地地址(FE80::/10)和组播地址(FF00::/8)。 |
+| PRELEN | 前缀长度 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示对端设备的IPv6地址的前缀长度。<br>前提条件：只有在<br>“CFGTP”<br>配置为<br>“IPV6MASK(IPv6+前缀)”<br>时，才需要配置本参数。<br>数据来源：整网规划<br>取值范围：0~128<br>默认值：无<br>配置原则：<br>- “0”表示全网段。 |
+| SCRALM | 屏蔽GTP路径告警控制开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定屏蔽GTP路径告警控制开关。<br>数据来源：整网规划<br>取值范围：<br>- “ON(启用)”：启用屏蔽GTP路径告警。<br>- “OFF(关闭)”：关闭屏蔽GTP路径告警。<br>默认值：<br>“ON(启用)” |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@GTPALMMSK]] · GTP路径断告警屏蔽记录（GTPALMMSK）
+
+## 使用实例
+
+1.增加一条掩码为0.0.0.0的全网段地址记录，将参数 “屏蔽GTP路径告警控制开关” 置为 “ON” ，使得任意对端IP地址对应的GTP路径告警均被屏蔽：
+
+ADD GTPALMMSK: CFGTP=IPMASK, IPV4ADDR="192.168.1.1", MASKV4="0.0.0.0", SCRALM=ON;
+
+2.增加一条起始IP地址为192.168.0.0，终止IP地址为192.168.255.255的记录，将参数 “屏蔽GTP路径告警控制开关” 置为 “OFF” ，使得落在该范围内的IP地址对应的GTP路径告警能够正常上报：
+
+ADD GTPALMMSK: CFGTP=SENDIP, IPV4ADDR="192.168.0.0", EIPV4ADDR="192.168.255.255", SCRALM=OFF;
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-GTPALMMSK.md`

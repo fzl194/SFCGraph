@@ -1,0 +1,75 @@
+---
+id: UDG@20.15.2@MMLCommand@ADD BCSRVLEVELPLY
+type: MMLCommand
+name: ADD BCSRVLEVELPLY（增加带宽管理控制器业务级别策略）
+nf: UDG
+version: 20.15.2
+verb: ADD
+object_keyword: BCSRVLEVELPLY
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 30000
+category_path:
+- 用户面服务管理
+- 业务控制策略
+- 带宽控制
+- 带宽管理控制器业务级别策略
+status: active
+---
+
+# ADD BCSRVLEVELPLY（增加带宽管理控制器业务级别策略）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于配置指定BWM控制器下，特定ServiceLevel的业务流量保证带宽比例和峰值带宽比例。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为30000。
+- 指定BWM控制器下所有BCSrvLevelPly配置的CIRRate参数之和不能超过100%。
+- 此命令配置的承诺信息速率（CIR*CIRRate）不能大于峰值信息速率（PIR*PIRRate）。其中CIR与PIR为BWMCONTROLLER命令配置的保障带宽和峰值带宽。
+- 指定BWM控制器下所有BCSrvLevelPly配置的ShapRate参数之和不能超过100%。
+- 配置带宽管理控制器业务级别速率功能时会消耗CPU，影响数据转发性能。配置不合理会导致用户丢包过多。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| BWMCNAME | 带宽管理控制器名称 | 可选必选说明：必选参数<br>参数含义：该参数用于表示带宽管理控制器的名字。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD BWMCONTROLLER命令配置生成。 |
+| SERVICELEVEL | 业务级别 | 可选必选说明：必选参数<br>参数含义：该参数用于指定使用同一控制器的不同业务流间的优先级，值越小优先级越高。如果配置优先级，优先保证高优先级的带宽。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～30。<br>默认值：1<br>配置原则：该参数不得大于BwmController下配置的SrvLevelSpec业务等级规格。 |
+| CIRRATE | 承诺信息速率比例 | 可选必选说明：可选参数<br>参数含义：该参数用于表示此业务等级的保证带宽比例，此业务等级实际承诺信息速率相当于CIRRate*CIR（BwmController命令）。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为0～10000。单位是万分比。<br>默认值：0<br>配置原则：对于低优先级业务，为了避免在BwmController带宽消耗殆尽时被高优先级业务抢占全部带宽，需要配置该参数。 |
+| PIRRATE | 峰值信息速率比例 | 可选必选说明：可选参数<br>参数含义：该参数用于表示此业务等级的峰值带宽比例，此业务等级实际峰值信息速率相当于PIRRate*PIR（BwmController命令）。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为0～10000。单位是万分比。<br>默认值：10000<br>配置原则：对于高优先级业务，为了限制在BwmController带宽消耗殆尽时抢占全部带宽，需要配置此参数。 |
+| MAXPKTLOSTRATE | 最大丢包率 | 可选必选说明：可选参数<br>参数含义：该参数用于表示此业务等级的最大丢包比率。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为0～10000。单位是万分比。<br>默认值：10000<br>配置原则：对于某一类业务为了保证其体验可控，可配置该参数控制该ServiceLevel业务的最大丢包率。 |
+| SHAPRATE | 流量整形速率比例 | 可选必选说明：可选参数<br>参数含义：该参数用于表示此业务等级的最高峰值带宽比例，实际承诺信息速率相当于ShapRate* RATE（BwmController命令）。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为0～10000。单位是万分比。<br>默认值：0<br>配置原则：对于高优先级业务，为了避免在BwmController带宽消耗殆尽时被高优先级业务抢占全部带宽，需要配置该参数。所有ServiceLevel的ShapRate之和不能超过100%。 |
+| MAXINCRDELAY | 最大增加时延 | 可选必选说明：可选参数<br>参数含义：该参数用于表示此业务等级因Shaping队列缓存的最大增加时延。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～65535，单位是毫秒。<br>默认值：65535<br>配置原则：对于某一类时延敏感业务为了保证其体验可控，可配置该参数控制该ServiceLevel业务的最大增加时延。65535为无效值，不配置该参数或配置为65535，代表不对该业务等级的缓存时延进行单独评估和控制。配置为0，代表该业务等级仅做CAR处理，不支持Shaping缓存，也不支持用户公平调度。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@BCSRVLEVELPLY]] · 带宽管理控策略制器业务级别（BCSRVLEVELPLY）
+
+## 关联任务
+
+- [[UDG@20.15.2@Task@0-00108]]
+
+## 使用实例
+
+为带宽管理控制器“bc1”新增一个业务级别为1的控制策略。其中保证带宽比例为0%，峰值带宽比例为100%：
+
+```
+ADD BCSRVLEVELPLY: BWMCNAME="bc1", SERVICELEVEL=1, CIRRATE=0, PIRRATE=10000, SHAPRATE=0, MAXPKTLOSTRATE=10000, MAXINCRDELAY=1000;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/ADD-BCSRVLEVELPLY.md`

@@ -1,0 +1,65 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD QCICONV
+type: MMLCommand
+name: MOD QCICONV（修改扩展QCI转换关系）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: QCICONV
+command_category: 配置类
+applicable_nf:
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- QoS管理
+- EPS QoS
+- 扩展QCI转换关系
+status: active
+---
+
+# MOD QCICONV（修改扩展QCI转换关系）
+
+## 功能
+
+**适用网元：MME**
+
+该命令用于修改系统中扩展QCI(QoS Class Identifier)向标准QCI的转换关系配置表。扩展QCI是指取值大于9并小于255的QCI，当UE不支持扩展QCI时，则需要将扩展QCI转换为标准QCI（取值为1～9）。
+
+当在承载创建和承载修改的流程中，会对QCI的值进行标准化转换。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- UNC按照此配置，把P-GW下发的扩展QCI转换为标准QCI后发送给UE，同时也会把P-GW下发的MBR（Maximum Bit Rate）/GBR（Guaranteed Bit Rate）发给UE。因此扩展QCI与标准QCI之间的映射关系，需要运营商端到端规划，确保P-GW、MME、eNodeB等设备上规划一致，否则，可能会导致端到端QoS的不一致，影响用户业务感受。
+- 此配置涉及基于用户等级的QCI扩展特性（特性编号：WSFD-105103，License部件编码：LKV2QCIE02），执行命令请使用[**DSP LICENSE**](../../../../../../平台服务管理/操作维护/License管理/显示License(DSP LICENSE)_00360098.md)命令确认对应特性license是否得到授权，执行[**LST LICENSESWITCH**](../../../../../../平台服务管理/操作维护/License管理/查询License配置项开关（LST LICENSESWITCH）_09651570.md)命令确认特性开关状态为“ENABLE(打开)”。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| QCIEXT | 扩展QCI基准值 | 可选必选说明：必选参数<br>参数含义：待修改的扩展QCI基准值。<br>数据来源：整网规划<br>取值范围：10～254<br>默认值：无 |
+| QCISTEP | 扩展QCI范围 | 可选必选说明：可选参数<br>参数含义：待修改的扩展QCI取值范围值。扩展QCI范围是指<br>“扩展QCI基准值”<br>加上<br>“扩展QCI范围”<br>，在这一范围内的扩展QCI向标准QCI的转换关系配置表将统一被修改。<br>数据来源：整网规划<br>取值范围：0～244<br>默认值：无<br>配置原则：<br>“扩展QCI范围”<br>与<br>“扩展QCI基准值”<br>之和必须大于9并小于255。<br>说明：如果不输入，则表示修改系统内扩展QCI值为扩展QCI基准值向QCI标准值的转换关系。 |
+| QCISTD | 标准QCI值 | 可选必选说明：必选参数<br>参数含义：待修改的转换后的标准QCI值。标准QCI值是指协议规定的QCI取值范围(1～9)内的QCI值。<br>数据来源：整网规划<br>取值范围：<br>- 1～4：GBR业务的标准QCI值。<br>- 5～9：Non-GBR业务的标准QCI值。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@QCICONV]] · 扩展QCI转换关系（QCICONV）
+
+## 使用实例
+
+将扩展QCI值从10到30的记录的标准QCI值修改为1：
+
+MOD QCICONV: QCIEXT=10, QCISTEP=30, QCISTD=1;
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-QCICONV.md`

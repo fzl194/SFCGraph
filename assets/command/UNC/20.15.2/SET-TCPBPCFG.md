@@ -1,0 +1,69 @@
+---
+id: UNC@20.15.2@MMLCommand@SET TCPBPCFG
+type: MMLCommand
+name: SET TCPBPCFG（设置TCP过载反压HTTP流控配置）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: TCPBPCFG
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: true
+category_path:
+- 平台服务管理
+- HTTP功能管理
+- HTTP流控管理
+- HTTP反压流控管理
+status: active
+---
+
+# SET TCPBPCFG（设置TCP过载反压HTTP流控配置）
+
+## 功能
+
+![](设置TCP过载反压HTTP流控配置（SET TCPBPCFG）_94795792.assets/notice_3.0-zh-cn_2.png)
+
+该命令是高危命令，误开启可能会引起HTTP进程流控，请谨慎使用并联系华为技术支持协助操作。
+
+该命令用于设置传输层TCP过载反压到应用层HTTP流控配置。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| SWITCH | STARTTHD | STARTDU | STOPTHD | STOPDU | FCDIRECT |
+| --- | --- | --- | --- | --- | --- |
+| OFF | 80 | 5 | 75 | 60 | CLIENT |
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SWITCH | 反压流控开关 | 可选必选说明：必选参数<br>参数含义：该参数用于标识是否开启TCP反压流控功能。<br>数据来源：本端规划<br>取值范围：<br>- “OFF（关闭）”：关闭TCP反压功能<br>- “ON（开启）”：开启TCP反压功能<br>默认值：无。<br>配置原则：无 |
+| STARTTHD | 启动反压阈值(%) | 可选必选说明：该参数在"SWITCH"配置为"ON"时为条件可选参数。<br>参数含义：该参数用于标识TCP进程启动反压流控时的CPU阈值。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是70~99，单位是百分比。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST TCPBPCFG查询当前参数配置值。<br>配置原则：无 |
+| STARTDU | 启动反压时长(s) | 可选必选说明：该参数在"SWITCH"配置为"ON"时为条件可选参数。<br>参数含义：该参数用于标识TCP进程CPU占有率大于等于启动反压阈值“STARTTHD”的持续时间，即TCP进程的CPU占有率持续大于等于阈值的时间达到该参数设置的值后启动反压流控。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~60，单位是秒。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST TCPBPCFG查询当前参数配置值。<br>配置原则：无 |
+| STOPTHD | 停止反压阈值(%) | 可选必选说明：该参数在"SWITCH"配置为"ON"时为条件可选参数。<br>参数含义：该参数用于标识TCP进程停止反压流控时的CPU阈值。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是40~99，单位是百分比。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST TCPBPCFG查询当前参数配置值。<br>配置原则：无 |
+| STOPDU | 停止反压时长(s) | 可选必选说明：该参数在"SWITCH"配置为"ON"时为条件可选参数。<br>参数含义：该参数用于标识TCP进程CPU占有率低于停止反压阈值“STOPTHD”的持续时间，即TCP进程的CPU占有率持续低于阈值的时间达到该参数设置的值后退出反压流控。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~60，单位是秒。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST TCPBPCFG查询当前参数配置值。<br>配置原则：无 |
+| FCDIRECT | 流控方向 | 可选必选说明：必选参数<br>参数含义：该参数用于标识TCP反压流控的消息方向。<br>数据来源：本端规划<br>取值范围：<br>- “CLIENT（客户端）”：流控客户端发送请求<br>默认值：无。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@TCPBPCFG]] · TCP过载反压HTTP流控配置（TCPBPCFG）
+
+## 使用实例
+
+设置传输层TCP过载反压到应用层HTTP开启客户端发请求流控，可以执行如下命令：
+
+```
+SET TCPBPCFG: SWITCH=ON, STARTTHD=80, STARTDU=5, STOPTHD=75, STOPDU=60, FCDIRECT=CLIENT;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-TCPBPCFG.md`

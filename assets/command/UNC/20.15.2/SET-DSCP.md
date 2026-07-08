@@ -1,0 +1,101 @@
+---
+id: UNC@20.15.2@MMLCommand@SET DSCP
+type: MMLCommand
+name: SET DSCP（设置接口DSCP配置）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: DSCP
+command_category: 配置类
+applicable_nf:
+- NCG
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 10
+category_path:
+- 业务服务管理
+- NCG业务及策略管理
+- 计费管理
+- 业务配置管理
+- 接口DSCP管理
+status: active
+---
+
+# SET DSCP（设置接口DSCP配置）
+
+## 功能
+
+**适用NF：NCG**
+
+该命令用于设置NCG对外网元接口发送IP包时的DSCP值。
+
+有关DSCP的内容请参见RFC2474。DSCP总共分成了4类：Class Selector(CS)、Expedited Forwarding(EF)、Assured Forwarding(AF)和Best Effort(BE)。CS（类选择器）的DSCP值后三位为0，EF（加速转发）的DSCP值为101110(46)，AF（确保转发）的DSCP值最后一位为0，BE的DSCP值为000000(0)。常用的DSCP用法见 [**表1**](设置接口DSCP配置（SET DSCP）_51174294.md#ZH-CN_CONCEPT_0251174294__table_0365AAA1) 。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为10。
+
+*表1 常用的DSCP用法列表*
+
+| 对应的服务 | IPv4优先级/EXP/802.1P | DSCP(二进制) | DSCP[十进制][十六进制] | TOS[十进制][十六进制] | 应用 | 丢包率 |
+| --- | --- | --- | --- | --- | --- | --- |
+| BE | 0 | 000 000 | 0 | 0 | Internet | NULL |
+| AF1 | Green 1 | 001 010 | 10[0x0a] | 40[0x28] | Leased Line | L |
+| AF1 | Green 1 | 001 100 | 12[0x0c] | 48[0x30] | Leased Line | M |
+| AF1 | Green 1 | 001 110 | 14[0x0e] | 56[0x38] | Leased Line | H |
+| AF2 | Green 2 | 010 010 | 18[0x12] | 72[0x48] | IPTV VOD | L |
+| AF2 | Green 2 | 010 100 | 20[0x14] | 80[0x50] | IPTV VOD | M |
+| AF2 | Green 2 | 010 110 | 22[0x16] | 88[0x58] | IPTV VOD | H |
+| AF3 | Green 3 | 011 010 | 26[0x1a] | 104[0x68] | IPTV Broadcast | L |
+| AF3 | Green 3 | 011 100 | 28[0x1c] | 112[0x70] | IPTV Broadcast | M |
+| AF3 | Green 3 | 011 110 | 30[0x1e] | 120[0x78] | IPTV Broadcast | H |
+| AF4 | Green 4 | 100 010 | 34[0x22] | 136[0x88] | NGN/3G Signaling | L |
+| AF4 | Green 4 | 100 100 | 36[0x24] | 144[0x90] | NGN/3G Signaling | M |
+| AF4 | Green 4 | 100 110 | 38[0x26] | 152[0x98] | NGN/3G Signaling | H |
+| EF | 5 | 101 110 | 46[0x2E] | 184[0xB8] | NGN/3G voice | NULL |
+| CS6(INC) | 6 | 110 000 | 48[0x30] | 192[0xC0] | Protocol | NULL |
+| CS7(NC) | 7 | 111 000 | 56[0x38] | 224[0xE0] | Protocol | NULL |
+
+- NC、EF、AF4、AF3、AF2、AF1、BE等都是RFC2474协议中定义的差异化服务类等级。NC是最高优先级服务，依次递减，BE为最低优先级服务类。CS6和CS7默认用于协议报文，因为如果这些报文无法接收的话会引起协议中断，所以应该优先保障；EF用于承载语音的流量，因为语音要求低延迟、低抖动、低丢包率，是仅次于协议报文的最重要的报文；AF4可以用来承载语音的信令流量；AF3可以用来承载IPTV的直播流量，直播的实时性很强，需要连续性和大吞吐量的保证；AF2可以用来承载VOD的流量；AF1可以用来承载专线业务；BE可以用来承载INTERNET业务。
+- 通常使用AF服务类等级加丢包率表示AF类的DSCP值。例如，AF43表示服务类等级为AF4，丢包率为H；AF42表示服务类等级为AF4，丢包率为M；AF41表示服务类等级为AF4，丢包率为L。
+
+*表2 业务消息DSCP系统初始设置值*
+
+| 消息类别 | 接口类型 | 消息类型 | DSCP值 |
+| --- | --- | --- | --- |
+| 业务消息 | Ga接口 | 其他消息 | 56 |
+
+- 该命令存在系统初始设置记录，参数的初始设置值如下表：
+
+| INTERFACE | DSCP |
+| --- | --- |
+| Ga | 56 |
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| INTERFACE | 接口类型 | 可选必选说明：必选参数<br>参数含义：该参数用于选择信令报文修改DSCP值的接口类型。<br>数据来源：全网规划<br>取值范围：枚举类型。<br>- Ga：Ga。<br>默认值：无<br>配置原则：根据业务配置需要，请参考<br>[**表2**](设置接口DSCP配置（SET DSCP）_51174294.md#ZH-CN_CONCEPT_0251174294__table_0365AAA2)<br>。 |
+| DSCP | 差分服务代码点 | 可选必选说明：必选参数<br>参数含义：该参数用于设置信令报文的DSCP值。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为0～63。<br>默认值：无<br>配置原则：根据业务配置需要，请参考<br>[**表1**](设置接口DSCP配置（SET DSCP）_51174294.md#ZH-CN_CONCEPT_0251174294__table_0365AAA1)<br>配置优先级，其它数值按最低优先级处理。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@DSCP]] · 接口DSCP配置（DSCP）
+
+## 使用实例
+
+设置接口为Ga的业务消息的DSCP值为56：
+
+```
+SET DSCP: INTERFACE=Ga, DSCP=56;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-DSCP.md`

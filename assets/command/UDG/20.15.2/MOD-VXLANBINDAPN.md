@@ -1,0 +1,61 @@
+---
+id: UDG@20.15.2@MMLCommand@MOD VXLANBINDAPN
+type: MMLCommand
+name: MOD VXLANBINDAPN（修改VXLAN隧道组绑定APN）
+nf: UDG
+version: 20.15.2
+verb: MOD
+object_keyword: VXLANBINDAPN
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 路径管理
+- VXLAN路径管理
+- VXLAN隧道绑定APN
+status: active
+---
+
+# MOD VXLANBINDAPN（修改VXLAN隧道组绑定APN）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于修改VXLAN隧道组与apn的绑定关系。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 执行该命令时，会修改Vxlan组绑定APN的关系，将改变数据转发流程，会将数据报文转发至新的MEP。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN | 可选必选说明：必选参数<br>参数含义：该参数用于指定APN实例名。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：无 |
+| VXLANGRPNAME | VXLAN组名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定VXLAN隧道组名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@VXLANBINDAPN]] · VXLAN隧道组绑定APN（VXLANBINDAPN）
+
+## 使用实例
+
+修改与apn1绑定的VXLAN隧道组为vxlangrp2：
+
+```
+MOD VXLANBINDAPN: APN="apn1", VXLANGRPNAME="vxlangrp2";
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MOD-VXLANBINDAPN.md`

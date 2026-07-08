@@ -1,0 +1,67 @@
+# 查询指定APN的PFCP私有信元携带配置（LST APNPFCPCMPT）
+
+- [命令功能](#ZH-CN_MMLREF_0000001393587564__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0000001393587564__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0000001393587564__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0000001393587564__1.3.5)
+- [输出结果说明](#ZH-CN_MMLREF_0000001393587564__1.3.6)
+
+## [命令功能](#ZH-CN_MMLREF_0000001393587564)
+
+**适用NF：SGW-C、PGW-C、SMF、GGSN**
+
+该命令用于查询指定APN的PFCP私有信元携带配置。
+
+## [注意事项](#ZH-CN_MMLREF_0000001393587564)
+
+无
+
+#### [操作用户权限](#ZH-CN_MMLREF_0000001393587564)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0000001393587564)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定APN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”等特殊字符，不区分大小写。<br>默认值：无<br>配置原则：<br>输入的APN名称需要符合APN命名规则，仅支持配置APN NI（Network Identifier），例如“huawei.com”；该参数取值应与ADD APN命令中参数“APN”保持一致，使用该前需通过ADD APN添加一组记录。 |
+
+## [使用实例](#ZH-CN_MMLREF_0000001393587564)
+
+- 查询APN名称为“huawei.com”时，PFCP私有信元携带配置：
+  ```
+  %%LST APNPFCPCMPT: APN="huawei.com";%%
+  RETCODE = 0  操作成功
+
+  结果如下
+  --------
+                                    APN名称  =  huawei.com
+  SMF给SGW-U携带承载级CreateQer信元控制开关  =  ENABLE
+                SMF给UPF携带Qci信元控制开关  =  ENABLE
+  (结果个数 = 1)
+
+  ---    END
+  ```
+- 查询所有的PFCP私有信元携带配置：
+  ```
+  %%LST APNPFCPCMPT:;%%
+  RETCODE = 0  操作成功
+
+  结果如下
+  --------
+  APN名称         SMF给SGW-U携带承载级CreateQer信元控制开关  SMF给UPF携带Qci信元控制开关
+
+  huawei.com      ENABLE                                     ENABLE                      
+  huawei2.com     DISABLE                                    INHERIT
+  (结果个数 = 2)
+
+  ---    END
+  ```
+
+## [输出结果说明](#ZH-CN_MMLREF_0000001393587564)
+
+| 输出项名称 | 输出项解释 |
+| --- | --- |
+| APN名称 | 该参数用于指定APN实例名。 |
+| SMF给SGW-U携带承载级CreateQer信元控制开关 | 该参数用于指定SMF是否给SGW-U的消息中携带承载级CreateQer。 |
+| SMF给UPF携带Qci信元控制开关 | 该参数用于指定SMF是否给UPF的消息携带Qci信元。 |

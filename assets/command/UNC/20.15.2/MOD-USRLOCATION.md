@@ -1,0 +1,71 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD USRLOCATION
+type: MMLCommand
+name: MOD USRLOCATION（修改用户位置）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: USRLOCATION
+command_category: 配置类
+applicable_nf:
+- PGW-C
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费和策略的业务管理
+- 业务公共
+- 用户位置
+status: active
+---
+
+# MOD USRLOCATION（修改用户位置）
+
+## 功能
+
+**适用NF：PGW-C、SMF**
+
+该命令用于修改用户位置信息，实现基于位置的带宽管理或TCP小区拥塞检测功能。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 用户修改位置信息时，如果已经被绑定到位置信息组，可以不解除绑定关系直接修改。改动对用户激活及更新生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| LOCATIONNAME | 位置名称 | 可选必选说明：必选参数<br>参数含义：指定位置名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：无 |
+| LOCATIONTYPE | 位置类型 | 可选必选说明：必选参数<br>参数含义：指定位置类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- PLMN：公共陆地移动网络标识。<br>- LAI：位置区域标识。<br>- RAI：路由区域标识。<br>- CGI：小区全局标识。<br>- SAI：服务区域标识。<br>- ECGI：E-UTRAN小区全局标识。<br>- TAI：跟踪区域标识。<br>- NCGI：NR小区标识。<br>默认值：无<br>配置原则：<br>- PLMN：配置包含MCC、MNC的位置信息。<br>- LAI：配置包含MCC、MNC、LAC的位置信息。<br>- RAI：配置包含MCC、MNC、LAC、RAC的位置信息。<br>- CGI：配置包含MCC、MNC、LAC、CI的位置信息。<br>- SAI：配置包含MCC、MNC、LAC、SAC的位置信息。<br>- ECGI：配置包含MCC、MNC、ECI的位置信息。<br>- TAI：配置包含MCC、MNC、TAC的位置信息。<br>- NCGI：配置包含MCC、MNC、NCI的位置信息。 |
+| MCC | 移动国家码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“PLMN”、“LAI”、“RAI”、“CGI”、“SAI”、“ECGI”、“NCGI” 或 “TAI”时为必选参数。<br>参数含义：指定移动国家码。<br>数据来源：本端规划<br>取值范围：字符串类型，为3位数字，000~999。<br>默认值：无<br>配置原则：无 |
+| MNC | 移动网络码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“PLMN”、“LAI”、“RAI”、“CGI”、“SAI”、“ECGI”、“NCGI” 或 “TAI”时为必选参数。<br>参数含义：指定移动网络码。<br>数据来源：本端规划<br>取值范围：字符串类型，可为2或3位数字，00~99或000~999。<br>默认值：无<br>配置原则：无 |
+| LAC | 位置区码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“LAI”、“RAI”、“CGI” 或 “SAI”时为必选参数。<br>参数含义：指定位置区码。该值为公共陆地移动通信网（PLMN）定义的一个位置区。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～6。十六进制，仅支持输入0x/0X、a-f/A-F、0-9，允许不输入0x/0X前缀，字母不区分大小写，取值范围0x1~0xfffd,0xffff。<br>默认值：无<br>配置原则：无 |
+| CI | 小区标识 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“CGI”时为必选参数。<br>参数含义：指定小区标识。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～6。十六进制，仅支持输入0x/0X、a-f/A-F、0-9，允许不输入0x/0X前缀，字母不区分大小写，取值范围0x0~0xffff。<br>默认值：无<br>配置原则：无 |
+| SAC | 服务区码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“SAI”时为必选参数。<br>参数含义：指定服务区码。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～6。十六进制，仅支持输入0x/0X、a-f/A-F、0-9，允许不输入0x/0X前缀，字母不区分大小写，取值范围0x0~0xffff。<br>默认值：无<br>配置原则：无 |
+| RAC | 路由区码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“RAI”时为必选参数。<br>参数含义：指定路由区码。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～4。十六进制，仅支持输入0x/0X、a-f/A-F、0-9，允许不输入0x/0X前缀，字母不区分大小写，取值范围0x0~0xff。<br>默认值：无<br>配置原则：无 |
+| ECI | E-UTRAN小区标识 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“ECGI”时为必选参数。<br>参数含义：指定E-UTRAN小区标识。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～9。十六进制，仅支持输入0x/0X、a-f/A-F、0-9，允许不输入0x/0X前缀，字母不区分大小写，取值范围0x0~0xfffffff。<br>默认值：无<br>配置原则：无 |
+| TAC | 跟踪区码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“TAI”时为必选参数。<br>参数含义：指定跟踪区码。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～8。字符串类型，输入长度范围为1～8。字符串类型，十六进制，取值范围0x1~0xffffff。允许不输入0x前缀，此时取值范围1~ffffff，系统会默认添加0x前缀。字母不区分大小写。<br>默认值：无<br>配置原则：无 |
+| NCI | NR小区标识 | 可选必选说明：条件必选参数<br>前提条件：该参数在“LOCATIONTYPE”配置为“NCGI”时为必选参数。<br>参数含义：指定NR小区标识。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～11。字符串类型，输入长度范围为1～11。字符串类型，十六进制，取值范围0x1~0xfffffffff。允许不输入0x前缀，此时取值范围1~fffffffff，系统会默认添加0x前缀。字母不区分大小写。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@USRLOCATION]] · 用户位置（USRLOCATION）
+
+## 使用实例
+
+假如运营商需要修改用户位置信息指定为服务区标识，需基于服务区标识的位置进行带宽管理，即包含MCC、MNC、LAC、SAC等组成的路由区标识：
+
+```
+MOD USRLOCATION: LOCATIONNAME="TestLocName", LOCATIONTYPE=RAI, MCC="123", MNC="12", LAC="1234", RAC="12";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-USRLOCATION.md`

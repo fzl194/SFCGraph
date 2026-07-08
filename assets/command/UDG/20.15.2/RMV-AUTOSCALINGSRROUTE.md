@@ -1,0 +1,71 @@
+---
+id: UDG@20.15.2@MMLCommand@RMV AUTOSCALINGSRROUTE
+type: MMLCommand
+name: RMV AUTOSCALINGSRROUTE（删除静态路由自动化配置模板）
+nf: UDG
+version: 20.15.2
+verb: RMV
+object_keyword: AUTOSCALINGSRROUTE
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 自动部署
+- 静态路由自动化配置
+status: active
+---
+
+# RMV AUTOSCALINGSRROUTE（删除静态路由自动化配置模板）
+
+## 功能
+
+该命令用于删除静态路由自动化配置模板。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 删除该静态路由自动化配置模板时，要保证该模板添加过。
+- 删除自动化配置模板，不支持联动删除已部署的配置。如果需要删除已部署的配置，请手动删除。
+- 如果地址族取值为IPv4，则路由掩码长度取值范围为0到32，如果地址族取值为IPv6，则路由掩码长度取值范围为0到128。
+- 该命令在自动化配置开关为关闭的状态下才能执行，请先使用SET AUTOCONFIG命令关闭自动配置开关。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SERVICENAME | 服务名称 | 可选必选说明：必选参数<br>参数含义：该参数用来表示接口自动化配置服务模板名称。要求和ADD AUTOSCALINGSERVICE命令中配置的SERVICENAME参数保持一致。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格和中文。<br>默认值：无 |
+| VRFNAME | VPN实例名称 | 可选必选说明：可选参数<br>参数含义：该参数用来指定VPN实例的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格和中文。<br>默认值：_public_ |
+| IPVERSION | 地址族 | 可选必选说明：必选参数<br>参数含义：该参数用来指定VPN实例的地址族信息。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- IPv4：IPv4地址族。<br>- IPv6：IPv6地址族。<br>默认值：无 |
+| PREFIX4 | 路由前缀IPv4 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPVERSION”配置为“IPv4”时为必选参数。<br>参数含义：该参数用来指定IPv4前缀信息。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无 |
+| PREFIX6 | 路由前缀IPv6 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPVERSION”配置为“IPv6”时为必选参数。<br>参数含义：该参数用来指定IPv6前缀信息。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无 |
+| MASKLENGTH | 路由掩码长度 | 可选必选说明：必选参数<br>参数含义：IPv4场景，该参数用于表示路由的掩码长度；IPv6场景，该参数用于表示路由的前缀长度。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～128。<br>默认值：无 |
+| NEXTHOPALLOCTYPE4 | IPv4路由下一跳分配方式 | 可选必选说明：条件可选参数<br>前提条件：该参数在“IPVERSION”配置为“IPv4”时为可选参数。<br>参数含义：该参数用于指定IPv4路由下一跳的获取方式。用户配置方式是指用户配置静态路由的下一跳；DHCP方式是指静态路由下一跳支持DHCP联动。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- CONFIG：用户配置方式。<br>- DHCP：DHCP分配方式。<br>默认值：无 |
+| NEXTHOPALLOCTYPE6 | IPv6路由下一跳分配方式 | 可选必选说明：条件可选参数<br>前提条件：该参数在“IPVERSION”配置为“IPv6”时为可选参数。<br>参数含义：该参数用于指定IPv6路由下一跳的获取方式。用户配置方式是指用户配置静态路由的下一跳；DHCP方式是指静态路由下一跳支持DHCP联动。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- CONFIG：用户配置方式。<br>- DHCP：DHCP分配方式。<br>默认值：无 |
+| NEXTHOP4 | 路由下一跳IPv4 | 可选必选说明：条件必选参数<br>前提条件：该参数在“NEXTHOPALLOCTYPE4”配置为“CONFIG”时为必选参数。<br>参数含义：该参数用来指定IPv4下一跳IP地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无 |
+| NEXTHOP6 | 路由下一跳IPv6 | 可选必选说明：条件必选参数<br>前提条件：该参数在“NEXTHOPALLOCTYPE6”配置为“CONFIG”时为必选参数。<br>参数含义：该参数用来指定IPv6下一跳IP地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@AUTOSCALINGSRROUTE]] · 静态路由自动化配置模板（AUTOSCALINGSRROUTE）
+
+## 使用实例
+
+- 删除一个IPv4的静态路由自动化配置模板：
+  ```
+  RMV AUTOSCALINGSRROUTE:SERVICENAME="abc",IPVERSION=IPv4,PREFIX4="192.168.0.1",MASKLENGTH=32,VRFNAME="_public_",NEXTHOPALLOCTYPE4=CONFIG,NEXTHOP4="192.168.0.3";
+  ```
+- 删除一个IPv6的静态路由自动化配置模板：
+  ```
+  RMV AUTOSCALINGSRROUTE:SERVICENAME="service1",IPVERSION=IPv6,PREFIX6="2001:DB8::1",MASKLENGTH=128,VRFNAME="_public_",NEXTHOPALLOCTYPE6=CONFIG,NEXTHOP6="2001:DB8::10";
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/RMV-AUTOSCALINGSRROUTE.md`

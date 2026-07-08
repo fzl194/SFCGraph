@@ -1,0 +1,69 @@
+---
+id: UDG@20.15.2@MMLCommand@SET PAEPARAMS
+type: MMLCommand
+name: SET PAEPARAMS（设置PAE参数）
+nf: UDG
+version: 20.15.2
+verb: SET
+object_keyword: PAEPARAMS
+command_category: 配置类
+effect_mode: ''
+is_dangerous: true
+category_path:
+- 平台服务管理
+- 系统调测
+- PAE 调测命令
+- PAE软参
+status: active
+---
+
+# SET PAEPARAMS（设置PAE参数）
+
+## 功能
+
+![](设置PAE参数（SET PAEPARAMS）_05415160.assets/notice_3.0-zh-cn.png)
+
+该命令是高危命令，操作不当可能会导致业务受损，请谨慎使用并联系华为技术支持协助操作。
+
+该命令用于设置PAE服务的相关参数。PAE主要功能是为微服务通信提供报文高速转发及适配。
+
+> **说明**
+> - 该命令执行后立即生效。
+>
+> - 参数"PARAVALUE2"仅作为保留域，暂未启用。
+>
+> - 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+>
+> | PARAID | PARAVALUE1 | PARAVALUE2 |
+> | --- | --- | --- |
+> | 0 | 1 | - |
+> | 1 | 1 | - |
+> | 2 | 1 | - |
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PARAID | 参数ID | 可选必选说明：必选参数<br>参数含义：该参数用于指定PAE参数ID。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~2。<br>默认值：无。<br>配置原则：无 |
+| PARAVALUE1 | 第一个参数值 | 可选必选说明：必选参数<br>参数含义：该参数用于设置PAE参数的取值。<br>当PAE参数ID为0时，该参数值用于设置pbuflist分片数大于等于4的情况下发送网卡前是否进行合并处理，0表示不做合并处理，1表示需要做合并处理；当该合并处理开启时，外联口MTU最大支持3*PBUF报文单元有效荷载数据长度。<br>当PAE参数ID为1时，该参数值用于设置pbuf重用检测开关，0表示关，1表示开。<br>当PAE参数ID为2时，该参数值用于设置EVS卸载场景支持Packed模式的开关，0表示关，1表示开。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~1。<br>默认值：无。<br>配置原则：无 |
+| PARAVALUE2 | 第二个参数值 | 可选必选说明：可选参数<br>参数含义：该参数用于设置PAE参数的扩展取值，类型是字符串。仅作为保留域，暂未启用。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~255。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST PAEPARAMS查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@PAEPARAMS]] · PAE参数（PAEPARAMS）
+
+## 使用实例
+
+通过如下命令开启PAE对pbuf list大于4部分的处理：
+
+```
+SET PAEPARAMS: PARAID=0, PARAVALUE1=1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/SET-PAEPARAMS.md`

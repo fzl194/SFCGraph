@@ -1,0 +1,331 @@
+---
+id: UNC@20.15.2@MMLCommand@DSP SSHSMSGDATA
+type: MMLCommand
+name: DSP SSHSMSGDATA（显示SSH服务器的消息数据）
+nf: UNC
+version: 20.15.2
+verb: DSP
+object_keyword: SSHSMSGDATA
+command_category: 查询类
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 单体服务公共功能管理
+- 操作维护
+- 系统调测
+- SSH调测
+status: active
+---
+
+# DSP SSHSMSGDATA（显示SSH服务器的消息数据）
+
+## 功能
+
+该命令用于查询SSH服务器与其他组件交互的消息数据。
+
+## 注意事项
+
+无。
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TYPE | 消息类型 | 可选必选说明：必选参数<br>参数含义：消息类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- SOCKETI：Socketi消息。<br>- PIPE：Pipe消息。<br>- AAAI：Aaai消息。<br>- CAMLCSI：Camlcsi消息。<br>- TFSI：Tfsi消息。<br>- SMPOI：Smpoi消息。<br>- HAI：Hai消息。<br>- APPCFGI：Appcfgi消息。<br>- SSHSI：Sshsi消息。<br>- NETCONFTRANSDATAI：Netconftransdatai消息。<br>- MMLTRANSDATAI：Mmltransdatai消息。<br>- CLITRANSDATAI：Clitransdatai消息。<br>- PACKETTYPEI：Packettypei消息。<br>- PACKETDATAI：Packetdatai消息。<br>- IFMI：Ifmi消息。<br>默认值：无 |
+| BOARDTYPE | OMU类型 | 可选必选说明：可选参数<br>参数含义：OMU类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- MASTER：主。<br>- SLAVE：备。<br>默认值：MASTER |
+| SERVICEINSTANCE | 服务实例 | 可选必选说明：必选参数<br>参数含义：该参数表示大颗粒服务实例名称。<br>数据来源：本端规划<br>取值范围：字符串类型，通过<br>**LST VNFC**<br>命令获取。<br>默认值：无<br>配置原则：只能填写通过<br>**LST VNFC**<br>命令查询到的管理代理标识。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SSHSMSGDATA]] · SSH服务器的消息数据（SSHSMSGDATA）
+
+## 使用实例
+
+- 查询SSH服务器的Socketi消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=SOCKETI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据       
+                                                                            
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerCID    MsgType                SocketFD    PipeID     Handle     RetCode    Direction                
+  ------------------------------------------------------------------------------------------------------------------------
+  18/05:31:37.420 0x80650022 SOCK_INCOMING_CON      337         4294967295 0x80000908 0x00000000 I
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Pipe消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=PIPE,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据  
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            MsgType              ServiceID  PipeID     RetCode    Direction                                         
+  ------------------------------------------------------------------------------------------------------------------------
+  17/23:18:46.699 CLOSE_REQ            1          4294967295 0x00000000 O                               
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Aaai消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=AAAI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                          
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType         MsgLen ACK TransNo    ChannelID  VRID   Result     Direction                 
+  ------------------------------------------------------------------------------------------------------------------------
+  17/23:18:55.548 0x00d10028 AUTHEN          116    0   2          0x00021000 0      0x00000000 O                         
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Camlcsi消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=CAMLCSI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                            
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType         MsgLen ACK TransNo    ChannelID  OpCode               Result     Direction   
+  ------------------------------------------------------------------------------------------------------------------------
+  17/23:18:55.788 0x00ca2712 MANAGE_CHANNEL  487    0   3          0x00020001 CONNECT              0x00000000 O   
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Tfsi消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=TFSI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                             
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType            MsgLen ACK TransNo    TfsHandle  OpType   ErrCode    RetCode    Direction 
+  ------------------------------------------------------------------------------------------------------------------------
+  17/03:06:23.744 -          TFS_API            -      -   -          2          TFSI_CD  0x00000000 0x00000000 O             
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Smpoi消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=SMPOI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据 
+                                                                                                 
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType            MsgLen    Flag      TransNo   OpCode                 RetCode   Direction
+  ------------------------------------------------------------------------------------------------------------------------
+  18/15:33:21.902 0x00ca2712 SLIDING_WINDOWS    28        132       14        SLIDING_WIN_ACK        0         I
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Hai消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=HAI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                           
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType         Partner-ID  Partner-Status RetCode Direction                                 
+  ------------------------------------------------------------------------------------------------------------------------
+  18/01:48:41.361 0x80030080 START_WORK      0x00000000 AVAILABLE       0       I             
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Appcfgi消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=APPCFGI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                                    
+
+  ------------------------------------------------------------------------------------------------------------------------          
+  Time            PeerPID    MsgType     MsgLen    ACK       TransNo     ClassId   SessionId VsId      OpCode    Result    Direction
+  ------------------------------------------------------------------------------------------------------------------------          
+  18/01:51:44.184 0x80cc001c QUERY       68        4         2147484499  136586021 164       0         GET       0         I     
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Sshsi消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=SSHSI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                            
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType         MsgLen    ACK       TransNo           ChannelID Direction                    
+  ------------------------------------------------------------------------------------------------------------------------                   
+  18/01:53:20.949 0x0093002c BUFFER_SEND     16        0         53                0x00021003 O        
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Netconftransdatai消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=NETCONFTRANSDATAI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                            
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType         MsgLen ACK TransNo    ChannelID  OpCode               Result     Direction   
+  ------------------------------------------------------------------------------------------------------------------------
+  17/23:18:57.311 0x00970021 TRANS_DATA      2238   0   1          0x00020c81 TRANS_DATA           0x00000000 I    
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Mmltransdatai消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=MMLTRANSDATAI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                             
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType         MsgLen ACK TransNo    ChannelID  OpCode               Result     Direction   
+  ------------------------------------------------------------------------------------------------------------------------
+  19/02:41:25.556 0x0208001b TRANS_DATA      242    0   0          0x00020042 TRANS_DATA           0x00000000 I               
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Clitransdatai消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=CLITRANSDATAI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                                      
+
+  ---------------------------------------------------------------------------------------------------------------------------------
+  Time            PeerPID    MsgType         MsgLen ACK TransNo    ChannelID  OpCode               Result     Direction            
+  ---------------------------------------------------------------------------------------------------------------------------------
+  19/11:48:16.223 0x00ca2712 TRANS_DATA      26     0   1          0x00020001 TRANS_DATA           0x00000000 I         
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Packettypei消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=PACKETTYPEI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                           
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Time            PeerCID    SocketFD    PipeID     Handle     ChannelId  PacketType                  Direction           
+  ------------------------------------------------------------------------------------------------------------------------
+  19/02:16:36.765 0x00000000 0           0          0x00000000 0x00000000 new connect                 I           
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询SSH服务器的Packetdatai消息数据：
+  ```
+  DSP SSHSMSGDATA:TYPE=PACKETDATAI,BOARDTYPE=MASTER
+  ,SERVICEINSTANCE="vnfc"
+  ;
+  ```
+  ```
+  RETCODE = 0  操作成功
+
+  结果如下:
+  ------------------------
+  消息数据                                                                                                                                      
+
+  ---------------------------------------------------------------------------------------------------------------------------------                 
+  Time            PacketLen  ChannelID   PipeID    TransNo    Result     Direction   PacketData                                                     
+  ---------------------------------------------------------------------------------------------------------------------------------                 
+  19/10:47:46.060 68         0x00021046 1083703325 0          0x00000000 I          89EEE696C207B73CAE7EFCA43546C020A8B6092D31D1013C3C1EBC5CB5289CAE
+  (结果个数 = 1)
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/DSP-SSHSMSGDATA.md`

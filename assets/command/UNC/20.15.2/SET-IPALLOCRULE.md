@@ -1,0 +1,84 @@
+---
+id: UNC@20.15.2@MMLCommand@SET IPALLOCRULE
+type: MMLCommand
+name: SET IPALLOCRULE（设置全局地址分配规则）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: IPALLOCRULE
+command_category: 配置类
+applicable_nf:
+- PGW-C
+- GGSN
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- UE地址管理
+- UE地址池管理
+- 地址分配规则配置
+status: active
+---
+
+# SET IPALLOCRULE（设置全局地址分配规则）
+
+## 功能
+
+**适用NF：PGW-C、GGSN、SMF**
+
+该命令用于配置全局地址分配规则。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 支持IPv4和IPv6三种地址分配规则优先级配置。
+- 全局配置默认为第一优先级开关使能，第一优先级规则为基于APN映射的地址范围分配地址。第二、三优先级规则开关不使能。
+- 不同优先级的规则不可以配置为相同。
+- 三级优先级独立配置，配置低优先级时不要求必须配置高优先级。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| IPV4FIRSTRULESW | IPV4FIRSTRULE | IPV4SECONDRULESW | IPV4THIRDRULESW | IPV6FIRSTRULESW | IPV6FIRSTRULE | IPV6SECONDRULESW | IPV6THIRDRULESW |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ENABLE | APN-1 | DISABLE | DISABLE | ENABLE | APN-1 | DISABLE | DISABLE |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IPV4FIRSTRULESW | IPv4第一级规则开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4第一级规则开关，配置使能或去使能IPv4第一优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（去使能）”：不使用当前标识作为地址分配规则的匹配条件。<br>- “ENABLE（使能）”：使用当前标识作为地址分配规则的匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV4FIRSTRULE | IPv4第一级规则 | 可选必选说明：该参数在"IPV4FIRSTRULESW"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定分配IPv4地址的第一优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “APN（APN）”：使用会话的APN作为地址池匹配条件。<br>- “LOCATION（位置区）”：使用UE的接入位置作为地址池匹配条件。<br>- “UPNODE（UP节点）”：使用选择的UPF群组标识作为地址池匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV4SECONDRULESW | IPv4第二级规则开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4第二级规则开关，配置使能或去使能IPv4第二优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（去使能）”：不使用当前标识作为地址分配规则的匹配条件。<br>- “ENABLE（使能）”：使用当前标识作为地址分配规则的匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV4SECONDRULE | IPv4第二级规则 | 可选必选说明：该参数在"IPV4SECONDRULESW"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定分配IPv4地址的第二优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “APN（APN）”：使用会话的APN作为地址池匹配条件。<br>- “LOCATION（位置区）”：使用UE的接入位置作为地址池匹配条件。<br>- “UPNODE（UP节点）”：使用选择的UPF群组标识作为地址池匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV4THIRDRULESW | IPv4第三级规则开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4第三级规则开关，配置使能或去使能IPv4第三优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（去使能）”：不使用当前标识作为地址分配规则的匹配条件。<br>- “ENABLE（使能）”：使用当前标识作为地址分配规则的匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV4THIRDRULE | IPv4第三级规则 | 可选必选说明：该参数在"IPV4THIRDRULESW"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定分配IPv4地址的第三优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “APN（APN）”：使用会话的APN作为地址池匹配条件。<br>- “LOCATION（位置区）”：使用UE的接入位置作为地址池匹配条件。<br>- “UPNODE（UP节点）”：使用选择的UPF群组标识作为地址池匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV6FIRSTRULESW | IPv6第一级规则开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv6第一级规则开关，配置使能或去使能IPv6第一优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（去使能）”：不使用当前标识作为地址分配规则的匹配条件。<br>- “ENABLE（使能）”：使用当前标识作为地址分配规则的匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV6FIRSTRULE | IPv6第一级规则 | 可选必选说明：该参数在"IPV6FIRSTRULESW"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定分配IPv6地址的第一优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “APN（APN）”：使用会话的APN作为地址池匹配条件。<br>- “LOCATION（位置区）”：使用UE的接入位置作为地址池匹配条件。<br>- “UPNODE（UP节点）”：使用选择的UPF群组标识作为地址池匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV6SECONDRULESW | IPv6第二级规则开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv6第二级规则开关，配置使能或去使能IPv6第二优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（去使能）”：不使用当前标识作为地址分配规则的匹配条件。<br>- “ENABLE（使能）”：使用当前标识作为地址分配规则的匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV6SECONDRULE | IPv6第二级规则 | 可选必选说明：该参数在"IPV6SECONDRULESW"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定分配IPv6地址的第二优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “APN（APN）”：使用会话的APN作为地址池匹配条件。<br>- “LOCATION（位置区）”：使用UE的接入位置作为地址池匹配条件。<br>- “UPNODE（UP节点）”：使用选择的UPF群组标识作为地址池匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV6THIRDRULESW | IPv6第三级规则开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv6第三级规则开关，配置使能或去使能IPv6第三优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（去使能）”：不使用当前标识作为地址分配规则的匹配条件。<br>- “ENABLE（使能）”：使用当前标识作为地址分配规则的匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+| IPV6THIRDRULE | IPv6第三级规则 | 可选必选说明：该参数在"IPV6THIRDRULESW"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定分配IPv6地址的第三优先级规则。<br>数据来源：本端规划<br>取值范围：<br>- “APN（APN）”：使用会话的APN作为地址池匹配条件。<br>- “LOCATION（位置区）”：使用UE的接入位置作为地址池匹配条件。<br>- “UPNODE（UP节点）”：使用选择的UPF群组标识作为地址池匹配条件。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST IPALLOCRULE查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@IPALLOCRULE]] · 全局地址分配规则（IPALLOCRULE）
+
+## 使用实例
+
+设置全局IPv4地址分配规则，其中第一优先级按照UPNODE+APN映射的地址范围内分配地址，第二优先级按照从UPNODE映射的地址范围分配地址，如果按照第一优先级和第二优先级的规则都无法分配地址，则分配IPv4地址失败：
+
+```
+SET IPALLOCRULE: IPV4FIRSTRULESW=ENABLE, IPV4FIRSTRULE=APN-1&LOCATION-0&UPNODE-1, IPV4SECONDRULESW=ENABLE, IPV4SECONDRULE=APN-0&LOCATION-0&UPNODE-1, IPV4THIRDRULESW=DISABLE, IPV6THIRDRULESW=DISABLE; 
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-IPALLOCRULE.md`

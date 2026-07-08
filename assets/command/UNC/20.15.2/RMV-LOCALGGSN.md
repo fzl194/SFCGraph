@@ -1,0 +1,64 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV LOCALGGSN
+type: MMLCommand
+name: RMV LOCALGGSN（删除本地GGSN列表）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: LOCALGGSN
+command_category: 配置类
+applicable_nf:
+- SGSN
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- GTP-C接口管理
+- GTP-C协议管理
+- 本地GGSN功能
+status: active
+---
+
+# RMV LOCALGGSN（删除本地GGSN列表）
+
+## 功能
+
+**适用网元：SGSN**
+
+本命令用于删除一条本地GGSN地址。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令可以多次执行。
+- 当在输入参数中输入已配置的地址段内的任一IP地址时，则可将此地址段对应的本地GGSN地址都删除。
+- 如果需要向DNS服务器发起查询，当DNS服务器返回的GGSN地址包含在此命令删除的GGSN地址段中，则删除的GGSN地址不再被优先选择。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IPT | IP地址类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定删除记录的IP地址类型。<br>数据来源：整网规划<br>取值范围：枚举类型<br>- “IPV4(IPv4)”<br>- “IPV6(IPv6)”<br>默认值：无 |
+| IP | IPv4地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定删除的记录内的任一IPv4地址。<br>取值范围：0.0.0.0～255.255.255.255<br>默认值：无<br>配置原则：<br>- 有效的IPv4地址不能为 0.0.0.0,255.255.255.255，或0.x.y.z。<br>- 有效的IPv4地址不能为环回地址(127.x.y.z)，或组播地址(224.x.y.z)。<br>- 有效的IPv4地址必须是A、B或者C类地址。 |
+| IPV6 | IPv6地址 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定删除的记录内的任一IPv6地址。<br>取值范围：::～FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF<br>默认值：无<br>配置原则：<br>- IPv6地址必须是全球单播地址，不能为FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF、环回地址(::1)、链路本地地址(FE80::/10)和组播地址(FF00::/8)。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@LOCALGGSN]] · 本地GGSN列表（LOCALGGSN）
+
+## 使用实例
+
+删除一个含有IP地址为192.168.3.4 的记录：
+
+RMV LOCALGGSN: IPT=IPV4, IP="192.168.3.4";
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-LOCALGGSN.md`

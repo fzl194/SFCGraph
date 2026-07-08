@@ -1,0 +1,45 @@
+# 增加SGSN/SGW IP与RAT类型间的映射关系（ADD SRVNODERAT）
+
+- [命令功能](#ZH-CN_MMLREF_0209653221__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0209653221__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0209653221__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0209653221__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0209653221)
+
+**适用NF：GGSN**
+
+该命令用来配置SGSN的IP地址段与RAT类型间的映射关系表。在根据SGSN的IP地址映射RAT类型时，需要用到映射表。获取RAT类型用于从虚拟APN映射到真实APN、匹配user-profile进行业务、计费控制。
+
+## [注意事项](#ZH-CN_MMLREF_0209653221)
+
+- 该命令执行后立即生效。
+
+- 修改配置后，可能导致用户的RAT类型发生变化，会影响用户的计费和业务控制。
+- 若系统中没有配置某SGSN的IP地址段和RAT的映射关系，使用命令增加一条SGSN IP地址段和RAT的映射关系。
+- 多条记录之间的SGSN的IP地址不能重叠。
+
+- 最多可输入1000条记录。
+
+#### [操作用户权限](#ZH-CN_MMLREF_0209653221)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0209653221)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IPVERSION | IP地址版本类型 | 可选必选说明：必选参数<br>参数含义：该参数用于设置IP地址版本类型。<br>数据来源：全网规划<br>取值范围：<br>- “IPV4（IPV4）”：表示地址类型为IPv4。<br>- “IPV6（IPV6）”：表示地址类型为IPv6。<br>默认值：无<br>配置原则：无 |
+| SRVNODESTARTV4 | Service Node的起始IPv4地址 | 可选必选说明：该参数在"IPVERSION"配置为"IPV4"时为条件必选参数。<br>参数含义：该参数用于指定SGSN/SGW的IP地址段的起始IPv4地址。<br>数据来源：全网规划<br>取值范围：IPv4地址类型。点分十进制。<br>默认值：无<br>配置原则：<br>取值范围：0.0.0.0~255.255.255.255。 |
+| SRVNODEENDV4 | Service Node的结束IPv4地址 | 可选必选说明：该参数在"IPVERSION"配置为"IPV4"时为条件必选参数。<br>参数含义：该参数用于指定SGSN/SGW的IP地址段的结束IPv4地址。<br>数据来源：全网规划<br>取值范围：IPv4地址类型。点分十进制。<br>默认值：无<br>配置原则：<br>取值范围：0.0.0.0~255.255.255.255。 |
+| SRVNODESTARTV6 | Service Node的起始IPv6地址 | 可选必选说明：该参数在"IPVERSION"配置为"IPV6"时为条件必选参数。<br>参数含义：该参数用于指定SGSN/SGW的IP地址段的起始IPv6地址。<br>数据来源：全网规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| SRVNODEENDV6 | Service Node的结束IPv6地址 | 可选必选说明：该参数在"IPVERSION"配置为"IPV6"时为条件必选参数。<br>参数含义：该参数用于指定SGSN/SGW的IP地址段的结束IPv6地址。<br>数据来源：全网规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| RATTYPE | RAT类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定RAT类型。<br>数据来源：全网规划<br>取值范围：<br>- “UTRAN（UTRAN）”：表示无线接入类型为UTRAN。<br>- “GERAN（GERAN）”：表示无线接入类型为GERAN。<br>- “WLAN（WLAN）”：表示无线接入类型为WLAN。<br>- “GAN（GAN）”：表示无线接入类型为GAN。<br>- “EUTRAN（EUTRAN）”：表示无线接入类型为EUTRAN。<br>- “NULL（NULL）”：NULL<br>- “EUTRAN_NB_IOT（EUTRAN_NB_IOT）”：表示无线接入类型为EUTRAN-NB-IoT。<br>默认值：无<br>配置原则：无 |
+
+## [使用实例](#ZH-CN_MMLREF_0209653221)
+
+当运营商需要增加一条SGSN的IP地址段和RAT类型的映射记录时，可按如下配置：
+
+```
+ADD SRVNODERAT: IPVERSION=IPV4, SRVNODESTARTV4="10.1.1.1", SRVNODEENDV4="10.2.2.2", RATTYPE=UTRAN;
+```

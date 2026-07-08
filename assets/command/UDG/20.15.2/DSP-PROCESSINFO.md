@@ -1,0 +1,92 @@
+---
+id: UDG@20.15.2@MMLCommand@DSP PROCESSINFO
+type: MMLCommand
+name: DSP PROCESSINFO（显示进程信息）
+nf: UDG
+version: 20.15.2
+verb: DSP
+object_keyword: PROCESSINFO
+command_category: 查询类
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 单体服务公共功能管理
+- 操作维护
+- 系统调测
+- 进程和组件信息
+status: active
+---
+
+# DSP PROCESSINFO（显示进程信息）
+
+## 功能
+
+该命令用于显示VNFC上由“monitor”进程生成的所有进程的详细信息，包含进程状态、进程内存使用、CPU使用的信息。
+
+当设备运行缓慢、卡顿明显，可使用本命令查看系统的CPU使用率是否过高。也可在进行某项操作之前确认当前CPU是否还有足够的处理能力。
+
+## 注意事项
+
+无。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROCTYPE | 进程类型 | 可选必选说明：可选参数<br>参数含义：该参数用于说明进程的类型。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，区分大小写。<br>默认值：无<br>配置原则：当不输入时显示由“monitor”进程生成的所有进程信息。 |
+| RUNAME | RU名称 | 可选必选说明：可选参数<br>参数含义：该参数用于说明此进程所在的资源单元名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，区分大小写。<br>默认值：无<br>配置原则：当不输入时显示所有资源单元信息。 |
+| SERVICEINSTANCE | 服务实例 | 可选必选说明：必选参数<br>参数含义：该参数表示大颗粒服务实例名称。<br>数据来源：本端规划<br>取值范围：字符串类型，通过LST VNFC命令获取。<br>默认值：无<br>配置原则：只能填写通过LST VNFC命令查询到的管理代理标识，但不能填写0，0表示VNFP。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@PROCESSINFO]] · 进程信息（PROCESSINFO）
+
+## 使用实例
+
+查看VNFC上由“monitor”进程生成的所有进程的详细信息：
+
+```
+DSP PROCESSINFO:
+SERVICEINSTANCE="vnfc"
+;
+```
+
+```
+RETCODE = 0  操作成功
+
+结果如下:
+---------------------------------------------------
+进程ID   进程类型   RU名称                      进程组号   进程逻辑组号  进程状态      进程角色   进程内存总量（KB）  进程内存已使用量（KB） 进程内存使用率（%）    进程CPU使用率（%）    操作系统进程ID   进程操作系统虚拟内存（KB）   进程操作系统物理内存（KB）
+
+1008     LM         VNODE_CSLB_VNFC_SPU_0066     1004       1010          NORMAL        PRIMARY    86572               17650                  20                     0.09                  1343             86572                        17650
+1007     LM         VNODE_CSLB_VNFC_SPU_0065     1003       1008          NORMAL        PRIMARY    86572               17649                  20                     0.06                  1344             86572                        17650                  
+1006     LM         VNODE_CSLB_VNFC_SPU_0064     1002       1006          NORMAL        PRIMARY    86572               17650                  20                     0.11                  1345             86572                        17650                  
+1001     HSM        VNODE_CSLB_VNFC_OMU_0001     1001       1000          NORMAL        PRIMARY    127520              44470                  34                     0.09                  1346             86572                        17650                  
+1005     HSM        VNODE_CSLB_VNFC_OMU_0002     1001       1005          NORMAL        BACKUP     116250              32058                  27                     0.17                  1348             86572                        17650                  
+1000     PROTO2     VNODE_CSLB_VNFC_OMU_0001     1000       8             NORMAL        PRIMARY    356656              283297                 79                     0.13                  1347             86572                        17650                  
+1004     PROTO2     VNODE_CSLB_VNFC_OMU_0002     1000       7             NORMAL        BACKUP     349484              275916                 78                     0.06                  1349             86572                        17650                  
+10005    PAE_LC     VNODE_CSLB_VNFC_SPU_0066     10005      1011          NORMAL        PRIMARY    21035               15034                  71                     0.06                  1351             86572                        17650                  
+10004    PAE_LC     VNODE_CSLB_VNFC_SPU_0065     10004      1009          NORMAL        PRIMARY    21035               15035                  71                     0.09                  1352             86572                        17650                  
+10003    PAE_LC     VNODE_CSLB_VNFC_SPU_0064     10003      1007          NORMAL        PRIMARY    21035               15035                  71                     0.08                  1353             86572                        17650                  
+10002    OPS        VNODE_CSLB_VNFC_OMU_0001     10002      1002          NORMAL        PRIMARY    116250              16672                  14                     0.00                  1354             86572                        17650                  
+1002     OPS        VNODE_CSLB_VNFC_OMU_0002     10002      1003          NORMAL        BACKUP     116250              16657                  14                     0.00                  1355             86572                        17650                  
+10001    PROTO1     VNODE_CSLB_VNFC_OMU_0001     10001      1001          NORMAL        PRIMARY    114203              15517                  13                     0.13                  1356             86572                        17650                  
+1003     PROTO1     VNODE_CSLB_VNFC_OMU_0002     10001      1004          NORMAL        BACKUP     113179              15214                  13                     0.10                  1357             86572                        17650                  
+8        LM         VNODE_CSLB_VNFC_OMU_0002     5          5             NORMAL        PRIMARY    183837              20262                  11                     0.21                  1358             86572                        17650                  
+4        LM         VNODE_CSLB_VNFC_OMU_0001     4          6             NORMAL        PRIMARY    186910              24184                  12                     0.09                  1359             86572                        17650                  
+3        CFG        VNODE_CSLB_VNFC_OMU_0001     3          8             NORMAL        PRIMARY    232011              131117                 56                     0.00                  1360             86572                        17650                  
+6        CFG        VNODE_CSLB_VNFC_OMU_0002     3          7             NORMAL        BACKUP     174637              83773                  47                     0.00                  1361             86572                        17650                  
+2        SM         VNODE_CSLB_VNFC_OMU_0001     2          8             NORMAL        PRIMARY    179738              20693                  11                     0.13                  1362             86572                        17650                  
+7        SM         VNODE_CSLB_VNFC_OMU_0002     2          7             NORMAL        BACKUP     179738              19440                  10                     0.10                  1363             86572                        17650                  
+(结果个数 = 20)                                                                                                                                                    
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/DSP-PROCESSINFO.md`

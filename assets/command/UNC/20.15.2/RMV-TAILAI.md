@@ -1,0 +1,74 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV TAILAI
+type: MMLCommand
+name: RMV TAILAI（删除TAI与LAI对应关系）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: TAILAI
+command_category: 配置类
+applicable_nf:
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 电路域联合业务
+- TAI与LAI对应关系
+status: active
+---
+
+# RMV TAILAI（删除TAI与LAI对应关系）
+
+## 功能
+
+![](删除TAI与LAI对应关系(RMV TAILAI)_26145416.assets/notice_3.0-zh-cn_2.png)
+
+- 删除TAI与LAI对应关系后，MME将无法找到该TAI所对应的LAI，CSFB功能将失效。
+- 如果不输入任何参数，执行该命令会删除所有记录。
+
+**适用网元：MME**
+
+该命令用于删除TAI与LAI的对应关系。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 删除TAI与LAI对应关系后，MME将无法找到该TAI所对应的LAI，CSFB功能将失效。
+- 如果需要删除系统中唯一一条TAI与LAI的对应关系记录时，需要指定“起始TAI”、“用户范围”和“IMSI前缀”或“IMSI”参数。
+- 如果仅指定起始TAI或者LAI参数，则系统默认删除选择模式为用户范围(**SUBRANGE**)对应的记录。
+- 如果需要删除起始TAI或者LAI参数对应的所有记录，则需要分别执行选择模式为用户范围，主机名以及域名的删除命令。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| BGNTAI | 起始TAI | 可选必选说明：可选参数<br>参数含义：该参数用于指定待删除的跟踪区标识。<br>取值范围：9～10位的字符串<br>默认值：无<br>配置原则：<br>- “起始TAI”和“LAI”至少要输入一个。<br>- 如果只输入“起始TAI”，该命令会删除所有与此起始TAI对应的记录。 |
+| SELMODE | 选择模式 | 可选必选说明：可选参数<br>参数含义：该参数用于表示选择LAI的匹配模式。<br>数据来源：整网规划<br>取值范围：<br>- “SUBRANGE(用户范围)”：匹配IMSI号段的用户。<br>- “HOST(主机名)”：匹配HSS主机名的用户。<br>- “REALM(域名)”：匹配HSS域名的用户。<br>默认值：“SUBRANGE(用户范围)” |
+| HOST | 主机名 | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定用户HSS的主机名。<br>前提条件：该参数在“<br>**选择模式**<br>”参数设置为“HOST(主机名)”时，才需要配置。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围为1～127。<br>默认值：无 |
+| REALM | 域名 | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定用户HSS的域名。<br>前提条件：该参数在“<br>**选择模式**<br>”参数设置为“REALM(域名)”时，才需要配置。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围为1～127。<br>默认值：无 |
+| SUBRANGE | 用户范围 | 可选必选说明：可选参数<br>参数含义：该参数用于指定待删除用户的范围。<br>前提条件：该参数在“<br>**选择模式**<br>”参数设置为“SUBRANGE(用户范围)”时，才需要配置。<br>取值范围：<br>- “ALL_USER（所有用户）”：无匹配IMSI前缀的所有用户。<br>- “IMSI_PREFIX（指定IMSI前缀）”：IMSI前缀最长长度优先匹配的用户。<br>- “IMSI_RANGE（指定IMSI范围）”:IMSI范围匹配用户<br>默认值：无 |
+| IMSIPRE | IMSI前缀 | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定待删除用户的IMSI前缀。<br>前提条件：该参数在<br>“用户范围”<br>参数设置为<br>“IMSI_PREFIX（指定IMSI前缀）”<br>时，才需要配置。<br>取值范围：1～15位的数字<br>默认值：无 |
+| IMSI | IMSI | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定IMSI，对该IMSI所在号段进行删除。<br>前提条件：只有<br>“用户范围”<br>为<br>“IMSI_RANGE（指定IMSI范围）”<br>时，该参数才有效。<br>取值范围：1~15位十进制数字字符串<br>默认值：无 |
+| LAI | LAI | 可选必选说明：可选参数<br>参数含义：该参数用于指定待删除的位置区标识。<br>取值范围：9～10位的字符串<br>默认值：无<br>配置原则：<br>- “起始TAI”和“LAI”至少要输入一个。<br>- 如果只输入“LAI”，该命令会删除所有与此LAI对应的记录。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@TAILAI]] · TAI与LAI对应关系（TAILAI）
+
+## 使用实例
+
+删除 “起始TAI” 为 “308014101” 的TAI区间与LAI对应关系：
+
+RMV TAILAI: BGNTAI="308014101";
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-TAILAI.md`

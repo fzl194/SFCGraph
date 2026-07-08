@@ -1,0 +1,39 @@
+# 增加业务感知专有承载配置（ADD SADEDICBEARER）
+
+- [命令功能](#ZH-CN_CONCEPT_0182837654__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0182837654__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0182837654__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0182837654__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0182837654__1.3.5.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0182837654)
+
+**适用NF：PGW-U、UPF**
+
+该命令用于配置每一个协议或协议组是否支持SA能力触发专有承载创建，以及触发专有承载创建的模式。
+
+#### [注意事项](#ZH-CN_CONCEPT_0182837654)
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为100。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0182837654)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0182837654)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROTOCOLLEVEL | 协议等级 | 可选必选说明：必选参数<br>参数含义：该参数用于指定协议、子协议类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- PROTOCOLGROUP：协议组级别。<br>- PROTOCOL：协议级别。<br>默认值：无<br>配置原则：<br>- PROTOCOLGROUP：指定协议等级为协议组类型。<br>- PROTOCOL：指定协议等级为协议类型。 |
+| PROTOCOLNAME | 协议名称 | 可选必选说明：条件必选参数<br>前提条件：该参数在“PROTOCOLLEVEL”配置为“PROTOCOL”时为必选参数。<br>参数含义：该参数用于指定协议名称。数据源为系统支持识别的所有类型的协议、子协议。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：数据源为系统支持识别的所有类型的协议、子协议，可以通过工程命令smctrldsp protocol-list查询，或者通过ADD PROTOCOLDEFINE命令配置。 |
+| PROTGROUPNAME | 协议组名称 | 可选必选说明：条件必选参数<br>前提条件：该参数在“PROTOCOLLEVEL”配置为“PROTOCOLGROUP”时为必选参数。<br>参数含义：该参数用于指定协议组名称。数据源为系统支持识别的所有类型的协议分类。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：数据源为系统支持识别的默认协议组，可以通过工程命令smctrldsp protocol-list查询。 |
+| TRIGGERMODE | 触发专有承载模式 | 可选必选说明：必选参数<br>参数含义：该参数用于配置基于SA能力触发专有承载创建的模式。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- NOT_TRIGGER：不触发专有承载。<br>- FLOWNODE_BASED：以基于流的模式触发专有承载。<br>- DOWNLINK_ONLY：以下行链路的模式触发专有承载。<br>默认值：NOT_TRIGGER<br>配置原则：无 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0182837654)
+
+增加业务感知专有承载配置：PROTOCOLEVEL为PROTOCOLGROUP；PROTGROUPNAME为p2p；TRIGGERMODE为NOT_TRIGGER：
+
+```
+ADD SADEDICBEARER:PROTOCOLLEVEL=PROTOCOLGROUP,PROTGROUPNAME="p2p",TRIGGERMODE=NOT_TRIGGER;
+```

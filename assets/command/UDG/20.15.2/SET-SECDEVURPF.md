@@ -1,0 +1,69 @@
+---
+id: UDG@20.15.2@MMLCommand@SET SECDEVURPF
+type: MMLCommand
+name: SET SECDEVURPF（设置设备URPF）
+nf: UDG
+version: 20.15.2
+verb: SET
+object_keyword: SECDEVURPF
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 安全管理
+- 主机防攻击
+- 安全策略设备URPF
+status: active
+---
+
+# SET SECDEVURPF（设置设备URPF）
+
+## 功能
+
+该命令用来配置安全策略URPF。
+
+URPF通过获取报文的源地址和入接口，以源地址为目的地址，在转发表中查找源地址对应的接口是否与入接口匹配，如果不匹配，则认为源地址是伪装的，并丢弃该报文（松散模式URPF不会匹配入接口）。通过这种方式，URPF就能有效地防范网络中通过修改源地址而进行的恶意攻击行为的发生。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令的设定值可通过LST SECDEVURPF命令进行查询。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| SECURPFENABLE |
+| --- |
+| FALSE |
+
+- 该命令仅适用于非NP卡场景和NP卡非加速模式场景。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SECPOLICYID | 策略编号 | 可选必选说明：必选参数<br>参数含义：策略编号。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～30。<br>默认值：无<br>配置原则：需要先添加安全策略。 |
+| SECURPFENABLE | 是否允许URPF | 可选必选说明：必选参数<br>参数含义：是否允许URPF。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- TRUE：使能URPF。<br>- FALSE：去使能URPF。<br>默认值：无 |
+| SECURPFLOOSETYPE | 安全URPF检查类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“SECURPFENABLE”配置为“TRUE”时为必选参数。<br>参数含义：URPF检查类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- strict：URPF将进行严格检查，即：不但要求在转发表中存在相应表项，还要求接口一定匹配才能通过URPF检查。<br>- loose：URPF将进行松散检查，即：只要在转发表中存在表项就通过URPF检查，不要求接口一定匹配。<br>默认值：无 |
+| SECENABLEDEFAULTROUTE | 是否允许缺省路由 | 可选必选说明：条件必选参数<br>前提条件：该参数在“SECURPFLOOSETYPE”配置为“strict”时为必选参数。<br>参数含义：是否允许缺省路由。<br>数据来源：本端规划<br>取值范围：布尔类型，输入格式为“TRUE”或者“FALSE”。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@SECDEVURPF]] · 设备URPF（SECDEVURPF）
+
+## 使用实例
+
+配置安全策略URPF：
+
+```
+SET SECDEVURPF:SECPOLICYID=1,SECURPFENABLE=TRUE,SECURPFLOOSETYPE=strict,SECENABLEDEFAULTROUTE=FALSE;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/SET-SECDEVURPF.md`

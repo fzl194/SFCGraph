@@ -1,0 +1,99 @@
+---
+id: UNC@20.15.2@MMLCommand@LST LOGICINF
+type: MMLCommand
+name: LST LOGICINF（查询逻辑接口）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: LOGICINF
+command_category: 查询类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 接口管理
+- 计费和策略接口管理
+- 逻辑接口
+status: active
+---
+
+# LST LOGICINF（查询逻辑接口）
+
+## 功能
+
+**适用NF：SGW-C、PGW-C、SMF**
+
+该命令用于显示逻辑接口的相关信息。
+
+## 注意事项
+
+默认为输出所有逻辑接口配置信息；若想查看指定逻辑接口配置信息，可指定逻辑接口名称，如果输入的逻辑接口名称在系统中不存在，则查询失败。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NAME | 逻辑接口名称 | 可选必选说明：可选参数<br>参数含义：该参数用于配置逻辑接口名称，确保逻辑接口的唯一性。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：字符串形式，用户输入形式例如：gaif1/0/0。其中gaif为逻辑接口类型；1/0/0中第一个数字为组号，第二个数字为实例类型；第三个数字为逻辑接口号，各逻辑接口类型有各自的配置范围。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@LOGICINF]] · 逻辑接口（LOGICINF）
+
+## 使用实例
+
+- 显示gaif1/0/1逻辑接口信息，逻辑接口名称为gaif1/0/1：
+  ```
+  LST LOGICINF: NAME="gaif1/0/1";
+  ```
+  ```
+
+  RETCODE = 0 操作成功。
+
+  逻辑接口信息
+  ------------
+         逻辑接口名称  =  gaif1/0/1
+  逻辑接口的IPv4地址1  =  NULL
+  逻辑接口的IPv4掩码1  =  NULL
+  逻辑接口的IPv4地址2  =  NULL
+  逻辑接口的IPv4掩码2  =  NULL
+          VPN实例名称  =  vpn1
+     逻辑接口的IP版本  =  IPv6
+  逻辑接口的IPv6地址1  =  FC12::1244:2222
+          IP Suit名称  =  NULL
+        IPv6前缀长度1  =  128
+  逻辑接口的IPv6地址2  =  NULL
+        IPv6前缀长度2  =  0
+  (结果个数 = 1)
+
+  ---    END
+  ```
+- 显示所有的逻辑口信息：
+  ```
+  LST LOGICINF:;
+  ```
+  ```
+
+  RETCODE = 0 操作成功。
+
+  逻辑接口信息
+  ------------
+  逻辑接口名称  逻辑接口的IPv4地址1  逻辑接口的IPv4掩码1  逻辑接口的IPv4地址2  逻辑接口的IPv4掩码2  VPN实例名称  逻辑接口的IP版本  逻辑接口的IPv6地址1                 IP Suit名称  IPv6前缀长度1  逻辑接口的IPv6地址2  IPv6前缀长度2  
+
+  gaif1/0/1     NULL                 NULL                 NULL                 NULL                 vpn1         IPv6              FC12::1244:2222                     NULL         128            NULL                 0              
+  gxif1/0/0     NULL                 NULL                 NULL                 NULL                 vpn1         IPv6              FC12:1233:4567:9821:23:0:2561:2664  NULL         128            FC65:7890:455::125   128            
+  (结果个数 = 2)
+
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-LOGICINF.md`

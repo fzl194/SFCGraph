@@ -1,0 +1,68 @@
+---
+id: UDG@20.15.2@MMLCommand@SET CFPROTOCOLLST
+type: MMLCommand
+name: SET CFPROTOCOLLST（设置开启内容过滤的协议列表）
+nf: UDG
+version: 20.15.2
+verb: SET
+object_keyword: CFPROTOCOLLST
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 对新流生效
+is_dangerous: false
+max_records: 1
+category_path:
+- 用户面服务管理
+- 业务控制策略
+- 内容过滤
+- 内容过滤协议类型列表
+status: active
+---
+
+# SET CFPROTOCOLLST（设置开启内容过滤的协议列表）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于指定要开启内容过滤功能的特定协议列表。
+
+## 注意事项
+
+- 该命令执行后对新数据流生效。
+- 该命令最大记录数为1。
+- HTTP与WAP协议无需配置，缺省做内容过滤。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| 参数标识 | PROTOCOL |
+| --- | --- |
+| 初始值 | NULL |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROTOCOL | 内容过滤协议名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定要开启内容过滤功能的特定协议。<br>数据来源：本端规划<br>取值范围：位域类型。<br>- HTTPS：开启HTTPS协议的内容过滤功能。<br>- GOOGLE_QUIC：开启GOOGLE_QUIC协议的内容过滤功能。<br>- QUIC：开启QUIC协议的内容过滤功能。<br>默认值：无<br>配置原则：<br>- 如果运营商需要指定要开启内容过滤功能的特定协议，需要配置该参数。<br>- 若不指定该参数，默认HTTPS协议与GOOGLE_QUIC协议的报文均不做内容过滤，该参数显示为NULL。若运营商想要指定开启某一种协议的内容过滤功能，则将对应的BIT位设置为1。<br>- 若需要对明文QUIC做内容过滤，则需将SET SACOMMONPARA命令的QUICSASW置为ENABLE。<br>- 若需要对密文QUIC做内容过滤，则需加载HTTP3.0解析license，并将SET SACOMMONPARA命令的QUICIDENFUNCEN和QUICPSRFUNCEN置为ENABLE。 |
+| CFGDOMAINNAME | 配置域名称 | 可选必选说明：可选参数<br>参数含义：该参数表示命令所属公共配置域的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@CFPROTOCOLLST]] · 开启内容过滤的协议列表（CFPROTOCOLLST）
+
+## 使用实例
+
+开启HTTPS协议的内容过滤功能：
+
+```
+SET CFPROTOCOLLST: PROTOCOL=HTTPS-1&GOOGLE_QUIC-0;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/SET-CFPROTOCOLLST.md`

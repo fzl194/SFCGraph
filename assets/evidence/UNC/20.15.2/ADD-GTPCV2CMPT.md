@@ -1,0 +1,58 @@
+# 增加GTP-C V2协议兼容性(ADD GTPCV2CMPT)
+
+- [命令功能](#ZH-CN_MMLREF_0000001126305734__1.3.1.1)
+- [注意事项](#ZH-CN_MMLREF_0000001126305734__1.3.2.1)
+- [本地用户权限](#ZH-CN_MMLREF_0000001126305734__1.3.3.1)
+- [网管用户权限](#ZH-CN_MMLREF_0000001126305734__1.3.4.1)
+- [参数说明](#ZH-CN_MMLREF_0000001126305734__1.3.5.1)
+- [使用实例](#ZH-CN_MMLREF_0000001126305734__1.3.6.1)
+
+#### [命令功能](#ZH-CN_MMLREF_0000001126305734)
+
+**适用网元：SGSN、MME**
+
+该命令用于配置GTP-C V2消息是否携带特性信元以及定义相关信元格式。主要用于因 UNC 产品进行了协议升级，或对端设备对3GPP TS 29.274标准协议定义的消息和信元理解不一致而产生兼容性问题的场景。
+
+#### [注意事项](#ZH-CN_MMLREF_0000001126305734)
+
+- 此命令执行后立即生效。
+- 此命令最大记录数为512条。
+- 一般情况下，如果未配置GTP消息中是否允许携带特定的可选信元时，系统缺省按协议定义携带，特殊情况在参数描述中进行说明。
+- “消息分类”、“消息类型”和“信元类型”三个参数唯一确定一条记录。
+
+#### [本地用户权限](#ZH-CN_MMLREF_0000001126305734)
+
+manage-ug；system-ug
+
+#### [网管用户权限](#ZH-CN_MMLREF_0000001126305734)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_MMLREF_0000001126305734)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IDX | 索引 | 可选必选说明：必选参数<br>参数含义：该参数用于指定唯一标识特定的可选信元的索引。<br>数据来源：本地规划<br>取值范围：0～511<br>默认值：无 |
+| MSGCLS | 消息分类 | 可选必选说明：必选参数<br>参数含义：该参数用于指示消息分类。<br>数据来源：整网规划<br>取值范围：<br>- “PM(路径管理)”<br>- “TM(隧道管理)”<br>- “MM(移动管理)”<br>- “SV(SV接口)”<br>默认值：无<br>配置原则：系统暂时不支持<br>“PM(路径管理)”<br>。 |
+| MMMSGTYPE | 消息类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息分类为移动管理时的消息类型。<br>前提条件：当<br>“MSGCLS”<br>取值为<br>“MM(移动管理)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “FWD_RLC_REQ(Forward Relocation Request)”<br>- “CTX_RSP(Context Response)”<br>默认值：无 |
+| FWDRLCREQ | Forward Relocation Request的信元类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息类型为Forward Relocation Request时的信元类型。<br>前提条件：当<br>“MMMSGTYPE”<br>取值为<br>“FWD_RLC_REQ(Forward Relocation Request)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “SERNET(Serving Network)”：该信元标识源MME/S4 SGSN选择的服务网络。用于多HPLMN特性中将源MME/S4 SGSN选择的服务网络通知对端。<br>- “SRVCCMMCTXT（Additional MM context for SRVCC）”：源MME/S4-SGSN获取了可用的MS Classmark2，MS Classmark3 and the Supported Codec，源MME/S4-SGSN应该发送此信元到目标MME/S4-SGSN。用于目标MME/S4-SGSN获取签约数据前发起SRVCC场景。<br>- “SRVCCFLG（Additional flags for SRVCC）”：源MME/S4-SGSN获取了可用的ICS Indicator信元，源MME/S4-SGSN应该发送此信元到目标MME/S4-SGSN。用于目标MME/S4-SGSN获取签约数据前发起SRVCC场景。<br>- “STN-SR(Session Transfer Number for SRVCC)”：源MME/S4-SGSN获取了可用的Session Transfer Number for SRVCC，源MME/S4-SGSN应该发送此信元到目标MME/S4-SGSN。用于目标MME/S4-SGSN获取签约数据前发起SRVCC场景。<br>- “C-MSISDN(Correlation MSISDN)”：源MME/S4-SGSN获取了可用的Correlation MSISDN，源MME/S4-SGSN应该发送此信元到目标MME/S4-SGSN。用于目标MME/S4-SGSN获取签约数据前发起SRVCC场景。<br>- “INDICATION(Indication)”：源MME/S4-SGSN发送给目标MME/S4-SGSN的一组处理指示。用于目标MME/S4-SGSN根据标识进行处理，处理策略参见“FWDRLCREQIND”。<br>默认值：无 |
+| CTXRSP | Context Response的信元类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息类型为Context Response时的信元类型。<br>前提条件：当<br>“MMMSGTYPE”<br>取值为<br>“CTX_RSP(Context Response)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “INDICATION(Indication)”：源MME/S4-SGSN发送给目标MME/S4-SGSN的一组处理指示。用于目标MME/S4-SGSN根据标识进行处理，处理策略参见“CTXRSPIND”。<br>默认值：无 |
+| INCLUDE | 携带方式 | 可选必选说明：条件必选参数<br>参数含义：该参数用于控制在<br>UNC<br>发送的GTP-C V2消息中是否携带特定的可选信元。<br>前提条件：当<br>“FWDRLCREQ”<br>取值为<br>“SERNET(Serving Network)”<br>，<br>“SRVCCMMCTXT（Additional MM context for SRVCC）”<br>，<br>“SRVCCFLG（Additional flags for SRVCC）”<br>，<br>“STN-SR(Session Transfer Number for SRVCC)”<br>，<br>“C-MSISDN(Correlation MSISDN)”<br>其中之一时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “NOT_CARRY(不携带)”：表示UNC发出的对应消息中不会携带相关的信元。<br>- “PRO_DEFINE(按协议定义携带)”：表示UNC按照3GPP TS 29.274协议的定义决定是否在发出的对应消息中携带相关的信元。<br>- “SELF_DEFINE(按自定义携带)”：表示可以使用其他方式携带，例如消息中的某信元，要求全部大写或者小写，则就用这个自定义。UNC暂时不支持这种携带方式。<br>默认值：无 |
+| FWDRLCREQIND | Indication Bit位 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示信元类型为Indication时允许携带的比特位。<br>前提条件：当<br>“FWDRLCREQ”<br>取值为<br>“INDICATION(Indication)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>“SQCI(Subscribed QoS Change Indication)”<br>默认值：无<br>配置原则：<br>- 当SQCI被勾选时，如果签约QoS发生变更，在源MME/S4-SGSN尚未完成对UE的QoS修改流程时，eNodeB发起Handover流程，或RNC发起Relocation流程，则源MME/S4-SGSN在Forward Relocation Request消息中携带并置位该Bit位。目标MME/S4-SGSN收到该标识后，会在Handover/Relocation流程结束后再发起签约QoS修改流程，以避免签约QoS修改流程被遗漏。当SQCI未被勾选时，源MME/S4-SGSN在Forward Relocation Request消息中清除该Bit位。<br>- 由于3GPP TS 29.274协议中并未明确定义SQCI在Forward Relocation Request消息中的应用，因此如果对端设备不支持，建议不勾选SQCI。<br>- 如果未配置该参数，系统按照SQCI被勾选处理。 |
+| CTXRSPIND | Indication Bit位 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示信元类型为Indication时允许携带的比特位。<br>前提条件：当<br>“CTXRSP”<br>取值为<br>“INDICATION(Indication)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “SQCI(Subscribed QoS Change Indication)”<br>- “SRNI(SGW Restoration Needed Indication)”<br>- “CPOPCI(Control Plane Only PDN Connection Indication)”<br>- “BDWI(Buffered DL Data Waiting Indication)”<br>默认值：无<br>配置原则：<br>- 当SQCI被勾选时，如果签约QoS发生变更，在源MME/S4-SGSN尚未完成签约QoS变更引起的修改流程时，用户发起TAU/RAU流程，则源MME/S4-SGSN在Context Response消息中携带并置位该Bit位。目标MME/S4-SGSN收到该标识后，会在TAU/RAU流程结束后再发起签约QoS修改流程，以避免签约QoS修改流程被遗漏。当SQCI未被勾选时，源MME/S4-SGSN在Context Response消息中清除该Bit位。- [**SET S1SMPROCTRL**](../../../业务安全管理/会话管理/SM流程管理/S1模式SM流程控制参数/设置S1模式SM流程控制参数(SET S1SMPROCTRL)_26305504.md)命令的“ECMIDLE（ECM-IDLE状态立即发起修改流程）”参数取值为“NO(否)”时，用户空闲态下，如果签约QoS发生变更，UNC不会立即发起QoS修改流程，用户可能在空闲态下通过TAU流程迁移到其它MME上。这种场景下建议勾选SQCI。<br>- 由于3GPP TS 29.274协议并未明确定义SQCI在非ISR场景下的应用，因此如果对端设备不支持，建议不勾选SQCI。<br>- 当SRNI被勾选时，如果检测到S-GW发生故障，还未完成S-GW重选流程时，用户又发起TAU流程，则源MME在Context Response消息中携带并置位该Bit位。目标MME收到该标识后，会在TAU流程中完成S-GW重选。当SRNI未被勾选时，源MME在Context Response消息中清除该Bit位。当对端MME支持S-GW重选功能时，建议勾选SRNI，该功能与“WSFD-201203S-GW/P-GW故障下的业务恢复”特性相关。<br>- 当CPOPCI被勾选时，UE发起Inter-MME TAU流程，如果UE建立的PDN连接为CP only类型的PDN，源侧MME会在Context Response消息的PDN链接上下文中携带Indication信元，并设置CPOPCI比特位为1。<br>- 当BDWI被勾选时，UE发起Inter-MME TAU流程，如果源侧MME对UE启用了eDRX/PSM且网络侧有下行数据待发送给UE时，源侧MME在Context Response消息设置BDWI比特位为1。BDWI用于向目标侧指示网络侧有下行数据待发送，如果目标侧不支持TAU流程中建立间接转发承载，建议不勾选。<br>- 如果未配置该记录，系统按照SQCI被勾选、SRNI未被勾选、CPOPCI未被勾选、BDWI被勾选处理。 |
+| SVMSGTYPE | 消息类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息分类为SV接口时的消息类型。SV接口是MME或SGSN和MSC之间用于SRVCC的接口。<br>前提条件：当<br>“MSGCLS”<br>取值为<br>“SV(SV接口)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>“PS_TO_CS_REQ(SRVCC PS to CS Request)”<br>默认值：无 |
+| PSTOCSREQ | SRVCC PS to CS Request的信元类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息类型为SRVCC PS to CS Request时的信元类型。<br>前提条件：当<br>“SVMSGTYPE”<br>取值为<br>“PS_TO_CS_REQ(SRVCC PS to CS Request)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>“STN-SR(Session Transfer Number for SRVCC)”<br>默认值：无 |
+| STNSR | 编码方式 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示<br>UNC<br>发送的SRVCC PS to CS Request消息中STN-SR信元的编码方式，控制是否携带NANPI字段(Address and Numbering Plan Indicator)。<br>前提条件：当<br>“PSTOCSREQ”<br>取值为<br>“STN-SR(Session Transfer Number for SRVCC)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “NOT_CARRY(不携带NANPI字段)”：表示UNC发出的SRVCC PS to CS Request消息中的STN-SR信元不携带NANPI字段。<br>- “CARRY(携带NANPI字段)”：表示UNC发出的SRVCC PS to CS Request消息中的STN-SR信元携带NANPI字段。<br>默认值：无<br>说明：在3GPP TS29.280的需求变更中，修改了编码方式，STN-SR信元中增加了NANPI字段。 推荐配置为“携带NANPI字段”，如果因为对端网元没有跟进协议导致的兼容性问题，可以配置为“不携带NANPI字段”。 |
+| TMMSGTYPE | 消息类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息分类为隧道管理时的消息类型。<br>前提条件：当<br>“MSGCLS”<br>取值为<br>“TM(隧道管理)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “CRT_SES_REQ(Create Session Request)”<br>- “MOD_BR_REQ(Modify Bearer Request)”<br>默认值：无 |
+| CRTSESREQ | Create Session Request的信元类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息类型为Create Session Request时的信元类型。<br>前提条件：该参数在<br>“消息类型”<br>参数配置为<br>“Create Session Request”<br>后生效。<br>数据来源：整网规划<br>取值范围：<br>- “INDICATION(Indication)”<br>- “UPSELIND(UP Function Selection Indication Flag)”<br>默认值：无 |
+| MODBRREQ | Modify Bearer Request的信元类型 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示消息类型为Modify Bearer Request时的信元类型。<br>前提条件：当<br>“TMMSGTYPE”<br>取值为<br>“MOD_BR_REQ(Modify Bearer Request)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>“BCMOD(Bearer Contexts to be modified)”<br>默认值：无 |
+| CRTSESREQIND | Indication Bit位 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指示信元类型为Indication时允许携带的比特位。<br>前提条件：该参数在<br>“Create Session Request的信元类型”<br>参数配置为<br>“Indication”<br>后生效。<br>数据来源：整网规划<br>取值范围：<br>“CPOPCI(Control Plane Only PDN Connection Indication)”<br>默认值：无 |
+| FTEIDVALUE | F-TEID取值 | 可选必选说明：条件必选参数<br>参数含义：该参数指定Modify Bearer Request消息的Bearer Contexts to be modified信元中的S1 eNodeB F-TEID是否可以是保留值。<br>前提条件：当<br>“MODBRREQ”<br>取值为<br>“BCMOD(Bearer Contexts to be modified)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “VALID(必须为有效值)”<br>- “RESERVED(允许为保留值)”<br>默认值：无<br>配置原则：<br>- 在MME发送给S-GW的Modify Bearer Request消息中，Bearer Contexts to be modified信元是必选信元。如果在Handover等移动管理流程中，一个PDN连接的所有承载都建立失败且至少有一个PDN的无线侧承载建立成功，Bearer Contexts to be modified信元中的S1 eNodeB F-TEID子信元填写受该参数控制：- 当设置为“允许为保留值”时，F-TEID信元取值为保留值，IP地址为10.141.149.100（请参见RFC 5735），TEID取值为0。3GPP TS 29.274协议R11版本协议引入了该处理方式，如果S-GW支持，建议设置为该取值。<br>- 当设置为“必须为有效值”时，不携带F-TEID子信元，同时不携带Bearer Contexts to be modified信元。<br>- 如果没有配置该记录，系统按照“VALID(必须为有效值)”进行处理。 |
+| UPSELFLAG | UP功能选择指示 | 可选必选说明：条件必选参数<br>参数含义：该参数用来指定信元类型为UP Function Selection Indication Flag时允许携带的标志位。<br>前提条件：当<br>“Create Session Request的信元类型”<br>取值为<br>“UPSELIND(UP Function Selection Indication Flag)”<br>时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>“DCNR(Dual connectivity with NR) ”<br>默认值：无<br>配置原则：当DCNR被勾选时，如果系统支持用户DCNR接入，系统在Create Session Request消息中携带UP Function Selection Indication Flags，值为DCNR。如果对端设备不支持DCNR，建议不勾选DCNR。如果未配置该参数，系统按照DCNR被勾选处理。 |
+| RATTYPELTEM | 是否支持LTE-M类型的RAT TYPE | 可选必选说明：条件可选参数<br>参数含义：该参数用于控制在UNC发送的GTP-C V2消息中RAT TYPE信元是否支持LTE-M类型。<br>前提条件：当“MMMSGTYPE”取值为“FWD_RLC_REQ(Forward Relocation Request)”或者“CTX_RSP(Context Response)”时，该参数有效；当“TMMSGTYPE”取值为“CRT_SES_REQ(Create Session Request)”或者MOD_BR_REQ(Modify Bearer Request)时，该参数有效。<br>数据来源：整网规划<br>取值范围：<br>- “NO（不支持）”<br>- “YES（支持）”<br>默认值：“NO（不支持）”<br>说明：- 针对LTE-M类型的用户，如果该参数设置为“YES”，对应消息中的RAT TYPE信元会设置为LTE-M；否则RAT TYPE信元会设置为EUTRAN。<br>- 软参BYTE_EX_B41 BIT1用于控制是否在Forward Relocation Request、Context Response消息中携带LTE-M UE Indication信元，软参优先级高于该参数，当软参BYTE_EX_B41 BIT1设置为1时，配置MMSGTYPE取值为FWD_RLC_REQ（Forward Relocation Request）、CTX_RSP（Context Response），该参数功能不生效。<br>- 软参BYTE_EX_B41 BIT2用于控制在Create Session Request、Modify Bearer Request消息中的RAT TYPE信元是否支持LTE-M类型。软参优先级高于该参数。当软参BYTE_EX_B41 BIT2设置为1时，配置MMSGTYPE取值为CRT_SES_REQ（Create Session Request）、MOD_BR_REQ（Modify Bearer Request），该参数功能不生效。 |
+
+#### [使用实例](#ZH-CN_MMLREF_0000001126305734)
+
+加一条增加GTP-C V2协议兼容性的配置，设置消息分类为MM（移动管理），消息类型为FWD_RLC_REQ（Forward Relocation Request）的消息， 按协议定义携带Serving Network信元：
+
+ADD GTPCV2CMPT: IDX=0, MSGCLS=MM, MMMSGTYPE=FWD_RLC_REQ, FWDRLCREQ=SERNET, INCLUDE=PRO_DEFINE;

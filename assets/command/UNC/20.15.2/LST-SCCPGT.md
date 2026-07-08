@@ -1,0 +1,81 @@
+---
+id: UNC@20.15.2@MMLCommand@LST SCCPGT
+type: MMLCommand
+name: LST SCCPGT（查询SCCP全局翻译码）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: SCCPGT
+command_category: 查询类
+applicable_nf:
+- SGSN
+- MME
+- SMSF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 信令传输管理
+- SCCP管理
+- SCCP全局翻译码
+status: active
+---
+
+# LST SCCPGT（查询SCCP全局翻译码）
+
+## 功能
+
+**适用网元：SGSN、MME、SMSF**
+
+此命令用来查询SCCP全局码翻译表中指定记录的信息。
+
+## 注意事项
+
+- 未输入参数，表示查询所有记录。
+- 输入参数GT码索引、目的信令点编码、地址信息、SCCPGT名称，表示查询指定的记录。
+
+## 权限
+
+manage-ug；system-ug；monitor-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| GTX | GT码索引 | 可选必选说明：可选参数<br>参数含义：该参数用于指定SCCP全局码索引。<br>取值范围：0~4095<br>默认值：无<br>说明：此索引对应的GT记录应该在GT表中存在。 |
+| DPC | 目的信令点编码 | 可选必选说明：可选参数<br>参数含义：该参数用于指定目的信令点编码，分为24位信令点编码和14位信令点编码。<br>取值范围：长度不超过8的字符串<br>默认值：无<br>说明：- 配置的信令点编码结构需要和信令属性表中对应的有效信令网络的网络结构保持一致，输入的DPC必须在SCCP的目的信令点或本局信令点表中存在。 |
+| ADDR | 地址信息 | 可选必选说明：可选参数<br>参数含义：该参数用于指定地址信息。<br>取值范围：1～20位十进制数字<br>默认值：无 |
+| NAME | SCCP GT名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定SCCP GT名称。<br>取值范围：长度不超过32的字符串<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SCCPGT]] · SCCP全局翻译码（SCCPGT）
+
+## 使用实例
+
+查询SCCP全局翻译码中的所有记录：
+
+LST SCCPGT:;
+
+```
+%%LST SCCPGT:;%% 
+RETCODE = 0 操作成功。
+
+SCCP全局翻译码表
+---------------- 
+ GT码索引  网络指示语  翻译结果类型  GT码表示语  翻译类型  编号计划           地址性质表示语  地址信息      目的信令点编码  子系统号  新GT码索引  SCCP GT名称  编码设计 
+ 1         国内网      DPC           ITU四类     NULL      ISDN/电话编号计划  国际号码        861390211201  0x240012        NULL      NULL        noname       偶位数 
+ 123       国内网      DPC + GT      ITU四类     NULL      ISDN/电话编号计划  国际号码        8613912101    0x12101         NULL      NULL        noname       偶位数 
+ 223       国内网      DPC + GT      ITU四类     NULL      ISDN/移动编号计划  国际号码        8613912       0x12101         NULL      NULL        noname       奇位数 
+ 125       国内网      DPC + GT      ITU四类     NULL      ISDN/电话编号计划  国际号码        8613912501    0x12501         NULL      NULL        noname       偶位数 
+(结果个数 = 4)
+
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-SCCPGT.md`

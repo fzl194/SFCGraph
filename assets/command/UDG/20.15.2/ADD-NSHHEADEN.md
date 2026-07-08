@@ -1,0 +1,72 @@
+---
+id: UDG@20.15.2@MMLCommand@ADD NSHHEADEN
+type: MMLCommand
+name: ADD NSHHEADEN（增加NSH头增强）
+nf: UDG
+version: 20.15.2
+verb: ADD
+object_keyword: NSHHEADEN
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 业务控制策略
+- 头增强控制
+- NSH头增强
+- NSH参数
+status: active
+---
+
+# ADD NSHHEADEN（增加NSH头增强）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于添加NSH头增强的相关配置。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 整机最多支持1个名称的NSH头增强的实例配置。
+- 同一NSH头增强名称最多可以配置6种不同的数据类型。
+- 不同datatype对应的TAGVALUE不能重复。
+- EncryAlgori、PswdKey、PswdKeyConfirm加密相关的参数需要和对端服务器协商。
+- 如果使用NSH协议头插入功能，所有TCP和UDP协议的上行报文都需要进行NSH协议头插入处理，会对系统性能造成影响。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NSHNAME | NSH头增强名称 | 可选必选说明：必选参数<br>参数含义：该参数用于设置NSH头增强名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：无 |
+| DATATYPE | 数据类型 | 可选必选说明：必选参数<br>参数含义：该参数用于设置NSH头增强的数据类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- MSISDN1：指定插入项的类型为MSISDN。<br>- IMSI1：指定插入项的类型为IMSI。<br>- IMEI1：指定插入项的类型为IMEI。<br>- RAT1：指定插入项的类型为RAT。<br>- ULI1：指定插入项的类型为ULI。<br>- MCC_MNC1：指定插入项的类型为MCC_MNC1。<br>默认值：无<br>配置原则：无 |
+| TAGVALUE | TAG编码 | 可选必选说明：必选参数<br>参数含义：该参数用于设置NSH头增强数据类型对应的TAG编码。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～255。<br>默认值：无<br>配置原则：无 |
+| REMOVEDMCC | 需去除的移动国家码 | 可选必选说明：条件可选参数<br>前提条件：该参数在“DATATYPE”配置为“MSISDN1”时为可选参数。<br>参数含义：该参数用于指定头增强动作插入MSISDN字段需要去除的国家码信息。<br>数据来源：本端规划<br>取值范围：字符串类型，0~4位数字。<br>默认值：无<br>配置原则：该字符串为空时，代表无需去除用户的MSISDN信息中国家码。 |
+| ENCRYALGORI | 加密算法标识 | 可选必选说明：条件可选参数<br>前提条件：该参数在“DATATYPE”配置为“IMEI1”、“IMSI1”、“MCC_MNC1”、“MSISDN1”、“RAT1” 或 “ULI1”时为可选参数。<br>参数含义：该参数用于指定对携带的参数的加密方式。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- NONE：表示不进行加密，有安全风险，不建议使用。<br>- SHA256：表示加密类型为SHA256。<br>默认值：SHA256<br>配置原则：请根据需求选择相应加密算法，建议使用SHA256加密算法，当配置NONE时有安全风险，不建议使用。 |
+| PSWDKEY | 密钥 | 可选必选说明：条件必选参数<br>前提条件：该参数在“ENCRYALGORI”配置为“SHA256”时为必选参数。<br>参数含义：该参数用于设置用于参数加密算法的密钥。<br>数据来源：本端规划<br>取值范围：密钥类型，输入长度范围为1～256。不支持空格。<br>默认值：无<br>配置原则：无 |
+| PSWDKEYCONFIRM | 确认密钥 | 可选必选说明：条件必选参数<br>前提条件：该参数在“ENCRYALGORI”配置为“SHA256”时为必选参数。<br>参数含义：该参数用于确认加密算法的密钥。<br>数据来源：本端规划<br>取值范围：密钥类型，输入长度范围为1～256。不支持空格。<br>默认值：无<br>配置原则：无 |
+| CFGDOMAINNAME | 配置域名称 | 可选必选说明：可选参数<br>参数含义：该参数表示命令所属公共配置域的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@NSHHEADEN]] · NSH头增强（NSHHEADEN）
+
+## 使用实例
+
+假如运营商希望NSH头增强支持插入MSISDN，TAG编码值为1，选择SHA256加密方式，密钥为XXXXXX：
+
+```
+ADD NSHHEADEN: NSHNAME="nsh", DATATYPE=MSISDN1, TAGVALUE=1, ENCRYALGORI=SHA256, PSWDKEY="*****", PSWDKEYCONFIRM="*****";
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/ADD-NSHHEADEN.md`

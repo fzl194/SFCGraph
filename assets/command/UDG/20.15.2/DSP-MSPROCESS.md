@@ -1,0 +1,85 @@
+---
+id: UDG@20.15.2@MMLCommand@DSP MSPROCESS
+type: MMLCommand
+name: DSP MSPROCESS（显示微服务进程信息）
+nf: UDG
+version: 20.15.2
+verb: DSP
+object_keyword: MSPROCESS
+command_category: 查询类
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 可靠性管理
+- 微服务可靠性管理
+status: active
+---
+
+# DSP MSPROCESS（显示微服务进程信息）
+
+## 功能
+
+此命令用于显示微服务进程信息，如进程运行状态。
+
+> **说明**
+> 无
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROCOBJECT | 操作类型 | 可选必选说明：必选参数<br>参数含义：该参数用于表示查询进程的关键字：进程类型名或进程ID。<br>数据来源：本端规划<br>取值范围：<br>- “PROCNAME（进程类型名）”：进程类型<br>- “PROCID（进程ID）”：进程ID<br>默认值：无<br>配置原则：无 |
+| PROCNAME | 进程类型名称 | 可选必选说明：该参数在"PROCOBJECT"配置为"PROCNAME"时为条件必选参数。<br>参数含义：该参数用于表示微服务进程所属的进程类型名称。进程类型名可以通过<br>[**DSP MSPROCTYPE**](显示微服务进程类型（DSP MSPROCTYPE）_09587905.md)<br>命令查询。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~31。<br>默认值：无<br>配置原则：无 |
+| PROCID | 进程ID | 可选必选说明：该参数在"PROCOBJECT"配置为"PROCID"时为条件必选参数。<br>参数含义：该参数用于表示微服务进程ID，查询进程ID为PROCID的进程信息。<br>[**DSP MSPROCESS**](显示微服务进程信息（DSP MSPROCESS）_09587887.md)<br>命令按进程类型名查询会返回该类型的所有进程ID。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~100。<br>默认值：无<br>配置原则：无 |
+| PROCSTAT | 进程状态 | 可选必选说明：该参数在"PROCOBJECT"配置为"PROCNAME"、"PROCID"时为条件可选参数。<br>参数含义：该参数用于表示微服务进程状态，根据进程状态筛选查询结果。<br>数据来源：本端规划<br>取值范围：<br>- “Unknown（未知状态）”：进程是未知状态<br>- “Normal（正常状态）”：进程启动正常<br>- “Fault（异常状态）”：进程是故障状态<br>- “Ready（就绪状态）”：进程启动正常，并且进程内业务状态就绪<br>默认值：无<br>配置原则：无 |
+| MEID | 网元ID | 可选必选说明：该参数在"PROCOBJECT"配置为"PROCNAME"、"PROCID"时为条件可选参数。<br>参数含义：该参数用于指定网元来查询进程信息；网元ID可以通过<br>[**LST ME**](../../系统管理/版本信息/查询网元配置信息（LST ME）_47084797.md)<br>命令查询出来。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~40。<br>默认值：无<br>配置原则：<br>该参数若不输入，则表示查询所有网元下的进程。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@MSPROCESS]] · 复位微服务进程（MSPROCESS）
+
+## 使用实例
+
+- 按进程类型查询微服务进程
+  ```
+  %%DSP MSPROCESS: PROCOBJECT=PROCNAME, PROCNAME="CELL_SBIM", MEID="0";%%
+  RETCODE = 0  操作成功
+
+  结果如下
+  --------
+  进程类型名         进程ID                                           进程状态       节点ID       故障类型   故障原因     进程类型      网元ID
+
+  CELL_SBIM          sbim-pod-6649765996-2mjhb192-168-0-1__1001__0    就绪状态       192.168.1.1  0          0            1001          0
+  CELL_SBIM          sbim-pod-6649765996-dsn56192-168-0-2__1001__0    就绪状态       192.168.1.2  0          0            1001          0
+  (结果个数 = 2)
+
+  ---    END
+  ```
+- 按进程ID查询微服务进程
+  ```
+  %%DSP MSPROCESS: PROCOBJECT=PROCID, PROCID="sbim-pod-6649765996-2mjhb192-168-0-1__1001__0", MEID="0";%%
+  RETCODE = 0  操作成功
+
+  结果如下
+  --------
+  进程类型名称  =  CELL_SBIM
+        进程ID  =  sbim-pod-6649765996-2mjhb192-168-0-1__1001__0
+      进程状态  =  就绪状态
+        节点ID  =  192.168.1.1
+      故障类型  =  0
+      故障原因  =  0
+      进程类型  =  1001
+        网元ID  =  0
+  (结果个数 = 1)
+
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/DSP-MSPROCESS.md`

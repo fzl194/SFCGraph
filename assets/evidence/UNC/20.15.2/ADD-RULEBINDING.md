@@ -1,0 +1,43 @@
+# 增加用户模板和规则的绑定关系（ADD RULEBINDING）
+
+- [命令功能](#ZH-CN_CONCEPT_0209897216__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0209897216__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0209897216__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0209897216__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0209897216__1.3.5.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0209897216)
+
+**适用NF：PGW-C、SMF**
+
+该命令用于增加用户模板与规则的绑定关系，当用户数据报文可以匹配到多个规则时，需要将多个规则绑定到用户模板下。SMF给UPF下发规则时，下发用户模板即可使多个规则同时生效。
+
+#### [注意事项](#ZH-CN_CONCEPT_0209897216)
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为200000。
+- 同一ULCL类型的用户模板下最多可绑定512个规则。
+- 执行此命令前，需要先执行ADD USERPROFILE和ADD RULE命令。
+- 当UPSPECTYPE为SPECIFICATION_LIMITED时，单个用户模板最多可绑定100个规则。
+- 当UPSPECTYPE参数不指定或者指定为DEFAULT时，单个用户模板最多可绑定8000个规则，其中RULETYPE为SPECIFICATION_LIMITED的规则最多为100个。
+- ULCL类型的用户模板只能绑定ULCL类型的规则，PCC类型的用户模板可以绑定除ULCL类型以外的规则。PCC类型的用户模板，如果不指定策略类型，则把规则名称相同的所有非ULCL策略类型的规则绑定到用户模板上。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0209897216)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0209897216)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| USERPROFILENAME | 用户模板名称 | 可选必选说明：必选参数<br>参数含义：该参数用于设置用户模板名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD USERPROFILE命令配置生成。 |
+| RULENAME | 规则名称 | 可选必选说明：必选参数<br>参数含义：该参数用于设置规则名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD RULE命令配置生成。 |
+| POLICYTYPE | 策略类型 | 可选必选说明：可选参数<br>参数含义：该参数用于设置策略类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- PCC：计费与策略控制，代表该规则可以配置PCC策略，用于实现计费和策略控制功能。<br>- BWM：带宽管理，代表该规则可以配置带宽管理分类策略，其分类结果可以用于带宽管理的策略匹配功能。<br>- HEADEN：头增强，代表该规则可以配置头增强策略，可以基于配置的头增强策略向HTTP/RTSP请求报文头域中插入字段。<br>- WEBPROXY：Web Proxy，代表该规则可以配置WebProxy的IPFarm对象名称，用于设置WebProxy选择的服务器地址池。<br>- IPREDIR：IP重定向，代表该规则可以配置IP重定向的目标IP地址，支持IPv4和IPv6两种类型的IP地址。<br>- SMARTREDIRECT：Captive Portal智能重定向，代表该规则可以配置Captive Portal的IPFarm对象名称，用于设置Captive Portal选择的服务器地址池。<br>- REMARK_FPI：Remark或者FPI，代表该规则可以配置IP报文的DSCP重标记值或FPI策略。<br>- SRV_TRIGGER：Service Trigger Radius，代表该规则可以配置业务触发Radius消息交互功能标识，并配置Radius交互过程中报文处理方式。<br>- TRAFFICCLASS：Traffic Classifier，代表该规则可以配置Service Chain对象名称，用于实现业务链功能。<br>- LBO：Local Break Out，代表该规则可以用于本地业务分流。<br>- FIREWALL：防火墙，代表该规则可以配置防火墙策略。<br>- ULCL：ULCL，代表该规则可以配置ULCL策略。<br>- ADC：代表该规则用于应用检测与控制功能。<br>- QOS：代表该规则可以配置QoS策略，可以基于配置的QoS策略进行业务级QoS处理。<br>- FUP：公平使用策略，代表该规则可以配置公平使用策略。<br>- NON_SPECIFIC_TYPE：不指定具体的类型。<br>默认值：无<br>配置原则：根据部署的业务策略选择相应的策略类型。不配置此参数时值默认为参数RULENAME对应rule的策略类型。 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0209897216)
+
+假如运营商需要为用户模板增加一个规则的绑定关系，且规则需要匹配一个用户模板：
+
+```
+ADD RULEBINDING: USERPROFILENAME="userprofile",RULENAME="rule";
+```

@@ -1,0 +1,63 @@
+---
+id: UNC@20.15.2@MMLCommand@ACT SMARTFCDURA
+type: MMLCommand
+name: ACT SMARTFCDURA（激活智能流控开始特定时长）
+nf: UNC
+version: 20.15.2
+verb: ACT
+object_keyword: SMARTFCDURA
+command_category: 动作类
+applicable_nf:
+- PGW-C
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- 接入管理运维
+- 流控管理
+- 信令抑制
+status: active
+---
+
+# ACT SMARTFCDURA（激活智能流控开始特定时长）
+
+## 功能
+
+**适用NF：PGW-C**
+
+该命令用于指定智能流控功能的定时开启时长。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 只有SET OVERLOADCTRL命令中对应接口智能流控开关配置为DISABLE时，本命令才允许执行。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| INFTYPE | 接口类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定开启智能流控功能的接口类型。<br>数据来源：本端规划<br>取值范围：<br>- “GX（Gx接口）”：Gx逻辑接口。<br>- “GY（Gy接口）”：Gy逻辑接口。<br>- “GA（Ga接口）”：Ga逻辑接口。<br>- “GI_AUTH（鉴权Gi接口）”：鉴权Gi逻辑接口。<br>- “GI_ACCT（计费Gi接口）”：计费Gi逻辑接口。<br>- “DRA（DRA）”：DRA场景。<br>- “ALL（全部接口）”：全部接口。<br>默认值：无<br>配置原则：无 |
+| DURATION | 智能流控定时时长 | 可选必选说明：必选参数<br>参数含义：该参数用于指定智能流控开启时长。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~240，单位是分钟。配置为此参数时，智能流控时长会有误差，最大误差为1分钟。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SMARTFCDURA]] · 智能流控开启时长（SMARTFCDURA）
+
+## 使用实例
+
+将AAA鉴权智能流控定时时长设置为1分钟。
+
+```
+ACT SMARTFCDURA: INFTYPE=GI_AUTH, DURATION=1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ACT-SMARTFCDURA.md`

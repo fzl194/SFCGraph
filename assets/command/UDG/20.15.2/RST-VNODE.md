@@ -1,0 +1,68 @@
+---
+id: UDG@20.15.2@MMLCommand@RST VNODE
+type: MMLCommand
+name: RST VNODE（重启虚拟节点）
+nf: UDG
+version: 20.15.2
+verb: RST
+object_keyword: VNODE
+command_category: 动作类
+effect_mode: 立即生效
+is_dangerous: true
+category_path:
+- 平台服务管理
+- 单体服务平台功能管理
+- 系统管理
+- 应用编排管理
+status: active
+---
+
+# RST VNODE（重启虚拟节点）
+
+## 功能
+
+![](重启虚拟节点（RST VNODE）_59037037.assets/notice_3.0-zh-cn.png)
+
+本命令属于高危命令，操作不当会导致业务故障，请谨慎使用并联系华为技术支持协助操作。
+
+该命令用于重启VNFP或VNFC的虚拟节点。
+
+当VNFP或VNFC的虚拟节点出现故障的时候，可用本命令重启虚拟节点，尝试恢复。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 本命令属于高危命令，操作不当会导致业务故障。
+- 执行该命令，一次只能重启一个VNFP或VNFC的虚拟节点，该虚拟节点重启后会处于正常运行状态。
+- 虚拟节点重启期间，会造成业务中断；重启后，其配置数据不会丢失。
+- 该命令仅支持在虚拟机场景下复位VNFC的虚拟节点，不支持在容器场景下复位VNFC的虚拟节点。
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| VNFCNAME | VNFC实例名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定VNFP或VNFC实例名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无 |
+| VNODENAME | 虚拟节点名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定虚拟节点名称。可以通过<br>[**LST VNODE**](查询虚拟节点信息（LST VNODE）_59037562.md)<br>查看虚拟节点名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@VNODE]] · 虚拟节点信息（VNODE）
+
+## 使用实例
+
+- 重启VNFC侧指定虚拟节点，虚拟节点名称为VNODE_UGW_VNFC_OMU_0001：
+  ```
+  RST VNODE:VNFCNAME="kk",VNODENAME="VNODE_UGW_VNFC_OMU_0001";
+  ```
+- 重启VNFP侧指定虚拟节点，虚拟节点名称为IPU_A_0064：
+  ```
+  RST VNODE:VNFCNAME="VNFP",VNODENAME="IPU_A_0064";
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/RST-VNODE.md`

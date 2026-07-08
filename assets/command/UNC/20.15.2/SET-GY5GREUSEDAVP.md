@@ -1,0 +1,75 @@
+---
+id: UNC@20.15.2@MMLCommand@SET GY5GREUSEDAVP
+type: MMLCommand
+name: SET GY5GREUSEDAVP（设置5G用户接入时，Gy接口重用字段的填写方式）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: GY5GREUSEDAVP
+command_category: 配置类
+applicable_nf:
+- SMF
+- PGW-C
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费管理
+- 离线计费
+- 话单字段控制
+- 5G用户话单重用字段控制
+status: active
+---
+
+# SET GY5GREUSEDAVP（设置5G用户接入时，Gy接口重用字段的填写方式）
+
+## 功能
+
+**适用NF：SMF、PGW-C**
+
+该命令来控制Gy接口对接过程中可能产生的不兼容因素。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 该命令只做Gy接口AVP填写控制，不参与计费条件改变判断。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| RAT | ULI | ULIFIXVALUE | QOS | QOSFIXVALUE | SERVINGNODETYPE | NSAPI |
+| --- | --- | --- | --- | --- | --- | --- |
+| REALVALUE | REALVALUE | 8212f470ffff12f470ffffffff | R8QOS | 08-4807001e848000195460 | REALVALUE | REALVALUE |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RAT | 无线接入技术 | 可选必选说明：可选参数<br>参数含义：控制用户RAT为NR时，Gy接口是否支持通过rATType字段携带用户真实的RAT。当该参数取值为REALVALUE时，rATType字段取值根据SET/LST NRRATVALUE设置；当该参数取值为FIXVALUE时，rATType字段取值固定为EUTRAN(6)。<br>数据来源：本端规划<br>取值范围：<br>- REALVALUE（携带真实用户信息）<br>- FIXVALUE（携带固定用户信息）<br>- DISABLE（不携带用户信息）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST GY5GREUSEDAVP查询当前参数配置值。<br>配置原则：无 |
+| ULI | 用户位置信息 | 可选必选说明：可选参数<br>参数含义：控制用户RAT为NR时，Gy接口是否支持通过userLocationInformation字段携带用户真实的位置信息。<br>数据来源：本端规划<br>取值范围：<br>- REALVALUE（携带真实用户信息）<br>- FIXVALUE（携带固定用户信息）<br>- DISABLE（不携带用户信息）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST GY5GREUSEDAVP查询当前参数配置值。<br>配置原则：无 |
+| ULIFIXVALUE | 用户位置信息固定值 | 可选必选说明：该参数在"ULI"配置为"FIXVALUE"时为条件必选参数。<br>参数含义：设置用户RAT为NR时Gy接口中ULI需要填写的固定值。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是12~26。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST GY5GREUSEDAVP查询当前参数配置值。<br>配置原则：<br>- 配置的用户位置信息可以是TAI，或者ECGI，或是同时TAI和ECGI，格式需要符合29061定义。<br>- 前两个字符必须为“82”或“80”或“81”，标识位置类型。整个字符串长度必须为26，12，16。 |
+| QOS | QoS | 可选必选说明：可选参数<br>参数含义：控制用户RAT为NR时，Gy接口中QoS信息的携带方式。<br>数据来源：本端规划<br>取值范围：<br>- R8QOS（携带R8的QoS信息）<br>- R15QOS（携带R15的QoS信息）<br>- DISABLE（不携带）<br>- FIXVALUE（携带固定QOS信息）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST GY5GREUSEDAVP查询当前参数配置值。<br>配置原则：无 |
+| QOSFIXVALUE | QoS固定值 | 可选必选说明：该参数在"QOS"配置为"FIXVALUE"时为条件必选参数。<br>参数含义：设置用户RAT为NR时Gy接口中QoS需要填写的固定值。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度是23。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST GY5GREUSEDAVP查询当前参数配置值。<br>配置原则：<br>- 配置的用户QoS为R8格式，需要符合29061定义。<br>- 前三个字符必须为“08-”，整个字符串固定长度为23。 |
+| SERVINGNODETYPE | 服务节点类型 | 可选必选说明：可选参数<br>参数含义：控制用户RAT为NR时，Gy接口是否支持通过servingNodeType字段携带用户真实的服务节点类型。当该参数取值为FIXVALUE时，servingNodeType字段取值固定为GTPSGW(2)。<br>数据来源：本端规划<br>取值范围：<br>- REALVALUE（携带真实用户信息）<br>- FIXVALUE（携带固定用户信息）<br>- DISABLE（不携带用户信息）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST GY5GREUSEDAVP查询当前参数配置值。<br>配置原则：无 |
+| NSAPI | NSAPI | 可选必选说明：可选参数<br>参数含义：控制用户RAT为NR时，Gy接口是否支持通过3GPP-NSAPI AVP携带EPS承载ID或QFI。<br>数据来源：本端规划<br>取值范围：<br>- REALVALUE（携带真实用户信息）<br>- FIXVALUE（携带固定用户信息）<br>- DISABLE（不携带用户信息）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST GY5GREUSEDAVP查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@GY5GREUSEDAVP]] · 5G用户接入时，Gy接口重用字段的填写方式（GY5GREUSEDAVP）
+
+## 使用实例
+
+假设运营商需要支持5G用户接入，期望Gy接口通过3GPP-RAT-Type AVP携带固定的RAT EUTRAN(6)，可以执行该命令：
+
+```
+SET GY5GREUSEDAVP: RAT=FIXVALUE;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-GY5GREUSEDAVP.md`

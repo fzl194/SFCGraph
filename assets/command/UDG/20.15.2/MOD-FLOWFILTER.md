@@ -1,0 +1,64 @@
+---
+id: UDG@20.15.2@MMLCommand@MOD FLOWFILTER
+type: MMLCommand
+name: MOD FLOWFILTER（修改流过滤器）
+nf: UDG
+version: 20.15.2
+verb: MOD
+object_keyword: FLOWFILTER
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 业务匹配策略
+- 业务过滤器管理
+- 流过滤器管理
+- 流过滤器
+status: active
+---
+
+# MOD FLOWFILTER（修改流过滤器）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于修改指定FlowFilter的Tethering检测功能标识、垃圾邮件检测功能标识或计费防欺诈功能标识。通过FlowFilter下定义L34层Filter、L7层协议、L7层过滤条件等过滤条件组合来实现规则中业务流过滤条件的定义，匹配L34层过滤条件、L7层协议、L7层过滤条件均成功的业务可以命中该流过滤器。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| FLOWFILTERNAME | 流过滤器名称 | 可选必选说明：必选参数<br>参数含义：该参数用于设置流过滤器名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：无 |
+| TETHERDETFLAG | Tethering检测标识 | 可选必选说明：可选参数<br>参数含义：该参数用于设置Tethering检测功能标识。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- NONE：不检测，表示匹配该流过滤器无需检测Tethering属性，过滤器匹配时不区分是否Tethering用户。<br>- DETECT_ONLY：仅检测，表示匹配该流过滤器时Tethering用户属性不影响匹配结果，但命中该流过滤器的业务需开启Tethering检测功能。<br>- FILTER：检测并作为过滤条件，表示Tethering检测是流过滤器匹配的一个维度，业务报文只有匹配流过滤器中的过滤条件成功，且Tethering检测成功，才表示流过滤器匹配成功。<br>- NOT_FILTER：检测并作为非类型过滤条件，表示Tethering检测是流过滤器匹配的一个非类型的维度，业务报文只有匹配流过滤器中的过滤条件成功，且Tethering检测失败，才表示流过滤器匹配成功。<br>默认值：无<br>配置原则：<br>- 如果运营商不关注用户的Tethering属性，则建议配置为NONE。<br>- 如果运营商关注用户的Tethering属性，但不想应用Tethering属性作为策略执行的过滤条件，仅限于对Tethering支持业务报表功能，则建议配置为DETECT_ONLY。<br>- 如果运营商既关注用户的Tethering属性，又规划对Tethering用户执行不同的策略，需要把Tethering属性作为流过滤器的一个维度，则建议配置为FILTER。<br>- 该参数对于Tethering用户终端数量检测功能的相关业务不进行TETHERING检测控制。 |
+| FLOWFILTERTYPE | FlowFilter类型 | 可选必选说明：可选参数<br>参数含义：该参数用于设置FlowFilter类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- USERCONFIG：用户配置。<br>- EXTEROTTDB：外置OTT DB。<br>默认值：USERCONFIG<br>配置原则：<br>- 只有LST OTTFLOWFILTERNAME命令显示的流过滤器才能设置外置定义属性。<br>- 当指定该流过滤器属性为外置规则库定义，则不允许修改该属性，只允许删除该流过滤器。<br>- 同一个流过滤器组不允许绑定外置规则库定义属性不同的流过滤器。<br>- 外置规则库定义属性的流过滤器同过滤器和七层过滤器不共存。 |
+| FILTERGRPNAME | 过滤器组名称 | 可选必选说明：条件可选参数<br>前提条件：该参数在“FLOWFILTERTYPE”配置为“USERCONFIG”时为可选参数。<br>参数含义：该参数用于设置过滤器组名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无 |
+| CFGDOMAINNAME | 配置域名称 | 可选必选说明：可选参数<br>参数含义：该参数表示命令所属公共配置域的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@FLOWFILTER]] · 流过滤器（FLOWFILTER）
+
+## 使用实例
+
+假设运营商需要对Tethering用户定义不同的控制策略，在配置策略对应的流过滤器需要打开Tethering的检测和匹配功能。 修改流过滤器，指定流过滤器名称：“FLOWFILTERNAME”为“testflowfiltername”, “TETHERDETFLAG”为“FILTER”：
+
+```
+MOD FLOWFILTER:FLOWFILTERNAME="testflowfiltername",TETHERDETFLAG=FILTER;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MOD-FLOWFILTER.md`

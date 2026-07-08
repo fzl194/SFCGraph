@@ -1,0 +1,46 @@
+# 增加SMF流程控制参数（ADD SMFCAUSECTRL）
+
+- [命令功能](#ZH-CN_MMLREF_0209652124__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0209652124__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0209652124__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0209652124__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0209652124)
+
+![](增加SMF流程控制参数（ADD SMFCAUSECTRL）_09652124.assets/notice_3.0-zh-cn_2.png)
+
+配置下发的原因值可能会对终端行为产生影响，对性能指标的统计值产生影响，在配置前请联系华为技术支持工程师评估影响。
+
+**适用NF：SMF**
+
+该命令用于增加SMF流程控制参数。当用户接入SMF时，UNC可通过该命令控制SMF流程特殊场景下指定的NAS原因值下发，以满足运营商实现对现网设备兼容性特殊控制的需求。关于不同原因值的含义及对终端行为的影响请参见协议3GPP TS 24.501。
+
+## [注意事项](#ZH-CN_MMLREF_0209652124)
+
+- 该命令执行后立即生效。
+
+- 最多可输入18条记录。
+
+#### [操作用户权限](#ZH-CN_MMLREF_0209652124)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0209652124)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROCEDURETYPE | 流程类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定流程类型，要根据场景来配置相应的流程。<br>数据来源：全网规划<br>取值范围：<br>- PDU_SESSION_EST_PROC（PDU Session创建流程）<br>- PDU_SESSION_MOD_PROC（PDU Session修改流程）<br>默认值：无<br>配置原则：<br>当需要针对会话创建流程配置控制规则时，该参数设置为PDU_SESSION_EST_PROC。<br>当需要针对会话修改流程配置控制规则时，该参数设置为PDU_SESSION_MOD_PROC。 |
+| NFTYPE | 异常来源 | 可选必选说明：必选参数<br>参数含义：该参数用于描述发生异常的NF名称。<br>数据来源：全网规划<br>取值范围：<br>- UPF（UPF）<br>- CHG_3GPP（3GPP计费）<br>- POLICY_PCF（PCF策略）<br>- INNER（内部异常）<br>- RADIUS_AUTH（Radius鉴权）<br>- RADIUS_CHG（Radius计费）<br>- UDM（UDM）<br>- CHF_3GPP（3GPP CHF）<br>- INNER_EMG（紧急会话内部异常）<br>默认值：无<br>配置原则：<br>UDM网元类型仅在“流程类型”为“PDU Session创建流程”时生效。 |
+| CAUSEGROUPID | NF拒绝导致流程拒绝原因值组号 | 可选必选说明：该参数在"NFTYPE"配置为"UPF"、"CHG_3GPP"、"POLICY_PCF"、"RADIUS_AUTH"、"RADIUS_CHG"、"UDM"、"CHF_3GPP"时为条件可选参数。<br>参数含义：该参数用于设置因NF返回拒绝而导致流程拒绝时，下发给终端的NAS消息中拒绝原因值采用的映射规则。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是0~127。<br>默认值：0<br>配置原则：<br>该参数的取值必须已经由ADD SMCAUSEGRP添加。<br>建议在执行本命令之前可以先执行LST SMCAUSEGRP来确定“CAUSEGRPID”是否存在。<br>设置为0时，表示不使用特殊指定原因值。<br>如果该参数取值不为0，必须为ADD SMCAUSEGRP中已经存在的“SMCAUSEGPID”。需要在ADD SMCAUSEMAP中根据NF不同的拒绝原因值配置具体的原因值映射规则。这样就会改变此参数所控制的异常场景中下发给终端的原因值，从而导致相应拒绝类话统指标的变化。<br>不同原因值的含义及对终端行为的影响请参见协议3GPP TS 24.501原因值描述表。<br>当“NFTYPE”配置为UPF时，该参数表示对应的ADD SMCAUSEMAP命令中的“BGCAUSE”和“EDCAUSE”为N4接口原因值，参见协议3GPP TS 29.244原因值描述表。<br>当“NFTYPE”配置为POLICY_PCF时，该参数表示对应的ADD SMCAUSEMAP命令中的“BGCAUSE”和“EDCAUSE”为Npcf原因值，参见协议3GPP TS 29.500原因值描述表。<br>当“NFTYPE”配置为CHG_3GPP时，如果ADD PDUSCACT命令配置了原因值，则GTPC消息中携带的原因值以ADD PDUSCACT的设置为准，否则以本参数的对应的SMCAUSEMAP映射出的原因值为准。该参数表示对应的ADD SMCAUSEMAP命令中的“BGCAUSE”和“EDCAUSE”参数为SMF内部模块（SMC与CM）间的原因值，含义如下：<br>65： CM返回成功响应码。<br>70： CDRF内部处理异常。<br>71： GU场景切换至LTE场景时话单版本配置错误。<br>75： ACCT内部异常导致会话去激活。<br>76： ACCT模块未收到计费应答发起的会话去激活。<br>77： WAL特性AAA计费消息达到流控上限，会话去激活。<br>78： AAA计费服务器不可用时超过阈值导致激活失败的原因值。<br>79： CCA消息信元错误导致会话去激活。<br>80： OCSC内部异常。<br>81： OCS异常发起会话去激活（无响应）。<br>82： OCS通过返回码会话去激活。<br>83： OCS NO_BALANCE会话去激活。<br>84： OCS ASR发起会话去激活。<br>85： OCS holding timeout发起会话去激活。<br>86： OCS CCFH terminate会话去激活。<br>87： OCS CCFH retry&terminate会话去激活。<br>88： WAL特性在线计费消息达到流控上限，会话去激活。<br>89： 因收到OCS Command层或MSCC层的结果码为4206、4212、4301、4302、4231、4207、5003导致的会话去激活。<br>90： 激活时因收到OCS返回码为4010导致的用户去激活。<br>104：PCC holding timeout发起会话去激活。<br>105：在线计费异常返回码去导致会话去激活。<br>106：在线计费异常返回码4012导致会话去激活。<br>120：收到OCS/CHF错误的响应消息。<br>200：SMF计费模块发生自保流控。<br>299：CM等待UPF上报超时。<br>300：5G计费内部异常。<br>当“NFTYPE”配置为RADIUS_AUTH时，该参数表示对应的ADD SMCAUSEMAP命令中的“BGCAUSE”和“EDCAUSE”的原因值定义如下:<br>1：AAA鉴权返回失败。<br>2：AAA服务器无响应。<br>3：服务器故障或服务器通信异常。<br>4：发送消息时无可用接口。<br>5：APN下没有绑定Radius-server-group。<br>6：因server流控导致没有server可选。<br>7：系统错误。<br>当“NFTYPE”配置为RADIUS_CHG时，该参数表示对应的ADD SMCAUSEMAP命令中的“BGCAUSE”和“EDCAUSE”与“NFTYPE”配置为CHG_3GPP时定义的原因值定义相同。<br>当“NFTYPE”配置为UDM或者CHF_3GPP时，该参数表示对应的ADD SMCAUSEMAP命令中的“BGCAUSE”和“EDCAUSE”为Http Status Code原因值。 |
+| CAUSEEXPIRATION | 响应超时导致流程拒绝的NAS原因值 | 可选必选说明：该参数在"NFTYPE"配置为"UPF"、"CHG_3GPP"、"POLICY_PCF"、"RADIUS_AUTH"、"RADIUS_CHG"、"UDM"、"CHF_3GPP"时为条件可选参数。<br>参数含义：该参数用于设置因NF响应超时而导致流程拒绝时，下发给终端的NAS消息中的拒绝原因值。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是0~112。<br>默认值：0<br>配置原则：<br>设置为0时，表示不使用特殊指定原因值，发生该异常时系统将下发#31 Request rejected, unspecified原因值。<br>非协议定义原因值，不建议使用。<br>参数修改为非0值，会改变此参数所控制的异常场景中下发给终端的拒绝原因值，从而导致相应拒绝类话统指标的变化 。<br>不同原因值的含义及对终端行为的影响请参见协议3GPP TS 24.501原因值描述表。 |
+| CAUSEAPNLOCK | APN锁定或整机锁定导致流程拒绝的NAS原因值 | 可选必选说明：该参数在"NFTYPE"配置为"INNER"时为条件可选参数。<br>参数含义：该参数用于指示因为APN锁定或整机锁定导致PDU Session创建流程失败，发送的PDU Session Establishment Reject消息中携带的NAS原因值。<br>数据来源：本端规划<br>取值范围：<br>- SRVNOTSUPPORTED（#32 服务不支持）<br>- INSUFFRES（#26 资源不足）<br>默认值：SRVNOTSUPPORTED<br>配置原则：无 |
+| CAUSEFC | 发送消息流控导致流程拒绝的NAS原因值 | 可选必选说明：该参数在"NFTYPE"配置为"POLICY_PCF"时为条件可选参数。<br>参数含义：该参数用于指示因为发送消息流控导致PDU Session创建流程失败，发送的PDU Session Establishment Reject消息中携带的NAS原因值。<br>数据来源：本端规划<br>取值范围：<br>- REQUESTREJ（#31 请求拒绝）<br>- USERAUTHFAILED（#29 用户鉴权或认证失败）<br>- INSUFFRES（#26 资源不足）<br>默认值：REQUESTREJ<br>配置原则：<br>该参数仅在“流程类型”为“PDU Session创建流程”时生效。 |
+| CAUSEEMG | 发送消息因紧急业务配置导致流程拒绝的NAS原因值 | 可选必选说明：该参数在"NFTYPE"配置为"INNER_EMG"时为条件可选参数。<br>参数含义：该参数用于指示因为APN锁定或整机锁定导致PDU Session创建流程失败，发送的PDU Session Establishment Reject消息中携带的NAS原因值。<br>数据来源：本端规划<br>取值范围：<br>- NULL（空）<br>- OPERATOR_DETERMINED_BARRING（运营商决定的闭锁）<br>- MISSING_OR_UNKNOWN_DNN（DNN未知或缺失）<br>- UNKNOWN_PDU_SESSION_TYPE（未知的PDU会话类型）<br>- USER_AUTHENTICATION_OR_AUTHORIZATION_FAILED（用户鉴权或授权失败）<br>- REQUEST_REJECTED_UNSPECIFIED（请求被拒绝，原因未指定）<br>- SERVICE_OPTION_NOT_SUPPORTED（不支持该服务）<br>- REQUESTED_SERVICE_OPTION_NOT_SUBSCRIBED（该服务未订阅）<br>- PTI_ALREADY_IN_USE（PTI正在使用）<br>- REGULAR_DEACTIVATION（常规去激活）<br>- FIVEGS_QOS_NOT_ACCEPTED（不接受的5G QoS）<br>- NETWORK_FAILURE（网络故障）<br>- REACTIVATION_REQUESTED（请求去激活）<br>- SEMANTIC_ERROR_IN_THE_TFT_OPERATION（TFT操作中的语义错误）<br>- SYNTACTICAL_ERROR_IN_THE_TFT_OPERATION（TFT操作中的语法错误）<br>- INVALID_PDU_SESSION_IDENTITY（无效的PDU会话标识）<br>- SEMANTIC_ERRORS_IN_PACKET_FILTERS（数据包过滤器中的语义错误）<br>- SYNTACTICAL_ERROR_IN_PACKET_FILTER（数据包过滤器中的语法错误）<br>- OUT_OF_LADN_SERVICE_AREA（移出LADN服务区）<br>- PTI_MISMATCH（PTI正在使用）<br>- PDU_SESSION_TYPE_IPV4_ONLY_ALLOWED（仅允许IPV4 PDU会话）<br>- PDU_SESSION_TYPE_IPV6_ONLY_ALLOWED（仅允许IPV6 PDU会话）<br>- PDU_SESSION_TYPE_DOES_NOT_EXIST（PDU会话类型不存在）<br>- PDU_SESSION_TYPE_IPV4V6_ONLY_ALLOWED（仅允许IPV4和IPV6 PDU会话）<br>- PDU_TYPE_UNSTRUCTURED_ONLY_ALLOWED（仅允许非结构化的PDU会话）<br>- PDU_SESSION_TYPE_ETHERNET_ONLY_ALLOWED（仅允许以太网类型的PDU会话）<br>- INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN（特定切片和DNN的资源不足）<br>- INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE（特定切片资源不足）<br>- MISSING_OR_UNKNOWN_DNN_IN_A_SLICE（切片中DNN缺失或未知）<br>- INVALID_PTI_VALUE（无效的PTI值）<br>- MAX_DATA_RATE_FOR_UP_INTEGRITY_PROTECTION_TOO_LOW（用户面完整性保护单用户最大数据速率过低）<br>- SEMANTIC_ERROR_IN_THE_QOS_OPERATION（QoS操作中的语义错误）<br>- SYNTACTICAL_ERROR_IN_THE_QOS_OPERATION（QoS操作中的语法错误）<br>- INVALID_MAPPED_EPS_BEARER_IDENTITY（映射的EPS承载标识无效）<br>- SEMANTICALLY_INCORRECT_MESSAGE（消息中语义不正确）<br>- INVALID_MANDATORY_INFORMATION（必要信息无效）<br>- MESSAGE_TYPE_NONEXIST_OR_NOT_IMPLEMENTED（消息类型不存在或未实施）<br>- MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE（消息类型与协议状态不兼容）<br>- INFORMATION_ELEMENT_NONEXISTENT_OR_NOT_IMPLEMENTED（信息元素不存在或未实施）<br>- CONDITIONAL_IE_ERROR（条件信元错误）<br>- MESSAGE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE（消息与协议状态不兼容）<br>- PROTOCOL_ERROR_UNSPECIFIED（其它的协议相关错误）<br>- UNSUPPORTED_5QI_VALUE（不支持的5QI值）<br>- NOT_SUPPORTED_SSC_MODE（不支持该SSC模式）<br>- INSUFFICIENT_RESOURCES（资源不足）<br>默认值：无<br>配置原则：<br>该参数仅在“流程类型”为“PDU Session创建流程”时生效。<br>设置为NULL时，系统保持原有行为。 |
+
+## [使用实例](#ZH-CN_MMLREF_0209652124)
+
+增加PDU Session Establishment流程，UPF响应拒绝原因值映射规则，UPF响应超时导致流程拒绝原因值为#31 Request rejected:
+
+```
+ADD SMFCAUSECTRL: PROCEDURETYPE=PDU_SESSION_EST_PROC,  NFTYPE=UPF, CAUSEGROUPID=0, CAUSEEXPIRATION=31;
+```

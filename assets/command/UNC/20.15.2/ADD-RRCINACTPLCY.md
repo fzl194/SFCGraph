@@ -1,0 +1,72 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD RRCINACTPLCY
+type: MMLCommand
+name: ADD RRCINACTPLCY（增加RRC Inactive策略）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: RRCINACTPLCY
+command_category: 配置类
+applicable_nf:
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 5G接入业务管理
+- 移动性管理
+- RRC Inactive业务管理
+- RRC Inactive策略
+status: active
+---
+
+# ADD RRCINACTPLCY（增加RRC Inactive策略）
+
+## 功能
+
+**适用NF：AMF**
+
+该命令用于配置RRC Inactive功能的开启策略。开启RRC Inactive功能后，支持RRC Inactive的终端可以快速从RRC_INACTIVE状态恢复到RRC_CONNECTED状态，缩短用户接入时延。该功能依赖于终端和无线的配合，如果配合不当，可能影响被叫业务。为避免所有用户均开启RRC Inactive功能的影响过大，建议通过此命令配置针对部分用户在特定区域开启RRC Inactive功能，确定影响可控后，可通过此配置命令逐步扩大范围。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 该命令在SET NGMMFUNC中的参数“RRC Inactive功能”打开后生效。
+- IMSI起始号段和IMSI结束号段配置相同则表示一个具体的号码。
+- IMSI结束号段大于IMSI起始号段则表示一个IMSI号段区间。
+- 不同的记录中配置的IMSI号段区间不能交叉重叠。
+
+- 最多可输入20000条记录。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IMSIBEGN | IMSI起始号段 | 可选必选说明：必选参数<br>参数含义：该参数用于指定用户的IMSI起始号段。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是14~15。只允许输入十进制数字（0-9）。<br>默认值：无<br>配置原则：<br>若期望下发基于指定IMSI前缀的号段匹配策略，需要用十进制数字"0"和"9"分别补齐IMSIBEGN和IMSIEND的剩余长度。 |
+| IMSIEND | IMSI结束号段 | 可选必选说明：可选参数<br>参数含义：该参数用于指定用户的IMSI结束号段。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是14~15。只允许输入十进制数字（0-9）。<br>默认值：无<br>配置原则：<br>- 本参数表示的IMSI号段不能小于“IMSI起始号段”。<br>- IMSIEND和IMSIBEGN长度必须相同。<br>- 如果执行ADD RRCINACTPLCY，IMSIEND若不下发，则赋值为IMSIBEGN值。<br>- 如果执行MOD RRCINACTPLCY，IMSIEND若不下发，则代表不修改。<br>- 若期望下发基于指定IMSI前缀的号段匹配策略，需要用十进制数字"0"和"9"分别补齐IMSIBEGN和IMSIEND的剩余长度。 |
+| OTHERCOND | 其他RRC Inactive开启条件 | 可选必选说明：可选参数<br>参数含义：该参数用于指定开启RRC Inactive的其他条件。<br>数据来源：全网规划<br>取值范围：<br>- “VOID（无效）”：表示只基于IMSI范围控制开启RRC Inactive功能。<br>- “TAI（TAI）”：表示基于IMSI范围以及用户所在TAI区域控制开启RRC Inactive功能。<br>默认值：VOID<br>配置原则：<br>若运营商期望用户群在指定TAI开启RRC Inactive，则需要配置本参数为TAI。TAI范围使用ADD RRCINACTTAI命令配置。反之，则配置为VOID。<br>说明：不支持对同一用户群指定不同的TAI。 |
+| DESC | 描述信息 | 可选必选说明：可选参数<br>参数含义：该参数用于描述RRC Inactive使用策略，在运维中起助记作用。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~32。<br>默认值：无<br>配置原则：<br>输入单空格将删除该参数已有配置项。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@RRCINACTPLCY]] · RRC Inactive策略（RRCINACTPLCY）
+
+## 使用实例
+
+- 基于IMSI起始号段“123450000000000”，开启RRC Inactive功能，执行如下命令：
+  ```
+  ADD RRCINACTPLCY: IMSIBEGN="123450000000000", OTHERCOND=VOID;
+  ```
+- 基于前缀为“12303”的15位IMSI号段匹配策略，开启RRC Inactive功能，执行如下命令：
+  ```
+  ADD RRCINACTPLCY: IMSIBEGN="123030000000000", IMSIEND="123039999999999", OTHERCOND=VOID;
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-RRCINACTPLCY.md`

@@ -1,0 +1,74 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD OFCTEMPLATE
+type: MMLCommand
+name: ADD OFCTEMPLATE（增加离线计费模板）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: OFCTEMPLATE
+command_category: 配置类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 100
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费管理
+- 离线计费
+- 离线计费基础参数
+- 离线计费模板
+status: active
+---
+
+# ADD OFCTEMPLATE（增加离线计费模板）
+
+## 功能
+
+**适用NF：SGW-C、PGW-C、SMF**
+
+此命令用于增加离线计费模板。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为100。
+- 当前版本不支持此命令的BTIVALUE参数。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| OFCTEMPLATENAME | 离线计费模板名 | 可选必选说明：必选参数<br>参数含义：配置离线模板名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格。<br>默认值：无<br>配置原则：无 |
+| GCDRVERSION | G-CDR版本 | 可选必选说明：可选参数<br>参数含义：G-CDR版本。<br>数据来源：对端协商<br>取值范围：枚举类型。<br>- R98_CMCCV130：指定为是一种国内运营商规范，遵循CMCCV130协议版本。<br>- R98V760：指定为是一种国内运营商规范，遵循GSMV760协议版本。<br>- R99V390：指定为遵循TS 32.015 v390版本，2002年3月份发布。<br>- R99V3A0：指定为遵循TS 32.015 v3a0版本，2003年1月份发布。<br>- R4V440：指定为遵循TS 32.251 v440版本，2003年1月份发布。<br>- R5V560：指定为遵循TS 32.251 v560版本，2004年6月份发布。<br>- R6V660_GCDR：指定为遵循TS 32.298 v660版本，2006年12月份发布。<br>- R6V660_EGCDR：指定为遵循TS 32.298 v660版本，2006年12月份发布。<br>- R7V740_GCDR：指定为遵循TS 32.298 v740版本，2007年10月份发布。<br>- R7V740_EGCDR：指定为遵循TS 32.298 v740版本，2007年10月份发布。UNC做GGSN形态时，产生的话单版本默认值是r7v740egcdr。<br>- R8V850_PGW_CDR：指定为遵循TS 32.298 v850版本，2009年6月份发布。用于支持UNC角色从GGSN切换到PGW时，话单版本可平滑切换。<br>- R9V950_PGW_CDR：指定为遵循TS 32.298 v950版本，2010年10月份发布。用于支持UNC角色从GGSN切换到PGW时，话单版本可平滑切换。<br>- R10_PGW_CDR：指定为遵循2011年12月份的R10协议版本。用于支持UNC1角色从GGSN切换到PGW时，话单版本可平滑切换。<br>默认值：R7V740_EGCDR<br>配置原则：无 |
+| PGWCDRVERSION | PGW-CDR版本 | 可选必选说明：可选参数<br>参数含义：P-CDR版本。<br>数据来源：对端协商<br>取值范围：枚举类型。<br>- R8V850_PGW_CDR：指定为遵循TS 32.298 v850版本，2009年6月份发布。用于支持UNC角色从GGSN切换到PGW时，话单版本可平滑切换。<br>- R9V950_PGW_CDR：指定为遵循TS 32.298 v950版本，2010年10月份发布。用于支持UNC角色从GGSN切换到PGW时，话单版本可平滑切换。<br>- R10_PGW_CDR：指定为遵循2011年12月份的R10协议版本。用于支持UNC角色从GGSN切换到PGW时，话单版本可平滑切换。<br>默认值：R8V850_PGW_CDR<br>配置原则：无 |
+| SGWCDRVERSION | SGW-CDR版本 | 可选必选说明：可选参数<br>参数含义：SGW-CDR版本，UNC做SGW或合一形态（SGW+PGW）时，SGW产生的话单版本。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- R8V850_SGW_CDR：指定为遵循TS 32.298 v850版本，2009年6月份发布。UNC做SGW或合一形态（SGW+PGW）时，SGW产生的话单版本默认值是r8v850sgwcdr。<br>- R9V950_SGW_CDR：指定为遵循TS 32.298 v950版本，2010年10月份发布。UNC做SGW或合一形态（SGW+PGW）时，SGW产生的话单版本。<br>- R10_SGW_CDR：指定为遵循2011年12月份的R10协议版本。<br>默认值：R8V850_SGW_CDR<br>配置原则：无 |
+| RECORDSEQNUMBER | Record Sequence Number字段起始值 | 可选必选说明：可选参数<br>参数含义：Record Sequence Number字段起始值。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～1。1、0表示CDR话单中Record Sequence Number字段的起始值为0。 2、1表示CDR话单中Record Sequence Number字段的起始值为1。<br>默认值：0<br>配置原则：无 |
+| TQM | 时长配额机制 | 可选必选说明：可选参数<br>参数含义：时长配额机制。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- CTP：表示支持ctp(CONTINUOUS_TIME_PERIOD)计费方式。<br>- QCT：用来指定支持qct(QUOTA_CONSUME_TIME)计费方式。<br>- OPERATOR_CTP：表示支持operator-ctp(Operator_CONTINUOUS_TIME_PERIOD)计费方式即用户自定义的CTP计费方式。<br>默认值：QCT<br>配置原则：当前版本不支持CTP计费。 |
+| QCTVALUE | QCT时长（秒） | 可选必选说明：条件必选参数<br>前提条件：该参数在“TQM”配置为“QCT”时为必选参数。<br>参数含义：QCT时长。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～200，单位是秒。<br>默认值：0<br>配置原则：无 |
+| BTIVALUE | BTI时长（秒） | 可选必选说明：条件必选参数<br>前提条件：该参数在“TQM”配置为“CTP” 或 “OPERATOR_CTP”时为必选参数。<br>参数含义：BTI时长。用来指定支持time-quota-mechanism计费统计方式中的ctp、dtp、operator-ctp时的Base-Time-Interval时长。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为60～86400，单位是秒。<br>默认值：60<br>配置原则：无 |
+| QHTVALUE | QHT时长（秒） | 可选必选说明：可选参数<br>参数含义：QHT时长。用于指定QHT(QUOTA_HOLDING_TIME)时间。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～3600，单位是秒。<br>默认值：0<br>配置原则：无 |
+| CDRTIMEFORMAT | 话单时间格式 | 可选必选说明：可选参数<br>参数含义：话单时间格式。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- LOCAL_TIME：指定话单中的时间格式为localtime。 localtime表示本地时间，是指根据时区或者当地的夏令时规定而设置的时间。<br>- UTC：指定话单中的时间格式为utc，utc表示（Universal Time Coordinated）世界协调时间，时区的改变以及夏令时的实施都不会改变UTC时间。<br>默认值：LOCAL_TIME<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@OFCTEMPLATE]] · 离线计费模板（OFCTEMPLATE）
+
+## 使用实例
+
+要增加一个OFCTemplate的实例：模板名称为“ofc_test”，GCDRVersion为“R98V760”，PGWCDRVersion为“R9V950”，SGWCDRVersion为“R10_SGW_CDR”，TQM为“QCT”，QCTValue的值为197：
+
+```
+ADD OFCTEMPLATE:OFCTEMPLATENAME="ofc_test",GCDRVERSION=R98V760,PGWCDRVERSION=R9V950_PGW_CDR,SGWCDRVERSION=R10_SGW_CDR,TQM=QCT,QCTVALUE=197;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-OFCTEMPLATE.md`

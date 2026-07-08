@@ -1,0 +1,65 @@
+---
+id: UNC@20.15.2@MMLCommand@SWP CELLSERVICE
+type: MMLCommand
+name: SWP CELLSERVICE（微服务主备实例倒换）
+nf: UNC
+version: 20.15.2
+verb: SWP
+object_keyword: CELLSERVICE
+command_category: 动作类
+effect_mode: 立即生效
+is_dangerous: true
+category_path:
+- 平台服务管理
+- 可靠性管理
+- 微服务可靠性管理
+status: active
+---
+
+# SWP CELLSERVICE（微服务主备实例倒换）
+
+## 功能
+
+![](微服务主备实例倒换（SWP CELLSERVICE）_84680846.assets/notice_3.0-zh-cn_2.png)
+
+本命令属于高危命令，操作不当会导致业务故障，请谨慎使用并联系华为技术支持协助操作。
+
+多实例主备部署的微服务，当微服务主实例发生异常时，手动执行该命令实现微服务主备实例倒换。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 执行该命令可能会造成业务的短时中断。
+- 执行完该命令后，建议执行[**DSP MSSWPREC**](显示微服务主实例切换历史记录（DSP MSSWPREC）_63033396.md)命令观察微服务主备实例倒换是否成功。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SERVICENAME | 微服务名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定需要进行主备倒换的微服务名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~64。<br>默认值：无<br>配置原则：<br>可通过<br>[**DSP MSACTIVE**](显示服务主实例相关信息（DSP MSACTIVE）_88183810.md)<br>命令获取返回结果中的“服务名称”作为参数输入。 |
+| OPTION | 微服务可选项 | 可选必选说明：可选参数<br>参数含义：该参数用于表示微服务的可选项。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~1024。<br>默认值：无<br>配置原则：<br>可通过<br>[**DSP MSACTIVE**](显示服务主实例相关信息（DSP MSACTIVE）_88183810.md)<br>命令获取返回结果中的“可选项”作为参数输入。如果“可选项”显示为“NULL”，则不填写该参数。 |
+| GROUPID | 微服务组 | 可选必选说明：可选参数<br>参数含义：该参数用于表示微服务组。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~128。<br>默认值：999<br>配置原则：<br>可通过<br>[**DSP MSACTIVE**](显示服务主实例相关信息（DSP MSACTIVE）_88183810.md)<br>命令获取返回结果中的“服务组ID”作为参数输入。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@CELLSERVICE]] · 微服务主备实例倒换（CELLSERVICE）
+
+## 使用实例
+
+指定微服务名称进行主备实例倒换。
+
+```
+%%SWP CELLSERVICE: SERVICENAME="TICK";%%
+RETCODE = 0  操作成功
+
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SWP-CELLSERVICE.md`

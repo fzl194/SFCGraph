@@ -1,0 +1,68 @@
+---
+id: UDG@20.15.2@MMLCommand@MOD TCPMSS
+type: MMLCommand
+name: MOD TCPMSS（修改Tcp Mss配置）
+nf: UDG
+version: 20.15.2
+verb: MOD
+object_keyword: TCPMSS
+command_category: 配置类
+applicable_nf:
+- SGW-U
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: true
+category_path:
+- 用户面服务管理
+- 业务控制策略
+- 传输层控制
+- TCP MSS
+status: active
+---
+
+# MOD TCPMSS（修改Tcp Mss配置）
+
+## 功能
+
+**适用NF：SGW-U、PGW-U、UPF**
+
+![](修改Tcp Mss配置（MOD TCPMSS）_82837695.assets/notice_3.0-zh-cn.png)
+
+本命令属于高危命令，该配置影响传输的TCP报文长度，请确认修改参数值合理。
+
+该命令用于基于用户归属类型修改指定APN的TCP MSS值。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 执行该命令修改V4TCPMSSVALUE/V6TCPMSSVALUE时，请参考参数配置建议。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN名称 | 可选必选说明：必选参数<br>参数含义：该参数用于表示APN的名字。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围为1～63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”等特殊字符，不区分大小写。<br>默认值：无<br>配置原则：无 |
+| ROAMINGTYPE | 用户漫游类型 | 可选必选说明：必选参数<br>参数含义：该参数用于配置用户归属的属性。<br>数据来源：本端规划<br>取值范围：位域类型。<br>- HOME：表示本地用户。<br>- ROAMING：表示漫游用户。<br>- VISITING：表示拜访用户。<br>默认值：无<br>配置原则：<br>- SELECT ALL：表示HOME，ROAMING，VISITING 3种类型都选择。<br>- CLEAR ALL：表示HOME，ROAMING，VISITING 3种类型都不选择。<br>- GREYED ALL：表示HOME，ROAMING，VISITING 3种类型都置灰，都不选择，并保持参数的原始值。<br>- 当选择参数类型后，参数类型后的-1代表使能这个参数，-0代表不使能这个参数。 |
+| V4TCPMSSVALUE | IPv4 TCP报文长度（字节） | 可选必选说明：可选参数<br>参数含义：该参数用于表示对端能接收的最大报文段长度，用于IPv4用户。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为496～1500，单位是字节。<br>默认值：无<br>配置原则：MSS值一般设置为外出接口上MTU的长度减去固定的IP首部和TCP首部的长度。推荐值为1380。 |
+| V6TCPMSSVALUE | IPv6 TCP报文长度（字节） | 可选必选说明：可选参数<br>参数含义：该参数用于表示对端能接收的最大报文段长度， 用于IPv6用户。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为496～1500，单位是字节。<br>默认值：无<br>配置原则：MSS值一般设置为外出接口上MTU的长度减去固定的IP首部和TCP首部的长度。推荐值为1300。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@TCPMSS]] · Tcp Mss配置（TCPMSS）
+
+## 使用实例
+
+如果已经对apn apn1.com基于漫游用户配置了TCP MSS，后来又需要对TCP MSS值进行修改，可以使用MOD TCPMSS命令。下面的例子，把apn apn1.com漫游用户的IPv4和IPv6的TCP MSS值分别修改为1200和1300：
+
+```
+MOD TCPMSS: APN="apn1.com", ROAMINGTYPE=ROAMING-1, V4TCPMSSVALUE=1200, V6TCPMSSVALUE=1300;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MOD-TCPMSS.md`

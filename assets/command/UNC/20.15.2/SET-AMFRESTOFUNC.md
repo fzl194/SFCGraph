@@ -1,0 +1,71 @@
+---
+id: UNC@20.15.2@MMLCommand@SET AMFRESTOFUNC
+type: MMLCommand
+name: SET AMFRESTOFUNC（设置AMF热备容灾）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: AMFRESTOFUNC
+command_category: 配置类
+applicable_nf:
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 5G接入业务管理
+- 移动性管理
+- AMF热备容灾管理
+status: active
+---
+
+# SET AMFRESTOFUNC（设置AMF热备容灾）
+
+## 功能
+
+**适用NF：AMF**
+
+该命令用于设置AMF热备容灾功能的运行模式及相关参数。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 此配置涉及AMF数据热备容灾功能，执行本命令前请使用DSP LICENSERES命令确认是否已购买该功能（License资源项：LKV2AMGHBR01）。
+- 未按规范顺序配置可能导致热备功能异常。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| RESTORMODE | CHECKSCOPE | RAMFRSV | BACKUPTYPE |
+| --- | --- | --- | --- |
+| DISABLED | 5 | YES | ALL |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RESTORMODE | 运行模式 | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否启用AMF热备容灾。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLED（关闭）”：AMF热备容灾功能关闭。<br>- “RUNNING（运行）”：AMF热备容灾功能开启。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST AMFRESTOFUNC查询当前参数配置值。<br>配置原则：<br>当本参数由“RUNNING（运行）”修改为“DISABLED（关闭）”时，请分别执行RMV DRCOMM和RMV DRINST命令，删除容灾实例地址和容灾实例，以避免出现容灾上下文的残留。 |
+| CHECKSCOPE | 容灾用户上下文合法性校验范围 | 可选必选说明：可选参数<br>参数含义：该参数用于指定备份用户上下文的NAS COUNT消息校验阈值。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~10。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST AMFRESTOFUNC查询当前参数配置值。<br>配置原则：<br>- 假设容灾用户上下文中Uplink NAS Count值为A，N2接口上上行NAS消息携带的Uplink NAS Count值为B，X为本参数设定值，当[A+1]<=B<=[A+1+X]时，NAS Count合法性校验通过，容灾用户上下文有效，容灾AMF根据该上下文处理相关的业务流程；否则，容灾用户上下文失步，用户需要重新执行Initial Registration业务流程才能恢复业务。<br>- 容灾用户上下文是否失步与AMF之间的数据备份通道传输质量、故障状态等相关。本参数的取值越小，检验越严格，判断容灾用户上下文失步的比例越高；本参数的取值越大，校验越宽松，判断容灾用户上下文失步的比例越低。 |
+| RAMFRSV | 延迟删除UE Context | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否延迟删除UE Context。<br>取值为YES时，原AMF故障后，容灾AMF接替原AMF为UE提供服务。如果这时UE因为4G/5G互操作流程离开5G网络到4G网络，容灾AMF作为Old AMF完成相关业务流程后，保留UE Context。<br>取值为NO时，上述场景下业务流程结束后，相关的UE Context会被系统删除。<br>数据来源：本端规划<br>取值范围：<br>- “YES（是）”：是<br>- “NO（否）”：否<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST AMFRESTOFUNC查询当前参数配置值。<br>配置原则：<br>如果网络部署中，UE是通过Registration Update流程从4G网络返回5G网络时，则建议配置为YES。这时UE在Registration Request消息中会携带原5G-GUTI，如果AMF Set中仍然保留了该5G-GUTI对应的原UE Context，当原AMF故障恢复后，该UE的业务会被NG-RAN根据原5G-GUTI路由回原AMF进行处理，保证原AMF的故障恢复后其业务量尽快恢复均衡。 |
+| BACKUPTYPE | 备份类型 | 可选必选说明：可选参数<br>参数含义：该参数用于设置AMF热备容灾的备份类型。<br>数据来源：全网规划<br>取值范围：<br>- “ALL（全量备份）”：对全量用户的数据进行备份。<br>- “SPECIAL_FEATURE（指定特征备份）”：对指定特征用户的数据进行备份。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST AMFRESTOFUNC查询当前参数配置值。<br>配置原则：无 |
+| BINDINGSW | Binding头域携带策略 | 可选必选说明：可选参数<br>参数含义：该参数用于指定AMF和对端NF（SMF/UDM/PCF/SMSF）交互时，是否在3gpp-Sbi-Binding头域中携带备用AMF信息。<br>数据来源：全网规划<br>取值范围：<br>- “UDM（UDM）”：AMF和UDM交互时在业务消息3gpp-Sbi-Binding头域中携带备用AMF信息。<br>- “SMF（SMF）”：AMF和SMF交互时在业务消息3gpp-Sbi-Binding头域中携带备用AMF信息。<br>- “PCF（PCF）”：AMF和PCF交互时在业务消息3gpp-Sbi-Binding头域中携带备用AMF信息。<br>- “SMSF（SMSF）”：AMF和SMSF交互时在业务消息3gpp-Sbi-Binding头域中携带备用AMF信息。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST AMFRESTOFUNC查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@AMFRESTOFUNC]] · AMF热备容灾（AMFRESTOFUNC）
+
+## 使用实例
+
+设置AMF热备容灾，运行模式为DISABLED，容灾用户上下文合法性校验范围为5，延迟删除UE Context为YES，执行如下命令：
+
+```
+SET AMFRESTOFUNC: RESTORMODE=DISABLED, CHECKSCOPE=5, RAMFRSV=YES, BACKUPTYPE=ALL;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-AMFRESTOFUNC.md`

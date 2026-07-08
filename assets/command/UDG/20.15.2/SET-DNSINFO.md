@@ -1,0 +1,82 @@
+---
+id: UDG@20.15.2@MMLCommand@SET DNSINFO
+type: MMLCommand
+name: SET DNSINFO（设置DNS信息）
+nf: UDG
+version: 20.15.2
+verb: SET
+object_keyword: DNSINFO
+command_category: 配置类
+applicable_nf:
+- CloudEPSN
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- SFIP管理
+- 第三方应用管理
+- DNS公共配置管理
+status: active
+---
+
+# SET DNSINFO（设置DNS信息）
+
+## 功能
+
+**适用NF：CloudEPSN**
+
+该命令用于同步DNS运维界面上具有API权限和管理员权限的用户名、密码以及配置模板名称。执行命令之前，首先需要在DNS运维界面创建具有API和管理员权限的用户，增加配置模板信息，然后才可以执行该命令进行用户、密码、配置模板信息同步。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 在执行命令前，首先需要在DNS运维界面配置具有API权限和管理员权限的用户，添加配置模板信息，然后才可以执行该命令进行用户、密码、配置模板信息同步。
+- 当DNS运维界面配置的API用户名和密码发生更改，需要重新执行该命令，同步新的用户名、密码信息。
+- 当DNS运维界面上的配置模板名称发生更改，需要重新执行该命令，同步新的配置模板名称。
+- 在DNS运维界面配置用户名时，用户名的长度为1~255个字符，避免输入分号、逗号、等号、双引号、单引号、连续多个空格、首位是空格、末位是空格。
+- 在DNS运维界面配置用户的密码时，密码的长度为8~63个字符。
+- 在DNS运维界面添加配置模板名称时，配置模板名称的长度为1~255个字符，避免输入分号、逗号、等号、双引号、单引号、连续多个空格、首位是空格、末位是空格。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SELECT | 选择信息类型 | 可选必选说明：必选参数<br>参数含义：该参数表示选择本次配置的内容。<br>数据来源：本端规划<br>取值范围：在枚举类型中选择。<br>- CONFIGURATION：配置模板。<br>- AUTHINFO：BAM认证信息。<br>- ALL：全部。<br>默认值：ALL<br>配置原则：<br>- 同步所有DNS信息：首次使用MML命令之前，需要先同步DNS运维界面用户名和密码、DNS的配置模板名称。<br>- 同步登录DNS运维界面的用户名和密码：当登录DNS运维界面的用户名或密码发生了修改，需要同步修改后的用户名和密码信息。<br>- 同步DNS配置模板名称：当DNS配置模板名称发生了改变，需要同步更改后的配置模板名称。 |
+| CONFIGURATION | 配置模板 | 可选必选说明：条件必选参数<br>前提条件：该参数在“SELECT”配置为“CONFIGURATION” 或 “ALL”时为必选参数。<br>参数含义：该参数表示配置模板名称。<br>数据来源：本端规划<br>取值范围：1~255位字符。<br>默认值：无<br>配置原则：该参数取值必须和当前配置模板保持一致。 |
+| USERNAME | 用户名 | 可选必选说明：条件必选参数<br>前提条件：该参数在“SELECT”配置为“AUTHINFO” 或 “ALL”时为必选参数。<br>参数含义：该参数表示DNS运维界面上具有API权限和管理员权限的用户名。<br>数据来源：本端规划<br>取值范围：1~255位字符。<br>默认值：无<br>配置原则：该参数必须和DNS运维界面上具有API权限和管理员权限的用户名称保持一致。 |
+| PASSWORD | 密码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“SELECT”配置为“AUTHINFO” 或 “ALL”时为必选参数。<br>参数含义：该参数表示DNS运维界面上具有API权限和管理员权限的用户密码。<br>数据来源：本端规划<br>取值范围：8~63位字符。<br>默认值：无<br>配置原则：该参数必须和DNS运维界面上具有API权限和管理员权限的用户密码保持一致。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@DNSINFO]] · DNS信息（DNSINFO）
+
+## 使用实例
+
+- 设置登录BAM的用户和密码信息、配置模板名称信息：
+  ```
+  %%SET DNSINFO: SELECT=ALL, CONFIGURATION="config_provA", USERNAME="scale", PASSWORD="*****";%%
+  RETCODE = 0  操作成功
+
+  ---    END
+  ```
+- 设置登录BAM的用户和密码信息：
+  ```
+  %%SET DNSINFO: SELECT=AUTHINFO, USERNAME="scale", PASSWORD="*****";%%
+  RETCODE = 0  操作成功
+
+  ---    END
+  ```
+- 设置配置模板名称：
+  ```
+  %%SET DNSINFO: SELECT=CONFIGURATION, CONFIGURATION="config_provA";%%
+  RETCODE = 0  操作成功
+
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/SET-DNSINFO.md`

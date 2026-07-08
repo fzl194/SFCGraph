@@ -1,0 +1,70 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV SRROUTE
+type: MMLCommand
+name: RMV SRROUTE（删除IPv4静态路由）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: SRROUTE
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 路由管理
+- 静态路由管理
+- IPv4静态路由
+status: active
+---
+
+# RMV SRROUTE（删除IPv4静态路由）
+
+## 功能
+
+该命令用于删除IPv4静态路由。
+
+静态路由是一种需要管理员手工配置的特殊路由。
+
+当网络结构比较简单时，只需配置静态路由就可以使网络正常工作。当设备不能使用动态路由协议或者不能建立到达目的网络时，也可以使用静态路由。合理的静态路由可以改进网络性能，并为重要业务保证带宽。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 删除该静态路由时，要保证该路由添加过。
+- 删除静态路由，可能会导致业务流量中断。
+- 不能在VPN实例__mpp_vpn_inner__和__mpp_vpn_inner_server__下删除默认静态路由。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| AFTYPE | 地址族 | 可选必选说明：必选参数<br>参数含义：该参数用来指定VPN实例的地址族信息。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- ipv4unicast：IPv4单播。<br>默认值：无 |
+| PREFIX | 路由前缀 | 可选必选说明：必选参数<br>参数含义：该参数用来指定前缀信息。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无 |
+| MASKLENGTH | 路由掩码长度 | 可选必选说明：必选参数<br>参数含义：该参数用来指定掩码长度。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～32。<br>默认值：无 |
+| VRFNAME | VPN实例名称 | 可选必选说明：可选参数<br>参数含义：该参数用来指定VPN实例的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：_public_<br>配置原则：<br>- 不配置时默认为_public_。<br>- _public_表示公网。 |
+| DESTVRFNAME | 下一跳VPN名字 | 可选必选说明：可选参数<br>参数含义：该参数用来指定路由的下一跳所属VPN实例的名字。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：该参数不输入的情况下，如果没有配置出接口，参数值默认和VRFNAME一致；如果配置了出接口，参数值默认和出接口所属VPN一致。 |
+| IFNAME | 路由出接口名字 | 可选必选说明：可选参数<br>参数含义：该参数用来指定路由的出接口名字。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：<br>- 不配置时默认为Invalid0，不区分大小写。<br>- 请使用LST INTERFACE命令查看可用接口。 |
+| NEXTHOP | 路由下一跳 | 可选必选说明：可选参数<br>参数含义：该参数用来指定下一跳IP地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无<br>配置原则：如果接口类型为广播接口类型，NEXTHOP必须要输入；如果接口类型为非广播接口类型，NEXTHOP可以不输入。 |
+| DHCPENABLE | DHCP使能标识 | 可选必选说明：可选参数<br>参数含义：该参数用于指定DHCP使能标志。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- FALSE：否。<br>- TRUE：是。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SRROUTE]] · IPv4静态路由（SRROUTE）
+
+## 使用实例
+
+删除一条目的地址为10.0.0.1，掩码为32，下一跳是10.0.0.3，出接口是NULL0口的公网IPv4静态路由：
+
+```
+RMV SRROUTE:AFTYPE=ipv4unicast,PREFIX="10.0.0.1",MASKLENGTH=32,VRFNAME="_public_",DESTVRFNAME="_public_",IFNAME="NULL0",NEXTHOP="10.0.0.3";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-SRROUTE.md`

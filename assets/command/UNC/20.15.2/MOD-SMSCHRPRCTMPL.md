@@ -1,0 +1,58 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD SMSCHRPRCTMPL
+type: MMLCommand
+name: MOD SMSCHRPRCTMPL（修改SMS CHR流程控制模板）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: SMSCHRPRCTMPL
+command_category: 配置类
+applicable_nf:
+- SMSF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- SMSF业务管理
+- CHR管理
+status: active
+---
+
+# MOD SMSCHRPRCTMPL（修改SMS CHR流程控制模板）
+
+## 功能
+
+**适用NF：SMSF**
+
+该命令用于修改SMS CHR流程控制模板，用以控制CHR的采集流程。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TMPLIDX | 流程控制模板索引 | 可选必选说明：必选参数<br>参数含义：该参数用于表示流程控制模板索引。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~127。<br>默认值：无<br>配置原则：无 |
+| SMSCHRFAILPRC | SMS CHR失败流程上报选项 | 可选必选说明：可选参数<br>参数含义：该参数用于表示SMS CHR失败流程上报选项。<br>数据来源：本端规划<br>取值范围：<br>- “OTHER（其他流程需要上报CHR单据）”：表示其他流程需要上报CHR单据。<br>- “SMSFREG（5G注册流程需要上报CHR单据）”：表示5G注册流程需要上报CHR单据。<br>- “SMSFDEREG（5G去注册流程需要上报CHR单据）”：表示5G去注册流程需要上报CHR单据。<br>- “SMSFMO（5G MO流程需要上报CHR单据）”：表示5G MO流程需要上报CHR单据。<br>- “SMSFMT（5G MT流程需要上报CHR单据）”：表示5G MT流程需要上报CHR单据。<br>- “VLRLUR（4G位置更新流程需要上报CHR单据）”：表示4G位置更新流程需要上报CHR单据。<br>- “VLRDETACH（4G去注册流程需要上报CHR单据）”：表示4G去注册流程需要上报CHR单据。<br>- “VLRMO（4G MO流程需要上报CHR单据）”：表示4G MO流程需要上报CHR单据。<br>- “VLRMT（4G MT流程需要上报CHR单据）”：表示4G MT流程需要上报CHR单据。<br>- “VLRALERT（4G用户可达通知流程需要上报CHR单据）”：表示4G用户可达通知流程需要上报CHR单据。<br>默认值：OTHER-1&SMSFREG-1&SMSFDEREG-1&SMSFMO-1&SMSFMT-1&VLRLUR-1&VLRDETACH-1&VLRMO-1&VLRMT-1&VLRALERT-1<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SMSCHRPRCTMPL]] · SMS CHR流程控制模板（SMSCHRPRCTMPL）
+
+## 使用实例
+
+运营商希望修改“流程控制模板索引”为“1”的SMS CHR流程控制模板的“短信CHR失败流程上报选项”为“其他流程需要上报CHR单据”，执行如下命令：
+
+```
+MOD SMSCHRPRCTMPL: TMPLIDX=1, SMSCHRFAILPRC=OTHER-1&SMSFREG-0&SMSFDEREG-0&SMSFMO-0&SMSFMT-0&VLRLUR-0&VLRDETACH-0&VLRMO-0&VLRMT-0&VLRALERT-0;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-SMSCHRPRCTMPL.md`

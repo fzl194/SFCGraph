@@ -1,0 +1,69 @@
+---
+id: UNC@20.15.2@MMLCommand@SET NFSELPLCY
+type: MMLCommand
+name: SET NFSELPLCY（设置目标NF选择策略）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: NFSELPLCY
+command_category: 配置类
+applicable_nf:
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 5G接入业务管理
+- 移动性管理
+- NF发现和选择管理
+- 目标NF选择策略管理
+status: active
+---
+
+# SET NFSELPLCY（设置目标NF选择策略）
+
+## 功能
+
+**适用NF：AMF**
+
+该命令用于设置AMF在发现和选择其它目标NF时的设备级可选参数控制策略。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| TGTNFTYPE | REQNSSW | LMFCTTYPE | GMLCCTTYPE | HRREQNSSW |
+| --- | --- | --- | --- | --- |
+| SMF | NO | - | - | NO |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TGTNFTYPE | 目标NF类型 | 可选必选说明：必选参数<br>参数含义：该参数用于标识目标NF的类型。<br>数据来源：全网规划<br>取值范围：<br>- “SMF（SMF）”：SMF<br>- “LMF（LMF）”：LMF<br>- “GMLC（GMLC）”：GMLC<br>默认值：无。<br>配置原则：无 |
+| REQNSSW | 请求者网络切片开关 | 可选必选说明：该参数在"TGTNFTYPE"配置为"SMF"时为条件可选参数。<br>参数含义：该参数用于标识在AMF选择目标NF时是否携带AMF支持的网络切片列表。AMF进行SMF发现时是否携带网络切片同时受SET AMFNSSECPLCY命令"跨切片访问保护开关"控制，本命令"请求者网络切片开关"设置为“否”时，以SET AMFNSSECPLCY命令中"跨切片访问保护开关"参数取值为准。如果希望AMF发现SMF时不携带网络切片，需要以上两个参数同时关闭。<br>数据来源：全网规划<br>取值范围：<br>- “NO（否）”：否<br>- “YES（是）”：是<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST NFSELPLCY查询当前参数配置值。<br>配置原则：<br>当运营商需要启用请求者NF的网络切片属性检查时，将本参数设置为“是”。注意，请求者NF的网络切片检查依赖于生产者NF到NRF的注册流程中携带的“allowedNssais”参数。<br>该功能仅在软参DWORD2 BIT4设置为“1”时生效，操作如下：<br>SET COMMONSOFTPARAOFBIT: DT=DwCom, DWORDCOMNUM=2, VALUE=VALUE_1, POSITION=4; |
+| LMFCTTYPE | 是否使用ClientType发现LMF | 可选必选说明：该参数在"TGTNFTYPE"配置为"LMF"时为条件可选参数。<br>参数含义：该参数用于标识AMF选择目标LMF时是否携带LMF的客户端类型。<br>数据来源：全网规划<br>取值范围：<br>- “NO（否）”：否<br>- “YES（是）”：是<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST NFSELPLCY查询当前参数配置值。<br>配置原则：无 |
+| GMLCCTTYPE | 是否使用ClientType发现GMLC | 可选必选说明：该参数在"TGTNFTYPE"配置为"GMLC"时为条件可选参数。<br>参数含义：该参数用于标识AMF选择目标GMLC时是否携带GMLC的客户端类型。<br>数据来源：全网规划<br>取值范围：<br>- “NO（否）”：否<br>- “YES（是）”：是<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST NFSELPLCY查询当前参数配置值。<br>配置原则：无 |
+| HRREQNSSW | HR模式会话请求者网络切片开关 | 可选必选说明：该参数在"TGTNFTYPE"配置为"SMF"时为条件可选参数。<br>参数含义：该参数用于标识在AMF针对HR模式会话选择目标NF时是否携带请求切片列表。其中，服务发现V-SMF携带的请求切片为用户接入PLMN支持的网络切片，服务发现H-SMF携带的请求切片为支持切片映射的UDM签约切片。<br>数据来源：全网规划<br>取值范围：<br>- “NO（否）”：否<br>- “YES（是）”：是<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST NFSELPLCY查询当前参数配置值。<br>配置原则：<br>当运营商需要启用请求者NF的网络切片属性检查时，将本参数设置为“是”。注意，请求者NF的网络切片检查依赖于生产者NF到NRF的注册流程中携带的“allowedNssais”参数。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NFSELPLCY]] · 目标NF选择策略（NFSELPLCY）
+
+## 使用实例
+
+运营商网络启用请求者NF的切片属性检查，要求AMF在请求SMF时携带AMF支持的网络切片列表，执行如下命令：
+
+```
+SET NFSELPLCY: TGTNFTYPE=SMF, REQNSSW=YES;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-NFSELPLCY.md`

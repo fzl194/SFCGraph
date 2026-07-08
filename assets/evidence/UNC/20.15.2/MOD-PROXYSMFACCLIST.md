@@ -1,0 +1,37 @@
+# 修改Proxy SMF接入控制列表（MOD PROXYSMFACCLIST）
+
+- [命令功能](#ZH-CN_MMLREF_0000001823782798__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0000001823782798__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0000001823782798__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0000001823782798__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0000001823782798)
+
+**适用NF：SMF**
+
+该命令用于Proxy SMF特性中修改接入控制列表记录。
+
+## [注意事项](#ZH-CN_MMLREF_0000001823782798)
+
+该命令执行后只对新激活用户生效。
+
+#### [操作用户权限](#ZH-CN_MMLREF_0000001823782798)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0000001823782798)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SUBRANGEALL | 用户范围 | 可选必选说明：必选参数<br>参数含义：该参数用于指定接入控制的范围。<br>数据来源：本端规划<br>取值范围：<br>- ALL_USER（所有用户）<br>- IMSI_PRE（IMSI前缀）<br>- MSISDN_PRE（MSISDN前缀）<br>默认值：无<br>配置原则：<br>当存在多种用户范围的记录时，匹配的优先级由高到低为： IMSI_PRE/MSISDN_PRE，ALL_USER，如果某一用户同时匹配IMSI_PRE以及MSISDN_PRE记录时，最终是否允许接入受SET PROXYSMFFUNC命令中的CTRLTYPE参数控制。 |
+| PREFIX | 前缀 | 可选必选说明：该参数在"SUBRANGEALL"配置为"IMSI_PRE"、"MSISDN_PRE"时为条件必选参数。<br>参数含义：该参数用于指定接入控制的号码前缀，当SUBRANGE为IMSI_PRE时表示IMSI号码前缀，当SUBRANGE为MSISDN_PRE时表示MSISDN号码前缀。使用时按照最长匹配进行查询。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~15。<br>默认值：无<br>配置原则：<br>取值范围为1~15位数字。 |
+| CTRLTYPE | 控制类型 | 可选必选说明：可选参数<br>参数含义：该参数用于控制是否允许用户接入。<br>数据来源：本端规划<br>取值范围：<br>- ALLOW（允许）<br>- REJECT（拒绝）<br>默认值：无<br>配置原则：无 |
+| DESC | 描述信息 | 可选必选说明：可选参数<br>参数含义：该参数用于指定Proxy SMF接入控制列表的描述信息。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~32。<br>默认值：无<br>配置原则：无 |
+
+## [使用实例](#ZH-CN_MMLREF_0000001823782798)
+
+修改用户范围为IMSI_PRE，前缀为27602的Proxy SMF接入列表记录的控制类型为ALLOW，描述信息为Vodafone，执行如下命令：
+
+```
+MOD PROXYSMFACCLIST: SUBRANGEALL=IMSI_PRE, PREFIX="27602", CTRLTYPE=ALLOW, DESC="Vodafone";
+```

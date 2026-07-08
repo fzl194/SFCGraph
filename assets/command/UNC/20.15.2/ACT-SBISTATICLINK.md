@@ -1,0 +1,56 @@
+---
+id: UNC@20.15.2@MMLCommand@ACT SBISTATICLINK
+type: MMLCommand
+name: ACT SBISTATICLINK（激活静态链路）
+nf: UNC
+version: 20.15.2
+verb: ACT
+object_keyword: SBISTATICLINK
+command_category: 动作类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- HTTP功能管理
+- SBI管理
+- 服务化接口静态链路管理
+status: active
+---
+
+# ACT SBISTATICLINK（激活静态链路）
+
+## 功能
+
+该命令用于激活指定本端和对端实例之间的全部静态链路。执行本命令时，指定的本端和对端实例之间的静态链路已预先配置。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SBIAPLEIDX | SBIAPLE索引 | 可选必选说明：必选参数<br>参数含义：该参数用于指定关联的SBIAPLE索引。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是1~255。<br>默认值：无<br>配置原则：无 |
+| PEERNFINSTID | 对端实例ID | 可选必选说明：必选参数<br>参数含义：该参数用于指定对端实例ID。对端NF如果是从NRF查询的，则实例ID为UUID。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是1~1024。<br>默认值：无<br>配置原则：无 |
+| GROUPID | Group索引 | 可选必选说明：可选参数<br>参数含义：该参数用于指定SCP或SEPP的GROUPID，表示一组SCP或SEPP。当需要创建到SCP的静态链路时，该参数设置为1；当需要创建到SEPP的静态链路时，该参数设置为2。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~65535。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SBISTATICLINK]] · 静态链路（SBISTATICLINK）
+
+## 使用实例
+
+若运营商想激活SBIAPLE索引为1的本端和实例ID为bf33a517-7789-4637-b675-b3591b0d706b的对端之间的所有静态链路，执行如下命令。
+
+```
+ACT SBISTATICLINK: SBIAPLEIDX=1, PEERNFINSTID="bf33a517-7789-4637-b675-b3591b0d706b";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ACT-SBISTATICLINK.md`

@@ -1,0 +1,87 @@
+---
+id: UDG@20.15.2@MMLCommand@SET APNIPALLOCRULE
+type: MMLCommand
+name: SET APNIPALLOCRULE（基于APN配置地址分配规则）
+nf: UDG
+version: 20.15.2
+verb: SET
+object_keyword: APNIPALLOCRULE
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 会话管理
+- 会话地址管理
+- 基于APN的地址分配规则
+status: active
+---
+
+# SET APNIPALLOCRULE（基于APN配置地址分配规则）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于配置基于APN的地址分配规则。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 系统最多支持配置10000条ApnIpAllocRule。
+- 支持三种地址分配规则优先级配置。
+- APNIPALLOCRULE不配置时，ALLOCATTR默认为继承全局。
+- 全局配置默认为第一优先级开关使能，第一优先级规则为基于APN映射的地址范围分配地址。第二、三优先级规则开关不使能。
+- 不同优先级的规则不可以配置为相同。
+- 三级优先级独立配置，配置低优先级时不要求必须配置高优先级。
+- 配置基于APN的地址分配规则，如果按照SMF映射的地址范围内分配地址，需要通过SET IPALLOCBYSMFSW命令设置基于SMF分配地址的开关，通过LST IPALLOCBYSMFSW检查开关配置是否正确。
+- 配置基于APN的地址分配规则，如果按照LOCATION映射的地址范围内分配地址，需要通过SET IPALLOCBYLOCSW命令设置基于位置区分配地址的全局开关，通过LST IPALLOCBYLOCSW检查开关配置是否正确。
+- 禁止下发分配属性为LOCAL，但不下发分配规则的配置。
+- 该命令存在系统初始记录，参数的初始设置值如下表：
+
+| 参数标识 | ALLOCATTR | IPV6ALLOCATTR |
+| --- | --- | --- |
+| 初始值 | INHERIT | INHERIT |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定APN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”特殊字符，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD APN命令配置生成。 |
+| ALLOCATTR | IPv4分配属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定该APN是否使用本地IPv4分配规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- INHERIT：继承全局配置。<br>- LOCAL：使用本APN配置。<br>默认值：无<br>配置原则：无 |
+| FIRSTRULESW | IPv4第一级规则开关 | 可选必选说明：条件可选参数<br>前提条件：该参数在“ALLOCATTR”配置为“LOCAL”时为可选参数。<br>参数含义：该参数用于指定IPv4第一级规则开关，配置使能或去使能IPv4第一优先级规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：无<br>配置原则：<br>- ENABLE：配置第一优先级规则生效。<br>- DISABLE：配置第一优先级规则不生效。 |
+| FIRSTRULE | IPv4第一级规则 | 可选必选说明：条件必选参数<br>前提条件：该参数在“FIRSTRULESW”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv4分配地址的第一优先级规则。<br>数据来源：本端规划<br>取值范围：位域类型。所选条件为与关系，表示从同时满足所有所选条件所映射的地址范围内分配地址。<br>- APN：设置地址分配规则时，格式为APN-X，X可以取值0或1，其中1代表地址分配时APN有效。<br>- LOCATION：设置地址分配规则时，格式为LOCATION-X，X可以取值0或1，其中1代表地址分配时位置区有效。<br>- SMF：设置地址分配规则时，格式为SMF-X，X可以取值0或1，其中1代表地址分配时SMF有效。<br>默认值：无<br>配置原则：无 |
+| SECONDRULESW | IPv4第二级规则开关 | 可选必选说明：条件可选参数<br>前提条件：该参数在“ALLOCATTR”配置为“LOCAL”时为可选参数。<br>参数含义：该参数用于指定IPv4第二级规则开关，配置使能或去使能IPv4第二优先级规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：无<br>配置原则：<br>- ENABLE：配置第二优先级规则生效。<br>- DISABLE：配置第二优先级规则不生效。 |
+| SECONDRULE | IPv4第二级规则 | 可选必选说明：条件必选参数<br>前提条件：该参数在“SECONDRULESW”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv4分配地址的第二优先级规则。<br>数据来源：本端规划<br>取值范围：位域类型。所选条件为与关系，表示从同时满足所有所选条件所映射的地址范围内分配地址。<br>- APN：设置地址分配规则时，格式为APN-X，X可以取值0或1，其中1代表地址分配时APN有效。<br>- LOCATION：设置地址分配规则时，格式为LOCATION-X，X可以取值0或1，其中1代表地址分配时位置区有效。<br>- SMF：设置地址分配规则时，格式为SMF-X，X可以取值0或1，其中1代表地址分配时SMF有效。<br>默认值：无<br>配置原则：无 |
+| THIRDRULESW | IPv4第三级规则开关 | 可选必选说明：条件可选参数<br>前提条件：该参数在“ALLOCATTR”配置为“LOCAL”时为可选参数。<br>参数含义：该参数用于指定IPv4第三级规则开关，配置使能或去使能IPv4第三优先级规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：无<br>配置原则：<br>- ENABLE：配置第三优先级规则生效。<br>- DISABLE：配置第三优先级规则不生效。 |
+| THIRDRULE | IPv4第三级规则 | 可选必选说明：条件必选参数<br>前提条件：该参数在“THIRDRULESW”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv4分配地址的第三优先级规则。<br>数据来源：本端规划<br>取值范围：位域类型。所选条件为与关系，表示从同时满足所有所选条件所映射的地址范围内分配地址。<br>- APN：设置地址分配规则时，格式为APN-X，X可以取值0或1，其中1代表地址分配时APN有效。<br>- LOCATION：设置地址分配规则时，格式为LOCATION-X，X可以取值0或1，其中1代表地址分配时位置区有效。<br>- SMF：设置地址分配规则时，格式为SMF-X，X可以取值0或1，其中1代表地址分配时SMF有效。<br>默认值：无<br>配置原则：无 |
+| IPV6ALLOCATTR | IPv6分配属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定该APN是否使用本地IPv6分配规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- INHERIT：继承全局配置。<br>- LOCAL：使用本APN配置。<br>默认值：无<br>配置原则：无 |
+| IPV6FIRSTRULESW | IPv6第一级规则开关 | 可选必选说明：条件可选参数<br>前提条件：该参数在“IPV6ALLOCATTR”配置为“LOCAL”时为可选参数。<br>参数含义：该参数用于指定IPv6第一级规则开关，配置使能或去使能IPv6第一优先级规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：无<br>配置原则：<br>- ENABLE： 配置第一优先级规则生效。<br>- DISABLE：配置第一优先级规则不生效。 |
+| IPV6FIRSTRULE | IPv6第一级规则 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPV6FIRSTRULESW”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv6分配地址的第一优先级规则。<br>数据来源：本端规划<br>取值范围：位域类型。所选条件为与关系，表示从同时满足所有所选条件所映射的地址范围内分配地址。<br>- APN：设置地址分配规则时，格式为APN-X，X可以取值0或1，其中1代表地址分配时APN有效。<br>- LOCATION：设置地址分配规则时，格式为LOCATION-X，X可以取值0或1，其中1代表地址分配时位置区有效。<br>- SMF：设置地址分配规则时，格式为SMF-X，X可以取值0或1，其中1代表地址分配时SMF有效。<br>默认值：无<br>配置原则：无 |
+| IPV6SECRULESW | IPv6第二级规则开关 | 可选必选说明：条件可选参数<br>前提条件：该参数在“IPV6ALLOCATTR”配置为“LOCAL”时为可选参数。<br>参数含义：该参数用于指定IPv6第二级规则开关，配置使能或去使能IPv6第二优先级规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：无<br>配置原则：<br>- ENABLE：配置第二优先级规则生效。<br>- DISABLE：配置第二优先级规则不生效。 |
+| IPV6SECONDRULE | IPv6第二级规则 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPV6SECRULESW”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv6分配地址的第二优先级规则。<br>数据来源：本端规划<br>取值范围：位域类型。所选条件为与关系，表示从同时满足所有所选条件所映射的地址范围内分配地址。<br>- APN：设置地址分配规则时，格式为APN-X，X可以取值0或1，其中1代表地址分配时APN有效。<br>- LOCATION：设置地址分配规则时，格式为LOCATION-X，X可以取值0或1，其中1代表地址分配时位置区有效。<br>- SMF：设置地址分配规则时，格式为SMF-X，X可以取值0或1，其中1代表地址分配时SMF有效。<br>默认值：无<br>配置原则：无 |
+| IPV6THIRDRULESW | IPv6第三级规则开关 | 可选必选说明：条件可选参数<br>前提条件：该参数在“IPV6ALLOCATTR”配置为“LOCAL”时为可选参数。<br>参数含义：该参数用于指定IPv6第三级规则开关，配置使能或去使能IPv6第三优先级规则。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：无<br>配置原则：<br>- ENABLE：配置第三优先级规则生效。<br>- DISABLE：配置第三优先级规则不生效。 |
+| IPV6THIRDRULE | IPv6第三级规则 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPV6THIRDRULESW”配置为“ENABLE”时为必选参数。<br>参数含义：该参数用于指定IPv6分配地址的第三优先级规则。<br>数据来源：本端规划<br>取值范围：位域类型。所选条件为与关系，表示从同时满足所有所选条件所映射的地址范围内分配地址。<br>- APN：设置地址分配规则时，格式为APN-X，X可以取值0或1，其中1代表地址分配时APN有效。<br>- LOCATION：设置地址分配规则时，格式为LOCATION-X，X可以取值0或1，其中1代表地址分配时位置区有效。<br>- SMF：设置地址分配规则时，格式为SMF-X，X可以取值0或1，其中1代表地址分配时SMF有效。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@APNIPALLOCRULE]] · 基于APN配置地址分配规则（APNIPALLOCRULE）
+
+## 使用实例
+
+设置名为apn1.com的APN实例按照只从APN映射的地址范围分配地址，其规则为第一优先级按照APN映射的地址范围内分配地址，第二优先级按照从SMF映射的地址范围分配地址：
+
+```
+SET APNIPALLOCRULE: APN="apn1.com", ALLOCATTR=LOCAL, FIRSTRULESW=ENABLE, FIRSTRULE=APN-1, SECONDRULESW=ENABLE, SECONDRULE=SMF-1, THIRDRULESW=DISABLE;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/SET-APNIPALLOCRULE.md`

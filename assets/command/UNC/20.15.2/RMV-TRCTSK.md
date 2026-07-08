@@ -1,0 +1,81 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV TRCTSK
+type: MMLCommand
+name: RMV TRCTSK（删除跟踪任务）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: TRCTSK
+command_category: 配置类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+- GGSN
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 操作维护
+- 扩展调测
+- OM调测
+status: active
+---
+
+# RMV TRCTSK（删除跟踪任务）
+
+## 功能
+
+![](删除跟踪任务（RMV TRCTSK）_86223168.assets/notice_3.0-zh-cn_2.png)
+
+执行该命令会导致被删除的跟踪任务不可用，请谨慎使用并联系华为技术支持协助操作。
+
+基于跟踪类型删除跟踪任务后，会导致该跟踪类型的任务不可用，需要重新创建该类型的所有跟踪。
+
+基于用户信息删除跟踪任务后，仅影响该用户的跟踪任务不可用，需要重新创建该用户的跟踪任务。
+
+删除信令面创建的E2E跟踪任务时，会同时反向删除CSP的跟踪任务，并且向下游网元传递跟踪任务删除标识，会导致下游网元的跟踪任务也会被删除。
+
+删除除信令面创建的E2E跟踪任务之外的任务时，仅删除业务侧的跟踪任务，可能会导致业务侧跟踪任务和CSP的跟踪任务不一致，因此需要先在CSP界面上删除相应的跟踪任务。
+
+**适用NF：SGW-C、PGW-C、SMF、GGSN、AMF**
+
+该命令用于删除跟踪任务。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- AMF当前版本仅支持删除AMF创建的E2E跟踪任务。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TRCTYPE | 跟踪任务类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定跟踪类型。<br>数据来源：本端规划<br>取值范围：<br>- User（用户跟踪）<br>- Random（随机用户跟踪）<br>- E2E（E2E用户跟踪）<br>- Interface（接口跟踪）<br>- Lan5G（5GLan组会话跟踪）<br>- Brc5G（5G广播跟踪）<br>默认值：无<br>配置原则：无 |
+| E2ETRCTYPE | E2E跟踪任务类型 | 可选必选说明：该参数在"TRCTYPE"配置为"E2E"时为条件必选参数。<br>参数含义：该参数用于指定E2E跟踪类型。<br>数据来源：本端规划<br>取值范围：<br>- Signaling（信令面创建跟踪）<br>- OM（管理面创建的跟踪）<br>默认值：无<br>配置原则：无 |
+| ITFTRCTYPE | 接口跟踪类型 | 可选必选说明：该参数在"TRCTYPE"配置为"Interface"时为条件必选参数。<br>参数含义：该参数用于指定接口跟踪类型。<br>数据来源：本端规划<br>取值范围：<br>- GTPC（GTPC）<br>- N4（N4）<br>- USMGa（USM Ga）<br>- Gy（Gy）<br>- USMGTPU（USM GTPU）<br>- S6b（S6b）<br>- Gi（Gi）<br>- DHCP（DHCP）<br>- Gx（Gx）<br>默认值：无<br>配置原则：无 |
+| IMSI | IMSI | 可选必选说明：该参数在"E2ETRCTYPE"配置为"OM"、"Signaling"时为条件可选参数。该参数在"TRCTYPE"配置为"User"时为条件可选参数。<br>参数含义：该参数用于指定用户IMSI。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~15。<br>默认值：无<br>配置原则：无 |
+| MSISDN | MSISDN | 可选必选说明：该参数在"E2ETRCTYPE"配置为"OM"、"Signaling"时为条件可选参数。该参数在"TRCTYPE"配置为"User"时为条件可选参数。<br>参数含义：该参数用于指定用户MSISDN。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~15。<br>默认值：无<br>配置原则：无 |
+| IMEI | IMEI | 可选必选说明：该参数在"TRCTYPE"配置为"User"时为条件可选参数。<br>参数含义：该参数用于指定用户IMEI。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~15。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@TRCTSK]] · 跟踪任务（TRCTSK）
+
+## 使用实例
+
+删除指定IMSI的用户跟踪:
+
+```
+RMV TRCTSK:TRCTYPE=User,IMSI="351521004992889";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-TRCTSK.md`

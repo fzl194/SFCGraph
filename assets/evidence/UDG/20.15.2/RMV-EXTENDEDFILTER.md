@@ -1,0 +1,45 @@
+# 删除扩展过滤器（RMV EXTENDEDFILTER）
+
+- [命令功能](#ZH-CN_CONCEPT_0186528819__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0186528819__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0186528819__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0186528819__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0186528819__1.3.5.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0186528819)
+
+**适用NF：PGW-U、UPF**
+
+该命令用于删除扩展过滤器或过滤条件。如果不指定参数，该命令将删除所有的ExtendedFilter配置信息；若指定EXTFLTNAME，则删除指定的扩展过滤器的配置信息；若指定RecordType，则删除指定的扩展过滤器记录类型的配置信息。
+
+#### [注意事项](#ZH-CN_CONCEPT_0186528819)
+
+- 该命令执行后60s生效。
+- 如果被DnsOverwriting或SmartHttpRedir、GlbExtFilter引用，则提示不允许删除该ExtendedFilter，但可以删除其中的部分过滤条件。
+- 如果要根据EXTFLTNAME删除特定配置中的某个过滤条件，并且该条件为ExtendedFilter中最后一个过滤条件，则该删除操作失败。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0186528819)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0186528819)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| EXTFLTNAME | 扩展过滤器名字 | 可选必选说明：可选参数<br>参数含义：该参数用于设置扩展过滤器名字。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。字符串形式，不支持空格。<br>默认值：无<br>配置原则：无 |
+| RECORDTYPE | 扩展过滤器记录类型 | 可选必选说明：可选参数<br>参数含义：该参数用于设置扩展过滤器记录类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- URL：URL。<br>- CONTENT_TYPE：ContentType。<br>- USER_AGENT：UserAgent。<br>- URL_POST_FIX：URL后缀。<br>默认值：无<br>配置原则：无 |
+| URL | URL | 可选必选说明：条件可选参数<br>前提条件：该参数在“RECORDTYPE”配置为“URL”时为可选参数。<br>参数含义：该参数用于设置URL。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～119。不区分大小写。<br>默认值：无<br>配置原则：无 |
+| CONTENTTYPE | ContentType | 可选必选说明：条件可选参数<br>前提条件：该参数在“RECORDTYPE”配置为“CONTENT_TYPE”时为可选参数。<br>参数含义：该参数用于设置ContentType。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。字符串形式，支持通配符。<br>默认值：无<br>配置原则：无 |
+| USERAGENT | 客户端类型 | 可选必选说明：条件可选参数<br>前提条件：该参数在“RECORDTYPE”配置为“USER_AGENT”时为可选参数。<br>参数含义：该参数用于设置UserAgent。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～119。不区分大小写。<br>默认值：无<br>配置原则：无 |
+| URLPOSTFIX | Url后缀 | 可选必选说明：条件可选参数<br>前提条件：该参数在“RECORDTYPE”配置为“URL_POST_FIX”时为可选参数。<br>参数含义：该参数用于设置URL后缀。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～7。字符串形式，不支持通配符。<br>默认值：无<br>配置原则：无 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0186528819)
+
+- 删除所有扩展过滤器的配置：
+  ```
+  RMV EXTENDEDFILTER:;
+  ```
+- 删除一个名字为eftest的扩展过滤器的配置：
+  ```
+  RMV EXTENDEDFILTER:EXTFLTNAME="eftest";
+  ```

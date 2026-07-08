@@ -1,0 +1,62 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD PEERPUBLICKEY
+type: MMLCommand
+name: MOD PEERPUBLICKEY（修改对端公钥）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: PEERPUBLICKEY
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- 操作维护
+- 接入配置管理
+- 密钥配置
+- 公钥配置
+status: active
+---
+
+# MOD PEERPUBLICKEY（修改对端公钥）
+
+## 功能
+
+该命令用于修改对端公钥。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 密钥需定期修改否则会有安全风险。
+- 目前，DSA算法仅支持1024位的密钥，有安全风险，建议使用RSA和ECC更安全的算法。
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| KEYNAME | 密钥名称 | 可选必选说明：必选参数<br>参数含义：密钥名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无 |
+| PUBKEYTYPE | 密钥类型 | 可选必选说明：必选参数<br>参数含义：密钥类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- RSA：RSA公钥。<br>- DSA：DSA公钥。<br>- ECC：ECC公钥。<br>默认值：无 |
+| KEYCODE | 密钥 | 可选必选说明：必选参数<br>参数含义：密钥。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～2046。<br>默认值：无 |
+| ENCODETYPE | 编码类型 | 可选必选说明：条件可选参数<br>前提条件：该参数在“PUBKEYTYPE”配置为“RSA” 或 “DSA”时为可选参数。<br>参数含义：编码类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DER：DER编码。<br>- PEM：PEM编码。<br>- OPENSSH：OpenSSH编码。<br>默认值：无 |
+| ECCENCODETYPE | ECC编码类型 | 可选必选说明：条件可选参数<br>前提条件：该参数在“PUBKEYTYPE”配置为“ECC”时为可选参数。<br>参数含义：ECC编码类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DER：DER编码。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@PEERPUBLICKEY]] · 对端公钥（PEERPUBLICKEY）
+
+## 使用实例
+
+修改类型为RSA、名称为rsa1的对端公钥：
+
+```
+MOD PEERPUBLICKEY:KEYNAME="rsa1",PUBKEYTYPE=RSA,KEYCODE="3082010A0282010100BB7B948B9E1124233E2AEBD29E131FC3D2587AF5B8814485376B32F1AD567D12AFFBC66B05360D80431D3DF573E565B9394C28CE0361F06CB52A4249DD8DCD011BE9C9F4FA19B6F03DCB52EA8D75C6D5B851AD35538854AE7356E6FA9E1943A20A38BE728CE4BF2A4E2E44511595C0D0503300C9F2CC556283A7A060432D07E469A706F3A2C6D13537B546B48AED53F080B0DB9B665143CFB0C665172266B5B460F1CE76C1555FDB90822E80F121007CC52C8A54F8731BC0C35F7A3CAAFA805B12ED5F4D83FB7A15C61F4D7BD9F0494DAEF967A4497359990E284B0AEA323AF4EE05C4968F3281A1C285DE830C5836E929E051FF44BCB85B114A2EBD762A2A8D0203010001";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-PEERPUBLICKEY.md`

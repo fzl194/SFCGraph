@@ -1,0 +1,73 @@
+---
+id: UNC@20.15.2@MMLCommand@LCK APNFORBYPASS
+type: MMLCommand
+name: LCK APNFORBYPASS（锁定存储ByPass场景下的APN）
+nf: UNC
+version: 20.15.2
+verb: LCK
+object_keyword: APNFORBYPASS
+command_category: 动作类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+- GGSN
+effect_mode: 对新用户生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- APN管理
+- APN
+status: active
+---
+
+# LCK APNFORBYPASS（锁定存储ByPass场景下的APN）
+
+## 功能
+
+![](锁定存储ByPass场景下的APN（LCK APNFORBYPASS）_83967246.assets/notice_3.0-zh-cn_2.png)
+
+该命令仅用于在存储ByPass时锁定APN，禁止在正常情况下使用该命令。
+
+**适用NF：SGW-C、PGW-C、SMF、GGSN**
+
+该命令用来对指定APN进行临时锁定操作，系统重启后自动解锁。当APN锁定后，后续使用该APN激活的用户激活失败，已经在线的用户无影响。缺省情况下APN未锁定。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 如果APN被锁定，会导致使用该APN激活的用户接入失败。
+- 该命令执行后只对新用户生效。
+- 目前最多锁定3000个APN，当超过上限时，APN锁定失效。
+- 由于该命令是在存储Bypass期间执行，因此无法做配置关联检查。
+- LCK APN和LCK APNFORBYPASS两个命令任一个对APN进行了锁定，则APN被锁定。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN | 可选必选说明：必选参数<br>参数含义：该参数用于指定APN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”等特殊字符，不区分大小写。<br>默认值：无<br>配置原则：<br>输入的APN名称需要符合APN命名规则。 |
+| LOCKED | 锁定 | 可选必选说明：必选参数<br>参数含义：该参数用于在存储ByPass场景下对APN进行临时锁定操作。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：无<br>配置原则：<br>该参数为ENABLE时，指定为锁定该APN。该参数为DISABLE时，指定为解锁该APN。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@APNFORBYPASS]] · APN锁定状态（APNFORBYPASS）
+
+## 使用实例
+
+锁定APN，APN为test：
+
+```
+LCK APNFORBYPASS: APN="test", LOCKED=ENABLE, CONFIRM=Y;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LCK-APNFORBYPASS.md`

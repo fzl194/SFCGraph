@@ -1,0 +1,73 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD IUPFAPNDPMODE
+type: MMLCommand
+name: MOD IUPFAPNDPMODE（修改I-UPF在特定园区专用APN下的部署模式配置）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: IUPFAPNDPMODE
+command_category: 配置类
+applicable_nf:
+- SMF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- UPF选择管理
+- I-UPF部署策略
+- APN粒度的I-UPF部署模式
+status: active
+---
+
+# MOD IUPFAPNDPMODE（修改I-UPF在特定园区专用APN下的部署模式配置）
+
+## 功能
+
+![](修改I-UPF在特定园区专用APN下的部署模式配置（MOD IUPFAPNDPMODE）_77089954.assets/notice_3.0-zh-cn_2.png)
+
+该配置参数若设置为NOIUPF，会导致终端移动到园区外时拒绝接入。
+
+**适用NF：SMF**
+
+该命令用于修改I-UPF在特定园区专用APN下的部署模式配置，对非ULCL场景生效。
+
+## 注意事项
+
+- 新激活用户生效，在线用户进行UP重选时生效。
+
+- 该配置参数若设置为NOIUPF，会导致终端移动到园区外时拒绝接入。确认该场景下可以拒绝接入后才进行配置。
+- 该配置只针对SMFN11、SMFN16、SMFN16a形态生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN名称 | 可选必选说明：必选参数<br>参数含义：该参数用于表示APN名称。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是1~63。字符串类型，输入长度范围是1~63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”等特殊字符，不区分大小写。<br>默认值：无<br>配置原则：<br>该参数取值应与ADD APN命令中参数“APN”保持一致。 |
+| NGDEPLOYMODE | 5G下的I-UPF部署模式 | 可选必选说明：可选参数<br>参数含义：该参数用于指定5G组网形态下的I-UPF部署模式。<br>数据来源：本端规划<br>取值范围：<br>- ALLOWIUPF（允许插入IUPF）<br>- NOIUPF（禁止插入IUPF）<br>默认值：无<br>配置原则：无 |
+| NGFAILNASCAUSE | 5G禁止I-UPF插入时返回的失败NAS原因值 | 可选必选说明：可选参数<br>参数含义：该参数用于指定5G禁止I-UPF插入时，由于该配置导致的会话创建失败或修改失败，SMF给AMF返回的NAS拒绝原因值。<br>数据来源：本端规划<br>取值范围：<br>- INSUFFICIENT_RESOURCES（资源不足）<br>- OPERATOR_DETERMINED_BARRING（运营商决定的闭锁）<br>- MISSING_OR_UNKNOWN_DNN（DNN未知或缺失）<br>- UNKNOWN_PDU_SESSION_TYPE（未知的PDU会话类型）<br>- USER_AUTHENTICATION_OR_AUTHORIZATION_FAILED（用户鉴权或授权失败）<br>- REQUEST_REJECTED_UNSPECIFIED（请求被拒绝，原因未指定）<br>- SERVICE_OPTION_NOT_SUPPORTED（不支持该服务）<br>- REQUESTED_SERVICE_OPTION_NOT_SUBSCRIBED（该服务未订阅）<br>- PTI_ALREADY_IN_USE（PTI正在使用）<br>- REGULAR_DEACTIVATION（常规去激活）<br>- FIVEGS_QOS_NOT_ACCEPTED（不接受的5G QoS）<br>- NETWORK_FAILURE（网络故障）<br>- REACTIVATION_REQUESTED（请求重激活）<br>- SEMANTIC_ERROR_IN_THE_TFT_OPERATION（TFT操作中的语义错误）<br>- SYNTACTICAL_ERROR_IN_THE_TFT_OPERATION（TFT操作中的语法错误）<br>- INVALID_PDU_SESSION_IDENTITY（无效的PDU会话标识）<br>- SEMANTIC_ERRORS_IN_PACKET_FILTERS（数据包过滤器中的语义错误）<br>- SYNTACTICAL_ERROR_IN_PACKET_FILTER（数据包过滤器中的语法错误）<br>- OUT_OF_LADN_SERVICE_AREA（移出LADN服务区）<br>- PTI_MISMATCH（PTI正在使用）<br>- PDU_SESSION_TYPE_IPV4_ONLY_ALLOWED（仅允许IPV4 PDU会话）<br>- PDU_SESSION_TYPE_IPV6_ONLY_ALLOWED（仅允许IPV6 PDU会话）<br>- PDU_SESSION_TYPE_DOES_NOT_EXIST（PDU会话类型不存在）<br>- PDU_SESSION_TYPE_IPV4V6_ONLY_ALLOWED（仅允许IPV4和IPV6 PDU会话）<br>- PDU_TYPE_UNSTRUCTURED_ONLY_ALLOWED（仅允许非结构化的PDU会话）<br>- PDU_SESSION_TYPE_ETHERNET_ONLY_ALLOWED（仅允许以太网类型的PDU会话）<br>- INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN（特定切片和DNN的资源不足）<br>- INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE（特定切片资源不足）<br>- MISSING_OR_UNKNOWN_DNN_IN_A_SLICE（切片中DNN缺失或未知）<br>- INVALID_PTI_VALUE（无效的PTI值）<br>- MAX_DATA_RATE_FOR_UP_INTEGRITY_PROTECTION_TOO_LOW（用户面完整性保护单用户最大数据速率过低）<br>- SEMANTIC_ERROR_IN_THE_QOS_OPERATION（QoS操作中的语义错误）<br>- SYNTACTICAL_ERROR_IN_THE_QOS_OPERATION（QoS操作中的语法错误）<br>- INVALID_MAPPED_EPS_BEARER_IDENTITY（映射的EPS承载标识无效）<br>- SEMANTICALLY_INCORRECT_MESSAGE（消息中语义不正确）<br>- INVALID_MANDATORY_INFORMATION（必要信息无效）<br>- MESSAGE_TYPE_NONEXIST_OR_NOT_IMPLEMENTED（消息类型不存在或未实施）<br>- MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE（消息类型与协议状态不兼容）<br>- INFORMATION_ELEMENT_NONEXISTENT_OR_NOT_IMPLEMENTED（信息元素不存在或未实施）<br>- CONDITIONAL_IE_ERROR（条件信元错误）<br>- MESSAGE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE（消息与协议状态不兼容）<br>- PROTOCOL_ERROR_UNSPECIFIED（其它的协议相关错误）<br>- UNSUPPORTED_5QI_VALUE（不支持的5QI值）<br>- NOT_SUPPORTED_SSC_MODE（不支持该SSC模式）<br>默认值：无<br>配置原则：<br>参见协议3GPP TS 24.501。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@IUPFAPNDPMODE]] · I-UPF在特定园区专用APN下的部署模式配置（IUPFAPNDPMODE）
+
+## 使用实例
+
+- 修改APN为huawei.com的IUPF部署模式配置为ALLOWIUPF：
+  ```
+  MOD IUPFAPNDPMODE: APN="huawei.com", NGDEPLOYMODE=ALLOWIUPF;
+  ```
+- 修改APN为huawei.com的IUPF部署模式配置为NOIUPF：
+  ```
+  MOD IUPFAPNDPMODE: APN="huawei.com", NGDEPLOYMODE=NOIUPF,
+  NGFAILNASCAUSE=INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN;
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-IUPFAPNDPMODE.md`

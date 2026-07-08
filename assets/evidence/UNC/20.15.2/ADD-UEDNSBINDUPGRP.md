@@ -1,0 +1,57 @@
+# 增加UPF组的DNS属性（ADD UEDNSBINDUPGRP）
+
+- [命令功能](#ZH-CN_MMLREF_0273321229__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0273321229__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0273321229__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0273321229__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0273321229)
+
+**适用NF：GGSN、PGW-C、SMF**
+
+该命令用来配置指定UPF组的DNS属性和DNS64属性。用户需要配置UPF组下的主、备DNS地址或者主、备DNS64地址时，使用该命令。
+
+## [注意事项](#ZH-CN_MMLREF_0273321229)
+
+- 该命令执行后立即生效。
+
+- 每个UPF组支持一条DNS属性配置。
+- 配置的主、备DNS服务器地址不能相同。
+- 配置DNS属性的优先级由高到低为：ADD UEDNSBINDUPGRP，SET UEDNSBINDAPN，SET GLOBALDNS。
+
+- 最多可输入20000条记录。
+
+#### [操作用户权限](#ZH-CN_MMLREF_0273321229)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0273321229)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| UPFGRPNAME | UPF组名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定UPF组的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~32。不区分大小写。<br>默认值：无<br>配置原则：<br>该参数使用ADD UEDNSUPGROUP命令生成。 |
+| APNTYPE | APN类型 | 可选必选说明：可选参数<br>参数含义：该参数用于指定APN类型。<br>数据来源：本端规划<br>取值范围：<br>- ALL_APN（所有APN）<br>- APN_GROUP（APN组）<br>- SPECIAL_APN（指定APN）<br>默认值：ALL_APN<br>配置原则：<br>优先级从高到低：“SPECIAL_APN”、“APN_GROUP”、“ALL_APN”。 |
+| APNGRPNAME | APN组名 | 可选必选说明：该参数在"APNTYPE"配置为"APN_GROUP"时为条件必选参数。<br>参数含义：该参数用于指定APN组名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~31。<br>默认值：无<br>配置原则：<br>该参数使用ADD SMFAPNGRP命令配置生成。<br>该参数在“APNTYPE”参数配置为“APN_GROUP”后生效。 |
+| APN | APN名称 | 可选必选说明：该参数在"APNTYPE"配置为"SPECIAL_APN"时为条件必选参数。<br>参数含义：该参数用于指定APN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”特殊字符，不区分大小写。<br>默认值：无<br>配置原则：<br>该参数使用ADD APN命令配置生成。<br>该参数在“APNTYPE”参数配置为“SPECIAL_APN”后生效。 |
+| MDNSSERVERV4 | IPv4主DNS服务器IP | 可选必选说明：可选参数<br>参数含义：该参数用于配置IPv4主DNS服务器地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。点分十进制。只允许配置A、B、C类地址。<br>默认值：无<br>配置原则：无 |
+| BDNSSERVERV4 | IPv4备DNS服务器IP | 可选必选说明：可选参数<br>参数含义：该参数用于配置IPv4备DNS服务器地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。点分十进制。只允许配置A、B、C类地址。<br>默认值：无<br>配置原则：无 |
+| MDNSSERVERV6 | IPv6主DNS服务器IP | 可选必选说明：可选参数<br>参数含义：该参数用于配置IPv6主DNS服务器地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。冒号十六进制。<br>默认值：无<br>配置原则：无 |
+| BDNSSERVERV6 | IPv6备DNS服务器IP | 可选必选说明：可选参数<br>参数含义：该参数用于配置IPv6备DNS服务器地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。冒号十六进制。<br>默认值：无<br>配置原则：无 |
+| MDNSSERVER64 | IPv6主DNS64服务器IP | 可选必选说明：可选参数<br>参数含义：该参数用于PDP类型为IPv6时配置主DNS64地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| BDNSSERVER64 | IPv6备DNS64服务器IP | 可选必选说明：可选参数<br>参数含义：该参数用于PDP类型为IPv6时配置备DNS64地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| FIRMODEV4 | IPv4 第一优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4第一优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：DHCP<br>配置原则：无 |
+| SECMODEV4 | IPv4 第二优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4第二优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：RADIUS<br>配置原则：无 |
+| THIRDMODEV4 | IPv4第三优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4第三优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：LOCAL<br>配置原则：无 |
+| FOURTHMODEV4 | IPv4第四优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv4第四优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：PCRF<br>配置原则：无 |
+| FIRMODEV6 | IPv6 第一优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv6第一优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：DHCP<br>配置原则：无 |
+| SECMODEV6 | IPv6 第二优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv6第二优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：RADIUS<br>配置原则：无 |
+| THIRDMODEV6 | IPv6第三优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv6第三优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：LOCAL<br>配置原则：无 |
+| FOURTHMODEV6 | IPv6第四优先级服务器属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定IPv6第四优先级选择模式。<br>数据来源：本端规划<br>取值范围：<br>- “LOCAL（local）”：指定本地配置优先。即本命令配置的DNS地址。<br>- “RADIUS（radius）”：指定RADIUS服务器返回的DNS属性优先。<br>- “DHCP（dhcp）”：指定DHCP服务器返回的DNS属性优先。<br>- “PCRF（pcrf）”：指定PCRF返回的DNS属性优先。<br>默认值：PCRF<br>配置原则：无 |
+
+## [使用实例](#ZH-CN_MMLREF_0273321229)
+
+需要根据不同APN业务选择不同DNS服务器，APNTYPE配置为APN_GROUP，APN_GROUP已经通过ADD SMFAPNGRP命令配置为grp1，此时配置UPF组upfgrp1的DNS属性和DNS64属性：
+
+```
+ADD UEDNSBINDUPGRP: UPFGRPNAME="upfgrp1", APNTYPE=APN_GROUP, APNGRPNAME="grp1",MDNSSERVERV4="10.1.1.1", BDNSSERVERV4="10.2.2.2", MDNSSERVERV6="2001:0DB8:0:1::", BDNSSERVERV6="2001:0DB8:0:2::", MDNSSERVER64="2001:0DB8:0:3::", BDNSSERVER64="2001:0DB8:0:4::";
+```

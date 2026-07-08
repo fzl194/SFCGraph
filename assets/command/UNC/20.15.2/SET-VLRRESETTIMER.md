@@ -1,0 +1,65 @@
+---
+id: UNC@20.15.2@MMLCommand@SET VLRRESETTIMER
+type: MMLCommand
+name: SET VLRRESETTIMER（设置VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: VLRRESETTIMER
+command_category: 配置类
+applicable_nf:
+- SMSF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- VLR业务管理
+- 用户上下文管理
+status: active
+---
+
+# SET VLRRESETTIMER（设置VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置）
+
+## 功能
+
+**适用NF：SMSF**
+
+该命令用于设置VLR向MME发送SGsAP-RESET-INDICATION消息后，等待接收MME返回的SGsAP-RESET-ACK响应的定时器配置。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| RESNDSW | RESNDNUM | SNDRESETTIMER |
+| --- | --- | --- |
+| FUNC_ON | 2 | 5 |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RESNDSW | 重发开关 | 可选必选说明：可选参数<br>参数含义：该参数用于设置VLR向MME发送SGsAP-RESET-INDICATION消息定时器超时后，重发SGsAP-RESET-INDICATION消息的开关。<br>数据来源：本端规划<br>取值范围：<br>- “FUNC_ON（打开）”：功能开关打开<br>- “FUNC_OFF（关闭）”：功能开关关闭<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST VLRRESETTIMER查询当前参数配置值。<br>配置原则：无 |
+| RESNDNUM | 重发次数 | 可选必选说明：可选参数<br>参数含义：该参数用于设置VLR向MME发送SGsAP-RESET-INDICATION消息定时器超时后，可重发的最大次数。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~14。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST VLRRESETTIMER查询当前参数配置值。<br>配置原则：<br>该参数的取值加1后与SNDRESETTIMER的取值的乘积不得超过14。 |
+| SNDRESETTIMER | VLR等待接收MME SGsAP-RESET-ACK响应(秒) | 可选必选说明：可选参数<br>参数含义：该参数用于设置VLR向MME发送SGsAP-RESET-INDICATION消息后，等待接收MME返回的SGsAP-RESET-ACK响应的定时器超时时长。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~14。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST VLRRESETTIMER查询当前参数配置值。<br>配置原则：<br>RESNDNUM的取值加1后与该参数的取值的乘积不得超过14。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@VLRRESETTIMER]] · VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置（VLRRESETTIMER）
+
+## 使用实例
+
+运营商希望设置VLR向MME发送SGsAP-RESET-INDICATION消息后，等待接收MME返回的SGsAP-RESET-ACK响应的定时器配置，执行如下命令：
+
+```
+SET VLRRESETTIMER: RESNDSW=FUNC_ON, RESNDNUM=2, SNDRESETTIMER=5;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-VLRRESETTIMER.md`

@@ -1,0 +1,65 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD SELECTCHFGBYCC
+type: MMLCommand
+name: MOD SELECTCHFGBYCC（修改基于CC选择CHF处理）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: SELECTCHFGBYCC
+command_category: 配置类
+applicable_nf:
+- PGW-C
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费管理
+- 融合计费
+- CHF选择
+status: active
+---
+
+# MOD SELECTCHFGBYCC（修改基于CC选择CHF处理）
+
+## 功能
+
+**适用NF：PGW-C、SMF**
+
+该命令用于修改基于CC选择CHF处理。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CCTYPE | Charge Characteristic类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定计费属性。<br>数据来源：本端规划<br>取值范围：<br>- DEFAULT（未指定Charge Characteristic的值）<br>- VALUE（指定Charge Characteristic的值）<br>默认值：无<br>配置原则：无 |
+| CCVALUE | Charge Characteristic值 | 可选必选说明：该参数在"CCTYPE"配置为"VALUE"时为条件必选参数。<br>参数含义：该参数用于指定特殊的Charge Characteristic值。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~6。该参数为十六进制数据类型，仅支持输入0x/X、a-f/A-F 、0-9，允许不输入0x前缀，字母不区分大小写，取值范围0x0000~0xFFFF。<br>默认值：无<br>配置原则：无 |
+| MASK | Charge Characteristic特定值掩码 | 可选必选说明：该参数在"CCTYPE"配置为"VALUE"时为条件可选参数。<br>参数含义：该参数用于指定计费属性的掩码。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~6。该参数为十六进制数据类型，仅支持输入0x/X、a-f/A-F 、0-9，允许不输入0x前缀，字母不区分大小写，取值范围0x0001~0xFFFF。配置的计费属性掩码计费属性值参数做与运算后，需要等于计费属性值，否则配置失败。<br>默认值：无<br>配置原则：无 |
+| PRIORITY | Charge Characteristic优先级 | 可选必选说明：该参数在"CCTYPE"配置为"VALUE"时为条件可选参数。<br>参数含义：该参数用于设置优先级。不允许指定相同的优先级。配置mask时必须指定优先级。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~65535。<br>默认值：无<br>配置原则：<br>不配置此参数时值默认为0。 |
+| PRIMARYCHFGRP | 主CHF组 | 可选必选说明：可选参数<br>参数含义：该参数用于设置主CHF组。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是1~63。该参数输入空格或者null（不区分大小写）清空参数值。<br>默认值：无<br>配置原则：<br>该参数使用ADD TNFGRP命令配置生成。 |
+| SECONDARYCHFGRP | 备CHF组 | 可选必选说明：可选参数<br>参数含义：该参数用于设置备CHF组。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是1~63。该参数输入空格或者null（不区分大小写）清空参数值。<br>默认值：无<br>配置原则：<br>该参数使用ADD TNFGRP命令配置生成。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SELECTCHFGBYCC]] · 基于CC选择CHF处理（SELECTCHFGBYCC）
+
+## 使用实例
+
+修改基于CC值为1234选择CHF处理:
+
+```
+MOD SELECTCHFGBYCC: CCTYPE=VALUE, CCVALUE="1234", MASK="ff", PRIMARYCHFGRP="CHF2", SECONDARYCHFGRP="CHF1";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-SELECTCHFGBYCC.md`

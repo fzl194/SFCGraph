@@ -1,0 +1,53 @@
+# 查询Bi口IPCONVERGENCE开关状态（LST IPCONVERGENCE）
+
+- [命令功能](#ZH-CN_CONCEPT_0000001283656620__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0000001283656620__1.3.2.1)
+- [本地用户权限](#ZH-CN_CONCEPT_0000001283656620__1.3.3.1)
+- [网管用户权限](#ZH-CN_CONCEPT_0000001283656620__1.3.4.1)
+- [参数说明](#ZH-CN_CONCEPT_0000001283656620__1.3.5.1)
+- [使用实例](#ZH-CN_CONCEPT_0000001283656620__1.3.6.1)
+- [输出结果说明](#ZH-CN_CONCEPT_0000001283656620__1.3.7.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0000001283656620)
+
+**适用NF：NCG**
+
+该命令用于查询Bi口IPCONVERGENCE开关状态。
+
+#### [注意事项](#ZH-CN_CONCEPT_0000001283656620)
+
+无。
+
+#### [本地用户权限](#ZH-CN_CONCEPT_0000001283656620)
+
+manage-ug；system-ug；monitor-ug
+
+#### [网管用户权限](#ZH-CN_CONCEPT_0000001283656620)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0000001283656620)
+
+无。
+
+#### [使用实例](#ZH-CN_CONCEPT_0000001283656620)
+
+查询Bi口IPCONVERGENCE开关状态：
+
+```
+LST IPCONVERGENCE:;
+```
+
+```
+RETCODE = 0  操作成功
+
+结果如下:
+---------
+      Bi口IPCONVERGENCE 开关  =  开启          
+(结果个数 = 1)
+---    END
+```
+
+#### [输出结果说明](#ZH-CN_CONCEPT_0000001283656620)
+
+参见 [SET IPCONVERGENCE](设置Bi口IPCONVERGENCE开关（SET IPCONVERGENCE）_36016493.md) 的参数说明。

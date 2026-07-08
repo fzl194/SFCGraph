@@ -1,0 +1,64 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV CACHEWHITELST
+type: MMLCommand
+name: RMV CACHEWHITELST（删除异网白名单PLMN信息）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: CACHEWHITELST
+command_category: 配置类
+applicable_nf:
+- AMF
+- SMF
+- NSSF
+- SMSF
+- NCG
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 接口管理
+- 服务化接口管理
+- 注册与服务发现
+- NF Cache管理
+status: active
+---
+
+# RMV CACHEWHITELST（删除异网白名单PLMN信息）
+
+## 功能
+
+**适用NF：AMF、SMF、NSSF、SMSF、NCG**
+
+该命令用于删除异网白名单的PLMN信息。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| MCC | 移动国家码 | 可选必选说明：必选参数<br>参数含义：该参数用于指定异网缓存白名单中的移动国家码。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度是3。<br>默认值：无<br>配置原则：<br>本参数由3个十进制数字组成。 |
+| MNC | 移动网号 | 可选必选说明：必选参数<br>参数含义：该参数用于指定异网白名单中的移动网号。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是2~3。<br>默认值：无<br>配置原则：<br>本参数由2~3个十进制数字组成。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@CACHEWHITELST]] · 异网白名单PLMN信息（CACHEWHITELST）
+
+## 使用实例
+
+删除异网白名单的PLMN信息，MCC为460，MNC为03。
+
+```
+RMV CACHEWHITELST: MCC="460",MNC="03";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-CACHEWHITELST.md`

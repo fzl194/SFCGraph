@@ -1,0 +1,60 @@
+---
+id: UNC@20.15.2@MMLCommand@SET EVTHEALCTRL
+type: MMLCommand
+name: SET EVTHEALCTRL（设置事件全局开关）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: EVTHEALCTRL
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 可靠性管理
+- 微服务可靠性管理
+status: active
+---
+
+# SET EVTHEALCTRL（设置事件全局开关）
+
+## 功能
+
+该命令用于设置事件全局开关。去使能时，所有事件自愈功能失效。使能时，以 [**SET EVTSW**](设置事件开关状态（SET EVTSW）_36260908.md) 命令配置的单个事件的开关状态为准。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| EVENTSWITCH |
+| --- |
+| ENABLE |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| EVENTSWITCH | 事件全局开关 | 可选必选说明：必选参数<br>参数含义：该参数用于表示事件全局开关。<br>数据来源：本端规划<br>取值范围：<br>- “ENABLE（打开）”：自愈使能<br>- “DISABLE（不使能）”：自愈不使能<br>默认值：无。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@EVTHEALCTRL]] · 事件全局开关（EVTHEALCTRL）
+
+## 使用实例
+
+关闭事件全局开关
+
+```
+%%SET EVTHEALCTRL: EVENTSWITCH=ENABLE;%% 
+RETCODE = 0  操作成功
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-EVTHEALCTRL.md`

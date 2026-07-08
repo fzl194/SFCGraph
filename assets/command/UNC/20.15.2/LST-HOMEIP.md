@@ -1,0 +1,96 @@
+---
+id: UNC@20.15.2@MMLCommand@LST HOMEIP
+type: MMLCommand
+name: LST HOMEIP（查询Home IP地址）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: HOMEIP
+command_category: 查询类
+applicable_nf:
+- PGW-C
+- GGSN
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- GGSN和P-GW Proxy
+- Home IP
+status: active
+---
+
+# LST HOMEIP（查询Home IP地址）
+
+## 功能
+
+**适用NF：PGW-C、GGSN**
+
+该命令用于查询Home IP地址配置信息。
+
+## 注意事项
+
+无
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| HOMEGROUPINDX | Home Group编号 | 可选必选说明：可选参数<br>参数含义：该参数用来设置Home Group的编号。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~128。<br>默认值：无<br>配置原则：无 |
+| HOMEIPID | Home IP编号 | 可选必选说明：可选参数<br>参数含义：该参数用来设置该Home IP的编号。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是1~10。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@HOMEIP]] · Home IP地址（HOMEIP）
+
+## 使用实例
+
+- 查询“Home Group编号”为“1”，“Home IP编号”为“1”的Home IP地址配置：
+  ```
+  %%LST HOMEIP: HOMEGROUPINDX=1, HOMEIPID=1;%%
+  RETCODE = 0  操作成功
+
+  结果如下
+  ------------------------
+  Home Group编号  =  1
+     Home IP编号  =  1
+  IP地址版本类型  =  IPV4
+   Home IPv4地址  =  10.10.10.10
+   Home IPv6地址  =  ::
+        产品类型  =  PGW
+  (结果个数 = 1)
+
+  ---    END
+  ```
+- 查询“Home Group编号”为“1”的全部Home IP地址配置：
+  ```
+  %%LST HOMEIP: HOMEGROUPINDX=1;%%
+  RETCODE = 0  操作成功
+
+  结果如下
+  ------------------------
+  Home Group编号  Home IP编号  IP地址版本类型  Home IPv4地址  Home IPv6地址  产品类型  
+
+  1               1            IPV4            10.10.10.10    ::             PGW           
+  1               2            IPV4            10.10.10.255   ::             GGSN          
+  1               3            IPV4            10.10.10.255   ::             GGSN          
+  1               4            IPV4            10.10.10.255   ::             GGSN          
+  1               5            IPV4            10.10.10.255   ::             GGSN          
+  1               6            IPV4            10.10.10.255   ::             GGSN          
+  1               7            IPV4            10.10.10.255   ::             GGSN          
+  1               8            IPV4            10.10.10.255   ::             GGSN          
+  1               9            IPV4            10.10.10.255   ::             GGSN          
+  1               10           IPV4            10.10.10.255   ::             GGSN          
+  (结果个数 = 10)
+
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-HOMEIP.md`

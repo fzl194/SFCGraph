@@ -1,0 +1,72 @@
+# 增加APN配置（ADD APN）
+
+- [命令功能](#ZH-CN_MMLREF_0209653747__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0209653747__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0209653747__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0209653747__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0209653747)
+
+**适用NF：SMF、SGW-C、PGW-C、GGSN**
+
+该命令用于添加一个新的APN实例。在运营商需要接入外部包交换网络，配置APN和绑定VPN时使用此命令进行配置。2/3/4/5G核心网中采用APN来标识UNC，同时APN定义了UNC可以接入的外部包交换网络。
+
+## [注意事项](#ZH-CN_MMLREF_0209653747)
+
+- 该命令执行后立即生效。
+
+- 当前版本不支持此命令的APPLAYERVOLUME、QCHATSWITCH、PSEUDOACTSWITCH参数。
+- VIRTUALAPN开关开启前必须通过ADD VIRTUALAPNRULE配置规划的虚拟APN映射规则，否则会导致该APN下的用户激活失败。
+
+- 最多可输入20000条记录。
+
+#### [操作用户权限](#ZH-CN_MMLREF_0209653747)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0209653747)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| APN | APN名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定APN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”等特殊字符，不区分大小写。<br>默认值：无<br>配置原则：<br>输入的APN名称需要符合APN命名规则，仅支持配置APN NI（Network Identifier），例如“huawei.com”。 |
+| VIRTUALAPN | 虚拟APN | 可选必选说明：可选参数<br>参数含义：该参数用于指定虚拟APN开关。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>如果该APN是虚拟APN，则该APN不能同时是Parking APN。 |
+| HASVPN | 绑定VPN | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否绑定IPv4 VPN。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| VPNINSTANCE | VPN实例名 | 可选必选说明：该参数在"HASVPN"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定IPv4 VPN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~31。<br>默认值：无<br>配置原则：无 |
+| HASVPNIPV6 | 绑定IPv6 VPN | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否绑定IPv6 VPN。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| VPNINSTANCEIPV6 | IPv6 VPN实例名 | 可选必选说明：该参数在"HASVPNIPV6"配置为"ENABLE"时为条件必选参数。<br>参数含义：该参数用于指定IPv6 VPN实例名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~31。<br>默认值：无<br>配置原则：无 |
+| SERVINGNODEPLMN | 根据SGSN/SGW映射PLMN | 可选必选说明：可选参数<br>参数含义：该参数用于指定根据SGSN/SGW IP映射的PLMN是否使能。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：ENABLE<br>配置原则：无 |
+| SERVINGNODERAT | 根据SGSN/SGW映射RAT | 可选必选说明：可选参数<br>参数含义：该参数用于指定根据SGSN/SGW映射RAT是否使能。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：ENABLE<br>配置原则：无 |
+| APPLAYERVOLUME | 仅统计应用层流量 | 可选必选说明：可选参数<br>参数含义：该参数用于统计应用层流量。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>该参数已弃用。 |
+| QCHATSWITCH | Qchat功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定Qchat功能开关。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>该参数已弃用。 |
+| EMERGENCYSWITCH | 支持紧急呼叫 | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否支持紧急呼叫。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| PSEUDOACTSWITCH | 支持假激活用户开关 | 可选必选说明：可选参数<br>参数含义：该参数用来配置APN支持假激活用户的开关配置。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- INHERIT（继承全局）<br>- DISABLE（不使能）<br>默认值：INHERIT<br>配置原则：<br>该参数已弃用。 |
+| NTSRSWITCH | 网络侧触发业务恢复功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用来设置是否开启指定APN的网络侧触发的业务恢复功能。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- INHERIT（继承全局）<br>- DISABLE（不使能）<br>默认值：INHERIT<br>配置原则：<br>业务处理过程中优先应用APN下的设置，只有当APN下配置为INHERIT时才应用SET FASTRECOVERY中的配置。 |
+| RESTORPGWSWITCH | 故障重启业务恢复功能PGW开关 | 可选必选说明：可选参数<br>参数含义：该参数用来设置是否开启指定APN的故障重启业务恢复功能PGW开关。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- INHERIT（继承全局）<br>- DISABLE（不使能）<br>默认值：INHERIT<br>配置原则：<br>业务处理过程中优先应用APN下的设置，只有当APN下配置为INHERIT时才应用SET FASTRECOVERY中的配置。 |
+| PDTNSWITCH | PDTN功能开关 | 可选必选说明：该参数在"RESTORPGWSWITCH"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于设置是否打开PGW触发的SGW故障重启场景下的业务恢复功能。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| REACWITHDEL | 去活消息携带reactivation-request开关 | 可选必选说明：可选参数<br>参数含义：该参数用来配置cause值是否允许携带reactivation-requested标识。<br>数据来源：本端规划<br>取值范围：<br>- DISABLE（不使能）<br>- ENABLE（使能）<br>- SPECIFIC_SCENE（特定场景）<br>默认值：DISABLE<br>配置原则：无 |
+| SCENELIST | 场景列表 | 可选必选说明：该参数在"REACWITHDEL"配置为"SPECIFIC_SCENE"时为条件可选参数。<br>参数含义：该参数用于指定特定场景下Delete Bearer Request消息或者PduSession Release Command消息中携带cause信元值为“reactivation requested”。<br>数据来源：本端规划<br>取值范围：<br>- GX_RET_CODE_5002（Gx接口返回5002错误码）<br>- UDM_PCSCF_RESTORATION（基于UDM的P-CSCF故障恢复）<br>- REL_DUE_TO_ADR_SUBDV_CONSD_IMS（AMF携带REL_DUE_TO_ADR_SUBDV_CONSD_IMS原因值发起删除）<br>- UPF_CAMPUS_IDLE_FAULT（会话空闲态园区UPF故障）<br>- N7_REACTIVE_REQUEST（N7接口发送重激活请求）<br>默认值：无<br>配置原则：无 |
+| USRINTSECACTSW | 用户发起的二次激活开关 | 可选必选说明：可选参数<br>参数含义：该参数用来配置用户是否开启二次激活开关。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| CHARGEPROFILE | 计费策略 | 可选必选说明：可选参数<br>参数含义：该参数指定计费策略。<br>数据来源：本端规划<br>取值范围：<br>- NULL（NULL）<br>- HLR（HLR注册）<br>- PREPAID_WITH_CREDIT_CONTROL（信用控制的预付费）<br>- POSTPAID_WITH_CREDIT_CONTROL（信用控制的后付费）<br>- POSTPAID（后付费）<br>- PREPAID（预付费）<br>默认值：NULL<br>配置原则：无 |
+| PPDSWITCH | Ppd功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定PPD（寻呼策略差异化）功能开关。当在APN下执行时，配置结果只对该APN有效。<br>数据来源：本端规划<br>取值范围：<br>- INHERIT（继承全局）<br>- ENABLE（使能）<br>- DISABLE（不使用）<br>默认值：INHERIT<br>配置原则：<br>业务处理过程中优先应用APN下的设置，只有当APN下配置为INHERIT时才应用SET SMGTPPROT中的配置。 |
+| ULCLFUNC | ULCL功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定ULCL功能开关。该参数仅对5G用户生效。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- INHERIT（继承全局）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>如果该APN开启ULCL功能，则该APN不能是Parking APN。 |
+| LADN | 局域数据网络 | 可选必选说明：可选参数<br>参数含义：本参数用于指定是否支持局域数据网络。<br>数据来源：全网规划<br>取值范围：<br>- Support（支持）<br>- NotSupport（不支持）<br>默认值：NotSupport<br>配置原则：无 |
+| REACTTRANS | 透明传输reactivation-request开关 | 可选必选说明：可选参数<br>参数含义：该参数表示当收到携带cause信元值为“reactivation requested”的Delete Bearer Request消息去活缺省承载时，SGW发送的Delete Bearer Request消息中是否携带cause信元值为“reactivation requested”。仅适用于SGW-C独立部署。<br>数据来源：全网规划<br>取值范围：枚举类型。<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：ENABLE<br>配置原则：<br>配置IMS业务的情况下开启本功能开关。 |
+| RELEASESKIPIND | 携带skipInd信元开关 | 可选必选说明：可选参数<br>参数含义：该参数用来配置网络侧发起的PDU释放流程中N1N2MessageTransferReq消息中是否携带skipInd信元。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>5G用户空闲态时，网络侧发起的PDU释放流程中不需要AMF寻呼UE配置为ENABLE。 |
+| S6BEMERGCYSERVICE | S6b Emergency Service 标识 | 可选必选说明：该参数在"EMERGENCYSWITCH"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于指定VoWiFi接入时，PGW-C向AAA Server发送的AAR消息是否携带Emergency Service标识。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| PPISWITCH | PPI 功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定PPI（寻呼策略指示）功能开关。<br>数据来源：本端规划<br>取值范围：<br>- INHERIT（继承全局）<br>- ENABLE（使能）<br>- DISABLE（不使用）<br>默认值：INHERIT<br>配置原则：<br>适用网元为SMF。<br>业务处理过程中优先应用APN下的设置，只有当APN下配置为INHERIT时才应用SET SMFFUNC中的配置。 |
+| LOCREPORT | 位置上报 | 可选必选说明：可选参数<br>参数含义：该参数用于指定该APN是否支持位置上报。若该参数配置为Enable，当PCF/PCRF等网元下发位置TRIGGER时，SMF/PGW-C/GGSN会向AMF/MME/SGSN发起位置订阅，并且当AMF/MME/SGSN向SMF/PGW-C/GGSN上报位置时，SMF/PGW-C/GGSN会通知给PCF/PCRF等网元。若该参数配置为Disable，则不会发起位置订阅。<br>数据来源：本端规划<br>取值范围：<br>- INHERIT（继承全局）<br>- ENABLE（使能）<br>- DISABLE（不使用）<br>默认值：INHERIT<br>配置原则：<br>业务处理过程中优先应用APN下的设置，只有当APN下配置为INHERIT时才应用SET SMCOMMFUNC中的配置。 |
+| PARKINGAPN | Parking APN | 可选必选说明：可选参数<br>参数含义：该参数用于设置执行Parking APN激活抑制策略时使用的APN。异常PDU会话建立流程中执行Parking APN抑制策略时使用Parking APN建立一个假PDU会话。该参数仅对5G用户生效。<br>数据来源：全网规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>如果该APN是Parking APN，则该APN不能同时是虚拟APN，并且不能开启ULCL功能。 |
+| TRAFFICDIST | 支持基于漫游地动态签约的分流策略控制 | 可选必选说明：可选参数<br>参数含义：该参数用于标识APN是否支持漫游地动态签约的分流策略控制的APN。<br>数据来源：全网规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>基于漫游地动态签约的分流策略控制特性，需要将Selected DNN的TRAFFICDIST设置为ENABLE。 |
+| ALWAYSPSAULCLSW | 主锚点Always分流开关 | 可选必选说明：可选参数<br>参数含义：该参数用于设置是否开启主锚点Always分流。<br>数据来源：全网规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| CALLINGNUMTYPE | 主叫号码类型 | 可选必选说明：可选参数<br>参数含义：该参数用于指定主叫号码类型。<br>数据来源：全网规划<br>取值范围：<br>- “MSISDN（移动用户的ISDN号码）”：表示主叫号码类型为MSISDN<br>- “IMSI（国际移动用户识别码）”：表示主叫号码类型为IMSI<br>- “IMEI（国际移动设备标识）”：表示主叫号码类型为IMEI<br>默认值：MSISDN<br>配置原则：无 |
+| NGHRVIRTUALAPN | 5G HR漫游场景H-SMF虚拟APN映射功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定5G HR漫游场景H-SMF(N16SMF)虚拟APN映射功能开关。<br>数据来源：本端规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：<br>5G HR漫游场景下，H-SMF如需开启虚拟APN映射功能，则将VirtualAPN参数及本参数设置为ENABLE；5G HR漫游场景下，H-SMF如无需开启虚拟APN映射功能，则将本参数设置为DISABLE。 |
+| INTELLSERSELUPF | 智能业务UPF选择开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制SMF选择UPF时，是否优先选择支持智能业务的UPF。<br>数据来源：全网规划<br>取值范围：<br>- ENABLE（使能）<br>- DISABLE（不使能）<br>默认值：DISABLE<br>配置原则：无 |
+| EXPOSURELOCRPT | 能力开放位置上报 | 可选必选说明：可选参数<br>参数含义：该参数用于指定该APN是否支持由能力开放订阅触发位置上报。<br>数据来源：本端规划<br>取值范围：<br>- INHERIT（继承全局）<br>- ENABLE（使能）<br>- DISABLE（不使用）<br>默认值：INHERIT<br>配置原则：<br>业务处理过程中优先应用APN下的设置，只有当APN下配置为INHERIT时才应用SET SMCOMMFUNC中的配置。 |
+
+## [使用实例](#ZH-CN_MMLREF_0209653747)
+
+当运营商需要接入外部包交换网络时，需要保障内部网络通信，这时候需要配置APN：
+
+```
+ADD APN: APN="huawei.com", HASVPN=DISABLE, HASVPNIPV6=DISABLE, RESTORPGWSWITCH=INHERIT;
+```

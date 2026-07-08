@@ -1,0 +1,82 @@
+---
+id: UDG@20.15.2@MMLCommand@ADD HPLMNLIST
+type: MMLCommand
+name: ADD HPLMNLIST（配置UPF设备的归属PLMN）
+nf: UDG
+version: 20.15.2
+verb: ADD
+object_keyword: HPLMNLIST
+command_category: 配置类
+applicable_nf:
+- SGW-U
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 32
+category_path:
+- 用户面服务管理
+- 路径管理
+- PFCP路径管理
+- UP信息管理
+- 归属地PLMN
+status: active
+---
+
+# ADD HPLMNLIST（配置UPF设备的归属PLMN）
+
+## 功能
+
+**适用NF：SGW-U、PGW-U、UPF**
+
+该命令用于增加UPF设备的一个归属PLMN。
+
+增加UPF的归属PLMN（即HPLMN）的目的是：
+
+区分用户是本地用户、拜访用户还是漫游用户。
+
+在UPF发给AAA的计费消息中携带UPF的归属PLMN信息。
+
+UPF支持三种类型的用户：本地用户、漫游用户、拜访用户。
+
+本地用户：就是本PLMN网络上签约，未漫游到其他PLMN且在本UPF激活的用户。
+
+漫游用户：就是本PLMN网络上签约，漫游到其他PLMN内且仍在本UPF激活的用户。
+
+拜访用户：就是其他PLMN网络上签约，漫游到本PLMN内，使用本UPF激活的用户。
+
+本地用户和漫游用户统称本PLMN的归属用户。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为32。
+- 整机最多可以配置32个HPLMN。
+- 执行此命令之前，需执行ADD MNCLEN命令配置MCC的MNC长度。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| MCC | 移动国家码 | 可选必选说明：必选参数<br>参数含义：该参数用于指定移动国家码。<br>数据来源：全网规划<br>取值范围：字符串类型，为3位数字，000～999。<br>默认值：无<br>配置原则：无 |
+| MNC | 移动网络号 | 可选必选说明：必选参数<br>参数含义：该参数用于指定移动网络号。<br>数据来源：全网规划<br>取值范围：字符串类型，可为2或3位数字，00~99或000~999。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@HPLMNLIST]] · UPF设备的归属PLMN（HPLMNLIST）
+
+## 使用实例
+
+增加一个移动国家码为460、移动网络号为02的归属PLMN：
+
+```
+ADD HPLMNLIST:MCC="460",MNC="02";
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/ADD-HPLMNLIST.md`

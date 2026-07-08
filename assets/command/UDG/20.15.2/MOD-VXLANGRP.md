@@ -1,0 +1,66 @@
+---
+id: UDG@20.15.2@MMLCommand@MOD VXLANGRP
+type: MMLCommand
+name: MOD VXLANGRP（修改VXLAN组）
+nf: UDG
+version: 20.15.2
+verb: MOD
+object_keyword: VXLANGRP
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 路径管理
+- VXLAN路径管理
+- VXLAN组信息
+status: active
+---
+
+# MOD VXLANGRP（修改VXLAN组）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于修改VXLAN隧道组。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 在5G LAN业务中，心跳检测开关建议关闭，否则可能影响报文正常转发。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| GRPNAME | VXLAN隧道组名称 | 可选必选说明：必选参数<br>参数含义：VXLAN隧道组名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：无 |
+| SRCINTF | VXLAN隧道源接口 | 可选必选说明：可选参数<br>参数含义：该参数用于配置VXLAN链路源端逻辑接口名称。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围为1～63。<br>默认值：无<br>配置原则：该参数使用ADD LOGICINF命令配置生成。 |
+| HEARTBEAT | 健康检查开关 | 可选必选说明：可选参数<br>参数含义：心跳检测开关。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能。<br>- ENABLE：使能。<br>默认值：无<br>配置原则：无 |
+| TIMETHRESHOLD | 时间阈值（秒） | 可选必选说明：可选参数<br>参数含义：该参数用于设置两次心跳检测间的时间阈值。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为3～60，单位是秒。<br>默认值：无<br>配置原则：无 |
+| HEARTSUCCLIMIT | 健康检查成功次数 | 可选必选说明：可选参数<br>参数含义：该参数用于设置VXLAN链路状态为up所需的心跳检测连续成功次数。当VXLAN链路状态为down且心跳检测连续成功次数达到这个值时，将链路的状态置为up。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～10。<br>默认值：无<br>配置原则：无 |
+| HEARTFAILLIMIT | 健康检查失败次数 | 可选必选说明：可选参数<br>参数含义：该参数用于设置VXLAN链路状态为down所需的心跳检测连续失败次数。当VXLAN链路状态为up且心跳检测连续失败达到这个值时，下次发送心跳检测报文前将链路的状态置为down。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～10。<br>默认值：无<br>配置原则：无 |
+| TIMEOUT | Ping探测超时时长（秒） | 可选必选说明：可选参数<br>参数含义：该参数用于设置心跳检测的超时时长，该值需要小于TIMETHRESHOLD。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～59，单位是秒。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@VXLANGRP]] · VXLAN组（VXLANGRP）
+
+## 使用实例
+
+将VXLAN隧道组的心跳检测开关修改为开启：
+
+```
+MOD VXLANGRP: GRPNAME="vxlangrp", HEARTBEAT=ENABLE;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MOD-VXLANGRP.md`

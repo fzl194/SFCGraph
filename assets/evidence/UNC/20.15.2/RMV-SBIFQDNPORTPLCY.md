@@ -1,0 +1,39 @@
+# 删除FQDN端口策略（RMV SBIFQDNPORTPLCY）
+
+- [命令功能](#ZH-CN_MMLREF_0000001427748053__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0000001427748053__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0000001427748053__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0000001427748053__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0000001427748053)
+
+**适用NF：AMF、SMF、NSSF、SMSF、NCG**
+
+该命令用于删除FQDN使用端口号的策略。
+
+## [注意事项](#ZH-CN_MMLREF_0000001427748053)
+
+该命令执行后只对新激活用户生效。
+
+#### [操作用户权限](#ZH-CN_MMLREF_0000001427748053)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0000001427748053)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SCENE | 场景 | 可选必选说明：必选参数<br>参数含义：该参数用于指定端口策略适用的场景。<br>数据来源：全网规划<br>取值范围：<br>- “TARGETADDR（TARGETADDR）”：根据对端FQDN组装对端Uri<br>- “LOCALURI（LOCALURI）”：根据本端FQDN组装本端CallbackUri或Location等Uri<br>默认值：无<br>配置原则：无 |
+| SCOPE | 范围 | 可选必选说明：必选参数<br>参数含义：该参数用于指定FQDN端口策略的适用范围。<br>数据来源：全网规划<br>取值范围：<br>- “INTERPLMNDEFAULT（INTERPLMNDEFAULT）”：PLMN间默认策略<br>- “BYPLMN（BYPLMN）”：指定PLMN的策略<br>默认值：无<br>配置原则：<br>如果同时有默认策略和基于PLMN的策略，优先使用基于PLMN的策略。 |
+| PLMN | 对端PLMN | 可选必选说明：该参数在"SCOPE"配置为"BYPLMN"时为条件必选参数。<br>参数含义：该参数用于指定策略适用的对端PLMN。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是0~6。<br>默认值：无<br>配置原则：<br>PLMN由MCC和MNC组成， MCC为3个十进制数字， MNC为2~3个十进制数字。例如PLMN=“12303”， 其中MCC=“123”， MNC=“03”。 |
+
+## [使用实例](#ZH-CN_MMLREF_0000001427748053)
+
+- 删除根据对端FQDN组装对端Uri场景下，PLMN间的默认策略。
+  ```
+  RMV SBIFQDNPORTPLCY:SCENE=TARGETADDR,SCOPE=INTERPLMNDEFAULT;
+  ```
+- 删除根据对端FQDN组装对端Uri场景下，对端PLMN为"12303"时的策略。
+  ```
+  RMV SBIFQDNPORTPLCY:SCENE=TARGETADDR,SCOPE=BYPLMN,PLMN="12303";
+  ```

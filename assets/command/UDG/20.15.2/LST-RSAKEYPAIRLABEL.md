@@ -1,0 +1,70 @@
+---
+id: UDG@20.15.2@MMLCommand@LST RSAKEYPAIRLABEL
+type: MMLCommand
+name: LST RSAKEYPAIRLABEL（查询RSA密钥对标签）
+nf: UDG
+version: 20.15.2
+verb: LST
+object_keyword: RSAKEYPAIRLABEL
+command_category: 查询类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- 操作维护
+- 接入配置管理
+- 密钥配置
+- 标签密钥
+status: active
+---
+
+# LST RSAKEYPAIRLABEL（查询RSA密钥对标签）
+
+## 功能
+
+该命令用于查询RSA密钥对标签。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| KEYPAIRLABEL | RSA密钥对标签名 | 可选必选说明：可选参数<br>参数含义：RSA密钥对标签名。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～35。名称只能使用数字、字母和下划线，不区分字母大小写。<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@RSAKEYPAIRLABEL]] · 创建RSA密钥对标签（RSAKEYPAIRLABEL）
+
+## 使用实例
+
+查询RSA密钥对标签：
+
+```
+LST RSAKEYPAIRLABEL:KEYPAIRLABEL="hw_key";
+```
+
+```
+
+RETCODE = 0 操作成功
+
+结果如下
+------------------------
+RSA密钥对标签名  =  hw_key
+       公钥长度  =  2048
+       公钥编码  =  3082010A0282010100D43AF1CDD5FC1884B6387A6646DC978C69E3DDB2B3EBAFB79891D7FAFDBE0251C72A8E6342D4D234FE559D5A14E0BB2509FAA29595F70D8EAACC0C45EBC2B413E3A3033872DE2B4243B8651501D280262148D4A5BA3F63FFBCD2F9D87C14837526F64B6D18A9C0FA3490A542F2D1D7F22F90B717241F2ACA5F5F1D997CF8348671DAD333C82E86A9841CD601AD7EB0EAE5C9FDFA3C351C63BF3A652124CF0C850A58B24C266118CB9D05DD4ED388F5DFBEBAFD130464EC4602DCAB1D4775F70CC9E47B4C7CF3B08159E295EDC56DC105FBB6416D19188AFC330639F3C461510B622B9821F9099B7AD402B93443C5E57C08235CAB656272D164451A89677D30C90203010001
+       公钥指纹  =  5e:89:65:c1:41:77:45:fa:2f:b2:c3:27:57:90:4f:8d
+(结果个数 = 1)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/LST-RSAKEYPAIRLABEL.md`

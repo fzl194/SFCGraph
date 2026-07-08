@@ -1,0 +1,71 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD GUAMI
+type: MMLCommand
+name: ADD GUAMI（增加AMF全局标识）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: GUAMI
+command_category: 配置类
+applicable_nf:
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 本局信息管理
+- AMF
+- AMF全局标识符管理
+status: active
+---
+
+# ADD GUAMI（增加AMF全局标识）
+
+## 功能
+
+**适用NF：AMF**
+
+该命令用于为AMF实例配置全局AMF标识符（GUAMI）。GUAMI的组成是[MCC] + [MNC] + [AMF Region ID] + [AMF Set ID] + [AMF Pointer]。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 同一个AMF Set内，各AMF配置的GUAMI不能相同。
+- AMF实例支持以GUAMI粒度指定备用AMF。
+- 对于同一个AMF实例，多个GUAMI配置间，AMFREGIONID和AMFSETID必须相同，当两条记录的PLMNIDX相同时，AMFPOINTER必须不同；当两条记录的PLMNIDX不同时，AMFPOINTER可以相同，也可以不同。
+- 本命令配置的GUAMI与通过ADD BACKUPGUAMI配置的GUAMI的PLMN相同时，AMFREGIONID和AMFSETID也必须相同，但AMFPOINTER必须不同。
+- 融合网元中MME的MMEGI ≠ 现网存量MMEGI且融合网元中MME的MMEGI + MMEC ≠ AMF Region ID + AMF Set ID + AMF Pointer。MMEC ≠ AMF Set ID(0~1位) + AMF Pointer。
+
+- 最多可输入256条记录。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| INDEX | GUAMI索引 | 可选必选说明：必选参数<br>参数含义：该参数用以在UNC系统内唯一标识某个GUAMI，一个AMF可以最多定义256个GUAMI。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~255。<br>默认值：无<br>配置原则：无 |
+| PLMNIDX | PLMN索引 | 可选必选说明：必选参数<br>参数含义：该参数用以表示组成GUAMI的PLMN信息的索引，PLMN索引通过ADD NGSRVPLMN命令配置。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是0~127。<br>默认值：无<br>配置原则：无 |
+| AMFREGIONID | AMF区域标识 | 可选必选说明：必选参数<br>参数含义：该参数用以表示AMF所在区域的标识。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度是2。采用十六进制表示（无须输入“0x”前缀），只能由数字（0-9），字母（A-F、a-f）组成。字母大小写不敏感。<br>默认值：无<br>配置原则：无 |
+| AMFSETID | AMF集合标识 | 可选必选说明：必选参数<br>参数含义：该参数用以表示AMF所在集合（即Pool）的标识。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度是3。采用十六进制表示（无须输入“0x”前缀），只能由数字（0-9），字母（A-F、a-f）组成，且第一个字符只能是数字0-3。字母大小写不敏感。<br>默认值：无<br>配置原则：无 |
+| AMFPOINTER | AMF指示符 | 可选必选说明：必选参数<br>参数含义：该参数用以表示组成GUAMI的AMF指示符信息。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度是2。采用十六进制表示（无须输入“0x”前缀），只能由数字（0-9），字母（A-F、a-f）组成，且第一个字符只能是数字0-3。字母大小写不敏感。<br>默认值：无<br>配置原则：无 |
+| BACKUPAMFNAME | 备用AMF名称 | 可选必选说明：可选参数<br>参数含义：该参数用以表示GUAMI的备用AMF信息。一个AMF可以划分为若干个GUAMI，每个GUAMI可以单独指定其备用AMF信息。当AMF故障、升级时，其业务可迁移到备用AMF。BACKUPAMFNAME为备份AMF上ADD AMFINFO命令中配置的AMF名称。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是0~150。可输入的字符有字母、十进制数字、“-”和“.”，并且开头和结尾只能是数字或者字母。字母大小写不敏感。<br>默认值：无<br>配置原则：<br>输入单空格将删除该参数已有配置项。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@GUAMI]] · AMF全局标识（GUAMI）
+
+## 使用实例
+
+为本AMF增加GUAMI标识，但未指定备用AMF，执行如下命令：
+
+```
+ADD GUAMI: INDEX=0, PLMNIDX=0, AMFREGIONID="88", AMFSETID="366", AMFPOINTER="11";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-GUAMI.md`

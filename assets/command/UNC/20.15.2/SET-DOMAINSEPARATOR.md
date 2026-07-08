@@ -1,0 +1,70 @@
+---
+id: UNC@20.15.2@MMLCommand@SET DOMAINSEPARATOR
+type: MMLCommand
+name: SET DOMAINSEPARATOR（设置域名前后缀分隔符）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: DOMAINSEPARATOR
+command_category: 配置类
+applicable_nf:
+- SMF
+- GGSN
+- PGW-C
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- 接入控制
+- 域名分隔符
+status: active
+---
+
+# SET DOMAINSEPARATOR（设置域名前后缀分隔符）
+
+## 功能
+
+**适用NF：SMF、GGSN、PGW-C**
+
+该命令用于设置域名前缀和后缀的分隔符。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| ENABLEPREFIX | ENABLESUFFIX | PREFIX | SUFFIX |
+| --- | --- | --- | --- |
+| ENABLE | ENABLE | # | @ |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| ENABLEPREFIX | 前缀域名分隔符开关 | 可选必选说明：可选参数<br>参数含义：该参数用于打开或关闭前缀域名分隔符开关。<br>数据来源：本端规划<br>取值范围：<br>- DISABLE（不使能）<br>- ENABLE（使能）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST DOMAINSEPARATOR查询当前参数配置值。<br>配置原则：<br>下发DSIABLE时具有清空前缀域名分割符的功能。 |
+| ENABLESUFFIX | 后缀域名分隔符开关 | 可选必选说明：可选参数<br>参数含义：该参数用于打开或关闭后缀域名分隔符开关。<br>数据来源：本端规划<br>取值范围：<br>- DISABLE（不使能）<br>- ENABLE（使能）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST DOMAINSEPARATOR查询当前参数配置值。<br>配置原则：<br>下发DSIABLE时具有清空后缀域名分割符的功能。 |
+| PREFIX | 前缀域名分隔符 | 可选必选说明：该参数在"ENABLEPREFIX"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于指定作为前缀的分隔符。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~4。PREFIX不能输入单空格。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST DOMAINSEPARATOR查询当前参数配置值。<br>配置原则：<br>字符串取值范围："@"，"#"，"%"，"/"，长度为0到4个字符，每个字符不允许重复，与SUFFIX中分隔符互斥。如果同时出现前缀分隔符和后缀分隔符，只处理前缀分隔符。<br>域名作为前缀，域名与用户名以前缀分隔符相隔。 如用户为“huawei.com#user1”，域名是“huawei.com”，作为前缀以分隔符“#”与用户名连接。可以指定一个或多个作为前缀的域名分隔符，在进行域名分割时，用配置的第一个域名分隔符来匹配整个用户名，如果匹配则以该域名分割符为准，否则以第二个分割符来匹配，以此类推。 |
+| SUFFIX | 后缀域名分隔符 | 可选必选说明：该参数在"ENABLESUFFIX"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于指定作为后缀的分隔符。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~4。SUFFIX不能输入单空格。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST DOMAINSEPARATOR查询当前参数配置值。<br>配置原则：<br>字符串取值范围："@"，"#"，"%"，"/"，长度为0到4个字符，每个字符不允许重复，与PREFIX中分隔符互斥。如果同时出现前缀分隔符和后缀分隔符，只处理前缀分隔符。<br>域名作为后缀，域名与用户名以后缀分隔符相隔。 如用户为“user1#huawei.com”，域名是“huawei.com”，作为后缀以分隔符“#”与用户名连接。可以指定一个或多个作为后缀的域名分隔符，在进行域名分割时，用配置的第一个域名分隔符来匹配整个用户名，如果匹配则以该域名分割符为准，否则以第二个分割符来匹配，以此类推。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@DOMAINSEPARATOR]] · 域名前后缀分隔符（DOMAINSEPARATOR）
+
+## 使用实例
+
+设置前缀分割符为“@%”，后缀分隔符为“#/”：
+
+```
+SET DOMAINSEPARATOR:ENABLEPREFIX=ENABLE,ENABLESUFFIX=ENABLE,PREFIX="@%",SUFFIX="#/";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-DOMAINSEPARATOR.md`

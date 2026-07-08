@@ -1,0 +1,118 @@
+---
+id: UDG@20.15.2@MMLCommand@LST PERITIMERANGE
+type: MMLCommand
+name: LST PERITIMERANGE（查询周期时间段）
+nf: UDG
+version: 20.15.2
+verb: LST
+object_keyword: PERITIMERANGE
+command_category: 查询类
+applicable_nf:
+- SGW-U
+- PGW-U
+- UPF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 业务匹配策略
+- 业务过滤器管理
+- 时间规则管理
+- 周期时间段
+status: active
+---
+
+# LST PERITIMERANGE（查询周期时间段）
+
+## 功能
+
+**适用NF：SGW-U、PGW-U、UPF**
+
+该命令用于显示配置的周期时间段信息。
+
+## 注意事项
+
+无。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TIMERANGENAME | 时间段名称 | 可选必选说明：可选参数<br>参数含义：该参数用于设置时间段的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写，以字母开头。<br>默认值：无<br>配置原则：无 |
+| PERITMRANGESEQ | 周期时间段序号 | 可选必选说明：可选参数<br>参数含义：该参数用于设置周期时间段的序号值。在一个时间段内，周期时间段序号不能重复，每一个序号代表一个周期时间段。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～32。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@PERITIMERANGE]] · 周期时间段（PERITIMERANGE）
+
+## 使用实例
+
+- 查询一条周期时间段记录：
+  ```
+  LST PERITIMERANGE: TIMERANGENAME="t1",PERITMRANGESEQ=2;
+  ```
+  ```
+   PERITMRANGESEQ=1;
+  RETCODE = 0  操作成功。
+
+  周期时间段信息
+  --------------
+           时间段名称  =  t1
+       周期时间段序号  =  2
+   周期时间段配置方式  =  每周的某些天
+               周日期  =  星期一
+             起始时间  =  10:00
+               起始日  =  星期天
+             结束时间  =  11:00
+               结束日  =  星期天
+           配置域名称  =  NULL
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查询所有周期时间段记录：
+  ```
+  LST PERITIMERANGE:;
+  ```
+  ```
+
+  RETCODE = 0  操作成功。
+
+  周期时间段信息
+  --------------
+  时间段名称    周期时间段序号    周期时间段配置方式    周日期    起始时间               起始日    结束时间               结束日    配置域名称
+
+  t1            1                 每周的某些天          星期一    10:00                  星期天    11:00                  星期天    NULL
+  t2            1                 每周的某些天          星期一    10:04                  星期天    11:04                  星期天    NULL
+  (结果个数 = 2)
+  ---    END
+  ```
+- 查询一个时间段下的所有周期时间段记录：
+  ```
+  LST PERITIMERANGE: TIMERANGENAME="t1";
+  ```
+  ```
+
+  RETCODE = 0  操作成功。
+
+  周期时间段信息
+  --------------
+           时间段名称  =  t1
+       周期时间段序号  =  1
+   周期时间段配置方式  =  每周的某些天
+               周日期  =  星期一
+             起始时间  =  10:00
+               起始日  =  星期天
+             结束时间  =  11:00
+               结束日  =  星期天
+           配置域名称  =  NULL
+  (结果个数 = 1)
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/LST-PERITIMERANGE.md`

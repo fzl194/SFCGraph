@@ -1,0 +1,78 @@
+---
+id: UNC@20.15.2@MMLCommand@EXP NODEINFO
+type: MMLCommand
+name: EXP NODEINFO（导出节点信息）
+nf: UNC
+version: 20.15.2
+verb: EXP
+object_keyword: NODEINFO
+command_category: 动作类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 系统管理
+- 版本信息
+status: active
+---
+
+# EXP NODEINFO（导出节点信息）
+
+## 功能
+
+该命令根据指定网元ID和类型导出相应的节点信息。当命令执行成功后可通过DSP NODEINFO来显示导出的节点信息。
+
+## 注意事项
+
+1.该命令执行后立即生效。 2.该命令仅在虚机场景下支持
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| MEID | 网元ID | 可选必选说明：可选参数<br>参数含义：该参数用于指定网元来查询节点信息；若不输入，则表示当前控制节点所在网元；网元ID可以通过LST ME命令查询出来。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~65535。<br>默认值：无<br>配置原则：无 |
+| TYPE | 类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定需要查询信息的类型。<br>数据来源：本端规划<br>取值范围：<br>- VF_DRIVER（VF驱动）<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NODEINFO]] · 节点信息（NODEINFO）
+
+## 使用实例
+
+查询网元的VF驱动版本。
+
+```
+%%EXP NODEINFO: MEID=0, TYPE=VF_DRIVER;%%
+RETCODE = 0  操作成功
+
+进度报文
+--------
+上报类型  =  导出节点信息
+状态  =  进行中    
+进度  =  40%    
+会话号  =  172.19.1.3_575  
+(结果个数 = 1)
+
+---    END
+
+%%EXP NODEINFO: MEID=0, TYPE=VF_DRIVER;%%
+RETCODE = 0  操作成功
+
+进度报文
+--------
+上报类型  =  导出节点信息
+状态  =  成功    
+会话号  =  172.19.1.3_575  
+(结果个数 = 1)
+
+共有2个报告
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/EXP-NODEINFO.md`

@@ -1,0 +1,57 @@
+# 查询TCP优化策略组合优先级（LST TOPLYPRIORITY）
+
+- [命令功能](#ZH-CN_CONCEPT_0000204286616998__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0000204286616998__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0000204286616998__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0000204286616998__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0000204286616998__1.3.5.1)
+- [输出结果说明](#ZH-CN_CONCEPT_0000204286616998__1.3.6.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0000204286616998)
+
+**适用NF：PGW-U、UPF**
+
+该命令用于查询TCP优化策略组合优先级。
+
+#### [注意事项](#ZH-CN_CONCEPT_0000204286616998)
+
+无。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0000204286616998)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0000204286616998)
+
+无。
+
+#### [使用实例](#ZH-CN_CONCEPT_0000204286616998)
+
+运营商需要查询所有的TCP优化策略组合优先级：
+
+```
+LST TOPLYPRIORITY:;
+```
+
+```
+
+RETCODE = 0  操作成功
+
+TCP优化策略组合优先级
+----------------
+配置类型           优先级
+TO_MATCH_ALL       7
+TO_MATCH_RAT_CELL  6
+TO_MATCH_CELL_IMSI 5
+TO_MATCH_RAT_IMSI  4
+TO_MATCH_RAT       3
+TO_MATCH_CELL      2
+TO_MATCH_IMSI      1
+(结果个数 = 7)
+
+---    END
+```
+
+#### [输出结果说明](#ZH-CN_CONCEPT_0000204286616998)
+
+参见SET TOPLYPRIORITY的参数说明。

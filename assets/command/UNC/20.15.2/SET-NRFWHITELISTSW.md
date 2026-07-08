@@ -1,0 +1,74 @@
+---
+id: UNC@20.15.2@MMLCommand@SET NRFWHITELISTSW
+type: MMLCommand
+name: SET NRFWHITELISTSW（设置NF白名单开关）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: NRFWHITELISTSW
+command_category: 配置类
+applicable_nf:
+- NRF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- NRF业务及策略管理
+- NRF业务参数
+- NF白名单配置
+status: active
+---
+
+# SET NRFWHITELISTSW（设置NF白名单开关）
+
+## 功能
+
+![](设置NF白名单开关（SET NRFWHITELISTSW）_35374753.assets/notice_3.0-zh-cn_2.png)
+
+该命令与ADD NRFWHITELIST配合使用，在白名单未设置完成时请勿打开此开关，否则未加入到白名单中的NF将无法正常注册、去注册、更新及维持到NRF的心跳功能。
+
+**适用NF：NRF**
+
+该命令用于设置NF白名单功能开关，用于避免新升级NRF未经功能验证完善后就接入业务，导致错误业务导流。
+
+该命令与NF白名单命令ADD NRFWHITELIST配合使用，在白名单未设置完成时请勿打开此开关，否则影响未加入到白名单中NF的正常注册、去注册、更新及心跳功能。
+
+该命令与SET NRFIPWHITELSTSW开关互斥，两者不能同时打开。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 主备或双活组网的场景下，如果需要配置此命令，则两个NRF上均需配置且配置参数一致。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| NFWHITELISTSW |
+| --- |
+| FUNC_OFF |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NFWHITELISTSW | NF白名单开关 | 可选必选说明：可选参数<br>参数含义：该参数用于表示NF白名单功能是否打开。开关设置为“FUNC_ON”，NRF将对白名单内外的NF做区别处理，正常处理配置的白名单内NF的注册、去注册、更新及心跳业务；不在白名单内的NF上述业务将不能被处理。开关设置为“FUNC_OFF”，NRF不对白名单内外NF区别处理，正常处理所有NF的注册、去注册、更新及心跳业务。<br>数据来源：本端规划<br>取值范围：<br>- FUNC_ON（打开）<br>- FUNC_OFF（关闭）<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST NRFWHITELISTSW查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NRFWHITELISTSW]] · NF白名单开关（NRFWHITELISTSW）
+
+## 使用实例
+
+运营商希望对NF的注册、去注册、更新及心跳进行有效控制。开关打开，NRF将使用设置的NF白名单对NF的注册、去注册、更新及心跳进行控制，未在白名单内的NF将无法正常注册、去注册、更新以及维持到NRF的心跳。
+
+```
+SET NRFWHITELISTSW: NFWHITELISTSW=FUNC_ON;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-NRFWHITELISTSW.md`

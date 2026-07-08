@@ -1,0 +1,64 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV NSDNN
+type: MMLCommand
+name: RMV NSDNN（删除网络切片支持的DNN）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: NSDNN
+command_category: 配置类
+applicable_nf:
+- SMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 接口管理
+- 服务化接口管理
+- 注册与服务发现
+- 网络切片内DNN管理
+status: active
+---
+
+# RMV NSDNN（删除网络切片支持的DNN）
+
+## 功能
+
+**适用NF：SMF**
+
+该命令用于删除指定网络切片支持的DNN。(不影响已激活的会话，影响后续将要激活的PDU会话)。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 当不输入BINDSMFINFOID时，将删除所有与NSIDX，DNN匹配的配置。
+- 当期望精确删除某一条配置时，BINDSMFINFOID不能为空。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NSIDX | 网络切片索引 | 可选必选说明：必选参数<br>参数含义：该参数用于指定网络切片，可以使用LST PLMNNS命令查询获取。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是0~4294967295。<br>默认值：无<br>配置原则：<br>本参数通过ADD NFNS命令进行配置，且NF类型必须是NfSMF。 |
+| DNN | 数据网络名称 | 可选必选说明：必选参数<br>参数含义：该参数用于表示指定的网络切片支持的数据网络名称。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是0~63。只能由“-”、数字、大小写字母和“.”组成，不能以“.”开头且不能出现连续两个“.”。不支持空格及“_”、“#”、“$”、“&”、“%”、“^”、“（”、“）”、“，”、“/”、“;”、“:”、“””、“`”等特殊字符，不区分大小写。可配置通配DNN，即“*”，表示支持所有DNN。<br>默认值：无<br>配置原则：<br>确保为S-NSSAI增加其支持的DNN在LST APN中能够查询到。 |
+| BINDSMFINFOID | 绑定的SMFINFO ID | 可选必选说明：可选参数<br>参数含义：该参数用于指定绑定的SMFINFOEXT记录。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~32。<br>默认值：无<br>配置原则：<br>- 默认为空，表示在SmfInfo及SmfInfoList中所有SmfInfo里都携带。<br>- 如果期望仅在SmfInfoList中某个SmfInfo中携带，该参数取值需要与通过与ADD SMFINFOEXT命令配置的SMFINFOID一致。<br>- 如果期望仅在SmfInfo中携带，取值应为“bind_smf_info”时。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NSDNN]] · 网络切片支持的DNN（NSDNN）
+
+## 使用实例
+
+删除eMBB切片的DNN huawei.com：
+
+```
+RMV NSDNN: NSIDX=0, DNN="huawei.com";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-NSDNN.md`

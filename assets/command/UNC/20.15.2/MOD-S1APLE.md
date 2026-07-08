@@ -1,0 +1,62 @@
+---
+id: UNC@20.15.2@MMLCommand@MOD S1APLE
+type: MMLCommand
+name: MOD S1APLE（修改S1AP本地实体）
+nf: UNC
+version: 20.15.2
+verb: MOD
+object_keyword: S1APLE
+command_category: 配置类
+applicable_nf:
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- S1接口管理
+- S1AP本地实体
+status: active
+---
+
+# MOD S1APLE（修改S1AP本地实体）
+
+## 功能
+
+**适用网元：MME**
+
+该命令用于修改一条S1AP本端实体配置。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 执行该命令可修改S1AP链路的“SCTP协议参数索引”、“链路本地实体名”和“交叉路径是否可用”的全部或部分信息，但不能修改“链路本地实体号”。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| LLEINDEX | 链路本地实体号 | 可选必选说明：必选参数<br>参数含义：待修改的S1AP链路本地实体号。<br>数据来源：整网规划<br>取值范围：0～63<br>默认值：无<br>说明：可以通过<br>[**LST S1APLE**](查询S1AP本地实体(LST S1APLE)_72345855.md)<br>命令查看已有配置，确认所要修改的<br>“S1AP链路本地实体号”<br>。 |
+| CROSSIPFLAG | 交叉路径是否可用 | 可选必选说明：可选参数<br>参数含义：该参数用于指定SCTP双归属的交叉路径是否可用。<br>数据来源：整网规划<br>取值范围：<br>- “NO(否)”<br>- “YES(是)”<br>默认值：无<br>配置原则：<br>- 交叉路径会增加组网的复杂度，建议配置为交叉路径不可用。<br>- 对端eNodeB需配置两个IP地址，才能体现此功能。<br>- SCTP双归属下配置交叉路径不可用时，本端IPv4(IPv6)地址1与对端IPv4(IPv6)地址1、本端IPv4(IPv6)地址2与对端IPv4(IPv6)地址2两条路径可用，本端IPv4(IPv6)地址1与对端IPv4(IPv6)地址2、本端IPv4(IPv6)地址2与对端IPv4(IPv6)地址1两条路径不可用。<br>- SCTP双归属下配置交叉路径可用时，本端IPv4(IPv6)地址1与对端IPv4(IPv6)地址1、本端IPv4(IPv6)地址1与对端IPv4(IPv6)地址2、本端IPv4(IPv6)地址2与对端IPv4(IPv6)地址1、本端IPv4(IPv6)地址2与对端IPv4(IPv6)地址2四条路径均可用。<br>说明：修改交叉路径是否可用将使链路的可靠性受到影响。若之前交叉路径可用，且本端IPv4(IPv6)地址1与对端IPv4(IPv6)地址1，本端IPv4(IPv6)地址2与对端IPv4(IPv6)地址2两条路径故障，正在使用交叉路径进行通信，修改为交叉路径不可用时，将导致链路中断。 |
+| SCTPINDEX | SCTP协议参数索引 | 可选必选说明：可选参数<br>参数含义：该参数用于指定S1AP链路所引用的SCTP协议参数索引。<br>前提条件：该参数已增加，参见<br>[**ADD SCTPPARA**](../../信令传输管理/SCTP管理/增加SCTP协议参数(ADD SCTPPARA)_26306150.md)<br>。<br>数据来源：整网规划<br>取值范围：0～65534<br>默认值：无<br>说明：修改SCTP协议参数索引影响请参见<br>[**ADD SCTPPARA**](../../信令传输管理/SCTP管理/增加SCTP协议参数(ADD SCTPPARA)_26306150.md)<br>。 |
+| LLNAME | 链路本地实体名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定链路本地实体名称，标识S1AP链路。<br>数据来源：整网规划<br>取值范围：1～32位字符串<br>默认值：无<br>配置原则：建议取有实际意义的名称，以方便识别。例如<br>“To-eNodeB0”<br>。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@S1APLE]] · S1AP本地实体（S1APLE）
+
+## 使用实例
+
+将链路本地实体号为5的S1AP链路的SCTP协议参数索引改为1，交叉路径是否可用改为YES:
+
+MOD S1APLE: LLEINDEX=5, CROSSIPFLAG=YES, SCTPINDEX=1;
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/MOD-S1APLE.md`

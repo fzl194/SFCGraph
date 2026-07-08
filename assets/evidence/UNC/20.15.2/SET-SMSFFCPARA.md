@@ -1,0 +1,48 @@
+# 设置SMSF自保流控的参数（SET SMSFFCPARA）
+
+- [命令功能](#ZH-CN_MMLREF_0249644938__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0249644938__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0249644938__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0249644938__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0249644938)
+
+**适用NF：SMSF**
+
+该命令用于设置流控等级对应的流控参数。
+
+当SMSF需要设置不同流控级别对应的流控响应时，可配置此命令。
+
+## [注意事项](#ZH-CN_MMLREF_0249644938)
+
+- 该命令执行后立即生效。
+
+- 双活组网的场景下，如果需要配置此命令，则两个SMSF上均需执行此命令，且配置参数一致。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| FCSWITCH | LOWRSP | MEDIUMRSP | HIGHRSP | MAPCAUSE |
+| --- | --- | --- | --- | --- |
+| ON | ServiceUnavailable_503 | ServiceUnavailable_503 | ServiceUnavailable_503 | Resource_Limitation |
+
+#### [操作用户权限](#ZH-CN_MMLREF_0249644938)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0249644938)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| FCSWITCH | 流控开关 | 可选必选说明：必选参数<br>参数含义：该参数用于表示SMSF流控开关状态。<br>数据来源：本端规划<br>取值范围：<br>- ON（开启）<br>- OFF（关闭）<br>默认值：无。<br>配置原则：无 |
+| LOWRSP | 轻度过载流控响应 | 可选必选说明：该参数在"FCSWITCH"配置为"ON"时为条件必选参数。<br>参数含义：该参数用于表示轻度过载对应HTTP消息响应码。CPU阈值范围为大于等于75%、小于80%。<br>数据来源：本端规划<br>取值范围：<br>- “NoResponse（丢弃）”：SMSF收到AMF的请求后直接将消息丢弃。<br>- “ServiceUnavailable_503（服务不可用）”：SMSF收到AMF的请求后直接回复响应，错误码为503。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFCPARA查询当前参数配置值。<br>配置原则：无 |
+| MEDIUMRSP | 中度过载流控响应 | 可选必选说明：该参数在"FCSWITCH"配置为"ON"时为条件必选参数。<br>参数含义：该参数用于表示中度过载对应HTTP消息响应码。CPU阈值范围为大于等于80%、小于85%。<br>数据来源：本端规划<br>取值范围：<br>- “NoResponse（丢弃）”：SMSF收到AMF的请求后直接将消息丢弃。<br>- “ServiceUnavailable_503（服务不可用）”：SMSF收到AMF的请求后直接回复响应，错误码为503。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFCPARA查询当前参数配置值。<br>配置原则：无 |
+| HIGHRSP | 重度过载流控响应 | 可选必选说明：该参数在"FCSWITCH"配置为"ON"时为条件必选参数。<br>参数含义：该参数用于表示重度过载对应HTTP消息响应码。CPU阈值范围为大于等于85%、小于100%。<br>数据来源：本端规划<br>取值范围：<br>- “NoResponse（丢弃）”：SMSF收到AMF的请求后直接将消息丢弃。<br>- “ServiceUnavailable_503（服务不可用）”：SMSF收到AMF的请求后直接回复响应，错误码为503。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFCPARA查询当前参数配置值。<br>配置原则：无 |
+| MAPCAUSE | MAP接口流控响应 | 可选必选说明：该参数在"FCSWITCH"配置为"ON"时为条件必选参数。<br>参数含义：该参数用于表示CPU过载时MAP接口的消息响应原因值。<br>数据来源：本端规划<br>取值范围：<br>- “Resource_Limitation（资源限制）”：29002协议原因值Resource Limitation(51)<br>- “System_Failure（系统错误）”：29002协议原因值System Failure(34)<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST SMSFFCPARA查询当前参数配置值。<br>配置原则：无 |
+
+## [使用实例](#ZH-CN_MMLREF_0249644938)
+
+运营商希望设置流控等级为轻度过载的流控响应为“503”，中度过载的响应码为“503”，重度过载的流控响应码为“503”，MAP接口流控响应原因值为资源限制时，执行如下命令：
+
+```
+SET SMSFFCPARA: FCSWITCH=ON, LOWRSP=ServiceUnavailable_503, MEDIUMRSP=ServiceUnavailable_503, HIGHRSP=ServiceUnavailable_503, MAPCAUSE=Resource_Limitation;
+```

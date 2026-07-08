@@ -1,0 +1,78 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD NGUSRSECPARA
+type: MMLCommand
+name: ADD NGUSRSECPARA（增加5G用户安全配置）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: NGUSRSECPARA
+command_category: 配置类
+applicable_nf:
+- AMF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 5G接入业务管理
+- 业务安全管理
+- 用户安全参数管理
+status: active
+---
+
+# ADD NGUSRSECPARA（增加5G用户安全配置）
+
+## 功能
+
+![](增加5G用户安全配置（ADD NGUSRSECPARA）_09653737.assets/notice_3.0-zh-cn_2.png)
+
+如果加密性算法或者完整性算法配置有误，可能导致终端接入异常。
+
+**适用NF：AMF**
+
+此命令用于增加指定用户的鉴权、加密、完整性保护等安全配置。
+
+## 注意事项
+
+- 命令执行后在用户发起下一次涉及安全管理流程时生效。
+
+- 最多可输入1000条记录。
+- 指定号段的用户采用对应的安全配置参数，未指定的用户采用默认的安全配置参数。
+- 系统中缺省生成一条记录用于控制所有用户的安全策略。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| SUBRANGE | IMSIPRE | INTEGALG | ENCRYALG | AUTHEVENT | AUTHPERIOD |
+| --- | --- | --- | --- | --- | --- |
+| ALL_USER | NULL | NIA1-1&NIA2-1&NIA3-1 | NEA0-1&NEA1-1&NEA2-1&NEA3-1 | INIT_REG-1&MOBL_INTER_REG-1&IDLE_SYSCHG_REG-1 | 24 |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SUBRANGE | 用户范围 | 可选必选说明：必选参数<br>参数含义：该参数用于指定配置安全参数的用户范围。<br>数据来源：本端规划<br>取值范围：<br>- “ALL_USER（所有用户）”：所有用户<br>- “IMSI_PREFIX（指定IMSI前缀）”：指定IMSI前缀<br>默认值：无<br>配置原则：无 |
+| IMSIPRE | IMSI前缀 | 可选必选说明：该参数在"SUBRANGE"配置为"IMSI_PREFIX"时为条件必选参数。<br>参数含义：该参数用于系统根据指定用户的IMSI前缀进行匹配，从而区分不同的用户群。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是5~15。只允许输入十进制数字（0-9）。<br>默认值：无<br>配置原则：无 |
+| INTEGALG | 完整性算法 | 可选必选说明：可选参数<br>参数含义：该参数用于指定系统支持的完整性算法。<br>数据来源：全网规划<br>取值范围：<br>- “NIA1（SNOW 3G完整性算法）”：SNOW 3G完整性算法<br>- “NIA2（AES完整性算法）”：AES完整性算法<br>- “NIA3（ZUC完整性算法）”：ZUC完整性算法<br>默认值：无<br>配置原则：<br>根据33.501协议，NIA0仅用于紧急业务，因此系统只对紧急业务支持NIA0，不支持配置。 |
+| ENCRYALG | 加密算法 | 可选必选说明：可选参数<br>参数含义：该参数用于指定系统支持的加密算法。<br>数据来源：全网规划<br>取值范围：<br>- “NEA0（空加密算法）”：空加密算法<br>- “NEA1（SNOW 3G加密算法）”：SNOW 3G加密算法<br>- “NEA2（AES加密算法）”：AES加密算法<br>- “NEA3（ZUC加密算法）”：ZUC加密算法<br>默认值：无<br>配置原则：无 |
+| AUTHEVENT | 鉴权事件 | 可选必选说明：可选参数<br>参数含义：该参数用于指定需要对哪些流程进行强制鉴权。<br>数据来源：全网规划<br>取值范围：<br>- “INIT_REG（初始注册）”：初始注册<br>- “MOBL_INTRA_REG（移动性INTRA注册）”：移动性INTRA注册<br>- “MOBL_INTER_REG（移动性INTER注册）”：移动性INTER注册<br>- “PROD_REG（周期性注册）”：周期性注册<br>- “REG_AFT_INTRAHO（INTRA切换流程后的注册）”：INTRA切换流程后的注册<br>- “REG_AFT_INTERHO（INTER切换流程后的注册）”：INTER切换流程后的注册<br>- “IDLE_SYSCHG_REG（空闲态EPS到5GS注册）”：空闲态EPS到5GS注册<br>- “CONN_SYSCHG_REG（连接态EPS到5GS切换后的注册）”：连接态EPS到5GS切换后的注册<br>- “DEREGISTRATION（去注册）”：去注册<br>- “SERVICE_REQUEST（服务请求）”：服务请求<br>- “CONNECT_MOD（GUTI重分配）”：GUTI重分配<br>默认值：无<br>配置原则：<br>建议在初始注册、移动性Inter注册、空闲态EPS到5GS注册中开启强制鉴权功能。<br>在进行网络规划时候，建议“REG_AFT_INTRAHO（INTRA切换流程后的注册流程）”、“REG_AFT_INTERHO（INTER切换流程后的注册流程）”和“CONN_SYSCHG_REG(连接态EPS到5GS切换后的注册流程)”关闭强制鉴权，否则对Handover流程后注册流程进行鉴权将导致整个切换流程时延增大。<br>如果希望某个流程开启强制鉴权功能，则勾选该流程选项。<br>如果希望某个流程不开启强制鉴权功能，则去勾选该流程选项。<br>如果希望系统保持某个流程当前设置值，则灰化该流程选项。<br>说明：<br>当AMF无安全上下文，或者请求消息完整性检查失败时，会强制进行鉴权流程，不受本参数控制。 |
+| DESC | 描述信息 | 可选必选说明：可选参数<br>参数含义：该参数是对用户群安全配置的描述，在运维中起助记的作用。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~32。<br>默认值：无<br>配置原则：<br>输入单空格将删除该参数已有配置项。 |
+| AUTHPERIOD | 鉴权周期(h) | 可选必选说明：可选参数<br>参数含义：当用户在去注册态或空闲态发起注册流程或者在空闲态发起服务请求流程，距离系统记录的上次鉴权的时间间隔超过该参数指定的周期时，在该流程中强制发起鉴权。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是0~24，单位是小时。<br>默认值：24<br>配置原则：<br>若取值为0，表示不启用周期鉴权功能，不强制发起鉴权。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NGUSRSECPARA]] · 5G用户安全配置（NGUSRSECPARA）
+
+## 使用实例
+
+为IMSI前缀为“123031200100001”的用户增加安全配置，支持所有完整性算法和加密算法，执行如下命令：
+
+```
+ADD NGUSRSECPARA: SUBRANGE=IMSI_PREFIX, IMSIPRE="123031200100001", INTEGALG=NIA1-1&NIA2-1&NIA3-1, ENCRYALG=NEA0-1&NEA1-1&NEA2-1&NEA3-1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-NGUSRSECPARA.md`

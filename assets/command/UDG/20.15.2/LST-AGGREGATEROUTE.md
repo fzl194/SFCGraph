@@ -1,0 +1,104 @@
+---
+id: UDG@20.15.2@MMLCommand@LST AGGREGATEROUTE
+type: MMLCommand
+name: LST AGGREGATEROUTE（查询BGP聚合路由）
+nf: UDG
+version: 20.15.2
+verb: LST
+object_keyword: AGGREGATEROUTE
+command_category: 查询类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- 路由管理
+- BGP管理
+- BGP聚合路由
+status: active
+---
+
+# LST AGGREGATEROUTE（查询BGP聚合路由）
+
+## 功能
+
+该命令用于查看聚合IPv4或IPv6路由。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| VRFNAME | VPN实例名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定VPN实例名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无 |
+| AFTYPE | 地址族类型 | 可选必选说明：可选参数<br>参数含义：该参数用于指定VRF的地址族类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- ipv4uni：IPv4地址族。<br>- ipv6uni：IPv6地址族。<br>默认值：无 |
+| AGGREADDRESS | IPv4聚合地址 | 可选必选说明：条件可选参数<br>前提条件：该参数在“AFTYPE”配置为“ipv4uni”时为可选参数。<br>参数含义：该参数用于指定IPv4聚合路由的地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无<br>配置原则：配置该参数时，需要同时配置MASKLENGTH指定聚合路由的掩码长度。 |
+| MASKLENGTH | IPv4地址掩码长度 | 可选必选说明：条件可选参数<br>前提条件：该参数在“AFTYPE”配置为“ipv4uni”时为可选参数。<br>参数含义：该参数用于指定IPv4聚合路由的掩码长度。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～32。<br>默认值：无<br>配置原则：配置AGGREADDRESS参数时，需要配置本参数指定聚合路由的掩码长度，掩码长度范围为0~32。 |
+| AGGREADDRESSV6 | IPv6聚合地址 | 可选必选说明：条件可选参数<br>前提条件：该参数在“AFTYPE”配置为“ipv6uni”时为可选参数。<br>参数含义：该参数用于指定IPv6聚合路由的地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：配置该参数时，需要同时配置MASKLENGTHV6指定路由的前缀长度。 |
+| MASKLENGTHV6 | IPv6地址掩码长度 | 可选必选说明：条件可选参数<br>前提条件：该参数在“AFTYPE”配置为“ipv6uni”时为可选参数。<br>参数含义：该参数用于指定IPv6聚合路由的前缀长度。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～128。<br>默认值：无<br>配置原则：配置AGGREADDRESSV6参数时，需要配置本参数指定引入路由的前缀长度，前缀长度范围为0~128。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@AGGREGATEROUTE]] · BGP聚合路由（AGGREGATEROUTE）
+
+## 使用实例
+
+- 查看名称为"vrf1"的BGP VPN实例下的IPv4聚合路由：
+  ```
+  LST AGGREGATEROUTE:VRFNAME="vrf1",AFTYPE=ipv4uni,AGGREADDRESS="10.2.2.2",MASKLENGTH=32;
+  ```
+  ```
+
+  RETCODE = 0  操作成功。
+
+  结果如下
+  --------
+       VPN实例名称  =  vrf1
+        地址族类型  =  IPv4uni
+      IPv4聚合地址  =  10.2.2.2
+  IPv4地址掩码长度  =  32
+      IPv6聚合地址  =  ::
+  IPv6地址掩码长度  =  0
+        AS Set使能  =  FALSE
+      具体路由抑制  =  FALSE
+          属性策略  =  NULL
+        路由源策略  =  NULL
+      通告抑制策略  =  NULL
+  (结果个数 = 1)
+  ---    END
+  ```
+- 查看名称为"vrf1"的BGP VPN实例下的IPv6聚合路由：
+  ```
+  LST AGGREGATEROUTE:VRFNAME="vrf1",AFTYPE=ipv6uni,AGGREADDRESSV6="2001:db8:1:1:1:1:1:1",MASKLENGTHV6=32;
+  ```
+  ```
+
+  RETCODE = 0  操作成功。
+
+  结果如下
+  --------
+       VPN实例名称  =  vrf1
+        地址族类型  =  IPv6uni
+      IPv4聚合地址  =  0.0.0.0
+  IPv4地址掩码长度  =  0
+      IPv6聚合地址  =  2001:db8:1:1:1:1:1:1
+  IPv6地址掩码长度  =  32
+        AS Set使能  =  FALSE
+      具体路由抑制  =  FALSE
+          属性策略  =  NULL
+        路由源策略  =  NULL
+      通告抑制策略  =  NULL
+  (结果个数 = 1)
+  ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/LST-AGGREGATEROUTE.md`

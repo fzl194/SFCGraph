@@ -1,0 +1,49 @@
+# 修改APN控制参数配置(MOD APNCTRL)
+
+- [命令功能](#ZH-CN_MMLREF_0000001126305282__1.3.1.1)
+- [注意事项](#ZH-CN_MMLREF_0000001126305282__1.3.2.1)
+- [本地用户权限](#ZH-CN_MMLREF_0000001126305282__1.3.3.1)
+- [网管用户权限](#ZH-CN_MMLREF_0000001126305282__1.3.4.1)
+- [参数说明](#ZH-CN_MMLREF_0000001126305282__1.3.5.1)
+- [使用实例](#ZH-CN_MMLREF_0000001126305282__1.3.6.1)
+
+#### [命令功能](#ZH-CN_MMLREF_0000001126305282)
+
+**适用网元：SGSN、MME**
+
+该命令用于修改基于APN的信令拥塞控制和固定终端寻呼优化的控制参数，基于APN的信令拥塞控制的控制参数包括 “签约APN” 、 “APN优先级” 、 “Backoff Timer分配开关” 、 “附着拒绝原因值” 和 “识别异常附着行为的门限(次/小时)” ，固定终端寻呼优化的控制参数包括 “签约APN” 和 “Ready Timer定时器时长” 。
+
+#### [注意事项](#ZH-CN_MMLREF_0000001126305282)
+
+- 此命令执行后立即生效。
+- 该命令部分参数与相关特性license共同完成该特性的开启，请在设置参数前使用[**DSP LICENSE**](../../../../../平台服务管理/操作维护/License管理/显示License(DSP LICENSE)_00360098.md)命令确认对应特性license是否得到授权，执行[**LST LICENSESWITCH**](../../../../../平台服务管理/操作维护/License管理/查询License配置项开关（LST LICENSESWITCH）_09651570.md)命令确认特性开关状态为“ENABLE(打开)”，具体相关特性请参考参数的说明。
+
+#### [本地用户权限](#ZH-CN_MMLREF_0000001126305282)
+
+manage-ug；system-ug
+
+#### [网管用户权限](#ZH-CN_MMLREF_0000001126305282)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_MMLREF_0000001126305282)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SUBSCRIBEDAPN | 签约APN | 可选必选说明：必选参数<br>参数含义：该参数用于指定<br>“签约APN”<br>，即需要进行APN拥塞控制或寻呼优化的APN，此APN为用户签约的APN。<br>数据来源：整网规划<br>取值范围：1~62位字符串<br>默认值：无<br>配置原则：<br>- 每条记录中的“签约APN”字段不能重复。<br>- “签约APN”（APN网络标识地址）由一个或多个LABEL构成，各LABEL间用“.”间隔。每个LABEL的构成字符只能是字母A～Z或a～z、数字0～9和中划线“-”，字母不区分大小写。APN网络标识地址不能以“rac”、“lac”、“sgsn”或“rnc”开头，不能以“.gprs”结尾。 |
+| APNTYPE | APN类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定APN的用途类型。<br>数据来源：整网规划<br>取值范围：<br>- “CONGESTION_CTRL(拥塞控制APN)”：即签约APN应用于基于APN的信令拥塞控制。<br>- “CALL_OPTIMIZE(固定终端寻呼优化APN)”：即签约APN应用于固定终端寻呼优化。<br>- “BOTH(Both)”：即签约APN应用于基于APN的信令拥塞控制和固定终端寻呼优化。<br>默认值：无<br>说明：APN控制参数配置记录中的<br>“APNTYPE （APN类型）”<br>不允许修改，如果希望修改某<br>“SUBSCRIBEDAPN（签约APN）”<br>的类型，只能先删除该<br>“SUBSCRIBEDAPN（签约APN）”<br>的记录，再重新添加期望类型的该<br>“SUBSCRIBEDAPN（签约APN）”<br>的记录。<br>说明：- 当参数设置为“CONGESTION_CTRL(拥塞控制APN)”或“BOTH(Both)”时，“基于APN的信令拥塞控制”特性的相关license授权并开启后，此参数配置才生效（特性编号：WSFD-206003，License部件编码：LKV2ASCC01）。<br>- 当参数设置为“CALL_OPTIMIZE(固定终端寻呼优化APN)”或“BOTH(Both)”时，“固定终端寻呼优化”特性的相关license授权并开启后，此参数配置才生效（特性编号：WSFD-206004，License部件编码：LKV2POFT01）。 |
+| APNPRIORITY | APN优先级 | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定<br>“APN优先级”<br>。当用户终端同时签约多个APN，且这些APN都通过本命令配置了基于APN的信令拥塞控制参数时，则优先对高优先级的APN进行拥塞控制。<br>数据来源：整网规划<br>前提条件：该参数在<br>“APN类型”<br>参数配置为<br>“CONGESTION_CTRL(拥塞控制APN)”<br>或<br>“BOTH(Both)”<br>后生效。<br>取值范围：<br>- “HIGH(高)”<br>- “MIDDLE(中)”<br>- “LOW(低)”<br>- “RESERVED1(保留1)”<br>- “RESERVED2(保留2)”<br>- “RESERVED3(保留3)”<br>- “RESERVED4(保留4)”<br>默认值：无<br>配置原则：建议值为<br>“LOW(低)”<br>。<br>说明：- 系统当前支持高、中和低三种优先级，其他的为后续版本扩展预留。 |
+| BACKOFFSW | Backoff Timer分配开关 | 可选必选说明：条件可选参数<br>参数含义：该参数用于打开或关闭<br>“Backoff Timer分配开关”<br>。<br>数据来源：整网规划<br>前提条件：该参数在<br>“APN类型”<br>参数配置为<br>“CONGESTION_CTRL(拥塞控制APN)”<br>或<br>“BOTH(Both)”<br>后生效。<br>取值范围：<br>- “OFF(关)”<br>- “ON(开)”<br>默认值：无<br>配置原则：<br>- 当该开关开启时，SGSN/MME收到异常终端的附着请求消息后，在附着拒绝消息中分配Backoff Timer。Backoff Timer为UE和网络启动的定时器，在该定时器时间内，UE不允许发起附着流程。如果UE在定时器时间内仍然发起了附着流程，SGSN/MME会拒绝该流程。<br>- 当该开关关闭时，SGSN/MME收到异常终端的附着请求消息后，在附着拒绝消息中不分配Backoff Timer。<br>- 异常终端由“ATTACHTHRESH（识别异常附着行为的门限(次/小时)）”配置决定。<br>- 建议值为“OFF(关)”。<br>说明：- Backoff Timer的取值范围为11~50分钟，每个用户的定时器时长有差异，便于将用户的重试分散开。 |
+| MINBOT | Back off timer最小值（秒） | 可选必选说明：条件可选参数<br>参数含义：本参数用于设置Back off timer的最小值，用于计算发给终端的附着拒绝消息中的Back off timer时长。<br>前提条件：该参数在<br>“Backoff Timer分配开关”<br>参数配置为<br>“ON(开)”<br>后生效。<br>数据来源：本端规划<br>取值范围：1～11160<br>默认值：无 |
+| MAXBOT | Back off timer最大值（秒） | 可选必选说明：条件可选参数<br>参数含义：本参数用于设置Back off timer的最大值，用于计算发给终端的附着拒绝消息中的Back off timer时长。<br>前提条件：该参数在<br>“Backoff Timer分配开关”<br>参数配置为<br>“ON(开)”<br>后生效。<br>数据来源：本端规划<br>取值范围：1～11160<br>默认值：无<br>配置原则：该参数的取值必须大于等于<br>“Back off timer最小值”<br>的取值。 |
+| ATTACHREJCAUSE | 附着拒绝原因值 | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定附着拒绝时携带的原因值。<br>数据来源：整网规划<br>前提条件：该参数在<br>“APN类型”<br>参数配置为<br>“CONGESTION_CTRL(拥塞控制APN)”<br>或<br>“BOTH(Both)”<br>后生效。<br>取值范围：<br>“CONGESTION(拥塞)”<br>默认值：无<br>配置原则：建议值为<br>“CONGESTION(拥塞)”<br>。<br>说明：- 其他原因值待后续版本扩展。 |
+| ATTACHTHRESH | 识别异常附着行为的门限（次/小时） | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置识别异常附着行为的门限，即在一个小时内如果UE的附着次数达到或超过了此参数的值，则认为此用户的附着行为异常。<br>数据来源：整网规划<br>前提条件：该参数在<br>“APN类型”<br>参数配置为<br>“CONGESTION_CTRL(拥塞控制APN)”<br>或<br>“BOTH(Both)”<br>后生效。<br>取值范围：2次/小时~1000次/小时<br>默认值：无<br>配置原则：建议值为<br>“30”<br>次/小时。<br>说明：- 判定为异常附着的用户，相应的附着消息会被拒绝。<br>- 该参数的配置值涉及到被识别为异常附着的用户数目，如果配置值越小，就有越多的用户被识别为异常附着，并进行信令拥塞控制。实际设置时需要根据运营商网络内APN正常情况下用户的平均附着次数作为参考，避免正常用户被识别为异常附着。 |
+| READYTIMER | Ready Timer定时器时长（秒） | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定GERAN通信中的<br>“Ready Timer定时器时长”<br>。 用户终端在<br>“Ready Timer定时器时长(秒)”<br>配置的时长后才转入空闲状态。该参数的配置值涉及到BSC和SGSN上资源开销，设置时长越长，BSC和SGSN上要占用越多的资源。<br>数据来源：整网规划<br>前提条件：该参数在<br>“APN类型”<br>参数配置为<br>“CALL_OPTIMIZE(固定终端寻呼优化APN)”<br>或<br>“BOTH(Both)”<br>后生效。<br>取值范围：<br>- 2~63：在Attach Accept/Rau Accept消息中携带给UE的Ready Timer是X/2向上取整，单位：秒。X即2~63之间的取值。<br>- 64~1919：在Attach Accept/Rau Accept消息中携带给UE的Ready Timer是X/60向上取整，单位：分。X即64~1919之间的取值。<br>- 1920~11160：在Attach Accept/Rau Accept消息中携带给UE的Ready Timer是X/360向上取整，单位：6分。X即1920~11160之间的取值。<br>默认值：无<br>配置原则：<br>- 本命令配置的“Ready Timer定时器时长(秒)”要大于[**SET GMM**](../MM协议参数管理/Gb模式MM协议参数/设置Gb模式MM协议参数(SET GMM)_72345121.md)命令中的“准备定时器(s)”参数的时长。<br>- 根据协议3GPP 48.018的规定：- 该参数大于等于6秒时，“Ready Timer定时器时长”须大于BSS保留PFC的时长定时器（最小值为6秒）。<br>- 该参数小于6秒时，“Ready Timer定时器时长”的大小与BSS保留PFC的时长定时器的大小无关。<br>- 建议值为“180”秒。 |
+| T3324 | T3324定时器时长（秒） | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定<br>“T3324定时器时长”<br>。如果UE在Attach/RAU Request消息中携带了T3324信元，表明UE支持PSM，SGSN通过Attach/RAU Accept消息，向UE下发T3324信元。<br>数据来源：整网规划<br>前提条件：该参数在<br>“APN类型”<br>参数配置为<br>“CALL_OPTIMIZE(固定终端寻呼优化APN)”<br>或<br>“BOTH(Both)”<br>后生效。<br>取值范围：0~11160秒<br>默认值：无<br>配置原则：<br>根据APNNI配置T3324：<br>- 对于USIM/SIM卡用户，根据签约的APNNI配置该参数。 |
+| T3312 | T3312定时器时长（分） | 可选必选说明：条件可选参数<br>参数含义：该参数用于指定<br>“T3312定时器时长”<br>。当T3312定时器的长度小于等于186分钟时，不携带T3312 extended value信元，携带必选信元periodic routing area update timer（其值为T3312）；当T3312定时器的长度大于186分钟时，网络侧下发T3312 extended value信元，同时携带必选信元periodic routing area update timer（其值固定为186分钟）。<br>数据来源：整网规划<br>前提条件：该参数在<br>“APN类型”<br>参数配置为<br>“CALL_OPTIMIZE(固定终端寻呼优化APN)”<br>或<br>“BOTH(Both)”<br>后生效。<br>取值范围：1~18600分<br>默认值：无 |
+
+#### [使用实例](#ZH-CN_MMLREF_0000001126305282)
+
+修改一条 “签约APN” 为 “huawei.com” 的APN控制参数配置， “签约APN” 为 “huawei.com” ， “APN类型” 为 “BOTH(Both)” ， “Ready Timer定时器时长(秒)” 为 “300” :
+
+MOD APNCTRL: SUBSCRIBEDAPN="huawei.com", APNTYPE=BOTH, APNPRIORITY=MIDDLE, READYTIMER=300;

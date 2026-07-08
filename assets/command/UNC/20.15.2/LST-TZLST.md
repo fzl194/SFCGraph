@@ -1,0 +1,108 @@
+---
+id: UNC@20.15.2@MMLCommand@LST TZLST
+type: MMLCommand
+name: LST TZLST（查询多时区参数）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: TZLST
+command_category: 查询类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 移动性管理
+- 多时区管理
+- 多时区参数
+status: active
+---
+
+# LST TZLST（查询多时区参数）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+该命令用于查询位置区对应的时区和夏令时信息。
+
+## 注意事项
+
+无。
+
+## 权限
+
+manage-ug；system-ug；monitor-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TZID | 时区标识 | 可选必选说明：可选参数<br>参数含义：该参数用于指定待查询时区的索引信息。<br>取值范围：1～24<br>默认值：无 |
+| TZONE | 时区 | 可选必选说明：可选参数<br>参数含义：该参数用于指定待查询的设备所处时区。<br>取值范围：<br>- “E0000(GMT+00:00)”<br>- “E0100(GMT+01:00)”<br>- “E0200(GMT+02:00)”<br>- “E0300(GMT+03:00)”<br>- “E0330(GMT+03:30)”<br>- “E0400(GMT+04:00)”<br>- “E0430(GMT+04:30)”<br>- “E0500(GMT+05:00)”<br>- “E0530(GMT+05:30)”<br>- “E0545(GMT+05:45)”<br>- “E0600(GMT+06:00)”<br>- “E0630(GMT+06:30)”<br>- “E0700(GMT+07:00)”<br>- “E0800(GMT+08:00)”<br>- “E0845(GMT+08:45)”<br>- “E0900(GMT+09:00)”<br>- “E0930(GMT+09:30)”<br>- “E1000(GMT+10:00)”<br>- “E1030(GMT+10:30)”<br>- “E1100(GMT+11:00)”<br>- “E1130(GMT+11:30)”<br>- “E1200(GMT+12:00)”<br>- “E1245(GMT+12:45)”<br>- “E1300(GMT+13:00)”<br>- “E1400(GMT+14:00)”<br>- “W0100(GMT-01:00)”<br>- “W0200(GMT-02:00)”<br>- “W0300(GMT-03:00)”<br>- “W0330(GMT-03:30)”<br>- “W0400(GMT-04:00)”<br>- “W0430(GMT-04:30)”<br>- “W0500(GMT-05:00)”<br>- “W0600(GMT-06:00)”<br>- “W0700(GMT-07:00)”<br>- “W0800(GMT-08:00)”<br>- “W0900(GMT-09:00)”<br>- “W0930(GMT-09:30)”<br>- “W1000(GMT-10:00)”<br>- “W1100(GMT-11:00)”<br>- “W1200(GMT-12:00)”<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@TZLST]] · 多时区参数（TZLST）
+
+## 使用实例
+
+查询所有的时区和夏令时配置信息：
+
+LST TZLST:;
+
+```
+%%LST TZLST:;%%
+RETCODE = 0  操作成功。
+
+输出结果如下
+--------------
+ 时区标识  时区描述  时区       是否实行夏令时  开始日期输入方式  开始月份  开始日  第几个星期(开始)  开始星期  开始时间  结束日期输入方式  结束月份  结束日  第几个星期(结束)  结束星期  结束时间  时间偏移量(小时)
+
+ 1         noname    GMT+00:00  否              NULL              NULL      NULL    NULL              NULL      00:00:00  NULL              NULL      NULL    NULL              NULL      00:00:00  NULL            
+ 2         noname    GMT+04:30  是              星期方式          3月       NULL    第三个            星期三    14:42:00  星期方式          7月       NULL    第三个            星期六    02:51:00  1               
+(结果个数 = 2)
+
+---    END
+```
+
+查询单条时区和夏令时配置信息：
+
+%%LST TZLST: TZID=1;
+
+```
+%%LST TZLST: TZID=1;%%
+RETCODE = 0  操作成功。
+
+输出结果如下
+--------------
+        时区标识  =  1
+        时区描述  =  noname
+            时区  =  GMT+03:30
+  是否实行夏令时  =  否
+开始日期输入方式  =  NULL
+        开始月份  =  NULL
+          开始日  =  NULL
+第几个星期(开始)  =  NULL
+        开始星期  =  NULL
+        开始时间  =  00:00:00
+结束日期输入方式  =  NULL
+        结束月份  =  NULL
+          结束日  =  NULL
+第几个星期(结束)  =  NULL
+        结束星期  =  NULL
+        结束时间  =  00:00:00
+时间偏移量(小时)  =  NULL
+(结果个数 = 1)
+
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-TZLST.md`

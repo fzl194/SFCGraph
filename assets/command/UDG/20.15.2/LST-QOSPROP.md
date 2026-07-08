@@ -1,0 +1,82 @@
+---
+id: UDG@20.15.2@MMLCommand@LST QOSPROP
+type: MMLCommand
+name: LST QOSPROP（查询QoS属性）
+nf: UDG
+version: 20.15.2
+verb: LST
+object_keyword: QOSPROP
+command_category: 查询类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 业务控制策略
+- 用户QOS控制
+- 业务QOS控制
+- 业务质量属性
+status: active
+---
+
+# LST QOSPROP（查询QoS属性）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令是用来查询QoS属性的，其中包括QoS属性名称，保证的上下行比特率，最大上下行比特率。
+
+## 注意事项
+
+无。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| QOSPROPNAME | Qos属性名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定QoS属性名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@QOSPROP]] · QoS属性（QOSPROP）
+
+## 使用实例
+
+查询名称为“test”的QoS属性的信息，命令为：
+
+```
+LST QOSPROP: QOSPROPNAME="test";
+```
+
+```
+
+RETCODE = 0  操作成功。
+
+QoS属性信息
+-----------
+             Qos属性名称  =  test
+        保证的上行比特率  =  1
+        保证的下行比特率  =  200
+          最大上行比特率  =  2
+          最大下行比特率  =  200
+   QoS使用量上报规则名称  =  NULL
+          上下行解耦开关  =  不使能
+          关键流检测开关  =  使能
+         关键流时长（秒） =  5
+关键流速率（千比特每秒）  =  50
+              配置域名称  =  NULL
+(结果个数 = 1)
+
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/LST-QOSPROP.md`

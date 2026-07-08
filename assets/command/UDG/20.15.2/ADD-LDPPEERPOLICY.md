@@ -1,0 +1,63 @@
+---
+id: UDG@20.15.2@MMLCommand@ADD LDPPEERPOLICY
+type: MMLCommand
+name: ADD LDPPEERPOLICY（添加LDP邻居策略）
+nf: UDG
+version: 20.15.2
+verb: ADD
+object_keyword: LDPPEERPOLICY
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 65535
+category_path:
+- 平台服务管理
+- VNRS功能管理
+- IP服务
+- MPLS管理
+- LDP管理
+- LDP邻居策略
+status: active
+---
+
+# ADD LDPPEERPOLICY（添加LDP邻居策略）
+
+## 功能
+
+该命令用于添加LDP邻居策略。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 该命令最大记录数为65535。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| VRFNAME | VPN实例名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定VPN实例名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：_public_ |
+| PEERID | 对等体的LSR ID | 可选必选说明：必选参数<br>参数含义：该参数用于指定对等体的LSR ID。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无 |
+| AUTHENMODE | LDP认证模式 | 可选必选说明：必选参数<br>参数含义：该参数用于指定LDP认证模式。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- MODE_ENABLE：使能认证。<br>- MODE_EXCLUDE：不继承认证方式，会话建立不使用认证。<br>默认值：无 |
+| AUTHENTYPE | LDP认证类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“AUTHENMODE”配置为“MODE_ENABLE”时为必选参数。<br>参数含义：该参数用于指定LDP认证类型。当前支持MD5和KEYCHAIN认证类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- MD5：MD5认证类型。MD5验证是在TCP发出去之前进行的：LDP消息在经TCP发出前，会在TCP头后面填充一个唯一的信息摘要再发出。<br>- KEYCHAIN：Keychain认证类型。Keychain类似于MD5，针对同一段信息计算出对应的信息摘要，实现LDP报文防篡改校验。Keychain允许用户定义一组密码，形成一个密码串，并且分别为每个密码指定加解密算法及密码使用的有效时间。<br>默认值：无<br>配置原则：在使用中需要注意，MD5属于不安全的加密算法，建议使用Keychain认证。 |
+| MD5PASSWORD | MD5密码 | 可选必选说明：条件必选参数<br>前提条件：该参数在“AUTHENTYPE”配置为“MD5”时为必选参数。<br>参数含义：该参数用于指定MD5密码。<br>数据来源：本端规划<br>取值范围：密码类型，输入长度范围为1～255。<br>默认值：无<br>配置原则：配置的密码建议至少包含大写、小写、数字、特殊字符中的2种，并且长度不能小于6。 |
+| KEYCHAINNAME | KeyChain名字 | 可选必选说明：条件必选参数<br>前提条件：该参数在“AUTHENTYPE”配置为“KEYCHAIN”时为必选参数。<br>参数含义：该参数用于指定KeyChain名字。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～47。<br>默认值：无<br>配置原则：所用的KeyChain名字需提前配好。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@LDPPEERPOLICY]] · LDP邻居策略（LDPPEERPOLICY）
+
+## 使用实例
+
+添加LDP邻居策略：
+
+```
+ADD LDPPEERPOLICY:VRFNAME="_public_",PEERID="192.168.1.1",AUTHENMODE=MODE_ENABLE,AUTHENTYPE=KEYCHAIN,KEYCHAINNAME="key1";
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/ADD-LDPPEERPOLICY.md`

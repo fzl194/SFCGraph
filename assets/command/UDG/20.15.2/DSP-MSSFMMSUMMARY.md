@@ -1,0 +1,67 @@
+---
+id: UDG@20.15.2@MMLCommand@DSP MSSFMMSUMMARY
+type: MMLCommand
+name: DSP MSSFMMSUMMARY（显示FMM的PBUF概要信息）
+nf: UDG
+version: 20.15.2
+verb: DSP
+object_keyword: MSSFMMSUMMARY
+command_category: 查询类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 系统调测
+- MSS 调测命令
+status: active
+---
+
+# DSP MSSFMMSUMMARY（显示FMM的PBUF概要信息）
+
+## 功能
+
+该命令用于显示MSS的PBUF内存池信息。MSS会自动创建一个PBUF内存池和一个二次管理内存池。PBUF内存池为定长内存池，可以由多进程共享访问调用，主要用于报文缓存。二次管理内存池为变长内存，主要用于控制转发平面。该命令可查看PBUF内存池信息。通过获取的信息，可了解配置是否正常，并进行故障诊断。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CELLTYPE | 微服务类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定微服务类型。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为0～63。数字“0～9”、大写字母“A～Z”、小写字母“a～z”、特殊字符“-”、“_”、“.”、“+”、空格符以及中文字符，其他均为非法字符。<br>默认值：无<br>配置原则：使用<br>**[DSP PAENODE](../../服务通信管理/策略查询/显示PAE节点信息（DSP PAENODE）_92520008.md)**<br>查看工作角色为数据转发对应的微服务类型。 |
+| CELLINSTANCE | 微服务实例号 | 可选必选说明：必选参数<br>参数含义：该参数用于指定微服务实例号。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为0～127。数字“0～9”、大写字母“A～Z”、小写字母“a～z”、特殊字符“-”、“_”、“.”、“+”、空格符以及中文字符，其他均为非法字符。<br>默认值：无<br>配置原则：使用<br>**[DSP PAENODE](../../服务通信管理/策略查询/显示PAE节点信息（DSP PAENODE）_92520008.md)**<br>查看工作角色为数据转发对应的微服务实例号。 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@MSSFMMSUMMARY]] · FMM的PBUF概要信息（MSSFMMSUMMARY）
+
+## 使用实例
+
+显示微服务类型“aa”中微服务实例“bb”的MSS PBUF内存分区详细信息：
+
+```
+DSP MSSFMMSUMMARY:CELLTYPE="aa", CELLINSTANCE="bb";
+```
+
+```
+RETCODE = 0  操作成功。
+
+结果如下
+--------
+内存池名称     内存池总大小    资源池中空闲内存单元个数    当前进程缓存的单元个数    内存池过载检测状态    泄露检测状态    破坏检测状态    重用检测状态    轨迹开关状态    分体配额    分体个数    内存池过载次数    过载恢复次数    内存池泄露内存单元数量    破坏内存单元数量    回收个数    报文单元总长度（Byte）    报文单元元数据区长度（Byte）    报文单元Headroomex数据区长度（Byte）    报文单元Headroom数据区长度（Byte）    报文单元有效荷载数据长度（Byte）
+
+PAE            300000          275418                      8200                      ON                    ON              ON              OFF             OFF             10000       500         0                 0               0                         0                   0           3904                      1024                            128                                     128                                   2368                            
+paeFmeaInfo    4096            4096                        0                         OFF                   OFF             OFF             OFF             OFF             10000       500         0                 0               0                         0                   0           3904                      1024                            128                                     128                                   2368                             
+(结果个数 = 2)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/DSP-MSSFMMSUMMARY.md`

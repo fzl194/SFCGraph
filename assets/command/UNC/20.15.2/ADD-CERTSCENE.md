@@ -1,0 +1,66 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD CERTSCENE
+type: MMLCommand
+name: ADD CERTSCENE（增加证书场景）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: CERTSCENE
+command_category: 配置类
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 平台服务管理
+- IPSEC功能管理
+- IP服务
+- IP安全管理
+- 公钥基础设施
+- PKI场景
+status: active
+---
+
+# ADD CERTSCENE（增加证书场景）
+
+## 功能
+
+该命令用来增加证书场景。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 不能上传两本使用者字段中的参数完全相同的CA证书。如果上传，必须确保现有的CA证书、设备证书、和即将上传的证书必须都有密钥标识符作区分。
+- 若要使用吊销列表功能，对应的CA证书的密钥用法字段中，必须带有吊销列表标志。
+- 如果证书场景描述没有填，默认使用证书场景名称作为证书场景描述。
+
+- 最多可输入100条记录。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SCENENAME | 场景名称 | 可选必选说明：必选参数<br>参数含义：场景名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~192。不区分大小写，最多允许一个空格，不支持中文字符。<br>默认值：无<br>配置原则：无 |
+| SCENETYPE | 场景类型 | 可选必选说明：必选参数<br>参数含义：场景类型。<br>数据来源：本端规划<br>取值范围：<br>- “CA（CA证书）”：CA证书<br>- “LOCAL（本地证书）”：本地证书<br>默认值：无<br>配置原则：无 |
+| ENDESCRIPTION | 场景英文描述 | 可选必选说明：可选参数<br>参数含义：场景英文描述。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~192。不区分大小写。<br>默认值：无<br>配置原则：无 |
+| CNDESCRIPTION | 场景中文描述 | 可选必选说明：可选参数<br>参数含义：场景中文描述。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~192。不区分大小写。<br>默认值：无<br>配置原则：无 |
+| CERTTYPE | 证书类型 | 可选必选说明：该参数在"SCENETYPE"配置为"LOCAL"时为条件可选参数。<br>参数含义：证书类型。<br>数据来源：本端规划<br>取值范围：<br>- “NULL（空）”：空<br>- “Cert_sig（签名证书）”：签名证书<br>- “Cert_enc（加密证书）”：加密证书<br>默认值：Cert_sig<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@CERTSCENE]] · 证书场景描述（CERTSCENE）
+
+## 使用实例
+
+增加场景名为“DeviceA”的CA证书场景：
+
+```
+ADD CERTSCENE: SCENENAME="DeviceA", SCENETYPE=CA, ENDESCRIPTION="DeviceA", CNDESCRIPTION="DeviceA";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-CERTSCENE.md`

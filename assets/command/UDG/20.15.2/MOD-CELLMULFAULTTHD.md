@@ -1,0 +1,58 @@
+---
+id: UDG@20.15.2@MMLCommand@MOD CELLMULFAULTTHD
+type: MMLCommand
+name: MOD CELLMULFAULTTHD（修改进程频繁故障监控参数）
+nf: UDG
+version: 20.15.2
+verb: MOD
+object_keyword: CELLMULFAULTTHD
+command_category: 配置类
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 平台服务管理
+- 可靠性管理
+- 微服务可靠性管理
+status: active
+---
+
+# MOD CELLMULFAULTTHD（修改进程频繁故障监控参数）
+
+## 功能
+
+该命令用于修改进程频繁故障监控参数值。
+
+> **说明**
+> - 该命令执行后立即生效。
+>
+> - 参数“故障告警故障次数”取值需大于参数“恢复告警监控次数”的取值。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PROCESSNAME | 进程名称 | 可选必选说明：必选参数<br>参数含义：该参数用于表示微服务的进程类型名称。进程类型名称可以通过<br>[**DSP MSPROCTYPE**](显示微服务进程类型（DSP MSPROCTYPE）_09587905.md)<br>命令查询。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是1~31。<br>默认值：无<br>配置原则：无 |
+| REPORTTIMESLOT | 故障告警监控时间 | 可选必选说明：可选参数<br>参数含义：该参数表示进程频繁故障监控周期。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是11~10080，单位是分钟。<br>默认值：无<br>配置原则：无 |
+| REPORTTHD | 故障告警故障次数 | 可选必选说明：可选参数<br>参数含义：该参数表示故障监控周期内发生故障次数。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是4~128，单位是次。参数“故障告警故障次数”取值需大于参数“恢复告警监控次数”的取值。<br>默认值：无<br>配置原则：无 |
+| CLEARTIMESLOT | 恢复告警监控时间 | 可选必选说明：可选参数<br>参数含义：该参数表示进程频繁故障恢复监控周期。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是10~10080，单位是分钟。<br>默认值：无<br>配置原则：无 |
+| CLEARTHD | 恢复告警监控次数 | 可选必选说明：可选参数<br>参数含义：该参数表示恢复监控周期内发生故障次数。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~128，单位是次。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@CELLMULFAULTTHD]] · 进程频繁故障监控参数（CELLMULFAULTTHD）
+
+## 使用实例
+
+修改进程名称为CELL_SSG的服务进程频繁告警参数配置，故障告警监控时间修改为20分钟，故障告警故障次数修改为5次，恢复告警监控时间修改为10分钟，恢复告警监控次数为0次。
+
+```
+MOD CELLMULFAULTTHD: PROCESSNAME="CELL_SSG", REPORTTIMESLOT=20, REPORTTHD=5, CLEARTIMESLOT=10, CLEARTHD=0;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/MOD-CELLMULFAULTTHD.md`

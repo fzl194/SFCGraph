@@ -1,0 +1,76 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD CHGGNCCCFG
+type: MMLCommand
+name: ADD CHGGNCCCFG（增加Gn接口计费属性选择策略）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: CHGGNCCCFG
+command_category: 配置类
+applicable_nf:
+- SGSN
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 1025
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 计费管理
+- Gn接口计费属性选择策略配置
+status: active
+---
+
+# ADD CHGGNCCCFG（增加Gn接口计费属性选择策略）
+
+## 功能
+
+**适用网元：SGSN**
+
+该命令用于增加 “SPECIAL_USER(指定用户)” 的Gn接口计费属性选择策略。对于签约用户级计费属性和签约APN级计费属性，根据签约有效、签约无效和未签约三种场景分别进行处理。在进行策略选择的时候，使用先APN级后用户级的顺序将签约的计费属性与配置中的有效计费属性进行匹配，如果匹配结果是签约信息有效，则SGSN在向GGSN发出的Create PDP Context Request消息中直接携带签约的计费属性，否则根据配置信息，选择相应的策略进行处理。
+
+## 注意事项
+
+- 本表最大记录数为1025条，其中1条为“ALL_USER(所有用户)”的记录，1024条为“SPECIAL_USER(指定用户)”的记录。
+- “ALL_USER(所有用户)”记录是系统默认配置的，表示配置全局的Gn接口CC选择策略，无法通过本命令添加，只能通过[**MOD CHGGNCCCFG**](修改Gn接口计费属性选择策略(MOD CHGGNCCCFG)_72225051.md)命令修改。
+- “SPECIAL_USER(指定用户)”记录是基于“IMSIPRE(IMSI前缀)”配置的，表示配置不同的Gn口CC选择策略。
+- 当ALL_USER(所有用户)的记录和SPECIAL_USER(指定用户)的记录同时存在的时候，首先会按照SPECIAL_USER(指定用户)的配置与用户的IMSI进行匹配，如果匹配上，则使用相应的策略进行处理，否则按照ALL_USER(所有用户)的默认配置处理。
+- SGSN携带CC的原理：当用户有签约的APN级计费属性或用户级计费属性时，若签约的APN级计费属性值在配置的“APNCC（有效的APN CC）”的取值范围内时，SGSN携带签约的APN级计费属性，若签约的APN级计费属性匹配失败，当签约的用户级计费属性值在配置的“SUBCC（有效的用户CC）”的取值范围内时，SGSN携带签约的用户级计费属性；若签约的APN级计费属性和用户级计费属性均匹配失败时，系统认为签约的计费属性为无效，依据“INVLDCCRULE（签约无效CC携带策略）”的配置原则携带计费属性；若用户未签约APN级计费属性和用户级计费属性，SGSN依据“NOCCRULE（未签约CC携带策略）”携带计费属性。
+- 该命令执行后立即生效。
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+  | IMSIPRE | APNCC | SUBCC | INVLDCCRULE | NOCCRULE | CCINSCDR |
+  | --- | --- | --- | --- | --- | --- |
+  | ALL_USER | FR-1&FR_NB-0&FR_PS-0&FR_PS_NB-0&HB-1&HB_FR-0&HB_FR_NB-0&HB_FR_PS-0&HB_FR_PS_NB-0&HB_NB-0&HB_PS-0&HB_PS_NB-0&NB-1&NONE-0&PS-1&PS_NB-0 | FR-1&FR_NB-0&FR_PS-0&FR_PS_NB-0&HB-1&HB_FR-0&HB_FR_NB-0&HB_FR_PS-0&HB_FR_PS_NB-0&HB_NB-0&HB_PS-0&HB_PS_NB-0&NB-1&NONE-0&PS-1&PS_NB-0 | TRANSMIT_NONE | TRANSMIT_NONE | NO |
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IMSIPRE | IMSI前缀 | 可选必选说明：必选参数<br>参数含义：该参数用于指定需要修改<br>“SPECIAL_USER(指定用户)”<br>的IMSI前缀，系统根据该参数与用户的IMSI进行匹配，以区分不同的用户群。<br>数据来源：整网规划<br>取值范围：5～15位十进制数字，或字符串<br>“ALL_USER”<br>默认值：无<br>说明：- 相同IMSI前缀只能配置一条记录。<br>- IMSI前缀的匹配方式采取由前向后的最长匹配，即若对于用户可以匹配到多个用户群，则使用IMSI前缀最长的用户群配置。<br>- 当IMSIPRE为字符串“ALL_USER”时，可以对“SUBRANGE（用户范围）”为“ALL_USER（所有用户）”的记录进行修改。 |
+| APNCC | 有效的APN CC | 可选必选说明：必选参数<br>参数含义：该参数用于指定<br>“有效的APN CC”<br>。当有签约的计费属性时，如果签约的APN级计费属性在该配置的范围内，则SGSN在向GGSN发送的CREATE PDP CONTEXT REQ消息中直接携带签约的APN级的计费属性；否则根据<br>“SUBCC（有效的用户CC）”<br>进行匹配。<br>数据来源：整网规划<br>取值范围：<br>- “NONE(无)-0000”说明：有效的APN CC中NONE当前在系统中尚未启用，预留为扩展项<br>- “HB(实时计费)-0100”<br>- “FR(包月制)-0200”<br>- “HB_FR(实时计费 & 包月制)-0300”<br>- “PS(预付费)-0400”<br>- “HB_PS(实时计费 & 预付费)-0500”<br>- “FR_PS(包月制 & 预付费)-0600”<br>- “HB_FR_PS(实时计费 & 包月制 & 预付费)-0700”<br>- “NB(普通计费)-0800”<br>- “HB_NB(实时计费 & 普通计费)-0900”<br>- “FR_NB(包月制 & 普通计费)-0A00”<br>- “HB_FR_NB(实时计费 & 包月制 & 普通计费)-0B00”<br>- “PS_NB(预付费 & 普通计费)-0C00”<br>- “HB_PS_NB(实时计费 & 预付费 & 普通计费)-0D00”<br>- “FR_PS_NB(包月制 & 预付费 & 普通计费)-0E00”<br>- “HB_FR_PS_NB(实时计费 & 包月制 & 预付费 & 普通计费)-0F00”<br>默认值：无 |
+| SUBCC | 有效的用户CC | 可选必选说明：必选参数<br>参数含义：该参数用于指定<br>“有效的用户CC”<br>。当有签约的计费属性时，如果签约的用户级计费属性在该配置的范围内，则SGSN在向GGSN发出的CREATE PDP CONTEXT REQ消息中直接携带签约的用户级的计费属性；否则根据<br>“签约无效CC携带策略”<br>处理。<br>数据来源：整网规划<br>取值范围：<br>- “NONE(无)-0000”说明：有效的用户CC中NONE当前在系统中尚未启用，预留为扩展项<br>- “HB(实时计费)-0100”<br>- “FR(包月制)-0200”<br>- “HB_FR(实时计费 & 包月制)-0300”<br>- “PS(预付费)-0400”<br>- “HB_PS(实时计费 & 预付费)-0500”<br>- “FR_PS(包月制 & 预付费)-0600”<br>- “HB_FR_PS(实时计费 & 包月制 & 预付费)-0700”<br>- “NB(普通计费)-0800”<br>- “HB_NB(实时计费 & 普通计费)-0900”<br>- “FR_NB(包月制 & 普通计费)-0A00”<br>- “HB_FR_NB(实时计费 & 包月制 & 普通计费)-0B00”<br>- “PS_NB(预付费 & 普通计费)-0C00”<br>- “HB_PS_NB(实时计费 & 预付费 & 普通计费)-0D00”<br>- “FR_PS_NB(包月制 & 预付费 & 普通计费)-0E00”<br>- “HB_FR_PS_NB(实时计费 & 包月制 & 预付费 & 普通计费)-0F00”<br>默认值：无 |
+| INVLDCCRULE | 签约无效CC携带策略 | 可选必选说明：可选参数<br>参数含义：该参数用于指定<br>“签约无效CC携带策略”<br>。 按照<br>“有效的APN CC ”<br>和<br>“有效的用户CC”<br>配置，检查签约的APN级CC和用户级CC都无效时，就使用该参数的配置策略处理。<br>数据来源：整网规划<br>取值范围：<br>- “TRANSMIT_ZERO(带0)”：Create PDP Context Request消息中携带的CC为0000。<br>- “TRANSMIT_NONE(不带CC)”：Create PDP Context Request消息中不携带CC。<br>- “TRANSMIT_DEFAULT_VALUE(带缺省CC)”：Create PDP Context Request消息中携带“DFTCCINVLD（签约无效CC时的缺省CC）”。<br>- “APN_CC_FIRST(APN CC优先)”：如果用户签约了APN级CC和用户级CC，则Create PDP Context Request消息中优先携带签约的APN级CC。<br>- “SUBSCRIBER_CC_ONLY(只选用户CC)”：如果用户签约了APN级CC和用户级CC，则Create PDP Context Request消息中携带签约的用户级CC。<br>默认值：APN_CC_FIRST(APN CC优先) |
+| DFTCCINVLD | 签约无效CC时的缺省CC | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定签约无效CC时系统使用的缺省CC。<br>该参数在<br>“INVLDCCRULE(签约无效CC携带策略)”<br>参数设置为<br>“TRANSMIT_DEFAULT_VALUE(带缺省CC)”<br>时，才需要配置。<br>数据来源：整网规划<br>取值范围：<br>- “NONE(无)-0000”<br>- “HB(实时计费)-0100”<br>- “FR(包月制)-0200”<br>- “HB_FR(实时计费 & 包月制)-0300”<br>- “PS(预付费)-0400”<br>- “HB_PS(实时计费 & 预付费)-0500”<br>- “FR_PS(包月制 & 预付费)-0600”<br>- “HB_FR_PS(实时计费 & 包月制 & 预付费)-0700”<br>- “NB(普通计费)-0800”<br>- “HB_NB(实时计费 & 普通计费)-0900”<br>- “FR_NB(包月制 & 普通计费)-0A00”<br>- “HB_FR_NB(实时计费 & 包月制 & 普通计费)-0B00”<br>- “PS_NB(预付费 & 普通计费)-0C00”<br>- “HB_PS_NB(实时计费 & 预付费 & 普通计费)-0D00”<br>- “FR_PS_NB(包月制 & 预付费 & 普通计费)-0E00”<br>- “HB_FR_PS_NB(实时计费 & 包月制 & 预付费 & 普通计费)-0F00”<br>默认值：无 |
+| NOCCRULE | 未签约CC携带策略 | 可选必选说明：可选参数<br>参数含义：该参数用于指定未签约CC时系统使用的携带策略。<br>数据来源：整网规划<br>取值范围：<br>- “TRANSMIT_ZERO(带0)”：Create PDP Context Request消息中携带的CC为0000。<br>- “TRANSMIT_NONE(不带CC)”：Create PDP Context Request消息中不携带CC。<br>- “TRANSMIT_DEFAULT_VALUE(带缺省CC)”：Create PDP Context Request消息中携带“未签约CC时系统使用的缺省CC”<br>默认值：TRANSMIT_ZERO(带0) |
+| DFTCCNO | 未签约CC时的缺省CC | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定未签约CC时系统使用的缺省CC。<br>该参数在<br>“NOCCRULE(未签约CC携带策略)”<br>参数设置为<br>“TRANSMIT_DEFAULT_VALUE(带缺省CC)”<br>时，才需要配置。<br>数据来源：整网规划<br>取值范围：<br>- “NONE(无)-0000”<br>- “HB(实时计费)-0100”<br>- “FR(包月制)-0200”<br>- “HB_FR(实时计费 & 包月制)-0300”<br>- “PS(预付费)-0400”<br>- “HB_PS(实时计费 & 预付费)-0500”<br>- “FR_PS(包月制 & 预付费)-0600”<br>- “HB_FR_PS(实时计费 & 包月制 & 预付费)-0700”<br>- “NB(普通计费)-0800”<br>- “HB_NB(实时计费 & 普通计费)-0900”<br>- “FR_NB(包月制 & 普通计费)-0A00”<br>- “HB_FR_NB(实时计费 & 包月制 & 普通计费)-0B00”<br>- “PS_NB(预付费 & 普通计费)-0C00”<br>- “HB_PS_NB(实时计费 & 预付费 & 普通计费)-0D00”<br>- “FR_PS_NB(包月制 & 预付费 & 普通计费)-0E00”<br>- “HB_FR_PS_NB(实时计费 & 包月制 & 预付费 & 普通计费)-0F00”<br>默认值：无 |
+| ZEROCCRULE | 签约0值CC携带策略 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定签约0值CC时系统使用的携带策略。<br>该参数在<br>“INVLDCCRULE(签约无效CC携带策略)”<br>参数设置为<br>“APN_CC_FIRST(APN CC优先)”<br>或<br>“SUBSCRIBER_CC_ONLY(只选用户CC)”<br>时，才需要配置。<br>数据来源：整网规划<br>取值范围：<br>- “TRANSMIT_ZERO(带0)”：Create PDP Context Request消息中携带的CC为0000。<br>- “TRANSMIT_NONE(不带CC)”：Create PDP Context Request消息中不携带CC。<br>- “TRANSMIT_DEFAULT_VALUE(带缺省CC)”：Create PDP Context Request消息中携带“DFTCCZERO（签约0值CC时的缺省CC）”。<br>默认值：无 |
+| DFTCCZERO | 签约0值CC时的缺省CC | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定签约0值CC时系统使用的缺省CC。<br>该参数在<br>“ZEROCCRULE(签约0值CC携带策略)”<br>参数设置为<br>“TRANSMIT_DEFAULT_VALUE(带缺省CC)”<br>时，才需要配置。<br>数据来源：整网规划<br>取值范围：<br>- “NONE(无)-0000”<br>- “HB(实时计费)-0100”<br>- “FR(包月制)-0200”<br>- “HB_FR(实时计费 & 包月制)-0300”<br>- “PS(预付费)-0400”<br>- “HB_PS(实时计费 & 预付费)-0500”<br>- “FR_PS(包月制 & 预付费)-0600”<br>- “HB_FR_PS(实时计费 & 包月制 & 预付费)-0700”<br>- “NB(普通计费)-0800”<br>- “HB_NB(实时计费 & 普通计费)-0900”<br>- “FR_NB(包月制 & 普通计费)-0A00”<br>- “HB_FR_NB(实时计费 & 包月制 & 普通计费)-0B00”<br>- “PS_NB(预付费 & 普通计费)-0C00”<br>- “HB_PS_NB(实时计费 & 预付费 & 普通计费)-0D00”<br>- “FR_PS_NB(包月制 & 预付费 & 普通计费)-0E00”<br>- “HB_FR_PS_NB(实时计费 & 包月制 & 预付费 & 普通计费)-0F00”<br>默认值：无 |
+| CCINSCDR | S-CDR中的计费属性 | 可选必选说明：可选参数<br>参数含义：该参数用于指定S-CDR中的计费属性是否与Gn接口中的计费属性保持一致。<br>数据来源：整网规划<br>取值范围：<br>- “YES（是）”<br>- “NO（否）”<br>默认值：<br>“NO（否）”<br>说明：- “YES（是）”：S-CDR中的计费属性取Gn接口中的计费属性。但当HLR中计费属性未签约或签约无效，且Gn接口不携带计费属性字段，则S-CDR中携带的计费属性无法和Gn接口中的计费属性一致。<br>- “NO（否）”：S-CDR中的计费属性由用户在HLR中签约的计费属性，和[**ADD CHGAPN**](../APN计费属性/增加APN计费属性(ADD CHGAPN)_72344965.md)、[**ADD CHGDCHAR**](../缺省计费属性参数配置/增加缺省计费属性参数(ADD CHGDCHAR)_26145380.md)、[**SET CHGCDR**](../计费控制/设置计费CDR参数（SET CHGCDR）_26145372.md)命令配置的计费属性确定。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@CHGGNCCCFG]] · Gn接口计费属性选择策略（CHGGNCCCFG）
+
+## 使用实例
+
+增加一条 “IMSIPRE（IMSI前缀）” 为 “10010” ， “APNCC（有效的APN CC）” 为 “HB（实时计费）” ， “SUBCC（有效的用户CC）” 为 “FR（包月制）” ， “INVLDCCRULE（签约无效CC携带策略）” 为 “TRANSMIT_DEFAULT_VALUE（带缺省CC）” ， “DFTCCINVLD（签约无效CC时的缺省CC）” 为 “NB（普通计费）” ， “NOCCRULE（未签约CC携带策略）” 为 “TRANSMIT_ZERO（带0）” 的记录：
+
+ADD CHGGNCCCFG: IMSIPRE="10010", APNCC=HB-1, SUBCC=FR-1, INVLDCCRULE=TRANSMIT_DEFAULT_VALUE, DFTCCINVLD=NB, NOCCRULE=TRANSMIT_ZERO;
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-CHGGNCCCFG.md`

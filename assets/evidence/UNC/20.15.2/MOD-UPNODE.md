@@ -1,0 +1,71 @@
+# 修改UPF节点（MOD UPNODE）
+
+- [命令功能](#ZH-CN_MMLREF_0209652705__1.3.1)
+- [注意事项](#ZH-CN_MMLREF_0209652705__1.3.2)
+- [参数说明](#ZH-CN_MMLREF_0209652705__1.3.4)
+- [使用实例](#ZH-CN_MMLREF_0209652705__1.3.5)
+
+## [命令功能](#ZH-CN_MMLREF_0209652705)
+
+![](修改UPF节点（MOD UPNODE）_09652705.assets/notice_3.0-zh-cn_2.png)
+
+修改UP节点可能引发重大影响，请谨慎操作。
+
+**适用NF：SMF、SGW-C、PGW-C、GGSN**
+
+该命令用于修改指定实例名称的UPF节点特征。
+
+## [注意事项](#ZH-CN_MMLREF_0209652705)
+
+- 该命令执行后立即生效。
+
+- 当NFINSTANCENAME已经绑定在IMSIBINDUP中，SUPATSSS参数不允许设置为ENABLE。
+- 当UPF不配N9逻辑接口地址，PDUESTWITHOUTN9设置为ENABLE时，GGSN形态会话激活时会因UPF无法分配Gp-U地址而失败；PGW-C形态会话激活时会因UPF无法分配S5/S8地址而失败。
+- 当UPF不配N9逻辑接口地址，PDUESTWITHOUTN9设置为ENABLE时，会导致EPS Fallback流程中UPF无法分配S5/S8地址而失败。语音会话场景下，主锚点UPF必须配置N9逻辑接口。
+- 当前版本不支持参数SILENTSIGMIGSW。
+
+#### [操作用户权限](#ZH-CN_MMLREF_0209652705)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## [参数说明](#ZH-CN_MMLREF_0209652705)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NFINSTANCENAME | UPF实例名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定UPF实例名称。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是0~255。不区分大小写。<br>默认值：无<br>配置原则：<br>本参数取值与ADD PNFPROFILE命令中的“NF实例标识”参数取值保持一致时，关联关系生效。 |
+| LOCATION | UPF位置特征 | 可选必选说明：可选参数<br>参数含义：该参数用于指定UPF节点的位置特征。<br>数据来源：本端规划<br>取值范围：<br>- “Local（本地节点）”：只与本地DN连接的UPF节点，只能作为辅锚点。<br>- “Central（中心节点和本地节点）”：既可以与本地DN连接也可与中心DN连接的UPF节点，既可以作为主锚点也可以作为辅锚点。<br>- “CentralOnly（仅中心节点）”：只与中心DN连接的UPF节点，只能作为主锚点。<br>默认值：无<br>配置原则：无 |
+| UPFUNCTION | UPF功能 | 可选必选说明：可选参数<br>参数含义：该参数用于指定UPF节点功能。<br>数据来源：本端规划<br>取值范围：<br>- None（无）<br>- UlClAndBp（ulcl和bp方式）<br>默认值：无<br>配置原则：无 |
+| LOCK | UPF锁 | 可选必选说明：可选参数<br>参数含义：该参数用于标识UPF是否被锁定，SMF不会选择到已锁定的UPF。<br>数据来源：本端规划<br>取值范围：<br>- TRUE(TRUE)<br>- FALSE(FALSE)<br>默认值：无<br>配置原则：无 |
+| APSAMIGFUNC | 辅锚点UPF故障迁移功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于标识辅锚点UPF是否具备冗余功能。该开关打开情况下，辅锚点UPF支持故障迁移和故障重选功能。<br>数据来源：全网规划<br>取值范围：<br>- DISABLE（辅锚点UPF迁移功能关）<br>- ENABLE（辅锚点UPF迁移功能开）<br>默认值：无<br>配置原则：<br>辅锚点UPF独立部署时，该参数配置为DISABLE。<br>辅锚点UPF负荷分担部署时，该参数配置为ENABLE。 |
+| ADDRALLOCMODE | 地址分配属性 | 可选必选说明：可选参数<br>参数含义：该参数用于配置UPF的UE动态地址分配属性。<br>数据来源：本端规划<br>取值范围：<br>- “INHERIT（继承全局配置）”：继承命令SET APNADDRESSATTR指定的分配属性。<br>- “SMF_ALLOC（SMF分配）”：UE地址由SMF分配。<br>- “UPF_FIRST（UPF优先）”：UE地址优先由UPF分配，如UPF未分配，则由SMF分配。<br>默认值：无<br>配置原则：<br>- 此UPF接入用户UE动态地址期望由SMF，PGW-C，GGSN来分配时，配置选择"SMF_ALLOC（SMF分配）"。<br>- 此UPF接入用户UE动态地址期望由UPF分配时，配置选择"UPF_FIRST（UPF优先）"。<br>- 希望继承全局配置，配置选择“INHERIT”。 |
+| SHAREDUPFSW | UPF共享开关 | 可选必选说明：可选参数<br>参数含义：该参数用于表示是否支持作为共享UPF使用。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持作共享UPF使用。<br>- “ENABLE（使能）”：支持作共享UPF使用。<br>默认值：无<br>配置原则：<br>在主锚点和辅锚点合一部署时，该开关需要配置为ENABLE。<br>该参数仅在本命令“UPF位置特征”参数设置成“Central”或ADD APNUPFINFO命令中的“UPF位置特征”设置成BOTH时生效。 |
+| VPNNAME | VPN名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定VPN名称。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是1~31。该参数取值来源于ADD CPPOINT命令的VPNNAME参数配置。区分大小写。<br>默认值：无<br>配置原则：无 |
+| SUPULCLBPONLY | 是否仅支持作为分流UPF | 可选必选说明：该参数在"LOCATION"配置为"Central"、"CentralOnly"时为条件可选参数。<br>参数含义：该参数用于标识是否仅支持作为分流UPF。<br>数据来源：本端规划<br>取值范围：<br>- “Disable（不使能）”：不仅支持作为分流UPF使用<br>- “Enable（使能）”：仅支持作为分流UPF<br>默认值：无<br>配置原则：<br>当UPF位置特征为本地节点时，该参数默认取值为使能。 |
+| SUPATSSS | 是否支持作为ATSSS UPF | 可选必选说明：可选参数<br>参数含义：该参数用于标识是否支持作为ATSSS UPF。<br>数据来源：本端规划<br>取值范围：<br>- “Enable（使能）”：支持作为ATSSS UPF使用<br>- “Disable（不使能）”：不支持作为ATSSS UPF使用<br>默认值：无<br>配置原则：无 |
+| IPV6NDPLCY | IPv6 ND信息携带方式 | 可选必选说明：可选参数<br>参数含义：该参数用于标识IPv6 Network Discovery信息携带方式。<br>数据来源：全网规划<br>取值范围：<br>- “PRIVATE（私有信元方式）”：PFCP UP-Signal私有信元携带方式。<br>- “STANDARD（标准信元方式）”：3GPP GTPU标准信元携带方式。<br>默认值：无<br>配置原则：无 |
+| IOSWITCH | 惯性运行开关 | 可选必选说明：可选参数<br>参数含义：该参数用于表示UPF是否支持惯性运行功能。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持惯性运行。<br>- “ENABLE（使能）”：支持惯性运行。<br>默认值：无<br>配置原则：无 |
+| NFDESCNAME | UPF描述名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定UPF实例描述名称。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是0~255。区分大小写。<br>默认值：无<br>配置原则：<br>本参数取值与ADD PNFPROFILE命令中的“NF描述名称”参数取值保持一致。 |
+| CAMPUSSW | 园区UPF开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制是否作为园区UPF。<br>数据来源：全网规划<br>取值范围：<br>- “DISABLE（不使能）”：非园区UPF。<br>- “ENABLE（使能）”：园区UPF。<br>默认值：无<br>配置原则：<br>UPF部署在企业园区内需要将开关置为ENABLE。 |
+| ULCLFWDTNLSW | ULCL UPF间创建转发隧道开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制位置移动触发替换ULCL UPF的场景下是否支持源侧ULCL UPF与目标侧ULCL UPF间创建转发隧道，来保证切换过程中数据的完整性。<br>数据来源：全网规划<br>取值范围：<br>- “DISABLE（不使能）”：ULCL UPF不支持创建转发隧道<br>- “ENABLE（使能）”：ULCL UPF支持创建转发隧道<br>默认值：无<br>配置原则：<br>需要同时在SMF上打开源侧ULCL UPF与目标侧ULCL UPF的ULCL UPF间创建转发隧道开关，才能触发建立转发隧道; 如果源侧ULCL UPF采用了Application ID形式的分流策略，则需要目标侧ULCL UPF配置相应的分流策略，否则会导致会话流程失败。<br>I-SMF不支持。 |
+| PDUESTWITHOUTN9 | 是否支持UPF无N9逻辑接口地址时作为主锚点激活 | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否支持UPF无N9逻辑接口地址时作为主锚点激活。<br>当UPF不配N9逻辑接口地址，PDUESTWITHOUTN9设置为ENABLE时，不支持GGSN或者PGW-C形态。<br>当UPF不配N9逻辑接口地址，PDUESTWITHOUTN9设置为ENABLE时，不支持EPS Fallback场景。语音会话场景下，主锚点UPF必须配置N9逻辑接口。<br>该参数仅在UPF未规划配置N9地址的场景下生效。<br>数据来源：全网规划<br>取值范围：<br>- “DISABLE（不使能）”：UPF不配N9逻辑接口地址，不支持作为主锚点激活<br>- “ENABLE（使能）”：UPF不配N9逻辑接口地址，支持作为主锚点激活<br>默认值：无<br>配置原则：<br>当UPF不配N9逻辑接口地址，且UPF只作为I-UPF和PSA-UPF合一形态存在时，PDUESTWITHOUTN9设置为ENABLE 。 |
+| NGLANSW | 是否支持5G LAN | 可选必选说明：可选参数<br>参数含义：该参数用于控制是否支持5G LAN。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持5G LAN<br>- “ENABLE（使能）”：支持5G LAN<br>默认值：无<br>配置原则：无 |
+| PSACOMBINEULCL | 主锚点与分流节点合设功能 | 可选必选说明：该参数在"LOCATION"配置为"Central"、"CentralOnly"时为条件可选参数。<br>参数含义：该参数用于控制UPF是否支持主锚点与分流节点合设。<br>数据来源：全网规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持主锚点和分流节点合设功能<br>- “ENABLE（使能）”：支持主锚点和分流节点合设功能<br>默认值：无<br>配置原则：<br>默认不支持主锚点分流，需要主锚点分流的场景，开关需要打开。 |
+| MBSSW | 是否支持组播广播业务 | 可选必选说明：可选参数<br>参数含义：该参数用于控制是否支持组播广播业务。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持组播广播业务<br>- “ENABLE（使能）”：支持组播广播业务<br>默认值：无<br>配置原则：无 |
+| SUPINTELLISRV | 是否支持智能业务 | 可选必选说明：可选参数<br>参数含义：该参数用于设置UPF是否支持智能业务。<br>数据来源：全网规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持智能单元。<br>- “ENABLE（使能）”：支持智能单元。<br>默认值：无<br>配置原则：<br>默认不支持智能单元，UPF部署智能业务时，开关需要打开。 |
+| PATHMIGSW | 路径迁移开关 | 可选必选说明：可选参数<br>参数含义：该参数用于设置UPF是否支持PFCP会话路径迁移功能。如果UPF支持路径迁移功能，并且SMF与UPF之间存在有多条路径，当一条路径发生故障时，允许SMF将这条路径上的会话迁移到另一条可用路径上。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持PFCP会话路径迁移。<br>- “ENABLE（使能）”：支持PFCP会话路径迁移。<br>默认值：无<br>配置原则：无 |
+| TOPATHMIGSW | 超时触发路径迁移开关 | 可选必选说明：该参数在"PATHMIGSW"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于设置UPF是否支持PFCP会话业务消息超时触发路径迁移功能。如果UPF支持路径迁移功能，并且SMF与UPF之间存在有多条路径，当SMF接收到N4响应消息超时时，允许将该会话从当前路径迁移到另一条可用路径上。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持PFCP会话业务消息超时触发路径迁移。<br>- “ENABLE（使能）”：支持PFCP会话业务消息超时触发路径迁移。<br>默认值：无<br>配置原则：无 |
+| PATHMIGTIMER | 路径迁移响应等待时间(100毫秒) | 可选必选说明：可选参数<br>参数含义：该参数用于设置路径迁移响应等待时间。在该时间内没有收到对应的响应，则判断本次消息通信失败。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是3~100。<br>默认值：无<br>配置原则：无 |
+| UEIPNATFUNC | 是否支持UE IP地址NAT转换功能 | 可选必选说明：可选参数<br>参数含义：该参数用于表示UPF是否支持UE IP地址NAT转换功能。在通用DNN漫游分流场景下，专网SMF会选择支持UE IP地址NAT转换功能的专网UPF。<br>数据来源：对端协商<br>取值范围：<br>- “DISABLE（不使能）”：不支持UE IP地址NAT转换功能。<br>- “ENABLE（使能）”：支持UE IP地址NAT转换功能。<br>默认值：无<br>配置原则：无 |
+| PROXYUPFS8USW | UPF作为Proxy UPF对接PGW-U开关 | 可选必选说明：可选参数<br>参数含义：UPF是否支持作为Proxy UPF对接PGW-U。<br>数据来源：全网规划<br>取值范围：<br>- “DISABLE（不使能）”：UPF不支持作为Proxy UPF对接PGW-U<br>- “ENABLE（使能）”：UPF支持作为Proxy UPF对接PGW-U<br>默认值：无<br>配置原则：无 |
+| QOSANASW | 质差分析开关 | 可选必选说明：可选参数<br>参数含义：该参数用于设置UPF是否支持质差分析。<br>数据来源：全网规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持质差分析。<br>- “ENABLE（使能）”：支持质差分析。<br>默认值：无<br>配置原则：<br>默认不支持质差分析，UPF部署质差分析业务时，开关需要打开。 |
+| TOHPSASW | 是否支持作为智家随行场景To Home会话主锚点 | 可选必选说明：可选参数<br>参数含义：该参数用于设置UPF是否支持作为智家随行场景To Home会话主锚点。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持当前UPF作为智家随行场景To Home会话主锚点<br>- “ENABLE（使能）”：支持当前UPF作为智家随行场景To Home会话主锚点<br>默认值：无<br>配置原则：无 |
+| SILENTSIGMIGSW | 信令触发静默路径迁移开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定当UPG代理路径全部故障后，由于PFCP会话信令交互超时或者当前判断路径已经故障的情况下，是否支持将PFCP会话直接迁移到状态正常的静默路径。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（不使能）”：不支持信令触发的PFCP会话路径迁移到静默路径。<br>- “ENABLE（使能）”：支持信令触发的PFCP会话路径迁移到静默路径。<br>默认值：无<br>配置原则：<br>该参数只有在PATHMIGSW开关打开时才生效，并且如果需要在信令交互超时场景将会话迁移到静默路径上，还需要打开TOPATHMIGSW开关。 |
+| PATHMIGEXT | 路径迁移扩展信元携带开关 | 可选必选说明：该参数在"PATHMIGSW"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于设置SMF将故障路径上的会话迁移到另一条可用路径上时是否携带扩展信元。<br>数据来源：对端协商<br>取值范围：<br>- “ENABLE（使能）”：携带扩展信元。<br>- “DISABLE（不使能）”：不携带扩展信元。<br>默认值：无<br>配置原则：<br>该参数需要和对接的UPG配置原则一致，当UPG不进行SEID的映射时，该参数设置为DISABLE；当UPG需要进行SEID映射时，该参数设置为ENABLE。 |
+
+## [使用实例](#ZH-CN_MMLREF_0209652705)
+
+修改实例名称为“upf1”的UPF节点特征，其中位置特征修改为本地，不支持分流，不上锁，不支持辅锚点UPF故障迁移功能，地址分配属性为SMF_ALLOC，UPF共享开关为不使能，VPN名称为_public_，不支持ATSSS功能，使用私有信元携带IPv6 ND信息，不支持UPF无N9逻辑接口地址时作为主锚点激活使用：
+
+```
+MOD UPNODE: NFINSTANCENAME="upf1", LOCATION=Local, UPFUNCTION=None, LOCK=FALSE, APSAMIGFUNC=DISABLE, ADDRALLOCMODE=SMF_ALLOC, SHAREDUPFSW=DISABLE, VPNNAME="_public_", SUPATSSS=Disable, IPV6NDPLCY=PRIVATE, PDUESTWITHOUTN9=DISABLE, NFDESCNAME = "UPF-beijingRegion-beijing-toB-b001";
+```

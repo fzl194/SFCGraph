@@ -1,0 +1,70 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV CG
+type: MMLCommand
+name: RMV CG（删除CG）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: CG
+command_category: 配置类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+effect_mode: 立即生效
+is_dangerous: true
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费管理
+- 离线计费
+- GTPP信令
+- CG管理
+status: active
+---
+
+# RMV CG（删除CG）
+
+## 功能
+
+**适用NF：SGW-C、PGW-C、SMF**
+
+![](删除CG（RMV CG）_09896847.assets/notice_3.0-zh-cn_2.png)
+
+本命令属于高危命令，删除对端信息可能导致无可用CG，话单无法被正常处理，进而影响计费。
+
+RMV CG命令用来在CG配置表中删除一个CG信息。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- CG服务器的配置是支持用户进行离线计费必不可少的一部分，删除CG服务器配置时需要谨慎操作。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IPVERSION | CG IP版本 | 可选必选说明：必选参数<br>参数含义：该参数用于指定CG IP类型。<br>数据来源：全网规划<br>取值范围：枚举类型。<br>- IPV4：IPv4。<br>- IPV6：IPv6。<br>默认值：IPV4<br>配置原则：无 |
+| IPV4ADDR | CG IPv4地址 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPVERSION”配置为“IPV4”时为必选参数。<br>参数含义：CG服务器的IPv4地址。<br>数据来源：全网规划<br>取值范围：IPv4地址类型。<br>默认值：无<br>配置原则：无 |
+| IPV6ADDR | CG IPv6地址 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPVERSION”配置为“IPV6”时为必选参数。<br>参数含义：CG服务器的IPv6地址。<br>数据来源：全网规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| PORT | CG端口号 | 可选必选说明：条件可选参数<br>前提条件：该参数在“IPVERSION”配置为“IPV4” 或 “IPV6”时为可选参数。<br>参数含义：CG服务器的端口号。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围为1024～65535。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@CG]] · CG（CG）
+
+## 使用实例
+
+将IP地址为192.168.0.2，端口号为25009的CG服务器删除：
+
+```
+RMV CG:IPVERSION=IPV4, IPV4ADDR="192.168.0.2",PORT=25009;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-CG.md`

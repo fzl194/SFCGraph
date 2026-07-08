@@ -1,0 +1,95 @@
+---
+id: UNC@20.15.2@MMLCommand@LST QOSCAPBY5QI
+type: MMLCommand
+name: LST QOSCAPBY5QI（查询基于5QI的QosFlow QoS限制的配置）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: QOSCAPBY5QI
+command_category: 查询类
+applicable_nf:
+- SMF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- QoS
+- 5GC QoS配置
+- 基于IMSI号段的QoS管理
+- 基于5QI的Qos Flow QoS限制配置
+status: active
+---
+
+# LST QOSCAPBY5QI（查询基于5QI的QosFlow QoS限制的配置）
+
+## 功能
+
+**适用NF：SMF**
+
+该命令用于查询基于5QI的QosFlow QoS限制的相关配置参数。
+
+## 注意事项
+
+无
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| SUBRANGE | 用户范围 | 可选必选说明：可选参数<br>参数含义：该参数表示用于QosFlow QoS限制配置的用户范围。<br>数据来源：全网规划<br>取值范围：<br>- INVALIDSUBRANGE（无效的用户范围）<br>- IMSI_PREFIX（指定IMSI前缀的用户）<br>- VISITING（拜访用户）<br>- ROAMING（漫游用户）<br>- HOME_USER（本网用户）<br>- ALL_USER（所有用户）<br>- HOME_NOLOCAL_USER（本网非本省用户）<br>默认值：无<br>配置原则：无 |
+| IMSIPRE | IMSI前缀 | 可选必选说明：该参数在"SUBRANGE"配置为"IMSI_PREFIX"时为条件可选参数。<br>参数含义：该参数用于系统根据对用户的IMSI前缀进行匹配，从而区分不同的用户群。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是5~15。<br>默认值：无<br>配置原则：无 |
+| QOS5QI | 标准5QI | 可选必选说明：可选参数<br>参数含义：该参数用于指定系统对用户QosFlow的5QI限制。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是1~255。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@QOSCAPBY5QI]] · 基于5QI的QosFlow QoS限制配置。（QOSCAPBY5QI）
+
+## 使用实例
+
+- 查询给定用户范围、IMSI前缀和5QI对应的QOSCAPBY5QI配置：
+  ```
+  %%LST QOSCAPBY5QI: SUBRANGE=IMSI_PREFIX,IMSIPRE="3080107000",QOS5QI=9;%%
+              RETCODE = 0  操作成功
+
+              操作结果如下
+              ------------
+              用户范围 = 指定IMSI前缀
+              IMSI前缀 = 3080107000
+              QOS5QI = 9
+              5QI的优先级别 = 10
+              ARP的优先级别 = 9
+              ARP的抢占能力 = 不抢占
+              ARP的被抢占能力 = 可抢占
+              上行保证带宽(千比特/秒) = 0
+              下行保证带宽(千比特/秒) = 0
+              上行最大带宽(千比特/秒) = 0
+              下行最大带宽(千比特/秒) = 0
+              (结果个数 = 1)
+
+              ---    END
+  ```
+- 查询QOSCAPBY5QI配置：
+  ```
+  %%LST QOSCAPBY5QI:;%%
+              RETCODE = 0  操作成功
+
+              操作结果如下
+              ------------
+              用户范围      IMSI前缀     QOS5QI  5QI的优先级别  ARP的优先级别 ARP的抢占能力  ARP的被抢占能力   上行最大速率(千比特/秒)   下行最大速率(千比特/秒)   上行保证速率(千比特/秒)  下行保证速率(千比特/秒)
+
+              指定IMSI前缀  3080107000    9         10          9          不抢占          可抢占                0                    0                      0                    0
+              指定IMSI前缀  30801070001   9         10          9          不抢占          可抢占              10000                10000                  10000                10000
+              (结果个数 = 2)
+
+              ---    END
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-QOSCAPBY5QI.md`

@@ -1,0 +1,67 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD IPAREAGP
+type: MMLCommand
+name: ADD IPAREAGP（增加IP区域群）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: IPAREAGP
+command_category: 配置类
+applicable_nf:
+- SGSN
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+max_records: 256
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- 移动性管理
+- 基于位置分配IP地址管理
+- IP区域群管理
+status: active
+---
+
+# ADD IPAREAGP（增加IP区域群）
+
+## 功能
+
+**适用网元：SGSN、MME**
+
+IP区域群是“基于位置的IP地址重分配”功能的一个基本概念，是指一组TAC或者LAC，在同一个IP区域群中的用户具有相同的IP地址分配策略。
+
+## 注意事项
+
+- 此命令最大记录数为256。
+- 此命令执行后IP区域群定义立即生效，可以在该IP区域群中添加区域成员。
+- 此配置涉及License（License部件编码：LKV2IPRL01），执行命令请使用[**DSP LICENSE**](../../../../../../平台服务管理/操作维护/License管理/显示License(DSP LICENSE)_00360098.md)命令确认对应特性license是否得到授权，执行[**LST LICENSESWITCH**](../../../../../../平台服务管理/操作维护/License管理/查询License配置项开关（LST LICENSESWITCH）_09651570.md)命令确认特性开关状态为“ENABLE(打开)”。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| AREAID | 区域群标识 | 可选必选说明：必选参数<br>参数含义：该参数用于指定区域群标识。<br>数据来源：整网规划<br>取值范围：1~256<br>默认值：无 |
+| IPAREASW | IP区域开关 | 可选必选说明：可选参数<br>参数含义：该参数用于指定打开或者关闭IP区域群管理功能。<br>“IPAREASW(IP区域开关)”<br>开启后，用户移动符合如下情况时，漫游用户会被下线，而本网本地用户和本网异地用户的PDP或者PDN的APN在“IP区域APN网络标识”列表中时，这些用户才会被去激活PDP、断连PDN或者分离；“IP区域APN网络标识”通过<br>[**ADD IPAREAAPN**](../基于位置分配IP地址APN信息配置/增加IP区域APN网络标识(ADD IPAREAAPN)_72345201.md)<br>命令配置。<br>- 从IP区域群外移动到IP区域群内<br>- 从IP区域群内移动到IP区域群外<br>- 从一个IP区域群移动到另一个IP区域群<br>同时，如果<br>[**SET IPAREAGPCTRL**](../基于位置分配IP地址策略管理/设置基于位置分配IP地址策略(SET IPAREAGPCTRL)_72345195.md)<br>命令中参数<br>“DEAUSRSW(用户下线开关)”<br>开启，则会将已经附着在该IP区域群中的用户下线。<br>- 2G和3G用户，则发起网络侧去激活PDP或者网络侧分离，具体类型由[**SET IPAREAGPCTRL**](../基于位置分配IP地址策略管理/设置基于位置分配IP地址策略(SET IPAREAGPCTRL)_72345195.md)命令设置。<br>- 4G用户，发起网络侧分离。<br>数据来源：整网规划<br>取值范围：<br>- “OFF(关闭)”<br>- “ON(开启)”<br>默认值：OFF(关闭) |
+| ROAMUSRSW | 漫游用户开关 | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置漫游用户接入限制开关。<br>前提条件：该参数在<br>“IPAREASW(IP区域开关)”<br>设置为<br>“ON(开启)”<br>有效。<br>数据来源：整网规划<br>取值范围：<br>- “OFF(关闭)”<br>- “ON(开启)”<br>默认值：OFF(关闭) |
+| NONLOCALUSRSW | 本网异地用户开关 | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置本网异地用户接入限制开关。<br>前提条件：<br>该参数在<br>“IPAREASW(IP区域开关)”<br>设置为<br>“ON(开启)”<br>有效。<br>该参数在<br>[**SET IPAREAGPCTRL**](../基于位置分配IP地址策略管理/设置基于位置分配IP地址策略(SET IPAREAGPCTRL)_72345195.md)<br>的<br>“LOCALUSRSW(是否区分本网本地和本网异地用户)”<br>设置为<br>“YES(区分)”<br>有效。<br>数据来源：整网规划<br>取值范围：<br>- “OFF(关闭)”<br>- “ON(开启)”<br>默认值：OFF(关闭)<br>配置原则：<br>- 当运营商在启用“基于位置的IP地址重分配”功能后，希望对本网异地用户的数据业务进行限制，需将本开关置为“ON（开启）”。<br>说明：对GPRS/UMTS本网异地用户的业务限制类型分两种，一种是去激活PDP上下文，另一种是分离。具体类型由<br>[**SET IPAREAGPCTRL**](../基于位置分配IP地址策略管理/设置基于位置分配IP地址策略(SET IPAREAGPCTRL)_72345195.md)<br>设置。对LTE本网异地用户的业务限制类型为分离。 |
+| AREAN | 区域群名称 | 可选必选说明：可选参数<br>参数含义：该参数用于指定区域群名称。<br>数据来源：整网规划<br>取值范围：0~32位字符串<br>默认值：noname |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@IPAREAGP]] · IP区域群（IPAREAGP）
+
+## 使用实例
+
+增加一个IP区域群，打开IP区域管理功能，对漫游用户和本网异地用户进行接入限制，配置如下：
+
+ADD IPAREAGP: AREAID=1, IPAREASW=ON, ROAMUSRSW=ON, AREAN="hss1";
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-IPAREAGP.md`

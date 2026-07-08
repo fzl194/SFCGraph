@@ -1,0 +1,78 @@
+---
+id: UNC@20.15.2@MMLCommand@LST OFCSRVTEMPLATE
+type: MMLCommand
+name: LST OFCSRVTEMPLATE（查询离线业务模板）
+nf: UNC
+version: 20.15.2
+verb: LST
+object_keyword: OFCSRVTEMPLATE
+command_category: 查询类
+applicable_nf:
+- PGW-C
+- SMF
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费管理
+- 离线计费
+- 业务级计费
+- 业务计费模板
+status: active
+---
+
+# LST OFCSRVTEMPLATE（查询离线业务模板）
+
+## 功能
+
+**适用NF：PGW-C、SMF**
+
+该命令用来查询离线业务模板的配置信息。
+
+## 注意事项
+
+如果输入离线业务模板名称，则查询指定离线业务模板信息；如果不输入离线业务模板名称，则查询全部的离线业务模板信息。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| TEMPLATENAME | 离线业务模板名 | 可选必选说明：可选参数<br>参数含义：该参数用于指定离线业务模板名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不允许输入空格。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@OFCSRVTEMPLATE]] · 离线业务模板（OFCSRVTEMPLATE）
+
+## 使用实例
+
+查询名为“offlinetmp”的离线业务模板信息：
+
+```
+LST OFCSRVTEMPLATE: TEMPLATENAME="offlinetmp";
+```
+
+```
+
+RETCODE = 0  操作成功。
+
+离线计费业务模板配置
+--------------------
+        离线业务模板名  =  offlinetmp
+          时长配额机制  =  QUOTA_CONSUME_TIME
+               QCT时长  =  100
+               BTI时长  =  NULL
+        L7内容计费开关  =  使能
+业务流量阈值（千字节）  =  1024
+    业务时长阈值（分）  =  5
+(结果个数 = 1)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/LST-OFCSRVTEMPLATE.md`

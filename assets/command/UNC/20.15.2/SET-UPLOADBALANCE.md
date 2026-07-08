@@ -1,0 +1,74 @@
+---
+id: UNC@20.15.2@MMLCommand@SET UPLOADBALANCE
+type: MMLCommand
+name: SET UPLOADBALANCE（设置UP负载均衡功能）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: UPLOADBALANCE
+command_category: 配置类
+applicable_nf:
+- SGW-C
+- PGW-C
+- SMF
+- GGSN
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 接入管理
+- UPF选择管理
+- UPF负载均衡
+status: active
+---
+
+# SET UPLOADBALANCE（设置UP负载均衡功能）
+
+## 功能
+
+**适用NF：SGW-C、PGW-C、SMF、GGSN**
+
+该命令用于配置UP负载均衡功能。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| LOADCTRLFLG | LIGHTLOAD | HEAVYLOAD | OVERLOADCTRLFLG |
+| --- | --- | --- | --- |
+| DISABLE | 45 | 75 | DISABLE |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| LOADCTRLFLG | UNC支持处理UPF上报的LCI | 可选必选说明：可选参数<br>参数含义：该参数用于控制UNC是否支持处理UPF上报的LCI(Load Control Information)。LCI的作用是为UP选择中进行的负载均衡提供UPF的负载信息。开关开启后，UNC处理UPF上报的LCI。开关关闭后，UNC不再处理UPF上报的LCI，存量LCI信息即失效，UNC不再根据LCI的负载信息进行UPF选择。在UPF选择中，轻负载UPF优先于重负载UPF。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（关闭处理LCI功能）”：开关关闭后，UNC不再处理UPF上报的LCI，存量LCI信息即失效，UNC不再根据LCI的负载信息进行UPF选择。<br>- “ENABLE（打开处理LCI功能）”：开关开启后，UNC处理UPF上报的LCI。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST UPLOADBALANCE查询当前参数配置值。<br>配置原则：无 |
+| LIGHTLOAD | UPF轻负载门限 | 可选必选说明：该参数在"LOADCTRLFLG"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于指示轻负载UPF的LCI门限值。若UPF的LCI值小于或等于门限值，则该UPF为轻负载UPF。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~100。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST UPLOADBALANCE查询当前参数配置值。<br>配置原则：<br>该参数取值必须小于UPF重负载门限值。 |
+| HEAVYLOAD | UPF重负载门限 | 可选必选说明：该参数在"LOADCTRLFLG"配置为"ENABLE"时为条件可选参数。<br>参数含义：该参数用于指示重负载UPF的LCI门限值，UPF的LCI值大于门限值，则该UPF为重负载UPF。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~100。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST UPLOADBALANCE查询当前参数配置值。<br>配置原则：<br>该参数取值必须大于UPF轻负载门限值。 |
+| OVERLOADCTRLFLG | UNC支持处理UPF上报的OCI | 可选必选说明：可选参数<br>参数含义：该参数用于控制UNC是否支持处理UPF上报的OCI(Overload Control Information)。OCI的作用是为UP选择中进行的负载均衡提供UPF的过载信息。开关开启后，UNC处理UPF上报的OCI。开关关闭后，UNC不再处理新上报的OCI。存量OCI信息即失效，UNC不再根据OCI的负载信息进行UPF选择。<br>数据来源：本端规划<br>取值范围：<br>- “DISABLE（关闭处理OCI功能）”：开关关闭后，UNC不再处理新上报的OCI。如果存量OCI信息仍然在有效期内，UNC仍会根据OCI的过载信息进行UPF选择。<br>- “ENABLE（打开处理OCI功能）”：开关开启后，UNC处理UPF上报的OCI。<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST UPLOADBALANCE查询当前参数配置值。<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@UPLOADBALANCE]] · UP负载均衡功能（UPLOADBALANCE）
+
+## 使用实例
+
+- 客户需要使用UPF上报的LCI信息为UPF选择中的负载均衡提供UPF的负载信息。通过开关使能UNC处理UPF上报的LCI。
+  ```
+  SET UPLOADBALANCE:LOADCTRLFLG=ENABLE;
+  ```
+- 客户需要使用UPF上报的OCI信息为UPF选择中的负载均衡提供UPF的过载信息。通过开关使能SMF处理UPF上报的OCI。
+  ```
+  SET UPLOADBALANCE:OVERLOADCTRLFLG=ENABLE;
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-UPLOADBALANCE.md`

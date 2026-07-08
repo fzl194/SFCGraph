@@ -1,0 +1,62 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV OFFICEFCPARA
+type: MMLCommand
+name: RMV OFFICEFCPARA（删除指定NF的流控参数）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: OFFICEFCPARA
+command_category: 配置类
+applicable_nf:
+- NRF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- NRF业务及策略管理
+- NRF业务参数
+- NRF局向流控参数
+status: active
+---
+
+# RMV OFFICEFCPARA（删除指定NF的流控参数）
+
+## 功能
+
+**适用NF：NRF**
+
+该命令用于删除NRF基于局向IP的单进程流控参数配置。
+
+当NRF不需要针对某个特定NF进行流控时，可执行此命令。
+
+## 注意事项
+
+该命令执行后立即生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IPADDRESSTYPE | IP类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定对端NF的客户端IP地址类型。<br>数据来源：本端规划<br>取值范围：<br>- IPTypeV4（IPTypeV4）<br>- IPTypeV6（IPTypeV6）<br>默认值：无<br>配置原则：无 |
+| IPV4ADDRESS | IPV4地址 | 可选必选说明：该参数在"IPADDRESSTYPE"配置为"IPTypeV4"时为条件必选参数。<br>参数含义：该参数用于指定对端NF的客户端IPv4地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。取值范围：1.0.0.0~255.255.255.254。IPv4地址不能为组播地址（224.x.y.z）和环回地址(127.x.y.z)。IPv4地址必须是A、B或者C类地址。<br>默认值：无<br>配置原则：无 |
+| IPV6ADDRESS | IPV6地址 | 可选必选说明：该参数在"IPADDRESSTYPE"配置为"IPTypeV6"时为条件必选参数。<br>参数含义：该参数用于指定对端NF的客户端IPv6地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。取值范围：::～FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF。IPv6地址必须是全球单播地址，不能为::、FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF、环回地址（::1）、链路本地地址（FE80::/10）、组播地址（FF00::/8）和IPv4映射地址（::FFFF:XXXX:XXXX），若为IPv4兼容地址时，需判断是否符合IPv4地址要求。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@OFFICEFCPARA]] · 指定NF的流控参数（OFFICEFCPARA）
+
+## 使用实例
+
+手动删除一组局向流控参数，IP类型为IPTypeV4，IPv4地址为“10.2.3.4”，执行如下命令：
+
+```
+RMV OFFICEFCPARA: IPADDRESSTYPE=IPTypeV4, IPV6ADDRESS="10.2.3.4";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-OFFICEFCPARA.md`

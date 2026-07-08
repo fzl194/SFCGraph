@@ -1,0 +1,67 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD NGAPLE
+type: MMLCommand
+name: ADD NGAPLE（增加NGAP本端实体）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: NGAPLE
+command_category: 配置类
+applicable_nf:
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 接口管理
+- N2接口管理
+- NGAP本端实体管理
+status: active
+---
+
+# ADD NGAPLE（增加NGAP本端实体）
+
+## 功能
+
+**适用NF：AMF**
+
+该命令用于添加NGAP本端实体，一个NGAP本端实体可引用一个SCTP本端实体组，一个SCTP本端实体组下最多可配置32个SCTP本端实体。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 系统中配置多个NGAP本端实体时，用户接入哪个NGAP端点由无线侧决定，AMF不做强制选择。
+- 后续支持不同的NGAP本端实体服务于AMF下的指定PLMN或网络切片，AMF再做接入校验，支持该功能需要独立添加绑定关系。(该功能尚未支持)。
+- 添加NGAP本端实体引用SCTP本端实体组时需要检查该SCTP本端实体组下是否添加SCTP本端实体，如果未添加不允许引用。
+- 同一个SCTP本端实体组不能同时被ADD SFGAPLE和ADD NGAPLE引用。
+
+- 最多可输入32条记录。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NGAPLEIDX | NGAP本端实体索引 | 可选必选说明：必选参数<br>参数含义：该参数用于指定NGAP本端实体的索引，该索引作为NGAP本端实体的唯一标识。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~1023。<br>默认值：无<br>配置原则：无 |
+| SCTPGROUPID | SCTP本端实体组索引 | 可选必选说明：必选参数<br>参数含义：该参数用于指定NGAP本端实体引用的SCTP本端实体组索引，一个NGAP本端实体最多可引用32个SCTP本端实体。该本端实体组索引下最多配置32个本端实体。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~255。<br>默认值：无<br>配置原则：无 |
+| NGAPPARAIDX | NGAP参数索引 | 可选必选说明：可选参数<br>参数含义：该参数用于指定NGAP本端实体的NGAP协议参数配置索引。NGAP协议参数存在系统默认配置，如果NGAP本端实体默认使用系统默认参数可不指定该参数。如果NGAP本端实体需要使用其他配置值，则可以引用对应配置的NGAP协议参数索引。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~31。<br>默认值：0<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NGAPLE]] · NGAP本端实体（NGAPLE）
+
+## 使用实例
+
+增加一条本端实体：本端实体标识为1，SCTP本端实体组索引为1，NGAP兼容性参数索引为1。执行如下命令：
+
+```
+ADD NGAPLE: NGAPLEIDX=1, SCTPGROUPID=1, NGAPPARAIDX=1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-NGAPLE.md`

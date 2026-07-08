@@ -1,0 +1,62 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV PLMNNS
+type: MMLCommand
+name: RMV PLMNNS（删除网络切片）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: PLMNNS
+command_category: 配置类
+applicable_nf:
+- AMF
+- SMF
+- SMSF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 运营商管理
+- PLMN内网络切片管理
+status: active
+---
+
+# RMV PLMNNS（删除网络切片）
+
+## 功能
+
+**适用NF：AMF、SMF、SMSF**
+
+该命令用于删除指定的网络切片。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 删除网络切片之前，需要首先删除引用该网络切片的其它配置记录，如NFNS。
+- 如果NSSF上的网络切片可用性信息只来自配置，在执行本命令前要确保NSSF的本地配置更新到最新。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| NSIDX | 网络切片索引 | 可选必选说明：必选参数<br>参数含义：该参数用以在系统内唯一标识某个网络切片。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~4294967295。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@PLMNNS]] · 网络切片（PLMNNS）
+
+## 使用实例
+
+原网络切片（在系统内的切片索引为9）提供的业务下线，删除该网络切片，执行如下命令：
+
+```
+RMV PLMNNS: NSIDX=9;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-PLMNNS.md`

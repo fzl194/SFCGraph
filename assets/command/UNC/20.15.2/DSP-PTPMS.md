@@ -1,0 +1,105 @@
+---
+id: UNC@20.15.2@MMLCommand@DSP PTPMS
+type: MMLCommand
+name: DSP PTPMS（显示PTP模块MS上下文）
+nf: UNC
+version: 20.15.2
+verb: DSP
+object_keyword: PTPMS
+command_category: 查询类
+applicable_nf:
+- SGSN
+effect_mode: ''
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- Gb接口管理
+- MS上下文
+status: active
+---
+
+# DSP PTPMS（显示PTP模块MS上下文）
+
+## 功能
+
+**适用网元：SGSN**
+
+该命令用于查询BSSGP层PTP模块的MS上下文信息。
+
+## 注意事项
+
+- 支持IMSI查询和TLLI查询。TLLI查询时，需要同时给定GBP进程的RU名称、进程号。
+- MS上下文通过IMSI或TLLI唯一确定，此命令可以查询该MS用户在BSSGP层的一些基本信息。
+- 此功能用于快速定位问题和解决故障，在使用过程中不可避免的使用到用户的某些个人数据，如IMSI、IP地址。建议您遵从国家的相关法律执行该任务，并采取足够的措施以确保用户的个人数据受到充分的保护。
+
+## 权限
+
+manage-ug；system-ug；monitor-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组；G_3，用户级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| INPUT | 输入类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定输入类型。<br>取值范围：<br>- “IMSI(IMSI)”<br>- “TLLI(TLLI)”<br>默认值：无 |
+| IMSI | IMSI | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定国际移动用户标识。<br>前提条件：此参数在<br>“输入类型”<br>设置为<br>“IMSI(IMSI)”<br>后生效。<br>取值范围：长度为5~15的十进制字符串<br>默认值：无 |
+| RUNAME | RU名称 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定SPU资源单元名。该参数可以通过<br>[DSP RU](../../../../../平台服务管理/单体服务公共功能管理/系统管理/资源管理/RU管理/显示资源单元信息（DSP RU）_59103857.md)<br>命令查询。<br>前提条件：此参数在<br>“输入类型”<br>设置为<br>“TLLI(TLLI)”<br>后生效。<br>数据来源：整网规划。<br>取值范围：0~63 位字符串<br>默认值：无 |
+| PRON | 进程号 | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定用户所在的GBP进程的进程号。<br>前提条件：此参数在<br>“输入类型”<br>设置为<br>“TLLI(TLLI)”<br>后生效。<br>取值范围：0～20<br>默认值：无 |
+| TLLI | TLLI | 可选必选说明：条件必选参数<br>参数含义：该参数用于指定TLLI。<br>前提条件：此参数在<br>“输入类型”<br>设置为<br>“TLLI(TLLI)”<br>后生效。<br>取值范围：0x00000000～0xffffffff(十六进制)<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@PTPMS]] · PTP模块MS上下文（PTPMS）
+
+## 使用实例
+
+查询IMSI号为123034800000002用户的BSSGP层用户上下文信息：
+
+DSP PTPMS: INPUT=IMSI, IMSI="123034800000002";
+
+```
+%%DSP PTPMS: INPUT=IMSI, IMSI="123034800000002";%%
+RETCODE = 0  执行成功。
+
+输出结果如下
+-------------------------
+                                              TLLI  =  0xC08DE003
+                                    上下文是否分配  =  是
+                                          MS的状态  =  正常
+                                是否在进行小区更新  =  NO
+                               是否等待PFC流程完成  =  NO
+                                        MS当前标识  =  0xC08DE003
+                                          MS旧标识  =  0x806DC003
+                                  MS的链路选择参数  =  8
+                                        IMSI的长度  =  8
+                                              IMSI  =  123034800000002
+                                    非连续接收参数  =  1
+                          MS的无线接入能力参数长度  =  10
+                                  MS的无线接入能力  =  14f382334c03263ca060
+                        MS无线接入能力的传送计数器  =  3
+                                          MS的NSEI  =  14801
+                                          MS的BVCI  =  1011
+                                    MS的旧小区NSEI  =  65535
+                                    MS的旧小区BVCI  =  65535
+                                        LLC RU名称  =  USN_SP_RU_0064
+                                         LLC进程号  =  4
+                                 LLC层MS上下文表号  =  1
+                           MS流控桶的大小(100byte)  =  195
+                              MS泄漏速率(100bit/s)  =  260
+                        MS流控桶内容量计数器(byte)  =  72
+                        MS上一个流控包通过的时刻Tp  =  12618740
+                           MS第一个非空闲信令FC CB  =  0
+                           MS第一个非空闲数据FC CB  =  0
+                                是否使用GB OVER IP  =  0
+                                   最后使用的NSVCI  =  65535
+                                     对端UDP端口号  =  65535
+                                        对端IP地址  =  0.0.0.0
+(结果个数 = 1)
+---    END
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/DSP-PTPMS.md`

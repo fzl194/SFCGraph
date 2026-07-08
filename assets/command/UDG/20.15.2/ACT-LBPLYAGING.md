@@ -1,0 +1,63 @@
+---
+id: UDG@20.15.2@MMLCommand@ACT LBPLYAGING
+type: MMLCommand
+name: ACT LBPLYAGING（激活CSLB表项老化功能）
+nf: UDG
+version: 20.15.2
+verb: ACT
+object_keyword: LBPLYAGING
+command_category: 动作类
+effect_mode: ''
+is_dangerous: true
+category_path:
+- 平台服务管理
+- CSLB功能管理
+- 业务管理
+- 激活CSLB表项老化功能
+status: active
+---
+
+# ACT LBPLYAGING（激活CSLB表项老化功能）
+
+## 功能
+
+![](激活CSLB表项老化功能(ACT LBPLYAGING)_78477868.assets/notice_3.0-zh-cn.png)
+
+本命令属于高危命令，操作不当会导致业务故障，请谨慎使用并联系华为技术支持协助操作。
+
+该命令用于激活CSLB相关表项老化功能。
+
+## 注意事项
+
+- 该命令只适用于负载均衡策略、下一跳、服务实例绑定关系表、路由、引流等表项的老化。
+- 该命令执行后会把当前超过老化门限时间值的表项内容删除掉。
+- 该命令仅适用于非NP卡场景和NP卡非加速模式场景。
+
+## 权限
+
+G_1，管理员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| DATATYPE | 数据类型 | 可选必选说明：必选参数<br>参数含义：老化表项类型。<br>数据来源：全网规划<br>取值范围：枚举类型<br>- ALL(全部数据类型)：所有的表项<br>- FLOWRULE(引流)：引流表<br>- LBPLY(负载均衡策略)：负载均衡策略表<br>- NEXTHOP(下一跳)：下一跳表<br>- SRVADDR(服务实例地址)：路由表<br>- SRVINST_REL(服务实例绑定)：服务实例绑定关系表<br>默认值：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@LBPLYAGING]] · CSLB表项老化功能（LBPLYAGING）
+
+## 使用实例
+
+```
+激活负载均衡策略表老化功能:
+```
+
+```
+%%ACT LBPLYAGING: DATATYPE=LBPLY;%%
+RETCODE = 0 操作成功
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/ACT-LBPLYAGING.md`

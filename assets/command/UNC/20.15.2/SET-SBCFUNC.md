@@ -1,0 +1,67 @@
+---
+id: UNC@20.15.2@MMLCommand@SET SBCFUNC
+type: MMLCommand
+name: SET SBCFUNC（设置小区广播功能）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: SBCFUNC
+command_category: 配置类
+applicable_nf:
+- MME
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- Pre 5G接入业务管理
+- 控制面管理
+- SBc接口管理
+- SBc参数
+status: active
+---
+
+# SET SBCFUNC（设置小区广播功能）
+
+## 功能
+
+该命令用于设置小区广播功能参数。需要MME支持向CBC反馈无线侧告警消息广播情况，或者当CBC发送的Write-Replace Warning Request/Stop Warning Request消息超过64K的规格时，需要MME支持处理，可以通过本命令进行控制。
+
+**适用网元：MME**
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 系统初次上电运行时，会执行系统初始设置值。
+- 此配置涉及“小区广播服务”特性（特性编号：WSFD-106201，license部件编码：LKV2CBS02），请在设置参数前使用[**DSP LICENSE**](../../../../../平台服务管理/操作维护/License管理/显示License(DSP LICENSE)_00360098.md)命令确认对应特性license是否得到授权，执行[**LST LICENSESWITCH**](../../../../../平台服务管理/操作维护/License管理/查询License配置项开关（LST LICENSESWITCH）_09651570.md)命令确认特性开关状态为“ON(打开)”。
+
+## 权限
+
+manage-ug；system-ug
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| INDPWS | 反馈功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于设置MME支持向CBC报告无线侧告警消息的发送情况。当参数设置为<br>“SUPPORT（支持）”<br>后，MME收到eNodeB发送的Write-Replace Warning Response/Kill Response/PWS Restart Indication/PWS Failure Indication后，支持向CBC发送Write-Replace Warning Indication/Stop Warning Indication/PWS Restart Indication/PWS Failure Indication消息。<br>数据来源：整网规划<br>取值范围：<br>- “NOT_SUPPORT(不支持)”<br>- “SUPPORT(支持)”<br>系统初始设置值：<br>“NOT_SUPPORT(不支持)”<br>配置原则：当NB-IoT用户可能影响普通用户正常业务时，可以通过设置该参数为<br>“SUPPORT（支持）”<br>来控制NB-IoT业务接入。<br>说明：- 当前实现考虑系统只配置一个CBC且UNC与CBC之间只存在一条偶联的场景。<br>- 系统同时只支持一条Write-Replace Warning Request/Stop Warning Request消息对应的告警广播/取消反馈功能（通过Message Identifier和Serial Number进行区分）。 比如系统连续收到多条Write-Replace Warning Request消息并且都携带Send Write-Replace-Warning Indication信元，UNC只会向CBC发送最新一条Write-Replace Warning Request对应的Write-Replace Warning Indication消息。<br>- 由于系统机制限制，如果Write-Replace Warning Request消息携带Send Write-Replace-Warning Indication信元以及Stop Warning Request消息携带Send Stop Warning Indication信元，消息中这两个信元之后的信元在SBc接口跟踪中会出现无法解析的问题。该问题只影响跟踪解析，不影响业务功能。 |
+| UPFC | 上行消息流控开关 | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置对eNodeB发送的上行小区广播相关消息流控功能。功能设置<br>“ON（打开）”<br>后，对收到eNodeB发送的Write-Replace Warning Response/Kill Response/PWS Restart Indication/PWS Failure Indication消息进行流控处理。<br>前提条件：该参数在<br>“INDPWS（反馈功能开关）”<br>参数配置为<br>“SUPPORT（支持）”<br>后生效。<br>数据来源：整网规划<br>取值范围：<br>- “OFF（关闭）”<br>- “ON（打开）”<br>系统初始设置值：<br>“OFF(关闭)” |
+| UPFCTHD | 流控阈值 | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置SGP进程对eNodeB发送的上行小区广播相关消息每秒的处理能力。<br>前提条件：该参数在<br>“UPFC（上行消息流控开关）”<br>参数配置为<br>“ON（打开）”<br>后生效。<br>数据来源：整网规划<br>取值范围：1~254<br>系统初始设置值：10 |
+| INDWARNOPT | Warning IND消息选路优化 | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置MME将Write-Replace Warning Indication/Stop Warning Indication消息发送给CBC时，是否优选Write-Replace Warning Request/Stop Warning Request消息对应的链路。<br>前提条件：该参数在“INDPWS（反馈功能开关）”参数配置为“SUPPORT（支持）”后生效。<br>数据来源：整网规划<br>取值范围：<br>- “OFF（关闭）”<br>- “ON（打开）”<br>系统初始设置值：“OFF(关闭)” |
+| INDPWSOPT | PWS IND消息选路优化 | 可选必选说明：条件可选参数<br>参数含义：该参数用于设置MME将PWS Failure Indication/PWS Restart Indication消息发送给CBC时，是否优选最近一次的Write-Replace Warning Request/Stop Warning Request消息经过的链路。<br>前提条件：该参数在“INDPWS（反馈功能开关）”参数配置为“SUPPORT（支持）”后生效。<br>数据来源：整网规划<br>取值范围：<br>- “OFF（关闭）”<br>- “ON（打开）”<br>系统初始设置值：“OFF(关闭)”<br>说明：该参数仅在BYTE_EX_B331 BIT1设置为1后生效。 |
+| SWITCH | 大包处理功能开关 | 可选必选说明：可选参数<br>参数含义：该参数用于当CBC发送的Write-Replace Warning Request或Stop Warning Request消息超过64K的规格时，控制MME是否开启大包处理功能。<br>数据来源：全网规划<br>取值范围：<br>“OFF（关闭）”：关闭<br>“ON（打开）”：打开<br>系统初始设置值：“OFF(关闭)”<br>配置原则：支持处理大包功能还需要跟<br>[**SET BIGSCTRRXNUM**](../../信令传输管理/SCTP管理/设置大端模式SCTP接收缓冲区参数(SET BIGSCTPRXNUM)_26238016.md)<br>命令配合使用，并且将软参BYTE_EX_B338 BIT2设置为1。 |
+| DISTIME | 离散时间 | 可选必选说明：可选参数。<br>参数含义：控制MME向eNodeB发送Write-Replace Warning Request或Stop Warning Request消息时的平滑定时器时长。<br>数据来源：全网规划<br>取值范围：10-100,000 ms<br>系统初始设置值：10ms<br>配置原则：无 |
+| ENBNUM | 基站个数 | 可选必选说明：可选参数。<br>参数含义：控制MME每隔固定的<br>“离散时间”<br>向固定个数的eNodeB发送Write-Replace Warning Request或Stop Warning Request消息。<br>数据来源：全网规划<br>取值范围：1-32<br>系统初始设置值：32<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@SBCFUNC]] · 小区广播功能（SBCFUNC）
+
+## 使用实例
+
+设置小区广播功能参数，设置MME支持向CBC报告告警消息发送情况，设置MME支持对eNodeB发送的上行小区广播相关消息流控功能，并且设置每SGP进程每秒处理能力为10条/s，大包处理功能开关为打开，离散时间为10ms，基站个数为32：
+
+SET SBCFUNC: INDPWS=SUPPORT, UPFC=ON, UPFCTHD=10, SWITCH=ON, DISTIME=10, ENBNUM=32;
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-SBCFUNC.md`

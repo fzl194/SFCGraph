@@ -1,0 +1,68 @@
+---
+id: UNC@20.15.2@MMLCommand@SET NGEMGSRVFUNC
+type: MMLCommand
+name: SET NGEMGSRVFUNC（设置5G紧急服务功能）
+nf: UNC
+version: 20.15.2
+verb: SET
+object_keyword: NGEMGSRVFUNC
+command_category: 配置类
+applicable_nf:
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 5G接入业务管理
+- 5G 语音业务管理
+- 紧急呼叫业务管理
+- 紧急服务功能配置
+status: active
+---
+
+# SET NGEMGSRVFUNC（设置5G紧急服务功能）
+
+## 功能
+
+**适用NF：AMF**
+
+该命令用于设置5G紧急服务功能。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 本网用户的紧急呼叫EMG参数同时受本命令的HOMEEMG参数和SET NGMMFUNC命令EMG参数控制，且同时开启才生效。
+
+- 系统部署完成后，已经存在初始记录，参数的初始记录值如下表：
+
+| HOMEEMG | HOMEEMGCNUMSW |
+| --- | --- |
+| EMFNR-1&EMCNR-1 | YES |
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| HOMEEMG | 本网用户是否允许紧急呼叫业务 | 可选必选说明：可选参数<br>参数含义：该参数用于指定是否允许本网用户使用紧急呼叫业务。<br>数据来源：全网规划<br>取值范围：<br>- “EMFNR（NR接入的紧急呼叫回落）”：支持从NR接入5GC的紧急呼叫业务回落到EPS<br>- “EMCNR（NR接入的紧急呼叫）”：支持NR接入5GC的紧急呼叫业务<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST NGEMGSRVFUNC查询当前参数配置值。<br>配置原则：<br>如果运营商期望通过EPS Fallback的方式回落到LTE网络进行紧急呼叫时，建议配置为EMFNR；如果运营商期望直接使用5G网络进行紧急呼叫时，建议配置为EMCNR。 |
+| HOMEEMGCNUMSW | 本网用户紧急号码列表下发开关 | 可选必选说明：可选参数<br>参数含义：该参数用于控制AMF在给本网用户发送Registration Accept消息时，是否将配置的MCC的紧急呼叫号码列表携带在消息中发送给UE。<br>数据来源：全网规划<br>取值范围：<br>- “YES（是）”：是<br>- “NO（否）”：否<br>默认值：无。执行命令并不输入该参数时，该参数保持系统当前配置不变，可通过LST NGEMGSRVFUNC查询当前参数配置值。<br>配置原则：<br>当本参数设置为“YES(是)”时，AMF将在Registration Accept消息中给本网用户发送紧急号码列表。其中，紧急号码列表来源于ADD NGEMGCNUM中的配置，如果ADD NGEMGCNUM没有配置，则不下发紧急号码列表。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@NGEMGSRVFUNC]] · 5G紧急服务功能（NGEMGSRVFUNC）
+
+## 使用实例
+
+设置本网用户仅支持紧急呼叫回落，需要下发紧急号码列表，执行如下命令：
+
+```
+SET NGEMGSRVFUNC:HOMEEMG=EMFNR-1&EMCNR-0,HOMEEMGCNUMSW=YES;
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/SET-NGEMGSRVFUNC.md`

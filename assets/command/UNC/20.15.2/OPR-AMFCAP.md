@@ -1,0 +1,71 @@
+---
+id: UNC@20.15.2@MMLCommand@OPR AMFCAP
+type: MMLCommand
+name: OPR AMFCAP（操作AMF相对容量）
+nf: UNC
+version: 20.15.2
+verb: OPR
+object_keyword: AMFCAP
+command_category: 动作类
+applicable_nf:
+- AMF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 5G接入业务管理
+- 可靠性管理
+- AMF存储BYPASS处理策略
+status: active
+---
+
+# OPR AMFCAP（操作AMF相对容量）
+
+## 功能
+
+![](操作AMF相对容量（OPR AMFCAP）_84726346.assets/notice_3.0-zh-cn_2.png)
+
+该命令仅适用于存储bypass场景，通过该命令修改的AMF相对容量信息不会进行持久化。如果修改AMF相对容量时，当前系统未处于存储bypass状态，请使用MOD AMFINFO修改AMF相对容量信息。
+
+**适用NF：AMF**
+
+该命令用于系统进入存储bypass状态下，修改AMF相对容量信息。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 通过该命令修改的AMF相对容量信息不会进行持久化。
+- 系统退出存储bypass状态后需要使用RESTOR方式恢复AMF相对容量信息或使用MOD AMFINFO命令修改AMF相对容量信息。
+- 修改后请使用DSP AMFCAP命令确认修改是否符合预期。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| AMFNAME | AMF名称 | 可选必选说明：可选参数<br>参数含义：该参数用于在下发相对容量信息时指定运营商网络中本AMF实例。如果不输入，则以ADD AMFINFO配置的AMFNAME为准。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~150。<br>默认值：无<br>配置原则：无 |
+| OPERATETYPE | 操作类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定AMF相对容量的操作类型。<br>数据来源：本端规划<br>取值范围：<br>- “MOD（修改）”：修改AMF相对容量信息。<br>- “RESTOR（恢复）”：恢复AMF相对容量信息为ADD AMFINFO中的相对容量值。<br>默认值：无<br>配置原则：<br>如果整系统进入存储bypass状态后，修改AMF相对容量信息，则使用MOD方式修改；如果整系统退出存储bypass状态后，想要恢复为修改前的相对容量值，则使用RESTOR方式。 |
+| CAPACITY | 相对容量 | 可选必选说明：该参数在"OPERATETYPE"配置为"MOD"时为条件必选参数。<br>参数含义：该参数表示AMF下发给基站的相对容量信息。基站根据该值实现在Pool内多个AMF之间的负载均衡选择。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围是0~255。<br>默认值：无<br>配置原则：<br>基于Pool中AMF的实际容量规划本参数值。本参数取值越大，当用户初始接入时AMF被选中的概率就越大。当该参数取值为0，即表示不期望基站选择到本AMF。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@AMFCAP]] · 操作AMF相对容量（AMFCAP）
+
+## 使用实例
+
+- 系统进入存储bypass状态后，AMF需要修改自身相对容量为0并通知基站侧，限制新用户接入时，执行如下命令：
+  ```
+  OPR AMFCAP:OPERATETYPE=MOD,CAPACITY=0;
+  ```
+- 系统退出存储bypass状态后，AMF需要恢复相对容量为ADD AMFINFO配置的相对容量信息时，执行如下命令：
+  ```
+  OPR AMFCAP: OPERATETYPE=RESTOR;
+  ```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/OPR-AMFCAP.md`

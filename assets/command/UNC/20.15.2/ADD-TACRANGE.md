@@ -1,0 +1,71 @@
+---
+id: UNC@20.15.2@MMLCommand@ADD TACRANGE
+type: MMLCommand
+name: ADD TACRANGE（增加NF TAC区域信息）
+nf: UNC
+version: 20.15.2
+verb: ADD
+object_keyword: TACRANGE
+command_category: 配置类
+applicable_nf:
+- AMF
+- SMF
+- NRF
+- NSSF
+- NCG
+- SMSF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 接口管理
+- 服务化接口管理
+- 注册与服务发现
+- NF TAC区域信息管理
+status: active
+---
+
+# ADD TACRANGE（增加NF TAC区域信息）
+
+## 功能
+
+**适用NF：AMF、SMF、NRF、NSSF、NCG、SMSF**
+
+该命令用于增加TAC区域信息。当NF支持为某个TAI区域服务时，需要对该TAI区域下的TAC区域进行配置。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 当NF类型为SMF时，TAC号段需要精确配置。如果配置成通用号段，如000000~FFFFFF，注册到NRF后，消费者NF带着TAI参数（此TAI原本不在此SMF的号段内）到NRF进行服务发现时，此SMF也会被返回。这样可能会导致消费者NF选错SMF，业务流程达不到预期。
+
+- 最多可输入2048条记录。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| INDEX | 索引标识 | 可选必选说明：必选参数<br>参数含义：本参数用于指定索引标识，用于标识TAC区域。<br>数据来源：全网规划<br>取值范围：整数类型，取值范围是0~2047。<br>默认值：无<br>配置原则：无 |
+| RANGESTART | TAC区域起点值 | 可选必选说明：必选参数<br>参数含义：本参数用于指定TAC区域起点值。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是4~6。该参数大小写不敏感。<br>默认值：无<br>配置原则：<br>本参数由4位或者6位十六进制数组成。 |
+| RANGEEND | TAC区域结束值 | 可选必选说明：必选参数<br>参数含义：本参数用于指定TAC区域结束值。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是4~6。该参数大小写不敏感。<br>默认值：无<br>配置原则：<br>本参数由4位或者6位十六进制数组成。位数需要与RANGESTART值位数保持一致，并且字面值大于等于RANGESTART值。 |
+| DESC | 描述信息 | 可选必选说明：可选参数<br>参数含义：该参数表示对TAC区域信息的描述，在运维中起助记作用。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围是0~1024。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@TACRANGE]] · NF TAC区域信息（TACRANGE）
+
+## 使用实例
+
+运营商A需要添加从000001到000100的TAC区域，索引标识为1。
+
+```
+ADD TACRANGE: INDEX=1, RANGESTART="000001", RANGEEND="000100";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/ADD-TACRANGE.md`

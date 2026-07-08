@@ -1,0 +1,63 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV AGFCHGINFO
+type: MMLCommand
+name: RMV AGFCHGINFO（删除AGF的计费上下文信息）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: AGFCHGINFO
+command_category: 配置类
+applicable_nf:
+- NCG
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- NCG业务及策略管理
+- AGF的计费上下文信息
+status: active
+---
+
+# RMV AGFCHGINFO（删除AGF的计费上下文信息）
+
+## 功能
+
+![](删除AGF的计费上下文信息（RMV AGFCHGINFO）_77825285.assets/notice_3.0-zh-cn_2.png)
+
+删除AGF的计费上下文信息可能会影响生成话单的正确性。
+
+**适用NF：NCG**
+
+该命令用于删除AGF的计费上下文信息。当功能调测或拨测过程中需要手动删除AGF的计费上下文信息时，使用该命令。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+
+- 删除AGF的计费上下文信息可能会影响生成话单的正确性，请慎重使用此命令。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| CHARGINGDATAREF | 计费数据标识 | 可选必选说明：必选参数<br>参数含义：该参数表示CTF与NCG间的计费数据标识。该参数的值可以在消息跟踪里的请求消息中获取。在请求消息的URL里的chargingdata字段后的字符串就是计费数据标识。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是0~255。<br>默认值：无<br>配置原则：<br>计费数据标识生成方式如下：<br>1）NCGSOFTPARA DWord4_Bit6为0，DWord28_BIt3为0时为：imsi（supi去掉imsi-前缀）+chargingId。<br>例：supi为imsi-460005896020654，chargingId为100000000，则计费数据标识为460005896020654100000000。<br>2）NCGSOFTPARA DWord4_Bit6为0，DWord28_BIt3为1时为：imsi（supi去掉imsi-前缀）+chargingId+PdusessionId。<br>例：supi为imsi-460005896020654，chargingId为100000000，PdusessionId为6，则计费数据标识为4600058960206541000000006。<br>3）NCGSOFTPARA DWord4_Bit6为1，DWord28_BIt3为0时为：chargingdataref。<br>请求消息的URL里chargingdata字段后的字符串即为chargingdataref。<br>4）NCGSOFTPARA DWord4_Bit6为1，DWord28_BIt3为1时为：chargingdataref+PdusessionId。<br>请求消息的URL里chargingdata字段后的字符串即为chargingdataref。<br>例：chargingdataref为338800000000111177555481138-00200022-000000001，PdusessionId为6，则计费数据标识为338800000000111177555481138-00200022-0000000016。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@AGFCHGINFO]] · AGF的计费上下文信息（AGFCHGINFO）
+
+## 使用实例
+
+操作员在功能调测过程中手动删除值为4600250000100011048620的CHARGINGDATAREF对应的AGF的计费上下文信息。
+
+```
+RMV AGFCHGINFO: CHARGINGDATAREF="4600250000100011048620";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-AGFCHGINFO.md`

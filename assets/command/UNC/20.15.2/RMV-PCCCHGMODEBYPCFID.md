@@ -1,0 +1,62 @@
+---
+id: UNC@20.15.2@MMLCommand@RMV PCCCHGMODEBYPCFID
+type: MMLCommand
+name: RMV PCCCHGMODEBYPCFID（删除基于PCF的计费策略接口类型）
+nf: UNC
+version: 20.15.2
+verb: RMV
+object_keyword: PCCCHGMODEBYPCFID
+command_category: 配置类
+applicable_nf:
+- SMF
+effect_mode: 对新用户生效
+is_dangerous: false
+category_path:
+- 业务服务管理
+- 会话管理
+- 计费和策略的业务管理
+- 计费策略接口选择
+status: active
+---
+
+# RMV PCCCHGMODEBYPCFID（删除基于PCF的计费策略接口类型）
+
+## 功能
+
+![](删除基于PCF的计费策略接口类型（RMV PCCCHGMODEBYPCFID）_72001554.assets/notice_3.0-zh-cn_2.png)
+
+配置基于PCF的计费策略接口类型不当可能导致PCC用户选择错误接口的PCRF/PCF服务器，进而影响用户使用业务，比如用户无法正常激活。
+
+**适用NF：SMF**
+
+删除基于PCF的计费策略接口类型。
+
+## 注意事项
+
+该命令执行后只对新激活用户生效。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| PCFINSID | PCF实例标识 | 可选必选说明：必选参数<br>参数含义：字符串唯一标识PCF实例。<br>数据来源：全网规划<br>取值范围：字符串类型，输入长度范围是1~63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：<br>PCF实例标识在TOPO本地配置，或者由NRF返回。需要整网协商配置。 |
+
+## 操作的配置对象
+
+- [[UNC@20.15.2@ConfigObject@PCCCHGMODEBYPCFID]] · 基于PCF的计费策略接口类型（PCCCHGMODEBYPCFID）
+
+## 使用实例
+
+删除PCF实例标识为pcf1的计费策略接口类型
+
+```
+RMV PCCCHGMODEBYPCFID: PCFINSID="pcf1";
+```
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/RMV-PCCCHGMODEBYPCFID.md`

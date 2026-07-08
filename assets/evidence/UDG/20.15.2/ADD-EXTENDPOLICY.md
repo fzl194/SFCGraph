@@ -1,0 +1,57 @@
+# 增加扩展策略配置（ADD EXTENDPOLICY）
+
+- [命令功能](#ZH-CN_CONCEPT_0235373568__1.3.1.1)
+- [注意事项](#ZH-CN_CONCEPT_0235373568__1.3.2.1)
+- [操作用户权限](#ZH-CN_CONCEPT_0235373568__1.3.3.1)
+- [参数说明](#ZH-CN_CONCEPT_0235373568__1.3.4.1)
+- [使用实例](#ZH-CN_CONCEPT_0235373568__1.3.5.1)
+
+#### [命令功能](#ZH-CN_CONCEPT_0235373568)
+
+**适用NF：PGW-U、UPF**
+
+该命令用于添加基于规则的扩展策略，其中包含扩展策略类型、业务属性、策略类型、Tethering策略类型和对应的策略。经过运营商的报文根据其匹配结果执行对应策略。
+
+#### [注意事项](#ZH-CN_CONCEPT_0235373568)
+
+- 该命令执行后对新数据流生效。
+- 该命令最大记录数为50000。
+- 每个策略类型的规则可以配置十个基于业务属性的组合。
+- 非PCC类型的物联网规则不允许配置扩展策略。
+- 本命令属于高危命令，操作不当会导致性能下降明显，执行命令前请评估对性能的影响，如果无法评估请联系华为技术支持。
+
+#### [操作用户权限](#ZH-CN_CONCEPT_0235373568)
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+#### [参数说明](#ZH-CN_CONCEPT_0235373568)
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| RULENAME | 规则名称 | 可选必选说明：必选参数<br>参数含义：该参数用于设置规则名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：该参数使用ADD RULE命令配置生成。 |
+| EXTENDPLYTYPE | 扩展策略类型 | 可选必选说明：必选参数<br>参数含义：该参数用于设置扩展策略类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- NORMAL：表示对tethering前后台以外的用户进行控制。<br>- TETHERING：表示在没有超规格的情况下对Tethering前后台进行控制。<br>- EXCEED_TETHERING：表示在超规格情况下对Tethering前后台进行控制。<br>默认值：无<br>配置原则：根据部署的业务策略选择相应的策略类型。 |
+| SRVPROPNAME | 业务属性名称 | 可选必选说明：条件必选参数<br>前提条件：该参数在“EXTENDPLYTYPE”配置为“NORMAL”时为必选参数。<br>可选必选说明：条件可选参数<br>前提条件：该参数在“EXTENDPLYTYPE”配置为“EXCEED_TETHERING” 或 “TETHERING”时为可选参数。<br>参数含义：该参数用于指定业务属性名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：<br>- 该参数使用ADD SERVICEPROP命令配置生成。<br>- 最多可以绑定10个SERVICEPROP。 |
+| TETHERPLYTYPE | Tethering策略类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“EXTENDPLYTYPE”配置为“TETHERING” 或 “EXCEED_TETHERING”时为必选参数。<br>参数含义：该参数用于设置Tethering策略类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- TETHERING_HOTSPOT：表示对tethering前台进行控制。<br>- TETHERING_TERMINAL：表示对没有超规格的tethering后台进行控制。<br>- EXCEED_TETHERING_TERMINAL：表示对超规格的tethering后台进行控制。<br>默认值：无<br>配置原则：只有扩展策略类型为EXCEED_TETHERING时，才可以配置TETHERPLYTYPE为EXCEED_TETHERING_TERMINAL。 |
+| POLICYTYPE | 策略类型 | 可选必选说明：必选参数<br>参数含义：该参数用于设置策略类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- BWM：带宽管理，代表该规则可以配置带宽管理分类策略，其分类结果可以用于带宽管理的策略匹配功能。<br>- HEADEN：头增强，代表该规则可以配置头增强策略，可以基于配置的头增强策略向HTTP/RTSP请求报文头域中插入字段。<br>- WEBPROXY：Web Proxy，代表该规则可以配置WebProxy的IPFarm对象名称，用于设置WebProxy选择的服务器地址池。<br>- IPREDIR：IP重定向，代表该规则可以配置IP重定向的目标IP地址，支持IPv4和IPv6两种类型的IP地址。<br>- SMARTREDIRECT：智能重定向，代表该规则可以配置CaptivePortal业务对应的IPFarm的名称，HTTP智能重定向的名称，DNS重写动作的名称或者重定向的名称。<br>- REMARK_FPI：Remark、FPI或者SAI，代表该规则可以配置IP报文的DSCP重标记值、FPI策略或SAI策略。<br>- SRV_TRIGGER：Service Trigger Radius，代表该规则可以配置业务触发Radius消息交互功能标识，并配置Radius交互过程中报文处理方式。<br>默认值：无<br>配置原则：根据部署的业务策略选择相应的策略类型。 |
+| POLICYNAME | 策略名称 | 可选必选说明：条件必选参数<br>前提条件：该参数在“POLICYTYPE”配置为“SMARTREDIRECT”、“WEBPROXY”、“HEADEN” 或 “BWM”时为必选参数。<br>参数含义：该参数用于设置策略名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～63。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：<br>- 设置的POLICYNAME必须是本策略类型所属的系统已经存在的策略名称。根据策略类型的取值不同，所对应的策略定义对象不同，其代表的对象名也做相应的调整。- BWM：带宽管理，代表该策略名称为BWM分类属性的名称。<br>- HEADEN：头增强，代表该策略名称为头增强的名称。<br>- WEBPROXY：Web Proxy，代表该策略名称为WebProxy业务对应的IPFarm的名称。<br>- SMARTREDIRECT：Captive Portal智能重定向，代表该策略名称为CaptivePortal业务对应的IPFarm的名称，http智能重定向的名称或者dns重写动作的名称。 |
+| RDSTRIGGERFLAG | Radius消息触发标识 | 可选必选说明：条件必选参数<br>前提条件：该参数在“POLICYTYPE”配置为“SRV_TRIGGER”时为必选参数。<br>参数含义：该参数用于设置Radius消息触发标识。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- DISABLE：不使能标识，不支持业务触发Radius消息。<br>- ENABLE：使能标识，支持业务触发Radius消息。<br>默认值：DISABLE<br>配置原则：无 |
+| RDSACTIONTYPE | Radius消息触发时报文默认处理动作 | 可选必选说明：条件可选参数<br>前提条件：该参数在“RDSTRIGGERFLAG”配置为“ENABLE”时为可选参数。<br>参数含义：该参数用于设置Radius消息触发时报文默认处理动作。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- PASS：报文转发。<br>- BLOCK：报文丢弃。<br>- BUFFER：报文缓存。<br>默认值：PASS<br>配置原则：<br>- 如果运营商希望命中该规则的业务流触发Radius消息交互的过程中业务报文继续转发，则可以配置该参数为PASS。<br>- 如果运营商希望命中该规则的业务流触发Radius消息交互的过程中业务报文全部丢弃，则可以配置该参数为BLOCK。<br>- 如果运营商希望命中该规则的业务流触发Radius消息交互的过程中缓存业务报文，则可以配置该参数为BUFFER。 |
+| REDIRIPVERFLAG | IP重定向虚拟IP协议版本 | 可选必选说明：条件必选参数<br>前提条件：该参数在“POLICYTYPE”配置为“IPREDIR”时为必选参数。<br>参数含义：该参数用于设置IP重定向IP协议版本。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- IPV4：IPv4地址类型。<br>- IPV6：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| IPREDIRECTIPV6 | IP重定向IPv6地址 | 可选必选说明：条件必选参数<br>前提条件：该参数在“REDIRIPVERFLAG”配置为“IPV6”时为必选参数。<br>参数含义：该参数用于设置IP重定向IPv6地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| IPREDIRECTIP | IP重定向IP地址 | 可选必选说明：条件必选参数<br>前提条件：该参数在“REDIRIPVERFLAG”配置为“IPV4”时为必选参数。<br>参数含义：IP重定向IP地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无<br>配置原则：无 |
+| REMARKFPISEL | 重标记、FPI或SAI选择 | 可选必选说明：条件必选参数<br>前提条件：该参数在“POLICYTYPE”配置为“REMARK_FPI”时为必选参数。<br>参数含义：该参数用于设置重标记、FPI或SAI选择。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- REMARK：执行Remark动作。<br>- FPI：执行FPI动作。<br>- REMARKANDFPI：执行Remark动作和FPI动作。<br>- SAI：执行SAI动作。<br>- REMARKANDSAI：执行Remark动作和SAI动作。<br>- FPIANDSAI：执行FPI动作和SAI动作。<br>- RMKFPISAI：执行Remark动作，FPI动作和SAI动作。<br>默认值：REMARK<br>配置原则：<br>- 如果运营商希望配置命中该规则的业务报文需要支持DSCP重标记功能，匹配到该规则的业务报文，其DSCP值将被修改为REMARK指定的值。则配置该参数为REMARK。<br>- 如果运营商希望配置命中该规则的业务报文需要支持FPI功能，匹配到该规则的下行业务报文IP头部的DSCP值或者扩展GTP-U头的值将被修改为FPIVALUE。则配置该参数为FPI。<br>- 如果运营商希望配置命中该规则的业务报文需要支持SAI功能，匹配到该规则的下行业务报文IP头部的扩展GTP-U头通过SAIVALUE。则配置该参数为SAI。<br>- 如果运营商希望配置命中该规则的业务报文同时支持多个功能，则配置为REMARKANDFPI、FPIANDSAI、RMKFPISAI、REMARKANDSAI和RMKFPISAI。如：需要支持DSCP重标记功能和FPI功能。则配置该参数为REMARKANDFPI。<br>- 配置该参数可能导致系统性能下降。执行命令前请评估对性能的影响，如果无法评估请联系华为技术支持。 |
+| REMARKCFGTYPE | Remark配置类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“REMARKFPISEL”配置为“REMARK”、“REMARKANDFPI”、“REMARKANDSAI” 或 “RMKFPISAI”时为必选参数。<br>参数含义：该参数用于设置重标记配置类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- CLASS：表示使用枚举型配置remark。<br>- DSCP：表示使用数值型配置remark。<br>默认值：CLASS<br>配置原则：无 |
+| REMARKCLASS | Remark分类类型 | 可选必选说明：条件必选参数<br>前提条件：该参数在“REMARKCFGTYPE”配置为“CLASS”时为必选参数。<br>参数含义：该参数用于设置重标记分类类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- BE：表示remark值为0（0x00）。<br>- CS1：表示remark值为8（0x08）。<br>- AF11：表示remark值为10（0x0a）。<br>- AF12：表示remark值为12（0x0c）。<br>- AF13：表示remark值为14（0x0e）。<br>- CS2：表示remark值为16（0x10）。<br>- AF21：表示remark值为18（0x12）。<br>- AF22：表示remark值为20（0x14）。<br>- AF23：表示remark值为22（0x16）。<br>- CS3：表示remark值为24（0x18）。<br>- AF31：表示remark值为26（0x1a）。<br>- AF32：表示remark值为28（0x1c）。<br>- AF33：表示remark值为30（0x1e）。<br>- CS4：表示remark值为32（0x20）。<br>- AF41：表示remark值为34（0x22）。<br>- AF42：表示remark值为36（0x24）。<br>- AF43：表示remark值为38（0x26）。<br>- CS5：表示remark值为40（0x28）。<br>- EF：表示remark值为46（0x2e）。<br>- CS6：表示remark值为48（0x30）。<br>- CS7：表示remark值为56（0x38）。<br>- NULL：NULL。<br>默认值：无<br>配置原则：无 |
+| REMARK | 重标记 | 可选必选说明：条件必选参数<br>前提条件：该参数在“REMARKCFGTYPE”配置为“DSCP”时为必选参数。<br>参数含义：该参数用于设置重标记。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～63。<br>默认值：无<br>配置原则：无 |
+| FPIVALUE | FPI值 | 可选必选说明：条件必选参数<br>前提条件：该参数在“REMARKFPISEL”配置为“FPI”、“REMARKANDFPI”、“FPIANDSAI” 或 “RMKFPISAI”时为必选参数。<br>参数含义：该参数用于设置FPI值。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～255。<br>默认值：无<br>配置原则：修改报文IP头部的DSCP值时，取值范围是0～63。修改扩展GTP-U头的值时，取值范围是0～255。 |
+| RDSBUFFERTIME | 指定业务触发radius消息发送时的业务报文延时时间 | 可选必选说明：条件可选参数<br>前提条件：该参数在“RDSACTIONTYPE”配置为“BUFFER”时为可选参数。<br>参数含义：该参数用于指定业务触发radius消息发送时的业务报文延时时间。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～6。<br>默认值：无<br>配置原则：无 |
+| CFGDOMAINNAME | 配置域名称 | 可选必选说明：可选参数<br>参数含义：该参数表示命令所属公共配置域的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：无 |
+| SAIVALUE | SAI值 | 可选必选说明：条件必选参数<br>前提条件：该参数在“REMARKFPISEL”配置为“SAI”、“REMARKANDSAI”、“FPIANDSAI” 或 “RMKFPISAI”时为必选参数。<br>参数含义：该参数用于标识当规则对应的业务类型，通过匹配该规则的业务下行报文传递给无线基站，无线基站基于业务类型的业务保障。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为1～39。<br>默认值：0<br>配置原则：无 |
+
+#### [使用实例](#ZH-CN_CONCEPT_0235373568)
+
+假如运营商希望增加一个基于规则的扩展策略，规则名称为“rule”，扩展策略类型为NORMAL，业务属性为“srvprop”，策略类型为BWM，对应的策略为“ply”：
+
+```
+ADD EXTENDPOLICY: RULENAME="rule", EXTENDPLYTYPE=NORMAL, SRVPROPNAME="srvprop", POLICYTYPE=BWM, POLICYNAME="ply";
+```

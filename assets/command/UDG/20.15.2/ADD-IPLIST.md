@@ -1,0 +1,70 @@
+---
+id: UDG@20.15.2@MMLCommand@ADD IPLIST
+type: MMLCommand
+name: ADD IPLIST（增加IP地址列表）
+nf: UDG
+version: 20.15.2
+verb: ADD
+object_keyword: IPLIST
+command_category: 配置类
+applicable_nf:
+- PGW-U
+- UPF
+effect_mode: 立即生效
+is_dangerous: false
+category_path:
+- 用户面服务管理
+- 业务匹配策略
+- 业务过滤器管理
+- 三四层规则管理
+- IP地址列表
+status: active
+---
+
+# ADD IPLIST（增加IP地址列表）
+
+## 功能
+
+**适用NF：PGW-U、UPF**
+
+该命令用于数据库中增加虚拟IP列表数据。
+
+## 注意事项
+
+- 该命令执行后立即生效。
+- 系统最多支持配置500条IPList，每个IPList最多支持配置200个IP地址段。系统最多可支持20000条IP和IPList的绑定关系。
+- 向IPList中添加IP地址时，IPList如果被绑定到Filter中，系统会自动生成Filter，该Filter会消耗系统中的Filter规格。 举例：假设给IPList添加一个IP，IPList被N个Filter绑定为Server IP，生成Filter数目的计算公式： 生成Filter数目 = filter1的MS IP数目 + filter2的MS IP数目+…+filterN的MS IP数目。
+- 如果该IPList中已经存在该IP地址，则提示记录已经存在，否则添加一条IP到此IPList中。
+- 向IPList添加一个IP地址后，需要执行SET REFRESHSRV使当前配置生效，建议该操作在对所有IPList的配置修改完成后执行。
+- MASKVALUE参数配置过小会导致ip匹配范围变大，影响规则匹配。
+
+## 权限
+
+G_1，管理员级别命令组；G_2，操作员级别命令组
+
+## 参数
+
+| 参数标识 | 参数名称 | 参数说明 |
+| --- | --- | --- |
+| IPLISTNAME | IP列表名称 | 可选必选说明：必选参数<br>参数含义：该参数用于指定IP列表名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。不支持空格，不区分大小写。<br>默认值：无<br>配置原则：无 |
+| IPVERSION | IP地址版本类型 | 可选必选说明：必选参数<br>参数含义：该参数用于指定IP地址版本类型。<br>数据来源：本端规划<br>取值范围：枚举类型。<br>- IPV4：IPv4地址类型。<br>- IPV6：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| IPV4ADDR | IPv4地址 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPVERSION”配置为“IPV4”时为必选参数。<br>参数含义：该参数用于指定IPv4地址。<br>数据来源：本端规划<br>取值范围：IPv4地址类型。<br>默认值：无<br>配置原则：无 |
+| IPV6ADDR | IPv6地址 | 可选必选说明：条件必选参数<br>前提条件：该参数在“IPVERSION”配置为“IPV6”时为必选参数。<br>参数含义：该参数用于指定IPv6地址。<br>数据来源：本端规划<br>取值范围：IPv6地址类型。<br>默认值：无<br>配置原则：无 |
+| MASKVALUE | IP地址掩码 | 可选必选说明：必选参数<br>参数含义：该参数用于指定IP地址掩码。<br>数据来源：本端规划<br>取值范围：整数类型，取值范围为0～128。IPVERSION为IPV4时，取值范围是0~32。IPVERSION为IPV6时，取值范围是0~128。<br>默认值：无<br>配置原则：无 |
+| CFGDOMAINNAME | 配置域名称 | 可选必选说明：可选参数<br>参数含义：该参数表示命令所属公共配置域的名称。<br>数据来源：本端规划<br>取值范围：字符串类型，输入长度范围为1～31。<br>默认值：无<br>配置原则：无 |
+
+## 操作的配置对象
+
+- [[UDG@20.15.2@ConfigObject@IPLIST]] · IP地址列表（IPLIST）
+
+## 使用实例
+
+增加IP地址列表IPLISTNAME为test01，IPVERSION为IPV4：
+
+```
+ADD IPLIST:IPLISTNAME="test01",IPVERSION=IPV4,IPV4ADDR="10.0.0.1",MASKVALUE=1;
+```
+
+## 证据
+
+- 原始手册：`evidence/UDG/20.15.2/ADD-IPLIST.md`
