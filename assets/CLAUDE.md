@@ -3,21 +3,21 @@
 > 本文件是 assets/ 的 **CLAUDE.md**——指导 Agent 如何维护这个 typed wiki。
 > 它让 Agent 成为"有纪律的 wiki 维护者"而非通用 chatbot。随实践共演化。
 > 体系总方案：`../docs/superpowers/specs/2026-07-08-config-generation-e2e-design.md`
-> Schema 权威：`../改进后三层图谱定义.md`
+> Schema 定义（自包含拷贝）：`schema/三层图谱定义.md`（开发期权威源在仓库根 `../改进后三层图谱定义.md`，变更后重新拷贝同步）
 
 ---
 
 ## 1. 体系定位（一句话）
 
-assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[wiki]]` 承载，页面类型按预定义 Schema 约束。它是**唯一对外暴露面**——源在 builder 目录不外泄，配置生成通过服务化取子集。
+assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[wiki]]` 承载，页面类型按预定义 Schema 约束。它是**自包含、可剥离、唯一对外暴露**的知识面——源在 builder 目录不外泄，配置生成通过服务化取子集。
 
 ## 2. 三层架构（你工作在 wiki 层）
 
 | 层 | 你能做 |
 |---|---|
-| **Raw Sources**（`output/`、`CommandGraph/data`、`FeatureGraph/data`、任意知识） | **只读**。读不改。 |
+| **Raw Sources**（`../output/`、`../CommandGraph/data`、`../FeatureGraph/data`、任意知识） | **只读**。读不改。开发期源，**不进 assets 运行时引用**。 |
 | **Wiki**（assets/，本目录） | **你拥有**：写 typed md、维护 `[[wiki]]`、维护 index/log。人审你的产出。 |
-| **Schema**（`改进后三层图谱定义.md` + 本 CLAUDE.md） | 遵守。Schema 字段/关系的演进由人主导，你可提议。 |
+| **Schema**（`schema/三层图谱定义.md` + 本 CLAUDE.md） | 遵守。Schema 字段/关系演进由人主导，你可提议。 |
 
 ## 3. 你与人的分工
 
@@ -34,56 +34,88 @@ assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[
 
 ### 4.1 Compile / Ingest（raw → typed md）
 输入一个 raw source（产品文档 / jsonl 条目 / 任意知识），步骤：
-1. **识别对象类型**：它对应 Schema 的哪些对象类型（命令/特性/业务域/方案/Task…）。
-2. **凝练/投影成 md**：按该对象类型的 typed 模板（见 `schema/`）写一个 md。
-   - 原料结构化（jsonl）→ **投影**（字段直接映射）
-   - 原料非结构化（产品文档/任意知识）→ **按 Schema 凝练**对象与关系，标注 `source_evidence_ids` 回指原料
-3. **维护交叉引用**：更新被本对象引用的、以及引用本对象的现有页的 `[[wiki]]`。
-4. **更新 index.md**：本页加一行（链接 + 类型 + 一句话摘要）。
-5. **追加 log.md**：`## [YYYY-MM-DD] ingest | <对象id>` + 动作摘要。
-6. 多源触动：一个源可能更新 10-15 个页（如新增一条命令 → 更新引用它的 Task/特性页）。
+1. **识别对象类型**：对应 Schema 的哪些对象类型。
+2. **凝练/投影成 md**：按该对象类型模板写一个 md。
+   - 原料结构化（jsonl）→ **投影**（字段映射）
+   - 原料非结构化（产品文档/任意知识）→ **按 Schema 凝练**对象与关系
+3. **证据内联/拷贝**（§7 可剥离）：证据原文进 assets/，`source_evidence_ids` 指向 assets/ 内拷贝，不指外部。
+4. **维护交叉引用**：更新被本对象引用的、以及引用本对象的现有页的 `[[wiki]]`。
+5. **更新 index.md** + **追加 log.md**（`## [日期] ingest | <对象id>`）。
+6. 一个源可能触动 10-15 个页。
 
 ### 4.2 Query（取子集 → 配置生成 → 回填）
-- **先读 index.md 定位**相关页 → 按需取（或服务化打包子场景子集）。
-- 配置生成中产出的**好综合**（方案对比、决策理由、踩坑、新发现的连接）→ **回填**为新页或更新现有页 → 更新 index/log。这是体系复利增长的关键，不要让好综合消失在对话里。
+- 先读 index.md 定位 → 按需取（或服务化打包子场景子集）。
+- 配置生成中的**好综合**（方案对比、决策理由、踩坑、新连接）→ **回填**为新页或更新现有页 → 更新 index/log。不让好综合消失在对话里。
 
 ### 4.3 Lint（静态体检）
-定期（或人触发）体检 assets/：
-- **矛盾**：页面间相互冲突的声明
-- **过时**：被新源推翻但未更新的旧声明
-- **孤立页**：无任何入链的页
-- **缺页**：被多处 `[[引用]]` 但无独立页的概念
-- **缺交叉引用**：应当互链却没链的相关页
-- **Schema 不合规**：typed 页缺字段/关系类型不对
-- **数据缺口**：可用新原料填的空缺
-→ 发现即触发 Compile 修复，记入 log。
+定期查：矛盾 / 过时声明 / 孤立页（无入链）/ 缺页（被引无独立页）/ 缺交叉引用 / Schema 不合规 / 数据缺口 / Schema 拷贝与源不同步 → 触发 Compile 修复，记 log。
 
 ---
 
-## 5. typed md 通用约定（所有对象类型共有）
+## 5. ID 与文件名规范（统一编码，wiki 链接依据）
 
-- **文件名 = 对象唯一 ID**（沿用现有编号：`BD-BSA-01` / `NS-CH-01` / `CS-CH-03` / `GWFD-010171` / 命令名 / `task-1-00003`）。
-- **一个 md = 一个对象**：内聚该对象所有知识。
-- **结构**：
-  - `YAML front matter`：自身属性 + 路由维度（`id` / `type` / `name` / `status` + `nf`/`version` 或 `scenario`/`domain`）。**不放关系**。
-  - `markdown 正文`：人读叙述 + 表格。
-  - `[[wiki 链接]]`：承载所有关系，每种链接对应 Schema 一种关系类型。
-- **共享 vs 独占**：
-  - 被多对象引用的**共享对象**（ConfigObject、License）→ 独立 md，被 `[[wiki]]` 引用（DRY）。
-  - 对象**独占的信息**（如命令的参数）→ 内聚进该对象 md。
-- **每个对象类型的具体字段模板**：在 `schema/` 下该类型的模板文件定义，Compile 该层时落地。本准则只定通用原则。
+### 5.1 绑产品对象 → 四段式 `{nf}@{version}@{ObjectType}@{local_id}`
+| 对象 | local_id | 示例 |
+|---|---|---|
+| MMLCommand | 命令全名 | `UDG@20.15.2@MMLCommand@ADD URR` |
+| CommandParameter | `<命令>:<参数>` | `UDG@20.15.2@CommandParameter@ADD URR:URRNAME` |
+| ConfigObject | 对象名 | `UDG@20.15.2@ConfigObject@URR` |
+| Feature | feature_code | `UDG@20.15.2@Feature@GWFD-020301` |
+| License | license_code | `UDG@20.15.2@License@LKV6SFVCPU01` |
+| Task | `<层前缀>-<5位流水>`（atom `0-`/compound `1-`/feature `2-`/solution `3-`/generalized `4-`） | `UDG@20.15.2@Task@1-00003` |
+| 任务级 DecisionPoint / TaskRule | `0-<5位流水>`（按类型独立流水） | `UDG@20.15.2@DecisionPoint@0-00001` |
 
-## 6. 基建文件维护
+### 5.2 跨产品对象（业务层 BD/NS/CS）→ 两段式 `{ObjectType}@{语义slug}`
+业务层横跨 UDG+UNC，**不带 nf@version**。local 用英文语义 slug（业务层有天然名，同命令用命令名、特性用 feature_code 的惯例）。
+| 对象 | 示例 |
+|---|---|
+| BusinessDomain | `BusinessDomain@business-awareness` |
+| NetworkScenario | `NetworkScenario@charging` |
+| ConfigurationSolution | `ConfigurationSolution@charging-converged` |
 
-- **index.md**：每次 Compile/Ingest **必须**更新。按类别分区，每页一行 `- [[id]] · 类型 — 一句话摘要`。Query 先读它。
-- **log.md**：**append-only**，不删改历史。一致前缀 `## [YYYY-MM-DD] <ingest|query|lint> | <对象/操作>`，便于 `grep "^## \[" log.md`。
+### 5.3 内嵌对象（不单独建 md，不单独 ID）
+- 业务级 DecisionPoint：内嵌在 NS/CS md，用 md 内标题 + 锚点引用（`[[NetworkScenario@charging#计费方式选择]]`）。
+- TaskRule、任务级 DecisionPoint：内嵌在 Task md。
 
-## 7. 边界（硬约束）
+### 5.4 废弃编号
+旧业务编号（`BD-BSA-01` / `NS-CH-01` / `CS-CH-03` / `DP-CH-xx`）**全部废弃**，改用 §5.2 两段式。
 
-- **可写**：仅 `assets/`（typed md + index.md + log.md + 本 CLAUDE.md + `schema/` 模板）。
-- **只读**：`output/`、`CommandGraph/data`、`FeatureGraph/data`、`ConfigTask/assert`、`business-graph`、`../改进后三层图谱定义.md`、`../docs/superpowers/specs/`。源不改、Schema 不擅改。
-- 每次写前自检：路径在 `assets/` 下吗？
+### 5.5 文件名
+文件名用 local_id 段（sanitized：空格/特殊字符转 `-`），目录承载 nf@version/type 段。
+- `command/UDG/20.15.2/ADD-URR.md` ← `UDG@20.15.2@MMLCommand@ADD URR`
+- `business/business-awareness/charging/ConfigurationSolution@charging-converged.md`（业务层无 nf@version 维度，文件名用完整两段式 ID）
+- wiki 链接用**完整 ID**；ID ↔ 文件路径映射由目录约定 + §5.1/5.2 规则解析。
+
+---
+
+## 6. typed md 通用约定（所有对象共有）
+
+- 一个 md = 一个对象，内聚该对象所有知识。
+- 结构：`YAML front matter`（自身属性 + 路由维度：`id`/`type`/`name`/`status` + `nf`/`version` 或 `scenario`/`domain`）+ `markdown 正文`（人读叙述 + 表格）+ `[[wiki 链接]]`（承载 Schema 关系）。
+- 关系全用 `[[wiki]]`，不放 front matter。每种链接对应 Schema 一种关系类型（业务层：contains/instantiated_as/uses_feature/uses_task；特性层：requires_license/depends_on；命令层：operates_on/has_parameter；任务层：precedes/contains/ref）。
+- 共享对象（ConfigObject、License）独立 md 被 wiki 引用；独占信息（命令参数）内聚。
+- 各对象类型的具体字段模板：`schema/` 下定义，Compile 该层时落地。
+
+## 7. 自包含 / 可剥离（硬约束）
+
+assets/ 必须**可整个剥离单独交付/部署**。因此：
+- **不依赖外部路径**：所有运行时引用的内容必须在 assets/ 内。
+- **证据/原料拷贝**：typed md 的 `source_evidence_ids` 只指 assets/ 内拷贝（证据原文进 `evidence/` 或内联 md"证据"章节），不指 `../output/` 等外部。
+- **Schema/SOP 拷贝**：`schema/三层图谱定义.md` 是自包含拷贝；`skill/` 在 P5 切换时拷入 SOP + knowledge。
+- **wiki 链接闭环**：所有 `[[wiki]]` 指向 assets/ 内 md，不断链外部。
+- 开发期源（`../output/`、`../CommandGraph/data` 等）是 Compile 的**读入方**，不进 assets 运行时。
+
+## 8. 基建文件维护
+
+- **index.md**：每次 Compile/Ingest **必须**更新。按类别分区，每页一行 `- [[id]] · 类型 — 一句话摘要`。
+- **log.md**：**append-only**。`## [YYYY-MM-DD] <ingest|query|lint> | <对象/操作>` 前缀便于 grep。
+
+## 9. 边界（硬约束）
+
+- **可写**：仅 `assets/`（typed md + index.md + log.md + 本 CLAUDE.md + `schema/`/`evidence/` 拷贝）。
+- **只读**：`../output/`、`../CommandGraph/data`、`../FeatureGraph/data`、`../ConfigTask/assert`、`../business-graph`、`../改进后三层图谱定义.md`、`../docs/superpowers/specs/`。
+- 每次写前自检：路径在 `assets/` 下吗？源不改、Schema 不擅改。
 - 跨层/跨场景一致性：靠 `[[wiki]]` 串联 + Lint 查断链，不靠复制。
 
-## 8. 状态约定
-- typed 页 front matter 的 `status`：`draft`（刚 Compile，待人审）→ `active`（人审过）→ `stale`（Lint 标记需更新）。高层对象只引用 `active` 下层。
+## 10. 状态约定
+typed 页 front matter 的 `status`：`draft`（刚 Compile，待人审）→ `active`（人审过）→ `stale`（Lint 标记需更新）。高层对象只引用 `active` 下层。

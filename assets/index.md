@@ -7,7 +7,7 @@
 ---
 
 ## 业务层（BusinessDomain / NetworkScenario / ConfigurationSolution）
-<!-- 例：- [[CS-CH-03]] · ConfigurationSolution — 融合计费方案（SMF 经 N40/Nchf 与 CHF 交互，在线+离线 RG 共存） -->
+<!-- 例：- [[ConfigurationSolution@charging-converged]] · ConfigurationSolution — 融合计费方案（SMF 经 N40/Nchf 与 CHF 交互，在线+离线 RG 共存） -->
 
 
 ## 特性层（Feature / License）
