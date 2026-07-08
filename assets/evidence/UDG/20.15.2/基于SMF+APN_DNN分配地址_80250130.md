@@ -1,0 +1,251 @@
+# 基于SMF+APN/DNN分配地址
+
+- [操作场景](#ZH-CN_OPI_0280250130__1.3.1)
+- [必备事项](#ZH-CN_OPI_0280250130__1.3.2)
+- [操作步骤](#ZH-CN_OPI_0280250130__1.3.3)
+- [任务示例](#ZH-CN_OPI_0280250130__1.3.4)
+
+## [操作场景](#ZH-CN_OPI_0280250130)
+
+运营商规划用户面网元（UPF/PGW-U）基于SMF+APN/DNN为UE分配IP地址时，可激活本特性。 UDG 本地地址池可基于APN/DNN、位置、SMF或其任意组合分配地址，配置方法可参考上述章节，本文以基于SMF+APN/DNN的组合为例说明配置过程。其他组合可根据命令帮助说明进行配置。
+
+> **说明**
+> 适用于PGW-U、UPF。
+
+## [必备事项](#ZH-CN_OPI_0280250130)
+
+前提条件
+
+- 请仔细阅读[GWFD-020406 IPv6 Prefix Delegation](../../GWFD-020406 IPv6 Prefix Delegation_79370033.md)。
+- UDG本端已完成数据面逻辑接口（Sa/Sc/Pa）和N4/Sxa/Sxb逻辑接口的配置，配置过程可参考初始配置手册的[配置业务接口数据](../../../../../../网络部署/初始配置/UDG初始配置与调测/组网对接配置/配置业务接口数据_68634146.md)。
+
+数据
+
+| 类别 | 参数名称 | 取值样例 | 获取方法 | 说明 |
+| --- | --- | --- | --- | --- |
+| [**ADD VPNINST**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/VPN管理/VPN/增加VPN实例（ADD VPNINST）_82837045.md) | VPN实例（VPNINSTANCE） | vpn1 | 全网规划 | 此处绑定的VPN实例与业务APN绑定的VPN实例一致。 |
+| [**ADD APN**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/添加APN配置（ADD APN）_82837014.md) | APN名称（APN） | - apn-test2<br>- apn-test3 | 本端规划 | APN/DNN实例应该全网规划，<br>UDG<br>本端配置的APN/DNN实例应该与C面（SMF/SGW-C/PGW-C）配置的APN/DNN实例一致。 |
+| [**ADD APN**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/添加APN配置（ADD APN）_82837014.md) | 绑定VPN<br>（HASVPN） | ENABLE | 本端规划 | 如下三者绑定的VPN实例必须一致。<br>- 地址池绑定的VPN实例<br>- 用户激活使用的APN绑定的VPN实例<br>- 与PDN/DN连接的Gi/SGi/N6接口的外联口绑定的VPN实例 |
+| [**ADD APN**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/添加APN配置（ADD APN）_82837014.md) | VPN实例名（VPNINSTANCE） | vpn1 | 本端规划 | 可以使用<br>[**LST VPNINST**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/VPN管理/VPN/查询VPN实例（LST VPNINST）_82837047.md)<br>命令进行查询。 |
+| [**SET APNADDRESSATTR**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/APN的地址分配属性配置/设置ApnAddressAttr配置（SET APNADDRESSATTR）_82837173.md) | APN名称（APN） | - apn-test2<br>- apn-test3 | 已配置数据中获取 | 规划使能Routing Behind MS功能的APN实例，已通过<br>[**ADD APN**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/添加APN配置（ADD APN）_82837014.md)<br>命令配置，可以使用<br>[查询APN配置（LST APN）](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/查询APN配置（LST APN）_82837017.md)<br>命令进行查询。 |
+| [**SET APNADDRESSATTR**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/APN的地址分配属性配置/设置ApnAddressAttr配置（SET APNADDRESSATTR）_82837173.md) | 支持IPV4（SUPPORTIPV4） | ENABLE | 本端规划 | 配置指定APN是否支持IPV4地址。 |
+| [**SET APNADDRESSATTR**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/APN的地址分配属性配置/设置ApnAddressAttr配置（SET APNADDRESSATTR）_82837173.md) | 支持IPV6（SUPPORTIPV6） | ENABLE | 本端规划 | 配置指定APN是否支持IPV6地址。 |
+| [**ADD POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/添加地址池（ADD POOL）_82837132.md) | 地址池名称（POOLNAME） | testpool3<br>testpool30 | 本端规划 | - |
+| [**ADD POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/添加地址池（ADD POOL）_82837132.md) | 地址池类型（POOLTYPE） | LOCAL | 本端规划 | - |
+| [**ADD POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/添加地址池（ADD POOL）_82837132.md) | IP地址类型（IPVERSION） | IPV6 | 本端规划 | 本地地址池支持IPv4和IPv6类型，如果规划UE IPv4v6双栈地址，则需要配置两种类型的地址池。 |
+| [**ADD POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/添加地址池（ADD POOL）_82837132.md) | 绑定VPN（HASVPN） | ENABLE | 本端规划 | 如下三者绑定的VPN实例必须一致。<br>- 用户激活使用的APN绑定的VPN实例<br>- 地址池绑定的VPN实例<br>- 与PDN/DN连接的Gi/SGi/N6接口的外联口绑定的VPN实例 |
+| [**ADD POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/添加地址池（ADD POOL）_82837132.md) | VPN实例名（VPNINSTANCE） | vpn1 | 已配置数据中获取 | 可以使用<br>[**LST VPNINST**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/VPN管理/VPN/查询VPN实例（LST VPNINST）_82837047.md)<br>命令进行查询。 |
+| [**ADD SECTION**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址段配置/添加地址池IP地址段（ADD SECTION）_82837114.md) | 地址池名称（POOLNAME） | testpool3<br>testpool30 | 本端规划 | 可以使用<br>[**LST POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/显示地址池（LST POOL）_82837135.md)<br>命令进行查询。 |
+| [**ADD SECTION**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址段配置/添加地址池IP地址段（ADD SECTION）_82837114.md) | 地址段号（SECTIONNUM） | 1 | 本端规划 | - |
+| [**ADD SECTION**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址段配置/添加地址池IP地址段（ADD SECTION）_82837114.md) | IP地址类型（IPVERSION） | IPV6 | 本端规划 | - |
+| [**ADD SECTION**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址段配置/添加地址池IP地址段（ADD SECTION）_82837114.md) | IPv6前缀起始地址（V6PREFIXSTART） | - fc00:0000:0000:fcde:0000:0000:0000:0000<br>- fc00:0000:0000:fcee:0000:0000:0000:0000 | 全网规划 | 本地地址池支持IPv4和IPv6类型，如果规划UE IPv4v6双栈地址，则需要配置两种类型的地址池。 |
+| [**ADD SECTION**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址段配置/添加地址池IP地址段（ADD SECTION）_82837114.md) | IPv6前缀结束地址（V6PREFIXEND） | - fc00:0000:0000:fcdf:ffff:ffff:ffff:ffff<br>- fc00:0000:0000:fcef:ffff:ffff:ffff:ffff | 全网规划 | 本地地址池支持IPv4和IPv6类型，如果规划UE IPv4v6双栈地址，则需要配置两种类型的地址池。 |
+| [**ADD SECTION**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址段配置/添加地址池IP地址段（ADD SECTION）_82837114.md) | IPv6前缀长度（V6PREFIXLENGTH） | 63 | 全网规划 | 前缀长度范围为49~64，当前缀长度小于64时，则表示该地址池采用IPv6 Prefix Delegation方式分配。 |
+| [**ADD POOLGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组/添加地址池组（ADD POOLGROUP）_82837138.md) | 地址池组名称（POOLGRPNAME） | poolgroup3<br>poolgroup30 | 本端规划 | - |
+| [**ADD POOLGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组/添加地址池组（ADD POOLGROUP）_82837138.md) | IPV4基于地址池优先级分配地址算法（IPV4ALLOCPRIALG） | ENABLE | 本端规划 | 若使用IPv4地址池优先级功能，则必须使能本参数。 |
+| [**ADD POOLGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组/添加地址池组（ADD POOLGROUP）_82837138.md) | IPV6基于地址池优先级分配地址算法（IPV6ALLOCPRIALG） | ENABLE | 本端规划 | 若使用IPv6地址池优先级功能，则必须使能本参数。 |
+| [**ADD POOLBINDGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池绑定地址池组/绑定地址池到地址池组（ADD POOLBINDGROUP）_82837143.md) | 地址池组名称（POOLGRPNAME） | poolgroup3<br>poolgroup30 | 已配置数据中获取 | 可以使用<br>[**LST POOLGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组/显示地址池组（LST POOLGROUP）_82837141.md)<br>命令进行查询。 |
+| [**ADD POOLBINDGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池绑定地址池组/绑定地址池到地址池组（ADD POOLBINDGROUP）_82837143.md) | 地址池名称（POOLNAME） | testpool3<br>testpool30 | 本端规划 | 可以使用<br>[**LST POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/显示地址池（LST POOL）_82837135.md)<br>命令进行查询。 |
+| [**ADD POOLBINDGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池绑定地址池组/绑定地址池到地址池组（ADD POOLBINDGROUP）_82837143.md) | 优先级（PRIORITY） | 10 | 本端规划 | 地址池组下绑定多个地址池时，支持按地址池优先级分配地址。只有同类地址池之间才有优先级比较，不同类型的地址池间（IPv4和IPv6）没有优先级比较。 |
+| [**ADD CPNODEID**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/SMF属性/添加SMF的NodeID（ADD CPNODEID）_16780315.md) | SMF 名称（CPNAME） | smfnode1 | 本端规划 | - |
+| [**ADD CPNODEID**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/SMF属性/添加SMF的NodeID（ADD CPNODEID）_16780315.md) | IPv4地址类型的Node Id（IPV4NODEID） | 10.0.0.1 | 对端获取 | 不同SMF实例的SMF NodeID不可以相同。该参数要与对端SMF上的配置取值一致。 |
+| [**ADD CPNODEID**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/SMF属性/添加SMF的NodeID（ADD CPNODEID）_16780315.md) | IPv6地址类型的Node Id（IPV6NODEID） | FC00:1111:1001:0001:0100:1100:0000:0001 | 对端获取 | 不同SMF实例的SMF NodeID不可以相同。该参数要与对端SMF上的配置取值一致。 |
+| [**ADD CPNODEID**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/SMF属性/添加SMF的NodeID（ADD CPNODEID）_16780315.md) | FQDN类型的Node Id（FQDNNODEID） | consumer.huawei.com | 对端获取 | 不同SMF实例的SMF NodeID不可以相同。该参数要与对端SMF上的配置取值一致。 |
+| [**ADD CONFLICTIPV6**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/冲突地址管理/IPv4冲突地址管理/添加本地地址池中冲突IPv4地址（ADD CONFLICTIP）_82837120.md) | 地址池名称（POOLNAME） | testpool3<br>testpool30 | 已配置数据中获取 | 可以使用<br>[**LST POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/显示地址池（LST POOL）_82837135.md)<br>命令进行查询。 |
+| [**ADD CONFLICTIPV6**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/冲突地址管理/IPv4冲突地址管理/添加本地地址池中冲突IPv4地址（ADD CONFLICTIP）_82837120.md) | 冲突IPv6地址前缀（V6PREFIX） | fc00:0000:0000:fcee:0000:0000:0000:0001 | 全网规划 | 如果地址池中某一个IPv6地址+前缀长度已经使用，不可用于用户地址分配，则需要配置该冲突IPv6地址。 |
+| [**ADD CONFLICTIPV6**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/冲突地址管理/IPv4冲突地址管理/添加本地地址池中冲突IPv4地址（ADD CONFLICTIP）_82837120.md) | IPv6前缀长度（V6PREFIXLENGTH） | 63 | 已配置数据中获取 | 该参数必须与地址池的前缀长度一致。 |
+| [**ADD POOLGRPMAP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组映射关系/添加地址池组映射关系（ADD POOLGRPMAP）_82837148.md) | 映射规则名称（MAPPINGNAME） | - mapping3<br>- mapping30 | 本端规划 | - |
+| [**ADD POOLGRPMAP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组映射关系/添加地址池组映射关系（ADD POOLGRPMAP）_82837148.md) | SMF名称（SMF） | - smfnode1<br>- smfnode1 | 已配置数据中获取 | 可以使用查询命令<br>**[LST CPNODEID](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/SMF属性/显示SMF的NodeID（LST CPNODEID）_16780318.md)**<br>进行查询。 |
+| [**ADD POOLGRPMAP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组映射关系/添加地址池组映射关系（ADD POOLGRPMAP）_82837148.md) | APN名称（APN） | - apn-test3<br>- - | 已配置数据中获取 | 可以使用查询命令<br>[查询APN配置（LST APN）](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/查询APN配置（LST APN）_82837017.md)<br>进行查询。 |
+| [**ADD POOLGRPMAP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组映射关系/添加地址池组映射关系（ADD POOLGRPMAP）_82837148.md) | 地址池组名称（POOLGROUPNAME） | - poolgroup3<br>- poolgroup30 | 已配置数据中获取 | 可以使用<br>[**LST POOLGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组/显示地址池组（LST POOLGROUP）_82837141.md)<br>命令进行查询。 |
+| [**SET IPALLOCRULE**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址分配规则/设置地址分配规则（SET IPALLOCRULE）_82837152.md) | 第一级规则开关（FIRSTRULESW） | ENABLE | 本端规划 | 第一规则优先级默认使能。 |
+| [**SET IPALLOCRULE**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址分配规则/设置地址分配规则（SET IPALLOCRULE）_82837152.md) | 第一级规则（FIRSTRULE） | APN-1&LOCATION-0&SMF-1 | 本端规划 | - |
+| [**SET IPALLOCRULE**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址分配规则/设置地址分配规则（SET IPALLOCRULE）_82837152.md) | 第二级规则开关（SECONDRULESW） | ENABLE | 本端规划 | 第二规则优先级默认不使能。 |
+| [**SET IPALLOCRULE**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址分配规则/设置地址分配规则（SET IPALLOCRULE）_82837152.md) | 第二级规则（SECONDRULE） | APN-0&LOCATION-0&SMF-1 | 本端规划 | - |
+| [**SET IPALLOCRULE**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址分配规则/设置地址分配规则（SET IPALLOCRULE）_82837152.md) | 第三级规则开关（THIRDRULESW） | DISABLE | 本端规划 | 第三规则优先级默认不使能。 |
+| [**SET IPALLOCBYSMFGLBSW**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/基于SMF分配地址开关/设置基于SMF分配地址全局开关（SET IPALLOCBYSMFGLBSW）_82837157.md) | 开关（SWITCH） | ENABLE | 本端规划 | - |
+| [**ADD OSPFV3**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3进程配置/创建OSPFv3进程配置（ADD OSPFV3）_00440569.md) | OSPFv3进程号(PROCID) | 6 | 已配置数据中获取 | - |
+| [**ADD OSPFV3**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3进程配置/创建OSPFv3进程配置（ADD OSPFV3）_00440569.md) | 路由器标识(ROUTERID) | 10.8.25.1 | 已配置数据中获取 | 须知：<br>Router ID必须全网唯一。 |
+| [**ADD OSPFV3**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3进程配置/创建OSPFv3进程配置（ADD OSPFV3）_00440569.md) | VPN的名称(VRFNAME) | vpn1 | 全网规划 | 可以使用<br>[**LST VPNINST**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/VPN管理/VPN/查询VPN实例（LST VPNINST）_82837047.md)<br>命令进行查询。 |
+| [**ADD OSPFV3**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3进程配置/创建OSPFv3进程配置（ADD OSPFV3）_00440569.md) | 使能BFD(BFDALLINTFFLG) | TRUE | 全网规划 | - |
+| [**ADD OSPFV3**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3进程配置/创建OSPFv3进程配置（ADD OSPFV3）_00440569.md) | 去使能VPN路由环路检测(VPNINSCAPSIMFLG) | TRUE | 固定取值 | VNF支持VPN多实例时，需要取消环路检查（参数<br>“VPNINSCAPSIMFLG”<br>配置为<br>“TRUE”<br>），否则会导致OSPFv3路由引入失败。 |
+| [**ADD OSPFV3**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3进程配置/创建OSPFv3进程配置（ADD OSPFV3）_00440569.md) | OSPFv3共网段虚拟系统使能标志(VIRTUALSYSFLAG) | TRUE | 全网规划 | 当OSPFv3路由配置共网段时，需要将参数<br>“VIRTUALSYSFLAG（OSPFv3共网段虚拟系统使能标志）”<br>配置为<br>“TRUE”<br>。 |
+| [**ADD OSPFV3AREA**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3区域配置/创建OSPFv3区域配置（ADD OSPFV3AREA）_50120842.md) | OSPFv3进程号（PROCID） | 6 | 本端规划 | - |
+| [**ADD OSPFV3AREA**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3区域配置/创建OSPFv3区域配置（ADD OSPFV3AREA）_50120842.md) | OSPFv3区域标识（AREAID） | 0.0.0.5 | 与对端协商 | - |
+| [**ADD OSPFV3INTERFACE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3接口配置/创建OSPFv3接口配置（ADD OSPFV3INTERFACE）_49801710.md) | OSPFv3进程号(PROCID) | 6 | 本端规划 | - |
+| [**ADD OSPFV3INTERFACE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3接口配置/创建OSPFv3接口配置（ADD OSPFV3INTERFACE）_49801710.md) | OSPFv3区域号（AREAID） | 0.0.0.5 | 与对端协商 | - |
+| [**ADD OSPFV3INTERFACE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3接口配置/创建OSPFv3接口配置（ADD OSPFV3INTERFACE）_49801710.md) | 接口名称（IFNAME） | Eth-trunk1.1 | 全网规划 | - |
+| [**ADD OSPFV3INTERFACE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3接口配置/创建OSPFv3接口配置（ADD OSPFV3INTERFACE）_49801710.md) | 指定路由器优先级（DRPRI） | 0 | - | 广播或NBMA网络中，根据此接口优先级选举DR和BDR路由器，<br>“优先级”<br>设置为<br>“0”<br>表示不参与DR和BDR的选举。为避免VNF被选为DR或BDR，建议将VNF<br>“优先级”<br>配置为0，对端配置为非0。 |
+| [**ADD OSPFV3INTERFACE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3接口配置/创建OSPFv3接口配置（ADD OSPFV3INTERFACE）_49801710.md) | OSPFv3共网段虚拟系统使能标志(VIRTUALSYSFLAG) | TRUE | - | 当OSPFv3路由配置共网段时，需要将参数<br>“VIRTUALSYSFLAG（OSPFv3共网段虚拟系统使能标志）”<br>配置为<br>“TRUE”<br>。 |
+| [**ADD OSPFV3IMPORTROUTE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3引入路由配置/创建OSPFv3引入路由配置（ADD OSPFV3IMPORTROUTE）_00840849.md) | OSPFv3进程号(PROCID) | 6 | 本端规划 | - |
+| [**ADD OSPFV3IMPORTROUTE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3引入路由配置/创建OSPFv3引入路由配置（ADD OSPFV3IMPORTROUTE）_00840849.md) | 拓扑标识(TOPOID) | 0 | 全网规划 | - |
+| [**ADD OSPFV3IMPORTROUTE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3引入路由配置/创建OSPFv3引入路由配置（ADD OSPFV3IMPORTROUTE）_00840849.md) | 协议号(PROTOCOL) | wlr | 本端规划 | - |
+
+## [操作步骤](#ZH-CN_OPI_0280250130)
+
+1. 打开本特性的License配置开关。
+  [**SET LICENSESWITCH**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/操作维护/License管理/设置License项的开关（SET LICENSESWITCH）_09587387.md)
+2. 基于APN/DNN实例使能地址分配属性。
+    a. 配置VPN实例。
+      [**ADD VPNINST**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/VPN管理/VPN/增加VPN实例（ADD VPNINST）_82837045.md)
+    b. 配置APN/DNN实例。
+      [**ADD APN**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/添加APN配置（ADD APN）_82837014.md)
+    c. 使能该APN的地址分配属性。
+      [**SET APNADDRESSATTR**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/APN的地址分配属性配置/设置ApnAddressAttr配置（SET APNADDRESSATTR）_82837173.md)
+3. 配置地址池绑定到地址池组。
+    a. 配置LOCAL类型地址池。
+      [**ADD POOL**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池配置/添加地址池（ADD POOL）_82837132.md)
+      > **说明**
+      > 配置本地地址池的时候，选择参数 “LOCAL” 类型。
+    b. 配置地址池里的地址段。
+      [**ADD SECTION**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址段配置/添加地址池IP地址段（ADD SECTION）_82837114.md)
+    c. 配置地址池组。
+      [**ADD POOLGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组/添加地址池组（ADD POOLGROUP）_82837138.md)
+    d. 配置地址池绑定到地址池组。
+      [**ADD POOLBINDGROUP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池绑定地址池组/绑定地址池到地址池组（ADD POOLBINDGROUP）_82837143.md)
+    e. （可选）配置本地地址池中的冲突IPv6地址，标识为冲突状态的IPv6地址不会分配给用户。
+      [**ADD CONFLICTIPV6**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/冲突地址管理/IPv4冲突地址管理/添加本地地址池中冲突IPv4地址（ADD CONFLICTIP）_82837120.md)
+4. 配置SMF与地址池组的映射关系。
+    a. 配置SMF实例信息。
+      [**ADD CPNODEID**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/SMF属性/添加SMF的NodeID（ADD CPNODEID）_16780315.md)
+    b. 配置APN/DNN实例。
+      [**ADD APN**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/DN管理/APN管理/APN/添加APN配置（ADD APN）_82837014.md)
+    c. 配置SMF实例、APN/DNN实例与地址池组的映射关系。
+      [**ADD POOLGRPMAP**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址池组映射关系/添加地址池组映射关系（ADD POOLGRPMAP）_82837148.md)
+5. 配置地址分配规则。
+  > **说明**
+  > 地址分配规则支持两级控制：基于全局和基于APN。默认使用全局地址分配规则。如果配置了使用基于APN的地址分配规则，则使用APN的地址分配规则。
+    a. 配置全局地址分配规则。
+      [**SET IPALLOCRULE**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/地址分配规则/设置地址分配规则（SET IPALLOCRULE）_82837152.md)
+
+      > **说明**
+      > 每级优先级规则中所选的条件之间为“与”的关系，表示从所选条件映射的地址范围内分配地址，此处设置的规则需要与地址池的映射条件一致。例如此处按照SMF+APN（APN-1&LOCATION-0&SMF-1）设置条件，则规划的地址池组需绑定SMF&APN。
+    b. （可选）如果某一APN的地址分配规则不同于全局地址分配规则，则需执行配置基于APN的地址分配规则优先级。
+      [**SET APNIPALLOCRULE**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/基于APN的地址分配规则/基于APN配置地址分配规则（SET APNIPALLOCRULE）_82837165.md)
+6. 配置基于SMF分配地址的开关。
+  > **说明**
+  > 基于SMF分配地址的开关支持两级控制：基于全局和指定SMF。
+    a. 配置基于SMF分配地址的全局开关。
+      [**SET IPALLOCBYSMFGLBSW**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/基于SMF分配地址开关/设置基于SMF分配地址全局开关（SET IPALLOCBYSMFGLBSW）_82837157.md)
+    b. （可选）如果某一指定SMF的地址分配开关不同于全局SMF地址分配开关，则需执行配置基于指定SMF分配地址的开关。
+      [**SET IPALLOCBYSMFSW**](../../../../../../OM参考/命令/UDG MML命令/用户面服务管理/会话管理/会话地址管理/基于SMF分配地址开关/设置基于SMF分配地址的开关（SET IPALLOCBYSMFSW）_82837155.md)
+7. 配置手机下行路由。
+    a. 创建OSPFv3进程。
+      [**ADD OSPFV3**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3进程配置/创建OSPFv3进程配置（ADD OSPFV3）_00440569.md)
+    b. 增加OSPFv3区域。
+      [**ADD OSPFV3AREA**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3区域配置/创建OSPFv3区域配置（ADD OSPFV3AREA）_50120842.md)
+    c. 配置运行OSPFv3协议的接口。
+      [**ADD OSPFV3INTERFACE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3接口配置/创建OSPFv3接口配置（ADD OSPFV3INTERFACE）_49801710.md)
+    d. 设置OSPFv3引入路由类型。
+      [**ADD OSPFV3IMPORTROUTE**](../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/路由管理/OSPFv3管理/OSPFv3引入路由配置/创建OSPFv3引入路由配置（ADD OSPFV3IMPORTROUTE）_00840849.md)
+
+## [任务示例](#ZH-CN_OPI_0280250130)
+
+任务描述
+
+UE接入核心网， UDG 采用本地地址池为UE动态分配地址。其中第一优先级按照从SMF+APN映射的地址范围内分配地址，第二优先级按照从SMF映射的地址范围分配地址，如果第一优先级和第二优先级的规则都匹配不上，则分配地址失败。如 [基于SMF+APN/DNN分配地址](基于SMF+APN_DNN分配地址_80250130.md) 所示。其中IPv6地址fc00:0000:0000:fcee:0000:0000:0000:0001/63已使用，不可以用于用户面地址分配。
+
+**图1** 基于SMF+APN分配示意图
+
+<br>
+
+![](基于SMF+APN_DNN分配地址_80250130.assets/zh-cn_image_0280292878.png)
+
+脚本
+
+//打开本特性的License配置开关。
+
+```
+SET LICENSESWITCH:LICITEM="LKV3G5P6PD01",SWITCH=ENABLE;
+```
+
+//基于APN使能地址分配属性。
+
+```
+ADD VPNINST:VPNINSTANCE="vpn1";
+
+ADD APN
+:APN="apn-test2",HASVPN=ENABLE,VPNINSTANCE="vpn1";
+
+ADD APN
+:APN="apn-test3",HASVPN=ENABLE,VPNINSTANCE="vpn1";
+SET APNADDRESSATTR:APN="apn-test2",SUPPORTIPV4=ENABLE,SUPPORTIPV6=ENABLE;
+```
+
+//配置地址池绑定到地址池组。
+
+```
+ADD POOL
+:POOLNAME="testpool3",POOLTYPE=LOCAL,IPVERSION=IPV6, HASVPN=ENABLE,VPNINSTANCE="vpn1";
+```
+
+```
+ADD SECTION:POOLNAME="testpool3",SECTIONNUM=1,IPVERSION=IPV6,V6PREFIXSTART="fc00:0000:0000:fcee:0000:0000:0000:0000",V6PREFIXEND="fc00:0000:0000:fcef:ffff:ffff:ffff:ffff", V6PREFIXLENGTH=63;
+```
+
+```
+ADD POOLGROUP: POOLGRPNAME="poolgroup3", IPV4ALLOCPRIALG=ENABLE, IPV6ALLOCPRIALG=ENABLE;
+```
+
+```
+ADD POOLBINDGROUP: POOLGROUPNAME="poolgroup3", POOLNAME="testpool3", PRIORITY=10;
+```
+
+```
+ADD POOL
+:POOLNAME="testpool30",POOLTYPE=LOCAL,IPVERSION=IPV6, HASVPN=ENABLE,VPNINSTANCE="vpn1";
+```
+
+```
+ADD SECTION:POOLNAME="testpool30",SECTIONNUM=1,IPVERSION=IPV6,V6PREFIXSTART="fc00:0000:0000:fcde:0000:0000:0000:0000",V6PREFIXEND="fc00:0000:0000:fcdf:ffff:ffff:ffff:ffff", V6PREFIXLENGTH=63;
+```
+
+```
+ADD POOLGROUP: POOLGRPNAME="poolgroup30", IPV4ALLOCPRIALG=ENABLE, IPV6ALLOCPRIALG=ENABLE;
+```
+
+```
+ADD POOLBINDGROUP: POOLGROUPNAME="poolgroup30", POOLNAME="testpool30", PRIORITY=10;
+ADD CONFLICTIPV6:POOLNAME="testpool30",V6PREFIX="fc00:0000:0000:fcee:0000:0000:0000:0001", V6PREFIXLENGTH=63;
+```
+
+//配置SMF实例、APN/DNN实例与地址池组的映射关系。
+
+```
+ADD CPNODEID: CPNAME="smfnode1", IPV4NODEID="10.0.0.1", IPV6NODEID="FC00:1111:1001:0001:0100:1100:0000:0001", FQDNNODEID="consumer.huawei.com";
+ADD POOLGRPMAP: MAPPINGNAME="mapping3", APN="apn-test3", SMF="smfnode1", POOLGROUPNAME="poolgroup3";
+ADD POOLGRPMAP: MAPPINGNAME="mapping30", SMF="smfnode1", POOLGROUPNAME="poolgroup30";
+```
+
+//配置地址分配规则。
+
+```
+SET IPALLOCRULE: FIRSTRULESW=ENABLE, FIRSTRULE=APN-1&LOCATION-0&SMF-1, SECONDRULESW=ENABLE, SECONDRULE=APN-0&LOCATION-0&SMF-1, THIRDRULESW=DISABLE;
+```
+
+//配置基于SMF分配地址的开关。
+
+> **说明**
+> 基于SMF分配地址的开关支持两级控制：基于全局和指定SMF。此处配置的是基于全局的开关，如果某一指定SMF的地址分配开关不同于全局SMF地址分配开关的使能状态，则需配置基于指定SMF分配地址的开关。
+
+```
+SET IPALLOCBYSMFGLBSW: SWITCH=ENABLE;
+```
+
+//配置手机下行路由。
+
+```
+ADD OSPFV3:PROCID=6,VRFNAME="vpn1",ROUTERID="10.8.25.1",BFDALLINTFFLG=TRUE,VPNINSCAPSIMFLG=TRUE,VIRTUALSYSFLAG=TRUE;
+```
+
+```
+ADD OSPFV3AREA:PROCID=6,AREAID="0.0.0.5";
+```
+
+```
+ADD OSPFV3INTERFACE:PROCID=6,AREAID="0.0.0.5",IFNAME="Eth-trunk1.1",DRPRI=0,VIRTUALSYSFLAG=TRUE, CFGROUTERIDFLAG=FALSE;
+```
+
+```
+ADD OSPFV3IMPORTROUTE:PROCID=6,TOPOID=0,PROTOCOL=wlr;
+```

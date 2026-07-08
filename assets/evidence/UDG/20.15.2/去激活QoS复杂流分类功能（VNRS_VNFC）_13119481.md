@@ -1,0 +1,118 @@
+# 去激活QoS复杂流分类功能 （VNRS_VNFC）
+
+- [操作场景](#ZH-CN_OPI_0213119481__1.3.1)
+- [对系统的影响](#ZH-CN_OPI_0213119481__1.3.2)
+- [必备事项](#ZH-CN_OPI_0213119481__1.3.3)
+- [操作流程](#ZH-CN_OPI_0213119481__1.3.4)
+- [操作步骤](#ZH-CN_OPI_0213119481__1.3.5)
+- [任务示例](#ZH-CN_OPI_0213119481__1.3.6)
+
+## [操作场景](#ZH-CN_OPI_0213119481)
+
+本操作指导介绍如何在运行网络中去激活QoS复杂流分类功能特性。
+
+## [对系统的影响](#ZH-CN_OPI_0213119481)
+
+该操作对系统正常运行无影响。
+
+## [必备事项](#ZH-CN_OPI_0213119481)
+
+前提条件
+
+- 操作人员已经登录网络管理系统NMS（Network Management System）。
+- QoS复杂流分类功能已经激活。
+
+数据
+
+无需准备数据。
+
+## [操作流程](#ZH-CN_OPI_0213119481)
+
+去激活QoS复杂流分类功能操作流程如 [图1](#ZH-CN_OPI_0213119481__zh-cn_opi_0134584237_fig_dc_fenix_nps_mml_cfg_qos_000602) 所示。
+
+**图1** 去激活QoS复杂流分类功能操作流程
+
+<br>
+
+![](去激活QoS复杂流分类功能（VNRS_VNFC）_13119481.assets/zh-cn_image_0000001564559612.png)
+
+## [操作步骤](#ZH-CN_OPI_0213119481)
+
+1. 删除接口出方向绑定流策略。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV QOSAPPLICATION**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/流量策略/删除流策略（RMV QOSAPPLICATION）_50121714.md) : IFNAME="接口 名称 ",DIRECTION= 报文方向 ;
+2. 删除绑定的流分类和流行为。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV MQCPOLICYNODE**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/MQC/分类策略节点/删除流策略节点（RMV MQCPOLICYNODE）_00865721.md) : POLICYNAME="策略名称",CLASSIFIERNAME="分类名称" ,BEHAVIORNAME="行为名称" ;
+3. 删除流策略。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV MQCPOLICY**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/MQC/分类策略/删除流策略（RMV MQCPOLICY）_49960962.md) : POLICYNAME="策略名称";
+4. （可选）删除流分类绑定ACL规则。
+5. 删除流分类。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV MQCCLASSIFIER**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/MQC/流分类/删除流分类（RMV MQCCLASSIFIER）_00841121.md) : CLASSIFIERNAME="分类名称";
+6. **可选：**删除流动作。
+    - （可选）删除重定向下一跳动作：
+      在 “MML命令行-UDG” 窗口上执行：
+      [**RMV QOSACTRDRNHP**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/重定向下一跳信息/删除QoS重定向下一跳信息（RMV QOSACTRDRNHP）_49961646.md) :BEHAVIORNAME="行为名称";
+    - （可选）删除重标记：
+      在 “MML命令行-UDG” 窗口上执行：
+      [**RMV SQOSREMARK**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/重标记/删除重标记配置（RMV SQOSREMARK）_00601341.md) :BEHAVIORNAME="流行为名称";
+    - （可选）删除级联流策略：
+      在 “MML命令行-UDG” 窗口上执行：
+      [**RMV QOSACTRDRPOLICY**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/级联流策略动作/删除流行为下级联流策略（RMV QOSACTRDRPOLICY）_00440825.md) : BEHAVIORNAME="行为名称";
+    - （可选）删除重定向VPN组：
+      在 “MML命令行-UDG” 窗口上执行：
+      **[RMV SQOSRDRVPNGROUP](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/重定向VPN组/删除QoS重定向VPN组（RMV SQOSRDRVPNGROUP）_00865581.md)** : BEHAVIORNAME="行为名称";
+    - （可选）删除安全URPF：
+      在 “MML命令行-UDG” 窗口上执行：
+      **[RMV SQOSURPF](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/流行为安全URPF/删除流行为安全URPF（RMV SQOSURPF）_49961998.md)** : BEHAVIORNAME="流行为名称";
+    - （可选）删除CAR配置：
+      在 “MML命令行-UDG” 窗口上执行：
+      **[RMV SQOSCAR](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/流行为CAR/删除流行为CAR配置（RMV SQOSCAR）_00440429.md)** : BEHAVIORNAME="流行为名称";
+7. 删除流行为。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV MQCBEHAVIOR**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/MQC/分类行为/删除流行为（RMV MQCBEHAVIOR）_49961166.md) : BEHAVIORNAME="行为名称";
+8. **可选：**清除端口流量策略报文统计。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RTR SQOSPOLICYSTC**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/端口统计/清除端口流量策略报文统计（RTR SQOSPOLICYSTC）_00866309.md) : IFNAME=接口名称, DIRECTION=方向;
+
+## [任务示例](#ZH-CN_OPI_0213119481)
+
+任务描述
+
+去激活复杂流分类功能。
+
+脚本
+
+//删除接口出方向绑定流策略。
+
+```
+RMV QOSAPPLICATION: IFNAME="Ethernet
+64/0/3
+",DIRECTION =outbound;
+```
+
+//删除绑定的流分类和流行为。
+
+```
+RMV MQCPOLICYNODE: POLICYNAME="policy1",CLASSIFIERNAME="class1",BEHAVIORNAME="behavior1";
+```
+
+//删除流策略。
+
+```
+RMV MQCPOLICY: POLICYNAME="policy1";
+```
+
+//删除流分类。
+
+```
+RMV MQCCLASSIFIER: CLASSIFIERNAME="class1";
+```
+
+//删除流行为。
+
+```
+RMV MQCBEHAVIOR: BEHAVIORNAME="behavior1";
+```

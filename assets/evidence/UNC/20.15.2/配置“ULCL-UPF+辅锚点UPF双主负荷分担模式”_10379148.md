@@ -1,0 +1,181 @@
+# 配置“ULCL UPF+辅锚点UPF双主负荷分担模式”
+
+- [操作场景](#ZH-CN_OPI_0000001110379148__1.3.1)
+- [必备事项](#ZH-CN_OPI_0000001110379148__1.3.2)
+- [任务示例](#ZH-CN_OPI_0000001110379148__1.3.3)
+
+## [操作场景](#ZH-CN_OPI_0000001110379148)
+
+本操作指导介绍“ULCL UPF+辅锚点UPF双主负荷分担模式”容灾组网配置的操作过程。
+
+## [必备事项](#ZH-CN_OPI_0000001110379148)
+
+前提条件
+
+- 请仔细阅读[WSFD-108004 MEC冗余模式故障保护](特性概述_28859311.md)特性原理概述。
+- 已完成加载License。
+
+数据
+
+> **说明**
+> 下表中“取值样例”列同色字体表示命令间的关联参数。
+
+| 类别 | 参数名称 | 取值样例 | 获取方法 | 说明 |
+| --- | --- | --- | --- | --- |
+| **[ADD PNFPROFILE](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例概述信息管理/增加对端NF实例概述信息（ADD PNFPROFILE）_09653772.md)** | NF实例标识（NFINSTANCEID） | UPF_Instance_0<br>UPF_Instance_1 | 本端规划 | **SMF本端添加UL CL UPF**<br>。 |
+| **[ADD PNFPROFILE](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例概述信息管理/增加对端NF实例概述信息（ADD PNFPROFILE）_09653772.md)** | NF类型（NFTYPE） | NfUPF | 本端规划 | **SMF本端添加UL CL UPF**<br>。 |
+| **[ADD PNFPROFILE](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例概述信息管理/增加对端NF实例概述信息（ADD PNFPROFILE）_09653772.md)** | NF状态（NFSTATUS） | Registered | 本端规划 | **SMF本端添加UL CL UPF**<br>。 |
+| **[ADD PNFPROFILE](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例概述信息管理/增加对端NF实例概述信息（ADD PNFPROFILE）_09653772.md)** | 域名（FQDN） | upf01.node.mnc003.mcc123.3gppnetwork.org<br>upf02.node.mnc003.mcc123.3gppnetwork.org | 全网规划 | **SMF本端添加UL CL UPF**<br>。 |
+| **[ADD PNFPROFILE](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例概述信息管理/增加对端NF实例概述信息（ADD PNFPROFILE）_09653772.md)** | IP地址类型（IPADDRESSTYPE） | IPTypeV4 | 全网规划 | **SMF本端添加UL CL UPF**<br>。 |
+| **[ADD PNFPROFILE](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例概述信息管理/增加对端NF实例概述信息（ADD PNFPROFILE）_09653772.md)** | IP地址（IPV4ADDRESS1） | 192.168.126.11<br>192.168.126.12 | 全网规划 | **SMF本端添加UL CL UPF**<br>。 |
+| **[ADD PNFNS](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例切片信息管理/增加对端NF的切片信息（ADD PNFNS）_09652622.md)** | 索引（INDEX） | 3<br>4 | 本端规划 | **配置用户面支持的服务切片信息**<br>。 |
+| **[ADD PNFNS](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例切片信息管理/增加对端NF的切片信息（ADD PNFNS）_09652622.md)** | NF实例标识（NFINSTANCEID） | UPF_Instance_0<br>UPF_Instance_1 | 全网规划 | **配置用户面支持的服务切片信息**<br>。 |
+| **[ADD PNFNS](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例切片信息管理/增加对端NF的切片信息（ADD PNFNS）_09652622.md)** | 切片/服务类型（SST） | 1 | 全网规划 | **配置用户面支持的服务切片信息**<br>。 |
+| **[ADD PNFNS](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端NF实例切片信息管理/增加对端NF的切片信息（ADD PNFNS）_09652622.md)** | 切片分类器（SD） | 010101 | 全网规划 | **配置用户面支持的服务切片信息**<br>。 |
+| **[ADD PNFDNN](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端DNN信息管理/增加对端NF的DNN信息（ADD PNFDNN）_09654342.md)** | 索引（INDEX） | 3<br>4 | 本端规划 | **配置UL CL UPF的DNN属性，用于在用户会话激活时基于用户的DNN选择UL CL UPF。** |
+| **[ADD PNFDNN](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端DNN信息管理/增加对端NF的DNN信息（ADD PNFDNN）_09654342.md)** | NF实例标识（NFINSTANCEID） | UPF_Instance_0<br>UPF_Instance_1 | 全网规划 | **配置UL CL UPF的DNN属性，用于在用户会话激活时基于用户的DNN选择UL CL UPF。** |
+| **[ADD PNFDNN](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端DNN信息管理/增加对端NF的DNN信息（ADD PNFDNN）_09654342.md)** | 数据网络名称（DNN） | Huawei.com | 全网规划 | **配置UL CL UPF的DNN属性，用于在用户会话激活时基于用户的DNN选择UL CL UPF。** |
+| [**ADD PNFDNAI**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端DNAI信息管理/增加对端NF的DNAI信息（ADD PNFDNAI）_09652965.md) | 索引（INDEX） | 1<br>2 | 本端规划 | **为UL CL UPF添加DNAI信息。** |
+| [**ADD PNFDNAI**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端DNAI信息管理/增加对端NF的DNAI信息（ADD PNFDNAI）_09652965.md) | NF实例标识（NFINSTANCEID） | UPF_Instance_0<br>UPF_Instance_1 | 全网规划 | **为UL CL UPF添加DNAI信息。** |
+| [**ADD PNFDNAI**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端DNAI信息管理/增加对端NF的DNAI信息（ADD PNFDNAI）_09652965.md) | 数据网络访问标识（DNAI） | testdnai | 本端规划 | **为UL CL UPF添加DNAI信息。** |
+| [**ADD PNFDNAI**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端DNAI信息管理/增加对端NF的DNAI信息（ADD PNFDNAI）_09652965.md) | 对端NF的DNN索引（PNFDNNINDEX） | 3<br>4 | 全网规划 | **为UL CL UPF添加DNAI信息。** |
+| [**ADD UPNODE**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP节点管理/增加UPF节点（ADD UPNODE）_09652571.md) | UPF实例名称（NFINSTANCENAME） | UPF_Instance_0<br>UPF_Instance_1 | 全网规划 | **配置UL CL UPF的属性。** |
+| [**ADD UPNODE**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP节点管理/增加UPF节点（ADD UPNODE）_09652571.md) | UP位置特征（LOCATION） | Local | 全网规划 | **配置UL CL UPF的属性。** |
+| [**ADD UPNODE**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP节点管理/增加UPF节点（ADD UPNODE）_09652571.md) | UP支持功能（UPFUNCTION） | UlClAndBp | 全网规划 | **配置UL CL UPF的属性。** |
+| [**ADD UPNODE**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP节点管理/增加UPF节点（ADD UPNODE）_09652571.md) | 辅锚点UPF故障迁移功能开关（APSAMIGFUNC） | ENABLE | 本端规划 | **配置UL CL UPF的属性。** |
+| **[ADD UPAREA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP跟踪区管理/UP区域管理/增加UPF服务区（ADD UPAREA）_09652457.md)** | UP位置区名称（AREANAME） | UPAREA1 | 全网规划 | **配置用于SMF本端判定UL CL UPF归属区域的区域类型，如TA类型。** |
+| **[ADD UPAREA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP跟踪区管理/UP区域管理/增加UPF服务区（ADD UPAREA）_09652457.md)** | AREA类型（AREATYPE） | N2TAI | 全网规划 | **配置用于SMF本端判定UL CL UPF归属区域的区域类型，如TA类型。** |
+| [**ADD UPAREABINDN2TAI**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP跟踪区管理/TAI绑定UP区域/增加UPF服务区名称绑定的5G TAI范围（ADD UPAREABINDN2TAI）_09653098.md) | UP位置区名称（AREANAME） | UPAREA1 | 全网规划 | **为UPAREA1添加区域范围。** |
+| [**ADD UPAREABINDN2TAI**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP跟踪区管理/TAI绑定UP区域/增加UPF服务区名称绑定的5G TAI范围（ADD UPAREABINDN2TAI）_09653098.md) | N2TAI范围开始值（N2BEGINTAI） | 1230320101 | 全网规划 | **为UPAREA1添加区域范围。** |
+| [**ADD UPAREABINDN2TAI**](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/UP管理/UP跟踪区管理/TAI绑定UP区域/增加UPF服务区名称绑定的5G TAI范围（ADD UPAREABINDN2TAI）_09653098.md) | N2TAI范围结束值（N2ENDTAI） | 1230320103 | 全网规划 | **为UPAREA1添加区域范围。** |
+| **[ADD PNFSMFSERAREA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端SMF服务区管理/增加对端NF的SMF服务区域信息（ADD PNFSMFSERAREA）_09653019.md)** | NF实例标识（NFINSTANCEID） | UPF_Instance_0<br>UPF_Instance_1 | 全网规划 | **SMF本端配置UL CL UPF所覆盖的区域，用于在用户会话激活时基于用户位置区选择UL CL UPF。** |
+| **[ADD PNFSMFSERAREA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/服务化接口管理/注册与服务发现/本地NRF功能管理/对端SMF服务区管理/增加对端NF的SMF服务区域信息（ADD PNFSMFSERAREA）_09653019.md)** | SMF服务区域（SMFSERVINGAREA） | UPAREA1 | 全网规划 | **SMF本端配置UL CL UPF所覆盖的区域，用于在用户会话激活时基于用户位置区选择UL CL UPF。** |
+| **[SET PFCPPARA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/PFCP路径管理/PFCP路径参数管理/设置PFCP参数（SET PFCPPARA）_09652597.md)** | 心跳间隔(秒)（HBINTERVAL） | 30 | 本端规划 | **配置ULCLUPF+辅锚点UPF双主负荷分担模式**<br>**下的故障保护机制**<br>。 |
+| **[SET PFCPPARA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/PFCP路径管理/PFCP路径参数管理/设置PFCP参数（SET PFCPPARA）_09652597.md)** | 心跳消息超时间隔(秒)（HBT1） | 3 | 本端规划 | **配置ULCLUPF+辅锚点UPF双主负荷分担模式**<br>**下的故障保护机制**<br>。 |
+| **[SET PFCPPARA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/PFCP路径管理/PFCP路径参数管理/设置PFCP参数（SET PFCPPARA）_09652597.md)** | 心跳消息发送次数阈值（HBN1） | 5 | 本端规划 | **配置ULCLUPF+辅锚点UPF双主负荷分担模式**<br>**下的故障保护机制**<br>。 |
+| **[SET PFCPPARA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/接口管理/PFCP接口管理/PFCP路径管理/PFCP路径参数管理/设置PFCP参数（SET PFCPPARA）_09652597.md)** | 迁移间隔（秒）（MIGINTERVAL） | 60 | 全网规划 | **配置ULCLUPF+辅锚点UPF双主负荷分担模式**<br>**下的故障保护机制**<br>。 |
+| **[SET UPFAULTOPERPARA](../../../../../OM参考/命令/UNC MML命令/业务服务管理/会话管理/接入管理/本地分流管理/辅锚点故障迁移/设置UP故障处理系统参数（SET UPFAULTOPERPARA）_30518084.md)** | 故障迁移速率（个/秒）（UPMIGRATE） | 1000 | 全网规划 | **配置ULCLUPF+辅锚点UPF双主负荷分担模式**<br>**下的故障保护机制**<br>。 |
+
+## [任务示例](#ZH-CN_OPI_0000001110379148)
+
+任务描述
+
+运营商要为某企业园区内的用户提供UL CL业务，对于进入园区的用户访问园区内的服务时，数据流就近在园区内DC卸载。
+
+园区采用“ULCLUPF+辅锚点UPF双主负荷分担模式”组网，且为园区UPF规划了UPF服务区域，UPF覆盖的TA区域为“1230320101”~“1230320103”。
+
+假定UPF实例标识分别为UPF_Instance_0和UPF_Instance_1，对应的IP地址为192.168.126.11和192.168.126.12。
+
+脚本
+
+// **SMF本端添加UPF** 。
+
+```
+ADD PNFPROFILE:NFINSTANCEID="
+UPF_Instance_0
+", NFTYPE=NfUPF, NFSTATUS=Registered,FQDN="upf00.node.mnc003.mcc123.3gppnetwork.org",IPADDRESSTYPE=IPTypeV4, IPV4ADDRESS1="192.168.126.11";
+ADD PNFPROFILE:NFINSTANCEID="
+UPF_Instance_1
+", NFTYPE=NfUPF, NFSTATUS=Registered,FQDN="upf01.node.mnc003.mcc123.3gppnetwork.org",IPADDRESSTYPE=IPTypeV4, IPV4ADDRESS1="192.168.126.12";
+```
+
+// **配置用户面支持的服务切片信息** 。
+
+```
+ADD PNFNS: INDEX=3, NFINSTANCEID="
+UPF_Instance_0
+", SST=1, SD="000001";
+ADD PNFNS: INDEX=4, NFINSTANCEID="
+UPF_Instance_1
+", SST=1, SD="000001";
+```
+
+// **配置UPF的DNN属性** 。
+
+```
+ADD PNFDNN:INDEX=3, NFINSTANCEID="
+UPF_Instance_0
+", DNN="
+Huawei1.com
+";
+ADD PNFDNN:INDEX=4, NFINSTANCEID="
+UPF_Instance_1
+", DNN="
+Huawei1.com
+";
+```
+
+// **为UL CL UPF添加DNAI信息。**
+
+```
+ADD PNFDNAI: INDEX=1,NFINSTANCEID="
+UPF_Instance_0
+", DNAI="
+testdnai
+",PNFDNNINDEX=3;
+ADD PNFDNAI: INDEX=2,NFINSTANCEID="
+UPF_Instance_1
+", DNAI="
+testdnai
+",PNFDNNINDEX=4;
+```
+
+// **配置UPF的属性。**
+
+```
+ADD UPNODE:NFINSTANCENAME="
+UPF_Instance_0
+", LOCATION=Local, UPFUNCTION=UlClAndBp,APSAMIGFUNC=ENABLE;
+ADD UPNODE:NFINSTANCENAME="
+UPF_Instance_1
+", LOCATION=Local, UPFUNCTION=UlClAndBp,APSAMIGFUNC=ENABLE;
+```
+
+// **配置用于SMF本端判定UPF归属区域的区域类型** 。
+
+```
+ADD UPAREA:AREANAME="
+UPAREA1
+", AREATYPE=N2TAI; 
+```
+
+// **配置UL CL UPF归属区域对应的区域范围。**
+
+```
+ADD UPAREABINDN2TAI:AREANAME="
+UPAREA1
+", N2BEGINTAI="12303260101", N2ENDTAI="12303260103";
+```
+
+// **SMF本端配置UPF所覆盖的区域** 。
+
+```
+ADD PNFSMFSERAREA:NFINSTANCEID="
+UPF_Instance_0
+", SMFSERVINGAREA="
+UPAREA1
+";
+ADD PNFSMFSERAREA:NFINSTANCEID="
+UPF_Instance_1
+", SMFSERVINGAREA="
+UPAREA1
+";
+```
+
+**//配置SMF到UPF的心跳探测并开启故障场景下迁移UPF上用户会话的功能。**
+
+```
+SET PFCPPARA: HBINTERVAL=30,HBT1=3,HBN1=5,MIGINTERVAL=60;
+```
+
+**//配置故障场景下批量迁移故障UPF上用户会话的速率** 。
+
+```
+SET UPFAULTOPERPARA: UPMIGRATE=1000;
+```
+
+**//打开本功能的License配置开关。**
+
+```
+SET LICENSESWITCH: LICITEM="LKV2DMECFP01", SWITCH=ENABLE;
+```

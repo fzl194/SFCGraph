@@ -1,0 +1,83 @@
+# 去激活QoS简单流分类 （VNRS_VNFC）
+
+- [操作场景](#ZH-CN_OPI_0213119474__1.3.1)
+- [对系统的影响](#ZH-CN_OPI_0213119474__1.3.2)
+- [必备事项](#ZH-CN_OPI_0213119474__1.3.3)
+- [操作流程](#ZH-CN_OPI_0213119474__1.3.4)
+- [操作步骤](#ZH-CN_OPI_0213119474__1.3.5)
+- [任务示例](#ZH-CN_OPI_0213119474__1.3.6)
+
+## [操作场景](#ZH-CN_OPI_0213119474)
+
+本操作指导介绍在运行网络中去激活QoS简单流分类功能的操作过程。
+
+## [对系统的影响](#ZH-CN_OPI_0213119474)
+
+无
+
+## [必备事项](#ZH-CN_OPI_0213119474)
+
+前提条件
+
+- 操作人员已经登录网络管理系统NMS（Network Management System）。
+- 已经激活QoS简单流分类。
+
+数据
+
+无需准备数据。
+
+## [操作流程](#ZH-CN_OPI_0213119474)
+
+去激活QoS简单流分类特性操作流程如 [图1](#ZH-CN_OPI_0213119474__zh-cn_opi_0134584216_fig_dc_fenix_nps_mml_cfg_qos_000301) 所示。
+
+**图1** 去激活QoS简单流分类特性操作流程
+
+<br>
+
+![](去激活QoS简单流分类（VNRS_VNFC）_13119474.assets/zh-cn_image_0000001580705044.png)
+
+## [操作步骤](#ZH-CN_OPI_0213119474)
+
+1. 删除对应的QOSIFTRUST。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV QOSIFTRUST**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/接口信任信息/删除QoS接口信任（RMV QOSIFTRUST）_00865805.md) : IFNAME="接口名 称 ";
+2. 删除对应的DiffServ域。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV QOSDIFFERSERV**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/DS域配置/删除DS域（RMV QOSDIFFERSERV）_00866565.md) : DSNAME=" DS名称 ";
+3. （可选）删除对应的重定向至指定VPN的配置。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV QOSRDRVPN**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/重定向VPN/删除QoS重定向VPN（RMV QOSRDRVPN）_00600549.md) : IFNAME ="接口名称";
+4. （可选）去激活QoS不检查PHB表。
+  在 “MML命令行-UDG” 窗口上执行：
+  [**RMV QOSIFPHB**](../../../../../../../../OM参考/命令/UDG MML命令/平台服务管理/VNRS功能管理/IP服务/安全管理/QoS管理/QoS IF PHB/删除禁止QoS优先级映射的类型（RMV QOSIFPHB）_00866693.md) : IFNAME="接口名 称 ", PHBTYPE= 出接口报文的优先级字段映射类型 ;
+
+## [任务示例](#ZH-CN_OPI_0213119474)
+
+任务描述
+
+- 删除配置的QOSIFTRUST。
+- 去激活QoS不检查PHB表。
+
+脚本
+
+//删除配置的QOSIFTRUST。
+
+```
+RMV QOSIFTRUST: IFNAME="Ethernet
+64/0/3
+";
+```
+
+//删除配置的DiffServ域。
+
+```
+RMV QOSDIFFERSERV: DSNAME="ds1";
+```
+
+//对以太接口Ethernet 64/0/3 去激活QoS不检查PHB表。
+
+```
+RMV QOSIFPHB: IFNAME="Ethernet
+64/0/3
+",PHBTYPE=dscp;
+```

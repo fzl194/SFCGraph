@@ -10,3 +10,18 @@
 - 来源：P1 纯基建（`docs/superpowers/specs/2026-07-08-config-generation-e2e-design.md` v2）
 - 动作：建立 assets/ 目录骨架 + README.md + CLAUDE.md（维护准则）+ index.md + log.md
 - 状态：容器就位，未 Compile 任何对象内容（下一步 P2：命令层 Compile 器）
+
+## [2026-07-08] ingest | 命令层 + ConfigObject
+- 来源：P2，`CommandGraph/data/assets/{nf}/{ver}/*.jsonl` 纯投影
+- 产出：命令 md 13075（UDG 4577 + UNC 8498）、ConfigObject md 5818（UDG 2210 + UNC 3608）
+- 模式：纯投影 + markdown 链接引用（带 .md）+ 双向（命令↔ConfigObject 经 command_object_edges）+ 证据按源手册 stem 去重 + 分级 index
+- 准则落地：CLAUDE.md §5.5（已建 `[..](.md)` / 未建 `[[ID]]` 占位）已写进
+
+## [2026-07-08] ingest | 特性层 + License
+- 来源：P2-续，`FeatureGraph/data/{nf}/{ver}/*.jsonl` 纯投影（features/licenses/feature_requires_license/feature_relations）
+- 产出：特性 md 942（UDG 313 + UNC 629）、License md 635（UDG 187 + UNC 448）
+- 双向：Feature↔License（requires_license 出/入向）、Feature↔Feature（depends_on/conflicts_with/interacts_with/affects/supports，双向按类型分组）、目录父子（parent_feature_code 双向）
+- 占位：悬空 target（audit 标 depends_on 3/conflicts 1/requires_license 1）渲染为 `[[对象ID]]`，无断链（compile_features/compile_licenses 加 link_or_placeholder 防护）
+- 证据：与命令层共用 evidence/，按 stem 去重，总数 16231（命令 13075 + 特性/License 新增 3156）
+- 数据说明：jsonl 中文文本经 `open(encoding=utf-8)` 直读完全干净；早期终端 `head|json.tool` 乱码是 Windows stdin 管道 cp936 再编码所致，非数据问题
+

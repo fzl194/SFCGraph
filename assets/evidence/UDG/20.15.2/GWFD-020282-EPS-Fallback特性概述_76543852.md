@@ -1,0 +1,143 @@
+# GWFD-020282 EPS Fallback特性概述
+
+- [适用NF](#ZH-CN_CONCEPT_0176543852__1.3.1.1)
+- [定义](#ZH-CN_CONCEPT_0176543852__1.3.2.1)
+- [客户价值](#ZH-CN_CONCEPT_0176543852__1.3.3.1)
+- [应用场景](#ZH-CN_CONCEPT_0176543852__1.3.4.1)
+- [可获得性](#ZH-CN_CONCEPT_0176543852__1.3.5.1)
+- [与其他特性的交互](#ZH-CN_CONCEPT_0176543852__1.3.6.1)
+- [对系统的影响](#ZH-CN_CONCEPT_0176543852__1.3.7.1)
+- [应用限制](#ZH-CN_CONCEPT_0176543852__1.3.8.1)
+- [原理概述](#ZH-CN_CONCEPT_0176543852__1.3.9.1)
+- [计费与话单](#ZH-CN_CONCEPT_0176543852__1.3.10.1)
+- [特性规格](#ZH-CN_CONCEPT_0176543852__1.3.11.1)
+- [遵循标准](#ZH-CN_CONCEPT_0176543852__1.3.12.1)
+- [发布历史](#ZH-CN_CONCEPT_0176543852__1.3.13.1)
+
+#### [适用NF](#ZH-CN_CONCEPT_0176543852)
+
+UPF
+
+#### [定义](#ZH-CN_CONCEPT_0176543852)
+
+EPS Fallback（Evolved Packet System Fallback）是指在无线网络没有部署VoNR（Voice over NR，NR网络语音业务），当UE从5G网络接入时，允许其在IMS域注册，但是当UE要进行通话时，会通过切换或者重定向的方式回落到4G网络通过VoLTE进行通话。它是VoLTE向VoNR演进的过渡语音方案。
+
+#### [客户价值](#ZH-CN_CONCEPT_0176543852)
+
+| 受益方 | 受益描述 |
+| --- | --- |
+| 运营商 | - 有助于实现灵活的组网，降低运营成本。<br>- 最大化利用现有LTE网络的覆盖和业务质量等资源，保护运营商的投资利益最大化。 |
+| 用户 | 用户可以使用同一个终端享用5G高速数据业务和LTE网络的高质量语音业务，得到最佳业务体验。 |
+
+#### [应用场景](#ZH-CN_CONCEPT_0176543852)
+
+运营商在无线网络不部署VoNR的情况下，并且需要提供语音解决方案时开通本特性。
+
+为了支持5G和LTE网络间的语音业务互操作，需要对EPC和5GC部分网元功能进行融合部署，包括SMF与PGW-C融合，UPF与PGW-U融合；UDM与HSS融合；PCF与PCRF融合。
+
+UDG 产品主要用于实现组网中UPF、SGW-U、PGW-U功能。
+
+EPS Fallback典型组网如 [图1 EPS Fallback典型组网](#ZH-CN_CONCEPT_0176543852__fig88882114541) 。图例中为标准场景的BSF独立部署。
+
+**图1** EPS Fallback典型组网
+
+<br>
+
+![](GWFD-020282 EPS Fallback特性概述_76543852.assets/zh-cn_image_0000001169185355.png "点击放大")
+
+#### [可获得性](#ZH-CN_CONCEPT_0176543852)
+
+**涉及NF**
+
+| 涉及NF | 支持版本 | 功能说明 |
+| --- | --- | --- |
+| AMF | UNC 20.0.0及后续版本 | - 完成用户移动性管理功能，指示给终端网络侧的IMS语音业务能力。<br>- 完成IMS PDU会话建立、主被叫处理与接续。<br>- 支持有N26接口的LTE和5G网络间互操作。 |
+| SMF | UNC 20.0.0及后续版本 | - 为用户建立专用的PDU会话（DNN为IMS）。<br>- 支持有N26接口的LTE和5G网络间互操作。SMF融合PGW-C功能，支持UE在LTE和5G网络间移动时业务的连续性。 |
+| NG RAN | 无特殊要求 | - 支持语音、视频业务的承载组合。<br>- 支持包头压缩RoHC（Robust Header Compression）。<br>- 支持呼叫过程中5G到4G的切换以及业务连续性。<br>- 支持标准QoS控制。<br>- 支持多承载管理，多会话和多QoS Flow控制。 |
+| UE | 无特殊要求 | 同时支持LTE和5G空口接入能力。 |
+| MME | CloudUSN V100R017C13及后续版本<br>UNC 20.0.0及后续版本 | 支持有N26接口的LTE和5G网络间互操作。 |
+| PGW-U/UPF | UDG 20.0.0及后续版本 | - 支持为用户语音业务提供数据转发服务。<br>- 支持为用户需要带宽保证的QoS flow提供数据转发服务。 |
+| E-UTRAN | 无特殊要求 | 支持呼叫过程中5G到4G的切换以及业务连续性。 |
+| PCF | 无特殊要求 | 下发移动性管理的策略控制功能。 |
+
+**License支持**
+
+本特性只有获得了License许可后才能获得该特性的服务，对应的License控制项为 "82209874 LKV3G5EPSF01 EPS Fallback"。
+
+#### [与其他特性的交互](#ZH-CN_CONCEPT_0176543852)
+
+| 交互类型 | 相关特性 | 控制项名称 | 交互说明 |
+| --- | --- | --- | --- |
+| 依赖 | [GWFD-020251 VoLTE基础语音业务](../GWFD-020251 VoLTE基础语音业务_61389008.md) | 82209873 VoLTE基础语音业务 | 需要<br>UDG<br>侧开启VoLTE基础语音业务，才能启用EPS Fallback特性。 |
+| 依赖 | [GWFD-010154 LTE与5G SA网络间互操作特性概述](../../移动性管理功能/GWFD-010154 LTE与5G SA网络间互操作/GWFD-010154 LTE与5G SA网络间互操作特性概述_75478334.md) | 无 | 需要<br>UDG<br>侧开启LTE与5G SA网络间互操作，使用户可以在5G和4G网络之间切换，才能启用EPS Fallback特性。 |
+
+#### [对系统的影响](#ZH-CN_CONCEPT_0176543852)
+
+本特性对系统无影响。
+
+#### [应用限制](#ZH-CN_CONCEPT_0176543852)
+
+本特性无应用限制。
+
+#### [原理概述](#ZH-CN_CONCEPT_0176543852)
+
+由于5G建网初期，NR覆盖不全且eNodeB未升级，为保证语音的连续性，我们采用EPS Fallback的语音方案，从NR和5GC接入，再回落到LTE网络由VoLTE提供语音，它是VoLTE向VoNR演进的过渡语音方案。
+
+- VoLTE属于一种**4G语音**的解决方案。
+- EPS Fallback、VoNR都属于**5G语音**的解决方案，5G语音的目标语音方案是VoNR。在建网初期采用EPS FB（5G回落4G）的过渡方案，当NR覆盖较广且网络调优后语音改造为VoNR。
+
+基于这三者有一种主流的语音演进方案，VoLTE → EPS FB → VoNR：基于VoLTE组网叠加部署NR和5GC，经EPS Fallback的过渡再演进至VoNR，可基于Option2和Option3/3a/3X组网实现演进。
+
+**图2** VoLTE 、EPS Fallback、VoNR关系示意图
+
+<br>
+
+![](GWFD-020282 EPS Fallback特性概述_76543852.assets/zh-cn_image_0000001169345235.png)
+
+当前正是 由于5G建网初期， 对于语音业务，Vo5G的终极语音方案VoNR暂时无法实现， 初期采用SA下的5G回落VoLTE方案，即EPS Fallback，当5G网络覆盖性能全面提升后，再适时考虑VoNR等技术方案。
+
+EPS Fallback的主要目的是能让用户从5GS平滑切到EPS，平滑切到EPS有两种方式，一种是基于切换的Fallback，另一种是重定向的Fallback。
+
+两种方式的选择主要取决于无线侧资源，如果无线侧支持切换，则从业务连续性的角度来看，更倾向于通过切换的方式进行回落，可避免重定向带来的时延大缺陷。EPS Fallback之前，NG RAN会通知UE测量LTE的信号，确认可回落的条件下，才会进行后续的步骤。
+
+EPS Fallback流程框图如 [图1](#ZH-CN_CONCEPT_0176543852__fig1838792734016) 所示。
+
+**图3** EPS Fallback流程框图
+
+<br>
+
+![](GWFD-020282 EPS Fallback特性概述_76543852.assets/zh-cn_image_0000001122745384.png)
+
+UE已经在5G网络下完成注册，IMS DNN的PDU会话建立（即建立了IMS DNN的缺省的QoS流），并且完成了IMS的注册流程。
+
+1. UE驻留在5GS的NG RAN，当UE拨号打电话时，发起MO或MT IMS语音会话建立。
+2. 网络发起PDU会话修改以建立语音的QoS流。在PDU修改过程中尝试添加一个新的QoS流，也就是语音的QoS流，并且会提供语音QoS流的描述信息和所需要的QoS参数，尝试为5G音频做资源预留。
+3. 请求发给NG RAN，但是NG RAN根据当前的配置，拒绝建立语音QoS流，并且发起EPS Fallback流程，引导UE回落到4G EPS网络再发起呼叫。
+4. NG RAN告诉核心网拒绝了建立语音QoS流的请求，并且指示核心网回落正在进行。
+  NG RAN通过AMF向PGW-C+SMF发送PDU会话修改响应消息，指示拒绝在步骤 [2](#ZH-CN_CONCEPT_0176543852__li388634543412) 中接收到的为IMS语音建立QoS流的PDU会话修改，并指示IMS语音回落导致的移动性正在进行。PGW-C+SMF维护与QoS Flow关联的PCC规则，如果PCF订阅了EPS回落事件，则向PCF报告EPS回落事件。
+5. NG RAN引导UE通过切换或者重定向回落到4G EPS网络。
+6. 有N26接口的切换或者重定向，UE发起TAU流程。
+7. EPS发起语音专有承载建立流程。
+  专载建立完成后，在4G下进行VoLTE呼叫的流程。
+  在完成EPS移动性过程或5GS到EPS切换过程的一部分后，SMF/PGW-C在步骤 [4](#ZH-CN_CONCEPT_0176543852__li1488634518347) 中重新启动PCC规则的专用承载的建立，包括IMS语音专用承载，将5G QoS映射到EPC QoS参数。如果PCF订阅，PGW-C+SMF上报资源分配成功和接入网信息。
+
+#### [计费与话单](#ZH-CN_CONCEPT_0176543852)
+
+本特性不涉及计费与话单。
+
+#### [特性规格](#ZH-CN_CONCEPT_0176543852)
+
+本特性无特殊规格。
+
+#### [遵循标准](#ZH-CN_CONCEPT_0176543852)
+
+| 标准类别 | 标准编号 | 标准名称 |
+| --- | --- | --- |
+| 3GPP | 23501 | 3rd Generation Partnership Project;Technical Specification Group Services and System Aspects;System Architecture for the 5G System |
+| 3GPP | 23502 | 3rd Generation Partnership Project;Technical Specification Group Services and System Aspects;Procedures for the 5G System |
+
+#### [发布历史](#ZH-CN_CONCEPT_0176543852)
+
+| 特性版本 | 发布版本 | 发布说明 |
+| --- | --- | --- |
+| 01 | 20.0.0 | 首次发布。 |

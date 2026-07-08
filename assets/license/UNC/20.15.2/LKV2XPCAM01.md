@@ -1,0 +1,54 @@
+---
+id: UNC@20.15.2@License@LKV2XPCAM01
+type: License
+name: MVNO解决方案增值包基本功能-UAM
+nf: UNC
+version: 20.15.2
+license_code: LKV2XPCAM01
+control_item_id: 82200JHS
+applicable_nf:
+- AMF
+- MME
+- SGSN
+status: active
+---
+
+# MVNO解决方案增值包基本功能-UAM
+
+`LKV2XPCAM01` · 控制项 82200JHS ·  · 域 
+
+## 归属/适用NF（原文）
+
+AMF/MME/SGSN
+
+## 功能描述
+
+显示系统中接入的2G&3G&4G&NSA&NB-IoT&5G用户数。
+
+## 实现描述
+
+AMF/MME/SGSN系统中每接入一个2G&3G&4G&NSA&NB-IoT&5G用户，该License总数加1；每分离一个2G&3G&4G&NSA&NB-IoT&5G用户，总数减1。
+
+## 取值范围
+
+0～12000000 SAU
+
+## 默认值
+
+10
+
+## 应用场景
+
+AMF/MME/SGSN中接入的2G&3G&4G&NSA&NB-IoT&5G用户数。
+
+## 相关控制项（原文，未解释为边）
+
+无
+
+## 对应特性（原文）
+
+无（对应基本功能）
+
+## 证据
+
+- 原始手册：`evidence/UNC/20.15.2/可选项_63848073.md`
