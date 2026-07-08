@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RDSRSPADDRCHK]] · 全局RADIUS响应消息源端口检查配置（RDSRSPADDRCHK）
+- [全局RADIUS响应消息源端口检查配置（RDSRSPADDRCHK）](configobject/UNC/20.15.2/RDSRSPADDRCHK.md)
 
 ## 使用实例
 

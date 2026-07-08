@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-HTTPFRAMEDBG]] · DSP HTTPFRAMEDBG
+- [DSP HTTPFRAMEDBG](command/UNC/20.15.2/DSP-HTTPFRAMEDBG.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-OSPFCUMULATIVE]] · DSP OSPFCUMULATIVE
+- [DSP OSPFCUMULATIVE](command/UDG/20.15.2/DSP-OSPFCUMULATIVE.md)
 
 ## 证据
 

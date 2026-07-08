@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ACSVERSION]] · DSP ACSVERSION
+- [DSP ACSVERSION](command/UNC/20.15.2/DSP-ACSVERSION.md)
 
 ## 证据
 

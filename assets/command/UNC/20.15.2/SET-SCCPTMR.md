@@ -67,7 +67,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SCCPTMR]] · SCCP定时器参数（SCCPTMR）
+- [SCCP定时器参数（SCCPTMR）](configobject/UNC/20.15.2/SCCPTMR.md)
 
 ## 使用实例
 

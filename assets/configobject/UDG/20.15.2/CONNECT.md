@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CONNECT]] · LST CONNECT
+- [LST CONNECT](command/UDG/20.15.2/LST-CONNECT.md)
 
 ## 证据
 

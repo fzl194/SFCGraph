@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IFCOUNTERS]] · DSP IFCOUNTERS
-- [[command/UNC/20.15.2/RTR-IFCOUNTERS]] · RTR IFCOUNTERS
+- [DSP IFCOUNTERS](command/UNC/20.15.2/DSP-IFCOUNTERS.md)
+- [RTR IFCOUNTERS](command/UNC/20.15.2/RTR-IFCOUNTERS.md)
 
 ## 证据
 

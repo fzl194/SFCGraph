@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/AFPOLICYALL]] · 所有防欺诈策略配置（AFPOLICYALL）
+- [所有防欺诈策略配置（AFPOLICYALL）](configobject/UDG/20.15.2/AFPOLICYALL.md)
 
 ## 使用实例
 

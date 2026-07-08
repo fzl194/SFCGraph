@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-CFGSYNC]] · SET CFGSYNC
+- [SET CFGSYNC](command/UNC/20.15.2/SET-CFGSYNC.md)
 
 ## 证据
 

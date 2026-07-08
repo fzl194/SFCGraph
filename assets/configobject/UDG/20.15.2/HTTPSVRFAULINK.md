@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-HTTPSVRFAULINK]] · DSP HTTPSVRFAULINK
+- [DSP HTTPSVRFAULINK](command/UDG/20.15.2/DSP-HTTPSVRFAULINK.md)
 
 ## 证据
 

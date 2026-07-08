@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ADCPARA]] · ADD ADCPARA
-- [[command/UNC/20.15.2/LST-ADCPARA]] · LST ADCPARA
-- [[command/UNC/20.15.2/MOD-ADCPARA]] · MOD ADCPARA
-- [[command/UNC/20.15.2/RMV-ADCPARA]] · RMV ADCPARA
+- [ADD ADCPARA](command/UNC/20.15.2/ADD-ADCPARA.md)
+- [LST ADCPARA](command/UNC/20.15.2/LST-ADCPARA.md)
+- [MOD ADCPARA](command/UNC/20.15.2/MOD-ADCPARA.md)
+- [RMV ADCPARA](command/UNC/20.15.2/RMV-ADCPARA.md)
 
 ## 证据
 

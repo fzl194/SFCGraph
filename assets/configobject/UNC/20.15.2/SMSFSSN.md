@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMSFSSN]] · LST SMSFSSN
-- [[command/UNC/20.15.2/SET-SMSFSSN]] · SET SMSFSSN
+- [LST SMSFSSN](command/UNC/20.15.2/LST-SMSFSSN.md)
+- [SET SMSFSSN](command/UNC/20.15.2/SET-SMSFSSN.md)
 
 ## 证据
 

@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ACT-SBISTATICLINK]] · ACT SBISTATICLINK
+- [ACT SBISTATICLINK](command/UDG/20.15.2/ACT-SBISTATICLINK.md)
 
 ## 证据
 

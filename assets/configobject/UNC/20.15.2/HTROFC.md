@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HTROFC]] · ADD HTROFC
-- [[command/UNC/20.15.2/LST-HTROFC]] · LST HTROFC
-- [[command/UNC/20.15.2/MOD-HTROFC]] · MOD HTROFC
-- [[command/UNC/20.15.2/RMV-HTROFC]] · RMV HTROFC
+- [ADD HTROFC](command/UNC/20.15.2/ADD-HTROFC.md)
+- [LST HTROFC](command/UNC/20.15.2/LST-HTROFC.md)
+- [MOD HTROFC](command/UNC/20.15.2/MOD-HTROFC.md)
+- [RMV HTROFC](command/UNC/20.15.2/RMV-HTROFC.md)
 
 ## 证据
 

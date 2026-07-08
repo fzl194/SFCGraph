@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-EMGCFG]] · ADD EMGCFG
-- [[command/UNC/20.15.2/LST-EMGCFG]] · LST EMGCFG
-- [[command/UNC/20.15.2/MOD-EMGCFG]] · MOD EMGCFG
-- [[command/UNC/20.15.2/RMV-EMGCFG]] · RMV EMGCFG
+- [ADD EMGCFG](command/UNC/20.15.2/ADD-EMGCFG.md)
+- [LST EMGCFG](command/UNC/20.15.2/LST-EMGCFG.md)
+- [MOD EMGCFG](command/UNC/20.15.2/MOD-EMGCFG.md)
+- [RMV EMGCFG](command/UNC/20.15.2/RMV-EMGCFG.md)
 
 ## 证据
 

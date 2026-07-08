@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PEERPLMN]] · ADD PEERPLMN
-- [[command/UNC/20.15.2/LST-PEERPLMN]] · LST PEERPLMN
-- [[command/UNC/20.15.2/RMV-PEERPLMN]] · RMV PEERPLMN
+- [ADD PEERPLMN](command/UNC/20.15.2/ADD-PEERPLMN.md)
+- [LST PEERPLMN](command/UNC/20.15.2/LST-PEERPLMN.md)
+- [RMV PEERPLMN](command/UNC/20.15.2/RMV-PEERPLMN.md)
 
 ## 证据
 

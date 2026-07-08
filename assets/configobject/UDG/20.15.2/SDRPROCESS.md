@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SDRPROCESS]] · DSP SDRPROCESS
+- [DSP SDRPROCESS](command/UDG/20.15.2/DSP-SDRPROCESS.md)
 
 ## 证据
 

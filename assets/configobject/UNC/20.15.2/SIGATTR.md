@@ -27,9 +27,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SIGATTR]] · DSP SIGATTR
-- [[command/UNC/20.15.2/LST-SIGATTR]] · LST SIGATTR
-- [[command/UNC/20.15.2/SET-SIGATTR]] · SET SIGATTR
+- [DSP SIGATTR](command/UNC/20.15.2/DSP-SIGATTR.md)
+- [LST SIGATTR](command/UNC/20.15.2/LST-SIGATTR.md)
+- [SET SIGATTR](command/UNC/20.15.2/SET-SIGATTR.md)
 
 ## 证据
 

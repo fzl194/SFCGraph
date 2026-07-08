@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CCPFOT]] · ADD CCPFOT
-- [[command/UNC/20.15.2/LST-CCPFOT]] · LST CCPFOT
-- [[command/UNC/20.15.2/MOD-CCPFOT]] · MOD CCPFOT
-- [[command/UNC/20.15.2/RMV-CCPFOT]] · RMV CCPFOT
+- [ADD CCPFOT](command/UNC/20.15.2/ADD-CCPFOT.md)
+- [LST CCPFOT](command/UNC/20.15.2/LST-CCPFOT.md)
+- [MOD CCPFOT](command/UNC/20.15.2/MOD-CCPFOT.md)
+- [RMV CCPFOT](command/UNC/20.15.2/RMV-CCPFOT.md)
 
 ## 证据
 

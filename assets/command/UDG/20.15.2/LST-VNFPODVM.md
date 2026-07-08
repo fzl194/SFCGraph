@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/VNFPODVM]] · 网元的POD与虚拟机位置关系（VNFPODVM）
+- [网元的POD与虚拟机位置关系（VNFPODVM）](configobject/UDG/20.15.2/VNFPODVM.md)
 
 ## 使用实例
 

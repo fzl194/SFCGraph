@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IPAREAGPCTRL]] · 基于位置分配IP地址策略（IPAREAGPCTRL）
+- [基于位置分配IP地址策略（IPAREAGPCTRL）](configobject/UNC/20.15.2/IPAREAGPCTRL.md)
 
 ## 使用实例
 

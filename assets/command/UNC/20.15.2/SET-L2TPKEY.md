@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/L2TPKEY]] · L2TP加密配置（L2TPKEY）
+- [L2TP加密配置（L2TPKEY）](configobject/UNC/20.15.2/L2TPKEY.md)
 
 ## 使用实例
 

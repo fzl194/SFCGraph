@@ -22,11 +22,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DMLE]] · ADD DMLE
-- [[command/UNC/20.15.2/DSP-DMLE]] · DSP DMLE
-- [[command/UNC/20.15.2/LST-DMLE]] · LST DMLE
-- [[command/UNC/20.15.2/MOD-DMLE]] · MOD DMLE
-- [[command/UNC/20.15.2/RMV-DMLE]] · RMV DMLE
+- [ADD DMLE](command/UNC/20.15.2/ADD-DMLE.md)
+- [DSP DMLE](command/UNC/20.15.2/DSP-DMLE.md)
+- [LST DMLE](command/UNC/20.15.2/LST-DMLE.md)
+- [MOD DMLE](command/UNC/20.15.2/MOD-DMLE.md)
+- [RMV DMLE](command/UNC/20.15.2/RMV-DMLE.md)
 
 ## 证据
 

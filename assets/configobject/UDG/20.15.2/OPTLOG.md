@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-OPTLOG]] · LST OPTLOG
+- [LST OPTLOG](command/UDG/20.15.2/LST-OPTLOG.md)
 
 ## 证据
 

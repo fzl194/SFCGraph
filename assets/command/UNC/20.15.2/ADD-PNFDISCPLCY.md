@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PNFDISCPLCY]] · 对端NF的服务发现策略（PNFDISCPLCY）
+- [对端NF的服务发现策略（PNFDISCPLCY）](configobject/UNC/20.15.2/PNFDISCPLCY.md)
 
 ## 使用实例
 

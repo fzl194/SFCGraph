@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DBPARAS]] · 配置的DB参数（DBPARAS）
+- [配置的DB参数（DBPARAS）](configobject/UNC/20.15.2/DBPARAS.md)
 
 ## 使用实例
 

@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CCT]] · ADD CCT
-- [[command/UNC/20.15.2/LST-CCT]] · LST CCT
-- [[command/UNC/20.15.2/MOD-CCT]] · MOD CCT
-- [[command/UNC/20.15.2/RMV-CCT]] · RMV CCT
+- [ADD CCT](command/UNC/20.15.2/ADD-CCT.md)
+- [LST CCT](command/UNC/20.15.2/LST-CCT.md)
+- [MOD CCT](command/UNC/20.15.2/MOD-CCT.md)
+- [RMV CCT](command/UNC/20.15.2/RMV-CCT.md)
 
 ## 证据
 

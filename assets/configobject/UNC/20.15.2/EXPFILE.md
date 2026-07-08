@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ULD-EXPFILE]] · ULD EXPFILE
+- [ULD EXPFILE](command/UNC/20.15.2/ULD-EXPFILE.md)
 
 ## 证据
 

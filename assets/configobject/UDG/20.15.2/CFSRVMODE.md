@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CFSRVMODE]] · LST CFSRVMODE
-- [[command/UDG/20.15.2/SET-CFSRVMODE]] · SET CFSRVMODE
+- [LST CFSRVMODE](command/UDG/20.15.2/LST-CFSRVMODE.md)
+- [SET CFSRVMODE](command/UDG/20.15.2/SET-CFSRVMODE.md)
 
 ## 证据
 

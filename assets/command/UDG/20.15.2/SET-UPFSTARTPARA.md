@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/UPFSTARTPARA]] · UPF系统开工流程消息的参数（UPFSTARTPARA）
+- [UPF系统开工流程消息的参数（UPFSTARTPARA）](configobject/UDG/20.15.2/UPFSTARTPARA.md)
 
 ## 使用实例
 

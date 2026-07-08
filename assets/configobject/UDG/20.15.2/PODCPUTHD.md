@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PODCPUTHD]] · LST PODCPUTHD
-- [[command/UDG/20.15.2/SET-PODCPUTHD]] · SET PODCPUTHD
+- [LST PODCPUTHD](command/UDG/20.15.2/LST-PODCPUTHD.md)
+- [SET PODCPUTHD](command/UDG/20.15.2/SET-PODCPUTHD.md)
 
 ## 证据
 

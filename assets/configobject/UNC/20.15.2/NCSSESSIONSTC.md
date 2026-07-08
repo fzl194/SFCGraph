@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NCSSESSIONSTC]] · DSP NCSSESSIONSTC
+- [DSP NCSSESSIONSTC](command/UNC/20.15.2/DSP-NCSSESSIONSTC.md)
 
 ## 证据
 

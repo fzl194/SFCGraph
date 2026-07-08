@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DEFPRER8QOS]] · LST DEFPRER8QOS
-- [[command/UNC/20.15.2/SET-DEFPRER8QOS]] · SET DEFPRER8QOS
+- [LST DEFPRER8QOS](command/UNC/20.15.2/LST-DEFPRER8QOS.md)
+- [SET DEFPRER8QOS](command/UNC/20.15.2/SET-DEFPRER8QOS.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NSELST]] · ADD NSELST
-- [[command/UNC/20.15.2/LST-NSELST]] · LST NSELST
-- [[command/UNC/20.15.2/RMV-NSELST]] · RMV NSELST
+- [ADD NSELST](command/UNC/20.15.2/ADD-NSELST.md)
+- [LST NSELST](command/UNC/20.15.2/LST-NSELST.md)
+- [RMV NSELST](command/UNC/20.15.2/RMV-NSELST.md)
 
 ## 证据
 

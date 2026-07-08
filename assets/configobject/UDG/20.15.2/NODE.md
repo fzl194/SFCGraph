@@ -17,12 +17,12 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NODE]] · DSP NODE
-- [[command/UDG/20.15.2/LST-NODE]] · LST NODE
-- [[command/UDG/20.15.2/REB-NODE]] · REB NODE
-- [[command/UDG/20.15.2/RST-NODE]] · RST NODE
-- [[command/UDG/20.15.2/STP-NODE]] · STP NODE
-- [[command/UDG/20.15.2/STR-NODE]] · STR NODE
+- [DSP NODE](command/UDG/20.15.2/DSP-NODE.md)
+- [LST NODE](command/UDG/20.15.2/LST-NODE.md)
+- [REB NODE](command/UDG/20.15.2/REB-NODE.md)
+- [RST NODE](command/UDG/20.15.2/RST-NODE.md)
+- [STP NODE](command/UDG/20.15.2/STP-NODE.md)
+- [STR NODE](command/UDG/20.15.2/STR-NODE.md)
 
 ## 证据
 

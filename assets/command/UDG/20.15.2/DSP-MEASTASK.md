@@ -36,7 +36,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MEASTASK]] · 话统测量任务（MEASTASK）
+- [话统测量任务（MEASTASK）](configobject/UDG/20.15.2/MEASTASK.md)
 
 ## 使用实例
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RESINSTANCETYPE]] · LST RESINSTANCETYPE
+- [LST RESINSTANCETYPE](command/UDG/20.15.2/LST-RESINSTANCETYPE.md)
 
 ## 证据
 

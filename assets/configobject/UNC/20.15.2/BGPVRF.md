@@ -19,12 +19,12 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-BGPVRF]] · ADD BGPVRF
-- [[command/UNC/20.15.2/DSP-BGPVRF]] · DSP BGPVRF
-- [[command/UNC/20.15.2/LST-BGPVRF]] · LST BGPVRF
-- [[command/UNC/20.15.2/MOD-BGPVRF]] · MOD BGPVRF
-- [[command/UNC/20.15.2/RBL-BGPVRF]] · RBL BGPVRF
-- [[command/UNC/20.15.2/RMV-BGPVRF]] · RMV BGPVRF
+- [ADD BGPVRF](command/UNC/20.15.2/ADD-BGPVRF.md)
+- [DSP BGPVRF](command/UNC/20.15.2/DSP-BGPVRF.md)
+- [LST BGPVRF](command/UNC/20.15.2/LST-BGPVRF.md)
+- [MOD BGPVRF](command/UNC/20.15.2/MOD-BGPVRF.md)
+- [RBL BGPVRF](command/UNC/20.15.2/RBL-BGPVRF.md)
+- [RMV BGPVRF](command/UNC/20.15.2/RMV-BGPVRF.md)
 
 ## 证据
 

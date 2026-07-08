@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/FTR-ACSFILE]] · FTR ACSFILE
+- [FTR ACSFILE](command/UDG/20.15.2/FTR-ACSFILE.md)
 
 ## 证据
 

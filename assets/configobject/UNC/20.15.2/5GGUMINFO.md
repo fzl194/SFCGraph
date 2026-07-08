@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-5GGUMINFO]] · LST 5GGUMINFO
-- [[command/UNC/20.15.2/SET-5GGUMINFO]] · SET 5GGUMINFO
+- [LST 5GGUMINFO](command/UNC/20.15.2/LST-5GGUMINFO.md)
+- [SET 5GGUMINFO](command/UNC/20.15.2/SET-5GGUMINFO.md)
 
 ## 证据
 

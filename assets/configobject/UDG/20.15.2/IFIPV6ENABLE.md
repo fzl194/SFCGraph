@@ -17,12 +17,12 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-IFIPV6ENABLE]] · LST IFIPV6ENABLE
-- [[command/UDG/20.15.2/SET-IFIPV6ENABLE]] · SET IFIPV6ENABLE
+- [LST IFIPV6ENABLE](command/UDG/20.15.2/LST-IFIPV6ENABLE.md)
+- [SET IFIPV6ENABLE](command/UDG/20.15.2/SET-IFIPV6ENABLE.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/INTERFACE]] · INTERFACE
+- [INTERFACE](configobject/UDG/20.15.2/INTERFACE.md)
 
 ## 证据
 

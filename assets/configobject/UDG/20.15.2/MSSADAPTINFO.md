@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSADAPTINFO]] · DSP MSSADAPTINFO
+- [DSP MSSADAPTINFO](command/UDG/20.15.2/DSP-MSSADAPTINFO.md)
 
 ## 证据
 

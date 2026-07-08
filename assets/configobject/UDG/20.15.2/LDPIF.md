@@ -17,11 +17,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-LDPIF]] · ADD LDPIF
-- [[command/UDG/20.15.2/DSP-LDPIF]] · DSP LDPIF
-- [[command/UDG/20.15.2/LST-LDPIF]] · LST LDPIF
-- [[command/UDG/20.15.2/MOD-LDPIF]] · MOD LDPIF
-- [[command/UDG/20.15.2/RMV-LDPIF]] · RMV LDPIF
+- [ADD LDPIF](command/UDG/20.15.2/ADD-LDPIF.md)
+- [DSP LDPIF](command/UDG/20.15.2/DSP-LDPIF.md)
+- [LST LDPIF](command/UDG/20.15.2/LST-LDPIF.md)
+- [MOD LDPIF](command/UDG/20.15.2/MOD-LDPIF.md)
+- [RMV LDPIF](command/UDG/20.15.2/RMV-LDPIF.md)
 
 ## 证据
 

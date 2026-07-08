@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NODEBATCH]] · 节点批量复位（NODEBATCH）
+- [节点批量复位（NODEBATCH）](configobject/UNC/20.15.2/NODEBATCH.md)
 
 ## 使用实例
 

@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RVKLICINFO]] · DSP RVKLICINFO
+- [DSP RVKLICINFO](command/UNC/20.15.2/DSP-RVKLICINFO.md)
 
 ## 证据
 

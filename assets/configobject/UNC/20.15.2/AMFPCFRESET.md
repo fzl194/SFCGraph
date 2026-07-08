@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AMFPCFRESET]] · LST AMFPCFRESET
-- [[command/UNC/20.15.2/SET-AMFPCFRESET]] · SET AMFPCFRESET
+- [LST AMFPCFRESET](command/UNC/20.15.2/LST-AMFPCFRESET.md)
+- [SET AMFPCFRESET](command/UNC/20.15.2/SET-AMFPCFRESET.md)
 
 ## 证据
 

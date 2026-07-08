@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TOSOFTPARA]] · LST TOSOFTPARA
-- [[command/UDG/20.15.2/SET-TOSOFTPARA]] · SET TOSOFTPARA
+- [LST TOSOFTPARA](command/UDG/20.15.2/LST-TOSOFTPARA.md)
+- [SET TOSOFTPARA](command/UDG/20.15.2/SET-TOSOFTPARA.md)
 
 ## 证据
 

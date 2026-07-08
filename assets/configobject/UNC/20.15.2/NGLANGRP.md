@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/TST-NGLANGRP]] · TST NGLANGRP
+- [TST NGLANGRP](command/UNC/20.15.2/TST-NGLANGRP.md)
 
 ## 证据
 

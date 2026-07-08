@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HTTPLE]] · ADD HTTPLE
-- [[command/UNC/20.15.2/LST-HTTPLE]] · LST HTTPLE
-- [[command/UNC/20.15.2/MOD-HTTPLE]] · MOD HTTPLE
-- [[command/UNC/20.15.2/RMV-HTTPLE]] · RMV HTTPLE
+- [ADD HTTPLE](command/UNC/20.15.2/ADD-HTTPLE.md)
+- [LST HTTPLE](command/UNC/20.15.2/LST-HTTPLE.md)
+- [MOD HTTPLE](command/UNC/20.15.2/MOD-HTTPLE.md)
+- [RMV HTTPLE](command/UNC/20.15.2/RMV-HTTPLE.md)
 
 ## 证据
 

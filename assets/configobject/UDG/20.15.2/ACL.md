@@ -29,10 +29,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-ACL]] · ADD ACL
-- [[command/UDG/20.15.2/LST-ACL]] · LST ACL
-- [[command/UDG/20.15.2/MOD-ACL]] · MOD ACL
-- [[command/UDG/20.15.2/RMV-ACL]] · RMV ACL
+- [ADD ACL](command/UDG/20.15.2/ADD-ACL.md)
+- [LST ACL](command/UDG/20.15.2/LST-ACL.md)
+- [MOD ACL](command/UDG/20.15.2/MOD-ACL.md)
+- [RMV ACL](command/UDG/20.15.2/RMV-ACL.md)
 
 ## 证据
 

@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QOSGLOBAL]] · LST QOSGLOBAL
-- [[command/UNC/20.15.2/SET-QOSGLOBAL]] · SET QOSGLOBAL
+- [LST QOSGLOBAL](command/UNC/20.15.2/LST-QOSGLOBAL.md)
+- [SET QOSGLOBAL](command/UNC/20.15.2/SET-QOSGLOBAL.md)
 
 ## 证据
 

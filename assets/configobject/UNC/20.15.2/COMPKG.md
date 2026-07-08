@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LOD-COMPKG]] · LOD COMPKG
-- [[command/UNC/20.15.2/LST-COMPKG]] · LST COMPKG
-- [[command/UNC/20.15.2/RMV-COMPKG]] · RMV COMPKG
+- [LOD COMPKG](command/UNC/20.15.2/LOD-COMPKG.md)
+- [LST COMPKG](command/UNC/20.15.2/LST-COMPKG.md)
+- [RMV COMPKG](command/UNC/20.15.2/RMV-COMPKG.md)
 
 ## 证据
 

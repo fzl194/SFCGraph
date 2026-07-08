@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-KPIMONPARA]] · LST KPIMONPARA
-- [[command/UNC/20.15.2/SET-KPIMONPARA]] · SET KPIMONPARA
+- [LST KPIMONPARA](command/UNC/20.15.2/LST-KPIMONPARA.md)
+- [SET KPIMONPARA](command/UNC/20.15.2/SET-KPIMONPARA.md)
 
 ## 证据
 

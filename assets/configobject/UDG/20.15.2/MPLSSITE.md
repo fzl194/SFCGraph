@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-MPLSSITE]] · LST MPLSSITE
-- [[command/UDG/20.15.2/SET-MPLSSITE]] · SET MPLSSITE
+- [LST MPLSSITE](command/UDG/20.15.2/LST-MPLSSITE.md)
+- [SET MPLSSITE](command/UDG/20.15.2/SET-MPLSSITE.md)
 
 ## 证据
 

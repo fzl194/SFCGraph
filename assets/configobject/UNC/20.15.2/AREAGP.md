@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AREAGP]] · ADD AREAGP
-- [[command/UNC/20.15.2/LST-AREAGP]] · LST AREAGP
-- [[command/UNC/20.15.2/MOD-AREAGP]] · MOD AREAGP
-- [[command/UNC/20.15.2/RMV-AREAGP]] · RMV AREAGP
+- [ADD AREAGP](command/UNC/20.15.2/ADD-AREAGP.md)
+- [LST AREAGP](command/UNC/20.15.2/LST-AREAGP.md)
+- [MOD AREAGP](command/UNC/20.15.2/MOD-AREAGP.md)
+- [RMV AREAGP](command/UNC/20.15.2/RMV-AREAGP.md)
 
 ## 证据
 

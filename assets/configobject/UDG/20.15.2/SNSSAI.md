@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SNSSAI]] · ADD SNSSAI
-- [[command/UDG/20.15.2/LST-SNSSAI]] · LST SNSSAI
-- [[command/UDG/20.15.2/RMV-SNSSAI]] · RMV SNSSAI
+- [ADD SNSSAI](command/UDG/20.15.2/ADD-SNSSAI.md)
+- [LST SNSSAI](command/UDG/20.15.2/LST-SNSSAI.md)
+- [RMV SNSSAI](command/UDG/20.15.2/RMV-SNSSAI.md)
 
 ## 证据
 

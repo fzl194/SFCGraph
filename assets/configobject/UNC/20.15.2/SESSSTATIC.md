@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SESSSTATIC]] · DSP SESSSTATIC
-- [[command/UNC/20.15.2/RTR-SESSSTATIC]] · RTR SESSSTATIC
+- [DSP SESSSTATIC](command/UNC/20.15.2/DSP-SESSSTATIC.md)
+- [RTR SESSSTATIC](command/UNC/20.15.2/RTR-SESSSTATIC.md)
 
 ## 证据
 

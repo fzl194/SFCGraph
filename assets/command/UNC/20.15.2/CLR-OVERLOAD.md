@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OVERLOAD]] · 过载控制记录信息（OVERLOAD）
+- [过载控制记录信息（OVERLOAD）](configobject/UNC/20.15.2/OVERLOAD.md)
 
 ## 使用实例
 

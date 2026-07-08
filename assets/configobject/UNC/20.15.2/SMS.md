@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMS]] · LST SMS
-- [[command/UNC/20.15.2/SET-SMS]] · SET SMS
+- [LST SMS](command/UNC/20.15.2/LST-SMS.md)
+- [SET SMS](command/UNC/20.15.2/SET-SMS.md)
 
 ## 证据
 

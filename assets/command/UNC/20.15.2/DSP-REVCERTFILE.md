@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/REVCERTFILE]] · 证书吊销列表（REVCERTFILE）
+- [证书吊销列表（REVCERTFILE）](configobject/UNC/20.15.2/REVCERTFILE.md)
 
 ## 使用实例
 

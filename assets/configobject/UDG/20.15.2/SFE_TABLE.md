@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFE_TABLE]] · DSP SFE_TABLE
+- [DSP SFE_TABLE](command/UDG/20.15.2/DSP-SFE_TABLE.md)
 
 ## 证据
 

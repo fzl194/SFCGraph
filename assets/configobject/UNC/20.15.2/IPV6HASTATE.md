@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IPV6HASTATE]] · DSP IPV6HASTATE
+- [DSP IPV6HASTATE](command/UNC/20.15.2/DSP-IPV6HASTATE.md)
 
 ## 证据
 

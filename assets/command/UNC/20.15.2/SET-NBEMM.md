@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NBEMM]] · NB-S1模式MM协议参数（NBEMM）
+- [NB-S1模式MM协议参数（NBEMM）](configobject/UNC/20.15.2/NBEMM.md)
 
 ## 使用实例
 

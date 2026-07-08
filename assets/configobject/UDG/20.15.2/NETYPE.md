@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RTR-NETYPE]] · RTR NETYPE
-- [[command/UDG/20.15.2/SET-NETYPE]] · SET NETYPE
+- [RTR NETYPE](command/UDG/20.15.2/RTR-NETYPE.md)
+- [SET NETYPE](command/UDG/20.15.2/SET-NETYPE.md)
 
 ## 证据
 

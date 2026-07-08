@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PFCPLOADRPT]] · LST PFCPLOADRPT
-- [[command/UDG/20.15.2/SET-PFCPLOADRPT]] · SET PFCPLOADRPT
+- [LST PFCPLOADRPT](command/UDG/20.15.2/LST-PFCPLOADRPT.md)
+- [SET PFCPLOADRPT](command/UDG/20.15.2/SET-PFCPLOADRPT.md)
 
 ## 证据
 

@@ -27,11 +27,11 @@ NF服务消费者获取到Token后，携带Token访问NF服务提供方的服务
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-NRFKEY]] · ACT NRFKEY
-- [[command/UNC/20.15.2/ADD-NRFKEY]] · ADD NRFKEY
-- [[command/UNC/20.15.2/DEA-NRFKEY]] · DEA NRFKEY
-- [[command/UNC/20.15.2/LST-NRFKEY]] · LST NRFKEY
-- [[command/UNC/20.15.2/RMV-NRFKEY]] · RMV NRFKEY
+- [ACT NRFKEY](command/UNC/20.15.2/ACT-NRFKEY.md)
+- [ADD NRFKEY](command/UNC/20.15.2/ADD-NRFKEY.md)
+- [DEA NRFKEY](command/UNC/20.15.2/DEA-NRFKEY.md)
+- [LST NRFKEY](command/UNC/20.15.2/LST-NRFKEY.md)
+- [RMV NRFKEY](command/UNC/20.15.2/RMV-NRFKEY.md)
 
 ## 证据
 

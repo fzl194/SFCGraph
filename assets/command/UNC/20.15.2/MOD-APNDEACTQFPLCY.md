@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNDEACTQFPLCY]] · 基于APN去活用户面专有QoS Flow策略（APNDEACTQFPLCY）
+- [基于APN去活用户面专有QoS Flow策略（APNDEACTQFPLCY）](configobject/UNC/20.15.2/APNDEACTQFPLCY.md)
 
 ## 使用实例
 

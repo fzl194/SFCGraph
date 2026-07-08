@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMCOMMFUNC]] · LST SMCOMMFUNC
-- [[command/UNC/20.15.2/SET-SMCOMMFUNC]] · SET SMCOMMFUNC
+- [LST SMCOMMFUNC](command/UNC/20.15.2/LST-SMCOMMFUNC.md)
+- [SET SMCOMMFUNC](command/UNC/20.15.2/SET-SMCOMMFUNC.md)
 
 ## 证据
 

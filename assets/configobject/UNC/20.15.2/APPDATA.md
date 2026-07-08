@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CHK-APPDATA]] · CHK APPDATA
-- [[command/UNC/20.15.2/DSP-APPDATA]] · DSP APPDATA
-- [[command/UNC/20.15.2/SYN-APPDATA]] · SYN APPDATA
+- [CHK APPDATA](command/UNC/20.15.2/CHK-APPDATA.md)
+- [DSP APPDATA](command/UNC/20.15.2/DSP-APPDATA.md)
+- [SYN APPDATA](command/UNC/20.15.2/SYN-APPDATA.md)
 
 ## 证据
 

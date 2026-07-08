@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SCEF]] · SCEF配置（SCEF）
+- [SCEF配置（SCEF）](configobject/UNC/20.15.2/SCEF.md)
 
 ## 使用实例
 

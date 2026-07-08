@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFNS]] · ADD NFNS
-- [[command/UNC/20.15.2/LST-NFNS]] · LST NFNS
-- [[command/UNC/20.15.2/RMV-NFNS]] · RMV NFNS
+- [ADD NFNS](command/UNC/20.15.2/ADD-NFNS.md)
+- [LST NFNS](command/UNC/20.15.2/LST-NFNS.md)
+- [RMV NFNS](command/UNC/20.15.2/RMV-NFNS.md)
 
 ## 证据
 

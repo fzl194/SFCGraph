@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/AUTHSOAP]] · 网管登录认证策略（AUTHSOAP）
+- [网管登录认证策略（AUTHSOAP）](configobject/UDG/20.15.2/AUTHSOAP.md)
 
 ## 使用实例
 

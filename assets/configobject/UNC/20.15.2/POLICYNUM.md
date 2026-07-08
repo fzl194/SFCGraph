@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-POLICYNUM]] · DSP POLICYNUM
+- [DSP POLICYNUM](command/UNC/20.15.2/DSP-POLICYNUM.md)
 
 ## 证据
 

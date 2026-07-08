@@ -23,12 +23,12 @@ PS域网元的IP和端口号要根据实际配置。
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ACTRL]] · ADD ACTRL
-- [[command/UNC/20.15.2/CHK-ACTRL]] · CHK ACTRL
-- [[command/UNC/20.15.2/DSP-ACTRL]] · DSP ACTRL
-- [[command/UNC/20.15.2/LST-ACTRL]] · LST ACTRL
-- [[command/UNC/20.15.2/MOD-ACTRL]] · MOD ACTRL
-- [[command/UNC/20.15.2/RMV-ACTRL]] · RMV ACTRL
+- [ADD ACTRL](command/UNC/20.15.2/ADD-ACTRL.md)
+- [CHK ACTRL](command/UNC/20.15.2/CHK-ACTRL.md)
+- [DSP ACTRL](command/UNC/20.15.2/DSP-ACTRL.md)
+- [LST ACTRL](command/UNC/20.15.2/LST-ACTRL.md)
+- [MOD ACTRL](command/UNC/20.15.2/MOD-ACTRL.md)
+- [RMV ACTRL](command/UNC/20.15.2/RMV-ACTRL.md)
 
 ## 证据
 

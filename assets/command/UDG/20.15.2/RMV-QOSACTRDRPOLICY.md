@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/QOSACTRDRPOLICY]] · 流行为下级联流策略（QOSACTRDRPOLICY）
+- [流行为下级联流策略（QOSACTRDRPOLICY）](configobject/UDG/20.15.2/QOSACTRDRPOLICY.md)
 
 ## 使用实例
 

@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMCOMMTIMER]] · LST SMCOMMTIMER
-- [[command/UNC/20.15.2/SET-SMCOMMTIMER]] · SET SMCOMMTIMER
+- [LST SMCOMMTIMER](command/UNC/20.15.2/LST-SMCOMMTIMER.md)
+- [SET SMCOMMTIMER](command/UNC/20.15.2/SET-SMCOMMTIMER.md)
 
 ## 证据
 

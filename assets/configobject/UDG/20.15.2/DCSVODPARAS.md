@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DCSVODPARAS]] · LST DCSVODPARAS
-- [[command/UDG/20.15.2/SET-DCSVODPARAS]] · SET DCSVODPARAS
+- [LST DCSVODPARAS](command/UDG/20.15.2/LST-DCSVODPARAS.md)
+- [SET DCSVODPARAS](command/UDG/20.15.2/SET-DCSVODPARAS.md)
 
 ## 证据
 

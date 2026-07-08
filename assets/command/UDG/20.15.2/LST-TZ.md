@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/TZ]] · 时区和夏令时信息（TZ）
+- [时区和夏令时信息（TZ）](configobject/UDG/20.15.2/TZ.md)
 
 ## 使用实例
 

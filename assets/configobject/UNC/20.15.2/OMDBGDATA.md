@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OMDBGDATA]] · DSP OMDBGDATA
+- [DSP OMDBGDATA](command/UNC/20.15.2/DSP-OMDBGDATA.md)
 
 ## 证据
 

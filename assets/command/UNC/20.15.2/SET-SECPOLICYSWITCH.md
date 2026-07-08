@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SECPOLICYSWITCH]] · TCPIP报文以及应用层、黑名单、白名单防御机制使能状态（SECPOLICYSWITCH）
+- [TCPIP报文以及应用层、黑名单、白名单防御机制使能状态（SECPOLICYSWITCH）](configobject/UNC/20.15.2/SECPOLICYSWITCH.md)
 
 ## 使用实例
 

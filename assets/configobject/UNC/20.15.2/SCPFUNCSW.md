@@ -37,8 +37,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SCPFUNCSW]] · LST SCPFUNCSW
-- [[command/UNC/20.15.2/SET-SCPFUNCSW]] · SET SCPFUNCSW
+- [LST SCPFUNCSW](command/UNC/20.15.2/LST-SCPFUNCSW.md)
+- [SET SCPFUNCSW](command/UNC/20.15.2/SET-SCPFUNCSW.md)
 
 ## 证据
 

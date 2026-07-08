@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MMEGPMEM]] · ADD MMEGPMEM
-- [[command/UNC/20.15.2/LST-MMEGPMEM]] · LST MMEGPMEM
-- [[command/UNC/20.15.2/MOD-MMEGPMEM]] · MOD MMEGPMEM
-- [[command/UNC/20.15.2/RMV-MMEGPMEM]] · RMV MMEGPMEM
+- [ADD MMEGPMEM](command/UNC/20.15.2/ADD-MMEGPMEM.md)
+- [LST MMEGPMEM](command/UNC/20.15.2/LST-MMEGPMEM.md)
+- [MOD MMEGPMEM](command/UNC/20.15.2/MOD-MMEGPMEM.md)
+- [RMV MMEGPMEM](command/UNC/20.15.2/RMV-MMEGPMEM.md)
 
 ## 证据
 

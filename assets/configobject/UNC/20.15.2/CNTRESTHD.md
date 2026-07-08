@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-CNTRESTHD]] · SET CNTRESTHD
+- [SET CNTRESTHD](command/UNC/20.15.2/SET-CNTRESTHD.md)
 
 ## 证据
 

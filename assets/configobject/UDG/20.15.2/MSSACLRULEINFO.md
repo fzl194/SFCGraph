@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSACLRULEINFO]] · DSP MSSACLRULEINFO
+- [DSP MSSACLRULEINFO](command/UDG/20.15.2/DSP-MSSACLRULEINFO.md)
 
 ## 证据
 

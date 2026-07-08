@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DDNFLOWCTRL]] · LST DDNFLOWCTRL
-- [[command/UNC/20.15.2/SET-DDNFLOWCTRL]] · SET DDNFLOWCTRL
+- [LST DDNFLOWCTRL](command/UNC/20.15.2/LST-DDNFLOWCTRL.md)
+- [SET DDNFLOWCTRL](command/UNC/20.15.2/SET-DDNFLOWCTRL.md)
 
 ## 证据
 

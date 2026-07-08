@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PIMINVPKTCNTVRF]] · DSP PIMINVPKTCNTVRF
+- [DSP PIMINVPKTCNTVRF](command/UDG/20.15.2/DSP-PIMINVPKTCNTVRF.md)
 
 ## 证据
 

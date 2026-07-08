@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHGMODE]] · LST CHGMODE
-- [[command/UNC/20.15.2/SET-CHGMODE]] · SET CHGMODE
+- [LST CHGMODE](command/UNC/20.15.2/LST-CHGMODE.md)
+- [SET CHGMODE](command/UNC/20.15.2/SET-CHGMODE.md)
 
 ## 证据
 

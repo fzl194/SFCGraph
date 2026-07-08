@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NCGCGFSFP]] · LST NCGCGFSFP
-- [[command/UNC/20.15.2/SET-NCGCGFSFP]] · SET NCGCGFSFP
+- [LST NCGCGFSFP](command/UNC/20.15.2/LST-NCGCGFSFP.md)
+- [SET NCGCGFSFP](command/UNC/20.15.2/SET-NCGCGFSFP.md)
 
 ## 证据
 

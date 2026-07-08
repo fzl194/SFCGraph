@@ -43,7 +43,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NCSPROXYSESSION]] · 所有NETCONF代理VNFC会话信息（NCSPROXYSESSION）
+- [所有NETCONF代理VNFC会话信息（NCSPROXYSESSION）](configobject/UDG/20.15.2/NCSPROXYSESSION.md)
 
 ## 使用实例
 

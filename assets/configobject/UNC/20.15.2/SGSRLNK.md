@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SGSRLNK]] · ADD SGSRLNK
-- [[command/UNC/20.15.2/DSP-SGSRLNK]] · DSP SGSRLNK
-- [[command/UNC/20.15.2/LST-SGSRLNK]] · LST SGSRLNK
-- [[command/UNC/20.15.2/MOD-SGSRLNK]] · MOD SGSRLNK
-- [[command/UNC/20.15.2/RMV-SGSRLNK]] · RMV SGSRLNK
+- [ADD SGSRLNK](command/UNC/20.15.2/ADD-SGSRLNK.md)
+- [DSP SGSRLNK](command/UNC/20.15.2/DSP-SGSRLNK.md)
+- [LST SGSRLNK](command/UNC/20.15.2/LST-SGSRLNK.md)
+- [MOD SGSRLNK](command/UNC/20.15.2/MOD-SGSRLNK.md)
+- [RMV SGSRLNK](command/UNC/20.15.2/RMV-SGSRLNK.md)
 
 ## 证据
 

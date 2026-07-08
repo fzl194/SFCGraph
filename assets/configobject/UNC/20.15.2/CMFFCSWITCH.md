@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CMFFCSWITCH]] · LST CMFFCSWITCH
-- [[command/UNC/20.15.2/SET-CMFFCSWITCH]] · SET CMFFCSWITCH
+- [LST CMFFCSWITCH](command/UNC/20.15.2/LST-CMFFCSWITCH.md)
+- [SET CMFFCSWITCH](command/UNC/20.15.2/SET-CMFFCSWITCH.md)
 
 ## 证据
 

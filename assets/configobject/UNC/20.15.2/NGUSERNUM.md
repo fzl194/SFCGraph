@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGUSERNUM]] · DSP NGUSERNUM
+- [DSP NGUSERNUM](command/UNC/20.15.2/DSP-NGUSERNUM.md)
 
 ## 证据
 

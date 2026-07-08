@@ -22,11 +22,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DMRT]] · ADD DMRT
-- [[command/UNC/20.15.2/DSP-DMRT]] · DSP DMRT
-- [[command/UNC/20.15.2/LST-DMRT]] · LST DMRT
-- [[command/UNC/20.15.2/MOD-DMRT]] · MOD DMRT
-- [[command/UNC/20.15.2/RMV-DMRT]] · RMV DMRT
+- [ADD DMRT](command/UNC/20.15.2/ADD-DMRT.md)
+- [DSP DMRT](command/UNC/20.15.2/DSP-DMRT.md)
+- [LST DMRT](command/UNC/20.15.2/LST-DMRT.md)
+- [MOD DMRT](command/UNC/20.15.2/MOD-DMRT.md)
+- [RMV DMRT](command/UNC/20.15.2/RMV-DMRT.md)
 
 ## 证据
 

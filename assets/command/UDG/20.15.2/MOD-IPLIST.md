@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/IPLIST]] · IP地址列表（IPLIST）
+- [IP地址列表（IPLIST）](configobject/UDG/20.15.2/IPLIST.md)
 
 ## 使用实例
 

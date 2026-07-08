@@ -19,13 +19,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-ETHSUBIF]] · ADD ETHSUBIF
-- [[command/UDG/20.15.2/LST-ETHSUBIF]] · LST ETHSUBIF
-- [[command/UDG/20.15.2/RMV-ETHSUBIF]] · RMV ETHSUBIF
+- [ADD ETHSUBIF](command/UDG/20.15.2/ADD-ETHSUBIF.md)
+- [LST ETHSUBIF](command/UDG/20.15.2/LST-ETHSUBIF.md)
+- [RMV ETHSUBIF](command/UDG/20.15.2/RMV-ETHSUBIF.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/INTERFACE]] · INTERFACE
+- [INTERFACE](configobject/UDG/20.15.2/INTERFACE.md)
 
 ## 证据
 

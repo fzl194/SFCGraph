@@ -22,17 +22,17 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-BWMRULE]] · ADD BWMRULE
-- [[command/UDG/20.15.2/LST-BWMRULE]] · LST BWMRULE
-- [[command/UDG/20.15.2/MOD-BWMRULE]] · MOD BWMRULE
-- [[command/UDG/20.15.2/RMV-BWMRULE]] · RMV BWMRULE
+- [ADD BWMRULE](command/UDG/20.15.2/ADD-BWMRULE.md)
+- [LST BWMRULE](command/UDG/20.15.2/LST-BWMRULE.md)
+- [MOD BWMRULE](command/UDG/20.15.2/MOD-BWMRULE.md)
+- [RMV BWMRULE](command/UDG/20.15.2/RMV-BWMRULE.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/BWMCONTROLLER]] · BWMCONTROLLER
-- [[configobject/UDG/20.15.2/BWMSERVICE]] · BWMSERVICE
-- [[configobject/UDG/20.15.2/BWMUSERGROUP]] · BWMUSERGROUP
-- [[configobject/UDG/20.15.2/TIMERANGE]] · TIMERANGE
+- [BWMCONTROLLER](configobject/UDG/20.15.2/BWMCONTROLLER.md)
+- [BWMSERVICE](configobject/UDG/20.15.2/BWMSERVICE.md)
+- [BWMUSERGROUP](configobject/UDG/20.15.2/BWMUSERGROUP.md)
+- [TIMERANGE](configobject/UDG/20.15.2/TIMERANGE.md)
 
 ## 证据
 

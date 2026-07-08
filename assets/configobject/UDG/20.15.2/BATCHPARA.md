@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-BATCHPARA]] · LST BATCHPARA
-- [[command/UDG/20.15.2/SET-BATCHPARA]] · SET BATCHPARA
+- [LST BATCHPARA](command/UDG/20.15.2/LST-BATCHPARA.md)
+- [SET BATCHPARA](command/UDG/20.15.2/SET-BATCHPARA.md)
 
 ## 证据
 

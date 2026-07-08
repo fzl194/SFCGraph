@@ -25,10 +25,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DMVLE]] · ADD DMVLE
-- [[command/UNC/20.15.2/LST-DMVLE]] · LST DMVLE
-- [[command/UNC/20.15.2/MOD-DMVLE]] · MOD DMVLE
-- [[command/UNC/20.15.2/RMV-DMVLE]] · RMV DMVLE
+- [ADD DMVLE](command/UNC/20.15.2/ADD-DMVLE.md)
+- [LST DMVLE](command/UNC/20.15.2/LST-DMVLE.md)
+- [MOD DMVLE](command/UNC/20.15.2/MOD-DMVLE.md)
+- [RMV DMVLE](command/UNC/20.15.2/RMV-DMVLE.md)
 
 ## 证据
 

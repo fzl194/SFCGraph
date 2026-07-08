@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/MIG-SLAVERU]] · MIG SLAVERU
+- [MIG SLAVERU](command/UDG/20.15.2/MIG-SLAVERU.md)
 
 ## 证据
 

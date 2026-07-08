@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CPCGBINDING]] · 抄送CG绑定关系（CPCGBINDING）
+- [抄送CG绑定关系（CPCGBINDING）](configobject/UNC/20.15.2/CPCGBINDING.md)
 
 ## 关联任务
 

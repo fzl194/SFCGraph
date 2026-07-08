@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GBPDPRESTBL]] · LST GBPDPRESTBL
+- [LST GBPDPRESTBL](command/UNC/20.15.2/LST-GBPDPRESTBL.md)
 
 ## 证据
 

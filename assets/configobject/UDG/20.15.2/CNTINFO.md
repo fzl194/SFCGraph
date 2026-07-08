@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CNTINFO]] · DSP CNTINFO
+- [DSP CNTINFO](command/UDG/20.15.2/DSP-CNTINFO.md)
 
 ## 证据
 

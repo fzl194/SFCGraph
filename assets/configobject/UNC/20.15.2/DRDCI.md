@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DRDCI]] · ADD DRDCI
-- [[command/UNC/20.15.2/DSP-DRDCI]] · DSP DRDCI
-- [[command/UNC/20.15.2/LST-DRDCI]] · LST DRDCI
-- [[command/UNC/20.15.2/MOD-DRDCI]] · MOD DRDCI
-- [[command/UNC/20.15.2/RMV-DRDCI]] · RMV DRDCI
+- [ADD DRDCI](command/UNC/20.15.2/ADD-DRDCI.md)
+- [DSP DRDCI](command/UNC/20.15.2/DSP-DRDCI.md)
+- [LST DRDCI](command/UNC/20.15.2/LST-DRDCI.md)
+- [MOD DRDCI](command/UNC/20.15.2/MOD-DRDCI.md)
+- [RMV DRDCI](command/UNC/20.15.2/RMV-DRDCI.md)
 
 ## 证据
 

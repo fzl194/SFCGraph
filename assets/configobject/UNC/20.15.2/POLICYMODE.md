@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-POLICYMODE]] · LST POLICYMODE
-- [[command/UNC/20.15.2/SET-POLICYMODE]] · SET POLICYMODE
+- [LST POLICYMODE](command/UNC/20.15.2/LST-POLICYMODE.md)
+- [SET POLICYMODE](command/UNC/20.15.2/SET-POLICYMODE.md)
 
 ## 证据
 

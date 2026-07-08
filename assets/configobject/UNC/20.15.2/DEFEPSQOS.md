@@ -24,8 +24,8 @@ PGW-C根据协议检查用户携带的QoS参数的合法性，如果参数非法
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DEFEPSQOS]] · LST DEFEPSQOS
-- [[command/UNC/20.15.2/SET-DEFEPSQOS]] · SET DEFEPSQOS
+- [LST DEFEPSQOS](command/UNC/20.15.2/LST-DEFEPSQOS.md)
+- [SET DEFEPSQOS](command/UNC/20.15.2/SET-DEFEPSQOS.md)
 
 ## 证据
 

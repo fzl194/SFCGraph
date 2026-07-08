@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-TRC_CFG]] · LST TRC_CFG
-- [[command/UNC/20.15.2/SET-TRC_CFG]] · SET TRC_CFG
+- [LST TRC_CFG](command/UNC/20.15.2/LST-TRC_CFG.md)
+- [SET TRC_CFG](command/UNC/20.15.2/SET-TRC_CFG.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SBILINKSTATUS]] · DSP SBILINKSTATUS
+- [DSP SBILINKSTATUS](command/UNC/20.15.2/DSP-SBILINKSTATUS.md)
 
 ## 证据
 

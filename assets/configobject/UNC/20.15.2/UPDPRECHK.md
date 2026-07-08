@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/OPR-UPDPRECHK]] · OPR UPDPRECHK
+- [OPR UPDPRECHK](command/UNC/20.15.2/OPR-UPDPRECHK.md)
 
 ## 证据
 

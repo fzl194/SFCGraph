@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SSUAGINGCFG]] · LST SSUAGINGCFG
-- [[command/UDG/20.15.2/SET-SSUAGINGCFG]] · SET SSUAGINGCFG
+- [LST SSUAGINGCFG](command/UDG/20.15.2/LST-SSUAGINGCFG.md)
+- [SET SSUAGINGCFG](command/UDG/20.15.2/SET-SSUAGINGCFG.md)
 
 ## 证据
 

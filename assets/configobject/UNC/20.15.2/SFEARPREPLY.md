@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SFEARPREPLY]] · DSP SFEARPREPLY
+- [DSP SFEARPREPLY](command/UNC/20.15.2/DSP-SFEARPREPLY.md)
 
 ## 证据
 

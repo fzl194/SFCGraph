@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSCOUNTERINFO]] · DSP MSSCOUNTERINFO
+- [DSP MSSCOUNTERINFO](command/UDG/20.15.2/DSP-MSSCOUNTERINFO.md)
 
 ## 证据
 

@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OMNWCONF]] · OM网络探测参数（OMNWCONF）
+- [OM网络探测参数（OMNWCONF）](configobject/UNC/20.15.2/OMNWCONF.md)
 
 ## 使用实例
 

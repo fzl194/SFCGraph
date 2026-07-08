@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NSEUSR]] · DSP NSEUSR
-- [[command/UNC/20.15.2/RMV-NSEUSR]] · RMV NSEUSR
+- [DSP NSEUSR](command/UNC/20.15.2/DSP-NSEUSR.md)
+- [RMV NSEUSR](command/UNC/20.15.2/RMV-NSEUSR.md)
 
 ## 证据
 

@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NFREGNRF]] · 本端NF和对端NRF实例的注册关系（NFREGNRF）
+- [本端NF和对端NRF实例的注册关系（NFREGNRF）](configobject/UNC/20.15.2/NFREGNRF.md)
 
 ## 使用实例
 

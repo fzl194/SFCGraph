@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFNFATTRVRY]] · 操作执行NF属性冲突核验（NRFNFATTRVRY）
+- [操作执行NF属性冲突核验（NRFNFATTRVRY）](configobject/UNC/20.15.2/NRFNFATTRVRY.md)
 
 ## 使用实例
 

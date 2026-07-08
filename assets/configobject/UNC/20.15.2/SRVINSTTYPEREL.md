@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SRVINSTTYPEREL]] · DSP SRVINSTTYPEREL
+- [DSP SRVINSTTYPEREL](command/UNC/20.15.2/DSP-SRVINSTTYPEREL.md)
 
 ## 证据
 

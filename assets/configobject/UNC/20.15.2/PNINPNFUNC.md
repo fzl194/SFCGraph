@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PNINPNFUNC]] · LST PNINPNFUNC
-- [[command/UNC/20.15.2/SET-PNINPNFUNC]] · SET PNINPNFUNC
+- [LST PNINPNFUNC](command/UNC/20.15.2/LST-PNINPNFUNC.md)
+- [SET PNINPNFUNC](command/UNC/20.15.2/SET-PNINPNFUNC.md)
 
 ## 证据
 

@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/GULIWKPLCY]] · GUL互操作本地策略（GULIWKPLCY）
+- [GUL互操作本地策略（GULIWKPLCY）](configobject/UNC/20.15.2/GULIWKPLCY.md)
 
 ## 使用实例
 

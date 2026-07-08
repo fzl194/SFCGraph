@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-THREADCALLSTACK]] · DSP THREADCALLSTACK
+- [DSP THREADCALLSTACK](command/UDG/20.15.2/DSP-THREADCALLSTACK.md)
 
 ## 证据
 

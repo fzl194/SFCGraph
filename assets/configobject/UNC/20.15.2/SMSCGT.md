@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SMSCGT]] · ADD SMSCGT
-- [[command/UNC/20.15.2/LST-SMSCGT]] · LST SMSCGT
-- [[command/UNC/20.15.2/RMV-SMSCGT]] · RMV SMSCGT
+- [ADD SMSCGT](command/UNC/20.15.2/ADD-SMSCGT.md)
+- [LST SMSCGT](command/UNC/20.15.2/LST-SMSCGT.md)
+- [RMV SMSCGT](command/UNC/20.15.2/RMV-SMSCGT.md)
 
 ## 证据
 

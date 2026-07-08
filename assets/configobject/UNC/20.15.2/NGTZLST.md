@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGTZLST]] · ADD NGTZLST
-- [[command/UNC/20.15.2/DSP-NGTZLST]] · DSP NGTZLST
-- [[command/UNC/20.15.2/LST-NGTZLST]] · LST NGTZLST
-- [[command/UNC/20.15.2/MOD-NGTZLST]] · MOD NGTZLST
-- [[command/UNC/20.15.2/RMV-NGTZLST]] · RMV NGTZLST
+- [ADD NGTZLST](command/UNC/20.15.2/ADD-NGTZLST.md)
+- [DSP NGTZLST](command/UNC/20.15.2/DSP-NGTZLST.md)
+- [LST NGTZLST](command/UNC/20.15.2/LST-NGTZLST.md)
+- [MOD NGTZLST](command/UNC/20.15.2/MOD-NGTZLST.md)
+- [RMV NGTZLST](command/UNC/20.15.2/RMV-NGTZLST.md)
 
 ## 证据
 

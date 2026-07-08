@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-DYNNRFSTAT]] · CLR DYNNRFSTAT
+- [CLR DYNNRFSTAT](command/UNC/20.15.2/CLR-DYNNRFSTAT.md)
 
 ## 证据
 

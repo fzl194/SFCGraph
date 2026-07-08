@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-VLRKEYCHECK]] · LST VLRKEYCHECK
-- [[command/UNC/20.15.2/SET-VLRKEYCHECK]] · SET VLRKEYCHECK
+- [LST VLRKEYCHECK](command/UNC/20.15.2/LST-VLRKEYCHECK.md)
+- [SET VLRKEYCHECK](command/UNC/20.15.2/SET-VLRKEYCHECK.md)
 
 ## 证据
 

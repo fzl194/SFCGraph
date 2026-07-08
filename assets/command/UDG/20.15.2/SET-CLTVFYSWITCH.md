@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CLTVFYSWITCH]] · 双向认证开关（CLTVFYSWITCH）
+- [双向认证开关（CLTVFYSWITCH）](configobject/UDG/20.15.2/CLTVFYSWITCH.md)
 
 ## 使用实例
 

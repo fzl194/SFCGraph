@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-KPIRES]] · DSP KPIRES
+- [DSP KPIRES](command/UNC/20.15.2/DSP-KPIRES.md)
 
 ## 证据
 

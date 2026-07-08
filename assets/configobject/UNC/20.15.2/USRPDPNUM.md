@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-USRPDPNUM]] · DSP USRPDPNUM
+- [DSP USRPDPNUM](command/UNC/20.15.2/DSP-USRPDPNUM.md)
 
 ## 证据
 

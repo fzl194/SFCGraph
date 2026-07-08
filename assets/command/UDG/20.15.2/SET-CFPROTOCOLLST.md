@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CFPROTOCOLLST]] · 开启内容过滤的协议列表（CFPROTOCOLLST）
+- [开启内容过滤的协议列表（CFPROTOCOLLST）](configobject/UDG/20.15.2/CFPROTOCOLLST.md)
 
 ## 使用实例
 

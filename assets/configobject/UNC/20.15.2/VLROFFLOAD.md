@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STP-VLROFFLOAD]] · STP VLROFFLOAD
-- [[command/UNC/20.15.2/STR-VLROFFLOAD]] · STR VLROFFLOAD
+- [STP VLROFFLOAD](command/UNC/20.15.2/STP-VLROFFLOAD.md)
+- [STR VLROFFLOAD](command/UNC/20.15.2/STR-VLROFFLOAD.md)
 
 ## 证据
 

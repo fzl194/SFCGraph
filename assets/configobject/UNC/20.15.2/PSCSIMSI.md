@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PSCSIMSI]] · ADD PSCSIMSI
-- [[command/UNC/20.15.2/LST-PSCSIMSI]] · LST PSCSIMSI
-- [[command/UNC/20.15.2/RMV-PSCSIMSI]] · RMV PSCSIMSI
+- [ADD PSCSIMSI](command/UNC/20.15.2/ADD-PSCSIMSI.md)
+- [LST PSCSIMSI](command/UNC/20.15.2/LST-PSCSIMSI.md)
+- [RMV PSCSIMSI](command/UNC/20.15.2/RMV-PSCSIMSI.md)
 
 ## 证据
 

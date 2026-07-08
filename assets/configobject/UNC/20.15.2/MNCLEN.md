@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MNCLEN]] · ADD MNCLEN
-- [[command/UNC/20.15.2/LST-MNCLEN]] · LST MNCLEN
-- [[command/UNC/20.15.2/MOD-MNCLEN]] · MOD MNCLEN
-- [[command/UNC/20.15.2/RMV-MNCLEN]] · RMV MNCLEN
+- [ADD MNCLEN](command/UNC/20.15.2/ADD-MNCLEN.md)
+- [LST MNCLEN](command/UNC/20.15.2/LST-MNCLEN.md)
+- [MOD MNCLEN](command/UNC/20.15.2/MOD-MNCLEN.md)
+- [RMV MNCLEN](command/UNC/20.15.2/RMV-MNCLEN.md)
 
 ## 证据
 

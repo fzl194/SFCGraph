@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MEASRST]] · DSP MEASRST
-- [[command/UDG/20.15.2/EXP-MEASRST]] · EXP MEASRST
-- [[command/UDG/20.15.2/LST-MEASRST]] · LST MEASRST
+- [DSP MEASRST](command/UDG/20.15.2/DSP-MEASRST.md)
+- [EXP MEASRST](command/UDG/20.15.2/EXP-MEASRST.md)
+- [LST MEASRST](command/UDG/20.15.2/LST-MEASRST.md)
 
 ## 证据
 

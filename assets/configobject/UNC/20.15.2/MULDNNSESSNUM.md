@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MULDNNSESSNUM]] · DSP MULDNNSESSNUM
+- [DSP MULDNNSESSNUM](command/UNC/20.15.2/DSP-MULDNNSESSNUM.md)
 
 ## 证据
 

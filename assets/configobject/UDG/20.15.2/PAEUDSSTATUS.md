@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAEUDSSTATUS]] · DSP PAEUDSSTATUS
+- [DSP PAEUDSSTATUS](command/UDG/20.15.2/DSP-PAEUDSSTATUS.md)
 
 ## 证据
 

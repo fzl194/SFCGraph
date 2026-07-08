@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PCCFUNC]] · LST PCCFUNC
-- [[command/UNC/20.15.2/SET-PCCFUNC]] · SET PCCFUNC
+- [LST PCCFUNC](command/UNC/20.15.2/LST-PCCFUNC.md)
+- [SET PCCFUNC](command/UNC/20.15.2/SET-PCCFUNC.md)
 
 ## 证据
 

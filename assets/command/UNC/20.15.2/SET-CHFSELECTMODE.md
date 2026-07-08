@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CHFSELECTMODE]] · 用户激活和在线恢复场景CHF的选择模式（CHFSELECTMODE）
+- [用户激活和在线恢复场景CHF的选择模式（CHFSELECTMODE）](configobject/UNC/20.15.2/CHFSELECTMODE.md)
 
 ## 使用实例
 

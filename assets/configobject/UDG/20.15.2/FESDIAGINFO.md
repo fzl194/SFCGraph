@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-FESDIAGINFO]] · DSP FESDIAGINFO
+- [DSP FESDIAGINFO](command/UDG/20.15.2/DSP-FESDIAGINFO.md)
 
 ## 证据
 

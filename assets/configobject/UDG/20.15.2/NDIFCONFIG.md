@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NDIFCONFIG]] · LST NDIFCONFIG
-- [[command/UDG/20.15.2/SET-NDIFCONFIG]] · SET NDIFCONFIG
+- [LST NDIFCONFIG](command/UDG/20.15.2/LST-NDIFCONFIG.md)
+- [SET NDIFCONFIG](command/UDG/20.15.2/SET-NDIFCONFIG.md)
 
 ## 证据
 

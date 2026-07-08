@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-IPALLOCRULE]] · LST IPALLOCRULE
-- [[command/UDG/20.15.2/SET-IPALLOCRULE]] · SET IPALLOCRULE
+- [LST IPALLOCRULE](command/UDG/20.15.2/LST-IPALLOCRULE.md)
+- [SET IPALLOCRULE](command/UDG/20.15.2/SET-IPALLOCRULE.md)
 
 ## 证据
 

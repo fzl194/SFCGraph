@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MAPFIXEDFC]] · LST MAPFIXEDFC
-- [[command/UNC/20.15.2/SET-MAPFIXEDFC]] · SET MAPFIXEDFC
+- [LST MAPFIXEDFC](command/UNC/20.15.2/LST-MAPFIXEDFC.md)
+- [SET MAPFIXEDFC](command/UNC/20.15.2/SET-MAPFIXEDFC.md)
 
 ## 证据
 

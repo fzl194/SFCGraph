@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MDTPLMN]] · 基于管理的最小化路测的PLMN（MDTPLMN）
+- [基于管理的最小化路测的PLMN（MDTPLMN）](configobject/UNC/20.15.2/MDTPLMN.md)
 
 ## 使用实例
 

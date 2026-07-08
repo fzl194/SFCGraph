@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMSCHRCFG]] · LST SMSCHRCFG
-- [[command/UNC/20.15.2/SET-SMSCHRCFG]] · SET SMSCHRCFG
+- [LST SMSCHRCFG](command/UNC/20.15.2/LST-SMSCHRCFG.md)
+- [SET SMSCHRCFG](command/UNC/20.15.2/SET-SMSCHRCFG.md)
 
 ## 证据
 

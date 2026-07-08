@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/OPR-DBGCLICMDPRXY]] · OPR DBGCLICMDPRXY
+- [OPR DBGCLICMDPRXY](command/UDG/20.15.2/OPR-DBGCLICMDPRXY.md)
 
 ## 证据
 

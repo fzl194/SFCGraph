@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-S1PAGINGRULEALL]] · RMV S1PAGINGRULEALL
+- [RMV S1PAGINGRULEALL](command/UNC/20.15.2/RMV-S1PAGINGRULEALL.md)
 
 ## 证据
 

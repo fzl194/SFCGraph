@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SYNCFILESTATUS]] · 对账文件状态（SYNCFILESTATUS）
+- [对账文件状态（SYNCFILESTATUS）](configobject/UNC/20.15.2/SYNCFILESTATUS.md)
 
 ## 使用实例
 

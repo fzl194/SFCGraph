@@ -23,8 +23,8 @@ NF服务消费者获取到Token后，携带Token访问NF服务提供方的服务
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-TOKENALG]] · LST TOKENALG
-- [[command/UNC/20.15.2/SET-TOKENALG]] · SET TOKENALG
+- [LST TOKENALG](command/UNC/20.15.2/LST-TOKENALG.md)
+- [SET TOKENALG](command/UNC/20.15.2/SET-TOKENALG.md)
 
 ## 证据
 

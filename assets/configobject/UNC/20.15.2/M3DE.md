@@ -23,11 +23,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-M3DE]] · ADD M3DE
-- [[command/UNC/20.15.2/DSP-M3DE]] · DSP M3DE
-- [[command/UNC/20.15.2/LST-M3DE]] · LST M3DE
-- [[command/UNC/20.15.2/MOD-M3DE]] · MOD M3DE
-- [[command/UNC/20.15.2/RMV-M3DE]] · RMV M3DE
+- [ADD M3DE](command/UNC/20.15.2/ADD-M3DE.md)
+- [DSP M3DE](command/UNC/20.15.2/DSP-M3DE.md)
+- [LST M3DE](command/UNC/20.15.2/LST-M3DE.md)
+- [MOD M3DE](command/UNC/20.15.2/MOD-M3DE.md)
+- [RMV M3DE](command/UNC/20.15.2/RMV-M3DE.md)
 
 ## 证据
 

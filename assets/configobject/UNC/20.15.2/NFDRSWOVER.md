@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-NFDRSWOVER]] · STR NFDRSWOVER
+- [STR NFDRSWOVER](command/UNC/20.15.2/STR-NFDRSWOVER.md)
 
 ## 证据
 

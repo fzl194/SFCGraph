@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SECPOLICYALLPKT]] · LST SECPOLICYALLPKT
+- [LST SECPOLICYALLPKT](command/UNC/20.15.2/LST-SECPOLICYALLPKT.md)
 
 ## 证据
 

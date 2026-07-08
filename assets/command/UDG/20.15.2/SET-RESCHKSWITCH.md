@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/RESCHKSWITCH]] · RCF核查开关状态（RESCHKSWITCH）
+- [RCF核查开关状态（RESCHKSWITCH）](configobject/UDG/20.15.2/RESCHKSWITCH.md)
 
 ## 使用实例
 

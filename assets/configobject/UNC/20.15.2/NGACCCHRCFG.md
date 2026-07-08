@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGACCCHRCFG]] · LST NGACCCHRCFG
-- [[command/UNC/20.15.2/SET-NGACCCHRCFG]] · SET NGACCCHRCFG
+- [LST NGACCCHRCFG](command/UNC/20.15.2/LST-NGACCCHRCFG.md)
+- [SET NGACCCHRCFG](command/UNC/20.15.2/SET-NGACCCHRCFG.md)
 
 ## 证据
 

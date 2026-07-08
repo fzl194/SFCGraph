@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PFRESSTAT]] · LST PFRESSTAT
+- [LST PFRESSTAT](command/UNC/20.15.2/LST-PFRESSTAT.md)
 
 ## 证据
 

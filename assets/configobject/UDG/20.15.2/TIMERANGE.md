@@ -23,15 +23,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-TIMERANGE]] · ADD TIMERANGE
-- [[command/UDG/20.15.2/LST-TIMERANGE]] · LST TIMERANGE
-- [[command/UDG/20.15.2/RMV-TIMERANGE]] · RMV TIMERANGE
+- [ADD TIMERANGE](command/UDG/20.15.2/ADD-TIMERANGE.md)
+- [LST TIMERANGE](command/UDG/20.15.2/LST-TIMERANGE.md)
+- [RMV TIMERANGE](command/UDG/20.15.2/RMV-TIMERANGE.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/BLACKLISTRULE]] · BLACKLISTRULE
-- [[configobject/UDG/20.15.2/BWMRULE]] · BWMRULE
-- [[configobject/UDG/20.15.2/RULE]] · RULE
+- [BLACKLISTRULE](configobject/UDG/20.15.2/BLACKLISTRULE.md)
+- [BWMRULE](configobject/UDG/20.15.2/BWMRULE.md)
+- [RULE](configobject/UDG/20.15.2/RULE.md)
 
 ## 证据
 

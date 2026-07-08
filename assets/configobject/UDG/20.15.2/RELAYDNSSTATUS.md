@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RELAYDNSSTATUS]] · DSP RELAYDNSSTATUS
+- [DSP RELAYDNSSTATUS](command/UDG/20.15.2/DSP-RELAYDNSSTATUS.md)
 
 ## 证据
 

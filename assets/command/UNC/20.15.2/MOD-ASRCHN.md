@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ASRCHN]] · 容灾业务通道配置（ASRCHN）
+- [容灾业务通道配置（ASRCHN）](configobject/UNC/20.15.2/ASRCHN.md)
 
 ## 使用实例
 

@@ -22,13 +22,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-LACID]] · ADD LACID
-- [[command/UDG/20.15.2/LST-LACID]] · LST LACID
-- [[command/UDG/20.15.2/RMV-LACID]] · RMV LACID
+- [ADD LACID](command/UDG/20.15.2/ADD-LACID.md)
+- [LST LACID](command/UDG/20.15.2/LST-LACID.md)
+- [RMV LACID](command/UDG/20.15.2/RMV-LACID.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/LACGROUP]] · LACGROUP
+- [LACGROUP](configobject/UDG/20.15.2/LACGROUP.md)
 
 ## 证据
 

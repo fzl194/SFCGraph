@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/FAULTRANGRP]] · N3接口故障RAN组（FAULTRANGRP）
+- [N3接口故障RAN组（FAULTRANGRP）](configobject/UNC/20.15.2/FAULTRANGRP.md)
 
 ## 使用实例
 

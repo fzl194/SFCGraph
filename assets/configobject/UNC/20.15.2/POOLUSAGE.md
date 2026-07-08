@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-POOLUSAGE]] · DSP POOLUSAGE
+- [DSP POOLUSAGE](command/UNC/20.15.2/DSP-POOLUSAGE.md)
 
 ## 证据
 

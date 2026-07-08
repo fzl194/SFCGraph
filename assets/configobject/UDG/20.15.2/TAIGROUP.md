@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-TAIGROUP]] · ADD TAIGROUP
-- [[command/UDG/20.15.2/LST-TAIGROUP]] · LST TAIGROUP
-- [[command/UDG/20.15.2/RMV-TAIGROUP]] · RMV TAIGROUP
+- [ADD TAIGROUP](command/UDG/20.15.2/ADD-TAIGROUP.md)
+- [LST TAIGROUP](command/UDG/20.15.2/LST-TAIGROUP.md)
+- [RMV TAIGROUP](command/UDG/20.15.2/RMV-TAIGROUP.md)
 
 ## 证据
 

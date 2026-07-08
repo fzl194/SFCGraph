@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GBARD]] · ADD GBARD
-- [[command/UNC/20.15.2/LST-GBARD]] · LST GBARD
-- [[command/UNC/20.15.2/MOD-GBARD]] · MOD GBARD
-- [[command/UNC/20.15.2/RMV-GBARD]] · RMV GBARD
+- [ADD GBARD](command/UNC/20.15.2/ADD-GBARD.md)
+- [LST GBARD](command/UNC/20.15.2/LST-GBARD.md)
+- [MOD GBARD](command/UNC/20.15.2/MOD-GBARD.md)
+- [RMV GBARD](command/UNC/20.15.2/RMV-GBARD.md)
 
 ## 证据
 

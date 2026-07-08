@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MMLTRAN]] · 取消配置（MMLTRAN）
+- [取消配置（MMLTRAN）](configobject/UDG/20.15.2/MMLTRAN.md)
 
 ## 使用实例
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-E2ETRCCFG]] · LST E2ETRCCFG
-- [[command/UNC/20.15.2/SET-E2ETRCCFG]] · SET E2ETRCCFG
+- [LST E2ETRCCFG](command/UNC/20.15.2/LST-E2ETRCCFG.md)
+- [SET E2ETRCCFG](command/UNC/20.15.2/SET-E2ETRCCFG.md)
 
 ## 证据
 

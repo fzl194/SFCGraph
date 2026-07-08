@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-HPATCH]] · DSP HPATCH
-- [[command/UNC/20.15.2/RMV-HPATCH]] · RMV HPATCH
+- [DSP HPATCH](command/UNC/20.15.2/DSP-HPATCH.md)
+- [RMV HPATCH](command/UNC/20.15.2/RMV-HPATCH.md)
 
 ## 证据
 

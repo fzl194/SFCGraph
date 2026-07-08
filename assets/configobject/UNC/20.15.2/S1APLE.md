@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-S1APLE]] · ADD S1APLE
-- [[command/UNC/20.15.2/LST-S1APLE]] · LST S1APLE
-- [[command/UNC/20.15.2/MOD-S1APLE]] · MOD S1APLE
-- [[command/UNC/20.15.2/RMV-S1APLE]] · RMV S1APLE
+- [ADD S1APLE](command/UNC/20.15.2/ADD-S1APLE.md)
+- [LST S1APLE](command/UNC/20.15.2/LST-S1APLE.md)
+- [MOD S1APLE](command/UNC/20.15.2/MOD-S1APLE.md)
+- [RMV S1APLE](command/UNC/20.15.2/RMV-S1APLE.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ACLBASIC6RULECNT]] · DSP ACLBASIC6RULECNT
+- [DSP ACLBASIC6RULECNT](command/UDG/20.15.2/DSP-ACLBASIC6RULECNT.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RPTPROTMPSW]] · LST RPTPROTMPSW
-- [[command/UDG/20.15.2/SET-RPTPROTMPSW]] · SET RPTPROTMPSW
+- [LST RPTPROTMPSW](command/UDG/20.15.2/LST-RPTPROTMPSW.md)
+- [SET RPTPROTMPSW](command/UDG/20.15.2/SET-RPTPROTMPSW.md)
 
 ## 证据
 

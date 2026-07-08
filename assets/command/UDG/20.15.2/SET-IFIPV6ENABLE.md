@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/IFIPV6ENABLE]] · 接口IPv6使能（IFIPV6ENABLE）
+- [接口IPv6使能（IFIPV6ENABLE）](configobject/UDG/20.15.2/IFIPV6ENABLE.md)
 
 ## 关联任务
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPGLBPMPARA]] · LST UPGLBPMPARA
-- [[command/UDG/20.15.2/SET-UPGLBPMPARA]] · SET UPGLBPMPARA
+- [LST UPGLBPMPARA](command/UDG/20.15.2/LST-UPGLBPMPARA.md)
+- [SET UPGLBPMPARA](command/UDG/20.15.2/SET-UPGLBPMPARA.md)
 
 ## 证据
 

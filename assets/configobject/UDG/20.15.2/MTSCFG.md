@@ -32,8 +32,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-MTSCFG]] · LST MTSCFG
-- [[command/UDG/20.15.2/SET-MTSCFG]] · SET MTSCFG
+- [LST MTSCFG](command/UDG/20.15.2/LST-MTSCFG.md)
+- [SET MTSCFG](command/UDG/20.15.2/SET-MTSCFG.md)
 
 ## 证据
 

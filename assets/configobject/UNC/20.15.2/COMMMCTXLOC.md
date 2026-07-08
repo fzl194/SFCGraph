@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-COMMMCTXLOC]] · DSP COMMMCTXLOC
+- [DSP COMMMCTXLOC](command/UNC/20.15.2/DSP-COMMMCTXLOC.md)
 
 ## 证据
 

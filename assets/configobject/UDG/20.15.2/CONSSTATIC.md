@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CONSSTATIC]] · DSP CONSSTATIC
-- [[command/UDG/20.15.2/RTR-CONSSTATIC]] · RTR CONSSTATIC
+- [DSP CONSSTATIC](command/UDG/20.15.2/DSP-CONSSTATIC.md)
+- [RTR CONSSTATIC](command/UDG/20.15.2/RTR-CONSSTATIC.md)
 
 ## 证据
 

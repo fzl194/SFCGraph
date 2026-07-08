@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-LDPLSPMGDSSUB]] · DSP LDPLSPMGDSSUB
+- [DSP LDPLSPMGDSSUB](command/UDG/20.15.2/DSP-LDPLSPMGDSSUB.md)
 
 ## 证据
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/WLRPAESTATE]] · 无线路由PAE使能状态（WLRPAESTATE）
+- [无线路由PAE使能状态（WLRPAESTATE）](configobject/UNC/20.15.2/WLRPAESTATE.md)
 
 ## 使用实例
 

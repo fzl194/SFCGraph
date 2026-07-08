@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNUPRECOVER]] · 指定UPF的APN级别链路故障恢复处理（APNUPRECOVER）
+- [指定UPF的APN级别链路故障恢复处理（APNUPRECOVER）](configobject/UNC/20.15.2/APNUPRECOVER.md)
 
 ## 使用实例
 

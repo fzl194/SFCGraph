@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-DRCOMM]] · ADD DRCOMM
-- [[command/UDG/20.15.2/LST-DRCOMM]] · LST DRCOMM
-- [[command/UDG/20.15.2/MOD-DRCOMM]] · MOD DRCOMM
-- [[command/UDG/20.15.2/RMV-DRCOMM]] · RMV DRCOMM
+- [ADD DRCOMM](command/UDG/20.15.2/ADD-DRCOMM.md)
+- [LST DRCOMM](command/UDG/20.15.2/LST-DRCOMM.md)
+- [MOD DRCOMM](command/UDG/20.15.2/MOD-DRCOMM.md)
+- [RMV DRCOMM](command/UDG/20.15.2/RMV-DRCOMM.md)
 
 ## 证据
 

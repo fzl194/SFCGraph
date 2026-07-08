@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/USRTAIRANGEALL]] · 所有的用户TAI区域（USRTAIRANGEALL）
+- [所有的用户TAI区域（USRTAIRANGEALL）](configobject/UNC/20.15.2/USRTAIRANGEALL.md)
 
 ## 使用实例
 

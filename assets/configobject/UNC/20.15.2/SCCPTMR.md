@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SCCPTMR]] · LST SCCPTMR
-- [[command/UNC/20.15.2/SET-SCCPTMR]] · SET SCCPTMR
+- [LST SCCPTMR](command/UNC/20.15.2/LST-SCCPTMR.md)
+- [SET SCCPTMR](command/UNC/20.15.2/SET-SCCPTMR.md)
 
 ## 证据
 

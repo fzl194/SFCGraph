@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CFSHEALCTRL]] · LST CFSHEALCTRL
-- [[command/UNC/20.15.2/SET-CFSHEALCTRL]] · SET CFSHEALCTRL
+- [LST CFSHEALCTRL](command/UNC/20.15.2/LST-CFSHEALCTRL.md)
+- [SET CFSHEALCTRL](command/UNC/20.15.2/SET-CFSHEALCTRL.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ALMMESSAGERECV]] · DSP ALMMESSAGERECV
+- [DSP ALMMESSAGERECV](command/UDG/20.15.2/DSP-ALMMESSAGERECV.md)
 
 ## 证据
 

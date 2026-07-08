@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGTAIDETECTINFO]] · DSP NGTAIDETECTINFO
+- [DSP NGTAIDETECTINFO](command/UNC/20.15.2/DSP-NGTAIDETECTINFO.md)
 
 ## 证据
 

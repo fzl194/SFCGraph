@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-URRGRPBINDING]] · SET URRGRPBINDING
+- [SET URRGRPBINDING](command/UNC/20.15.2/SET-URRGRPBINDING.md)
 
 ## 证据
 

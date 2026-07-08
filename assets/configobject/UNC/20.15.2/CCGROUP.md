@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CCGROUP]] · ADD CCGROUP
-- [[command/UNC/20.15.2/LST-CCGROUP]] · LST CCGROUP
-- [[command/UNC/20.15.2/RMV-CCGROUP]] · RMV CCGROUP
+- [ADD CCGROUP](command/UNC/20.15.2/ADD-CCGROUP.md)
+- [LST CCGROUP](command/UNC/20.15.2/LST-CCGROUP.md)
+- [RMV CCGROUP](command/UNC/20.15.2/RMV-CCGROUP.md)
 
 ## 证据
 

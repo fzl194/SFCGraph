@@ -24,11 +24,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-VLR]] · ADD VLR
-- [[command/UNC/20.15.2/DSP-VLR]] · DSP VLR
-- [[command/UNC/20.15.2/LST-VLR]] · LST VLR
-- [[command/UNC/20.15.2/MOD-VLR]] · MOD VLR
-- [[command/UNC/20.15.2/RMV-VLR]] · RMV VLR
+- [ADD VLR](command/UNC/20.15.2/ADD-VLR.md)
+- [DSP VLR](command/UNC/20.15.2/DSP-VLR.md)
+- [LST VLR](command/UNC/20.15.2/LST-VLR.md)
+- [MOD VLR](command/UNC/20.15.2/MOD-VLR.md)
+- [RMV VLR](command/UNC/20.15.2/RMV-VLR.md)
 
 ## 证据
 

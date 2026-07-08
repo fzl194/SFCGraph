@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RTR-SFEPKTSTATS]] · RTR SFEPKTSTATS
+- [RTR SFEPKTSTATS](command/UNC/20.15.2/RTR-SFEPKTSTATS.md)
 
 ## 证据
 

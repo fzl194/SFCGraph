@@ -38,7 +38,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/POD]] · POD停止（POD）
+- [POD停止（POD）](configobject/UNC/20.15.2/POD.md)
 
 ## 使用实例
 

@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-PCFSSCOPEBINDALL]] · RMV PCFSSCOPEBINDALL
+- [RMV PCFSSCOPEBINDALL](command/UNC/20.15.2/RMV-PCFSSCOPEBINDALL.md)
 
 ## 证据
 

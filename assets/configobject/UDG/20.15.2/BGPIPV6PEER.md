@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RBL-BGPIPV6PEER]] · RBL BGPIPV6PEER
-- [[command/UDG/20.15.2/SYN-BGPIPV6PEER]] · SYN BGPIPV6PEER
+- [RBL BGPIPV6PEER](command/UDG/20.15.2/RBL-BGPIPV6PEER.md)
+- [SYN BGPIPV6PEER](command/UDG/20.15.2/SYN-BGPIPV6PEER.md)
 
 ## 证据
 

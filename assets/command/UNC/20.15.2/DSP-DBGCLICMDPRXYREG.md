@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DBGCLICMDPRXYREG]] · 通过命令代理可执行命令行调试命令的白名单（DBGCLICMDPRXYREG）
+- [通过命令代理可执行命令行调试命令的白名单（DBGCLICMDPRXYREG）](configobject/UNC/20.15.2/DBGCLICMDPRXYREG.md)
 
 ## 使用实例
 

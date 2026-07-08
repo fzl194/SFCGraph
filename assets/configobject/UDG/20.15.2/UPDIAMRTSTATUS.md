@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-UPDIAMRTSTATUS]] · DSP UPDIAMRTSTATUS
+- [DSP UPDIAMRTSTATUS](command/UDG/20.15.2/DSP-UPDIAMRTSTATUS.md)
 
 ## 证据
 

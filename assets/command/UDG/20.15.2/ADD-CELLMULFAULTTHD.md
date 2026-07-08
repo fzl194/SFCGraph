@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CELLMULFAULTTHD]] · 进程频繁故障监控参数（CELLMULFAULTTHD）
+- [进程频繁故障监控参数（CELLMULFAULTTHD）](configobject/UDG/20.15.2/CELLMULFAULTTHD.md)
 
 ## 使用实例
 

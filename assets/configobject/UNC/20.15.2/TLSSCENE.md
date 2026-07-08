@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TLSSCENE]] · ADD TLSSCENE
-- [[command/UNC/20.15.2/LST-TLSSCENE]] · LST TLSSCENE
-- [[command/UNC/20.15.2/MOD-TLSSCENE]] · MOD TLSSCENE
-- [[command/UNC/20.15.2/RMV-TLSSCENE]] · RMV TLSSCENE
+- [ADD TLSSCENE](command/UNC/20.15.2/ADD-TLSSCENE.md)
+- [LST TLSSCENE](command/UNC/20.15.2/LST-TLSSCENE.md)
+- [MOD TLSSCENE](command/UNC/20.15.2/MOD-TLSSCENE.md)
+- [RMV TLSSCENE](command/UNC/20.15.2/RMV-TLSSCENE.md)
 
 ## 证据
 

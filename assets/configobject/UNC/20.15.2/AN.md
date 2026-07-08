@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RST-AN]] · RST AN
+- [RST AN](command/UNC/20.15.2/RST-AN.md)
 
 ## 证据
 

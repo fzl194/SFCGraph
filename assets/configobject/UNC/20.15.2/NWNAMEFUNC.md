@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NWNAMEFUNC]] · LST NWNAMEFUNC
-- [[command/UNC/20.15.2/SET-NWNAMEFUNC]] · SET NWNAMEFUNC
+- [LST NWNAMEFUNC](command/UNC/20.15.2/LST-NWNAMEFUNC.md)
+- [SET NWNAMEFUNC](command/UNC/20.15.2/SET-NWNAMEFUNC.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IPSECCOMPONENT]] · DSP IPSECCOMPONENT
+- [DSP IPSECCOMPONENT](command/UNC/20.15.2/DSP-IPSECCOMPONENT.md)
 
 ## 证据
 

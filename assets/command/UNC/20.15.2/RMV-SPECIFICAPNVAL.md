@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SPECIFICAPNVAL]] · 用户APN与消息交互使用APN的映射关系（SPECIFICAPNVAL）
+- [用户APN与消息交互使用APN的映射关系（SPECIFICAPNVAL）](configobject/UNC/20.15.2/SPECIFICAPNVAL.md)
 
 ## 使用实例
 

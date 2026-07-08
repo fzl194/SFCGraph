@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGIMSVOPS]] · LST NGIMSVOPS
-- [[command/UNC/20.15.2/SET-NGIMSVOPS]] · SET NGIMSVOPS
+- [LST NGIMSVOPS](command/UNC/20.15.2/LST-NGIMSVOPS.md)
+- [SET NGIMSVOPS](command/UNC/20.15.2/SET-NGIMSVOPS.md)
 
 ## 证据
 

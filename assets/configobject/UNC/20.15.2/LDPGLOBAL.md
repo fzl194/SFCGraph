@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LDPGLOBAL]] · LST LDPGLOBAL
-- [[command/UNC/20.15.2/SET-LDPGLOBAL]] · SET LDPGLOBAL
+- [LST LDPGLOBAL](command/UNC/20.15.2/LST-LDPGLOBAL.md)
+- [SET LDPGLOBAL](command/UNC/20.15.2/SET-LDPGLOBAL.md)
 
 ## 证据
 

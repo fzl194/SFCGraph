@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VLROPC]] · VLR信令点（VLROPC）
+- [VLR信令点（VLROPC）](configobject/UNC/20.15.2/VLROPC.md)
 
 ## 使用实例
 

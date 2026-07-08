@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AUTOSCALINGIPREACH]] · IP可达性检测自动化配置模板（AUTOSCALINGIPREACH）
+- [IP可达性检测自动化配置模板（AUTOSCALINGIPREACH）](configobject/UNC/20.15.2/AUTOSCALINGIPREACH.md)
 
 ## 使用实例
 

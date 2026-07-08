@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ATTACKDEFENDSTC]] · 攻击防范统计信息（ATTACKDEFENDSTC）
+- [攻击防范统计信息（ATTACKDEFENDSTC）](configobject/UNC/20.15.2/ATTACKDEFENDSTC.md)
 
 ## 使用实例
 

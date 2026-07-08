@@ -17,15 +17,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-OSPF]] · ADD OSPF
-- [[command/UDG/20.15.2/LST-OSPF]] · LST OSPF
-- [[command/UDG/20.15.2/MOD-OSPF]] · MOD OSPF
-- [[command/UDG/20.15.2/RMV-OSPF]] · RMV OSPF
-- [[command/UDG/20.15.2/RST-OSPF]] · RST OSPF
+- [ADD OSPF](command/UDG/20.15.2/ADD-OSPF.md)
+- [LST OSPF](command/UDG/20.15.2/LST-OSPF.md)
+- [MOD OSPF](command/UDG/20.15.2/MOD-OSPF.md)
+- [RMV OSPF](command/UDG/20.15.2/RMV-OSPF.md)
+- [RST OSPF](command/UDG/20.15.2/RST-OSPF.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/L3VPNINST]] · L3VPNINST
+- [L3VPNINST](configobject/UDG/20.15.2/L3VPNINST.md)
 
 ## 证据
 

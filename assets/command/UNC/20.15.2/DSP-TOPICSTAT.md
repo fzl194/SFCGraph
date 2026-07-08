@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TOPICSTAT]] · topic状态（TOPICSTAT）
+- [topic状态（TOPICSTAT）](configobject/UNC/20.15.2/TOPICSTAT.md)
 
 ## 使用实例
 

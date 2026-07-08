@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MCASTPAESOURCE]] · DSP MCASTPAESOURCE
+- [DSP MCASTPAESOURCE](command/UNC/20.15.2/DSP-MCASTPAESOURCE.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGDNSLE]] · ADD NGDNSLE
-- [[command/UNC/20.15.2/LST-NGDNSLE]] · LST NGDNSLE
-- [[command/UNC/20.15.2/RMV-NGDNSLE]] · RMV NGDNSLE
+- [ADD NGDNSLE](command/UNC/20.15.2/ADD-NGDNSLE.md)
+- [LST NGDNSLE](command/UNC/20.15.2/LST-NGDNSLE.md)
+- [RMV NGDNSLE](command/UNC/20.15.2/RMV-NGDNSLE.md)
 
 ## 证据
 

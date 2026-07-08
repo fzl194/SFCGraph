@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSSCHTHREADHEADM]] · DSP MSSSCHTHREADHEADM
+- [DSP MSSSCHTHREADHEADM](command/UNC/20.15.2/DSP-MSSSCHTHREADHEADM.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NGLANMACEXINFO]] · DSP NGLANMACEXINFO
+- [DSP NGLANMACEXINFO](command/UDG/20.15.2/DSP-NGLANMACEXINFO.md)
 
 ## 证据
 

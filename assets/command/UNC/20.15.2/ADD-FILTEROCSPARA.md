@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/FILTEROCSPARA]] · 需要过滤掉的OCS实例信息（FILTEROCSPARA）
+- [需要过滤掉的OCS实例信息（FILTEROCSPARA）](configobject/UNC/20.15.2/FILTEROCSPARA.md)
 
 ## 使用实例
 

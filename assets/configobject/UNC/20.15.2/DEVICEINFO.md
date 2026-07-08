@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DEVICEINFO]] · LST DEVICEINFO
+- [LST DEVICEINFO](command/UNC/20.15.2/LST-DEVICEINFO.md)
 
 ## 证据
 

@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/HAFFUNC]] · HAF服务内部功能的参数（HAFFUNC）
+- [HAF服务内部功能的参数（HAFFUNC）](configobject/UDG/20.15.2/HAFFUNC.md)
 
 ## 使用实例
 

@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SFESWMSGSTC]] · DSP SFESWMSGSTC
-- [[command/UNC/20.15.2/RTR-SFESWMSGSTC]] · RTR SFESWMSGSTC
+- [DSP SFESWMSGSTC](command/UNC/20.15.2/DSP-SFESWMSGSTC.md)
+- [RTR SFESWMSGSTC](command/UNC/20.15.2/RTR-SFESWMSGSTC.md)
 
 ## 证据
 

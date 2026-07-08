@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SWAP-DR]] · SWAP DR
+- [SWAP DR](command/UNC/20.15.2/SWAP-DR.md)
 
 ## 证据
 

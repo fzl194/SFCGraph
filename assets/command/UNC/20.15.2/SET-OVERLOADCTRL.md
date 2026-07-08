@@ -69,7 +69,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OVERLOADCTRL]] · 过载控制的配置信息（OVERLOADCTRL）
+- [过载控制的配置信息（OVERLOADCTRL）](configobject/UNC/20.15.2/OVERLOADCTRL.md)
 
 ## 使用实例
 

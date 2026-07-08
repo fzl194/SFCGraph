@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ACSDATA]] · ACS管理服务数据（ACSDATA）
+- [ACS管理服务数据（ACSDATA）](configobject/UNC/20.15.2/ACSDATA.md)
 
 ## 使用实例
 

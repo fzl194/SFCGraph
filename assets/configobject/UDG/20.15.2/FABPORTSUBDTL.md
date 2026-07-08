@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-FABPORTSUBDTL]] · DSP FABPORTSUBDTL
+- [DSP FABPORTSUBDTL](command/UDG/20.15.2/DSP-FABPORTSUBDTL.md)
 
 ## 证据
 

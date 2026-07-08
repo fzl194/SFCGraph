@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LDPLSPMGLSP]] · DSP LDPLSPMGLSP
+- [DSP LDPLSPMGLSP](command/UNC/20.15.2/DSP-LDPLSPMGLSP.md)
 
 ## 证据
 

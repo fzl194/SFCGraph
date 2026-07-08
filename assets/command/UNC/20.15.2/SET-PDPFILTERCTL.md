@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PDPFILTERCTL]] · PDP过滤功能参数（PDPFILTERCTL）
+- [PDP过滤功能参数（PDPFILTERCTL）](configobject/UNC/20.15.2/PDPFILTERCTL.md)
 
 ## 使用实例
 

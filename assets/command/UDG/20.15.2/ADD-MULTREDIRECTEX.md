@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MULTREDIRECTEX]] · 扩展的多级重定向密码（MULTREDIRECTEX）
+- [扩展的多级重定向密码（MULTREDIRECTEX）](configobject/UDG/20.15.2/MULTREDIRECTEX.md)
 
 ## 使用实例
 

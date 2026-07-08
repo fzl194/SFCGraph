@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OSPFLDPSYNCSTATE]] · DSP OSPFLDPSYNCSTATE
+- [DSP OSPFLDPSYNCSTATE](command/UNC/20.15.2/DSP-OSPFLDPSYNCSTATE.md)
 
 ## 证据
 

@@ -28,10 +28,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UPCMPT]] · ADD UPCMPT
-- [[command/UNC/20.15.2/LST-UPCMPT]] · LST UPCMPT
-- [[command/UNC/20.15.2/MOD-UPCMPT]] · MOD UPCMPT
-- [[command/UNC/20.15.2/RMV-UPCMPT]] · RMV UPCMPT
+- [ADD UPCMPT](command/UNC/20.15.2/ADD-UPCMPT.md)
+- [LST UPCMPT](command/UNC/20.15.2/LST-UPCMPT.md)
+- [MOD UPCMPT](command/UNC/20.15.2/MOD-UPCMPT.md)
+- [RMV UPCMPT](command/UNC/20.15.2/RMV-UPCMPT.md)
 
 ## 证据
 

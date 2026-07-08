@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FETMFLOW]] · LST FETMFLOW
-- [[command/UDG/20.15.2/SET-FETMFLOW]] · SET FETMFLOW
+- [LST FETMFLOW](command/UDG/20.15.2/LST-FETMFLOW.md)
+- [SET FETMFLOW](command/UDG/20.15.2/SET-FETMFLOW.md)
 
 ## 证据
 

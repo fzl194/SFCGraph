@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LOWPRIAPNFC]] · LST LOWPRIAPNFC
-- [[command/UNC/20.15.2/SET-LOWPRIAPNFC]] · SET LOWPRIAPNFC
+- [LST LOWPRIAPNFC](command/UNC/20.15.2/LST-LOWPRIAPNFC.md)
+- [SET LOWPRIAPNFC](command/UNC/20.15.2/SET-LOWPRIAPNFC.md)
 
 ## 证据
 

@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NCSNTFSUB]] · 所有订阅通知事件信息（NCSNTFSUB）
+- [所有订阅通知事件信息（NCSNTFSUB）](configobject/UDG/20.15.2/NCSNTFSUB.md)
 
 ## 使用实例
 

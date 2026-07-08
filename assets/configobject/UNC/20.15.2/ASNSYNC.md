@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-ASNSYNC]] · ACT ASNSYNC
+- [ACT ASNSYNC](command/UNC/20.15.2/ACT-ASNSYNC.md)
 
 ## 证据
 

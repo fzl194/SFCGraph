@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-SFTDMCR]] · STR SFTDMCR
+- [STR SFTDMCR](command/UNC/20.15.2/STR-SFTDMCR.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-IPSOCKET]] · DSP IPSOCKET
+- [DSP IPSOCKET](command/UDG/20.15.2/DSP-IPSOCKET.md)
 
 ## 证据
 

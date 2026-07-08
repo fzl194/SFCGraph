@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AREADNS]] · 位置区域DNS域名（AREADNS）
+- [位置区域DNS域名（AREADNS）](configobject/UNC/20.15.2/AREADNS.md)
 
 ## 使用实例
 

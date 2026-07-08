@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-IPSAGING]] · LST IPSAGING
-- [[command/UDG/20.15.2/MOD-IPSAGING]] · MOD IPSAGING
+- [LST IPSAGING](command/UDG/20.15.2/LST-IPSAGING.md)
+- [MOD IPSAGING](command/UDG/20.15.2/MOD-IPSAGING.md)
 
 ## 证据
 

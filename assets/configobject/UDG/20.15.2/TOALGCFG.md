@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TOALGCFG]] · LST TOALGCFG
-- [[command/UDG/20.15.2/SET-TOALGCFG]] · SET TOALGCFG
+- [LST TOALGCFG](command/UDG/20.15.2/LST-TOALGCFG.md)
+- [SET TOALGCFG](command/UDG/20.15.2/SET-TOALGCFG.md)
 
 ## 证据
 

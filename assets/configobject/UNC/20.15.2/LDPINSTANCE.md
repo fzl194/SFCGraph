@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LDPINSTANCE]] · LST LDPINSTANCE
-- [[command/UNC/20.15.2/MOD-LDPINSTANCE]] · MOD LDPINSTANCE
+- [LST LDPINSTANCE](command/UNC/20.15.2/LST-LDPINSTANCE.md)
+- [MOD LDPINSTANCE](command/UNC/20.15.2/MOD-LDPINSTANCE.md)
 
 ## 证据
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/AUTOSCALINGBGPMSPEER]] · BGP自动化多源邻居配置模板（AUTOSCALINGBGPMSPEER）
+- [BGP自动化多源邻居配置模板（AUTOSCALINGBGPMSPEER）](configobject/UDG/20.15.2/AUTOSCALINGBGPMSPEER.md)
 
 ## 使用实例
 

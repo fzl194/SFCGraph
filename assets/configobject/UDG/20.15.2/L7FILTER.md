@@ -22,14 +22,14 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-L7FILTER]] · ADD L7FILTER
-- [[command/UDG/20.15.2/LST-L7FILTER]] · LST L7FILTER
-- [[command/UDG/20.15.2/MOD-L7FILTER]] · MOD L7FILTER
-- [[command/UDG/20.15.2/RMV-L7FILTER]] · RMV L7FILTER
+- [ADD L7FILTER](command/UDG/20.15.2/ADD-L7FILTER.md)
+- [LST L7FILTER](command/UDG/20.15.2/LST-L7FILTER.md)
+- [MOD L7FILTER](command/UDG/20.15.2/MOD-L7FILTER.md)
+- [RMV L7FILTER](command/UDG/20.15.2/RMV-L7FILTER.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/PROTBINDFLOWF]] · PROTBINDFLOWF
+- [PROTBINDFLOWF](configobject/UDG/20.15.2/PROTBINDFLOWF.md)
 
 ## 证据
 

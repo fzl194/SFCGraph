@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IPGP]] · ADD IPGP
-- [[command/UNC/20.15.2/LST-IPGP]] · LST IPGP
-- [[command/UNC/20.15.2/MOD-IPGP]] · MOD IPGP
-- [[command/UNC/20.15.2/RMV-IPGP]] · RMV IPGP
+- [ADD IPGP](command/UNC/20.15.2/ADD-IPGP.md)
+- [LST IPGP](command/UNC/20.15.2/LST-IPGP.md)
+- [MOD IPGP](command/UNC/20.15.2/MOD-IPGP.md)
+- [RMV IPGP](command/UNC/20.15.2/RMV-IPGP.md)
 
 ## 证据
 

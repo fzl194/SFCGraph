@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DEACTIVERATE]] · 去激活用户承载的速率（DEACTIVERATE）
+- [去激活用户承载的速率（DEACTIVERATE）](configobject/UNC/20.15.2/DEACTIVERATE.md)
 
 ## 使用实例
 

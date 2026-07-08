@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/UPD-COMPSTATUS]] · UPD COMPSTATUS
+- [UPD COMPSTATUS](command/UDG/20.15.2/UPD-COMPSTATUS.md)
 
 ## 证据
 

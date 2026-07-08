@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AMFSETID]] · ADD AMFSETID
-- [[command/UNC/20.15.2/LST-AMFSETID]] · LST AMFSETID
-- [[command/UNC/20.15.2/MOD-AMFSETID]] · MOD AMFSETID
-- [[command/UNC/20.15.2/RMV-AMFSETID]] · RMV AMFSETID
+- [ADD AMFSETID](command/UNC/20.15.2/ADD-AMFSETID.md)
+- [LST AMFSETID](command/UNC/20.15.2/LST-AMFSETID.md)
+- [MOD AMFSETID](command/UNC/20.15.2/MOD-AMFSETID.md)
+- [RMV AMFSETID](command/UNC/20.15.2/RMV-AMFSETID.md)
 
 ## 证据
 

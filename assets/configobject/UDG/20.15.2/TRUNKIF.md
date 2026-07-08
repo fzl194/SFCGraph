@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TRUNKIF]] · LST TRUNKIF
-- [[command/UDG/20.15.2/MOD-TRUNKIF]] · MOD TRUNKIF
+- [LST TRUNKIF](command/UDG/20.15.2/LST-TRUNKIF.md)
+- [MOD TRUNKIF](command/UDG/20.15.2/MOD-TRUNKIF.md)
 
 ## 证据
 

@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PFCPSESSIONINFO]] · DSP PFCPSESSIONINFO
+- [DSP PFCPSESSIONINFO](command/UNC/20.15.2/DSP-PFCPSESSIONINFO.md)
 
 ## 证据
 

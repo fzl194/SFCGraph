@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ISMFDNAI]] · ADD ISMFDNAI
-- [[command/UNC/20.15.2/LST-ISMFDNAI]] · LST ISMFDNAI
-- [[command/UNC/20.15.2/MOD-ISMFDNAI]] · MOD ISMFDNAI
-- [[command/UNC/20.15.2/RMV-ISMFDNAI]] · RMV ISMFDNAI
+- [ADD ISMFDNAI](command/UNC/20.15.2/ADD-ISMFDNAI.md)
+- [LST ISMFDNAI](command/UNC/20.15.2/LST-ISMFDNAI.md)
+- [MOD ISMFDNAI](command/UNC/20.15.2/MOD-ISMFDNAI.md)
+- [RMV ISMFDNAI](command/UNC/20.15.2/RMV-ISMFDNAI.md)
 
 ## 证据
 

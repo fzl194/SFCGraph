@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HSSBYPASS]] · LST HSSBYPASS
-- [[command/UNC/20.15.2/SET-HSSBYPASS]] · SET HSSBYPASS
+- [LST HSSBYPASS](command/UNC/20.15.2/LST-HSSBYPASS.md)
+- [SET HSSBYPASS](command/UNC/20.15.2/SET-HSSBYPASS.md)
 
 ## 证据
 

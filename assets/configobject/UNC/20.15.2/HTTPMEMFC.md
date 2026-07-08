@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTTPMEMFC]] · LST HTTPMEMFC
-- [[command/UNC/20.15.2/SET-HTTPMEMFC]] · SET HTTPMEMFC
+- [LST HTTPMEMFC](command/UNC/20.15.2/LST-HTTPMEMFC.md)
+- [SET HTTPMEMFC](command/UNC/20.15.2/SET-HTTPMEMFC.md)
 
 ## 证据
 

@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-COMBASESUM]] · DSP COMBASESUM
+- [DSP COMBASESUM](command/UDG/20.15.2/DSP-COMBASESUM.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-APNSESSIONSTATS]] · DSP APNSESSIONSTATS
+- [DSP APNSESSIONSTATS](command/UDG/20.15.2/DSP-APNSESSIONSTATS.md)
 
 ## 证据
 

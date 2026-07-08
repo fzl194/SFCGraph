@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OSPFV3CUMULATIVE]] · DSP OSPFV3CUMULATIVE
+- [DSP OSPFV3CUMULATIVE](command/UNC/20.15.2/DSP-OSPFV3CUMULATIVE.md)
 
 ## 证据
 

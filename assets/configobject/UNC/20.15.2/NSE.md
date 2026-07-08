@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NSE]] · ADD NSE
-- [[command/UNC/20.15.2/DSP-NSE]] · DSP NSE
-- [[command/UNC/20.15.2/LST-NSE]] · LST NSE
-- [[command/UNC/20.15.2/MOD-NSE]] · MOD NSE
-- [[command/UNC/20.15.2/RMV-NSE]] · RMV NSE
+- [ADD NSE](command/UNC/20.15.2/ADD-NSE.md)
+- [DSP NSE](command/UNC/20.15.2/DSP-NSE.md)
+- [LST NSE](command/UNC/20.15.2/LST-NSE.md)
+- [MOD NSE](command/UNC/20.15.2/MOD-NSE.md)
+- [RMV NSE](command/UNC/20.15.2/RMV-NSE.md)
 
 ## 证据
 

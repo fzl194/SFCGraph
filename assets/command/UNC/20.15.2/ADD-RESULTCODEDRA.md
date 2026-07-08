@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RESULTCODEDRA]] · DRA返回码控制（RESULTCODEDRA）
+- [DRA返回码控制（RESULTCODEDRA）](configobject/UNC/20.15.2/RESULTCODEDRA.md)
 
 ## 使用实例
 

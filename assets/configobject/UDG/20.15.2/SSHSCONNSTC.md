@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SSHSCONNSTC]] · DSP SSHSCONNSTC
+- [DSP SSHSCONNSTC](command/UDG/20.15.2/DSP-SSHSCONNSTC.md)
 
 ## 证据
 

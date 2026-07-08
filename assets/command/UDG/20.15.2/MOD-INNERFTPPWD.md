@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/INNERFTPPWD]] · 内部FTPS账号密码（INNERFTPPWD）
+- [内部FTPS账号密码（INNERFTPPWD）](configobject/UDG/20.15.2/INNERFTPPWD.md)
 
 ## 使用实例
 

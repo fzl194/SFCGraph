@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PLUGINFO]] · LST PLUGINFO
+- [LST PLUGINFO](command/UDG/20.15.2/LST-PLUGINFO.md)
 
 ## 证据
 

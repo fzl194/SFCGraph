@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RTMPERFCNTGB]] · DSP RTMPERFCNTGB
+- [DSP RTMPERFCNTGB](command/UNC/20.15.2/DSP-RTMPERFCNTGB.md)
 
 ## 证据
 

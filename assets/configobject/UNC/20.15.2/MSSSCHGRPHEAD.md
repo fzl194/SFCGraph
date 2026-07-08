@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSSCHGRPHEAD]] · DSP MSSSCHGRPHEAD
+- [DSP MSSSCHGRPHEAD](command/UNC/20.15.2/DSP-MSSSCHGRPHEAD.md)
 
 ## 证据
 

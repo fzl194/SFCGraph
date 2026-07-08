@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SGWPOOL]] · ADD SGWPOOL
-- [[command/UNC/20.15.2/LST-SGWPOOL]] · LST SGWPOOL
-- [[command/UNC/20.15.2/RMV-SGWPOOL]] · RMV SGWPOOL
+- [ADD SGWPOOL](command/UNC/20.15.2/ADD-SGWPOOL.md)
+- [LST SGWPOOL](command/UNC/20.15.2/LST-SGWPOOL.md)
+- [RMV SGWPOOL](command/UNC/20.15.2/RMV-SGWPOOL.md)
 
 ## 证据
 

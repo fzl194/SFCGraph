@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNAREABNDN2TAI]] · APN相关服务区域绑定的5G TAI范围（APNAREABNDN2TAI）
+- [APN相关服务区域绑定的5G TAI范围（APNAREABNDN2TAI）](configobject/UNC/20.15.2/APNAREABNDN2TAI.md)
 
 ## 使用实例
 

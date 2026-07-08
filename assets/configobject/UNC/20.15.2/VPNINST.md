@@ -27,9 +27,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-VPNINST]] · ADD VPNINST
-- [[command/UNC/20.15.2/LST-VPNINST]] · LST VPNINST
-- [[command/UNC/20.15.2/RMV-VPNINST]] · RMV VPNINST
+- [ADD VPNINST](command/UNC/20.15.2/ADD-VPNINST.md)
+- [LST VPNINST](command/UNC/20.15.2/LST-VPNINST.md)
+- [RMV VPNINST](command/UNC/20.15.2/RMV-VPNINST.md)
 
 ## 证据
 

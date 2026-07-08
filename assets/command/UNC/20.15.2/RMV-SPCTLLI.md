@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SPCTLLI]] · 特殊随机TLLI配置（SPCTLLI）
+- [特殊随机TLLI配置（SPCTLLI）](configobject/UNC/20.15.2/SPCTLLI.md)
 
 ## 使用实例
 

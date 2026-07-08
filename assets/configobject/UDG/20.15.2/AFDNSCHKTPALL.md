@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RMV-AFDNSCHKTPALL]] · RMV AFDNSCHKTPALL
+- [RMV AFDNSCHKTPALL](command/UDG/20.15.2/RMV-AFDNSCHKTPALL.md)
 
 ## 证据
 

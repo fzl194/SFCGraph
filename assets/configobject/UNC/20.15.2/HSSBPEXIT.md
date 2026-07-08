@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STP-HSSBPEXIT]] · STP HSSBPEXIT
-- [[command/UNC/20.15.2/STR-HSSBPEXIT]] · STR HSSBPEXIT
+- [STP HSSBPEXIT](command/UNC/20.15.2/STP-HSSBPEXIT.md)
+- [STR HSSBPEXIT](command/UNC/20.15.2/STR-HSSBPEXIT.md)
 
 ## 证据
 

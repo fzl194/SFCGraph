@@ -43,7 +43,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MASKALM]] · 被屏蔽告警（MASKALM）
+- [被屏蔽告警（MASKALM）](configobject/UNC/20.15.2/MASKALM.md)
 
 ## 使用实例
 

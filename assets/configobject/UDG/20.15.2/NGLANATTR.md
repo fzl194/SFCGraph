@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NGLANATTR]] · LST NGLANATTR
-- [[command/UDG/20.15.2/SET-NGLANATTR]] · SET NGLANATTR
+- [LST NGLANATTR](command/UDG/20.15.2/LST-NGLANATTR.md)
+- [SET NGLANATTR](command/UDG/20.15.2/SET-NGLANATTR.md)
 
 ## 证据
 

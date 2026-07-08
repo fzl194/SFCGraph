@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPDATECTRLCFG]] · LST UPDATECTRLCFG
+- [LST UPDATECTRLCFG](command/UDG/20.15.2/LST-UPDATECTRLCFG.md)
 
 ## 证据
 

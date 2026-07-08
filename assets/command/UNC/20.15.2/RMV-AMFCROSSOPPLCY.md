@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AMFCROSSOPPLCY]] · AMF跨运营商交互策略（AMFCROSSOPPLCY）
+- [AMF跨运营商交互策略（AMFCROSSOPPLCY）](configobject/UNC/20.15.2/AMFCROSSOPPLCY.md)
 
 ## 使用实例
 

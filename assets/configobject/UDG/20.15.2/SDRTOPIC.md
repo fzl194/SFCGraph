@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SDRTOPIC]] · DSP SDRTOPIC
+- [DSP SDRTOPIC](command/UDG/20.15.2/DSP-SDRTOPIC.md)
 
 ## 证据
 

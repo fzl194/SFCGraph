@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ROUTE]] · DSP ROUTE
+- [DSP ROUTE](command/UNC/20.15.2/DSP-ROUTE.md)
 
 ## 证据
 

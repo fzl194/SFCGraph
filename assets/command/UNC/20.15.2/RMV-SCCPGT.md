@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SCCPGT]] · SCCP全局翻译码（SCCPGT）
+- [SCCP全局翻译码（SCCPGT）](configobject/UNC/20.15.2/SCCPGT.md)
 
 ## 使用实例
 

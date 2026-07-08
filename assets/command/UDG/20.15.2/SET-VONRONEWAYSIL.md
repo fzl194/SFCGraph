@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/VONRONEWAYSIL]] · 单通检测的系统初始设置值（VONRONEWAYSIL）
+- [单通检测的系统初始设置值（VONRONEWAYSIL）](configobject/UDG/20.15.2/VONRONEWAYSIL.md)
 
 ## 使用实例
 

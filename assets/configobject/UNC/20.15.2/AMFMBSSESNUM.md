@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-AMFMBSSESNUM]] · DSP AMFMBSSESNUM
+- [DSP AMFMBSSESNUM](command/UNC/20.15.2/DSP-AMFMBSSESNUM.md)
 
 ## 证据
 

@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AMFSBIINFCTRL]] · AMF的SBI接口控制参数（AMFSBIINFCTRL）
+- [AMF的SBI接口控制参数（AMFSBIINFCTRL）](configobject/UNC/20.15.2/AMFSBIINFCTRL.md)
 
 ## 使用实例
 

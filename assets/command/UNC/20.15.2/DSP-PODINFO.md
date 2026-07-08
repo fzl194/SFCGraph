@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PODINFO]] · 已部署的Pod实例信息（PODINFO）
+- [已部署的Pod实例信息（PODINFO）](configobject/UNC/20.15.2/PODINFO.md)
 
 ## 使用实例
 

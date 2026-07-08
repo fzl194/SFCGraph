@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-GREMSGSTATINFO]] · DSP GREMSGSTATINFO
+- [DSP GREMSGSTATINFO](command/UDG/20.15.2/DSP-GREMSGSTATINFO.md)
 
 ## 证据
 

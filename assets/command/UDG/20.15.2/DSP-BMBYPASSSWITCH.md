@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BMBYPASSSWITCH]] · 裸机节点自动进入BYPASS开关（BMBYPASSSWITCH）
+- [裸机节点自动进入BYPASS开关（BMBYPASSSWITCH）](configobject/UDG/20.15.2/BMBYPASSSWITCH.md)
 
 ## 使用实例
 

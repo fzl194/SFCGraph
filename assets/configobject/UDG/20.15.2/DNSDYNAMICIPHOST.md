@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DNSDYNAMICIPHOST]] · DSP DNSDYNAMICIPHOST
+- [DSP DNSDYNAMICIPHOST](command/UDG/20.15.2/DSP-DNSDYNAMICIPHOST.md)
 
 ## 证据
 

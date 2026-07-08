@@ -30,8 +30,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ASRFUNC]] · LST ASRFUNC
-- [[command/UNC/20.15.2/SET-ASRFUNC]] · SET ASRFUNC
+- [LST ASRFUNC](command/UNC/20.15.2/LST-ASRFUNC.md)
+- [SET ASRFUNC](command/UNC/20.15.2/SET-ASRFUNC.md)
 
 ## 证据
 

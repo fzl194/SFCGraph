@@ -57,10 +57,10 @@ CG支持定制稽核文件名，通过配置可以在话单稽核文件名中体
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CDRAUDIT]] · ADD CDRAUDIT
-- [[command/UNC/20.15.2/LST-CDRAUDIT]] · LST CDRAUDIT
-- [[command/UNC/20.15.2/MOD-CDRAUDIT]] · MOD CDRAUDIT
-- [[command/UNC/20.15.2/RMV-CDRAUDIT]] · RMV CDRAUDIT
+- [ADD CDRAUDIT](command/UNC/20.15.2/ADD-CDRAUDIT.md)
+- [LST CDRAUDIT](command/UNC/20.15.2/LST-CDRAUDIT.md)
+- [MOD CDRAUDIT](command/UNC/20.15.2/MOD-CDRAUDIT.md)
+- [RMV CDRAUDIT](command/UNC/20.15.2/RMV-CDRAUDIT.md)
 
 ## 证据
 

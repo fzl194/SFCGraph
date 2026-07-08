@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DRINFO]] · DSP DRINFO
+- [DSP DRINFO](command/UDG/20.15.2/DSP-DRINFO.md)
 
 ## 证据
 

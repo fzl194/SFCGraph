@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MODULE]] · ADD MODULE
-- [[command/UNC/20.15.2/LST-MODULE]] · LST MODULE
-- [[command/UNC/20.15.2/RMV-MODULE]] · RMV MODULE
+- [ADD MODULE](command/UNC/20.15.2/ADD-MODULE.md)
+- [LST MODULE](command/UNC/20.15.2/LST-MODULE.md)
+- [RMV MODULE](command/UNC/20.15.2/RMV-MODULE.md)
 
 ## 证据
 

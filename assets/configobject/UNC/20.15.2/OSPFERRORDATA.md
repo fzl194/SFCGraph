@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OSPFERRORDATA]] · DSP OSPFERRORDATA
+- [DSP OSPFERRORDATA](command/UNC/20.15.2/DSP-OSPFERRORDATA.md)
 
 ## 证据
 

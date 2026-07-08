@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNSGLPASS]] · LST APNSGLPASS
-- [[command/UDG/20.15.2/SET-APNSGLPASS]] · SET APNSGLPASS
+- [LST APNSGLPASS](command/UDG/20.15.2/LST-APNSGLPASS.md)
+- [SET APNSGLPASS](command/UDG/20.15.2/SET-APNSGLPASS.md)
 
 ## 证据
 

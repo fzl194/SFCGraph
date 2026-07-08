@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MEMORYINSPECT]] · DSP MEMORYINSPECT
+- [DSP MEMORYINSPECT](command/UDG/20.15.2/DSP-MEMORYINSPECT.md)
 
 ## 证据
 

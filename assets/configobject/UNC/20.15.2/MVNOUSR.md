@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MVNOUSR]] · DSP MVNOUSR
+- [DSP MVNOUSR](command/UNC/20.15.2/DSP-MVNOUSR.md)
 
 ## 证据
 

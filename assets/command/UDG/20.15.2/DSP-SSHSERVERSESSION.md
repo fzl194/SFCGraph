@@ -39,7 +39,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SSHSERVERSESSION]] · SSH服务端会话信息（SSHSERVERSESSION）
+- [SSH服务端会话信息（SSHSERVERSESSION）](configobject/UDG/20.15.2/SSHSERVERSESSION.md)
 
 ## 使用实例
 

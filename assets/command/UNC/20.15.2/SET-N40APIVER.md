@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/N40APIVER]] · N40接口协议版本和需要使用的FeatureList（N40APIVER）
+- [N40接口协议版本和需要使用的FeatureList（N40APIVER）](configobject/UNC/20.15.2/N40APIVER.md)
 
 ## 使用实例
 

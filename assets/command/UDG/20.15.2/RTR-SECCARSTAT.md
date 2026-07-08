@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SECCARSTAT]] · 安全CAR功能丢弃上送CPU报文的详细信息（SECCARSTAT）
+- [安全CAR功能丢弃上送CPU报文的详细信息（SECCARSTAT）](configobject/UDG/20.15.2/SECCARSTAT.md)
 
 ## 使用实例
 

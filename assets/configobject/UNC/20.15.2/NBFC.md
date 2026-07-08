@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NBFC]] · LST NBFC
-- [[command/UNC/20.15.2/SET-NBFC]] · SET NBFC
+- [LST NBFC](command/UNC/20.15.2/LST-NBFC.md)
+- [SET NBFC](command/UNC/20.15.2/SET-NBFC.md)
 
 ## 证据
 

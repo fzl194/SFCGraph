@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FESMEMLIMIT]] · DSP FESMEMLIMIT
+- [DSP FESMEMLIMIT](command/UNC/20.15.2/DSP-FESMEMLIMIT.md)
 
 ## 证据
 

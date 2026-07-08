@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MTSMODEL]] · DSP MTSMODEL
+- [DSP MTSMODEL](command/UDG/20.15.2/DSP-MTSMODEL.md)
 
 ## 证据
 

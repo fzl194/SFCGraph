@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HSFNTIME]] · LST HSFNTIME
-- [[command/UNC/20.15.2/SET-HSFNTIME]] · SET HSFNTIME
+- [LST HSFNTIME](command/UNC/20.15.2/LST-HSFNTIME.md)
+- [SET HSFNTIME](command/UNC/20.15.2/SET-HSFNTIME.md)
 
 ## 证据
 

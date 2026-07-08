@@ -25,16 +25,16 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-RULE]] · ADD RULE
-- [[command/UDG/20.15.2/LST-RULE]] · LST RULE
-- [[command/UDG/20.15.2/MOD-RULE]] · MOD RULE
-- [[command/UDG/20.15.2/RMV-RULE]] · RMV RULE
+- [ADD RULE](command/UDG/20.15.2/ADD-RULE.md)
+- [LST RULE](command/UDG/20.15.2/LST-RULE.md)
+- [MOD RULE](command/UDG/20.15.2/MOD-RULE.md)
+- [RMV RULE](command/UDG/20.15.2/RMV-RULE.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/FLOWFILTER]] · FLOWFILTER
-- [[configobject/UDG/20.15.2/FLOWFILTERGRP]] · FLOWFILTERGRP
-- [[configobject/UDG/20.15.2/TIMERANGE]] · TIMERANGE
+- [FLOWFILTER](configobject/UDG/20.15.2/FLOWFILTER.md)
+- [FLOWFILTERGRP](configobject/UDG/20.15.2/FLOWFILTERGRP.md)
+- [TIMERANGE](configobject/UDG/20.15.2/TIMERANGE.md)
 
 ## 证据
 

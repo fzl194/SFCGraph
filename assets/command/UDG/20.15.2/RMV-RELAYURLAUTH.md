@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/RELAYURLAUTH]] · 媒体中继URL鉴权配置（RELAYURLAUTH）
+- [媒体中继URL鉴权配置（RELAYURLAUTH）](configobject/UDG/20.15.2/RELAYURLAUTH.md)
 
 ## 使用实例
 

@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/VNFEVICTION]] · 网元重调度策略（VNFEVICTION）
+- [网元重调度策略（VNFEVICTION）](configobject/UDG/20.15.2/VNFEVICTION.md)
 
 ## 使用实例
 

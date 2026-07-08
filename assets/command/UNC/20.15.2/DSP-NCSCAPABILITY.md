@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NCSCAPABILITY]] · 设备所支持的NETCONF协议能力集（NCSCAPABILITY）
+- [设备所支持的NETCONF协议能力集（NCSCAPABILITY）](configobject/UNC/20.15.2/NCSCAPABILITY.md)
 
 ## 使用实例
 

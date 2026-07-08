@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CHRFILESTGMODE]] · 上传至文件服务器的CHR文件转储方式（CHRFILESTGMODE）
+- [上传至文件服务器的CHR文件转储方式（CHRFILESTGMODE）](configobject/UDG/20.15.2/CHRFILESTGMODE.md)
 
 ## 使用实例
 

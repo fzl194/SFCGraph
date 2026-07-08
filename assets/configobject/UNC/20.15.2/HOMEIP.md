@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HOMEIP]] · ADD HOMEIP
-- [[command/UNC/20.15.2/LST-HOMEIP]] · LST HOMEIP
-- [[command/UNC/20.15.2/RMV-HOMEIP]] · RMV HOMEIP
+- [ADD HOMEIP](command/UNC/20.15.2/ADD-HOMEIP.md)
+- [LST HOMEIP](command/UNC/20.15.2/LST-HOMEIP.md)
+- [RMV HOMEIP](command/UNC/20.15.2/RMV-HOMEIP.md)
 
 ## 证据
 

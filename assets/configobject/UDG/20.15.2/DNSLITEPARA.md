@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DNSLITEPARA]] · LST DNSLITEPARA
-- [[command/UDG/20.15.2/SET-DNSLITEPARA]] · SET DNSLITEPARA
+- [LST DNSLITEPARA](command/UDG/20.15.2/LST-DNSLITEPARA.md)
+- [SET DNSLITEPARA](command/UDG/20.15.2/SET-DNSLITEPARA.md)
 
 ## 证据
 

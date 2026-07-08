@@ -26,9 +26,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFSUPI]] · ADD PNFSUPI
-- [[command/UNC/20.15.2/LST-PNFSUPI]] · LST PNFSUPI
-- [[command/UNC/20.15.2/RMV-PNFSUPI]] · RMV PNFSUPI
+- [ADD PNFSUPI](command/UNC/20.15.2/ADD-PNFSUPI.md)
+- [LST PNFSUPI](command/UNC/20.15.2/LST-PNFSUPI.md)
+- [RMV PNFSUPI](command/UNC/20.15.2/RMV-PNFSUPI.md)
 
 ## 证据
 

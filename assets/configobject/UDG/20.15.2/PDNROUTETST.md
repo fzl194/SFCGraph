@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/STP-PDNROUTETST]] · STP PDNROUTETST
-- [[command/UDG/20.15.2/STR-PDNROUTETST]] · STR PDNROUTETST
+- [STP PDNROUTETST](command/UDG/20.15.2/STP-PDNROUTETST.md)
+- [STR PDNROUTETST](command/UDG/20.15.2/STR-PDNROUTETST.md)
 
 ## 证据
 

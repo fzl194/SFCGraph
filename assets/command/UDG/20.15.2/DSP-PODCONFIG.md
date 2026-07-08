@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PODCONFIG]] · POD配置查询（PODCONFIG）
+- [POD配置查询（PODCONFIG）](configobject/UDG/20.15.2/PODCONFIG.md)
 
 ## 使用实例
 

@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NSSFFCPARA]] · LST NSSFFCPARA
-- [[command/UNC/20.15.2/SET-NSSFFCPARA]] · SET NSSFFCPARA
+- [LST NSSFFCPARA](command/UNC/20.15.2/LST-NSSFFCPARA.md)
+- [SET NSSFFCPARA](command/UNC/20.15.2/SET-NSSFFCPARA.md)
 
 ## 证据
 

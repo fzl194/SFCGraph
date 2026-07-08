@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VPLMNCHGMODE]] · 基于VPLMN配置的漫游用户归属地计费模式（VPLMNCHGMODE）
+- [基于VPLMN配置的漫游用户归属地计费模式（VPLMNCHGMODE）](configobject/UNC/20.15.2/VPLMNCHGMODE.md)
 
 ## 使用实例
 

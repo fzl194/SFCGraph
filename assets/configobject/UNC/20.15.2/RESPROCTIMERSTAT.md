@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RESPROCTIMERSTAT]] · DSP RESPROCTIMERSTAT
+- [DSP RESPROCTIMERSTAT](command/UNC/20.15.2/DSP-RESPROCTIMERSTAT.md)
 
 ## 证据
 

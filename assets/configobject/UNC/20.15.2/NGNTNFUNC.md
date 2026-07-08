@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGNTNFUNC]] · LST NGNTNFUNC
-- [[command/UNC/20.15.2/SET-NGNTNFUNC]] · SET NGNTNFUNC
+- [LST NGNTNFUNC](command/UNC/20.15.2/LST-NGNTNFUNC.md)
+- [SET NGNTNFUNC](command/UNC/20.15.2/SET-NGNTNFUNC.md)
 
 ## 证据
 

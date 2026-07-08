@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-IPSQMQDEPTH]] · LST IPSQMQDEPTH
-- [[command/UDG/20.15.2/SET-IPSQMQDEPTH]] · SET IPSQMQDEPTH
+- [LST IPSQMQDEPTH](command/UDG/20.15.2/LST-IPSQMQDEPTH.md)
+- [SET IPSQMQDEPTH](command/UDG/20.15.2/SET-IPSQMQDEPTH.md)
 
 ## 证据
 

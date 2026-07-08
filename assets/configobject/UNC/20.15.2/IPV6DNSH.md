@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IPV6DNSH]] · ADD IPV6DNSH
-- [[command/UNC/20.15.2/LST-IPV6DNSH]] · LST IPV6DNSH
-- [[command/UNC/20.15.2/MOD-IPV6DNSH]] · MOD IPV6DNSH
-- [[command/UNC/20.15.2/RMV-IPV6DNSH]] · RMV IPV6DNSH
+- [ADD IPV6DNSH](command/UNC/20.15.2/ADD-IPV6DNSH.md)
+- [LST IPV6DNSH](command/UNC/20.15.2/LST-IPV6DNSH.md)
+- [MOD IPV6DNSH](command/UNC/20.15.2/MOD-IPV6DNSH.md)
+- [RMV IPV6DNSH](command/UNC/20.15.2/RMV-IPV6DNSH.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-BTRUNCSTATUS]] · DSP BTRUNCSTATUS
+- [DSP BTRUNCSTATUS](command/UNC/20.15.2/DSP-BTRUNCSTATUS.md)
 
 ## 证据
 

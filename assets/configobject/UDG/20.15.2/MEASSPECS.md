@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MEASSPECS]] · DSP MEASSPECS
+- [DSP MEASSPECS](command/UDG/20.15.2/DSP-MEASSPECS.md)
 
 ## 证据
 

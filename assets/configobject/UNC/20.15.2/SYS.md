@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SYS]] · LST SYS
-- [[command/UNC/20.15.2/SET-SYS]] · SET SYS
+- [LST SYS](command/UNC/20.15.2/LST-SYS.md)
+- [SET SYS](command/UNC/20.15.2/SET-SYS.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TOTUNCFG]] · LST TOTUNCFG
-- [[command/UDG/20.15.2/SET-TOTUNCFG]] · SET TOTUNCFG
+- [LST TOTUNCFG](command/UDG/20.15.2/LST-TOTUNCFG.md)
+- [SET TOTUNCFG](command/UDG/20.15.2/SET-TOTUNCFG.md)
 
 ## 证据
 

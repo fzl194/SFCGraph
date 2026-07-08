@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-LOOPUDP]] · LST LOOPUDP
-- [[command/UDG/20.15.2/SET-LOOPUDP]] · SET LOOPUDP
+- [LST LOOPUDP](command/UDG/20.15.2/LST-LOOPUDP.md)
+- [SET LOOPUDP](command/UDG/20.15.2/SET-LOOPUDP.md)
 
 ## 证据
 

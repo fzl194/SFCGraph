@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SCTPBUFFCFG]] · LST SCTPBUFFCFG
-- [[command/UNC/20.15.2/SET-SCTPBUFFCFG]] · SET SCTPBUFFCFG
+- [LST SCTPBUFFCFG](command/UNC/20.15.2/LST-SCTPBUFFCFG.md)
+- [SET SCTPBUFFCFG](command/UNC/20.15.2/SET-SCTPBUFFCFG.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFSOFTPARA]] · LST NRFSOFTPARA
-- [[command/UNC/20.15.2/SET-NRFSOFTPARA]] · SET NRFSOFTPARA
+- [LST NRFSOFTPARA](command/UNC/20.15.2/LST-NRFSOFTPARA.md)
+- [SET NRFSOFTPARA](command/UNC/20.15.2/SET-NRFSOFTPARA.md)
 
 ## 证据
 

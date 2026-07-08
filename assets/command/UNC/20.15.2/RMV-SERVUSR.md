@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SERVUSR]] · 模拟设备故障删除用户信息（SERVUSR）
+- [模拟设备故障删除用户信息（SERVUSR）](configobject/UNC/20.15.2/SERVUSR.md)
 
 ## 使用实例
 

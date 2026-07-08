@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RAWLINKSTATUS]] · DSP RAWLINKSTATUS
+- [DSP RAWLINKSTATUS](command/UNC/20.15.2/DSP-RAWLINKSTATUS.md)
 
 ## 证据
 

@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RFSP]] · ADD RFSP
-- [[command/UNC/20.15.2/LST-RFSP]] · LST RFSP
-- [[command/UNC/20.15.2/MOD-RFSP]] · MOD RFSP
-- [[command/UNC/20.15.2/RMV-RFSP]] · RMV RFSP
+- [ADD RFSP](command/UNC/20.15.2/ADD-RFSP.md)
+- [LST RFSP](command/UNC/20.15.2/LST-RFSP.md)
+- [MOD RFSP](command/UNC/20.15.2/MOD-RFSP.md)
+- [RMV RFSP](command/UNC/20.15.2/RMV-RFSP.md)
 
 ## 证据
 

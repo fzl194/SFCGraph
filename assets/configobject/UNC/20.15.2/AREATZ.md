@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AREATZ]] · ADD AREATZ
-- [[command/UNC/20.15.2/LST-AREATZ]] · LST AREATZ
-- [[command/UNC/20.15.2/MOD-AREATZ]] · MOD AREATZ
-- [[command/UNC/20.15.2/RMV-AREATZ]] · RMV AREATZ
+- [ADD AREATZ](command/UNC/20.15.2/ADD-AREATZ.md)
+- [LST AREATZ](command/UNC/20.15.2/LST-AREATZ.md)
+- [MOD AREATZ](command/UNC/20.15.2/MOD-AREATZ.md)
+- [RMV AREATZ](command/UNC/20.15.2/RMV-AREATZ.md)
 
 ## 证据
 

@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DBTHRESHOLD]] · LST DBTHRESHOLD
-- [[command/UDG/20.15.2/SET-DBTHRESHOLD]] · SET DBTHRESHOLD
+- [LST DBTHRESHOLD](command/UDG/20.15.2/LST-DBTHRESHOLD.md)
+- [SET DBTHRESHOLD](command/UDG/20.15.2/SET-DBTHRESHOLD.md)
 
 ## 证据
 

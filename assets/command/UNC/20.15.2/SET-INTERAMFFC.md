@@ -63,7 +63,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/INTERAMFFC]] · Inter-AMF流控参数（INTERAMFFC）
+- [Inter-AMF流控参数（INTERAMFFC）](configobject/UNC/20.15.2/INTERAMFFC.md)
 
 ## 使用实例
 

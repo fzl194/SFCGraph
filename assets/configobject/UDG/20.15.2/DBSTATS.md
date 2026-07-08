@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DBSTATS]] · DSP DBSTATS
+- [DSP DBSTATS](command/UDG/20.15.2/DSP-DBSTATS.md)
 
 ## 证据
 

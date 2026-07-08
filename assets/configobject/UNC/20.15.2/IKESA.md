@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IKESA]] · DSP IKESA
-- [[command/UNC/20.15.2/RTR-IKESA]] · RTR IKESA
+- [DSP IKESA](command/UNC/20.15.2/DSP-IKESA.md)
+- [RTR IKESA](command/UNC/20.15.2/RTR-IKESA.md)
 
 ## 证据
 

@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AMFINFO]] · ADD AMFINFO
-- [[command/UNC/20.15.2/LST-AMFINFO]] · LST AMFINFO
-- [[command/UNC/20.15.2/MOD-AMFINFO]] · MOD AMFINFO
-- [[command/UNC/20.15.2/RMV-AMFINFO]] · RMV AMFINFO
+- [ADD AMFINFO](command/UNC/20.15.2/ADD-AMFINFO.md)
+- [LST AMFINFO](command/UNC/20.15.2/LST-AMFINFO.md)
+- [MOD AMFINFO](command/UNC/20.15.2/MOD-AMFINFO.md)
+- [RMV AMFINFO](command/UNC/20.15.2/RMV-AMFINFO.md)
 
 ## 证据
 

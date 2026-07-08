@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FEHEARTBEAT]] · LST FEHEARTBEAT
-- [[command/UDG/20.15.2/SET-FEHEARTBEAT]] · SET FEHEARTBEAT
+- [LST FEHEARTBEAT](command/UDG/20.15.2/LST-FEHEARTBEAT.md)
+- [SET FEHEARTBEAT](command/UDG/20.15.2/SET-FEHEARTBEAT.md)
 
 ## 证据
 

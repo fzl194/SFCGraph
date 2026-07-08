@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NETWORK]] · LST NETWORK
-- [[command/UNC/20.15.2/MOD-NETWORK]] · MOD NETWORK
+- [LST NETWORK](command/UNC/20.15.2/LST-NETWORK.md)
+- [MOD NETWORK](command/UNC/20.15.2/MOD-NETWORK.md)
 
 ## 证据
 

@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/ME]] · 网元信息（ME）
+- [网元信息（ME）](configobject/UDG/20.15.2/ME.md)
 
 ## 使用实例
 

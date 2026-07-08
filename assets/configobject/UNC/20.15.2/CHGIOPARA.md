@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHGIOPARA]] · LST CHGIOPARA
-- [[command/UNC/20.15.2/SET-CHGIOPARA]] · SET CHGIOPARA
+- [LST CHGIOPARA](command/UNC/20.15.2/LST-CHGIOPARA.md)
+- [SET CHGIOPARA](command/UNC/20.15.2/SET-CHGIOPARA.md)
 
 ## 证据
 

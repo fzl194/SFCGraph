@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-BGPCONFED]] · ADD BGPCONFED
-- [[command/UNC/20.15.2/LST-BGPCONFED]] · LST BGPCONFED
-- [[command/UNC/20.15.2/RMV-BGPCONFED]] · RMV BGPCONFED
+- [ADD BGPCONFED](command/UNC/20.15.2/ADD-BGPCONFED.md)
+- [LST BGPCONFED](command/UNC/20.15.2/LST-BGPCONFED.md)
+- [RMV BGPCONFED](command/UNC/20.15.2/RMV-BGPCONFED.md)
 
 ## 证据
 

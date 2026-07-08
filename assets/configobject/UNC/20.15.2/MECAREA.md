@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MECAREA]] · ADD MECAREA
-- [[command/UNC/20.15.2/LST-MECAREA]] · LST MECAREA
-- [[command/UNC/20.15.2/RMV-MECAREA]] · RMV MECAREA
+- [ADD MECAREA](command/UNC/20.15.2/ADD-MECAREA.md)
+- [LST MECAREA](command/UNC/20.15.2/LST-MECAREA.md)
+- [RMV MECAREA](command/UNC/20.15.2/RMV-MECAREA.md)
 
 ## 证据
 

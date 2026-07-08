@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FWDSTAT]] · DSP FWDSTAT
+- [DSP FWDSTAT](command/UNC/20.15.2/DSP-FWDSTAT.md)
 
 ## 证据
 

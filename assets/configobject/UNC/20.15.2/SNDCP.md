@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SNDCP]] · DSP SNDCP
-- [[command/UNC/20.15.2/LST-SNDCP]] · LST SNDCP
-- [[command/UNC/20.15.2/SET-SNDCP]] · SET SNDCP
+- [DSP SNDCP](command/UNC/20.15.2/DSP-SNDCP.md)
+- [LST SNDCP](command/UNC/20.15.2/LST-SNDCP.md)
+- [SET SNDCP](command/UNC/20.15.2/SET-SNDCP.md)
 
 ## 证据
 

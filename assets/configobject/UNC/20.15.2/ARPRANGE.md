@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ARPRANGE]] · ADD ARPRANGE
-- [[command/UNC/20.15.2/LST-ARPRANGE]] · LST ARPRANGE
-- [[command/UNC/20.15.2/MOD-ARPRANGE]] · MOD ARPRANGE
-- [[command/UNC/20.15.2/RMV-ARPRANGE]] · RMV ARPRANGE
+- [ADD ARPRANGE](command/UNC/20.15.2/ADD-ARPRANGE.md)
+- [LST ARPRANGE](command/UNC/20.15.2/LST-ARPRANGE.md)
+- [MOD ARPRANGE](command/UNC/20.15.2/MOD-ARPRANGE.md)
+- [RMV ARPRANGE](command/UNC/20.15.2/RMV-ARPRANGE.md)
 
 ## 证据
 

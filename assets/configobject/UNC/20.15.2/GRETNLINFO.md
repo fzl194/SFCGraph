@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GRETNLINFO]] · DSP GRETNLINFO
+- [DSP GRETNLINFO](command/UNC/20.15.2/DSP-GRETNLINFO.md)
 
 ## 证据
 

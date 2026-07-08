@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SBIAPLE]] · 服务化接口本端实体（SBIAPLE）
+- [服务化接口本端实体（SBIAPLE）](configobject/UNC/20.15.2/SBIAPLE.md)
 
 ## 使用实例
 

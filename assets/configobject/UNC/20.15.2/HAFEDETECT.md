@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HAFEDETECT]] · LST HAFEDETECT
-- [[command/UNC/20.15.2/SET-HAFEDETECT]] · SET HAFEDETECT
+- [LST HAFEDETECT](command/UNC/20.15.2/LST-HAFEDETECT.md)
+- [SET HAFEDETECT](command/UNC/20.15.2/SET-HAFEDETECT.md)
 
 ## 证据
 

@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/EXCEPTIONINFO]] · RU异常信息（EXCEPTIONINFO）
+- [RU异常信息（EXCEPTIONINFO）](configobject/UNC/20.15.2/EXCEPTIONINFO.md)
 
 ## 使用实例
 

@@ -66,7 +66,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SMGTPPROT]] · 会话管理GTP协议功能参数配置（SMGTPPROT）
+- [会话管理GTP协议功能参数配置（SMGTPPROT）](configobject/UNC/20.15.2/SMGTPPROT.md)
 
 ## 使用实例
 

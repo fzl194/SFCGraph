@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/TST-SDUPPATH]] · TST SDUPPATH
+- [TST SDUPPATH](command/UNC/20.15.2/TST-SDUPPATH.md)
 
 ## 证据
 

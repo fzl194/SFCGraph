@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GTPCFIXEDFC]] · LST GTPCFIXEDFC
-- [[command/UNC/20.15.2/SET-GTPCFIXEDFC]] · SET GTPCFIXEDFC
+- [LST GTPCFIXEDFC](command/UNC/20.15.2/LST-GTPCFIXEDFC.md)
+- [SET GTPCFIXEDFC](command/UNC/20.15.2/SET-GTPCFIXEDFC.md)
 
 ## 证据
 

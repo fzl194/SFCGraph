@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MVNONET]] · ADD MVNONET
-- [[command/UNC/20.15.2/LST-MVNONET]] · LST MVNONET
-- [[command/UNC/20.15.2/RMV-MVNONET]] · RMV MVNONET
+- [ADD MVNONET](command/UNC/20.15.2/ADD-MVNONET.md)
+- [LST MVNONET](command/UNC/20.15.2/LST-MVNONET.md)
+- [RMV MVNONET](command/UNC/20.15.2/RMV-MVNONET.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LCS]] · DSP LCS
+- [DSP LCS](command/UNC/20.15.2/DSP-LCS.md)
 
 ## 证据
 

@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TOKENEXP]] · ADD TOKENEXP
-- [[command/UNC/20.15.2/LST-TOKENEXP]] · LST TOKENEXP
-- [[command/UNC/20.15.2/MOD-TOKENEXP]] · MOD TOKENEXP
-- [[command/UNC/20.15.2/RMV-TOKENEXP]] · RMV TOKENEXP
+- [ADD TOKENEXP](command/UNC/20.15.2/ADD-TOKENEXP.md)
+- [LST TOKENEXP](command/UNC/20.15.2/LST-TOKENEXP.md)
+- [MOD TOKENEXP](command/UNC/20.15.2/MOD-TOKENEXP.md)
+- [RMV TOKENEXP](command/UNC/20.15.2/RMV-TOKENEXP.md)
 
 ## 证据
 

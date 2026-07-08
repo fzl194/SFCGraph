@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-TCTIMER]] · LST TCTIMER
-- [[command/UNC/20.15.2/SET-TCTIMER]] · SET TCTIMER
+- [LST TCTIMER](command/UNC/20.15.2/LST-TCTIMER.md)
+- [SET TCTIMER](command/UNC/20.15.2/SET-TCTIMER.md)
 
 ## 证据
 

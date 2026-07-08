@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHGWKDY]] · LST CHGWKDY
-- [[command/UNC/20.15.2/SET-CHGWKDY]] · SET CHGWKDY
+- [LST CHGWKDY](command/UNC/20.15.2/LST-CHGWKDY.md)
+- [SET CHGWKDY](command/UNC/20.15.2/SET-CHGWKDY.md)
 
 ## 证据
 

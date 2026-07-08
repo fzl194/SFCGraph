@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SIGNADBRULE]] · 特征库规则配置（SIGNADBRULE）
+- [特征库规则配置（SIGNADBRULE）](configobject/UDG/20.15.2/SIGNADBRULE.md)
 
 ## 使用实例
 

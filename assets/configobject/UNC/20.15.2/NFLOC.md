@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFLOC]] · ADD NFLOC
-- [[command/UNC/20.15.2/LST-NFLOC]] · LST NFLOC
-- [[command/UNC/20.15.2/MOD-NFLOC]] · MOD NFLOC
-- [[command/UNC/20.15.2/RMV-NFLOC]] · RMV NFLOC
+- [ADD NFLOC](command/UNC/20.15.2/ADD-NFLOC.md)
+- [LST NFLOC](command/UNC/20.15.2/LST-NFLOC.md)
+- [MOD NFLOC](command/UNC/20.15.2/MOD-NFLOC.md)
+- [RMV NFLOC](command/UNC/20.15.2/RMV-NFLOC.md)
 
 ## 证据
 

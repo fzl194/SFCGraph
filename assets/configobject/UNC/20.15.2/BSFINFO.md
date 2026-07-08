@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-BSFINFO]] · ADD BSFINFO
-- [[command/UNC/20.15.2/LST-BSFINFO]] · LST BSFINFO
-- [[command/UNC/20.15.2/RMV-BSFINFO]] · RMV BSFINFO
+- [ADD BSFINFO](command/UNC/20.15.2/ADD-BSFINFO.md)
+- [LST BSFINFO](command/UNC/20.15.2/LST-BSFINFO.md)
+- [RMV BSFINFO](command/UNC/20.15.2/RMV-BSFINFO.md)
 
 ## 证据
 

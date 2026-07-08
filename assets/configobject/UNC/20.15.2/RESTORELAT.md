@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RESTORELAT]] · DSP RESTORELAT
+- [DSP RESTORELAT](command/UNC/20.15.2/DSP-RESTORELAT.md)
 
 ## 证据
 

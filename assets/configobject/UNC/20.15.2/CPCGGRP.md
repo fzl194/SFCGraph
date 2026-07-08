@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CPCGGRP]] · ADD CPCGGRP
-- [[command/UNC/20.15.2/LST-CPCGGRP]] · LST CPCGGRP
-- [[command/UNC/20.15.2/MOD-CPCGGRP]] · MOD CPCGGRP
-- [[command/UNC/20.15.2/RMV-CPCGGRP]] · RMV CPCGGRP
+- [ADD CPCGGRP](command/UNC/20.15.2/ADD-CPCGGRP.md)
+- [LST CPCGGRP](command/UNC/20.15.2/LST-CPCGGRP.md)
+- [MOD CPCGGRP](command/UNC/20.15.2/MOD-CPCGGRP.md)
+- [RMV CPCGGRP](command/UNC/20.15.2/RMV-CPCGGRP.md)
 
 ## 证据
 

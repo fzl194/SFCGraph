@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MEASOBJ]] · DSP MEASOBJ
+- [DSP MEASOBJ](command/UNC/20.15.2/DSP-MEASOBJ.md)
 
 ## 证据
 

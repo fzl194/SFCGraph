@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-N2DTLSPARA]] · LST N2DTLSPARA
-- [[command/UNC/20.15.2/SET-N2DTLSPARA]] · SET N2DTLSPARA
+- [LST N2DTLSPARA](command/UNC/20.15.2/LST-N2DTLSPARA.md)
+- [SET N2DTLSPARA](command/UNC/20.15.2/SET-N2DTLSPARA.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FILTERINFO]] · LST FILTERINFO
+- [LST FILTERINFO](command/UDG/20.15.2/LST-FILTERINFO.md)
 
 ## 证据
 

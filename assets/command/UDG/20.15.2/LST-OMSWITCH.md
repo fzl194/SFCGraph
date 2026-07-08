@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OMSWITCH]] · OM功能开关（OMSWITCH）
+- [OM功能开关（OMSWITCH）](configobject/UDG/20.15.2/OMSWITCH.md)
 
 ## 使用实例
 

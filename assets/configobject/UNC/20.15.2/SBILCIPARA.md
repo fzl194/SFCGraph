@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SBILCIPARA]] · LST SBILCIPARA
-- [[command/UNC/20.15.2/SET-SBILCIPARA]] · SET SBILCIPARA
+- [LST SBILCIPARA](command/UNC/20.15.2/LST-SBILCIPARA.md)
+- [SET SBILCIPARA](command/UNC/20.15.2/SET-SBILCIPARA.md)
 
 ## 证据
 

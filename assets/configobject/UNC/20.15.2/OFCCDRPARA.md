@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OFCCDRPARA]] · LST OFCCDRPARA
-- [[command/UNC/20.15.2/SET-OFCCDRPARA]] · SET OFCCDRPARA
+- [LST OFCCDRPARA](command/UNC/20.15.2/LST-OFCCDRPARA.md)
+- [SET OFCCDRPARA](command/UNC/20.15.2/SET-OFCCDRPARA.md)
 
 ## 证据
 

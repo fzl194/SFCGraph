@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-HOLDINGTIME]] · SET HOLDINGTIME
+- [SET HOLDINGTIME](command/UNC/20.15.2/SET-HOLDINGTIME.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-MSCCLEVDFTBEH]] · SET MSCCLEVDFTBEH
+- [SET MSCCLEVDFTBEH](command/UNC/20.15.2/SET-MSCCLEVDFTBEH.md)
 
 ## 证据
 

@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SMARTDT]] · ADD SMARTDT
-- [[command/UNC/20.15.2/LST-SMARTDT]] · LST SMARTDT
-- [[command/UNC/20.15.2/MOD-SMARTDT]] · MOD SMARTDT
-- [[command/UNC/20.15.2/RMV-SMARTDT]] · RMV SMARTDT
+- [ADD SMARTDT](command/UNC/20.15.2/ADD-SMARTDT.md)
+- [LST SMARTDT](command/UNC/20.15.2/LST-SMARTDT.md)
+- [MOD SMARTDT](command/UNC/20.15.2/MOD-SMARTDT.md)
+- [RMV SMARTDT](command/UNC/20.15.2/RMV-SMARTDT.md)
 
 ## 证据
 

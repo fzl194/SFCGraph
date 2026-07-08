@@ -21,8 +21,8 @@ MTU的大小决定了发送端一次能够发送报文的最大字节数。
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FABRICMTU]] · LST FABRICMTU
-- [[command/UDG/20.15.2/SET-FABRICMTU]] · SET FABRICMTU
+- [LST FABRICMTU](command/UDG/20.15.2/LST-FABRICMTU.md)
+- [SET FABRICMTU](command/UDG/20.15.2/SET-FABRICMTU.md)
 
 ## 证据
 

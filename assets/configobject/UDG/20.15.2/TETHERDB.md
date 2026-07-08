@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TETHERDB]] · DSP TETHERDB
-- [[command/UDG/20.15.2/LOD-TETHERDB]] · LOD TETHERDB
-- [[command/UDG/20.15.2/RMV-TETHERDB]] · RMV TETHERDB
+- [DSP TETHERDB](command/UDG/20.15.2/DSP-TETHERDB.md)
+- [LOD TETHERDB](command/UDG/20.15.2/LOD-TETHERDB.md)
+- [RMV TETHERDB](command/UDG/20.15.2/RMV-TETHERDB.md)
 
 ## 证据
 

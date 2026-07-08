@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CPPOINT]] · ADD CPPOINT
-- [[command/UNC/20.15.2/LST-CPPOINT]] · LST CPPOINT
-- [[command/UNC/20.15.2/RMV-CPPOINT]] · RMV CPPOINT
+- [ADD CPPOINT](command/UNC/20.15.2/ADD-CPPOINT.md)
+- [LST CPPOINT](command/UNC/20.15.2/LST-CPPOINT.md)
+- [RMV CPPOINT](command/UNC/20.15.2/RMV-CPPOINT.md)
 
 ## 证据
 

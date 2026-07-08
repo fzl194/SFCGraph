@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RNC]] · ADD RNC
-- [[command/UNC/20.15.2/LST-RNC]] · LST RNC
-- [[command/UNC/20.15.2/MOD-RNC]] · MOD RNC
-- [[command/UNC/20.15.2/RMV-RNC]] · RMV RNC
+- [ADD RNC](command/UNC/20.15.2/ADD-RNC.md)
+- [LST RNC](command/UNC/20.15.2/LST-RNC.md)
+- [MOD RNC](command/UNC/20.15.2/MOD-RNC.md)
+- [RMV RNC](command/UNC/20.15.2/RMV-RNC.md)
 
 ## 证据
 

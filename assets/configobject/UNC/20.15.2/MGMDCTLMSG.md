@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RTR-MGMDCTLMSG]] · RTR MGMDCTLMSG
+- [RTR MGMDCTLMSG](command/UNC/20.15.2/RTR-MGMDCTLMSG.md)
 
 ## 证据
 

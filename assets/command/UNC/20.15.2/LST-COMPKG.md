@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/COMPKG]] · 扩展包（COMPKG）
+- [扩展包（COMPKG）](configobject/UNC/20.15.2/COMPKG.md)
 
 ## 使用实例
 

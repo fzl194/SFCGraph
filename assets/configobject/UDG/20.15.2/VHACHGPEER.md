@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/STR-VHACHGPEER]] · STR VHACHGPEER
+- [STR VHACHGPEER](command/UDG/20.15.2/STR-VHACHGPEER.md)
 
 ## 证据
 

@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/SYN-BGPALL]] · SYN BGPALL
+- [SYN BGPALL](command/UDG/20.15.2/SYN-BGPALL.md)
 
 ## 证据
 

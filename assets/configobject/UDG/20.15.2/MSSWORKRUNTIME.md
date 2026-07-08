@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSWORKRUNTIME]] · DSP MSSWORKRUNTIME
+- [DSP MSSWORKRUNTIME](command/UDG/20.15.2/DSP-MSSWORKRUNTIME.md)
 
 ## 证据
 

@@ -49,7 +49,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SFTPALG]] · SFTP协议算法（SFTPALG）
+- [SFTP协议算法（SFTPALG）](configobject/UDG/20.15.2/SFTPALG.md)
 
 ## 使用实例
 

@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UPCALMVAL]] · UPC DS粒度N4请求等待超时异常的告警阈值（UPCALMVAL）
+- [UPC DS粒度N4请求等待超时异常的告警阈值（UPCALMVAL）](configobject/UNC/20.15.2/UPCALMVAL.md)
 
 ## 使用实例
 

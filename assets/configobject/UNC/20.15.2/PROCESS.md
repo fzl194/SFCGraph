@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RST-PROCESS]] · RST PROCESS
+- [RST PROCESS](command/UNC/20.15.2/RST-PROCESS.md)
 
 ## 证据
 

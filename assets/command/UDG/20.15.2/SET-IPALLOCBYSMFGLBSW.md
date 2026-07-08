@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/IPALLOCBYSMFGLBSW]] · 基于SMF分配地址的全局开关（IPALLOCBYSMFGLBSW）
+- [基于SMF分配地址的全局开关（IPALLOCBYSMFGLBSW）](configobject/UDG/20.15.2/IPALLOCBYSMFGLBSW.md)
 
 ## 使用实例
 

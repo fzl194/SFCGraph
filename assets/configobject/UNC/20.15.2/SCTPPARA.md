@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCTPPARA]] · ADD SCTPPARA
-- [[command/UNC/20.15.2/LST-SCTPPARA]] · LST SCTPPARA
-- [[command/UNC/20.15.2/MOD-SCTPPARA]] · MOD SCTPPARA
-- [[command/UNC/20.15.2/RMV-SCTPPARA]] · RMV SCTPPARA
+- [ADD SCTPPARA](command/UNC/20.15.2/ADD-SCTPPARA.md)
+- [LST SCTPPARA](command/UNC/20.15.2/LST-SCTPPARA.md)
+- [MOD SCTPPARA](command/UNC/20.15.2/MOD-SCTPPARA.md)
+- [RMV SCTPPARA](command/UNC/20.15.2/RMV-SCTPPARA.md)
 
 ## 证据
 

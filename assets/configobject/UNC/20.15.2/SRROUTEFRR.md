@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SRROUTEFRR]] · LST SRROUTEFRR
-- [[command/UNC/20.15.2/SET-SRROUTEFRR]] · SET SRROUTEFRR
+- [LST SRROUTEFRR](command/UNC/20.15.2/LST-SRROUTEFRR.md)
+- [SET SRROUTEFRR](command/UNC/20.15.2/SET-SRROUTEFRR.md)
 
 ## 证据
 

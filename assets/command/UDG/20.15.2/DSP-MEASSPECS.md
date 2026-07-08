@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MEASSPECS]] · 话统规格（MEASSPECS）
+- [话统规格（MEASSPECS）](configobject/UDG/20.15.2/MEASSPECS.md)
 
 ## 使用实例
 

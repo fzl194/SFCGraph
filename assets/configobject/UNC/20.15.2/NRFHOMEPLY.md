@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFHOMEPLY]] · LST NRFHOMEPLY
-- [[command/UNC/20.15.2/SET-NRFHOMEPLY]] · SET NRFHOMEPLY
+- [LST NRFHOMEPLY](command/UNC/20.15.2/LST-NRFHOMEPLY.md)
+- [SET NRFHOMEPLY](command/UNC/20.15.2/SET-NRFHOMEPLY.md)
 
 ## 证据
 

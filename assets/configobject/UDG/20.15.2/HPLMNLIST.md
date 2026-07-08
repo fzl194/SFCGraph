@@ -39,9 +39,9 @@ UPF支持三种类型的用户：本地用户、漫游用户、拜访用户。
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-HPLMNLIST]] · ADD HPLMNLIST
-- [[command/UDG/20.15.2/LST-HPLMNLIST]] · LST HPLMNLIST
-- [[command/UDG/20.15.2/RMV-HPLMNLIST]] · RMV HPLMNLIST
+- [ADD HPLMNLIST](command/UDG/20.15.2/ADD-HPLMNLIST.md)
+- [LST HPLMNLIST](command/UDG/20.15.2/LST-HPLMNLIST.md)
+- [RMV HPLMNLIST](command/UDG/20.15.2/RMV-HPLMNLIST.md)
 
 ## 证据
 

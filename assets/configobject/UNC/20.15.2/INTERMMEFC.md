@@ -28,8 +28,8 @@ MME组Pool时，如果某个MME故障，则故障MME上的用户会接入到Pool
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-INTERMMEFC]] · LST INTERMMEFC
-- [[command/UNC/20.15.2/SET-INTERMMEFC]] · SET INTERMMEFC
+- [LST INTERMMEFC](command/UNC/20.15.2/LST-INTERMMEFC.md)
+- [SET INTERMMEFC](command/UNC/20.15.2/SET-INTERMMEFC.md)
 
 ## 证据
 

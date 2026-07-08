@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-S1APLNK]] · DSP S1APLNK
-- [[command/UNC/20.15.2/RMV-S1APLNK]] · RMV S1APLNK
-- [[command/UNC/20.15.2/RST-S1APLNK]] · RST S1APLNK
+- [DSP S1APLNK](command/UNC/20.15.2/DSP-S1APLNK.md)
+- [RMV S1APLNK](command/UNC/20.15.2/RMV-S1APLNK.md)
+- [RST S1APLNK](command/UNC/20.15.2/RST-S1APLNK.md)
 
 ## 证据
 

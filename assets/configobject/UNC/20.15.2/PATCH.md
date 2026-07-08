@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLB-PATCH]] · CLB PATCH
-- [[command/UNC/20.15.2/RMV-PATCH]] · RMV PATCH
+- [CLB PATCH](command/UNC/20.15.2/CLB-PATCH.md)
+- [RMV PATCH](command/UNC/20.15.2/RMV-PATCH.md)
 
 ## 证据
 

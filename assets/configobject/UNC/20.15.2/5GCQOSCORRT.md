@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-5GCQOSCORRT]] · LST 5GCQOSCORRT
-- [[command/UNC/20.15.2/SET-5GCQOSCORRT]] · SET 5GCQOSCORRT
+- [LST 5GCQOSCORRT](command/UNC/20.15.2/LST-5GCQOSCORRT.md)
+- [SET 5GCQOSCORRT](command/UNC/20.15.2/SET-5GCQOSCORRT.md)
 
 ## 证据
 

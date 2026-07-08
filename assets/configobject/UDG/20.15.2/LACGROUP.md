@@ -22,14 +22,14 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-LACGROUP]] · ADD LACGROUP
-- [[command/UDG/20.15.2/LST-LACGROUP]] · LST LACGROUP
-- [[command/UDG/20.15.2/RMV-LACGROUP]] · RMV LACGROUP
+- [ADD LACGROUP](command/UDG/20.15.2/ADD-LACGROUP.md)
+- [LST LACGROUP](command/UDG/20.15.2/LST-LACGROUP.md)
+- [RMV LACGROUP](command/UDG/20.15.2/RMV-LACGROUP.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/LACID]] · LACID
-- [[configobject/UDG/20.15.2/POOLGRPMAP]] · POOLGRPMAP
+- [LACID](configobject/UDG/20.15.2/LACID.md)
+- [POOLGRPMAP](configobject/UDG/20.15.2/POOLGRPMAP.md)
 
 ## 证据
 

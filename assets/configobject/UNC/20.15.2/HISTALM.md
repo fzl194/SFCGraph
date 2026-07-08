@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HISTALM]] · LST HISTALM
+- [LST HISTALM](command/UNC/20.15.2/LST-HISTALM.md)
 
 ## 证据
 

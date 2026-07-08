@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/MOD-MK]] · MOD MK
+- [MOD MK](command/UNC/20.15.2/MOD-MK.md)
 
 ## 证据
 

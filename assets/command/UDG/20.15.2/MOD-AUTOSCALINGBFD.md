@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/AUTOSCALINGBFD]] · BFD会话自动化配置模板（AUTOSCALINGBFD）
+- [BFD会话自动化配置模板（AUTOSCALINGBFD）](configobject/UDG/20.15.2/AUTOSCALINGBFD.md)
 
 ## 使用实例
 

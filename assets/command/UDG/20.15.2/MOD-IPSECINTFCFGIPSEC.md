@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/IPSECINTFCFGIPSEC]] · IPsec隧道接口（IPSECINTFCFGIPSEC）
+- [IPsec隧道接口（IPSECINTFCFGIPSEC）](configobject/UDG/20.15.2/IPSECINTFCFGIPSEC.md)
 
 ## 使用实例
 

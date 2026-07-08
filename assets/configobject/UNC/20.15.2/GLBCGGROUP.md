@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GLBCGGROUP]] · LST GLBCGGROUP
-- [[command/UNC/20.15.2/SET-GLBCGGROUP]] · SET GLBCGGROUP
+- [LST GLBCGGROUP](command/UNC/20.15.2/LST-GLBCGGROUP.md)
+- [SET GLBCGGROUP](command/UNC/20.15.2/SET-GLBCGGROUP.md)
 
 ## 证据
 

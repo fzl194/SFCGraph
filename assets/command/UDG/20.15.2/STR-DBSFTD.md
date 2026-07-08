@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/DBSFTD]] · 发送CSDB的软件调试命令（DBSFTD）
+- [发送CSDB的软件调试命令（DBSFTD）](configobject/UDG/20.15.2/DBSFTD.md)
 
 ## 使用实例
 

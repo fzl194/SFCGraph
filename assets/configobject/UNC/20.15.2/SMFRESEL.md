@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SMFRESEL]] · ADD SMFRESEL
-- [[command/UNC/20.15.2/LST-SMFRESEL]] · LST SMFRESEL
-- [[command/UNC/20.15.2/MOD-SMFRESEL]] · MOD SMFRESEL
-- [[command/UNC/20.15.2/RMV-SMFRESEL]] · RMV SMFRESEL
+- [ADD SMFRESEL](command/UNC/20.15.2/ADD-SMFRESEL.md)
+- [LST SMFRESEL](command/UNC/20.15.2/LST-SMFRESEL.md)
+- [MOD SMFRESEL](command/UNC/20.15.2/MOD-SMFRESEL.md)
+- [RMV SMFRESEL](command/UNC/20.15.2/RMV-SMFRESEL.md)
 
 ## 证据
 

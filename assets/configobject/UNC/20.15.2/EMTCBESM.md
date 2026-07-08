@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-EMTCBESM]] · LST EMTCBESM
-- [[command/UNC/20.15.2/SET-EMTCBESM]] · SET EMTCBESM
+- [LST EMTCBESM](command/UNC/20.15.2/LST-EMTCBESM.md)
+- [SET EMTCBESM](command/UNC/20.15.2/SET-EMTCBESM.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SDAPLE]] · ADD SDAPLE
-- [[command/UNC/20.15.2/LST-SDAPLE]] · LST SDAPLE
-- [[command/UNC/20.15.2/RMV-SDAPLE]] · RMV SDAPLE
+- [ADD SDAPLE](command/UNC/20.15.2/ADD-SDAPLE.md)
+- [LST SDAPLE](command/UNC/20.15.2/LST-SDAPLE.md)
+- [RMV SDAPLE](command/UNC/20.15.2/RMV-SDAPLE.md)
 
 ## 证据
 

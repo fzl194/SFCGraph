@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-OPSPROCESSSTATE]] · DSP OPSPROCESSSTATE
+- [DSP OPSPROCESSSTATE](command/UDG/20.15.2/DSP-OPSPROCESSSTATE.md)
 
 ## 证据
 

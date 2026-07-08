@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAESCHEDULE]] · DSP PAESCHEDULE
+- [DSP PAESCHEDULE](command/UDG/20.15.2/DSP-PAESCHEDULE.md)
 
 ## 证据
 

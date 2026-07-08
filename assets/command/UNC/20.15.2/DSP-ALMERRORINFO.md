@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ALMERRORINFO]] · 告警模块错误信息（ALMERRORINFO）
+- [告警模块错误信息（ALMERRORINFO）](configobject/UNC/20.15.2/ALMERRORINFO.md)
 
 ## 使用实例
 

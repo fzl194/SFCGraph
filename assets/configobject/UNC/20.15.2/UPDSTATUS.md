@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-UPDSTATUS]] · DSP UPDSTATUS
-- [[command/UNC/20.15.2/SET-UPDSTATUS]] · SET UPDSTATUS
+- [DSP UPDSTATUS](command/UNC/20.15.2/DSP-UPDSTATUS.md)
+- [SET UPDSTATUS](command/UNC/20.15.2/SET-UPDSTATUS.md)
 
 ## 证据
 

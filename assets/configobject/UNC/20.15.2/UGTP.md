@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UGTP]] · LST UGTP
-- [[command/UNC/20.15.2/SET-UGTP]] · SET UGTP
+- [LST UGTP](command/UNC/20.15.2/LST-UGTP.md)
+- [SET UGTP](command/UNC/20.15.2/SET-UGTP.md)
 
 ## 证据
 

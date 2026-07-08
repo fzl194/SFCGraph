@@ -43,8 +43,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AGFOUTFC]] · LST AGFOUTFC
-- [[command/UNC/20.15.2/SET-AGFOUTFC]] · SET AGFOUTFC
+- [LST AGFOUTFC](command/UNC/20.15.2/LST-AGFOUTFC.md)
+- [SET AGFOUTFC](command/UNC/20.15.2/SET-AGFOUTFC.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NPPORTPODTBMAP]] · DSP NPPORTPODTBMAP
+- [DSP NPPORTPODTBMAP](command/UDG/20.15.2/DSP-NPPORTPODTBMAP.md)
 
 ## 证据
 

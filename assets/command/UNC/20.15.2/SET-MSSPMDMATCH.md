@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组；
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MSSPMDMATCH]] · 端口报文匹配统计信息（MSSPMDMATCH）
+- [端口报文匹配统计信息（MSSPMDMATCH）](configobject/UNC/20.15.2/MSSPMDMATCH.md)
 
 ## 使用实例
 

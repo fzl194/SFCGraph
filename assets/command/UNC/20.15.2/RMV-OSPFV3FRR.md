@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OSPFV3FRR]] · OSPFv3 IP FRR配置（OSPFV3FRR）
+- [OSPFv3 IP FRR配置（OSPFV3FRR）](configobject/UNC/20.15.2/OSPFV3FRR.md)
 
 ## 使用实例
 

@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/STATICWTPOLICY]] · 服务类型在POD实例下的静态权重（STATICWTPOLICY）
+- [服务类型在POD实例下的静态权重（STATICWTPOLICY）](configobject/UNC/20.15.2/STATICWTPOLICY.md)
 
 ## 使用实例
 

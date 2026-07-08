@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DBGCMDPRXY]] · 通过命令代理执行调试命令（DBGCMDPRXY）
+- [通过命令代理执行调试命令（DBGCMDPRXY）](configobject/UNC/20.15.2/DBGCMDPRXY.md)
 
 ## 使用实例
 

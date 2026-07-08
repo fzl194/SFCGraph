@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PODHEALCTRL]] · LST PODHEALCTRL
-- [[command/UDG/20.15.2/SET-PODHEALCTRL]] · SET PODHEALCTRL
+- [LST PODHEALCTRL](command/UDG/20.15.2/LST-PODHEALCTRL.md)
+- [SET PODHEALCTRL](command/UDG/20.15.2/SET-PODHEALCTRL.md)
 
 ## 证据
 

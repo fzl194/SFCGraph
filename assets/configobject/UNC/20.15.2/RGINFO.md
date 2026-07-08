@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-RGINFO]] · LST RGINFO
-- [[command/UNC/20.15.2/RMV-RGINFO]] · RMV RGINFO
+- [LST RGINFO](command/UNC/20.15.2/LST-RGINFO.md)
+- [RMV RGINFO](command/UNC/20.15.2/RMV-RGINFO.md)
 
 ## 证据
 

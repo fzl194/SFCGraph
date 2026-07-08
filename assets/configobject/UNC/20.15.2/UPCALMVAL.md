@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UPCALMVAL]] · LST UPCALMVAL
-- [[command/UNC/20.15.2/SET-UPCALMVAL]] · SET UPCALMVAL
+- [LST UPCALMVAL](command/UNC/20.15.2/LST-UPCALMVAL.md)
+- [SET UPCALMVAL](command/UNC/20.15.2/SET-UPCALMVAL.md)
 
 ## 证据
 

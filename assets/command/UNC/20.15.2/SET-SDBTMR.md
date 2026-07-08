@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SDBTMR]] · 核查定时器配置（SDBTMR）
+- [核查定时器配置（SDBTMR）](configobject/UNC/20.15.2/SDBTMR.md)
 
 ## 使用实例
 

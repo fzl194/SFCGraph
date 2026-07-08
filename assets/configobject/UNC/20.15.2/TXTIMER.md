@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-TXTIMER]] · SET TXTIMER
+- [SET TXTIMER](command/UNC/20.15.2/SET-TXTIMER.md)
 
 ## 证据
 

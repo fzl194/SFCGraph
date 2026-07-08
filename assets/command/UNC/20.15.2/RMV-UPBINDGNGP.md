@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UPBINDGNGP]] · GGSN与Gn/Gp接口或PGW-U与S5/S8接口的绑定关系（UPBINDGNGP）
+- [GGSN与Gn/Gp接口或PGW-U与S5/S8接口的绑定关系（UPBINDGNGP）](configobject/UNC/20.15.2/UPBINDGNGP.md)
 
 ## 使用实例
 

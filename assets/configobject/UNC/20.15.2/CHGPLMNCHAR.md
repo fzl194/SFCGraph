@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHGPLMNCHAR]] · LST CHGPLMNCHAR
-- [[command/UNC/20.15.2/SET-CHGPLMNCHAR]] · SET CHGPLMNCHAR
+- [LST CHGPLMNCHAR](command/UNC/20.15.2/LST-CHGPLMNCHAR.md)
+- [SET CHGPLMNCHAR](command/UNC/20.15.2/SET-CHGPLMNCHAR.md)
 
 ## 证据
 

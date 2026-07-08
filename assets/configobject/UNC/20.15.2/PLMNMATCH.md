@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PLMNMATCH]] · ADD PLMNMATCH
-- [[command/UNC/20.15.2/LST-PLMNMATCH]] · LST PLMNMATCH
-- [[command/UNC/20.15.2/RMV-PLMNMATCH]] · RMV PLMNMATCH
+- [ADD PLMNMATCH](command/UNC/20.15.2/ADD-PLMNMATCH.md)
+- [LST PLMNMATCH](command/UNC/20.15.2/LST-PLMNMATCH.md)
+- [RMV PLMNMATCH](command/UNC/20.15.2/RMV-PLMNMATCH.md)
 
 ## 证据
 

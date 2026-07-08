@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-REDUNDUSER]] · LST REDUNDUSER
-- [[command/UDG/20.15.2/SET-REDUNDUSER]] · SET REDUNDUSER
+- [LST REDUNDUSER](command/UDG/20.15.2/LST-REDUNDUSER.md)
+- [SET REDUNDUSER](command/UDG/20.15.2/SET-REDUNDUSER.md)
 
 ## 证据
 

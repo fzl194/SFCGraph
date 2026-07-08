@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-PORTGROUP]] · ADD PORTGROUP
-- [[command/UDG/20.15.2/LST-PORTGROUP]] · LST PORTGROUP
-- [[command/UDG/20.15.2/RMV-PORTGROUP]] · RMV PORTGROUP
+- [ADD PORTGROUP](command/UDG/20.15.2/ADD-PORTGROUP.md)
+- [LST PORTGROUP](command/UDG/20.15.2/LST-PORTGROUP.md)
+- [RMV PORTGROUP](command/UDG/20.15.2/RMV-PORTGROUP.md)
 
 ## 证据
 

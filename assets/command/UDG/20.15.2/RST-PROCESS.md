@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PROCESS]] · 复位进程（PROCESS）
+- [复位进程（PROCESS）](configobject/UDG/20.15.2/PROCESS.md)
 
 ## 使用实例
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/S1SMARTRULE]] · S1模式信令抑制规则（S1SMARTRULE）
+- [S1模式信令抑制规则（S1SMARTRULE）](configobject/UNC/20.15.2/S1SMARTRULE.md)
 
 ## 使用实例
 

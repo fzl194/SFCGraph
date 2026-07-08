@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CACHESPECS]] · LST CACHESPECS
-- [[command/UNC/20.15.2/SET-CACHESPECS]] · SET CACHESPECS
+- [LST CACHESPECS](command/UNC/20.15.2/LST-CACHESPECS.md)
+- [SET CACHESPECS](command/UNC/20.15.2/SET-CACHESPECS.md)
 
 ## 证据
 

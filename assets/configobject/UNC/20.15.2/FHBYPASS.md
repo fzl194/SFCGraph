@@ -27,9 +27,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-FHBYPASS]] · LST FHBYPASS
-- [[command/UNC/20.15.2/RTR-FHBYPASS]] · RTR FHBYPASS
-- [[command/UNC/20.15.2/SET-FHBYPASS]] · SET FHBYPASS
+- [LST FHBYPASS](command/UNC/20.15.2/LST-FHBYPASS.md)
+- [RTR FHBYPASS](command/UNC/20.15.2/RTR-FHBYPASS.md)
+- [SET FHBYPASS](command/UNC/20.15.2/SET-FHBYPASS.md)
 
 ## 证据
 

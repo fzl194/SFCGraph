@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MMERESETFLG]] · DSP MMERESETFLG
+- [DSP MMERESETFLG](command/UNC/20.15.2/DSP-MMERESETFLG.md)
 
 ## 证据
 

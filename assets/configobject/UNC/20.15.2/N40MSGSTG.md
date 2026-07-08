@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-N40MSGSTG]] · LST N40MSGSTG
-- [[command/UNC/20.15.2/SET-N40MSGSTG]] · SET N40MSGSTG
+- [LST N40MSGSTG](command/UNC/20.15.2/LST-N40MSGSTG.md)
+- [SET N40MSGSTG](command/UNC/20.15.2/SET-N40MSGSTG.md)
 
 ## 证据
 

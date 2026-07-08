@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VSMFCHGCTRL]] · V-SMF的计费模式和CHF选择参数（VSMFCHGCTRL）
+- [V-SMF的计费模式和CHF选择参数（VSMFCHGCTRL）](configobject/UNC/20.15.2/VSMFCHGCTRL.md)
 
 ## 使用实例
 

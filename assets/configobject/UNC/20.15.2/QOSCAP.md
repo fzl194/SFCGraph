@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-QOSCAP]] · ADD QOSCAP
-- [[command/UNC/20.15.2/LST-QOSCAP]] · LST QOSCAP
-- [[command/UNC/20.15.2/MOD-QOSCAP]] · MOD QOSCAP
-- [[command/UNC/20.15.2/RMV-QOSCAP]] · RMV QOSCAP
+- [ADD QOSCAP](command/UNC/20.15.2/ADD-QOSCAP.md)
+- [LST QOSCAP](command/UNC/20.15.2/LST-QOSCAP.md)
+- [MOD QOSCAP](command/UNC/20.15.2/MOD-QOSCAP.md)
+- [RMV QOSCAP](command/UNC/20.15.2/RMV-QOSCAP.md)
 
 ## 证据
 

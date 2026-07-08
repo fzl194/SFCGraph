@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IPV6GPMEM]] · ADD IPV6GPMEM
-- [[command/UNC/20.15.2/LST-IPV6GPMEM]] · LST IPV6GPMEM
-- [[command/UNC/20.15.2/RMV-IPV6GPMEM]] · RMV IPV6GPMEM
+- [ADD IPV6GPMEM](command/UNC/20.15.2/ADD-IPV6GPMEM.md)
+- [LST IPV6GPMEM](command/UNC/20.15.2/LST-IPV6GPMEM.md)
+- [RMV IPV6GPMEM](command/UNC/20.15.2/RMV-IPV6GPMEM.md)
 
 ## 证据
 

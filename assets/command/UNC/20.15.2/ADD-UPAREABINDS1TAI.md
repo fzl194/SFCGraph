@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UPAREABINDS1TAI]] · UPF服务区名称绑定的4G TAI范围（UPAREABINDS1TAI）
+- [UPF服务区名称绑定的4G TAI范围（UPAREABINDS1TAI）](configobject/UNC/20.15.2/UPAREABINDS1TAI.md)
 
 ## 使用实例
 

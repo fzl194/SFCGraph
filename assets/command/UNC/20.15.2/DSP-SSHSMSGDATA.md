@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SSHSMSGDATA]] · SSH服务器的消息数据（SSHSMSGDATA）
+- [SSH服务器的消息数据（SSHSMSGDATA）](configobject/UNC/20.15.2/SSHSMSGDATA.md)
 
 ## 使用实例
 

@@ -22,17 +22,17 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-IPFARM]] · ADD IPFARM
-- [[command/UDG/20.15.2/DSP-IPFARM]] · DSP IPFARM
-- [[command/UDG/20.15.2/LST-IPFARM]] · LST IPFARM
-- [[command/UDG/20.15.2/MOD-IPFARM]] · MOD IPFARM
-- [[command/UDG/20.15.2/RMV-IPFARM]] · RMV IPFARM
+- [ADD IPFARM](command/UDG/20.15.2/ADD-IPFARM.md)
+- [DSP IPFARM](command/UDG/20.15.2/DSP-IPFARM.md)
+- [LST IPFARM](command/UDG/20.15.2/LST-IPFARM.md)
+- [MOD IPFARM](command/UDG/20.15.2/MOD-IPFARM.md)
+- [RMV IPFARM](command/UDG/20.15.2/RMV-IPFARM.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/IPFARMSERVER]] · IPFARMSERVER
-- [[configobject/UDG/20.15.2/LOGICINF]] · LOGICINF
-- [[configobject/UDG/20.15.2/VPNINST]] · VPNINST
+- [IPFARMSERVER](configobject/UDG/20.15.2/IPFARMSERVER.md)
+- [LOGICINF](configobject/UDG/20.15.2/LOGICINF.md)
+- [VPNINST](configobject/UDG/20.15.2/VPNINST.md)
 
 ## 证据
 

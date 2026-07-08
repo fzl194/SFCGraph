@@ -105,7 +105,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NODECHKPARA]] · 节点检测参数（NODECHKPARA）
+- [节点检测参数（NODECHKPARA）](configobject/UDG/20.15.2/NODECHKPARA.md)
 
 ## 使用实例
 

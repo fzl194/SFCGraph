@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ALMNRMODE]] · LST ALMNRMODE
-- [[command/UNC/20.15.2/SET-ALMNRMODE]] · SET ALMNRMODE
+- [LST ALMNRMODE](command/UNC/20.15.2/LST-ALMNRMODE.md)
+- [SET ALMNRMODE](command/UNC/20.15.2/SET-ALMNRMODE.md)
 
 ## 证据
 

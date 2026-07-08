@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FESTABLESTATICS]] · DSP FESTABLESTATICS
+- [DSP FESTABLESTATICS](command/UNC/20.15.2/DSP-FESTABLESTATICS.md)
 
 ## 证据
 

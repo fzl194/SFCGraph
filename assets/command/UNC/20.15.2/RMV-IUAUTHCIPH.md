@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IUAUTHCIPH]] · Iu模式用户安全参数（IUAUTHCIPH）
+- [Iu模式用户安全参数（IUAUTHCIPH）](configobject/UNC/20.15.2/IUAUTHCIPH.md)
 
 ## 使用实例
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-INTELAPN]] · ADD INTELAPN
-- [[command/UNC/20.15.2/LST-INTELAPN]] · LST INTELAPN
-- [[command/UNC/20.15.2/RMV-INTELAPN]] · RMV INTELAPN
+- [ADD INTELAPN](command/UNC/20.15.2/ADD-INTELAPN.md)
+- [LST INTELAPN](command/UNC/20.15.2/LST-INTELAPN.md)
+- [RMV INTELAPN](command/UNC/20.15.2/RMV-INTELAPN.md)
 
 ## 证据
 

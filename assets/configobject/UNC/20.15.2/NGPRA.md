@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGPRA]] · ADD NGPRA
-- [[command/UNC/20.15.2/LST-NGPRA]] · LST NGPRA
-- [[command/UNC/20.15.2/RMV-NGPRA]] · RMV NGPRA
+- [ADD NGPRA](command/UNC/20.15.2/ADD-NGPRA.md)
+- [LST NGPRA](command/UNC/20.15.2/LST-NGPRA.md)
+- [RMV NGPRA](command/UNC/20.15.2/RMV-NGPRA.md)
 
 ## 证据
 

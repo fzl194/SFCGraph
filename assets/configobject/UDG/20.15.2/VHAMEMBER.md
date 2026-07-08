@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-VHAMEMBER]] · DSP VHAMEMBER
+- [DSP VHAMEMBER](command/UDG/20.15.2/DSP-VHAMEMBER.md)
 
 ## 证据
 

@@ -27,9 +27,9 @@ Import Target：PE收到其它PE发布的VPN-IPv4路由时，检查其Export Tar
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-VPNTARGET]] · ADD VPNTARGET
-- [[command/UNC/20.15.2/LST-VPNTARGET]] · LST VPNTARGET
-- [[command/UNC/20.15.2/RMV-VPNTARGET]] · RMV VPNTARGET
+- [ADD VPNTARGET](command/UNC/20.15.2/ADD-VPNTARGET.md)
+- [LST VPNTARGET](command/UNC/20.15.2/LST-VPNTARGET.md)
+- [RMV VPNTARGET](command/UNC/20.15.2/RMV-VPNTARGET.md)
 
 ## 证据
 

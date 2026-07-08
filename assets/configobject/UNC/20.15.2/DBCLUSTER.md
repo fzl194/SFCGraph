@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DBCLUSTER]] · DSP DBCLUSTER
+- [DSP DBCLUSTER](command/UNC/20.15.2/DSP-DBCLUSTER.md)
 
 ## 证据
 

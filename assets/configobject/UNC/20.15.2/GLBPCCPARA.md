@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GLBPCCPARA]] · LST GLBPCCPARA
+- [LST GLBPCCPARA](command/UNC/20.15.2/LST-GLBPCCPARA.md)
 
 ## 证据
 

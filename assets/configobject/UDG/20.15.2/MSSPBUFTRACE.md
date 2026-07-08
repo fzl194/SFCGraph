@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/SET-MSSPBUFTRACE]] · SET MSSPBUFTRACE
+- [SET MSSPBUFTRACE](command/UDG/20.15.2/SET-MSSPBUFTRACE.md)
 
 ## 证据
 

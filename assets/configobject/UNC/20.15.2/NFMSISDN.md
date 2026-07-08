@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFMSISDN]] · ADD NFMSISDN
-- [[command/UNC/20.15.2/LST-NFMSISDN]] · LST NFMSISDN
-- [[command/UNC/20.15.2/RMV-NFMSISDN]] · RMV NFMSISDN
+- [ADD NFMSISDN](command/UNC/20.15.2/ADD-NFMSISDN.md)
+- [LST NFMSISDN](command/UNC/20.15.2/LST-NFMSISDN.md)
+- [RMV NFMSISDN](command/UNC/20.15.2/RMV-NFMSISDN.md)
 
 ## 证据
 

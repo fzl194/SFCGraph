@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-VNODE]] · LST VNODE
-- [[command/UNC/20.15.2/RST-VNODE]] · RST VNODE
+- [LST VNODE](command/UNC/20.15.2/LST-VNODE.md)
+- [RST VNODE](command/UNC/20.15.2/RST-VNODE.md)
 
 ## 证据
 

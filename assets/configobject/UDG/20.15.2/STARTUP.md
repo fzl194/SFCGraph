@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-STARTUP]] · DSP STARTUP
+- [DSP STARTUP](command/UDG/20.15.2/DSP-STARTUP.md)
 
 ## 证据
 

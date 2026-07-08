@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSPMDMATCH]] · DSP MSSPMDMATCH
-- [[command/UDG/20.15.2/SET-MSSPMDMATCH]] · SET MSSPMDMATCH
+- [DSP MSSPMDMATCH](command/UDG/20.15.2/DSP-MSSPMDMATCH.md)
+- [SET MSSPMDMATCH](command/UDG/20.15.2/SET-MSSPMDMATCH.md)
 
 ## 证据
 

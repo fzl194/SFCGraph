@@ -23,18 +23,18 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-L3VPNINST]] · ADD L3VPNINST
-- [[command/UDG/20.15.2/LST-L3VPNINST]] · LST L3VPNINST
-- [[command/UDG/20.15.2/MOD-L3VPNINST]] · MOD L3VPNINST
-- [[command/UDG/20.15.2/RMV-L3VPNINST]] · RMV L3VPNINST
+- [ADD L3VPNINST](command/UDG/20.15.2/ADD-L3VPNINST.md)
+- [LST L3VPNINST](command/UDG/20.15.2/LST-L3VPNINST.md)
+- [MOD L3VPNINST](command/UDG/20.15.2/MOD-L3VPNINST.md)
+- [RMV L3VPNINST](command/UDG/20.15.2/RMV-L3VPNINST.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/BFDSESSION]] · BFDSESSION
-- [[configobject/UDG/20.15.2/IPBINDVPN]] · IPBINDVPN
-- [[configobject/UDG/20.15.2/OSPF]] · OSPF
-- [[configobject/UDG/20.15.2/SRROUTE]] · SRROUTE
-- [[configobject/UDG/20.15.2/VPNINSTAF]] · VPNINSTAF
+- [BFDSESSION](configobject/UDG/20.15.2/BFDSESSION.md)
+- [IPBINDVPN](configobject/UDG/20.15.2/IPBINDVPN.md)
+- [OSPF](configobject/UDG/20.15.2/OSPF.md)
+- [SRROUTE](configobject/UDG/20.15.2/SRROUTE.md)
+- [VPNINSTAF](configobject/UDG/20.15.2/VPNINSTAF.md)
 
 ## 证据
 

@@ -30,7 +30,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-NFOFFLINE]] · ACT NFOFFLINE
+- [ACT NFOFFLINE](command/UNC/20.15.2/ACT-NFOFFLINE.md)
 
 ## 证据
 

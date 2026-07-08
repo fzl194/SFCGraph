@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMSCHFGRP]] · LST SMSCHFGRP
-- [[command/UNC/20.15.2/SET-SMSCHFGRP]] · SET SMSCHFGRP
+- [LST SMSCHFGRP](command/UNC/20.15.2/LST-SMSCHFGRP.md)
+- [SET SMSCHFGRP](command/UNC/20.15.2/SET-SMSCHFGRP.md)
 
 ## 证据
 

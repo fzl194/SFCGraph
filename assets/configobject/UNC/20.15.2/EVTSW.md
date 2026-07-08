@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-EVTSW]] · LST EVTSW
-- [[command/UNC/20.15.2/SET-EVTSW]] · SET EVTSW
+- [LST EVTSW](command/UNC/20.15.2/LST-EVTSW.md)
+- [SET EVTSW](command/UNC/20.15.2/SET-EVTSW.md)
 
 ## 证据
 

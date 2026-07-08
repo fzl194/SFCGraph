@@ -22,11 +22,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DMLKS]] · ADD DMLKS
-- [[command/UNC/20.15.2/DSP-DMLKS]] · DSP DMLKS
-- [[command/UNC/20.15.2/LST-DMLKS]] · LST DMLKS
-- [[command/UNC/20.15.2/MOD-DMLKS]] · MOD DMLKS
-- [[command/UNC/20.15.2/RMV-DMLKS]] · RMV DMLKS
+- [ADD DMLKS](command/UNC/20.15.2/ADD-DMLKS.md)
+- [DSP DMLKS](command/UNC/20.15.2/DSP-DMLKS.md)
+- [LST DMLKS](command/UNC/20.15.2/LST-DMLKS.md)
+- [MOD DMLKS](command/UNC/20.15.2/MOD-DMLKS.md)
+- [RMV DMLKS](command/UNC/20.15.2/RMV-DMLKS.md)
 
 ## 证据
 

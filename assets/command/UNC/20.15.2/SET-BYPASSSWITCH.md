@@ -48,7 +48,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/BYPASSSWITCH]] · 节点自动进入BYPASS开关（BYPASSSWITCH）
+- [节点自动进入BYPASS开关（BYPASSSWITCH）](configobject/UNC/20.15.2/BYPASSSWITCH.md)
 
 ## 使用实例
 

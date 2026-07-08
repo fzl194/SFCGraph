@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSPROCTYPE]] · DSP MSPROCTYPE
+- [DSP MSPROCTYPE](command/UDG/20.15.2/DSP-MSPROCTYPE.md)
 
 ## 证据
 

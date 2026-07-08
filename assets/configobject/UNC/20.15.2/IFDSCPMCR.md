@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IFDSCPMCR]] · LST IFDSCPMCR
-- [[command/UNC/20.15.2/SET-IFDSCPMCR]] · SET IFDSCPMCR
+- [LST IFDSCPMCR](command/UNC/20.15.2/LST-IFDSCPMCR.md)
+- [SET IFDSCPMCR](command/UNC/20.15.2/SET-IFDSCPMCR.md)
 
 ## 证据
 

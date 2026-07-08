@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-SMFCACHE]] · CLR SMFCACHE
-- [[command/UNC/20.15.2/DSP-SMFCACHE]] · DSP SMFCACHE
+- [CLR SMFCACHE](command/UNC/20.15.2/CLR-SMFCACHE.md)
+- [DSP SMFCACHE](command/UNC/20.15.2/DSP-SMFCACHE.md)
 
 ## 证据
 

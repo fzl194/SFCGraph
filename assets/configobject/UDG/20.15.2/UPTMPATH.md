@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPTMPATH]] · LST UPTMPATH
-- [[command/UDG/20.15.2/SET-UPTMPATH]] · SET UPTMPATH
+- [LST UPTMPATH](command/UDG/20.15.2/LST-UPTMPATH.md)
+- [SET UPTMPATH](command/UDG/20.15.2/SET-UPTMPATH.md)
 
 ## 证据
 

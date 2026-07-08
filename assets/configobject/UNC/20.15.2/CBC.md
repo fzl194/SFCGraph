@@ -24,11 +24,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CBC]] · ADD CBC
-- [[command/UNC/20.15.2/DSP-CBC]] · DSP CBC
-- [[command/UNC/20.15.2/LST-CBC]] · LST CBC
-- [[command/UNC/20.15.2/MOD-CBC]] · MOD CBC
-- [[command/UNC/20.15.2/RMV-CBC]] · RMV CBC
+- [ADD CBC](command/UNC/20.15.2/ADD-CBC.md)
+- [DSP CBC](command/UNC/20.15.2/DSP-CBC.md)
+- [LST CBC](command/UNC/20.15.2/LST-CBC.md)
+- [MOD CBC](command/UNC/20.15.2/MOD-CBC.md)
+- [RMV CBC](command/UNC/20.15.2/RMV-CBC.md)
 
 ## 证据
 

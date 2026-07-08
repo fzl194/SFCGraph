@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CERTFILE]] · 证书（CERTFILE）
+- [证书（CERTFILE）](configobject/UNC/20.15.2/CERTFILE.md)
 
 ## 使用实例
 

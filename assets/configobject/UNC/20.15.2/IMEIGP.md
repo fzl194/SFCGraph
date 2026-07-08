@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMEIGP]] · ADD IMEIGP
-- [[command/UNC/20.15.2/LST-IMEIGP]] · LST IMEIGP
-- [[command/UNC/20.15.2/MOD-IMEIGP]] · MOD IMEIGP
-- [[command/UNC/20.15.2/RMV-IMEIGP]] · RMV IMEIGP
+- [ADD IMEIGP](command/UNC/20.15.2/ADD-IMEIGP.md)
+- [LST IMEIGP](command/UNC/20.15.2/LST-IMEIGP.md)
+- [MOD IMEIGP](command/UNC/20.15.2/MOD-IMEIGP.md)
+- [RMV IMEIGP](command/UNC/20.15.2/RMV-IMEIGP.md)
 
 ## 证据
 

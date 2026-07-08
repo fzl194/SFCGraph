@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/VONRPERFTDELAY]] · 理想到达报文的最小时延偏差、固定传输时延（VONRPERFTDELAY）
+- [理想到达报文的最小时延偏差、固定传输时延（VONRPERFTDELAY）](configobject/UDG/20.15.2/VONRPERFTDELAY.md)
 
 ## 使用实例
 

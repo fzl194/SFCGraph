@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/L2RULEGRPBIND]] · 层二规则组与用户的绑定关系（L2RULEGRPBIND）
+- [层二规则组与用户的绑定关系（L2RULEGRPBIND）](configobject/UNC/20.15.2/L2RULEGRPBIND.md)
 
 ## 使用实例
 

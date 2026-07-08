@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-INNERCOMPVERSION]] · DSP INNERCOMPVERSION
+- [DSP INNERCOMPVERSION](command/UNC/20.15.2/DSP-INNERCOMPVERSION.md)
 
 ## 证据
 

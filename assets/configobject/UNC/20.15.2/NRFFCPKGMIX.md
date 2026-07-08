@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFFCPKGMIX]] · LST NRFFCPKGMIX
-- [[command/UNC/20.15.2/SET-NRFFCPKGMIX]] · SET NRFFCPKGMIX
+- [LST NRFFCPKGMIX](command/UNC/20.15.2/LST-NRFFCPKGMIX.md)
+- [SET NRFFCPKGMIX](command/UNC/20.15.2/SET-NRFFCPKGMIX.md)
 
 ## 证据
 

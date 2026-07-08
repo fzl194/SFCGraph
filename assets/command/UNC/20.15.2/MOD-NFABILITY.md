@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NFABILITY]] · 配置NF的能力信息（NFABILITY）
+- [配置NF的能力信息（NFABILITY）](configobject/UNC/20.15.2/NFABILITY.md)
 
 ## 使用实例
 

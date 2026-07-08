@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SMARTAPN]] · ADD SMARTAPN
-- [[command/UNC/20.15.2/LST-SMARTAPN]] · LST SMARTAPN
-- [[command/UNC/20.15.2/MOD-SMARTAPN]] · MOD SMARTAPN
-- [[command/UNC/20.15.2/RMV-SMARTAPN]] · RMV SMARTAPN
+- [ADD SMARTAPN](command/UNC/20.15.2/ADD-SMARTAPN.md)
+- [LST SMARTAPN](command/UNC/20.15.2/LST-SMARTAPN.md)
+- [MOD SMARTAPN](command/UNC/20.15.2/MOD-SMARTAPN.md)
+- [RMV SMARTAPN](command/UNC/20.15.2/RMV-SMARTAPN.md)
 
 ## 证据
 

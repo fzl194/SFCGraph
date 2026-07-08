@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PGWRNSI]] · ADD PGWRNSI
-- [[command/UNC/20.15.2/LST-PGWRNSI]] · LST PGWRNSI
-- [[command/UNC/20.15.2/MOD-PGWRNSI]] · MOD PGWRNSI
-- [[command/UNC/20.15.2/RMV-PGWRNSI]] · RMV PGWRNSI
+- [ADD PGWRNSI](command/UNC/20.15.2/ADD-PGWRNSI.md)
+- [LST PGWRNSI](command/UNC/20.15.2/LST-PGWRNSI.md)
+- [MOD PGWRNSI](command/UNC/20.15.2/MOD-PGWRNSI.md)
+- [RMV PGWRNSI](command/UNC/20.15.2/RMV-PGWRNSI.md)
 
 ## 证据
 

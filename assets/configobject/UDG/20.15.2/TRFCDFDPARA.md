@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TRFCDFDPARA]] · LST TRFCDFDPARA
-- [[command/UDG/20.15.2/SET-TRFCDFDPARA]] · SET TRFCDFDPARA
+- [LST TRFCDFDPARA](command/UDG/20.15.2/LST-TRFCDFDPARA.md)
+- [SET TRFCDFDPARA](command/UDG/20.15.2/SET-TRFCDFDPARA.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CHGDCHAR]] · ADD CHGDCHAR
-- [[command/UNC/20.15.2/LST-CHGDCHAR]] · LST CHGDCHAR
-- [[command/UNC/20.15.2/RMV-CHGDCHAR]] · RMV CHGDCHAR
+- [ADD CHGDCHAR](command/UNC/20.15.2/ADD-CHGDCHAR.md)
+- [LST CHGDCHAR](command/UNC/20.15.2/LST-CHGDCHAR.md)
+- [RMV CHGDCHAR](command/UNC/20.15.2/RMV-CHGDCHAR.md)
 
 ## 证据
 

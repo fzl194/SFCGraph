@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHARGECTRL]] · LST CHARGECTRL
-- [[command/UNC/20.15.2/SET-CHARGECTRL]] · SET CHARGECTRL
+- [LST CHARGECTRL](command/UNC/20.15.2/LST-CHARGECTRL.md)
+- [SET CHARGECTRL](command/UNC/20.15.2/SET-CHARGECTRL.md)
 
 ## 证据
 

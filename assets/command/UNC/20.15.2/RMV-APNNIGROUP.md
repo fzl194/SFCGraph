@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNNIGROUP]] · APNNI组（APNNIGROUP）
+- [APNNI组（APNNIGROUP）](configobject/UNC/20.15.2/APNNIGROUP.md)
 
 ## 使用实例
 

@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-QOSPROP]] · ADD QOSPROP
-- [[command/UNC/20.15.2/LST-QOSPROP]] · LST QOSPROP
-- [[command/UNC/20.15.2/MOD-QOSPROP]] · MOD QOSPROP
-- [[command/UNC/20.15.2/RMV-QOSPROP]] · RMV QOSPROP
+- [ADD QOSPROP](command/UNC/20.15.2/ADD-QOSPROP.md)
+- [LST QOSPROP](command/UNC/20.15.2/LST-QOSPROP.md)
+- [MOD QOSPROP](command/UNC/20.15.2/MOD-QOSPROP.md)
+- [RMV QOSPROP](command/UNC/20.15.2/RMV-QOSPROP.md)
 
 ## 证据
 

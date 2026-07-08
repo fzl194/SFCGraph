@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/OPR-SETPRTGRPSPEC]] · OPR SETPRTGRPSPEC
+- [OPR SETPRTGRPSPEC](command/UNC/20.15.2/OPR-SETPRTGRPSPEC.md)
 
 ## 证据
 

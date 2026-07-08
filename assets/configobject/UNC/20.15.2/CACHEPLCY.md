@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CACHEPLCY]] · LST CACHEPLCY
-- [[command/UNC/20.15.2/SET-CACHEPLCY]] · SET CACHEPLCY
+- [LST CACHEPLCY](command/UNC/20.15.2/LST-CACHEPLCY.md)
+- [SET CACHEPLCY](command/UNC/20.15.2/SET-CACHEPLCY.md)
 
 ## 证据
 

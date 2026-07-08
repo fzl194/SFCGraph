@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TALSTPAGINGPLCY]] · TA List寻呼策略配置（TALSTPAGINGPLCY）
+- [TA List寻呼策略配置（TALSTPAGINGPLCY）](configobject/UNC/20.15.2/TALSTPAGINGPLCY.md)
 
 ## 使用实例
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-USRS1CONN]] · RMV USRS1CONN
+- [RMV USRS1CONN](command/UNC/20.15.2/RMV-USRS1CONN.md)
 
 ## 证据
 

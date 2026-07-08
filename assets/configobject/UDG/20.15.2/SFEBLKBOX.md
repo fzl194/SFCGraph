@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFEBLKBOX]] · DSP SFEBLKBOX
+- [DSP SFEBLKBOX](command/UDG/20.15.2/DSP-SFEBLKBOX.md)
 
 ## 证据
 

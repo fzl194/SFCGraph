@@ -23,21 +23,21 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-APN]] · ADD APN
-- [[command/UDG/20.15.2/LCK-APN]] · LCK APN
-- [[command/UDG/20.15.2/LST-APN]] · LST APN
-- [[command/UDG/20.15.2/MOD-APN]] · MOD APN
-- [[command/UDG/20.15.2/RMV-APN]] · RMV APN
+- [ADD APN](command/UDG/20.15.2/ADD-APN.md)
+- [LCK APN](command/UDG/20.15.2/LCK-APN.md)
+- [LST APN](command/UDG/20.15.2/LST-APN.md)
+- [MOD APN](command/UDG/20.15.2/MOD-APN.md)
+- [RMV APN](command/UDG/20.15.2/RMV-APN.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/ACLBINDAPN]] · ACLBINDAPN
-- [[configobject/UDG/20.15.2/APNBINDBWMUSRG]] · APNBINDBWMUSRG
-- [[configobject/UDG/20.15.2/APNIMSATTR]] · APNIMSATTR
-- [[configobject/UDG/20.15.2/APNIMSSIGFLTR]] · APNIMSSIGFLTR
-- [[configobject/UDG/20.15.2/APNTETHERDETSW]] · APNTETHERDETSW
-- [[configobject/UDG/20.15.2/POOLGRPMAP]] · POOLGRPMAP
-- [[configobject/UDG/20.15.2/VPNINST]] · VPNINST
+- [ACLBINDAPN](configobject/UDG/20.15.2/ACLBINDAPN.md)
+- [APNBINDBWMUSRG](configobject/UDG/20.15.2/APNBINDBWMUSRG.md)
+- [APNIMSATTR](configobject/UDG/20.15.2/APNIMSATTR.md)
+- [APNIMSSIGFLTR](configobject/UDG/20.15.2/APNIMSSIGFLTR.md)
+- [APNTETHERDETSW](configobject/UDG/20.15.2/APNTETHERDETSW.md)
+- [POOLGRPMAP](configobject/UDG/20.15.2/POOLGRPMAP.md)
+- [VPNINST](configobject/UDG/20.15.2/VPNINST.md)
 
 ## 证据
 

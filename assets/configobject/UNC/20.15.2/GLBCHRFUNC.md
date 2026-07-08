@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GLBCHRFUNC]] · LST GLBCHRFUNC
-- [[command/UNC/20.15.2/SET-GLBCHRFUNC]] · SET GLBCHRFUNC
+- [LST GLBCHRFUNC](command/UNC/20.15.2/LST-GLBCHRFUNC.md)
+- [SET GLBCHRFUNC](command/UNC/20.15.2/SET-GLBCHRFUNC.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IUPFSELFAIL]] · LST IUPFSELFAIL
-- [[command/UNC/20.15.2/SET-IUPFSELFAIL]] · SET IUPFSELFAIL
+- [LST IUPFSELFAIL](command/UNC/20.15.2/LST-IUPFSELFAIL.md)
+- [SET IUPFSELFAIL](command/UNC/20.15.2/SET-IUPFSELFAIL.md)
 
 ## 证据
 

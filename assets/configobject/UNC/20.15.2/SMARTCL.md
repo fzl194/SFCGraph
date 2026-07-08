@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMARTCL]] · LST SMARTCL
-- [[command/UNC/20.15.2/SET-SMARTCL]] · SET SMARTCL
+- [LST SMARTCL](command/UNC/20.15.2/LST-SMARTCL.md)
+- [SET SMARTCL](command/UNC/20.15.2/SET-SMARTCL.md)
 
 ## 证据
 

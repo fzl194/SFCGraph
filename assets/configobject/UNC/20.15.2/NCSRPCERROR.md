@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NCSRPCERROR]] · DSP NCSRPCERROR
+- [DSP NCSRPCERROR](command/UNC/20.15.2/DSP-NCSRPCERROR.md)
 
 ## 证据
 

@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NCSPROXYFWD]] · NETCONF代理转发策略（NCSPROXYFWD）
+- [NETCONF代理转发策略（NCSPROXYFWD）](configobject/UDG/20.15.2/NCSPROXYFWD.md)
 
 ## 使用实例
 

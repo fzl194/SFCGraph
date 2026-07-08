@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PSCSHSS]] · ADD PSCSHSS
-- [[command/UNC/20.15.2/LST-PSCSHSS]] · LST PSCSHSS
-- [[command/UNC/20.15.2/RMV-PSCSHSS]] · RMV PSCSHSS
+- [ADD PSCSHSS](command/UNC/20.15.2/ADD-PSCSHSS.md)
+- [LST PSCSHSS](command/UNC/20.15.2/LST-PSCSHSS.md)
+- [RMV PSCSHSS](command/UNC/20.15.2/RMV-PSCSHSS.md)
 
 ## 证据
 

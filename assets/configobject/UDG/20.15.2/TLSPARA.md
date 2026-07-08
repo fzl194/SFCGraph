@@ -33,10 +33,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-TLSPARA]] · ADD TLSPARA
-- [[command/UDG/20.15.2/LST-TLSPARA]] · LST TLSPARA
-- [[command/UDG/20.15.2/MOD-TLSPARA]] · MOD TLSPARA
-- [[command/UDG/20.15.2/RMV-TLSPARA]] · RMV TLSPARA
+- [ADD TLSPARA](command/UDG/20.15.2/ADD-TLSPARA.md)
+- [LST TLSPARA](command/UDG/20.15.2/LST-TLSPARA.md)
+- [MOD TLSPARA](command/UDG/20.15.2/MOD-TLSPARA.md)
+- [RMV TLSPARA](command/UDG/20.15.2/RMV-TLSPARA.md)
 
 ## 证据
 

@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-VLRFAULTEN]] · LST VLRFAULTEN
-- [[command/UNC/20.15.2/SET-VLRFAULTEN]] · SET VLRFAULTEN
+- [LST VLRFAULTEN](command/UNC/20.15.2/LST-VLRFAULTEN.md)
+- [SET VLRFAULTEN](command/UNC/20.15.2/SET-VLRFAULTEN.md)
 
 ## 证据
 

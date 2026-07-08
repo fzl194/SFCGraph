@@ -48,7 +48,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MTSCFG]] · 消息跟踪配置参数（MTSCFG）
+- [消息跟踪配置参数（MTSCFG）](configobject/UNC/20.15.2/MTSCFG.md)
 
 ## 使用实例
 

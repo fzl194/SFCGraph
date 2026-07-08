@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MMLTRAN]] · 取消配置（MMLTRAN）
+- [取消配置（MMLTRAN）](configobject/UNC/20.15.2/MMLTRAN.md)
 
 ## 使用实例
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RPTGLBCFG]] · LST RPTGLBCFG
-- [[command/UDG/20.15.2/SET-RPTGLBCFG]] · SET RPTGLBCFG
+- [LST RPTGLBCFG](command/UDG/20.15.2/LST-RPTGLBCFG.md)
+- [SET RPTGLBCFG](command/UDG/20.15.2/SET-RPTGLBCFG.md)
 
 ## 证据
 

@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OSSYSINFO]] · OS系统信息（OSSYSINFO）
+- [OS系统信息（OSSYSINFO）](configobject/UDG/20.15.2/OSSYSINFO.md)
 
 ## 使用实例
 

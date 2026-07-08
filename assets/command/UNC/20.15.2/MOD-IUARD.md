@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IUARD]] · Iu模式接入限制参数（IUARD）
+- [Iu模式接入限制参数（IUARD）](configobject/UNC/20.15.2/IUARD.md)
 
 ## 使用实例
 

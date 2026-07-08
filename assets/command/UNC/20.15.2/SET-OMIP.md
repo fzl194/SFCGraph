@@ -55,7 +55,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OMIP]] · OM IP（OMIP）
+- [OM IP（OMIP）](configobject/UNC/20.15.2/OMIP.md)
 
 ## 使用实例
 

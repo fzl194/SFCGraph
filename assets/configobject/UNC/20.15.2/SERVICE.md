@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SERVICE]] · DSP SERVICE
-- [[command/UNC/20.15.2/RST-SERVICE]] · RST SERVICE
+- [DSP SERVICE](command/UNC/20.15.2/DSP-SERVICE.md)
+- [RST SERVICE](command/UNC/20.15.2/RST-SERVICE.md)
 
 ## 证据
 

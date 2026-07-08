@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LOGICIP]] · 逻辑IP地址信息（LOGICIP）
+- [逻辑IP地址信息（LOGICIP）](configobject/UDG/20.15.2/LOGICIP.md)
 
 ## 使用实例
 

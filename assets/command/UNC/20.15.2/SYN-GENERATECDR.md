@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/GENERATECDR]] · 立即生成话单（GENERATECDR）
+- [立即生成话单（GENERATECDR）](configobject/UNC/20.15.2/GENERATECDR.md)
 
 ## 使用实例
 

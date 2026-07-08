@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LOGBUFFER]] · Logbuffer中的数据（LOGBUFFER）
+- [Logbuffer中的数据（LOGBUFFER）](configobject/UDG/20.15.2/LOGBUFFER.md)
 
 ## 使用实例
 

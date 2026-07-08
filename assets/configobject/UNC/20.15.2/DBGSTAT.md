@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DBGSTAT]] · DSP DBGSTAT
+- [DSP DBGSTAT](command/UNC/20.15.2/DSP-DBGSTAT.md)
 
 ## 证据
 

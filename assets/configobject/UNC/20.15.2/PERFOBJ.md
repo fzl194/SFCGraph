@@ -24,11 +24,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PERFOBJ]] · ADD PERFOBJ
-- [[command/UNC/20.15.2/DSP-PERFOBJ]] · DSP PERFOBJ
-- [[command/UNC/20.15.2/LST-PERFOBJ]] · LST PERFOBJ
-- [[command/UNC/20.15.2/MOD-PERFOBJ]] · MOD PERFOBJ
-- [[command/UNC/20.15.2/RMV-PERFOBJ]] · RMV PERFOBJ
+- [ADD PERFOBJ](command/UNC/20.15.2/ADD-PERFOBJ.md)
+- [DSP PERFOBJ](command/UNC/20.15.2/DSP-PERFOBJ.md)
+- [LST PERFOBJ](command/UNC/20.15.2/LST-PERFOBJ.md)
+- [MOD PERFOBJ](command/UNC/20.15.2/MOD-PERFOBJ.md)
+- [RMV PERFOBJ](command/UNC/20.15.2/RMV-PERFOBJ.md)
 
 ## 证据
 

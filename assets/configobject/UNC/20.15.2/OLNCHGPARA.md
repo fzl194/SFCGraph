@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OLNCHGPARA]] · LST OLNCHGPARA
-- [[command/UNC/20.15.2/SET-OLNCHGPARA]] · SET OLNCHGPARA
+- [LST OLNCHGPARA](command/UNC/20.15.2/LST-OLNCHGPARA.md)
+- [SET OLNCHGPARA](command/UNC/20.15.2/SET-OLNCHGPARA.md)
 
 ## 证据
 

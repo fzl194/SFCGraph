@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RESDEADLOOPINFO]] · 死循环信息（RESDEADLOOPINFO）
+- [死循环信息（RESDEADLOOPINFO）](configobject/UNC/20.15.2/RESDEADLOOPINFO.md)
 
 ## 使用实例
 

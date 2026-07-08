@@ -63,7 +63,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SDCFG]] · 签约数据配置（SDCFG）
+- [签约数据配置（SDCFG）](configobject/UNC/20.15.2/SDCFG.md)
 
 ## 使用实例
 

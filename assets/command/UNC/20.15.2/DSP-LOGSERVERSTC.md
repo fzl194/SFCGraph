@@ -39,7 +39,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LOGSERVERSTC]] · 日志中心5分钟内消息统计信息（LOGSERVERSTC）
+- [日志中心5分钟内消息统计信息（LOGSERVERSTC）](configobject/UNC/20.15.2/LOGSERVERSTC.md)
 
 ## 使用实例
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NCSPROXYFWD]] · DSP NCSPROXYFWD
+- [DSP NCSPROXYFWD](command/UDG/20.15.2/DSP-NCSPROXYFWD.md)
 
 ## 证据
 

@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MSCPARA]] · MSC参数（MSCPARA）
+- [MSC参数（MSCPARA）](configobject/UNC/20.15.2/MSCPARA.md)
 
 ## 使用实例
 

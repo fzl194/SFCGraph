@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CMFDATA]] · 强制推送集群管理数据（CMFDATA）
+- [强制推送集群管理数据（CMFDATA）](configobject/UDG/20.15.2/CMFDATA.md)
 
 ## 使用实例
 

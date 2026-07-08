@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CMFFC]] · LST CMFFC
-- [[command/UNC/20.15.2/SET-CMFFC]] · SET CMFFC
+- [LST CMFFC](command/UNC/20.15.2/LST-CMFFC.md)
+- [SET CMFFC](command/UNC/20.15.2/SET-CMFFC.md)
 
 ## 证据
 

@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/VERIFICATION]] · 一次FEI与FES之间的对账操作（VERIFICATION）
+- [一次FEI与FES之间的对账操作（VERIFICATION）](configobject/UDG/20.15.2/VERIFICATION.md)
 
 ## 使用实例
 

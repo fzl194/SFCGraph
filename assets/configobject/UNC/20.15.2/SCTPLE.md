@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCTPLE]] · ADD SCTPLE
-- [[command/UNC/20.15.2/LST-SCTPLE]] · LST SCTPLE
-- [[command/UNC/20.15.2/MOD-SCTPLE]] · MOD SCTPLE
-- [[command/UNC/20.15.2/RMV-SCTPLE]] · RMV SCTPLE
+- [ADD SCTPLE](command/UNC/20.15.2/ADD-SCTPLE.md)
+- [LST SCTPLE](command/UNC/20.15.2/LST-SCTPLE.md)
+- [MOD SCTPLE](command/UNC/20.15.2/MOD-SCTPLE.md)
+- [RMV SCTPLE](command/UNC/20.15.2/RMV-SCTPLE.md)
 
 ## 证据
 

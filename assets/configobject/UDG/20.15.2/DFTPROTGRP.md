@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DFTPROTGRP]] · LST DFTPROTGRP
+- [LST DFTPROTGRP](command/UDG/20.15.2/LST-DFTPROTGRP.md)
 
 ## 证据
 

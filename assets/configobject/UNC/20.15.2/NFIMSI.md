@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFIMSI]] · ADD NFIMSI
-- [[command/UNC/20.15.2/LST-NFIMSI]] · LST NFIMSI
-- [[command/UNC/20.15.2/RMV-NFIMSI]] · RMV NFIMSI
+- [ADD NFIMSI](command/UNC/20.15.2/ADD-NFIMSI.md)
+- [LST NFIMSI](command/UNC/20.15.2/LST-NFIMSI.md)
+- [RMV NFIMSI](command/UNC/20.15.2/RMV-NFIMSI.md)
 
 ## 证据
 

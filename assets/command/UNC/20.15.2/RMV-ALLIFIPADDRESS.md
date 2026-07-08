@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ALLIFIPADDRESS]] · 批量删除接口下IP地址（ALLIFIPADDRESS）
+- [批量删除接口下IP地址（ALLIFIPADDRESS）](configobject/UNC/20.15.2/ALLIFIPADDRESS.md)
 
 ## 使用实例
 

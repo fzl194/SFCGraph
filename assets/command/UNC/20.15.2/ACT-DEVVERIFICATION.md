@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DEVVERIFICATION]] · 触发设备对账（DEVVERIFICATION）
+- [触发设备对账（DEVVERIFICATION）](configobject/UNC/20.15.2/DEVVERIFICATION.md)
 
 ## 使用实例
 

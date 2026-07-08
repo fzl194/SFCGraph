@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DBPLUGIN]] · DSP DBPLUGIN
+- [DSP DBPLUGIN](command/UDG/20.15.2/DSP-DBPLUGIN.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSDEBUGINFOM]] · DSP MSSDEBUGINFOM
+- [DSP MSSDEBUGINFOM](command/UDG/20.15.2/DSP-MSSDEBUGINFOM.md)
 
 ## 证据
 

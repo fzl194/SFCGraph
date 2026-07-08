@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFCONNPLCY]] · LST NRFCONNPLCY
-- [[command/UNC/20.15.2/SET-NRFCONNPLCY]] · SET NRFCONNPLCY
+- [LST NRFCONNPLCY](command/UNC/20.15.2/LST-NRFCONNPLCY.md)
+- [SET NRFCONNPLCY](command/UNC/20.15.2/SET-NRFCONNPLCY.md)
 
 ## 证据
 

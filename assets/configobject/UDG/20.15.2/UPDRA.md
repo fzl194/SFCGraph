@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-UPDRA]] · ADD UPDRA
-- [[command/UDG/20.15.2/LST-UPDRA]] · LST UPDRA
-- [[command/UDG/20.15.2/MOD-UPDRA]] · MOD UPDRA
-- [[command/UDG/20.15.2/RMV-UPDRA]] · RMV UPDRA
+- [ADD UPDRA](command/UDG/20.15.2/ADD-UPDRA.md)
+- [LST UPDRA](command/UDG/20.15.2/LST-UPDRA.md)
+- [MOD UPDRA](command/UDG/20.15.2/MOD-UPDRA.md)
+- [RMV UPDRA](command/UDG/20.15.2/RMV-UPDRA.md)
 
 ## 证据
 

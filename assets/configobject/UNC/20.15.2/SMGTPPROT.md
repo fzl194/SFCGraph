@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMGTPPROT]] · LST SMGTPPROT
-- [[command/UNC/20.15.2/SET-SMGTPPROT]] · SET SMGTPPROT
+- [LST SMGTPPROT](command/UNC/20.15.2/LST-SMGTPPROT.md)
+- [SET SMGTPPROT](command/UNC/20.15.2/SET-SMGTPPROT.md)
 
 ## 证据
 

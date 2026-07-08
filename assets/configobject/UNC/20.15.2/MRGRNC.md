@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MRGRNC]] · ADD MRGRNC
-- [[command/UNC/20.15.2/LST-MRGRNC]] · LST MRGRNC
-- [[command/UNC/20.15.2/RMV-MRGRNC]] · RMV MRGRNC
+- [ADD MRGRNC](command/UNC/20.15.2/ADD-MRGRNC.md)
+- [LST MRGRNC](command/UNC/20.15.2/LST-MRGRNC.md)
+- [RMV MRGRNC](command/UNC/20.15.2/RMV-MRGRNC.md)
 
 ## 证据
 

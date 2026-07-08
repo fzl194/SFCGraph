@@ -35,7 +35,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-UNCINTFALL]] · RMV UNCINTFALL
+- [RMV UNCINTFALL](command/UNC/20.15.2/RMV-UNCINTFALL.md)
 
 ## 证据
 

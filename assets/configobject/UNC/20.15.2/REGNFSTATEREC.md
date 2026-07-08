@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-REGNFSTATEREC]] · DSP REGNFSTATEREC
+- [DSP REGNFSTATEREC](command/UNC/20.15.2/DSP-REGNFSTATEREC.md)
 
 ## 证据
 

@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-STRINGMK]] · ADD STRINGMK
-- [[command/UNC/20.15.2/LST-STRINGMK]] · LST STRINGMK
-- [[command/UNC/20.15.2/MOD-STRINGMK]] · MOD STRINGMK
-- [[command/UNC/20.15.2/RMV-STRINGMK]] · RMV STRINGMK
+- [ADD STRINGMK](command/UNC/20.15.2/ADD-STRINGMK.md)
+- [LST STRINGMK](command/UNC/20.15.2/LST-STRINGMK.md)
+- [MOD STRINGMK](command/UNC/20.15.2/MOD-STRINGMK.md)
+- [RMV STRINGMK](command/UNC/20.15.2/RMV-STRINGMK.md)
 
 ## 证据
 

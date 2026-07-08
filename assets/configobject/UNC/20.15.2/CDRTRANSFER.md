@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CDRTRANSFER]] · LST CDRTRANSFER
-- [[command/UNC/20.15.2/SET-CDRTRANSFER]] · SET CDRTRANSFER
+- [LST CDRTRANSFER](command/UNC/20.15.2/LST-CDRTRANSFER.md)
+- [SET CDRTRANSFER](command/UNC/20.15.2/SET-CDRTRANSFER.md)
 
 ## 证据
 

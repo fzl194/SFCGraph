@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFREGIDSETIDREL]] · AMF区域标识和集合标识的关联关系（NRFREGIDSETIDREL）
+- [AMF区域标识和集合标识的关联关系（NRFREGIDSETIDREL）](configobject/UNC/20.15.2/NRFREGIDSETIDREL.md)
 
 ## 使用实例
 

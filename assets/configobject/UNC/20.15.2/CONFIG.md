@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LCK-CONFIG]] · LCK CONFIG
+- [LCK CONFIG](command/UNC/20.15.2/LCK-CONFIG.md)
 
 ## 证据
 

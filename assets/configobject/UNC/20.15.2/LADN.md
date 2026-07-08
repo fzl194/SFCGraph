@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LADN]] · ADD LADN
-- [[command/UNC/20.15.2/LST-LADN]] · LST LADN
-- [[command/UNC/20.15.2/MOD-LADN]] · MOD LADN
-- [[command/UNC/20.15.2/RMV-LADN]] · RMV LADN
+- [ADD LADN](command/UNC/20.15.2/ADD-LADN.md)
+- [LST LADN](command/UNC/20.15.2/LST-LADN.md)
+- [MOD LADN](command/UNC/20.15.2/MOD-LADN.md)
+- [RMV LADN](command/UNC/20.15.2/RMV-LADN.md)
 
 ## 证据
 

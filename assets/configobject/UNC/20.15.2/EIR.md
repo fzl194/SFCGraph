@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-EIR]] · ADD EIR
-- [[command/UNC/20.15.2/LST-EIR]] · LST EIR
-- [[command/UNC/20.15.2/MOD-EIR]] · MOD EIR
-- [[command/UNC/20.15.2/RMV-EIR]] · RMV EIR
+- [ADD EIR](command/UNC/20.15.2/ADD-EIR.md)
+- [LST EIR](command/UNC/20.15.2/LST-EIR.md)
+- [MOD EIR](command/UNC/20.15.2/MOD-EIR.md)
+- [RMV EIR](command/UNC/20.15.2/RMV-EIR.md)
 
 ## 证据
 

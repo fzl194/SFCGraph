@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PLGPKGSTATE]] · 扩展包运行状态（PLGPKGSTATE）
+- [扩展包运行状态（PLGPKGSTATE）](configobject/UNC/20.15.2/PLGPKGSTATE.md)
 
 ## 使用实例
 

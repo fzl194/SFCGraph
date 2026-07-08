@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RTR-PIMROUTE]] · RTR PIMROUTE
+- [RTR PIMROUTE](command/UNC/20.15.2/RTR-PIMROUTE.md)
 
 ## 证据
 

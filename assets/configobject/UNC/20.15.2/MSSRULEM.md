@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSRULEM]] · DSP MSSRULEM
-- [[command/UNC/20.15.2/SET-MSSRULEM]] · SET MSSRULEM
+- [DSP MSSRULEM](command/UNC/20.15.2/DSP-MSSRULEM.md)
+- [SET MSSRULEM](command/UNC/20.15.2/SET-MSSRULEM.md)
 
 ## 证据
 

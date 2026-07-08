@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FPIFUNC]] · LST FPIFUNC
-- [[command/UDG/20.15.2/SET-FPIFUNC]] · SET FPIFUNC
+- [LST FPIFUNC](command/UDG/20.15.2/LST-FPIFUNC.md)
+- [SET FPIFUNC](command/UDG/20.15.2/SET-FPIFUNC.md)
 
 ## 证据
 

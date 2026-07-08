@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SMFDBGINFO]] · DSP SMFDBGINFO
+- [DSP SMFDBGINFO](command/UNC/20.15.2/DSP-SMFDBGINFO.md)
 
 ## 证据
 

@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NGBINDUEMUTWL]] · 5G LAN组绑定PA口UE互访白名单（NGBINDUEMUTWL）
+- [5G LAN组绑定PA口UE互访白名单（NGBINDUEMUTWL）](configobject/UDG/20.15.2/NGBINDUEMUTWL.md)
 
 ## 使用实例
 

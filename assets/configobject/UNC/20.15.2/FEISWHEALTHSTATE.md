@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FEISWHEALTHSTATE]] · DSP FEISWHEALTHSTATE
+- [DSP FEISWHEALTHSTATE](command/UNC/20.15.2/DSP-FEISWHEALTHSTATE.md)
 
 ## 证据
 

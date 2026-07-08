@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ULCLPROP]] · ADD ULCLPROP
-- [[command/UNC/20.15.2/LST-ULCLPROP]] · LST ULCLPROP
-- [[command/UNC/20.15.2/RMV-ULCLPROP]] · RMV ULCLPROP
+- [ADD ULCLPROP](command/UNC/20.15.2/ADD-ULCLPROP.md)
+- [LST ULCLPROP](command/UNC/20.15.2/LST-ULCLPROP.md)
+- [RMV ULCLPROP](command/UNC/20.15.2/RMV-ULCLPROP.md)
 
 ## 证据
 

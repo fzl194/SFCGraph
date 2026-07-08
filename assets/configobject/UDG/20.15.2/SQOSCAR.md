@@ -19,10 +19,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SQOSCAR]] · ADD SQOSCAR
-- [[command/UDG/20.15.2/LST-SQOSCAR]] · LST SQOSCAR
-- [[command/UDG/20.15.2/MOD-SQOSCAR]] · MOD SQOSCAR
-- [[command/UDG/20.15.2/RMV-SQOSCAR]] · RMV SQOSCAR
+- [ADD SQOSCAR](command/UDG/20.15.2/ADD-SQOSCAR.md)
+- [LST SQOSCAR](command/UDG/20.15.2/LST-SQOSCAR.md)
+- [MOD SQOSCAR](command/UDG/20.15.2/MOD-SQOSCAR.md)
+- [RMV SQOSCAR](command/UDG/20.15.2/RMV-SQOSCAR.md)
 
 ## 证据
 

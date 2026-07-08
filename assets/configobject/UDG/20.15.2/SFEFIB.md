@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFEFIB]] · DSP SFEFIB
+- [DSP SFEFIB](command/UDG/20.15.2/DSP-SFEFIB.md)
 
 ## 证据
 

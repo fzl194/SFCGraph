@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/APPDATA]] · 同步APP配置数据（APPDATA）
+- [同步APP配置数据（APPDATA）](configobject/UDG/20.15.2/APPDATA.md)
 
 ## 使用实例
 

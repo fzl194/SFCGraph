@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RESOMU]] · 倒换主备操作维护单元（RESOMU）
+- [倒换主备操作维护单元（RESOMU）](configobject/UNC/20.15.2/RESOMU.md)
 
 ## 使用实例
 

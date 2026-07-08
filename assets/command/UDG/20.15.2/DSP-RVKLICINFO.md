@@ -36,7 +36,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/RVKLICINFO]] · License失效信息（RVKLICINFO）
+- [License失效信息（RVKLICINFO）](configobject/UDG/20.15.2/RVKLICINFO.md)
 
 ## 使用实例
 

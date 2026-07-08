@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RTR-BFDSESSSTAS]] · RTR BFDSESSSTAS
+- [RTR BFDSESSSTAS](command/UDG/20.15.2/RTR-BFDSESSSTAS.md)
 
 ## 证据
 

@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-M3LE]] · ADD M3LE
-- [[command/UNC/20.15.2/LST-M3LE]] · LST M3LE
-- [[command/UNC/20.15.2/MOD-M3LE]] · MOD M3LE
-- [[command/UNC/20.15.2/RMV-M3LE]] · RMV M3LE
+- [ADD M3LE](command/UNC/20.15.2/ADD-M3LE.md)
+- [LST M3LE](command/UNC/20.15.2/LST-M3LE.md)
+- [MOD M3LE](command/UNC/20.15.2/MOD-M3LE.md)
+- [RMV M3LE](command/UNC/20.15.2/RMV-M3LE.md)
 
 ## 证据
 

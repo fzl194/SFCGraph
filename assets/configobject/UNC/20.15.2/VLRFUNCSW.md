@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-VLRFUNCSW]] · LST VLRFUNCSW
-- [[command/UNC/20.15.2/SET-VLRFUNCSW]] · SET VLRFUNCSW
+- [LST VLRFUNCSW](command/UNC/20.15.2/LST-VLRFUNCSW.md)
+- [SET VLRFUNCSW](command/UNC/20.15.2/SET-VLRFUNCSW.md)
 
 ## 证据
 

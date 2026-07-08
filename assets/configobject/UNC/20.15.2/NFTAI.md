@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFTAI]] · ADD NFTAI
-- [[command/UNC/20.15.2/LST-NFTAI]] · LST NFTAI
-- [[command/UNC/20.15.2/RMV-NFTAI]] · RMV NFTAI
+- [ADD NFTAI](command/UNC/20.15.2/ADD-NFTAI.md)
+- [LST NFTAI](command/UNC/20.15.2/LST-NFTAI.md)
+- [RMV NFTAI](command/UNC/20.15.2/RMV-NFTAI.md)
 
 ## 证据
 

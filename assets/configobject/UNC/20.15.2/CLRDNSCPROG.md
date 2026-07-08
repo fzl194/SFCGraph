@@ -32,7 +32,7 @@ DNS服务器上的数据修改后，可以使用CLR DNSC命令清除MME网元整
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-CLRDNSCPROG]] · DSP CLRDNSCPROG
+- [DSP CLRDNSCPROG](command/UNC/20.15.2/DSP-CLRDNSCPROG.md)
 
 ## 证据
 

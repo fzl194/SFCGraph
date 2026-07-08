@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-LOCALKEYPAIR]] · LST LOCALKEYPAIR
+- [LST LOCALKEYPAIR](command/UDG/20.15.2/LST-LOCALKEYPAIR.md)
 
 ## 证据
 

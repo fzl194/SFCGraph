@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SAIGEO]] · ADD SAIGEO
-- [[command/UNC/20.15.2/LST-SAIGEO]] · LST SAIGEO
-- [[command/UNC/20.15.2/MOD-SAIGEO]] · MOD SAIGEO
-- [[command/UNC/20.15.2/RMV-SAIGEO]] · RMV SAIGEO
+- [ADD SAIGEO](command/UNC/20.15.2/ADD-SAIGEO.md)
+- [LST SAIGEO](command/UNC/20.15.2/LST-SAIGEO.md)
+- [MOD SAIGEO](command/UNC/20.15.2/MOD-SAIGEO.md)
+- [RMV SAIGEO](command/UNC/20.15.2/RMV-SAIGEO.md)
 
 ## 证据
 

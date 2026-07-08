@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CPUECOVMSINFO]] · VM的CPU节能策略（CPUECOVMSINFO）
+- [VM的CPU节能策略（CPUECOVMSINFO）](configobject/UNC/20.15.2/CPUECOVMSINFO.md)
 
 ## 使用实例
 

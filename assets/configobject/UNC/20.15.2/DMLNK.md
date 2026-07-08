@@ -22,13 +22,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-DMLNK]] · ACT DMLNK
-- [[command/UNC/20.15.2/ADD-DMLNK]] · ADD DMLNK
-- [[command/UNC/20.15.2/DEA-DMLNK]] · DEA DMLNK
-- [[command/UNC/20.15.2/DSP-DMLNK]] · DSP DMLNK
-- [[command/UNC/20.15.2/LST-DMLNK]] · LST DMLNK
-- [[command/UNC/20.15.2/MOD-DMLNK]] · MOD DMLNK
-- [[command/UNC/20.15.2/RMV-DMLNK]] · RMV DMLNK
+- [ACT DMLNK](command/UNC/20.15.2/ACT-DMLNK.md)
+- [ADD DMLNK](command/UNC/20.15.2/ADD-DMLNK.md)
+- [DEA DMLNK](command/UNC/20.15.2/DEA-DMLNK.md)
+- [DSP DMLNK](command/UNC/20.15.2/DSP-DMLNK.md)
+- [LST DMLNK](command/UNC/20.15.2/LST-DMLNK.md)
+- [MOD DMLNK](command/UNC/20.15.2/MOD-DMLNK.md)
+- [RMV DMLNK](command/UNC/20.15.2/RMV-DMLNK.md)
 
 ## 证据
 

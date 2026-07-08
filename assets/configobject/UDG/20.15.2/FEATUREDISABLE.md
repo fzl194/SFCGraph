@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/OPR-FEATUREDISABLE]] · OPR FEATUREDISABLE
+- [OPR FEATUREDISABLE](command/UDG/20.15.2/OPR-FEATUREDISABLE.md)
 
 ## 证据
 

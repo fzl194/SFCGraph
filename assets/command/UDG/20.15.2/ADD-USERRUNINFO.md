@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/USERRUNINFO]] · 网关对IMSI/MSISDN指定的用户的运行信息进行收集配置（USERRUNINFO）
+- [网关对IMSI/MSISDN指定的用户的运行信息进行收集配置（USERRUNINFO）](configobject/UDG/20.15.2/USERRUNINFO.md)
 
 ## 使用实例
 

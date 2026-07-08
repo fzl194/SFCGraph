@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-AGFCHGINFO]] · DSP AGFCHGINFO
-- [[command/UNC/20.15.2/RMV-AGFCHGINFO]] · RMV AGFCHGINFO
+- [DSP AGFCHGINFO](command/UNC/20.15.2/DSP-AGFCHGINFO.md)
+- [RMV AGFCHGINFO](command/UNC/20.15.2/RMV-AGFCHGINFO.md)
 
 ## 证据
 

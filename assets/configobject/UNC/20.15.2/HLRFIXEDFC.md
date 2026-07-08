@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HLRFIXEDFC]] · LST HLRFIXEDFC
-- [[command/UNC/20.15.2/SET-HLRFIXEDFC]] · SET HLRFIXEDFC
+- [LST HLRFIXEDFC](command/UNC/20.15.2/LST-HLRFIXEDFC.md)
+- [SET HLRFIXEDFC](command/UNC/20.15.2/SET-HLRFIXEDFC.md)
 
 ## 证据
 

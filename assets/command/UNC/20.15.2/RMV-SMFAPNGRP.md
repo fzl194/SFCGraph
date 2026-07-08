@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SMFAPNGRP]] · DNS关联的APN组的描述信息（SMFAPNGRP）
+- [DNS关联的APN组的描述信息（SMFAPNGRP）](configobject/UNC/20.15.2/SMFAPNGRP.md)
 
 ## 使用实例
 

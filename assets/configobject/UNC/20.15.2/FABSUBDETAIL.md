@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FABSUBDETAIL]] · DSP FABSUBDETAIL
+- [DSP FABSUBDETAIL](command/UNC/20.15.2/DSP-FABSUBDETAIL.md)
 
 ## 证据
 

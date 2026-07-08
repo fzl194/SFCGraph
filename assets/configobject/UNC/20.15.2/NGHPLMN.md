@@ -28,10 +28,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGHPLMN]] · ADD NGHPLMN
-- [[command/UNC/20.15.2/LST-NGHPLMN]] · LST NGHPLMN
-- [[command/UNC/20.15.2/MOD-NGHPLMN]] · MOD NGHPLMN
-- [[command/UNC/20.15.2/RMV-NGHPLMN]] · RMV NGHPLMN
+- [ADD NGHPLMN](command/UNC/20.15.2/ADD-NGHPLMN.md)
+- [LST NGHPLMN](command/UNC/20.15.2/LST-NGHPLMN.md)
+- [MOD NGHPLMN](command/UNC/20.15.2/MOD-NGHPLMN.md)
+- [RMV NGHPLMN](command/UNC/20.15.2/RMV-NGHPLMN.md)
 
 ## 证据
 

@@ -19,8 +19,8 @@ GTSM（Generalized TTL Security Mechanism），即通用TTL安全保护机制。
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-GTSM]] · LST GTSM
-- [[command/UDG/20.15.2/SET-GTSM]] · SET GTSM
+- [LST GTSM](command/UDG/20.15.2/LST-GTSM.md)
+- [SET GTSM](command/UDG/20.15.2/SET-GTSM.md)
 
 ## 证据
 

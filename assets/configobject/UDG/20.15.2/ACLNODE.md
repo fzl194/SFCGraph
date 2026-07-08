@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-ACLNODE]] · ADD ACLNODE
-- [[command/UDG/20.15.2/LST-ACLNODE]] · LST ACLNODE
-- [[command/UDG/20.15.2/MOD-ACLNODE]] · MOD ACLNODE
-- [[command/UDG/20.15.2/RMV-ACLNODE]] · RMV ACLNODE
+- [ADD ACLNODE](command/UDG/20.15.2/ADD-ACLNODE.md)
+- [LST ACLNODE](command/UDG/20.15.2/LST-ACLNODE.md)
+- [MOD ACLNODE](command/UDG/20.15.2/MOD-ACLNODE.md)
+- [RMV ACLNODE](command/UDG/20.15.2/RMV-ACLNODE.md)
 
 ## 证据
 

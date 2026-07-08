@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SUPPRESSALM]] · 被抑制告警（SUPPRESSALM）
+- [被抑制告警（SUPPRESSALM）](configobject/UNC/20.15.2/SUPPRESSALM.md)
 
 ## 使用实例
 

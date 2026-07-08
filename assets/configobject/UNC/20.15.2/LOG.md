@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/COL-LOG]] · COL LOG
+- [COL LOG](command/UNC/20.15.2/COL-LOG.md)
 
 ## 证据
 

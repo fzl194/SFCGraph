@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-URR]] · ADD URR
-- [[command/UNC/20.15.2/LST-URR]] · LST URR
-- [[command/UNC/20.15.2/MOD-URR]] · MOD URR
-- [[command/UNC/20.15.2/RMV-URR]] · RMV URR
+- [ADD URR](command/UNC/20.15.2/ADD-URR.md)
+- [LST URR](command/UNC/20.15.2/LST-URR.md)
+- [MOD URR](command/UNC/20.15.2/MOD-URR.md)
+- [RMV URR](command/UNC/20.15.2/RMV-URR.md)
 
 ## 证据
 

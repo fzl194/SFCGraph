@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TRCTASK]] · DSP TRCTASK
+- [DSP TRCTASK](command/UDG/20.15.2/DSP-TRCTASK.md)
 
 ## 证据
 

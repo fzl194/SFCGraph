@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAEFABRICLINK]] · DSP PAEFABRICLINK
+- [DSP PAEFABRICLINK](command/UDG/20.15.2/DSP-PAEFABRICLINK.md)
 
 ## 证据
 

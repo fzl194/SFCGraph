@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DNAREA]] · ADD DNAREA
-- [[command/UNC/20.15.2/LST-DNAREA]] · LST DNAREA
-- [[command/UNC/20.15.2/RMV-DNAREA]] · RMV DNAREA
+- [ADD DNAREA](command/UNC/20.15.2/ADD-DNAREA.md)
+- [LST DNAREA](command/UNC/20.15.2/LST-DNAREA.md)
+- [RMV DNAREA](command/UNC/20.15.2/RMV-DNAREA.md)
 
 ## 证据
 

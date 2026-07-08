@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMSREGTIMER]] · LST SMSREGTIMER
-- [[command/UNC/20.15.2/SET-SMSREGTIMER]] · SET SMSREGTIMER
+- [LST SMSREGTIMER](command/UNC/20.15.2/LST-SMSREGTIMER.md)
+- [SET SMSREGTIMER](command/UNC/20.15.2/SET-SMSREGTIMER.md)
 
 ## 证据
 

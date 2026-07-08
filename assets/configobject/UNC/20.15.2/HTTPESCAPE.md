@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTTPESCAPE]] · LST HTTPESCAPE
-- [[command/UNC/20.15.2/SET-HTTPESCAPE]] · SET HTTPESCAPE
+- [LST HTTPESCAPE](command/UNC/20.15.2/LST-HTTPESCAPE.md)
+- [SET HTTPESCAPE](command/UNC/20.15.2/SET-HTTPESCAPE.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-LOGINALM]] · SET LOGINALM
+- [SET LOGINALM](command/UNC/20.15.2/SET-LOGINALM.md)
 
 ## 证据
 

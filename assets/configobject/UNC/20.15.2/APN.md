@@ -24,11 +24,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APN]] · ADD APN
-- [[command/UNC/20.15.2/LCK-APN]] · LCK APN
-- [[command/UNC/20.15.2/LST-APN]] · LST APN
-- [[command/UNC/20.15.2/MOD-APN]] · MOD APN
-- [[command/UNC/20.15.2/RMV-APN]] · RMV APN
+- [ADD APN](command/UNC/20.15.2/ADD-APN.md)
+- [LCK APN](command/UNC/20.15.2/LCK-APN.md)
+- [LST APN](command/UNC/20.15.2/LST-APN.md)
+- [MOD APN](command/UNC/20.15.2/MOD-APN.md)
+- [RMV APN](command/UNC/20.15.2/RMV-APN.md)
 
 ## 证据
 

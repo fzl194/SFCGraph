@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HTTPLEGRP]] · ADD HTTPLEGRP
-- [[command/UNC/20.15.2/LST-HTTPLEGRP]] · LST HTTPLEGRP
-- [[command/UNC/20.15.2/RMV-HTTPLEGRP]] · RMV HTTPLEGRP
+- [ADD HTTPLEGRP](command/UNC/20.15.2/ADD-HTTPLEGRP.md)
+- [LST HTTPLEGRP](command/UNC/20.15.2/LST-HTTPLEGRP.md)
+- [RMV HTTPLEGRP](command/UNC/20.15.2/RMV-HTTPLEGRP.md)
 
 ## 证据
 

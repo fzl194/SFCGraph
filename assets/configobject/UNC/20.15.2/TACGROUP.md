@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TACGROUP]] · ADD TACGROUP
-- [[command/UNC/20.15.2/LST-TACGROUP]] · LST TACGROUP
-- [[command/UNC/20.15.2/RMV-TACGROUP]] · RMV TACGROUP
+- [ADD TACGROUP](command/UNC/20.15.2/ADD-TACGROUP.md)
+- [LST TACGROUP](command/UNC/20.15.2/LST-TACGROUP.md)
+- [RMV TACGROUP](command/UNC/20.15.2/RMV-TACGROUP.md)
 
 ## 证据
 

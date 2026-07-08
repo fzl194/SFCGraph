@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RESEXCEPTIONINFO]] · DSP RESEXCEPTIONINFO
+- [DSP RESEXCEPTIONINFO](command/UDG/20.15.2/DSP-RESEXCEPTIONINFO.md)
 
 ## 证据
 

@@ -25,8 +25,8 @@ DISCLOGSW开启且MAXRATE设置过大，将会导致日志打印频繁，引起C
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFLOGSW]] · LST NRFLOGSW
-- [[command/UNC/20.15.2/SET-NRFLOGSW]] · SET NRFLOGSW
+- [LST NRFLOGSW](command/UNC/20.15.2/LST-NRFLOGSW.md)
+- [SET NRFLOGSW](command/UNC/20.15.2/SET-NRFLOGSW.md)
 
 ## 证据
 

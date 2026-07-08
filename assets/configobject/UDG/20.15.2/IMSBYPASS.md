@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-IMSBYPASS]] · LST IMSBYPASS
-- [[command/UDG/20.15.2/SET-IMSBYPASS]] · SET IMSBYPASS
+- [LST IMSBYPASS](command/UDG/20.15.2/LST-IMSBYPASS.md)
+- [SET IMSBYPASS](command/UDG/20.15.2/SET-IMSBYPASS.md)
 
 ## 证据
 

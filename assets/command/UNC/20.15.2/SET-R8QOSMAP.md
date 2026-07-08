@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/R8QOSMAP]] · EPS QoS参数到Pre-R8 QoS参数映射规则（R8QOSMAP）
+- [EPS QoS参数到Pre-R8 QoS参数映射规则（R8QOSMAP）](configobject/UNC/20.15.2/R8QOSMAP.md)
 
 ## 使用实例
 

@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SECND]] · LST SECND
-- [[command/UNC/20.15.2/SET-SECND]] · SET SECND
+- [LST SECND](command/UNC/20.15.2/LST-SECND.md)
+- [SET SECND](command/UNC/20.15.2/SET-SECND.md)
 
 ## 证据
 

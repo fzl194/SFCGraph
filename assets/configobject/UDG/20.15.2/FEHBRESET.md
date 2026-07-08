@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FEHBRESET]] · LST FEHBRESET
-- [[command/UDG/20.15.2/SET-FEHBRESET]] · SET FEHBRESET
+- [LST FEHBRESET](command/UDG/20.15.2/LST-FEHBRESET.md)
+- [SET FEHBRESET](command/UDG/20.15.2/SET-FEHBRESET.md)
 
 ## 证据
 

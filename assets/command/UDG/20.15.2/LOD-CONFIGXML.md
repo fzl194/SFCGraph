@@ -93,7 +93,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CONFIGXML]] · XML文件配置到数据库（CONFIGXML）
+- [XML文件配置到数据库（CONFIGXML）](configobject/UDG/20.15.2/CONFIGXML.md)
 
 ## 使用实例
 

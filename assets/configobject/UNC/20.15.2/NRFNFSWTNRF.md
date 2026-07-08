@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NRFNFSWTNRF]] · DSP NRFNFSWTNRF
-- [[command/UNC/20.15.2/OPR-NRFNFSWTNRF]] · OPR NRFNFSWTNRF
+- [DSP NRFNFSWTNRF](command/UNC/20.15.2/DSP-NRFNFSWTNRF.md)
+- [OPR NRFNFSWTNRF](command/UNC/20.15.2/OPR-NRFNFSWTNRF.md)
 
 ## 证据
 

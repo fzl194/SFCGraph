@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PAEDYETRACECFG]] · PAE染色流控开关及阈值参数（PAEDYETRACECFG）
+- [PAE染色流控开关及阈值参数（PAEDYETRACECFG）](configobject/UNC/20.15.2/PAEDYETRACECFG.md)
 
 ## 使用实例
 

@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ARPIFLIMIT]] · LST ARPIFLIMIT
-- [[command/UNC/20.15.2/SET-ARPIFLIMIT]] · SET ARPIFLIMIT
+- [LST ARPIFLIMIT](command/UNC/20.15.2/LST-ARPIFLIMIT.md)
+- [SET ARPIFLIMIT](command/UNC/20.15.2/SET-ARPIFLIMIT.md)
 
 ## 证据
 

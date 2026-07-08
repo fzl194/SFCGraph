@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-DYNAMICPCRF]] · CLR DYNAMICPCRF
-- [[command/UNC/20.15.2/DSP-DYNAMICPCRF]] · DSP DYNAMICPCRF
+- [CLR DYNAMICPCRF](command/UNC/20.15.2/CLR-DYNAMICPCRF.md)
+- [DSP DYNAMICPCRF](command/UNC/20.15.2/DSP-DYNAMICPCRF.md)
 
 ## 证据
 

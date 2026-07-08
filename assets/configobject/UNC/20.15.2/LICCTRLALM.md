@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LICCTRLALM]] · LST LICCTRLALM
-- [[command/UNC/20.15.2/SET-LICCTRLALM]] · SET LICCTRLALM
+- [LST LICCTRLALM](command/UNC/20.15.2/LST-LICCTRLALM.md)
+- [SET LICCTRLALM](command/UNC/20.15.2/SET-LICCTRLALM.md)
 
 ## 证据
 

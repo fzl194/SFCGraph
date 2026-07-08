@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IPBLACKBOX]] · DSP IPBLACKBOX
+- [DSP IPBLACKBOX](command/UNC/20.15.2/DSP-IPBLACKBOX.md)
 
 ## 证据
 

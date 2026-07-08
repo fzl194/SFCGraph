@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PESELPLCY]] · LST PESELPLCY
-- [[command/UNC/20.15.2/SET-PESELPLCY]] · SET PESELPLCY
+- [LST PESELPLCY](command/UNC/20.15.2/LST-PESELPLCY.md)
+- [SET PESELPLCY](command/UNC/20.15.2/SET-PESELPLCY.md)
 
 ## 证据
 

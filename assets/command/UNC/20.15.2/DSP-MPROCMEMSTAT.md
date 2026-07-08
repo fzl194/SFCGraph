@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MPROCMEMSTAT]] · 进程内存信息（MPROCMEMSTAT）
+- [进程内存信息（MPROCMEMSTAT）](configobject/UNC/20.15.2/MPROCMEMSTAT.md)
 
 ## 使用实例
 

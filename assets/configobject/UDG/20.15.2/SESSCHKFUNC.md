@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SESSCHKFUNC]] · LST SESSCHKFUNC
-- [[command/UDG/20.15.2/SET-SESSCHKFUNC]] · SET SESSCHKFUNC
+- [LST SESSCHKFUNC](command/UDG/20.15.2/LST-SESSCHKFUNC.md)
+- [SET SESSCHKFUNC](command/UDG/20.15.2/SET-SESSCHKFUNC.md)
 
 ## 证据
 

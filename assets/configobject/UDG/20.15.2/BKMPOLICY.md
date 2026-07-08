@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-BKMPOLICY]] · DSP BKMPOLICY
-- [[command/UDG/20.15.2/SET-BKMPOLICY]] · SET BKMPOLICY
+- [DSP BKMPOLICY](command/UDG/20.15.2/DSP-BKMPOLICY.md)
+- [SET BKMPOLICY](command/UDG/20.15.2/SET-BKMPOLICY.md)
 
 ## 证据
 

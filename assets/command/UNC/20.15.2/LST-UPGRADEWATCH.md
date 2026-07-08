@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UPGRADEWATCH]] · 升级观察期（UPGRADEWATCH）
+- [升级观察期（UPGRADEWATCH）](configobject/UNC/20.15.2/UPGRADEWATCH.md)
 
 ## 使用实例
 

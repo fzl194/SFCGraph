@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-LBTN]] · DSP LBTN
+- [DSP LBTN](command/UDG/20.15.2/DSP-LBTN.md)
 
 ## 证据
 

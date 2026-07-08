@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DDNATTR]] · DDN消息参数以及Delay信元处理开关（DDNATTR）
+- [DDN消息参数以及Delay信元处理开关（DDNATTR）](configobject/UNC/20.15.2/DDNATTR.md)
 
 ## 使用实例
 

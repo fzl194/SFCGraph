@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MATCHPROTOCOL]] · 路由协议匹配路由策略（MATCHPROTOCOL）
+- [路由协议匹配路由策略（MATCHPROTOCOL）](configobject/UNC/20.15.2/MATCHPROTOCOL.md)
 
 ## 使用实例
 

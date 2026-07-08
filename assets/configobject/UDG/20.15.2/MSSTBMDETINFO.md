@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSTBMDETINFO]] · DSP MSSTBMDETINFO
+- [DSP MSSTBMDETINFO](command/UDG/20.15.2/DSP-MSSTBMDETINFO.md)
 
 ## 证据
 

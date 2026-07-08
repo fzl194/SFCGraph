@@ -33,8 +33,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DRTLSMODE]] · LST DRTLSMODE
-- [[command/UDG/20.15.2/SET-DRTLSMODE]] · SET DRTLSMODE
+- [LST DRTLSMODE](command/UDG/20.15.2/LST-DRTLSMODE.md)
+- [SET DRTLSMODE](command/UDG/20.15.2/SET-DRTLSMODE.md)
 
 ## 证据
 

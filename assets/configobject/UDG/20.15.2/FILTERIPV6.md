@@ -22,13 +22,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-FILTERIPV6]] · ADD FILTERIPV6
-- [[command/UDG/20.15.2/MOD-FILTERIPV6]] · MOD FILTERIPV6
+- [ADD FILTERIPV6](command/UDG/20.15.2/ADD-FILTERIPV6.md)
+- [MOD FILTERIPV6](command/UDG/20.15.2/MOD-FILTERIPV6.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/FLTBINDFLOWF]] · FLTBINDFLOWF
-- [[configobject/UDG/20.15.2/IPLIST]] · IPLIST
+- [FLTBINDFLOWF](configobject/UDG/20.15.2/FLTBINDFLOWF.md)
+- [IPLIST](configobject/UDG/20.15.2/IPLIST.md)
 
 ## 证据
 

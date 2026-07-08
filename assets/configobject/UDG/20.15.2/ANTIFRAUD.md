@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-ANTIFRAUD]] · LST ANTIFRAUD
-- [[command/UDG/20.15.2/SET-ANTIFRAUD]] · SET ANTIFRAUD
+- [LST ANTIFRAUD](command/UDG/20.15.2/LST-ANTIFRAUD.md)
+- [SET ANTIFRAUD](command/UDG/20.15.2/SET-ANTIFRAUD.md)
 
 ## 证据
 

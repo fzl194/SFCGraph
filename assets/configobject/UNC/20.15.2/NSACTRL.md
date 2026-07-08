@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NSACTRL]] · LST NSACTRL
-- [[command/UNC/20.15.2/SET-NSACTRL]] · SET NSACTRL
+- [LST NSACTRL](command/UNC/20.15.2/LST-NSACTRL.md)
+- [SET NSACTRL](command/UNC/20.15.2/SET-NSACTRL.md)
 
 ## 证据
 

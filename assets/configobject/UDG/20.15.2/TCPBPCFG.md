@@ -30,8 +30,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TCPBPCFG]] · LST TCPBPCFG
-- [[command/UDG/20.15.2/SET-TCPBPCFG]] · SET TCPBPCFG
+- [LST TCPBPCFG](command/UDG/20.15.2/LST-TCPBPCFG.md)
+- [SET TCPBPCFG](command/UDG/20.15.2/SET-TCPBPCFG.md)
 
 ## 证据
 

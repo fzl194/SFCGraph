@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-EPRPDYN]] · ADD EPRPDYN
-- [[command/UDG/20.15.2/LST-EPRPDYN]] · LST EPRPDYN
-- [[command/UDG/20.15.2/RMV-EPRPDYN]] · RMV EPRPDYN
+- [ADD EPRPDYN](command/UDG/20.15.2/ADD-EPRPDYN.md)
+- [LST EPRPDYN](command/UDG/20.15.2/LST-EPRPDYN.md)
+- [RMV EPRPDYN](command/UDG/20.15.2/RMV-EPRPDYN.md)
 
 ## 证据
 

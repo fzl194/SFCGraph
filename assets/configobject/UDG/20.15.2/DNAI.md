@@ -22,11 +22,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-DNAI]] · ADD DNAI
-- [[command/UDG/20.15.2/LCK-DNAI]] · LCK DNAI
-- [[command/UDG/20.15.2/LST-DNAI]] · LST DNAI
-- [[command/UDG/20.15.2/MOD-DNAI]] · MOD DNAI
-- [[command/UDG/20.15.2/RMV-DNAI]] · RMV DNAI
+- [ADD DNAI](command/UDG/20.15.2/ADD-DNAI.md)
+- [LCK DNAI](command/UDG/20.15.2/LCK-DNAI.md)
+- [LST DNAI](command/UDG/20.15.2/LST-DNAI.md)
+- [MOD DNAI](command/UDG/20.15.2/MOD-DNAI.md)
+- [RMV DNAI](command/UDG/20.15.2/RMV-DNAI.md)
 
 ## 证据
 

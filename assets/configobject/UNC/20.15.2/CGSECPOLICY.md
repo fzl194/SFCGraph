@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CGSECPOLICY]] · LST CGSECPOLICY
-- [[command/UNC/20.15.2/SET-CGSECPOLICY]] · SET CGSECPOLICY
+- [LST CGSECPOLICY](command/UNC/20.15.2/LST-CGSECPOLICY.md)
+- [SET CGSECPOLICY](command/UNC/20.15.2/SET-CGSECPOLICY.md)
 
 ## 证据
 

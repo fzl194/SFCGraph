@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SLADBGDATA]] · DSP SLADBGDATA
+- [DSP SLADBGDATA](command/UDG/20.15.2/DSP-SLADBGDATA.md)
 
 ## 证据
 

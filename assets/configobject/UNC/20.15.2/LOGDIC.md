@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LOGDIC]] · LST LOGDIC
+- [LST LOGDIC](command/UNC/20.15.2/LST-LOGDIC.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-FWDFCPARA]] · LST FWDFCPARA
-- [[command/UNC/20.15.2/SET-FWDFCPARA]] · SET FWDFCPARA
+- [LST FWDFCPARA](command/UNC/20.15.2/LST-FWDFCPARA.md)
+- [SET FWDFCPARA](command/UNC/20.15.2/SET-FWDFCPARA.md)
 
 ## 证据
 

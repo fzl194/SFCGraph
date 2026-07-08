@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-BILLSAVE]] · DSP BILLSAVE
+- [DSP BILLSAVE](command/UNC/20.15.2/DSP-BILLSAVE.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PTTFUNC]] · LST PTTFUNC
-- [[command/UNC/20.15.2/SET-PTTFUNC]] · SET PTTFUNC
+- [LST PTTFUNC](command/UNC/20.15.2/LST-PTTFUNC.md)
+- [SET PTTFUNC](command/UNC/20.15.2/SET-PTTFUNC.md)
 
 ## 证据
 

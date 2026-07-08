@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/N14N26INTOPPLCY]] · N14N26接口跨运营商交互策略（N14N26INTOPPLCY）
+- [N14N26接口跨运营商交互策略（N14N26INTOPPLCY）](configobject/UNC/20.15.2/N14N26INTOPPLCY.md)
 
 ## 使用实例
 

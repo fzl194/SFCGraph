@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PARTITIONINFO]] · DSP PARTITIONINFO
+- [DSP PARTITIONINFO](command/UDG/20.15.2/DSP-PARTITIONINFO.md)
 
 ## 证据
 

@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-RDSTRING]] · ADD RDSTRING
-- [[command/UDG/20.15.2/LST-RDSTRING]] · LST RDSTRING
-- [[command/UDG/20.15.2/RMV-RDSTRING]] · RMV RDSTRING
+- [ADD RDSTRING](command/UDG/20.15.2/ADD-RDSTRING.md)
+- [LST RDSTRING](command/UDG/20.15.2/LST-RDSTRING.md)
+- [RMV RDSTRING](command/UDG/20.15.2/RMV-RDSTRING.md)
 
 ## 证据
 

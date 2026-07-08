@@ -25,10 +25,10 @@ Pod停止运行可能会导致业务受损，请谨慎使用该命令。
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-POD]] · DSP POD
-- [[command/UNC/20.15.2/RST-POD]] · RST POD
-- [[command/UNC/20.15.2/STP-POD]] · STP POD
-- [[command/UNC/20.15.2/STR-POD]] · STR POD
+- [DSP POD](command/UNC/20.15.2/DSP-POD.md)
+- [RST POD](command/UNC/20.15.2/RST-POD.md)
+- [STP POD](command/UNC/20.15.2/STP-POD.md)
+- [STR POD](command/UNC/20.15.2/STR-POD.md)
 
 ## 证据
 

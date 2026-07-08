@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ALMERRORINFO]] · DSP ALMERRORINFO
+- [DSP ALMERRORINFO](command/UDG/20.15.2/DSP-ALMERRORINFO.md)
 
 ## 证据
 

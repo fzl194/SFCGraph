@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFEELB]] · DSP SFEELB
+- [DSP SFEELB](command/UDG/20.15.2/DSP-SFEELB.md)
 
 ## 证据
 

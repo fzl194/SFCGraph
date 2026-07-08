@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-OSPFAREA]] · ADD OSPFAREA
-- [[command/UNC/20.15.2/LST-OSPFAREA]] · LST OSPFAREA
-- [[command/UNC/20.15.2/MOD-OSPFAREA]] · MOD OSPFAREA
-- [[command/UNC/20.15.2/RMV-OSPFAREA]] · RMV OSPFAREA
+- [ADD OSPFAREA](command/UNC/20.15.2/ADD-OSPFAREA.md)
+- [LST OSPFAREA](command/UNC/20.15.2/LST-OSPFAREA.md)
+- [MOD OSPFAREA](command/UNC/20.15.2/MOD-OSPFAREA.md)
+- [RMV OSPFAREA](command/UNC/20.15.2/RMV-OSPFAREA.md)
 
 ## 证据
 

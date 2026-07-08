@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PRTGRPINFO]] · DSP PRTGRPINFO
+- [DSP PRTGRPINFO](command/UDG/20.15.2/DSP-PRTGRPINFO.md)
 
 ## 证据
 

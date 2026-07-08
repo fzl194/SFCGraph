@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNL2TPCTRL]] · APN L2TP CTRL配置（APNL2TPCTRL）
+- [APN L2TP CTRL配置（APNL2TPCTRL）](configobject/UNC/20.15.2/APNL2TPCTRL.md)
 
 ## 使用实例
 

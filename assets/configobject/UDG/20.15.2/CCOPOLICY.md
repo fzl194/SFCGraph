@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CCOPOLICY]] · LST CCOPOLICY
-- [[command/UDG/20.15.2/SET-CCOPOLICY]] · SET CCOPOLICY
+- [LST CCOPOLICY](command/UDG/20.15.2/LST-CCOPOLICY.md)
+- [SET CCOPOLICY](command/UDG/20.15.2/SET-CCOPOLICY.md)
 
 ## 证据
 

@@ -33,8 +33,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NPFABRICOAM]] · LST NPFABRICOAM
-- [[command/UDG/20.15.2/SET-NPFABRICOAM]] · SET NPFABRICOAM
+- [LST NPFABRICOAM](command/UDG/20.15.2/LST-NPFABRICOAM.md)
+- [SET NPFABRICOAM](command/UDG/20.15.2/SET-NPFABRICOAM.md)
 
 ## 证据
 

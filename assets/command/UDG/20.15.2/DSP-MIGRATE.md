@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MIGRATE]] · 异构迁移查询（MIGRATE）
+- [异构迁移查询（MIGRATE）](configobject/UDG/20.15.2/MIGRATE.md)
 
 ## 使用实例
 

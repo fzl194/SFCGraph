@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LOCALHSS]] · ADD LOCALHSS
-- [[command/UNC/20.15.2/LST-LOCALHSS]] · LST LOCALHSS
-- [[command/UNC/20.15.2/MOD-LOCALHSS]] · MOD LOCALHSS
-- [[command/UNC/20.15.2/RMV-LOCALHSS]] · RMV LOCALHSS
+- [ADD LOCALHSS](command/UNC/20.15.2/ADD-LOCALHSS.md)
+- [LST LOCALHSS](command/UNC/20.15.2/LST-LOCALHSS.md)
+- [MOD LOCALHSS](command/UNC/20.15.2/MOD-LOCALHSS.md)
+- [RMV LOCALHSS](command/UNC/20.15.2/RMV-LOCALHSS.md)
 
 ## 证据
 

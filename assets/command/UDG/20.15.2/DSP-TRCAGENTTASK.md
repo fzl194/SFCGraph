@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/TRCAGENTTASK]] · 跟踪代理侧跟踪任务信息（TRCAGENTTASK）
+- [跟踪代理侧跟踪任务信息（TRCAGENTTASK）](configobject/UDG/20.15.2/TRCAGENTTASK.md)
 
 ## 使用实例
 

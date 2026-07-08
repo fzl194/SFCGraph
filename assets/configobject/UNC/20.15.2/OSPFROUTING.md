@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OSPFROUTING]] · DSP OSPFROUTING
+- [DSP OSPFROUTING](command/UNC/20.15.2/DSP-OSPFROUTING.md)
 
 ## 证据
 

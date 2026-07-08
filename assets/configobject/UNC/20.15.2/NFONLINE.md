@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-NFONLINE]] · ACT NFONLINE
+- [ACT NFONLINE](command/UNC/20.15.2/ACT-NFONLINE.md)
 
 ## 证据
 

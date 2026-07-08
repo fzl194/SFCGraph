@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-TLBRELBLINK]] · STR TLBRELBLINK
+- [STR TLBRELBLINK](command/UNC/20.15.2/STR-TLBRELBLINK.md)
 
 ## 证据
 

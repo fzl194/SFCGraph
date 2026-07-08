@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-APPCLTSTATUS]] · DSP APPCLTSTATUS
+- [DSP APPCLTSTATUS](command/UDG/20.15.2/DSP-APPCLTSTATUS.md)
 
 ## 证据
 

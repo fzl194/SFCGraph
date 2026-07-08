@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNALIAS]] · ADD APNALIAS
-- [[command/UNC/20.15.2/LCK-APNALIAS]] · LCK APNALIAS
-- [[command/UNC/20.15.2/LST-APNALIAS]] · LST APNALIAS
-- [[command/UNC/20.15.2/RMV-APNALIAS]] · RMV APNALIAS
+- [ADD APNALIAS](command/UNC/20.15.2/ADD-APNALIAS.md)
+- [LCK APNALIAS](command/UNC/20.15.2/LCK-APNALIAS.md)
+- [LST APNALIAS](command/UNC/20.15.2/LST-APNALIAS.md)
+- [RMV APNALIAS](command/UNC/20.15.2/RMV-APNALIAS.md)
 
 ## 证据
 

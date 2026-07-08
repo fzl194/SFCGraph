@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SDRSERVICE]] · DSP SDRSERVICE
+- [DSP SDRSERVICE](command/UNC/20.15.2/DSP-SDRSERVICE.md)
 
 ## 证据
 

@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SMFINFO]] · ADD SMFINFO
-- [[command/UNC/20.15.2/LST-SMFINFO]] · LST SMFINFO
-- [[command/UNC/20.15.2/MOD-SMFINFO]] · MOD SMFINFO
-- [[command/UNC/20.15.2/RMV-SMFINFO]] · RMV SMFINFO
+- [ADD SMFINFO](command/UNC/20.15.2/ADD-SMFINFO.md)
+- [LST SMFINFO](command/UNC/20.15.2/LST-SMFINFO.md)
+- [MOD SMFINFO](command/UNC/20.15.2/MOD-SMFINFO.md)
+- [RMV SMFINFO](command/UNC/20.15.2/RMV-SMFINFO.md)
 
 ## 证据
 

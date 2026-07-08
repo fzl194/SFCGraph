@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SBILINKSTATUS]] · 服务化接口链路状态（SBILINKSTATUS）
+- [服务化接口链路状态（SBILINKSTATUS）](configobject/UNC/20.15.2/SBILINKSTATUS.md)
 
 ## 使用实例
 

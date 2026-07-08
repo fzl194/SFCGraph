@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SFCPARA]] · ADD SFCPARA
-- [[command/UNC/20.15.2/LST-SFCPARA]] · LST SFCPARA
-- [[command/UNC/20.15.2/MOD-SFCPARA]] · MOD SFCPARA
-- [[command/UNC/20.15.2/RMV-SFCPARA]] · RMV SFCPARA
+- [ADD SFCPARA](command/UNC/20.15.2/ADD-SFCPARA.md)
+- [LST SFCPARA](command/UNC/20.15.2/LST-SFCPARA.md)
+- [MOD SFCPARA](command/UNC/20.15.2/MOD-SFCPARA.md)
+- [RMV SFCPARA](command/UNC/20.15.2/RMV-SFCPARA.md)
 
 ## 证据
 

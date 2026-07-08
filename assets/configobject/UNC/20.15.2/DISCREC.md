@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DISCREC]] · DSP DISCREC
+- [DSP DISCREC](command/UNC/20.15.2/DSP-DISCREC.md)
 
 ## 证据
 

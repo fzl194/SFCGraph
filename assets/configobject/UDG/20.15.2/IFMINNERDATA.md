@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-IFMINNERDATA]] · DSP IFMINNERDATA
+- [DSP IFMINNERDATA](command/UDG/20.15.2/DSP-IFMINNERDATA.md)
 
 ## 证据
 

@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SBINRFKEY]] · ADD SBINRFKEY
-- [[command/UNC/20.15.2/LST-SBINRFKEY]] · LST SBINRFKEY
-- [[command/UNC/20.15.2/RMV-SBINRFKEY]] · RMV SBINRFKEY
+- [ADD SBINRFKEY](command/UNC/20.15.2/ADD-SBINRFKEY.md)
+- [LST SBINRFKEY](command/UNC/20.15.2/LST-SBINRFKEY.md)
+- [RMV SBINRFKEY](command/UNC/20.15.2/RMV-SBINRFKEY.md)
 
 ## 证据
 

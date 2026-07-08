@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DMAVPDICT]] · LST DMAVPDICT
-- [[command/UNC/20.15.2/MOD-DMAVPDICT]] · MOD DMAVPDICT
-- [[command/UNC/20.15.2/RMV-DMAVPDICT]] · RMV DMAVPDICT
+- [LST DMAVPDICT](command/UNC/20.15.2/LST-DMAVPDICT.md)
+- [MOD DMAVPDICT](command/UNC/20.15.2/MOD-DMAVPDICT.md)
+- [RMV DMAVPDICT](command/UNC/20.15.2/RMV-DMAVPDICT.md)
 
 ## 证据
 

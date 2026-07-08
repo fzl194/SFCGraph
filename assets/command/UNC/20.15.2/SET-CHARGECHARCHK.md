@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CHARGECHARCHK]] · 是否检查Serving Node携带的CC（CHARGECHARCHK）
+- [是否检查Serving Node携带的CC（CHARGECHARCHK）](configobject/UNC/20.15.2/CHARGECHARCHK.md)
 
 ## 使用实例
 

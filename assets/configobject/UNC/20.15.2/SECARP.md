@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SECARP]] · LST SECARP
-- [[command/UNC/20.15.2/SET-SECARP]] · SET SECARP
+- [LST SECARP](command/UNC/20.15.2/LST-SECARP.md)
+- [SET SECARP](command/UNC/20.15.2/SET-SECARP.md)
 
 ## 证据
 

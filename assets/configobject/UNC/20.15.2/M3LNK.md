@@ -23,17 +23,17 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-M3LNK]] · ACT M3LNK
-- [[command/UNC/20.15.2/ADD-M3LNK]] · ADD M3LNK
-- [[command/UNC/20.15.2/DEA-M3LNK]] · DEA M3LNK
-- [[command/UNC/20.15.2/DSP-M3LNK]] · DSP M3LNK
-- [[command/UNC/20.15.2/EST-M3LNK]] · EST M3LNK
-- [[command/UNC/20.15.2/LCK-M3LNK]] · LCK M3LNK
-- [[command/UNC/20.15.2/LST-M3LNK]] · LST M3LNK
-- [[command/UNC/20.15.2/MOD-M3LNK]] · MOD M3LNK
-- [[command/UNC/20.15.2/REL-M3LNK]] · REL M3LNK
-- [[command/UNC/20.15.2/RMV-M3LNK]] · RMV M3LNK
-- [[command/UNC/20.15.2/ULK-M3LNK]] · ULK M3LNK
+- [ACT M3LNK](command/UNC/20.15.2/ACT-M3LNK.md)
+- [ADD M3LNK](command/UNC/20.15.2/ADD-M3LNK.md)
+- [DEA M3LNK](command/UNC/20.15.2/DEA-M3LNK.md)
+- [DSP M3LNK](command/UNC/20.15.2/DSP-M3LNK.md)
+- [EST M3LNK](command/UNC/20.15.2/EST-M3LNK.md)
+- [LCK M3LNK](command/UNC/20.15.2/LCK-M3LNK.md)
+- [LST M3LNK](command/UNC/20.15.2/LST-M3LNK.md)
+- [MOD M3LNK](command/UNC/20.15.2/MOD-M3LNK.md)
+- [REL M3LNK](command/UNC/20.15.2/REL-M3LNK.md)
+- [RMV M3LNK](command/UNC/20.15.2/RMV-M3LNK.md)
+- [ULK M3LNK](command/UNC/20.15.2/ULK-M3LNK.md)
 
 ## 证据
 

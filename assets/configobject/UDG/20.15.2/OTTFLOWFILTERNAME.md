@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-OTTFLOWFILTERNAME]] · LST OTTFLOWFILTERNAME
+- [LST OTTFLOWFILTERNAME](command/UDG/20.15.2/LST-OTTFLOWFILTERNAME.md)
 
 ## 证据
 

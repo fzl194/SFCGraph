@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NONIPFUNC]] · LST NONIPFUNC
-- [[command/UNC/20.15.2/SET-NONIPFUNC]] · SET NONIPFUNC
+- [LST NONIPFUNC](command/UNC/20.15.2/LST-NONIPFUNC.md)
+- [SET NONIPFUNC](command/UNC/20.15.2/SET-NONIPFUNC.md)
 
 ## 证据
 

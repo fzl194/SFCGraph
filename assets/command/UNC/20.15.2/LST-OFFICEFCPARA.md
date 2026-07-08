@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OFFICEFCPARA]] · 指定NF的流控参数（OFFICEFCPARA）
+- [指定NF的流控参数（OFFICEFCPARA）](configobject/UNC/20.15.2/OFFICEFCPARA.md)
 
 ## 使用实例
 

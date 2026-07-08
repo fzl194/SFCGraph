@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSCNTINFOBRI]] · DSP MSSCNTINFOBRI
+- [DSP MSSCNTINFOBRI](command/UDG/20.15.2/DSP-MSSCNTINFOBRI.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DCNCTRL]] · LST DCNCTRL
-- [[command/UNC/20.15.2/SET-DCNCTRL]] · SET DCNCTRL
+- [LST DCNCTRL](command/UNC/20.15.2/LST-DCNCTRL.md)
+- [SET DCNCTRL](command/UNC/20.15.2/SET-DCNCTRL.md)
 
 ## 证据
 

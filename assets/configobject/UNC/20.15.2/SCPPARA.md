@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SCPPARA]] · LST SCPPARA
-- [[command/UNC/20.15.2/SET-SCPPARA]] · SET SCPPARA
+- [LST SCPPARA](command/UNC/20.15.2/LST-SCPPARA.md)
+- [SET SCPPARA](command/UNC/20.15.2/SET-SCPPARA.md)
 
 ## 证据
 

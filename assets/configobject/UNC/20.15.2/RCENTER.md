@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RCENTER]] · ADD RCENTER
-- [[command/UNC/20.15.2/LST-RCENTER]] · LST RCENTER
-- [[command/UNC/20.15.2/MOD-RCENTER]] · MOD RCENTER
-- [[command/UNC/20.15.2/RMV-RCENTER]] · RMV RCENTER
+- [ADD RCENTER](command/UNC/20.15.2/ADD-RCENTER.md)
+- [LST RCENTER](command/UNC/20.15.2/LST-RCENTER.md)
+- [MOD RCENTER](command/UNC/20.15.2/MOD-RCENTER.md)
+- [RMV RCENTER](command/UNC/20.15.2/RMV-RCENTER.md)
 
 ## 证据
 

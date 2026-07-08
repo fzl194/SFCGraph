@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMSIVLR]] · ADD IMSIVLR
-- [[command/UNC/20.15.2/LST-IMSIVLR]] · LST IMSIVLR
-- [[command/UNC/20.15.2/MOD-IMSIVLR]] · MOD IMSIVLR
-- [[command/UNC/20.15.2/RMV-IMSIVLR]] · RMV IMSIVLR
+- [ADD IMSIVLR](command/UNC/20.15.2/ADD-IMSIVLR.md)
+- [LST IMSIVLR](command/UNC/20.15.2/LST-IMSIVLR.md)
+- [MOD IMSIVLR](command/UNC/20.15.2/MOD-IMSIVLR.md)
+- [RMV IMSIVLR](command/UNC/20.15.2/RMV-IMSIVLR.md)
 
 ## 证据
 

@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGALMCHECK]] · DSP NGALMCHECK
-- [[command/UNC/20.15.2/STR-NGALMCHECK]] · STR NGALMCHECK
+- [DSP NGALMCHECK](command/UNC/20.15.2/DSP-NGALMCHECK.md)
+- [STR NGALMCHECK](command/UNC/20.15.2/STR-NGALMCHECK.md)
 
 ## 证据
 

@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-ZONE]] · ADD ZONE
-- [[command/UDG/20.15.2/LST-ZONE]] · LST ZONE
-- [[command/UDG/20.15.2/MOD-ZONE]] · MOD ZONE
-- [[command/UDG/20.15.2/RMV-ZONE]] · RMV ZONE
+- [ADD ZONE](command/UDG/20.15.2/ADD-ZONE.md)
+- [LST ZONE](command/UDG/20.15.2/LST-ZONE.md)
+- [MOD ZONE](command/UDG/20.15.2/MOD-ZONE.md)
+- [RMV ZONE](command/UDG/20.15.2/RMV-ZONE.md)
 
 ## 证据
 

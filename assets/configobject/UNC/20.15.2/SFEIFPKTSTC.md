@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SFEIFPKTSTC]] · DSP SFEIFPKTSTC
-- [[command/UNC/20.15.2/RTR-SFEIFPKTSTC]] · RTR SFEIFPKTSTC
+- [DSP SFEIFPKTSTC](command/UNC/20.15.2/DSP-SFEIFPKTSTC.md)
+- [RTR SFEIFPKTSTC](command/UNC/20.15.2/RTR-SFEIFPKTSTC.md)
 
 ## 证据
 

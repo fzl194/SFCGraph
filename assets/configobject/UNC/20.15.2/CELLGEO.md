@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CELLGEO]] · ADD CELLGEO
-- [[command/UNC/20.15.2/LST-CELLGEO]] · LST CELLGEO
-- [[command/UNC/20.15.2/MOD-CELLGEO]] · MOD CELLGEO
-- [[command/UNC/20.15.2/RMV-CELLGEO]] · RMV CELLGEO
+- [ADD CELLGEO](command/UNC/20.15.2/ADD-CELLGEO.md)
+- [LST CELLGEO](command/UNC/20.15.2/LST-CELLGEO.md)
+- [MOD CELLGEO](command/UNC/20.15.2/MOD-CELLGEO.md)
+- [RMV CELLGEO](command/UNC/20.15.2/RMV-CELLGEO.md)
 
 ## 证据
 

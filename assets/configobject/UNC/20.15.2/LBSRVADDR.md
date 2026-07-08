@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SYN-LBSRVADDR]] · SYN LBSRVADDR
+- [SYN LBSRVADDR](command/UNC/20.15.2/SYN-LBSRVADDR.md)
 
 ## 证据
 

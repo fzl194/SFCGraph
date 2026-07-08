@@ -85,7 +85,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DFTIDLETIME]] · 默认空闲上下文定时器配置（DFTIDLETIME）
+- [默认空闲上下文定时器配置（DFTIDLETIME）](configobject/UNC/20.15.2/DFTIDLETIME.md)
 
 ## 使用实例
 

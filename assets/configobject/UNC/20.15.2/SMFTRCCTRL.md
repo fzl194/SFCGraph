@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMFTRCCTRL]] · LST SMFTRCCTRL
-- [[command/UNC/20.15.2/SET-SMFTRCCTRL]] · SET SMFTRCCTRL
+- [LST SMFTRCCTRL](command/UNC/20.15.2/LST-SMFTRCCTRL.md)
+- [SET SMFTRCCTRL](command/UNC/20.15.2/SET-SMFTRCCTRL.md)
 
 ## 证据
 

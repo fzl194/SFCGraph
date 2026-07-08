@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-IPV6BLACKLIST]] · DSP IPV6BLACKLIST
+- [DSP IPV6BLACKLIST](command/UDG/20.15.2/DSP-IPV6BLACKLIST.md)
 
 ## 证据
 

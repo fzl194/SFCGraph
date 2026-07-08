@@ -47,7 +47,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PROCFAULTALM]] · 进程故障告警上报模式（PROCFAULTALM）
+- [进程故障告警上报模式（PROCFAULTALM）](configobject/UDG/20.15.2/PROCFAULTALM.md)
 
 ## 使用实例
 

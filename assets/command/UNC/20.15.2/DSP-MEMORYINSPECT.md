@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MEMORYINSPECT]] · dopra相关内存信息（MEMORYINSPECT）
+- [dopra相关内存信息（MEMORYINSPECT）](configobject/UNC/20.15.2/MEMORYINSPECT.md)
 
 ## 使用实例
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-BTRUNCFUNC]] · LST BTRUNCFUNC
-- [[command/UNC/20.15.2/SET-BTRUNCFUNC]] · SET BTRUNCFUNC
+- [LST BTRUNCFUNC](command/UNC/20.15.2/LST-BTRUNCFUNC.md)
+- [SET BTRUNCFUNC](command/UNC/20.15.2/SET-BTRUNCFUNC.md)
 
 ## 证据
 

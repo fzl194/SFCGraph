@@ -77,7 +77,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PNFNTFPLCY]] · 对端网元的通知抑制时间（PNFNTFPLCY）
+- [对端网元的通知抑制时间（PNFNTFPLCY）](configobject/UNC/20.15.2/PNFNTFPLCY.md)
 
 ## 使用实例
 

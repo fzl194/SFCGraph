@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/ABNTRAFFICDT]] · 异常流量检测开关（ABNTRAFFICDT）
+- [异常流量检测开关（ABNTRAFFICDT）](configobject/UDG/20.15.2/ABNTRAFFICDT.md)
 
 ## 使用实例
 

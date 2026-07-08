@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GTPUPARA]] · LST GTPUPARA
-- [[command/UNC/20.15.2/SET-GTPUPARA]] · SET GTPUPARA
+- [LST GTPUPARA](command/UNC/20.15.2/LST-GTPUPARA.md)
+- [SET GTPUPARA](command/UNC/20.15.2/SET-GTPUPARA.md)
 
 ## 证据
 

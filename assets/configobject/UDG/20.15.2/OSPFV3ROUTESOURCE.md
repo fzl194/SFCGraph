@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-OSPFV3ROUTESOURCE]] · DSP OSPFV3ROUTESOURCE
+- [DSP OSPFV3ROUTESOURCE](command/UDG/20.15.2/DSP-OSPFV3ROUTESOURCE.md)
 
 ## 证据
 

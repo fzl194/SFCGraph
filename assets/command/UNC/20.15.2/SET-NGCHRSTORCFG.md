@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NGCHRSTORCFG]] · AMF小范围CHR存储配置（NGCHRSTORCFG）
+- [AMF小范围CHR存储配置（NGCHRSTORCFG）](configobject/UNC/20.15.2/NGCHRSTORCFG.md)
 
 ## 使用实例
 

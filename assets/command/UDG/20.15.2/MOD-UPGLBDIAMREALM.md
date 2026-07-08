@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/UPGLBDIAMREALM]] · 全局Diameter域（UPGLBDIAMREALM）
+- [全局Diameter域（UPGLBDIAMREALM）](configobject/UDG/20.15.2/UPGLBDIAMREALM.md)
 
 ## 使用实例
 

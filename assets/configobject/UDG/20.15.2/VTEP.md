@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-VTEP]] · ADD VTEP
-- [[command/UDG/20.15.2/LST-VTEP]] · LST VTEP
-- [[command/UDG/20.15.2/MOD-VTEP]] · MOD VTEP
-- [[command/UDG/20.15.2/RMV-VTEP]] · RMV VTEP
+- [ADD VTEP](command/UDG/20.15.2/ADD-VTEP.md)
+- [LST VTEP](command/UDG/20.15.2/LST-VTEP.md)
+- [MOD VTEP](command/UDG/20.15.2/MOD-VTEP.md)
+- [RMV VTEP](command/UDG/20.15.2/RMV-VTEP.md)
 
 ## 证据
 

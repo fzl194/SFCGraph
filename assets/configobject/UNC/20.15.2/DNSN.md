@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DNSN]] · ADD DNSN
-- [[command/UNC/20.15.2/LST-DNSN]] · LST DNSN
-- [[command/UNC/20.15.2/MOD-DNSN]] · MOD DNSN
-- [[command/UNC/20.15.2/RMV-DNSN]] · RMV DNSN
+- [ADD DNSN](command/UNC/20.15.2/ADD-DNSN.md)
+- [LST DNSN](command/UNC/20.15.2/LST-DNSN.md)
+- [MOD DNSN](command/UNC/20.15.2/MOD-DNSN.md)
+- [RMV DNSN](command/UNC/20.15.2/RMV-DNSN.md)
 
 ## 证据
 

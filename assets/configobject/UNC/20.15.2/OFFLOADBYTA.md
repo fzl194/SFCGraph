@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-OFFLOADBYTA]] · STR OFFLOADBYTA
+- [STR OFFLOADBYTA](command/UNC/20.15.2/STR-OFFLOADBYTA.md)
 
 ## 证据
 

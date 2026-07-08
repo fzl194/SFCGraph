@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/TST-PATH]] · TST PATH
+- [TST PATH](command/UDG/20.15.2/TST-PATH.md)
 
 ## 证据
 

@@ -81,7 +81,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CDRDELTASK]] · 话单删除任务（CDRDELTASK）
+- [话单删除任务（CDRDELTASK）](configobject/UNC/20.15.2/CDRDELTASK.md)
 
 ## 使用实例
 

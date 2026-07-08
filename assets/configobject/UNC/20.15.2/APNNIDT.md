@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNNIDT]] · ADD APNNIDT
-- [[command/UNC/20.15.2/LST-APNNIDT]] · LST APNNIDT
-- [[command/UNC/20.15.2/MOD-APNNIDT]] · MOD APNNIDT
-- [[command/UNC/20.15.2/RMV-APNNIDT]] · RMV APNNIDT
+- [ADD APNNIDT](command/UNC/20.15.2/ADD-APNNIDT.md)
+- [LST APNNIDT](command/UNC/20.15.2/LST-APNNIDT.md)
+- [MOD APNNIDT](command/UNC/20.15.2/MOD-APNNIDT.md)
+- [RMV APNNIDT](command/UNC/20.15.2/RMV-APNNIDT.md)
 
 ## 证据
 

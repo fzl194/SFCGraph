@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SECPOLICY]] · ADD SECPOLICY
-- [[command/UNC/20.15.2/LST-SECPOLICY]] · LST SECPOLICY
-- [[command/UNC/20.15.2/RMV-SECPOLICY]] · RMV SECPOLICY
+- [ADD SECPOLICY](command/UNC/20.15.2/ADD-SECPOLICY.md)
+- [LST SECPOLICY](command/UNC/20.15.2/LST-SECPOLICY.md)
+- [RMV SECPOLICY](command/UNC/20.15.2/RMV-SECPOLICY.md)
 
 ## 证据
 

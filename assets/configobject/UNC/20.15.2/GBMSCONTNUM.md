@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GBMSCONTNUM]] · DSP GBMSCONTNUM
+- [DSP GBMSCONTNUM](command/UNC/20.15.2/DSP-GBMSCONTNUM.md)
 
 ## 证据
 

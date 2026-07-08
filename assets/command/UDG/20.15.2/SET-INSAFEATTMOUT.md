@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/INSAFEATTMOUT]] · 流特征节点超时时间（INSAFEATTMOUT）
+- [流特征节点超时时间（INSAFEATTMOUT）](configobject/UDG/20.15.2/INSAFEATTMOUT.md)
 
 ## 使用实例
 

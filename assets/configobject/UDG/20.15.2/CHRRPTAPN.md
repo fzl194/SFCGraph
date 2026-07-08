@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-CHRRPTAPN]] · ADD CHRRPTAPN
-- [[command/UDG/20.15.2/LST-CHRRPTAPN]] · LST CHRRPTAPN
-- [[command/UDG/20.15.2/RMV-CHRRPTAPN]] · RMV CHRRPTAPN
+- [ADD CHRRPTAPN](command/UDG/20.15.2/ADD-CHRRPTAPN.md)
+- [LST CHRRPTAPN](command/UDG/20.15.2/LST-CHRRPTAPN.md)
+- [RMV CHRRPTAPN](command/UDG/20.15.2/RMV-CHRRPTAPN.md)
 
 ## 证据
 

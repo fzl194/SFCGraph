@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/RPTPERIOD]] · APN N6故障状态上报周期（RPTPERIOD）
+- [APN N6故障状态上报周期（RPTPERIOD）](configobject/UDG/20.15.2/RPTPERIOD.md)
 
 ## 使用实例
 

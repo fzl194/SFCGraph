@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OPSASSISTSTATE]] · 系统助手的当前信息（OPSASSISTSTATE）
+- [系统助手的当前信息（OPSASSISTSTATE）](configobject/UDG/20.15.2/OPSASSISTSTATE.md)
 
 ## 使用实例
 

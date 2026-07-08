@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGLANFUNC]] · LST NGLANFUNC
-- [[command/UNC/20.15.2/SET-NGLANFUNC]] · SET NGLANFUNC
+- [LST NGLANFUNC](command/UNC/20.15.2/LST-NGLANFUNC.md)
+- [SET NGLANFUNC](command/UNC/20.15.2/SET-NGLANFUNC.md)
 
 ## 证据
 

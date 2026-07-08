@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/VPNINST]] · VPN实例（VPNINST）
+- [VPN实例（VPNINST）](configobject/UDG/20.15.2/VPNINST.md)
 
 ## 关联任务
 

@@ -39,7 +39,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CNTMEMSTAT]] · 容器内存信息（CNTMEMSTAT）
+- [容器内存信息（CNTMEMSTAT）](configobject/UDG/20.15.2/CNTMEMSTAT.md)
 
 ## 使用实例
 

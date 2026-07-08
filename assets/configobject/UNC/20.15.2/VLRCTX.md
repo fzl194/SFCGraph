@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-VLRCTX]] · DSP VLRCTX
-- [[command/UNC/20.15.2/RMV-VLRCTX]] · RMV VLRCTX
+- [DSP VLRCTX](command/UNC/20.15.2/DSP-VLRCTX.md)
+- [RMV VLRCTX](command/UNC/20.15.2/RMV-VLRCTX.md)
 
 ## 证据
 

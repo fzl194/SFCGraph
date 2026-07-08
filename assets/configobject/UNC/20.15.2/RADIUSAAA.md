@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-RADIUSAAA]] · LST RADIUSAAA
+- [LST RADIUSAAA](command/UNC/20.15.2/LST-RADIUSAAA.md)
 
 ## 证据
 

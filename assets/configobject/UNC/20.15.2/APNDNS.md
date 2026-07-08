@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNDNS]] · ADD APNDNS
-- [[command/UNC/20.15.2/LST-APNDNS]] · LST APNDNS
-- [[command/UNC/20.15.2/MOD-APNDNS]] · MOD APNDNS
-- [[command/UNC/20.15.2/RMV-APNDNS]] · RMV APNDNS
+- [ADD APNDNS](command/UNC/20.15.2/ADD-APNDNS.md)
+- [LST APNDNS](command/UNC/20.15.2/LST-APNDNS.md)
+- [MOD APNDNS](command/UNC/20.15.2/MOD-APNDNS.md)
+- [RMV APNDNS](command/UNC/20.15.2/RMV-APNDNS.md)
 
 ## 证据
 

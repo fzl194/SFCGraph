@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-EPLMNGRP]] · ADD EPLMNGRP
-- [[command/UNC/20.15.2/LST-EPLMNGRP]] · LST EPLMNGRP
-- [[command/UNC/20.15.2/MOD-EPLMNGRP]] · MOD EPLMNGRP
-- [[command/UNC/20.15.2/RMV-EPLMNGRP]] · RMV EPLMNGRP
+- [ADD EPLMNGRP](command/UNC/20.15.2/ADD-EPLMNGRP.md)
+- [LST EPLMNGRP](command/UNC/20.15.2/LST-EPLMNGRP.md)
+- [MOD EPLMNGRP](command/UNC/20.15.2/MOD-EPLMNGRP.md)
+- [RMV EPLMNGRP](command/UNC/20.15.2/RMV-EPLMNGRP.md)
 
 ## 证据
 

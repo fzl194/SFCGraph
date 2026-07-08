@@ -26,9 +26,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFPLMN]] · ADD PNFPLMN
-- [[command/UNC/20.15.2/LST-PNFPLMN]] · LST PNFPLMN
-- [[command/UNC/20.15.2/RMV-PNFPLMN]] · RMV PNFPLMN
+- [ADD PNFPLMN](command/UNC/20.15.2/ADD-PNFPLMN.md)
+- [LST PNFPLMN](command/UNC/20.15.2/LST-PNFPLMN.md)
+- [RMV PNFPLMN](command/UNC/20.15.2/RMV-PNFPLMN.md)
 
 ## 证据
 

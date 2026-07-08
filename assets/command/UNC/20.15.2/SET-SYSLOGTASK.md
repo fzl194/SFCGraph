@@ -52,7 +52,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SYSLOGTASK]] · 上报任务（SYSLOGTASK）
+- [上报任务（SYSLOGTASK）](configobject/UNC/20.15.2/SYSLOGTASK.md)
 
 ## 使用实例
 

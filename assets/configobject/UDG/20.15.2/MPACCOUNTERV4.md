@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RTR-MPACCOUNTERV4]] · RTR MPACCOUNTERV4
+- [RTR MPACCOUNTERV4](command/UDG/20.15.2/RTR-MPACCOUNTERV4.md)
 
 ## 证据
 

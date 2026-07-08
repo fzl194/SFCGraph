@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-WLRPAESTATE]] · LST WLRPAESTATE
-- [[command/UDG/20.15.2/SET-WLRPAESTATE]] · SET WLRPAESTATE
+- [LST WLRPAESTATE](command/UDG/20.15.2/LST-WLRPAESTATE.md)
+- [SET WLRPAESTATE](command/UDG/20.15.2/SET-WLRPAESTATE.md)
 
 ## 证据
 

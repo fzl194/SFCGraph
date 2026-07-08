@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PODMIGRATEHIST]] · 节点扩缩容任务进展（PODMIGRATEHIST）
+- [节点扩缩容任务进展（PODMIGRATEHIST）](configobject/UDG/20.15.2/PODMIGRATEHIST.md)
 
 ## 使用实例
 

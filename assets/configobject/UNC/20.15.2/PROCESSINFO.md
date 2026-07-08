@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PROCESSINFO]] · DSP PROCESSINFO
+- [DSP PROCESSINFO](command/UNC/20.15.2/DSP-PROCESSINFO.md)
 
 ## 证据
 

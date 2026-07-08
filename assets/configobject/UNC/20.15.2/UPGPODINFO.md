@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-UPGPODINFO]] · DSP UPGPODINFO
+- [DSP UPGPODINFO](command/UNC/20.15.2/DSP-UPGPODINFO.md)
 
 ## 证据
 

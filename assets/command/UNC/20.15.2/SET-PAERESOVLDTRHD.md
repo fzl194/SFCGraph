@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PAERESOVLDTRHD]] · PAE关键资源不足告警参数（PAERESOVLDTRHD）
+- [PAE关键资源不足告警参数（PAERESOVLDTRHD）](configobject/UNC/20.15.2/PAERESOVLDTRHD.md)
 
 ## 使用实例
 

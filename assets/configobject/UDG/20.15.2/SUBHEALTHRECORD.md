@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SUBHEALTHRECORD]] · DSP SUBHEALTHRECORD
+- [DSP SUBHEALTHRECORD](command/UDG/20.15.2/DSP-SUBHEALTHRECORD.md)
 
 ## 证据
 

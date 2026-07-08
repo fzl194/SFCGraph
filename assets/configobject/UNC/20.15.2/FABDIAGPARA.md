@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-FABDIAGPARA]] · LST FABDIAGPARA
-- [[command/UNC/20.15.2/SET-FABDIAGPARA]] · SET FABDIAGPARA
+- [LST FABDIAGPARA](command/UNC/20.15.2/LST-FABDIAGPARA.md)
+- [SET FABDIAGPARA](command/UNC/20.15.2/SET-FABDIAGPARA.md)
 
 ## 证据
 

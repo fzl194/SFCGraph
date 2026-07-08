@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CCPCCACT]] · ADD CCPCCACT
-- [[command/UNC/20.15.2/LST-CCPCCACT]] · LST CCPCCACT
-- [[command/UNC/20.15.2/MOD-CCPCCACT]] · MOD CCPCCACT
-- [[command/UNC/20.15.2/RMV-CCPCCACT]] · RMV CCPCCACT
+- [ADD CCPCCACT](command/UNC/20.15.2/ADD-CCPCCACT.md)
+- [LST CCPCCACT](command/UNC/20.15.2/LST-CCPCCACT.md)
+- [MOD CCPCCACT](command/UNC/20.15.2/MOD-CCPCCACT.md)
+- [RMV CCPCCACT](command/UNC/20.15.2/RMV-CCPCCACT.md)
 
 ## 证据
 

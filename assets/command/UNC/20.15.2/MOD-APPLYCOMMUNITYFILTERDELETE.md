@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE]] · 删除团体属性过滤器设置（APPLYCOMMUNITYFILTERDELETE）
+- [删除团体属性过滤器设置（APPLYCOMMUNITYFILTERDELETE）](configobject/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE.md)
 
 ## 使用实例
 

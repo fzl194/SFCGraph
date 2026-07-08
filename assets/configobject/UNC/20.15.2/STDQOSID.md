@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-STDQOSID]] · ADD STDQOSID
-- [[command/UNC/20.15.2/LST-STDQOSID]] · LST STDQOSID
-- [[command/UNC/20.15.2/MOD-STDQOSID]] · MOD STDQOSID
-- [[command/UNC/20.15.2/RMV-STDQOSID]] · RMV STDQOSID
+- [ADD STDQOSID](command/UNC/20.15.2/ADD-STDQOSID.md)
+- [LST STDQOSID](command/UNC/20.15.2/LST-STDQOSID.md)
+- [MOD STDQOSID](command/UNC/20.15.2/MOD-STDQOSID.md)
+- [RMV STDQOSID](command/UNC/20.15.2/RMV-STDQOSID.md)
 
 ## 证据
 

@@ -60,7 +60,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/FAULTDETECT]] · 故障策略信息（FAULTDETECT）
+- [故障策略信息（FAULTDETECT）](configobject/UNC/20.15.2/FAULTDETECT.md)
 
 ## 使用实例
 

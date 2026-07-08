@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-FABDIAGINFO]] · DSP FABDIAGINFO
+- [DSP FABDIAGINFO](command/UDG/20.15.2/DSP-FABDIAGINFO.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DRGROUPSTATUS]] · DSP DRGROUPSTATUS
+- [DSP DRGROUPSTATUS](command/UDG/20.15.2/DSP-DRGROUPSTATUS.md)
 
 ## 证据
 

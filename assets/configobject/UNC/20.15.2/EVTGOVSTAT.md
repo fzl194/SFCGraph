@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-EVTGOVSTAT]] · DSP EVTGOVSTAT
+- [DSP EVTGOVSTAT](command/UNC/20.15.2/DSP-EVTGOVSTAT.md)
 
 ## 证据
 

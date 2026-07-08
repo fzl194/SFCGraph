@@ -43,7 +43,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SECAUTHMEM]] · 二次授权命令（SECAUTHMEM）
+- [二次授权命令（SECAUTHMEM）](configobject/UNC/20.15.2/SECAUTHMEM.md)
 
 ## 使用实例
 

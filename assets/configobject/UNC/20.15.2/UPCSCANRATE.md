@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UPCSCANRATE]] · LST UPCSCANRATE
-- [[command/UNC/20.15.2/SET-UPCSCANRATE]] · SET UPCSCANRATE
+- [LST UPCSCANRATE](command/UNC/20.15.2/LST-UPCSCANRATE.md)
+- [SET UPCSCANRATE](command/UNC/20.15.2/SET-UPCSCANRATE.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ACT-DEVVERIFICATION]] · ACT DEVVERIFICATION
+- [ACT DEVVERIFICATION](command/UDG/20.15.2/ACT-DEVVERIFICATION.md)
 
 ## 证据
 

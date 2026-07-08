@@ -29,7 +29,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LOCALRECOVERY]] · DSP LOCALRECOVERY
+- [DSP LOCALRECOVERY](command/UNC/20.15.2/DSP-LOCALRECOVERY.md)
 
 ## 证据
 

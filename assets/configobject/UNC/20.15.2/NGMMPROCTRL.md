@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGMMPROCTRL]] · LST NGMMPROCTRL
-- [[command/UNC/20.15.2/SET-NGMMPROCTRL]] · SET NGMMPROCTRL
+- [LST NGMMPROCTRL](command/UNC/20.15.2/LST-NGMMPROCTRL.md)
+- [SET NGMMPROCTRL](command/UNC/20.15.2/SET-NGMMPROCTRL.md)
 
 ## 证据
 

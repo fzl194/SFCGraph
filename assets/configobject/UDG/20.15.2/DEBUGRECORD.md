@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RMV-DEBUGRECORD]] · RMV DEBUGRECORD
+- [RMV DEBUGRECORD](command/UDG/20.15.2/RMV-DEBUGRECORD.md)
 
 ## 证据
 

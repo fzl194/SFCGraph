@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFDNAI]] · ADD PNFDNAI
-- [[command/UNC/20.15.2/LST-PNFDNAI]] · LST PNFDNAI
-- [[command/UNC/20.15.2/MOD-PNFDNAI]] · MOD PNFDNAI
-- [[command/UNC/20.15.2/RMV-PNFDNAI]] · RMV PNFDNAI
+- [ADD PNFDNAI](command/UNC/20.15.2/ADD-PNFDNAI.md)
+- [LST PNFDNAI](command/UNC/20.15.2/LST-PNFDNAI.md)
+- [MOD PNFDNAI](command/UNC/20.15.2/MOD-PNFDNAI.md)
+- [RMV PNFDNAI](command/UNC/20.15.2/RMV-PNFDNAI.md)
 
 ## 证据
 

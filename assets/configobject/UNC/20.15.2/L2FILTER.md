@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-L2FILTER]] · ADD L2FILTER
-- [[command/UNC/20.15.2/LST-L2FILTER]] · LST L2FILTER
-- [[command/UNC/20.15.2/MOD-L2FILTER]] · MOD L2FILTER
-- [[command/UNC/20.15.2/RMV-L2FILTER]] · RMV L2FILTER
+- [ADD L2FILTER](command/UNC/20.15.2/ADD-L2FILTER.md)
+- [LST L2FILTER](command/UNC/20.15.2/LST-L2FILTER.md)
+- [MOD L2FILTER](command/UNC/20.15.2/MOD-L2FILTER.md)
+- [RMV L2FILTER](command/UNC/20.15.2/RMV-L2FILTER.md)
 
 ## 证据
 

@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGPAGING]] · DSP NGPAGING
+- [DSP NGPAGING](command/UNC/20.15.2/DSP-NGPAGING.md)
 
 ## 证据
 

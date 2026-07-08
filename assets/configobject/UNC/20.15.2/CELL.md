@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CELL]] · LST CELL
-- [[command/UNC/20.15.2/RMV-CELL]] · RMV CELL
+- [LST CELL](command/UNC/20.15.2/LST-CELL.md)
+- [RMV CELL](command/UNC/20.15.2/RMV-CELL.md)
 
 ## 证据
 

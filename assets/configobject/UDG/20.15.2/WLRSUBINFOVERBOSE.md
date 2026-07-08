@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-WLRSUBINFOVERBOSE]] · DSP WLRSUBINFOVERBOSE
+- [DSP WLRSUBINFOVERBOSE](command/UDG/20.15.2/DSP-WLRSUBINFOVERBOSE.md)
 
 ## 证据
 

@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-COMMMCTX]] · DSP COMMMCTX
+- [DSP COMMMCTX](command/UNC/20.15.2/DSP-COMMMCTX.md)
 
 ## 证据
 

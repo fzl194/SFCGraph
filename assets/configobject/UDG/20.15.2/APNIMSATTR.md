@@ -26,12 +26,12 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNIMSATTR]] · LST APNIMSATTR
-- [[command/UDG/20.15.2/SET-APNIMSATTR]] · SET APNIMSATTR
+- [LST APNIMSATTR](command/UDG/20.15.2/LST-APNIMSATTR.md)
+- [SET APNIMSATTR](command/UDG/20.15.2/SET-APNIMSATTR.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/APN]] · APN
+- [APN](configobject/UDG/20.15.2/APN.md)
 
 ## 证据
 

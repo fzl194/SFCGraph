@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/TST-NFNOTIFY]] · TST NFNOTIFY
+- [TST NFNOTIFY](command/UNC/20.15.2/TST-NFNOTIFY.md)
 
 ## 证据
 

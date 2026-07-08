@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-LICENSERES]] · DSP LICENSERES
+- [DSP LICENSERES](command/UDG/20.15.2/DSP-LICENSERES.md)
 
 ## 证据
 

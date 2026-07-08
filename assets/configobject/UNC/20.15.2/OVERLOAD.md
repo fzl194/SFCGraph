@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-OVERLOAD]] · CLR OVERLOAD
-- [[command/UNC/20.15.2/DSP-OVERLOAD]] · DSP OVERLOAD
+- [CLR OVERLOAD](command/UNC/20.15.2/CLR-OVERLOAD.md)
+- [DSP OVERLOAD](command/UNC/20.15.2/DSP-OVERLOAD.md)
 
 ## 证据
 

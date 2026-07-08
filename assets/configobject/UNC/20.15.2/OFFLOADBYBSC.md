@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-OFFLOADBYBSC]] · STR OFFLOADBYBSC
+- [STR OFFLOADBYBSC](command/UNC/20.15.2/STR-OFFLOADBYBSC.md)
 
 ## 证据
 

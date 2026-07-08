@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NCGCHLMAP]] · ADD NCGCHLMAP
-- [[command/UNC/20.15.2/LST-NCGCHLMAP]] · LST NCGCHLMAP
-- [[command/UNC/20.15.2/RMV-NCGCHLMAP]] · RMV NCGCHLMAP
+- [ADD NCGCHLMAP](command/UNC/20.15.2/ADD-NCGCHLMAP.md)
+- [LST NCGCHLMAP](command/UNC/20.15.2/LST-NCGCHLMAP.md)
+- [RMV NCGCHLMAP](command/UNC/20.15.2/RMV-NCGCHLMAP.md)
 
 ## 证据
 

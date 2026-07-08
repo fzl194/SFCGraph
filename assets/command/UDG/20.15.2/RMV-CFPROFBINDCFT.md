@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CFPROFBINDCFT]] · 内容过滤策略绑定关系（CFPROFBINDCFT）
+- [内容过滤策略绑定关系（CFPROFBINDCFT）](configobject/UDG/20.15.2/CFPROFBINDCFT.md)
 
 ## 使用实例
 

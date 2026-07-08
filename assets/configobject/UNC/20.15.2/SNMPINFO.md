@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SNMPINFO]] · LST SNMPINFO
+- [LST SNMPINFO](command/UNC/20.15.2/LST-SNMPINFO.md)
 
 ## 证据
 

@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UCFIP]] · ADD UCFIP
-- [[command/UNC/20.15.2/LST-UCFIP]] · LST UCFIP
-- [[command/UNC/20.15.2/RMV-UCFIP]] · RMV UCFIP
+- [ADD UCFIP](command/UNC/20.15.2/ADD-UCFIP.md)
+- [LST UCFIP](command/UNC/20.15.2/LST-UCFIP.md)
+- [RMV UCFIP](command/UNC/20.15.2/RMV-UCFIP.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-INSAGLBCFG]] · LST INSAGLBCFG
-- [[command/UDG/20.15.2/SET-INSAGLBCFG]] · SET INSAGLBCFG
+- [LST INSAGLBCFG](command/UDG/20.15.2/LST-INSAGLBCFG.md)
+- [SET INSAGLBCFG](command/UDG/20.15.2/SET-INSAGLBCFG.md)
 
 ## 证据
 

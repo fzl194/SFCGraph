@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-ENBNEIBS]] · CLR ENBNEIBS
-- [[command/UNC/20.15.2/DSP-ENBNEIBS]] · DSP ENBNEIBS
+- [CLR ENBNEIBS](command/UNC/20.15.2/CLR-ENBNEIBS.md)
+- [DSP ENBNEIBS](command/UNC/20.15.2/DSP-ENBNEIBS.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MEASTREND]] · DSP MEASTREND
+- [DSP MEASTREND](command/UDG/20.15.2/DSP-MEASTREND.md)
 
 ## 证据
 

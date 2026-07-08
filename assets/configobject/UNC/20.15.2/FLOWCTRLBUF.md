@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-FLOWCTRLBUF]] · LST FLOWCTRLBUF
-- [[command/UNC/20.15.2/SET-FLOWCTRLBUF]] · SET FLOWCTRLBUF
+- [LST FLOWCTRLBUF](command/UNC/20.15.2/LST-FLOWCTRLBUF.md)
+- [SET FLOWCTRLBUF](command/UNC/20.15.2/SET-FLOWCTRLBUF.md)
 
 ## 证据
 

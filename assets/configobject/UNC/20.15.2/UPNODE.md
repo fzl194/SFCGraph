@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UPNODE]] · ADD UPNODE
-- [[command/UNC/20.15.2/LST-UPNODE]] · LST UPNODE
-- [[command/UNC/20.15.2/MOD-UPNODE]] · MOD UPNODE
-- [[command/UNC/20.15.2/RMV-UPNODE]] · RMV UPNODE
+- [ADD UPNODE](command/UNC/20.15.2/ADD-UPNODE.md)
+- [LST UPNODE](command/UNC/20.15.2/LST-UPNODE.md)
+- [MOD UPNODE](command/UNC/20.15.2/MOD-UPNODE.md)
+- [RMV UPNODE](command/UNC/20.15.2/RMV-UPNODE.md)
 
 ## 证据
 

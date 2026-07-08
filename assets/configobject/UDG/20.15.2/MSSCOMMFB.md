@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSCOMMFB]] · DSP MSSCOMMFB
+- [DSP MSSCOMMFB](command/UDG/20.15.2/DSP-MSSCOMMFB.md)
 
 ## 证据
 

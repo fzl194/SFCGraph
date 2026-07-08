@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRA]] · ADD NRA
-- [[command/UNC/20.15.2/LST-NRA]] · LST NRA
-- [[command/UNC/20.15.2/RMV-NRA]] · RMV NRA
+- [ADD NRA](command/UNC/20.15.2/ADD-NRA.md)
+- [LST NRA](command/UNC/20.15.2/LST-NRA.md)
+- [RMV NRA](command/UNC/20.15.2/RMV-NRA.md)
 
 ## 证据
 

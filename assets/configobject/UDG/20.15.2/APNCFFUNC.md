@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNCFFUNC]] · LST APNCFFUNC
-- [[command/UDG/20.15.2/SET-APNCFFUNC]] · SET APNCFFUNC
+- [LST APNCFFUNC](command/UDG/20.15.2/LST-APNCFFUNC.md)
+- [SET APNCFFUNC](command/UDG/20.15.2/SET-APNCFFUNC.md)
 
 ## 证据
 

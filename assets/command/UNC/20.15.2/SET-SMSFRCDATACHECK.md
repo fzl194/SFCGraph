@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SMSFRCDATACHECK]] · SMSF核查注册中心状态功能配置（SMSFRCDATACHECK）
+- [SMSF核查注册中心状态功能配置（SMSFRCDATACHECK）](configobject/UNC/20.15.2/SMSFRCDATACHECK.md)
 
 ## 使用实例
 

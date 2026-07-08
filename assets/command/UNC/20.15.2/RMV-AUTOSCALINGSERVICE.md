@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AUTOSCALINGSERVICE]] · 自动化配置参数（AUTOSCALINGSERVICE）
+- [自动化配置参数（AUTOSCALINGSERVICE）](configobject/UNC/20.15.2/AUTOSCALINGSERVICE.md)
 
 ## 使用实例
 

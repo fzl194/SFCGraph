@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-WLRSRCINTERFACE]] · DSP WLRSRCINTERFACE
+- [DSP WLRSRCINTERFACE](command/UDG/20.15.2/DSP-WLRSRCINTERFACE.md)
 
 ## 证据
 

@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SIGSUPPRESS]] · S11接口信令风暴抑制功能的控制与统计信息（SIGSUPPRESS）
+- [S11接口信令风暴抑制功能的控制与统计信息（SIGSUPPRESS）](configobject/UNC/20.15.2/SIGSUPPRESS.md)
 
 ## 使用实例
 

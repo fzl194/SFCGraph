@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AUTOSCALINGETHTRUNK]] · 以太网隧道自动化多虚拟网卡配置模板（AUTOSCALINGETHTRUNK）
+- [以太网隧道自动化多虚拟网卡配置模板（AUTOSCALINGETHTRUNK）](configobject/UNC/20.15.2/AUTOSCALINGETHTRUNK.md)
 
 ## 使用实例
 

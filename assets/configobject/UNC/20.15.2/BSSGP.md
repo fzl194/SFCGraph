@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-BSSGP]] · LST BSSGP
-- [[command/UNC/20.15.2/SET-BSSGP]] · SET BSSGP
+- [LST BSSGP](command/UNC/20.15.2/LST-BSSGP.md)
+- [SET BSSGP](command/UNC/20.15.2/SET-BSSGP.md)
 
 ## 证据
 

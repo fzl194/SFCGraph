@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGLCSCTX]] · DSP NGLCSCTX
+- [DSP NGLCSCTX](command/UNC/20.15.2/DSP-NGLCSCTX.md)
 
 ## 证据
 

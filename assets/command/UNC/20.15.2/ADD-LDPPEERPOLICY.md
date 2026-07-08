@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LDPPEERPOLICY]] · LDP邻居策略（LDPPEERPOLICY）
+- [LDP邻居策略（LDPPEERPOLICY）](configobject/UNC/20.15.2/LDPPEERPOLICY.md)
 
 ## 使用实例
 

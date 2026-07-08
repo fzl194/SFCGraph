@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RDSSVR]] · ADD RDSSVR
-- [[command/UNC/20.15.2/LST-RDSSVR]] · LST RDSSVR
-- [[command/UNC/20.15.2/MOD-RDSSVR]] · MOD RDSSVR
-- [[command/UNC/20.15.2/RMV-RDSSVR]] · RMV RDSSVR
+- [ADD RDSSVR](command/UNC/20.15.2/ADD-RDSSVR.md)
+- [LST RDSSVR](command/UNC/20.15.2/LST-RDSSVR.md)
+- [MOD RDSSVR](command/UNC/20.15.2/MOD-RDSSVR.md)
+- [RMV RDSSVR](command/UNC/20.15.2/RMV-RDSSVR.md)
 
 ## 证据
 

@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PAEPORT]] · DSP PAEPORT
-- [[command/UNC/20.15.2/RTR-PAEPORT]] · RTR PAEPORT
+- [DSP PAEPORT](command/UNC/20.15.2/DSP-PAEPORT.md)
+- [RTR PAEPORT](command/UNC/20.15.2/RTR-PAEPORT.md)
 
 ## 证据
 

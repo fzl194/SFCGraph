@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNQOSATTR]] · LST APNQOSATTR
-- [[command/UNC/20.15.2/SET-APNQOSATTR]] · SET APNQOSATTR
+- [LST APNQOSATTR](command/UNC/20.15.2/LST-APNQOSATTR.md)
+- [SET APNQOSATTR](command/UNC/20.15.2/SET-APNQOSATTR.md)
 
 ## 证据
 

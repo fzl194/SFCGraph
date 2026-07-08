@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LCK-UPFADDR]] · LCK UPFADDR
-- [[command/UNC/20.15.2/ULK-UPFADDR]] · ULK UPFADDR
+- [LCK UPFADDR](command/UNC/20.15.2/LCK-UPFADDR.md)
+- [ULK UPFADDR](command/UNC/20.15.2/ULK-UPFADDR.md)
 
 ## 证据
 

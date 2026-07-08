@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DSCPPRI]] · ADD DSCPPRI
-- [[command/UNC/20.15.2/LST-DSCPPRI]] · LST DSCPPRI
-- [[command/UNC/20.15.2/MOD-DSCPPRI]] · MOD DSCPPRI
-- [[command/UNC/20.15.2/RMV-DSCPPRI]] · RMV DSCPPRI
+- [ADD DSCPPRI](command/UNC/20.15.2/ADD-DSCPPRI.md)
+- [LST DSCPPRI](command/UNC/20.15.2/LST-DSCPPRI.md)
+- [MOD DSCPPRI](command/UNC/20.15.2/MOD-DSCPPRI.md)
+- [RMV DSCPPRI](command/UNC/20.15.2/RMV-DSCPPRI.md)
 
 ## 证据
 

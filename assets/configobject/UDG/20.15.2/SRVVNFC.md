@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SRVVNFC]] · DSP SRVVNFC
+- [DSP SRVVNFC](command/UDG/20.15.2/DSP-SRVVNFC.md)
 
 ## 证据
 

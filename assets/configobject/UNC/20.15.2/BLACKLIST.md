@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-BLACKLIST]] · ADD BLACKLIST
-- [[command/UNC/20.15.2/LST-BLACKLIST]] · LST BLACKLIST
-- [[command/UNC/20.15.2/RMV-BLACKLIST]] · RMV BLACKLIST
+- [ADD BLACKLIST](command/UNC/20.15.2/ADD-BLACKLIST.md)
+- [LST BLACKLIST](command/UNC/20.15.2/LST-BLACKLIST.md)
+- [RMV BLACKLIST](command/UNC/20.15.2/RMV-BLACKLIST.md)
 
 ## 证据
 

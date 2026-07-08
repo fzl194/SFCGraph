@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CELLFAULTINFO]] · DSP CELLFAULTINFO
+- [DSP CELLFAULTINFO](command/UDG/20.15.2/DSP-CELLFAULTINFO.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NOSBASEROUTE]] · DSP NOSBASEROUTE
+- [DSP NOSBASEROUTE](command/UNC/20.15.2/DSP-NOSBASEROUTE.md)
 
 ## 证据
 

@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-HTTPLNK]] · DSP HTTPLNK
-- [[command/UDG/20.15.2/RST-HTTPLNK]] · RST HTTPLNK
+- [DSP HTTPLNK](command/UDG/20.15.2/DSP-HTTPLNK.md)
+- [RST HTTPLNK](command/UDG/20.15.2/RST-HTTPLNK.md)
 
 ## 证据
 

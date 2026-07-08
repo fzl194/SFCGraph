@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CFCACHEPARA]] · LST CFCACHEPARA
-- [[command/UDG/20.15.2/SET-CFCACHEPARA]] · SET CFCACHEPARA
+- [LST CFCACHEPARA](command/UDG/20.15.2/LST-CFCACHEPARA.md)
+- [SET CFCACHEPARA](command/UDG/20.15.2/SET-CFCACHEPARA.md)
 
 ## 证据
 

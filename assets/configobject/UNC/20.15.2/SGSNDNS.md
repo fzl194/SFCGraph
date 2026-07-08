@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SGSNDNS]] · ADD SGSNDNS
-- [[command/UNC/20.15.2/LST-SGSNDNS]] · LST SGSNDNS
-- [[command/UNC/20.15.2/MOD-SGSNDNS]] · MOD SGSNDNS
-- [[command/UNC/20.15.2/RMV-SGSNDNS]] · RMV SGSNDNS
+- [ADD SGSNDNS](command/UNC/20.15.2/ADD-SGSNDNS.md)
+- [LST SGSNDNS](command/UNC/20.15.2/LST-SGSNDNS.md)
+- [MOD SGSNDNS](command/UNC/20.15.2/MOD-SGSNDNS.md)
+- [RMV SGSNDNS](command/UNC/20.15.2/RMV-SGSNDNS.md)
 
 ## 证据
 

@@ -34,8 +34,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PAEPARAMS]] · LST PAEPARAMS
-- [[command/UDG/20.15.2/SET-PAEPARAMS]] · SET PAEPARAMS
+- [LST PAEPARAMS](command/UDG/20.15.2/LST-PAEPARAMS.md)
+- [SET PAEPARAMS](command/UDG/20.15.2/SET-PAEPARAMS.md)
 
 ## 证据
 

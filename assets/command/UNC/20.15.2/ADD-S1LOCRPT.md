@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/S1LOCRPT]] · S1模式实时小区位置订阅（S1LOCRPT）
+- [S1模式实时小区位置订阅（S1LOCRPT）](configobject/UNC/20.15.2/S1LOCRPT.md)
 
 ## 使用实例
 

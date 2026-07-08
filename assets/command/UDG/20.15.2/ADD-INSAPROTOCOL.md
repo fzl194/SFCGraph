@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/INSAPROTOCOL]] · 黑白名单协议配置（INSAPROTOCOL）
+- [黑白名单协议配置（INSAPROTOCOL）](configobject/UDG/20.15.2/INSAPROTOCOL.md)
 
 ## 使用实例
 

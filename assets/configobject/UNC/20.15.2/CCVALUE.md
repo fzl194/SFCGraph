@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CCVALUE]] · ADD CCVALUE
-- [[command/UNC/20.15.2/LST-CCVALUE]] · LST CCVALUE
-- [[command/UNC/20.15.2/RMV-CCVALUE]] · RMV CCVALUE
+- [ADD CCVALUE](command/UNC/20.15.2/ADD-CCVALUE.md)
+- [LST CCVALUE](command/UNC/20.15.2/LST-CCVALUE.md)
+- [RMV CCVALUE](command/UNC/20.15.2/RMV-CCVALUE.md)
 
 ## 证据
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FEHEALCTRL]] · LST FEHEALCTRL
-- [[command/UDG/20.15.2/SET-FEHEALCTRL]] · SET FEHEALCTRL
+- [LST FEHEALCTRL](command/UDG/20.15.2/LST-FEHEALCTRL.md)
+- [SET FEHEALCTRL](command/UDG/20.15.2/SET-FEHEALCTRL.md)
 
 ## 证据
 

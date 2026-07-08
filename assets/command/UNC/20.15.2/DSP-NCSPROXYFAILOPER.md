@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NCSPROXYFAILOPER]] · NETCONF代理操作失败信息（NCSPROXYFAILOPER）
+- [NETCONF代理操作失败信息（NCSPROXYFAILOPER）](configobject/UNC/20.15.2/NCSPROXYFAILOPER.md)
 
 ## 使用实例
 

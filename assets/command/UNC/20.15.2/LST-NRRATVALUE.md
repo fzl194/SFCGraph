@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRRATVALUE]] · 5G接入用户的RAT填写值（NRRATVALUE）
+- [5G接入用户的RAT填写值（NRRATVALUE）](configobject/UNC/20.15.2/NRRATVALUE.md)
 
 ## 使用实例
 

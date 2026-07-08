@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NCSDATAMODEL]] · 设备当前已加载的NETCONF数据模型（NCSDATAMODEL）
+- [设备当前已加载的NETCONF数据模型（NCSDATAMODEL）](configobject/UNC/20.15.2/NCSDATAMODEL.md)
 
 ## 使用实例
 

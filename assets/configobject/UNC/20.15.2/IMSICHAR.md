@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMSICHAR]] · ADD IMSICHAR
-- [[command/UNC/20.15.2/LST-IMSICHAR]] · LST IMSICHAR
-- [[command/UNC/20.15.2/MOD-IMSICHAR]] · MOD IMSICHAR
-- [[command/UNC/20.15.2/RMV-IMSICHAR]] · RMV IMSICHAR
+- [ADD IMSICHAR](command/UNC/20.15.2/ADD-IMSICHAR.md)
+- [LST IMSICHAR](command/UNC/20.15.2/LST-IMSICHAR.md)
+- [MOD IMSICHAR](command/UNC/20.15.2/MOD-IMSICHAR.md)
+- [RMV IMSICHAR](command/UNC/20.15.2/RMV-IMSICHAR.md)
 
 ## 证据
 

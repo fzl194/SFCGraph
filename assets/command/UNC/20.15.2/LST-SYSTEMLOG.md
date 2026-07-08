@@ -41,7 +41,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SYSTEMLOG]] · 系统日志（SYSTEMLOG）
+- [系统日志（SYSTEMLOG）](configobject/UNC/20.15.2/SYSTEMLOG.md)
 
 ## 使用实例
 

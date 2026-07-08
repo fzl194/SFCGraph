@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGPRAMEM]] · ADD NGPRAMEM
-- [[command/UNC/20.15.2/LST-NGPRAMEM]] · LST NGPRAMEM
-- [[command/UNC/20.15.2/RMV-NGPRAMEM]] · RMV NGPRAMEM
+- [ADD NGPRAMEM](command/UNC/20.15.2/ADD-NGPRAMEM.md)
+- [LST NGPRAMEM](command/UNC/20.15.2/LST-NGPRAMEM.md)
+- [RMV NGPRAMEM](command/UNC/20.15.2/RMV-NGPRAMEM.md)
 
 ## 证据
 

@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-MEASUNIT]] · LST MEASUNIT
+- [LST MEASUNIT](command/UDG/20.15.2/LST-MEASUNIT.md)
 
 ## 证据
 

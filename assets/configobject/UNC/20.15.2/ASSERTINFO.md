@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ASSERTINFO]] · DSP ASSERTINFO
+- [DSP ASSERTINFO](command/UNC/20.15.2/DSP-ASSERTINFO.md)
 
 ## 证据
 

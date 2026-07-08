@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SSHCERRORLOG]] · DSP SSHCERRORLOG
+- [DSP SSHCERRORLOG](command/UNC/20.15.2/DSP-SSHCERRORLOG.md)
 
 ## 证据
 

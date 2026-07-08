@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-LDPLSPMGROUTE]] · DSP LDPLSPMGROUTE
+- [DSP LDPLSPMGROUTE](command/UDG/20.15.2/DSP-LDPLSPMGROUTE.md)
 
 ## 证据
 

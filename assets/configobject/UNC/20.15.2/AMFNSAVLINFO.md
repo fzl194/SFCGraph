@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-AMFNSAVLINFO]] · DSP AMFNSAVLINFO
+- [DSP AMFNSAVLINFO](command/UNC/20.15.2/DSP-AMFNSAVLINFO.md)
 
 ## 证据
 

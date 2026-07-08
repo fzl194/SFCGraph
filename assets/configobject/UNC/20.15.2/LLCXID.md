@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LLCXID]] · ADD LLCXID
-- [[command/UNC/20.15.2/LST-LLCXID]] · LST LLCXID
-- [[command/UNC/20.15.2/MOD-LLCXID]] · MOD LLCXID
-- [[command/UNC/20.15.2/RMV-LLCXID]] · RMV LLCXID
+- [ADD LLCXID](command/UNC/20.15.2/ADD-LLCXID.md)
+- [LST LLCXID](command/UNC/20.15.2/LST-LLCXID.md)
+- [MOD LLCXID](command/UNC/20.15.2/MOD-LLCXID.md)
+- [RMV LLCXID](command/UNC/20.15.2/RMV-LLCXID.md)
 
 ## 证据
 

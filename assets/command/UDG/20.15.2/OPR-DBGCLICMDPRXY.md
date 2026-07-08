@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/DBGCLICMDPRXY]] · 通过命令代理执行命令行调试命令（DBGCLICMDPRXY）
+- [通过命令代理执行命令行调试命令（DBGCLICMDPRXY）](configobject/UDG/20.15.2/DBGCLICMDPRXY.md)
 
 ## 使用实例
 

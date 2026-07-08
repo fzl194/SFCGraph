@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GBEPPOOL]] · ADD GBEPPOOL
-- [[command/UNC/20.15.2/LST-GBEPPOOL]] · LST GBEPPOOL
-- [[command/UNC/20.15.2/RMV-GBEPPOOL]] · RMV GBEPPOOL
+- [ADD GBEPPOOL](command/UNC/20.15.2/ADD-GBEPPOOL.md)
+- [LST GBEPPOOL](command/UNC/20.15.2/LST-GBEPPOOL.md)
+- [RMV GBEPPOOL](command/UNC/20.15.2/RMV-GBEPPOOL.md)
 
 ## 证据
 

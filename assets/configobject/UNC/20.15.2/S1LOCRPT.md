@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-S1LOCRPT]] · ADD S1LOCRPT
-- [[command/UNC/20.15.2/LST-S1LOCRPT]] · LST S1LOCRPT
-- [[command/UNC/20.15.2/MOD-S1LOCRPT]] · MOD S1LOCRPT
-- [[command/UNC/20.15.2/RMV-S1LOCRPT]] · RMV S1LOCRPT
+- [ADD S1LOCRPT](command/UNC/20.15.2/ADD-S1LOCRPT.md)
+- [LST S1LOCRPT](command/UNC/20.15.2/LST-S1LOCRPT.md)
+- [MOD S1LOCRPT](command/UNC/20.15.2/MOD-S1LOCRPT.md)
+- [RMV S1LOCRPT](command/UNC/20.15.2/RMV-S1LOCRPT.md)
 
 ## 证据
 

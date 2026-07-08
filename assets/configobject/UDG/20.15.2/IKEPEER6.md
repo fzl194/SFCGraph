@@ -32,10 +32,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-IKEPEER6]] · ADD IKEPEER6
-- [[command/UDG/20.15.2/LST-IKEPEER6]] · LST IKEPEER6
-- [[command/UDG/20.15.2/MOD-IKEPEER6]] · MOD IKEPEER6
-- [[command/UDG/20.15.2/RMV-IKEPEER6]] · RMV IKEPEER6
+- [ADD IKEPEER6](command/UDG/20.15.2/ADD-IKEPEER6.md)
+- [LST IKEPEER6](command/UDG/20.15.2/LST-IKEPEER6.md)
+- [MOD IKEPEER6](command/UDG/20.15.2/MOD-IKEPEER6.md)
+- [RMV IKEPEER6](command/UDG/20.15.2/RMV-IKEPEER6.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UCFCONFIG]] · LST UCFCONFIG
-- [[command/UNC/20.15.2/SET-UCFCONFIG]] · SET UCFCONFIG
+- [LST UCFCONFIG](command/UNC/20.15.2/LST-UCFCONFIG.md)
+- [SET UCFCONFIG](command/UNC/20.15.2/SET-UCFCONFIG.md)
 
 ## 证据
 

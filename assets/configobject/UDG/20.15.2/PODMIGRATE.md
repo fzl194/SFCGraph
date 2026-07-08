@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/OPR-PODMIGRATE]] · OPR PODMIGRATE
+- [OPR PODMIGRATE](command/UDG/20.15.2/OPR-PODMIGRATE.md)
 
 ## 证据
 

@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NETWORK]] · 网络查询（NETWORK）
+- [网络查询（NETWORK）](configobject/UNC/20.15.2/NETWORK.md)
 
 ## 使用实例
 

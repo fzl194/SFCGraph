@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NODE]] · 节点信息（NODE）
+- [节点信息（NODE）](configobject/UNC/20.15.2/NODE.md)
 
 ## 使用实例
 

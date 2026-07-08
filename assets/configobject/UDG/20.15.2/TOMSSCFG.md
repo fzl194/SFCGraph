@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TOMSSCFG]] · LST TOMSSCFG
-- [[command/UDG/20.15.2/SET-TOMSSCFG]] · SET TOMSSCFG
+- [LST TOMSSCFG](command/UDG/20.15.2/LST-TOMSSCFG.md)
+- [SET TOMSSCFG](command/UDG/20.15.2/SET-TOMSSCFG.md)
 
 ## 证据
 

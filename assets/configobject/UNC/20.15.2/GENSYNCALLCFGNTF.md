@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/REQ-GENSYNCALLCFGNTF]] · REQ GENSYNCALLCFGNTF
+- [REQ GENSYNCALLCFGNTF](command/UNC/20.15.2/REQ-GENSYNCALLCFGNTF.md)
 
 ## 证据
 

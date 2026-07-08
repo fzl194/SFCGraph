@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCCPOPC]] · ADD SCCPOPC
-- [[command/UNC/20.15.2/LST-SCCPOPC]] · LST SCCPOPC
-- [[command/UNC/20.15.2/MOD-SCCPOPC]] · MOD SCCPOPC
-- [[command/UNC/20.15.2/RMV-SCCPOPC]] · RMV SCCPOPC
+- [ADD SCCPOPC](command/UNC/20.15.2/ADD-SCCPOPC.md)
+- [LST SCCPOPC](command/UNC/20.15.2/LST-SCCPOPC.md)
+- [MOD SCCPOPC](command/UNC/20.15.2/MOD-SCCPOPC.md)
+- [RMV SCCPOPC](command/UNC/20.15.2/RMV-SCCPOPC.md)
 
 ## 证据
 

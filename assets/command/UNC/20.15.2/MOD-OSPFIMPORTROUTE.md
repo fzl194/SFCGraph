@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OSPFIMPORTROUTE]] · OSPF引入路由配置（OSPFIMPORTROUTE）
+- [OSPF引入路由配置（OSPFIMPORTROUTE）](configobject/UNC/20.15.2/OSPFIMPORTROUTE.md)
 
 ## 使用实例
 

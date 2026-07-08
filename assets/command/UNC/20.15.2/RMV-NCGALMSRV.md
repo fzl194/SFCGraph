@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NCGALMSRV]] · 告警服务器相关配置信息（NCGALMSRV）
+- [告警服务器相关配置信息（NCGALMSRV）](configobject/UNC/20.15.2/NCGALMSRV.md)
 
 ## 使用实例
 

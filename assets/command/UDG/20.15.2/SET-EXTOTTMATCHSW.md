@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/EXTOTTMATCHSW]] · OTT业务规则匹配功能是否使能（EXTOTTMATCHSW）
+- [OTT业务规则匹配功能是否使能（EXTOTTMATCHSW）](configobject/UDG/20.15.2/EXTOTTMATCHSW.md)
 
 ## 关联任务
 

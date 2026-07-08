@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PGWBACKOFF]] · LST PGWBACKOFF
-- [[command/UNC/20.15.2/SET-PGWBACKOFF]] · SET PGWBACKOFF
+- [LST PGWBACKOFF](command/UNC/20.15.2/LST-PGWBACKOFF.md)
+- [SET PGWBACKOFF](command/UNC/20.15.2/SET-PGWBACKOFF.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MSETCDTTL]] · LST MSETCDTTL
-- [[command/UNC/20.15.2/SET-MSETCDTTL]] · SET MSETCDTTL
+- [LST MSETCDTTL](command/UNC/20.15.2/LST-MSETCDTTL.md)
+- [SET MSETCDTTL](command/UNC/20.15.2/SET-MSETCDTTL.md)
 
 ## 证据
 

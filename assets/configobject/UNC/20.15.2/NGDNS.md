@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGDNS]] · LST NGDNS
-- [[command/UNC/20.15.2/SET-NGDNS]] · SET NGDNS
+- [LST NGDNS](command/UNC/20.15.2/LST-NGDNS.md)
+- [SET NGDNS](command/UNC/20.15.2/SET-NGDNS.md)
 
 ## 证据
 

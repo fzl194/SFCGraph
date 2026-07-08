@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ENGNB]] · DSP ENGNB
+- [DSP ENGNB](command/UNC/20.15.2/DSP-ENGNB.md)
 
 ## 证据
 

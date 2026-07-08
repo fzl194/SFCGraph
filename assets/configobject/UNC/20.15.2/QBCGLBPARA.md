@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QBCGLBPARA]] · LST QBCGLBPARA
-- [[command/UNC/20.15.2/SET-QBCGLBPARA]] · SET QBCGLBPARA
+- [LST QBCGLBPARA](command/UNC/20.15.2/LST-QBCGLBPARA.md)
+- [SET QBCGLBPARA](command/UNC/20.15.2/SET-QBCGLBPARA.md)
 
 ## 证据
 

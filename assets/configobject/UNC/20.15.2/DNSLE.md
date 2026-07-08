@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DNSLE]] · ADD DNSLE
-- [[command/UNC/20.15.2/LST-DNSLE]] · LST DNSLE
-- [[command/UNC/20.15.2/RMV-DNSLE]] · RMV DNSLE
+- [ADD DNSLE](command/UNC/20.15.2/ADD-DNSLE.md)
+- [LST DNSLE](command/UNC/20.15.2/LST-DNSLE.md)
+- [RMV DNSLE](command/UNC/20.15.2/RMV-DNSLE.md)
 
 ## 证据
 

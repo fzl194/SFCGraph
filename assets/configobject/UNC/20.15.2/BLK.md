@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CHK-BLK]] · CHK BLK
+- [CHK BLK](command/UNC/20.15.2/CHK-BLK.md)
 
 ## 证据
 

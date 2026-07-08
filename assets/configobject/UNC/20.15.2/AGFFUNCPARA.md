@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AGFFUNCPARA]] · LST AGFFUNCPARA
-- [[command/UNC/20.15.2/SET-AGFFUNCPARA]] · SET AGFFUNCPARA
+- [LST AGFFUNCPARA](command/UNC/20.15.2/LST-AGFFUNCPARA.md)
+- [SET AGFFUNCPARA](command/UNC/20.15.2/SET-AGFFUNCPARA.md)
 
 ## 证据
 

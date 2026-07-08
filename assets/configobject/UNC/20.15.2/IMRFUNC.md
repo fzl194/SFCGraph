@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMRFUNC]] · ADD IMRFUNC
-- [[command/UNC/20.15.2/LST-IMRFUNC]] · LST IMRFUNC
-- [[command/UNC/20.15.2/MOD-IMRFUNC]] · MOD IMRFUNC
-- [[command/UNC/20.15.2/RMV-IMRFUNC]] · RMV IMRFUNC
+- [ADD IMRFUNC](command/UNC/20.15.2/ADD-IMRFUNC.md)
+- [LST IMRFUNC](command/UNC/20.15.2/LST-IMRFUNC.md)
+- [MOD IMRFUNC](command/UNC/20.15.2/MOD-IMRFUNC.md)
+- [RMV IMRFUNC](command/UNC/20.15.2/RMV-IMRFUNC.md)
 
 ## 证据
 

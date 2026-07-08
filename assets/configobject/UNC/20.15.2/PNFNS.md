@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFNS]] · ADD PNFNS
-- [[command/UNC/20.15.2/LST-PNFNS]] · LST PNFNS
-- [[command/UNC/20.15.2/MOD-PNFNS]] · MOD PNFNS
-- [[command/UNC/20.15.2/RMV-PNFNS]] · RMV PNFNS
+- [ADD PNFNS](command/UNC/20.15.2/ADD-PNFNS.md)
+- [LST PNFNS](command/UNC/20.15.2/LST-PNFNS.md)
+- [MOD PNFNS](command/UNC/20.15.2/MOD-PNFNS.md)
+- [RMV PNFNS](command/UNC/20.15.2/RMV-PNFNS.md)
 
 ## 证据
 

@@ -29,10 +29,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-SEGFILE]] · ACT SEGFILE
-- [[command/UNC/20.15.2/CHK-SEGFILE]] · CHK SEGFILE
-- [[command/UNC/20.15.2/EXP-SEGFILE]] · EXP SEGFILE
-- [[command/UNC/20.15.2/LOD-SEGFILE]] · LOD SEGFILE
+- [ACT SEGFILE](command/UNC/20.15.2/ACT-SEGFILE.md)
+- [CHK SEGFILE](command/UNC/20.15.2/CHK-SEGFILE.md)
+- [EXP SEGFILE](command/UNC/20.15.2/EXP-SEGFILE.md)
+- [LOD SEGFILE](command/UNC/20.15.2/LOD-SEGFILE.md)
 
 ## 证据
 

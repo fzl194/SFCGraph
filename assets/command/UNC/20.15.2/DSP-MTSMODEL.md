@@ -35,7 +35,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MTSMODEL]] · 消息跟踪模型（MTSMODEL）
+- [消息跟踪模型（MTSMODEL）](configobject/UNC/20.15.2/MTSMODEL.md)
 
 ## 使用实例
 

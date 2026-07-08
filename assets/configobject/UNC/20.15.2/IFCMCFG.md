@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IFCMCFG]] · DSP IFCMCFG
-- [[command/UNC/20.15.2/SET-IFCMCFG]] · SET IFCMCFG
+- [DSP IFCMCFG](command/UNC/20.15.2/DSP-IFCMCFG.md)
+- [SET IFCMCFG](command/UNC/20.15.2/SET-IFCMCFG.md)
 
 ## 证据
 

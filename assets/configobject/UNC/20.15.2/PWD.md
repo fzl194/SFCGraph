@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/MOD-PWD]] · MOD PWD
+- [MOD PWD](command/UNC/20.15.2/MOD-PWD.md)
 
 ## 证据
 

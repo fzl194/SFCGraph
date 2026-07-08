@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IUSMPROCTRL]] · LST IUSMPROCTRL
-- [[command/UNC/20.15.2/SET-IUSMPROCTRL]] · SET IUSMPROCTRL
+- [LST IUSMPROCTRL](command/UNC/20.15.2/LST-IUSMPROCTRL.md)
+- [SET IUSMPROCTRL](command/UNC/20.15.2/SET-IUSMPROCTRL.md)
 
 ## 证据
 

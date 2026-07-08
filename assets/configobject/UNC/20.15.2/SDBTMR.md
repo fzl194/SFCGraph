@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SDBTMR]] · LST SDBTMR
-- [[command/UNC/20.15.2/SET-SDBTMR]] · SET SDBTMR
+- [LST SDBTMR](command/UNC/20.15.2/LST-SDBTMR.md)
+- [SET SDBTMR](command/UNC/20.15.2/SET-SDBTMR.md)
 
 ## 证据
 

@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/ACSCLIENTDBG]] · ACS客户端调试操作（ACSCLIENTDBG）
+- [ACS客户端调试操作（ACSCLIENTDBG）](configobject/UDG/20.15.2/ACSCLIENTDBG.md)
 
 ## 使用实例
 

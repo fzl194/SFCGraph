@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GBSMPROCTRL]] · LST GBSMPROCTRL
-- [[command/UNC/20.15.2/SET-GBSMPROCTRL]] · SET GBSMPROCTRL
+- [LST GBSMPROCTRL](command/UNC/20.15.2/LST-GBSMPROCTRL.md)
+- [SET GBSMPROCTRL](command/UNC/20.15.2/SET-GBSMPROCTRL.md)
 
 ## 证据
 

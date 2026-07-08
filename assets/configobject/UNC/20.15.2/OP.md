@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OP]] · LST OP
-- [[command/UNC/20.15.2/MOD-OP]] · MOD OP
+- [LST OP](command/UNC/20.15.2/LST-OP.md)
+- [MOD OP](command/UNC/20.15.2/MOD-OP.md)
 
 ## 证据
 

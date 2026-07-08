@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-EXTRFSP]] · ADD EXTRFSP
-- [[command/UNC/20.15.2/LST-EXTRFSP]] · LST EXTRFSP
-- [[command/UNC/20.15.2/MOD-EXTRFSP]] · MOD EXTRFSP
-- [[command/UNC/20.15.2/RMV-EXTRFSP]] · RMV EXTRFSP
+- [ADD EXTRFSP](command/UNC/20.15.2/ADD-EXTRFSP.md)
+- [LST EXTRFSP](command/UNC/20.15.2/LST-EXTRFSP.md)
+- [MOD EXTRFSP](command/UNC/20.15.2/MOD-EXTRFSP.md)
+- [RMV EXTRFSP](command/UNC/20.15.2/RMV-EXTRFSP.md)
 
 ## 证据
 

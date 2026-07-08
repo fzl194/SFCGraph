@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SSHCMSGDATA]] · DSP SSHCMSGDATA
+- [DSP SSHCMSGDATA](command/UDG/20.15.2/DSP-SSHCMSGDATA.md)
 
 ## 证据
 

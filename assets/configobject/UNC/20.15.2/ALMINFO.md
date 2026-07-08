@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ALMINFO]] · LST ALMINFO
-- [[command/UNC/20.15.2/SET-ALMINFO]] · SET ALMINFO
+- [LST ALMINFO](command/UNC/20.15.2/LST-ALMINFO.md)
+- [SET ALMINFO](command/UNC/20.15.2/SET-ALMINFO.md)
 
 ## 证据
 

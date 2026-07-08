@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UPSELECTPRI]] · LST UPSELECTPRI
-- [[command/UNC/20.15.2/SET-UPSELECTPRI]] · SET UPSELECTPRI
+- [LST UPSELECTPRI](command/UNC/20.15.2/LST-UPSELECTPRI.md)
+- [SET UPSELECTPRI](command/UNC/20.15.2/SET-UPSELECTPRI.md)
 
 ## 证据
 

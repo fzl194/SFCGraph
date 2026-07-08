@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SDCFG]] · LST SDCFG
-- [[command/UNC/20.15.2/SET-SDCFG]] · SET SDCFG
+- [LST SDCFG](command/UNC/20.15.2/LST-SDCFG.md)
+- [SET SDCFG](command/UNC/20.15.2/SET-SDCFG.md)
 
 ## 证据
 

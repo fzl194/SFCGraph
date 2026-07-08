@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-WLRPEER]] · DSP WLRPEER
+- [DSP WLRPEER](command/UDG/20.15.2/DSP-WLRPEER.md)
 
 ## 证据
 

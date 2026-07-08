@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RTR-FABRICOAMSTAT]] · RTR FABRICOAMSTAT
+- [RTR FABRICOAMSTAT](command/UNC/20.15.2/RTR-FABRICOAMSTAT.md)
 
 ## 证据
 

@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RESDEADLOOPINFO]] · DSP RESDEADLOOPINFO
+- [DSP RESDEADLOOPINFO](command/UNC/20.15.2/DSP-RESDEADLOOPINFO.md)
 
 ## 证据
 

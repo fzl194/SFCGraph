@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MGMDSTATICGROUP]] · IGMP静态组配置（MGMDSTATICGROUP）
+- [IGMP静态组配置（MGMDSTATICGROUP）](configobject/UNC/20.15.2/MGMDSTATICGROUP.md)
 
 ## 使用实例
 

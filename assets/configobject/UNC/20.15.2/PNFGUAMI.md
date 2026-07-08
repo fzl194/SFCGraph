@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFGUAMI]] · ADD PNFGUAMI
-- [[command/UNC/20.15.2/LST-PNFGUAMI]] · LST PNFGUAMI
-- [[command/UNC/20.15.2/RMV-PNFGUAMI]] · RMV PNFGUAMI
+- [ADD PNFGUAMI](command/UNC/20.15.2/ADD-PNFGUAMI.md)
+- [LST PNFGUAMI](command/UNC/20.15.2/LST-PNFGUAMI.md)
+- [RMV PNFGUAMI](command/UNC/20.15.2/RMV-PNFGUAMI.md)
 
 ## 证据
 

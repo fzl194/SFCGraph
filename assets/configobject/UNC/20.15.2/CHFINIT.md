@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-CHFINIT]] · SET CHFINIT
+- [SET CHFINIT](command/UNC/20.15.2/SET-CHFINIT.md)
 
 ## 证据
 

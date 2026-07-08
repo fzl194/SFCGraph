@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MPACV6RULESTAT]] · DSP MPACV6RULESTAT
+- [DSP MPACV6RULESTAT](command/UDG/20.15.2/DSP-MPACV6RULESTAT.md)
 
 ## 证据
 

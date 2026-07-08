@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SCTPASID]] · DSP SCTPASID
+- [DSP SCTPASID](command/UNC/20.15.2/DSP-SCTPASID.md)
 
 ## 证据
 

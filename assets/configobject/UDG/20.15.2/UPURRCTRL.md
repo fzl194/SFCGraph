@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPURRCTRL]] · LST UPURRCTRL
-- [[command/UDG/20.15.2/SET-UPURRCTRL]] · SET UPURRCTRL
+- [LST UPURRCTRL](command/UDG/20.15.2/LST-UPURRCTRL.md)
+- [SET UPURRCTRL](command/UDG/20.15.2/SET-UPURRCTRL.md)
 
 ## 证据
 

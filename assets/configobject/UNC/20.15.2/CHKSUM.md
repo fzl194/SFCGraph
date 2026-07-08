@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHKSUM]] · LST CHKSUM
-- [[command/UNC/20.15.2/SET-CHKSUM]] · SET CHKSUM
+- [LST CHKSUM](command/UNC/20.15.2/LST-CHKSUM.md)
+- [SET CHKSUM](command/UNC/20.15.2/SET-CHKSUM.md)
 
 ## 证据
 

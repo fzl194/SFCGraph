@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/POOLBINDGRP]] · 地址池与地址池组的绑定关系（POOLBINDGRP）
+- [地址池与地址池组的绑定关系（POOLBINDGRP）](configobject/UNC/20.15.2/POOLBINDGRP.md)
 
 ## 使用实例
 

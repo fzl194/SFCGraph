@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHGCHAR]] · LST CHGCHAR
-- [[command/UNC/20.15.2/SET-CHGCHAR]] · SET CHGCHAR
+- [LST CHGCHAR](command/UNC/20.15.2/LST-CHGCHAR.md)
+- [SET CHGCHAR](command/UNC/20.15.2/SET-CHGCHAR.md)
 
 ## 证据
 

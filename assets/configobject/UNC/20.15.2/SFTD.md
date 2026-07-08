@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-SFTD]] · STR SFTD
+- [STR SFTD](command/UNC/20.15.2/STR-SFTD.md)
 
 ## 证据
 

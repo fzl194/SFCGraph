@@ -43,7 +43,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/ACSUPDSTATUS]] · 升级状态（ACSUPDSTATUS）
+- [升级状态（ACSUPDSTATUS）](configobject/UDG/20.15.2/ACSUPDSTATUS.md)
 
 ## 使用实例
 

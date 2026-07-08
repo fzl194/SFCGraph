@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PREFIXLIMIT]] · LST PREFIXLIMIT
-- [[command/UNC/20.15.2/SET-PREFIXLIMIT]] · SET PREFIXLIMIT
+- [LST PREFIXLIMIT](command/UNC/20.15.2/LST-PREFIXLIMIT.md)
+- [SET PREFIXLIMIT](command/UNC/20.15.2/SET-PREFIXLIMIT.md)
 
 ## 证据
 

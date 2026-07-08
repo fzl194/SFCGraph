@@ -28,7 +28,7 @@ HA选举是用于从多个同类进程中选举出主进程和备进程的一套
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-HARESULT]] · DSP HARESULT
+- [DSP HARESULT](command/UNC/20.15.2/DSP-HARESULT.md)
 
 ## 证据
 

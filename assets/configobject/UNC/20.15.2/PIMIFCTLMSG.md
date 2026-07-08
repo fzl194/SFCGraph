@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RTR-PIMIFCTLMSG]] · RTR PIMIFCTLMSG
+- [RTR PIMIFCTLMSG](command/UNC/20.15.2/RTR-PIMIFCTLMSG.md)
 
 ## 证据
 

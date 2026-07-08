@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RPTRATELT]] · LST RPTRATELT
-- [[command/UDG/20.15.2/SET-RPTRATELT]] · SET RPTRATELT
+- [LST RPTRATELT](command/UDG/20.15.2/LST-RPTRATELT.md)
+- [SET RPTRATELT](command/UDG/20.15.2/SET-RPTRATELT.md)
 
 ## 证据
 

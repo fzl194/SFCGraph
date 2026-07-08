@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LUASCRIPT]] · Lua脚本（LUASCRIPT）
+- [Lua脚本（LUASCRIPT）](configobject/UNC/20.15.2/LUASCRIPT.md)
 
 ## 使用实例
 

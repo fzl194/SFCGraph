@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/AFDNSCHKTPALL]] · 所有需要进行防欺诈检查的DNS报文类型（AFDNSCHKTPALL）
+- [所有需要进行防欺诈检查的DNS报文类型（AFDNSCHKTPALL）](configobject/UDG/20.15.2/AFDNSCHKTPALL.md)
 
 ## 使用实例
 

@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PCFSSCOPEALL]] · 所有的PCF的业务服务区（PCFSSCOPEALL）
+- [所有的PCF的业务服务区（PCFSSCOPEALL）](configobject/UNC/20.15.2/PCFSSCOPEALL.md)
 
 ## 使用实例
 

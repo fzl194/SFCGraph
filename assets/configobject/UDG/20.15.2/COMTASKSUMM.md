@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-COMTASKSUMM]] · DSP COMTASKSUMM
+- [DSP COMTASKSUMM](command/UDG/20.15.2/DSP-COMTASKSUMM.md)
 
 ## 证据
 

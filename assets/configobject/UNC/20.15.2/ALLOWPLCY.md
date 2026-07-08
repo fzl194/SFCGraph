@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CMT-ALLOWPLCY]] · CMT ALLOWPLCY
-- [[command/UNC/20.15.2/TST-ALLOWPLCY]] · TST ALLOWPLCY
+- [CMT ALLOWPLCY](command/UNC/20.15.2/CMT-ALLOWPLCY.md)
+- [TST ALLOWPLCY](command/UNC/20.15.2/TST-ALLOWPLCY.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RPTSUBSINFO]] · DSP RPTSUBSINFO
+- [DSP RPTSUBSINFO](command/UDG/20.15.2/DSP-RPTSUBSINFO.md)
 
 ## 证据
 

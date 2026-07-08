@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TIMER]] · DSP TIMER
+- [DSP TIMER](command/UDG/20.15.2/DSP-TIMER.md)
 
 ## 证据
 

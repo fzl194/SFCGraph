@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SIGNATUREDB]] · DSP SIGNATUREDB
-- [[command/UDG/20.15.2/LOD-SIGNATUREDB]] · LOD SIGNATUREDB
+- [DSP SIGNATUREDB](command/UDG/20.15.2/DSP-SIGNATUREDB.md)
+- [LOD SIGNATUREDB](command/UDG/20.15.2/LOD-SIGNATUREDB.md)
 
 ## 证据
 

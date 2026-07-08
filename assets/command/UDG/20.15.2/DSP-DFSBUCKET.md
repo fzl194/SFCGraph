@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/DFSBUCKET]] · DFS桶信息（DFSBUCKET）
+- [DFS桶信息（DFSBUCKET）](configobject/UDG/20.15.2/DFSBUCKET.md)
 
 ## 使用实例
 

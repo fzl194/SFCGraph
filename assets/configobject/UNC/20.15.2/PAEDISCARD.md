@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PAEDISCARD]] · DSP PAEDISCARD
-- [[command/UNC/20.15.2/RTR-PAEDISCARD]] · RTR PAEDISCARD
+- [DSP PAEDISCARD](command/UNC/20.15.2/DSP-PAEDISCARD.md)
+- [RTR PAEDISCARD](command/UNC/20.15.2/RTR-PAEDISCARD.md)
 
 ## 证据
 

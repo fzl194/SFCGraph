@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IMSVOPS]] · LST IMSVOPS
-- [[command/UNC/20.15.2/SET-IMSVOPS]] · SET IMSVOPS
+- [LST IMSVOPS](command/UNC/20.15.2/LST-IMSVOPS.md)
+- [SET IMSVOPS](command/UNC/20.15.2/SET-IMSVOPS.md)
 
 ## 证据
 

@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RST-AAADHCPPATHSTAT]] · RST AAADHCPPATHSTAT
+- [RST AAADHCPPATHSTAT](command/UNC/20.15.2/RST-AAADHCPPATHSTAT.md)
 
 ## 证据
 

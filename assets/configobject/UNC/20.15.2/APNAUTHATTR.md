@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNAUTHATTR]] · LST APNAUTHATTR
-- [[command/UNC/20.15.2/SET-APNAUTHATTR]] · SET APNAUTHATTR
+- [LST APNAUTHATTR](command/UNC/20.15.2/LST-APNAUTHATTR.md)
+- [SET APNAUTHATTR](command/UNC/20.15.2/SET-APNAUTHATTR.md)
 
 ## 证据
 

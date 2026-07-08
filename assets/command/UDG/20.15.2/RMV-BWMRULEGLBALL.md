@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BWMRULEGLBALL]] · 所有全局带宽管理规则（BWMRULEGLBALL）
+- [所有全局带宽管理规则（BWMRULEGLBALL）](configobject/UDG/20.15.2/BWMRULEGLBALL.md)
 
 ## 使用实例
 

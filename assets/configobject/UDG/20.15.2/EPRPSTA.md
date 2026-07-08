@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-EPRPSTA]] · ADD EPRPSTA
-- [[command/UDG/20.15.2/LST-EPRPSTA]] · LST EPRPSTA
-- [[command/UDG/20.15.2/RMV-EPRPSTA]] · RMV EPRPSTA
+- [ADD EPRPSTA](command/UDG/20.15.2/ADD-EPRPSTA.md)
+- [LST EPRPSTA](command/UDG/20.15.2/LST-EPRPSTA.md)
+- [RMV EPRPSTA](command/UDG/20.15.2/RMV-EPRPSTA.md)
 
 ## 证据
 

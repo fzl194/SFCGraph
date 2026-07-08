@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPTWTIMER]] · LST UPTWTIMER
-- [[command/UDG/20.15.2/SET-UPTWTIMER]] · SET UPTWTIMER
+- [LST UPTWTIMER](command/UDG/20.15.2/LST-UPTWTIMER.md)
+- [SET UPTWTIMER](command/UDG/20.15.2/SET-UPTWTIMER.md)
 
 ## 证据
 

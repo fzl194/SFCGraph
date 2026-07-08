@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-HTTPHTRINFO]] · DSP HTTPHTRINFO
+- [DSP HTTPHTRINFO](command/UDG/20.15.2/DSP-HTTPHTRINFO.md)
 
 ## 证据
 

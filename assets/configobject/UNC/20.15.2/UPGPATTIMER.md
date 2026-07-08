@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UPGPATTIMER]] · LST UPGPATTIMER
-- [[command/UNC/20.15.2/SET-UPGPATTIMER]] · SET UPGPATTIMER
+- [LST UPGPATTIMER](command/UNC/20.15.2/LST-UPGPATTIMER.md)
+- [SET UPGPATTIMER](command/UNC/20.15.2/SET-UPGPATTIMER.md)
 
 ## 证据
 

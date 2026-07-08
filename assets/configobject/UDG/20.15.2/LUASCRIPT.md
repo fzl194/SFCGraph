@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LOD-LUASCRIPT]] · LOD LUASCRIPT
+- [LOD LUASCRIPT](command/UDG/20.15.2/LOD-LUASCRIPT.md)
 
 ## 证据
 

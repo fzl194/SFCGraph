@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DBTHRESHOLD]] · LST DBTHRESHOLD
-- [[command/UNC/20.15.2/SET-DBTHRESHOLD]] · SET DBTHRESHOLD
+- [LST DBTHRESHOLD](command/UNC/20.15.2/LST-DBTHRESHOLD.md)
+- [SET DBTHRESHOLD](command/UNC/20.15.2/SET-DBTHRESHOLD.md)
 
 ## 证据
 

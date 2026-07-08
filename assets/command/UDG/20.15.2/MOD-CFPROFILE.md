@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CFPROFILE]] · 内容过滤策略（CFPROFILE）
+- [内容过滤策略（CFPROFILE）](configobject/UDG/20.15.2/CFPROFILE.md)
 
 ## 使用实例
 

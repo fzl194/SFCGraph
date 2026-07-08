@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-DBSFTD]] · STR DBSFTD
+- [STR DBSFTD](command/UNC/20.15.2/STR-DBSFTD.md)
 
 ## 证据
 

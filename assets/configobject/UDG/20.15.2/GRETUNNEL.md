@@ -19,19 +19,19 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-GRETUNNEL]] · ADD GRETUNNEL
-- [[command/UDG/20.15.2/LST-GRETUNNEL]] · LST GRETUNNEL
-- [[command/UDG/20.15.2/MOD-GRETUNNEL]] · MOD GRETUNNEL
-- [[command/UDG/20.15.2/RMV-GRETUNNEL]] · RMV GRETUNNEL
+- [ADD GRETUNNEL](command/UDG/20.15.2/ADD-GRETUNNEL.md)
+- [LST GRETUNNEL](command/UDG/20.15.2/LST-GRETUNNEL.md)
+- [MOD GRETUNNEL](command/UDG/20.15.2/MOD-GRETUNNEL.md)
+- [RMV GRETUNNEL](command/UDG/20.15.2/RMV-GRETUNNEL.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/IFIPV4ADDRESS]] · IFIPV4ADDRESS
-- [[configobject/UDG/20.15.2/IFIPV6ADDRESS]] · IFIPV6ADDRESS
-- [[configobject/UDG/20.15.2/INTERFACE]] · INTERFACE
-- [[configobject/UDG/20.15.2/IPBINDVPN]] · IPBINDVPN
-- [[configobject/UDG/20.15.2/SRROUTE]] · SRROUTE
-- [[configobject/UDG/20.15.2/SRROUTE6]] · SRROUTE6
+- [IFIPV4ADDRESS](configobject/UDG/20.15.2/IFIPV4ADDRESS.md)
+- [IFIPV6ADDRESS](configobject/UDG/20.15.2/IFIPV6ADDRESS.md)
+- [INTERFACE](configobject/UDG/20.15.2/INTERFACE.md)
+- [IPBINDVPN](configobject/UDG/20.15.2/IPBINDVPN.md)
+- [SRROUTE](configobject/UDG/20.15.2/SRROUTE.md)
+- [SRROUTE6](configobject/UDG/20.15.2/SRROUTE6.md)
 
 ## 证据
 

@@ -28,7 +28,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/STP-UPGTSK]] · STP UPGTSK
+- [STP UPGTSK](command/UDG/20.15.2/STP-UPGTSK.md)
 
 ## 证据
 

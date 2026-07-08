@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LOCALKEYPAIR]] · 本地公钥（LOCALKEYPAIR）
+- [本地公钥（LOCALKEYPAIR）](configobject/UDG/20.15.2/LOCALKEYPAIR.md)
 
 ## 使用实例
 

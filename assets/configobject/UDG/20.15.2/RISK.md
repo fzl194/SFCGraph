@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RISK]] · DSP RISK
+- [DSP RISK](command/UDG/20.15.2/DSP-RISK.md)
 
 ## 证据
 

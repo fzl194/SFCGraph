@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-RESTOFUNC]] · LST RESTOFUNC
-- [[command/UNC/20.15.2/SET-RESTOFUNC]] · SET RESTOFUNC
+- [LST RESTOFUNC](command/UNC/20.15.2/LST-RESTOFUNC.md)
+- [SET RESTOFUNC](command/UNC/20.15.2/SET-RESTOFUNC.md)
 
 ## 证据
 

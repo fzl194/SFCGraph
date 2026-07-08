@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-TRANSCOMTASK]] · ACT TRANSCOMTASK
+- [ACT TRANSCOMTASK](command/UNC/20.15.2/ACT-TRANSCOMTASK.md)
 
 ## 证据
 

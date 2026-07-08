@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PCSCFCTRL]] · LST PCSCFCTRL
-- [[command/UNC/20.15.2/SET-PCSCFCTRL]] · SET PCSCFCTRL
+- [LST PCSCFCTRL](command/UNC/20.15.2/LST-PCSCFCTRL.md)
+- [SET PCSCFCTRL](command/UNC/20.15.2/SET-PCSCFCTRL.md)
 
 ## 证据
 

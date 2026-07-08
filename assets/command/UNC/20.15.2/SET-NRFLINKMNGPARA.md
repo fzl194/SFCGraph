@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFLINKMNGPARA]] · NRF的链路管理参数（NRFLINKMNGPARA）
+- [NRF的链路管理参数（NRFLINKMNGPARA）](configobject/UNC/20.15.2/NRFLINKMNGPARA.md)
 
 ## 使用实例
 

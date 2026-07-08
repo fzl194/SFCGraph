@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-HTTPSTATS]] · CLR HTTPSTATS
-- [[command/UNC/20.15.2/DSP-HTTPSTATS]] · DSP HTTPSTATS
+- [CLR HTTPSTATS](command/UNC/20.15.2/CLR-HTTPSTATS.md)
+- [DSP HTTPSTATS](command/UNC/20.15.2/DSP-HTTPSTATS.md)
 
 ## 证据
 

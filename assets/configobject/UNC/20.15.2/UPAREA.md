@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UPAREA]] · ADD UPAREA
-- [[command/UNC/20.15.2/LST-UPAREA]] · LST UPAREA
-- [[command/UNC/20.15.2/RMV-UPAREA]] · RMV UPAREA
+- [ADD UPAREA](command/UNC/20.15.2/ADD-UPAREA.md)
+- [LST UPAREA](command/UNC/20.15.2/LST-UPAREA.md)
+- [RMV UPAREA](command/UNC/20.15.2/RMV-UPAREA.md)
 
 ## 证据
 

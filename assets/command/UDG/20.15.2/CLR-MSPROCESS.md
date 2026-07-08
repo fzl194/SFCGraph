@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MSPROCESS]] · 复位微服务进程（MSPROCESS）
+- [复位微服务进程（MSPROCESS）](configobject/UDG/20.15.2/MSPROCESS.md)
 
 ## 使用实例
 

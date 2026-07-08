@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PMCFG]] · LST PMCFG
-- [[command/UNC/20.15.2/SET-PMCFG]] · SET PMCFG
+- [LST PMCFG](command/UNC/20.15.2/LST-PMCFG.md)
+- [SET PMCFG](command/UNC/20.15.2/SET-PMCFG.md)
 
 ## 证据
 

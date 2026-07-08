@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PODHEALREC]] · DSP PODHEALREC
+- [DSP PODHEALREC](command/UDG/20.15.2/DSP-PODHEALREC.md)
 
 ## 证据
 

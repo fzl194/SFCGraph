@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NDIFNET]] · DSP NDIFNET
+- [DSP NDIFNET](command/UDG/20.15.2/DSP-NDIFNET.md)
 
 ## 证据
 

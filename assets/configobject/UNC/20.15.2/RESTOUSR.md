@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RESTOUSR]] · ADD RESTOUSR
-- [[command/UNC/20.15.2/LST-RESTOUSR]] · LST RESTOUSR
-- [[command/UNC/20.15.2/RMV-RESTOUSR]] · RMV RESTOUSR
+- [ADD RESTOUSR](command/UNC/20.15.2/ADD-RESTOUSR.md)
+- [LST RESTOUSR](command/UNC/20.15.2/LST-RESTOUSR.md)
+- [RMV RESTOUSR](command/UNC/20.15.2/RMV-RESTOUSR.md)
 
 ## 证据
 

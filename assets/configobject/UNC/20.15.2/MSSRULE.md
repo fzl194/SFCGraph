@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSRULE]] · DSP MSSRULE
-- [[command/UNC/20.15.2/SET-MSSRULE]] · SET MSSRULE
+- [DSP MSSRULE](command/UNC/20.15.2/DSP-MSSRULE.md)
+- [SET MSSRULE](command/UNC/20.15.2/SET-MSSRULE.md)
 
 ## 证据
 

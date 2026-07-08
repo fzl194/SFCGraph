@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MCASTPAEROUTE]] · DSP MCASTPAEROUTE
+- [DSP MCASTPAEROUTE](command/UNC/20.15.2/DSP-MCASTPAEROUTE.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DMCMPT]] · LST DMCMPT
-- [[command/UNC/20.15.2/SET-DMCMPT]] · SET DMCMPT
+- [LST DMCMPT](command/UNC/20.15.2/LST-DMCMPT.md)
+- [SET DMCMPT](command/UNC/20.15.2/SET-DMCMPT.md)
 
 ## 证据
 

@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/FESSEARCHTABLE]] · 模拟触发FES表项搜索（FESSEARCHTABLE）
+- [模拟触发FES表项搜索（FESSEARCHTABLE）](configobject/UDG/20.15.2/FESSEARCHTABLE.md)
 
 ## 使用实例
 

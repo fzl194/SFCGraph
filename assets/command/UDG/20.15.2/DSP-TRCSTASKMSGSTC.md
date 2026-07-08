@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/TRCSTASKMSGSTC]] · 跟踪中心任务消息统计信息（TRCSTASKMSGSTC）
+- [跟踪中心任务消息统计信息（TRCSTASKMSGSTC）](configobject/UDG/20.15.2/TRCSTASKMSGSTC.md)
 
 ## 使用实例
 

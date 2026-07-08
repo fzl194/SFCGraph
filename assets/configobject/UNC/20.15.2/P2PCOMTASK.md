@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-P2PCOMTASK]] · ACT P2PCOMTASK
+- [ACT P2PCOMTASK](command/UNC/20.15.2/ACT-P2PCOMTASK.md)
 
 ## 证据
 

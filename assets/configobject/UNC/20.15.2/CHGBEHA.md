@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CHGBEHA]] · ADD CHGBEHA
-- [[command/UNC/20.15.2/LST-CHGBEHA]] · LST CHGBEHA
-- [[command/UNC/20.15.2/RMV-CHGBEHA]] · RMV CHGBEHA
+- [ADD CHGBEHA](command/UNC/20.15.2/ADD-CHGBEHA.md)
+- [LST CHGBEHA](command/UNC/20.15.2/LST-CHGBEHA.md)
+- [RMV CHGBEHA](command/UNC/20.15.2/RMV-CHGBEHA.md)
 
 ## 证据
 

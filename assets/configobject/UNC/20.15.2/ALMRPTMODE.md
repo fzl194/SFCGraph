@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ALMRPTMODE]] · LST ALMRPTMODE
-- [[command/UNC/20.15.2/SET-ALMRPTMODE]] · SET ALMRPTMODE
+- [LST ALMRPTMODE](command/UNC/20.15.2/LST-ALMRPTMODE.md)
+- [SET ALMRPTMODE](command/UNC/20.15.2/SET-ALMRPTMODE.md)
 
 ## 证据
 

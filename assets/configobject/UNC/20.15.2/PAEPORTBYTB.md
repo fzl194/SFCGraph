@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PAEPORTBYTB]] · DSP PAEPORTBYTB
+- [DSP PAEPORTBYTB](command/UNC/20.15.2/DSP-PAEPORTBYTB.md)
 
 ## 证据
 

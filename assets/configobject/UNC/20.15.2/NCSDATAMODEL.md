@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NCSDATAMODEL]] · DSP NCSDATAMODEL
+- [DSP NCSDATAMODEL](command/UNC/20.15.2/DSP-NCSDATAMODEL.md)
 
 ## 证据
 

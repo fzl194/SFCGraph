@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ESN]] · 设备序列号（ESN）
+- [设备序列号（ESN）](configobject/UNC/20.15.2/ESN.md)
 
 ## 使用实例
 

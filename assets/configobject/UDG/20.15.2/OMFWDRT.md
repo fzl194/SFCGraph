@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-OMFWDRT]] · ADD OMFWDRT
-- [[command/UDG/20.15.2/LST-OMFWDRT]] · LST OMFWDRT
-- [[command/UDG/20.15.2/RMV-OMFWDRT]] · RMV OMFWDRT
+- [ADD OMFWDRT](command/UDG/20.15.2/ADD-OMFWDRT.md)
+- [LST OMFWDRT](command/UDG/20.15.2/LST-OMFWDRT.md)
+- [RMV OMFWDRT](command/UDG/20.15.2/RMV-OMFWDRT.md)
 
 ## 证据
 

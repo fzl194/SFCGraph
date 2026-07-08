@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NGLOOPDETDEAUE]] · DSP NGLOOPDETDEAUE
+- [DSP NGLOOPDETDEAUE](command/UDG/20.15.2/DSP-NGLOOPDETDEAUE.md)
 
 ## 证据
 

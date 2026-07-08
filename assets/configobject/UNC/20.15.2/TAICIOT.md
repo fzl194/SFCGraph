@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TAICIOT]] · ADD TAICIOT
-- [[command/UNC/20.15.2/LST-TAICIOT]] · LST TAICIOT
-- [[command/UNC/20.15.2/MOD-TAICIOT]] · MOD TAICIOT
-- [[command/UNC/20.15.2/RMV-TAICIOT]] · RMV TAICIOT
+- [ADD TAICIOT](command/UNC/20.15.2/ADD-TAICIOT.md)
+- [LST TAICIOT](command/UNC/20.15.2/LST-TAICIOT.md)
+- [MOD TAICIOT](command/UNC/20.15.2/MOD-TAICIOT.md)
+- [RMV TAICIOT](command/UNC/20.15.2/RMV-TAICIOT.md)
 
 ## 证据
 

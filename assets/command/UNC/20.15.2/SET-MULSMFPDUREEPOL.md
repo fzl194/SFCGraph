@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MULSMFPDUREEPOL]] · 是否支持多SMFInfo场景下的会话重建功能（MULSMFPDUREEPOL）
+- [是否支持多SMFInfo场景下的会话重建功能（MULSMFPDUREEPOL）](configobject/UNC/20.15.2/MULSMFPDUREEPOL.md)
 
 ## 使用实例
 

@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CCPRGACT]] · 融合计费Proxy基于RG处理动作（CCPRGACT）
+- [融合计费Proxy基于RG处理动作（CCPRGACT）](configobject/UNC/20.15.2/CCPRGACT.md)
 
 ## 使用实例
 

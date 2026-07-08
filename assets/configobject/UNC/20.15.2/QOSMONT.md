@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QOSMONT]] · LST QOSMONT
-- [[command/UNC/20.15.2/SET-QOSMONT]] · SET QOSMONT
+- [LST QOSMONT](command/UNC/20.15.2/LST-QOSMONT.md)
+- [SET QOSMONT](command/UNC/20.15.2/SET-QOSMONT.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSCNTINFOCNT]] · DSP MSSCNTINFOCNT
+- [DSP MSSCNTINFOCNT](command/UDG/20.15.2/DSP-MSSCNTINFOCNT.md)
 
 ## 证据
 

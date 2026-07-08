@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ENBGNBNEIBS]] · DSP ENBGNBNEIBS
+- [DSP ENBGNBNEIBS](command/UNC/20.15.2/DSP-ENBGNBNEIBS.md)
 
 ## 证据
 

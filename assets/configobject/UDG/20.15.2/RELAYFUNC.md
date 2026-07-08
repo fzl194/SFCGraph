@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RELAYFUNC]] · LST RELAYFUNC
-- [[command/UDG/20.15.2/SET-RELAYFUNC]] · SET RELAYFUNC
+- [LST RELAYFUNC](command/UDG/20.15.2/LST-RELAYFUNC.md)
+- [SET RELAYFUNC](command/UDG/20.15.2/SET-RELAYFUNC.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PAECHECKTHD]] · LST PAECHECKTHD
-- [[command/UNC/20.15.2/SET-PAECHECKTHD]] · SET PAECHECKTHD
+- [LST PAECHECKTHD](command/UNC/20.15.2/LST-PAECHECKTHD.md)
+- [SET PAECHECKTHD](command/UNC/20.15.2/SET-PAECHECKTHD.md)
 
 ## 证据
 

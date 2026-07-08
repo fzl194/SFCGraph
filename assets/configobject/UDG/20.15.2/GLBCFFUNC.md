@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-GLBCFFUNC]] · LST GLBCFFUNC
-- [[command/UDG/20.15.2/SET-GLBCFFUNC]] · SET GLBCFFUNC
+- [LST GLBCFFUNC](command/UDG/20.15.2/LST-GLBCFFUNC.md)
+- [SET GLBCFFUNC](command/UDG/20.15.2/SET-GLBCFFUNC.md)
 
 ## 证据
 

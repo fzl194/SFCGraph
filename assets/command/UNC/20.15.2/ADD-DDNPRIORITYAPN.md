@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DDNPRIORITYAPN]] · 基于APN的DDN消息优先级配置（DDNPRIORITYAPN）
+- [基于APN的DDN消息优先级配置（DDNPRIORITYAPN）](configobject/UNC/20.15.2/DDNPRIORITYAPN.md)
 
 ## 使用实例
 

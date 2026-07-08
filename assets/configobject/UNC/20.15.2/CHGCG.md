@@ -23,11 +23,11 @@ SGSN与CG对接时，需要配置该命令。
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CHGCG]] · ADD CHGCG
-- [[command/UNC/20.15.2/DSP-CHGCG]] · DSP CHGCG
-- [[command/UNC/20.15.2/LST-CHGCG]] · LST CHGCG
-- [[command/UNC/20.15.2/MOD-CHGCG]] · MOD CHGCG
-- [[command/UNC/20.15.2/RMV-CHGCG]] · RMV CHGCG
+- [ADD CHGCG](command/UNC/20.15.2/ADD-CHGCG.md)
+- [DSP CHGCG](command/UNC/20.15.2/DSP-CHGCG.md)
+- [LST CHGCG](command/UNC/20.15.2/LST-CHGCG.md)
+- [MOD CHGCG](command/UNC/20.15.2/MOD-CHGCG.md)
+- [RMV CHGCG](command/UNC/20.15.2/RMV-CHGCG.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GLOBALDNS]] · LST GLOBALDNS
-- [[command/UNC/20.15.2/RTR-GLOBALDNS]] · RTR GLOBALDNS
-- [[command/UNC/20.15.2/SET-GLOBALDNS]] · SET GLOBALDNS
+- [LST GLOBALDNS](command/UNC/20.15.2/LST-GLOBALDNS.md)
+- [RTR GLOBALDNS](command/UNC/20.15.2/RTR-GLOBALDNS.md)
+- [SET GLOBALDNS](command/UNC/20.15.2/SET-GLOBALDNS.md)
 
 ## 证据
 

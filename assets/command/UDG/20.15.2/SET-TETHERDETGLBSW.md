@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/TETHERDETGLBSW]] · Tethering用户终端数量检测全局开关（TETHERDETGLBSW）
+- [Tethering用户终端数量检测全局开关（TETHERDETGLBSW）](configobject/UDG/20.15.2/TETHERDETGLBSW.md)
 
 ## 使用实例
 

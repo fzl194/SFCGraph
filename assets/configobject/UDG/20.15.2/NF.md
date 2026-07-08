@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LCK-NF]] · LCK NF
-- [[command/UDG/20.15.2/LST-NF]] · LST NF
+- [LCK NF](command/UDG/20.15.2/LCK-NF.md)
+- [LST NF](command/UDG/20.15.2/LST-NF.md)
 
 ## 证据
 

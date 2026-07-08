@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ELECTIONABILITY]] · 业务进程选举能力（ELECTIONABILITY）
+- [业务进程选举能力（ELECTIONABILITY）](configobject/UNC/20.15.2/ELECTIONABILITY.md)
 
 ## 使用实例
 

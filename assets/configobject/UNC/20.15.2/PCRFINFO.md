@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PCRFINFO]] · DSP PCRFINFO
+- [DSP PCRFINFO](command/UNC/20.15.2/DSP-PCRFINFO.md)
 
 ## 证据
 

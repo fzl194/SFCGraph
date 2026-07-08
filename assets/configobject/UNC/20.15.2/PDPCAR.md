@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PDPCAR]] · LST PDPCAR
-- [[command/UNC/20.15.2/SET-PDPCAR]] · SET PDPCAR
+- [LST PDPCAR](command/UNC/20.15.2/LST-PDPCAR.md)
+- [SET PDPCAR](command/UNC/20.15.2/SET-PDPCAR.md)
 
 ## 证据
 

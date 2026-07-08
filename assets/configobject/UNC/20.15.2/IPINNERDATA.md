@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IPINNERDATA]] · DSP IPINNERDATA
+- [DSP IPINNERDATA](command/UNC/20.15.2/DSP-IPINNERDATA.md)
 
 ## 证据
 

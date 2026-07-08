@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/S1APLE]] · S1AP本地实体（S1APLE）
+- [S1AP本地实体（S1APLE）](configobject/UNC/20.15.2/S1APLE.md)
 
 ## 使用实例
 

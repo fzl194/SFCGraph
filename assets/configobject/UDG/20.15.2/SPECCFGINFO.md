@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SPECCFGINFO]] · DSP SPECCFGINFO
+- [DSP SPECCFGINFO](command/UDG/20.15.2/DSP-SPECCFGINFO.md)
 
 ## 证据
 

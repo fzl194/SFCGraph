@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PCFSSCOPEBINDALL]] · 所有的PCF业务服务区的绑定关系（PCFSSCOPEBINDALL）
+- [所有的PCF业务服务区的绑定关系（PCFSSCOPEBINDALL）](configobject/UNC/20.15.2/PCFSSCOPEBINDALL.md)
 
 ## 使用实例
 

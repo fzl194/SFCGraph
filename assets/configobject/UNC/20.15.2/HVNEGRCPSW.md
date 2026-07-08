@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HVNEGRCPSW]] · LST HVNEGRCPSW
-- [[command/UNC/20.15.2/SET-HVNEGRCPSW]] · SET HVNEGRCPSW
+- [LST HVNEGRCPSW](command/UNC/20.15.2/LST-HVNEGRCPSW.md)
+- [SET HVNEGRCPSW](command/UNC/20.15.2/SET-HVNEGRCPSW.md)
 
 ## 证据
 

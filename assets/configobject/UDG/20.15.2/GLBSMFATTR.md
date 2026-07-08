@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-GLBSMFATTR]] · LST GLBSMFATTR
-- [[command/UDG/20.15.2/SET-GLBSMFATTR]] · SET GLBSMFATTR
+- [LST GLBSMFATTR](command/UDG/20.15.2/LST-GLBSMFATTR.md)
+- [SET GLBSMFATTR](command/UDG/20.15.2/SET-GLBSMFATTR.md)
 
 ## 证据
 

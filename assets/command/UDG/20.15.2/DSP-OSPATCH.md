@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OSPATCH]] · OS补丁版本号（OSPATCH）
+- [OS补丁版本号（OSPATCH）](configobject/UDG/20.15.2/OSPATCH.md)
 
 ## 使用实例
 

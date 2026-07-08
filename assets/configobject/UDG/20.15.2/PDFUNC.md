@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PDFUNC]] · LST PDFUNC
-- [[command/UDG/20.15.2/SET-PDFUNC]] · SET PDFUNC
+- [LST PDFUNC](command/UDG/20.15.2/LST-PDFUNC.md)
+- [SET PDFUNC](command/UDG/20.15.2/SET-PDFUNC.md)
 
 ## 证据
 

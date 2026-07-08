@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CSLOGFC]] · LST CSLOGFC
-- [[command/UNC/20.15.2/SET-CSLOGFC]] · SET CSLOGFC
+- [LST CSLOGFC](command/UNC/20.15.2/LST-CSLOGFC.md)
+- [SET CSLOGFC](command/UNC/20.15.2/SET-CSLOGFC.md)
 
 ## 证据
 

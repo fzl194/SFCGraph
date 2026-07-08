@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-N2OVERLOAD]] · LST N2OVERLOAD
-- [[command/UNC/20.15.2/SET-N2OVERLOAD]] · SET N2OVERLOAD
+- [LST N2OVERLOAD](command/UNC/20.15.2/LST-N2OVERLOAD.md)
+- [SET N2OVERLOAD](command/UNC/20.15.2/SET-N2OVERLOAD.md)
 
 ## 证据
 

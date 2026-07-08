@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MPROCRESSTAT]] · DSP MPROCRESSTAT
+- [DSP MPROCRESSTAT](command/UDG/20.15.2/DSP-MPROCRESSTAT.md)
 
 ## 证据
 

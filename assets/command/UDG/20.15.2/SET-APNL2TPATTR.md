@@ -63,7 +63,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/APNL2TPATTR]] · APN L2TP配置（APNL2TPATTR）
+- [APN L2TP配置（APNL2TPATTR）](configobject/UDG/20.15.2/APNL2TPATTR.md)
 
 ## 关联任务
 

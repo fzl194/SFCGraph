@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-EVTHEALCTRL]] · LST EVTHEALCTRL
-- [[command/UDG/20.15.2/SET-EVTHEALCTRL]] · SET EVTHEALCTRL
+- [LST EVTHEALCTRL](command/UDG/20.15.2/LST-EVTHEALCTRL.md)
+- [SET EVTHEALCTRL](command/UDG/20.15.2/SET-EVTHEALCTRL.md)
 
 ## 证据
 

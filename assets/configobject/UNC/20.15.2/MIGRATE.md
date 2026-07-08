@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-MIGRATE]] · ACT MIGRATE
-- [[command/UNC/20.15.2/DSP-MIGRATE]] · DSP MIGRATE
+- [ACT MIGRATE](command/UNC/20.15.2/ACT-MIGRATE.md)
+- [DSP MIGRATE](command/UNC/20.15.2/DSP-MIGRATE.md)
 
 ## 证据
 

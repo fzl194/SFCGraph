@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UERCAPPARA]] · LST UERCAPPARA
-- [[command/UNC/20.15.2/SET-UERCAPPARA]] · SET UERCAPPARA
+- [LST UERCAPPARA](command/UNC/20.15.2/LST-UERCAPPARA.md)
+- [SET UERCAPPARA](command/UNC/20.15.2/SET-UERCAPPARA.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CUINCONSCONFIG]] · DSP CUINCONSCONFIG
+- [DSP CUINCONSCONFIG](command/UDG/20.15.2/DSP-CUINCONSCONFIG.md)
 
 ## 证据
 

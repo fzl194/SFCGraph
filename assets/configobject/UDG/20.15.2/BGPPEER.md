@@ -17,12 +17,12 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-BGPPEER]] · ADD BGPPEER
-- [[command/UDG/20.15.2/LST-BGPPEER]] · LST BGPPEER
-- [[command/UDG/20.15.2/MOD-BGPPEER]] · MOD BGPPEER
-- [[command/UDG/20.15.2/RBL-BGPPEER]] · RBL BGPPEER
-- [[command/UDG/20.15.2/RMV-BGPPEER]] · RMV BGPPEER
-- [[command/UDG/20.15.2/SYN-BGPPEER]] · SYN BGPPEER
+- [ADD BGPPEER](command/UDG/20.15.2/ADD-BGPPEER.md)
+- [LST BGPPEER](command/UDG/20.15.2/LST-BGPPEER.md)
+- [MOD BGPPEER](command/UDG/20.15.2/MOD-BGPPEER.md)
+- [RBL BGPPEER](command/UDG/20.15.2/RBL-BGPPEER.md)
+- [RMV BGPPEER](command/UDG/20.15.2/RMV-BGPPEER.md)
+- [SYN BGPPEER](command/UDG/20.15.2/SYN-BGPPEER.md)
 
 ## 证据
 

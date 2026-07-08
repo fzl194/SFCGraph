@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HTTPSTATOBJ]] · LST HTTPSTATOBJ
-- [[command/UDG/20.15.2/RMV-HTTPSTATOBJ]] · RMV HTTPSTATOBJ
+- [LST HTTPSTATOBJ](command/UDG/20.15.2/LST-HTTPSTATOBJ.md)
+- [RMV HTTPSTATOBJ](command/UDG/20.15.2/RMV-HTTPSTATOBJ.md)
 
 ## 证据
 

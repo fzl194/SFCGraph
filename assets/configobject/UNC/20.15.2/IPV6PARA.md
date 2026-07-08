@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IPV6PARA]] · LST IPV6PARA
-- [[command/UNC/20.15.2/SET-IPV6PARA]] · SET IPV6PARA
+- [LST IPV6PARA](command/UNC/20.15.2/LST-IPV6PARA.md)
+- [SET IPV6PARA](command/UNC/20.15.2/SET-IPV6PARA.md)
 
 ## 证据
 

@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DMRTGRP]] · ADD DMRTGRP
-- [[command/UNC/20.15.2/LST-DMRTGRP]] · LST DMRTGRP
-- [[command/UNC/20.15.2/RMV-DMRTGRP]] · RMV DMRTGRP
+- [ADD DMRTGRP](command/UNC/20.15.2/ADD-DMRTGRP.md)
+- [LST DMRTGRP](command/UNC/20.15.2/LST-DMRTGRP.md)
+- [RMV DMRTGRP](command/UNC/20.15.2/RMV-DMRTGRP.md)
 
 ## 证据
 

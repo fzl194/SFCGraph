@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PUBLICAPNNI]] · 公共APN NI配置（PUBLICAPNNI）
+- [公共APN NI配置（PUBLICAPNNI）](configobject/UNC/20.15.2/PUBLICAPNNI.md)
 
 ## 使用实例
 

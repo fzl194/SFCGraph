@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DCN]] · ADD DCN
-- [[command/UNC/20.15.2/LST-DCN]] · LST DCN
-- [[command/UNC/20.15.2/MOD-DCN]] · MOD DCN
-- [[command/UNC/20.15.2/RMV-DCN]] · RMV DCN
+- [ADD DCN](command/UNC/20.15.2/ADD-DCN.md)
+- [LST DCN](command/UNC/20.15.2/LST-DCN.md)
+- [MOD DCN](command/UNC/20.15.2/MOD-DCN.md)
+- [RMV DCN](command/UNC/20.15.2/RMV-DCN.md)
 
 ## 证据
 

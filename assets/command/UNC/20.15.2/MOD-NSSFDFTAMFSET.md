@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NSSFDFTAMFSET]] · 默认AMF集所支持的S-NSSAI范围（NSSFDFTAMFSET）
+- [默认AMF集所支持的S-NSSAI范围（NSSFDFTAMFSET）](configobject/UNC/20.15.2/NSSFDFTAMFSET.md)
 
 ## 使用实例
 

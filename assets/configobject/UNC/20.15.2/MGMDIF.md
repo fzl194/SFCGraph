@@ -17,11 +17,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MGMDIF]] · ADD MGMDIF
-- [[command/UNC/20.15.2/DSP-MGMDIF]] · DSP MGMDIF
-- [[command/UNC/20.15.2/LST-MGMDIF]] · LST MGMDIF
-- [[command/UNC/20.15.2/MOD-MGMDIF]] · MOD MGMDIF
-- [[command/UNC/20.15.2/RMV-MGMDIF]] · RMV MGMDIF
+- [ADD MGMDIF](command/UNC/20.15.2/ADD-MGMDIF.md)
+- [DSP MGMDIF](command/UNC/20.15.2/DSP-MGMDIF.md)
+- [LST MGMDIF](command/UNC/20.15.2/LST-MGMDIF.md)
+- [MOD MGMDIF](command/UNC/20.15.2/MOD-MGMDIF.md)
+- [RMV MGMDIF](command/UNC/20.15.2/RMV-MGMDIF.md)
 
 ## 证据
 

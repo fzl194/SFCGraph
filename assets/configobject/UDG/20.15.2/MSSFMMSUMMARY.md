@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSFMMSUMMARY]] · DSP MSSFMMSUMMARY
+- [DSP MSSFMMSUMMARY](command/UDG/20.15.2/DSP-MSSFMMSUMMARY.md)
 
 ## 证据
 

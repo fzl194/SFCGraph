@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRFTAIRT]] · ADD NRFTAIRT
-- [[command/UNC/20.15.2/LST-NRFTAIRT]] · LST NRFTAIRT
-- [[command/UNC/20.15.2/MOD-NRFTAIRT]] · MOD NRFTAIRT
-- [[command/UNC/20.15.2/RMV-NRFTAIRT]] · RMV NRFTAIRT
+- [ADD NRFTAIRT](command/UNC/20.15.2/ADD-NRFTAIRT.md)
+- [LST NRFTAIRT](command/UNC/20.15.2/LST-NRFTAIRT.md)
+- [MOD NRFTAIRT](command/UNC/20.15.2/MOD-NRFTAIRT.md)
+- [RMV NRFTAIRT](command/UNC/20.15.2/RMV-NRFTAIRT.md)
 
 ## 证据
 

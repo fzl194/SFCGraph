@@ -47,7 +47,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PATCH]] · 补丁（PATCH）
+- [补丁（PATCH）](configobject/UNC/20.15.2/PATCH.md)
 
 ## 使用实例
 

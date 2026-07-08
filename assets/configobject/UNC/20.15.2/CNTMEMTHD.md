@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CNTMEMTHD]] · LST CNTMEMTHD
-- [[command/UNC/20.15.2/SET-CNTMEMTHD]] · SET CNTMEMTHD
+- [LST CNTMEMTHD](command/UNC/20.15.2/LST-CNTMEMTHD.md)
+- [SET CNTMEMTHD](command/UNC/20.15.2/SET-CNTMEMTHD.md)
 
 ## 证据
 

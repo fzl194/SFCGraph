@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FESTABLE]] · DSP FESTABLE
+- [DSP FESTABLE](command/UNC/20.15.2/DSP-FESTABLE.md)
 
 ## 证据
 

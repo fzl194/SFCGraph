@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SECCARTAB]] · DSP SECCARTAB
+- [DSP SECCARTAB](command/UNC/20.15.2/DSP-SECCARTAB.md)
 
 ## 证据
 

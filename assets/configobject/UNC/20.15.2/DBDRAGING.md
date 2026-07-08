@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DBDRAGING]] · LST DBDRAGING
-- [[command/UNC/20.15.2/SET-DBDRAGING]] · SET DBDRAGING
+- [LST DBDRAGING](command/UNC/20.15.2/LST-DBDRAGING.md)
+- [SET DBDRAGING](command/UNC/20.15.2/SET-DBDRAGING.md)
 
 ## 证据
 

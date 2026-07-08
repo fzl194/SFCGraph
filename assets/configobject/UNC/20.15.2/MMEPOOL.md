@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MMEPOOL]] · ADD MMEPOOL
-- [[command/UNC/20.15.2/LST-MMEPOOL]] · LST MMEPOOL
-- [[command/UNC/20.15.2/MOD-MMEPOOL]] · MOD MMEPOOL
-- [[command/UNC/20.15.2/RMV-MMEPOOL]] · RMV MMEPOOL
+- [ADD MMEPOOL](command/UNC/20.15.2/ADD-MMEPOOL.md)
+- [LST MMEPOOL](command/UNC/20.15.2/LST-MMEPOOL.md)
+- [MOD MMEPOOL](command/UNC/20.15.2/MOD-MMEPOOL.md)
+- [RMV MMEPOOL](command/UNC/20.15.2/RMV-MMEPOOL.md)
 
 ## 证据
 

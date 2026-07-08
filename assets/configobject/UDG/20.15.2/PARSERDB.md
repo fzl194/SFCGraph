@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PARSERDB]] · DSP PARSERDB
-- [[command/UDG/20.15.2/LOD-PARSERDB]] · LOD PARSERDB
+- [DSP PARSERDB](command/UDG/20.15.2/DSP-PARSERDB.md)
+- [LOD PARSERDB](command/UDG/20.15.2/LOD-PARSERDB.md)
 
 ## 证据
 

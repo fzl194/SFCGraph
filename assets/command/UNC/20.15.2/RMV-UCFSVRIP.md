@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UCFSVRIP]] · UCF报表服务器的接入点IP地址（UCFSVRIP）
+- [UCF报表服务器的接入点IP地址（UCFSVRIP）](configobject/UNC/20.15.2/UCFSVRIP.md)
 
 ## 使用实例
 

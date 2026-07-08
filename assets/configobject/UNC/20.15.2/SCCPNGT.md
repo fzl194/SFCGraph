@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCCPNGT]] · ADD SCCPNGT
-- [[command/UNC/20.15.2/LST-SCCPNGT]] · LST SCCPNGT
-- [[command/UNC/20.15.2/MOD-SCCPNGT]] · MOD SCCPNGT
-- [[command/UNC/20.15.2/RMV-SCCPNGT]] · RMV SCCPNGT
+- [ADD SCCPNGT](command/UNC/20.15.2/ADD-SCCPNGT.md)
+- [LST SCCPNGT](command/UNC/20.15.2/LST-SCCPNGT.md)
+- [MOD SCCPNGT](command/UNC/20.15.2/MOD-SCCPNGT.md)
+- [RMV SCCPNGT](command/UNC/20.15.2/RMV-SCCPNGT.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TORESMGTCFG]] · LST TORESMGTCFG
-- [[command/UDG/20.15.2/SET-TORESMGTCFG]] · SET TORESMGTCFG
+- [LST TORESMGTCFG](command/UDG/20.15.2/LST-TORESMGTCFG.md)
+- [SET TORESMGTCFG](command/UDG/20.15.2/SET-TORESMGTCFG.md)
 
 ## 证据
 

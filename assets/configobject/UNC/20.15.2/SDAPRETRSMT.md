@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SDAPRETRSMT]] · LST SDAPRETRSMT
-- [[command/UNC/20.15.2/SET-SDAPRETRSMT]] · SET SDAPRETRSMT
+- [LST SDAPRETRSMT](command/UNC/20.15.2/LST-SDAPRETRSMT.md)
+- [SET SDAPRETRSMT](command/UNC/20.15.2/SET-SDAPRETRSMT.md)
 
 ## 证据
 

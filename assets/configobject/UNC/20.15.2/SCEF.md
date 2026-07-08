@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCEF]] · ADD SCEF
-- [[command/UNC/20.15.2/LST-SCEF]] · LST SCEF
-- [[command/UNC/20.15.2/RMV-SCEF]] · RMV SCEF
+- [ADD SCEF](command/UNC/20.15.2/ADD-SCEF.md)
+- [LST SCEF](command/UNC/20.15.2/LST-SCEF.md)
+- [RMV SCEF](command/UNC/20.15.2/RMV-SCEF.md)
 
 ## 证据
 

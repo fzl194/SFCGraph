@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GTPCSTATUSINFO]] · DSP GTPCSTATUSINFO
+- [DSP GTPCSTATUSINFO](command/UNC/20.15.2/DSP-GTPCSTATUSINFO.md)
 
 ## 证据
 

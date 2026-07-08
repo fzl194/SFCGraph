@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFDATACHK]] · LST NRFDATACHK
-- [[command/UNC/20.15.2/SET-NRFDATACHK]] · SET NRFDATACHK
+- [LST NRFDATACHK](command/UNC/20.15.2/LST-NRFDATACHK.md)
+- [SET NRFDATACHK](command/UNC/20.15.2/SET-NRFDATACHK.md)
 
 ## 证据
 

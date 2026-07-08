@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-S1APPARA]] · LST S1APPARA
-- [[command/UNC/20.15.2/SET-S1APPARA]] · SET S1APPARA
+- [LST S1APPARA](command/UNC/20.15.2/LST-S1APPARA.md)
+- [SET S1APPARA](command/UNC/20.15.2/SET-S1APPARA.md)
 
 ## 证据
 

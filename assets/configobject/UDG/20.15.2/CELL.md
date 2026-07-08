@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-CELL]] · ADD CELL
-- [[command/UDG/20.15.2/LST-CELL]] · LST CELL
-- [[command/UDG/20.15.2/RMV-CELL]] · RMV CELL
+- [ADD CELL](command/UDG/20.15.2/ADD-CELL.md)
+- [LST CELL](command/UDG/20.15.2/LST-CELL.md)
+- [RMV CELL](command/UDG/20.15.2/RMV-CELL.md)
 
 ## 证据
 

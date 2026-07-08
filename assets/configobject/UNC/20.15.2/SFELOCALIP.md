@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SFELOCALIP]] · DSP SFELOCALIP
+- [DSP SFELOCALIP](command/UNC/20.15.2/DSP-SFELOCALIP.md)
 
 ## 证据
 

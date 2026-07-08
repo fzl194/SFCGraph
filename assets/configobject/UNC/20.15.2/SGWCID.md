@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SGWCID]] · ADD SGWCID
-- [[command/UNC/20.15.2/LST-SGWCID]] · LST SGWCID
-- [[command/UNC/20.15.2/MOD-SGWCID]] · MOD SGWCID
-- [[command/UNC/20.15.2/RMV-SGWCID]] · RMV SGWCID
+- [ADD SGWCID](command/UNC/20.15.2/ADD-SGWCID.md)
+- [LST SGWCID](command/UNC/20.15.2/LST-SGWCID.md)
+- [MOD SGWCID](command/UNC/20.15.2/MOD-SGWCID.md)
+- [RMV SGWCID](command/UNC/20.15.2/RMV-SGWCID.md)
 
 ## 证据
 

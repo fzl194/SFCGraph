@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LBSOFTPARA]] · LST LBSOFTPARA
-- [[command/UNC/20.15.2/SET-LBSOFTPARA]] · SET LBSOFTPARA
+- [LST LBSOFTPARA](command/UNC/20.15.2/LST-LBSOFTPARA.md)
+- [SET LBSOFTPARA](command/UNC/20.15.2/SET-LBSOFTPARA.md)
 
 ## 证据
 

@@ -153,8 +153,8 @@ def project_command(rec: dict, edges: dict, config_objs: dict, task_refs: dict) 
             local = str(oid).split('@')[-1]
             zh = o.get("object_name_zh") or o.get("object_name") or ""
             label = f"{zh}（{local}）" if zh else local
-            ref = f"configobject/{nf}/{ver}/{sanitize(local)}"   # assets 根路径（ConfigObject md 已建）
-            parts.append(f"- [[{ref}]] · {label}")
+            ref = f"configobject/{nf}/{ver}/{sanitize(local)}.md"   # assets 根路径（ConfigObject md 已建）
+            parts.append(f"- [{label}]({ref})")
         parts.append("")
 
     tids = task_refs.get(cid, [])
@@ -200,7 +200,7 @@ def update_local_index(nf: str, ver: str, commands: list):
         lines.append("")
         for cid, name, zh, fname in sorted(by_cat[cat], key=lambda x: x[1]):
             tail = f"（{zh}）" if zh and zh != name else ""
-            lines.append(f"- [[{cid}]] · {name}{tail} — `{fname}`")
+            lines.append(f"- [{name}{tail}](command/{nf}/{ver}/{fname})")
         lines.append("")
     idx.write_text("\n".join(lines), encoding="utf-8")
 

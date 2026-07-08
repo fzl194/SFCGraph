@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-NEFMSGSEND]] · STR NEFMSGSEND
+- [STR NEFMSGSEND](command/UNC/20.15.2/STR-NEFMSGSEND.md)
 
 ## 证据
 

@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GREKPLVSTAT]] · DSP GREKPLVSTAT
-- [[command/UNC/20.15.2/RTR-GREKPLVSTAT]] · RTR GREKPLVSTAT
+- [DSP GREKPLVSTAT](command/UNC/20.15.2/DSP-GREKPLVSTAT.md)
+- [RTR GREKPLVSTAT](command/UNC/20.15.2/RTR-GREKPLVSTAT.md)
 
 ## 证据
 

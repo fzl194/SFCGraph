@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OSPROCMEMSTATIS]] · DSP OSPROCMEMSTATIS
+- [DSP OSPROCMEMSTATIS](command/UNC/20.15.2/DSP-OSPROCMEMSTATIS.md)
 
 ## 证据
 

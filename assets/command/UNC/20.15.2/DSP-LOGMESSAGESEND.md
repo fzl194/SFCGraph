@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LOGMESSAGESEND]] · 日志发送的信息（LOGMESSAGESEND）
+- [日志发送的信息（LOGMESSAGESEND）](configobject/UNC/20.15.2/LOGMESSAGESEND.md)
 
 ## 使用实例
 

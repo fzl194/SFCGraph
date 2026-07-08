@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGMMFUNC]] · LST NGMMFUNC
-- [[command/UNC/20.15.2/SET-NGMMFUNC]] · SET NGMMFUNC
+- [LST NGMMFUNC](command/UNC/20.15.2/LST-NGMMFUNC.md)
+- [SET NGMMFUNC](command/UNC/20.15.2/SET-NGMMFUNC.md)
 
 ## 证据
 

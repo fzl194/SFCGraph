@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-OMMQ]] · CLR OMMQ
+- [CLR OMMQ](command/UNC/20.15.2/CLR-OMMQ.md)
 
 ## 证据
 

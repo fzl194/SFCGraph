@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PWDBLACKLIST]] · 密码禁用词（PWDBLACKLIST）
+- [密码禁用词（PWDBLACKLIST）](configobject/UNC/20.15.2/PWDBLACKLIST.md)
 
 ## 使用实例
 

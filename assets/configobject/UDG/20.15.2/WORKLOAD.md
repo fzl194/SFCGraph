@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-WORKLOAD]] · DSP WORKLOAD
+- [DSP WORKLOAD](command/UDG/20.15.2/DSP-WORKLOAD.md)
 
 ## 证据
 

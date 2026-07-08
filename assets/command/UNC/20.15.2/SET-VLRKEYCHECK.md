@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VLRKEYCHECK]] · VLR用户关键信息数据核查扫描参数（VLRKEYCHECK）
+- [VLR用户关键信息数据核查扫描参数（VLRKEYCHECK）](configobject/UNC/20.15.2/VLRKEYCHECK.md)
 
 ## 使用实例
 

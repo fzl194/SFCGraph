@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SGSRLKS]] · SGS服务端链路集（SGSRLKS）
+- [SGS服务端链路集（SGSRLKS）](configobject/UNC/20.15.2/SGSRLKS.md)
 
 ## 使用实例
 

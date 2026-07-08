@@ -27,8 +27,8 @@ AMF组Pool时，如果某个AMF故障，则故障AMF上的用户会接入到Pool
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-INTERAMFFC]] · LST INTERAMFFC
-- [[command/UNC/20.15.2/SET-INTERAMFFC]] · SET INTERAMFFC
+- [LST INTERAMFFC](command/UNC/20.15.2/LST-INTERAMFFC.md)
+- [SET INTERAMFFC](command/UNC/20.15.2/SET-INTERAMFFC.md)
 
 ## 证据
 

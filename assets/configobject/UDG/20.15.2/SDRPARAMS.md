@@ -44,8 +44,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SDRPARAMS]] · LST SDRPARAMS
-- [[command/UDG/20.15.2/SET-SDRPARAMS]] · SET SDRPARAMS
+- [LST SDRPARAMS](command/UDG/20.15.2/LST-SDRPARAMS.md)
+- [SET SDRPARAMS](command/UDG/20.15.2/SET-SDRPARAMS.md)
 
 ## 证据
 

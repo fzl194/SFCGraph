@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SUBGP]] · ADD SUBGP
-- [[command/UNC/20.15.2/LST-SUBGP]] · LST SUBGP
-- [[command/UNC/20.15.2/MOD-SUBGP]] · MOD SUBGP
-- [[command/UNC/20.15.2/RMV-SUBGP]] · RMV SUBGP
+- [ADD SUBGP](command/UNC/20.15.2/ADD-SUBGP.md)
+- [LST SUBGP](command/UNC/20.15.2/LST-SUBGP.md)
+- [MOD SUBGP](command/UNC/20.15.2/MOD-SUBGP.md)
+- [RMV SUBGP](command/UNC/20.15.2/RMV-SUBGP.md)
 
 ## 证据
 

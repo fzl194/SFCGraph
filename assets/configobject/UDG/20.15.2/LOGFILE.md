@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/GET-LOGFILE]] · GET LOGFILE
-- [[command/UDG/20.15.2/SAV-LOGFILE]] · SAV LOGFILE
+- [GET LOGFILE](command/UDG/20.15.2/GET-LOGFILE.md)
+- [SAV LOGFILE](command/UDG/20.15.2/SAV-LOGFILE.md)
 
 ## 证据
 

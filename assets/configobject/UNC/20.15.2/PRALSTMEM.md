@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PRALSTMEM]] · ADD PRALSTMEM
-- [[command/UNC/20.15.2/LST-PRALSTMEM]] · LST PRALSTMEM
-- [[command/UNC/20.15.2/RMV-PRALSTMEM]] · RMV PRALSTMEM
+- [ADD PRALSTMEM](command/UNC/20.15.2/ADD-PRALSTMEM.md)
+- [LST PRALSTMEM](command/UNC/20.15.2/LST-PRALSTMEM.md)
+- [RMV PRALSTMEM](command/UNC/20.15.2/RMV-PRALSTMEM.md)
 
 ## 证据
 

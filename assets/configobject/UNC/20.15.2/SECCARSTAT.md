@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SECCARSTAT]] · DSP SECCARSTAT
-- [[command/UNC/20.15.2/RTR-SECCARSTAT]] · RTR SECCARSTAT
+- [DSP SECCARSTAT](command/UNC/20.15.2/DSP-SECCARSTAT.md)
+- [RTR SECCARSTAT](command/UNC/20.15.2/RTR-SECCARSTAT.md)
 
 ## 证据
 

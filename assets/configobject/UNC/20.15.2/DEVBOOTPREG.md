@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DEVBOOTPREG]] · DSP DEVBOOTPREG
+- [DSP DEVBOOTPREG](command/UNC/20.15.2/DSP-DEVBOOTPREG.md)
 
 ## 证据
 

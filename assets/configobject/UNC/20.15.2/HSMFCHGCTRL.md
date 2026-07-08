@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HSMFCHGCTRL]] · LST HSMFCHGCTRL
-- [[command/UNC/20.15.2/SET-HSMFCHGCTRL]] · SET HSMFCHGCTRL
+- [LST HSMFCHGCTRL](command/UNC/20.15.2/LST-HSMFCHGCTRL.md)
+- [SET HSMFCHGCTRL](command/UNC/20.15.2/SET-HSMFCHGCTRL.md)
 
 ## 证据
 

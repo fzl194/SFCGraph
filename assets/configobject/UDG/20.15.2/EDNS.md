@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-EDNS]] · ADD EDNS
-- [[command/UDG/20.15.2/LST-EDNS]] · LST EDNS
-- [[command/UDG/20.15.2/MOD-EDNS]] · MOD EDNS
-- [[command/UDG/20.15.2/RMV-EDNS]] · RMV EDNS
+- [ADD EDNS](command/UDG/20.15.2/ADD-EDNS.md)
+- [LST EDNS](command/UDG/20.15.2/LST-EDNS.md)
+- [MOD EDNS](command/UDG/20.15.2/MOD-EDNS.md)
+- [RMV EDNS](command/UDG/20.15.2/RMV-EDNS.md)
 
 ## 证据
 

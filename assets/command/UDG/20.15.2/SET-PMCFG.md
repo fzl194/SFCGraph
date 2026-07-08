@@ -108,7 +108,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PMCFG]] · 性能统计配置参数（PMCFG）
+- [性能统计配置参数（PMCFG）](configobject/UDG/20.15.2/PMCFG.md)
 
 ## 使用实例
 

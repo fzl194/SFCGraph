@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IPSTATISTIC]] · DSP IPSTATISTIC
-- [[command/UNC/20.15.2/RTR-IPSTATISTIC]] · RTR IPSTATISTIC
+- [DSP IPSTATISTIC](command/UNC/20.15.2/DSP-IPSTATISTIC.md)
+- [RTR IPSTATISTIC](command/UNC/20.15.2/RTR-IPSTATISTIC.md)
 
 ## 证据
 

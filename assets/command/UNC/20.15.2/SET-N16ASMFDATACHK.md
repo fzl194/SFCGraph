@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/N16ASMFDATACHK]] · N16aSMF数据核查功能（N16ASMFDATACHK）
+- [N16aSMF数据核查功能（N16ASMFDATACHK）](configobject/UNC/20.15.2/N16ASMFDATACHK.md)
 
 ## 使用实例
 

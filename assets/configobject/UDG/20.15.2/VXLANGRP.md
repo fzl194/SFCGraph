@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-VXLANGRP]] · ADD VXLANGRP
-- [[command/UDG/20.15.2/LST-VXLANGRP]] · LST VXLANGRP
-- [[command/UDG/20.15.2/MOD-VXLANGRP]] · MOD VXLANGRP
-- [[command/UDG/20.15.2/RMV-VXLANGRP]] · RMV VXLANGRP
+- [ADD VXLANGRP](command/UDG/20.15.2/ADD-VXLANGRP.md)
+- [LST VXLANGRP](command/UDG/20.15.2/LST-VXLANGRP.md)
+- [MOD VXLANGRP](command/UDG/20.15.2/MOD-VXLANGRP.md)
+- [RMV VXLANGRP](command/UDG/20.15.2/RMV-VXLANGRP.md)
 
 ## 证据
 

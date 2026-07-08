@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LOGFILESTORAGE]] · 日志存储信息（LOGFILESTORAGE）
+- [日志存储信息（LOGFILESTORAGE）](configobject/UNC/20.15.2/LOGFILESTORAGE.md)
 
 ## 使用实例
 

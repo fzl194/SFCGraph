@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PATHINFO]] · DSP PATHINFO
+- [DSP PATHINFO](command/UDG/20.15.2/DSP-PATHINFO.md)
 
 ## 证据
 

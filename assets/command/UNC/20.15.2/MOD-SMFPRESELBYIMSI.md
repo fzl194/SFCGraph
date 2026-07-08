@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SMFPRESELBYIMSI]] · 基于IMSI优选指定SMF配置（SMFPRESELBYIMSI）
+- [基于IMSI优选指定SMF配置（SMFPRESELBYIMSI）](configobject/UNC/20.15.2/SMFPRESELBYIMSI.md)
 
 ## 使用实例
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DCNMAP]] · ADD DCNMAP
-- [[command/UNC/20.15.2/LST-DCNMAP]] · LST DCNMAP
-- [[command/UNC/20.15.2/RMV-DCNMAP]] · RMV DCNMAP
+- [ADD DCNMAP](command/UNC/20.15.2/ADD-DCNMAP.md)
+- [LST DCNMAP](command/UNC/20.15.2/LST-DCNMAP.md)
+- [RMV DCNMAP](command/UNC/20.15.2/RMV-DCNMAP.md)
 
 ## 证据
 

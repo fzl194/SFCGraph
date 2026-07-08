@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PODHEALPLY]] · LST PODHEALPLY
-- [[command/UNC/20.15.2/SET-PODHEALPLY]] · SET PODHEALPLY
+- [LST PODHEALPLY](command/UNC/20.15.2/LST-PODHEALPLY.md)
+- [SET PODHEALPLY](command/UNC/20.15.2/SET-PODHEALPLY.md)
 
 ## 证据
 

@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NPWORKMODE]] · DSP NPWORKMODE
+- [DSP NPWORKMODE](command/UDG/20.15.2/DSP-NPWORKMODE.md)
 
 ## 证据
 

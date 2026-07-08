@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPN4UPATH]] · LST UPN4UPATH
-- [[command/UDG/20.15.2/SET-UPN4UPATH]] · SET UPN4UPATH
+- [LST UPN4UPATH](command/UDG/20.15.2/LST-UPN4UPATH.md)
+- [SET UPN4UPATH](command/UDG/20.15.2/SET-UPN4UPATH.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-WLRFLOWRULE6]] · DSP WLRFLOWRULE6
+- [DSP WLRFLOWRULE6](command/UDG/20.15.2/DSP-WLRFLOWRULE6.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RPTENCRYPT]] · LST RPTENCRYPT
-- [[command/UDG/20.15.2/SET-RPTENCRYPT]] · SET RPTENCRYPT
+- [LST RPTENCRYPT](command/UDG/20.15.2/LST-RPTENCRYPT.md)
+- [SET RPTENCRYPT](command/UDG/20.15.2/SET-RPTENCRYPT.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TAILAI]] · ADD TAILAI
-- [[command/UNC/20.15.2/LST-TAILAI]] · LST TAILAI
-- [[command/UNC/20.15.2/RMV-TAILAI]] · RMV TAILAI
+- [ADD TAILAI](command/UNC/20.15.2/ADD-TAILAI.md)
+- [LST TAILAI](command/UNC/20.15.2/LST-TAILAI.md)
+- [RMV TAILAI](command/UNC/20.15.2/RMV-TAILAI.md)
 
 ## 证据
 

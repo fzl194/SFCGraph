@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RMSTATISTICS]] · DSP RMSTATISTICS
+- [DSP RMSTATISTICS](command/UNC/20.15.2/DSP-RMSTATISTICS.md)
 
 ## 证据
 

@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-N40MSGCTRL]] · LST N40MSGCTRL
-- [[command/UNC/20.15.2/SET-N40MSGCTRL]] · SET N40MSGCTRL
+- [LST N40MSGCTRL](command/UNC/20.15.2/LST-N40MSGCTRL.md)
+- [SET N40MSGCTRL](command/UNC/20.15.2/SET-N40MSGCTRL.md)
 
 ## 证据
 

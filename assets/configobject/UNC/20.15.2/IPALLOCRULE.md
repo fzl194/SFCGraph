@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IPALLOCRULE]] · LST IPALLOCRULE
-- [[command/UNC/20.15.2/SET-IPALLOCRULE]] · SET IPALLOCRULE
+- [LST IPALLOCRULE](command/UNC/20.15.2/LST-IPALLOCRULE.md)
+- [SET IPALLOCRULE](command/UNC/20.15.2/SET-IPALLOCRULE.md)
 
 ## 证据
 

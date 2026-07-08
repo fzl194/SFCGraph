@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NFMGMTTIMER]] · LST NFMGMTTIMER
-- [[command/UNC/20.15.2/SET-NFMGMTTIMER]] · SET NFMGMTTIMER
+- [LST NFMGMTTIMER](command/UNC/20.15.2/LST-NFMGMTTIMER.md)
+- [SET NFMGMTTIMER](command/UNC/20.15.2/SET-NFMGMTTIMER.md)
 
 ## 证据
 

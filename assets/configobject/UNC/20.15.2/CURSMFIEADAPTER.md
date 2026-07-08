@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-CURSMFIEADAPTER]] · DSP CURSMFIEADAPTER
+- [DSP CURSMFIEADAPTER](command/UNC/20.15.2/DSP-CURSMFIEADAPTER.md)
 
 ## 证据
 

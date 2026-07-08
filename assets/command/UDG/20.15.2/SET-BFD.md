@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BFD]] · BFD全局配置信息（BFD）
+- [BFD全局配置信息（BFD）](configobject/UDG/20.15.2/BFD.md)
 
 ## 关联任务
 

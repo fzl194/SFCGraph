@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GENERATESDC]] · DSP GENERATESDC
-- [[command/UNC/20.15.2/FOC-GENERATESDC]] · FOC GENERATESDC
+- [DSP GENERATESDC](command/UNC/20.15.2/DSP-GENERATESDC.md)
+- [FOC GENERATESDC](command/UNC/20.15.2/FOC-GENERATESDC.md)
 
 ## 证据
 

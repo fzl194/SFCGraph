@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-INHCTF]] · ADD INHCTF
-- [[command/UNC/20.15.2/LST-INHCTF]] · LST INHCTF
-- [[command/UNC/20.15.2/RMV-INHCTF]] · RMV INHCTF
+- [ADD INHCTF](command/UNC/20.15.2/ADD-INHCTF.md)
+- [LST INHCTF](command/UNC/20.15.2/LST-INHCTF.md)
+- [RMV INHCTF](command/UNC/20.15.2/RMV-INHCTF.md)
 
 ## 证据
 

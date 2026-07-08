@@ -71,7 +71,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFNFTYPEFUNC]] · 基于NFType设置NRF的各类功能开关（NRFNFTYPEFUNC）
+- [基于NFType设置NRF的各类功能开关（NRFNFTYPEFUNC）](configobject/UNC/20.15.2/NRFNFTYPEFUNC.md)
 
 ## 使用实例
 

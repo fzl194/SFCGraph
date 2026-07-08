@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/L2TPCLIENTIP]] · L2TP绑定的接口（L2TPCLIENTIP）
+- [L2TP绑定的接口（L2TPCLIENTIP）](configobject/UDG/20.15.2/L2TPCLIENTIP.md)
 
 ## 关联任务
 

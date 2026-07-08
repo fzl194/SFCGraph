@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-N2TACID]] · ADD N2TACID
-- [[command/UDG/20.15.2/LST-N2TACID]] · LST N2TACID
-- [[command/UDG/20.15.2/RMV-N2TACID]] · RMV N2TACID
+- [ADD N2TACID](command/UDG/20.15.2/ADD-N2TACID.md)
+- [LST N2TACID](command/UDG/20.15.2/LST-N2TACID.md)
+- [RMV N2TACID](command/UDG/20.15.2/RMV-N2TACID.md)
 
 ## 证据
 

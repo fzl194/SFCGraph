@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LNKMONITOR]] · 链路频繁闪断监控配置（LNKMONITOR）
+- [链路频繁闪断监控配置（LNKMONITOR）](configobject/UNC/20.15.2/LNKMONITOR.md)
 
 ## 使用实例
 

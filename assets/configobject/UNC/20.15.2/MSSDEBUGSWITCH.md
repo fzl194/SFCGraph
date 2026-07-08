@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-MSSDEBUGSWITCH]] · SET MSSDEBUGSWITCH
+- [SET MSSDEBUGSWITCH](command/UNC/20.15.2/SET-MSSDEBUGSWITCH.md)
 
 ## 证据
 

@@ -23,9 +23,9 @@ NF组是由一个或者多个NF实例组成的容灾/负荷分担的集群，组
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFGROUP]] · ADD NFGROUP
-- [[command/UNC/20.15.2/LST-NFGROUP]] · LST NFGROUP
-- [[command/UNC/20.15.2/RMV-NFGROUP]] · RMV NFGROUP
+- [ADD NFGROUP](command/UNC/20.15.2/ADD-NFGROUP.md)
+- [LST NFGROUP](command/UNC/20.15.2/LST-NFGROUP.md)
+- [RMV NFGROUP](command/UNC/20.15.2/RMV-NFGROUP.md)
 
 ## 证据
 

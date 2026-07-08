@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NRFIMSISTC]] · DSP NRFIMSISTC
+- [DSP NRFIMSISTC](command/UNC/20.15.2/DSP-NRFIMSISTC.md)
 
 ## 证据
 

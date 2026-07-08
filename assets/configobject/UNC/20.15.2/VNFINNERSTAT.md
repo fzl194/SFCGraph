@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-VNFINNERSTAT]] · DSP VNFINNERSTAT
+- [DSP VNFINNERSTAT](command/UNC/20.15.2/DSP-VNFINNERSTAT.md)
 
 ## 证据
 

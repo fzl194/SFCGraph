@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DNAIINFO]] · ADD DNAIINFO
-- [[command/UNC/20.15.2/LST-DNAIINFO]] · LST DNAIINFO
-- [[command/UNC/20.15.2/MOD-DNAIINFO]] · MOD DNAIINFO
-- [[command/UNC/20.15.2/RMV-DNAIINFO]] · RMV DNAIINFO
+- [ADD DNAIINFO](command/UNC/20.15.2/ADD-DNAIINFO.md)
+- [LST DNAIINFO](command/UNC/20.15.2/LST-DNAIINFO.md)
+- [MOD DNAIINFO](command/UNC/20.15.2/MOD-DNAIINFO.md)
+- [RMV DNAIINFO](command/UNC/20.15.2/RMV-DNAIINFO.md)
 
 ## 证据
 

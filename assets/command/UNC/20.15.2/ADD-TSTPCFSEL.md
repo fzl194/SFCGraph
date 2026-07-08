@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TSTPCFSEL]] · 拨测用户与PCF服务区的绑定关系（TSTPCFSEL）
+- [拨测用户与PCF服务区的绑定关系（TSTPCFSEL）](configobject/UNC/20.15.2/TSTPCFSEL.md)
 
 ## 使用实例
 

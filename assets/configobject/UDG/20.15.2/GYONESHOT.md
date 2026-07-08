@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-GYONESHOT]] · LST GYONESHOT
-- [[command/UDG/20.15.2/SET-GYONESHOT]] · SET GYONESHOT
+- [LST GYONESHOT](command/UDG/20.15.2/LST-GYONESHOT.md)
+- [SET GYONESHOT](command/UDG/20.15.2/SET-GYONESHOT.md)
 
 ## 证据
 

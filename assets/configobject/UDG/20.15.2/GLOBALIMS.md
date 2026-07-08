@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-GLOBALIMS]] · LST GLOBALIMS
-- [[command/UDG/20.15.2/SET-GLOBALIMS]] · SET GLOBALIMS
+- [LST GLOBALIMS](command/UDG/20.15.2/LST-GLOBALIMS.md)
+- [SET GLOBALIMS](command/UDG/20.15.2/SET-GLOBALIMS.md)
 
 ## 证据
 

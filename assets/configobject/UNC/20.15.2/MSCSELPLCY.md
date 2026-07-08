@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MSCSELPLCY]] · LST MSCSELPLCY
-- [[command/UNC/20.15.2/SET-MSCSELPLCY]] · SET MSCSELPLCY
+- [LST MSCSELPLCY](command/UNC/20.15.2/LST-MSCSELPLCY.md)
+- [SET MSCSELPLCY](command/UNC/20.15.2/SET-MSCSELPLCY.md)
 
 ## 证据
 

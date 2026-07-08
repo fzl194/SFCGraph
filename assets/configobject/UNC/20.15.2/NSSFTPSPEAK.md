@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NSSFTPSPEAK]] · DSP NSSFTPSPEAK
+- [DSP NSSFTPSPEAK](command/UNC/20.15.2/DSP-NSSFTPSPEAK.md)
 
 ## 证据
 

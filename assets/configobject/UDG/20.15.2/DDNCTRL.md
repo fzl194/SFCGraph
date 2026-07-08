@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DDNCTRL]] · LST DDNCTRL
-- [[command/UDG/20.15.2/SET-DDNCTRL]] · SET DDNCTRL
+- [LST DDNCTRL](command/UDG/20.15.2/LST-DDNCTRL.md)
+- [SET DDNCTRL](command/UDG/20.15.2/SET-DDNCTRL.md)
 
 ## 证据
 

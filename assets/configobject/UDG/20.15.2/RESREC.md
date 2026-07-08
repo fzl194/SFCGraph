@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-RESREC]] · ADD RESREC
-- [[command/UDG/20.15.2/LST-RESREC]] · LST RESREC
-- [[command/UDG/20.15.2/MOD-RESREC]] · MOD RESREC
-- [[command/UDG/20.15.2/RMV-RESREC]] · RMV RESREC
+- [ADD RESREC](command/UDG/20.15.2/ADD-RESREC.md)
+- [LST RESREC](command/UDG/20.15.2/LST-RESREC.md)
+- [MOD RESREC](command/UDG/20.15.2/MOD-RESREC.md)
+- [RMV RESREC](command/UDG/20.15.2/RMV-RESREC.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SECAUTH]] · LST SECAUTH
-- [[command/UDG/20.15.2/SET-SECAUTH]] · SET SECAUTH
+- [LST SECAUTH](command/UDG/20.15.2/LST-SECAUTH.md)
+- [SET SECAUTH](command/UDG/20.15.2/SET-SECAUTH.md)
 
 ## 证据
 

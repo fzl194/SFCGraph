@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CCPTIMER]] · LST CCPTIMER
-- [[command/UNC/20.15.2/SET-CCPTIMER]] · SET CCPTIMER
+- [LST CCPTIMER](command/UNC/20.15.2/LST-CCPTIMER.md)
+- [SET CCPTIMER](command/UNC/20.15.2/SET-CCPTIMER.md)
 
 ## 证据
 

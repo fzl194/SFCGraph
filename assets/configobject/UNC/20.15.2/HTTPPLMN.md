@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTTPPLMN]] · LST HTTPPLMN
+- [LST HTTPPLMN](command/UNC/20.15.2/LST-HTTPPLMN.md)
 
 ## 证据
 

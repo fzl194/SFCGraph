@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-USER]] · ADD USER
-- [[command/UDG/20.15.2/MOD-USER]] · MOD USER
-- [[command/UDG/20.15.2/RMV-USER]] · RMV USER
+- [ADD USER](command/UDG/20.15.2/ADD-USER.md)
+- [MOD USER](command/UDG/20.15.2/MOD-USER.md)
+- [RMV USER](command/UDG/20.15.2/RMV-USER.md)
 
 ## 证据
 

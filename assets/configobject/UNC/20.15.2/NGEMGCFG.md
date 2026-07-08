@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGEMGCFG]] · ADD NGEMGCFG
-- [[command/UNC/20.15.2/LST-NGEMGCFG]] · LST NGEMGCFG
-- [[command/UNC/20.15.2/MOD-NGEMGCFG]] · MOD NGEMGCFG
-- [[command/UNC/20.15.2/RMV-NGEMGCFG]] · RMV NGEMGCFG
+- [ADD NGEMGCFG](command/UNC/20.15.2/ADD-NGEMGCFG.md)
+- [LST NGEMGCFG](command/UNC/20.15.2/LST-NGEMGCFG.md)
+- [MOD NGEMGCFG](command/UNC/20.15.2/MOD-NGEMGCFG.md)
+- [RMV NGEMGCFG](command/UNC/20.15.2/RMV-NGEMGCFG.md)
 
 ## 证据
 

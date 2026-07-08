@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/OPR-DBGDATA]] · OPR DBGDATA
+- [OPR DBGDATA](command/UNC/20.15.2/OPR-DBGDATA.md)
 
 ## 证据
 

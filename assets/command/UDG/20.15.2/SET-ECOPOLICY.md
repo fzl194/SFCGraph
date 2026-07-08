@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/ECOPOLICY]] · 全局的CPU调频和休眠策略（ECOPOLICY）
+- [全局的CPU调频和休眠策略（ECOPOLICY）](configobject/UDG/20.15.2/ECOPOLICY.md)
 
 ## 使用实例
 

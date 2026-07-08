@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CONNECT]] · 网元长连接信息（CONNECT）
+- [网元长连接信息（CONNECT）](configobject/UNC/20.15.2/CONNECT.md)
 
 ## 使用实例
 

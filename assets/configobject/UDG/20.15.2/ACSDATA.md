@@ -28,7 +28,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/CLR-ACSDATA]] · CLR ACSDATA
+- [CLR ACSDATA](command/UDG/20.15.2/CLR-ACSDATA.md)
 
 ## 证据
 

@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGAPLE]] · ADD NGAPLE
-- [[command/UNC/20.15.2/LST-NGAPLE]] · LST NGAPLE
-- [[command/UNC/20.15.2/MOD-NGAPLE]] · MOD NGAPLE
-- [[command/UNC/20.15.2/RMV-NGAPLE]] · RMV NGAPLE
+- [ADD NGAPLE](command/UNC/20.15.2/ADD-NGAPLE.md)
+- [LST NGAPLE](command/UNC/20.15.2/LST-NGAPLE.md)
+- [MOD NGAPLE](command/UNC/20.15.2/MOD-NGAPLE.md)
+- [RMV NGAPLE](command/UNC/20.15.2/RMV-NGAPLE.md)
 
 ## 证据
 

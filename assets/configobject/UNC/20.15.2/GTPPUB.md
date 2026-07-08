@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GTPPUB]] · LST GTPPUB
-- [[command/UNC/20.15.2/SET-GTPPUB]] · SET GTPPUB
+- [LST GTPPUB](command/UNC/20.15.2/LST-GTPPUB.md)
+- [SET GTPPUB](command/UNC/20.15.2/SET-GTPPUB.md)
 
 ## 证据
 

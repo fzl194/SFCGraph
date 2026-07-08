@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DYNDIAMAAA]] · DSP DYNDIAMAAA
+- [DSP DYNDIAMAAA](command/UNC/20.15.2/DSP-DYNDIAMAAA.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RUGROUPSWP]] · DSP RUGROUPSWP
+- [DSP RUGROUPSWP](command/UDG/20.15.2/DSP-RUGROUPSWP.md)
 
 ## 证据
 

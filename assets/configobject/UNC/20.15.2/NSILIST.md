@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NSILIST]] · ADD NSILIST
-- [[command/UNC/20.15.2/LST-NSILIST]] · LST NSILIST
-- [[command/UNC/20.15.2/RMV-NSILIST]] · RMV NSILIST
+- [ADD NSILIST](command/UNC/20.15.2/ADD-NSILIST.md)
+- [LST NSILIST](command/UNC/20.15.2/LST-NSILIST.md)
+- [RMV NSILIST](command/UNC/20.15.2/RMV-NSILIST.md)
 
 ## 证据
 

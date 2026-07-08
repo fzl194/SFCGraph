@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PFCPFIXEDFC]] · 指定PFCP消息类型固定速率流控信息（PFCPFIXEDFC）
+- [指定PFCP消息类型固定速率流控信息（PFCPFIXEDFC）](configobject/UNC/20.15.2/PFCPFIXEDFC.md)
 
 ## 使用实例
 

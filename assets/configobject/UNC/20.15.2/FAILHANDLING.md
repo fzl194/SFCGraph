@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-FAILHANDLING]] · SET FAILHANDLING
+- [SET FAILHANDLING](command/UNC/20.15.2/SET-FAILHANDLING.md)
 
 ## 证据
 

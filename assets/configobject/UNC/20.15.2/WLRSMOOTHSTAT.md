@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-WLRSMOOTHSTAT]] · DSP WLRSMOOTHSTAT
+- [DSP WLRSMOOTHSTAT](command/UNC/20.15.2/DSP-WLRSMOOTHSTAT.md)
 
 ## 证据
 

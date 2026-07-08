@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-NSSFIPSTAT]] · CLR NSSFIPSTAT
-- [[command/UNC/20.15.2/DSP-NSSFIPSTAT]] · DSP NSSFIPSTAT
+- [CLR NSSFIPSTAT](command/UNC/20.15.2/CLR-NSSFIPSTAT.md)
+- [DSP NSSFIPSTAT](command/UNC/20.15.2/DSP-NSSFIPSTAT.md)
 
 ## 证据
 

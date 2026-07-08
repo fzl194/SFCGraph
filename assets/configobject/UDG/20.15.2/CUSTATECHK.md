@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CUSTATECHK]] · LST CUSTATECHK
-- [[command/UDG/20.15.2/SET-CUSTATECHK]] · SET CUSTATECHK
+- [LST CUSTATECHK](command/UDG/20.15.2/LST-CUSTATECHK.md)
+- [SET CUSTATECHK](command/UDG/20.15.2/SET-CUSTATECHK.md)
 
 ## 证据
 

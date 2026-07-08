@@ -22,15 +22,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-URRGROUP]] · ADD URRGROUP
-- [[command/UDG/20.15.2/LST-URRGROUP]] · LST URRGROUP
-- [[command/UDG/20.15.2/MOD-URRGROUP]] · MOD URRGROUP
-- [[command/UDG/20.15.2/RMV-URRGROUP]] · RMV URRGROUP
+- [ADD URRGROUP](command/UDG/20.15.2/ADD-URRGROUP.md)
+- [LST URRGROUP](command/UDG/20.15.2/LST-URRGROUP.md)
+- [MOD URRGROUP](command/UDG/20.15.2/MOD-URRGROUP.md)
+- [RMV URRGROUP](command/UDG/20.15.2/RMV-URRGROUP.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/PCCPOLICYGRP]] · PCCPOLICYGRP
-- [[configobject/UDG/20.15.2/URR]] · URR
+- [PCCPOLICYGRP](configobject/UDG/20.15.2/PCCPOLICYGRP.md)
+- [URR](configobject/UDG/20.15.2/URR.md)
 
 ## 证据
 

@@ -28,7 +28,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DEA-UPCCTX]] · DEA UPCCTX
+- [DEA UPCCTX](command/UNC/20.15.2/DEA-UPCCTX.md)
 
 ## 证据
 

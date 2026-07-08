@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SMSCTX]] · DSP SMSCTX
-- [[command/UNC/20.15.2/RMV-SMSCTX]] · RMV SMSCTX
+- [DSP SMSCTX](command/UNC/20.15.2/DSP-SMSCTX.md)
+- [RMV SMSCTX](command/UNC/20.15.2/RMV-SMSCTX.md)
 
 ## 证据
 

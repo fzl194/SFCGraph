@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-LACPCFG]] · LST LACPCFG
+- [LST LACPCFG](command/UDG/20.15.2/LST-LACPCFG.md)
 
 ## 证据
 

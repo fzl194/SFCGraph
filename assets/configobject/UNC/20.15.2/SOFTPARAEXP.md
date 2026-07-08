@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SOFTPARAEXP]] · LST SOFTPARAEXP
-- [[command/UNC/20.15.2/SET-SOFTPARAEXP]] · SET SOFTPARAEXP
+- [LST SOFTPARAEXP](command/UNC/20.15.2/LST-SOFTPARAEXP.md)
+- [SET SOFTPARAEXP](command/UNC/20.15.2/SET-SOFTPARAEXP.md)
 
 ## 证据
 

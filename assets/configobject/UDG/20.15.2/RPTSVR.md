@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-RPTSVR]] · ADD RPTSVR
-- [[command/UDG/20.15.2/LST-RPTSVR]] · LST RPTSVR
-- [[command/UDG/20.15.2/MOD-RPTSVR]] · MOD RPTSVR
-- [[command/UDG/20.15.2/RMV-RPTSVR]] · RMV RPTSVR
+- [ADD RPTSVR](command/UDG/20.15.2/ADD-RPTSVR.md)
+- [LST RPTSVR](command/UDG/20.15.2/LST-RPTSVR.md)
+- [MOD RPTSVR](command/UDG/20.15.2/MOD-RPTSVR.md)
+- [RMV RPTSVR](command/UDG/20.15.2/RMV-RPTSVR.md)
 
 ## 证据
 

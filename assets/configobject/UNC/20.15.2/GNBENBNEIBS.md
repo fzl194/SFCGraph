@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GNBENBNEIBS]] · DSP GNBENBNEIBS
+- [DSP GNBENBNEIBS](command/UNC/20.15.2/DSP-GNBENBNEIBS.md)
 
 ## 证据
 

@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-USRTAIRANGEALL]] · RMV USRTAIRANGEALL
+- [RMV USRTAIRANGEALL](command/UNC/20.15.2/RMV-USRTAIRANGEALL.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFEBFDIRECV]] · DSP SFEBFDIRECV
+- [DSP SFEBFDIRECV](command/UDG/20.15.2/DSP-SFEBFDIRECV.md)
 
 ## 证据
 

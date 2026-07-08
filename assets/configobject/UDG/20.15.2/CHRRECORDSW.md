@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CHRRECORDSW]] · LST CHRRECORDSW
-- [[command/UDG/20.15.2/SET-CHRRECORDSW]] · SET CHRRECORDSW
+- [LST CHRRECORDSW](command/UDG/20.15.2/LST-CHRRECORDSW.md)
+- [SET CHRRECORDSW](command/UDG/20.15.2/SET-CHRRECORDSW.md)
 
 ## 证据
 

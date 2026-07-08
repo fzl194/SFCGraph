@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IUSUBRRLST]] · Iu模式用户漫游限制列表（IUSUBRRLST）
+- [Iu模式用户漫游限制列表（IUSUBRRLST）](configobject/UNC/20.15.2/IUSUBRRLST.md)
 
 ## 使用实例
 

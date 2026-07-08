@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-BGPASSTATS]] · DSP BGPASSTATS
+- [DSP BGPASSTATS](command/UDG/20.15.2/DSP-BGPASSTATS.md)
 
 ## 证据
 

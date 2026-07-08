@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-NGRANNEIBS]] · CLR NGRANNEIBS
-- [[command/UNC/20.15.2/DSP-NGRANNEIBS]] · DSP NGRANNEIBS
+- [CLR NGRANNEIBS](command/UNC/20.15.2/CLR-NGRANNEIBS.md)
+- [DSP NGRANNEIBS](command/UNC/20.15.2/DSP-NGRANNEIBS.md)
 
 ## 证据
 

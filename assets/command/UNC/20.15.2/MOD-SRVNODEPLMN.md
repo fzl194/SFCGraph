@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SRVNODEPLMN]] · SGSN/SGW/PGW地址段和PLMN标识之间的映射关系（SRVNODEPLMN）
+- [SGSN/SGW/PGW地址段和PLMN标识之间的映射关系（SRVNODEPLMN）](configobject/UNC/20.15.2/SRVNODEPLMN.md)
 
 ## 使用实例
 

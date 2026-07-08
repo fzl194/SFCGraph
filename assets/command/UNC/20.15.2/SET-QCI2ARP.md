@@ -66,7 +66,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/QCI2ARP]] · 标准QCI到ARP的映射规则（QCI2ARP）
+- [标准QCI到ARP的映射规则（QCI2ARP）](configobject/UNC/20.15.2/QCI2ARP.md)
 
 ## 使用实例
 

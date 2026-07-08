@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PFCPSESSIONNUM]] · DSP PFCPSESSIONNUM
+- [DSP PFCPSESSIONNUM](command/UNC/20.15.2/DSP-PFCPSESSIONNUM.md)
 
 ## 证据
 

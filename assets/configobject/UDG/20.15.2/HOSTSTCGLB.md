@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HOSTSTCGLB]] · LST HOSTSTCGLB
-- [[command/UDG/20.15.2/SET-HOSTSTCGLB]] · SET HOSTSTCGLB
+- [LST HOSTSTCGLB](command/UDG/20.15.2/LST-HOSTSTCGLB.md)
+- [SET HOSTSTCGLB](command/UDG/20.15.2/SET-HOSTSTCGLB.md)
 
 ## 证据
 

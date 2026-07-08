@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTTPCONF]] · LST HTTPCONF
-- [[command/UNC/20.15.2/SET-HTTPCONF]] · SET HTTPCONF
+- [LST HTTPCONF](command/UNC/20.15.2/LST-HTTPCONF.md)
+- [SET HTTPCONF](command/UNC/20.15.2/SET-HTTPCONF.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-R8QOSMAP]] · LST R8QOSMAP
-- [[command/UNC/20.15.2/SET-R8QOSMAP]] · SET R8QOSMAP
+- [LST R8QOSMAP](command/UNC/20.15.2/LST-R8QOSMAP.md)
+- [SET R8QOSMAP](command/UNC/20.15.2/SET-R8QOSMAP.md)
 
 ## 证据
 

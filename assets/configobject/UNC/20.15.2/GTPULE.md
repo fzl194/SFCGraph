@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GTPULE]] · ADD GTPULE
-- [[command/UNC/20.15.2/LST-GTPULE]] · LST GTPULE
-- [[command/UNC/20.15.2/MOD-GTPULE]] · MOD GTPULE
-- [[command/UNC/20.15.2/RMV-GTPULE]] · RMV GTPULE
+- [ADD GTPULE](command/UNC/20.15.2/ADD-GTPULE.md)
+- [LST GTPULE](command/UNC/20.15.2/LST-GTPULE.md)
+- [MOD GTPULE](command/UNC/20.15.2/MOD-GTPULE.md)
+- [RMV GTPULE](command/UNC/20.15.2/RMV-GTPULE.md)
 
 ## 证据
 

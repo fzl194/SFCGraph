@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ALLOWEDPLMN]] · NF或NF服务支持的PLMN（ALLOWEDPLMN）
+- [NF或NF服务支持的PLMN（ALLOWEDPLMN）](configobject/UNC/20.15.2/ALLOWEDPLMN.md)
 
 ## 使用实例
 

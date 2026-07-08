@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ROUTEPOLICYINFO]] · DSP ROUTEPOLICYINFO
+- [DSP ROUTEPOLICYINFO](command/UNC/20.15.2/DSP-ROUTEPOLICYINFO.md)
 
 ## 证据
 

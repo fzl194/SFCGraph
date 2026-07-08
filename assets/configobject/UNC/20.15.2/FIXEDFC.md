@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FIXEDFC]] · DSP FIXEDFC
-- [[command/UNC/20.15.2/LST-FIXEDFC]] · LST FIXEDFC
-- [[command/UNC/20.15.2/SET-FIXEDFC]] · SET FIXEDFC
+- [DSP FIXEDFC](command/UNC/20.15.2/DSP-FIXEDFC.md)
+- [LST FIXEDFC](command/UNC/20.15.2/LST-FIXEDFC.md)
+- [SET FIXEDFC](command/UNC/20.15.2/SET-FIXEDFC.md)
 
 ## 证据
 

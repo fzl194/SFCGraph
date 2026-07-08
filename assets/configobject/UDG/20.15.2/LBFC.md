@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-LBFC]] · LST LBFC
-- [[command/UDG/20.15.2/SET-LBFC]] · SET LBFC
+- [LST LBFC](command/UDG/20.15.2/LST-LBFC.md)
+- [SET LBFC](command/UDG/20.15.2/SET-LBFC.md)
 
 ## 证据
 

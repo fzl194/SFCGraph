@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DNNCMPT]] · LST DNNCMPT
-- [[command/UNC/20.15.2/SET-DNNCMPT]] · SET DNNCMPT
+- [LST DNNCMPT](command/UNC/20.15.2/LST-DNNCMPT.md)
+- [SET DNNCMPT](command/UNC/20.15.2/SET-DNNCMPT.md)
 
 ## 证据
 

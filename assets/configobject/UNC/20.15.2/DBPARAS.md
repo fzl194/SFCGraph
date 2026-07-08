@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DBPARAS]] · LST DBPARAS
-- [[command/UNC/20.15.2/SET-DBPARAS]] · SET DBPARAS
+- [LST DBPARAS](command/UNC/20.15.2/LST-DBPARAS.md)
+- [SET DBPARAS](command/UNC/20.15.2/SET-DBPARAS.md)
 
 ## 证据
 

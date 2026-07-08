@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RDTTRCTASK]] · DSP RDTTRCTASK
+- [DSP RDTTRCTASK](command/UNC/20.15.2/DSP-RDTTRCTASK.md)
 
 ## 证据
 

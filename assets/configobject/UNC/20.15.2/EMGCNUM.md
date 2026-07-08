@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-EMGCNUM]] · ADD EMGCNUM
-- [[command/UNC/20.15.2/LST-EMGCNUM]] · LST EMGCNUM
-- [[command/UNC/20.15.2/RMV-EMGCNUM]] · RMV EMGCNUM
+- [ADD EMGCNUM](command/UNC/20.15.2/ADD-EMGCNUM.md)
+- [LST EMGCNUM](command/UNC/20.15.2/LST-EMGCNUM.md)
+- [RMV EMGCNUM](command/UNC/20.15.2/RMV-EMGCNUM.md)
 
 ## 证据
 

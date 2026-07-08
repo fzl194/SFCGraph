@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SFELBHASH]] · IP转发负载分担hash计算模式（SFELBHASH）
+- [IP转发负载分担hash计算模式（SFELBHASH）](configobject/UNC/20.15.2/SFELBHASH.md)
 
 ## 使用实例
 

@@ -20,10 +20,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/CMT-MMLTRAN]] · CMT MMLTRAN
-- [[command/UDG/20.15.2/CNL-MMLTRAN]] · CNL MMLTRAN
-- [[command/UDG/20.15.2/STP-MMLTRAN]] · STP MMLTRAN
-- [[command/UDG/20.15.2/STR-MMLTRAN]] · STR MMLTRAN
+- [CMT MMLTRAN](command/UDG/20.15.2/CMT-MMLTRAN.md)
+- [CNL MMLTRAN](command/UDG/20.15.2/CNL-MMLTRAN.md)
+- [STP MMLTRAN](command/UDG/20.15.2/STP-MMLTRAN.md)
+- [STR MMLTRAN](command/UDG/20.15.2/STR-MMLTRAN.md)
 
 ## 证据
 

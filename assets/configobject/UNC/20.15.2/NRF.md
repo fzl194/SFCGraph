@@ -27,11 +27,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRF]] · ADD NRF
-- [[command/UNC/20.15.2/LST-NRF]] · LST NRF
-- [[command/UNC/20.15.2/MOD-NRF]] · MOD NRF
-- [[command/UNC/20.15.2/RMV-NRF]] · RMV NRF
-- [[command/UNC/20.15.2/TST-NRF]] · TST NRF
+- [ADD NRF](command/UNC/20.15.2/ADD-NRF.md)
+- [LST NRF](command/UNC/20.15.2/LST-NRF.md)
+- [MOD NRF](command/UNC/20.15.2/MOD-NRF.md)
+- [RMV NRF](command/UNC/20.15.2/RMV-NRF.md)
+- [TST NRF](command/UNC/20.15.2/TST-NRF.md)
 
 ## 证据
 

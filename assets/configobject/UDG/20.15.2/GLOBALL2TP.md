@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-GLOBALL2TP]] · LST GLOBALL2TP
-- [[command/UDG/20.15.2/SET-GLOBALL2TP]] · SET GLOBALL2TP
+- [LST GLOBALL2TP](command/UDG/20.15.2/LST-GLOBALL2TP.md)
+- [SET GLOBALL2TP](command/UDG/20.15.2/SET-GLOBALL2TP.md)
 
 ## 证据
 

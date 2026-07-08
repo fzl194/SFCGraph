@@ -181,7 +181,7 @@ NON_3GPP_ACCESS = 2。
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/TST-NFDISC]] · TST NFDISC
+- [TST NFDISC](command/UNC/20.15.2/TST-NFDISC.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSSCHTHREADFIX]] · DSP MSSSCHTHREADFIX
+- [DSP MSSSCHTHREADFIX](command/UNC/20.15.2/DSP-MSSSCHTHREADFIX.md)
 
 ## 证据
 

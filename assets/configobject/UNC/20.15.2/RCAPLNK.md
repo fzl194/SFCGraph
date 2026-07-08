@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RCAPLNK]] · ADD RCAPLNK
-- [[command/UNC/20.15.2/DSP-RCAPLNK]] · DSP RCAPLNK
-- [[command/UNC/20.15.2/LST-RCAPLNK]] · LST RCAPLNK
-- [[command/UNC/20.15.2/MOD-RCAPLNK]] · MOD RCAPLNK
-- [[command/UNC/20.15.2/RMV-RCAPLNK]] · RMV RCAPLNK
+- [ADD RCAPLNK](command/UNC/20.15.2/ADD-RCAPLNK.md)
+- [DSP RCAPLNK](command/UNC/20.15.2/DSP-RCAPLNK.md)
+- [LST RCAPLNK](command/UNC/20.15.2/LST-RCAPLNK.md)
+- [MOD RCAPLNK](command/UNC/20.15.2/MOD-RCAPLNK.md)
+- [RMV RCAPLNK](command/UNC/20.15.2/RMV-RCAPLNK.md)
 
 ## 证据
 

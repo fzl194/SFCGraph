@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-OFFLOADBYRNC]] · STR OFFLOADBYRNC
+- [STR OFFLOADBYRNC](command/UNC/20.15.2/STR-OFFLOADBYRNC.md)
 
 ## 证据
 

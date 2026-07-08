@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/STP-PATHSTST]] · STP PATHSTST
-- [[command/UDG/20.15.2/STR-PATHSTST]] · STR PATHSTST
+- [STP PATHSTST](command/UDG/20.15.2/STP-PATHSTST.md)
+- [STR PATHSTST](command/UDG/20.15.2/STR-PATHSTST.md)
 
 ## 证据
 

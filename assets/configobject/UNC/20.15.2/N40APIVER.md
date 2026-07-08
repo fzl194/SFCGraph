@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-N40APIVER]] · LST N40APIVER
-- [[command/UNC/20.15.2/SET-N40APIVER]] · SET N40APIVER
+- [LST N40APIVER](command/UNC/20.15.2/LST-N40APIVER.md)
+- [SET N40APIVER](command/UNC/20.15.2/SET-N40APIVER.md)
 
 ## 证据
 

@@ -17,16 +17,16 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-IPBINDVPN]] · ADD IPBINDVPN
-- [[command/UDG/20.15.2/LST-IPBINDVPN]] · LST IPBINDVPN
-- [[command/UDG/20.15.2/MOD-IPBINDVPN]] · MOD IPBINDVPN
-- [[command/UDG/20.15.2/RMV-IPBINDVPN]] · RMV IPBINDVPN
+- [ADD IPBINDVPN](command/UDG/20.15.2/ADD-IPBINDVPN.md)
+- [LST IPBINDVPN](command/UDG/20.15.2/LST-IPBINDVPN.md)
+- [MOD IPBINDVPN](command/UDG/20.15.2/MOD-IPBINDVPN.md)
+- [RMV IPBINDVPN](command/UDG/20.15.2/RMV-IPBINDVPN.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/GRETUNNEL]] · GRETUNNEL
-- [[configobject/UDG/20.15.2/INTERFACE]] · INTERFACE
-- [[configobject/UDG/20.15.2/L3VPNINST]] · L3VPNINST
+- [GRETUNNEL](configobject/UDG/20.15.2/GRETUNNEL.md)
+- [INTERFACE](configobject/UDG/20.15.2/INTERFACE.md)
+- [L3VPNINST](configobject/UDG/20.15.2/L3VPNINST.md)
 
 ## 证据
 

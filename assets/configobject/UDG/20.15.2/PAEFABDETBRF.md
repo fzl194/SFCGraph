@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAEFABDETBRF]] · DSP PAEFABDETBRF
+- [DSP PAEFABDETBRF](command/UDG/20.15.2/DSP-PAEFABDETBRF.md)
 
 ## 证据
 

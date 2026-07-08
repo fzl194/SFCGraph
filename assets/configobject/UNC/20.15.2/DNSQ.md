@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DNSQ]] · ADD DNSQ
-- [[command/UNC/20.15.2/LST-DNSQ]] · LST DNSQ
-- [[command/UNC/20.15.2/MOD-DNSQ]] · MOD DNSQ
-- [[command/UNC/20.15.2/RMV-DNSQ]] · RMV DNSQ
+- [ADD DNSQ](command/UNC/20.15.2/ADD-DNSQ.md)
+- [LST DNSQ](command/UNC/20.15.2/LST-DNSQ.md)
+- [MOD DNSQ](command/UNC/20.15.2/MOD-DNSQ.md)
+- [RMV DNSQ](command/UNC/20.15.2/RMV-DNSQ.md)
 
 ## 证据
 

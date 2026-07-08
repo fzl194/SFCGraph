@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QOSCTRL]] · LST QOSCTRL
-- [[command/UNC/20.15.2/SET-QOSCTRL]] · SET QOSCTRL
+- [LST QOSCTRL](command/UNC/20.15.2/LST-QOSCTRL.md)
+- [SET QOSCTRL](command/UNC/20.15.2/SET-QOSCTRL.md)
 
 ## 证据
 

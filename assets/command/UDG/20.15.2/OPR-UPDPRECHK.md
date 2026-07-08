@@ -45,7 +45,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/UPDPRECHK]] · 升级前检查（UPDPRECHK）
+- [升级前检查（UPDPRECHK）](configobject/UDG/20.15.2/UPDPRECHK.md)
 
 ## 使用实例
 

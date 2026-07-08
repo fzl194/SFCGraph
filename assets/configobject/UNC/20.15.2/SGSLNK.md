@@ -21,13 +21,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-SGSLNK]] · ACT SGSLNK
-- [[command/UNC/20.15.2/ADD-SGSLNK]] · ADD SGSLNK
-- [[command/UNC/20.15.2/DEA-SGSLNK]] · DEA SGSLNK
-- [[command/UNC/20.15.2/DSP-SGSLNK]] · DSP SGSLNK
-- [[command/UNC/20.15.2/LST-SGSLNK]] · LST SGSLNK
-- [[command/UNC/20.15.2/MOD-SGSLNK]] · MOD SGSLNK
-- [[command/UNC/20.15.2/RMV-SGSLNK]] · RMV SGSLNK
+- [ACT SGSLNK](command/UNC/20.15.2/ACT-SGSLNK.md)
+- [ADD SGSLNK](command/UNC/20.15.2/ADD-SGSLNK.md)
+- [DEA SGSLNK](command/UNC/20.15.2/DEA-SGSLNK.md)
+- [DSP SGSLNK](command/UNC/20.15.2/DSP-SGSLNK.md)
+- [LST SGSLNK](command/UNC/20.15.2/LST-SGSLNK.md)
+- [MOD SGSLNK](command/UNC/20.15.2/MOD-SGSLNK.md)
+- [RMV SGSLNK](command/UNC/20.15.2/RMV-SGSLNK.md)
 
 ## 证据
 

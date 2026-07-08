@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SBITCPPARA]] · LST SBITCPPARA
-- [[command/UNC/20.15.2/SET-SBITCPPARA]] · SET SBITCPPARA
+- [LST SBITCPPARA](command/UNC/20.15.2/LST-SBITCPPARA.md)
+- [SET SBITCPPARA](command/UNC/20.15.2/SET-SBITCPPARA.md)
 
 ## 证据
 

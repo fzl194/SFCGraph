@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/INH-REGNF]] · INH REGNF
-- [[command/UNC/20.15.2/UIN-REGNF]] · UIN REGNF
+- [INH REGNF](command/UNC/20.15.2/INH-REGNF.md)
+- [UIN REGNF](command/UNC/20.15.2/UIN-REGNF.md)
 
 ## 证据
 

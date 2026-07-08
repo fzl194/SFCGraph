@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DBTBL]] · DSP DBTBL
+- [DSP DBTBL](command/UNC/20.15.2/DSP-DBTBL.md)
 
 ## 证据
 

@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NCSSYNCFULL]] · 全量同步操作的诊断信息（NCSSYNCFULL）
+- [全量同步操作的诊断信息（NCSSYNCFULL）](configobject/UDG/20.15.2/NCSSYNCFULL.md)
 
 ## 使用实例
 

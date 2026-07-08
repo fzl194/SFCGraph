@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TIME]] · DSP TIME
-- [[command/UDG/20.15.2/SET-TIME]] · SET TIME
+- [DSP TIME](command/UDG/20.15.2/DSP-TIME.md)
+- [SET TIME](command/UDG/20.15.2/SET-TIME.md)
 
 ## 证据
 

@@ -25,8 +25,8 @@ GB OVER IP自动配置功能开启后再关闭有可能影响业务。
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GB]] · LST GB
-- [[command/UNC/20.15.2/SET-GB]] · SET GB
+- [LST GB](command/UNC/20.15.2/LST-GB.md)
+- [SET GB](command/UNC/20.15.2/SET-GB.md)
 
 ## 证据
 

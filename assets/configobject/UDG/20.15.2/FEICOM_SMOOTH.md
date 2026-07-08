@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/STR-FEICOM_SMOOTH]] · STR FEICOM_SMOOTH
+- [STR FEICOM_SMOOTH](command/UDG/20.15.2/STR-FEICOM_SMOOTH.md)
 
 ## 证据
 

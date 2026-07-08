@@ -37,8 +37,8 @@ HTR功能提供如下配置功能：
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTR]] · LST HTR
-- [[command/UNC/20.15.2/SET-HTR]] · SET HTR
+- [LST HTR](command/UNC/20.15.2/LST-HTR.md)
+- [SET HTR](command/UNC/20.15.2/SET-HTR.md)
 
 ## 证据
 

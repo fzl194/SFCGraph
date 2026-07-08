@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SRROUTE]] · ADD SRROUTE
-- [[command/UNC/20.15.2/DSP-SRROUTE]] · DSP SRROUTE
-- [[command/UNC/20.15.2/LST-SRROUTE]] · LST SRROUTE
-- [[command/UNC/20.15.2/MOD-SRROUTE]] · MOD SRROUTE
-- [[command/UNC/20.15.2/RMV-SRROUTE]] · RMV SRROUTE
+- [ADD SRROUTE](command/UNC/20.15.2/ADD-SRROUTE.md)
+- [DSP SRROUTE](command/UNC/20.15.2/DSP-SRROUTE.md)
+- [LST SRROUTE](command/UNC/20.15.2/LST-SRROUTE.md)
+- [MOD SRROUTE](command/UNC/20.15.2/MOD-SRROUTE.md)
+- [RMV SRROUTE](command/UNC/20.15.2/RMV-SRROUTE.md)
 
 ## 证据
 

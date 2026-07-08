@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OPSASSISTVERB]] · DSP OPSASSISTVERB
+- [DSP OPSASSISTVERB](command/UNC/20.15.2/DSP-OPSASSISTVERB.md)
 
 ## 证据
 

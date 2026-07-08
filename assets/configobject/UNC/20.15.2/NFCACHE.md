@@ -30,8 +30,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-NFCACHE]] · CLR NFCACHE
-- [[command/UNC/20.15.2/DSP-NFCACHE]] · DSP NFCACHE
+- [CLR NFCACHE](command/UNC/20.15.2/CLR-NFCACHE.md)
+- [DSP NFCACHE](command/UNC/20.15.2/DSP-NFCACHE.md)
 
 ## 证据
 

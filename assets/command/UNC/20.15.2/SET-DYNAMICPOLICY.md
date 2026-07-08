@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DYNAMICPOLICY]] · 服务类型分配动态权重的管理策略（DYNAMICPOLICY）
+- [服务类型分配动态权重的管理策略（DYNAMICPOLICY）](configobject/UNC/20.15.2/DYNAMICPOLICY.md)
 
 ## 使用实例
 

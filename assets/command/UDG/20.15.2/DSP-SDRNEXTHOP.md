@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SDRNEXTHOP]] · SDRC中缓存的下一跳信息（SDRNEXTHOP）
+- [SDRC中缓存的下一跳信息（SDRNEXTHOP）](configobject/UDG/20.15.2/SDRNEXTHOP.md)
 
 ## 使用实例
 

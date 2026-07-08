@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SECALG]] · LST SECALG
-- [[command/UNC/20.15.2/SET-SECALG]] · SET SECALG
+- [LST SECALG](command/UNC/20.15.2/LST-SECALG.md)
+- [SET SECALG](command/UNC/20.15.2/SET-SECALG.md)
 
 ## 证据
 

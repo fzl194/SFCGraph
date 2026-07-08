@@ -21,18 +21,18 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SRROUTE]] · ADD SRROUTE
-- [[command/UDG/20.15.2/DSP-SRROUTE]] · DSP SRROUTE
-- [[command/UDG/20.15.2/LST-SRROUTE]] · LST SRROUTE
-- [[command/UDG/20.15.2/MOD-SRROUTE]] · MOD SRROUTE
-- [[command/UDG/20.15.2/RMV-SRROUTE]] · RMV SRROUTE
+- [ADD SRROUTE](command/UDG/20.15.2/ADD-SRROUTE.md)
+- [DSP SRROUTE](command/UDG/20.15.2/DSP-SRROUTE.md)
+- [LST SRROUTE](command/UDG/20.15.2/LST-SRROUTE.md)
+- [MOD SRROUTE](command/UDG/20.15.2/MOD-SRROUTE.md)
+- [RMV SRROUTE](command/UDG/20.15.2/RMV-SRROUTE.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/BFDSESSION]] · BFDSESSION
-- [[configobject/UDG/20.15.2/GRETUNNEL]] · GRETUNNEL
-- [[configobject/UDG/20.15.2/INTERFACE]] · INTERFACE
-- [[configobject/UDG/20.15.2/L3VPNINST]] · L3VPNINST
+- [BFDSESSION](configobject/UDG/20.15.2/BFDSESSION.md)
+- [GRETUNNEL](configobject/UDG/20.15.2/GRETUNNEL.md)
+- [INTERFACE](configobject/UDG/20.15.2/INTERFACE.md)
+- [L3VPNINST](configobject/UDG/20.15.2/L3VPNINST.md)
 
 ## 证据
 

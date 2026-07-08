@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ULD-PUBCFGFILE]] · ULD PUBCFGFILE
+- [ULD PUBCFGFILE](command/UDG/20.15.2/ULD-PUBCFGFILE.md)
 
 ## 证据
 

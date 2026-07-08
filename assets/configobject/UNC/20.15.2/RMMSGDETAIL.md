@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RMMSGDETAIL]] · DSP RMMSGDETAIL
+- [DSP RMMSGDETAIL](command/UNC/20.15.2/DSP-RMMSGDETAIL.md)
 
 ## 证据
 

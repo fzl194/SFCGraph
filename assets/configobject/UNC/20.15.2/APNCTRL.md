@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNCTRL]] · ADD APNCTRL
-- [[command/UNC/20.15.2/LST-APNCTRL]] · LST APNCTRL
-- [[command/UNC/20.15.2/MOD-APNCTRL]] · MOD APNCTRL
-- [[command/UNC/20.15.2/RMV-APNCTRL]] · RMV APNCTRL
+- [ADD APNCTRL](command/UNC/20.15.2/ADD-APNCTRL.md)
+- [LST APNCTRL](command/UNC/20.15.2/LST-APNCTRL.md)
+- [MOD APNCTRL](command/UNC/20.15.2/MOD-APNCTRL.md)
+- [RMV APNCTRL](command/UNC/20.15.2/RMV-APNCTRL.md)
 
 ## 证据
 

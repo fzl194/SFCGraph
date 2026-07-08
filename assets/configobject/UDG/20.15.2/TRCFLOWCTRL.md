@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TRCFLOWCTRL]] · DSP TRCFLOWCTRL
+- [DSP TRCFLOWCTRL](command/UDG/20.15.2/DSP-TRCFLOWCTRL.md)
 
 ## 证据
 

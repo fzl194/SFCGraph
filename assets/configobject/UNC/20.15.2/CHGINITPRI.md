@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHGINITPRI]] · LST CHGINITPRI
-- [[command/UNC/20.15.2/SET-CHGINITPRI]] · SET CHGINITPRI
+- [LST CHGINITPRI](command/UNC/20.15.2/LST-CHGINITPRI.md)
+- [SET CHGINITPRI](command/UNC/20.15.2/SET-CHGINITPRI.md)
 
 ## 证据
 

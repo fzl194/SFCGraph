@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LOGAGENTSTC]] · DSP LOGAGENTSTC
-- [[command/UNC/20.15.2/RTR-LOGAGENTSTC]] · RTR LOGAGENTSTC
+- [DSP LOGAGENTSTC](command/UNC/20.15.2/DSP-LOGAGENTSTC.md)
+- [RTR LOGAGENTSTC](command/UNC/20.15.2/RTR-LOGAGENTSTC.md)
 
 ## 证据
 

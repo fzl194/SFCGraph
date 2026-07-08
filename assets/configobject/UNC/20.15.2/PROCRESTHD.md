@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-PROCRESTHD]] · SET PROCRESTHD
+- [SET PROCRESTHD](command/UNC/20.15.2/SET-PROCRESTHD.md)
 
 ## 证据
 

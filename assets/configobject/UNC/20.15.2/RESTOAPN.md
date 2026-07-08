@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RESTOAPN]] · ADD RESTOAPN
-- [[command/UNC/20.15.2/LST-RESTOAPN]] · LST RESTOAPN
-- [[command/UNC/20.15.2/RMV-RESTOAPN]] · RMV RESTOAPN
+- [ADD RESTOAPN](command/UNC/20.15.2/ADD-RESTOAPN.md)
+- [LST RESTOAPN](command/UNC/20.15.2/LST-RESTOAPN.md)
+- [RMV RESTOAPN](command/UNC/20.15.2/RMV-RESTOAPN.md)
 
 ## 证据
 

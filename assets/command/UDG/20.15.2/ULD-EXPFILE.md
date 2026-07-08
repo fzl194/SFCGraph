@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/EXPFILE]] · 上传导出文件（EXPFILE）
+- [上传导出文件（EXPFILE）](configobject/UDG/20.15.2/EXPFILE.md)
 
 ## 使用实例
 

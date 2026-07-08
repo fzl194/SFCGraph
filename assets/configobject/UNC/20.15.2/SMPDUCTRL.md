@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMPDUCTRL]] · LST SMPDUCTRL
-- [[command/UNC/20.15.2/SET-SMPDUCTRL]] · SET SMPDUCTRL
+- [LST SMPDUCTRL](command/UNC/20.15.2/LST-SMPDUCTRL.md)
+- [SET SMPDUCTRL](command/UNC/20.15.2/SET-SMPDUCTRL.md)
 
 ## 证据
 

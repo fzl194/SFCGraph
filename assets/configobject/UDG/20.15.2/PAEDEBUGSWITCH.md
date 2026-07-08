@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/SET-PAEDEBUGSWITCH]] · SET PAEDEBUGSWITCH
+- [SET PAEDEBUGSWITCH](command/UDG/20.15.2/SET-PAEDEBUGSWITCH.md)
 
 ## 证据
 

@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CNTCPUSTAT]] · DSP CNTCPUSTAT
+- [DSP CNTCPUSTAT](command/UDG/20.15.2/DSP-CNTCPUSTAT.md)
 
 ## 证据
 

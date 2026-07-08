@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RADIUSCLIENTIP]] · Radius Group Client IP接口（RADIUSCLIENTIP）
+- [Radius Group Client IP接口（RADIUSCLIENTIP）](configobject/UNC/20.15.2/RADIUSCLIENTIP.md)
 
 ## 使用实例
 

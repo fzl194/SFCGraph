@@ -42,7 +42,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/KEYPAIRLABEL]] · 创建DSA/ECC密钥对标签（KEYPAIRLABEL）
+- [创建DSA/ECC密钥对标签（KEYPAIRLABEL）](configobject/UDG/20.15.2/KEYPAIRLABEL.md)
 
 ## 使用实例
 

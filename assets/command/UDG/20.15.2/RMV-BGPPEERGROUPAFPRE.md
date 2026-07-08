@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BGPPEERGROUPAFPRE]] · BGP对等体组条件路由匹配前缀（BGPPEERGROUPAFPRE）
+- [BGP对等体组条件路由匹配前缀（BGPPEERGROUPAFPRE）](configobject/UDG/20.15.2/BGPPEERGROUPAFPRE.md)
 
 ## 使用实例
 

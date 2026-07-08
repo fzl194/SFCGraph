@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-L2TPKEY]] · LST L2TPKEY
-- [[command/UNC/20.15.2/SET-L2TPKEY]] · SET L2TPKEY
+- [LST L2TPKEY](command/UNC/20.15.2/LST-L2TPKEY.md)
+- [SET L2TPKEY](command/UNC/20.15.2/SET-L2TPKEY.md)
 
 ## 证据
 

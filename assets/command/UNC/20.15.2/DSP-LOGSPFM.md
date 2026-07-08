@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LOGSPFM]] · 日志中心性能统计信息（LOGSPFM）
+- [日志中心性能统计信息（LOGSPFM）](configobject/UNC/20.15.2/LOGSPFM.md)
 
 ## 使用实例
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OMSWITCH]] · LST OMSWITCH
-- [[command/UNC/20.15.2/SET-OMSWITCH]] · SET OMSWITCH
+- [LST OMSWITCH](command/UNC/20.15.2/LST-OMSWITCH.md)
+- [SET OMSWITCH](command/UNC/20.15.2/SET-OMSWITCH.md)
 
 ## 证据
 

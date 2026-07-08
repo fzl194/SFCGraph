@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMSBACKUPSW]] · LST SMSBACKUPSW
-- [[command/UNC/20.15.2/SET-SMSBACKUPSW]] · SET SMSBACKUPSW
+- [LST SMSBACKUPSW](command/UNC/20.15.2/LST-SMSBACKUPSW.md)
+- [SET SMSBACKUPSW](command/UNC/20.15.2/SET-SMSBACKUPSW.md)
 
 ## 证据
 

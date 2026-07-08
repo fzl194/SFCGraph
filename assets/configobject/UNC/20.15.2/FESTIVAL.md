@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-FESTIVAL]] · ADD FESTIVAL
-- [[command/UNC/20.15.2/LST-FESTIVAL]] · LST FESTIVAL
-- [[command/UNC/20.15.2/RMV-FESTIVAL]] · RMV FESTIVAL
+- [ADD FESTIVAL](command/UNC/20.15.2/ADD-FESTIVAL.md)
+- [LST FESTIVAL](command/UNC/20.15.2/LST-FESTIVAL.md)
+- [RMV FESTIVAL](command/UNC/20.15.2/RMV-FESTIVAL.md)
 
 ## 证据
 

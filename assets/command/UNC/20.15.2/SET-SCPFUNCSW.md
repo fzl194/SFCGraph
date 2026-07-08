@@ -96,7 +96,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SCPFUNCSW]] · 间接路由功能（SCPFUNCSW）
+- [间接路由功能（SCPFUNCSW）](configobject/UNC/20.15.2/SCPFUNCSW.md)
 
 ## 使用实例
 

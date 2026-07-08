@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SDRSTOKEN]] · DSP SDRSTOKEN
+- [DSP SDRSTOKEN](command/UNC/20.15.2/DSP-SDRSTOKEN.md)
 
 ## 证据
 

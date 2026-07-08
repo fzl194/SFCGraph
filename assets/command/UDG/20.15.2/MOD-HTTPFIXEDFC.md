@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/HTTPFIXEDFC]] · HTTP流控组固定速率流控信息（HTTPFIXEDFC）
+- [HTTP流控组固定速率流控信息（HTTPFIXEDFC）](configobject/UDG/20.15.2/HTTPFIXEDFC.md)
 
 ## 使用实例
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ESM]] · LST ESM
-- [[command/UNC/20.15.2/SET-ESM]] · SET ESM
+- [LST ESM](command/UNC/20.15.2/LST-ESM.md)
+- [SET ESM](command/UNC/20.15.2/SET-ESM.md)
 
 ## 证据
 

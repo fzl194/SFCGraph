@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNNI]] · ADD APNNI
-- [[command/UNC/20.15.2/LST-APNNI]] · LST APNNI
-- [[command/UNC/20.15.2/RMV-APNNI]] · RMV APNNI
+- [ADD APNNI](command/UNC/20.15.2/ADD-APNNI.md)
+- [LST APNNI](command/UNC/20.15.2/LST-APNNI.md)
+- [RMV APNNI](command/UNC/20.15.2/RMV-APNNI.md)
 
 ## 证据
 

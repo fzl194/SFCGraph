@@ -25,13 +25,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCCPDPC]] · ADD SCCPDPC
-- [[command/UNC/20.15.2/DSP-SCCPDPC]] · DSP SCCPDPC
-- [[command/UNC/20.15.2/INH-SCCPDPC]] · INH SCCPDPC
-- [[command/UNC/20.15.2/LST-SCCPDPC]] · LST SCCPDPC
-- [[command/UNC/20.15.2/MOD-SCCPDPC]] · MOD SCCPDPC
-- [[command/UNC/20.15.2/RMV-SCCPDPC]] · RMV SCCPDPC
-- [[command/UNC/20.15.2/UIN-SCCPDPC]] · UIN SCCPDPC
+- [ADD SCCPDPC](command/UNC/20.15.2/ADD-SCCPDPC.md)
+- [DSP SCCPDPC](command/UNC/20.15.2/DSP-SCCPDPC.md)
+- [INH SCCPDPC](command/UNC/20.15.2/INH-SCCPDPC.md)
+- [LST SCCPDPC](command/UNC/20.15.2/LST-SCCPDPC.md)
+- [MOD SCCPDPC](command/UNC/20.15.2/MOD-SCCPDPC.md)
+- [RMV SCCPDPC](command/UNC/20.15.2/RMV-SCCPDPC.md)
+- [UIN SCCPDPC](command/UNC/20.15.2/UIN-SCCPDPC.md)
 
 ## 证据
 

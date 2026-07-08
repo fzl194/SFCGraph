@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGMMCTXEXT]] · DSP NGMMCTXEXT
+- [DSP NGMMCTXEXT](command/UNC/20.15.2/DSP-NGMMCTXEXT.md)
 
 ## 证据
 

@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AUTOCONFIG]] · 自动配置开关（AUTOCONFIG）
+- [自动配置开关（AUTOCONFIG）](configobject/UNC/20.15.2/AUTOCONFIG.md)
 
 ## 使用实例
 

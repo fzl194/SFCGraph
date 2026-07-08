@@ -22,13 +22,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-BLACKLISTRULE]] · ADD BLACKLISTRULE
+- [ADD BLACKLISTRULE](command/UDG/20.15.2/ADD-BLACKLISTRULE.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/FLOWFILTER]] · FLOWFILTER
-- [[configobject/UDG/20.15.2/FLOWFILTERGRP]] · FLOWFILTERGRP
-- [[configobject/UDG/20.15.2/TIMERANGE]] · TIMERANGE
+- [FLOWFILTER](configobject/UDG/20.15.2/FLOWFILTER.md)
+- [FLOWFILTERGRP](configobject/UDG/20.15.2/FLOWFILTERGRP.md)
+- [TIMERANGE](configobject/UDG/20.15.2/TIMERANGE.md)
 
 ## 证据
 

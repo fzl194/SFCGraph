@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-ABNTRADTTHR]] · LST ABNTRADTTHR
-- [[command/UDG/20.15.2/SET-ABNTRADTTHR]] · SET ABNTRADTTHR
+- [LST ABNTRADTTHR](command/UDG/20.15.2/LST-ABNTRADTTHR.md)
+- [SET ABNTRADTTHR](command/UDG/20.15.2/SET-ABNTRADTTHR.md)
 
 ## 证据
 

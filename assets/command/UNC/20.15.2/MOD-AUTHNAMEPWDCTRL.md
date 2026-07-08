@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AUTHNAMEPWDCTRL]] · 对鉴权信元用户名和密码的控制（AUTHNAMEPWDCTRL）
+- [对鉴权信元用户名和密码的控制（AUTHNAMEPWDCTRL）](configobject/UNC/20.15.2/AUTHNAMEPWDCTRL.md)
 
 ## 使用实例
 

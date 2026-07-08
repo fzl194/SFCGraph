@@ -39,7 +39,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CONSSTATIC]] · 消费者统计信息（CONSSTATIC）
+- [消费者统计信息（CONSSTATIC）](configobject/UDG/20.15.2/CONSSTATIC.md)
 
 ## 使用实例
 

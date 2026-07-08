@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFECERFIB6]] · DSP SFECERFIB6
+- [DSP SFECERFIB6](command/UDG/20.15.2/DSP-SFECERFIB6.md)
 
 ## 证据
 

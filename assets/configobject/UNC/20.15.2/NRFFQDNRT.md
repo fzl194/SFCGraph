@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRFFQDNRT]] · ADD NRFFQDNRT
-- [[command/UNC/20.15.2/LST-NRFFQDNRT]] · LST NRFFQDNRT
-- [[command/UNC/20.15.2/RMV-NRFFQDNRT]] · RMV NRFFQDNRT
+- [ADD NRFFQDNRT](command/UNC/20.15.2/ADD-NRFFQDNRT.md)
+- [LST NRFFQDNRT](command/UNC/20.15.2/LST-NRFFQDNRT.md)
+- [RMV NRFFQDNRT](command/UNC/20.15.2/RMV-NRFFQDNRT.md)
 
 ## 证据
 

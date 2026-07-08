@@ -40,7 +40,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LBTRCRDTCFG]] · 跟踪重定向（LBTRCRDTCFG）
+- [跟踪重定向（LBTRCRDTCFG）](configobject/UDG/20.15.2/LBTRCRDTCFG.md)
 
 ## 使用实例
 

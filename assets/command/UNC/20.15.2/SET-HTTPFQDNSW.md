@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/HTTPFQDNSW]] · HTTP是否支持FQDN（HTTPFQDNSW）
+- [HTTP是否支持FQDN（HTTPFQDNSW）](configobject/UNC/20.15.2/HTTPFQDNSW.md)
 
 ## 使用实例
 

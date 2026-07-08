@@ -30,9 +30,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-NFUPDATE]] · ACT NFUPDATE
-- [[command/UNC/20.15.2/LST-NFUPDATE]] · LST NFUPDATE
-- [[command/UNC/20.15.2/SET-NFUPDATE]] · SET NFUPDATE
+- [ACT NFUPDATE](command/UNC/20.15.2/ACT-NFUPDATE.md)
+- [LST NFUPDATE](command/UNC/20.15.2/LST-NFUPDATE.md)
+- [SET NFUPDATE](command/UNC/20.15.2/SET-NFUPDATE.md)
 
 ## 证据
 

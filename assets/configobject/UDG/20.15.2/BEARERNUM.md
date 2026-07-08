@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-BEARERNUM]] · DSP BEARERNUM
+- [DSP BEARERNUM](command/UDG/20.15.2/DSP-BEARERNUM.md)
 
 ## 证据
 

@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GLBOFCTEMPCFG]] · DSP GLBOFCTEMPCFG
+- [DSP GLBOFCTEMPCFG](command/UNC/20.15.2/DSP-GLBOFCTEMPCFG.md)
 
 ## 证据
 

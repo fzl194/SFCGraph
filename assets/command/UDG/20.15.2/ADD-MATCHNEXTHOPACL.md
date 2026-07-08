@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MATCHNEXTHOPACL]] · 下一跳基础ACL匹配路由策略（MATCHNEXTHOPACL）
+- [下一跳基础ACL匹配路由策略（MATCHNEXTHOPACL）](configobject/UDG/20.15.2/MATCHNEXTHOPACL.md)
 
 ## 使用实例
 

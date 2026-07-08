@@ -75,7 +75,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MULTIDNNCTRL]] · 2B2C漫游双DNN特性相关的功能控制（MULTIDNNCTRL）
+- [2B2C漫游双DNN特性相关的功能控制（MULTIDNNCTRL）](configobject/UNC/20.15.2/MULTIDNNCTRL.md)
 
 ## 使用实例
 

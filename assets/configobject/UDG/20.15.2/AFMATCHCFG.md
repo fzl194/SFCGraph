@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-AFMATCHCFG]] · LST AFMATCHCFG
-- [[command/UDG/20.15.2/SET-AFMATCHCFG]] · SET AFMATCHCFG
+- [LST AFMATCHCFG](command/UDG/20.15.2/LST-AFMATCHCFG.md)
+- [SET AFMATCHCFG](command/UDG/20.15.2/SET-AFMATCHCFG.md)
 
 ## 证据
 

@@ -31,8 +31,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UNCINTF]] · ADD UNCINTF
-- [[command/UNC/20.15.2/DSP-UNCINTF]] · DSP UNCINTF
+- [ADD UNCINTF](command/UNC/20.15.2/ADD-UNCINTF.md)
+- [DSP UNCINTF](command/UNC/20.15.2/DSP-UNCINTF.md)
 
 ## 证据
 

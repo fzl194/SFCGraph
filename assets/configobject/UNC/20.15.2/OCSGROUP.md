@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-OCSGROUP]] · ADD OCSGROUP
-- [[command/UNC/20.15.2/LST-OCSGROUP]] · LST OCSGROUP
-- [[command/UNC/20.15.2/RMV-OCSGROUP]] · RMV OCSGROUP
+- [ADD OCSGROUP](command/UNC/20.15.2/ADD-OCSGROUP.md)
+- [LST OCSGROUP](command/UNC/20.15.2/LST-OCSGROUP.md)
+- [RMV OCSGROUP](command/UNC/20.15.2/RMV-OCSGROUP.md)
 
 ## 证据
 

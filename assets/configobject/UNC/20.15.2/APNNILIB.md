@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNNILIB]] · ADD APNNILIB
-- [[command/UNC/20.15.2/LST-APNNILIB]] · LST APNNILIB
-- [[command/UNC/20.15.2/RMV-APNNILIB]] · RMV APNNILIB
+- [ADD APNNILIB](command/UNC/20.15.2/ADD-APNNILIB.md)
+- [LST APNNILIB](command/UNC/20.15.2/LST-APNNILIB.md)
+- [RMV APNNILIB](command/UNC/20.15.2/RMV-APNNILIB.md)
 
 ## 证据
 

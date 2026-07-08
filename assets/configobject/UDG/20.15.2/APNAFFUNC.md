@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNAFFUNC]] · LST APNAFFUNC
-- [[command/UDG/20.15.2/SET-APNAFFUNC]] · SET APNAFFUNC
+- [LST APNAFFUNC](command/UDG/20.15.2/LST-APNAFFUNC.md)
+- [SET APNAFFUNC](command/UDG/20.15.2/SET-APNAFFUNC.md)
 
 ## 证据
 

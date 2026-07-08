@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DMFUNC]] · LST DMFUNC
-- [[command/UNC/20.15.2/SET-DMFUNC]] · SET DMFUNC
+- [LST DMFUNC](command/UNC/20.15.2/LST-DMFUNC.md)
+- [SET DMFUNC](command/UNC/20.15.2/SET-DMFUNC.md)
 
 ## 证据
 

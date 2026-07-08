@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NONRAI]] · ADD NONRAI
-- [[command/UNC/20.15.2/LST-NONRAI]] · LST NONRAI
-- [[command/UNC/20.15.2/MOD-NONRAI]] · MOD NONRAI
-- [[command/UNC/20.15.2/RMV-NONRAI]] · RMV NONRAI
+- [ADD NONRAI](command/UNC/20.15.2/ADD-NONRAI.md)
+- [LST NONRAI](command/UNC/20.15.2/LST-NONRAI.md)
+- [MOD NONRAI](command/UNC/20.15.2/MOD-NONRAI.md)
+- [RMV NONRAI](command/UNC/20.15.2/RMV-NONRAI.md)
 
 ## 证据
 

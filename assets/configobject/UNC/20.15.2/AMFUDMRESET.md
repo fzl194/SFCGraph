@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AMFUDMRESET]] · LST AMFUDMRESET
-- [[command/UNC/20.15.2/SET-AMFUDMRESET]] · SET AMFUDMRESET
+- [LST AMFUDMRESET](command/UNC/20.15.2/LST-AMFUDMRESET.md)
+- [SET AMFUDMRESET](command/UNC/20.15.2/SET-AMFUDMRESET.md)
 
 ## 证据
 

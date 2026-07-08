@@ -22,14 +22,14 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-ADCPARA]] · ADD ADCPARA
-- [[command/UDG/20.15.2/LST-ADCPARA]] · LST ADCPARA
-- [[command/UDG/20.15.2/MOD-ADCPARA]] · MOD ADCPARA
-- [[command/UDG/20.15.2/RMV-ADCPARA]] · RMV ADCPARA
+- [ADD ADCPARA](command/UDG/20.15.2/ADD-ADCPARA.md)
+- [LST ADCPARA](command/UDG/20.15.2/LST-ADCPARA.md)
+- [MOD ADCPARA](command/UDG/20.15.2/MOD-ADCPARA.md)
+- [RMV ADCPARA](command/UDG/20.15.2/RMV-ADCPARA.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/FLOWFILTER]] · FLOWFILTER
+- [FLOWFILTER](configobject/UDG/20.15.2/FLOWFILTER.md)
 
 ## 证据
 

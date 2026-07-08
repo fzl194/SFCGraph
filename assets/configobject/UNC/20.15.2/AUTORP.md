@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AUTORP]] · ADD AUTORP
-- [[command/UNC/20.15.2/LST-AUTORP]] · LST AUTORP
-- [[command/UNC/20.15.2/RMV-AUTORP]] · RMV AUTORP
+- [ADD AUTORP](command/UNC/20.15.2/ADD-AUTORP.md)
+- [LST AUTORP](command/UNC/20.15.2/LST-AUTORP.md)
+- [RMV AUTORP](command/UNC/20.15.2/RMV-AUTORP.md)
 
 ## 证据
 

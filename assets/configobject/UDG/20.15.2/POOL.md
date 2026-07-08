@@ -26,17 +26,17 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-POOL]] · ADD POOL
-- [[command/UDG/20.15.2/LCK-POOL]] · LCK POOL
-- [[command/UDG/20.15.2/LST-POOL]] · LST POOL
-- [[command/UDG/20.15.2/MOD-POOL]] · MOD POOL
-- [[command/UDG/20.15.2/RMV-POOL]] · RMV POOL
+- [ADD POOL](command/UDG/20.15.2/ADD-POOL.md)
+- [LCK POOL](command/UDG/20.15.2/LCK-POOL.md)
+- [LST POOL](command/UDG/20.15.2/LST-POOL.md)
+- [MOD POOL](command/UDG/20.15.2/MOD-POOL.md)
+- [RMV POOL](command/UDG/20.15.2/RMV-POOL.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/POOLBINDGROUP]] · POOLBINDGROUP
-- [[configobject/UDG/20.15.2/SECTION]] · SECTION
-- [[configobject/UDG/20.15.2/VPNINST]] · VPNINST
+- [POOLBINDGROUP](configobject/UDG/20.15.2/POOLBINDGROUP.md)
+- [SECTION](configobject/UDG/20.15.2/SECTION.md)
+- [VPNINST](configobject/UDG/20.15.2/VPNINST.md)
 
 ## 证据
 

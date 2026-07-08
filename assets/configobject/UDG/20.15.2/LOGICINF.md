@@ -23,15 +23,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-LOGICINF]] · ADD LOGICINF
-- [[command/UDG/20.15.2/LST-LOGICINF]] · LST LOGICINF
-- [[command/UDG/20.15.2/MOD-LOGICINF]] · MOD LOGICINF
-- [[command/UDG/20.15.2/RMV-LOGICINF]] · RMV LOGICINF
+- [ADD LOGICINF](command/UDG/20.15.2/ADD-LOGICINF.md)
+- [LST LOGICINF](command/UDG/20.15.2/LST-LOGICINF.md)
+- [MOD LOGICINF](command/UDG/20.15.2/MOD-LOGICINF.md)
+- [RMV LOGICINF](command/UDG/20.15.2/RMV-LOGICINF.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/IPFARM]] · IPFARM
-- [[configobject/UDG/20.15.2/VPNINST]] · VPNINST
+- [IPFARM](configobject/UDG/20.15.2/IPFARM.md)
+- [VPNINST](configobject/UDG/20.15.2/VPNINST.md)
 
 ## 证据
 

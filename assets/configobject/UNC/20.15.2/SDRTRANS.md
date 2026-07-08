@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SDRTRANS]] · LST SDRTRANS
-- [[command/UNC/20.15.2/SET-SDRTRANS]] · SET SDRTRANS
+- [LST SDRTRANS](command/UNC/20.15.2/LST-SDRTRANS.md)
+- [SET SDRTRANS](command/UNC/20.15.2/SET-SDRTRANS.md)
 
 ## 证据
 

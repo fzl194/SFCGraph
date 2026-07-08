@@ -32,11 +32,11 @@ Pod停止运行可能会导致业务受损，请谨慎使用该命令。
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-POD]] · DSP POD
-- [[command/UDG/20.15.2/LCK-POD]] · LCK POD
-- [[command/UDG/20.15.2/RST-POD]] · RST POD
-- [[command/UDG/20.15.2/STP-POD]] · STP POD
-- [[command/UDG/20.15.2/STR-POD]] · STR POD
+- [DSP POD](command/UDG/20.15.2/DSP-POD.md)
+- [LCK POD](command/UDG/20.15.2/LCK-POD.md)
+- [RST POD](command/UDG/20.15.2/RST-POD.md)
+- [STP POD](command/UDG/20.15.2/STP-POD.md)
+- [STR POD](command/UDG/20.15.2/STR-POD.md)
 
 ## 证据
 

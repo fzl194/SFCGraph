@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PROTOCOLGROUP]] · 自定义协议组（PROTOCOLGROUP）
+- [自定义协议组（PROTOCOLGROUP）](configobject/UDG/20.15.2/PROTOCOLGROUP.md)
 
 ## 使用实例
 

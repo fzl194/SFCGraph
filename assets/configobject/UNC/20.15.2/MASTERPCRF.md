@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-MASTERPCRF]] · SET MASTERPCRF
+- [SET MASTERPCRF](command/UNC/20.15.2/SET-MASTERPCRF.md)
 
 ## 证据
 

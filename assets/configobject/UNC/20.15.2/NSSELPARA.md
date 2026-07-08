@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NSSELPARA]] · LST NSSELPARA
-- [[command/UNC/20.15.2/SET-NSSELPARA]] · SET NSSELPARA
+- [LST NSSELPARA](command/UNC/20.15.2/LST-NSSELPARA.md)
+- [SET NSSELPARA](command/UNC/20.15.2/SET-NSSELPARA.md)
 
 ## 证据
 

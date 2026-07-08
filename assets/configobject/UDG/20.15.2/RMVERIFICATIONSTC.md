@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RMVERIFICATIONSTC]] · DSP RMVERIFICATIONSTC
+- [DSP RMVERIFICATIONSTC](command/UDG/20.15.2/DSP-RMVERIFICATIONSTC.md)
 
 ## 证据
 

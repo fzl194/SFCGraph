@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/S1TAIPAGMONPARA]] · S1 TAI组寻呼异常监控功能参数（S1TAIPAGMONPARA）
+- [S1 TAI组寻呼异常监控功能参数（S1TAIPAGMONPARA）](configobject/UNC/20.15.2/S1TAIPAGMONPARA.md)
 
 ## 使用实例
 

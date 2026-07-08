@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组；
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/FWDFCPARA]] · 转发面流控参数（FWDFCPARA）
+- [转发面流控参数（FWDFCPARA）](configobject/UDG/20.15.2/FWDFCPARA.md)
 
 ## 使用实例
 

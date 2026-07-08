@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-UPLOCKINFO]] · DSP UPLOCKINFO
+- [DSP UPLOCKINFO](command/UNC/20.15.2/DSP-UPLOCKINFO.md)
 
 ## 证据
 

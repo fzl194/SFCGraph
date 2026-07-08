@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LACGROUP]] · ADD LACGROUP
-- [[command/UNC/20.15.2/LST-LACGROUP]] · LST LACGROUP
-- [[command/UNC/20.15.2/RMV-LACGROUP]] · RMV LACGROUP
+- [ADD LACGROUP](command/UNC/20.15.2/ADD-LACGROUP.md)
+- [LST LACGROUP](command/UNC/20.15.2/LST-LACGROUP.md)
+- [RMV LACGROUP](command/UNC/20.15.2/RMV-LACGROUP.md)
 
 ## 证据
 

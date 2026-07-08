@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DMOCCFG]] · LST DMOCCFG
-- [[command/UNC/20.15.2/SET-DMOCCFG]] · SET DMOCCFG
+- [LST DMOCCFG](command/UNC/20.15.2/LST-DMOCCFG.md)
+- [SET DMOCCFG](command/UNC/20.15.2/SET-DMOCCFG.md)
 
 ## 证据
 

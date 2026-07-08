@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PFCPSESSMIGSTS]] · DSP PFCPSESSMIGSTS
+- [DSP PFCPSESSMIGSTS](command/UNC/20.15.2/DSP-PFCPSESSMIGSTS.md)
 
 ## 证据
 

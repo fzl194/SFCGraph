@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DEL-CDRQUERYFILE]] · DEL CDRQUERYFILE
+- [DEL CDRQUERYFILE](command/UNC/20.15.2/DEL-CDRQUERYFILE.md)
 
 ## 证据
 

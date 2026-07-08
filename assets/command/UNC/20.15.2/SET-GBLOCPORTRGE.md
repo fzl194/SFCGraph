@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/GBLOCPORTRGE]] · 本端端口号选择范围（GBLOCPORTRGE）
+- [本端端口号选择范围（GBLOCPORTRGE）](configobject/UNC/20.15.2/GBLOCPORTRGE.md)
 
 ## 使用实例
 

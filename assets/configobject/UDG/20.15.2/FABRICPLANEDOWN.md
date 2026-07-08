@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-FABRICPLANEDOWN]] · DSP FABRICPLANEDOWN
+- [DSP FABRICPLANEDOWN](command/UDG/20.15.2/DSP-FABRICPLANEDOWN.md)
 
 ## 证据
 

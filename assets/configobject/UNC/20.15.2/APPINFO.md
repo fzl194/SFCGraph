@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APPINFO]] · LST APPINFO
+- [LST APPINFO](command/UNC/20.15.2/LST-APPINFO.md)
 
 ## 证据
 

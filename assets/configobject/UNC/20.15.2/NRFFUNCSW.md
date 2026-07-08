@@ -35,8 +35,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFFUNCSW]] · LST NRFFUNCSW
-- [[command/UNC/20.15.2/SET-NRFFUNCSW]] · SET NRFFUNCSW
+- [LST NRFFUNCSW](command/UNC/20.15.2/LST-NRFFUNCSW.md)
+- [SET NRFFUNCSW](command/UNC/20.15.2/SET-NRFFUNCSW.md)
 
 ## 证据
 

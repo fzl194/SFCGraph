@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CMDRCACT]] · ADD CMDRCACT
-- [[command/UNC/20.15.2/LST-CMDRCACT]] · LST CMDRCACT
-- [[command/UNC/20.15.2/MOD-CMDRCACT]] · MOD CMDRCACT
-- [[command/UNC/20.15.2/RMV-CMDRCACT]] · RMV CMDRCACT
+- [ADD CMDRCACT](command/UNC/20.15.2/ADD-CMDRCACT.md)
+- [LST CMDRCACT](command/UNC/20.15.2/LST-CMDRCACT.md)
+- [MOD CMDRCACT](command/UNC/20.15.2/MOD-CMDRCACT.md)
+- [RMV CMDRCACT](command/UNC/20.15.2/RMV-CMDRCACT.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-BASE64]] · LST BASE64
-- [[command/UDG/20.15.2/SET-BASE64]] · SET BASE64
+- [LST BASE64](command/UDG/20.15.2/LST-BASE64.md)
+- [SET BASE64](command/UDG/20.15.2/SET-BASE64.md)
 
 ## 证据
 

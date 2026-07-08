@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFETABLESTC]] · DSP SFETABLESTC
+- [DSP SFETABLESTC](command/UDG/20.15.2/DSP-SFETABLESTC.md)
 
 ## 证据
 

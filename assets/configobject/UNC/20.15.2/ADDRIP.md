@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-ADDRIP]] · CLR ADDRIP
-- [[command/UNC/20.15.2/DSP-ADDRIP]] · DSP ADDRIP
+- [CLR ADDRIP](command/UNC/20.15.2/CLR-ADDRIP.md)
+- [DSP ADDRIP](command/UNC/20.15.2/DSP-ADDRIP.md)
 
 ## 证据
 

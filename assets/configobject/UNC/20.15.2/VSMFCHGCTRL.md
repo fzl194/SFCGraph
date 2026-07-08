@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-VSMFCHGCTRL]] · LST VSMFCHGCTRL
-- [[command/UNC/20.15.2/SET-VSMFCHGCTRL]] · SET VSMFCHGCTRL
+- [LST VSMFCHGCTRL](command/UNC/20.15.2/LST-VSMFCHGCTRL.md)
+- [SET VSMFCHGCTRL](command/UNC/20.15.2/SET-VSMFCHGCTRL.md)
 
 ## 证据
 

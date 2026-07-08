@@ -33,8 +33,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CFSHEALCTRL]] · LST CFSHEALCTRL
-- [[command/UDG/20.15.2/SET-CFSHEALCTRL]] · SET CFSHEALCTRL
+- [LST CFSHEALCTRL](command/UDG/20.15.2/LST-CFSHEALCTRL.md)
+- [SET CFSHEALCTRL](command/UDG/20.15.2/SET-CFSHEALCTRL.md)
 
 ## 证据
 

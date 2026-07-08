@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-SFEBFDPKTIPID]] · SET SFEBFDPKTIPID
+- [SET SFEBFDPKTIPID](command/UNC/20.15.2/SET-SFEBFDPKTIPID.md)
 
 ## 证据
 

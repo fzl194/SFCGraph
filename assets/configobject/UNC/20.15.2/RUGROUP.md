@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RUGROUP]] · DSP RUGROUP
-- [[command/UNC/20.15.2/SWP-RUGROUP]] · SWP RUGROUP
+- [DSP RUGROUP](command/UNC/20.15.2/DSP-RUGROUP.md)
+- [SWP RUGROUP](command/UNC/20.15.2/SWP-RUGROUP.md)
 
 ## 证据
 

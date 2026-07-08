@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-FWPOLICY]] · ADD FWPOLICY
-- [[command/UDG/20.15.2/LST-FWPOLICY]] · LST FWPOLICY
-- [[command/UDG/20.15.2/MOD-FWPOLICY]] · MOD FWPOLICY
-- [[command/UDG/20.15.2/RMV-FWPOLICY]] · RMV FWPOLICY
+- [ADD FWPOLICY](command/UDG/20.15.2/ADD-FWPOLICY.md)
+- [LST FWPOLICY](command/UDG/20.15.2/LST-FWPOLICY.md)
+- [MOD FWPOLICY](command/UDG/20.15.2/MOD-FWPOLICY.md)
+- [RMV FWPOLICY](command/UDG/20.15.2/RMV-FWPOLICY.md)
 
 ## 证据
 

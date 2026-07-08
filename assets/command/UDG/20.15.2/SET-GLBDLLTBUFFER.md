@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/GLBDLLTBUFFER]] · 全局下行数据长时间缓存配置（GLBDLLTBUFFER）
+- [全局下行数据长时间缓存配置（GLBDLLTBUFFER）](configobject/UDG/20.15.2/GLBDLLTBUFFER.md)
 
 ## 关联任务
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-CHGFILEDIR]] · DSP CHGFILEDIR
-- [[command/UNC/20.15.2/SWP-CHGFILEDIR]] · SWP CHGFILEDIR
+- [DSP CHGFILEDIR](command/UNC/20.15.2/DSP-CHGFILEDIR.md)
+- [SWP CHGFILEDIR](command/UNC/20.15.2/SWP-CHGFILEDIR.md)
 
 ## 证据
 

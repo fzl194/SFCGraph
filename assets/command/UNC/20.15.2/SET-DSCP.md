@@ -86,7 +86,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DSCP]] · 接口DSCP配置（DSCP）
+- [接口DSCP配置（DSCP）](configobject/UNC/20.15.2/DSCP.md)
 
 ## 使用实例
 

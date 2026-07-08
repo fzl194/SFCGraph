@@ -25,10 +25,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TNFINS]] · ADD TNFINS
-- [[command/UNC/20.15.2/LST-TNFINS]] · LST TNFINS
-- [[command/UNC/20.15.2/MOD-TNFINS]] · MOD TNFINS
-- [[command/UNC/20.15.2/RMV-TNFINS]] · RMV TNFINS
+- [ADD TNFINS](command/UNC/20.15.2/ADD-TNFINS.md)
+- [LST TNFINS](command/UNC/20.15.2/LST-TNFINS.md)
+- [MOD TNFINS](command/UNC/20.15.2/MOD-TNFINS.md)
+- [RMV TNFINS](command/UNC/20.15.2/RMV-TNFINS.md)
 
 ## 证据
 

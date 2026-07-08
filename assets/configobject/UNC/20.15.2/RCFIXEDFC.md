@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-RCFIXEDFC]] · LST RCFIXEDFC
-- [[command/UNC/20.15.2/SET-RCFIXEDFC]] · SET RCFIXEDFC
+- [LST RCFIXEDFC](command/UNC/20.15.2/LST-RCFIXEDFC.md)
+- [SET RCFIXEDFC](command/UNC/20.15.2/SET-RCFIXEDFC.md)
 
 ## 证据
 

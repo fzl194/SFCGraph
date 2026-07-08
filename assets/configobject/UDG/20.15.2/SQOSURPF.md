@@ -19,10 +19,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SQOSURPF]] · ADD SQOSURPF
-- [[command/UDG/20.15.2/LST-SQOSURPF]] · LST SQOSURPF
-- [[command/UDG/20.15.2/MOD-SQOSURPF]] · MOD SQOSURPF
-- [[command/UDG/20.15.2/RMV-SQOSURPF]] · RMV SQOSURPF
+- [ADD SQOSURPF](command/UDG/20.15.2/ADD-SQOSURPF.md)
+- [LST SQOSURPF](command/UDG/20.15.2/LST-SQOSURPF.md)
+- [MOD SQOSURPF](command/UDG/20.15.2/MOD-SQOSURPF.md)
+- [RMV SQOSURPF](command/UDG/20.15.2/RMV-SQOSURPF.md)
 
 ## 证据
 

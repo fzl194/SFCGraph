@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LCK-SESSIONACT]] · LCK SESSIONACT
-- [[command/UNC/20.15.2/LST-SESSIONACT]] · LST SESSIONACT
+- [LCK SESSIONACT](command/UNC/20.15.2/LCK-SESSIONACT.md)
+- [LST SESSIONACT](command/UNC/20.15.2/LST-SESSIONACT.md)
 
 ## 证据
 

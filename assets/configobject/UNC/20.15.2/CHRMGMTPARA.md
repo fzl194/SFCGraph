@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHRMGMTPARA]] · LST CHRMGMTPARA
-- [[command/UNC/20.15.2/SET-CHRMGMTPARA]] · SET CHRMGMTPARA
+- [LST CHRMGMTPARA](command/UNC/20.15.2/LST-CHRMGMTPARA.md)
+- [SET CHRMGMTPARA](command/UNC/20.15.2/SET-CHRMGMTPARA.md)
 
 ## 证据
 

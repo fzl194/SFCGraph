@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RTR-ARPBYIF]] · RTR ARPBYIF
+- [RTR ARPBYIF](command/UDG/20.15.2/RTR-ARPBYIF.md)
 
 ## 证据
 

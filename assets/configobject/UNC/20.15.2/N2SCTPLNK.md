@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-N2SCTPLNK]] · DSP N2SCTPLNK
-- [[command/UNC/20.15.2/RMV-N2SCTPLNK]] · RMV N2SCTPLNK
+- [DSP N2SCTPLNK](command/UNC/20.15.2/DSP-N2SCTPLNK.md)
+- [RMV N2SCTPLNK](command/UNC/20.15.2/RMV-N2SCTPLNK.md)
 
 ## 证据
 

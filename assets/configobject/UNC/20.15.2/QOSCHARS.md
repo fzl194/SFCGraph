@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-QOSCHARS]] · ADD QOSCHARS
-- [[command/UNC/20.15.2/LST-QOSCHARS]] · LST QOSCHARS
-- [[command/UNC/20.15.2/MOD-QOSCHARS]] · MOD QOSCHARS
-- [[command/UNC/20.15.2/RMV-QOSCHARS]] · RMV QOSCHARS
+- [ADD QOSCHARS](command/UNC/20.15.2/ADD-QOSCHARS.md)
+- [LST QOSCHARS](command/UNC/20.15.2/LST-QOSCHARS.md)
+- [MOD QOSCHARS](command/UNC/20.15.2/MOD-QOSCHARS.md)
+- [RMV QOSCHARS](command/UNC/20.15.2/RMV-QOSCHARS.md)
 
 ## 证据
 

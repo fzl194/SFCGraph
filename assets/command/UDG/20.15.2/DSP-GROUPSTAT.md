@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/GROUPSTAT]] · 消费组状态（GROUPSTAT）
+- [消费组状态（GROUPSTAT）](configobject/UDG/20.15.2/GROUPSTAT.md)
 
 ## 使用实例
 

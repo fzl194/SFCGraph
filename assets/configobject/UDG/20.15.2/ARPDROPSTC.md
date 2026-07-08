@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ARPDROPSTC]] · DSP ARPDROPSTC
-- [[command/UDG/20.15.2/RTR-ARPDROPSTC]] · RTR ARPDROPSTC
+- [DSP ARPDROPSTC](command/UDG/20.15.2/DSP-ARPDROPSTC.md)
+- [RTR ARPDROPSTC](command/UDG/20.15.2/RTR-ARPDROPSTC.md)
 
 ## 证据
 

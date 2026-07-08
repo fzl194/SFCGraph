@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PCCALMTHD]] · LST PCCALMTHD
-- [[command/UNC/20.15.2/SET-PCCALMTHD]] · SET PCCALMTHD
+- [LST PCCALMTHD](command/UNC/20.15.2/LST-PCCALMTHD.md)
+- [SET PCCALMTHD](command/UNC/20.15.2/SET-PCCALMTHD.md)
 
 ## 证据
 

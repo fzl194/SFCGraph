@@ -19,9 +19,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ETHSUBIF]] · ADD ETHSUBIF
-- [[command/UNC/20.15.2/LST-ETHSUBIF]] · LST ETHSUBIF
-- [[command/UNC/20.15.2/RMV-ETHSUBIF]] · RMV ETHSUBIF
+- [ADD ETHSUBIF](command/UNC/20.15.2/ADD-ETHSUBIF.md)
+- [LST ETHSUBIF](command/UNC/20.15.2/LST-ETHSUBIF.md)
+- [RMV ETHSUBIF](command/UNC/20.15.2/RMV-ETHSUBIF.md)
 
 ## 证据
 

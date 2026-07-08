@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PMM]] · LST PMM
-- [[command/UNC/20.15.2/SET-PMM]] · SET PMM
+- [LST PMM](command/UNC/20.15.2/LST-PMM.md)
+- [SET PMM](command/UNC/20.15.2/SET-PMM.md)
 
 ## 证据
 

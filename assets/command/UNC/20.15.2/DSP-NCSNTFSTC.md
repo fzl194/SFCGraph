@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NCSNTFSTC]] · NETCONF通知会话的统计信息（NCSNTFSTC）
+- [NETCONF通知会话的统计信息（NCSNTFSTC）](configobject/UNC/20.15.2/NCSNTFSTC.md)
 
 ## 使用实例
 

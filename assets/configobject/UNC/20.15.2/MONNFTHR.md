@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MONNFTHR]] · LST MONNFTHR
-- [[command/UNC/20.15.2/SET-MONNFTHR]] · SET MONNFTHR
+- [LST MONNFTHR](command/UNC/20.15.2/LST-MONNFTHR.md)
+- [SET MONNFTHR](command/UNC/20.15.2/SET-MONNFTHR.md)
 
 ## 证据
 

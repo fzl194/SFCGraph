@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CELLGEO]] · CELLID与地理坐标对应关系（CELLGEO）
+- [CELLID与地理坐标对应关系（CELLGEO）](configobject/UNC/20.15.2/CELLGEO.md)
 
 ## 使用实例
 

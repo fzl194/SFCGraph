@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MCSWITCH]] · LST MCSWITCH
-- [[command/UNC/20.15.2/SET-MCSWITCH]] · SET MCSWITCH
+- [LST MCSWITCH](command/UNC/20.15.2/LST-MCSWITCH.md)
+- [SET MCSWITCH](command/UNC/20.15.2/SET-MCSWITCH.md)
 
 ## 证据
 

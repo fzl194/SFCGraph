@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APPINFO]] · 应用信息（APPINFO）
+- [应用信息（APPINFO）](configobject/UNC/20.15.2/APPINFO.md)
 
 ## 使用实例
 

@@ -38,7 +38,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LICENSE]] · 失效License（LICENSE）
+- [失效License（LICENSE）](configobject/UNC/20.15.2/LICENSE.md)
 
 ## 使用实例
 

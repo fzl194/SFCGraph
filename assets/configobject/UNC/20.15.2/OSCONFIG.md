@@ -30,8 +30,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OSCONFIG]] · DSP OSCONFIG
-- [[command/UNC/20.15.2/SET-OSCONFIG]] · SET OSCONFIG
+- [DSP OSCONFIG](command/UNC/20.15.2/DSP-OSCONFIG.md)
+- [SET OSCONFIG](command/UNC/20.15.2/SET-OSCONFIG.md)
 
 ## 证据
 

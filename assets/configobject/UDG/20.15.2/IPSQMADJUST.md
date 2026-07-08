@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-IPSQMADJUST]] · LST IPSQMADJUST
-- [[command/UDG/20.15.2/SET-IPSQMADJUST]] · SET IPSQMADJUST
+- [LST IPSQMADJUST](command/UDG/20.15.2/LST-IPSQMADJUST.md)
+- [SET IPSQMADJUST](command/UDG/20.15.2/SET-IPSQMADJUST.md)
 
 ## 证据
 

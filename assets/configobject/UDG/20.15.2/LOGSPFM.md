@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-LOGSPFM]] · DSP LOGSPFM
+- [DSP LOGSPFM](command/UDG/20.15.2/DSP-LOGSPFM.md)
 
 ## 证据
 

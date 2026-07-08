@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-MVNONETALL]] · RMV MVNONETALL
+- [RMV MVNONETALL](command/UNC/20.15.2/RMV-MVNONETALL.md)
 
 ## 证据
 

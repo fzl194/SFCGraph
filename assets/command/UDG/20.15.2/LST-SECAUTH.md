@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SECAUTH]] · 查看二次授权功能状态（SECAUTH）
+- [查看二次授权功能状态（SECAUTH）](configobject/UDG/20.15.2/SECAUTH.md)
 
 ## 使用实例
 

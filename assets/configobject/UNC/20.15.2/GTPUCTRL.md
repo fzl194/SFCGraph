@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GTPUCTRL]] · LST GTPUCTRL
-- [[command/UNC/20.15.2/SET-GTPUCTRL]] · SET GTPUCTRL
+- [LST GTPUCTRL](command/UNC/20.15.2/LST-GTPUCTRL.md)
+- [SET GTPUCTRL](command/UNC/20.15.2/SET-GTPUCTRL.md)
 
 ## 证据
 

@@ -17,11 +17,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-PIMIF]] · ADD PIMIF
-- [[command/UDG/20.15.2/DSP-PIMIF]] · DSP PIMIF
-- [[command/UDG/20.15.2/LST-PIMIF]] · LST PIMIF
-- [[command/UDG/20.15.2/MOD-PIMIF]] · MOD PIMIF
-- [[command/UDG/20.15.2/RMV-PIMIF]] · RMV PIMIF
+- [ADD PIMIF](command/UDG/20.15.2/ADD-PIMIF.md)
+- [DSP PIMIF](command/UDG/20.15.2/DSP-PIMIF.md)
+- [LST PIMIF](command/UDG/20.15.2/LST-PIMIF.md)
+- [MOD PIMIF](command/UDG/20.15.2/MOD-PIMIF.md)
+- [RMV PIMIF](command/UDG/20.15.2/RMV-PIMIF.md)
 
 ## 证据
 

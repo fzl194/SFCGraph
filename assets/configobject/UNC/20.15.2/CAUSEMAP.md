@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CAUSEMAP]] · ADD CAUSEMAP
-- [[command/UNC/20.15.2/LST-CAUSEMAP]] · LST CAUSEMAP
-- [[command/UNC/20.15.2/MOD-CAUSEMAP]] · MOD CAUSEMAP
-- [[command/UNC/20.15.2/RMV-CAUSEMAP]] · RMV CAUSEMAP
+- [ADD CAUSEMAP](command/UNC/20.15.2/ADD-CAUSEMAP.md)
+- [LST CAUSEMAP](command/UNC/20.15.2/LST-CAUSEMAP.md)
+- [MOD CAUSEMAP](command/UNC/20.15.2/MOD-CAUSEMAP.md)
+- [RMV CAUSEMAP](command/UNC/20.15.2/RMV-CAUSEMAP.md)
 
 ## 证据
 

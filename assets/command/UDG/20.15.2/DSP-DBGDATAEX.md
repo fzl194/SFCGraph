@@ -49,7 +49,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/DBGDATAEX]] · 调试信息（DBGDATAEX）
+- [调试信息（DBGDATAEX）](configobject/UDG/20.15.2/DBGDATAEX.md)
 
 ## 使用实例
 

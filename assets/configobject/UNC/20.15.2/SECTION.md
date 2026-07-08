@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SECTION]] · ADD SECTION
-- [[command/UNC/20.15.2/LCK-SECTION]] · LCK SECTION
-- [[command/UNC/20.15.2/LST-SECTION]] · LST SECTION
-- [[command/UNC/20.15.2/RMV-SECTION]] · RMV SECTION
+- [ADD SECTION](command/UNC/20.15.2/ADD-SECTION.md)
+- [LCK SECTION](command/UNC/20.15.2/LCK-SECTION.md)
+- [LST SECTION](command/UNC/20.15.2/LST-SECTION.md)
+- [RMV SECTION](command/UNC/20.15.2/RMV-SECTION.md)
 
 ## 证据
 

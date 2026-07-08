@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AREAMEM]] · ADD AREAMEM
-- [[command/UNC/20.15.2/LST-AREAMEM]] · LST AREAMEM
-- [[command/UNC/20.15.2/RMV-AREAMEM]] · RMV AREAMEM
+- [ADD AREAMEM](command/UNC/20.15.2/ADD-AREAMEM.md)
+- [LST AREAMEM](command/UNC/20.15.2/LST-AREAMEM.md)
+- [RMV AREAMEM](command/UNC/20.15.2/RMV-AREAMEM.md)
 
 ## 证据
 

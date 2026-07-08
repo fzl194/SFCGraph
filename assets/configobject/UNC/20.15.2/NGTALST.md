@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGTALST]] · ADD NGTALST
-- [[command/UNC/20.15.2/LST-NGTALST]] · LST NGTALST
-- [[command/UNC/20.15.2/MOD-NGTALST]] · MOD NGTALST
-- [[command/UNC/20.15.2/RMV-NGTALST]] · RMV NGTALST
+- [ADD NGTALST](command/UNC/20.15.2/ADD-NGTALST.md)
+- [LST NGTALST](command/UNC/20.15.2/LST-NGTALST.md)
+- [MOD NGTALST](command/UNC/20.15.2/MOD-NGTALST.md)
+- [RMV NGTALST](command/UNC/20.15.2/RMV-NGTALST.md)
 
 ## 证据
 

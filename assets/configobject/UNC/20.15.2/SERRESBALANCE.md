@@ -33,7 +33,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-SERRESBALANCE]] · STR SERRESBALANCE
+- [STR SERRESBALANCE](command/UNC/20.15.2/STR-SERRESBALANCE.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PFCPFIXEDFC]] · LST PFCPFIXEDFC
-- [[command/UNC/20.15.2/SET-PFCPFIXEDFC]] · SET PFCPFIXEDFC
+- [LST PFCPFIXEDFC](command/UNC/20.15.2/LST-PFCPFIXEDFC.md)
+- [SET PFCPFIXEDFC](command/UNC/20.15.2/SET-PFCPFIXEDFC.md)
 
 ## 证据
 

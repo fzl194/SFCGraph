@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/FILE]] · 文件传输（FILE）
+- [文件传输（FILE）](configobject/UDG/20.15.2/FILE.md)
 
 ## 使用实例
 

@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRFDNNRT]] · ADD NRFDNNRT
-- [[command/UNC/20.15.2/LST-NRFDNNRT]] · LST NRFDNNRT
-- [[command/UNC/20.15.2/MOD-NRFDNNRT]] · MOD NRFDNNRT
-- [[command/UNC/20.15.2/RMV-NRFDNNRT]] · RMV NRFDNNRT
+- [ADD NRFDNNRT](command/UNC/20.15.2/ADD-NRFDNNRT.md)
+- [LST NRFDNNRT](command/UNC/20.15.2/LST-NRFDNNRT.md)
+- [MOD NRFDNNRT](command/UNC/20.15.2/MOD-NRFDNNRT.md)
+- [RMV NRFDNNRT](command/UNC/20.15.2/RMV-NRFDNNRT.md)
 
 ## 证据
 

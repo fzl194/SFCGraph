@@ -54,7 +54,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MSSFTD]] · 微服务软件调测（MSSFTD）
+- [微服务软件调测（MSSFTD）](configobject/UNC/20.15.2/MSSFTD.md)
 
 ## 使用实例
 

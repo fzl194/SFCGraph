@@ -19,14 +19,14 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-VPNINSTAF]] · ADD VPNINSTAF
-- [[command/UDG/20.15.2/LST-VPNINSTAF]] · LST VPNINSTAF
-- [[command/UDG/20.15.2/MOD-VPNINSTAF]] · MOD VPNINSTAF
-- [[command/UDG/20.15.2/RMV-VPNINSTAF]] · RMV VPNINSTAF
+- [ADD VPNINSTAF](command/UDG/20.15.2/ADD-VPNINSTAF.md)
+- [LST VPNINSTAF](command/UDG/20.15.2/LST-VPNINSTAF.md)
+- [MOD VPNINSTAF](command/UDG/20.15.2/MOD-VPNINSTAF.md)
+- [RMV VPNINSTAF](command/UDG/20.15.2/RMV-VPNINSTAF.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/L3VPNINST]] · L3VPNINST
+- [L3VPNINST](configobject/UDG/20.15.2/L3VPNINST.md)
 
 ## 证据
 

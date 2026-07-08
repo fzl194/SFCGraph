@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-VPORT]] · DSP VPORT
+- [DSP VPORT](command/UDG/20.15.2/DSP-VPORT.md)
 
 ## 证据
 

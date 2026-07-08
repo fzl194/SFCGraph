@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/STATUSCHECK]] · 状态核查参数（STATUSCHECK）
+- [状态核查参数（STATUSCHECK）](configobject/UNC/20.15.2/STATUSCHECK.md)
 
 ## 使用实例
 

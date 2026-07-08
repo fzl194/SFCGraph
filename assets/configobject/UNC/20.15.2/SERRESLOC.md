@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SERRESLOC]] · DSP SERRESLOC
+- [DSP SERRESLOC](command/UNC/20.15.2/DSP-SERRESLOC.md)
 
 ## 证据
 

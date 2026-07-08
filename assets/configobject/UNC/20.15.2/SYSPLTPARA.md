@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SYSPLTPARA]] · LST SYSPLTPARA
-- [[command/UNC/20.15.2/SET-SYSPLTPARA]] · SET SYSPLTPARA
+- [LST SYSPLTPARA](command/UNC/20.15.2/LST-SYSPLTPARA.md)
+- [SET SYSPLTPARA](command/UNC/20.15.2/SET-SYSPLTPARA.md)
 
 ## 证据
 

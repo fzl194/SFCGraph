@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PIMCTLMSGCNTVRF]] · DSP PIMCTLMSGCNTVRF
+- [DSP PIMCTLMSGCNTVRF](command/UDG/20.15.2/DSP-PIMCTLMSGCNTVRF.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NFSELPLCY]] · LST NFSELPLCY
-- [[command/UNC/20.15.2/SET-NFSELPLCY]] · SET NFSELPLCY
+- [LST NFSELPLCY](command/UNC/20.15.2/LST-NFSELPLCY.md)
+- [SET NFSELPLCY](command/UNC/20.15.2/SET-NFSELPLCY.md)
 
 ## 证据
 

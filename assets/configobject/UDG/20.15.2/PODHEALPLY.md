@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PODHEALPLY]] · LST PODHEALPLY
-- [[command/UDG/20.15.2/SET-PODHEALPLY]] · SET PODHEALPLY
+- [LST PODHEALPLY](command/UDG/20.15.2/LST-PODHEALPLY.md)
+- [SET PODHEALPLY](command/UDG/20.15.2/SET-PODHEALPLY.md)
 
 ## 证据
 

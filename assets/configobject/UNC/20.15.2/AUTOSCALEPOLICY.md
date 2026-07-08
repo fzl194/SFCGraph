@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-AUTOSCALEPOLICY]] · DSP AUTOSCALEPOLICY
+- [DSP AUTOSCALEPOLICY](command/UNC/20.15.2/DSP-AUTOSCALEPOLICY.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PROCMSGQUEUE]] · DSP PROCMSGQUEUE
+- [DSP PROCMSGQUEUE](command/UDG/20.15.2/DSP-PROCMSGQUEUE.md)
 
 ## 证据
 

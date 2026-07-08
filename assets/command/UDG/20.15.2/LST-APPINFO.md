@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/APPINFO]] · 应用信息（APPINFO）
+- [应用信息（APPINFO）](configobject/UDG/20.15.2/APPINFO.md)
 
 ## 使用实例
 

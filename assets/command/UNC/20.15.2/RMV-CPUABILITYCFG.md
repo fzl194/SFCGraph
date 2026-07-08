@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CPUABILITYCFG]] · 不同CPU类型的能力系数和基础消耗。（CPUABILITYCFG）
+- [不同CPU类型的能力系数和基础消耗。（CPUABILITYCFG）](configobject/UNC/20.15.2/CPUABILITYCFG.md)
 
 ## 使用实例
 

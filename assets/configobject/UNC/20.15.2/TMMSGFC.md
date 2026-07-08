@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-TMMSGFC]] · LST TMMSGFC
-- [[command/UNC/20.15.2/SET-TMMSGFC]] · SET TMMSGFC
+- [LST TMMSGFC](command/UNC/20.15.2/LST-TMMSGFC.md)
+- [SET TMMSGFC](command/UNC/20.15.2/SET-TMMSGFC.md)
 
 ## 证据
 

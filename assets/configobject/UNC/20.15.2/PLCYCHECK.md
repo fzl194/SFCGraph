@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-PLCYCHECK]] · STR PLCYCHECK
+- [STR PLCYCHECK](command/UNC/20.15.2/STR-PLCYCHECK.md)
 
 ## 证据
 

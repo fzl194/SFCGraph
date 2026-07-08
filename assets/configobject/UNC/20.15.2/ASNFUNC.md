@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ASNFUNC]] · LST ASNFUNC
-- [[command/UNC/20.15.2/SET-ASNFUNC]] · SET ASNFUNC
+- [LST ASNFUNC](command/UNC/20.15.2/LST-ASNFUNC.md)
+- [SET ASNFUNC](command/UNC/20.15.2/SET-ASNFUNC.md)
 
 ## 证据
 

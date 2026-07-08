@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SERVICENAME]] · DSP SERVICENAME
+- [DSP SERVICENAME](command/UDG/20.15.2/DSP-SERVICENAME.md)
 
 ## 证据
 

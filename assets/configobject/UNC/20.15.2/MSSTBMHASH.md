@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSTBMHASH]] · DSP MSSTBMHASH
+- [DSP MSSTBMHASH](command/UNC/20.15.2/DSP-MSSTBMHASH.md)
 
 ## 证据
 

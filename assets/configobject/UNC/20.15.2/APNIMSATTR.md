@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNIMSATTR]] · LST APNIMSATTR
-- [[command/UNC/20.15.2/SET-APNIMSATTR]] · SET APNIMSATTR
+- [LST APNIMSATTR](command/UNC/20.15.2/LST-APNIMSATTR.md)
+- [SET APNIMSATTR](command/UNC/20.15.2/SET-APNIMSATTR.md)
 
 ## 证据
 

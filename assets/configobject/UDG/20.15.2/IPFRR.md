@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-IPFRR]] · LST IPFRR
-- [[command/UDG/20.15.2/SET-IPFRR]] · SET IPFRR
+- [LST IPFRR](command/UDG/20.15.2/LST-IPFRR.md)
+- [SET IPFRR](command/UDG/20.15.2/SET-IPFRR.md)
 
 ## 证据
 

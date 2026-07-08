@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DRINST]] · ADD DRINST
-- [[command/UNC/20.15.2/LST-DRINST]] · LST DRINST
-- [[command/UNC/20.15.2/RMV-DRINST]] · RMV DRINST
+- [ADD DRINST](command/UNC/20.15.2/ADD-DRINST.md)
+- [LST DRINST](command/UNC/20.15.2/LST-DRINST.md)
+- [RMV DRINST](command/UNC/20.15.2/RMV-DRINST.md)
 
 ## 证据
 

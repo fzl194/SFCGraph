@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ADDRPARA]] · LST ADDRPARA
-- [[command/UNC/20.15.2/SET-ADDRPARA]] · SET ADDRPARA
+- [LST ADDRPARA](command/UNC/20.15.2/LST-ADDRPARA.md)
+- [SET ADDRPARA](command/UNC/20.15.2/SET-ADDRPARA.md)
 
 ## 证据
 

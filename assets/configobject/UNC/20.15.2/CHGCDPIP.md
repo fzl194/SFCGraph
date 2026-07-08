@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CHGCDPIP]] · ADD CHGCDPIP
-- [[command/UNC/20.15.2/DSP-CHGCDPIP]] · DSP CHGCDPIP
-- [[command/UNC/20.15.2/LST-CHGCDPIP]] · LST CHGCDPIP
-- [[command/UNC/20.15.2/RMV-CHGCDPIP]] · RMV CHGCDPIP
+- [ADD CHGCDPIP](command/UNC/20.15.2/ADD-CHGCDPIP.md)
+- [DSP CHGCDPIP](command/UNC/20.15.2/DSP-CHGCDPIP.md)
+- [LST CHGCDPIP](command/UNC/20.15.2/LST-CHGCDPIP.md)
+- [RMV CHGCDPIP](command/UNC/20.15.2/RMV-CHGCDPIP.md)
 
 ## 证据
 

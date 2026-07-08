@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IUARD]] · ADD IUARD
-- [[command/UNC/20.15.2/LST-IUARD]] · LST IUARD
-- [[command/UNC/20.15.2/MOD-IUARD]] · MOD IUARD
-- [[command/UNC/20.15.2/RMV-IUARD]] · RMV IUARD
+- [ADD IUARD](command/UNC/20.15.2/ADD-IUARD.md)
+- [LST IUARD](command/UNC/20.15.2/LST-IUARD.md)
+- [MOD IUARD](command/UNC/20.15.2/MOD-IUARD.md)
+- [RMV IUARD](command/UNC/20.15.2/RMV-IUARD.md)
 
 ## 证据
 

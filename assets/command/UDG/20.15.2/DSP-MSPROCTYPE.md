@@ -37,7 +37,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MSPROCTYPE]] · 微服务进程类型（MSPROCTYPE）
+- [微服务进程类型（MSPROCTYPE）](configobject/UDG/20.15.2/MSPROCTYPE.md)
 
 ## 使用实例
 

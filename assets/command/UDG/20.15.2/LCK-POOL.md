@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/POOL]] · 地址池（POOL）
+- [地址池（POOL）](configobject/UDG/20.15.2/POOL.md)
 
 ## 使用实例
 

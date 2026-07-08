@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHGRATECTRL]] · LST CHGRATECTRL
-- [[command/UNC/20.15.2/SET-CHGRATECTRL]] · SET CHGRATECTRL
+- [LST CHGRATECTRL](command/UNC/20.15.2/LST-CHGRATECTRL.md)
+- [SET CHGRATECTRL](command/UNC/20.15.2/SET-CHGRATECTRL.md)
 
 ## 证据
 

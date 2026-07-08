@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-SMARTFCDURA]] · ACT SMARTFCDURA
-- [[command/UNC/20.15.2/DSP-SMARTFCDURA]] · DSP SMARTFCDURA
+- [ACT SMARTFCDURA](command/UNC/20.15.2/ACT-SMARTFCDURA.md)
+- [DSP SMARTFCDURA](command/UNC/20.15.2/DSP-SMARTFCDURA.md)
 
 ## 证据
 

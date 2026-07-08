@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFPMNINTERFUNC]] · 基于对端PLMN国际漫游功能参数（NRFPMNINTERFUNC）
+- [基于对端PLMN国际漫游功能参数（NRFPMNINTERFUNC）](configobject/UNC/20.15.2/NRFPMNINTERFUNC.md)
 
 ## 使用实例
 

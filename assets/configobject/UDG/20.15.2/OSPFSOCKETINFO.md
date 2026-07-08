@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-OSPFSOCKETINFO]] · DSP OSPFSOCKETINFO
+- [DSP OSPFSOCKETINFO](command/UDG/20.15.2/DSP-OSPFSOCKETINFO.md)
 
 ## 证据
 

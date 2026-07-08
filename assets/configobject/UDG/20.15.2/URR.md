@@ -22,15 +22,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-URR]] · ADD URR
-- [[command/UDG/20.15.2/LST-URR]] · LST URR
-- [[command/UDG/20.15.2/MOD-URR]] · MOD URR
-- [[command/UDG/20.15.2/RMV-URR]] · RMV URR
+- [ADD URR](command/UDG/20.15.2/ADD-URR.md)
+- [LST URR](command/UDG/20.15.2/LST-URR.md)
+- [MOD URR](command/UDG/20.15.2/MOD-URR.md)
+- [RMV URR](command/UDG/20.15.2/RMV-URR.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/QOSPROP]] · QOSPROP
-- [[configobject/UDG/20.15.2/URRGROUP]] · URRGROUP
+- [QOSPROP](configobject/UDG/20.15.2/QOSPROP.md)
+- [URRGROUP](configobject/UDG/20.15.2/URRGROUP.md)
 
 ## 证据
 

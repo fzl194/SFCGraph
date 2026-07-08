@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CHRFILESAVETIME]] · 文件存留期设置（CHRFILESAVETIME）
+- [文件存留期设置（CHRFILESAVETIME）](configobject/UNC/20.15.2/CHRFILESAVETIME.md)
 
 ## 使用实例
 

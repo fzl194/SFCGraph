@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SET-CMDLEVDFTBEH]] · SET CMDLEVDFTBEH
+- [SET CMDLEVDFTBEH](command/UNC/20.15.2/SET-CMDLEVDFTBEH.md)
 
 ## 证据
 

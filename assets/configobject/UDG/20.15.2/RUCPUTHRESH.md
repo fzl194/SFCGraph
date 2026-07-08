@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/SET-RUCPUTHRESH]] · SET RUCPUTHRESH
+- [SET RUCPUTHRESH](command/UDG/20.15.2/SET-RUCPUTHRESH.md)
 
 ## 证据
 

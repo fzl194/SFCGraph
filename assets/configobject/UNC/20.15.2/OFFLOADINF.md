@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OFFLOADINF]] · LST OFFLOADINF
-- [[command/UNC/20.15.2/SET-OFFLOADINF]] · SET OFFLOADINF
+- [LST OFFLOADINF](command/UNC/20.15.2/LST-OFFLOADINF.md)
+- [SET OFFLOADINF](command/UNC/20.15.2/SET-OFFLOADINF.md)
 
 ## 证据
 

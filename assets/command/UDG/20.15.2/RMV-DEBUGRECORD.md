@@ -43,7 +43,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/DEBUGRECORD]] · 异常信息记录（DEBUGRECORD）
+- [异常信息记录（DEBUGRECORD）](configobject/UDG/20.15.2/DEBUGRECORD.md)
 
 ## 使用实例
 

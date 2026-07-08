@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-L2TPTUNNEL]] · DSP L2TPTUNNEL
+- [DSP L2TPTUNNEL](command/UDG/20.15.2/DSP-L2TPTUNNEL.md)
 
 ## 证据
 

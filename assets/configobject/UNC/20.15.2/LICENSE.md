@@ -26,11 +26,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-LICENSE]] · ACT LICENSE
-- [[command/UNC/20.15.2/CMP-LICENSE]] · CMP LICENSE
-- [[command/UNC/20.15.2/DSP-LICENSE]] · DSP LICENSE
-- [[command/UNC/20.15.2/LST-LICENSE]] · LST LICENSE
-- [[command/UNC/20.15.2/RVK-LICENSE]] · RVK LICENSE
+- [ACT LICENSE](command/UNC/20.15.2/ACT-LICENSE.md)
+- [CMP LICENSE](command/UNC/20.15.2/CMP-LICENSE.md)
+- [DSP LICENSE](command/UNC/20.15.2/DSP-LICENSE.md)
+- [LST LICENSE](command/UNC/20.15.2/LST-LICENSE.md)
+- [RVK LICENSE](command/UNC/20.15.2/RVK-LICENSE.md)
 
 ## 证据
 

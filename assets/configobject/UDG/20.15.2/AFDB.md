@@ -26,9 +26,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-AFDB]] · DSP AFDB
-- [[command/UDG/20.15.2/LOD-AFDB]] · LOD AFDB
-- [[command/UDG/20.15.2/RMV-AFDB]] · RMV AFDB
+- [DSP AFDB](command/UDG/20.15.2/DSP-AFDB.md)
+- [LOD AFDB](command/UDG/20.15.2/LOD-AFDB.md)
+- [RMV AFDB](command/UDG/20.15.2/RMV-AFDB.md)
 
 ## 证据
 

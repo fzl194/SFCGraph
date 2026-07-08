@@ -55,7 +55,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LOG]] · 收集日志信息（LOG）
+- [收集日志信息（LOG）](configobject/UNC/20.15.2/LOG.md)
 
 ## 使用实例
 

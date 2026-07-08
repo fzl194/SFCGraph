@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-NSSFMSGSTAT]] · CLR NSSFMSGSTAT
-- [[command/UNC/20.15.2/DSP-NSSFMSGSTAT]] · DSP NSSFMSGSTAT
+- [CLR NSSFMSGSTAT](command/UNC/20.15.2/CLR-NSSFMSGSTAT.md)
+- [DSP NSSFMSGSTAT](command/UNC/20.15.2/DSP-NSSFMSGSTAT.md)
 
 ## 证据
 

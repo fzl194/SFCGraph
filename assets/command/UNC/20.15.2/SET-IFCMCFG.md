@@ -40,7 +40,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IFCMCFG]] · IFCM配置信息（IFCMCFG）
+- [IFCM配置信息（IFCMCFG）](configobject/UNC/20.15.2/IFCMCFG.md)
 
 ## 使用实例
 

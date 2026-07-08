@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RMMSGSTC]] · DSP RMMSGSTC
+- [DSP RMMSGSTC](command/UNC/20.15.2/DSP-RMMSGSTC.md)
 
 ## 证据
 

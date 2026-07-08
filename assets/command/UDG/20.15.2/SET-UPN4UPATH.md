@@ -66,7 +66,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/UPN4UPATH]] · N4U路径相关属性（UPN4UPATH）
+- [N4U路径相关属性（UPN4UPATH）](configobject/UDG/20.15.2/UPN4UPATH.md)
 
 ## 关联任务
 

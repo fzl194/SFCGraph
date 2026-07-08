@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-REASTIMEOUT]] · LST REASTIMEOUT
-- [[command/UDG/20.15.2/SET-REASTIMEOUT]] · SET REASTIMEOUT
+- [LST REASTIMEOUT](command/UDG/20.15.2/LST-REASTIMEOUT.md)
+- [SET REASTIMEOUT](command/UDG/20.15.2/SET-REASTIMEOUT.md)
 
 ## 证据
 

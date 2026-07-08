@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-L2TPN4KEY]] · LST L2TPN4KEY
-- [[command/UDG/20.15.2/SET-L2TPN4KEY]] · SET L2TPN4KEY
+- [LST L2TPN4KEY](command/UDG/20.15.2/LST-L2TPN4KEY.md)
+- [SET L2TPN4KEY](command/UDG/20.15.2/SET-L2TPN4KEY.md)
 
 ## 证据
 

@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SOCKBLACKBOX]] · DSP SOCKBLACKBOX
+- [DSP SOCKBLACKBOX](command/UDG/20.15.2/DSP-SOCKBLACKBOX.md)
 
 ## 证据
 

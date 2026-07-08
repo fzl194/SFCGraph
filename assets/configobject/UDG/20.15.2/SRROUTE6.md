@@ -21,17 +21,17 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SRROUTE6]] · ADD SRROUTE6
-- [[command/UDG/20.15.2/DSP-SRROUTE6]] · DSP SRROUTE6
-- [[command/UDG/20.15.2/LST-SRROUTE6]] · LST SRROUTE6
-- [[command/UDG/20.15.2/MOD-SRROUTE6]] · MOD SRROUTE6
-- [[command/UDG/20.15.2/RMV-SRROUTE6]] · RMV SRROUTE6
+- [ADD SRROUTE6](command/UDG/20.15.2/ADD-SRROUTE6.md)
+- [DSP SRROUTE6](command/UDG/20.15.2/DSP-SRROUTE6.md)
+- [LST SRROUTE6](command/UDG/20.15.2/LST-SRROUTE6.md)
+- [MOD SRROUTE6](command/UDG/20.15.2/MOD-SRROUTE6.md)
+- [RMV SRROUTE6](command/UDG/20.15.2/RMV-SRROUTE6.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/BFDSESSION]] · BFDSESSION
-- [[configobject/UDG/20.15.2/GRETUNNEL]] · GRETUNNEL
-- [[configobject/UDG/20.15.2/INTERFACE]] · INTERFACE
+- [BFDSESSION](configobject/UDG/20.15.2/BFDSESSION.md)
+- [GRETUNNEL](configobject/UDG/20.15.2/GRETUNNEL.md)
+- [INTERFACE](configobject/UDG/20.15.2/INTERFACE.md)
 
 ## 证据
 

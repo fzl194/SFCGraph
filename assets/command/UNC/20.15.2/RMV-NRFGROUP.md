@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFGROUP]] · 对端NRF实例组（NRFGROUP）
+- [对端NRF实例组（NRFGROUP）](configobject/UNC/20.15.2/NRFGROUP.md)
 
 ## 使用实例
 

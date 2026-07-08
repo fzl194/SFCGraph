@@ -32,7 +32,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SNMPINFO]] · 网元长连接信息（SNMPINFO）
+- [网元长连接信息（SNMPINFO）](configobject/UDG/20.15.2/SNMPINFO.md)
 
 ## 使用实例
 

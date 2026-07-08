@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PLMNMATCH]] · MCC与MNC的归属关系（PLMNMATCH）
+- [MCC与MNC的归属关系（PLMNMATCH）](configobject/UNC/20.15.2/PLMNMATCH.md)
 
 ## 使用实例
 

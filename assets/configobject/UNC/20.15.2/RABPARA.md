@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-RABPARA]] · LST RABPARA
-- [[command/UNC/20.15.2/SET-RABPARA]] · SET RABPARA
+- [LST RABPARA](command/UNC/20.15.2/LST-RABPARA.md)
+- [SET RABPARA](command/UNC/20.15.2/SET-RABPARA.md)
 
 ## 证据
 

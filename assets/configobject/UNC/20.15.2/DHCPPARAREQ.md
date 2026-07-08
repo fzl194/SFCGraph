@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DHCPPARAREQ]] · LST DHCPPARAREQ
-- [[command/UNC/20.15.2/SET-DHCPPARAREQ]] · SET DHCPPARAREQ
+- [LST DHCPPARAREQ](command/UNC/20.15.2/LST-DHCPPARAREQ.md)
+- [SET DHCPPARAREQ](command/UNC/20.15.2/SET-DHCPPARAREQ.md)
 
 ## 证据
 

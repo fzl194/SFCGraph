@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LDPSSMGTCPSOCK]] · DSP LDPSSMGTCPSOCK
+- [DSP LDPSSMGTCPSOCK](command/UNC/20.15.2/DSP-LDPSSMGTCPSOCK.md)
 
 ## 证据
 

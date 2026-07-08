@@ -32,8 +32,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HTTPFCCONF]] · LST HTTPFCCONF
-- [[command/UDG/20.15.2/SET-HTTPFCCONF]] · SET HTTPFCCONF
+- [LST HTTPFCCONF](command/UDG/20.15.2/LST-HTTPFCCONF.md)
+- [SET HTTPFCCONF](command/UDG/20.15.2/SET-HTTPFCCONF.md)
 
 ## 证据
 

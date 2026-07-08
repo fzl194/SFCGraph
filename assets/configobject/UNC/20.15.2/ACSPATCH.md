@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLB-ACSPATCH]] · CLB ACSPATCH
-- [[command/UNC/20.15.2/RMV-ACSPATCH]] · RMV ACSPATCH
+- [CLB ACSPATCH](command/UNC/20.15.2/CLB-ACSPATCH.md)
+- [RMV ACSPATCH](command/UNC/20.15.2/RMV-ACSPATCH.md)
 
 ## 证据
 

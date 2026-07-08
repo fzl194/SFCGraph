@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/IPALLOCBYLOCGLBSW]] · 基于位置区分配地址的全局开关（IPALLOCBYLOCGLBSW）
+- [基于位置区分配地址的全局开关（IPALLOCBYLOCGLBSW）](configobject/UDG/20.15.2/IPALLOCBYLOCGLBSW.md)
 
 ## 使用实例
 

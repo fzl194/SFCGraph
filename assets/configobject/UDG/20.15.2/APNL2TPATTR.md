@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNL2TPATTR]] · LST APNL2TPATTR
-- [[command/UDG/20.15.2/SET-APNL2TPATTR]] · SET APNL2TPATTR
+- [LST APNL2TPATTR](command/UDG/20.15.2/LST-APNL2TPATTR.md)
+- [SET APNL2TPATTR](command/UDG/20.15.2/SET-APNL2TPATTR.md)
 
 ## 证据
 

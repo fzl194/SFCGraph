@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SIGBVC]] · DSP SIGBVC
-- [[command/UNC/20.15.2/RST-SIGBVC]] · RST SIGBVC
+- [DSP SIGBVC](command/UNC/20.15.2/DSP-SIGBVC.md)
+- [RST SIGBVC](command/UNC/20.15.2/RST-SIGBVC.md)
 
 ## 证据
 

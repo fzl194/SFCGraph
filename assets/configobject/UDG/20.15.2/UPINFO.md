@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPINFO]] · LST UPINFO
-- [[command/UDG/20.15.2/SET-UPINFO]] · SET UPINFO
+- [LST UPINFO](command/UDG/20.15.2/LST-UPINFO.md)
+- [SET UPINFO](command/UDG/20.15.2/SET-UPINFO.md)
 
 ## 证据
 

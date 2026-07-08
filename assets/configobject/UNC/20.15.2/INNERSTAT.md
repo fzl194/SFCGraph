@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-INNERSTAT]] · LST INNERSTAT
-- [[command/UNC/20.15.2/SET-INNERSTAT]] · SET INNERSTAT
+- [LST INNERSTAT](command/UNC/20.15.2/LST-INNERSTAT.md)
+- [SET INNERSTAT](command/UNC/20.15.2/SET-INNERSTAT.md)
 
 ## 证据
 

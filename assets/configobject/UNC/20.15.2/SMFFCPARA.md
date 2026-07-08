@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMFFCPARA]] · LST SMFFCPARA
-- [[command/UNC/20.15.2/SET-SMFFCPARA]] · SET SMFFCPARA
+- [LST SMFFCPARA](command/UNC/20.15.2/LST-SMFFCPARA.md)
+- [SET SMFFCPARA](command/UNC/20.15.2/SET-SMFFCPARA.md)
 
 ## 证据
 

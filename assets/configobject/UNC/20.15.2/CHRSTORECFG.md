@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHRSTORECFG]] · LST CHRSTORECFG
-- [[command/UNC/20.15.2/SET-CHRSTORECFG]] · SET CHRSTORECFG
+- [LST CHRSTORECFG](command/UNC/20.15.2/LST-CHRSTORECFG.md)
+- [SET CHRSTORECFG](command/UNC/20.15.2/SET-CHRSTORECFG.md)
 
 ## 证据
 

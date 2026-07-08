@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGAREATZ]] · ADD NGAREATZ
-- [[command/UNC/20.15.2/LST-NGAREATZ]] · LST NGAREATZ
-- [[command/UNC/20.15.2/MOD-NGAREATZ]] · MOD NGAREATZ
-- [[command/UNC/20.15.2/RMV-NGAREATZ]] · RMV NGAREATZ
+- [ADD NGAREATZ](command/UNC/20.15.2/ADD-NGAREATZ.md)
+- [LST NGAREATZ](command/UNC/20.15.2/LST-NGAREATZ.md)
+- [MOD NGAREATZ](command/UNC/20.15.2/MOD-NGAREATZ.md)
+- [RMV NGAREATZ](command/UNC/20.15.2/RMV-NGAREATZ.md)
 
 ## 证据
 

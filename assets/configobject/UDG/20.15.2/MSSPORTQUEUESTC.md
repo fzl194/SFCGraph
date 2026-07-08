@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSPORTQUEUESTC]] · DSP MSSPORTQUEUESTC
+- [DSP MSSPORTQUEUESTC](command/UDG/20.15.2/DSP-MSSPORTQUEUESTC.md)
 
 ## 证据
 

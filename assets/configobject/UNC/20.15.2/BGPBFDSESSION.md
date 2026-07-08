@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-BGPBFDSESSION]] · DSP BGPBFDSESSION
+- [DSP BGPBFDSESSION](command/UNC/20.15.2/DSP-BGPBFDSESSION.md)
 
 ## 证据
 

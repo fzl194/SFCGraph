@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SUBGPMEM]] · ADD SUBGPMEM
-- [[command/UNC/20.15.2/LST-SUBGPMEM]] · LST SUBGPMEM
-- [[command/UNC/20.15.2/RMV-SUBGPMEM]] · RMV SUBGPMEM
+- [ADD SUBGPMEM](command/UNC/20.15.2/ADD-SUBGPMEM.md)
+- [LST SUBGPMEM](command/UNC/20.15.2/LST-SUBGPMEM.md)
+- [RMV SUBGPMEM](command/UNC/20.15.2/RMV-SUBGPMEM.md)
 
 ## 证据
 

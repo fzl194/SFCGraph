@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MEASUNIT]] · 测量指标模型（MEASUNIT）
+- [测量指标模型（MEASUNIT）](configobject/UNC/20.15.2/MEASUNIT.md)
 
 ## 使用实例
 

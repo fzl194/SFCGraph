@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CFGRECOVERRESULT]] · 系统配置恢复结果（CFGRECOVERRESULT）
+- [系统配置恢复结果（CFGRECOVERRESULT）](configobject/UNC/20.15.2/CFGRECOVERRESULT.md)
 
 ## 使用实例
 

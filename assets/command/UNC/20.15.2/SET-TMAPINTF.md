@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TMAPINTF]] · Tm接口参数（TMAPINTF）
+- [Tm接口参数（TMAPINTF）](configobject/UNC/20.15.2/TMAPINTF.md)
 
 ## 使用实例
 

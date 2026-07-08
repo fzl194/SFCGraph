@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DDOS]] · LST DDOS
-- [[command/UDG/20.15.2/SET-DDOS]] · SET DDOS
+- [LST DDOS](command/UDG/20.15.2/LST-DDOS.md)
+- [SET DDOS](command/UDG/20.15.2/SET-DDOS.md)
 
 ## 证据
 

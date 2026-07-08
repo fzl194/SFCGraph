@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-NBOFFLOADBYMME]] · STR NBOFFLOADBYMME
+- [STR NBOFFLOADBYMME](command/UNC/20.15.2/STR-NBOFFLOADBYMME.md)
 
 ## 证据
 

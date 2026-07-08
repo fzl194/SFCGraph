@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/S11INTFSUBNET]] · S11接口子网配置（S11INTFSUBNET）
+- [S11接口子网配置（S11INTFSUBNET）](configobject/UNC/20.15.2/S11INTFSUBNET.md)
 
 ## 使用实例
 

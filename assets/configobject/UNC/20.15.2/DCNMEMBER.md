@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DCNMEMBER]] · ADD DCNMEMBER
-- [[command/UNC/20.15.2/LST-DCNMEMBER]] · LST DCNMEMBER
-- [[command/UNC/20.15.2/RMV-DCNMEMBER]] · RMV DCNMEMBER
+- [ADD DCNMEMBER](command/UNC/20.15.2/ADD-DCNMEMBER.md)
+- [LST DCNMEMBER](command/UNC/20.15.2/LST-DCNMEMBER.md)
+- [RMV DCNMEMBER](command/UNC/20.15.2/RMV-DCNMEMBER.md)
 
 ## 证据
 

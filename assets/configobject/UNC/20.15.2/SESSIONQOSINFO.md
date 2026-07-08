@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SESSIONQOSINFO]] · DSP SESSIONQOSINFO
+- [DSP SESSIONQOSINFO](command/UNC/20.15.2/DSP-SESSIONQOSINFO.md)
 
 ## 证据
 

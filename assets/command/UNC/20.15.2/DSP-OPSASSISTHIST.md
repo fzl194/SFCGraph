@@ -38,7 +38,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OPSASSISTHIST]] · 系统助手的历史信息（OPSASSISTHIST）
+- [系统助手的历史信息（OPSASSISTHIST）](configobject/UNC/20.15.2/OPSASSISTHIST.md)
 
 ## 使用实例
 

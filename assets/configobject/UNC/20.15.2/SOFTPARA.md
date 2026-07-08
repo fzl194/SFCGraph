@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SOFTPARA]] · LST SOFTPARA
-- [[command/UNC/20.15.2/SET-SOFTPARA]] · SET SOFTPARA
+- [LST SOFTPARA](command/UNC/20.15.2/LST-SOFTPARA.md)
+- [SET SOFTPARA](command/UNC/20.15.2/SET-SOFTPARA.md)
 
 ## 证据
 

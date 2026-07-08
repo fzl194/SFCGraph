@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SAIFUNC]] · LST SAIFUNC
-- [[command/UDG/20.15.2/SET-SAIFUNC]] · SET SAIFUNC
+- [LST SAIFUNC](command/UDG/20.15.2/LST-SAIFUNC.md)
+- [SET SAIFUNC](command/UDG/20.15.2/SET-SAIFUNC.md)
 
 ## 证据
 

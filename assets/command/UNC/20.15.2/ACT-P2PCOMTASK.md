@@ -55,7 +55,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/P2PCOMTASK]] · SDR点对点通信质量检测任务（P2PCOMTASK）
+- [SDR点对点通信质量检测任务（P2PCOMTASK）](configobject/UNC/20.15.2/P2PCOMTASK.md)
 
 ## 使用实例
 

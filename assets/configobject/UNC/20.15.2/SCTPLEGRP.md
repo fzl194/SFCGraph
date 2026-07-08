@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCTPLEGRP]] · ADD SCTPLEGRP
-- [[command/UNC/20.15.2/LST-SCTPLEGRP]] · LST SCTPLEGRP
-- [[command/UNC/20.15.2/RMV-SCTPLEGRP]] · RMV SCTPLEGRP
+- [ADD SCTPLEGRP](command/UNC/20.15.2/ADD-SCTPLEGRP.md)
+- [LST SCTPLEGRP](command/UNC/20.15.2/LST-SCTPLEGRP.md)
+- [RMV SCTPLEGRP](command/UNC/20.15.2/RMV-SCTPLEGRP.md)
 
 ## 证据
 

@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGTAGP]] · ADD NGTAGP
-- [[command/UNC/20.15.2/LST-NGTAGP]] · LST NGTAGP
-- [[command/UNC/20.15.2/MOD-NGTAGP]] · MOD NGTAGP
-- [[command/UNC/20.15.2/RMV-NGTAGP]] · RMV NGTAGP
+- [ADD NGTAGP](command/UNC/20.15.2/ADD-NGTAGP.md)
+- [LST NGTAGP](command/UNC/20.15.2/LST-NGTAGP.md)
+- [MOD NGTAGP](command/UNC/20.15.2/MOD-NGTAGP.md)
+- [RMV NGTAGP](command/UNC/20.15.2/RMV-NGTAGP.md)
 
 ## 证据
 

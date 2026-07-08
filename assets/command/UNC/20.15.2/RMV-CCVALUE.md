@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CCVALUE]] · 计费特征值（CCVALUE）
+- [计费特征值（CCVALUE）](configobject/UNC/20.15.2/CCVALUE.md)
 
 ## 使用实例
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QOSREMARK]] · LST QOSREMARK
-- [[command/UNC/20.15.2/SET-QOSREMARK]] · SET QOSREMARK
+- [LST QOSREMARK](command/UNC/20.15.2/LST-QOSREMARK.md)
+- [SET QOSREMARK](command/UNC/20.15.2/SET-QOSREMARK.md)
 
 ## 证据
 

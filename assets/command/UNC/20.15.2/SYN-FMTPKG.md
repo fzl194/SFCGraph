@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/FMTPKG]] · 同步格式引擎包（FMTPKG）
+- [同步格式引擎包（FMTPKG）](configobject/UNC/20.15.2/FMTPKG.md)
 
 ## 使用实例
 

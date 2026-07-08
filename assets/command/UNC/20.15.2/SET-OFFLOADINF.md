@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OFFLOADINF]] · 迁移配置信息（OFFLOADINF）
+- [迁移配置信息（OFFLOADINF）](configobject/UNC/20.15.2/OFFLOADINF.md)
 
 ## 使用实例
 

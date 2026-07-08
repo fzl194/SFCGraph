@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/FLOWLETPARA]] · 大流优化参数（FLOWLETPARA）
+- [大流优化参数（FLOWLETPARA）](configobject/UDG/20.15.2/FLOWLETPARA.md)
 
 ## 关联任务
 

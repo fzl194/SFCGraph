@@ -36,7 +36,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VHAMEMBER]] · vHA ETCD集群节点详细信息（VHAMEMBER）
+- [vHA ETCD集群节点详细信息（VHAMEMBER）](configobject/UNC/20.15.2/VHAMEMBER.md)
 
 ## 使用实例
 

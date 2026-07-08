@@ -28,9 +28,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TNFGRP]] · ADD TNFGRP
-- [[command/UNC/20.15.2/LST-TNFGRP]] · LST TNFGRP
-- [[command/UNC/20.15.2/RMV-TNFGRP]] · RMV TNFGRP
+- [ADD TNFGRP](command/UNC/20.15.2/ADD-TNFGRP.md)
+- [LST TNFGRP](command/UNC/20.15.2/LST-TNFGRP.md)
+- [RMV TNFGRP](command/UNC/20.15.2/RMV-TNFGRP.md)
 
 ## 证据
 

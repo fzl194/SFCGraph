@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-DSCPMAP]] · ADD DSCPMAP
-- [[command/UDG/20.15.2/LST-DSCPMAP]] · LST DSCPMAP
-- [[command/UDG/20.15.2/MOD-DSCPMAP]] · MOD DSCPMAP
-- [[command/UDG/20.15.2/RMV-DSCPMAP]] · RMV DSCPMAP
+- [ADD DSCPMAP](command/UDG/20.15.2/ADD-DSCPMAP.md)
+- [LST DSCPMAP](command/UDG/20.15.2/LST-DSCPMAP.md)
+- [MOD DSCPMAP](command/UDG/20.15.2/MOD-DSCPMAP.md)
+- [RMV DSCPMAP](command/UDG/20.15.2/RMV-DSCPMAP.md)
 
 ## 证据
 

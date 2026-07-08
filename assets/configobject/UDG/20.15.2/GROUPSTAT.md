@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-GROUPSTAT]] · DSP GROUPSTAT
+- [DSP GROUPSTAT](command/UDG/20.15.2/DSP-GROUPSTAT.md)
 
 ## 证据
 

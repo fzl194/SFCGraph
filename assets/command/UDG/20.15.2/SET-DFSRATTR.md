@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/DFSRATTR]] · 双发选收属性配置（DFSRATTR）
+- [双发选收属性配置（DFSRATTR）](configobject/UDG/20.15.2/DFSRATTR.md)
 
 ## 使用实例
 

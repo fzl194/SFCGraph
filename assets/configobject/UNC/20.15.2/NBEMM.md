@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NBEMM]] · LST NBEMM
-- [[command/UNC/20.15.2/SET-NBEMM]] · SET NBEMM
+- [LST NBEMM](command/UNC/20.15.2/LST-NBEMM.md)
+- [SET NBEMM](command/UNC/20.15.2/SET-NBEMM.md)
 
 ## 证据
 

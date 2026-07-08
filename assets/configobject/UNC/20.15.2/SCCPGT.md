@@ -23,11 +23,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCCPGT]] · ADD SCCPGT
-- [[command/UNC/20.15.2/LST-SCCPGT]] · LST SCCPGT
-- [[command/UNC/20.15.2/MOD-SCCPGT]] · MOD SCCPGT
-- [[command/UNC/20.15.2/RMV-SCCPGT]] · RMV SCCPGT
-- [[command/UNC/20.15.2/TST-SCCPGT]] · TST SCCPGT
+- [ADD SCCPGT](command/UNC/20.15.2/ADD-SCCPGT.md)
+- [LST SCCPGT](command/UNC/20.15.2/LST-SCCPGT.md)
+- [MOD SCCPGT](command/UNC/20.15.2/MOD-SCCPGT.md)
+- [RMV SCCPGT](command/UNC/20.15.2/RMV-SCCPGT.md)
+- [TST SCCPGT](command/UNC/20.15.2/TST-SCCPGT.md)
 
 ## 证据
 

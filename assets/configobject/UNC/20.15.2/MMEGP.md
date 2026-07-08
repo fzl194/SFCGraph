@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MMEGP]] · ADD MMEGP
-- [[command/UNC/20.15.2/LST-MMEGP]] · LST MMEGP
-- [[command/UNC/20.15.2/MOD-MMEGP]] · MOD MMEGP
-- [[command/UNC/20.15.2/RMV-MMEGP]] · RMV MMEGP
+- [ADD MMEGP](command/UNC/20.15.2/ADD-MMEGP.md)
+- [LST MMEGP](command/UNC/20.15.2/LST-MMEGP.md)
+- [MOD MMEGP](command/UNC/20.15.2/MOD-MMEGP.md)
+- [RMV MMEGP](command/UNC/20.15.2/RMV-MMEGP.md)
 
 ## 证据
 

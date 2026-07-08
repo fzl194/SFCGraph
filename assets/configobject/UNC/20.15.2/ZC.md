@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ZC]] · ADD ZC
-- [[command/UNC/20.15.2/LST-ZC]] · LST ZC
-- [[command/UNC/20.15.2/RMV-ZC]] · RMV ZC
+- [ADD ZC](command/UNC/20.15.2/ADD-ZC.md)
+- [LST ZC](command/UNC/20.15.2/LST-ZC.md)
+- [RMV ZC](command/UNC/20.15.2/RMV-ZC.md)
 
 ## 证据
 

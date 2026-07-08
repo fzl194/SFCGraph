@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SBCAPLE]] · ADD SBCAPLE
-- [[command/UNC/20.15.2/LST-SBCAPLE]] · LST SBCAPLE
-- [[command/UNC/20.15.2/MOD-SBCAPLE]] · MOD SBCAPLE
-- [[command/UNC/20.15.2/RMV-SBCAPLE]] · RMV SBCAPLE
+- [ADD SBCAPLE](command/UNC/20.15.2/ADD-SBCAPLE.md)
+- [LST SBCAPLE](command/UNC/20.15.2/LST-SBCAPLE.md)
+- [MOD SBCAPLE](command/UNC/20.15.2/MOD-SBCAPLE.md)
+- [RMV SBCAPLE](command/UNC/20.15.2/RMV-SBCAPLE.md)
 
 ## 证据
 

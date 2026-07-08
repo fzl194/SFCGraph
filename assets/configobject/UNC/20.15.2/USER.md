@@ -23,11 +23,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-USER]] · ADD USER
-- [[command/UNC/20.15.2/DSP-USER]] · DSP USER
-- [[command/UNC/20.15.2/MOD-USER]] · MOD USER
-- [[command/UNC/20.15.2/RMV-USER]] · RMV USER
-- [[command/UNC/20.15.2/ULK-USER]] · ULK USER
+- [ADD USER](command/UNC/20.15.2/ADD-USER.md)
+- [DSP USER](command/UNC/20.15.2/DSP-USER.md)
+- [MOD USER](command/UNC/20.15.2/MOD-USER.md)
+- [RMV USER](command/UNC/20.15.2/RMV-USER.md)
+- [ULK USER](command/UNC/20.15.2/ULK-USER.md)
 
 ## 证据
 

@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STP-CDRRECEIVE]] · STP CDRRECEIVE
+- [STP CDRRECEIVE](command/UNC/20.15.2/STP-CDRRECEIVE.md)
 
 ## 证据
 

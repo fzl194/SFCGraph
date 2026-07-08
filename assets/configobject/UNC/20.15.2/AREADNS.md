@@ -51,10 +51,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AREADNS]] · ADD AREADNS
-- [[command/UNC/20.15.2/LST-AREADNS]] · LST AREADNS
-- [[command/UNC/20.15.2/MOD-AREADNS]] · MOD AREADNS
-- [[command/UNC/20.15.2/RMV-AREADNS]] · RMV AREADNS
+- [ADD AREADNS](command/UNC/20.15.2/ADD-AREADNS.md)
+- [LST AREADNS](command/UNC/20.15.2/LST-AREADNS.md)
+- [MOD AREADNS](command/UNC/20.15.2/MOD-AREADNS.md)
+- [RMV AREADNS](command/UNC/20.15.2/RMV-AREADNS.md)
 
 ## 证据
 

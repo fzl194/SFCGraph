@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-PODALMTH]] · ADD PODALMTH
-- [[command/UDG/20.15.2/LST-PODALMTH]] · LST PODALMTH
-- [[command/UDG/20.15.2/MOD-PODALMTH]] · MOD PODALMTH
-- [[command/UDG/20.15.2/RMV-PODALMTH]] · RMV PODALMTH
+- [ADD PODALMTH](command/UDG/20.15.2/ADD-PODALMTH.md)
+- [LST PODALMTH](command/UDG/20.15.2/LST-PODALMTH.md)
+- [MOD PODALMTH](command/UDG/20.15.2/MOD-PODALMTH.md)
+- [RMV PODALMTH](command/UDG/20.15.2/RMV-PODALMTH.md)
 
 ## 证据
 

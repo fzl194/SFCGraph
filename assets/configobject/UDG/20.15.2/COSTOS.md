@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-COSTOS]] · LST COSTOS
-- [[command/UDG/20.15.2/SET-COSTOS]] · SET COSTOS
+- [LST COSTOS](command/UDG/20.15.2/LST-COSTOS.md)
+- [SET COSTOS](command/UDG/20.15.2/SET-COSTOS.md)
 
 ## 证据
 

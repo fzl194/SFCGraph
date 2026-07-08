@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-REMINDTIME]] · LST REMINDTIME
-- [[command/UNC/20.15.2/MOD-REMINDTIME]] · MOD REMINDTIME
+- [LST REMINDTIME](command/UNC/20.15.2/LST-REMINDTIME.md)
+- [MOD REMINDTIME](command/UNC/20.15.2/MOD-REMINDTIME.md)
 
 ## 证据
 

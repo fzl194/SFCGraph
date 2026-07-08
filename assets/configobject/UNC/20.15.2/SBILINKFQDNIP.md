@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CHK-SBILINKFQDNIP]] · CHK SBILINKFQDNIP
+- [CHK SBILINKFQDNIP](command/UNC/20.15.2/CHK-SBILINKFQDNIP.md)
 
 ## 证据
 

@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAEPAYLOADINFO]] · DSP PAEPAYLOADINFO
+- [DSP PAEPAYLOADINFO](command/UDG/20.15.2/DSP-PAEPAYLOADINFO.md)
 
 ## 证据
 

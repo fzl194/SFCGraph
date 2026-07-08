@@ -29,9 +29,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/CLR-MSPROCESS]] · CLR MSPROCESS
-- [[command/UDG/20.15.2/DSP-MSPROCESS]] · DSP MSPROCESS
-- [[command/UDG/20.15.2/RST-MSPROCESS]] · RST MSPROCESS
+- [CLR MSPROCESS](command/UDG/20.15.2/CLR-MSPROCESS.md)
+- [DSP MSPROCESS](command/UDG/20.15.2/DSP-MSPROCESS.md)
+- [RST MSPROCESS](command/UDG/20.15.2/RST-MSPROCESS.md)
 
 ## 证据
 

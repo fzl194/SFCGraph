@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PREFIXFILTERNODE]] · IPv4地址前缀列表过滤器节点（PREFIXFILTERNODE）
+- [IPv4地址前缀列表过滤器节点（PREFIXFILTERNODE）](configobject/UDG/20.15.2/PREFIXFILTERNODE.md)
 
 ## 使用实例
 

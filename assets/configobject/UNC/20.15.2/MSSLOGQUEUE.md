@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSLOGQUEUE]] · DSP MSSLOGQUEUE
+- [DSP MSSLOGQUEUE](command/UNC/20.15.2/DSP-MSSLOGQUEUE.md)
 
 ## 证据
 

@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VLRRESETTIMER]] · VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置（VLRRESETTIMER）
+- [VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置（VLRRESETTIMER）](configobject/UNC/20.15.2/VLRRESETTIMER.md)
 
 ## 使用实例
 

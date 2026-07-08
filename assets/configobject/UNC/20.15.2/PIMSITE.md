@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PIMSITE]] · ADD PIMSITE
-- [[command/UNC/20.15.2/LST-PIMSITE]] · LST PIMSITE
-- [[command/UNC/20.15.2/MOD-PIMSITE]] · MOD PIMSITE
-- [[command/UNC/20.15.2/RMV-PIMSITE]] · RMV PIMSITE
+- [ADD PIMSITE](command/UNC/20.15.2/ADD-PIMSITE.md)
+- [LST PIMSITE](command/UNC/20.15.2/LST-PIMSITE.md)
+- [MOD PIMSITE](command/UNC/20.15.2/MOD-PIMSITE.md)
+- [RMV PIMSITE](command/UNC/20.15.2/RMV-PIMSITE.md)
 
 ## 证据
 

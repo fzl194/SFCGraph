@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IULOAD]] · DSP IULOAD
-- [[command/UNC/20.15.2/LST-IULOAD]] · LST IULOAD
-- [[command/UNC/20.15.2/SET-IULOAD]] · SET IULOAD
+- [DSP IULOAD](command/UNC/20.15.2/DSP-IULOAD.md)
+- [LST IULOAD](command/UNC/20.15.2/LST-IULOAD.md)
+- [SET IULOAD](command/UNC/20.15.2/SET-IULOAD.md)
 
 ## 证据
 

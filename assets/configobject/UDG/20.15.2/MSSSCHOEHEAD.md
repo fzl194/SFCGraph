@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSSCHOEHEAD]] · DSP MSSSCHOEHEAD
+- [DSP MSSSCHOEHEAD](command/UDG/20.15.2/DSP-MSSSCHOEHEAD.md)
 
 ## 证据
 

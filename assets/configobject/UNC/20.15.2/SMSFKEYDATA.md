@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SMSFKEYDATA]] · DSP SMSFKEYDATA
-- [[command/UNC/20.15.2/RMV-SMSFKEYDATA]] · RMV SMSFKEYDATA
+- [DSP SMSFKEYDATA](command/UNC/20.15.2/DSP-SMSFKEYDATA.md)
+- [RMV SMSFKEYDATA](command/UNC/20.15.2/RMV-SMSFKEYDATA.md)
 
 ## 证据
 

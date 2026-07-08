@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HBUSRCTRL]] · LST HBUSRCTRL
-- [[command/UDG/20.15.2/SET-HBUSRCTRL]] · SET HBUSRCTRL
+- [LST HBUSRCTRL](command/UDG/20.15.2/LST-HBUSRCTRL.md)
+- [SET HBUSRCTRL](command/UDG/20.15.2/SET-HBUSRCTRL.md)
 
 ## 证据
 

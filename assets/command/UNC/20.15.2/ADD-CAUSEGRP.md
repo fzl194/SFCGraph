@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CAUSEGRP]] · 原因值映射组配置（CAUSEGRP）
+- [原因值映射组配置（CAUSEGRP）](configobject/UNC/20.15.2/CAUSEGRP.md)
 
 ## 使用实例
 

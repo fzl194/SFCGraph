@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TMAPLE]] · ADD TMAPLE
-- [[command/UNC/20.15.2/LST-TMAPLE]] · LST TMAPLE
-- [[command/UNC/20.15.2/RMV-TMAPLE]] · RMV TMAPLE
+- [ADD TMAPLE](command/UNC/20.15.2/ADD-TMAPLE.md)
+- [LST TMAPLE](command/UNC/20.15.2/LST-TMAPLE.md)
+- [RMV TMAPLE](command/UNC/20.15.2/RMV-TMAPLE.md)
 
 ## 证据
 

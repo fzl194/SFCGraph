@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PAEPERFMODE]] · 配置表中的PAE性能模式（PAEPERFMODE）
+- [配置表中的PAE性能模式（PAEPERFMODE）](configobject/UDG/20.15.2/PAEPERFMODE.md)
 
 ## 使用实例
 

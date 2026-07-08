@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-TZ]] · LST TZ
-- [[command/UNC/20.15.2/SET-TZ]] · SET TZ
+- [LST TZ](command/UNC/20.15.2/LST-TZ.md)
+- [SET TZ](command/UNC/20.15.2/SET-TZ.md)
 
 ## 证据
 

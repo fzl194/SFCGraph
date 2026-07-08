@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFEMSGSTC]] · DSP SFEMSGSTC
-- [[command/UDG/20.15.2/RTR-SFEMSGSTC]] · RTR SFEMSGSTC
+- [DSP SFEMSGSTC](command/UDG/20.15.2/DSP-SFEMSGSTC.md)
+- [RTR SFEMSGSTC](command/UDG/20.15.2/RTR-SFEMSGSTC.md)
 
 ## 证据
 

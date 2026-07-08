@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-VERSION]] · DSP VERSION
+- [DSP VERSION](command/UDG/20.15.2/DSP-VERSION.md)
 
 ## 证据
 

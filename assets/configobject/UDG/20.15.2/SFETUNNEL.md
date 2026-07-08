@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFETUNNEL]] · DSP SFETUNNEL
+- [DSP SFETUNNEL](command/UDG/20.15.2/DSP-SFETUNNEL.md)
 
 ## 证据
 

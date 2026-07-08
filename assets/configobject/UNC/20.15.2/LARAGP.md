@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LARAGP]] · ADD LARAGP
-- [[command/UNC/20.15.2/LST-LARAGP]] · LST LARAGP
-- [[command/UNC/20.15.2/MOD-LARAGP]] · MOD LARAGP
-- [[command/UNC/20.15.2/RMV-LARAGP]] · RMV LARAGP
+- [ADD LARAGP](command/UNC/20.15.2/ADD-LARAGP.md)
+- [LST LARAGP](command/UNC/20.15.2/LST-LARAGP.md)
+- [MOD LARAGP](command/UNC/20.15.2/MOD-LARAGP.md)
+- [RMV LARAGP](command/UNC/20.15.2/RMV-LARAGP.md)
 
 ## 证据
 

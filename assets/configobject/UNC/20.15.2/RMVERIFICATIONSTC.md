@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RMVERIFICATIONSTC]] · DSP RMVERIFICATIONSTC
+- [DSP RMVERIFICATIONSTC](command/UNC/20.15.2/DSP-RMVERIFICATIONSTC.md)
 
 ## 证据
 

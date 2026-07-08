@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRFGROUP]] · ADD NRFGROUP
-- [[command/UNC/20.15.2/LST-NRFGROUP]] · LST NRFGROUP
-- [[command/UNC/20.15.2/RMV-NRFGROUP]] · RMV NRFGROUP
+- [ADD NRFGROUP](command/UNC/20.15.2/ADD-NRFGROUP.md)
+- [LST NRFGROUP](command/UNC/20.15.2/LST-NRFGROUP.md)
+- [RMV NRFGROUP](command/UNC/20.15.2/RMV-NRFGROUP.md)
 
 ## 证据
 

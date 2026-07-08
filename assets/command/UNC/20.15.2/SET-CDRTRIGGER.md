@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CDRTRIGGER]] · 离线计费话单产生开关（CDRTRIGGER）
+- [离线计费话单产生开关（CDRTRIGGER）](configobject/UNC/20.15.2/CDRTRIGGER.md)
 
 ## 使用实例
 

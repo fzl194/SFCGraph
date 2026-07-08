@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-ROUTINGBEHMSALL]] · RMV ROUTINGBEHMSALL
+- [RMV ROUTINGBEHMSALL](command/UNC/20.15.2/RMV-ROUTINGBEHMSALL.md)
 
 ## 证据
 

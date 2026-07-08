@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SGWACLFUNC]] · LST SGWACLFUNC
-- [[command/UDG/20.15.2/SET-SGWACLFUNC]] · SET SGWACLFUNC
+- [LST SGWACLFUNC](command/UDG/20.15.2/LST-SGWACLFUNC.md)
+- [SET SGWACLFUNC](command/UDG/20.15.2/SET-SGWACLFUNC.md)
 
 ## 证据
 

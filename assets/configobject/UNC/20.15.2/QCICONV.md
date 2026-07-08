@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-QCICONV]] · ADD QCICONV
-- [[command/UNC/20.15.2/LST-QCICONV]] · LST QCICONV
-- [[command/UNC/20.15.2/MOD-QCICONV]] · MOD QCICONV
-- [[command/UNC/20.15.2/RMV-QCICONV]] · RMV QCICONV
+- [ADD QCICONV](command/UNC/20.15.2/ADD-QCICONV.md)
+- [LST QCICONV](command/UNC/20.15.2/LST-QCICONV.md)
+- [MOD QCICONV](command/UNC/20.15.2/MOD-QCICONV.md)
+- [RMV QCICONV](command/UNC/20.15.2/RMV-QCICONV.md)
 
 ## 证据
 

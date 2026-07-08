@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SDRSAPPTYPE]] · DSP SDRSAPPTYPE
+- [DSP SDRSAPPTYPE](command/UNC/20.15.2/DSP-SDRSAPPTYPE.md)
 
 ## 证据
 

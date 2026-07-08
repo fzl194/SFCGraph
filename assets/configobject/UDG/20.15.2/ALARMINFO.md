@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-ALARMINFO]] · LST ALARMINFO
+- [LST ALARMINFO](command/UDG/20.15.2/LST-ALARMINFO.md)
 
 ## 证据
 

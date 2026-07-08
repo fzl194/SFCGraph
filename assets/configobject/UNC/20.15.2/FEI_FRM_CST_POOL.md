@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-FEI_FRM_CST_POOL]] · DSP FEI_FRM_CST_POOL
+- [DSP FEI_FRM_CST_POOL](command/UNC/20.15.2/DSP-FEI_FRM_CST_POOL.md)
 
 ## 证据
 

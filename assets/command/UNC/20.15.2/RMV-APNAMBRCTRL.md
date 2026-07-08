@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNAMBRCTRL]] · APN-AMBR控制的配置（APNAMBRCTRL）
+- [APN-AMBR控制的配置（APNAMBRCTRL）](configobject/UNC/20.15.2/APNAMBRCTRL.md)
 
 ## 使用实例
 

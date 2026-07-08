@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-S1SMPROCTRL]] · LST S1SMPROCTRL
-- [[command/UNC/20.15.2/SET-S1SMPROCTRL]] · SET S1SMPROCTRL
+- [LST S1SMPROCTRL](command/UNC/20.15.2/LST-S1SMPROCTRL.md)
+- [SET S1SMPROCTRL](command/UNC/20.15.2/SET-S1SMPROCTRL.md)
 
 ## 证据
 

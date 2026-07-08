@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/TST-AAA]] · TST AAA
+- [TST AAA](command/UNC/20.15.2/TST-AAA.md)
 
 ## 证据
 

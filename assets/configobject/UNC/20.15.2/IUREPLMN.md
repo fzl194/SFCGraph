@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IUREPLMN]] · ADD IUREPLMN
-- [[command/UNC/20.15.2/LST-IUREPLMN]] · LST IUREPLMN
-- [[command/UNC/20.15.2/RMV-IUREPLMN]] · RMV IUREPLMN
+- [ADD IUREPLMN](command/UNC/20.15.2/ADD-IUREPLMN.md)
+- [LST IUREPLMN](command/UNC/20.15.2/LST-IUREPLMN.md)
+- [RMV IUREPLMN](command/UNC/20.15.2/RMV-IUREPLMN.md)
 
 ## 证据
 

@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/GUTISELAREAMEM]] · GUTI选网功能区域成员（GUTISELAREAMEM）
+- [GUTI选网功能区域成员（GUTISELAREAMEM）](configobject/UNC/20.15.2/GUTISELAREAMEM.md)
 
 ## 使用实例
 

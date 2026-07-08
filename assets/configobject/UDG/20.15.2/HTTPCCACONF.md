@@ -30,8 +30,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HTTPCCACONF]] · LST HTTPCCACONF
-- [[command/UDG/20.15.2/SET-HTTPCCACONF]] · SET HTTPCCACONF
+- [LST HTTPCCACONF](command/UDG/20.15.2/LST-HTTPCCACONF.md)
+- [SET HTTPCCACONF](command/UDG/20.15.2/SET-HTTPCCACONF.md)
 
 ## 证据
 

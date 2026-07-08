@@ -32,8 +32,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NPWATCHDOG]] · LST NPWATCHDOG
-- [[command/UDG/20.15.2/SET-NPWATCHDOG]] · SET NPWATCHDOG
+- [LST NPWATCHDOG](command/UDG/20.15.2/LST-NPWATCHDOG.md)
+- [SET NPWATCHDOG](command/UDG/20.15.2/SET-NPWATCHDOG.md)
 
 ## 证据
 

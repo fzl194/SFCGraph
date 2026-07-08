@@ -25,10 +25,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GTPCLE]] · ADD GTPCLE
-- [[command/UNC/20.15.2/LST-GTPCLE]] · LST GTPCLE
-- [[command/UNC/20.15.2/MOD-GTPCLE]] · MOD GTPCLE
-- [[command/UNC/20.15.2/RMV-GTPCLE]] · RMV GTPCLE
+- [ADD GTPCLE](command/UNC/20.15.2/ADD-GTPCLE.md)
+- [LST GTPCLE](command/UNC/20.15.2/LST-GTPCLE.md)
+- [MOD GTPCLE](command/UNC/20.15.2/MOD-GTPCLE.md)
+- [RMV GTPCLE](command/UNC/20.15.2/RMV-GTPCLE.md)
 
 ## 证据
 

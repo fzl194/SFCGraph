@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SMSFOPC]] · ADD SMSFOPC
-- [[command/UNC/20.15.2/LST-SMSFOPC]] · LST SMSFOPC
-- [[command/UNC/20.15.2/RMV-SMSFOPC]] · RMV SMSFOPC
+- [ADD SMSFOPC](command/UNC/20.15.2/ADD-SMSFOPC.md)
+- [LST SMSFOPC](command/UNC/20.15.2/LST-SMSFOPC.md)
+- [RMV SMSFOPC](command/UNC/20.15.2/RMV-SMSFOPC.md)
 
 ## 证据
 

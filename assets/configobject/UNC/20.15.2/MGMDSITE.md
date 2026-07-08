@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MGMDSITE]] · ADD MGMDSITE
-- [[command/UNC/20.15.2/LST-MGMDSITE]] · LST MGMDSITE
-- [[command/UNC/20.15.2/MOD-MGMDSITE]] · MOD MGMDSITE
-- [[command/UNC/20.15.2/RMV-MGMDSITE]] · RMV MGMDSITE
+- [ADD MGMDSITE](command/UNC/20.15.2/ADD-MGMDSITE.md)
+- [LST MGMDSITE](command/UNC/20.15.2/LST-MGMDSITE.md)
+- [MOD MGMDSITE](command/UNC/20.15.2/MOD-MGMDSITE.md)
+- [RMV MGMDSITE](command/UNC/20.15.2/RMV-MGMDSITE.md)
 
 ## 证据
 

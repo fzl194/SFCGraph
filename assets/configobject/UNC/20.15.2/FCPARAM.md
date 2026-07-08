@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-FCPARAM]] · ADD FCPARAM
-- [[command/UNC/20.15.2/LST-FCPARAM]] · LST FCPARAM
-- [[command/UNC/20.15.2/MOD-FCPARAM]] · MOD FCPARAM
-- [[command/UNC/20.15.2/RMV-FCPARAM]] · RMV FCPARAM
+- [ADD FCPARAM](command/UNC/20.15.2/ADD-FCPARAM.md)
+- [LST FCPARAM](command/UNC/20.15.2/LST-FCPARAM.md)
+- [MOD FCPARAM](command/UNC/20.15.2/MOD-FCPARAM.md)
+- [RMV FCPARAM](command/UNC/20.15.2/RMV-FCPARAM.md)
 
 ## 证据
 

@@ -55,7 +55,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NEWCERTSWITCH]] · 证书开关状态（NEWCERTSWITCH）
+- [证书开关状态（NEWCERTSWITCH）](configobject/UNC/20.15.2/NEWCERTSWITCH.md)
 
 ## 使用实例
 

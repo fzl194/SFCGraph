@@ -35,7 +35,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-UNCIPRESOUCEALL]] · RMV UNCIPRESOUCEALL
+- [RMV UNCIPRESOUCEALL](command/UNC/20.15.2/RMV-UNCIPRESOUCEALL.md)
 
 ## 证据
 

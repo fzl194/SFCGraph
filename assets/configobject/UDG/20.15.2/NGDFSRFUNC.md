@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NGDFSRFUNC]] · LST NGDFSRFUNC
-- [[command/UDG/20.15.2/SET-NGDFSRFUNC]] · SET NGDFSRFUNC
+- [LST NGDFSRFUNC](command/UDG/20.15.2/LST-NGDFSRFUNC.md)
+- [SET NGDFSRFUNC](command/UDG/20.15.2/SET-NGDFSRFUNC.md)
 
 ## 证据
 

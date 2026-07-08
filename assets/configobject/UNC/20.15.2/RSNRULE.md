@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RSNRULE]] · ADD RSNRULE
-- [[command/UNC/20.15.2/LST-RSNRULE]] · LST RSNRULE
-- [[command/UNC/20.15.2/MOD-RSNRULE]] · MOD RSNRULE
-- [[command/UNC/20.15.2/RMV-RSNRULE]] · RMV RSNRULE
+- [ADD RSNRULE](command/UNC/20.15.2/ADD-RSNRULE.md)
+- [LST RSNRULE](command/UNC/20.15.2/LST-RSNRULE.md)
+- [MOD RSNRULE](command/UNC/20.15.2/MOD-RSNRULE.md)
+- [RMV RSNRULE](command/UNC/20.15.2/RMV-RSNRULE.md)
 
 ## 证据
 

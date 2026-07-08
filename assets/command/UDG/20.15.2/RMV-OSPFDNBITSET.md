@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OSPFDNBITSET]] · DN比特位配置（OSPFDNBITSET）
+- [DN比特位配置（OSPFDNBITSET）](configobject/UDG/20.15.2/OSPFDNBITSET.md)
 
 ## 使用实例
 

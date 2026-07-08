@@ -76,7 +76,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OSPFV3]] · OSPFv3进程配置（OSPFV3）
+- [OSPFv3进程配置（OSPFV3）](configobject/UDG/20.15.2/OSPFV3.md)
 
 ## 关联任务
 

@@ -27,8 +27,8 @@ Non-UE辅助定位流程中，AMF是否支持Namf_Communication_NonUeN2InfoSubsc
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGLCSPARA]] · LST NGLCSPARA
-- [[command/UNC/20.15.2/SET-NGLCSPARA]] · SET NGLCSPARA
+- [LST NGLCSPARA](command/UNC/20.15.2/LST-NGLCSPARA.md)
+- [SET NGLCSPARA](command/UNC/20.15.2/SET-NGLCSPARA.md)
 
 ## 证据
 

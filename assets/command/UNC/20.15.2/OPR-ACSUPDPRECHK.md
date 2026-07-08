@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ACSUPDPRECHK]] · 升级前检查（ACSUPDPRECHK）
+- [升级前检查（ACSUPDPRECHK）](configobject/UNC/20.15.2/ACSUPDPRECHK.md)
 
 ## 使用实例
 

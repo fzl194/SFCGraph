@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ALMFILTER]] · LST ALMFILTER
-- [[command/UNC/20.15.2/SET-ALMFILTER]] · SET ALMFILTER
+- [LST ALMFILTER](command/UNC/20.15.2/LST-ALMFILTER.md)
+- [SET ALMFILTER](command/UNC/20.15.2/SET-ALMFILTER.md)
 
 ## 证据
 

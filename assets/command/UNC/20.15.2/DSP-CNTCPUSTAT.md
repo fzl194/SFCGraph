@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CNTCPUSTAT]] · 容器CPU信息（CNTCPUSTAT）
+- [容器CPU信息（CNTCPUSTAT）](configobject/UNC/20.15.2/CNTCPUSTAT.md)
 
 ## 使用实例
 

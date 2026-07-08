@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/MULTICASTGRP]] · 组播组配置（MULTICASTGRP）
+- [组播组配置（MULTICASTGRP）](configobject/UDG/20.15.2/MULTICASTGRP.md)
 
 ## 使用实例
 

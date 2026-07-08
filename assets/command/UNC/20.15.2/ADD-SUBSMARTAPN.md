@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SUBSMARTAPN]] · 智能分流APN（SUBSMARTAPN）
+- [智能分流APN（SUBSMARTAPN）](configobject/UNC/20.15.2/SUBSMARTAPN.md)
 
 ## 使用实例
 

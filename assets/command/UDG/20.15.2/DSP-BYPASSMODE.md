@@ -40,7 +40,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BYPASSMODE]] · 节点BYPASS模式（BYPASSMODE）
+- [节点BYPASS模式（BYPASSMODE）](configobject/UDG/20.15.2/BYPASSMODE.md)
 
 ## 使用实例
 

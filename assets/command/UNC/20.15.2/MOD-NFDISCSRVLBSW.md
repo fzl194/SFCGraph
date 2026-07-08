@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NFDISCSRVLBSW]] · 服务发现Service负载均衡功能（NFDISCSRVLBSW）
+- [服务发现Service负载均衡功能（NFDISCSRVLBSW）](configobject/UNC/20.15.2/NFDISCSRVLBSW.md)
 
 ## 使用实例
 

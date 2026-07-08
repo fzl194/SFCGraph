@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LDPSESSION]] · DSP LDPSESSION
-- [[command/UNC/20.15.2/RBL-LDPSESSION]] · RBL LDPSESSION
+- [DSP LDPSESSION](command/UNC/20.15.2/DSP-LDPSESSION.md)
+- [RBL LDPSESSION](command/UNC/20.15.2/RBL-LDPSESSION.md)
 
 ## 证据
 

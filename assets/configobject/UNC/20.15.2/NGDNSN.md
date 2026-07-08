@@ -28,10 +28,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGDNSN]] · ADD NGDNSN
-- [[command/UNC/20.15.2/LST-NGDNSN]] · LST NGDNSN
-- [[command/UNC/20.15.2/MOD-NGDNSN]] · MOD NGDNSN
-- [[command/UNC/20.15.2/RMV-NGDNSN]] · RMV NGDNSN
+- [ADD NGDNSN](command/UNC/20.15.2/ADD-NGDNSN.md)
+- [LST NGDNSN](command/UNC/20.15.2/LST-NGDNSN.md)
+- [MOD NGDNSN](command/UNC/20.15.2/MOD-NGDNSN.md)
+- [RMV NGDNSN](command/UNC/20.15.2/RMV-NGDNSN.md)
 
 ## 证据
 

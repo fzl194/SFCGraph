@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/WLRSITE]] · 无线路由全局属性配置（WLRSITE）
+- [无线路由全局属性配置（WLRSITE）](configobject/UDG/20.15.2/WLRSITE.md)
 
 ## 使用实例
 

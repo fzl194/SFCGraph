@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/RELAYTLSCFG]] · 媒体中继业务TLS认证配置（RELAYTLSCFG）
+- [媒体中继业务TLS认证配置（RELAYTLSCFG）](configobject/UDG/20.15.2/RELAYTLSCFG.md)
 
 ## 使用实例
 

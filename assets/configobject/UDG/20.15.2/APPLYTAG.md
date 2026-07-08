@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-APPLYTAG]] · ADD APPLYTAG
-- [[command/UDG/20.15.2/LST-APPLYTAG]] · LST APPLYTAG
-- [[command/UDG/20.15.2/MOD-APPLYTAG]] · MOD APPLYTAG
-- [[command/UDG/20.15.2/RMV-APPLYTAG]] · RMV APPLYTAG
+- [ADD APPLYTAG](command/UDG/20.15.2/ADD-APPLYTAG.md)
+- [LST APPLYTAG](command/UDG/20.15.2/LST-APPLYTAG.md)
+- [MOD APPLYTAG](command/UDG/20.15.2/MOD-APPLYTAG.md)
+- [RMV APPLYTAG](command/UDG/20.15.2/RMV-APPLYTAG.md)
 
 ## 证据
 

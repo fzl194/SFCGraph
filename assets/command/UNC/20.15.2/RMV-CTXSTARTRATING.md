@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CTXSTARTRATING]] · 给OCS/CHF发送的消息初始携带的计费属性（CTXSTARTRATING）
+- [给OCS/CHF发送的消息初始携带的计费属性（CTXSTARTRATING）](configobject/UNC/20.15.2/CTXSTARTRATING.md)
 
 ## 使用实例
 

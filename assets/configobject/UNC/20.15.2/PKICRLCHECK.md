@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PKICRLCHECK]] · LST PKICRLCHECK
-- [[command/UNC/20.15.2/SET-PKICRLCHECK]] · SET PKICRLCHECK
+- [LST PKICRLCHECK](command/UNC/20.15.2/LST-PKICRLCHECK.md)
+- [SET PKICRLCHECK](command/UNC/20.15.2/SET-PKICRLCHECK.md)
 
 ## 证据
 

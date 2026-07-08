@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DFSRATTR]] · LST DFSRATTR
-- [[command/UDG/20.15.2/SET-DFSRATTR]] · SET DFSRATTR
+- [LST DFSRATTR](command/UDG/20.15.2/LST-DFSRATTR.md)
+- [SET DFSRATTR](command/UDG/20.15.2/SET-DFSRATTR.md)
 
 ## 证据
 

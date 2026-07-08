@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ACT-BYPASSMODE]] · ACT BYPASSMODE
-- [[command/UDG/20.15.2/DSP-BYPASSMODE]] · DSP BYPASSMODE
+- [ACT BYPASSMODE](command/UDG/20.15.2/ACT-BYPASSMODE.md)
+- [DSP BYPASSMODE](command/UDG/20.15.2/DSP-BYPASSMODE.md)
 
 ## 证据
 

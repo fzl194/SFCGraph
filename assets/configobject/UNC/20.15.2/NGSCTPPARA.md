@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGSCTPPARA]] · LST NGSCTPPARA
-- [[command/UNC/20.15.2/SET-NGSCTPPARA]] · SET NGSCTPPARA
+- [LST NGSCTPPARA](command/UNC/20.15.2/LST-NGSCTPPARA.md)
+- [SET NGSCTPPARA](command/UNC/20.15.2/SET-NGSCTPPARA.md)
 
 ## 证据
 

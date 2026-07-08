@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RMV-BWMRULEGLBALL]] · RMV BWMRULEGLBALL
+- [RMV BWMRULEGLBALL](command/UDG/20.15.2/RMV-BWMRULEGLBALL.md)
 
 ## 证据
 

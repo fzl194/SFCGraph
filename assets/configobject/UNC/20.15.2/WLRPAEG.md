@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-WLRPAEG]] · DSP WLRPAEG
+- [DSP WLRPAEG](command/UNC/20.15.2/DSP-WLRPAEG.md)
 
 ## 证据
 

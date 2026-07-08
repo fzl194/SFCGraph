@@ -89,7 +89,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/S1ACCAREALST]] · S1模式接入控制配置（S1ACCAREALST）
+- [S1模式接入控制配置（S1ACCAREALST）](configobject/UNC/20.15.2/S1ACCAREALST.md)
 
 ## 使用实例
 

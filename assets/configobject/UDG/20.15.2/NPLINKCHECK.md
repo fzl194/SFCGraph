@@ -32,8 +32,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NPLINKCHECK]] · LST NPLINKCHECK
-- [[command/UDG/20.15.2/SET-NPLINKCHECK]] · SET NPLINKCHECK
+- [LST NPLINKCHECK](command/UDG/20.15.2/LST-NPLINKCHECK.md)
+- [SET NPLINKCHECK](command/UDG/20.15.2/SET-NPLINKCHECK.md)
 
 ## 证据
 

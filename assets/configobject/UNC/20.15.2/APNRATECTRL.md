@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNRATECTRL]] · LST APNRATECTRL
-- [[command/UNC/20.15.2/SET-APNRATECTRL]] · SET APNRATECTRL
+- [LST APNRATECTRL](command/UNC/20.15.2/LST-APNRATECTRL.md)
+- [SET APNRATECTRL](command/UNC/20.15.2/SET-APNRATECTRL.md)
 
 ## 证据
 

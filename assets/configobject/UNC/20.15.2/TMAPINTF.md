@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-TMAPINTF]] · LST TMAPINTF
-- [[command/UNC/20.15.2/SET-TMAPINTF]] · SET TMAPINTF
+- [LST TMAPINTF](command/UNC/20.15.2/LST-TMAPINTF.md)
+- [SET TMAPINTF](command/UNC/20.15.2/SET-TMAPINTF.md)
 
 ## 证据
 

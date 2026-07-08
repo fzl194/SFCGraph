@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MATCHNEXTHOPPREFIX6FILTER]] · 匹配IPv6下一跳前缀列表（MATCHNEXTHOPPREFIX6FILTER）
+- [匹配IPv6下一跳前缀列表（MATCHNEXTHOPPREFIX6FILTER）](configobject/UNC/20.15.2/MATCHNEXTHOPPREFIX6FILTER.md)
 
 ## 使用实例
 

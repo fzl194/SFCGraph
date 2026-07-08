@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPSTATUS]] · LST UPSTATUS
-- [[command/UDG/20.15.2/SET-UPSTATUS]] · SET UPSTATUS
+- [LST UPSTATUS](command/UDG/20.15.2/LST-UPSTATUS.md)
+- [SET UPSTATUS](command/UDG/20.15.2/SET-UPSTATUS.md)
 
 ## 证据
 

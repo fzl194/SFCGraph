@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LBSRVADDR]] · CSLB向VNRS同步服务实例地址（LBSRVADDR）
+- [CSLB向VNRS同步服务实例地址（LBSRVADDR）](configobject/UDG/20.15.2/LBSRVADDR.md)
 
 ## 使用实例
 

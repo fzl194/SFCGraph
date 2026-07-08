@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SRVMATCHSQRY]] · DSP SRVMATCHSQRY
+- [DSP SRVMATCHSQRY](command/UDG/20.15.2/DSP-SRVMATCHSQRY.md)
 
 ## 证据
 

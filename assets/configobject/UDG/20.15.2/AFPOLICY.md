@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-AFPOLICY]] · ADD AFPOLICY
-- [[command/UDG/20.15.2/LST-AFPOLICY]] · LST AFPOLICY
-- [[command/UDG/20.15.2/MOD-AFPOLICY]] · MOD AFPOLICY
-- [[command/UDG/20.15.2/RMV-AFPOLICY]] · RMV AFPOLICY
+- [ADD AFPOLICY](command/UDG/20.15.2/ADD-AFPOLICY.md)
+- [LST AFPOLICY](command/UDG/20.15.2/LST-AFPOLICY.md)
+- [MOD AFPOLICY](command/UDG/20.15.2/MOD-AFPOLICY.md)
+- [RMV AFPOLICY](command/UDG/20.15.2/RMV-AFPOLICY.md)
 
 ## 证据
 

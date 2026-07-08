@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NPFABRICOAMINFO]] · DSP NPFABRICOAMINFO
+- [DSP NPFABRICOAMINFO](command/UDG/20.15.2/DSP-NPFABRICOAMINFO.md)
 
 ## 证据
 

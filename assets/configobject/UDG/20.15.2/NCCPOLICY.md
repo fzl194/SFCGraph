@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NCCPOLICY]] · LST NCCPOLICY
-- [[command/UDG/20.15.2/SET-NCCPOLICY]] · SET NCCPOLICY
+- [LST NCCPOLICY](command/UDG/20.15.2/LST-NCCPOLICY.md)
+- [SET NCCPOLICY](command/UDG/20.15.2/SET-NCCPOLICY.md)
 
 ## 证据
 

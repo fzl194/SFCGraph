@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/EMTCBESM]] · S1模式eMTC SM协议参数（EMTCBESM）
+- [S1模式eMTC SM协议参数（EMTCBESM）](configobject/UNC/20.15.2/EMTCBESM.md)
 
 ## 使用实例
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGCBSFUNC]] · LST NGCBSFUNC
-- [[command/UNC/20.15.2/SET-NGCBSFUNC]] · SET NGCBSFUNC
+- [LST NGCBSFUNC](command/UNC/20.15.2/LST-NGCBSFUNC.md)
+- [SET NGCBSFUNC](command/UNC/20.15.2/SET-NGCBSFUNC.md)
 
 ## 证据
 

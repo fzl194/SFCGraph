@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HSSBPOFC]] · ADD HSSBPOFC
-- [[command/UNC/20.15.2/LST-HSSBPOFC]] · LST HSSBPOFC
-- [[command/UNC/20.15.2/RMV-HSSBPOFC]] · RMV HSSBPOFC
+- [ADD HSSBPOFC](command/UNC/20.15.2/ADD-HSSBPOFC.md)
+- [LST HSSBPOFC](command/UNC/20.15.2/LST-HSSBPOFC.md)
+- [RMV HSSBPOFC](command/UNC/20.15.2/RMV-HSSBPOFC.md)
 
 ## 证据
 

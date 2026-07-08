@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-GLBAPPPARA]] · LST GLBAPPPARA
-- [[command/UDG/20.15.2/SET-GLBAPPPARA]] · SET GLBAPPPARA
+- [LST GLBAPPPARA](command/UDG/20.15.2/LST-GLBAPPPARA.md)
+- [SET GLBAPPPARA](command/UDG/20.15.2/SET-GLBAPPPARA.md)
 
 ## 证据
 

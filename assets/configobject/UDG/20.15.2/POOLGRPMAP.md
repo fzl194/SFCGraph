@@ -22,16 +22,16 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-POOLGRPMAP]] · ADD POOLGRPMAP
-- [[command/UDG/20.15.2/LST-POOLGRPMAP]] · LST POOLGRPMAP
-- [[command/UDG/20.15.2/RMV-POOLGRPMAP]] · RMV POOLGRPMAP
+- [ADD POOLGRPMAP](command/UDG/20.15.2/ADD-POOLGRPMAP.md)
+- [LST POOLGRPMAP](command/UDG/20.15.2/LST-POOLGRPMAP.md)
+- [RMV POOLGRPMAP](command/UDG/20.15.2/RMV-POOLGRPMAP.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/APN]] · APN
-- [[configobject/UDG/20.15.2/LACGROUP]] · LACGROUP
-- [[configobject/UDG/20.15.2/POOLGROUP]] · POOLGROUP
-- [[configobject/UDG/20.15.2/TACGROUP]] · TACGROUP
+- [APN](configobject/UDG/20.15.2/APN.md)
+- [LACGROUP](configobject/UDG/20.15.2/LACGROUP.md)
+- [POOLGROUP](configobject/UDG/20.15.2/POOLGROUP.md)
+- [TACGROUP](configobject/UDG/20.15.2/TACGROUP.md)
 
 ## 证据
 

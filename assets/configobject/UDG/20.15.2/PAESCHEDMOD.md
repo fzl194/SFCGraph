@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PAESCHEDMOD]] · LST PAESCHEDMOD
-- [[command/UDG/20.15.2/SET-PAESCHEDMOD]] · SET PAESCHEDMOD
+- [LST PAESCHEDMOD](command/UDG/20.15.2/LST-PAESCHEDMOD.md)
+- [SET PAESCHEDMOD](command/UDG/20.15.2/SET-PAESCHEDMOD.md)
 
 ## 证据
 

@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RESULTCODECTRL]] · 返回码控制（RESULTCODECTRL）
+- [返回码控制（RESULTCODECTRL）](configobject/UNC/20.15.2/RESULTCODECTRL.md)
 
 ## 使用实例
 

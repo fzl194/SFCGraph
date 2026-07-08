@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-KUBEPROBE]] · LST KUBEPROBE
-- [[command/UDG/20.15.2/SET-KUBEPROBE]] · SET KUBEPROBE
+- [LST KUBEPROBE](command/UDG/20.15.2/LST-KUBEPROBE.md)
+- [SET KUBEPROBE](command/UDG/20.15.2/SET-KUBEPROBE.md)
 
 ## 证据
 

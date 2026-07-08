@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IMSDDNFLOWCTRLCHR]] · IMS DDN流量控制上报CHR配置开关（IMSDDNFLOWCTRLCHR）
+- [IMS DDN流量控制上报CHR配置开关（IMSDDNFLOWCTRLCHR）](configobject/UNC/20.15.2/IMSDDNFLOWCTRLCHR.md)
 
 ## 使用实例
 

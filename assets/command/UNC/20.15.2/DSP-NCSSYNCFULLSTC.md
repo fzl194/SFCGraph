@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NCSSYNCFULLSTC]] · 全量同步操作期间的统计信息（NCSSYNCFULLSTC）
+- [全量同步操作期间的统计信息（NCSSYNCFULLSTC）](configobject/UNC/20.15.2/NCSSYNCFULLSTC.md)
 
 ## 使用实例
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NCSFAILOPER]] · DSP NCSFAILOPER
+- [DSP NCSFAILOPER](command/UDG/20.15.2/DSP-NCSFAILOPER.md)
 
 ## 证据
 

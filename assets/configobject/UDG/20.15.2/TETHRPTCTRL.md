@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TETHRPTCTRL]] · LST TETHRPTCTRL
-- [[command/UDG/20.15.2/SET-TETHRPTCTRL]] · SET TETHRPTCTRL
+- [LST TETHRPTCTRL](command/UDG/20.15.2/LST-TETHRPTCTRL.md)
+- [SET TETHRPTCTRL](command/UDG/20.15.2/SET-TETHRPTCTRL.md)
 
 ## 证据
 

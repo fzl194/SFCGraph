@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MTSMODEL]] · DSP MTSMODEL
+- [DSP MTSMODEL](command/UNC/20.15.2/DSP-MTSMODEL.md)
 
 ## 证据
 

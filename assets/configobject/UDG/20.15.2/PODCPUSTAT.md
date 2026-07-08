@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PODCPUSTAT]] · DSP PODCPUSTAT
+- [DSP PODCPUSTAT](command/UDG/20.15.2/DSP-PODCPUSTAT.md)
 
 ## 证据
 

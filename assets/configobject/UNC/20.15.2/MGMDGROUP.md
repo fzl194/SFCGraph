@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MGMDGROUP]] · DSP MGMDGROUP
-- [[command/UNC/20.15.2/RTR-MGMDGROUP]] · RTR MGMDGROUP
+- [DSP MGMDGROUP](command/UNC/20.15.2/DSP-MGMDGROUP.md)
+- [RTR MGMDGROUP](command/UNC/20.15.2/RTR-MGMDGROUP.md)
 
 ## 证据
 

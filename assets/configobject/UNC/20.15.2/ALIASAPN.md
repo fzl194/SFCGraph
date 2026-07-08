@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ALIASAPN]] · ADD ALIASAPN
-- [[command/UNC/20.15.2/LST-ALIASAPN]] · LST ALIASAPN
-- [[command/UNC/20.15.2/MOD-ALIASAPN]] · MOD ALIASAPN
-- [[command/UNC/20.15.2/RMV-ALIASAPN]] · RMV ALIASAPN
+- [ADD ALIASAPN](command/UNC/20.15.2/ADD-ALIASAPN.md)
+- [LST ALIASAPN](command/UNC/20.15.2/LST-ALIASAPN.md)
+- [MOD ALIASAPN](command/UNC/20.15.2/MOD-ALIASAPN.md)
+- [RMV ALIASAPN](command/UNC/20.15.2/RMV-ALIASAPN.md)
 
 ## 证据
 

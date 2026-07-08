@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFDNNNIRT]] · DNN中网络标识最长后缀匹配转发路由（NRFDNNNIRT）
+- [DNN中网络标识最长后缀匹配转发路由（NRFDNNNIRT）](configobject/UNC/20.15.2/NRFDNNNIRT.md)
 
 ## 使用实例
 

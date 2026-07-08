@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/REPORTFAILUREINFO]] · RU组件上报的故障信息（REPORTFAILUREINFO）
+- [RU组件上报的故障信息（REPORTFAILUREINFO）](configobject/UNC/20.15.2/REPORTFAILUREINFO.md)
 
 ## 使用实例
 

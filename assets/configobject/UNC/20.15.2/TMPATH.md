@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-TMPATH]] · DSP TMPATH
+- [DSP TMPATH](command/UNC/20.15.2/DSP-TMPATH.md)
 
 ## 证据
 

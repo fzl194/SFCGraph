@@ -44,7 +44,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CNTMEMTHD]] · 容器内存阈值（CNTMEMTHD）
+- [容器内存阈值（CNTMEMTHD）](configobject/UDG/20.15.2/CNTMEMTHD.md)
 
 ## 使用实例
 

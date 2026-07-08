@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CHGPLMNCHAR]] · PLMN的计费属性参数（CHGPLMNCHAR）
+- [PLMN的计费属性参数（CHGPLMNCHAR）](configobject/UNC/20.15.2/CHGPLMNCHAR.md)
 
 ## 使用实例
 

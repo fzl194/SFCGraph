@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ANTIATTACK]] · LST ANTIATTACK
-- [[command/UNC/20.15.2/SET-ANTIATTACK]] · SET ANTIATTACK
+- [LST ANTIATTACK](command/UNC/20.15.2/LST-ANTIATTACK.md)
+- [SET ANTIATTACK](command/UNC/20.15.2/SET-ANTIATTACK.md)
 
 ## 证据
 

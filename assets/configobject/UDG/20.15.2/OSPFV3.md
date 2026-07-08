@@ -17,11 +17,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-OSPFV3]] · ADD OSPFV3
-- [[command/UDG/20.15.2/LST-OSPFV3]] · LST OSPFV3
-- [[command/UDG/20.15.2/MOD-OSPFV3]] · MOD OSPFV3
-- [[command/UDG/20.15.2/RMV-OSPFV3]] · RMV OSPFV3
-- [[command/UDG/20.15.2/RST-OSPFV3]] · RST OSPFV3
+- [ADD OSPFV3](command/UDG/20.15.2/ADD-OSPFV3.md)
+- [LST OSPFV3](command/UDG/20.15.2/LST-OSPFV3.md)
+- [MOD OSPFV3](command/UDG/20.15.2/MOD-OSPFV3.md)
+- [RMV OSPFV3](command/UDG/20.15.2/RMV-OSPFV3.md)
+- [RST OSPFV3](command/UDG/20.15.2/RST-OSPFV3.md)
 
 ## 证据
 

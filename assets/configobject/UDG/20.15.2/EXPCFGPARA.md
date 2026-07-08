@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/MOD-EXPCFGPARA]] · MOD EXPCFGPARA
+- [MOD EXPCFGPARA](command/UDG/20.15.2/MOD-EXPCFGPARA.md)
 
 ## 证据
 

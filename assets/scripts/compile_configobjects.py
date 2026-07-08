@@ -129,7 +129,7 @@ def project_config_object(rec: dict, rev_edges: dict, obj_refers: dict) -> str:
         parts += ["## 操作本对象的命令", ""]
         for cid in sorted(set(cmds)):
             clocal = str(cid).split('@')[-1]
-            parts.append(f"- [[{id_to_path(cid, 'command')}]] · {clocal}")
+            parts.append(f"- [{clocal}]({id_to_path(cid, 'command')}.md)")
         parts.append("")
 
     objs = [o for o in obj_refers.get(oid, []) if o != oid]
@@ -137,7 +137,7 @@ def project_config_object(rec: dict, rev_edges: dict, obj_refers: dict) -> str:
         parts += ["## 关联对象", ""]
         for o in sorted(set(objs)):
             olocal = str(o).split('@')[-1]
-            parts.append(f"- [[{id_to_path(o, 'configobject')}]] · {olocal}")
+            parts.append(f"- [{olocal}]({id_to_path(o, 'configobject')}.md)")
         parts.append("")
 
     ev = list(dict.fromkeys(rec.get("source_evidence_ids") or []))
@@ -169,7 +169,7 @@ def update_local_index(nf: str, ver: str, objs: list):
         lines.append("")
         for oid, oname, oname_zh, fname in sorted(by_kind[kind], key=lambda x: x[1]):
             tail = f"（{oname_zh}）" if oname_zh and oname_zh != oname else ""
-            lines.append(f"- [[configobject/{nf}/{ver}/{oname}]] · {oname}{tail} — `{fname}`")
+            lines.append(f"- [{oname}{tail}](configobject/{nf}/{ver}/{fname})")
         lines.append("")
     idx.write_text("\n".join(lines), encoding="utf-8")
 

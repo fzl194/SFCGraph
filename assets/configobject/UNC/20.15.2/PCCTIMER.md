@@ -27,9 +27,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PCCTIMER]] · LST PCCTIMER
-- [[command/UNC/20.15.2/RST-PCCTIMER]] · RST PCCTIMER
-- [[command/UNC/20.15.2/SET-PCCTIMER]] · SET PCCTIMER
+- [LST PCCTIMER](command/UNC/20.15.2/LST-PCCTIMER.md)
+- [RST PCCTIMER](command/UNC/20.15.2/RST-PCCTIMER.md)
+- [SET PCCTIMER](command/UNC/20.15.2/SET-PCCTIMER.md)
 
 ## 证据
 

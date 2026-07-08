@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MMFUNC]] · LST MMFUNC
-- [[command/UNC/20.15.2/SET-MMFUNC]] · SET MMFUNC
+- [LST MMFUNC](command/UNC/20.15.2/LST-MMFUNC.md)
+- [SET MMFUNC](command/UNC/20.15.2/SET-MMFUNC.md)
 
 ## 证据
 

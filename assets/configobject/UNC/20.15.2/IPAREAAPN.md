@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IPAREAAPN]] · ADD IPAREAAPN
-- [[command/UNC/20.15.2/LST-IPAREAAPN]] · LST IPAREAAPN
-- [[command/UNC/20.15.2/RMV-IPAREAAPN]] · RMV IPAREAAPN
+- [ADD IPAREAAPN](command/UNC/20.15.2/ADD-IPAREAAPN.md)
+- [LST IPAREAAPN](command/UNC/20.15.2/LST-IPAREAAPN.md)
+- [RMV IPAREAAPN](command/UNC/20.15.2/RMV-IPAREAAPN.md)
 
 ## 证据
 

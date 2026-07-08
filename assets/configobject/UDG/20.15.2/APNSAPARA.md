@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNSAPARA]] · LST APNSAPARA
-- [[command/UDG/20.15.2/SET-APNSAPARA]] · SET APNSAPARA
+- [LST APNSAPARA](command/UDG/20.15.2/LST-APNSAPARA.md)
+- [SET APNSAPARA](command/UDG/20.15.2/SET-APNSAPARA.md)
 
 ## 证据
 

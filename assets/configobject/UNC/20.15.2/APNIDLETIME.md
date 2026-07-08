@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNIDLETIME]] · LST APNIDLETIME
-- [[command/UNC/20.15.2/SET-APNIDLETIME]] · SET APNIDLETIME
+- [LST APNIDLETIME](command/UNC/20.15.2/LST-APNIDLETIME.md)
+- [SET APNIDLETIME](command/UNC/20.15.2/SET-APNIDLETIME.md)
 
 ## 证据
 

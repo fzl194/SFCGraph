@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFTAI]] · ADD PNFTAI
-- [[command/UNC/20.15.2/LST-PNFTAI]] · LST PNFTAI
-- [[command/UNC/20.15.2/MOD-PNFTAI]] · MOD PNFTAI
-- [[command/UNC/20.15.2/RMV-PNFTAI]] · RMV PNFTAI
+- [ADD PNFTAI](command/UNC/20.15.2/ADD-PNFTAI.md)
+- [LST PNFTAI](command/UNC/20.15.2/LST-PNFTAI.md)
+- [MOD PNFTAI](command/UNC/20.15.2/MOD-PNFTAI.md)
+- [RMV PNFTAI](command/UNC/20.15.2/RMV-PNFTAI.md)
 
 ## 证据
 

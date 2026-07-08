@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GWSELBYCC]] · ADD GWSELBYCC
-- [[command/UNC/20.15.2/LST-GWSELBYCC]] · LST GWSELBYCC
-- [[command/UNC/20.15.2/RMV-GWSELBYCC]] · RMV GWSELBYCC
+- [ADD GWSELBYCC](command/UNC/20.15.2/ADD-GWSELBYCC.md)
+- [LST GWSELBYCC](command/UNC/20.15.2/LST-GWSELBYCC.md)
+- [RMV GWSELBYCC](command/UNC/20.15.2/RMV-GWSELBYCC.md)
 
 ## 证据
 

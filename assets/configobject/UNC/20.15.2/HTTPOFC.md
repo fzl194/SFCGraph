@@ -19,10 +19,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HTTPOFC]] · ADD HTTPOFC
-- [[command/UNC/20.15.2/LST-HTTPOFC]] · LST HTTPOFC
-- [[command/UNC/20.15.2/MOD-HTTPOFC]] · MOD HTTPOFC
-- [[command/UNC/20.15.2/RMV-HTTPOFC]] · RMV HTTPOFC
+- [ADD HTTPOFC](command/UNC/20.15.2/ADD-HTTPOFC.md)
+- [LST HTTPOFC](command/UNC/20.15.2/LST-HTTPOFC.md)
+- [MOD HTTPOFC](command/UNC/20.15.2/MOD-HTTPOFC.md)
+- [RMV HTTPOFC](command/UNC/20.15.2/RMV-HTTPOFC.md)
 
 ## 证据
 

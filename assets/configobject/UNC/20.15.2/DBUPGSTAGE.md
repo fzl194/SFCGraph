@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DBUPGSTAGE]] · LST DBUPGSTAGE
-- [[command/UNC/20.15.2/SET-DBUPGSTAGE]] · SET DBUPGSTAGE
+- [LST DBUPGSTAGE](command/UNC/20.15.2/LST-DBUPGSTAGE.md)
+- [SET DBUPGSTAGE](command/UNC/20.15.2/SET-DBUPGSTAGE.md)
 
 ## 证据
 

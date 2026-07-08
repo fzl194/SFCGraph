@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/COL-LOG]] · COL LOG
-- [[command/UDG/20.15.2/EXP-LOG]] · EXP LOG
+- [COL LOG](command/UDG/20.15.2/COL-LOG.md)
+- [EXP LOG](command/UDG/20.15.2/EXP-LOG.md)
 
 ## 证据
 

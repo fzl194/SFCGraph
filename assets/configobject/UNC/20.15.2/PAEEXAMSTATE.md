@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PAEEXAMSTATE]] · DSP PAEEXAMSTATE
+- [DSP PAEEXAMSTATE](command/UNC/20.15.2/DSP-PAEEXAMSTATE.md)
 
 ## 证据
 

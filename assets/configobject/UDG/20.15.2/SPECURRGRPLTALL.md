@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RMV-SPECURRGRPLTALL]] · RMV SPECURRGRPLTALL
+- [RMV SPECURRGRPLTALL](command/UDG/20.15.2/RMV-SPECURRGRPLTALL.md)
 
 ## 证据
 

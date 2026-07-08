@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NS]] · LST NS
-- [[command/UNC/20.15.2/SET-NS]] · SET NS
+- [LST NS](command/UNC/20.15.2/LST-NS.md)
+- [SET NS](command/UNC/20.15.2/SET-NS.md)
 
 ## 证据
 

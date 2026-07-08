@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNNIDT]] · APNNI Direct Tunnel配置（APNNIDT）
+- [APNNI Direct Tunnel配置（APNNIDT）](configobject/UNC/20.15.2/APNNIDT.md)
 
 ## 使用实例
 

@@ -22,13 +22,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-ERRORCODE]] · ADD ERRORCODE
-- [[command/UDG/20.15.2/LST-ERRORCODE]] · LST ERRORCODE
-- [[command/UDG/20.15.2/RMV-ERRORCODE]] · RMV ERRORCODE
+- [ADD ERRORCODE](command/UDG/20.15.2/ADD-ERRORCODE.md)
+- [LST ERRORCODE](command/UDG/20.15.2/LST-ERRORCODE.md)
+- [RMV ERRORCODE](command/UDG/20.15.2/RMV-ERRORCODE.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/DNSOVERWRITING]] · DNSOVERWRITING
+- [DNSOVERWRITING](configobject/UDG/20.15.2/DNSOVERWRITING.md)
 
 ## 证据
 

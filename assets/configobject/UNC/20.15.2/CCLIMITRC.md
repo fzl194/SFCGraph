@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CCLIMITRC]] · LST CCLIMITRC
-- [[command/UNC/20.15.2/SET-CCLIMITRC]] · SET CCLIMITRC
+- [LST CCLIMITRC](command/UNC/20.15.2/LST-CCLIMITRC.md)
+- [SET CCLIMITRC](command/UNC/20.15.2/SET-CCLIMITRC.md)
 
 ## 证据
 

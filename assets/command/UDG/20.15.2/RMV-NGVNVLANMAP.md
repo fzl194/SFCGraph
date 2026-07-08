@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NGVNVLANMAP]] · 基于5G LAN组的VLAN映射信息（NGVNVLANMAP）
+- [基于5G LAN组的VLAN映射信息（NGVNVLANMAP）](configobject/UDG/20.15.2/NGVNVLANMAP.md)
 
 ## 使用实例
 

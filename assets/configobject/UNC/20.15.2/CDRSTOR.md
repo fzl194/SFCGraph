@@ -69,10 +69,10 @@ CG支持定制最终话单文件名命名，通过配置可以在文件名中体
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CDRSTOR]] · ADD CDRSTOR
-- [[command/UNC/20.15.2/LST-CDRSTOR]] · LST CDRSTOR
-- [[command/UNC/20.15.2/MOD-CDRSTOR]] · MOD CDRSTOR
-- [[command/UNC/20.15.2/RMV-CDRSTOR]] · RMV CDRSTOR
+- [ADD CDRSTOR](command/UNC/20.15.2/ADD-CDRSTOR.md)
+- [LST CDRSTOR](command/UNC/20.15.2/LST-CDRSTOR.md)
+- [MOD CDRSTOR](command/UNC/20.15.2/MOD-CDRSTOR.md)
+- [RMV CDRSTOR](command/UNC/20.15.2/RMV-CDRSTOR.md)
 
 ## 证据
 

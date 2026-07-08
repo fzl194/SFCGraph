@@ -62,7 +62,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OP]] · 本地用户属性（OP）
+- [本地用户属性（OP）](configobject/UDG/20.15.2/OP.md)
 
 ## 使用实例
 

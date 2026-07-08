@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-AREAGPMEM]] · ADD AREAGPMEM
-- [[command/UNC/20.15.2/LST-AREAGPMEM]] · LST AREAGPMEM
-- [[command/UNC/20.15.2/RMV-AREAGPMEM]] · RMV AREAGPMEM
+- [ADD AREAGPMEM](command/UNC/20.15.2/ADD-AREAGPMEM.md)
+- [LST AREAGPMEM](command/UNC/20.15.2/LST-AREAGPMEM.md)
+- [RMV AREAGPMEM](command/UNC/20.15.2/RMV-AREAGPMEM.md)
 
 ## 证据
 

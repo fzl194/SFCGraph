@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-ARPSYS]] · LST ARPSYS
-- [[command/UDG/20.15.2/SET-ARPSYS]] · SET ARPSYS
+- [LST ARPSYS](command/UDG/20.15.2/LST-ARPSYS.md)
+- [SET ARPSYS](command/UDG/20.15.2/SET-ARPSYS.md)
 
 ## 证据
 

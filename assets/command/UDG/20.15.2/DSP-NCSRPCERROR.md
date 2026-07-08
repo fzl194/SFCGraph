@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NCSRPCERROR]] · 最近的RPC和错误RPC响应报文信息（NCSRPCERROR）
+- [最近的RPC和错误RPC响应报文信息（NCSRPCERROR）](configobject/UDG/20.15.2/NCSRPCERROR.md)
 
 ## 使用实例
 

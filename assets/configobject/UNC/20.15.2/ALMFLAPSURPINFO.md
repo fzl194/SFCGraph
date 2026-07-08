@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ALMFLAPSURPINFO]] · DSP ALMFLAPSURPINFO
+- [DSP ALMFLAPSURPINFO](command/UNC/20.15.2/DSP-ALMFLAPSURPINFO.md)
 
 ## 证据
 

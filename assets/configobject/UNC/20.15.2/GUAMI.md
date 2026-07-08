@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GUAMI]] · ADD GUAMI
-- [[command/UNC/20.15.2/LST-GUAMI]] · LST GUAMI
-- [[command/UNC/20.15.2/MOD-GUAMI]] · MOD GUAMI
-- [[command/UNC/20.15.2/RMV-GUAMI]] · RMV GUAMI
+- [ADD GUAMI](command/UNC/20.15.2/ADD-GUAMI.md)
+- [LST GUAMI](command/UNC/20.15.2/LST-GUAMI.md)
+- [MOD GUAMI](command/UNC/20.15.2/MOD-GUAMI.md)
+- [RMV GUAMI](command/UNC/20.15.2/RMV-GUAMI.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-LDPLSPMGPEERADDR]] · DSP LDPLSPMGPEERADDR
+- [DSP LDPLSPMGPEERADDR](command/UDG/20.15.2/DSP-LDPLSPMGPEERADDR.md)
 
 ## 证据
 

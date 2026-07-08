@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/S1TACID]] · 从S1TAC组内删除一个S1TAC（S1TACID）
+- [从S1TAC组内删除一个S1TAC（S1TACID）](configobject/UDG/20.15.2/S1TACID.md)
 
 ## 使用实例
 

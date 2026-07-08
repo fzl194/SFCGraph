@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RMV-RULEALL]] · RMV RULEALL
+- [RMV RULEALL](command/UDG/20.15.2/RMV-RULEALL.md)
 
 ## 证据
 

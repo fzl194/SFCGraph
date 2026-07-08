@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SGSRLKS]] · ADD SGSRLKS
-- [[command/UNC/20.15.2/LST-SGSRLKS]] · LST SGSRLKS
-- [[command/UNC/20.15.2/MOD-SGSRLKS]] · MOD SGSRLKS
-- [[command/UNC/20.15.2/RMV-SGSRLKS]] · RMV SGSRLKS
+- [ADD SGSRLKS](command/UNC/20.15.2/ADD-SGSRLKS.md)
+- [LST SGSRLKS](command/UNC/20.15.2/LST-SGSRLKS.md)
+- [MOD SGSRLKS](command/UNC/20.15.2/MOD-SGSRLKS.md)
+- [RMV SGSRLKS](command/UNC/20.15.2/RMV-SGSRLKS.md)
 
 ## 证据
 

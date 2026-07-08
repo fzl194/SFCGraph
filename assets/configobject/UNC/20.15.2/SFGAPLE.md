@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SFGAPLE]] · ADD SFGAPLE
-- [[command/UNC/20.15.2/LST-SFGAPLE]] · LST SFGAPLE
-- [[command/UNC/20.15.2/RMV-SFGAPLE]] · RMV SFGAPLE
+- [ADD SFGAPLE](command/UNC/20.15.2/ADD-SFGAPLE.md)
+- [LST SFGAPLE](command/UNC/20.15.2/LST-SFGAPLE.md)
+- [RMV SFGAPLE](command/UNC/20.15.2/RMV-SFGAPLE.md)
 
 ## 证据
 

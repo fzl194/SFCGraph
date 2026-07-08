@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-INHREGNF]] · DSP INHREGNF
+- [DSP INHREGNF](command/UNC/20.15.2/DSP-INHREGNF.md)
 
 ## 证据
 

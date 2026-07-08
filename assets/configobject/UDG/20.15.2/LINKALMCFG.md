@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-LINKALMCFG]] · LST LINKALMCFG
-- [[command/UDG/20.15.2/SET-LINKALMCFG]] · SET LINKALMCFG
+- [LST LINKALMCFG](command/UDG/20.15.2/LST-LINKALMCFG.md)
+- [SET LINKALMCFG](command/UDG/20.15.2/SET-LINKALMCFG.md)
 
 ## 证据
 

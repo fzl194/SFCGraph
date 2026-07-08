@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PERFDNAI]] · ADD PERFDNAI
-- [[command/UNC/20.15.2/LST-PERFDNAI]] · LST PERFDNAI
-- [[command/UNC/20.15.2/RMV-PERFDNAI]] · RMV PERFDNAI
+- [ADD PERFDNAI](command/UNC/20.15.2/ADD-PERFDNAI.md)
+- [LST PERFDNAI](command/UNC/20.15.2/LST-PERFDNAI.md)
+- [RMV PERFDNAI](command/UNC/20.15.2/RMV-PERFDNAI.md)
 
 ## 证据
 

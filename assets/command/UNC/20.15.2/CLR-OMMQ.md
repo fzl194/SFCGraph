@@ -36,7 +36,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OMMQ]] · 清理OMMQ数据（OMMQ）
+- [清理OMMQ数据（OMMQ）](configobject/UNC/20.15.2/OMMQ.md)
 
 ## 使用实例
 

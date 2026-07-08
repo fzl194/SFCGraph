@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RSCBOXHEALREC]] · DSP RSCBOXHEALREC
+- [DSP RSCBOXHEALREC](command/UNC/20.15.2/DSP-RSCBOXHEALREC.md)
 
 ## 证据
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LINKALMCFG]] · TWAMP的Light模式“链路丢包率过高告警”配置（LINKALMCFG）
+- [TWAMP的Light模式“链路丢包率过高告警”配置（LINKALMCFG）](configobject/UDG/20.15.2/LINKALMCFG.md)
 
 ## 关联任务
 

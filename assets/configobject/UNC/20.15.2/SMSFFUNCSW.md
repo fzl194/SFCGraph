@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMSFFUNCSW]] · LST SMSFFUNCSW
-- [[command/UNC/20.15.2/SET-SMSFFUNCSW]] · SET SMSFFUNCSW
+- [LST SMSFFUNCSW](command/UNC/20.15.2/LST-SMSFFUNCSW.md)
+- [SET SMSFFUNCSW](command/UNC/20.15.2/SET-SMSFFUNCSW.md)
 
 ## 证据
 

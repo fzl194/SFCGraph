@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DRSWAPREC]] · LST DRSWAPREC
+- [LST DRSWAPREC](command/UNC/20.15.2/LST-DRSWAPREC.md)
 
 ## 证据
 

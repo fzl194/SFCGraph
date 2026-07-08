@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CUINCONSPOLICY]] · CP和UP关键配置不一致的处理策略（CUINCONSPOLICY）
+- [CP和UP关键配置不一致的处理策略（CUINCONSPOLICY）](configobject/UDG/20.15.2/CUINCONSPOLICY.md)
 
 ## 使用实例
 

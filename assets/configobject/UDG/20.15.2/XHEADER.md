@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-XHEADER]] · ADD XHEADER
-- [[command/UDG/20.15.2/LST-XHEADER]] · LST XHEADER
-- [[command/UDG/20.15.2/MOD-XHEADER]] · MOD XHEADER
-- [[command/UDG/20.15.2/RMV-XHEADER]] · RMV XHEADER
+- [ADD XHEADER](command/UDG/20.15.2/ADD-XHEADER.md)
+- [LST XHEADER](command/UDG/20.15.2/LST-XHEADER.md)
+- [MOD XHEADER](command/UDG/20.15.2/MOD-XHEADER.md)
+- [RMV XHEADER](command/UDG/20.15.2/RMV-XHEADER.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-WLRATTRINFO]] · DSP WLRATTRINFO
+- [DSP WLRATTRINFO](command/UNC/20.15.2/DSP-WLRATTRINFO.md)
 
 ## 证据
 

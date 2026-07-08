@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PODMEMTHD]] · LST PODMEMTHD
-- [[command/UNC/20.15.2/SET-PODMEMTHD]] · SET PODMEMTHD
+- [LST PODMEMTHD](command/UNC/20.15.2/LST-PODMEMTHD.md)
+- [SET PODMEMTHD](command/UNC/20.15.2/SET-PODMEMTHD.md)
 
 ## 证据
 

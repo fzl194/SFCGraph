@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TESTRULEMATCH]] · DSP TESTRULEMATCH
+- [DSP TESTRULEMATCH](command/UDG/20.15.2/DSP-TESTRULEMATCH.md)
 
 ## 证据
 

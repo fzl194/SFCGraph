@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TRUNKINNERDATA]] · DSP TRUNKINNERDATA
+- [DSP TRUNKINNERDATA](command/UDG/20.15.2/DSP-TRUNKINNERDATA.md)
 
 ## 证据
 

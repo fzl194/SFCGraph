@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SMSESSIONNUM]] · DSP SMSESSIONNUM
+- [DSP SMSESSIONNUM](command/UNC/20.15.2/DSP-SMSESSIONNUM.md)
 
 ## 证据
 

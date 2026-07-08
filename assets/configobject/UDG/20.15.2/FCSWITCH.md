@@ -32,8 +32,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FCSWITCH]] · LST FCSWITCH
-- [[command/UDG/20.15.2/SET-FCSWITCH]] · SET FCSWITCH
+- [LST FCSWITCH](command/UDG/20.15.2/LST-FCSWITCH.md)
+- [SET FCSWITCH](command/UDG/20.15.2/SET-FCSWITCH.md)
 
 ## 证据
 

@@ -46,7 +46,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RSAKEYPAIRLABEL]] · 创建RSA密钥对标签（RSAKEYPAIRLABEL）
+- [创建RSA密钥对标签（RSAKEYPAIRLABEL）](configobject/UNC/20.15.2/RSAKEYPAIRLABEL.md)
 
 ## 使用实例
 

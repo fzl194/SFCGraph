@@ -35,8 +35,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-NTPCFG]] · LST NTPCFG
-- [[command/UDG/20.15.2/SET-NTPCFG]] · SET NTPCFG
+- [LST NTPCFG](command/UDG/20.15.2/LST-NTPCFG.md)
+- [SET NTPCFG](command/UDG/20.15.2/SET-NTPCFG.md)
 
 ## 证据
 

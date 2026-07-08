@@ -30,10 +30,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NTPSVR]] · ADD NTPSVR
-- [[command/UNC/20.15.2/LST-NTPSVR]] · LST NTPSVR
-- [[command/UNC/20.15.2/MOD-NTPSVR]] · MOD NTPSVR
-- [[command/UNC/20.15.2/RMV-NTPSVR]] · RMV NTPSVR
+- [ADD NTPSVR](command/UNC/20.15.2/ADD-NTPSVR.md)
+- [LST NTPSVR](command/UNC/20.15.2/LST-NTPSVR.md)
+- [MOD NTPSVR](command/UNC/20.15.2/MOD-NTPSVR.md)
+- [RMV NTPSVR](command/UNC/20.15.2/RMV-NTPSVR.md)
 
 ## 证据
 

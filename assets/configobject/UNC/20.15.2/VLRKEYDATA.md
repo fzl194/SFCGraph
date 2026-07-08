@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-VLRKEYDATA]] · DSP VLRKEYDATA
-- [[command/UNC/20.15.2/RMV-VLRKEYDATA]] · RMV VLRKEYDATA
+- [DSP VLRKEYDATA](command/UNC/20.15.2/DSP-VLRKEYDATA.md)
+- [RMV VLRKEYDATA](command/UNC/20.15.2/RMV-VLRKEYDATA.md)
 
 ## 证据
 

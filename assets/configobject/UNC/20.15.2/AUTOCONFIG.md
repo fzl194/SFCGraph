@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AUTOCONFIG]] · LST AUTOCONFIG
-- [[command/UNC/20.15.2/SET-AUTOCONFIG]] · SET AUTOCONFIG
+- [LST AUTOCONFIG](command/UNC/20.15.2/LST-AUTOCONFIG.md)
+- [SET AUTOCONFIG](command/UNC/20.15.2/SET-AUTOCONFIG.md)
 
 ## 证据
 

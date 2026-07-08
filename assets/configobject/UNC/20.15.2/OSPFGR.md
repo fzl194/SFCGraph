@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OSPFGR]] · LST OSPFGR
-- [[command/UNC/20.15.2/SET-OSPFGR]] · SET OSPFGR
+- [LST OSPFGR](command/UNC/20.15.2/LST-OSPFGR.md)
+- [SET OSPFGR](command/UNC/20.15.2/SET-OSPFGR.md)
 
 ## 证据
 

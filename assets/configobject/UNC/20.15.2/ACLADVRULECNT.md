@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ACLADVRULECNT]] · DSP ACLADVRULECNT
+- [DSP ACLADVRULECNT](command/UNC/20.15.2/DSP-ACLADVRULECNT.md)
 
 ## 证据
 

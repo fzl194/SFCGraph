@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-OSPFFRR]] · ADD OSPFFRR
-- [[command/UDG/20.15.2/LST-OSPFFRR]] · LST OSPFFRR
-- [[command/UDG/20.15.2/MOD-OSPFFRR]] · MOD OSPFFRR
-- [[command/UDG/20.15.2/RMV-OSPFFRR]] · RMV OSPFFRR
+- [ADD OSPFFRR](command/UDG/20.15.2/ADD-OSPFFRR.md)
+- [LST OSPFFRR](command/UDG/20.15.2/LST-OSPFFRR.md)
+- [MOD OSPFFRR](command/UDG/20.15.2/MOD-OSPFFRR.md)
+- [RMV OSPFFRR](command/UDG/20.15.2/RMV-OSPFFRR.md)
 
 ## 证据
 

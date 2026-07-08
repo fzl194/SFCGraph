@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ESMLCSTATE]] · DSP ESMLCSTATE
+- [DSP ESMLCSTATE](command/UNC/20.15.2/DSP-ESMLCSTATE.md)
 
 ## 证据
 

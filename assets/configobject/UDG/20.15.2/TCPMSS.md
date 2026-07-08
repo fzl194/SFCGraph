@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-TCPMSS]] · ADD TCPMSS
-- [[command/UDG/20.15.2/LST-TCPMSS]] · LST TCPMSS
-- [[command/UDG/20.15.2/MOD-TCPMSS]] · MOD TCPMSS
-- [[command/UDG/20.15.2/RMV-TCPMSS]] · RMV TCPMSS
+- [ADD TCPMSS](command/UDG/20.15.2/ADD-TCPMSS.md)
+- [LST TCPMSS](command/UDG/20.15.2/LST-TCPMSS.md)
+- [MOD TCPMSS](command/UDG/20.15.2/MOD-TCPMSS.md)
+- [RMV TCPMSS](command/UDG/20.15.2/RMV-TCPMSS.md)
 
 ## 证据
 

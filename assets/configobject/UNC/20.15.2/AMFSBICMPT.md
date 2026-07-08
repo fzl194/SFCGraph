@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AMFSBICMPT]] · LST AMFSBICMPT
-- [[command/UNC/20.15.2/SET-AMFSBICMPT]] · SET AMFSBICMPT
+- [LST AMFSBICMPT](command/UNC/20.15.2/LST-AMFSBICMPT.md)
+- [SET AMFSBICMPT](command/UNC/20.15.2/SET-AMFSBICMPT.md)
 
 ## 证据
 

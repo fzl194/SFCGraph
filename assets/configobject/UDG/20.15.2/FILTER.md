@@ -22,16 +22,16 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-FILTER]] · ADD FILTER
-- [[command/UDG/20.15.2/LST-FILTER]] · LST FILTER
-- [[command/UDG/20.15.2/MOD-FILTER]] · MOD FILTER
-- [[command/UDG/20.15.2/RMV-FILTER]] · RMV FILTER
+- [ADD FILTER](command/UDG/20.15.2/ADD-FILTER.md)
+- [LST FILTER](command/UDG/20.15.2/LST-FILTER.md)
+- [MOD FILTER](command/UDG/20.15.2/MOD-FILTER.md)
+- [RMV FILTER](command/UDG/20.15.2/RMV-FILTER.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/FLTBINDFLOWF]] · FLTBINDFLOWF
-- [[configobject/UDG/20.15.2/HOST]] · HOST
-- [[configobject/UDG/20.15.2/IPLIST]] · IPLIST
+- [FLTBINDFLOWF](configobject/UDG/20.15.2/FLTBINDFLOWF.md)
+- [HOST](configobject/UDG/20.15.2/HOST.md)
+- [IPLIST](configobject/UDG/20.15.2/IPLIST.md)
 
 ## 证据
 

@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-CCL]] · DSP CCL
+- [DSP CCL](command/UNC/20.15.2/DSP-CCL.md)
 
 ## 证据
 

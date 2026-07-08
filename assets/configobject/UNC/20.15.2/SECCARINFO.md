@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SECCARINFO]] · DSP SECCARINFO
+- [DSP SECCARINFO](command/UNC/20.15.2/DSP-SECCARINFO.md)
 
 ## 证据
 

@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DHCPGIP]] · ADD DHCPGIP
-- [[command/UNC/20.15.2/LST-DHCPGIP]] · LST DHCPGIP
-- [[command/UNC/20.15.2/RMV-DHCPGIP]] · RMV DHCPGIP
+- [ADD DHCPGIP](command/UNC/20.15.2/ADD-DHCPGIP.md)
+- [LST DHCPGIP](command/UNC/20.15.2/LST-DHCPGIP.md)
+- [RMV DHCPGIP](command/UNC/20.15.2/RMV-DHCPGIP.md)
 
 ## 证据
 

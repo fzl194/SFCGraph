@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFGPSI]] · ADD PNFGPSI
-- [[command/UNC/20.15.2/LST-PNFGPSI]] · LST PNFGPSI
-- [[command/UNC/20.15.2/MOD-PNFGPSI]] · MOD PNFGPSI
-- [[command/UNC/20.15.2/RMV-PNFGPSI]] · RMV PNFGPSI
+- [ADD PNFGPSI](command/UNC/20.15.2/ADD-PNFGPSI.md)
+- [LST PNFGPSI](command/UNC/20.15.2/LST-PNFGPSI.md)
+- [MOD PNFGPSI](command/UNC/20.15.2/MOD-PNFGPSI.md)
+- [RMV PNFGPSI](command/UNC/20.15.2/RMV-PNFGPSI.md)
 
 ## 证据
 

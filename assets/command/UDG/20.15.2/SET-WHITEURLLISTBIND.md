@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/WHITEURLLISTBIND]] · 用户模板的URL白名单列表（WHITEURLLISTBIND）
+- [用户模板的URL白名单列表（WHITEURLLISTBIND）](configobject/UDG/20.15.2/WHITEURLLISTBIND.md)
 
 ## 使用实例
 

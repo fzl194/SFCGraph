@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PROCTHREAD]] · DSP PROCTHREAD
+- [DSP PROCTHREAD](command/UDG/20.15.2/DSP-PROCTHREAD.md)
 
 ## 证据
 

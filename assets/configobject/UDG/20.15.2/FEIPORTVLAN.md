@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-FEIPORTVLAN]] · DSP FEIPORTVLAN
+- [DSP FEIPORTVLAN](command/UDG/20.15.2/DSP-FEIPORTVLAN.md)
 
 ## 证据
 

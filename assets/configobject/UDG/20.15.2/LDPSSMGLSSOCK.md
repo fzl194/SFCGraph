@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-LDPSSMGLSSOCK]] · DSP LDPSSMGLSSOCK
+- [DSP LDPSSMGLSSOCK](command/UDG/20.15.2/DSP-LDPSSMGLSSOCK.md)
 
 ## 证据
 

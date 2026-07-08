@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MAPCMPTBYIMSI]] · MAP协议接口兼容性IMSI号段配置（MAPCMPTBYIMSI）
+- [MAP协议接口兼容性IMSI号段配置（MAPCMPTBYIMSI）](configobject/UNC/20.15.2/MAPCMPTBYIMSI.md)
 
 ## 使用实例
 

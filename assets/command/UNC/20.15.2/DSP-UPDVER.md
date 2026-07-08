@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UPDVER]] · 当前版本信息（UPDVER）
+- [当前版本信息（UPDVER）](configobject/UNC/20.15.2/UPDVER.md)
 
 ## 使用实例
 

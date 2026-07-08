@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CHGTARI]] · ADD CHGTARI
-- [[command/UNC/20.15.2/LST-CHGTARI]] · LST CHGTARI
-- [[command/UNC/20.15.2/RMV-CHGTARI]] · RMV CHGTARI
+- [ADD CHGTARI](command/UNC/20.15.2/ADD-CHGTARI.md)
+- [LST CHGTARI](command/UNC/20.15.2/LST-CHGTARI.md)
+- [RMV CHGTARI](command/UNC/20.15.2/RMV-CHGTARI.md)
 
 ## 证据
 

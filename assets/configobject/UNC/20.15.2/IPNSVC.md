@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IPNSVC]] · DSP IPNSVC
+- [DSP IPNSVC](command/UNC/20.15.2/DSP-IPNSVC.md)
 
 ## 证据
 

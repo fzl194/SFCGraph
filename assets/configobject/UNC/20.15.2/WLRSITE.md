@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-WLRSITE]] · LST WLRSITE
-- [[command/UNC/20.15.2/SET-WLRSITE]] · SET WLRSITE
+- [LST WLRSITE](command/UNC/20.15.2/LST-WLRSITE.md)
+- [SET WLRSITE](command/UNC/20.15.2/SET-WLRSITE.md)
 
 ## 证据
 

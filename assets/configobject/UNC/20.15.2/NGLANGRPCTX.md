@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-NGLANGRPCTX]] · RMV NGLANGRPCTX
+- [RMV NGLANGRPCTX](command/UNC/20.15.2/RMV-NGLANGRPCTX.md)
 
 ## 证据
 

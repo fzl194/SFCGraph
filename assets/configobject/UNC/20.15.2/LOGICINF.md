@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LOGICINF]] · ADD LOGICINF
-- [[command/UNC/20.15.2/LST-LOGICINF]] · LST LOGICINF
-- [[command/UNC/20.15.2/MOD-LOGICINF]] · MOD LOGICINF
-- [[command/UNC/20.15.2/RMV-LOGICINF]] · RMV LOGICINF
+- [ADD LOGICINF](command/UNC/20.15.2/ADD-LOGICINF.md)
+- [LST LOGICINF](command/UNC/20.15.2/LST-LOGICINF.md)
+- [MOD LOGICINF](command/UNC/20.15.2/MOD-LOGICINF.md)
+- [RMV LOGICINF](command/UNC/20.15.2/RMV-LOGICINF.md)
 
 ## 证据
 

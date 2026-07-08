@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-NGUSR]] · RMV NGUSR
+- [RMV NGUSR](command/UNC/20.15.2/RMV-NGUSR.md)
 
 ## 证据
 

@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SMFFCPARA]] · SMF自保流控参数（SMFFCPARA）
+- [SMF自保流控参数（SMFFCPARA）](configobject/UNC/20.15.2/SMFFCPARA.md)
 
 ## 使用实例
 

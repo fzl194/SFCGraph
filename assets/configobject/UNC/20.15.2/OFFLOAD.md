@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OFFLOAD]] · DSP OFFLOAD
-- [[command/UNC/20.15.2/STP-OFFLOAD]] · STP OFFLOAD
+- [DSP OFFLOAD](command/UNC/20.15.2/DSP-OFFLOAD.md)
+- [STP OFFLOAD](command/UNC/20.15.2/STP-OFFLOAD.md)
 
 ## 证据
 

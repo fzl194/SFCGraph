@@ -17,11 +17,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-OSPF]] · ADD OSPF
-- [[command/UNC/20.15.2/LST-OSPF]] · LST OSPF
-- [[command/UNC/20.15.2/MOD-OSPF]] · MOD OSPF
-- [[command/UNC/20.15.2/RMV-OSPF]] · RMV OSPF
-- [[command/UNC/20.15.2/RST-OSPF]] · RST OSPF
+- [ADD OSPF](command/UNC/20.15.2/ADD-OSPF.md)
+- [LST OSPF](command/UNC/20.15.2/LST-OSPF.md)
+- [MOD OSPF](command/UNC/20.15.2/MOD-OSPF.md)
+- [RMV OSPF](command/UNC/20.15.2/RMV-OSPF.md)
+- [RST OSPF](command/UNC/20.15.2/RST-OSPF.md)
 
 ## 证据
 

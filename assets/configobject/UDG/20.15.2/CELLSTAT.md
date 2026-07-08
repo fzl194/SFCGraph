@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CELLSTAT]] · DSP CELLSTAT
+- [DSP CELLSTAT](command/UDG/20.15.2/DSP-CELLSTAT.md)
 
 ## 证据
 

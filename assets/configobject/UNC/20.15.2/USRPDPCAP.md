@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-USRPDPCAP]] · LST USRPDPCAP
-- [[command/UNC/20.15.2/SET-USRPDPCAP]] · SET USRPDPCAP
+- [LST USRPDPCAP](command/UNC/20.15.2/LST-USRPDPCAP.md)
+- [SET USRPDPCAP](command/UNC/20.15.2/SET-USRPDPCAP.md)
 
 ## 证据
 

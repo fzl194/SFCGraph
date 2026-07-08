@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SCALINGCTRL]] · LST SCALINGCTRL
-- [[command/UNC/20.15.2/SET-SCALINGCTRL]] · SET SCALINGCTRL
+- [LST SCALINGCTRL](command/UNC/20.15.2/LST-SCALINGCTRL.md)
+- [SET SCALINGCTRL](command/UNC/20.15.2/SET-SCALINGCTRL.md)
 
 ## 证据
 

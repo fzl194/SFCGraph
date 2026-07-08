@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-ENBATTR]] · CLR ENBATTR
-- [[command/UNC/20.15.2/DSP-ENBATTR]] · DSP ENBATTR
+- [CLR ENBATTR](command/UNC/20.15.2/CLR-ENBATTR.md)
+- [DSP ENBATTR](command/UNC/20.15.2/DSP-ENBATTR.md)
 
 ## 证据
 

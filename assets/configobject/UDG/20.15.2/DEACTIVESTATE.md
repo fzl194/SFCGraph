@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DEACTIVESTATE]] · DSP DEACTIVESTATE
+- [DSP DEACTIVESTATE](command/UDG/20.15.2/DSP-DEACTIVESTATE.md)
 
 ## 证据
 

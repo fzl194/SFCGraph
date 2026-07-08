@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ACSPATCHINFO]] · DSP ACSPATCHINFO
+- [DSP ACSPATCHINFO](command/UNC/20.15.2/DSP-ACSPATCHINFO.md)
 
 ## 证据
 

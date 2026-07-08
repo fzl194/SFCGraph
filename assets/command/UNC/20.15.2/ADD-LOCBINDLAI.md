@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LOCBINDLAI]] · UPF位置信息与UPF优先支持的LAI范围的绑定关系（LOCBINDLAI）
+- [UPF位置信息与UPF优先支持的LAI范围的绑定关系（LOCBINDLAI）](configobject/UNC/20.15.2/LOCBINDLAI.md)
 
 ## 使用实例
 

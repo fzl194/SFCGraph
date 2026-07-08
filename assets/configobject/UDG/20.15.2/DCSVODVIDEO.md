@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DCSVODVIDEO]] · DSP DCSVODVIDEO
+- [DSP DCSVODVIDEO](command/UDG/20.15.2/DSP-DCSVODVIDEO.md)
 
 ## 证据
 

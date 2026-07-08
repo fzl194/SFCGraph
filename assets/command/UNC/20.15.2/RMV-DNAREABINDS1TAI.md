@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DNAREABINDS1TAI]] · DNAI服务区名称绑定的4G TAI范围（DNAREABINDS1TAI）
+- [DNAI服务区名称绑定的4G TAI范围（DNAREABINDS1TAI）](configobject/UNC/20.15.2/DNAREABINDS1TAI.md)
 
 ## 使用实例
 

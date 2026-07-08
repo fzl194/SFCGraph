@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SYSRESINFO]] · DSP SYSRESINFO
+- [DSP SYSRESINFO](command/UNC/20.15.2/DSP-SYSRESINFO.md)
 
 ## 证据
 

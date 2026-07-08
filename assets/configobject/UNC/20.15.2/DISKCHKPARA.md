@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DISKCHKPARA]] · DSP DISKCHKPARA
-- [[command/UNC/20.15.2/SET-DISKCHKPARA]] · SET DISKCHKPARA
+- [DSP DISKCHKPARA](command/UNC/20.15.2/DSP-DISKCHKPARA.md)
+- [SET DISKCHKPARA](command/UNC/20.15.2/SET-DISKCHKPARA.md)
 
 ## 证据
 

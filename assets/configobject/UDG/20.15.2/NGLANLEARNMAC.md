@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/CLR-NGLANLEARNMAC]] · CLR NGLANLEARNMAC
+- [CLR NGLANLEARNMAC](command/UDG/20.15.2/CLR-NGLANLEARNMAC.md)
 
 ## 证据
 

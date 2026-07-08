@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PNFLMFINFO]] · 对端LMF信息（PNFLMFINFO）
+- [对端LMF信息（PNFLMFINFO）](configobject/UNC/20.15.2/PNFLMFINFO.md)
 
 ## 使用实例
 

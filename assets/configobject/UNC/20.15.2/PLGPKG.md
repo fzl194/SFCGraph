@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-PLGPKG]] · ACT PLGPKG
-- [[command/UNC/20.15.2/DSP-PLGPKG]] · DSP PLGPKG
-- [[command/UNC/20.15.2/LOD-PLGPKG]] · LOD PLGPKG
-- [[command/UNC/20.15.2/LST-PLGPKG]] · LST PLGPKG
-- [[command/UNC/20.15.2/RMV-PLGPKG]] · RMV PLGPKG
+- [ACT PLGPKG](command/UNC/20.15.2/ACT-PLGPKG.md)
+- [DSP PLGPKG](command/UNC/20.15.2/DSP-PLGPKG.md)
+- [LOD PLGPKG](command/UNC/20.15.2/LOD-PLGPKG.md)
+- [LST PLGPKG](command/UNC/20.15.2/LST-PLGPKG.md)
+- [RMV PLGPKG](command/UNC/20.15.2/RMV-PLGPKG.md)
 
 ## 证据
 

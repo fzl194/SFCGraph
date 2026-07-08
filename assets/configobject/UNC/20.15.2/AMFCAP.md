@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-AMFCAP]] · DSP AMFCAP
-- [[command/UNC/20.15.2/OPR-AMFCAP]] · OPR AMFCAP
+- [DSP AMFCAP](command/UNC/20.15.2/DSP-AMFCAP.md)
+- [OPR AMFCAP](command/UNC/20.15.2/OPR-AMFCAP.md)
 
 ## 证据
 

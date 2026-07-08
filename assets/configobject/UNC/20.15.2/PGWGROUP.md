@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PGWGROUP]] · ADD PGWGROUP
-- [[command/UNC/20.15.2/LST-PGWGROUP]] · LST PGWGROUP
-- [[command/UNC/20.15.2/RMV-PGWGROUP]] · RMV PGWGROUP
+- [ADD PGWGROUP](command/UNC/20.15.2/ADD-PGWGROUP.md)
+- [LST PGWGROUP](command/UNC/20.15.2/LST-PGWGROUP.md)
+- [RMV PGWGROUP](command/UNC/20.15.2/RMV-PGWGROUP.md)
 
 ## 证据
 

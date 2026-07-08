@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GTPUPATH]] · DSP GTPUPATH
-- [[command/UNC/20.15.2/TST-GTPUPATH]] · TST GTPUPATH
+- [DSP GTPUPATH](command/UNC/20.15.2/DSP-GTPUPATH.md)
+- [TST GTPUPATH](command/UNC/20.15.2/TST-GTPUPATH.md)
 
 ## 证据
 

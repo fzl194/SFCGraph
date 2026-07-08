@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PNFNTFPLCY]] · LST PNFNTFPLCY
-- [[command/UNC/20.15.2/SET-PNFNTFPLCY]] · SET PNFNTFPLCY
+- [LST PNFNTFPLCY](command/UNC/20.15.2/LST-PNFNTFPLCY.md)
+- [SET PNFNTFPLCY](command/UNC/20.15.2/SET-PNFNTFPLCY.md)
 
 ## 证据
 

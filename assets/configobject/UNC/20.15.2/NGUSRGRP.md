@@ -25,10 +25,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGUSRGRP]] · ADD NGUSRGRP
-- [[command/UNC/20.15.2/LST-NGUSRGRP]] · LST NGUSRGRP
-- [[command/UNC/20.15.2/MOD-NGUSRGRP]] · MOD NGUSRGRP
-- [[command/UNC/20.15.2/RMV-NGUSRGRP]] · RMV NGUSRGRP
+- [ADD NGUSRGRP](command/UNC/20.15.2/ADD-NGUSRGRP.md)
+- [LST NGUSRGRP](command/UNC/20.15.2/LST-NGUSRGRP.md)
+- [MOD NGUSRGRP](command/UNC/20.15.2/MOD-NGUSRGRP.md)
+- [RMV NGUSRGRP](command/UNC/20.15.2/RMV-NGUSRGRP.md)
 
 ## 证据
 

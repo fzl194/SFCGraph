@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PDUSCACT]] · ADD PDUSCACT
-- [[command/UNC/20.15.2/LST-PDUSCACT]] · LST PDUSCACT
-- [[command/UNC/20.15.2/MOD-PDUSCACT]] · MOD PDUSCACT
-- [[command/UNC/20.15.2/RMV-PDUSCACT]] · RMV PDUSCACT
+- [ADD PDUSCACT](command/UNC/20.15.2/ADD-PDUSCACT.md)
+- [LST PDUSCACT](command/UNC/20.15.2/LST-PDUSCACT.md)
+- [MOD PDUSCACT](command/UNC/20.15.2/MOD-PDUSCACT.md)
+- [RMV PDUSCACT](command/UNC/20.15.2/RMV-PDUSCACT.md)
 
 ## 证据
 

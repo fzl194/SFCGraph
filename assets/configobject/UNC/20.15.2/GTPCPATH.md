@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-GTPCPATH]] · DSP GTPCPATH
-- [[command/UNC/20.15.2/RMV-GTPCPATH]] · RMV GTPCPATH
-- [[command/UNC/20.15.2/TST-GTPCPATH]] · TST GTPCPATH
+- [DSP GTPCPATH](command/UNC/20.15.2/DSP-GTPCPATH.md)
+- [RMV GTPCPATH](command/UNC/20.15.2/RMV-GTPCPATH.md)
+- [TST GTPCPATH](command/UNC/20.15.2/TST-GTPCPATH.md)
 
 ## 证据
 

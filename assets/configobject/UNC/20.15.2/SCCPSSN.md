@@ -23,13 +23,13 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SCCPSSN]] · ADD SCCPSSN
-- [[command/UNC/20.15.2/DSP-SCCPSSN]] · DSP SCCPSSN
-- [[command/UNC/20.15.2/INH-SCCPSSN]] · INH SCCPSSN
-- [[command/UNC/20.15.2/LST-SCCPSSN]] · LST SCCPSSN
-- [[command/UNC/20.15.2/MOD-SCCPSSN]] · MOD SCCPSSN
-- [[command/UNC/20.15.2/RMV-SCCPSSN]] · RMV SCCPSSN
-- [[command/UNC/20.15.2/UIN-SCCPSSN]] · UIN SCCPSSN
+- [ADD SCCPSSN](command/UNC/20.15.2/ADD-SCCPSSN.md)
+- [DSP SCCPSSN](command/UNC/20.15.2/DSP-SCCPSSN.md)
+- [INH SCCPSSN](command/UNC/20.15.2/INH-SCCPSSN.md)
+- [LST SCCPSSN](command/UNC/20.15.2/LST-SCCPSSN.md)
+- [MOD SCCPSSN](command/UNC/20.15.2/MOD-SCCPSSN.md)
+- [RMV SCCPSSN](command/UNC/20.15.2/RMV-SCCPSSN.md)
+- [UIN SCCPSSN](command/UNC/20.15.2/UIN-SCCPSSN.md)
 
 ## 证据
 

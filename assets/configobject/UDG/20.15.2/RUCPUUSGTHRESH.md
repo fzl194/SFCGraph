@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RUCPUUSGTHRESH]] · DSP RUCPUUSGTHRESH
+- [DSP RUCPUUSGTHRESH](command/UDG/20.15.2/DSP-RUCPUUSGTHRESH.md)
 
 ## 证据
 

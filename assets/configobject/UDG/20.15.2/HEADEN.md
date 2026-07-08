@@ -25,10 +25,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-HEADEN]] · ADD HEADEN
-- [[command/UDG/20.15.2/LST-HEADEN]] · LST HEADEN
-- [[command/UDG/20.15.2/MOD-HEADEN]] · MOD HEADEN
-- [[command/UDG/20.15.2/RMV-HEADEN]] · RMV HEADEN
+- [ADD HEADEN](command/UDG/20.15.2/ADD-HEADEN.md)
+- [LST HEADEN](command/UDG/20.15.2/LST-HEADEN.md)
+- [MOD HEADEN](command/UDG/20.15.2/MOD-HEADEN.md)
+- [RMV HEADEN](command/UDG/20.15.2/RMV-HEADEN.md)
 
 ## 证据
 

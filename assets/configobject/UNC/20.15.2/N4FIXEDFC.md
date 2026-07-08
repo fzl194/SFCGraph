@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-N4FIXEDFC]] · LST N4FIXEDFC
-- [[command/UNC/20.15.2/SET-N4FIXEDFC]] · SET N4FIXEDFC
+- [LST N4FIXEDFC](command/UNC/20.15.2/LST-N4FIXEDFC.md)
+- [SET N4FIXEDFC](command/UNC/20.15.2/SET-N4FIXEDFC.md)
 
 ## 证据
 

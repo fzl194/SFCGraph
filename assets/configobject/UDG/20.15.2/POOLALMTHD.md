@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-POOLALMTHD]] · LST POOLALMTHD
-- [[command/UDG/20.15.2/SET-POOLALMTHD]] · SET POOLALMTHD
+- [LST POOLALMTHD](command/UDG/20.15.2/LST-POOLALMTHD.md)
+- [SET POOLALMTHD](command/UDG/20.15.2/SET-POOLALMTHD.md)
 
 ## 证据
 

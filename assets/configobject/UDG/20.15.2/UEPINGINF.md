@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UEPINGINF]] · LST UEPINGINF
-- [[command/UDG/20.15.2/SET-UEPINGINF]] · SET UEPINGINF
+- [LST UEPINGINF](command/UDG/20.15.2/LST-UEPINGINF.md)
+- [SET UEPINGINF](command/UDG/20.15.2/SET-UEPINGINF.md)
 
 ## 证据
 

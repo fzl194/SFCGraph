@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGAPCMPT]] · LST NGAPCMPT
-- [[command/UNC/20.15.2/SET-NGAPCMPT]] · SET NGAPCMPT
+- [LST NGAPCMPT](command/UNC/20.15.2/LST-NGAPCMPT.md)
+- [SET NGAPCMPT](command/UNC/20.15.2/SET-NGAPCMPT.md)
 
 ## 证据
 

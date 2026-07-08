@@ -21,10 +21,10 @@ FTP协议为不安全协议，参数协议类型选择时请谨慎使用。
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UCFSVRIP]] · ADD UCFSVRIP
-- [[command/UNC/20.15.2/LST-UCFSVRIP]] · LST UCFSVRIP
-- [[command/UNC/20.15.2/MOD-UCFSVRIP]] · MOD UCFSVRIP
-- [[command/UNC/20.15.2/RMV-UCFSVRIP]] · RMV UCFSVRIP
+- [ADD UCFSVRIP](command/UNC/20.15.2/ADD-UCFSVRIP.md)
+- [LST UCFSVRIP](command/UNC/20.15.2/LST-UCFSVRIP.md)
+- [MOD UCFSVRIP](command/UNC/20.15.2/MOD-UCFSVRIP.md)
+- [RMV UCFSVRIP](command/UNC/20.15.2/RMV-UCFSVRIP.md)
 
 ## 证据
 

@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UPGTSK]] · 升级/补丁任务（UPGTSK）
+- [升级/补丁任务（UPGTSK）](configobject/UNC/20.15.2/UPGTSK.md)
 
 ## 使用实例
 

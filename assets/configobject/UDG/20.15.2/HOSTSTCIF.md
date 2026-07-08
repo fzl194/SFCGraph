@@ -19,9 +19,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-HOSTSTCIF]] · ADD HOSTSTCIF
-- [[command/UDG/20.15.2/LST-HOSTSTCIF]] · LST HOSTSTCIF
-- [[command/UDG/20.15.2/RMV-HOSTSTCIF]] · RMV HOSTSTCIF
+- [ADD HOSTSTCIF](command/UDG/20.15.2/ADD-HOSTSTCIF.md)
+- [LST HOSTSTCIF](command/UDG/20.15.2/LST-HOSTSTCIF.md)
+- [RMV HOSTSTCIF](command/UDG/20.15.2/RMV-HOSTSTCIF.md)
 
 ## 证据
 

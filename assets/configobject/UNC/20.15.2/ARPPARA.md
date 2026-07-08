@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ARPPARA]] · ADD ARPPARA
-- [[command/UNC/20.15.2/LST-ARPPARA]] · LST ARPPARA
-- [[command/UNC/20.15.2/MOD-ARPPARA]] · MOD ARPPARA
-- [[command/UNC/20.15.2/RMV-ARPPARA]] · RMV ARPPARA
+- [ADD ARPPARA](command/UNC/20.15.2/ADD-ARPPARA.md)
+- [LST ARPPARA](command/UNC/20.15.2/LST-ARPPARA.md)
+- [MOD ARPPARA](command/UNC/20.15.2/MOD-ARPPARA.md)
+- [RMV ARPPARA](command/UNC/20.15.2/RMV-ARPPARA.md)
 
 ## 证据
 

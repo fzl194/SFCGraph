@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/UPL-CGFTPPWD]] · UPL CGFTPPWD
+- [UPL CGFTPPWD](command/UNC/20.15.2/UPL-CGFTPPWD.md)
 
 ## 证据
 

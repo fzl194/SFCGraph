@@ -59,7 +59,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LOD-CONFIGXML]] · LOD CONFIGXML
+- [LOD CONFIGXML](command/UNC/20.15.2/LOD-CONFIGXML.md)
 
 ## 证据
 

@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NFREGNRFSTATUS]] · DSP NFREGNRFSTATUS
+- [DSP NFREGNRFSTATUS](command/UNC/20.15.2/DSP-NFREGNRFSTATUS.md)
 
 ## 证据
 

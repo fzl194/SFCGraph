@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LLCXID]] · LLC协商参数（LLCXID）
+- [LLC协商参数（LLCXID）](configobject/UNC/20.15.2/LLCXID.md)
 
 ## 使用实例
 

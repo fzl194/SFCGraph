@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PROCMEMPT]] · DSP PROCMEMPT
+- [DSP PROCMEMPT](command/UDG/20.15.2/DSP-PROCMEMPT.md)
 
 ## 证据
 

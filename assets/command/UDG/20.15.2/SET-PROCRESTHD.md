@@ -44,7 +44,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PROCRESTHD]] · 进程资源告警阈值（PROCRESTHD）
+- [进程资源告警阈值（PROCRESTHD）](configobject/UDG/20.15.2/PROCRESTHD.md)
 
 ## 使用实例
 

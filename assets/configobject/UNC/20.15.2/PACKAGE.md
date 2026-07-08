@@ -17,12 +17,12 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-PACKAGE]] · ACT PACKAGE
-- [[command/UNC/20.15.2/DLD-PACKAGE]] · DLD PACKAGE
-- [[command/UNC/20.15.2/DSP-PACKAGE]] · DSP PACKAGE
-- [[command/UNC/20.15.2/LOD-PACKAGE]] · LOD PACKAGE
-- [[command/UNC/20.15.2/RBK-PACKAGE]] · RBK PACKAGE
-- [[command/UNC/20.15.2/RMV-PACKAGE]] · RMV PACKAGE
+- [ACT PACKAGE](command/UNC/20.15.2/ACT-PACKAGE.md)
+- [DLD PACKAGE](command/UNC/20.15.2/DLD-PACKAGE.md)
+- [DSP PACKAGE](command/UNC/20.15.2/DSP-PACKAGE.md)
+- [LOD PACKAGE](command/UNC/20.15.2/LOD-PACKAGE.md)
+- [RBK PACKAGE](command/UNC/20.15.2/RBK-PACKAGE.md)
+- [RMV PACKAGE](command/UNC/20.15.2/RMV-PACKAGE.md)
 
 ## 证据
 

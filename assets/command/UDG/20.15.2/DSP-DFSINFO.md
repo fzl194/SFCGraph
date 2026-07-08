@@ -30,7 +30,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/DFSINFO]] · DFS集群信息（DFSINFO）
+- [DFS集群信息（DFSINFO）](configobject/UDG/20.15.2/DFSINFO.md)
 
 ## 使用实例
 

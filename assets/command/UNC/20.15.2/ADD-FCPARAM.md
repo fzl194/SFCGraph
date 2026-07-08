@@ -164,7 +164,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/FCPARAM]] · 流控参数（FCPARAM）
+- [流控参数（FCPARAM）](configobject/UNC/20.15.2/FCPARAM.md)
 
 ## 使用实例
 

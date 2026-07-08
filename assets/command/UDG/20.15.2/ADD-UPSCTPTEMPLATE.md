@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/UPSCTPTEMPLATE]] · SCTP模板（UPSCTPTEMPLATE）
+- [SCTP模板（UPSCTPTEMPLATE）](configobject/UDG/20.15.2/UPSCTPTEMPLATE.md)
 
 ## 使用实例
 

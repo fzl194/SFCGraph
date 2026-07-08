@@ -47,7 +47,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CFGTABLEDATA]] · 满足条件的CFG表数据（CFGTABLEDATA）
+- [满足条件的CFG表数据（CFGTABLEDATA）](configobject/UNC/20.15.2/CFGTABLEDATA.md)
 
 ## 使用实例
 

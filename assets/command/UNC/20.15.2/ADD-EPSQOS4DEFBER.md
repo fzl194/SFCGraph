@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/EPSQOS4DEFBER]] · Qos Profile缺省承载QoS属性（EPSQOS4DEFBER）
+- [Qos Profile缺省承载QoS属性（EPSQOS4DEFBER）](configobject/UNC/20.15.2/EPSQOS4DEFBER.md)
 
 ## 使用实例
 

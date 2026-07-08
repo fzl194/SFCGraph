@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SDRPOLICYKEYS]] · DSP SDRPOLICYKEYS
+- [DSP SDRPOLICYKEYS](command/UNC/20.15.2/DSP-SDRPOLICYKEYS.md)
 
 ## 证据
 

@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-M2MPLCY]] · ADD M2MPLCY
-- [[command/UNC/20.15.2/LST-M2MPLCY]] · LST M2MPLCY
-- [[command/UNC/20.15.2/MOD-M2MPLCY]] · MOD M2MPLCY
-- [[command/UNC/20.15.2/RMV-M2MPLCY]] · RMV M2MPLCY
+- [ADD M2MPLCY](command/UNC/20.15.2/ADD-M2MPLCY.md)
+- [LST M2MPLCY](command/UNC/20.15.2/LST-M2MPLCY.md)
+- [MOD M2MPLCY](command/UNC/20.15.2/MOD-M2MPLCY.md)
+- [RMV M2MPLCY](command/UNC/20.15.2/RMV-M2MPLCY.md)
 
 ## 证据
 

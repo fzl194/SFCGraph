@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSQUEINFOM]] · DSP MSSQUEINFOM
+- [DSP MSSQUEINFOM](command/UDG/20.15.2/DSP-MSSQUEINFOM.md)
 
 ## 证据
 

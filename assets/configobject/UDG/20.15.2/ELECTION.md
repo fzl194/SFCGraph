@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ELECTION]] · DSP ELECTION
+- [DSP ELECTION](command/UDG/20.15.2/DSP-ELECTION.md)
 
 ## 证据
 

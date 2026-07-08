@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LCSAPLNK]] · ADD LCSAPLNK
-- [[command/UNC/20.15.2/LST-LCSAPLNK]] · LST LCSAPLNK
-- [[command/UNC/20.15.2/MOD-LCSAPLNK]] · MOD LCSAPLNK
-- [[command/UNC/20.15.2/RMV-LCSAPLNK]] · RMV LCSAPLNK
+- [ADD LCSAPLNK](command/UNC/20.15.2/ADD-LCSAPLNK.md)
+- [LST LCSAPLNK](command/UNC/20.15.2/LST-LCSAPLNK.md)
+- [MOD LCSAPLNK](command/UNC/20.15.2/MOD-LCSAPLNK.md)
+- [RMV LCSAPLNK](command/UNC/20.15.2/RMV-LCSAPLNK.md)
 
 ## 证据
 

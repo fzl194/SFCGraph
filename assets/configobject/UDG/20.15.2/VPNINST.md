@@ -23,16 +23,16 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-VPNINST]] · ADD VPNINST
-- [[command/UDG/20.15.2/LST-VPNINST]] · LST VPNINST
-- [[command/UDG/20.15.2/RMV-VPNINST]] · RMV VPNINST
+- [ADD VPNINST](command/UDG/20.15.2/ADD-VPNINST.md)
+- [LST VPNINST](command/UDG/20.15.2/LST-VPNINST.md)
+- [RMV VPNINST](command/UDG/20.15.2/RMV-VPNINST.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/APN]] · APN
-- [[configobject/UDG/20.15.2/IPFARM]] · IPFARM
-- [[configobject/UDG/20.15.2/LOGICINF]] · LOGICINF
-- [[configobject/UDG/20.15.2/POOL]] · POOL
+- [APN](configobject/UDG/20.15.2/APN.md)
+- [IPFARM](configobject/UDG/20.15.2/IPFARM.md)
+- [LOGICINF](configobject/UDG/20.15.2/LOGICINF.md)
+- [POOL](configobject/UDG/20.15.2/POOL.md)
 
 ## 证据
 

@@ -54,7 +54,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TCPBPCFG]] · TCP过载反压HTTP流控配置（TCPBPCFG）
+- [TCP过载反压HTTP流控配置（TCPBPCFG）](configobject/UNC/20.15.2/TCPBPCFG.md)
 
 ## 使用实例
 

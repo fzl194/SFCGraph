@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CFGTHRESHOLD]] · 配置对象告警阈值（CFGTHRESHOLD）
+- [配置对象告警阈值（CFGTHRESHOLD）](configobject/UDG/20.15.2/CFGTHRESHOLD.md)
 
 ## 使用实例
 

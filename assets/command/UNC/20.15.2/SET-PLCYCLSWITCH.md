@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PLCYCLSWITCH]] · 冗余策略老化开关（PLCYCLSWITCH）
+- [冗余策略老化开关（PLCYCLSWITCH）](configobject/UNC/20.15.2/PLCYCLSWITCH.md)
 
 ## 使用实例
 

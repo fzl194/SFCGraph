@@ -34,7 +34,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/VNFMINFO]] · VNFM对接信息（VNFMINFO）
+- [VNFM对接信息（VNFMINFO）](configobject/UDG/20.15.2/VNFMINFO.md)
 
 ## 使用实例
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-USRSESSIONCTX]] · DSP USRSESSIONCTX
+- [DSP USRSESSIONCTX](command/UNC/20.15.2/DSP-USRSESSIONCTX.md)
 
 ## 证据
 

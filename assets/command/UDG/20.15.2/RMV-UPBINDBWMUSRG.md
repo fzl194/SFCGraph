@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/UPBINDBWMUSRG]] · 带宽管理用户组User Profile绑定（UPBINDBWMUSRG）
+- [带宽管理用户组User Profile绑定（UPBINDBWMUSRG）](configobject/UDG/20.15.2/UPBINDBWMUSRG.md)
 
 ## 使用实例
 

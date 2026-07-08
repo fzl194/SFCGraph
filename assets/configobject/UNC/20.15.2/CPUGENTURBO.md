@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CPUGENTURBO]] · LST CPUGENTURBO
-- [[command/UNC/20.15.2/SET-CPUGENTURBO]] · SET CPUGENTURBO
+- [LST CPUGENTURBO](command/UNC/20.15.2/LST-CPUGENTURBO.md)
+- [SET CPUGENTURBO](command/UNC/20.15.2/SET-CPUGENTURBO.md)
 
 ## 证据
 

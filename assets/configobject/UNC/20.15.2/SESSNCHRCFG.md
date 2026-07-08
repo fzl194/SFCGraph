@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SESSNCHRCFG]] · LST SESSNCHRCFG
-- [[command/UNC/20.15.2/SET-SESSNCHRCFG]] · SET SESSNCHRCFG
+- [LST SESSNCHRCFG](command/UNC/20.15.2/LST-SESSNCHRCFG.md)
+- [SET SESSNCHRCFG](command/UNC/20.15.2/SET-SESSNCHRCFG.md)
 
 ## 证据
 

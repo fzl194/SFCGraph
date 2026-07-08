@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SRIIDINFO]] · DSP SRIIDINFO
+- [DSP SRIIDINFO](command/UDG/20.15.2/DSP-SRIIDINFO.md)
 
 ## 证据
 

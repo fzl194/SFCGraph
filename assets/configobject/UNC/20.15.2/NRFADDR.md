@@ -27,10 +27,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRFADDR]] · ADD NRFADDR
-- [[command/UNC/20.15.2/LST-NRFADDR]] · LST NRFADDR
-- [[command/UNC/20.15.2/MOD-NRFADDR]] · MOD NRFADDR
-- [[command/UNC/20.15.2/RMV-NRFADDR]] · RMV NRFADDR
+- [ADD NRFADDR](command/UNC/20.15.2/ADD-NRFADDR.md)
+- [LST NRFADDR](command/UNC/20.15.2/LST-NRFADDR.md)
+- [MOD NRFADDR](command/UNC/20.15.2/MOD-NRFADDR.md)
+- [RMV NRFADDR](command/UNC/20.15.2/RMV-NRFADDR.md)
 
 ## 证据
 

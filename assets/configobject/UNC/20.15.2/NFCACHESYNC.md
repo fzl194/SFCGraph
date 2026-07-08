@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/OPR-NFCACHESYNC]] · OPR NFCACHESYNC
+- [OPR NFCACHESYNC](command/UNC/20.15.2/OPR-NFCACHESYNC.md)
 
 ## 证据
 

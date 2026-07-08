@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CGGROUP]] · ADD CGGROUP
-- [[command/UNC/20.15.2/LST-CGGROUP]] · LST CGGROUP
-- [[command/UNC/20.15.2/MOD-CGGROUP]] · MOD CGGROUP
-- [[command/UNC/20.15.2/RMV-CGGROUP]] · RMV CGGROUP
+- [ADD CGGROUP](command/UNC/20.15.2/ADD-CGGROUP.md)
+- [LST CGGROUP](command/UNC/20.15.2/LST-CGGROUP.md)
+- [MOD CGGROUP](command/UNC/20.15.2/MOD-CGGROUP.md)
+- [RMV CGGROUP](command/UNC/20.15.2/RMV-CGGROUP.md)
 
 ## 证据
 

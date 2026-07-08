@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LICENSEPEAK]] · DSP LICENSEPEAK
+- [DSP LICENSEPEAK](command/UNC/20.15.2/DSP-LICENSEPEAK.md)
 
 ## 证据
 

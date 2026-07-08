@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-CFGCERTAINDB]] · DSP CFGCERTAINDB
+- [DSP CFGCERTAINDB](command/UNC/20.15.2/DSP-CFGCERTAINDB.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SYNCFILESTATUS]] · DSP SYNCFILESTATUS
+- [DSP SYNCFILESTATUS](command/UNC/20.15.2/DSP-SYNCFILESTATUS.md)
 
 ## 证据
 

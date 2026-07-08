@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSQUEDETINFOM]] · DSP MSSQUEDETINFOM
+- [DSP MSSQUEDETINFOM](command/UDG/20.15.2/DSP-MSSQUEDETINFOM.md)
 
 ## 证据
 

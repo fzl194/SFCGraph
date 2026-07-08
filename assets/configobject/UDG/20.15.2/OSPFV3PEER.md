@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-OSPFV3PEER]] · DSP OSPFV3PEER
+- [DSP OSPFV3PEER](command/UDG/20.15.2/DSP-OSPFV3PEER.md)
 
 ## 证据
 

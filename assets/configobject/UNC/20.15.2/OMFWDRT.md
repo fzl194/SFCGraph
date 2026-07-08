@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-OMFWDRT]] · ADD OMFWDRT
-- [[command/UNC/20.15.2/LST-OMFWDRT]] · LST OMFWDRT
-- [[command/UNC/20.15.2/RMV-OMFWDRT]] · RMV OMFWDRT
+- [ADD OMFWDRT](command/UNC/20.15.2/ADD-OMFWDRT.md)
+- [LST OMFWDRT](command/UNC/20.15.2/LST-OMFWDRT.md)
+- [RMV OMFWDRT](command/UNC/20.15.2/RMV-OMFWDRT.md)
 
 ## 证据
 

@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LOD-DIAMDICT]] · LOD DIAMDICT
+- [LOD DIAMDICT](command/UNC/20.15.2/LOD-DIAMDICT.md)
 
 ## 证据
 

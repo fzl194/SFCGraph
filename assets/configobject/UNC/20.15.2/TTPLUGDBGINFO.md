@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-TTPLUGDBGINFO]] · DSP TTPLUGDBGINFO
+- [DSP TTPLUGDBGINFO](command/UNC/20.15.2/DSP-TTPLUGDBGINFO.md)
 
 ## 证据
 

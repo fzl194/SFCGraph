@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPINITSETUP]] · LST UPINITSETUP
-- [[command/UDG/20.15.2/SET-UPINITSETUP]] · SET UPINITSETUP
+- [LST UPINITSETUP](command/UDG/20.15.2/LST-UPINITSETUP.md)
+- [SET UPINITSETUP](command/UDG/20.15.2/SET-UPINITSETUP.md)
 
 ## 证据
 

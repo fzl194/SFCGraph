@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DDNATTR]] · LST DDNATTR
-- [[command/UNC/20.15.2/SET-DDNATTR]] · SET DDNATTR
+- [LST DDNATTR](command/UNC/20.15.2/LST-DDNATTR.md)
+- [SET DDNATTR](command/UNC/20.15.2/SET-DDNATTR.md)
 
 ## 证据
 

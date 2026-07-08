@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MONVPN]] · ADD MONVPN
-- [[command/UNC/20.15.2/LST-MONVPN]] · LST MONVPN
-- [[command/UNC/20.15.2/RMV-MONVPN]] · RMV MONVPN
+- [ADD MONVPN](command/UNC/20.15.2/ADD-MONVPN.md)
+- [LST MONVPN](command/UNC/20.15.2/LST-MONVPN.md)
+- [RMV MONVPN](command/UNC/20.15.2/RMV-MONVPN.md)
 
 ## 证据
 

@@ -27,7 +27,7 @@ ACT RECYCLE命令用于回收本地地址池、组播地址池或远端地址池
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ACT-RECYCLE]] · ACT RECYCLE
+- [ACT RECYCLE](command/UDG/20.15.2/ACT-RECYCLE.md)
 
 ## 证据
 

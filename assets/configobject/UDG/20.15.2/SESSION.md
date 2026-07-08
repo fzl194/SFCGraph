@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DEA-SESSION]] · DEA SESSION
+- [DEA SESSION](command/UDG/20.15.2/DEA-SESSION.md)
 
 ## 证据
 

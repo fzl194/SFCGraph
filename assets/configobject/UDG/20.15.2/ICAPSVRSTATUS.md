@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ICAPSVRSTATUS]] · DSP ICAPSVRSTATUS
+- [DSP ICAPSVRSTATUS](command/UDG/20.15.2/DSP-ICAPSVRSTATUS.md)
 
 ## 证据
 

@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-MASKALM]] · LST MASKALM
+- [LST MASKALM](command/UDG/20.15.2/LST-MASKALM.md)
 
 ## 证据
 

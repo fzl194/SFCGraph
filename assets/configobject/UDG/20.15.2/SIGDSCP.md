@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SIGDSCP]] · LST SIGDSCP
-- [[command/UDG/20.15.2/SET-SIGDSCP]] · SET SIGDSCP
+- [LST SIGDSCP](command/UDG/20.15.2/LST-SIGDSCP.md)
+- [SET SIGDSCP](command/UDG/20.15.2/SET-SIGDSCP.md)
 
 ## 证据
 

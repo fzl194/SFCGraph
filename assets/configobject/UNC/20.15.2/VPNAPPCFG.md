@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-VPNAPPCFG]] · LST VPNAPPCFG
+- [LST VPNAPPCFG](command/UNC/20.15.2/LST-VPNAPPCFG.md)
 
 ## 证据
 

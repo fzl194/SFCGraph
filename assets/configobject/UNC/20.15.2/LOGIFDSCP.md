@@ -31,8 +31,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LOGIFDSCP]] · LST LOGIFDSCP
-- [[command/UNC/20.15.2/SET-LOGIFDSCP]] · SET LOGIFDSCP
+- [LST LOGIFDSCP](command/UNC/20.15.2/LST-LOGIFDSCP.md)
+- [SET LOGIFDSCP](command/UNC/20.15.2/SET-LOGIFDSCP.md)
 
 ## 证据
 

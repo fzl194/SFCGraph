@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-VNFMODE]] · DSP VNFMODE
+- [DSP VNFMODE](command/UNC/20.15.2/DSP-VNFMODE.md)
 
 ## 证据
 

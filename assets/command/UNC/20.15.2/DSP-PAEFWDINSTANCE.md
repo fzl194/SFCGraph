@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组; G_3，用户级
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PAEFWDINSTANCE]] · PAE转发实例信息（PAEFWDINSTANCE）
+- [PAE转发实例信息（PAEFWDINSTANCE）](configobject/UNC/20.15.2/PAEFWDINSTANCE.md)
 
 ## 使用实例
 

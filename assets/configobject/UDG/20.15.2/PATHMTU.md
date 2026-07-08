@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PATHMTU]] · DSP PATHMTU
+- [DSP PATHMTU](command/UDG/20.15.2/DSP-PATHMTU.md)
 
 ## 证据
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UNIHTR]] · LST UNIHTR
-- [[command/UNC/20.15.2/SET-UNIHTR]] · SET UNIHTR
+- [LST UNIHTR](command/UNC/20.15.2/LST-UNIHTR.md)
+- [SET UNIHTR](command/UNC/20.15.2/SET-UNIHTR.md)
 
 ## 证据
 

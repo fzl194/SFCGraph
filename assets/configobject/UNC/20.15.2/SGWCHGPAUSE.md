@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SGWCHGPAUSE]] · LST SGWCHGPAUSE
-- [[command/UNC/20.15.2/SET-SGWCHGPAUSE]] · SET SGWCHGPAUSE
+- [LST SGWCHGPAUSE](command/UNC/20.15.2/LST-SGWCHGPAUSE.md)
+- [SET SGWCHGPAUSE](command/UNC/20.15.2/SET-SGWCHGPAUSE.md)
 
 ## 证据
 

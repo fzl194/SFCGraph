@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/COMMUNITYFILTER]] · 团体属性过滤器（COMMUNITYFILTER）
+- [团体属性过滤器（COMMUNITYFILTER）](configobject/UDG/20.15.2/COMMUNITYFILTER.md)
 
 ## 使用实例
 

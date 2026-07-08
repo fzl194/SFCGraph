@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-BGPPEERSTATE]] · DSP BGPPEERSTATE
+- [DSP BGPPEERSTATE](command/UDG/20.15.2/DSP-BGPPEERSTATE.md)
 
 ## 证据
 

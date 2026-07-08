@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-ALMNRMODE]] · LST ALMNRMODE
-- [[command/UDG/20.15.2/SET-ALMNRMODE]] · SET ALMNRMODE
+- [LST ALMNRMODE](command/UDG/20.15.2/LST-ALMNRMODE.md)
+- [SET ALMNRMODE](command/UDG/20.15.2/SET-ALMNRMODE.md)
 
 ## 证据
 

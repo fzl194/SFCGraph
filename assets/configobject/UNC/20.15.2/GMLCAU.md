@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GMLCAU]] · ADD GMLCAU
-- [[command/UNC/20.15.2/LST-GMLCAU]] · LST GMLCAU
-- [[command/UNC/20.15.2/RMV-GMLCAU]] · RMV GMLCAU
+- [ADD GMLCAU](command/UNC/20.15.2/ADD-GMLCAU.md)
+- [LST GMLCAU](command/UNC/20.15.2/LST-GMLCAU.md)
+- [RMV GMLCAU](command/UNC/20.15.2/RMV-GMLCAU.md)
 
 ## 证据
 

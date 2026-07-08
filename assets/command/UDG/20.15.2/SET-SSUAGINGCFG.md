@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SSUAGINGCFG]] · SSU容器业务相关老化功能配置（SSUAGINGCFG）
+- [SSU容器业务相关老化功能配置（SSUAGINGCFG）](configobject/UDG/20.15.2/SSUAGINGCFG.md)
 
 ## 使用实例
 

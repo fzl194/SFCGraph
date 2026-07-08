@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NETWORKINSTVPNMAP]] · 网络实例配置（NETWORKINSTVPNMAP）
+- [网络实例配置（NETWORKINSTVPNMAP）](configobject/UDG/20.15.2/NETWORKINSTVPNMAP.md)
 
 ## 使用实例
 

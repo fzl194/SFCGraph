@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ESN]] · DSP ESN
-- [[command/UNC/20.15.2/LOD-ESN]] · LOD ESN
-- [[command/UNC/20.15.2/LST-ESN]] · LST ESN
+- [DSP ESN](command/UNC/20.15.2/DSP-ESN.md)
+- [LOD ESN](command/UNC/20.15.2/LOD-ESN.md)
+- [LST ESN](command/UNC/20.15.2/LST-ESN.md)
 
 ## 证据
 

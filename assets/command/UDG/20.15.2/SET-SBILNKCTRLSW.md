@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SBILNKCTRLSW]] · 服务化接口链路自动控制功能开关（SBILNKCTRLSW）
+- [服务化接口链路自动控制功能开关（SBILNKCTRLSW）](configobject/UDG/20.15.2/SBILNKCTRLSW.md)
 
 ## 使用实例
 

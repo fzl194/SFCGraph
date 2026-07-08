@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-DPSCALEUP]] · ACT DPSCALEUP
-- [[command/UNC/20.15.2/DSP-DPSCALEUP]] · DSP DPSCALEUP
+- [ACT DPSCALEUP](command/UNC/20.15.2/ACT-DPSCALEUP.md)
+- [DSP DPSCALEUP](command/UNC/20.15.2/DSP-DPSCALEUP.md)
 
 ## 证据
 

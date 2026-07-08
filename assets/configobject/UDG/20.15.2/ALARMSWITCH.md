@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-ALARMSWITCH]] · LST ALARMSWITCH
-- [[command/UDG/20.15.2/SET-ALARMSWITCH]] · SET ALARMSWITCH
+- [LST ALARMSWITCH](command/UDG/20.15.2/LST-ALARMSWITCH.md)
+- [SET ALARMSWITCH](command/UDG/20.15.2/SET-ALARMSWITCH.md)
 
 ## 证据
 

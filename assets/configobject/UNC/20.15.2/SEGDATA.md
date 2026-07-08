@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DEL-SEGDATA]] · DEL SEGDATA
+- [DEL SEGDATA](command/UNC/20.15.2/DEL-SEGDATA.md)
 
 ## 证据
 

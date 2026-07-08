@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PPPCFG]] · LST PPPCFG
-- [[command/UDG/20.15.2/SET-PPPCFG]] · SET PPPCFG
+- [LST PPPCFG](command/UDG/20.15.2/LST-PPPCFG.md)
+- [SET PPPCFG](command/UDG/20.15.2/SET-PPPCFG.md)
 
 ## 证据
 

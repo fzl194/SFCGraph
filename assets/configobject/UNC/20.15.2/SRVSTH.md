@@ -33,8 +33,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SRVSTH]] · LST SRVSTH
-- [[command/UNC/20.15.2/SET-SRVSTH]] · SET SRVSTH
+- [LST SRVSTH](command/UNC/20.15.2/LST-SRVSTH.md)
+- [SET SRVSTH](command/UNC/20.15.2/SET-SRVSTH.md)
 
 ## 证据
 

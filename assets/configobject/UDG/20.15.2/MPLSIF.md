@@ -17,11 +17,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-MPLSIF]] · ADD MPLSIF
-- [[command/UDG/20.15.2/DSP-MPLSIF]] · DSP MPLSIF
-- [[command/UDG/20.15.2/LST-MPLSIF]] · LST MPLSIF
-- [[command/UDG/20.15.2/MOD-MPLSIF]] · MOD MPLSIF
-- [[command/UDG/20.15.2/RMV-MPLSIF]] · RMV MPLSIF
+- [ADD MPLSIF](command/UDG/20.15.2/ADD-MPLSIF.md)
+- [DSP MPLSIF](command/UDG/20.15.2/DSP-MPLSIF.md)
+- [LST MPLSIF](command/UDG/20.15.2/LST-MPLSIF.md)
+- [MOD MPLSIF](command/UDG/20.15.2/MOD-MPLSIF.md)
+- [RMV MPLSIF](command/UDG/20.15.2/RMV-MPLSIF.md)
 
 ## 证据
 

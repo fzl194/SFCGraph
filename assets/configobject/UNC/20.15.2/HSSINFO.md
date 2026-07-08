@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-HSSINFO]] · CLR HSSINFO
+- [CLR HSSINFO](command/UNC/20.15.2/CLR-HSSINFO.md)
 
 ## 证据
 

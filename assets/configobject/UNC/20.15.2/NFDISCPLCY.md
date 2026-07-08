@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NFDISCPLCY]] · LST NFDISCPLCY
-- [[command/UNC/20.15.2/SET-NFDISCPLCY]] · SET NFDISCPLCY
+- [LST NFDISCPLCY](command/UNC/20.15.2/LST-NFDISCPLCY.md)
+- [SET NFDISCPLCY](command/UNC/20.15.2/SET-NFDISCPLCY.md)
 
 ## 证据
 

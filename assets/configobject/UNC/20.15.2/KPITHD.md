@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-KPITHD]] · LST KPITHD
-- [[command/UNC/20.15.2/SET-KPITHD]] · SET KPITHD
+- [LST KPITHD](command/UNC/20.15.2/LST-KPITHD.md)
+- [SET KPITHD](command/UNC/20.15.2/SET-KPITHD.md)
 
 ## 证据
 

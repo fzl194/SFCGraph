@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PLCYNSGRP]] · ADD PLCYNSGRP
-- [[command/UNC/20.15.2/LST-PLCYNSGRP]] · LST PLCYNSGRP
-- [[command/UNC/20.15.2/RMV-PLCYNSGRP]] · RMV PLCYNSGRP
+- [ADD PLCYNSGRP](command/UNC/20.15.2/ADD-PLCYNSGRP.md)
+- [LST PLCYNSGRP](command/UNC/20.15.2/LST-PLCYNSGRP.md)
+- [RMV PLCYNSGRP](command/UNC/20.15.2/RMV-PLCYNSGRP.md)
 
 ## 证据
 

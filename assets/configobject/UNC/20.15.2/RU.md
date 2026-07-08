@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/BLK-RU]] · BLK RU
-- [[command/UNC/20.15.2/DSP-RU]] · DSP RU
-- [[command/UNC/20.15.2/RST-RU]] · RST RU
-- [[command/UNC/20.15.2/UBLK-RU]] · UBLK RU
+- [BLK RU](command/UNC/20.15.2/BLK-RU.md)
+- [DSP RU](command/UNC/20.15.2/DSP-RU.md)
+- [RST RU](command/UNC/20.15.2/RST-RU.md)
+- [UBLK RU](command/UNC/20.15.2/UBLK-RU.md)
 
 ## 证据
 

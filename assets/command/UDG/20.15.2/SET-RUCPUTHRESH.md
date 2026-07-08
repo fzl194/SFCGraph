@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/RUCPUTHRESH]] · RU CPU占用率告警上报门限和告警恢复门限（RUCPUTHRESH）
+- [RU CPU占用率告警上报门限和告警恢复门限（RUCPUTHRESH）](configobject/UDG/20.15.2/RUCPUTHRESH.md)
 
 ## 使用实例
 

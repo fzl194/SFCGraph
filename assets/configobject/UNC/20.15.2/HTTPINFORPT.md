@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTTPINFORPT]] · LST HTTPINFORPT
-- [[command/UNC/20.15.2/SET-HTTPINFORPT]] · SET HTTPINFORPT
+- [LST HTTPINFORPT](command/UNC/20.15.2/LST-HTTPINFORPT.md)
+- [SET HTTPINFORPT](command/UNC/20.15.2/SET-HTTPINFORPT.md)
 
 ## 证据
 

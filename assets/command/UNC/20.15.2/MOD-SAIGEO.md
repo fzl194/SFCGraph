@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SAIGEO]] · 服务区标识与地理坐标对照关系（SAIGEO）
+- [服务区标识与地理坐标对照关系（SAIGEO）](configobject/UNC/20.15.2/SAIGEO.md)
 
 ## 使用实例
 

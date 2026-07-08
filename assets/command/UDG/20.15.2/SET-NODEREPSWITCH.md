@@ -48,7 +48,7 @@ I层虚拟机HA开关打开场景下，执行该命令打开Error节点故障自
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NODEREPSWITCH]] · 节点查询自动修复开关（NODEREPSWITCH）
+- [节点查询自动修复开关（NODEREPSWITCH）](configobject/UDG/20.15.2/NODEREPSWITCH.md)
 
 ## 使用实例
 

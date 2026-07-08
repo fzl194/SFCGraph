@@ -19,10 +19,10 @@ BGP VPN实例创建的时候会默认创建IPv4的地址族。
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-BGPVRFAF]] · ADD BGPVRFAF
-- [[command/UDG/20.15.2/LST-BGPVRFAF]] · LST BGPVRFAF
-- [[command/UDG/20.15.2/MOD-BGPVRFAF]] · MOD BGPVRFAF
-- [[command/UDG/20.15.2/RMV-BGPVRFAF]] · RMV BGPVRFAF
+- [ADD BGPVRFAF](command/UDG/20.15.2/ADD-BGPVRFAF.md)
+- [LST BGPVRFAF](command/UDG/20.15.2/LST-BGPVRFAF.md)
+- [MOD BGPVRFAF](command/UDG/20.15.2/MOD-BGPVRFAF.md)
+- [RMV BGPVRFAF](command/UDG/20.15.2/RMV-BGPVRFAF.md)
 
 ## 证据
 

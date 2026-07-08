@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-EVTHEALREC]] · DSP EVTHEALREC
+- [DSP EVTHEALREC](command/UDG/20.15.2/DSP-EVTHEALREC.md)
 
 ## 证据
 

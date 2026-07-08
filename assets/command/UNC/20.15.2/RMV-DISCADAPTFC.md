@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DISCADAPTFC]] · 服务发现自适应流控NF级配置（DISCADAPTFC）
+- [服务发现自适应流控NF级配置（DISCADAPTFC）](configobject/UNC/20.15.2/DISCADAPTFC.md)
 
 ## 使用实例
 

@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ADDRLACID]] · ADD ADDRLACID
-- [[command/UNC/20.15.2/LST-ADDRLACID]] · LST ADDRLACID
-- [[command/UNC/20.15.2/RMV-ADDRLACID]] · RMV ADDRLACID
+- [ADD ADDRLACID](command/UNC/20.15.2/ADD-ADDRLACID.md)
+- [LST ADDRLACID](command/UNC/20.15.2/LST-ADDRLACID.md)
+- [RMV ADDRLACID](command/UNC/20.15.2/RMV-ADDRLACID.md)
 
 ## 证据
 

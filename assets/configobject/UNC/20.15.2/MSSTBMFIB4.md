@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSTBMFIB4]] · DSP MSSTBMFIB4
+- [DSP MSSTBMFIB4](command/UNC/20.15.2/DSP-MSSTBMFIB4.md)
 
 ## 证据
 

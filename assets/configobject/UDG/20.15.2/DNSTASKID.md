@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/GEN-DNSTASKID]] · GEN DNSTASKID
+- [GEN DNSTASKID](command/UDG/20.15.2/GEN-DNSTASKID.md)
 
 ## 证据
 

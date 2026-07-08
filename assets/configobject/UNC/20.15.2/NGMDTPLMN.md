@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGMDTPLMN]] · ADD NGMDTPLMN
-- [[command/UNC/20.15.2/LST-NGMDTPLMN]] · LST NGMDTPLMN
-- [[command/UNC/20.15.2/RMV-NGMDTPLMN]] · RMV NGMDTPLMN
+- [ADD NGMDTPLMN](command/UNC/20.15.2/ADD-NGMDTPLMN.md)
+- [LST NGMDTPLMN](command/UNC/20.15.2/LST-NGMDTPLMN.md)
+- [RMV NGMDTPLMN](command/UNC/20.15.2/RMV-NGMDTPLMN.md)
 
 ## 证据
 

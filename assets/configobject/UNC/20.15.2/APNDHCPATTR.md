@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNDHCPATTR]] · LST APNDHCPATTR
-- [[command/UNC/20.15.2/SET-APNDHCPATTR]] · SET APNDHCPATTR
+- [LST APNDHCPATTR](command/UNC/20.15.2/LST-APNDHCPATTR.md)
+- [SET APNDHCPATTR](command/UNC/20.15.2/SET-APNDHCPATTR.md)
 
 ## 证据
 

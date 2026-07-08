@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-VLROPC]] · ADD VLROPC
-- [[command/UNC/20.15.2/LST-VLROPC]] · LST VLROPC
-- [[command/UNC/20.15.2/MOD-VLROPC]] · MOD VLROPC
-- [[command/UNC/20.15.2/RMV-VLROPC]] · RMV VLROPC
+- [ADD VLROPC](command/UNC/20.15.2/ADD-VLROPC.md)
+- [LST VLROPC](command/UNC/20.15.2/LST-VLROPC.md)
+- [MOD VLROPC](command/UNC/20.15.2/MOD-VLROPC.md)
+- [RMV VLROPC](command/UNC/20.15.2/RMV-VLROPC.md)
 
 ## 证据
 

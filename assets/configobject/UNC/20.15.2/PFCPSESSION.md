@@ -28,7 +28,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/MIG-PFCPSESSION]] · MIG PFCPSESSION
+- [MIG PFCPSESSION](command/UNC/20.15.2/MIG-PFCPSESSION.md)
 
 ## 证据
 

@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RGRCACT]] · ADD RGRCACT
-- [[command/UNC/20.15.2/LST-RGRCACT]] · LST RGRCACT
-- [[command/UNC/20.15.2/MOD-RGRCACT]] · MOD RGRCACT
-- [[command/UNC/20.15.2/RMV-RGRCACT]] · RMV RGRCACT
+- [ADD RGRCACT](command/UNC/20.15.2/ADD-RGRCACT.md)
+- [LST RGRCACT](command/UNC/20.15.2/LST-RGRCACT.md)
+- [MOD RGRCACT](command/UNC/20.15.2/MOD-RGRCACT.md)
+- [RMV RGRCACT](command/UNC/20.15.2/RMV-RGRCACT.md)
 
 ## 证据
 

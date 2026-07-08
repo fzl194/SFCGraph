@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MDTCTRL]] · LST MDTCTRL
-- [[command/UNC/20.15.2/SET-MDTCTRL]] · SET MDTCTRL
+- [LST MDTCTRL](command/UNC/20.15.2/LST-MDTCTRL.md)
+- [SET MDTCTRL](command/UNC/20.15.2/SET-MDTCTRL.md)
 
 ## 证据
 

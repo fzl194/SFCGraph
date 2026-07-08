@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-XSMINNERDATA]] · DSP XSMINNERDATA
+- [DSP XSMINNERDATA](command/UNC/20.15.2/DSP-XSMINNERDATA.md)
 
 ## 证据
 

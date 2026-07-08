@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-BGPDATA]] · DSP BGPDATA
+- [DSP BGPDATA](command/UDG/20.15.2/DSP-BGPDATA.md)
 
 ## 证据
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NGIPAREADNN]] · 5G IP区域DNN（NGIPAREADNN）
+- [5G IP区域DNN（NGIPAREADNN）](configobject/UNC/20.15.2/NGIPAREADNN.md)
 
 ## 使用实例
 

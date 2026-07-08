@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RESNOSBASEROUTE]] · DSP RESNOSBASEROUTE
+- [DSP RESNOSBASEROUTE](command/UNC/20.15.2/DSP-RESNOSBASEROUTE.md)
 
 ## 证据
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAESWITCH]] · DSP PAESWITCH
-- [[command/UDG/20.15.2/SET-PAESWITCH]] · SET PAESWITCH
+- [DSP PAESWITCH](command/UDG/20.15.2/DSP-PAESWITCH.md)
+- [SET PAESWITCH](command/UDG/20.15.2/SET-PAESWITCH.md)
 
 ## 证据
 

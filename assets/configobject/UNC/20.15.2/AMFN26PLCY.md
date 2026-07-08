@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AMFN26PLCY]] · LST AMFN26PLCY
-- [[command/UNC/20.15.2/SET-AMFN26PLCY]] · SET AMFN26PLCY
+- [LST AMFN26PLCY](command/UNC/20.15.2/LST-AMFN26PLCY.md)
+- [SET AMFN26PLCY](command/UNC/20.15.2/SET-AMFN26PLCY.md)
 
 ## 证据
 

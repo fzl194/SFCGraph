@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PATHSTST]] · 批量路径探测（PATHSTST）
+- [批量路径探测（PATHSTST）](configobject/UDG/20.15.2/PATHSTST.md)
 
 ## 使用实例
 

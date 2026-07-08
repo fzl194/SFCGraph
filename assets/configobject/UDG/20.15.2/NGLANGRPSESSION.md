@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NGLANGRPSESSION]] · DSP NGLANGRPSESSION
+- [DSP NGLANGRPSESSION](command/UDG/20.15.2/DSP-NGLANGRPSESSION.md)
 
 ## 证据
 

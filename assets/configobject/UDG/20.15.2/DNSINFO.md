@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DNSINFO]] · LST DNSINFO
-- [[command/UDG/20.15.2/SET-DNSINFO]] · SET DNSINFO
+- [LST DNSINFO](command/UDG/20.15.2/LST-DNSINFO.md)
+- [SET DNSINFO](command/UDG/20.15.2/SET-DNSINFO.md)
 
 ## 证据
 

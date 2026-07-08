@@ -27,11 +27,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DNSS]] · ADD DNSS
-- [[command/UNC/20.15.2/DSP-DNSS]] · DSP DNSS
-- [[command/UNC/20.15.2/LST-DNSS]] · LST DNSS
-- [[command/UNC/20.15.2/MOD-DNSS]] · MOD DNSS
-- [[command/UNC/20.15.2/RMV-DNSS]] · RMV DNSS
+- [ADD DNSS](command/UNC/20.15.2/ADD-DNSS.md)
+- [DSP DNSS](command/UNC/20.15.2/DSP-DNSS.md)
+- [LST DNSS](command/UNC/20.15.2/LST-DNSS.md)
+- [MOD DNSS](command/UNC/20.15.2/MOD-DNSS.md)
+- [RMV DNSS](command/UNC/20.15.2/RMV-DNSS.md)
 
 ## 证据
 

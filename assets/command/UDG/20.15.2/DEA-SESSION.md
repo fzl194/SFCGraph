@@ -99,7 +99,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SESSION]] · 用户会话（SESSION）
+- [用户会话（SESSION）](configobject/UDG/20.15.2/SESSION.md)
 
 ## 使用实例
 

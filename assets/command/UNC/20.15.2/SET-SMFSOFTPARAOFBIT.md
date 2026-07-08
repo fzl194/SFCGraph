@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SMFSOFTPARAOFBIT]] · SMF软件参数比特位（SMFSOFTPARAOFBIT）
+- [SMF软件参数比特位（SMFSOFTPARAOFBIT）](configobject/UNC/20.15.2/SMFSOFTPARAOFBIT.md)
 
 ## 使用实例
 

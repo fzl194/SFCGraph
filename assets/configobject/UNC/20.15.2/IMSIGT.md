@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMSIGT]] · ADD IMSIGT
-- [[command/UNC/20.15.2/LST-IMSIGT]] · LST IMSIGT
-- [[command/UNC/20.15.2/MOD-IMSIGT]] · MOD IMSIGT
-- [[command/UNC/20.15.2/RMV-IMSIGT]] · RMV IMSIGT
+- [ADD IMSIGT](command/UNC/20.15.2/ADD-IMSIGT.md)
+- [LST IMSIGT](command/UNC/20.15.2/LST-IMSIGT.md)
+- [MOD IMSIGT](command/UNC/20.15.2/MOD-IMSIGT.md)
+- [RMV IMSIGT](command/UNC/20.15.2/RMV-IMSIGT.md)
 
 ## 证据
 

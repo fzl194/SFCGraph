@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-RANSECPLCY]] · LST RANSECPLCY
-- [[command/UNC/20.15.2/SET-RANSECPLCY]] · SET RANSECPLCY
+- [LST RANSECPLCY](command/UNC/20.15.2/LST-RANSECPLCY.md)
+- [SET RANSECPLCY](command/UNC/20.15.2/SET-RANSECPLCY.md)
 
 ## 证据
 

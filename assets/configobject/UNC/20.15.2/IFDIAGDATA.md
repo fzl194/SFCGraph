@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-IFDIAGDATA]] · DSP IFDIAGDATA
+- [DSP IFDIAGDATA](command/UNC/20.15.2/DSP-IFDIAGDATA.md)
 
 ## 证据
 

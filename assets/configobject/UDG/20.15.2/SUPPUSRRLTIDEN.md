@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SUPPUSRRLTIDEN]] · LST SUPPUSRRLTIDEN
+- [LST SUPPUSRRLTIDEN](command/UDG/20.15.2/LST-SUPPUSRRLTIDEN.md)
 
 ## 证据
 

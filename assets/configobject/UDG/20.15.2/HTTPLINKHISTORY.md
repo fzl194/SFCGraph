@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-HTTPLINKHISTORY]] · DSP HTTPLINKHISTORY
+- [DSP HTTPLINKHISTORY](command/UDG/20.15.2/DSP-HTTPLINKHISTORY.md)
 
 ## 证据
 

@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NODERES]] · 节点资源信息（NODERES）
+- [节点资源信息（NODERES）](configobject/UNC/20.15.2/NODERES.md)
 
 ## 使用实例
 

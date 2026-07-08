@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-BFD]] · LST BFD
-- [[command/UNC/20.15.2/SET-BFD]] · SET BFD
+- [LST BFD](command/UNC/20.15.2/LST-BFD.md)
+- [SET BFD](command/UNC/20.15.2/SET-BFD.md)
 
 ## 证据
 

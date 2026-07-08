@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LDPPEER]] · DSP LDPPEER
+- [DSP LDPPEER](command/UNC/20.15.2/DSP-LDPPEER.md)
 
 ## 证据
 

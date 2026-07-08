@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMFMBSFUNC]] · LST SMFMBSFUNC
-- [[command/UNC/20.15.2/SET-SMFMBSFUNC]] · SET SMFMBSFUNC
+- [LST SMFMBSFUNC](command/UNC/20.15.2/LST-SMFMBSFUNC.md)
+- [SET SMFMBSFUNC](command/UNC/20.15.2/SET-SMFMBSFUNC.md)
 
 ## 证据
 

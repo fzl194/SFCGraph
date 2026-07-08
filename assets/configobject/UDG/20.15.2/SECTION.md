@@ -22,15 +22,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SECTION]] · ADD SECTION
-- [[command/UDG/20.15.2/LCK-SECTION]] · LCK SECTION
-- [[command/UDG/20.15.2/LST-SECTION]] · LST SECTION
-- [[command/UDG/20.15.2/MOD-SECTION]] · MOD SECTION
-- [[command/UDG/20.15.2/RMV-SECTION]] · RMV SECTION
+- [ADD SECTION](command/UDG/20.15.2/ADD-SECTION.md)
+- [LCK SECTION](command/UDG/20.15.2/LCK-SECTION.md)
+- [LST SECTION](command/UDG/20.15.2/LST-SECTION.md)
+- [MOD SECTION](command/UDG/20.15.2/MOD-SECTION.md)
+- [RMV SECTION](command/UDG/20.15.2/RMV-SECTION.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/POOL]] · POOL
+- [POOL](configobject/UDG/20.15.2/POOL.md)
 
 ## 证据
 

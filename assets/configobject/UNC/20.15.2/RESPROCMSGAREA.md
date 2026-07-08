@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RESPROCMSGAREA]] · DSP RESPROCMSGAREA
+- [DSP RESPROCMSGAREA](command/UNC/20.15.2/DSP-RESPROCMSGAREA.md)
 
 ## 证据
 

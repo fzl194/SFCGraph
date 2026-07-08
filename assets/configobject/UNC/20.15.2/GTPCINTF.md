@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GTPCINTF]] · ADD GTPCINTF
-- [[command/UNC/20.15.2/LST-GTPCINTF]] · LST GTPCINTF
-- [[command/UNC/20.15.2/RMV-GTPCINTF]] · RMV GTPCINTF
+- [ADD GTPCINTF](command/UNC/20.15.2/ADD-GTPCINTF.md)
+- [LST GTPCINTF](command/UNC/20.15.2/LST-GTPCINTF.md)
+- [RMV GTPCINTF](command/UNC/20.15.2/RMV-GTPCINTF.md)
 
 ## 证据
 

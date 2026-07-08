@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SRVINSTSTAT]] · DSP SRVINSTSTAT
+- [DSP SRVINSTSTAT](command/UDG/20.15.2/DSP-SRVINSTSTAT.md)
 
 ## 证据
 

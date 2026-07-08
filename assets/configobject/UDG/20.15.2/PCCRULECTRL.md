@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PCCRULECTRL]] · LST PCCRULECTRL
-- [[command/UDG/20.15.2/SET-PCCRULECTRL]] · SET PCCRULECTRL
+- [LST PCCRULECTRL](command/UDG/20.15.2/LST-PCCRULECTRL.md)
+- [SET PCCRULECTRL](command/UDG/20.15.2/SET-PCCRULECTRL.md)
 
 ## 证据
 

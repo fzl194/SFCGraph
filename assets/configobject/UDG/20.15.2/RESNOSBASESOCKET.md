@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RESNOSBASESOCKET]] · DSP RESNOSBASESOCKET
+- [DSP RESNOSBASESOCKET](command/UDG/20.15.2/DSP-RESNOSBASESOCKET.md)
 
 ## 证据
 

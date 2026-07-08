@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-AFUSRDETECT]] · LST AFUSRDETECT
-- [[command/UDG/20.15.2/SET-AFUSRDETECT]] · SET AFUSRDETECT
+- [LST AFUSRDETECT](command/UDG/20.15.2/LST-AFUSRDETECT.md)
+- [SET AFUSRDETECT](command/UDG/20.15.2/SET-AFUSRDETECT.md)
 
 ## 证据
 

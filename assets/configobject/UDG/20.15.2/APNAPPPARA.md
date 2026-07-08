@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNAPPPARA]] · LST APNAPPPARA
-- [[command/UDG/20.15.2/SET-APNAPPPARA]] · SET APNAPPPARA
+- [LST APNAPPPARA](command/UDG/20.15.2/LST-APNAPPPARA.md)
+- [SET APNAPPPARA](command/UDG/20.15.2/SET-APNAPPPARA.md)
 
 ## 证据
 

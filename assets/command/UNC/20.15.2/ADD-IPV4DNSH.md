@@ -64,7 +64,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IPV4DNSH]] · IPV4 DNS Hostfile记录（IPV4DNSH）
+- [IPV4 DNS Hostfile记录（IPV4DNSH）](configobject/UNC/20.15.2/IPV4DNSH.md)
 
 ## 使用实例
 

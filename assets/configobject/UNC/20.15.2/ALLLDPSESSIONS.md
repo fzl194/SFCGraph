@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RBL-ALLLDPSESSIONS]] · RBL ALLLDPSESSIONS
+- [RBL ALLLDPSESSIONS](command/UNC/20.15.2/RBL-ALLLDPSESSIONS.md)
 
 ## 证据
 

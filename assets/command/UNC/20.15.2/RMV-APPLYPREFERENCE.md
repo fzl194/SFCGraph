@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APPLYPREFERENCE]] · 路由优先级设置（APPLYPREFERENCE）
+- [路由优先级设置（APPLYPREFERENCE）](configobject/UNC/20.15.2/APPLYPREFERENCE.md)
 
 ## 使用实例
 

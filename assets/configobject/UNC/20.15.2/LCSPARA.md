@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LCSPARA]] · LST LCSPARA
-- [[command/UNC/20.15.2/SET-LCSPARA]] · SET LCSPARA
+- [LST LCSPARA](command/UNC/20.15.2/LST-LCSPARA.md)
+- [SET LCSPARA](command/UNC/20.15.2/SET-LCSPARA.md)
 
 ## 证据
 

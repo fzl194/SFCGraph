@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ESMLC]] · ADD ESMLC
-- [[command/UNC/20.15.2/LST-ESMLC]] · LST ESMLC
-- [[command/UNC/20.15.2/MOD-ESMLC]] · MOD ESMLC
-- [[command/UNC/20.15.2/RMV-ESMLC]] · RMV ESMLC
+- [ADD ESMLC](command/UNC/20.15.2/ADD-ESMLC.md)
+- [LST ESMLC](command/UNC/20.15.2/LST-ESMLC.md)
+- [MOD ESMLC](command/UNC/20.15.2/MOD-ESMLC.md)
+- [RMV ESMLC](command/UNC/20.15.2/RMV-ESMLC.md)
 
 ## 证据
 

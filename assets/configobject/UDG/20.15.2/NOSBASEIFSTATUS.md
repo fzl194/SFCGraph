@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NOSBASEIFSTATUS]] · DSP NOSBASEIFSTATUS
+- [DSP NOSBASEIFSTATUS](command/UDG/20.15.2/DSP-NOSBASEIFSTATUS.md)
 
 ## 证据
 

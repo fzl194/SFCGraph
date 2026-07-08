@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PFCPPARA]] · LST PFCPPARA
-- [[command/UNC/20.15.2/SET-PFCPPARA]] · SET PFCPPARA
+- [LST PFCPPARA](command/UNC/20.15.2/LST-PFCPPARA.md)
+- [SET PFCPPARA](command/UNC/20.15.2/SET-PFCPPARA.md)
 
 ## 证据
 

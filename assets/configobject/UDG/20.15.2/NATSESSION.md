@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NATSESSION]] · DSP NATSESSION
+- [DSP NATSESSION](command/UDG/20.15.2/DSP-NATSESSION.md)
 
 ## 证据
 

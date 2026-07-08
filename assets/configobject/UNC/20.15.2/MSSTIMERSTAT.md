@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSTIMERSTAT]] · DSP MSSTIMERSTAT
+- [DSP MSSTIMERSTAT](command/UNC/20.15.2/DSP-MSSTIMERSTAT.md)
 
 ## 证据
 

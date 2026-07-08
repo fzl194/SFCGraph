@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ENBGP]] · ADD ENBGP
-- [[command/UNC/20.15.2/LST-ENBGP]] · LST ENBGP
-- [[command/UNC/20.15.2/MOD-ENBGP]] · MOD ENBGP
-- [[command/UNC/20.15.2/RMV-ENBGP]] · RMV ENBGP
+- [ADD ENBGP](command/UNC/20.15.2/ADD-ENBGP.md)
+- [LST ENBGP](command/UNC/20.15.2/LST-ENBGP.md)
+- [MOD ENBGP](command/UNC/20.15.2/MOD-ENBGP.md)
+- [RMV ENBGP](command/UNC/20.15.2/RMV-ENBGP.md)
 
 ## 证据
 

@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNUPSELPLY]] · LST APNUPSELPLY
-- [[command/UNC/20.15.2/SET-APNUPSELPLY]] · SET APNUPSELPLY
+- [LST APNUPSELPLY](command/UNC/20.15.2/LST-APNUPSELPLY.md)
+- [SET APNUPSELPLY](command/UNC/20.15.2/SET-APNUPSELPLY.md)
 
 ## 证据
 

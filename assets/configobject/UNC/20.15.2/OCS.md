@@ -22,11 +22,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-OCS]] · ACT OCS
-- [[command/UNC/20.15.2/ADD-OCS]] · ADD OCS
-- [[command/UNC/20.15.2/LST-OCS]] · LST OCS
-- [[command/UNC/20.15.2/MOD-OCS]] · MOD OCS
-- [[command/UNC/20.15.2/RMV-OCS]] · RMV OCS
+- [ACT OCS](command/UNC/20.15.2/ACT-OCS.md)
+- [ADD OCS](command/UNC/20.15.2/ADD-OCS.md)
+- [LST OCS](command/UNC/20.15.2/LST-OCS.md)
+- [MOD OCS](command/UNC/20.15.2/MOD-OCS.md)
+- [RMV OCS](command/UNC/20.15.2/RMV-OCS.md)
 
 ## 证据
 

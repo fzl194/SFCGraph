@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-NGRANCTX]] · CLR NGRANCTX
+- [CLR NGRANCTX](command/UNC/20.15.2/CLR-NGRANCTX.md)
 
 ## 证据
 

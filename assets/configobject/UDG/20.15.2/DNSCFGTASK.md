@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/EXC-DNSCFGTASK]] · EXC DNSCFGTASK
-- [[command/UDG/20.15.2/LST-DNSCFGTASK]] · LST DNSCFGTASK
+- [EXC DNSCFGTASK](command/UDG/20.15.2/EXC-DNSCFGTASK.md)
+- [LST DNSCFGTASK](command/UDG/20.15.2/LST-DNSCFGTASK.md)
 
 ## 证据
 

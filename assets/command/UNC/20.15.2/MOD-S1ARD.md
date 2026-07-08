@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/S1ARD]] · S1模式接入限制参数（S1ARD）
+- [S1模式接入限制参数（S1ARD）](configobject/UNC/20.15.2/S1ARD.md)
 
 ## 使用实例
 

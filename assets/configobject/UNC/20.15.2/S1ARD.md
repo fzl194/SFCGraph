@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-S1ARD]] · ADD S1ARD
-- [[command/UNC/20.15.2/LST-S1ARD]] · LST S1ARD
-- [[command/UNC/20.15.2/MOD-S1ARD]] · MOD S1ARD
-- [[command/UNC/20.15.2/RMV-S1ARD]] · RMV S1ARD
+- [ADD S1ARD](command/UNC/20.15.2/ADD-S1ARD.md)
+- [LST S1ARD](command/UNC/20.15.2/LST-S1ARD.md)
+- [MOD S1ARD](command/UNC/20.15.2/MOD-S1ARD.md)
+- [RMV S1ARD](command/UNC/20.15.2/RMV-S1ARD.md)
 
 ## 证据
 

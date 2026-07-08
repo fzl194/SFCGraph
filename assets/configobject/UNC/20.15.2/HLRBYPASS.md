@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HLRBYPASS]] · LST HLRBYPASS
-- [[command/UNC/20.15.2/SET-HLRBYPASS]] · SET HLRBYPASS
+- [LST HLRBYPASS](command/UNC/20.15.2/LST-HLRBYPASS.md)
+- [SET HLRBYPASS](command/UNC/20.15.2/SET-HLRBYPASS.md)
 
 ## 证据
 

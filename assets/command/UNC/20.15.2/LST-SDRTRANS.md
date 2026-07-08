@@ -39,7 +39,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SDRTRANS]] · SDR传输能力（SDRTRANS）
+- [SDR传输能力（SDRTRANS）](configobject/UNC/20.15.2/SDRTRANS.md)
 
 ## 使用实例
 

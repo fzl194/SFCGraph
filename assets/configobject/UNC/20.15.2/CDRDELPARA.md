@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CDRDELPARA]] · LST CDRDELPARA
-- [[command/UNC/20.15.2/MOD-CDRDELPARA]] · MOD CDRDELPARA
+- [LST CDRDELPARA](command/UNC/20.15.2/LST-CDRDELPARA.md)
+- [MOD CDRDELPARA](command/UNC/20.15.2/MOD-CDRDELPARA.md)
 
 ## 证据
 

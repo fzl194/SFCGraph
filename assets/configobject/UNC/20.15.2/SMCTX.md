@@ -26,9 +26,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DEA-SMCTX]] · DEA SMCTX
-- [[command/UNC/20.15.2/DSP-SMCTX]] · DSP SMCTX
-- [[command/UNC/20.15.2/RMV-SMCTX]] · RMV SMCTX
+- [DEA SMCTX](command/UNC/20.15.2/DEA-SMCTX.md)
+- [DSP SMCTX](command/UNC/20.15.2/DSP-SMCTX.md)
+- [RMV SMCTX](command/UNC/20.15.2/RMV-SMCTX.md)
 
 ## 证据
 

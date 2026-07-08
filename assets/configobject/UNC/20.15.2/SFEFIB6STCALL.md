@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SFEFIB6STCALL]] · DSP SFEFIB6STCALL
+- [DSP SFEFIB6STCALL](command/UNC/20.15.2/DSP-SFEFIB6STCALL.md)
 
 ## 证据
 

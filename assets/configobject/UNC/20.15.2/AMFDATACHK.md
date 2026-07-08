@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AMFDATACHK]] · LST AMFDATACHK
-- [[command/UNC/20.15.2/SET-AMFDATACHK]] · SET AMFDATACHK
+- [LST AMFDATACHK](command/UNC/20.15.2/LST-AMFDATACHK.md)
+- [SET AMFDATACHK](command/UNC/20.15.2/SET-AMFDATACHK.md)
 
 ## 证据
 

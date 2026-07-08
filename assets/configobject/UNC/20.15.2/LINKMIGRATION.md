@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-LINKMIGRATION]] · ACT LINKMIGRATION
+- [ACT LINKMIGRATION](command/UNC/20.15.2/ACT-LINKMIGRATION.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FWSOFTPARA]] · LST FWSOFTPARA
-- [[command/UDG/20.15.2/SET-FWSOFTPARA]] · SET FWSOFTPARA
+- [LST FWSOFTPARA](command/UDG/20.15.2/LST-FWSOFTPARA.md)
+- [SET FWSOFTPARA](command/UDG/20.15.2/SET-FWSOFTPARA.md)
 
 ## 证据
 

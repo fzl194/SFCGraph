@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTTPHTRCFG]] · LST HTTPHTRCFG
-- [[command/UNC/20.15.2/SET-HTTPHTRCFG]] · SET HTTPHTRCFG
+- [LST HTTPHTRCFG](command/UNC/20.15.2/LST-HTTPHTRCFG.md)
+- [SET HTTPHTRCFG](command/UNC/20.15.2/SET-HTTPHTRCFG.md)
 
 ## 证据
 

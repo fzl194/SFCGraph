@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-S1BALANCE]] · DSP S1BALANCE
-- [[command/UNC/20.15.2/STP-S1BALANCE]] · STP S1BALANCE
-- [[command/UNC/20.15.2/STR-S1BALANCE]] · STR S1BALANCE
+- [DSP S1BALANCE](command/UNC/20.15.2/DSP-S1BALANCE.md)
+- [STP S1BALANCE](command/UNC/20.15.2/STP-S1BALANCE.md)
+- [STR S1BALANCE](command/UNC/20.15.2/STR-S1BALANCE.md)
 
 ## 证据
 

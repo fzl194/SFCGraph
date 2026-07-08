@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-POOLLA]] · ADD POOLLA
-- [[command/UNC/20.15.2/LST-POOLLA]] · LST POOLLA
-- [[command/UNC/20.15.2/RMV-POOLLA]] · RMV POOLLA
+- [ADD POOLLA](command/UNC/20.15.2/ADD-POOLLA.md)
+- [LST POOLLA](command/UNC/20.15.2/LST-POOLLA.md)
+- [RMV POOLLA](command/UNC/20.15.2/RMV-POOLLA.md)
 
 ## 证据
 

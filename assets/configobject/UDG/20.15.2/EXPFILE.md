@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ULD-EXPFILE]] · ULD EXPFILE
+- [ULD EXPFILE](command/UDG/20.15.2/ULD-EXPFILE.md)
 
 ## 证据
 

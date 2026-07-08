@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LOCALHLR]] · ADD LOCALHLR
-- [[command/UNC/20.15.2/LST-LOCALHLR]] · LST LOCALHLR
-- [[command/UNC/20.15.2/MOD-LOCALHLR]] · MOD LOCALHLR
-- [[command/UNC/20.15.2/RMV-LOCALHLR]] · RMV LOCALHLR
+- [ADD LOCALHLR](command/UNC/20.15.2/ADD-LOCALHLR.md)
+- [LST LOCALHLR](command/UNC/20.15.2/LST-LOCALHLR.md)
+- [MOD LOCALHLR](command/UNC/20.15.2/MOD-LOCALHLR.md)
+- [RMV LOCALHLR](command/UNC/20.15.2/RMV-LOCALHLR.md)
 
 ## 证据
 

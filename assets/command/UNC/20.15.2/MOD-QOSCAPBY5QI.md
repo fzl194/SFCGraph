@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/QOSCAPBY5QI]] · 基于5QI的QosFlow QoS限制配置。（QOSCAPBY5QI）
+- [基于5QI的QosFlow QoS限制配置。（QOSCAPBY5QI）](configobject/UNC/20.15.2/QOSCAPBY5QI.md)
 
 ## 使用实例
 

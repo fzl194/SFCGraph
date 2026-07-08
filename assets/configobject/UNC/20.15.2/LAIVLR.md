@@ -26,9 +26,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LAIVLR]] · ADD LAIVLR
-- [[command/UNC/20.15.2/LST-LAIVLR]] · LST LAIVLR
-- [[command/UNC/20.15.2/RMV-LAIVLR]] · RMV LAIVLR
+- [ADD LAIVLR](command/UNC/20.15.2/ADD-LAIVLR.md)
+- [LST LAIVLR](command/UNC/20.15.2/LST-LAIVLR.md)
+- [RMV LAIVLR](command/UNC/20.15.2/RMV-LAIVLR.md)
 
 ## 证据
 

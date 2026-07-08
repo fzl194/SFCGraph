@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-S1CMPT]] · LST S1CMPT
-- [[command/UNC/20.15.2/SET-S1CMPT]] · SET S1CMPT
+- [LST S1CMPT](command/UNC/20.15.2/LST-S1CMPT.md)
+- [SET S1CMPT](command/UNC/20.15.2/SET-S1CMPT.md)
 
 ## 证据
 

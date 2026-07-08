@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-IPV6INFO]] · DSP IPV6INFO
+- [DSP IPV6INFO](command/UDG/20.15.2/DSP-IPV6INFO.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DLD-SOFTWARE]] · DLD SOFTWARE
-- [[command/UNC/20.15.2/DSP-SOFTWARE]] · DSP SOFTWARE
-- [[command/UNC/20.15.2/RMV-SOFTWARE]] · RMV SOFTWARE
+- [DLD SOFTWARE](command/UNC/20.15.2/DLD-SOFTWARE.md)
+- [DSP SOFTWARE](command/UNC/20.15.2/DSP-SOFTWARE.md)
+- [RMV SOFTWARE](command/UNC/20.15.2/RMV-SOFTWARE.md)
 
 ## 证据
 

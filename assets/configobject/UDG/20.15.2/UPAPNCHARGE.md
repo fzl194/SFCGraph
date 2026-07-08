@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPAPNCHARGE]] · LST UPAPNCHARGE
-- [[command/UDG/20.15.2/SET-UPAPNCHARGE]] · SET UPAPNCHARGE
+- [LST UPAPNCHARGE](command/UDG/20.15.2/LST-UPAPNCHARGE.md)
+- [SET UPAPNCHARGE](command/UDG/20.15.2/SET-UPAPNCHARGE.md)
 
 ## 证据
 

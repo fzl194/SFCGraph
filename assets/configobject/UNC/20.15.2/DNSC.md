@@ -35,7 +35,7 @@ DNS服务器上的数据修改后，可以使用该命令清除 UNC 整系统DNS
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-DNSC]] · CLR DNSC
+- [CLR DNSC](command/UNC/20.15.2/CLR-DNSC.md)
 
 ## 证据
 

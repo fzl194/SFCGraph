@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RMV-AFPOLICYALL]] · RMV AFPOLICYALL
+- [RMV AFPOLICYALL](command/UDG/20.15.2/RMV-AFPOLICYALL.md)
 
 ## 证据
 

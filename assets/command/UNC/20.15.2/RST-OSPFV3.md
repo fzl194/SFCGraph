@@ -48,7 +48,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OSPFV3]] · OSPFv3进程配置（OSPFV3）
+- [OSPFv3进程配置（OSPFV3）](configobject/UNC/20.15.2/OSPFV3.md)
 
 ## 使用实例
 

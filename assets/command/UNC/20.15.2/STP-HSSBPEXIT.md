@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/HSSBPEXIT]] · 用户退出HSS BYPASS状态（HSSBPEXIT）
+- [用户退出HSS BYPASS状态（HSSBPEXIT）](configobject/UNC/20.15.2/HSSBPEXIT.md)
 
 ## 使用实例
 

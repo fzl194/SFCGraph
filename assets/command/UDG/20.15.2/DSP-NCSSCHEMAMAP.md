@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NCSSCHEMAMAP]] · 应用模型间模型映射关联关系（NCSSCHEMAMAP）
+- [应用模型间模型映射关联关系（NCSSCHEMAMAP）](configobject/UDG/20.15.2/NCSSCHEMAMAP.md)
 
 ## 使用实例
 

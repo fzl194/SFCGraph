@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DIGIW]] · LST DIGIW
+- [LST DIGIW](command/UDG/20.15.2/LST-DIGIW.md)
 
 ## 证据
 

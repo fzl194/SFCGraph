@@ -22,11 +22,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TZLST]] · ADD TZLST
-- [[command/UNC/20.15.2/DSP-TZLST]] · DSP TZLST
-- [[command/UNC/20.15.2/LST-TZLST]] · LST TZLST
-- [[command/UNC/20.15.2/MOD-TZLST]] · MOD TZLST
-- [[command/UNC/20.15.2/RMV-TZLST]] · RMV TZLST
+- [ADD TZLST](command/UNC/20.15.2/ADD-TZLST.md)
+- [DSP TZLST](command/UNC/20.15.2/DSP-TZLST.md)
+- [LST TZLST](command/UNC/20.15.2/LST-TZLST.md)
+- [MOD TZLST](command/UNC/20.15.2/MOD-TZLST.md)
+- [RMV TZLST](command/UNC/20.15.2/RMV-TZLST.md)
 
 ## 证据
 

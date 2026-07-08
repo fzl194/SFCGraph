@@ -62,7 +62,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CMDLEVDFTBEH]] · DCC模板命令层缺省返回码动作（CMDLEVDFTBEH）
+- [DCC模板命令层缺省返回码动作（CMDLEVDFTBEH）](configobject/UNC/20.15.2/CMDLEVDFTBEH.md)
 
 ## 使用实例
 

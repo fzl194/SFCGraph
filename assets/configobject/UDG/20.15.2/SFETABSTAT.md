@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFETABSTAT]] · DSP SFETABSTAT
+- [DSP SFETABSTAT](command/UDG/20.15.2/DSP-SFETABSTAT.md)
 
 ## 证据
 

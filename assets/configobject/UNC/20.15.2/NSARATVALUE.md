@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NSARATVALUE]] · LST NSARATVALUE
-- [[command/UNC/20.15.2/SET-NSARATVALUE]] · SET NSARATVALUE
+- [LST NSARATVALUE](command/UNC/20.15.2/LST-NSARATVALUE.md)
+- [SET NSARATVALUE](command/UNC/20.15.2/SET-NSARATVALUE.md)
 
 ## 证据
 

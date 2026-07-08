@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DCSDISKINFO]] · DSP DCSDISKINFO
+- [DSP DCSDISKINFO](command/UDG/20.15.2/DSP-DCSDISKINFO.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-DMAVPDICTALL]] · RMV DMAVPDICTALL
+- [RMV DMAVPDICTALL](command/UNC/20.15.2/RMV-DMAVPDICTALL.md)
 
 ## 证据
 

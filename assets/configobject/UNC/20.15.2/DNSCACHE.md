@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DNSCACHE]] · DSP DNSCACHE
+- [DSP DNSCACHE](command/UNC/20.15.2/DSP-DNSCACHE.md)
 
 ## 证据
 

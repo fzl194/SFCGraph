@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGAPPARA]] · ADD NGAPPARA
-- [[command/UNC/20.15.2/LST-NGAPPARA]] · LST NGAPPARA
-- [[command/UNC/20.15.2/MOD-NGAPPARA]] · MOD NGAPPARA
-- [[command/UNC/20.15.2/RMV-NGAPPARA]] · RMV NGAPPARA
+- [ADD NGAPPARA](command/UNC/20.15.2/ADD-NGAPPARA.md)
+- [LST NGAPPARA](command/UNC/20.15.2/LST-NGAPPARA.md)
+- [MOD NGAPPARA](command/UNC/20.15.2/MOD-NGAPPARA.md)
+- [RMV NGAPPARA](command/UNC/20.15.2/RMV-NGAPPARA.md)
 
 ## 证据
 

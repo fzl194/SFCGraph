@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-VNFMINFO]] · LST VNFMINFO
-- [[command/UDG/20.15.2/MOD-VNFMINFO]] · MOD VNFMINFO
+- [LST VNFMINFO](command/UDG/20.15.2/LST-VNFMINFO.md)
+- [MOD VNFMINFO](command/UDG/20.15.2/MOD-VNFMINFO.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-FABRICOAMPORT]] · DSP FABRICOAMPORT
+- [DSP FABRICOAMPORT](command/UDG/20.15.2/DSP-FABRICOAMPORT.md)
 
 ## 证据
 

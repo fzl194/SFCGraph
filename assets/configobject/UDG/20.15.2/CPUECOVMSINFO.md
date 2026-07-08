@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CPUECOVMSINFO]] · DSP CPUECOVMSINFO
+- [DSP CPUECOVMSINFO](command/UDG/20.15.2/DSP-CPUECOVMSINFO.md)
 
 ## 证据
 

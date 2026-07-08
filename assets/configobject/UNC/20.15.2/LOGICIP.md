@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LOGICIP]] · ADD LOGICIP
-- [[command/UNC/20.15.2/LST-LOGICIP]] · LST LOGICIP
-- [[command/UNC/20.15.2/MOD-LOGICIP]] · MOD LOGICIP
-- [[command/UNC/20.15.2/RMV-LOGICIP]] · RMV LOGICIP
+- [ADD LOGICIP](command/UNC/20.15.2/ADD-LOGICIP.md)
+- [LST LOGICIP](command/UNC/20.15.2/LST-LOGICIP.md)
+- [MOD LOGICIP](command/UNC/20.15.2/MOD-LOGICIP.md)
+- [RMV LOGICIP](command/UNC/20.15.2/RMV-LOGICIP.md)
 
 ## 证据
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/HTTPESCAPE]] · HTTP对于URL转义的参数（HTTPESCAPE）
+- [HTTP对于URL转义的参数（HTTPESCAPE）](configobject/UDG/20.15.2/HTTPESCAPE.md)
 
 ## 使用实例
 

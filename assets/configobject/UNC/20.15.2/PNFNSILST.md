@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFNSILST]] · ADD PNFNSILST
-- [[command/UNC/20.15.2/LST-PNFNSILST]] · LST PNFNSILST
-- [[command/UNC/20.15.2/RMV-PNFNSILST]] · RMV PNFNSILST
+- [ADD PNFNSILST](command/UNC/20.15.2/ADD-PNFNSILST.md)
+- [LST PNFNSILST](command/UNC/20.15.2/LST-PNFNSILST.md)
+- [RMV PNFNSILST](command/UNC/20.15.2/RMV-PNFNSILST.md)
 
 ## 证据
 

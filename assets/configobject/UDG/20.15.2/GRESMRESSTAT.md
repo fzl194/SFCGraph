@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-GRESMRESSTAT]] · DSP GRESMRESSTAT
+- [DSP GRESMRESSTAT](command/UDG/20.15.2/DSP-GRESMRESSTAT.md)
 
 ## 证据
 

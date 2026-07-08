@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TMGIRNG]] · ADD TMGIRNG
-- [[command/UNC/20.15.2/LCK-TMGIRNG]] · LCK TMGIRNG
-- [[command/UNC/20.15.2/LST-TMGIRNG]] · LST TMGIRNG
-- [[command/UNC/20.15.2/RMV-TMGIRNG]] · RMV TMGIRNG
+- [ADD TMGIRNG](command/UNC/20.15.2/ADD-TMGIRNG.md)
+- [LCK TMGIRNG](command/UNC/20.15.2/LCK-TMGIRNG.md)
+- [LST TMGIRNG](command/UNC/20.15.2/LST-TMGIRNG.md)
+- [RMV TMGIRNG](command/UNC/20.15.2/RMV-TMGIRNG.md)
 
 ## 证据
 

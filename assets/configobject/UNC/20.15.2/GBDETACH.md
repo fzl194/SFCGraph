@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GBDETACH]] · LST GBDETACH
-- [[command/UNC/20.15.2/SET-GBDETACH]] · SET GBDETACH
+- [LST GBDETACH](command/UNC/20.15.2/LST-GBDETACH.md)
+- [SET GBDETACH](command/UNC/20.15.2/SET-GBDETACH.md)
 
 ## 证据
 

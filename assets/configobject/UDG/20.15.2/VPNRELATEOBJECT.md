@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-VPNRELATEOBJECT]] · LST VPNRELATEOBJECT
+- [LST VPNRELATEOBJECT](command/UDG/20.15.2/LST-VPNRELATEOBJECT.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NCSSYNCFULL]] · DSP NCSSYNCFULL
+- [DSP NCSSYNCFULL](command/UNC/20.15.2/DSP-NCSSYNCFULL.md)
 
 ## 证据
 

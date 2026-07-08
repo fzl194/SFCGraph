@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PODCONFIG]] · DSP PODCONFIG
-- [[command/UDG/20.15.2/SET-PODCONFIG]] · SET PODCONFIG
+- [DSP PODCONFIG](command/UDG/20.15.2/DSP-PODCONFIG.md)
+- [SET PODCONFIG](command/UDG/20.15.2/SET-PODCONFIG.md)
 
 ## 证据
 

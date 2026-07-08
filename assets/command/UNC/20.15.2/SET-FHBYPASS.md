@@ -71,7 +71,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/FHBYPASS]] · 旁路失败处理的配置参数（FHBYPASS）
+- [旁路失败处理的配置参数（FHBYPASS）](configobject/UNC/20.15.2/FHBYPASS.md)
 
 ## 使用实例
 

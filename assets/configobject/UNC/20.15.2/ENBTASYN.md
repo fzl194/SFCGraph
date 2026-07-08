@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-ENBTASYN]] · STR ENBTASYN
+- [STR ENBTASYN](command/UNC/20.15.2/STR-ENBTASYN.md)
 
 ## 证据
 

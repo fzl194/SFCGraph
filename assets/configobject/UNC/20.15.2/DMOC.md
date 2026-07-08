@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DMOC]] · ADD DMOC
-- [[command/UNC/20.15.2/LST-DMOC]] · LST DMOC
-- [[command/UNC/20.15.2/RMV-DMOC]] · RMV DMOC
+- [ADD DMOC](command/UNC/20.15.2/ADD-DMOC.md)
+- [LST DMOC](command/UNC/20.15.2/LST-DMOC.md)
+- [RMV DMOC](command/UNC/20.15.2/RMV-DMOC.md)
 
 ## 证据
 

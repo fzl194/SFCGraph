@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DEVATTRREV]] · DSP DEVATTRREV
+- [DSP DEVATTRREV](command/UDG/20.15.2/DSP-DEVATTRREV.md)
 
 ## 证据
 

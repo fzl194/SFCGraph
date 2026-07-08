@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SECTOTALPKTSTAT]] · DSP SECTOTALPKTSTAT
+- [DSP SECTOTALPKTSTAT](command/UNC/20.15.2/DSP-SECTOTALPKTSTAT.md)
 
 ## 证据
 

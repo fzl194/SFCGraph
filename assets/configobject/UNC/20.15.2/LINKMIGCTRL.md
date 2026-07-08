@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LINKMIGCTRL]] · LST LINKMIGCTRL
-- [[command/UNC/20.15.2/SET-LINKMIGCTRL]] · SET LINKMIGCTRL
+- [LST LINKMIGCTRL](command/UNC/20.15.2/LST-LINKMIGCTRL.md)
+- [SET LINKMIGCTRL](command/UNC/20.15.2/SET-LINKMIGCTRL.md)
 
 ## 证据
 

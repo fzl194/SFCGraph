@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CPGTPUPARA]] · LST CPGTPUPARA
-- [[command/UNC/20.15.2/SET-CPGTPUPARA]] · SET CPGTPUPARA
+- [LST CPGTPUPARA](command/UNC/20.15.2/LST-CPGTPUPARA.md)
+- [SET CPGTPUPARA](command/UNC/20.15.2/SET-CPGTPUPARA.md)
 
 ## 证据
 

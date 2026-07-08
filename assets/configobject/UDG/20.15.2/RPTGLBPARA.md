@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RPTGLBPARA]] · LST RPTGLBPARA
-- [[command/UDG/20.15.2/SET-RPTGLBPARA]] · SET RPTGLBPARA
+- [LST RPTGLBPARA](command/UDG/20.15.2/LST-RPTGLBPARA.md)
+- [SET RPTGLBPARA](command/UDG/20.15.2/SET-RPTGLBPARA.md)
 
 ## 证据
 

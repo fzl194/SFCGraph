@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PMMPROCTRL]] · LST PMMPROCTRL
-- [[command/UNC/20.15.2/SET-PMMPROCTRL]] · SET PMMPROCTRL
+- [LST PMMPROCTRL](command/UNC/20.15.2/LST-PMMPROCTRL.md)
+- [SET PMMPROCTRL](command/UNC/20.15.2/SET-PMMPROCTRL.md)
 
 ## 证据
 

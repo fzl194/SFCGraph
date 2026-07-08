@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNFORBYPASS]] · APN锁定状态（APNFORBYPASS）
+- [APN锁定状态（APNFORBYPASS）](configobject/UNC/20.15.2/APNFORBYPASS.md)
 
 ## 使用实例
 

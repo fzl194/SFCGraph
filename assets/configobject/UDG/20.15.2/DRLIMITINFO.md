@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DRLIMITINFO]] · DSP DRLIMITINFO
+- [DSP DRLIMITINFO](command/UDG/20.15.2/DSP-DRLIMITINFO.md)
 
 ## 证据
 

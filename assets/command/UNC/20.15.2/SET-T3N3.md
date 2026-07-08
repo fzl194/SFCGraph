@@ -76,7 +76,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/T3N3]] · GTP-C T3/N3参数配置（T3N3）
+- [GTP-C T3/N3参数配置（T3N3）](configobject/UNC/20.15.2/T3N3.md)
 
 ## 使用实例
 

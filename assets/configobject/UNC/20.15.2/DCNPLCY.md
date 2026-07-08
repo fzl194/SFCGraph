@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DCNPLCY]] · ADD DCNPLCY
-- [[command/UNC/20.15.2/LST-DCNPLCY]] · LST DCNPLCY
-- [[command/UNC/20.15.2/MOD-DCNPLCY]] · MOD DCNPLCY
-- [[command/UNC/20.15.2/RMV-DCNPLCY]] · RMV DCNPLCY
+- [ADD DCNPLCY](command/UNC/20.15.2/ADD-DCNPLCY.md)
+- [LST DCNPLCY](command/UNC/20.15.2/LST-DCNPLCY.md)
+- [MOD DCNPLCY](command/UNC/20.15.2/MOD-DCNPLCY.md)
+- [RMV DCNPLCY](command/UNC/20.15.2/RMV-DCNPLCY.md)
 
 ## 证据
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IFDSCP]] · LST IFDSCP
-- [[command/UNC/20.15.2/SET-IFDSCP]] · SET IFDSCP
+- [LST IFDSCP](command/UNC/20.15.2/LST-IFDSCP.md)
+- [SET IFDSCP](command/UNC/20.15.2/SET-IFDSCP.md)
 
 ## 证据
 

@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UDPCHECKSUM]] · LST UDPCHECKSUM
-- [[command/UDG/20.15.2/SET-UDPCHECKSUM]] · SET UDPCHECKSUM
+- [LST UDPCHECKSUM](command/UDG/20.15.2/LST-UDPCHECKSUM.md)
+- [SET UDPCHECKSUM](command/UDG/20.15.2/SET-UDPCHECKSUM.md)
 
 ## 证据
 

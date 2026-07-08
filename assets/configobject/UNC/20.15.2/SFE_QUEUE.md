@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SFE_QUEUE]] · DSP SFE_QUEUE
+- [DSP SFE_QUEUE](command/UNC/20.15.2/DSP-SFE_QUEUE.md)
 
 ## 证据
 

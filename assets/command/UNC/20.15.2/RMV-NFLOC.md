@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NFLOC]] · 目标NF发现和选择的位置匹配信息（NFLOC）
+- [目标NF发现和选择的位置匹配信息（NFLOC）](configobject/UNC/20.15.2/NFLOC.md)
 
 ## 使用实例
 

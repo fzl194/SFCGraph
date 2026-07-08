@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SGSNIPNUM]] · SGSN控制面IP地址与SGSN号码对应关系（SGSNIPNUM）
+- [SGSN控制面IP地址与SGSN号码对应关系（SGSNIPNUM）](configobject/UNC/20.15.2/SGSNIPNUM.md)
 
 ## 使用实例
 

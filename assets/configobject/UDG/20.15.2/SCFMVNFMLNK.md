@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SCFMVNFMLNK]] · LST SCFMVNFMLNK
-- [[command/UDG/20.15.2/SET-SCFMVNFMLNK]] · SET SCFMVNFMLNK
+- [LST SCFMVNFMLNK](command/UDG/20.15.2/LST-SCFMVNFMLNK.md)
+- [SET SCFMVNFMLNK](command/UDG/20.15.2/SET-SCFMVNFMLNK.md)
 
 ## 证据
 

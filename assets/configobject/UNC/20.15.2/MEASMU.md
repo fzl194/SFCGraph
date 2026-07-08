@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MEASMU]] · LST MEASMU
-- [[command/UNC/20.15.2/SET-MEASMU]] · SET MEASMU
+- [LST MEASMU](command/UNC/20.15.2/LST-MEASMU.md)
+- [SET MEASMU](command/UNC/20.15.2/SET-MEASMU.md)
 
 ## 证据
 

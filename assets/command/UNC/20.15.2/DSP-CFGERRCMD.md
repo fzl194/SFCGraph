@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CFGERRCMD]] · CFG方式配置恢复的失败信息（CFGERRCMD）
+- [CFG方式配置恢复的失败信息（CFGERRCMD）](configobject/UNC/20.15.2/CFGERRCMD.md)
 
 ## 使用实例
 

@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/TRCLASTSUBSESSION]] · 最后订阅Session信息（TRCLASTSUBSESSION）
+- [最后订阅Session信息（TRCLASTSUBSESSION）](configobject/UDG/20.15.2/TRCLASTSUBSESSION.md)
 
 ## 使用实例
 

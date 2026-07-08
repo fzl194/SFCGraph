@@ -34,8 +34,8 @@ S1模式寻呼流控过程有三种状态：正常状态、流控状态和恢复
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-S1PAGINGFC]] · LST S1PAGINGFC
-- [[command/UNC/20.15.2/SET-S1PAGINGFC]] · SET S1PAGINGFC
+- [LST S1PAGINGFC](command/UNC/20.15.2/LST-S1PAGINGFC.md)
+- [SET S1PAGINGFC](command/UNC/20.15.2/SET-S1PAGINGFC.md)
 
 ## 证据
 

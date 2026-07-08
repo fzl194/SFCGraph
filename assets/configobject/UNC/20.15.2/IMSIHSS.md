@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMSIHSS]] · ADD IMSIHSS
-- [[command/UNC/20.15.2/LST-IMSIHSS]] · LST IMSIHSS
-- [[command/UNC/20.15.2/MOD-IMSIHSS]] · MOD IMSIHSS
-- [[command/UNC/20.15.2/RMV-IMSIHSS]] · RMV IMSIHSS
+- [ADD IMSIHSS](command/UNC/20.15.2/ADD-IMSIHSS.md)
+- [LST IMSIHSS](command/UNC/20.15.2/LST-IMSIHSS.md)
+- [MOD IMSIHSS](command/UNC/20.15.2/MOD-IMSIHSS.md)
+- [RMV IMSIHSS](command/UNC/20.15.2/RMV-IMSIHSS.md)
 
 ## 证据
 

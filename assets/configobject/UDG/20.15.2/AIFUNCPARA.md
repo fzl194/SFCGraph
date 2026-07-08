@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-AIFUNCPARA]] · LST AIFUNCPARA
-- [[command/UDG/20.15.2/SET-AIFUNCPARA]] · SET AIFUNCPARA
+- [LST AIFUNCPARA](command/UDG/20.15.2/LST-AIFUNCPARA.md)
+- [SET AIFUNCPARA](command/UDG/20.15.2/SET-AIFUNCPARA.md)
 
 ## 证据
 

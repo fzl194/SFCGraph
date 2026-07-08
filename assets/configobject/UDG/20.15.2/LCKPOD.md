@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-LCKPOD]] · LST LCKPOD
+- [LST LCKPOD](command/UDG/20.15.2/LST-LCKPOD.md)
 
 ## 证据
 

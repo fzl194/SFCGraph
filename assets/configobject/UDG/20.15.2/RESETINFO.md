@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/CLR-RESETINFO]] · CLR RESETINFO
-- [[command/UDG/20.15.2/DSP-RESETINFO]] · DSP RESETINFO
+- [CLR RESETINFO](command/UDG/20.15.2/CLR-RESETINFO.md)
+- [DSP RESETINFO](command/UDG/20.15.2/DSP-RESETINFO.md)
 
 ## 证据
 

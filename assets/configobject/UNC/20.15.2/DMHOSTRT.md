@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DMHOSTRT]] · ADD DMHOSTRT
-- [[command/UNC/20.15.2/LST-DMHOSTRT]] · LST DMHOSTRT
-- [[command/UNC/20.15.2/MOD-DMHOSTRT]] · MOD DMHOSTRT
-- [[command/UNC/20.15.2/RMV-DMHOSTRT]] · RMV DMHOSTRT
+- [ADD DMHOSTRT](command/UNC/20.15.2/ADD-DMHOSTRT.md)
+- [LST DMHOSTRT](command/UNC/20.15.2/LST-DMHOSTRT.md)
+- [MOD DMHOSTRT](command/UNC/20.15.2/MOD-DMHOSTRT.md)
+- [RMV DMHOSTRT](command/UNC/20.15.2/RMV-DMHOSTRT.md)
 
 ## 证据
 

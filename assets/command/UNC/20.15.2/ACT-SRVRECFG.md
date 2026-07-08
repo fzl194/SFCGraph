@@ -43,7 +43,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SRVRECFG]] · 重配置业务数据（SRVRECFG）
+- [重配置业务数据（SRVRECFG）](configobject/UNC/20.15.2/SRVRECFG.md)
 
 ## 使用实例
 

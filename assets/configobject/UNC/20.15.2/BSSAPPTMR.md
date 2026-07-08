@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-BSSAPPTMR]] · LST BSSAPPTMR
-- [[command/UNC/20.15.2/SET-BSSAPPTMR]] · SET BSSAPPTMR
+- [LST BSSAPPTMR](command/UNC/20.15.2/LST-BSSAPPTMR.md)
+- [SET BSSAPPTMR](command/UNC/20.15.2/SET-BSSAPPTMR.md)
 
 ## 证据
 

@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/USRSECAUTH]] · 二次授权用户（USRSECAUTH）
+- [二次授权用户（USRSECAUTH）](configobject/UDG/20.15.2/USRSECAUTH.md)
 
 ## 使用实例
 

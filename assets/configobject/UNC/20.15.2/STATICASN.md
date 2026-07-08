@@ -23,9 +23,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-STATICASN]] · ADD STATICASN
-- [[command/UNC/20.15.2/LST-STATICASN]] · LST STATICASN
-- [[command/UNC/20.15.2/RMV-STATICASN]] · RMV STATICASN
+- [ADD STATICASN](command/UNC/20.15.2/ADD-STATICASN.md)
+- [LST STATICASN](command/UNC/20.15.2/LST-STATICASN.md)
+- [RMV STATICASN](command/UNC/20.15.2/RMV-STATICASN.md)
 
 ## 证据
 

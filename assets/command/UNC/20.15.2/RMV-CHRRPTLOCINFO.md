@@ -55,7 +55,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CHRRPTLOCINFO]] · CHR本地存盘位置配置（CHRRPTLOCINFO）
+- [CHR本地存盘位置配置（CHRRPTLOCINFO）](configobject/UNC/20.15.2/CHRRPTLOCINFO.md)
 
 ## 使用实例
 

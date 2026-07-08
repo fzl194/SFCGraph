@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CDRSTAT]] · ADD CDRSTAT
-- [[command/UNC/20.15.2/DSP-CDRSTAT]] · DSP CDRSTAT
-- [[command/UNC/20.15.2/LST-CDRSTAT]] · LST CDRSTAT
-- [[command/UNC/20.15.2/MOD-CDRSTAT]] · MOD CDRSTAT
-- [[command/UNC/20.15.2/RMV-CDRSTAT]] · RMV CDRSTAT
+- [ADD CDRSTAT](command/UNC/20.15.2/ADD-CDRSTAT.md)
+- [DSP CDRSTAT](command/UNC/20.15.2/DSP-CDRSTAT.md)
+- [LST CDRSTAT](command/UNC/20.15.2/LST-CDRSTAT.md)
+- [MOD CDRSTAT](command/UNC/20.15.2/MOD-CDRSTAT.md)
+- [RMV CDRSTAT](command/UNC/20.15.2/RMV-CDRSTAT.md)
 
 ## 证据
 

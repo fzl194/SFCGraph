@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DBGCLICMDPRXYREG]] · DSP DBGCLICMDPRXYREG
+- [DSP DBGCLICMDPRXYREG](command/UNC/20.15.2/DSP-DBGCLICMDPRXYREG.md)
 
 ## 证据
 

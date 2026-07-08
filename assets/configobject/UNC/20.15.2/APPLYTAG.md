@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APPLYTAG]] · ADD APPLYTAG
-- [[command/UNC/20.15.2/LST-APPLYTAG]] · LST APPLYTAG
-- [[command/UNC/20.15.2/MOD-APPLYTAG]] · MOD APPLYTAG
-- [[command/UNC/20.15.2/RMV-APPLYTAG]] · RMV APPLYTAG
+- [ADD APPLYTAG](command/UNC/20.15.2/ADD-APPLYTAG.md)
+- [LST APPLYTAG](command/UNC/20.15.2/LST-APPLYTAG.md)
+- [MOD APPLYTAG](command/UNC/20.15.2/MOD-APPLYTAG.md)
+- [RMV APPLYTAG](command/UNC/20.15.2/RMV-APPLYTAG.md)
 
 ## 证据
 

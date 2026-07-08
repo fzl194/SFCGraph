@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PNFEXGROUPID]] · 对端NF的外部群组信息（PNFEXGROUPID）
+- [对端NF的外部群组信息（PNFEXGROUPID）](configobject/UNC/20.15.2/PNFEXGROUPID.md)
 
 ## 使用实例
 

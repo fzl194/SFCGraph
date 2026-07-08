@@ -4,2225 +4,2225 @@
 
 ## action
 
-- [[configobject/UDG/20.15.2/ACSCLIENTDBG]] · ACSCLIENTDBG（ACS客户端调试操作） — `ACSCLIENTDBG.md`
-- [[configobject/UDG/20.15.2/ACSDATA]] · ACSDATA（ACS管理服务数据） — `ACSDATA.md`
-- [[configobject/UDG/20.15.2/ACSFILE]] · ACSFILE（文件传输） — `ACSFILE.md`
-- [[configobject/UDG/20.15.2/ACSPEERCFG]] · ACSPEERCFG（或停止ACS与远端设备的配置同步） — `ACSPEERCFG.md`
-- [[configobject/UDG/20.15.2/ACSUPDPRECHK]] · ACSUPDPRECHK（升级前检查） — `ACSUPDPRECHK.md`
-- [[configobject/UDG/20.15.2/AFMATCHSTATIC]] · AFMATCHSTATIC（HTTP欺诈场景的统计结果） — `AFMATCHSTATIC.md`
-- [[configobject/UDG/20.15.2/ALLLDPSESSIONS]] · ALLLDPSESSIONS（重启所有LDP会话） — `ALLLDPSESSIONS.md`
-- [[configobject/UDG/20.15.2/APPDATA]] · APPDATA（同步APP配置数据） — `APPDATA.md`
-- [[configobject/UDG/20.15.2/APPINFORMATION]] · APPINFORMATION（第三方APP信息采集） — `APPINFORMATION.md`
-- [[configobject/UDG/20.15.2/ARPBYIF]] · ARPBYIF（根据接口清除ARP动态表项） — `ARPBYIF.md`
-- [[configobject/UDG/20.15.2/ARPBYTYPE]] · ARPBYTYPE（根据ARP表项类型清除ARP表项） — `ARPBYTYPE.md`
-- [[configobject/UDG/20.15.2/ARPDROPSTC]] · ARPDROPSTC（ARP丢弃报文统计） — `ARPDROPSTC.md`
-- [[configobject/UDG/20.15.2/ARPDYNBLACKLIST]] · ARPDYNBLACKLIST（ARP动态黑名单） — `ARPDYNBLACKLIST.md`
-- [[configobject/UDG/20.15.2/ATTACKDEFENDSTC]] · ATTACKDEFENDSTC（攻击防范统计信息） — `ATTACKDEFENDSTC.md`
-- [[configobject/UDG/20.15.2/BFDSESSSTAS]] · BFDSESSSTAS（BFD会话统计信息） — `BFDSESSSTAS.md`
-- [[configobject/UDG/20.15.2/BGPALL]] · BGPALL（BGP全部信息） — `BGPALL.md`
-- [[configobject/UDG/20.15.2/BGPIPV6PEER]] · BGPIPV6PEER（BGP IPv6对等体） — `BGPIPV6PEER.md`
-- [[configobject/UDG/20.15.2/BGPPEERTYPE]] · BGPPEERTYPE（对等体类型） — `BGPPEERTYPE.md`
-- [[configobject/UDG/20.15.2/BLK]] · BLK（CSDB检查闭塞RU） — `BLK.md`
-- [[configobject/UDG/20.15.2/BYPASSMODE]] · BYPASSMODE（节点BYPASS模式） — `BYPASSMODE.md`
-- [[configobject/UDG/20.15.2/CELLSERVICE]] · CELLSERVICE（微服务主备实例倒换） — `CELLSERVICE.md`
-- [[configobject/UDG/20.15.2/CHGDATASTAT]] · CHGDATASTAT（计费数据统计信息） — `CHGDATASTAT.md`
-- [[configobject/UDG/20.15.2/CMFDATA]] · CMFDATA（强制推送集群管理数据） — `CMFDATA.md`
-- [[configobject/UDG/20.15.2/CNTRLTRCTASK]] · CNTRLTRCTASK（跨层统一联动跟踪任务） — `CNTRLTRCTASK.md`
-- [[configobject/UDG/20.15.2/COMPSTATUS]] · COMPSTATUS（收集并推送RU的组件状态） — `COMPSTATUS.md`
-- [[configobject/UDG/20.15.2/COMTASK]] · COMTASK（SDR通信质量检测任务） — `COMTASK.md`
-- [[configobject/UDG/20.15.2/CONFIG]] · CONFIG（锁定配置） — `CONFIG.md`
-- [[configobject/UDG/20.15.2/CONFIGXML]] · CONFIGXML（XML文件配置到数据库） — `CONFIGXML.md`
-- [[configobject/UDG/20.15.2/CONSSTATIC]] · CONSSTATIC（消费者统计信息） — `CONSSTATIC.md`
-- [[configobject/UDG/20.15.2/DBGCLICMDPRXY]] · DBGCLICMDPRXY（通过命令代理执行命令行调试命令） — `DBGCLICMDPRXY.md`
-- [[configobject/UDG/20.15.2/DBGCMDPRXY]] · DBGCMDPRXY（通过命令代理执行调试命令） — `DBGCMDPRXY.md`
-- [[configobject/UDG/20.15.2/DBGDATA]] · DBGDATA（调试信息） — `DBGDATA.md`
-- [[configobject/UDG/20.15.2/DBINSTANCE]] · DBINSTANCE（复位CSDB子实例） — `DBINSTANCE.md`
-- [[configobject/UDG/20.15.2/DBSFTD]] · DBSFTD（发送CSDB的软件调试命令） — `DBSFTD.md`
-- [[configobject/UDG/20.15.2/DEVVERIFICATION]] · DEVVERIFICATION（触发设备对账） — `DEVVERIFICATION.md`
-- [[configobject/UDG/20.15.2/DHCP6CLIENTSTC]] · DHCP6CLIENTSTC（DHCPv6客户端报文统计） — `DHCP6CLIENTSTC.md`
-- [[configobject/UDG/20.15.2/DHCPCLIENTSTC]] · DHCPCLIENTSTC（DHCPv4客户端报文统计） — `DHCPCLIENTSTC.md`
-- [[configobject/UDG/20.15.2/DNSCFGTASK]] · DNSCFGTASK（DNS配置任务） — `DNSCFGTASK.md`
-- [[configobject/UDG/20.15.2/DNSSTATISTICS]] · DNSSTATISTICS（DNS报文统计计数） — `DNSSTATISTICS.md`
-- [[configobject/UDG/20.15.2/DNSTASKID]] · DNSTASKID（生成任务ID） — `DNSTASKID.md`
-- [[configobject/UDG/20.15.2/DPSCALEUP]] · DPSCALEUP（硬盘分区扩容进展） — `DPSCALEUP.md`
-- [[configobject/UDG/20.15.2/DR]] · DR（容灾实例主备倒换） — `DR.md`
-- [[configobject/UDG/20.15.2/DSPPRTGRPSPEC]] · DSPPRTGRPSPEC（操作显示保护组规格值） — `DSPPRTGRPSPEC.md`
-- [[configobject/UDG/20.15.2/ESN]] · ESN（设备序列号） — `ESN.md`
-- [[configobject/UDG/20.15.2/EXPFILE]] · EXPFILE（上传导出文件） — `EXPFILE.md`
-- [[configobject/UDG/20.15.2/FABRICOAMSTAT]] · FABRICOAMSTAT（OAM统计信息） — `FABRICOAMSTAT.md`
-- [[configobject/UDG/20.15.2/FEATUREDISABLE]] · FEATUREDISABLE（特性下线） — `FEATUREDISABLE.md`
-- [[configobject/UDG/20.15.2/FEATUREENABLE]] · FEATUREENABLE（特性使能） — `FEATUREENABLE.md`
-- [[configobject/UDG/20.15.2/FEICOM_SMOOTH]] · FEICOM_SMOOTH（一次FEI与FES之间的数据平滑） — `FEICOM_SMOOTH.md`
-- [[configobject/UDG/20.15.2/FEIDBGCMD]] · FEIDBGCMD（FEI调试命令） — `FEIDBGCMD.md`
-- [[configobject/UDG/20.15.2/FEIEXTPORTPKTDEBUG]] · FEIEXTPORTPKTDEBUG（使能外联口报文调测功能） — `FEIEXTPORTPKTDEBUG.md`
-- [[configobject/UDG/20.15.2/FEIEXTPORTPKTDEBUGRULE]] · FEIEXTPORTPKTDEBUGRULE（外联口报文调测规则） — `FEIEXTPORTPKTDEBUGRULE.md`
-- [[configobject/UDG/20.15.2/FESOPERATIONSTC]] · FESOPERATIONSTC（FES操作统计信息） — `FESOPERATIONSTC.md`
-- [[configobject/UDG/20.15.2/FESSEARCHTABLE]] · FESSEARCHTABLE（模拟触发FES表项搜索） — `FESSEARCHTABLE.md`
-- [[configobject/UDG/20.15.2/FESVERIFICATION]] · FESVERIFICATION（FES对账信息） — `FESVERIFICATION.md`
-- [[configobject/UDG/20.15.2/FILE]] · FILE（文件传输） — `FILE.md`
-- [[configobject/UDG/20.15.2/FINGIDENSTATIC]] · FINGIDENSTATIC（SA指纹识别统计结果） — `FINGIDENSTATIC.md`
-- [[configobject/UDG/20.15.2/GENSYNCALLCFGNTF]] · GENSYNCALLCFGNTF（请求生成一个全量同步通知） — `GENSYNCALLCFGNTF.md`
-- [[configobject/UDG/20.15.2/GREKPLVSTAT]] · GREKPLVSTAT（GRE隧道KeepAlive报文计数） — `GREKPLVSTAT.md`
-- [[configobject/UDG/20.15.2/GTSMSTATISTICS]] · GTSMSTATISTICS（GTSM统计） — `GTSMSTATISTICS.md`
-- [[configobject/UDG/20.15.2/HOSTRCVSTC]] · HOSTRCVSTC（接收方向协议报文统计计数） — `HOSTRCVSTC.md`
-- [[configobject/UDG/20.15.2/HOSTSNDSTC]] · HOSTSNDSTC（发送方向协议报文统计计数） — `HOSTSNDSTC.md`
-- [[configobject/UDG/20.15.2/HTTPLNK]] · HTTPLNK（HTTP链路信息） — `HTTPLNK.md`
-- [[configobject/UDG/20.15.2/HTTPPATH]] · HTTPPATH（测试HTTP链路） — `HTTPPATH.md`
-- [[configobject/UDG/20.15.2/HTTPSTATS]] · HTTPSTATS（HTTP统计信息） — `HTTPSTATS.md`
-- [[configobject/UDG/20.15.2/IDLESESSION]] · IDLESESSION（空闲会话） — `IDLESESSION.md`
-- [[configobject/UDG/20.15.2/IFCOUNTERS]] · IFCOUNTERS（接口统计信息） — `IFCOUNTERS.md`
-- [[configobject/UDG/20.15.2/IKEALLSTATISTIC]] · IKEALLSTATISTIC（全部IKE统计信息） — `IKEALLSTATISTIC.md`
-- [[configobject/UDG/20.15.2/IKEERRHISTORY]] · IKEERRHISTORY（IKE历史信息清空状态） — `IKEERRHISTORY.md`
-- [[configobject/UDG/20.15.2/IKEIPSECSA]] · IKEIPSECSA（IPSEC安全联盟） — `IKEIPSECSA.md`
-- [[configobject/UDG/20.15.2/IKEIPSECSTAT]] · IKEIPSECSTAT（IKE IPsec统计信息） — `IKEIPSECSTAT.md`
-- [[configobject/UDG/20.15.2/IKESA]] · IKESA（IKE安全联盟） — `IKESA.md`
-- [[configobject/UDG/20.15.2/IMSIALLOWWKPOD]] · IMSIALLOWWKPOD（允许IMSI在特定的Worker Pod上激活配置） — `IMSIALLOWWKPOD.md`
-- [[configobject/UDG/20.15.2/IMSIBLOCKWKPOD]] · IMSIBLOCKWKPOD（阻塞IMSI在特定的Worker Pod上激活信息） — `IMSIBLOCKWKPOD.md`
-- [[configobject/UDG/20.15.2/IMSSRVBEARER]] · IMSSRVBEARER（指定用户的IMS Bypass状态） — `IMSSRVBEARER.md`
-- [[configobject/UDG/20.15.2/INTERFACEPERF]] · INTERFACEPERF（逻辑口报文统计信息） — `INTERFACEPERF.md`
-- [[configobject/UDG/20.15.2/IPSECPATHMTU]] · IPSECPATHMTU（复位IPsec Path MTU） — `IPSECPATHMTU.md`
-- [[configobject/UDG/20.15.2/IPSECSTATISTIC]] · IPSECSTATISTIC（IPsec统计信息） — `IPSECSTATISTIC.md`
-- [[configobject/UDG/20.15.2/IPSTATISTIC]] · IPSTATISTIC（IP报文统计） — `IPSTATISTIC.md`
-- [[configobject/UDG/20.15.2/IPV6STAT]] · IPV6STAT（IPv6统计计数） — `IPV6STAT.md`
-- [[configobject/UDG/20.15.2/L2TPSTATISTICS]] · L2TPSTATISTICS（L2TP报文统计信息） — `L2TPSTATISTICS.md`
-- [[configobject/UDG/20.15.2/LBPLYAGING]] · LBPLYAGING（CSLB表项老化功能） — `LBPLYAGING.md`
-- [[configobject/UDG/20.15.2/LBSRVADDR]] · LBSRVADDR（CSLB向VNRS同步服务实例地址） — `LBSRVADDR.md`
-- [[configobject/UDG/20.15.2/LDPSESSION]] · LDPSESSION（LDP会话） — `LDPSESSION.md`
-- [[configobject/UDG/20.15.2/LICCTL]] · LICCTL（紧急License） — `LICCTL.md`
-- [[configobject/UDG/20.15.2/LICENSE]] · LICENSE（失效License） — `LICENSE.md`
-- [[configobject/UDG/20.15.2/LOG]] · LOG（日志导出参数） — `LOG.md`
-- [[configobject/UDG/20.15.2/LOGAGENTSTC]] · LOGAGENTSTC（日志代理丢弃的日志信息） — `LOGAGENTSTC.md`
-- [[configobject/UDG/20.15.2/LOGFILE]] · LOGFILE（保存黑匣子的数据到日志文件中） — `LOGFILE.md`
-- [[configobject/UDG/20.15.2/LSPVSTATISTICS]] · LSPVSTATISTICS（LSPV报文统计计数） — `LSPVSTATISTICS.md`
-- [[configobject/UDG/20.15.2/LUASCRIPT]] · LUASCRIPT（Lua脚本） — `LUASCRIPT.md`
-- [[configobject/UDG/20.15.2/MASALMCHECK]] · MASALMCHECK（5G告警核查） — `MASALMCHECK.md`
-- [[configobject/UDG/20.15.2/MCASTPAEGROUP]] · MCASTPAEGROUP（组播组引流信息） — `MCASTPAEGROUP.md`
-- [[configobject/UDG/20.15.2/MEASRST]] · MEASRST（测量结果文件） — `MEASRST.md`
-- [[configobject/UDG/20.15.2/MESYS]] · MESYS（复位网元服务） — `MESYS.md`
-- [[configobject/UDG/20.15.2/MGMDCTLMSG]] · MGMDCTLMSG（IGMP报文统计计数） — `MGMDCTLMSG.md`
-- [[configobject/UDG/20.15.2/MGMDGROUP]] · MGMDGROUP（IGMP加入组信息） — `MGMDGROUP.md`
-- [[configobject/UDG/20.15.2/MIGRATE]] · MIGRATE（异构迁移查询） — `MIGRATE.md`
-- [[configobject/UDG/20.15.2/MML]] · MML（MML文件） — `MML.md`
-- [[configobject/UDG/20.15.2/MMLTRAN]] · MMLTRAN（取消配置） — `MMLTRAN.md`
-- [[configobject/UDG/20.15.2/MPACCOUNTERV4]] · MPACCOUNTERV4（IPv4 MPAC策略匹配统计计数） — `MPACCOUNTERV4.md`
-- [[configobject/UDG/20.15.2/MPACCOUNTERV6]] · MPACCOUNTERV6（IPv6 MPAC策略匹配统计计数） — `MPACCOUNTERV6.md`
-- [[configobject/UDG/20.15.2/MSPROCESS]] · MSPROCESS（复位微服务进程） — `MSPROCESS.md`
-- [[configobject/UDG/20.15.2/MSSFTD]] · MSSFTD（微服务软件调测） — `MSSFTD.md`
-- [[configobject/UDG/20.15.2/NCARSTSSNSTATS]] · NCARSTSSNSTATS（NETCONF会话统计信息） — `NCARSTSSNSTATS.md`
-- [[configobject/UDG/20.15.2/NDSECURITYNONCE]] · NDSECURITYNONCE（ND安全随机数） — `NDSECURITYNONCE.md`
-- [[configobject/UDG/20.15.2/NDSECURITYSTATISTICS]] · NDSECURITYSTATISTICS（ND安全统计） — `NDSECURITYSTATISTICS.md`
-- [[configobject/UDG/20.15.2/NDSECURITYTIMESTAMP]] · NDSECURITYTIMESTAMP（ND安全时间戳） — `NDSECURITYTIMESTAMP.md`
-- [[configobject/UDG/20.15.2/NF]] · NF（NF的锁定信息） — `NF.md`
-- [[configobject/UDG/20.15.2/NFDREXE]] · NFDREXE（人工执行容灾倒换） — `NFDREXE.md`
-- [[configobject/UDG/20.15.2/NFDRSWOVER]] · NFDRSWOVER（人工倒回命令） — `NFDRSWOVER.md`
-- [[configobject/UDG/20.15.2/NFVIUPDRECV]] · NFVIUPDRECV（NFVI分批升级恢复） — `NFVIUPDRECV.md`
-- [[configobject/UDG/20.15.2/NGLANLEARNMAC]] · NGLANLEARNMAC（5G LAN学习的MAC地址） — `NGLANLEARNMAC.md`
-- [[configobject/UDG/20.15.2/NODE]] · NODE（节点信息） — `NODE.md`
-- [[configobject/UDG/20.15.2/NODEBATCH]] · NODEBATCH（节点批量复位） — `NODEBATCH.md`
-- [[configobject/UDG/20.15.2/NODEINFO]] · NODEINFO（节点信息） — `NODEINFO.md`
-- [[configobject/UDG/20.15.2/NOSBASEPING]] · NOSBASEPING（NOS Base平面网络Ping功能） — `NOSBASEPING.md`
-- [[configobject/UDG/20.15.2/NOSHETEROMODE]] · NOSHETEROMODE（NOS异构模式） — `NOSHETEROMODE.md`
-- [[configobject/UDG/20.15.2/NPFABRICOAMSTAT]] · NPFABRICOAMSTAT（NP Fabric统计数据） — `NPFABRICOAMSTAT.md`
-- [[configobject/UDG/20.15.2/OMMQ]] · OMMQ（清理OMMQ数据） — `OMMQ.md`
-- [[configobject/UDG/20.15.2/OMU]] · OMU（倒换主备操作维护单元） — `OMU.md`
-- [[configobject/UDG/20.15.2/ONECLICKDEPLOY]] · ONECLICKDEPLOY（操作服务一键式部署） — `ONECLICKDEPLOY.md`
-- [[configobject/UDG/20.15.2/P2PCOMTASK]] · P2PCOMTASK（SDR点对点通信质量检测任务） — `P2PCOMTASK.md`
-- [[configobject/UDG/20.15.2/PAECHANNEL]] · PAECHANNEL（PAE通道统计信息） — `PAECHANNEL.md`
-- [[configobject/UDG/20.15.2/PAEDISCARD]] · PAEDISCARD（PAE丢包统计信息） — `PAEDISCARD.md`
-- [[configobject/UDG/20.15.2/PAEFABDETECT]] · PAEFABDETECT（Fabric链路探测任务） — `PAEFABDETECT.md`
-- [[configobject/UDG/20.15.2/PAEPORT]] · PAEPORT（PAE端口统计信息） — `PAEPORT.md`
-- [[configobject/UDG/20.15.2/PAEQUEUE]] · PAEQUEUE（PAE队列统计信息） — `PAEQUEUE.md`
-- [[configobject/UDG/20.15.2/PAEREASSEMBLEINFO]] · PAEREASSEMBLEINFO（PAE分片重组统计信息） — `PAEREASSEMBLEINFO.md`
-- [[configobject/UDG/20.15.2/PARSERDB]] · PARSERDB（协议解析数据库） — `PARSERDB.md`
-- [[configobject/UDG/20.15.2/PATH]] · PATH（探测路径） — `PATH.md`
-- [[configobject/UDG/20.15.2/PATHSTST]] · PATHSTST（批量路径探测） — `PATHSTST.md`
-- [[configobject/UDG/20.15.2/PDNROUTETST]] · PDNROUTETST（PDN侧路由探测） — `PDNROUTETST.md`
-- [[configobject/UDG/20.15.2/PIMCTLMSG]] · PIMCTLMSG（PIM实例报文统计计数） — `PIMCTLMSG.md`
-- [[configobject/UDG/20.15.2/PIMIFCTLMSG]] · PIMIFCTLMSG（PIM接口报文统计计数） — `PIMIFCTLMSG.md`
-- [[configobject/UDG/20.15.2/PIMROUTE]] · PIMROUTE（PIM协议表项） — `PIMROUTE.md`
-- [[configobject/UDG/20.15.2/PLCYCHECK]] · PLCYCHECK（创建策略核查任务） — `PLCYCHECK.md`
-- [[configobject/UDG/20.15.2/PLTMAINTAIN]] · PLTMAINTAIN（uniplt调试命令） — `PLTMAINTAIN.md`
-- [[configobject/UDG/20.15.2/POD]] · POD（POD停止） — `POD.md`
-- [[configobject/UDG/20.15.2/PODMIGRATE]] · PODMIGRATE（操作节点扩缩容与Pod迁移任务） — `PODMIGRATE.md`
-- [[configobject/UDG/20.15.2/PROCESS]] · PROCESS（复位进程） — `PROCESS.md`
-- [[configobject/UDG/20.15.2/PUBCFGFILE]] · PUBCFGFILE（上传绑定配置域信息） — `PUBCFGFILE.md`
-- [[configobject/UDG/20.15.2/RAWIPSTATISTIC]] · RAWIPSTATISTIC（RawIP报文统计） — `RAWIPSTATISTIC.md`
-- [[configobject/UDG/20.15.2/RAWLINKSTATISTIC]] · RAWLINKSTATISTIC（Raw-link报文统计） — `RAWLINKSTATISTIC.md`
-- [[configobject/UDG/20.15.2/RCISOLATION]] · RCISOLATION（人工恢复已隔离的Pod） — `RCISOLATION.md`
-- [[configobject/UDG/20.15.2/RECYCLE]] · RECYCLE（回收地址） — `RECYCLE.md`
-- [[configobject/UDG/20.15.2/RESETINFO]] · RESETINFO（资源单元复位信息） — `RESETINFO.md`
-- [[configobject/UDG/20.15.2/RESNOSBASEPING]] · RESNOSBASEPING（NOS Base平面网络Ping功能） — `RESNOSBASEPING.md`
-- [[configobject/UDG/20.15.2/RESOMU]] · RESOMU（倒换主备操作维护单元） — `RESOMU.md`
-- [[configobject/UDG/20.15.2/RESVNFC]] · RESVNFC（复位VNFC） — `RESVNFC.md`
-- [[configobject/UDG/20.15.2/RU]] · RU（解闭CSDB RU） — `RU.md`
-- [[configobject/UDG/20.15.2/RUGROUP]] · RUGROUP（资源单元组成员信息） — `RUGROUP.md`
-- [[configobject/UDG/20.15.2/RULEMATCHCTRL]] · RULEMATCHCTRL（安装规则匹配控制面信息） — `RULEMATCHCTRL.md`
-- [[configobject/UDG/20.15.2/RULEMATCHPARA]] · RULEMATCHPARA（规则匹配报文信息构造状态） — `RULEMATCHPARA.md`
-- [[configobject/UDG/20.15.2/RUNNINGCONFIG]] · RUNNINGCONFIG（保存运行配置数据） — `RUNNINGCONFIG.md`
-- [[configobject/UDG/20.15.2/SBILINKFQDNIP]] · SBILINKFQDNIP（检查服务化接口链路集FQDN的IP地址） — `SBILINKFQDNIP.md`
-- [[configobject/UDG/20.15.2/SBISTATICLINK]] · SBISTATICLINK（静态链路） — `SBISTATICLINK.md`
-- [[configobject/UDG/20.15.2/SECARPSGPKTSTC]] · SECARPSGPKTSTC（ARP双向分离报文统计） — `SECARPSGPKTSTC.md`
-- [[configobject/UDG/20.15.2/SECCARSTAT]] · SECCARSTAT（安全CAR功能丢弃上送CPU报文的详细信息） — `SECCARSTAT.md`
-- [[configobject/UDG/20.15.2/SECIPURPFSTAT]] · SECIPURPFSTAT（URPF丢弃报文计数信息） — `SECIPURPFSTAT.md`
-- [[configobject/UDG/20.15.2/SESSION]] · SESSION（用户会话） — `SESSION.md`
-- [[configobject/UDG/20.15.2/SESSSTATIC]] · SESSSTATIC（会话消息统计信息） — `SESSSTATIC.md`
-- [[configobject/UDG/20.15.2/SETPRTGRPSPEC]] · SETPRTGRPSPEC（操作设置保护组规格值） — `SETPRTGRPSPEC.md`
-- [[configobject/UDG/20.15.2/SFEFASTPINGPKTSTC]] · SFEFASTPINGPKTSTC（SFE Fast-ping报文统计信息） — `SFEFASTPINGPKTSTC.md`
-- [[configobject/UDG/20.15.2/SFEIFPKTSTC]] · SFEIFPKTSTC（SFE接口报文统计） — `SFEIFPKTSTC.md`
-- [[configobject/UDG/20.15.2/SFEMSGSTC]] · SFEMSGSTC（FEI消息统计） — `SFEMSGSTC.md`
-- [[configobject/UDG/20.15.2/SFEPATHSTC]] · SFEPATHSTC（FEI Path统计） — `SFEPATHSTC.md`
-- [[configobject/UDG/20.15.2/SFEPKTDBG]] · SFEPKTDBG（报文调测过滤） — `SFEPKTDBG.md`
-- [[configobject/UDG/20.15.2/SFEPKTSTATS]] · SFEPKTSTATS（SFE统计信息） — `SFEPKTSTATS.md`
-- [[configobject/UDG/20.15.2/SFESWMSGSTC]] · SFESWMSGSTC（FEISW消息统计） — `SFESWMSGSTC.md`
-- [[configobject/UDG/20.15.2/SFESWPATHSTC]] · SFESWPATHSTC（FEISW Path统计） — `SFESWPATHSTC.md`
-- [[configobject/UDG/20.15.2/SFETRACESTC]] · SFETRACESTC（SFE跟踪报文统计） — `SFETRACESTC.md`
-- [[configobject/UDG/20.15.2/SIGNATUREDB]] · SIGNATUREDB（协议特征库文件） — `SIGNATUREDB.md`
-- [[configobject/UDG/20.15.2/SLAVERU]] · SLAVERU（迁移热备RU） — `SLAVERU.md`
-- [[configobject/UDG/20.15.2/SQOSPOLICYSTC]] · SQOSPOLICYSTC（查看端口流量策略报文统计） — `SQOSPOLICYSTC.md`
-- [[configobject/UDG/20.15.2/SRVRECFG]] · SRVRECFG（重配置业务数据） — `SRVRECFG.md`
-- [[configobject/UDG/20.15.2/STOPDEASESSION]] · STOPDEASESSION（去活用户的处理） — `STOPDEASESSION.md`
-- [[configobject/UDG/20.15.2/SYNCFILE]] · SYNCFILE（生成对账文件） — `SYNCFILE.md`
-- [[configobject/UDG/20.15.2/TCPSTATISTIC]] · TCPSTATISTIC（TCP报文统计） — `TCPSTATISTIC.md`
-- [[configobject/UDG/20.15.2/TLBRELBLINK]] · TLBRELBLINK（触发HTTP服务端TCP链路重均衡检测及调整） — `TLBRELBLINK.md`
-- [[configobject/UDG/20.15.2/TORESTTO]] · TORESTTO（TCP重启TO） — `TORESTTO.md`
-- [[configobject/UDG/20.15.2/TRACELOCFILE]] · TRACELOCFILE（上传跟踪本地文件） — `TRACELOCFILE.md`
-- [[configobject/UDG/20.15.2/TRANSCOMTASK]] · TRANSCOMTASK（SDR进程间透明通信检测任务） — `TRANSCOMTASK.md`
-- [[configobject/UDG/20.15.2/TRUNKACTPORT]] · TRUNKACTPORT（切换Trunk激活口） — `TRUNKACTPORT.md`
-- [[configobject/UDG/20.15.2/TTYUSER]] · TTYUSER（用户信息） — `TTYUSER.md`
-- [[configobject/UDG/20.15.2/UDPSTATISTIC]] · UDPSTATISTIC（UDP报文统计） — `UDPSTATISTIC.md`
-- [[configobject/UDG/20.15.2/UEINJECTSEND]] · UEINJECTSEND（发送UE灌包） — `UEINJECTSEND.md`
-- [[configobject/UDG/20.15.2/UFPLATENCYSTAT]] · UFPLATENCYSTAT（UFP逐包转发时延度量开关） — `UFPLATENCYSTAT.md`
-- [[configobject/UDG/20.15.2/UPDIAMDICT]] · UPDIAMDICT（Diameter字典） — `UPDIAMDICT.md`
-- [[configobject/UDG/20.15.2/UPDPRECHK]] · UPDPRECHK（升级前检查） — `UPDPRECHK.md`
-- [[configobject/UDG/20.15.2/UPGTSK]] · UPGTSK（升级/补丁任务） — `UPGTSK.md`
-- [[configobject/UDG/20.15.2/USERRUNINFOSTATE]] · USERRUNINFOSTATE（指定用户的运行信息） — `USERRUNINFOSTATE.md`
-- [[configobject/UDG/20.15.2/VERIFICATION]] · VERIFICATION（一次FEI与FES之间的对账操作） — `VERIFICATION.md`
-- [[configobject/UDG/20.15.2/VHACHGPEER]] · VHACHGPEER（转换vHA ETCD集群中节点间通讯地址的方式） — `VHACHGPEER.md`
-- [[configobject/UDG/20.15.2/VHASTATUS]] · VHASTATUS（更改vHA ETCD节点进程状态） — `VHASTATUS.md`
-- [[configobject/UDG/20.15.2/VNFC]] · VNFC（重启系统） — `VNFC.md`
-- [[configobject/UDG/20.15.2/VNODE]] · VNODE（虚拟节点信息） — `VNODE.md`
+- [ACSCLIENTDBG（ACS客户端调试操作）](configobject/UDG/20.15.2/ACSCLIENTDBG.md)
+- [ACSDATA（ACS管理服务数据）](configobject/UDG/20.15.2/ACSDATA.md)
+- [ACSFILE（文件传输）](configobject/UDG/20.15.2/ACSFILE.md)
+- [ACSPEERCFG（或停止ACS与远端设备的配置同步）](configobject/UDG/20.15.2/ACSPEERCFG.md)
+- [ACSUPDPRECHK（升级前检查）](configobject/UDG/20.15.2/ACSUPDPRECHK.md)
+- [AFMATCHSTATIC（HTTP欺诈场景的统计结果）](configobject/UDG/20.15.2/AFMATCHSTATIC.md)
+- [ALLLDPSESSIONS（重启所有LDP会话）](configobject/UDG/20.15.2/ALLLDPSESSIONS.md)
+- [APPDATA（同步APP配置数据）](configobject/UDG/20.15.2/APPDATA.md)
+- [APPINFORMATION（第三方APP信息采集）](configobject/UDG/20.15.2/APPINFORMATION.md)
+- [ARPBYIF（根据接口清除ARP动态表项）](configobject/UDG/20.15.2/ARPBYIF.md)
+- [ARPBYTYPE（根据ARP表项类型清除ARP表项）](configobject/UDG/20.15.2/ARPBYTYPE.md)
+- [ARPDROPSTC（ARP丢弃报文统计）](configobject/UDG/20.15.2/ARPDROPSTC.md)
+- [ARPDYNBLACKLIST（ARP动态黑名单）](configobject/UDG/20.15.2/ARPDYNBLACKLIST.md)
+- [ATTACKDEFENDSTC（攻击防范统计信息）](configobject/UDG/20.15.2/ATTACKDEFENDSTC.md)
+- [BFDSESSSTAS（BFD会话统计信息）](configobject/UDG/20.15.2/BFDSESSSTAS.md)
+- [BGPALL（BGP全部信息）](configobject/UDG/20.15.2/BGPALL.md)
+- [BGPIPV6PEER（BGP IPv6对等体）](configobject/UDG/20.15.2/BGPIPV6PEER.md)
+- [BGPPEERTYPE（对等体类型）](configobject/UDG/20.15.2/BGPPEERTYPE.md)
+- [BLK（CSDB检查闭塞RU）](configobject/UDG/20.15.2/BLK.md)
+- [BYPASSMODE（节点BYPASS模式）](configobject/UDG/20.15.2/BYPASSMODE.md)
+- [CELLSERVICE（微服务主备实例倒换）](configobject/UDG/20.15.2/CELLSERVICE.md)
+- [CHGDATASTAT（计费数据统计信息）](configobject/UDG/20.15.2/CHGDATASTAT.md)
+- [CMFDATA（强制推送集群管理数据）](configobject/UDG/20.15.2/CMFDATA.md)
+- [CNTRLTRCTASK（跨层统一联动跟踪任务）](configobject/UDG/20.15.2/CNTRLTRCTASK.md)
+- [COMPSTATUS（收集并推送RU的组件状态）](configobject/UDG/20.15.2/COMPSTATUS.md)
+- [COMTASK（SDR通信质量检测任务）](configobject/UDG/20.15.2/COMTASK.md)
+- [CONFIG（锁定配置）](configobject/UDG/20.15.2/CONFIG.md)
+- [CONFIGXML（XML文件配置到数据库）](configobject/UDG/20.15.2/CONFIGXML.md)
+- [CONSSTATIC（消费者统计信息）](configobject/UDG/20.15.2/CONSSTATIC.md)
+- [DBGCLICMDPRXY（通过命令代理执行命令行调试命令）](configobject/UDG/20.15.2/DBGCLICMDPRXY.md)
+- [DBGCMDPRXY（通过命令代理执行调试命令）](configobject/UDG/20.15.2/DBGCMDPRXY.md)
+- [DBGDATA（调试信息）](configobject/UDG/20.15.2/DBGDATA.md)
+- [DBINSTANCE（复位CSDB子实例）](configobject/UDG/20.15.2/DBINSTANCE.md)
+- [DBSFTD（发送CSDB的软件调试命令）](configobject/UDG/20.15.2/DBSFTD.md)
+- [DEVVERIFICATION（触发设备对账）](configobject/UDG/20.15.2/DEVVERIFICATION.md)
+- [DHCP6CLIENTSTC（DHCPv6客户端报文统计）](configobject/UDG/20.15.2/DHCP6CLIENTSTC.md)
+- [DHCPCLIENTSTC（DHCPv4客户端报文统计）](configobject/UDG/20.15.2/DHCPCLIENTSTC.md)
+- [DNSCFGTASK（DNS配置任务）](configobject/UDG/20.15.2/DNSCFGTASK.md)
+- [DNSSTATISTICS（DNS报文统计计数）](configobject/UDG/20.15.2/DNSSTATISTICS.md)
+- [DNSTASKID（生成任务ID）](configobject/UDG/20.15.2/DNSTASKID.md)
+- [DPSCALEUP（硬盘分区扩容进展）](configobject/UDG/20.15.2/DPSCALEUP.md)
+- [DR（容灾实例主备倒换）](configobject/UDG/20.15.2/DR.md)
+- [DSPPRTGRPSPEC（操作显示保护组规格值）](configobject/UDG/20.15.2/DSPPRTGRPSPEC.md)
+- [ESN（设备序列号）](configobject/UDG/20.15.2/ESN.md)
+- [EXPFILE（上传导出文件）](configobject/UDG/20.15.2/EXPFILE.md)
+- [FABRICOAMSTAT（OAM统计信息）](configobject/UDG/20.15.2/FABRICOAMSTAT.md)
+- [FEATUREDISABLE（特性下线）](configobject/UDG/20.15.2/FEATUREDISABLE.md)
+- [FEATUREENABLE（特性使能）](configobject/UDG/20.15.2/FEATUREENABLE.md)
+- [FEICOM_SMOOTH（一次FEI与FES之间的数据平滑）](configobject/UDG/20.15.2/FEICOM_SMOOTH.md)
+- [FEIDBGCMD（FEI调试命令）](configobject/UDG/20.15.2/FEIDBGCMD.md)
+- [FEIEXTPORTPKTDEBUG（使能外联口报文调测功能）](configobject/UDG/20.15.2/FEIEXTPORTPKTDEBUG.md)
+- [FEIEXTPORTPKTDEBUGRULE（外联口报文调测规则）](configobject/UDG/20.15.2/FEIEXTPORTPKTDEBUGRULE.md)
+- [FESOPERATIONSTC（FES操作统计信息）](configobject/UDG/20.15.2/FESOPERATIONSTC.md)
+- [FESSEARCHTABLE（模拟触发FES表项搜索）](configobject/UDG/20.15.2/FESSEARCHTABLE.md)
+- [FESVERIFICATION（FES对账信息）](configobject/UDG/20.15.2/FESVERIFICATION.md)
+- [FILE（文件传输）](configobject/UDG/20.15.2/FILE.md)
+- [FINGIDENSTATIC（SA指纹识别统计结果）](configobject/UDG/20.15.2/FINGIDENSTATIC.md)
+- [GENSYNCALLCFGNTF（请求生成一个全量同步通知）](configobject/UDG/20.15.2/GENSYNCALLCFGNTF.md)
+- [GREKPLVSTAT（GRE隧道KeepAlive报文计数）](configobject/UDG/20.15.2/GREKPLVSTAT.md)
+- [GTSMSTATISTICS（GTSM统计）](configobject/UDG/20.15.2/GTSMSTATISTICS.md)
+- [HOSTRCVSTC（接收方向协议报文统计计数）](configobject/UDG/20.15.2/HOSTRCVSTC.md)
+- [HOSTSNDSTC（发送方向协议报文统计计数）](configobject/UDG/20.15.2/HOSTSNDSTC.md)
+- [HTTPLNK（HTTP链路信息）](configobject/UDG/20.15.2/HTTPLNK.md)
+- [HTTPPATH（测试HTTP链路）](configobject/UDG/20.15.2/HTTPPATH.md)
+- [HTTPSTATS（HTTP统计信息）](configobject/UDG/20.15.2/HTTPSTATS.md)
+- [IDLESESSION（空闲会话）](configobject/UDG/20.15.2/IDLESESSION.md)
+- [IFCOUNTERS（接口统计信息）](configobject/UDG/20.15.2/IFCOUNTERS.md)
+- [IKEALLSTATISTIC（全部IKE统计信息）](configobject/UDG/20.15.2/IKEALLSTATISTIC.md)
+- [IKEERRHISTORY（IKE历史信息清空状态）](configobject/UDG/20.15.2/IKEERRHISTORY.md)
+- [IKEIPSECSA（IPSEC安全联盟）](configobject/UDG/20.15.2/IKEIPSECSA.md)
+- [IKEIPSECSTAT（IKE IPsec统计信息）](configobject/UDG/20.15.2/IKEIPSECSTAT.md)
+- [IKESA（IKE安全联盟）](configobject/UDG/20.15.2/IKESA.md)
+- [IMSIALLOWWKPOD（允许IMSI在特定的Worker Pod上激活配置）](configobject/UDG/20.15.2/IMSIALLOWWKPOD.md)
+- [IMSIBLOCKWKPOD（阻塞IMSI在特定的Worker Pod上激活信息）](configobject/UDG/20.15.2/IMSIBLOCKWKPOD.md)
+- [IMSSRVBEARER（指定用户的IMS Bypass状态）](configobject/UDG/20.15.2/IMSSRVBEARER.md)
+- [INTERFACEPERF（逻辑口报文统计信息）](configobject/UDG/20.15.2/INTERFACEPERF.md)
+- [IPSECPATHMTU（复位IPsec Path MTU）](configobject/UDG/20.15.2/IPSECPATHMTU.md)
+- [IPSECSTATISTIC（IPsec统计信息）](configobject/UDG/20.15.2/IPSECSTATISTIC.md)
+- [IPSTATISTIC（IP报文统计）](configobject/UDG/20.15.2/IPSTATISTIC.md)
+- [IPV6STAT（IPv6统计计数）](configobject/UDG/20.15.2/IPV6STAT.md)
+- [L2TPSTATISTICS（L2TP报文统计信息）](configobject/UDG/20.15.2/L2TPSTATISTICS.md)
+- [LBPLYAGING（CSLB表项老化功能）](configobject/UDG/20.15.2/LBPLYAGING.md)
+- [LBSRVADDR（CSLB向VNRS同步服务实例地址）](configobject/UDG/20.15.2/LBSRVADDR.md)
+- [LDPSESSION（LDP会话）](configobject/UDG/20.15.2/LDPSESSION.md)
+- [LICCTL（紧急License）](configobject/UDG/20.15.2/LICCTL.md)
+- [LICENSE（失效License）](configobject/UDG/20.15.2/LICENSE.md)
+- [LOG（日志导出参数）](configobject/UDG/20.15.2/LOG.md)
+- [LOGAGENTSTC（日志代理丢弃的日志信息）](configobject/UDG/20.15.2/LOGAGENTSTC.md)
+- [LOGFILE（保存黑匣子的数据到日志文件中）](configobject/UDG/20.15.2/LOGFILE.md)
+- [LSPVSTATISTICS（LSPV报文统计计数）](configobject/UDG/20.15.2/LSPVSTATISTICS.md)
+- [LUASCRIPT（Lua脚本）](configobject/UDG/20.15.2/LUASCRIPT.md)
+- [MASALMCHECK（5G告警核查）](configobject/UDG/20.15.2/MASALMCHECK.md)
+- [MCASTPAEGROUP（组播组引流信息）](configobject/UDG/20.15.2/MCASTPAEGROUP.md)
+- [MEASRST（测量结果文件）](configobject/UDG/20.15.2/MEASRST.md)
+- [MESYS（复位网元服务）](configobject/UDG/20.15.2/MESYS.md)
+- [MGMDCTLMSG（IGMP报文统计计数）](configobject/UDG/20.15.2/MGMDCTLMSG.md)
+- [MGMDGROUP（IGMP加入组信息）](configobject/UDG/20.15.2/MGMDGROUP.md)
+- [MIGRATE（异构迁移查询）](configobject/UDG/20.15.2/MIGRATE.md)
+- [MML（MML文件）](configobject/UDG/20.15.2/MML.md)
+- [MMLTRAN（取消配置）](configobject/UDG/20.15.2/MMLTRAN.md)
+- [MPACCOUNTERV4（IPv4 MPAC策略匹配统计计数）](configobject/UDG/20.15.2/MPACCOUNTERV4.md)
+- [MPACCOUNTERV6（IPv6 MPAC策略匹配统计计数）](configobject/UDG/20.15.2/MPACCOUNTERV6.md)
+- [MSPROCESS（复位微服务进程）](configobject/UDG/20.15.2/MSPROCESS.md)
+- [MSSFTD（微服务软件调测）](configobject/UDG/20.15.2/MSSFTD.md)
+- [NCARSTSSNSTATS（NETCONF会话统计信息）](configobject/UDG/20.15.2/NCARSTSSNSTATS.md)
+- [NDSECURITYNONCE（ND安全随机数）](configobject/UDG/20.15.2/NDSECURITYNONCE.md)
+- [NDSECURITYSTATISTICS（ND安全统计）](configobject/UDG/20.15.2/NDSECURITYSTATISTICS.md)
+- [NDSECURITYTIMESTAMP（ND安全时间戳）](configobject/UDG/20.15.2/NDSECURITYTIMESTAMP.md)
+- [NF（NF的锁定信息）](configobject/UDG/20.15.2/NF.md)
+- [NFDREXE（人工执行容灾倒换）](configobject/UDG/20.15.2/NFDREXE.md)
+- [NFDRSWOVER（人工倒回命令）](configobject/UDG/20.15.2/NFDRSWOVER.md)
+- [NFVIUPDRECV（NFVI分批升级恢复）](configobject/UDG/20.15.2/NFVIUPDRECV.md)
+- [NGLANLEARNMAC（5G LAN学习的MAC地址）](configobject/UDG/20.15.2/NGLANLEARNMAC.md)
+- [NODE（节点信息）](configobject/UDG/20.15.2/NODE.md)
+- [NODEBATCH（节点批量复位）](configobject/UDG/20.15.2/NODEBATCH.md)
+- [NODEINFO（节点信息）](configobject/UDG/20.15.2/NODEINFO.md)
+- [NOSBASEPING（NOS Base平面网络Ping功能）](configobject/UDG/20.15.2/NOSBASEPING.md)
+- [NOSHETEROMODE（NOS异构模式）](configobject/UDG/20.15.2/NOSHETEROMODE.md)
+- [NPFABRICOAMSTAT（NP Fabric统计数据）](configobject/UDG/20.15.2/NPFABRICOAMSTAT.md)
+- [OMMQ（清理OMMQ数据）](configobject/UDG/20.15.2/OMMQ.md)
+- [OMU（倒换主备操作维护单元）](configobject/UDG/20.15.2/OMU.md)
+- [ONECLICKDEPLOY（操作服务一键式部署）](configobject/UDG/20.15.2/ONECLICKDEPLOY.md)
+- [P2PCOMTASK（SDR点对点通信质量检测任务）](configobject/UDG/20.15.2/P2PCOMTASK.md)
+- [PAECHANNEL（PAE通道统计信息）](configobject/UDG/20.15.2/PAECHANNEL.md)
+- [PAEDISCARD（PAE丢包统计信息）](configobject/UDG/20.15.2/PAEDISCARD.md)
+- [PAEFABDETECT（Fabric链路探测任务）](configobject/UDG/20.15.2/PAEFABDETECT.md)
+- [PAEPORT（PAE端口统计信息）](configobject/UDG/20.15.2/PAEPORT.md)
+- [PAEQUEUE（PAE队列统计信息）](configobject/UDG/20.15.2/PAEQUEUE.md)
+- [PAEREASSEMBLEINFO（PAE分片重组统计信息）](configobject/UDG/20.15.2/PAEREASSEMBLEINFO.md)
+- [PARSERDB（协议解析数据库）](configobject/UDG/20.15.2/PARSERDB.md)
+- [PATH（探测路径）](configobject/UDG/20.15.2/PATH.md)
+- [PATHSTST（批量路径探测）](configobject/UDG/20.15.2/PATHSTST.md)
+- [PDNROUTETST（PDN侧路由探测）](configobject/UDG/20.15.2/PDNROUTETST.md)
+- [PIMCTLMSG（PIM实例报文统计计数）](configobject/UDG/20.15.2/PIMCTLMSG.md)
+- [PIMIFCTLMSG（PIM接口报文统计计数）](configobject/UDG/20.15.2/PIMIFCTLMSG.md)
+- [PIMROUTE（PIM协议表项）](configobject/UDG/20.15.2/PIMROUTE.md)
+- [PLCYCHECK（创建策略核查任务）](configobject/UDG/20.15.2/PLCYCHECK.md)
+- [PLTMAINTAIN（uniplt调试命令）](configobject/UDG/20.15.2/PLTMAINTAIN.md)
+- [POD（POD停止）](configobject/UDG/20.15.2/POD.md)
+- [PODMIGRATE（操作节点扩缩容与Pod迁移任务）](configobject/UDG/20.15.2/PODMIGRATE.md)
+- [PROCESS（复位进程）](configobject/UDG/20.15.2/PROCESS.md)
+- [PUBCFGFILE（上传绑定配置域信息）](configobject/UDG/20.15.2/PUBCFGFILE.md)
+- [RAWIPSTATISTIC（RawIP报文统计）](configobject/UDG/20.15.2/RAWIPSTATISTIC.md)
+- [RAWLINKSTATISTIC（Raw-link报文统计）](configobject/UDG/20.15.2/RAWLINKSTATISTIC.md)
+- [RCISOLATION（人工恢复已隔离的Pod）](configobject/UDG/20.15.2/RCISOLATION.md)
+- [RECYCLE（回收地址）](configobject/UDG/20.15.2/RECYCLE.md)
+- [RESETINFO（资源单元复位信息）](configobject/UDG/20.15.2/RESETINFO.md)
+- [RESNOSBASEPING（NOS Base平面网络Ping功能）](configobject/UDG/20.15.2/RESNOSBASEPING.md)
+- [RESOMU（倒换主备操作维护单元）](configobject/UDG/20.15.2/RESOMU.md)
+- [RESVNFC（复位VNFC）](configobject/UDG/20.15.2/RESVNFC.md)
+- [RU（解闭CSDB RU）](configobject/UDG/20.15.2/RU.md)
+- [RUGROUP（资源单元组成员信息）](configobject/UDG/20.15.2/RUGROUP.md)
+- [RULEMATCHCTRL（安装规则匹配控制面信息）](configobject/UDG/20.15.2/RULEMATCHCTRL.md)
+- [RULEMATCHPARA（规则匹配报文信息构造状态）](configobject/UDG/20.15.2/RULEMATCHPARA.md)
+- [RUNNINGCONFIG（保存运行配置数据）](configobject/UDG/20.15.2/RUNNINGCONFIG.md)
+- [SBILINKFQDNIP（检查服务化接口链路集FQDN的IP地址）](configobject/UDG/20.15.2/SBILINKFQDNIP.md)
+- [SBISTATICLINK（静态链路）](configobject/UDG/20.15.2/SBISTATICLINK.md)
+- [SECARPSGPKTSTC（ARP双向分离报文统计）](configobject/UDG/20.15.2/SECARPSGPKTSTC.md)
+- [SECCARSTAT（安全CAR功能丢弃上送CPU报文的详细信息）](configobject/UDG/20.15.2/SECCARSTAT.md)
+- [SECIPURPFSTAT（URPF丢弃报文计数信息）](configobject/UDG/20.15.2/SECIPURPFSTAT.md)
+- [SESSION（用户会话）](configobject/UDG/20.15.2/SESSION.md)
+- [SESSSTATIC（会话消息统计信息）](configobject/UDG/20.15.2/SESSSTATIC.md)
+- [SETPRTGRPSPEC（操作设置保护组规格值）](configobject/UDG/20.15.2/SETPRTGRPSPEC.md)
+- [SFEFASTPINGPKTSTC（SFE Fast-ping报文统计信息）](configobject/UDG/20.15.2/SFEFASTPINGPKTSTC.md)
+- [SFEIFPKTSTC（SFE接口报文统计）](configobject/UDG/20.15.2/SFEIFPKTSTC.md)
+- [SFEMSGSTC（FEI消息统计）](configobject/UDG/20.15.2/SFEMSGSTC.md)
+- [SFEPATHSTC（FEI Path统计）](configobject/UDG/20.15.2/SFEPATHSTC.md)
+- [SFEPKTDBG（报文调测过滤）](configobject/UDG/20.15.2/SFEPKTDBG.md)
+- [SFEPKTSTATS（SFE统计信息）](configobject/UDG/20.15.2/SFEPKTSTATS.md)
+- [SFESWMSGSTC（FEISW消息统计）](configobject/UDG/20.15.2/SFESWMSGSTC.md)
+- [SFESWPATHSTC（FEISW Path统计）](configobject/UDG/20.15.2/SFESWPATHSTC.md)
+- [SFETRACESTC（SFE跟踪报文统计）](configobject/UDG/20.15.2/SFETRACESTC.md)
+- [SIGNATUREDB（协议特征库文件）](configobject/UDG/20.15.2/SIGNATUREDB.md)
+- [SLAVERU（迁移热备RU）](configobject/UDG/20.15.2/SLAVERU.md)
+- [SQOSPOLICYSTC（查看端口流量策略报文统计）](configobject/UDG/20.15.2/SQOSPOLICYSTC.md)
+- [SRVRECFG（重配置业务数据）](configobject/UDG/20.15.2/SRVRECFG.md)
+- [STOPDEASESSION（去活用户的处理）](configobject/UDG/20.15.2/STOPDEASESSION.md)
+- [SYNCFILE（生成对账文件）](configobject/UDG/20.15.2/SYNCFILE.md)
+- [TCPSTATISTIC（TCP报文统计）](configobject/UDG/20.15.2/TCPSTATISTIC.md)
+- [TLBRELBLINK（触发HTTP服务端TCP链路重均衡检测及调整）](configobject/UDG/20.15.2/TLBRELBLINK.md)
+- [TORESTTO（TCP重启TO）](configobject/UDG/20.15.2/TORESTTO.md)
+- [TRACELOCFILE（上传跟踪本地文件）](configobject/UDG/20.15.2/TRACELOCFILE.md)
+- [TRANSCOMTASK（SDR进程间透明通信检测任务）](configobject/UDG/20.15.2/TRANSCOMTASK.md)
+- [TRUNKACTPORT（切换Trunk激活口）](configobject/UDG/20.15.2/TRUNKACTPORT.md)
+- [TTYUSER（用户信息）](configobject/UDG/20.15.2/TTYUSER.md)
+- [UDPSTATISTIC（UDP报文统计）](configobject/UDG/20.15.2/UDPSTATISTIC.md)
+- [UEINJECTSEND（发送UE灌包）](configobject/UDG/20.15.2/UEINJECTSEND.md)
+- [UFPLATENCYSTAT（UFP逐包转发时延度量开关）](configobject/UDG/20.15.2/UFPLATENCYSTAT.md)
+- [UPDIAMDICT（Diameter字典）](configobject/UDG/20.15.2/UPDIAMDICT.md)
+- [UPDPRECHK（升级前检查）](configobject/UDG/20.15.2/UPDPRECHK.md)
+- [UPGTSK（升级/补丁任务）](configobject/UDG/20.15.2/UPGTSK.md)
+- [USERRUNINFOSTATE（指定用户的运行信息）](configobject/UDG/20.15.2/USERRUNINFOSTATE.md)
+- [VERIFICATION（一次FEI与FES之间的对账操作）](configobject/UDG/20.15.2/VERIFICATION.md)
+- [VHACHGPEER（转换vHA ETCD集群中节点间通讯地址的方式）](configobject/UDG/20.15.2/VHACHGPEER.md)
+- [VHASTATUS（更改vHA ETCD节点进程状态）](configobject/UDG/20.15.2/VHASTATUS.md)
+- [VNFC（重启系统）](configobject/UDG/20.15.2/VNFC.md)
+- [VNODE（虚拟节点信息）](configobject/UDG/20.15.2/VNODE.md)
 
 ## binding
 
-- [[configobject/UDG/20.15.2/ACLBINDAPN]] · ACLBINDAPN（Acl绑定关系） — `ACLBINDAPN.md`
-- [[configobject/UDG/20.15.2/ACLNODEBINDACL]] · ACLNODEBINDACL（Acl节点绑定关系） — `ACLNODEBINDACL.md`
-- [[configobject/UDG/20.15.2/APNBINDBWMUSRG]] · APNBINDBWMUSRG（带宽管理用户组APN绑定） — `APNBINDBWMUSRG.md`
-- [[configobject/UDG/20.15.2/APNBINDPATH]] · APNBINDPATH（APNBindPath配置） — `APNBINDPATH.md`
-- [[configobject/UDG/20.15.2/CELLBINDGRP]] · CELLBINDGRP（小区和小区组绑定关系） — `CELLBINDGRP.md`
-- [[configobject/UDG/20.15.2/CFPROFBINDCFT]] · CFPROFBINDCFT（内容过滤策略绑定关系） — `CFPROFBINDCFT.md`
-- [[configobject/UDG/20.15.2/CONTCATEGBIND]] · CONTCATEGBIND（内容分类组绑定关系） — `CONTCATEGBIND.md`
-- [[configobject/UDG/20.15.2/FLTBINDFLOWF]] · FLTBINDFLOWF（流过滤器的过滤器绑定关系） — `FLTBINDFLOWF.md`
-- [[configobject/UDG/20.15.2/ICAPSVRBINDISG]] · ICAPSVRBINDISG（ICAP服务器绑定关系） — `ICAPSVRBINDISG.md`
-- [[configobject/UDG/20.15.2/IMSIBINDGRP]] · IMSIBINDGRP（IMSI和IMSI组绑定关系） — `IMSIBINDGRP.md`
-- [[configobject/UDG/20.15.2/IMSIBINDPOD]] · IMSIBINDPOD（IMSI和Pod的绑定关系） — `IMSIBINDPOD.md`
-- [[configobject/UDG/20.15.2/IPBINDVPN]] · IPBINDVPN（接口绑定VPN） — `IPBINDVPN.md`
-- [[configobject/UDG/20.15.2/IPBINDVPNIPSEC]] · IPBINDVPNIPSEC（接口绑定VPN） — `IPBINDVPNIPSEC.md`
-- [[configobject/UDG/20.15.2/MPACBINDGBL]] · MPACBINDGBL（MPAC全局策略） — `MPACBINDGBL.md`
-- [[configobject/UDG/20.15.2/MPACBINDIF]] · MPACBINDIF（MPAC接口策略） — `MPACBINDIF.md`
-- [[configobject/UDG/20.15.2/NGBINDDFSRPAIR]] · NGBINDDFSRPAIR（5G LAN实例绑定双发选收结对配置） — `NGBINDDFSRPAIR.md`
-- [[configobject/UDG/20.15.2/NGBINDMCASTGRP]] · NGBINDMCASTGRP（5G LAN实例绑定组播组配置） — `NGBINDMCASTGRP.md`
-- [[configobject/UDG/20.15.2/NGBINDUEMUTWL]] · NGBINDUEMUTWL（5G LAN组绑定PA口UE互访白名单） — `NGBINDUEMUTWL.md`
-- [[configobject/UDG/20.15.2/NGVNBINDVXLAN]] · NGVNBINDVXLAN（5G LAN实例绑定VXLAN组配置） — `NGVNBINDVXLAN.md`
-- [[configobject/UDG/20.15.2/POOLBINDGROUP]] · POOLBINDGROUP（地址池绑定地址池组中的地址池优先级） — `POOLBINDGROUP.md`
-- [[configobject/UDG/20.15.2/PREURLGBINDUP]] · PREURLGBINDUP（用户模板的前缀URL组绑定关系） — `PREURLGBINDUP.md`
-- [[configobject/UDG/20.15.2/PROTBINDFLOWF]] · PROTBINDFLOWF（流过滤器协议绑定关系） — `PROTBINDFLOWF.md`
-- [[configobject/UDG/20.15.2/PROTBINDSRVS]] · PROTBINDSRVS（业务统计协议绑定配置） — `PROTBINDSRVS.md`
-- [[configobject/UDG/20.15.2/PROTGBINDFLOWF]] · PROTGBINDFLOWF（流过滤器协议组绑定关系） — `PROTGBINDFLOWF.md`
-- [[configobject/UDG/20.15.2/RELAYIPBINDING]] · RELAYIPBINDING（媒体中继服务IP绑定配置） — `RELAYIPBINDING.md`
-- [[configobject/UDG/20.15.2/RULEBINDING]] · RULEBINDING（用户模板和规则的绑定关系） — `RULEBINDING.md`
-- [[configobject/UDG/20.15.2/RULEBINDSRVS]] · RULEBINDSRVS（业务统计规则绑定配置） — `RULEBINDSRVS.md`
-- [[configobject/UDG/20.15.2/SRVPBINDPCCPG]] · SRVPBINDPCCPG（PCC组业务属性绑定） — `SRVPBINDPCCPG.md`
-- [[configobject/UDG/20.15.2/TAIGROUPBINDING]] · TAIGROUPBINDING（TAC号段与TAI组的绑定关系） — `TAIGROUPBINDING.md`
-- [[configobject/UDG/20.15.2/UEMUTWLISTBIND]] · UEMUTWLISTBIND（APN绑定PA口UE互访白名单） — `UEMUTWLISTBIND.md`
-- [[configobject/UDG/20.15.2/UPBINDBWMUSRG]] · UPBINDBWMUSRG（带宽管理用户组User Profile绑定） — `UPBINDBWMUSRG.md`
-- [[configobject/UDG/20.15.2/UPREALMBINDAPN]] · UPREALMBINDAPN（APN与Diameter Realm关联关系） — `UPREALMBINDAPN.md`
-- [[configobject/UDG/20.15.2/URRGRPBINDING]] · URRGRPBINDING（用户模板的URR组绑定关系） — `URRGRPBINDING.md`
-- [[configobject/UDG/20.15.2/VTEPBINDGRP]] · VTEPBINDGRP（VXLAN隧道端点绑定隧道组） — `VTEPBINDGRP.md`
-- [[configobject/UDG/20.15.2/VXLANBINDAPN]] · VXLANBINDAPN（VXLAN隧道组绑定APN） — `VXLANBINDAPN.md`
-- [[configobject/UDG/20.15.2/VXLANBINDRULE]] · VXLANBINDRULE（VXLAN隧道组绑定Rule） — `VXLANBINDRULE.md`
-- [[configobject/UDG/20.15.2/WHITEURLLISTBIND]] · WHITEURLLISTBIND（用户模板的URL白名单列表） — `WHITEURLLISTBIND.md`
+- [ACLBINDAPN（Acl绑定关系）](configobject/UDG/20.15.2/ACLBINDAPN.md)
+- [ACLNODEBINDACL（Acl节点绑定关系）](configobject/UDG/20.15.2/ACLNODEBINDACL.md)
+- [APNBINDBWMUSRG（带宽管理用户组APN绑定）](configobject/UDG/20.15.2/APNBINDBWMUSRG.md)
+- [APNBINDPATH（APNBindPath配置）](configobject/UDG/20.15.2/APNBINDPATH.md)
+- [CELLBINDGRP（小区和小区组绑定关系）](configobject/UDG/20.15.2/CELLBINDGRP.md)
+- [CFPROFBINDCFT（内容过滤策略绑定关系）](configobject/UDG/20.15.2/CFPROFBINDCFT.md)
+- [CONTCATEGBIND（内容分类组绑定关系）](configobject/UDG/20.15.2/CONTCATEGBIND.md)
+- [FLTBINDFLOWF（流过滤器的过滤器绑定关系）](configobject/UDG/20.15.2/FLTBINDFLOWF.md)
+- [ICAPSVRBINDISG（ICAP服务器绑定关系）](configobject/UDG/20.15.2/ICAPSVRBINDISG.md)
+- [IMSIBINDGRP（IMSI和IMSI组绑定关系）](configobject/UDG/20.15.2/IMSIBINDGRP.md)
+- [IMSIBINDPOD（IMSI和Pod的绑定关系）](configobject/UDG/20.15.2/IMSIBINDPOD.md)
+- [IPBINDVPN（接口绑定VPN）](configobject/UDG/20.15.2/IPBINDVPN.md)
+- [IPBINDVPNIPSEC（接口绑定VPN）](configobject/UDG/20.15.2/IPBINDVPNIPSEC.md)
+- [MPACBINDGBL（MPAC全局策略）](configobject/UDG/20.15.2/MPACBINDGBL.md)
+- [MPACBINDIF（MPAC接口策略）](configobject/UDG/20.15.2/MPACBINDIF.md)
+- [NGBINDDFSRPAIR（5G LAN实例绑定双发选收结对配置）](configobject/UDG/20.15.2/NGBINDDFSRPAIR.md)
+- [NGBINDMCASTGRP（5G LAN实例绑定组播组配置）](configobject/UDG/20.15.2/NGBINDMCASTGRP.md)
+- [NGBINDUEMUTWL（5G LAN组绑定PA口UE互访白名单）](configobject/UDG/20.15.2/NGBINDUEMUTWL.md)
+- [NGVNBINDVXLAN（5G LAN实例绑定VXLAN组配置）](configobject/UDG/20.15.2/NGVNBINDVXLAN.md)
+- [POOLBINDGROUP（地址池绑定地址池组中的地址池优先级）](configobject/UDG/20.15.2/POOLBINDGROUP.md)
+- [PREURLGBINDUP（用户模板的前缀URL组绑定关系）](configobject/UDG/20.15.2/PREURLGBINDUP.md)
+- [PROTBINDFLOWF（流过滤器协议绑定关系）](configobject/UDG/20.15.2/PROTBINDFLOWF.md)
+- [PROTBINDSRVS（业务统计协议绑定配置）](configobject/UDG/20.15.2/PROTBINDSRVS.md)
+- [PROTGBINDFLOWF（流过滤器协议组绑定关系）](configobject/UDG/20.15.2/PROTGBINDFLOWF.md)
+- [RELAYIPBINDING（媒体中继服务IP绑定配置）](configobject/UDG/20.15.2/RELAYIPBINDING.md)
+- [RULEBINDING（用户模板和规则的绑定关系）](configobject/UDG/20.15.2/RULEBINDING.md)
+- [RULEBINDSRVS（业务统计规则绑定配置）](configobject/UDG/20.15.2/RULEBINDSRVS.md)
+- [SRVPBINDPCCPG（PCC组业务属性绑定）](configobject/UDG/20.15.2/SRVPBINDPCCPG.md)
+- [TAIGROUPBINDING（TAC号段与TAI组的绑定关系）](configobject/UDG/20.15.2/TAIGROUPBINDING.md)
+- [UEMUTWLISTBIND（APN绑定PA口UE互访白名单）](configobject/UDG/20.15.2/UEMUTWLISTBIND.md)
+- [UPBINDBWMUSRG（带宽管理用户组User Profile绑定）](configobject/UDG/20.15.2/UPBINDBWMUSRG.md)
+- [UPREALMBINDAPN（APN与Diameter Realm关联关系）](configobject/UDG/20.15.2/UPREALMBINDAPN.md)
+- [URRGRPBINDING（用户模板的URR组绑定关系）](configobject/UDG/20.15.2/URRGRPBINDING.md)
+- [VTEPBINDGRP（VXLAN隧道端点绑定隧道组）](configobject/UDG/20.15.2/VTEPBINDGRP.md)
+- [VXLANBINDAPN（VXLAN隧道组绑定APN）](configobject/UDG/20.15.2/VXLANBINDAPN.md)
+- [VXLANBINDRULE（VXLAN隧道组绑定Rule）](configobject/UDG/20.15.2/VXLANBINDRULE.md)
+- [WHITEURLLISTBIND（用户模板的URL白名单列表）](configobject/UDG/20.15.2/WHITEURLLISTBIND.md)
 
 ## entity
 
-- [[configobject/UDG/20.15.2/ABNTRAFFICDT]] · ABNTRAFFICDT（异常流量检测开关） — `ABNTRAFFICDT.md`
-- [[configobject/UDG/20.15.2/ABSTIMERANGE]] · ABSTIMERANGE（绝对时间段） — `ABSTIMERANGE.md`
-- [[configobject/UDG/20.15.2/ACL]] · ACL — `ACL.md`
-- [[configobject/UDG/20.15.2/ACLDEFAULT]] · ACLDEFAULT（缺省Acl绑定） — `ACLDEFAULT.md`
-- [[configobject/UDG/20.15.2/ACLGROUP]] · ACLGROUP（ACL规则匹配计数） — `ACLGROUP.md`
-- [[configobject/UDG/20.15.2/ACLGROUP6]] · ACLGROUP6（IPv6 ACL规则匹配计数） — `ACLGROUP6.md`
-- [[configobject/UDG/20.15.2/ACLGROUP6IPSEC]] · ACLGROUP6IPSEC（IPv6 ACL规则组） — `ACLGROUP6IPSEC.md`
-- [[configobject/UDG/20.15.2/ACLGROUPIPSEC]] · ACLGROUPIPSEC（ACL规则组） — `ACLGROUPIPSEC.md`
-- [[configobject/UDG/20.15.2/ACLNODE]] · ACLNODE（ACL节点） — `ACLNODE.md`
-- [[configobject/UDG/20.15.2/ACLRULEADV4]] · ACLRULEADV4（高级ACL规则） — `ACLRULEADV4.md`
-- [[configobject/UDG/20.15.2/ACLRULEADV4IPSEC]] · ACLRULEADV4IPSEC（高级ACL规则） — `ACLRULEADV4IPSEC.md`
-- [[configobject/UDG/20.15.2/ACLRULEADV6]] · ACLRULEADV6（高级IPv6 ACL规则） — `ACLRULEADV6.md`
-- [[configobject/UDG/20.15.2/ACLRULEADV6IPSEC]] · ACLRULEADV6IPSEC（高级IPv6 ACL规则） — `ACLRULEADV6IPSEC.md`
-- [[configobject/UDG/20.15.2/ACLRULEBAS4]] · ACLRULEBAS4（基本ACL规则） — `ACLRULEBAS4.md`
-- [[configobject/UDG/20.15.2/ACLRULEBAS6]] · ACLRULEBAS6（基本IPv6 ACL规则） — `ACLRULEBAS6.md`
-- [[configobject/UDG/20.15.2/ACLRULEETH]] · ACLRULEETH（以太ACL规则） — `ACLRULEETH.md`
-- [[configobject/UDG/20.15.2/ACLRULEIF]] · ACLRULEIF（接口ACL规则） — `ACLRULEIF.md`
-- [[configobject/UDG/20.15.2/ACSPACKAGE]] · ACSPACKAGE（软件包） — `ACSPACKAGE.md`
-- [[configobject/UDG/20.15.2/ACSPATCH]] · ACSPATCH（补丁） — `ACSPATCH.md`
-- [[configobject/UDG/20.15.2/ADCPARA]] · ADCPARA（ADC参数） — `ADCPARA.md`
-- [[configobject/UDG/20.15.2/ADDRPOOLSTAT]] · ADDRPOOLSTAT（地址池统计配置） — `ADDRPOOLSTAT.md`
-- [[configobject/UDG/20.15.2/ADRLOCWHITELST]] · ADRLOCWHITELST（位置区域地址分配用户白名单） — `ADRLOCWHITELST.md`
-- [[configobject/UDG/20.15.2/ADVANCEDCOMMUNITYNODE]] · ADVANCEDCOMMUNITYNODE（高级团体属性过滤器节点） — `ADVANCEDCOMMUNITYNODE.md`
-- [[configobject/UDG/20.15.2/ADVEXTCOMMUNITYNODE]] · ADVEXTCOMMUNITYNODE（高级扩展团体属性过滤器节点） — `ADVEXTCOMMUNITYNODE.md`
-- [[configobject/UDG/20.15.2/AFDB]] · AFDB（防欺诈业务规则数据库） — `AFDB.md`
-- [[configobject/UDG/20.15.2/AFDNSCHECKTYPE]] · AFDNSCHECKTYPE（需要进行防欺诈检查的DNS报文类型） — `AFDNSCHECKTYPE.md`
-- [[configobject/UDG/20.15.2/AFDNSCHKTPALL]] · AFDNSCHKTPALL（所有需要进行防欺诈检查的DNS报文类型） — `AFDNSCHKTPALL.md`
-- [[configobject/UDG/20.15.2/AFDNSSERVER]] · AFDNSSERVER（防欺诈可信DNS服务器） — `AFDNSSERVER.md`
-- [[configobject/UDG/20.15.2/AFDNSSERVERALL]] · AFDNSSERVERALL（所有防欺诈可信DNS服务器） — `AFDNSSERVERALL.md`
-- [[configobject/UDG/20.15.2/AFHTTPSCTCK]] · AFHTTPSCTCK（HTTPS证书检查功能配置） — `AFHTTPSCTCK.md`
-- [[configobject/UDG/20.15.2/AFPOLICY]] · AFPOLICY（防欺诈策略配置） — `AFPOLICY.md`
-- [[configobject/UDG/20.15.2/AFPOLICYALL]] · AFPOLICYALL（所有防欺诈策略配置） — `AFPOLICYALL.md`
-- [[configobject/UDG/20.15.2/AFPROXYSERVER]] · AFPROXYSERVER（防欺诈可信代理服务器） — `AFPROXYSERVER.md`
-- [[configobject/UDG/20.15.2/AFPROXYSRVALL]] · AFPROXYSRVALL（所有防欺诈可信代理服务器） — `AFPROXYSRVALL.md`
-- [[configobject/UDG/20.15.2/AGGREGATEROUTE]] · AGGREGATEROUTE（BGP聚合路由） — `AGGREGATEROUTE.md`
-- [[configobject/UDG/20.15.2/ALLIFIPADDRESS]] · ALLIFIPADDRESS（批量删除接口下IP地址） — `ALLIFIPADDRESS.md`
-- [[configobject/UDG/20.15.2/ALLOWSERNAME]] · ALLOWSERNAME（基于地址的白名单） — `ALLOWSERNAME.md`
-- [[configobject/UDG/20.15.2/APN]] · APN（APN配置） — `APN.md`
-- [[configobject/UDG/20.15.2/APNALIAS]] · APNALIAS（ApnAlias配置） — `APNALIAS.md`
-- [[configobject/UDG/20.15.2/APNCFTEMPLATE]] · APNCFTEMPLATE（APN内容过滤模板） — `APNCFTEMPLATE.md`
-- [[configobject/UDG/20.15.2/APNFLOWMAXNUM]] · APNFLOWMAXNUM（APN最大流数） — `APNFLOWMAXNUM.md`
-- [[configobject/UDG/20.15.2/APNIMSSIGFLTR]] · APNIMSSIGFLTR（APN的IMS分类器） — `APNIMSSIGFLTR.md`
-- [[configobject/UDG/20.15.2/APNOLQCBLACKLIST]] · APNOLQCBLACKLIST（过载限速APN黑名单） — `APNOLQCBLACKLIST.md`
-- [[configobject/UDG/20.15.2/APPLYASPATH]] · APPLYASPATH（AS路径设置） — `APPLYASPATH.md`
-- [[configobject/UDG/20.15.2/APPLYCMNTYSTRING]] · APPLYCMNTYSTRING（团体属性值设置） — `APPLYCMNTYSTRING.md`
-- [[configobject/UDG/20.15.2/APPLYCOMMUNITY]] · APPLYCOMMUNITY（团体属性设置） — `APPLYCOMMUNITY.md`
-- [[configobject/UDG/20.15.2/APPLYCOMMUNITYFILTERDELETE]] · APPLYCOMMUNITYFILTERDELETE（删除团体属性过滤器设置） — `APPLYCOMMUNITYFILTERDELETE.md`
-- [[configobject/UDG/20.15.2/APPLYCOST]] · APPLYCOST（路由开销值设置） — `APPLYCOST.md`
-- [[configobject/UDG/20.15.2/APPLYCOSTTYPE]] · APPLYCOSTTYPE（开销值类型设置） — `APPLYCOSTTYPE.md`
-- [[configobject/UDG/20.15.2/APPLYDAMPENING]] · APPLYDAMPENING（Dampening设置） — `APPLYDAMPENING.md`
-- [[configobject/UDG/20.15.2/APPLYEXTCMNTYSTRING]] · APPLYEXTCMNTYSTRING（扩展团体属性值设置） — `APPLYEXTCMNTYSTRING.md`
-- [[configobject/UDG/20.15.2/APPLYEXTENDCOMMUNITY]] · APPLYEXTENDCOMMUNITY（扩展团体属性设置） — `APPLYEXTENDCOMMUNITY.md`
-- [[configobject/UDG/20.15.2/APPLYIPV6NEXTHOP]] · APPLYIPV6NEXTHOP（IPv6下一跳设置） — `APPLYIPV6NEXTHOP.md`
-- [[configobject/UDG/20.15.2/APPLYLOCALPREFERENCE]] · APPLYLOCALPREFERENCE（路由BGP本地优先级设置） — `APPLYLOCALPREFERENCE.md`
-- [[configobject/UDG/20.15.2/APPLYNEXTHOP]] · APPLYNEXTHOP（下一跳设置） — `APPLYNEXTHOP.md`
-- [[configobject/UDG/20.15.2/APPLYORIGIN]] · APPLYORIGIN（BGP路由信息的路由源设置） — `APPLYORIGIN.md`
-- [[configobject/UDG/20.15.2/APPLYPREFERENCE]] · APPLYPREFERENCE（路由优先级设置） — `APPLYPREFERENCE.md`
-- [[configobject/UDG/20.15.2/APPLYPREFVALUE]] · APPLYPREFVALUE（BGP路由首选值设置） — `APPLYPREFVALUE.md`
-- [[configobject/UDG/20.15.2/APPLYROUTETYPE]] · APPLYROUTETYPE（路由类型设置） — `APPLYROUTETYPE.md`
-- [[configobject/UDG/20.15.2/APPLYTAG]] · APPLYTAG（路由标签值设置） — `APPLYTAG.md`
-- [[configobject/UDG/20.15.2/APPLYTUNNELPOLICY]] · APPLYTUNNELPOLICY（应用隧道策略） — `APPLYTUNNELPOLICY.md`
-- [[configobject/UDG/20.15.2/APPPERFSTAT]] · APPPERFSTAT（应用性能统计） — `APPPERFSTAT.md`
-- [[configobject/UDG/20.15.2/APPPOLICYCTRL]] · APPPOLICYCTRL（基于应用的质差上报策略） — `APPPOLICYCTRL.md`
-- [[configobject/UDG/20.15.2/ARPPROBESESSION]] · ARPPROBESESSION（ARP探测会话） — `ARPPROBESESSION.md`
-- [[configobject/UDG/20.15.2/ARPPROBESTANDBYSRCIP]] · ARPPROBESTANDBYSRCIP（备用成员口ARP探测源地址） — `ARPPROBESTANDBYSRCIP.md`
-- [[configobject/UDG/20.15.2/ARPSTATICBLACKLIST]] · ARPSTATICBLACKLIST（ARP静态黑名单） — `ARPSTATICBLACKLIST.md`
-- [[configobject/UDG/20.15.2/ARPSTATICTABLE]] · ARPSTATICTABLE（静态ARP表项） — `ARPSTATICTABLE.md`
-- [[configobject/UDG/20.15.2/ASPATHFILTERNODE]] · ASPATHFILTERNODE（AS路径过滤节点） — `ASPATHFILTERNODE.md`
-- [[configobject/UDG/20.15.2/ASPATHSTRING]] · ASPATHSTRING（替换AS路径值） — `ASPATHSTRING.md`
-- [[configobject/UDG/20.15.2/ATTACHIKEPEER]] · ATTACHIKEPEER（绑定IKE对等体） — `ATTACHIKEPEER.md`
-- [[configobject/UDG/20.15.2/AUTORP]] · AUTORP（Auto-RP配置） — `AUTORP.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGBFD]] · AUTOSCALINGBFD（BFD会话自动化配置模板） — `AUTOSCALINGBFD.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGBGPLF]] · AUTOSCALINGBGPLF（BGP入不转板自动化配置模板） — `AUTOSCALINGBGPLF.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGBGPMSPEER]] · AUTOSCALINGBGPMSPEER（BGP自动化多源邻居配置模板） — `AUTOSCALINGBGPMSPEER.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGETHTRUNK]] · AUTOSCALINGETHTRUNK（以太网隧道自动化多虚拟网卡配置模板） — `AUTOSCALINGETHTRUNK.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGIPREACH]] · AUTOSCALINGIPREACH（IP可达性检测自动化配置模板） — `AUTOSCALINGIPREACH.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGMPLS]] · AUTOSCALINGMPLS（MPLS自动化配置模板） — `AUTOSCALINGMPLS.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGOSPFPROCGRP]] · AUTOSCALINGOSPFPROCGRP（OSPF进程组自动化配置模板） — `AUTOSCALINGOSPFPROCGRP.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGRUBLACKLIST]] · AUTOSCALINGRUBLACKLIST（自动部署RU黑名单） — `AUTOSCALINGRUBLACKLIST.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGSERVICE]] · AUTOSCALINGSERVICE（自动化配置参数） — `AUTOSCALINGSERVICE.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGSRBFD]] · AUTOSCALINGSRBFD（静态路由的动态BFD自动化配置模板） — `AUTOSCALINGSRBFD.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGSRROUTE]] · AUTOSCALINGSRROUTE（静态路由自动化配置模板） — `AUTOSCALINGSRROUTE.md`
-- [[configobject/UDG/20.15.2/BASICCOMMUNITYNODE]] · BASICCOMMUNITYNODE（基础团体属性过滤器节点） — `BASICCOMMUNITYNODE.md`
-- [[configobject/UDG/20.15.2/BCSRVLEVELPLY]] · BCSRVLEVELPLY（带宽管理控策略制器业务级别） — `BCSRVLEVELPLY.md`
-- [[configobject/UDG/20.15.2/BFDSESSION]] · BFDSESSION（BFD会话参数） — `BFDSESSION.md`
-- [[configobject/UDG/20.15.2/BGPCONFED]] · BGPCONFED（联盟中自治系统） — `BGPCONFED.md`
-- [[configobject/UDG/20.15.2/BGPMULTIPEER]] · BGPMULTIPEER（BGP多源对等体） — `BGPMULTIPEER.md`
-- [[configobject/UDG/20.15.2/BGPMULTIPEERAF]] · BGPMULTIPEERAF（BGP多源对等体地址族） — `BGPMULTIPEERAF.md`
-- [[configobject/UDG/20.15.2/BGPPEER]] · BGPPEER（BGP对等体） — `BGPPEER.md`
-- [[configobject/UDG/20.15.2/BGPPEERAF]] · BGPPEERAF（BGP对等体地址族） — `BGPPEERAF.md`
-- [[configobject/UDG/20.15.2/BGPPEERAFPRE]] · BGPPEERAFPRE（BGP对等体条件路由匹配前缀） — `BGPPEERAFPRE.md`
-- [[configobject/UDG/20.15.2/BGPPEERBFD]] · BGPPEERBFD（BGP对等体BFD检测） — `BGPPEERBFD.md`
-- [[configobject/UDG/20.15.2/BGPPEERGROUP]] · BGPPEERGROUP（BGP对等体组） — `BGPPEERGROUP.md`
-- [[configobject/UDG/20.15.2/BGPPEERGROUPAF]] · BGPPEERGROUPAF（BGP对等体组地址族） — `BGPPEERGROUPAF.md`
-- [[configobject/UDG/20.15.2/BGPPEERGROUPAFPRE]] · BGPPEERGROUPAFPRE（BGP对等体组条件路由匹配前缀） — `BGPPEERGROUPAFPRE.md`
-- [[configobject/UDG/20.15.2/BGPPEERGROUPBFD]] · BGPPEERGROUPBFD（BGP对等体组BFD检测） — `BGPPEERGROUPBFD.md`
-- [[configobject/UDG/20.15.2/BGPVRF]] · BGPVRF（BGP VPN实例） — `BGPVRF.md`
-- [[configobject/UDG/20.15.2/BGPVRFAF]] · BGPVRFAF（BGP VPN地址族） — `BGPVRFAF.md`
-- [[configobject/UDG/20.15.2/BLACKLISTRULE]] · BLACKLISTRULE（黑名单规则） — `BLACKLISTRULE.md`
-- [[configobject/UDG/20.15.2/BWMCONTROLLER]] · BWMCONTROLLER（带宽管理控制器） — `BWMCONTROLLER.md`
-- [[configobject/UDG/20.15.2/BWMRULE]] · BWMRULE（带宽管理规则） — `BWMRULE.md`
-- [[configobject/UDG/20.15.2/BWMRULEGLBALL]] · BWMRULEGLBALL（所有全局带宽管理规则） — `BWMRULEGLBALL.md`
-- [[configobject/UDG/20.15.2/BWMRULEGLOBAL]] · BWMRULEGLOBAL（全局带宽管理规则） — `BWMRULEGLOBAL.md`
-- [[configobject/UDG/20.15.2/BWMSERVICE]] · BWMSERVICE（带宽管理业务） — `BWMSERVICE.md`
-- [[configobject/UDG/20.15.2/BWMUSERGROUP]] · BWMUSERGROUP（带宽管理用户组） — `BWMUSERGROUP.md`
-- [[configobject/UDG/20.15.2/BWMUSERGRPALL]] · BWMUSERGRPALL（所有带宽管理用户组） — `BWMUSERGRPALL.md`
-- [[configobject/UDG/20.15.2/CATEGORYPROP]] · CATEGORYPROP（分类属性） — `CATEGORYPROP.md`
-- [[configobject/UDG/20.15.2/CELL]] · CELL（小区） — `CELL.md`
-- [[configobject/UDG/20.15.2/CELLMULFAULTTHD]] · CELLMULFAULTTHD（进程频繁故障监控参数） — `CELLMULFAULTTHD.md`
-- [[configobject/UDG/20.15.2/CERTSCENE]] · CERTSCENE（证书场景描述） — `CERTSCENE.md`
-- [[configobject/UDG/20.15.2/CFGTHRESHOLD]] · CFGTHRESHOLD（配置对象告警阈值） — `CFGTHRESHOLD.md`
-- [[configobject/UDG/20.15.2/CFIPWHITELIST]] · CFIPWHITELIST（IP地址白名单列表） — `CFIPWHITELIST.md`
-- [[configobject/UDG/20.15.2/CFPFSPECACTION]] · CFPFSPECACTION（指定内容过滤策略特殊场景下的业务动作） — `CFPFSPECACTION.md`
-- [[configobject/UDG/20.15.2/CFPROFILE]] · CFPROFILE（内容过滤策略） — `CFPROFILE.md`
-- [[configobject/UDG/20.15.2/CFTEMPLATE]] · CFTEMPLATE（内容过滤模板） — `CFTEMPLATE.md`
-- [[configobject/UDG/20.15.2/CFWHITEURLLST]] · CFWHITEURLLST（URL过滤白名单列表） — `CFWHITEURLLST.md`
-- [[configobject/UDG/20.15.2/CHRRPTAPN]] · CHRRPTAPN（指定某个APN做本地存储CHR表单的策略） — `CHRRPTAPN.md`
-- [[configobject/UDG/20.15.2/CHRRPTSUBID]] · CHRRPTSUBID（CHR上报用户） — `CHRRPTSUBID.md`
-- [[configobject/UDG/20.15.2/COMMUNITYFILTER]] · COMMUNITYFILTER（团体属性过滤器） — `COMMUNITYFILTER.md`
-- [[configobject/UDG/20.15.2/COMPKG]] · COMPKG（扩展包） — `COMPKG.md`
-- [[configobject/UDG/20.15.2/CONFLICTIP]] · CONFLICTIP（本地地址池中冲突IPv4地址） — `CONFLICTIP.md`
-- [[configobject/UDG/20.15.2/CONFLICTIPV6]] · CONFLICTIPV6（本地地址池中冲突IPv6地址） — `CONFLICTIPV6.md`
-- [[configobject/UDG/20.15.2/CONTCATEGROUP]] · CONTCATEGROUP（内容分类组） — `CONTCATEGROUP.md`
-- [[configobject/UDG/20.15.2/CPACCESSLIST]] · CPACCESSLIST（CP白名单） — `CPACCESSLIST.md`
-- [[configobject/UDG/20.15.2/CPASSOCIATION]] · CPASSOCIATION（CP） — `CPASSOCIATION.md`
-- [[configobject/UDG/20.15.2/CPNODEID]] · CPNODEID（SMF的NodeID） — `CPNODEID.md`
-- [[configobject/UDG/20.15.2/CPUCAPABILITY]] · CPUCAPABILITY（CPU能力基线） — `CPUCAPABILITY.md`
-- [[configobject/UDG/20.15.2/DAMPROUTE]] · DAMPROUTE（振荡抑制路由） — `DAMPROUTE.md`
-- [[configobject/UDG/20.15.2/DBRUMEM]] · DBRUMEM（CSDB RU内存信息） — `DBRUMEM.md`
-- [[configobject/UDG/20.15.2/DCSVIDEO]] · DCSVIDEO（DCS点播视频资源） — `DCSVIDEO.md`
-- [[configobject/UDG/20.15.2/DEBUGRECORD]] · DEBUGRECORD（异常信息记录） — `DEBUGRECORD.md`
-- [[configobject/UDG/20.15.2/DETECTPATH]] · DETECTPATH（探测路径配置） — `DETECTPATH.md`
-- [[configobject/UDG/20.15.2/DFSRPAIR]] · DFSRPAIR（双发选收结对配置） — `DFSRPAIR.md`
-- [[configobject/UDG/20.15.2/DFSRPAIRMEM]] · DFSRPAIRMEM（双发选收结对成员配置） — `DFSRPAIRMEM.md`
-- [[configobject/UDG/20.15.2/DHCP6CLIENT]] · DHCP6CLIENT（DHCPv6客户端） — `DHCP6CLIENT.md`
-- [[configobject/UDG/20.15.2/DHCPCLIENT]] · DHCPCLIENT（DHCPv4客户端） — `DHCPCLIENT.md`
-- [[configobject/UDG/20.15.2/DNAI]] · DNAI（DNAI配置） — `DNAI.md`
-- [[configobject/UDG/20.15.2/DNSOVERWRITING]] · DNSOVERWRITING（DNS重写动作配置） — `DNSOVERWRITING.md`
-- [[configobject/UDG/20.15.2/DNSRULE]] · DNSRULE（DNS规则） — `DNSRULE.md`
-- [[configobject/UDG/20.15.2/DRCOMM]] · DRCOMM（容灾实例地址） — `DRCOMM.md`
-- [[configobject/UDG/20.15.2/DRDCI]] · DRDCI（DC间通信通道信息） — `DRDCI.md`
-- [[configobject/UDG/20.15.2/DRGROUPINFO]] · DRGROUPINFO（容灾组信息） — `DRGROUPINFO.md`
-- [[configobject/UDG/20.15.2/DRINST]] · DRINST（容灾实例） — `DRINST.md`
-- [[configobject/UDG/20.15.2/DRSEPINTERFACE]] · DRSEPINTERFACE（故障隔离接口） — `DRSEPINTERFACE.md`
-- [[configobject/UDG/20.15.2/DSCPMAP]] · DSCPMAP（DSCP值到VLAN优先级的映射） — `DSCPMAP.md`
-- [[configobject/UDG/20.15.2/ECHOIPLIST]] · ECHOIPLIST（GTP路径管理IP地址） — `ECHOIPLIST.md`
-- [[configobject/UDG/20.15.2/EDNS]] · EDNS — `EDNS.md`
-- [[configobject/UDG/20.15.2/EPRPDYN]] · EPRPDYN（EPRPDYN对象） — `EPRPDYN.md`
-- [[configobject/UDG/20.15.2/EPRPDYNIP]] · EPRPDYNIP（EpRpDyn对象本端IP地址或者删除远端IP地址段） — `EPRPDYNIP.md`
-- [[configobject/UDG/20.15.2/EPRPSTA]] · EPRPSTA（EPRPSTA对象） — `EPRPSTA.md`
-- [[configobject/UDG/20.15.2/ERRORCODE]] · ERRORCODE（错误码） — `ERRORCODE.md`
-- [[configobject/UDG/20.15.2/ETHSUBIF]] · ETHSUBIF（子接口配置） — `ETHSUBIF.md`
-- [[configobject/UDG/20.15.2/EXPCFGPARA]] · EXPCFGPARA（MML导入导出密钥） — `EXPCFGPARA.md`
-- [[configobject/UDG/20.15.2/EXTENDCOMMUNITYFILTER]] · EXTENDCOMMUNITYFILTER（扩展团体属性过滤器） — `EXTENDCOMMUNITYFILTER.md`
-- [[configobject/UDG/20.15.2/EXTENDCOMMUNITYFILTERNODE]] · EXTENDCOMMUNITYFILTERNODE（基础扩展团体属性过滤器节点） — `EXTENDCOMMUNITYFILTERNODE.md`
-- [[configobject/UDG/20.15.2/EXTENDEDFILTER]] · EXTENDEDFILTER（扩展过滤器） — `EXTENDEDFILTER.md`
-- [[configobject/UDG/20.15.2/EXTENDPOLICY]] · EXTENDPOLICY（扩展策略配置） — `EXTENDPOLICY.md`
-- [[configobject/UDG/20.15.2/EXTENDPROP]] · EXTENDPROP（扩展属性配置） — `EXTENDPROP.md`
-- [[configobject/UDG/20.15.2/EXTERNALDB]] · EXTERNALDB（外置规则数据库） — `EXTERNALDB.md`
-- [[configobject/UDG/20.15.2/FABRICTRUNKMEMBER]] · FABRICTRUNKMEMBER（Fabric-Trunk成员接口） — `FABRICTRUNKMEMBER.md`
-- [[configobject/UDG/20.15.2/FCPARAM]] · FCPARAM（流控参数） — `FCPARAM.md`
-- [[configobject/UDG/20.15.2/FILTER]] · FILTER（过滤器） — `FILTER.md`
-- [[configobject/UDG/20.15.2/FILTERGROUP]] · FILTERGROUP（过滤器组） — `FILTERGROUP.md`
-- [[configobject/UDG/20.15.2/FILTERIPV6]] · FILTERIPV6（IPv6过滤器） — `FILTERIPV6.md`
-- [[configobject/UDG/20.15.2/FILTERPOLICY]] · FILTERPOLICY（路由过滤策略） — `FILTERPOLICY.md`
-- [[configobject/UDG/20.15.2/FINGERIDENT]] · FINGERIDENT（SA指纹识别配置） — `FINGERIDENT.md`
-- [[configobject/UDG/20.15.2/FLOWFILTER]] · FLOWFILTER（流过滤器） — `FLOWFILTER.md`
-- [[configobject/UDG/20.15.2/FLOWFILTERGRP]] · FLOWFILTERGRP（流过滤器组） — `FLOWFILTERGRP.md`
-- [[configobject/UDG/20.15.2/FUIEXTFILTER]] · FUIEXTFILTER（FUI扩展过滤器绑定配置） — `FUIEXTFILTER.md`
-- [[configobject/UDG/20.15.2/FWPOLICY]] · FWPOLICY（防火墙策略） — `FWPOLICY.md`
-- [[configobject/UDG/20.15.2/FWRULE]] · FWRULE（转发规则） — `FWRULE.md`
-- [[configobject/UDG/20.15.2/GIREDIRECTPARA]] · GIREDIRECTPARA（单一Gi重定向信息） — `GIREDIRECTPARA.md`
-- [[configobject/UDG/20.15.2/GLBCFTEMPLATE]] · GLBCFTEMPLATE（全局内容过滤模板） — `GLBCFTEMPLATE.md`
-- [[configobject/UDG/20.15.2/GLBEXTENDPOLICY]] · GLBEXTENDPOLICY（全局扩展策略） — `GLBEXTENDPOLICY.md`
-- [[configobject/UDG/20.15.2/GLBEXTFILTER]] · GLBEXTFILTER（全局扩展过滤器绑定配置） — `GLBEXTFILTER.md`
-- [[configobject/UDG/20.15.2/GLBTRUNKREMARK]] · GLBTRUNKREMARK（整机Trunk Remark配置） — `GLBTRUNKREMARK.md`
-- [[configobject/UDG/20.15.2/GLBURRGROUP]] · GLBURRGROUP（全局计费属性） — `GLBURRGROUP.md`
-- [[configobject/UDG/20.15.2/GRAYUPTSTUSER]] · GRAYUPTSTUSER（灰度升级拨测用户） — `GRAYUPTSTUSER.md`
-- [[configobject/UDG/20.15.2/GRETUNNEL]] · GRETUNNEL（GRE隧道） — `GRETUNNEL.md`
-- [[configobject/UDG/20.15.2/HBUSRATTRCONF]] · HBUSRATTRCONF（高带宽用户属性） — `HBUSRATTRCONF.md`
-- [[configobject/UDG/20.15.2/HEADEN]] · HEADEN（头增强） — `HEADEN.md`
-- [[configobject/UDG/20.15.2/HEADENPARA]] · HEADENPARA（头增强参数） — `HEADENPARA.md`
-- [[configobject/UDG/20.15.2/HOST]] · HOST（Host） — `HOST.md`
-- [[configobject/UDG/20.15.2/HOSTSTCIF]] · HOSTSTCIF（接口协议报文统计配置） — `HOSTSTCIF.md`
-- [[configobject/UDG/20.15.2/HPATCH]] · HPATCH（热补丁） — `HPATCH.md`
-- [[configobject/UDG/20.15.2/HPLMNLIST]] · HPLMNLIST（UPF设备的归属PLMN） — `HPLMNLIST.md`
-- [[configobject/UDG/20.15.2/HTTPFCIPGRP]] · HTTPFCIPGRP（HTTP流控组） — `HTTPFCIPGRP.md`
-- [[configobject/UDG/20.15.2/HTTPFCMSG]] · HTTPFCMSG（HTTP流控消息类型） — `HTTPFCMSG.md`
-- [[configobject/UDG/20.15.2/HTTPFIXEDFC]] · HTTPFIXEDFC（HTTP流控组固定速率流控信息） — `HTTPFIXEDFC.md`
-- [[configobject/UDG/20.15.2/HTTPFIXEDFCINF]] · HTTPFIXEDFCINF（HTTP接口类型固定速率流控信息） — `HTTPFIXEDFCINF.md`
-- [[configobject/UDG/20.15.2/HTTPHTRMS]] · HTTPHTRMS（HTR流控安全边界配置） — `HTTPHTRMS.md`
-- [[configobject/UDG/20.15.2/HTTPLE]] · HTTPLE（HTTP本端实体） — `HTTPLE.md`
-- [[configobject/UDG/20.15.2/HTTPLEGRP]] · HTTPLEGRP（HTTP本端实体组） — `HTTPLEGRP.md`
-- [[configobject/UDG/20.15.2/HTTPOAUTHKEY]] · HTTPOAUTHKEY（HTTPOauth密钥） — `HTTPOAUTHKEY.md`
-- [[configobject/UDG/20.15.2/HTTPOFC]] · HTTPOFC（HTTP局向） — `HTTPOFC.md`
-- [[configobject/UDG/20.15.2/HTTPRESCFG]] · HTTPRESCFG（HTTP资源流控门限） — `HTTPRESCFG.md`
-- [[configobject/UDG/20.15.2/HTTPSTATOBJ]] · HTTPSTATOBJ（基于对端结点的性能统计测量对象信息） — `HTTPSTATOBJ.md`
-- [[configobject/UDG/20.15.2/HTTPSTATPARA]] · HTTPSTATPARA（HTTP统计参数） — `HTTPSTATPARA.md`
-- [[configobject/UDG/20.15.2/HTTPSTATUS]] · HTTPSTATUS（HTTP状态码判定配置） — `HTTPSTATUS.md`
-- [[configobject/UDG/20.15.2/HTTPVPNMAP]] · HTTPVPNMAP（HTTP VPN映射关系） — `HTTPVPNMAP.md`
-- [[configobject/UDG/20.15.2/ICAPLOCALINFO]] · ICAPLOCALINFO（ICAP本端信息） — `ICAPLOCALINFO.md`
-- [[configobject/UDG/20.15.2/ICAPSERVER]] · ICAPSERVER（ICAP服务器） — `ICAPSERVER.md`
-- [[configobject/UDG/20.15.2/ICAPSVRGRP]] · ICAPSVRGRP（ICAP服务器组） — `ICAPSVRGRP.md`
-- [[configobject/UDG/20.15.2/ICMPOPTSECURITY]] · ICMPOPTSECURITY（ICMP选项安全配置） — `ICMPOPTSECURITY.md`
-- [[configobject/UDG/20.15.2/ICMPSECURITY]] · ICMPSECURITY（ICMP安全配置） — `ICMPSECURITY.md`
-- [[configobject/UDG/20.15.2/IFALLOWEDVLAN]] · IFALLOWEDVLAN（主接口允许通过的VLAN） — `IFALLOWEDVLAN.md`
-- [[configobject/UDG/20.15.2/IFCONTROLFLAP]] · IFCONTROLFLAP（接口震荡抑制） — `IFCONTROLFLAP.md`
-- [[configobject/UDG/20.15.2/IFICMPSECURITY]] · IFICMPSECURITY（接口下ICMP安全配置） — `IFICMPSECURITY.md`
-- [[configobject/UDG/20.15.2/IFIPV4ADDRESS]] · IFIPV4ADDRESS（接口IPv4地址） — `IFIPV4ADDRESS.md`
-- [[configobject/UDG/20.15.2/IFIPV4ADDRESSIPSEC]] · IFIPV4ADDRESSIPSEC（接口IPv4地址） — `IFIPV4ADDRESSIPSEC.md`
-- [[configobject/UDG/20.15.2/IFIPV4UNNUM]] · IFIPV4UNNUM（接口IPv4借用地址） — `IFIPV4UNNUM.md`
-- [[configobject/UDG/20.15.2/IFIPV4UNNUMIPSEC]] · IFIPV4UNNUMIPSEC（接口IPv4借用地址） — `IFIPV4UNNUMIPSEC.md`
-- [[configobject/UDG/20.15.2/IFIPV6ADDRESS]] · IFIPV6ADDRESS（接口IPv6地址） — `IFIPV6ADDRESS.md`
-- [[configobject/UDG/20.15.2/IFIPV6ADDRESSIPSEC]] · IFIPV6ADDRESSIPSEC（接口IPv6地址） — `IFIPV6ADDRESSIPSEC.md`
-- [[configobject/UDG/20.15.2/IFIPV6ADDRPOLICY]] · IFIPV6ADDRPOLICY（IPv6地址策略） — `IFIPV6ADDRPOLICY.md`
-- [[configobject/UDG/20.15.2/IFIPV6CGA]] · IFIPV6CGA（IPv6 CGA地址信息） — `IFIPV6CGA.md`
-- [[configobject/UDG/20.15.2/IFIPV6NDRAPREFIX]] · IFIPV6NDRAPREFIX（IPv6 RA通告前缀） — `IFIPV6NDRAPREFIX.md`
-- [[configobject/UDG/20.15.2/IFL2FLOWMODE]] · IFL2FLOWMODE（主接口二层透传模式） — `IFL2FLOWMODE.md`
-- [[configobject/UDG/20.15.2/IKEPEER]] · IKEPEER（IKE对等体） — `IKEPEER.md`
-- [[configobject/UDG/20.15.2/IKEPEER6]] · IKEPEER6（IPv6 IKE对等体） — `IKEPEER6.md`
-- [[configobject/UDG/20.15.2/IKEPROPOSAL]] · IKEPROPOSAL（IKE提议） — `IKEPROPOSAL.md`
-- [[configobject/UDG/20.15.2/IMPORTROUTE]] · IMPORTROUTE（指定协议中的入口路由配置） — `IMPORTROUTE.md`
-- [[configobject/UDG/20.15.2/IMSSIGFILTER]] · IMSSIGFILTER（IMS分类器） — `IMSSIGFILTER.md`
-- [[configobject/UDG/20.15.2/INNERFTPPWD]] · INNERFTPPWD（内部FTPS账号密码） — `INNERFTPPWD.md`
-- [[configobject/UDG/20.15.2/INSAPROTOCOL]] · INSAPROTOCOL（黑白名单协议配置） — `INSAPROTOCOL.md`
-- [[configobject/UDG/20.15.2/INSAPROTPARA]] · INSAPROTPARA（单协议推理配置） — `INSAPROTPARA.md`
-- [[configobject/UDG/20.15.2/INTERFACE]] · INTERFACE（接口） — `INTERFACE.md`
-- [[configobject/UDG/20.15.2/INTERFACEIPSEC]] · INTERFACEIPSEC（接口） — `INTERFACEIPSEC.md`
-- [[configobject/UDG/20.15.2/INTFURPF]] · INTFURPF（安全接口URPF） — `INTFURPF.md`
-- [[configobject/UDG/20.15.2/IPALLOCBYPLMNLOCSW]] · IPALLOCBYPLMNLOCSW（基于位置区+PLMN分配地址的开关） — `IPALLOCBYPLMNLOCSW.md`
-- [[configobject/UDG/20.15.2/IPFARM]] · IPFARM（IPFarm） — `IPFARM.md`
-- [[configobject/UDG/20.15.2/IPFARMSERVER]] · IPFARMSERVER（IPFarmServer） — `IPFARMSERVER.md`
-- [[configobject/UDG/20.15.2/IPLIST]] · IPLIST（IP地址列表） — `IPLIST.md`
-- [[configobject/UDG/20.15.2/IPOPTSECALL]] · IPOPTSECALL（IP全局选项安全配置） — `IPOPTSECALL.md`
-- [[configobject/UDG/20.15.2/IPOPTSECURITYIF]] · IPOPTSECURITYIF（接口IP选项安全配置） — `IPOPTSECURITYIF.md`
-- [[configobject/UDG/20.15.2/IPRUREACH]] · IPRUREACH（RU到网关的可达性检测配置） — `IPRUREACH.md`
-- [[configobject/UDG/20.15.2/IPSAGING]] · IPSAGING（IPS老化配置） — `IPSAGING.md`
-- [[configobject/UDG/20.15.2/IPSECINTFCFG]] · IPSECINTFCFG（创建IPsec隧道接口） — `IPSECINTFCFG.md`
-- [[configobject/UDG/20.15.2/IPSECINTFCFGIPSEC]] · IPSECINTFCFGIPSEC（IPsec隧道接口） — `IPSECINTFCFGIPSEC.md`
-- [[configobject/UDG/20.15.2/IPSECPOLICY]] · IPSECPOLICY（IPsec策略） — `IPSECPOLICY.md`
-- [[configobject/UDG/20.15.2/IPSECPOLICY6]] · IPSECPOLICY6（IPsec IPv6策略） — `IPSECPOLICY6.md`
-- [[configobject/UDG/20.15.2/IPSECPOLICYTM]] · IPSECPOLICYTM（IPsec策略模板） — `IPSECPOLICYTM.md`
-- [[configobject/UDG/20.15.2/IPSECPROPOSAL]] · IPSECPROPOSAL（IPsec提议） — `IPSECPROPOSAL.md`
-- [[configobject/UDG/20.15.2/IPSECPROPOSALIPSEC]] · IPSECPROPOSALIPSEC（IPsec提议） — `IPSECPROPOSALIPSEC.md`
-- [[configobject/UDG/20.15.2/IPSECSA]] · IPSECSA（IPsec安全联盟） — `IPSECSA.md`
-- [[configobject/UDG/20.15.2/IPSQMSHAPING]] · IPSQMSHAPING（IPSQM整形配置） — `IPSQMSHAPING.md`
-- [[configobject/UDG/20.15.2/IPSQMVIPLIST]] · IPSQMVIPLIST（IPSQM VIP用户列表） — `IPSQMVIPLIST.md`
-- [[configobject/UDG/20.15.2/IPV6EXTHSECALL]] · IPV6EXTHSECALL（IPv6扩展头选项安全配置） — `IPV6EXTHSECALL.md`
-- [[configobject/UDG/20.15.2/IPV6ICMPSECURITY]] · IPV6ICMPSECURITY（IPv6安全配置） — `IPV6ICMPSECURITY.md`
-- [[configobject/UDG/20.15.2/IPV6IFICMPSECURITY]] · IPV6IFICMPSECURITY（接口下安全配置） — `IPV6IFICMPSECURITY.md`
-- [[configobject/UDG/20.15.2/IPV6PATHMTU]] · IPV6PATHMTU（IPv6 Path MTU配置） — `IPV6PATHMTU.md`
-- [[configobject/UDG/20.15.2/IPV6PREFIXFILTERNODE]] · IPV6PREFIXFILTERNODE（IPv6前缀过滤器节点） — `IPV6PREFIXFILTERNODE.md`
-- [[configobject/UDG/20.15.2/KEYCHAIN]] · KEYCHAIN（Keychain的配置） — `KEYCHAIN.md`
-- [[configobject/UDG/20.15.2/KEYCHAINKEYID]] · KEYCHAINKEYID（Keychain Key ID的配置） — `KEYCHAINKEYID.md`
-- [[configobject/UDG/20.15.2/KEYPAIRLABEL]] · KEYPAIRLABEL（创建DSA/ECC密钥对标签） — `KEYPAIRLABEL.md`
-- [[configobject/UDG/20.15.2/KPIMONRULE]] · KPIMONRULE（KPI异常检测规则） — `KPIMONRULE.md`
-- [[configobject/UDG/20.15.2/L2TPCLIENTIP]] · L2TPCLIENTIP（L2TP绑定的接口） — `L2TPCLIENTIP.md`
-- [[configobject/UDG/20.15.2/L2TPGROUP]] · L2TPGROUP（指定L2TP组） — `L2TPGROUP.md`
-- [[configobject/UDG/20.15.2/L2TPLNSINFO]] · L2TPLNSINFO（L2TP组的LNS信息） — `L2TPLNSINFO.md`
-- [[configobject/UDG/20.15.2/L2TPRDSCLIENT]] · L2TPRDSCLIENT（APN绑定的L2TP接口） — `L2TPRDSCLIENT.md`
-- [[configobject/UDG/20.15.2/L3SERVICEDUALUPG]] · L3SERVICEDUALUPG（一个微服务迁移流程） — `L3SERVICEDUALUPG.md`
-- [[configobject/UDG/20.15.2/L3SERVICEUPG]] · L3SERVICEUPG（服务升级进度） — `L3SERVICEUPG.md`
-- [[configobject/UDG/20.15.2/L3VPNINST]] · L3VPNINST（L3VPN实例） — `L3VPNINST.md`
-- [[configobject/UDG/20.15.2/L3VPNINSTIPSEC]] · L3VPNINSTIPSEC（L3VPN实例） — `L3VPNINSTIPSEC.md`
-- [[configobject/UDG/20.15.2/L7FILTER]] · L7FILTER（七层过滤器） — `L7FILTER.md`
-- [[configobject/UDG/20.15.2/LACGROUP]] · LACGROUP（指定的LAC组） — `LACGROUP.md`
-- [[configobject/UDG/20.15.2/LACID]] · LACID（从LAC组内删除一个LAC） — `LACID.md`
-- [[configobject/UDG/20.15.2/LBTRCRDTCFG]] · LBTRCRDTCFG（跟踪重定向） — `LBTRCRDTCFG.md`
-- [[configobject/UDG/20.15.2/LDPAUTHGROUP]] · LDPAUTHGROUP（LDP认证组） — `LDPAUTHGROUP.md`
-- [[configobject/UDG/20.15.2/LDPFECLIST]] · LDPFECLIST（FEC列表） — `LDPFECLIST.md`
-- [[configobject/UDG/20.15.2/LDPFECNODE]] · LDPFECNODE（FEC节点） — `LDPFECNODE.md`
-- [[configobject/UDG/20.15.2/LDPIF]] · LDPIF（LDP接口） — `LDPIF.md`
-- [[configobject/UDG/20.15.2/LDPINSTANCE]] · LDPINSTANCE（LDP实例） — `LDPINSTANCE.md`
-- [[configobject/UDG/20.15.2/LDPPEERPOLICY]] · LDPPEERPOLICY（LDP邻居策略） — `LDPPEERPOLICY.md`
-- [[configobject/UDG/20.15.2/LDPREMOTEPEER]] · LDPREMOTEPEER（LDP远端邻居） — `LDPREMOTEPEER.md`
-- [[configobject/UDG/20.15.2/LOGICINF]] · LOGICINF（逻辑接口） — `LOGICINF.md`
-- [[configobject/UDG/20.15.2/LOGICIP]] · LOGICIP（逻辑IP地址信息） — `LOGICIP.md`
-- [[configobject/UDG/20.15.2/MATCHASPATHFILTER]] · MATCHASPATHFILTER（匹配AS路径过滤器） — `MATCHASPATHFILTER.md`
-- [[configobject/UDG/20.15.2/MATCHCOMMUNITYFILTER]] · MATCHCOMMUNITYFILTER（匹配团体属性过滤器） — `MATCHCOMMUNITYFILTER.md`
-- [[configobject/UDG/20.15.2/MATCHCOST]] · MATCHCOST（Cost匹配路由策略） — `MATCHCOST.md`
-- [[configobject/UDG/20.15.2/MATCHDESTACL6]] · MATCHDESTACL6（匹配IPv6地址ACL） — `MATCHDESTACL6.md`
-- [[configobject/UDG/20.15.2/MATCHDESTINATIONACL]] · MATCHDESTINATIONACL（目的IP地址基础ACL匹配路由策略） — `MATCHDESTINATIONACL.md`
-- [[configobject/UDG/20.15.2/MATCHDESTPREFIX6FILTER]] · MATCHDESTPREFIX6FILTER（匹配IPv6地址前缀列表） — `MATCHDESTPREFIX6FILTER.md`
-- [[configobject/UDG/20.15.2/MATCHDESTPREFIXFILTER]] · MATCHDESTPREFIXFILTER（匹配IPv4地址前缀列表） — `MATCHDESTPREFIXFILTER.md`
-- [[configobject/UDG/20.15.2/MATCHEXTCOMMUNITYFILTER]] · MATCHEXTCOMMUNITYFILTER（匹配扩展团体属性过滤器） — `MATCHEXTCOMMUNITYFILTER.md`
-- [[configobject/UDG/20.15.2/MATCHINTERFACE]] · MATCHINTERFACE（出接口匹配路由策略） — `MATCHINTERFACE.md`
-- [[configobject/UDG/20.15.2/MATCHNEXTHOPACL]] · MATCHNEXTHOPACL（下一跳基础ACL匹配路由策略） — `MATCHNEXTHOPACL.md`
-- [[configobject/UDG/20.15.2/MATCHNEXTHOPACL6]] · MATCHNEXTHOPACL6（匹配IPv6下一跳地址ACL） — `MATCHNEXTHOPACL6.md`
-- [[configobject/UDG/20.15.2/MATCHNEXTHOPPREFIX6FILTER]] · MATCHNEXTHOPPREFIX6FILTER（匹配IPv6下一跳前缀列表） — `MATCHNEXTHOPPREFIX6FILTER.md`
-- [[configobject/UDG/20.15.2/MATCHNEXTHOPPREFIXFILTER]] · MATCHNEXTHOPPREFIXFILTER（下一跳前缀匹配路由策略） — `MATCHNEXTHOPPREFIXFILTER.md`
-- [[configobject/UDG/20.15.2/MATCHPROTOCOL]] · MATCHPROTOCOL（路由协议匹配路由策略） — `MATCHPROTOCOL.md`
-- [[configobject/UDG/20.15.2/MATCHRDFILTER]] · MATCHRDFILTER（匹配RD过滤器） — `MATCHRDFILTER.md`
-- [[configobject/UDG/20.15.2/MATCHROUTETYPE]] · MATCHROUTETYPE（路由类型匹配路由策略） — `MATCHROUTETYPE.md`
-- [[configobject/UDG/20.15.2/MATCHRTSRCACL]] · MATCHRTSRCACL（源路由基础ACL匹配路由策略） — `MATCHRTSRCACL.md`
-- [[configobject/UDG/20.15.2/MATCHRTSRCACL6]] · MATCHRTSRCACL6（匹配IPv6源路由地址ACL） — `MATCHRTSRCACL6.md`
-- [[configobject/UDG/20.15.2/MATCHRTSRCPREFIX6FILTER]] · MATCHRTSRCPREFIX6FILTER（匹配IPv6路由源前缀列表） — `MATCHRTSRCPREFIX6FILTER.md`
-- [[configobject/UDG/20.15.2/MATCHRTSRCPREFIXFILTER]] · MATCHRTSRCPREFIXFILTER（匹配路由源IP前缀） — `MATCHRTSRCPREFIXFILTER.md`
-- [[configobject/UDG/20.15.2/MATCHTAG]] · MATCHTAG（Tag匹配路由策略） — `MATCHTAG.md`
-- [[configobject/UDG/20.15.2/MCASTENABLE]] · MCASTENABLE（组播使能配置） — `MCASTENABLE.md`
-- [[configobject/UDG/20.15.2/MCASTGRPMEM]] · MCASTGRPMEM（组播组成员配置） — `MCASTGRPMEM.md`
-- [[configobject/UDG/20.15.2/MCASTLOADSPLIT]] · MCASTLOADSPLIT（组播负载分担配置） — `MCASTLOADSPLIT.md`
-- [[configobject/UDG/20.15.2/MCRDRNHP]] · MCRDRNHP（组播报文重定向策略） — `MCRDRNHP.md`
-- [[configobject/UDG/20.15.2/ME]] · ME（网元信息） — `ME.md`
-- [[configobject/UDG/20.15.2/MEASTHRESHOLDRULE]] · MEASTHRESHOLDRULE（话统阈值规则） — `MEASTHRESHOLDRULE.md`
-- [[configobject/UDG/20.15.2/MGMDIF]] · MGMDIF（IGMP接口配置） — `MGMDIF.md`
-- [[configobject/UDG/20.15.2/MGMDSITE]] · MGMDSITE（IGMP全局配置） — `MGMDSITE.md`
-- [[configobject/UDG/20.15.2/MGMDSSMAP]] · MGMDSSMAP（IGMP SSM映射配置） — `MGMDSSMAP.md`
-- [[configobject/UDG/20.15.2/MGMDSTATICGROUP]] · MGMDSTATICGROUP（IGMP静态组配置） — `MGMDSTATICGROUP.md`
-- [[configobject/UDG/20.15.2/MK]] · MK（更新主密钥） — `MK.md`
-- [[configobject/UDG/20.15.2/MNCLEN]] · MNCLEN（MNC长度信息） — `MNCLEN.md`
-- [[configobject/UDG/20.15.2/MONVPN]] · MONVPN（监控VPN实例） — `MONVPN.md`
-- [[configobject/UDG/20.15.2/MPACIPV4RULE]] · MPACIPV4RULE（IPv4 MPAC策略规则） — `MPACIPV4RULE.md`
-- [[configobject/UDG/20.15.2/MPACIPV6RULE]] · MPACIPV6RULE（IPv6 MPAC策略规则） — `MPACIPV6RULE.md`
-- [[configobject/UDG/20.15.2/MPACV4POLICY]] · MPACV4POLICY（IPv4 MPAC策略） — `MPACV4POLICY.md`
-- [[configobject/UDG/20.15.2/MPACV6POLICY]] · MPACV6POLICY（IPv6 MPAC策略） — `MPACV6POLICY.md`
-- [[configobject/UDG/20.15.2/MPLSIF]] · MPLSIF（MPLS接口） — `MPLSIF.md`
-- [[configobject/UDG/20.15.2/MQCBEHAVIOR]] · MQCBEHAVIOR（流行为） — `MQCBEHAVIOR.md`
-- [[configobject/UDG/20.15.2/MQCCLASSIFIER]] · MQCCLASSIFIER（流分类） — `MQCCLASSIFIER.md`
-- [[configobject/UDG/20.15.2/MQCPOLICY]] · MQCPOLICY（流策略配置） — `MQCPOLICY.md`
-- [[configobject/UDG/20.15.2/MQCPOLICYNODE]] · MQCPOLICYNODE（流策略节点） — `MQCPOLICYNODE.md`
-- [[configobject/UDG/20.15.2/MTSPOLICY]] · MTSPOLICY（消息跟踪限制） — `MTSPOLICY.md`
-- [[configobject/UDG/20.15.2/MULTICASTGRP]] · MULTICASTGRP（组播组配置） — `MULTICASTGRP.md`
-- [[configobject/UDG/20.15.2/MULTICASTSOURCE]] · MULTICASTSOURCE（IGMP Snooping组播源配置） — `MULTICASTSOURCE.md`
-- [[configobject/UDG/20.15.2/MULTIDNNCOND]] · MULTIDNNCOND（多DNN条件） — `MULTIDNNCOND.md`
-- [[configobject/UDG/20.15.2/MULTREDIRECT]] · MULTREDIRECT（多级重定向密码） — `MULTREDIRECT.md`
-- [[configobject/UDG/20.15.2/MULTREDIRECTEX]] · MULTREDIRECTEX（扩展的多级重定向密码） — `MULTREDIRECTEX.md`
-- [[configobject/UDG/20.15.2/N2TACID]] · N2TACID（从N2TAC组内删除一个TAC） — `N2TACID.md`
-- [[configobject/UDG/20.15.2/NDIFRAROUTE]] · NDIFRAROUTE（接口上ND RA路由配置信息） — `NDIFRAROUTE.md`
-- [[configobject/UDG/20.15.2/NDNEIGHBOR]] · NDNEIGHBOR（静态ND邻居表项） — `NDNEIGHBOR.md`
-- [[configobject/UDG/20.15.2/NETWORK]] · NETWORK（网络查询） — `NETWORK.md`
-- [[configobject/UDG/20.15.2/NETWORKINSTVPNMAP]] · NETWORKINSTVPNMAP（网络实例配置） — `NETWORKINSTVPNMAP.md`
-- [[configobject/UDG/20.15.2/NETWORKROUTE]] · NETWORKROUTE（引入路由指定前缀和掩码长度） — `NETWORKROUTE.md`
-- [[configobject/UDG/20.15.2/NGVNINSTANCE]] · NGVNINSTANCE（5G VNInstance配置） — `NGVNINSTANCE.md`
-- [[configobject/UDG/20.15.2/NGVNVLANMAP]] · NGVNVLANMAP（基于5G LAN组的VLAN映射信息） — `NGVNVLANMAP.md`
-- [[configobject/UDG/20.15.2/NGVNVLANWL]] · NGVNVLANWL（基于5G LAN组的VLAN白名单） — `NGVNVLANWL.md`
-- [[configobject/UDG/20.15.2/NPDIRECTCONNECTPORT]] · NPDIRECTCONNECTPORT（多框级联配置） — `NPDIRECTCONNECTPORT.md`
-- [[configobject/UDG/20.15.2/NPUPGPLANE]] · NPUPGPLANE（NP升级平面） — `NPUPGPLANE.md`
-- [[configobject/UDG/20.15.2/NSHHEADEN]] · NSHHEADEN（NSH头增强） — `NSHHEADEN.md`
-- [[configobject/UDG/20.15.2/NTPSVR]] · NTPSVR（NTP服务器） — `NTPSVR.md`
-- [[configobject/UDG/20.15.2/OMFWDRT]] · OMFWDRT（OM转发路由） — `OMFWDRT.md`
-- [[configobject/UDG/20.15.2/OMNWCONF]] · OMNWCONF（OM网络探测参数） — `OMNWCONF.md`
-- [[configobject/UDG/20.15.2/OP]] · OP（本地用户属性） — `OP.md`
-- [[configobject/UDG/20.15.2/OPMMETRIC]] · OPMMETRIC（话统指标优化公式） — `OPMMETRIC.md`
-- [[configobject/UDG/20.15.2/OSPF]] · OSPF（OSPF进程配置） — `OSPF.md`
-- [[configobject/UDG/20.15.2/OSPFABRSUMMARY]] · OSPFABRSUMMARY（区域内路由聚合配置） — `OSPFABRSUMMARY.md`
-- [[configobject/UDG/20.15.2/OSPFAREA]] · OSPFAREA（OSPF区域配置） — `OSPFAREA.md`
-- [[configobject/UDG/20.15.2/OSPFAREAAUTH]] · OSPFAREAAUTH（OSPF区域认证配置） — `OSPFAREAAUTH.md`
-- [[configobject/UDG/20.15.2/OSPFAREAFILTER]] · OSPFAREAFILTER（区域过滤策略配置） — `OSPFAREAFILTER.md`
-- [[configobject/UDG/20.15.2/OSPFASBRSUMMARY]] · OSPFASBRSUMMARY（引入路由聚合配置） — `OSPFASBRSUMMARY.md`
-- [[configobject/UDG/20.15.2/OSPFDEFAULTROUTE]] · OSPFDEFAULTROUTE（OSPF默认宣告路由配置） — `OSPFDEFAULTROUTE.md`
-- [[configobject/UDG/20.15.2/OSPFDNBITSET]] · OSPFDNBITSET（DN比特位配置） — `OSPFDNBITSET.md`
-- [[configobject/UDG/20.15.2/OSPFDNSUMRTID]] · OSPFDNSUMRTID（创建特定路由器禁止检查Summary-LSA的DN比特位配置） — `OSPFDNSUMRTID.md`
-- [[configobject/UDG/20.15.2/OSPFDOMAINID]] · OSPFDOMAINID（创建OSPF域标识配置） — `OSPFDOMAINID.md`
-- [[configobject/UDG/20.15.2/OSPFFILTERPOLICY]] · OSPFFILTERPOLICY（OSPF过滤策略配置） — `OSPFFILTERPOLICY.md`
-- [[configobject/UDG/20.15.2/OSPFFRR]] · OSPFFRR（OSPF IP FRR配置） — `OSPFFRR.md`
-- [[configobject/UDG/20.15.2/OSPFGTSM]] · OSPFGTSM（OSPF的GTSM配置） — `OSPFGTSM.md`
-- [[configobject/UDG/20.15.2/OSPFHOSTNAME]] · OSPFHOSTNAME（OSPF主机名配置） — `OSPFHOSTNAME.md`
-- [[configobject/UDG/20.15.2/OSPFIMPORTROUTE]] · OSPFIMPORTROUTE（OSPF引入路由配置） — `OSPFIMPORTROUTE.md`
-- [[configobject/UDG/20.15.2/OSPFINTERFACE]] · OSPFINTERFACE（OSPF接口配置） — `OSPFINTERFACE.md`
-- [[configobject/UDG/20.15.2/OSPFINTERFACEAUTH]] · OSPFINTERFACEAUTH（OSPF接口认证配置） — `OSPFINTERFACEAUTH.md`
-- [[configobject/UDG/20.15.2/OSPFNETWORK]] · OSPFNETWORK（OSPF运行的接口及所属区域） — `OSPFNETWORK.md`
-- [[configobject/UDG/20.15.2/OSPFNEXTHOP]] · OSPFNEXTHOP（OSPF等价路由优先级配置） — `OSPFNEXTHOP.md`
-- [[configobject/UDG/20.15.2/OSPFPEER]] · OSPFPEER（OSPF的NBMA网络邻居路由器配置） — `OSPFPEER.md`
-- [[configobject/UDG/20.15.2/OSPFPREFERENCE]] · OSPFPREFERENCE（OSPF协议路由的优先级配置） — `OSPFPREFERENCE.md`
-- [[configobject/UDG/20.15.2/OSPFPROUTPRIORITY]] · OSPFPROUTPRIORITY（OSPF路由的收敛优先级配置） — `OSPFPROUTPRIORITY.md`
-- [[configobject/UDG/20.15.2/OSPFV3]] · OSPFV3（OSPFv3进程配置） — `OSPFV3.md`
-- [[configobject/UDG/20.15.2/OSPFV3ABRSUMMARY]] · OSPFV3ABRSUMMARY（OSPFv3区域内路由聚合配置） — `OSPFV3ABRSUMMARY.md`
-- [[configobject/UDG/20.15.2/OSPFV3AREA]] · OSPFV3AREA（OSPFv3区域配置） — `OSPFV3AREA.md`
-- [[configobject/UDG/20.15.2/OSPFV3AREAAUTH]] · OSPFV3AREAAUTH（OSPFv3区域认证配置） — `OSPFV3AREAAUTH.md`
-- [[configobject/UDG/20.15.2/OSPFV3AREAFILTER]] · OSPFV3AREAFILTER（OSPFv3区域过滤LSA配置） — `OSPFV3AREAFILTER.md`
-- [[configobject/UDG/20.15.2/OSPFV3ASBRSUMMARY]] · OSPFV3ASBRSUMMARY（OSPFv3引入路由聚合配置） — `OSPFV3ASBRSUMMARY.md`
-- [[configobject/UDG/20.15.2/OSPFV3AUTH]] · OSPFV3AUTH（OSPFv3认证配置） — `OSPFV3AUTH.md`
-- [[configobject/UDG/20.15.2/OSPFV3DEFAULTROUTE]] · OSPFV3DEFAULTROUTE（OSPFv3默认路由宣告配置） — `OSPFV3DEFAULTROUTE.md`
-- [[configobject/UDG/20.15.2/OSPFV3DOMAINID]] · OSPFV3DOMAINID（创建OSPFv3域标识符配置） — `OSPFV3DOMAINID.md`
-- [[configobject/UDG/20.15.2/OSPFV3FILTERPOLICY]] · OSPFV3FILTERPOLICY（OSPFv3过滤策略配置） — `OSPFV3FILTERPOLICY.md`
-- [[configobject/UDG/20.15.2/OSPFV3FRR]] · OSPFV3FRR（OSPFv3 IP FRR配置） — `OSPFV3FRR.md`
-- [[configobject/UDG/20.15.2/OSPFV3GTSM]] · OSPFV3GTSM（OSPFv3 GTSM配置） — `OSPFV3GTSM.md`
-- [[configobject/UDG/20.15.2/OSPFV3HOSTNAME]] · OSPFV3HOSTNAME（OSPFv3主机名配置） — `OSPFV3HOSTNAME.md`
-- [[configobject/UDG/20.15.2/OSPFV3IFIPSECSA]] · OSPFV3IFIPSECSA（创建OSPFv3 接口的安全联盟SA） — `OSPFV3IFIPSECSA.md`
-- [[configobject/UDG/20.15.2/OSPFV3IMPORTROUTE]] · OSPFV3IMPORTROUTE（OSPFv3引入路由配置） — `OSPFV3IMPORTROUTE.md`
-- [[configobject/UDG/20.15.2/OSPFV3INTERFACE]] · OSPFV3INTERFACE（OSPFv3接口配置） — `OSPFV3INTERFACE.md`
-- [[configobject/UDG/20.15.2/OSPFV3INTERFACEAUTH]] · OSPFV3INTERFACEAUTH（OSPFv3接口认证配置） — `OSPFV3INTERFACEAUTH.md`
-- [[configobject/UDG/20.15.2/OSPFV3PREFERENCE]] · OSPFV3PREFERENCE（OSPFv3路由优先级配置） — `OSPFV3PREFERENCE.md`
-- [[configobject/UDG/20.15.2/OSPFV3PRIFIXPRIORITY]] · OSPFV3PRIFIXPRIORITY（OSPFv3路由收敛优先级配置） — `OSPFV3PRIFIXPRIORITY.md`
-- [[configobject/UDG/20.15.2/PACKAGE]] · PACKAGE（软件包） — `PACKAGE.md`
-- [[configobject/UDG/20.15.2/PAEPERFMODE]] · PAEPERFMODE（配置表中的PAE性能模式） — `PAEPERFMODE.md`
-- [[configobject/UDG/20.15.2/PAEPORTGATEWAY]] · PAEPORTGATEWAY（PAE端口网关信息） — `PAEPORTGATEWAY.md`
-- [[configobject/UDG/20.15.2/PATCH]] · PATCH（补丁） — `PATCH.md`
-- [[configobject/UDG/20.15.2/PATHDWNALMSEG]] · PATHDWNALMSEG（单条路径断告警抑制参数的分段配置） — `PATHDWNALMSEG.md`
-- [[configobject/UDG/20.15.2/PBUFREUSE5GC]] · PBUFREUSE5GC（pbuf重用检测开关设置） — `PBUFREUSE5GC.md`
-- [[configobject/UDG/20.15.2/PCCACTIONPROP]] · PCCACTIONPROP（PCC动作属性） — `PCCACTIONPROP.md`
-- [[configobject/UDG/20.15.2/PCCPOLICYGRP]] · PCCPOLICYGRP（PCC策略组） — `PCCPOLICYGRP.md`
-- [[configobject/UDG/20.15.2/PDNROUTETSTPATH]] · PDNROUTETSTPATH（UPF向PDN服务器发送探测消息的探测路径配置） — `PDNROUTETSTPATH.md`
-- [[configobject/UDG/20.15.2/PEERPUBLICKEY]] · PEERPUBLICKEY（对端公钥） — `PEERPUBLICKEY.md`
-- [[configobject/UDG/20.15.2/PERFGTPVER]] · PERFGTPVER（版本粒度的测量对象） — `PERFGTPVER.md`
-- [[configobject/UDG/20.15.2/PERITIMERANGE]] · PERITIMERANGE（周期时间段） — `PERITIMERANGE.md`
-- [[configobject/UDG/20.15.2/PIMIF]] · PIMIF（PIM接口配置） — `PIMIF.md`
-- [[configobject/UDG/20.15.2/PIMSITE]] · PIMSITE（PIM全局配置） — `PIMSITE.md`
-- [[configobject/UDG/20.15.2/PIMSTATICRP]] · PIMSTATICRP（PIM静态RP配置） — `PIMSTATICRP.md`
-- [[configobject/UDG/20.15.2/PLGPKG]] · PLGPKG（扩展包） — `PLGPKG.md`
-- [[configobject/UDG/20.15.2/PODALMTH]] · PODALMTH（POD资源告警阈值） — `PODALMTH.md`
-- [[configobject/UDG/20.15.2/PODBLACKLIST]] · PODBLACKLIST（Pod自愈黑名单） — `PODBLACKLIST.md`
-- [[configobject/UDG/20.15.2/PODHEALCPUTHR]] · PODHEALCPUTHR（对应PODTYPE下的阈值配置） — `PODHEALCPUTHR.md`
-- [[configobject/UDG/20.15.2/PODISOBLKLIST]] · PODISOBLKLIST（Pod隔离黑名单） — `PODISOBLKLIST.md`
-- [[configobject/UDG/20.15.2/POLICYCONDITION]] · POLICYCONDITION（业务质差检测策略） — `POLICYCONDITION.md`
-- [[configobject/UDG/20.15.2/POOL]] · POOL（地址池） — `POOL.md`
-- [[configobject/UDG/20.15.2/POOLGROUP]] · POOLGROUP（地址池组） — `POOLGROUP.md`
-- [[configobject/UDG/20.15.2/POOLGRPMAP]] · POOLGRPMAP（地址池组映射关系） — `POOLGRPMAP.md`
-- [[configobject/UDG/20.15.2/PORTGROUP]] · PORTGROUP（端口组） — `PORTGROUP.md`
-- [[configobject/UDG/20.15.2/PORTGROUPMEMBER]] · PORTGROUPMEMBER（端口组成员） — `PORTGROUPMEMBER.md`
-- [[configobject/UDG/20.15.2/PREFIXFILTERNODE]] · PREFIXFILTERNODE（IPv4地址前缀列表过滤器节点） — `PREFIXFILTERNODE.md`
-- [[configobject/UDG/20.15.2/PREFIXURLGRP]] · PREFIXURLGRP（前缀URL组） — `PREFIXURLGRP.md`
-- [[configobject/UDG/20.15.2/PRINETPOLICY]] · PRINETPOLICY（专网控制策略） — `PRINETPOLICY.md`
-- [[configobject/UDG/20.15.2/PROPATTACHIPSECPROPOSAL]] · PROPATTACHIPSECPROPOSAL（IPsec策略绑定提议） — `PROPATTACHIPSECPROPOSAL.md`
-- [[configobject/UDG/20.15.2/PROTFAGETIME]] · PROTFAGETIME（协议五元组老化时间） — `PROTFAGETIME.md`
-- [[configobject/UDG/20.15.2/PROTOCOLDEFINE]] · PROTOCOLDEFINE（自定义协议） — `PROTOCOLDEFINE.md`
-- [[configobject/UDG/20.15.2/PROTOCOLGROUP]] · PROTOCOLGROUP（自定义协议组） — `PROTOCOLGROUP.md`
-- [[configobject/UDG/20.15.2/PROTREDEFINE]] · PROTREDEFINE（重定义协议） — `PROTREDEFINE.md`
-- [[configobject/UDG/20.15.2/PUBCFGDOMAIN]] · PUBCFGDOMAIN（公共配置域名称） — `PUBCFGDOMAIN.md`
-- [[configobject/UDG/20.15.2/PUREFWDUSER]] · PUREFWDUSER（纯转发用户配置） — `PUREFWDUSER.md`
-- [[configobject/UDG/20.15.2/PWD]] · PWD（在线用户自身密码） — `PWD.md`
-- [[configobject/UDG/20.15.2/PWDBLACKLIST]] · PWDBLACKLIST（密码禁用词） — `PWDBLACKLIST.md`
-- [[configobject/UDG/20.15.2/QOSACTRDRNHP]] · QOSACTRDRNHP（QoS重定向下一跳信息） — `QOSACTRDRNHP.md`
-- [[configobject/UDG/20.15.2/QOSACTRDRPOLICY]] · QOSACTRDRPOLICY（流行为下级联流策略） — `QOSACTRDRPOLICY.md`
-- [[configobject/UDG/20.15.2/QOSAPPLICATION]] · QOSAPPLICATION（流策略） — `QOSAPPLICATION.md`
-- [[configobject/UDG/20.15.2/QOSCARBURST]] · QOSCARBURST（用户做car的参数） — `QOSCARBURST.md`
-- [[configobject/UDG/20.15.2/QOSDIFFERSERV]] · QOSDIFFERSERV（DS域） — `QOSDIFFERSERV.md`
-- [[configobject/UDG/20.15.2/QOSIFPHB]] · QOSIFPHB（禁止QoS优先级映射的类型） — `QOSIFPHB.md`
-- [[configobject/UDG/20.15.2/QOSIFTRUST]] · QOSIFTRUST（QoS接口信任） — `QOSIFTRUST.md`
-- [[configobject/UDG/20.15.2/QOSPROP]] · QOSPROP（QoS属性） — `QOSPROP.md`
-- [[configobject/UDG/20.15.2/QOSRDRVPN]] · QOSRDRVPN（QoS重定向VPN） — `QOSRDRVPN.md`
-- [[configobject/UDG/20.15.2/QOSRDRWLRFLOW]] · QOSRDRWLRFLOW（WLR引流重定向） — `QOSRDRWLRFLOW.md`
-- [[configobject/UDG/20.15.2/QOSRULEACL]] · QOSRULEACL（流分类下删除ACL规则组） — `QOSRULEACL.md`
-- [[configobject/UDG/20.15.2/QOSSHAPEQDEPTH]] · QOSSHAPEQDEPTH（Qos Shape缓存队列深度与流量速率的对应关系） — `QOSSHAPEQDEPTH.md`
-- [[configobject/UDG/20.15.2/RDFILTERNODE]] · RDFILTERNODE（RD路由过滤节点） — `RDFILTERNODE.md`
-- [[configobject/UDG/20.15.2/RDSTRING]] · RDSTRING（RD字符） — `RDSTRING.md`
-- [[configobject/UDG/20.15.2/REDIRAPPENDINFO]] · REDIRAPPENDINFO（重定向携带信息） — `REDIRAPPENDINFO.md`
-- [[configobject/UDG/20.15.2/REDIRECT]] · REDIRECT（重定向） — `REDIRECT.md`
-- [[configobject/UDG/20.15.2/REDUNDRDTIP]] · REDUNDRDTIP（冗余备份重定向IP） — `REDUNDRDTIP.md`
-- [[configobject/UDG/20.15.2/RELAYAUTHKEY]] · RELAYAUTHKEY（媒体中继鉴权密钥） — `RELAYAUTHKEY.md`
-- [[configobject/UDG/20.15.2/RELAYBURLLIST]] · RELAYBURLLIST（媒体中继黑名单URL列表） — `RELAYBURLLIST.md`
-- [[configobject/UDG/20.15.2/RELAYDNSSERVER]] · RELAYDNSSERVER（媒体中继的DNS属性） — `RELAYDNSSERVER.md`
-- [[configobject/UDG/20.15.2/RELAYDOMAIN]] · RELAYDOMAIN（媒体中继域名配置） — `RELAYDOMAIN.md`
-- [[configobject/UDG/20.15.2/RELAYHTTPMCTL]] · RELAYHTTPMCTL（媒体中继Http消息控制） — `RELAYHTTPMCTL.md`
-- [[configobject/UDG/20.15.2/RELAYHTTPMHD]] · RELAYHTTPMHD（媒体中继HTTP消息头） — `RELAYHTTPMHD.md`
-- [[configobject/UDG/20.15.2/RELAYIPINFO]] · RELAYIPINFO（媒体中继IP信息） — `RELAYIPINFO.md`
-- [[configobject/UDG/20.15.2/RELAYIPPOOL]] · RELAYIPPOOL（媒体中继IP池） — `RELAYIPPOOL.md`
-- [[configobject/UDG/20.15.2/RELAYIPSECTION]] · RELAYIPSECTION（媒体中继IP段） — `RELAYIPSECTION.md`
-- [[configobject/UDG/20.15.2/RELAYPROTODEF]] · RELAYPROTODEF（媒体中继协议定义） — `RELAYPROTODEF.md`
-- [[configobject/UDG/20.15.2/RELAYRFCHKRULE]] · RELAYRFCHKRULE（媒体中继引用检查规则） — `RELAYRFCHKRULE.md`
-- [[configobject/UDG/20.15.2/RELAYTEMPLATE]] · RELAYTEMPLATE（媒体中继模板） — `RELAYTEMPLATE.md`
-- [[configobject/UDG/20.15.2/RELAYTESTUSER]] · RELAYTESTUSER（媒体中继拨测用户） — `RELAYTESTUSER.md`
-- [[configobject/UDG/20.15.2/RELAYTLSCFG]] · RELAYTLSCFG（媒体中继业务TLS认证配置） — `RELAYTLSCFG.md`
-- [[configobject/UDG/20.15.2/RELAYURLAUTH]] · RELAYURLAUTH（媒体中继URL鉴权配置） — `RELAYURLAUTH.md`
-- [[configobject/UDG/20.15.2/RELAYWURLLIST]] · RELAYWURLLIST（媒体中继白名单URL列表） — `RELAYWURLLIST.md`
-- [[configobject/UDG/20.15.2/REMINDTIME]] · REMINDTIME（证书到期提醒时间） — `REMINDTIME.md`
-- [[configobject/UDG/20.15.2/RESREC]] · RESREC（DNS资源记录） — `RESREC.md`
-- [[configobject/UDG/20.15.2/ROUTEPOLICY]] · ROUTEPOLICY（路由策略） — `ROUTEPOLICY.md`
-- [[configobject/UDG/20.15.2/ROUTEPOLICYNODE]] · ROUTEPOLICYNODE（路由策略节点） — `ROUTEPOLICYNODE.md`
-- [[configobject/UDG/20.15.2/RPTPOLICY]] · RPTPOLICY（基于策略的报表开关） — `RPTPOLICY.md`
-- [[configobject/UDG/20.15.2/RPTPROTMPCLASS]] · RPTPROTMPCLASS（业务报表映射承载协议分类配置） — `RPTPROTMPCLASS.md`
-- [[configobject/UDG/20.15.2/RPTPROTOCOLMAP]] · RPTPROTOCOLMAP（业务报表映射承载协议分类配置） — `RPTPROTOCOLMAP.md`
-- [[configobject/UDG/20.15.2/RPTSVR]] · RPTSVR（报表服务器） — `RPTSVR.md`
-- [[configobject/UDG/20.15.2/RPTSVRADDR]] · RPTSVRADDR（报表服务器接入点配置） — `RPTSVRADDR.md`
-- [[configobject/UDG/20.15.2/RSA1024]] · RSA1024（RSA1024公钥配置） — `RSA1024.md`
-- [[configobject/UDG/20.15.2/RSA2048]] · RSA2048（RSA2048公钥参数） — `RSA2048.md`
-- [[configobject/UDG/20.15.2/RSA3072]] · RSA3072（RSA3072公钥参数） — `RSA3072.md`
-- [[configobject/UDG/20.15.2/RSAKEYPAIRLABEL]] · RSAKEYPAIRLABEL（创建RSA密钥对标签） — `RSAKEYPAIRLABEL.md`
-- [[configobject/UDG/20.15.2/RULE]] · RULE（规则） — `RULE.md`
-- [[configobject/UDG/20.15.2/RULEALL]] · RULEALL（所有规则） — `RULEALL.md`
-- [[configobject/UDG/20.15.2/S1TACID]] · S1TACID（从S1TAC组内删除一个S1TAC） — `S1TACID.md`
-- [[configobject/UDG/20.15.2/SADEDICBEARER]] · SADEDICBEARER（业务感知专有承载配置） — `SADEDICBEARER.md`
-- [[configobject/UDG/20.15.2/SAMUTEPROTOCOL]] · SAMUTEPROTOCOL（SA EGN规则不启用协议） — `SAMUTEPROTOCOL.md`
-- [[configobject/UDG/20.15.2/SBIALLOWSERV]] · SBIALLOWSERV（基于服务的白名单） — `SBIALLOWSERV.md`
-- [[configobject/UDG/20.15.2/SBIAPLE]] · SBIAPLE（服务化接口本端实体） — `SBIAPLE.md`
-- [[configobject/UDG/20.15.2/SBILINKCFG]] · SBILINKCFG（SBI接口链路属性配置） — `SBILINKCFG.md`
-- [[configobject/UDG/20.15.2/SBILINKSET]] · SBILINKSET（服务化接口链路集） — `SBILINKSET.md`
-- [[configobject/UDG/20.15.2/SBILINKSETPROP]] · SBILINKSETPROP（SBI链路集策略） — `SBILINKSETPROP.md`
-- [[configobject/UDG/20.15.2/SBINRFKEY]] · SBINRFKEY（NRF密钥） — `SBINRFKEY.md`
-- [[configobject/UDG/20.15.2/SECAUTHMEM]] · SECAUTHMEM（二次授权命令） — `SECAUTHMEM.md`
-- [[configobject/UDG/20.15.2/SECPOLICY]] · SECPOLICY（防攻击策略） — `SECPOLICY.md`
-- [[configobject/UDG/20.15.2/SECPOLICYACL]] · SECPOLICYACL（安全策略ACL规则） — `SECPOLICYACL.md`
-- [[configobject/UDG/20.15.2/SECPOLICYALARM]] · SECPOLICYALARM（安全策略告警配置） — `SECPOLICYALARM.md`
-- [[configobject/UDG/20.15.2/SECPOLICYCAR]] · SECPOLICYCAR（安全防攻击CAR规则） — `SECPOLICYCAR.md`
-- [[configobject/UDG/20.15.2/SECPOLICYCFG]] · SECPOLICYCFG（应用防攻击策略） — `SECPOLICYCFG.md`
-- [[configobject/UDG/20.15.2/SECPOLICYPROSEQ]] · SECPOLICYPROSEQ（安全策略匹配顺序） — `SECPOLICYPROSEQ.md`
-- [[configobject/UDG/20.15.2/SECTION]] · SECTION（地址段信息） — `SECTION.md`
-- [[configobject/UDG/20.15.2/SERVICEPROP]] · SERVICEPROP（业务属性） — `SERVICEPROP.md`
-- [[configobject/UDG/20.15.2/SERVICESTAT]] · SERVICESTAT（业务统计配置） — `SERVICESTAT.md`
-- [[configobject/UDG/20.15.2/SESSLBCAPABILITY]] · SESSLBCAPABILITY（会话均衡基线能力值） — `SESSLBCAPABILITY.md`
-- [[configobject/UDG/20.15.2/SFELBHASH]] · SFELBHASH（IP转发负载分担hash计算模式） — `SFELBHASH.md`
-- [[configobject/UDG/20.15.2/SFELOADALARM]] · SFELOADALARM（组件侧转发过载告警参数） — `SFELOADALARM.md`
-- [[configobject/UDG/20.15.2/SFIPSRVIP]] · SFIPSRVIP（SFIP业务IP） — `SFIPSRVIP.md`
-- [[configobject/UDG/20.15.2/SFIPVPNINST]] · SFIPVPNINST（ SFIP VPN实例） — `SFIPVPNINST.md`
-- [[configobject/UDG/20.15.2/SIGNADBRULE]] · SIGNADBRULE（特征库规则配置） — `SIGNADBRULE.md`
-- [[configobject/UDG/20.15.2/SLICEINSTINFO]] · SLICEINSTINFO（切片实例信息） — `SLICEINSTINFO.md`
-- [[configobject/UDG/20.15.2/SMARTHTTPREDIR]] · SMARTHTTPREDIR（HTTP智能重定向配置） — `SMARTHTTPREDIR.md`
-- [[configobject/UDG/20.15.2/SNSSAI]] · SNSSAI（NF支持的网络切片选择标识） — `SNSSAI.md`
-- [[configobject/UDG/20.15.2/SNSSAIBWMUSRG]] · SNSSAIBWMUSRG（带宽管理用户组切片绑定） — `SNSSAIBWMUSRG.md`
-- [[configobject/UDG/20.15.2/SNSSAIUPINTF]] · SNSSAIUPINTF（网络切片和逻辑接口绑定关系） — `SNSSAIUPINTF.md`
-- [[configobject/UDG/20.15.2/SOFTWARE]] · SOFTWARE（下载软件仓软件） — `SOFTWARE.md`
-- [[configobject/UDG/20.15.2/SPECCFGITEM]] · SPECCFGITEM（产品内部需要调整规格比例的项目） — `SPECCFGITEM.md`
-- [[configobject/UDG/20.15.2/SPECIFICAPNVAL]] · SPECIFICAPNVAL（用户APN与消息交互使用APN的映射关系） — `SPECIFICAPNVAL.md`
-- [[configobject/UDG/20.15.2/SPECTRAFURRGRP]] · SPECTRAFURRGRP（全局缺省费率的流量使用量上报规则组） — `SPECTRAFURRGRP.md`
-- [[configobject/UDG/20.15.2/SPECURRGRPLIST]] · SPECURRGRPLIST（特殊URR组列表） — `SPECURRGRPLIST.md`
-- [[configobject/UDG/20.15.2/SPECURRGRPLTALL]] · SPECURRGRPLTALL（所有特殊URR组列表） — `SPECURRGRPLTALL.md`
-- [[configobject/UDG/20.15.2/SQOSCAR]] · SQOSCAR（流行为CAR配置） — `SQOSCAR.md`
-- [[configobject/UDG/20.15.2/SQOSRDRVPNGROUP]] · SQOSRDRVPNGROUP（QoS重定向VPN组） — `SQOSRDRVPNGROUP.md`
-- [[configobject/UDG/20.15.2/SQOSREMARK]] · SQOSREMARK（重标记配置） — `SQOSREMARK.md`
-- [[configobject/UDG/20.15.2/SQOSURPF]] · SQOSURPF（流行为安全URPF） — `SQOSURPF.md`
-- [[configobject/UDG/20.15.2/SQOSVPNGROUP]] · SQOSVPNGROUP（VPN组） — `SQOSVPNGROUP.md`
-- [[configobject/UDG/20.15.2/SQOSVPNGROUPMEM]] · SQOSVPNGROUPMEM（VPN组成员） — `SQOSVPNGROUPMEM.md`
-- [[configobject/UDG/20.15.2/SRBFDPARA6]] · SRBFDPARA6（IPv6 BFD模板） — `SRBFDPARA6.md`
-- [[configobject/UDG/20.15.2/SRBFDTEMPLET]] · SRBFDTEMPLET（BFD模板） — `SRBFDTEMPLET.md`
-- [[configobject/UDG/20.15.2/SRROUTE]] · SRROUTE（IPv4静态路由） — `SRROUTE.md`
-- [[configobject/UDG/20.15.2/SRROUTE6]] · SRROUTE6（IPv6静态路由） — `SRROUTE6.md`
-- [[configobject/UDG/20.15.2/SRVCERTSCENE]] · SRVCERTSCENE（配置证书场景） — `SRVCERTSCENE.md`
-- [[configobject/UDG/20.15.2/SRVCHAIN]] · SRVCHAIN（业务链） — `SRVCHAIN.md`
-- [[configobject/UDG/20.15.2/SRVTLSPLY]] · SRVTLSPLY（TLS认证策略） — `SRVTLSPLY.md`
-- [[configobject/UDG/20.15.2/SSUPROTCOLGROUP]] · SSUPROTCOLGROUP（基于协议的质差检测策略） — `SSUPROTCOLGROUP.md`
-- [[configobject/UDG/20.15.2/SYSLOGTASK]] · SYSLOGTASK（上报任务） — `SYSLOGTASK.md`
-- [[configobject/UDG/20.15.2/TACGROUP]] · TACGROUP（指定的TAC组） — `TACGROUP.md`
-- [[configobject/UDG/20.15.2/TAIGROUP]] · TAIGROUP（指定的TAI组） — `TAIGROUP.md`
-- [[configobject/UDG/20.15.2/TCPMSS]] · TCPMSS（Tcp Mss配置） — `TCPMSS.md`
-- [[configobject/UDG/20.15.2/TETHERDB]] · TETHERDB（Tethering检测特征库） — `TETHERDB.md`
-- [[configobject/UDG/20.15.2/TETHERINGTTL]] · TETHERINGTTL（tethering的TTL值） — `TETHERINGTTL.md`
-- [[configobject/UDG/20.15.2/TIMERANGE]] · TIMERANGE（时间段） — `TIMERANGE.md`
-- [[configobject/UDG/20.15.2/TLSHEADEN]] · TLSHEADEN（HTTPS头增强） — `TLSHEADEN.md`
-- [[configobject/UDG/20.15.2/TLSPARA]] · TLSPARA（TLS参数） — `TLSPARA.md`
-- [[configobject/UDG/20.15.2/TLSPSK]] · TLSPSK（预共享密钥） — `TLSPSK.md`
-- [[configobject/UDG/20.15.2/TLSPSKGRP]] · TLSPSKGRP（预共享密钥组信息） — `TLSPSKGRP.md`
-- [[configobject/UDG/20.15.2/TLSSCENE]] · TLSSCENE（TLS证书场景） — `TLSSCENE.md`
-- [[configobject/UDG/20.15.2/TOBYPASSCFG]] · TOBYPASSCFG（TCP旁路配置） — `TOBYPASSCFG.md`
-- [[configobject/UDG/20.15.2/TOPOLICYCFG]] · TOPOLICYCFG（TCP优化策略配置） — `TOPOLICYCFG.md`
-- [[configobject/UDG/20.15.2/TOPOLICYMATCH]] · TOPOLICYMATCH（TCP优化策略匹配规则） — `TOPOLICYMATCH.md`
-- [[configobject/UDG/20.15.2/TRUNKIF]] · TRUNKIF（Trunk工作模式配置） — `TRUNKIF.md`
-- [[configobject/UDG/20.15.2/TRUNKMEMBER]] · TRUNKMEMBER（Trunk成员接口） — `TRUNKMEMBER.md`
-- [[configobject/UDG/20.15.2/TUNNELPOLICY]] · TUNNELPOLICY（隧道策略） — `TUNNELPOLICY.md`
-- [[configobject/UDG/20.15.2/TUNNELSELECTOR]] · TUNNELSELECTOR（隧道选择器） — `TUNNELSELECTOR.md`
-- [[configobject/UDG/20.15.2/TUNNELSELECTORNODE]] · TUNNELSELECTORNODE（隧道选择器节点） — `TUNNELSELECTORNODE.md`
-- [[configobject/UDG/20.15.2/TWAMPCLIENT]] · TWAMPCLIENT（TWAMP客户端） — `TWAMPCLIENT.md`
-- [[configobject/UDG/20.15.2/TWAMPLOGICINF]] · TWAMPLOGICINF（本地逻辑接口） — `TWAMPLOGICINF.md`
-- [[configobject/UDG/20.15.2/TWAMPRESPONDER]] · TWAMPRESPONDER（TWAMP响应端） — `TWAMPRESPONDER.md`
-- [[configobject/UDG/20.15.2/TWAMPSENDER]] · TWAMPSENDER（TWAMP发送端） — `TWAMPSENDER.md`
-- [[configobject/UDG/20.15.2/TWAMPVPNINST]] · TWAMPVPNINST（VPN实例名称） — `TWAMPVPNINST.md`
-- [[configobject/UDG/20.15.2/UACINFO]] · UACINFO（UAC信息） — `UACINFO.md`
-- [[configobject/UDG/20.15.2/UDGNRMINTF]] · UDGNRMINTF（逻辑口） — `UDGNRMINTF.md`
-- [[configobject/UDG/20.15.2/UEINJECTLIST]] · UEINJECTLIST（UE灌包白名单） — `UEINJECTLIST.md`
-- [[configobject/UDG/20.15.2/UEINJECTPKT]] · UEINJECTPKT（UE灌包参数） — `UEINJECTPKT.md`
-- [[configobject/UDG/20.15.2/UEMUTACCWLIST]] · UEMUTACCWLIST（PA口UE互访白名单） — `UEMUTACCWLIST.md`
-- [[configobject/UDG/20.15.2/UPAPNDIAMAAAG]] · UPAPNDIAMAAAG（APN的Diameter AAA服务器组） — `UPAPNDIAMAAAG.md`
-- [[configobject/UDG/20.15.2/UPDBGPPEERGROUP]] · UPDBGPPEERGROUP（BGP对等体分组） — `UPDBGPPEERGROUP.md`
-- [[configobject/UDG/20.15.2/UPDIAMAAABNDG]] · UPDIAMAAABNDG（Diameter AAA服务器组里的Diameter AAA服务器） — `UPDIAMAAABNDG.md`
-- [[configobject/UDG/20.15.2/UPDIAMAAAGRP]] · UPDIAMAAAGRP（Diameter AAA服务器组） — `UPDIAMAAAGRP.md`
-- [[configobject/UDG/20.15.2/UPDIAMCONN]] · UPDIAMCONN（Diameter链路） — `UPDIAMCONN.md`
-- [[configobject/UDG/20.15.2/UPDIAMCONNGRP]] · UPDIAMCONNGRP（Diameter链路组） — `UPDIAMCONNGRP.md`
-- [[configobject/UDG/20.15.2/UPDIAMDICTPATH]] · UPDIAMDICTPATH（Diameter字典加载路径） — `UPDIAMDICTPATH.md`
-- [[configobject/UDG/20.15.2/UPDIAMETERAAA]] · UPDIAMETERAAA（Diameter AAA服务器） — `UPDIAMETERAAA.md`
-- [[configobject/UDG/20.15.2/UPDIAMLOCINFO]] · UPDIAMLOCINFO（Diameter本端信息） — `UPDIAMLOCINFO.md`
-- [[configobject/UDG/20.15.2/UPDIAMPEERADDR]] · UPDIAMPEERADDR（Diameter对端地址） — `UPDIAMPEERADDR.md`
-- [[configobject/UDG/20.15.2/UPDIAMRTNEXTHOP]] · UPDIAMRTNEXTHOP（Diameter路由下一跳） — `UPDIAMRTNEXTHOP.md`
-- [[configobject/UDG/20.15.2/UPDIAMRTREALM]] · UPDIAMRTREALM（Diameter路由域名信息） — `UPDIAMRTREALM.md`
-- [[configobject/UDG/20.15.2/UPDRA]] · UPDRA（DRA） — `UPDRA.md`
-- [[configobject/UDG/20.15.2/UPFPERFRANGE]] · UPFPERFRANGE（UPF上报性能指标范围配置） — `UPFPERFRANGE.md`
-- [[configobject/UDG/20.15.2/UPGLBDIAMREALM]] · UPGLBDIAMREALM（全局Diameter域） — `UPGLBDIAMREALM.md`
-- [[configobject/UDG/20.15.2/UPIMSIMSSEG]] · UPIMSIMSSEG（IMSI和MSISDN号段） — `UPIMSIMSSEG.md`
-- [[configobject/UDG/20.15.2/UPINSTID]] · UPINSTID（NF实例ID） — `UPINSTID.md`
-- [[configobject/UDG/20.15.2/UPSCTPASSOC]] · UPSCTPASSOC（SCTP耦联信息） — `UPSCTPASSOC.md`
-- [[configobject/UDG/20.15.2/UPSCTPENDPOINT]] · UPSCTPENDPOINT（SCTP端点） — `UPSCTPENDPOINT.md`
-- [[configobject/UDG/20.15.2/UPSCTPTEMPLATE]] · UPSCTPTEMPLATE（SCTP模板） — `UPSCTPTEMPLATE.md`
-- [[configobject/UDG/20.15.2/URR]] · URR — `URR.md`
-- [[configobject/UDG/20.15.2/URRGROUP]] · URRGROUP（URR组） — `URRGROUP.md`
-- [[configobject/UDG/20.15.2/USER]] · USER（用户操作权限） — `USER.md`
-- [[configobject/UDG/20.15.2/USERPROFILE]] · USERPROFILE（用户模板） — `USERPROFILE.md`
-- [[configobject/UDG/20.15.2/USERRUNINFO]] · USERRUNINFO（网关对IMSI/MSISDN指定的用户的运行信息进行收集配置） — `USERRUNINFO.md`
-- [[configobject/UDG/20.15.2/USERSELATTR]] · USERSELATTR（用户选择属性） — `USERSELATTR.md`
-- [[configobject/UDG/20.15.2/USERSELPLCY]] · USERSELPLCY（用户策略选择） — `USERSELPLCY.md`
-- [[configobject/UDG/20.15.2/USERSELRANGE]] · USERSELRANGE（用户选择范围列表） — `USERSELRANGE.md`
-- [[configobject/UDG/20.15.2/USERSTATISTICS]] · USERSTATISTICS（用户信息统计功能） — `USERSTATISTICS.md`
-- [[configobject/UDG/20.15.2/USRATTRCOND]] · USRATTRCOND（用户属性过滤条件） — `USRATTRCOND.md`
-- [[configobject/UDG/20.15.2/USRRELATEIDEN]] · USRRELATEIDEN（用户关联识别） — `USRRELATEIDEN.md`
-- [[configobject/UDG/20.15.2/USRSECAUTH]] · USRSECAUTH（二次授权用户） — `USRSECAUTH.md`
-- [[configobject/UDG/20.15.2/VIRTUALIP]] · VIRTUALIP（浮动IP） — `VIRTUALIP.md`
-- [[configobject/UDG/20.15.2/VNFMINFO]] · VNFMINFO（VNFM对接信息） — `VNFMINFO.md`
-- [[configobject/UDG/20.15.2/VOLTELOOP]] · VOLTELOOP（VoLTE话路环回功能） — `VOLTELOOP.md`
-- [[configobject/UDG/20.15.2/VPNINST]] · VPNINST（VPN实例） — `VPNINST.md`
-- [[configobject/UDG/20.15.2/VPNINSTAF]] · VPNINSTAF（L3VPN实例地址族） — `VPNINSTAF.md`
-- [[configobject/UDG/20.15.2/VPNINSTAFIPSEC]] · VPNINSTAFIPSEC（L3VPN实例地址族） — `VPNINSTAFIPSEC.md`
-- [[configobject/UDG/20.15.2/VPNTARGET]] · VPNTARGET（VPN Target） — `VPNTARGET.md`
-- [[configobject/UDG/20.15.2/VPNVNIMAP]] · VPNVNIMAP（VPN VNI映射） — `VPNVNIMAP.md`
-- [[configobject/UDG/20.15.2/VTEP]] · VTEP（VXLAN隧道端点） — `VTEP.md`
-- [[configobject/UDG/20.15.2/VXLANGRP]] · VXLANGRP（VXLAN组） — `VXLANGRP.md`
-- [[configobject/UDG/20.15.2/WELLKNOWNPORT]] · WELLKNOWNPORT（知名端口） — `WELLKNOWNPORT.md`
-- [[configobject/UDG/20.15.2/WHITEURLLIST]] · WHITEURLLIST（URL白名单） — `WHITEURLLIST.md`
-- [[configobject/UDG/20.15.2/WKRFLAGEASSOSW]] · WKRFLAGEASSOSW（Worker流表老化关联开关） — `WKRFLAGEASSOSW.md`
-- [[configobject/UDG/20.15.2/XHEADER]] · XHEADER（扩展头域） — `XHEADER.md`
-- [[configobject/UDG/20.15.2/ZONE]] · ZONE（区域） — `ZONE.md`
+- [ABNTRAFFICDT（异常流量检测开关）](configobject/UDG/20.15.2/ABNTRAFFICDT.md)
+- [ABSTIMERANGE（绝对时间段）](configobject/UDG/20.15.2/ABSTIMERANGE.md)
+- [ACL](configobject/UDG/20.15.2/ACL.md)
+- [ACLDEFAULT（缺省Acl绑定）](configobject/UDG/20.15.2/ACLDEFAULT.md)
+- [ACLGROUP（ACL规则匹配计数）](configobject/UDG/20.15.2/ACLGROUP.md)
+- [ACLGROUP6（IPv6 ACL规则匹配计数）](configobject/UDG/20.15.2/ACLGROUP6.md)
+- [ACLGROUP6IPSEC（IPv6 ACL规则组）](configobject/UDG/20.15.2/ACLGROUP6IPSEC.md)
+- [ACLGROUPIPSEC（ACL规则组）](configobject/UDG/20.15.2/ACLGROUPIPSEC.md)
+- [ACLNODE（ACL节点）](configobject/UDG/20.15.2/ACLNODE.md)
+- [ACLRULEADV4（高级ACL规则）](configobject/UDG/20.15.2/ACLRULEADV4.md)
+- [ACLRULEADV4IPSEC（高级ACL规则）](configobject/UDG/20.15.2/ACLRULEADV4IPSEC.md)
+- [ACLRULEADV6（高级IPv6 ACL规则）](configobject/UDG/20.15.2/ACLRULEADV6.md)
+- [ACLRULEADV6IPSEC（高级IPv6 ACL规则）](configobject/UDG/20.15.2/ACLRULEADV6IPSEC.md)
+- [ACLRULEBAS4（基本ACL规则）](configobject/UDG/20.15.2/ACLRULEBAS4.md)
+- [ACLRULEBAS6（基本IPv6 ACL规则）](configobject/UDG/20.15.2/ACLRULEBAS6.md)
+- [ACLRULEETH（以太ACL规则）](configobject/UDG/20.15.2/ACLRULEETH.md)
+- [ACLRULEIF（接口ACL规则）](configobject/UDG/20.15.2/ACLRULEIF.md)
+- [ACSPACKAGE（软件包）](configobject/UDG/20.15.2/ACSPACKAGE.md)
+- [ACSPATCH（补丁）](configobject/UDG/20.15.2/ACSPATCH.md)
+- [ADCPARA（ADC参数）](configobject/UDG/20.15.2/ADCPARA.md)
+- [ADDRPOOLSTAT（地址池统计配置）](configobject/UDG/20.15.2/ADDRPOOLSTAT.md)
+- [ADRLOCWHITELST（位置区域地址分配用户白名单）](configobject/UDG/20.15.2/ADRLOCWHITELST.md)
+- [ADVANCEDCOMMUNITYNODE（高级团体属性过滤器节点）](configobject/UDG/20.15.2/ADVANCEDCOMMUNITYNODE.md)
+- [ADVEXTCOMMUNITYNODE（高级扩展团体属性过滤器节点）](configobject/UDG/20.15.2/ADVEXTCOMMUNITYNODE.md)
+- [AFDB（防欺诈业务规则数据库）](configobject/UDG/20.15.2/AFDB.md)
+- [AFDNSCHECKTYPE（需要进行防欺诈检查的DNS报文类型）](configobject/UDG/20.15.2/AFDNSCHECKTYPE.md)
+- [AFDNSCHKTPALL（所有需要进行防欺诈检查的DNS报文类型）](configobject/UDG/20.15.2/AFDNSCHKTPALL.md)
+- [AFDNSSERVER（防欺诈可信DNS服务器）](configobject/UDG/20.15.2/AFDNSSERVER.md)
+- [AFDNSSERVERALL（所有防欺诈可信DNS服务器）](configobject/UDG/20.15.2/AFDNSSERVERALL.md)
+- [AFHTTPSCTCK（HTTPS证书检查功能配置）](configobject/UDG/20.15.2/AFHTTPSCTCK.md)
+- [AFPOLICY（防欺诈策略配置）](configobject/UDG/20.15.2/AFPOLICY.md)
+- [AFPOLICYALL（所有防欺诈策略配置）](configobject/UDG/20.15.2/AFPOLICYALL.md)
+- [AFPROXYSERVER（防欺诈可信代理服务器）](configobject/UDG/20.15.2/AFPROXYSERVER.md)
+- [AFPROXYSRVALL（所有防欺诈可信代理服务器）](configobject/UDG/20.15.2/AFPROXYSRVALL.md)
+- [AGGREGATEROUTE（BGP聚合路由）](configobject/UDG/20.15.2/AGGREGATEROUTE.md)
+- [ALLIFIPADDRESS（批量删除接口下IP地址）](configobject/UDG/20.15.2/ALLIFIPADDRESS.md)
+- [ALLOWSERNAME（基于地址的白名单）](configobject/UDG/20.15.2/ALLOWSERNAME.md)
+- [APN（APN配置）](configobject/UDG/20.15.2/APN.md)
+- [APNALIAS（ApnAlias配置）](configobject/UDG/20.15.2/APNALIAS.md)
+- [APNCFTEMPLATE（APN内容过滤模板）](configobject/UDG/20.15.2/APNCFTEMPLATE.md)
+- [APNFLOWMAXNUM（APN最大流数）](configobject/UDG/20.15.2/APNFLOWMAXNUM.md)
+- [APNIMSSIGFLTR（APN的IMS分类器）](configobject/UDG/20.15.2/APNIMSSIGFLTR.md)
+- [APNOLQCBLACKLIST（过载限速APN黑名单）](configobject/UDG/20.15.2/APNOLQCBLACKLIST.md)
+- [APPLYASPATH（AS路径设置）](configobject/UDG/20.15.2/APPLYASPATH.md)
+- [APPLYCMNTYSTRING（团体属性值设置）](configobject/UDG/20.15.2/APPLYCMNTYSTRING.md)
+- [APPLYCOMMUNITY（团体属性设置）](configobject/UDG/20.15.2/APPLYCOMMUNITY.md)
+- [APPLYCOMMUNITYFILTERDELETE（删除团体属性过滤器设置）](configobject/UDG/20.15.2/APPLYCOMMUNITYFILTERDELETE.md)
+- [APPLYCOST（路由开销值设置）](configobject/UDG/20.15.2/APPLYCOST.md)
+- [APPLYCOSTTYPE（开销值类型设置）](configobject/UDG/20.15.2/APPLYCOSTTYPE.md)
+- [APPLYDAMPENING（Dampening设置）](configobject/UDG/20.15.2/APPLYDAMPENING.md)
+- [APPLYEXTCMNTYSTRING（扩展团体属性值设置）](configobject/UDG/20.15.2/APPLYEXTCMNTYSTRING.md)
+- [APPLYEXTENDCOMMUNITY（扩展团体属性设置）](configobject/UDG/20.15.2/APPLYEXTENDCOMMUNITY.md)
+- [APPLYIPV6NEXTHOP（IPv6下一跳设置）](configobject/UDG/20.15.2/APPLYIPV6NEXTHOP.md)
+- [APPLYLOCALPREFERENCE（路由BGP本地优先级设置）](configobject/UDG/20.15.2/APPLYLOCALPREFERENCE.md)
+- [APPLYNEXTHOP（下一跳设置）](configobject/UDG/20.15.2/APPLYNEXTHOP.md)
+- [APPLYORIGIN（BGP路由信息的路由源设置）](configobject/UDG/20.15.2/APPLYORIGIN.md)
+- [APPLYPREFERENCE（路由优先级设置）](configobject/UDG/20.15.2/APPLYPREFERENCE.md)
+- [APPLYPREFVALUE（BGP路由首选值设置）](configobject/UDG/20.15.2/APPLYPREFVALUE.md)
+- [APPLYROUTETYPE（路由类型设置）](configobject/UDG/20.15.2/APPLYROUTETYPE.md)
+- [APPLYTAG（路由标签值设置）](configobject/UDG/20.15.2/APPLYTAG.md)
+- [APPLYTUNNELPOLICY（应用隧道策略）](configobject/UDG/20.15.2/APPLYTUNNELPOLICY.md)
+- [APPPERFSTAT（应用性能统计）](configobject/UDG/20.15.2/APPPERFSTAT.md)
+- [APPPOLICYCTRL（基于应用的质差上报策略）](configobject/UDG/20.15.2/APPPOLICYCTRL.md)
+- [ARPPROBESESSION（ARP探测会话）](configobject/UDG/20.15.2/ARPPROBESESSION.md)
+- [ARPPROBESTANDBYSRCIP（备用成员口ARP探测源地址）](configobject/UDG/20.15.2/ARPPROBESTANDBYSRCIP.md)
+- [ARPSTATICBLACKLIST（ARP静态黑名单）](configobject/UDG/20.15.2/ARPSTATICBLACKLIST.md)
+- [ARPSTATICTABLE（静态ARP表项）](configobject/UDG/20.15.2/ARPSTATICTABLE.md)
+- [ASPATHFILTERNODE（AS路径过滤节点）](configobject/UDG/20.15.2/ASPATHFILTERNODE.md)
+- [ASPATHSTRING（替换AS路径值）](configobject/UDG/20.15.2/ASPATHSTRING.md)
+- [ATTACHIKEPEER（绑定IKE对等体）](configobject/UDG/20.15.2/ATTACHIKEPEER.md)
+- [AUTORP（Auto-RP配置）](configobject/UDG/20.15.2/AUTORP.md)
+- [AUTOSCALINGBFD（BFD会话自动化配置模板）](configobject/UDG/20.15.2/AUTOSCALINGBFD.md)
+- [AUTOSCALINGBGPLF（BGP入不转板自动化配置模板）](configobject/UDG/20.15.2/AUTOSCALINGBGPLF.md)
+- [AUTOSCALINGBGPMSPEER（BGP自动化多源邻居配置模板）](configobject/UDG/20.15.2/AUTOSCALINGBGPMSPEER.md)
+- [AUTOSCALINGETHTRUNK（以太网隧道自动化多虚拟网卡配置模板）](configobject/UDG/20.15.2/AUTOSCALINGETHTRUNK.md)
+- [AUTOSCALINGIPREACH（IP可达性检测自动化配置模板）](configobject/UDG/20.15.2/AUTOSCALINGIPREACH.md)
+- [AUTOSCALINGMPLS（MPLS自动化配置模板）](configobject/UDG/20.15.2/AUTOSCALINGMPLS.md)
+- [AUTOSCALINGOSPFPROCGRP（OSPF进程组自动化配置模板）](configobject/UDG/20.15.2/AUTOSCALINGOSPFPROCGRP.md)
+- [AUTOSCALINGRUBLACKLIST（自动部署RU黑名单）](configobject/UDG/20.15.2/AUTOSCALINGRUBLACKLIST.md)
+- [AUTOSCALINGSERVICE（自动化配置参数）](configobject/UDG/20.15.2/AUTOSCALINGSERVICE.md)
+- [AUTOSCALINGSRBFD（静态路由的动态BFD自动化配置模板）](configobject/UDG/20.15.2/AUTOSCALINGSRBFD.md)
+- [AUTOSCALINGSRROUTE（静态路由自动化配置模板）](configobject/UDG/20.15.2/AUTOSCALINGSRROUTE.md)
+- [BASICCOMMUNITYNODE（基础团体属性过滤器节点）](configobject/UDG/20.15.2/BASICCOMMUNITYNODE.md)
+- [BCSRVLEVELPLY（带宽管理控策略制器业务级别）](configobject/UDG/20.15.2/BCSRVLEVELPLY.md)
+- [BFDSESSION（BFD会话参数）](configobject/UDG/20.15.2/BFDSESSION.md)
+- [BGPCONFED（联盟中自治系统）](configobject/UDG/20.15.2/BGPCONFED.md)
+- [BGPMULTIPEER（BGP多源对等体）](configobject/UDG/20.15.2/BGPMULTIPEER.md)
+- [BGPMULTIPEERAF（BGP多源对等体地址族）](configobject/UDG/20.15.2/BGPMULTIPEERAF.md)
+- [BGPPEER（BGP对等体）](configobject/UDG/20.15.2/BGPPEER.md)
+- [BGPPEERAF（BGP对等体地址族）](configobject/UDG/20.15.2/BGPPEERAF.md)
+- [BGPPEERAFPRE（BGP对等体条件路由匹配前缀）](configobject/UDG/20.15.2/BGPPEERAFPRE.md)
+- [BGPPEERBFD（BGP对等体BFD检测）](configobject/UDG/20.15.2/BGPPEERBFD.md)
+- [BGPPEERGROUP（BGP对等体组）](configobject/UDG/20.15.2/BGPPEERGROUP.md)
+- [BGPPEERGROUPAF（BGP对等体组地址族）](configobject/UDG/20.15.2/BGPPEERGROUPAF.md)
+- [BGPPEERGROUPAFPRE（BGP对等体组条件路由匹配前缀）](configobject/UDG/20.15.2/BGPPEERGROUPAFPRE.md)
+- [BGPPEERGROUPBFD（BGP对等体组BFD检测）](configobject/UDG/20.15.2/BGPPEERGROUPBFD.md)
+- [BGPVRF（BGP VPN实例）](configobject/UDG/20.15.2/BGPVRF.md)
+- [BGPVRFAF（BGP VPN地址族）](configobject/UDG/20.15.2/BGPVRFAF.md)
+- [BLACKLISTRULE（黑名单规则）](configobject/UDG/20.15.2/BLACKLISTRULE.md)
+- [BWMCONTROLLER（带宽管理控制器）](configobject/UDG/20.15.2/BWMCONTROLLER.md)
+- [BWMRULE（带宽管理规则）](configobject/UDG/20.15.2/BWMRULE.md)
+- [BWMRULEGLBALL（所有全局带宽管理规则）](configobject/UDG/20.15.2/BWMRULEGLBALL.md)
+- [BWMRULEGLOBAL（全局带宽管理规则）](configobject/UDG/20.15.2/BWMRULEGLOBAL.md)
+- [BWMSERVICE（带宽管理业务）](configobject/UDG/20.15.2/BWMSERVICE.md)
+- [BWMUSERGROUP（带宽管理用户组）](configobject/UDG/20.15.2/BWMUSERGROUP.md)
+- [BWMUSERGRPALL（所有带宽管理用户组）](configobject/UDG/20.15.2/BWMUSERGRPALL.md)
+- [CATEGORYPROP（分类属性）](configobject/UDG/20.15.2/CATEGORYPROP.md)
+- [CELL（小区）](configobject/UDG/20.15.2/CELL.md)
+- [CELLMULFAULTTHD（进程频繁故障监控参数）](configobject/UDG/20.15.2/CELLMULFAULTTHD.md)
+- [CERTSCENE（证书场景描述）](configobject/UDG/20.15.2/CERTSCENE.md)
+- [CFGTHRESHOLD（配置对象告警阈值）](configobject/UDG/20.15.2/CFGTHRESHOLD.md)
+- [CFIPWHITELIST（IP地址白名单列表）](configobject/UDG/20.15.2/CFIPWHITELIST.md)
+- [CFPFSPECACTION（指定内容过滤策略特殊场景下的业务动作）](configobject/UDG/20.15.2/CFPFSPECACTION.md)
+- [CFPROFILE（内容过滤策略）](configobject/UDG/20.15.2/CFPROFILE.md)
+- [CFTEMPLATE（内容过滤模板）](configobject/UDG/20.15.2/CFTEMPLATE.md)
+- [CFWHITEURLLST（URL过滤白名单列表）](configobject/UDG/20.15.2/CFWHITEURLLST.md)
+- [CHRRPTAPN（指定某个APN做本地存储CHR表单的策略）](configobject/UDG/20.15.2/CHRRPTAPN.md)
+- [CHRRPTSUBID（CHR上报用户）](configobject/UDG/20.15.2/CHRRPTSUBID.md)
+- [COMMUNITYFILTER（团体属性过滤器）](configobject/UDG/20.15.2/COMMUNITYFILTER.md)
+- [COMPKG（扩展包）](configobject/UDG/20.15.2/COMPKG.md)
+- [CONFLICTIP（本地地址池中冲突IPv4地址）](configobject/UDG/20.15.2/CONFLICTIP.md)
+- [CONFLICTIPV6（本地地址池中冲突IPv6地址）](configobject/UDG/20.15.2/CONFLICTIPV6.md)
+- [CONTCATEGROUP（内容分类组）](configobject/UDG/20.15.2/CONTCATEGROUP.md)
+- [CPACCESSLIST（CP白名单）](configobject/UDG/20.15.2/CPACCESSLIST.md)
+- [CPASSOCIATION（CP）](configobject/UDG/20.15.2/CPASSOCIATION.md)
+- [CPNODEID（SMF的NodeID）](configobject/UDG/20.15.2/CPNODEID.md)
+- [CPUCAPABILITY（CPU能力基线）](configobject/UDG/20.15.2/CPUCAPABILITY.md)
+- [DAMPROUTE（振荡抑制路由）](configobject/UDG/20.15.2/DAMPROUTE.md)
+- [DBRUMEM（CSDB RU内存信息）](configobject/UDG/20.15.2/DBRUMEM.md)
+- [DCSVIDEO（DCS点播视频资源）](configobject/UDG/20.15.2/DCSVIDEO.md)
+- [DEBUGRECORD（异常信息记录）](configobject/UDG/20.15.2/DEBUGRECORD.md)
+- [DETECTPATH（探测路径配置）](configobject/UDG/20.15.2/DETECTPATH.md)
+- [DFSRPAIR（双发选收结对配置）](configobject/UDG/20.15.2/DFSRPAIR.md)
+- [DFSRPAIRMEM（双发选收结对成员配置）](configobject/UDG/20.15.2/DFSRPAIRMEM.md)
+- [DHCP6CLIENT（DHCPv6客户端）](configobject/UDG/20.15.2/DHCP6CLIENT.md)
+- [DHCPCLIENT（DHCPv4客户端）](configobject/UDG/20.15.2/DHCPCLIENT.md)
+- [DNAI（DNAI配置）](configobject/UDG/20.15.2/DNAI.md)
+- [DNSOVERWRITING（DNS重写动作配置）](configobject/UDG/20.15.2/DNSOVERWRITING.md)
+- [DNSRULE（DNS规则）](configobject/UDG/20.15.2/DNSRULE.md)
+- [DRCOMM（容灾实例地址）](configobject/UDG/20.15.2/DRCOMM.md)
+- [DRDCI（DC间通信通道信息）](configobject/UDG/20.15.2/DRDCI.md)
+- [DRGROUPINFO（容灾组信息）](configobject/UDG/20.15.2/DRGROUPINFO.md)
+- [DRINST（容灾实例）](configobject/UDG/20.15.2/DRINST.md)
+- [DRSEPINTERFACE（故障隔离接口）](configobject/UDG/20.15.2/DRSEPINTERFACE.md)
+- [DSCPMAP（DSCP值到VLAN优先级的映射）](configobject/UDG/20.15.2/DSCPMAP.md)
+- [ECHOIPLIST（GTP路径管理IP地址）](configobject/UDG/20.15.2/ECHOIPLIST.md)
+- [EDNS](configobject/UDG/20.15.2/EDNS.md)
+- [EPRPDYN（EPRPDYN对象）](configobject/UDG/20.15.2/EPRPDYN.md)
+- [EPRPDYNIP（EpRpDyn对象本端IP地址或者删除远端IP地址段）](configobject/UDG/20.15.2/EPRPDYNIP.md)
+- [EPRPSTA（EPRPSTA对象）](configobject/UDG/20.15.2/EPRPSTA.md)
+- [ERRORCODE（错误码）](configobject/UDG/20.15.2/ERRORCODE.md)
+- [ETHSUBIF（子接口配置）](configobject/UDG/20.15.2/ETHSUBIF.md)
+- [EXPCFGPARA（MML导入导出密钥）](configobject/UDG/20.15.2/EXPCFGPARA.md)
+- [EXTENDCOMMUNITYFILTER（扩展团体属性过滤器）](configobject/UDG/20.15.2/EXTENDCOMMUNITYFILTER.md)
+- [EXTENDCOMMUNITYFILTERNODE（基础扩展团体属性过滤器节点）](configobject/UDG/20.15.2/EXTENDCOMMUNITYFILTERNODE.md)
+- [EXTENDEDFILTER（扩展过滤器）](configobject/UDG/20.15.2/EXTENDEDFILTER.md)
+- [EXTENDPOLICY（扩展策略配置）](configobject/UDG/20.15.2/EXTENDPOLICY.md)
+- [EXTENDPROP（扩展属性配置）](configobject/UDG/20.15.2/EXTENDPROP.md)
+- [EXTERNALDB（外置规则数据库）](configobject/UDG/20.15.2/EXTERNALDB.md)
+- [FABRICTRUNKMEMBER（Fabric-Trunk成员接口）](configobject/UDG/20.15.2/FABRICTRUNKMEMBER.md)
+- [FCPARAM（流控参数）](configobject/UDG/20.15.2/FCPARAM.md)
+- [FILTER（过滤器）](configobject/UDG/20.15.2/FILTER.md)
+- [FILTERGROUP（过滤器组）](configobject/UDG/20.15.2/FILTERGROUP.md)
+- [FILTERIPV6（IPv6过滤器）](configobject/UDG/20.15.2/FILTERIPV6.md)
+- [FILTERPOLICY（路由过滤策略）](configobject/UDG/20.15.2/FILTERPOLICY.md)
+- [FINGERIDENT（SA指纹识别配置）](configobject/UDG/20.15.2/FINGERIDENT.md)
+- [FLOWFILTER（流过滤器）](configobject/UDG/20.15.2/FLOWFILTER.md)
+- [FLOWFILTERGRP（流过滤器组）](configobject/UDG/20.15.2/FLOWFILTERGRP.md)
+- [FUIEXTFILTER（FUI扩展过滤器绑定配置）](configobject/UDG/20.15.2/FUIEXTFILTER.md)
+- [FWPOLICY（防火墙策略）](configobject/UDG/20.15.2/FWPOLICY.md)
+- [FWRULE（转发规则）](configobject/UDG/20.15.2/FWRULE.md)
+- [GIREDIRECTPARA（单一Gi重定向信息）](configobject/UDG/20.15.2/GIREDIRECTPARA.md)
+- [GLBCFTEMPLATE（全局内容过滤模板）](configobject/UDG/20.15.2/GLBCFTEMPLATE.md)
+- [GLBEXTENDPOLICY（全局扩展策略）](configobject/UDG/20.15.2/GLBEXTENDPOLICY.md)
+- [GLBEXTFILTER（全局扩展过滤器绑定配置）](configobject/UDG/20.15.2/GLBEXTFILTER.md)
+- [GLBTRUNKREMARK（整机Trunk Remark配置）](configobject/UDG/20.15.2/GLBTRUNKREMARK.md)
+- [GLBURRGROUP（全局计费属性）](configobject/UDG/20.15.2/GLBURRGROUP.md)
+- [GRAYUPTSTUSER（灰度升级拨测用户）](configobject/UDG/20.15.2/GRAYUPTSTUSER.md)
+- [GRETUNNEL（GRE隧道）](configobject/UDG/20.15.2/GRETUNNEL.md)
+- [HBUSRATTRCONF（高带宽用户属性）](configobject/UDG/20.15.2/HBUSRATTRCONF.md)
+- [HEADEN（头增强）](configobject/UDG/20.15.2/HEADEN.md)
+- [HEADENPARA（头增强参数）](configobject/UDG/20.15.2/HEADENPARA.md)
+- [HOST（Host）](configobject/UDG/20.15.2/HOST.md)
+- [HOSTSTCIF（接口协议报文统计配置）](configobject/UDG/20.15.2/HOSTSTCIF.md)
+- [HPATCH（热补丁）](configobject/UDG/20.15.2/HPATCH.md)
+- [HPLMNLIST（UPF设备的归属PLMN）](configobject/UDG/20.15.2/HPLMNLIST.md)
+- [HTTPFCIPGRP（HTTP流控组）](configobject/UDG/20.15.2/HTTPFCIPGRP.md)
+- [HTTPFCMSG（HTTP流控消息类型）](configobject/UDG/20.15.2/HTTPFCMSG.md)
+- [HTTPFIXEDFC（HTTP流控组固定速率流控信息）](configobject/UDG/20.15.2/HTTPFIXEDFC.md)
+- [HTTPFIXEDFCINF（HTTP接口类型固定速率流控信息）](configobject/UDG/20.15.2/HTTPFIXEDFCINF.md)
+- [HTTPHTRMS（HTR流控安全边界配置）](configobject/UDG/20.15.2/HTTPHTRMS.md)
+- [HTTPLE（HTTP本端实体）](configobject/UDG/20.15.2/HTTPLE.md)
+- [HTTPLEGRP（HTTP本端实体组）](configobject/UDG/20.15.2/HTTPLEGRP.md)
+- [HTTPOAUTHKEY（HTTPOauth密钥）](configobject/UDG/20.15.2/HTTPOAUTHKEY.md)
+- [HTTPOFC（HTTP局向）](configobject/UDG/20.15.2/HTTPOFC.md)
+- [HTTPRESCFG（HTTP资源流控门限）](configobject/UDG/20.15.2/HTTPRESCFG.md)
+- [HTTPSTATOBJ（基于对端结点的性能统计测量对象信息）](configobject/UDG/20.15.2/HTTPSTATOBJ.md)
+- [HTTPSTATPARA（HTTP统计参数）](configobject/UDG/20.15.2/HTTPSTATPARA.md)
+- [HTTPSTATUS（HTTP状态码判定配置）](configobject/UDG/20.15.2/HTTPSTATUS.md)
+- [HTTPVPNMAP（HTTP VPN映射关系）](configobject/UDG/20.15.2/HTTPVPNMAP.md)
+- [ICAPLOCALINFO（ICAP本端信息）](configobject/UDG/20.15.2/ICAPLOCALINFO.md)
+- [ICAPSERVER（ICAP服务器）](configobject/UDG/20.15.2/ICAPSERVER.md)
+- [ICAPSVRGRP（ICAP服务器组）](configobject/UDG/20.15.2/ICAPSVRGRP.md)
+- [ICMPOPTSECURITY（ICMP选项安全配置）](configobject/UDG/20.15.2/ICMPOPTSECURITY.md)
+- [ICMPSECURITY（ICMP安全配置）](configobject/UDG/20.15.2/ICMPSECURITY.md)
+- [IFALLOWEDVLAN（主接口允许通过的VLAN）](configobject/UDG/20.15.2/IFALLOWEDVLAN.md)
+- [IFCONTROLFLAP（接口震荡抑制）](configobject/UDG/20.15.2/IFCONTROLFLAP.md)
+- [IFICMPSECURITY（接口下ICMP安全配置）](configobject/UDG/20.15.2/IFICMPSECURITY.md)
+- [IFIPV4ADDRESS（接口IPv4地址）](configobject/UDG/20.15.2/IFIPV4ADDRESS.md)
+- [IFIPV4ADDRESSIPSEC（接口IPv4地址）](configobject/UDG/20.15.2/IFIPV4ADDRESSIPSEC.md)
+- [IFIPV4UNNUM（接口IPv4借用地址）](configobject/UDG/20.15.2/IFIPV4UNNUM.md)
+- [IFIPV4UNNUMIPSEC（接口IPv4借用地址）](configobject/UDG/20.15.2/IFIPV4UNNUMIPSEC.md)
+- [IFIPV6ADDRESS（接口IPv6地址）](configobject/UDG/20.15.2/IFIPV6ADDRESS.md)
+- [IFIPV6ADDRESSIPSEC（接口IPv6地址）](configobject/UDG/20.15.2/IFIPV6ADDRESSIPSEC.md)
+- [IFIPV6ADDRPOLICY（IPv6地址策略）](configobject/UDG/20.15.2/IFIPV6ADDRPOLICY.md)
+- [IFIPV6CGA（IPv6 CGA地址信息）](configobject/UDG/20.15.2/IFIPV6CGA.md)
+- [IFIPV6NDRAPREFIX（IPv6 RA通告前缀）](configobject/UDG/20.15.2/IFIPV6NDRAPREFIX.md)
+- [IFL2FLOWMODE（主接口二层透传模式）](configobject/UDG/20.15.2/IFL2FLOWMODE.md)
+- [IKEPEER（IKE对等体）](configobject/UDG/20.15.2/IKEPEER.md)
+- [IKEPEER6（IPv6 IKE对等体）](configobject/UDG/20.15.2/IKEPEER6.md)
+- [IKEPROPOSAL（IKE提议）](configobject/UDG/20.15.2/IKEPROPOSAL.md)
+- [IMPORTROUTE（指定协议中的入口路由配置）](configobject/UDG/20.15.2/IMPORTROUTE.md)
+- [IMSSIGFILTER（IMS分类器）](configobject/UDG/20.15.2/IMSSIGFILTER.md)
+- [INNERFTPPWD（内部FTPS账号密码）](configobject/UDG/20.15.2/INNERFTPPWD.md)
+- [INSAPROTOCOL（黑白名单协议配置）](configobject/UDG/20.15.2/INSAPROTOCOL.md)
+- [INSAPROTPARA（单协议推理配置）](configobject/UDG/20.15.2/INSAPROTPARA.md)
+- [INTERFACE（接口）](configobject/UDG/20.15.2/INTERFACE.md)
+- [INTERFACEIPSEC（接口）](configobject/UDG/20.15.2/INTERFACEIPSEC.md)
+- [INTFURPF（安全接口URPF）](configobject/UDG/20.15.2/INTFURPF.md)
+- [IPALLOCBYPLMNLOCSW（基于位置区+PLMN分配地址的开关）](configobject/UDG/20.15.2/IPALLOCBYPLMNLOCSW.md)
+- [IPFARM（IPFarm）](configobject/UDG/20.15.2/IPFARM.md)
+- [IPFARMSERVER（IPFarmServer）](configobject/UDG/20.15.2/IPFARMSERVER.md)
+- [IPLIST（IP地址列表）](configobject/UDG/20.15.2/IPLIST.md)
+- [IPOPTSECALL（IP全局选项安全配置）](configobject/UDG/20.15.2/IPOPTSECALL.md)
+- [IPOPTSECURITYIF（接口IP选项安全配置）](configobject/UDG/20.15.2/IPOPTSECURITYIF.md)
+- [IPRUREACH（RU到网关的可达性检测配置）](configobject/UDG/20.15.2/IPRUREACH.md)
+- [IPSAGING（IPS老化配置）](configobject/UDG/20.15.2/IPSAGING.md)
+- [IPSECINTFCFG（创建IPsec隧道接口）](configobject/UDG/20.15.2/IPSECINTFCFG.md)
+- [IPSECINTFCFGIPSEC（IPsec隧道接口）](configobject/UDG/20.15.2/IPSECINTFCFGIPSEC.md)
+- [IPSECPOLICY（IPsec策略）](configobject/UDG/20.15.2/IPSECPOLICY.md)
+- [IPSECPOLICY6（IPsec IPv6策略）](configobject/UDG/20.15.2/IPSECPOLICY6.md)
+- [IPSECPOLICYTM（IPsec策略模板）](configobject/UDG/20.15.2/IPSECPOLICYTM.md)
+- [IPSECPROPOSAL（IPsec提议）](configobject/UDG/20.15.2/IPSECPROPOSAL.md)
+- [IPSECPROPOSALIPSEC（IPsec提议）](configobject/UDG/20.15.2/IPSECPROPOSALIPSEC.md)
+- [IPSECSA（IPsec安全联盟）](configobject/UDG/20.15.2/IPSECSA.md)
+- [IPSQMSHAPING（IPSQM整形配置）](configobject/UDG/20.15.2/IPSQMSHAPING.md)
+- [IPSQMVIPLIST（IPSQM VIP用户列表）](configobject/UDG/20.15.2/IPSQMVIPLIST.md)
+- [IPV6EXTHSECALL（IPv6扩展头选项安全配置）](configobject/UDG/20.15.2/IPV6EXTHSECALL.md)
+- [IPV6ICMPSECURITY（IPv6安全配置）](configobject/UDG/20.15.2/IPV6ICMPSECURITY.md)
+- [IPV6IFICMPSECURITY（接口下安全配置）](configobject/UDG/20.15.2/IPV6IFICMPSECURITY.md)
+- [IPV6PATHMTU（IPv6 Path MTU配置）](configobject/UDG/20.15.2/IPV6PATHMTU.md)
+- [IPV6PREFIXFILTERNODE（IPv6前缀过滤器节点）](configobject/UDG/20.15.2/IPV6PREFIXFILTERNODE.md)
+- [KEYCHAIN（Keychain的配置）](configobject/UDG/20.15.2/KEYCHAIN.md)
+- [KEYCHAINKEYID（Keychain Key ID的配置）](configobject/UDG/20.15.2/KEYCHAINKEYID.md)
+- [KEYPAIRLABEL（创建DSA/ECC密钥对标签）](configobject/UDG/20.15.2/KEYPAIRLABEL.md)
+- [KPIMONRULE（KPI异常检测规则）](configobject/UDG/20.15.2/KPIMONRULE.md)
+- [L2TPCLIENTIP（L2TP绑定的接口）](configobject/UDG/20.15.2/L2TPCLIENTIP.md)
+- [L2TPGROUP（指定L2TP组）](configobject/UDG/20.15.2/L2TPGROUP.md)
+- [L2TPLNSINFO（L2TP组的LNS信息）](configobject/UDG/20.15.2/L2TPLNSINFO.md)
+- [L2TPRDSCLIENT（APN绑定的L2TP接口）](configobject/UDG/20.15.2/L2TPRDSCLIENT.md)
+- [L3SERVICEDUALUPG（一个微服务迁移流程）](configobject/UDG/20.15.2/L3SERVICEDUALUPG.md)
+- [L3SERVICEUPG（服务升级进度）](configobject/UDG/20.15.2/L3SERVICEUPG.md)
+- [L3VPNINST（L3VPN实例）](configobject/UDG/20.15.2/L3VPNINST.md)
+- [L3VPNINSTIPSEC（L3VPN实例）](configobject/UDG/20.15.2/L3VPNINSTIPSEC.md)
+- [L7FILTER（七层过滤器）](configobject/UDG/20.15.2/L7FILTER.md)
+- [LACGROUP（指定的LAC组）](configobject/UDG/20.15.2/LACGROUP.md)
+- [LACID（从LAC组内删除一个LAC）](configobject/UDG/20.15.2/LACID.md)
+- [LBTRCRDTCFG（跟踪重定向）](configobject/UDG/20.15.2/LBTRCRDTCFG.md)
+- [LDPAUTHGROUP（LDP认证组）](configobject/UDG/20.15.2/LDPAUTHGROUP.md)
+- [LDPFECLIST（FEC列表）](configobject/UDG/20.15.2/LDPFECLIST.md)
+- [LDPFECNODE（FEC节点）](configobject/UDG/20.15.2/LDPFECNODE.md)
+- [LDPIF（LDP接口）](configobject/UDG/20.15.2/LDPIF.md)
+- [LDPINSTANCE（LDP实例）](configobject/UDG/20.15.2/LDPINSTANCE.md)
+- [LDPPEERPOLICY（LDP邻居策略）](configobject/UDG/20.15.2/LDPPEERPOLICY.md)
+- [LDPREMOTEPEER（LDP远端邻居）](configobject/UDG/20.15.2/LDPREMOTEPEER.md)
+- [LOGICINF（逻辑接口）](configobject/UDG/20.15.2/LOGICINF.md)
+- [LOGICIP（逻辑IP地址信息）](configobject/UDG/20.15.2/LOGICIP.md)
+- [MATCHASPATHFILTER（匹配AS路径过滤器）](configobject/UDG/20.15.2/MATCHASPATHFILTER.md)
+- [MATCHCOMMUNITYFILTER（匹配团体属性过滤器）](configobject/UDG/20.15.2/MATCHCOMMUNITYFILTER.md)
+- [MATCHCOST（Cost匹配路由策略）](configobject/UDG/20.15.2/MATCHCOST.md)
+- [MATCHDESTACL6（匹配IPv6地址ACL）](configobject/UDG/20.15.2/MATCHDESTACL6.md)
+- [MATCHDESTINATIONACL（目的IP地址基础ACL匹配路由策略）](configobject/UDG/20.15.2/MATCHDESTINATIONACL.md)
+- [MATCHDESTPREFIX6FILTER（匹配IPv6地址前缀列表）](configobject/UDG/20.15.2/MATCHDESTPREFIX6FILTER.md)
+- [MATCHDESTPREFIXFILTER（匹配IPv4地址前缀列表）](configobject/UDG/20.15.2/MATCHDESTPREFIXFILTER.md)
+- [MATCHEXTCOMMUNITYFILTER（匹配扩展团体属性过滤器）](configobject/UDG/20.15.2/MATCHEXTCOMMUNITYFILTER.md)
+- [MATCHINTERFACE（出接口匹配路由策略）](configobject/UDG/20.15.2/MATCHINTERFACE.md)
+- [MATCHNEXTHOPACL（下一跳基础ACL匹配路由策略）](configobject/UDG/20.15.2/MATCHNEXTHOPACL.md)
+- [MATCHNEXTHOPACL6（匹配IPv6下一跳地址ACL）](configobject/UDG/20.15.2/MATCHNEXTHOPACL6.md)
+- [MATCHNEXTHOPPREFIX6FILTER（匹配IPv6下一跳前缀列表）](configobject/UDG/20.15.2/MATCHNEXTHOPPREFIX6FILTER.md)
+- [MATCHNEXTHOPPREFIXFILTER（下一跳前缀匹配路由策略）](configobject/UDG/20.15.2/MATCHNEXTHOPPREFIXFILTER.md)
+- [MATCHPROTOCOL（路由协议匹配路由策略）](configobject/UDG/20.15.2/MATCHPROTOCOL.md)
+- [MATCHRDFILTER（匹配RD过滤器）](configobject/UDG/20.15.2/MATCHRDFILTER.md)
+- [MATCHROUTETYPE（路由类型匹配路由策略）](configobject/UDG/20.15.2/MATCHROUTETYPE.md)
+- [MATCHRTSRCACL（源路由基础ACL匹配路由策略）](configobject/UDG/20.15.2/MATCHRTSRCACL.md)
+- [MATCHRTSRCACL6（匹配IPv6源路由地址ACL）](configobject/UDG/20.15.2/MATCHRTSRCACL6.md)
+- [MATCHRTSRCPREFIX6FILTER（匹配IPv6路由源前缀列表）](configobject/UDG/20.15.2/MATCHRTSRCPREFIX6FILTER.md)
+- [MATCHRTSRCPREFIXFILTER（匹配路由源IP前缀）](configobject/UDG/20.15.2/MATCHRTSRCPREFIXFILTER.md)
+- [MATCHTAG（Tag匹配路由策略）](configobject/UDG/20.15.2/MATCHTAG.md)
+- [MCASTENABLE（组播使能配置）](configobject/UDG/20.15.2/MCASTENABLE.md)
+- [MCASTGRPMEM（组播组成员配置）](configobject/UDG/20.15.2/MCASTGRPMEM.md)
+- [MCASTLOADSPLIT（组播负载分担配置）](configobject/UDG/20.15.2/MCASTLOADSPLIT.md)
+- [MCRDRNHP（组播报文重定向策略）](configobject/UDG/20.15.2/MCRDRNHP.md)
+- [ME（网元信息）](configobject/UDG/20.15.2/ME.md)
+- [MEASTHRESHOLDRULE（话统阈值规则）](configobject/UDG/20.15.2/MEASTHRESHOLDRULE.md)
+- [MGMDIF（IGMP接口配置）](configobject/UDG/20.15.2/MGMDIF.md)
+- [MGMDSITE（IGMP全局配置）](configobject/UDG/20.15.2/MGMDSITE.md)
+- [MGMDSSMAP（IGMP SSM映射配置）](configobject/UDG/20.15.2/MGMDSSMAP.md)
+- [MGMDSTATICGROUP（IGMP静态组配置）](configobject/UDG/20.15.2/MGMDSTATICGROUP.md)
+- [MK（更新主密钥）](configobject/UDG/20.15.2/MK.md)
+- [MNCLEN（MNC长度信息）](configobject/UDG/20.15.2/MNCLEN.md)
+- [MONVPN（监控VPN实例）](configobject/UDG/20.15.2/MONVPN.md)
+- [MPACIPV4RULE（IPv4 MPAC策略规则）](configobject/UDG/20.15.2/MPACIPV4RULE.md)
+- [MPACIPV6RULE（IPv6 MPAC策略规则）](configobject/UDG/20.15.2/MPACIPV6RULE.md)
+- [MPACV4POLICY（IPv4 MPAC策略）](configobject/UDG/20.15.2/MPACV4POLICY.md)
+- [MPACV6POLICY（IPv6 MPAC策略）](configobject/UDG/20.15.2/MPACV6POLICY.md)
+- [MPLSIF（MPLS接口）](configobject/UDG/20.15.2/MPLSIF.md)
+- [MQCBEHAVIOR（流行为）](configobject/UDG/20.15.2/MQCBEHAVIOR.md)
+- [MQCCLASSIFIER（流分类）](configobject/UDG/20.15.2/MQCCLASSIFIER.md)
+- [MQCPOLICY（流策略配置）](configobject/UDG/20.15.2/MQCPOLICY.md)
+- [MQCPOLICYNODE（流策略节点）](configobject/UDG/20.15.2/MQCPOLICYNODE.md)
+- [MTSPOLICY（消息跟踪限制）](configobject/UDG/20.15.2/MTSPOLICY.md)
+- [MULTICASTGRP（组播组配置）](configobject/UDG/20.15.2/MULTICASTGRP.md)
+- [MULTICASTSOURCE（IGMP Snooping组播源配置）](configobject/UDG/20.15.2/MULTICASTSOURCE.md)
+- [MULTIDNNCOND（多DNN条件）](configobject/UDG/20.15.2/MULTIDNNCOND.md)
+- [MULTREDIRECT（多级重定向密码）](configobject/UDG/20.15.2/MULTREDIRECT.md)
+- [MULTREDIRECTEX（扩展的多级重定向密码）](configobject/UDG/20.15.2/MULTREDIRECTEX.md)
+- [N2TACID（从N2TAC组内删除一个TAC）](configobject/UDG/20.15.2/N2TACID.md)
+- [NDIFRAROUTE（接口上ND RA路由配置信息）](configobject/UDG/20.15.2/NDIFRAROUTE.md)
+- [NDNEIGHBOR（静态ND邻居表项）](configobject/UDG/20.15.2/NDNEIGHBOR.md)
+- [NETWORK（网络查询）](configobject/UDG/20.15.2/NETWORK.md)
+- [NETWORKINSTVPNMAP（网络实例配置）](configobject/UDG/20.15.2/NETWORKINSTVPNMAP.md)
+- [NETWORKROUTE（引入路由指定前缀和掩码长度）](configobject/UDG/20.15.2/NETWORKROUTE.md)
+- [NGVNINSTANCE（5G VNInstance配置）](configobject/UDG/20.15.2/NGVNINSTANCE.md)
+- [NGVNVLANMAP（基于5G LAN组的VLAN映射信息）](configobject/UDG/20.15.2/NGVNVLANMAP.md)
+- [NGVNVLANWL（基于5G LAN组的VLAN白名单）](configobject/UDG/20.15.2/NGVNVLANWL.md)
+- [NPDIRECTCONNECTPORT（多框级联配置）](configobject/UDG/20.15.2/NPDIRECTCONNECTPORT.md)
+- [NPUPGPLANE（NP升级平面）](configobject/UDG/20.15.2/NPUPGPLANE.md)
+- [NSHHEADEN（NSH头增强）](configobject/UDG/20.15.2/NSHHEADEN.md)
+- [NTPSVR（NTP服务器）](configobject/UDG/20.15.2/NTPSVR.md)
+- [OMFWDRT（OM转发路由）](configobject/UDG/20.15.2/OMFWDRT.md)
+- [OMNWCONF（OM网络探测参数）](configobject/UDG/20.15.2/OMNWCONF.md)
+- [OP（本地用户属性）](configobject/UDG/20.15.2/OP.md)
+- [OPMMETRIC（话统指标优化公式）](configobject/UDG/20.15.2/OPMMETRIC.md)
+- [OSPF（OSPF进程配置）](configobject/UDG/20.15.2/OSPF.md)
+- [OSPFABRSUMMARY（区域内路由聚合配置）](configobject/UDG/20.15.2/OSPFABRSUMMARY.md)
+- [OSPFAREA（OSPF区域配置）](configobject/UDG/20.15.2/OSPFAREA.md)
+- [OSPFAREAAUTH（OSPF区域认证配置）](configobject/UDG/20.15.2/OSPFAREAAUTH.md)
+- [OSPFAREAFILTER（区域过滤策略配置）](configobject/UDG/20.15.2/OSPFAREAFILTER.md)
+- [OSPFASBRSUMMARY（引入路由聚合配置）](configobject/UDG/20.15.2/OSPFASBRSUMMARY.md)
+- [OSPFDEFAULTROUTE（OSPF默认宣告路由配置）](configobject/UDG/20.15.2/OSPFDEFAULTROUTE.md)
+- [OSPFDNBITSET（DN比特位配置）](configobject/UDG/20.15.2/OSPFDNBITSET.md)
+- [OSPFDNSUMRTID（创建特定路由器禁止检查Summary-LSA的DN比特位配置）](configobject/UDG/20.15.2/OSPFDNSUMRTID.md)
+- [OSPFDOMAINID（创建OSPF域标识配置）](configobject/UDG/20.15.2/OSPFDOMAINID.md)
+- [OSPFFILTERPOLICY（OSPF过滤策略配置）](configobject/UDG/20.15.2/OSPFFILTERPOLICY.md)
+- [OSPFFRR（OSPF IP FRR配置）](configobject/UDG/20.15.2/OSPFFRR.md)
+- [OSPFGTSM（OSPF的GTSM配置）](configobject/UDG/20.15.2/OSPFGTSM.md)
+- [OSPFHOSTNAME（OSPF主机名配置）](configobject/UDG/20.15.2/OSPFHOSTNAME.md)
+- [OSPFIMPORTROUTE（OSPF引入路由配置）](configobject/UDG/20.15.2/OSPFIMPORTROUTE.md)
+- [OSPFINTERFACE（OSPF接口配置）](configobject/UDG/20.15.2/OSPFINTERFACE.md)
+- [OSPFINTERFACEAUTH（OSPF接口认证配置）](configobject/UDG/20.15.2/OSPFINTERFACEAUTH.md)
+- [OSPFNETWORK（OSPF运行的接口及所属区域）](configobject/UDG/20.15.2/OSPFNETWORK.md)
+- [OSPFNEXTHOP（OSPF等价路由优先级配置）](configobject/UDG/20.15.2/OSPFNEXTHOP.md)
+- [OSPFPEER（OSPF的NBMA网络邻居路由器配置）](configobject/UDG/20.15.2/OSPFPEER.md)
+- [OSPFPREFERENCE（OSPF协议路由的优先级配置）](configobject/UDG/20.15.2/OSPFPREFERENCE.md)
+- [OSPFPROUTPRIORITY（OSPF路由的收敛优先级配置）](configobject/UDG/20.15.2/OSPFPROUTPRIORITY.md)
+- [OSPFV3（OSPFv3进程配置）](configobject/UDG/20.15.2/OSPFV3.md)
+- [OSPFV3ABRSUMMARY（OSPFv3区域内路由聚合配置）](configobject/UDG/20.15.2/OSPFV3ABRSUMMARY.md)
+- [OSPFV3AREA（OSPFv3区域配置）](configobject/UDG/20.15.2/OSPFV3AREA.md)
+- [OSPFV3AREAAUTH（OSPFv3区域认证配置）](configobject/UDG/20.15.2/OSPFV3AREAAUTH.md)
+- [OSPFV3AREAFILTER（OSPFv3区域过滤LSA配置）](configobject/UDG/20.15.2/OSPFV3AREAFILTER.md)
+- [OSPFV3ASBRSUMMARY（OSPFv3引入路由聚合配置）](configobject/UDG/20.15.2/OSPFV3ASBRSUMMARY.md)
+- [OSPFV3AUTH（OSPFv3认证配置）](configobject/UDG/20.15.2/OSPFV3AUTH.md)
+- [OSPFV3DEFAULTROUTE（OSPFv3默认路由宣告配置）](configobject/UDG/20.15.2/OSPFV3DEFAULTROUTE.md)
+- [OSPFV3DOMAINID（创建OSPFv3域标识符配置）](configobject/UDG/20.15.2/OSPFV3DOMAINID.md)
+- [OSPFV3FILTERPOLICY（OSPFv3过滤策略配置）](configobject/UDG/20.15.2/OSPFV3FILTERPOLICY.md)
+- [OSPFV3FRR（OSPFv3 IP FRR配置）](configobject/UDG/20.15.2/OSPFV3FRR.md)
+- [OSPFV3GTSM（OSPFv3 GTSM配置）](configobject/UDG/20.15.2/OSPFV3GTSM.md)
+- [OSPFV3HOSTNAME（OSPFv3主机名配置）](configobject/UDG/20.15.2/OSPFV3HOSTNAME.md)
+- [OSPFV3IFIPSECSA（创建OSPFv3 接口的安全联盟SA）](configobject/UDG/20.15.2/OSPFV3IFIPSECSA.md)
+- [OSPFV3IMPORTROUTE（OSPFv3引入路由配置）](configobject/UDG/20.15.2/OSPFV3IMPORTROUTE.md)
+- [OSPFV3INTERFACE（OSPFv3接口配置）](configobject/UDG/20.15.2/OSPFV3INTERFACE.md)
+- [OSPFV3INTERFACEAUTH（OSPFv3接口认证配置）](configobject/UDG/20.15.2/OSPFV3INTERFACEAUTH.md)
+- [OSPFV3PREFERENCE（OSPFv3路由优先级配置）](configobject/UDG/20.15.2/OSPFV3PREFERENCE.md)
+- [OSPFV3PRIFIXPRIORITY（OSPFv3路由收敛优先级配置）](configobject/UDG/20.15.2/OSPFV3PRIFIXPRIORITY.md)
+- [PACKAGE（软件包）](configobject/UDG/20.15.2/PACKAGE.md)
+- [PAEPERFMODE（配置表中的PAE性能模式）](configobject/UDG/20.15.2/PAEPERFMODE.md)
+- [PAEPORTGATEWAY（PAE端口网关信息）](configobject/UDG/20.15.2/PAEPORTGATEWAY.md)
+- [PATCH（补丁）](configobject/UDG/20.15.2/PATCH.md)
+- [PATHDWNALMSEG（单条路径断告警抑制参数的分段配置）](configobject/UDG/20.15.2/PATHDWNALMSEG.md)
+- [PBUFREUSE5GC（pbuf重用检测开关设置）](configobject/UDG/20.15.2/PBUFREUSE5GC.md)
+- [PCCACTIONPROP（PCC动作属性）](configobject/UDG/20.15.2/PCCACTIONPROP.md)
+- [PCCPOLICYGRP（PCC策略组）](configobject/UDG/20.15.2/PCCPOLICYGRP.md)
+- [PDNROUTETSTPATH（UPF向PDN服务器发送探测消息的探测路径配置）](configobject/UDG/20.15.2/PDNROUTETSTPATH.md)
+- [PEERPUBLICKEY（对端公钥）](configobject/UDG/20.15.2/PEERPUBLICKEY.md)
+- [PERFGTPVER（版本粒度的测量对象）](configobject/UDG/20.15.2/PERFGTPVER.md)
+- [PERITIMERANGE（周期时间段）](configobject/UDG/20.15.2/PERITIMERANGE.md)
+- [PIMIF（PIM接口配置）](configobject/UDG/20.15.2/PIMIF.md)
+- [PIMSITE（PIM全局配置）](configobject/UDG/20.15.2/PIMSITE.md)
+- [PIMSTATICRP（PIM静态RP配置）](configobject/UDG/20.15.2/PIMSTATICRP.md)
+- [PLGPKG（扩展包）](configobject/UDG/20.15.2/PLGPKG.md)
+- [PODALMTH（POD资源告警阈值）](configobject/UDG/20.15.2/PODALMTH.md)
+- [PODBLACKLIST（Pod自愈黑名单）](configobject/UDG/20.15.2/PODBLACKLIST.md)
+- [PODHEALCPUTHR（对应PODTYPE下的阈值配置）](configobject/UDG/20.15.2/PODHEALCPUTHR.md)
+- [PODISOBLKLIST（Pod隔离黑名单）](configobject/UDG/20.15.2/PODISOBLKLIST.md)
+- [POLICYCONDITION（业务质差检测策略）](configobject/UDG/20.15.2/POLICYCONDITION.md)
+- [POOL（地址池）](configobject/UDG/20.15.2/POOL.md)
+- [POOLGROUP（地址池组）](configobject/UDG/20.15.2/POOLGROUP.md)
+- [POOLGRPMAP（地址池组映射关系）](configobject/UDG/20.15.2/POOLGRPMAP.md)
+- [PORTGROUP（端口组）](configobject/UDG/20.15.2/PORTGROUP.md)
+- [PORTGROUPMEMBER（端口组成员）](configobject/UDG/20.15.2/PORTGROUPMEMBER.md)
+- [PREFIXFILTERNODE（IPv4地址前缀列表过滤器节点）](configobject/UDG/20.15.2/PREFIXFILTERNODE.md)
+- [PREFIXURLGRP（前缀URL组）](configobject/UDG/20.15.2/PREFIXURLGRP.md)
+- [PRINETPOLICY（专网控制策略）](configobject/UDG/20.15.2/PRINETPOLICY.md)
+- [PROPATTACHIPSECPROPOSAL（IPsec策略绑定提议）](configobject/UDG/20.15.2/PROPATTACHIPSECPROPOSAL.md)
+- [PROTFAGETIME（协议五元组老化时间）](configobject/UDG/20.15.2/PROTFAGETIME.md)
+- [PROTOCOLDEFINE（自定义协议）](configobject/UDG/20.15.2/PROTOCOLDEFINE.md)
+- [PROTOCOLGROUP（自定义协议组）](configobject/UDG/20.15.2/PROTOCOLGROUP.md)
+- [PROTREDEFINE（重定义协议）](configobject/UDG/20.15.2/PROTREDEFINE.md)
+- [PUBCFGDOMAIN（公共配置域名称）](configobject/UDG/20.15.2/PUBCFGDOMAIN.md)
+- [PUREFWDUSER（纯转发用户配置）](configobject/UDG/20.15.2/PUREFWDUSER.md)
+- [PWD（在线用户自身密码）](configobject/UDG/20.15.2/PWD.md)
+- [PWDBLACKLIST（密码禁用词）](configobject/UDG/20.15.2/PWDBLACKLIST.md)
+- [QOSACTRDRNHP（QoS重定向下一跳信息）](configobject/UDG/20.15.2/QOSACTRDRNHP.md)
+- [QOSACTRDRPOLICY（流行为下级联流策略）](configobject/UDG/20.15.2/QOSACTRDRPOLICY.md)
+- [QOSAPPLICATION（流策略）](configobject/UDG/20.15.2/QOSAPPLICATION.md)
+- [QOSCARBURST（用户做car的参数）](configobject/UDG/20.15.2/QOSCARBURST.md)
+- [QOSDIFFERSERV（DS域）](configobject/UDG/20.15.2/QOSDIFFERSERV.md)
+- [QOSIFPHB（禁止QoS优先级映射的类型）](configobject/UDG/20.15.2/QOSIFPHB.md)
+- [QOSIFTRUST（QoS接口信任）](configobject/UDG/20.15.2/QOSIFTRUST.md)
+- [QOSPROP（QoS属性）](configobject/UDG/20.15.2/QOSPROP.md)
+- [QOSRDRVPN（QoS重定向VPN）](configobject/UDG/20.15.2/QOSRDRVPN.md)
+- [QOSRDRWLRFLOW（WLR引流重定向）](configobject/UDG/20.15.2/QOSRDRWLRFLOW.md)
+- [QOSRULEACL（流分类下删除ACL规则组）](configobject/UDG/20.15.2/QOSRULEACL.md)
+- [QOSSHAPEQDEPTH（Qos Shape缓存队列深度与流量速率的对应关系）](configobject/UDG/20.15.2/QOSSHAPEQDEPTH.md)
+- [RDFILTERNODE（RD路由过滤节点）](configobject/UDG/20.15.2/RDFILTERNODE.md)
+- [RDSTRING（RD字符）](configobject/UDG/20.15.2/RDSTRING.md)
+- [REDIRAPPENDINFO（重定向携带信息）](configobject/UDG/20.15.2/REDIRAPPENDINFO.md)
+- [REDIRECT（重定向）](configobject/UDG/20.15.2/REDIRECT.md)
+- [REDUNDRDTIP（冗余备份重定向IP）](configobject/UDG/20.15.2/REDUNDRDTIP.md)
+- [RELAYAUTHKEY（媒体中继鉴权密钥）](configobject/UDG/20.15.2/RELAYAUTHKEY.md)
+- [RELAYBURLLIST（媒体中继黑名单URL列表）](configobject/UDG/20.15.2/RELAYBURLLIST.md)
+- [RELAYDNSSERVER（媒体中继的DNS属性）](configobject/UDG/20.15.2/RELAYDNSSERVER.md)
+- [RELAYDOMAIN（媒体中继域名配置）](configobject/UDG/20.15.2/RELAYDOMAIN.md)
+- [RELAYHTTPMCTL（媒体中继Http消息控制）](configobject/UDG/20.15.2/RELAYHTTPMCTL.md)
+- [RELAYHTTPMHD（媒体中继HTTP消息头）](configobject/UDG/20.15.2/RELAYHTTPMHD.md)
+- [RELAYIPINFO（媒体中继IP信息）](configobject/UDG/20.15.2/RELAYIPINFO.md)
+- [RELAYIPPOOL（媒体中继IP池）](configobject/UDG/20.15.2/RELAYIPPOOL.md)
+- [RELAYIPSECTION（媒体中继IP段）](configobject/UDG/20.15.2/RELAYIPSECTION.md)
+- [RELAYPROTODEF（媒体中继协议定义）](configobject/UDG/20.15.2/RELAYPROTODEF.md)
+- [RELAYRFCHKRULE（媒体中继引用检查规则）](configobject/UDG/20.15.2/RELAYRFCHKRULE.md)
+- [RELAYTEMPLATE（媒体中继模板）](configobject/UDG/20.15.2/RELAYTEMPLATE.md)
+- [RELAYTESTUSER（媒体中继拨测用户）](configobject/UDG/20.15.2/RELAYTESTUSER.md)
+- [RELAYTLSCFG（媒体中继业务TLS认证配置）](configobject/UDG/20.15.2/RELAYTLSCFG.md)
+- [RELAYURLAUTH（媒体中继URL鉴权配置）](configobject/UDG/20.15.2/RELAYURLAUTH.md)
+- [RELAYWURLLIST（媒体中继白名单URL列表）](configobject/UDG/20.15.2/RELAYWURLLIST.md)
+- [REMINDTIME（证书到期提醒时间）](configobject/UDG/20.15.2/REMINDTIME.md)
+- [RESREC（DNS资源记录）](configobject/UDG/20.15.2/RESREC.md)
+- [ROUTEPOLICY（路由策略）](configobject/UDG/20.15.2/ROUTEPOLICY.md)
+- [ROUTEPOLICYNODE（路由策略节点）](configobject/UDG/20.15.2/ROUTEPOLICYNODE.md)
+- [RPTPOLICY（基于策略的报表开关）](configobject/UDG/20.15.2/RPTPOLICY.md)
+- [RPTPROTMPCLASS（业务报表映射承载协议分类配置）](configobject/UDG/20.15.2/RPTPROTMPCLASS.md)
+- [RPTPROTOCOLMAP（业务报表映射承载协议分类配置）](configobject/UDG/20.15.2/RPTPROTOCOLMAP.md)
+- [RPTSVR（报表服务器）](configobject/UDG/20.15.2/RPTSVR.md)
+- [RPTSVRADDR（报表服务器接入点配置）](configobject/UDG/20.15.2/RPTSVRADDR.md)
+- [RSA1024（RSA1024公钥配置）](configobject/UDG/20.15.2/RSA1024.md)
+- [RSA2048（RSA2048公钥参数）](configobject/UDG/20.15.2/RSA2048.md)
+- [RSA3072（RSA3072公钥参数）](configobject/UDG/20.15.2/RSA3072.md)
+- [RSAKEYPAIRLABEL（创建RSA密钥对标签）](configobject/UDG/20.15.2/RSAKEYPAIRLABEL.md)
+- [RULE（规则）](configobject/UDG/20.15.2/RULE.md)
+- [RULEALL（所有规则）](configobject/UDG/20.15.2/RULEALL.md)
+- [S1TACID（从S1TAC组内删除一个S1TAC）](configobject/UDG/20.15.2/S1TACID.md)
+- [SADEDICBEARER（业务感知专有承载配置）](configobject/UDG/20.15.2/SADEDICBEARER.md)
+- [SAMUTEPROTOCOL（SA EGN规则不启用协议）](configobject/UDG/20.15.2/SAMUTEPROTOCOL.md)
+- [SBIALLOWSERV（基于服务的白名单）](configobject/UDG/20.15.2/SBIALLOWSERV.md)
+- [SBIAPLE（服务化接口本端实体）](configobject/UDG/20.15.2/SBIAPLE.md)
+- [SBILINKCFG（SBI接口链路属性配置）](configobject/UDG/20.15.2/SBILINKCFG.md)
+- [SBILINKSET（服务化接口链路集）](configobject/UDG/20.15.2/SBILINKSET.md)
+- [SBILINKSETPROP（SBI链路集策略）](configobject/UDG/20.15.2/SBILINKSETPROP.md)
+- [SBINRFKEY（NRF密钥）](configobject/UDG/20.15.2/SBINRFKEY.md)
+- [SECAUTHMEM（二次授权命令）](configobject/UDG/20.15.2/SECAUTHMEM.md)
+- [SECPOLICY（防攻击策略）](configobject/UDG/20.15.2/SECPOLICY.md)
+- [SECPOLICYACL（安全策略ACL规则）](configobject/UDG/20.15.2/SECPOLICYACL.md)
+- [SECPOLICYALARM（安全策略告警配置）](configobject/UDG/20.15.2/SECPOLICYALARM.md)
+- [SECPOLICYCAR（安全防攻击CAR规则）](configobject/UDG/20.15.2/SECPOLICYCAR.md)
+- [SECPOLICYCFG（应用防攻击策略）](configobject/UDG/20.15.2/SECPOLICYCFG.md)
+- [SECPOLICYPROSEQ（安全策略匹配顺序）](configobject/UDG/20.15.2/SECPOLICYPROSEQ.md)
+- [SECTION（地址段信息）](configobject/UDG/20.15.2/SECTION.md)
+- [SERVICEPROP（业务属性）](configobject/UDG/20.15.2/SERVICEPROP.md)
+- [SERVICESTAT（业务统计配置）](configobject/UDG/20.15.2/SERVICESTAT.md)
+- [SESSLBCAPABILITY（会话均衡基线能力值）](configobject/UDG/20.15.2/SESSLBCAPABILITY.md)
+- [SFELBHASH（IP转发负载分担hash计算模式）](configobject/UDG/20.15.2/SFELBHASH.md)
+- [SFELOADALARM（组件侧转发过载告警参数）](configobject/UDG/20.15.2/SFELOADALARM.md)
+- [SFIPSRVIP（SFIP业务IP）](configobject/UDG/20.15.2/SFIPSRVIP.md)
+- [SFIPVPNINST（ SFIP VPN实例）](configobject/UDG/20.15.2/SFIPVPNINST.md)
+- [SIGNADBRULE（特征库规则配置）](configobject/UDG/20.15.2/SIGNADBRULE.md)
+- [SLICEINSTINFO（切片实例信息）](configobject/UDG/20.15.2/SLICEINSTINFO.md)
+- [SMARTHTTPREDIR（HTTP智能重定向配置）](configobject/UDG/20.15.2/SMARTHTTPREDIR.md)
+- [SNSSAI（NF支持的网络切片选择标识）](configobject/UDG/20.15.2/SNSSAI.md)
+- [SNSSAIBWMUSRG（带宽管理用户组切片绑定）](configobject/UDG/20.15.2/SNSSAIBWMUSRG.md)
+- [SNSSAIUPINTF（网络切片和逻辑接口绑定关系）](configobject/UDG/20.15.2/SNSSAIUPINTF.md)
+- [SOFTWARE（下载软件仓软件）](configobject/UDG/20.15.2/SOFTWARE.md)
+- [SPECCFGITEM（产品内部需要调整规格比例的项目）](configobject/UDG/20.15.2/SPECCFGITEM.md)
+- [SPECIFICAPNVAL（用户APN与消息交互使用APN的映射关系）](configobject/UDG/20.15.2/SPECIFICAPNVAL.md)
+- [SPECTRAFURRGRP（全局缺省费率的流量使用量上报规则组）](configobject/UDG/20.15.2/SPECTRAFURRGRP.md)
+- [SPECURRGRPLIST（特殊URR组列表）](configobject/UDG/20.15.2/SPECURRGRPLIST.md)
+- [SPECURRGRPLTALL（所有特殊URR组列表）](configobject/UDG/20.15.2/SPECURRGRPLTALL.md)
+- [SQOSCAR（流行为CAR配置）](configobject/UDG/20.15.2/SQOSCAR.md)
+- [SQOSRDRVPNGROUP（QoS重定向VPN组）](configobject/UDG/20.15.2/SQOSRDRVPNGROUP.md)
+- [SQOSREMARK（重标记配置）](configobject/UDG/20.15.2/SQOSREMARK.md)
+- [SQOSURPF（流行为安全URPF）](configobject/UDG/20.15.2/SQOSURPF.md)
+- [SQOSVPNGROUP（VPN组）](configobject/UDG/20.15.2/SQOSVPNGROUP.md)
+- [SQOSVPNGROUPMEM（VPN组成员）](configobject/UDG/20.15.2/SQOSVPNGROUPMEM.md)
+- [SRBFDPARA6（IPv6 BFD模板）](configobject/UDG/20.15.2/SRBFDPARA6.md)
+- [SRBFDTEMPLET（BFD模板）](configobject/UDG/20.15.2/SRBFDTEMPLET.md)
+- [SRROUTE（IPv4静态路由）](configobject/UDG/20.15.2/SRROUTE.md)
+- [SRROUTE6（IPv6静态路由）](configobject/UDG/20.15.2/SRROUTE6.md)
+- [SRVCERTSCENE（配置证书场景）](configobject/UDG/20.15.2/SRVCERTSCENE.md)
+- [SRVCHAIN（业务链）](configobject/UDG/20.15.2/SRVCHAIN.md)
+- [SRVTLSPLY（TLS认证策略）](configobject/UDG/20.15.2/SRVTLSPLY.md)
+- [SSUPROTCOLGROUP（基于协议的质差检测策略）](configobject/UDG/20.15.2/SSUPROTCOLGROUP.md)
+- [SYSLOGTASK（上报任务）](configobject/UDG/20.15.2/SYSLOGTASK.md)
+- [TACGROUP（指定的TAC组）](configobject/UDG/20.15.2/TACGROUP.md)
+- [TAIGROUP（指定的TAI组）](configobject/UDG/20.15.2/TAIGROUP.md)
+- [TCPMSS（Tcp Mss配置）](configobject/UDG/20.15.2/TCPMSS.md)
+- [TETHERDB（Tethering检测特征库）](configobject/UDG/20.15.2/TETHERDB.md)
+- [TETHERINGTTL（tethering的TTL值）](configobject/UDG/20.15.2/TETHERINGTTL.md)
+- [TIMERANGE（时间段）](configobject/UDG/20.15.2/TIMERANGE.md)
+- [TLSHEADEN（HTTPS头增强）](configobject/UDG/20.15.2/TLSHEADEN.md)
+- [TLSPARA（TLS参数）](configobject/UDG/20.15.2/TLSPARA.md)
+- [TLSPSK（预共享密钥）](configobject/UDG/20.15.2/TLSPSK.md)
+- [TLSPSKGRP（预共享密钥组信息）](configobject/UDG/20.15.2/TLSPSKGRP.md)
+- [TLSSCENE（TLS证书场景）](configobject/UDG/20.15.2/TLSSCENE.md)
+- [TOBYPASSCFG（TCP旁路配置）](configobject/UDG/20.15.2/TOBYPASSCFG.md)
+- [TOPOLICYCFG（TCP优化策略配置）](configobject/UDG/20.15.2/TOPOLICYCFG.md)
+- [TOPOLICYMATCH（TCP优化策略匹配规则）](configobject/UDG/20.15.2/TOPOLICYMATCH.md)
+- [TRUNKIF（Trunk工作模式配置）](configobject/UDG/20.15.2/TRUNKIF.md)
+- [TRUNKMEMBER（Trunk成员接口）](configobject/UDG/20.15.2/TRUNKMEMBER.md)
+- [TUNNELPOLICY（隧道策略）](configobject/UDG/20.15.2/TUNNELPOLICY.md)
+- [TUNNELSELECTOR（隧道选择器）](configobject/UDG/20.15.2/TUNNELSELECTOR.md)
+- [TUNNELSELECTORNODE（隧道选择器节点）](configobject/UDG/20.15.2/TUNNELSELECTORNODE.md)
+- [TWAMPCLIENT（TWAMP客户端）](configobject/UDG/20.15.2/TWAMPCLIENT.md)
+- [TWAMPLOGICINF（本地逻辑接口）](configobject/UDG/20.15.2/TWAMPLOGICINF.md)
+- [TWAMPRESPONDER（TWAMP响应端）](configobject/UDG/20.15.2/TWAMPRESPONDER.md)
+- [TWAMPSENDER（TWAMP发送端）](configobject/UDG/20.15.2/TWAMPSENDER.md)
+- [TWAMPVPNINST（VPN实例名称）](configobject/UDG/20.15.2/TWAMPVPNINST.md)
+- [UACINFO（UAC信息）](configobject/UDG/20.15.2/UACINFO.md)
+- [UDGNRMINTF（逻辑口）](configobject/UDG/20.15.2/UDGNRMINTF.md)
+- [UEINJECTLIST（UE灌包白名单）](configobject/UDG/20.15.2/UEINJECTLIST.md)
+- [UEINJECTPKT（UE灌包参数）](configobject/UDG/20.15.2/UEINJECTPKT.md)
+- [UEMUTACCWLIST（PA口UE互访白名单）](configobject/UDG/20.15.2/UEMUTACCWLIST.md)
+- [UPAPNDIAMAAAG（APN的Diameter AAA服务器组）](configobject/UDG/20.15.2/UPAPNDIAMAAAG.md)
+- [UPDBGPPEERGROUP（BGP对等体分组）](configobject/UDG/20.15.2/UPDBGPPEERGROUP.md)
+- [UPDIAMAAABNDG（Diameter AAA服务器组里的Diameter AAA服务器）](configobject/UDG/20.15.2/UPDIAMAAABNDG.md)
+- [UPDIAMAAAGRP（Diameter AAA服务器组）](configobject/UDG/20.15.2/UPDIAMAAAGRP.md)
+- [UPDIAMCONN（Diameter链路）](configobject/UDG/20.15.2/UPDIAMCONN.md)
+- [UPDIAMCONNGRP（Diameter链路组）](configobject/UDG/20.15.2/UPDIAMCONNGRP.md)
+- [UPDIAMDICTPATH（Diameter字典加载路径）](configobject/UDG/20.15.2/UPDIAMDICTPATH.md)
+- [UPDIAMETERAAA（Diameter AAA服务器）](configobject/UDG/20.15.2/UPDIAMETERAAA.md)
+- [UPDIAMLOCINFO（Diameter本端信息）](configobject/UDG/20.15.2/UPDIAMLOCINFO.md)
+- [UPDIAMPEERADDR（Diameter对端地址）](configobject/UDG/20.15.2/UPDIAMPEERADDR.md)
+- [UPDIAMRTNEXTHOP（Diameter路由下一跳）](configobject/UDG/20.15.2/UPDIAMRTNEXTHOP.md)
+- [UPDIAMRTREALM（Diameter路由域名信息）](configobject/UDG/20.15.2/UPDIAMRTREALM.md)
+- [UPDRA（DRA）](configobject/UDG/20.15.2/UPDRA.md)
+- [UPFPERFRANGE（UPF上报性能指标范围配置）](configobject/UDG/20.15.2/UPFPERFRANGE.md)
+- [UPGLBDIAMREALM（全局Diameter域）](configobject/UDG/20.15.2/UPGLBDIAMREALM.md)
+- [UPIMSIMSSEG（IMSI和MSISDN号段）](configobject/UDG/20.15.2/UPIMSIMSSEG.md)
+- [UPINSTID（NF实例ID）](configobject/UDG/20.15.2/UPINSTID.md)
+- [UPSCTPASSOC（SCTP耦联信息）](configobject/UDG/20.15.2/UPSCTPASSOC.md)
+- [UPSCTPENDPOINT（SCTP端点）](configobject/UDG/20.15.2/UPSCTPENDPOINT.md)
+- [UPSCTPTEMPLATE（SCTP模板）](configobject/UDG/20.15.2/UPSCTPTEMPLATE.md)
+- [URR](configobject/UDG/20.15.2/URR.md)
+- [URRGROUP（URR组）](configobject/UDG/20.15.2/URRGROUP.md)
+- [USER（用户操作权限）](configobject/UDG/20.15.2/USER.md)
+- [USERPROFILE（用户模板）](configobject/UDG/20.15.2/USERPROFILE.md)
+- [USERRUNINFO（网关对IMSI/MSISDN指定的用户的运行信息进行收集配置）](configobject/UDG/20.15.2/USERRUNINFO.md)
+- [USERSELATTR（用户选择属性）](configobject/UDG/20.15.2/USERSELATTR.md)
+- [USERSELPLCY（用户策略选择）](configobject/UDG/20.15.2/USERSELPLCY.md)
+- [USERSELRANGE（用户选择范围列表）](configobject/UDG/20.15.2/USERSELRANGE.md)
+- [USERSTATISTICS（用户信息统计功能）](configobject/UDG/20.15.2/USERSTATISTICS.md)
+- [USRATTRCOND（用户属性过滤条件）](configobject/UDG/20.15.2/USRATTRCOND.md)
+- [USRRELATEIDEN（用户关联识别）](configobject/UDG/20.15.2/USRRELATEIDEN.md)
+- [USRSECAUTH（二次授权用户）](configobject/UDG/20.15.2/USRSECAUTH.md)
+- [VIRTUALIP（浮动IP）](configobject/UDG/20.15.2/VIRTUALIP.md)
+- [VNFMINFO（VNFM对接信息）](configobject/UDG/20.15.2/VNFMINFO.md)
+- [VOLTELOOP（VoLTE话路环回功能）](configobject/UDG/20.15.2/VOLTELOOP.md)
+- [VPNINST（VPN实例）](configobject/UDG/20.15.2/VPNINST.md)
+- [VPNINSTAF（L3VPN实例地址族）](configobject/UDG/20.15.2/VPNINSTAF.md)
+- [VPNINSTAFIPSEC（L3VPN实例地址族）](configobject/UDG/20.15.2/VPNINSTAFIPSEC.md)
+- [VPNTARGET（VPN Target）](configobject/UDG/20.15.2/VPNTARGET.md)
+- [VPNVNIMAP（VPN VNI映射）](configobject/UDG/20.15.2/VPNVNIMAP.md)
+- [VTEP（VXLAN隧道端点）](configobject/UDG/20.15.2/VTEP.md)
+- [VXLANGRP（VXLAN组）](configobject/UDG/20.15.2/VXLANGRP.md)
+- [WELLKNOWNPORT（知名端口）](configobject/UDG/20.15.2/WELLKNOWNPORT.md)
+- [WHITEURLLIST（URL白名单）](configobject/UDG/20.15.2/WHITEURLLIST.md)
+- [WKRFLAGEASSOSW（Worker流表老化关联开关）](configobject/UDG/20.15.2/WKRFLAGEASSOSW.md)
+- [XHEADER（扩展头域）](configobject/UDG/20.15.2/XHEADER.md)
+- [ZONE（区域）](configobject/UDG/20.15.2/ZONE.md)
 
 ## global_setting
 
-- [[configobject/UDG/20.15.2/5GGUMINFO]] · 5GGUMINFO（灰度升级所处于的阶段） — `5GGUMINFO.md`
-- [[configobject/UDG/20.15.2/ABNTRADTTHR]] · ABNTRADTTHR（异常流量检测报文阈值） — `ABNTRADTTHR.md`
-- [[configobject/UDG/20.15.2/ACSELECTSERVICE]] · ACSELECTSERVICE（仲裁服务状态） — `ACSELECTSERVICE.md`
-- [[configobject/UDG/20.15.2/ACSUPDSTATUS]] · ACSUPDSTATUS（升级状态） — `ACSUPDSTATUS.md`
-- [[configobject/UDG/20.15.2/ADDRESSATTR]] · ADDRESSATTR（AddressAttr配置） — `ADDRESSATTR.md`
-- [[configobject/UDG/20.15.2/AES128]] · AES128（aes128加密算法的IV值） — `AES128.md`
-- [[configobject/UDG/20.15.2/AES256]] · AES256（Aes256加密算法的IV值） — `AES256.md`
-- [[configobject/UDG/20.15.2/AFMATCHCFG]] · AFMATCHCFG（软参欺诈场景开关状态） — `AFMATCHCFG.md`
-- [[configobject/UDG/20.15.2/AFUSRDETECT]] · AFUSRDETECT（计费欺诈用户检测功能） — `AFUSRDETECT.md`
-- [[configobject/UDG/20.15.2/AIFUNCPARA]] · AIFUNCPARA（SA Intelligence功能参数） — `AIFUNCPARA.md`
-- [[configobject/UDG/20.15.2/ALARMSWITCH]] · ALARMSWITCH（安全事件告警开关） — `ALARMSWITCH.md`
-- [[configobject/UDG/20.15.2/ALMFILTER]] · ALMFILTER（告警闪断振荡配置） — `ALMFILTER.md`
-- [[configobject/UDG/20.15.2/ALMINFO]] · ALMINFO（告警配置信息） — `ALMINFO.md`
-- [[configobject/UDG/20.15.2/ALMNRMODE]] · ALMNRMODE（网管北向告警上报模式） — `ALMNRMODE.md`
-- [[configobject/UDG/20.15.2/ANTIFRAUD]] · ANTIFRAUD（防欺诈配置） — `ANTIFRAUD.md`
-- [[configobject/UDG/20.15.2/ANTISPOOFINGTHD]] · ANTISPOOFINGTHD（攻击用户去活报文的阈值） — `ANTISPOOFINGTHD.md`
-- [[configobject/UDG/20.15.2/APNACCESSWAL]] · APNACCESSWAL（Apn接入速率配置） — `APNACCESSWAL.md`
-- [[configobject/UDG/20.15.2/APNADDRESSATTR]] · APNADDRESSATTR（ApnAddressAttr配置） — `APNADDRESSATTR.md`
-- [[configobject/UDG/20.15.2/APNAFFUNC]] · APNAFFUNC（APN防欺诈功能） — `APNAFFUNC.md`
-- [[configobject/UDG/20.15.2/APNAPPPARA]] · APNAPPPARA（基于APN的应用参数） — `APNAPPPARA.md`
-- [[configobject/UDG/20.15.2/APNCFFUNC]] · APNCFFUNC（APN内容过滤开关） — `APNCFFUNC.md`
-- [[configobject/UDG/20.15.2/APNDDNFLOWCTRL]] · APNDDNFLOWCTRL（APN的下行数据DDN寻呼流控方式） — `APNDDNFLOWCTRL.md`
-- [[configobject/UDG/20.15.2/APNDLBUFTIME]] · APNDLBUFTIME（APN的下行数据缓存时长配置） — `APNDLBUFTIME.md`
-- [[configobject/UDG/20.15.2/APNDLLTBUFFER]] · APNDLLTBUFFER（基于APN的下行数据长时间缓存配置） — `APNDLLTBUFFER.md`
-- [[configobject/UDG/20.15.2/APNDROPFINALPKT]] · APNDROPFINALPKT（指定APN配额耗尽末包动作） — `APNDROPFINALPKT.md`
-- [[configobject/UDG/20.15.2/APNFLOWAGETIME]] · APNFLOWAGETIME（APN五元组老化时间） — `APNFLOWAGETIME.md`
-- [[configobject/UDG/20.15.2/APNHTTP2DGRD]] · APNHTTP2DGRD（APN HTTP2.0协议回落开关） — `APNHTTP2DGRD.md`
-- [[configobject/UDG/20.15.2/APNIMSATTR]] · APNIMSATTR（ApnImsAttr配置） — `APNIMSATTR.md`
-- [[configobject/UDG/20.15.2/APNIPALLOCRULE]] · APNIPALLOCRULE（基于APN配置地址分配规则） — `APNIPALLOCRULE.md`
-- [[configobject/UDG/20.15.2/APNIPV6INFID]] · APNIPV6INFID（APN IPv6接口ID配置） — `APNIPV6INFID.md`
-- [[configobject/UDG/20.15.2/APNL2TPATTR]] · APNL2TPATTR（APN L2TP配置） — `APNL2TPATTR.md`
-- [[configobject/UDG/20.15.2/APNNONIPFUNC]] · APNNONIPFUNC（APN Non-IP功能配置） — `APNNONIPFUNC.md`
-- [[configobject/UDG/20.15.2/APNNSHHEADENFUNC]] · APNNSHHEADENFUNC（NSH头增强功能开关） — `APNNSHHEADENFUNC.md`
-- [[configobject/UDG/20.15.2/APNOSLELBWMSW]] · APNOSLELBWMSW（APN操作系统级带宽管理开关） — `APNOSLELBWMSW.md`
-- [[configobject/UDG/20.15.2/APNPPPACCESS]] · APNPPPACCESS（APN PPP配置） — `APNPPPACCESS.md`
-- [[configobject/UDG/20.15.2/APNQOSATTR]] · APNQOSATTR（ApnQosAttr配置） — `APNQOSATTR.md`
-- [[configobject/UDG/20.15.2/APNREDUNDUPSW]] · APNREDUNDUPSW（指定APN静态地址路由冗余上行报文隧道转发功能开关） — `APNREDUNDUPSW.md`
-- [[configobject/UDG/20.15.2/APNREPORTATTR]] · APNREPORTATTR（ApnReportAttr配置） — `APNREPORTATTR.md`
-- [[configobject/UDG/20.15.2/APNSAPARA]] · APNSAPARA（基于APN的业务感知参数） — `APNSAPARA.md`
-- [[configobject/UDG/20.15.2/APNSGLPASS]] · APNSGLPASS（APN单通检测开关） — `APNSGLPASS.md`
-- [[configobject/UDG/20.15.2/APNSOFTPARA]] · APNSOFTPARA（APN软参记录） — `APNSOFTPARA.md`
-- [[configobject/UDG/20.15.2/APNSRVSTATFUNC]] · APNSRVSTATFUNC（APN业务统计开关） — `APNSRVSTATFUNC.md`
-- [[configobject/UDG/20.15.2/APNTETHERDETSW]] · APNTETHERDETSW（APN Tethering终端数量检测开关） — `APNTETHERDETSW.md`
-- [[configobject/UDG/20.15.2/APNTETHERFUNC]] · APNTETHERFUNC（APN Tethering检测开关） — `APNTETHERFUNC.md`
-- [[configobject/UDG/20.15.2/APNTNLSTATUSRPT]] · APNTNLSTATUSRPT（隧道状态上报开关） — `APNTNLSTATUSRPT.md`
-- [[configobject/UDG/20.15.2/APNTRAFDFUNC]] · APNTRAFDFUNC（APN流量转发配置） — `APNTRAFDFUNC.md`
-- [[configobject/UDG/20.15.2/APNTRFCDFDSWITCH]] · APNTRFCDFDSWITCH（APN大流量攻击防护配置） — `APNTRFCDFDSWITCH.md`
-- [[configobject/UDG/20.15.2/APNUEMUTACC]] · APNUEMUTACC（APN下用户互访控制配置） — `APNUEMUTACC.md`
-- [[configobject/UDG/20.15.2/APNVOLTEMONFUNC]] · APNVOLTEMONFUNC（VoLTE语音质量监控功能开关） — `APNVOLTEMONFUNC.md`
-- [[configobject/UDG/20.15.2/APNVONRMONFUNC]] · APNVONRMONFUNC（VoNR语音质量监控功能开关） — `APNVONRMONFUNC.md`
-- [[configobject/UDG/20.15.2/APPPOLICYPARA]] · APPPOLICYPARA（应用策略参数） — `APPPOLICYPARA.md`
-- [[configobject/UDG/20.15.2/APPTRAFFICPARA]] · APPTRAFFICPARA（应用流量参数） — `APPTRAFFICPARA.md`
-- [[configobject/UDG/20.15.2/ARPANTISPOOFING]] · ARPANTISPOOFING（ARP防欺骗信息） — `ARPANTISPOOFING.md`
-- [[configobject/UDG/20.15.2/ARPIFLIMIT]] · ARPIFLIMIT（ARP表项限制） — `ARPIFLIMIT.md`
-- [[configobject/UDG/20.15.2/ARPINTERFACE]] · ARPINTERFACE（接口下ARP配置信息） — `ARPINTERFACE.md`
-- [[configobject/UDG/20.15.2/ARPSPEEDLIMIT]] · ARPSPEEDLIMIT（速率限制） — `ARPSPEEDLIMIT.md`
-- [[configobject/UDG/20.15.2/ARPSYS]] · ARPSYS（ARP系统信息） — `ARPSYS.md`
-- [[configobject/UDG/20.15.2/ATTACKDEFEND]] · ATTACKDEFEND（攻击防范参数） — `ATTACKDEFEND.md`
-- [[configobject/UDG/20.15.2/AUTHSOAP]] · AUTHSOAP（网管登录认证策略） — `AUTHSOAP.md`
-- [[configobject/UDG/20.15.2/AUTOCONFIG]] · AUTOCONFIG（自动配置开关） — `AUTOCONFIG.md`
-- [[configobject/UDG/20.15.2/AUTOLOGPOLICY]] · AUTOLOGPOLICY（日志自动备份策略） — `AUTOLOGPOLICY.md`
-- [[configobject/UDG/20.15.2/BANDWIDTHMNG]] · BANDWIDTHMNG（带宽管理参数） — `BANDWIDTHMNG.md`
-- [[configobject/UDG/20.15.2/BASE64]] · BASE64（Base64编码规则） — `BASE64.md`
-- [[configobject/UDG/20.15.2/BASESOFTPARA]] · BASESOFTPARA（基础软件参数配置） — `BASESOFTPARA.md`
-- [[configobject/UDG/20.15.2/BASESUBHEALTH]] · BASESUBHEALTH（base链路亚健康信息） — `BASESUBHEALTH.md`
-- [[configobject/UDG/20.15.2/BATCHPARA]] · BATCHPARA（批量调度参数） — `BATCHPARA.md`
-- [[configobject/UDG/20.15.2/BFD]] · BFD（BFD全局配置信息） — `BFD.md`
-- [[configobject/UDG/20.15.2/BGP]] · BGP — `BGP.md`
-- [[configobject/UDG/20.15.2/BKMPOLICY]] · BKMPOLICY（自动备份策略） — `BKMPOLICY.md`
-- [[configobject/UDG/20.15.2/BMBYPASSSTATUS]] · BMBYPASSSTATUS（裸机BYPASS状态） — `BMBYPASSSTATUS.md`
-- [[configobject/UDG/20.15.2/BMBYPASSSWITCH]] · BMBYPASSSWITCH（裸机节点自动进入BYPASS开关） — `BMBYPASSSWITCH.md`
-- [[configobject/UDG/20.15.2/BTDRBASICCFG]] · BTDRBASICCFG（BTDR单据上报参数） — `BTDRBASICCFG.md`
-- [[configobject/UDG/20.15.2/BYPASSSTATUS]] · BYPASSSTATUS（BYPASS状态） — `BYPASSSTATUS.md`
-- [[configobject/UDG/20.15.2/BYPASSSWITCH]] · BYPASSSWITCH（节点自动进入BYPASS开关） — `BYPASSSWITCH.md`
-- [[configobject/UDG/20.15.2/CCOPOLICY]] · CCOPOLICY（CCO策略） — `CCOPOLICY.md`
-- [[configobject/UDG/20.15.2/CERTESCAPESWITCH]] · CERTESCAPESWITCH（证书过期逃生开关状态） — `CERTESCAPESWITCH.md`
-- [[configobject/UDG/20.15.2/CERTUPDATPARA]] · CERTUPDATPARA（证书更新流程参数） — `CERTUPDATPARA.md`
-- [[configobject/UDG/20.15.2/CFCACHEPARA]] · CFCACHEPARA（内容过滤缓存参数） — `CFCACHEPARA.md`
-- [[configobject/UDG/20.15.2/CFGDEBUG]] · CFGDEBUG（CFG诊断日志） — `CFGDEBUG.md`
-- [[configobject/UDG/20.15.2/CFPROTOCOLLST]] · CFPROTOCOLLST（开启内容过滤的协议列表） — `CFPROTOCOLLST.md`
-- [[configobject/UDG/20.15.2/CFSHEALCTRL]] · CFSHEALCTRL（在复杂故障场景下自愈功能控制参数） — `CFSHEALCTRL.md`
-- [[configobject/UDG/20.15.2/CFSRVMODE]] · CFSRVMODE（URL过滤功能业务模式） — `CFSRVMODE.md`
-- [[configobject/UDG/20.15.2/CHKPKGINTERVAL]] · CHKPKGINTERVAL（软件包检查间隔） — `CHKPKGINTERVAL.md`
-- [[configobject/UDG/20.15.2/CHRFILESAVETIME]] · CHRFILESAVETIME（文件存留期设置） — `CHRFILESAVETIME.md`
-- [[configobject/UDG/20.15.2/CHRFILESTGMODE]] · CHRFILESTGMODE（上传至文件服务器的CHR文件转储方式） — `CHRFILESTGMODE.md`
-- [[configobject/UDG/20.15.2/CHRRECORDANONY]] · CHRRECORDANONY（CHR单据的匿名化配置。） — `CHRRECORDANONY.md`
-- [[configobject/UDG/20.15.2/CHRRECORDSW]] · CHRRECORDSW（CHR本地存盘开关） — `CHRRECORDSW.md`
-- [[configobject/UDG/20.15.2/CLTVFYSWITCH]] · CLTVFYSWITCH（双向认证开关） — `CLTVFYSWITCH.md`
-- [[configobject/UDG/20.15.2/CMFFC]] · CMFFC（CMF流控参数） — `CMFFC.md`
-- [[configobject/UDG/20.15.2/CMFFCSWITCH]] · CMFFCSWITCH（CMF流控开关配置数据） — `CMFFCSWITCH.md`
-- [[configobject/UDG/20.15.2/CNTCPUTHD]] · CNTCPUTHD（容器CPU阈值） — `CNTCPUTHD.md`
-- [[configobject/UDG/20.15.2/CNTMEMTHD]] · CNTMEMTHD（容器内存阈值） — `CNTMEMTHD.md`
-- [[configobject/UDG/20.15.2/CNTRESTHD]] · CNTRESTHD（容器资源阈值） — `CNTRESTHD.md`
-- [[configobject/UDG/20.15.2/CNTTMPDIR]] · CNTTMPDIR（容器引擎临时目录） — `CNTTMPDIR.md`
-- [[configobject/UDG/20.15.2/COLOCATEDLBO]] · COLOCATEDLBO（本地分流共部署参数） — `COLOCATEDLBO.md`
-- [[configobject/UDG/20.15.2/COMBASEHEALTH]] · COMBASEHEALTH（Base平面通信质量） — `COMBASEHEALTH.md`
-- [[configobject/UDG/20.15.2/COMBRULEBKLST]] · COMBRULEBKLST（组合规则黑名单） — `COMBRULEBKLST.md`
-- [[configobject/UDG/20.15.2/COSTOS]] · COSTOS（COS TOS映射策略） — `COSTOS.md`
-- [[configobject/UDG/20.15.2/CPACCESSLISTFUNC]] · CPACCESSLISTFUNC（CP白名单开关） — `CPACCESSLISTFUNC.md`
-- [[configobject/UDG/20.15.2/CPTEIDUALLOC]] · CPTEIDUALLOC（CP分配TEID-U开关） — `CPTEIDUALLOC.md`
-- [[configobject/UDG/20.15.2/CPUECOPOLICY]] · CPUECOPOLICY（全局的CPU调频和休眠策略） — `CPUECOPOLICY.md`
-- [[configobject/UDG/20.15.2/CSLOGFC]] · CSLOGFC（日志流控开关） — `CSLOGFC.md`
-- [[configobject/UDG/20.15.2/CSLOGLEVEL]] · CSLOGLEVEL（更新日志输出级别） — `CSLOGLEVEL.md`
-- [[configobject/UDG/20.15.2/CUINCONSPOLICY]] · CUINCONSPOLICY（CP和UP关键配置不一致的处理策略） — `CUINCONSPOLICY.md`
-- [[configobject/UDG/20.15.2/CUSTATECHK]] · CUSTATECHK（SMF和UPF时间一致性检测） — `CUSTATECHK.md`
-- [[configobject/UDG/20.15.2/DATACHKPOLICY]] · DATACHKPOLICY（APP配置数据检查功能） — `DATACHKPOLICY.md`
-- [[configobject/UDG/20.15.2/DATAPLANEGIINFMODE]] · DATAPLANEGIINFMODE（用户面下行模式配置） — `DATAPLANEGIINFMODE.md`
-- [[configobject/UDG/20.15.2/DATAPLANEINFMODE]] · DATAPLANEINFMODE（数据面接口模式） — `DATAPLANEINFMODE.md`
-- [[configobject/UDG/20.15.2/DBDRAGING]] · DBDRAGING（CSDB容灾数据老化开关） — `DBDRAGING.md`
-- [[configobject/UDG/20.15.2/DBSOFTPARA]] · DBSOFTPARA（CSDB软件调试参数表） — `DBSOFTPARA.md`
-- [[configobject/UDG/20.15.2/DBSTARTPARAS]] · DBSTARTPARAS（DB启动参数值） — `DBSTARTPARAS.md`
-- [[configobject/UDG/20.15.2/DBTHRESHOLD]] · DBTHRESHOLD（CSDB配置过载门限） — `DBTHRESHOLD.md`
-- [[configobject/UDG/20.15.2/DBUPGSTAGE]] · DBUPGSTAGE（CSDB灰度升级阶段） — `DBUPGSTAGE.md`
-- [[configobject/UDG/20.15.2/DCSLIVEPARAS]] · DCSLIVEPARAS（DCS直播参数） — `DCSLIVEPARAS.md`
-- [[configobject/UDG/20.15.2/DCSSDPARA]] · DCSSDPARA（DCS直通存储慢盘检测参数） — `DCSSDPARA.md`
-- [[configobject/UDG/20.15.2/DCSVODPARAS]] · DCSVODPARAS（DCS点播参数） — `DCSVODPARAS.md`
-- [[configobject/UDG/20.15.2/DDNCTRL]] · DDNCTRL（DDN控制策略） — `DDNCTRL.md`
-- [[configobject/UDG/20.15.2/DDOS]] · DDOS（DDoS防攻击流控阈值） — `DDOS.md`
-- [[configobject/UDG/20.15.2/DEACTIVERATE]] · DEACTIVERATE（去活用户会话的速率） — `DEACTIVERATE.md`
-- [[configobject/UDG/20.15.2/DEDICATEDLBO]] · DEDICATEDLBO（系统是否开启专网UPF动态分流功能） — `DEDICATEDLBO.md`
-- [[configobject/UDG/20.15.2/DFSRATTR]] · DFSRATTR（双发选收属性配置） — `DFSRATTR.md`
-- [[configobject/UDG/20.15.2/DHCP6CLIENTDUID]] · DHCP6CLIENTDUID（DHCPv6客户端DUID生成方式） — `DHCP6CLIENTDUID.md`
-- [[configobject/UDG/20.15.2/DISKCHKPARA]] · DISKCHKPARA（存储检测参数） — `DISKCHKPARA.md`
-- [[configobject/UDG/20.15.2/DISKPARTITION]] · DISKPARTITION（资源磁盘分区过载配置） — `DISKPARTITION.md`
-- [[configobject/UDG/20.15.2/DNSINFO]] · DNSINFO（DNS信息） — `DNSINFO.md`
-- [[configobject/UDG/20.15.2/DNSIPRESOURCE]] · DNSIPRESOURCE（DNS IP地址资源列表） — `DNSIPRESOURCE.md`
-- [[configobject/UDG/20.15.2/DNSLITEPARA]] · DNSLITEPARA（轻量DNS参数） — `DNSLITEPARA.md`
-- [[configobject/UDG/20.15.2/DOMAINSEPARATOR]] · DOMAINSEPARATOR（前后缀分隔符） — `DOMAINSEPARATOR.md`
-- [[configobject/UDG/20.15.2/DRAUTOACTIVE]] · DRAUTOACTIVE（冷备容灾自动升主功能参数） — `DRAUTOACTIVE.md`
-- [[configobject/UDG/20.15.2/DRAUTOSWOVER]] · DRAUTOSWOVER（热备模式下是否开启自动倒换功能） — `DRAUTOSWOVER.md`
-- [[configobject/UDG/20.15.2/DRCHANNELPARA]] · DRCHANNELPARA（容灾通道参数） — `DRCHANNELPARA.md`
-- [[configobject/UDG/20.15.2/DRCOUPLINGRESET]] · DRCOUPLINGRESET（负荷分担容灾功能开启信息） — `DRCOUPLINGRESET.md`
-- [[configobject/UDG/20.15.2/DRGROUPABLEMENT]] · DRGROUPABLEMENT（是否使能热备容灾组） — `DRGROUPABLEMENT.md`
-- [[configobject/UDG/20.15.2/DRHBNEGOTIMER]] · DRHBNEGOTIMER（容灾定时器） — `DRHBNEGOTIMER.md`
-- [[configobject/UDG/20.15.2/DRKEYNF]] · DRKEYNF（监控的关键部件信息） — `DRKEYNF.md`
-- [[configobject/UDG/20.15.2/DROPFINALPKT]] · DROPFINALPKT（配额耗尽末包动作） — `DROPFINALPKT.md`
-- [[configobject/UDG/20.15.2/DRRESETLMTCOUNT]] · DRRESETLMTCOUNT（复位限制的次数） — `DRRESETLMTCOUNT.md`
-- [[configobject/UDG/20.15.2/DRSTBYRSTCTRL]] · DRSTBYRSTCTRL（运行备整系统复位开关） — `DRSTBYRSTCTRL.md`
-- [[configobject/UDG/20.15.2/DRTLSMODE]] · DRTLSMODE（容灾控制通道TLS模式） — `DRTLSMODE.md`
-- [[configobject/UDG/20.15.2/ECOPOLICY]] · ECOPOLICY（全局的CPU调频和休眠策略） — `ECOPOLICY.md`
-- [[configobject/UDG/20.15.2/ELECTIONABILITY]] · ELECTIONABILITY（业务进程选举能力） — `ELECTIONABILITY.md`
-- [[configobject/UDG/20.15.2/ELECTSERVICE]] · ELECTSERVICE（仲裁服务状态） — `ELECTSERVICE.md`
-- [[configobject/UDG/20.15.2/EVTHEALCTRL]] · EVTHEALCTRL（事件全局开关） — `EVTHEALCTRL.md`
-- [[configobject/UDG/20.15.2/EVTPARA]] · EVTPARA（策略参数值） — `EVTPARA.md`
-- [[configobject/UDG/20.15.2/EVTSW]] · EVTSW（事件开关状态） — `EVTSW.md`
-- [[configobject/UDG/20.15.2/EXPBASICFUNC]] · EXPBASICFUNC（体验业务基本功能） — `EXPBASICFUNC.md`
-- [[configobject/UDG/20.15.2/EXTOTTMATCHSW]] · EXTOTTMATCHSW（OTT业务规则匹配功能是否使能） — `EXTOTTMATCHSW.md`
-- [[configobject/UDG/20.15.2/FABDIAGPARA]] · FABDIAGPARA（Pod Fabric平面亚健康诊断参数） — `FABDIAGPARA.md`
-- [[configobject/UDG/20.15.2/FABRICINALARMCFG]] · FABRICINALARMCFG（PAE告警配置） — `FABRICINALARMCFG.md`
-- [[configobject/UDG/20.15.2/FABRICINSWITCH]] · FABRICINSWITCH（Fabric-In功能开关） — `FABRICINSWITCH.md`
-- [[configobject/UDG/20.15.2/FABRICMTU]] · FABRICMTU（PAE内联口MTU值） — `FABRICMTU.md`
-- [[configobject/UDG/20.15.2/FABRICSUBHEALTHY]] · FABRICSUBHEALTHY（FABRIC内联口亚健康信息） — `FABRICSUBHEALTHY.md`
-- [[configobject/UDG/20.15.2/FASTRECOVERY]] · FASTRECOVERY（全局业务快速恢复配置） — `FASTRECOVERY.md`
-- [[configobject/UDG/20.15.2/FAULTCHECKBYFABRIC]] · FAULTCHECKBYFABRIC（故障快速检测配置信息） — `FAULTCHECKBYFABRIC.md`
-- [[configobject/UDG/20.15.2/FAULTDETECT]] · FAULTDETECT（故障策略信息） — `FAULTDETECT.md`
-- [[configobject/UDG/20.15.2/FCSWITCH]] · FCSWITCH（流控开关） — `FCSWITCH.md`
-- [[configobject/UDG/20.15.2/FEHBRESET]] · FEHBRESET（FE心跳故障复位功能开关） — `FEHBRESET.md`
-- [[configobject/UDG/20.15.2/FEHEALCTRL]] · FEHEALCTRL（FE自愈功能配置） — `FEHEALCTRL.md`
-- [[configobject/UDG/20.15.2/FEHEARTBEAT]] · FEHEARTBEAT（FE心跳功能开关） — `FEHEARTBEAT.md`
-- [[configobject/UDG/20.15.2/FEILOGSWITCH]] · FEILOGSWITCH（调测日志开关） — `FEILOGSWITCH.md`
-- [[configobject/UDG/20.15.2/FEIPSTSEND]] · FEIPSTSEND（PST广播开关状态） — `FEIPSTSEND.md`
-- [[configobject/UDG/20.15.2/FETMFLOW]] · FETMFLOW（FETM流控配置） — `FETMFLOW.md`
-- [[configobject/UDG/20.15.2/FILEDELPOLICY]] · FILEDELPOLICY（文件删除策略） — `FILEDELPOLICY.md`
-- [[configobject/UDG/20.15.2/FLOWAGETIME]] · FLOWAGETIME（五元组老化时间） — `FLOWAGETIME.md`
-- [[configobject/UDG/20.15.2/FLOWLETPARA]] · FLOWLETPARA（大流优化参数） — `FLOWLETPARA.md`
-- [[configobject/UDG/20.15.2/FOOLPROOFSWITCH]] · FOOLPROOFSWITCH（防呆开关状态） — `FOOLPROOFSWITCH.md`
-- [[configobject/UDG/20.15.2/FPIFUNC]] · FPIFUNC（FPI差异化控制功能） — `FPIFUNC.md`
-- [[configobject/UDG/20.15.2/FUIENRICHMENT]] · FUIENRICHMENT（FUI增强参数） — `FUIENRICHMENT.md`
-- [[configobject/UDG/20.15.2/FUIFLOWCTLACT]] · FUIFLOWCTLACT（欠费重定向流控动作） — `FUIFLOWCTLACT.md`
-- [[configobject/UDG/20.15.2/FUIFLOWCTLPARA]] · FUIFLOWCTLPARA（欠费重定向流控参数） — `FUIFLOWCTLPARA.md`
-- [[configobject/UDG/20.15.2/FWDFCPARA]] · FWDFCPARA（转发面流控参数） — `FWDFCPARA.md`
-- [[configobject/UDG/20.15.2/FWDPARA]] · FWDPARA（转发参数） — `FWDPARA.md`
-- [[configobject/UDG/20.15.2/FWSOFTPARA]] · FWSOFTPARA（ServiceFabric软参） — `FWSOFTPARA.md`
-- [[configobject/UDG/20.15.2/FWSOFTPARABITS]] · FWSOFTPARABITS（ServiceFabric软参比特位） — `FWSOFTPARABITS.md`
-- [[configobject/UDG/20.15.2/GCSMOOTHSWITCH]] · GCSMOOTHSWITCH（GC平滑开关） — `GCSMOOTHSWITCH.md`
-- [[configobject/UDG/20.15.2/GIREDIRECTFUNC]] · GIREDIRECTFUNC（全局Gi重定向信息） — `GIREDIRECTFUNC.md`
-- [[configobject/UDG/20.15.2/GLBAPPPARA]] · GLBAPPPARA（全局app参数） — `GLBAPPPARA.md`
-- [[configobject/UDG/20.15.2/GLBCFFUNC]] · GLBCFFUNC（内容过滤全局开关） — `GLBCFFUNC.md`
-- [[configobject/UDG/20.15.2/GLBDLBUFTIME]] · GLBDLBUFTIME（全局下行数据缓存时长配置） — `GLBDLBUFTIME.md`
-- [[configobject/UDG/20.15.2/GLBDLLTBUFFER]] · GLBDLLTBUFFER（全局下行数据长时间缓存配置） — `GLBDLLTBUFFER.md`
-- [[configobject/UDG/20.15.2/GLBIPV6INFID]] · GLBIPV6INFID（整机IPv6接口ID配置） — `GLBIPV6INFID.md`
-- [[configobject/UDG/20.15.2/GLBNSHHDNPLY]] · GLBNSHHDNPLY（NSH头增强全局策略） — `GLBNSHHDNPLY.md`
-- [[configobject/UDG/20.15.2/GLBOSLELBWMSW]] · GLBOSLELBWMSW（整机操作系统级带宽管理开关） — `GLBOSLELBWMSW.md`
-- [[configobject/UDG/20.15.2/GLBRLYOTCPCTRL]] · GLBRLYOTCPCTRL（媒体中继全局回源TCP控制） — `GLBRLYOTCPCTRL.md`
-- [[configobject/UDG/20.15.2/GLBRLYSHTTPCTL]] · GLBRLYSHTTPCTL（媒体中继全局业务HTTP控制） — `GLBRLYSHTTPCTL.md`
-- [[configobject/UDG/20.15.2/GLBRLYSPARACTL]] · GLBRLYSPARACTL（媒体中继全局业务参数控制） — `GLBRLYSPARACTL.md`
-- [[configobject/UDG/20.15.2/GLBRLYSTCPCTRL]] · GLBRLYSTCPCTRL（媒体中继全局业务TCP控制） — `GLBRLYSTCPCTRL.md`
-- [[configobject/UDG/20.15.2/GLBSMFATTR]] · GLBSMFATTR（全局SMF属性） — `GLBSMFATTR.md`
-- [[configobject/UDG/20.15.2/GLOBALFABRICOAM]] · GLOBALFABRICOAM（OAM全局配置） — `GLOBALFABRICOAM.md`
-- [[configobject/UDG/20.15.2/GLOBALIMS]] · GLOBALIMS（全局IMS配置） — `GLOBALIMS.md`
-- [[configobject/UDG/20.15.2/GLOBALL2TP]] · GLOBALL2TP（L2TP配置） — `GLOBALL2TP.md`
-- [[configobject/UDG/20.15.2/GLOBUEMUTACC]] · GLOBUEMUTACC（全局用户互访控制配置） — `GLOBUEMUTACC.md`
-- [[configobject/UDG/20.15.2/GTSM]] · GTSM（GTSM全局配置属性） — `GTSM.md`
-- [[configobject/UDG/20.15.2/GYONESHOT]] · GYONESHOT（Gy一次重定向参数） — `GYONESHOT.md`
-- [[configobject/UDG/20.15.2/HAFEDETECT]] · HAFEDETECT（HAFETCD网络亚健康探测参数） — `HAFEDETECT.md`
-- [[configobject/UDG/20.15.2/HAFFUNC]] · HAFFUNC（HAF服务内部功能的参数） — `HAFFUNC.md`
-- [[configobject/UDG/20.15.2/HBUSRCTRL]] · HBUSRCTRL（高带宽用户功能控制参数） — `HBUSRCTRL.md`
-- [[configobject/UDG/20.15.2/HEADENGLBPARA]] · HEADENGLBPARA（头增强全局参数） — `HEADENGLBPARA.md`
-- [[configobject/UDG/20.15.2/HEADENRATTYPE]] · HEADENRATTYPE（头增强RAT类型定义） — `HEADENRATTYPE.md`
-- [[configobject/UDG/20.15.2/HIGHRISKPERIOD]] · HIGHRISKPERIOD（高危时间段提示状态） — `HIGHRISKPERIOD.md`
-- [[configobject/UDG/20.15.2/HOSTDOMAINPARA]] · HOSTDOMAINPARA（主机域参数） — `HOSTDOMAINPARA.md`
-- [[configobject/UDG/20.15.2/HOSTGLBCONFIG]] · HOSTGLBCONFIG（主机收发全局属性） — `HOSTGLBCONFIG.md`
-- [[configobject/UDG/20.15.2/HOSTSTCGLB]] · HOSTSTCGLB（全局协议报文统计配置） — `HOSTSTCGLB.md`
-- [[configobject/UDG/20.15.2/HTTPCCACONF]] · HTTPCCACONF（HTTP CCA属性） — `HTTPCCACONF.md`
-- [[configobject/UDG/20.15.2/HTTPCONF]] · HTTPCONF（HTTP属性） — `HTTPCONF.md`
-- [[configobject/UDG/20.15.2/HTTPESCAPE]] · HTTPESCAPE（HTTP对于URL转义的参数） — `HTTPESCAPE.md`
-- [[configobject/UDG/20.15.2/HTTPFCCONF]] · HTTPFCCONF（HTTP流控属性） — `HTTPFCCONF.md`
-- [[configobject/UDG/20.15.2/HTTPFIXEDFCMSG]] · HTTPFIXEDFCMSG（HTTP指定消息类型固定速率流控信息） — `HTTPFIXEDFCMSG.md`
-- [[configobject/UDG/20.15.2/HTTPFQDNSW]] · HTTPFQDNSW（HTTP是否支持FQDN） — `HTTPFQDNSW.md`
-- [[configobject/UDG/20.15.2/HTTPGLBFIXEDBWFC]] · HTTPGLBFIXEDBWFC（HTTP全局固定带宽流控） — `HTTPGLBFIXEDBWFC.md`
-- [[configobject/UDG/20.15.2/HTTPHTRCFG]] · HTTPHTRCFG（HTR流控全局配置） — `HTTPHTRCFG.md`
-- [[configobject/UDG/20.15.2/HTTPINFORPT]] · HTTPINFORPT（HTTP连接信息上报参数） — `HTTPINFORPT.md`
-- [[configobject/UDG/20.15.2/HTTPMEMFC]] · HTTPMEMFC（HTTP内存流控） — `HTTPMEMFC.md`
-- [[configobject/UDG/20.15.2/HTTPMSGLOGPARA]] · HTTPMSGLOGPARA（HTTP消息日志参数） — `HTTPMSGLOGPARA.md`
-- [[configobject/UDG/20.15.2/HTTPSRVLBSW]] · HTTPSRVLBSW（HTTP服务端负载重均衡功能） — `HTTPSRVLBSW.md`
-- [[configobject/UDG/20.15.2/IFCMCFG]] · IFCMCFG（IFCM配置信息） — `IFCMCFG.md`
-- [[configobject/UDG/20.15.2/IFFLOWALMTHD]] · IFFLOWALMTHD（接口带宽利用率告警阈值） — `IFFLOWALMTHD.md`
-- [[configobject/UDG/20.15.2/IFGLOBALCONFIG]] · IFGLOBALCONFIG（接口全局配置） — `IFGLOBALCONFIG.md`
-- [[configobject/UDG/20.15.2/IFIPV6ENABLE]] · IFIPV6ENABLE（接口IPv6使能） — `IFIPV6ENABLE.md`
-- [[configobject/UDG/20.15.2/IFIPV6ENABLEIPSEC]] · IFIPV6ENABLEIPSEC（接口IPv6使能） — `IFIPV6ENABLEIPSEC.md`
-- [[configobject/UDG/20.15.2/IFMTUFRAGMODE]] · IFMTUFRAGMODE（分片方式） — `IFMTUFRAGMODE.md`
-- [[configobject/UDG/20.15.2/IGMPSNOOPINGATTR]] · IGMPSNOOPINGATTR（IGMP Snooping属性配置） — `IGMPSNOOPINGATTR.md`
-- [[configobject/UDG/20.15.2/IKEGLOBALCONFIG]] · IKEGLOBALCONFIG（IKE全局配置） — `IKEGLOBALCONFIG.md`
-- [[configobject/UDG/20.15.2/IMSBYPASS]] · IMSBYPASS（IMS Bypass功能的相关参数） — `IMSBYPASS.md`
-- [[configobject/UDG/20.15.2/INERTIALOPER]] · INERTIALOPER（惯性运行功能配置） — `INERTIALOPER.md`
-- [[configobject/UDG/20.15.2/INNERTLSMODE]] · INNERTLSMODE（TLS模式） — `INNERTLSMODE.md`
-- [[configobject/UDG/20.15.2/INSAFEATTMOUT]] · INSAFEATTMOUT（流特征节点超时时间） — `INSAFEATTMOUT.md`
-- [[configobject/UDG/20.15.2/INSAFULLIFSW]] · INSAFULLIFSW（全量智能SA识别开关） — `INSAFULLIFSW.md`
-- [[configobject/UDG/20.15.2/INSAGLBCFG]] · INSAGLBCFG（智能识别全局配置） — `INSAGLBCFG.md`
-- [[configobject/UDG/20.15.2/IOTCAPABILITY]] · IOTCAPABILITY（物联网能力上报） — `IOTCAPABILITY.md`
-- [[configobject/UDG/20.15.2/IPALLOCBYLOCGLBSW]] · IPALLOCBYLOCGLBSW（基于位置区分配地址的全局开关） — `IPALLOCBYLOCGLBSW.md`
-- [[configobject/UDG/20.15.2/IPALLOCBYLOCSW]] · IPALLOCBYLOCSW（基于位置区分配地址的开关） — `IPALLOCBYLOCSW.md`
-- [[configobject/UDG/20.15.2/IPALLOCBYSMFGLBSW]] · IPALLOCBYSMFGLBSW（基于SMF分配地址的全局开关） — `IPALLOCBYSMFGLBSW.md`
-- [[configobject/UDG/20.15.2/IPALLOCBYSMFSW]] · IPALLOCBYSMFSW（基于SMF分配地址开关） — `IPALLOCBYSMFSW.md`
-- [[configobject/UDG/20.15.2/IPALLOCRULE]] · IPALLOCRULE（地址分配规则） — `IPALLOCRULE.md`
-- [[configobject/UDG/20.15.2/IPFARMGLOBAL]] · IPFARMGLOBAL（IPFarm全局参数） — `IPFARMGLOBAL.md`
-- [[configobject/UDG/20.15.2/IPFRR]] · IPFRR（IP FRR） — `IPFRR.md`
-- [[configobject/UDG/20.15.2/IPOPTSECURITY]] · IPOPTSECURITY（IP选项安全配置） — `IPOPTSECURITY.md`
-- [[configobject/UDG/20.15.2/IPPOOLALMTHD]] · IPPOOLALMTHD（本地地址池占用率告警阈值） — `IPPOOLALMTHD.md`
-- [[configobject/UDG/20.15.2/IPSECURITYSWITCH]] · IPSECURITYSWITCH（IP选项安全开关） — `IPSECURITYSWITCH.md`
-- [[configobject/UDG/20.15.2/IPSPOOFALMTHD]] · IPSPOOFALMTHD（IP Spoofing攻击告警阈值） — `IPSPOOFALMTHD.md`
-- [[configobject/UDG/20.15.2/IPSPOOFFUNC]] · IPSPOOFFUNC（展示IP防攻击功能状态） — `IPSPOOFFUNC.md`
-- [[configobject/UDG/20.15.2/IPSQMADJUST]] · IPSQMADJUST（IPSQM调整参数） — `IPSQMADJUST.md`
-- [[configobject/UDG/20.15.2/IPSQMQDEPTH]] · IPSQMQDEPTH（IPSQM缓存队列深度） — `IPSQMQDEPTH.md`
-- [[configobject/UDG/20.15.2/IPV4FRAGPLCY]] · IPV4FRAGPLCY（IPv4分片策略） — `IPV4FRAGPLCY.md`
-- [[configobject/UDG/20.15.2/IPV4THRESHOLD]] · IPV4THRESHOLD（IPv4阈值） — `IPV4THRESHOLD.md`
-- [[configobject/UDG/20.15.2/IPV6FRAGPLCY]] · IPV6FRAGPLCY（IPv6分片策略） — `IPV6FRAGPLCY.md`
-- [[configobject/UDG/20.15.2/IPV6GLOBALCONFIG]] · IPV6GLOBALCONFIG（IPv6全局配置） — `IPV6GLOBALCONFIG.md`
-- [[configobject/UDG/20.15.2/IPV6PARA]] · IPV6PARA（IPv6参数） — `IPV6PARA.md`
-- [[configobject/UDG/20.15.2/IPV6THRESHOLD]] · IPV6THRESHOLD（IPv6阈值） — `IPV6THRESHOLD.md`
-- [[configobject/UDG/20.15.2/ISUPODCPUTHD]] · ISUPODCPUTHD（ISU POD业务CPU过载告警阈值） — `ISUPODCPUTHD.md`
-- [[configobject/UDG/20.15.2/KPIMONSWITCH]] · KPIMONSWITCH（KPI异常检测功能开关） — `KPIMONSWITCH.md`
-- [[configobject/UDG/20.15.2/KUBEPROBE]] · KUBEPROBE（是否放通就绪状态检测） — `KUBEPROBE.md`
-- [[configobject/UDG/20.15.2/L2TPN4KEY]] · L2TPN4KEY（L2TP N4密码配置） — `L2TPN4KEY.md`
-- [[configobject/UDG/20.15.2/LBFC]] · LBFC（流控开关） — `LBFC.md`
-- [[configobject/UDG/20.15.2/LBSOFTPARA]] · LBSOFTPARA（CSLB软件调试参数表） — `LBSOFTPARA.md`
-- [[configobject/UDG/20.15.2/LBTNIPINIPSWITCH]] · LBTNIPINIPSWITCH（CSLB隧道IP-in-IP开关） — `LBTNIPINIPSWITCH.md`
-- [[configobject/UDG/20.15.2/LBTNTSTPARA]] · LBTNTSTPARA（CSLB隧道探测参数） — `LBTNTSTPARA.md`
-- [[configobject/UDG/20.15.2/LDPBFD]] · LDPBFD（LDP BFD配置） — `LDPBFD.md`
-- [[configobject/UDG/20.15.2/LDPGLOBAL]] · LDPGLOBAL（LDP全局配置） — `LDPGLOBAL.md`
-- [[configobject/UDG/20.15.2/LICCTRLALM]] · LICCTRLALM（License容量告警配置） — `LICCTRLALM.md`
-- [[configobject/UDG/20.15.2/LICENSESWITCH]] · LICENSESWITCH（License配置项开关） — `LICENSESWITCH.md`
-- [[configobject/UDG/20.15.2/LIMITMBSWITCH]] · LIMITMBSWITCH（有界邮箱开关配置状态） — `LIMITMBSWITCH.md`
-- [[configobject/UDG/20.15.2/LINKALMCFG]] · LINKALMCFG（TWAMP的Light模式“链路丢包率过高告警”配置） — `LINKALMCFG.md`
-- [[configobject/UDG/20.15.2/LOADCHECKINFO]] · LOADCHECKINFO（CSLB负载不均衡检测功能的参数） — `LOADCHECKINFO.md`
-- [[configobject/UDG/20.15.2/LOGCLEANPOLICY]] · LOGCLEANPOLICY（日志老化策略） — `LOGCLEANPOLICY.md`
-- [[configobject/UDG/20.15.2/LOGINALM]] · LOGINALM（登录告警策略） — `LOGINALM.md`
-- [[configobject/UDG/20.15.2/LOOPUDP]] · LOOPUDP（UDP环回配置） — `LOOPUDP.md`
-- [[configobject/UDG/20.15.2/LOWLATENCYSW]] · LOWLATENCYSW（低时延业务开关） — `LOWLATENCYSW.md`
-- [[configobject/UDG/20.15.2/LSPVGLOBALCFG]] · LSPVGLOBALCFG（LSPV全局属性） — `LSPVGLOBALCFG.md`
-- [[configobject/UDG/20.15.2/MASALMRPTMODE]] · MASALMRPTMODE（5G告警上报模式） — `MASALMRPTMODE.md`
-- [[configobject/UDG/20.15.2/MBSQOSGLOBAL]] · MBSQOSGLOBAL（MBS QosGlobal配置） — `MBSQOSGLOBAL.md`
-- [[configobject/UDG/20.15.2/MCSWITCH]] · MCSWITCH（多连接开关配置数据） — `MCSWITCH.md`
-- [[configobject/UDG/20.15.2/MEASMETRIC]] · MEASMETRIC（话统测量指标参数） — `MEASMETRIC.md`
-- [[configobject/UDG/20.15.2/MEASMU]] · MEASMU（话统测量单元模型） — `MEASMU.md`
-- [[configobject/UDG/20.15.2/MMLCFGDOMAIN]] · MMLCFGDOMAIN（批量设置绑定域信息） — `MMLCFGDOMAIN.md`
-- [[configobject/UDG/20.15.2/MONNFTHR]] · MONNFTHR（正常状态网元的占比阈值） — `MONNFTHR.md`
-- [[configobject/UDG/20.15.2/MPLSSITE]] · MPLSSITE（MPLS全局配置） — `MPLSSITE.md`
-- [[configobject/UDG/20.15.2/MSETCDTTL]] · MSETCDTTL（租约时长） — `MSETCDTTL.md`
-- [[configobject/UDG/20.15.2/MSFAULTALARM]] · MSFAULTALARM（告警开关配置数据） — `MSFAULTALARM.md`
-- [[configobject/UDG/20.15.2/MSFAULTTOLERANCE]] · MSFAULTTOLERANCE（故障检测参数） — `MSFAULTTOLERANCE.md`
-- [[configobject/UDG/20.15.2/MSSCOMMMATCH]] · MSSCOMMMATCH（通信模块规则匹配开关） — `MSSCOMMMATCH.md`
-- [[configobject/UDG/20.15.2/MSSDEBUGSWITCH]] · MSSDEBUGSWITCH（维测信息统计开关） — `MSSDEBUGSWITCH.md`
-- [[configobject/UDG/20.15.2/MSSDEBUGSWITCHM]] · MSSDEBUGSWITCHM（维测信息统计开关） — `MSSDEBUGSWITCHM.md`
-- [[configobject/UDG/20.15.2/MSSLOGRULE]] · MSSLOGRULE（Log过滤或非抑制开关） — `MSSLOGRULE.md`
-- [[configobject/UDG/20.15.2/MSSPBUFREUSE]] · MSSPBUFREUSE（PBUF重用信息） — `MSSPBUFREUSE.md`
-- [[configobject/UDG/20.15.2/MSSPBUFTRACE]] · MSSPBUFTRACE（PBUF轨迹设置的开关） — `MSSPBUFTRACE.md`
-- [[configobject/UDG/20.15.2/MSSPBUFTRACELT]] · MSSPBUFTRACELT（PBUF轨迹开关状态和持续时间） — `MSSPBUFTRACELT.md`
-- [[configobject/UDG/20.15.2/MSSPMDMATCH]] · MSSPMDMATCH（端口报文匹配统计信息） — `MSSPMDMATCH.md`
-- [[configobject/UDG/20.15.2/MSSRULE]] · MSSRULE（匹配规则） — `MSSRULE.md`
-- [[configobject/UDG/20.15.2/MSSRULEM]] · MSSRULEM（匹配规则） — `MSSRULEM.md`
-- [[configobject/UDG/20.15.2/MSSTBMFILTER]] · MSSTBMFILTER（MSS表项开关过滤状态） — `MSSTBMFILTER.md`
-- [[configobject/UDG/20.15.2/MSSWORKFILTER]] · MSSWORKFILTER（Work过滤规则信息） — `MSSWORKFILTER.md`
-- [[configobject/UDG/20.15.2/MTSCFG]] · MTSCFG（消息跟踪配置参数） — `MTSCFG.md`
-- [[configobject/UDG/20.15.2/MULTIDNNPARA]] · MULTIDNNPARA（MultiDNN参数） — `MULTIDNNPARA.md`
-- [[configobject/UDG/20.15.2/N6MBMODE]] · N6MBMODE（N6mb接口数据传输的优选方式及端口配置） — `N6MBMODE.md`
-- [[configobject/UDG/20.15.2/NCCPOLICY]] · NCCPOLICY（NCC策略） — `NCCPOLICY.md`
-- [[configobject/UDG/20.15.2/NDGLOBALCONFIG]] · NDGLOBALCONFIG（IPv6 ND系统配置） — `NDGLOBALCONFIG.md`
-- [[configobject/UDG/20.15.2/NDIFCONFIG]] · NDIFCONFIG（IPv6 ND接口配置） — `NDIFCONFIG.md`
-- [[configobject/UDG/20.15.2/NETSUBHEALTH]] · NETSUBHEALTH（网络亚健康参数） — `NETSUBHEALTH.md`
-- [[configobject/UDG/20.15.2/NETYPE]] · NETYPE（ NeType默认值） — `NETYPE.md`
-- [[configobject/UDG/20.15.2/NEWCERTSWITCH]] · NEWCERTSWITCH（证书开关状态） — `NEWCERTSWITCH.md`
-- [[configobject/UDG/20.15.2/NGDFSRFUNC]] · NGDFSRFUNC（双发选收配置） — `NGDFSRFUNC.md`
-- [[configobject/UDG/20.15.2/NGLANATTR]] · NGLANATTR（5G LAN属性配置） — `NGLANATTR.md`
-- [[configobject/UDG/20.15.2/NGLANCHGCTRL]] · NGLANCHGCTRL（5G LAN计费控制相关参数） — `NGLANCHGCTRL.md`
-- [[configobject/UDG/20.15.2/NGLANFUNC]] · NGLANFUNC（5G LAN功能配置） — `NGLANFUNC.md`
-- [[configobject/UDG/20.15.2/NGLOOPDETFUNC]] · NGLOOPDETFUNC（5G LAN环路检测配置） — `NGLOOPDETFUNC.md`
-- [[configobject/UDG/20.15.2/NGVNUEMUTACC]] · NGVNUEMUTACC（5G LAN组下用户互访控制配置） — `NGVNUEMUTACC.md`
-- [[configobject/UDG/20.15.2/NODECHKPARA]] · NODECHKPARA（节点检测参数） — `NODECHKPARA.md`
-- [[configobject/UDG/20.15.2/NODEHEALCTRL]] · NODEHEALCTRL（Node自愈策略控制参数） — `NODEHEALCTRL.md`
-- [[configobject/UDG/20.15.2/NODEREPSWITCH]] · NODEREPSWITCH（节点查询自动修复开关） — `NODEREPSWITCH.md`
-- [[configobject/UDG/20.15.2/NPECMPLOCALPRE]] · NPECMPLOCALPRE（优选本单板TRUNK出接口开关） — `NPECMPLOCALPRE.md`
-- [[configobject/UDG/20.15.2/NPFABRICHEALTHY]] · NPFABRICHEALTHY（全局亚健康相关配置） — `NPFABRICHEALTHY.md`
-- [[configobject/UDG/20.15.2/NPFABRICOAM]] · NPFABRICOAM（全局OAM相关配置） — `NPFABRICOAM.md`
-- [[configobject/UDG/20.15.2/NPFECSWITCH]] · NPFECSWITCH（NP FEC状态） — `NPFECSWITCH.md`
-- [[configobject/UDG/20.15.2/NPLINKCHECK]] · NPLINKCHECK（全局NP交换网口检测配置） — `NPLINKCHECK.md`
-- [[configobject/UDG/20.15.2/NPPORTCHKPARA]] · NPPORTCHKPARA（NP端口检测的参数） — `NPPORTCHKPARA.md`
-- [[configobject/UDG/20.15.2/NPSECPOLICYCAR]] · NPSECPOLICYCAR（NP安全防攻击CAR规则） — `NPSECPOLICYCAR.md`
-- [[configobject/UDG/20.15.2/NPWATCHDOG]] · NPWATCHDOG（喂狗功能相关配置） — `NPWATCHDOG.md`
-- [[configobject/UDG/20.15.2/NTPCFG]] · NTPCFG（NTP时间同步参数） — `NTPCFG.md`
-- [[configobject/UDG/20.15.2/NTPSFTD]] · NTPSFTD（NTP软参） — `NTPSFTD.md`
-- [[configobject/UDG/20.15.2/OMIP]] · OMIP（OM IP） — `OMIP.md`
-- [[configobject/UDG/20.15.2/OMSWITCH]] · OMSWITCH（OM功能开关） — `OMSWITCH.md`
-- [[configobject/UDG/20.15.2/OSCONFIG]] · OSCONFIG（OS配置） — `OSCONFIG.md`
-- [[configobject/UDG/20.15.2/OSPFDEFIMPROUTCFG]] · OSPFDEFIMPROUTCFG（OSPF引入路由默认配置） — `OSPFDEFIMPROUTCFG.md`
-- [[configobject/UDG/20.15.2/OSPFGR]] · OSPFGR（OSPF的平滑重启配置） — `OSPFGR.md`
-- [[configobject/UDG/20.15.2/OSPFV3DEFIMPROUTCFG]] · OSPFV3DEFIMPROUTCFG（OSPFv3引入路由默认配置） — `OSPFV3DEFIMPROUTCFG.md`
-- [[configobject/UDG/20.15.2/OVERLOADQOSCTRL]] · OVERLOADQOSCTRL（过载限速参数） — `OVERLOADQOSCTRL.md`
-- [[configobject/UDG/20.15.2/PAEBATCHRECVNUM]] · PAEBATCHRECVNUM（PAE批量接收报文数） — `PAEBATCHRECVNUM.md`
-- [[configobject/UDG/20.15.2/PAEDEBUGSWITCH]] · PAEDEBUGSWITCH（使能或去使能PAE转发日志） — `PAEDEBUGSWITCH.md`
-- [[configobject/UDG/20.15.2/PAEDYETRACECFG]] · PAEDYETRACECFG（PAE染色流控开关及阈值参数） — `PAEDYETRACECFG.md`
-- [[configobject/UDG/20.15.2/PAEEXAMINATION]] · PAEEXAMINATION（PAE故障检测使能配置） — `PAEEXAMINATION.md`
-- [[configobject/UDG/20.15.2/PAEMULTQUE]] · PAEMULTQUE（PAE多队列功能开关） — `PAEMULTQUE.md`
-- [[configobject/UDG/20.15.2/PAEPARAMS]] · PAEPARAMS（PAE参数） — `PAEPARAMS.md`
-- [[configobject/UDG/20.15.2/PAERESOVLDTRHD]] · PAERESOVLDTRHD（PAE关键资源不足告警参数） — `PAERESOVLDTRHD.md`
-- [[configobject/UDG/20.15.2/PAESCHEDMOD]] · PAESCHEDMOD（PAE Channel调度模式） — `PAESCHEDMOD.md`
-- [[configobject/UDG/20.15.2/PAESWITCH]] · PAESWITCH（PAE开关信息） — `PAESWITCH.md`
-- [[configobject/UDG/20.15.2/PATHCTRLALMTHD]] · PATHCTRLALMTHD（大量路径断告警告警阈值） — `PATHCTRLALMTHD.md`
-- [[configobject/UDG/20.15.2/PATHDWNALMGLO]] · PATHDWNALMGLO（单条路径断告警抑制参数全局配置） — `PATHDWNALMGLO.md`
-- [[configobject/UDG/20.15.2/PATHRESALMTHD]] · PATHRESALMTHD（路径资源不足告警阈值） — `PATHRESALMTHD.md`
-- [[configobject/UDG/20.15.2/PATHSTATUSRPT]] · PATHSTATUSRPT（用户面路径状态上报功能） — `PATHSTATUSRPT.md`
-- [[configobject/UDG/20.15.2/PCCRULECTRL]] · PCCRULECTRL（PCC QoS相关控制参数） — `PCCRULECTRL.md`
-- [[configobject/UDG/20.15.2/PDFUNC]] · PDFUNC（报文检测功能配置） — `PDFUNC.md`
-- [[configobject/UDG/20.15.2/PDNAUTOTSTSW]] · PDNAUTOTSTSW（PDN自动探测开关状态） — `PDNAUTOTSTSW.md`
-- [[configobject/UDG/20.15.2/PFCPLOADRPT]] · PFCPLOADRPT（系统负荷上报开关） — `PFCPLOADRPT.md`
-- [[configobject/UDG/20.15.2/PFCPOVERLOADRPT]] · PFCPOVERLOADRPT（过载上报开关） — `PFCPOVERLOADRPT.md`
-- [[configobject/UDG/20.15.2/PFCPSSUSTATERPT]] · PFCPSSUSTATERPT（智能单元状态上报相关属性） — `PFCPSSUSTATERPT.md`
-- [[configobject/UDG/20.15.2/PKICRLCHECK]] · PKICRLCHECK（CRL检查） — `PKICRLCHECK.md`
-- [[configobject/UDG/20.15.2/PKTFRAMEIDENT]] · PKTFRAMEIDENT（帧包识别功能相关参数） — `PKTFRAMEIDENT.md`
-- [[configobject/UDG/20.15.2/PLCYCKTIMERINR]] · PLCYCKTIMERINR（策略类型和核查间隔） — `PLCYCKTIMERINR.md`
-- [[configobject/UDG/20.15.2/PLCYCLSWITCH]] · PLCYCLSWITCH（冗余策略老化开关） — `PLCYCLSWITCH.md`
-- [[configobject/UDG/20.15.2/PLYFLUSHSWITCH]] · PLYFLUSHSWITCH（集合类型策略刷新开关状态） — `PLYFLUSHSWITCH.md`
-- [[configobject/UDG/20.15.2/PMCFG]] · PMCFG（性能统计配置参数） — `PMCFG.md`
-- [[configobject/UDG/20.15.2/PODCONFIG]] · PODCONFIG（POD配置查询） — `PODCONFIG.md`
-- [[configobject/UDG/20.15.2/PODCPUTHD]] · PODCPUTHD（POD CPU阈值） — `PODCPUTHD.md`
-- [[configobject/UDG/20.15.2/PODHEALCTRL]] · PODHEALCTRL（自愈功能配置信息） — `PODHEALCTRL.md`
-- [[configobject/UDG/20.15.2/PODHEALPLY]] · PODHEALPLY（Pod自愈策略） — `PODHEALPLY.md`
-- [[configobject/UDG/20.15.2/PODMEMTHD]] · PODMEMTHD（POD内存阈值） — `PODMEMTHD.md`
-- [[configobject/UDG/20.15.2/POLICYFCSWITCH]] · POLICYFCSWITCH（策略流控开关状态） — `POLICYFCSWITCH.md`
-- [[configobject/UDG/20.15.2/POOLALMTHD]] · POOLALMTHD（本地指定地址池占用率告警阈值） — `POOLALMTHD.md`
-- [[configobject/UDG/20.15.2/PPPCFG]] · PPPCFG（PPP配置） — `PPPCFG.md`
-- [[configobject/UDG/20.15.2/PREFIXLIMIT]] · PREFIXLIMIT（前缀限制） — `PREFIXLIMIT.md`
-- [[configobject/UDG/20.15.2/PREFIXURLPARA]] · PREFIXURLPARA（前缀URL参数） — `PREFIXURLPARA.md`
-- [[configobject/UDG/20.15.2/PROCFAULTALM]] · PROCFAULTALM（进程故障告警上报模式） — `PROCFAULTALM.md`
-- [[configobject/UDG/20.15.2/PROCRESTHD]] · PROCRESTHD（进程资源告警阈值） — `PROCRESTHD.md`
-- [[configobject/UDG/20.15.2/PSPKUBEPROBE]] · PSPKUBEPROBE（是否放通管道大颗粒readiness就绪探测） — `PSPKUBEPROBE.md`
-- [[configobject/UDG/20.15.2/QOEBASICFUNC]] · QOEBASICFUNC（QoE基本功能） — `QOEBASICFUNC.md`
-- [[configobject/UDG/20.15.2/QOSACTFILTER]] · QOSACTFILTER（流行为规则） — `QOSACTFILTER.md`
-- [[configobject/UDG/20.15.2/QOSBA]] · QOSBA（QoS BA） — `QOSBA.md`
-- [[configobject/UDG/20.15.2/QOSCAR]] · QOSCAR（QosCar配置） — `QOSCAR.md`
-- [[configobject/UDG/20.15.2/QOSGLOBAL]] · QOSGLOBAL（QosGlobal配置） — `QOSGLOBAL.md`
-- [[configobject/UDG/20.15.2/QOSPHB]] · QOSPHB（QoS PHB） — `QOSPHB.md`
-- [[configobject/UDG/20.15.2/QOSSHAPE]] · QOSSHAPE（QosShape配置） — `QOSSHAPE.md`
-- [[configobject/UDG/20.15.2/QOSURRRPTCTRL]] · QOSURRRPTCTRL（QoS URR上报的相关参数） — `QOSURRRPTCTRL.md`
-- [[configobject/UDG/20.15.2/REASTIMEOUT]] · REASTIMEOUT（IPv4报文重组超时配置） — `REASTIMEOUT.md`
-- [[configobject/UDG/20.15.2/REDUNDUSER]] · REDUNDUSER（静态地址用户路由冗余功能） — `REDUNDUSER.md`
-- [[configobject/UDG/20.15.2/REFRESHSRV]] · REFRESHSRV（业务刷新） — `REFRESHSRV.md`
-- [[configobject/UDG/20.15.2/RELAYFUNC]] · RELAYFUNC（媒体中继功能配置） — `RELAYFUNC.md`
-- [[configobject/UDG/20.15.2/RELAYSALMPARA]] · RELAYSALMPARA（媒体中继业务告警参数配置） — `RELAYSALMPARA.md`
-- [[configobject/UDG/20.15.2/RESCHKSWITCH]] · RESCHKSWITCH（RCF核查开关状态） — `RESCHKSWITCH.md`
-- [[configobject/UDG/20.15.2/RESTHRESHOLD]] · RESTHRESHOLD（资源过载和过载恢复阈值） — `RESTHRESHOLD.md`
-- [[configobject/UDG/20.15.2/ROUTERELAYTUNNEL]] · ROUTERELAYTUNNEL（路由迭代隧道功能开关） — `ROUTERELAYTUNNEL.md`
-- [[configobject/UDG/20.15.2/RPTBASICRECCFG]] · RPTBASICRECCFG（基础单据上报功能开关） — `RPTBASICRECCFG.md`
-- [[configobject/UDG/20.15.2/RPTENCRYPT]] · RPTENCRYPT（业务报表加密算法配置） — `RPTENCRYPT.md`
-- [[configobject/UDG/20.15.2/RPTGLBCFG]] · RPTGLBCFG（业务报表全局开关） — `RPTGLBCFG.md`
-- [[configobject/UDG/20.15.2/RPTGLBPARA]] · RPTGLBPARA（业务报表全局参数） — `RPTGLBPARA.md`
-- [[configobject/UDG/20.15.2/RPTPERIOD]] · RPTPERIOD（APN N6故障状态上报周期） — `RPTPERIOD.md`
-- [[configobject/UDG/20.15.2/RPTPROTMPSW]] · RPTPROTMPSW（业务报表承载协议映射开关） — `RPTPROTMPSW.md`
-- [[configobject/UDG/20.15.2/RPTRATELT]] · RPTRATELT（业务报表消息流控配置） — `RPTRATELT.md`
-- [[configobject/UDG/20.15.2/RSCBOXHEALCTRL]] · RSCBOXHEALCTRL（ResourceBox自愈策略控制参数） — `RSCBOXHEALCTRL.md`
-- [[configobject/UDG/20.15.2/RTSDNNPARA]] · RTSDNNPARA（RTSDNN参数） — `RTSDNNPARA.md`
-- [[configobject/UDG/20.15.2/RUCPUTHRESH]] · RUCPUTHRESH（RU CPU占用率告警上报门限和告警恢复门限） — `RUCPUTHRESH.md`
-- [[configobject/UDG/20.15.2/RUDISKPARTITION]] · RUDISKPARTITION（RU磁盘过载配置） — `RUDISKPARTITION.md`
-- [[configobject/UDG/20.15.2/RUFAULTTOLERANCE]] · RUFAULTTOLERANCE（资源单元故障容忍时间） — `RUFAULTTOLERANCE.md`
-- [[configobject/UDG/20.15.2/RURESTHRESHOLD]] · RURESTHRESHOLD（RU资源过载和去过载阈值） — `RURESTHRESHOLD.md`
-- [[configobject/UDG/20.15.2/SAAITRAINPARA]] · SAAITRAINPARA（基于SA的Intelligence训练参数） — `SAAITRAINPARA.md`
-- [[configobject/UDG/20.15.2/SACOMMONPARA]] · SACOMMONPARA（SA业务公共参数） — `SACOMMONPARA.md`
-- [[configobject/UDG/20.15.2/SAIFUNC]] · SAIFUNC（SAI差异化控制功能） — `SAIFUNC.md`
-- [[configobject/UDG/20.15.2/SAVOIPCOMMONPARA]] · SAVOIPCOMMONPARA（SA VOIP业务公共参数） — `SAVOIPCOMMONPARA.md`
-- [[configobject/UDG/20.15.2/SBILINKSETCFG]] · SBILINKSETCFG（服务化接口链路集属性） — `SBILINKSETCFG.md`
-- [[configobject/UDG/20.15.2/SBILNKCTRLSW]] · SBILNKCTRLSW（服务化接口链路自动控制功能开关） — `SBILNKCTRLSW.md`
-- [[configobject/UDG/20.15.2/SBITCPPARA]] · SBITCPPARA（SBI接口TCP控制参数） — `SBITCPPARA.md`
-- [[configobject/UDG/20.15.2/SCALINGCFG]] · SCALINGCFG（自动扩缩容配置） — `SCALINGCFG.md`
-- [[configobject/UDG/20.15.2/SCALINGSWITCH]] · SCALINGSWITCH（扩缩容开关） — `SCALINGSWITCH.md`
-- [[configobject/UDG/20.15.2/SCFMVNFMLNK]] · SCFMVNFMLNK（超时时间配置） — `SCFMVNFMLNK.md`
-- [[configobject/UDG/20.15.2/SDRPARAMS]] · SDRPARAMS（SDR参数） — `SDRPARAMS.md`
-- [[configobject/UDG/20.15.2/SDRTRANS]] · SDRTRANS（SDR传输能力） — `SDRTRANS.md`
-- [[configobject/UDG/20.15.2/SECALG]] · SECALG（安全算法） — `SECALG.md`
-- [[configobject/UDG/20.15.2/SECARP]] · SECARP（ARP快回） — `SECARP.md`
-- [[configobject/UDG/20.15.2/SECARPGRAT]] · SECARPGRAT（免费ARP过滤） — `SECARPGRAT.md`
-- [[configobject/UDG/20.15.2/SECARPSAFEGUARD]] · SECARPSAFEGUARD（ARP双向分离） — `SECARPSAFEGUARD.md`
-- [[configobject/UDG/20.15.2/SECAUTH]] · SECAUTH（查看二次授权功能状态） — `SECAUTH.md`
-- [[configobject/UDG/20.15.2/SECDEVURPF]] · SECDEVURPF（设备URPF） — `SECDEVURPF.md`
-- [[configobject/UDG/20.15.2/SECICMPREPLY]] · SECICMPREPLY（ICMP快回） — `SECICMPREPLY.md`
-- [[configobject/UDG/20.15.2/SECND]] · SECND（ND快回） — `SECND.md`
-- [[configobject/UDG/20.15.2/SECPOLICYALLPKTLEVEL]] · SECPOLICYALLPKTLEVEL（上送报文总体速率等级） — `SECPOLICYALLPKTLEVEL.md`
-- [[configobject/UDG/20.15.2/SECPOLICYALLPKTVALUE]] · SECPOLICYALLPKTVALUE（上送报文总体速率值） — `SECPOLICYALLPKTVALUE.md`
-- [[configobject/UDG/20.15.2/SECPOLICYAPPLNK]] · SECPOLICYAPPLNK（应用联动默认动作） — `SECPOLICYAPPLNK.md`
-- [[configobject/UDG/20.15.2/SECPOLICYPRIO]] · SECPOLICYPRIO（报文上送优先级） — `SECPOLICYPRIO.md`
-- [[configobject/UDG/20.15.2/SECPOLICYSWITCH]] · SECPOLICYSWITCH（TCPIP报文以及应用层、黑名单、白名单防御机制使能状态） — `SECPOLICYSWITCH.md`
-- [[configobject/UDG/20.15.2/SERVERRTTSTAT]] · SERVERRTTSTAT（服务器时延统计功能配置） — `SERVERRTTSTAT.md`
-- [[configobject/UDG/20.15.2/SESSCHKFUNC]] · SESSCHKFUNC（会话核查配置） — `SESSCHKFUNC.md`
-- [[configobject/UDG/20.15.2/SFEBFDPKTIPID]] · SFEBFDPKTIPID（BFD报文IPID的使能标记） — `SFEBFDPKTIPID.md`
-- [[configobject/UDG/20.15.2/SFEFEIDEBUG]] · SFEFEIDEBUG（FEI报文、进程日志开关） — `SFEFEIDEBUG.md`
-- [[configobject/UDG/20.15.2/SFEPASSGREFRAG]] · SFEPASSGREFRAG（SFE透传GRE分片报文使能配置） — `SFEPASSGREFRAG.md`
-- [[configobject/UDG/20.15.2/SFEPKTBATCHRCV]] · SFEPKTBATCHRCV（SFE批量收取的报文数量） — `SFEPKTBATCHRCV.md`
-- [[configobject/UDG/20.15.2/SFEPKTRCVMODE]] · SFEPKTRCVMODE（SFE当前收包模式） — `SFEPKTRCVMODE.md`
-- [[configobject/UDG/20.15.2/SFEPKTSTAT]] · SFEPKTSTAT（SFE报文统计信息） — `SFEPKTSTAT.md`
-- [[configobject/UDG/20.15.2/SFERESALMTHD]] · SFERESALMTHD（VNRS内部资源不足告警的阈值参数） — `SFERESALMTHD.md`
-- [[configobject/UDG/20.15.2/SFETRACECPUFC]] · SFETRACECPUFC（VNRS IP消息跟踪的CPU流控阈值） — `SFETRACECPUFC.md`
-- [[configobject/UDG/20.15.2/SFETRACEFCCFG]] · SFETRACEFCCFG（VNRS IP消息跟踪的流控使能配置） — `SFETRACEFCCFG.md`
-- [[configobject/UDG/20.15.2/SFETRACEQUEFC]] · SFETRACEQUEFC（VNRS IP消息跟踪的队列流控配置） — `SFETRACEQUEFC.md`
-- [[configobject/UDG/20.15.2/SFIPCPUALMTHD]] · SFIPCPUALMTHD（告警阈值） — `SFIPCPUALMTHD.md`
-- [[configobject/UDG/20.15.2/SFTPALG]] · SFTPALG（SFTP协议算法） — `SFTPALG.md`
-- [[configobject/UDG/20.15.2/SGLPASSPERIOD]] · SGLPASSPERIOD（单通检测周期） — `SGLPASSPERIOD.md`
-- [[configobject/UDG/20.15.2/SGWACLFUNC]] · SGWACLFUNC（SGW ACL功能） — `SGWACLFUNC.md`
-- [[configobject/UDG/20.15.2/SIGDSCP]] · SIGDSCP（信令报文DSCP值） — `SIGDSCP.md`
-- [[configobject/UDG/20.15.2/SIGNADBMUTEX]] · SIGNADBMUTEX（特征库规则加载区域ID） — `SIGNADBMUTEX.md`
-- [[configobject/UDG/20.15.2/SIPSIGMIRRORPARA]] · SIPSIGMIRRORPARA（镜像SIP信令功能） — `SIPSIGMIRRORPARA.md`
-- [[configobject/UDG/20.15.2/SKIPADJUSTHAFDM]] · SKIPADJUSTHAFDM（跳过调整HAF域开关状态） — `SKIPADJUSTHAFDM.md`
-- [[configobject/UDG/20.15.2/SOFTPARA]] · SOFTPARA（软参记录） — `SOFTPARA.md`
-- [[configobject/UDG/20.15.2/SOFTPARAOFBIT]] · SOFTPARAOFBIT（软件参数指定比特位的值） — `SOFTPARAOFBIT.md`
-- [[configobject/UDG/20.15.2/SRIPV4STATICSITE]] · SRIPV4STATICSITE（IPv4静态路由全局属性） — `SRIPV4STATICSITE.md`
-- [[configobject/UDG/20.15.2/SRIPV6STATICSITE]] · SRIPV6STATICSITE（IPv6静态路由全局属性） — `SRIPV6STATICSITE.md`
-- [[configobject/UDG/20.15.2/SRROUTEFRR]] · SRROUTEFRR（静态路由FRR） — `SRROUTEFRR.md`
-- [[configobject/UDG/20.15.2/SRROUTERELAYTUNNEL]] · SRROUTERELAYTUNNEL（静态路由迭代隧道功能开关） — `SRROUTERELAYTUNNEL.md`
-- [[configobject/UDG/20.15.2/SRVCERTUPDCFG]] · SRVCERTUPDCFG（证书更新拆链配置） — `SRVCERTUPDCFG.md`
-- [[configobject/UDG/20.15.2/SRVCOMMONPARA]] · SRVCOMMONPARA（业务公共参数） — `SRVCOMMONPARA.md`
-- [[configobject/UDG/20.15.2/SRVMATCHSTAT]] · SRVMATCHSTAT（业务匹配统计参数） — `SRVMATCHSTAT.md`
-- [[configobject/UDG/20.15.2/SRVNDALMTHRES]] · SRVNDALMTHRES（业务节点资源不足告警阈值） — `SRVNDALMTHRES.md`
-- [[configobject/UDG/20.15.2/SRVRETRYTIMER]] · SRVRETRYTIMER（服务重试等待时间） — `SRVRETRYTIMER.md`
-- [[configobject/UDG/20.15.2/SSUAGINGCFG]] · SSUAGINGCFG（SSU容器业务相关老化功能配置） — `SSUAGINGCFG.md`
-- [[configobject/UDG/20.15.2/SSUBIGFLOWCTRL]] · SSUBIGFLOWCTRL（智能板的大流判断速率阈值） — `SSUBIGFLOWCTRL.md`
-- [[configobject/UDG/20.15.2/STATUSCHECK]] · STATUSCHECK（状态核查参数） — `STATUSCHECK.md`
-- [[configobject/UDG/20.15.2/SYSLOGCONTENTCFG]] · SYSLOGCONTENTCFG（日志内容配置） — `SYSLOGCONTENTCFG.md`
-- [[configobject/UDG/20.15.2/TCPBPCFG]] · TCPBPCFG（TCP过载反压HTTP流控配置） — `TCPBPCFG.md`
-- [[configobject/UDG/20.15.2/TCPGLOBALCFG]] · TCPGLOBALCFG（TCP全局配置） — `TCPGLOBALCFG.md`
-- [[configobject/UDG/20.15.2/TCPKEEPALIVECFG]] · TCPKEEPALIVECFG（TCP保活参数） — `TCPKEEPALIVECFG.md`
-- [[configobject/UDG/20.15.2/TCPRST]] · TCPRST（欠费用户下行RST报文处理动作） — `TCPRST.md`
-- [[configobject/UDG/20.15.2/TCPSTATRTTRANGE]] · TCPSTATRTTRANGE（TCP统计功能的RTT区间为初始值） — `TCPSTATRTTRANGE.md`
-- [[configobject/UDG/20.15.2/TETHERDETGLBPARA]] · TETHERDETGLBPARA（Tethering用户终端数量检测全局配置） — `TETHERDETGLBPARA.md`
-- [[configobject/UDG/20.15.2/TETHERDETGLBSW]] · TETHERDETGLBSW（Tethering用户终端数量检测全局开关） — `TETHERDETGLBSW.md`
-- [[configobject/UDG/20.15.2/TETHRPTCTRL]] · TETHRPTCTRL（tethering事件上报的相关参数） — `TETHRPTCTRL.md`
-- [[configobject/UDG/20.15.2/TIME]] · TIME（系统时间） — `TIME.md`
-- [[configobject/UDG/20.15.2/TLBGLBCONF]] · TLBGLBCONF（TLB全局配置） — `TLBGLBCONF.md`
-- [[configobject/UDG/20.15.2/TMMSGFC]] · TMMSGFC（跟踪消息流控状态） — `TMMSGFC.md`
-- [[configobject/UDG/20.15.2/TOALGCFG]] · TOALGCFG（TCP算法配置） — `TOALGCFG.md`
-- [[configobject/UDG/20.15.2/TOEVALUATEPARA]] · TOEVALUATEPARA（TCP优化评估配置信息） — `TOEVALUATEPARA.md`
-- [[configobject/UDG/20.15.2/TOFLOWAGINGCFG]] · TOFLOWAGINGCFG（TCP流老化功能配置） — `TOFLOWAGINGCFG.md`
-- [[configobject/UDG/20.15.2/TOHVXLANPARA]] · TOHVXLANPARA（家庭网关业务使用VXLAN隧道传输业务参数配置） — `TOHVXLANPARA.md`
-- [[configobject/UDG/20.15.2/TOIPISOLATION]] · TOIPISOLATION（IP地址隔离功能配置） — `TOIPISOLATION.md`
-- [[configobject/UDG/20.15.2/TOKENDELAY]] · TOKENDELAY（Token延时迁移时间） — `TOKENDELAY.md`
-- [[configobject/UDG/20.15.2/TOLOADALMTHD]] · TOLOADALMTHD（告警阈值） — `TOLOADALMTHD.md`
-- [[configobject/UDG/20.15.2/TOMEMCFG]] · TOMEMCFG（TCP Socket缓存配置） — `TOMEMCFG.md`
-- [[configobject/UDG/20.15.2/TOMSSCFG]] · TOMSSCFG（Tcp Mss配置） — `TOMSSCFG.md`
-- [[configobject/UDG/20.15.2/TOPLYPRIORITY]] · TOPLYPRIORITY（TCP优化策略组合优先级） — `TOPLYPRIORITY.md`
-- [[configobject/UDG/20.15.2/TOPROXYCFG]] · TOPROXYCFG（TCP代理配置） — `TOPROXYCFG.md`
-- [[configobject/UDG/20.15.2/TORELIABLECFG]] · TORELIABLECFG（TCP可靠性配置） — `TORELIABLECFG.md`
-- [[configobject/UDG/20.15.2/TORESMGTCFG]] · TORESMGTCFG（TCP资源管理配置） — `TORESMGTCFG.md`
-- [[configobject/UDG/20.15.2/TOSERVERIPBYPASS]] · TOSERVERIPBYPASS（异常Server IP自动bypass功能配置） — `TOSERVERIPBYPASS.md`
-- [[configobject/UDG/20.15.2/TOSOFTPARA]] · TOSOFTPARA（TCP优化软参） — `TOSOFTPARA.md`
-- [[configobject/UDG/20.15.2/TOTUNCFG]] · TOTUNCFG（TCP Tun接口配置） — `TOTUNCFG.md`
-- [[configobject/UDG/20.15.2/TRFCDFDPARA]] · TRFCDFDPARA（大流量攻击防护配置参数） — `TRFCDFDPARA.md`
-- [[configobject/UDG/20.15.2/TRFCDFDSWITCH]] · TRFCDFDSWITCH（大流量攻击防护配置） — `TRFCDFDSWITCH.md`
-- [[configobject/UDG/20.15.2/TRUNKATTR]] · TRUNKATTR（宽带集群属性配置） — `TRUNKATTR.md`
-- [[configobject/UDG/20.15.2/TRUNKQOSGLOBAL]] · TRUNKQOSGLOBAL（宽带集群QosGlobal配置） — `TRUNKQOSGLOBAL.md`
-- [[configobject/UDG/20.15.2/TWAMPFLOWCTLCFG]] · TWAMPFLOWCTLCFG（跟踪流控配置） — `TWAMPFLOWCTLCFG.md`
-- [[configobject/UDG/20.15.2/TZ]] · TZ（时区和夏令时信息） — `TZ.md`
-- [[configobject/UDG/20.15.2/UDPCHECKSUM]] · UDPCHECKSUM（UDP报文是否携带checksum） — `UDPCHECKSUM.md`
-- [[configobject/UDG/20.15.2/UEINJECTSWITCH]] · UEINJECTSWITCH（UE灌包开关） — `UEINJECTSWITCH.md`
-- [[configobject/UDG/20.15.2/UEPINGINF]] · UEPINGINF（UE Ping逻辑接口开关） — `UEPINGINF.md`
-- [[configobject/UDG/20.15.2/UPAPNCHARGE]] · UPAPNCHARGE（APN计费配置） — `UPAPNCHARGE.md`
-- [[configobject/UDG/20.15.2/UPCHGCHKPARA]] · UPCHGCHKPARA（计费检查参数） — `UPCHGCHKPARA.md`
-- [[configobject/UDG/20.15.2/UPCONCENPOINT]] · UPCONCENPOINT（集中点部署模式） — `UPCONCENPOINT.md`
-- [[configobject/UDG/20.15.2/UPDEFAULTQUOTA]] · UPDEFAULTQUOTA（全局默认配额开关） — `UPDEFAULTQUOTA.md`
-- [[configobject/UDG/20.15.2/UPDIAMETERPARA]] · UPDIAMETERPARA（Diameter参数） — `UPDIAMETERPARA.md`
-- [[configobject/UDG/20.15.2/UPDSTATUS]] · UPDSTATUS（升级状态） — `UPDSTATUS.md`
-- [[configobject/UDG/20.15.2/UPETHSRVPARA]] · UPETHSRVPARA（用户面以太业务参数配置） — `UPETHSRVPARA.md`
-- [[configobject/UDG/20.15.2/UPFSTARTPARA]] · UPFSTARTPARA（UPF系统开工流程消息的参数） — `UPFSTARTPARA.md`
-- [[configobject/UDG/20.15.2/UPGLBCHGPARA]] · UPGLBCHGPARA（全局计费参数） — `UPGLBCHGPARA.md`
-- [[configobject/UDG/20.15.2/UPGLBPMPARA]] · UPGLBPMPARA（全局策略管理参数） — `UPGLBPMPARA.md`
-- [[configobject/UDG/20.15.2/UPGLBSCTPPARA]] · UPGLBSCTPPARA（SCTP全局参数） — `UPGLBSCTPPARA.md`
-- [[configobject/UDG/20.15.2/UPGPATTIMER]] · UPGPATTIMER（升级补丁定时器） — `UPGPATTIMER.md`
-- [[configobject/UDG/20.15.2/UPGRADEWATCH]] · UPGRADEWATCH（升级观察期） — `UPGRADEWATCH.md`
-- [[configobject/UDG/20.15.2/UPGSTEP]] · UPGSTEP（灰度升级Pod滚动步长） — `UPGSTEP.md`
-- [[configobject/UDG/20.15.2/UPGTPPATH]] · UPGTPPATH（路径相关属性） — `UPGTPPATH.md`
-- [[configobject/UDG/20.15.2/UPINFO]] · UPINFO（ UP 参数信息） — `UPINFO.md`
-- [[configobject/UDG/20.15.2/UPINITSETUP]] · UPINITSETUP（主被动切换） — `UPINITSETUP.md`
-- [[configobject/UDG/20.15.2/UPLINKCONGCTRL]] · UPLINKCONGCTRL（Diameter链路拥塞控制） — `UPLINKCONGCTRL.md`
-- [[configobject/UDG/20.15.2/UPN4UPATH]] · UPN4UPATH（N4U路径相关属性） — `UPN4UPATH.md`
-- [[configobject/UDG/20.15.2/UPNON3GPPPARA]] · UPNON3GPPPARA（非3GPP业务配置参数） — `UPNON3GPPPARA.md`
-- [[configobject/UDG/20.15.2/UPOSLELBWMSW]] · UPOSLELBWMSW（User Profile操作系统级带宽管理开关） — `UPOSLELBWMSW.md`
-- [[configobject/UDG/20.15.2/UPPFCPPATH]] · UPPFCPPATH（路径相关属性） — `UPPFCPPATH.md`
-- [[configobject/UDG/20.15.2/UPSTATUS]] · UPSTATUS（UP 状态） — `UPSTATUS.md`
-- [[configobject/UDG/20.15.2/UPTCTIMER]] · UPTCTIMER（TC定时器） — `UPTCTIMER.md`
-- [[configobject/UDG/20.15.2/UPTMPATH]] · UPTMPATH（TM路径相关属性） — `UPTMPATH.md`
-- [[configobject/UDG/20.15.2/UPTWTIMER]] · UPTWTIMER（TW定时器） — `UPTWTIMER.md`
-- [[configobject/UDG/20.15.2/UPURRCTRL]] · UPURRCTRL（URR控制参数） — `UPURRCTRL.md`
-- [[configobject/UDG/20.15.2/UPUSRPROFCHG]] · UPUSRPROFCHG（User Profile的计费配置） — `UPUSRPROFCHG.md`
-- [[configobject/UDG/20.15.2/URRFAILACTION]] · URRFAILACTION（计费URR上报失败动作参数） — `URRFAILACTION.md`
-- [[configobject/UDG/20.15.2/USERROUTINGSW]] · USERROUTINGSW（用户路由可靠性配置） — `USERROUTINGSW.md`
-- [[configobject/UDG/20.15.2/USRREALLOCNTY]] · USRREALLOCNTY（主动触发用户位置实时通知功能） — `USRREALLOCNTY.md`
-- [[configobject/UDG/20.15.2/USRTRCPLY]] · USRTRCPLY（用户跟踪策略） — `USRTRCPLY.md`
-- [[configobject/UDG/20.15.2/VNFEVICTION]] · VNFEVICTION（网元重调度策略） — `VNFEVICTION.md`
-- [[configobject/UDG/20.15.2/VOLTEABNORMOS]] · VOLTEABNORMOS（MOS值的异常门限为系统初始设置值） — `VOLTEABNORMOS.md`
-- [[configobject/UDG/20.15.2/VOLTEMOSALMTHD]] · VOLTEMOSALMTHD（异常MOS告警阈值为系统初始设置值） — `VOLTEMOSALMTHD.md`
-- [[configobject/UDG/20.15.2/VOLTEMOSCLASS]] · VOLTEMOSCLASS（MOS分类区间值） — `VOLTEMOSCLASS.md`
-- [[configobject/UDG/20.15.2/VOLTEMOSEVAL]] · VOLTEMOSEVAL（VoLTE AMR编解码的语音质量采用的评估方式） — `VOLTEMOSEVAL.md`
-- [[configobject/UDG/20.15.2/VOLTEMOSFACTOR]] · VOLTEMOSFACTOR（MOS补偿因子） — `VOLTEMOSFACTOR.md`
-- [[configobject/UDG/20.15.2/VOLTEONEWAYSIL]] · VOLTEONEWAYSIL（单通检测的系统初始设置值） — `VOLTEONEWAYSIL.md`
-- [[configobject/UDG/20.15.2/VOLTEPERFTDELAY]] · VOLTEPERFTDELAY（理想到达报文的最小时延偏差、固定传输时延） — `VOLTEPERFTDELAY.md`
-- [[configobject/UDG/20.15.2/VOLTESWALBRK]] · VOLTESWALBRK（VoLTE滑窗相关的参数） — `VOLTESWALBRK.md`
-- [[configobject/UDG/20.15.2/VONRABNORMOS]] · VONRABNORMOS（MOS值的异常门限为系统初始设置值） — `VONRABNORMOS.md`
-- [[configobject/UDG/20.15.2/VONRMOSCLASS]] · VONRMOSCLASS（MOS分类区间值） — `VONRMOSCLASS.md`
-- [[configobject/UDG/20.15.2/VONRMOSFACTOR]] · VONRMOSFACTOR（MOS补偿因子） — `VONRMOSFACTOR.md`
-- [[configobject/UDG/20.15.2/VONRONEWAYSIL]] · VONRONEWAYSIL（单通检测的系统初始设置值） — `VONRONEWAYSIL.md`
-- [[configobject/UDG/20.15.2/VONRPERFTDELAY]] · VONRPERFTDELAY（理想到达报文的最小时延偏差、固定传输时延） — `VONRPERFTDELAY.md`
-- [[configobject/UDG/20.15.2/VONRSWALBRK]] · VONRSWALBRK（VoNR滑窗相关的参数） — `VONRSWALBRK.md`
-- [[configobject/UDG/20.15.2/VVIPBASICFUNC]] · VVIPBASICFUNC（重点业务保障基本功能） — `VVIPBASICFUNC.md`
-- [[configobject/UDG/20.15.2/WLRPAESTATE]] · WLRPAESTATE（无线路由PAE使能状态） — `WLRPAESTATE.md`
-- [[configobject/UDG/20.15.2/WLRSITE]] · WLRSITE（无线路由全局属性配置） — `WLRSITE.md`
+- [5GGUMINFO（灰度升级所处于的阶段）](configobject/UDG/20.15.2/5GGUMINFO.md)
+- [ABNTRADTTHR（异常流量检测报文阈值）](configobject/UDG/20.15.2/ABNTRADTTHR.md)
+- [ACSELECTSERVICE（仲裁服务状态）](configobject/UDG/20.15.2/ACSELECTSERVICE.md)
+- [ACSUPDSTATUS（升级状态）](configobject/UDG/20.15.2/ACSUPDSTATUS.md)
+- [ADDRESSATTR（AddressAttr配置）](configobject/UDG/20.15.2/ADDRESSATTR.md)
+- [AES128（aes128加密算法的IV值）](configobject/UDG/20.15.2/AES128.md)
+- [AES256（Aes256加密算法的IV值）](configobject/UDG/20.15.2/AES256.md)
+- [AFMATCHCFG（软参欺诈场景开关状态）](configobject/UDG/20.15.2/AFMATCHCFG.md)
+- [AFUSRDETECT（计费欺诈用户检测功能）](configobject/UDG/20.15.2/AFUSRDETECT.md)
+- [AIFUNCPARA（SA Intelligence功能参数）](configobject/UDG/20.15.2/AIFUNCPARA.md)
+- [ALARMSWITCH（安全事件告警开关）](configobject/UDG/20.15.2/ALARMSWITCH.md)
+- [ALMFILTER（告警闪断振荡配置）](configobject/UDG/20.15.2/ALMFILTER.md)
+- [ALMINFO（告警配置信息）](configobject/UDG/20.15.2/ALMINFO.md)
+- [ALMNRMODE（网管北向告警上报模式）](configobject/UDG/20.15.2/ALMNRMODE.md)
+- [ANTIFRAUD（防欺诈配置）](configobject/UDG/20.15.2/ANTIFRAUD.md)
+- [ANTISPOOFINGTHD（攻击用户去活报文的阈值）](configobject/UDG/20.15.2/ANTISPOOFINGTHD.md)
+- [APNACCESSWAL（Apn接入速率配置）](configobject/UDG/20.15.2/APNACCESSWAL.md)
+- [APNADDRESSATTR（ApnAddressAttr配置）](configobject/UDG/20.15.2/APNADDRESSATTR.md)
+- [APNAFFUNC（APN防欺诈功能）](configobject/UDG/20.15.2/APNAFFUNC.md)
+- [APNAPPPARA（基于APN的应用参数）](configobject/UDG/20.15.2/APNAPPPARA.md)
+- [APNCFFUNC（APN内容过滤开关）](configobject/UDG/20.15.2/APNCFFUNC.md)
+- [APNDDNFLOWCTRL（APN的下行数据DDN寻呼流控方式）](configobject/UDG/20.15.2/APNDDNFLOWCTRL.md)
+- [APNDLBUFTIME（APN的下行数据缓存时长配置）](configobject/UDG/20.15.2/APNDLBUFTIME.md)
+- [APNDLLTBUFFER（基于APN的下行数据长时间缓存配置）](configobject/UDG/20.15.2/APNDLLTBUFFER.md)
+- [APNDROPFINALPKT（指定APN配额耗尽末包动作）](configobject/UDG/20.15.2/APNDROPFINALPKT.md)
+- [APNFLOWAGETIME（APN五元组老化时间）](configobject/UDG/20.15.2/APNFLOWAGETIME.md)
+- [APNHTTP2DGRD（APN HTTP2.0协议回落开关）](configobject/UDG/20.15.2/APNHTTP2DGRD.md)
+- [APNIMSATTR（ApnImsAttr配置）](configobject/UDG/20.15.2/APNIMSATTR.md)
+- [APNIPALLOCRULE（基于APN配置地址分配规则）](configobject/UDG/20.15.2/APNIPALLOCRULE.md)
+- [APNIPV6INFID（APN IPv6接口ID配置）](configobject/UDG/20.15.2/APNIPV6INFID.md)
+- [APNL2TPATTR（APN L2TP配置）](configobject/UDG/20.15.2/APNL2TPATTR.md)
+- [APNNONIPFUNC（APN Non-IP功能配置）](configobject/UDG/20.15.2/APNNONIPFUNC.md)
+- [APNNSHHEADENFUNC（NSH头增强功能开关）](configobject/UDG/20.15.2/APNNSHHEADENFUNC.md)
+- [APNOSLELBWMSW（APN操作系统级带宽管理开关）](configobject/UDG/20.15.2/APNOSLELBWMSW.md)
+- [APNPPPACCESS（APN PPP配置）](configobject/UDG/20.15.2/APNPPPACCESS.md)
+- [APNQOSATTR（ApnQosAttr配置）](configobject/UDG/20.15.2/APNQOSATTR.md)
+- [APNREDUNDUPSW（指定APN静态地址路由冗余上行报文隧道转发功能开关）](configobject/UDG/20.15.2/APNREDUNDUPSW.md)
+- [APNREPORTATTR（ApnReportAttr配置）](configobject/UDG/20.15.2/APNREPORTATTR.md)
+- [APNSAPARA（基于APN的业务感知参数）](configobject/UDG/20.15.2/APNSAPARA.md)
+- [APNSGLPASS（APN单通检测开关）](configobject/UDG/20.15.2/APNSGLPASS.md)
+- [APNSOFTPARA（APN软参记录）](configobject/UDG/20.15.2/APNSOFTPARA.md)
+- [APNSRVSTATFUNC（APN业务统计开关）](configobject/UDG/20.15.2/APNSRVSTATFUNC.md)
+- [APNTETHERDETSW（APN Tethering终端数量检测开关）](configobject/UDG/20.15.2/APNTETHERDETSW.md)
+- [APNTETHERFUNC（APN Tethering检测开关）](configobject/UDG/20.15.2/APNTETHERFUNC.md)
+- [APNTNLSTATUSRPT（隧道状态上报开关）](configobject/UDG/20.15.2/APNTNLSTATUSRPT.md)
+- [APNTRAFDFUNC（APN流量转发配置）](configobject/UDG/20.15.2/APNTRAFDFUNC.md)
+- [APNTRFCDFDSWITCH（APN大流量攻击防护配置）](configobject/UDG/20.15.2/APNTRFCDFDSWITCH.md)
+- [APNUEMUTACC（APN下用户互访控制配置）](configobject/UDG/20.15.2/APNUEMUTACC.md)
+- [APNVOLTEMONFUNC（VoLTE语音质量监控功能开关）](configobject/UDG/20.15.2/APNVOLTEMONFUNC.md)
+- [APNVONRMONFUNC（VoNR语音质量监控功能开关）](configobject/UDG/20.15.2/APNVONRMONFUNC.md)
+- [APPPOLICYPARA（应用策略参数）](configobject/UDG/20.15.2/APPPOLICYPARA.md)
+- [APPTRAFFICPARA（应用流量参数）](configobject/UDG/20.15.2/APPTRAFFICPARA.md)
+- [ARPANTISPOOFING（ARP防欺骗信息）](configobject/UDG/20.15.2/ARPANTISPOOFING.md)
+- [ARPIFLIMIT（ARP表项限制）](configobject/UDG/20.15.2/ARPIFLIMIT.md)
+- [ARPINTERFACE（接口下ARP配置信息）](configobject/UDG/20.15.2/ARPINTERFACE.md)
+- [ARPSPEEDLIMIT（速率限制）](configobject/UDG/20.15.2/ARPSPEEDLIMIT.md)
+- [ARPSYS（ARP系统信息）](configobject/UDG/20.15.2/ARPSYS.md)
+- [ATTACKDEFEND（攻击防范参数）](configobject/UDG/20.15.2/ATTACKDEFEND.md)
+- [AUTHSOAP（网管登录认证策略）](configobject/UDG/20.15.2/AUTHSOAP.md)
+- [AUTOCONFIG（自动配置开关）](configobject/UDG/20.15.2/AUTOCONFIG.md)
+- [AUTOLOGPOLICY（日志自动备份策略）](configobject/UDG/20.15.2/AUTOLOGPOLICY.md)
+- [BANDWIDTHMNG（带宽管理参数）](configobject/UDG/20.15.2/BANDWIDTHMNG.md)
+- [BASE64（Base64编码规则）](configobject/UDG/20.15.2/BASE64.md)
+- [BASESOFTPARA（基础软件参数配置）](configobject/UDG/20.15.2/BASESOFTPARA.md)
+- [BASESUBHEALTH（base链路亚健康信息）](configobject/UDG/20.15.2/BASESUBHEALTH.md)
+- [BATCHPARA（批量调度参数）](configobject/UDG/20.15.2/BATCHPARA.md)
+- [BFD（BFD全局配置信息）](configobject/UDG/20.15.2/BFD.md)
+- [BGP](configobject/UDG/20.15.2/BGP.md)
+- [BKMPOLICY（自动备份策略）](configobject/UDG/20.15.2/BKMPOLICY.md)
+- [BMBYPASSSTATUS（裸机BYPASS状态）](configobject/UDG/20.15.2/BMBYPASSSTATUS.md)
+- [BMBYPASSSWITCH（裸机节点自动进入BYPASS开关）](configobject/UDG/20.15.2/BMBYPASSSWITCH.md)
+- [BTDRBASICCFG（BTDR单据上报参数）](configobject/UDG/20.15.2/BTDRBASICCFG.md)
+- [BYPASSSTATUS（BYPASS状态）](configobject/UDG/20.15.2/BYPASSSTATUS.md)
+- [BYPASSSWITCH（节点自动进入BYPASS开关）](configobject/UDG/20.15.2/BYPASSSWITCH.md)
+- [CCOPOLICY（CCO策略）](configobject/UDG/20.15.2/CCOPOLICY.md)
+- [CERTESCAPESWITCH（证书过期逃生开关状态）](configobject/UDG/20.15.2/CERTESCAPESWITCH.md)
+- [CERTUPDATPARA（证书更新流程参数）](configobject/UDG/20.15.2/CERTUPDATPARA.md)
+- [CFCACHEPARA（内容过滤缓存参数）](configobject/UDG/20.15.2/CFCACHEPARA.md)
+- [CFGDEBUG（CFG诊断日志）](configobject/UDG/20.15.2/CFGDEBUG.md)
+- [CFPROTOCOLLST（开启内容过滤的协议列表）](configobject/UDG/20.15.2/CFPROTOCOLLST.md)
+- [CFSHEALCTRL（在复杂故障场景下自愈功能控制参数）](configobject/UDG/20.15.2/CFSHEALCTRL.md)
+- [CFSRVMODE（URL过滤功能业务模式）](configobject/UDG/20.15.2/CFSRVMODE.md)
+- [CHKPKGINTERVAL（软件包检查间隔）](configobject/UDG/20.15.2/CHKPKGINTERVAL.md)
+- [CHRFILESAVETIME（文件存留期设置）](configobject/UDG/20.15.2/CHRFILESAVETIME.md)
+- [CHRFILESTGMODE（上传至文件服务器的CHR文件转储方式）](configobject/UDG/20.15.2/CHRFILESTGMODE.md)
+- [CHRRECORDANONY（CHR单据的匿名化配置。）](configobject/UDG/20.15.2/CHRRECORDANONY.md)
+- [CHRRECORDSW（CHR本地存盘开关）](configobject/UDG/20.15.2/CHRRECORDSW.md)
+- [CLTVFYSWITCH（双向认证开关）](configobject/UDG/20.15.2/CLTVFYSWITCH.md)
+- [CMFFC（CMF流控参数）](configobject/UDG/20.15.2/CMFFC.md)
+- [CMFFCSWITCH（CMF流控开关配置数据）](configobject/UDG/20.15.2/CMFFCSWITCH.md)
+- [CNTCPUTHD（容器CPU阈值）](configobject/UDG/20.15.2/CNTCPUTHD.md)
+- [CNTMEMTHD（容器内存阈值）](configobject/UDG/20.15.2/CNTMEMTHD.md)
+- [CNTRESTHD（容器资源阈值）](configobject/UDG/20.15.2/CNTRESTHD.md)
+- [CNTTMPDIR（容器引擎临时目录）](configobject/UDG/20.15.2/CNTTMPDIR.md)
+- [COLOCATEDLBO（本地分流共部署参数）](configobject/UDG/20.15.2/COLOCATEDLBO.md)
+- [COMBASEHEALTH（Base平面通信质量）](configobject/UDG/20.15.2/COMBASEHEALTH.md)
+- [COMBRULEBKLST（组合规则黑名单）](configobject/UDG/20.15.2/COMBRULEBKLST.md)
+- [COSTOS（COS TOS映射策略）](configobject/UDG/20.15.2/COSTOS.md)
+- [CPACCESSLISTFUNC（CP白名单开关）](configobject/UDG/20.15.2/CPACCESSLISTFUNC.md)
+- [CPTEIDUALLOC（CP分配TEID-U开关）](configobject/UDG/20.15.2/CPTEIDUALLOC.md)
+- [CPUECOPOLICY（全局的CPU调频和休眠策略）](configobject/UDG/20.15.2/CPUECOPOLICY.md)
+- [CSLOGFC（日志流控开关）](configobject/UDG/20.15.2/CSLOGFC.md)
+- [CSLOGLEVEL（更新日志输出级别）](configobject/UDG/20.15.2/CSLOGLEVEL.md)
+- [CUINCONSPOLICY（CP和UP关键配置不一致的处理策略）](configobject/UDG/20.15.2/CUINCONSPOLICY.md)
+- [CUSTATECHK（SMF和UPF时间一致性检测）](configobject/UDG/20.15.2/CUSTATECHK.md)
+- [DATACHKPOLICY（APP配置数据检查功能）](configobject/UDG/20.15.2/DATACHKPOLICY.md)
+- [DATAPLANEGIINFMODE（用户面下行模式配置）](configobject/UDG/20.15.2/DATAPLANEGIINFMODE.md)
+- [DATAPLANEINFMODE（数据面接口模式）](configobject/UDG/20.15.2/DATAPLANEINFMODE.md)
+- [DBDRAGING（CSDB容灾数据老化开关）](configobject/UDG/20.15.2/DBDRAGING.md)
+- [DBSOFTPARA（CSDB软件调试参数表）](configobject/UDG/20.15.2/DBSOFTPARA.md)
+- [DBSTARTPARAS（DB启动参数值）](configobject/UDG/20.15.2/DBSTARTPARAS.md)
+- [DBTHRESHOLD（CSDB配置过载门限）](configobject/UDG/20.15.2/DBTHRESHOLD.md)
+- [DBUPGSTAGE（CSDB灰度升级阶段）](configobject/UDG/20.15.2/DBUPGSTAGE.md)
+- [DCSLIVEPARAS（DCS直播参数）](configobject/UDG/20.15.2/DCSLIVEPARAS.md)
+- [DCSSDPARA（DCS直通存储慢盘检测参数）](configobject/UDG/20.15.2/DCSSDPARA.md)
+- [DCSVODPARAS（DCS点播参数）](configobject/UDG/20.15.2/DCSVODPARAS.md)
+- [DDNCTRL（DDN控制策略）](configobject/UDG/20.15.2/DDNCTRL.md)
+- [DDOS（DDoS防攻击流控阈值）](configobject/UDG/20.15.2/DDOS.md)
+- [DEACTIVERATE（去活用户会话的速率）](configobject/UDG/20.15.2/DEACTIVERATE.md)
+- [DEDICATEDLBO（系统是否开启专网UPF动态分流功能）](configobject/UDG/20.15.2/DEDICATEDLBO.md)
+- [DFSRATTR（双发选收属性配置）](configobject/UDG/20.15.2/DFSRATTR.md)
+- [DHCP6CLIENTDUID（DHCPv6客户端DUID生成方式）](configobject/UDG/20.15.2/DHCP6CLIENTDUID.md)
+- [DISKCHKPARA（存储检测参数）](configobject/UDG/20.15.2/DISKCHKPARA.md)
+- [DISKPARTITION（资源磁盘分区过载配置）](configobject/UDG/20.15.2/DISKPARTITION.md)
+- [DNSINFO（DNS信息）](configobject/UDG/20.15.2/DNSINFO.md)
+- [DNSIPRESOURCE（DNS IP地址资源列表）](configobject/UDG/20.15.2/DNSIPRESOURCE.md)
+- [DNSLITEPARA（轻量DNS参数）](configobject/UDG/20.15.2/DNSLITEPARA.md)
+- [DOMAINSEPARATOR（前后缀分隔符）](configobject/UDG/20.15.2/DOMAINSEPARATOR.md)
+- [DRAUTOACTIVE（冷备容灾自动升主功能参数）](configobject/UDG/20.15.2/DRAUTOACTIVE.md)
+- [DRAUTOSWOVER（热备模式下是否开启自动倒换功能）](configobject/UDG/20.15.2/DRAUTOSWOVER.md)
+- [DRCHANNELPARA（容灾通道参数）](configobject/UDG/20.15.2/DRCHANNELPARA.md)
+- [DRCOUPLINGRESET（负荷分担容灾功能开启信息）](configobject/UDG/20.15.2/DRCOUPLINGRESET.md)
+- [DRGROUPABLEMENT（是否使能热备容灾组）](configobject/UDG/20.15.2/DRGROUPABLEMENT.md)
+- [DRHBNEGOTIMER（容灾定时器）](configobject/UDG/20.15.2/DRHBNEGOTIMER.md)
+- [DRKEYNF（监控的关键部件信息）](configobject/UDG/20.15.2/DRKEYNF.md)
+- [DROPFINALPKT（配额耗尽末包动作）](configobject/UDG/20.15.2/DROPFINALPKT.md)
+- [DRRESETLMTCOUNT（复位限制的次数）](configobject/UDG/20.15.2/DRRESETLMTCOUNT.md)
+- [DRSTBYRSTCTRL（运行备整系统复位开关）](configobject/UDG/20.15.2/DRSTBYRSTCTRL.md)
+- [DRTLSMODE（容灾控制通道TLS模式）](configobject/UDG/20.15.2/DRTLSMODE.md)
+- [ECOPOLICY（全局的CPU调频和休眠策略）](configobject/UDG/20.15.2/ECOPOLICY.md)
+- [ELECTIONABILITY（业务进程选举能力）](configobject/UDG/20.15.2/ELECTIONABILITY.md)
+- [ELECTSERVICE（仲裁服务状态）](configobject/UDG/20.15.2/ELECTSERVICE.md)
+- [EVTHEALCTRL（事件全局开关）](configobject/UDG/20.15.2/EVTHEALCTRL.md)
+- [EVTPARA（策略参数值）](configobject/UDG/20.15.2/EVTPARA.md)
+- [EVTSW（事件开关状态）](configobject/UDG/20.15.2/EVTSW.md)
+- [EXPBASICFUNC（体验业务基本功能）](configobject/UDG/20.15.2/EXPBASICFUNC.md)
+- [EXTOTTMATCHSW（OTT业务规则匹配功能是否使能）](configobject/UDG/20.15.2/EXTOTTMATCHSW.md)
+- [FABDIAGPARA（Pod Fabric平面亚健康诊断参数）](configobject/UDG/20.15.2/FABDIAGPARA.md)
+- [FABRICINALARMCFG（PAE告警配置）](configobject/UDG/20.15.2/FABRICINALARMCFG.md)
+- [FABRICINSWITCH（Fabric-In功能开关）](configobject/UDG/20.15.2/FABRICINSWITCH.md)
+- [FABRICMTU（PAE内联口MTU值）](configobject/UDG/20.15.2/FABRICMTU.md)
+- [FABRICSUBHEALTHY（FABRIC内联口亚健康信息）](configobject/UDG/20.15.2/FABRICSUBHEALTHY.md)
+- [FASTRECOVERY（全局业务快速恢复配置）](configobject/UDG/20.15.2/FASTRECOVERY.md)
+- [FAULTCHECKBYFABRIC（故障快速检测配置信息）](configobject/UDG/20.15.2/FAULTCHECKBYFABRIC.md)
+- [FAULTDETECT（故障策略信息）](configobject/UDG/20.15.2/FAULTDETECT.md)
+- [FCSWITCH（流控开关）](configobject/UDG/20.15.2/FCSWITCH.md)
+- [FEHBRESET（FE心跳故障复位功能开关）](configobject/UDG/20.15.2/FEHBRESET.md)
+- [FEHEALCTRL（FE自愈功能配置）](configobject/UDG/20.15.2/FEHEALCTRL.md)
+- [FEHEARTBEAT（FE心跳功能开关）](configobject/UDG/20.15.2/FEHEARTBEAT.md)
+- [FEILOGSWITCH（调测日志开关）](configobject/UDG/20.15.2/FEILOGSWITCH.md)
+- [FEIPSTSEND（PST广播开关状态）](configobject/UDG/20.15.2/FEIPSTSEND.md)
+- [FETMFLOW（FETM流控配置）](configobject/UDG/20.15.2/FETMFLOW.md)
+- [FILEDELPOLICY（文件删除策略）](configobject/UDG/20.15.2/FILEDELPOLICY.md)
+- [FLOWAGETIME（五元组老化时间）](configobject/UDG/20.15.2/FLOWAGETIME.md)
+- [FLOWLETPARA（大流优化参数）](configobject/UDG/20.15.2/FLOWLETPARA.md)
+- [FOOLPROOFSWITCH（防呆开关状态）](configobject/UDG/20.15.2/FOOLPROOFSWITCH.md)
+- [FPIFUNC（FPI差异化控制功能）](configobject/UDG/20.15.2/FPIFUNC.md)
+- [FUIENRICHMENT（FUI增强参数）](configobject/UDG/20.15.2/FUIENRICHMENT.md)
+- [FUIFLOWCTLACT（欠费重定向流控动作）](configobject/UDG/20.15.2/FUIFLOWCTLACT.md)
+- [FUIFLOWCTLPARA（欠费重定向流控参数）](configobject/UDG/20.15.2/FUIFLOWCTLPARA.md)
+- [FWDFCPARA（转发面流控参数）](configobject/UDG/20.15.2/FWDFCPARA.md)
+- [FWDPARA（转发参数）](configobject/UDG/20.15.2/FWDPARA.md)
+- [FWSOFTPARA（ServiceFabric软参）](configobject/UDG/20.15.2/FWSOFTPARA.md)
+- [FWSOFTPARABITS（ServiceFabric软参比特位）](configobject/UDG/20.15.2/FWSOFTPARABITS.md)
+- [GCSMOOTHSWITCH（GC平滑开关）](configobject/UDG/20.15.2/GCSMOOTHSWITCH.md)
+- [GIREDIRECTFUNC（全局Gi重定向信息）](configobject/UDG/20.15.2/GIREDIRECTFUNC.md)
+- [GLBAPPPARA（全局app参数）](configobject/UDG/20.15.2/GLBAPPPARA.md)
+- [GLBCFFUNC（内容过滤全局开关）](configobject/UDG/20.15.2/GLBCFFUNC.md)
+- [GLBDLBUFTIME（全局下行数据缓存时长配置）](configobject/UDG/20.15.2/GLBDLBUFTIME.md)
+- [GLBDLLTBUFFER（全局下行数据长时间缓存配置）](configobject/UDG/20.15.2/GLBDLLTBUFFER.md)
+- [GLBIPV6INFID（整机IPv6接口ID配置）](configobject/UDG/20.15.2/GLBIPV6INFID.md)
+- [GLBNSHHDNPLY（NSH头增强全局策略）](configobject/UDG/20.15.2/GLBNSHHDNPLY.md)
+- [GLBOSLELBWMSW（整机操作系统级带宽管理开关）](configobject/UDG/20.15.2/GLBOSLELBWMSW.md)
+- [GLBRLYOTCPCTRL（媒体中继全局回源TCP控制）](configobject/UDG/20.15.2/GLBRLYOTCPCTRL.md)
+- [GLBRLYSHTTPCTL（媒体中继全局业务HTTP控制）](configobject/UDG/20.15.2/GLBRLYSHTTPCTL.md)
+- [GLBRLYSPARACTL（媒体中继全局业务参数控制）](configobject/UDG/20.15.2/GLBRLYSPARACTL.md)
+- [GLBRLYSTCPCTRL（媒体中继全局业务TCP控制）](configobject/UDG/20.15.2/GLBRLYSTCPCTRL.md)
+- [GLBSMFATTR（全局SMF属性）](configobject/UDG/20.15.2/GLBSMFATTR.md)
+- [GLOBALFABRICOAM（OAM全局配置）](configobject/UDG/20.15.2/GLOBALFABRICOAM.md)
+- [GLOBALIMS（全局IMS配置）](configobject/UDG/20.15.2/GLOBALIMS.md)
+- [GLOBALL2TP（L2TP配置）](configobject/UDG/20.15.2/GLOBALL2TP.md)
+- [GLOBUEMUTACC（全局用户互访控制配置）](configobject/UDG/20.15.2/GLOBUEMUTACC.md)
+- [GTSM（GTSM全局配置属性）](configobject/UDG/20.15.2/GTSM.md)
+- [GYONESHOT（Gy一次重定向参数）](configobject/UDG/20.15.2/GYONESHOT.md)
+- [HAFEDETECT（HAFETCD网络亚健康探测参数）](configobject/UDG/20.15.2/HAFEDETECT.md)
+- [HAFFUNC（HAF服务内部功能的参数）](configobject/UDG/20.15.2/HAFFUNC.md)
+- [HBUSRCTRL（高带宽用户功能控制参数）](configobject/UDG/20.15.2/HBUSRCTRL.md)
+- [HEADENGLBPARA（头增强全局参数）](configobject/UDG/20.15.2/HEADENGLBPARA.md)
+- [HEADENRATTYPE（头增强RAT类型定义）](configobject/UDG/20.15.2/HEADENRATTYPE.md)
+- [HIGHRISKPERIOD（高危时间段提示状态）](configobject/UDG/20.15.2/HIGHRISKPERIOD.md)
+- [HOSTDOMAINPARA（主机域参数）](configobject/UDG/20.15.2/HOSTDOMAINPARA.md)
+- [HOSTGLBCONFIG（主机收发全局属性）](configobject/UDG/20.15.2/HOSTGLBCONFIG.md)
+- [HOSTSTCGLB（全局协议报文统计配置）](configobject/UDG/20.15.2/HOSTSTCGLB.md)
+- [HTTPCCACONF（HTTP CCA属性）](configobject/UDG/20.15.2/HTTPCCACONF.md)
+- [HTTPCONF（HTTP属性）](configobject/UDG/20.15.2/HTTPCONF.md)
+- [HTTPESCAPE（HTTP对于URL转义的参数）](configobject/UDG/20.15.2/HTTPESCAPE.md)
+- [HTTPFCCONF（HTTP流控属性）](configobject/UDG/20.15.2/HTTPFCCONF.md)
+- [HTTPFIXEDFCMSG（HTTP指定消息类型固定速率流控信息）](configobject/UDG/20.15.2/HTTPFIXEDFCMSG.md)
+- [HTTPFQDNSW（HTTP是否支持FQDN）](configobject/UDG/20.15.2/HTTPFQDNSW.md)
+- [HTTPGLBFIXEDBWFC（HTTP全局固定带宽流控）](configobject/UDG/20.15.2/HTTPGLBFIXEDBWFC.md)
+- [HTTPHTRCFG（HTR流控全局配置）](configobject/UDG/20.15.2/HTTPHTRCFG.md)
+- [HTTPINFORPT（HTTP连接信息上报参数）](configobject/UDG/20.15.2/HTTPINFORPT.md)
+- [HTTPMEMFC（HTTP内存流控）](configobject/UDG/20.15.2/HTTPMEMFC.md)
+- [HTTPMSGLOGPARA（HTTP消息日志参数）](configobject/UDG/20.15.2/HTTPMSGLOGPARA.md)
+- [HTTPSRVLBSW（HTTP服务端负载重均衡功能）](configobject/UDG/20.15.2/HTTPSRVLBSW.md)
+- [IFCMCFG（IFCM配置信息）](configobject/UDG/20.15.2/IFCMCFG.md)
+- [IFFLOWALMTHD（接口带宽利用率告警阈值）](configobject/UDG/20.15.2/IFFLOWALMTHD.md)
+- [IFGLOBALCONFIG（接口全局配置）](configobject/UDG/20.15.2/IFGLOBALCONFIG.md)
+- [IFIPV6ENABLE（接口IPv6使能）](configobject/UDG/20.15.2/IFIPV6ENABLE.md)
+- [IFIPV6ENABLEIPSEC（接口IPv6使能）](configobject/UDG/20.15.2/IFIPV6ENABLEIPSEC.md)
+- [IFMTUFRAGMODE（分片方式）](configobject/UDG/20.15.2/IFMTUFRAGMODE.md)
+- [IGMPSNOOPINGATTR（IGMP Snooping属性配置）](configobject/UDG/20.15.2/IGMPSNOOPINGATTR.md)
+- [IKEGLOBALCONFIG（IKE全局配置）](configobject/UDG/20.15.2/IKEGLOBALCONFIG.md)
+- [IMSBYPASS（IMS Bypass功能的相关参数）](configobject/UDG/20.15.2/IMSBYPASS.md)
+- [INERTIALOPER（惯性运行功能配置）](configobject/UDG/20.15.2/INERTIALOPER.md)
+- [INNERTLSMODE（TLS模式）](configobject/UDG/20.15.2/INNERTLSMODE.md)
+- [INSAFEATTMOUT（流特征节点超时时间）](configobject/UDG/20.15.2/INSAFEATTMOUT.md)
+- [INSAFULLIFSW（全量智能SA识别开关）](configobject/UDG/20.15.2/INSAFULLIFSW.md)
+- [INSAGLBCFG（智能识别全局配置）](configobject/UDG/20.15.2/INSAGLBCFG.md)
+- [IOTCAPABILITY（物联网能力上报）](configobject/UDG/20.15.2/IOTCAPABILITY.md)
+- [IPALLOCBYLOCGLBSW（基于位置区分配地址的全局开关）](configobject/UDG/20.15.2/IPALLOCBYLOCGLBSW.md)
+- [IPALLOCBYLOCSW（基于位置区分配地址的开关）](configobject/UDG/20.15.2/IPALLOCBYLOCSW.md)
+- [IPALLOCBYSMFGLBSW（基于SMF分配地址的全局开关）](configobject/UDG/20.15.2/IPALLOCBYSMFGLBSW.md)
+- [IPALLOCBYSMFSW（基于SMF分配地址开关）](configobject/UDG/20.15.2/IPALLOCBYSMFSW.md)
+- [IPALLOCRULE（地址分配规则）](configobject/UDG/20.15.2/IPALLOCRULE.md)
+- [IPFARMGLOBAL（IPFarm全局参数）](configobject/UDG/20.15.2/IPFARMGLOBAL.md)
+- [IPFRR（IP FRR）](configobject/UDG/20.15.2/IPFRR.md)
+- [IPOPTSECURITY（IP选项安全配置）](configobject/UDG/20.15.2/IPOPTSECURITY.md)
+- [IPPOOLALMTHD（本地地址池占用率告警阈值）](configobject/UDG/20.15.2/IPPOOLALMTHD.md)
+- [IPSECURITYSWITCH（IP选项安全开关）](configobject/UDG/20.15.2/IPSECURITYSWITCH.md)
+- [IPSPOOFALMTHD（IP Spoofing攻击告警阈值）](configobject/UDG/20.15.2/IPSPOOFALMTHD.md)
+- [IPSPOOFFUNC（展示IP防攻击功能状态）](configobject/UDG/20.15.2/IPSPOOFFUNC.md)
+- [IPSQMADJUST（IPSQM调整参数）](configobject/UDG/20.15.2/IPSQMADJUST.md)
+- [IPSQMQDEPTH（IPSQM缓存队列深度）](configobject/UDG/20.15.2/IPSQMQDEPTH.md)
+- [IPV4FRAGPLCY（IPv4分片策略）](configobject/UDG/20.15.2/IPV4FRAGPLCY.md)
+- [IPV4THRESHOLD（IPv4阈值）](configobject/UDG/20.15.2/IPV4THRESHOLD.md)
+- [IPV6FRAGPLCY（IPv6分片策略）](configobject/UDG/20.15.2/IPV6FRAGPLCY.md)
+- [IPV6GLOBALCONFIG（IPv6全局配置）](configobject/UDG/20.15.2/IPV6GLOBALCONFIG.md)
+- [IPV6PARA（IPv6参数）](configobject/UDG/20.15.2/IPV6PARA.md)
+- [IPV6THRESHOLD（IPv6阈值）](configobject/UDG/20.15.2/IPV6THRESHOLD.md)
+- [ISUPODCPUTHD（ISU POD业务CPU过载告警阈值）](configobject/UDG/20.15.2/ISUPODCPUTHD.md)
+- [KPIMONSWITCH（KPI异常检测功能开关）](configobject/UDG/20.15.2/KPIMONSWITCH.md)
+- [KUBEPROBE（是否放通就绪状态检测）](configobject/UDG/20.15.2/KUBEPROBE.md)
+- [L2TPN4KEY（L2TP N4密码配置）](configobject/UDG/20.15.2/L2TPN4KEY.md)
+- [LBFC（流控开关）](configobject/UDG/20.15.2/LBFC.md)
+- [LBSOFTPARA（CSLB软件调试参数表）](configobject/UDG/20.15.2/LBSOFTPARA.md)
+- [LBTNIPINIPSWITCH（CSLB隧道IP-in-IP开关）](configobject/UDG/20.15.2/LBTNIPINIPSWITCH.md)
+- [LBTNTSTPARA（CSLB隧道探测参数）](configobject/UDG/20.15.2/LBTNTSTPARA.md)
+- [LDPBFD（LDP BFD配置）](configobject/UDG/20.15.2/LDPBFD.md)
+- [LDPGLOBAL（LDP全局配置）](configobject/UDG/20.15.2/LDPGLOBAL.md)
+- [LICCTRLALM（License容量告警配置）](configobject/UDG/20.15.2/LICCTRLALM.md)
+- [LICENSESWITCH（License配置项开关）](configobject/UDG/20.15.2/LICENSESWITCH.md)
+- [LIMITMBSWITCH（有界邮箱开关配置状态）](configobject/UDG/20.15.2/LIMITMBSWITCH.md)
+- [LINKALMCFG（TWAMP的Light模式“链路丢包率过高告警”配置）](configobject/UDG/20.15.2/LINKALMCFG.md)
+- [LOADCHECKINFO（CSLB负载不均衡检测功能的参数）](configobject/UDG/20.15.2/LOADCHECKINFO.md)
+- [LOGCLEANPOLICY（日志老化策略）](configobject/UDG/20.15.2/LOGCLEANPOLICY.md)
+- [LOGINALM（登录告警策略）](configobject/UDG/20.15.2/LOGINALM.md)
+- [LOOPUDP（UDP环回配置）](configobject/UDG/20.15.2/LOOPUDP.md)
+- [LOWLATENCYSW（低时延业务开关）](configobject/UDG/20.15.2/LOWLATENCYSW.md)
+- [LSPVGLOBALCFG（LSPV全局属性）](configobject/UDG/20.15.2/LSPVGLOBALCFG.md)
+- [MASALMRPTMODE（5G告警上报模式）](configobject/UDG/20.15.2/MASALMRPTMODE.md)
+- [MBSQOSGLOBAL（MBS QosGlobal配置）](configobject/UDG/20.15.2/MBSQOSGLOBAL.md)
+- [MCSWITCH（多连接开关配置数据）](configobject/UDG/20.15.2/MCSWITCH.md)
+- [MEASMETRIC（话统测量指标参数）](configobject/UDG/20.15.2/MEASMETRIC.md)
+- [MEASMU（话统测量单元模型）](configobject/UDG/20.15.2/MEASMU.md)
+- [MMLCFGDOMAIN（批量设置绑定域信息）](configobject/UDG/20.15.2/MMLCFGDOMAIN.md)
+- [MONNFTHR（正常状态网元的占比阈值）](configobject/UDG/20.15.2/MONNFTHR.md)
+- [MPLSSITE（MPLS全局配置）](configobject/UDG/20.15.2/MPLSSITE.md)
+- [MSETCDTTL（租约时长）](configobject/UDG/20.15.2/MSETCDTTL.md)
+- [MSFAULTALARM（告警开关配置数据）](configobject/UDG/20.15.2/MSFAULTALARM.md)
+- [MSFAULTTOLERANCE（故障检测参数）](configobject/UDG/20.15.2/MSFAULTTOLERANCE.md)
+- [MSSCOMMMATCH（通信模块规则匹配开关）](configobject/UDG/20.15.2/MSSCOMMMATCH.md)
+- [MSSDEBUGSWITCH（维测信息统计开关）](configobject/UDG/20.15.2/MSSDEBUGSWITCH.md)
+- [MSSDEBUGSWITCHM（维测信息统计开关）](configobject/UDG/20.15.2/MSSDEBUGSWITCHM.md)
+- [MSSLOGRULE（Log过滤或非抑制开关）](configobject/UDG/20.15.2/MSSLOGRULE.md)
+- [MSSPBUFREUSE（PBUF重用信息）](configobject/UDG/20.15.2/MSSPBUFREUSE.md)
+- [MSSPBUFTRACE（PBUF轨迹设置的开关）](configobject/UDG/20.15.2/MSSPBUFTRACE.md)
+- [MSSPBUFTRACELT（PBUF轨迹开关状态和持续时间）](configobject/UDG/20.15.2/MSSPBUFTRACELT.md)
+- [MSSPMDMATCH（端口报文匹配统计信息）](configobject/UDG/20.15.2/MSSPMDMATCH.md)
+- [MSSRULE（匹配规则）](configobject/UDG/20.15.2/MSSRULE.md)
+- [MSSRULEM（匹配规则）](configobject/UDG/20.15.2/MSSRULEM.md)
+- [MSSTBMFILTER（MSS表项开关过滤状态）](configobject/UDG/20.15.2/MSSTBMFILTER.md)
+- [MSSWORKFILTER（Work过滤规则信息）](configobject/UDG/20.15.2/MSSWORKFILTER.md)
+- [MTSCFG（消息跟踪配置参数）](configobject/UDG/20.15.2/MTSCFG.md)
+- [MULTIDNNPARA（MultiDNN参数）](configobject/UDG/20.15.2/MULTIDNNPARA.md)
+- [N6MBMODE（N6mb接口数据传输的优选方式及端口配置）](configobject/UDG/20.15.2/N6MBMODE.md)
+- [NCCPOLICY（NCC策略）](configobject/UDG/20.15.2/NCCPOLICY.md)
+- [NDGLOBALCONFIG（IPv6 ND系统配置）](configobject/UDG/20.15.2/NDGLOBALCONFIG.md)
+- [NDIFCONFIG（IPv6 ND接口配置）](configobject/UDG/20.15.2/NDIFCONFIG.md)
+- [NETSUBHEALTH（网络亚健康参数）](configobject/UDG/20.15.2/NETSUBHEALTH.md)
+- [NETYPE（ NeType默认值）](configobject/UDG/20.15.2/NETYPE.md)
+- [NEWCERTSWITCH（证书开关状态）](configobject/UDG/20.15.2/NEWCERTSWITCH.md)
+- [NGDFSRFUNC（双发选收配置）](configobject/UDG/20.15.2/NGDFSRFUNC.md)
+- [NGLANATTR（5G LAN属性配置）](configobject/UDG/20.15.2/NGLANATTR.md)
+- [NGLANCHGCTRL（5G LAN计费控制相关参数）](configobject/UDG/20.15.2/NGLANCHGCTRL.md)
+- [NGLANFUNC（5G LAN功能配置）](configobject/UDG/20.15.2/NGLANFUNC.md)
+- [NGLOOPDETFUNC（5G LAN环路检测配置）](configobject/UDG/20.15.2/NGLOOPDETFUNC.md)
+- [NGVNUEMUTACC（5G LAN组下用户互访控制配置）](configobject/UDG/20.15.2/NGVNUEMUTACC.md)
+- [NODECHKPARA（节点检测参数）](configobject/UDG/20.15.2/NODECHKPARA.md)
+- [NODEHEALCTRL（Node自愈策略控制参数）](configobject/UDG/20.15.2/NODEHEALCTRL.md)
+- [NODEREPSWITCH（节点查询自动修复开关）](configobject/UDG/20.15.2/NODEREPSWITCH.md)
+- [NPECMPLOCALPRE（优选本单板TRUNK出接口开关）](configobject/UDG/20.15.2/NPECMPLOCALPRE.md)
+- [NPFABRICHEALTHY（全局亚健康相关配置）](configobject/UDG/20.15.2/NPFABRICHEALTHY.md)
+- [NPFABRICOAM（全局OAM相关配置）](configobject/UDG/20.15.2/NPFABRICOAM.md)
+- [NPFECSWITCH（NP FEC状态）](configobject/UDG/20.15.2/NPFECSWITCH.md)
+- [NPLINKCHECK（全局NP交换网口检测配置）](configobject/UDG/20.15.2/NPLINKCHECK.md)
+- [NPPORTCHKPARA（NP端口检测的参数）](configobject/UDG/20.15.2/NPPORTCHKPARA.md)
+- [NPSECPOLICYCAR（NP安全防攻击CAR规则）](configobject/UDG/20.15.2/NPSECPOLICYCAR.md)
+- [NPWATCHDOG（喂狗功能相关配置）](configobject/UDG/20.15.2/NPWATCHDOG.md)
+- [NTPCFG（NTP时间同步参数）](configobject/UDG/20.15.2/NTPCFG.md)
+- [NTPSFTD（NTP软参）](configobject/UDG/20.15.2/NTPSFTD.md)
+- [OMIP（OM IP）](configobject/UDG/20.15.2/OMIP.md)
+- [OMSWITCH（OM功能开关）](configobject/UDG/20.15.2/OMSWITCH.md)
+- [OSCONFIG（OS配置）](configobject/UDG/20.15.2/OSCONFIG.md)
+- [OSPFDEFIMPROUTCFG（OSPF引入路由默认配置）](configobject/UDG/20.15.2/OSPFDEFIMPROUTCFG.md)
+- [OSPFGR（OSPF的平滑重启配置）](configobject/UDG/20.15.2/OSPFGR.md)
+- [OSPFV3DEFIMPROUTCFG（OSPFv3引入路由默认配置）](configobject/UDG/20.15.2/OSPFV3DEFIMPROUTCFG.md)
+- [OVERLOADQOSCTRL（过载限速参数）](configobject/UDG/20.15.2/OVERLOADQOSCTRL.md)
+- [PAEBATCHRECVNUM（PAE批量接收报文数）](configobject/UDG/20.15.2/PAEBATCHRECVNUM.md)
+- [PAEDEBUGSWITCH（使能或去使能PAE转发日志）](configobject/UDG/20.15.2/PAEDEBUGSWITCH.md)
+- [PAEDYETRACECFG（PAE染色流控开关及阈值参数）](configobject/UDG/20.15.2/PAEDYETRACECFG.md)
+- [PAEEXAMINATION（PAE故障检测使能配置）](configobject/UDG/20.15.2/PAEEXAMINATION.md)
+- [PAEMULTQUE（PAE多队列功能开关）](configobject/UDG/20.15.2/PAEMULTQUE.md)
+- [PAEPARAMS（PAE参数）](configobject/UDG/20.15.2/PAEPARAMS.md)
+- [PAERESOVLDTRHD（PAE关键资源不足告警参数）](configobject/UDG/20.15.2/PAERESOVLDTRHD.md)
+- [PAESCHEDMOD（PAE Channel调度模式）](configobject/UDG/20.15.2/PAESCHEDMOD.md)
+- [PAESWITCH（PAE开关信息）](configobject/UDG/20.15.2/PAESWITCH.md)
+- [PATHCTRLALMTHD（大量路径断告警告警阈值）](configobject/UDG/20.15.2/PATHCTRLALMTHD.md)
+- [PATHDWNALMGLO（单条路径断告警抑制参数全局配置）](configobject/UDG/20.15.2/PATHDWNALMGLO.md)
+- [PATHRESALMTHD（路径资源不足告警阈值）](configobject/UDG/20.15.2/PATHRESALMTHD.md)
+- [PATHSTATUSRPT（用户面路径状态上报功能）](configobject/UDG/20.15.2/PATHSTATUSRPT.md)
+- [PCCRULECTRL（PCC QoS相关控制参数）](configobject/UDG/20.15.2/PCCRULECTRL.md)
+- [PDFUNC（报文检测功能配置）](configobject/UDG/20.15.2/PDFUNC.md)
+- [PDNAUTOTSTSW（PDN自动探测开关状态）](configobject/UDG/20.15.2/PDNAUTOTSTSW.md)
+- [PFCPLOADRPT（系统负荷上报开关）](configobject/UDG/20.15.2/PFCPLOADRPT.md)
+- [PFCPOVERLOADRPT（过载上报开关）](configobject/UDG/20.15.2/PFCPOVERLOADRPT.md)
+- [PFCPSSUSTATERPT（智能单元状态上报相关属性）](configobject/UDG/20.15.2/PFCPSSUSTATERPT.md)
+- [PKICRLCHECK（CRL检查）](configobject/UDG/20.15.2/PKICRLCHECK.md)
+- [PKTFRAMEIDENT（帧包识别功能相关参数）](configobject/UDG/20.15.2/PKTFRAMEIDENT.md)
+- [PLCYCKTIMERINR（策略类型和核查间隔）](configobject/UDG/20.15.2/PLCYCKTIMERINR.md)
+- [PLCYCLSWITCH（冗余策略老化开关）](configobject/UDG/20.15.2/PLCYCLSWITCH.md)
+- [PLYFLUSHSWITCH（集合类型策略刷新开关状态）](configobject/UDG/20.15.2/PLYFLUSHSWITCH.md)
+- [PMCFG（性能统计配置参数）](configobject/UDG/20.15.2/PMCFG.md)
+- [PODCONFIG（POD配置查询）](configobject/UDG/20.15.2/PODCONFIG.md)
+- [PODCPUTHD（POD CPU阈值）](configobject/UDG/20.15.2/PODCPUTHD.md)
+- [PODHEALCTRL（自愈功能配置信息）](configobject/UDG/20.15.2/PODHEALCTRL.md)
+- [PODHEALPLY（Pod自愈策略）](configobject/UDG/20.15.2/PODHEALPLY.md)
+- [PODMEMTHD（POD内存阈值）](configobject/UDG/20.15.2/PODMEMTHD.md)
+- [POLICYFCSWITCH（策略流控开关状态）](configobject/UDG/20.15.2/POLICYFCSWITCH.md)
+- [POOLALMTHD（本地指定地址池占用率告警阈值）](configobject/UDG/20.15.2/POOLALMTHD.md)
+- [PPPCFG（PPP配置）](configobject/UDG/20.15.2/PPPCFG.md)
+- [PREFIXLIMIT（前缀限制）](configobject/UDG/20.15.2/PREFIXLIMIT.md)
+- [PREFIXURLPARA（前缀URL参数）](configobject/UDG/20.15.2/PREFIXURLPARA.md)
+- [PROCFAULTALM（进程故障告警上报模式）](configobject/UDG/20.15.2/PROCFAULTALM.md)
+- [PROCRESTHD（进程资源告警阈值）](configobject/UDG/20.15.2/PROCRESTHD.md)
+- [PSPKUBEPROBE（是否放通管道大颗粒readiness就绪探测）](configobject/UDG/20.15.2/PSPKUBEPROBE.md)
+- [QOEBASICFUNC（QoE基本功能）](configobject/UDG/20.15.2/QOEBASICFUNC.md)
+- [QOSACTFILTER（流行为规则）](configobject/UDG/20.15.2/QOSACTFILTER.md)
+- [QOSBA（QoS BA）](configobject/UDG/20.15.2/QOSBA.md)
+- [QOSCAR（QosCar配置）](configobject/UDG/20.15.2/QOSCAR.md)
+- [QOSGLOBAL（QosGlobal配置）](configobject/UDG/20.15.2/QOSGLOBAL.md)
+- [QOSPHB（QoS PHB）](configobject/UDG/20.15.2/QOSPHB.md)
+- [QOSSHAPE（QosShape配置）](configobject/UDG/20.15.2/QOSSHAPE.md)
+- [QOSURRRPTCTRL（QoS URR上报的相关参数）](configobject/UDG/20.15.2/QOSURRRPTCTRL.md)
+- [REASTIMEOUT（IPv4报文重组超时配置）](configobject/UDG/20.15.2/REASTIMEOUT.md)
+- [REDUNDUSER（静态地址用户路由冗余功能）](configobject/UDG/20.15.2/REDUNDUSER.md)
+- [REFRESHSRV（业务刷新）](configobject/UDG/20.15.2/REFRESHSRV.md)
+- [RELAYFUNC（媒体中继功能配置）](configobject/UDG/20.15.2/RELAYFUNC.md)
+- [RELAYSALMPARA（媒体中继业务告警参数配置）](configobject/UDG/20.15.2/RELAYSALMPARA.md)
+- [RESCHKSWITCH（RCF核查开关状态）](configobject/UDG/20.15.2/RESCHKSWITCH.md)
+- [RESTHRESHOLD（资源过载和过载恢复阈值）](configobject/UDG/20.15.2/RESTHRESHOLD.md)
+- [ROUTERELAYTUNNEL（路由迭代隧道功能开关）](configobject/UDG/20.15.2/ROUTERELAYTUNNEL.md)
+- [RPTBASICRECCFG（基础单据上报功能开关）](configobject/UDG/20.15.2/RPTBASICRECCFG.md)
+- [RPTENCRYPT（业务报表加密算法配置）](configobject/UDG/20.15.2/RPTENCRYPT.md)
+- [RPTGLBCFG（业务报表全局开关）](configobject/UDG/20.15.2/RPTGLBCFG.md)
+- [RPTGLBPARA（业务报表全局参数）](configobject/UDG/20.15.2/RPTGLBPARA.md)
+- [RPTPERIOD（APN N6故障状态上报周期）](configobject/UDG/20.15.2/RPTPERIOD.md)
+- [RPTPROTMPSW（业务报表承载协议映射开关）](configobject/UDG/20.15.2/RPTPROTMPSW.md)
+- [RPTRATELT（业务报表消息流控配置）](configobject/UDG/20.15.2/RPTRATELT.md)
+- [RSCBOXHEALCTRL（ResourceBox自愈策略控制参数）](configobject/UDG/20.15.2/RSCBOXHEALCTRL.md)
+- [RTSDNNPARA（RTSDNN参数）](configobject/UDG/20.15.2/RTSDNNPARA.md)
+- [RUCPUTHRESH（RU CPU占用率告警上报门限和告警恢复门限）](configobject/UDG/20.15.2/RUCPUTHRESH.md)
+- [RUDISKPARTITION（RU磁盘过载配置）](configobject/UDG/20.15.2/RUDISKPARTITION.md)
+- [RUFAULTTOLERANCE（资源单元故障容忍时间）](configobject/UDG/20.15.2/RUFAULTTOLERANCE.md)
+- [RURESTHRESHOLD（RU资源过载和去过载阈值）](configobject/UDG/20.15.2/RURESTHRESHOLD.md)
+- [SAAITRAINPARA（基于SA的Intelligence训练参数）](configobject/UDG/20.15.2/SAAITRAINPARA.md)
+- [SACOMMONPARA（SA业务公共参数）](configobject/UDG/20.15.2/SACOMMONPARA.md)
+- [SAIFUNC（SAI差异化控制功能）](configobject/UDG/20.15.2/SAIFUNC.md)
+- [SAVOIPCOMMONPARA（SA VOIP业务公共参数）](configobject/UDG/20.15.2/SAVOIPCOMMONPARA.md)
+- [SBILINKSETCFG（服务化接口链路集属性）](configobject/UDG/20.15.2/SBILINKSETCFG.md)
+- [SBILNKCTRLSW（服务化接口链路自动控制功能开关）](configobject/UDG/20.15.2/SBILNKCTRLSW.md)
+- [SBITCPPARA（SBI接口TCP控制参数）](configobject/UDG/20.15.2/SBITCPPARA.md)
+- [SCALINGCFG（自动扩缩容配置）](configobject/UDG/20.15.2/SCALINGCFG.md)
+- [SCALINGSWITCH（扩缩容开关）](configobject/UDG/20.15.2/SCALINGSWITCH.md)
+- [SCFMVNFMLNK（超时时间配置）](configobject/UDG/20.15.2/SCFMVNFMLNK.md)
+- [SDRPARAMS（SDR参数）](configobject/UDG/20.15.2/SDRPARAMS.md)
+- [SDRTRANS（SDR传输能力）](configobject/UDG/20.15.2/SDRTRANS.md)
+- [SECALG（安全算法）](configobject/UDG/20.15.2/SECALG.md)
+- [SECARP（ARP快回）](configobject/UDG/20.15.2/SECARP.md)
+- [SECARPGRAT（免费ARP过滤）](configobject/UDG/20.15.2/SECARPGRAT.md)
+- [SECARPSAFEGUARD（ARP双向分离）](configobject/UDG/20.15.2/SECARPSAFEGUARD.md)
+- [SECAUTH（查看二次授权功能状态）](configobject/UDG/20.15.2/SECAUTH.md)
+- [SECDEVURPF（设备URPF）](configobject/UDG/20.15.2/SECDEVURPF.md)
+- [SECICMPREPLY（ICMP快回）](configobject/UDG/20.15.2/SECICMPREPLY.md)
+- [SECND（ND快回）](configobject/UDG/20.15.2/SECND.md)
+- [SECPOLICYALLPKTLEVEL（上送报文总体速率等级）](configobject/UDG/20.15.2/SECPOLICYALLPKTLEVEL.md)
+- [SECPOLICYALLPKTVALUE（上送报文总体速率值）](configobject/UDG/20.15.2/SECPOLICYALLPKTVALUE.md)
+- [SECPOLICYAPPLNK（应用联动默认动作）](configobject/UDG/20.15.2/SECPOLICYAPPLNK.md)
+- [SECPOLICYPRIO（报文上送优先级）](configobject/UDG/20.15.2/SECPOLICYPRIO.md)
+- [SECPOLICYSWITCH（TCPIP报文以及应用层、黑名单、白名单防御机制使能状态）](configobject/UDG/20.15.2/SECPOLICYSWITCH.md)
+- [SERVERRTTSTAT（服务器时延统计功能配置）](configobject/UDG/20.15.2/SERVERRTTSTAT.md)
+- [SESSCHKFUNC（会话核查配置）](configobject/UDG/20.15.2/SESSCHKFUNC.md)
+- [SFEBFDPKTIPID（BFD报文IPID的使能标记）](configobject/UDG/20.15.2/SFEBFDPKTIPID.md)
+- [SFEFEIDEBUG（FEI报文、进程日志开关）](configobject/UDG/20.15.2/SFEFEIDEBUG.md)
+- [SFEPASSGREFRAG（SFE透传GRE分片报文使能配置）](configobject/UDG/20.15.2/SFEPASSGREFRAG.md)
+- [SFEPKTBATCHRCV（SFE批量收取的报文数量）](configobject/UDG/20.15.2/SFEPKTBATCHRCV.md)
+- [SFEPKTRCVMODE（SFE当前收包模式）](configobject/UDG/20.15.2/SFEPKTRCVMODE.md)
+- [SFEPKTSTAT（SFE报文统计信息）](configobject/UDG/20.15.2/SFEPKTSTAT.md)
+- [SFERESALMTHD（VNRS内部资源不足告警的阈值参数）](configobject/UDG/20.15.2/SFERESALMTHD.md)
+- [SFETRACECPUFC（VNRS IP消息跟踪的CPU流控阈值）](configobject/UDG/20.15.2/SFETRACECPUFC.md)
+- [SFETRACEFCCFG（VNRS IP消息跟踪的流控使能配置）](configobject/UDG/20.15.2/SFETRACEFCCFG.md)
+- [SFETRACEQUEFC（VNRS IP消息跟踪的队列流控配置）](configobject/UDG/20.15.2/SFETRACEQUEFC.md)
+- [SFIPCPUALMTHD（告警阈值）](configobject/UDG/20.15.2/SFIPCPUALMTHD.md)
+- [SFTPALG（SFTP协议算法）](configobject/UDG/20.15.2/SFTPALG.md)
+- [SGLPASSPERIOD（单通检测周期）](configobject/UDG/20.15.2/SGLPASSPERIOD.md)
+- [SGWACLFUNC（SGW ACL功能）](configobject/UDG/20.15.2/SGWACLFUNC.md)
+- [SIGDSCP（信令报文DSCP值）](configobject/UDG/20.15.2/SIGDSCP.md)
+- [SIGNADBMUTEX（特征库规则加载区域ID）](configobject/UDG/20.15.2/SIGNADBMUTEX.md)
+- [SIPSIGMIRRORPARA（镜像SIP信令功能）](configobject/UDG/20.15.2/SIPSIGMIRRORPARA.md)
+- [SKIPADJUSTHAFDM（跳过调整HAF域开关状态）](configobject/UDG/20.15.2/SKIPADJUSTHAFDM.md)
+- [SOFTPARA（软参记录）](configobject/UDG/20.15.2/SOFTPARA.md)
+- [SOFTPARAOFBIT（软件参数指定比特位的值）](configobject/UDG/20.15.2/SOFTPARAOFBIT.md)
+- [SRIPV4STATICSITE（IPv4静态路由全局属性）](configobject/UDG/20.15.2/SRIPV4STATICSITE.md)
+- [SRIPV6STATICSITE（IPv6静态路由全局属性）](configobject/UDG/20.15.2/SRIPV6STATICSITE.md)
+- [SRROUTEFRR（静态路由FRR）](configobject/UDG/20.15.2/SRROUTEFRR.md)
+- [SRROUTERELAYTUNNEL（静态路由迭代隧道功能开关）](configobject/UDG/20.15.2/SRROUTERELAYTUNNEL.md)
+- [SRVCERTUPDCFG（证书更新拆链配置）](configobject/UDG/20.15.2/SRVCERTUPDCFG.md)
+- [SRVCOMMONPARA（业务公共参数）](configobject/UDG/20.15.2/SRVCOMMONPARA.md)
+- [SRVMATCHSTAT（业务匹配统计参数）](configobject/UDG/20.15.2/SRVMATCHSTAT.md)
+- [SRVNDALMTHRES（业务节点资源不足告警阈值）](configobject/UDG/20.15.2/SRVNDALMTHRES.md)
+- [SRVRETRYTIMER（服务重试等待时间）](configobject/UDG/20.15.2/SRVRETRYTIMER.md)
+- [SSUAGINGCFG（SSU容器业务相关老化功能配置）](configobject/UDG/20.15.2/SSUAGINGCFG.md)
+- [SSUBIGFLOWCTRL（智能板的大流判断速率阈值）](configobject/UDG/20.15.2/SSUBIGFLOWCTRL.md)
+- [STATUSCHECK（状态核查参数）](configobject/UDG/20.15.2/STATUSCHECK.md)
+- [SYSLOGCONTENTCFG（日志内容配置）](configobject/UDG/20.15.2/SYSLOGCONTENTCFG.md)
+- [TCPBPCFG（TCP过载反压HTTP流控配置）](configobject/UDG/20.15.2/TCPBPCFG.md)
+- [TCPGLOBALCFG（TCP全局配置）](configobject/UDG/20.15.2/TCPGLOBALCFG.md)
+- [TCPKEEPALIVECFG（TCP保活参数）](configobject/UDG/20.15.2/TCPKEEPALIVECFG.md)
+- [TCPRST（欠费用户下行RST报文处理动作）](configobject/UDG/20.15.2/TCPRST.md)
+- [TCPSTATRTTRANGE（TCP统计功能的RTT区间为初始值）](configobject/UDG/20.15.2/TCPSTATRTTRANGE.md)
+- [TETHERDETGLBPARA（Tethering用户终端数量检测全局配置）](configobject/UDG/20.15.2/TETHERDETGLBPARA.md)
+- [TETHERDETGLBSW（Tethering用户终端数量检测全局开关）](configobject/UDG/20.15.2/TETHERDETGLBSW.md)
+- [TETHRPTCTRL（tethering事件上报的相关参数）](configobject/UDG/20.15.2/TETHRPTCTRL.md)
+- [TIME（系统时间）](configobject/UDG/20.15.2/TIME.md)
+- [TLBGLBCONF（TLB全局配置）](configobject/UDG/20.15.2/TLBGLBCONF.md)
+- [TMMSGFC（跟踪消息流控状态）](configobject/UDG/20.15.2/TMMSGFC.md)
+- [TOALGCFG（TCP算法配置）](configobject/UDG/20.15.2/TOALGCFG.md)
+- [TOEVALUATEPARA（TCP优化评估配置信息）](configobject/UDG/20.15.2/TOEVALUATEPARA.md)
+- [TOFLOWAGINGCFG（TCP流老化功能配置）](configobject/UDG/20.15.2/TOFLOWAGINGCFG.md)
+- [TOHVXLANPARA（家庭网关业务使用VXLAN隧道传输业务参数配置）](configobject/UDG/20.15.2/TOHVXLANPARA.md)
+- [TOIPISOLATION（IP地址隔离功能配置）](configobject/UDG/20.15.2/TOIPISOLATION.md)
+- [TOKENDELAY（Token延时迁移时间）](configobject/UDG/20.15.2/TOKENDELAY.md)
+- [TOLOADALMTHD（告警阈值）](configobject/UDG/20.15.2/TOLOADALMTHD.md)
+- [TOMEMCFG（TCP Socket缓存配置）](configobject/UDG/20.15.2/TOMEMCFG.md)
+- [TOMSSCFG（Tcp Mss配置）](configobject/UDG/20.15.2/TOMSSCFG.md)
+- [TOPLYPRIORITY（TCP优化策略组合优先级）](configobject/UDG/20.15.2/TOPLYPRIORITY.md)
+- [TOPROXYCFG（TCP代理配置）](configobject/UDG/20.15.2/TOPROXYCFG.md)
+- [TORELIABLECFG（TCP可靠性配置）](configobject/UDG/20.15.2/TORELIABLECFG.md)
+- [TORESMGTCFG（TCP资源管理配置）](configobject/UDG/20.15.2/TORESMGTCFG.md)
+- [TOSERVERIPBYPASS（异常Server IP自动bypass功能配置）](configobject/UDG/20.15.2/TOSERVERIPBYPASS.md)
+- [TOSOFTPARA（TCP优化软参）](configobject/UDG/20.15.2/TOSOFTPARA.md)
+- [TOTUNCFG（TCP Tun接口配置）](configobject/UDG/20.15.2/TOTUNCFG.md)
+- [TRFCDFDPARA（大流量攻击防护配置参数）](configobject/UDG/20.15.2/TRFCDFDPARA.md)
+- [TRFCDFDSWITCH（大流量攻击防护配置）](configobject/UDG/20.15.2/TRFCDFDSWITCH.md)
+- [TRUNKATTR（宽带集群属性配置）](configobject/UDG/20.15.2/TRUNKATTR.md)
+- [TRUNKQOSGLOBAL（宽带集群QosGlobal配置）](configobject/UDG/20.15.2/TRUNKQOSGLOBAL.md)
+- [TWAMPFLOWCTLCFG（跟踪流控配置）](configobject/UDG/20.15.2/TWAMPFLOWCTLCFG.md)
+- [TZ（时区和夏令时信息）](configobject/UDG/20.15.2/TZ.md)
+- [UDPCHECKSUM（UDP报文是否携带checksum）](configobject/UDG/20.15.2/UDPCHECKSUM.md)
+- [UEINJECTSWITCH（UE灌包开关）](configobject/UDG/20.15.2/UEINJECTSWITCH.md)
+- [UEPINGINF（UE Ping逻辑接口开关）](configobject/UDG/20.15.2/UEPINGINF.md)
+- [UPAPNCHARGE（APN计费配置）](configobject/UDG/20.15.2/UPAPNCHARGE.md)
+- [UPCHGCHKPARA（计费检查参数）](configobject/UDG/20.15.2/UPCHGCHKPARA.md)
+- [UPCONCENPOINT（集中点部署模式）](configobject/UDG/20.15.2/UPCONCENPOINT.md)
+- [UPDEFAULTQUOTA（全局默认配额开关）](configobject/UDG/20.15.2/UPDEFAULTQUOTA.md)
+- [UPDIAMETERPARA（Diameter参数）](configobject/UDG/20.15.2/UPDIAMETERPARA.md)
+- [UPDSTATUS（升级状态）](configobject/UDG/20.15.2/UPDSTATUS.md)
+- [UPETHSRVPARA（用户面以太业务参数配置）](configobject/UDG/20.15.2/UPETHSRVPARA.md)
+- [UPFSTARTPARA（UPF系统开工流程消息的参数）](configobject/UDG/20.15.2/UPFSTARTPARA.md)
+- [UPGLBCHGPARA（全局计费参数）](configobject/UDG/20.15.2/UPGLBCHGPARA.md)
+- [UPGLBPMPARA（全局策略管理参数）](configobject/UDG/20.15.2/UPGLBPMPARA.md)
+- [UPGLBSCTPPARA（SCTP全局参数）](configobject/UDG/20.15.2/UPGLBSCTPPARA.md)
+- [UPGPATTIMER（升级补丁定时器）](configobject/UDG/20.15.2/UPGPATTIMER.md)
+- [UPGRADEWATCH（升级观察期）](configobject/UDG/20.15.2/UPGRADEWATCH.md)
+- [UPGSTEP（灰度升级Pod滚动步长）](configobject/UDG/20.15.2/UPGSTEP.md)
+- [UPGTPPATH（路径相关属性）](configobject/UDG/20.15.2/UPGTPPATH.md)
+- [UPINFO（ UP 参数信息）](configobject/UDG/20.15.2/UPINFO.md)
+- [UPINITSETUP（主被动切换）](configobject/UDG/20.15.2/UPINITSETUP.md)
+- [UPLINKCONGCTRL（Diameter链路拥塞控制）](configobject/UDG/20.15.2/UPLINKCONGCTRL.md)
+- [UPN4UPATH（N4U路径相关属性）](configobject/UDG/20.15.2/UPN4UPATH.md)
+- [UPNON3GPPPARA（非3GPP业务配置参数）](configobject/UDG/20.15.2/UPNON3GPPPARA.md)
+- [UPOSLELBWMSW（User Profile操作系统级带宽管理开关）](configobject/UDG/20.15.2/UPOSLELBWMSW.md)
+- [UPPFCPPATH（路径相关属性）](configobject/UDG/20.15.2/UPPFCPPATH.md)
+- [UPSTATUS（UP 状态）](configobject/UDG/20.15.2/UPSTATUS.md)
+- [UPTCTIMER（TC定时器）](configobject/UDG/20.15.2/UPTCTIMER.md)
+- [UPTMPATH（TM路径相关属性）](configobject/UDG/20.15.2/UPTMPATH.md)
+- [UPTWTIMER（TW定时器）](configobject/UDG/20.15.2/UPTWTIMER.md)
+- [UPURRCTRL（URR控制参数）](configobject/UDG/20.15.2/UPURRCTRL.md)
+- [UPUSRPROFCHG（User Profile的计费配置）](configobject/UDG/20.15.2/UPUSRPROFCHG.md)
+- [URRFAILACTION（计费URR上报失败动作参数）](configobject/UDG/20.15.2/URRFAILACTION.md)
+- [USERROUTINGSW（用户路由可靠性配置）](configobject/UDG/20.15.2/USERROUTINGSW.md)
+- [USRREALLOCNTY（主动触发用户位置实时通知功能）](configobject/UDG/20.15.2/USRREALLOCNTY.md)
+- [USRTRCPLY（用户跟踪策略）](configobject/UDG/20.15.2/USRTRCPLY.md)
+- [VNFEVICTION（网元重调度策略）](configobject/UDG/20.15.2/VNFEVICTION.md)
+- [VOLTEABNORMOS（MOS值的异常门限为系统初始设置值）](configobject/UDG/20.15.2/VOLTEABNORMOS.md)
+- [VOLTEMOSALMTHD（异常MOS告警阈值为系统初始设置值）](configobject/UDG/20.15.2/VOLTEMOSALMTHD.md)
+- [VOLTEMOSCLASS（MOS分类区间值）](configobject/UDG/20.15.2/VOLTEMOSCLASS.md)
+- [VOLTEMOSEVAL（VoLTE AMR编解码的语音质量采用的评估方式）](configobject/UDG/20.15.2/VOLTEMOSEVAL.md)
+- [VOLTEMOSFACTOR（MOS补偿因子）](configobject/UDG/20.15.2/VOLTEMOSFACTOR.md)
+- [VOLTEONEWAYSIL（单通检测的系统初始设置值）](configobject/UDG/20.15.2/VOLTEONEWAYSIL.md)
+- [VOLTEPERFTDELAY（理想到达报文的最小时延偏差、固定传输时延）](configobject/UDG/20.15.2/VOLTEPERFTDELAY.md)
+- [VOLTESWALBRK（VoLTE滑窗相关的参数）](configobject/UDG/20.15.2/VOLTESWALBRK.md)
+- [VONRABNORMOS（MOS值的异常门限为系统初始设置值）](configobject/UDG/20.15.2/VONRABNORMOS.md)
+- [VONRMOSCLASS（MOS分类区间值）](configobject/UDG/20.15.2/VONRMOSCLASS.md)
+- [VONRMOSFACTOR（MOS补偿因子）](configobject/UDG/20.15.2/VONRMOSFACTOR.md)
+- [VONRONEWAYSIL（单通检测的系统初始设置值）](configobject/UDG/20.15.2/VONRONEWAYSIL.md)
+- [VONRPERFTDELAY（理想到达报文的最小时延偏差、固定传输时延）](configobject/UDG/20.15.2/VONRPERFTDELAY.md)
+- [VONRSWALBRK（VoNR滑窗相关的参数）](configobject/UDG/20.15.2/VONRSWALBRK.md)
+- [VVIPBASICFUNC（重点业务保障基本功能）](configobject/UDG/20.15.2/VVIPBASICFUNC.md)
+- [WLRPAESTATE（无线路由PAE使能状态）](configobject/UDG/20.15.2/WLRPAESTATE.md)
+- [WLRSITE（无线路由全局属性配置）](configobject/UDG/20.15.2/WLRSITE.md)
 
 ## query_target
 
-- [[configobject/UDG/20.15.2/ACC]] · ACC（加速器信息） — `ACC.md`
-- [[configobject/UDG/20.15.2/ACL6ADVRULECNTVERBOSE]] · ACL6ADVRULECNTVERBOSE（高级ACL6规则匹配详细计数） — `ACL6ADVRULECNTVERBOSE.md`
-- [[configobject/UDG/20.15.2/ACL6BASICRULECNTVERBOSE]] · ACL6BASICRULECNTVERBOSE（基本ACL6规则匹配详细计数） — `ACL6BASICRULECNTVERBOSE.md`
-- [[configobject/UDG/20.15.2/ACLADV6RULECNT]] · ACLADV6RULECNT（高级IPv6 ACL规则匹配计数） — `ACLADV6RULECNT.md`
-- [[configobject/UDG/20.15.2/ACLADVRULECNT]] · ACLADVRULECNT（高级ACL规则匹配计数） — `ACLADVRULECNT.md`
-- [[configobject/UDG/20.15.2/ACLADVRULECNTVERBOSE]] · ACLADVRULECNTVERBOSE（高级ACL规则匹配详细计数） — `ACLADVRULECNTVERBOSE.md`
-- [[configobject/UDG/20.15.2/ACLBASIC6RULECNT]] · ACLBASIC6RULECNT（基本IPv6 ACL规则匹配计数） — `ACLBASIC6RULECNT.md`
-- [[configobject/UDG/20.15.2/ACLBASICRULECNT]] · ACLBASICRULECNT（基本ACL规则匹配计数） — `ACLBASICRULECNT.md`
-- [[configobject/UDG/20.15.2/ACLBASICRULECNTVERBOSE]] · ACLBASICRULECNTVERBOSE（基本ACL规则匹配详细计数） — `ACLBASICRULECNTVERBOSE.md`
-- [[configobject/UDG/20.15.2/ACLETHRULECNT]] · ACLETHRULECNT（以太ACL规则匹配计数） — `ACLETHRULECNT.md`
-- [[configobject/UDG/20.15.2/ACLETHRULECNTVERBOSE]] · ACLETHRULECNTVERBOSE（以太ACL规则匹配详细计数） — `ACLETHRULECNTVERBOSE.md`
-- [[configobject/UDG/20.15.2/ACLIFRULECNT]] · ACLIFRULECNT（接口ACL规则匹配计数） — `ACLIFRULECNT.md`
-- [[configobject/UDG/20.15.2/ACLIFRULECNTVERBOSE]] · ACLIFRULECNTVERBOSE（接口ACL规则匹配详细计数） — `ACLIFRULECNTVERBOSE.md`
-- [[configobject/UDG/20.15.2/ACSCLASSINFO]] · ACSCLASSINFO（配置表信息） — `ACSCLASSINFO.md`
-- [[configobject/UDG/20.15.2/ACSPATCHDETAILINFO]] · ACSPATCHDETAILINFO（补丁信息） — `ACSPATCHDETAILINFO.md`
-- [[configobject/UDG/20.15.2/ACSPATCHINFO]] · ACSPATCHINFO（系统当前补丁信息） — `ACSPATCHINFO.md`
-- [[configobject/UDG/20.15.2/ACSRBKVER]] · ACSRBKVER（升级可回退版本信息） — `ACSRBKVER.md`
-- [[configobject/UDG/20.15.2/ACSSYNCINFO]] · ACSSYNCINFO（ACS的配置同步信息） — `ACSSYNCINFO.md`
-- [[configobject/UDG/20.15.2/ACSUPDRUVER]] · ACSUPDRUVER（RU版本信息） — `ACSUPDRUVER.md`
-- [[configobject/UDG/20.15.2/ACSVERSION]] · ACSVERSION（系统版本信息） — `ACSVERSION.md`
-- [[configobject/UDG/20.15.2/ACTALM]] · ACTALM（活动告警） — `ACTALM.md`
-- [[configobject/UDG/20.15.2/AFUSRDETECTST]] · AFUSRDETECTST（欺诈用户检测结果） — `AFUSRDETECTST.md`
-- [[configobject/UDG/20.15.2/ALARMINFO]] · ALARMINFO（告警信息） — `ALARMINFO.md`
-- [[configobject/UDG/20.15.2/ALMERRORINFO]] · ALMERRORINFO（告警模块错误信息） — `ALMERRORINFO.md`
-- [[configobject/UDG/20.15.2/ALMFLAPINFO]] · ALMFLAPINFO（告警震荡信息） — `ALMFLAPINFO.md`
-- [[configobject/UDG/20.15.2/ALMFLAPSURPINFO]] · ALMFLAPSURPINFO（告警震荡抑制信息） — `ALMFLAPSURPINFO.md`
-- [[configobject/UDG/20.15.2/ALMMESSAGERECV]] · ALMMESSAGERECV（告警接收的信息） — `ALMMESSAGERECV.md`
-- [[configobject/UDG/20.15.2/ALMMESSAGESEND]] · ALMMESSAGESEND（告警发送的信息） — `ALMMESSAGESEND.md`
-- [[configobject/UDG/20.15.2/APNREFPOOLGRP]] · APNREFPOOLGRP（APN和地址池组映射关系） — `APNREFPOOLGRP.md`
-- [[configobject/UDG/20.15.2/APNSESSIONSTATS]] · APNSESSIONSTATS（按照IP地址分配方式查看当前在线会话数） — `APNSESSIONSTATS.md`
-- [[configobject/UDG/20.15.2/APPCLTSTATUS]] · APPCLTSTATUS（第三方APP信息采集进度） — `APPCLTSTATUS.md`
-- [[configobject/UDG/20.15.2/APPDATADIFF]] · APPDATADIFF（APP与OMU配置数据差异信息） — `APPDATADIFF.md`
-- [[configobject/UDG/20.15.2/APPINFO]] · APPINFO（应用信息） — `APPINFO.md`
-- [[configobject/UDG/20.15.2/APPVERSION]] · APPVERSION（系统版本信息） — `APPVERSION.md`
-- [[configobject/UDG/20.15.2/ARPENTRYSTATISTICS]] · ARPENTRYSTATISTICS（ARP统计计数） — `ARPENTRYSTATISTICS.md`
-- [[configobject/UDG/20.15.2/ARPERRPACKET]] · ARPERRPACKET（ARP错误报文统计） — `ARPERRPACKET.md`
-- [[configobject/UDG/20.15.2/ARPHISTORY]] · ARPHISTORY（ARP表项变更历史） — `ARPHISTORY.md`
-- [[configobject/UDG/20.15.2/ARPINNERDATA]] · ARPINNERDATA（ARP内部信息） — `ARPINNERDATA.md`
-- [[configobject/UDG/20.15.2/ARPPROBERESULT]] · ARPPROBERESULT（ARP探测结果） — `ARPPROBERESULT.md`
-- [[configobject/UDG/20.15.2/ARPSTATISTICS]] · ARPSTATISTICS（ARP处理信息统计） — `ARPSTATISTICS.md`
-- [[configobject/UDG/20.15.2/ARPTABLE]] · ARPTABLE（ARP表项） — `ARPTABLE.md`
-- [[configobject/UDG/20.15.2/ASSERTINFO]] · ASSERTINFO（RU断言信息） — `ASSERTINFO.md`
-- [[configobject/UDG/20.15.2/AUTOSCALEPOLICY]] · AUTOSCALEPOLICY（自动弹性策略状态） — `AUTOSCALEPOLICY.md`
-- [[configobject/UDG/20.15.2/AUTOSCALINGIPPOOL]] · AUTOSCALINGIPPOOL（自动化配置地址池信息） — `AUTOSCALINGIPPOOL.md`
-- [[configobject/UDG/20.15.2/BEARERNUM]] · BEARERNUM（承载数） — `BEARERNUM.md`
-- [[configobject/UDG/20.15.2/BFDBLACKBOX]] · BFDBLACKBOX（BFD黑匣子信息） — `BFDBLACKBOX.md`
-- [[configobject/UDG/20.15.2/BFDGLOBALSTATS]] · BFDGLOBALSTATS（BFD的全局会话统计信息） — `BFDGLOBALSTATS.md`
-- [[configobject/UDG/20.15.2/BFDRESOURCESTC]] · BFDRESOURCESTC（BFD资源统计信息） — `BFDRESOURCESTC.md`
-- [[configobject/UDG/20.15.2/BFDSESSIONRUNNING]] · BFDSESSIONRUNNING（BFD会话的运行信息） — `BFDSESSIONRUNNING.md`
-- [[configobject/UDG/20.15.2/BFDSTATS]] · BFDSTATS（BFD的会话统计信息） — `BFDSTATS.md`
-- [[configobject/UDG/20.15.2/BGPASMSG]] · BGPASMSG（BGP AS查询消息） — `BGPASMSG.md`
-- [[configobject/UDG/20.15.2/BGPASSTATS]] · BGPASSTATS（BGP AS查询统计） — `BGPASSTATS.md`
-- [[configobject/UDG/20.15.2/BGPBFDSESSION]] · BGPBFDSESSION（BGP建立的BFD会话信息） — `BGPBFDSESSION.md`
-- [[configobject/UDG/20.15.2/BGPCONGESTATISTICS]] · BGPCONGESTATISTICS（BGP流控信息） — `BGPCONGESTATISTICS.md`
-- [[configobject/UDG/20.15.2/BGPDATA]] · BGPDATA（BGP数据结构信息） — `BGPDATA.md`
-- [[configobject/UDG/20.15.2/BGPERRORDISCARD]] · BGPERRORDISCARD（BGP的错误信息） — `BGPERRORDISCARD.md`
-- [[configobject/UDG/20.15.2/BGPHASTATE]] · BGPHASTATE（BGP HA状态信息） — `BGPHASTATE.md`
-- [[configobject/UDG/20.15.2/BGPLSP]] · BGPLSP（BGP LSP信息） — `BGPLSP.md`
-- [[configobject/UDG/20.15.2/BGPNEXTHOP]] · BGPNEXTHOP（BGP下一跳信息） — `BGPNEXTHOP.md`
-- [[configobject/UDG/20.15.2/BGPPEERALLVERBOSE]] · BGPPEERALLVERBOSE（BGP所有VPN对等体详细信息） — `BGPPEERALLVERBOSE.md`
-- [[configobject/UDG/20.15.2/BGPPEERINFO]] · BGPPEERINFO（BGP对等体信息） — `BGPPEERINFO.md`
-- [[configobject/UDG/20.15.2/BGPPEERLOG]] · BGPPEERLOG（BGP对等体日志信息） — `BGPPEERLOG.md`
-- [[configobject/UDG/20.15.2/BGPPEERSTATE]] · BGPPEERSTATE（BGP对等体状态信息） — `BGPPEERSTATE.md`
-- [[configobject/UDG/20.15.2/BGPPEERSTATISTICSINFO]] · BGPPEERSTATISTICSINFO（BGP对等体统计信息） — `BGPPEERSTATISTICSINFO.md`
-- [[configobject/UDG/20.15.2/BGPPEERVERBOSE]] · BGPPEERVERBOSE（BGP对等体详细信息） — `BGPPEERVERBOSE.md`
-- [[configobject/UDG/20.15.2/BGPRT6DATA]] · BGPRT6DATA（BGP IPv6路由数据结构信息） — `BGPRT6DATA.md`
-- [[configobject/UDG/20.15.2/BGPRTDATA]] · BGPRTDATA（BGP路由数据结构信息） — `BGPRTDATA.md`
-- [[configobject/UDG/20.15.2/BGPRTSTATISTICS]] · BGPRTSTATISTICS（BGP路由统计信息） — `BGPRTSTATISTICS.md`
-- [[configobject/UDG/20.15.2/BGPVRFROUTING]] · BGPVRFROUTING（BGP VPN路由表） — `BGPVRFROUTING.md`
-- [[configobject/UDG/20.15.2/BGPVRFROUTING6]] · BGPVRFROUTING6（BGP VPN IPv6路由表） — `BGPVRFROUTING6.md`
-- [[configobject/UDG/20.15.2/BLKHISTORY]] · BLKHISTORY（CSDB RU闭塞信息） — `BLKHISTORY.md`
-- [[configobject/UDG/20.15.2/CACHEMBLACKBOX]] · CACHEMBLACKBOX（CACHEM黑匣子诊断信息） — `CACHEMBLACKBOX.md`
-- [[configobject/UDG/20.15.2/CACHEMCMDDATA]] · CACHEMCMDDATA（CACHEM命令信息） — `CACHEMCMDDATA.md`
-- [[configobject/UDG/20.15.2/CACHEMINNERDATA]] · CACHEMINNERDATA（CACHEM诊断信息） — `CACHEMINNERDATA.md`
-- [[configobject/UDG/20.15.2/CELLFAULTINFO]] · CELLFAULTINFO（故障进程历史记录） — `CELLFAULTINFO.md`
-- [[configobject/UDG/20.15.2/CELLINFO]] · CELLINFO（微服务进程信息） — `CELLINFO.md`
-- [[configobject/UDG/20.15.2/CELLSTAT]] · CELLSTAT（微服务进程可用状态统计信息） — `CELLSTAT.md`
-- [[configobject/UDG/20.15.2/CERTFILE]] · CERTFILE（证书） — `CERTFILE.md`
-- [[configobject/UDG/20.15.2/CFGCERTAINDB]] · CFGCERTAINDB（指定DB表数据） — `CFGCERTAINDB.md`
-- [[configobject/UDG/20.15.2/CFGERRCMD]] · CFGERRCMD（CFG方式配置恢复的失败信息） — `CFGERRCMD.md`
-- [[configobject/UDG/20.15.2/CFGRECOVERRESULT]] · CFGRECOVERRESULT（系统配置恢复结果） — `CFGRECOVERRESULT.md`
-- [[configobject/UDG/20.15.2/CFGTABLEDATA]] · CFGTABLEDATA（满足条件的CFG表数据） — `CFGTABLEDATA.md`
-- [[configobject/UDG/20.15.2/CFGTABLEINDEX]] · CFGTABLEINDEX（CFG表索引信息和字段信息） — `CFGTABLEINDEX.md`
-- [[configobject/UDG/20.15.2/CFGTABLEINFO]] · CFGTABLEINFO（CFG表信息和内存信息） — `CFGTABLEINFO.md`
-- [[configobject/UDG/20.15.2/CNTCPUSTAT]] · CNTCPUSTAT（容器CPU信息） — `CNTCPUSTAT.md`
-- [[configobject/UDG/20.15.2/CNTINFO]] · CNTINFO（容器部署信息） — `CNTINFO.md`
-- [[configobject/UDG/20.15.2/CNTMEMSTAT]] · CNTMEMSTAT（容器内存信息） — `CNTMEMSTAT.md`
-- [[configobject/UDG/20.15.2/CNTRESSTAT]] · CNTRESSTAT（容器资源信息） — `CNTRESSTAT.md`
-- [[configobject/UDG/20.15.2/COLLECTLOGRESULT]] · COLLECTLOGRESULT（日志收集执行结果） — `COLLECTLOGRESULT.md`
-- [[configobject/UDG/20.15.2/COLLISIONCHECK]] · COLLISIONCHECK（冲突检测结果） — `COLLISIONCHECK.md`
-- [[configobject/UDG/20.15.2/COMBASESUM]] · COMBASESUM（BASE亚健康概况） — `COMBASESUM.md`
-- [[configobject/UDG/20.15.2/COMCONTAINER]] · COMCONTAINER（组件和容器关系信息） — `COMCONTAINER.md`
-- [[configobject/UDG/20.15.2/COMPONENT]] · COMPONENT（组件信息） — `COMPONENT.md`
-- [[configobject/UDG/20.15.2/COMPONENTSUB]] · COMPONENTSUB（组件订阅信息） — `COMPONENTSUB.md`
-- [[configobject/UDG/20.15.2/COMPSTATNOTIFY]] · COMPSTATNOTIFY（组件状态通知记录） — `COMPSTATNOTIFY.md`
-- [[configobject/UDG/20.15.2/COMPSTATTRACE]] · COMPSTATTRACE（当前组件的状态记录信息） — `COMPSTATTRACE.md`
-- [[configobject/UDG/20.15.2/COMTASKDETAIL]] · COMTASKDETAIL（SDR通信质量检测结果详情） — `COMTASKDETAIL.md`
-- [[configobject/UDG/20.15.2/COMTASKSUMM]] · COMTASKSUMM（SDR通信质量检测结果概要） — `COMTASKSUMM.md`
-- [[configobject/UDG/20.15.2/CONNDOWN]] · CONNDOWN（连接中断信息） — `CONNDOWN.md`
-- [[configobject/UDG/20.15.2/CONNECT]] · CONNECT（网元长连接信息） — `CONNECT.md`
-- [[configobject/UDG/20.15.2/CONSSTATE]] · CONSSTATE（消费者状态信息） — `CONSSTATE.md`
-- [[configobject/UDG/20.15.2/CONSSUB]] · CONSSUB（消费者订阅信息） — `CONSSUB.md`
-- [[configobject/UDG/20.15.2/CPINFO]] · CPINFO（CP信息） — `CPINFO.md`
-- [[configobject/UDG/20.15.2/CPU]] · CPU（资源CPU使用信息） — `CPU.md`
-- [[configobject/UDG/20.15.2/CPUECOVMSINFO]] · CPUECOVMSINFO（VM的CPU节能策略） — `CPUECOVMSINFO.md`
-- [[configobject/UDG/20.15.2/CUINCONSCONFIG]] · CUINCONSCONFIG（CP和UP不一致的关键配置） — `CUINCONSCONFIG.md`
-- [[configobject/UDG/20.15.2/DBCLUSTER]] · DBCLUSTER（CSDB子集群信息） — `DBCLUSTER.md`
-- [[configobject/UDG/20.15.2/DBDATAFEATURE]] · DBDATAFEATURE（CSDB数据特征） — `DBDATAFEATURE.md`
-- [[configobject/UDG/20.15.2/DBDRTBLNUM]] · DBDRTBLNUM（CSDB容灾主备本记录数） — `DBDRTBLNUM.md`
-- [[configobject/UDG/20.15.2/DBGCLICMDPRXYREG]] · DBGCLICMDPRXYREG（通过命令代理可执行命令行调试命令的白名单） — `DBGCLICMDPRXYREG.md`
-- [[configobject/UDG/20.15.2/DBGDATAEX]] · DBGDATAEX（调试信息） — `DBGDATAEX.md`
-- [[configobject/UDG/20.15.2/DBGHAFD]] · DBGHAFD（HAFD调试命令结果） — `DBGHAFD.md`
-- [[configobject/UDG/20.15.2/DBGHAFG]] · DBGHAFG（HAFG相关信息） — `DBGHAFG.md`
-- [[configobject/UDG/20.15.2/DBGSTAT]] · DBGSTAT（调试信息） — `DBGSTAT.md`
-- [[configobject/UDG/20.15.2/DBNODE]] · DBNODE（CSDB节点信息） — `DBNODE.md`
-- [[configobject/UDG/20.15.2/DBPLUGIN]] · DBPLUGIN（CSDB插件信息） — `DBPLUGIN.md`
-- [[configobject/UDG/20.15.2/DBSTATS]] · DBSTATS（CSDB的统计信息） — `DBSTATS.md`
-- [[configobject/UDG/20.15.2/DBTBL]] · DBTBL（CSDB数据表信息） — `DBTBL.md`
-- [[configobject/UDG/20.15.2/DBUPGSTATUS]] · DBUPGSTATUS（CSDB灰度升级状态） — `DBUPGSTATUS.md`
-- [[configobject/UDG/20.15.2/DBUSERINFO]] · DBUSERINFO（CSDB使用者信息） — `DBUSERINFO.md`
-- [[configobject/UDG/20.15.2/DCSDISKINFO]] · DCSDISKINFO（DCS直通存储使用率） — `DCSDISKINFO.md`
-- [[configobject/UDG/20.15.2/DCSLIVEINFO]] · DCSLIVEINFO（直播视频信息） — `DCSLIVEINFO.md`
-- [[configobject/UDG/20.15.2/DCSLIVEVIDEO]] · DCSLIVEVIDEO（指定直播视频信息） — `DCSLIVEVIDEO.md`
-- [[configobject/UDG/20.15.2/DCSNODE]] · DCSNODE（DCS微服务节点状态信息） — `DCSNODE.md`
-- [[configobject/UDG/20.15.2/DCSSTATS]] · DCSSTATS（DCS打点统计信息） — `DCSSTATS.md`
-- [[configobject/UDG/20.15.2/DCSVODINFO]] · DCSVODINFO（点播视频信息） — `DCSVODINFO.md`
-- [[configobject/UDG/20.15.2/DCSVODVIDEO]] · DCSVODVIDEO（指定点播视频信息） — `DCSVODVIDEO.md`
-- [[configobject/UDG/20.15.2/DEACTIVESTATE]] · DEACTIVESTATE（去活操作状态） — `DEACTIVESTATE.md`
-- [[configobject/UDG/20.15.2/DEADLOOPINFO]] · DEADLOOPINFO（RU死循环信息） — `DEADLOOPINFO.md`
-- [[configobject/UDG/20.15.2/DEVATTRCACHE]] · DEVATTRCACHE（属性值信息） — `DEVATTRCACHE.md`
-- [[configobject/UDG/20.15.2/DEVATTRNOTIFY]] · DEVATTRNOTIFY（属性变更通知消息记录） — `DEVATTRNOTIFY.md`
-- [[configobject/UDG/20.15.2/DEVATTRREV]] · DEVATTRREV（接收VNFC配置的属性信息） — `DEVATTRREV.md`
-- [[configobject/UDG/20.15.2/DEVATTRSND]] · DEVATTRSND（VNFC同步到VNFP的属性信息） — `DEVATTRSND.md`
-- [[configobject/UDG/20.15.2/DEVATTRSUB]] · DEVATTRSUB（属性订阅信息） — `DEVATTRSUB.md`
-- [[configobject/UDG/20.15.2/DEVATTRTBL]] · DEVATTRTBL（设备属性信息） — `DEVATTRTBL.md`
-- [[configobject/UDG/20.15.2/DEVBOOTPREG]] · DEVBOOTPREG（BOOTP服务端的注册信息） — `DEVBOOTPREG.md`
-- [[configobject/UDG/20.15.2/DEVBOOTPRES]] · DEVBOOTPRES（BOOTP服务器本地资源信息） — `DEVBOOTPRES.md`
-- [[configobject/UDG/20.15.2/DEVCOMPFSM]] · DEVCOMPFSM（组件状态机信息） — `DEVCOMPFSM.md`
-- [[configobject/UDG/20.15.2/DEVDIAGINFO]] · DEVDIAGINFO（设备管理诊断信息） — `DEVDIAGINFO.md`
-- [[configobject/UDG/20.15.2/DEVDRIINFO]] · DEVDRIINFO（设备驱动信息） — `DEVDRIINFO.md`
-- [[configobject/UDG/20.15.2/DEVMODFSM]] · DEVMODFSM（模块状态机信息） — `DEVMODFSM.md`
-- [[configobject/UDG/20.15.2/DEVNETCONFREQ]] · DEVNETCONFREQ（NETCONF请求信息） — `DEVNETCONFREQ.md`
-- [[configobject/UDG/20.15.2/DEVOBJFSM]] · DEVOBJFSM（对象状态机信息） — `DEVOBJFSM.md`
-- [[configobject/UDG/20.15.2/DFSBUCKET]] · DFSBUCKET（DFS桶信息） — `DFSBUCKET.md`
-- [[configobject/UDG/20.15.2/DFSINFO]] · DFSINFO（DFS集群信息） — `DFSINFO.md`
-- [[configobject/UDG/20.15.2/DFSRPAIRMEMSTA]] · DFSRPAIRMEMSTA（双发选收结对成员状态） — `DFSRPAIRMEMSTA.md`
-- [[configobject/UDG/20.15.2/DFTPROTGRP]] · DFTPROTGRP（默认协议组） — `DFTPROTGRP.md`
-- [[configobject/UDG/20.15.2/DHCP6CLIENTSTAT]] · DHCP6CLIENTSTAT（DHCPv6客户端状态信息） — `DHCP6CLIENTSTAT.md`
-- [[configobject/UDG/20.15.2/DHCPCLIENTSTAT]] · DHCPCLIENTSTAT（DHCPv4客户端状态信息） — `DHCPCLIENTSTAT.md`
-- [[configobject/UDG/20.15.2/DIGIW]] · DIGIW（电子保单信息） — `DIGIW.md`
-- [[configobject/UDG/20.15.2/DISKINFO]] · DISKINFO（节点磁盘部署规格） — `DISKINFO.md`
-- [[configobject/UDG/20.15.2/DMTBLACKBOX]] · DMTBLACKBOX（Diameter黑匣子信息） — `DMTBLACKBOX.md`
-- [[configobject/UDG/20.15.2/DMTCONN]] · DMTCONN（Diameter基本信息或Peer连接相关信息） — `DMTCONN.md`
-- [[configobject/UDG/20.15.2/DMTCONNSTC]] · DMTCONNSTC（Diameter链路及消息收发统计信息） — `DMTCONNSTC.md`
-- [[configobject/UDG/20.15.2/DMTLINKGROUPSTC]] · DMTLINKGROUPSTC（Diameter链路组信息和链路信息） — `DMTLINKGROUPSTC.md`
-- [[configobject/UDG/20.15.2/DNSAGENTIPHOST]] · DNSAGENTIPHOST（DNS代理服务器域名） — `DNSAGENTIPHOST.md`
-- [[configobject/UDG/20.15.2/DNSAGENTIPV6HOST]] · DNSAGENTIPV6HOST（DNS代理服务器IPv6域名） — `DNSAGENTIPV6HOST.md`
-- [[configobject/UDG/20.15.2/DNSDYNAMICIPHOST]] · DNSDYNAMICIPHOST（DNS IPv4动态域名） — `DNSDYNAMICIPHOST.md`
-- [[configobject/UDG/20.15.2/DNSDYNAMICIPV6HOST]] · DNSDYNAMICIPV6HOST（DNS IPv6动态域名） — `DNSDYNAMICIPV6HOST.md`
-- [[configobject/UDG/20.15.2/DRGROUPSTATUS]] · DRGROUPSTATUS（容灾组的运行状态信息） — `DRGROUPSTATUS.md`
-- [[configobject/UDG/20.15.2/DRINFO]] · DRINFO（容灾信息） — `DRINFO.md`
-- [[configobject/UDG/20.15.2/DRLIMITINFO]] · DRLIMITINFO（已发生的倒换和复位次数和距离限制结束的时间） — `DRLIMITINFO.md`
-- [[configobject/UDG/20.15.2/DRSWAPREC]] · DRSWAPREC（容灾倒换记录） — `DRSWAPREC.md`
-- [[configobject/UDG/20.15.2/ECOVMSINFO]] · ECOVMSINFO（VM的CPU节能策略） — `ECOVMSINFO.md`
-- [[configobject/UDG/20.15.2/ELECTION]] · ELECTION（集群选举实例信息） — `ELECTION.md`
-- [[configobject/UDG/20.15.2/ETCDTTL]] · ETCDTTL（用于仲裁目的的key的租约信息） — `ETCDTTL.md`
-- [[configobject/UDG/20.15.2/EVTGOVSTAT]] · EVTGOVSTAT（事件诊断失败状态） — `EVTGOVSTAT.md`
-- [[configobject/UDG/20.15.2/EVTHEALREC]] · EVTHEALREC（事件治理自愈结果） — `EVTHEALREC.md`
-- [[configobject/UDG/20.15.2/EXCEPTIONINFO]] · EXCEPTIONINFO（RU异常信息） — `EXCEPTIONINFO.md`
-- [[configobject/UDG/20.15.2/EXCHANGE]] · EXCHANGE（负载均衡交换表） — `EXCHANGE.md`
-- [[configobject/UDG/20.15.2/EXEPSESSINFO]] · EXEPSESSINFO（异常用户） — `EXEPSESSINFO.md`
-- [[configobject/UDG/20.15.2/EXPLOG]] · EXPLOG（日志导出状态） — `EXPLOG.md`
-- [[configobject/UDG/20.15.2/EXTERDBFILTER]] · EXTERDBFILTER（外置DB过滤器信息） — `EXTERDBFILTER.md`
-- [[configobject/UDG/20.15.2/FABDIAGINFO]] · FABDIAGINFO（Fabric平面亚健康诊断结果） — `FABDIAGINFO.md`
-- [[configobject/UDG/20.15.2/FABPORTSUBDTL]] · FABPORTSUBDTL（Fabric端口亚健康通信质量信息） — `FABPORTSUBDTL.md`
-- [[configobject/UDG/20.15.2/FABRICOAMINFO]] · FABRICOAMINFO（PAE OAM链路信息） — `FABRICOAMINFO.md`
-- [[configobject/UDG/20.15.2/FABRICOAMPORT]] · FABRICOAMPORT（PAE各链路OAM报文统计结果） — `FABRICOAMPORT.md`
-- [[configobject/UDG/20.15.2/FABRICPLANEDOWN]] · FABRICPLANEDOWN（Fabric平面Down信息） — `FABRICPLANEDOWN.md`
-- [[configobject/UDG/20.15.2/FABRICSUBHEALTHYLINK]] · FABRICSUBHEALTHYLINK（Fabric平面亚健康链路信息） — `FABRICSUBHEALTHYLINK.md`
-- [[configobject/UDG/20.15.2/FABRICSUBHEALTHYSTAT]] · FABRICSUBHEALTHYSTAT（PAE内联口亚健康统计信息） — `FABRICSUBHEALTHYSTAT.md`
-- [[configobject/UDG/20.15.2/FABRICTRUNKSTATIS]] · FABRICTRUNKSTATIS（Fabric-Trunk成员接口统计） — `FABRICTRUNKSTATIS.md`
-- [[configobject/UDG/20.15.2/FABSUBDETAIL]] · FABSUBDETAIL（Fabric亚健康通信质量信息） — `FABSUBDETAIL.md`
-- [[configobject/UDG/20.15.2/FCSTATIS]] · FCSTATIS（流控统计） — `FCSTATIS.md`
-- [[configobject/UDG/20.15.2/FEATUREOPRHIST]] · FEATUREOPRHIST（特性上下线历史） — `FEATUREOPRHIST.md`
-- [[configobject/UDG/20.15.2/FEICOM_CSTDATA]] · FEICOM_CSTDATA（存储池存储的表项信息） — `FEICOM_CSTDATA.md`
-- [[configobject/UDG/20.15.2/FEIHEALTHSTATE]] · FEIHEALTHSTATE（FEI健康状态） — `FEIHEALTHSTATE.md`
-- [[configobject/UDG/20.15.2/FEIMCFWDTAB]] · FEIMCFWDTAB（FEI组播转发表项统计信息） — `FEIMCFWDTAB.md`
-- [[configobject/UDG/20.15.2/FEINOTIFYIFMIFUPTIME]] · FEINOTIFYIFMIFUPTIME（FEI通告IFM端口UP事件的时间） — `FEINOTIFYIFMIFUPTIME.md`
-- [[configobject/UDG/20.15.2/FEIPORTVLAN]] · FEIPORTVLAN（FEI端口VLAN） — `FEIPORTVLAN.md`
-- [[configobject/UDG/20.15.2/FEISWHEALTHSTATE]] · FEISWHEALTHSTATE（FEISW健康状态） — `FEISWHEALTHSTATE.md`
-- [[configobject/UDG/20.15.2/FEI_FRM_CST_POOL]] · FEI_FRM_CST_POOL（资源池列表的资源占用情况） — `FEI_FRM_CST_POOL.md`
-- [[configobject/UDG/20.15.2/FESDIAGINFO]] · FESDIAGINFO（FES诊断信息） — `FESDIAGINFO.md`
-- [[configobject/UDG/20.15.2/FESMEMLIMIT]] · FESMEMLIMIT（FES内存界限信息） — `FESMEMLIMIT.md`
-- [[configobject/UDG/20.15.2/FESSMOOTHSTAT]] · FESSMOOTHSTAT（FES的平滑状态信息） — `FESSMOOTHSTAT.md`
-- [[configobject/UDG/20.15.2/FESTABLE]] · FESTABLE（FES表项信息） — `FESTABLE.md`
-- [[configobject/UDG/20.15.2/FESTABLESTATICS]] · FESTABLESTATICS（FES表项统计信息） — `FESTABLESTATICS.md`
-- [[configobject/UDG/20.15.2/FILTERINFO]] · FILTERINFO（流过滤器下的所有过滤器信息） — `FILTERINFO.md`
-- [[configobject/UDG/20.15.2/FLOWSTATISTICS]] · FLOWSTATISTICS（业务统计信息） — `FLOWSTATISTICS.md`
-- [[configobject/UDG/20.15.2/FUNCTIONSETINFO]] · FUNCTIONSETINFO（网络功能集全局列表） — `FUNCTIONSETINFO.md`
-- [[configobject/UDG/20.15.2/FUNCTIONSETSTAT]] · FUNCTIONSETSTAT（网络功能集状态） — `FUNCTIONSETSTAT.md`
-- [[configobject/UDG/20.15.2/FWDSTAT]] · FWDSTAT（转发消息统计） — `FWDSTAT.md`
-- [[configobject/UDG/20.15.2/GIDINFO]] · GIDINFO（POD的GID信息） — `GIDINFO.md`
-- [[configobject/UDG/20.15.2/GREMSGSTATINFO]] · GREMSGSTATINFO（GRE消息诊断信息） — `GREMSGSTATINFO.md`
-- [[configobject/UDG/20.15.2/GREPKTSTAT]] · GREPKTSTAT（GRE报文统计） — `GREPKTSTAT.md`
-- [[configobject/UDG/20.15.2/GRESMPOOL]] · GRESMPOOL（Gresm资源池所有信息） — `GRESMPOOL.md`
-- [[configobject/UDG/20.15.2/GRESMRESINFO]] · GRESMRESINFO（Gresm资源信息） — `GRESMRESINFO.md`
-- [[configobject/UDG/20.15.2/GRESMRESSTAT]] · GRESMRESSTAT（消费者申请资源的统计信息） — `GRESMRESSTAT.md`
-- [[configobject/UDG/20.15.2/GRETNLINFO]] · GRETNLINFO（GRE隧道诊断信息） — `GRETNLINFO.md`
-- [[configobject/UDG/20.15.2/GRETNLSTAT]] · GRETNLSTAT（GRE隧道数目） — `GRETNLSTAT.md`
-- [[configobject/UDG/20.15.2/GRETNLTAB]] · GRETNLTAB（GRE隧道信息） — `GRETNLTAB.md`
-- [[configobject/UDG/20.15.2/GROUPSTAT]] · GROUPSTAT（消费组状态） — `GROUPSTAT.md`
-- [[configobject/UDG/20.15.2/HASTAT]] · HASTAT（系统HA状态） — `HASTAT.md`
-- [[configobject/UDG/20.15.2/HISTALM]] · HISTALM（历史告警） — `HISTALM.md`
-- [[configobject/UDG/20.15.2/HTTPDIALUSR]] · HTTPDIALUSR（HTTP拨测用户信息） — `HTTPDIALUSR.md`
-- [[configobject/UDG/20.15.2/HTTPHTRINFO]] · HTTPHTRINFO（HTR信息） — `HTTPHTRINFO.md`
-- [[configobject/UDG/20.15.2/HTTPINTFDSCP]] · HTTPINTFDSCP（HTTP服务存储的接口DSCP信息） — `HTTPINTFDSCP.md`
-- [[configobject/UDG/20.15.2/HTTPLINKHISTORY]] · HTTPLINKHISTORY（HTTP历史链路状态） — `HTTPLINKHISTORY.md`
-- [[configobject/UDG/20.15.2/HTTPNFINST]] · HTTPNFINST（HTTP服务存储的NF实例信息） — `HTTPNFINST.md`
-- [[configobject/UDG/20.15.2/HTTPPLMN]] · HTTPPLMN（HTTP服务存储的PLMN） — `HTTPPLMN.md`
-- [[configobject/UDG/20.15.2/HTTPPROCESS]] · HTTPPROCESS（HTTP进程信息） — `HTTPPROCESS.md`
-- [[configobject/UDG/20.15.2/HTTPRESUSG]] · HTTPRESUSG（HTTP资源使用信息） — `HTTPRESUSG.md`
-- [[configobject/UDG/20.15.2/HTTPSVRFAULINK]] · HTTPSVRFAULINK（HTTP服务端故障链路） — `HTTPSVRFAULINK.md`
-- [[configobject/UDG/20.15.2/HTTPUPGSTAGE]] · HTTPUPGSTAGE（HTTP灰度升级状态） — `HTTPUPGSTAGE.md`
-- [[configobject/UDG/20.15.2/ICAPSVRGSTATUS]] · ICAPSVRGSTATUS（ICAP服务器组状态） — `ICAPSVRGSTATUS.md`
-- [[configobject/UDG/20.15.2/ICAPSVRSTATUS]] · ICAPSVRSTATUS（ICAP服务器状态） — `ICAPSVRSTATUS.md`
-- [[configobject/UDG/20.15.2/ICMP6STAT]] · ICMP6STAT（ICMP6统计） — `ICMP6STAT.md`
-- [[configobject/UDG/20.15.2/ICMPSTATISTIC]] · ICMPSTATISTIC（ICMP报文统计） — `ICMPSTATISTIC.md`
-- [[configobject/UDG/20.15.2/IFDIAGDATA]] · IFDIAGDATA（接口诊断数据） — `IFDIAGDATA.md`
-- [[configobject/UDG/20.15.2/IFMINNERDATA]] · IFMINNERDATA（IFM模块内部数据） — `IFMINNERDATA.md`
-- [[configobject/UDG/20.15.2/IFSTATUS]] · IFSTATUS（接口状态信息） — `IFSTATUS.md`
-- [[configobject/UDG/20.15.2/IKEINNERPOLICY]] · IKEINNERPOLICY（IKE内部负载分担策略信息） — `IKEINNERPOLICY.md`
-- [[configobject/UDG/20.15.2/INNERCOMPVERSION]] · INNERCOMPVERSION（系统内部部件版本信息） — `INNERCOMPVERSION.md`
-- [[configobject/UDG/20.15.2/INSTPROGRESS]] · INSTPROGRESS（VNFC实例化进度） — `INSTPROGRESS.md`
-- [[configobject/UDG/20.15.2/IPBLACKBOX]] · IPBLACKBOX（PP4黑匣子信息） — `IPBLACKBOX.md`
-- [[configobject/UDG/20.15.2/IPINNERDATA]] · IPINNERDATA（PP4模块内部数据） — `IPINNERDATA.md`
-- [[configobject/UDG/20.15.2/IPPATH]] · IPPATH（PP4路径信息） — `IPPATH.md`
-- [[configobject/UDG/20.15.2/IPSECCOMPONENT]] · IPSECCOMPONENT（IPsec组件信息） — `IPSECCOMPONENT.md`
-- [[configobject/UDG/20.15.2/IPSECFWDSTAT]] · IPSECFWDSTAT（IPsec转发统计） — `IPSECFWDSTAT.md`
-- [[configobject/UDG/20.15.2/IPSECPKTSTC]] · IPSECPKTSTC（IPsec报文统计信息） — `IPSECPKTSTC.md`
-- [[configobject/UDG/20.15.2/IPSECSATABLE]] · IPSECSATABLE（IPsec SA表信息） — `IPSECSATABLE.md`
-- [[configobject/UDG/20.15.2/IPSOCKET]] · IPSOCKET（IP Socket状态） — `IPSOCKET.md`
-- [[configobject/UDG/20.15.2/IPSUIT]] · IPSUIT（IPsuit信息） — `IPSUIT.md`
-- [[configobject/UDG/20.15.2/IPV6BLACKBOX]] · IPV6BLACKBOX（IPv6黑匣子信息） — `IPV6BLACKBOX.md`
-- [[configobject/UDG/20.15.2/IPV6BLACKLIST]] · IPV6BLACKLIST（IPv6黑名单统计信息） — `IPV6BLACKLIST.md`
-- [[configobject/UDG/20.15.2/IPV6HASTATE]] · IPV6HASTATE（IPv6组件与其他组件交互信息） — `IPV6HASTATE.md`
-- [[configobject/UDG/20.15.2/IPV6INFO]] · IPV6INFO（IPv6诊断信息） — `IPV6INFO.md`
-- [[configobject/UDG/20.15.2/IPV6PATH]] · IPV6PATH（IPv6 Path信息） — `IPV6PATH.md`
-- [[configobject/UDG/20.15.2/KPIMONSTATE]] · KPIMONSTATE（系统中正在监控的KPI信息） — `KPIMONSTATE.md`
-- [[configobject/UDG/20.15.2/KPIMONVALUE]] · KPIMONVALUE（KPI检测历史数据） — `KPIMONVALUE.md`
-- [[configobject/UDG/20.15.2/L2TPSESSION]] · L2TPSESSION（L2TP隧道下L2TP会话相关信息） — `L2TPSESSION.md`
-- [[configobject/UDG/20.15.2/L2TPTUNNEL]] · L2TPTUNNEL（L2TP隧道的相关信息） — `L2TPTUNNEL.md`
-- [[configobject/UDG/20.15.2/LACPCFG]] · LACPCFG（LACP配置） — `LACPCFG.md`
-- [[configobject/UDG/20.15.2/LBFLOWRULE]] · LBFLOWRULE（业务引流规则） — `LBFLOWRULE.md`
-- [[configobject/UDG/20.15.2/LBFLOWRULEV6]] · LBFLOWRULEV6（业务IPv6引流规则） — `LBFLOWRULEV6.md`
-- [[configobject/UDG/20.15.2/LBGRGRP]] · LBGRGRP（容灾组信息） — `LBGRGRP.md`
-- [[configobject/UDG/20.15.2/LBPLUGIN]] · LBPLUGIN（CSLB的插件信息） — `LBPLUGIN.md`
-- [[configobject/UDG/20.15.2/LBPLUGINVPNTOPO]] · LBPLUGINVPNTOPO（CSLB插件侧VPN对应的转发拓扑） — `LBPLUGINVPNTOPO.md`
-- [[configobject/UDG/20.15.2/LBPLY]] · LBPLY（负载均衡策略） — `LBPLY.md`
-- [[configobject/UDG/20.15.2/LBPROC]] · LBPROC（CSLB进程） — `LBPROC.md`
-- [[configobject/UDG/20.15.2/LBRTCMTY]] · LBRTCMTY（路由团体属性信息） — `LBRTCMTY.md`
-- [[configobject/UDG/20.15.2/LBSRVINST]] · LBSRVINST（LB服务实例） — `LBSRVINST.md`
-- [[configobject/UDG/20.15.2/LBSRVINSTIDREL]] · LBSRVINSTIDREL（服务ID与服务实例的关系） — `LBSRVINSTIDREL.md`
-- [[configobject/UDG/20.15.2/LBSTATUS]] · LBSTATUS（CSLB的状态） — `LBSTATUS.md`
-- [[configobject/UDG/20.15.2/LBTN]] · LBTN（隧道信息） — `LBTN.md`
-- [[configobject/UDG/20.15.2/LBTNBINDPLY]] · LBTNBINDPLY（业务服务ID与隧道组ID的关系） — `LBTNBINDPLY.md`
-- [[configobject/UDG/20.15.2/LBTNGROUP]] · LBTNGROUP（隧道组信息） — `LBTNGROUP.md`
-- [[configobject/UDG/20.15.2/LBTOPO]] · LBTOPO（SDRC中缓存的CSLB的拓扑） — `LBTOPO.md`
-- [[configobject/UDG/20.15.2/LBVPN]] · LBVPN（CSLB上的VPN信息） — `LBVPN.md`
-- [[configobject/UDG/20.15.2/LBVPNTOPO]] · LBVPNTOPO（CSLB VPN对应的MPE或SFE拓扑） — `LBVPNTOPO.md`
-- [[configobject/UDG/20.15.2/LCKPOD]] · LCKPOD（锁定的POD） — `LCKPOD.md`
-- [[configobject/UDG/20.15.2/LCMLOG]] · LCMLOG（网元生命周期管理日志） — `LCMLOG.md`
-- [[configobject/UDG/20.15.2/LDMINNERDATA]] · LDMINNERDATA（LDM诊断信息） — `LDMINNERDATA.md`
-- [[configobject/UDG/20.15.2/LDPBFDTNNLSESSION]] · LDPBFDTNNLSESSION（BFD For LDP Tunnel的BFD会话） — `LDPBFDTNNLSESSION.md`
-- [[configobject/UDG/20.15.2/LDPBLACKBOX]] · LDPBLACKBOX（LDP记录的黑匣子信息） — `LDPBLACKBOX.md`
-- [[configobject/UDG/20.15.2/LDPFEC]] · LDPFEC（LDP FEC） — `LDPFEC.md`
-- [[configobject/UDG/20.15.2/LDPLSP]] · LDPLSP（LDP LSP） — `LDPLSP.md`
-- [[configobject/UDG/20.15.2/LDPLSPDOWN]] · LDPLSPDOWN（LDP LSP Down的信息） — `LDPLSPDOWN.md`
-- [[configobject/UDG/20.15.2/LDPLSPMGDSSUB]] · LDPLSPMGDSSUB（LDP的下游信息） — `LDPLSPMGDSSUB.md`
-- [[configobject/UDG/20.15.2/LDPLSPMGFEC]] · LDPLSPMGFEC（LDP LSP管理组件的FEC信息） — `LDPLSPMGFEC.md`
-- [[configobject/UDG/20.15.2/LDPLSPMGIID]] · LDPLSPMGIID（LDP的IID信息） — `LDPLSPMGIID.md`
-- [[configobject/UDG/20.15.2/LDPLSPMGLSP]] · LDPLSPMGLSP（LDP的LSP信息） — `LDPLSPMGLSP.md`
-- [[configobject/UDG/20.15.2/LDPLSPMGOUTSEG]] · LDPLSPMGOUTSEG（LDP LSP管理组件Outsegment转发表项） — `LDPLSPMGOUTSEG.md`
-- [[configobject/UDG/20.15.2/LDPLSPMGPEERADDR]] · LDPLSPMGPEERADDR（LDP的邻居地址信息） — `LDPLSPMGPEERADDR.md`
-- [[configobject/UDG/20.15.2/LDPLSPMGROUTE]] · LDPLSPMGROUTE（LDP LSP管理组件的路由信息） — `LDPLSPMGROUTE.md`
-- [[configobject/UDG/20.15.2/LDPNEMGADJ]] · LDPNEMGADJ（LDP的邻居信息） — `LDPNEMGADJ.md`
-- [[configobject/UDG/20.15.2/LDPNEMGIF]] · LDPNEMGIF（LDP的接口信息） — `LDPNEMGIF.md`
-- [[configobject/UDG/20.15.2/LDPNEMGSOCKET]] · LDPNEMGSOCKET（LDP邻居管理的Socket信息） — `LDPNEMGSOCKET.md`
-- [[configobject/UDG/20.15.2/LDPPEER]] · LDPPEER（LDP邻居） — `LDPPEER.md`
-- [[configobject/UDG/20.15.2/LDPSESSIONDOWN]] · LDPSESSIONDOWN（LDP会话Down的相关信息） — `LDPSESSIONDOWN.md`
-- [[configobject/UDG/20.15.2/LDPSSMGDSCB]] · LDPSSMGDSCB（LDP会话管理模块的下游信息） — `LDPSSMGDSCB.md`
-- [[configobject/UDG/20.15.2/LDPSSMGLSSOCK]] · LDPSSMGLSSOCK（LDP的Listen Socket信息） — `LDPSSMGLSSOCK.md`
-- [[configobject/UDG/20.15.2/LDPSSMGSSN]] · LDPSSMGSSN（LDP的会话信息） — `LDPSSMGSSN.md`
-- [[configobject/UDG/20.15.2/LDPSSMGTCPSOCK]] · LDPSSMGTCPSOCK（LDP的TCP Socket信息） — `LDPSSMGTCPSOCK.md`
-- [[configobject/UDG/20.15.2/LICENSEPEAK]] · LICENSEPEAK（话务高峰信息） — `LICENSEPEAK.md`
-- [[configobject/UDG/20.15.2/LICENSERES]] · LICENSERES（License资源） — `LICENSERES.md`
-- [[configobject/UDG/20.15.2/LLAINNERDATA]] · LLAINNERDATA（LLA诊断信息） — `LLAINNERDATA.md`
-- [[configobject/UDG/20.15.2/LOCALKEYPAIR]] · LOCALKEYPAIR（本地公钥） — `LOCALKEYPAIR.md`
-- [[configobject/UDG/20.15.2/LOGAPFM]] · LOGAPFM（日志代理性能统计信息） — `LOGAPFM.md`
-- [[configobject/UDG/20.15.2/LOGBUFFER]] · LOGBUFFER（Logbuffer中的数据） — `LOGBUFFER.md`
-- [[configobject/UDG/20.15.2/LOGDIC]] · LOGDIC（日志模型信息） — `LOGDIC.md`
-- [[configobject/UDG/20.15.2/LOGERRORINFO]] · LOGERRORINFO（日志模块错误信息） — `LOGERRORINFO.md`
-- [[configobject/UDG/20.15.2/LOGEVENT]] · LOGEVENT（事件日志信息） — `LOGEVENT.md`
-- [[configobject/UDG/20.15.2/LOGFILESTORAGE]] · LOGFILESTORAGE（日志存储信息） — `LOGFILESTORAGE.md`
-- [[configobject/UDG/20.15.2/LOGMESSAGESEND]] · LOGMESSAGESEND（日志发送的信息） — `LOGMESSAGESEND.md`
-- [[configobject/UDG/20.15.2/LOGSERVERDROPSTC]] · LOGSERVERDROPSTC（日志丢弃统计信息） — `LOGSERVERDROPSTC.md`
-- [[configobject/UDG/20.15.2/LOGSERVERSTC]] · LOGSERVERSTC（日志中心5分钟内消息统计信息） — `LOGSERVERSTC.md`
-- [[configobject/UDG/20.15.2/LOGSPFM]] · LOGSPFM（日志中心性能统计信息） — `LOGSPFM.md`
-- [[configobject/UDG/20.15.2/MASALMDETAIL]] · MASALMDETAIL（5G告警详细信息） — `MASALMDETAIL.md`
-- [[configobject/UDG/20.15.2/MASKALM]] · MASKALM（被屏蔽告警） — `MASKALM.md`
-- [[configobject/UDG/20.15.2/MCASTPAEELB]] · MCASTPAEELB（组播引流表项叶子信息） — `MCASTPAEELB.md`
-- [[configobject/UDG/20.15.2/MCASTPAEROUTE]] · MCASTPAEROUTE（组播引流表项信息） — `MCASTPAEROUTE.md`
-- [[configobject/UDG/20.15.2/MCASTPAESOURCE]] · MCASTPAESOURCE（组播源引流信息） — `MCASTPAESOURCE.md`
-- [[configobject/UDG/20.15.2/MCASTSOCKSTATE]] · MCASTSOCKSTATE（组播Socket信息） — `MCASTSOCKSTATE.md`
-- [[configobject/UDG/20.15.2/MCASTTIMER]] · MCASTTIMER（组播定时器信息） — `MCASTTIMER.md`
-- [[configobject/UDG/20.15.2/MEASMOC]] · MEASMOC（话统测量对象类模型） — `MEASMOC.md`
-- [[configobject/UDG/20.15.2/MEASOBJ]] · MEASOBJ（话统测量对象实例） — `MEASOBJ.md`
-- [[configobject/UDG/20.15.2/MEASSPECS]] · MEASSPECS（话统规格） — `MEASSPECS.md`
-- [[configobject/UDG/20.15.2/MEASSTAT]] · MEASSTAT（话统指标测量状态） — `MEASSTAT.md`
-- [[configobject/UDG/20.15.2/MEASTASK]] · MEASTASK（话统测量任务） — `MEASTASK.md`
-- [[configobject/UDG/20.15.2/MEASTREND]] · MEASTREND（话统指标统计趋势） — `MEASTREND.md`
-- [[configobject/UDG/20.15.2/MEASUNIT]] · MEASUNIT（测量指标模型） — `MEASUNIT.md`
-- [[configobject/UDG/20.15.2/MEM]] · MEM（资源内存信息） — `MEM.md`
-- [[configobject/UDG/20.15.2/MEMERRORINFO]] · MEMERRORINFO（内存错误信息） — `MEMERRORINFO.md`
-- [[configobject/UDG/20.15.2/MEMINFO]] · MEMINFO（APP内存信息） — `MEMINFO.md`
-- [[configobject/UDG/20.15.2/MEMORYINSPECT]] · MEMORYINSPECT（dopra相关内存信息） — `MEMORYINSPECT.md`
-- [[configobject/UDG/20.15.2/MGMDCTRLCNT]] · MGMDCTRLCNT（IGMP报文统计计数） — `MGMDCTRLCNT.md`
-- [[configobject/UDG/20.15.2/MGMDSOURCE]] · MGMDSOURCE（IGMP加入源信息） — `MGMDSOURCE.md`
-- [[configobject/UDG/20.15.2/MKINFO]] · MKINFO（主密钥信息） — `MKINFO.md`
-- [[configobject/UDG/20.15.2/MKUNSYNCTARGET]] · MKUNSYNCTARGET（主密钥未同步的对象） — `MKUNSYNCTARGET.md`
-- [[configobject/UDG/20.15.2/MMLLINKINFO]] · MMLLINKINFO（MML服务连接信息） — `MMLLINKINFO.md`
-- [[configobject/UDG/20.15.2/MPACV4RULESTAT]] · MPACV4RULESTAT（IPv4 MPAC策略匹配统计） — `MPACV4RULESTAT.md`
-- [[configobject/UDG/20.15.2/MPACV6RULESTAT]] · MPACV6RULESTAT（IPv6 MPAC策略匹配统计） — `MPACV6RULESTAT.md`
-- [[configobject/UDG/20.15.2/MPLSLSPSTC]] · MPLSLSPSTC（MPLS LSP统计信息） — `MPLSLSPSTC.md`
-- [[configobject/UDG/20.15.2/MPROCCPUSTAT]] · MPROCCPUSTAT（进程CPU信息） — `MPROCCPUSTAT.md`
-- [[configobject/UDG/20.15.2/MPROCMEMSTAT]] · MPROCMEMSTAT（进程内存信息） — `MPROCMEMSTAT.md`
-- [[configobject/UDG/20.15.2/MPROCRESSTAT]] · MPROCRESSTAT（进程资源数量） — `MPROCRESSTAT.md`
-- [[configobject/UDG/20.15.2/MSACTIVE]] · MSACTIVE（服务主实例相关信息） — `MSACTIVE.md`
-- [[configobject/UDG/20.15.2/MSPROCTYPE]] · MSPROCTYPE（微服务进程类型） — `MSPROCTYPE.md`
-- [[configobject/UDG/20.15.2/MSSACLERRINFO]] · MSSACLERRINFO（软转发支撑访问控制列表模块错误信息） — `MSSACLERRINFO.md`
-- [[configobject/UDG/20.15.2/MSSACLINFO]] · MSSACLINFO（软转发支撑访问控制列表模块全局信息） — `MSSACLINFO.md`
-- [[configobject/UDG/20.15.2/MSSACLKEYINFO]] · MSSACLKEYINFO（通过软转发支撑报文关键字查询访问控制列表的结果） — `MSSACLKEYINFO.md`
-- [[configobject/UDG/20.15.2/MSSACLRULEINFO]] · MSSACLRULEINFO（软转发支撑访问控制列表中表项的内容） — `MSSACLRULEINFO.md`
-- [[configobject/UDG/20.15.2/MSSACLTBLINFO]] · MSSACLTBLINFO（软转发支撑访问控制列表详细信息） — `MSSACLTBLINFO.md`
-- [[configobject/UDG/20.15.2/MSSADAPTDETAILPHYSICAL]] · MSSADAPTDETAILPHYSICAL（适配层物理表详细信息） — `MSSADAPTDETAILPHYSICAL.md`
-- [[configobject/UDG/20.15.2/MSSADAPTDETAILSERVICE]] · MSSADAPTDETAILSERVICE（适配层业务表详细信息） — `MSSADAPTDETAILSERVICE.md`
-- [[configobject/UDG/20.15.2/MSSADAPTINFO]] · MSSADAPTINFO（适配层全局信息） — `MSSADAPTINFO.md`
-- [[configobject/UDG/20.15.2/MSSCNTINFOBRI]] · MSSCNTINFOBRI（简要计数器信息） — `MSSCNTINFOBRI.md`
-- [[configobject/UDG/20.15.2/MSSCNTINFOCNT]] · MSSCNTINFOCNT（指定计数器ID的计数器信息） — `MSSCNTINFOCNT.md`
-- [[configobject/UDG/20.15.2/MSSCNTINFOGRP]] · MSSCNTINFOGRP（指定组ID的计数器信息） — `MSSCNTINFOGRP.md`
-- [[configobject/UDG/20.15.2/MSSCOMFBSUM]] · MSSCOMFBSUM（通信功能块摘要信息） — `MSSCOMFBSUM.md`
-- [[configobject/UDG/20.15.2/MSSCOMMADAPTSERV]] · MSSCOMMADAPTSERV（通信服务信息） — `MSSCOMMADAPTSERV.md`
-- [[configobject/UDG/20.15.2/MSSCOMMFB]] · MSSCOMMFB（通信功能块信息） — `MSSCOMMFB.md`
-- [[configobject/UDG/20.15.2/MSSCOMMINS]] · MSSCOMMINS（通信实例信息） — `MSSCOMMINS.md`
-- [[configobject/UDG/20.15.2/MSSCOMMMSGPOOL]] · MSSCOMMMSGPOOL（通信消息池信息） — `MSSCOMMMSGPOOL.md`
-- [[configobject/UDG/20.15.2/MSSCOMMSTAT]] · MSSCOMMSTAT（通信模块规则匹配统计信息） — `MSSCOMMSTAT.md`
-- [[configobject/UDG/20.15.2/MSSCOMMSVCID]] · MSSCOMMSVCID（指定服务号的服务类型信息） — `MSSCOMMSVCID.md`
-- [[configobject/UDG/20.15.2/MSSCOMMSVCTHRD]] · MSSCOMMSVCTHRD（指定线程的服务类型信息） — `MSSCOMMSVCTHRD.md`
-- [[configobject/UDG/20.15.2/MSSCOUNTERINFO]] · MSSCOUNTERINFO（指定组ID和计数器ID的计数器信息） — `MSSCOUNTERINFO.md`
-- [[configobject/UDG/20.15.2/MSSDEBUGINFO]] · MSSDEBUGINFO（维测开关状态） — `MSSDEBUGINFO.md`
-- [[configobject/UDG/20.15.2/MSSDEBUGINFOM]] · MSSDEBUGINFOM（维测开关状态） — `MSSDEBUGINFOM.md`
-- [[configobject/UDG/20.15.2/MSSFMMPROCESS]] · MSSFMMPROCESS（FMM的PBUF的进程信息） — `MSSFMMPROCESS.md`
-- [[configobject/UDG/20.15.2/MSSFMMSUMMARY]] · MSSFMMSUMMARY（FMM的PBUF概要信息） — `MSSFMMSUMMARY.md`
-- [[configobject/UDG/20.15.2/MSSLOGINFO]] · MSSLOGINFO（日志详细信息） — `MSSLOGINFO.md`
-- [[configobject/UDG/20.15.2/MSSLOGQUEUE]] · MSSLOGQUEUE（日志队列详细信息） — `MSSLOGQUEUE.md`
-- [[configobject/UDG/20.15.2/MSSOEPRECISION]] · MSSOEPRECISION（MSS保序队列调度信息） — `MSSOEPRECISION.md`
-- [[configobject/UDG/20.15.2/MSSOEREGISTER]] · MSSOEREGISTER（用户注册的保序信息） — `MSSOEREGISTER.md`
-- [[configobject/UDG/20.15.2/MSSPBUFINFO]] · MSSPBUFINFO（根据索引号查询PBUF信息） — `MSSPBUFINFO.md`
-- [[configobject/UDG/20.15.2/MSSPBUFLEAK]] · MSSPBUFLEAK（泄漏的PBUF缓存信息） — `MSSPBUFLEAK.md`
-- [[configobject/UDG/20.15.2/MSSPORTHWSTC]] · MSSPORTHWSTC（端口硬件统计信息） — `MSSPORTHWSTC.md`
-- [[configobject/UDG/20.15.2/MSSPORTINFO]] · MSSPORTINFO（端口信息） — `MSSPORTINFO.md`
-- [[configobject/UDG/20.15.2/MSSPORTPMDDRV]] · MSSPORTPMDDRV（端口PMD驱动信息） — `MSSPORTPMDDRV.md`
-- [[configobject/UDG/20.15.2/MSSPORTQUEUESTC]] · MSSPORTQUEUESTC（端口队列统计信息） — `MSSPORTQUEUESTC.md`
-- [[configobject/UDG/20.15.2/MSSPROCINFO]] · MSSPROCINFO（FMM的进程信息） — `MSSPROCINFO.md`
-- [[configobject/UDG/20.15.2/MSSQUEDETINFO]] · MSSQUEDETINFO（指定队列详细信息） — `MSSQUEDETINFO.md`
-- [[configobject/UDG/20.15.2/MSSQUEDETINFOM]] · MSSQUEDETINFOM（指定队列详细信息） — `MSSQUEDETINFOM.md`
-- [[configobject/UDG/20.15.2/MSSQUEINFO]] · MSSQUEINFO（队列总体信息） — `MSSQUEINFO.md`
-- [[configobject/UDG/20.15.2/MSSQUEINFOM]] · MSSQUEINFOM（队列总体信息） — `MSSQUEINFOM.md`
-- [[configobject/UDG/20.15.2/MSSSCHGRPFIX]] · MSSSCHGRPFIX（调度组详细统计信息） — `MSSSCHGRPFIX.md`
-- [[configobject/UDG/20.15.2/MSSSCHGRPHEAD]] · MSSSCHGRPHEAD（调度组统计概要信息） — `MSSSCHGRPHEAD.md`
-- [[configobject/UDG/20.15.2/MSSSCHGRPTAIL]] · MSSSCHGRPTAIL（调度组统计信息） — `MSSSCHGRPTAIL.md`
-- [[configobject/UDG/20.15.2/MSSSCHOEHEAD]] · MSSSCHOEHEAD（保序统计信息） — `MSSSCHOEHEAD.md`
-- [[configobject/UDG/20.15.2/MSSSCHOETAIL]] · MSSSCHOETAIL（保序详细统计信息） — `MSSSCHOETAIL.md`
-- [[configobject/UDG/20.15.2/MSSSCHSUMHEAD]] · MSSSCHSUMHEAD（调度部署概要信息） — `MSSSCHSUMHEAD.md`
-- [[configobject/UDG/20.15.2/MSSSCHSUMTAIL]] · MSSSCHSUMTAIL（调度部署详细信息） — `MSSSCHSUMTAIL.md`
-- [[configobject/UDG/20.15.2/MSSSCHSUMTAILM]] · MSSSCHSUMTAILM（调度部署详细信息） — `MSSSCHSUMTAILM.md`
-- [[configobject/UDG/20.15.2/MSSSCHTHRDLOAD]] · MSSSCHTHRDLOAD（调度线程负载信息） — `MSSSCHTHRDLOAD.md`
-- [[configobject/UDG/20.15.2/MSSSCHTHREADFIX]] · MSSSCHTHREADFIX（调度工作线程信息） — `MSSSCHTHREADFIX.md`
-- [[configobject/UDG/20.15.2/MSSSCHTHREADGROUP]] · MSSSCHTHREADGROUP（MSS线程级调度组的维测信息） — `MSSSCHTHREADGROUP.md`
-- [[configobject/UDG/20.15.2/MSSSCHTHREADHEAD]] · MSSSCHTHREADHEAD（调度线程概要信息） — `MSSSCHTHREADHEAD.md`
-- [[configobject/UDG/20.15.2/MSSSCHTHREADHEADM]] · MSSSCHTHREADHEADM（调度线程概要信息） — `MSSSCHTHREADHEADM.md`
-- [[configobject/UDG/20.15.2/MSSSCHTHREADQUEUE]] · MSSSCHTHREADQUEUE（MSS线程级调度队列的维测信息） — `MSSSCHTHREADQUEUE.md`
-- [[configobject/UDG/20.15.2/MSSSCHTHREADTAIL]] · MSSSCHTHREADTAIL（调度线程组信息） — `MSSSCHTHREADTAIL.md`
-- [[configobject/UDG/20.15.2/MSSSCHTRACE]] · MSSSCHTRACE（调度线程轨迹信息） — `MSSSCHTRACE.md`
-- [[configobject/UDG/20.15.2/MSSSCHWORK]] · MSSSCHWORK（调度工作类型信息） — `MSSSCHWORK.md`
-- [[configobject/UDG/20.15.2/MSSSCHWORKGROUP]] · MSSSCHWORKGROUP（调度组工作类型信息） — `MSSSCHWORKGROUP.md`
-- [[configobject/UDG/20.15.2/MSSSCHWORKM]] · MSSSCHWORKM（调度工作类型信息） — `MSSSCHWORKM.md`
-- [[configobject/UDG/20.15.2/MSSTBMDETINFO]] · MSSTBMDETINFO（通过表号查询表的详细信息） — `MSSTBMDETINFO.md`
-- [[configobject/UDG/20.15.2/MSSTBMFIB4]] · MSSTBMFIB4（通过关键字查询第四版互联网协议转发表的结果） — `MSSTBMFIB4.md`
-- [[configobject/UDG/20.15.2/MSSTBMFIB6]] · MSSTBMFIB6（通过关键字查询第六版因特网协议转发表的结果） — `MSSTBMFIB6.md`
-- [[configobject/UDG/20.15.2/MSSTBMHASH]] · MSSTBMHASH（通过关键字查询哈希表的结果） — `MSSTBMHASH.md`
-- [[configobject/UDG/20.15.2/MSSTBMINFO]] · MSSTBMINFO（表管理模块全局信息） — `MSSTBMINFO.md`
-- [[configobject/UDG/20.15.2/MSSTBMLINEAR]] · MSSTBMLINEAR（通过关键字查询线性表的结果） — `MSSTBMLINEAR.md`
-- [[configobject/UDG/20.15.2/MSSTIMERINFOHEAD]] · MSSTIMERINFOHEAD（定时器全局信息） — `MSSTIMERINFOHEAD.md`
-- [[configobject/UDG/20.15.2/MSSTIMERINFOTAIL]] · MSSTIMERINFOTAIL（定时器详细信息） — `MSSTIMERINFOTAIL.md`
-- [[configobject/UDG/20.15.2/MSSTIMERSTAT]] · MSSTIMERSTAT（定时器精度统计信息） — `MSSTIMERSTAT.md`
-- [[configobject/UDG/20.15.2/MSSWORKRUNTIME]] · MSSWORKRUNTIME（Work运行时间信息） — `MSSWORKRUNTIME.md`
-- [[configobject/UDG/20.15.2/MSSWPREC]] · MSSWPREC（微服务主实例切换历史记录） — `MSSWPREC.md`
-- [[configobject/UDG/20.15.2/MTSMODEL]] · MTSMODEL（消息跟踪模型） — `MTSMODEL.md`
-- [[configobject/UDG/20.15.2/NATSESSION]] · NATSESSION（NAT用户会话信息） — `NATSESSION.md`
-- [[configobject/UDG/20.15.2/NATSTATICMAPPING]] · NATSTATICMAPPING（NAT静态地址映射关系） — `NATSTATICMAPPING.md`
-- [[configobject/UDG/20.15.2/NCCCAPABILITY]] · NCCCAPABILITY（设备所支持的NETCONFC协议能力集） — `NCCCAPABILITY.md`
-- [[configobject/UDG/20.15.2/NCCDIAGLOG]] · NCCDIAGLOG（NETCONFC与其他组件的消息交互信息） — `NCCDIAGLOG.md`
-- [[configobject/UDG/20.15.2/NCCPEERLIST]] · NCCPEERLIST（NETCONFC管理的远端设备的信息） — `NCCPEERLIST.md`
-- [[configobject/UDG/20.15.2/NCCSESSION]] · NCCSESSION（NETCONFC会话信息） — `NCCSESSION.md`
-- [[configobject/UDG/20.15.2/NCCSYNCINFO]] · NCCSYNCINFO（NETCONFC的配置同步信息） — `NCCSYNCINFO.md`
-- [[configobject/UDG/20.15.2/NCSCAPABILITY]] · NCSCAPABILITY（设备所支持的NETCONF协议能力集） — `NCSCAPABILITY.md`
-- [[configobject/UDG/20.15.2/NCSDATAMODEL]] · NCSDATAMODEL（设备当前已加载的NETCONF数据模型） — `NCSDATAMODEL.md`
-- [[configobject/UDG/20.15.2/NCSDIAGLOG]] · NCSDIAGLOG（会话中NETCONF和其它组件的消息交互信息） — `NCSDIAGLOG.md`
-- [[configobject/UDG/20.15.2/NCSFAILOPER]] · NCSFAILOPER（操作失败信息） — `NCSFAILOPER.md`
-- [[configobject/UDG/20.15.2/NCSNTFFAIL]] · NCSNTFFAIL（通知消息发送失败信息） — `NCSNTFFAIL.md`
-- [[configobject/UDG/20.15.2/NCSNTFSTC]] · NCSNTFSTC（NETCONF通知会话的统计信息） — `NCSNTFSTC.md`
-- [[configobject/UDG/20.15.2/NCSNTFSUB]] · NCSNTFSUB（所有订阅通知事件信息） — `NCSNTFSUB.md`
-- [[configobject/UDG/20.15.2/NCSPROXYFAILOPER]] · NCSPROXYFAILOPER（NETCONF代理操作失败信息） — `NCSPROXYFAILOPER.md`
-- [[configobject/UDG/20.15.2/NCSPROXYFWD]] · NCSPROXYFWD（NETCONF代理转发策略） — `NCSPROXYFWD.md`
-- [[configobject/UDG/20.15.2/NCSPROXYSESSION]] · NCSPROXYSESSION（所有NETCONF代理VNFC会话信息） — `NCSPROXYSESSION.md`
-- [[configobject/UDG/20.15.2/NCSRPCERROR]] · NCSRPCERROR（最近的RPC和错误RPC响应报文信息） — `NCSRPCERROR.md`
-- [[configobject/UDG/20.15.2/NCSSCHEMAMAP]] · NCSSCHEMAMAP（应用模型间模型映射关联关系） — `NCSSCHEMAMAP.md`
-- [[configobject/UDG/20.15.2/NCSSESSION]] · NCSSESSION（NETCONF会话信息） — `NCSSESSION.md`
-- [[configobject/UDG/20.15.2/NCSSESSIONSTC]] · NCSSESSIONSTC（NETCONF会话的统计信息） — `NCSSESSIONSTC.md`
-- [[configobject/UDG/20.15.2/NCSSYNCFULL]] · NCSSYNCFULL（全量同步操作的诊断信息） — `NCSSYNCFULL.md`
-- [[configobject/UDG/20.15.2/NCSSYNCFULLSTC]] · NCSSYNCFULLSTC（全量同步操作期间的统计信息） — `NCSSYNCFULLSTC.md`
-- [[configobject/UDG/20.15.2/NDBLACKBOX]] · NDBLACKBOX（ND黑匣子信息） — `NDBLACKBOX.md`
-- [[configobject/UDG/20.15.2/NDHASTATE]] · NDHASTATE（ND与其他组件之间交互状态信息） — `NDHASTATE.md`
-- [[configobject/UDG/20.15.2/NDIFNET]] · NDIFNET（使能IPv6接口ND控制块内容） — `NDIFNET.md`
-- [[configobject/UDG/20.15.2/NDINFO]] · NDINFO（ND控制块信息） — `NDINFO.md`
-- [[configobject/UDG/20.15.2/NDNBVERBOSE]] · NDNBVERBOSE（邻居表项详细信息） — `NDNBVERBOSE.md`
-- [[configobject/UDG/20.15.2/NEGOSTATE]] · NEGOSTATE（所有进程的协商状态信息） — `NEGOSTATE.md`
-- [[configobject/UDG/20.15.2/NEINFO]] · NEINFO（ NeInfo） — `NEINFO.md`
-- [[configobject/UDG/20.15.2/NETINSTRU]] · NETINSTRU（网络实例对应RU信息） — `NETINSTRU.md`
-- [[configobject/UDG/20.15.2/NEXTHOP]] · NEXTHOP（负载均衡下一跳） — `NEXTHOP.md`
-- [[configobject/UDG/20.15.2/NFVIUPDRECVHIST]] · NFVIUPDRECVHIST（分批升级历史） — `NFVIUPDRECVHIST.md`
-- [[configobject/UDG/20.15.2/NGLANCONFLICTMAC]] · NGLANCONFLICTMAC（5G LAN冲突MAC地址信息） — `NGLANCONFLICTMAC.md`
-- [[configobject/UDG/20.15.2/NGLANGRPSESSION]] · NGLANGRPSESSION（5G LAN组会话上下文） — `NGLANGRPSESSION.md`
-- [[configobject/UDG/20.15.2/NGLANMACEXINFO]] · NGLANMACEXINFO（5G LAN MAC地址超规格信息） — `NGLANMACEXINFO.md`
-- [[configobject/UDG/20.15.2/NGLOOPDETDEAUE]] · NGLOOPDETDEAUE（5G LAN环路检测去活用户记录） — `NGLOOPDETDEAUE.md`
-- [[configobject/UDG/20.15.2/NODECPUSTAT]] · NODECPUSTAT（Node的CPU信息） — `NODECPUSTAT.md`
-- [[configobject/UDG/20.15.2/NODEMEMSTAT]] · NODEMEMSTAT（Node的内存信息） — `NODEMEMSTAT.md`
-- [[configobject/UDG/20.15.2/NODERES]] · NODERES（节点资源信息） — `NODERES.md`
-- [[configobject/UDG/20.15.2/NOSBASEIFSTAT]] · NOSBASEIFSTAT（NOS Base平面网络的报文统计信息） — `NOSBASEIFSTAT.md`
-- [[configobject/UDG/20.15.2/NOSBASEIFSTATUS]] · NOSBASEIFSTATUS（NOS Base平面网络的网口状态信息） — `NOSBASEIFSTATUS.md`
-- [[configobject/UDG/20.15.2/NOSBASENEIGH]] · NOSBASENEIGH（NOS Base平面网络的邻居信息） — `NOSBASENEIGH.md`
-- [[configobject/UDG/20.15.2/NOSBASEROUTE]] · NOSBASEROUTE（NOS Base平面网络的路由信息） — `NOSBASEROUTE.md`
-- [[configobject/UDG/20.15.2/NOSBASESOCKET]] · NOSBASESOCKET（NOS Base平面网络的Socket信息） — `NOSBASESOCKET.md`
-- [[configobject/UDG/20.15.2/NPFABRICOAMINFO]] · NPFABRICOAMINFO（NP OAM链路信息） — `NPFABRICOAMINFO.md`
-- [[configobject/UDG/20.15.2/NPFABRICSUBHEALTHY]] · NPFABRICSUBHEALTHY（NP FABRIC亚健康信息） — `NPFABRICSUBHEALTHY.md`
-- [[configobject/UDG/20.15.2/NPFRMPOOL]] · NPFRMPOOL（转发资源池使用信息） — `NPFRMPOOL.md`
-- [[configobject/UDG/20.15.2/NPMICCODEPATCHSTATUS]] · NPMICCODEPATCHSTATUS（NP微码补丁加载状态） — `NPMICCODEPATCHSTATUS.md`
-- [[configobject/UDG/20.15.2/NPNODE]] · NPNODE（NP状态查询） — `NPNODE.md`
-- [[configobject/UDG/20.15.2/NPPORT]] · NPPORT（NP端口状态） — `NPPORT.md`
-- [[configobject/UDG/20.15.2/NPPORTBANDWIDTHUSAGE]] · NPPORTBANDWIDTHUSAGE（NP端口带宽实时利用率） — `NPPORTBANDWIDTHUSAGE.md`
-- [[configobject/UDG/20.15.2/NPPORTPODTBMAP]] · NPPORTPODTBMAP（NP卡和Pod TB出端口映射信息） — `NPPORTPODTBMAP.md`
-- [[configobject/UDG/20.15.2/NPTABSTAT]] · NPTABSTAT（NP表项简要信息） — `NPTABSTAT.md`
-- [[configobject/UDG/20.15.2/NPWORKMODE]] · NPWORKMODE（NP工作模式） — `NPWORKMODE.md`
-- [[configobject/UDG/20.15.2/OBJVERBOSEQRY]] · OBJVERBOSEQRY（对象反向绑定关系） — `OBJVERBOSEQRY.md`
-- [[configobject/UDG/20.15.2/OMDBGDATA]] · OMDBGDATA（OM模块的调试信息） — `OMDBGDATA.md`
-- [[configobject/UDG/20.15.2/ONECLICKDEPLOYHIST]] · ONECLICKDEPLOYHIST（一键式部署操作历史） — `ONECLICKDEPLOYHIST.md`
-- [[configobject/UDG/20.15.2/OPSASSISTHIST]] · OPSASSISTHIST（系统助手的历史信息） — `OPSASSISTHIST.md`
-- [[configobject/UDG/20.15.2/OPSASSISTSTATE]] · OPSASSISTSTATE（系统助手的当前信息） — `OPSASSISTSTATE.md`
-- [[configobject/UDG/20.15.2/OPSASSISTVERB]] · OPSASSISTVERB（系统助手的详细信息） — `OPSASSISTVERB.md`
-- [[configobject/UDG/20.15.2/OPSBLACKBOX]] · OPSBLACKBOX（开放可编程系统的维护信息） — `OPSBLACKBOX.md`
-- [[configobject/UDG/20.15.2/OPSPROCESSSTATE]] · OPSPROCESSSTATE（通过OPS运行的应用程序的信息） — `OPSPROCESSSTATE.md`
-- [[configobject/UDG/20.15.2/OPTLOG]] · OPTLOG（操作日志） — `OPTLOG.md`
-- [[configobject/UDG/20.15.2/OSPATCH]] · OSPATCH（OS补丁版本号） — `OSPATCH.md`
-- [[configobject/UDG/20.15.2/OSPFBFD]] · OSPFBFD（OSPF BFD状态） — `OSPFBFD.md`
-- [[configobject/UDG/20.15.2/OSPFCUMULATIVE]] · OSPFCUMULATIVE（OSPF统计信息） — `OSPFCUMULATIVE.md`
-- [[configobject/UDG/20.15.2/OSPFERRORDATA]] · OSPFERRORDATA（OSPF进程的错误信息） — `OSPFERRORDATA.md`
-- [[configobject/UDG/20.15.2/OSPFERRORLSA]] · OSPFERRORLSA（OSPF错误LSA的信息） — `OSPFERRORLSA.md`
-- [[configobject/UDG/20.15.2/OSPFERRORPACKET]] · OSPFERRORPACKET（OSPF错误报文的信息） — `OSPFERRORPACKET.md`
-- [[configobject/UDG/20.15.2/OSPFFRRTOPOLOGY]] · OSPFFRRTOPOLOGY（OSPF的FRR拓扑信息） — `OSPFFRRTOPOLOGY.md`
-- [[configobject/UDG/20.15.2/OSPFHOSTTABLE]] · OSPFHOSTTABLE（OSPF动态主机名的信息） — `OSPFHOSTTABLE.md`
-- [[configobject/UDG/20.15.2/OSPFLASTDOWNNBR]] · OSPFLASTDOWNNBR（OSPF上次Down的邻居） — `OSPFLASTDOWNNBR.md`
-- [[configobject/UDG/20.15.2/OSPFLDPSYNCSTATE]] · OSPFLDPSYNCSTATE（OSPF LDP联动状态信息） — `OSPFLDPSYNCSTATE.md`
-- [[configobject/UDG/20.15.2/OSPFLSDB]] · OSPFLSDB（OSPF链接状态数据库） — `OSPFLSDB.md`
-- [[configobject/UDG/20.15.2/OSPFLSDBSTATEINFO]] · OSPFLSDBSTATEINFO（OSPF LSDB的状态信息） — `OSPFLSDBSTATEINFO.md`
-- [[configobject/UDG/20.15.2/OSPFLSDBSTATEVERBOSE]] · OSPFLSDBSTATEVERBOSE（OSPF LSDB详细信息） — `OSPFLSDBSTATEVERBOSE.md`
-- [[configobject/UDG/20.15.2/OSPFMAXAGELSA]] · OSPFMAXAGELSA（OSPF MaxAge LSA信息） — `OSPFMAXAGELSA.md`
-- [[configobject/UDG/20.15.2/OSPFORIGINATELSA]] · OSPFORIGINATELSA（Router LSA生成流程的信息） — `OSPFORIGINATELSA.md`
-- [[configobject/UDG/20.15.2/OSPFROUTESOURCE]] · OSPFROUTESOURCE（OSPF路由源信息） — `OSPFROUTESOURCE.md`
-- [[configobject/UDG/20.15.2/OSPFROUTING]] · OSPFROUTING（OSPF路由信息） — `OSPFROUTING.md`
-- [[configobject/UDG/20.15.2/OSPFSOCKETINFO]] · OSPFSOCKETINFO（OSPF与Socket的交互信息） — `OSPFSOCKETINFO.md`
-- [[configobject/UDG/20.15.2/OSPFTOPOLOGY]] · OSPFTOPOLOGY（OSPF拓扑信息） — `OSPFTOPOLOGY.md`
-- [[configobject/UDG/20.15.2/OSPFTOPOSTC]] · OSPFTOPOSTC（OSPF拓扑的统计信息） — `OSPFTOPOSTC.md`
-- [[configobject/UDG/20.15.2/OSPFUPDATELSA]] · OSPFUPDATELSA（OSPF接收的LSA的更新信息） — `OSPFUPDATELSA.md`
-- [[configobject/UDG/20.15.2/OSPFV3BFD]] · OSPFV3BFD（OSPFv3 BFD状态） — `OSPFV3BFD.md`
-- [[configobject/UDG/20.15.2/OSPFV3CUMULATIVE]] · OSPFV3CUMULATIVE（OSPFv3统计信息） — `OSPFV3CUMULATIVE.md`
-- [[configobject/UDG/20.15.2/OSPFV3FRRTOPOLOGY]] · OSPFV3FRRTOPOLOGY（OSPFv3的FRR拓扑信息） — `OSPFV3FRRTOPOLOGY.md`
-- [[configobject/UDG/20.15.2/OSPFV3LASTDOWNNBR]] · OSPFV3LASTDOWNNBR（OSPFv3上次Down的邻居） — `OSPFV3LASTDOWNNBR.md`
-- [[configobject/UDG/20.15.2/OSPFV3LSDB]] · OSPFV3LSDB（OSPFv3链接状态数据库） — `OSPFV3LSDB.md`
-- [[configobject/UDG/20.15.2/OSPFV3LSDBSTATEINFO]] · OSPFV3LSDBSTATEINFO（OSPFv3 LSDB的状态信息） — `OSPFV3LSDBSTATEINFO.md`
-- [[configobject/UDG/20.15.2/OSPFV3PEER]] · OSPFV3PEER（OSPFv3邻居信息） — `OSPFV3PEER.md`
-- [[configobject/UDG/20.15.2/OSPFV3ROUTESOURCE]] · OSPFV3ROUTESOURCE（OSPFv3路由源信息） — `OSPFV3ROUTESOURCE.md`
-- [[configobject/UDG/20.15.2/OSPFV3ROUTING]] · OSPFV3ROUTING（OSPFv3路由信息） — `OSPFV3ROUTING.md`
-- [[configobject/UDG/20.15.2/OSPROCMEMSTATIS]] · OSPROCMEMSTATIS（系统进程内存信息） — `OSPROCMEMSTATIS.md`
-- [[configobject/UDG/20.15.2/OSSYSINFO]] · OSSYSINFO（OS系统信息） — `OSSYSINFO.md`
-- [[configobject/UDG/20.15.2/OTTFLOWFILTERNAME]] · OTTFLOWFILTERNAME（外置规则库OTT flow filter信息） — `OTTFLOWFILTERNAME.md`
-- [[configobject/UDG/20.15.2/PAEALARMINFO]] · PAEALARMINFO（PAE告警信息） — `PAEALARMINFO.md`
-- [[configobject/UDG/20.15.2/PAECHANNELSYNC]] · PAECHANNELSYNC（同步到业务进程的通道信息） — `PAECHANNELSYNC.md`
-- [[configobject/UDG/20.15.2/PAEDYETRACEINFO]] · PAEDYETRACEINFO（PAE染色跟踪信息） — `PAEDYETRACEINFO.md`
-- [[configobject/UDG/20.15.2/PAEEXAMSTATE]] · PAEEXAMSTATE（PAE故障信息） — `PAEEXAMSTATE.md`
-- [[configobject/UDG/20.15.2/PAEFABDETBRF]] · PAEFABDETBRF（Fabric链路探测简要结果） — `PAEFABDETBRF.md`
-- [[configobject/UDG/20.15.2/PAEFABDETDTL]] · PAEFABDETDTL（Fabric链路探测任务的详细结果） — `PAEFABDETDTL.md`
-- [[configobject/UDG/20.15.2/PAEFABRICLINK]] · PAEFABRICLINK（PAE链路信息） — `PAEFABRICLINK.md`
-- [[configobject/UDG/20.15.2/PAEFWDINSTANCE]] · PAEFWDINSTANCE（PAE转发实例信息） — `PAEFWDINSTANCE.md`
-- [[configobject/UDG/20.15.2/PAELOOPIPTB]] · PAELOOPIPTB（Loop口IP和TB映射信息） — `PAELOOPIPTB.md`
-- [[configobject/UDG/20.15.2/PAELOOPROUTE]] · PAELOOPROUTE（Loop口路由信息） — `PAELOOPROUTE.md`
-- [[configobject/UDG/20.15.2/PAENETWORKCFG]] · PAENETWORKCFG（PAE网络配置信息） — `PAENETWORKCFG.md`
-- [[configobject/UDG/20.15.2/PAENODE]] · PAENODE（PAE节点信息） — `PAENODE.md`
-- [[configobject/UDG/20.15.2/PAEPAYLOADINFO]] · PAEPAYLOADINFO（PAE负载信息） — `PAEPAYLOADINFO.md`
-- [[configobject/UDG/20.15.2/PAEPORTBYTB]] · PAEPORTBYTB（PAE Fabric端口的TB统计信息） — `PAEPORTBYTB.md`
-- [[configobject/UDG/20.15.2/PAEPORTGROUPINFO]] · PAEPORTGROUPINFO（PAE端口组信息） — `PAEPORTGROUPINFO.md`
-- [[configobject/UDG/20.15.2/PAEPORTINFO]] · PAEPORTINFO（PAE端口基本信息） — `PAEPORTINFO.md`
-- [[configobject/UDG/20.15.2/PAEPORTQUEUE]] · PAEPORTQUEUE（PAE多队列信息） — `PAEPORTQUEUE.md`
-- [[configobject/UDG/20.15.2/PAEPRIMAPQOS]] · PAEPRIMAPQOS（报文优先级与QoS映射信息） — `PAEPRIMAPQOS.md`
-- [[configobject/UDG/20.15.2/PAEQUEUEINFO]] · PAEQUEUEINFO（PAE队列信息） — `PAEQUEUEINFO.md`
-- [[configobject/UDG/20.15.2/PAERULEEXTERN]] · PAERULEEXTERN（PAE上外联口规则信息） — `PAERULEEXTERN.md`
-- [[configobject/UDG/20.15.2/PAERULELOOP3T]] · PAERULELOOP3T（PAE上Loop口三元组规则信息） — `PAERULELOOP3T.md`
-- [[configobject/UDG/20.15.2/PAESCHEDULE]] · PAESCHEDULE（PAE调度统计信息） — `PAESCHEDULE.md`
-- [[configobject/UDG/20.15.2/PAEUDSSTATUS]] · PAEUDSSTATUS（UDS链路状态） — `PAEUDSSTATUS.md`
-- [[configobject/UDG/20.15.2/PARTITIONINFO]] · PARTITIONINFO（RU的磁盘分区信息） — `PARTITIONINFO.md`
-- [[configobject/UDG/20.15.2/PATCHDETAILINFO]] · PATCHDETAILINFO（补丁信息） — `PATCHDETAILINFO.md`
-- [[configobject/UDG/20.15.2/PATCHINFO]] · PATCHINFO（系统当前补丁信息） — `PATCHINFO.md`
-- [[configobject/UDG/20.15.2/PATHINFO]] · PATHINFO（路径信息） — `PATHINFO.md`
-- [[configobject/UDG/20.15.2/PATHMTU]] · PATHMTU（路径MTU） — `PATHMTU.md`
-- [[configobject/UDG/20.15.2/PATHNUMBER]] · PATHNUMBER（路径数） — `PATHNUMBER.md`
-- [[configobject/UDG/20.15.2/PATHSTSTRESULT]] · PATHSTSTRESULT（批量路径探测结果） — `PATHSTSTRESULT.md`
-- [[configobject/UDG/20.15.2/PDNAUTOTSTRESULT]] · PDNAUTOTSTRESULT（PDN自动探测结果） — `PDNAUTOTSTRESULT.md`
-- [[configobject/UDG/20.15.2/PDNTSTRESULT]] · PDNTSTRESULT（PDN侧路由探测结果） — `PDNTSTRESULT.md`
-- [[configobject/UDG/20.15.2/PIMCBSR]] · PIMCBSR（CBSR信息） — `PIMCBSR.md`
-- [[configobject/UDG/20.15.2/PIMCLAIMUP]] · PIMCLAIMUP（PIM使用的路由信息） — `PIMCLAIMUP.md`
-- [[configobject/UDG/20.15.2/PIMCTLMSGCNTIF]] · PIMCTLMSGCNTIF（PIM接口报文统计计数） — `PIMCTLMSGCNTIF.md`
-- [[configobject/UDG/20.15.2/PIMCTLMSGCNTVRF]] · PIMCTLMSGCNTVRF（PIM实例报文统计计数） — `PIMCTLMSGCNTVRF.md`
-- [[configobject/UDG/20.15.2/PIMEBSR]] · PIMEBSR（EBSR信息） — `PIMEBSR.md`
-- [[configobject/UDG/20.15.2/PIMINVPKT]] · PIMINVPKT（PIM无效报文） — `PIMINVPKT.md`
-- [[configobject/UDG/20.15.2/PIMINVPKTCNTIF]] · PIMINVPKTCNTIF（PIM接口无效报文统计） — `PIMINVPKTCNTIF.md`
-- [[configobject/UDG/20.15.2/PIMINVPKTCNTVRF]] · PIMINVPKTCNTVRF（PIM实例无效报文统计） — `PIMINVPKTCNTVRF.md`
-- [[configobject/UDG/20.15.2/PIMNBR]] · PIMNBR（PIM邻居信息） — `PIMNBR.md`
-- [[configobject/UDG/20.15.2/PIMROUTEDW]] · PIMROUTEDW（PIM表项下游信息） — `PIMROUTEDW.md`
-- [[configobject/UDG/20.15.2/PIMROUTEUP]] · PIMROUTEUP（PIM表项上游信息） — `PIMROUTEUP.md`
-- [[configobject/UDG/20.15.2/PIMRP]] · PIMRP（RP信息） — `PIMRP.md`
-- [[configobject/UDG/20.15.2/PIMRPF]] · PIMRPF（PIM RPF路由信息） — `PIMRPF.md`
-- [[configobject/UDG/20.15.2/PIMRPGROUP]] · PIMRPGROUP（组播组对应的RP信息） — `PIMRPGROUP.md`
-- [[configobject/UDG/20.15.2/PKICERTLIST]] · PKICERTLIST（证书列表） — `PKICERTLIST.md`
-- [[configobject/UDG/20.15.2/PLGPKGDETAILINFO]] · PLGPKGDETAILINFO（扩展包详细信息） — `PLGPKGDETAILINFO.md`
-- [[configobject/UDG/20.15.2/PLUGINFO]] · PLUGINFO（插件信息） — `PLUGINFO.md`
-- [[configobject/UDG/20.15.2/PLYTRACE]] · PLYTRACE（策略跟踪） — `PLYTRACE.md`
-- [[configobject/UDG/20.15.2/PODCPUSTAT]] · PODCPUSTAT（pod CPU信息） — `PODCPUSTAT.md`
-- [[configobject/UDG/20.15.2/PODHEALREC]] · PODHEALREC（POD重建历史记录） — `PODHEALREC.md`
-- [[configobject/UDG/20.15.2/PODINFO]] · PODINFO（已部署的Pod实例信息） — `PODINFO.md`
-- [[configobject/UDG/20.15.2/PODMEMSTAT]] · PODMEMSTAT（pod内存信息） — `PODMEMSTAT.md`
-- [[configobject/UDG/20.15.2/PODMIGRATEHIST]] · PODMIGRATEHIST（节点扩缩容任务进展） — `PODMIGRATEHIST.md`
-- [[configobject/UDG/20.15.2/POLICYMAP]] · POLICYMAP（策略映射表） — `POLICYMAP.md`
-- [[configobject/UDG/20.15.2/POLICYNUM]] · POLICYNUM（策略数量） — `POLICYNUM.md`
-- [[configobject/UDG/20.15.2/POOLUSAGE]] · POOLUSAGE（地址池使用情况） — `POOLUSAGE.md`
-- [[configobject/UDG/20.15.2/PORT]] · PORT（端口信息） — `PORT.md`
-- [[configobject/UDG/20.15.2/PREFIXFILTERINFO]] · PREFIXFILTERINFO（IP前缀列表信息） — `PREFIXFILTERINFO.md`
-- [[configobject/UDG/20.15.2/PROCCHANNALEVENT]] · PROCCHANNALEVENT（逻辑链路事件） — `PROCCHANNALEVENT.md`
-- [[configobject/UDG/20.15.2/PROCCHANNALSTC]] · PROCCHANNALSTC（逻辑链路统计信息） — `PROCCHANNALSTC.md`
-- [[configobject/UDG/20.15.2/PROCESSCSDB]] · PROCESSCSDB（CSDB进程信息） — `PROCESSCSDB.md`
-- [[configobject/UDG/20.15.2/PROCESSCSLB]] · PROCESSCSLB（CSLB进程信息） — `PROCESSCSLB.md`
-- [[configobject/UDG/20.15.2/PROCESSINFO]] · PROCESSINFO（进程信息） — `PROCESSINFO.md`
-- [[configobject/UDG/20.15.2/PROCFILEHDLSTAT]] · PROCFILEHDLSTAT（进程文件句柄使用信息） — `PROCFILEHDLSTAT.md`
-- [[configobject/UDG/20.15.2/PROCINFO]] · PROCINFO（进程部署信息） — `PROCINFO.md`
-- [[configobject/UDG/20.15.2/PROCMEMPT]] · PROCMEMPT（进程内存分区信息） — `PROCMEMPT.md`
-- [[configobject/UDG/20.15.2/PROCMSGAREA]] · PROCMSGAREA（进程消息分区信息） — `PROCMSGAREA.md`
-- [[configobject/UDG/20.15.2/PROCMSGQUEUE]] · PROCMSGQUEUE（进程消息队列信息） — `PROCMSGQUEUE.md`
-- [[configobject/UDG/20.15.2/PROCRESSTAT]] · PROCRESSTAT（进程资源信息） — `PROCRESSTAT.md`
-- [[configobject/UDG/20.15.2/PROCTHREAD]] · PROCTHREAD（进程内线程信息） — `PROCTHREAD.md`
-- [[configobject/UDG/20.15.2/PROCTIMERSTAT]] · PROCTIMERSTAT（进程定时器计数信息） — `PROCTIMERSTAT.md`
-- [[configobject/UDG/20.15.2/PRTGRPINFO]] · PRTGRPINFO（保护组信息） — `PRTGRPINFO.md`
-- [[configobject/UDG/20.15.2/QUICPROTOCOL]] · QUICPROTOCOL（Quic类协议） — `QUICPROTOCOL.md`
-- [[configobject/UDG/20.15.2/RAWIPSTATUS]] · RAWIPSTATUS（RawIP状态） — `RAWIPSTATUS.md`
-- [[configobject/UDG/20.15.2/RAWLINKSTATUS]] · RAWLINKSTATUS（Raw-link状态） — `RAWLINKSTATUS.md`
-- [[configobject/UDG/20.15.2/RBKVER]] · RBKVER（升级可回退版本信息） — `RBKVER.md`
-- [[configobject/UDG/20.15.2/RELAYALMDETAIL]] · RELAYALMDETAIL（媒体中继告警详情） — `RELAYALMDETAIL.md`
-- [[configobject/UDG/20.15.2/RELAYDNSSTATUS]] · RELAYDNSSTATUS（媒体中继DNS服务器状态） — `RELAYDNSSTATUS.md`
-- [[configobject/UDG/20.15.2/REPORTFAILUREINFO]] · REPORTFAILUREINFO（RU组件上报的故障信息） — `REPORTFAILUREINFO.md`
-- [[configobject/UDG/20.15.2/RES]] · RES（资源信息） — `RES.md`
-- [[configobject/UDG/20.15.2/RESASSERTINFO]] · RESASSERTINFO（断言信息） — `RESASSERTINFO.md`
-- [[configobject/UDG/20.15.2/RESCOMPONENT]] · RESCOMPONENT（组件信息） — `RESCOMPONENT.md`
-- [[configobject/UDG/20.15.2/RESDEADLOOPINFO]] · RESDEADLOOPINFO（死循环信息） — `RESDEADLOOPINFO.md`
-- [[configobject/UDG/20.15.2/RESEXCEPTIONINFO]] · RESEXCEPTIONINFO（异常信息） — `RESEXCEPTIONINFO.md`
-- [[configobject/UDG/20.15.2/RESHASTAT]] · RESHASTAT（系统HA状态） — `RESHASTAT.md`
-- [[configobject/UDG/20.15.2/RESINSTANCETYPE]] · RESINSTANCETYPE（资源实例类型） — `RESINSTANCETYPE.md`
-- [[configobject/UDG/20.15.2/RESMEMERRORINFO]] · RESMEMERRORINFO（内存错误信息） — `RESMEMERRORINFO.md`
-- [[configobject/UDG/20.15.2/RESNOSBASEIFSTAT]] · RESNOSBASEIFSTAT（NOS Base平面网络的报文统计信息） — `RESNOSBASEIFSTAT.md`
-- [[configobject/UDG/20.15.2/RESNOSBASEIFSTATUS]] · RESNOSBASEIFSTATUS（NOS Base平面网络的网口状态信息） — `RESNOSBASEIFSTATUS.md`
-- [[configobject/UDG/20.15.2/RESNOSBASENEIGH]] · RESNOSBASENEIGH（NOS Base平面网络的邻居信息） — `RESNOSBASENEIGH.md`
-- [[configobject/UDG/20.15.2/RESNOSBASENETWORK]] · RESNOSBASENETWORK（NOS Base平面网络信息） — `RESNOSBASENETWORK.md`
-- [[configobject/UDG/20.15.2/RESNOSBASEROUTE]] · RESNOSBASEROUTE（NOS Base平面网络的路由信息） — `RESNOSBASEROUTE.md`
-- [[configobject/UDG/20.15.2/RESNOSBASESOCKET]] · RESNOSBASESOCKET（NOS Base平面网络的Socket信息） — `RESNOSBASESOCKET.md`
-- [[configobject/UDG/20.15.2/RESPARTITIONINFO]] · RESPARTITIONINFO（资源的磁盘分区信息） — `RESPARTITIONINFO.md`
-- [[configobject/UDG/20.15.2/RESPROCESSINFO]] · RESPROCESSINFO（进程信息） — `RESPROCESSINFO.md`
-- [[configobject/UDG/20.15.2/RESPROCFILEHDLSTAT]] · RESPROCFILEHDLSTAT（进程文件句柄使用信息） — `RESPROCFILEHDLSTAT.md`
-- [[configobject/UDG/20.15.2/RESPROCMEMPT]] · RESPROCMEMPT（进程内存分区信息） — `RESPROCMEMPT.md`
-- [[configobject/UDG/20.15.2/RESPROCMSGAREA]] · RESPROCMSGAREA（进程消息分区信息） — `RESPROCMSGAREA.md`
-- [[configobject/UDG/20.15.2/RESPROCTIMERSTAT]] · RESPROCTIMERSTAT（进程定时器计数信息） — `RESPROCTIMERSTAT.md`
-- [[configobject/UDG/20.15.2/RESREPORTFAILUREINFO]] · RESREPORTFAILUREINFO（组件上报的故障信息） — `RESREPORTFAILUREINFO.md`
-- [[configobject/UDG/20.15.2/REVCERTFILE]] · REVCERTFILE（证书吊销列表） — `REVCERTFILE.md`
-- [[configobject/UDG/20.15.2/RISK]] · RISK（系统风险） — `RISK.md`
-- [[configobject/UDG/20.15.2/RMBLACKBOX]] · RMBLACKBOX（路由管理黑匣子信息） — `RMBLACKBOX.md`
-- [[configobject/UDG/20.15.2/RMCONSUMERIMPORT]] · RMCONSUMERIMPORT（路由管理消费者引入信息） — `RMCONSUMERIMPORT.md`
-- [[configobject/UDG/20.15.2/RMCONSUMERINFO]] · RMCONSUMERINFO（路由管理消费者信息） — `RMCONSUMERINFO.md`
-- [[configobject/UDG/20.15.2/RMCONSUMERSUBSCRIBE]] · RMCONSUMERSUBSCRIBE（路由管理消费者订阅信息） — `RMCONSUMERSUBSCRIBE.md`
-- [[configobject/UDG/20.15.2/RMIID]] · RMIID（路由管理IID信息） — `RMIID.md`
-- [[configobject/UDG/20.15.2/RMMSGDETAIL]] · RMMSGDETAIL（路由管理消息明细） — `RMMSGDETAIL.md`
-- [[configobject/UDG/20.15.2/RMMSGSTC]] · RMMSGSTC（路由管理消息统计信息） — `RMMSGSTC.md`
-- [[configobject/UDG/20.15.2/RMPREFIXINFO]] · RMPREFIXINFO（路由管理前缀信息） — `RMPREFIXINFO.md`
-- [[configobject/UDG/20.15.2/RMPRODUCERDETAIL]] · RMPRODUCERDETAIL（路由管理生产者详细信息） — `RMPRODUCERDETAIL.md`
-- [[configobject/UDG/20.15.2/RMSMOOTHSTC]] · RMSMOOTHSTC（路由管理平滑统计信息） — `RMSMOOTHSTC.md`
-- [[configobject/UDG/20.15.2/RMSTATISTICS]] · RMSTATISTICS（IP路由统计） — `RMSTATISTICS.md`
-- [[configobject/UDG/20.15.2/RMVERIFICATIONSTC]] · RMVERIFICATIONSTC（路由管理对账统计信息） — `RMVERIFICATIONSTC.md`
-- [[configobject/UDG/20.15.2/ROUTE]] · ROUTE（IPv4路由表） — `ROUTE.md`
-- [[configobject/UDG/20.15.2/ROUTE6]] · ROUTE6（IPv6路由表） — `ROUTE6.md`
-- [[configobject/UDG/20.15.2/ROUTEPOLICYINFO]] · ROUTEPOLICYINFO（路由策略信息） — `ROUTEPOLICYINFO.md`
-- [[configobject/UDG/20.15.2/RPTSUBSINFO]] · RPTSUBSINFO（报表订阅信息） — `RPTSUBSINFO.md`
-- [[configobject/UDG/20.15.2/RPTSVRSTATUS]] · RPTSVRSTATUS（报表服务器状态） — `RPTSVRSTATUS.md`
-- [[configobject/UDG/20.15.2/RSCBOXHEALREC]] · RSCBOXHEALREC（ResourceBox重建历史记录） — `RSCBOXHEALREC.md`
-- [[configobject/UDG/20.15.2/RUCPUINFO]] · RUCPUINFO（RU CPU信息） — `RUCPUINFO.md`
-- [[configobject/UDG/20.15.2/RUCPUUSGTHRESH]] · RUCPUUSGTHRESH（RU CPU占用率、告警上报门限和告警恢复门限） — `RUCPUUSGTHRESH.md`
-- [[configobject/UDG/20.15.2/RUGROUPSWP]] · RUGROUPSWP（资源单元组主备倒换状态信息） — `RUGROUPSWP.md`
-- [[configobject/UDG/20.15.2/RULECHECK]] · RULECHECK（规则检测结果） — `RULECHECK.md`
-- [[configobject/UDG/20.15.2/RVKLICINFO]] · RVKLICINFO（License失效信息） — `RVKLICINFO.md`
-- [[configobject/UDG/20.15.2/SBILINKSTATUS]] · SBILINKSTATUS（服务化接口链路状态） — `SBILINKSTATUS.md`
-- [[configobject/UDG/20.15.2/SBIPEERNF]] · SBIPEERNF（服务化接口对端NF信息） — `SBIPEERNF.md`
-- [[configobject/UDG/20.15.2/SCALEGROUP]] · SCALEGROUP（ScaleGroup信息） — `SCALEGROUP.md`
-- [[configobject/UDG/20.15.2/SCALINGWORKLOAD]] · SCALINGWORKLOAD（扩缩容负载查询） — `SCALINGWORKLOAD.md`
-- [[configobject/UDG/20.15.2/SDRDBG]] · SDRDBG（SDR调试信息） — `SDRDBG.md`
-- [[configobject/UDG/20.15.2/SDRKEYMATCH]] · SDRKEYMATCH（SDRC中的KeyMatch信息） — `SDRKEYMATCH.md`
-- [[configobject/UDG/20.15.2/SDRLBPLCY]] · SDRLBPLCY（SDRC中缓存的下一跳组信息） — `SDRLBPLCY.md`
-- [[configobject/UDG/20.15.2/SDRNEXTHOP]] · SDRNEXTHOP（SDRC中缓存的下一跳信息） — `SDRNEXTHOP.md`
-- [[configobject/UDG/20.15.2/SDRPLCYCHECK]] · SDRPLCYCHECK（策略核查任务进度） — `SDRPLCYCHECK.md`
-- [[configobject/UDG/20.15.2/SDRPLYSUBINFO]] · SDRPLYSUBINFO（所有策略订阅者信息） — `SDRPLYSUBINFO.md`
-- [[configobject/UDG/20.15.2/SDRPLYSUBSTATUS]] · SDRPLYSUBSTATUS（SDRC中保存的策略订阅关系） — `SDRPLYSUBSTATUS.md`
-- [[configobject/UDG/20.15.2/SDRPLYSYNCVER]] · SDRPLYSYNCVER（策略同步版本） — `SDRPLYSYNCVER.md`
-- [[configobject/UDG/20.15.2/SDRPOLICYINFO]] · SDRPOLICYINFO（SDRC中的策略版本信息） — `SDRPOLICYINFO.md`
-- [[configobject/UDG/20.15.2/SDRPOLICYKEYS]] · SDRPOLICYKEYS（SDRC中的策略Key信息） — `SDRPOLICYKEYS.md`
-- [[configobject/UDG/20.15.2/SDRPROCESS]] · SDRPROCESS（SDRC中缓存的进程信息） — `SDRPROCESS.md`
-- [[configobject/UDG/20.15.2/SDRROUTE]] · SDRROUTE（SDRC中的APPROUTERINFO信息） — `SDRROUTE.md`
-- [[configobject/UDG/20.15.2/SDRSAPPTYPE]] · SDRSAPPTYPE（SDRS中的APPTYPE信息） — `SDRSAPPTYPE.md`
-- [[configobject/UDG/20.15.2/SDRSERVICE]] · SDRSERVICE（SDRC中的Service信息） — `SDRSERVICE.md`
-- [[configobject/UDG/20.15.2/SDRSMASTERNODE]] · SDRSMASTERNODE（HAF向SDRS推送的主节点信息） — `SDRSMASTERNODE.md`
-- [[configobject/UDG/20.15.2/SDRSROUTE]] · SDRSROUTE（SDRS中的APPROUTEINFO信息） — `SDRSROUTE.md`
-- [[configobject/UDG/20.15.2/SDRSTOKEN]] · SDRSTOKEN（SDRS中的TOKEN信息） — `SDRSTOKEN.md`
-- [[configobject/UDG/20.15.2/SDRSVPN]] · SDRSVPN（SDRS中的VPN信息） — `SDRSVPN.md`
-- [[configobject/UDG/20.15.2/SDRSVPNIP]] · SDRSVPNIP（SDRS中的VPNIP信息） — `SDRSVPNIP.md`
-- [[configobject/UDG/20.15.2/SDRTOKEN]] · SDRTOKEN（SDRC中的TOKEN信息） — `SDRTOKEN.md`
-- [[configobject/UDG/20.15.2/SDRTOPIC]] · SDRTOPIC（SDRC中的TOPIC信息） — `SDRTOPIC.md`
-- [[configobject/UDG/20.15.2/SDRVPN]] · SDRVPN（SDRC中的VPN信息） — `SDRVPN.md`
-- [[configobject/UDG/20.15.2/SDRVPNCFG]] · SDRVPNCFG（SDR VPN配置信息） — `SDRVPNCFG.md`
-- [[configobject/UDG/20.15.2/SDRVPNIP]] · SDRVPNIP（SDRC中的VPNIP信息） — `SDRVPNIP.md`
-- [[configobject/UDG/20.15.2/SECACL6TAB]] · SECACL6TAB（安全ACL6表项） — `SECACL6TAB.md`
-- [[configobject/UDG/20.15.2/SECACLTAB]] · SECACLTAB（安全ACL表项） — `SECACLTAB.md`
-- [[configobject/UDG/20.15.2/SECCARINFO]] · SECCARINFO（当前安全CAR信息） — `SECCARINFO.md`
-- [[configobject/UDG/20.15.2/SECCARTAB]] · SECCARTAB（安全CAR表项） — `SECCARTAB.md`
-- [[configobject/UDG/20.15.2/SECLOG]] · SECLOG（安全日志） — `SECLOG.md`
-- [[configobject/UDG/20.15.2/SECPOLICYALLPKT]] · SECPOLICYALLPKT（上送报文总体速率） — `SECPOLICYALLPKT.md`
-- [[configobject/UDG/20.15.2/SECTIONUSAGE]] · SECTIONUSAGE（地址段使用情况） — `SECTIONUSAGE.md`
-- [[configobject/UDG/20.15.2/SECTOTALPKTSTAT]] · SECTOTALPKTSTAT（安全总的报文计数情况） — `SECTOTALPKTSTAT.md`
-- [[configobject/UDG/20.15.2/SECTOTALPKTTAB]] · SECTOTALPKTTAB（安全总报文表项） — `SECTOTALPKTTAB.md`
-- [[configobject/UDG/20.15.2/SERVICEINST]] · SERVICEINST（注册的服务实例信息） — `SERVICEINST.md`
-- [[configobject/UDG/20.15.2/SERVICENAME]] · SERVICENAME（注册的服务名称） — `SERVICENAME.md`
-- [[configobject/UDG/20.15.2/SERVICERUSTATE]] · SERVICERUSTATE（RU的信息） — `SERVICERUSTATE.md`
-- [[configobject/UDG/20.15.2/SESSIONINFO]] · SESSIONINFO（用户上下文） — `SESSIONINFO.md`
-- [[configobject/UDG/20.15.2/SESSIONMSGSTAT]] · SESSIONMSGSTAT（信令失败统计的结果） — `SESSIONMSGSTAT.md`
-- [[configobject/UDG/20.15.2/SESSIONNUMBER]] · SESSIONNUMBER（会话数） — `SESSIONNUMBER.md`
-- [[configobject/UDG/20.15.2/SFEACLTABLE]] · SFEACLTABLE（SFE ACL表项） — `SFEACLTABLE.md`
-- [[configobject/UDG/20.15.2/SFEARP]] · SFEARP（转发ARP表项） — `SFEARP.md`
-- [[configobject/UDG/20.15.2/SFEARPREPLY]] · SFEARPREPLY（指定的ARP-REPLY表项） — `SFEARPREPLY.md`
-- [[configobject/UDG/20.15.2/SFEBFDERECV]] · SFEBFDERECV（BFD-ERECV表） — `SFEBFDERECV.md`
-- [[configobject/UDG/20.15.2/SFEBFDIRECV]] · SFEBFDIRECV（BFD-IRECV表） — `SFEBFDIRECV.md`
-- [[configobject/UDG/20.15.2/SFEBLKBOX]] · SFEBLKBOX（SFE黑匣子） — `SFEBLKBOX.md`
-- [[configobject/UDG/20.15.2/SFECERCIB]] · SFECERCIB（基于子接口的上行/下行业务属性表） — `SFECERCIB.md`
-- [[configobject/UDG/20.15.2/SFECERFIB4]] · SFECERFIB4（指定IPv4的FIB表） — `SFECERFIB4.md`
-- [[configobject/UDG/20.15.2/SFECERFIB6]] · SFECERFIB6（指定IPv6的FIB表） — `SFECERFIB6.md`
-- [[configobject/UDG/20.15.2/SFECERPORT]] · SFECERPORT（指定端口出/入方向的表项） — `SFECERPORT.md`
-- [[configobject/UDG/20.15.2/SFEDBGPKT]] · SFEDBGPKT（调测捕获报文） — `SFEDBGPKT.md`
-- [[configobject/UDG/20.15.2/SFEDBGPKTCNT]] · SFEDBGPKTCNT（SFE报文统计） — `SFEDBGPKTCNT.md`
-- [[configobject/UDG/20.15.2/SFEELB]] · SFEELB（ELB表项） — `SFEELB.md`
-- [[configobject/UDG/20.15.2/SFEERRORSTAT]] · SFEERRORSTAT（SFE错误统计信息） — `SFEERRORSTAT.md`
-- [[configobject/UDG/20.15.2/SFEEVENTSTAT]] · SFEEVENTSTAT（SFE事件统计信息） — `SFEEVENTSTAT.md`
-- [[configobject/UDG/20.15.2/SFEFIB]] · SFEFIB（FIB表项信息） — `SFEFIB.md`
-- [[configobject/UDG/20.15.2/SFEFIB6]] · SFEFIB6（IPv6的FIB表项信息） — `SFEFIB6.md`
-- [[configobject/UDG/20.15.2/SFEFIB6STC]] · SFEFIB6STC（IPv6指定的VPN路由表项统计） — `SFEFIB6STC.md`
-- [[configobject/UDG/20.15.2/SFEFIB6STCALL]] · SFEFIB6STCALL（IPv6所有的路由表项的统计） — `SFEFIB6STCALL.md`
-- [[configobject/UDG/20.15.2/SFEFIBSTAT]] · SFEFIBSTAT（FIB统计信息） — `SFEFIBSTAT.md`
-- [[configobject/UDG/20.15.2/SFEFIBSTATALL]] · SFEFIBSTATALL（FIB所有统计信息） — `SFEFIBSTATALL.md`
-- [[configobject/UDG/20.15.2/SFEHEALTH]] · SFEHEALTH（SFE健康状况） — `SFEHEALTH.md`
-- [[configobject/UDG/20.15.2/SFEIPSACLTBL]] · SFEIPSACLTBL（软转发SFE IPSEC-ACL表项信息） — `SFEIPSACLTBL.md`
-- [[configobject/UDG/20.15.2/SFELINEARTABLE]] · SFELINEARTABLE（指定的线性表记录） — `SFELINEARTABLE.md`
-- [[configobject/UDG/20.15.2/SFELOCALIP]] · SFELOCALIP（LOCAL-IP表项） — `SFELOCALIP.md`
-- [[configobject/UDG/20.15.2/SFEMFIB4]] · SFEMFIB4（MFIB4表项） — `SFEMFIB4.md`
-- [[configobject/UDG/20.15.2/SFETABLESTC]] · SFETABLESTC（SFE表项统计信息） — `SFETABLESTC.md`
-- [[configobject/UDG/20.15.2/SFETABLEVERBOSE]] · SFETABLEVERBOSE（按摘要和详情两种方式显示SFE表项信息） — `SFETABLEVERBOSE.md`
-- [[configobject/UDG/20.15.2/SFETABSTAT]] · SFETABSTAT（SFE表项简要信息） — `SFETABSTAT.md`
-- [[configobject/UDG/20.15.2/SFETNLPKTSTAT]] · SFETNLPKTSTAT（SFE隧道报文统计） — `SFETNLPKTSTAT.md`
-- [[configobject/UDG/20.15.2/SFETRACEIP]] · SFETRACEIP（SFE IP消息跟踪配置信息） — `SFETRACEIP.md`
-- [[configobject/UDG/20.15.2/SFETUNNEL]] · SFETUNNEL（Tunnel表项） — `SFETUNNEL.md`
-- [[configobject/UDG/20.15.2/SFE_QUEUE]] · SFE_QUEUE（指定VM上转发使用的所有或指定队列的详细信息） — `SFE_QUEUE.md`
-- [[configobject/UDG/20.15.2/SFE_TABLE]] · SFE_TABLE（指定资源单元上的SFE的表项信息） — `SFE_TABLE.md`
-- [[configobject/UDG/20.15.2/SHAPINGBUFUSED]] · SHAPINGBUFUSED（整形使用的缓存） — `SHAPINGBUFUSED.md`
-- [[configobject/UDG/20.15.2/SLADBGDATA]] · SLADBGDATA（SLA调试数据） — `SLADBGDATA.md`
-- [[configobject/UDG/20.15.2/SLEMEMBER]] · SLEMEMBER（仲裁成员列表信息） — `SLEMEMBER.md`
-- [[configobject/UDG/20.15.2/SLEMEMBERDETAIL]] · SLEMEMBERDETAIL（仲裁成员详细信息） — `SLEMEMBERDETAIL.md`
-- [[configobject/UDG/20.15.2/SNMPINFO]] · SNMPINFO（网元长连接信息） — `SNMPINFO.md`
-- [[configobject/UDG/20.15.2/SOCKBLACKBOX]] · SOCKBLACKBOX（SOCK黑匣子诊断信息） — `SOCKBLACKBOX.md`
-- [[configobject/UDG/20.15.2/SOCKINNERDATA]] · SOCKINNERDATA（SOCK诊断信息） — `SOCKINNERDATA.md`
-- [[configobject/UDG/20.15.2/SOCKPATH]] · SOCKPATH（SOCK路径诊断信息） — `SOCKPATH.md`
-- [[configobject/UDG/20.15.2/SOCKSESSION]] · SOCKSESSION（SOCK会话诊断信息） — `SOCKSESSION.md`
-- [[configobject/UDG/20.15.2/SOCKSTATISTICS]] · SOCKSTATISTICS（SOCK统计诊断信息） — `SOCKSTATISTICS.md`
-- [[configobject/UDG/20.15.2/SPECCFGINFO]] · SPECCFGINFO（规格配置项信息） — `SPECCFGINFO.md`
-- [[configobject/UDG/20.15.2/SRIIDINFO]] · SRIIDINFO（静态路由IID信息） — `SRIIDINFO.md`
-- [[configobject/UDG/20.15.2/SRIPV6IIDINFO]] · SRIPV6IIDINFO（IPv6静态路由IID信息） — `SRIPV6IIDINFO.md`
-- [[configobject/UDG/20.15.2/SRVADDRNUM]] · SRVADDRNUM（服务实例地址数） — `SRVADDRNUM.md`
-- [[configobject/UDG/20.15.2/SRVINSTSTAT]] · SRVINSTSTAT（LB服务实例统计） — `SRVINSTSTAT.md`
-- [[configobject/UDG/20.15.2/SRVINSTTYPEREL]] · SRVINSTTYPEREL（服务实例与业务类型关系） — `SRVINSTTYPEREL.md`
-- [[configobject/UDG/20.15.2/SRVIP]] · SRVIP（服务IP） — `SRVIP.md`
-- [[configobject/UDG/20.15.2/SRVMATCHSQRY]] · SRVMATCHSQRY（业务匹配统计结果） — `SRVMATCHSQRY.md`
-- [[configobject/UDG/20.15.2/SRVMSGSTAT]] · SRVMSGSTAT（服务消息统计） — `SRVMSGSTAT.md`
-- [[configobject/UDG/20.15.2/SRVVNFC]] · SRVVNFC（服务VNFC） — `SRVVNFC.md`
-- [[configobject/UDG/20.15.2/SRVVNFCMSGSTAT]] · SRVVNFCMSGSTAT（服务VNFC消息统计） — `SRVVNFCMSGSTAT.md`
-- [[configobject/UDG/20.15.2/SSHCCONNSTC]] · SSHCCONNSTC（客户端的连接统计信息） — `SSHCCONNSTC.md`
-- [[configobject/UDG/20.15.2/SSHCERRORLOG]] · SSHCERRORLOG（SSH客户端的错误日志） — `SSHCERRORLOG.md`
-- [[configobject/UDG/20.15.2/SSHCMSGDATA]] · SSHCMSGDATA（SSH客户端的消息数据） — `SSHCMSGDATA.md`
-- [[configobject/UDG/20.15.2/SSHCSESSIONSTC]] · SSHCSESSIONSTC（SSH客户端的会话统计信息） — `SSHCSESSIONSTC.md`
-- [[configobject/UDG/20.15.2/SSHCSTATUSINFO]] · SSHCSTATUSINFO（客户端运行状态信息） — `SSHCSTATUSINFO.md`
-- [[configobject/UDG/20.15.2/SSHSCONNSTC]] · SSHSCONNSTC（服务器的连接统计信息） — `SSHSCONNSTC.md`
-- [[configobject/UDG/20.15.2/SSHSERRORLOG]] · SSHSERRORLOG（SSH服务器的错误日志） — `SSHSERRORLOG.md`
-- [[configobject/UDG/20.15.2/SSHSERVERSESSION]] · SSHSERVERSESSION（SSH服务端会话信息） — `SSHSERVERSESSION.md`
-- [[configobject/UDG/20.15.2/SSHSMSGDATA]] · SSHSMSGDATA（SSH服务器的消息数据） — `SSHSMSGDATA.md`
-- [[configobject/UDG/20.15.2/SSHSSESSIONSTC]] · SSHSSESSIONSTC（SSH服务器的会话统计信息） — `SSHSSESSIONSTC.md`
-- [[configobject/UDG/20.15.2/SSHSSTATUSINFO]] · SSHSSTATUSINFO（服务器运行状态信息） — `SSHSSTATUSINFO.md`
-- [[configobject/UDG/20.15.2/STARTUP]] · STARTUP（本次和下次启动文件） — `STARTUP.md`
-- [[configobject/UDG/20.15.2/STARVATIONINFO]] · STARVATIONINFO（长时间未被调度的组件消息） — `STARVATIONINFO.md`
-- [[configobject/UDG/20.15.2/STDSESSION]] · STDSESSION（用户上下文） — `STDSESSION.md`
-- [[configobject/UDG/20.15.2/SUBHEALTHRECORD]] · SUBHEALTHRECORD（base平面亚健康链路历史信息） — `SUBHEALTHRECORD.md`
-- [[configobject/UDG/20.15.2/SUPPFINGERIDEN]] · SUPPFINGERIDEN（SA指纹识别协议） — `SUPPFINGERIDEN.md`
-- [[configobject/UDG/20.15.2/SUPPRESSALM]] · SUPPRESSALM（被抑制告警） — `SUPPRESSALM.md`
-- [[configobject/UDG/20.15.2/SUPPUSRRLTIDEN]] · SUPPUSRRLTIDEN（支持用户关联识别协议） — `SUPPUSRRLTIDEN.md`
-- [[configobject/UDG/20.15.2/SYNCFILESTATUS]] · SYNCFILESTATUS（对账文件状态） — `SYNCFILESTATUS.md`
-- [[configobject/UDG/20.15.2/SYSPROCSTAT]] · SYSPROCSTAT（系统处理状态） — `SYSPROCSTAT.md`
-- [[configobject/UDG/20.15.2/SYSRUNNINGSTAT]] · SYSRUNNINGSTAT（系统状态查询） — `SYSRUNNINGSTAT.md`
-- [[configobject/UDG/20.15.2/SYSTEMLOG]] · SYSTEMLOG（系统日志） — `SYSTEMLOG.md`
-- [[configobject/UDG/20.15.2/TCPSTATUS]] · TCPSTATUS（TCP状态） — `TCPSTATUS.md`
-- [[configobject/UDG/20.15.2/TESTRULEMATCH]] · TESTRULEMATCH（规则匹配测试结果） — `TESTRULEMATCH.md`
-- [[configobject/UDG/20.15.2/TETHERINGINFO]] · TETHERINGINFO（tethering用户终端接入数量） — `TETHERINGINFO.md`
-- [[configobject/UDG/20.15.2/THREADCALLSTACK]] · THREADCALLSTACK（线程调用栈信息） — `THREADCALLSTACK.md`
-- [[configobject/UDG/20.15.2/TIMER]] · TIMER（定时器信息） — `TIMER.md`
-- [[configobject/UDG/20.15.2/TLBDATA]] · TLBDATA（TLB统计信息） — `TLBDATA.md`
-- [[configobject/UDG/20.15.2/TNLMMSGSTATICS]] · TNLMMSGSTATICS（隧道管理消息计数） — `TNLMMSGSTATICS.md`
-- [[configobject/UDG/20.15.2/TNLPROTOCOL]] · TNLPROTOCOL（隧道协议） — `TNLPROTOCOL.md`
-- [[configobject/UDG/20.15.2/TNLSTATISTICS]] · TNLSTATISTICS（隧道统计信息） — `TNLSTATISTICS.md`
-- [[configobject/UDG/20.15.2/TOPICSTAT]] · TOPICSTAT（topic状态） — `TOPICSTAT.md`
-- [[configobject/UDG/20.15.2/TRCAGENTTASK]] · TRCAGENTTASK（跟踪代理侧跟踪任务信息） — `TRCAGENTTASK.md`
-- [[configobject/UDG/20.15.2/TRCDBGINFO]] · TRCDBGINFO（跟踪调试信息） — `TRCDBGINFO.md`
-- [[configobject/UDG/20.15.2/TRCFILE]] · TRCFILE（跟踪文件） — `TRCFILE.md`
-- [[configobject/UDG/20.15.2/TRCFILEDIAG]] · TRCFILEDIAG（跟踪文件可维护性信息） — `TRCFILEDIAG.md`
-- [[configobject/UDG/20.15.2/TRCFLOWCTRL]] · TRCFLOWCTRL（流控通知相关信息） — `TRCFLOWCTRL.md`
-- [[configobject/UDG/20.15.2/TRCLASTSUBSESSION]] · TRCLASTSUBSESSION（最后订阅Session信息） — `TRCLASTSUBSESSION.md`
-- [[configobject/UDG/20.15.2/TRCSMSGTOTALSTC]] · TRCSMSGTOTALSTC（跟踪中心消息统计信息） — `TRCSMSGTOTALSTC.md`
-- [[configobject/UDG/20.15.2/TRCSTASKMSGSTC]] · TRCSTASKMSGSTC（跟踪中心任务消息统计信息） — `TRCSTASKMSGSTC.md`
-- [[configobject/UDG/20.15.2/TRCTASK]] · TRCTASK（跟踪任务） — `TRCTASK.md`
-- [[configobject/UDG/20.15.2/TRCTASKSESSION]] · TRCTASKSESSION（跟踪任务Session信息） — `TRCTASKSESSION.md`
-- [[configobject/UDG/20.15.2/TRCTASKSTC]] · TRCTASKSTC（跟踪任务相关跟踪消息的统计信息） — `TRCTASKSTC.md`
-- [[configobject/UDG/20.15.2/TRUNKINNERDATA]] · TRUNKINNERDATA（Trunk内部数据） — `TRUNKINNERDATA.md`
-- [[configobject/UDG/20.15.2/TSNINFO]] · TSNINFO（TSN信息） — `TSNINFO.md`
-- [[configobject/UDG/20.15.2/TUNNELINFO]] · TUNNELINFO（隧道信息） — `TUNNELINFO.md`
-- [[configobject/UDG/20.15.2/TUNNELINFOVERBOSE]] · TUNNELINFOVERBOSE（隧道详细信息） — `TUNNELINFOVERBOSE.md`
-- [[configobject/UDG/20.15.2/TWAMPSENDERSTATS]] · TWAMPSENDERSTATS（TWAMP发送端详细信息） — `TWAMPSENDERSTATS.md`
-- [[configobject/UDG/20.15.2/UDPSTATUS]] · UDPSTATUS（UDP状态） — `UDPSTATUS.md`
-- [[configobject/UDG/20.15.2/UEINJECTSTAT]] · UEINJECTSTAT（UE灌包状态） — `UEINJECTSTAT.md`
-- [[configobject/UDG/20.15.2/UFPLATENCY]] · UFPLATENCY（UFP时延度量统计结果） — `UFPLATENCY.md`
-- [[configobject/UDG/20.15.2/UPDATECTRLCFG]] · UPDATECTRLCFG（内部升级配置表） — `UPDATECTRLCFG.md`
-- [[configobject/UDG/20.15.2/UPDIAMAAASTATUS]] · UPDIAMAAASTATUS（Diameter AAA服务器状态） — `UPDIAMAAASTATUS.md`
-- [[configobject/UDG/20.15.2/UPDIAMDICTSTAT]] · UPDIAMDICTSTAT（Diameter字典加载状态） — `UPDIAMDICTSTAT.md`
-- [[configobject/UDG/20.15.2/UPDIAMRTSTATUS]] · UPDIAMRTSTATUS（Diameter Route状态） — `UPDIAMRTSTATUS.md`
-- [[configobject/UDG/20.15.2/UPDRASTATUS]] · UPDRASTATUS（DRA状态） — `UPDRASTATUS.md`
-- [[configobject/UDG/20.15.2/UPDRUVER]] · UPDRUVER（RU版本信息） — `UPDRUVER.md`
-- [[configobject/UDG/20.15.2/UPDVER]] · UPDVER（当前版本信息） — `UPDVER.md`
-- [[configobject/UDG/20.15.2/UPDYNDIAMAAA]] · UPDYNDIAMAAA（动态Diameter AAA服务器） — `UPDYNDIAMAAA.md`
-- [[configobject/UDG/20.15.2/UPGPODINFO]] · UPGPODINFO（已部署的Pod的版本号） — `UPGPODINFO.md`
-- [[configobject/UDG/20.15.2/UPVERLC]] · UPVERLC（设备EOS时间） — `UPVERLC.md`
-- [[configobject/UDG/20.15.2/USAGEINFO]] · USAGEINFO（会话上下文用量信息） — `USAGEINFO.md`
-- [[configobject/UDG/20.15.2/VERSION]] · VERSION（系统版本信息） — `VERSION.md`
-- [[configobject/UDG/20.15.2/VHAMEMBER]] · VHAMEMBER（vHA ETCD集群节点详细信息） — `VHAMEMBER.md`
-- [[configobject/UDG/20.15.2/VNFCRES]] · VNFCRES（VNFC内的资源配置信息） — `VNFCRES.md`
-- [[configobject/UDG/20.15.2/VNFCSCALINGHISTORY]] · VNFCSCALINGHISTORY（基于VNFC的扩缩容历史信息） — `VNFCSCALINGHISTORY.md`
-- [[configobject/UDG/20.15.2/VNFINNERSTAT]] · VNFINNERSTAT（网元内部状态） — `VNFINNERSTAT.md`
-- [[configobject/UDG/20.15.2/VNFINSTANTIATIONRESULT]] · VNFINSTANTIATIONRESULT（实例化完成结果查询） — `VNFINSTANTIATIONRESULT.md`
-- [[configobject/UDG/20.15.2/VNFMODE]] · VNFMODE（VNF部署模式） — `VNFMODE.md`
-- [[configobject/UDG/20.15.2/VNFPKGS]] · VNFPKGS（网元关联的软件包名称） — `VNFPKGS.md`
-- [[configobject/UDG/20.15.2/VNFPODVM]] · VNFPODVM（网元的POD与虚拟机位置关系） — `VNFPODVM.md`
-- [[configobject/UDG/20.15.2/VNFSTACKNAMES]] · VNFSTACKNAMES（网元下所有堆栈名称） — `VNFSTACKNAMES.md`
-- [[configobject/UDG/20.15.2/VNODESTARTTIME]] · VNODESTARTTIME（虚拟节点启动时间信息） — `VNODESTARTTIME.md`
-- [[configobject/UDG/20.15.2/VNRSLINK]] · VNRSLINK（VNRS链路） — `VNRSLINK.md`
-- [[configobject/UDG/20.15.2/VNRSMSGSTAT]] · VNRSMSGSTAT（VNRS消息统计） — `VNRSMSGSTAT.md`
-- [[configobject/UDG/20.15.2/VPNAPPCFG]] · VPNAPPCFG（下发的VPN的app类型信息） — `VPNAPPCFG.md`
-- [[configobject/UDG/20.15.2/VPNINSTINTF]] · VPNINSTINTF（VPN实例接口信息） — `VPNINSTINTF.md`
-- [[configobject/UDG/20.15.2/VPNRELATEOBJECT]] · VPNRELATEOBJECT（与指定VPN实例绑定的实体） — `VPNRELATEOBJECT.md`
-- [[configobject/UDG/20.15.2/VPORT]] · VPORT（虚拟端口信息） — `VPORT.md`
-- [[configobject/UDG/20.15.2/VTEPSTAT]] · VTEPSTAT（Vtep状态） — `VTEPSTAT.md`
-- [[configobject/UDG/20.15.2/VXLANGRPSTAT]] · VXLANGRPSTAT（VXLAN组链路状态） — `VXLANGRPSTAT.md`
-- [[configobject/UDG/20.15.2/WLRATTRINFO]] · WLRATTRINFO（无线路由属性信息） — `WLRATTRINFO.md`
-- [[configobject/UDG/20.15.2/WLRBLACKBOX]] · WLRBLACKBOX（无线路由黑匣子信息） — `WLRBLACKBOX.md`
-- [[configobject/UDG/20.15.2/WLRFLOWRULE]] · WLRFLOWRULE（IPv4引流表信息） — `WLRFLOWRULE.md`
-- [[configobject/UDG/20.15.2/WLRFLOWRULE6]] · WLRFLOWRULE6（IPv6引流表信息） — `WLRFLOWRULE6.md`
-- [[configobject/UDG/20.15.2/WLRGLOBALINFO]] · WLRGLOBALINFO（无线路由全局信息） — `WLRGLOBALINFO.md`
-- [[configobject/UDG/20.15.2/WLRIFFLOWRULE]] · WLRIFFLOWRULE（无线路由IPv4接口引流表信息） — `WLRIFFLOWRULE.md`
-- [[configobject/UDG/20.15.2/WLRIFFLOWRULE6]] · WLRIFFLOWRULE6（无线路由IPv6接口引流表信息） — `WLRIFFLOWRULE6.md`
-- [[configobject/UDG/20.15.2/WLRIID]] · WLRIID（无线路由IID信息） — `WLRIID.md`
-- [[configobject/UDG/20.15.2/WLRMSGSTC]] · WLRMSGSTC（WLR与各Partner的消息统计） — `WLRMSGSTC.md`
-- [[configobject/UDG/20.15.2/WLRPAEG]] · WLRPAEG（PAEG信息） — `WLRPAEG.md`
-- [[configobject/UDG/20.15.2/WLRPEER]] · WLRPEER（无线路由对端状态） — `WLRPEER.md`
-- [[configobject/UDG/20.15.2/WLRPEERDATASTAT]] · WLRPEERDATASTAT（PEER相关数据的统计计数） — `WLRPEERDATASTAT.md`
-- [[configobject/UDG/20.15.2/WLRPEERMSGSTAT]] · WLRPEERMSGSTAT（PEER有关消息的统计计数） — `WLRPEERMSGSTAT.md`
-- [[configobject/UDG/20.15.2/WLRROUTESTAT]] · WLRROUTESTAT（无线路由的路由统计信息） — `WLRROUTESTAT.md`
-- [[configobject/UDG/20.15.2/WLRSMOOTHSTAT]] · WLRSMOOTHSTAT（无线路由与对端平滑状态机状态） — `WLRSMOOTHSTAT.md`
-- [[configobject/UDG/20.15.2/WLRSRBIF]] · WLRSRBIF（无线路由订阅的接口信息） — `WLRSRBIF.md`
-- [[configobject/UDG/20.15.2/WLRSRCINTERFACE]] · WLRSRCINTERFACE（无线路由地址借用表信息） — `WLRSRCINTERFACE.md`
-- [[configobject/UDG/20.15.2/WLRSUBINFO]] · WLRSUBINFO（APP订阅信息） — `WLRSUBINFO.md`
-- [[configobject/UDG/20.15.2/WLRSUBINFOVERBOSE]] · WLRSUBINFOVERBOSE（APP详细订阅信息） — `WLRSUBINFOVERBOSE.md`
-- [[configobject/UDG/20.15.2/WLRSUBRESULT]] · WLRSUBRESULT（APP订阅结果信息） — `WLRSUBRESULT.md`
-- [[configobject/UDG/20.15.2/WLRSYSPAEINFO]] · WLRSYSPAEINFO（系统PAE信息） — `WLRSYSPAEINFO.md`
-- [[configobject/UDG/20.15.2/WLRTABLE]] · WLRTABLE（无线路由表） — `WLRTABLE.md`
-- [[configobject/UDG/20.15.2/WLRTBLSMTHINFO]] · WLRTBLSMTHINFO（基于表无线路由平滑统计信息） — `WLRTBLSMTHINFO.md`
-- [[configobject/UDG/20.15.2/WLRTBLSTAT]] · WLRTBLSTAT（基于表无线路由数据信息） — `WLRTBLSTAT.md`
-- [[configobject/UDG/20.15.2/WLRTNLMSTC]] · WLRTNLMSTC（WLR组件与TNLM交互的统计信息） — `WLRTNLMSTC.md`
-- [[configobject/UDG/20.15.2/WORKLOAD]] · WORKLOAD（系统负载） — `WORKLOAD.md`
-- [[configobject/UDG/20.15.2/XSMINNERDATA]] · XSMINNERDATA（XSM模块与其他模块的组件间交互消息） — `XSMINNERDATA.md`
+- [ACC（加速器信息）](configobject/UDG/20.15.2/ACC.md)
+- [ACL6ADVRULECNTVERBOSE（高级ACL6规则匹配详细计数）](configobject/UDG/20.15.2/ACL6ADVRULECNTVERBOSE.md)
+- [ACL6BASICRULECNTVERBOSE（基本ACL6规则匹配详细计数）](configobject/UDG/20.15.2/ACL6BASICRULECNTVERBOSE.md)
+- [ACLADV6RULECNT（高级IPv6 ACL规则匹配计数）](configobject/UDG/20.15.2/ACLADV6RULECNT.md)
+- [ACLADVRULECNT（高级ACL规则匹配计数）](configobject/UDG/20.15.2/ACLADVRULECNT.md)
+- [ACLADVRULECNTVERBOSE（高级ACL规则匹配详细计数）](configobject/UDG/20.15.2/ACLADVRULECNTVERBOSE.md)
+- [ACLBASIC6RULECNT（基本IPv6 ACL规则匹配计数）](configobject/UDG/20.15.2/ACLBASIC6RULECNT.md)
+- [ACLBASICRULECNT（基本ACL规则匹配计数）](configobject/UDG/20.15.2/ACLBASICRULECNT.md)
+- [ACLBASICRULECNTVERBOSE（基本ACL规则匹配详细计数）](configobject/UDG/20.15.2/ACLBASICRULECNTVERBOSE.md)
+- [ACLETHRULECNT（以太ACL规则匹配计数）](configobject/UDG/20.15.2/ACLETHRULECNT.md)
+- [ACLETHRULECNTVERBOSE（以太ACL规则匹配详细计数）](configobject/UDG/20.15.2/ACLETHRULECNTVERBOSE.md)
+- [ACLIFRULECNT（接口ACL规则匹配计数）](configobject/UDG/20.15.2/ACLIFRULECNT.md)
+- [ACLIFRULECNTVERBOSE（接口ACL规则匹配详细计数）](configobject/UDG/20.15.2/ACLIFRULECNTVERBOSE.md)
+- [ACSCLASSINFO（配置表信息）](configobject/UDG/20.15.2/ACSCLASSINFO.md)
+- [ACSPATCHDETAILINFO（补丁信息）](configobject/UDG/20.15.2/ACSPATCHDETAILINFO.md)
+- [ACSPATCHINFO（系统当前补丁信息）](configobject/UDG/20.15.2/ACSPATCHINFO.md)
+- [ACSRBKVER（升级可回退版本信息）](configobject/UDG/20.15.2/ACSRBKVER.md)
+- [ACSSYNCINFO（ACS的配置同步信息）](configobject/UDG/20.15.2/ACSSYNCINFO.md)
+- [ACSUPDRUVER（RU版本信息）](configobject/UDG/20.15.2/ACSUPDRUVER.md)
+- [ACSVERSION（系统版本信息）](configobject/UDG/20.15.2/ACSVERSION.md)
+- [ACTALM（活动告警）](configobject/UDG/20.15.2/ACTALM.md)
+- [AFUSRDETECTST（欺诈用户检测结果）](configobject/UDG/20.15.2/AFUSRDETECTST.md)
+- [ALARMINFO（告警信息）](configobject/UDG/20.15.2/ALARMINFO.md)
+- [ALMERRORINFO（告警模块错误信息）](configobject/UDG/20.15.2/ALMERRORINFO.md)
+- [ALMFLAPINFO（告警震荡信息）](configobject/UDG/20.15.2/ALMFLAPINFO.md)
+- [ALMFLAPSURPINFO（告警震荡抑制信息）](configobject/UDG/20.15.2/ALMFLAPSURPINFO.md)
+- [ALMMESSAGERECV（告警接收的信息）](configobject/UDG/20.15.2/ALMMESSAGERECV.md)
+- [ALMMESSAGESEND（告警发送的信息）](configobject/UDG/20.15.2/ALMMESSAGESEND.md)
+- [APNREFPOOLGRP（APN和地址池组映射关系）](configobject/UDG/20.15.2/APNREFPOOLGRP.md)
+- [APNSESSIONSTATS（按照IP地址分配方式查看当前在线会话数）](configobject/UDG/20.15.2/APNSESSIONSTATS.md)
+- [APPCLTSTATUS（第三方APP信息采集进度）](configobject/UDG/20.15.2/APPCLTSTATUS.md)
+- [APPDATADIFF（APP与OMU配置数据差异信息）](configobject/UDG/20.15.2/APPDATADIFF.md)
+- [APPINFO（应用信息）](configobject/UDG/20.15.2/APPINFO.md)
+- [APPVERSION（系统版本信息）](configobject/UDG/20.15.2/APPVERSION.md)
+- [ARPENTRYSTATISTICS（ARP统计计数）](configobject/UDG/20.15.2/ARPENTRYSTATISTICS.md)
+- [ARPERRPACKET（ARP错误报文统计）](configobject/UDG/20.15.2/ARPERRPACKET.md)
+- [ARPHISTORY（ARP表项变更历史）](configobject/UDG/20.15.2/ARPHISTORY.md)
+- [ARPINNERDATA（ARP内部信息）](configobject/UDG/20.15.2/ARPINNERDATA.md)
+- [ARPPROBERESULT（ARP探测结果）](configobject/UDG/20.15.2/ARPPROBERESULT.md)
+- [ARPSTATISTICS（ARP处理信息统计）](configobject/UDG/20.15.2/ARPSTATISTICS.md)
+- [ARPTABLE（ARP表项）](configobject/UDG/20.15.2/ARPTABLE.md)
+- [ASSERTINFO（RU断言信息）](configobject/UDG/20.15.2/ASSERTINFO.md)
+- [AUTOSCALEPOLICY（自动弹性策略状态）](configobject/UDG/20.15.2/AUTOSCALEPOLICY.md)
+- [AUTOSCALINGIPPOOL（自动化配置地址池信息）](configobject/UDG/20.15.2/AUTOSCALINGIPPOOL.md)
+- [BEARERNUM（承载数）](configobject/UDG/20.15.2/BEARERNUM.md)
+- [BFDBLACKBOX（BFD黑匣子信息）](configobject/UDG/20.15.2/BFDBLACKBOX.md)
+- [BFDGLOBALSTATS（BFD的全局会话统计信息）](configobject/UDG/20.15.2/BFDGLOBALSTATS.md)
+- [BFDRESOURCESTC（BFD资源统计信息）](configobject/UDG/20.15.2/BFDRESOURCESTC.md)
+- [BFDSESSIONRUNNING（BFD会话的运行信息）](configobject/UDG/20.15.2/BFDSESSIONRUNNING.md)
+- [BFDSTATS（BFD的会话统计信息）](configobject/UDG/20.15.2/BFDSTATS.md)
+- [BGPASMSG（BGP AS查询消息）](configobject/UDG/20.15.2/BGPASMSG.md)
+- [BGPASSTATS（BGP AS查询统计）](configobject/UDG/20.15.2/BGPASSTATS.md)
+- [BGPBFDSESSION（BGP建立的BFD会话信息）](configobject/UDG/20.15.2/BGPBFDSESSION.md)
+- [BGPCONGESTATISTICS（BGP流控信息）](configobject/UDG/20.15.2/BGPCONGESTATISTICS.md)
+- [BGPDATA（BGP数据结构信息）](configobject/UDG/20.15.2/BGPDATA.md)
+- [BGPERRORDISCARD（BGP的错误信息）](configobject/UDG/20.15.2/BGPERRORDISCARD.md)
+- [BGPHASTATE（BGP HA状态信息）](configobject/UDG/20.15.2/BGPHASTATE.md)
+- [BGPLSP（BGP LSP信息）](configobject/UDG/20.15.2/BGPLSP.md)
+- [BGPNEXTHOP（BGP下一跳信息）](configobject/UDG/20.15.2/BGPNEXTHOP.md)
+- [BGPPEERALLVERBOSE（BGP所有VPN对等体详细信息）](configobject/UDG/20.15.2/BGPPEERALLVERBOSE.md)
+- [BGPPEERINFO（BGP对等体信息）](configobject/UDG/20.15.2/BGPPEERINFO.md)
+- [BGPPEERLOG（BGP对等体日志信息）](configobject/UDG/20.15.2/BGPPEERLOG.md)
+- [BGPPEERSTATE（BGP对等体状态信息）](configobject/UDG/20.15.2/BGPPEERSTATE.md)
+- [BGPPEERSTATISTICSINFO（BGP对等体统计信息）](configobject/UDG/20.15.2/BGPPEERSTATISTICSINFO.md)
+- [BGPPEERVERBOSE（BGP对等体详细信息）](configobject/UDG/20.15.2/BGPPEERVERBOSE.md)
+- [BGPRT6DATA（BGP IPv6路由数据结构信息）](configobject/UDG/20.15.2/BGPRT6DATA.md)
+- [BGPRTDATA（BGP路由数据结构信息）](configobject/UDG/20.15.2/BGPRTDATA.md)
+- [BGPRTSTATISTICS（BGP路由统计信息）](configobject/UDG/20.15.2/BGPRTSTATISTICS.md)
+- [BGPVRFROUTING（BGP VPN路由表）](configobject/UDG/20.15.2/BGPVRFROUTING.md)
+- [BGPVRFROUTING6（BGP VPN IPv6路由表）](configobject/UDG/20.15.2/BGPVRFROUTING6.md)
+- [BLKHISTORY（CSDB RU闭塞信息）](configobject/UDG/20.15.2/BLKHISTORY.md)
+- [CACHEMBLACKBOX（CACHEM黑匣子诊断信息）](configobject/UDG/20.15.2/CACHEMBLACKBOX.md)
+- [CACHEMCMDDATA（CACHEM命令信息）](configobject/UDG/20.15.2/CACHEMCMDDATA.md)
+- [CACHEMINNERDATA（CACHEM诊断信息）](configobject/UDG/20.15.2/CACHEMINNERDATA.md)
+- [CELLFAULTINFO（故障进程历史记录）](configobject/UDG/20.15.2/CELLFAULTINFO.md)
+- [CELLINFO（微服务进程信息）](configobject/UDG/20.15.2/CELLINFO.md)
+- [CELLSTAT（微服务进程可用状态统计信息）](configobject/UDG/20.15.2/CELLSTAT.md)
+- [CERTFILE（证书）](configobject/UDG/20.15.2/CERTFILE.md)
+- [CFGCERTAINDB（指定DB表数据）](configobject/UDG/20.15.2/CFGCERTAINDB.md)
+- [CFGERRCMD（CFG方式配置恢复的失败信息）](configobject/UDG/20.15.2/CFGERRCMD.md)
+- [CFGRECOVERRESULT（系统配置恢复结果）](configobject/UDG/20.15.2/CFGRECOVERRESULT.md)
+- [CFGTABLEDATA（满足条件的CFG表数据）](configobject/UDG/20.15.2/CFGTABLEDATA.md)
+- [CFGTABLEINDEX（CFG表索引信息和字段信息）](configobject/UDG/20.15.2/CFGTABLEINDEX.md)
+- [CFGTABLEINFO（CFG表信息和内存信息）](configobject/UDG/20.15.2/CFGTABLEINFO.md)
+- [CNTCPUSTAT（容器CPU信息）](configobject/UDG/20.15.2/CNTCPUSTAT.md)
+- [CNTINFO（容器部署信息）](configobject/UDG/20.15.2/CNTINFO.md)
+- [CNTMEMSTAT（容器内存信息）](configobject/UDG/20.15.2/CNTMEMSTAT.md)
+- [CNTRESSTAT（容器资源信息）](configobject/UDG/20.15.2/CNTRESSTAT.md)
+- [COLLECTLOGRESULT（日志收集执行结果）](configobject/UDG/20.15.2/COLLECTLOGRESULT.md)
+- [COLLISIONCHECK（冲突检测结果）](configobject/UDG/20.15.2/COLLISIONCHECK.md)
+- [COMBASESUM（BASE亚健康概况）](configobject/UDG/20.15.2/COMBASESUM.md)
+- [COMCONTAINER（组件和容器关系信息）](configobject/UDG/20.15.2/COMCONTAINER.md)
+- [COMPONENT（组件信息）](configobject/UDG/20.15.2/COMPONENT.md)
+- [COMPONENTSUB（组件订阅信息）](configobject/UDG/20.15.2/COMPONENTSUB.md)
+- [COMPSTATNOTIFY（组件状态通知记录）](configobject/UDG/20.15.2/COMPSTATNOTIFY.md)
+- [COMPSTATTRACE（当前组件的状态记录信息）](configobject/UDG/20.15.2/COMPSTATTRACE.md)
+- [COMTASKDETAIL（SDR通信质量检测结果详情）](configobject/UDG/20.15.2/COMTASKDETAIL.md)
+- [COMTASKSUMM（SDR通信质量检测结果概要）](configobject/UDG/20.15.2/COMTASKSUMM.md)
+- [CONNDOWN（连接中断信息）](configobject/UDG/20.15.2/CONNDOWN.md)
+- [CONNECT（网元长连接信息）](configobject/UDG/20.15.2/CONNECT.md)
+- [CONSSTATE（消费者状态信息）](configobject/UDG/20.15.2/CONSSTATE.md)
+- [CONSSUB（消费者订阅信息）](configobject/UDG/20.15.2/CONSSUB.md)
+- [CPINFO（CP信息）](configobject/UDG/20.15.2/CPINFO.md)
+- [CPU（资源CPU使用信息）](configobject/UDG/20.15.2/CPU.md)
+- [CPUECOVMSINFO（VM的CPU节能策略）](configobject/UDG/20.15.2/CPUECOVMSINFO.md)
+- [CUINCONSCONFIG（CP和UP不一致的关键配置）](configobject/UDG/20.15.2/CUINCONSCONFIG.md)
+- [DBCLUSTER（CSDB子集群信息）](configobject/UDG/20.15.2/DBCLUSTER.md)
+- [DBDATAFEATURE（CSDB数据特征）](configobject/UDG/20.15.2/DBDATAFEATURE.md)
+- [DBDRTBLNUM（CSDB容灾主备本记录数）](configobject/UDG/20.15.2/DBDRTBLNUM.md)
+- [DBGCLICMDPRXYREG（通过命令代理可执行命令行调试命令的白名单）](configobject/UDG/20.15.2/DBGCLICMDPRXYREG.md)
+- [DBGDATAEX（调试信息）](configobject/UDG/20.15.2/DBGDATAEX.md)
+- [DBGHAFD（HAFD调试命令结果）](configobject/UDG/20.15.2/DBGHAFD.md)
+- [DBGHAFG（HAFG相关信息）](configobject/UDG/20.15.2/DBGHAFG.md)
+- [DBGSTAT（调试信息）](configobject/UDG/20.15.2/DBGSTAT.md)
+- [DBNODE（CSDB节点信息）](configobject/UDG/20.15.2/DBNODE.md)
+- [DBPLUGIN（CSDB插件信息）](configobject/UDG/20.15.2/DBPLUGIN.md)
+- [DBSTATS（CSDB的统计信息）](configobject/UDG/20.15.2/DBSTATS.md)
+- [DBTBL（CSDB数据表信息）](configobject/UDG/20.15.2/DBTBL.md)
+- [DBUPGSTATUS（CSDB灰度升级状态）](configobject/UDG/20.15.2/DBUPGSTATUS.md)
+- [DBUSERINFO（CSDB使用者信息）](configobject/UDG/20.15.2/DBUSERINFO.md)
+- [DCSDISKINFO（DCS直通存储使用率）](configobject/UDG/20.15.2/DCSDISKINFO.md)
+- [DCSLIVEINFO（直播视频信息）](configobject/UDG/20.15.2/DCSLIVEINFO.md)
+- [DCSLIVEVIDEO（指定直播视频信息）](configobject/UDG/20.15.2/DCSLIVEVIDEO.md)
+- [DCSNODE（DCS微服务节点状态信息）](configobject/UDG/20.15.2/DCSNODE.md)
+- [DCSSTATS（DCS打点统计信息）](configobject/UDG/20.15.2/DCSSTATS.md)
+- [DCSVODINFO（点播视频信息）](configobject/UDG/20.15.2/DCSVODINFO.md)
+- [DCSVODVIDEO（指定点播视频信息）](configobject/UDG/20.15.2/DCSVODVIDEO.md)
+- [DEACTIVESTATE（去活操作状态）](configobject/UDG/20.15.2/DEACTIVESTATE.md)
+- [DEADLOOPINFO（RU死循环信息）](configobject/UDG/20.15.2/DEADLOOPINFO.md)
+- [DEVATTRCACHE（属性值信息）](configobject/UDG/20.15.2/DEVATTRCACHE.md)
+- [DEVATTRNOTIFY（属性变更通知消息记录）](configobject/UDG/20.15.2/DEVATTRNOTIFY.md)
+- [DEVATTRREV（接收VNFC配置的属性信息）](configobject/UDG/20.15.2/DEVATTRREV.md)
+- [DEVATTRSND（VNFC同步到VNFP的属性信息）](configobject/UDG/20.15.2/DEVATTRSND.md)
+- [DEVATTRSUB（属性订阅信息）](configobject/UDG/20.15.2/DEVATTRSUB.md)
+- [DEVATTRTBL（设备属性信息）](configobject/UDG/20.15.2/DEVATTRTBL.md)
+- [DEVBOOTPREG（BOOTP服务端的注册信息）](configobject/UDG/20.15.2/DEVBOOTPREG.md)
+- [DEVBOOTPRES（BOOTP服务器本地资源信息）](configobject/UDG/20.15.2/DEVBOOTPRES.md)
+- [DEVCOMPFSM（组件状态机信息）](configobject/UDG/20.15.2/DEVCOMPFSM.md)
+- [DEVDIAGINFO（设备管理诊断信息）](configobject/UDG/20.15.2/DEVDIAGINFO.md)
+- [DEVDRIINFO（设备驱动信息）](configobject/UDG/20.15.2/DEVDRIINFO.md)
+- [DEVMODFSM（模块状态机信息）](configobject/UDG/20.15.2/DEVMODFSM.md)
+- [DEVNETCONFREQ（NETCONF请求信息）](configobject/UDG/20.15.2/DEVNETCONFREQ.md)
+- [DEVOBJFSM（对象状态机信息）](configobject/UDG/20.15.2/DEVOBJFSM.md)
+- [DFSBUCKET（DFS桶信息）](configobject/UDG/20.15.2/DFSBUCKET.md)
+- [DFSINFO（DFS集群信息）](configobject/UDG/20.15.2/DFSINFO.md)
+- [DFSRPAIRMEMSTA（双发选收结对成员状态）](configobject/UDG/20.15.2/DFSRPAIRMEMSTA.md)
+- [DFTPROTGRP（默认协议组）](configobject/UDG/20.15.2/DFTPROTGRP.md)
+- [DHCP6CLIENTSTAT（DHCPv6客户端状态信息）](configobject/UDG/20.15.2/DHCP6CLIENTSTAT.md)
+- [DHCPCLIENTSTAT（DHCPv4客户端状态信息）](configobject/UDG/20.15.2/DHCPCLIENTSTAT.md)
+- [DIGIW（电子保单信息）](configobject/UDG/20.15.2/DIGIW.md)
+- [DISKINFO（节点磁盘部署规格）](configobject/UDG/20.15.2/DISKINFO.md)
+- [DMTBLACKBOX（Diameter黑匣子信息）](configobject/UDG/20.15.2/DMTBLACKBOX.md)
+- [DMTCONN（Diameter基本信息或Peer连接相关信息）](configobject/UDG/20.15.2/DMTCONN.md)
+- [DMTCONNSTC（Diameter链路及消息收发统计信息）](configobject/UDG/20.15.2/DMTCONNSTC.md)
+- [DMTLINKGROUPSTC（Diameter链路组信息和链路信息）](configobject/UDG/20.15.2/DMTLINKGROUPSTC.md)
+- [DNSAGENTIPHOST（DNS代理服务器域名）](configobject/UDG/20.15.2/DNSAGENTIPHOST.md)
+- [DNSAGENTIPV6HOST（DNS代理服务器IPv6域名）](configobject/UDG/20.15.2/DNSAGENTIPV6HOST.md)
+- [DNSDYNAMICIPHOST（DNS IPv4动态域名）](configobject/UDG/20.15.2/DNSDYNAMICIPHOST.md)
+- [DNSDYNAMICIPV6HOST（DNS IPv6动态域名）](configobject/UDG/20.15.2/DNSDYNAMICIPV6HOST.md)
+- [DRGROUPSTATUS（容灾组的运行状态信息）](configobject/UDG/20.15.2/DRGROUPSTATUS.md)
+- [DRINFO（容灾信息）](configobject/UDG/20.15.2/DRINFO.md)
+- [DRLIMITINFO（已发生的倒换和复位次数和距离限制结束的时间）](configobject/UDG/20.15.2/DRLIMITINFO.md)
+- [DRSWAPREC（容灾倒换记录）](configobject/UDG/20.15.2/DRSWAPREC.md)
+- [ECOVMSINFO（VM的CPU节能策略）](configobject/UDG/20.15.2/ECOVMSINFO.md)
+- [ELECTION（集群选举实例信息）](configobject/UDG/20.15.2/ELECTION.md)
+- [ETCDTTL（用于仲裁目的的key的租约信息）](configobject/UDG/20.15.2/ETCDTTL.md)
+- [EVTGOVSTAT（事件诊断失败状态）](configobject/UDG/20.15.2/EVTGOVSTAT.md)
+- [EVTHEALREC（事件治理自愈结果）](configobject/UDG/20.15.2/EVTHEALREC.md)
+- [EXCEPTIONINFO（RU异常信息）](configobject/UDG/20.15.2/EXCEPTIONINFO.md)
+- [EXCHANGE（负载均衡交换表）](configobject/UDG/20.15.2/EXCHANGE.md)
+- [EXEPSESSINFO（异常用户）](configobject/UDG/20.15.2/EXEPSESSINFO.md)
+- [EXPLOG（日志导出状态）](configobject/UDG/20.15.2/EXPLOG.md)
+- [EXTERDBFILTER（外置DB过滤器信息）](configobject/UDG/20.15.2/EXTERDBFILTER.md)
+- [FABDIAGINFO（Fabric平面亚健康诊断结果）](configobject/UDG/20.15.2/FABDIAGINFO.md)
+- [FABPORTSUBDTL（Fabric端口亚健康通信质量信息）](configobject/UDG/20.15.2/FABPORTSUBDTL.md)
+- [FABRICOAMINFO（PAE OAM链路信息）](configobject/UDG/20.15.2/FABRICOAMINFO.md)
+- [FABRICOAMPORT（PAE各链路OAM报文统计结果）](configobject/UDG/20.15.2/FABRICOAMPORT.md)
+- [FABRICPLANEDOWN（Fabric平面Down信息）](configobject/UDG/20.15.2/FABRICPLANEDOWN.md)
+- [FABRICSUBHEALTHYLINK（Fabric平面亚健康链路信息）](configobject/UDG/20.15.2/FABRICSUBHEALTHYLINK.md)
+- [FABRICSUBHEALTHYSTAT（PAE内联口亚健康统计信息）](configobject/UDG/20.15.2/FABRICSUBHEALTHYSTAT.md)
+- [FABRICTRUNKSTATIS（Fabric-Trunk成员接口统计）](configobject/UDG/20.15.2/FABRICTRUNKSTATIS.md)
+- [FABSUBDETAIL（Fabric亚健康通信质量信息）](configobject/UDG/20.15.2/FABSUBDETAIL.md)
+- [FCSTATIS（流控统计）](configobject/UDG/20.15.2/FCSTATIS.md)
+- [FEATUREOPRHIST（特性上下线历史）](configobject/UDG/20.15.2/FEATUREOPRHIST.md)
+- [FEICOM_CSTDATA（存储池存储的表项信息）](configobject/UDG/20.15.2/FEICOM_CSTDATA.md)
+- [FEIHEALTHSTATE（FEI健康状态）](configobject/UDG/20.15.2/FEIHEALTHSTATE.md)
+- [FEIMCFWDTAB（FEI组播转发表项统计信息）](configobject/UDG/20.15.2/FEIMCFWDTAB.md)
+- [FEINOTIFYIFMIFUPTIME（FEI通告IFM端口UP事件的时间）](configobject/UDG/20.15.2/FEINOTIFYIFMIFUPTIME.md)
+- [FEIPORTVLAN（FEI端口VLAN）](configobject/UDG/20.15.2/FEIPORTVLAN.md)
+- [FEISWHEALTHSTATE（FEISW健康状态）](configobject/UDG/20.15.2/FEISWHEALTHSTATE.md)
+- [FEI_FRM_CST_POOL（资源池列表的资源占用情况）](configobject/UDG/20.15.2/FEI_FRM_CST_POOL.md)
+- [FESDIAGINFO（FES诊断信息）](configobject/UDG/20.15.2/FESDIAGINFO.md)
+- [FESMEMLIMIT（FES内存界限信息）](configobject/UDG/20.15.2/FESMEMLIMIT.md)
+- [FESSMOOTHSTAT（FES的平滑状态信息）](configobject/UDG/20.15.2/FESSMOOTHSTAT.md)
+- [FESTABLE（FES表项信息）](configobject/UDG/20.15.2/FESTABLE.md)
+- [FESTABLESTATICS（FES表项统计信息）](configobject/UDG/20.15.2/FESTABLESTATICS.md)
+- [FILTERINFO（流过滤器下的所有过滤器信息）](configobject/UDG/20.15.2/FILTERINFO.md)
+- [FLOWSTATISTICS（业务统计信息）](configobject/UDG/20.15.2/FLOWSTATISTICS.md)
+- [FUNCTIONSETINFO（网络功能集全局列表）](configobject/UDG/20.15.2/FUNCTIONSETINFO.md)
+- [FUNCTIONSETSTAT（网络功能集状态）](configobject/UDG/20.15.2/FUNCTIONSETSTAT.md)
+- [FWDSTAT（转发消息统计）](configobject/UDG/20.15.2/FWDSTAT.md)
+- [GIDINFO（POD的GID信息）](configobject/UDG/20.15.2/GIDINFO.md)
+- [GREMSGSTATINFO（GRE消息诊断信息）](configobject/UDG/20.15.2/GREMSGSTATINFO.md)
+- [GREPKTSTAT（GRE报文统计）](configobject/UDG/20.15.2/GREPKTSTAT.md)
+- [GRESMPOOL（Gresm资源池所有信息）](configobject/UDG/20.15.2/GRESMPOOL.md)
+- [GRESMRESINFO（Gresm资源信息）](configobject/UDG/20.15.2/GRESMRESINFO.md)
+- [GRESMRESSTAT（消费者申请资源的统计信息）](configobject/UDG/20.15.2/GRESMRESSTAT.md)
+- [GRETNLINFO（GRE隧道诊断信息）](configobject/UDG/20.15.2/GRETNLINFO.md)
+- [GRETNLSTAT（GRE隧道数目）](configobject/UDG/20.15.2/GRETNLSTAT.md)
+- [GRETNLTAB（GRE隧道信息）](configobject/UDG/20.15.2/GRETNLTAB.md)
+- [GROUPSTAT（消费组状态）](configobject/UDG/20.15.2/GROUPSTAT.md)
+- [HASTAT（系统HA状态）](configobject/UDG/20.15.2/HASTAT.md)
+- [HISTALM（历史告警）](configobject/UDG/20.15.2/HISTALM.md)
+- [HTTPDIALUSR（HTTP拨测用户信息）](configobject/UDG/20.15.2/HTTPDIALUSR.md)
+- [HTTPHTRINFO（HTR信息）](configobject/UDG/20.15.2/HTTPHTRINFO.md)
+- [HTTPINTFDSCP（HTTP服务存储的接口DSCP信息）](configobject/UDG/20.15.2/HTTPINTFDSCP.md)
+- [HTTPLINKHISTORY（HTTP历史链路状态）](configobject/UDG/20.15.2/HTTPLINKHISTORY.md)
+- [HTTPNFINST（HTTP服务存储的NF实例信息）](configobject/UDG/20.15.2/HTTPNFINST.md)
+- [HTTPPLMN（HTTP服务存储的PLMN）](configobject/UDG/20.15.2/HTTPPLMN.md)
+- [HTTPPROCESS（HTTP进程信息）](configobject/UDG/20.15.2/HTTPPROCESS.md)
+- [HTTPRESUSG（HTTP资源使用信息）](configobject/UDG/20.15.2/HTTPRESUSG.md)
+- [HTTPSVRFAULINK（HTTP服务端故障链路）](configobject/UDG/20.15.2/HTTPSVRFAULINK.md)
+- [HTTPUPGSTAGE（HTTP灰度升级状态）](configobject/UDG/20.15.2/HTTPUPGSTAGE.md)
+- [ICAPSVRGSTATUS（ICAP服务器组状态）](configobject/UDG/20.15.2/ICAPSVRGSTATUS.md)
+- [ICAPSVRSTATUS（ICAP服务器状态）](configobject/UDG/20.15.2/ICAPSVRSTATUS.md)
+- [ICMP6STAT（ICMP6统计）](configobject/UDG/20.15.2/ICMP6STAT.md)
+- [ICMPSTATISTIC（ICMP报文统计）](configobject/UDG/20.15.2/ICMPSTATISTIC.md)
+- [IFDIAGDATA（接口诊断数据）](configobject/UDG/20.15.2/IFDIAGDATA.md)
+- [IFMINNERDATA（IFM模块内部数据）](configobject/UDG/20.15.2/IFMINNERDATA.md)
+- [IFSTATUS（接口状态信息）](configobject/UDG/20.15.2/IFSTATUS.md)
+- [IKEINNERPOLICY（IKE内部负载分担策略信息）](configobject/UDG/20.15.2/IKEINNERPOLICY.md)
+- [INNERCOMPVERSION（系统内部部件版本信息）](configobject/UDG/20.15.2/INNERCOMPVERSION.md)
+- [INSTPROGRESS（VNFC实例化进度）](configobject/UDG/20.15.2/INSTPROGRESS.md)
+- [IPBLACKBOX（PP4黑匣子信息）](configobject/UDG/20.15.2/IPBLACKBOX.md)
+- [IPINNERDATA（PP4模块内部数据）](configobject/UDG/20.15.2/IPINNERDATA.md)
+- [IPPATH（PP4路径信息）](configobject/UDG/20.15.2/IPPATH.md)
+- [IPSECCOMPONENT（IPsec组件信息）](configobject/UDG/20.15.2/IPSECCOMPONENT.md)
+- [IPSECFWDSTAT（IPsec转发统计）](configobject/UDG/20.15.2/IPSECFWDSTAT.md)
+- [IPSECPKTSTC（IPsec报文统计信息）](configobject/UDG/20.15.2/IPSECPKTSTC.md)
+- [IPSECSATABLE（IPsec SA表信息）](configobject/UDG/20.15.2/IPSECSATABLE.md)
+- [IPSOCKET（IP Socket状态）](configobject/UDG/20.15.2/IPSOCKET.md)
+- [IPSUIT（IPsuit信息）](configobject/UDG/20.15.2/IPSUIT.md)
+- [IPV6BLACKBOX（IPv6黑匣子信息）](configobject/UDG/20.15.2/IPV6BLACKBOX.md)
+- [IPV6BLACKLIST（IPv6黑名单统计信息）](configobject/UDG/20.15.2/IPV6BLACKLIST.md)
+- [IPV6HASTATE（IPv6组件与其他组件交互信息）](configobject/UDG/20.15.2/IPV6HASTATE.md)
+- [IPV6INFO（IPv6诊断信息）](configobject/UDG/20.15.2/IPV6INFO.md)
+- [IPV6PATH（IPv6 Path信息）](configobject/UDG/20.15.2/IPV6PATH.md)
+- [KPIMONSTATE（系统中正在监控的KPI信息）](configobject/UDG/20.15.2/KPIMONSTATE.md)
+- [KPIMONVALUE（KPI检测历史数据）](configobject/UDG/20.15.2/KPIMONVALUE.md)
+- [L2TPSESSION（L2TP隧道下L2TP会话相关信息）](configobject/UDG/20.15.2/L2TPSESSION.md)
+- [L2TPTUNNEL（L2TP隧道的相关信息）](configobject/UDG/20.15.2/L2TPTUNNEL.md)
+- [LACPCFG（LACP配置）](configobject/UDG/20.15.2/LACPCFG.md)
+- [LBFLOWRULE（业务引流规则）](configobject/UDG/20.15.2/LBFLOWRULE.md)
+- [LBFLOWRULEV6（业务IPv6引流规则）](configobject/UDG/20.15.2/LBFLOWRULEV6.md)
+- [LBGRGRP（容灾组信息）](configobject/UDG/20.15.2/LBGRGRP.md)
+- [LBPLUGIN（CSLB的插件信息）](configobject/UDG/20.15.2/LBPLUGIN.md)
+- [LBPLUGINVPNTOPO（CSLB插件侧VPN对应的转发拓扑）](configobject/UDG/20.15.2/LBPLUGINVPNTOPO.md)
+- [LBPLY（负载均衡策略）](configobject/UDG/20.15.2/LBPLY.md)
+- [LBPROC（CSLB进程）](configobject/UDG/20.15.2/LBPROC.md)
+- [LBRTCMTY（路由团体属性信息）](configobject/UDG/20.15.2/LBRTCMTY.md)
+- [LBSRVINST（LB服务实例）](configobject/UDG/20.15.2/LBSRVINST.md)
+- [LBSRVINSTIDREL（服务ID与服务实例的关系）](configobject/UDG/20.15.2/LBSRVINSTIDREL.md)
+- [LBSTATUS（CSLB的状态）](configobject/UDG/20.15.2/LBSTATUS.md)
+- [LBTN（隧道信息）](configobject/UDG/20.15.2/LBTN.md)
+- [LBTNBINDPLY（业务服务ID与隧道组ID的关系）](configobject/UDG/20.15.2/LBTNBINDPLY.md)
+- [LBTNGROUP（隧道组信息）](configobject/UDG/20.15.2/LBTNGROUP.md)
+- [LBTOPO（SDRC中缓存的CSLB的拓扑）](configobject/UDG/20.15.2/LBTOPO.md)
+- [LBVPN（CSLB上的VPN信息）](configobject/UDG/20.15.2/LBVPN.md)
+- [LBVPNTOPO（CSLB VPN对应的MPE或SFE拓扑）](configobject/UDG/20.15.2/LBVPNTOPO.md)
+- [LCKPOD（锁定的POD）](configobject/UDG/20.15.2/LCKPOD.md)
+- [LCMLOG（网元生命周期管理日志）](configobject/UDG/20.15.2/LCMLOG.md)
+- [LDMINNERDATA（LDM诊断信息）](configobject/UDG/20.15.2/LDMINNERDATA.md)
+- [LDPBFDTNNLSESSION（BFD For LDP Tunnel的BFD会话）](configobject/UDG/20.15.2/LDPBFDTNNLSESSION.md)
+- [LDPBLACKBOX（LDP记录的黑匣子信息）](configobject/UDG/20.15.2/LDPBLACKBOX.md)
+- [LDPFEC（LDP FEC）](configobject/UDG/20.15.2/LDPFEC.md)
+- [LDPLSP（LDP LSP）](configobject/UDG/20.15.2/LDPLSP.md)
+- [LDPLSPDOWN（LDP LSP Down的信息）](configobject/UDG/20.15.2/LDPLSPDOWN.md)
+- [LDPLSPMGDSSUB（LDP的下游信息）](configobject/UDG/20.15.2/LDPLSPMGDSSUB.md)
+- [LDPLSPMGFEC（LDP LSP管理组件的FEC信息）](configobject/UDG/20.15.2/LDPLSPMGFEC.md)
+- [LDPLSPMGIID（LDP的IID信息）](configobject/UDG/20.15.2/LDPLSPMGIID.md)
+- [LDPLSPMGLSP（LDP的LSP信息）](configobject/UDG/20.15.2/LDPLSPMGLSP.md)
+- [LDPLSPMGOUTSEG（LDP LSP管理组件Outsegment转发表项）](configobject/UDG/20.15.2/LDPLSPMGOUTSEG.md)
+- [LDPLSPMGPEERADDR（LDP的邻居地址信息）](configobject/UDG/20.15.2/LDPLSPMGPEERADDR.md)
+- [LDPLSPMGROUTE（LDP LSP管理组件的路由信息）](configobject/UDG/20.15.2/LDPLSPMGROUTE.md)
+- [LDPNEMGADJ（LDP的邻居信息）](configobject/UDG/20.15.2/LDPNEMGADJ.md)
+- [LDPNEMGIF（LDP的接口信息）](configobject/UDG/20.15.2/LDPNEMGIF.md)
+- [LDPNEMGSOCKET（LDP邻居管理的Socket信息）](configobject/UDG/20.15.2/LDPNEMGSOCKET.md)
+- [LDPPEER（LDP邻居）](configobject/UDG/20.15.2/LDPPEER.md)
+- [LDPSESSIONDOWN（LDP会话Down的相关信息）](configobject/UDG/20.15.2/LDPSESSIONDOWN.md)
+- [LDPSSMGDSCB（LDP会话管理模块的下游信息）](configobject/UDG/20.15.2/LDPSSMGDSCB.md)
+- [LDPSSMGLSSOCK（LDP的Listen Socket信息）](configobject/UDG/20.15.2/LDPSSMGLSSOCK.md)
+- [LDPSSMGSSN（LDP的会话信息）](configobject/UDG/20.15.2/LDPSSMGSSN.md)
+- [LDPSSMGTCPSOCK（LDP的TCP Socket信息）](configobject/UDG/20.15.2/LDPSSMGTCPSOCK.md)
+- [LICENSEPEAK（话务高峰信息）](configobject/UDG/20.15.2/LICENSEPEAK.md)
+- [LICENSERES（License资源）](configobject/UDG/20.15.2/LICENSERES.md)
+- [LLAINNERDATA（LLA诊断信息）](configobject/UDG/20.15.2/LLAINNERDATA.md)
+- [LOCALKEYPAIR（本地公钥）](configobject/UDG/20.15.2/LOCALKEYPAIR.md)
+- [LOGAPFM（日志代理性能统计信息）](configobject/UDG/20.15.2/LOGAPFM.md)
+- [LOGBUFFER（Logbuffer中的数据）](configobject/UDG/20.15.2/LOGBUFFER.md)
+- [LOGDIC（日志模型信息）](configobject/UDG/20.15.2/LOGDIC.md)
+- [LOGERRORINFO（日志模块错误信息）](configobject/UDG/20.15.2/LOGERRORINFO.md)
+- [LOGEVENT（事件日志信息）](configobject/UDG/20.15.2/LOGEVENT.md)
+- [LOGFILESTORAGE（日志存储信息）](configobject/UDG/20.15.2/LOGFILESTORAGE.md)
+- [LOGMESSAGESEND（日志发送的信息）](configobject/UDG/20.15.2/LOGMESSAGESEND.md)
+- [LOGSERVERDROPSTC（日志丢弃统计信息）](configobject/UDG/20.15.2/LOGSERVERDROPSTC.md)
+- [LOGSERVERSTC（日志中心5分钟内消息统计信息）](configobject/UDG/20.15.2/LOGSERVERSTC.md)
+- [LOGSPFM（日志中心性能统计信息）](configobject/UDG/20.15.2/LOGSPFM.md)
+- [MASALMDETAIL（5G告警详细信息）](configobject/UDG/20.15.2/MASALMDETAIL.md)
+- [MASKALM（被屏蔽告警）](configobject/UDG/20.15.2/MASKALM.md)
+- [MCASTPAEELB（组播引流表项叶子信息）](configobject/UDG/20.15.2/MCASTPAEELB.md)
+- [MCASTPAEROUTE（组播引流表项信息）](configobject/UDG/20.15.2/MCASTPAEROUTE.md)
+- [MCASTPAESOURCE（组播源引流信息）](configobject/UDG/20.15.2/MCASTPAESOURCE.md)
+- [MCASTSOCKSTATE（组播Socket信息）](configobject/UDG/20.15.2/MCASTSOCKSTATE.md)
+- [MCASTTIMER（组播定时器信息）](configobject/UDG/20.15.2/MCASTTIMER.md)
+- [MEASMOC（话统测量对象类模型）](configobject/UDG/20.15.2/MEASMOC.md)
+- [MEASOBJ（话统测量对象实例）](configobject/UDG/20.15.2/MEASOBJ.md)
+- [MEASSPECS（话统规格）](configobject/UDG/20.15.2/MEASSPECS.md)
+- [MEASSTAT（话统指标测量状态）](configobject/UDG/20.15.2/MEASSTAT.md)
+- [MEASTASK（话统测量任务）](configobject/UDG/20.15.2/MEASTASK.md)
+- [MEASTREND（话统指标统计趋势）](configobject/UDG/20.15.2/MEASTREND.md)
+- [MEASUNIT（测量指标模型）](configobject/UDG/20.15.2/MEASUNIT.md)
+- [MEM（资源内存信息）](configobject/UDG/20.15.2/MEM.md)
+- [MEMERRORINFO（内存错误信息）](configobject/UDG/20.15.2/MEMERRORINFO.md)
+- [MEMINFO（APP内存信息）](configobject/UDG/20.15.2/MEMINFO.md)
+- [MEMORYINSPECT（dopra相关内存信息）](configobject/UDG/20.15.2/MEMORYINSPECT.md)
+- [MGMDCTRLCNT（IGMP报文统计计数）](configobject/UDG/20.15.2/MGMDCTRLCNT.md)
+- [MGMDSOURCE（IGMP加入源信息）](configobject/UDG/20.15.2/MGMDSOURCE.md)
+- [MKINFO（主密钥信息）](configobject/UDG/20.15.2/MKINFO.md)
+- [MKUNSYNCTARGET（主密钥未同步的对象）](configobject/UDG/20.15.2/MKUNSYNCTARGET.md)
+- [MMLLINKINFO（MML服务连接信息）](configobject/UDG/20.15.2/MMLLINKINFO.md)
+- [MPACV4RULESTAT（IPv4 MPAC策略匹配统计）](configobject/UDG/20.15.2/MPACV4RULESTAT.md)
+- [MPACV6RULESTAT（IPv6 MPAC策略匹配统计）](configobject/UDG/20.15.2/MPACV6RULESTAT.md)
+- [MPLSLSPSTC（MPLS LSP统计信息）](configobject/UDG/20.15.2/MPLSLSPSTC.md)
+- [MPROCCPUSTAT（进程CPU信息）](configobject/UDG/20.15.2/MPROCCPUSTAT.md)
+- [MPROCMEMSTAT（进程内存信息）](configobject/UDG/20.15.2/MPROCMEMSTAT.md)
+- [MPROCRESSTAT（进程资源数量）](configobject/UDG/20.15.2/MPROCRESSTAT.md)
+- [MSACTIVE（服务主实例相关信息）](configobject/UDG/20.15.2/MSACTIVE.md)
+- [MSPROCTYPE（微服务进程类型）](configobject/UDG/20.15.2/MSPROCTYPE.md)
+- [MSSACLERRINFO（软转发支撑访问控制列表模块错误信息）](configobject/UDG/20.15.2/MSSACLERRINFO.md)
+- [MSSACLINFO（软转发支撑访问控制列表模块全局信息）](configobject/UDG/20.15.2/MSSACLINFO.md)
+- [MSSACLKEYINFO（通过软转发支撑报文关键字查询访问控制列表的结果）](configobject/UDG/20.15.2/MSSACLKEYINFO.md)
+- [MSSACLRULEINFO（软转发支撑访问控制列表中表项的内容）](configobject/UDG/20.15.2/MSSACLRULEINFO.md)
+- [MSSACLTBLINFO（软转发支撑访问控制列表详细信息）](configobject/UDG/20.15.2/MSSACLTBLINFO.md)
+- [MSSADAPTDETAILPHYSICAL（适配层物理表详细信息）](configobject/UDG/20.15.2/MSSADAPTDETAILPHYSICAL.md)
+- [MSSADAPTDETAILSERVICE（适配层业务表详细信息）](configobject/UDG/20.15.2/MSSADAPTDETAILSERVICE.md)
+- [MSSADAPTINFO（适配层全局信息）](configobject/UDG/20.15.2/MSSADAPTINFO.md)
+- [MSSCNTINFOBRI（简要计数器信息）](configobject/UDG/20.15.2/MSSCNTINFOBRI.md)
+- [MSSCNTINFOCNT（指定计数器ID的计数器信息）](configobject/UDG/20.15.2/MSSCNTINFOCNT.md)
+- [MSSCNTINFOGRP（指定组ID的计数器信息）](configobject/UDG/20.15.2/MSSCNTINFOGRP.md)
+- [MSSCOMFBSUM（通信功能块摘要信息）](configobject/UDG/20.15.2/MSSCOMFBSUM.md)
+- [MSSCOMMADAPTSERV（通信服务信息）](configobject/UDG/20.15.2/MSSCOMMADAPTSERV.md)
+- [MSSCOMMFB（通信功能块信息）](configobject/UDG/20.15.2/MSSCOMMFB.md)
+- [MSSCOMMINS（通信实例信息）](configobject/UDG/20.15.2/MSSCOMMINS.md)
+- [MSSCOMMMSGPOOL（通信消息池信息）](configobject/UDG/20.15.2/MSSCOMMMSGPOOL.md)
+- [MSSCOMMSTAT（通信模块规则匹配统计信息）](configobject/UDG/20.15.2/MSSCOMMSTAT.md)
+- [MSSCOMMSVCID（指定服务号的服务类型信息）](configobject/UDG/20.15.2/MSSCOMMSVCID.md)
+- [MSSCOMMSVCTHRD（指定线程的服务类型信息）](configobject/UDG/20.15.2/MSSCOMMSVCTHRD.md)
+- [MSSCOUNTERINFO（指定组ID和计数器ID的计数器信息）](configobject/UDG/20.15.2/MSSCOUNTERINFO.md)
+- [MSSDEBUGINFO（维测开关状态）](configobject/UDG/20.15.2/MSSDEBUGINFO.md)
+- [MSSDEBUGINFOM（维测开关状态）](configobject/UDG/20.15.2/MSSDEBUGINFOM.md)
+- [MSSFMMPROCESS（FMM的PBUF的进程信息）](configobject/UDG/20.15.2/MSSFMMPROCESS.md)
+- [MSSFMMSUMMARY（FMM的PBUF概要信息）](configobject/UDG/20.15.2/MSSFMMSUMMARY.md)
+- [MSSLOGINFO（日志详细信息）](configobject/UDG/20.15.2/MSSLOGINFO.md)
+- [MSSLOGQUEUE（日志队列详细信息）](configobject/UDG/20.15.2/MSSLOGQUEUE.md)
+- [MSSOEPRECISION（MSS保序队列调度信息）](configobject/UDG/20.15.2/MSSOEPRECISION.md)
+- [MSSOEREGISTER（用户注册的保序信息）](configobject/UDG/20.15.2/MSSOEREGISTER.md)
+- [MSSPBUFINFO（根据索引号查询PBUF信息）](configobject/UDG/20.15.2/MSSPBUFINFO.md)
+- [MSSPBUFLEAK（泄漏的PBUF缓存信息）](configobject/UDG/20.15.2/MSSPBUFLEAK.md)
+- [MSSPORTHWSTC（端口硬件统计信息）](configobject/UDG/20.15.2/MSSPORTHWSTC.md)
+- [MSSPORTINFO（端口信息）](configobject/UDG/20.15.2/MSSPORTINFO.md)
+- [MSSPORTPMDDRV（端口PMD驱动信息）](configobject/UDG/20.15.2/MSSPORTPMDDRV.md)
+- [MSSPORTQUEUESTC（端口队列统计信息）](configobject/UDG/20.15.2/MSSPORTQUEUESTC.md)
+- [MSSPROCINFO（FMM的进程信息）](configobject/UDG/20.15.2/MSSPROCINFO.md)
+- [MSSQUEDETINFO（指定队列详细信息）](configobject/UDG/20.15.2/MSSQUEDETINFO.md)
+- [MSSQUEDETINFOM（指定队列详细信息）](configobject/UDG/20.15.2/MSSQUEDETINFOM.md)
+- [MSSQUEINFO（队列总体信息）](configobject/UDG/20.15.2/MSSQUEINFO.md)
+- [MSSQUEINFOM（队列总体信息）](configobject/UDG/20.15.2/MSSQUEINFOM.md)
+- [MSSSCHGRPFIX（调度组详细统计信息）](configobject/UDG/20.15.2/MSSSCHGRPFIX.md)
+- [MSSSCHGRPHEAD（调度组统计概要信息）](configobject/UDG/20.15.2/MSSSCHGRPHEAD.md)
+- [MSSSCHGRPTAIL（调度组统计信息）](configobject/UDG/20.15.2/MSSSCHGRPTAIL.md)
+- [MSSSCHOEHEAD（保序统计信息）](configobject/UDG/20.15.2/MSSSCHOEHEAD.md)
+- [MSSSCHOETAIL（保序详细统计信息）](configobject/UDG/20.15.2/MSSSCHOETAIL.md)
+- [MSSSCHSUMHEAD（调度部署概要信息）](configobject/UDG/20.15.2/MSSSCHSUMHEAD.md)
+- [MSSSCHSUMTAIL（调度部署详细信息）](configobject/UDG/20.15.2/MSSSCHSUMTAIL.md)
+- [MSSSCHSUMTAILM（调度部署详细信息）](configobject/UDG/20.15.2/MSSSCHSUMTAILM.md)
+- [MSSSCHTHRDLOAD（调度线程负载信息）](configobject/UDG/20.15.2/MSSSCHTHRDLOAD.md)
+- [MSSSCHTHREADFIX（调度工作线程信息）](configobject/UDG/20.15.2/MSSSCHTHREADFIX.md)
+- [MSSSCHTHREADGROUP（MSS线程级调度组的维测信息）](configobject/UDG/20.15.2/MSSSCHTHREADGROUP.md)
+- [MSSSCHTHREADHEAD（调度线程概要信息）](configobject/UDG/20.15.2/MSSSCHTHREADHEAD.md)
+- [MSSSCHTHREADHEADM（调度线程概要信息）](configobject/UDG/20.15.2/MSSSCHTHREADHEADM.md)
+- [MSSSCHTHREADQUEUE（MSS线程级调度队列的维测信息）](configobject/UDG/20.15.2/MSSSCHTHREADQUEUE.md)
+- [MSSSCHTHREADTAIL（调度线程组信息）](configobject/UDG/20.15.2/MSSSCHTHREADTAIL.md)
+- [MSSSCHTRACE（调度线程轨迹信息）](configobject/UDG/20.15.2/MSSSCHTRACE.md)
+- [MSSSCHWORK（调度工作类型信息）](configobject/UDG/20.15.2/MSSSCHWORK.md)
+- [MSSSCHWORKGROUP（调度组工作类型信息）](configobject/UDG/20.15.2/MSSSCHWORKGROUP.md)
+- [MSSSCHWORKM（调度工作类型信息）](configobject/UDG/20.15.2/MSSSCHWORKM.md)
+- [MSSTBMDETINFO（通过表号查询表的详细信息）](configobject/UDG/20.15.2/MSSTBMDETINFO.md)
+- [MSSTBMFIB4（通过关键字查询第四版互联网协议转发表的结果）](configobject/UDG/20.15.2/MSSTBMFIB4.md)
+- [MSSTBMFIB6（通过关键字查询第六版因特网协议转发表的结果）](configobject/UDG/20.15.2/MSSTBMFIB6.md)
+- [MSSTBMHASH（通过关键字查询哈希表的结果）](configobject/UDG/20.15.2/MSSTBMHASH.md)
+- [MSSTBMINFO（表管理模块全局信息）](configobject/UDG/20.15.2/MSSTBMINFO.md)
+- [MSSTBMLINEAR（通过关键字查询线性表的结果）](configobject/UDG/20.15.2/MSSTBMLINEAR.md)
+- [MSSTIMERINFOHEAD（定时器全局信息）](configobject/UDG/20.15.2/MSSTIMERINFOHEAD.md)
+- [MSSTIMERINFOTAIL（定时器详细信息）](configobject/UDG/20.15.2/MSSTIMERINFOTAIL.md)
+- [MSSTIMERSTAT（定时器精度统计信息）](configobject/UDG/20.15.2/MSSTIMERSTAT.md)
+- [MSSWORKRUNTIME（Work运行时间信息）](configobject/UDG/20.15.2/MSSWORKRUNTIME.md)
+- [MSSWPREC（微服务主实例切换历史记录）](configobject/UDG/20.15.2/MSSWPREC.md)
+- [MTSMODEL（消息跟踪模型）](configobject/UDG/20.15.2/MTSMODEL.md)
+- [NATSESSION（NAT用户会话信息）](configobject/UDG/20.15.2/NATSESSION.md)
+- [NATSTATICMAPPING（NAT静态地址映射关系）](configobject/UDG/20.15.2/NATSTATICMAPPING.md)
+- [NCCCAPABILITY（设备所支持的NETCONFC协议能力集）](configobject/UDG/20.15.2/NCCCAPABILITY.md)
+- [NCCDIAGLOG（NETCONFC与其他组件的消息交互信息）](configobject/UDG/20.15.2/NCCDIAGLOG.md)
+- [NCCPEERLIST（NETCONFC管理的远端设备的信息）](configobject/UDG/20.15.2/NCCPEERLIST.md)
+- [NCCSESSION（NETCONFC会话信息）](configobject/UDG/20.15.2/NCCSESSION.md)
+- [NCCSYNCINFO（NETCONFC的配置同步信息）](configobject/UDG/20.15.2/NCCSYNCINFO.md)
+- [NCSCAPABILITY（设备所支持的NETCONF协议能力集）](configobject/UDG/20.15.2/NCSCAPABILITY.md)
+- [NCSDATAMODEL（设备当前已加载的NETCONF数据模型）](configobject/UDG/20.15.2/NCSDATAMODEL.md)
+- [NCSDIAGLOG（会话中NETCONF和其它组件的消息交互信息）](configobject/UDG/20.15.2/NCSDIAGLOG.md)
+- [NCSFAILOPER（操作失败信息）](configobject/UDG/20.15.2/NCSFAILOPER.md)
+- [NCSNTFFAIL（通知消息发送失败信息）](configobject/UDG/20.15.2/NCSNTFFAIL.md)
+- [NCSNTFSTC（NETCONF通知会话的统计信息）](configobject/UDG/20.15.2/NCSNTFSTC.md)
+- [NCSNTFSUB（所有订阅通知事件信息）](configobject/UDG/20.15.2/NCSNTFSUB.md)
+- [NCSPROXYFAILOPER（NETCONF代理操作失败信息）](configobject/UDG/20.15.2/NCSPROXYFAILOPER.md)
+- [NCSPROXYFWD（NETCONF代理转发策略）](configobject/UDG/20.15.2/NCSPROXYFWD.md)
+- [NCSPROXYSESSION（所有NETCONF代理VNFC会话信息）](configobject/UDG/20.15.2/NCSPROXYSESSION.md)
+- [NCSRPCERROR（最近的RPC和错误RPC响应报文信息）](configobject/UDG/20.15.2/NCSRPCERROR.md)
+- [NCSSCHEMAMAP（应用模型间模型映射关联关系）](configobject/UDG/20.15.2/NCSSCHEMAMAP.md)
+- [NCSSESSION（NETCONF会话信息）](configobject/UDG/20.15.2/NCSSESSION.md)
+- [NCSSESSIONSTC（NETCONF会话的统计信息）](configobject/UDG/20.15.2/NCSSESSIONSTC.md)
+- [NCSSYNCFULL（全量同步操作的诊断信息）](configobject/UDG/20.15.2/NCSSYNCFULL.md)
+- [NCSSYNCFULLSTC（全量同步操作期间的统计信息）](configobject/UDG/20.15.2/NCSSYNCFULLSTC.md)
+- [NDBLACKBOX（ND黑匣子信息）](configobject/UDG/20.15.2/NDBLACKBOX.md)
+- [NDHASTATE（ND与其他组件之间交互状态信息）](configobject/UDG/20.15.2/NDHASTATE.md)
+- [NDIFNET（使能IPv6接口ND控制块内容）](configobject/UDG/20.15.2/NDIFNET.md)
+- [NDINFO（ND控制块信息）](configobject/UDG/20.15.2/NDINFO.md)
+- [NDNBVERBOSE（邻居表项详细信息）](configobject/UDG/20.15.2/NDNBVERBOSE.md)
+- [NEGOSTATE（所有进程的协商状态信息）](configobject/UDG/20.15.2/NEGOSTATE.md)
+- [NEINFO（ NeInfo）](configobject/UDG/20.15.2/NEINFO.md)
+- [NETINSTRU（网络实例对应RU信息）](configobject/UDG/20.15.2/NETINSTRU.md)
+- [NEXTHOP（负载均衡下一跳）](configobject/UDG/20.15.2/NEXTHOP.md)
+- [NFVIUPDRECVHIST（分批升级历史）](configobject/UDG/20.15.2/NFVIUPDRECVHIST.md)
+- [NGLANCONFLICTMAC（5G LAN冲突MAC地址信息）](configobject/UDG/20.15.2/NGLANCONFLICTMAC.md)
+- [NGLANGRPSESSION（5G LAN组会话上下文）](configobject/UDG/20.15.2/NGLANGRPSESSION.md)
+- [NGLANMACEXINFO（5G LAN MAC地址超规格信息）](configobject/UDG/20.15.2/NGLANMACEXINFO.md)
+- [NGLOOPDETDEAUE（5G LAN环路检测去活用户记录）](configobject/UDG/20.15.2/NGLOOPDETDEAUE.md)
+- [NODECPUSTAT（Node的CPU信息）](configobject/UDG/20.15.2/NODECPUSTAT.md)
+- [NODEMEMSTAT（Node的内存信息）](configobject/UDG/20.15.2/NODEMEMSTAT.md)
+- [NODERES（节点资源信息）](configobject/UDG/20.15.2/NODERES.md)
+- [NOSBASEIFSTAT（NOS Base平面网络的报文统计信息）](configobject/UDG/20.15.2/NOSBASEIFSTAT.md)
+- [NOSBASEIFSTATUS（NOS Base平面网络的网口状态信息）](configobject/UDG/20.15.2/NOSBASEIFSTATUS.md)
+- [NOSBASENEIGH（NOS Base平面网络的邻居信息）](configobject/UDG/20.15.2/NOSBASENEIGH.md)
+- [NOSBASEROUTE（NOS Base平面网络的路由信息）](configobject/UDG/20.15.2/NOSBASEROUTE.md)
+- [NOSBASESOCKET（NOS Base平面网络的Socket信息）](configobject/UDG/20.15.2/NOSBASESOCKET.md)
+- [NPFABRICOAMINFO（NP OAM链路信息）](configobject/UDG/20.15.2/NPFABRICOAMINFO.md)
+- [NPFABRICSUBHEALTHY（NP FABRIC亚健康信息）](configobject/UDG/20.15.2/NPFABRICSUBHEALTHY.md)
+- [NPFRMPOOL（转发资源池使用信息）](configobject/UDG/20.15.2/NPFRMPOOL.md)
+- [NPMICCODEPATCHSTATUS（NP微码补丁加载状态）](configobject/UDG/20.15.2/NPMICCODEPATCHSTATUS.md)
+- [NPNODE（NP状态查询）](configobject/UDG/20.15.2/NPNODE.md)
+- [NPPORT（NP端口状态）](configobject/UDG/20.15.2/NPPORT.md)
+- [NPPORTBANDWIDTHUSAGE（NP端口带宽实时利用率）](configobject/UDG/20.15.2/NPPORTBANDWIDTHUSAGE.md)
+- [NPPORTPODTBMAP（NP卡和Pod TB出端口映射信息）](configobject/UDG/20.15.2/NPPORTPODTBMAP.md)
+- [NPTABSTAT（NP表项简要信息）](configobject/UDG/20.15.2/NPTABSTAT.md)
+- [NPWORKMODE（NP工作模式）](configobject/UDG/20.15.2/NPWORKMODE.md)
+- [OBJVERBOSEQRY（对象反向绑定关系）](configobject/UDG/20.15.2/OBJVERBOSEQRY.md)
+- [OMDBGDATA（OM模块的调试信息）](configobject/UDG/20.15.2/OMDBGDATA.md)
+- [ONECLICKDEPLOYHIST（一键式部署操作历史）](configobject/UDG/20.15.2/ONECLICKDEPLOYHIST.md)
+- [OPSASSISTHIST（系统助手的历史信息）](configobject/UDG/20.15.2/OPSASSISTHIST.md)
+- [OPSASSISTSTATE（系统助手的当前信息）](configobject/UDG/20.15.2/OPSASSISTSTATE.md)
+- [OPSASSISTVERB（系统助手的详细信息）](configobject/UDG/20.15.2/OPSASSISTVERB.md)
+- [OPSBLACKBOX（开放可编程系统的维护信息）](configobject/UDG/20.15.2/OPSBLACKBOX.md)
+- [OPSPROCESSSTATE（通过OPS运行的应用程序的信息）](configobject/UDG/20.15.2/OPSPROCESSSTATE.md)
+- [OPTLOG（操作日志）](configobject/UDG/20.15.2/OPTLOG.md)
+- [OSPATCH（OS补丁版本号）](configobject/UDG/20.15.2/OSPATCH.md)
+- [OSPFBFD（OSPF BFD状态）](configobject/UDG/20.15.2/OSPFBFD.md)
+- [OSPFCUMULATIVE（OSPF统计信息）](configobject/UDG/20.15.2/OSPFCUMULATIVE.md)
+- [OSPFERRORDATA（OSPF进程的错误信息）](configobject/UDG/20.15.2/OSPFERRORDATA.md)
+- [OSPFERRORLSA（OSPF错误LSA的信息）](configobject/UDG/20.15.2/OSPFERRORLSA.md)
+- [OSPFERRORPACKET（OSPF错误报文的信息）](configobject/UDG/20.15.2/OSPFERRORPACKET.md)
+- [OSPFFRRTOPOLOGY（OSPF的FRR拓扑信息）](configobject/UDG/20.15.2/OSPFFRRTOPOLOGY.md)
+- [OSPFHOSTTABLE（OSPF动态主机名的信息）](configobject/UDG/20.15.2/OSPFHOSTTABLE.md)
+- [OSPFLASTDOWNNBR（OSPF上次Down的邻居）](configobject/UDG/20.15.2/OSPFLASTDOWNNBR.md)
+- [OSPFLDPSYNCSTATE（OSPF LDP联动状态信息）](configobject/UDG/20.15.2/OSPFLDPSYNCSTATE.md)
+- [OSPFLSDB（OSPF链接状态数据库）](configobject/UDG/20.15.2/OSPFLSDB.md)
+- [OSPFLSDBSTATEINFO（OSPF LSDB的状态信息）](configobject/UDG/20.15.2/OSPFLSDBSTATEINFO.md)
+- [OSPFLSDBSTATEVERBOSE（OSPF LSDB详细信息）](configobject/UDG/20.15.2/OSPFLSDBSTATEVERBOSE.md)
+- [OSPFMAXAGELSA（OSPF MaxAge LSA信息）](configobject/UDG/20.15.2/OSPFMAXAGELSA.md)
+- [OSPFORIGINATELSA（Router LSA生成流程的信息）](configobject/UDG/20.15.2/OSPFORIGINATELSA.md)
+- [OSPFROUTESOURCE（OSPF路由源信息）](configobject/UDG/20.15.2/OSPFROUTESOURCE.md)
+- [OSPFROUTING（OSPF路由信息）](configobject/UDG/20.15.2/OSPFROUTING.md)
+- [OSPFSOCKETINFO（OSPF与Socket的交互信息）](configobject/UDG/20.15.2/OSPFSOCKETINFO.md)
+- [OSPFTOPOLOGY（OSPF拓扑信息）](configobject/UDG/20.15.2/OSPFTOPOLOGY.md)
+- [OSPFTOPOSTC（OSPF拓扑的统计信息）](configobject/UDG/20.15.2/OSPFTOPOSTC.md)
+- [OSPFUPDATELSA（OSPF接收的LSA的更新信息）](configobject/UDG/20.15.2/OSPFUPDATELSA.md)
+- [OSPFV3BFD（OSPFv3 BFD状态）](configobject/UDG/20.15.2/OSPFV3BFD.md)
+- [OSPFV3CUMULATIVE（OSPFv3统计信息）](configobject/UDG/20.15.2/OSPFV3CUMULATIVE.md)
+- [OSPFV3FRRTOPOLOGY（OSPFv3的FRR拓扑信息）](configobject/UDG/20.15.2/OSPFV3FRRTOPOLOGY.md)
+- [OSPFV3LASTDOWNNBR（OSPFv3上次Down的邻居）](configobject/UDG/20.15.2/OSPFV3LASTDOWNNBR.md)
+- [OSPFV3LSDB（OSPFv3链接状态数据库）](configobject/UDG/20.15.2/OSPFV3LSDB.md)
+- [OSPFV3LSDBSTATEINFO（OSPFv3 LSDB的状态信息）](configobject/UDG/20.15.2/OSPFV3LSDBSTATEINFO.md)
+- [OSPFV3PEER（OSPFv3邻居信息）](configobject/UDG/20.15.2/OSPFV3PEER.md)
+- [OSPFV3ROUTESOURCE（OSPFv3路由源信息）](configobject/UDG/20.15.2/OSPFV3ROUTESOURCE.md)
+- [OSPFV3ROUTING（OSPFv3路由信息）](configobject/UDG/20.15.2/OSPFV3ROUTING.md)
+- [OSPROCMEMSTATIS（系统进程内存信息）](configobject/UDG/20.15.2/OSPROCMEMSTATIS.md)
+- [OSSYSINFO（OS系统信息）](configobject/UDG/20.15.2/OSSYSINFO.md)
+- [OTTFLOWFILTERNAME（外置规则库OTT flow filter信息）](configobject/UDG/20.15.2/OTTFLOWFILTERNAME.md)
+- [PAEALARMINFO（PAE告警信息）](configobject/UDG/20.15.2/PAEALARMINFO.md)
+- [PAECHANNELSYNC（同步到业务进程的通道信息）](configobject/UDG/20.15.2/PAECHANNELSYNC.md)
+- [PAEDYETRACEINFO（PAE染色跟踪信息）](configobject/UDG/20.15.2/PAEDYETRACEINFO.md)
+- [PAEEXAMSTATE（PAE故障信息）](configobject/UDG/20.15.2/PAEEXAMSTATE.md)
+- [PAEFABDETBRF（Fabric链路探测简要结果）](configobject/UDG/20.15.2/PAEFABDETBRF.md)
+- [PAEFABDETDTL（Fabric链路探测任务的详细结果）](configobject/UDG/20.15.2/PAEFABDETDTL.md)
+- [PAEFABRICLINK（PAE链路信息）](configobject/UDG/20.15.2/PAEFABRICLINK.md)
+- [PAEFWDINSTANCE（PAE转发实例信息）](configobject/UDG/20.15.2/PAEFWDINSTANCE.md)
+- [PAELOOPIPTB（Loop口IP和TB映射信息）](configobject/UDG/20.15.2/PAELOOPIPTB.md)
+- [PAELOOPROUTE（Loop口路由信息）](configobject/UDG/20.15.2/PAELOOPROUTE.md)
+- [PAENETWORKCFG（PAE网络配置信息）](configobject/UDG/20.15.2/PAENETWORKCFG.md)
+- [PAENODE（PAE节点信息）](configobject/UDG/20.15.2/PAENODE.md)
+- [PAEPAYLOADINFO（PAE负载信息）](configobject/UDG/20.15.2/PAEPAYLOADINFO.md)
+- [PAEPORTBYTB（PAE Fabric端口的TB统计信息）](configobject/UDG/20.15.2/PAEPORTBYTB.md)
+- [PAEPORTGROUPINFO（PAE端口组信息）](configobject/UDG/20.15.2/PAEPORTGROUPINFO.md)
+- [PAEPORTINFO（PAE端口基本信息）](configobject/UDG/20.15.2/PAEPORTINFO.md)
+- [PAEPORTQUEUE（PAE多队列信息）](configobject/UDG/20.15.2/PAEPORTQUEUE.md)
+- [PAEPRIMAPQOS（报文优先级与QoS映射信息）](configobject/UDG/20.15.2/PAEPRIMAPQOS.md)
+- [PAEQUEUEINFO（PAE队列信息）](configobject/UDG/20.15.2/PAEQUEUEINFO.md)
+- [PAERULEEXTERN（PAE上外联口规则信息）](configobject/UDG/20.15.2/PAERULEEXTERN.md)
+- [PAERULELOOP3T（PAE上Loop口三元组规则信息）](configobject/UDG/20.15.2/PAERULELOOP3T.md)
+- [PAESCHEDULE（PAE调度统计信息）](configobject/UDG/20.15.2/PAESCHEDULE.md)
+- [PAEUDSSTATUS（UDS链路状态）](configobject/UDG/20.15.2/PAEUDSSTATUS.md)
+- [PARTITIONINFO（RU的磁盘分区信息）](configobject/UDG/20.15.2/PARTITIONINFO.md)
+- [PATCHDETAILINFO（补丁信息）](configobject/UDG/20.15.2/PATCHDETAILINFO.md)
+- [PATCHINFO（系统当前补丁信息）](configobject/UDG/20.15.2/PATCHINFO.md)
+- [PATHINFO（路径信息）](configobject/UDG/20.15.2/PATHINFO.md)
+- [PATHMTU（路径MTU）](configobject/UDG/20.15.2/PATHMTU.md)
+- [PATHNUMBER（路径数）](configobject/UDG/20.15.2/PATHNUMBER.md)
+- [PATHSTSTRESULT（批量路径探测结果）](configobject/UDG/20.15.2/PATHSTSTRESULT.md)
+- [PDNAUTOTSTRESULT（PDN自动探测结果）](configobject/UDG/20.15.2/PDNAUTOTSTRESULT.md)
+- [PDNTSTRESULT（PDN侧路由探测结果）](configobject/UDG/20.15.2/PDNTSTRESULT.md)
+- [PIMCBSR（CBSR信息）](configobject/UDG/20.15.2/PIMCBSR.md)
+- [PIMCLAIMUP（PIM使用的路由信息）](configobject/UDG/20.15.2/PIMCLAIMUP.md)
+- [PIMCTLMSGCNTIF（PIM接口报文统计计数）](configobject/UDG/20.15.2/PIMCTLMSGCNTIF.md)
+- [PIMCTLMSGCNTVRF（PIM实例报文统计计数）](configobject/UDG/20.15.2/PIMCTLMSGCNTVRF.md)
+- [PIMEBSR（EBSR信息）](configobject/UDG/20.15.2/PIMEBSR.md)
+- [PIMINVPKT（PIM无效报文）](configobject/UDG/20.15.2/PIMINVPKT.md)
+- [PIMINVPKTCNTIF（PIM接口无效报文统计）](configobject/UDG/20.15.2/PIMINVPKTCNTIF.md)
+- [PIMINVPKTCNTVRF（PIM实例无效报文统计）](configobject/UDG/20.15.2/PIMINVPKTCNTVRF.md)
+- [PIMNBR（PIM邻居信息）](configobject/UDG/20.15.2/PIMNBR.md)
+- [PIMROUTEDW（PIM表项下游信息）](configobject/UDG/20.15.2/PIMROUTEDW.md)
+- [PIMROUTEUP（PIM表项上游信息）](configobject/UDG/20.15.2/PIMROUTEUP.md)
+- [PIMRP（RP信息）](configobject/UDG/20.15.2/PIMRP.md)
+- [PIMRPF（PIM RPF路由信息）](configobject/UDG/20.15.2/PIMRPF.md)
+- [PIMRPGROUP（组播组对应的RP信息）](configobject/UDG/20.15.2/PIMRPGROUP.md)
+- [PKICERTLIST（证书列表）](configobject/UDG/20.15.2/PKICERTLIST.md)
+- [PLGPKGDETAILINFO（扩展包详细信息）](configobject/UDG/20.15.2/PLGPKGDETAILINFO.md)
+- [PLUGINFO（插件信息）](configobject/UDG/20.15.2/PLUGINFO.md)
+- [PLYTRACE（策略跟踪）](configobject/UDG/20.15.2/PLYTRACE.md)
+- [PODCPUSTAT（pod CPU信息）](configobject/UDG/20.15.2/PODCPUSTAT.md)
+- [PODHEALREC（POD重建历史记录）](configobject/UDG/20.15.2/PODHEALREC.md)
+- [PODINFO（已部署的Pod实例信息）](configobject/UDG/20.15.2/PODINFO.md)
+- [PODMEMSTAT（pod内存信息）](configobject/UDG/20.15.2/PODMEMSTAT.md)
+- [PODMIGRATEHIST（节点扩缩容任务进展）](configobject/UDG/20.15.2/PODMIGRATEHIST.md)
+- [POLICYMAP（策略映射表）](configobject/UDG/20.15.2/POLICYMAP.md)
+- [POLICYNUM（策略数量）](configobject/UDG/20.15.2/POLICYNUM.md)
+- [POOLUSAGE（地址池使用情况）](configobject/UDG/20.15.2/POOLUSAGE.md)
+- [PORT（端口信息）](configobject/UDG/20.15.2/PORT.md)
+- [PREFIXFILTERINFO（IP前缀列表信息）](configobject/UDG/20.15.2/PREFIXFILTERINFO.md)
+- [PROCCHANNALEVENT（逻辑链路事件）](configobject/UDG/20.15.2/PROCCHANNALEVENT.md)
+- [PROCCHANNALSTC（逻辑链路统计信息）](configobject/UDG/20.15.2/PROCCHANNALSTC.md)
+- [PROCESSCSDB（CSDB进程信息）](configobject/UDG/20.15.2/PROCESSCSDB.md)
+- [PROCESSCSLB（CSLB进程信息）](configobject/UDG/20.15.2/PROCESSCSLB.md)
+- [PROCESSINFO（进程信息）](configobject/UDG/20.15.2/PROCESSINFO.md)
+- [PROCFILEHDLSTAT（进程文件句柄使用信息）](configobject/UDG/20.15.2/PROCFILEHDLSTAT.md)
+- [PROCINFO（进程部署信息）](configobject/UDG/20.15.2/PROCINFO.md)
+- [PROCMEMPT（进程内存分区信息）](configobject/UDG/20.15.2/PROCMEMPT.md)
+- [PROCMSGAREA（进程消息分区信息）](configobject/UDG/20.15.2/PROCMSGAREA.md)
+- [PROCMSGQUEUE（进程消息队列信息）](configobject/UDG/20.15.2/PROCMSGQUEUE.md)
+- [PROCRESSTAT（进程资源信息）](configobject/UDG/20.15.2/PROCRESSTAT.md)
+- [PROCTHREAD（进程内线程信息）](configobject/UDG/20.15.2/PROCTHREAD.md)
+- [PROCTIMERSTAT（进程定时器计数信息）](configobject/UDG/20.15.2/PROCTIMERSTAT.md)
+- [PRTGRPINFO（保护组信息）](configobject/UDG/20.15.2/PRTGRPINFO.md)
+- [QUICPROTOCOL（Quic类协议）](configobject/UDG/20.15.2/QUICPROTOCOL.md)
+- [RAWIPSTATUS（RawIP状态）](configobject/UDG/20.15.2/RAWIPSTATUS.md)
+- [RAWLINKSTATUS（Raw-link状态）](configobject/UDG/20.15.2/RAWLINKSTATUS.md)
+- [RBKVER（升级可回退版本信息）](configobject/UDG/20.15.2/RBKVER.md)
+- [RELAYALMDETAIL（媒体中继告警详情）](configobject/UDG/20.15.2/RELAYALMDETAIL.md)
+- [RELAYDNSSTATUS（媒体中继DNS服务器状态）](configobject/UDG/20.15.2/RELAYDNSSTATUS.md)
+- [REPORTFAILUREINFO（RU组件上报的故障信息）](configobject/UDG/20.15.2/REPORTFAILUREINFO.md)
+- [RES（资源信息）](configobject/UDG/20.15.2/RES.md)
+- [RESASSERTINFO（断言信息）](configobject/UDG/20.15.2/RESASSERTINFO.md)
+- [RESCOMPONENT（组件信息）](configobject/UDG/20.15.2/RESCOMPONENT.md)
+- [RESDEADLOOPINFO（死循环信息）](configobject/UDG/20.15.2/RESDEADLOOPINFO.md)
+- [RESEXCEPTIONINFO（异常信息）](configobject/UDG/20.15.2/RESEXCEPTIONINFO.md)
+- [RESHASTAT（系统HA状态）](configobject/UDG/20.15.2/RESHASTAT.md)
+- [RESINSTANCETYPE（资源实例类型）](configobject/UDG/20.15.2/RESINSTANCETYPE.md)
+- [RESMEMERRORINFO（内存错误信息）](configobject/UDG/20.15.2/RESMEMERRORINFO.md)
+- [RESNOSBASEIFSTAT（NOS Base平面网络的报文统计信息）](configobject/UDG/20.15.2/RESNOSBASEIFSTAT.md)
+- [RESNOSBASEIFSTATUS（NOS Base平面网络的网口状态信息）](configobject/UDG/20.15.2/RESNOSBASEIFSTATUS.md)
+- [RESNOSBASENEIGH（NOS Base平面网络的邻居信息）](configobject/UDG/20.15.2/RESNOSBASENEIGH.md)
+- [RESNOSBASENETWORK（NOS Base平面网络信息）](configobject/UDG/20.15.2/RESNOSBASENETWORK.md)
+- [RESNOSBASEROUTE（NOS Base平面网络的路由信息）](configobject/UDG/20.15.2/RESNOSBASEROUTE.md)
+- [RESNOSBASESOCKET（NOS Base平面网络的Socket信息）](configobject/UDG/20.15.2/RESNOSBASESOCKET.md)
+- [RESPARTITIONINFO（资源的磁盘分区信息）](configobject/UDG/20.15.2/RESPARTITIONINFO.md)
+- [RESPROCESSINFO（进程信息）](configobject/UDG/20.15.2/RESPROCESSINFO.md)
+- [RESPROCFILEHDLSTAT（进程文件句柄使用信息）](configobject/UDG/20.15.2/RESPROCFILEHDLSTAT.md)
+- [RESPROCMEMPT（进程内存分区信息）](configobject/UDG/20.15.2/RESPROCMEMPT.md)
+- [RESPROCMSGAREA（进程消息分区信息）](configobject/UDG/20.15.2/RESPROCMSGAREA.md)
+- [RESPROCTIMERSTAT（进程定时器计数信息）](configobject/UDG/20.15.2/RESPROCTIMERSTAT.md)
+- [RESREPORTFAILUREINFO（组件上报的故障信息）](configobject/UDG/20.15.2/RESREPORTFAILUREINFO.md)
+- [REVCERTFILE（证书吊销列表）](configobject/UDG/20.15.2/REVCERTFILE.md)
+- [RISK（系统风险）](configobject/UDG/20.15.2/RISK.md)
+- [RMBLACKBOX（路由管理黑匣子信息）](configobject/UDG/20.15.2/RMBLACKBOX.md)
+- [RMCONSUMERIMPORT（路由管理消费者引入信息）](configobject/UDG/20.15.2/RMCONSUMERIMPORT.md)
+- [RMCONSUMERINFO（路由管理消费者信息）](configobject/UDG/20.15.2/RMCONSUMERINFO.md)
+- [RMCONSUMERSUBSCRIBE（路由管理消费者订阅信息）](configobject/UDG/20.15.2/RMCONSUMERSUBSCRIBE.md)
+- [RMIID（路由管理IID信息）](configobject/UDG/20.15.2/RMIID.md)
+- [RMMSGDETAIL（路由管理消息明细）](configobject/UDG/20.15.2/RMMSGDETAIL.md)
+- [RMMSGSTC（路由管理消息统计信息）](configobject/UDG/20.15.2/RMMSGSTC.md)
+- [RMPREFIXINFO（路由管理前缀信息）](configobject/UDG/20.15.2/RMPREFIXINFO.md)
+- [RMPRODUCERDETAIL（路由管理生产者详细信息）](configobject/UDG/20.15.2/RMPRODUCERDETAIL.md)
+- [RMSMOOTHSTC（路由管理平滑统计信息）](configobject/UDG/20.15.2/RMSMOOTHSTC.md)
+- [RMSTATISTICS（IP路由统计）](configobject/UDG/20.15.2/RMSTATISTICS.md)
+- [RMVERIFICATIONSTC（路由管理对账统计信息）](configobject/UDG/20.15.2/RMVERIFICATIONSTC.md)
+- [ROUTE（IPv4路由表）](configobject/UDG/20.15.2/ROUTE.md)
+- [ROUTE6（IPv6路由表）](configobject/UDG/20.15.2/ROUTE6.md)
+- [ROUTEPOLICYINFO（路由策略信息）](configobject/UDG/20.15.2/ROUTEPOLICYINFO.md)
+- [RPTSUBSINFO（报表订阅信息）](configobject/UDG/20.15.2/RPTSUBSINFO.md)
+- [RPTSVRSTATUS（报表服务器状态）](configobject/UDG/20.15.2/RPTSVRSTATUS.md)
+- [RSCBOXHEALREC（ResourceBox重建历史记录）](configobject/UDG/20.15.2/RSCBOXHEALREC.md)
+- [RUCPUINFO（RU CPU信息）](configobject/UDG/20.15.2/RUCPUINFO.md)
+- [RUCPUUSGTHRESH（RU CPU占用率、告警上报门限和告警恢复门限）](configobject/UDG/20.15.2/RUCPUUSGTHRESH.md)
+- [RUGROUPSWP（资源单元组主备倒换状态信息）](configobject/UDG/20.15.2/RUGROUPSWP.md)
+- [RULECHECK（规则检测结果）](configobject/UDG/20.15.2/RULECHECK.md)
+- [RVKLICINFO（License失效信息）](configobject/UDG/20.15.2/RVKLICINFO.md)
+- [SBILINKSTATUS（服务化接口链路状态）](configobject/UDG/20.15.2/SBILINKSTATUS.md)
+- [SBIPEERNF（服务化接口对端NF信息）](configobject/UDG/20.15.2/SBIPEERNF.md)
+- [SCALEGROUP（ScaleGroup信息）](configobject/UDG/20.15.2/SCALEGROUP.md)
+- [SCALINGWORKLOAD（扩缩容负载查询）](configobject/UDG/20.15.2/SCALINGWORKLOAD.md)
+- [SDRDBG（SDR调试信息）](configobject/UDG/20.15.2/SDRDBG.md)
+- [SDRKEYMATCH（SDRC中的KeyMatch信息）](configobject/UDG/20.15.2/SDRKEYMATCH.md)
+- [SDRLBPLCY（SDRC中缓存的下一跳组信息）](configobject/UDG/20.15.2/SDRLBPLCY.md)
+- [SDRNEXTHOP（SDRC中缓存的下一跳信息）](configobject/UDG/20.15.2/SDRNEXTHOP.md)
+- [SDRPLCYCHECK（策略核查任务进度）](configobject/UDG/20.15.2/SDRPLCYCHECK.md)
+- [SDRPLYSUBINFO（所有策略订阅者信息）](configobject/UDG/20.15.2/SDRPLYSUBINFO.md)
+- [SDRPLYSUBSTATUS（SDRC中保存的策略订阅关系）](configobject/UDG/20.15.2/SDRPLYSUBSTATUS.md)
+- [SDRPLYSYNCVER（策略同步版本）](configobject/UDG/20.15.2/SDRPLYSYNCVER.md)
+- [SDRPOLICYINFO（SDRC中的策略版本信息）](configobject/UDG/20.15.2/SDRPOLICYINFO.md)
+- [SDRPOLICYKEYS（SDRC中的策略Key信息）](configobject/UDG/20.15.2/SDRPOLICYKEYS.md)
+- [SDRPROCESS（SDRC中缓存的进程信息）](configobject/UDG/20.15.2/SDRPROCESS.md)
+- [SDRROUTE（SDRC中的APPROUTERINFO信息）](configobject/UDG/20.15.2/SDRROUTE.md)
+- [SDRSAPPTYPE（SDRS中的APPTYPE信息）](configobject/UDG/20.15.2/SDRSAPPTYPE.md)
+- [SDRSERVICE（SDRC中的Service信息）](configobject/UDG/20.15.2/SDRSERVICE.md)
+- [SDRSMASTERNODE（HAF向SDRS推送的主节点信息）](configobject/UDG/20.15.2/SDRSMASTERNODE.md)
+- [SDRSROUTE（SDRS中的APPROUTEINFO信息）](configobject/UDG/20.15.2/SDRSROUTE.md)
+- [SDRSTOKEN（SDRS中的TOKEN信息）](configobject/UDG/20.15.2/SDRSTOKEN.md)
+- [SDRSVPN（SDRS中的VPN信息）](configobject/UDG/20.15.2/SDRSVPN.md)
+- [SDRSVPNIP（SDRS中的VPNIP信息）](configobject/UDG/20.15.2/SDRSVPNIP.md)
+- [SDRTOKEN（SDRC中的TOKEN信息）](configobject/UDG/20.15.2/SDRTOKEN.md)
+- [SDRTOPIC（SDRC中的TOPIC信息）](configobject/UDG/20.15.2/SDRTOPIC.md)
+- [SDRVPN（SDRC中的VPN信息）](configobject/UDG/20.15.2/SDRVPN.md)
+- [SDRVPNCFG（SDR VPN配置信息）](configobject/UDG/20.15.2/SDRVPNCFG.md)
+- [SDRVPNIP（SDRC中的VPNIP信息）](configobject/UDG/20.15.2/SDRVPNIP.md)
+- [SECACL6TAB（安全ACL6表项）](configobject/UDG/20.15.2/SECACL6TAB.md)
+- [SECACLTAB（安全ACL表项）](configobject/UDG/20.15.2/SECACLTAB.md)
+- [SECCARINFO（当前安全CAR信息）](configobject/UDG/20.15.2/SECCARINFO.md)
+- [SECCARTAB（安全CAR表项）](configobject/UDG/20.15.2/SECCARTAB.md)
+- [SECLOG（安全日志）](configobject/UDG/20.15.2/SECLOG.md)
+- [SECPOLICYALLPKT（上送报文总体速率）](configobject/UDG/20.15.2/SECPOLICYALLPKT.md)
+- [SECTIONUSAGE（地址段使用情况）](configobject/UDG/20.15.2/SECTIONUSAGE.md)
+- [SECTOTALPKTSTAT（安全总的报文计数情况）](configobject/UDG/20.15.2/SECTOTALPKTSTAT.md)
+- [SECTOTALPKTTAB（安全总报文表项）](configobject/UDG/20.15.2/SECTOTALPKTTAB.md)
+- [SERVICEINST（注册的服务实例信息）](configobject/UDG/20.15.2/SERVICEINST.md)
+- [SERVICENAME（注册的服务名称）](configobject/UDG/20.15.2/SERVICENAME.md)
+- [SERVICERUSTATE（RU的信息）](configobject/UDG/20.15.2/SERVICERUSTATE.md)
+- [SESSIONINFO（用户上下文）](configobject/UDG/20.15.2/SESSIONINFO.md)
+- [SESSIONMSGSTAT（信令失败统计的结果）](configobject/UDG/20.15.2/SESSIONMSGSTAT.md)
+- [SESSIONNUMBER（会话数）](configobject/UDG/20.15.2/SESSIONNUMBER.md)
+- [SFEACLTABLE（SFE ACL表项）](configobject/UDG/20.15.2/SFEACLTABLE.md)
+- [SFEARP（转发ARP表项）](configobject/UDG/20.15.2/SFEARP.md)
+- [SFEARPREPLY（指定的ARP-REPLY表项）](configobject/UDG/20.15.2/SFEARPREPLY.md)
+- [SFEBFDERECV（BFD-ERECV表）](configobject/UDG/20.15.2/SFEBFDERECV.md)
+- [SFEBFDIRECV（BFD-IRECV表）](configobject/UDG/20.15.2/SFEBFDIRECV.md)
+- [SFEBLKBOX（SFE黑匣子）](configobject/UDG/20.15.2/SFEBLKBOX.md)
+- [SFECERCIB（基于子接口的上行/下行业务属性表）](configobject/UDG/20.15.2/SFECERCIB.md)
+- [SFECERFIB4（指定IPv4的FIB表）](configobject/UDG/20.15.2/SFECERFIB4.md)
+- [SFECERFIB6（指定IPv6的FIB表）](configobject/UDG/20.15.2/SFECERFIB6.md)
+- [SFECERPORT（指定端口出/入方向的表项）](configobject/UDG/20.15.2/SFECERPORT.md)
+- [SFEDBGPKT（调测捕获报文）](configobject/UDG/20.15.2/SFEDBGPKT.md)
+- [SFEDBGPKTCNT（SFE报文统计）](configobject/UDG/20.15.2/SFEDBGPKTCNT.md)
+- [SFEELB（ELB表项）](configobject/UDG/20.15.2/SFEELB.md)
+- [SFEERRORSTAT（SFE错误统计信息）](configobject/UDG/20.15.2/SFEERRORSTAT.md)
+- [SFEEVENTSTAT（SFE事件统计信息）](configobject/UDG/20.15.2/SFEEVENTSTAT.md)
+- [SFEFIB（FIB表项信息）](configobject/UDG/20.15.2/SFEFIB.md)
+- [SFEFIB6（IPv6的FIB表项信息）](configobject/UDG/20.15.2/SFEFIB6.md)
+- [SFEFIB6STC（IPv6指定的VPN路由表项统计）](configobject/UDG/20.15.2/SFEFIB6STC.md)
+- [SFEFIB6STCALL（IPv6所有的路由表项的统计）](configobject/UDG/20.15.2/SFEFIB6STCALL.md)
+- [SFEFIBSTAT（FIB统计信息）](configobject/UDG/20.15.2/SFEFIBSTAT.md)
+- [SFEFIBSTATALL（FIB所有统计信息）](configobject/UDG/20.15.2/SFEFIBSTATALL.md)
+- [SFEHEALTH（SFE健康状况）](configobject/UDG/20.15.2/SFEHEALTH.md)
+- [SFEIPSACLTBL（软转发SFE IPSEC-ACL表项信息）](configobject/UDG/20.15.2/SFEIPSACLTBL.md)
+- [SFELINEARTABLE（指定的线性表记录）](configobject/UDG/20.15.2/SFELINEARTABLE.md)
+- [SFELOCALIP（LOCAL-IP表项）](configobject/UDG/20.15.2/SFELOCALIP.md)
+- [SFEMFIB4（MFIB4表项）](configobject/UDG/20.15.2/SFEMFIB4.md)
+- [SFETABLESTC（SFE表项统计信息）](configobject/UDG/20.15.2/SFETABLESTC.md)
+- [SFETABLEVERBOSE（按摘要和详情两种方式显示SFE表项信息）](configobject/UDG/20.15.2/SFETABLEVERBOSE.md)
+- [SFETABSTAT（SFE表项简要信息）](configobject/UDG/20.15.2/SFETABSTAT.md)
+- [SFETNLPKTSTAT（SFE隧道报文统计）](configobject/UDG/20.15.2/SFETNLPKTSTAT.md)
+- [SFETRACEIP（SFE IP消息跟踪配置信息）](configobject/UDG/20.15.2/SFETRACEIP.md)
+- [SFETUNNEL（Tunnel表项）](configobject/UDG/20.15.2/SFETUNNEL.md)
+- [SFE_QUEUE（指定VM上转发使用的所有或指定队列的详细信息）](configobject/UDG/20.15.2/SFE_QUEUE.md)
+- [SFE_TABLE（指定资源单元上的SFE的表项信息）](configobject/UDG/20.15.2/SFE_TABLE.md)
+- [SHAPINGBUFUSED（整形使用的缓存）](configobject/UDG/20.15.2/SHAPINGBUFUSED.md)
+- [SLADBGDATA（SLA调试数据）](configobject/UDG/20.15.2/SLADBGDATA.md)
+- [SLEMEMBER（仲裁成员列表信息）](configobject/UDG/20.15.2/SLEMEMBER.md)
+- [SLEMEMBERDETAIL（仲裁成员详细信息）](configobject/UDG/20.15.2/SLEMEMBERDETAIL.md)
+- [SNMPINFO（网元长连接信息）](configobject/UDG/20.15.2/SNMPINFO.md)
+- [SOCKBLACKBOX（SOCK黑匣子诊断信息）](configobject/UDG/20.15.2/SOCKBLACKBOX.md)
+- [SOCKINNERDATA（SOCK诊断信息）](configobject/UDG/20.15.2/SOCKINNERDATA.md)
+- [SOCKPATH（SOCK路径诊断信息）](configobject/UDG/20.15.2/SOCKPATH.md)
+- [SOCKSESSION（SOCK会话诊断信息）](configobject/UDG/20.15.2/SOCKSESSION.md)
+- [SOCKSTATISTICS（SOCK统计诊断信息）](configobject/UDG/20.15.2/SOCKSTATISTICS.md)
+- [SPECCFGINFO（规格配置项信息）](configobject/UDG/20.15.2/SPECCFGINFO.md)
+- [SRIIDINFO（静态路由IID信息）](configobject/UDG/20.15.2/SRIIDINFO.md)
+- [SRIPV6IIDINFO（IPv6静态路由IID信息）](configobject/UDG/20.15.2/SRIPV6IIDINFO.md)
+- [SRVADDRNUM（服务实例地址数）](configobject/UDG/20.15.2/SRVADDRNUM.md)
+- [SRVINSTSTAT（LB服务实例统计）](configobject/UDG/20.15.2/SRVINSTSTAT.md)
+- [SRVINSTTYPEREL（服务实例与业务类型关系）](configobject/UDG/20.15.2/SRVINSTTYPEREL.md)
+- [SRVIP（服务IP）](configobject/UDG/20.15.2/SRVIP.md)
+- [SRVMATCHSQRY（业务匹配统计结果）](configobject/UDG/20.15.2/SRVMATCHSQRY.md)
+- [SRVMSGSTAT（服务消息统计）](configobject/UDG/20.15.2/SRVMSGSTAT.md)
+- [SRVVNFC（服务VNFC）](configobject/UDG/20.15.2/SRVVNFC.md)
+- [SRVVNFCMSGSTAT（服务VNFC消息统计）](configobject/UDG/20.15.2/SRVVNFCMSGSTAT.md)
+- [SSHCCONNSTC（客户端的连接统计信息）](configobject/UDG/20.15.2/SSHCCONNSTC.md)
+- [SSHCERRORLOG（SSH客户端的错误日志）](configobject/UDG/20.15.2/SSHCERRORLOG.md)
+- [SSHCMSGDATA（SSH客户端的消息数据）](configobject/UDG/20.15.2/SSHCMSGDATA.md)
+- [SSHCSESSIONSTC（SSH客户端的会话统计信息）](configobject/UDG/20.15.2/SSHCSESSIONSTC.md)
+- [SSHCSTATUSINFO（客户端运行状态信息）](configobject/UDG/20.15.2/SSHCSTATUSINFO.md)
+- [SSHSCONNSTC（服务器的连接统计信息）](configobject/UDG/20.15.2/SSHSCONNSTC.md)
+- [SSHSERRORLOG（SSH服务器的错误日志）](configobject/UDG/20.15.2/SSHSERRORLOG.md)
+- [SSHSERVERSESSION（SSH服务端会话信息）](configobject/UDG/20.15.2/SSHSERVERSESSION.md)
+- [SSHSMSGDATA（SSH服务器的消息数据）](configobject/UDG/20.15.2/SSHSMSGDATA.md)
+- [SSHSSESSIONSTC（SSH服务器的会话统计信息）](configobject/UDG/20.15.2/SSHSSESSIONSTC.md)
+- [SSHSSTATUSINFO（服务器运行状态信息）](configobject/UDG/20.15.2/SSHSSTATUSINFO.md)
+- [STARTUP（本次和下次启动文件）](configobject/UDG/20.15.2/STARTUP.md)
+- [STARVATIONINFO（长时间未被调度的组件消息）](configobject/UDG/20.15.2/STARVATIONINFO.md)
+- [STDSESSION（用户上下文）](configobject/UDG/20.15.2/STDSESSION.md)
+- [SUBHEALTHRECORD（base平面亚健康链路历史信息）](configobject/UDG/20.15.2/SUBHEALTHRECORD.md)
+- [SUPPFINGERIDEN（SA指纹识别协议）](configobject/UDG/20.15.2/SUPPFINGERIDEN.md)
+- [SUPPRESSALM（被抑制告警）](configobject/UDG/20.15.2/SUPPRESSALM.md)
+- [SUPPUSRRLTIDEN（支持用户关联识别协议）](configobject/UDG/20.15.2/SUPPUSRRLTIDEN.md)
+- [SYNCFILESTATUS（对账文件状态）](configobject/UDG/20.15.2/SYNCFILESTATUS.md)
+- [SYSPROCSTAT（系统处理状态）](configobject/UDG/20.15.2/SYSPROCSTAT.md)
+- [SYSRUNNINGSTAT（系统状态查询）](configobject/UDG/20.15.2/SYSRUNNINGSTAT.md)
+- [SYSTEMLOG（系统日志）](configobject/UDG/20.15.2/SYSTEMLOG.md)
+- [TCPSTATUS（TCP状态）](configobject/UDG/20.15.2/TCPSTATUS.md)
+- [TESTRULEMATCH（规则匹配测试结果）](configobject/UDG/20.15.2/TESTRULEMATCH.md)
+- [TETHERINGINFO（tethering用户终端接入数量）](configobject/UDG/20.15.2/TETHERINGINFO.md)
+- [THREADCALLSTACK（线程调用栈信息）](configobject/UDG/20.15.2/THREADCALLSTACK.md)
+- [TIMER（定时器信息）](configobject/UDG/20.15.2/TIMER.md)
+- [TLBDATA（TLB统计信息）](configobject/UDG/20.15.2/TLBDATA.md)
+- [TNLMMSGSTATICS（隧道管理消息计数）](configobject/UDG/20.15.2/TNLMMSGSTATICS.md)
+- [TNLPROTOCOL（隧道协议）](configobject/UDG/20.15.2/TNLPROTOCOL.md)
+- [TNLSTATISTICS（隧道统计信息）](configobject/UDG/20.15.2/TNLSTATISTICS.md)
+- [TOPICSTAT（topic状态）](configobject/UDG/20.15.2/TOPICSTAT.md)
+- [TRCAGENTTASK（跟踪代理侧跟踪任务信息）](configobject/UDG/20.15.2/TRCAGENTTASK.md)
+- [TRCDBGINFO（跟踪调试信息）](configobject/UDG/20.15.2/TRCDBGINFO.md)
+- [TRCFILE（跟踪文件）](configobject/UDG/20.15.2/TRCFILE.md)
+- [TRCFILEDIAG（跟踪文件可维护性信息）](configobject/UDG/20.15.2/TRCFILEDIAG.md)
+- [TRCFLOWCTRL（流控通知相关信息）](configobject/UDG/20.15.2/TRCFLOWCTRL.md)
+- [TRCLASTSUBSESSION（最后订阅Session信息）](configobject/UDG/20.15.2/TRCLASTSUBSESSION.md)
+- [TRCSMSGTOTALSTC（跟踪中心消息统计信息）](configobject/UDG/20.15.2/TRCSMSGTOTALSTC.md)
+- [TRCSTASKMSGSTC（跟踪中心任务消息统计信息）](configobject/UDG/20.15.2/TRCSTASKMSGSTC.md)
+- [TRCTASK（跟踪任务）](configobject/UDG/20.15.2/TRCTASK.md)
+- [TRCTASKSESSION（跟踪任务Session信息）](configobject/UDG/20.15.2/TRCTASKSESSION.md)
+- [TRCTASKSTC（跟踪任务相关跟踪消息的统计信息）](configobject/UDG/20.15.2/TRCTASKSTC.md)
+- [TRUNKINNERDATA（Trunk内部数据）](configobject/UDG/20.15.2/TRUNKINNERDATA.md)
+- [TSNINFO（TSN信息）](configobject/UDG/20.15.2/TSNINFO.md)
+- [TUNNELINFO（隧道信息）](configobject/UDG/20.15.2/TUNNELINFO.md)
+- [TUNNELINFOVERBOSE（隧道详细信息）](configobject/UDG/20.15.2/TUNNELINFOVERBOSE.md)
+- [TWAMPSENDERSTATS（TWAMP发送端详细信息）](configobject/UDG/20.15.2/TWAMPSENDERSTATS.md)
+- [UDPSTATUS（UDP状态）](configobject/UDG/20.15.2/UDPSTATUS.md)
+- [UEINJECTSTAT（UE灌包状态）](configobject/UDG/20.15.2/UEINJECTSTAT.md)
+- [UFPLATENCY（UFP时延度量统计结果）](configobject/UDG/20.15.2/UFPLATENCY.md)
+- [UPDATECTRLCFG（内部升级配置表）](configobject/UDG/20.15.2/UPDATECTRLCFG.md)
+- [UPDIAMAAASTATUS（Diameter AAA服务器状态）](configobject/UDG/20.15.2/UPDIAMAAASTATUS.md)
+- [UPDIAMDICTSTAT（Diameter字典加载状态）](configobject/UDG/20.15.2/UPDIAMDICTSTAT.md)
+- [UPDIAMRTSTATUS（Diameter Route状态）](configobject/UDG/20.15.2/UPDIAMRTSTATUS.md)
+- [UPDRASTATUS（DRA状态）](configobject/UDG/20.15.2/UPDRASTATUS.md)
+- [UPDRUVER（RU版本信息）](configobject/UDG/20.15.2/UPDRUVER.md)
+- [UPDVER（当前版本信息）](configobject/UDG/20.15.2/UPDVER.md)
+- [UPDYNDIAMAAA（动态Diameter AAA服务器）](configobject/UDG/20.15.2/UPDYNDIAMAAA.md)
+- [UPGPODINFO（已部署的Pod的版本号）](configobject/UDG/20.15.2/UPGPODINFO.md)
+- [UPVERLC（设备EOS时间）](configobject/UDG/20.15.2/UPVERLC.md)
+- [USAGEINFO（会话上下文用量信息）](configobject/UDG/20.15.2/USAGEINFO.md)
+- [VERSION（系统版本信息）](configobject/UDG/20.15.2/VERSION.md)
+- [VHAMEMBER（vHA ETCD集群节点详细信息）](configobject/UDG/20.15.2/VHAMEMBER.md)
+- [VNFCRES（VNFC内的资源配置信息）](configobject/UDG/20.15.2/VNFCRES.md)
+- [VNFCSCALINGHISTORY（基于VNFC的扩缩容历史信息）](configobject/UDG/20.15.2/VNFCSCALINGHISTORY.md)
+- [VNFINNERSTAT（网元内部状态）](configobject/UDG/20.15.2/VNFINNERSTAT.md)
+- [VNFINSTANTIATIONRESULT（实例化完成结果查询）](configobject/UDG/20.15.2/VNFINSTANTIATIONRESULT.md)
+- [VNFMODE（VNF部署模式）](configobject/UDG/20.15.2/VNFMODE.md)
+- [VNFPKGS（网元关联的软件包名称）](configobject/UDG/20.15.2/VNFPKGS.md)
+- [VNFPODVM（网元的POD与虚拟机位置关系）](configobject/UDG/20.15.2/VNFPODVM.md)
+- [VNFSTACKNAMES（网元下所有堆栈名称）](configobject/UDG/20.15.2/VNFSTACKNAMES.md)
+- [VNODESTARTTIME（虚拟节点启动时间信息）](configobject/UDG/20.15.2/VNODESTARTTIME.md)
+- [VNRSLINK（VNRS链路）](configobject/UDG/20.15.2/VNRSLINK.md)
+- [VNRSMSGSTAT（VNRS消息统计）](configobject/UDG/20.15.2/VNRSMSGSTAT.md)
+- [VPNAPPCFG（下发的VPN的app类型信息）](configobject/UDG/20.15.2/VPNAPPCFG.md)
+- [VPNINSTINTF（VPN实例接口信息）](configobject/UDG/20.15.2/VPNINSTINTF.md)
+- [VPNRELATEOBJECT（与指定VPN实例绑定的实体）](configobject/UDG/20.15.2/VPNRELATEOBJECT.md)
+- [VPORT（虚拟端口信息）](configobject/UDG/20.15.2/VPORT.md)
+- [VTEPSTAT（Vtep状态）](configobject/UDG/20.15.2/VTEPSTAT.md)
+- [VXLANGRPSTAT（VXLAN组链路状态）](configobject/UDG/20.15.2/VXLANGRPSTAT.md)
+- [WLRATTRINFO（无线路由属性信息）](configobject/UDG/20.15.2/WLRATTRINFO.md)
+- [WLRBLACKBOX（无线路由黑匣子信息）](configobject/UDG/20.15.2/WLRBLACKBOX.md)
+- [WLRFLOWRULE（IPv4引流表信息）](configobject/UDG/20.15.2/WLRFLOWRULE.md)
+- [WLRFLOWRULE6（IPv6引流表信息）](configobject/UDG/20.15.2/WLRFLOWRULE6.md)
+- [WLRGLOBALINFO（无线路由全局信息）](configobject/UDG/20.15.2/WLRGLOBALINFO.md)
+- [WLRIFFLOWRULE（无线路由IPv4接口引流表信息）](configobject/UDG/20.15.2/WLRIFFLOWRULE.md)
+- [WLRIFFLOWRULE6（无线路由IPv6接口引流表信息）](configobject/UDG/20.15.2/WLRIFFLOWRULE6.md)
+- [WLRIID（无线路由IID信息）](configobject/UDG/20.15.2/WLRIID.md)
+- [WLRMSGSTC（WLR与各Partner的消息统计）](configobject/UDG/20.15.2/WLRMSGSTC.md)
+- [WLRPAEG（PAEG信息）](configobject/UDG/20.15.2/WLRPAEG.md)
+- [WLRPEER（无线路由对端状态）](configobject/UDG/20.15.2/WLRPEER.md)
+- [WLRPEERDATASTAT（PEER相关数据的统计计数）](configobject/UDG/20.15.2/WLRPEERDATASTAT.md)
+- [WLRPEERMSGSTAT（PEER有关消息的统计计数）](configobject/UDG/20.15.2/WLRPEERMSGSTAT.md)
+- [WLRROUTESTAT（无线路由的路由统计信息）](configobject/UDG/20.15.2/WLRROUTESTAT.md)
+- [WLRSMOOTHSTAT（无线路由与对端平滑状态机状态）](configobject/UDG/20.15.2/WLRSMOOTHSTAT.md)
+- [WLRSRBIF（无线路由订阅的接口信息）](configobject/UDG/20.15.2/WLRSRBIF.md)
+- [WLRSRCINTERFACE（无线路由地址借用表信息）](configobject/UDG/20.15.2/WLRSRCINTERFACE.md)
+- [WLRSUBINFO（APP订阅信息）](configobject/UDG/20.15.2/WLRSUBINFO.md)
+- [WLRSUBINFOVERBOSE（APP详细订阅信息）](configobject/UDG/20.15.2/WLRSUBINFOVERBOSE.md)
+- [WLRSUBRESULT（APP订阅结果信息）](configobject/UDG/20.15.2/WLRSUBRESULT.md)
+- [WLRSYSPAEINFO（系统PAE信息）](configobject/UDG/20.15.2/WLRSYSPAEINFO.md)
+- [WLRTABLE（无线路由表）](configobject/UDG/20.15.2/WLRTABLE.md)
+- [WLRTBLSMTHINFO（基于表无线路由平滑统计信息）](configobject/UDG/20.15.2/WLRTBLSMTHINFO.md)
+- [WLRTBLSTAT（基于表无线路由数据信息）](configobject/UDG/20.15.2/WLRTBLSTAT.md)
+- [WLRTNLMSTC（WLR组件与TNLM交互的统计信息）](configobject/UDG/20.15.2/WLRTNLMSTC.md)
+- [WORKLOAD（系统负载）](configobject/UDG/20.15.2/WORKLOAD.md)
+- [XSMINNERDATA（XSM模块与其他模块的组件间交互消息）](configobject/UDG/20.15.2/XSMINNERDATA.md)

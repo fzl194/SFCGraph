@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-EMMPROCTRL]] · LST EMMPROCTRL
-- [[command/UNC/20.15.2/SET-EMMPROCTRL]] · SET EMMPROCTRL
+- [LST EMMPROCTRL](command/UNC/20.15.2/LST-EMMPROCTRL.md)
+- [SET EMMPROCTRL](command/UNC/20.15.2/SET-EMMPROCTRL.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-RGRESCTRL]] · LST RGRESCTRL
-- [[command/UNC/20.15.2/SET-RGRESCTRL]] · SET RGRESCTRL
+- [LST RGRESCTRL](command/UNC/20.15.2/LST-RGRESCTRL.md)
+- [SET RGRESCTRL](command/UNC/20.15.2/SET-RGRESCTRL.md)
 
 ## 证据
 

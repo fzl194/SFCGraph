@@ -40,7 +40,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TIME]] · 系统时间（TIME）
+- [系统时间（TIME）](configobject/UNC/20.15.2/TIME.md)
 
 ## 使用实例
 

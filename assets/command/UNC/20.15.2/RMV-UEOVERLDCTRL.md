@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/UEOVERLDCTRL]] · UE重载控制策略（UEOVERLDCTRL）
+- [UE重载控制策略（UEOVERLDCTRL）](configobject/UNC/20.15.2/UEOVERLDCTRL.md)
 
 ## 使用实例
 

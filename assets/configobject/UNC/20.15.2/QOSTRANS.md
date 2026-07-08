@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-QOSTRANS]] · ADD QOSTRANS
-- [[command/UNC/20.15.2/LST-QOSTRANS]] · LST QOSTRANS
-- [[command/UNC/20.15.2/RMV-QOSTRANS]] · RMV QOSTRANS
+- [ADD QOSTRANS](command/UNC/20.15.2/ADD-QOSTRANS.md)
+- [LST QOSTRANS](command/UNC/20.15.2/LST-QOSTRANS.md)
+- [RMV QOSTRANS](command/UNC/20.15.2/RMV-QOSTRANS.md)
 
 ## 证据
 

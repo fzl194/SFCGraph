@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IULOCRPT]] · ADD IULOCRPT
-- [[command/UNC/20.15.2/LST-IULOCRPT]] · LST IULOCRPT
-- [[command/UNC/20.15.2/MOD-IULOCRPT]] · MOD IULOCRPT
-- [[command/UNC/20.15.2/RMV-IULOCRPT]] · RMV IULOCRPT
+- [ADD IULOCRPT](command/UNC/20.15.2/ADD-IULOCRPT.md)
+- [LST IULOCRPT](command/UNC/20.15.2/LST-IULOCRPT.md)
+- [MOD IULOCRPT](command/UNC/20.15.2/MOD-IULOCRPT.md)
+- [RMV IULOCRPT](command/UNC/20.15.2/RMV-IULOCRPT.md)
 
 ## 证据
 

@@ -29,10 +29,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IPV4DNSH]] · ADD IPV4DNSH
-- [[command/UNC/20.15.2/LST-IPV4DNSH]] · LST IPV4DNSH
-- [[command/UNC/20.15.2/MOD-IPV4DNSH]] · MOD IPV4DNSH
-- [[command/UNC/20.15.2/RMV-IPV4DNSH]] · RMV IPV4DNSH
+- [ADD IPV4DNSH](command/UNC/20.15.2/ADD-IPV4DNSH.md)
+- [LST IPV4DNSH](command/UNC/20.15.2/LST-IPV4DNSH.md)
+- [MOD IPV4DNSH](command/UNC/20.15.2/MOD-IPV4DNSH.md)
+- [RMV IPV4DNSH](command/UNC/20.15.2/RMV-IPV4DNSH.md)
 
 ## 证据
 

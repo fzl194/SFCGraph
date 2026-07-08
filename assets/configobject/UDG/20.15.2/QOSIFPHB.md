@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-QOSIFPHB]] · ADD QOSIFPHB
-- [[command/UDG/20.15.2/LST-QOSIFPHB]] · LST QOSIFPHB
-- [[command/UDG/20.15.2/RMV-QOSIFPHB]] · RMV QOSIFPHB
+- [ADD QOSIFPHB](command/UDG/20.15.2/ADD-QOSIFPHB.md)
+- [LST QOSIFPHB](command/UDG/20.15.2/LST-QOSIFPHB.md)
+- [RMV QOSIFPHB](command/UDG/20.15.2/RMV-QOSIFPHB.md)
 
 ## 证据
 

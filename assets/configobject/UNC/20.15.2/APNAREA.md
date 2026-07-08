@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNAREA]] · ADD APNAREA
-- [[command/UNC/20.15.2/LST-APNAREA]] · LST APNAREA
-- [[command/UNC/20.15.2/RMV-APNAREA]] · RMV APNAREA
+- [ADD APNAREA](command/UNC/20.15.2/ADD-APNAREA.md)
+- [LST APNAREA](command/UNC/20.15.2/LST-APNAREA.md)
+- [RMV APNAREA](command/UNC/20.15.2/RMV-APNAREA.md)
 
 ## 证据
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NPFABRICHEALTHY]] · 全局亚健康相关配置（NPFABRICHEALTHY）
+- [全局亚健康相关配置（NPFABRICHEALTHY）](configobject/UDG/20.15.2/NPFABRICHEALTHY.md)
 
 ## 使用实例
 

@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PFCPCMPT]] · LST PFCPCMPT
-- [[command/UNC/20.15.2/SET-PFCPCMPT]] · SET PFCPCMPT
+- [LST PFCPCMPT](command/UNC/20.15.2/LST-PFCPCMPT.md)
+- [SET PFCPCMPT](command/UNC/20.15.2/SET-PFCPCMPT.md)
 
 ## 证据
 

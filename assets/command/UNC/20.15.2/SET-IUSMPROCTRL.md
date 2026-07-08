@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IUSMPROCTRL]] · Iu模式SM流程控制参数（IUSMPROCTRL）
+- [Iu模式SM流程控制参数（IUSMPROCTRL）](configobject/UNC/20.15.2/IUSMPROCTRL.md)
 
 ## 使用实例
 

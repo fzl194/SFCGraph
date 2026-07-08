@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SDAPINTF]] · LST SDAPINTF
-- [[command/UNC/20.15.2/SET-SDAPINTF]] · SET SDAPINTF
+- [LST SDAPINTF](command/UNC/20.15.2/LST-SDAPINTF.md)
+- [SET SDAPINTF](command/UNC/20.15.2/SET-SDAPINTF.md)
 
 ## 证据
 

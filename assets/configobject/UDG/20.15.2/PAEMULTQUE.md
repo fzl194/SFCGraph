@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-PAEMULTQUE]] · LST PAEMULTQUE
-- [[command/UDG/20.15.2/SET-PAEMULTQUE]] · SET PAEMULTQUE
+- [LST PAEMULTQUE](command/UDG/20.15.2/LST-PAEMULTQUE.md)
+- [SET PAEMULTQUE](command/UDG/20.15.2/SET-PAEMULTQUE.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-BGP]] · LST BGP
-- [[command/UNC/20.15.2/SET-BGP]] · SET BGP
+- [LST BGP](command/UNC/20.15.2/LST-BGP.md)
+- [SET BGP](command/UNC/20.15.2/SET-BGP.md)
 
 ## 证据
 

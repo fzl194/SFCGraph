@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PODMIGRATEHIST]] · DSP PODMIGRATEHIST
+- [DSP PODMIGRATEHIST](command/UDG/20.15.2/DSP-PODMIGRATEHIST.md)
 
 ## 证据
 

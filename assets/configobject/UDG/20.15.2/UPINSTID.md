@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-UPINSTID]] · ADD UPINSTID
-- [[command/UDG/20.15.2/LST-UPINSTID]] · LST UPINSTID
-- [[command/UDG/20.15.2/RMV-UPINSTID]] · RMV UPINSTID
+- [ADD UPINSTID](command/UDG/20.15.2/ADD-UPINSTID.md)
+- [LST UPINSTID](command/UDG/20.15.2/LST-UPINSTID.md)
+- [RMV UPINSTID](command/UDG/20.15.2/RMV-UPINSTID.md)
 
 ## 证据
 

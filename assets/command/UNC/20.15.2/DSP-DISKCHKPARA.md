@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DISKCHKPARA]] · 存储检测参数（DISKCHKPARA）
+- [存储检测参数（DISKCHKPARA）](configobject/UNC/20.15.2/DISKCHKPARA.md)
 
 ## 使用实例
 

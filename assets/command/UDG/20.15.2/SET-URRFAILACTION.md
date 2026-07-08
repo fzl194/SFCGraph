@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/URRFAILACTION]] · 计费URR上报失败动作参数（URRFAILACTION）
+- [计费URR上报失败动作参数（URRFAILACTION）](configobject/UDG/20.15.2/URRFAILACTION.md)
 
 ## 关联任务
 

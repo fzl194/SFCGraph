@@ -29,10 +29,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-FILTERGP]] · ADD FILTERGP
-- [[command/UNC/20.15.2/LST-FILTERGP]] · LST FILTERGP
-- [[command/UNC/20.15.2/MOD-FILTERGP]] · MOD FILTERGP
-- [[command/UNC/20.15.2/RMV-FILTERGP]] · RMV FILTERGP
+- [ADD FILTERGP](command/UNC/20.15.2/ADD-FILTERGP.md)
+- [LST FILTERGP](command/UNC/20.15.2/LST-FILTERGP.md)
+- [MOD FILTERGP](command/UNC/20.15.2/MOD-FILTERGP.md)
+- [RMV FILTERGP](command/UNC/20.15.2/RMV-FILTERGP.md)
 
 ## 证据
 

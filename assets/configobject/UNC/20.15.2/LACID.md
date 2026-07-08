@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LACID]] · ADD LACID
-- [[command/UNC/20.15.2/LST-LACID]] · LST LACID
-- [[command/UNC/20.15.2/RMV-LACID]] · RMV LACID
+- [ADD LACID](command/UNC/20.15.2/ADD-LACID.md)
+- [LST LACID](command/UNC/20.15.2/LST-LACID.md)
+- [RMV LACID](command/UNC/20.15.2/RMV-LACID.md)
 
 ## 证据
 

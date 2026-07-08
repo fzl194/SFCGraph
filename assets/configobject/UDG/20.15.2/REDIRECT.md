@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-REDIRECT]] · ADD REDIRECT
-- [[command/UDG/20.15.2/LST-REDIRECT]] · LST REDIRECT
-- [[command/UDG/20.15.2/MOD-REDIRECT]] · MOD REDIRECT
-- [[command/UDG/20.15.2/RMV-REDIRECT]] · RMV REDIRECT
+- [ADD REDIRECT](command/UDG/20.15.2/ADD-REDIRECT.md)
+- [LST REDIRECT](command/UDG/20.15.2/LST-REDIRECT.md)
+- [MOD REDIRECT](command/UDG/20.15.2/MOD-REDIRECT.md)
+- [RMV REDIRECT](command/UDG/20.15.2/RMV-REDIRECT.md)
 
 ## 证据
 

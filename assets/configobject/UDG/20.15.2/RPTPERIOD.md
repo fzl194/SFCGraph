@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RPTPERIOD]] · LST RPTPERIOD
-- [[command/UDG/20.15.2/SET-RPTPERIOD]] · SET RPTPERIOD
+- [LST RPTPERIOD](command/UDG/20.15.2/LST-RPTPERIOD.md)
+- [SET RPTPERIOD](command/UDG/20.15.2/SET-RPTPERIOD.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GMM]] · LST GMM
-- [[command/UNC/20.15.2/SET-GMM]] · SET GMM
+- [LST GMM](command/UNC/20.15.2/LST-GMM.md)
+- [SET GMM](command/UNC/20.15.2/SET-GMM.md)
 
 ## 证据
 

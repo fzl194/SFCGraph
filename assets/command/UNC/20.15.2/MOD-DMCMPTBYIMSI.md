@@ -69,7 +69,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DMCMPTBYIMSI]] · IMSI对应的Diameter兼容性（DMCMPTBYIMSI）
+- [IMSI对应的Diameter兼容性（DMCMPTBYIMSI）](configobject/UNC/20.15.2/DMCMPTBYIMSI.md)
 
 ## 使用实例
 

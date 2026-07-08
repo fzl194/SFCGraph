@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/L3SERVICEUPG]] · 服务升级进度（L3SERVICEUPG）
+- [服务升级进度（L3SERVICEUPG）](configobject/UDG/20.15.2/L3SERVICEUPG.md)
 
 ## 使用实例
 

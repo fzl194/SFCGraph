@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/SET-LOGINALM]] · SET LOGINALM
+- [SET LOGINALM](command/UDG/20.15.2/SET-LOGINALM.md)
 
 ## 证据
 

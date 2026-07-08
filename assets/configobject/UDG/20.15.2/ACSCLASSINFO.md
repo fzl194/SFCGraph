@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ACSCLASSINFO]] · DSP ACSCLASSINFO
+- [DSP ACSCLASSINFO](command/UDG/20.15.2/DSP-ACSCLASSINFO.md)
 
 ## 证据
 

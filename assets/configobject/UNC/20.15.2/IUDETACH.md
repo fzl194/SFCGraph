@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IUDETACH]] · LST IUDETACH
-- [[command/UNC/20.15.2/SET-IUDETACH]] · SET IUDETACH
+- [LST IUDETACH](command/UNC/20.15.2/LST-IUDETACH.md)
+- [SET IUDETACH](command/UNC/20.15.2/SET-IUDETACH.md)
 
 ## 证据
 

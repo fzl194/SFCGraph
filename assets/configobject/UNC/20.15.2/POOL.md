@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-POOL]] · ADD POOL
-- [[command/UNC/20.15.2/LST-POOL]] · LST POOL
-- [[command/UNC/20.15.2/RMV-POOL]] · RMV POOL
+- [ADD POOL](command/UNC/20.15.2/ADD-POOL.md)
+- [LST POOL](command/UNC/20.15.2/LST-POOL.md)
+- [RMV POOL](command/UNC/20.15.2/RMV-POOL.md)
 
 ## 证据
 

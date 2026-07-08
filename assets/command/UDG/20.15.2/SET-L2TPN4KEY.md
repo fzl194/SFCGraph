@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/L2TPN4KEY]] · L2TP N4密码配置（L2TPN4KEY）
+- [L2TP N4密码配置（L2TPN4KEY）](configobject/UDG/20.15.2/L2TPN4KEY.md)
 
 ## 关联任务
 

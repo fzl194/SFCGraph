@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RACGROUP]] · ADD RACGROUP
-- [[command/UNC/20.15.2/LST-RACGROUP]] · LST RACGROUP
-- [[command/UNC/20.15.2/RMV-RACGROUP]] · RMV RACGROUP
+- [ADD RACGROUP](command/UNC/20.15.2/ADD-RACGROUP.md)
+- [LST RACGROUP](command/UNC/20.15.2/LST-RACGROUP.md)
+- [RMV RACGROUP](command/UNC/20.15.2/RMV-RACGROUP.md)
 
 ## 证据
 

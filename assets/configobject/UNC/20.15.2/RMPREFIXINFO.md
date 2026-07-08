@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RMPREFIXINFO]] · DSP RMPREFIXINFO
+- [DSP RMPREFIXINFO](command/UNC/20.15.2/DSP-RMPREFIXINFO.md)
 
 ## 证据
 

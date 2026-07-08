@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GTPCT3N3]] · ADD GTPCT3N3
-- [[command/UNC/20.15.2/LST-GTPCT3N3]] · LST GTPCT3N3
-- [[command/UNC/20.15.2/MOD-GTPCT3N3]] · MOD GTPCT3N3
-- [[command/UNC/20.15.2/RMV-GTPCT3N3]] · RMV GTPCT3N3
+- [ADD GTPCT3N3](command/UNC/20.15.2/ADD-GTPCT3N3.md)
+- [LST GTPCT3N3](command/UNC/20.15.2/LST-GTPCT3N3.md)
+- [MOD GTPCT3N3](command/UNC/20.15.2/MOD-GTPCT3N3.md)
+- [RMV GTPCT3N3](command/UNC/20.15.2/RMV-GTPCT3N3.md)
 
 ## 证据
 

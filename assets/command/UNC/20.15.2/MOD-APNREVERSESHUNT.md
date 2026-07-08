@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNREVERSESHUNT]] · 基于APN的反向分流功能配置（APNREVERSESHUNT）
+- [基于APN的反向分流功能配置（APNREVERSESHUNT）](configobject/UNC/20.15.2/APNREVERSESHUNT.md)
 
 ## 使用实例
 

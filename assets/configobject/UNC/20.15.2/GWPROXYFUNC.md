@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GWPROXYFUNC]] · LST GWPROXYFUNC
-- [[command/UNC/20.15.2/SET-GWPROXYFUNC]] · SET GWPROXYFUNC
+- [LST GWPROXYFUNC](command/UNC/20.15.2/LST-GWPROXYFUNC.md)
+- [SET GWPROXYFUNC](command/UNC/20.15.2/SET-GWPROXYFUNC.md)
 
 ## 证据
 

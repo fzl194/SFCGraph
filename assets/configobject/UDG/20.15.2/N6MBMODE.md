@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-N6MBMODE]] · LST N6MBMODE
-- [[command/UDG/20.15.2/SET-N6MBMODE]] · SET N6MBMODE
+- [LST N6MBMODE](command/UDG/20.15.2/LST-N6MBMODE.md)
+- [SET N6MBMODE](command/UDG/20.15.2/SET-N6MBMODE.md)
 
 ## 证据
 

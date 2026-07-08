@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PRAID]] · ADD PRAID
-- [[command/UNC/20.15.2/LST-PRAID]] · LST PRAID
-- [[command/UNC/20.15.2/MOD-PRAID]] · MOD PRAID
-- [[command/UNC/20.15.2/RMV-PRAID]] · RMV PRAID
+- [ADD PRAID](command/UNC/20.15.2/ADD-PRAID.md)
+- [LST PRAID](command/UNC/20.15.2/LST-PRAID.md)
+- [MOD PRAID](command/UNC/20.15.2/MOD-PRAID.md)
+- [RMV PRAID](command/UNC/20.15.2/RMV-PRAID.md)
 
 ## 证据
 

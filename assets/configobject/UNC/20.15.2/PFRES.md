@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PFRES]] · DSP PFRES
-- [[command/UNC/20.15.2/LST-PFRES]] · LST PFRES
-- [[command/UNC/20.15.2/SET-PFRES]] · SET PFRES
+- [DSP PFRES](command/UNC/20.15.2/DSP-PFRES.md)
+- [LST PFRES](command/UNC/20.15.2/LST-PFRES.md)
+- [SET PFRES](command/UNC/20.15.2/SET-PFRES.md)
 
 ## 证据
 

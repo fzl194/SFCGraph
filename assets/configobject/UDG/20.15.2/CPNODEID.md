@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-CPNODEID]] · ADD CPNODEID
-- [[command/UDG/20.15.2/LST-CPNODEID]] · LST CPNODEID
-- [[command/UDG/20.15.2/MOD-CPNODEID]] · MOD CPNODEID
-- [[command/UDG/20.15.2/RMV-CPNODEID]] · RMV CPNODEID
+- [ADD CPNODEID](command/UDG/20.15.2/ADD-CPNODEID.md)
+- [LST CPNODEID](command/UDG/20.15.2/LST-CPNODEID.md)
+- [MOD CPNODEID](command/UDG/20.15.2/MOD-CPNODEID.md)
+- [RMV CPNODEID](command/UDG/20.15.2/RMV-CPNODEID.md)
 
 ## 证据
 

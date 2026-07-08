@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-CNTRESSTAT]] · DSP CNTRESSTAT
+- [DSP CNTRESSTAT](command/UNC/20.15.2/DSP-CNTRESSTAT.md)
 
 ## 证据
 

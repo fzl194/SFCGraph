@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MPSARP]] · LST MPSARP
-- [[command/UNC/20.15.2/SET-MPSARP]] · SET MPSARP
+- [LST MPSARP](command/UNC/20.15.2/LST-MPSARP.md)
+- [SET MPSARP](command/UNC/20.15.2/SET-MPSARP.md)
 
 ## 证据
 

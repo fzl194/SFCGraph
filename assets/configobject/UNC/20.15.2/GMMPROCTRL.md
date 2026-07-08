@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GMMPROCTRL]] · LST GMMPROCTRL
-- [[command/UNC/20.15.2/SET-GMMPROCTRL]] · SET GMMPROCTRL
+- [LST GMMPROCTRL](command/UNC/20.15.2/LST-GMMPROCTRL.md)
+- [SET GMMPROCTRL](command/UNC/20.15.2/SET-GMMPROCTRL.md)
 
 ## 证据
 

@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/AAADHCPPATHSTAT]] · 复位RADIUS或DHCP链路状态（AAADHCPPATHSTAT）
+- [复位RADIUS或DHCP链路状态（AAADHCPPATHSTAT）](configobject/UNC/20.15.2/AAADHCPPATHSTAT.md)
 
 ## 使用实例
 

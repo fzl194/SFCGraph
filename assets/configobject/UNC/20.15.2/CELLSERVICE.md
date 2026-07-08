@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/SWP-CELLSERVICE]] · SWP CELLSERVICE
+- [SWP CELLSERVICE](command/UNC/20.15.2/SWP-CELLSERVICE.md)
 
 ## 证据
 

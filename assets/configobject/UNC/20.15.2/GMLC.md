@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GMLC]] · ADD GMLC
-- [[command/UNC/20.15.2/LST-GMLC]] · LST GMLC
-- [[command/UNC/20.15.2/MOD-GMLC]] · MOD GMLC
-- [[command/UNC/20.15.2/RMV-GMLC]] · RMV GMLC
+- [ADD GMLC](command/UNC/20.15.2/ADD-GMLC.md)
+- [LST GMLC](command/UNC/20.15.2/LST-GMLC.md)
+- [MOD GMLC](command/UNC/20.15.2/MOD-GMLC.md)
+- [RMV GMLC](command/UNC/20.15.2/RMV-GMLC.md)
 
 ## 证据
 

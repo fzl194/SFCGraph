@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-HOSTSNDSTC]] · DSP HOSTSNDSTC
-- [[command/UNC/20.15.2/RTR-HOSTSNDSTC]] · RTR HOSTSNDSTC
+- [DSP HOSTSNDSTC](command/UNC/20.15.2/DSP-HOSTSNDSTC.md)
+- [RTR HOSTSNDSTC](command/UNC/20.15.2/RTR-HOSTSNDSTC.md)
 
 ## 证据
 

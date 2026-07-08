@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-VNFC]] · DSP VNFC
-- [[command/UNC/20.15.2/LST-VNFC]] · LST VNFC
-- [[command/UNC/20.15.2/RST-VNFC]] · RST VNFC
+- [DSP VNFC](command/UNC/20.15.2/DSP-VNFC.md)
+- [LST VNFC](command/UNC/20.15.2/LST-VNFC.md)
+- [RST VNFC](command/UNC/20.15.2/RST-VNFC.md)
 
 ## 证据
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-RESNOSBASEPING]] · ACT RESNOSBASEPING
+- [ACT RESNOSBASEPING](command/UNC/20.15.2/ACT-RESNOSBASEPING.md)
 
 ## 证据
 

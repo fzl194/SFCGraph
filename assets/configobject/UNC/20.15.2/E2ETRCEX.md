@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-E2ETRCEX]] · DSP E2ETRCEX
-- [[command/UNC/20.15.2/RMV-E2ETRCEX]] · RMV E2ETRCEX
+- [DSP E2ETRCEX](command/UNC/20.15.2/DSP-E2ETRCEX.md)
+- [RMV E2ETRCEX](command/UNC/20.15.2/RMV-E2ETRCEX.md)
 
 ## 证据
 

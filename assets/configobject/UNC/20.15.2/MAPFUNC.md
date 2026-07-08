@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MAPFUNC]] · LST MAPFUNC
-- [[command/UNC/20.15.2/SET-MAPFUNC]] · SET MAPFUNC
+- [LST MAPFUNC](command/UNC/20.15.2/LST-MAPFUNC.md)
+- [SET MAPFUNC](command/UNC/20.15.2/SET-MAPFUNC.md)
 
 ## 证据
 

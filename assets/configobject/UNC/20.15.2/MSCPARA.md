@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MSCPARA]] · ADD MSCPARA
-- [[command/UNC/20.15.2/LST-MSCPARA]] · LST MSCPARA
-- [[command/UNC/20.15.2/MOD-MSCPARA]] · MOD MSCPARA
-- [[command/UNC/20.15.2/RMV-MSCPARA]] · RMV MSCPARA
+- [ADD MSCPARA](command/UNC/20.15.2/ADD-MSCPARA.md)
+- [LST MSCPARA](command/UNC/20.15.2/LST-MSCPARA.md)
+- [MOD MSCPARA](command/UNC/20.15.2/MOD-MSCPARA.md)
+- [RMV MSCPARA](command/UNC/20.15.2/RMV-MSCPARA.md)
 
 ## 证据
 

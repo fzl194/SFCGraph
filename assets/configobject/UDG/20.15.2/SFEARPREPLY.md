@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFEARPREPLY]] · DSP SFEARPREPLY
+- [DSP SFEARPREPLY](command/UDG/20.15.2/DSP-SFEARPREPLY.md)
 
 ## 证据
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QOSFLOWFUNC]] · LST QOSFLOWFUNC
-- [[command/UNC/20.15.2/SET-QOSFLOWFUNC]] · SET QOSFLOWFUNC
+- [LST QOSFLOWFUNC](command/UNC/20.15.2/LST-QOSFLOWFUNC.md)
+- [SET QOSFLOWFUNC](command/UNC/20.15.2/SET-QOSFLOWFUNC.md)
 
 ## 证据
 

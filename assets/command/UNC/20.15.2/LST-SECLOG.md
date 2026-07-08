@@ -42,7 +42,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SECLOG]] · 安全日志（SECLOG）
+- [安全日志（SECLOG）](configobject/UNC/20.15.2/SECLOG.md)
 
 ## 使用实例
 

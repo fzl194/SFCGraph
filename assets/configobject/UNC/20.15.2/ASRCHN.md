@@ -28,11 +28,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ASRCHN]] · ADD ASRCHN
-- [[command/UNC/20.15.2/DSP-ASRCHN]] · DSP ASRCHN
-- [[command/UNC/20.15.2/LST-ASRCHN]] · LST ASRCHN
-- [[command/UNC/20.15.2/MOD-ASRCHN]] · MOD ASRCHN
-- [[command/UNC/20.15.2/RMV-ASRCHN]] · RMV ASRCHN
+- [ADD ASRCHN](command/UNC/20.15.2/ADD-ASRCHN.md)
+- [DSP ASRCHN](command/UNC/20.15.2/DSP-ASRCHN.md)
+- [LST ASRCHN](command/UNC/20.15.2/LST-ASRCHN.md)
+- [MOD ASRCHN](command/UNC/20.15.2/MOD-ASRCHN.md)
+- [RMV ASRCHN](command/UNC/20.15.2/RMV-ASRCHN.md)
 
 ## 证据
 

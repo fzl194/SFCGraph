@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LOWPRIAPNFCSTAT]] · DSP LOWPRIAPNFCSTAT
+- [DSP LOWPRIAPNFCSTAT](command/UNC/20.15.2/DSP-LOWPRIAPNFCSTAT.md)
 
 ## 证据
 

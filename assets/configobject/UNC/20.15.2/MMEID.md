@@ -25,10 +25,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MMEID]] · ADD MMEID
-- [[command/UNC/20.15.2/LST-MMEID]] · LST MMEID
-- [[command/UNC/20.15.2/MOD-MMEID]] · MOD MMEID
-- [[command/UNC/20.15.2/RMV-MMEID]] · RMV MMEID
+- [ADD MMEID](command/UNC/20.15.2/ADD-MMEID.md)
+- [LST MMEID](command/UNC/20.15.2/LST-MMEID.md)
+- [MOD MMEID](command/UNC/20.15.2/MOD-MMEID.md)
+- [RMV MMEID](command/UNC/20.15.2/RMV-MMEID.md)
 
 ## 证据
 

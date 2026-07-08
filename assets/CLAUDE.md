@@ -86,8 +86,9 @@ assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[
   - `configobject/UDG/20.15.2/URR.md` ← `UDG@20.15.2@ConfigObject@URR`
   - 业务层（无 nf@version）：`business/<domain>/<scenario>/ConfigurationSolution@charging-converged.md`
 - **引用统一用 assets/ 根路径**（从 assets/ 起，**禁文件间相对路径**如 `../`），同证据 `evidence/...`：
-  - 已建对象：`[[command/UDG/20.15.2/ADD-URR]]`、`[[configobject/UDG/20.15.2/URR]]`
-  - **未建对象用 ID 占位**：`[[UDG@20.15.2@Task@0-00001]]`（标注待建）；该对象 md 建好后，Compile/Lint 回头把占位 ID 补成 assets 路径。
+  - **已建对象** → 标准 markdown 链接 `[显示名](assets根路径.md)`，**带 .md**：`[URR](configobject/UDG/20.15.2/URR.md)`、`[ADD URR](command/UDG/20.15.2/ADD-URR.md)`
+  - **未建对象** → `[[对象ID]]` 占位（**双方括号 = 待建**）：`[[UDG@20.15.2@Task@0-00001]]`
+  - 规则：**`[...](...md)` = 已建可点；`[[...]]` = 占位待建**。Compile/Lint 把已建对象的 `[[ID]]` 占位替换为 markdown 链接。
 
 ### 5.6 关系双向链接（硬约束）
 每条关系必须在两端 md 互引（正向 + 反向）：

@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-OSPATCH]] · DSP OSPATCH
+- [DSP OSPATCH](command/UDG/20.15.2/DSP-OSPATCH.md)
 
 ## 证据
 

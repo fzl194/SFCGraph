@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PKICERTLIST]] · DSP PKICERTLIST
+- [DSP PKICERTLIST](command/UNC/20.15.2/DSP-PKICERTLIST.md)
 
 ## 证据
 

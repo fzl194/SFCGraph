@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SRVNODEIP]] · ADD SRVNODEIP
-- [[command/UNC/20.15.2/LST-SRVNODEIP]] · LST SRVNODEIP
-- [[command/UNC/20.15.2/RMV-SRVNODEIP]] · RMV SRVNODEIP
+- [ADD SRVNODEIP](command/UNC/20.15.2/ADD-SRVNODEIP.md)
+- [LST SRVNODEIP](command/UNC/20.15.2/LST-SRVNODEIP.md)
+- [RMV SRVNODEIP](command/UNC/20.15.2/RMV-SRVNODEIP.md)
 
 ## 证据
 

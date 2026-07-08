@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-M3LKS]] · ADD M3LKS
-- [[command/UNC/20.15.2/LST-M3LKS]] · LST M3LKS
-- [[command/UNC/20.15.2/MOD-M3LKS]] · MOD M3LKS
-- [[command/UNC/20.15.2/RMV-M3LKS]] · RMV M3LKS
+- [ADD M3LKS](command/UNC/20.15.2/ADD-M3LKS.md)
+- [LST M3LKS](command/UNC/20.15.2/LST-M3LKS.md)
+- [MOD M3LKS](command/UNC/20.15.2/MOD-M3LKS.md)
+- [RMV M3LKS](command/UNC/20.15.2/RMV-M3LKS.md)
 
 ## 证据
 

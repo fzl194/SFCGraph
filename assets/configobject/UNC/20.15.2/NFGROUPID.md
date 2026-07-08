@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFGROUPID]] · ADD NFGROUPID
-- [[command/UNC/20.15.2/LST-NFGROUPID]] · LST NFGROUPID
-- [[command/UNC/20.15.2/RMV-NFGROUPID]] · RMV NFGROUPID
+- [ADD NFGROUPID](command/UNC/20.15.2/ADD-NFGROUPID.md)
+- [LST NFGROUPID](command/UNC/20.15.2/LST-NFGROUPID.md)
+- [RMV NFGROUPID](command/UNC/20.15.2/RMV-NFGROUPID.md)
 
 ## 证据
 

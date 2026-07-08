@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRFFQDN]] · ADD NRFFQDN
-- [[command/UNC/20.15.2/LST-NRFFQDN]] · LST NRFFQDN
-- [[command/UNC/20.15.2/MOD-NRFFQDN]] · MOD NRFFQDN
-- [[command/UNC/20.15.2/RMV-NRFFQDN]] · RMV NRFFQDN
+- [ADD NRFFQDN](command/UNC/20.15.2/ADD-NRFFQDN.md)
+- [LST NRFFQDN](command/UNC/20.15.2/LST-NRFFQDN.md)
+- [MOD NRFFQDN](command/UNC/20.15.2/MOD-NRFFQDN.md)
+- [RMV NRFFQDN](command/UNC/20.15.2/RMV-NRFFQDN.md)
 
 ## 证据
 

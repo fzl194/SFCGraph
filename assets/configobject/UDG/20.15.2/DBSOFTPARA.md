@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DBSOFTPARA]] · LST DBSOFTPARA
-- [[command/UDG/20.15.2/SET-DBSOFTPARA]] · SET DBSOFTPARA
+- [LST DBSOFTPARA](command/UDG/20.15.2/LST-DBSOFTPARA.md)
+- [SET DBSOFTPARA](command/UDG/20.15.2/SET-DBSOFTPARA.md)
 
 ## 证据
 

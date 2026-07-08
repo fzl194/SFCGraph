@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IUPAGING]] · ADD IUPAGING
-- [[command/UNC/20.15.2/LST-IUPAGING]] · LST IUPAGING
-- [[command/UNC/20.15.2/RMV-IUPAGING]] · RMV IUPAGING
+- [ADD IUPAGING](command/UNC/20.15.2/ADD-IUPAGING.md)
+- [LST IUPAGING](command/UNC/20.15.2/LST-IUPAGING.md)
+- [RMV IUPAGING](command/UNC/20.15.2/RMV-IUPAGING.md)
 
 ## 证据
 

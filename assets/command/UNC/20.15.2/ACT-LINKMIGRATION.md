@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LINKMIGRATION]] · 一次链路迁移操作（LINKMIGRATION）
+- [一次链路迁移操作（LINKMIGRATION）](configobject/UNC/20.15.2/LINKMIGRATION.md)
 
 ## 使用实例
 

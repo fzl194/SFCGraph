@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFNFINFOFMT]] · NF私有信息格式（NRFNFINFOFMT）
+- [NF私有信息格式（NRFNFINFOFMT）](configobject/UNC/20.15.2/NRFNFINFOFMT.md)
 
 ## 使用实例
 

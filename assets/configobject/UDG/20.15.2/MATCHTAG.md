@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-MATCHTAG]] · ADD MATCHTAG
-- [[command/UDG/20.15.2/LST-MATCHTAG]] · LST MATCHTAG
-- [[command/UDG/20.15.2/MOD-MATCHTAG]] · MOD MATCHTAG
-- [[command/UDG/20.15.2/RMV-MATCHTAG]] · RMV MATCHTAG
+- [ADD MATCHTAG](command/UDG/20.15.2/ADD-MATCHTAG.md)
+- [LST MATCHTAG](command/UDG/20.15.2/LST-MATCHTAG.md)
+- [MOD MATCHTAG](command/UDG/20.15.2/MOD-MATCHTAG.md)
+- [RMV MATCHTAG](command/UDG/20.15.2/RMV-MATCHTAG.md)
 
 ## 证据
 

@@ -4,3623 +4,3623 @@
 
 ## action
 
-- [[configobject/UNC/20.15.2/AAA]] · AAA（测试AAA服务器） — `AAA.md`
-- [[configobject/UNC/20.15.2/AAADHCPPATHSTAT]] · AAADHCPPATHSTAT（复位RADIUS或DHCP链路状态） — `AAADHCPPATHSTAT.md`
-- [[configobject/UNC/20.15.2/ACSCLIENTDBG]] · ACSCLIENTDBG（ACS客户端调试操作） — `ACSCLIENTDBG.md`
-- [[configobject/UNC/20.15.2/ACSDATA]] · ACSDATA（ACS管理服务数据） — `ACSDATA.md`
-- [[configobject/UNC/20.15.2/ACSFILE]] · ACSFILE（文件传输） — `ACSFILE.md`
-- [[configobject/UNC/20.15.2/ACSPEERCFG]] · ACSPEERCFG（或停止ACS与远端设备的配置同步） — `ACSPEERCFG.md`
-- [[configobject/UNC/20.15.2/ACSUPDPRECHK]] · ACSUPDPRECHK（升级前检查） — `ACSUPDPRECHK.md`
-- [[configobject/UNC/20.15.2/ACTIVEALARM]] · ACTIVEALARM（活动告警） — `ACTIVEALARM.md`
-- [[configobject/UNC/20.15.2/ADDRIP]] · ADDRIP（地址缓存） — `ADDRIP.md`
-- [[configobject/UNC/20.15.2/ALLLDPSESSIONS]] · ALLLDPSESSIONS（重启所有LDP会话） — `ALLLDPSESSIONS.md`
-- [[configobject/UNC/20.15.2/ALLOWPLCY]] · ALLOWPLCY（提交允许访问策略配置） — `ALLOWPLCY.md`
-- [[configobject/UNC/20.15.2/AMFCAP]] · AMFCAP（操作AMF相对容量） — `AMFCAP.md`
-- [[configobject/UNC/20.15.2/AMFEXITUDMBYPASS]] · AMFEXITUDMBYPASS（用户退出UDM Bypass状态任务） — `AMFEXITUDMBYPASS.md`
-- [[configobject/UNC/20.15.2/AMFMBSSESSION]] · AMFMBSSESSION（AMF组播广播会话） — `AMFMBSSESSION.md`
-- [[configobject/UNC/20.15.2/AN]] · AN（复位AN） — `AN.md`
-- [[configobject/UNC/20.15.2/APNFORBYPASS]] · APNFORBYPASS（APN锁定状态） — `APNFORBYPASS.md`
-- [[configobject/UNC/20.15.2/APPDATA]] · APPDATA（同步APP配置数据） — `APPDATA.md`
-- [[configobject/UNC/20.15.2/ARPBYIF]] · ARPBYIF（根据接口清除ARP动态表项） — `ARPBYIF.md`
-- [[configobject/UNC/20.15.2/ARPBYTYPE]] · ARPBYTYPE（根据ARP表项类型清除ARP表项） — `ARPBYTYPE.md`
-- [[configobject/UNC/20.15.2/ARPDROPSTC]] · ARPDROPSTC（ARP丢弃报文统计） — `ARPDROPSTC.md`
-- [[configobject/UNC/20.15.2/ARPDYNBLACKLIST]] · ARPDYNBLACKLIST（ARP动态黑名单） — `ARPDYNBLACKLIST.md`
-- [[configobject/UNC/20.15.2/ASNSYNC]] · ASNSYNC（触发ASN同步） — `ASNSYNC.md`
-- [[configobject/UNC/20.15.2/ATTACKDEFENDSTC]] · ATTACKDEFENDSTC（攻击防范统计信息） — `ATTACKDEFENDSTC.md`
-- [[configobject/UNC/20.15.2/BACKUPAMFCACHE]] · BACKUPAMFCACHE（缓存的备用AMF信息） — `BACKUPAMFCACHE.md`
-- [[configobject/UNC/20.15.2/BFDSESSSTAS]] · BFDSESSSTAS（BFD会话统计信息） — `BFDSESSSTAS.md`
-- [[configobject/UNC/20.15.2/BGPALL]] · BGPALL（BGP全部信息） — `BGPALL.md`
-- [[configobject/UNC/20.15.2/BGPIPV6PEER]] · BGPIPV6PEER（BGP IPv6对等体） — `BGPIPV6PEER.md`
-- [[configobject/UNC/20.15.2/BGPPEERTYPE]] · BGPPEERTYPE（对等体类型） — `BGPPEERTYPE.md`
-- [[configobject/UNC/20.15.2/BLK]] · BLK（CSDB检查闭塞RU） — `BLK.md`
-- [[configobject/UNC/20.15.2/BYPASSMODE]] · BYPASSMODE（节点BYPASS模式） — `BYPASSMODE.md`
-- [[configobject/UNC/20.15.2/CDRRECEIVE]] · CDRRECEIVE（接收话单） — `CDRRECEIVE.md`
-- [[configobject/UNC/20.15.2/CELLSERVICE]] · CELLSERVICE（微服务主备实例倒换） — `CELLSERVICE.md`
-- [[configobject/UNC/20.15.2/CGFTPPWD]] · CGFTPPWD（更新CG FTP密码） — `CGFTPPWD.md`
-- [[configobject/UNC/20.15.2/CHARGECONFLICT]] · CHARGECONFLICT（计费配置冲突） — `CHARGECONFLICT.md`
-- [[configobject/UNC/20.15.2/CHGFILEDIR]] · CHGFILEDIR（切换话单文件的工作目录） — `CHGFILEDIR.md`
-- [[configobject/UNC/20.15.2/CMFDATA]] · CMFDATA（强制推送集群管理数据） — `CMFDATA.md`
-- [[configobject/UNC/20.15.2/CNTRLTRCTASK]] · CNTRLTRCTASK（跨层统一联动跟踪任务） — `CNTRLTRCTASK.md`
-- [[configobject/UNC/20.15.2/COMPSTATUS]] · COMPSTATUS（收集并推送RU的组件状态） — `COMPSTATUS.md`
-- [[configobject/UNC/20.15.2/COMTASK]] · COMTASK（SDR通信质量检测任务） — `COMTASK.md`
-- [[configobject/UNC/20.15.2/CONFIG]] · CONFIG（锁定配置） — `CONFIG.md`
-- [[configobject/UNC/20.15.2/CONFIGXML]] · CONFIGXML（XML文件配置到数据库） — `CONFIGXML.md`
-- [[configobject/UNC/20.15.2/CONSSTATIC]] · CONSSTATIC（消费者统计信息） — `CONSSTATIC.md`
-- [[configobject/UNC/20.15.2/CSCFGREBUILD]] · CSCFGREBUILD（对特定配置的缓存重建） — `CSCFGREBUILD.md`
-- [[configobject/UNC/20.15.2/DBGCLICMDPRXY]] · DBGCLICMDPRXY（通过命令代理执行命令行调试命令） — `DBGCLICMDPRXY.md`
-- [[configobject/UNC/20.15.2/DBGCMDPRXY]] · DBGCMDPRXY（通过命令代理执行调试命令） — `DBGCMDPRXY.md`
-- [[configobject/UNC/20.15.2/DBGDATA]] · DBGDATA（调试信息） — `DBGDATA.md`
-- [[configobject/UNC/20.15.2/DBINSTANCE]] · DBINSTANCE（复位CSDB子实例） — `DBINSTANCE.md`
-- [[configobject/UNC/20.15.2/DBSFTD]] · DBSFTD（发送CSDB的软件调试命令） — `DBSFTD.md`
-- [[configobject/UNC/20.15.2/DCNOFFLOAD]] · DCNOFFLOAD（DCN迁移任务） — `DCNOFFLOAD.md`
-- [[configobject/UNC/20.15.2/DDNTIMEOUTCNT]] · DDNTIMEOUTCNT（DDN超时延时删除功能运行信息记录） — `DDNTIMEOUTCNT.md`
-- [[configobject/UNC/20.15.2/DEVVERIFICATION]] · DEVVERIFICATION（触发设备对账） — `DEVVERIFICATION.md`
-- [[configobject/UNC/20.15.2/DHCP6CLIENTSTC]] · DHCP6CLIENTSTC（DHCPv6客户端报文统计） — `DHCP6CLIENTSTC.md`
-- [[configobject/UNC/20.15.2/DHCPCLIENTSTC]] · DHCPCLIENTSTC（DHCPv4客户端报文统计） — `DHCPCLIENTSTC.md`
-- [[configobject/UNC/20.15.2/DIAMDICT]] · DIAMDICT（Diameter字典） — `DIAMDICT.md`
-- [[configobject/UNC/20.15.2/DNSC]] · DNSC（DNS缓存） — `DNSC.md`
-- [[configobject/UNC/20.15.2/DNSSTATISTICS]] · DNSSTATISTICS（DNS报文统计计数） — `DNSSTATISTICS.md`
-- [[configobject/UNC/20.15.2/DPSCALEUP]] · DPSCALEUP（硬盘分区扩容进展） — `DPSCALEUP.md`
-- [[configobject/UNC/20.15.2/DR]] · DR（容灾实例主备倒换） — `DR.md`
-- [[configobject/UNC/20.15.2/DSPPRTGRPSPEC]] · DSPPRTGRPSPEC（操作显示保护组规格值） — `DSPPRTGRPSPEC.md`
-- [[configobject/UNC/20.15.2/DYNAMICOCS]] · DYNAMICOCS（动态OCS） — `DYNAMICOCS.md`
-- [[configobject/UNC/20.15.2/DYNAMICPCRF]] · DYNAMICPCRF（动态PCRF） — `DYNAMICPCRF.md`
-- [[configobject/UNC/20.15.2/DYNNRFSTAT]] · DYNNRFSTAT（内部统计信息） — `DYNNRFSTAT.md`
-- [[configobject/UNC/20.15.2/ENBATTR]] · ENBATTR（eNodeB属性） — `ENBATTR.md`
-- [[configobject/UNC/20.15.2/ENBNEIBS]] · ENBNEIBS（eNodeB邻接关系） — `ENBNEIBS.md`
-- [[configobject/UNC/20.15.2/ENBTASYN]] · ENBTASYN（eNodeB跟踪区信息同步任务） — `ENBTASYN.md`
-- [[configobject/UNC/20.15.2/ESN]] · ESN（设备序列号） — `ESN.md`
-- [[configobject/UNC/20.15.2/EXPFILE]] · EXPFILE（上传导出文件） — `EXPFILE.md`
-- [[configobject/UNC/20.15.2/FABRICOAMSTAT]] · FABRICOAMSTAT（OAM统计信息） — `FABRICOAMSTAT.md`
-- [[configobject/UNC/20.15.2/FEATUREDISABLE]] · FEATUREDISABLE（特性下线） — `FEATUREDISABLE.md`
-- [[configobject/UNC/20.15.2/FEATUREENABLE]] · FEATUREENABLE（特性使能） — `FEATUREENABLE.md`
-- [[configobject/UNC/20.15.2/FEICOM_SMOOTH]] · FEICOM_SMOOTH（一次FEI与FES之间的数据平滑） — `FEICOM_SMOOTH.md`
-- [[configobject/UNC/20.15.2/FEIDBGCMD]] · FEIDBGCMD（FEI调试命令） — `FEIDBGCMD.md`
-- [[configobject/UNC/20.15.2/FEIEXTPORTPKTDEBUG]] · FEIEXTPORTPKTDEBUG（使能外联口报文调测功能） — `FEIEXTPORTPKTDEBUG.md`
-- [[configobject/UNC/20.15.2/FEIEXTPORTPKTDEBUGRULE]] · FEIEXTPORTPKTDEBUGRULE（外联口报文调测规则） — `FEIEXTPORTPKTDEBUGRULE.md`
-- [[configobject/UNC/20.15.2/FESOPERATIONSTC]] · FESOPERATIONSTC（FES操作统计信息） — `FESOPERATIONSTC.md`
-- [[configobject/UNC/20.15.2/FESSEARCHTABLE]] · FESSEARCHTABLE（模拟触发FES表项搜索） — `FESSEARCHTABLE.md`
-- [[configobject/UNC/20.15.2/FESVERIFICATION]] · FESVERIFICATION（FES对账信息） — `FESVERIFICATION.md`
-- [[configobject/UNC/20.15.2/FILE]] · FILE（文件传输） — `FILE.md`
-- [[configobject/UNC/20.15.2/FLOWCTRLLOG]] · FLOWCTRLLOG（流控日志信息） — `FLOWCTRLLOG.md`
-- [[configobject/UNC/20.15.2/FMTPKG]] · FMTPKG（同步格式引擎包） — `FMTPKG.md`
-- [[configobject/UNC/20.15.2/GENERATECDR]] · GENERATECDR（立即生成话单） — `GENERATECDR.md`
-- [[configobject/UNC/20.15.2/GENERATESDC]] · GENERATESDC（强制产生业务数据容器） — `GENERATESDC.md`
-- [[configobject/UNC/20.15.2/GENSYNCALLCFGNTF]] · GENSYNCALLCFGNTF（请求生成一个全量同步通知） — `GENSYNCALLCFGNTF.md`
-- [[configobject/UNC/20.15.2/GREKPLVSTAT]] · GREKPLVSTAT（GRE隧道KeepAlive报文计数） — `GREKPLVSTAT.md`
-- [[configobject/UNC/20.15.2/GTPUPATH]] · GTPUPATH（GTP-U路径） — `GTPUPATH.md`
-- [[configobject/UNC/20.15.2/GTSMSTATISTICS]] · GTSMSTATISTICS（GTSM统计） — `GTSMSTATISTICS.md`
-- [[configobject/UNC/20.15.2/HOSTRCVSTC]] · HOSTRCVSTC（接收方向协议报文统计计数） — `HOSTRCVSTC.md`
-- [[configobject/UNC/20.15.2/HOSTSNDSTC]] · HOSTSNDSTC（发送方向协议报文统计计数） — `HOSTSNDSTC.md`
-- [[configobject/UNC/20.15.2/HSSBPEXIT]] · HSSBPEXIT（用户退出HSS BYPASS状态） — `HSSBPEXIT.md`
-- [[configobject/UNC/20.15.2/HSSINFO]] · HSSINFO（HSS信息） — `HSSINFO.md`
-- [[configobject/UNC/20.15.2/HTTPLNK]] · HTTPLNK（HTTP链路信息） — `HTTPLNK.md`
-- [[configobject/UNC/20.15.2/HTTPPATH]] · HTTPPATH（测试HTTP链路） — `HTTPPATH.md`
-- [[configobject/UNC/20.15.2/HTTPSTATS]] · HTTPSTATS（HTTP统计信息） — `HTTPSTATS.md`
-- [[configobject/UNC/20.15.2/IFCOUNTERS]] · IFCOUNTERS（接口统计信息） — `IFCOUNTERS.md`
-- [[configobject/UNC/20.15.2/IKEALLSTATISTIC]] · IKEALLSTATISTIC（全部IKE统计信息） — `IKEALLSTATISTIC.md`
-- [[configobject/UNC/20.15.2/IKEERRHISTORY]] · IKEERRHISTORY（IKE历史信息清空状态） — `IKEERRHISTORY.md`
-- [[configobject/UNC/20.15.2/IKEIPSECSA]] · IKEIPSECSA（IPSEC安全联盟） — `IKEIPSECSA.md`
-- [[configobject/UNC/20.15.2/IKEIPSECSTAT]] · IKEIPSECSTAT（IKE IPsec统计信息） — `IKEIPSECSTAT.md`
-- [[configobject/UNC/20.15.2/IKESA]] · IKESA（IKE安全联盟） — `IKESA.md`
-- [[configobject/UNC/20.15.2/IPSECPATHMTU]] · IPSECPATHMTU（复位IPsec Path MTU） — `IPSECPATHMTU.md`
-- [[configobject/UNC/20.15.2/IPSECSTATISTIC]] · IPSECSTATISTIC（IPsec统计信息） — `IPSECSTATISTIC.md`
-- [[configobject/UNC/20.15.2/IPSTATISTIC]] · IPSTATISTIC（IP报文统计） — `IPSTATISTIC.md`
-- [[configobject/UNC/20.15.2/IPV6STAT]] · IPV6STAT（IPv6统计计数） — `IPV6STAT.md`
-- [[configobject/UNC/20.15.2/IU]] · IU（复位Iu接口） — `IU.md`
-- [[configobject/UNC/20.15.2/LBPLYAGING]] · LBPLYAGING（CSLB表项老化功能） — `LBPLYAGING.md`
-- [[configobject/UNC/20.15.2/LBSRVADDR]] · LBSRVADDR（CSLB向VNRS同步服务实例地址） — `LBSRVADDR.md`
-- [[configobject/UNC/20.15.2/LDPSESSION]] · LDPSESSION（LDP会话） — `LDPSESSION.md`
-- [[configobject/UNC/20.15.2/LICCTL]] · LICCTL（紧急License） — `LICCTL.md`
-- [[configobject/UNC/20.15.2/LICENSE]] · LICENSE（失效License） — `LICENSE.md`
-- [[configobject/UNC/20.15.2/LINKMIGRATION]] · LINKMIGRATION（一次链路迁移操作） — `LINKMIGRATION.md`
-- [[configobject/UNC/20.15.2/LOCATEREPORT]] · LOCATEREPORT（位置上报） — `LOCATEREPORT.md`
-- [[configobject/UNC/20.15.2/LOG]] · LOG（收集日志信息） — `LOG.md`
-- [[configobject/UNC/20.15.2/LOGAGENTSTC]] · LOGAGENTSTC（日志代理丢弃的日志信息） — `LOGAGENTSTC.md`
-- [[configobject/UNC/20.15.2/LOGFILE]] · LOGFILE（保存黑匣子的数据到日志文件中） — `LOGFILE.md`
-- [[configobject/UNC/20.15.2/LSPVSTATISTICS]] · LSPVSTATISTICS（LSPV报文统计计数） — `LSPVSTATISTICS.md`
-- [[configobject/UNC/20.15.2/LUASCRIPT]] · LUASCRIPT（Lua脚本） — `LUASCRIPT.md`
-- [[configobject/UNC/20.15.2/MASALMCHECK]] · MASALMCHECK（5G告警核查） — `MASALMCHECK.md`
-- [[configobject/UNC/20.15.2/MCASTPAEGROUP]] · MCASTPAEGROUP（组播组引流信息） — `MCASTPAEGROUP.md`
-- [[configobject/UNC/20.15.2/MEASRST]] · MEASRST（测量结果文件） — `MEASRST.md`
-- [[configobject/UNC/20.15.2/MESYS]] · MESYS（复位网元服务） — `MESYS.md`
-- [[configobject/UNC/20.15.2/MGMDCTLMSG]] · MGMDCTLMSG（IGMP报文统计计数） — `MGMDCTLMSG.md`
-- [[configobject/UNC/20.15.2/MGMDGROUP]] · MGMDGROUP（IGMP加入组信息） — `MGMDGROUP.md`
-- [[configobject/UNC/20.15.2/MIGRATE]] · MIGRATE（异构迁移查询） — `MIGRATE.md`
-- [[configobject/UNC/20.15.2/MMECFG]] · MMECFG（发送MME配置信息） — `MMECFG.md`
-- [[configobject/UNC/20.15.2/MML]] · MML（MML文件） — `MML.md`
-- [[configobject/UNC/20.15.2/MMLTRAN]] · MMLTRAN（取消配置） — `MMLTRAN.md`
-- [[configobject/UNC/20.15.2/MPACCOUNTERV4]] · MPACCOUNTERV4（IPv4 MPAC策略匹配统计计数） — `MPACCOUNTERV4.md`
-- [[configobject/UNC/20.15.2/MPACCOUNTERV6]] · MPACCOUNTERV6（IPv6 MPAC策略匹配统计计数） — `MPACCOUNTERV6.md`
-- [[configobject/UNC/20.15.2/MSPROCESS]] · MSPROCESS（复位微服务进程） — `MSPROCESS.md`
-- [[configobject/UNC/20.15.2/MSSFTD]] · MSSFTD（微服务软件调测） — `MSSFTD.md`
-- [[configobject/UNC/20.15.2/NBOFFLOADBYMME]] · NBOFFLOADBYMME（NB-IoT用户的MME迁移任务） — `NBOFFLOADBYMME.md`
-- [[configobject/UNC/20.15.2/NCARSTSSNSTATS]] · NCARSTSSNSTATS（NETCONF会话统计信息） — `NCARSTSSNSTATS.md`
-- [[configobject/UNC/20.15.2/NDSECURITYNONCE]] · NDSECURITYNONCE（ND安全随机数） — `NDSECURITYNONCE.md`
-- [[configobject/UNC/20.15.2/NDSECURITYSTATISTICS]] · NDSECURITYSTATISTICS（ND安全统计） — `NDSECURITYSTATISTICS.md`
-- [[configobject/UNC/20.15.2/NDSECURITYTIMESTAMP]] · NDSECURITYTIMESTAMP（ND安全时间戳） — `NDSECURITYTIMESTAMP.md`
-- [[configobject/UNC/20.15.2/NEFMSGSEND]] · NEFMSGSEND（向NEF发送消息） — `NEFMSGSEND.md`
-- [[configobject/UNC/20.15.2/NFCACHE]] · NFCACHE（NF缓存信息） — `NFCACHE.md`
-- [[configobject/UNC/20.15.2/NFCACHESYNC]] · NFCACHESYNC（操作远端NF缓存同步） — `NFCACHESYNC.md`
-- [[configobject/UNC/20.15.2/NFDISC]] · NFDISC（测试服务发现） — `NFDISC.md`
-- [[configobject/UNC/20.15.2/NFDREXE]] · NFDREXE（人工执行容灾倒换） — `NFDREXE.md`
-- [[configobject/UNC/20.15.2/NFDRSWOVER]] · NFDRSWOVER（人工倒回命令） — `NFDRSWOVER.md`
-- [[configobject/UNC/20.15.2/NFNOTIFY]] · NFNOTIFY（测试NRF通知） — `NFNOTIFY.md`
-- [[configobject/UNC/20.15.2/NFOFFLINE]] · NFOFFLINE（NF下线） — `NFOFFLINE.md`
-- [[configobject/UNC/20.15.2/NFONLINE]] · NFONLINE（NF上线） — `NFONLINE.md`
-- [[configobject/UNC/20.15.2/NFPROFILECHECK]] · NFPROFILECHECK（测试NF和NRF上的网元信息是否一致） — `NFPROFILECHECK.md`
-- [[configobject/UNC/20.15.2/NFTOKEN]] · NFTOKEN（测试Token分配） — `NFTOKEN.md`
-- [[configobject/UNC/20.15.2/NFVIUPDRECV]] · NFVIUPDRECV（NFVI分批升级恢复） — `NFVIUPDRECV.md`
-- [[configobject/UNC/20.15.2/NGALMCHECK]] · NGALMCHECK（5G告警核查） — `NGALMCHECK.md`
-- [[configobject/UNC/20.15.2/NGDNSC]] · NGDNSC（DNS缓存） — `NGDNSC.md`
-- [[configobject/UNC/20.15.2/NGDNSITF]] · NGDNSITF（DNS客户端查询接口） — `NGDNSITF.md`
-- [[configobject/UNC/20.15.2/NGLANGRP]] · NGLANGRP（测试5G LAN组会话状态） — `NGLANGRP.md`
-- [[configobject/UNC/20.15.2/NGRANCTX]] · NGRANCTX（NG-RAN上下文） — `NGRANCTX.md`
-- [[configobject/UNC/20.15.2/NGRANNEIBS]] · NGRANNEIBS（NG-RAN基站邻接关系） — `NGRANNEIBS.md`
-- [[configobject/UNC/20.15.2/NGREQMSGCACHE]] · NGREQMSGCACHE（清空DNS客户端的缓存消息） — `NGREQMSGCACHE.md`
-- [[configobject/UNC/20.15.2/NGTANEIBS]] · NGTANEIBS（TA邻接关系） — `NGTANEIBS.md`
-- [[configobject/UNC/20.15.2/NGUSRBATCHDEREG]] · NGUSRBATCHDEREG（批量去注册任务） — `NGUSRBATCHDEREG.md`
-- [[configobject/UNC/20.15.2/NODE]] · NODE（节点信息） — `NODE.md`
-- [[configobject/UNC/20.15.2/NODEBATCH]] · NODEBATCH（节点批量复位） — `NODEBATCH.md`
-- [[configobject/UNC/20.15.2/NODEINFO]] · NODEINFO（节点信息） — `NODEINFO.md`
-- [[configobject/UNC/20.15.2/NOSBASEPING]] · NOSBASEPING（NOS Base平面网络Ping功能） — `NOSBASEPING.md`
-- [[configobject/UNC/20.15.2/NOSHETEROMODE]] · NOSHETEROMODE（NOS异构模式） — `NOSHETEROMODE.md`
-- [[configobject/UNC/20.15.2/NRFMANUSENDNTY]] · NRFMANUSENDNTY（操作手动发送订阅通知） — `NRFMANUSENDNTY.md`
-- [[configobject/UNC/20.15.2/NRFNFATTRVRY]] · NRFNFATTRVRY（操作执行NF属性冲突核验） — `NRFNFATTRVRY.md`
-- [[configobject/UNC/20.15.2/NRFNFSWTNRF]] · NRFNFSWTNRF（操作指示NF切换NRF） — `NRFNFSWTNRF.md`
-- [[configobject/UNC/20.15.2/NRFREFRESHNF]] · NRFREFRESHNF（操作执行网元信息刷新） — `NRFREFRESHNF.md`
-- [[configobject/UNC/20.15.2/NSAVLINFO]] · NSAVLINFO（操作网络切片可用性信息） — `NSAVLINFO.md`
-- [[configobject/UNC/20.15.2/NSSFIPSTAT]] · NSSFIPSTAT（NSSF的局向内统概要数据） — `NSSFIPSTAT.md`
-- [[configobject/UNC/20.15.2/NSSFMSGSTAT]] · NSSFMSGSTAT（NSSF收发消息内部统计） — `NSSFMSGSTAT.md`
-- [[configobject/UNC/20.15.2/OFFLOAD]] · OFFLOAD（迁移任务） — `OFFLOAD.md`
-- [[configobject/UNC/20.15.2/OFFLOADAMF]] · OFFLOADAMF（AMF迁移任务） — `OFFLOADAMF.md`
-- [[configobject/UNC/20.15.2/OFFLOADBYBSC]] · OFFLOADBYBSC（BSC迁移任务） — `OFFLOADBYBSC.md`
-- [[configobject/UNC/20.15.2/OFFLOADBYENODEB]] · OFFLOADBYENODEB（eNodeB迁移任务） — `OFFLOADBYENODEB.md`
-- [[configobject/UNC/20.15.2/OFFLOADBYMME]] · OFFLOADBYMME（MME迁移任务） — `OFFLOADBYMME.md`
-- [[configobject/UNC/20.15.2/OFFLOADBYRNC]] · OFFLOADBYRNC（RNC迁移任务） — `OFFLOADBYRNC.md`
-- [[configobject/UNC/20.15.2/OFFLOADBYSGSN]] · OFFLOADBYSGSN（SGSN迁移任务） — `OFFLOADBYSGSN.md`
-- [[configobject/UNC/20.15.2/OFFLOADBYTA]] · OFFLOADBYTA（TA迁移任务） — `OFFLOADBYTA.md`
-- [[configobject/UNC/20.15.2/OFFLOADUDM]] · OFFLOADUDM（UDM注册上下文的迁移） — `OFFLOADUDM.md`
-- [[configobject/UNC/20.15.2/OMMQ]] · OMMQ（清理OMMQ数据） — `OMMQ.md`
-- [[configobject/UNC/20.15.2/OMU]] · OMU（倒换主备操作维护单元） — `OMU.md`
-- [[configobject/UNC/20.15.2/ONECLICKDEPLOY]] · ONECLICKDEPLOY（操作服务一键式部署） — `ONECLICKDEPLOY.md`
-- [[configobject/UNC/20.15.2/OVERLOAD]] · OVERLOAD（过载控制记录信息） — `OVERLOAD.md`
-- [[configobject/UNC/20.15.2/P2PCOMTASK]] · P2PCOMTASK（SDR点对点通信质量检测任务） — `P2PCOMTASK.md`
-- [[configobject/UNC/20.15.2/PAECHANNEL]] · PAECHANNEL（PAE通道统计信息） — `PAECHANNEL.md`
-- [[configobject/UNC/20.15.2/PAEDISCARD]] · PAEDISCARD（PAE丢包统计信息） — `PAEDISCARD.md`
-- [[configobject/UNC/20.15.2/PAEFABDETECT]] · PAEFABDETECT（Fabric链路探测任务） — `PAEFABDETECT.md`
-- [[configobject/UNC/20.15.2/PAEPORT]] · PAEPORT（PAE端口统计信息） — `PAEPORT.md`
-- [[configobject/UNC/20.15.2/PAEQUEUE]] · PAEQUEUE（PAE队列统计信息） — `PAEQUEUE.md`
-- [[configobject/UNC/20.15.2/PAEREASSEMBLEINFO]] · PAEREASSEMBLEINFO（PAE分片重组统计信息） — `PAEREASSEMBLEINFO.md`
-- [[configobject/UNC/20.15.2/PCSCF]] · PCSCF（锁定P-CSCF地址配置） — `PCSCF.md`
-- [[configobject/UNC/20.15.2/PFCPSESSION]] · PFCPSESSION（迁移PFCP会话） — `PFCPSESSION.md`
-- [[configobject/UNC/20.15.2/PIMCTLMSG]] · PIMCTLMSG（PIM实例报文统计计数） — `PIMCTLMSG.md`
-- [[configobject/UNC/20.15.2/PIMIFCTLMSG]] · PIMIFCTLMSG（PIM接口报文统计计数） — `PIMIFCTLMSG.md`
-- [[configobject/UNC/20.15.2/PIMROUTE]] · PIMROUTE（PIM协议表项） — `PIMROUTE.md`
-- [[configobject/UNC/20.15.2/PLCYCHECK]] · PLCYCHECK（创建策略核查任务） — `PLCYCHECK.md`
-- [[configobject/UNC/20.15.2/PLTMAINTAIN]] · PLTMAINTAIN（uniplt调试命令） — `PLTMAINTAIN.md`
-- [[configobject/UNC/20.15.2/POD]] · POD（POD停止） — `POD.md`
-- [[configobject/UNC/20.15.2/PODMIGRATE]] · PODMIGRATE（操作节点扩缩容与Pod迁移任务） — `PODMIGRATE.md`
-- [[configobject/UNC/20.15.2/PREOCCUPYRES]] · PREOCCUPYRES（预占RU资源） — `PREOCCUPYRES.md`
-- [[configobject/UNC/20.15.2/PROCESS]] · PROCESS（复位进程） — `PROCESS.md`
-- [[configobject/UNC/20.15.2/PTPBVC]] · PTPBVC（复位小区） — `PTPBVC.md`
-- [[configobject/UNC/20.15.2/RAWIPSTATISTIC]] · RAWIPSTATISTIC（RawIP报文统计） — `RAWIPSTATISTIC.md`
-- [[configobject/UNC/20.15.2/RAWLINKSTATISTIC]] · RAWLINKSTATISTIC（Raw-link报文统计） — `RAWLINKSTATISTIC.md`
-- [[configobject/UNC/20.15.2/RCISOLATION]] · RCISOLATION（人工恢复已隔离的Pod） — `RCISOLATION.md`
-- [[configobject/UNC/20.15.2/RDSSVRCOUNTER]] · RDSSVRCOUNTER（RADIUS相关消息发送接收个数的统计信息） — `RDSSVRCOUNTER.md`
-- [[configobject/UNC/20.15.2/RECYCLE]] · RECYCLE（回收地址） — `RECYCLE.md`
-- [[configobject/UNC/20.15.2/REGNF]] · REGNF（禁止NF实例） — `REGNF.md`
-- [[configobject/UNC/20.15.2/RESELECTAUSF]] · RESELECTAUSF（重选AUSF） — `RESELECTAUSF.md`
-- [[configobject/UNC/20.15.2/RESETINFO]] · RESETINFO（资源单元复位信息） — `RESETINFO.md`
-- [[configobject/UNC/20.15.2/RESNOSBASEPING]] · RESNOSBASEPING（NOS Base平面网络Ping功能） — `RESNOSBASEPING.md`
-- [[configobject/UNC/20.15.2/RESOMU]] · RESOMU（倒换主备操作维护单元） — `RESOMU.md`
-- [[configobject/UNC/20.15.2/RESVNFC]] · RESVNFC（复位VNFC） — `RESVNFC.md`
-- [[configobject/UNC/20.15.2/RU]] · RU（解闭CSDB RU） — `RU.md`
-- [[configobject/UNC/20.15.2/RUGROUP]] · RUGROUP（资源单元组成员信息） — `RUGROUP.md`
-- [[configobject/UNC/20.15.2/RUNNINGCONFIG]] · RUNNINGCONFIG（保存运行配置数据） — `RUNNINGCONFIG.md`
-- [[configobject/UNC/20.15.2/S1BALANCE]] · S1BALANCE（S1接口均衡操作） — `S1BALANCE.md`
-- [[configobject/UNC/20.15.2/S1MESSAGE]] · S1MESSAGE（发送模拟S1AP错误消息） — `S1MESSAGE.md`
-- [[configobject/UNC/20.15.2/SBILINKFQDNIP]] · SBILINKFQDNIP（检查服务化接口链路集FQDN的IP地址） — `SBILINKFQDNIP.md`
-- [[configobject/UNC/20.15.2/SBISTATICLINK]] · SBISTATICLINK（静态链路） — `SBISTATICLINK.md`
-- [[configobject/UNC/20.15.2/SCTPAS]] · SCTPAS（SCTP统计信息） — `SCTPAS.md`
-- [[configobject/UNC/20.15.2/SDUPPATH]] · SDUPPATH（测试SDUP路径） — `SDUPPATH.md`
-- [[configobject/UNC/20.15.2/SECARPSGPKTSTC]] · SECARPSGPKTSTC（ARP双向分离报文统计） — `SECARPSGPKTSTC.md`
-- [[configobject/UNC/20.15.2/SECCARSTAT]] · SECCARSTAT（安全CAR功能丢弃上送CPU报文的详细信息） — `SECCARSTAT.md`
-- [[configobject/UNC/20.15.2/SECIPURPFSTAT]] · SECIPURPFSTAT（URPF丢弃报文计数信息） — `SECIPURPFSTAT.md`
-- [[configobject/UNC/20.15.2/SEGFILE]] · SEGFILE（号段文件） — `SEGFILE.md`
-- [[configobject/UNC/20.15.2/SEGPROCESS]] · SEGPROCESS（复位NRF百万号段功能） — `SEGPROCESS.md`
-- [[configobject/UNC/20.15.2/SERRESBALANCE]] · SERRESBALANCE（业务资源均衡操作） — `SERRESBALANCE.md`
-- [[configobject/UNC/20.15.2/SERVICE]] · SERVICE（复位业务） — `SERVICE.md`
-- [[configobject/UNC/20.15.2/SESSIONACT]] · SESSIONACT（新创建会话或专载的锁定状态） — `SESSIONACT.md`
-- [[configobject/UNC/20.15.2/SESSSTATIC]] · SESSSTATIC（会话消息统计信息） — `SESSSTATIC.md`
-- [[configobject/UNC/20.15.2/SETPRTGRPSPEC]] · SETPRTGRPSPEC（操作设置保护组规格值） — `SETPRTGRPSPEC.md`
-- [[configobject/UNC/20.15.2/SFEFASTPINGPKTSTC]] · SFEFASTPINGPKTSTC（SFE Fast-ping报文统计信息） — `SFEFASTPINGPKTSTC.md`
-- [[configobject/UNC/20.15.2/SFEIFPKTSTC]] · SFEIFPKTSTC（SFE接口报文统计） — `SFEIFPKTSTC.md`
-- [[configobject/UNC/20.15.2/SFEMSGSTC]] · SFEMSGSTC（FEI消息统计） — `SFEMSGSTC.md`
-- [[configobject/UNC/20.15.2/SFEPATHSTC]] · SFEPATHSTC（FEI Path统计） — `SFEPATHSTC.md`
-- [[configobject/UNC/20.15.2/SFEPKTDBG]] · SFEPKTDBG（报文调测过滤） — `SFEPKTDBG.md`
-- [[configobject/UNC/20.15.2/SFEPKTSTATS]] · SFEPKTSTATS（SFE统计信息） — `SFEPKTSTATS.md`
-- [[configobject/UNC/20.15.2/SFESWMSGSTC]] · SFESWMSGSTC（FEISW消息统计） — `SFESWMSGSTC.md`
-- [[configobject/UNC/20.15.2/SFESWPATHSTC]] · SFESWPATHSTC（FEISW Path统计） — `SFESWPATHSTC.md`
-- [[configobject/UNC/20.15.2/SFETRACESTC]] · SFETRACESTC（SFE跟踪报文统计） — `SFETRACESTC.md`
-- [[configobject/UNC/20.15.2/SFTD]] · SFTD（软调操作） — `SFTD.md`
-- [[configobject/UNC/20.15.2/SFTDMCR]] · SFTDMCR（软调操作） — `SFTDMCR.md`
-- [[configobject/UNC/20.15.2/SIGBVC]] · SIGBVC（复位SigBvc） — `SIGBVC.md`
-- [[configobject/UNC/20.15.2/SLAVERU]] · SLAVERU（迁移热备RU） — `SLAVERU.md`
-- [[configobject/UNC/20.15.2/SMARTFCDURA]] · SMARTFCDURA（智能流控开启时长） — `SMARTFCDURA.md`
-- [[configobject/UNC/20.15.2/SMFCACHE]] · SMFCACHE（缓存的SMF与TAI映射关系） — `SMFCACHE.md`
-- [[configobject/UNC/20.15.2/SMFEXITUDMBYPASS]] · SMFEXITUDMBYPASS（会话退出UDM Bypass状态任务） — `SMFEXITUDMBYPASS.md`
-- [[configobject/UNC/20.15.2/SMFMBSSESSION]] · SMFMBSSESSION（MB-SMF组播广播会话） — `SMFMBSSESSION.md`
-- [[configobject/UNC/20.15.2/SMSFEXITUDMBYPASS]] · SMSFEXITUDMBYPASS（用户退出UDM Bypass任务） — `SMSFEXITUDMBYPASS.md`
-- [[configobject/UNC/20.15.2/SQOSPOLICYSTC]] · SQOSPOLICYSTC（查看端口流量策略报文统计） — `SQOSPOLICYSTC.md`
-- [[configobject/UNC/20.15.2/SRVRECFG]] · SRVRECFG（重配置业务数据） — `SRVRECFG.md`
-- [[configobject/UNC/20.15.2/STCNFPROFILE]] · STCNFPROFILE（手动注册的NFProfile） — `STCNFPROFILE.md`
-- [[configobject/UNC/20.15.2/SYNCFILE]] · SYNCFILE（生成对账文件） — `SYNCFILE.md`
-- [[configobject/UNC/20.15.2/TCPSTATISTIC]] · TCPSTATISTIC（TCP报文统计） — `TCPSTATISTIC.md`
-- [[configobject/UNC/20.15.2/TLBRELBLINK]] · TLBRELBLINK（触发HTTP服务端TCP链路重均衡检测及调整） — `TLBRELBLINK.md`
-- [[configobject/UNC/20.15.2/TMGI]] · TMGI — `TMGI.md`
-- [[configobject/UNC/20.15.2/TRANSCOMTASK]] · TRANSCOMTASK（SDR进程间透明通信检测任务） — `TRANSCOMTASK.md`
-- [[configobject/UNC/20.15.2/TRUNKACTPORT]] · TRUNKACTPORT（切换Trunk激活口） — `TRUNKACTPORT.md`
-- [[configobject/UNC/20.15.2/TTYUSER]] · TTYUSER（用户信息） — `TTYUSER.md`
-- [[configobject/UNC/20.15.2/UAMGTPCPATH]] · UAMGTPCPATH（测试UAM GTP-C路径状态） — `UAMGTPCPATH.md`
-- [[configobject/UNC/20.15.2/UDPSTATISTIC]] · UDPSTATISTIC（UDP报文统计） — `UDPSTATISTIC.md`
-- [[configobject/UNC/20.15.2/UFPLATENCYSTAT]] · UFPLATENCYSTAT（UFP逐包转发时延度量开关） — `UFPLATENCYSTAT.md`
-- [[configobject/UNC/20.15.2/UPCCTX]] · UPCCTX（用户面控制上下文） — `UPCCTX.md`
-- [[configobject/UNC/20.15.2/UPDPRECHK]] · UPDPRECHK（升级前检查） — `UPDPRECHK.md`
-- [[configobject/UNC/20.15.2/UPFADDR]] · UPFADDR（解锁UPF地址） — `UPFADDR.md`
-- [[configobject/UNC/20.15.2/UPFAULTCACHE]] · UPFAULTCACHE（用户面故障缓存） — `UPFAULTCACHE.md`
-- [[configobject/UNC/20.15.2/UPGTSK]] · UPGTSK（升级/补丁任务） — `UPGTSK.md`
-- [[configobject/UNC/20.15.2/USEROFFLOAD]] · USEROFFLOAD（用户迁移） — `USEROFFLOAD.md`
-- [[configobject/UNC/20.15.2/VERIFICATION]] · VERIFICATION（一次FEI与FES之间的对账操作） — `VERIFICATION.md`
-- [[configobject/UNC/20.15.2/VHACHGPEER]] · VHACHGPEER（转换vHA ETCD集群中节点间通讯地址的方式） — `VHACHGPEER.md`
-- [[configobject/UNC/20.15.2/VHASTATUS]] · VHASTATUS（更改vHA ETCD节点进程状态） — `VHASTATUS.md`
-- [[configobject/UNC/20.15.2/VLRFAULTEXIT]] · VLRFAULTEXIT（用户退出VLR故障增强状态） — `VLRFAULTEXIT.md`
-- [[configobject/UNC/20.15.2/VLROFFLOAD]] · VLROFFLOAD（VLR迁移任务） — `VLROFFLOAD.md`
-- [[configobject/UNC/20.15.2/VLROFFLOADBYLAI]] · VLROFFLOADBYLAI（IMSI分离4G用户任务） — `VLROFFLOADBYLAI.md`
-- [[configobject/UNC/20.15.2/VLRRESET]] · VLRRESET（触发VLR向MME发送RESET消息） — `VLRRESET.md`
-- [[configobject/UNC/20.15.2/VNFC]] · VNFC（重启系统） — `VNFC.md`
-- [[configobject/UNC/20.15.2/VNODE]] · VNODE（虚拟节点信息） — `VNODE.md`
+- [AAA（测试AAA服务器）](configobject/UNC/20.15.2/AAA.md)
+- [AAADHCPPATHSTAT（复位RADIUS或DHCP链路状态）](configobject/UNC/20.15.2/AAADHCPPATHSTAT.md)
+- [ACSCLIENTDBG（ACS客户端调试操作）](configobject/UNC/20.15.2/ACSCLIENTDBG.md)
+- [ACSDATA（ACS管理服务数据）](configobject/UNC/20.15.2/ACSDATA.md)
+- [ACSFILE（文件传输）](configobject/UNC/20.15.2/ACSFILE.md)
+- [ACSPEERCFG（或停止ACS与远端设备的配置同步）](configobject/UNC/20.15.2/ACSPEERCFG.md)
+- [ACSUPDPRECHK（升级前检查）](configobject/UNC/20.15.2/ACSUPDPRECHK.md)
+- [ACTIVEALARM（活动告警）](configobject/UNC/20.15.2/ACTIVEALARM.md)
+- [ADDRIP（地址缓存）](configobject/UNC/20.15.2/ADDRIP.md)
+- [ALLLDPSESSIONS（重启所有LDP会话）](configobject/UNC/20.15.2/ALLLDPSESSIONS.md)
+- [ALLOWPLCY（提交允许访问策略配置）](configobject/UNC/20.15.2/ALLOWPLCY.md)
+- [AMFCAP（操作AMF相对容量）](configobject/UNC/20.15.2/AMFCAP.md)
+- [AMFEXITUDMBYPASS（用户退出UDM Bypass状态任务）](configobject/UNC/20.15.2/AMFEXITUDMBYPASS.md)
+- [AMFMBSSESSION（AMF组播广播会话）](configobject/UNC/20.15.2/AMFMBSSESSION.md)
+- [AN（复位AN）](configobject/UNC/20.15.2/AN.md)
+- [APNFORBYPASS（APN锁定状态）](configobject/UNC/20.15.2/APNFORBYPASS.md)
+- [APPDATA（同步APP配置数据）](configobject/UNC/20.15.2/APPDATA.md)
+- [ARPBYIF（根据接口清除ARP动态表项）](configobject/UNC/20.15.2/ARPBYIF.md)
+- [ARPBYTYPE（根据ARP表项类型清除ARP表项）](configobject/UNC/20.15.2/ARPBYTYPE.md)
+- [ARPDROPSTC（ARP丢弃报文统计）](configobject/UNC/20.15.2/ARPDROPSTC.md)
+- [ARPDYNBLACKLIST（ARP动态黑名单）](configobject/UNC/20.15.2/ARPDYNBLACKLIST.md)
+- [ASNSYNC（触发ASN同步）](configobject/UNC/20.15.2/ASNSYNC.md)
+- [ATTACKDEFENDSTC（攻击防范统计信息）](configobject/UNC/20.15.2/ATTACKDEFENDSTC.md)
+- [BACKUPAMFCACHE（缓存的备用AMF信息）](configobject/UNC/20.15.2/BACKUPAMFCACHE.md)
+- [BFDSESSSTAS（BFD会话统计信息）](configobject/UNC/20.15.2/BFDSESSSTAS.md)
+- [BGPALL（BGP全部信息）](configobject/UNC/20.15.2/BGPALL.md)
+- [BGPIPV6PEER（BGP IPv6对等体）](configobject/UNC/20.15.2/BGPIPV6PEER.md)
+- [BGPPEERTYPE（对等体类型）](configobject/UNC/20.15.2/BGPPEERTYPE.md)
+- [BLK（CSDB检查闭塞RU）](configobject/UNC/20.15.2/BLK.md)
+- [BYPASSMODE（节点BYPASS模式）](configobject/UNC/20.15.2/BYPASSMODE.md)
+- [CDRRECEIVE（接收话单）](configobject/UNC/20.15.2/CDRRECEIVE.md)
+- [CELLSERVICE（微服务主备实例倒换）](configobject/UNC/20.15.2/CELLSERVICE.md)
+- [CGFTPPWD（更新CG FTP密码）](configobject/UNC/20.15.2/CGFTPPWD.md)
+- [CHARGECONFLICT（计费配置冲突）](configobject/UNC/20.15.2/CHARGECONFLICT.md)
+- [CHGFILEDIR（切换话单文件的工作目录）](configobject/UNC/20.15.2/CHGFILEDIR.md)
+- [CMFDATA（强制推送集群管理数据）](configobject/UNC/20.15.2/CMFDATA.md)
+- [CNTRLTRCTASK（跨层统一联动跟踪任务）](configobject/UNC/20.15.2/CNTRLTRCTASK.md)
+- [COMPSTATUS（收集并推送RU的组件状态）](configobject/UNC/20.15.2/COMPSTATUS.md)
+- [COMTASK（SDR通信质量检测任务）](configobject/UNC/20.15.2/COMTASK.md)
+- [CONFIG（锁定配置）](configobject/UNC/20.15.2/CONFIG.md)
+- [CONFIGXML（XML文件配置到数据库）](configobject/UNC/20.15.2/CONFIGXML.md)
+- [CONSSTATIC（消费者统计信息）](configobject/UNC/20.15.2/CONSSTATIC.md)
+- [CSCFGREBUILD（对特定配置的缓存重建）](configobject/UNC/20.15.2/CSCFGREBUILD.md)
+- [DBGCLICMDPRXY（通过命令代理执行命令行调试命令）](configobject/UNC/20.15.2/DBGCLICMDPRXY.md)
+- [DBGCMDPRXY（通过命令代理执行调试命令）](configobject/UNC/20.15.2/DBGCMDPRXY.md)
+- [DBGDATA（调试信息）](configobject/UNC/20.15.2/DBGDATA.md)
+- [DBINSTANCE（复位CSDB子实例）](configobject/UNC/20.15.2/DBINSTANCE.md)
+- [DBSFTD（发送CSDB的软件调试命令）](configobject/UNC/20.15.2/DBSFTD.md)
+- [DCNOFFLOAD（DCN迁移任务）](configobject/UNC/20.15.2/DCNOFFLOAD.md)
+- [DDNTIMEOUTCNT（DDN超时延时删除功能运行信息记录）](configobject/UNC/20.15.2/DDNTIMEOUTCNT.md)
+- [DEVVERIFICATION（触发设备对账）](configobject/UNC/20.15.2/DEVVERIFICATION.md)
+- [DHCP6CLIENTSTC（DHCPv6客户端报文统计）](configobject/UNC/20.15.2/DHCP6CLIENTSTC.md)
+- [DHCPCLIENTSTC（DHCPv4客户端报文统计）](configobject/UNC/20.15.2/DHCPCLIENTSTC.md)
+- [DIAMDICT（Diameter字典）](configobject/UNC/20.15.2/DIAMDICT.md)
+- [DNSC（DNS缓存）](configobject/UNC/20.15.2/DNSC.md)
+- [DNSSTATISTICS（DNS报文统计计数）](configobject/UNC/20.15.2/DNSSTATISTICS.md)
+- [DPSCALEUP（硬盘分区扩容进展）](configobject/UNC/20.15.2/DPSCALEUP.md)
+- [DR（容灾实例主备倒换）](configobject/UNC/20.15.2/DR.md)
+- [DSPPRTGRPSPEC（操作显示保护组规格值）](configobject/UNC/20.15.2/DSPPRTGRPSPEC.md)
+- [DYNAMICOCS（动态OCS）](configobject/UNC/20.15.2/DYNAMICOCS.md)
+- [DYNAMICPCRF（动态PCRF）](configobject/UNC/20.15.2/DYNAMICPCRF.md)
+- [DYNNRFSTAT（内部统计信息）](configobject/UNC/20.15.2/DYNNRFSTAT.md)
+- [ENBATTR（eNodeB属性）](configobject/UNC/20.15.2/ENBATTR.md)
+- [ENBNEIBS（eNodeB邻接关系）](configobject/UNC/20.15.2/ENBNEIBS.md)
+- [ENBTASYN（eNodeB跟踪区信息同步任务）](configobject/UNC/20.15.2/ENBTASYN.md)
+- [ESN（设备序列号）](configobject/UNC/20.15.2/ESN.md)
+- [EXPFILE（上传导出文件）](configobject/UNC/20.15.2/EXPFILE.md)
+- [FABRICOAMSTAT（OAM统计信息）](configobject/UNC/20.15.2/FABRICOAMSTAT.md)
+- [FEATUREDISABLE（特性下线）](configobject/UNC/20.15.2/FEATUREDISABLE.md)
+- [FEATUREENABLE（特性使能）](configobject/UNC/20.15.2/FEATUREENABLE.md)
+- [FEICOM_SMOOTH（一次FEI与FES之间的数据平滑）](configobject/UNC/20.15.2/FEICOM_SMOOTH.md)
+- [FEIDBGCMD（FEI调试命令）](configobject/UNC/20.15.2/FEIDBGCMD.md)
+- [FEIEXTPORTPKTDEBUG（使能外联口报文调测功能）](configobject/UNC/20.15.2/FEIEXTPORTPKTDEBUG.md)
+- [FEIEXTPORTPKTDEBUGRULE（外联口报文调测规则）](configobject/UNC/20.15.2/FEIEXTPORTPKTDEBUGRULE.md)
+- [FESOPERATIONSTC（FES操作统计信息）](configobject/UNC/20.15.2/FESOPERATIONSTC.md)
+- [FESSEARCHTABLE（模拟触发FES表项搜索）](configobject/UNC/20.15.2/FESSEARCHTABLE.md)
+- [FESVERIFICATION（FES对账信息）](configobject/UNC/20.15.2/FESVERIFICATION.md)
+- [FILE（文件传输）](configobject/UNC/20.15.2/FILE.md)
+- [FLOWCTRLLOG（流控日志信息）](configobject/UNC/20.15.2/FLOWCTRLLOG.md)
+- [FMTPKG（同步格式引擎包）](configobject/UNC/20.15.2/FMTPKG.md)
+- [GENERATECDR（立即生成话单）](configobject/UNC/20.15.2/GENERATECDR.md)
+- [GENERATESDC（强制产生业务数据容器）](configobject/UNC/20.15.2/GENERATESDC.md)
+- [GENSYNCALLCFGNTF（请求生成一个全量同步通知）](configobject/UNC/20.15.2/GENSYNCALLCFGNTF.md)
+- [GREKPLVSTAT（GRE隧道KeepAlive报文计数）](configobject/UNC/20.15.2/GREKPLVSTAT.md)
+- [GTPUPATH（GTP-U路径）](configobject/UNC/20.15.2/GTPUPATH.md)
+- [GTSMSTATISTICS（GTSM统计）](configobject/UNC/20.15.2/GTSMSTATISTICS.md)
+- [HOSTRCVSTC（接收方向协议报文统计计数）](configobject/UNC/20.15.2/HOSTRCVSTC.md)
+- [HOSTSNDSTC（发送方向协议报文统计计数）](configobject/UNC/20.15.2/HOSTSNDSTC.md)
+- [HSSBPEXIT（用户退出HSS BYPASS状态）](configobject/UNC/20.15.2/HSSBPEXIT.md)
+- [HSSINFO（HSS信息）](configobject/UNC/20.15.2/HSSINFO.md)
+- [HTTPLNK（HTTP链路信息）](configobject/UNC/20.15.2/HTTPLNK.md)
+- [HTTPPATH（测试HTTP链路）](configobject/UNC/20.15.2/HTTPPATH.md)
+- [HTTPSTATS（HTTP统计信息）](configobject/UNC/20.15.2/HTTPSTATS.md)
+- [IFCOUNTERS（接口统计信息）](configobject/UNC/20.15.2/IFCOUNTERS.md)
+- [IKEALLSTATISTIC（全部IKE统计信息）](configobject/UNC/20.15.2/IKEALLSTATISTIC.md)
+- [IKEERRHISTORY（IKE历史信息清空状态）](configobject/UNC/20.15.2/IKEERRHISTORY.md)
+- [IKEIPSECSA（IPSEC安全联盟）](configobject/UNC/20.15.2/IKEIPSECSA.md)
+- [IKEIPSECSTAT（IKE IPsec统计信息）](configobject/UNC/20.15.2/IKEIPSECSTAT.md)
+- [IKESA（IKE安全联盟）](configobject/UNC/20.15.2/IKESA.md)
+- [IPSECPATHMTU（复位IPsec Path MTU）](configobject/UNC/20.15.2/IPSECPATHMTU.md)
+- [IPSECSTATISTIC（IPsec统计信息）](configobject/UNC/20.15.2/IPSECSTATISTIC.md)
+- [IPSTATISTIC（IP报文统计）](configobject/UNC/20.15.2/IPSTATISTIC.md)
+- [IPV6STAT（IPv6统计计数）](configobject/UNC/20.15.2/IPV6STAT.md)
+- [IU（复位Iu接口）](configobject/UNC/20.15.2/IU.md)
+- [LBPLYAGING（CSLB表项老化功能）](configobject/UNC/20.15.2/LBPLYAGING.md)
+- [LBSRVADDR（CSLB向VNRS同步服务实例地址）](configobject/UNC/20.15.2/LBSRVADDR.md)
+- [LDPSESSION（LDP会话）](configobject/UNC/20.15.2/LDPSESSION.md)
+- [LICCTL（紧急License）](configobject/UNC/20.15.2/LICCTL.md)
+- [LICENSE（失效License）](configobject/UNC/20.15.2/LICENSE.md)
+- [LINKMIGRATION（一次链路迁移操作）](configobject/UNC/20.15.2/LINKMIGRATION.md)
+- [LOCATEREPORT（位置上报）](configobject/UNC/20.15.2/LOCATEREPORT.md)
+- [LOG（收集日志信息）](configobject/UNC/20.15.2/LOG.md)
+- [LOGAGENTSTC（日志代理丢弃的日志信息）](configobject/UNC/20.15.2/LOGAGENTSTC.md)
+- [LOGFILE（保存黑匣子的数据到日志文件中）](configobject/UNC/20.15.2/LOGFILE.md)
+- [LSPVSTATISTICS（LSPV报文统计计数）](configobject/UNC/20.15.2/LSPVSTATISTICS.md)
+- [LUASCRIPT（Lua脚本）](configobject/UNC/20.15.2/LUASCRIPT.md)
+- [MASALMCHECK（5G告警核查）](configobject/UNC/20.15.2/MASALMCHECK.md)
+- [MCASTPAEGROUP（组播组引流信息）](configobject/UNC/20.15.2/MCASTPAEGROUP.md)
+- [MEASRST（测量结果文件）](configobject/UNC/20.15.2/MEASRST.md)
+- [MESYS（复位网元服务）](configobject/UNC/20.15.2/MESYS.md)
+- [MGMDCTLMSG（IGMP报文统计计数）](configobject/UNC/20.15.2/MGMDCTLMSG.md)
+- [MGMDGROUP（IGMP加入组信息）](configobject/UNC/20.15.2/MGMDGROUP.md)
+- [MIGRATE（异构迁移查询）](configobject/UNC/20.15.2/MIGRATE.md)
+- [MMECFG（发送MME配置信息）](configobject/UNC/20.15.2/MMECFG.md)
+- [MML（MML文件）](configobject/UNC/20.15.2/MML.md)
+- [MMLTRAN（取消配置）](configobject/UNC/20.15.2/MMLTRAN.md)
+- [MPACCOUNTERV4（IPv4 MPAC策略匹配统计计数）](configobject/UNC/20.15.2/MPACCOUNTERV4.md)
+- [MPACCOUNTERV6（IPv6 MPAC策略匹配统计计数）](configobject/UNC/20.15.2/MPACCOUNTERV6.md)
+- [MSPROCESS（复位微服务进程）](configobject/UNC/20.15.2/MSPROCESS.md)
+- [MSSFTD（微服务软件调测）](configobject/UNC/20.15.2/MSSFTD.md)
+- [NBOFFLOADBYMME（NB-IoT用户的MME迁移任务）](configobject/UNC/20.15.2/NBOFFLOADBYMME.md)
+- [NCARSTSSNSTATS（NETCONF会话统计信息）](configobject/UNC/20.15.2/NCARSTSSNSTATS.md)
+- [NDSECURITYNONCE（ND安全随机数）](configobject/UNC/20.15.2/NDSECURITYNONCE.md)
+- [NDSECURITYSTATISTICS（ND安全统计）](configobject/UNC/20.15.2/NDSECURITYSTATISTICS.md)
+- [NDSECURITYTIMESTAMP（ND安全时间戳）](configobject/UNC/20.15.2/NDSECURITYTIMESTAMP.md)
+- [NEFMSGSEND（向NEF发送消息）](configobject/UNC/20.15.2/NEFMSGSEND.md)
+- [NFCACHE（NF缓存信息）](configobject/UNC/20.15.2/NFCACHE.md)
+- [NFCACHESYNC（操作远端NF缓存同步）](configobject/UNC/20.15.2/NFCACHESYNC.md)
+- [NFDISC（测试服务发现）](configobject/UNC/20.15.2/NFDISC.md)
+- [NFDREXE（人工执行容灾倒换）](configobject/UNC/20.15.2/NFDREXE.md)
+- [NFDRSWOVER（人工倒回命令）](configobject/UNC/20.15.2/NFDRSWOVER.md)
+- [NFNOTIFY（测试NRF通知）](configobject/UNC/20.15.2/NFNOTIFY.md)
+- [NFOFFLINE（NF下线）](configobject/UNC/20.15.2/NFOFFLINE.md)
+- [NFONLINE（NF上线）](configobject/UNC/20.15.2/NFONLINE.md)
+- [NFPROFILECHECK（测试NF和NRF上的网元信息是否一致）](configobject/UNC/20.15.2/NFPROFILECHECK.md)
+- [NFTOKEN（测试Token分配）](configobject/UNC/20.15.2/NFTOKEN.md)
+- [NFVIUPDRECV（NFVI分批升级恢复）](configobject/UNC/20.15.2/NFVIUPDRECV.md)
+- [NGALMCHECK（5G告警核查）](configobject/UNC/20.15.2/NGALMCHECK.md)
+- [NGDNSC（DNS缓存）](configobject/UNC/20.15.2/NGDNSC.md)
+- [NGDNSITF（DNS客户端查询接口）](configobject/UNC/20.15.2/NGDNSITF.md)
+- [NGLANGRP（测试5G LAN组会话状态）](configobject/UNC/20.15.2/NGLANGRP.md)
+- [NGRANCTX（NG-RAN上下文）](configobject/UNC/20.15.2/NGRANCTX.md)
+- [NGRANNEIBS（NG-RAN基站邻接关系）](configobject/UNC/20.15.2/NGRANNEIBS.md)
+- [NGREQMSGCACHE（清空DNS客户端的缓存消息）](configobject/UNC/20.15.2/NGREQMSGCACHE.md)
+- [NGTANEIBS（TA邻接关系）](configobject/UNC/20.15.2/NGTANEIBS.md)
+- [NGUSRBATCHDEREG（批量去注册任务）](configobject/UNC/20.15.2/NGUSRBATCHDEREG.md)
+- [NODE（节点信息）](configobject/UNC/20.15.2/NODE.md)
+- [NODEBATCH（节点批量复位）](configobject/UNC/20.15.2/NODEBATCH.md)
+- [NODEINFO（节点信息）](configobject/UNC/20.15.2/NODEINFO.md)
+- [NOSBASEPING（NOS Base平面网络Ping功能）](configobject/UNC/20.15.2/NOSBASEPING.md)
+- [NOSHETEROMODE（NOS异构模式）](configobject/UNC/20.15.2/NOSHETEROMODE.md)
+- [NRFMANUSENDNTY（操作手动发送订阅通知）](configobject/UNC/20.15.2/NRFMANUSENDNTY.md)
+- [NRFNFATTRVRY（操作执行NF属性冲突核验）](configobject/UNC/20.15.2/NRFNFATTRVRY.md)
+- [NRFNFSWTNRF（操作指示NF切换NRF）](configobject/UNC/20.15.2/NRFNFSWTNRF.md)
+- [NRFREFRESHNF（操作执行网元信息刷新）](configobject/UNC/20.15.2/NRFREFRESHNF.md)
+- [NSAVLINFO（操作网络切片可用性信息）](configobject/UNC/20.15.2/NSAVLINFO.md)
+- [NSSFIPSTAT（NSSF的局向内统概要数据）](configobject/UNC/20.15.2/NSSFIPSTAT.md)
+- [NSSFMSGSTAT（NSSF收发消息内部统计）](configobject/UNC/20.15.2/NSSFMSGSTAT.md)
+- [OFFLOAD（迁移任务）](configobject/UNC/20.15.2/OFFLOAD.md)
+- [OFFLOADAMF（AMF迁移任务）](configobject/UNC/20.15.2/OFFLOADAMF.md)
+- [OFFLOADBYBSC（BSC迁移任务）](configobject/UNC/20.15.2/OFFLOADBYBSC.md)
+- [OFFLOADBYENODEB（eNodeB迁移任务）](configobject/UNC/20.15.2/OFFLOADBYENODEB.md)
+- [OFFLOADBYMME（MME迁移任务）](configobject/UNC/20.15.2/OFFLOADBYMME.md)
+- [OFFLOADBYRNC（RNC迁移任务）](configobject/UNC/20.15.2/OFFLOADBYRNC.md)
+- [OFFLOADBYSGSN（SGSN迁移任务）](configobject/UNC/20.15.2/OFFLOADBYSGSN.md)
+- [OFFLOADBYTA（TA迁移任务）](configobject/UNC/20.15.2/OFFLOADBYTA.md)
+- [OFFLOADUDM（UDM注册上下文的迁移）](configobject/UNC/20.15.2/OFFLOADUDM.md)
+- [OMMQ（清理OMMQ数据）](configobject/UNC/20.15.2/OMMQ.md)
+- [OMU（倒换主备操作维护单元）](configobject/UNC/20.15.2/OMU.md)
+- [ONECLICKDEPLOY（操作服务一键式部署）](configobject/UNC/20.15.2/ONECLICKDEPLOY.md)
+- [OVERLOAD（过载控制记录信息）](configobject/UNC/20.15.2/OVERLOAD.md)
+- [P2PCOMTASK（SDR点对点通信质量检测任务）](configobject/UNC/20.15.2/P2PCOMTASK.md)
+- [PAECHANNEL（PAE通道统计信息）](configobject/UNC/20.15.2/PAECHANNEL.md)
+- [PAEDISCARD（PAE丢包统计信息）](configobject/UNC/20.15.2/PAEDISCARD.md)
+- [PAEFABDETECT（Fabric链路探测任务）](configobject/UNC/20.15.2/PAEFABDETECT.md)
+- [PAEPORT（PAE端口统计信息）](configobject/UNC/20.15.2/PAEPORT.md)
+- [PAEQUEUE（PAE队列统计信息）](configobject/UNC/20.15.2/PAEQUEUE.md)
+- [PAEREASSEMBLEINFO（PAE分片重组统计信息）](configobject/UNC/20.15.2/PAEREASSEMBLEINFO.md)
+- [PCSCF（锁定P-CSCF地址配置）](configobject/UNC/20.15.2/PCSCF.md)
+- [PFCPSESSION（迁移PFCP会话）](configobject/UNC/20.15.2/PFCPSESSION.md)
+- [PIMCTLMSG（PIM实例报文统计计数）](configobject/UNC/20.15.2/PIMCTLMSG.md)
+- [PIMIFCTLMSG（PIM接口报文统计计数）](configobject/UNC/20.15.2/PIMIFCTLMSG.md)
+- [PIMROUTE（PIM协议表项）](configobject/UNC/20.15.2/PIMROUTE.md)
+- [PLCYCHECK（创建策略核查任务）](configobject/UNC/20.15.2/PLCYCHECK.md)
+- [PLTMAINTAIN（uniplt调试命令）](configobject/UNC/20.15.2/PLTMAINTAIN.md)
+- [POD（POD停止）](configobject/UNC/20.15.2/POD.md)
+- [PODMIGRATE（操作节点扩缩容与Pod迁移任务）](configobject/UNC/20.15.2/PODMIGRATE.md)
+- [PREOCCUPYRES（预占RU资源）](configobject/UNC/20.15.2/PREOCCUPYRES.md)
+- [PROCESS（复位进程）](configobject/UNC/20.15.2/PROCESS.md)
+- [PTPBVC（复位小区）](configobject/UNC/20.15.2/PTPBVC.md)
+- [RAWIPSTATISTIC（RawIP报文统计）](configobject/UNC/20.15.2/RAWIPSTATISTIC.md)
+- [RAWLINKSTATISTIC（Raw-link报文统计）](configobject/UNC/20.15.2/RAWLINKSTATISTIC.md)
+- [RCISOLATION（人工恢复已隔离的Pod）](configobject/UNC/20.15.2/RCISOLATION.md)
+- [RDSSVRCOUNTER（RADIUS相关消息发送接收个数的统计信息）](configobject/UNC/20.15.2/RDSSVRCOUNTER.md)
+- [RECYCLE（回收地址）](configobject/UNC/20.15.2/RECYCLE.md)
+- [REGNF（禁止NF实例）](configobject/UNC/20.15.2/REGNF.md)
+- [RESELECTAUSF（重选AUSF）](configobject/UNC/20.15.2/RESELECTAUSF.md)
+- [RESETINFO（资源单元复位信息）](configobject/UNC/20.15.2/RESETINFO.md)
+- [RESNOSBASEPING（NOS Base平面网络Ping功能）](configobject/UNC/20.15.2/RESNOSBASEPING.md)
+- [RESOMU（倒换主备操作维护单元）](configobject/UNC/20.15.2/RESOMU.md)
+- [RESVNFC（复位VNFC）](configobject/UNC/20.15.2/RESVNFC.md)
+- [RU（解闭CSDB RU）](configobject/UNC/20.15.2/RU.md)
+- [RUGROUP（资源单元组成员信息）](configobject/UNC/20.15.2/RUGROUP.md)
+- [RUNNINGCONFIG（保存运行配置数据）](configobject/UNC/20.15.2/RUNNINGCONFIG.md)
+- [S1BALANCE（S1接口均衡操作）](configobject/UNC/20.15.2/S1BALANCE.md)
+- [S1MESSAGE（发送模拟S1AP错误消息）](configobject/UNC/20.15.2/S1MESSAGE.md)
+- [SBILINKFQDNIP（检查服务化接口链路集FQDN的IP地址）](configobject/UNC/20.15.2/SBILINKFQDNIP.md)
+- [SBISTATICLINK（静态链路）](configobject/UNC/20.15.2/SBISTATICLINK.md)
+- [SCTPAS（SCTP统计信息）](configobject/UNC/20.15.2/SCTPAS.md)
+- [SDUPPATH（测试SDUP路径）](configobject/UNC/20.15.2/SDUPPATH.md)
+- [SECARPSGPKTSTC（ARP双向分离报文统计）](configobject/UNC/20.15.2/SECARPSGPKTSTC.md)
+- [SECCARSTAT（安全CAR功能丢弃上送CPU报文的详细信息）](configobject/UNC/20.15.2/SECCARSTAT.md)
+- [SECIPURPFSTAT（URPF丢弃报文计数信息）](configobject/UNC/20.15.2/SECIPURPFSTAT.md)
+- [SEGFILE（号段文件）](configobject/UNC/20.15.2/SEGFILE.md)
+- [SEGPROCESS（复位NRF百万号段功能）](configobject/UNC/20.15.2/SEGPROCESS.md)
+- [SERRESBALANCE（业务资源均衡操作）](configobject/UNC/20.15.2/SERRESBALANCE.md)
+- [SERVICE（复位业务）](configobject/UNC/20.15.2/SERVICE.md)
+- [SESSIONACT（新创建会话或专载的锁定状态）](configobject/UNC/20.15.2/SESSIONACT.md)
+- [SESSSTATIC（会话消息统计信息）](configobject/UNC/20.15.2/SESSSTATIC.md)
+- [SETPRTGRPSPEC（操作设置保护组规格值）](configobject/UNC/20.15.2/SETPRTGRPSPEC.md)
+- [SFEFASTPINGPKTSTC（SFE Fast-ping报文统计信息）](configobject/UNC/20.15.2/SFEFASTPINGPKTSTC.md)
+- [SFEIFPKTSTC（SFE接口报文统计）](configobject/UNC/20.15.2/SFEIFPKTSTC.md)
+- [SFEMSGSTC（FEI消息统计）](configobject/UNC/20.15.2/SFEMSGSTC.md)
+- [SFEPATHSTC（FEI Path统计）](configobject/UNC/20.15.2/SFEPATHSTC.md)
+- [SFEPKTDBG（报文调测过滤）](configobject/UNC/20.15.2/SFEPKTDBG.md)
+- [SFEPKTSTATS（SFE统计信息）](configobject/UNC/20.15.2/SFEPKTSTATS.md)
+- [SFESWMSGSTC（FEISW消息统计）](configobject/UNC/20.15.2/SFESWMSGSTC.md)
+- [SFESWPATHSTC（FEISW Path统计）](configobject/UNC/20.15.2/SFESWPATHSTC.md)
+- [SFETRACESTC（SFE跟踪报文统计）](configobject/UNC/20.15.2/SFETRACESTC.md)
+- [SFTD（软调操作）](configobject/UNC/20.15.2/SFTD.md)
+- [SFTDMCR（软调操作）](configobject/UNC/20.15.2/SFTDMCR.md)
+- [SIGBVC（复位SigBvc）](configobject/UNC/20.15.2/SIGBVC.md)
+- [SLAVERU（迁移热备RU）](configobject/UNC/20.15.2/SLAVERU.md)
+- [SMARTFCDURA（智能流控开启时长）](configobject/UNC/20.15.2/SMARTFCDURA.md)
+- [SMFCACHE（缓存的SMF与TAI映射关系）](configobject/UNC/20.15.2/SMFCACHE.md)
+- [SMFEXITUDMBYPASS（会话退出UDM Bypass状态任务）](configobject/UNC/20.15.2/SMFEXITUDMBYPASS.md)
+- [SMFMBSSESSION（MB-SMF组播广播会话）](configobject/UNC/20.15.2/SMFMBSSESSION.md)
+- [SMSFEXITUDMBYPASS（用户退出UDM Bypass任务）](configobject/UNC/20.15.2/SMSFEXITUDMBYPASS.md)
+- [SQOSPOLICYSTC（查看端口流量策略报文统计）](configobject/UNC/20.15.2/SQOSPOLICYSTC.md)
+- [SRVRECFG（重配置业务数据）](configobject/UNC/20.15.2/SRVRECFG.md)
+- [STCNFPROFILE（手动注册的NFProfile）](configobject/UNC/20.15.2/STCNFPROFILE.md)
+- [SYNCFILE（生成对账文件）](configobject/UNC/20.15.2/SYNCFILE.md)
+- [TCPSTATISTIC（TCP报文统计）](configobject/UNC/20.15.2/TCPSTATISTIC.md)
+- [TLBRELBLINK（触发HTTP服务端TCP链路重均衡检测及调整）](configobject/UNC/20.15.2/TLBRELBLINK.md)
+- [TMGI](configobject/UNC/20.15.2/TMGI.md)
+- [TRANSCOMTASK（SDR进程间透明通信检测任务）](configobject/UNC/20.15.2/TRANSCOMTASK.md)
+- [TRUNKACTPORT（切换Trunk激活口）](configobject/UNC/20.15.2/TRUNKACTPORT.md)
+- [TTYUSER（用户信息）](configobject/UNC/20.15.2/TTYUSER.md)
+- [UAMGTPCPATH（测试UAM GTP-C路径状态）](configobject/UNC/20.15.2/UAMGTPCPATH.md)
+- [UDPSTATISTIC（UDP报文统计）](configobject/UNC/20.15.2/UDPSTATISTIC.md)
+- [UFPLATENCYSTAT（UFP逐包转发时延度量开关）](configobject/UNC/20.15.2/UFPLATENCYSTAT.md)
+- [UPCCTX（用户面控制上下文）](configobject/UNC/20.15.2/UPCCTX.md)
+- [UPDPRECHK（升级前检查）](configobject/UNC/20.15.2/UPDPRECHK.md)
+- [UPFADDR（解锁UPF地址）](configobject/UNC/20.15.2/UPFADDR.md)
+- [UPFAULTCACHE（用户面故障缓存）](configobject/UNC/20.15.2/UPFAULTCACHE.md)
+- [UPGTSK（升级/补丁任务）](configobject/UNC/20.15.2/UPGTSK.md)
+- [USEROFFLOAD（用户迁移）](configobject/UNC/20.15.2/USEROFFLOAD.md)
+- [VERIFICATION（一次FEI与FES之间的对账操作）](configobject/UNC/20.15.2/VERIFICATION.md)
+- [VHACHGPEER（转换vHA ETCD集群中节点间通讯地址的方式）](configobject/UNC/20.15.2/VHACHGPEER.md)
+- [VHASTATUS（更改vHA ETCD节点进程状态）](configobject/UNC/20.15.2/VHASTATUS.md)
+- [VLRFAULTEXIT（用户退出VLR故障增强状态）](configobject/UNC/20.15.2/VLRFAULTEXIT.md)
+- [VLROFFLOAD（VLR迁移任务）](configobject/UNC/20.15.2/VLROFFLOAD.md)
+- [VLROFFLOADBYLAI（IMSI分离4G用户任务）](configobject/UNC/20.15.2/VLROFFLOADBYLAI.md)
+- [VLRRESET（触发VLR向MME发送RESET消息）](configobject/UNC/20.15.2/VLRRESET.md)
+- [VNFC（重启系统）](configobject/UNC/20.15.2/VNFC.md)
+- [VNODE（虚拟节点信息）](configobject/UNC/20.15.2/VNODE.md)
 
 ## binding
 
-- [[configobject/UNC/20.15.2/BSFIPRANGEBIND]] · BSFIPRANGEBIND（BSF实例与IPRANGE之间的绑定关系） — `BSFIPRANGEBIND.md`
-- [[configobject/UNC/20.15.2/CGBINDING]] · CGBINDING（CG绑定关系） — `CGBINDING.md`
-- [[configobject/UNC/20.15.2/CGGRPBINDING]] · CGGRPBINDING（CG组绑定关系） — `CGGRPBINDING.md`
-- [[configobject/UNC/20.15.2/CPCGBINDING]] · CPCGBINDING（抄送CG绑定关系） — `CPCGBINDING.md`
-- [[configobject/UNC/20.15.2/DHCPBINDPOOLGRP]] · DHCPBINDPOOLGRP（DHCP服务器组与地址池组绑定关系） — `DHCPBINDPOOLGRP.md`
-- [[configobject/UNC/20.15.2/DNAIBINDDNAREA]] · DNAIBINDDNAREA（DNAI支持的服务区域） — `DNAIBINDDNAREA.md`
-- [[configobject/UNC/20.15.2/DNAREABINDN2CID]] · DNAREABINDN2CID（DNAI服务区名称绑定的5G Cell ID范围） — `DNAREABINDN2CID.md`
-- [[configobject/UNC/20.15.2/DNAREABINDN2TAI]] · DNAREABINDN2TAI（DNAI服务区名称绑定的5G TAI范围） — `DNAREABINDN2TAI.md`
-- [[configobject/UNC/20.15.2/DNAREABINDS1CID]] · DNAREABINDS1CID（DNAI服务区名称绑定的4G Cell ID范围） — `DNAREABINDS1CID.md`
-- [[configobject/UNC/20.15.2/DNAREABINDS1TAI]] · DNAREABINDS1TAI（DNAI服务区名称绑定的4G TAI范围） — `DNAREABINDS1TAI.md`
-- [[configobject/UNC/20.15.2/FAULTRANBINDGRP]] · FAULTRANBINDGRP（N3接口故障RAN与RAN组的绑定关系） — `FAULTRANBINDGRP.md`
-- [[configobject/UNC/20.15.2/FAULTUPBINDGRP]] · FAULTUPBINDGRP（N3接口故障UPF与UPF组的绑定关系） — `FAULTUPBINDGRP.md`
-- [[configobject/UNC/20.15.2/FAULTUPBINDRAN]] · FAULTUPBINDRAN（N3接口故障网元组绑定） — `FAULTUPBINDRAN.md`
-- [[configobject/UNC/20.15.2/HOMEGRPBINDAPN]] · HOMEGRPBINDAPN（Home Group和APN的绑定关系） — `HOMEGRPBINDAPN.md`
-- [[configobject/UNC/20.15.2/IMSIAPNBINDUP]] · IMSIAPNBINDUP（APN下用户和UPF的绑定关系配置） — `IMSIAPNBINDUP.md`
-- [[configobject/UNC/20.15.2/IMSIBINDDEDSMF]] · IMSIBINDDEDSMF（拨测用户和专网SMF的绑定关系） — `IMSIBINDDEDSMF.md`
-- [[configobject/UNC/20.15.2/IMSIBINDUP]] · IMSIBINDUP（用户和UPF的绑定关系） — `IMSIBINDUP.md`
-- [[configobject/UNC/20.15.2/IMSIBINDUPFADDR]] · IMSIBINDUPFADDR（用户和UPF地址的绑定关系） — `IMSIBINDUPFADDR.md`
-- [[configobject/UNC/20.15.2/IPBINDVPN]] · IPBINDVPN（接口绑定VPN） — `IPBINDVPN.md`
-- [[configobject/UNC/20.15.2/IPBINDVPNIPSEC]] · IPBINDVPNIPSEC（接口绑定VPN） — `IPBINDVPNIPSEC.md`
-- [[configobject/UNC/20.15.2/L2RULEBINDGRP]] · L2RULEBINDGRP（层二规则与层二规则组的绑定关系） — `L2RULEBINDGRP.md`
-- [[configobject/UNC/20.15.2/L2RULEGRPBIND]] · L2RULEGRPBIND（层二规则组与用户的绑定关系） — `L2RULEGRPBIND.md`
-- [[configobject/UNC/20.15.2/LOCALHOSTBIND]] · LOCALHOSTBIND（Diameter本端主机与Diameter本端主机组的关联关系） — `LOCALHOSTBIND.md`
-- [[configobject/UNC/20.15.2/LOCBINDAREA]] · LOCBINDAREA（UPF位置信息与该UPF优先支持的服务区的绑定关系） — `LOCBINDAREA.md`
-- [[configobject/UNC/20.15.2/LOCBINDLAI]] · LOCBINDLAI（UPF位置信息与UPF优先支持的LAI范围的绑定关系） — `LOCBINDLAI.md`
-- [[configobject/UNC/20.15.2/LOCBINDN2TAI]] · LOCBINDN2TAI（UPF位置信息与UPF优先支持的5G TAI范围的绑定关系） — `LOCBINDN2TAI.md`
-- [[configobject/UNC/20.15.2/LOCBINDS1TAI]] · LOCBINDS1TAI（UPF位置信息与UPF优先支持的4G TAI范围的绑定关系） — `LOCBINDS1TAI.md`
-- [[configobject/UNC/20.15.2/M2MSVRGRPBIND]] · M2MSVRGRPBIND（M2M服务器组绑定关系） — `M2MSVRGRPBIND.md`
-- [[configobject/UNC/20.15.2/M2MUPFBINDGRP]] · M2MUPFBINDGRP（UPF和M2M关联的UPF组的绑定关系） — `M2MUPFBINDGRP.md`
-- [[configobject/UNC/20.15.2/MPACBINDGBL]] · MPACBINDGBL（MPAC全局策略） — `MPACBINDGBL.md`
-- [[configobject/UNC/20.15.2/MPACBINDIF]] · MPACBINDIF（MPAC接口策略） — `MPACBINDIF.md`
-- [[configobject/UNC/20.15.2/MULDNNBINDAREA]] · MULDNNBINDAREA（智能分流专网DNN支持的服务区域） — `MULDNNBINDAREA.md`
-- [[configobject/UNC/20.15.2/NRFBINDGRP]] · NRFBINDGRP（对端NRF实例组成员） — `NRFBINDGRP.md`
-- [[configobject/UNC/20.15.2/OCSBINDING]] · OCSBINDING（Ocs绑定关系） — `OCSBINDING.md`
-- [[configobject/UNC/20.15.2/OCSGRPBINDING]] · OCSGRPBINDING（OCS组绑定关系） — `OCSGRPBINDING.md`
-- [[configobject/UNC/20.15.2/PCCPBINDUPG]] · PCCPBINDUPG（用户模板组和PccProfile的绑定关系） — `PCCPBINDUPG.md`
-- [[configobject/UNC/20.15.2/PCFSSCOPEBIND]] · PCFSSCOPEBIND（PCF业务服务区的绑定关系） — `PCFSSCOPEBIND.md`
-- [[configobject/UNC/20.15.2/PCFSSCOPEBINDALL]] · PCFSSCOPEBINDALL（所有的PCF业务服务区的绑定关系） — `PCFSSCOPEBINDALL.md`
-- [[configobject/UNC/20.15.2/PCRFBINDGRP]] · PCRFBINDGRP（PCRF与PCRF Group的关联关系） — `PCRFBINDGRP.md`
-- [[configobject/UNC/20.15.2/PCSCFGRPBINDIMSI]] · PCSCFGRPBINDIMSI（P-CSCF组和IMSI/MSISDN号段的绑定关系） — `PCSCFGRPBINDIMSI.md`
-- [[configobject/UNC/20.15.2/PLMNBINDSEPPGRP]] · PLMNBINDSEPPGRP（PLMN与SEPP组的绑定关系） — `PLMNBINDSEPPGRP.md`
-- [[configobject/UNC/20.15.2/POOLBINDAPN]] · POOLBINDAPN（APN实例与地址池绑定关系） — `POOLBINDAPN.md`
-- [[configobject/UNC/20.15.2/POOLBINDGRP]] · POOLBINDGRP（地址池与地址池组的绑定关系） — `POOLBINDGRP.md`
-- [[configobject/UNC/20.15.2/PSAUPFBINDATSSS]] · PSAUPFBINDATSSS（PSA UPF和ATSSS UPF绑定关系中的ATSSS-UPF） — `PSAUPFBINDATSSS.md`
-- [[configobject/UNC/20.15.2/REALMBINDAPN]] · REALMBINDAPN（APN与Diameter Realm关联关系） — `REALMBINDAPN.md`
-- [[configobject/UNC/20.15.2/ROAMTYPEBINDUP]] · ROAMTYPEBINDUP（UPF与用户漫游类型的绑定关系） — `ROAMTYPEBINDUP.md`
-- [[configobject/UNC/20.15.2/RULEBINDDNAI]] · RULEBINDDNAI（预定义规则关联的DNAI） — `RULEBINDDNAI.md`
-- [[configobject/UNC/20.15.2/RULEBINDING]] · RULEBINDING（用户模板和规则的绑定关系） — `RULEBINDING.md`
-- [[configobject/UNC/20.15.2/SEPPBINDGRP]] · SEPPBINDGRP（SEPP绑定组关系） — `SEPPBINDGRP.md`
-- [[configobject/UNC/20.15.2/SRVPBINDPCCPG]] · SRVPBINDPCCPG（PCC组业务属性绑定） — `SRVPBINDPCCPG.md`
-- [[configobject/UNC/20.15.2/TNFBINDGRP]] · TNFBINDGRP（目标NF实例绑定组） — `TNFBINDGRP.md`
-- [[configobject/UNC/20.15.2/TSTPCFBINDING]] · TSTPCFBINDING（拨测用户和PCF的绑定关系） — `TSTPCFBINDING.md`
-- [[configobject/UNC/20.15.2/UEDNSBINDUPGRP]] · UEDNSBINDUPGRP（UPF组的DNS属性） — `UEDNSBINDUPGRP.md`
-- [[configobject/UNC/20.15.2/UEDNSUPFBINDGRP]] · UEDNSUPFBINDGRP（UPF和DNS关联的UPF组的绑定关系） — `UEDNSUPFBINDGRP.md`
-- [[configobject/UNC/20.15.2/UPAREABINDLAI]] · UPAREABINDLAI（UPF服务区名称绑定的LAI范围） — `UPAREABINDLAI.md`
-- [[configobject/UNC/20.15.2/UPAREABINDN2TAI]] · UPAREABINDN2TAI（UPF服务区名称绑定的5G TAI范围） — `UPAREABINDN2TAI.md`
-- [[configobject/UNC/20.15.2/UPAREABINDS1TAI]] · UPAREABINDS1TAI（UPF服务区名称绑定的4G TAI范围） — `UPAREABINDS1TAI.md`
-- [[configobject/UNC/20.15.2/UPBINDGNGP]] · UPBINDGNGP（GGSN与Gn/Gp接口或PGW-U与S5/S8接口的绑定关系） — `UPBINDGNGP.md`
-- [[configobject/UNC/20.15.2/UPBINDS11]] · UPBINDS11（SGW-U与SGW-C侧S11接口的绑定关系） — `UPBINDS11.md`
-- [[configobject/UNC/20.15.2/UPBINDUPG]] · UPBINDUPG（用户模板组和用户模板的绑定关系） — `UPBINDUPG.md`
-- [[configobject/UNC/20.15.2/UPFBINDGRP]] · UPFBINDGRP（UPF和UPF组的绑定关系） — `UPFBINDGRP.md`
-- [[configobject/UNC/20.15.2/UPFBINDGXUPFGRP]] · UPFBINDGXUPFGRP（UPF与Gx UPF组的关联关系） — `UPFBINDGXUPFGRP.md`
-- [[configobject/UNC/20.15.2/UPFBINDSELRULE]] · UPFBINDSELRULE（UPF和规则的绑定关系） — `UPFBINDSELRULE.md`
-- [[configobject/UNC/20.15.2/UPFGBINDLOCG]] · UPFGBINDLOCG（UPF组与Diameter本端主机组的关联关系） — `UPFGBINDLOCG.md`
-- [[configobject/UNC/20.15.2/USRPROBINDDNAI]] · USRPROBINDDNAI（用户模板关联的DNAI） — `USRPROBINDDNAI.md`
-- [[configobject/UNC/20.15.2/VUPFIDBINDDNAI]] · VUPFIDBINDDNAI（虚拟UPF实例标识的DNAI） — `VUPFIDBINDDNAI.md`
-- [[configobject/UNC/20.15.2/VUPFIDBINDFUNC]] · VUPFIDBINDFUNC（虚拟UPF实例标识的绑定功能） — `VUPFIDBINDFUNC.md`
+- [BSFIPRANGEBIND（BSF实例与IPRANGE之间的绑定关系）](configobject/UNC/20.15.2/BSFIPRANGEBIND.md)
+- [CGBINDING（CG绑定关系）](configobject/UNC/20.15.2/CGBINDING.md)
+- [CGGRPBINDING（CG组绑定关系）](configobject/UNC/20.15.2/CGGRPBINDING.md)
+- [CPCGBINDING（抄送CG绑定关系）](configobject/UNC/20.15.2/CPCGBINDING.md)
+- [DHCPBINDPOOLGRP（DHCP服务器组与地址池组绑定关系）](configobject/UNC/20.15.2/DHCPBINDPOOLGRP.md)
+- [DNAIBINDDNAREA（DNAI支持的服务区域）](configobject/UNC/20.15.2/DNAIBINDDNAREA.md)
+- [DNAREABINDN2CID（DNAI服务区名称绑定的5G Cell ID范围）](configobject/UNC/20.15.2/DNAREABINDN2CID.md)
+- [DNAREABINDN2TAI（DNAI服务区名称绑定的5G TAI范围）](configobject/UNC/20.15.2/DNAREABINDN2TAI.md)
+- [DNAREABINDS1CID（DNAI服务区名称绑定的4G Cell ID范围）](configobject/UNC/20.15.2/DNAREABINDS1CID.md)
+- [DNAREABINDS1TAI（DNAI服务区名称绑定的4G TAI范围）](configobject/UNC/20.15.2/DNAREABINDS1TAI.md)
+- [FAULTRANBINDGRP（N3接口故障RAN与RAN组的绑定关系）](configobject/UNC/20.15.2/FAULTRANBINDGRP.md)
+- [FAULTUPBINDGRP（N3接口故障UPF与UPF组的绑定关系）](configobject/UNC/20.15.2/FAULTUPBINDGRP.md)
+- [FAULTUPBINDRAN（N3接口故障网元组绑定）](configobject/UNC/20.15.2/FAULTUPBINDRAN.md)
+- [HOMEGRPBINDAPN（Home Group和APN的绑定关系）](configobject/UNC/20.15.2/HOMEGRPBINDAPN.md)
+- [IMSIAPNBINDUP（APN下用户和UPF的绑定关系配置）](configobject/UNC/20.15.2/IMSIAPNBINDUP.md)
+- [IMSIBINDDEDSMF（拨测用户和专网SMF的绑定关系）](configobject/UNC/20.15.2/IMSIBINDDEDSMF.md)
+- [IMSIBINDUP（用户和UPF的绑定关系）](configobject/UNC/20.15.2/IMSIBINDUP.md)
+- [IMSIBINDUPFADDR（用户和UPF地址的绑定关系）](configobject/UNC/20.15.2/IMSIBINDUPFADDR.md)
+- [IPBINDVPN（接口绑定VPN）](configobject/UNC/20.15.2/IPBINDVPN.md)
+- [IPBINDVPNIPSEC（接口绑定VPN）](configobject/UNC/20.15.2/IPBINDVPNIPSEC.md)
+- [L2RULEBINDGRP（层二规则与层二规则组的绑定关系）](configobject/UNC/20.15.2/L2RULEBINDGRP.md)
+- [L2RULEGRPBIND（层二规则组与用户的绑定关系）](configobject/UNC/20.15.2/L2RULEGRPBIND.md)
+- [LOCALHOSTBIND（Diameter本端主机与Diameter本端主机组的关联关系）](configobject/UNC/20.15.2/LOCALHOSTBIND.md)
+- [LOCBINDAREA（UPF位置信息与该UPF优先支持的服务区的绑定关系）](configobject/UNC/20.15.2/LOCBINDAREA.md)
+- [LOCBINDLAI（UPF位置信息与UPF优先支持的LAI范围的绑定关系）](configobject/UNC/20.15.2/LOCBINDLAI.md)
+- [LOCBINDN2TAI（UPF位置信息与UPF优先支持的5G TAI范围的绑定关系）](configobject/UNC/20.15.2/LOCBINDN2TAI.md)
+- [LOCBINDS1TAI（UPF位置信息与UPF优先支持的4G TAI范围的绑定关系）](configobject/UNC/20.15.2/LOCBINDS1TAI.md)
+- [M2MSVRGRPBIND（M2M服务器组绑定关系）](configobject/UNC/20.15.2/M2MSVRGRPBIND.md)
+- [M2MUPFBINDGRP（UPF和M2M关联的UPF组的绑定关系）](configobject/UNC/20.15.2/M2MUPFBINDGRP.md)
+- [MPACBINDGBL（MPAC全局策略）](configobject/UNC/20.15.2/MPACBINDGBL.md)
+- [MPACBINDIF（MPAC接口策略）](configobject/UNC/20.15.2/MPACBINDIF.md)
+- [MULDNNBINDAREA（智能分流专网DNN支持的服务区域）](configobject/UNC/20.15.2/MULDNNBINDAREA.md)
+- [NRFBINDGRP（对端NRF实例组成员）](configobject/UNC/20.15.2/NRFBINDGRP.md)
+- [OCSBINDING（Ocs绑定关系）](configobject/UNC/20.15.2/OCSBINDING.md)
+- [OCSGRPBINDING（OCS组绑定关系）](configobject/UNC/20.15.2/OCSGRPBINDING.md)
+- [PCCPBINDUPG（用户模板组和PccProfile的绑定关系）](configobject/UNC/20.15.2/PCCPBINDUPG.md)
+- [PCFSSCOPEBIND（PCF业务服务区的绑定关系）](configobject/UNC/20.15.2/PCFSSCOPEBIND.md)
+- [PCFSSCOPEBINDALL（所有的PCF业务服务区的绑定关系）](configobject/UNC/20.15.2/PCFSSCOPEBINDALL.md)
+- [PCRFBINDGRP（PCRF与PCRF Group的关联关系）](configobject/UNC/20.15.2/PCRFBINDGRP.md)
+- [PCSCFGRPBINDIMSI（P-CSCF组和IMSI/MSISDN号段的绑定关系）](configobject/UNC/20.15.2/PCSCFGRPBINDIMSI.md)
+- [PLMNBINDSEPPGRP（PLMN与SEPP组的绑定关系）](configobject/UNC/20.15.2/PLMNBINDSEPPGRP.md)
+- [POOLBINDAPN（APN实例与地址池绑定关系）](configobject/UNC/20.15.2/POOLBINDAPN.md)
+- [POOLBINDGRP（地址池与地址池组的绑定关系）](configobject/UNC/20.15.2/POOLBINDGRP.md)
+- [PSAUPFBINDATSSS（PSA UPF和ATSSS UPF绑定关系中的ATSSS-UPF）](configobject/UNC/20.15.2/PSAUPFBINDATSSS.md)
+- [REALMBINDAPN（APN与Diameter Realm关联关系）](configobject/UNC/20.15.2/REALMBINDAPN.md)
+- [ROAMTYPEBINDUP（UPF与用户漫游类型的绑定关系）](configobject/UNC/20.15.2/ROAMTYPEBINDUP.md)
+- [RULEBINDDNAI（预定义规则关联的DNAI）](configobject/UNC/20.15.2/RULEBINDDNAI.md)
+- [RULEBINDING（用户模板和规则的绑定关系）](configobject/UNC/20.15.2/RULEBINDING.md)
+- [SEPPBINDGRP（SEPP绑定组关系）](configobject/UNC/20.15.2/SEPPBINDGRP.md)
+- [SRVPBINDPCCPG（PCC组业务属性绑定）](configobject/UNC/20.15.2/SRVPBINDPCCPG.md)
+- [TNFBINDGRP（目标NF实例绑定组）](configobject/UNC/20.15.2/TNFBINDGRP.md)
+- [TSTPCFBINDING（拨测用户和PCF的绑定关系）](configobject/UNC/20.15.2/TSTPCFBINDING.md)
+- [UEDNSBINDUPGRP（UPF组的DNS属性）](configobject/UNC/20.15.2/UEDNSBINDUPGRP.md)
+- [UEDNSUPFBINDGRP（UPF和DNS关联的UPF组的绑定关系）](configobject/UNC/20.15.2/UEDNSUPFBINDGRP.md)
+- [UPAREABINDLAI（UPF服务区名称绑定的LAI范围）](configobject/UNC/20.15.2/UPAREABINDLAI.md)
+- [UPAREABINDN2TAI（UPF服务区名称绑定的5G TAI范围）](configobject/UNC/20.15.2/UPAREABINDN2TAI.md)
+- [UPAREABINDS1TAI（UPF服务区名称绑定的4G TAI范围）](configobject/UNC/20.15.2/UPAREABINDS1TAI.md)
+- [UPBINDGNGP（GGSN与Gn/Gp接口或PGW-U与S5/S8接口的绑定关系）](configobject/UNC/20.15.2/UPBINDGNGP.md)
+- [UPBINDS11（SGW-U与SGW-C侧S11接口的绑定关系）](configobject/UNC/20.15.2/UPBINDS11.md)
+- [UPBINDUPG（用户模板组和用户模板的绑定关系）](configobject/UNC/20.15.2/UPBINDUPG.md)
+- [UPFBINDGRP（UPF和UPF组的绑定关系）](configobject/UNC/20.15.2/UPFBINDGRP.md)
+- [UPFBINDGXUPFGRP（UPF与Gx UPF组的关联关系）](configobject/UNC/20.15.2/UPFBINDGXUPFGRP.md)
+- [UPFBINDSELRULE（UPF和规则的绑定关系）](configobject/UNC/20.15.2/UPFBINDSELRULE.md)
+- [UPFGBINDLOCG（UPF组与Diameter本端主机组的关联关系）](configobject/UNC/20.15.2/UPFGBINDLOCG.md)
+- [USRPROBINDDNAI（用户模板关联的DNAI）](configobject/UNC/20.15.2/USRPROBINDDNAI.md)
+- [VUPFIDBINDDNAI（虚拟UPF实例标识的DNAI）](configobject/UNC/20.15.2/VUPFIDBINDDNAI.md)
+- [VUPFIDBINDFUNC（虚拟UPF实例标识的绑定功能）](configobject/UNC/20.15.2/VUPFIDBINDFUNC.md)
 
 ## entity
 
-- [[configobject/UNC/20.15.2/5GCQOSACTION]] · 5GCQOSACTION（5GC QoS控制动作配置） — `5GCQOSACTION.md`
-- [[configobject/UNC/20.15.2/5GCREMARK]] · 5GCREMARK（5GC QoS到TOS/DSCP的映射规则） — `5GCREMARK.md`
-- [[configobject/UNC/20.15.2/5GCSUBQOS]] · 5GCSUBQOS（5GC签约QoS配置） — `5GCSUBQOS.md`
-- [[configobject/UNC/20.15.2/ACCESSLISTIP]] · ACCESSLISTIP（黑白名单） — `ACCESSLISTIP.md`
-- [[configobject/UNC/20.15.2/ACLGROUP]] · ACLGROUP（ACL规则匹配计数） — `ACLGROUP.md`
-- [[configobject/UNC/20.15.2/ACLGROUP6]] · ACLGROUP6（IPv6 ACL规则匹配计数） — `ACLGROUP6.md`
-- [[configobject/UNC/20.15.2/ACLGROUP6IPSEC]] · ACLGROUP6IPSEC（IPv6 ACL规则组） — `ACLGROUP6IPSEC.md`
-- [[configobject/UNC/20.15.2/ACLGROUPIPSEC]] · ACLGROUPIPSEC（ACL规则组） — `ACLGROUPIPSEC.md`
-- [[configobject/UNC/20.15.2/ACLRULEADV4]] · ACLRULEADV4（高级ACL规则） — `ACLRULEADV4.md`
-- [[configobject/UNC/20.15.2/ACLRULEADV4IPSEC]] · ACLRULEADV4IPSEC（高级ACL规则） — `ACLRULEADV4IPSEC.md`
-- [[configobject/UNC/20.15.2/ACLRULEADV6]] · ACLRULEADV6（高级IPv6 ACL规则） — `ACLRULEADV6.md`
-- [[configobject/UNC/20.15.2/ACLRULEADV6IPSEC]] · ACLRULEADV6IPSEC（高级IPv6 ACL规则） — `ACLRULEADV6IPSEC.md`
-- [[configobject/UNC/20.15.2/ACLRULEBAS4]] · ACLRULEBAS4（基本ACL规则） — `ACLRULEBAS4.md`
-- [[configobject/UNC/20.15.2/ACLRULEBAS6]] · ACLRULEBAS6（基本IPv6 ACL规则） — `ACLRULEBAS6.md`
-- [[configobject/UNC/20.15.2/ACLRULEETH]] · ACLRULEETH（以太ACL规则） — `ACLRULEETH.md`
-- [[configobject/UNC/20.15.2/ACLRULEIF]] · ACLRULEIF（接口ACL规则） — `ACLRULEIF.md`
-- [[configobject/UNC/20.15.2/ACSPACKAGE]] · ACSPACKAGE（软件包） — `ACSPACKAGE.md`
-- [[configobject/UNC/20.15.2/ACSPATCH]] · ACSPATCH（补丁） — `ACSPATCH.md`
-- [[configobject/UNC/20.15.2/ACTRL]] · ACTRL（接入控制） — `ACTRL.md`
-- [[configobject/UNC/20.15.2/ADCPARA]] · ADCPARA（ADC参数） — `ADCPARA.md`
-- [[configobject/UNC/20.15.2/ADDRLACGROUP]] · ADDRLACGROUP（LAC组） — `ADDRLACGROUP.md`
-- [[configobject/UNC/20.15.2/ADDRLACID]] · ADDRLACID（LAC组内LAC号段） — `ADDRLACID.md`
-- [[configobject/UNC/20.15.2/ADDRN2TACID]] · ADDRN2TACID（N2TAC组内N2TAC号段） — `ADDRN2TACID.md`
-- [[configobject/UNC/20.15.2/ADDRPOOL]] · ADDRPOOL（地址池） — `ADDRPOOL.md`
-- [[configobject/UNC/20.15.2/ADDRPOOLGRP]] · ADDRPOOLGRP（地址池组） — `ADDRPOOLGRP.md`
-- [[configobject/UNC/20.15.2/ADDRS1TACID]] · ADDRS1TACID（S1TAC组内S1TAC号段） — `ADDRS1TACID.md`
-- [[configobject/UNC/20.15.2/ADDRTACGROUP]] · ADDRTACGROUP（TAC组） — `ADDRTACGROUP.md`
-- [[configobject/UNC/20.15.2/ADDRUPGROUP]] · ADDRUPGROUP（UPF组） — `ADDRUPGROUP.md`
-- [[configobject/UNC/20.15.2/ADVANCEDCOMMUNITYNODE]] · ADVANCEDCOMMUNITYNODE（高级团体属性过滤器节点） — `ADVANCEDCOMMUNITYNODE.md`
-- [[configobject/UNC/20.15.2/ADVEXTCOMMUNITYNODE]] · ADVEXTCOMMUNITYNODE（高级扩展团体属性过滤器节点） — `ADVEXTCOMMUNITYNODE.md`
-- [[configobject/UNC/20.15.2/AGENTIP]] · AGENTIP（远端地址池代理IP信息） — `AGENTIP.md`
-- [[configobject/UNC/20.15.2/AGFCDRCHLMAP]] · AGFCDRCHLMAP（话单通道一级目录映射表） — `AGFCDRCHLMAP.md`
-- [[configobject/UNC/20.15.2/AGFCHGINFO]] · AGFCHGINFO（AGF的计费上下文信息） — `AGFCHGINFO.md`
-- [[configobject/UNC/20.15.2/AGFDISCRCACT]] · AGFDISCRCACT（AGF基于TOPO异常响应处理动作） — `AGFDISCRCACT.md`
-- [[configobject/UNC/20.15.2/AGGREGATEROUTE]] · AGGREGATEROUTE（BGP聚合路由） — `AGGREGATEROUTE.md`
-- [[configobject/UNC/20.15.2/ALGPRIORITY]] · ALGPRIORITY（算法优先级配置信息） — `ALGPRIORITY.md`
-- [[configobject/UNC/20.15.2/ALIASAPN]] · ALIASAPN（别名APN配置） — `ALIASAPN.md`
-- [[configobject/UNC/20.15.2/ALLIFIPADDRESS]] · ALLIFIPADDRESS（批量删除接口下IP地址） — `ALLIFIPADDRESS.md`
-- [[configobject/UNC/20.15.2/ALLOWDNN]] · ALLOWDNN（允许本地专网分流的DNN） — `ALLOWDNN.md`
-- [[configobject/UNC/20.15.2/ALLOWEDDOMAINS]] · ALLOWEDDOMAINS（允许访问的域名） — `ALLOWEDDOMAINS.md`
-- [[configobject/UNC/20.15.2/ALLOWEDNFDOMAIN]] · ALLOWEDNFDOMAIN（NF或NF服务支持的域名） — `ALLOWEDNFDOMAIN.md`
-- [[configobject/UNC/20.15.2/ALLOWEDNFNS]] · ALLOWEDNFNS（NF或NF服务支持的切片） — `ALLOWEDNFNS.md`
-- [[configobject/UNC/20.15.2/ALLOWEDNFTYPES]] · ALLOWEDNFTYPES（允许访问的NF类型） — `ALLOWEDNFTYPES.md`
-- [[configobject/UNC/20.15.2/ALLOWEDNSSAIS]] · ALLOWEDNSSAIS（允许访问的切片） — `ALLOWEDNSSAIS.md`
-- [[configobject/UNC/20.15.2/ALLOWEDOBJ]] · ALLOWEDOBJ（授权控制对象信息） — `ALLOWEDOBJ.md`
-- [[configobject/UNC/20.15.2/ALLOWEDOBJNAME]] · ALLOWEDOBJNAME（授权控制对象） — `ALLOWEDOBJNAME.md`
-- [[configobject/UNC/20.15.2/ALLOWEDPLMN]] · ALLOWEDPLMN（NF或NF服务支持的PLMN） — `ALLOWEDPLMN.md`
-- [[configobject/UNC/20.15.2/ALLOWEDPLMNS]] · ALLOWEDPLMNS（允许访问的PLMN） — `ALLOWEDPLMNS.md`
-- [[configobject/UNC/20.15.2/ALLOWSERNAME]] · ALLOWSERNAME（基于地址的白名单） — `ALLOWSERNAME.md`
-- [[configobject/UNC/20.15.2/AMFCONFLICTRULE]] · AMFCONFLICTRULE（AMF冲突规则） — `AMFCONFLICTRULE.md`
-- [[configobject/UNC/20.15.2/AMFCROSSOPPLCY]] · AMFCROSSOPPLCY（AMF跨运营商交互策略） — `AMFCROSSOPPLCY.md`
-- [[configobject/UNC/20.15.2/AMFDFTNSMAP]] · AMFDFTNSMAP（漫游切片默认映射配置） — `AMFDFTNSMAP.md`
-- [[configobject/UNC/20.15.2/AMFDIALTEST]] · AMFDIALTEST（AMF拨测用户配置） — `AMFDIALTEST.md`
-- [[configobject/UNC/20.15.2/AMFDNNPLCY]] · AMFDNNPLCY（DNN接入选择策略） — `AMFDNNPLCY.md`
-- [[configobject/UNC/20.15.2/AMFDRBKCTRL]] · AMFDRBKCTRL（AMF热备容灾控制参数） — `AMFDRBKCTRL.md`
-- [[configobject/UNC/20.15.2/AMFFUNCTION]] · AMFFUNCTION（AMF功能实例信息） — `AMFFUNCTION.md`
-- [[configobject/UNC/20.15.2/AMFIMRFUNC]] · AMFIMRFUNC（用户消息统计功能配置） — `AMFIMRFUNC.md`
-- [[configobject/UNC/20.15.2/AMFINFO]] · AMFINFO（AMF信息） — `AMFINFO.md`
-- [[configobject/UNC/20.15.2/AMFN8CMPTPLCY]] · AMFN8CMPTPLCY（AMF N8接口兼容性策略） — `AMFN8CMPTPLCY.md`
-- [[configobject/UNC/20.15.2/AMFRESELPLCY]] · AMFRESELPLCY（AMF重选控制策略） — `AMFRESELPLCY.md`
-- [[configobject/UNC/20.15.2/AMFROAMNSMAP]] · AMFROAMNSMAP（漫游切片映射配置） — `AMFROAMNSMAP.md`
-- [[configobject/UNC/20.15.2/AMFRSTRNSSAI]] · AMFRSTRNSSAI（TA级限制切片） — `AMFRSTRNSSAI.md`
-- [[configobject/UNC/20.15.2/AMFSERVICELIST]] · AMFSERVICELIST（AMF服务列表） — `AMFSERVICELIST.md`
-- [[configobject/UNC/20.15.2/AMFSETID]] · AMFSETID（AMF集与切片的关系） — `AMFSETID.md`
-- [[configobject/UNC/20.15.2/AMUEPLCYCTRL]] · AMUEPLCYCTRL（AM策略和UE策略控制参数） — `AMUEPLCYCTRL.md`
-- [[configobject/UNC/20.15.2/APN]] · APN（APN配置） — `APN.md`
-- [[configobject/UNC/20.15.2/APNACTNUM]] · APNACTNUM（APN激活数目限制） — `APNACTNUM.md`
-- [[configobject/UNC/20.15.2/APNALIAS]] · APNALIAS（APN别名配置） — `APNALIAS.md`
-- [[configobject/UNC/20.15.2/APNAMBRCTRL]] · APNAMBRCTRL（APN-AMBR控制的配置） — `APNAMBRCTRL.md`
-- [[configobject/UNC/20.15.2/APNAREA]] · APNAREA（APN相关服务区域） — `APNAREA.md`
-- [[configobject/UNC/20.15.2/APNAREABNDN2TAI]] · APNAREABNDN2TAI（APN相关服务区域绑定的5G TAI范围） — `APNAREABNDN2TAI.md`
-- [[configobject/UNC/20.15.2/APNBSFQUERY]] · APNBSFQUERY（APN的BSF查询功能配置） — `APNBSFQUERY.md`
-- [[configobject/UNC/20.15.2/APNCHGMODE]] · APNCHGMODE（基于APN的计费接口选择方式） — `APNCHGMODE.md`
-- [[configobject/UNC/20.15.2/APNCHRFUNC]] · APNCHRFUNC（APN CHR功能配置） — `APNCHRFUNC.md`
-- [[configobject/UNC/20.15.2/APNCTRL]] · APNCTRL（APN控制参数配置） — `APNCTRL.md`
-- [[configobject/UNC/20.15.2/APNCTRLPARA]] · APNCTRLPARA（基于APN的信令控制参数） — `APNCTRLPARA.md`
-- [[configobject/UNC/20.15.2/APNDEACTQFPLCY]] · APNDEACTQFPLCY（基于APN去活用户面专有QoS Flow策略） — `APNDEACTQFPLCY.md`
-- [[configobject/UNC/20.15.2/APNDIAMAAAGRP]] · APNDIAMAAAGRP（APN的Diameter AAA服务器组） — `APNDIAMAAAGRP.md`
-- [[configobject/UNC/20.15.2/APNDNS]] · APNDNS（APN DNS域名策略） — `APNDNS.md`
-- [[configobject/UNC/20.15.2/APNEDRXATTR]] · APNEDRXATTR（APN的终端接入eDRX模式属性） — `APNEDRXATTR.md`
-- [[configobject/UNC/20.15.2/APNFUNC]] · APNFUNC（APNNI功能配置） — `APNFUNC.md`
-- [[configobject/UNC/20.15.2/APNGA5GREUSEAVP]] · APNGA5GREUSEAVP（基于apn的Ga接口重用字段的填写方式） — `APNGA5GREUSEAVP.md`
-- [[configobject/UNC/20.15.2/APNGWPROXYFUNC]] · APNGWPROXYFUNC（APN网关Proxy功能配置） — `APNGWPROXYFUNC.md`
-- [[configobject/UNC/20.15.2/APNGY5GREUSEAVP]] · APNGY5GREUSEAVP（基于apn的Gy接口重用字段的填写方式） — `APNGY5GREUSEAVP.md`
-- [[configobject/UNC/20.15.2/APNINTELSHUNT]] · APNINTELSHUNT（APN智能分流关键词） — `APNINTELSHUNT.md`
-- [[configobject/UNC/20.15.2/APNLOCREPORT]] · APNLOCREPORT（基于APN的位置上报配置） — `APNLOCREPORT.md`
-- [[configobject/UNC/20.15.2/APNMULTIDNNCTRL]] · APNMULTIDNNCTRL（2B2C漫游双DNN特性APN级的相关功能控制） — `APNMULTIDNNCTRL.md`
-- [[configobject/UNC/20.15.2/APNNBNS]] · APNNBNS（APN的NBNS属性） — `APNNBNS.md`
-- [[configobject/UNC/20.15.2/APNNI]] · APNNI — `APNNI.md`
-- [[configobject/UNC/20.15.2/APNNICHARACT]] · APNNICHARACT（APNNI属性配置信息） — `APNNICHARACT.md`
-- [[configobject/UNC/20.15.2/APNNIDT]] · APNNIDT（APNNI Direct Tunnel配置） — `APNNIDT.md`
-- [[configobject/UNC/20.15.2/APNNIGROUP]] · APNNIGROUP（APNNI组） — `APNNIGROUP.md`
-- [[configobject/UNC/20.15.2/APNNILIB]] · APNNILIB（APNNI库记录） — `APNNILIB.md`
-- [[configobject/UNC/20.15.2/APNPAGINGPLCY]] · APNPAGINGPLCY（APN寻呼策略参数配置） — `APNPAGINGPLCY.md`
-- [[configobject/UNC/20.15.2/APNPFCPCMPT]] · APNPFCPCMPT（指定APN的PFCP私有信元携带配置） — `APNPFCPCMPT.md`
-- [[configobject/UNC/20.15.2/APNPGWCHGPAUSE]] · APNPGWCHGPAUSE（基于APN的PGW计费暂停功能配置） — `APNPGWCHGPAUSE.md`
-- [[configobject/UNC/20.15.2/APNPGWRNS]] · APNPGWRNS（PGW重定向功能设置） — `APNPGWRNS.md`
-- [[configobject/UNC/20.15.2/APNPOLICYMODE]] · APNPOLICYMODE（基于APN的策略接口的选择方式） — `APNPOLICYMODE.md`
-- [[configobject/UNC/20.15.2/APNPROFILE]] · APNPROFILE（APN配置） — `APNPROFILE.md`
-- [[configobject/UNC/20.15.2/APNPROFSPACE]] · APNPROFSPACE（APN与Profile Space的绑定关系） — `APNPROFSPACE.md`
-- [[configobject/UNC/20.15.2/APNPTTFUNC]] · APNPTTFUNC（基于APN的一键通功能配置） — `APNPTTFUNC.md`
-- [[configobject/UNC/20.15.2/APNQOSBYPASS]] · APNQOSBYPASS（BYPASS场景QoS描述配置） — `APNQOSBYPASS.md`
-- [[configobject/UNC/20.15.2/APNRDSCLIENTIP]] · APNRDSCLIENTIP（APN Radius Client IP接口） — `APNRDSCLIENTIP.md`
-- [[configobject/UNC/20.15.2/APNRDSSVRGRP]] · APNRDSSVRGRP（APN Radius服务器组） — `APNRDSSVRGRP.md`
-- [[configobject/UNC/20.15.2/APNREVERSESHUNT]] · APNREVERSESHUNT（基于APN的反向分流功能配置） — `APNREVERSESHUNT.md`
-- [[configobject/UNC/20.15.2/APNSMCOMFUNC]] · APNSMCOMFUNC（APN粒度的通用会话拓展功能控制） — `APNSMCOMFUNC.md`
-- [[configobject/UNC/20.15.2/APNTOHCTRL]] · APNTOHCTRL（APN粒度的智家随行会话控制） — `APNTOHCTRL.md`
-- [[configobject/UNC/20.15.2/APNTRAFFICDIST]] · APNTRAFFICDIST（漫游地动态签约分流控制） — `APNTRAFFICDIST.md`
-- [[configobject/UNC/20.15.2/APNUPFINFO]] · APNUPFINFO（指定APN的UPF节点信息） — `APNUPFINFO.md`
-- [[configobject/UNC/20.15.2/APNUPRECOVER]] · APNUPRECOVER（指定UPF的APN级别链路故障恢复处理） — `APNUPRECOVER.md`
-- [[configobject/UNC/20.15.2/APNUSRPROFG]] · APNUSRPROFG（APN用户模板组绑定关系） — `APNUSRPROFG.md`
-- [[configobject/UNC/20.15.2/APNWHITENODE]] · APNWHITENODE（APN设备白名单） — `APNWHITENODE.md`
-- [[configobject/UNC/20.15.2/APNWIFILTEHO]] · APNWIFILTEHO（基于APN的E-UTRAN和WLAN互操作控制属性） — `APNWIFILTEHO.md`
-- [[configobject/UNC/20.15.2/APPLYASPATH]] · APPLYASPATH（AS路径设置） — `APPLYASPATH.md`
-- [[configobject/UNC/20.15.2/APPLYCMNTYSTRING]] · APPLYCMNTYSTRING（团体属性值设置） — `APPLYCMNTYSTRING.md`
-- [[configobject/UNC/20.15.2/APPLYCOMMUNITY]] · APPLYCOMMUNITY（团体属性设置） — `APPLYCOMMUNITY.md`
-- [[configobject/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE]] · APPLYCOMMUNITYFILTERDELETE（删除团体属性过滤器设置） — `APPLYCOMMUNITYFILTERDELETE.md`
-- [[configobject/UNC/20.15.2/APPLYCOST]] · APPLYCOST（路由开销值设置） — `APPLYCOST.md`
-- [[configobject/UNC/20.15.2/APPLYCOSTTYPE]] · APPLYCOSTTYPE（开销值类型设置） — `APPLYCOSTTYPE.md`
-- [[configobject/UNC/20.15.2/APPLYDAMPENING]] · APPLYDAMPENING（Dampening设置） — `APPLYDAMPENING.md`
-- [[configobject/UNC/20.15.2/APPLYEXTCMNTYSTRING]] · APPLYEXTCMNTYSTRING（扩展团体属性值设置） — `APPLYEXTCMNTYSTRING.md`
-- [[configobject/UNC/20.15.2/APPLYEXTENDCOMMUNITY]] · APPLYEXTENDCOMMUNITY（扩展团体属性设置） — `APPLYEXTENDCOMMUNITY.md`
-- [[configobject/UNC/20.15.2/APPLYIPV6NEXTHOP]] · APPLYIPV6NEXTHOP（IPv6下一跳设置） — `APPLYIPV6NEXTHOP.md`
-- [[configobject/UNC/20.15.2/APPLYLOCALPREFERENCE]] · APPLYLOCALPREFERENCE（路由BGP本地优先级设置） — `APPLYLOCALPREFERENCE.md`
-- [[configobject/UNC/20.15.2/APPLYNEXTHOP]] · APPLYNEXTHOP（下一跳设置） — `APPLYNEXTHOP.md`
-- [[configobject/UNC/20.15.2/APPLYORIGIN]] · APPLYORIGIN（BGP路由信息的路由源设置） — `APPLYORIGIN.md`
-- [[configobject/UNC/20.15.2/APPLYPREFERENCE]] · APPLYPREFERENCE（路由优先级设置） — `APPLYPREFERENCE.md`
-- [[configobject/UNC/20.15.2/APPLYPREFVALUE]] · APPLYPREFVALUE（BGP路由首选值设置） — `APPLYPREFVALUE.md`
-- [[configobject/UNC/20.15.2/APPLYROUTETYPE]] · APPLYROUTETYPE（路由类型设置） — `APPLYROUTETYPE.md`
-- [[configobject/UNC/20.15.2/APPLYTAG]] · APPLYTAG（路由标签值设置） — `APPLYTAG.md`
-- [[configobject/UNC/20.15.2/APPLYTUNNELPOLICY]] · APPLYTUNNELPOLICY（应用隧道策略） — `APPLYTUNNELPOLICY.md`
-- [[configobject/UNC/20.15.2/AREACODE]] · AREACODE（区域编码） — `AREACODE.md`
-- [[configobject/UNC/20.15.2/AREADECRYPT]] · AREADECRYPT（基于LAC/RAC关闭加密配置） — `AREADECRYPT.md`
-- [[configobject/UNC/20.15.2/AREADNS]] · AREADNS（位置区域DNS域名） — `AREADNS.md`
-- [[configobject/UNC/20.15.2/AREAGP]] · AREAGP（区域群） — `AREAGP.md`
-- [[configobject/UNC/20.15.2/AREAGPMEM]] · AREAGPMEM（区域群成员） — `AREAGPMEM.md`
-- [[configobject/UNC/20.15.2/AREAMEM]] · AREAMEM（跟踪区成员） — `AREAMEM.md`
-- [[configobject/UNC/20.15.2/AREAMMINFO]] · AREAMMINFO（基于区域的网络名称） — `AREAMMINFO.md`
-- [[configobject/UNC/20.15.2/AREATZ]] · AREATZ（区域时区参数） — `AREATZ.md`
-- [[configobject/UNC/20.15.2/ARPPARA]] · ARPPARA（ARP策略参数配置） — `ARPPARA.md`
-- [[configobject/UNC/20.15.2/ARPPROBESESSION]] · ARPPROBESESSION（ARP探测会话） — `ARPPROBESESSION.md`
-- [[configobject/UNC/20.15.2/ARPPROBESTANDBYSRCIP]] · ARPPROBESTANDBYSRCIP（备用成员口ARP探测源地址） — `ARPPROBESTANDBYSRCIP.md`
-- [[configobject/UNC/20.15.2/ARPRANGE]] · ARPRANGE（ARP策略范围配置） — `ARPRANGE.md`
-- [[configobject/UNC/20.15.2/ARPSTATICBLACKLIST]] · ARPSTATICBLACKLIST（ARP静态黑名单） — `ARPSTATICBLACKLIST.md`
-- [[configobject/UNC/20.15.2/ARPSTATICTABLE]] · ARPSTATICTABLE（静态ARP表项） — `ARPSTATICTABLE.md`
-- [[configobject/UNC/20.15.2/ASPATHFILTERNODE]] · ASPATHFILTERNODE（AS路径过滤节点） — `ASPATHFILTERNODE.md`
-- [[configobject/UNC/20.15.2/ASPATHSTRING]] · ASPATHSTRING（替换AS路径值） — `ASPATHSTRING.md`
-- [[configobject/UNC/20.15.2/ASRCHN]] · ASRCHN（容灾业务通道配置） — `ASRCHN.md`
-- [[configobject/UNC/20.15.2/ATTACHIKEPEER]] · ATTACHIKEPEER（绑定IKE对等体） — `ATTACHIKEPEER.md`
-- [[configobject/UNC/20.15.2/AUTHNAMEPWDCTRL]] · AUTHNAMEPWDCTRL（对鉴权信元用户名和密码的控制） — `AUTHNAMEPWDCTRL.md`
-- [[configobject/UNC/20.15.2/AUTOLOCEP]] · AUTOLOCEP（自动上报的NSE下的本端端点） — `AUTOLOCEP.md`
-- [[configobject/UNC/20.15.2/AUTONSE]] · AUTONSE（自动上报的NSE） — `AUTONSE.md`
-- [[configobject/UNC/20.15.2/AUTORP]] · AUTORP（Auto-RP配置） — `AUTORP.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGBFD]] · AUTOSCALINGBFD（BFD会话自动化配置模板） — `AUTOSCALINGBFD.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGBGPLF]] · AUTOSCALINGBGPLF（BGP入不转板自动化配置模板） — `AUTOSCALINGBGPLF.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGBGPMSPEER]] · AUTOSCALINGBGPMSPEER（BGP自动化多源邻居配置模板） — `AUTOSCALINGBGPMSPEER.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGETHTRUNK]] · AUTOSCALINGETHTRUNK（以太网隧道自动化多虚拟网卡配置模板） — `AUTOSCALINGETHTRUNK.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGIPREACH]] · AUTOSCALINGIPREACH（IP可达性检测自动化配置模板） — `AUTOSCALINGIPREACH.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGMPLS]] · AUTOSCALINGMPLS（MPLS自动化配置模板） — `AUTOSCALINGMPLS.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGOSPFPROCGRP]] · AUTOSCALINGOSPFPROCGRP（OSPF进程组自动化配置模板） — `AUTOSCALINGOSPFPROCGRP.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGRUBLACKLIST]] · AUTOSCALINGRUBLACKLIST（自动部署RU黑名单） — `AUTOSCALINGRUBLACKLIST.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGSERVICE]] · AUTOSCALINGSERVICE（自动化配置参数） — `AUTOSCALINGSERVICE.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGSRBFD]] · AUTOSCALINGSRBFD（静态路由的动态BFD自动化配置模板） — `AUTOSCALINGSRBFD.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGSRROUTE]] · AUTOSCALINGSRROUTE（静态路由自动化配置模板） — `AUTOSCALINGSRROUTE.md`
-- [[configobject/UNC/20.15.2/BACKUPGUAMI]] · BACKUPGUAMI（供备GUAMI信息） — `BACKUPGUAMI.md`
-- [[configobject/UNC/20.15.2/BANDWIDTHARP]] · BANDWIDTHARP（基于带宽的ARP控制配置） — `BANDWIDTHARP.md`
-- [[configobject/UNC/20.15.2/BASICCOMMUNITYNODE]] · BASICCOMMUNITYNODE（基础团体属性过滤器节点） — `BASICCOMMUNITYNODE.md`
-- [[configobject/UNC/20.15.2/BFDSESSION]] · BFDSESSION（BFD会话参数） — `BFDSESSION.md`
-- [[configobject/UNC/20.15.2/BGPCONFED]] · BGPCONFED（联盟中自治系统） — `BGPCONFED.md`
-- [[configobject/UNC/20.15.2/BGPMULTIPEER]] · BGPMULTIPEER（BGP多源对等体） — `BGPMULTIPEER.md`
-- [[configobject/UNC/20.15.2/BGPMULTIPEERAF]] · BGPMULTIPEERAF（BGP多源对等体地址族） — `BGPMULTIPEERAF.md`
-- [[configobject/UNC/20.15.2/BGPPEER]] · BGPPEER（BGP对等体） — `BGPPEER.md`
-- [[configobject/UNC/20.15.2/BGPPEERAF]] · BGPPEERAF（BGP对等体地址族） — `BGPPEERAF.md`
-- [[configobject/UNC/20.15.2/BGPPEERAFPRE]] · BGPPEERAFPRE（BGP对等体条件路由匹配前缀） — `BGPPEERAFPRE.md`
-- [[configobject/UNC/20.15.2/BGPPEERBFD]] · BGPPEERBFD（BGP对等体BFD检测） — `BGPPEERBFD.md`
-- [[configobject/UNC/20.15.2/BGPPEERGROUP]] · BGPPEERGROUP（BGP对等体组） — `BGPPEERGROUP.md`
-- [[configobject/UNC/20.15.2/BGPPEERGROUPAF]] · BGPPEERGROUPAF（BGP对等体组地址族） — `BGPPEERGROUPAF.md`
-- [[configobject/UNC/20.15.2/BGPPEERGROUPAFPRE]] · BGPPEERGROUPAFPRE（BGP对等体组条件路由匹配前缀） — `BGPPEERGROUPAFPRE.md`
-- [[configobject/UNC/20.15.2/BGPPEERGROUPBFD]] · BGPPEERGROUPBFD（BGP对等体组BFD检测） — `BGPPEERGROUPBFD.md`
-- [[configobject/UNC/20.15.2/BGPVRF]] · BGPVRF（BGP VPN实例） — `BGPVRF.md`
-- [[configobject/UNC/20.15.2/BGPVRFAF]] · BGPVRFAF（BGP VPN地址族） — `BGPVRFAF.md`
-- [[configobject/UNC/20.15.2/BLACKLIST]] · BLACKLIST（黑名单地址列表） — `BLACKLIST.md`
-- [[configobject/UNC/20.15.2/BLKGWLST]] · BLKGWLST（被禁用网关配置） — `BLKGWLST.md`
-- [[configobject/UNC/20.15.2/BSFAPNGROUP]] · BSFAPNGROUP（APN组） — `BSFAPNGROUP.md`
-- [[configobject/UNC/20.15.2/BSFINFO]] · BSFINFO（BSF信息） — `BSFINFO.md`
-- [[configobject/UNC/20.15.2/BSFIPDOMAINGRP]] · BSFIPDOMAINGRP（IPDOMAIN组） — `BSFIPDOMAINGRP.md`
-- [[configobject/UNC/20.15.2/BSSIDFORNSEI]] · BSSIDFORNSEI（NSEI和BSSID值的对应关系） — `BSSIDFORNSEI.md`
-- [[configobject/UNC/20.15.2/BYPASSFAULTCODE]] · BYPASSFAULTCODE（BYPASS故障状态码） — `BYPASSFAULTCODE.md`
-- [[configobject/UNC/20.15.2/CACHEUPDATEPLCY]] · CACHEUPDATEPLCY（缓存更新策略） — `CACHEUPDATEPLCY.md`
-- [[configobject/UNC/20.15.2/CACHEWHITELST]] · CACHEWHITELST（异网白名单PLMN信息） — `CACHEWHITELST.md`
-- [[configobject/UNC/20.15.2/CANDIDATEAMF]] · CANDIDATEAMF（候选AMF） — `CANDIDATEAMF.md`
-- [[configobject/UNC/20.15.2/CAUSEGRP]] · CAUSEGRP（原因值映射组配置） — `CAUSEGRP.md`
-- [[configobject/UNC/20.15.2/CAUSEMAP]] · CAUSEMAP（原因值映射配置） — `CAUSEMAP.md`
-- [[configobject/UNC/20.15.2/CBC]] · CBC — `CBC.md`
-- [[configobject/UNC/20.15.2/CCGROUP]] · CCGROUP（计费特征组） — `CCGROUP.md`
-- [[configobject/UNC/20.15.2/CCPCCACT]] · CCPCCACT（融合计费Proxy基于CC处理动作） — `CCPCCACT.md`
-- [[configobject/UNC/20.15.2/CCPDNNACT]] · CCPDNNACT（融合计费Proxy基于DNN处理动作） — `CCPDNNACT.md`
-- [[configobject/UNC/20.15.2/CCPFOT]] · CCPFOT（融合计费Proxy Failover模板） — `CCPFOT.md`
-- [[configobject/UNC/20.15.2/CCPRCACT]] · CCPRCACT（融合计费Proxy结果码处理动作） — `CCPRCACT.md`
-- [[configobject/UNC/20.15.2/CCPRGACT]] · CCPRGACT（融合计费Proxy基于RG处理动作） — `CCPRGACT.md`
-- [[configobject/UNC/20.15.2/CCT]] · CCT（融合计费模板） — `CCT.md`
-- [[configobject/UNC/20.15.2/CCVALUE]] · CCVALUE（计费特征值） — `CCVALUE.md`
-- [[configobject/UNC/20.15.2/CDFTOKENWEIGHT]] · CDFTOKENWEIGHT（cdf token权重） — `CDFTOKENWEIGHT.md`
-- [[configobject/UNC/20.15.2/CDRAUDIT]] · CDRAUDIT（话单稽核） — `CDRAUDIT.md`
-- [[configobject/UNC/20.15.2/CDRBACKUP]] · CDRBACKUP（上传SFTP密钥文件到第三方服务器） — `CDRBACKUP.md`
-- [[configobject/UNC/20.15.2/CDRDELPARA]] · CDRDELPARA（话单删除参数） — `CDRDELPARA.md`
-- [[configobject/UNC/20.15.2/CDRDELTASK]] · CDRDELTASK（话单删除任务） — `CDRDELTASK.md`
-- [[configobject/UNC/20.15.2/CDRDISTR]] · CDRDISTR（上传SFTP密钥文件到BS侧） — `CDRDISTR.md`
-- [[configobject/UNC/20.15.2/CDRFIELDTEMP]] · CDRFIELDTEMP（话单字段模板） — `CDRFIELDTEMP.md`
-- [[configobject/UNC/20.15.2/CDRMONITOR]] · CDRMONITOR（话单监控） — `CDRMONITOR.md`
-- [[configobject/UNC/20.15.2/CDRPROC]] · CDRPROC（话单处理） — `CDRPROC.md`
-- [[configobject/UNC/20.15.2/CDRQUERYFILE]] · CDRQUERYFILE（话单查询结果文件） — `CDRQUERYFILE.md`
-- [[configobject/UNC/20.15.2/CDRSTAT]] · CDRSTAT（话单统计） — `CDRSTAT.md`
-- [[configobject/UNC/20.15.2/CDRSTOR]] · CDRSTOR（话单存储） — `CDRSTOR.md`
-- [[configobject/UNC/20.15.2/CELL]] · CELL（小区） — `CELL.md`
-- [[configobject/UNC/20.15.2/CELLGEO]] · CELLGEO（CELLID与地理坐标对应关系） — `CELLGEO.md`
-- [[configobject/UNC/20.15.2/CELLMULFAULTTHD]] · CELLMULFAULTTHD（进程频繁故障监控参数） — `CELLMULFAULTTHD.md`
-- [[configobject/UNC/20.15.2/CERTSCENE]] · CERTSCENE（证书场景描述） — `CERTSCENE.md`
-- [[configobject/UNC/20.15.2/CFGSNSSAI]] · CFGSNSSAI（支持的S-NSSAI） — `CFGSNSSAI.md`
-- [[configobject/UNC/20.15.2/CFGTHRESHOLD]] · CFGTHRESHOLD（配置对象告警阈值） — `CFGTHRESHOLD.md`
-- [[configobject/UNC/20.15.2/CG]] · CG — `CG.md`
-- [[configobject/UNC/20.15.2/CGGROUP]] · CGGROUP（CG组） — `CGGROUP.md`
-- [[configobject/UNC/20.15.2/CHARGECHAR]] · CHARGECHAR（对本地用户、漫游用户、拜访用户所采用的计费属性） — `CHARGECHAR.md`
-- [[configobject/UNC/20.15.2/CHARGEMETHOD]] · CHARGEMETHOD（计费方式） — `CHARGEMETHOD.md`
-- [[configobject/UNC/20.15.2/CHGAPN]] · CHGAPN（APN计费属性） — `CHGAPN.md`
-- [[configobject/UNC/20.15.2/CHGBEHA]] · CHGBEHA（计费行为参数） — `CHGBEHA.md`
-- [[configobject/UNC/20.15.2/CHGCDPIP]] · CHGCDPIP（计费相关的IP配置参数） — `CHGCDPIP.md`
-- [[configobject/UNC/20.15.2/CHGCG]] · CHGCG（CG配置参数） — `CHGCG.md`
-- [[configobject/UNC/20.15.2/CHGDCHAR]] · CHGDCHAR（缺省计费属性参数） — `CHGDCHAR.md`
-- [[configobject/UNC/20.15.2/CHGGNCCCFG]] · CHGGNCCCFG（Gn接口计费属性选择策略） — `CHGGNCCCFG.md`
-- [[configobject/UNC/20.15.2/CHGHOLI]] · CHGHOLI（节假日配置） — `CHGHOLI.md`
-- [[configobject/UNC/20.15.2/CHGIMSICFG]] · CHGIMSICFG（IMSI计费配置） — `CHGIMSICFG.md`
-- [[configobject/UNC/20.15.2/CHGMCDRCFG]] · CHGMCDRCFG（M-CDR计费配置） — `CHGMCDRCFG.md`
-- [[configobject/UNC/20.15.2/CHGPLMNCFG]] · CHGPLMNCFG（PLMN计费配置） — `CHGPLMNCFG.md`
-- [[configobject/UNC/20.15.2/CHGPLMNCG]] · CHGPLMNCG（PLMN-CG配置参数） — `CHGPLMNCG.md`
-- [[configobject/UNC/20.15.2/CHGTARI]] · CHGTARI（费率时段配置） — `CHGTARI.md`
-- [[configobject/UNC/20.15.2/CHRRPTLOCINFO]] · CHRRPTLOCINFO（CHR本地存盘位置配置） — `CHRRPTLOCINFO.md`
-- [[configobject/UNC/20.15.2/CHRRPTSUBID]] · CHRRPTSUBID（CHR本地存盘用户） — `CHRRPTSUBID.md`
-- [[configobject/UNC/20.15.2/CHRSNDPLCY]] · CHRSNDPLCY（CHR传输策略） — `CHRSNDPLCY.md`
-- [[configobject/UNC/20.15.2/CMDRCACT]] · CMDRCACT（命令层异常返回码处理动作） — `CMDRCACT.md`
-- [[configobject/UNC/20.15.2/COMMUNITYFILTER]] · COMMUNITYFILTER（团体属性过滤器） — `COMMUNITYFILTER.md`
-- [[configobject/UNC/20.15.2/COMPKG]] · COMPKG（扩展包） — `COMPKG.md`
-- [[configobject/UNC/20.15.2/CONFLICTIP]] · CONFLICTIP（冲突地址） — `CONFLICTIP.md`
-- [[configobject/UNC/20.15.2/CONNECTPLMN]] · CONNECTPLMN（互联PLMN） — `CONNECTPLMN.md`
-- [[configobject/UNC/20.15.2/CPCGGRP]] · CPCGGRP（抄送CG组） — `CPCGGRP.md`
-- [[configobject/UNC/20.15.2/CPFLOWFILTER]] · CPFLOWFILTER（CP流过滤器） — `CPFLOWFILTER.md`
-- [[configobject/UNC/20.15.2/CPGTPUADDR]] · CPGTPUADDR（CP GTP-U地址） — `CPGTPUADDR.md`
-- [[configobject/UNC/20.15.2/CPNODE]] · CPNODE（CP节点信息） — `CPNODE.md`
-- [[configobject/UNC/20.15.2/CPPOINT]] · CPPOINT（CP端点信息） — `CPPOINT.md`
-- [[configobject/UNC/20.15.2/CPUABILITYCFG]] · CPUABILITYCFG（不同CPU类型的能力系数和基础消耗。） — `CPUABILITYCFG.md`
-- [[configobject/UNC/20.15.2/CPUCAPABILITY]] · CPUCAPABILITY（CPU能力基线） — `CPUCAPABILITY.md`
-- [[configobject/UNC/20.15.2/CSCFGBYOMCM]] · CSCFGBYOMCM（业务读取OM缓存数据的配置） — `CSCFGBYOMCM.md`
-- [[configobject/UNC/20.15.2/CTXSTARTRATING]] · CTXSTARTRATING（给OCS/CHF发送的消息初始携带的计费属性） — `CTXSTARTRATING.md`
-- [[configobject/UNC/20.15.2/DAMPROUTE]] · DAMPROUTE（振荡抑制路由） — `DAMPROUTE.md`
-- [[configobject/UNC/20.15.2/DBRECORDS]] · DBRECORDS（数据库中的表记录） — `DBRECORDS.md`
-- [[configobject/UNC/20.15.2/DBRUMEM]] · DBRUMEM（CSDB RU内存信息） — `DBRUMEM.md`
-- [[configobject/UNC/20.15.2/DCCTEMPLATE]] · DCCTEMPLATE（DCC模板） — `DCCTEMPLATE.md`
-- [[configobject/UNC/20.15.2/DCN]] · DCN — `DCN.md`
-- [[configobject/UNC/20.15.2/DCNMAP]] · DCNMAP（DCN映射关系） — `DCNMAP.md`
-- [[configobject/UNC/20.15.2/DCNMEMBER]] · DCNMEMBER（DCN成员） — `DCNMEMBER.md`
-- [[configobject/UNC/20.15.2/DCNPLCY]] · DCNPLCY（DCN配置策略） — `DCNPLCY.md`
-- [[configobject/UNC/20.15.2/DDNPRIORITYAPN]] · DDNPRIORITYAPN（基于APN的DDN消息优先级配置） — `DDNPRIORITYAPN.md`
-- [[configobject/UNC/20.15.2/DDNPRIORITYARP]] · DDNPRIORITYARP（基于ARP的DDN消息优先级配置） — `DDNPRIORITYARP.md`
-- [[configobject/UNC/20.15.2/DEACTQFPLCY]] · DEACTQFPLCY（去活用户面专有QoS Flow策略） — `DEACTQFPLCY.md`
-- [[configobject/UNC/20.15.2/DEBUGRECORD]] · DEBUGRECORD（异常信息记录） — `DEBUGRECORD.md`
-- [[configobject/UNC/20.15.2/DFTSRVNODEPLMN]] · DFTSRVNODEPLMN（默认PLMN） — `DFTSRVNODEPLMN.md`
-- [[configobject/UNC/20.15.2/DHCP6CLIENT]] · DHCP6CLIENT（DHCPv6客户端） — `DHCP6CLIENT.md`
-- [[configobject/UNC/20.15.2/DHCPCLIENT]] · DHCPCLIENT（DHCPv4客户端） — `DHCPCLIENT.md`
-- [[configobject/UNC/20.15.2/DHCPGIP]] · DHCPGIP（支持DHCP服务的GGSN IP地址） — `DHCPGIP.md`
-- [[configobject/UNC/20.15.2/DHCPSERVER]] · DHCPSERVER（DHCP服务器） — `DHCPSERVER.md`
-- [[configobject/UNC/20.15.2/DHCPSERVERGRP]] · DHCPSERVERGRP（DHCP服务器组） — `DHCPSERVERGRP.md`
-- [[configobject/UNC/20.15.2/DIAMAAABNDGRP]] · DIAMAAABNDGRP（Diameter AAA服务器组里的Diameter AAA服务器） — `DIAMAAABNDGRP.md`
-- [[configobject/UNC/20.15.2/DIAMAAAGRP]] · DIAMAAAGRP（Diameter AAA服务器组） — `DIAMAAAGRP.md`
-- [[configobject/UNC/20.15.2/DIAMCONNECTION]] · DIAMCONNECTION（Diameter链路） — `DIAMCONNECTION.md`
-- [[configobject/UNC/20.15.2/DIAMCONNGRP]] · DIAMCONNGRP（Diameter链路组） — `DIAMCONNGRP.md`
-- [[configobject/UNC/20.15.2/DIAMDICTPATH]] · DIAMDICTPATH（Diameter字典加载路径） — `DIAMDICTPATH.md`
-- [[configobject/UNC/20.15.2/DIAMETERAAA]] · DIAMETERAAA（Diameter AAA服务器） — `DIAMETERAAA.md`
-- [[configobject/UNC/20.15.2/DIAMLOCINFO]] · DIAMLOCINFO（Diameter本端信息） — `DIAMLOCINFO.md`
-- [[configobject/UNC/20.15.2/DIAMPEERADDR]] · DIAMPEERADDR（Diameter对端地址） — `DIAMPEERADDR.md`
-- [[configobject/UNC/20.15.2/DIAMRTNEXTHOP]] · DIAMRTNEXTHOP（Diameter路由下一跳） — `DIAMRTNEXTHOP.md`
-- [[configobject/UNC/20.15.2/DIAMRTREALM]] · DIAMRTREALM（Diameter路由域名信息） — `DIAMRTREALM.md`
-- [[configobject/UNC/20.15.2/DIFFSERVICE]] · DIFFSERVICE（差异化服务接入门限） — `DIFFSERVICE.md`
-- [[configobject/UNC/20.15.2/DISCADAPTFC]] · DISCADAPTFC（服务发现自适应流控NF级配置） — `DISCADAPTFC.md`
-- [[configobject/UNC/20.15.2/DMAVPDICT]] · DMAVPDICT（Diameter数据字典中的AVP参数） — `DMAVPDICT.md`
-- [[configobject/UNC/20.15.2/DMAVPDICTALL]] · DMAVPDICTALL（所有Diameter AVP表） — `DMAVPDICTALL.md`
-- [[configobject/UNC/20.15.2/DMCMPTBYIMSI]] · DMCMPTBYIMSI（IMSI对应的Diameter兼容性） — `DMCMPTBYIMSI.md`
-- [[configobject/UNC/20.15.2/DMFOVERCODE]] · DMFOVERCODE（触发重选路由的错误码） — `DMFOVERCODE.md`
-- [[configobject/UNC/20.15.2/DMHOSTRT]] · DMHOSTRT（Diameter主机路由） — `DMHOSTRT.md`
-- [[configobject/UNC/20.15.2/DMLE]] · DMLE（Diameter本端实体） — `DMLE.md`
-- [[configobject/UNC/20.15.2/DMLKS]] · DMLKS（Diameter链路集配置） — `DMLKS.md`
-- [[configobject/UNC/20.15.2/DMLNK]] · DMLNK（Diameter链路配置） — `DMLNK.md`
-- [[configobject/UNC/20.15.2/DMOC]] · DMOC（Diameter流控节点） — `DMOC.md`
-- [[configobject/UNC/20.15.2/DMPE]] · DMPE（Diameter对端实体） — `DMPE.md`
-- [[configobject/UNC/20.15.2/DMRT]] · DMRT（Diameter域路由配置） — `DMRT.md`
-- [[configobject/UNC/20.15.2/DMRTGRP]] · DMRTGRP（Diameter路由组） — `DMRTGRP.md`
-- [[configobject/UNC/20.15.2/DMRTPRI]] · DMRTPRI（Diameter域路由优先级权重） — `DMRTPRI.md`
-- [[configobject/UNC/20.15.2/DMVLE]] · DMVLE（Diameter虚拟本地实体） — `DMVLE.md`
-- [[configobject/UNC/20.15.2/DNAIINFO]] · DNAIINFO（DNAI信息） — `DNAIINFO.md`
-- [[configobject/UNC/20.15.2/DNAIUPFINFO]] · DNAIUPFINFO（指定DNAI的UPF节点信息） — `DNAIUPFINFO.md`
-- [[configobject/UNC/20.15.2/DNAIUPSELPLY]] · DNAIUPSELPLY（DNAI粒度的UPF选择策略） — `DNAIUPSELPLY.md`
-- [[configobject/UNC/20.15.2/DNAREA]] · DNAREA（DNAI服务区域） — `DNAREA.md`
-- [[configobject/UNC/20.15.2/DNNGRP]] · DNNGRP（DNN群组） — `DNNGRP.md`
-- [[configobject/UNC/20.15.2/DNNGRPMEM]] · DNNGRPMEM（DNN群组成员） — `DNNGRPMEM.md`
-- [[configobject/UNC/20.15.2/DNNRANSECPLCY]] · DNNRANSECPLCY（DNN RAN侧安全策略） — `DNNRANSECPLCY.md`
-- [[configobject/UNC/20.15.2/DNNSMARTPLCY]] · DNNSMARTPLCY（DNN智能分流配置） — `DNNSMARTPLCY.md`
-- [[configobject/UNC/20.15.2/DNNTAISSP]] · DNNTAISSP（DNN的TAI和ServingScope映射） — `DNNTAISSP.md`
-- [[configobject/UNC/20.15.2/DNSLE]] · DNSLE（DNS Client IP与DNS实体的绑定关系） — `DNSLE.md`
-- [[configobject/UNC/20.15.2/DNSN]] · DNSN（DNS NAPTR记录） — `DNSN.md`
-- [[configobject/UNC/20.15.2/DNSQ]] · DNSQ（DNS查询控制参数） — `DNSQ.md`
-- [[configobject/UNC/20.15.2/DNSS]] · DNSS（DNS服务器） — `DNSS.md`
-- [[configobject/UNC/20.15.2/DRA]] · DRA — `DRA.md`
-- [[configobject/UNC/20.15.2/DRCOMM]] · DRCOMM（容灾实例地址） — `DRCOMM.md`
-- [[configobject/UNC/20.15.2/DRDCI]] · DRDCI（DC间通信通道信息） — `DRDCI.md`
-- [[configobject/UNC/20.15.2/DRGROUPINFO]] · DRGROUPINFO（容灾组信息） — `DRGROUPINFO.md`
-- [[configobject/UNC/20.15.2/DRINST]] · DRINST（容灾实例） — `DRINST.md`
-- [[configobject/UNC/20.15.2/DRSEPINTERFACE]] · DRSEPINTERFACE（故障隔离接口） — `DRSEPINTERFACE.md`
-- [[configobject/UNC/20.15.2/DSCPMAP]] · DSCPMAP（DSCP值到VLAN优先级的映射） — `DSCPMAP.md`
-- [[configobject/UNC/20.15.2/DSCPPRI]] · DSCPPRI（DSCP映射优先级配置表） — `DSCPPRI.md`
-- [[configobject/UNC/20.15.2/DSCPPRIMCR]] · DSCPPRIMCR（DSCP映射优先级配置表） — `DSCPPRIMCR.md`
-- [[configobject/UNC/20.15.2/E2ETRCEX]] · E2ETRCEX（端到端用户跟踪） — `E2ETRCEX.md`
-- [[configobject/UNC/20.15.2/E2ETRCTSK]] · E2ETRCTSK（端到端跟踪任务） — `E2ETRCTSK.md`
-- [[configobject/UNC/20.15.2/EIR]] · EIR（EIR配置） — `EIR.md`
-- [[configobject/UNC/20.15.2/EMGCFG]] · EMGCFG（运营商紧急呼叫功能配置） — `EMGCFG.md`
-- [[configobject/UNC/20.15.2/EMGCNUM]] · EMGCNUM（紧急号码信息表记录） — `EMGCNUM.md`
-- [[configobject/UNC/20.15.2/EMMPROCTRLIMSI]] · EMMPROCTRLIMSI（指定用户S1模式移动性管理流程控制参数） — `EMMPROCTRLIMSI.md`
-- [[configobject/UNC/20.15.2/ENBGP]] · ENBGP（eNodeB群组） — `ENBGP.md`
-- [[configobject/UNC/20.15.2/ENBGPMEM]] · ENBGPMEM（eNodeB群组成员） — `ENBGPMEM.md`
-- [[configobject/UNC/20.15.2/ENBNSINDB]] · ENBNSINDB（配置的eNodeB邻接关系） — `ENBNSINDB.md`
-- [[configobject/UNC/20.15.2/EPLMNAREAMEM]] · EPLMNAREAMEM（跟踪区域组成员） — `EPLMNAREAMEM.md`
-- [[configobject/UNC/20.15.2/EPLMNGRP]] · EPLMNGRP（等价PLMN组） — `EPLMNGRP.md`
-- [[configobject/UNC/20.15.2/EPLMNGRPMEM]] · EPLMNGRPMEM（等价PLMN组成员） — `EPLMNGRPMEM.md`
-- [[configobject/UNC/20.15.2/EPSQOS4DEFBER]] · EPSQOS4DEFBER（Qos Profile缺省承载QoS属性） — `EPSQOS4DEFBER.md`
-- [[configobject/UNC/20.15.2/EPSQOSACTION]] · EPSQOSACTION（EPS QoS控制动作配置） — `EPSQOSACTION.md`
-- [[configobject/UNC/20.15.2/EPSREMARK]] · EPSREMARK（EPS QoS到TOS/DSCP的映射规则） — `EPSREMARK.md`
-- [[configobject/UNC/20.15.2/EPSSUBQOS]] · EPSSUBQOS（EPS签约QoS配置） — `EPSSUBQOS.md`
-- [[configobject/UNC/20.15.2/ESMLC]] · ESMLC（E-SMLC配置） — `ESMLC.md`
-- [[configobject/UNC/20.15.2/ETHSUBIF]] · ETHSUBIF（子接口配置） — `ETHSUBIF.md`
-- [[configobject/UNC/20.15.2/EXEMPTSERVICE]] · EXEMPTSERVICE（豁免业务） — `EXEMPTSERVICE.md`
-- [[configobject/UNC/20.15.2/EXPCFGPARA]] · EXPCFGPARA（MML导入导出密钥） — `EXPCFGPARA.md`
-- [[configobject/UNC/20.15.2/EXTENDCOMMUNITYFILTER]] · EXTENDCOMMUNITYFILTER（扩展团体属性过滤器） — `EXTENDCOMMUNITYFILTER.md`
-- [[configobject/UNC/20.15.2/EXTENDCOMMUNITYFILTERNODE]] · EXTENDCOMMUNITYFILTERNODE（基础扩展团体属性过滤器节点） — `EXTENDCOMMUNITYFILTERNODE.md`
-- [[configobject/UNC/20.15.2/EXTENDQCIMAP]] · EXTENDQCIMAP（扩展QCI和标准QCI的映射关系） — `EXTENDQCIMAP.md`
-- [[configobject/UNC/20.15.2/EXTRFSP]] · EXTRFSP（扩展RFSP策略组成员） — `EXTRFSP.md`
-- [[configobject/UNC/20.15.2/FASTSCANRATE]] · FASTSCANRATE（快速扫描任务） — `FASTSCANRATE.md`
-- [[configobject/UNC/20.15.2/FAULTRANGRP]] · FAULTRANGRP（N3接口故障RAN组） — `FAULTRANGRP.md`
-- [[configobject/UNC/20.15.2/FAULTUPGRP]] · FAULTUPGRP（N3接口故障UPF组） — `FAULTUPGRP.md`
-- [[configobject/UNC/20.15.2/FCPARAM]] · FCPARAM（流控参数） — `FCPARAM.md`
-- [[configobject/UNC/20.15.2/FEATLOCREPORT]] · FEATLOCREPORT（基于特性的位置上报配置） — `FEATLOCREPORT.md`
-- [[configobject/UNC/20.15.2/FESTIVAL]] · FESTIVAL（计费节假日表） — `FESTIVAL.md`
-- [[configobject/UNC/20.15.2/FILTERGP]] · FILTERGP（过滤组） — `FILTERGP.md`
-- [[configobject/UNC/20.15.2/FILTERGPMEMBER]] · FILTERGPMEMBER（过滤器组成员） — `FILTERGPMEMBER.md`
-- [[configobject/UNC/20.15.2/FILTEROCSPARA]] · FILTEROCSPARA（需要过滤掉的OCS实例信息） — `FILTEROCSPARA.md`
-- [[configobject/UNC/20.15.2/FILTERPOLICY]] · FILTERPOLICY（路由过滤策略） — `FILTERPOLICY.md`
-- [[configobject/UNC/20.15.2/FLOWFILTER]] · FLOWFILTER（流过滤器） — `FLOWFILTER.md`
-- [[configobject/UNC/20.15.2/FMTPKGCFG]] · FMTPKGCFG（格式引擎包软参） — `FMTPKGCFG.md`
-- [[configobject/UNC/20.15.2/FWAMATCHRULE]] · FWAMATCHRULE（FWA用户匹配规则） — `FWAMATCHRULE.md`
-- [[configobject/UNC/20.15.2/FWRULE]] · FWRULE（转发规则） — `FWRULE.md`
-- [[configobject/UNC/20.15.2/GAISOLATION]] · GAISOLATION（Ga业务隔离配置） — `GAISOLATION.md`
-- [[configobject/UNC/20.15.2/GBACCAREALST]] · GBACCAREALST（Gb模式区域漫游限制参数） — `GBACCAREALST.md`
-- [[configobject/UNC/20.15.2/GBARD]] · GBARD（Gb模式接入限制参数） — `GBARD.md`
-- [[configobject/UNC/20.15.2/GBAUTHCIPH]] · GBAUTHCIPH（Gb模式用户安全参数） — `GBAUTHCIPH.md`
-- [[configobject/UNC/20.15.2/GBEPPOOL]] · GBEPPOOL（地址池中IP地址） — `GBEPPOOL.md`
-- [[configobject/UNC/20.15.2/GBIMEICFG]] · GBIMEICFG（Gb模式IMEI配置） — `GBIMEICFG.md`
-- [[configobject/UNC/20.15.2/GBIPLOCENDPT]] · GBIPLOCENDPT（本地端点配置） — `GBIPLOCENDPT.md`
-- [[configobject/UNC/20.15.2/GBIPRMTENDPT]] · GBIPRMTENDPT（对端端点配置） — `GBIPRMTENDPT.md`
-- [[configobject/UNC/20.15.2/GBNSECFGPARA]] · GBNSECFGPARA（NSE属性模板） — `GBNSECFGPARA.md`
-- [[configobject/UNC/20.15.2/GBNSEGRP]] · GBNSEGRP（NSE和属性模板的关联） — `GBNSEGRP.md`
-- [[configobject/UNC/20.15.2/GBRBWCTRL]] · GBRBWCTRL（GBR承载带宽速率控制配置） — `GBRBWCTRL.md`
-- [[configobject/UNC/20.15.2/GBSUBRRLST]] · GBSUBRRLST（Gb模式用户漫游限制列表） — `GBSUBRRLST.md`
-- [[configobject/UNC/20.15.2/GGSNCAUSECTRL]] · GGSNCAUSECTRL（GGSN-C原因值控制参数） — `GGSNCAUSECTRL.md`
-- [[configobject/UNC/20.15.2/GGSNCHARACT]] · GGSNCHARACT（GGSN属性配置信息） — `GGSNCHARACT.md`
-- [[configobject/UNC/20.15.2/GLBCTXREQRATE]] · GLBCTXREQRATE（全局初始请求计费绑定关系） — `GLBCTXREQRATE.md`
-- [[configobject/UNC/20.15.2/GLBDCCTEMPLATE]] · GLBDCCTEMPLATE（计费属性与在线计费模板绑定关系） — `GLBDCCTEMPLATE.md`
-- [[configobject/UNC/20.15.2/GLBDIAMREALM]] · GLBDIAMREALM（全局Diameter域） — `GLBDIAMREALM.md`
-- [[configobject/UNC/20.15.2/GLBOFCTEMPLATE]] · GLBOFCTEMPLATE（全局离线计费模板） — `GLBOFCTEMPLATE.md`
-- [[configobject/UNC/20.15.2/GLBPCRFGROUP]] · GLBPCRFGROUP（全局PCRF组绑定关系） — `GLBPCRFGROUP.md`
-- [[configobject/UNC/20.15.2/GLBURRGROUP]] · GLBURRGROUP（全局使用量上报规则组） — `GLBURRGROUP.md`
-- [[configobject/UNC/20.15.2/GMLC]] · GMLC（GMLC配置） — `GMLC.md`
-- [[configobject/UNC/20.15.2/GMLCAU]] · GMLCAU（GMLC权限配置） — `GMLCAU.md`
-- [[configobject/UNC/20.15.2/GMLCCLIENT]] · GMLCCLIENT（GMLC和LCS Client对照关系） — `GMLCCLIENT.md`
-- [[configobject/UNC/20.15.2/GMLCSELGRP]] · GMLCSELGRP（GMLC选择策略组） — `GMLCSELGRP.md`
-- [[configobject/UNC/20.15.2/GMLCSELPLCY]] · GMLCSELPLCY（GMLC选择策略） — `GMLCSELPLCY.md`
-- [[configobject/UNC/20.15.2/GRETUNNEL]] · GRETUNNEL（GRE隧道） — `GRETUNNEL.md`
-- [[configobject/UNC/20.15.2/GRPNGLANFUNC]] · GRPNGLANFUNC（指定群组的5G LAN会话扩展参数） — `GRPNGLANFUNC.md`
-- [[configobject/UNC/20.15.2/GTPALMMSK]] · GTPALMMSK（GTP路径断告警屏蔽记录） — `GTPALMMSK.md`
-- [[configobject/UNC/20.15.2/GTPCAUSE]] · GTPCAUSE（GTP原因值） — `GTPCAUSE.md`
-- [[configobject/UNC/20.15.2/GTPCCMPT]] · GTPCCMPT（GTP-C V0/V1协议兼容性配置） — `GTPCCMPT.md`
-- [[configobject/UNC/20.15.2/GTPCINTF]] · GTPCINTF（GTP-C接口信息） — `GTPCINTF.md`
-- [[configobject/UNC/20.15.2/GTPCINTFATTR]] · GTPCINTFATTR（GTP-C IP地址接口属性） — `GTPCINTFATTR.md`
-- [[configobject/UNC/20.15.2/GTPCLE]] · GTPCLE（GTP-C本地实体） — `GTPCLE.md`
-- [[configobject/UNC/20.15.2/GTPCLEGRP]] · GTPCLEGRP（GTP-C本地实体组） — `GTPCLEGRP.md`
-- [[configobject/UNC/20.15.2/GTPCLEGRPMEM]] · GTPCLEGRPMEM（GTP-C本地实体组成员） — `GTPCLEGRPMEM.md`
-- [[configobject/UNC/20.15.2/GTPCPATH]] · GTPCPATH（GTP-C路径） — `GTPCPATH.md`
-- [[configobject/UNC/20.15.2/GTPCPATHDP]] · GTPCPATHDP（GTP-C路径管理自定义策略） — `GTPCPATHDP.md`
-- [[configobject/UNC/20.15.2/GTPCPATHINFO]] · GTPCPATHINFO（GTP-C路径） — `GTPCPATHINFO.md`
-- [[configobject/UNC/20.15.2/GTPCPATHMP]] · GTPCPATHMP（GTP-C路径管理策略） — `GTPCPATHMP.md`
-- [[configobject/UNC/20.15.2/GTPCT3N3]] · GTPCT3N3（GTP-C T3N3参数） — `GTPCT3N3.md`
-- [[configobject/UNC/20.15.2/GTPCV2CMPT]] · GTPCV2CMPT（GTP-C V2协议兼容性） — `GTPCV2CMPT.md`
-- [[configobject/UNC/20.15.2/GTPCWHITELIST]] · GTPCWHITELIST（GTP-C路径白名单） — `GTPCWHITELIST.md`
-- [[configobject/UNC/20.15.2/GTPPLOCINFO]] · GTPPLOCINFO（GTPP本端信息） — `GTPPLOCINFO.md`
-- [[configobject/UNC/20.15.2/GTPUINTFATTR]] · GTPUINTFATTR（GTP-U IP地址接口属性） — `GTPUINTFATTR.md`
-- [[configobject/UNC/20.15.2/GTPULE]] · GTPULE（GTP-U本地实体） — `GTPULE.md`
-- [[configobject/UNC/20.15.2/GTPUPATHDP]] · GTPUPATHDP（GTP-U路径管理自定义策略） — `GTPUPATHDP.md`
-- [[configobject/UNC/20.15.2/GTPUPATHINFO]] · GTPUPATHINFO（GTPU路径） — `GTPUPATHINFO.md`
-- [[configobject/UNC/20.15.2/GUAMI]] · GUAMI（AMF全局标识） — `GUAMI.md`
-- [[configobject/UNC/20.15.2/GULIWKPLCY]] · GULIWKPLCY（GUL互操作本地策略） — `GULIWKPLCY.md`
-- [[configobject/UNC/20.15.2/GUREDIRPLCY]] · GUREDIRPLCY（GU重定向策略） — `GUREDIRPLCY.md`
-- [[configobject/UNC/20.15.2/GUTISELAREACODE]] · GUTISELAREACODE（GUTI选网功能区域编码） — `GUTISELAREACODE.md`
-- [[configobject/UNC/20.15.2/GUTISELAREAMEM]] · GUTISELAREAMEM（GUTI选网功能区域成员） — `GUTISELAREAMEM.md`
-- [[configobject/UNC/20.15.2/GWPRESELBYIMSI]] · GWPRESELBYIMSI（指定用户优选网关） — `GWPRESELBYIMSI.md`
-- [[configobject/UNC/20.15.2/GWRESTORAPN]] · GWRESTORAPN（网关容灾APN） — `GWRESTORAPN.md`
-- [[configobject/UNC/20.15.2/GWSELBYCC]] · GWSELBYCC（基于CC选择GGSN/P-GW） — `GWSELBYCC.md`
-- [[configobject/UNC/20.15.2/GWSELBYIMEI]] · GWSELBYIMEI（基于IMEI选择GGSN/P-GW配置） — `GWSELBYIMEI.md`
-- [[configobject/UNC/20.15.2/GWSELPLCY]] · GWSELPLCY（GGSN/P-GW选择策略） — `GWSELPLCY.md`
-- [[configobject/UNC/20.15.2/GXUPFGROUP]] · GXUPFGROUP（Gx UPF组） — `GXUPFGROUP.md`
-- [[configobject/UNC/20.15.2/H2SRVPLMN]] · H2SRVPLMN（Home PLMN到Serving PLMN的对应关系） — `H2SRVPLMN.md`
-- [[configobject/UNC/20.15.2/HLRBPFAULTCODE]] · HLRBPFAULTCODE（HLR BYPASS故障状态码） — `HLRBPFAULTCODE.md`
-- [[configobject/UNC/20.15.2/HNOINFO]] · HNOINFO（归属网络信息） — `HNOINFO.md`
-- [[configobject/UNC/20.15.2/HNOSRVPLMN]] · HNOSRVPLMN（归属网络Serving PLMN信息） — `HNOSRVPLMN.md`
-- [[configobject/UNC/20.15.2/HOMEGROUP]] · HOMEGROUP（Home Group） — `HOMEGROUP.md`
-- [[configobject/UNC/20.15.2/HOMEIP]] · HOMEIP（Home IP地址） — `HOMEIP.md`
-- [[configobject/UNC/20.15.2/HOMEPGWIP]] · HOMEPGWIP（归属地PGW-C IP地址） — `HOMEPGWIP.md`
-- [[configobject/UNC/20.15.2/HOMESMFINSTID]] · HOMESMFINSTID（指定归属地SMF实例标识） — `HOMESMFINSTID.md`
-- [[configobject/UNC/20.15.2/HOSTSTCIF]] · HOSTSTCIF（接口协议报文统计配置） — `HOSTSTCIF.md`
-- [[configobject/UNC/20.15.2/HPATCH]] · HPATCH（热补丁） — `HPATCH.md`
-- [[configobject/UNC/20.15.2/HPLMN]] · HPLMN（本地PLMN） — `HPLMN.md`
-- [[configobject/UNC/20.15.2/HSSBPAPNGRP]] · HSSBPAPNGRP（HSS BYPASS最小APN签约数据群组） — `HSSBPAPNGRP.md`
-- [[configobject/UNC/20.15.2/HSSBPAPNSUB]] · HSSBPAPNSUB（HSS BYPASS最小APN签约数据配置） — `HSSBPAPNSUB.md`
-- [[configobject/UNC/20.15.2/HSSBPFAULTCODE]] · HSSBPFAULTCODE（HSS BYPASS故障状态码） — `HSSBPFAULTCODE.md`
-- [[configobject/UNC/20.15.2/HSSBPOFC]] · HSSBPOFC（故障状态HSS） — `HSSBPOFC.md`
-- [[configobject/UNC/20.15.2/HSSBPUSRSUB]] · HSSBPUSRSUB（HSS BYPASS最小用户签约数据配置） — `HSSBPUSRSUB.md`
-- [[configobject/UNC/20.15.2/HTRIMSICFG]] · HTRIMSICFG（HTR号段） — `HTRIMSICFG.md`
-- [[configobject/UNC/20.15.2/HTROFC]] · HTROFC（HTR局向） — `HTROFC.md`
-- [[configobject/UNC/20.15.2/HTTPERRHANDLER]] · HTTPERRHANDLER（间接路由代理故障重选配置） — `HTTPERRHANDLER.md`
-- [[configobject/UNC/20.15.2/HTTPFCIPGRP]] · HTTPFCIPGRP（HTTP流控组） — `HTTPFCIPGRP.md`
-- [[configobject/UNC/20.15.2/HTTPFCMSG]] · HTTPFCMSG（HTTP流控消息类型） — `HTTPFCMSG.md`
-- [[configobject/UNC/20.15.2/HTTPFIXEDFC]] · HTTPFIXEDFC（HTTP流控组固定速率流控信息） — `HTTPFIXEDFC.md`
-- [[configobject/UNC/20.15.2/HTTPFIXEDFCINF]] · HTTPFIXEDFCINF（HTTP接口类型固定速率流控信息） — `HTTPFIXEDFCINF.md`
-- [[configobject/UNC/20.15.2/HTTPHTRMS]] · HTTPHTRMS（HTR流控安全边界配置） — `HTTPHTRMS.md`
-- [[configobject/UNC/20.15.2/HTTPLE]] · HTTPLE（HTTP本端实体） — `HTTPLE.md`
-- [[configobject/UNC/20.15.2/HTTPLEGRP]] · HTTPLEGRP（HTTP本端实体组） — `HTTPLEGRP.md`
-- [[configobject/UNC/20.15.2/HTTPOAUTHKEY]] · HTTPOAUTHKEY（HTTPOauth密钥） — `HTTPOAUTHKEY.md`
-- [[configobject/UNC/20.15.2/HTTPOFC]] · HTTPOFC（HTTP局向） — `HTTPOFC.md`
-- [[configobject/UNC/20.15.2/HTTPRESCFG]] · HTTPRESCFG（HTTP资源流控门限） — `HTTPRESCFG.md`
-- [[configobject/UNC/20.15.2/HTTPSTATOBJ]] · HTTPSTATOBJ（基于对端结点的性能统计测量对象信息） — `HTTPSTATOBJ.md`
-- [[configobject/UNC/20.15.2/HTTPSTATPARA]] · HTTPSTATPARA（HTTP统计参数） — `HTTPSTATPARA.md`
-- [[configobject/UNC/20.15.2/HTTPSTATUS]] · HTTPSTATUS（HTTP状态码判定配置） — `HTTPSTATUS.md`
-- [[configobject/UNC/20.15.2/HTTPVPNMAP]] · HTTPVPNMAP（HTTP VPN映射关系） — `HTTPVPNMAP.md`
-- [[configobject/UNC/20.15.2/ICMPOPTSECURITY]] · ICMPOPTSECURITY（ICMP选项安全配置） — `ICMPOPTSECURITY.md`
-- [[configobject/UNC/20.15.2/ICMPSECURITY]] · ICMPSECURITY（ICMP安全配置） — `ICMPSECURITY.md`
-- [[configobject/UNC/20.15.2/IFALLOWEDVLAN]] · IFALLOWEDVLAN（主接口允许通过的VLAN） — `IFALLOWEDVLAN.md`
-- [[configobject/UNC/20.15.2/IFCONTROLFLAP]] · IFCONTROLFLAP（接口震荡抑制） — `IFCONTROLFLAP.md`
-- [[configobject/UNC/20.15.2/IFICMPSECURITY]] · IFICMPSECURITY（接口下ICMP安全配置） — `IFICMPSECURITY.md`
-- [[configobject/UNC/20.15.2/IFIPV4ADDRESS]] · IFIPV4ADDRESS（接口IPv4地址） — `IFIPV4ADDRESS.md`
-- [[configobject/UNC/20.15.2/IFIPV4ADDRESSIPSEC]] · IFIPV4ADDRESSIPSEC（接口IPv4地址） — `IFIPV4ADDRESSIPSEC.md`
-- [[configobject/UNC/20.15.2/IFIPV4UNNUM]] · IFIPV4UNNUM（接口IPv4借用地址） — `IFIPV4UNNUM.md`
-- [[configobject/UNC/20.15.2/IFIPV4UNNUMIPSEC]] · IFIPV4UNNUMIPSEC（接口IPv4借用地址） — `IFIPV4UNNUMIPSEC.md`
-- [[configobject/UNC/20.15.2/IFIPV6ADDRESS]] · IFIPV6ADDRESS（接口IPv6地址） — `IFIPV6ADDRESS.md`
-- [[configobject/UNC/20.15.2/IFIPV6ADDRESSIPSEC]] · IFIPV6ADDRESSIPSEC（接口IPv6地址） — `IFIPV6ADDRESSIPSEC.md`
-- [[configobject/UNC/20.15.2/IFIPV6ADDRPOLICY]] · IFIPV6ADDRPOLICY（IPv6地址策略） — `IFIPV6ADDRPOLICY.md`
-- [[configobject/UNC/20.15.2/IFIPV6CGA]] · IFIPV6CGA（IPv6 CGA地址信息） — `IFIPV6CGA.md`
-- [[configobject/UNC/20.15.2/IFIPV6NDRAPREFIX]] · IFIPV6NDRAPREFIX（IPv6 RA通告前缀） — `IFIPV6NDRAPREFIX.md`
-- [[configobject/UNC/20.15.2/IFL2FLOWMODE]] · IFL2FLOWMODE（主接口二层透传模式） — `IFL2FLOWMODE.md`
-- [[configobject/UNC/20.15.2/IKEPEER]] · IKEPEER（IKE对等体） — `IKEPEER.md`
-- [[configobject/UNC/20.15.2/IKEPEER6]] · IKEPEER6（IPv6 IKE对等体） — `IKEPEER6.md`
-- [[configobject/UNC/20.15.2/IKEPROPOSAL]] · IKEPROPOSAL（IKE提议） — `IKEPROPOSAL.md`
-- [[configobject/UNC/20.15.2/IMEIFORFD]] · IMEIFORFD（强制分离策略） — `IMEIFORFD.md`
-- [[configobject/UNC/20.15.2/IMEIGP]] · IMEIGP（IMEI群组） — `IMEIGP.md`
-- [[configobject/UNC/20.15.2/IMEIGPMEM]] · IMEIGPMEM（IMEI群组成员） — `IMEIGPMEM.md`
-- [[configobject/UNC/20.15.2/IMEILIB]] · IMEILIB（IMEI库记录） — `IMEILIB.md`
-- [[configobject/UNC/20.15.2/IMEISVSEG]] · IMEISVSEG（IMEISV号段） — `IMEISVSEG.md`
-- [[configobject/UNC/20.15.2/IMPORTROUTE]] · IMPORTROUTE（指定协议中的入口路由配置） — `IMPORTROUTE.md`
-- [[configobject/UNC/20.15.2/IMRFUNC]] · IMRFUNC（用户消息统计功能配置） — `IMRFUNC.md`
-- [[configobject/UNC/20.15.2/IMSIAPNCONVERT]] · IMSIAPNCONVERT（APNNI转换配置） — `IMSIAPNCONVERT.md`
-- [[configobject/UNC/20.15.2/IMSICHAR]] · IMSICHAR（IMSI号段属性配置） — `IMSICHAR.md`
-- [[configobject/UNC/20.15.2/IMSIDT]] · IMSIDT（IMSI Direct Tunnel配置） — `IMSIDT.md`
-- [[configobject/UNC/20.15.2/IMSIFORSMSC]] · IMSIFORSMSC（融合短消息功能共部署SMSC支持的IMSI号段配置） — `IMSIFORSMSC.md`
-- [[configobject/UNC/20.15.2/IMSIGT]] · IMSIGT（IMSI-GT对应关系） — `IMSIGT.md`
-- [[configobject/UNC/20.15.2/IMSIHLRHSS]] · IMSIHLRHSS（IMSI对应的HLR/HSS接口） — `IMSIHLRHSS.md`
-- [[configobject/UNC/20.15.2/IMSIHSS]] · IMSIHSS（IMSI-HSS对应关系） — `IMSIHSS.md`
-- [[configobject/UNC/20.15.2/IMSIMSISDNSEG]] · IMSIMSISDNSEG（IMSI和MSISDN号段） — `IMSIMSISDNSEG.md`
-- [[configobject/UNC/20.15.2/IMSISEGMENT]] · IMSISEGMENT（IMSI号码段） — `IMSISEGMENT.md`
-- [[configobject/UNC/20.15.2/IMSISMCHAR]] · IMSISMCHAR（QoS协商参数） — `IMSISMCHAR.md`
-- [[configobject/UNC/20.15.2/IMSIVLR]] · IMSIVLR（IMSI与VLR对应关系） — `IMSIVLR.md`
-- [[configobject/UNC/20.15.2/INHCTF]] · INHCTF（禁止访问NCG的CTF实例） — `INHCTF.md`
-- [[configobject/UNC/20.15.2/INNER2PROTCAUSE]] · INNER2PROTCAUSE（内部原因值映射为协议原因值的配置） — `INNER2PROTCAUSE.md`
-- [[configobject/UNC/20.15.2/INNERFTPPWD]] · INNERFTPPWD（内部FTPS账号密码） — `INNERFTPPWD.md`
-- [[configobject/UNC/20.15.2/INTELAPN]] · INTELAPN（可按携带智能分流关键词进行处理的APN） — `INTELAPN.md`
-- [[configobject/UNC/20.15.2/INTELLISUFFIX]] · INTELLISUFFIX（智能业务后缀） — `INTELLISUFFIX.md`
-- [[configobject/UNC/20.15.2/INTERFACE]] · INTERFACE（接口） — `INTERFACE.md`
-- [[configobject/UNC/20.15.2/INTERFACEIPSEC]] · INTERFACEIPSEC（接口） — `INTERFACEIPSEC.md`
-- [[configobject/UNC/20.15.2/INTFURPF]] · INTFURPF（安全接口URPF） — `INTFURPF.md`
-- [[configobject/UNC/20.15.2/INTPDUPLCY]] · INTPDUPLCY（异网漫游PDU会话重建策略） — `INTPDUPLCY.md`
-- [[configobject/UNC/20.15.2/IPAREAAPN]] · IPAREAAPN（IP区域APN网络标识） — `IPAREAAPN.md`
-- [[configobject/UNC/20.15.2/IPAREAGP]] · IPAREAGP（IP区域群） — `IPAREAGP.md`
-- [[configobject/UNC/20.15.2/IPAREAGPMEM]] · IPAREAGPMEM（IP区域群成员） — `IPAREAGPMEM.md`
-- [[configobject/UNC/20.15.2/IPEN7SUFFIX]] · IPEN7SUFFIX（智能业务后缀） — `IPEN7SUFFIX.md`
-- [[configobject/UNC/20.15.2/IPGP]] · IPGP（IP群组） — `IPGP.md`
-- [[configobject/UNC/20.15.2/IPOPTSECALL]] · IPOPTSECALL（IP全局选项安全配置） — `IPOPTSECALL.md`
-- [[configobject/UNC/20.15.2/IPOPTSECURITYIF]] · IPOPTSECURITYIF（接口IP选项安全配置） — `IPOPTSECURITYIF.md`
-- [[configobject/UNC/20.15.2/IPRESOURCE]] · IPRESOURCE（IP资源） — `IPRESOURCE.md`
-- [[configobject/UNC/20.15.2/IPRUREACH]] · IPRUREACH（RU到网关的可达性检测配置） — `IPRUREACH.md`
-- [[configobject/UNC/20.15.2/IPSAGING]] · IPSAGING（IPS老化配置） — `IPSAGING.md`
-- [[configobject/UNC/20.15.2/IPSECINTFCFG]] · IPSECINTFCFG（创建IPsec隧道接口） — `IPSECINTFCFG.md`
-- [[configobject/UNC/20.15.2/IPSECINTFCFGIPSEC]] · IPSECINTFCFGIPSEC（IPsec隧道接口） — `IPSECINTFCFGIPSEC.md`
-- [[configobject/UNC/20.15.2/IPSECPOLICY]] · IPSECPOLICY（IPsec策略） — `IPSECPOLICY.md`
-- [[configobject/UNC/20.15.2/IPSECPOLICY6]] · IPSECPOLICY6（IPsec IPv6策略） — `IPSECPOLICY6.md`
-- [[configobject/UNC/20.15.2/IPSECPOLICYTM]] · IPSECPOLICYTM（IPsec策略模板） — `IPSECPOLICYTM.md`
-- [[configobject/UNC/20.15.2/IPSECPROPOSAL]] · IPSECPROPOSAL（IPsec提议） — `IPSECPROPOSAL.md`
-- [[configobject/UNC/20.15.2/IPSECPROPOSALIPSEC]] · IPSECPROPOSALIPSEC（IPsec提议） — `IPSECPROPOSALIPSEC.md`
-- [[configobject/UNC/20.15.2/IPSECSA]] · IPSECSA（IPsec安全联盟） — `IPSECSA.md`
-- [[configobject/UNC/20.15.2/IPSELPLCY]] · IPSELPLCY（IP地址选择策略） — `IPSELPLCY.md`
-- [[configobject/UNC/20.15.2/IPV4DNSH]] · IPV4DNSH（IPV4 DNS Hostfile记录） — `IPV4DNSH.md`
-- [[configobject/UNC/20.15.2/IPV4GPMEM]] · IPV4GPMEM（IPv4群组成员） — `IPV4GPMEM.md`
-- [[configobject/UNC/20.15.2/IPV6DNSH]] · IPV6DNSH（IPV6 DNS Hostfile记录） — `IPV6DNSH.md`
-- [[configobject/UNC/20.15.2/IPV6EXTHSECALL]] · IPV6EXTHSECALL（IPv6扩展头选项安全配置） — `IPV6EXTHSECALL.md`
-- [[configobject/UNC/20.15.2/IPV6GPMEM]] · IPV6GPMEM（IPv6群组成员） — `IPV6GPMEM.md`
-- [[configobject/UNC/20.15.2/IPV6ICMPSECURITY]] · IPV6ICMPSECURITY（IPv6安全配置） — `IPV6ICMPSECURITY.md`
-- [[configobject/UNC/20.15.2/IPV6IFICMPSECURITY]] · IPV6IFICMPSECURITY（接口下安全配置） — `IPV6IFICMPSECURITY.md`
-- [[configobject/UNC/20.15.2/IPV6PATHMTU]] · IPV6PATHMTU（IPv6 Path MTU配置） — `IPV6PATHMTU.md`
-- [[configobject/UNC/20.15.2/IPV6PREFIXFILTERNODE]] · IPV6PREFIXFILTERNODE（IPv6前缀过滤器节点） — `IPV6PREFIXFILTERNODE.md`
-- [[configobject/UNC/20.15.2/ISMFDFTQOSCTRL]] · ISMFDFTQOSCTRL（I-SMF的Default QoS Flow配置） — `ISMFDFTQOSCTRL.md`
-- [[configobject/UNC/20.15.2/ISMFDNAI]] · ISMFDNAI（I-SMF支持的DNAI） — `ISMFDNAI.md`
-- [[configobject/UNC/20.15.2/ISSUDIALTEST]] · ISSUDIALTEST（拨测用户配置） — `ISSUDIALTEST.md`
-- [[configobject/UNC/20.15.2/IUACCAREALST]] · IUACCAREALST（Iu模式区域漫游限制参数） — `IUACCAREALST.md`
-- [[configobject/UNC/20.15.2/IUARD]] · IUARD（Iu模式接入限制参数） — `IUARD.md`
-- [[configobject/UNC/20.15.2/IUAUTHCIPH]] · IUAUTHCIPH（Iu模式用户安全参数） — `IUAUTHCIPH.md`
-- [[configobject/UNC/20.15.2/IUIMEICFG]] · IUIMEICFG（Iu模式IMEI配置） — `IUIMEICFG.md`
-- [[configobject/UNC/20.15.2/IULOCRPT]] · IULOCRPT（Iu模式实时小区位置订阅） — `IULOCRPT.md`
-- [[configobject/UNC/20.15.2/IUPAGING]] · IUPAGING（Iu接口寻呼数据） — `IUPAGING.md`
-- [[configobject/UNC/20.15.2/IUPFAPNDPMODE]] · IUPFAPNDPMODE（I-UPF在特定园区专用APN下的部署模式配置） — `IUPFAPNDPMODE.md`
-- [[configobject/UNC/20.15.2/IUREPLMN]] · IUREPLMN（3G重定向PLMN） — `IUREPLMN.md`
-- [[configobject/UNC/20.15.2/IUSUBRRLST]] · IUSUBRRLST（Iu模式用户漫游限制列表） — `IUSUBRRLST.md`
-- [[configobject/UNC/20.15.2/KEYCHAIN]] · KEYCHAIN（Keychain的配置） — `KEYCHAIN.md`
-- [[configobject/UNC/20.15.2/KEYCHAINKEYID]] · KEYCHAINKEYID（Keychain Key ID的配置） — `KEYCHAINKEYID.md`
-- [[configobject/UNC/20.15.2/KEYPAIRLABEL]] · KEYPAIRLABEL（创建DSA/ECC密钥对标签） — `KEYPAIRLABEL.md`
-- [[configobject/UNC/20.15.2/L2FILTER]] · L2FILTER（层二过滤器） — `L2FILTER.md`
-- [[configobject/UNC/20.15.2/L2RULE]] · L2RULE（层二规则） — `L2RULE.md`
-- [[configobject/UNC/20.15.2/L2RULEGROUP]] · L2RULEGROUP（层二规则组） — `L2RULEGROUP.md`
-- [[configobject/UNC/20.15.2/L3SERVICEDUALUPG]] · L3SERVICEDUALUPG（一个微服务迁移流程） — `L3SERVICEDUALUPG.md`
-- [[configobject/UNC/20.15.2/L3SERVICEUPG]] · L3SERVICEUPG（服务升级进度） — `L3SERVICEUPG.md`
-- [[configobject/UNC/20.15.2/L3VPNINST]] · L3VPNINST（L3VPN实例） — `L3VPNINST.md`
-- [[configobject/UNC/20.15.2/L3VPNINSTIPSEC]] · L3VPNINSTIPSEC（L3VPN实例） — `L3VPNINSTIPSEC.md`
-- [[configobject/UNC/20.15.2/LACGROUP]] · LACGROUP（LAC组） — `LACGROUP.md`
-- [[configobject/UNC/20.15.2/LACID]] · LACID（LAC组内绑定的LAC号段） — `LACID.md`
-- [[configobject/UNC/20.15.2/LADN]] · LADN（本地数据网络） — `LADN.md`
-- [[configobject/UNC/20.15.2/LAIVLR]] · LAIVLR（LAI与VLR号对应关系） — `LAIVLR.md`
-- [[configobject/UNC/20.15.2/LAIVLRBLACKLIST]] · LAIVLRBLACKLIST（LAIVLR黑名单） — `LAIVLRBLACKLIST.md`
-- [[configobject/UNC/20.15.2/LARAGP]] · LARAGP（位置区群组） — `LARAGP.md`
-- [[configobject/UNC/20.15.2/LARAGPMEM]] · LARAGPMEM（位置区群组成员） — `LARAGPMEM.md`
-- [[configobject/UNC/20.15.2/LBTRCRDTCFG]] · LBTRCRDTCFG（跟踪重定向） — `LBTRCRDTCFG.md`
-- [[configobject/UNC/20.15.2/LCKWHITELST]] · LCKWHITELST（锁定白名单记录） — `LCKWHITELST.md`
-- [[configobject/UNC/20.15.2/LCSAPLNK]] · LCSAPLNK（LCSAP链路配置） — `LCSAPLNK.md`
-- [[configobject/UNC/20.15.2/LCSPARAEX]] · LCSPARAEX（LCS扩展参数） — `LCSPARAEX.md`
-- [[configobject/UNC/20.15.2/LCSPERMITCFG]] · LCSPERMITCFG（定位服务权限配置） — `LCSPERMITCFG.md`
-- [[configobject/UNC/20.15.2/LDPAUTHGROUP]] · LDPAUTHGROUP（LDP认证组） — `LDPAUTHGROUP.md`
-- [[configobject/UNC/20.15.2/LDPFECLIST]] · LDPFECLIST（FEC列表） — `LDPFECLIST.md`
-- [[configobject/UNC/20.15.2/LDPFECNODE]] · LDPFECNODE（FEC节点） — `LDPFECNODE.md`
-- [[configobject/UNC/20.15.2/LDPIF]] · LDPIF（LDP接口） — `LDPIF.md`
-- [[configobject/UNC/20.15.2/LDPINSTANCE]] · LDPINSTANCE（LDP实例） — `LDPINSTANCE.md`
-- [[configobject/UNC/20.15.2/LDPPEERPOLICY]] · LDPPEERPOLICY（LDP邻居策略） — `LDPPEERPOLICY.md`
-- [[configobject/UNC/20.15.2/LDPREMOTEPEER]] · LDPREMOTEPEER（LDP远端邻居） — `LDPREMOTEPEER.md`
-- [[configobject/UNC/20.15.2/LINKMODULE]] · LINKMODULE（LinkModule表记录） — `LINKMODULE.md`
-- [[configobject/UNC/20.15.2/LLCXID]] · LLCXID（LLC协商参数） — `LLCXID.md`
-- [[configobject/UNC/20.15.2/LOCALAPNNIGP]] · LOCALAPNNIGP（本地APNNI组） — `LOCALAPNNIGP.md`
-- [[configobject/UNC/20.15.2/LOCALGGSN]] · LOCALGGSN（本地GGSN列表） — `LOCALGGSN.md`
-- [[configobject/UNC/20.15.2/LOCALHLR]] · LOCALHLR（本地HLR） — `LOCALHLR.md`
-- [[configobject/UNC/20.15.2/LOCALHOSTGRP]] · LOCALHOSTGRP（Diameter本端主机组） — `LOCALHOSTGRP.md`
-- [[configobject/UNC/20.15.2/LOCALHSS]] · LOCALHSS（本地HSS） — `LOCALHSS.md`
-- [[configobject/UNC/20.15.2/LOCALNRI]] · LOCALNRI（本局NRI配置信息） — `LOCALNRI.md`
-- [[configobject/UNC/20.15.2/LOCALNSDNN]] · LOCALNSDNN（网络切片或DNN纠正配置） — `LOCALNSDNN.md`
-- [[configobject/UNC/20.15.2/LOCALOCSIP]] · LOCALOCSIP（本省OCS的IP号段） — `LOCALOCSIP.md`
-- [[configobject/UNC/20.15.2/LOCALUDMINSTID]] · LOCALUDMINSTID（本省UDM实例标识） — `LOCALUDMINSTID.md`
-- [[configobject/UNC/20.15.2/LOCCOMMPOLICY]] · LOCCOMMPOLICY（本地Common Policy配置） — `LOCCOMMPOLICY.md`
-- [[configobject/UNC/20.15.2/LOCRPTCFG]] · LOCRPTCFG（位置上报配置信息） — `LOCRPTCFG.md`
-- [[configobject/UNC/20.15.2/LOCUPDQOS]] · LOCUPDQOS（本地更新QoS值） — `LOCUPDQOS.md`
-- [[configobject/UNC/20.15.2/LOGICINF]] · LOGICINF（逻辑接口） — `LOGICINF.md`
-- [[configobject/UNC/20.15.2/LOGICIP]] · LOGICIP（逻辑IP地址信息） — `LOGICIP.md`
-- [[configobject/UNC/20.15.2/LOWPRIDSCP]] · LOWPRIDSCP（低优先级业务DSCP） — `LOWPRIDSCP.md`
-- [[configobject/UNC/20.15.2/M2MPLCY]] · M2MPLCY（M2M策略参数） — `M2MPLCY.md`
-- [[configobject/UNC/20.15.2/M2MSERVER]] · M2MSERVER（M2M服务器） — `M2MSERVER.md`
-- [[configobject/UNC/20.15.2/M2MSERVERGRP]] · M2MSERVERGRP（M2M服务器组） — `M2MSERVERGRP.md`
-- [[configobject/UNC/20.15.2/M2MSIGCTRL]] · M2MSIGCTRL（M2M信令控制配置） — `M2MSIGCTRL.md`
-- [[configobject/UNC/20.15.2/M2MUPGROUP]] · M2MUPGROUP（M2M关联的UPF组） — `M2MUPGROUP.md`
-- [[configobject/UNC/20.15.2/M3DE]] · M3DE（M3UA目的实体） — `M3DE.md`
-- [[configobject/UNC/20.15.2/M3LE]] · M3LE（M3UA本地实体） — `M3LE.md`
-- [[configobject/UNC/20.15.2/M3LKS]] · M3LKS（M3UA信令链路集） — `M3LKS.md`
-- [[configobject/UNC/20.15.2/M3LNK]] · M3LNK（M3UA信令链路） — `M3LNK.md`
-- [[configobject/UNC/20.15.2/M3RT]] · M3RT（M3UA信令路由） — `M3RT.md`
-- [[configobject/UNC/20.15.2/MAPCMPTBYIMSI]] · MAPCMPTBYIMSI（MAP协议接口兼容性IMSI号段配置） — `MAPCMPTBYIMSI.md`
-- [[configobject/UNC/20.15.2/MAPGTFIXEDFC]] · MAPGTFIXEDFC（VLR局向Map固定速率流控） — `MAPGTFIXEDFC.md`
-- [[configobject/UNC/20.15.2/MATCHASPATHFILTER]] · MATCHASPATHFILTER（匹配AS路径过滤器） — `MATCHASPATHFILTER.md`
-- [[configobject/UNC/20.15.2/MATCHCOMMUNITYFILTER]] · MATCHCOMMUNITYFILTER（匹配团体属性过滤器） — `MATCHCOMMUNITYFILTER.md`
-- [[configobject/UNC/20.15.2/MATCHCOST]] · MATCHCOST（Cost匹配路由策略） — `MATCHCOST.md`
-- [[configobject/UNC/20.15.2/MATCHDESTACL6]] · MATCHDESTACL6（匹配IPv6地址ACL） — `MATCHDESTACL6.md`
-- [[configobject/UNC/20.15.2/MATCHDESTINATIONACL]] · MATCHDESTINATIONACL（目的IP地址基础ACL匹配路由策略） — `MATCHDESTINATIONACL.md`
-- [[configobject/UNC/20.15.2/MATCHDESTPREFIX6FILTER]] · MATCHDESTPREFIX6FILTER（匹配IPv6地址前缀列表） — `MATCHDESTPREFIX6FILTER.md`
-- [[configobject/UNC/20.15.2/MATCHDESTPREFIXFILTER]] · MATCHDESTPREFIXFILTER（匹配IPv4地址前缀列表） — `MATCHDESTPREFIXFILTER.md`
-- [[configobject/UNC/20.15.2/MATCHEXTCOMMUNITYFILTER]] · MATCHEXTCOMMUNITYFILTER（匹配扩展团体属性过滤器） — `MATCHEXTCOMMUNITYFILTER.md`
-- [[configobject/UNC/20.15.2/MATCHINTERFACE]] · MATCHINTERFACE（出接口匹配路由策略） — `MATCHINTERFACE.md`
-- [[configobject/UNC/20.15.2/MATCHNEXTHOPACL]] · MATCHNEXTHOPACL（下一跳基础ACL匹配路由策略） — `MATCHNEXTHOPACL.md`
-- [[configobject/UNC/20.15.2/MATCHNEXTHOPACL6]] · MATCHNEXTHOPACL6（匹配IPv6下一跳地址ACL） — `MATCHNEXTHOPACL6.md`
-- [[configobject/UNC/20.15.2/MATCHNEXTHOPPREFIX6FILTER]] · MATCHNEXTHOPPREFIX6FILTER（匹配IPv6下一跳前缀列表） — `MATCHNEXTHOPPREFIX6FILTER.md`
-- [[configobject/UNC/20.15.2/MATCHNEXTHOPPREFIXFILTER]] · MATCHNEXTHOPPREFIXFILTER（下一跳前缀匹配路由策略） — `MATCHNEXTHOPPREFIXFILTER.md`
-- [[configobject/UNC/20.15.2/MATCHPROTOCOL]] · MATCHPROTOCOL（路由协议匹配路由策略） — `MATCHPROTOCOL.md`
-- [[configobject/UNC/20.15.2/MATCHRDFILTER]] · MATCHRDFILTER（匹配RD过滤器） — `MATCHRDFILTER.md`
-- [[configobject/UNC/20.15.2/MATCHROUTETYPE]] · MATCHROUTETYPE（路由类型匹配路由策略） — `MATCHROUTETYPE.md`
-- [[configobject/UNC/20.15.2/MATCHRTSRCACL]] · MATCHRTSRCACL（源路由基础ACL匹配路由策略） — `MATCHRTSRCACL.md`
-- [[configobject/UNC/20.15.2/MATCHRTSRCACL6]] · MATCHRTSRCACL6（匹配IPv6源路由地址ACL） — `MATCHRTSRCACL6.md`
-- [[configobject/UNC/20.15.2/MATCHRTSRCPREFIX6FILTER]] · MATCHRTSRCPREFIX6FILTER（匹配IPv6路由源前缀列表） — `MATCHRTSRCPREFIX6FILTER.md`
-- [[configobject/UNC/20.15.2/MATCHRTSRCPREFIXFILTER]] · MATCHRTSRCPREFIXFILTER（匹配路由源IP前缀） — `MATCHRTSRCPREFIXFILTER.md`
-- [[configobject/UNC/20.15.2/MATCHTAG]] · MATCHTAG（Tag匹配路由策略） — `MATCHTAG.md`
-- [[configobject/UNC/20.15.2/MCASTENABLE]] · MCASTENABLE（组播使能配置） — `MCASTENABLE.md`
-- [[configobject/UNC/20.15.2/MCASTLOADSPLIT]] · MCASTLOADSPLIT（组播负载分担配置） — `MCASTLOADSPLIT.md`
-- [[configobject/UNC/20.15.2/MCRDRNHP]] · MCRDRNHP（组播报文重定向策略） — `MCRDRNHP.md`
-- [[configobject/UNC/20.15.2/MDTCTX]] · MDTCTX（MDT上下文） — `MDTCTX.md`
-- [[configobject/UNC/20.15.2/MDTPLMN]] · MDTPLMN（基于管理的最小化路测的PLMN） — `MDTPLMN.md`
-- [[configobject/UNC/20.15.2/ME]] · ME（网元信息） — `ME.md`
-- [[configobject/UNC/20.15.2/MEASTHRESHOLDRULE]] · MEASTHRESHOLDRULE（话统阈值规则） — `MEASTHRESHOLDRULE.md`
-- [[configobject/UNC/20.15.2/MECAREA]] · MECAREA（5G MEC区域信息） — `MECAREA.md`
-- [[configobject/UNC/20.15.2/MECAREAGNB]] · MECAREAGNB（5G MEC gNodeB信息） — `MECAREAGNB.md`
-- [[configobject/UNC/20.15.2/MECAREATAI]] · MECAREATAI（5G MEC TAI信息） — `MECAREATAI.md`
-- [[configobject/UNC/20.15.2/MGMDIF]] · MGMDIF（IGMP接口配置） — `MGMDIF.md`
-- [[configobject/UNC/20.15.2/MGMDSITE]] · MGMDSITE（IGMP全局配置） — `MGMDSITE.md`
-- [[configobject/UNC/20.15.2/MGMDSSMAP]] · MGMDSSMAP（IGMP SSM映射配置） — `MGMDSSMAP.md`
-- [[configobject/UNC/20.15.2/MGMDSTATICGROUP]] · MGMDSTATICGROUP（IGMP静态组配置） — `MGMDSTATICGROUP.md`
-- [[configobject/UNC/20.15.2/MK]] · MK（更新主密钥） — `MK.md`
-- [[configobject/UNC/20.15.2/MMECAPBYTA]] · MMECAPBYTA（基于跟踪区的MME相对权重配置） — `MMECAPBYTA.md`
-- [[configobject/UNC/20.15.2/MMECHARACT]] · MMECHARACT（MME属性配置信息） — `MMECHARACT.md`
-- [[configobject/UNC/20.15.2/MMEGP]] · MMEGP（MME群组） — `MMEGP.md`
-- [[configobject/UNC/20.15.2/MMEGPMEM]] · MMEGPMEM（MME群组成员） — `MMEGPMEM.md`
-- [[configobject/UNC/20.15.2/MMEID]] · MMEID（MMEID配置） — `MMEID.md`
-- [[configobject/UNC/20.15.2/MMEIPTOMMEPOOL]] · MMEIPTOMMEPOOL（MME IP） — `MMEIPTOMMEPOOL.md`
-- [[configobject/UNC/20.15.2/MMEPOOL]] · MMEPOOL（MME POOL） — `MMEPOOL.md`
-- [[configobject/UNC/20.15.2/MMERESELPLCY]] · MMERESELPLCY（MME重选策略） — `MMERESELPLCY.md`
-- [[configobject/UNC/20.15.2/MMESGSFIXEDFC]] · MMESGSFIXEDFC（VLR局向Sgs固定速率流控） — `MMESGSFIXEDFC.md`
-- [[configobject/UNC/20.15.2/MMESHAREPLMN]] · MMESHAREPLMN（MME的共享PLMN） — `MMESHAREPLMN.md`
-- [[configobject/UNC/20.15.2/MNCLEN]] · MNCLEN（MNC长度信息） — `MNCLEN.md`
-- [[configobject/UNC/20.15.2/MNO]] · MNO（MNO配置信息） — `MNO.md`
-- [[configobject/UNC/20.15.2/MODULE]] · MODULE（业务模块） — `MODULE.md`
-- [[configobject/UNC/20.15.2/MONVPN]] · MONVPN（监控VPN实例） — `MONVPN.md`
-- [[configobject/UNC/20.15.2/MPACIPV4RULE]] · MPACIPV4RULE（IPv4 MPAC策略规则） — `MPACIPV4RULE.md`
-- [[configobject/UNC/20.15.2/MPACIPV6RULE]] · MPACIPV6RULE（IPv6 MPAC策略规则） — `MPACIPV6RULE.md`
-- [[configobject/UNC/20.15.2/MPACV4POLICY]] · MPACV4POLICY（IPv4 MPAC策略） — `MPACV4POLICY.md`
-- [[configobject/UNC/20.15.2/MPACV6POLICY]] · MPACV6POLICY（IPv6 MPAC策略） — `MPACV6POLICY.md`
-- [[configobject/UNC/20.15.2/MPLSIF]] · MPLSIF（MPLS接口） — `MPLSIF.md`
-- [[configobject/UNC/20.15.2/MQCBEHAVIOR]] · MQCBEHAVIOR（流行为） — `MQCBEHAVIOR.md`
-- [[configobject/UNC/20.15.2/MQCCLASSIFIER]] · MQCCLASSIFIER（流分类） — `MQCCLASSIFIER.md`
-- [[configobject/UNC/20.15.2/MQCPOLICY]] · MQCPOLICY（流策略配置） — `MQCPOLICY.md`
-- [[configobject/UNC/20.15.2/MQCPOLICYNODE]] · MQCPOLICYNODE（流策略节点） — `MQCPOLICYNODE.md`
-- [[configobject/UNC/20.15.2/MRGRNC]] · MRGRNC（融合RNC） — `MRGRNC.md`
-- [[configobject/UNC/20.15.2/MSCCRCACT]] · MSCCRCACT（MSCC层异常返回码处理动作） — `MSCCRCACT.md`
-- [[configobject/UNC/20.15.2/MSCONTEXTS]] · MSCONTEXTS（所有MS上下文信息） — `MSCONTEXTS.md`
-- [[configobject/UNC/20.15.2/MSCOPC]] · MSCOPC（MSC信令点） — `MSCOPC.md`
-- [[configobject/UNC/20.15.2/MSCPARA]] · MSCPARA（MSC参数） — `MSCPARA.md`
-- [[configobject/UNC/20.15.2/MSISDNSUBGPMEM]] · MSISDNSUBGPMEM（MSISDN用户群成员） — `MSISDNSUBGPMEM.md`
-- [[configobject/UNC/20.15.2/MSISDNSUBGPMEMALL]] · MSISDNSUBGPMEMALL（所有MSISDN用户群成员） — `MSISDNSUBGPMEMALL.md`
-- [[configobject/UNC/20.15.2/MTSPOLICY]] · MTSPOLICY（消息跟踪限制） — `MTSPOLICY.md`
-- [[configobject/UNC/20.15.2/MULDNNPRILIST]] · MULDNNPRILIST（本地专网DNN就近接入优先级） — `MULDNNPRILIST.md`
-- [[configobject/UNC/20.15.2/MULDNNULCLMODE]] · MULDNNULCLMODE（智能分流ULCL部署模式） — `MULDNNULCLMODE.md`
-- [[configobject/UNC/20.15.2/MVNO]] · MVNO（MVNO配置信息） — `MVNO.md`
-- [[configobject/UNC/20.15.2/MVNOFUN]] · MVNOFUN（MVNO功能配置信息） — `MVNOFUN.md`
-- [[configobject/UNC/20.15.2/MVNONET]] · MVNONET（MVNO网络配置信息） — `MVNONET.md`
-- [[configobject/UNC/20.15.2/MVNONETALL]] · MVNONETALL（所有MVNO网络配置信息） — `MVNONETALL.md`
-- [[configobject/UNC/20.15.2/MVNORES]] · MVNORES（MVNO资源配置信息） — `MVNORES.md`
-- [[configobject/UNC/20.15.2/N14N26INTOPPLCY]] · N14N26INTOPPLCY（N14N26接口跨运营商交互策略） — `N14N26INTOPPLCY.md`
-- [[configobject/UNC/20.15.2/N26GWSELPLCY]] · N26GWSELPLCY（N26融合网关选择策略） — `N26GWSELPLCY.md`
-- [[configobject/UNC/20.15.2/N26IWKPLCY]] · N26IWKPLCY（EPS与5GS互操作本地策略） — `N26IWKPLCY.md`
-- [[configobject/UNC/20.15.2/N26MMECHAR]] · N26MMECHAR（N26接口MME属性） — `N26MMECHAR.md`
-- [[configobject/UNC/20.15.2/N2INFAMFINFO]] · N2INFAMFINFO（AMF的N2接口信息） — `N2INFAMFINFO.md`
-- [[configobject/UNC/20.15.2/N2SCTPLNK]] · N2SCTPLNK（N2接口SCTP链路） — `N2SCTPLNK.md`
-- [[configobject/UNC/20.15.2/N2TACID]] · N2TACID（TAC组内绑定的N2TAC号段） — `N2TACID.md`
-- [[configobject/UNC/20.15.2/N40DIAGTRIGGER]] · N40DIAGTRIGGER（N40去活原因的映射关系） — `N40DIAGTRIGGER.md`
-- [[configobject/UNC/20.15.2/N40MSGTEMP]] · N40MSGTEMP（N40消息属性模板） — `N40MSGTEMP.md`
-- [[configobject/UNC/20.15.2/N40UPFIDINUUID]] · N40UPFIDINUUID（N40接口非UUID格式与UUID格式的UPF实例标识的映射关系） — `N40UPFIDINUUID.md`
-- [[configobject/UNC/20.15.2/NCGALMSRV]] · NCGALMSRV（告警服务器相关配置信息） — `NCGALMSRV.md`
-- [[configobject/UNC/20.15.2/NCGCHLMAP]] · NCGCHLMAP（话单通道一级目录类型映射表） — `NCGCHLMAP.md`
-- [[configobject/UNC/20.15.2/NCGFUNCTION]] · NCGFUNCTION（NCG功能实例信息） — `NCGFUNCTION.md`
-- [[configobject/UNC/20.15.2/NDIFRAROUTE]] · NDIFRAROUTE（接口上ND RA路由配置信息） — `NDIFRAROUTE.md`
-- [[configobject/UNC/20.15.2/NDNEIGHBOR]] · NDNEIGHBOR（静态ND邻居表项） — `NDNEIGHBOR.md`
-- [[configobject/UNC/20.15.2/NETWORK]] · NETWORK（网络查询） — `NETWORK.md`
-- [[configobject/UNC/20.15.2/NETWORKROUTE]] · NETWORKROUTE（引入路由指定前缀和掩码长度） — `NETWORKROUTE.md`
-- [[configobject/UNC/20.15.2/NFABILITY]] · NFABILITY（配置NF的能力信息） — `NFABILITY.md`
-- [[configobject/UNC/20.15.2/NFDISCMGMTPARA]] · NFDISCMGMTPARA（网元服务发现功能管理参数） — `NFDISCMGMTPARA.md`
-- [[configobject/UNC/20.15.2/NFDISCSCHEMEPLY]] · NFDISCSCHEMEPLY（服务发现Scheme优选策略） — `NFDISCSCHEMEPLY.md`
-- [[configobject/UNC/20.15.2/NFDISCSRVLBSW]] · NFDISCSRVLBSW（服务发现Service负载均衡功能） — `NFDISCSRVLBSW.md`
-- [[configobject/UNC/20.15.2/NFGPSIRANGE]] · NFGPSIRANGE（NF GPSIRANGE信息） — `NFGPSIRANGE.md`
-- [[configobject/UNC/20.15.2/NFGROUP]] · NFGROUP（NF组） — `NFGROUP.md`
-- [[configobject/UNC/20.15.2/NFGROUPID]] · NFGROUPID（NF群组信息） — `NFGROUPID.md`
-- [[configobject/UNC/20.15.2/NFGROUPMEM]] · NFGROUPMEM（NF组成员） — `NFGROUPMEM.md`
-- [[configobject/UNC/20.15.2/NFIMSI]] · NFIMSI（IMSI号段） — `NFIMSI.md`
-- [[configobject/UNC/20.15.2/NFLOC]] · NFLOC（目标NF发现和选择的位置匹配信息） — `NFLOC.md`
-- [[configobject/UNC/20.15.2/NFMSISDN]] · NFMSISDN（MSISDN号段） — `NFMSISDN.md`
-- [[configobject/UNC/20.15.2/NFNS]] · NFNS（NF支持的网络切片） — `NFNS.md`
-- [[configobject/UNC/20.15.2/NFPROFILE]] · NFPROFILE（NF实例概述信息） — `NFPROFILE.md`
-- [[configobject/UNC/20.15.2/NFREGNRF]] · NFREGNRF（本端NF和对端NRF实例的注册关系） — `NFREGNRF.md`
-- [[configobject/UNC/20.15.2/NFROUTEPLCY]] · NFROUTEPLCY（NF路由策略） — `NFROUTEPLCY.md`
-- [[configobject/UNC/20.15.2/NFROUTINGIND]] · NFROUTINGIND（选路指示器） — `NFROUTINGIND.md`
-- [[configobject/UNC/20.15.2/NFSERVICE]] · NFSERVICE（NF服务实例） — `NFSERVICE.md`
-- [[configobject/UNC/20.15.2/NFSERVICEVER]] · NFSERVICEVER（NF服务版本信息） — `NFSERVICEVER.md`
-- [[configobject/UNC/20.15.2/NFSRVNTFSUBS]] · NFSRVNTFSUBS（服务回调信息） — `NFSRVNTFSUBS.md`
-- [[configobject/UNC/20.15.2/NFSRVSCOPE]] · NFSRVSCOPE（NF支持服务区信息） — `NFSRVSCOPE.md`
-- [[configobject/UNC/20.15.2/NFSUBS]] · NFSUBS（NF的订阅上下文） — `NFSUBS.md`
-- [[configobject/UNC/20.15.2/NFSUPIRANGE]] · NFSUPIRANGE（NF SUPIRANGE信息） — `NFSUPIRANGE.md`
-- [[configobject/UNC/20.15.2/NFTAI]] · NFTAI（NF TAI信息） — `NFTAI.md`
-- [[configobject/UNC/20.15.2/NFUUID]] · NFUUID（NF UUID信息） — `NFUUID.md`
-- [[configobject/UNC/20.15.2/NGACCAREALST]] · NGACCAREALST（5G接入限制区域列表） — `NGACCAREALST.md`
-- [[configobject/UNC/20.15.2/NGACCCHRPRCTMPL]] · NGACCCHRPRCTMPL（NG接入CHR流程控制模板） — `NGACCCHRPRCTMPL.md`
-- [[configobject/UNC/20.15.2/NGALGPRIORITY]] · NGALGPRIORITY（5G算法优先级属性） — `NGALGPRIORITY.md`
-- [[configobject/UNC/20.15.2/NGAPLE]] · NGAPLE（NGAP本端实体） — `NGAPLE.md`
-- [[configobject/UNC/20.15.2/NGAPPARA]] · NGAPPARA（NGAP协议参数） — `NGAPPARA.md`
-- [[configobject/UNC/20.15.2/NGAREARESELPLCY]] · NGAREARESELPLCY（AMF区域重选控制策略） — `NGAREARESELPLCY.md`
-- [[configobject/UNC/20.15.2/NGAREATZ]] · NGAREATZ（5G区域时区参数） — `NGAREATZ.md`
-- [[configobject/UNC/20.15.2/NGCAUSEMAP]] · NGCAUSEMAP（5G原因值映射配置） — `NGCAUSEMAP.md`
-- [[configobject/UNC/20.15.2/NGCONNECTPLMN]] · NGCONNECTPLMN（5G Connect PLMN） — `NGCONNECTPLMN.md`
-- [[configobject/UNC/20.15.2/NGDNSLE]] · NGDNSLE（DNS本端实体） — `NGDNSLE.md`
-- [[configobject/UNC/20.15.2/NGDNSN]] · NGDNSN（DNS NAPTR记录） — `NGDNSN.md`
-- [[configobject/UNC/20.15.2/NGDNSS]] · NGDNSS（DNS服务器） — `NGDNSS.md`
-- [[configobject/UNC/20.15.2/NGEMGCFG]] · NGEMGCFG（运营商紧急呼叫功能配置） — `NGEMGCFG.md`
-- [[configobject/UNC/20.15.2/NGEMGCNUM]] · NGEMGCNUM（紧急号码配置信息） — `NGEMGCNUM.md`
-- [[configobject/UNC/20.15.2/NGGUTISELPLCY]] · NGGUTISELPLCY（AMF区域GUTI选网控制策略） — `NGGUTISELPLCY.md`
-- [[configobject/UNC/20.15.2/NGHPLMN]] · NGHPLMN（5G Home PLMN） — `NGHPLMN.md`
-- [[configobject/UNC/20.15.2/NGIPAREADNN]] · NGIPAREADNN（5G IP区域DNN） — `NGIPAREADNN.md`
-- [[configobject/UNC/20.15.2/NGIPAREAGRP]] · NGIPAREAGRP（5G IP区域群） — `NGIPAREAGRP.md`
-- [[configobject/UNC/20.15.2/NGIPAREAGRPMEM]] · NGIPAREAGRPMEM（5G IP区域群成员） — `NGIPAREAGRPMEM.md`
-- [[configobject/UNC/20.15.2/NGIPV4DNSH]] · NGIPV4DNSH（IPv4 DNS Hostfile记录） — `NGIPV4DNSH.md`
-- [[configobject/UNC/20.15.2/NGIPV6DNSH]] · NGIPV6DNSH（IPv6 DNS Hostfile记录） — `NGIPV6DNSH.md`
-- [[configobject/UNC/20.15.2/NGLANGROUP]] · NGLANGROUP（5G LAN群组） — `NGLANGROUP.md`
-- [[configobject/UNC/20.15.2/NGLANGRPCTX]] · NGLANGRPCTX（5G LAN组会话） — `NGLANGRPCTX.md`
-- [[configobject/UNC/20.15.2/NGLANUPNODE]] · NGLANUPNODE（指定实例名称的UPF节点特征） — `NGLANUPNODE.md`
-- [[configobject/UNC/20.15.2/NGM2MPLCY]] · NGM2MPLCY（5G M2M策略参数） — `NGM2MPLCY.md`
-- [[configobject/UNC/20.15.2/NGMDTPLMN]] · NGMDTPLMN（最小化路测的PLMN） — `NGMDTPLMN.md`
-- [[configobject/UNC/20.15.2/NGMMSUBDATA]] · NGMMSUBDATA（用户移动性管理参数） — `NGMMSUBDATA.md`
-- [[configobject/UNC/20.15.2/NGMNO]] · NGMNO（5G模式移动网络运营商信息） — `NGMNO.md`
-- [[configobject/UNC/20.15.2/NGN26CAUSEMAP]] · NGN26CAUSEMAP（5G N26接口原因值映射配置） — `NGN26CAUSEMAP.md`
-- [[configobject/UNC/20.15.2/NGNILRPARA]] · NGNILRPARA（NI-LR功能参数） — `NGNILRPARA.md`
-- [[configobject/UNC/20.15.2/NGPAGINGARPPRI]] · NGPAGINGARPPRI（基于ARP的Paging消息在流控期间放通的优先级） — `NGPAGINGARPPRI.md`
-- [[configobject/UNC/20.15.2/NGPAGINGDNNPRI]] · NGPAGINGDNNPRI（基于DNN的Paging消息在流控期间放通的优先级） — `NGPAGINGDNNPRI.md`
-- [[configobject/UNC/20.15.2/NGPAGINGPRIPLCY]] · NGPAGINGPRIPLCY（5G寻呼优先级策略参数配置） — `NGPAGINGPRIPLCY.md`
-- [[configobject/UNC/20.15.2/NGPAGINGRULE]] · NGPAGINGRULE（5G寻呼规则） — `NGPAGINGRULE.md`
-- [[configobject/UNC/20.15.2/NGPAGINGTMRPLCY]] · NGPAGINGTMRPLCY（5G寻呼定时器策略配置） — `NGPAGINGTMRPLCY.md`
-- [[configobject/UNC/20.15.2/NGPARKPLCY]] · NGPARKPLCY（园区策略） — `NGPARKPLCY.md`
-- [[configobject/UNC/20.15.2/NGPEIGRPMEM]] · NGPEIGRPMEM（NG PEI组性能统计对象成员） — `NGPEIGRPMEM.md`
-- [[configobject/UNC/20.15.2/NGPEIPLCY]] · NGPEIPLCY（5G PEI策略） — `NGPEIPLCY.md`
-- [[configobject/UNC/20.15.2/NGPEIPSPLCY]] · NGPEIPSPLCY（基于分组的智能寻呼策略） — `NGPEIPSPLCY.md`
-- [[configobject/UNC/20.15.2/NGPRA]] · NGPRA（5G PRA） — `NGPRA.md`
-- [[configobject/UNC/20.15.2/NGPRAMEM]] · NGPRAMEM（PRA位置区成员） — `NGPRAMEM.md`
-- [[configobject/UNC/20.15.2/NGPRDREGTIMEDNN]] · NGPRDREGTIMEDNN（基于DNN的周期性注册时长配置） — `NGPRDREGTIMEDNN.md`
-- [[configobject/UNC/20.15.2/NGRANNEIBCFG]] · NGRANNEIBCFG（NG-RAN基站邻接关系配置） — `NGRANNEIBCFG.md`
-- [[configobject/UNC/20.15.2/NGSGWPLMN]] · NGSGWPLMN（SGW-C Home PLMN） — `NGSGWPLMN.md`
-- [[configobject/UNC/20.15.2/NGSRCHRCFG]] · NGSRCHRCFG（AMF小范围CHR上报规则配置） — `NGSRCHRCFG.md`
-- [[configobject/UNC/20.15.2/NGSRVPLMN]] · NGSRVPLMN（5G Serving PLMN） — `NGSRVPLMN.md`
-- [[configobject/UNC/20.15.2/NGTAGP]] · NGTAGP（5G TA群组） — `NGTAGP.md`
-- [[configobject/UNC/20.15.2/NGTAGPMEM]] · NGTAGPMEM（5G TA群组成员） — `NGTAGPMEM.md`
-- [[configobject/UNC/20.15.2/NGTAIGRPMEM]] · NGTAIGRPMEM（5G TAI组性能统计对象成员） — `NGTAIGRPMEM.md`
-- [[configobject/UNC/20.15.2/NGTALISTPAGINGCFG]] · NGTALISTPAGINGCFG（N2模式TALIST寻呼不重发TAC区间） — `NGTALISTPAGINGCFG.md`
-- [[configobject/UNC/20.15.2/NGTALST]] · NGTALST（5G跟踪区列表） — `NGTALST.md`
-- [[configobject/UNC/20.15.2/NGTANEIBCFG]] · NGTANEIBCFG（TA邻接关系配置） — `NGTANEIBCFG.md`
-- [[configobject/UNC/20.15.2/NGTAPAGINGPLCY]] · NGTAPAGINGPLCY（5G跟踪区列表的寻呼策略配置） — `NGTAPAGINGPLCY.md`
-- [[configobject/UNC/20.15.2/NGTZLST]] · NGTZLST（5G多时区参数） — `NGTZLST.md`
-- [[configobject/UNC/20.15.2/NGUSERNUMCTRL]] · NGUSERNUMCTRL（5G接入用户数控制参数） — `NGUSERNUMCTRL.md`
-- [[configobject/UNC/20.15.2/NGUSR]] · NGUSR（5G用户） — `NGUSR.md`
-- [[configobject/UNC/20.15.2/NGUSRGRP]] · NGUSRGRP（5G用户群） — `NGUSRGRP.md`
-- [[configobject/UNC/20.15.2/NGUSRGRPMEM]] · NGUSRGRPMEM（5G用户群成员） — `NGUSRGRPMEM.md`
-- [[configobject/UNC/20.15.2/NGUSRSECPARA]] · NGUSRSECPARA（5G用户安全配置） — `NGUSRSECPARA.md`
-- [[configobject/UNC/20.15.2/NGVOICEDEPLOY]] · NGVOICEDEPLOY（5G语音部署配置） — `NGVOICEDEPLOY.md`
-- [[configobject/UNC/20.15.2/NITZPLCY]] · NITZPLCY（NITZ策略） — `NITZPLCY.md`
-- [[configobject/UNC/20.15.2/NOCENTCNCHL]] · NOCENTCNCHL（RU通道过滤规则） — `NOCENTCNCHL.md`
-- [[configobject/UNC/20.15.2/NONIPSUBCTRL]] · NONIPSUBCTRL（Non-IP APNNI配置） — `NONIPSUBCTRL.md`
-- [[configobject/UNC/20.15.2/NONRAI]] · NONRAI（非广播RAI配置信息） — `NONRAI.md`
-- [[configobject/UNC/20.15.2/NRA]] · NRA（空路由区对照表） — `NRA.md`
-- [[configobject/UNC/20.15.2/NRF]] · NRF（测试服务发现的NF信息） — `NRF.md`
-- [[configobject/UNC/20.15.2/NRFADDR]] · NRFADDR（NRF实例地址信息） — `NRFADDR.md`
-- [[configobject/UNC/20.15.2/NRFAMFREGIDRT]] · NRFAMFREGIDRT（AMF区域标识路由） — `NRFAMFREGIDRT.md`
-- [[configobject/UNC/20.15.2/NRFAMFSETIDRT]] · NRFAMFSETIDRT（AMF集合标识路由） — `NRFAMFSETIDRT.md`
-- [[configobject/UNC/20.15.2/NRFBSFDNNREL]] · NRFBSFDNNREL（BSF索引和DNN的关联关系） — `NRFBSFDNNREL.md`
-- [[configobject/UNC/20.15.2/NRFBSFINDEXRT]] · NRFBSFINDEXRT（BSFINDEX路由） — `NRFBSFINDEXRT.md`
-- [[configobject/UNC/20.15.2/NRFBSFIPV4REL]] · NRFBSFIPV4REL（BSF索引和IPv4的关联关系） — `NRFBSFIPV4REL.md`
-- [[configobject/UNC/20.15.2/NRFBSFIPV6REL]] · NRFBSFIPV6REL（BSF索引和IPv6的关联关系） — `NRFBSFIPV6REL.md`
-- [[configobject/UNC/20.15.2/NRFCLIENTADDR]] · NRFCLIENTADDR（NRF实例客户端地址信息） — `NRFCLIENTADDR.md`
-- [[configobject/UNC/20.15.2/NRFDNAIRGNPREF]] · NRFDNAIRGNPREF（DNAI区域优选规则） — `NRFDNAIRGNPREF.md`
-- [[configobject/UNC/20.15.2/NRFDNNDNAIRT]] · NRFDNNDNAIRT（DNN中数据网络访问标识最长后缀匹配转发路由） — `NRFDNNDNAIRT.md`
-- [[configobject/UNC/20.15.2/NRFDNNNIRGNPREF]] · NRFDNNNIRGNPREF（DNNNI区域优选规则） — `NRFDNNNIRGNPREF.md`
-- [[configobject/UNC/20.15.2/NRFDNNNIRT]] · NRFDNNNIRT（DNN中网络标识最长后缀匹配转发路由） — `NRFDNNNIRT.md`
-- [[configobject/UNC/20.15.2/NRFDNNRT]] · NRFDNNRT（DNN路由） — `NRFDNNRT.md`
-- [[configobject/UNC/20.15.2/NRFFQDN]] · NRFFQDN（NRF的FQDN） — `NRFFQDN.md`
-- [[configobject/UNC/20.15.2/NRFFQDNRT]] · NRFFQDNRT（FQDN路由） — `NRFFQDNRT.md`
-- [[configobject/UNC/20.15.2/NRFFRCAVLNF]] · NRFFRCAVLNF（强制可用NF实例） — `NRFFRCAVLNF.md`
-- [[configobject/UNC/20.15.2/NRFFUNCTION]] · NRFFUNCTION（NRF功能实例信息） — `NRFFUNCTION.md`
-- [[configobject/UNC/20.15.2/NRFGRFWDADDR]] · NRFGRFWDADDR（备份NRF地址） — `NRFGRFWDADDR.md`
-- [[configobject/UNC/20.15.2/NRFGROUP]] · NRFGROUP（对端NRF实例组） — `NRFGROUP.md`
-- [[configobject/UNC/20.15.2/NRFGRPIDRT]] · NRFGRPIDRT（NF组标识路由） — `NRFGRPIDRT.md`
-- [[configobject/UNC/20.15.2/NRFGUAMIRT]] · NRFGUAMIRT（GUAMI路由） — `NRFGUAMIRT.md`
-- [[configobject/UNC/20.15.2/NRFIGNDISCPARA]] · NRFIGNDISCPARA（NF服务发现忽略参数规则） — `NRFIGNDISCPARA.md`
-- [[configobject/UNC/20.15.2/NRFIMSDNN]] · NRFIMSDNN（IMS PCF的DNN） — `NRFIMSDNN.md`
-- [[configobject/UNC/20.15.2/NRFIMSIRT]] · NRFIMSIRT（IMSI号段路由） — `NRFIMSIRT.md`
-- [[configobject/UNC/20.15.2/NRFINSTRT]] · NRFINSTRT（NF实例路由） — `NRFINSTRT.md`
-- [[configobject/UNC/20.15.2/NRFIPDOMAINREL]] · NRFIPDOMAINREL（BSF索引和IP Domain的关联关系） — `NRFIPDOMAINREL.md`
-- [[configobject/UNC/20.15.2/NRFIPWHITELST]] · NRFIPWHITELST（NF IP白名单） — `NRFIPWHITELST.md`
-- [[configobject/UNC/20.15.2/NRFKEY]] · NRFKEY（NRF密钥） — `NRFKEY.md`
-- [[configobject/UNC/20.15.2/NRFMSISDNRT]] · NRFMSISDNRT（MSISDN号段路由） — `NRFMSISDNRT.md`
-- [[configobject/UNC/20.15.2/NRFNFREGIONIP]] · NRFNFREGIONIP（IP与NF区域映射关系配置） — `NRFNFREGIONIP.md`
-- [[configobject/UNC/20.15.2/NRFNFTIMER]] · NRFNFTIMER（指定NF在NRF上的时长信息） — `NRFNFTIMER.md`
-- [[configobject/UNC/20.15.2/NRFNFTYPEFUNC]] · NRFNFTYPEFUNC（基于NFType设置NRF的各类功能开关） — `NRFNFTYPEFUNC.md`
-- [[configobject/UNC/20.15.2/NRFNFTYPERT]] · NRFNFTYPERT（NF类型路由） — `NRFNFTYPERT.md`
-- [[configobject/UNC/20.15.2/NRFNOTNOTIFYNF]] · NRFNOTNOTIFYNF（不通知NF实例） — `NRFNOTNOTIFYNF.md`
-- [[configobject/UNC/20.15.2/NRFNSDNNRT]] · NRFNSDNNRT（DNN和网络切片路由） — `NRFNSDNNRT.md`
-- [[configobject/UNC/20.15.2/NRFNSRT]] · NRFNSRT（网络切片的路由） — `NRFNSRT.md`
-- [[configobject/UNC/20.15.2/NRFPARA]] · NRFPARA（NRF协议参数） — `NRFPARA.md`
-- [[configobject/UNC/20.15.2/NRFPLMNHOMEPLY]] · NRFPLMNHOMEPLY（指定拜访地PLMN的归属地策略） — `NRFPLMNHOMEPLY.md`
-- [[configobject/UNC/20.15.2/NRFPLMNNF]] · NRFPLMNNF（关口局NF信息） — `NRFPLMNNF.md`
-- [[configobject/UNC/20.15.2/NRFPLMNRT]] · NRFPLMNRT（PLMN路由） — `NRFPLMNRT.md`
-- [[configobject/UNC/20.15.2/NRFPLMNVISITPLY]] · NRFPLMNVISITPLY（指定归属地PLMN的拜访地策略） — `NRFPLMNVISITPLY.md`
-- [[configobject/UNC/20.15.2/NRFPMNINTERFUNC]] · NRFPMNINTERFUNC（基于对端PLMN国际漫游功能参数） — `NRFPMNINTERFUNC.md`
-- [[configobject/UNC/20.15.2/NRFPROXYSMF]] · NRFPROXYSMF（NRF管理的ProxySMF） — `NRFPROXYSMF.md`
-- [[configobject/UNC/20.15.2/NRFREGIDSETIDREL]] · NRFREGIDSETIDREL（AMF区域标识和集合标识的关联关系） — `NRFREGIDSETIDREL.md`
-- [[configobject/UNC/20.15.2/NRFROUTINGINDRT]] · NRFROUTINGINDRT（选路指示器路由） — `NRFROUTINGINDRT.md`
-- [[configobject/UNC/20.15.2/NRFSCPDOMAINRT]] · NRFSCPDOMAINRT（SCP Domain最长匹配后缀转发路由） — `NRFSCPDOMAINRT.md`
-- [[configobject/UNC/20.15.2/NRFSERVICELIST]] · NRFSERVICELIST（NRF实例服务名称） — `NRFSERVICELIST.md`
-- [[configobject/UNC/20.15.2/NRFSETIDRT]] · NRFSETIDRT（NF Set ID最长匹配后缀转发路由） — `NRFSETIDRT.md`
-- [[configobject/UNC/20.15.2/NRFSMSFSEGLIST]] · NRFSMSFSEGLIST（SMSF号段白名单） — `NRFSMSFSEGLIST.md`
-- [[configobject/UNC/20.15.2/NRFSMSFWHITELST]] · NRFSMSFWHITELST（SMSF白名单） — `NRFSMSFWHITELST.md`
-- [[configobject/UNC/20.15.2/NRFSRVSCOPERT]] · NRFSRVSCOPERT（ServingScope路由） — `NRFSRVSCOPERT.md`
-- [[configobject/UNC/20.15.2/NRFTAIRT]] · NRFTAIRT（TAI路由） — `NRFTAIRT.md`
-- [[configobject/UNC/20.15.2/NRFWHITELIST]] · NRFWHITELIST（NF白名单） — `NRFWHITELIST.md`
-- [[configobject/UNC/20.15.2/NRFWILDCARDATTR]] · NRFWILDCARDATTR（分层互联通配属性） — `NRFWILDCARDATTR.md`
-- [[configobject/UNC/20.15.2/NRFWILDCARDSTRRT]] · NRFWILDCARDSTRRT（分层互联信元字符串通配属性路由） — `NRFWILDCARDSTRRT.md`
-- [[configobject/UNC/20.15.2/NSACTRLPLCY]] · NSACTRLPLCY（NSA控制策略） — `NSACTRLPLCY.md`
-- [[configobject/UNC/20.15.2/NSDNN]] · NSDNN（网络切片支持的DNN） — `NSDNN.md`
-- [[configobject/UNC/20.15.2/NSE]] · NSE（信令实体） — `NSE.md`
-- [[configobject/UNC/20.15.2/NSEALL]] · NSEALL（所有信令实体） — `NSEALL.md`
-- [[configobject/UNC/20.15.2/NSELST]] · NSELST（NSE列表） — `NSELST.md`
-- [[configobject/UNC/20.15.2/NSEUSR]] · NSEUSR（NSE列表下的用户） — `NSEUSR.md`
-- [[configobject/UNC/20.15.2/NSILIST]] · NSILIST（NF支持切片信息） — `NSILIST.md`
-- [[configobject/UNC/20.15.2/NSMAPPARABYPLMN]] · NSMAPPARABYPLMN（指定PLMN的网络切片映射参数） — `NSMAPPARABYPLMN.md`
-- [[configobject/UNC/20.15.2/NSSFCFGSUBSW]] · NSSFCFGSUBSW（按签约NSSAI分配Configed NSSAI的PLMN级别开关） — `NSSFCFGSUBSW.md`
-- [[configobject/UNC/20.15.2/NSSFDFTAMFSET]] · NSSFDFTAMFSET（默认AMF集所支持的S-NSSAI范围） — `NSSFDFTAMFSET.md`
-- [[configobject/UNC/20.15.2/NSSFDFTNSMAP]] · NSSFDFTNSMAP（漫游切片默认映射配置） — `NSSFDFTNSMAP.md`
-- [[configobject/UNC/20.15.2/NSSFFUNCTION]] · NSSFFUNCTION（NSSF功能实例信息） — `NSSFFUNCTION.md`
-- [[configobject/UNC/20.15.2/NSSFNSAVLINFO]] · NSSFNSAVLINFO（切片可用性信息） — `NSSFNSAVLINFO.md`
-- [[configobject/UNC/20.15.2/NSSFROAMNSMAP]] · NSSFROAMNSMAP（漫游切片映射配置） — `NSSFROAMNSMAP.md`
-- [[configobject/UNC/20.15.2/NSSFSERVICELIST]] · NSSFSERVICELIST（NSSF功能实例服务） — `NSSFSERVICELIST.md`
-- [[configobject/UNC/20.15.2/NTPSVR]] · NTPSVR（NTP服务器） — `NTPSVR.md`
-- [[configobject/UNC/20.15.2/NWDAFINFO]] · NWDAFINFO（NWDAF信息） — `NWDAFINFO.md`
-- [[configobject/UNC/20.15.2/NWDAFINFOEXT]] · NWDAFINFOEXT（NWDAF扩展信息） — `NWDAFINFOEXT.md`
-- [[configobject/UNC/20.15.2/NWNAMEBYHSS]] · NWNAMEBYHSS（不发送运营商名称的HSS） — `NWNAMEBYHSS.md`
-- [[configobject/UNC/20.15.2/OCS]] · OCS — `OCS.md`
-- [[configobject/UNC/20.15.2/OCSGROUP]] · OCSGROUP（Ocs组） — `OCSGROUP.md`
-- [[configobject/UNC/20.15.2/OFCSRVTEMPLATE]] · OFCSRVTEMPLATE（离线业务模板） — `OFCSRVTEMPLATE.md`
-- [[configobject/UNC/20.15.2/OFCTEMPLATE]] · OFCTEMPLATE（离线计费模板） — `OFCTEMPLATE.md`
-- [[configobject/UNC/20.15.2/OFFICEFCPARA]] · OFFICEFCPARA（指定NF的流控参数） — `OFFICEFCPARA.md`
-- [[configobject/UNC/20.15.2/OMFWDRT]] · OMFWDRT（OM转发路由） — `OMFWDRT.md`
-- [[configobject/UNC/20.15.2/OMNWCONF]] · OMNWCONF（OM网络探测参数） — `OMNWCONF.md`
-- [[configobject/UNC/20.15.2/OP]] · OP（本地用户属性） — `OP.md`
-- [[configobject/UNC/20.15.2/OPMMETRIC]] · OPMMETRIC（话统指标优化公式） — `OPMMETRIC.md`
-- [[configobject/UNC/20.15.2/OSPF]] · OSPF（OSPF进程配置） — `OSPF.md`
-- [[configobject/UNC/20.15.2/OSPFABRSUMMARY]] · OSPFABRSUMMARY（区域内路由聚合配置） — `OSPFABRSUMMARY.md`
-- [[configobject/UNC/20.15.2/OSPFAREA]] · OSPFAREA（OSPF区域配置） — `OSPFAREA.md`
-- [[configobject/UNC/20.15.2/OSPFAREAAUTH]] · OSPFAREAAUTH（OSPF区域认证配置） — `OSPFAREAAUTH.md`
-- [[configobject/UNC/20.15.2/OSPFAREAFILTER]] · OSPFAREAFILTER（区域过滤策略配置） — `OSPFAREAFILTER.md`
-- [[configobject/UNC/20.15.2/OSPFASBRSUMMARY]] · OSPFASBRSUMMARY（引入路由聚合配置） — `OSPFASBRSUMMARY.md`
-- [[configobject/UNC/20.15.2/OSPFDEFAULTROUTE]] · OSPFDEFAULTROUTE（OSPF默认宣告路由配置） — `OSPFDEFAULTROUTE.md`
-- [[configobject/UNC/20.15.2/OSPFDNBITSET]] · OSPFDNBITSET（DN比特位配置） — `OSPFDNBITSET.md`
-- [[configobject/UNC/20.15.2/OSPFDNSUMRTID]] · OSPFDNSUMRTID（创建特定路由器禁止检查Summary-LSA的DN比特位配置） — `OSPFDNSUMRTID.md`
-- [[configobject/UNC/20.15.2/OSPFDOMAINID]] · OSPFDOMAINID（创建OSPF域标识配置） — `OSPFDOMAINID.md`
-- [[configobject/UNC/20.15.2/OSPFFILTERPOLICY]] · OSPFFILTERPOLICY（OSPF过滤策略配置） — `OSPFFILTERPOLICY.md`
-- [[configobject/UNC/20.15.2/OSPFFRR]] · OSPFFRR（OSPF IP FRR配置） — `OSPFFRR.md`
-- [[configobject/UNC/20.15.2/OSPFGTSM]] · OSPFGTSM（OSPF的GTSM配置） — `OSPFGTSM.md`
-- [[configobject/UNC/20.15.2/OSPFHOSTNAME]] · OSPFHOSTNAME（OSPF主机名配置） — `OSPFHOSTNAME.md`
-- [[configobject/UNC/20.15.2/OSPFIMPORTROUTE]] · OSPFIMPORTROUTE（OSPF引入路由配置） — `OSPFIMPORTROUTE.md`
-- [[configobject/UNC/20.15.2/OSPFINTERFACE]] · OSPFINTERFACE（OSPF接口配置） — `OSPFINTERFACE.md`
-- [[configobject/UNC/20.15.2/OSPFINTERFACEAUTH]] · OSPFINTERFACEAUTH（OSPF接口认证配置） — `OSPFINTERFACEAUTH.md`
-- [[configobject/UNC/20.15.2/OSPFNETWORK]] · OSPFNETWORK（OSPF运行的接口及所属区域） — `OSPFNETWORK.md`
-- [[configobject/UNC/20.15.2/OSPFNEXTHOP]] · OSPFNEXTHOP（OSPF等价路由优先级配置） — `OSPFNEXTHOP.md`
-- [[configobject/UNC/20.15.2/OSPFPEER]] · OSPFPEER（OSPF的NBMA网络邻居路由器配置） — `OSPFPEER.md`
-- [[configobject/UNC/20.15.2/OSPFPREFERENCE]] · OSPFPREFERENCE（OSPF协议路由的优先级配置） — `OSPFPREFERENCE.md`
-- [[configobject/UNC/20.15.2/OSPFPROUTPRIORITY]] · OSPFPROUTPRIORITY（OSPF路由的收敛优先级配置） — `OSPFPROUTPRIORITY.md`
-- [[configobject/UNC/20.15.2/OSPFV3]] · OSPFV3（OSPFv3进程配置） — `OSPFV3.md`
-- [[configobject/UNC/20.15.2/OSPFV3ABRSUMMARY]] · OSPFV3ABRSUMMARY（OSPFv3区域内路由聚合配置） — `OSPFV3ABRSUMMARY.md`
-- [[configobject/UNC/20.15.2/OSPFV3AREA]] · OSPFV3AREA（OSPFv3区域配置） — `OSPFV3AREA.md`
-- [[configobject/UNC/20.15.2/OSPFV3AREAAUTH]] · OSPFV3AREAAUTH（OSPFv3区域认证配置） — `OSPFV3AREAAUTH.md`
-- [[configobject/UNC/20.15.2/OSPFV3AREAFILTER]] · OSPFV3AREAFILTER（OSPFv3区域过滤LSA配置） — `OSPFV3AREAFILTER.md`
-- [[configobject/UNC/20.15.2/OSPFV3ASBRSUMMARY]] · OSPFV3ASBRSUMMARY（OSPFv3引入路由聚合配置） — `OSPFV3ASBRSUMMARY.md`
-- [[configobject/UNC/20.15.2/OSPFV3AUTH]] · OSPFV3AUTH（OSPFv3认证配置） — `OSPFV3AUTH.md`
-- [[configobject/UNC/20.15.2/OSPFV3DEFAULTROUTE]] · OSPFV3DEFAULTROUTE（OSPFv3默认路由宣告配置） — `OSPFV3DEFAULTROUTE.md`
-- [[configobject/UNC/20.15.2/OSPFV3DOMAINID]] · OSPFV3DOMAINID（创建OSPFv3域标识符配置） — `OSPFV3DOMAINID.md`
-- [[configobject/UNC/20.15.2/OSPFV3FILTERPOLICY]] · OSPFV3FILTERPOLICY（OSPFv3过滤策略配置） — `OSPFV3FILTERPOLICY.md`
-- [[configobject/UNC/20.15.2/OSPFV3FRR]] · OSPFV3FRR（OSPFv3 IP FRR配置） — `OSPFV3FRR.md`
-- [[configobject/UNC/20.15.2/OSPFV3GTSM]] · OSPFV3GTSM（OSPFv3 GTSM配置） — `OSPFV3GTSM.md`
-- [[configobject/UNC/20.15.2/OSPFV3HOSTNAME]] · OSPFV3HOSTNAME（OSPFv3主机名配置） — `OSPFV3HOSTNAME.md`
-- [[configobject/UNC/20.15.2/OSPFV3IFIPSECSA]] · OSPFV3IFIPSECSA（创建OSPFv3 接口的安全联盟SA） — `OSPFV3IFIPSECSA.md`
-- [[configobject/UNC/20.15.2/OSPFV3IMPORTROUTE]] · OSPFV3IMPORTROUTE（OSPFv3引入路由配置） — `OSPFV3IMPORTROUTE.md`
-- [[configobject/UNC/20.15.2/OSPFV3INTERFACE]] · OSPFV3INTERFACE（OSPFv3接口配置） — `OSPFV3INTERFACE.md`
-- [[configobject/UNC/20.15.2/OSPFV3INTERFACEAUTH]] · OSPFV3INTERFACEAUTH（OSPFv3接口认证配置） — `OSPFV3INTERFACEAUTH.md`
-- [[configobject/UNC/20.15.2/OSPFV3PREFERENCE]] · OSPFV3PREFERENCE（OSPFv3路由优先级配置） — `OSPFV3PREFERENCE.md`
-- [[configobject/UNC/20.15.2/OSPFV3PRIFIXPRIORITY]] · OSPFV3PRIFIXPRIORITY（OSPFv3路由收敛优先级配置） — `OSPFV3PRIFIXPRIORITY.md`
-- [[configobject/UNC/20.15.2/PACKAGE]] · PACKAGE（软件包） — `PACKAGE.md`
-- [[configobject/UNC/20.15.2/PAEPERFMODE]] · PAEPERFMODE（配置表中的PAE性能模式） — `PAEPERFMODE.md`
-- [[configobject/UNC/20.15.2/PAEPORTGATEWAY]] · PAEPORTGATEWAY（PAE端口网关信息） — `PAEPORTGATEWAY.md`
-- [[configobject/UNC/20.15.2/PATCH]] · PATCH（补丁） — `PATCH.md`
-- [[configobject/UNC/20.15.2/PBUFREUSE5GC]] · PBUFREUSE5GC（pbuf重用检测开关设置） — `PBUFREUSE5GC.md`
-- [[configobject/UNC/20.15.2/PCCBYPASSCODE]] · PCCBYPASSCODE（PCC故障场景维持BYPASS状态码配置） — `PCCBYPASSCODE.md`
-- [[configobject/UNC/20.15.2/PCCCHGMODEBYPCFID]] · PCCCHGMODEBYPCFID（基于PCF的计费策略接口类型） — `PCCCHGMODEBYPCFID.md`
-- [[configobject/UNC/20.15.2/PCCPOLICYGRP]] · PCCPOLICYGRP（PCC策略组） — `PCCPOLICYGRP.md`
-- [[configobject/UNC/20.15.2/PCCTEMPLATE]] · PCCTEMPLATE（PCC模板） — `PCCTEMPLATE.md`
-- [[configobject/UNC/20.15.2/PCCUSRFLOWCTRL]] · PCCUSRFLOWCTRL（流控策略） — `PCCUSRFLOWCTRL.md`
-- [[configobject/UNC/20.15.2/PCFSELPLCY]] · PCFSELPLCY（PCF选择策略） — `PCFSELPLCY.md`
-- [[configobject/UNC/20.15.2/PCFSSCOPE]] · PCFSSCOPE（PCF的业务服务区） — `PCFSSCOPE.md`
-- [[configobject/UNC/20.15.2/PCFSSCOPEALL]] · PCFSSCOPEALL（所有的PCF的业务服务区） — `PCFSSCOPEALL.md`
-- [[configobject/UNC/20.15.2/PCRF]] · PCRF — `PCRF.md`
-- [[configobject/UNC/20.15.2/PCRFGROUP]] · PCRFGROUP（PCRF组） — `PCRFGROUP.md`
-- [[configobject/UNC/20.15.2/PCRFGRPBNDAPN]] · PCRFGRPBNDAPN（APN和Pcrf组关联关系） — `PCRFGRPBNDAPN.md`
-- [[configobject/UNC/20.15.2/PCSCFGROUP]] · PCSCFGROUP（P-CSCF组配置） — `PCSCFGROUP.md`
-- [[configobject/UNC/20.15.2/PCSCFGRPBNDAPN]] · PCSCFGRPBNDAPN（APN和P-CSCF组关联关系） — `PCSCFGRPBNDAPN.md`
-- [[configobject/UNC/20.15.2/PCSCFIMSISDNSEG]] · PCSCFIMSISDNSEG（IMSI和MSISDN号段） — `PCSCFIMSISDNSEG.md`
-- [[configobject/UNC/20.15.2/PCSCFIP]] · PCSCFIP（P-CSCF地址配置） — `PCSCFIP.md`
-- [[configobject/UNC/20.15.2/PCSCFRESTOPLCY]] · PCSCFRESTOPLCY（P-CSCF故障恢复策略） — `PCSCFRESTOPLCY.md`
-- [[configobject/UNC/20.15.2/PDP]] · PDP（承载上下文） — `PDP.md`
-- [[configobject/UNC/20.15.2/PDPAPN]] · PDPAPN（本地APN NI配置） — `PDPAPN.md`
-- [[configobject/UNC/20.15.2/PDPFILTERAPN]] · PDPFILTERAPN（APN优先级配置） — `PDPFILTERAPN.md`
-- [[configobject/UNC/20.15.2/PDPNUMBERARP]] · PDPNUMBERARP（基于PDP数的ARP控制） — `PDPNUMBERARP.md`
-- [[configobject/UNC/20.15.2/PDUACTCTRL]] · PDUACTCTRL（PDU会话激活控制参数） — `PDUACTCTRL.md`
-- [[configobject/UNC/20.15.2/PDUSCACT]] · PDUSCACT（PDU异常返回码动作） — `PDUSCACT.md`
-- [[configobject/UNC/20.15.2/PDUTRIGGER]] · PDUTRIGGER（PDU会话级的trigger参数） — `PDUTRIGGER.md`
-- [[configobject/UNC/20.15.2/PEERNFIPLIST]] · PEERNFIPLIST（对端局向连接列表） — `PEERNFIPLIST.md`
-- [[configobject/UNC/20.15.2/PEERPLMN]] · PEERPLMN（对等PLMN配置） — `PEERPLMN.md`
-- [[configobject/UNC/20.15.2/PEERPUBLICKEY]] · PEERPUBLICKEY（对端公钥） — `PEERPUBLICKEY.md`
-- [[configobject/UNC/20.15.2/PERFDNAI]] · PERFDNAI（用于性能统计的数据网络访问标识信息） — `PERFDNAI.md`
-- [[configobject/UNC/20.15.2/PERFDNN]] · PERFDNN（DNN性能统计对象） — `PERFDNN.md`
-- [[configobject/UNC/20.15.2/PERFEPRPDYN]] · PERFEPRPDYN（EpRpDyn性能统计对象） — `PERFEPRPDYN.md`
-- [[configobject/UNC/20.15.2/PERFEPRPDYNIP]] · PERFEPRPDYNIP（EpRpDyn对象的IP地址） — `PERFEPRPDYNIP.md`
-- [[configobject/UNC/20.15.2/PERFGBPAGING]] · PERFGBPAGING（Gb接口寻呼数据） — `PERFGBPAGING.md`
-- [[configobject/UNC/20.15.2/PERFMULTIDNN]] · PERFMULTIDNN（MultiDNN性能统计对象） — `PERFMULTIDNN.md`
-- [[configobject/UNC/20.15.2/PERFNGLANGRP]] · PERFNGLANGRP（用于性能统计的5G LAN群组） — `PERFNGLANGRP.md`
-- [[configobject/UNC/20.15.2/PERFNGPEIGRP]] · PERFNGPEIGRP（NG PEI组性能统计对象） — `PERFNGPEIGRP.md`
-- [[configobject/UNC/20.15.2/PERFNGTAIGROUP]] · PERFNGTAIGROUP（NG TAI组性能统计对象） — `PERFNGTAIGROUP.md`
-- [[configobject/UNC/20.15.2/PERFNS]] · PERFNS（切片性能统计对象） — `PERFNS.md`
-- [[configobject/UNC/20.15.2/PERFNSADDRPOOL]] · PERFNSADDRPOOL（切片地址池性能统计对象） — `PERFNSADDRPOOL.md`
-- [[configobject/UNC/20.15.2/PERFNSE]] · PERFNSE（NSE标识） — `PERFNSE.md`
-- [[configobject/UNC/20.15.2/PERFOBJ]] · PERFOBJ（性能对象信息） — `PERFOBJ.md`
-- [[configobject/UNC/20.15.2/PERFOBJRULE]] · PERFOBJRULE（性能对象规则） — `PERFOBJRULE.md`
-- [[configobject/UNC/20.15.2/PERFPEERNF]] · PERFPEERNF（NF局向性能统计对象） — `PERFPEERNF.md`
-- [[configobject/UNC/20.15.2/PERFREGAPN]] · PERFREGAPN（区域和APN性能统计对象） — `PERFREGAPN.md`
-- [[configobject/UNC/20.15.2/PERFREGION]] · PERFREGION（区域性能统计对象） — `PERFREGION.md`
-- [[configobject/UNC/20.15.2/PERFREGTAC]] · PERFREGTAC（区域性能统计对象和TAC段的绑定关系） — `PERFREGTAC.md`
-- [[configobject/UNC/20.15.2/PERFRPTRANGE]] · PERFRPTRANGE（性能指标上报范围） — `PERFRPTRANGE.md`
-- [[configobject/UNC/20.15.2/PERFS1TACSEG]] · PERFS1TACSEG（S1TAC段） — `PERFS1TACSEG.md`
-- [[configobject/UNC/20.15.2/PERFSLCADDRPOOL]] · PERFSLCADDRPOOL（切片地址池性能统计对象） — `PERFSLCADDRPOOL.md`
-- [[configobject/UNC/20.15.2/PERFTAIGROUP]] · PERFTAIGROUP（TAI组性能统计对象） — `PERFTAIGROUP.md`
-- [[configobject/UNC/20.15.2/PERFTAIGROUPMEM]] · PERFTAIGROUPMEM（TAI组性能统计对象成员） — `PERFTAIGROUPMEM.md`
-- [[configobject/UNC/20.15.2/PGWCHARACT]] · PGWCHARACT（P-GW特性对接配置） — `PGWCHARACT.md`
-- [[configobject/UNC/20.15.2/PGWESTNSR]] · PGWESTNSR（E-STN-SR和PGW关系配置表） — `PGWESTNSR.md`
-- [[configobject/UNC/20.15.2/PGWGROUP]] · PGWGROUP（P-GW组） — `PGWGROUP.md`
-- [[configobject/UNC/20.15.2/PGWHOSTNAME]] · PGWHOSTNAME（逻辑接口的PGW主机名） — `PGWHOSTNAME.md`
-- [[configobject/UNC/20.15.2/PGWNODE]] · PGWNODE（P-GW局向） — `PGWNODE.md`
-- [[configobject/UNC/20.15.2/PGWRESEL]] · PGWRESEL（本地P-GW重选策略） — `PGWRESEL.md`
-- [[configobject/UNC/20.15.2/PGWRNSI]] · PGWRNSI（PGW重定向配置） — `PGWRNSI.md`
-- [[configobject/UNC/20.15.2/PIMIF]] · PIMIF（PIM接口配置） — `PIMIF.md`
-- [[configobject/UNC/20.15.2/PIMSITE]] · PIMSITE（PIM全局配置） — `PIMSITE.md`
-- [[configobject/UNC/20.15.2/PIMSTATICRP]] · PIMSTATICRP（PIM静态RP配置） — `PIMSTATICRP.md`
-- [[configobject/UNC/20.15.2/PLCYNSGRP]] · PLCYNSGRP（用于策略控制的网络切片群组） — `PLCYNSGRP.md`
-- [[configobject/UNC/20.15.2/PLCYNSGRPMEM]] · PLCYNSGRPMEM（用于策略控制的网络切片群组成员） — `PLCYNSGRPMEM.md`
-- [[configobject/UNC/20.15.2/PLGPKG]] · PLGPKG（扩展包） — `PLGPKG.md`
-- [[configobject/UNC/20.15.2/PLMNMATCH]] · PLMNMATCH（MCC与MNC的归属关系） — `PLMNMATCH.md`
-- [[configobject/UNC/20.15.2/PLMNNS]] · PLMNNS（网络切片） — `PLMNNS.md`
-- [[configobject/UNC/20.15.2/PNFALLOWDOMAIN]] · PNFALLOWDOMAIN（对端NF允许的域名信息） — `PNFALLOWDOMAIN.md`
-- [[configobject/UNC/20.15.2/PNFALLOWEDNFNS]] · PNFALLOWEDNFNS（对端NF允许的切片信息） — `PNFALLOWEDNFNS.md`
-- [[configobject/UNC/20.15.2/PNFALLOWEDPLMN]] · PNFALLOWEDPLMN（对端NF允许的PLMN信息） — `PNFALLOWEDPLMN.md`
-- [[configobject/UNC/20.15.2/PNFAMFINFO]] · PNFAMFINFO（对端AMF信息） — `PNFAMFINFO.md`
-- [[configobject/UNC/20.15.2/PNFDISCPLCY]] · PNFDISCPLCY（对端NF的服务发现策略） — `PNFDISCPLCY.md`
-- [[configobject/UNC/20.15.2/PNFDNAI]] · PNFDNAI（对端NF的DNAI信息） — `PNFDNAI.md`
-- [[configobject/UNC/20.15.2/PNFDNN]] · PNFDNN（对端NF的DNN信息） — `PNFDNN.md`
-- [[configobject/UNC/20.15.2/PNFEXGROUPID]] · PNFEXGROUPID（对端NF的外部群组信息） — `PNFEXGROUPID.md`
-- [[configobject/UNC/20.15.2/PNFGMLCINFO]] · PNFGMLCINFO（对端GMLC信息） — `PNFGMLCINFO.md`
-- [[configobject/UNC/20.15.2/PNFGPSI]] · PNFGPSI（对端NF的GPSI信息） — `PNFGPSI.md`
-- [[configobject/UNC/20.15.2/PNFGROUPID]] · PNFGROUPID（对端NF的群组信息） — `PNFGROUPID.md`
-- [[configobject/UNC/20.15.2/PNFGUAMI]] · PNFGUAMI（对端AMF的GUAMI信息） — `PNFGUAMI.md`
-- [[configobject/UNC/20.15.2/PNFLMFINFO]] · PNFLMFINFO（对端LMF信息） — `PNFLMFINFO.md`
-- [[configobject/UNC/20.15.2/PNFNS]] · PNFNS（对端NF的切片信息） — `PNFNS.md`
-- [[configobject/UNC/20.15.2/PNFNSILST]] · PNFNSILST（对端NF实例网络切片标识） — `PNFNSILST.md`
-- [[configobject/UNC/20.15.2/PNFNWDAFEVENT]] · PNFNWDAFEVENT（对端NWDAF信息） — `PNFNWDAFEVENT.md`
-- [[configobject/UNC/20.15.2/PNFPCFINFO]] · PNFPCFINFO（对端PCF信息） — `PNFPCFINFO.md`
-- [[configobject/UNC/20.15.2/PNFPLMN]] · PNFPLMN（对端NF的PLMN信息） — `PNFPLMN.md`
-- [[configobject/UNC/20.15.2/PNFPLMNRANGE]] · PNFPLMNRANGE（对端NF的PLMN范围） — `PNFPLMNRANGE.md`
-- [[configobject/UNC/20.15.2/PNFPROFILE]] · PNFPROFILE（对端NF实例概述信息） — `PNFPROFILE.md`
-- [[configobject/UNC/20.15.2/PNFROUTEIND]] · PNFROUTEIND（对端NF的路由指示信息） — `PNFROUTEIND.md`
-- [[configobject/UNC/20.15.2/PNFSERVICE]] · PNFSERVICE（对端NF服务实例信息） — `PNFSERVICE.md`
-- [[configobject/UNC/20.15.2/PNFSERVICEVER]] · PNFSERVICEVER（对端NF的服务实例的版本信息） — `PNFSERVICEVER.md`
-- [[configobject/UNC/20.15.2/PNFSLCTSSCOPE]] · PNFSLCTSSCOPE（选择对端NF时使用的业务服务区） — `PNFSLCTSSCOPE.md`
-- [[configobject/UNC/20.15.2/PNFSMFINFO]] · PNFSMFINFO（对端SMF的信息） — `PNFSMFINFO.md`
-- [[configobject/UNC/20.15.2/PNFSMFSERAREA]] · PNFSMFSERAREA（对端NF的SMF服务区域信息） — `PNFSMFSERAREA.md`
-- [[configobject/UNC/20.15.2/PNFSRVNTFSUBS]] · PNFSRVNTFSUBS（对端NF服务实例的回调信息） — `PNFSRVNTFSUBS.md`
-- [[configobject/UNC/20.15.2/PNFSRVSCOPE]] · PNFSRVSCOPE（对端NF的服务区信息） — `PNFSRVSCOPE.md`
-- [[configobject/UNC/20.15.2/PNFSUPI]] · PNFSUPI（对端NF的SUPI信息） — `PNFSUPI.md`
-- [[configobject/UNC/20.15.2/PNFTAI]] · PNFTAI（对端NF的TAI信息） — `PNFTAI.md`
-- [[configobject/UNC/20.15.2/PNFTAIRANGE]] · PNFTAIRANGE（对端NF的TAI范围） — `PNFTAIRANGE.md`
-- [[configobject/UNC/20.15.2/PNFUPFINFO]] · PNFUPFINFO（对端UPF信息） — `PNFUPFINFO.md`
-- [[configobject/UNC/20.15.2/PNFWILDCARD]] · PNFWILDCARD（对端NF的通配策略） — `PNFWILDCARD.md`
-- [[configobject/UNC/20.15.2/PODALMTH]] · PODALMTH（POD资源告警阈值） — `PODALMTH.md`
-- [[configobject/UNC/20.15.2/PODBLACKLIST]] · PODBLACKLIST（Pod自愈黑名单） — `PODBLACKLIST.md`
-- [[configobject/UNC/20.15.2/PODHEALCPUTHR]] · PODHEALCPUTHR（对应PODTYPE下的阈值配置） — `PODHEALCPUTHR.md`
-- [[configobject/UNC/20.15.2/PODISOBLKLIST]] · PODISOBLKLIST（Pod隔离黑名单） — `PODISOBLKLIST.md`
-- [[configobject/UNC/20.15.2/POOL]] · POOL（POOL配置信息） — `POOL.md`
-- [[configobject/UNC/20.15.2/POOLGRPMAP]] · POOLGRPMAP（地址池组映射关系） — `POOLGRPMAP.md`
-- [[configobject/UNC/20.15.2/POOLLA]] · POOLLA（POOL LA配置信息） — `POOLLA.md`
-- [[configobject/UNC/20.15.2/POOLNRI]] · POOLNRI（POOL区NRI配置信息） — `POOLNRI.md`
-- [[configobject/UNC/20.15.2/PORTGROUP]] · PORTGROUP（端口组） — `PORTGROUP.md`
-- [[configobject/UNC/20.15.2/PORTGROUPMEMBER]] · PORTGROUPMEMBER（端口组成员） — `PORTGROUPMEMBER.md`
-- [[configobject/UNC/20.15.2/PRAID]] · PRAID（PRA标识） — `PRAID.md`
-- [[configobject/UNC/20.15.2/PRALSTMEM]] · PRALSTMEM（PRA列表成员） — `PRALSTMEM.md`
-- [[configobject/UNC/20.15.2/PREFIXFILTERNODE]] · PREFIXFILTERNODE（IPv4地址前缀列表过滤器节点） — `PREFIXFILTERNODE.md`
-- [[configobject/UNC/20.15.2/PRER8QOSACTION]] · PRER8QOSACTION（Pre-R8 QoS控制动作配置） — `PRER8QOSACTION.md`
-- [[configobject/UNC/20.15.2/PRER8REMARK]] · PRER8REMARK（Pre-R8 QoS到TOS/DSCP的映射规则） — `PRER8REMARK.md`
-- [[configobject/UNC/20.15.2/PRER8SUBQOS]] · PRER8SUBQOS（Pre-R8签约QoS配置） — `PRER8SUBQOS.md`
-- [[configobject/UNC/20.15.2/PRIMSIMSISDNG]] · PRIMSIMSISDNG（代理IMSI/MSISDN号段组） — `PRIMSIMSISDNG.md`
-- [[configobject/UNC/20.15.2/PRIMSIMSISDNSEG]] · PRIMSIMSISDNSEG（代理IMSI/MSISDN号段） — `PRIMSIMSISDNSEG.md`
-- [[configobject/UNC/20.15.2/PROCLMTPLCY]] · PROCLMTPLCY（流程限制策略） — `PROCLMTPLCY.md`
-- [[configobject/UNC/20.15.2/PROFILESPACE]] · PROFILESPACE（Profile Space） — `PROFILESPACE.md`
-- [[configobject/UNC/20.15.2/PROPATTACHIPSECPROPOSAL]] · PROPATTACHIPSECPROPOSAL（IPsec策略绑定提议） — `PROPATTACHIPSECPROPOSAL.md`
-- [[configobject/UNC/20.15.2/PROXYSGWACCLIST]] · PROXYSGWACCLIST（Proxy SGW-C接入控制列表） — `PROXYSGWACCLIST.md`
-- [[configobject/UNC/20.15.2/PROXYSMFACCLIST]] · PROXYSMFACCLIST（Proxy SMF接入控制列表） — `PROXYSMFACCLIST.md`
-- [[configobject/UNC/20.15.2/PROXYSMFCTRL]] · PROXYSMFCTRL（proxy SMF控制） — `PROXYSMFCTRL.md`
-- [[configobject/UNC/20.15.2/PSCSHSS]] · PSCSHSS（联合接入HSS白名单） — `PSCSHSS.md`
-- [[configobject/UNC/20.15.2/PSCSIMSI]] · PSCSIMSI（联合接入IMSI白名单） — `PSCSIMSI.md`
-- [[configobject/UNC/20.15.2/PUBLICAPNNI]] · PUBLICAPNNI（公共APN NI配置） — `PUBLICAPNNI.md`
-- [[configobject/UNC/20.15.2/PWD]] · PWD（在线用户自身密码） — `PWD.md`
-- [[configobject/UNC/20.15.2/PWDBLACKLIST]] · PWDBLACKLIST（密码禁用词） — `PWDBLACKLIST.md`
-- [[configobject/UNC/20.15.2/QBCPDUTRIGGER]] · QBCPDUTRIGGER（QBC计费PDU会话级的trigger参数） — `QBCPDUTRIGGER.md`
-- [[configobject/UNC/20.15.2/QBCQOSFTRIGGER]] · QBCQOSFTRIGGER（QBC计费QoS Flow级的trigger参数） — `QBCQOSFTRIGGER.md`
-- [[configobject/UNC/20.15.2/QCICONV]] · QCICONV（扩展QCI转换关系） — `QCICONV.md`
-- [[configobject/UNC/20.15.2/QCIPAGINGINFO]] · QCIPAGINGINFO（QCI寻呼策略参数配置） — `QCIPAGINGINFO.md`
-- [[configobject/UNC/20.15.2/QOS5QI2QCIMAP]] · QOS5QI2QCIMAP（5QI到QCI的映射） — `QOS5QI2QCIMAP.md`
-- [[configobject/UNC/20.15.2/QOSACTRDRNHP]] · QOSACTRDRNHP（QoS重定向下一跳信息） — `QOSACTRDRNHP.md`
-- [[configobject/UNC/20.15.2/QOSACTRDRPOLICY]] · QOSACTRDRPOLICY（流行为下级联流策略） — `QOSACTRDRPOLICY.md`
-- [[configobject/UNC/20.15.2/QOSAPPLICATION]] · QOSAPPLICATION（流策略） — `QOSAPPLICATION.md`
-- [[configobject/UNC/20.15.2/QOSCAP]] · QOSCAP（Non-GBR承载QoS限制配置） — `QOSCAP.md`
-- [[configobject/UNC/20.15.2/QOSCAPBY5QI]] · QOSCAPBY5QI（基于5QI的QosFlow QoS限制配置。） — `QOSCAPBY5QI.md`
-- [[configobject/UNC/20.15.2/QOSCAPBYQCI]] · QOSCAPBYQCI（基于QCI的Non-GBR承载QoS限制配置） — `QOSCAPBYQCI.md`
-- [[configobject/UNC/20.15.2/QOSCAPGBR]] · QOSCAPGBR（GBR承载QoS限制配置） — `QOSCAPGBR.md`
-- [[configobject/UNC/20.15.2/QOSCAPWHITEAPNS]] · QOSCAPWHITEAPNS（不受SMFQOSCAP配置控制的APN白名单列表。） — `QOSCAPWHITEAPNS.md`
-- [[configobject/UNC/20.15.2/QOSCHARS]] · QOSCHARS（QoS特征） — `QOSCHARS.md`
-- [[configobject/UNC/20.15.2/QOSDIFFERSERV]] · QOSDIFFERSERV（DS域） — `QOSDIFFERSERV.md`
-- [[configobject/UNC/20.15.2/QOSIFPHB]] · QOSIFPHB（禁止QoS优先级映射的类型） — `QOSIFPHB.md`
-- [[configobject/UNC/20.15.2/QOSIFTRUST]] · QOSIFTRUST（QoS接口信任） — `QOSIFTRUST.md`
-- [[configobject/UNC/20.15.2/QOSMONTRULE]] · QOSMONTRULE（QoS监测规则） — `QOSMONTRULE.md`
-- [[configobject/UNC/20.15.2/QOSPLCYBYAPN]] · QOSPLCYBYAPN（基于APN的QoS策略） — `QOSPLCYBYAPN.md`
-- [[configobject/UNC/20.15.2/QOSPROFILE]] · QOSPROFILE（QoS描述配置） — `QOSPROFILE.md`
-- [[configobject/UNC/20.15.2/QOSPROP]] · QOSPROP（QoS属性） — `QOSPROP.md`
-- [[configobject/UNC/20.15.2/QOSRDRVPN]] · QOSRDRVPN（QoS重定向VPN） — `QOSRDRVPN.md`
-- [[configobject/UNC/20.15.2/QOSRDRWLRFLOW]] · QOSRDRWLRFLOW（WLR引流重定向） — `QOSRDRWLRFLOW.md`
-- [[configobject/UNC/20.15.2/QOSRULEACL]] · QOSRULEACL（流分类下删除ACL规则组） — `QOSRULEACL.md`
-- [[configobject/UNC/20.15.2/QOSTRANS]] · QOSTRANS（签约QoS转换配置） — `QOSTRANS.md`
-- [[configobject/UNC/20.15.2/QUOTAEXHAUSTACT]] · QUOTAEXHAUSTACT（配额耗尽后的动作） — `QUOTAEXHAUSTACT.md`
-- [[configobject/UNC/20.15.2/RACGROUP]] · RACGROUP（RAC组） — `RACGROUP.md`
-- [[configobject/UNC/20.15.2/RACID]] · RACID（RAC组内绑定的RAC号段） — `RACID.md`
-- [[configobject/UNC/20.15.2/RADIUSCLIENTIP]] · RADIUSCLIENTIP（Radius Group Client IP接口） — `RADIUSCLIENTIP.md`
-- [[configobject/UNC/20.15.2/RADIUSNASIP]] · RADIUSNASIP（RADIUS NAS IP） — `RADIUSNASIP.md`
-- [[configobject/UNC/20.15.2/RAPAGINGRULE]] · RAPAGINGRULE（基于路由区的寻呼参数设置） — `RAPAGINGRULE.md`
-- [[configobject/UNC/20.15.2/RCAPLKS]] · RCAPLKS（注册中心链路集） — `RCAPLKS.md`
-- [[configobject/UNC/20.15.2/RCAPLNK]] · RCAPLNK（注册中心链路） — `RCAPLNK.md`
-- [[configobject/UNC/20.15.2/RCENTER]] · RCENTER（注册中心） — `RCENTER.md`
-- [[configobject/UNC/20.15.2/RDFILTERNODE]] · RDFILTERNODE（RD路由过滤节点） — `RDFILTERNODE.md`
-- [[configobject/UNC/20.15.2/RDSACCTATTTEMP]] · RDSACCTATTTEMP（计费消息属性模板） — `RDSACCTATTTEMP.md`
-- [[configobject/UNC/20.15.2/RDSPFCPCTX]] · RDSPFCPCTX（RADIUS中转UPF会话上下文） — `RDSPFCPCTX.md`
-- [[configobject/UNC/20.15.2/RDSSVR]] · RDSSVR（RADIUS服务器） — `RDSSVR.md`
-- [[configobject/UNC/20.15.2/RDSSVRGRP]] · RDSSVRGRP（Radius服务器组） — `RDSSVRGRP.md`
-- [[configobject/UNC/20.15.2/RDSTRING]] · RDSTRING（RD字符） — `RDSTRING.md`
-- [[configobject/UNC/20.15.2/RDSUPFCTRL]] · RDSUPFCTRL（RADIUS服务器的UP列表中指定UP的功能属性） — `RDSUPFCTRL.md`
-- [[configobject/UNC/20.15.2/RECOVERY]] · RECOVERY（本端重启次数） — `RECOVERY.md`
-- [[configobject/UNC/20.15.2/REGNFINSTANCE]] · REGNFINSTANCE（NF实例） — `REGNFINSTANCE.md`
-- [[configobject/UNC/20.15.2/REGNFPROFILETBLREC]] · REGNFPROFILETBLREC（注册NF的Profile表记录） — `REGNFPROFILETBLREC.md`
-- [[configobject/UNC/20.15.2/REGNFSUBINFO]] · REGNFSUBINFO（订阅信息） — `REGNFSUBINFO.md`
-- [[configobject/UNC/20.15.2/REMINDTIME]] · REMINDTIME（证书到期提醒时间） — `REMINDTIME.md`
-- [[configobject/UNC/20.15.2/RESELAREACODE]] · RESELAREACODE（AMF重选功能区域编码） — `RESELAREACODE.md`
-- [[configobject/UNC/20.15.2/RESELAREAMEM]] · RESELAREAMEM（AMF重选功能区域成员） — `RESELAREAMEM.md`
-- [[configobject/UNC/20.15.2/RESELECTUPCAUSE]] · RESELECTUPCAUSE（重选UPF故障原因值） — `RESELECTUPCAUSE.md`
-- [[configobject/UNC/20.15.2/RESERVEDCMD]] · RESERVEDCMD（补丁预留配置） — `RESERVEDCMD.md`
-- [[configobject/UNC/20.15.2/RESERVEDIP]] · RESERVEDIP（预留IP资源） — `RESERVEDIP.md`
-- [[configobject/UNC/20.15.2/RESERVEDMOC1]] · RESERVEDMOC1（补丁预留MOC1） — `RESERVEDMOC1.md`
-- [[configobject/UNC/20.15.2/RESERVEDMOC2]] · RESERVEDMOC2（补丁预留MOC2） — `RESERVEDMOC2.md`
-- [[configobject/UNC/20.15.2/RESERVEDMOC3]] · RESERVEDMOC3（补丁预留MOC3） — `RESERVEDMOC3.md`
-- [[configobject/UNC/20.15.2/RESTOAPN]] · RESTOAPN（容灾APN特征参数） — `RESTOAPN.md`
-- [[configobject/UNC/20.15.2/RESTOUSR]] · RESTOUSR（容灾用户特征参数） — `RESTOUSR.md`
-- [[configobject/UNC/20.15.2/RESTOUSRSEG]] · RESTOUSRSEG（容灾用户号段参数） — `RESTOUSRSEG.md`
-- [[configobject/UNC/20.15.2/RESTRICTSNSSAI]] · RESTRICTSNSSAI（受限的S-NSSAI） — `RESTRICTSNSSAI.md`
-- [[configobject/UNC/20.15.2/RESULTCODECTRL]] · RESULTCODECTRL（返回码控制） — `RESULTCODECTRL.md`
-- [[configobject/UNC/20.15.2/RESULTCODEDRA]] · RESULTCODEDRA（DRA返回码控制） — `RESULTCODEDRA.md`
-- [[configobject/UNC/20.15.2/RESULTCODESCP]] · RESULTCODESCP（配置MODELC/D组网的SCP原因码控制） — `RESULTCODESCP.md`
-- [[configobject/UNC/20.15.2/RFSP]] · RFSP（RFSP配置） — `RFSP.md`
-- [[configobject/UNC/20.15.2/RGINFO]] · RGINFO（费率组信息） — `RGINFO.md`
-- [[configobject/UNC/20.15.2/RGRCACT]] · RGRCACT（RG级异常返回码处理动作） — `RGRCACT.md`
-- [[configobject/UNC/20.15.2/RGTRIGGER]] · RGTRIGGER（RG级的trigger参数） — `RGTRIGGER.md`
-- [[configobject/UNC/20.15.2/RNC]] · RNC（Iu接口RNC信息） — `RNC.md`
-- [[configobject/UNC/20.15.2/ROAMCHGMODE]] · ROAMCHGMODE（基于漫游属性的计费接口选择方式） — `ROAMCHGMODE.md`
-- [[configobject/UNC/20.15.2/ROAMINSUPIWL]] · ROAMINSUPIWL（漫入场景SUPI白名单） — `ROAMINSUPIWL.md`
-- [[configobject/UNC/20.15.2/ROAMSCPFUNCSW]] · ROAMSCPFUNCSW（漫游跨PLMN场景间接路由配置） — `ROAMSCPFUNCSW.md`
-- [[configobject/UNC/20.15.2/ROUTEPOLICY]] · ROUTEPOLICY（路由策略） — `ROUTEPOLICY.md`
-- [[configobject/UNC/20.15.2/ROUTEPOLICYNODE]] · ROUTEPOLICYNODE（路由策略节点） — `ROUTEPOLICYNODE.md`
-- [[configobject/UNC/20.15.2/ROUTINGBEHINDMS]] · ROUTINGBEHINDMS（手机后路由配置） — `ROUTINGBEHINDMS.md`
-- [[configobject/UNC/20.15.2/ROUTINGBEHMSALL]] · ROUTINGBEHMSALL（所有手机后路由配置） — `ROUTINGBEHMSALL.md`
-- [[configobject/UNC/20.15.2/RRCINACTPLCY]] · RRCINACTPLCY（RRC Inactive策略） — `RRCINACTPLCY.md`
-- [[configobject/UNC/20.15.2/RRCINACTTAI]] · RRCINACTTAI（RRC Inactive生效的TAI范围） — `RRCINACTTAI.md`
-- [[configobject/UNC/20.15.2/RSAKEYPAIRLABEL]] · RSAKEYPAIRLABEL（创建RSA密钥对标签） — `RSAKEYPAIRLABEL.md`
-- [[configobject/UNC/20.15.2/RSNRULE]] · RSNRULE（RSN规则） — `RSNRULE.md`
-- [[configobject/UNC/20.15.2/RSTRNSAREACODE]] · RSTRNSAREACODE（TA级切片限制区域码） — `RSTRNSAREACODE.md`
-- [[configobject/UNC/20.15.2/RSTRNSAREAMEM]] · RSTRNSAREAMEM（TA级限制切片所属跟踪区成员） — `RSTRNSAREAMEM.md`
-- [[configobject/UNC/20.15.2/RUCONVERGENCE]] · RUCONVERGENCE（汇聚RU信息） — `RUCONVERGENCE.md`
-- [[configobject/UNC/20.15.2/RULE]] · RULE（规则） — `RULE.md`
-- [[configobject/UNC/20.15.2/S11INTFSUBNET]] · S11INTFSUBNET（S11接口子网配置） — `S11INTFSUBNET.md`
-- [[configobject/UNC/20.15.2/S1ACCAREALST]] · S1ACCAREALST（S1模式接入控制配置） — `S1ACCAREALST.md`
-- [[configobject/UNC/20.15.2/S1ALGPRIORITY]] · S1ALGPRIORITY（S1模式加密和完整性算法优先级配置信息） — `S1ALGPRIORITY.md`
-- [[configobject/UNC/20.15.2/S1APLE]] · S1APLE（S1AP本地实体） — `S1APLE.md`
-- [[configobject/UNC/20.15.2/S1APLNK]] · S1APLNK（S1AP连接） — `S1APLNK.md`
-- [[configobject/UNC/20.15.2/S1ARD]] · S1ARD（S1模式接入限制参数） — `S1ARD.md`
-- [[configobject/UNC/20.15.2/S1IMEICFG]] · S1IMEICFG（S1模式IMEI配置） — `S1IMEICFG.md`
-- [[configobject/UNC/20.15.2/S1LOCRPT]] · S1LOCRPT（S1模式实时小区位置订阅） — `S1LOCRPT.md`
-- [[configobject/UNC/20.15.2/S1PAGINGRULE]] · S1PAGINGRULE（S1寻呼规则） — `S1PAGINGRULE.md`
-- [[configobject/UNC/20.15.2/S1PAGINGRULEALL]] · S1PAGINGRULEALL（所有S1寻呼规则） — `S1PAGINGRULEALL.md`
-- [[configobject/UNC/20.15.2/S1SMARTRULE]] · S1SMARTRULE（S1模式信令抑制规则） — `S1SMARTRULE.md`
-- [[configobject/UNC/20.15.2/S1SUBRRLST]] · S1SUBRRLST（S1模式用户漫游限制列表） — `S1SUBRRLST.md`
-- [[configobject/UNC/20.15.2/S1TACID]] · S1TACID（TAC组内绑定的S1TAC号段） — `S1TACID.md`
-- [[configobject/UNC/20.15.2/S1UBLACKLST]] · S1UBLACKLST（S1-U IP地址黑名单记录） — `S1UBLACKLST.md`
-- [[configobject/UNC/20.15.2/S1USRSECPARA]] · S1USRSECPARA（S1模式用户安全配置） — `S1USRSECPARA.md`
-- [[configobject/UNC/20.15.2/SAIGEO]] · SAIGEO（服务区标识与地理坐标对照关系） — `SAIGEO.md`
-- [[configobject/UNC/20.15.2/SBCAPLE]] · SBCAPLE（SBCAP本地实体） — `SBCAPLE.md`
-- [[configobject/UNC/20.15.2/SBCAPLNK]] · SBCAPLNK（SBc链路） — `SBCAPLNK.md`
-- [[configobject/UNC/20.15.2/SBCMME]] · SBCMME（SBC MME实体） — `SBCMME.md`
-- [[configobject/UNC/20.15.2/SBIALLOWSERV]] · SBIALLOWSERV（基于服务的白名单） — `SBIALLOWSERV.md`
-- [[configobject/UNC/20.15.2/SBIAPLE]] · SBIAPLE（服务化接口本端实体） — `SBIAPLE.md`
-- [[configobject/UNC/20.15.2/SBIDIALTEST]] · SBIDIALTEST（间接路由拨测用户配置） — `SBIDIALTEST.md`
-- [[configobject/UNC/20.15.2/SBIFQDNPORTPLCY]] · SBIFQDNPORTPLCY（FQDN端口策略） — `SBIFQDNPORTPLCY.md`
-- [[configobject/UNC/20.15.2/SBILINKCFG]] · SBILINKCFG（SBI接口链路属性配置） — `SBILINKCFG.md`
-- [[configobject/UNC/20.15.2/SBILINKSET]] · SBILINKSET（服务化接口链路集） — `SBILINKSET.md`
-- [[configobject/UNC/20.15.2/SBILINKSETPROP]] · SBILINKSETPROP（SBI链路集策略） — `SBILINKSETPROP.md`
-- [[configobject/UNC/20.15.2/SBINRFKEY]] · SBINRFKEY（NRF密钥） — `SBINRFKEY.md`
-- [[configobject/UNC/20.15.2/SCALELOADMON]] · SCALELOADMON（自动扩缩容监测的虚机资源） — `SCALELOADMON.md`
-- [[configobject/UNC/20.15.2/SCCPDPC]] · SCCPDPC（SCCP目的信令点） — `SCCPDPC.md`
-- [[configobject/UNC/20.15.2/SCCPDPCSHR]] · SCCPDPCSHR（DPC多点负荷分担记录） — `SCCPDPCSHR.md`
-- [[configobject/UNC/20.15.2/SCCPGT]] · SCCPGT（SCCP全局翻译码） — `SCCPGT.md`
-- [[configobject/UNC/20.15.2/SCCPNGT]] · SCCPNGT（SCCP新全局翻译码） — `SCCPNGT.md`
-- [[configobject/UNC/20.15.2/SCCPOPC]] · SCCPOPC（SCCP本局信令点） — `SCCPOPC.md`
-- [[configobject/UNC/20.15.2/SCCPSSN]] · SCCPSSN（SCCP子系统） — `SCCPSSN.md`
-- [[configobject/UNC/20.15.2/SCEF]] · SCEF（SCEF配置） — `SCEF.md`
-- [[configobject/UNC/20.15.2/SCNDGWSELPLCY]] · SCNDGWSELPLCY（相同APN建立多个PDP/PDN连接的网关选择策略） — `SCNDGWSELPLCY.md`
-- [[configobject/UNC/20.15.2/SCTPASSOC]] · SCTPASSOC（SCTP耦联信息） — `SCTPASSOC.md`
-- [[configobject/UNC/20.15.2/SCTPENDPOINT]] · SCTPENDPOINT（SCTP端点） — `SCTPENDPOINT.md`
-- [[configobject/UNC/20.15.2/SCTPLE]] · SCTPLE（SCTP本地实体） — `SCTPLE.md`
-- [[configobject/UNC/20.15.2/SCTPLEGRP]] · SCTPLEGRP（SCTP本地实体组） — `SCTPLEGRP.md`
-- [[configobject/UNC/20.15.2/SCTPPARA]] · SCTPPARA（SCTP协议参数） — `SCTPPARA.md`
-- [[configobject/UNC/20.15.2/SCTPTEMPLATE]] · SCTPTEMPLATE（SCTP模板） — `SCTPTEMPLATE.md`
-- [[configobject/UNC/20.15.2/SDAPLE]] · SDAPLE（SDAP本地实体） — `SDAPLE.md`
-- [[configobject/UNC/20.15.2/SECAUTHMEM]] · SECAUTHMEM（二次授权命令） — `SECAUTHMEM.md`
-- [[configobject/UNC/20.15.2/SECPOLICY]] · SECPOLICY（防攻击策略） — `SECPOLICY.md`
-- [[configobject/UNC/20.15.2/SECPOLICYACL]] · SECPOLICYACL（安全策略ACL规则） — `SECPOLICYACL.md`
-- [[configobject/UNC/20.15.2/SECPOLICYALARM]] · SECPOLICYALARM（安全策略告警配置） — `SECPOLICYALARM.md`
-- [[configobject/UNC/20.15.2/SECPOLICYCAR]] · SECPOLICYCAR（安全防攻击CAR规则） — `SECPOLICYCAR.md`
-- [[configobject/UNC/20.15.2/SECPOLICYCFG]] · SECPOLICYCFG（应用防攻击策略） — `SECPOLICYCFG.md`
-- [[configobject/UNC/20.15.2/SECPOLICYPROSEQ]] · SECPOLICYPROSEQ（安全策略匹配顺序） — `SECPOLICYPROSEQ.md`
-- [[configobject/UNC/20.15.2/SECTION]] · SECTION（地址段） — `SECTION.md`
-- [[configobject/UNC/20.15.2/SEGBLACKLIST]] · SEGBLACKLIST（导入号段黑名单） — `SEGBLACKLIST.md`
-- [[configobject/UNC/20.15.2/SEGDATA]] · SEGDATA（号段数据） — `SEGDATA.md`
-- [[configobject/UNC/20.15.2/SEGFILENOTIFY]] · SEGFILENOTIFY（号段文件通知记录） — `SEGFILENOTIFY.md`
-- [[configobject/UNC/20.15.2/SEGFILEPUBKEY]] · SEGFILEPUBKEY（号段配置文件的签名验证公钥） — `SEGFILEPUBKEY.md`
-- [[configobject/UNC/20.15.2/SELCHFGBIMSISEG]] · SELCHFGBIMSISEG（IMSI号段与CHF组的绑定关系） — `SELCHFGBIMSISEG.md`
-- [[configobject/UNC/20.15.2/SELCHFGBYIMSI]] · SELCHFGBYIMSI（IMSI与CHF组的绑定关系） — `SELCHFGBYIMSI.md`
-- [[configobject/UNC/20.15.2/SELECTCCTBYCC]] · SELECTCCTBYCC（基于CC配置融合计费模板处理） — `SELECTCCTBYCC.md`
-- [[configobject/UNC/20.15.2/SELECTCHFGBYCC]] · SELECTCHFGBYCC（基于CC选择CHF处理） — `SELECTCHFGBYCC.md`
-- [[configobject/UNC/20.15.2/SELECTRULEINFO]] · SELECTRULEINFO（UPF选择规则信息） — `SELECTRULEINFO.md`
-- [[configobject/UNC/20.15.2/SERVICEIP]] · SERVICEIP（业务IP） — `SERVICEIP.md`
-- [[configobject/UNC/20.15.2/SERVICEIPMCR]] · SERVICEIPMCR（业务IP） — `SERVICEIPMCR.md`
-- [[configobject/UNC/20.15.2/SERVICEPROP]] · SERVICEPROP（业务属性） — `SERVICEPROP.md`
-- [[configobject/UNC/20.15.2/SERVUSR]] · SERVUSR（模拟设备故障删除用户信息） — `SERVUSR.md`
-- [[configobject/UNC/20.15.2/SESSNCHRPRCTMPL]] · SESSNCHRPRCTMPL（会话CHR流程控制模板） — `SESSNCHRPRCTMPL.md`
-- [[configobject/UNC/20.15.2/SFCPARA]] · SFCPARA（SFC参数） — `SFCPARA.md`
-- [[configobject/UNC/20.15.2/SFELBHASH]] · SFELBHASH（IP转发负载分担hash计算模式） — `SFELBHASH.md`
-- [[configobject/UNC/20.15.2/SFELOADALARM]] · SFELOADALARM（组件侧转发过载告警参数） — `SFELOADALARM.md`
-- [[configobject/UNC/20.15.2/SFGAPLE]] · SFGAPLE（SFGAP本端实体） — `SFGAPLE.md`
-- [[configobject/UNC/20.15.2/SGSLKS]] · SGSLKS（SGs链路集） — `SGSLKS.md`
-- [[configobject/UNC/20.15.2/SGSLNK]] · SGSLNK（SGs链路） — `SGSLNK.md`
-- [[configobject/UNC/20.15.2/SGSMME]] · SGSMME（SGS MME实体） — `SGSMME.md`
-- [[configobject/UNC/20.15.2/SGSNCHARACT]] · SGSNCHARACT（GnGp SGSN属性配置信息） — `SGSNCHARACT.md`
-- [[configobject/UNC/20.15.2/SGSNDNS]] · SGSNDNS（SGSN DNS域名策略） — `SGSNDNS.md`
-- [[configobject/UNC/20.15.2/SGSNIPNUM]] · SGSNIPNUM（SGSN控制面IP地址与SGSN号码对应关系） — `SGSNIPNUM.md`
-- [[configobject/UNC/20.15.2/SGSRLKS]] · SGSRLKS（SGS服务端链路集） — `SGSRLKS.md`
-- [[configobject/UNC/20.15.2/SGSRLNK]] · SGSRLNK（SGS服务端链路） — `SGSRLNK.md`
-- [[configobject/UNC/20.15.2/SGWCHARACT]] · SGWCHARACT（S-GW特性对接配置） — `SGWCHARACT.md`
-- [[configobject/UNC/20.15.2/SGWCHGMETH]] · SGWCHGMETH（SGW Charge Method） — `SGWCHGMETH.md`
-- [[configobject/UNC/20.15.2/SGWCID]] · SGWCID（SGW-C网络标识符） — `SGWCID.md`
-- [[configobject/UNC/20.15.2/SGWDNS]] · SGWDNS（S-GW DNS域名策略） — `SGWDNS.md`
-- [[configobject/UNC/20.15.2/SGWIPTOSGWPOOL]] · SGWIPTOSGWPOOL（SGW IP） — `SGWIPTOSGWPOOL.md`
-- [[configobject/UNC/20.15.2/SGWPOOL]] · SGWPOOL（SGW POOL） — `SGWPOOL.md`
-- [[configobject/UNC/20.15.2/SGWSEGGCHGMETH]] · SGWSEGGCHGMETH（SGW IMSI/MSISDN Group Charge Method） — `SGWSEGGCHGMETH.md`
-- [[configobject/UNC/20.15.2/SGWSELPLCY]] · SGWSELPLCY（S-GW选择策略） — `SGWSELPLCY.md`
-- [[configobject/UNC/20.15.2/SHAREPLMNGP]] · SHAREPLMNGP（共享PLMN群组） — `SHAREPLMNGP.md`
-- [[configobject/UNC/20.15.2/SHAREPLMNMEM]] · SHAREPLMNMEM（共享PLMN群组成员） — `SHAREPLMNMEM.md`
-- [[configobject/UNC/20.15.2/SLICEINSTINFO]] · SLICEINSTINFO（服务支持的切片实例） — `SLICEINSTINFO.md`
-- [[configobject/UNC/20.15.2/SMACTCTRL]] · SMACTCTRL（激活过程控制参数） — `SMACTCTRL.md`
-- [[configobject/UNC/20.15.2/SMACTIMEILIB]] · SMACTIMEILIB（IMEI库记录） — `SMACTIMEILIB.md`
-- [[configobject/UNC/20.15.2/SMARTACT]] · SMARTACT（激活抑制规则） — `SMARTACT.md`
-- [[configobject/UNC/20.15.2/SMARTAPN]] · SMARTAPN（APN智能分流配置） — `SMARTAPN.md`
-- [[configobject/UNC/20.15.2/SMARTDT]] · SMARTDT（基于终端类型的DT限制） — `SMARTDT.md`
-- [[configobject/UNC/20.15.2/SMCAUSEGRP]] · SMCAUSEGRP（SM原因值映射组配置） — `SMCAUSEGRP.md`
-- [[configobject/UNC/20.15.2/SMCAUSEMAP]] · SMCAUSEMAP（SM原因值映射配置） — `SMCAUSEMAP.md`
-- [[configobject/UNC/20.15.2/SMCTX]] · SMCTX（承载上下文） — `SMCTX.md`
-- [[configobject/UNC/20.15.2/SMFADDRLOCWL]] · SMFADDRLOCWL（位置区域地址分配用户白名单） — `SMFADDRLOCWL.md`
-- [[configobject/UNC/20.15.2/SMFALLOWED5QIS]] · SMFALLOWED5QIS（5G用户允许的5QI列表） — `SMFALLOWED5QIS.md`
-- [[configobject/UNC/20.15.2/SMFALLOWEDARPS]] · SMFALLOWEDARPS（5G用户允许的ARP列表） — `SMFALLOWEDARPS.md`
-- [[configobject/UNC/20.15.2/SMFAPNDLBUFTIME]] · SMFAPNDLBUFTIME（APN的下行报文缓存时长配置） — `SMFAPNDLBUFTIME.md`
-- [[configobject/UNC/20.15.2/SMFAPNGRP]] · SMFAPNGRP（DNS关联的APN组的描述信息） — `SMFAPNGRP.md`
-- [[configobject/UNC/20.15.2/SMFAPNGRPMEM]] · SMFAPNGRPMEM（APN和DNS关联的APN组的绑定关系） — `SMFAPNGRPMEM.md`
-- [[configobject/UNC/20.15.2/SMFCAUSECTRL]] · SMFCAUSECTRL（SMF流程控制参数） — `SMFCAUSECTRL.md`
-- [[configobject/UNC/20.15.2/SMFCONFLICTRULE]] · SMFCONFLICTRULE（冲突规则） — `SMFCONFLICTRULE.md`
-- [[configobject/UNC/20.15.2/SMFDIALTEST]] · SMFDIALTEST（SMF拨测用户配置） — `SMFDIALTEST.md`
-- [[configobject/UNC/20.15.2/SMFEMGCFG]] · SMFEMGCFG（运营商紧急呼叫会话功能配置） — `SMFEMGCFG.md`
-- [[configobject/UNC/20.15.2/SMFFUNCTION]] · SMFFUNCTION（SMF功能实例信息） — `SMFFUNCTION.md`
-- [[configobject/UNC/20.15.2/SMFIEADAPTER]] · SMFIEADAPTER（信元携带控制配置） — `SMFIEADAPTER.md`
-- [[configobject/UNC/20.15.2/SMFINFO]] · SMFINFO（SMF信息） — `SMFINFO.md`
-- [[configobject/UNC/20.15.2/SMFINFOEXT]] · SMFINFOEXT（SMF扩展信息） — `SMFINFOEXT.md`
-- [[configobject/UNC/20.15.2/SMFNONDFTQOSCTL]] · SMFNONDFTQOSCTL（SMF的非Default QoS Flow配置） — `SMFNONDFTQOSCTL.md`
-- [[configobject/UNC/20.15.2/SMFPDUREACT]] · SMFPDUREACT（跨区域PDU会话重建策略） — `SMFPDUREACT.md`
-- [[configobject/UNC/20.15.2/SMFPRESELBYIMSI]] · SMFPRESELBYIMSI（基于IMSI优选指定SMF配置） — `SMFPRESELBYIMSI.md`
-- [[configobject/UNC/20.15.2/SMFQOSCAP]] · SMFQOSCAP（QosFlow QoS限制的配置） — `SMFQOSCAP.md`
-- [[configobject/UNC/20.15.2/SMFRESEL]] · SMFRESEL（本地SMF重选策略） — `SMFRESEL.md`
-- [[configobject/UNC/20.15.2/SMFSELPLCY]] · SMFSELPLCY（SMF选择策略） — `SMFSELPLCY.md`
-- [[configobject/UNC/20.15.2/SMFSELUDM]] · SMFSELUDM（SMF选择UDM策略） — `SMFSELUDM.md`
-- [[configobject/UNC/20.15.2/SMFSERVICELIST]] · SMFSERVICELIST（特定SMF功能实例服务名） — `SMFSERVICELIST.md`
-- [[configobject/UNC/20.15.2/SMSCBLACKLIST]] · SMSCBLACKLIST（SMSC黑名单记录） — `SMSCBLACKLIST.md`
-- [[configobject/UNC/20.15.2/SMSCCONVERT]] · SMSCCONVERT（SMSC转换配置记录） — `SMSCCONVERT.md`
-- [[configobject/UNC/20.15.2/SMSCGT]] · SMSCGT（SMSC的GT） — `SMSCGT.md`
-- [[configobject/UNC/20.15.2/SMSCHRPRCTMPL]] · SMSCHRPRCTMPL（SMS CHR流程控制模板） — `SMSCHRPRCTMPL.md`
-- [[configobject/UNC/20.15.2/SMSCTX]] · SMSCTX（用户的SMS上下文） — `SMSCTX.md`
-- [[configobject/UNC/20.15.2/SMSFFUNCTION]] · SMSFFUNCTION（SMSF功能实例信息） — `SMSFFUNCTION.md`
-- [[configobject/UNC/20.15.2/SMSFKEYDATA]] · SMSFKEYDATA（用户的SMSF关键信息） — `SMSFKEYDATA.md`
-- [[configobject/UNC/20.15.2/SMSFOPC]] · SMSFOPC（SMSF本局信令点） — `SMSFOPC.md`
-- [[configobject/UNC/20.15.2/SMSFSELPLCY]] · SMSFSELPLCY（SMSF选择策略） — `SMSFSELPLCY.md`
-- [[configobject/UNC/20.15.2/SMSSRCHRCFG]] · SMSSRCHRCFG（SMS小范围CHR上报规则配置） — `SMSSRCHRCFG.md`
-- [[configobject/UNC/20.15.2/SMSUBDATA]] · SMSUBDATA（签约数据纠正参数） — `SMSUBDATA.md`
-- [[configobject/UNC/20.15.2/SOFTWARE]] · SOFTWARE（下载软件仓软件） — `SOFTWARE.md`
-- [[configobject/UNC/20.15.2/SPCTLLI]] · SPCTLLI（特殊随机TLLI配置） — `SPCTLLI.md`
-- [[configobject/UNC/20.15.2/SPECIFICAPNVAL]] · SPECIFICAPNVAL（用户APN与消息交互使用APN的映射关系） — `SPECIFICAPNVAL.md`
-- [[configobject/UNC/20.15.2/SPECRFSPVALUE]] · SPECRFSPVALUE（特征RFSP取值） — `SPECRFSPVALUE.md`
-- [[configobject/UNC/20.15.2/SPGWCAUSECTRL]] · SPGWCAUSECTRL（SGW-C/PGW-C原因值控制参数） — `SPGWCAUSECTRL.md`
-- [[configobject/UNC/20.15.2/SQOSCAR]] · SQOSCAR（流行为CAR配置） — `SQOSCAR.md`
-- [[configobject/UNC/20.15.2/SQOSRDRVPNGROUP]] · SQOSRDRVPNGROUP（QoS重定向VPN组） — `SQOSRDRVPNGROUP.md`
-- [[configobject/UNC/20.15.2/SQOSREMARK]] · SQOSREMARK（重标记配置） — `SQOSREMARK.md`
-- [[configobject/UNC/20.15.2/SQOSURPF]] · SQOSURPF（流行为安全URPF） — `SQOSURPF.md`
-- [[configobject/UNC/20.15.2/SQOSVPNGROUP]] · SQOSVPNGROUP（VPN组） — `SQOSVPNGROUP.md`
-- [[configobject/UNC/20.15.2/SQOSVPNGROUPMEM]] · SQOSVPNGROUPMEM（VPN组成员） — `SQOSVPNGROUPMEM.md`
-- [[configobject/UNC/20.15.2/SRANGECHRCFG]] · SRANGECHRCFG（小范围CHR生成规则） — `SRANGECHRCFG.md`
-- [[configobject/UNC/20.15.2/SRBFDPARA6]] · SRBFDPARA6（IPv6 BFD模板） — `SRBFDPARA6.md`
-- [[configobject/UNC/20.15.2/SRBFDTEMPLET]] · SRBFDTEMPLET（BFD模板） — `SRBFDTEMPLET.md`
-- [[configobject/UNC/20.15.2/SRROUTE]] · SRROUTE（IPv4静态路由） — `SRROUTE.md`
-- [[configobject/UNC/20.15.2/SRROUTE6]] · SRROUTE6（IPv6静态路由） — `SRROUTE6.md`
-- [[configobject/UNC/20.15.2/SRVAREARES]] · SRVAREARES（本地服务区域限制） — `SRVAREARES.md`
-- [[configobject/UNC/20.15.2/SRVCCLMTPLCY]] · SRVCCLMTPLCY（SRVCC流程限制策略） — `SRVCCLMTPLCY.md`
-- [[configobject/UNC/20.15.2/SRVHANDOVER]] · SRVHANDOVER（业务切换策略） — `SRVHANDOVER.md`
-- [[configobject/UNC/20.15.2/SRVNODEGROUP]] · SRVNODEGROUP（服务节点组） — `SRVNODEGROUP.md`
-- [[configobject/UNC/20.15.2/SRVNODEIP]] · SRVNODEIP（服务节点IP） — `SRVNODEIP.md`
-- [[configobject/UNC/20.15.2/SRVNODEPLMN]] · SRVNODEPLMN（SGSN/SGW/PGW地址段和PLMN标识之间的映射关系） — `SRVNODEPLMN.md`
-- [[configobject/UNC/20.15.2/SRVNODERAT]] · SRVNODERAT（SGSN/SGW IP与RAT类型间的映射关系） — `SRVNODERAT.md`
-- [[configobject/UNC/20.15.2/SRVPARA]] · SRVPARA（业务参数配置） — `SRVPARA.md`
-- [[configobject/UNC/20.15.2/STATICASN]] · STATICASN（静态ASN） — `STATICASN.md`
-- [[configobject/UNC/20.15.2/STATICWTPOLICY]] · STATICWTPOLICY（服务类型在POD实例下的静态权重） — `STATICWTPOLICY.md`
-- [[configobject/UNC/20.15.2/STDQOSID]] · STDQOSID（标准QoS ID配置） — `STDQOSID.md`
-- [[configobject/UNC/20.15.2/STRINGMK]] · STRINGMK（字符串类型Monitoring-Key） — `STRINGMK.md`
-- [[configobject/UNC/20.15.2/STRMATCHPLCY]] · STRMATCHPLCY（字符串匹配策略） — `STRMATCHPLCY.md`
-- [[configobject/UNC/20.15.2/SUBCONDITION]] · SUBCONDITION（NF订阅条件） — `SUBCONDITION.md`
-- [[configobject/UNC/20.15.2/SUBGP]] · SUBGP（用户群） — `SUBGP.md`
-- [[configobject/UNC/20.15.2/SUBGPMEM]] · SUBGPMEM（用户群成员） — `SUBGPMEM.md`
-- [[configobject/UNC/20.15.2/SUBSCRIBERIDSEGGRP]] · SUBSCRIBERIDSEGGRP（IMSI/MSISDN/IMEISV号段组） — `SUBSCRIBERIDSEGGRP.md`
-- [[configobject/UNC/20.15.2/SUBSMARTAPN]] · SUBSMARTAPN（智能分流APN） — `SUBSMARTAPN.md`
-- [[configobject/UNC/20.15.2/SUBSMARTDNN]] · SUBSMARTDNN（智能分流DNN） — `SUBSMARTDNN.md`
-- [[configobject/UNC/20.15.2/SUBUPIPDOMAIN]] · SUBUPIPDOMAIN（当前UPF扩展类型绑定的IP域） — `SUBUPIPDOMAIN.md`
-- [[configobject/UNC/20.15.2/SUFFIXLAIAREA]] · SUFFIXLAIAREA（UPF服务区名称以LAC后缀方式绑定的LAI范围） — `SUFFIXLAIAREA.md`
-- [[configobject/UNC/20.15.2/SUFFIXS1TAIAREA]] · SUFFIXS1TAIAREA（UPF服务区名称以TAC后缀方式绑定的S1TAI范围） — `SUFFIXS1TAIAREA.md`
-- [[configobject/UNC/20.15.2/SYSLOGTASK]] · SYSLOGTASK（上报任务） — `SYSLOGTASK.md`
-- [[configobject/UNC/20.15.2/TACGROUP]] · TACGROUP（TAC组） — `TACGROUP.md`
-- [[configobject/UNC/20.15.2/TACGROUPINNSSF]] · TACGROUPINNSSF（跟踪区域码分组记录） — `TACGROUPINNSSF.md`
-- [[configobject/UNC/20.15.2/TACRANGE]] · TACRANGE（NF TAC区域信息） — `TACRANGE.md`
-- [[configobject/UNC/20.15.2/TACSHAREPLMN]] · TACSHAREPLMN（基于区域的PLMN管理） — `TACSHAREPLMN.md`
-- [[configobject/UNC/20.15.2/TAGP]] · TAGP（TA群组） — `TAGP.md`
-- [[configobject/UNC/20.15.2/TAGPMEM]] · TAGPMEM（TA群组成员） — `TAGPMEM.md`
-- [[configobject/UNC/20.15.2/TAICIOT]] · TAICIOT（CIoT能力配置） — `TAICIOT.md`
-- [[configobject/UNC/20.15.2/TAILAI]] · TAILAI（TAI与LAI对应关系） — `TAILAI.md`
-- [[configobject/UNC/20.15.2/TAIRANGELIST]] · TAIRANGELIST（NF TAI区域信息） — `TAIRANGELIST.md`
-- [[configobject/UNC/20.15.2/TALISTPAGINGCFG]] · TALISTPAGINGCFG（TALIST寻呼不重发TAC区间） — `TALISTPAGINGCFG.md`
-- [[configobject/UNC/20.15.2/TALST]] · TALST（跟踪区列表） — `TALST.md`
-- [[configobject/UNC/20.15.2/TALSTPAGINGPLCY]] · TALSTPAGINGPLCY（TA List寻呼策略配置） — `TALSTPAGINGPLCY.md`
-- [[configobject/UNC/20.15.2/TARIFFGROUP]] · TARIFFGROUP（费率切换组） — `TARIFFGROUP.md`
-- [[configobject/UNC/20.15.2/TLSPARA]] · TLSPARA（TLS参数） — `TLSPARA.md`
-- [[configobject/UNC/20.15.2/TLSPSK]] · TLSPSK（预共享密钥） — `TLSPSK.md`
-- [[configobject/UNC/20.15.2/TLSPSKGRP]] · TLSPSKGRP（预共享密钥组信息） — `TLSPSKGRP.md`
-- [[configobject/UNC/20.15.2/TLSSCENE]] · TLSSCENE（TLS证书场景） — `TLSSCENE.md`
-- [[configobject/UNC/20.15.2/TMAPLE]] · TMAPLE（TMAP本地实体） — `TMAPLE.md`
-- [[configobject/UNC/20.15.2/TMGIRNG]] · TMGIRNG（TMGI号段） — `TMGIRNG.md`
-- [[configobject/UNC/20.15.2/TMT3N3]] · TMT3N3（Tm接口消息T3N3参数） — `TMT3N3.md`
-- [[configobject/UNC/20.15.2/TNFGRP]] · TNFGRP（目标NF组） — `TNFGRP.md`
-- [[configobject/UNC/20.15.2/TNFINS]] · TNFINS（目标NF实例） — `TNFINS.md`
-- [[configobject/UNC/20.15.2/TNFINSIP]] · TNFINSIP（目标NF实例IP地址） — `TNFINSIP.md`
-- [[configobject/UNC/20.15.2/TOKENEXP]] · TOKENEXP（Token有效期） — `TOKENEXP.md`
-- [[configobject/UNC/20.15.2/TRCTSK]] · TRCTSK（跟踪任务） — `TRCTSK.md`
-- [[configobject/UNC/20.15.2/TRUNKIF]] · TRUNKIF（Trunk工作模式配置） — `TRUNKIF.md`
-- [[configobject/UNC/20.15.2/TRUNKMEMBER]] · TRUNKMEMBER（Trunk成员接口） — `TRUNKMEMBER.md`
-- [[configobject/UNC/20.15.2/TSTPCFSEL]] · TSTPCFSEL（拨测用户与PCF服务区的绑定关系） — `TSTPCFSEL.md`
-- [[configobject/UNC/20.15.2/TUNNELPOLICY]] · TUNNELPOLICY（隧道策略） — `TUNNELPOLICY.md`
-- [[configobject/UNC/20.15.2/TUNNELSELECTOR]] · TUNNELSELECTOR（隧道选择器） — `TUNNELSELECTOR.md`
-- [[configobject/UNC/20.15.2/TUNNELSELECTORNODE]] · TUNNELSELECTORNODE（隧道选择器节点） — `TUNNELSELECTORNODE.md`
-- [[configobject/UNC/20.15.2/TZLST]] · TZLST（多时区参数） — `TZLST.md`
-- [[configobject/UNC/20.15.2/UCFIP]] · UCFIP（UCF报表本地IP资源池） — `UCFIP.md`
-- [[configobject/UNC/20.15.2/UCFSVRIP]] · UCFSVRIP（UCF报表服务器的接入点IP地址） — `UCFSVRIP.md`
-- [[configobject/UNC/20.15.2/UDMBYPASSSUB]] · UDMBYPASSSUB（UDM Bypass最小签约数据配置） — `UDMBYPASSSUB.md`
-- [[configobject/UNC/20.15.2/UECAPBYIMSI]] · UECAPBYIMSI（UE无线能力策略） — `UECAPBYIMSI.md`
-- [[configobject/UNC/20.15.2/UEDNSUPGROUP]] · UEDNSUPGROUP（DNS关联的UPF组） — `UEDNSUPGROUP.md`
-- [[configobject/UNC/20.15.2/UEOVERLDCTRL]] · UEOVERLDCTRL（UE重载控制策略） — `UEOVERLDCTRL.md`
-- [[configobject/UNC/20.15.2/UERCAPUNCSEL]] · UERCAPUNCSEL（UE无线能力选择UNC参数） — `UERCAPUNCSEL.md`
-- [[configobject/UNC/20.15.2/UERCAPUSNSEL]] · UERCAPUSNSEL（UE无线能力选择USN参数） — `UERCAPUSNSEL.md`
-- [[configobject/UNC/20.15.2/UETNLA]] · UETNLA（UE-TNLA） — `UETNLA.md`
-- [[configobject/UNC/20.15.2/UEUSGTYPEGP]] · UEUSGTYPEGP（UE USAGE TYPE群组） — `UEUSGTYPEGP.md`
-- [[configobject/UNC/20.15.2/UEUSGTYPEGPMEM]] · UEUSGTYPEGPMEM（UE USAGE TYPE群组成员） — `UEUSGTYPEGPMEM.md`
-- [[configobject/UNC/20.15.2/UFCSFB]] · UFCSFB（预留功能策略） — `UFCSFB.md`
-- [[configobject/UNC/20.15.2/ULCLAPNDPMODE]] · ULCLAPNDPMODE（指定APN的ULCL部署模式） — `ULCLAPNDPMODE.md`
-- [[configobject/UNC/20.15.2/ULCLAREADPMODE]] · ULCLAREADPMODE（指定DNAI服务区域的ULCL部署模式） — `ULCLAREADPMODE.md`
-- [[configobject/UNC/20.15.2/ULCLDNAIDPMODE]] · ULCLDNAIDPMODE（指定DNAI的ULCL部署模式） — `ULCLDNAIDPMODE.md`
-- [[configobject/UNC/20.15.2/ULCLPROP]] · ULCLPROP（ULCL属性） — `ULCLPROP.md`
-- [[configobject/UNC/20.15.2/UNCINTF]] · UNCINTF（UNC接口名称） — `UNCINTF.md`
-- [[configobject/UNC/20.15.2/UNCINTFALL]] · UNCINTFALL（UNC所有接口名称） — `UNCINTFALL.md`
-- [[configobject/UNC/20.15.2/UNCIPRESOUCE]] · UNCIPRESOUCE（UNC接口IP地址） — `UNCIPRESOUCE.md`
-- [[configobject/UNC/20.15.2/UNCIPRESOUCEALL]] · UNCIPRESOUCEALL（UNC所有接口的IP地址） — `UNCIPRESOUCEALL.md`
-- [[configobject/UNC/20.15.2/UNCLOGCTRL]] · UNCLOGCTRL（UNC日志控制记录） — `UNCLOGCTRL.md`
-- [[configobject/UNC/20.15.2/UNCVNFINFO]] · UNCVNFINFO（北向NF实例信息） — `UNCVNFINFO.md`
-- [[configobject/UNC/20.15.2/UPAREA]] · UPAREA（UPF服务区） — `UPAREA.md`
-- [[configobject/UNC/20.15.2/UPCMPT]] · UPCMPT（UP节点协议兼容性配置） — `UPCMPT.md`
-- [[configobject/UNC/20.15.2/UPCMPTCUSIE]] · UPCMPTCUSIE（UP节点定制信元兼容性配置） — `UPCMPTCUSIE.md`
-- [[configobject/UNC/20.15.2/UPDBGPPEERGROUP]] · UPDBGPPEERGROUP（BGP对等体分组） — `UPDBGPPEERGROUP.md`
-- [[configobject/UNC/20.15.2/UPFADDRATTR]] · UPFADDRATTR（UPF地址属性） — `UPFADDRATTR.md`
-- [[configobject/UNC/20.15.2/UPFGLOCGBNDGRP]] · UPFGLOCGBNDGRP（UPF组与Diameter本端主机组的绑定关系组） — `UPFGLOCGBNDGRP.md`
-- [[configobject/UNC/20.15.2/UPFILTER]] · UPFILTER（UPF过滤组） — `UPFILTER.md`
-- [[configobject/UNC/20.15.2/UPFPFCPPARA]] · UPFPFCPPARA（UPF粒度PFCP参数） — `UPFPFCPPARA.md`
-- [[configobject/UNC/20.15.2/UPFRDSCLIENTIP]] · UPFRDSCLIENTIP（中转UPF与Radius客户端的绑定关系） — `UPFRDSCLIENTIP.md`
-- [[configobject/UNC/20.15.2/UPFRDSSVR]] · UPFRDSSVR（中转UPF与Radius服务器的绑定关系） — `UPFRDSSVR.md`
-- [[configobject/UNC/20.15.2/UPIPDOMAIN]] · UPIPDOMAIN（当前UPF绑定的IP域） — `UPIPDOMAIN.md`
-- [[configobject/UNC/20.15.2/UPLIST4RDS]] · UPLIST4RDS（从RADIUS服务器使用的UP列表中删除UP） — `UPLIST4RDS.md`
-- [[configobject/UNC/20.15.2/UPLOGICINTF]] · UPLOGICINTF（UPF逻辑接口） — `UPLOGICINTF.md`
-- [[configobject/UNC/20.15.2/UPNODE]] · UPNODE（UPF节点） — `UPNODE.md`
-- [[configobject/UNC/20.15.2/URR]] · URR — `URR.md`
-- [[configobject/UNC/20.15.2/URRGROUP]] · URRGROUP（URR组） — `URRGROUP.md`
-- [[configobject/UNC/20.15.2/USER]] · USER（用户锁定状态） — `USER.md`
-- [[configobject/UNC/20.15.2/USERPROFILE]] · USERPROFILE（用户模板） — `USERPROFILE.md`
-- [[configobject/UNC/20.15.2/USNRSVCMD1]] · USNRSVCMD1（预埋命令1） — `USNRSVCMD1.md`
-- [[configobject/UNC/20.15.2/USNRSVCMD2]] · USNRSVCMD2（预埋命令2） — `USNRSVCMD2.md`
-- [[configobject/UNC/20.15.2/USNRSVCMD3]] · USNRSVCMD3（预埋命令3） — `USNRSVCMD3.md`
-- [[configobject/UNC/20.15.2/USNRSVCMD4]] · USNRSVCMD4（预埋命令4） — `USNRSVCMD4.md`
-- [[configobject/UNC/20.15.2/USNRSVCMD5]] · USNRSVCMD5（预埋命令5） — `USNRSVCMD5.md`
-- [[configobject/UNC/20.15.2/USR]] · USR（用户） — `USR.md`
-- [[configobject/UNC/20.15.2/USRBLACKLST]] · USRBLACKLST（用户黑名单限制列表） — `USRBLACKLST.md`
-- [[configobject/UNC/20.15.2/USRCTLGGSN]] · USRCTLGGSN（手工恢复GGSN地址） — `USRCTLGGSN.md`
-- [[configobject/UNC/20.15.2/USRLOCATION]] · USRLOCATION（用户位置） — `USRLOCATION.md`
-- [[configobject/UNC/20.15.2/USRLOCATIONGRP]] · USRLOCATIONGRP（用户位置组） — `USRLOCATIONGRP.md`
-- [[configobject/UNC/20.15.2/USRMMINFO]] · USRMMINFO（网络名称） — `USRMMINFO.md`
-- [[configobject/UNC/20.15.2/USRN2CONN]] · USRN2CONN（N2接口AN信令连接） — `USRN2CONN.md`
-- [[configobject/UNC/20.15.2/USRPROFGROUP]] · USRPROFGROUP（用户模板组） — `USRPROFGROUP.md`
-- [[configobject/UNC/20.15.2/USRS1CONN]] · USRS1CONN（S1接口用户连接） — `USRS1CONN.md`
-- [[configobject/UNC/20.15.2/USRSECAUTH]] · USRSECAUTH（二次授权用户） — `USRSECAUTH.md`
-- [[configobject/UNC/20.15.2/USRTAIRANGE]] · USRTAIRANGE（用户TAI区域） — `USRTAIRANGE.md`
-- [[configobject/UNC/20.15.2/USRTAIRANGEALL]] · USRTAIRANGEALL（所有的用户TAI区域） — `USRTAIRANGEALL.md`
-- [[configobject/UNC/20.15.2/VIRTUALAPNRULE]] · VIRTUALAPNRULE（虚拟APN映射策略配置） — `VIRTUALAPNRULE.md`
-- [[configobject/UNC/20.15.2/VIRTUALCHL]] · VIRTUALCHL（虚拟通道映射） — `VIRTUALCHL.md`
-- [[configobject/UNC/20.15.2/VIRTUALIP]] · VIRTUALIP（浮动IP） — `VIRTUALIP.md`
-- [[configobject/UNC/20.15.2/VIRTUALUPFID]] · VIRTUALUPFID（虚拟UPF实例标识） — `VIRTUALUPFID.md`
-- [[configobject/UNC/20.15.2/VLR]] · VLR（VLR配置信息） — `VLR.md`
-- [[configobject/UNC/20.15.2/VLRCTX]] · VLRCTX（VLR用户的上下文） — `VLRCTX.md`
-- [[configobject/UNC/20.15.2/VLRKEYDATA]] · VLRKEYDATA（用户的VLR关键信息） — `VLRKEYDATA.md`
-- [[configobject/UNC/20.15.2/VLROFFLOADLAILST]] · VLROFFLOADLAILST（位置区列表） — `VLROFFLOADLAILST.md`
-- [[configobject/UNC/20.15.2/VLROPC]] · VLROPC（VLR信令点） — `VLROPC.md`
-- [[configobject/UNC/20.15.2/VNFMINFO]] · VNFMINFO（VNFM对接信息） — `VNFMINFO.md`
-- [[configobject/UNC/20.15.2/VOICEDEPLOY]] · VOICEDEPLOY（语音部署配置） — `VOICEDEPLOY.md`
-- [[configobject/UNC/20.15.2/VOLTEHOLDON]] · VOLTEHOLDON（语音承载保活） — `VOLTEHOLDON.md`
-- [[configobject/UNC/20.15.2/VPLMNCHGMODE]] · VPLMNCHGMODE（基于VPLMN配置的漫游用户归属地计费模式） — `VPLMNCHGMODE.md`
-- [[configobject/UNC/20.15.2/VPNINST]] · VPNINST（VPN实例） — `VPNINST.md`
-- [[configobject/UNC/20.15.2/VPNINSTAF]] · VPNINSTAF（L3VPN实例地址族） — `VPNINSTAF.md`
-- [[configobject/UNC/20.15.2/VPNINSTAFIPSEC]] · VPNINSTAFIPSEC（L3VPN实例地址族） — `VPNINSTAFIPSEC.md`
-- [[configobject/UNC/20.15.2/VPNTARGET]] · VPNTARGET（VPN Target） — `VPNTARGET.md`
-- [[configobject/UNC/20.15.2/VPROBEIP]] · VPROBEIP（vProbe报表本地IP资源池） — `VPROBEIP.md`
-- [[configobject/UNC/20.15.2/VPROBESVRIP]] · VPROBESVRIP（vProbe报表服务器的接入点IP地址） — `VPROBESVRIP.md`
-- [[configobject/UNC/20.15.2/VSMFDFTQOSCTRL]] · VSMFDFTQOSCTRL（VSMF的Default QoS Flow配置） — `VSMFDFTQOSCTRL.md`
-- [[configobject/UNC/20.15.2/WEAKPWDDICMEM]] · WEAKPWDDICMEM（弱口令字典成员） — `WEAKPWDDICMEM.md`
-- [[configobject/UNC/20.15.2/WEEKDAY]] · WEEKDAY（计费星期表） — `WEEKDAY.md`
-- [[configobject/UNC/20.15.2/ZC]] · ZC（区域码） — `ZC.md`
-- [[configobject/UNC/20.15.2/ZCCONVERT]] · ZCCONVERT（区域码转换策略） — `ZCCONVERT.md`
+- [5GCQOSACTION（5GC QoS控制动作配置）](configobject/UNC/20.15.2/5GCQOSACTION.md)
+- [5GCREMARK（5GC QoS到TOS/DSCP的映射规则）](configobject/UNC/20.15.2/5GCREMARK.md)
+- [5GCSUBQOS（5GC签约QoS配置）](configobject/UNC/20.15.2/5GCSUBQOS.md)
+- [ACCESSLISTIP（黑白名单）](configobject/UNC/20.15.2/ACCESSLISTIP.md)
+- [ACLGROUP（ACL规则匹配计数）](configobject/UNC/20.15.2/ACLGROUP.md)
+- [ACLGROUP6（IPv6 ACL规则匹配计数）](configobject/UNC/20.15.2/ACLGROUP6.md)
+- [ACLGROUP6IPSEC（IPv6 ACL规则组）](configobject/UNC/20.15.2/ACLGROUP6IPSEC.md)
+- [ACLGROUPIPSEC（ACL规则组）](configobject/UNC/20.15.2/ACLGROUPIPSEC.md)
+- [ACLRULEADV4（高级ACL规则）](configobject/UNC/20.15.2/ACLRULEADV4.md)
+- [ACLRULEADV4IPSEC（高级ACL规则）](configobject/UNC/20.15.2/ACLRULEADV4IPSEC.md)
+- [ACLRULEADV6（高级IPv6 ACL规则）](configobject/UNC/20.15.2/ACLRULEADV6.md)
+- [ACLRULEADV6IPSEC（高级IPv6 ACL规则）](configobject/UNC/20.15.2/ACLRULEADV6IPSEC.md)
+- [ACLRULEBAS4（基本ACL规则）](configobject/UNC/20.15.2/ACLRULEBAS4.md)
+- [ACLRULEBAS6（基本IPv6 ACL规则）](configobject/UNC/20.15.2/ACLRULEBAS6.md)
+- [ACLRULEETH（以太ACL规则）](configobject/UNC/20.15.2/ACLRULEETH.md)
+- [ACLRULEIF（接口ACL规则）](configobject/UNC/20.15.2/ACLRULEIF.md)
+- [ACSPACKAGE（软件包）](configobject/UNC/20.15.2/ACSPACKAGE.md)
+- [ACSPATCH（补丁）](configobject/UNC/20.15.2/ACSPATCH.md)
+- [ACTRL（接入控制）](configobject/UNC/20.15.2/ACTRL.md)
+- [ADCPARA（ADC参数）](configobject/UNC/20.15.2/ADCPARA.md)
+- [ADDRLACGROUP（LAC组）](configobject/UNC/20.15.2/ADDRLACGROUP.md)
+- [ADDRLACID（LAC组内LAC号段）](configobject/UNC/20.15.2/ADDRLACID.md)
+- [ADDRN2TACID（N2TAC组内N2TAC号段）](configobject/UNC/20.15.2/ADDRN2TACID.md)
+- [ADDRPOOL（地址池）](configobject/UNC/20.15.2/ADDRPOOL.md)
+- [ADDRPOOLGRP（地址池组）](configobject/UNC/20.15.2/ADDRPOOLGRP.md)
+- [ADDRS1TACID（S1TAC组内S1TAC号段）](configobject/UNC/20.15.2/ADDRS1TACID.md)
+- [ADDRTACGROUP（TAC组）](configobject/UNC/20.15.2/ADDRTACGROUP.md)
+- [ADDRUPGROUP（UPF组）](configobject/UNC/20.15.2/ADDRUPGROUP.md)
+- [ADVANCEDCOMMUNITYNODE（高级团体属性过滤器节点）](configobject/UNC/20.15.2/ADVANCEDCOMMUNITYNODE.md)
+- [ADVEXTCOMMUNITYNODE（高级扩展团体属性过滤器节点）](configobject/UNC/20.15.2/ADVEXTCOMMUNITYNODE.md)
+- [AGENTIP（远端地址池代理IP信息）](configobject/UNC/20.15.2/AGENTIP.md)
+- [AGFCDRCHLMAP（话单通道一级目录映射表）](configobject/UNC/20.15.2/AGFCDRCHLMAP.md)
+- [AGFCHGINFO（AGF的计费上下文信息）](configobject/UNC/20.15.2/AGFCHGINFO.md)
+- [AGFDISCRCACT（AGF基于TOPO异常响应处理动作）](configobject/UNC/20.15.2/AGFDISCRCACT.md)
+- [AGGREGATEROUTE（BGP聚合路由）](configobject/UNC/20.15.2/AGGREGATEROUTE.md)
+- [ALGPRIORITY（算法优先级配置信息）](configobject/UNC/20.15.2/ALGPRIORITY.md)
+- [ALIASAPN（别名APN配置）](configobject/UNC/20.15.2/ALIASAPN.md)
+- [ALLIFIPADDRESS（批量删除接口下IP地址）](configobject/UNC/20.15.2/ALLIFIPADDRESS.md)
+- [ALLOWDNN（允许本地专网分流的DNN）](configobject/UNC/20.15.2/ALLOWDNN.md)
+- [ALLOWEDDOMAINS（允许访问的域名）](configobject/UNC/20.15.2/ALLOWEDDOMAINS.md)
+- [ALLOWEDNFDOMAIN（NF或NF服务支持的域名）](configobject/UNC/20.15.2/ALLOWEDNFDOMAIN.md)
+- [ALLOWEDNFNS（NF或NF服务支持的切片）](configobject/UNC/20.15.2/ALLOWEDNFNS.md)
+- [ALLOWEDNFTYPES（允许访问的NF类型）](configobject/UNC/20.15.2/ALLOWEDNFTYPES.md)
+- [ALLOWEDNSSAIS（允许访问的切片）](configobject/UNC/20.15.2/ALLOWEDNSSAIS.md)
+- [ALLOWEDOBJ（授权控制对象信息）](configobject/UNC/20.15.2/ALLOWEDOBJ.md)
+- [ALLOWEDOBJNAME（授权控制对象）](configobject/UNC/20.15.2/ALLOWEDOBJNAME.md)
+- [ALLOWEDPLMN（NF或NF服务支持的PLMN）](configobject/UNC/20.15.2/ALLOWEDPLMN.md)
+- [ALLOWEDPLMNS（允许访问的PLMN）](configobject/UNC/20.15.2/ALLOWEDPLMNS.md)
+- [ALLOWSERNAME（基于地址的白名单）](configobject/UNC/20.15.2/ALLOWSERNAME.md)
+- [AMFCONFLICTRULE（AMF冲突规则）](configobject/UNC/20.15.2/AMFCONFLICTRULE.md)
+- [AMFCROSSOPPLCY（AMF跨运营商交互策略）](configobject/UNC/20.15.2/AMFCROSSOPPLCY.md)
+- [AMFDFTNSMAP（漫游切片默认映射配置）](configobject/UNC/20.15.2/AMFDFTNSMAP.md)
+- [AMFDIALTEST（AMF拨测用户配置）](configobject/UNC/20.15.2/AMFDIALTEST.md)
+- [AMFDNNPLCY（DNN接入选择策略）](configobject/UNC/20.15.2/AMFDNNPLCY.md)
+- [AMFDRBKCTRL（AMF热备容灾控制参数）](configobject/UNC/20.15.2/AMFDRBKCTRL.md)
+- [AMFFUNCTION（AMF功能实例信息）](configobject/UNC/20.15.2/AMFFUNCTION.md)
+- [AMFIMRFUNC（用户消息统计功能配置）](configobject/UNC/20.15.2/AMFIMRFUNC.md)
+- [AMFINFO（AMF信息）](configobject/UNC/20.15.2/AMFINFO.md)
+- [AMFN8CMPTPLCY（AMF N8接口兼容性策略）](configobject/UNC/20.15.2/AMFN8CMPTPLCY.md)
+- [AMFRESELPLCY（AMF重选控制策略）](configobject/UNC/20.15.2/AMFRESELPLCY.md)
+- [AMFROAMNSMAP（漫游切片映射配置）](configobject/UNC/20.15.2/AMFROAMNSMAP.md)
+- [AMFRSTRNSSAI（TA级限制切片）](configobject/UNC/20.15.2/AMFRSTRNSSAI.md)
+- [AMFSERVICELIST（AMF服务列表）](configobject/UNC/20.15.2/AMFSERVICELIST.md)
+- [AMFSETID（AMF集与切片的关系）](configobject/UNC/20.15.2/AMFSETID.md)
+- [AMUEPLCYCTRL（AM策略和UE策略控制参数）](configobject/UNC/20.15.2/AMUEPLCYCTRL.md)
+- [APN（APN配置）](configobject/UNC/20.15.2/APN.md)
+- [APNACTNUM（APN激活数目限制）](configobject/UNC/20.15.2/APNACTNUM.md)
+- [APNALIAS（APN别名配置）](configobject/UNC/20.15.2/APNALIAS.md)
+- [APNAMBRCTRL（APN-AMBR控制的配置）](configobject/UNC/20.15.2/APNAMBRCTRL.md)
+- [APNAREA（APN相关服务区域）](configobject/UNC/20.15.2/APNAREA.md)
+- [APNAREABNDN2TAI（APN相关服务区域绑定的5G TAI范围）](configobject/UNC/20.15.2/APNAREABNDN2TAI.md)
+- [APNBSFQUERY（APN的BSF查询功能配置）](configobject/UNC/20.15.2/APNBSFQUERY.md)
+- [APNCHGMODE（基于APN的计费接口选择方式）](configobject/UNC/20.15.2/APNCHGMODE.md)
+- [APNCHRFUNC（APN CHR功能配置）](configobject/UNC/20.15.2/APNCHRFUNC.md)
+- [APNCTRL（APN控制参数配置）](configobject/UNC/20.15.2/APNCTRL.md)
+- [APNCTRLPARA（基于APN的信令控制参数）](configobject/UNC/20.15.2/APNCTRLPARA.md)
+- [APNDEACTQFPLCY（基于APN去活用户面专有QoS Flow策略）](configobject/UNC/20.15.2/APNDEACTQFPLCY.md)
+- [APNDIAMAAAGRP（APN的Diameter AAA服务器组）](configobject/UNC/20.15.2/APNDIAMAAAGRP.md)
+- [APNDNS（APN DNS域名策略）](configobject/UNC/20.15.2/APNDNS.md)
+- [APNEDRXATTR（APN的终端接入eDRX模式属性）](configobject/UNC/20.15.2/APNEDRXATTR.md)
+- [APNFUNC（APNNI功能配置）](configobject/UNC/20.15.2/APNFUNC.md)
+- [APNGA5GREUSEAVP（基于apn的Ga接口重用字段的填写方式）](configobject/UNC/20.15.2/APNGA5GREUSEAVP.md)
+- [APNGWPROXYFUNC（APN网关Proxy功能配置）](configobject/UNC/20.15.2/APNGWPROXYFUNC.md)
+- [APNGY5GREUSEAVP（基于apn的Gy接口重用字段的填写方式）](configobject/UNC/20.15.2/APNGY5GREUSEAVP.md)
+- [APNINTELSHUNT（APN智能分流关键词）](configobject/UNC/20.15.2/APNINTELSHUNT.md)
+- [APNLOCREPORT（基于APN的位置上报配置）](configobject/UNC/20.15.2/APNLOCREPORT.md)
+- [APNMULTIDNNCTRL（2B2C漫游双DNN特性APN级的相关功能控制）](configobject/UNC/20.15.2/APNMULTIDNNCTRL.md)
+- [APNNBNS（APN的NBNS属性）](configobject/UNC/20.15.2/APNNBNS.md)
+- [APNNI](configobject/UNC/20.15.2/APNNI.md)
+- [APNNICHARACT（APNNI属性配置信息）](configobject/UNC/20.15.2/APNNICHARACT.md)
+- [APNNIDT（APNNI Direct Tunnel配置）](configobject/UNC/20.15.2/APNNIDT.md)
+- [APNNIGROUP（APNNI组）](configobject/UNC/20.15.2/APNNIGROUP.md)
+- [APNNILIB（APNNI库记录）](configobject/UNC/20.15.2/APNNILIB.md)
+- [APNPAGINGPLCY（APN寻呼策略参数配置）](configobject/UNC/20.15.2/APNPAGINGPLCY.md)
+- [APNPFCPCMPT（指定APN的PFCP私有信元携带配置）](configobject/UNC/20.15.2/APNPFCPCMPT.md)
+- [APNPGWCHGPAUSE（基于APN的PGW计费暂停功能配置）](configobject/UNC/20.15.2/APNPGWCHGPAUSE.md)
+- [APNPGWRNS（PGW重定向功能设置）](configobject/UNC/20.15.2/APNPGWRNS.md)
+- [APNPOLICYMODE（基于APN的策略接口的选择方式）](configobject/UNC/20.15.2/APNPOLICYMODE.md)
+- [APNPROFILE（APN配置）](configobject/UNC/20.15.2/APNPROFILE.md)
+- [APNPROFSPACE（APN与Profile Space的绑定关系）](configobject/UNC/20.15.2/APNPROFSPACE.md)
+- [APNPTTFUNC（基于APN的一键通功能配置）](configobject/UNC/20.15.2/APNPTTFUNC.md)
+- [APNQOSBYPASS（BYPASS场景QoS描述配置）](configobject/UNC/20.15.2/APNQOSBYPASS.md)
+- [APNRDSCLIENTIP（APN Radius Client IP接口）](configobject/UNC/20.15.2/APNRDSCLIENTIP.md)
+- [APNRDSSVRGRP（APN Radius服务器组）](configobject/UNC/20.15.2/APNRDSSVRGRP.md)
+- [APNREVERSESHUNT（基于APN的反向分流功能配置）](configobject/UNC/20.15.2/APNREVERSESHUNT.md)
+- [APNSMCOMFUNC（APN粒度的通用会话拓展功能控制）](configobject/UNC/20.15.2/APNSMCOMFUNC.md)
+- [APNTOHCTRL（APN粒度的智家随行会话控制）](configobject/UNC/20.15.2/APNTOHCTRL.md)
+- [APNTRAFFICDIST（漫游地动态签约分流控制）](configobject/UNC/20.15.2/APNTRAFFICDIST.md)
+- [APNUPFINFO（指定APN的UPF节点信息）](configobject/UNC/20.15.2/APNUPFINFO.md)
+- [APNUPRECOVER（指定UPF的APN级别链路故障恢复处理）](configobject/UNC/20.15.2/APNUPRECOVER.md)
+- [APNUSRPROFG（APN用户模板组绑定关系）](configobject/UNC/20.15.2/APNUSRPROFG.md)
+- [APNWHITENODE（APN设备白名单）](configobject/UNC/20.15.2/APNWHITENODE.md)
+- [APNWIFILTEHO（基于APN的E-UTRAN和WLAN互操作控制属性）](configobject/UNC/20.15.2/APNWIFILTEHO.md)
+- [APPLYASPATH（AS路径设置）](configobject/UNC/20.15.2/APPLYASPATH.md)
+- [APPLYCMNTYSTRING（团体属性值设置）](configobject/UNC/20.15.2/APPLYCMNTYSTRING.md)
+- [APPLYCOMMUNITY（团体属性设置）](configobject/UNC/20.15.2/APPLYCOMMUNITY.md)
+- [APPLYCOMMUNITYFILTERDELETE（删除团体属性过滤器设置）](configobject/UNC/20.15.2/APPLYCOMMUNITYFILTERDELETE.md)
+- [APPLYCOST（路由开销值设置）](configobject/UNC/20.15.2/APPLYCOST.md)
+- [APPLYCOSTTYPE（开销值类型设置）](configobject/UNC/20.15.2/APPLYCOSTTYPE.md)
+- [APPLYDAMPENING（Dampening设置）](configobject/UNC/20.15.2/APPLYDAMPENING.md)
+- [APPLYEXTCMNTYSTRING（扩展团体属性值设置）](configobject/UNC/20.15.2/APPLYEXTCMNTYSTRING.md)
+- [APPLYEXTENDCOMMUNITY（扩展团体属性设置）](configobject/UNC/20.15.2/APPLYEXTENDCOMMUNITY.md)
+- [APPLYIPV6NEXTHOP（IPv6下一跳设置）](configobject/UNC/20.15.2/APPLYIPV6NEXTHOP.md)
+- [APPLYLOCALPREFERENCE（路由BGP本地优先级设置）](configobject/UNC/20.15.2/APPLYLOCALPREFERENCE.md)
+- [APPLYNEXTHOP（下一跳设置）](configobject/UNC/20.15.2/APPLYNEXTHOP.md)
+- [APPLYORIGIN（BGP路由信息的路由源设置）](configobject/UNC/20.15.2/APPLYORIGIN.md)
+- [APPLYPREFERENCE（路由优先级设置）](configobject/UNC/20.15.2/APPLYPREFERENCE.md)
+- [APPLYPREFVALUE（BGP路由首选值设置）](configobject/UNC/20.15.2/APPLYPREFVALUE.md)
+- [APPLYROUTETYPE（路由类型设置）](configobject/UNC/20.15.2/APPLYROUTETYPE.md)
+- [APPLYTAG（路由标签值设置）](configobject/UNC/20.15.2/APPLYTAG.md)
+- [APPLYTUNNELPOLICY（应用隧道策略）](configobject/UNC/20.15.2/APPLYTUNNELPOLICY.md)
+- [AREACODE（区域编码）](configobject/UNC/20.15.2/AREACODE.md)
+- [AREADECRYPT（基于LAC/RAC关闭加密配置）](configobject/UNC/20.15.2/AREADECRYPT.md)
+- [AREADNS（位置区域DNS域名）](configobject/UNC/20.15.2/AREADNS.md)
+- [AREAGP（区域群）](configobject/UNC/20.15.2/AREAGP.md)
+- [AREAGPMEM（区域群成员）](configobject/UNC/20.15.2/AREAGPMEM.md)
+- [AREAMEM（跟踪区成员）](configobject/UNC/20.15.2/AREAMEM.md)
+- [AREAMMINFO（基于区域的网络名称）](configobject/UNC/20.15.2/AREAMMINFO.md)
+- [AREATZ（区域时区参数）](configobject/UNC/20.15.2/AREATZ.md)
+- [ARPPARA（ARP策略参数配置）](configobject/UNC/20.15.2/ARPPARA.md)
+- [ARPPROBESESSION（ARP探测会话）](configobject/UNC/20.15.2/ARPPROBESESSION.md)
+- [ARPPROBESTANDBYSRCIP（备用成员口ARP探测源地址）](configobject/UNC/20.15.2/ARPPROBESTANDBYSRCIP.md)
+- [ARPRANGE（ARP策略范围配置）](configobject/UNC/20.15.2/ARPRANGE.md)
+- [ARPSTATICBLACKLIST（ARP静态黑名单）](configobject/UNC/20.15.2/ARPSTATICBLACKLIST.md)
+- [ARPSTATICTABLE（静态ARP表项）](configobject/UNC/20.15.2/ARPSTATICTABLE.md)
+- [ASPATHFILTERNODE（AS路径过滤节点）](configobject/UNC/20.15.2/ASPATHFILTERNODE.md)
+- [ASPATHSTRING（替换AS路径值）](configobject/UNC/20.15.2/ASPATHSTRING.md)
+- [ASRCHN（容灾业务通道配置）](configobject/UNC/20.15.2/ASRCHN.md)
+- [ATTACHIKEPEER（绑定IKE对等体）](configobject/UNC/20.15.2/ATTACHIKEPEER.md)
+- [AUTHNAMEPWDCTRL（对鉴权信元用户名和密码的控制）](configobject/UNC/20.15.2/AUTHNAMEPWDCTRL.md)
+- [AUTOLOCEP（自动上报的NSE下的本端端点）](configobject/UNC/20.15.2/AUTOLOCEP.md)
+- [AUTONSE（自动上报的NSE）](configobject/UNC/20.15.2/AUTONSE.md)
+- [AUTORP（Auto-RP配置）](configobject/UNC/20.15.2/AUTORP.md)
+- [AUTOSCALINGBFD（BFD会话自动化配置模板）](configobject/UNC/20.15.2/AUTOSCALINGBFD.md)
+- [AUTOSCALINGBGPLF（BGP入不转板自动化配置模板）](configobject/UNC/20.15.2/AUTOSCALINGBGPLF.md)
+- [AUTOSCALINGBGPMSPEER（BGP自动化多源邻居配置模板）](configobject/UNC/20.15.2/AUTOSCALINGBGPMSPEER.md)
+- [AUTOSCALINGETHTRUNK（以太网隧道自动化多虚拟网卡配置模板）](configobject/UNC/20.15.2/AUTOSCALINGETHTRUNK.md)
+- [AUTOSCALINGIPREACH（IP可达性检测自动化配置模板）](configobject/UNC/20.15.2/AUTOSCALINGIPREACH.md)
+- [AUTOSCALINGMPLS（MPLS自动化配置模板）](configobject/UNC/20.15.2/AUTOSCALINGMPLS.md)
+- [AUTOSCALINGOSPFPROCGRP（OSPF进程组自动化配置模板）](configobject/UNC/20.15.2/AUTOSCALINGOSPFPROCGRP.md)
+- [AUTOSCALINGRUBLACKLIST（自动部署RU黑名单）](configobject/UNC/20.15.2/AUTOSCALINGRUBLACKLIST.md)
+- [AUTOSCALINGSERVICE（自动化配置参数）](configobject/UNC/20.15.2/AUTOSCALINGSERVICE.md)
+- [AUTOSCALINGSRBFD（静态路由的动态BFD自动化配置模板）](configobject/UNC/20.15.2/AUTOSCALINGSRBFD.md)
+- [AUTOSCALINGSRROUTE（静态路由自动化配置模板）](configobject/UNC/20.15.2/AUTOSCALINGSRROUTE.md)
+- [BACKUPGUAMI（供备GUAMI信息）](configobject/UNC/20.15.2/BACKUPGUAMI.md)
+- [BANDWIDTHARP（基于带宽的ARP控制配置）](configobject/UNC/20.15.2/BANDWIDTHARP.md)
+- [BASICCOMMUNITYNODE（基础团体属性过滤器节点）](configobject/UNC/20.15.2/BASICCOMMUNITYNODE.md)
+- [BFDSESSION（BFD会话参数）](configobject/UNC/20.15.2/BFDSESSION.md)
+- [BGPCONFED（联盟中自治系统）](configobject/UNC/20.15.2/BGPCONFED.md)
+- [BGPMULTIPEER（BGP多源对等体）](configobject/UNC/20.15.2/BGPMULTIPEER.md)
+- [BGPMULTIPEERAF（BGP多源对等体地址族）](configobject/UNC/20.15.2/BGPMULTIPEERAF.md)
+- [BGPPEER（BGP对等体）](configobject/UNC/20.15.2/BGPPEER.md)
+- [BGPPEERAF（BGP对等体地址族）](configobject/UNC/20.15.2/BGPPEERAF.md)
+- [BGPPEERAFPRE（BGP对等体条件路由匹配前缀）](configobject/UNC/20.15.2/BGPPEERAFPRE.md)
+- [BGPPEERBFD（BGP对等体BFD检测）](configobject/UNC/20.15.2/BGPPEERBFD.md)
+- [BGPPEERGROUP（BGP对等体组）](configobject/UNC/20.15.2/BGPPEERGROUP.md)
+- [BGPPEERGROUPAF（BGP对等体组地址族）](configobject/UNC/20.15.2/BGPPEERGROUPAF.md)
+- [BGPPEERGROUPAFPRE（BGP对等体组条件路由匹配前缀）](configobject/UNC/20.15.2/BGPPEERGROUPAFPRE.md)
+- [BGPPEERGROUPBFD（BGP对等体组BFD检测）](configobject/UNC/20.15.2/BGPPEERGROUPBFD.md)
+- [BGPVRF（BGP VPN实例）](configobject/UNC/20.15.2/BGPVRF.md)
+- [BGPVRFAF（BGP VPN地址族）](configobject/UNC/20.15.2/BGPVRFAF.md)
+- [BLACKLIST（黑名单地址列表）](configobject/UNC/20.15.2/BLACKLIST.md)
+- [BLKGWLST（被禁用网关配置）](configobject/UNC/20.15.2/BLKGWLST.md)
+- [BSFAPNGROUP（APN组）](configobject/UNC/20.15.2/BSFAPNGROUP.md)
+- [BSFINFO（BSF信息）](configobject/UNC/20.15.2/BSFINFO.md)
+- [BSFIPDOMAINGRP（IPDOMAIN组）](configobject/UNC/20.15.2/BSFIPDOMAINGRP.md)
+- [BSSIDFORNSEI（NSEI和BSSID值的对应关系）](configobject/UNC/20.15.2/BSSIDFORNSEI.md)
+- [BYPASSFAULTCODE（BYPASS故障状态码）](configobject/UNC/20.15.2/BYPASSFAULTCODE.md)
+- [CACHEUPDATEPLCY（缓存更新策略）](configobject/UNC/20.15.2/CACHEUPDATEPLCY.md)
+- [CACHEWHITELST（异网白名单PLMN信息）](configobject/UNC/20.15.2/CACHEWHITELST.md)
+- [CANDIDATEAMF（候选AMF）](configobject/UNC/20.15.2/CANDIDATEAMF.md)
+- [CAUSEGRP（原因值映射组配置）](configobject/UNC/20.15.2/CAUSEGRP.md)
+- [CAUSEMAP（原因值映射配置）](configobject/UNC/20.15.2/CAUSEMAP.md)
+- [CBC](configobject/UNC/20.15.2/CBC.md)
+- [CCGROUP（计费特征组）](configobject/UNC/20.15.2/CCGROUP.md)
+- [CCPCCACT（融合计费Proxy基于CC处理动作）](configobject/UNC/20.15.2/CCPCCACT.md)
+- [CCPDNNACT（融合计费Proxy基于DNN处理动作）](configobject/UNC/20.15.2/CCPDNNACT.md)
+- [CCPFOT（融合计费Proxy Failover模板）](configobject/UNC/20.15.2/CCPFOT.md)
+- [CCPRCACT（融合计费Proxy结果码处理动作）](configobject/UNC/20.15.2/CCPRCACT.md)
+- [CCPRGACT（融合计费Proxy基于RG处理动作）](configobject/UNC/20.15.2/CCPRGACT.md)
+- [CCT（融合计费模板）](configobject/UNC/20.15.2/CCT.md)
+- [CCVALUE（计费特征值）](configobject/UNC/20.15.2/CCVALUE.md)
+- [CDFTOKENWEIGHT（cdf token权重）](configobject/UNC/20.15.2/CDFTOKENWEIGHT.md)
+- [CDRAUDIT（话单稽核）](configobject/UNC/20.15.2/CDRAUDIT.md)
+- [CDRBACKUP（上传SFTP密钥文件到第三方服务器）](configobject/UNC/20.15.2/CDRBACKUP.md)
+- [CDRDELPARA（话单删除参数）](configobject/UNC/20.15.2/CDRDELPARA.md)
+- [CDRDELTASK（话单删除任务）](configobject/UNC/20.15.2/CDRDELTASK.md)
+- [CDRDISTR（上传SFTP密钥文件到BS侧）](configobject/UNC/20.15.2/CDRDISTR.md)
+- [CDRFIELDTEMP（话单字段模板）](configobject/UNC/20.15.2/CDRFIELDTEMP.md)
+- [CDRMONITOR（话单监控）](configobject/UNC/20.15.2/CDRMONITOR.md)
+- [CDRPROC（话单处理）](configobject/UNC/20.15.2/CDRPROC.md)
+- [CDRQUERYFILE（话单查询结果文件）](configobject/UNC/20.15.2/CDRQUERYFILE.md)
+- [CDRSTAT（话单统计）](configobject/UNC/20.15.2/CDRSTAT.md)
+- [CDRSTOR（话单存储）](configobject/UNC/20.15.2/CDRSTOR.md)
+- [CELL（小区）](configobject/UNC/20.15.2/CELL.md)
+- [CELLGEO（CELLID与地理坐标对应关系）](configobject/UNC/20.15.2/CELLGEO.md)
+- [CELLMULFAULTTHD（进程频繁故障监控参数）](configobject/UNC/20.15.2/CELLMULFAULTTHD.md)
+- [CERTSCENE（证书场景描述）](configobject/UNC/20.15.2/CERTSCENE.md)
+- [CFGSNSSAI（支持的S-NSSAI）](configobject/UNC/20.15.2/CFGSNSSAI.md)
+- [CFGTHRESHOLD（配置对象告警阈值）](configobject/UNC/20.15.2/CFGTHRESHOLD.md)
+- [CG](configobject/UNC/20.15.2/CG.md)
+- [CGGROUP（CG组）](configobject/UNC/20.15.2/CGGROUP.md)
+- [CHARGECHAR（对本地用户、漫游用户、拜访用户所采用的计费属性）](configobject/UNC/20.15.2/CHARGECHAR.md)
+- [CHARGEMETHOD（计费方式）](configobject/UNC/20.15.2/CHARGEMETHOD.md)
+- [CHGAPN（APN计费属性）](configobject/UNC/20.15.2/CHGAPN.md)
+- [CHGBEHA（计费行为参数）](configobject/UNC/20.15.2/CHGBEHA.md)
+- [CHGCDPIP（计费相关的IP配置参数）](configobject/UNC/20.15.2/CHGCDPIP.md)
+- [CHGCG（CG配置参数）](configobject/UNC/20.15.2/CHGCG.md)
+- [CHGDCHAR（缺省计费属性参数）](configobject/UNC/20.15.2/CHGDCHAR.md)
+- [CHGGNCCCFG（Gn接口计费属性选择策略）](configobject/UNC/20.15.2/CHGGNCCCFG.md)
+- [CHGHOLI（节假日配置）](configobject/UNC/20.15.2/CHGHOLI.md)
+- [CHGIMSICFG（IMSI计费配置）](configobject/UNC/20.15.2/CHGIMSICFG.md)
+- [CHGMCDRCFG（M-CDR计费配置）](configobject/UNC/20.15.2/CHGMCDRCFG.md)
+- [CHGPLMNCFG（PLMN计费配置）](configobject/UNC/20.15.2/CHGPLMNCFG.md)
+- [CHGPLMNCG（PLMN-CG配置参数）](configobject/UNC/20.15.2/CHGPLMNCG.md)
+- [CHGTARI（费率时段配置）](configobject/UNC/20.15.2/CHGTARI.md)
+- [CHRRPTLOCINFO（CHR本地存盘位置配置）](configobject/UNC/20.15.2/CHRRPTLOCINFO.md)
+- [CHRRPTSUBID（CHR本地存盘用户）](configobject/UNC/20.15.2/CHRRPTSUBID.md)
+- [CHRSNDPLCY（CHR传输策略）](configobject/UNC/20.15.2/CHRSNDPLCY.md)
+- [CMDRCACT（命令层异常返回码处理动作）](configobject/UNC/20.15.2/CMDRCACT.md)
+- [COMMUNITYFILTER（团体属性过滤器）](configobject/UNC/20.15.2/COMMUNITYFILTER.md)
+- [COMPKG（扩展包）](configobject/UNC/20.15.2/COMPKG.md)
+- [CONFLICTIP（冲突地址）](configobject/UNC/20.15.2/CONFLICTIP.md)
+- [CONNECTPLMN（互联PLMN）](configobject/UNC/20.15.2/CONNECTPLMN.md)
+- [CPCGGRP（抄送CG组）](configobject/UNC/20.15.2/CPCGGRP.md)
+- [CPFLOWFILTER（CP流过滤器）](configobject/UNC/20.15.2/CPFLOWFILTER.md)
+- [CPGTPUADDR（CP GTP-U地址）](configobject/UNC/20.15.2/CPGTPUADDR.md)
+- [CPNODE（CP节点信息）](configobject/UNC/20.15.2/CPNODE.md)
+- [CPPOINT（CP端点信息）](configobject/UNC/20.15.2/CPPOINT.md)
+- [CPUABILITYCFG（不同CPU类型的能力系数和基础消耗。）](configobject/UNC/20.15.2/CPUABILITYCFG.md)
+- [CPUCAPABILITY（CPU能力基线）](configobject/UNC/20.15.2/CPUCAPABILITY.md)
+- [CSCFGBYOMCM（业务读取OM缓存数据的配置）](configobject/UNC/20.15.2/CSCFGBYOMCM.md)
+- [CTXSTARTRATING（给OCS/CHF发送的消息初始携带的计费属性）](configobject/UNC/20.15.2/CTXSTARTRATING.md)
+- [DAMPROUTE（振荡抑制路由）](configobject/UNC/20.15.2/DAMPROUTE.md)
+- [DBRECORDS（数据库中的表记录）](configobject/UNC/20.15.2/DBRECORDS.md)
+- [DBRUMEM（CSDB RU内存信息）](configobject/UNC/20.15.2/DBRUMEM.md)
+- [DCCTEMPLATE（DCC模板）](configobject/UNC/20.15.2/DCCTEMPLATE.md)
+- [DCN](configobject/UNC/20.15.2/DCN.md)
+- [DCNMAP（DCN映射关系）](configobject/UNC/20.15.2/DCNMAP.md)
+- [DCNMEMBER（DCN成员）](configobject/UNC/20.15.2/DCNMEMBER.md)
+- [DCNPLCY（DCN配置策略）](configobject/UNC/20.15.2/DCNPLCY.md)
+- [DDNPRIORITYAPN（基于APN的DDN消息优先级配置）](configobject/UNC/20.15.2/DDNPRIORITYAPN.md)
+- [DDNPRIORITYARP（基于ARP的DDN消息优先级配置）](configobject/UNC/20.15.2/DDNPRIORITYARP.md)
+- [DEACTQFPLCY（去活用户面专有QoS Flow策略）](configobject/UNC/20.15.2/DEACTQFPLCY.md)
+- [DEBUGRECORD（异常信息记录）](configobject/UNC/20.15.2/DEBUGRECORD.md)
+- [DFTSRVNODEPLMN（默认PLMN）](configobject/UNC/20.15.2/DFTSRVNODEPLMN.md)
+- [DHCP6CLIENT（DHCPv6客户端）](configobject/UNC/20.15.2/DHCP6CLIENT.md)
+- [DHCPCLIENT（DHCPv4客户端）](configobject/UNC/20.15.2/DHCPCLIENT.md)
+- [DHCPGIP（支持DHCP服务的GGSN IP地址）](configobject/UNC/20.15.2/DHCPGIP.md)
+- [DHCPSERVER（DHCP服务器）](configobject/UNC/20.15.2/DHCPSERVER.md)
+- [DHCPSERVERGRP（DHCP服务器组）](configobject/UNC/20.15.2/DHCPSERVERGRP.md)
+- [DIAMAAABNDGRP（Diameter AAA服务器组里的Diameter AAA服务器）](configobject/UNC/20.15.2/DIAMAAABNDGRP.md)
+- [DIAMAAAGRP（Diameter AAA服务器组）](configobject/UNC/20.15.2/DIAMAAAGRP.md)
+- [DIAMCONNECTION（Diameter链路）](configobject/UNC/20.15.2/DIAMCONNECTION.md)
+- [DIAMCONNGRP（Diameter链路组）](configobject/UNC/20.15.2/DIAMCONNGRP.md)
+- [DIAMDICTPATH（Diameter字典加载路径）](configobject/UNC/20.15.2/DIAMDICTPATH.md)
+- [DIAMETERAAA（Diameter AAA服务器）](configobject/UNC/20.15.2/DIAMETERAAA.md)
+- [DIAMLOCINFO（Diameter本端信息）](configobject/UNC/20.15.2/DIAMLOCINFO.md)
+- [DIAMPEERADDR（Diameter对端地址）](configobject/UNC/20.15.2/DIAMPEERADDR.md)
+- [DIAMRTNEXTHOP（Diameter路由下一跳）](configobject/UNC/20.15.2/DIAMRTNEXTHOP.md)
+- [DIAMRTREALM（Diameter路由域名信息）](configobject/UNC/20.15.2/DIAMRTREALM.md)
+- [DIFFSERVICE（差异化服务接入门限）](configobject/UNC/20.15.2/DIFFSERVICE.md)
+- [DISCADAPTFC（服务发现自适应流控NF级配置）](configobject/UNC/20.15.2/DISCADAPTFC.md)
+- [DMAVPDICT（Diameter数据字典中的AVP参数）](configobject/UNC/20.15.2/DMAVPDICT.md)
+- [DMAVPDICTALL（所有Diameter AVP表）](configobject/UNC/20.15.2/DMAVPDICTALL.md)
+- [DMCMPTBYIMSI（IMSI对应的Diameter兼容性）](configobject/UNC/20.15.2/DMCMPTBYIMSI.md)
+- [DMFOVERCODE（触发重选路由的错误码）](configobject/UNC/20.15.2/DMFOVERCODE.md)
+- [DMHOSTRT（Diameter主机路由）](configobject/UNC/20.15.2/DMHOSTRT.md)
+- [DMLE（Diameter本端实体）](configobject/UNC/20.15.2/DMLE.md)
+- [DMLKS（Diameter链路集配置）](configobject/UNC/20.15.2/DMLKS.md)
+- [DMLNK（Diameter链路配置）](configobject/UNC/20.15.2/DMLNK.md)
+- [DMOC（Diameter流控节点）](configobject/UNC/20.15.2/DMOC.md)
+- [DMPE（Diameter对端实体）](configobject/UNC/20.15.2/DMPE.md)
+- [DMRT（Diameter域路由配置）](configobject/UNC/20.15.2/DMRT.md)
+- [DMRTGRP（Diameter路由组）](configobject/UNC/20.15.2/DMRTGRP.md)
+- [DMRTPRI（Diameter域路由优先级权重）](configobject/UNC/20.15.2/DMRTPRI.md)
+- [DMVLE（Diameter虚拟本地实体）](configobject/UNC/20.15.2/DMVLE.md)
+- [DNAIINFO（DNAI信息）](configobject/UNC/20.15.2/DNAIINFO.md)
+- [DNAIUPFINFO（指定DNAI的UPF节点信息）](configobject/UNC/20.15.2/DNAIUPFINFO.md)
+- [DNAIUPSELPLY（DNAI粒度的UPF选择策略）](configobject/UNC/20.15.2/DNAIUPSELPLY.md)
+- [DNAREA（DNAI服务区域）](configobject/UNC/20.15.2/DNAREA.md)
+- [DNNGRP（DNN群组）](configobject/UNC/20.15.2/DNNGRP.md)
+- [DNNGRPMEM（DNN群组成员）](configobject/UNC/20.15.2/DNNGRPMEM.md)
+- [DNNRANSECPLCY（DNN RAN侧安全策略）](configobject/UNC/20.15.2/DNNRANSECPLCY.md)
+- [DNNSMARTPLCY（DNN智能分流配置）](configobject/UNC/20.15.2/DNNSMARTPLCY.md)
+- [DNNTAISSP（DNN的TAI和ServingScope映射）](configobject/UNC/20.15.2/DNNTAISSP.md)
+- [DNSLE（DNS Client IP与DNS实体的绑定关系）](configobject/UNC/20.15.2/DNSLE.md)
+- [DNSN（DNS NAPTR记录）](configobject/UNC/20.15.2/DNSN.md)
+- [DNSQ（DNS查询控制参数）](configobject/UNC/20.15.2/DNSQ.md)
+- [DNSS（DNS服务器）](configobject/UNC/20.15.2/DNSS.md)
+- [DRA](configobject/UNC/20.15.2/DRA.md)
+- [DRCOMM（容灾实例地址）](configobject/UNC/20.15.2/DRCOMM.md)
+- [DRDCI（DC间通信通道信息）](configobject/UNC/20.15.2/DRDCI.md)
+- [DRGROUPINFO（容灾组信息）](configobject/UNC/20.15.2/DRGROUPINFO.md)
+- [DRINST（容灾实例）](configobject/UNC/20.15.2/DRINST.md)
+- [DRSEPINTERFACE（故障隔离接口）](configobject/UNC/20.15.2/DRSEPINTERFACE.md)
+- [DSCPMAP（DSCP值到VLAN优先级的映射）](configobject/UNC/20.15.2/DSCPMAP.md)
+- [DSCPPRI（DSCP映射优先级配置表）](configobject/UNC/20.15.2/DSCPPRI.md)
+- [DSCPPRIMCR（DSCP映射优先级配置表）](configobject/UNC/20.15.2/DSCPPRIMCR.md)
+- [E2ETRCEX（端到端用户跟踪）](configobject/UNC/20.15.2/E2ETRCEX.md)
+- [E2ETRCTSK（端到端跟踪任务）](configobject/UNC/20.15.2/E2ETRCTSK.md)
+- [EIR（EIR配置）](configobject/UNC/20.15.2/EIR.md)
+- [EMGCFG（运营商紧急呼叫功能配置）](configobject/UNC/20.15.2/EMGCFG.md)
+- [EMGCNUM（紧急号码信息表记录）](configobject/UNC/20.15.2/EMGCNUM.md)
+- [EMMPROCTRLIMSI（指定用户S1模式移动性管理流程控制参数）](configobject/UNC/20.15.2/EMMPROCTRLIMSI.md)
+- [ENBGP（eNodeB群组）](configobject/UNC/20.15.2/ENBGP.md)
+- [ENBGPMEM（eNodeB群组成员）](configobject/UNC/20.15.2/ENBGPMEM.md)
+- [ENBNSINDB（配置的eNodeB邻接关系）](configobject/UNC/20.15.2/ENBNSINDB.md)
+- [EPLMNAREAMEM（跟踪区域组成员）](configobject/UNC/20.15.2/EPLMNAREAMEM.md)
+- [EPLMNGRP（等价PLMN组）](configobject/UNC/20.15.2/EPLMNGRP.md)
+- [EPLMNGRPMEM（等价PLMN组成员）](configobject/UNC/20.15.2/EPLMNGRPMEM.md)
+- [EPSQOS4DEFBER（Qos Profile缺省承载QoS属性）](configobject/UNC/20.15.2/EPSQOS4DEFBER.md)
+- [EPSQOSACTION（EPS QoS控制动作配置）](configobject/UNC/20.15.2/EPSQOSACTION.md)
+- [EPSREMARK（EPS QoS到TOS/DSCP的映射规则）](configobject/UNC/20.15.2/EPSREMARK.md)
+- [EPSSUBQOS（EPS签约QoS配置）](configobject/UNC/20.15.2/EPSSUBQOS.md)
+- [ESMLC（E-SMLC配置）](configobject/UNC/20.15.2/ESMLC.md)
+- [ETHSUBIF（子接口配置）](configobject/UNC/20.15.2/ETHSUBIF.md)
+- [EXEMPTSERVICE（豁免业务）](configobject/UNC/20.15.2/EXEMPTSERVICE.md)
+- [EXPCFGPARA（MML导入导出密钥）](configobject/UNC/20.15.2/EXPCFGPARA.md)
+- [EXTENDCOMMUNITYFILTER（扩展团体属性过滤器）](configobject/UNC/20.15.2/EXTENDCOMMUNITYFILTER.md)
+- [EXTENDCOMMUNITYFILTERNODE（基础扩展团体属性过滤器节点）](configobject/UNC/20.15.2/EXTENDCOMMUNITYFILTERNODE.md)
+- [EXTENDQCIMAP（扩展QCI和标准QCI的映射关系）](configobject/UNC/20.15.2/EXTENDQCIMAP.md)
+- [EXTRFSP（扩展RFSP策略组成员）](configobject/UNC/20.15.2/EXTRFSP.md)
+- [FASTSCANRATE（快速扫描任务）](configobject/UNC/20.15.2/FASTSCANRATE.md)
+- [FAULTRANGRP（N3接口故障RAN组）](configobject/UNC/20.15.2/FAULTRANGRP.md)
+- [FAULTUPGRP（N3接口故障UPF组）](configobject/UNC/20.15.2/FAULTUPGRP.md)
+- [FCPARAM（流控参数）](configobject/UNC/20.15.2/FCPARAM.md)
+- [FEATLOCREPORT（基于特性的位置上报配置）](configobject/UNC/20.15.2/FEATLOCREPORT.md)
+- [FESTIVAL（计费节假日表）](configobject/UNC/20.15.2/FESTIVAL.md)
+- [FILTERGP（过滤组）](configobject/UNC/20.15.2/FILTERGP.md)
+- [FILTERGPMEMBER（过滤器组成员）](configobject/UNC/20.15.2/FILTERGPMEMBER.md)
+- [FILTEROCSPARA（需要过滤掉的OCS实例信息）](configobject/UNC/20.15.2/FILTEROCSPARA.md)
+- [FILTERPOLICY（路由过滤策略）](configobject/UNC/20.15.2/FILTERPOLICY.md)
+- [FLOWFILTER（流过滤器）](configobject/UNC/20.15.2/FLOWFILTER.md)
+- [FMTPKGCFG（格式引擎包软参）](configobject/UNC/20.15.2/FMTPKGCFG.md)
+- [FWAMATCHRULE（FWA用户匹配规则）](configobject/UNC/20.15.2/FWAMATCHRULE.md)
+- [FWRULE（转发规则）](configobject/UNC/20.15.2/FWRULE.md)
+- [GAISOLATION（Ga业务隔离配置）](configobject/UNC/20.15.2/GAISOLATION.md)
+- [GBACCAREALST（Gb模式区域漫游限制参数）](configobject/UNC/20.15.2/GBACCAREALST.md)
+- [GBARD（Gb模式接入限制参数）](configobject/UNC/20.15.2/GBARD.md)
+- [GBAUTHCIPH（Gb模式用户安全参数）](configobject/UNC/20.15.2/GBAUTHCIPH.md)
+- [GBEPPOOL（地址池中IP地址）](configobject/UNC/20.15.2/GBEPPOOL.md)
+- [GBIMEICFG（Gb模式IMEI配置）](configobject/UNC/20.15.2/GBIMEICFG.md)
+- [GBIPLOCENDPT（本地端点配置）](configobject/UNC/20.15.2/GBIPLOCENDPT.md)
+- [GBIPRMTENDPT（对端端点配置）](configobject/UNC/20.15.2/GBIPRMTENDPT.md)
+- [GBNSECFGPARA（NSE属性模板）](configobject/UNC/20.15.2/GBNSECFGPARA.md)
+- [GBNSEGRP（NSE和属性模板的关联）](configobject/UNC/20.15.2/GBNSEGRP.md)
+- [GBRBWCTRL（GBR承载带宽速率控制配置）](configobject/UNC/20.15.2/GBRBWCTRL.md)
+- [GBSUBRRLST（Gb模式用户漫游限制列表）](configobject/UNC/20.15.2/GBSUBRRLST.md)
+- [GGSNCAUSECTRL（GGSN-C原因值控制参数）](configobject/UNC/20.15.2/GGSNCAUSECTRL.md)
+- [GGSNCHARACT（GGSN属性配置信息）](configobject/UNC/20.15.2/GGSNCHARACT.md)
+- [GLBCTXREQRATE（全局初始请求计费绑定关系）](configobject/UNC/20.15.2/GLBCTXREQRATE.md)
+- [GLBDCCTEMPLATE（计费属性与在线计费模板绑定关系）](configobject/UNC/20.15.2/GLBDCCTEMPLATE.md)
+- [GLBDIAMREALM（全局Diameter域）](configobject/UNC/20.15.2/GLBDIAMREALM.md)
+- [GLBOFCTEMPLATE（全局离线计费模板）](configobject/UNC/20.15.2/GLBOFCTEMPLATE.md)
+- [GLBPCRFGROUP（全局PCRF组绑定关系）](configobject/UNC/20.15.2/GLBPCRFGROUP.md)
+- [GLBURRGROUP（全局使用量上报规则组）](configobject/UNC/20.15.2/GLBURRGROUP.md)
+- [GMLC（GMLC配置）](configobject/UNC/20.15.2/GMLC.md)
+- [GMLCAU（GMLC权限配置）](configobject/UNC/20.15.2/GMLCAU.md)
+- [GMLCCLIENT（GMLC和LCS Client对照关系）](configobject/UNC/20.15.2/GMLCCLIENT.md)
+- [GMLCSELGRP（GMLC选择策略组）](configobject/UNC/20.15.2/GMLCSELGRP.md)
+- [GMLCSELPLCY（GMLC选择策略）](configobject/UNC/20.15.2/GMLCSELPLCY.md)
+- [GRETUNNEL（GRE隧道）](configobject/UNC/20.15.2/GRETUNNEL.md)
+- [GRPNGLANFUNC（指定群组的5G LAN会话扩展参数）](configobject/UNC/20.15.2/GRPNGLANFUNC.md)
+- [GTPALMMSK（GTP路径断告警屏蔽记录）](configobject/UNC/20.15.2/GTPALMMSK.md)
+- [GTPCAUSE（GTP原因值）](configobject/UNC/20.15.2/GTPCAUSE.md)
+- [GTPCCMPT（GTP-C V0/V1协议兼容性配置）](configobject/UNC/20.15.2/GTPCCMPT.md)
+- [GTPCINTF（GTP-C接口信息）](configobject/UNC/20.15.2/GTPCINTF.md)
+- [GTPCINTFATTR（GTP-C IP地址接口属性）](configobject/UNC/20.15.2/GTPCINTFATTR.md)
+- [GTPCLE（GTP-C本地实体）](configobject/UNC/20.15.2/GTPCLE.md)
+- [GTPCLEGRP（GTP-C本地实体组）](configobject/UNC/20.15.2/GTPCLEGRP.md)
+- [GTPCLEGRPMEM（GTP-C本地实体组成员）](configobject/UNC/20.15.2/GTPCLEGRPMEM.md)
+- [GTPCPATH（GTP-C路径）](configobject/UNC/20.15.2/GTPCPATH.md)
+- [GTPCPATHDP（GTP-C路径管理自定义策略）](configobject/UNC/20.15.2/GTPCPATHDP.md)
+- [GTPCPATHINFO（GTP-C路径）](configobject/UNC/20.15.2/GTPCPATHINFO.md)
+- [GTPCPATHMP（GTP-C路径管理策略）](configobject/UNC/20.15.2/GTPCPATHMP.md)
+- [GTPCT3N3（GTP-C T3N3参数）](configobject/UNC/20.15.2/GTPCT3N3.md)
+- [GTPCV2CMPT（GTP-C V2协议兼容性）](configobject/UNC/20.15.2/GTPCV2CMPT.md)
+- [GTPCWHITELIST（GTP-C路径白名单）](configobject/UNC/20.15.2/GTPCWHITELIST.md)
+- [GTPPLOCINFO（GTPP本端信息）](configobject/UNC/20.15.2/GTPPLOCINFO.md)
+- [GTPUINTFATTR（GTP-U IP地址接口属性）](configobject/UNC/20.15.2/GTPUINTFATTR.md)
+- [GTPULE（GTP-U本地实体）](configobject/UNC/20.15.2/GTPULE.md)
+- [GTPUPATHDP（GTP-U路径管理自定义策略）](configobject/UNC/20.15.2/GTPUPATHDP.md)
+- [GTPUPATHINFO（GTPU路径）](configobject/UNC/20.15.2/GTPUPATHINFO.md)
+- [GUAMI（AMF全局标识）](configobject/UNC/20.15.2/GUAMI.md)
+- [GULIWKPLCY（GUL互操作本地策略）](configobject/UNC/20.15.2/GULIWKPLCY.md)
+- [GUREDIRPLCY（GU重定向策略）](configobject/UNC/20.15.2/GUREDIRPLCY.md)
+- [GUTISELAREACODE（GUTI选网功能区域编码）](configobject/UNC/20.15.2/GUTISELAREACODE.md)
+- [GUTISELAREAMEM（GUTI选网功能区域成员）](configobject/UNC/20.15.2/GUTISELAREAMEM.md)
+- [GWPRESELBYIMSI（指定用户优选网关）](configobject/UNC/20.15.2/GWPRESELBYIMSI.md)
+- [GWRESTORAPN（网关容灾APN）](configobject/UNC/20.15.2/GWRESTORAPN.md)
+- [GWSELBYCC（基于CC选择GGSN/P-GW）](configobject/UNC/20.15.2/GWSELBYCC.md)
+- [GWSELBYIMEI（基于IMEI选择GGSN/P-GW配置）](configobject/UNC/20.15.2/GWSELBYIMEI.md)
+- [GWSELPLCY（GGSN/P-GW选择策略）](configobject/UNC/20.15.2/GWSELPLCY.md)
+- [GXUPFGROUP（Gx UPF组）](configobject/UNC/20.15.2/GXUPFGROUP.md)
+- [H2SRVPLMN（Home PLMN到Serving PLMN的对应关系）](configobject/UNC/20.15.2/H2SRVPLMN.md)
+- [HLRBPFAULTCODE（HLR BYPASS故障状态码）](configobject/UNC/20.15.2/HLRBPFAULTCODE.md)
+- [HNOINFO（归属网络信息）](configobject/UNC/20.15.2/HNOINFO.md)
+- [HNOSRVPLMN（归属网络Serving PLMN信息）](configobject/UNC/20.15.2/HNOSRVPLMN.md)
+- [HOMEGROUP（Home Group）](configobject/UNC/20.15.2/HOMEGROUP.md)
+- [HOMEIP（Home IP地址）](configobject/UNC/20.15.2/HOMEIP.md)
+- [HOMEPGWIP（归属地PGW-C IP地址）](configobject/UNC/20.15.2/HOMEPGWIP.md)
+- [HOMESMFINSTID（指定归属地SMF实例标识）](configobject/UNC/20.15.2/HOMESMFINSTID.md)
+- [HOSTSTCIF（接口协议报文统计配置）](configobject/UNC/20.15.2/HOSTSTCIF.md)
+- [HPATCH（热补丁）](configobject/UNC/20.15.2/HPATCH.md)
+- [HPLMN（本地PLMN）](configobject/UNC/20.15.2/HPLMN.md)
+- [HSSBPAPNGRP（HSS BYPASS最小APN签约数据群组）](configobject/UNC/20.15.2/HSSBPAPNGRP.md)
+- [HSSBPAPNSUB（HSS BYPASS最小APN签约数据配置）](configobject/UNC/20.15.2/HSSBPAPNSUB.md)
+- [HSSBPFAULTCODE（HSS BYPASS故障状态码）](configobject/UNC/20.15.2/HSSBPFAULTCODE.md)
+- [HSSBPOFC（故障状态HSS）](configobject/UNC/20.15.2/HSSBPOFC.md)
+- [HSSBPUSRSUB（HSS BYPASS最小用户签约数据配置）](configobject/UNC/20.15.2/HSSBPUSRSUB.md)
+- [HTRIMSICFG（HTR号段）](configobject/UNC/20.15.2/HTRIMSICFG.md)
+- [HTROFC（HTR局向）](configobject/UNC/20.15.2/HTROFC.md)
+- [HTTPERRHANDLER（间接路由代理故障重选配置）](configobject/UNC/20.15.2/HTTPERRHANDLER.md)
+- [HTTPFCIPGRP（HTTP流控组）](configobject/UNC/20.15.2/HTTPFCIPGRP.md)
+- [HTTPFCMSG（HTTP流控消息类型）](configobject/UNC/20.15.2/HTTPFCMSG.md)
+- [HTTPFIXEDFC（HTTP流控组固定速率流控信息）](configobject/UNC/20.15.2/HTTPFIXEDFC.md)
+- [HTTPFIXEDFCINF（HTTP接口类型固定速率流控信息）](configobject/UNC/20.15.2/HTTPFIXEDFCINF.md)
+- [HTTPHTRMS（HTR流控安全边界配置）](configobject/UNC/20.15.2/HTTPHTRMS.md)
+- [HTTPLE（HTTP本端实体）](configobject/UNC/20.15.2/HTTPLE.md)
+- [HTTPLEGRP（HTTP本端实体组）](configobject/UNC/20.15.2/HTTPLEGRP.md)
+- [HTTPOAUTHKEY（HTTPOauth密钥）](configobject/UNC/20.15.2/HTTPOAUTHKEY.md)
+- [HTTPOFC（HTTP局向）](configobject/UNC/20.15.2/HTTPOFC.md)
+- [HTTPRESCFG（HTTP资源流控门限）](configobject/UNC/20.15.2/HTTPRESCFG.md)
+- [HTTPSTATOBJ（基于对端结点的性能统计测量对象信息）](configobject/UNC/20.15.2/HTTPSTATOBJ.md)
+- [HTTPSTATPARA（HTTP统计参数）](configobject/UNC/20.15.2/HTTPSTATPARA.md)
+- [HTTPSTATUS（HTTP状态码判定配置）](configobject/UNC/20.15.2/HTTPSTATUS.md)
+- [HTTPVPNMAP（HTTP VPN映射关系）](configobject/UNC/20.15.2/HTTPVPNMAP.md)
+- [ICMPOPTSECURITY（ICMP选项安全配置）](configobject/UNC/20.15.2/ICMPOPTSECURITY.md)
+- [ICMPSECURITY（ICMP安全配置）](configobject/UNC/20.15.2/ICMPSECURITY.md)
+- [IFALLOWEDVLAN（主接口允许通过的VLAN）](configobject/UNC/20.15.2/IFALLOWEDVLAN.md)
+- [IFCONTROLFLAP（接口震荡抑制）](configobject/UNC/20.15.2/IFCONTROLFLAP.md)
+- [IFICMPSECURITY（接口下ICMP安全配置）](configobject/UNC/20.15.2/IFICMPSECURITY.md)
+- [IFIPV4ADDRESS（接口IPv4地址）](configobject/UNC/20.15.2/IFIPV4ADDRESS.md)
+- [IFIPV4ADDRESSIPSEC（接口IPv4地址）](configobject/UNC/20.15.2/IFIPV4ADDRESSIPSEC.md)
+- [IFIPV4UNNUM（接口IPv4借用地址）](configobject/UNC/20.15.2/IFIPV4UNNUM.md)
+- [IFIPV4UNNUMIPSEC（接口IPv4借用地址）](configobject/UNC/20.15.2/IFIPV4UNNUMIPSEC.md)
+- [IFIPV6ADDRESS（接口IPv6地址）](configobject/UNC/20.15.2/IFIPV6ADDRESS.md)
+- [IFIPV6ADDRESSIPSEC（接口IPv6地址）](configobject/UNC/20.15.2/IFIPV6ADDRESSIPSEC.md)
+- [IFIPV6ADDRPOLICY（IPv6地址策略）](configobject/UNC/20.15.2/IFIPV6ADDRPOLICY.md)
+- [IFIPV6CGA（IPv6 CGA地址信息）](configobject/UNC/20.15.2/IFIPV6CGA.md)
+- [IFIPV6NDRAPREFIX（IPv6 RA通告前缀）](configobject/UNC/20.15.2/IFIPV6NDRAPREFIX.md)
+- [IFL2FLOWMODE（主接口二层透传模式）](configobject/UNC/20.15.2/IFL2FLOWMODE.md)
+- [IKEPEER（IKE对等体）](configobject/UNC/20.15.2/IKEPEER.md)
+- [IKEPEER6（IPv6 IKE对等体）](configobject/UNC/20.15.2/IKEPEER6.md)
+- [IKEPROPOSAL（IKE提议）](configobject/UNC/20.15.2/IKEPROPOSAL.md)
+- [IMEIFORFD（强制分离策略）](configobject/UNC/20.15.2/IMEIFORFD.md)
+- [IMEIGP（IMEI群组）](configobject/UNC/20.15.2/IMEIGP.md)
+- [IMEIGPMEM（IMEI群组成员）](configobject/UNC/20.15.2/IMEIGPMEM.md)
+- [IMEILIB（IMEI库记录）](configobject/UNC/20.15.2/IMEILIB.md)
+- [IMEISVSEG（IMEISV号段）](configobject/UNC/20.15.2/IMEISVSEG.md)
+- [IMPORTROUTE（指定协议中的入口路由配置）](configobject/UNC/20.15.2/IMPORTROUTE.md)
+- [IMRFUNC（用户消息统计功能配置）](configobject/UNC/20.15.2/IMRFUNC.md)
+- [IMSIAPNCONVERT（APNNI转换配置）](configobject/UNC/20.15.2/IMSIAPNCONVERT.md)
+- [IMSICHAR（IMSI号段属性配置）](configobject/UNC/20.15.2/IMSICHAR.md)
+- [IMSIDT（IMSI Direct Tunnel配置）](configobject/UNC/20.15.2/IMSIDT.md)
+- [IMSIFORSMSC（融合短消息功能共部署SMSC支持的IMSI号段配置）](configobject/UNC/20.15.2/IMSIFORSMSC.md)
+- [IMSIGT（IMSI-GT对应关系）](configobject/UNC/20.15.2/IMSIGT.md)
+- [IMSIHLRHSS（IMSI对应的HLR/HSS接口）](configobject/UNC/20.15.2/IMSIHLRHSS.md)
+- [IMSIHSS（IMSI-HSS对应关系）](configobject/UNC/20.15.2/IMSIHSS.md)
+- [IMSIMSISDNSEG（IMSI和MSISDN号段）](configobject/UNC/20.15.2/IMSIMSISDNSEG.md)
+- [IMSISEGMENT（IMSI号码段）](configobject/UNC/20.15.2/IMSISEGMENT.md)
+- [IMSISMCHAR（QoS协商参数）](configobject/UNC/20.15.2/IMSISMCHAR.md)
+- [IMSIVLR（IMSI与VLR对应关系）](configobject/UNC/20.15.2/IMSIVLR.md)
+- [INHCTF（禁止访问NCG的CTF实例）](configobject/UNC/20.15.2/INHCTF.md)
+- [INNER2PROTCAUSE（内部原因值映射为协议原因值的配置）](configobject/UNC/20.15.2/INNER2PROTCAUSE.md)
+- [INNERFTPPWD（内部FTPS账号密码）](configobject/UNC/20.15.2/INNERFTPPWD.md)
+- [INTELAPN（可按携带智能分流关键词进行处理的APN）](configobject/UNC/20.15.2/INTELAPN.md)
+- [INTELLISUFFIX（智能业务后缀）](configobject/UNC/20.15.2/INTELLISUFFIX.md)
+- [INTERFACE（接口）](configobject/UNC/20.15.2/INTERFACE.md)
+- [INTERFACEIPSEC（接口）](configobject/UNC/20.15.2/INTERFACEIPSEC.md)
+- [INTFURPF（安全接口URPF）](configobject/UNC/20.15.2/INTFURPF.md)
+- [INTPDUPLCY（异网漫游PDU会话重建策略）](configobject/UNC/20.15.2/INTPDUPLCY.md)
+- [IPAREAAPN（IP区域APN网络标识）](configobject/UNC/20.15.2/IPAREAAPN.md)
+- [IPAREAGP（IP区域群）](configobject/UNC/20.15.2/IPAREAGP.md)
+- [IPAREAGPMEM（IP区域群成员）](configobject/UNC/20.15.2/IPAREAGPMEM.md)
+- [IPEN7SUFFIX（智能业务后缀）](configobject/UNC/20.15.2/IPEN7SUFFIX.md)
+- [IPGP（IP群组）](configobject/UNC/20.15.2/IPGP.md)
+- [IPOPTSECALL（IP全局选项安全配置）](configobject/UNC/20.15.2/IPOPTSECALL.md)
+- [IPOPTSECURITYIF（接口IP选项安全配置）](configobject/UNC/20.15.2/IPOPTSECURITYIF.md)
+- [IPRESOURCE（IP资源）](configobject/UNC/20.15.2/IPRESOURCE.md)
+- [IPRUREACH（RU到网关的可达性检测配置）](configobject/UNC/20.15.2/IPRUREACH.md)
+- [IPSAGING（IPS老化配置）](configobject/UNC/20.15.2/IPSAGING.md)
+- [IPSECINTFCFG（创建IPsec隧道接口）](configobject/UNC/20.15.2/IPSECINTFCFG.md)
+- [IPSECINTFCFGIPSEC（IPsec隧道接口）](configobject/UNC/20.15.2/IPSECINTFCFGIPSEC.md)
+- [IPSECPOLICY（IPsec策略）](configobject/UNC/20.15.2/IPSECPOLICY.md)
+- [IPSECPOLICY6（IPsec IPv6策略）](configobject/UNC/20.15.2/IPSECPOLICY6.md)
+- [IPSECPOLICYTM（IPsec策略模板）](configobject/UNC/20.15.2/IPSECPOLICYTM.md)
+- [IPSECPROPOSAL（IPsec提议）](configobject/UNC/20.15.2/IPSECPROPOSAL.md)
+- [IPSECPROPOSALIPSEC（IPsec提议）](configobject/UNC/20.15.2/IPSECPROPOSALIPSEC.md)
+- [IPSECSA（IPsec安全联盟）](configobject/UNC/20.15.2/IPSECSA.md)
+- [IPSELPLCY（IP地址选择策略）](configobject/UNC/20.15.2/IPSELPLCY.md)
+- [IPV4DNSH（IPV4 DNS Hostfile记录）](configobject/UNC/20.15.2/IPV4DNSH.md)
+- [IPV4GPMEM（IPv4群组成员）](configobject/UNC/20.15.2/IPV4GPMEM.md)
+- [IPV6DNSH（IPV6 DNS Hostfile记录）](configobject/UNC/20.15.2/IPV6DNSH.md)
+- [IPV6EXTHSECALL（IPv6扩展头选项安全配置）](configobject/UNC/20.15.2/IPV6EXTHSECALL.md)
+- [IPV6GPMEM（IPv6群组成员）](configobject/UNC/20.15.2/IPV6GPMEM.md)
+- [IPV6ICMPSECURITY（IPv6安全配置）](configobject/UNC/20.15.2/IPV6ICMPSECURITY.md)
+- [IPV6IFICMPSECURITY（接口下安全配置）](configobject/UNC/20.15.2/IPV6IFICMPSECURITY.md)
+- [IPV6PATHMTU（IPv6 Path MTU配置）](configobject/UNC/20.15.2/IPV6PATHMTU.md)
+- [IPV6PREFIXFILTERNODE（IPv6前缀过滤器节点）](configobject/UNC/20.15.2/IPV6PREFIXFILTERNODE.md)
+- [ISMFDFTQOSCTRL（I-SMF的Default QoS Flow配置）](configobject/UNC/20.15.2/ISMFDFTQOSCTRL.md)
+- [ISMFDNAI（I-SMF支持的DNAI）](configobject/UNC/20.15.2/ISMFDNAI.md)
+- [ISSUDIALTEST（拨测用户配置）](configobject/UNC/20.15.2/ISSUDIALTEST.md)
+- [IUACCAREALST（Iu模式区域漫游限制参数）](configobject/UNC/20.15.2/IUACCAREALST.md)
+- [IUARD（Iu模式接入限制参数）](configobject/UNC/20.15.2/IUARD.md)
+- [IUAUTHCIPH（Iu模式用户安全参数）](configobject/UNC/20.15.2/IUAUTHCIPH.md)
+- [IUIMEICFG（Iu模式IMEI配置）](configobject/UNC/20.15.2/IUIMEICFG.md)
+- [IULOCRPT（Iu模式实时小区位置订阅）](configobject/UNC/20.15.2/IULOCRPT.md)
+- [IUPAGING（Iu接口寻呼数据）](configobject/UNC/20.15.2/IUPAGING.md)
+- [IUPFAPNDPMODE（I-UPF在特定园区专用APN下的部署模式配置）](configobject/UNC/20.15.2/IUPFAPNDPMODE.md)
+- [IUREPLMN（3G重定向PLMN）](configobject/UNC/20.15.2/IUREPLMN.md)
+- [IUSUBRRLST（Iu模式用户漫游限制列表）](configobject/UNC/20.15.2/IUSUBRRLST.md)
+- [KEYCHAIN（Keychain的配置）](configobject/UNC/20.15.2/KEYCHAIN.md)
+- [KEYCHAINKEYID（Keychain Key ID的配置）](configobject/UNC/20.15.2/KEYCHAINKEYID.md)
+- [KEYPAIRLABEL（创建DSA/ECC密钥对标签）](configobject/UNC/20.15.2/KEYPAIRLABEL.md)
+- [L2FILTER（层二过滤器）](configobject/UNC/20.15.2/L2FILTER.md)
+- [L2RULE（层二规则）](configobject/UNC/20.15.2/L2RULE.md)
+- [L2RULEGROUP（层二规则组）](configobject/UNC/20.15.2/L2RULEGROUP.md)
+- [L3SERVICEDUALUPG（一个微服务迁移流程）](configobject/UNC/20.15.2/L3SERVICEDUALUPG.md)
+- [L3SERVICEUPG（服务升级进度）](configobject/UNC/20.15.2/L3SERVICEUPG.md)
+- [L3VPNINST（L3VPN实例）](configobject/UNC/20.15.2/L3VPNINST.md)
+- [L3VPNINSTIPSEC（L3VPN实例）](configobject/UNC/20.15.2/L3VPNINSTIPSEC.md)
+- [LACGROUP（LAC组）](configobject/UNC/20.15.2/LACGROUP.md)
+- [LACID（LAC组内绑定的LAC号段）](configobject/UNC/20.15.2/LACID.md)
+- [LADN（本地数据网络）](configobject/UNC/20.15.2/LADN.md)
+- [LAIVLR（LAI与VLR号对应关系）](configobject/UNC/20.15.2/LAIVLR.md)
+- [LAIVLRBLACKLIST（LAIVLR黑名单）](configobject/UNC/20.15.2/LAIVLRBLACKLIST.md)
+- [LARAGP（位置区群组）](configobject/UNC/20.15.2/LARAGP.md)
+- [LARAGPMEM（位置区群组成员）](configobject/UNC/20.15.2/LARAGPMEM.md)
+- [LBTRCRDTCFG（跟踪重定向）](configobject/UNC/20.15.2/LBTRCRDTCFG.md)
+- [LCKWHITELST（锁定白名单记录）](configobject/UNC/20.15.2/LCKWHITELST.md)
+- [LCSAPLNK（LCSAP链路配置）](configobject/UNC/20.15.2/LCSAPLNK.md)
+- [LCSPARAEX（LCS扩展参数）](configobject/UNC/20.15.2/LCSPARAEX.md)
+- [LCSPERMITCFG（定位服务权限配置）](configobject/UNC/20.15.2/LCSPERMITCFG.md)
+- [LDPAUTHGROUP（LDP认证组）](configobject/UNC/20.15.2/LDPAUTHGROUP.md)
+- [LDPFECLIST（FEC列表）](configobject/UNC/20.15.2/LDPFECLIST.md)
+- [LDPFECNODE（FEC节点）](configobject/UNC/20.15.2/LDPFECNODE.md)
+- [LDPIF（LDP接口）](configobject/UNC/20.15.2/LDPIF.md)
+- [LDPINSTANCE（LDP实例）](configobject/UNC/20.15.2/LDPINSTANCE.md)
+- [LDPPEERPOLICY（LDP邻居策略）](configobject/UNC/20.15.2/LDPPEERPOLICY.md)
+- [LDPREMOTEPEER（LDP远端邻居）](configobject/UNC/20.15.2/LDPREMOTEPEER.md)
+- [LINKMODULE（LinkModule表记录）](configobject/UNC/20.15.2/LINKMODULE.md)
+- [LLCXID（LLC协商参数）](configobject/UNC/20.15.2/LLCXID.md)
+- [LOCALAPNNIGP（本地APNNI组）](configobject/UNC/20.15.2/LOCALAPNNIGP.md)
+- [LOCALGGSN（本地GGSN列表）](configobject/UNC/20.15.2/LOCALGGSN.md)
+- [LOCALHLR（本地HLR）](configobject/UNC/20.15.2/LOCALHLR.md)
+- [LOCALHOSTGRP（Diameter本端主机组）](configobject/UNC/20.15.2/LOCALHOSTGRP.md)
+- [LOCALHSS（本地HSS）](configobject/UNC/20.15.2/LOCALHSS.md)
+- [LOCALNRI（本局NRI配置信息）](configobject/UNC/20.15.2/LOCALNRI.md)
+- [LOCALNSDNN（网络切片或DNN纠正配置）](configobject/UNC/20.15.2/LOCALNSDNN.md)
+- [LOCALOCSIP（本省OCS的IP号段）](configobject/UNC/20.15.2/LOCALOCSIP.md)
+- [LOCALUDMINSTID（本省UDM实例标识）](configobject/UNC/20.15.2/LOCALUDMINSTID.md)
+- [LOCCOMMPOLICY（本地Common Policy配置）](configobject/UNC/20.15.2/LOCCOMMPOLICY.md)
+- [LOCRPTCFG（位置上报配置信息）](configobject/UNC/20.15.2/LOCRPTCFG.md)
+- [LOCUPDQOS（本地更新QoS值）](configobject/UNC/20.15.2/LOCUPDQOS.md)
+- [LOGICINF（逻辑接口）](configobject/UNC/20.15.2/LOGICINF.md)
+- [LOGICIP（逻辑IP地址信息）](configobject/UNC/20.15.2/LOGICIP.md)
+- [LOWPRIDSCP（低优先级业务DSCP）](configobject/UNC/20.15.2/LOWPRIDSCP.md)
+- [M2MPLCY（M2M策略参数）](configobject/UNC/20.15.2/M2MPLCY.md)
+- [M2MSERVER（M2M服务器）](configobject/UNC/20.15.2/M2MSERVER.md)
+- [M2MSERVERGRP（M2M服务器组）](configobject/UNC/20.15.2/M2MSERVERGRP.md)
+- [M2MSIGCTRL（M2M信令控制配置）](configobject/UNC/20.15.2/M2MSIGCTRL.md)
+- [M2MUPGROUP（M2M关联的UPF组）](configobject/UNC/20.15.2/M2MUPGROUP.md)
+- [M3DE（M3UA目的实体）](configobject/UNC/20.15.2/M3DE.md)
+- [M3LE（M3UA本地实体）](configobject/UNC/20.15.2/M3LE.md)
+- [M3LKS（M3UA信令链路集）](configobject/UNC/20.15.2/M3LKS.md)
+- [M3LNK（M3UA信令链路）](configobject/UNC/20.15.2/M3LNK.md)
+- [M3RT（M3UA信令路由）](configobject/UNC/20.15.2/M3RT.md)
+- [MAPCMPTBYIMSI（MAP协议接口兼容性IMSI号段配置）](configobject/UNC/20.15.2/MAPCMPTBYIMSI.md)
+- [MAPGTFIXEDFC（VLR局向Map固定速率流控）](configobject/UNC/20.15.2/MAPGTFIXEDFC.md)
+- [MATCHASPATHFILTER（匹配AS路径过滤器）](configobject/UNC/20.15.2/MATCHASPATHFILTER.md)
+- [MATCHCOMMUNITYFILTER（匹配团体属性过滤器）](configobject/UNC/20.15.2/MATCHCOMMUNITYFILTER.md)
+- [MATCHCOST（Cost匹配路由策略）](configobject/UNC/20.15.2/MATCHCOST.md)
+- [MATCHDESTACL6（匹配IPv6地址ACL）](configobject/UNC/20.15.2/MATCHDESTACL6.md)
+- [MATCHDESTINATIONACL（目的IP地址基础ACL匹配路由策略）](configobject/UNC/20.15.2/MATCHDESTINATIONACL.md)
+- [MATCHDESTPREFIX6FILTER（匹配IPv6地址前缀列表）](configobject/UNC/20.15.2/MATCHDESTPREFIX6FILTER.md)
+- [MATCHDESTPREFIXFILTER（匹配IPv4地址前缀列表）](configobject/UNC/20.15.2/MATCHDESTPREFIXFILTER.md)
+- [MATCHEXTCOMMUNITYFILTER（匹配扩展团体属性过滤器）](configobject/UNC/20.15.2/MATCHEXTCOMMUNITYFILTER.md)
+- [MATCHINTERFACE（出接口匹配路由策略）](configobject/UNC/20.15.2/MATCHINTERFACE.md)
+- [MATCHNEXTHOPACL（下一跳基础ACL匹配路由策略）](configobject/UNC/20.15.2/MATCHNEXTHOPACL.md)
+- [MATCHNEXTHOPACL6（匹配IPv6下一跳地址ACL）](configobject/UNC/20.15.2/MATCHNEXTHOPACL6.md)
+- [MATCHNEXTHOPPREFIX6FILTER（匹配IPv6下一跳前缀列表）](configobject/UNC/20.15.2/MATCHNEXTHOPPREFIX6FILTER.md)
+- [MATCHNEXTHOPPREFIXFILTER（下一跳前缀匹配路由策略）](configobject/UNC/20.15.2/MATCHNEXTHOPPREFIXFILTER.md)
+- [MATCHPROTOCOL（路由协议匹配路由策略）](configobject/UNC/20.15.2/MATCHPROTOCOL.md)
+- [MATCHRDFILTER（匹配RD过滤器）](configobject/UNC/20.15.2/MATCHRDFILTER.md)
+- [MATCHROUTETYPE（路由类型匹配路由策略）](configobject/UNC/20.15.2/MATCHROUTETYPE.md)
+- [MATCHRTSRCACL（源路由基础ACL匹配路由策略）](configobject/UNC/20.15.2/MATCHRTSRCACL.md)
+- [MATCHRTSRCACL6（匹配IPv6源路由地址ACL）](configobject/UNC/20.15.2/MATCHRTSRCACL6.md)
+- [MATCHRTSRCPREFIX6FILTER（匹配IPv6路由源前缀列表）](configobject/UNC/20.15.2/MATCHRTSRCPREFIX6FILTER.md)
+- [MATCHRTSRCPREFIXFILTER（匹配路由源IP前缀）](configobject/UNC/20.15.2/MATCHRTSRCPREFIXFILTER.md)
+- [MATCHTAG（Tag匹配路由策略）](configobject/UNC/20.15.2/MATCHTAG.md)
+- [MCASTENABLE（组播使能配置）](configobject/UNC/20.15.2/MCASTENABLE.md)
+- [MCASTLOADSPLIT（组播负载分担配置）](configobject/UNC/20.15.2/MCASTLOADSPLIT.md)
+- [MCRDRNHP（组播报文重定向策略）](configobject/UNC/20.15.2/MCRDRNHP.md)
+- [MDTCTX（MDT上下文）](configobject/UNC/20.15.2/MDTCTX.md)
+- [MDTPLMN（基于管理的最小化路测的PLMN）](configobject/UNC/20.15.2/MDTPLMN.md)
+- [ME（网元信息）](configobject/UNC/20.15.2/ME.md)
+- [MEASTHRESHOLDRULE（话统阈值规则）](configobject/UNC/20.15.2/MEASTHRESHOLDRULE.md)
+- [MECAREA（5G MEC区域信息）](configobject/UNC/20.15.2/MECAREA.md)
+- [MECAREAGNB（5G MEC gNodeB信息）](configobject/UNC/20.15.2/MECAREAGNB.md)
+- [MECAREATAI（5G MEC TAI信息）](configobject/UNC/20.15.2/MECAREATAI.md)
+- [MGMDIF（IGMP接口配置）](configobject/UNC/20.15.2/MGMDIF.md)
+- [MGMDSITE（IGMP全局配置）](configobject/UNC/20.15.2/MGMDSITE.md)
+- [MGMDSSMAP（IGMP SSM映射配置）](configobject/UNC/20.15.2/MGMDSSMAP.md)
+- [MGMDSTATICGROUP（IGMP静态组配置）](configobject/UNC/20.15.2/MGMDSTATICGROUP.md)
+- [MK（更新主密钥）](configobject/UNC/20.15.2/MK.md)
+- [MMECAPBYTA（基于跟踪区的MME相对权重配置）](configobject/UNC/20.15.2/MMECAPBYTA.md)
+- [MMECHARACT（MME属性配置信息）](configobject/UNC/20.15.2/MMECHARACT.md)
+- [MMEGP（MME群组）](configobject/UNC/20.15.2/MMEGP.md)
+- [MMEGPMEM（MME群组成员）](configobject/UNC/20.15.2/MMEGPMEM.md)
+- [MMEID（MMEID配置）](configobject/UNC/20.15.2/MMEID.md)
+- [MMEIPTOMMEPOOL（MME IP）](configobject/UNC/20.15.2/MMEIPTOMMEPOOL.md)
+- [MMEPOOL（MME POOL）](configobject/UNC/20.15.2/MMEPOOL.md)
+- [MMERESELPLCY（MME重选策略）](configobject/UNC/20.15.2/MMERESELPLCY.md)
+- [MMESGSFIXEDFC（VLR局向Sgs固定速率流控）](configobject/UNC/20.15.2/MMESGSFIXEDFC.md)
+- [MMESHAREPLMN（MME的共享PLMN）](configobject/UNC/20.15.2/MMESHAREPLMN.md)
+- [MNCLEN（MNC长度信息）](configobject/UNC/20.15.2/MNCLEN.md)
+- [MNO（MNO配置信息）](configobject/UNC/20.15.2/MNO.md)
+- [MODULE（业务模块）](configobject/UNC/20.15.2/MODULE.md)
+- [MONVPN（监控VPN实例）](configobject/UNC/20.15.2/MONVPN.md)
+- [MPACIPV4RULE（IPv4 MPAC策略规则）](configobject/UNC/20.15.2/MPACIPV4RULE.md)
+- [MPACIPV6RULE（IPv6 MPAC策略规则）](configobject/UNC/20.15.2/MPACIPV6RULE.md)
+- [MPACV4POLICY（IPv4 MPAC策略）](configobject/UNC/20.15.2/MPACV4POLICY.md)
+- [MPACV6POLICY（IPv6 MPAC策略）](configobject/UNC/20.15.2/MPACV6POLICY.md)
+- [MPLSIF（MPLS接口）](configobject/UNC/20.15.2/MPLSIF.md)
+- [MQCBEHAVIOR（流行为）](configobject/UNC/20.15.2/MQCBEHAVIOR.md)
+- [MQCCLASSIFIER（流分类）](configobject/UNC/20.15.2/MQCCLASSIFIER.md)
+- [MQCPOLICY（流策略配置）](configobject/UNC/20.15.2/MQCPOLICY.md)
+- [MQCPOLICYNODE（流策略节点）](configobject/UNC/20.15.2/MQCPOLICYNODE.md)
+- [MRGRNC（融合RNC）](configobject/UNC/20.15.2/MRGRNC.md)
+- [MSCCRCACT（MSCC层异常返回码处理动作）](configobject/UNC/20.15.2/MSCCRCACT.md)
+- [MSCONTEXTS（所有MS上下文信息）](configobject/UNC/20.15.2/MSCONTEXTS.md)
+- [MSCOPC（MSC信令点）](configobject/UNC/20.15.2/MSCOPC.md)
+- [MSCPARA（MSC参数）](configobject/UNC/20.15.2/MSCPARA.md)
+- [MSISDNSUBGPMEM（MSISDN用户群成员）](configobject/UNC/20.15.2/MSISDNSUBGPMEM.md)
+- [MSISDNSUBGPMEMALL（所有MSISDN用户群成员）](configobject/UNC/20.15.2/MSISDNSUBGPMEMALL.md)
+- [MTSPOLICY（消息跟踪限制）](configobject/UNC/20.15.2/MTSPOLICY.md)
+- [MULDNNPRILIST（本地专网DNN就近接入优先级）](configobject/UNC/20.15.2/MULDNNPRILIST.md)
+- [MULDNNULCLMODE（智能分流ULCL部署模式）](configobject/UNC/20.15.2/MULDNNULCLMODE.md)
+- [MVNO（MVNO配置信息）](configobject/UNC/20.15.2/MVNO.md)
+- [MVNOFUN（MVNO功能配置信息）](configobject/UNC/20.15.2/MVNOFUN.md)
+- [MVNONET（MVNO网络配置信息）](configobject/UNC/20.15.2/MVNONET.md)
+- [MVNONETALL（所有MVNO网络配置信息）](configobject/UNC/20.15.2/MVNONETALL.md)
+- [MVNORES（MVNO资源配置信息）](configobject/UNC/20.15.2/MVNORES.md)
+- [N14N26INTOPPLCY（N14N26接口跨运营商交互策略）](configobject/UNC/20.15.2/N14N26INTOPPLCY.md)
+- [N26GWSELPLCY（N26融合网关选择策略）](configobject/UNC/20.15.2/N26GWSELPLCY.md)
+- [N26IWKPLCY（EPS与5GS互操作本地策略）](configobject/UNC/20.15.2/N26IWKPLCY.md)
+- [N26MMECHAR（N26接口MME属性）](configobject/UNC/20.15.2/N26MMECHAR.md)
+- [N2INFAMFINFO（AMF的N2接口信息）](configobject/UNC/20.15.2/N2INFAMFINFO.md)
+- [N2SCTPLNK（N2接口SCTP链路）](configobject/UNC/20.15.2/N2SCTPLNK.md)
+- [N2TACID（TAC组内绑定的N2TAC号段）](configobject/UNC/20.15.2/N2TACID.md)
+- [N40DIAGTRIGGER（N40去活原因的映射关系）](configobject/UNC/20.15.2/N40DIAGTRIGGER.md)
+- [N40MSGTEMP（N40消息属性模板）](configobject/UNC/20.15.2/N40MSGTEMP.md)
+- [N40UPFIDINUUID（N40接口非UUID格式与UUID格式的UPF实例标识的映射关系）](configobject/UNC/20.15.2/N40UPFIDINUUID.md)
+- [NCGALMSRV（告警服务器相关配置信息）](configobject/UNC/20.15.2/NCGALMSRV.md)
+- [NCGCHLMAP（话单通道一级目录类型映射表）](configobject/UNC/20.15.2/NCGCHLMAP.md)
+- [NCGFUNCTION（NCG功能实例信息）](configobject/UNC/20.15.2/NCGFUNCTION.md)
+- [NDIFRAROUTE（接口上ND RA路由配置信息）](configobject/UNC/20.15.2/NDIFRAROUTE.md)
+- [NDNEIGHBOR（静态ND邻居表项）](configobject/UNC/20.15.2/NDNEIGHBOR.md)
+- [NETWORK（网络查询）](configobject/UNC/20.15.2/NETWORK.md)
+- [NETWORKROUTE（引入路由指定前缀和掩码长度）](configobject/UNC/20.15.2/NETWORKROUTE.md)
+- [NFABILITY（配置NF的能力信息）](configobject/UNC/20.15.2/NFABILITY.md)
+- [NFDISCMGMTPARA（网元服务发现功能管理参数）](configobject/UNC/20.15.2/NFDISCMGMTPARA.md)
+- [NFDISCSCHEMEPLY（服务发现Scheme优选策略）](configobject/UNC/20.15.2/NFDISCSCHEMEPLY.md)
+- [NFDISCSRVLBSW（服务发现Service负载均衡功能）](configobject/UNC/20.15.2/NFDISCSRVLBSW.md)
+- [NFGPSIRANGE（NF GPSIRANGE信息）](configobject/UNC/20.15.2/NFGPSIRANGE.md)
+- [NFGROUP（NF组）](configobject/UNC/20.15.2/NFGROUP.md)
+- [NFGROUPID（NF群组信息）](configobject/UNC/20.15.2/NFGROUPID.md)
+- [NFGROUPMEM（NF组成员）](configobject/UNC/20.15.2/NFGROUPMEM.md)
+- [NFIMSI（IMSI号段）](configobject/UNC/20.15.2/NFIMSI.md)
+- [NFLOC（目标NF发现和选择的位置匹配信息）](configobject/UNC/20.15.2/NFLOC.md)
+- [NFMSISDN（MSISDN号段）](configobject/UNC/20.15.2/NFMSISDN.md)
+- [NFNS（NF支持的网络切片）](configobject/UNC/20.15.2/NFNS.md)
+- [NFPROFILE（NF实例概述信息）](configobject/UNC/20.15.2/NFPROFILE.md)
+- [NFREGNRF（本端NF和对端NRF实例的注册关系）](configobject/UNC/20.15.2/NFREGNRF.md)
+- [NFROUTEPLCY（NF路由策略）](configobject/UNC/20.15.2/NFROUTEPLCY.md)
+- [NFROUTINGIND（选路指示器）](configobject/UNC/20.15.2/NFROUTINGIND.md)
+- [NFSERVICE（NF服务实例）](configobject/UNC/20.15.2/NFSERVICE.md)
+- [NFSERVICEVER（NF服务版本信息）](configobject/UNC/20.15.2/NFSERVICEVER.md)
+- [NFSRVNTFSUBS（服务回调信息）](configobject/UNC/20.15.2/NFSRVNTFSUBS.md)
+- [NFSRVSCOPE（NF支持服务区信息）](configobject/UNC/20.15.2/NFSRVSCOPE.md)
+- [NFSUBS（NF的订阅上下文）](configobject/UNC/20.15.2/NFSUBS.md)
+- [NFSUPIRANGE（NF SUPIRANGE信息）](configobject/UNC/20.15.2/NFSUPIRANGE.md)
+- [NFTAI（NF TAI信息）](configobject/UNC/20.15.2/NFTAI.md)
+- [NFUUID（NF UUID信息）](configobject/UNC/20.15.2/NFUUID.md)
+- [NGACCAREALST（5G接入限制区域列表）](configobject/UNC/20.15.2/NGACCAREALST.md)
+- [NGACCCHRPRCTMPL（NG接入CHR流程控制模板）](configobject/UNC/20.15.2/NGACCCHRPRCTMPL.md)
+- [NGALGPRIORITY（5G算法优先级属性）](configobject/UNC/20.15.2/NGALGPRIORITY.md)
+- [NGAPLE（NGAP本端实体）](configobject/UNC/20.15.2/NGAPLE.md)
+- [NGAPPARA（NGAP协议参数）](configobject/UNC/20.15.2/NGAPPARA.md)
+- [NGAREARESELPLCY（AMF区域重选控制策略）](configobject/UNC/20.15.2/NGAREARESELPLCY.md)
+- [NGAREATZ（5G区域时区参数）](configobject/UNC/20.15.2/NGAREATZ.md)
+- [NGCAUSEMAP（5G原因值映射配置）](configobject/UNC/20.15.2/NGCAUSEMAP.md)
+- [NGCONNECTPLMN（5G Connect PLMN）](configobject/UNC/20.15.2/NGCONNECTPLMN.md)
+- [NGDNSLE（DNS本端实体）](configobject/UNC/20.15.2/NGDNSLE.md)
+- [NGDNSN（DNS NAPTR记录）](configobject/UNC/20.15.2/NGDNSN.md)
+- [NGDNSS（DNS服务器）](configobject/UNC/20.15.2/NGDNSS.md)
+- [NGEMGCFG（运营商紧急呼叫功能配置）](configobject/UNC/20.15.2/NGEMGCFG.md)
+- [NGEMGCNUM（紧急号码配置信息）](configobject/UNC/20.15.2/NGEMGCNUM.md)
+- [NGGUTISELPLCY（AMF区域GUTI选网控制策略）](configobject/UNC/20.15.2/NGGUTISELPLCY.md)
+- [NGHPLMN（5G Home PLMN）](configobject/UNC/20.15.2/NGHPLMN.md)
+- [NGIPAREADNN（5G IP区域DNN）](configobject/UNC/20.15.2/NGIPAREADNN.md)
+- [NGIPAREAGRP（5G IP区域群）](configobject/UNC/20.15.2/NGIPAREAGRP.md)
+- [NGIPAREAGRPMEM（5G IP区域群成员）](configobject/UNC/20.15.2/NGIPAREAGRPMEM.md)
+- [NGIPV4DNSH（IPv4 DNS Hostfile记录）](configobject/UNC/20.15.2/NGIPV4DNSH.md)
+- [NGIPV6DNSH（IPv6 DNS Hostfile记录）](configobject/UNC/20.15.2/NGIPV6DNSH.md)
+- [NGLANGROUP（5G LAN群组）](configobject/UNC/20.15.2/NGLANGROUP.md)
+- [NGLANGRPCTX（5G LAN组会话）](configobject/UNC/20.15.2/NGLANGRPCTX.md)
+- [NGLANUPNODE（指定实例名称的UPF节点特征）](configobject/UNC/20.15.2/NGLANUPNODE.md)
+- [NGM2MPLCY（5G M2M策略参数）](configobject/UNC/20.15.2/NGM2MPLCY.md)
+- [NGMDTPLMN（最小化路测的PLMN）](configobject/UNC/20.15.2/NGMDTPLMN.md)
+- [NGMMSUBDATA（用户移动性管理参数）](configobject/UNC/20.15.2/NGMMSUBDATA.md)
+- [NGMNO（5G模式移动网络运营商信息）](configobject/UNC/20.15.2/NGMNO.md)
+- [NGN26CAUSEMAP（5G N26接口原因值映射配置）](configobject/UNC/20.15.2/NGN26CAUSEMAP.md)
+- [NGNILRPARA（NI-LR功能参数）](configobject/UNC/20.15.2/NGNILRPARA.md)
+- [NGPAGINGARPPRI（基于ARP的Paging消息在流控期间放通的优先级）](configobject/UNC/20.15.2/NGPAGINGARPPRI.md)
+- [NGPAGINGDNNPRI（基于DNN的Paging消息在流控期间放通的优先级）](configobject/UNC/20.15.2/NGPAGINGDNNPRI.md)
+- [NGPAGINGPRIPLCY（5G寻呼优先级策略参数配置）](configobject/UNC/20.15.2/NGPAGINGPRIPLCY.md)
+- [NGPAGINGRULE（5G寻呼规则）](configobject/UNC/20.15.2/NGPAGINGRULE.md)
+- [NGPAGINGTMRPLCY（5G寻呼定时器策略配置）](configobject/UNC/20.15.2/NGPAGINGTMRPLCY.md)
+- [NGPARKPLCY（园区策略）](configobject/UNC/20.15.2/NGPARKPLCY.md)
+- [NGPEIGRPMEM（NG PEI组性能统计对象成员）](configobject/UNC/20.15.2/NGPEIGRPMEM.md)
+- [NGPEIPLCY（5G PEI策略）](configobject/UNC/20.15.2/NGPEIPLCY.md)
+- [NGPEIPSPLCY（基于分组的智能寻呼策略）](configobject/UNC/20.15.2/NGPEIPSPLCY.md)
+- [NGPRA（5G PRA）](configobject/UNC/20.15.2/NGPRA.md)
+- [NGPRAMEM（PRA位置区成员）](configobject/UNC/20.15.2/NGPRAMEM.md)
+- [NGPRDREGTIMEDNN（基于DNN的周期性注册时长配置）](configobject/UNC/20.15.2/NGPRDREGTIMEDNN.md)
+- [NGRANNEIBCFG（NG-RAN基站邻接关系配置）](configobject/UNC/20.15.2/NGRANNEIBCFG.md)
+- [NGSGWPLMN（SGW-C Home PLMN）](configobject/UNC/20.15.2/NGSGWPLMN.md)
+- [NGSRCHRCFG（AMF小范围CHR上报规则配置）](configobject/UNC/20.15.2/NGSRCHRCFG.md)
+- [NGSRVPLMN（5G Serving PLMN）](configobject/UNC/20.15.2/NGSRVPLMN.md)
+- [NGTAGP（5G TA群组）](configobject/UNC/20.15.2/NGTAGP.md)
+- [NGTAGPMEM（5G TA群组成员）](configobject/UNC/20.15.2/NGTAGPMEM.md)
+- [NGTAIGRPMEM（5G TAI组性能统计对象成员）](configobject/UNC/20.15.2/NGTAIGRPMEM.md)
+- [NGTALISTPAGINGCFG（N2模式TALIST寻呼不重发TAC区间）](configobject/UNC/20.15.2/NGTALISTPAGINGCFG.md)
+- [NGTALST（5G跟踪区列表）](configobject/UNC/20.15.2/NGTALST.md)
+- [NGTANEIBCFG（TA邻接关系配置）](configobject/UNC/20.15.2/NGTANEIBCFG.md)
+- [NGTAPAGINGPLCY（5G跟踪区列表的寻呼策略配置）](configobject/UNC/20.15.2/NGTAPAGINGPLCY.md)
+- [NGTZLST（5G多时区参数）](configobject/UNC/20.15.2/NGTZLST.md)
+- [NGUSERNUMCTRL（5G接入用户数控制参数）](configobject/UNC/20.15.2/NGUSERNUMCTRL.md)
+- [NGUSR（5G用户）](configobject/UNC/20.15.2/NGUSR.md)
+- [NGUSRGRP（5G用户群）](configobject/UNC/20.15.2/NGUSRGRP.md)
+- [NGUSRGRPMEM（5G用户群成员）](configobject/UNC/20.15.2/NGUSRGRPMEM.md)
+- [NGUSRSECPARA（5G用户安全配置）](configobject/UNC/20.15.2/NGUSRSECPARA.md)
+- [NGVOICEDEPLOY（5G语音部署配置）](configobject/UNC/20.15.2/NGVOICEDEPLOY.md)
+- [NITZPLCY（NITZ策略）](configobject/UNC/20.15.2/NITZPLCY.md)
+- [NOCENTCNCHL（RU通道过滤规则）](configobject/UNC/20.15.2/NOCENTCNCHL.md)
+- [NONIPSUBCTRL（Non-IP APNNI配置）](configobject/UNC/20.15.2/NONIPSUBCTRL.md)
+- [NONRAI（非广播RAI配置信息）](configobject/UNC/20.15.2/NONRAI.md)
+- [NRA（空路由区对照表）](configobject/UNC/20.15.2/NRA.md)
+- [NRF（测试服务发现的NF信息）](configobject/UNC/20.15.2/NRF.md)
+- [NRFADDR（NRF实例地址信息）](configobject/UNC/20.15.2/NRFADDR.md)
+- [NRFAMFREGIDRT（AMF区域标识路由）](configobject/UNC/20.15.2/NRFAMFREGIDRT.md)
+- [NRFAMFSETIDRT（AMF集合标识路由）](configobject/UNC/20.15.2/NRFAMFSETIDRT.md)
+- [NRFBSFDNNREL（BSF索引和DNN的关联关系）](configobject/UNC/20.15.2/NRFBSFDNNREL.md)
+- [NRFBSFINDEXRT（BSFINDEX路由）](configobject/UNC/20.15.2/NRFBSFINDEXRT.md)
+- [NRFBSFIPV4REL（BSF索引和IPv4的关联关系）](configobject/UNC/20.15.2/NRFBSFIPV4REL.md)
+- [NRFBSFIPV6REL（BSF索引和IPv6的关联关系）](configobject/UNC/20.15.2/NRFBSFIPV6REL.md)
+- [NRFCLIENTADDR（NRF实例客户端地址信息）](configobject/UNC/20.15.2/NRFCLIENTADDR.md)
+- [NRFDNAIRGNPREF（DNAI区域优选规则）](configobject/UNC/20.15.2/NRFDNAIRGNPREF.md)
+- [NRFDNNDNAIRT（DNN中数据网络访问标识最长后缀匹配转发路由）](configobject/UNC/20.15.2/NRFDNNDNAIRT.md)
+- [NRFDNNNIRGNPREF（DNNNI区域优选规则）](configobject/UNC/20.15.2/NRFDNNNIRGNPREF.md)
+- [NRFDNNNIRT（DNN中网络标识最长后缀匹配转发路由）](configobject/UNC/20.15.2/NRFDNNNIRT.md)
+- [NRFDNNRT（DNN路由）](configobject/UNC/20.15.2/NRFDNNRT.md)
+- [NRFFQDN（NRF的FQDN）](configobject/UNC/20.15.2/NRFFQDN.md)
+- [NRFFQDNRT（FQDN路由）](configobject/UNC/20.15.2/NRFFQDNRT.md)
+- [NRFFRCAVLNF（强制可用NF实例）](configobject/UNC/20.15.2/NRFFRCAVLNF.md)
+- [NRFFUNCTION（NRF功能实例信息）](configobject/UNC/20.15.2/NRFFUNCTION.md)
+- [NRFGRFWDADDR（备份NRF地址）](configobject/UNC/20.15.2/NRFGRFWDADDR.md)
+- [NRFGROUP（对端NRF实例组）](configobject/UNC/20.15.2/NRFGROUP.md)
+- [NRFGRPIDRT（NF组标识路由）](configobject/UNC/20.15.2/NRFGRPIDRT.md)
+- [NRFGUAMIRT（GUAMI路由）](configobject/UNC/20.15.2/NRFGUAMIRT.md)
+- [NRFIGNDISCPARA（NF服务发现忽略参数规则）](configobject/UNC/20.15.2/NRFIGNDISCPARA.md)
+- [NRFIMSDNN（IMS PCF的DNN）](configobject/UNC/20.15.2/NRFIMSDNN.md)
+- [NRFIMSIRT（IMSI号段路由）](configobject/UNC/20.15.2/NRFIMSIRT.md)
+- [NRFINSTRT（NF实例路由）](configobject/UNC/20.15.2/NRFINSTRT.md)
+- [NRFIPDOMAINREL（BSF索引和IP Domain的关联关系）](configobject/UNC/20.15.2/NRFIPDOMAINREL.md)
+- [NRFIPWHITELST（NF IP白名单）](configobject/UNC/20.15.2/NRFIPWHITELST.md)
+- [NRFKEY（NRF密钥）](configobject/UNC/20.15.2/NRFKEY.md)
+- [NRFMSISDNRT（MSISDN号段路由）](configobject/UNC/20.15.2/NRFMSISDNRT.md)
+- [NRFNFREGIONIP（IP与NF区域映射关系配置）](configobject/UNC/20.15.2/NRFNFREGIONIP.md)
+- [NRFNFTIMER（指定NF在NRF上的时长信息）](configobject/UNC/20.15.2/NRFNFTIMER.md)
+- [NRFNFTYPEFUNC（基于NFType设置NRF的各类功能开关）](configobject/UNC/20.15.2/NRFNFTYPEFUNC.md)
+- [NRFNFTYPERT（NF类型路由）](configobject/UNC/20.15.2/NRFNFTYPERT.md)
+- [NRFNOTNOTIFYNF（不通知NF实例）](configobject/UNC/20.15.2/NRFNOTNOTIFYNF.md)
+- [NRFNSDNNRT（DNN和网络切片路由）](configobject/UNC/20.15.2/NRFNSDNNRT.md)
+- [NRFNSRT（网络切片的路由）](configobject/UNC/20.15.2/NRFNSRT.md)
+- [NRFPARA（NRF协议参数）](configobject/UNC/20.15.2/NRFPARA.md)
+- [NRFPLMNHOMEPLY（指定拜访地PLMN的归属地策略）](configobject/UNC/20.15.2/NRFPLMNHOMEPLY.md)
+- [NRFPLMNNF（关口局NF信息）](configobject/UNC/20.15.2/NRFPLMNNF.md)
+- [NRFPLMNRT（PLMN路由）](configobject/UNC/20.15.2/NRFPLMNRT.md)
+- [NRFPLMNVISITPLY（指定归属地PLMN的拜访地策略）](configobject/UNC/20.15.2/NRFPLMNVISITPLY.md)
+- [NRFPMNINTERFUNC（基于对端PLMN国际漫游功能参数）](configobject/UNC/20.15.2/NRFPMNINTERFUNC.md)
+- [NRFPROXYSMF（NRF管理的ProxySMF）](configobject/UNC/20.15.2/NRFPROXYSMF.md)
+- [NRFREGIDSETIDREL（AMF区域标识和集合标识的关联关系）](configobject/UNC/20.15.2/NRFREGIDSETIDREL.md)
+- [NRFROUTINGINDRT（选路指示器路由）](configobject/UNC/20.15.2/NRFROUTINGINDRT.md)
+- [NRFSCPDOMAINRT（SCP Domain最长匹配后缀转发路由）](configobject/UNC/20.15.2/NRFSCPDOMAINRT.md)
+- [NRFSERVICELIST（NRF实例服务名称）](configobject/UNC/20.15.2/NRFSERVICELIST.md)
+- [NRFSETIDRT（NF Set ID最长匹配后缀转发路由）](configobject/UNC/20.15.2/NRFSETIDRT.md)
+- [NRFSMSFSEGLIST（SMSF号段白名单）](configobject/UNC/20.15.2/NRFSMSFSEGLIST.md)
+- [NRFSMSFWHITELST（SMSF白名单）](configobject/UNC/20.15.2/NRFSMSFWHITELST.md)
+- [NRFSRVSCOPERT（ServingScope路由）](configobject/UNC/20.15.2/NRFSRVSCOPERT.md)
+- [NRFTAIRT（TAI路由）](configobject/UNC/20.15.2/NRFTAIRT.md)
+- [NRFWHITELIST（NF白名单）](configobject/UNC/20.15.2/NRFWHITELIST.md)
+- [NRFWILDCARDATTR（分层互联通配属性）](configobject/UNC/20.15.2/NRFWILDCARDATTR.md)
+- [NRFWILDCARDSTRRT（分层互联信元字符串通配属性路由）](configobject/UNC/20.15.2/NRFWILDCARDSTRRT.md)
+- [NSACTRLPLCY（NSA控制策略）](configobject/UNC/20.15.2/NSACTRLPLCY.md)
+- [NSDNN（网络切片支持的DNN）](configobject/UNC/20.15.2/NSDNN.md)
+- [NSE（信令实体）](configobject/UNC/20.15.2/NSE.md)
+- [NSEALL（所有信令实体）](configobject/UNC/20.15.2/NSEALL.md)
+- [NSELST（NSE列表）](configobject/UNC/20.15.2/NSELST.md)
+- [NSEUSR（NSE列表下的用户）](configobject/UNC/20.15.2/NSEUSR.md)
+- [NSILIST（NF支持切片信息）](configobject/UNC/20.15.2/NSILIST.md)
+- [NSMAPPARABYPLMN（指定PLMN的网络切片映射参数）](configobject/UNC/20.15.2/NSMAPPARABYPLMN.md)
+- [NSSFCFGSUBSW（按签约NSSAI分配Configed NSSAI的PLMN级别开关）](configobject/UNC/20.15.2/NSSFCFGSUBSW.md)
+- [NSSFDFTAMFSET（默认AMF集所支持的S-NSSAI范围）](configobject/UNC/20.15.2/NSSFDFTAMFSET.md)
+- [NSSFDFTNSMAP（漫游切片默认映射配置）](configobject/UNC/20.15.2/NSSFDFTNSMAP.md)
+- [NSSFFUNCTION（NSSF功能实例信息）](configobject/UNC/20.15.2/NSSFFUNCTION.md)
+- [NSSFNSAVLINFO（切片可用性信息）](configobject/UNC/20.15.2/NSSFNSAVLINFO.md)
+- [NSSFROAMNSMAP（漫游切片映射配置）](configobject/UNC/20.15.2/NSSFROAMNSMAP.md)
+- [NSSFSERVICELIST（NSSF功能实例服务）](configobject/UNC/20.15.2/NSSFSERVICELIST.md)
+- [NTPSVR（NTP服务器）](configobject/UNC/20.15.2/NTPSVR.md)
+- [NWDAFINFO（NWDAF信息）](configobject/UNC/20.15.2/NWDAFINFO.md)
+- [NWDAFINFOEXT（NWDAF扩展信息）](configobject/UNC/20.15.2/NWDAFINFOEXT.md)
+- [NWNAMEBYHSS（不发送运营商名称的HSS）](configobject/UNC/20.15.2/NWNAMEBYHSS.md)
+- [OCS](configobject/UNC/20.15.2/OCS.md)
+- [OCSGROUP（Ocs组）](configobject/UNC/20.15.2/OCSGROUP.md)
+- [OFCSRVTEMPLATE（离线业务模板）](configobject/UNC/20.15.2/OFCSRVTEMPLATE.md)
+- [OFCTEMPLATE（离线计费模板）](configobject/UNC/20.15.2/OFCTEMPLATE.md)
+- [OFFICEFCPARA（指定NF的流控参数）](configobject/UNC/20.15.2/OFFICEFCPARA.md)
+- [OMFWDRT（OM转发路由）](configobject/UNC/20.15.2/OMFWDRT.md)
+- [OMNWCONF（OM网络探测参数）](configobject/UNC/20.15.2/OMNWCONF.md)
+- [OP（本地用户属性）](configobject/UNC/20.15.2/OP.md)
+- [OPMMETRIC（话统指标优化公式）](configobject/UNC/20.15.2/OPMMETRIC.md)
+- [OSPF（OSPF进程配置）](configobject/UNC/20.15.2/OSPF.md)
+- [OSPFABRSUMMARY（区域内路由聚合配置）](configobject/UNC/20.15.2/OSPFABRSUMMARY.md)
+- [OSPFAREA（OSPF区域配置）](configobject/UNC/20.15.2/OSPFAREA.md)
+- [OSPFAREAAUTH（OSPF区域认证配置）](configobject/UNC/20.15.2/OSPFAREAAUTH.md)
+- [OSPFAREAFILTER（区域过滤策略配置）](configobject/UNC/20.15.2/OSPFAREAFILTER.md)
+- [OSPFASBRSUMMARY（引入路由聚合配置）](configobject/UNC/20.15.2/OSPFASBRSUMMARY.md)
+- [OSPFDEFAULTROUTE（OSPF默认宣告路由配置）](configobject/UNC/20.15.2/OSPFDEFAULTROUTE.md)
+- [OSPFDNBITSET（DN比特位配置）](configobject/UNC/20.15.2/OSPFDNBITSET.md)
+- [OSPFDNSUMRTID（创建特定路由器禁止检查Summary-LSA的DN比特位配置）](configobject/UNC/20.15.2/OSPFDNSUMRTID.md)
+- [OSPFDOMAINID（创建OSPF域标识配置）](configobject/UNC/20.15.2/OSPFDOMAINID.md)
+- [OSPFFILTERPOLICY（OSPF过滤策略配置）](configobject/UNC/20.15.2/OSPFFILTERPOLICY.md)
+- [OSPFFRR（OSPF IP FRR配置）](configobject/UNC/20.15.2/OSPFFRR.md)
+- [OSPFGTSM（OSPF的GTSM配置）](configobject/UNC/20.15.2/OSPFGTSM.md)
+- [OSPFHOSTNAME（OSPF主机名配置）](configobject/UNC/20.15.2/OSPFHOSTNAME.md)
+- [OSPFIMPORTROUTE（OSPF引入路由配置）](configobject/UNC/20.15.2/OSPFIMPORTROUTE.md)
+- [OSPFINTERFACE（OSPF接口配置）](configobject/UNC/20.15.2/OSPFINTERFACE.md)
+- [OSPFINTERFACEAUTH（OSPF接口认证配置）](configobject/UNC/20.15.2/OSPFINTERFACEAUTH.md)
+- [OSPFNETWORK（OSPF运行的接口及所属区域）](configobject/UNC/20.15.2/OSPFNETWORK.md)
+- [OSPFNEXTHOP（OSPF等价路由优先级配置）](configobject/UNC/20.15.2/OSPFNEXTHOP.md)
+- [OSPFPEER（OSPF的NBMA网络邻居路由器配置）](configobject/UNC/20.15.2/OSPFPEER.md)
+- [OSPFPREFERENCE（OSPF协议路由的优先级配置）](configobject/UNC/20.15.2/OSPFPREFERENCE.md)
+- [OSPFPROUTPRIORITY（OSPF路由的收敛优先级配置）](configobject/UNC/20.15.2/OSPFPROUTPRIORITY.md)
+- [OSPFV3（OSPFv3进程配置）](configobject/UNC/20.15.2/OSPFV3.md)
+- [OSPFV3ABRSUMMARY（OSPFv3区域内路由聚合配置）](configobject/UNC/20.15.2/OSPFV3ABRSUMMARY.md)
+- [OSPFV3AREA（OSPFv3区域配置）](configobject/UNC/20.15.2/OSPFV3AREA.md)
+- [OSPFV3AREAAUTH（OSPFv3区域认证配置）](configobject/UNC/20.15.2/OSPFV3AREAAUTH.md)
+- [OSPFV3AREAFILTER（OSPFv3区域过滤LSA配置）](configobject/UNC/20.15.2/OSPFV3AREAFILTER.md)
+- [OSPFV3ASBRSUMMARY（OSPFv3引入路由聚合配置）](configobject/UNC/20.15.2/OSPFV3ASBRSUMMARY.md)
+- [OSPFV3AUTH（OSPFv3认证配置）](configobject/UNC/20.15.2/OSPFV3AUTH.md)
+- [OSPFV3DEFAULTROUTE（OSPFv3默认路由宣告配置）](configobject/UNC/20.15.2/OSPFV3DEFAULTROUTE.md)
+- [OSPFV3DOMAINID（创建OSPFv3域标识符配置）](configobject/UNC/20.15.2/OSPFV3DOMAINID.md)
+- [OSPFV3FILTERPOLICY（OSPFv3过滤策略配置）](configobject/UNC/20.15.2/OSPFV3FILTERPOLICY.md)
+- [OSPFV3FRR（OSPFv3 IP FRR配置）](configobject/UNC/20.15.2/OSPFV3FRR.md)
+- [OSPFV3GTSM（OSPFv3 GTSM配置）](configobject/UNC/20.15.2/OSPFV3GTSM.md)
+- [OSPFV3HOSTNAME（OSPFv3主机名配置）](configobject/UNC/20.15.2/OSPFV3HOSTNAME.md)
+- [OSPFV3IFIPSECSA（创建OSPFv3 接口的安全联盟SA）](configobject/UNC/20.15.2/OSPFV3IFIPSECSA.md)
+- [OSPFV3IMPORTROUTE（OSPFv3引入路由配置）](configobject/UNC/20.15.2/OSPFV3IMPORTROUTE.md)
+- [OSPFV3INTERFACE（OSPFv3接口配置）](configobject/UNC/20.15.2/OSPFV3INTERFACE.md)
+- [OSPFV3INTERFACEAUTH（OSPFv3接口认证配置）](configobject/UNC/20.15.2/OSPFV3INTERFACEAUTH.md)
+- [OSPFV3PREFERENCE（OSPFv3路由优先级配置）](configobject/UNC/20.15.2/OSPFV3PREFERENCE.md)
+- [OSPFV3PRIFIXPRIORITY（OSPFv3路由收敛优先级配置）](configobject/UNC/20.15.2/OSPFV3PRIFIXPRIORITY.md)
+- [PACKAGE（软件包）](configobject/UNC/20.15.2/PACKAGE.md)
+- [PAEPERFMODE（配置表中的PAE性能模式）](configobject/UNC/20.15.2/PAEPERFMODE.md)
+- [PAEPORTGATEWAY（PAE端口网关信息）](configobject/UNC/20.15.2/PAEPORTGATEWAY.md)
+- [PATCH（补丁）](configobject/UNC/20.15.2/PATCH.md)
+- [PBUFREUSE5GC（pbuf重用检测开关设置）](configobject/UNC/20.15.2/PBUFREUSE5GC.md)
+- [PCCBYPASSCODE（PCC故障场景维持BYPASS状态码配置）](configobject/UNC/20.15.2/PCCBYPASSCODE.md)
+- [PCCCHGMODEBYPCFID（基于PCF的计费策略接口类型）](configobject/UNC/20.15.2/PCCCHGMODEBYPCFID.md)
+- [PCCPOLICYGRP（PCC策略组）](configobject/UNC/20.15.2/PCCPOLICYGRP.md)
+- [PCCTEMPLATE（PCC模板）](configobject/UNC/20.15.2/PCCTEMPLATE.md)
+- [PCCUSRFLOWCTRL（流控策略）](configobject/UNC/20.15.2/PCCUSRFLOWCTRL.md)
+- [PCFSELPLCY（PCF选择策略）](configobject/UNC/20.15.2/PCFSELPLCY.md)
+- [PCFSSCOPE（PCF的业务服务区）](configobject/UNC/20.15.2/PCFSSCOPE.md)
+- [PCFSSCOPEALL（所有的PCF的业务服务区）](configobject/UNC/20.15.2/PCFSSCOPEALL.md)
+- [PCRF](configobject/UNC/20.15.2/PCRF.md)
+- [PCRFGROUP（PCRF组）](configobject/UNC/20.15.2/PCRFGROUP.md)
+- [PCRFGRPBNDAPN（APN和Pcrf组关联关系）](configobject/UNC/20.15.2/PCRFGRPBNDAPN.md)
+- [PCSCFGROUP（P-CSCF组配置）](configobject/UNC/20.15.2/PCSCFGROUP.md)
+- [PCSCFGRPBNDAPN（APN和P-CSCF组关联关系）](configobject/UNC/20.15.2/PCSCFGRPBNDAPN.md)
+- [PCSCFIMSISDNSEG（IMSI和MSISDN号段）](configobject/UNC/20.15.2/PCSCFIMSISDNSEG.md)
+- [PCSCFIP（P-CSCF地址配置）](configobject/UNC/20.15.2/PCSCFIP.md)
+- [PCSCFRESTOPLCY（P-CSCF故障恢复策略）](configobject/UNC/20.15.2/PCSCFRESTOPLCY.md)
+- [PDP（承载上下文）](configobject/UNC/20.15.2/PDP.md)
+- [PDPAPN（本地APN NI配置）](configobject/UNC/20.15.2/PDPAPN.md)
+- [PDPFILTERAPN（APN优先级配置）](configobject/UNC/20.15.2/PDPFILTERAPN.md)
+- [PDPNUMBERARP（基于PDP数的ARP控制）](configobject/UNC/20.15.2/PDPNUMBERARP.md)
+- [PDUACTCTRL（PDU会话激活控制参数）](configobject/UNC/20.15.2/PDUACTCTRL.md)
+- [PDUSCACT（PDU异常返回码动作）](configobject/UNC/20.15.2/PDUSCACT.md)
+- [PDUTRIGGER（PDU会话级的trigger参数）](configobject/UNC/20.15.2/PDUTRIGGER.md)
+- [PEERNFIPLIST（对端局向连接列表）](configobject/UNC/20.15.2/PEERNFIPLIST.md)
+- [PEERPLMN（对等PLMN配置）](configobject/UNC/20.15.2/PEERPLMN.md)
+- [PEERPUBLICKEY（对端公钥）](configobject/UNC/20.15.2/PEERPUBLICKEY.md)
+- [PERFDNAI（用于性能统计的数据网络访问标识信息）](configobject/UNC/20.15.2/PERFDNAI.md)
+- [PERFDNN（DNN性能统计对象）](configobject/UNC/20.15.2/PERFDNN.md)
+- [PERFEPRPDYN（EpRpDyn性能统计对象）](configobject/UNC/20.15.2/PERFEPRPDYN.md)
+- [PERFEPRPDYNIP（EpRpDyn对象的IP地址）](configobject/UNC/20.15.2/PERFEPRPDYNIP.md)
+- [PERFGBPAGING（Gb接口寻呼数据）](configobject/UNC/20.15.2/PERFGBPAGING.md)
+- [PERFMULTIDNN（MultiDNN性能统计对象）](configobject/UNC/20.15.2/PERFMULTIDNN.md)
+- [PERFNGLANGRP（用于性能统计的5G LAN群组）](configobject/UNC/20.15.2/PERFNGLANGRP.md)
+- [PERFNGPEIGRP（NG PEI组性能统计对象）](configobject/UNC/20.15.2/PERFNGPEIGRP.md)
+- [PERFNGTAIGROUP（NG TAI组性能统计对象）](configobject/UNC/20.15.2/PERFNGTAIGROUP.md)
+- [PERFNS（切片性能统计对象）](configobject/UNC/20.15.2/PERFNS.md)
+- [PERFNSADDRPOOL（切片地址池性能统计对象）](configobject/UNC/20.15.2/PERFNSADDRPOOL.md)
+- [PERFNSE（NSE标识）](configobject/UNC/20.15.2/PERFNSE.md)
+- [PERFOBJ（性能对象信息）](configobject/UNC/20.15.2/PERFOBJ.md)
+- [PERFOBJRULE（性能对象规则）](configobject/UNC/20.15.2/PERFOBJRULE.md)
+- [PERFPEERNF（NF局向性能统计对象）](configobject/UNC/20.15.2/PERFPEERNF.md)
+- [PERFREGAPN（区域和APN性能统计对象）](configobject/UNC/20.15.2/PERFREGAPN.md)
+- [PERFREGION（区域性能统计对象）](configobject/UNC/20.15.2/PERFREGION.md)
+- [PERFREGTAC（区域性能统计对象和TAC段的绑定关系）](configobject/UNC/20.15.2/PERFREGTAC.md)
+- [PERFRPTRANGE（性能指标上报范围）](configobject/UNC/20.15.2/PERFRPTRANGE.md)
+- [PERFS1TACSEG（S1TAC段）](configobject/UNC/20.15.2/PERFS1TACSEG.md)
+- [PERFSLCADDRPOOL（切片地址池性能统计对象）](configobject/UNC/20.15.2/PERFSLCADDRPOOL.md)
+- [PERFTAIGROUP（TAI组性能统计对象）](configobject/UNC/20.15.2/PERFTAIGROUP.md)
+- [PERFTAIGROUPMEM（TAI组性能统计对象成员）](configobject/UNC/20.15.2/PERFTAIGROUPMEM.md)
+- [PGWCHARACT（P-GW特性对接配置）](configobject/UNC/20.15.2/PGWCHARACT.md)
+- [PGWESTNSR（E-STN-SR和PGW关系配置表）](configobject/UNC/20.15.2/PGWESTNSR.md)
+- [PGWGROUP（P-GW组）](configobject/UNC/20.15.2/PGWGROUP.md)
+- [PGWHOSTNAME（逻辑接口的PGW主机名）](configobject/UNC/20.15.2/PGWHOSTNAME.md)
+- [PGWNODE（P-GW局向）](configobject/UNC/20.15.2/PGWNODE.md)
+- [PGWRESEL（本地P-GW重选策略）](configobject/UNC/20.15.2/PGWRESEL.md)
+- [PGWRNSI（PGW重定向配置）](configobject/UNC/20.15.2/PGWRNSI.md)
+- [PIMIF（PIM接口配置）](configobject/UNC/20.15.2/PIMIF.md)
+- [PIMSITE（PIM全局配置）](configobject/UNC/20.15.2/PIMSITE.md)
+- [PIMSTATICRP（PIM静态RP配置）](configobject/UNC/20.15.2/PIMSTATICRP.md)
+- [PLCYNSGRP（用于策略控制的网络切片群组）](configobject/UNC/20.15.2/PLCYNSGRP.md)
+- [PLCYNSGRPMEM（用于策略控制的网络切片群组成员）](configobject/UNC/20.15.2/PLCYNSGRPMEM.md)
+- [PLGPKG（扩展包）](configobject/UNC/20.15.2/PLGPKG.md)
+- [PLMNMATCH（MCC与MNC的归属关系）](configobject/UNC/20.15.2/PLMNMATCH.md)
+- [PLMNNS（网络切片）](configobject/UNC/20.15.2/PLMNNS.md)
+- [PNFALLOWDOMAIN（对端NF允许的域名信息）](configobject/UNC/20.15.2/PNFALLOWDOMAIN.md)
+- [PNFALLOWEDNFNS（对端NF允许的切片信息）](configobject/UNC/20.15.2/PNFALLOWEDNFNS.md)
+- [PNFALLOWEDPLMN（对端NF允许的PLMN信息）](configobject/UNC/20.15.2/PNFALLOWEDPLMN.md)
+- [PNFAMFINFO（对端AMF信息）](configobject/UNC/20.15.2/PNFAMFINFO.md)
+- [PNFDISCPLCY（对端NF的服务发现策略）](configobject/UNC/20.15.2/PNFDISCPLCY.md)
+- [PNFDNAI（对端NF的DNAI信息）](configobject/UNC/20.15.2/PNFDNAI.md)
+- [PNFDNN（对端NF的DNN信息）](configobject/UNC/20.15.2/PNFDNN.md)
+- [PNFEXGROUPID（对端NF的外部群组信息）](configobject/UNC/20.15.2/PNFEXGROUPID.md)
+- [PNFGMLCINFO（对端GMLC信息）](configobject/UNC/20.15.2/PNFGMLCINFO.md)
+- [PNFGPSI（对端NF的GPSI信息）](configobject/UNC/20.15.2/PNFGPSI.md)
+- [PNFGROUPID（对端NF的群组信息）](configobject/UNC/20.15.2/PNFGROUPID.md)
+- [PNFGUAMI（对端AMF的GUAMI信息）](configobject/UNC/20.15.2/PNFGUAMI.md)
+- [PNFLMFINFO（对端LMF信息）](configobject/UNC/20.15.2/PNFLMFINFO.md)
+- [PNFNS（对端NF的切片信息）](configobject/UNC/20.15.2/PNFNS.md)
+- [PNFNSILST（对端NF实例网络切片标识）](configobject/UNC/20.15.2/PNFNSILST.md)
+- [PNFNWDAFEVENT（对端NWDAF信息）](configobject/UNC/20.15.2/PNFNWDAFEVENT.md)
+- [PNFPCFINFO（对端PCF信息）](configobject/UNC/20.15.2/PNFPCFINFO.md)
+- [PNFPLMN（对端NF的PLMN信息）](configobject/UNC/20.15.2/PNFPLMN.md)
+- [PNFPLMNRANGE（对端NF的PLMN范围）](configobject/UNC/20.15.2/PNFPLMNRANGE.md)
+- [PNFPROFILE（对端NF实例概述信息）](configobject/UNC/20.15.2/PNFPROFILE.md)
+- [PNFROUTEIND（对端NF的路由指示信息）](configobject/UNC/20.15.2/PNFROUTEIND.md)
+- [PNFSERVICE（对端NF服务实例信息）](configobject/UNC/20.15.2/PNFSERVICE.md)
+- [PNFSERVICEVER（对端NF的服务实例的版本信息）](configobject/UNC/20.15.2/PNFSERVICEVER.md)
+- [PNFSLCTSSCOPE（选择对端NF时使用的业务服务区）](configobject/UNC/20.15.2/PNFSLCTSSCOPE.md)
+- [PNFSMFINFO（对端SMF的信息）](configobject/UNC/20.15.2/PNFSMFINFO.md)
+- [PNFSMFSERAREA（对端NF的SMF服务区域信息）](configobject/UNC/20.15.2/PNFSMFSERAREA.md)
+- [PNFSRVNTFSUBS（对端NF服务实例的回调信息）](configobject/UNC/20.15.2/PNFSRVNTFSUBS.md)
+- [PNFSRVSCOPE（对端NF的服务区信息）](configobject/UNC/20.15.2/PNFSRVSCOPE.md)
+- [PNFSUPI（对端NF的SUPI信息）](configobject/UNC/20.15.2/PNFSUPI.md)
+- [PNFTAI（对端NF的TAI信息）](configobject/UNC/20.15.2/PNFTAI.md)
+- [PNFTAIRANGE（对端NF的TAI范围）](configobject/UNC/20.15.2/PNFTAIRANGE.md)
+- [PNFUPFINFO（对端UPF信息）](configobject/UNC/20.15.2/PNFUPFINFO.md)
+- [PNFWILDCARD（对端NF的通配策略）](configobject/UNC/20.15.2/PNFWILDCARD.md)
+- [PODALMTH（POD资源告警阈值）](configobject/UNC/20.15.2/PODALMTH.md)
+- [PODBLACKLIST（Pod自愈黑名单）](configobject/UNC/20.15.2/PODBLACKLIST.md)
+- [PODHEALCPUTHR（对应PODTYPE下的阈值配置）](configobject/UNC/20.15.2/PODHEALCPUTHR.md)
+- [PODISOBLKLIST（Pod隔离黑名单）](configobject/UNC/20.15.2/PODISOBLKLIST.md)
+- [POOL（POOL配置信息）](configobject/UNC/20.15.2/POOL.md)
+- [POOLGRPMAP（地址池组映射关系）](configobject/UNC/20.15.2/POOLGRPMAP.md)
+- [POOLLA（POOL LA配置信息）](configobject/UNC/20.15.2/POOLLA.md)
+- [POOLNRI（POOL区NRI配置信息）](configobject/UNC/20.15.2/POOLNRI.md)
+- [PORTGROUP（端口组）](configobject/UNC/20.15.2/PORTGROUP.md)
+- [PORTGROUPMEMBER（端口组成员）](configobject/UNC/20.15.2/PORTGROUPMEMBER.md)
+- [PRAID（PRA标识）](configobject/UNC/20.15.2/PRAID.md)
+- [PRALSTMEM（PRA列表成员）](configobject/UNC/20.15.2/PRALSTMEM.md)
+- [PREFIXFILTERNODE（IPv4地址前缀列表过滤器节点）](configobject/UNC/20.15.2/PREFIXFILTERNODE.md)
+- [PRER8QOSACTION（Pre-R8 QoS控制动作配置）](configobject/UNC/20.15.2/PRER8QOSACTION.md)
+- [PRER8REMARK（Pre-R8 QoS到TOS/DSCP的映射规则）](configobject/UNC/20.15.2/PRER8REMARK.md)
+- [PRER8SUBQOS（Pre-R8签约QoS配置）](configobject/UNC/20.15.2/PRER8SUBQOS.md)
+- [PRIMSIMSISDNG（代理IMSI/MSISDN号段组）](configobject/UNC/20.15.2/PRIMSIMSISDNG.md)
+- [PRIMSIMSISDNSEG（代理IMSI/MSISDN号段）](configobject/UNC/20.15.2/PRIMSIMSISDNSEG.md)
+- [PROCLMTPLCY（流程限制策略）](configobject/UNC/20.15.2/PROCLMTPLCY.md)
+- [PROFILESPACE（Profile Space）](configobject/UNC/20.15.2/PROFILESPACE.md)
+- [PROPATTACHIPSECPROPOSAL（IPsec策略绑定提议）](configobject/UNC/20.15.2/PROPATTACHIPSECPROPOSAL.md)
+- [PROXYSGWACCLIST（Proxy SGW-C接入控制列表）](configobject/UNC/20.15.2/PROXYSGWACCLIST.md)
+- [PROXYSMFACCLIST（Proxy SMF接入控制列表）](configobject/UNC/20.15.2/PROXYSMFACCLIST.md)
+- [PROXYSMFCTRL（proxy SMF控制）](configobject/UNC/20.15.2/PROXYSMFCTRL.md)
+- [PSCSHSS（联合接入HSS白名单）](configobject/UNC/20.15.2/PSCSHSS.md)
+- [PSCSIMSI（联合接入IMSI白名单）](configobject/UNC/20.15.2/PSCSIMSI.md)
+- [PUBLICAPNNI（公共APN NI配置）](configobject/UNC/20.15.2/PUBLICAPNNI.md)
+- [PWD（在线用户自身密码）](configobject/UNC/20.15.2/PWD.md)
+- [PWDBLACKLIST（密码禁用词）](configobject/UNC/20.15.2/PWDBLACKLIST.md)
+- [QBCPDUTRIGGER（QBC计费PDU会话级的trigger参数）](configobject/UNC/20.15.2/QBCPDUTRIGGER.md)
+- [QBCQOSFTRIGGER（QBC计费QoS Flow级的trigger参数）](configobject/UNC/20.15.2/QBCQOSFTRIGGER.md)
+- [QCICONV（扩展QCI转换关系）](configobject/UNC/20.15.2/QCICONV.md)
+- [QCIPAGINGINFO（QCI寻呼策略参数配置）](configobject/UNC/20.15.2/QCIPAGINGINFO.md)
+- [QOS5QI2QCIMAP（5QI到QCI的映射）](configobject/UNC/20.15.2/QOS5QI2QCIMAP.md)
+- [QOSACTRDRNHP（QoS重定向下一跳信息）](configobject/UNC/20.15.2/QOSACTRDRNHP.md)
+- [QOSACTRDRPOLICY（流行为下级联流策略）](configobject/UNC/20.15.2/QOSACTRDRPOLICY.md)
+- [QOSAPPLICATION（流策略）](configobject/UNC/20.15.2/QOSAPPLICATION.md)
+- [QOSCAP（Non-GBR承载QoS限制配置）](configobject/UNC/20.15.2/QOSCAP.md)
+- [QOSCAPBY5QI（基于5QI的QosFlow QoS限制配置。）](configobject/UNC/20.15.2/QOSCAPBY5QI.md)
+- [QOSCAPBYQCI（基于QCI的Non-GBR承载QoS限制配置）](configobject/UNC/20.15.2/QOSCAPBYQCI.md)
+- [QOSCAPGBR（GBR承载QoS限制配置）](configobject/UNC/20.15.2/QOSCAPGBR.md)
+- [QOSCAPWHITEAPNS（不受SMFQOSCAP配置控制的APN白名单列表。）](configobject/UNC/20.15.2/QOSCAPWHITEAPNS.md)
+- [QOSCHARS（QoS特征）](configobject/UNC/20.15.2/QOSCHARS.md)
+- [QOSDIFFERSERV（DS域）](configobject/UNC/20.15.2/QOSDIFFERSERV.md)
+- [QOSIFPHB（禁止QoS优先级映射的类型）](configobject/UNC/20.15.2/QOSIFPHB.md)
+- [QOSIFTRUST（QoS接口信任）](configobject/UNC/20.15.2/QOSIFTRUST.md)
+- [QOSMONTRULE（QoS监测规则）](configobject/UNC/20.15.2/QOSMONTRULE.md)
+- [QOSPLCYBYAPN（基于APN的QoS策略）](configobject/UNC/20.15.2/QOSPLCYBYAPN.md)
+- [QOSPROFILE（QoS描述配置）](configobject/UNC/20.15.2/QOSPROFILE.md)
+- [QOSPROP（QoS属性）](configobject/UNC/20.15.2/QOSPROP.md)
+- [QOSRDRVPN（QoS重定向VPN）](configobject/UNC/20.15.2/QOSRDRVPN.md)
+- [QOSRDRWLRFLOW（WLR引流重定向）](configobject/UNC/20.15.2/QOSRDRWLRFLOW.md)
+- [QOSRULEACL（流分类下删除ACL规则组）](configobject/UNC/20.15.2/QOSRULEACL.md)
+- [QOSTRANS（签约QoS转换配置）](configobject/UNC/20.15.2/QOSTRANS.md)
+- [QUOTAEXHAUSTACT（配额耗尽后的动作）](configobject/UNC/20.15.2/QUOTAEXHAUSTACT.md)
+- [RACGROUP（RAC组）](configobject/UNC/20.15.2/RACGROUP.md)
+- [RACID（RAC组内绑定的RAC号段）](configobject/UNC/20.15.2/RACID.md)
+- [RADIUSCLIENTIP（Radius Group Client IP接口）](configobject/UNC/20.15.2/RADIUSCLIENTIP.md)
+- [RADIUSNASIP（RADIUS NAS IP）](configobject/UNC/20.15.2/RADIUSNASIP.md)
+- [RAPAGINGRULE（基于路由区的寻呼参数设置）](configobject/UNC/20.15.2/RAPAGINGRULE.md)
+- [RCAPLKS（注册中心链路集）](configobject/UNC/20.15.2/RCAPLKS.md)
+- [RCAPLNK（注册中心链路）](configobject/UNC/20.15.2/RCAPLNK.md)
+- [RCENTER（注册中心）](configobject/UNC/20.15.2/RCENTER.md)
+- [RDFILTERNODE（RD路由过滤节点）](configobject/UNC/20.15.2/RDFILTERNODE.md)
+- [RDSACCTATTTEMP（计费消息属性模板）](configobject/UNC/20.15.2/RDSACCTATTTEMP.md)
+- [RDSPFCPCTX（RADIUS中转UPF会话上下文）](configobject/UNC/20.15.2/RDSPFCPCTX.md)
+- [RDSSVR（RADIUS服务器）](configobject/UNC/20.15.2/RDSSVR.md)
+- [RDSSVRGRP（Radius服务器组）](configobject/UNC/20.15.2/RDSSVRGRP.md)
+- [RDSTRING（RD字符）](configobject/UNC/20.15.2/RDSTRING.md)
+- [RDSUPFCTRL（RADIUS服务器的UP列表中指定UP的功能属性）](configobject/UNC/20.15.2/RDSUPFCTRL.md)
+- [RECOVERY（本端重启次数）](configobject/UNC/20.15.2/RECOVERY.md)
+- [REGNFINSTANCE（NF实例）](configobject/UNC/20.15.2/REGNFINSTANCE.md)
+- [REGNFPROFILETBLREC（注册NF的Profile表记录）](configobject/UNC/20.15.2/REGNFPROFILETBLREC.md)
+- [REGNFSUBINFO（订阅信息）](configobject/UNC/20.15.2/REGNFSUBINFO.md)
+- [REMINDTIME（证书到期提醒时间）](configobject/UNC/20.15.2/REMINDTIME.md)
+- [RESELAREACODE（AMF重选功能区域编码）](configobject/UNC/20.15.2/RESELAREACODE.md)
+- [RESELAREAMEM（AMF重选功能区域成员）](configobject/UNC/20.15.2/RESELAREAMEM.md)
+- [RESELECTUPCAUSE（重选UPF故障原因值）](configobject/UNC/20.15.2/RESELECTUPCAUSE.md)
+- [RESERVEDCMD（补丁预留配置）](configobject/UNC/20.15.2/RESERVEDCMD.md)
+- [RESERVEDIP（预留IP资源）](configobject/UNC/20.15.2/RESERVEDIP.md)
+- [RESERVEDMOC1（补丁预留MOC1）](configobject/UNC/20.15.2/RESERVEDMOC1.md)
+- [RESERVEDMOC2（补丁预留MOC2）](configobject/UNC/20.15.2/RESERVEDMOC2.md)
+- [RESERVEDMOC3（补丁预留MOC3）](configobject/UNC/20.15.2/RESERVEDMOC3.md)
+- [RESTOAPN（容灾APN特征参数）](configobject/UNC/20.15.2/RESTOAPN.md)
+- [RESTOUSR（容灾用户特征参数）](configobject/UNC/20.15.2/RESTOUSR.md)
+- [RESTOUSRSEG（容灾用户号段参数）](configobject/UNC/20.15.2/RESTOUSRSEG.md)
+- [RESTRICTSNSSAI（受限的S-NSSAI）](configobject/UNC/20.15.2/RESTRICTSNSSAI.md)
+- [RESULTCODECTRL（返回码控制）](configobject/UNC/20.15.2/RESULTCODECTRL.md)
+- [RESULTCODEDRA（DRA返回码控制）](configobject/UNC/20.15.2/RESULTCODEDRA.md)
+- [RESULTCODESCP（配置MODELC/D组网的SCP原因码控制）](configobject/UNC/20.15.2/RESULTCODESCP.md)
+- [RFSP（RFSP配置）](configobject/UNC/20.15.2/RFSP.md)
+- [RGINFO（费率组信息）](configobject/UNC/20.15.2/RGINFO.md)
+- [RGRCACT（RG级异常返回码处理动作）](configobject/UNC/20.15.2/RGRCACT.md)
+- [RGTRIGGER（RG级的trigger参数）](configobject/UNC/20.15.2/RGTRIGGER.md)
+- [RNC（Iu接口RNC信息）](configobject/UNC/20.15.2/RNC.md)
+- [ROAMCHGMODE（基于漫游属性的计费接口选择方式）](configobject/UNC/20.15.2/ROAMCHGMODE.md)
+- [ROAMINSUPIWL（漫入场景SUPI白名单）](configobject/UNC/20.15.2/ROAMINSUPIWL.md)
+- [ROAMSCPFUNCSW（漫游跨PLMN场景间接路由配置）](configobject/UNC/20.15.2/ROAMSCPFUNCSW.md)
+- [ROUTEPOLICY（路由策略）](configobject/UNC/20.15.2/ROUTEPOLICY.md)
+- [ROUTEPOLICYNODE（路由策略节点）](configobject/UNC/20.15.2/ROUTEPOLICYNODE.md)
+- [ROUTINGBEHINDMS（手机后路由配置）](configobject/UNC/20.15.2/ROUTINGBEHINDMS.md)
+- [ROUTINGBEHMSALL（所有手机后路由配置）](configobject/UNC/20.15.2/ROUTINGBEHMSALL.md)
+- [RRCINACTPLCY（RRC Inactive策略）](configobject/UNC/20.15.2/RRCINACTPLCY.md)
+- [RRCINACTTAI（RRC Inactive生效的TAI范围）](configobject/UNC/20.15.2/RRCINACTTAI.md)
+- [RSAKEYPAIRLABEL（创建RSA密钥对标签）](configobject/UNC/20.15.2/RSAKEYPAIRLABEL.md)
+- [RSNRULE（RSN规则）](configobject/UNC/20.15.2/RSNRULE.md)
+- [RSTRNSAREACODE（TA级切片限制区域码）](configobject/UNC/20.15.2/RSTRNSAREACODE.md)
+- [RSTRNSAREAMEM（TA级限制切片所属跟踪区成员）](configobject/UNC/20.15.2/RSTRNSAREAMEM.md)
+- [RUCONVERGENCE（汇聚RU信息）](configobject/UNC/20.15.2/RUCONVERGENCE.md)
+- [RULE（规则）](configobject/UNC/20.15.2/RULE.md)
+- [S11INTFSUBNET（S11接口子网配置）](configobject/UNC/20.15.2/S11INTFSUBNET.md)
+- [S1ACCAREALST（S1模式接入控制配置）](configobject/UNC/20.15.2/S1ACCAREALST.md)
+- [S1ALGPRIORITY（S1模式加密和完整性算法优先级配置信息）](configobject/UNC/20.15.2/S1ALGPRIORITY.md)
+- [S1APLE（S1AP本地实体）](configobject/UNC/20.15.2/S1APLE.md)
+- [S1APLNK（S1AP连接）](configobject/UNC/20.15.2/S1APLNK.md)
+- [S1ARD（S1模式接入限制参数）](configobject/UNC/20.15.2/S1ARD.md)
+- [S1IMEICFG（S1模式IMEI配置）](configobject/UNC/20.15.2/S1IMEICFG.md)
+- [S1LOCRPT（S1模式实时小区位置订阅）](configobject/UNC/20.15.2/S1LOCRPT.md)
+- [S1PAGINGRULE（S1寻呼规则）](configobject/UNC/20.15.2/S1PAGINGRULE.md)
+- [S1PAGINGRULEALL（所有S1寻呼规则）](configobject/UNC/20.15.2/S1PAGINGRULEALL.md)
+- [S1SMARTRULE（S1模式信令抑制规则）](configobject/UNC/20.15.2/S1SMARTRULE.md)
+- [S1SUBRRLST（S1模式用户漫游限制列表）](configobject/UNC/20.15.2/S1SUBRRLST.md)
+- [S1TACID（TAC组内绑定的S1TAC号段）](configobject/UNC/20.15.2/S1TACID.md)
+- [S1UBLACKLST（S1-U IP地址黑名单记录）](configobject/UNC/20.15.2/S1UBLACKLST.md)
+- [S1USRSECPARA（S1模式用户安全配置）](configobject/UNC/20.15.2/S1USRSECPARA.md)
+- [SAIGEO（服务区标识与地理坐标对照关系）](configobject/UNC/20.15.2/SAIGEO.md)
+- [SBCAPLE（SBCAP本地实体）](configobject/UNC/20.15.2/SBCAPLE.md)
+- [SBCAPLNK（SBc链路）](configobject/UNC/20.15.2/SBCAPLNK.md)
+- [SBCMME（SBC MME实体）](configobject/UNC/20.15.2/SBCMME.md)
+- [SBIALLOWSERV（基于服务的白名单）](configobject/UNC/20.15.2/SBIALLOWSERV.md)
+- [SBIAPLE（服务化接口本端实体）](configobject/UNC/20.15.2/SBIAPLE.md)
+- [SBIDIALTEST（间接路由拨测用户配置）](configobject/UNC/20.15.2/SBIDIALTEST.md)
+- [SBIFQDNPORTPLCY（FQDN端口策略）](configobject/UNC/20.15.2/SBIFQDNPORTPLCY.md)
+- [SBILINKCFG（SBI接口链路属性配置）](configobject/UNC/20.15.2/SBILINKCFG.md)
+- [SBILINKSET（服务化接口链路集）](configobject/UNC/20.15.2/SBILINKSET.md)
+- [SBILINKSETPROP（SBI链路集策略）](configobject/UNC/20.15.2/SBILINKSETPROP.md)
+- [SBINRFKEY（NRF密钥）](configobject/UNC/20.15.2/SBINRFKEY.md)
+- [SCALELOADMON（自动扩缩容监测的虚机资源）](configobject/UNC/20.15.2/SCALELOADMON.md)
+- [SCCPDPC（SCCP目的信令点）](configobject/UNC/20.15.2/SCCPDPC.md)
+- [SCCPDPCSHR（DPC多点负荷分担记录）](configobject/UNC/20.15.2/SCCPDPCSHR.md)
+- [SCCPGT（SCCP全局翻译码）](configobject/UNC/20.15.2/SCCPGT.md)
+- [SCCPNGT（SCCP新全局翻译码）](configobject/UNC/20.15.2/SCCPNGT.md)
+- [SCCPOPC（SCCP本局信令点）](configobject/UNC/20.15.2/SCCPOPC.md)
+- [SCCPSSN（SCCP子系统）](configobject/UNC/20.15.2/SCCPSSN.md)
+- [SCEF（SCEF配置）](configobject/UNC/20.15.2/SCEF.md)
+- [SCNDGWSELPLCY（相同APN建立多个PDP/PDN连接的网关选择策略）](configobject/UNC/20.15.2/SCNDGWSELPLCY.md)
+- [SCTPASSOC（SCTP耦联信息）](configobject/UNC/20.15.2/SCTPASSOC.md)
+- [SCTPENDPOINT（SCTP端点）](configobject/UNC/20.15.2/SCTPENDPOINT.md)
+- [SCTPLE（SCTP本地实体）](configobject/UNC/20.15.2/SCTPLE.md)
+- [SCTPLEGRP（SCTP本地实体组）](configobject/UNC/20.15.2/SCTPLEGRP.md)
+- [SCTPPARA（SCTP协议参数）](configobject/UNC/20.15.2/SCTPPARA.md)
+- [SCTPTEMPLATE（SCTP模板）](configobject/UNC/20.15.2/SCTPTEMPLATE.md)
+- [SDAPLE（SDAP本地实体）](configobject/UNC/20.15.2/SDAPLE.md)
+- [SECAUTHMEM（二次授权命令）](configobject/UNC/20.15.2/SECAUTHMEM.md)
+- [SECPOLICY（防攻击策略）](configobject/UNC/20.15.2/SECPOLICY.md)
+- [SECPOLICYACL（安全策略ACL规则）](configobject/UNC/20.15.2/SECPOLICYACL.md)
+- [SECPOLICYALARM（安全策略告警配置）](configobject/UNC/20.15.2/SECPOLICYALARM.md)
+- [SECPOLICYCAR（安全防攻击CAR规则）](configobject/UNC/20.15.2/SECPOLICYCAR.md)
+- [SECPOLICYCFG（应用防攻击策略）](configobject/UNC/20.15.2/SECPOLICYCFG.md)
+- [SECPOLICYPROSEQ（安全策略匹配顺序）](configobject/UNC/20.15.2/SECPOLICYPROSEQ.md)
+- [SECTION（地址段）](configobject/UNC/20.15.2/SECTION.md)
+- [SEGBLACKLIST（导入号段黑名单）](configobject/UNC/20.15.2/SEGBLACKLIST.md)
+- [SEGDATA（号段数据）](configobject/UNC/20.15.2/SEGDATA.md)
+- [SEGFILENOTIFY（号段文件通知记录）](configobject/UNC/20.15.2/SEGFILENOTIFY.md)
+- [SEGFILEPUBKEY（号段配置文件的签名验证公钥）](configobject/UNC/20.15.2/SEGFILEPUBKEY.md)
+- [SELCHFGBIMSISEG（IMSI号段与CHF组的绑定关系）](configobject/UNC/20.15.2/SELCHFGBIMSISEG.md)
+- [SELCHFGBYIMSI（IMSI与CHF组的绑定关系）](configobject/UNC/20.15.2/SELCHFGBYIMSI.md)
+- [SELECTCCTBYCC（基于CC配置融合计费模板处理）](configobject/UNC/20.15.2/SELECTCCTBYCC.md)
+- [SELECTCHFGBYCC（基于CC选择CHF处理）](configobject/UNC/20.15.2/SELECTCHFGBYCC.md)
+- [SELECTRULEINFO（UPF选择规则信息）](configobject/UNC/20.15.2/SELECTRULEINFO.md)
+- [SERVICEIP（业务IP）](configobject/UNC/20.15.2/SERVICEIP.md)
+- [SERVICEIPMCR（业务IP）](configobject/UNC/20.15.2/SERVICEIPMCR.md)
+- [SERVICEPROP（业务属性）](configobject/UNC/20.15.2/SERVICEPROP.md)
+- [SERVUSR（模拟设备故障删除用户信息）](configobject/UNC/20.15.2/SERVUSR.md)
+- [SESSNCHRPRCTMPL（会话CHR流程控制模板）](configobject/UNC/20.15.2/SESSNCHRPRCTMPL.md)
+- [SFCPARA（SFC参数）](configobject/UNC/20.15.2/SFCPARA.md)
+- [SFELBHASH（IP转发负载分担hash计算模式）](configobject/UNC/20.15.2/SFELBHASH.md)
+- [SFELOADALARM（组件侧转发过载告警参数）](configobject/UNC/20.15.2/SFELOADALARM.md)
+- [SFGAPLE（SFGAP本端实体）](configobject/UNC/20.15.2/SFGAPLE.md)
+- [SGSLKS（SGs链路集）](configobject/UNC/20.15.2/SGSLKS.md)
+- [SGSLNK（SGs链路）](configobject/UNC/20.15.2/SGSLNK.md)
+- [SGSMME（SGS MME实体）](configobject/UNC/20.15.2/SGSMME.md)
+- [SGSNCHARACT（GnGp SGSN属性配置信息）](configobject/UNC/20.15.2/SGSNCHARACT.md)
+- [SGSNDNS（SGSN DNS域名策略）](configobject/UNC/20.15.2/SGSNDNS.md)
+- [SGSNIPNUM（SGSN控制面IP地址与SGSN号码对应关系）](configobject/UNC/20.15.2/SGSNIPNUM.md)
+- [SGSRLKS（SGS服务端链路集）](configobject/UNC/20.15.2/SGSRLKS.md)
+- [SGSRLNK（SGS服务端链路）](configobject/UNC/20.15.2/SGSRLNK.md)
+- [SGWCHARACT（S-GW特性对接配置）](configobject/UNC/20.15.2/SGWCHARACT.md)
+- [SGWCHGMETH（SGW Charge Method）](configobject/UNC/20.15.2/SGWCHGMETH.md)
+- [SGWCID（SGW-C网络标识符）](configobject/UNC/20.15.2/SGWCID.md)
+- [SGWDNS（S-GW DNS域名策略）](configobject/UNC/20.15.2/SGWDNS.md)
+- [SGWIPTOSGWPOOL（SGW IP）](configobject/UNC/20.15.2/SGWIPTOSGWPOOL.md)
+- [SGWPOOL（SGW POOL）](configobject/UNC/20.15.2/SGWPOOL.md)
+- [SGWSEGGCHGMETH（SGW IMSI/MSISDN Group Charge Method）](configobject/UNC/20.15.2/SGWSEGGCHGMETH.md)
+- [SGWSELPLCY（S-GW选择策略）](configobject/UNC/20.15.2/SGWSELPLCY.md)
+- [SHAREPLMNGP（共享PLMN群组）](configobject/UNC/20.15.2/SHAREPLMNGP.md)
+- [SHAREPLMNMEM（共享PLMN群组成员）](configobject/UNC/20.15.2/SHAREPLMNMEM.md)
+- [SLICEINSTINFO（服务支持的切片实例）](configobject/UNC/20.15.2/SLICEINSTINFO.md)
+- [SMACTCTRL（激活过程控制参数）](configobject/UNC/20.15.2/SMACTCTRL.md)
+- [SMACTIMEILIB（IMEI库记录）](configobject/UNC/20.15.2/SMACTIMEILIB.md)
+- [SMARTACT（激活抑制规则）](configobject/UNC/20.15.2/SMARTACT.md)
+- [SMARTAPN（APN智能分流配置）](configobject/UNC/20.15.2/SMARTAPN.md)
+- [SMARTDT（基于终端类型的DT限制）](configobject/UNC/20.15.2/SMARTDT.md)
+- [SMCAUSEGRP（SM原因值映射组配置）](configobject/UNC/20.15.2/SMCAUSEGRP.md)
+- [SMCAUSEMAP（SM原因值映射配置）](configobject/UNC/20.15.2/SMCAUSEMAP.md)
+- [SMCTX（承载上下文）](configobject/UNC/20.15.2/SMCTX.md)
+- [SMFADDRLOCWL（位置区域地址分配用户白名单）](configobject/UNC/20.15.2/SMFADDRLOCWL.md)
+- [SMFALLOWED5QIS（5G用户允许的5QI列表）](configobject/UNC/20.15.2/SMFALLOWED5QIS.md)
+- [SMFALLOWEDARPS（5G用户允许的ARP列表）](configobject/UNC/20.15.2/SMFALLOWEDARPS.md)
+- [SMFAPNDLBUFTIME（APN的下行报文缓存时长配置）](configobject/UNC/20.15.2/SMFAPNDLBUFTIME.md)
+- [SMFAPNGRP（DNS关联的APN组的描述信息）](configobject/UNC/20.15.2/SMFAPNGRP.md)
+- [SMFAPNGRPMEM（APN和DNS关联的APN组的绑定关系）](configobject/UNC/20.15.2/SMFAPNGRPMEM.md)
+- [SMFCAUSECTRL（SMF流程控制参数）](configobject/UNC/20.15.2/SMFCAUSECTRL.md)
+- [SMFCONFLICTRULE（冲突规则）](configobject/UNC/20.15.2/SMFCONFLICTRULE.md)
+- [SMFDIALTEST（SMF拨测用户配置）](configobject/UNC/20.15.2/SMFDIALTEST.md)
+- [SMFEMGCFG（运营商紧急呼叫会话功能配置）](configobject/UNC/20.15.2/SMFEMGCFG.md)
+- [SMFFUNCTION（SMF功能实例信息）](configobject/UNC/20.15.2/SMFFUNCTION.md)
+- [SMFIEADAPTER（信元携带控制配置）](configobject/UNC/20.15.2/SMFIEADAPTER.md)
+- [SMFINFO（SMF信息）](configobject/UNC/20.15.2/SMFINFO.md)
+- [SMFINFOEXT（SMF扩展信息）](configobject/UNC/20.15.2/SMFINFOEXT.md)
+- [SMFNONDFTQOSCTL（SMF的非Default QoS Flow配置）](configobject/UNC/20.15.2/SMFNONDFTQOSCTL.md)
+- [SMFPDUREACT（跨区域PDU会话重建策略）](configobject/UNC/20.15.2/SMFPDUREACT.md)
+- [SMFPRESELBYIMSI（基于IMSI优选指定SMF配置）](configobject/UNC/20.15.2/SMFPRESELBYIMSI.md)
+- [SMFQOSCAP（QosFlow QoS限制的配置）](configobject/UNC/20.15.2/SMFQOSCAP.md)
+- [SMFRESEL（本地SMF重选策略）](configobject/UNC/20.15.2/SMFRESEL.md)
+- [SMFSELPLCY（SMF选择策略）](configobject/UNC/20.15.2/SMFSELPLCY.md)
+- [SMFSELUDM（SMF选择UDM策略）](configobject/UNC/20.15.2/SMFSELUDM.md)
+- [SMFSERVICELIST（特定SMF功能实例服务名）](configobject/UNC/20.15.2/SMFSERVICELIST.md)
+- [SMSCBLACKLIST（SMSC黑名单记录）](configobject/UNC/20.15.2/SMSCBLACKLIST.md)
+- [SMSCCONVERT（SMSC转换配置记录）](configobject/UNC/20.15.2/SMSCCONVERT.md)
+- [SMSCGT（SMSC的GT）](configobject/UNC/20.15.2/SMSCGT.md)
+- [SMSCHRPRCTMPL（SMS CHR流程控制模板）](configobject/UNC/20.15.2/SMSCHRPRCTMPL.md)
+- [SMSCTX（用户的SMS上下文）](configobject/UNC/20.15.2/SMSCTX.md)
+- [SMSFFUNCTION（SMSF功能实例信息）](configobject/UNC/20.15.2/SMSFFUNCTION.md)
+- [SMSFKEYDATA（用户的SMSF关键信息）](configobject/UNC/20.15.2/SMSFKEYDATA.md)
+- [SMSFOPC（SMSF本局信令点）](configobject/UNC/20.15.2/SMSFOPC.md)
+- [SMSFSELPLCY（SMSF选择策略）](configobject/UNC/20.15.2/SMSFSELPLCY.md)
+- [SMSSRCHRCFG（SMS小范围CHR上报规则配置）](configobject/UNC/20.15.2/SMSSRCHRCFG.md)
+- [SMSUBDATA（签约数据纠正参数）](configobject/UNC/20.15.2/SMSUBDATA.md)
+- [SOFTWARE（下载软件仓软件）](configobject/UNC/20.15.2/SOFTWARE.md)
+- [SPCTLLI（特殊随机TLLI配置）](configobject/UNC/20.15.2/SPCTLLI.md)
+- [SPECIFICAPNVAL（用户APN与消息交互使用APN的映射关系）](configobject/UNC/20.15.2/SPECIFICAPNVAL.md)
+- [SPECRFSPVALUE（特征RFSP取值）](configobject/UNC/20.15.2/SPECRFSPVALUE.md)
+- [SPGWCAUSECTRL（SGW-C/PGW-C原因值控制参数）](configobject/UNC/20.15.2/SPGWCAUSECTRL.md)
+- [SQOSCAR（流行为CAR配置）](configobject/UNC/20.15.2/SQOSCAR.md)
+- [SQOSRDRVPNGROUP（QoS重定向VPN组）](configobject/UNC/20.15.2/SQOSRDRVPNGROUP.md)
+- [SQOSREMARK（重标记配置）](configobject/UNC/20.15.2/SQOSREMARK.md)
+- [SQOSURPF（流行为安全URPF）](configobject/UNC/20.15.2/SQOSURPF.md)
+- [SQOSVPNGROUP（VPN组）](configobject/UNC/20.15.2/SQOSVPNGROUP.md)
+- [SQOSVPNGROUPMEM（VPN组成员）](configobject/UNC/20.15.2/SQOSVPNGROUPMEM.md)
+- [SRANGECHRCFG（小范围CHR生成规则）](configobject/UNC/20.15.2/SRANGECHRCFG.md)
+- [SRBFDPARA6（IPv6 BFD模板）](configobject/UNC/20.15.2/SRBFDPARA6.md)
+- [SRBFDTEMPLET（BFD模板）](configobject/UNC/20.15.2/SRBFDTEMPLET.md)
+- [SRROUTE（IPv4静态路由）](configobject/UNC/20.15.2/SRROUTE.md)
+- [SRROUTE6（IPv6静态路由）](configobject/UNC/20.15.2/SRROUTE6.md)
+- [SRVAREARES（本地服务区域限制）](configobject/UNC/20.15.2/SRVAREARES.md)
+- [SRVCCLMTPLCY（SRVCC流程限制策略）](configobject/UNC/20.15.2/SRVCCLMTPLCY.md)
+- [SRVHANDOVER（业务切换策略）](configobject/UNC/20.15.2/SRVHANDOVER.md)
+- [SRVNODEGROUP（服务节点组）](configobject/UNC/20.15.2/SRVNODEGROUP.md)
+- [SRVNODEIP（服务节点IP）](configobject/UNC/20.15.2/SRVNODEIP.md)
+- [SRVNODEPLMN（SGSN/SGW/PGW地址段和PLMN标识之间的映射关系）](configobject/UNC/20.15.2/SRVNODEPLMN.md)
+- [SRVNODERAT（SGSN/SGW IP与RAT类型间的映射关系）](configobject/UNC/20.15.2/SRVNODERAT.md)
+- [SRVPARA（业务参数配置）](configobject/UNC/20.15.2/SRVPARA.md)
+- [STATICASN（静态ASN）](configobject/UNC/20.15.2/STATICASN.md)
+- [STATICWTPOLICY（服务类型在POD实例下的静态权重）](configobject/UNC/20.15.2/STATICWTPOLICY.md)
+- [STDQOSID（标准QoS ID配置）](configobject/UNC/20.15.2/STDQOSID.md)
+- [STRINGMK（字符串类型Monitoring-Key）](configobject/UNC/20.15.2/STRINGMK.md)
+- [STRMATCHPLCY（字符串匹配策略）](configobject/UNC/20.15.2/STRMATCHPLCY.md)
+- [SUBCONDITION（NF订阅条件）](configobject/UNC/20.15.2/SUBCONDITION.md)
+- [SUBGP（用户群）](configobject/UNC/20.15.2/SUBGP.md)
+- [SUBGPMEM（用户群成员）](configobject/UNC/20.15.2/SUBGPMEM.md)
+- [SUBSCRIBERIDSEGGRP（IMSI/MSISDN/IMEISV号段组）](configobject/UNC/20.15.2/SUBSCRIBERIDSEGGRP.md)
+- [SUBSMARTAPN（智能分流APN）](configobject/UNC/20.15.2/SUBSMARTAPN.md)
+- [SUBSMARTDNN（智能分流DNN）](configobject/UNC/20.15.2/SUBSMARTDNN.md)
+- [SUBUPIPDOMAIN（当前UPF扩展类型绑定的IP域）](configobject/UNC/20.15.2/SUBUPIPDOMAIN.md)
+- [SUFFIXLAIAREA（UPF服务区名称以LAC后缀方式绑定的LAI范围）](configobject/UNC/20.15.2/SUFFIXLAIAREA.md)
+- [SUFFIXS1TAIAREA（UPF服务区名称以TAC后缀方式绑定的S1TAI范围）](configobject/UNC/20.15.2/SUFFIXS1TAIAREA.md)
+- [SYSLOGTASK（上报任务）](configobject/UNC/20.15.2/SYSLOGTASK.md)
+- [TACGROUP（TAC组）](configobject/UNC/20.15.2/TACGROUP.md)
+- [TACGROUPINNSSF（跟踪区域码分组记录）](configobject/UNC/20.15.2/TACGROUPINNSSF.md)
+- [TACRANGE（NF TAC区域信息）](configobject/UNC/20.15.2/TACRANGE.md)
+- [TACSHAREPLMN（基于区域的PLMN管理）](configobject/UNC/20.15.2/TACSHAREPLMN.md)
+- [TAGP（TA群组）](configobject/UNC/20.15.2/TAGP.md)
+- [TAGPMEM（TA群组成员）](configobject/UNC/20.15.2/TAGPMEM.md)
+- [TAICIOT（CIoT能力配置）](configobject/UNC/20.15.2/TAICIOT.md)
+- [TAILAI（TAI与LAI对应关系）](configobject/UNC/20.15.2/TAILAI.md)
+- [TAIRANGELIST（NF TAI区域信息）](configobject/UNC/20.15.2/TAIRANGELIST.md)
+- [TALISTPAGINGCFG（TALIST寻呼不重发TAC区间）](configobject/UNC/20.15.2/TALISTPAGINGCFG.md)
+- [TALST（跟踪区列表）](configobject/UNC/20.15.2/TALST.md)
+- [TALSTPAGINGPLCY（TA List寻呼策略配置）](configobject/UNC/20.15.2/TALSTPAGINGPLCY.md)
+- [TARIFFGROUP（费率切换组）](configobject/UNC/20.15.2/TARIFFGROUP.md)
+- [TLSPARA（TLS参数）](configobject/UNC/20.15.2/TLSPARA.md)
+- [TLSPSK（预共享密钥）](configobject/UNC/20.15.2/TLSPSK.md)
+- [TLSPSKGRP（预共享密钥组信息）](configobject/UNC/20.15.2/TLSPSKGRP.md)
+- [TLSSCENE（TLS证书场景）](configobject/UNC/20.15.2/TLSSCENE.md)
+- [TMAPLE（TMAP本地实体）](configobject/UNC/20.15.2/TMAPLE.md)
+- [TMGIRNG（TMGI号段）](configobject/UNC/20.15.2/TMGIRNG.md)
+- [TMT3N3（Tm接口消息T3N3参数）](configobject/UNC/20.15.2/TMT3N3.md)
+- [TNFGRP（目标NF组）](configobject/UNC/20.15.2/TNFGRP.md)
+- [TNFINS（目标NF实例）](configobject/UNC/20.15.2/TNFINS.md)
+- [TNFINSIP（目标NF实例IP地址）](configobject/UNC/20.15.2/TNFINSIP.md)
+- [TOKENEXP（Token有效期）](configobject/UNC/20.15.2/TOKENEXP.md)
+- [TRCTSK（跟踪任务）](configobject/UNC/20.15.2/TRCTSK.md)
+- [TRUNKIF（Trunk工作模式配置）](configobject/UNC/20.15.2/TRUNKIF.md)
+- [TRUNKMEMBER（Trunk成员接口）](configobject/UNC/20.15.2/TRUNKMEMBER.md)
+- [TSTPCFSEL（拨测用户与PCF服务区的绑定关系）](configobject/UNC/20.15.2/TSTPCFSEL.md)
+- [TUNNELPOLICY（隧道策略）](configobject/UNC/20.15.2/TUNNELPOLICY.md)
+- [TUNNELSELECTOR（隧道选择器）](configobject/UNC/20.15.2/TUNNELSELECTOR.md)
+- [TUNNELSELECTORNODE（隧道选择器节点）](configobject/UNC/20.15.2/TUNNELSELECTORNODE.md)
+- [TZLST（多时区参数）](configobject/UNC/20.15.2/TZLST.md)
+- [UCFIP（UCF报表本地IP资源池）](configobject/UNC/20.15.2/UCFIP.md)
+- [UCFSVRIP（UCF报表服务器的接入点IP地址）](configobject/UNC/20.15.2/UCFSVRIP.md)
+- [UDMBYPASSSUB（UDM Bypass最小签约数据配置）](configobject/UNC/20.15.2/UDMBYPASSSUB.md)
+- [UECAPBYIMSI（UE无线能力策略）](configobject/UNC/20.15.2/UECAPBYIMSI.md)
+- [UEDNSUPGROUP（DNS关联的UPF组）](configobject/UNC/20.15.2/UEDNSUPGROUP.md)
+- [UEOVERLDCTRL（UE重载控制策略）](configobject/UNC/20.15.2/UEOVERLDCTRL.md)
+- [UERCAPUNCSEL（UE无线能力选择UNC参数）](configobject/UNC/20.15.2/UERCAPUNCSEL.md)
+- [UERCAPUSNSEL（UE无线能力选择USN参数）](configobject/UNC/20.15.2/UERCAPUSNSEL.md)
+- [UETNLA（UE-TNLA）](configobject/UNC/20.15.2/UETNLA.md)
+- [UEUSGTYPEGP（UE USAGE TYPE群组）](configobject/UNC/20.15.2/UEUSGTYPEGP.md)
+- [UEUSGTYPEGPMEM（UE USAGE TYPE群组成员）](configobject/UNC/20.15.2/UEUSGTYPEGPMEM.md)
+- [UFCSFB（预留功能策略）](configobject/UNC/20.15.2/UFCSFB.md)
+- [ULCLAPNDPMODE（指定APN的ULCL部署模式）](configobject/UNC/20.15.2/ULCLAPNDPMODE.md)
+- [ULCLAREADPMODE（指定DNAI服务区域的ULCL部署模式）](configobject/UNC/20.15.2/ULCLAREADPMODE.md)
+- [ULCLDNAIDPMODE（指定DNAI的ULCL部署模式）](configobject/UNC/20.15.2/ULCLDNAIDPMODE.md)
+- [ULCLPROP（ULCL属性）](configobject/UNC/20.15.2/ULCLPROP.md)
+- [UNCINTF（UNC接口名称）](configobject/UNC/20.15.2/UNCINTF.md)
+- [UNCINTFALL（UNC所有接口名称）](configobject/UNC/20.15.2/UNCINTFALL.md)
+- [UNCIPRESOUCE（UNC接口IP地址）](configobject/UNC/20.15.2/UNCIPRESOUCE.md)
+- [UNCIPRESOUCEALL（UNC所有接口的IP地址）](configobject/UNC/20.15.2/UNCIPRESOUCEALL.md)
+- [UNCLOGCTRL（UNC日志控制记录）](configobject/UNC/20.15.2/UNCLOGCTRL.md)
+- [UNCVNFINFO（北向NF实例信息）](configobject/UNC/20.15.2/UNCVNFINFO.md)
+- [UPAREA（UPF服务区）](configobject/UNC/20.15.2/UPAREA.md)
+- [UPCMPT（UP节点协议兼容性配置）](configobject/UNC/20.15.2/UPCMPT.md)
+- [UPCMPTCUSIE（UP节点定制信元兼容性配置）](configobject/UNC/20.15.2/UPCMPTCUSIE.md)
+- [UPDBGPPEERGROUP（BGP对等体分组）](configobject/UNC/20.15.2/UPDBGPPEERGROUP.md)
+- [UPFADDRATTR（UPF地址属性）](configobject/UNC/20.15.2/UPFADDRATTR.md)
+- [UPFGLOCGBNDGRP（UPF组与Diameter本端主机组的绑定关系组）](configobject/UNC/20.15.2/UPFGLOCGBNDGRP.md)
+- [UPFILTER（UPF过滤组）](configobject/UNC/20.15.2/UPFILTER.md)
+- [UPFPFCPPARA（UPF粒度PFCP参数）](configobject/UNC/20.15.2/UPFPFCPPARA.md)
+- [UPFRDSCLIENTIP（中转UPF与Radius客户端的绑定关系）](configobject/UNC/20.15.2/UPFRDSCLIENTIP.md)
+- [UPFRDSSVR（中转UPF与Radius服务器的绑定关系）](configobject/UNC/20.15.2/UPFRDSSVR.md)
+- [UPIPDOMAIN（当前UPF绑定的IP域）](configobject/UNC/20.15.2/UPIPDOMAIN.md)
+- [UPLIST4RDS（从RADIUS服务器使用的UP列表中删除UP）](configobject/UNC/20.15.2/UPLIST4RDS.md)
+- [UPLOGICINTF（UPF逻辑接口）](configobject/UNC/20.15.2/UPLOGICINTF.md)
+- [UPNODE（UPF节点）](configobject/UNC/20.15.2/UPNODE.md)
+- [URR](configobject/UNC/20.15.2/URR.md)
+- [URRGROUP（URR组）](configobject/UNC/20.15.2/URRGROUP.md)
+- [USER（用户锁定状态）](configobject/UNC/20.15.2/USER.md)
+- [USERPROFILE（用户模板）](configobject/UNC/20.15.2/USERPROFILE.md)
+- [USNRSVCMD1（预埋命令1）](configobject/UNC/20.15.2/USNRSVCMD1.md)
+- [USNRSVCMD2（预埋命令2）](configobject/UNC/20.15.2/USNRSVCMD2.md)
+- [USNRSVCMD3（预埋命令3）](configobject/UNC/20.15.2/USNRSVCMD3.md)
+- [USNRSVCMD4（预埋命令4）](configobject/UNC/20.15.2/USNRSVCMD4.md)
+- [USNRSVCMD5（预埋命令5）](configobject/UNC/20.15.2/USNRSVCMD5.md)
+- [USR（用户）](configobject/UNC/20.15.2/USR.md)
+- [USRBLACKLST（用户黑名单限制列表）](configobject/UNC/20.15.2/USRBLACKLST.md)
+- [USRCTLGGSN（手工恢复GGSN地址）](configobject/UNC/20.15.2/USRCTLGGSN.md)
+- [USRLOCATION（用户位置）](configobject/UNC/20.15.2/USRLOCATION.md)
+- [USRLOCATIONGRP（用户位置组）](configobject/UNC/20.15.2/USRLOCATIONGRP.md)
+- [USRMMINFO（网络名称）](configobject/UNC/20.15.2/USRMMINFO.md)
+- [USRN2CONN（N2接口AN信令连接）](configobject/UNC/20.15.2/USRN2CONN.md)
+- [USRPROFGROUP（用户模板组）](configobject/UNC/20.15.2/USRPROFGROUP.md)
+- [USRS1CONN（S1接口用户连接）](configobject/UNC/20.15.2/USRS1CONN.md)
+- [USRSECAUTH（二次授权用户）](configobject/UNC/20.15.2/USRSECAUTH.md)
+- [USRTAIRANGE（用户TAI区域）](configobject/UNC/20.15.2/USRTAIRANGE.md)
+- [USRTAIRANGEALL（所有的用户TAI区域）](configobject/UNC/20.15.2/USRTAIRANGEALL.md)
+- [VIRTUALAPNRULE（虚拟APN映射策略配置）](configobject/UNC/20.15.2/VIRTUALAPNRULE.md)
+- [VIRTUALCHL（虚拟通道映射）](configobject/UNC/20.15.2/VIRTUALCHL.md)
+- [VIRTUALIP（浮动IP）](configobject/UNC/20.15.2/VIRTUALIP.md)
+- [VIRTUALUPFID（虚拟UPF实例标识）](configobject/UNC/20.15.2/VIRTUALUPFID.md)
+- [VLR（VLR配置信息）](configobject/UNC/20.15.2/VLR.md)
+- [VLRCTX（VLR用户的上下文）](configobject/UNC/20.15.2/VLRCTX.md)
+- [VLRKEYDATA（用户的VLR关键信息）](configobject/UNC/20.15.2/VLRKEYDATA.md)
+- [VLROFFLOADLAILST（位置区列表）](configobject/UNC/20.15.2/VLROFFLOADLAILST.md)
+- [VLROPC（VLR信令点）](configobject/UNC/20.15.2/VLROPC.md)
+- [VNFMINFO（VNFM对接信息）](configobject/UNC/20.15.2/VNFMINFO.md)
+- [VOICEDEPLOY（语音部署配置）](configobject/UNC/20.15.2/VOICEDEPLOY.md)
+- [VOLTEHOLDON（语音承载保活）](configobject/UNC/20.15.2/VOLTEHOLDON.md)
+- [VPLMNCHGMODE（基于VPLMN配置的漫游用户归属地计费模式）](configobject/UNC/20.15.2/VPLMNCHGMODE.md)
+- [VPNINST（VPN实例）](configobject/UNC/20.15.2/VPNINST.md)
+- [VPNINSTAF（L3VPN实例地址族）](configobject/UNC/20.15.2/VPNINSTAF.md)
+- [VPNINSTAFIPSEC（L3VPN实例地址族）](configobject/UNC/20.15.2/VPNINSTAFIPSEC.md)
+- [VPNTARGET（VPN Target）](configobject/UNC/20.15.2/VPNTARGET.md)
+- [VPROBEIP（vProbe报表本地IP资源池）](configobject/UNC/20.15.2/VPROBEIP.md)
+- [VPROBESVRIP（vProbe报表服务器的接入点IP地址）](configobject/UNC/20.15.2/VPROBESVRIP.md)
+- [VSMFDFTQOSCTRL（VSMF的Default QoS Flow配置）](configobject/UNC/20.15.2/VSMFDFTQOSCTRL.md)
+- [WEAKPWDDICMEM（弱口令字典成员）](configobject/UNC/20.15.2/WEAKPWDDICMEM.md)
+- [WEEKDAY（计费星期表）](configobject/UNC/20.15.2/WEEKDAY.md)
+- [ZC（区域码）](configobject/UNC/20.15.2/ZC.md)
+- [ZCCONVERT（区域码转换策略）](configobject/UNC/20.15.2/ZCCONVERT.md)
 
 ## global_setting
 
-- [[configobject/UNC/20.15.2/5GCQOSCORRT]] · 5GCQOSCORRT（5GC QoS纠错配置） — `5GCQOSCORRT.md`
-- [[configobject/UNC/20.15.2/5GGUMINFO]] · 5GGUMINFO（灰度升级所处于的阶段） — `5GGUMINFO.md`
-- [[configobject/UNC/20.15.2/ACCESSLISTFUNC]] · ACCESSLISTFUNC（接入控制名单功能） — `ACCESSLISTFUNC.md`
-- [[configobject/UNC/20.15.2/ACSELECTSERVICE]] · ACSELECTSERVICE（仲裁服务状态） — `ACSELECTSERVICE.md`
-- [[configobject/UNC/20.15.2/ACSUPDSTATUS]] · ACSUPDSTATUS（升级状态） — `ACSUPDSTATUS.md`
-- [[configobject/UNC/20.15.2/ADDRESSATTR]] · ADDRESSATTR（UE IP地址属性） — `ADDRESSATTR.md`
-- [[configobject/UNC/20.15.2/ADDRPARA]] · ADDRPARA（ADDR参数） — `ADDRPARA.md`
-- [[configobject/UNC/20.15.2/AGFFCPARA]] · AGFFCPARA（流控等级对应的流控参数） — `AGFFCPARA.md`
-- [[configobject/UNC/20.15.2/AGFFUNCPARA]] · AGFFUNCPARA（AGF的功能参数） — `AGFFUNCPARA.md`
-- [[configobject/UNC/20.15.2/AGFOUTFC]] · AGFOUTFC（出局流控参数） — `AGFOUTFC.md`
-- [[configobject/UNC/20.15.2/ALARMSWITCH]] · ALARMSWITCH（安全事件告警开关） — `ALARMSWITCH.md`
-- [[configobject/UNC/20.15.2/ALMFILTER]] · ALMFILTER（告警闪断振荡配置） — `ALMFILTER.md`
-- [[configobject/UNC/20.15.2/ALMINFO]] · ALMINFO（告警配置信息） — `ALMINFO.md`
-- [[configobject/UNC/20.15.2/ALMNRMODE]] · ALMNRMODE（网管北向告警上报模式） — `ALMNRMODE.md`
-- [[configobject/UNC/20.15.2/ALMRPTMODE]] · ALMRPTMODE（告警上报模式） — `ALMRPTMODE.md`
-- [[configobject/UNC/20.15.2/AMFAUSFRESET]] · AMFAUSFRESET（AMF的AUSF故障处理策略） — `AMFAUSFRESET.md`
-- [[configobject/UNC/20.15.2/AMFDATACHK]] · AMFDATACHK（AMF数据核查相关参数） — `AMFDATACHK.md`
-- [[configobject/UNC/20.15.2/AMFEVENTCMPT]] · AMFEVENTCMPT（事件订阅通知消息的兼容性控制参数） — `AMFEVENTCMPT.md`
-- [[configobject/UNC/20.15.2/AMFFCPARA]] · AMFFCPARA（AMF自保流控参数） — `AMFFCPARA.md`
-- [[configobject/UNC/20.15.2/AMFMBSFUNC]] · AMFMBSFUNC（AMF组播广播功能参数） — `AMFMBSFUNC.md`
-- [[configobject/UNC/20.15.2/AMFN26CPPATH]] · AMFN26CPPATH（AMF N26消息抄送路径） — `AMFN26CPPATH.md`
-- [[configobject/UNC/20.15.2/AMFN26PLCY]] · AMFN26PLCY（AMF N26接口策略） — `AMFN26PLCY.md`
-- [[configobject/UNC/20.15.2/AMFNASFIXEDFC]] · AMFNASFIXEDFC（指定消息类型的AMF NAS固定速率流控信息） — `AMFNASFIXEDFC.md`
-- [[configobject/UNC/20.15.2/AMFNSSECPLCY]] · AMFNSSECPLCY（AMF切片安全策略） — `AMFNSSECPLCY.md`
-- [[configobject/UNC/20.15.2/AMFPCFRESET]] · AMFPCFRESET（AMF的PCF故障处理策略） — `AMFPCFRESET.md`
-- [[configobject/UNC/20.15.2/AMFPEERSELFUNC]] · AMFPEERSELFUNC（AMF对端选择功能控制参数） — `AMFPEERSELFUNC.md`
-- [[configobject/UNC/20.15.2/AMFPLCYFUNC]] · AMFPLCYFUNC（AMF策略功能） — `AMFPLCYFUNC.md`
-- [[configobject/UNC/20.15.2/AMFPROFILEPLCY]] · AMFPROFILEPLCY（AMF上报NFPROFILE策略） — `AMFPROFILEPLCY.md`
-- [[configobject/UNC/20.15.2/AMFREDCAPFUNC]] · AMFREDCAPFUNC（AMF RedCap功能） — `AMFREDCAPFUNC.md`
-- [[configobject/UNC/20.15.2/AMFRESTOFUNC]] · AMFRESTOFUNC（AMF热备容灾） — `AMFRESTOFUNC.md`
-- [[configobject/UNC/20.15.2/AMFROAMFUNC]] · AMFROAMFUNC（AMF漫游功能管理参数） — `AMFROAMFUNC.md`
-- [[configobject/UNC/20.15.2/AMFSBICMPT]] · AMFSBICMPT（AMF服务化接口兼容性参数） — `AMFSBICMPT.md`
-- [[configobject/UNC/20.15.2/AMFSBIINFCTRL]] · AMFSBIINFCTRL（AMF的SBI接口控制参数） — `AMFSBIINFCTRL.md`
-- [[configobject/UNC/20.15.2/AMFSENSECONF]] · AMFSENSECONF（AMF感知配置） — `AMFSENSECONF.md`
-- [[configobject/UNC/20.15.2/AMFSMFRESET]] · AMFSMFRESET（AMF的SMF故障处理策略） — `AMFSMFRESET.md`
-- [[configobject/UNC/20.15.2/AMFSMSFRESET]] · AMFSMSFRESET（AMF的SMSF故障处理策略） — `AMFSMSFRESET.md`
-- [[configobject/UNC/20.15.2/AMFSOFTPARA]] · AMFSOFTPARA（AMF软参） — `AMFSOFTPARA.md`
-- [[configobject/UNC/20.15.2/AMFSOFTPARAOFBIT]] · AMFSOFTPARAOFBIT（AMF软件参数比特位） — `AMFSOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/AMFUDMBYPASS]] · AMFUDMBYPASS（用户UDM Bypass信息） — `AMFUDMBYPASS.md`
-- [[configobject/UNC/20.15.2/AMFUDMRESET]] · AMFUDMRESET（AMF的UDM故障处理策略） — `AMFUDMRESET.md`
-- [[configobject/UNC/20.15.2/ANONYMOUSAPN]] · ANONYMOUSAPN（匿名APN配置） — `ANONYMOUSAPN.md`
-- [[configobject/UNC/20.15.2/ANTIATTACK]] · ANTIATTACK（防报文攻击上限） — `ANTIATTACK.md`
-- [[configobject/UNC/20.15.2/APNACCESSCTRL]] · APNACCESSCTRL（APN访问控制参数） — `APNACCESSCTRL.md`
-- [[configobject/UNC/20.15.2/APNACCESSWAL]] · APNACCESSWAL（APN接入速率） — `APNACCESSWAL.md`
-- [[configobject/UNC/20.15.2/APNADDRESSATTR]] · APNADDRESSATTR（基于APN的地址分配属性） — `APNADDRESSATTR.md`
-- [[configobject/UNC/20.15.2/APNATSSSFUNC]] · APNATSSSFUNC（APN ATSSS功能） — `APNATSSSFUNC.md`
-- [[configobject/UNC/20.15.2/APNAUTHATTR]] · APNAUTHATTR（APN鉴权属性配置） — `APNAUTHATTR.md`
-- [[configobject/UNC/20.15.2/APNCHARGECTRL]] · APNCHARGECTRL（APN的计费配置） — `APNCHARGECTRL.md`
-- [[configobject/UNC/20.15.2/APNDHCPATTR]] · APNDHCPATTR（APN DHCP属性配置） — `APNDHCPATTR.md`
-- [[configobject/UNC/20.15.2/APNFAULT]] · APNFAULT（APN粒度的故障处理开关） — `APNFAULT.md`
-- [[configobject/UNC/20.15.2/APNIDLETIME]] · APNIDLETIME（APN空闲上下文定时器配置） — `APNIDLETIME.md`
-- [[configobject/UNC/20.15.2/APNIMSATTR]] · APNIMSATTR（APN的IMS属性） — `APNIMSATTR.md`
-- [[configobject/UNC/20.15.2/APNIPALLOCRULE]] · APNIPALLOCRULE（基于APN的地址分配规则） — `APNIPALLOCRULE.md`
-- [[configobject/UNC/20.15.2/APNIPV6INFID]] · APNIPV6INFID（APN IPv6接口ID配置） — `APNIPV6INFID.md`
-- [[configobject/UNC/20.15.2/APNL2TPCTRL]] · APNL2TPCTRL（APN L2TP CTRL配置） — `APNL2TPCTRL.md`
-- [[configobject/UNC/20.15.2/APNNONIPFUNC]] · APNNONIPFUNC（APN Non-IP功能配置） — `APNNONIPFUNC.md`
-- [[configobject/UNC/20.15.2/APNPCCFUNC]] · APNPCCFUNC（APN PCC功能） — `APNPCCFUNC.md`
-- [[configobject/UNC/20.15.2/APNPCRFEMEREATTACH]] · APNPCRFEMEREATTACH（APN的MBR删除PCC回滚空闲上下文配置） — `APNPCRFEMEREATTACH.md`
-- [[configobject/UNC/20.15.2/APNPCSCFSRVPRI]] · APNPCSCFSRVPRI（APN P-CSCF地址获取方式的优先级配置） — `APNPCSCFSRVPRI.md`
-- [[configobject/UNC/20.15.2/APNPLMNRATECTRL]] · APNPLMNRATECTRL（APN Serving PLMN速率控制配置） — `APNPLMNRATECTRL.md`
-- [[configobject/UNC/20.15.2/APNQOSATTR]] · APNQOSATTR（指定APN的QoS属性配置信息） — `APNQOSATTR.md`
-- [[configobject/UNC/20.15.2/APNRADIUSATTR]] · APNRADIUSATTR（APN RADIUS配置） — `APNRADIUSATTR.md`
-- [[configobject/UNC/20.15.2/APNRATECTRL]] · APNRATECTRL（APN速率控制配置） — `APNRATECTRL.md`
-- [[configobject/UNC/20.15.2/APNRDSACCTCTRL]] · APNRDSACCTCTRL（APN RADIUS计费控制参数） — `APNRDSACCTCTRL.md`
-- [[configobject/UNC/20.15.2/APNREPORTATTR]] · APNREPORTATTR（APN的上报属性） — `APNREPORTATTR.md`
-- [[configobject/UNC/20.15.2/APNSESSIONTIME]] · APNSESSIONTIME（APN会话上下文定时器配置） — `APNSESSIONTIME.md`
-- [[configobject/UNC/20.15.2/APNUPSELPLY]] · APNUPSELPLY（APN粒度的UP选择策略） — `APNUPSELPLY.md`
-- [[configobject/UNC/20.15.2/ARPANTISPOOFING]] · ARPANTISPOOFING（ARP防欺骗信息） — `ARPANTISPOOFING.md`
-- [[configobject/UNC/20.15.2/ARPEPS2PRER8]] · ARPEPS2PRER8（EPS ARP到Pre-R8 ARP的映射规则） — `ARPEPS2PRER8.md`
-- [[configobject/UNC/20.15.2/ARPIFLIMIT]] · ARPIFLIMIT（ARP表项限制） — `ARPIFLIMIT.md`
-- [[configobject/UNC/20.15.2/ARPINTERFACE]] · ARPINTERFACE（接口下ARP配置信息） — `ARPINTERFACE.md`
-- [[configobject/UNC/20.15.2/ARPSPEEDLIMIT]] · ARPSPEEDLIMIT（速率限制） — `ARPSPEEDLIMIT.md`
-- [[configobject/UNC/20.15.2/ARPSYS]] · ARPSYS（ARP系统信息） — `ARPSYS.md`
-- [[configobject/UNC/20.15.2/ASNFUNC]] · ASNFUNC（ASN功能） — `ASNFUNC.md`
-- [[configobject/UNC/20.15.2/ASRFUNC]] · ASRFUNC（容灾功能参数） — `ASRFUNC.md`
-- [[configobject/UNC/20.15.2/ATTACKDEFEND]] · ATTACKDEFEND（攻击防范参数） — `ATTACKDEFEND.md`
-- [[configobject/UNC/20.15.2/AUTHSGSNADDR]] · AUTHSGSNADDR（向AAA鉴权服务器发送消息中携带的地址信息） — `AUTHSGSNADDR.md`
-- [[configobject/UNC/20.15.2/AUTHSOAP]] · AUTHSOAP（网管登录认证策略） — `AUTHSOAP.md`
-- [[configobject/UNC/20.15.2/AUTOCONFIG]] · AUTOCONFIG（自动配置开关） — `AUTOCONFIG.md`
-- [[configobject/UNC/20.15.2/AUTOLOGPOLICY]] · AUTOLOGPOLICY（日志自动备份策略） — `AUTOLOGPOLICY.md`
-- [[configobject/UNC/20.15.2/BACKOFFTIME]] · BACKOFFTIME（Back-off Time信息） — `BACKOFFTIME.md`
-- [[configobject/UNC/20.15.2/BACKOFFTIMECTRL]] · BACKOFFTIMECTRL（异常场景的Back-off Time开关） — `BACKOFFTIMECTRL.md`
-- [[configobject/UNC/20.15.2/BASESOFTPARA]] · BASESOFTPARA（基础软件参数配置） — `BASESOFTPARA.md`
-- [[configobject/UNC/20.15.2/BASESUBHEALTH]] · BASESUBHEALTH（base链路亚健康信息） — `BASESUBHEALTH.md`
-- [[configobject/UNC/20.15.2/BATCHCUTFUNC]] · BATCHCUTFUNC（分批割接功能） — `BATCHCUTFUNC.md`
-- [[configobject/UNC/20.15.2/BFD]] · BFD（BFD全局配置信息） — `BFD.md`
-- [[configobject/UNC/20.15.2/BGP]] · BGP — `BGP.md`
-- [[configobject/UNC/20.15.2/BIGSCTPRXNUM]] · BIGSCTPRXNUM（大端模式SCTP接收缓冲区参数） — `BIGSCTPRXNUM.md`
-- [[configobject/UNC/20.15.2/BKMPOLICY]] · BKMPOLICY（自动备份策略） — `BKMPOLICY.md`
-- [[configobject/UNC/20.15.2/BMBYPASSSTATUS]] · BMBYPASSSTATUS（裸机BYPASS状态） — `BMBYPASSSTATUS.md`
-- [[configobject/UNC/20.15.2/BMBYPASSSWITCH]] · BMBYPASSSWITCH（裸机节点自动进入BYPASS开关） — `BMBYPASSSWITCH.md`
-- [[configobject/UNC/20.15.2/BSSAPPTMR]] · BSSAPPTMR（BSSAPP协议定时器表） — `BSSAPPTMR.md`
-- [[configobject/UNC/20.15.2/BSSGP]] · BSSGP（BSSGP参数） — `BSSGP.md`
-- [[configobject/UNC/20.15.2/BTRUNCFUNC]] · BTRUNCFUNC（宽带集群系统扩展功能） — `BTRUNCFUNC.md`
-- [[configobject/UNC/20.15.2/BWRATIO]] · BWRATIO（带宽占用比例表） — `BWRATIO.md`
-- [[configobject/UNC/20.15.2/BYPASSSTATUS]] · BYPASSSTATUS（BYPASS状态） — `BYPASSSTATUS.md`
-- [[configobject/UNC/20.15.2/BYPASSSWITCH]] · BYPASSSWITCH（节点自动进入BYPASS开关） — `BYPASSSWITCH.md`
-- [[configobject/UNC/20.15.2/CACHEPLCY]] · CACHEPLCY（缓存策略） — `CACHEPLCY.md`
-- [[configobject/UNC/20.15.2/CACHESPECS]] · CACHESPECS（缓存数据规格） — `CACHESPECS.md`
-- [[configobject/UNC/20.15.2/CCLIMITRC]] · CCLIMITRC（在线计费欠费返回码） — `CCLIMITRC.md`
-- [[configobject/UNC/20.15.2/CCPTIMER]] · CCPTIMER（融合计费Proxy定时器） — `CCPTIMER.md`
-- [[configobject/UNC/20.15.2/CDFFUNCPARA]] · CDFFUNCPARA（CDF的功能参数） — `CDFFUNCPARA.md`
-- [[configobject/UNC/20.15.2/CDFTOKENPOLICY]] · CDFTOKENPOLICY（CDF token策略） — `CDFTOKENPOLICY.md`
-- [[configobject/UNC/20.15.2/CDRFIELDTYPE]] · CDRFIELDTYPE（字段映射关系） — `CDRFIELDTYPE.md`
-- [[configobject/UNC/20.15.2/CDRGENRATECTRL]] · CDRGENRATECTRL（话单产生速率） — `CDRGENRATECTRL.md`
-- [[configobject/UNC/20.15.2/CDRPOOLTHRSH]] · CDRPOOLTHRSH（话单池空间告警阈值） — `CDRPOOLTHRSH.md`
-- [[configobject/UNC/20.15.2/CDRSTORAGECTRL]] · CDRSTORAGECTRL（话单存储控制参数） — `CDRSTORAGECTRL.md`
-- [[configobject/UNC/20.15.2/CDRSTRGSTATUS]] · CDRSTRGSTATUS（话单缓存目录状态） — `CDRSTRGSTATUS.md`
-- [[configobject/UNC/20.15.2/CDRTRANSFER]] · CDRTRANSFER（话单发送控制参数） — `CDRTRANSFER.md`
-- [[configobject/UNC/20.15.2/CDRTRIGGER]] · CDRTRIGGER（离线计费话单产生开关） — `CDRTRIGGER.md`
-- [[configobject/UNC/20.15.2/CEAORIGHOSTCHK]] · CEAORIGHOSTCHK（对Gy接口的cea消息中的Origin-Host检查开关） — `CEAORIGHOSTCHK.md`
-- [[configobject/UNC/20.15.2/CERTESCAPESWITCH]] · CERTESCAPESWITCH（证书过期逃生开关状态） — `CERTESCAPESWITCH.md`
-- [[configobject/UNC/20.15.2/CERTUPDATPARA]] · CERTUPDATPARA（证书更新流程参数） — `CERTUPDATPARA.md`
-- [[configobject/UNC/20.15.2/CFGDEBUG]] · CFGDEBUG（CFG诊断日志） — `CFGDEBUG.md`
-- [[configobject/UNC/20.15.2/CFGSYNC]] · CFGSYNC（配置同步开关） — `CFGSYNC.md`
-- [[configobject/UNC/20.15.2/CFSHEALCTRL]] · CFSHEALCTRL（在复杂故障场景下自愈功能控制参数） — `CFSHEALCTRL.md`
-- [[configobject/UNC/20.15.2/CGSECPOLICY]] · CGSECPOLICY（安全策略） — `CGSECPOLICY.md`
-- [[configobject/UNC/20.15.2/CHARGECHARCHK]] · CHARGECHARCHK（是否检查Serving Node携带的CC） — `CHARGECHARCHK.md`
-- [[configobject/UNC/20.15.2/CHARGECTRL]] · CHARGECTRL（计费控制配置） — `CHARGECTRL.md`
-- [[configobject/UNC/20.15.2/CHFINIT]] · CHFINIT（融合计费模板中用户激活相关参数） — `CHFINIT.md`
-- [[configobject/UNC/20.15.2/CHFSELECTMODE]] · CHFSELECTMODE（用户激活和在线恢复场景CHF的选择模式） — `CHFSELECTMODE.md`
-- [[configobject/UNC/20.15.2/CHGCDR]] · CHGCDR（强制生成用户话单） — `CHGCDR.md`
-- [[configobject/UNC/20.15.2/CHGCHAR]] · CHGCHAR（计费属性参数） — `CHGCHAR.md`
-- [[configobject/UNC/20.15.2/CHGGA]] · CHGGA（计费Ga接口参数状态） — `CHGGA.md`
-- [[configobject/UNC/20.15.2/CHGINITPRI]] · CHGINITPRI（RADIUS计费和在线计费消息优先级） — `CHGINITPRI.md`
-- [[configobject/UNC/20.15.2/CHGIOPARA]] · CHGIOPARA（融合计费惯性运行参数） — `CHGIOPARA.md`
-- [[configobject/UNC/20.15.2/CHGMODE]] · CHGMODE（计费接口选择方式） — `CHGMODE.md`
-- [[configobject/UNC/20.15.2/CHGPLMNCHAR]] · CHGPLMNCHAR（PLMN的计费属性参数） — `CHGPLMNCHAR.md`
-- [[configobject/UNC/20.15.2/CHGRATECTRL]] · CHGRATECTRL（计费速率控制） — `CHGRATECTRL.md`
-- [[configobject/UNC/20.15.2/CHGWKDY]] · CHGWKDY（星期配置） — `CHGWKDY.md`
-- [[configobject/UNC/20.15.2/CHKPKGINTERVAL]] · CHKPKGINTERVAL（软件包检查间隔） — `CHKPKGINTERVAL.md`
-- [[configobject/UNC/20.15.2/CHKSUM]] · CHKSUM（校验和开关） — `CHKSUM.md`
-- [[configobject/UNC/20.15.2/CHRCFG]] · CHRCFG（CHR配置） — `CHRCFG.md`
-- [[configobject/UNC/20.15.2/CHRFILESAVETIME]] · CHRFILESAVETIME（文件存留期设置） — `CHRFILESAVETIME.md`
-- [[configobject/UNC/20.15.2/CHRFILESTGMODE]] · CHRFILESTGMODE（上传至文件服务器的CHR文件转储方式） — `CHRFILESTGMODE.md`
-- [[configobject/UNC/20.15.2/CHRLOWPERFSVRSUB]] · CHRLOWPERFSVRSUB（低性能CHR服务器的单据订阅条件） — `CHRLOWPERFSVRSUB.md`
-- [[configobject/UNC/20.15.2/CHRMGMTPARA]] · CHRMGMTPARA（关键流程CHR上报管理参数） — `CHRMGMTPARA.md`
-- [[configobject/UNC/20.15.2/CHRSNDPLCYCFG]] · CHRSNDPLCYCFG（CHR传输策略控制参数） — `CHRSNDPLCYCFG.md`
-- [[configobject/UNC/20.15.2/CHRSTORECFG]] · CHRSTORECFG（CHR存盘配置） — `CHRSTORECFG.md`
-- [[configobject/UNC/20.15.2/CLTVFYSWITCH]] · CLTVFYSWITCH（双向认证开关） — `CLTVFYSWITCH.md`
-- [[configobject/UNC/20.15.2/CMDLEVDFTBEH]] · CMDLEVDFTBEH（DCC模板命令层缺省返回码动作） — `CMDLEVDFTBEH.md`
-- [[configobject/UNC/20.15.2/CMFFC]] · CMFFC（CMF流控参数） — `CMFFC.md`
-- [[configobject/UNC/20.15.2/CMFFCSWITCH]] · CMFFCSWITCH（CMF流控开关配置数据） — `CMFFCSWITCH.md`
-- [[configobject/UNC/20.15.2/CNTCPUTHD]] · CNTCPUTHD（容器CPU阈值） — `CNTCPUTHD.md`
-- [[configobject/UNC/20.15.2/CNTMEMTHD]] · CNTMEMTHD（容器内存阈值） — `CNTMEMTHD.md`
-- [[configobject/UNC/20.15.2/CNTRESTHD]] · CNTRESTHD（容器资源阈值） — `CNTRESTHD.md`
-- [[configobject/UNC/20.15.2/CNTTMPDIR]] · CNTTMPDIR（容器引擎临时目录） — `CNTTMPDIR.md`
-- [[configobject/UNC/20.15.2/CNVRGDCHGPARA]] · CNVRGDCHGPARA（融合计费全局参数） — `CNVRGDCHGPARA.md`
-- [[configobject/UNC/20.15.2/COMBASEHEALTH]] · COMBASEHEALTH（Base平面通信质量） — `COMBASEHEALTH.md`
-- [[configobject/UNC/20.15.2/COMMONSOFTPARA]] · COMMONSOFTPARA（公共软参） — `COMMONSOFTPARA.md`
-- [[configobject/UNC/20.15.2/COMMONSOFTPARAOFBIT]] · COMMONSOFTPARAOFBIT（公共软件参数比特位） — `COMMONSOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/COMMTRCCTRL]] · COMMTRCCTRL（通用模块跟踪控制功能） — `COMMTRCCTRL.md`
-- [[configobject/UNC/20.15.2/COMPATIBILITY]] · COMPATIBILITY（QoS兼容性配置） — `COMPATIBILITY.md`
-- [[configobject/UNC/20.15.2/CONCENPOINT]] · CONCENPOINT（集中点部署模式） — `CONCENPOINT.md`
-- [[configobject/UNC/20.15.2/CONFCTRL]] · CONFCTRL（查看冲突控制参数） — `CONFCTRL.md`
-- [[configobject/UNC/20.15.2/CONTAINERTRIGGER]] · CONTAINERTRIGGER（离线计费容器产生开关） — `CONTAINERTRIGGER.md`
-- [[configobject/UNC/20.15.2/CPDATAFLOWCTRL]] · CPDATAFLOWCTRL（CP Data流控参数） — `CPDATAFLOWCTRL.md`
-- [[configobject/UNC/20.15.2/CPGTPUPARA]] · CPGTPUPARA（GTPU参数） — `CPGTPUPARA.md`
-- [[configobject/UNC/20.15.2/CPUECOPOLICY]] · CPUECOPOLICY（全局的CPU调频和休眠策略） — `CPUECOPOLICY.md`
-- [[configobject/UNC/20.15.2/CPUGENTURBO]] · CPUGENTURBO（CPU代际睿频开关） — `CPUGENTURBO.md`
-- [[configobject/UNC/20.15.2/CRACTRL]] · CRACTRL（CRA控制参数） — `CRACTRL.md`
-- [[configobject/UNC/20.15.2/CREDITPOOLFUNC]] · CREDITPOOLFUNC（Credit Pooling功能） — `CREDITPOOLFUNC.md`
-- [[configobject/UNC/20.15.2/CSLOGFC]] · CSLOGFC（日志流控开关） — `CSLOGFC.md`
-- [[configobject/UNC/20.15.2/CSLOGLEVEL]] · CSLOGLEVEL（更新日志输出级别） — `CSLOGLEVEL.md`
-- [[configobject/UNC/20.15.2/DATACHKPOLICY]] · DATACHKPOLICY（APP配置数据检查功能） — `DATACHKPOLICY.md`
-- [[configobject/UNC/20.15.2/DBDRAGING]] · DBDRAGING（CSDB容灾数据老化开关） — `DBDRAGING.md`
-- [[configobject/UNC/20.15.2/DBPARAS]] · DBPARAS（配置的DB参数） — `DBPARAS.md`
-- [[configobject/UNC/20.15.2/DBSOFTPARA]] · DBSOFTPARA（CSDB软件调试参数表） — `DBSOFTPARA.md`
-- [[configobject/UNC/20.15.2/DBSTARTPARAS]] · DBSTARTPARAS（DB启动参数值） — `DBSTARTPARAS.md`
-- [[configobject/UNC/20.15.2/DBTHRESHOLD]] · DBTHRESHOLD（CSDB配置过载门限） — `DBTHRESHOLD.md`
-- [[configobject/UNC/20.15.2/DBUPGSTAGE]] · DBUPGSTAGE（CSDB灰度升级阶段） — `DBUPGSTAGE.md`
-- [[configobject/UNC/20.15.2/DCNCTRL]] · DCNCTRL（DCN控制参数） — `DCNCTRL.md`
-- [[configobject/UNC/20.15.2/DDNATTR]] · DDNATTR（DDN消息参数以及Delay信元处理开关） — `DDNATTR.md`
-- [[configobject/UNC/20.15.2/DDNFLOWCTRL]] · DDNFLOWCTRL（DDN流控参数） — `DDNFLOWCTRL.md`
-- [[configobject/UNC/20.15.2/DDNSUPPRESSION]] · DDNSUPPRESSION（DDN抑制功能配置） — `DDNSUPPRESSION.md`
-- [[configobject/UNC/20.15.2/DDNTHROTPARA]] · DDNTHROTPARA（DDN信令抑制状态） — `DDNTHROTPARA.md`
-- [[configobject/UNC/20.15.2/DDNTHROTTLING]] · DDNTHROTTLING（DDN Throttling功能） — `DDNTHROTTLING.md`
-- [[configobject/UNC/20.15.2/DDNTIMEOUTCTRL]] · DDNTIMEOUTCTRL（DDN定时器超时参数） — `DDNTIMEOUTCTRL.md`
-- [[configobject/UNC/20.15.2/DDNUSERTYPEPRI]] · DDNUSERTYPEPRI（基于用户属性的DDN消息优先级） — `DDNUSERTYPEPRI.md`
-- [[configobject/UNC/20.15.2/DEACTIVERATE]] · DEACTIVERATE（去激活用户承载的速率） — `DEACTIVERATE.md`
-- [[configobject/UNC/20.15.2/DEFAULTASN]] · DEFAULTASN（缺省ASN值） — `DEFAULTASN.md`
-- [[configobject/UNC/20.15.2/DEFEPSQOS]] · DEFEPSQOS（EPS缺省QoS参数） — `DEFEPSQOS.md`
-- [[configobject/UNC/20.15.2/DEFPRER8QOS]] · DEFPRER8QOS（缺省的Pre-R8 QoS参数） — `DEFPRER8QOS.md`
-- [[configobject/UNC/20.15.2/DFTGBRBEARER]] · DFTGBRBEARER（缺省GBR承载参数） — `DFTGBRBEARER.md`
-- [[configobject/UNC/20.15.2/DFTGLBPCRFGRP]] · DFTGLBPCRFGRP（全局缺省PCRF组） — `DFTGLBPCRFGRP.md`
-- [[configobject/UNC/20.15.2/DFTIDLETIME]] · DFTIDLETIME（默认空闲上下文定时器配置） — `DFTIDLETIME.md`
-- [[configobject/UNC/20.15.2/DFTIPEPCFGRP]] · DFTIPEPCFGRP（全局默认智能PCF组） — `DFTIPEPCFGRP.md`
-- [[configobject/UNC/20.15.2/DFTPROXYCTRL]] · DFTPROXYCTRL（缺省代理控制配置） — `DFTPROXYCTRL.md`
-- [[configobject/UNC/20.15.2/DFTSESSIONTIME]] · DFTSESSIONTIME（默认会话上下文定时器） — `DFTSESSIONTIME.md`
-- [[configobject/UNC/20.15.2/DFTSRVNODERAT]] · DFTSRVNODERAT（默认RAT类型） — `DFTSRVNODERAT.md`
-- [[configobject/UNC/20.15.2/DHCP6CLIENTDUID]] · DHCP6CLIENTDUID（DHCPv6客户端DUID生成方式） — `DHCP6CLIENTDUID.md`
-- [[configobject/UNC/20.15.2/DHCPPARAREQ]] · DHCPPARAREQ（向外部DHCPv4或者DHCPv6服务器发送的消息中的请求信元中的参数信息） — `DHCPPARAREQ.md`
-- [[configobject/UNC/20.15.2/DIAMETERPARA]] · DIAMETERPARA（Diameter参数） — `DIAMETERPARA.md`
-- [[configobject/UNC/20.15.2/DIRECTPATHFIRST]] · DIRECTPATHFIRST（直连路径优先开关） — `DIRECTPATHFIRST.md`
-- [[configobject/UNC/20.15.2/DISCADAPTFCPARA]] · DISCADAPTFCPARA（服务发现自适应流控全局配置） — `DISCADAPTFCPARA.md`
-- [[configobject/UNC/20.15.2/DISKCHKPARA]] · DISKCHKPARA（存储检测参数） — `DISKCHKPARA.md`
-- [[configobject/UNC/20.15.2/DISKPARTITION]] · DISKPARTITION（资源磁盘分区过载配置） — `DISKPARTITION.md`
-- [[configobject/UNC/20.15.2/DMCMPT]] · DMCMPT（Diameter兼容配置） — `DMCMPT.md`
-- [[configobject/UNC/20.15.2/DMFUNC]] · DMFUNC（Diameter配置） — `DMFUNC.md`
-- [[configobject/UNC/20.15.2/DMOCCFG]] · DMOCCFG（Diameter流控控制参数） — `DMOCCFG.md`
-- [[configobject/UNC/20.15.2/DNNCMPT]] · DNNCMPT（DNN兼容性控制参数） — `DNNCMPT.md`
-- [[configobject/UNC/20.15.2/DNNREPLACEFUNC]] · DNNREPLACEFUNC（DNN替换功能管理参数） — `DNNREPLACEFUNC.md`
-- [[configobject/UNC/20.15.2/DNS]] · DNS（DNS运行参数） — `DNS.md`
-- [[configobject/UNC/20.15.2/DOMAINSEPARATOR]] · DOMAINSEPARATOR（域名前后缀分隔符） — `DOMAINSEPARATOR.md`
-- [[configobject/UNC/20.15.2/DRAUTOACTIVE]] · DRAUTOACTIVE（冷备容灾自动升主功能参数） — `DRAUTOACTIVE.md`
-- [[configobject/UNC/20.15.2/DRAUTOSWOVER]] · DRAUTOSWOVER（热备模式下是否开启自动倒换功能） — `DRAUTOSWOVER.md`
-- [[configobject/UNC/20.15.2/DRCHANNELPARA]] · DRCHANNELPARA（容灾通道参数） — `DRCHANNELPARA.md`
-- [[configobject/UNC/20.15.2/DRCOUPLINGRESET]] · DRCOUPLINGRESET（负荷分担容灾功能开启信息） — `DRCOUPLINGRESET.md`
-- [[configobject/UNC/20.15.2/DRGROUPABLEMENT]] · DRGROUPABLEMENT（是否使能热备容灾组） — `DRGROUPABLEMENT.md`
-- [[configobject/UNC/20.15.2/DRHBNEGOTIMER]] · DRHBNEGOTIMER（容灾定时器） — `DRHBNEGOTIMER.md`
-- [[configobject/UNC/20.15.2/DRKEYNF]] · DRKEYNF（监控的关键部件信息） — `DRKEYNF.md`
-- [[configobject/UNC/20.15.2/DRRESETLMTCOUNT]] · DRRESETLMTCOUNT（复位限制的次数） — `DRRESETLMTCOUNT.md`
-- [[configobject/UNC/20.15.2/DRSTBYRSTCTRL]] · DRSTBYRSTCTRL（运行备整系统复位开关） — `DRSTBYRSTCTRL.md`
-- [[configobject/UNC/20.15.2/DRTLSMODE]] · DRTLSMODE（容灾控制通道TLS模式） — `DRTLSMODE.md`
-- [[configobject/UNC/20.15.2/DSCP]] · DSCP（接口DSCP配置） — `DSCP.md`
-- [[configobject/UNC/20.15.2/DSCPRMK]] · DSCPRMK（重映射对应表） — `DSCPRMK.md`
-- [[configobject/UNC/20.15.2/DYNAMICPOLICY]] · DYNAMICPOLICY（服务类型分配动态权重的管理策略） — `DYNAMICPOLICY.md`
-- [[configobject/UNC/20.15.2/E2ETRCCFG]] · E2ETRCCFG（端到端用户跟踪参数） — `E2ETRCCFG.md`
-- [[configobject/UNC/20.15.2/ECOPOLICY]] · ECOPOLICY（全局的CPU调频和休眠策略） — `ECOPOLICY.md`
-- [[configobject/UNC/20.15.2/ELECTIONABILITY]] · ELECTIONABILITY（业务进程选举能力） — `ELECTIONABILITY.md`
-- [[configobject/UNC/20.15.2/ELECTSERVICE]] · ELECTSERVICE（仲裁服务状态） — `ELECTSERVICE.md`
-- [[configobject/UNC/20.15.2/EMM]] · EMM（S1模式MM协议参数） — `EMM.md`
-- [[configobject/UNC/20.15.2/EMMPROCTRL]] · EMMPROCTRL（S1模式移动性管理流程控制参数） — `EMMPROCTRL.md`
-- [[configobject/UNC/20.15.2/EMTCBEMM]] · EMTCBEMM（S1模式eMTC MM协议参数） — `EMTCBEMM.md`
-- [[configobject/UNC/20.15.2/EMTCBESM]] · EMTCBESM（S1模式eMTC SM协议参数） — `EMTCBESM.md`
-- [[configobject/UNC/20.15.2/EPSQCI2PRER8]] · EPSQCI2PRER8（EPS QCI到Pre-R8 QoS映射规则） — `EPSQCI2PRER8.md`
-- [[configobject/UNC/20.15.2/ERRCDRALM]] · ERRCDRALM（错误话单告警参数） — `ERRCDRALM.md`
-- [[configobject/UNC/20.15.2/ESM]] · ESM（S1模式SM协议参数） — `ESM.md`
-- [[configobject/UNC/20.15.2/EVTHEALCTRL]] · EVTHEALCTRL（事件全局开关） — `EVTHEALCTRL.md`
-- [[configobject/UNC/20.15.2/EVTPARA]] · EVTPARA（策略参数值） — `EVTPARA.md`
-- [[configobject/UNC/20.15.2/EVTSW]] · EVTSW（事件开关状态） — `EVTSW.md`
-- [[configobject/UNC/20.15.2/EXTENQCIATTR]] · EXTENQCIATTR（应用扩展QCI参数属性） — `EXTENQCIATTR.md`
-- [[configobject/UNC/20.15.2/FABDIAGPARA]] · FABDIAGPARA（Pod Fabric平面亚健康诊断参数） — `FABDIAGPARA.md`
-- [[configobject/UNC/20.15.2/FABRICINALARMCFG]] · FABRICINALARMCFG（PAE告警配置） — `FABRICINALARMCFG.md`
-- [[configobject/UNC/20.15.2/FABRICINSWITCH]] · FABRICINSWITCH（Fabric-In功能开关） — `FABRICINSWITCH.md`
-- [[configobject/UNC/20.15.2/FABRICMTU]] · FABRICMTU（PAE内联口MTU值） — `FABRICMTU.md`
-- [[configobject/UNC/20.15.2/FABRICSUBHEALTHY]] · FABRICSUBHEALTHY（FABRIC内联口亚健康信息） — `FABRICSUBHEALTHY.md`
-- [[configobject/UNC/20.15.2/FAILHANDLING]] · FAILHANDLING（融合计费模板故障处理动作） — `FAILHANDLING.md`
-- [[configobject/UNC/20.15.2/FASTRECOVERY]] · FASTRECOVERY（全局业务快速恢复配置） — `FASTRECOVERY.md`
-- [[configobject/UNC/20.15.2/FAULTCHECKBYFABRIC]] · FAULTCHECKBYFABRIC（故障快速检测配置信息） — `FAULTCHECKBYFABRIC.md`
-- [[configobject/UNC/20.15.2/FAULTDETECT]] · FAULTDETECT（故障策略信息） — `FAULTDETECT.md`
-- [[configobject/UNC/20.15.2/FAULTLNKDETCFG]] · FAULTLNKDETCFG（故障链路探测配置） — `FAULTLNKDETCFG.md`
-- [[configobject/UNC/20.15.2/FCSWITCH]] · FCSWITCH（流控开关） — `FCSWITCH.md`
-- [[configobject/UNC/20.15.2/FEIPSTSEND]] · FEIPSTSEND（PST广播开关状态） — `FEIPSTSEND.md`
-- [[configobject/UNC/20.15.2/FHBYPASS]] · FHBYPASS（旁路失败处理的配置参数） — `FHBYPASS.md`
-- [[configobject/UNC/20.15.2/FILEDELPOLICY]] · FILEDELPOLICY（文件删除策略） — `FILEDELPOLICY.md`
-- [[configobject/UNC/20.15.2/FIXEDFC]] · FIXEDFC（固定速率流控信息） — `FIXEDFC.md`
-- [[configobject/UNC/20.15.2/FLOWCTRLBUF]] · FLOWCTRLBUF（流量控制缓存配置） — `FLOWCTRLBUF.md`
-- [[configobject/UNC/20.15.2/FLOWCTRLPARA]] · FLOWCTRLPARA（流控系统参数） — `FLOWCTRLPARA.md`
-- [[configobject/UNC/20.15.2/FLOWCTRLQUE]] · FLOWCTRLQUE（流控队列信息） — `FLOWCTRLQUE.md`
-- [[configobject/UNC/20.15.2/FOOLPROOFSWITCH]] · FOOLPROOFSWITCH（防呆开关状态） — `FOOLPROOFSWITCH.md`
-- [[configobject/UNC/20.15.2/FWDFCPARA]] · FWDFCPARA（转发面流控参数） — `FWDFCPARA.md`
-- [[configobject/UNC/20.15.2/FWDPARA]] · FWDPARA（转发参数） — `FWDPARA.md`
-- [[configobject/UNC/20.15.2/FWSOFTPARA]] · FWSOFTPARA（ServiceFabric软参） — `FWSOFTPARA.md`
-- [[configobject/UNC/20.15.2/FWSOFTPARABITS]] · FWSOFTPARABITS（ServiceFabric软参比特位） — `FWSOFTPARABITS.md`
-- [[configobject/UNC/20.15.2/GA5GREUSEDAVP]] · GA5GREUSEDAVP（5G用户接入时，Ga接口重用字段的填写方式） — `GA5GREUSEDAVP.md`
-- [[configobject/UNC/20.15.2/GB]] · GB（Gb通用信息） — `GB.md`
-- [[configobject/UNC/20.15.2/GBACKOFFTIME]] · GBACKOFFTIME（全局Back-off Time信息） — `GBACKOFFTIME.md`
-- [[configobject/UNC/20.15.2/GBDETACH]] · GBDETACH（Gb分离非活动用户参数） — `GBDETACH.md`
-- [[configobject/UNC/20.15.2/GBLOCPORTRGE]] · GBLOCPORTRGE（本端端口号选择范围） — `GBLOCPORTRGE.md`
-- [[configobject/UNC/20.15.2/GBSM]] · GBSM（Gb模式SM协议参数） — `GBSM.md`
-- [[configobject/UNC/20.15.2/GBSMPROCTRL]] · GBSMPROCTRL（Gb模式SM流程控制参数） — `GBSMPROCTRL.md`
-- [[configobject/UNC/20.15.2/GCSMOOTHSWITCH]] · GCSMOOTHSWITCH（GC平滑开关） — `GCSMOOTHSWITCH.md`
-- [[configobject/UNC/20.15.2/GLBAPNRATECTRL]] · GLBAPNRATECTRL（全局APN速率控制配置） — `GLBAPNRATECTRL.md`
-- [[configobject/UNC/20.15.2/GLBCDRFLDTEMP]] · GLBCDRFLDTEMP（全局话单模板） — `GLBCDRFLDTEMP.md`
-- [[configobject/UNC/20.15.2/GLBCGGROUP]] · GLBCGGROUP（全局CG组） — `GLBCGGROUP.md`
-- [[configobject/UNC/20.15.2/GLBCHARGECHAR]] · GLBCHARGECHAR（对本地用户、漫游用户、拜访用户所采用的计费属性） — `GLBCHARGECHAR.md`
-- [[configobject/UNC/20.15.2/GLBCHRFUNC]] · GLBCHRFUNC（全局CHR功能配置） — `GLBCHRFUNC.md`
-- [[configobject/UNC/20.15.2/GLBDFTCHFGROUP]] · GLBDFTCHFGROUP（全局默认CHF组） — `GLBDFTCHFGROUP.md`
-- [[configobject/UNC/20.15.2/GLBEDRXATTR]] · GLBEDRXATTR（全局终端接入eDRX模式属性） — `GLBEDRXATTR.md`
-- [[configobject/UNC/20.15.2/GLBIPV6INFID]] · GLBIPV6INFID（整机IPv6接口ID配置） — `GLBIPV6INFID.md`
-- [[configobject/UNC/20.15.2/GLBPGWCHGPAUSE]] · GLBPGWCHGPAUSE（全局计费暂停配置） — `GLBPGWCHGPAUSE.md`
-- [[configobject/UNC/20.15.2/GLBRDSACCT]] · GLBRDSACCT（全局RADIUS Accounting配置） — `GLBRDSACCT.md`
-- [[configobject/UNC/20.15.2/GLBSCTPPARA]] · GLBSCTPPARA（SCTP全局参数） — `GLBSCTPPARA.md`
-- [[configobject/UNC/20.15.2/GLBTARIFFGROUP]] · GLBTARIFFGROUP（全局费率切换组） — `GLBTARIFFGROUP.md`
-- [[configobject/UNC/20.15.2/GLOBALDNS]] · GLOBALDNS（系统默认DNS） — `GLOBALDNS.md`
-- [[configobject/UNC/20.15.2/GLOBALFABRICOAM]] · GLOBALFABRICOAM（OAM全局配置） — `GLOBALFABRICOAM.md`
-- [[configobject/UNC/20.15.2/GLOBALIMS]] · GLOBALIMS（全局IMS互通配置信息） — `GLOBALIMS.md`
-- [[configobject/UNC/20.15.2/GLOBALNBNS]] · GLOBALNBNS（系统默认NBNS） — `GLOBALNBNS.md`
-- [[configobject/UNC/20.15.2/GLOBALWIFILTEHO]] · GLOBALWIFILTEHO（全局E-UTRAN和WLAN互操作控制属性） — `GLOBALWIFILTEHO.md`
-- [[configobject/UNC/20.15.2/GMM]] · GMM（Gb模式MM协议参数） — `GMM.md`
-- [[configobject/UNC/20.15.2/GMMPROCTRL]] · GMMPROCTRL（Gb模式移动性管理流程控制参数） — `GMMPROCTRL.md`
-- [[configobject/UNC/20.15.2/GMMPTMSIREALLOC]] · GMMPTMSIREALLOC（Gb模式PTMSI重分配控制参数） — `GMMPTMSIREALLOC.md`
-- [[configobject/UNC/20.15.2/GTPCFIXEDFC]] · GTPCFIXEDFC（指定消息类型固定速率流控信息） — `GTPCFIXEDFC.md`
-- [[configobject/UNC/20.15.2/GTPCFUNCPARA]] · GTPCFUNCPARA（GTP-C功能参数） — `GTPCFUNCPARA.md`
-- [[configobject/UNC/20.15.2/GTPPUB]] · GTPPUB（GTP-C协议参数） — `GTPPUB.md`
-- [[configobject/UNC/20.15.2/GTPUCTRL]] · GTPUCTRL（用户面控制参数） — `GTPUCTRL.md`
-- [[configobject/UNC/20.15.2/GTPUPARA]] · GTPUPARA（GTP-U协议参数） — `GTPUPARA.md`
-- [[configobject/UNC/20.15.2/GTSM]] · GTSM（GTSM全局配置属性） — `GTSM.md`
-- [[configobject/UNC/20.15.2/GWOFFLOADPARA]] · GWOFFLOADPARA（网关迁移参数） — `GWOFFLOADPARA.md`
-- [[configobject/UNC/20.15.2/GWPROXYFUNC]] · GWPROXYFUNC（网关Proxy功能配置） — `GWPROXYFUNC.md`
-- [[configobject/UNC/20.15.2/GY5GREUSEDAVP]] · GY5GREUSEDAVP（5G用户接入时，Gy接口重用字段的填写方式） — `GY5GREUSEDAVP.md`
-- [[configobject/UNC/20.15.2/HAFEDETECT]] · HAFEDETECT（HAFETCD网络亚健康探测参数） — `HAFEDETECT.md`
-- [[configobject/UNC/20.15.2/HAFFUNC]] · HAFFUNC（HAF服务内部功能的参数） — `HAFFUNC.md`
-- [[configobject/UNC/20.15.2/HBTMSUPPRESSED]] · HBTMSUPPRESSED（NRF心跳超时抑制时长） — `HBTMSUPPRESSED.md`
-- [[configobject/UNC/20.15.2/HIGHRISKPERIOD]] · HIGHRISKPERIOD（高危时间段提示状态） — `HIGHRISKPERIOD.md`
-- [[configobject/UNC/20.15.2/HLRBYPASS]] · HLRBYPASS（HLR故障Bypass功能控制参数） — `HLRBYPASS.md`
-- [[configobject/UNC/20.15.2/HLRFIXEDFC]] · HLRFIXEDFC（VLR向HLR发送请求的固定速率流控） — `HLRFIXEDFC.md`
-- [[configobject/UNC/20.15.2/HOLDINGTIME]] · HOLDINGTIME（DCC模板用户持续时长） — `HOLDINGTIME.md`
-- [[configobject/UNC/20.15.2/HOSTGLBCONFIG]] · HOSTGLBCONFIG（主机收发全局属性） — `HOSTGLBCONFIG.md`
-- [[configobject/UNC/20.15.2/HOSTSTCGLB]] · HOSTSTCGLB（全局协议报文统计配置） — `HOSTSTCGLB.md`
-- [[configobject/UNC/20.15.2/HSFNTIME]] · HSFNTIME（H-SFN参考时间） — `HSFNTIME.md`
-- [[configobject/UNC/20.15.2/HSMFCHGCTRL]] · HSMFCHGCTRL（漫游用户在归属地的计费方式和漫游参数的协商方式） — `HSMFCHGCTRL.md`
-- [[configobject/UNC/20.15.2/HSMFCOMMONSW]] · HSMFCOMMONSW（H-SMF通用控制开关） — `HSMFCOMMONSW.md`
-- [[configobject/UNC/20.15.2/HSSBYPASS]] · HSSBYPASS（HSS故障Bypass功能控制参数） — `HSSBYPASS.md`
-- [[configobject/UNC/20.15.2/HTR]] · HTR（HTR功能） — `HTR.md`
-- [[configobject/UNC/20.15.2/HTTPCCACONF]] · HTTPCCACONF（HTTP CCA属性） — `HTTPCCACONF.md`
-- [[configobject/UNC/20.15.2/HTTPCONF]] · HTTPCONF（HTTP属性） — `HTTPCONF.md`
-- [[configobject/UNC/20.15.2/HTTPESCAPE]] · HTTPESCAPE（HTTP对于URL转义的参数） — `HTTPESCAPE.md`
-- [[configobject/UNC/20.15.2/HTTPFCCONF]] · HTTPFCCONF（HTTP流控属性） — `HTTPFCCONF.md`
-- [[configobject/UNC/20.15.2/HTTPFIXEDFCMSG]] · HTTPFIXEDFCMSG（HTTP指定消息类型固定速率流控信息） — `HTTPFIXEDFCMSG.md`
-- [[configobject/UNC/20.15.2/HTTPFQDNSW]] · HTTPFQDNSW（HTTP是否支持FQDN） — `HTTPFQDNSW.md`
-- [[configobject/UNC/20.15.2/HTTPGLBFIXEDBWFC]] · HTTPGLBFIXEDBWFC（HTTP全局固定带宽流控） — `HTTPGLBFIXEDBWFC.md`
-- [[configobject/UNC/20.15.2/HTTPHTRCFG]] · HTTPHTRCFG（HTR流控全局配置） — `HTTPHTRCFG.md`
-- [[configobject/UNC/20.15.2/HTTPINFORPT]] · HTTPINFORPT（HTTP连接信息上报参数） — `HTTPINFORPT.md`
-- [[configobject/UNC/20.15.2/HTTPMEMFC]] · HTTPMEMFC（HTTP内存流控） — `HTTPMEMFC.md`
-- [[configobject/UNC/20.15.2/HTTPMSGLOGPARA]] · HTTPMSGLOGPARA（HTTP消息日志参数） — `HTTPMSGLOGPARA.md`
-- [[configobject/UNC/20.15.2/HTTPSRVLBSW]] · HTTPSRVLBSW（HTTP服务端负载重均衡功能） — `HTTPSRVLBSW.md`
-- [[configobject/UNC/20.15.2/HVNEGRCPSW]] · HVNEGRCPSW（漫游参数协商开关） — `HVNEGRCPSW.md`
-- [[configobject/UNC/20.15.2/IFCMCFG]] · IFCMCFG（IFCM配置信息） — `IFCMCFG.md`
-- [[configobject/UNC/20.15.2/IFDSCP]] · IFDSCP（接口DSCP配置） — `IFDSCP.md`
-- [[configobject/UNC/20.15.2/IFDSCPMCR]] · IFDSCPMCR（接口DSCP配置） — `IFDSCPMCR.md`
-- [[configobject/UNC/20.15.2/IFFLOWALMTHD]] · IFFLOWALMTHD（接口带宽利用率告警阈值） — `IFFLOWALMTHD.md`
-- [[configobject/UNC/20.15.2/IFGLOBALCONFIG]] · IFGLOBALCONFIG（接口全局配置） — `IFGLOBALCONFIG.md`
-- [[configobject/UNC/20.15.2/IFIPV6ENABLE]] · IFIPV6ENABLE（接口IPv6使能） — `IFIPV6ENABLE.md`
-- [[configobject/UNC/20.15.2/IFIPV6ENABLEIPSEC]] · IFIPV6ENABLEIPSEC（接口IPv6使能） — `IFIPV6ENABLEIPSEC.md`
-- [[configobject/UNC/20.15.2/IFMTUFRAGMODE]] · IFMTUFRAGMODE（分片方式） — `IFMTUFRAGMODE.md`
-- [[configobject/UNC/20.15.2/IKEGLOBALCONFIG]] · IKEGLOBALCONFIG（IKE全局配置） — `IKEGLOBALCONFIG.md`
-- [[configobject/UNC/20.15.2/IMSBYPASSFUNC]] · IMSBYPASSFUNC（语音PCF/PCRF故障Bypass场景功能） — `IMSBYPASSFUNC.md`
-- [[configobject/UNC/20.15.2/IMSDDNFLOWCTRLCHR]] · IMSDDNFLOWCTRLCHR（IMS DDN流量控制上报CHR配置开关） — `IMSDDNFLOWCTRLCHR.md`
-- [[configobject/UNC/20.15.2/IMSVOPS]] · IMSVOPS（VoPS配置） — `IMSVOPS.md`
-- [[configobject/UNC/20.15.2/INNERSTAT]] · INNERSTAT（内统配置参数） — `INNERSTAT.md`
-- [[configobject/UNC/20.15.2/INNERTLSMODE]] · INNERTLSMODE（TLS模式） — `INNERTLSMODE.md`
-- [[configobject/UNC/20.15.2/INTERAMFFC]] · INTERAMFFC（Inter-AMF流控参数） — `INTERAMFFC.md`
-- [[configobject/UNC/20.15.2/INTERMMEFC]] · INTERMMEFC（Inter-MME流控参数） — `INTERMMEFC.md`
-- [[configobject/UNC/20.15.2/INTERMMEFIXFC]] · INTERMMEFIXFC（Inter-MME接入固定速率流控功能相关参数） — `INTERMMEFIXFC.md`
-- [[configobject/UNC/20.15.2/IPALLOCBYLOCGLBSW]] · IPALLOCBYLOCGLBSW（基于位置区地址分配的全局开关） — `IPALLOCBYLOCGLBSW.md`
-- [[configobject/UNC/20.15.2/IPALLOCBYLOCSW]] · IPALLOCBYLOCSW（基于位置区地址分配的开关） — `IPALLOCBYLOCSW.md`
-- [[configobject/UNC/20.15.2/IPALLOCBYUPFGLBSW]] · IPALLOCBYUPFGLBSW（基于UPF地址分配的全局开关） — `IPALLOCBYUPFGLBSW.md`
-- [[configobject/UNC/20.15.2/IPALLOCBYUPFSW]] · IPALLOCBYUPFSW（基于UPF的地址分配开关） — `IPALLOCBYUPFSW.md`
-- [[configobject/UNC/20.15.2/IPALLOCRULE]] · IPALLOCRULE（全局地址分配规则） — `IPALLOCRULE.md`
-- [[configobject/UNC/20.15.2/IPAREAGPCTRL]] · IPAREAGPCTRL（基于位置分配IP地址策略） — `IPAREAGPCTRL.md`
-- [[configobject/UNC/20.15.2/IPCONVERGENCE]] · IPCONVERGENCE（Bi口IPCONVERGENCE开关状态） — `IPCONVERGENCE.md`
-- [[configobject/UNC/20.15.2/IPEN7SESSFUNC]] · IPEN7SESSFUNC（智能双N7会话特性是否使能） — `IPEN7SESSFUNC.md`
-- [[configobject/UNC/20.15.2/IPFRR]] · IPFRR（IP FRR） — `IPFRR.md`
-- [[configobject/UNC/20.15.2/IPOPTSECURITY]] · IPOPTSECURITY（IP选项安全配置） — `IPOPTSECURITY.md`
-- [[configobject/UNC/20.15.2/IPPOOLALMTHD]] · IPPOOLALMTHD（本地地址池组使用率告警阈值） — `IPPOOLALMTHD.md`
-- [[configobject/UNC/20.15.2/IPSECURITYSWITCH]] · IPSECURITYSWITCH（IP选项安全开关） — `IPSECURITYSWITCH.md`
-- [[configobject/UNC/20.15.2/IPV4THRESHOLD]] · IPV4THRESHOLD（IPv4阈值） — `IPV4THRESHOLD.md`
-- [[configobject/UNC/20.15.2/IPV6GLOBALCONFIG]] · IPV6GLOBALCONFIG（IPv6全局配置） — `IPV6GLOBALCONFIG.md`
-- [[configobject/UNC/20.15.2/IPV6PARA]] · IPV6PARA（IPv6参数） — `IPV6PARA.md`
-- [[configobject/UNC/20.15.2/IPV6THRESHOLD]] · IPV6THRESHOLD（IPv6阈值） — `IPV6THRESHOLD.md`
-- [[configobject/UNC/20.15.2/ISMFASMFRESET]] · ISMFASMFRESET（I-SMF对A-SMF的故障恢复策略） — `ISMFASMFRESET.md`
-- [[configobject/UNC/20.15.2/IUCONNPARA]] · IUCONNPARA（Iu连接控制参数） — `IUCONNPARA.md`
-- [[configobject/UNC/20.15.2/IUDETACH]] · IUDETACH（Iu分离非活动用户参数） — `IUDETACH.md`
-- [[configobject/UNC/20.15.2/IULOAD]] · IULOAD（用户Iu连接负荷状态） — `IULOAD.md`
-- [[configobject/UNC/20.15.2/IUPFSELFAIL]] · IUPFSELFAIL（I-UPF选择失败处理方式） — `IUPFSELFAIL.md`
-- [[configobject/UNC/20.15.2/IUSM]] · IUSM（Iu模式SM协议参数） — `IUSM.md`
-- [[configobject/UNC/20.15.2/IUSMPROCTRL]] · IUSMPROCTRL（Iu模式SM流程控制参数） — `IUSMPROCTRL.md`
-- [[configobject/UNC/20.15.2/KPIMONPARA]] · KPIMONPARA（KPI监控参数） — `KPIMONPARA.md`
-- [[configobject/UNC/20.15.2/KPITHD]] · KPITHD（KPI门限） — `KPITHD.md`
-- [[configobject/UNC/20.15.2/KUBEPROBE]] · KUBEPROBE（是否放通就绪状态检测） — `KUBEPROBE.md`
-- [[configobject/UNC/20.15.2/L2TPKEY]] · L2TPKEY（L2TP加密配置） — `L2TPKEY.md`
-- [[configobject/UNC/20.15.2/LBFC]] · LBFC（流控开关） — `LBFC.md`
-- [[configobject/UNC/20.15.2/LBSOFTPARA]] · LBSOFTPARA（CSLB软件调试参数表） — `LBSOFTPARA.md`
-- [[configobject/UNC/20.15.2/LBTNIPINIPSWITCH]] · LBTNIPINIPSWITCH（CSLB隧道IP-in-IP开关） — `LBTNIPINIPSWITCH.md`
-- [[configobject/UNC/20.15.2/LBTNTSTPARA]] · LBTNTSTPARA（CSLB隧道探测参数） — `LBTNTSTPARA.md`
-- [[configobject/UNC/20.15.2/LCSPARA]] · LCSPARA（LCS参数表记录） — `LCSPARA.md`
-- [[configobject/UNC/20.15.2/LDPBFD]] · LDPBFD（LDP BFD配置） — `LDPBFD.md`
-- [[configobject/UNC/20.15.2/LDPGLOBAL]] · LDPGLOBAL（LDP全局配置） — `LDPGLOBAL.md`
-- [[configobject/UNC/20.15.2/LICCTRLALM]] · LICCTRLALM（License容量告警配置） — `LICCTRLALM.md`
-- [[configobject/UNC/20.15.2/LICENSESWITCH]] · LICENSESWITCH（License配置项开关） — `LICENSESWITCH.md`
-- [[configobject/UNC/20.15.2/LIMITMBSWITCH]] · LIMITMBSWITCH（有界邮箱开关配置状态） — `LIMITMBSWITCH.md`
-- [[configobject/UNC/20.15.2/LINKCONGCTRL]] · LINKCONGCTRL（Diameter链路拥塞控制） — `LINKCONGCTRL.md`
-- [[configobject/UNC/20.15.2/LINKMIGCTRL]] · LINKMIGCTRL（链路迁移控制参数） — `LINKMIGCTRL.md`
-- [[configobject/UNC/20.15.2/LINKMTU]] · LINKMTU（Link MTU值） — `LINKMTU.md`
-- [[configobject/UNC/20.15.2/LNKCTRLLOG]] · LNKCTRLLOG（链路控制消息日志开关） — `LNKCTRLLOG.md`
-- [[configobject/UNC/20.15.2/LNKMONITOR]] · LNKMONITOR（链路频繁闪断监控配置） — `LNKMONITOR.md`
-- [[configobject/UNC/20.15.2/LOADCHECKINFO]] · LOADCHECKINFO（CSLB负载不均衡检测功能的参数） — `LOADCHECKINFO.md`
-- [[configobject/UNC/20.15.2/LOCATIONREPORT]] · LOCATIONREPORT（用户位置信息） — `LOCATIONREPORT.md`
-- [[configobject/UNC/20.15.2/LOGCLEANPOLICY]] · LOGCLEANPOLICY（日志老化策略） — `LOGCLEANPOLICY.md`
-- [[configobject/UNC/20.15.2/LOGIFDSCP]] · LOGIFDSCP（逻辑接口DSCP配置） — `LOGIFDSCP.md`
-- [[configobject/UNC/20.15.2/LOGINALM]] · LOGINALM（登录告警策略） — `LOGINALM.md`
-- [[configobject/UNC/20.15.2/LOWPRIAPNFC]] · LOWPRIAPNFC（低优先级APN流控参数） — `LOWPRIAPNFC.md`
-- [[configobject/UNC/20.15.2/LOWPRIOFC]] · LOWPRIOFC（低优先级流控参数） — `LOWPRIOFC.md`
-- [[configobject/UNC/20.15.2/LSPVGLOBALCFG]] · LSPVGLOBALCFG（LSPV全局属性） — `LSPVGLOBALCFG.md`
-- [[configobject/UNC/20.15.2/LTEMRATVALUE]] · LTEMRATVALUE（LTE-M用户的RAT值） — `LTEMRATVALUE.md`
-- [[configobject/UNC/20.15.2/M2MCTRL]] · M2MCTRL（M2M控制参数） — `M2MCTRL.md`
-- [[configobject/UNC/20.15.2/MAINTAINIMSI]] · MAINTAINIMSI（在线承载为保留承载） — `MAINTAINIMSI.md`
-- [[configobject/UNC/20.15.2/MAPFIXEDFC]] · MAPFIXEDFC（SMS的MAP接口固定速率流控） — `MAPFIXEDFC.md`
-- [[configobject/UNC/20.15.2/MAPFUNC]] · MAPFUNC（MAP功能配置） — `MAPFUNC.md`
-- [[configobject/UNC/20.15.2/MASALMRPTMODE]] · MASALMRPTMODE（5G告警上报模式） — `MASALMRPTMODE.md`
-- [[configobject/UNC/20.15.2/MASTERPCRF]] · MASTERPCRF（主用PCRF） — `MASTERPCRF.md`
-- [[configobject/UNC/20.15.2/MCSWITCH]] · MCSWITCH（多连接开关配置数据） — `MCSWITCH.md`
-- [[configobject/UNC/20.15.2/MDTCTRL]] · MDTCTRL（MDT控制参数） — `MDTCTRL.md`
-- [[configobject/UNC/20.15.2/MEASMETRIC]] · MEASMETRIC（话统测量指标参数） — `MEASMETRIC.md`
-- [[configobject/UNC/20.15.2/MEASMU]] · MEASMU（话统测量单元模型） — `MEASMU.md`
-- [[configobject/UNC/20.15.2/MEPINTERACT]] · MEPINTERACT（MEP_SMF联动功能开关） — `MEPINTERACT.md`
-- [[configobject/UNC/20.15.2/MMFUNC]] · MMFUNC（移动性管理扩展功能） — `MMFUNC.md`
-- [[configobject/UNC/20.15.2/MONNFTHR]] · MONNFTHR（正常状态网元的占比阈值） — `MONNFTHR.md`
-- [[configobject/UNC/20.15.2/MPLSSITE]] · MPLSSITE（MPLS全局配置） — `MPLSSITE.md`
-- [[configobject/UNC/20.15.2/MPSARP]] · MPSARP（MPS ARP配置） — `MPSARP.md`
-- [[configobject/UNC/20.15.2/MSCCLEVDFTBEH]] · MSCCLEVDFTBEH（DCC模板MSCC层缺省返回码动作） — `MSCCLEVDFTBEH.md`
-- [[configobject/UNC/20.15.2/MSCSELPLCY]] · MSCSELPLCY（MSC选择策略） — `MSCSELPLCY.md`
-- [[configobject/UNC/20.15.2/MSETCDTTL]] · MSETCDTTL（租约时长） — `MSETCDTTL.md`
-- [[configobject/UNC/20.15.2/MSFAULTALARM]] · MSFAULTALARM（告警开关配置数据） — `MSFAULTALARM.md`
-- [[configobject/UNC/20.15.2/MSFAULTTOLERANCE]] · MSFAULTTOLERANCE（故障检测参数） — `MSFAULTTOLERANCE.md`
-- [[configobject/UNC/20.15.2/MSSCOMMMATCH]] · MSSCOMMMATCH（通信模块规则匹配开关） — `MSSCOMMMATCH.md`
-- [[configobject/UNC/20.15.2/MSSDEBUGSWITCH]] · MSSDEBUGSWITCH（维测信息统计开关） — `MSSDEBUGSWITCH.md`
-- [[configobject/UNC/20.15.2/MSSDEBUGSWITCHM]] · MSSDEBUGSWITCHM（维测信息统计开关） — `MSSDEBUGSWITCHM.md`
-- [[configobject/UNC/20.15.2/MSSLOGRULE]] · MSSLOGRULE（Log过滤或非抑制开关） — `MSSLOGRULE.md`
-- [[configobject/UNC/20.15.2/MSSPBUFREUSE]] · MSSPBUFREUSE（PBUF重用信息） — `MSSPBUFREUSE.md`
-- [[configobject/UNC/20.15.2/MSSPBUFTRACE]] · MSSPBUFTRACE（PBUF轨迹设置的开关） — `MSSPBUFTRACE.md`
-- [[configobject/UNC/20.15.2/MSSPBUFTRACELT]] · MSSPBUFTRACELT（PBUF轨迹开关状态和持续时间） — `MSSPBUFTRACELT.md`
-- [[configobject/UNC/20.15.2/MSSPMDMATCH]] · MSSPMDMATCH（端口报文匹配统计信息） — `MSSPMDMATCH.md`
-- [[configobject/UNC/20.15.2/MSSRULE]] · MSSRULE（匹配规则） — `MSSRULE.md`
-- [[configobject/UNC/20.15.2/MSSRULEM]] · MSSRULEM（匹配规则） — `MSSRULEM.md`
-- [[configobject/UNC/20.15.2/MSSTBMFILTER]] · MSSTBMFILTER（MSS表项开关过滤状态） — `MSSTBMFILTER.md`
-- [[configobject/UNC/20.15.2/MSSWORKFILTER]] · MSSWORKFILTER（Work过滤规则信息） — `MSSWORKFILTER.md`
-- [[configobject/UNC/20.15.2/MTSCFG]] · MTSCFG（消息跟踪配置参数） — `MTSCFG.md`
-- [[configobject/UNC/20.15.2/MULSMFPDUREEPOL]] · MULSMFPDUREEPOL（是否支持多SMFInfo场景下的会话重建功能） — `MULSMFPDUREEPOL.md`
-- [[configobject/UNC/20.15.2/MULTIDNNCTRL]] · MULTIDNNCTRL（2B2C漫游双DNN特性相关的功能控制） — `MULTIDNNCTRL.md`
-- [[configobject/UNC/20.15.2/MULTISRVPLMNEN]] · MULTISRVPLMNEN（多Serving Plmn增强功能） — `MULTISRVPLMNEN.md`
-- [[configobject/UNC/20.15.2/N16ASMFDATACHK]] · N16ASMFDATACHK（N16aSMF数据核查功能） — `N16ASMFDATACHK.md`
-- [[configobject/UNC/20.15.2/N2DTLSPARA]] · N2DTLSPARA（N2接口的DTLS参数） — `N2DTLSPARA.md`
-- [[configobject/UNC/20.15.2/N2FIXEDFC]] · N2FIXEDFC（N2接口固定速率流控信息） — `N2FIXEDFC.md`
-- [[configobject/UNC/20.15.2/N2FIXEDFCBYMSG]] · N2FIXEDFCBYMSG（指定消息类型固定速率流控信息） — `N2FIXEDFCBYMSG.md`
-- [[configobject/UNC/20.15.2/N2OVERLOAD]] · N2OVERLOAD（N2过载控制信息） — `N2OVERLOAD.md`
-- [[configobject/UNC/20.15.2/N2PAGINGFCPLCY]] · N2PAGINGFCPLCY（N2模式寻呼消息反压流控策略） — `N2PAGINGFCPLCY.md`
-- [[configobject/UNC/20.15.2/N40APIVER]] · N40APIVER（N40接口协议版本和需要使用的FeatureList） — `N40APIVER.md`
-- [[configobject/UNC/20.15.2/N40MSGCTRL]] · N40MSGCTRL（N40接口消息的控制参数） — `N40MSGCTRL.md`
-- [[configobject/UNC/20.15.2/N40MSGSTG]] · N40MSGSTG（缓存开关、回放间隔、回放速率） — `N40MSGSTG.md`
-- [[configobject/UNC/20.15.2/N40QUOTACTRL]] · N40QUOTACTRL（N40接口配额的控制参数） — `N40QUOTACTRL.md`
-- [[configobject/UNC/20.15.2/N4CHGMSGCTRL]] · N4CHGMSGCTRL（N4接口计费消息相关控制参数） — `N4CHGMSGCTRL.md`
-- [[configobject/UNC/20.15.2/N4FIXEDFC]] · N4FIXEDFC（指定消息类型固定速率流控信息） — `N4FIXEDFC.md`
-- [[configobject/UNC/20.15.2/N7RCVATTRCTRL]] · N7RCVATTRCTRL（N7接收信元处理控制） — `N7RCVATTRCTRL.md`
-- [[configobject/UNC/20.15.2/N7SNDATTRCTRL]] · N7SNDATTRCTRL（N7发送信元处理控制） — `N7SNDATTRCTRL.md`
-- [[configobject/UNC/20.15.2/NASCMPT]] · NASCMPT（NAS兼容性参数） — `NASCMPT.md`
-- [[configobject/UNC/20.15.2/NBEMM]] · NBEMM（NB-S1模式MM协议参数） — `NBEMM.md`
-- [[configobject/UNC/20.15.2/NBESM]] · NBESM（NB-S1模式SM协议参数） — `NBESM.md`
-- [[configobject/UNC/20.15.2/NBFC]] · NBFC（查看NB流控数据） — `NBFC.md`
-- [[configobject/UNC/20.15.2/NBIOTRATVALUE]] · NBIOTRATVALUE（NB-IoT终端配置的RAT值） — `NBIOTRATVALUE.md`
-- [[configobject/UNC/20.15.2/NCCPOLICY]] · NCCPOLICY（NCC策略） — `NCCPOLICY.md`
-- [[configobject/UNC/20.15.2/NCGCGFSFP]] · NCGCGFSFP（软参） — `NCGCGFSFP.md`
-- [[configobject/UNC/20.15.2/NCGSOFTPARA]] · NCGSOFTPARA（NCG软参） — `NCGSOFTPARA.md`
-- [[configobject/UNC/20.15.2/NCGSOFTPARAOFBIT]] · NCGSOFTPARAOFBIT（NCG软件参数比特位） — `NCGSOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/NDGLOBALCONFIG]] · NDGLOBALCONFIG（IPv6 ND系统配置） — `NDGLOBALCONFIG.md`
-- [[configobject/UNC/20.15.2/NDIFCONFIG]] · NDIFCONFIG（IPv6 ND接口配置） — `NDIFCONFIG.md`
-- [[configobject/UNC/20.15.2/NETSUBHEALTH]] · NETSUBHEALTH（网络亚健康参数） — `NETSUBHEALTH.md`
-- [[configobject/UNC/20.15.2/NEWCERTSWITCH]] · NEWCERTSWITCH（证书开关状态） — `NEWCERTSWITCH.md`
-- [[configobject/UNC/20.15.2/NFDISCPLCY]] · NFDISCPLCY（NF的服务发现策略） — `NFDISCPLCY.md`
-- [[configobject/UNC/20.15.2/NFMGMTTIMER]] · NFMGMTTIMER（NF管理模块的定时器配置） — `NFMGMTTIMER.md`
-- [[configobject/UNC/20.15.2/NFNRFMGMTPARA]] · NFNRFMGMTPARA（NF与NRF间的全局管理参数） — `NFNRFMGMTPARA.md`
-- [[configobject/UNC/20.15.2/NFREGIONINFO]] · NFREGIONINFO（本端NF大区和省份数据管理参数） — `NFREGIONINFO.md`
-- [[configobject/UNC/20.15.2/NFSELPLCY]] · NFSELPLCY（目标NF选择策略） — `NFSELPLCY.md`
-- [[configobject/UNC/20.15.2/NFUPDATE]] · NFUPDATE（更新NF注册信息） — `NFUPDATE.md`
-- [[configobject/UNC/20.15.2/NGACCCHRCFG]] · NGACCCHRCFG（NG接入CHR上报策略） — `NGACCCHRCFG.md`
-- [[configobject/UNC/20.15.2/NGALMRPTMODE]] · NGALMRPTMODE（5G告警上报模式） — `NGALMRPTMODE.md`
-- [[configobject/UNC/20.15.2/NGAPCMPT]] · NGAPCMPT（NGAP兼容性参数） — `NGAPCMPT.md`
-- [[configobject/UNC/20.15.2/NGAPTIMER]] · NGAPTIMER（N2定时器参数） — `NGAPTIMER.md`
-- [[configobject/UNC/20.15.2/NGAREARESELCTRL]] · NGAREARESELCTRL（AMF区域重选功能控制参数） — `NGAREARESELCTRL.md`
-- [[configobject/UNC/20.15.2/NGCBSFUNC]] · NGCBSFUNC（小区广播功能） — `NGCBSFUNC.md`
-- [[configobject/UNC/20.15.2/NGCHRSTORCFG]] · NGCHRSTORCFG（AMF小范围CHR存储配置） — `NGCHRSTORCFG.md`
-- [[configobject/UNC/20.15.2/NGDNS]] · NGDNS（DNS运行参数） — `NGDNS.md`
-- [[configobject/UNC/20.15.2/NGDNSCACHE]] · NGDNSCACHE（DNS缓存） — `NGDNSCACHE.md`
-- [[configobject/UNC/20.15.2/NGEMGSRVFUNC]] · NGEMGSRVFUNC（5G紧急服务功能） — `NGEMGSRVFUNC.md`
-- [[configobject/UNC/20.15.2/NGIMSVOPS]] · NGIMSVOPS（VoPS配置） — `NGIMSVOPS.md`
-- [[configobject/UNC/20.15.2/NGIPAREACTRL]] · NGIPAREACTRL（基于位置的地址分配控制参数） — `NGIPAREACTRL.md`
-- [[configobject/UNC/20.15.2/NGLANFUNC]] · NGLANFUNC（NGLAN扩展功能） — `NGLANFUNC.md`
-- [[configobject/UNC/20.15.2/NGLCSPARA]] · NGLCSPARA（5G定位服务参数） — `NGLCSPARA.md`
-- [[configobject/UNC/20.15.2/NGM2MCTRL]] · NGM2MCTRL（5G M2M控制参数） — `NGM2MCTRL.md`
-- [[configobject/UNC/20.15.2/NGMDTCTRL]] · NGMDTCTRL（5G MDT控制参数） — `NGMDTCTRL.md`
-- [[configobject/UNC/20.15.2/NGMMFUNC]] · NGMMFUNC（5G移动性管理功能） — `NGMMFUNC.md`
-- [[configobject/UNC/20.15.2/NGMMPARA]] · NGMMPARA（5G MM协议参数） — `NGMMPARA.md`
-- [[configobject/UNC/20.15.2/NGMMPROCTRL]] · NGMMPROCTRL（5G移动性管理流程控制参数） — `NGMMPROCTRL.md`
-- [[configobject/UNC/20.15.2/NGNTNFUNC]] · NGNTNFUNC（卫星网络接入管理功能） — `NGNTNFUNC.md`
-- [[configobject/UNC/20.15.2/NGPAGINGCTRL]] · NGPAGINGCTRL（5G寻呼策略控制表） — `NGPAGINGCTRL.md`
-- [[configobject/UNC/20.15.2/NGRANACCCTRL]] · NGRANACCCTRL（5G基站接入控制策略） — `NGRANACCCTRL.md`
-- [[configobject/UNC/20.15.2/NGRANOVERLOADCTRL]] · NGRANOVERLOADCTRL（5G基站过载监控参数） — `NGRANOVERLOADCTRL.md`
-- [[configobject/UNC/20.15.2/NGSCTPPARA]] · NGSCTPPARA（N2接口SCTP协议参数） — `NGSCTPPARA.md`
-- [[configobject/UNC/20.15.2/NGSMARTDNNCL]] · NGSMARTDNNCL（智能分流功能） — `NGSMARTDNNCL.md`
-- [[configobject/UNC/20.15.2/NGSMARTPARA]] · NGSMARTPARA（5G信令抑制参数） — `NGSMARTPARA.md`
-- [[configobject/UNC/20.15.2/NGTAIPAGMONPARA]] · NGTAIPAGMONPARA（NG TAI组寻呼异常监控功能参数） — `NGTAIPAGMONPARA.md`
-- [[configobject/UNC/20.15.2/NOCDRALM]] · NOCDRALM（未接收到话单告警参数） — `NOCDRALM.md`
-- [[configobject/UNC/20.15.2/NODECHKPARA]] · NODECHKPARA（节点检测参数） — `NODECHKPARA.md`
-- [[configobject/UNC/20.15.2/NODEHEALCTRL]] · NODEHEALCTRL（Node自愈策略控制参数） — `NODEHEALCTRL.md`
-- [[configobject/UNC/20.15.2/NODEREPSWITCH]] · NODEREPSWITCH（节点查询自动修复开关） — `NODEREPSWITCH.md`
-- [[configobject/UNC/20.15.2/NONIPFUNC]] · NONIPFUNC（Non-IP功能配置） — `NONIPFUNC.md`
-- [[configobject/UNC/20.15.2/NOTIFYRSDPARA]] · NOTIFYRSDPARA（状态通知失败重传参数） — `NOTIFYRSDPARA.md`
-- [[configobject/UNC/20.15.2/NRFBIGPKGPARA]] · NRFBIGPKGPARA（NRF大包控制参数） — `NRFBIGPKGPARA.md`
-- [[configobject/UNC/20.15.2/NRFBNDWDFCPARA]] · NRFBNDWDFCPARA（NRF带宽流控配置） — `NRFBNDWDFCPARA.md`
-- [[configobject/UNC/20.15.2/NRFCONNPLCY]] · NRFCONNPLCY（NRF国际漫游连接策略） — `NRFCONNPLCY.md`
-- [[configobject/UNC/20.15.2/NRFDATACHK]] · NRFDATACHK（NRF数据一致性核查相关参数） — `NRFDATACHK.md`
-- [[configobject/UNC/20.15.2/NRFDETECTTIMER]] · NRFDETECTTIMER（NRF检测时长信息） — `NRFDETECTTIMER.md`
-- [[configobject/UNC/20.15.2/NRFDISCPARARULE]] · NRFDISCPARARULE（NF发现参数防呆规则） — `NRFDISCPARARULE.md`
-- [[configobject/UNC/20.15.2/NRFDISCREGNRULE]] · NRFDISCREGNRULE（服务发现区域识别规则） — `NRFDISCREGNRULE.md`
-- [[configobject/UNC/20.15.2/NRFDISCVERIFY]] · NRFDISCVERIFY（服务发现NF属性冲突核验参数） — `NRFDISCVERIFY.md`
-- [[configobject/UNC/20.15.2/NRFDRRTSTASW]] · NRFDRRTSTASW（NRF双活备份状态忽略开关） — `NRFDRRTSTASW.md`
-- [[configobject/UNC/20.15.2/NRFFCPARA]] · NRFFCPARA（流控等级对应的流控参数） — `NRFFCPARA.md`
-- [[configobject/UNC/20.15.2/NRFFCPKGMIX]] · NRFFCPKGMIX（NRF大小包协同返回功能参数） — `NRFFCPKGMIX.md`
-- [[configobject/UNC/20.15.2/NRFFUNCSW]] · NRFFUNCSW（NRF功能开关） — `NRFFUNCSW.md`
-- [[configobject/UNC/20.15.2/NRFGRTIMER]] · NRFGRTIMER（NRF容灾定时器时长） — `NRFGRTIMER.md`
-- [[configobject/UNC/20.15.2/NRFHOMEPLY]] · NRFHOMEPLY（NRF归属地默认策略） — `NRFHOMEPLY.md`
-- [[configobject/UNC/20.15.2/NRFINTERFUNC]] · NRFINTERFUNC（国际漫游功能参数） — `NRFINTERFUNC.md`
-- [[configobject/UNC/20.15.2/NRFIPWHITELSTSW]] · NRFIPWHITELSTSW（NF IP白名单开关） — `NRFIPWHITELSTSW.md`
-- [[configobject/UNC/20.15.2/NRFLINKMNGPARA]] · NRFLINKMNGPARA（NRF的链路管理参数） — `NRFLINKMNGPARA.md`
-- [[configobject/UNC/20.15.2/NRFLOGFCPARA]] · NRFLOGFCPARA（NRF日志流控参数） — `NRFLOGFCPARA.md`
-- [[configobject/UNC/20.15.2/NRFLOGSW]] · NRFLOGSW（NRF维护日志打印开关） — `NRFLOGSW.md`
-- [[configobject/UNC/20.15.2/NRFMATCHRULE]] · NRFMATCHRULE（服务发现最长匹配处理规则） — `NRFMATCHRULE.md`
-- [[configobject/UNC/20.15.2/NRFNFINFOFMT]] · NRFNFINFOFMT（NF私有信息格式） — `NRFNFINFOFMT.md`
-- [[configobject/UNC/20.15.2/NRFNFLSTCTLPLY]] · NRFNFLSTCTLPLY（NFINFOLIST处理策略） — `NRFNFLSTCTLPLY.md`
-- [[configobject/UNC/20.15.2/NRFNOTIFYFCPARA]] · NRFNOTIFYFCPARA（通知流控参数） — `NRFNOTIFYFCPARA.md`
-- [[configobject/UNC/20.15.2/NRFNOTIFYPLY]] · NRFNOTIFYPLY（NRF通知策略） — `NRFNOTIFYPLY.md`
-- [[configobject/UNC/20.15.2/NRFPATUPDIDXSW]] · NRFPATUPDIDXSW（PATCH更新携带下标处理开关） — `NRFPATUPDIDXSW.md`
-- [[configobject/UNC/20.15.2/NRFPKGRATIO]] · NRFPKGRATIO（NRF内外包长比例） — `NRFPKGRATIO.md`
-- [[configobject/UNC/20.15.2/NRFRGNPREFPLY]] · NRFRGNPREFPLY（NRF区域优选策略） — `NRFRGNPREFPLY.md`
-- [[configobject/UNC/20.15.2/NRFSMSFCUTPLY]] · NRFSMSFCUTPLY（SMSF割接场景NRF处理策略） — `NRFSMSFCUTPLY.md`
-- [[configobject/UNC/20.15.2/NRFSMSFSEGSW]] · NRFSMSFSEGSW（SMSF号段白名单功能开关） — `NRFSMSFSEGSW.md`
-- [[configobject/UNC/20.15.2/NRFSMSFWHLISTSW]] · NRFSMSFWHLISTSW（SMSF白名单开关） — `NRFSMSFWHLISTSW.md`
-- [[configobject/UNC/20.15.2/NRFSOFTPARA]] · NRFSOFTPARA（NRF软参） — `NRFSOFTPARA.md`
-- [[configobject/UNC/20.15.2/NRFSOFTPARAOFBIT]] · NRFSOFTPARAOFBIT（NRF软件参数比特位） — `NRFSOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/NRFSUBPARA]] · NRFSUBPARA（NRF订阅参数） — `NRFSUBPARA.md`
-- [[configobject/UNC/20.15.2/NRFSUBTHRESHOLD]] · NRFSUBTHRESHOLD（NF的订阅门限） — `NRFSUBTHRESHOLD.md`
-- [[configobject/UNC/20.15.2/NRFSUPFEATURES]] · NRFSUPFEATURES（NRF服务能力参数） — `NRFSUPFEATURES.md`
-- [[configobject/UNC/20.15.2/NRFTAKEPARARULE]] · NRFTAKEPARARULE（NF携带参数处理规则） — `NRFTAKEPARARULE.md`
-- [[configobject/UNC/20.15.2/NRFTIMER]] · NRFTIMER（NRF时长信息） — `NRFTIMER.md`
-- [[configobject/UNC/20.15.2/NRFVERIFYPARA]] · NRFVERIFYPARA（NF属性冲突核验参数） — `NRFVERIFYPARA.md`
-- [[configobject/UNC/20.15.2/NRFVISITPLY]] · NRFVISITPLY（NRF拜访地默认策略） — `NRFVISITPLY.md`
-- [[configobject/UNC/20.15.2/NRFWHITELISTSW]] · NRFWHITELISTSW（NF白名单开关） — `NRFWHITELISTSW.md`
-- [[configobject/UNC/20.15.2/NRRATVALUE]] · NRRATVALUE（5G接入用户的RAT填写值） — `NRRATVALUE.md`
-- [[configobject/UNC/20.15.2/NS]] · NS（NS参数） — `NS.md`
-- [[configobject/UNC/20.15.2/NSACTRL]] · NSACTRL（NSA控制参数） — `NSACTRL.md`
-- [[configobject/UNC/20.15.2/NSACTRLPROP]] · NSACTRLPROP（NSA控制处理配置） — `NSACTRLPROP.md`
-- [[configobject/UNC/20.15.2/NSARATVALUE]] · NSARATVALUE（NSA用户的RAT值） — `NSARATVALUE.md`
-- [[configobject/UNC/20.15.2/NSMAPPARA]] · NSMAPPARA（网络切片映射相关参数） — `NSMAPPARA.md`
-- [[configobject/UNC/20.15.2/NSSELPARA]] · NSSELPARA（网络切片选择相关参数） — `NSSELPARA.md`
-- [[configobject/UNC/20.15.2/NSSFBIGPKGPARA]] · NSSFBIGPKGPARA（NSSF大包控制参数） — `NSSFBIGPKGPARA.md`
-- [[configobject/UNC/20.15.2/NSSFFCPARA]] · NSSFFCPARA（流控等级对应的流控参数） — `NSSFFCPARA.md`
-- [[configobject/UNC/20.15.2/NSSFFCSWITCH]] · NSSFFCSWITCH（NSSF流控开关） — `NSSFFCSWITCH.md`
-- [[configobject/UNC/20.15.2/NSSFFUNCPARA]] · NSSFFUNCPARA（NSSF数据源以及切片选择流程返回信元） — `NSSFFUNCPARA.md`
-- [[configobject/UNC/20.15.2/NSSFFUNCSWITCH]] · NSSFFUNCSWITCH（NSSF功能开关） — `NSSFFUNCSWITCH.md`
-- [[configobject/UNC/20.15.2/NSSFFUNCTIMER]] · NSSFFUNCTIMER（NSSF功能时长） — `NSSFFUNCTIMER.md`
-- [[configobject/UNC/20.15.2/NSSFNTFYFCPARA]] · NSSFNTFYFCPARA（通知流控参数配置） — `NSSFNTFYFCPARA.md`
-- [[configobject/UNC/20.15.2/NSSFNTRSDPARA]] · NSSFNTRSDPARA（NSSF通知重传参数） — `NSSFNTRSDPARA.md`
-- [[configobject/UNC/20.15.2/NSSFRTNSMAXNUM]] · NSSFRTNSMAXNUM（NSSF响应切片最大数量配置） — `NSSFRTNSMAXNUM.md`
-- [[configobject/UNC/20.15.2/NSSFSOFTPARA]] · NSSFSOFTPARA（NSSF软参） — `NSSFSOFTPARA.md`
-- [[configobject/UNC/20.15.2/NSSFSOFTPARAOFBIT]] · NSSFSOFTPARAOFBIT（NSSF软件参数比特位） — `NSSFSOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/NSSFSUBTIMER]] · NSSFSUBTIMER（订阅时长） — `NSSFSUBTIMER.md`
-- [[configobject/UNC/20.15.2/NTPCFG]] · NTPCFG（NTP时间同步参数） — `NTPCFG.md`
-- [[configobject/UNC/20.15.2/NTPSFTD]] · NTPSFTD（NTP软参） — `NTPSFTD.md`
-- [[configobject/UNC/20.15.2/NWNAMEFUNC]] · NWNAMEFUNC（运营商名称信息功能） — `NWNAMEFUNC.md`
-- [[configobject/UNC/20.15.2/NWTOPO]] · NWTOPO（组网拓扑采集功能开关） — `NWTOPO.md`
-- [[configobject/UNC/20.15.2/OCSALMTHD]] · OCSALMTHD（OCS告警阈值） — `OCSALMTHD.md`
-- [[configobject/UNC/20.15.2/OCSDOWNACTION]] · OCSDOWNACTION（DCC模板OCS状态Down动作） — `OCSDOWNACTION.md`
-- [[configobject/UNC/20.15.2/OCSINIT]] · OCSINIT（DCC模板OCS初始化） — `OCSINIT.md`
-- [[configobject/UNC/20.15.2/OFCCDRPARA]] · OFCCDRPARA（离线计费话单参数） — `OFCCDRPARA.md`
-- [[configobject/UNC/20.15.2/OFCTHRESHOLD]] · OFCTHRESHOLD（离线计费阈值） — `OFCTHRESHOLD.md`
-- [[configobject/UNC/20.15.2/OFFLOADINF]] · OFFLOADINF（迁移配置信息） — `OFFLOADINF.md`
-- [[configobject/UNC/20.15.2/OFLZEROUSGRPTSW]] · OFLZEROUSGRPTSW（离线业务零用量容器上报方式） — `OFLZEROUSGRPTSW.md`
-- [[configobject/UNC/20.15.2/OLNCHGPARA]] · OLNCHGPARA（在线计费全局参数配置） — `OLNCHGPARA.md`
-- [[configobject/UNC/20.15.2/OMIP]] · OMIP（OM IP） — `OMIP.md`
-- [[configobject/UNC/20.15.2/OMSWITCH]] · OMSWITCH（OM功能开关） — `OMSWITCH.md`
-- [[configobject/UNC/20.15.2/ONLZEROUSGRPTSW]] · ONLZEROUSGRPTSW（在线业务零用量容器上报方式） — `ONLZEROUSGRPTSW.md`
-- [[configobject/UNC/20.15.2/OSCONFIG]] · OSCONFIG（OS配置） — `OSCONFIG.md`
-- [[configobject/UNC/20.15.2/OSPFDEFIMPROUTCFG]] · OSPFDEFIMPROUTCFG（OSPF引入路由默认配置） — `OSPFDEFIMPROUTCFG.md`
-- [[configobject/UNC/20.15.2/OSPFGR]] · OSPFGR（OSPF的平滑重启配置） — `OSPFGR.md`
-- [[configobject/UNC/20.15.2/OSPFV3DEFIMPROUTCFG]] · OSPFV3DEFIMPROUTCFG（OSPFv3引入路由默认配置） — `OSPFV3DEFIMPROUTCFG.md`
-- [[configobject/UNC/20.15.2/OVERLOADCTRL]] · OVERLOADCTRL（过载控制的配置信息） — `OVERLOADCTRL.md`
-- [[configobject/UNC/20.15.2/OVERLOADRC]] · OVERLOADRC（判断对端过载的返回码） — `OVERLOADRC.md`
-- [[configobject/UNC/20.15.2/PAEBATCHRECVNUM]] · PAEBATCHRECVNUM（PAE批量接收报文数） — `PAEBATCHRECVNUM.md`
-- [[configobject/UNC/20.15.2/PAECHECKPARA]] · PAECHECKPARA（PAE寻呼反压流控检测参数） — `PAECHECKPARA.md`
-- [[configobject/UNC/20.15.2/PAECHECKTHD]] · PAECHECKTHD（PAE寻呼反压流控检测阈值） — `PAECHECKTHD.md`
-- [[configobject/UNC/20.15.2/PAEDEBUGSWITCH]] · PAEDEBUGSWITCH（使能或去使能PAE转发日志） — `PAEDEBUGSWITCH.md`
-- [[configobject/UNC/20.15.2/PAEDYETRACECFG]] · PAEDYETRACECFG（PAE染色流控开关及阈值参数） — `PAEDYETRACECFG.md`
-- [[configobject/UNC/20.15.2/PAEEXAMINATION]] · PAEEXAMINATION（PAE故障检测使能配置） — `PAEEXAMINATION.md`
-- [[configobject/UNC/20.15.2/PAEMULTQUE]] · PAEMULTQUE（PAE多队列功能开关） — `PAEMULTQUE.md`
-- [[configobject/UNC/20.15.2/PAEPARAMS]] · PAEPARAMS（PAE参数） — `PAEPARAMS.md`
-- [[configobject/UNC/20.15.2/PAERESOVLDTRHD]] · PAERESOVLDTRHD（PAE关键资源不足告警参数） — `PAERESOVLDTRHD.md`
-- [[configobject/UNC/20.15.2/PAESCHEDMOD]] · PAESCHEDMOD（PAE Channel调度模式） — `PAESCHEDMOD.md`
-- [[configobject/UNC/20.15.2/PAESWITCH]] · PAESWITCH（PAE开关信息） — `PAESWITCH.md`
-- [[configobject/UNC/20.15.2/PCCALMTHD]] · PCCALMTHD（PCC告警阈值） — `PCCALMTHD.md`
-- [[configobject/UNC/20.15.2/PCCFAILACTION]] · PCCFAILACTION（PCC故障处理） — `PCCFAILACTION.md`
-- [[configobject/UNC/20.15.2/PCCFLOWCONTROL]] · PCCFLOWCONTROL（PCC流控配置） — `PCCFLOWCONTROL.md`
-- [[configobject/UNC/20.15.2/PCCFUNC]] · PCCFUNC（PCC功能） — `PCCFUNC.md`
-- [[configobject/UNC/20.15.2/PCCMSGATTR]] · PCCMSGATTR（PCC消息属性） — `PCCMSGATTR.md`
-- [[configobject/UNC/20.15.2/PCCPCRFMSGATTR]] · PCCPCRFMSGATTR（PCRF返回消息属性） — `PCCPCRFMSGATTR.md`
-- [[configobject/UNC/20.15.2/PCCRULECTRL]] · PCCRULECTRL（PCC规则相关控制） — `PCCRULECTRL.md`
-- [[configobject/UNC/20.15.2/PCCTIMER]] · PCCTIMER（复位PCC定时器） — `PCCTIMER.md`
-- [[configobject/UNC/20.15.2/PCRFPLCY]] · PCRFPLCY（PCRF策略） — `PCRFPLCY.md`
-- [[configobject/UNC/20.15.2/PCSCFCTRL]] · PCSCFCTRL（P-CSCF控制配置） — `PCSCFCTRL.md`
-- [[configobject/UNC/20.15.2/PCSCFGRPSELECT]] · PCSCFGRPSELECT（P-CSCF组选择模式） — `PCSCFGRPSELECT.md`
-- [[configobject/UNC/20.15.2/PDPCAR]] · PDPCAR（PDP流控参数） — `PDPCAR.md`
-- [[configobject/UNC/20.15.2/PDPFILTERCTL]] · PDPFILTERCTL（PDP过滤功能参数） — `PDPFILTERCTL.md`
-- [[configobject/UNC/20.15.2/PERFAUTOSWITCH]] · PERFAUTOSWITCH（话统对象自动生成开关） — `PERFAUTOSWITCH.md`
-- [[configobject/UNC/20.15.2/PERFCHKSWITCH]] · PERFCHKSWITCH（性能统计核查开关） — `PERFCHKSWITCH.md`
-- [[configobject/UNC/20.15.2/PESELPLCY]] · PESELPLCY（SGSN/MME选择策略） — `PESELPLCY.md`
-- [[configobject/UNC/20.15.2/PFCPCMPT]] · PFCPCMPT（PFCP接口兼容性参数） — `PFCPCMPT.md`
-- [[configobject/UNC/20.15.2/PFCPFIXEDFC]] · PFCPFIXEDFC（指定PFCP消息类型固定速率流控信息） — `PFCPFIXEDFC.md`
-- [[configobject/UNC/20.15.2/PFCPPARA]] · PFCPPARA（PFCP参数） — `PFCPPARA.md`
-- [[configobject/UNC/20.15.2/PFCPPVTEXT]] · PFCPPVTEXT（PFCP私有信元携带配置） — `PFCPPVTEXT.md`
-- [[configobject/UNC/20.15.2/PFRES]] · PFRES（带宽资源使用明细） — `PFRES.md`
-- [[configobject/UNC/20.15.2/PGWBACKOFF]] · PGWBACKOFF（P-GW Back-off流控参数） — `PGWBACKOFF.md`
-- [[configobject/UNC/20.15.2/PKICRLCHECK]] · PKICRLCHECK（CRL检查） — `PKICRLCHECK.md`
-- [[configobject/UNC/20.15.2/PLCYCKTIMERINR]] · PLCYCKTIMERINR（策略类型和核查间隔） — `PLCYCKTIMERINR.md`
-- [[configobject/UNC/20.15.2/PLCYCLSWITCH]] · PLCYCLSWITCH（冗余策略老化开关） — `PLCYCLSWITCH.md`
-- [[configobject/UNC/20.15.2/PLMNPRIORITY]] · PLMNPRIORITY（获取PLMN优先级） — `PLMNPRIORITY.md`
-- [[configobject/UNC/20.15.2/PLMNRATECTRL]] · PLMNRATECTRL（Serving PLMN速率控制配置） — `PLMNRATECTRL.md`
-- [[configobject/UNC/20.15.2/PLYFLUSHSWITCH]] · PLYFLUSHSWITCH（集合类型策略刷新开关状态） — `PLYFLUSHSWITCH.md`
-- [[configobject/UNC/20.15.2/PMCFG]] · PMCFG（性能统计配置参数） — `PMCFG.md`
-- [[configobject/UNC/20.15.2/PMM]] · PMM（Iu模式MM协议参数） — `PMM.md`
-- [[configobject/UNC/20.15.2/PMMPROCTRL]] · PMMPROCTRL（Iu模式移动性管理流程控制参数） — `PMMPROCTRL.md`
-- [[configobject/UNC/20.15.2/PMMPTMSIREALLOC]] · PMMPTMSIREALLOC（Iu模式PTMSI重分配控制参数） — `PMMPTMSIREALLOC.md`
-- [[configobject/UNC/20.15.2/PNFNTFPLCY]] · PNFNTFPLCY（对端网元的通知抑制时间） — `PNFNTFPLCY.md`
-- [[configobject/UNC/20.15.2/PNINPNFUNC]] · PNINPNFUNC（公网集成非公网络管理功能） — `PNINPNFUNC.md`
-- [[configobject/UNC/20.15.2/PODCONFIG]] · PODCONFIG（POD配置查询） — `PODCONFIG.md`
-- [[configobject/UNC/20.15.2/PODCPUTHD]] · PODCPUTHD（POD CPU阈值） — `PODCPUTHD.md`
-- [[configobject/UNC/20.15.2/PODHEALCTRL]] · PODHEALCTRL（自愈功能配置信息） — `PODHEALCTRL.md`
-- [[configobject/UNC/20.15.2/PODHEALPLY]] · PODHEALPLY（Pod自愈策略） — `PODHEALPLY.md`
-- [[configobject/UNC/20.15.2/PODMEMTHD]] · PODMEMTHD（POD内存阈值） — `PODMEMTHD.md`
-- [[configobject/UNC/20.15.2/POLICYFCSWITCH]] · POLICYFCSWITCH（策略流控开关状态） — `POLICYFCSWITCH.md`
-- [[configobject/UNC/20.15.2/POLICYMODE]] · POLICYMODE（策略接口的选择方式） — `POLICYMODE.md`
-- [[configobject/UNC/20.15.2/POOLALMPARA]] · POOLALMPARA（本地地址池使用率告警参数） — `POOLALMPARA.md`
-- [[configobject/UNC/20.15.2/PREFIXLIMIT]] · PREFIXLIMIT（前缀限制） — `PREFIXLIMIT.md`
-- [[configobject/UNC/20.15.2/PROCFAULTALM]] · PROCFAULTALM（进程故障告警上报模式） — `PROCFAULTALM.md`
-- [[configobject/UNC/20.15.2/PROCRESTHD]] · PROCRESTHD（进程资源告警阈值） — `PROCRESTHD.md`
-- [[configobject/UNC/20.15.2/PROXYSGWFUNC]] · PROXYSGWFUNC（Proxy SGW功能参数） — `PROXYSGWFUNC.md`
-- [[configobject/UNC/20.15.2/PROXYSMFFUNC]] · PROXYSMFFUNC（proxy SMF功能配置） — `PROXYSMFFUNC.md`
-- [[configobject/UNC/20.15.2/PSCSPLCY]] · PSCSPLCY（联合接入策略） — `PSCSPLCY.md`
-- [[configobject/UNC/20.15.2/PSDATAOFFFUNC]] · PSDATAOFFFUNC（3GPP PS data off功能相关的参数） — `PSDATAOFFFUNC.md`
-- [[configobject/UNC/20.15.2/PSEUDONYPOLICY]] · PSEUDONYPOLICY（CHR假名化本地策略） — `PSEUDONYPOLICY.md`
-- [[configobject/UNC/20.15.2/PSPKUBEPROBE]] · PSPKUBEPROBE（是否放通管道大颗粒readiness就绪探测） — `PSPKUBEPROBE.md`
-- [[configobject/UNC/20.15.2/PTTFUNC]] · PTTFUNC（一键通功能配置） — `PTTFUNC.md`
-- [[configobject/UNC/20.15.2/QBCGLBPARA]] · QBCGLBPARA（QBC计费全局参数） — `QBCGLBPARA.md`
-- [[configobject/UNC/20.15.2/QCI2ARP]] · QCI2ARP（标准QCI到ARP的映射规则） — `QCI2ARP.md`
-- [[configobject/UNC/20.15.2/QOSACTFILTER]] · QOSACTFILTER（流行为规则） — `QOSACTFILTER.md`
-- [[configobject/UNC/20.15.2/QOSBA]] · QOSBA（QoS BA） — `QOSBA.md`
-- [[configobject/UNC/20.15.2/QOSCTRL]] · QOSCTRL（QoS控制配置） — `QOSCTRL.md`
-- [[configobject/UNC/20.15.2/QOSFLOWFUNC]] · QOSFLOWFUNC（QoS Flow功能） — `QOSFLOWFUNC.md`
-- [[configobject/UNC/20.15.2/QOSGLOBAL]] · QOSGLOBAL（全局QoS配置） — `QOSGLOBAL.md`
-- [[configobject/UNC/20.15.2/QOSMONT]] · QOSMONT（QoS监测配置） — `QOSMONT.md`
-- [[configobject/UNC/20.15.2/QOSPHB]] · QOSPHB（QoS PHB） — `QOSPHB.md`
-- [[configobject/UNC/20.15.2/QOSREMARK]] · QOSREMARK（全局QoS到TOS/DSCP的映射规则） — `QOSREMARK.md`
-- [[configobject/UNC/20.15.2/R8QOSMAP]] · R8QOSMAP（EPS QoS参数到Pre-R8 QoS参数映射规则） — `R8QOSMAP.md`
-- [[configobject/UNC/20.15.2/RABPARA]] · RABPARA（RAB参数协商配置） — `RABPARA.md`
-- [[configobject/UNC/20.15.2/RANSECPLCY]] · RANSECPLCY（RAN侧安全策略） — `RANSECPLCY.md`
-- [[configobject/UNC/20.15.2/RCFIXEDFC]] · RCFIXEDFC（注册中心固定速率流控） — `RCFIXEDFC.md`
-- [[configobject/UNC/20.15.2/RCLICIGNSW]] · RCLICIGNSW（注册中心用户数license忽略开关） — `RCLICIGNSW.md`
-- [[configobject/UNC/20.15.2/RDSACCTREQATTR]] · RDSACCTREQATTR（RADIUS计费服务器可选消息属性） — `RDSACCTREQATTR.md`
-- [[configobject/UNC/20.15.2/RDSACCTREQVSA]] · RDSACCTREQVSA（RADIUS计费服务器组的私有扩展属性） — `RDSACCTREQVSA.md`
-- [[configobject/UNC/20.15.2/RDSAUTHREQATTR]] · RDSAUTHREQATTR（Radius鉴权请求消息携带的属性） — `RDSAUTHREQATTR.md`
-- [[configobject/UNC/20.15.2/RDSAUTHREQVSA]] · RDSAUTHREQVSA（RADIUS鉴权请求携带的私有扩展属性） — `RDSAUTHREQVSA.md`
-- [[configobject/UNC/20.15.2/RDSAUTHRSPATTR]] · RDSAUTHRSPATTR（支持的Radius鉴权响应消息私有属性） — `RDSAUTHRSPATTR.md`
-- [[configobject/UNC/20.15.2/RDSRSPADDRCHK]] · RDSRSPADDRCHK（全局RADIUS响应消息源端口检查配置） — `RDSRSPADDRCHK.md`
-- [[configobject/UNC/20.15.2/REASTIMEOUT]] · REASTIMEOUT（IPv4报文重组超时配置） — `REASTIMEOUT.md`
-- [[configobject/UNC/20.15.2/REDCAPRATVALUE]] · REDCAPRATVALUE（RedCap接入用户的RAT填写值） — `REDCAPRATVALUE.md`
-- [[configobject/UNC/20.15.2/REGNFAGINGSW]] · REGNFAGINGSW（NF实例老化开关） — `REGNFAGINGSW.md`
-- [[configobject/UNC/20.15.2/REGNFLOADUPDTHR]] · REGNFLOADUPDTHR（NF负载更新阈值） — `REGNFLOADUPDTHR.md`
-- [[configobject/UNC/20.15.2/RESCHKSWITCH]] · RESCHKSWITCH（RCF核查开关状态） — `RESCHKSWITCH.md`
-- [[configobject/UNC/20.15.2/RESTHRESHOLD]] · RESTHRESHOLD（资源过载和过载恢复阈值） — `RESTHRESHOLD.md`
-- [[configobject/UNC/20.15.2/RESTOFUNC]] · RESTOFUNC（容灾功能） — `RESTOFUNC.md`
-- [[configobject/UNC/20.15.2/REVERSEFCPARA]] · REVERSEFCPARA（PAE寻呼反压流控启动/恢复阈值） — `REVERSEFCPARA.md`
-- [[configobject/UNC/20.15.2/RGRESCTRL]] · RGRESCTRL（RG资源控制配置） — `RGRESCTRL.md`
-- [[configobject/UNC/20.15.2/ROAMCOMMPLCY]] · ROAMCOMMPLCY（漫游通信策略） — `ROAMCOMMPLCY.md`
-- [[configobject/UNC/20.15.2/ROAMMGMTPARA]] · ROAMMGMTPARA（漫游管理参数） — `ROAMMGMTPARA.md`
-- [[configobject/UNC/20.15.2/ROUTERELAYTUNNEL]] · ROUTERELAYTUNNEL（路由迭代隧道功能开关） — `ROUTERELAYTUNNEL.md`
-- [[configobject/UNC/20.15.2/ROUTSMSCPARA]] · ROUTSMSCPARA（SMSF/VLR选择SMSC的相关参数） — `ROUTSMSCPARA.md`
-- [[configobject/UNC/20.15.2/RRCINACTPARA]] · RRCINACTPARA（RRC Inactive参数） — `RRCINACTPARA.md`
-- [[configobject/UNC/20.15.2/RSCBOXHEALCTRL]] · RSCBOXHEALCTRL（ResourceBox自愈策略控制参数） — `RSCBOXHEALCTRL.md`
-- [[configobject/UNC/20.15.2/RUCPUTHRESH]] · RUCPUTHRESH（RU CPU占用率告警上报门限和告警恢复门限） — `RUCPUTHRESH.md`
-- [[configobject/UNC/20.15.2/RUDISKPARTITION]] · RUDISKPARTITION（RU磁盘过载配置） — `RUDISKPARTITION.md`
-- [[configobject/UNC/20.15.2/RUFAULTTOLERANCE]] · RUFAULTTOLERANCE（资源单元故障容忍时间） — `RUFAULTTOLERANCE.md`
-- [[configobject/UNC/20.15.2/RURESTHRESHOLD]] · RURESTHRESHOLD（RU资源过载和去过载阈值） — `RURESTHRESHOLD.md`
-- [[configobject/UNC/20.15.2/S1APPARA]] · S1APPARA（S1AP协议参数） — `S1APPARA.md`
-- [[configobject/UNC/20.15.2/S1CMPT]] · S1CMPT（S1接口兼容性） — `S1CMPT.md`
-- [[configobject/UNC/20.15.2/S1OVERLOAD]] · S1OVERLOAD（S1接口过载控制） — `S1OVERLOAD.md`
-- [[configobject/UNC/20.15.2/S1PAGINGCTRL]] · S1PAGINGCTRL（S1寻呼策略控制表） — `S1PAGINGCTRL.md`
-- [[configobject/UNC/20.15.2/S1PAGINGFC]] · S1PAGINGFC（S1寻呼流控参数） — `S1PAGINGFC.md`
-- [[configobject/UNC/20.15.2/S1SMARTPARA]] · S1SMARTPARA（S1模式信令抑制参数） — `S1SMARTPARA.md`
-- [[configobject/UNC/20.15.2/S1SMPROCTRL]] · S1SMPROCTRL（S1模式SM流程控制参数） — `S1SMPROCTRL.md`
-- [[configobject/UNC/20.15.2/S1TAIPAGMONPARA]] · S1TAIPAGMONPARA（S1 TAI组寻呼异常监控功能参数） — `S1TAIPAGMONPARA.md`
-- [[configobject/UNC/20.15.2/S1UBLACKLSTPARA]] · S1UBLACKLSTPARA（S1-U黑名单参数） — `S1UBLACKLSTPARA.md`
-- [[configobject/UNC/20.15.2/SBCFUNC]] · SBCFUNC（小区广播功能） — `SBCFUNC.md`
-- [[configobject/UNC/20.15.2/SBILCIPARA]] · SBILCIPARA（服务化接口负载控制参数） — `SBILCIPARA.md`
-- [[configobject/UNC/20.15.2/SBILINKSETCFG]] · SBILINKSETCFG（服务化接口链路集属性） — `SBILINKSETCFG.md`
-- [[configobject/UNC/20.15.2/SBILNKCTRLSW]] · SBILNKCTRLSW（服务化接口链路自动控制功能开关） — `SBILNKCTRLSW.md`
-- [[configobject/UNC/20.15.2/SBITCPPARA]] · SBITCPPARA（SBI接口TCP控制参数） — `SBITCPPARA.md`
-- [[configobject/UNC/20.15.2/SCALINGCFG]] · SCALINGCFG（自动扩缩容配置） — `SCALINGCFG.md`
-- [[configobject/UNC/20.15.2/SCALINGCTRL]] · SCALINGCTRL（扩缩容业务控制参数） — `SCALINGCTRL.md`
-- [[configobject/UNC/20.15.2/SCALINGSWITCH]] · SCALINGSWITCH（扩缩容开关） — `SCALINGSWITCH.md`
-- [[configobject/UNC/20.15.2/SCCPTMR]] · SCCPTMR（SCCP定时器参数） — `SCCPTMR.md`
-- [[configobject/UNC/20.15.2/SCFMVNFMLNK]] · SCFMVNFMLNK（超时时间配置） — `SCFMVNFMLNK.md`
-- [[configobject/UNC/20.15.2/SCPFUNCSW]] · SCPFUNCSW（间接路由功能） — `SCPFUNCSW.md`
-- [[configobject/UNC/20.15.2/SCPPARA]] · SCPPARA（SCP参数） — `SCPPARA.md`
-- [[configobject/UNC/20.15.2/SCTPBUFFCFG]] · SCTPBUFFCFG（SCTP缓冲区参数源） — `SCTPBUFFCFG.md`
-- [[configobject/UNC/20.15.2/SCTPBUFFERMODE]] · SCTPBUFFERMODE（SCTP缓冲区模式） — `SCTPBUFFERMODE.md`
-- [[configobject/UNC/20.15.2/SCTPCCTRLPARA]] · SCTPCCTRLPARA（RAN侧拥塞检测功能参数） — `SCTPCCTRLPARA.md`
-- [[configobject/UNC/20.15.2/SCTPINITFLOW]] · SCTPINITFLOW（SCTP接入流控） — `SCTPINITFLOW.md`
-- [[configobject/UNC/20.15.2/SCTPRXBUFFER]] · SCTPRXBUFFER（SCTP接收缓冲区参数） — `SCTPRXBUFFER.md`
-- [[configobject/UNC/20.15.2/SCTPTXBUFFER]] · SCTPTXBUFFER（SCTP发送缓冲区参数） — `SCTPTXBUFFER.md`
-- [[configobject/UNC/20.15.2/SDAPINTF]] · SDAPINTF（Sdup接口参数） — `SDAPINTF.md`
-- [[configobject/UNC/20.15.2/SDAPRETRSMT]] · SDAPRETRSMT（Sdup接口可靠性） — `SDAPRETRSMT.md`
-- [[configobject/UNC/20.15.2/SDBTMR]] · SDBTMR（核查定时器配置） — `SDBTMR.md`
-- [[configobject/UNC/20.15.2/SDCFG]] · SDCFG（签约数据配置） — `SDCFG.md`
-- [[configobject/UNC/20.15.2/SDRPARAMS]] · SDRPARAMS（SDR参数） — `SDRPARAMS.md`
-- [[configobject/UNC/20.15.2/SDRTRANS]] · SDRTRANS（SDR传输能力） — `SDRTRANS.md`
-- [[configobject/UNC/20.15.2/SECALG]] · SECALG（安全算法） — `SECALG.md`
-- [[configobject/UNC/20.15.2/SECARP]] · SECARP（ARP快回） — `SECARP.md`
-- [[configobject/UNC/20.15.2/SECARPGRAT]] · SECARPGRAT（免费ARP过滤） — `SECARPGRAT.md`
-- [[configobject/UNC/20.15.2/SECARPSAFEGUARD]] · SECARPSAFEGUARD（ARP双向分离） — `SECARPSAFEGUARD.md`
-- [[configobject/UNC/20.15.2/SECAUTH]] · SECAUTH（查看二次授权功能状态） — `SECAUTH.md`
-- [[configobject/UNC/20.15.2/SECDEVURPF]] · SECDEVURPF（设备URPF） — `SECDEVURPF.md`
-- [[configobject/UNC/20.15.2/SECICMPREPLY]] · SECICMPREPLY（ICMP快回） — `SECICMPREPLY.md`
-- [[configobject/UNC/20.15.2/SECND]] · SECND（ND快回） — `SECND.md`
-- [[configobject/UNC/20.15.2/SECPOLICYALLPKTLEVEL]] · SECPOLICYALLPKTLEVEL（上送报文总体速率等级） — `SECPOLICYALLPKTLEVEL.md`
-- [[configobject/UNC/20.15.2/SECPOLICYALLPKTVALUE]] · SECPOLICYALLPKTVALUE（上送报文总体速率值） — `SECPOLICYALLPKTVALUE.md`
-- [[configobject/UNC/20.15.2/SECPOLICYAPPLNK]] · SECPOLICYAPPLNK（应用联动默认动作） — `SECPOLICYAPPLNK.md`
-- [[configobject/UNC/20.15.2/SECPOLICYPRIO]] · SECPOLICYPRIO（报文上送优先级） — `SECPOLICYPRIO.md`
-- [[configobject/UNC/20.15.2/SECPOLICYSWITCH]] · SECPOLICYSWITCH（TCPIP报文以及应用层、黑名单、白名单防御机制使能状态） — `SECPOLICYSWITCH.md`
-- [[configobject/UNC/20.15.2/SEQCHK]] · SEQCHK（序号检查信息表） — `SEQCHK.md`
-- [[configobject/UNC/20.15.2/SERVINGCHGCTRL]] · SERVINGCHGCTRL（I-SMF/SGW的计费模式和CHF选择参数） — `SERVINGCHGCTRL.md`
-- [[configobject/UNC/20.15.2/SESSNCHRCFG]] · SESSNCHRCFG（会话CHR上报策略） — `SESSNCHRCFG.md`
-- [[configobject/UNC/20.15.2/SESSNCHRSTORECFG]] · SESSNCHRSTORECFG（CHR存储配置） — `SESSNCHRSTORECFG.md`
-- [[configobject/UNC/20.15.2/SFEBFDPKTIPID]] · SFEBFDPKTIPID（BFD报文IPID的使能标记） — `SFEBFDPKTIPID.md`
-- [[configobject/UNC/20.15.2/SFEFEIDEBUG]] · SFEFEIDEBUG（FEI报文、进程日志开关） — `SFEFEIDEBUG.md`
-- [[configobject/UNC/20.15.2/SFEPASSGREFRAG]] · SFEPASSGREFRAG（SFE透传GRE分片报文使能配置） — `SFEPASSGREFRAG.md`
-- [[configobject/UNC/20.15.2/SFEPKTBATCHRCV]] · SFEPKTBATCHRCV（SFE批量收取的报文数量） — `SFEPKTBATCHRCV.md`
-- [[configobject/UNC/20.15.2/SFEPKTRCVMODE]] · SFEPKTRCVMODE（SFE当前收包模式） — `SFEPKTRCVMODE.md`
-- [[configobject/UNC/20.15.2/SFEPKTSTAT]] · SFEPKTSTAT（SFE报文统计信息） — `SFEPKTSTAT.md`
-- [[configobject/UNC/20.15.2/SFERESALMTHD]] · SFERESALMTHD（VNRS内部资源不足告警的阈值参数） — `SFERESALMTHD.md`
-- [[configobject/UNC/20.15.2/SFETRACECPUFC]] · SFETRACECPUFC（VNRS IP消息跟踪的CPU流控阈值） — `SFETRACECPUFC.md`
-- [[configobject/UNC/20.15.2/SFETRACEFCCFG]] · SFETRACEFCCFG（VNRS IP消息跟踪的流控使能配置） — `SFETRACEFCCFG.md`
-- [[configobject/UNC/20.15.2/SFETRACEQUEFC]] · SFETRACEQUEFC（VNRS IP消息跟踪的队列流控配置） — `SFETRACEQUEFC.md`
-- [[configobject/UNC/20.15.2/SFTPALG]] · SFTPALG（SFTP协议算法） — `SFTPALG.md`
-- [[configobject/UNC/20.15.2/SGSAPCMPT]] · SGSAPCMPT（SGsAP协议兼容性） — `SGSAPCMPT.md`
-- [[configobject/UNC/20.15.2/SGSPARA]] · SGSPARA（SGs参数） — `SGSPARA.md`
-- [[configobject/UNC/20.15.2/SGWAPNCHGMETH]] · SGWAPNCHGMETH（SGW APN计费方式） — `SGWAPNCHGMETH.md`
-- [[configobject/UNC/20.15.2/SGWCHARGECFG]] · SGWCHARGECFG（SGW计费配置） — `SGWCHARGECFG.md`
-- [[configobject/UNC/20.15.2/SGWCHGPAUSE]] · SGWCHGPAUSE（SGW的计费暂停功能） — `SGWCHGPAUSE.md`
-- [[configobject/UNC/20.15.2/SGWPLMNORIGIN]] · SGWPLMNORIGIN（S-GW PLMN ID来源） — `SGWPLMNORIGIN.md`
-- [[configobject/UNC/20.15.2/SIGATTR]] · SIGATTR（信令网属性状态） — `SIGATTR.md`
-- [[configobject/UNC/20.15.2/SIGSUPPRESS]] · SIGSUPPRESS（S11接口信令风暴抑制功能的控制与统计信息） — `SIGSUPPRESS.md`
-- [[configobject/UNC/20.15.2/SKIPADJUSTHAFDM]] · SKIPADJUSTHAFDM（跳过调整HAF域开关状态） — `SKIPADJUSTHAFDM.md`
-- [[configobject/UNC/20.15.2/SMAMEVTEXPPLY]] · SMAMEVTEXPPLY（SMF向AMF下发事件订阅时的老化策略） — `SMAMEVTEXPPLY.md`
-- [[configobject/UNC/20.15.2/SMARTACTPARA]] · SMARTACTPARA（激活抑制参数） — `SMARTACTPARA.md`
-- [[configobject/UNC/20.15.2/SMARTCFG]] · SMARTCFG（智能用户功能） — `SMARTCFG.md`
-- [[configobject/UNC/20.15.2/SMARTCL]] · SMARTCL（智能分流功能） — `SMARTCL.md`
-- [[configobject/UNC/20.15.2/SMCOMMFUNC]] · SMCOMMFUNC（通用会话拓展功能） — `SMCOMMFUNC.md`
-- [[configobject/UNC/20.15.2/SMCOMMTIMER]] · SMCOMMTIMER（通用会话管理定时器参数） — `SMCOMMTIMER.md`
-- [[configobject/UNC/20.15.2/SMFAPNSOFTPARA]] · SMFAPNSOFTPARA（SMF APN软参记录） — `SMFAPNSOFTPARA.md`
-- [[configobject/UNC/20.15.2/SMFAPNSOFTPARABYBIT]] · SMFAPNSOFTPARABYBIT（SMF APN软件参数比特位） — `SMFAPNSOFTPARABYBIT.md`
-- [[configobject/UNC/20.15.2/SMFCACHEFUNC]] · SMFCACHEFUNC（SMF映射关系的本地缓存策略） — `SMFCACHEFUNC.md`
-- [[configobject/UNC/20.15.2/SMFFCPARA]] · SMFFCPARA（SMF自保流控参数） — `SMFFCPARA.md`
-- [[configobject/UNC/20.15.2/SMFFUNC]] · SMFFUNC（SMF扩展功能） — `SMFFUNC.md`
-- [[configobject/UNC/20.15.2/SMFGLBDLBUFTIME]] · SMFGLBDLBUFTIME（全局下行报文缓存时长） — `SMFGLBDLBUFTIME.md`
-- [[configobject/UNC/20.15.2/SMFMBSFUNC]] · SMFMBSFUNC（MB-SMF组播广播功能参数） — `SMFMBSFUNC.md`
-- [[configobject/UNC/20.15.2/SMFSOFTPARA]] · SMFSOFTPARA（SMF软参） — `SMFSOFTPARA.md`
-- [[configobject/UNC/20.15.2/SMFSOFTPARAOFBIT]] · SMFSOFTPARAOFBIT（SMF软件参数比特位） — `SMFSOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/SMFTRCCTRL]] · SMFTRCCTRL（SMF跟踪控制功能） — `SMFTRCCTRL.md`
-- [[configobject/UNC/20.15.2/SMFUDMBYPASS]] · SMFUDMBYPASS（SMF的UDM全故障Bypass相关功能） — `SMFUDMBYPASS.md`
-- [[configobject/UNC/20.15.2/SMFUDMRESET]] · SMFUDMRESET（SMF的UDM故障重选策略） — `SMFUDMRESET.md`
-- [[configobject/UNC/20.15.2/SMFUNC]] · SMFUNC（会话管理扩展功能） — `SMFUNC.md`
-- [[configobject/UNC/20.15.2/SMGTPPROT]] · SMGTPPROT（会话管理GTP协议功能参数配置） — `SMGTPPROT.md`
-- [[configobject/UNC/20.15.2/SMIPTRANSTYPE]] · SMIPTRANSTYPE（会话管理接口IP传输类型） — `SMIPTRANSTYPE.md`
-- [[configobject/UNC/20.15.2/SMPDUCTRL]] · SMPDUCTRL（PDU会话控制参数） — `SMPDUCTRL.md`
-- [[configobject/UNC/20.15.2/SMS]] · SMS（SMS配置信息） — `SMS.md`
-- [[configobject/UNC/20.15.2/SMSBACKUPSW]] · SMSBACKUPSW（SMSF热备容灾功能开关状态） — `SMSBACKUPSW.md`
-- [[configobject/UNC/20.15.2/SMSCHFGRP]] · SMSCHFGRP（短消息计费CHF组） — `SMSCHFGRP.md`
-- [[configobject/UNC/20.15.2/SMSCHRCFG]] · SMSCHRCFG（SMS CHR单据上报策略） — `SMSCHRCFG.md`
-- [[configobject/UNC/20.15.2/SMSCHRSTORCFG]] · SMSCHRSTORCFG（SMS小范围CHR存储配置） — `SMSCHRSTORCFG.md`
-- [[configobject/UNC/20.15.2/SMSDATACHECK]] · SMSDATACHECK（数据核查扫描参数） — `SMSDATACHECK.md`
-- [[configobject/UNC/20.15.2/SMSFFCPARA]] · SMSFFCPARA（SMSF自保流控的参数） — `SMSFFCPARA.md`
-- [[configobject/UNC/20.15.2/SMSFFUNCSW]] · SMSFFUNCSW（SMSF功能开关） — `SMSFFUNCSW.md`
-- [[configobject/UNC/20.15.2/SMSFKEYCHECK]] · SMSFKEYCHECK（SMSF用户关键信息数据核查扫描参数） — `SMSFKEYCHECK.md`
-- [[configobject/UNC/20.15.2/SMSFMAPVERSION]] · SMSFMAPVERSION（SMSF使用的MAP接口版本） — `SMSFMAPVERSION.md`
-- [[configobject/UNC/20.15.2/SMSFRCDATACHECK]] · SMSFRCDATACHECK（SMSF核查注册中心状态功能配置） — `SMSFRCDATACHECK.md`
-- [[configobject/UNC/20.15.2/SMSFSOFTPARA]] · SMSFSOFTPARA（SMSF软参） — `SMSFSOFTPARA.md`
-- [[configobject/UNC/20.15.2/SMSFSOFTPARAOFBIT]] · SMSFSOFTPARAOFBIT（SMSF软件参数比特位） — `SMSFSOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/SMSFSSN]] · SMSFSSN（SMSF本局SSN号） — `SMSFSSN.md`
-- [[configobject/UNC/20.15.2/SMSFTIMERPARA]] · SMSFTIMERPARA（SMSF网元定时器） — `SMSFTIMERPARA.md`
-- [[configobject/UNC/20.15.2/SMSFUDMBYPASS]] · SMSFUDMBYPASS（SMSF的UDM全故障Bypass功能开关） — `SMSFUDMBYPASS.md`
-- [[configobject/UNC/20.15.2/SMSFUDMRESET]] · SMSFUDMRESET（SMSF的UDM重选） — `SMSFUDMRESET.md`
-- [[configobject/UNC/20.15.2/SMSREGTIMER]] · SMSREGTIMER（VLR/SMSF向注册中心注册的时间参数） — `SMSREGTIMER.md`
-- [[configobject/UNC/20.15.2/SMTIMER]] · SMTIMER（5GC会话管理定时器参数） — `SMTIMER.md`
-- [[configobject/UNC/20.15.2/SNDCP]] · SNDCP（SNDCP参数状态） — `SNDCP.md`
-- [[configobject/UNC/20.15.2/SOFTPARA]] · SOFTPARA（软件参数表） — `SOFTPARA.md`
-- [[configobject/UNC/20.15.2/SOFTPARAEXP]] · SOFTPARAEXP（软件参数配置导出模式） — `SOFTPARAEXP.md`
-- [[configobject/UNC/20.15.2/SOFTPARAOFBIT]] · SOFTPARAOFBIT（软件参数表比特位） — `SOFTPARAOFBIT.md`
-- [[configobject/UNC/20.15.2/SRIPV4STATICSITE]] · SRIPV4STATICSITE（IPv4静态路由全局属性） — `SRIPV4STATICSITE.md`
-- [[configobject/UNC/20.15.2/SRIPV6STATICSITE]] · SRIPV6STATICSITE（IPv6静态路由全局属性） — `SRIPV6STATICSITE.md`
-- [[configobject/UNC/20.15.2/SRROUTEFRR]] · SRROUTEFRR（静态路由FRR） — `SRROUTEFRR.md`
-- [[configobject/UNC/20.15.2/SRROUTERELAYTUNNEL]] · SRROUTERELAYTUNNEL（静态路由迭代隧道功能开关） — `SRROUTERELAYTUNNEL.md`
-- [[configobject/UNC/20.15.2/SRVNDALMTHRES]] · SRVNDALMTHRES（业务节点资源不足告警阈值） — `SRVNDALMTHRES.md`
-- [[configobject/UNC/20.15.2/SRVNODERATPRI]] · SRVNODERATPRI（获取RAT Type的优先级） — `SRVNODERATPRI.md`
-- [[configobject/UNC/20.15.2/SRVSTH]] · SRVSTH（业务功能开关状态） — `SRVSTH.md`
-- [[configobject/UNC/20.15.2/STATICADDRPARA]] · STATICADDRPARA（静态地址参数） — `STATICADDRPARA.md`
-- [[configobject/UNC/20.15.2/STATICIPINLCKUP]] · STATICIPINLCKUP（静态地址段在锁定UPF的用户处理） — `STATICIPINLCKUP.md`
-- [[configobject/UNC/20.15.2/STATUSCHECK]] · STATUSCHECK（状态核查参数） — `STATUSCHECK.md`
-- [[configobject/UNC/20.15.2/STGALARMCTRL]] · STGALARMCTRL（融合计费话单缓存告警上报的控制参数） — `STGALARMCTRL.md`
-- [[configobject/UNC/20.15.2/STGTRIGGER]] · STGTRIGGER（融合计费消息缓存期间融合计费消息生成的trigger） — `STGTRIGGER.md`
-- [[configobject/UNC/20.15.2/SYS]] · SYS（系统参数） — `SYS.md`
-- [[configobject/UNC/20.15.2/SYSLOGCONTENTCFG]] · SYSLOGCONTENTCFG（日志内容配置） — `SYSLOGCONTENTCFG.md`
-- [[configobject/UNC/20.15.2/SYSMAPFIXEDFC]] · SYSMAPFIXEDFC（VLR整系统Map固定速率流控） — `SYSMAPFIXEDFC.md`
-- [[configobject/UNC/20.15.2/SYSPLTPARA]] · SYSPLTPARA（产品平台参数） — `SYSPLTPARA.md`
-- [[configobject/UNC/20.15.2/SYSSGSFIXEDFC]] · SYSSGSFIXEDFC（VLR整系统Sgs固定速率流控） — `SYSSGSFIXEDFC.md`
-- [[configobject/UNC/20.15.2/SYSTIMER]] · SYSTIMER（系统定时器） — `SYSTIMER.md`
-- [[configobject/UNC/20.15.2/T1N1PARA]] · T1N1PARA（PFCP T1N1参数配置） — `T1N1PARA.md`
-- [[configobject/UNC/20.15.2/T3N3]] · T3N3（GTP-C T3/N3参数配置） — `T3N3.md`
-- [[configobject/UNC/20.15.2/TCPBPCFG]] · TCPBPCFG（TCP过载反压HTTP流控配置） — `TCPBPCFG.md`
-- [[configobject/UNC/20.15.2/TCPGLOBALCFG]] · TCPGLOBALCFG（TCP全局配置） — `TCPGLOBALCFG.md`
-- [[configobject/UNC/20.15.2/TCPSACKSWITCH]] · TCPSACKSWITCH（TCP SACK开关配置） — `TCPSACKSWITCH.md`
-- [[configobject/UNC/20.15.2/TCTIMER]] · TCTIMER（TC定时器） — `TCTIMER.md`
-- [[configobject/UNC/20.15.2/TIME]] · TIME（系统时间） — `TIME.md`
-- [[configobject/UNC/20.15.2/TLBGLBCONF]] · TLBGLBCONF（TLB全局配置） — `TLBGLBCONF.md`
-- [[configobject/UNC/20.15.2/TMAPINTF]] · TMAPINTF（Tm接口参数） — `TMAPINTF.md`
-- [[configobject/UNC/20.15.2/TMMSGFC]] · TMMSGFC（跟踪消息流控状态） — `TMMSGFC.md`
-- [[configobject/UNC/20.15.2/TOKENALG]] · TOKENALG（Token签名算法） — `TOKENALG.md`
-- [[configobject/UNC/20.15.2/TOKENALLOCWT]] · TOKENALLOCWT（服务类型分配权重的管理策略） — `TOKENALLOCWT.md`
-- [[configobject/UNC/20.15.2/TOKENDELAY]] · TOKENDELAY（Token延时迁移时间） — `TOKENDELAY.md`
-- [[configobject/UNC/20.15.2/TRAFFICBACKUP]] · TRAFFICBACKUP（流量备份配置） — `TRAFFICBACKUP.md`
-- [[configobject/UNC/20.15.2/TRC_CFG]] · TRC_CFG（跟踪参数） — `TRC_CFG.md`
-- [[configobject/UNC/20.15.2/TRUSTEDWLANFUNC]] · TRUSTEDWLANFUNC（可信Non-3GPP接入开关） — `TRUSTEDWLANFUNC.md`
-- [[configobject/UNC/20.15.2/TWTIMER]] · TWTIMER（TW定时器） — `TWTIMER.md`
-- [[configobject/UNC/20.15.2/TXTIMER]] · TXTIMER（DCC模板Tx定时器） — `TXTIMER.md`
-- [[configobject/UNC/20.15.2/TZ]] · TZ（时区和夏令时信息） — `TZ.md`
-- [[configobject/UNC/20.15.2/UCFCONFIG]] · UCFCONFIG（UCF文件管理规格配置） — `UCFCONFIG.md`
-- [[configobject/UNC/20.15.2/UDPCHECKSUM]] · UDPCHECKSUM（UNC发送的UDP报文是否携带checksum） — `UDPCHECKSUM.md`
-- [[configobject/UNC/20.15.2/UEDNSBINDAPN]] · UEDNSBINDAPN（APN的DNS属性） — `UEDNSBINDAPN.md`
-- [[configobject/UNC/20.15.2/UERADIOCAPLEN]] · UERADIOCAPLEN（UE Radio Capability信元长度） — `UERADIOCAPLEN.md`
-- [[configobject/UNC/20.15.2/UERCAPPARA]] · UERCAPPARA（UE Radio Capability信元参数） — `UERCAPPARA.md`
-- [[configobject/UNC/20.15.2/UGTP]] · UGTP（GTP-C路径扫描参数） — `UGTP.md`
-- [[configobject/UNC/20.15.2/UNIHTR]] · UNIHTR（统一HTR功能） — `UNIHTR.md`
-- [[configobject/UNC/20.15.2/UPAREABINDFUNC]] · UPAREABINDFUNC（获取UPF服务区绑定TAI/LAI的方式） — `UPAREABINDFUNC.md`
-- [[configobject/UNC/20.15.2/UPCALMRSTVAL]] · UPCALMRSTVAL（UPC DS粒度N4请求等待超时异常的告警恢复阈值） — `UPCALMRSTVAL.md`
-- [[configobject/UNC/20.15.2/UPCALMVAL]] · UPCALMVAL（UPC DS粒度N4请求等待超时异常的告警阈值） — `UPCALMVAL.md`
-- [[configobject/UNC/20.15.2/UPCCOMMTIMER]] · UPCCOMMTIMER（用户面控制通用定时器） — `UPCCOMMTIMER.md`
-- [[configobject/UNC/20.15.2/UPCSCANRATE]] · UPCSCANRATE（用户面控制扫描速率） — `UPCSCANRATE.md`
-- [[configobject/UNC/20.15.2/UPDSTATUS]] · UPDSTATUS（升级状态） — `UPDSTATUS.md`
-- [[configobject/UNC/20.15.2/UPFAULTOPERPARA]] · UPFAULTOPERPARA（UP故障处理系统参数） — `UPFAULTOPERPARA.md`
-- [[configobject/UNC/20.15.2/UPGPATTIMER]] · UPGPATTIMER（升级补丁定时器） — `UPGPATTIMER.md`
-- [[configobject/UNC/20.15.2/UPGRADEWATCH]] · UPGRADEWATCH（升级观察期） — `UPGRADEWATCH.md`
-- [[configobject/UNC/20.15.2/UPGSTEP]] · UPGSTEP（灰度升级Pod滚动步长） — `UPGSTEP.md`
-- [[configobject/UNC/20.15.2/UPLOADBALANCE]] · UPLOADBALANCE（UP负载均衡功能） — `UPLOADBALANCE.md`
-- [[configobject/UNC/20.15.2/UPPATHFAULTREST]] · UPPATHFAULTREST（用户面链路故障恢复功能配置信息） — `UPPATHFAULTREST.md`
-- [[configobject/UNC/20.15.2/UPRESELECTFUNC]] · UPRESELECTFUNC（UP重选功能） — `UPRESELECTFUNC.md`
-- [[configobject/UNC/20.15.2/UPSELECTFLAG]] · UPSELECTFLAG（UPF选择条件开关） — `UPSELECTFLAG.md`
-- [[configobject/UNC/20.15.2/UPSELECTPRI]] · UPSELECTPRI（UPF选择策略次序） — `UPSELECTPRI.md`
-- [[configobject/UNC/20.15.2/URRGRPBINDING]] · URRGRPBINDING（用户模板的计费属性绑定关系） — `URRGRPBINDING.md`
-- [[configobject/UNC/20.15.2/USERPRIORARP]] · USERPRIORARP（用户ARP优先级配置） — `USERPRIORARP.md`
-- [[configobject/UNC/20.15.2/USERPROFILELOCK]] · USERPROFILELOCK（用户模板的锁定） — `USERPROFILELOCK.md`
-- [[configobject/UNC/20.15.2/USRBLACKLSTFUN]] · USRBLACKLSTFUN（用户黑名单接入控制功能） — `USRBLACKLSTFUN.md`
-- [[configobject/UNC/20.15.2/USRPDPCAP]] · USRPDPCAP（用户面PDP规格表） — `USRPDPCAP.md`
-- [[configobject/UNC/20.15.2/USRPROFCHARGE]] · USRPROFCHARGE（User Profile的计费配置） — `USRPROFCHARGE.md`
-- [[configobject/UNC/20.15.2/VLRDATACHECK]] · VLRDATACHECK（VLR用户数据核查扫描参数） — `VLRDATACHECK.md`
-- [[configobject/UNC/20.15.2/VLRFAULTEN]] · VLRFAULTEN（VLR故障增强功能） — `VLRFAULTEN.md`
-- [[configobject/UNC/20.15.2/VLRFUNCSW]] · VLRFUNCSW（VLR功能开关） — `VLRFUNCSW.md`
-- [[configobject/UNC/20.15.2/VLRKEYCHECK]] · VLRKEYCHECK（VLR用户关键信息数据核查扫描参数） — `VLRKEYCHECK.md`
-- [[configobject/UNC/20.15.2/VLRLOCALINFO]] · VLRLOCALINFO（VLR的本局信息） — `VLRLOCALINFO.md`
-- [[configobject/UNC/20.15.2/VLRMAPVERSION]] · VLRMAPVERSION（VLR使用的MAP接口版本） — `VLRMAPVERSION.md`
-- [[configobject/UNC/20.15.2/VLROFFLOADINF]] · VLROFFLOADINF（VLR迁移配置信息） — `VLROFFLOADINF.md`
-- [[configobject/UNC/20.15.2/VLRRESETTIMER]] · VLRRESETTIMER（VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置） — `VLRRESETTIMER.md`
-- [[configobject/UNC/20.15.2/VLRSGSSELFFC]] · VLRSGSSELFFC（VLR的SGs接口自保流控参数） — `VLRSGSSELFFC.md`
-- [[configobject/UNC/20.15.2/VLRTIMERPARA]] · VLRTIMERPARA（VLR网元定时器） — `VLRTIMERPARA.md`
-- [[configobject/UNC/20.15.2/VLRUSRNUMCHECK]] · VLRUSRNUMCHECK（VLR非短信用户数核查扫描参数） — `VLRUSRNUMCHECK.md`
-- [[configobject/UNC/20.15.2/VNFEVICTION]] · VNFEVICTION（网元重调度策略） — `VNFEVICTION.md`
-- [[configobject/UNC/20.15.2/VPROBECONFIG]] · VPROBECONFIG（vProbe文件管理规格配置） — `VPROBECONFIG.md`
-- [[configobject/UNC/20.15.2/VSMFCHGCTRL]] · VSMFCHGCTRL（V-SMF的计费模式和CHF选择参数） — `VSMFCHGCTRL.md`
-- [[configobject/UNC/20.15.2/WLRPAESTATE]] · WLRPAESTATE（无线路由PAE使能状态） — `WLRPAESTATE.md`
-- [[configobject/UNC/20.15.2/WLRSITE]] · WLRSITE（无线路由全局属性配置） — `WLRSITE.md`
-- [[configobject/UNC/20.15.2/ZEROCHGSKIPSW]] · ZEROCHGSKIPSW（零流量计费事件忽略开关） — `ZEROCHGSKIPSW.md`
+- [5GCQOSCORRT（5GC QoS纠错配置）](configobject/UNC/20.15.2/5GCQOSCORRT.md)
+- [5GGUMINFO（灰度升级所处于的阶段）](configobject/UNC/20.15.2/5GGUMINFO.md)
+- [ACCESSLISTFUNC（接入控制名单功能）](configobject/UNC/20.15.2/ACCESSLISTFUNC.md)
+- [ACSELECTSERVICE（仲裁服务状态）](configobject/UNC/20.15.2/ACSELECTSERVICE.md)
+- [ACSUPDSTATUS（升级状态）](configobject/UNC/20.15.2/ACSUPDSTATUS.md)
+- [ADDRESSATTR（UE IP地址属性）](configobject/UNC/20.15.2/ADDRESSATTR.md)
+- [ADDRPARA（ADDR参数）](configobject/UNC/20.15.2/ADDRPARA.md)
+- [AGFFCPARA（流控等级对应的流控参数）](configobject/UNC/20.15.2/AGFFCPARA.md)
+- [AGFFUNCPARA（AGF的功能参数）](configobject/UNC/20.15.2/AGFFUNCPARA.md)
+- [AGFOUTFC（出局流控参数）](configobject/UNC/20.15.2/AGFOUTFC.md)
+- [ALARMSWITCH（安全事件告警开关）](configobject/UNC/20.15.2/ALARMSWITCH.md)
+- [ALMFILTER（告警闪断振荡配置）](configobject/UNC/20.15.2/ALMFILTER.md)
+- [ALMINFO（告警配置信息）](configobject/UNC/20.15.2/ALMINFO.md)
+- [ALMNRMODE（网管北向告警上报模式）](configobject/UNC/20.15.2/ALMNRMODE.md)
+- [ALMRPTMODE（告警上报模式）](configobject/UNC/20.15.2/ALMRPTMODE.md)
+- [AMFAUSFRESET（AMF的AUSF故障处理策略）](configobject/UNC/20.15.2/AMFAUSFRESET.md)
+- [AMFDATACHK（AMF数据核查相关参数）](configobject/UNC/20.15.2/AMFDATACHK.md)
+- [AMFEVENTCMPT（事件订阅通知消息的兼容性控制参数）](configobject/UNC/20.15.2/AMFEVENTCMPT.md)
+- [AMFFCPARA（AMF自保流控参数）](configobject/UNC/20.15.2/AMFFCPARA.md)
+- [AMFMBSFUNC（AMF组播广播功能参数）](configobject/UNC/20.15.2/AMFMBSFUNC.md)
+- [AMFN26CPPATH（AMF N26消息抄送路径）](configobject/UNC/20.15.2/AMFN26CPPATH.md)
+- [AMFN26PLCY（AMF N26接口策略）](configobject/UNC/20.15.2/AMFN26PLCY.md)
+- [AMFNASFIXEDFC（指定消息类型的AMF NAS固定速率流控信息）](configobject/UNC/20.15.2/AMFNASFIXEDFC.md)
+- [AMFNSSECPLCY（AMF切片安全策略）](configobject/UNC/20.15.2/AMFNSSECPLCY.md)
+- [AMFPCFRESET（AMF的PCF故障处理策略）](configobject/UNC/20.15.2/AMFPCFRESET.md)
+- [AMFPEERSELFUNC（AMF对端选择功能控制参数）](configobject/UNC/20.15.2/AMFPEERSELFUNC.md)
+- [AMFPLCYFUNC（AMF策略功能）](configobject/UNC/20.15.2/AMFPLCYFUNC.md)
+- [AMFPROFILEPLCY（AMF上报NFPROFILE策略）](configobject/UNC/20.15.2/AMFPROFILEPLCY.md)
+- [AMFREDCAPFUNC（AMF RedCap功能）](configobject/UNC/20.15.2/AMFREDCAPFUNC.md)
+- [AMFRESTOFUNC（AMF热备容灾）](configobject/UNC/20.15.2/AMFRESTOFUNC.md)
+- [AMFROAMFUNC（AMF漫游功能管理参数）](configobject/UNC/20.15.2/AMFROAMFUNC.md)
+- [AMFSBICMPT（AMF服务化接口兼容性参数）](configobject/UNC/20.15.2/AMFSBICMPT.md)
+- [AMFSBIINFCTRL（AMF的SBI接口控制参数）](configobject/UNC/20.15.2/AMFSBIINFCTRL.md)
+- [AMFSENSECONF（AMF感知配置）](configobject/UNC/20.15.2/AMFSENSECONF.md)
+- [AMFSMFRESET（AMF的SMF故障处理策略）](configobject/UNC/20.15.2/AMFSMFRESET.md)
+- [AMFSMSFRESET（AMF的SMSF故障处理策略）](configobject/UNC/20.15.2/AMFSMSFRESET.md)
+- [AMFSOFTPARA（AMF软参）](configobject/UNC/20.15.2/AMFSOFTPARA.md)
+- [AMFSOFTPARAOFBIT（AMF软件参数比特位）](configobject/UNC/20.15.2/AMFSOFTPARAOFBIT.md)
+- [AMFUDMBYPASS（用户UDM Bypass信息）](configobject/UNC/20.15.2/AMFUDMBYPASS.md)
+- [AMFUDMRESET（AMF的UDM故障处理策略）](configobject/UNC/20.15.2/AMFUDMRESET.md)
+- [ANONYMOUSAPN（匿名APN配置）](configobject/UNC/20.15.2/ANONYMOUSAPN.md)
+- [ANTIATTACK（防报文攻击上限）](configobject/UNC/20.15.2/ANTIATTACK.md)
+- [APNACCESSCTRL（APN访问控制参数）](configobject/UNC/20.15.2/APNACCESSCTRL.md)
+- [APNACCESSWAL（APN接入速率）](configobject/UNC/20.15.2/APNACCESSWAL.md)
+- [APNADDRESSATTR（基于APN的地址分配属性）](configobject/UNC/20.15.2/APNADDRESSATTR.md)
+- [APNATSSSFUNC（APN ATSSS功能）](configobject/UNC/20.15.2/APNATSSSFUNC.md)
+- [APNAUTHATTR（APN鉴权属性配置）](configobject/UNC/20.15.2/APNAUTHATTR.md)
+- [APNCHARGECTRL（APN的计费配置）](configobject/UNC/20.15.2/APNCHARGECTRL.md)
+- [APNDHCPATTR（APN DHCP属性配置）](configobject/UNC/20.15.2/APNDHCPATTR.md)
+- [APNFAULT（APN粒度的故障处理开关）](configobject/UNC/20.15.2/APNFAULT.md)
+- [APNIDLETIME（APN空闲上下文定时器配置）](configobject/UNC/20.15.2/APNIDLETIME.md)
+- [APNIMSATTR（APN的IMS属性）](configobject/UNC/20.15.2/APNIMSATTR.md)
+- [APNIPALLOCRULE（基于APN的地址分配规则）](configobject/UNC/20.15.2/APNIPALLOCRULE.md)
+- [APNIPV6INFID（APN IPv6接口ID配置）](configobject/UNC/20.15.2/APNIPV6INFID.md)
+- [APNL2TPCTRL（APN L2TP CTRL配置）](configobject/UNC/20.15.2/APNL2TPCTRL.md)
+- [APNNONIPFUNC（APN Non-IP功能配置）](configobject/UNC/20.15.2/APNNONIPFUNC.md)
+- [APNPCCFUNC（APN PCC功能）](configobject/UNC/20.15.2/APNPCCFUNC.md)
+- [APNPCRFEMEREATTACH（APN的MBR删除PCC回滚空闲上下文配置）](configobject/UNC/20.15.2/APNPCRFEMEREATTACH.md)
+- [APNPCSCFSRVPRI（APN P-CSCF地址获取方式的优先级配置）](configobject/UNC/20.15.2/APNPCSCFSRVPRI.md)
+- [APNPLMNRATECTRL（APN Serving PLMN速率控制配置）](configobject/UNC/20.15.2/APNPLMNRATECTRL.md)
+- [APNQOSATTR（指定APN的QoS属性配置信息）](configobject/UNC/20.15.2/APNQOSATTR.md)
+- [APNRADIUSATTR（APN RADIUS配置）](configobject/UNC/20.15.2/APNRADIUSATTR.md)
+- [APNRATECTRL（APN速率控制配置）](configobject/UNC/20.15.2/APNRATECTRL.md)
+- [APNRDSACCTCTRL（APN RADIUS计费控制参数）](configobject/UNC/20.15.2/APNRDSACCTCTRL.md)
+- [APNREPORTATTR（APN的上报属性）](configobject/UNC/20.15.2/APNREPORTATTR.md)
+- [APNSESSIONTIME（APN会话上下文定时器配置）](configobject/UNC/20.15.2/APNSESSIONTIME.md)
+- [APNUPSELPLY（APN粒度的UP选择策略）](configobject/UNC/20.15.2/APNUPSELPLY.md)
+- [ARPANTISPOOFING（ARP防欺骗信息）](configobject/UNC/20.15.2/ARPANTISPOOFING.md)
+- [ARPEPS2PRER8（EPS ARP到Pre-R8 ARP的映射规则）](configobject/UNC/20.15.2/ARPEPS2PRER8.md)
+- [ARPIFLIMIT（ARP表项限制）](configobject/UNC/20.15.2/ARPIFLIMIT.md)
+- [ARPINTERFACE（接口下ARP配置信息）](configobject/UNC/20.15.2/ARPINTERFACE.md)
+- [ARPSPEEDLIMIT（速率限制）](configobject/UNC/20.15.2/ARPSPEEDLIMIT.md)
+- [ARPSYS（ARP系统信息）](configobject/UNC/20.15.2/ARPSYS.md)
+- [ASNFUNC（ASN功能）](configobject/UNC/20.15.2/ASNFUNC.md)
+- [ASRFUNC（容灾功能参数）](configobject/UNC/20.15.2/ASRFUNC.md)
+- [ATTACKDEFEND（攻击防范参数）](configobject/UNC/20.15.2/ATTACKDEFEND.md)
+- [AUTHSGSNADDR（向AAA鉴权服务器发送消息中携带的地址信息）](configobject/UNC/20.15.2/AUTHSGSNADDR.md)
+- [AUTHSOAP（网管登录认证策略）](configobject/UNC/20.15.2/AUTHSOAP.md)
+- [AUTOCONFIG（自动配置开关）](configobject/UNC/20.15.2/AUTOCONFIG.md)
+- [AUTOLOGPOLICY（日志自动备份策略）](configobject/UNC/20.15.2/AUTOLOGPOLICY.md)
+- [BACKOFFTIME（Back-off Time信息）](configobject/UNC/20.15.2/BACKOFFTIME.md)
+- [BACKOFFTIMECTRL（异常场景的Back-off Time开关）](configobject/UNC/20.15.2/BACKOFFTIMECTRL.md)
+- [BASESOFTPARA（基础软件参数配置）](configobject/UNC/20.15.2/BASESOFTPARA.md)
+- [BASESUBHEALTH（base链路亚健康信息）](configobject/UNC/20.15.2/BASESUBHEALTH.md)
+- [BATCHCUTFUNC（分批割接功能）](configobject/UNC/20.15.2/BATCHCUTFUNC.md)
+- [BFD（BFD全局配置信息）](configobject/UNC/20.15.2/BFD.md)
+- [BGP](configobject/UNC/20.15.2/BGP.md)
+- [BIGSCTPRXNUM（大端模式SCTP接收缓冲区参数）](configobject/UNC/20.15.2/BIGSCTPRXNUM.md)
+- [BKMPOLICY（自动备份策略）](configobject/UNC/20.15.2/BKMPOLICY.md)
+- [BMBYPASSSTATUS（裸机BYPASS状态）](configobject/UNC/20.15.2/BMBYPASSSTATUS.md)
+- [BMBYPASSSWITCH（裸机节点自动进入BYPASS开关）](configobject/UNC/20.15.2/BMBYPASSSWITCH.md)
+- [BSSAPPTMR（BSSAPP协议定时器表）](configobject/UNC/20.15.2/BSSAPPTMR.md)
+- [BSSGP（BSSGP参数）](configobject/UNC/20.15.2/BSSGP.md)
+- [BTRUNCFUNC（宽带集群系统扩展功能）](configobject/UNC/20.15.2/BTRUNCFUNC.md)
+- [BWRATIO（带宽占用比例表）](configobject/UNC/20.15.2/BWRATIO.md)
+- [BYPASSSTATUS（BYPASS状态）](configobject/UNC/20.15.2/BYPASSSTATUS.md)
+- [BYPASSSWITCH（节点自动进入BYPASS开关）](configobject/UNC/20.15.2/BYPASSSWITCH.md)
+- [CACHEPLCY（缓存策略）](configobject/UNC/20.15.2/CACHEPLCY.md)
+- [CACHESPECS（缓存数据规格）](configobject/UNC/20.15.2/CACHESPECS.md)
+- [CCLIMITRC（在线计费欠费返回码）](configobject/UNC/20.15.2/CCLIMITRC.md)
+- [CCPTIMER（融合计费Proxy定时器）](configobject/UNC/20.15.2/CCPTIMER.md)
+- [CDFFUNCPARA（CDF的功能参数）](configobject/UNC/20.15.2/CDFFUNCPARA.md)
+- [CDFTOKENPOLICY（CDF token策略）](configobject/UNC/20.15.2/CDFTOKENPOLICY.md)
+- [CDRFIELDTYPE（字段映射关系）](configobject/UNC/20.15.2/CDRFIELDTYPE.md)
+- [CDRGENRATECTRL（话单产生速率）](configobject/UNC/20.15.2/CDRGENRATECTRL.md)
+- [CDRPOOLTHRSH（话单池空间告警阈值）](configobject/UNC/20.15.2/CDRPOOLTHRSH.md)
+- [CDRSTORAGECTRL（话单存储控制参数）](configobject/UNC/20.15.2/CDRSTORAGECTRL.md)
+- [CDRSTRGSTATUS（话单缓存目录状态）](configobject/UNC/20.15.2/CDRSTRGSTATUS.md)
+- [CDRTRANSFER（话单发送控制参数）](configobject/UNC/20.15.2/CDRTRANSFER.md)
+- [CDRTRIGGER（离线计费话单产生开关）](configobject/UNC/20.15.2/CDRTRIGGER.md)
+- [CEAORIGHOSTCHK（对Gy接口的cea消息中的Origin-Host检查开关）](configobject/UNC/20.15.2/CEAORIGHOSTCHK.md)
+- [CERTESCAPESWITCH（证书过期逃生开关状态）](configobject/UNC/20.15.2/CERTESCAPESWITCH.md)
+- [CERTUPDATPARA（证书更新流程参数）](configobject/UNC/20.15.2/CERTUPDATPARA.md)
+- [CFGDEBUG（CFG诊断日志）](configobject/UNC/20.15.2/CFGDEBUG.md)
+- [CFGSYNC（配置同步开关）](configobject/UNC/20.15.2/CFGSYNC.md)
+- [CFSHEALCTRL（在复杂故障场景下自愈功能控制参数）](configobject/UNC/20.15.2/CFSHEALCTRL.md)
+- [CGSECPOLICY（安全策略）](configobject/UNC/20.15.2/CGSECPOLICY.md)
+- [CHARGECHARCHK（是否检查Serving Node携带的CC）](configobject/UNC/20.15.2/CHARGECHARCHK.md)
+- [CHARGECTRL（计费控制配置）](configobject/UNC/20.15.2/CHARGECTRL.md)
+- [CHFINIT（融合计费模板中用户激活相关参数）](configobject/UNC/20.15.2/CHFINIT.md)
+- [CHFSELECTMODE（用户激活和在线恢复场景CHF的选择模式）](configobject/UNC/20.15.2/CHFSELECTMODE.md)
+- [CHGCDR（强制生成用户话单）](configobject/UNC/20.15.2/CHGCDR.md)
+- [CHGCHAR（计费属性参数）](configobject/UNC/20.15.2/CHGCHAR.md)
+- [CHGGA（计费Ga接口参数状态）](configobject/UNC/20.15.2/CHGGA.md)
+- [CHGINITPRI（RADIUS计费和在线计费消息优先级）](configobject/UNC/20.15.2/CHGINITPRI.md)
+- [CHGIOPARA（融合计费惯性运行参数）](configobject/UNC/20.15.2/CHGIOPARA.md)
+- [CHGMODE（计费接口选择方式）](configobject/UNC/20.15.2/CHGMODE.md)
+- [CHGPLMNCHAR（PLMN的计费属性参数）](configobject/UNC/20.15.2/CHGPLMNCHAR.md)
+- [CHGRATECTRL（计费速率控制）](configobject/UNC/20.15.2/CHGRATECTRL.md)
+- [CHGWKDY（星期配置）](configobject/UNC/20.15.2/CHGWKDY.md)
+- [CHKPKGINTERVAL（软件包检查间隔）](configobject/UNC/20.15.2/CHKPKGINTERVAL.md)
+- [CHKSUM（校验和开关）](configobject/UNC/20.15.2/CHKSUM.md)
+- [CHRCFG（CHR配置）](configobject/UNC/20.15.2/CHRCFG.md)
+- [CHRFILESAVETIME（文件存留期设置）](configobject/UNC/20.15.2/CHRFILESAVETIME.md)
+- [CHRFILESTGMODE（上传至文件服务器的CHR文件转储方式）](configobject/UNC/20.15.2/CHRFILESTGMODE.md)
+- [CHRLOWPERFSVRSUB（低性能CHR服务器的单据订阅条件）](configobject/UNC/20.15.2/CHRLOWPERFSVRSUB.md)
+- [CHRMGMTPARA（关键流程CHR上报管理参数）](configobject/UNC/20.15.2/CHRMGMTPARA.md)
+- [CHRSNDPLCYCFG（CHR传输策略控制参数）](configobject/UNC/20.15.2/CHRSNDPLCYCFG.md)
+- [CHRSTORECFG（CHR存盘配置）](configobject/UNC/20.15.2/CHRSTORECFG.md)
+- [CLTVFYSWITCH（双向认证开关）](configobject/UNC/20.15.2/CLTVFYSWITCH.md)
+- [CMDLEVDFTBEH（DCC模板命令层缺省返回码动作）](configobject/UNC/20.15.2/CMDLEVDFTBEH.md)
+- [CMFFC（CMF流控参数）](configobject/UNC/20.15.2/CMFFC.md)
+- [CMFFCSWITCH（CMF流控开关配置数据）](configobject/UNC/20.15.2/CMFFCSWITCH.md)
+- [CNTCPUTHD（容器CPU阈值）](configobject/UNC/20.15.2/CNTCPUTHD.md)
+- [CNTMEMTHD（容器内存阈值）](configobject/UNC/20.15.2/CNTMEMTHD.md)
+- [CNTRESTHD（容器资源阈值）](configobject/UNC/20.15.2/CNTRESTHD.md)
+- [CNTTMPDIR（容器引擎临时目录）](configobject/UNC/20.15.2/CNTTMPDIR.md)
+- [CNVRGDCHGPARA（融合计费全局参数）](configobject/UNC/20.15.2/CNVRGDCHGPARA.md)
+- [COMBASEHEALTH（Base平面通信质量）](configobject/UNC/20.15.2/COMBASEHEALTH.md)
+- [COMMONSOFTPARA（公共软参）](configobject/UNC/20.15.2/COMMONSOFTPARA.md)
+- [COMMONSOFTPARAOFBIT（公共软件参数比特位）](configobject/UNC/20.15.2/COMMONSOFTPARAOFBIT.md)
+- [COMMTRCCTRL（通用模块跟踪控制功能）](configobject/UNC/20.15.2/COMMTRCCTRL.md)
+- [COMPATIBILITY（QoS兼容性配置）](configobject/UNC/20.15.2/COMPATIBILITY.md)
+- [CONCENPOINT（集中点部署模式）](configobject/UNC/20.15.2/CONCENPOINT.md)
+- [CONFCTRL（查看冲突控制参数）](configobject/UNC/20.15.2/CONFCTRL.md)
+- [CONTAINERTRIGGER（离线计费容器产生开关）](configobject/UNC/20.15.2/CONTAINERTRIGGER.md)
+- [CPDATAFLOWCTRL（CP Data流控参数）](configobject/UNC/20.15.2/CPDATAFLOWCTRL.md)
+- [CPGTPUPARA（GTPU参数）](configobject/UNC/20.15.2/CPGTPUPARA.md)
+- [CPUECOPOLICY（全局的CPU调频和休眠策略）](configobject/UNC/20.15.2/CPUECOPOLICY.md)
+- [CPUGENTURBO（CPU代际睿频开关）](configobject/UNC/20.15.2/CPUGENTURBO.md)
+- [CRACTRL（CRA控制参数）](configobject/UNC/20.15.2/CRACTRL.md)
+- [CREDITPOOLFUNC（Credit Pooling功能）](configobject/UNC/20.15.2/CREDITPOOLFUNC.md)
+- [CSLOGFC（日志流控开关）](configobject/UNC/20.15.2/CSLOGFC.md)
+- [CSLOGLEVEL（更新日志输出级别）](configobject/UNC/20.15.2/CSLOGLEVEL.md)
+- [DATACHKPOLICY（APP配置数据检查功能）](configobject/UNC/20.15.2/DATACHKPOLICY.md)
+- [DBDRAGING（CSDB容灾数据老化开关）](configobject/UNC/20.15.2/DBDRAGING.md)
+- [DBPARAS（配置的DB参数）](configobject/UNC/20.15.2/DBPARAS.md)
+- [DBSOFTPARA（CSDB软件调试参数表）](configobject/UNC/20.15.2/DBSOFTPARA.md)
+- [DBSTARTPARAS（DB启动参数值）](configobject/UNC/20.15.2/DBSTARTPARAS.md)
+- [DBTHRESHOLD（CSDB配置过载门限）](configobject/UNC/20.15.2/DBTHRESHOLD.md)
+- [DBUPGSTAGE（CSDB灰度升级阶段）](configobject/UNC/20.15.2/DBUPGSTAGE.md)
+- [DCNCTRL（DCN控制参数）](configobject/UNC/20.15.2/DCNCTRL.md)
+- [DDNATTR（DDN消息参数以及Delay信元处理开关）](configobject/UNC/20.15.2/DDNATTR.md)
+- [DDNFLOWCTRL（DDN流控参数）](configobject/UNC/20.15.2/DDNFLOWCTRL.md)
+- [DDNSUPPRESSION（DDN抑制功能配置）](configobject/UNC/20.15.2/DDNSUPPRESSION.md)
+- [DDNTHROTPARA（DDN信令抑制状态）](configobject/UNC/20.15.2/DDNTHROTPARA.md)
+- [DDNTHROTTLING（DDN Throttling功能）](configobject/UNC/20.15.2/DDNTHROTTLING.md)
+- [DDNTIMEOUTCTRL（DDN定时器超时参数）](configobject/UNC/20.15.2/DDNTIMEOUTCTRL.md)
+- [DDNUSERTYPEPRI（基于用户属性的DDN消息优先级）](configobject/UNC/20.15.2/DDNUSERTYPEPRI.md)
+- [DEACTIVERATE（去激活用户承载的速率）](configobject/UNC/20.15.2/DEACTIVERATE.md)
+- [DEFAULTASN（缺省ASN值）](configobject/UNC/20.15.2/DEFAULTASN.md)
+- [DEFEPSQOS（EPS缺省QoS参数）](configobject/UNC/20.15.2/DEFEPSQOS.md)
+- [DEFPRER8QOS（缺省的Pre-R8 QoS参数）](configobject/UNC/20.15.2/DEFPRER8QOS.md)
+- [DFTGBRBEARER（缺省GBR承载参数）](configobject/UNC/20.15.2/DFTGBRBEARER.md)
+- [DFTGLBPCRFGRP（全局缺省PCRF组）](configobject/UNC/20.15.2/DFTGLBPCRFGRP.md)
+- [DFTIDLETIME（默认空闲上下文定时器配置）](configobject/UNC/20.15.2/DFTIDLETIME.md)
+- [DFTIPEPCFGRP（全局默认智能PCF组）](configobject/UNC/20.15.2/DFTIPEPCFGRP.md)
+- [DFTPROXYCTRL（缺省代理控制配置）](configobject/UNC/20.15.2/DFTPROXYCTRL.md)
+- [DFTSESSIONTIME（默认会话上下文定时器）](configobject/UNC/20.15.2/DFTSESSIONTIME.md)
+- [DFTSRVNODERAT（默认RAT类型）](configobject/UNC/20.15.2/DFTSRVNODERAT.md)
+- [DHCP6CLIENTDUID（DHCPv6客户端DUID生成方式）](configobject/UNC/20.15.2/DHCP6CLIENTDUID.md)
+- [DHCPPARAREQ（向外部DHCPv4或者DHCPv6服务器发送的消息中的请求信元中的参数信息）](configobject/UNC/20.15.2/DHCPPARAREQ.md)
+- [DIAMETERPARA（Diameter参数）](configobject/UNC/20.15.2/DIAMETERPARA.md)
+- [DIRECTPATHFIRST（直连路径优先开关）](configobject/UNC/20.15.2/DIRECTPATHFIRST.md)
+- [DISCADAPTFCPARA（服务发现自适应流控全局配置）](configobject/UNC/20.15.2/DISCADAPTFCPARA.md)
+- [DISKCHKPARA（存储检测参数）](configobject/UNC/20.15.2/DISKCHKPARA.md)
+- [DISKPARTITION（资源磁盘分区过载配置）](configobject/UNC/20.15.2/DISKPARTITION.md)
+- [DMCMPT（Diameter兼容配置）](configobject/UNC/20.15.2/DMCMPT.md)
+- [DMFUNC（Diameter配置）](configobject/UNC/20.15.2/DMFUNC.md)
+- [DMOCCFG（Diameter流控控制参数）](configobject/UNC/20.15.2/DMOCCFG.md)
+- [DNNCMPT（DNN兼容性控制参数）](configobject/UNC/20.15.2/DNNCMPT.md)
+- [DNNREPLACEFUNC（DNN替换功能管理参数）](configobject/UNC/20.15.2/DNNREPLACEFUNC.md)
+- [DNS（DNS运行参数）](configobject/UNC/20.15.2/DNS.md)
+- [DOMAINSEPARATOR（域名前后缀分隔符）](configobject/UNC/20.15.2/DOMAINSEPARATOR.md)
+- [DRAUTOACTIVE（冷备容灾自动升主功能参数）](configobject/UNC/20.15.2/DRAUTOACTIVE.md)
+- [DRAUTOSWOVER（热备模式下是否开启自动倒换功能）](configobject/UNC/20.15.2/DRAUTOSWOVER.md)
+- [DRCHANNELPARA（容灾通道参数）](configobject/UNC/20.15.2/DRCHANNELPARA.md)
+- [DRCOUPLINGRESET（负荷分担容灾功能开启信息）](configobject/UNC/20.15.2/DRCOUPLINGRESET.md)
+- [DRGROUPABLEMENT（是否使能热备容灾组）](configobject/UNC/20.15.2/DRGROUPABLEMENT.md)
+- [DRHBNEGOTIMER（容灾定时器）](configobject/UNC/20.15.2/DRHBNEGOTIMER.md)
+- [DRKEYNF（监控的关键部件信息）](configobject/UNC/20.15.2/DRKEYNF.md)
+- [DRRESETLMTCOUNT（复位限制的次数）](configobject/UNC/20.15.2/DRRESETLMTCOUNT.md)
+- [DRSTBYRSTCTRL（运行备整系统复位开关）](configobject/UNC/20.15.2/DRSTBYRSTCTRL.md)
+- [DRTLSMODE（容灾控制通道TLS模式）](configobject/UNC/20.15.2/DRTLSMODE.md)
+- [DSCP（接口DSCP配置）](configobject/UNC/20.15.2/DSCP.md)
+- [DSCPRMK（重映射对应表）](configobject/UNC/20.15.2/DSCPRMK.md)
+- [DYNAMICPOLICY（服务类型分配动态权重的管理策略）](configobject/UNC/20.15.2/DYNAMICPOLICY.md)
+- [E2ETRCCFG（端到端用户跟踪参数）](configobject/UNC/20.15.2/E2ETRCCFG.md)
+- [ECOPOLICY（全局的CPU调频和休眠策略）](configobject/UNC/20.15.2/ECOPOLICY.md)
+- [ELECTIONABILITY（业务进程选举能力）](configobject/UNC/20.15.2/ELECTIONABILITY.md)
+- [ELECTSERVICE（仲裁服务状态）](configobject/UNC/20.15.2/ELECTSERVICE.md)
+- [EMM（S1模式MM协议参数）](configobject/UNC/20.15.2/EMM.md)
+- [EMMPROCTRL（S1模式移动性管理流程控制参数）](configobject/UNC/20.15.2/EMMPROCTRL.md)
+- [EMTCBEMM（S1模式eMTC MM协议参数）](configobject/UNC/20.15.2/EMTCBEMM.md)
+- [EMTCBESM（S1模式eMTC SM协议参数）](configobject/UNC/20.15.2/EMTCBESM.md)
+- [EPSQCI2PRER8（EPS QCI到Pre-R8 QoS映射规则）](configobject/UNC/20.15.2/EPSQCI2PRER8.md)
+- [ERRCDRALM（错误话单告警参数）](configobject/UNC/20.15.2/ERRCDRALM.md)
+- [ESM（S1模式SM协议参数）](configobject/UNC/20.15.2/ESM.md)
+- [EVTHEALCTRL（事件全局开关）](configobject/UNC/20.15.2/EVTHEALCTRL.md)
+- [EVTPARA（策略参数值）](configobject/UNC/20.15.2/EVTPARA.md)
+- [EVTSW（事件开关状态）](configobject/UNC/20.15.2/EVTSW.md)
+- [EXTENQCIATTR（应用扩展QCI参数属性）](configobject/UNC/20.15.2/EXTENQCIATTR.md)
+- [FABDIAGPARA（Pod Fabric平面亚健康诊断参数）](configobject/UNC/20.15.2/FABDIAGPARA.md)
+- [FABRICINALARMCFG（PAE告警配置）](configobject/UNC/20.15.2/FABRICINALARMCFG.md)
+- [FABRICINSWITCH（Fabric-In功能开关）](configobject/UNC/20.15.2/FABRICINSWITCH.md)
+- [FABRICMTU（PAE内联口MTU值）](configobject/UNC/20.15.2/FABRICMTU.md)
+- [FABRICSUBHEALTHY（FABRIC内联口亚健康信息）](configobject/UNC/20.15.2/FABRICSUBHEALTHY.md)
+- [FAILHANDLING（融合计费模板故障处理动作）](configobject/UNC/20.15.2/FAILHANDLING.md)
+- [FASTRECOVERY（全局业务快速恢复配置）](configobject/UNC/20.15.2/FASTRECOVERY.md)
+- [FAULTCHECKBYFABRIC（故障快速检测配置信息）](configobject/UNC/20.15.2/FAULTCHECKBYFABRIC.md)
+- [FAULTDETECT（故障策略信息）](configobject/UNC/20.15.2/FAULTDETECT.md)
+- [FAULTLNKDETCFG（故障链路探测配置）](configobject/UNC/20.15.2/FAULTLNKDETCFG.md)
+- [FCSWITCH（流控开关）](configobject/UNC/20.15.2/FCSWITCH.md)
+- [FEIPSTSEND（PST广播开关状态）](configobject/UNC/20.15.2/FEIPSTSEND.md)
+- [FHBYPASS（旁路失败处理的配置参数）](configobject/UNC/20.15.2/FHBYPASS.md)
+- [FILEDELPOLICY（文件删除策略）](configobject/UNC/20.15.2/FILEDELPOLICY.md)
+- [FIXEDFC（固定速率流控信息）](configobject/UNC/20.15.2/FIXEDFC.md)
+- [FLOWCTRLBUF（流量控制缓存配置）](configobject/UNC/20.15.2/FLOWCTRLBUF.md)
+- [FLOWCTRLPARA（流控系统参数）](configobject/UNC/20.15.2/FLOWCTRLPARA.md)
+- [FLOWCTRLQUE（流控队列信息）](configobject/UNC/20.15.2/FLOWCTRLQUE.md)
+- [FOOLPROOFSWITCH（防呆开关状态）](configobject/UNC/20.15.2/FOOLPROOFSWITCH.md)
+- [FWDFCPARA（转发面流控参数）](configobject/UNC/20.15.2/FWDFCPARA.md)
+- [FWDPARA（转发参数）](configobject/UNC/20.15.2/FWDPARA.md)
+- [FWSOFTPARA（ServiceFabric软参）](configobject/UNC/20.15.2/FWSOFTPARA.md)
+- [FWSOFTPARABITS（ServiceFabric软参比特位）](configobject/UNC/20.15.2/FWSOFTPARABITS.md)
+- [GA5GREUSEDAVP（5G用户接入时，Ga接口重用字段的填写方式）](configobject/UNC/20.15.2/GA5GREUSEDAVP.md)
+- [GB（Gb通用信息）](configobject/UNC/20.15.2/GB.md)
+- [GBACKOFFTIME（全局Back-off Time信息）](configobject/UNC/20.15.2/GBACKOFFTIME.md)
+- [GBDETACH（Gb分离非活动用户参数）](configobject/UNC/20.15.2/GBDETACH.md)
+- [GBLOCPORTRGE（本端端口号选择范围）](configobject/UNC/20.15.2/GBLOCPORTRGE.md)
+- [GBSM（Gb模式SM协议参数）](configobject/UNC/20.15.2/GBSM.md)
+- [GBSMPROCTRL（Gb模式SM流程控制参数）](configobject/UNC/20.15.2/GBSMPROCTRL.md)
+- [GCSMOOTHSWITCH（GC平滑开关）](configobject/UNC/20.15.2/GCSMOOTHSWITCH.md)
+- [GLBAPNRATECTRL（全局APN速率控制配置）](configobject/UNC/20.15.2/GLBAPNRATECTRL.md)
+- [GLBCDRFLDTEMP（全局话单模板）](configobject/UNC/20.15.2/GLBCDRFLDTEMP.md)
+- [GLBCGGROUP（全局CG组）](configobject/UNC/20.15.2/GLBCGGROUP.md)
+- [GLBCHARGECHAR（对本地用户、漫游用户、拜访用户所采用的计费属性）](configobject/UNC/20.15.2/GLBCHARGECHAR.md)
+- [GLBCHRFUNC（全局CHR功能配置）](configobject/UNC/20.15.2/GLBCHRFUNC.md)
+- [GLBDFTCHFGROUP（全局默认CHF组）](configobject/UNC/20.15.2/GLBDFTCHFGROUP.md)
+- [GLBEDRXATTR（全局终端接入eDRX模式属性）](configobject/UNC/20.15.2/GLBEDRXATTR.md)
+- [GLBIPV6INFID（整机IPv6接口ID配置）](configobject/UNC/20.15.2/GLBIPV6INFID.md)
+- [GLBPGWCHGPAUSE（全局计费暂停配置）](configobject/UNC/20.15.2/GLBPGWCHGPAUSE.md)
+- [GLBRDSACCT（全局RADIUS Accounting配置）](configobject/UNC/20.15.2/GLBRDSACCT.md)
+- [GLBSCTPPARA（SCTP全局参数）](configobject/UNC/20.15.2/GLBSCTPPARA.md)
+- [GLBTARIFFGROUP（全局费率切换组）](configobject/UNC/20.15.2/GLBTARIFFGROUP.md)
+- [GLOBALDNS（系统默认DNS）](configobject/UNC/20.15.2/GLOBALDNS.md)
+- [GLOBALFABRICOAM（OAM全局配置）](configobject/UNC/20.15.2/GLOBALFABRICOAM.md)
+- [GLOBALIMS（全局IMS互通配置信息）](configobject/UNC/20.15.2/GLOBALIMS.md)
+- [GLOBALNBNS（系统默认NBNS）](configobject/UNC/20.15.2/GLOBALNBNS.md)
+- [GLOBALWIFILTEHO（全局E-UTRAN和WLAN互操作控制属性）](configobject/UNC/20.15.2/GLOBALWIFILTEHO.md)
+- [GMM（Gb模式MM协议参数）](configobject/UNC/20.15.2/GMM.md)
+- [GMMPROCTRL（Gb模式移动性管理流程控制参数）](configobject/UNC/20.15.2/GMMPROCTRL.md)
+- [GMMPTMSIREALLOC（Gb模式PTMSI重分配控制参数）](configobject/UNC/20.15.2/GMMPTMSIREALLOC.md)
+- [GTPCFIXEDFC（指定消息类型固定速率流控信息）](configobject/UNC/20.15.2/GTPCFIXEDFC.md)
+- [GTPCFUNCPARA（GTP-C功能参数）](configobject/UNC/20.15.2/GTPCFUNCPARA.md)
+- [GTPPUB（GTP-C协议参数）](configobject/UNC/20.15.2/GTPPUB.md)
+- [GTPUCTRL（用户面控制参数）](configobject/UNC/20.15.2/GTPUCTRL.md)
+- [GTPUPARA（GTP-U协议参数）](configobject/UNC/20.15.2/GTPUPARA.md)
+- [GTSM（GTSM全局配置属性）](configobject/UNC/20.15.2/GTSM.md)
+- [GWOFFLOADPARA（网关迁移参数）](configobject/UNC/20.15.2/GWOFFLOADPARA.md)
+- [GWPROXYFUNC（网关Proxy功能配置）](configobject/UNC/20.15.2/GWPROXYFUNC.md)
+- [GY5GREUSEDAVP（5G用户接入时，Gy接口重用字段的填写方式）](configobject/UNC/20.15.2/GY5GREUSEDAVP.md)
+- [HAFEDETECT（HAFETCD网络亚健康探测参数）](configobject/UNC/20.15.2/HAFEDETECT.md)
+- [HAFFUNC（HAF服务内部功能的参数）](configobject/UNC/20.15.2/HAFFUNC.md)
+- [HBTMSUPPRESSED（NRF心跳超时抑制时长）](configobject/UNC/20.15.2/HBTMSUPPRESSED.md)
+- [HIGHRISKPERIOD（高危时间段提示状态）](configobject/UNC/20.15.2/HIGHRISKPERIOD.md)
+- [HLRBYPASS（HLR故障Bypass功能控制参数）](configobject/UNC/20.15.2/HLRBYPASS.md)
+- [HLRFIXEDFC（VLR向HLR发送请求的固定速率流控）](configobject/UNC/20.15.2/HLRFIXEDFC.md)
+- [HOLDINGTIME（DCC模板用户持续时长）](configobject/UNC/20.15.2/HOLDINGTIME.md)
+- [HOSTGLBCONFIG（主机收发全局属性）](configobject/UNC/20.15.2/HOSTGLBCONFIG.md)
+- [HOSTSTCGLB（全局协议报文统计配置）](configobject/UNC/20.15.2/HOSTSTCGLB.md)
+- [HSFNTIME（H-SFN参考时间）](configobject/UNC/20.15.2/HSFNTIME.md)
+- [HSMFCHGCTRL（漫游用户在归属地的计费方式和漫游参数的协商方式）](configobject/UNC/20.15.2/HSMFCHGCTRL.md)
+- [HSMFCOMMONSW（H-SMF通用控制开关）](configobject/UNC/20.15.2/HSMFCOMMONSW.md)
+- [HSSBYPASS（HSS故障Bypass功能控制参数）](configobject/UNC/20.15.2/HSSBYPASS.md)
+- [HTR（HTR功能）](configobject/UNC/20.15.2/HTR.md)
+- [HTTPCCACONF（HTTP CCA属性）](configobject/UNC/20.15.2/HTTPCCACONF.md)
+- [HTTPCONF（HTTP属性）](configobject/UNC/20.15.2/HTTPCONF.md)
+- [HTTPESCAPE（HTTP对于URL转义的参数）](configobject/UNC/20.15.2/HTTPESCAPE.md)
+- [HTTPFCCONF（HTTP流控属性）](configobject/UNC/20.15.2/HTTPFCCONF.md)
+- [HTTPFIXEDFCMSG（HTTP指定消息类型固定速率流控信息）](configobject/UNC/20.15.2/HTTPFIXEDFCMSG.md)
+- [HTTPFQDNSW（HTTP是否支持FQDN）](configobject/UNC/20.15.2/HTTPFQDNSW.md)
+- [HTTPGLBFIXEDBWFC（HTTP全局固定带宽流控）](configobject/UNC/20.15.2/HTTPGLBFIXEDBWFC.md)
+- [HTTPHTRCFG（HTR流控全局配置）](configobject/UNC/20.15.2/HTTPHTRCFG.md)
+- [HTTPINFORPT（HTTP连接信息上报参数）](configobject/UNC/20.15.2/HTTPINFORPT.md)
+- [HTTPMEMFC（HTTP内存流控）](configobject/UNC/20.15.2/HTTPMEMFC.md)
+- [HTTPMSGLOGPARA（HTTP消息日志参数）](configobject/UNC/20.15.2/HTTPMSGLOGPARA.md)
+- [HTTPSRVLBSW（HTTP服务端负载重均衡功能）](configobject/UNC/20.15.2/HTTPSRVLBSW.md)
+- [HVNEGRCPSW（漫游参数协商开关）](configobject/UNC/20.15.2/HVNEGRCPSW.md)
+- [IFCMCFG（IFCM配置信息）](configobject/UNC/20.15.2/IFCMCFG.md)
+- [IFDSCP（接口DSCP配置）](configobject/UNC/20.15.2/IFDSCP.md)
+- [IFDSCPMCR（接口DSCP配置）](configobject/UNC/20.15.2/IFDSCPMCR.md)
+- [IFFLOWALMTHD（接口带宽利用率告警阈值）](configobject/UNC/20.15.2/IFFLOWALMTHD.md)
+- [IFGLOBALCONFIG（接口全局配置）](configobject/UNC/20.15.2/IFGLOBALCONFIG.md)
+- [IFIPV6ENABLE（接口IPv6使能）](configobject/UNC/20.15.2/IFIPV6ENABLE.md)
+- [IFIPV6ENABLEIPSEC（接口IPv6使能）](configobject/UNC/20.15.2/IFIPV6ENABLEIPSEC.md)
+- [IFMTUFRAGMODE（分片方式）](configobject/UNC/20.15.2/IFMTUFRAGMODE.md)
+- [IKEGLOBALCONFIG（IKE全局配置）](configobject/UNC/20.15.2/IKEGLOBALCONFIG.md)
+- [IMSBYPASSFUNC（语音PCF/PCRF故障Bypass场景功能）](configobject/UNC/20.15.2/IMSBYPASSFUNC.md)
+- [IMSDDNFLOWCTRLCHR（IMS DDN流量控制上报CHR配置开关）](configobject/UNC/20.15.2/IMSDDNFLOWCTRLCHR.md)
+- [IMSVOPS（VoPS配置）](configobject/UNC/20.15.2/IMSVOPS.md)
+- [INNERSTAT（内统配置参数）](configobject/UNC/20.15.2/INNERSTAT.md)
+- [INNERTLSMODE（TLS模式）](configobject/UNC/20.15.2/INNERTLSMODE.md)
+- [INTERAMFFC（Inter-AMF流控参数）](configobject/UNC/20.15.2/INTERAMFFC.md)
+- [INTERMMEFC（Inter-MME流控参数）](configobject/UNC/20.15.2/INTERMMEFC.md)
+- [INTERMMEFIXFC（Inter-MME接入固定速率流控功能相关参数）](configobject/UNC/20.15.2/INTERMMEFIXFC.md)
+- [IPALLOCBYLOCGLBSW（基于位置区地址分配的全局开关）](configobject/UNC/20.15.2/IPALLOCBYLOCGLBSW.md)
+- [IPALLOCBYLOCSW（基于位置区地址分配的开关）](configobject/UNC/20.15.2/IPALLOCBYLOCSW.md)
+- [IPALLOCBYUPFGLBSW（基于UPF地址分配的全局开关）](configobject/UNC/20.15.2/IPALLOCBYUPFGLBSW.md)
+- [IPALLOCBYUPFSW（基于UPF的地址分配开关）](configobject/UNC/20.15.2/IPALLOCBYUPFSW.md)
+- [IPALLOCRULE（全局地址分配规则）](configobject/UNC/20.15.2/IPALLOCRULE.md)
+- [IPAREAGPCTRL（基于位置分配IP地址策略）](configobject/UNC/20.15.2/IPAREAGPCTRL.md)
+- [IPCONVERGENCE（Bi口IPCONVERGENCE开关状态）](configobject/UNC/20.15.2/IPCONVERGENCE.md)
+- [IPEN7SESSFUNC（智能双N7会话特性是否使能）](configobject/UNC/20.15.2/IPEN7SESSFUNC.md)
+- [IPFRR（IP FRR）](configobject/UNC/20.15.2/IPFRR.md)
+- [IPOPTSECURITY（IP选项安全配置）](configobject/UNC/20.15.2/IPOPTSECURITY.md)
+- [IPPOOLALMTHD（本地地址池组使用率告警阈值）](configobject/UNC/20.15.2/IPPOOLALMTHD.md)
+- [IPSECURITYSWITCH（IP选项安全开关）](configobject/UNC/20.15.2/IPSECURITYSWITCH.md)
+- [IPV4THRESHOLD（IPv4阈值）](configobject/UNC/20.15.2/IPV4THRESHOLD.md)
+- [IPV6GLOBALCONFIG（IPv6全局配置）](configobject/UNC/20.15.2/IPV6GLOBALCONFIG.md)
+- [IPV6PARA（IPv6参数）](configobject/UNC/20.15.2/IPV6PARA.md)
+- [IPV6THRESHOLD（IPv6阈值）](configobject/UNC/20.15.2/IPV6THRESHOLD.md)
+- [ISMFASMFRESET（I-SMF对A-SMF的故障恢复策略）](configobject/UNC/20.15.2/ISMFASMFRESET.md)
+- [IUCONNPARA（Iu连接控制参数）](configobject/UNC/20.15.2/IUCONNPARA.md)
+- [IUDETACH（Iu分离非活动用户参数）](configobject/UNC/20.15.2/IUDETACH.md)
+- [IULOAD（用户Iu连接负荷状态）](configobject/UNC/20.15.2/IULOAD.md)
+- [IUPFSELFAIL（I-UPF选择失败处理方式）](configobject/UNC/20.15.2/IUPFSELFAIL.md)
+- [IUSM（Iu模式SM协议参数）](configobject/UNC/20.15.2/IUSM.md)
+- [IUSMPROCTRL（Iu模式SM流程控制参数）](configobject/UNC/20.15.2/IUSMPROCTRL.md)
+- [KPIMONPARA（KPI监控参数）](configobject/UNC/20.15.2/KPIMONPARA.md)
+- [KPITHD（KPI门限）](configobject/UNC/20.15.2/KPITHD.md)
+- [KUBEPROBE（是否放通就绪状态检测）](configobject/UNC/20.15.2/KUBEPROBE.md)
+- [L2TPKEY（L2TP加密配置）](configobject/UNC/20.15.2/L2TPKEY.md)
+- [LBFC（流控开关）](configobject/UNC/20.15.2/LBFC.md)
+- [LBSOFTPARA（CSLB软件调试参数表）](configobject/UNC/20.15.2/LBSOFTPARA.md)
+- [LBTNIPINIPSWITCH（CSLB隧道IP-in-IP开关）](configobject/UNC/20.15.2/LBTNIPINIPSWITCH.md)
+- [LBTNTSTPARA（CSLB隧道探测参数）](configobject/UNC/20.15.2/LBTNTSTPARA.md)
+- [LCSPARA（LCS参数表记录）](configobject/UNC/20.15.2/LCSPARA.md)
+- [LDPBFD（LDP BFD配置）](configobject/UNC/20.15.2/LDPBFD.md)
+- [LDPGLOBAL（LDP全局配置）](configobject/UNC/20.15.2/LDPGLOBAL.md)
+- [LICCTRLALM（License容量告警配置）](configobject/UNC/20.15.2/LICCTRLALM.md)
+- [LICENSESWITCH（License配置项开关）](configobject/UNC/20.15.2/LICENSESWITCH.md)
+- [LIMITMBSWITCH（有界邮箱开关配置状态）](configobject/UNC/20.15.2/LIMITMBSWITCH.md)
+- [LINKCONGCTRL（Diameter链路拥塞控制）](configobject/UNC/20.15.2/LINKCONGCTRL.md)
+- [LINKMIGCTRL（链路迁移控制参数）](configobject/UNC/20.15.2/LINKMIGCTRL.md)
+- [LINKMTU（Link MTU值）](configobject/UNC/20.15.2/LINKMTU.md)
+- [LNKCTRLLOG（链路控制消息日志开关）](configobject/UNC/20.15.2/LNKCTRLLOG.md)
+- [LNKMONITOR（链路频繁闪断监控配置）](configobject/UNC/20.15.2/LNKMONITOR.md)
+- [LOADCHECKINFO（CSLB负载不均衡检测功能的参数）](configobject/UNC/20.15.2/LOADCHECKINFO.md)
+- [LOCATIONREPORT（用户位置信息）](configobject/UNC/20.15.2/LOCATIONREPORT.md)
+- [LOGCLEANPOLICY（日志老化策略）](configobject/UNC/20.15.2/LOGCLEANPOLICY.md)
+- [LOGIFDSCP（逻辑接口DSCP配置）](configobject/UNC/20.15.2/LOGIFDSCP.md)
+- [LOGINALM（登录告警策略）](configobject/UNC/20.15.2/LOGINALM.md)
+- [LOWPRIAPNFC（低优先级APN流控参数）](configobject/UNC/20.15.2/LOWPRIAPNFC.md)
+- [LOWPRIOFC（低优先级流控参数）](configobject/UNC/20.15.2/LOWPRIOFC.md)
+- [LSPVGLOBALCFG（LSPV全局属性）](configobject/UNC/20.15.2/LSPVGLOBALCFG.md)
+- [LTEMRATVALUE（LTE-M用户的RAT值）](configobject/UNC/20.15.2/LTEMRATVALUE.md)
+- [M2MCTRL（M2M控制参数）](configobject/UNC/20.15.2/M2MCTRL.md)
+- [MAINTAINIMSI（在线承载为保留承载）](configobject/UNC/20.15.2/MAINTAINIMSI.md)
+- [MAPFIXEDFC（SMS的MAP接口固定速率流控）](configobject/UNC/20.15.2/MAPFIXEDFC.md)
+- [MAPFUNC（MAP功能配置）](configobject/UNC/20.15.2/MAPFUNC.md)
+- [MASALMRPTMODE（5G告警上报模式）](configobject/UNC/20.15.2/MASALMRPTMODE.md)
+- [MASTERPCRF（主用PCRF）](configobject/UNC/20.15.2/MASTERPCRF.md)
+- [MCSWITCH（多连接开关配置数据）](configobject/UNC/20.15.2/MCSWITCH.md)
+- [MDTCTRL（MDT控制参数）](configobject/UNC/20.15.2/MDTCTRL.md)
+- [MEASMETRIC（话统测量指标参数）](configobject/UNC/20.15.2/MEASMETRIC.md)
+- [MEASMU（话统测量单元模型）](configobject/UNC/20.15.2/MEASMU.md)
+- [MEPINTERACT（MEP_SMF联动功能开关）](configobject/UNC/20.15.2/MEPINTERACT.md)
+- [MMFUNC（移动性管理扩展功能）](configobject/UNC/20.15.2/MMFUNC.md)
+- [MONNFTHR（正常状态网元的占比阈值）](configobject/UNC/20.15.2/MONNFTHR.md)
+- [MPLSSITE（MPLS全局配置）](configobject/UNC/20.15.2/MPLSSITE.md)
+- [MPSARP（MPS ARP配置）](configobject/UNC/20.15.2/MPSARP.md)
+- [MSCCLEVDFTBEH（DCC模板MSCC层缺省返回码动作）](configobject/UNC/20.15.2/MSCCLEVDFTBEH.md)
+- [MSCSELPLCY（MSC选择策略）](configobject/UNC/20.15.2/MSCSELPLCY.md)
+- [MSETCDTTL（租约时长）](configobject/UNC/20.15.2/MSETCDTTL.md)
+- [MSFAULTALARM（告警开关配置数据）](configobject/UNC/20.15.2/MSFAULTALARM.md)
+- [MSFAULTTOLERANCE（故障检测参数）](configobject/UNC/20.15.2/MSFAULTTOLERANCE.md)
+- [MSSCOMMMATCH（通信模块规则匹配开关）](configobject/UNC/20.15.2/MSSCOMMMATCH.md)
+- [MSSDEBUGSWITCH（维测信息统计开关）](configobject/UNC/20.15.2/MSSDEBUGSWITCH.md)
+- [MSSDEBUGSWITCHM（维测信息统计开关）](configobject/UNC/20.15.2/MSSDEBUGSWITCHM.md)
+- [MSSLOGRULE（Log过滤或非抑制开关）](configobject/UNC/20.15.2/MSSLOGRULE.md)
+- [MSSPBUFREUSE（PBUF重用信息）](configobject/UNC/20.15.2/MSSPBUFREUSE.md)
+- [MSSPBUFTRACE（PBUF轨迹设置的开关）](configobject/UNC/20.15.2/MSSPBUFTRACE.md)
+- [MSSPBUFTRACELT（PBUF轨迹开关状态和持续时间）](configobject/UNC/20.15.2/MSSPBUFTRACELT.md)
+- [MSSPMDMATCH（端口报文匹配统计信息）](configobject/UNC/20.15.2/MSSPMDMATCH.md)
+- [MSSRULE（匹配规则）](configobject/UNC/20.15.2/MSSRULE.md)
+- [MSSRULEM（匹配规则）](configobject/UNC/20.15.2/MSSRULEM.md)
+- [MSSTBMFILTER（MSS表项开关过滤状态）](configobject/UNC/20.15.2/MSSTBMFILTER.md)
+- [MSSWORKFILTER（Work过滤规则信息）](configobject/UNC/20.15.2/MSSWORKFILTER.md)
+- [MTSCFG（消息跟踪配置参数）](configobject/UNC/20.15.2/MTSCFG.md)
+- [MULSMFPDUREEPOL（是否支持多SMFInfo场景下的会话重建功能）](configobject/UNC/20.15.2/MULSMFPDUREEPOL.md)
+- [MULTIDNNCTRL（2B2C漫游双DNN特性相关的功能控制）](configobject/UNC/20.15.2/MULTIDNNCTRL.md)
+- [MULTISRVPLMNEN（多Serving Plmn增强功能）](configobject/UNC/20.15.2/MULTISRVPLMNEN.md)
+- [N16ASMFDATACHK（N16aSMF数据核查功能）](configobject/UNC/20.15.2/N16ASMFDATACHK.md)
+- [N2DTLSPARA（N2接口的DTLS参数）](configobject/UNC/20.15.2/N2DTLSPARA.md)
+- [N2FIXEDFC（N2接口固定速率流控信息）](configobject/UNC/20.15.2/N2FIXEDFC.md)
+- [N2FIXEDFCBYMSG（指定消息类型固定速率流控信息）](configobject/UNC/20.15.2/N2FIXEDFCBYMSG.md)
+- [N2OVERLOAD（N2过载控制信息）](configobject/UNC/20.15.2/N2OVERLOAD.md)
+- [N2PAGINGFCPLCY（N2模式寻呼消息反压流控策略）](configobject/UNC/20.15.2/N2PAGINGFCPLCY.md)
+- [N40APIVER（N40接口协议版本和需要使用的FeatureList）](configobject/UNC/20.15.2/N40APIVER.md)
+- [N40MSGCTRL（N40接口消息的控制参数）](configobject/UNC/20.15.2/N40MSGCTRL.md)
+- [N40MSGSTG（缓存开关、回放间隔、回放速率）](configobject/UNC/20.15.2/N40MSGSTG.md)
+- [N40QUOTACTRL（N40接口配额的控制参数）](configobject/UNC/20.15.2/N40QUOTACTRL.md)
+- [N4CHGMSGCTRL（N4接口计费消息相关控制参数）](configobject/UNC/20.15.2/N4CHGMSGCTRL.md)
+- [N4FIXEDFC（指定消息类型固定速率流控信息）](configobject/UNC/20.15.2/N4FIXEDFC.md)
+- [N7RCVATTRCTRL（N7接收信元处理控制）](configobject/UNC/20.15.2/N7RCVATTRCTRL.md)
+- [N7SNDATTRCTRL（N7发送信元处理控制）](configobject/UNC/20.15.2/N7SNDATTRCTRL.md)
+- [NASCMPT（NAS兼容性参数）](configobject/UNC/20.15.2/NASCMPT.md)
+- [NBEMM（NB-S1模式MM协议参数）](configobject/UNC/20.15.2/NBEMM.md)
+- [NBESM（NB-S1模式SM协议参数）](configobject/UNC/20.15.2/NBESM.md)
+- [NBFC（查看NB流控数据）](configobject/UNC/20.15.2/NBFC.md)
+- [NBIOTRATVALUE（NB-IoT终端配置的RAT值）](configobject/UNC/20.15.2/NBIOTRATVALUE.md)
+- [NCCPOLICY（NCC策略）](configobject/UNC/20.15.2/NCCPOLICY.md)
+- [NCGCGFSFP（软参）](configobject/UNC/20.15.2/NCGCGFSFP.md)
+- [NCGSOFTPARA（NCG软参）](configobject/UNC/20.15.2/NCGSOFTPARA.md)
+- [NCGSOFTPARAOFBIT（NCG软件参数比特位）](configobject/UNC/20.15.2/NCGSOFTPARAOFBIT.md)
+- [NDGLOBALCONFIG（IPv6 ND系统配置）](configobject/UNC/20.15.2/NDGLOBALCONFIG.md)
+- [NDIFCONFIG（IPv6 ND接口配置）](configobject/UNC/20.15.2/NDIFCONFIG.md)
+- [NETSUBHEALTH（网络亚健康参数）](configobject/UNC/20.15.2/NETSUBHEALTH.md)
+- [NEWCERTSWITCH（证书开关状态）](configobject/UNC/20.15.2/NEWCERTSWITCH.md)
+- [NFDISCPLCY（NF的服务发现策略）](configobject/UNC/20.15.2/NFDISCPLCY.md)
+- [NFMGMTTIMER（NF管理模块的定时器配置）](configobject/UNC/20.15.2/NFMGMTTIMER.md)
+- [NFNRFMGMTPARA（NF与NRF间的全局管理参数）](configobject/UNC/20.15.2/NFNRFMGMTPARA.md)
+- [NFREGIONINFO（本端NF大区和省份数据管理参数）](configobject/UNC/20.15.2/NFREGIONINFO.md)
+- [NFSELPLCY（目标NF选择策略）](configobject/UNC/20.15.2/NFSELPLCY.md)
+- [NFUPDATE（更新NF注册信息）](configobject/UNC/20.15.2/NFUPDATE.md)
+- [NGACCCHRCFG（NG接入CHR上报策略）](configobject/UNC/20.15.2/NGACCCHRCFG.md)
+- [NGALMRPTMODE（5G告警上报模式）](configobject/UNC/20.15.2/NGALMRPTMODE.md)
+- [NGAPCMPT（NGAP兼容性参数）](configobject/UNC/20.15.2/NGAPCMPT.md)
+- [NGAPTIMER（N2定时器参数）](configobject/UNC/20.15.2/NGAPTIMER.md)
+- [NGAREARESELCTRL（AMF区域重选功能控制参数）](configobject/UNC/20.15.2/NGAREARESELCTRL.md)
+- [NGCBSFUNC（小区广播功能）](configobject/UNC/20.15.2/NGCBSFUNC.md)
+- [NGCHRSTORCFG（AMF小范围CHR存储配置）](configobject/UNC/20.15.2/NGCHRSTORCFG.md)
+- [NGDNS（DNS运行参数）](configobject/UNC/20.15.2/NGDNS.md)
+- [NGDNSCACHE（DNS缓存）](configobject/UNC/20.15.2/NGDNSCACHE.md)
+- [NGEMGSRVFUNC（5G紧急服务功能）](configobject/UNC/20.15.2/NGEMGSRVFUNC.md)
+- [NGIMSVOPS（VoPS配置）](configobject/UNC/20.15.2/NGIMSVOPS.md)
+- [NGIPAREACTRL（基于位置的地址分配控制参数）](configobject/UNC/20.15.2/NGIPAREACTRL.md)
+- [NGLANFUNC（NGLAN扩展功能）](configobject/UNC/20.15.2/NGLANFUNC.md)
+- [NGLCSPARA（5G定位服务参数）](configobject/UNC/20.15.2/NGLCSPARA.md)
+- [NGM2MCTRL（5G M2M控制参数）](configobject/UNC/20.15.2/NGM2MCTRL.md)
+- [NGMDTCTRL（5G MDT控制参数）](configobject/UNC/20.15.2/NGMDTCTRL.md)
+- [NGMMFUNC（5G移动性管理功能）](configobject/UNC/20.15.2/NGMMFUNC.md)
+- [NGMMPARA（5G MM协议参数）](configobject/UNC/20.15.2/NGMMPARA.md)
+- [NGMMPROCTRL（5G移动性管理流程控制参数）](configobject/UNC/20.15.2/NGMMPROCTRL.md)
+- [NGNTNFUNC（卫星网络接入管理功能）](configobject/UNC/20.15.2/NGNTNFUNC.md)
+- [NGPAGINGCTRL（5G寻呼策略控制表）](configobject/UNC/20.15.2/NGPAGINGCTRL.md)
+- [NGRANACCCTRL（5G基站接入控制策略）](configobject/UNC/20.15.2/NGRANACCCTRL.md)
+- [NGRANOVERLOADCTRL（5G基站过载监控参数）](configobject/UNC/20.15.2/NGRANOVERLOADCTRL.md)
+- [NGSCTPPARA（N2接口SCTP协议参数）](configobject/UNC/20.15.2/NGSCTPPARA.md)
+- [NGSMARTDNNCL（智能分流功能）](configobject/UNC/20.15.2/NGSMARTDNNCL.md)
+- [NGSMARTPARA（5G信令抑制参数）](configobject/UNC/20.15.2/NGSMARTPARA.md)
+- [NGTAIPAGMONPARA（NG TAI组寻呼异常监控功能参数）](configobject/UNC/20.15.2/NGTAIPAGMONPARA.md)
+- [NOCDRALM（未接收到话单告警参数）](configobject/UNC/20.15.2/NOCDRALM.md)
+- [NODECHKPARA（节点检测参数）](configobject/UNC/20.15.2/NODECHKPARA.md)
+- [NODEHEALCTRL（Node自愈策略控制参数）](configobject/UNC/20.15.2/NODEHEALCTRL.md)
+- [NODEREPSWITCH（节点查询自动修复开关）](configobject/UNC/20.15.2/NODEREPSWITCH.md)
+- [NONIPFUNC（Non-IP功能配置）](configobject/UNC/20.15.2/NONIPFUNC.md)
+- [NOTIFYRSDPARA（状态通知失败重传参数）](configobject/UNC/20.15.2/NOTIFYRSDPARA.md)
+- [NRFBIGPKGPARA（NRF大包控制参数）](configobject/UNC/20.15.2/NRFBIGPKGPARA.md)
+- [NRFBNDWDFCPARA（NRF带宽流控配置）](configobject/UNC/20.15.2/NRFBNDWDFCPARA.md)
+- [NRFCONNPLCY（NRF国际漫游连接策略）](configobject/UNC/20.15.2/NRFCONNPLCY.md)
+- [NRFDATACHK（NRF数据一致性核查相关参数）](configobject/UNC/20.15.2/NRFDATACHK.md)
+- [NRFDETECTTIMER（NRF检测时长信息）](configobject/UNC/20.15.2/NRFDETECTTIMER.md)
+- [NRFDISCPARARULE（NF发现参数防呆规则）](configobject/UNC/20.15.2/NRFDISCPARARULE.md)
+- [NRFDISCREGNRULE（服务发现区域识别规则）](configobject/UNC/20.15.2/NRFDISCREGNRULE.md)
+- [NRFDISCVERIFY（服务发现NF属性冲突核验参数）](configobject/UNC/20.15.2/NRFDISCVERIFY.md)
+- [NRFDRRTSTASW（NRF双活备份状态忽略开关）](configobject/UNC/20.15.2/NRFDRRTSTASW.md)
+- [NRFFCPARA（流控等级对应的流控参数）](configobject/UNC/20.15.2/NRFFCPARA.md)
+- [NRFFCPKGMIX（NRF大小包协同返回功能参数）](configobject/UNC/20.15.2/NRFFCPKGMIX.md)
+- [NRFFUNCSW（NRF功能开关）](configobject/UNC/20.15.2/NRFFUNCSW.md)
+- [NRFGRTIMER（NRF容灾定时器时长）](configobject/UNC/20.15.2/NRFGRTIMER.md)
+- [NRFHOMEPLY（NRF归属地默认策略）](configobject/UNC/20.15.2/NRFHOMEPLY.md)
+- [NRFINTERFUNC（国际漫游功能参数）](configobject/UNC/20.15.2/NRFINTERFUNC.md)
+- [NRFIPWHITELSTSW（NF IP白名单开关）](configobject/UNC/20.15.2/NRFIPWHITELSTSW.md)
+- [NRFLINKMNGPARA（NRF的链路管理参数）](configobject/UNC/20.15.2/NRFLINKMNGPARA.md)
+- [NRFLOGFCPARA（NRF日志流控参数）](configobject/UNC/20.15.2/NRFLOGFCPARA.md)
+- [NRFLOGSW（NRF维护日志打印开关）](configobject/UNC/20.15.2/NRFLOGSW.md)
+- [NRFMATCHRULE（服务发现最长匹配处理规则）](configobject/UNC/20.15.2/NRFMATCHRULE.md)
+- [NRFNFINFOFMT（NF私有信息格式）](configobject/UNC/20.15.2/NRFNFINFOFMT.md)
+- [NRFNFLSTCTLPLY（NFINFOLIST处理策略）](configobject/UNC/20.15.2/NRFNFLSTCTLPLY.md)
+- [NRFNOTIFYFCPARA（通知流控参数）](configobject/UNC/20.15.2/NRFNOTIFYFCPARA.md)
+- [NRFNOTIFYPLY（NRF通知策略）](configobject/UNC/20.15.2/NRFNOTIFYPLY.md)
+- [NRFPATUPDIDXSW（PATCH更新携带下标处理开关）](configobject/UNC/20.15.2/NRFPATUPDIDXSW.md)
+- [NRFPKGRATIO（NRF内外包长比例）](configobject/UNC/20.15.2/NRFPKGRATIO.md)
+- [NRFRGNPREFPLY（NRF区域优选策略）](configobject/UNC/20.15.2/NRFRGNPREFPLY.md)
+- [NRFSMSFCUTPLY（SMSF割接场景NRF处理策略）](configobject/UNC/20.15.2/NRFSMSFCUTPLY.md)
+- [NRFSMSFSEGSW（SMSF号段白名单功能开关）](configobject/UNC/20.15.2/NRFSMSFSEGSW.md)
+- [NRFSMSFWHLISTSW（SMSF白名单开关）](configobject/UNC/20.15.2/NRFSMSFWHLISTSW.md)
+- [NRFSOFTPARA（NRF软参）](configobject/UNC/20.15.2/NRFSOFTPARA.md)
+- [NRFSOFTPARAOFBIT（NRF软件参数比特位）](configobject/UNC/20.15.2/NRFSOFTPARAOFBIT.md)
+- [NRFSUBPARA（NRF订阅参数）](configobject/UNC/20.15.2/NRFSUBPARA.md)
+- [NRFSUBTHRESHOLD（NF的订阅门限）](configobject/UNC/20.15.2/NRFSUBTHRESHOLD.md)
+- [NRFSUPFEATURES（NRF服务能力参数）](configobject/UNC/20.15.2/NRFSUPFEATURES.md)
+- [NRFTAKEPARARULE（NF携带参数处理规则）](configobject/UNC/20.15.2/NRFTAKEPARARULE.md)
+- [NRFTIMER（NRF时长信息）](configobject/UNC/20.15.2/NRFTIMER.md)
+- [NRFVERIFYPARA（NF属性冲突核验参数）](configobject/UNC/20.15.2/NRFVERIFYPARA.md)
+- [NRFVISITPLY（NRF拜访地默认策略）](configobject/UNC/20.15.2/NRFVISITPLY.md)
+- [NRFWHITELISTSW（NF白名单开关）](configobject/UNC/20.15.2/NRFWHITELISTSW.md)
+- [NRRATVALUE（5G接入用户的RAT填写值）](configobject/UNC/20.15.2/NRRATVALUE.md)
+- [NS（NS参数）](configobject/UNC/20.15.2/NS.md)
+- [NSACTRL（NSA控制参数）](configobject/UNC/20.15.2/NSACTRL.md)
+- [NSACTRLPROP（NSA控制处理配置）](configobject/UNC/20.15.2/NSACTRLPROP.md)
+- [NSARATVALUE（NSA用户的RAT值）](configobject/UNC/20.15.2/NSARATVALUE.md)
+- [NSMAPPARA（网络切片映射相关参数）](configobject/UNC/20.15.2/NSMAPPARA.md)
+- [NSSELPARA（网络切片选择相关参数）](configobject/UNC/20.15.2/NSSELPARA.md)
+- [NSSFBIGPKGPARA（NSSF大包控制参数）](configobject/UNC/20.15.2/NSSFBIGPKGPARA.md)
+- [NSSFFCPARA（流控等级对应的流控参数）](configobject/UNC/20.15.2/NSSFFCPARA.md)
+- [NSSFFCSWITCH（NSSF流控开关）](configobject/UNC/20.15.2/NSSFFCSWITCH.md)
+- [NSSFFUNCPARA（NSSF数据源以及切片选择流程返回信元）](configobject/UNC/20.15.2/NSSFFUNCPARA.md)
+- [NSSFFUNCSWITCH（NSSF功能开关）](configobject/UNC/20.15.2/NSSFFUNCSWITCH.md)
+- [NSSFFUNCTIMER（NSSF功能时长）](configobject/UNC/20.15.2/NSSFFUNCTIMER.md)
+- [NSSFNTFYFCPARA（通知流控参数配置）](configobject/UNC/20.15.2/NSSFNTFYFCPARA.md)
+- [NSSFNTRSDPARA（NSSF通知重传参数）](configobject/UNC/20.15.2/NSSFNTRSDPARA.md)
+- [NSSFRTNSMAXNUM（NSSF响应切片最大数量配置）](configobject/UNC/20.15.2/NSSFRTNSMAXNUM.md)
+- [NSSFSOFTPARA（NSSF软参）](configobject/UNC/20.15.2/NSSFSOFTPARA.md)
+- [NSSFSOFTPARAOFBIT（NSSF软件参数比特位）](configobject/UNC/20.15.2/NSSFSOFTPARAOFBIT.md)
+- [NSSFSUBTIMER（订阅时长）](configobject/UNC/20.15.2/NSSFSUBTIMER.md)
+- [NTPCFG（NTP时间同步参数）](configobject/UNC/20.15.2/NTPCFG.md)
+- [NTPSFTD（NTP软参）](configobject/UNC/20.15.2/NTPSFTD.md)
+- [NWNAMEFUNC（运营商名称信息功能）](configobject/UNC/20.15.2/NWNAMEFUNC.md)
+- [NWTOPO（组网拓扑采集功能开关）](configobject/UNC/20.15.2/NWTOPO.md)
+- [OCSALMTHD（OCS告警阈值）](configobject/UNC/20.15.2/OCSALMTHD.md)
+- [OCSDOWNACTION（DCC模板OCS状态Down动作）](configobject/UNC/20.15.2/OCSDOWNACTION.md)
+- [OCSINIT（DCC模板OCS初始化）](configobject/UNC/20.15.2/OCSINIT.md)
+- [OFCCDRPARA（离线计费话单参数）](configobject/UNC/20.15.2/OFCCDRPARA.md)
+- [OFCTHRESHOLD（离线计费阈值）](configobject/UNC/20.15.2/OFCTHRESHOLD.md)
+- [OFFLOADINF（迁移配置信息）](configobject/UNC/20.15.2/OFFLOADINF.md)
+- [OFLZEROUSGRPTSW（离线业务零用量容器上报方式）](configobject/UNC/20.15.2/OFLZEROUSGRPTSW.md)
+- [OLNCHGPARA（在线计费全局参数配置）](configobject/UNC/20.15.2/OLNCHGPARA.md)
+- [OMIP（OM IP）](configobject/UNC/20.15.2/OMIP.md)
+- [OMSWITCH（OM功能开关）](configobject/UNC/20.15.2/OMSWITCH.md)
+- [ONLZEROUSGRPTSW（在线业务零用量容器上报方式）](configobject/UNC/20.15.2/ONLZEROUSGRPTSW.md)
+- [OSCONFIG（OS配置）](configobject/UNC/20.15.2/OSCONFIG.md)
+- [OSPFDEFIMPROUTCFG（OSPF引入路由默认配置）](configobject/UNC/20.15.2/OSPFDEFIMPROUTCFG.md)
+- [OSPFGR（OSPF的平滑重启配置）](configobject/UNC/20.15.2/OSPFGR.md)
+- [OSPFV3DEFIMPROUTCFG（OSPFv3引入路由默认配置）](configobject/UNC/20.15.2/OSPFV3DEFIMPROUTCFG.md)
+- [OVERLOADCTRL（过载控制的配置信息）](configobject/UNC/20.15.2/OVERLOADCTRL.md)
+- [OVERLOADRC（判断对端过载的返回码）](configobject/UNC/20.15.2/OVERLOADRC.md)
+- [PAEBATCHRECVNUM（PAE批量接收报文数）](configobject/UNC/20.15.2/PAEBATCHRECVNUM.md)
+- [PAECHECKPARA（PAE寻呼反压流控检测参数）](configobject/UNC/20.15.2/PAECHECKPARA.md)
+- [PAECHECKTHD（PAE寻呼反压流控检测阈值）](configobject/UNC/20.15.2/PAECHECKTHD.md)
+- [PAEDEBUGSWITCH（使能或去使能PAE转发日志）](configobject/UNC/20.15.2/PAEDEBUGSWITCH.md)
+- [PAEDYETRACECFG（PAE染色流控开关及阈值参数）](configobject/UNC/20.15.2/PAEDYETRACECFG.md)
+- [PAEEXAMINATION（PAE故障检测使能配置）](configobject/UNC/20.15.2/PAEEXAMINATION.md)
+- [PAEMULTQUE（PAE多队列功能开关）](configobject/UNC/20.15.2/PAEMULTQUE.md)
+- [PAEPARAMS（PAE参数）](configobject/UNC/20.15.2/PAEPARAMS.md)
+- [PAERESOVLDTRHD（PAE关键资源不足告警参数）](configobject/UNC/20.15.2/PAERESOVLDTRHD.md)
+- [PAESCHEDMOD（PAE Channel调度模式）](configobject/UNC/20.15.2/PAESCHEDMOD.md)
+- [PAESWITCH（PAE开关信息）](configobject/UNC/20.15.2/PAESWITCH.md)
+- [PCCALMTHD（PCC告警阈值）](configobject/UNC/20.15.2/PCCALMTHD.md)
+- [PCCFAILACTION（PCC故障处理）](configobject/UNC/20.15.2/PCCFAILACTION.md)
+- [PCCFLOWCONTROL（PCC流控配置）](configobject/UNC/20.15.2/PCCFLOWCONTROL.md)
+- [PCCFUNC（PCC功能）](configobject/UNC/20.15.2/PCCFUNC.md)
+- [PCCMSGATTR（PCC消息属性）](configobject/UNC/20.15.2/PCCMSGATTR.md)
+- [PCCPCRFMSGATTR（PCRF返回消息属性）](configobject/UNC/20.15.2/PCCPCRFMSGATTR.md)
+- [PCCRULECTRL（PCC规则相关控制）](configobject/UNC/20.15.2/PCCRULECTRL.md)
+- [PCCTIMER（复位PCC定时器）](configobject/UNC/20.15.2/PCCTIMER.md)
+- [PCRFPLCY（PCRF策略）](configobject/UNC/20.15.2/PCRFPLCY.md)
+- [PCSCFCTRL（P-CSCF控制配置）](configobject/UNC/20.15.2/PCSCFCTRL.md)
+- [PCSCFGRPSELECT（P-CSCF组选择模式）](configobject/UNC/20.15.2/PCSCFGRPSELECT.md)
+- [PDPCAR（PDP流控参数）](configobject/UNC/20.15.2/PDPCAR.md)
+- [PDPFILTERCTL（PDP过滤功能参数）](configobject/UNC/20.15.2/PDPFILTERCTL.md)
+- [PERFAUTOSWITCH（话统对象自动生成开关）](configobject/UNC/20.15.2/PERFAUTOSWITCH.md)
+- [PERFCHKSWITCH（性能统计核查开关）](configobject/UNC/20.15.2/PERFCHKSWITCH.md)
+- [PESELPLCY（SGSN/MME选择策略）](configobject/UNC/20.15.2/PESELPLCY.md)
+- [PFCPCMPT（PFCP接口兼容性参数）](configobject/UNC/20.15.2/PFCPCMPT.md)
+- [PFCPFIXEDFC（指定PFCP消息类型固定速率流控信息）](configobject/UNC/20.15.2/PFCPFIXEDFC.md)
+- [PFCPPARA（PFCP参数）](configobject/UNC/20.15.2/PFCPPARA.md)
+- [PFCPPVTEXT（PFCP私有信元携带配置）](configobject/UNC/20.15.2/PFCPPVTEXT.md)
+- [PFRES（带宽资源使用明细）](configobject/UNC/20.15.2/PFRES.md)
+- [PGWBACKOFF（P-GW Back-off流控参数）](configobject/UNC/20.15.2/PGWBACKOFF.md)
+- [PKICRLCHECK（CRL检查）](configobject/UNC/20.15.2/PKICRLCHECK.md)
+- [PLCYCKTIMERINR（策略类型和核查间隔）](configobject/UNC/20.15.2/PLCYCKTIMERINR.md)
+- [PLCYCLSWITCH（冗余策略老化开关）](configobject/UNC/20.15.2/PLCYCLSWITCH.md)
+- [PLMNPRIORITY（获取PLMN优先级）](configobject/UNC/20.15.2/PLMNPRIORITY.md)
+- [PLMNRATECTRL（Serving PLMN速率控制配置）](configobject/UNC/20.15.2/PLMNRATECTRL.md)
+- [PLYFLUSHSWITCH（集合类型策略刷新开关状态）](configobject/UNC/20.15.2/PLYFLUSHSWITCH.md)
+- [PMCFG（性能统计配置参数）](configobject/UNC/20.15.2/PMCFG.md)
+- [PMM（Iu模式MM协议参数）](configobject/UNC/20.15.2/PMM.md)
+- [PMMPROCTRL（Iu模式移动性管理流程控制参数）](configobject/UNC/20.15.2/PMMPROCTRL.md)
+- [PMMPTMSIREALLOC（Iu模式PTMSI重分配控制参数）](configobject/UNC/20.15.2/PMMPTMSIREALLOC.md)
+- [PNFNTFPLCY（对端网元的通知抑制时间）](configobject/UNC/20.15.2/PNFNTFPLCY.md)
+- [PNINPNFUNC（公网集成非公网络管理功能）](configobject/UNC/20.15.2/PNINPNFUNC.md)
+- [PODCONFIG（POD配置查询）](configobject/UNC/20.15.2/PODCONFIG.md)
+- [PODCPUTHD（POD CPU阈值）](configobject/UNC/20.15.2/PODCPUTHD.md)
+- [PODHEALCTRL（自愈功能配置信息）](configobject/UNC/20.15.2/PODHEALCTRL.md)
+- [PODHEALPLY（Pod自愈策略）](configobject/UNC/20.15.2/PODHEALPLY.md)
+- [PODMEMTHD（POD内存阈值）](configobject/UNC/20.15.2/PODMEMTHD.md)
+- [POLICYFCSWITCH（策略流控开关状态）](configobject/UNC/20.15.2/POLICYFCSWITCH.md)
+- [POLICYMODE（策略接口的选择方式）](configobject/UNC/20.15.2/POLICYMODE.md)
+- [POOLALMPARA（本地地址池使用率告警参数）](configobject/UNC/20.15.2/POOLALMPARA.md)
+- [PREFIXLIMIT（前缀限制）](configobject/UNC/20.15.2/PREFIXLIMIT.md)
+- [PROCFAULTALM（进程故障告警上报模式）](configobject/UNC/20.15.2/PROCFAULTALM.md)
+- [PROCRESTHD（进程资源告警阈值）](configobject/UNC/20.15.2/PROCRESTHD.md)
+- [PROXYSGWFUNC（Proxy SGW功能参数）](configobject/UNC/20.15.2/PROXYSGWFUNC.md)
+- [PROXYSMFFUNC（proxy SMF功能配置）](configobject/UNC/20.15.2/PROXYSMFFUNC.md)
+- [PSCSPLCY（联合接入策略）](configobject/UNC/20.15.2/PSCSPLCY.md)
+- [PSDATAOFFFUNC（3GPP PS data off功能相关的参数）](configobject/UNC/20.15.2/PSDATAOFFFUNC.md)
+- [PSEUDONYPOLICY（CHR假名化本地策略）](configobject/UNC/20.15.2/PSEUDONYPOLICY.md)
+- [PSPKUBEPROBE（是否放通管道大颗粒readiness就绪探测）](configobject/UNC/20.15.2/PSPKUBEPROBE.md)
+- [PTTFUNC（一键通功能配置）](configobject/UNC/20.15.2/PTTFUNC.md)
+- [QBCGLBPARA（QBC计费全局参数）](configobject/UNC/20.15.2/QBCGLBPARA.md)
+- [QCI2ARP（标准QCI到ARP的映射规则）](configobject/UNC/20.15.2/QCI2ARP.md)
+- [QOSACTFILTER（流行为规则）](configobject/UNC/20.15.2/QOSACTFILTER.md)
+- [QOSBA（QoS BA）](configobject/UNC/20.15.2/QOSBA.md)
+- [QOSCTRL（QoS控制配置）](configobject/UNC/20.15.2/QOSCTRL.md)
+- [QOSFLOWFUNC（QoS Flow功能）](configobject/UNC/20.15.2/QOSFLOWFUNC.md)
+- [QOSGLOBAL（全局QoS配置）](configobject/UNC/20.15.2/QOSGLOBAL.md)
+- [QOSMONT（QoS监测配置）](configobject/UNC/20.15.2/QOSMONT.md)
+- [QOSPHB（QoS PHB）](configobject/UNC/20.15.2/QOSPHB.md)
+- [QOSREMARK（全局QoS到TOS/DSCP的映射规则）](configobject/UNC/20.15.2/QOSREMARK.md)
+- [R8QOSMAP（EPS QoS参数到Pre-R8 QoS参数映射规则）](configobject/UNC/20.15.2/R8QOSMAP.md)
+- [RABPARA（RAB参数协商配置）](configobject/UNC/20.15.2/RABPARA.md)
+- [RANSECPLCY（RAN侧安全策略）](configobject/UNC/20.15.2/RANSECPLCY.md)
+- [RCFIXEDFC（注册中心固定速率流控）](configobject/UNC/20.15.2/RCFIXEDFC.md)
+- [RCLICIGNSW（注册中心用户数license忽略开关）](configobject/UNC/20.15.2/RCLICIGNSW.md)
+- [RDSACCTREQATTR（RADIUS计费服务器可选消息属性）](configobject/UNC/20.15.2/RDSACCTREQATTR.md)
+- [RDSACCTREQVSA（RADIUS计费服务器组的私有扩展属性）](configobject/UNC/20.15.2/RDSACCTREQVSA.md)
+- [RDSAUTHREQATTR（Radius鉴权请求消息携带的属性）](configobject/UNC/20.15.2/RDSAUTHREQATTR.md)
+- [RDSAUTHREQVSA（RADIUS鉴权请求携带的私有扩展属性）](configobject/UNC/20.15.2/RDSAUTHREQVSA.md)
+- [RDSAUTHRSPATTR（支持的Radius鉴权响应消息私有属性）](configobject/UNC/20.15.2/RDSAUTHRSPATTR.md)
+- [RDSRSPADDRCHK（全局RADIUS响应消息源端口检查配置）](configobject/UNC/20.15.2/RDSRSPADDRCHK.md)
+- [REASTIMEOUT（IPv4报文重组超时配置）](configobject/UNC/20.15.2/REASTIMEOUT.md)
+- [REDCAPRATVALUE（RedCap接入用户的RAT填写值）](configobject/UNC/20.15.2/REDCAPRATVALUE.md)
+- [REGNFAGINGSW（NF实例老化开关）](configobject/UNC/20.15.2/REGNFAGINGSW.md)
+- [REGNFLOADUPDTHR（NF负载更新阈值）](configobject/UNC/20.15.2/REGNFLOADUPDTHR.md)
+- [RESCHKSWITCH（RCF核查开关状态）](configobject/UNC/20.15.2/RESCHKSWITCH.md)
+- [RESTHRESHOLD（资源过载和过载恢复阈值）](configobject/UNC/20.15.2/RESTHRESHOLD.md)
+- [RESTOFUNC（容灾功能）](configobject/UNC/20.15.2/RESTOFUNC.md)
+- [REVERSEFCPARA（PAE寻呼反压流控启动/恢复阈值）](configobject/UNC/20.15.2/REVERSEFCPARA.md)
+- [RGRESCTRL（RG资源控制配置）](configobject/UNC/20.15.2/RGRESCTRL.md)
+- [ROAMCOMMPLCY（漫游通信策略）](configobject/UNC/20.15.2/ROAMCOMMPLCY.md)
+- [ROAMMGMTPARA（漫游管理参数）](configobject/UNC/20.15.2/ROAMMGMTPARA.md)
+- [ROUTERELAYTUNNEL（路由迭代隧道功能开关）](configobject/UNC/20.15.2/ROUTERELAYTUNNEL.md)
+- [ROUTSMSCPARA（SMSF/VLR选择SMSC的相关参数）](configobject/UNC/20.15.2/ROUTSMSCPARA.md)
+- [RRCINACTPARA（RRC Inactive参数）](configobject/UNC/20.15.2/RRCINACTPARA.md)
+- [RSCBOXHEALCTRL（ResourceBox自愈策略控制参数）](configobject/UNC/20.15.2/RSCBOXHEALCTRL.md)
+- [RUCPUTHRESH（RU CPU占用率告警上报门限和告警恢复门限）](configobject/UNC/20.15.2/RUCPUTHRESH.md)
+- [RUDISKPARTITION（RU磁盘过载配置）](configobject/UNC/20.15.2/RUDISKPARTITION.md)
+- [RUFAULTTOLERANCE（资源单元故障容忍时间）](configobject/UNC/20.15.2/RUFAULTTOLERANCE.md)
+- [RURESTHRESHOLD（RU资源过载和去过载阈值）](configobject/UNC/20.15.2/RURESTHRESHOLD.md)
+- [S1APPARA（S1AP协议参数）](configobject/UNC/20.15.2/S1APPARA.md)
+- [S1CMPT（S1接口兼容性）](configobject/UNC/20.15.2/S1CMPT.md)
+- [S1OVERLOAD（S1接口过载控制）](configobject/UNC/20.15.2/S1OVERLOAD.md)
+- [S1PAGINGCTRL（S1寻呼策略控制表）](configobject/UNC/20.15.2/S1PAGINGCTRL.md)
+- [S1PAGINGFC（S1寻呼流控参数）](configobject/UNC/20.15.2/S1PAGINGFC.md)
+- [S1SMARTPARA（S1模式信令抑制参数）](configobject/UNC/20.15.2/S1SMARTPARA.md)
+- [S1SMPROCTRL（S1模式SM流程控制参数）](configobject/UNC/20.15.2/S1SMPROCTRL.md)
+- [S1TAIPAGMONPARA（S1 TAI组寻呼异常监控功能参数）](configobject/UNC/20.15.2/S1TAIPAGMONPARA.md)
+- [S1UBLACKLSTPARA（S1-U黑名单参数）](configobject/UNC/20.15.2/S1UBLACKLSTPARA.md)
+- [SBCFUNC（小区广播功能）](configobject/UNC/20.15.2/SBCFUNC.md)
+- [SBILCIPARA（服务化接口负载控制参数）](configobject/UNC/20.15.2/SBILCIPARA.md)
+- [SBILINKSETCFG（服务化接口链路集属性）](configobject/UNC/20.15.2/SBILINKSETCFG.md)
+- [SBILNKCTRLSW（服务化接口链路自动控制功能开关）](configobject/UNC/20.15.2/SBILNKCTRLSW.md)
+- [SBITCPPARA（SBI接口TCP控制参数）](configobject/UNC/20.15.2/SBITCPPARA.md)
+- [SCALINGCFG（自动扩缩容配置）](configobject/UNC/20.15.2/SCALINGCFG.md)
+- [SCALINGCTRL（扩缩容业务控制参数）](configobject/UNC/20.15.2/SCALINGCTRL.md)
+- [SCALINGSWITCH（扩缩容开关）](configobject/UNC/20.15.2/SCALINGSWITCH.md)
+- [SCCPTMR（SCCP定时器参数）](configobject/UNC/20.15.2/SCCPTMR.md)
+- [SCFMVNFMLNK（超时时间配置）](configobject/UNC/20.15.2/SCFMVNFMLNK.md)
+- [SCPFUNCSW（间接路由功能）](configobject/UNC/20.15.2/SCPFUNCSW.md)
+- [SCPPARA（SCP参数）](configobject/UNC/20.15.2/SCPPARA.md)
+- [SCTPBUFFCFG（SCTP缓冲区参数源）](configobject/UNC/20.15.2/SCTPBUFFCFG.md)
+- [SCTPBUFFERMODE（SCTP缓冲区模式）](configobject/UNC/20.15.2/SCTPBUFFERMODE.md)
+- [SCTPCCTRLPARA（RAN侧拥塞检测功能参数）](configobject/UNC/20.15.2/SCTPCCTRLPARA.md)
+- [SCTPINITFLOW（SCTP接入流控）](configobject/UNC/20.15.2/SCTPINITFLOW.md)
+- [SCTPRXBUFFER（SCTP接收缓冲区参数）](configobject/UNC/20.15.2/SCTPRXBUFFER.md)
+- [SCTPTXBUFFER（SCTP发送缓冲区参数）](configobject/UNC/20.15.2/SCTPTXBUFFER.md)
+- [SDAPINTF（Sdup接口参数）](configobject/UNC/20.15.2/SDAPINTF.md)
+- [SDAPRETRSMT（Sdup接口可靠性）](configobject/UNC/20.15.2/SDAPRETRSMT.md)
+- [SDBTMR（核查定时器配置）](configobject/UNC/20.15.2/SDBTMR.md)
+- [SDCFG（签约数据配置）](configobject/UNC/20.15.2/SDCFG.md)
+- [SDRPARAMS（SDR参数）](configobject/UNC/20.15.2/SDRPARAMS.md)
+- [SDRTRANS（SDR传输能力）](configobject/UNC/20.15.2/SDRTRANS.md)
+- [SECALG（安全算法）](configobject/UNC/20.15.2/SECALG.md)
+- [SECARP（ARP快回）](configobject/UNC/20.15.2/SECARP.md)
+- [SECARPGRAT（免费ARP过滤）](configobject/UNC/20.15.2/SECARPGRAT.md)
+- [SECARPSAFEGUARD（ARP双向分离）](configobject/UNC/20.15.2/SECARPSAFEGUARD.md)
+- [SECAUTH（查看二次授权功能状态）](configobject/UNC/20.15.2/SECAUTH.md)
+- [SECDEVURPF（设备URPF）](configobject/UNC/20.15.2/SECDEVURPF.md)
+- [SECICMPREPLY（ICMP快回）](configobject/UNC/20.15.2/SECICMPREPLY.md)
+- [SECND（ND快回）](configobject/UNC/20.15.2/SECND.md)
+- [SECPOLICYALLPKTLEVEL（上送报文总体速率等级）](configobject/UNC/20.15.2/SECPOLICYALLPKTLEVEL.md)
+- [SECPOLICYALLPKTVALUE（上送报文总体速率值）](configobject/UNC/20.15.2/SECPOLICYALLPKTVALUE.md)
+- [SECPOLICYAPPLNK（应用联动默认动作）](configobject/UNC/20.15.2/SECPOLICYAPPLNK.md)
+- [SECPOLICYPRIO（报文上送优先级）](configobject/UNC/20.15.2/SECPOLICYPRIO.md)
+- [SECPOLICYSWITCH（TCPIP报文以及应用层、黑名单、白名单防御机制使能状态）](configobject/UNC/20.15.2/SECPOLICYSWITCH.md)
+- [SEQCHK（序号检查信息表）](configobject/UNC/20.15.2/SEQCHK.md)
+- [SERVINGCHGCTRL（I-SMF/SGW的计费模式和CHF选择参数）](configobject/UNC/20.15.2/SERVINGCHGCTRL.md)
+- [SESSNCHRCFG（会话CHR上报策略）](configobject/UNC/20.15.2/SESSNCHRCFG.md)
+- [SESSNCHRSTORECFG（CHR存储配置）](configobject/UNC/20.15.2/SESSNCHRSTORECFG.md)
+- [SFEBFDPKTIPID（BFD报文IPID的使能标记）](configobject/UNC/20.15.2/SFEBFDPKTIPID.md)
+- [SFEFEIDEBUG（FEI报文、进程日志开关）](configobject/UNC/20.15.2/SFEFEIDEBUG.md)
+- [SFEPASSGREFRAG（SFE透传GRE分片报文使能配置）](configobject/UNC/20.15.2/SFEPASSGREFRAG.md)
+- [SFEPKTBATCHRCV（SFE批量收取的报文数量）](configobject/UNC/20.15.2/SFEPKTBATCHRCV.md)
+- [SFEPKTRCVMODE（SFE当前收包模式）](configobject/UNC/20.15.2/SFEPKTRCVMODE.md)
+- [SFEPKTSTAT（SFE报文统计信息）](configobject/UNC/20.15.2/SFEPKTSTAT.md)
+- [SFERESALMTHD（VNRS内部资源不足告警的阈值参数）](configobject/UNC/20.15.2/SFERESALMTHD.md)
+- [SFETRACECPUFC（VNRS IP消息跟踪的CPU流控阈值）](configobject/UNC/20.15.2/SFETRACECPUFC.md)
+- [SFETRACEFCCFG（VNRS IP消息跟踪的流控使能配置）](configobject/UNC/20.15.2/SFETRACEFCCFG.md)
+- [SFETRACEQUEFC（VNRS IP消息跟踪的队列流控配置）](configobject/UNC/20.15.2/SFETRACEQUEFC.md)
+- [SFTPALG（SFTP协议算法）](configobject/UNC/20.15.2/SFTPALG.md)
+- [SGSAPCMPT（SGsAP协议兼容性）](configobject/UNC/20.15.2/SGSAPCMPT.md)
+- [SGSPARA（SGs参数）](configobject/UNC/20.15.2/SGSPARA.md)
+- [SGWAPNCHGMETH（SGW APN计费方式）](configobject/UNC/20.15.2/SGWAPNCHGMETH.md)
+- [SGWCHARGECFG（SGW计费配置）](configobject/UNC/20.15.2/SGWCHARGECFG.md)
+- [SGWCHGPAUSE（SGW的计费暂停功能）](configobject/UNC/20.15.2/SGWCHGPAUSE.md)
+- [SGWPLMNORIGIN（S-GW PLMN ID来源）](configobject/UNC/20.15.2/SGWPLMNORIGIN.md)
+- [SIGATTR（信令网属性状态）](configobject/UNC/20.15.2/SIGATTR.md)
+- [SIGSUPPRESS（S11接口信令风暴抑制功能的控制与统计信息）](configobject/UNC/20.15.2/SIGSUPPRESS.md)
+- [SKIPADJUSTHAFDM（跳过调整HAF域开关状态）](configobject/UNC/20.15.2/SKIPADJUSTHAFDM.md)
+- [SMAMEVTEXPPLY（SMF向AMF下发事件订阅时的老化策略）](configobject/UNC/20.15.2/SMAMEVTEXPPLY.md)
+- [SMARTACTPARA（激活抑制参数）](configobject/UNC/20.15.2/SMARTACTPARA.md)
+- [SMARTCFG（智能用户功能）](configobject/UNC/20.15.2/SMARTCFG.md)
+- [SMARTCL（智能分流功能）](configobject/UNC/20.15.2/SMARTCL.md)
+- [SMCOMMFUNC（通用会话拓展功能）](configobject/UNC/20.15.2/SMCOMMFUNC.md)
+- [SMCOMMTIMER（通用会话管理定时器参数）](configobject/UNC/20.15.2/SMCOMMTIMER.md)
+- [SMFAPNSOFTPARA（SMF APN软参记录）](configobject/UNC/20.15.2/SMFAPNSOFTPARA.md)
+- [SMFAPNSOFTPARABYBIT（SMF APN软件参数比特位）](configobject/UNC/20.15.2/SMFAPNSOFTPARABYBIT.md)
+- [SMFCACHEFUNC（SMF映射关系的本地缓存策略）](configobject/UNC/20.15.2/SMFCACHEFUNC.md)
+- [SMFFCPARA（SMF自保流控参数）](configobject/UNC/20.15.2/SMFFCPARA.md)
+- [SMFFUNC（SMF扩展功能）](configobject/UNC/20.15.2/SMFFUNC.md)
+- [SMFGLBDLBUFTIME（全局下行报文缓存时长）](configobject/UNC/20.15.2/SMFGLBDLBUFTIME.md)
+- [SMFMBSFUNC（MB-SMF组播广播功能参数）](configobject/UNC/20.15.2/SMFMBSFUNC.md)
+- [SMFSOFTPARA（SMF软参）](configobject/UNC/20.15.2/SMFSOFTPARA.md)
+- [SMFSOFTPARAOFBIT（SMF软件参数比特位）](configobject/UNC/20.15.2/SMFSOFTPARAOFBIT.md)
+- [SMFTRCCTRL（SMF跟踪控制功能）](configobject/UNC/20.15.2/SMFTRCCTRL.md)
+- [SMFUDMBYPASS（SMF的UDM全故障Bypass相关功能）](configobject/UNC/20.15.2/SMFUDMBYPASS.md)
+- [SMFUDMRESET（SMF的UDM故障重选策略）](configobject/UNC/20.15.2/SMFUDMRESET.md)
+- [SMFUNC（会话管理扩展功能）](configobject/UNC/20.15.2/SMFUNC.md)
+- [SMGTPPROT（会话管理GTP协议功能参数配置）](configobject/UNC/20.15.2/SMGTPPROT.md)
+- [SMIPTRANSTYPE（会话管理接口IP传输类型）](configobject/UNC/20.15.2/SMIPTRANSTYPE.md)
+- [SMPDUCTRL（PDU会话控制参数）](configobject/UNC/20.15.2/SMPDUCTRL.md)
+- [SMS（SMS配置信息）](configobject/UNC/20.15.2/SMS.md)
+- [SMSBACKUPSW（SMSF热备容灾功能开关状态）](configobject/UNC/20.15.2/SMSBACKUPSW.md)
+- [SMSCHFGRP（短消息计费CHF组）](configobject/UNC/20.15.2/SMSCHFGRP.md)
+- [SMSCHRCFG（SMS CHR单据上报策略）](configobject/UNC/20.15.2/SMSCHRCFG.md)
+- [SMSCHRSTORCFG（SMS小范围CHR存储配置）](configobject/UNC/20.15.2/SMSCHRSTORCFG.md)
+- [SMSDATACHECK（数据核查扫描参数）](configobject/UNC/20.15.2/SMSDATACHECK.md)
+- [SMSFFCPARA（SMSF自保流控的参数）](configobject/UNC/20.15.2/SMSFFCPARA.md)
+- [SMSFFUNCSW（SMSF功能开关）](configobject/UNC/20.15.2/SMSFFUNCSW.md)
+- [SMSFKEYCHECK（SMSF用户关键信息数据核查扫描参数）](configobject/UNC/20.15.2/SMSFKEYCHECK.md)
+- [SMSFMAPVERSION（SMSF使用的MAP接口版本）](configobject/UNC/20.15.2/SMSFMAPVERSION.md)
+- [SMSFRCDATACHECK（SMSF核查注册中心状态功能配置）](configobject/UNC/20.15.2/SMSFRCDATACHECK.md)
+- [SMSFSOFTPARA（SMSF软参）](configobject/UNC/20.15.2/SMSFSOFTPARA.md)
+- [SMSFSOFTPARAOFBIT（SMSF软件参数比特位）](configobject/UNC/20.15.2/SMSFSOFTPARAOFBIT.md)
+- [SMSFSSN（SMSF本局SSN号）](configobject/UNC/20.15.2/SMSFSSN.md)
+- [SMSFTIMERPARA（SMSF网元定时器）](configobject/UNC/20.15.2/SMSFTIMERPARA.md)
+- [SMSFUDMBYPASS（SMSF的UDM全故障Bypass功能开关）](configobject/UNC/20.15.2/SMSFUDMBYPASS.md)
+- [SMSFUDMRESET（SMSF的UDM重选）](configobject/UNC/20.15.2/SMSFUDMRESET.md)
+- [SMSREGTIMER（VLR/SMSF向注册中心注册的时间参数）](configobject/UNC/20.15.2/SMSREGTIMER.md)
+- [SMTIMER（5GC会话管理定时器参数）](configobject/UNC/20.15.2/SMTIMER.md)
+- [SNDCP（SNDCP参数状态）](configobject/UNC/20.15.2/SNDCP.md)
+- [SOFTPARA（软件参数表）](configobject/UNC/20.15.2/SOFTPARA.md)
+- [SOFTPARAEXP（软件参数配置导出模式）](configobject/UNC/20.15.2/SOFTPARAEXP.md)
+- [SOFTPARAOFBIT（软件参数表比特位）](configobject/UNC/20.15.2/SOFTPARAOFBIT.md)
+- [SRIPV4STATICSITE（IPv4静态路由全局属性）](configobject/UNC/20.15.2/SRIPV4STATICSITE.md)
+- [SRIPV6STATICSITE（IPv6静态路由全局属性）](configobject/UNC/20.15.2/SRIPV6STATICSITE.md)
+- [SRROUTEFRR（静态路由FRR）](configobject/UNC/20.15.2/SRROUTEFRR.md)
+- [SRROUTERELAYTUNNEL（静态路由迭代隧道功能开关）](configobject/UNC/20.15.2/SRROUTERELAYTUNNEL.md)
+- [SRVNDALMTHRES（业务节点资源不足告警阈值）](configobject/UNC/20.15.2/SRVNDALMTHRES.md)
+- [SRVNODERATPRI（获取RAT Type的优先级）](configobject/UNC/20.15.2/SRVNODERATPRI.md)
+- [SRVSTH（业务功能开关状态）](configobject/UNC/20.15.2/SRVSTH.md)
+- [STATICADDRPARA（静态地址参数）](configobject/UNC/20.15.2/STATICADDRPARA.md)
+- [STATICIPINLCKUP（静态地址段在锁定UPF的用户处理）](configobject/UNC/20.15.2/STATICIPINLCKUP.md)
+- [STATUSCHECK（状态核查参数）](configobject/UNC/20.15.2/STATUSCHECK.md)
+- [STGALARMCTRL（融合计费话单缓存告警上报的控制参数）](configobject/UNC/20.15.2/STGALARMCTRL.md)
+- [STGTRIGGER（融合计费消息缓存期间融合计费消息生成的trigger）](configobject/UNC/20.15.2/STGTRIGGER.md)
+- [SYS（系统参数）](configobject/UNC/20.15.2/SYS.md)
+- [SYSLOGCONTENTCFG（日志内容配置）](configobject/UNC/20.15.2/SYSLOGCONTENTCFG.md)
+- [SYSMAPFIXEDFC（VLR整系统Map固定速率流控）](configobject/UNC/20.15.2/SYSMAPFIXEDFC.md)
+- [SYSPLTPARA（产品平台参数）](configobject/UNC/20.15.2/SYSPLTPARA.md)
+- [SYSSGSFIXEDFC（VLR整系统Sgs固定速率流控）](configobject/UNC/20.15.2/SYSSGSFIXEDFC.md)
+- [SYSTIMER（系统定时器）](configobject/UNC/20.15.2/SYSTIMER.md)
+- [T1N1PARA（PFCP T1N1参数配置）](configobject/UNC/20.15.2/T1N1PARA.md)
+- [T3N3（GTP-C T3/N3参数配置）](configobject/UNC/20.15.2/T3N3.md)
+- [TCPBPCFG（TCP过载反压HTTP流控配置）](configobject/UNC/20.15.2/TCPBPCFG.md)
+- [TCPGLOBALCFG（TCP全局配置）](configobject/UNC/20.15.2/TCPGLOBALCFG.md)
+- [TCPSACKSWITCH（TCP SACK开关配置）](configobject/UNC/20.15.2/TCPSACKSWITCH.md)
+- [TCTIMER（TC定时器）](configobject/UNC/20.15.2/TCTIMER.md)
+- [TIME（系统时间）](configobject/UNC/20.15.2/TIME.md)
+- [TLBGLBCONF（TLB全局配置）](configobject/UNC/20.15.2/TLBGLBCONF.md)
+- [TMAPINTF（Tm接口参数）](configobject/UNC/20.15.2/TMAPINTF.md)
+- [TMMSGFC（跟踪消息流控状态）](configobject/UNC/20.15.2/TMMSGFC.md)
+- [TOKENALG（Token签名算法）](configobject/UNC/20.15.2/TOKENALG.md)
+- [TOKENALLOCWT（服务类型分配权重的管理策略）](configobject/UNC/20.15.2/TOKENALLOCWT.md)
+- [TOKENDELAY（Token延时迁移时间）](configobject/UNC/20.15.2/TOKENDELAY.md)
+- [TRAFFICBACKUP（流量备份配置）](configobject/UNC/20.15.2/TRAFFICBACKUP.md)
+- [TRC_CFG（跟踪参数）](configobject/UNC/20.15.2/TRC_CFG.md)
+- [TRUSTEDWLANFUNC（可信Non-3GPP接入开关）](configobject/UNC/20.15.2/TRUSTEDWLANFUNC.md)
+- [TWTIMER（TW定时器）](configobject/UNC/20.15.2/TWTIMER.md)
+- [TXTIMER（DCC模板Tx定时器）](configobject/UNC/20.15.2/TXTIMER.md)
+- [TZ（时区和夏令时信息）](configobject/UNC/20.15.2/TZ.md)
+- [UCFCONFIG（UCF文件管理规格配置）](configobject/UNC/20.15.2/UCFCONFIG.md)
+- [UDPCHECKSUM（UNC发送的UDP报文是否携带checksum）](configobject/UNC/20.15.2/UDPCHECKSUM.md)
+- [UEDNSBINDAPN（APN的DNS属性）](configobject/UNC/20.15.2/UEDNSBINDAPN.md)
+- [UERADIOCAPLEN（UE Radio Capability信元长度）](configobject/UNC/20.15.2/UERADIOCAPLEN.md)
+- [UERCAPPARA（UE Radio Capability信元参数）](configobject/UNC/20.15.2/UERCAPPARA.md)
+- [UGTP（GTP-C路径扫描参数）](configobject/UNC/20.15.2/UGTP.md)
+- [UNIHTR（统一HTR功能）](configobject/UNC/20.15.2/UNIHTR.md)
+- [UPAREABINDFUNC（获取UPF服务区绑定TAI/LAI的方式）](configobject/UNC/20.15.2/UPAREABINDFUNC.md)
+- [UPCALMRSTVAL（UPC DS粒度N4请求等待超时异常的告警恢复阈值）](configobject/UNC/20.15.2/UPCALMRSTVAL.md)
+- [UPCALMVAL（UPC DS粒度N4请求等待超时异常的告警阈值）](configobject/UNC/20.15.2/UPCALMVAL.md)
+- [UPCCOMMTIMER（用户面控制通用定时器）](configobject/UNC/20.15.2/UPCCOMMTIMER.md)
+- [UPCSCANRATE（用户面控制扫描速率）](configobject/UNC/20.15.2/UPCSCANRATE.md)
+- [UPDSTATUS（升级状态）](configobject/UNC/20.15.2/UPDSTATUS.md)
+- [UPFAULTOPERPARA（UP故障处理系统参数）](configobject/UNC/20.15.2/UPFAULTOPERPARA.md)
+- [UPGPATTIMER（升级补丁定时器）](configobject/UNC/20.15.2/UPGPATTIMER.md)
+- [UPGRADEWATCH（升级观察期）](configobject/UNC/20.15.2/UPGRADEWATCH.md)
+- [UPGSTEP（灰度升级Pod滚动步长）](configobject/UNC/20.15.2/UPGSTEP.md)
+- [UPLOADBALANCE（UP负载均衡功能）](configobject/UNC/20.15.2/UPLOADBALANCE.md)
+- [UPPATHFAULTREST（用户面链路故障恢复功能配置信息）](configobject/UNC/20.15.2/UPPATHFAULTREST.md)
+- [UPRESELECTFUNC（UP重选功能）](configobject/UNC/20.15.2/UPRESELECTFUNC.md)
+- [UPSELECTFLAG（UPF选择条件开关）](configobject/UNC/20.15.2/UPSELECTFLAG.md)
+- [UPSELECTPRI（UPF选择策略次序）](configobject/UNC/20.15.2/UPSELECTPRI.md)
+- [URRGRPBINDING（用户模板的计费属性绑定关系）](configobject/UNC/20.15.2/URRGRPBINDING.md)
+- [USERPRIORARP（用户ARP优先级配置）](configobject/UNC/20.15.2/USERPRIORARP.md)
+- [USERPROFILELOCK（用户模板的锁定）](configobject/UNC/20.15.2/USERPROFILELOCK.md)
+- [USRBLACKLSTFUN（用户黑名单接入控制功能）](configobject/UNC/20.15.2/USRBLACKLSTFUN.md)
+- [USRPDPCAP（用户面PDP规格表）](configobject/UNC/20.15.2/USRPDPCAP.md)
+- [USRPROFCHARGE（User Profile的计费配置）](configobject/UNC/20.15.2/USRPROFCHARGE.md)
+- [VLRDATACHECK（VLR用户数据核查扫描参数）](configobject/UNC/20.15.2/VLRDATACHECK.md)
+- [VLRFAULTEN（VLR故障增强功能）](configobject/UNC/20.15.2/VLRFAULTEN.md)
+- [VLRFUNCSW（VLR功能开关）](configobject/UNC/20.15.2/VLRFUNCSW.md)
+- [VLRKEYCHECK（VLR用户关键信息数据核查扫描参数）](configobject/UNC/20.15.2/VLRKEYCHECK.md)
+- [VLRLOCALINFO（VLR的本局信息）](configobject/UNC/20.15.2/VLRLOCALINFO.md)
+- [VLRMAPVERSION（VLR使用的MAP接口版本）](configobject/UNC/20.15.2/VLRMAPVERSION.md)
+- [VLROFFLOADINF（VLR迁移配置信息）](configobject/UNC/20.15.2/VLROFFLOADINF.md)
+- [VLRRESETTIMER（VLR向MME发送SGsAP-RESET-INDICATION消息定时器配置）](configobject/UNC/20.15.2/VLRRESETTIMER.md)
+- [VLRSGSSELFFC（VLR的SGs接口自保流控参数）](configobject/UNC/20.15.2/VLRSGSSELFFC.md)
+- [VLRTIMERPARA（VLR网元定时器）](configobject/UNC/20.15.2/VLRTIMERPARA.md)
+- [VLRUSRNUMCHECK（VLR非短信用户数核查扫描参数）](configobject/UNC/20.15.2/VLRUSRNUMCHECK.md)
+- [VNFEVICTION（网元重调度策略）](configobject/UNC/20.15.2/VNFEVICTION.md)
+- [VPROBECONFIG（vProbe文件管理规格配置）](configobject/UNC/20.15.2/VPROBECONFIG.md)
+- [VSMFCHGCTRL（V-SMF的计费模式和CHF选择参数）](configobject/UNC/20.15.2/VSMFCHGCTRL.md)
+- [WLRPAESTATE（无线路由PAE使能状态）](configobject/UNC/20.15.2/WLRPAESTATE.md)
+- [WLRSITE（无线路由全局属性配置）](configobject/UNC/20.15.2/WLRSITE.md)
+- [ZEROCHGSKIPSW（零流量计费事件忽略开关）](configobject/UNC/20.15.2/ZEROCHGSKIPSW.md)
 
 ## query_target
 
-- [[configobject/UNC/20.15.2/ACC]] · ACC（加速器信息） — `ACC.md`
-- [[configobject/UNC/20.15.2/ACL6ADVRULECNTVERBOSE]] · ACL6ADVRULECNTVERBOSE（高级ACL6规则匹配详细计数） — `ACL6ADVRULECNTVERBOSE.md`
-- [[configobject/UNC/20.15.2/ACL6BASICRULECNTVERBOSE]] · ACL6BASICRULECNTVERBOSE（基本ACL6规则匹配详细计数） — `ACL6BASICRULECNTVERBOSE.md`
-- [[configobject/UNC/20.15.2/ACLADV6RULECNT]] · ACLADV6RULECNT（高级IPv6 ACL规则匹配计数） — `ACLADV6RULECNT.md`
-- [[configobject/UNC/20.15.2/ACLADVRULECNT]] · ACLADVRULECNT（高级ACL规则匹配计数） — `ACLADVRULECNT.md`
-- [[configobject/UNC/20.15.2/ACLADVRULECNTVERBOSE]] · ACLADVRULECNTVERBOSE（高级ACL规则匹配详细计数） — `ACLADVRULECNTVERBOSE.md`
-- [[configobject/UNC/20.15.2/ACLBASIC6RULECNT]] · ACLBASIC6RULECNT（基本IPv6 ACL规则匹配计数） — `ACLBASIC6RULECNT.md`
-- [[configobject/UNC/20.15.2/ACLBASICRULECNT]] · ACLBASICRULECNT（基本ACL规则匹配计数） — `ACLBASICRULECNT.md`
-- [[configobject/UNC/20.15.2/ACLBASICRULECNTVERBOSE]] · ACLBASICRULECNTVERBOSE（基本ACL规则匹配详细计数） — `ACLBASICRULECNTVERBOSE.md`
-- [[configobject/UNC/20.15.2/ACLETHRULECNT]] · ACLETHRULECNT（以太ACL规则匹配计数） — `ACLETHRULECNT.md`
-- [[configobject/UNC/20.15.2/ACLETHRULECNTVERBOSE]] · ACLETHRULECNTVERBOSE（以太ACL规则匹配详细计数） — `ACLETHRULECNTVERBOSE.md`
-- [[configobject/UNC/20.15.2/ACLIFRULECNT]] · ACLIFRULECNT（接口ACL规则匹配计数） — `ACLIFRULECNT.md`
-- [[configobject/UNC/20.15.2/ACLIFRULECNTVERBOSE]] · ACLIFRULECNTVERBOSE（接口ACL规则匹配详细计数） — `ACLIFRULECNTVERBOSE.md`
-- [[configobject/UNC/20.15.2/ACSCLASSINFO]] · ACSCLASSINFO（配置表信息） — `ACSCLASSINFO.md`
-- [[configobject/UNC/20.15.2/ACSPATCHDETAILINFO]] · ACSPATCHDETAILINFO（补丁信息） — `ACSPATCHDETAILINFO.md`
-- [[configobject/UNC/20.15.2/ACSPATCHINFO]] · ACSPATCHINFO（系统当前补丁信息） — `ACSPATCHINFO.md`
-- [[configobject/UNC/20.15.2/ACSRBKVER]] · ACSRBKVER（升级可回退版本信息） — `ACSRBKVER.md`
-- [[configobject/UNC/20.15.2/ACSSYNCINFO]] · ACSSYNCINFO（ACS的配置同步信息） — `ACSSYNCINFO.md`
-- [[configobject/UNC/20.15.2/ACSUPDRUVER]] · ACSUPDRUVER（RU版本信息） — `ACSUPDRUVER.md`
-- [[configobject/UNC/20.15.2/ACSVERSION]] · ACSVERSION（系统版本信息） — `ACSVERSION.md`
-- [[configobject/UNC/20.15.2/ACTALM]] · ACTALM（活动告警） — `ACTALM.md`
-- [[configobject/UNC/20.15.2/AGFTPSINFO]] · AGFTPSINFO（AGF每个pod的计费消息速率） — `AGFTPSINFO.md`
-- [[configobject/UNC/20.15.2/ALARMINFO]] · ALARMINFO（告警信息） — `ALARMINFO.md`
-- [[configobject/UNC/20.15.2/ALMDETAIL]] · ALMDETAIL（告警详细信息） — `ALMDETAIL.md`
-- [[configobject/UNC/20.15.2/ALMERRORINFO]] · ALMERRORINFO（告警模块错误信息） — `ALMERRORINFO.md`
-- [[configobject/UNC/20.15.2/ALMFLAPINFO]] · ALMFLAPINFO（告警震荡信息） — `ALMFLAPINFO.md`
-- [[configobject/UNC/20.15.2/ALMFLAPSURPINFO]] · ALMFLAPSURPINFO（告警震荡抑制信息） — `ALMFLAPSURPINFO.md`
-- [[configobject/UNC/20.15.2/ALMMESSAGERECV]] · ALMMESSAGERECV（告警接收的信息） — `ALMMESSAGERECV.md`
-- [[configobject/UNC/20.15.2/ALMMESSAGESEND]] · ALMMESSAGESEND（告警发送的信息） — `ALMMESSAGESEND.md`
-- [[configobject/UNC/20.15.2/AMFMBSSESCTX]] · AMFMBSSESCTX（AMF组播广播会话上下文） — `AMFMBSSESCTX.md`
-- [[configobject/UNC/20.15.2/AMFMBSSESNUM]] · AMFMBSSESNUM（AMF组播广播会话数） — `AMFMBSSESNUM.md`
-- [[configobject/UNC/20.15.2/AMFNSAVLINFO]] · AMFNSAVLINFO（授权后的网络切片可用性信息） — `AMFNSAVLINFO.md`
-- [[configobject/UNC/20.15.2/ANINFO]] · ANINFO（AN信息） — `ANINFO.md`
-- [[configobject/UNC/20.15.2/APPDATADIFF]] · APPDATADIFF（APP与OMU配置数据差异信息） — `APPDATADIFF.md`
-- [[configobject/UNC/20.15.2/APPINFO]] · APPINFO（应用信息） — `APPINFO.md`
-- [[configobject/UNC/20.15.2/APPVERSION]] · APPVERSION（系统版本信息） — `APPVERSION.md`
-- [[configobject/UNC/20.15.2/ARPENTRYSTATISTICS]] · ARPENTRYSTATISTICS（ARP统计计数） — `ARPENTRYSTATISTICS.md`
-- [[configobject/UNC/20.15.2/ARPERRPACKET]] · ARPERRPACKET（ARP错误报文统计） — `ARPERRPACKET.md`
-- [[configobject/UNC/20.15.2/ARPHISTORY]] · ARPHISTORY（ARP表项变更历史） — `ARPHISTORY.md`
-- [[configobject/UNC/20.15.2/ARPINNERDATA]] · ARPINNERDATA（ARP内部信息） — `ARPINNERDATA.md`
-- [[configobject/UNC/20.15.2/ARPPROBERESULT]] · ARPPROBERESULT（ARP探测结果） — `ARPPROBERESULT.md`
-- [[configobject/UNC/20.15.2/ARPSTATISTICS]] · ARPSTATISTICS（ARP处理信息统计） — `ARPSTATISTICS.md`
-- [[configobject/UNC/20.15.2/ARPTABLE]] · ARPTABLE（ARP表项） — `ARPTABLE.md`
-- [[configobject/UNC/20.15.2/ASSERTINFO]] · ASSERTINFO（RU断言信息） — `ASSERTINFO.md`
-- [[configobject/UNC/20.15.2/AUTOSCALEPOLICY]] · AUTOSCALEPOLICY（自动弹性策略状态） — `AUTOSCALEPOLICY.md`
-- [[configobject/UNC/20.15.2/AUTOSCALINGIPPOOL]] · AUTOSCALINGIPPOOL（自动化配置地址池信息） — `AUTOSCALINGIPPOOL.md`
-- [[configobject/UNC/20.15.2/BANDWIDTH]] · BANDWIDTH（带宽配置及使用情况） — `BANDWIDTH.md`
-- [[configobject/UNC/20.15.2/BFDBLACKBOX]] · BFDBLACKBOX（BFD黑匣子信息） — `BFDBLACKBOX.md`
-- [[configobject/UNC/20.15.2/BFDGLOBALSTATS]] · BFDGLOBALSTATS（BFD的全局会话统计信息） — `BFDGLOBALSTATS.md`
-- [[configobject/UNC/20.15.2/BFDRESOURCESTC]] · BFDRESOURCESTC（BFD资源统计信息） — `BFDRESOURCESTC.md`
-- [[configobject/UNC/20.15.2/BFDSESSIONRUNNING]] · BFDSESSIONRUNNING（BFD会话的运行信息） — `BFDSESSIONRUNNING.md`
-- [[configobject/UNC/20.15.2/BFDSTATS]] · BFDSTATS（BFD的会话统计信息） — `BFDSTATS.md`
-- [[configobject/UNC/20.15.2/BGPASMSG]] · BGPASMSG（BGP AS查询消息） — `BGPASMSG.md`
-- [[configobject/UNC/20.15.2/BGPASSTATS]] · BGPASSTATS（BGP AS查询统计） — `BGPASSTATS.md`
-- [[configobject/UNC/20.15.2/BGPBFDSESSION]] · BGPBFDSESSION（BGP建立的BFD会话信息） — `BGPBFDSESSION.md`
-- [[configobject/UNC/20.15.2/BGPCONGESTATISTICS]] · BGPCONGESTATISTICS（BGP流控信息） — `BGPCONGESTATISTICS.md`
-- [[configobject/UNC/20.15.2/BGPDATA]] · BGPDATA（BGP数据结构信息） — `BGPDATA.md`
-- [[configobject/UNC/20.15.2/BGPERRORDISCARD]] · BGPERRORDISCARD（BGP的错误信息） — `BGPERRORDISCARD.md`
-- [[configobject/UNC/20.15.2/BGPHASTATE]] · BGPHASTATE（BGP HA状态信息） — `BGPHASTATE.md`
-- [[configobject/UNC/20.15.2/BGPLSP]] · BGPLSP（BGP LSP信息） — `BGPLSP.md`
-- [[configobject/UNC/20.15.2/BGPNEXTHOP]] · BGPNEXTHOP（BGP下一跳信息） — `BGPNEXTHOP.md`
-- [[configobject/UNC/20.15.2/BGPPEERALLVERBOSE]] · BGPPEERALLVERBOSE（BGP所有VPN对等体详细信息） — `BGPPEERALLVERBOSE.md`
-- [[configobject/UNC/20.15.2/BGPPEERINFO]] · BGPPEERINFO（BGP对等体信息） — `BGPPEERINFO.md`
-- [[configobject/UNC/20.15.2/BGPPEERLOG]] · BGPPEERLOG（BGP对等体日志信息） — `BGPPEERLOG.md`
-- [[configobject/UNC/20.15.2/BGPPEERSTATE]] · BGPPEERSTATE（BGP对等体状态信息） — `BGPPEERSTATE.md`
-- [[configobject/UNC/20.15.2/BGPPEERSTATISTICSINFO]] · BGPPEERSTATISTICSINFO（BGP对等体统计信息） — `BGPPEERSTATISTICSINFO.md`
-- [[configobject/UNC/20.15.2/BGPPEERVERBOSE]] · BGPPEERVERBOSE（BGP对等体详细信息） — `BGPPEERVERBOSE.md`
-- [[configobject/UNC/20.15.2/BGPRT6DATA]] · BGPRT6DATA（BGP IPv6路由数据结构信息） — `BGPRT6DATA.md`
-- [[configobject/UNC/20.15.2/BGPRTDATA]] · BGPRTDATA（BGP路由数据结构信息） — `BGPRTDATA.md`
-- [[configobject/UNC/20.15.2/BGPRTSTATISTICS]] · BGPRTSTATISTICS（BGP路由统计信息） — `BGPRTSTATISTICS.md`
-- [[configobject/UNC/20.15.2/BGPVRFROUTING]] · BGPVRFROUTING（BGP VPN路由表） — `BGPVRFROUTING.md`
-- [[configobject/UNC/20.15.2/BGPVRFROUTING6]] · BGPVRFROUTING6（BGP VPN IPv6路由表） — `BGPVRFROUTING6.md`
-- [[configobject/UNC/20.15.2/BILLSAVE]] · BILLSAVE（最终话单处理和保存速度） — `BILLSAVE.md`
-- [[configobject/UNC/20.15.2/BLKHISTORY]] · BLKHISTORY（CSDB RU闭塞信息） — `BLKHISTORY.md`
-- [[configobject/UNC/20.15.2/BOSSOPINFO]] · BOSSOPINFO（BOSS操作信息） — `BOSSOPINFO.md`
-- [[configobject/UNC/20.15.2/BSCUSRNUM]] · BSCUSRNUM（BSC下用户数） — `BSCUSRNUM.md`
-- [[configobject/UNC/20.15.2/BSFCTX]] · BSFCTX（UE IP对应的PCF信息） — `BSFCTX.md`
-- [[configobject/UNC/20.15.2/BTRUNCSTATUS]] · BTRUNCSTATUS（宽带集群系统TSN状态） — `BTRUNCSTATUS.md`
-- [[configobject/UNC/20.15.2/CACHE]] · CACHE（缓冲区话单数量） — `CACHE.md`
-- [[configobject/UNC/20.15.2/CACHEMBLACKBOX]] · CACHEMBLACKBOX（CACHEM黑匣子诊断信息） — `CACHEMBLACKBOX.md`
-- [[configobject/UNC/20.15.2/CACHEMCMDDATA]] · CACHEMCMDDATA（CACHEM命令信息） — `CACHEMCMDDATA.md`
-- [[configobject/UNC/20.15.2/CACHEMINNERDATA]] · CACHEMINNERDATA（CACHEM诊断信息） — `CACHEMINNERDATA.md`
-- [[configobject/UNC/20.15.2/CB]] · CB（CB表） — `CB.md`
-- [[configobject/UNC/20.15.2/CCL]] · CCL（原始话单采集和保存速度） — `CCL.md`
-- [[configobject/UNC/20.15.2/CDRPROCSTATUS]] · CDRPROCSTATUS（话单处理状态） — `CDRPROCSTATUS.md`
-- [[configobject/UNC/20.15.2/CDRQUERY]] · CDRQUERY（话单） — `CDRQUERY.md`
-- [[configobject/UNC/20.15.2/CDRQUERYSTATUS]] · CDRQUERYSTATUS（话单查询任务状态） — `CDRQUERYSTATUS.md`
-- [[configobject/UNC/20.15.2/CDRSTRGINFO]] · CDRSTRGINFO（缓存话单信息） — `CDRSTRGINFO.md`
-- [[configobject/UNC/20.15.2/CDW]] · CDW（话单处理速度） — `CDW.md`
-- [[configobject/UNC/20.15.2/CELLFAULTINFO]] · CELLFAULTINFO（故障进程历史记录） — `CELLFAULTINFO.md`
-- [[configobject/UNC/20.15.2/CELLINFO]] · CELLINFO（微服务进程信息） — `CELLINFO.md`
-- [[configobject/UNC/20.15.2/CELLSTAT]] · CELLSTAT（微服务进程可用状态统计信息） — `CELLSTAT.md`
-- [[configobject/UNC/20.15.2/CERTFILE]] · CERTFILE（证书） — `CERTFILE.md`
-- [[configobject/UNC/20.15.2/CFGCERTAINDB]] · CFGCERTAINDB（指定DB表数据） — `CFGCERTAINDB.md`
-- [[configobject/UNC/20.15.2/CFGERRCMD]] · CFGERRCMD（CFG方式配置恢复的失败信息） — `CFGERRCMD.md`
-- [[configobject/UNC/20.15.2/CFGRECOVERRESULT]] · CFGRECOVERRESULT（系统配置恢复结果） — `CFGRECOVERRESULT.md`
-- [[configobject/UNC/20.15.2/CFGTABLEDATA]] · CFGTABLEDATA（满足条件的CFG表数据） — `CFGTABLEDATA.md`
-- [[configobject/UNC/20.15.2/CFGTABLEINDEX]] · CFGTABLEINDEX（CFG表索引信息和字段信息） — `CFGTABLEINDEX.md`
-- [[configobject/UNC/20.15.2/CFGTABLEINFO]] · CFGTABLEINFO（CFG表信息和内存信息） — `CFGTABLEINFO.md`
-- [[configobject/UNC/20.15.2/CGIP]] · CGIP（CGIP测量对象） — `CGIP.md`
-- [[configobject/UNC/20.15.2/CGQUEUESTATUS]] · CGQUEUESTATUS（NCG队列状态） — `CGQUEUESTATUS.md`
-- [[configobject/UNC/20.15.2/CGSTATUS]] · CGSTATUS（CG状态） — `CGSTATUS.md`
-- [[configobject/UNC/20.15.2/CHGFILE]] · CHGFILE（硬盘话单文件信息） — `CHGFILE.md`
-- [[configobject/UNC/20.15.2/CLRDNSCPROG]] · CLRDNSCPROG（离散清缓存进度） — `CLRDNSCPROG.md`
-- [[configobject/UNC/20.15.2/CNTCPUSTAT]] · CNTCPUSTAT（容器CPU信息） — `CNTCPUSTAT.md`
-- [[configobject/UNC/20.15.2/CNTINFO]] · CNTINFO（容器部署信息） — `CNTINFO.md`
-- [[configobject/UNC/20.15.2/CNTMEMSTAT]] · CNTMEMSTAT（容器内存信息） — `CNTMEMSTAT.md`
-- [[configobject/UNC/20.15.2/CNTRESSTAT]] · CNTRESSTAT（容器资源信息） — `CNTRESSTAT.md`
-- [[configobject/UNC/20.15.2/COLLECTLOGRESULT]] · COLLECTLOGRESULT（日志收集执行结果） — `COLLECTLOGRESULT.md`
-- [[configobject/UNC/20.15.2/COMBASESUM]] · COMBASESUM（BASE亚健康概况） — `COMBASESUM.md`
-- [[configobject/UNC/20.15.2/COMCONTAINER]] · COMCONTAINER（组件和容器关系信息） — `COMCONTAINER.md`
-- [[configobject/UNC/20.15.2/COMGTPCPATHINFO]] · COMGTPCPATHINFO（UAM GTPC路径信息） — `COMGTPCPATHINFO.md`
-- [[configobject/UNC/20.15.2/COMGTPCPATHNUM]] · COMGTPCPATHNUM（UAM GTP-C路径数量） — `COMGTPCPATHNUM.md`
-- [[configobject/UNC/20.15.2/COMMMCTX]] · COMMMCTX（移动性管理上下文的相关信息） — `COMMMCTX.md`
-- [[configobject/UNC/20.15.2/COMMMCTXLOC]] · COMMMCTXLOC（移动管理位置信息上下文） — `COMMMCTXLOC.md`
-- [[configobject/UNC/20.15.2/COMMONDBG]] · COMMONDBG（调试信息） — `COMMONDBG.md`
-- [[configobject/UNC/20.15.2/COMMONDBGMCR]] · COMMONDBGMCR（调试信息） — `COMMONDBGMCR.md`
-- [[configobject/UNC/20.15.2/COMMSTAT]] · COMMSTAT（通信统计） — `COMMSTAT.md`
-- [[configobject/UNC/20.15.2/COMMSTATMCR]] · COMMSTATMCR（通信统计） — `COMMSTATMCR.md`
-- [[configobject/UNC/20.15.2/COMPONENT]] · COMPONENT（组件信息） — `COMPONENT.md`
-- [[configobject/UNC/20.15.2/COMPONENTSUB]] · COMPONENTSUB（组件订阅信息） — `COMPONENTSUB.md`
-- [[configobject/UNC/20.15.2/COMPSTATNOTIFY]] · COMPSTATNOTIFY（组件状态通知记录） — `COMPSTATNOTIFY.md`
-- [[configobject/UNC/20.15.2/COMPSTATTRACE]] · COMPSTATTRACE（当前组件的状态记录信息） — `COMPSTATTRACE.md`
-- [[configobject/UNC/20.15.2/COMTASKDETAIL]] · COMTASKDETAIL（SDR通信质量检测结果详情） — `COMTASKDETAIL.md`
-- [[configobject/UNC/20.15.2/COMTASKSUMM]] · COMTASKSUMM（SDR通信质量检测结果概要） — `COMTASKSUMM.md`
-- [[configobject/UNC/20.15.2/COMUSRPDPNUM]] · COMUSRPDPNUM（移动性管理用户数） — `COMUSRPDPNUM.md`
-- [[configobject/UNC/20.15.2/CONNDOWN]] · CONNDOWN（连接中断信息） — `CONNDOWN.md`
-- [[configobject/UNC/20.15.2/CONNECT]] · CONNECT（网元长连接信息） — `CONNECT.md`
-- [[configobject/UNC/20.15.2/CONSSTATE]] · CONSSTATE（消费者状态信息） — `CONSSTATE.md`
-- [[configobject/UNC/20.15.2/CONSSUB]] · CONSSUB（消费者订阅信息） — `CONSSUB.md`
-- [[configobject/UNC/20.15.2/CPPDPCHGINFO]] · CPPDPCHGINFO（计费上下文信息） — `CPPDPCHGINFO.md`
-- [[configobject/UNC/20.15.2/CPU]] · CPU（资源CPU使用信息） — `CPU.md`
-- [[configobject/UNC/20.15.2/CPUECOVMSINFO]] · CPUECOVMSINFO（VM的CPU节能策略） — `CPUECOVMSINFO.md`
-- [[configobject/UNC/20.15.2/CSCFGCACHE]] · CSCFGCACHE（本地缓存中配置的记录数） — `CSCFGCACHE.md`
-- [[configobject/UNC/20.15.2/CURNRFINFO]] · CURNRFINFO（当前NRF实例信息） — `CURNRFINFO.md`
-- [[configobject/UNC/20.15.2/CURRENTWEIGHT]] · CURRENTWEIGHT（服务类型当前时间的非动态权重） — `CURRENTWEIGHT.md`
-- [[configobject/UNC/20.15.2/CURSMFIEADAPTER]] · CURSMFIEADAPTER（SMF当前信元携带的信息） — `CURSMFIEADAPTER.md`
-- [[configobject/UNC/20.15.2/DBCLUSTER]] · DBCLUSTER（CSDB子集群信息） — `DBCLUSTER.md`
-- [[configobject/UNC/20.15.2/DBDATAFEATURE]] · DBDATAFEATURE（CSDB数据特征） — `DBDATAFEATURE.md`
-- [[configobject/UNC/20.15.2/DBDRTBLNUM]] · DBDRTBLNUM（CSDB容灾主备本记录数） — `DBDRTBLNUM.md`
-- [[configobject/UNC/20.15.2/DBGCLICMDPRXYREG]] · DBGCLICMDPRXYREG（通过命令代理可执行命令行调试命令的白名单） — `DBGCLICMDPRXYREG.md`
-- [[configobject/UNC/20.15.2/DBGDATAEX]] · DBGDATAEX（调试信息） — `DBGDATAEX.md`
-- [[configobject/UNC/20.15.2/DBGHAFD]] · DBGHAFD（HAFD调试命令结果） — `DBGHAFD.md`
-- [[configobject/UNC/20.15.2/DBGHAFG]] · DBGHAFG（HAFG相关信息） — `DBGHAFG.md`
-- [[configobject/UNC/20.15.2/DBGSTAT]] · DBGSTAT（调试信息） — `DBGSTAT.md`
-- [[configobject/UNC/20.15.2/DBNODE]] · DBNODE（CSDB节点信息） — `DBNODE.md`
-- [[configobject/UNC/20.15.2/DBPLUGIN]] · DBPLUGIN（CSDB插件信息） — `DBPLUGIN.md`
-- [[configobject/UNC/20.15.2/DBSTATS]] · DBSTATS（CSDB的统计信息） — `DBSTATS.md`
-- [[configobject/UNC/20.15.2/DBTBL]] · DBTBL（CSDB数据表信息） — `DBTBL.md`
-- [[configobject/UNC/20.15.2/DBUPGSTATUS]] · DBUPGSTATUS（CSDB灰度升级状态） — `DBUPGSTATUS.md`
-- [[configobject/UNC/20.15.2/DBUSERINFO]] · DBUSERINFO（CSDB使用者信息） — `DBUSERINFO.md`
-- [[configobject/UNC/20.15.2/DDBREC]] · DDBREC（DDB记录） — `DDBREC.md`
-- [[configobject/UNC/20.15.2/DDNDELAYINFO]] · DDNDELAYINFO（路径DDN Delay信息） — `DDNDELAYINFO.md`
-- [[configobject/UNC/20.15.2/DEADLOOPINFO]] · DEADLOOPINFO（RU死循环信息） — `DEADLOOPINFO.md`
-- [[configobject/UNC/20.15.2/DEASMCTXSTATUS]] · DEASMCTXSTATUS（去活操作状态） — `DEASMCTXSTATUS.md`
-- [[configobject/UNC/20.15.2/DEVATTRCACHE]] · DEVATTRCACHE（属性值信息） — `DEVATTRCACHE.md`
-- [[configobject/UNC/20.15.2/DEVATTRNOTIFY]] · DEVATTRNOTIFY（属性变更通知消息记录） — `DEVATTRNOTIFY.md`
-- [[configobject/UNC/20.15.2/DEVATTRREV]] · DEVATTRREV（接收VNFC配置的属性信息） — `DEVATTRREV.md`
-- [[configobject/UNC/20.15.2/DEVATTRSND]] · DEVATTRSND（VNFC同步到VNFP的属性信息） — `DEVATTRSND.md`
-- [[configobject/UNC/20.15.2/DEVATTRSUB]] · DEVATTRSUB（属性订阅信息） — `DEVATTRSUB.md`
-- [[configobject/UNC/20.15.2/DEVATTRTBL]] · DEVATTRTBL（设备属性信息） — `DEVATTRTBL.md`
-- [[configobject/UNC/20.15.2/DEVBOOTPREG]] · DEVBOOTPREG（BOOTP服务端的注册信息） — `DEVBOOTPREG.md`
-- [[configobject/UNC/20.15.2/DEVBOOTPRES]] · DEVBOOTPRES（BOOTP服务器本地资源信息） — `DEVBOOTPRES.md`
-- [[configobject/UNC/20.15.2/DEVCOMPFSM]] · DEVCOMPFSM（组件状态机信息） — `DEVCOMPFSM.md`
-- [[configobject/UNC/20.15.2/DEVDIAGINFO]] · DEVDIAGINFO（设备管理诊断信息） — `DEVDIAGINFO.md`
-- [[configobject/UNC/20.15.2/DEVDRIINFO]] · DEVDRIINFO（设备驱动信息） — `DEVDRIINFO.md`
-- [[configobject/UNC/20.15.2/DEVICEINFO]] · DEVICEINFO（设备档案信息） — `DEVICEINFO.md`
-- [[configobject/UNC/20.15.2/DEVMODFSM]] · DEVMODFSM（模块状态机信息） — `DEVMODFSM.md`
-- [[configobject/UNC/20.15.2/DEVNETCONFREQ]] · DEVNETCONFREQ（NETCONF请求信息） — `DEVNETCONFREQ.md`
-- [[configobject/UNC/20.15.2/DEVOBJFSM]] · DEVOBJFSM（对象状态机信息） — `DEVOBJFSM.md`
-- [[configobject/UNC/20.15.2/DHCP6CLIENTSTAT]] · DHCP6CLIENTSTAT（DHCPv6客户端状态信息） — `DHCP6CLIENTSTAT.md`
-- [[configobject/UNC/20.15.2/DHCPCLIENTSTAT]] · DHCPCLIENTSTAT（DHCPv4客户端状态信息） — `DHCPCLIENTSTAT.md`
-- [[configobject/UNC/20.15.2/DIAMAAASTATUS]] · DIAMAAASTATUS（Diameter AAA服务器状态） — `DIAMAAASTATUS.md`
-- [[configobject/UNC/20.15.2/DIAMDICTSTAT]] · DIAMDICTSTAT（Diameter字典加载状态） — `DIAMDICTSTAT.md`
-- [[configobject/UNC/20.15.2/DIAMRTSTATUS]] · DIAMRTSTATUS（Diameter Route状态） — `DIAMRTSTATUS.md`
-- [[configobject/UNC/20.15.2/DIGIW]] · DIGIW（电子保单信息） — `DIGIW.md`
-- [[configobject/UNC/20.15.2/DISCREC]] · DISCREC（服务发现记录） — `DISCREC.md`
-- [[configobject/UNC/20.15.2/DISKINFO]] · DISKINFO（节点磁盘部署规格） — `DISKINFO.md`
-- [[configobject/UNC/20.15.2/DMOCINFO]] · DMOCINFO（Diameter流控信息） — `DMOCINFO.md`
-- [[configobject/UNC/20.15.2/DMTBLACKBOX]] · DMTBLACKBOX（Diameter黑匣子信息） — `DMTBLACKBOX.md`
-- [[configobject/UNC/20.15.2/DMTCONN]] · DMTCONN（Diameter基本信息或Peer连接相关信息） — `DMTCONN.md`
-- [[configobject/UNC/20.15.2/DMTCONNSTC]] · DMTCONNSTC（Diameter链路及消息收发统计信息） — `DMTCONNSTC.md`
-- [[configobject/UNC/20.15.2/DMTLINKGROUPSTC]] · DMTLINKGROUPSTC（Diameter链路组信息和链路信息） — `DMTLINKGROUPSTC.md`
-- [[configobject/UNC/20.15.2/DNSAGENTIPHOST]] · DNSAGENTIPHOST（DNS代理服务器域名） — `DNSAGENTIPHOST.md`
-- [[configobject/UNC/20.15.2/DNSAGENTIPV6HOST]] · DNSAGENTIPV6HOST（DNS代理服务器IPv6域名） — `DNSAGENTIPV6HOST.md`
-- [[configobject/UNC/20.15.2/DNSCACHE]] · DNSCACHE（DNS Cache） — `DNSCACHE.md`
-- [[configobject/UNC/20.15.2/DNSDYNAMICIPHOST]] · DNSDYNAMICIPHOST（DNS IPv4动态域名） — `DNSDYNAMICIPHOST.md`
-- [[configobject/UNC/20.15.2/DNSDYNAMICIPV6HOST]] · DNSDYNAMICIPV6HOST（DNS IPv6动态域名） — `DNSDYNAMICIPV6HOST.md`
-- [[configobject/UNC/20.15.2/DNSERRDN]] · DNSERRDN（失败的DNS记录） — `DNSERRDN.md`
-- [[configobject/UNC/20.15.2/DNSLNK]] · DNSLNK（DNS服务器链路状态） — `DNSLNK.md`
-- [[configobject/UNC/20.15.2/DPHMS]] · DPHMS（MS上下文信息） — `DPHMS.md`
-- [[configobject/UNC/20.15.2/DRASTATUS]] · DRASTATUS（DRA状态） — `DRASTATUS.md`
-- [[configobject/UNC/20.15.2/DRGROUPSTATUS]] · DRGROUPSTATUS（容灾组的运行状态信息） — `DRGROUPSTATUS.md`
-- [[configobject/UNC/20.15.2/DRINFO]] · DRINFO（容灾信息） — `DRINFO.md`
-- [[configobject/UNC/20.15.2/DRLIMITINFO]] · DRLIMITINFO（已发生的倒换和复位次数和距离限制结束的时间） — `DRLIMITINFO.md`
-- [[configobject/UNC/20.15.2/DRSWAPREC]] · DRSWAPREC（容灾倒换记录） — `DRSWAPREC.md`
-- [[configobject/UNC/20.15.2/DYNAMICHISTLOAD]] · DYNAMICHISTLOAD（各业务pod历史的忙时负载、权重和部署位置信息） — `DYNAMICHISTLOAD.md`
-- [[configobject/UNC/20.15.2/DYNDIAMAAA]] · DYNDIAMAAA（动态Diameter AAA服务器） — `DYNDIAMAAA.md`
-- [[configobject/UNC/20.15.2/DYNNGERRREC]] · DYNNGERRREC（域名查询失败的记录） — `DYNNGERRREC.md`
-- [[configobject/UNC/20.15.2/ECOVMSINFO]] · ECOVMSINFO（VM的CPU节能策略） — `ECOVMSINFO.md`
-- [[configobject/UNC/20.15.2/ELECTION]] · ELECTION（集群选举实例信息） — `ELECTION.md`
-- [[configobject/UNC/20.15.2/ENBGNBNEIBS]] · ENBGNBNEIBS（eNodeB邻接的en-gNB） — `ENBGNBNEIBS.md`
-- [[configobject/UNC/20.15.2/ENGNB]] · ENGNB（en-gNB标识） — `ENGNB.md`
-- [[configobject/UNC/20.15.2/ESMLCSTATE]] · ESMLCSTATE（ESMLC状态） — `ESMLCSTATE.md`
-- [[configobject/UNC/20.15.2/ETCDTTL]] · ETCDTTL（用于仲裁目的的key的租约信息） — `ETCDTTL.md`
-- [[configobject/UNC/20.15.2/EVTGOVSTAT]] · EVTGOVSTAT（事件诊断失败状态） — `EVTGOVSTAT.md`
-- [[configobject/UNC/20.15.2/EVTHEALREC]] · EVTHEALREC（事件治理自愈结果） — `EVTHEALREC.md`
-- [[configobject/UNC/20.15.2/EVTSUBINFO]] · EVTSUBINFO（网络开放事件的订阅信息） — `EVTSUBINFO.md`
-- [[configobject/UNC/20.15.2/EXCEPTIONINFO]] · EXCEPTIONINFO（RU异常信息） — `EXCEPTIONINFO.md`
-- [[configobject/UNC/20.15.2/EXCHANGE]] · EXCHANGE（负载均衡交换表） — `EXCHANGE.md`
-- [[configobject/UNC/20.15.2/EXTANINFO]] · EXTANINFO（扩展的AN信息） — `EXTANINFO.md`
-- [[configobject/UNC/20.15.2/FABDIAGINFO]] · FABDIAGINFO（Fabric平面亚健康诊断结果） — `FABDIAGINFO.md`
-- [[configobject/UNC/20.15.2/FABPORTSUBDTL]] · FABPORTSUBDTL（Fabric端口亚健康通信质量信息） — `FABPORTSUBDTL.md`
-- [[configobject/UNC/20.15.2/FABRICOAMINFO]] · FABRICOAMINFO（PAE OAM链路信息） — `FABRICOAMINFO.md`
-- [[configobject/UNC/20.15.2/FABRICOAMPORT]] · FABRICOAMPORT（PAE各链路OAM报文统计结果） — `FABRICOAMPORT.md`
-- [[configobject/UNC/20.15.2/FABRICPLANEDOWN]] · FABRICPLANEDOWN（Fabric平面Down信息） — `FABRICPLANEDOWN.md`
-- [[configobject/UNC/20.15.2/FABRICSUBHEALTHYLINK]] · FABRICSUBHEALTHYLINK（Fabric平面亚健康链路信息） — `FABRICSUBHEALTHYLINK.md`
-- [[configobject/UNC/20.15.2/FABRICSUBHEALTHYSTAT]] · FABRICSUBHEALTHYSTAT（PAE内联口亚健康统计信息） — `FABRICSUBHEALTHYSTAT.md`
-- [[configobject/UNC/20.15.2/FABSUBDETAIL]] · FABSUBDETAIL（Fabric亚健康通信质量信息） — `FABSUBDETAIL.md`
-- [[configobject/UNC/20.15.2/FASTSCANDATA]] · FASTSCANDATA（快速扫描任务信息） — `FASTSCANDATA.md`
-- [[configobject/UNC/20.15.2/FASTSCANPROCESS]] · FASTSCANPROCESS（快速扫描任务状态） — `FASTSCANPROCESS.md`
-- [[configobject/UNC/20.15.2/FAULTUPPAIR]] · FAULTUPPAIR（N3接口故障网元对） — `FAULTUPPAIR.md`
-- [[configobject/UNC/20.15.2/FCSTATIS]] · FCSTATIS（流控统计） — `FCSTATIS.md`
-- [[configobject/UNC/20.15.2/FEATUREOPRHIST]] · FEATUREOPRHIST（特性上下线历史） — `FEATUREOPRHIST.md`
-- [[configobject/UNC/20.15.2/FEICOM_CSTDATA]] · FEICOM_CSTDATA（存储池存储的表项信息） — `FEICOM_CSTDATA.md`
-- [[configobject/UNC/20.15.2/FEIHEALTHSTATE]] · FEIHEALTHSTATE（FEI健康状态） — `FEIHEALTHSTATE.md`
-- [[configobject/UNC/20.15.2/FEIMCFWDTAB]] · FEIMCFWDTAB（FEI组播转发表项统计信息） — `FEIMCFWDTAB.md`
-- [[configobject/UNC/20.15.2/FEINOTIFYIFMIFUPTIME]] · FEINOTIFYIFMIFUPTIME（FEI通告IFM端口UP事件的时间） — `FEINOTIFYIFMIFUPTIME.md`
-- [[configobject/UNC/20.15.2/FEIPORTVLAN]] · FEIPORTVLAN（FEI端口VLAN） — `FEIPORTVLAN.md`
-- [[configobject/UNC/20.15.2/FEISWHEALTHSTATE]] · FEISWHEALTHSTATE（FEISW健康状态） — `FEISWHEALTHSTATE.md`
-- [[configobject/UNC/20.15.2/FEI_FRM_CST_POOL]] · FEI_FRM_CST_POOL（资源池列表的资源占用情况） — `FEI_FRM_CST_POOL.md`
-- [[configobject/UNC/20.15.2/FEMPACKET]] · FEMPACKET（格式引擎配置信息） — `FEMPACKET.md`
-- [[configobject/UNC/20.15.2/FESDIAGINFO]] · FESDIAGINFO（FES诊断信息） — `FESDIAGINFO.md`
-- [[configobject/UNC/20.15.2/FESMEMLIMIT]] · FESMEMLIMIT（FES内存界限信息） — `FESMEMLIMIT.md`
-- [[configobject/UNC/20.15.2/FESSMOOTHSTAT]] · FESSMOOTHSTAT（FES的平滑状态信息） — `FESSMOOTHSTAT.md`
-- [[configobject/UNC/20.15.2/FESTABLE]] · FESTABLE（FES表项信息） — `FESTABLE.md`
-- [[configobject/UNC/20.15.2/FESTABLESTATICS]] · FESTABLESTATICS（FES表项统计信息） — `FESTABLESTATICS.md`
-- [[configobject/UNC/20.15.2/FLOWCTRLSTAT]] · FLOWCTRLSTAT（流控统计信息） — `FLOWCTRLSTAT.md`
-- [[configobject/UNC/20.15.2/FMTSOFTPARA]] · FMTSOFTPARA（格式引擎包所有可配置软参） — `FMTSOFTPARA.md`
-- [[configobject/UNC/20.15.2/FRAMEDBG]] · FRAMEDBG（调试信息） — `FRAMEDBG.md`
-- [[configobject/UNC/20.15.2/FUNCTIONSETINFO]] · FUNCTIONSETINFO（网络功能集全局列表） — `FUNCTIONSETINFO.md`
-- [[configobject/UNC/20.15.2/FUNCTIONSETSTAT]] · FUNCTIONSETSTAT（网络功能集状态） — `FUNCTIONSETSTAT.md`
-- [[configobject/UNC/20.15.2/FWDSTAT]] · FWDSTAT（转发消息统计） — `FWDSTAT.md`
-- [[configobject/UNC/20.15.2/GALICENSEPEAK]] · GALICENSEPEAK（GA接口话务高峰信息） — `GALICENSEPEAK.md`
-- [[configobject/UNC/20.15.2/GBMSCONTNUM]] · GBMSCONTNUM（MS上下文数目和PDP上下文数目） — `GBMSCONTNUM.md`
-- [[configobject/UNC/20.15.2/GBPAGING]] · GBPAGING（Gb接口寻呼数据） — `GBPAGING.md`
-- [[configobject/UNC/20.15.2/GBPDPRESTBL]] · GBPDPRESTBL（GBP进程PDP用户上下文资源使用状态） — `GBPDPRESTBL.md`
-- [[configobject/UNC/20.15.2/GIDINFO]] · GIDINFO（POD的GID信息） — `GIDINFO.md`
-- [[configobject/UNC/20.15.2/GLBCDRFLDCFG]] · GLBCDRFLDCFG（全局生效CDR字段配置） — `GLBCDRFLDCFG.md`
-- [[configobject/UNC/20.15.2/GLBOFCTEMPCFG]] · GLBOFCTEMPCFG（全局生效离线计费模板配置） — `GLBOFCTEMPCFG.md`
-- [[configobject/UNC/20.15.2/GLBPCCPARA]] · GLBPCCPARA（全局PCC参数） — `GLBPCCPARA.md`
-- [[configobject/UNC/20.15.2/GNBENBNEIBS]] · GNBENBNEIBS（en-gNB邻接的eNodeB） — `GNBENBNEIBS.md`
-- [[configobject/UNC/20.15.2/GRAYUPGRESULT]] · GRAYUPGRESULT（灰度升级结果） — `GRAYUPGRESULT.md`
-- [[configobject/UNC/20.15.2/GREMSGSTATINFO]] · GREMSGSTATINFO（GRE消息诊断信息） — `GREMSGSTATINFO.md`
-- [[configobject/UNC/20.15.2/GREPKTSTAT]] · GREPKTSTAT（GRE报文统计） — `GREPKTSTAT.md`
-- [[configobject/UNC/20.15.2/GRESMPOOL]] · GRESMPOOL（Gresm资源池所有信息） — `GRESMPOOL.md`
-- [[configobject/UNC/20.15.2/GRESMRESINFO]] · GRESMRESINFO（Gresm资源信息） — `GRESMRESINFO.md`
-- [[configobject/UNC/20.15.2/GRESMRESSTAT]] · GRESMRESSTAT（消费者申请资源的统计信息） — `GRESMRESSTAT.md`
-- [[configobject/UNC/20.15.2/GRETNLINFO]] · GRETNLINFO（GRE隧道诊断信息） — `GRETNLINFO.md`
-- [[configobject/UNC/20.15.2/GRETNLSTAT]] · GRETNLSTAT（GRE隧道数目） — `GRETNLSTAT.md`
-- [[configobject/UNC/20.15.2/GRETNLTAB]] · GRETNLTAB（GRE隧道信息） — `GRETNLTAB.md`
-- [[configobject/UNC/20.15.2/GROUPSTAT]] · GROUPSTAT（消费组状态） — `GROUPSTAT.md`
-- [[configobject/UNC/20.15.2/GRPPFCPSESSINFO]] · GRPPFCPSESSINFO（PFCP的组会话信息） — `GRPPFCPSESSINFO.md`
-- [[configobject/UNC/20.15.2/GTPCPATHINFONUM]] · GTPCPATHINFONUM（GTPC路径数目） — `GTPCPATHINFONUM.md`
-- [[configobject/UNC/20.15.2/GTPCPATHNUM]] · GTPCPATHNUM（GTP-C路径个数） — `GTPCPATHNUM.md`
-- [[configobject/UNC/20.15.2/GTPCSTATUSINFO]] · GTPCSTATUSINFO（GTP-C路径当前及历史状态） — `GTPCSTATUSINFO.md`
-- [[configobject/UNC/20.15.2/GTPPDPNUM]] · GTPPDPNUM（用户面PDP上下文数目） — `GTPPDPNUM.md`
-- [[configobject/UNC/20.15.2/GTPUPATHNUM]] · GTPUPATHNUM（GTP-U路径个数） — `GTPUPATHNUM.md`
-- [[configobject/UNC/20.15.2/GTPUPDP]] · GTPUPDP（用户面PDP上下文信息） — `GTPUPDP.md`
-- [[configobject/UNC/20.15.2/GWFAULTINF]] · GWFAULTINF（网关故障信息） — `GWFAULTINF.md`
-- [[configobject/UNC/20.15.2/HARESULT]] · HARESULT（HA选举结果） — `HARESULT.md`
-- [[configobject/UNC/20.15.2/HASTAT]] · HASTAT（系统HA状态） — `HASTAT.md`
-- [[configobject/UNC/20.15.2/HISTALM]] · HISTALM（历史告警） — `HISTALM.md`
-- [[configobject/UNC/20.15.2/HTROFCINFO]] · HTROFCINFO（HTR局向信息） — `HTROFCINFO.md`
-- [[configobject/UNC/20.15.2/HTROFCPERF]] · HTROFCPERF（HTR局向统计信息） — `HTROFCPERF.md`
-- [[configobject/UNC/20.15.2/HTTPDIALUSR]] · HTTPDIALUSR（HTTP拨测用户信息） — `HTTPDIALUSR.md`
-- [[configobject/UNC/20.15.2/HTTPFRAMEDBG]] · HTTPFRAMEDBG（HTTP调试信息） — `HTTPFRAMEDBG.md`
-- [[configobject/UNC/20.15.2/HTTPHTRINFO]] · HTTPHTRINFO（HTR信息） — `HTTPHTRINFO.md`
-- [[configobject/UNC/20.15.2/HTTPINTFDSCP]] · HTTPINTFDSCP（HTTP服务存储的接口DSCP信息） — `HTTPINTFDSCP.md`
-- [[configobject/UNC/20.15.2/HTTPLINKHISTORY]] · HTTPLINKHISTORY（HTTP历史链路状态） — `HTTPLINKHISTORY.md`
-- [[configobject/UNC/20.15.2/HTTPNFINST]] · HTTPNFINST（HTTP服务存储的NF实例信息） — `HTTPNFINST.md`
-- [[configobject/UNC/20.15.2/HTTPPLMN]] · HTTPPLMN（HTTP服务存储的PLMN） — `HTTPPLMN.md`
-- [[configobject/UNC/20.15.2/HTTPPROCESS]] · HTTPPROCESS（HTTP进程信息） — `HTTPPROCESS.md`
-- [[configobject/UNC/20.15.2/HTTPRESUSG]] · HTTPRESUSG（HTTP资源使用信息） — `HTTPRESUSG.md`
-- [[configobject/UNC/20.15.2/HTTPSVRFAULINK]] · HTTPSVRFAULINK（HTTP服务端故障链路） — `HTTPSVRFAULINK.md`
-- [[configobject/UNC/20.15.2/HTTPUPGSTAGE]] · HTTPUPGSTAGE（HTTP灰度升级状态） — `HTTPUPGSTAGE.md`
-- [[configobject/UNC/20.15.2/ICMP6STAT]] · ICMP6STAT（ICMP6统计） — `ICMP6STAT.md`
-- [[configobject/UNC/20.15.2/ICMPSTATISTIC]] · ICMPSTATISTIC（ICMP报文统计） — `ICMPSTATISTIC.md`
-- [[configobject/UNC/20.15.2/IFDIAGDATA]] · IFDIAGDATA（接口诊断数据） — `IFDIAGDATA.md`
-- [[configobject/UNC/20.15.2/IFMINNERDATA]] · IFMINNERDATA（IFM模块内部数据） — `IFMINNERDATA.md`
-- [[configobject/UNC/20.15.2/IFSTATUS]] · IFSTATUS（接口状态信息） — `IFSTATUS.md`
-- [[configobject/UNC/20.15.2/IKEINNERPOLICY]] · IKEINNERPOLICY（IKE内部负载分担策略信息） — `IKEINNERPOLICY.md`
-- [[configobject/UNC/20.15.2/IMSBYPASSUSER]] · IMSBYPASSUSER（进入语音PCF/PCRF故障Bypass状态的用户的IMSI列表） — `IMSBYPASSUSER.md`
-- [[configobject/UNC/20.15.2/IMSI]] · IMSI（指定MSISDN用户IMSI） — `IMSI.md`
-- [[configobject/UNC/20.15.2/INHREGNF]] · INHREGNF（禁止的NF） — `INHREGNF.md`
-- [[configobject/UNC/20.15.2/INNERCOMPVERSION]] · INNERCOMPVERSION（系统内部部件版本信息） — `INNERCOMPVERSION.md`
-- [[configobject/UNC/20.15.2/INSTANCESTATUS]] · INSTANCESTATUS（输入微服务名称下所有实例的具体信息） — `INSTANCESTATUS.md`
-- [[configobject/UNC/20.15.2/INSTPROGRESS]] · INSTPROGRESS（VNFC实例化进度） — `INSTPROGRESS.md`
-- [[configobject/UNC/20.15.2/IPBLACKBOX]] · IPBLACKBOX（PP4黑匣子信息） — `IPBLACKBOX.md`
-- [[configobject/UNC/20.15.2/IPINFO]] · IPINFO（IP相关信息） — `IPINFO.md`
-- [[configobject/UNC/20.15.2/IPINFOMCR]] · IPINFOMCR（IP相关信息） — `IPINFOMCR.md`
-- [[configobject/UNC/20.15.2/IPINNERDATA]] · IPINNERDATA（PP4模块内部数据） — `IPINNERDATA.md`
-- [[configobject/UNC/20.15.2/IPNSVC]] · IPNSVC（IP网络NSVC配置表） — `IPNSVC.md`
-- [[configobject/UNC/20.15.2/IPPATH]] · IPPATH（PP4路径信息） — `IPPATH.md`
-- [[configobject/UNC/20.15.2/IPSECCOMPONENT]] · IPSECCOMPONENT（IPsec组件信息） — `IPSECCOMPONENT.md`
-- [[configobject/UNC/20.15.2/IPSECFWDSTAT]] · IPSECFWDSTAT（IPsec转发统计） — `IPSECFWDSTAT.md`
-- [[configobject/UNC/20.15.2/IPSECPKTSTC]] · IPSECPKTSTC（IPsec报文统计信息） — `IPSECPKTSTC.md`
-- [[configobject/UNC/20.15.2/IPSECSATABLE]] · IPSECSATABLE（IPsec SA表信息） — `IPSECSATABLE.md`
-- [[configobject/UNC/20.15.2/IPSOCKET]] · IPSOCKET（IP Socket状态） — `IPSOCKET.md`
-- [[configobject/UNC/20.15.2/IPV6BLACKBOX]] · IPV6BLACKBOX（IPv6黑匣子信息） — `IPV6BLACKBOX.md`
-- [[configobject/UNC/20.15.2/IPV6BLACKLIST]] · IPV6BLACKLIST（IPv6黑名单统计信息） — `IPV6BLACKLIST.md`
-- [[configobject/UNC/20.15.2/IPV6HASTATE]] · IPV6HASTATE（IPv6组件与其他组件交互信息） — `IPV6HASTATE.md`
-- [[configobject/UNC/20.15.2/IPV6INFO]] · IPV6INFO（IPv6诊断信息） — `IPV6INFO.md`
-- [[configobject/UNC/20.15.2/IPV6PATH]] · IPV6PATH（IPv6 Path信息） — `IPV6PATH.md`
-- [[configobject/UNC/20.15.2/KPIRES]] · KPIRES（关键资源信息） — `KPIRES.md`
-- [[configobject/UNC/20.15.2/LBFLOWRULE]] · LBFLOWRULE（业务引流规则） — `LBFLOWRULE.md`
-- [[configobject/UNC/20.15.2/LBFLOWRULEV6]] · LBFLOWRULEV6（业务IPv6引流规则） — `LBFLOWRULEV6.md`
-- [[configobject/UNC/20.15.2/LBGRGRP]] · LBGRGRP（容灾组信息） — `LBGRGRP.md`
-- [[configobject/UNC/20.15.2/LBPLUGIN]] · LBPLUGIN（CSLB的插件信息） — `LBPLUGIN.md`
-- [[configobject/UNC/20.15.2/LBPLUGINVPNTOPO]] · LBPLUGINVPNTOPO（CSLB插件侧VPN对应的转发拓扑） — `LBPLUGINVPNTOPO.md`
-- [[configobject/UNC/20.15.2/LBPLY]] · LBPLY（负载均衡策略） — `LBPLY.md`
-- [[configobject/UNC/20.15.2/LBPROC]] · LBPROC（CSLB进程） — `LBPROC.md`
-- [[configobject/UNC/20.15.2/LBRTCMTY]] · LBRTCMTY（路由团体属性信息） — `LBRTCMTY.md`
-- [[configobject/UNC/20.15.2/LBSRVINST]] · LBSRVINST（LB服务实例） — `LBSRVINST.md`
-- [[configobject/UNC/20.15.2/LBSRVINSTIDREL]] · LBSRVINSTIDREL（服务ID与服务实例的关系） — `LBSRVINSTIDREL.md`
-- [[configobject/UNC/20.15.2/LBSTATUS]] · LBSTATUS（CSLB的状态） — `LBSTATUS.md`
-- [[configobject/UNC/20.15.2/LBTN]] · LBTN（隧道信息） — `LBTN.md`
-- [[configobject/UNC/20.15.2/LBTNBINDPLY]] · LBTNBINDPLY（业务服务ID与隧道组ID的关系） — `LBTNBINDPLY.md`
-- [[configobject/UNC/20.15.2/LBTNGROUP]] · LBTNGROUP（隧道组信息） — `LBTNGROUP.md`
-- [[configobject/UNC/20.15.2/LBTOPO]] · LBTOPO（SDRC中缓存的CSLB的拓扑） — `LBTOPO.md`
-- [[configobject/UNC/20.15.2/LBVPN]] · LBVPN（CSLB上的VPN信息） — `LBVPN.md`
-- [[configobject/UNC/20.15.2/LBVPNTOPO]] · LBVPNTOPO（CSLB VPN对应的MPE或SFE拓扑） — `LBVPNTOPO.md`
-- [[configobject/UNC/20.15.2/LCMLOG]] · LCMLOG（网元生命周期管理日志） — `LCMLOG.md`
-- [[configobject/UNC/20.15.2/LCS]] · LCS（LCS资源状态） — `LCS.md`
-- [[configobject/UNC/20.15.2/LCSBYIMSI]] · LCSBYIMSI（指定IMSI用户LCS签约信息） — `LCSBYIMSI.md`
-- [[configobject/UNC/20.15.2/LCSTASKINFO]] · LCSTASKINFO（定位任务信息） — `LCSTASKINFO.md`
-- [[configobject/UNC/20.15.2/LDMINNERDATA]] · LDMINNERDATA（LDM诊断信息） — `LDMINNERDATA.md`
-- [[configobject/UNC/20.15.2/LDPBFDTNNLSESSION]] · LDPBFDTNNLSESSION（BFD For LDP Tunnel的BFD会话） — `LDPBFDTNNLSESSION.md`
-- [[configobject/UNC/20.15.2/LDPBLACKBOX]] · LDPBLACKBOX（LDP记录的黑匣子信息） — `LDPBLACKBOX.md`
-- [[configobject/UNC/20.15.2/LDPFEC]] · LDPFEC（LDP FEC） — `LDPFEC.md`
-- [[configobject/UNC/20.15.2/LDPLSP]] · LDPLSP（LDP LSP） — `LDPLSP.md`
-- [[configobject/UNC/20.15.2/LDPLSPDOWN]] · LDPLSPDOWN（LDP LSP Down的信息） — `LDPLSPDOWN.md`
-- [[configobject/UNC/20.15.2/LDPLSPMGDSSUB]] · LDPLSPMGDSSUB（LDP的下游信息） — `LDPLSPMGDSSUB.md`
-- [[configobject/UNC/20.15.2/LDPLSPMGFEC]] · LDPLSPMGFEC（LDP LSP管理组件的FEC信息） — `LDPLSPMGFEC.md`
-- [[configobject/UNC/20.15.2/LDPLSPMGIID]] · LDPLSPMGIID（LDP的IID信息） — `LDPLSPMGIID.md`
-- [[configobject/UNC/20.15.2/LDPLSPMGLSP]] · LDPLSPMGLSP（LDP的LSP信息） — `LDPLSPMGLSP.md`
-- [[configobject/UNC/20.15.2/LDPLSPMGOUTSEG]] · LDPLSPMGOUTSEG（LDP LSP管理组件Outsegment转发表项） — `LDPLSPMGOUTSEG.md`
-- [[configobject/UNC/20.15.2/LDPLSPMGPEERADDR]] · LDPLSPMGPEERADDR（LDP的邻居地址信息） — `LDPLSPMGPEERADDR.md`
-- [[configobject/UNC/20.15.2/LDPLSPMGROUTE]] · LDPLSPMGROUTE（LDP LSP管理组件的路由信息） — `LDPLSPMGROUTE.md`
-- [[configobject/UNC/20.15.2/LDPNEMGADJ]] · LDPNEMGADJ（LDP的邻居信息） — `LDPNEMGADJ.md`
-- [[configobject/UNC/20.15.2/LDPNEMGIF]] · LDPNEMGIF（LDP的接口信息） — `LDPNEMGIF.md`
-- [[configobject/UNC/20.15.2/LDPNEMGSOCKET]] · LDPNEMGSOCKET（LDP邻居管理的Socket信息） — `LDPNEMGSOCKET.md`
-- [[configobject/UNC/20.15.2/LDPPEER]] · LDPPEER（LDP邻居） — `LDPPEER.md`
-- [[configobject/UNC/20.15.2/LDPSESSIONDOWN]] · LDPSESSIONDOWN（LDP会话Down的相关信息） — `LDPSESSIONDOWN.md`
-- [[configobject/UNC/20.15.2/LDPSSMGDSCB]] · LDPSSMGDSCB（LDP会话管理模块的下游信息） — `LDPSSMGDSCB.md`
-- [[configobject/UNC/20.15.2/LDPSSMGLSSOCK]] · LDPSSMGLSSOCK（LDP的Listen Socket信息） — `LDPSSMGLSSOCK.md`
-- [[configobject/UNC/20.15.2/LDPSSMGSSN]] · LDPSSMGSSN（LDP的会话信息） — `LDPSSMGSSN.md`
-- [[configobject/UNC/20.15.2/LDPSSMGTCPSOCK]] · LDPSSMGTCPSOCK（LDP的TCP Socket信息） — `LDPSSMGTCPSOCK.md`
-- [[configobject/UNC/20.15.2/LICENSEPEAK]] · LICENSEPEAK（话务高峰信息） — `LICENSEPEAK.md`
-- [[configobject/UNC/20.15.2/LICENSERES]] · LICENSERES（License资源） — `LICENSERES.md`
-- [[configobject/UNC/20.15.2/LINKINFO]] · LINKINFO（链路信息） — `LINKINFO.md`
-- [[configobject/UNC/20.15.2/LLAINNERDATA]] · LLAINNERDATA（LLA诊断信息） — `LLAINNERDATA.md`
-- [[configobject/UNC/20.15.2/LOCALKEYPAIR]] · LOCALKEYPAIR（本地公钥） — `LOCALKEYPAIR.md`
-- [[configobject/UNC/20.15.2/LOCALRECOVERY]] · LOCALRECOVERY（本端Recovery值及系统重启时间） — `LOCALRECOVERY.md`
-- [[configobject/UNC/20.15.2/LOCATION]] · LOCATION（用户当前位置） — `LOCATION.md`
-- [[configobject/UNC/20.15.2/LOGAPFM]] · LOGAPFM（日志代理性能统计信息） — `LOGAPFM.md`
-- [[configobject/UNC/20.15.2/LOGBUFFER]] · LOGBUFFER（Logbuffer中的数据） — `LOGBUFFER.md`
-- [[configobject/UNC/20.15.2/LOGDIC]] · LOGDIC（日志模型信息） — `LOGDIC.md`
-- [[configobject/UNC/20.15.2/LOGERRORINFO]] · LOGERRORINFO（日志模块错误信息） — `LOGERRORINFO.md`
-- [[configobject/UNC/20.15.2/LOGEVENT]] · LOGEVENT（事件日志信息） — `LOGEVENT.md`
-- [[configobject/UNC/20.15.2/LOGFILESTORAGE]] · LOGFILESTORAGE（日志存储信息） — `LOGFILESTORAGE.md`
-- [[configobject/UNC/20.15.2/LOGMESSAGESEND]] · LOGMESSAGESEND（日志发送的信息） — `LOGMESSAGESEND.md`
-- [[configobject/UNC/20.15.2/LOGSERVERDROPSTC]] · LOGSERVERDROPSTC（日志丢弃统计信息） — `LOGSERVERDROPSTC.md`
-- [[configobject/UNC/20.15.2/LOGSERVERSTC]] · LOGSERVERSTC（日志中心5分钟内消息统计信息） — `LOGSERVERSTC.md`
-- [[configobject/UNC/20.15.2/LOGSPFM]] · LOGSPFM（日志中心性能统计信息） — `LOGSPFM.md`
-- [[configobject/UNC/20.15.2/LOWPRIAPNFCSTAT]] · LOWPRIAPNFCSTAT（低优先级APN流控状态统计） — `LOWPRIAPNFCSTAT.md`
-- [[configobject/UNC/20.15.2/LOWPRIOFCSTAT]] · LOWPRIOFCSTAT（低优先级流控状态统计） — `LOWPRIOFCSTAT.md`
-- [[configobject/UNC/20.15.2/MASALMDETAIL]] · MASALMDETAIL（5G告警详细信息） — `MASALMDETAIL.md`
-- [[configobject/UNC/20.15.2/MASKALM]] · MASKALM（被屏蔽告警） — `MASKALM.md`
-- [[configobject/UNC/20.15.2/MCASTPAEELB]] · MCASTPAEELB（组播引流表项叶子信息） — `MCASTPAEELB.md`
-- [[configobject/UNC/20.15.2/MCASTPAEROUTE]] · MCASTPAEROUTE（组播引流表项信息） — `MCASTPAEROUTE.md`
-- [[configobject/UNC/20.15.2/MCASTPAESOURCE]] · MCASTPAESOURCE（组播源引流信息） — `MCASTPAESOURCE.md`
-- [[configobject/UNC/20.15.2/MCASTSOCKSTATE]] · MCASTSOCKSTATE（组播Socket信息） — `MCASTSOCKSTATE.md`
-- [[configobject/UNC/20.15.2/MCASTTIMER]] · MCASTTIMER（组播定时器信息） — `MCASTTIMER.md`
-- [[configobject/UNC/20.15.2/MEASMOC]] · MEASMOC（话统测量对象类模型） — `MEASMOC.md`
-- [[configobject/UNC/20.15.2/MEASOBJ]] · MEASOBJ（话统测量对象实例） — `MEASOBJ.md`
-- [[configobject/UNC/20.15.2/MEASSPECS]] · MEASSPECS（话统规格） — `MEASSPECS.md`
-- [[configobject/UNC/20.15.2/MEASSTAT]] · MEASSTAT（话统指标测量状态） — `MEASSTAT.md`
-- [[configobject/UNC/20.15.2/MEASTASK]] · MEASTASK（话统测量任务） — `MEASTASK.md`
-- [[configobject/UNC/20.15.2/MEASTREND]] · MEASTREND（话统指标统计趋势） — `MEASTREND.md`
-- [[configobject/UNC/20.15.2/MEASUNIT]] · MEASUNIT（测量指标模型） — `MEASUNIT.md`
-- [[configobject/UNC/20.15.2/MEM]] · MEM（资源内存信息） — `MEM.md`
-- [[configobject/UNC/20.15.2/MEMERRORINFO]] · MEMERRORINFO（内存错误信息） — `MEMERRORINFO.md`
-- [[configobject/UNC/20.15.2/MEMINFO]] · MEMINFO（APP内存信息） — `MEMINFO.md`
-- [[configobject/UNC/20.15.2/MEMORYINSPECT]] · MEMORYINSPECT（dopra相关内存信息） — `MEMORYINSPECT.md`
-- [[configobject/UNC/20.15.2/MGMDCTRLCNT]] · MGMDCTRLCNT（IGMP报文统计计数） — `MGMDCTRLCNT.md`
-- [[configobject/UNC/20.15.2/MGMDSOURCE]] · MGMDSOURCE（IGMP加入源信息） — `MGMDSOURCE.md`
-- [[configobject/UNC/20.15.2/MKINFO]] · MKINFO（主密钥信息） — `MKINFO.md`
-- [[configobject/UNC/20.15.2/MKUNSYNCTARGET]] · MKUNSYNCTARGET（主密钥未同步的对象） — `MKUNSYNCTARGET.md`
-- [[configobject/UNC/20.15.2/MMCTX]] · MMCTX（MM上下文） — `MMCTX.md`
-- [[configobject/UNC/20.15.2/MMCTXEXT]] · MMCTXEXT（MM上下文扩展信息） — `MMCTXEXT.md`
-- [[configobject/UNC/20.15.2/MMDBGINFO]] · MMDBGINFO（MM移动性管理相关的调试信息） — `MMDBGINFO.md`
-- [[configobject/UNC/20.15.2/MMERESETFLG]] · MMERESETFLG（MME复位标志） — `MMERESETFLG.md`
-- [[configobject/UNC/20.15.2/MMLLINKINFO]] · MMLLINKINFO（MML服务连接信息） — `MMLLINKINFO.md`
-- [[configobject/UNC/20.15.2/MPACV4RULESTAT]] · MPACV4RULESTAT（IPv4 MPAC策略匹配统计） — `MPACV4RULESTAT.md`
-- [[configobject/UNC/20.15.2/MPACV6RULESTAT]] · MPACV6RULESTAT（IPv6 MPAC策略匹配统计） — `MPACV6RULESTAT.md`
-- [[configobject/UNC/20.15.2/MPLSLSPSTC]] · MPLSLSPSTC（MPLS LSP统计信息） — `MPLSLSPSTC.md`
-- [[configobject/UNC/20.15.2/MPROCCPUSTAT]] · MPROCCPUSTAT（进程CPU信息） — `MPROCCPUSTAT.md`
-- [[configobject/UNC/20.15.2/MPROCMEMSTAT]] · MPROCMEMSTAT（进程内存信息） — `MPROCMEMSTAT.md`
-- [[configobject/UNC/20.15.2/MPROCRESSTAT]] · MPROCRESSTAT（进程资源数量） — `MPROCRESSTAT.md`
-- [[configobject/UNC/20.15.2/MSACTIVE]] · MSACTIVE（服务主实例相关信息） — `MSACTIVE.md`
-- [[configobject/UNC/20.15.2/MSISDN]] · MSISDN（指定IMSI用户MSISDN信息） — `MSISDN.md`
-- [[configobject/UNC/20.15.2/MSPROCTYPE]] · MSPROCTYPE（微服务进程类型） — `MSPROCTYPE.md`
-- [[configobject/UNC/20.15.2/MSSACLERRINFO]] · MSSACLERRINFO（软转发支撑访问控制列表模块错误信息） — `MSSACLERRINFO.md`
-- [[configobject/UNC/20.15.2/MSSACLINFO]] · MSSACLINFO（软转发支撑访问控制列表模块全局信息） — `MSSACLINFO.md`
-- [[configobject/UNC/20.15.2/MSSACLKEYINFO]] · MSSACLKEYINFO（通过软转发支撑报文关键字查询访问控制列表的结果） — `MSSACLKEYINFO.md`
-- [[configobject/UNC/20.15.2/MSSACLRULEINFO]] · MSSACLRULEINFO（软转发支撑访问控制列表中表项的内容） — `MSSACLRULEINFO.md`
-- [[configobject/UNC/20.15.2/MSSACLTBLINFO]] · MSSACLTBLINFO（软转发支撑访问控制列表详细信息） — `MSSACLTBLINFO.md`
-- [[configobject/UNC/20.15.2/MSSADAPTDETAILPHYSICAL]] · MSSADAPTDETAILPHYSICAL（适配层物理表详细信息） — `MSSADAPTDETAILPHYSICAL.md`
-- [[configobject/UNC/20.15.2/MSSADAPTDETAILSERVICE]] · MSSADAPTDETAILSERVICE（适配层业务表详细信息） — `MSSADAPTDETAILSERVICE.md`
-- [[configobject/UNC/20.15.2/MSSADAPTINFO]] · MSSADAPTINFO（适配层全局信息） — `MSSADAPTINFO.md`
-- [[configobject/UNC/20.15.2/MSSCNTINFOBRI]] · MSSCNTINFOBRI（简要计数器信息） — `MSSCNTINFOBRI.md`
-- [[configobject/UNC/20.15.2/MSSCNTINFOCNT]] · MSSCNTINFOCNT（指定计数器ID的计数器信息） — `MSSCNTINFOCNT.md`
-- [[configobject/UNC/20.15.2/MSSCNTINFOGRP]] · MSSCNTINFOGRP（指定组ID的计数器信息） — `MSSCNTINFOGRP.md`
-- [[configobject/UNC/20.15.2/MSSCOMFBSUM]] · MSSCOMFBSUM（通信功能块摘要信息） — `MSSCOMFBSUM.md`
-- [[configobject/UNC/20.15.2/MSSCOMMADAPTSERV]] · MSSCOMMADAPTSERV（通信服务信息） — `MSSCOMMADAPTSERV.md`
-- [[configobject/UNC/20.15.2/MSSCOMMFB]] · MSSCOMMFB（通信功能块信息） — `MSSCOMMFB.md`
-- [[configobject/UNC/20.15.2/MSSCOMMINS]] · MSSCOMMINS（通信实例信息） — `MSSCOMMINS.md`
-- [[configobject/UNC/20.15.2/MSSCOMMMSGPOOL]] · MSSCOMMMSGPOOL（通信消息池信息） — `MSSCOMMMSGPOOL.md`
-- [[configobject/UNC/20.15.2/MSSCOMMSTAT]] · MSSCOMMSTAT（通信模块规则匹配统计信息） — `MSSCOMMSTAT.md`
-- [[configobject/UNC/20.15.2/MSSCOMMSVCID]] · MSSCOMMSVCID（指定服务号的服务类型信息） — `MSSCOMMSVCID.md`
-- [[configobject/UNC/20.15.2/MSSCOMMSVCTHRD]] · MSSCOMMSVCTHRD（指定线程的服务类型信息） — `MSSCOMMSVCTHRD.md`
-- [[configobject/UNC/20.15.2/MSSCOUNTERINFO]] · MSSCOUNTERINFO（指定组ID和计数器ID的计数器信息） — `MSSCOUNTERINFO.md`
-- [[configobject/UNC/20.15.2/MSSDEBUGINFO]] · MSSDEBUGINFO（维测开关状态） — `MSSDEBUGINFO.md`
-- [[configobject/UNC/20.15.2/MSSDEBUGINFOM]] · MSSDEBUGINFOM（维测开关状态） — `MSSDEBUGINFOM.md`
-- [[configobject/UNC/20.15.2/MSSFMMPROCESS]] · MSSFMMPROCESS（FMM的PBUF的进程信息） — `MSSFMMPROCESS.md`
-- [[configobject/UNC/20.15.2/MSSFMMSUMMARY]] · MSSFMMSUMMARY（FMM的PBUF概要信息） — `MSSFMMSUMMARY.md`
-- [[configobject/UNC/20.15.2/MSSLOGINFO]] · MSSLOGINFO（日志详细信息） — `MSSLOGINFO.md`
-- [[configobject/UNC/20.15.2/MSSLOGQUEUE]] · MSSLOGQUEUE（日志队列详细信息） — `MSSLOGQUEUE.md`
-- [[configobject/UNC/20.15.2/MSSOEPRECISION]] · MSSOEPRECISION（MSS保序队列调度信息） — `MSSOEPRECISION.md`
-- [[configobject/UNC/20.15.2/MSSOEREGISTER]] · MSSOEREGISTER（用户注册的保序信息） — `MSSOEREGISTER.md`
-- [[configobject/UNC/20.15.2/MSSPBUFINFO]] · MSSPBUFINFO（根据索引号查询PBUF信息） — `MSSPBUFINFO.md`
-- [[configobject/UNC/20.15.2/MSSPBUFLEAK]] · MSSPBUFLEAK（泄漏的PBUF缓存信息） — `MSSPBUFLEAK.md`
-- [[configobject/UNC/20.15.2/MSSPORTHWSTC]] · MSSPORTHWSTC（端口硬件统计信息） — `MSSPORTHWSTC.md`
-- [[configobject/UNC/20.15.2/MSSPORTINFO]] · MSSPORTINFO（端口信息） — `MSSPORTINFO.md`
-- [[configobject/UNC/20.15.2/MSSPORTPMDDRV]] · MSSPORTPMDDRV（端口PMD驱动信息） — `MSSPORTPMDDRV.md`
-- [[configobject/UNC/20.15.2/MSSPORTQUEUESTC]] · MSSPORTQUEUESTC（端口队列统计信息） — `MSSPORTQUEUESTC.md`
-- [[configobject/UNC/20.15.2/MSSPROCINFO]] · MSSPROCINFO（FMM的进程信息） — `MSSPROCINFO.md`
-- [[configobject/UNC/20.15.2/MSSQUEDETINFO]] · MSSQUEDETINFO（指定队列详细信息） — `MSSQUEDETINFO.md`
-- [[configobject/UNC/20.15.2/MSSQUEDETINFOM]] · MSSQUEDETINFOM（指定队列详细信息） — `MSSQUEDETINFOM.md`
-- [[configobject/UNC/20.15.2/MSSQUEINFO]] · MSSQUEINFO（队列总体信息） — `MSSQUEINFO.md`
-- [[configobject/UNC/20.15.2/MSSQUEINFOM]] · MSSQUEINFOM（队列总体信息） — `MSSQUEINFOM.md`
-- [[configobject/UNC/20.15.2/MSSSCHGRPFIX]] · MSSSCHGRPFIX（调度组详细统计信息） — `MSSSCHGRPFIX.md`
-- [[configobject/UNC/20.15.2/MSSSCHGRPHEAD]] · MSSSCHGRPHEAD（调度组统计概要信息） — `MSSSCHGRPHEAD.md`
-- [[configobject/UNC/20.15.2/MSSSCHGRPTAIL]] · MSSSCHGRPTAIL（调度组统计信息） — `MSSSCHGRPTAIL.md`
-- [[configobject/UNC/20.15.2/MSSSCHOEHEAD]] · MSSSCHOEHEAD（保序统计信息） — `MSSSCHOEHEAD.md`
-- [[configobject/UNC/20.15.2/MSSSCHOETAIL]] · MSSSCHOETAIL（保序详细统计信息） — `MSSSCHOETAIL.md`
-- [[configobject/UNC/20.15.2/MSSSCHSUMHEAD]] · MSSSCHSUMHEAD（调度部署概要信息） — `MSSSCHSUMHEAD.md`
-- [[configobject/UNC/20.15.2/MSSSCHSUMTAIL]] · MSSSCHSUMTAIL（调度部署详细信息） — `MSSSCHSUMTAIL.md`
-- [[configobject/UNC/20.15.2/MSSSCHSUMTAILM]] · MSSSCHSUMTAILM（调度部署详细信息） — `MSSSCHSUMTAILM.md`
-- [[configobject/UNC/20.15.2/MSSSCHTHRDLOAD]] · MSSSCHTHRDLOAD（调度线程负载信息） — `MSSSCHTHRDLOAD.md`
-- [[configobject/UNC/20.15.2/MSSSCHTHREADFIX]] · MSSSCHTHREADFIX（调度工作线程信息） — `MSSSCHTHREADFIX.md`
-- [[configobject/UNC/20.15.2/MSSSCHTHREADGROUP]] · MSSSCHTHREADGROUP（MSS线程级调度组的维测信息） — `MSSSCHTHREADGROUP.md`
-- [[configobject/UNC/20.15.2/MSSSCHTHREADHEAD]] · MSSSCHTHREADHEAD（调度线程概要信息） — `MSSSCHTHREADHEAD.md`
-- [[configobject/UNC/20.15.2/MSSSCHTHREADHEADM]] · MSSSCHTHREADHEADM（调度线程概要信息） — `MSSSCHTHREADHEADM.md`
-- [[configobject/UNC/20.15.2/MSSSCHTHREADQUEUE]] · MSSSCHTHREADQUEUE（MSS线程级调度队列的维测信息） — `MSSSCHTHREADQUEUE.md`
-- [[configobject/UNC/20.15.2/MSSSCHTHREADTAIL]] · MSSSCHTHREADTAIL（调度线程组信息） — `MSSSCHTHREADTAIL.md`
-- [[configobject/UNC/20.15.2/MSSSCHTRACE]] · MSSSCHTRACE（调度线程轨迹信息） — `MSSSCHTRACE.md`
-- [[configobject/UNC/20.15.2/MSSSCHWORK]] · MSSSCHWORK（调度工作类型信息） — `MSSSCHWORK.md`
-- [[configobject/UNC/20.15.2/MSSSCHWORKGROUP]] · MSSSCHWORKGROUP（调度组工作类型信息） — `MSSSCHWORKGROUP.md`
-- [[configobject/UNC/20.15.2/MSSSCHWORKM]] · MSSSCHWORKM（调度工作类型信息） — `MSSSCHWORKM.md`
-- [[configobject/UNC/20.15.2/MSSTBMDETINFO]] · MSSTBMDETINFO（通过表号查询表的详细信息） — `MSSTBMDETINFO.md`
-- [[configobject/UNC/20.15.2/MSSTBMFIB4]] · MSSTBMFIB4（通过关键字查询第四版互联网协议转发表的结果） — `MSSTBMFIB4.md`
-- [[configobject/UNC/20.15.2/MSSTBMFIB6]] · MSSTBMFIB6（通过关键字查询第六版因特网协议转发表的结果） — `MSSTBMFIB6.md`
-- [[configobject/UNC/20.15.2/MSSTBMHASH]] · MSSTBMHASH（通过关键字查询哈希表的结果） — `MSSTBMHASH.md`
-- [[configobject/UNC/20.15.2/MSSTBMINFO]] · MSSTBMINFO（表管理模块全局信息） — `MSSTBMINFO.md`
-- [[configobject/UNC/20.15.2/MSSTBMLINEAR]] · MSSTBMLINEAR（通过关键字查询线性表的结果） — `MSSTBMLINEAR.md`
-- [[configobject/UNC/20.15.2/MSSTIMERINFOHEAD]] · MSSTIMERINFOHEAD（定时器全局信息） — `MSSTIMERINFOHEAD.md`
-- [[configobject/UNC/20.15.2/MSSTIMERINFOTAIL]] · MSSTIMERINFOTAIL（定时器详细信息） — `MSSTIMERINFOTAIL.md`
-- [[configobject/UNC/20.15.2/MSSTIMERSTAT]] · MSSTIMERSTAT（定时器精度统计信息） — `MSSTIMERSTAT.md`
-- [[configobject/UNC/20.15.2/MSSWORKRUNTIME]] · MSSWORKRUNTIME（Work运行时间信息） — `MSSWORKRUNTIME.md`
-- [[configobject/UNC/20.15.2/MSSWPREC]] · MSSWPREC（微服务主实例切换历史记录） — `MSSWPREC.md`
-- [[configobject/UNC/20.15.2/MTSMODEL]] · MTSMODEL（消息跟踪模型） — `MTSMODEL.md`
-- [[configobject/UNC/20.15.2/MULDNNPDUSES]] · MULDNNPDUSES（专用DNN会话信息） — `MULDNNPDUSES.md`
-- [[configobject/UNC/20.15.2/MULDNNSESSNUM]] · MULDNNSESSNUM（专用DNN会话数） — `MULDNNSESSNUM.md`
-- [[configobject/UNC/20.15.2/MVNOUSR]] · MVNOUSR（MVNO用户信息） — `MVNOUSR.md`
-- [[configobject/UNC/20.15.2/N2LINKINFO]] · N2LINKINFO（N2链路信息） — `N2LINKINFO.md`
-- [[configobject/UNC/20.15.2/NBFCSTAT]] · NBFCSTAT（NB流控状态统计） — `NBFCSTAT.md`
-- [[configobject/UNC/20.15.2/NCCCAPABILITY]] · NCCCAPABILITY（设备所支持的NETCONFC协议能力集） — `NCCCAPABILITY.md`
-- [[configobject/UNC/20.15.2/NCCDIAGLOG]] · NCCDIAGLOG（NETCONFC与其他组件的消息交互信息） — `NCCDIAGLOG.md`
-- [[configobject/UNC/20.15.2/NCCPEERLIST]] · NCCPEERLIST（NETCONFC管理的远端设备的信息） — `NCCPEERLIST.md`
-- [[configobject/UNC/20.15.2/NCCSESSION]] · NCCSESSION（NETCONFC会话信息） — `NCCSESSION.md`
-- [[configobject/UNC/20.15.2/NCCSYNCINFO]] · NCCSYNCINFO（NETCONFC的配置同步信息） — `NCCSYNCINFO.md`
-- [[configobject/UNC/20.15.2/NCGISFINCDR]] · NCGISFINCDR（NCG是否有最终话单文件） — `NCGISFINCDR.md`
-- [[configobject/UNC/20.15.2/NCSCAPABILITY]] · NCSCAPABILITY（设备所支持的NETCONF协议能力集） — `NCSCAPABILITY.md`
-- [[configobject/UNC/20.15.2/NCSDATAMODEL]] · NCSDATAMODEL（设备当前已加载的NETCONF数据模型） — `NCSDATAMODEL.md`
-- [[configobject/UNC/20.15.2/NCSDIAGLOG]] · NCSDIAGLOG（会话中NETCONF和其它组件的消息交互信息） — `NCSDIAGLOG.md`
-- [[configobject/UNC/20.15.2/NCSFAILOPER]] · NCSFAILOPER（操作失败信息） — `NCSFAILOPER.md`
-- [[configobject/UNC/20.15.2/NCSNTFFAIL]] · NCSNTFFAIL（通知消息发送失败信息） — `NCSNTFFAIL.md`
-- [[configobject/UNC/20.15.2/NCSNTFSTC]] · NCSNTFSTC（NETCONF通知会话的统计信息） — `NCSNTFSTC.md`
-- [[configobject/UNC/20.15.2/NCSNTFSUB]] · NCSNTFSUB（所有订阅通知事件信息） — `NCSNTFSUB.md`
-- [[configobject/UNC/20.15.2/NCSPROXYFAILOPER]] · NCSPROXYFAILOPER（NETCONF代理操作失败信息） — `NCSPROXYFAILOPER.md`
-- [[configobject/UNC/20.15.2/NCSPROXYFWD]] · NCSPROXYFWD（NETCONF代理转发策略） — `NCSPROXYFWD.md`
-- [[configobject/UNC/20.15.2/NCSPROXYSESSION]] · NCSPROXYSESSION（所有NETCONF代理VNFC会话信息） — `NCSPROXYSESSION.md`
-- [[configobject/UNC/20.15.2/NCSRPCERROR]] · NCSRPCERROR（最近的RPC和错误RPC响应报文信息） — `NCSRPCERROR.md`
-- [[configobject/UNC/20.15.2/NCSSCHEMAMAP]] · NCSSCHEMAMAP（应用模型间模型映射关联关系） — `NCSSCHEMAMAP.md`
-- [[configobject/UNC/20.15.2/NCSSESSION]] · NCSSESSION（NETCONF会话信息） — `NCSSESSION.md`
-- [[configobject/UNC/20.15.2/NCSSESSIONSTC]] · NCSSESSIONSTC（NETCONF会话的统计信息） — `NCSSESSIONSTC.md`
-- [[configobject/UNC/20.15.2/NCSSYNCFULL]] · NCSSYNCFULL（全量同步操作的诊断信息） — `NCSSYNCFULL.md`
-- [[configobject/UNC/20.15.2/NCSSYNCFULLSTC]] · NCSSYNCFULLSTC（全量同步操作期间的统计信息） — `NCSSYNCFULLSTC.md`
-- [[configobject/UNC/20.15.2/NDBLACKBOX]] · NDBLACKBOX（ND黑匣子信息） — `NDBLACKBOX.md`
-- [[configobject/UNC/20.15.2/NDHASTATE]] · NDHASTATE（ND与其他组件之间交互状态信息） — `NDHASTATE.md`
-- [[configobject/UNC/20.15.2/NDIFNET]] · NDIFNET（使能IPv6接口ND控制块内容） — `NDIFNET.md`
-- [[configobject/UNC/20.15.2/NDINFO]] · NDINFO（ND控制块信息） — `NDINFO.md`
-- [[configobject/UNC/20.15.2/NDNBVERBOSE]] · NDNBVERBOSE（邻居表项详细信息） — `NDNBVERBOSE.md`
-- [[configobject/UNC/20.15.2/NEGOSTATE]] · NEGOSTATE（所有进程的协商状态信息） — `NEGOSTATE.md`
-- [[configobject/UNC/20.15.2/NETINSTRU]] · NETINSTRU（网络实例对应RU信息） — `NETINSTRU.md`
-- [[configobject/UNC/20.15.2/NEXTHOP]] · NEXTHOP（负载均衡下一跳） — `NEXTHOP.md`
-- [[configobject/UNC/20.15.2/NFREGNRFSTATUS]] · NFREGNRFSTATUS（NF向NRF注册状态） — `NFREGNRFSTATUS.md`
-- [[configobject/UNC/20.15.2/NFSUBCONDITIONS]] · NFSUBCONDITIONS（NF订阅信息） — `NFSUBCONDITIONS.md`
-- [[configobject/UNC/20.15.2/NFVIUPDRECVHIST]] · NFVIUPDRECVHIST（分批升级历史） — `NFVIUPDRECVHIST.md`
-- [[configobject/UNC/20.15.2/NGALMDETAIL]] · NGALMDETAIL（5G告警详细信息） — `NGALMDETAIL.md`
-- [[configobject/UNC/20.15.2/NGAPLINK]] · NGAPLINK（NGAP链路信息） — `NGAPLINK.md`
-- [[configobject/UNC/20.15.2/NGCOMMONDBG]] · NGCOMMONDBG（调试信息） — `NGCOMMONDBG.md`
-- [[configobject/UNC/20.15.2/NGIMSI]] · NGIMSI（用户IMSI信息） — `NGIMSI.md`
-- [[configobject/UNC/20.15.2/NGLANINFO]] · NGLANINFO（5G LAN组会话信息） — `NGLANINFO.md`
-- [[configobject/UNC/20.15.2/NGLANUPINFO]] · NGLANUPINFO（5G LAN UE会话分布情况） — `NGLANUPINFO.md`
-- [[configobject/UNC/20.15.2/NGLCSCTX]] · NGLCSCTX（5G定位上下文信息） — `NGLCSCTX.md`
-- [[configobject/UNC/20.15.2/NGM2MUSERNUM]] · NGM2MUSERNUM（5G M2M用户资源数） — `NGM2MUSERNUM.md`
-- [[configobject/UNC/20.15.2/NGMMCTX]] · NGMMCTX（5G移动性管理上下文） — `NGMMCTX.md`
-- [[configobject/UNC/20.15.2/NGMMCTXEXT]] · NGMMCTXEXT（5G移动性管理上下文扩展信息） — `NGMMCTXEXT.md`
-- [[configobject/UNC/20.15.2/NGPAGING]] · NGPAGING（5G寻呼表） — `NGPAGING.md`
-- [[configobject/UNC/20.15.2/NGRDUSERNUM]] · NGRDUSERNUM（5G容灾用户数） — `NGRDUSERNUM.md`
-- [[configobject/UNC/20.15.2/NGROAMMMCTX]] · NGROAMMMCTX（5G漫游用户移动性管理上下文） — `NGROAMMMCTX.md`
-- [[configobject/UNC/20.15.2/NGTAIDETECTINFO]] · NGTAIDETECTINFO（NG TAI对象寻呼流控状态信息） — `NGTAIDETECTINFO.md`
-- [[configobject/UNC/20.15.2/NGUSERNUM]] · NGUSERNUM（5G用户数） — `NGUSERNUM.md`
-- [[configobject/UNC/20.15.2/NGUSERRESOURCE]] · NGUSERRESOURCE（5G用户资源） — `NGUSERRESOURCE.md`
-- [[configobject/UNC/20.15.2/NODECPUSTAT]] · NODECPUSTAT（Node的CPU信息） — `NODECPUSTAT.md`
-- [[configobject/UNC/20.15.2/NODEMEMSTAT]] · NODEMEMSTAT（Node的内存信息） — `NODEMEMSTAT.md`
-- [[configobject/UNC/20.15.2/NODERES]] · NODERES（节点资源信息） — `NODERES.md`
-- [[configobject/UNC/20.15.2/NOSBASEIFSTAT]] · NOSBASEIFSTAT（NOS Base平面网络的报文统计信息） — `NOSBASEIFSTAT.md`
-- [[configobject/UNC/20.15.2/NOSBASEIFSTATUS]] · NOSBASEIFSTATUS（NOS Base平面网络的网口状态信息） — `NOSBASEIFSTATUS.md`
-- [[configobject/UNC/20.15.2/NOSBASENEIGH]] · NOSBASENEIGH（NOS Base平面网络的邻居信息） — `NOSBASENEIGH.md`
-- [[configobject/UNC/20.15.2/NOSBASEROUTE]] · NOSBASEROUTE（NOS Base平面网络的路由信息） — `NOSBASEROUTE.md`
-- [[configobject/UNC/20.15.2/NOSBASESOCKET]] · NOSBASESOCKET（NOS Base平面网络的Socket信息） — `NOSBASESOCKET.md`
-- [[configobject/UNC/20.15.2/NRFDISCERRSTAT]] · NRFDISCERRSTAT（NRF记录的错误统计信息） — `NRFDISCERRSTAT.md`
-- [[configobject/UNC/20.15.2/NRFIMSI]] · NRFIMSI（IMSI号段匹配信息） — `NRFIMSI.md`
-- [[configobject/UNC/20.15.2/NRFIMSIRTSTC]] · NRFIMSIRTSTC（IMSI路由统计信息） — `NRFIMSIRTSTC.md`
-- [[configobject/UNC/20.15.2/NRFIMSISTC]] · NRFIMSISTC（IMSI号段统计信息） — `NRFIMSISTC.md`
-- [[configobject/UNC/20.15.2/NRFLINKINFO]] · NRFLINKINFO（NRF管理的链路信息） — `NRFLINKINFO.md`
-- [[configobject/UNC/20.15.2/NRFMSISDN]] · NRFMSISDN（MSISDN号段匹配信息） — `NRFMSISDN.md`
-- [[configobject/UNC/20.15.2/NRFMSISDNRTSTC]] · NRFMSISDNRTSTC（MSISDN路由统计信息） — `NRFMSISDNRTSTC.md`
-- [[configobject/UNC/20.15.2/NRFMSISDNSTC]] · NRFMSISDNSTC（MSISDN号段统计信息） — `NRFMSISDNSTC.md`
-- [[configobject/UNC/20.15.2/NRFSERVICENAME]] · NRFSERVICENAME（查看NRF功能实体服务列表） — `NRFSERVICENAME.md`
-- [[configobject/UNC/20.15.2/NRFSTARTSTAS]] · NRFSTARTSTAS（NRF开工状态） — `NRFSTARTSTAS.md`
-- [[configobject/UNC/20.15.2/NRFSUBSTCINFO]] · NRFSUBSTCINFO（NF订阅统计信息） — `NRFSUBSTCINFO.md`
-- [[configobject/UNC/20.15.2/NRFTPSPEAK]] · NRFTPSPEAK（NRF每秒事务数峰值） — `NRFTPSPEAK.md`
-- [[configobject/UNC/20.15.2/NSSFNSAVLDETAIL]] · NSSFNSAVLDETAIL（特定AMF下所有动态上报的切片可用性信息） — `NSSFNSAVLDETAIL.md`
-- [[configobject/UNC/20.15.2/NSSFNSSUBDETAIL]] · NSSFNSSUBDETAIL（切片可用性订阅详细信息） — `NSSFNSSUBDETAIL.md`
-- [[configobject/UNC/20.15.2/NSSFNSSUBINFO]] · NSSFNSSUBINFO（订阅任务信息） — `NSSFNSSUBINFO.md`
-- [[configobject/UNC/20.15.2/NSSFSTARTSTAS]] · NSSFSTARTSTAS（NSSF开工状态） — `NSSFSTARTSTAS.md`
-- [[configobject/UNC/20.15.2/NSSFTPSPEAK]] · NSSFTPSPEAK（NSSF每秒事务数峰值） — `NSSFTPSPEAK.md`
-- [[configobject/UNC/20.15.2/OCSSTATUS]] · OCSSTATUS（OCS状态） — `OCSSTATUS.md`
-- [[configobject/UNC/20.15.2/OCSUSERNUM]] · OCSUSERNUM（静态OCS上用户数） — `OCSUSERNUM.md`
-- [[configobject/UNC/20.15.2/OMDBGDATA]] · OMDBGDATA（OM模块的调试信息） — `OMDBGDATA.md`
-- [[configobject/UNC/20.15.2/ONECLICKDEPLOYHIST]] · ONECLICKDEPLOYHIST（一键式部署操作历史） — `ONECLICKDEPLOYHIST.md`
-- [[configobject/UNC/20.15.2/OPSASSISTHIST]] · OPSASSISTHIST（系统助手的历史信息） — `OPSASSISTHIST.md`
-- [[configobject/UNC/20.15.2/OPSASSISTSTATE]] · OPSASSISTSTATE（系统助手的当前信息） — `OPSASSISTSTATE.md`
-- [[configobject/UNC/20.15.2/OPSASSISTVERB]] · OPSASSISTVERB（系统助手的详细信息） — `OPSASSISTVERB.md`
-- [[configobject/UNC/20.15.2/OPSBLACKBOX]] · OPSBLACKBOX（开放可编程系统的维护信息） — `OPSBLACKBOX.md`
-- [[configobject/UNC/20.15.2/OPSPROCESSSTATE]] · OPSPROCESSSTATE（通过OPS运行的应用程序的信息） — `OPSPROCESSSTATE.md`
-- [[configobject/UNC/20.15.2/OPTLOG]] · OPTLOG（操作日志） — `OPTLOG.md`
-- [[configobject/UNC/20.15.2/OSPATCH]] · OSPATCH（OS补丁版本号） — `OSPATCH.md`
-- [[configobject/UNC/20.15.2/OSPFBFD]] · OSPFBFD（OSPF BFD状态） — `OSPFBFD.md`
-- [[configobject/UNC/20.15.2/OSPFCUMULATIVE]] · OSPFCUMULATIVE（OSPF统计信息） — `OSPFCUMULATIVE.md`
-- [[configobject/UNC/20.15.2/OSPFERRORDATA]] · OSPFERRORDATA（OSPF进程的错误信息） — `OSPFERRORDATA.md`
-- [[configobject/UNC/20.15.2/OSPFERRORLSA]] · OSPFERRORLSA（OSPF错误LSA的信息） — `OSPFERRORLSA.md`
-- [[configobject/UNC/20.15.2/OSPFERRORPACKET]] · OSPFERRORPACKET（OSPF错误报文的信息） — `OSPFERRORPACKET.md`
-- [[configobject/UNC/20.15.2/OSPFFRRTOPOLOGY]] · OSPFFRRTOPOLOGY（OSPF的FRR拓扑信息） — `OSPFFRRTOPOLOGY.md`
-- [[configobject/UNC/20.15.2/OSPFHOSTTABLE]] · OSPFHOSTTABLE（OSPF动态主机名的信息） — `OSPFHOSTTABLE.md`
-- [[configobject/UNC/20.15.2/OSPFLASTDOWNNBR]] · OSPFLASTDOWNNBR（OSPF上次Down的邻居） — `OSPFLASTDOWNNBR.md`
-- [[configobject/UNC/20.15.2/OSPFLDPSYNCSTATE]] · OSPFLDPSYNCSTATE（OSPF LDP联动状态信息） — `OSPFLDPSYNCSTATE.md`
-- [[configobject/UNC/20.15.2/OSPFLSDB]] · OSPFLSDB（OSPF链接状态数据库） — `OSPFLSDB.md`
-- [[configobject/UNC/20.15.2/OSPFLSDBSTATEINFO]] · OSPFLSDBSTATEINFO（OSPF LSDB的状态信息） — `OSPFLSDBSTATEINFO.md`
-- [[configobject/UNC/20.15.2/OSPFLSDBSTATEVERBOSE]] · OSPFLSDBSTATEVERBOSE（OSPF LSDB详细信息） — `OSPFLSDBSTATEVERBOSE.md`
-- [[configobject/UNC/20.15.2/OSPFMAXAGELSA]] · OSPFMAXAGELSA（OSPF MaxAge LSA信息） — `OSPFMAXAGELSA.md`
-- [[configobject/UNC/20.15.2/OSPFORIGINATELSA]] · OSPFORIGINATELSA（Router LSA生成流程的信息） — `OSPFORIGINATELSA.md`
-- [[configobject/UNC/20.15.2/OSPFROUTESOURCE]] · OSPFROUTESOURCE（OSPF路由源信息） — `OSPFROUTESOURCE.md`
-- [[configobject/UNC/20.15.2/OSPFROUTING]] · OSPFROUTING（OSPF路由信息） — `OSPFROUTING.md`
-- [[configobject/UNC/20.15.2/OSPFSOCKETINFO]] · OSPFSOCKETINFO（OSPF与Socket的交互信息） — `OSPFSOCKETINFO.md`
-- [[configobject/UNC/20.15.2/OSPFTOPOLOGY]] · OSPFTOPOLOGY（OSPF拓扑信息） — `OSPFTOPOLOGY.md`
-- [[configobject/UNC/20.15.2/OSPFTOPOSTC]] · OSPFTOPOSTC（OSPF拓扑的统计信息） — `OSPFTOPOSTC.md`
-- [[configobject/UNC/20.15.2/OSPFUPDATELSA]] · OSPFUPDATELSA（OSPF接收的LSA的更新信息） — `OSPFUPDATELSA.md`
-- [[configobject/UNC/20.15.2/OSPFV3BFD]] · OSPFV3BFD（OSPFv3 BFD状态） — `OSPFV3BFD.md`
-- [[configobject/UNC/20.15.2/OSPFV3CUMULATIVE]] · OSPFV3CUMULATIVE（OSPFv3统计信息） — `OSPFV3CUMULATIVE.md`
-- [[configobject/UNC/20.15.2/OSPFV3FRRTOPOLOGY]] · OSPFV3FRRTOPOLOGY（OSPFv3的FRR拓扑信息） — `OSPFV3FRRTOPOLOGY.md`
-- [[configobject/UNC/20.15.2/OSPFV3LASTDOWNNBR]] · OSPFV3LASTDOWNNBR（OSPFv3上次Down的邻居） — `OSPFV3LASTDOWNNBR.md`
-- [[configobject/UNC/20.15.2/OSPFV3LSDB]] · OSPFV3LSDB（OSPFv3链接状态数据库） — `OSPFV3LSDB.md`
-- [[configobject/UNC/20.15.2/OSPFV3LSDBSTATEINFO]] · OSPFV3LSDBSTATEINFO（OSPFv3 LSDB的状态信息） — `OSPFV3LSDBSTATEINFO.md`
-- [[configobject/UNC/20.15.2/OSPFV3PEER]] · OSPFV3PEER（OSPFv3邻居信息） — `OSPFV3PEER.md`
-- [[configobject/UNC/20.15.2/OSPFV3ROUTESOURCE]] · OSPFV3ROUTESOURCE（OSPFv3路由源信息） — `OSPFV3ROUTESOURCE.md`
-- [[configobject/UNC/20.15.2/OSPFV3ROUTING]] · OSPFV3ROUTING（OSPFv3路由信息） — `OSPFV3ROUTING.md`
-- [[configobject/UNC/20.15.2/OSPROCMEMSTATIS]] · OSPROCMEMSTATIS（系统进程内存信息） — `OSPROCMEMSTATIS.md`
-- [[configobject/UNC/20.15.2/OSSYSINFO]] · OSSYSINFO（OS系统信息） — `OSSYSINFO.md`
-- [[configobject/UNC/20.15.2/PAEALARMINFO]] · PAEALARMINFO（PAE告警信息） — `PAEALARMINFO.md`
-- [[configobject/UNC/20.15.2/PAECHANNELSYNC]] · PAECHANNELSYNC（同步到业务进程的通道信息） — `PAECHANNELSYNC.md`
-- [[configobject/UNC/20.15.2/PAEDYETRACEINFO]] · PAEDYETRACEINFO（PAE染色跟踪信息） — `PAEDYETRACEINFO.md`
-- [[configobject/UNC/20.15.2/PAEEXAMSTATE]] · PAEEXAMSTATE（PAE故障信息） — `PAEEXAMSTATE.md`
-- [[configobject/UNC/20.15.2/PAEFABDETBRF]] · PAEFABDETBRF（Fabric链路探测简要结果） — `PAEFABDETBRF.md`
-- [[configobject/UNC/20.15.2/PAEFABDETDTL]] · PAEFABDETDTL（Fabric链路探测任务的详细结果） — `PAEFABDETDTL.md`
-- [[configobject/UNC/20.15.2/PAEFABRICLINK]] · PAEFABRICLINK（PAE链路信息） — `PAEFABRICLINK.md`
-- [[configobject/UNC/20.15.2/PAEFWDINSTANCE]] · PAEFWDINSTANCE（PAE转发实例信息） — `PAEFWDINSTANCE.md`
-- [[configobject/UNC/20.15.2/PAELOOPIPTB]] · PAELOOPIPTB（Loop口IP和TB映射信息） — `PAELOOPIPTB.md`
-- [[configobject/UNC/20.15.2/PAELOOPROUTE]] · PAELOOPROUTE（Loop口路由信息） — `PAELOOPROUTE.md`
-- [[configobject/UNC/20.15.2/PAENETWORKCFG]] · PAENETWORKCFG（PAE网络配置信息） — `PAENETWORKCFG.md`
-- [[configobject/UNC/20.15.2/PAENODE]] · PAENODE（PAE节点信息） — `PAENODE.md`
-- [[configobject/UNC/20.15.2/PAEOVERLOADSTAT]] · PAEOVERLOADSTAT（PAE过载状态） — `PAEOVERLOADSTAT.md`
-- [[configobject/UNC/20.15.2/PAEPAYLOADINFO]] · PAEPAYLOADINFO（PAE负载信息） — `PAEPAYLOADINFO.md`
-- [[configobject/UNC/20.15.2/PAEPORTBYTB]] · PAEPORTBYTB（PAE Fabric端口的TB统计信息） — `PAEPORTBYTB.md`
-- [[configobject/UNC/20.15.2/PAEPORTGROUPINFO]] · PAEPORTGROUPINFO（PAE端口组信息） — `PAEPORTGROUPINFO.md`
-- [[configobject/UNC/20.15.2/PAEPORTINFO]] · PAEPORTINFO（PAE端口基本信息） — `PAEPORTINFO.md`
-- [[configobject/UNC/20.15.2/PAEPORTQUEUE]] · PAEPORTQUEUE（PAE多队列信息） — `PAEPORTQUEUE.md`
-- [[configobject/UNC/20.15.2/PAEPRIMAPQOS]] · PAEPRIMAPQOS（报文优先级与QoS映射信息） — `PAEPRIMAPQOS.md`
-- [[configobject/UNC/20.15.2/PAEQUEUEINFO]] · PAEQUEUEINFO（PAE队列信息） — `PAEQUEUEINFO.md`
-- [[configobject/UNC/20.15.2/PAERULEEXTERN]] · PAERULEEXTERN（PAE上外联口规则信息） — `PAERULEEXTERN.md`
-- [[configobject/UNC/20.15.2/PAERULELOOP3T]] · PAERULELOOP3T（PAE上Loop口三元组规则信息） — `PAERULELOOP3T.md`
-- [[configobject/UNC/20.15.2/PAESCHEDULE]] · PAESCHEDULE（PAE调度统计信息） — `PAESCHEDULE.md`
-- [[configobject/UNC/20.15.2/PAEUDSSTATUS]] · PAEUDSSTATUS（UDS链路状态） — `PAEUDSSTATUS.md`
-- [[configobject/UNC/20.15.2/PARTITIONINFO]] · PARTITIONINFO（RU的磁盘分区信息） — `PARTITIONINFO.md`
-- [[configobject/UNC/20.15.2/PATCHDETAILINFO]] · PATCHDETAILINFO（补丁信息） — `PATCHDETAILINFO.md`
-- [[configobject/UNC/20.15.2/PATCHINFO]] · PATCHINFO（系统当前补丁信息） — `PATCHINFO.md`
-- [[configobject/UNC/20.15.2/PATHMTU]] · PATHMTU（路径MTU） — `PATHMTU.md`
-- [[configobject/UNC/20.15.2/PCCSESSINFO]] · PCCSESSINFO（PCC会话信息） — `PCCSESSINFO.md`
-- [[configobject/UNC/20.15.2/PCRFGRPSTATUS]] · PCRFGRPSTATUS（PCRF组状态） — `PCRFGRPSTATUS.md`
-- [[configobject/UNC/20.15.2/PCRFINFO]] · PCRFINFO（PCRF具体信息） — `PCRFINFO.md`
-- [[configobject/UNC/20.15.2/PCRFSTATUS]] · PCRFSTATUS（PCRF状态） — `PCRFSTATUS.md`
-- [[configobject/UNC/20.15.2/PCRFUSERNUM]] · PCRFUSERNUM（静态PCRF上用户数） — `PCRFUSERNUM.md`
-- [[configobject/UNC/20.15.2/PDUSESSION]] · PDUSESSION（PDU会话） — `PDUSESSION.md`
-- [[configobject/UNC/20.15.2/PFCPASSOC]] · PFCPASSOC（PFCP偶联相关数据） — `PFCPASSOC.md`
-- [[configobject/UNC/20.15.2/PFCPLINKINFO]] · PFCPLINKINFO（PFCP链路当前及历史状态） — `PFCPLINKINFO.md`
-- [[configobject/UNC/20.15.2/PFCPPATHINFO]] · PFCPPATHINFO（PFCP链路相关数据） — `PFCPPATHINFO.md`
-- [[configobject/UNC/20.15.2/PFCPSESSIONINFO]] · PFCPSESSIONINFO（PFCP会话信息） — `PFCPSESSIONINFO.md`
-- [[configobject/UNC/20.15.2/PFCPSESSIONNUM]] · PFCPSESSIONNUM（PFCP会话上下文数量） — `PFCPSESSIONNUM.md`
-- [[configobject/UNC/20.15.2/PFCPSESSMIGSTS]] · PFCPSESSMIGSTS（PFCP会话迁移任务状态） — `PFCPSESSMIGSTS.md`
-- [[configobject/UNC/20.15.2/PFRESSTAT]] · PFRESSTAT（资源状态表） — `PFRESSTAT.md`
-- [[configobject/UNC/20.15.2/PGWBACKOFFSTAT]] · PGWBACKOFFSTAT（P-GW Back-Off流控状态） — `PGWBACKOFFSTAT.md`
-- [[configobject/UNC/20.15.2/PIMCBSR]] · PIMCBSR（CBSR信息） — `PIMCBSR.md`
-- [[configobject/UNC/20.15.2/PIMCLAIMUP]] · PIMCLAIMUP（PIM使用的路由信息） — `PIMCLAIMUP.md`
-- [[configobject/UNC/20.15.2/PIMCTLMSGCNTIF]] · PIMCTLMSGCNTIF（PIM接口报文统计计数） — `PIMCTLMSGCNTIF.md`
-- [[configobject/UNC/20.15.2/PIMCTLMSGCNTVRF]] · PIMCTLMSGCNTVRF（PIM实例报文统计计数） — `PIMCTLMSGCNTVRF.md`
-- [[configobject/UNC/20.15.2/PIMEBSR]] · PIMEBSR（EBSR信息） — `PIMEBSR.md`
-- [[configobject/UNC/20.15.2/PIMINVPKT]] · PIMINVPKT（PIM无效报文） — `PIMINVPKT.md`
-- [[configobject/UNC/20.15.2/PIMINVPKTCNTIF]] · PIMINVPKTCNTIF（PIM接口无效报文统计） — `PIMINVPKTCNTIF.md`
-- [[configobject/UNC/20.15.2/PIMINVPKTCNTVRF]] · PIMINVPKTCNTVRF（PIM实例无效报文统计） — `PIMINVPKTCNTVRF.md`
-- [[configobject/UNC/20.15.2/PIMNBR]] · PIMNBR（PIM邻居信息） — `PIMNBR.md`
-- [[configobject/UNC/20.15.2/PIMROUTEDW]] · PIMROUTEDW（PIM表项下游信息） — `PIMROUTEDW.md`
-- [[configobject/UNC/20.15.2/PIMROUTEUP]] · PIMROUTEUP（PIM表项上游信息） — `PIMROUTEUP.md`
-- [[configobject/UNC/20.15.2/PIMRP]] · PIMRP（RP信息） — `PIMRP.md`
-- [[configobject/UNC/20.15.2/PIMRPF]] · PIMRPF（PIM RPF路由信息） — `PIMRPF.md`
-- [[configobject/UNC/20.15.2/PIMRPGROUP]] · PIMRPGROUP（组播组对应的RP信息） — `PIMRPGROUP.md`
-- [[configobject/UNC/20.15.2/PKICERTLIST]] · PKICERTLIST（证书列表） — `PKICERTLIST.md`
-- [[configobject/UNC/20.15.2/PLGPKGDETAILINFO]] · PLGPKGDETAILINFO（扩展包详细信息） — `PLGPKGDETAILINFO.md`
-- [[configobject/UNC/20.15.2/PLGPKGSTATE]] · PLGPKGSTATE（扩展包运行状态） — `PLGPKGSTATE.md`
-- [[configobject/UNC/20.15.2/PLUGINFO]] · PLUGINFO（插件信息） — `PLUGINFO.md`
-- [[configobject/UNC/20.15.2/PLYTRACE]] · PLYTRACE（策略跟踪） — `PLYTRACE.md`
-- [[configobject/UNC/20.15.2/PNFPRICAP]] · PNFPRICAP（UPF优先级和权重） — `PNFPRICAP.md`
-- [[configobject/UNC/20.15.2/PODCPUSTAT]] · PODCPUSTAT（pod CPU信息） — `PODCPUSTAT.md`
-- [[configobject/UNC/20.15.2/PODHEALREC]] · PODHEALREC（POD重建历史记录） — `PODHEALREC.md`
-- [[configobject/UNC/20.15.2/PODINFO]] · PODINFO（已部署的Pod实例信息） — `PODINFO.md`
-- [[configobject/UNC/20.15.2/PODMEMSTAT]] · PODMEMSTAT（pod内存信息） — `PODMEMSTAT.md`
-- [[configobject/UNC/20.15.2/PODMIGRATEHIST]] · PODMIGRATEHIST（节点扩缩容任务进展） — `PODMIGRATEHIST.md`
-- [[configobject/UNC/20.15.2/POLICYMAP]] · POLICYMAP（策略映射表） — `POLICYMAP.md`
-- [[configobject/UNC/20.15.2/POLICYNUM]] · POLICYNUM（策略数量） — `POLICYNUM.md`
-- [[configobject/UNC/20.15.2/POOLUSAGE]] · POOLUSAGE（地址池使用信息） — `POOLUSAGE.md`
-- [[configobject/UNC/20.15.2/PORT]] · PORT（端口信息） — `PORT.md`
-- [[configobject/UNC/20.15.2/PREFIXFILTERINFO]] · PREFIXFILTERINFO（IP前缀列表信息） — `PREFIXFILTERINFO.md`
-- [[configobject/UNC/20.15.2/PROCCHANNALEVENT]] · PROCCHANNALEVENT（逻辑链路事件） — `PROCCHANNALEVENT.md`
-- [[configobject/UNC/20.15.2/PROCCHANNALSTC]] · PROCCHANNALSTC（逻辑链路统计信息） — `PROCCHANNALSTC.md`
-- [[configobject/UNC/20.15.2/PROCESSCG]] · PROCESSCG（CG进程信息） — `PROCESSCG.md`
-- [[configobject/UNC/20.15.2/PROCESSCSDB]] · PROCESSCSDB（CSDB进程信息） — `PROCESSCSDB.md`
-- [[configobject/UNC/20.15.2/PROCESSCSLB]] · PROCESSCSLB（CSLB进程信息） — `PROCESSCSLB.md`
-- [[configobject/UNC/20.15.2/PROCESSGB]] · PROCESSGB（GB进程信息） — `PROCESSGB.md`
-- [[configobject/UNC/20.15.2/PROCESSINFO]] · PROCESSINFO（进程信息） — `PROCESSINFO.md`
-- [[configobject/UNC/20.15.2/PROCESSLINK]] · PROCESSLINK（LINK进程信息） — `PROCESSLINK.md`
-- [[configobject/UNC/20.15.2/PROCESSMCR]] · PROCESSMCR（MCR进程信息） — `PROCESSMCR.md`
-- [[configobject/UNC/20.15.2/PROCESSUSN]] · PROCESSUSN（USN进程信息） — `PROCESSUSN.md`
-- [[configobject/UNC/20.15.2/PROCFILEHDLSTAT]] · PROCFILEHDLSTAT（进程文件句柄使用信息） — `PROCFILEHDLSTAT.md`
-- [[configobject/UNC/20.15.2/PROCINFO]] · PROCINFO（进程部署信息） — `PROCINFO.md`
-- [[configobject/UNC/20.15.2/PROCMEMPT]] · PROCMEMPT（进程内存分区信息） — `PROCMEMPT.md`
-- [[configobject/UNC/20.15.2/PROCMSGAREA]] · PROCMSGAREA（进程消息分区信息） — `PROCMSGAREA.md`
-- [[configobject/UNC/20.15.2/PROCMSGQUEUE]] · PROCMSGQUEUE（进程消息队列信息） — `PROCMSGQUEUE.md`
-- [[configobject/UNC/20.15.2/PROCRESSTAT]] · PROCRESSTAT（进程资源信息） — `PROCRESSTAT.md`
-- [[configobject/UNC/20.15.2/PROCTHREAD]] · PROCTHREAD（进程内线程信息） — `PROCTHREAD.md`
-- [[configobject/UNC/20.15.2/PROCTIMERSTAT]] · PROCTIMERSTAT（进程定时器计数信息） — `PROCTIMERSTAT.md`
-- [[configobject/UNC/20.15.2/PRTGRPINFO]] · PRTGRPINFO（保护组信息） — `PRTGRPINFO.md`
-- [[configobject/UNC/20.15.2/PTPMS]] · PTPMS（PTP模块MS上下文） — `PTPMS.md`
-- [[configobject/UNC/20.15.2/RADIUSAAA]] · RADIUSAAA（RADIUS AAA测量对象） — `RADIUSAAA.md`
-- [[configobject/UNC/20.15.2/RAWIPSTATUS]] · RAWIPSTATUS（RawIP状态） — `RAWIPSTATUS.md`
-- [[configobject/UNC/20.15.2/RAWLINKSTATUS]] · RAWLINKSTATUS（Raw-link状态） — `RAWLINKSTATUS.md`
-- [[configobject/UNC/20.15.2/RBKVER]] · RBKVER（升级可回退版本信息） — `RBKVER.md`
-- [[configobject/UNC/20.15.2/RDSAUTHLINKINFO]] · RDSAUTHLINKINFO（Radius鉴权路径信息） — `RDSAUTHLINKINFO.md`
-- [[configobject/UNC/20.15.2/RDSPFCPSESSINFO]] · RDSPFCPSESSINFO（RADIUS中转UPF会话信息） — `RDSPFCPSESSINFO.md`
-- [[configobject/UNC/20.15.2/RDSPFCPSESSNUM]] · RDSPFCPSESSNUM（RADIUS中转UPF的PFCP会话数目） — `RDSPFCPSESSNUM.md`
-- [[configobject/UNC/20.15.2/RDTTRCTASK]] · RDTTRCTASK（重定向跟踪任务） — `RDTTRCTASK.md`
-- [[configobject/UNC/20.15.2/REGNFACCESSREC]] · REGNFACCESSREC（NF访问记录） — `REGNFACCESSREC.md`
-- [[configobject/UNC/20.15.2/REGNFINFO]] · REGNFINFO（NF信息） — `REGNFINFO.md`
-- [[configobject/UNC/20.15.2/REGNFPROFILE]] · REGNFPROFILE（网元概述信息） — `REGNFPROFILE.md`
-- [[configobject/UNC/20.15.2/REGNFSTATEREC]] · REGNFSTATEREC（NF的状态变更记录） — `REGNFSTATEREC.md`
-- [[configobject/UNC/20.15.2/REPORTFAILUREINFO]] · REPORTFAILUREINFO（RU组件上报的故障信息） — `REPORTFAILUREINFO.md`
-- [[configobject/UNC/20.15.2/RES]] · RES（资源信息） — `RES.md`
-- [[configobject/UNC/20.15.2/RESASSERTINFO]] · RESASSERTINFO（断言信息） — `RESASSERTINFO.md`
-- [[configobject/UNC/20.15.2/RESCOMPONENT]] · RESCOMPONENT（组件信息） — `RESCOMPONENT.md`
-- [[configobject/UNC/20.15.2/RESDEADLOOPINFO]] · RESDEADLOOPINFO（死循环信息） — `RESDEADLOOPINFO.md`
-- [[configobject/UNC/20.15.2/RESEXCEPTIONINFO]] · RESEXCEPTIONINFO（异常信息） — `RESEXCEPTIONINFO.md`
-- [[configobject/UNC/20.15.2/RESHASTAT]] · RESHASTAT（系统HA状态） — `RESHASTAT.md`
-- [[configobject/UNC/20.15.2/RESINSTANCETYPE]] · RESINSTANCETYPE（资源实例类型） — `RESINSTANCETYPE.md`
-- [[configobject/UNC/20.15.2/RESMEMERRORINFO]] · RESMEMERRORINFO（内存错误信息） — `RESMEMERRORINFO.md`
-- [[configobject/UNC/20.15.2/RESNOSBASEIFSTAT]] · RESNOSBASEIFSTAT（NOS Base平面网络的报文统计信息） — `RESNOSBASEIFSTAT.md`
-- [[configobject/UNC/20.15.2/RESNOSBASEIFSTATUS]] · RESNOSBASEIFSTATUS（NOS Base平面网络的网口状态信息） — `RESNOSBASEIFSTATUS.md`
-- [[configobject/UNC/20.15.2/RESNOSBASENEIGH]] · RESNOSBASENEIGH（NOS Base平面网络的邻居信息） — `RESNOSBASENEIGH.md`
-- [[configobject/UNC/20.15.2/RESNOSBASENETWORK]] · RESNOSBASENETWORK（NOS Base平面网络信息） — `RESNOSBASENETWORK.md`
-- [[configobject/UNC/20.15.2/RESNOSBASEROUTE]] · RESNOSBASEROUTE（NOS Base平面网络的路由信息） — `RESNOSBASEROUTE.md`
-- [[configobject/UNC/20.15.2/RESNOSBASESOCKET]] · RESNOSBASESOCKET（NOS Base平面网络的Socket信息） — `RESNOSBASESOCKET.md`
-- [[configobject/UNC/20.15.2/RESPARTITIONINFO]] · RESPARTITIONINFO（资源的磁盘分区信息） — `RESPARTITIONINFO.md`
-- [[configobject/UNC/20.15.2/RESPROCESSINFO]] · RESPROCESSINFO（进程信息） — `RESPROCESSINFO.md`
-- [[configobject/UNC/20.15.2/RESPROCFILEHDLSTAT]] · RESPROCFILEHDLSTAT（进程文件句柄使用信息） — `RESPROCFILEHDLSTAT.md`
-- [[configobject/UNC/20.15.2/RESPROCMEMPT]] · RESPROCMEMPT（进程内存分区信息） — `RESPROCMEMPT.md`
-- [[configobject/UNC/20.15.2/RESPROCMSGAREA]] · RESPROCMSGAREA（进程消息分区信息） — `RESPROCMSGAREA.md`
-- [[configobject/UNC/20.15.2/RESPROCTIMERSTAT]] · RESPROCTIMERSTAT（进程定时器计数信息） — `RESPROCTIMERSTAT.md`
-- [[configobject/UNC/20.15.2/RESREPORTFAILUREINFO]] · RESREPORTFAILUREINFO（组件上报的故障信息） — `RESREPORTFAILUREINFO.md`
-- [[configobject/UNC/20.15.2/RESTOMMCTX]] · RESTOMMCTX（容灾用户MM上下文信息） — `RESTOMMCTX.md`
-- [[configobject/UNC/20.15.2/RESTORELAT]] · RESTORELAT（容灾关系信息） — `RESTORELAT.md`
-- [[configobject/UNC/20.15.2/RESTOSMCTX]] · RESTOSMCTX（容灾用户SM上下文信息） — `RESTOSMCTX.md`
-- [[configobject/UNC/20.15.2/RESTOUSRCTXNUM]] · RESTOUSRCTXNUM（容灾用户数） — `RESTOUSRCTXNUM.md`
-- [[configobject/UNC/20.15.2/RESTOUSRCTXNUMMCR]] · RESTOUSRCTXNUMMCR（容灾用户数） — `RESTOUSRCTXNUMMCR.md`
-- [[configobject/UNC/20.15.2/REVCERTFILE]] · REVCERTFILE（证书吊销列表） — `REVCERTFILE.md`
-- [[configobject/UNC/20.15.2/RISK]] · RISK（系统风险） — `RISK.md`
-- [[configobject/UNC/20.15.2/RMBLACKBOX]] · RMBLACKBOX（路由管理黑匣子信息） — `RMBLACKBOX.md`
-- [[configobject/UNC/20.15.2/RMCONSUMERIMPORT]] · RMCONSUMERIMPORT（路由管理消费者引入信息） — `RMCONSUMERIMPORT.md`
-- [[configobject/UNC/20.15.2/RMCONSUMERINFO]] · RMCONSUMERINFO（路由管理消费者信息） — `RMCONSUMERINFO.md`
-- [[configobject/UNC/20.15.2/RMCONSUMERSUBSCRIBE]] · RMCONSUMERSUBSCRIBE（路由管理消费者订阅信息） — `RMCONSUMERSUBSCRIBE.md`
-- [[configobject/UNC/20.15.2/RMIID]] · RMIID（路由管理IID信息） — `RMIID.md`
-- [[configobject/UNC/20.15.2/RMMSGDETAIL]] · RMMSGDETAIL（路由管理消息明细） — `RMMSGDETAIL.md`
-- [[configobject/UNC/20.15.2/RMMSGSTC]] · RMMSGSTC（路由管理消息统计信息） — `RMMSGSTC.md`
-- [[configobject/UNC/20.15.2/RMPREFIXINFO]] · RMPREFIXINFO（路由管理前缀信息） — `RMPREFIXINFO.md`
-- [[configobject/UNC/20.15.2/RMPRODUCERDETAIL]] · RMPRODUCERDETAIL（路由管理生产者详细信息） — `RMPRODUCERDETAIL.md`
-- [[configobject/UNC/20.15.2/RMSMOOTHSTC]] · RMSMOOTHSTC（路由管理平滑统计信息） — `RMSMOOTHSTC.md`
-- [[configobject/UNC/20.15.2/RMSTATISTICS]] · RMSTATISTICS（IP路由统计） — `RMSTATISTICS.md`
-- [[configobject/UNC/20.15.2/RMVERIFICATIONSTC]] · RMVERIFICATIONSTC（路由管理对账统计信息） — `RMVERIFICATIONSTC.md`
-- [[configobject/UNC/20.15.2/RNCUSRNUM]] · RNCUSRNUM（RNC下用户数） — `RNCUSRNUM.md`
-- [[configobject/UNC/20.15.2/ROUTE]] · ROUTE（IPv4路由表） — `ROUTE.md`
-- [[configobject/UNC/20.15.2/ROUTE6]] · ROUTE6（IPv6路由表） — `ROUTE6.md`
-- [[configobject/UNC/20.15.2/ROUTEPOLICYINFO]] · ROUTEPOLICYINFO（路由策略信息） — `ROUTEPOLICYINFO.md`
-- [[configobject/UNC/20.15.2/RSCBOXHEALREC]] · RSCBOXHEALREC（ResourceBox重建历史记录） — `RSCBOXHEALREC.md`
-- [[configobject/UNC/20.15.2/RTMPERFCNTGB]] · RTMPERFCNTGB（GB性能统计实时结果） — `RTMPERFCNTGB.md`
-- [[configobject/UNC/20.15.2/RTMPERFCNTLINK]] · RTMPERFCNTLINK（LINK性能统计实时结果） — `RTMPERFCNTLINK.md`
-- [[configobject/UNC/20.15.2/RTMPERFCNTUSN]] · RTMPERFCNTUSN（USN性能统计实时结果） — `RTMPERFCNTUSN.md`
-- [[configobject/UNC/20.15.2/RUCPUINFO]] · RUCPUINFO（RU CPU信息） — `RUCPUINFO.md`
-- [[configobject/UNC/20.15.2/RUCPUUSGTHRESH]] · RUCPUUSGTHRESH（RU CPU占用率、告警上报门限和告警恢复门限） — `RUCPUUSGTHRESH.md`
-- [[configobject/UNC/20.15.2/RUGROUPSWP]] · RUGROUPSWP（资源单元组主备倒换状态信息） — `RUGROUPSWP.md`
-- [[configobject/UNC/20.15.2/RVKLICINFO]] · RVKLICINFO（License失效信息） — `RVKLICINFO.md`
-- [[configobject/UNC/20.15.2/S1BALANCEINFO]] · S1BALANCEINFO（S1接口均衡操作信息） — `S1BALANCEINFO.md`
-- [[configobject/UNC/20.15.2/S1LOAD]] · S1LOAD（S1模式负载信息） — `S1LOAD.md`
-- [[configobject/UNC/20.15.2/S1PAGING]] · S1PAGING（S1接口寻呼数据） — `S1PAGING.md`
-- [[configobject/UNC/20.15.2/S1SMARTINFO]] · S1SMARTINFO（S1模式用户信令状态） — `S1SMARTINFO.md`
-- [[configobject/UNC/20.15.2/S1TAIDETECTDETAILS]] · S1TAIDETECTDETAILS（S1 TAI对象寻呼流控状态明细） — `S1TAIDETECTDETAILS.md`
-- [[configobject/UNC/20.15.2/S1TAIDETECTINFO]] · S1TAIDETECTINFO（S1 TAI对象寻呼流控状态信息） — `S1TAIDETECTINFO.md`
-- [[configobject/UNC/20.15.2/SBILINKSTATUS]] · SBILINKSTATUS（服务化接口链路状态） — `SBILINKSTATUS.md`
-- [[configobject/UNC/20.15.2/SBIPEERNF]] · SBIPEERNF（服务化接口对端NF信息） — `SBIPEERNF.md`
-- [[configobject/UNC/20.15.2/SCALEGROUP]] · SCALEGROUP（ScaleGroup信息） — `SCALEGROUP.md`
-- [[configobject/UNC/20.15.2/SCALINGWORKLOAD]] · SCALINGWORKLOAD（扩缩容负载查询） — `SCALINGWORKLOAD.md`
-- [[configobject/UNC/20.15.2/SCEFMONINFO]] · SCEFMONINFO（能力开放订阅任务信息） — `SCEFMONINFO.md`
-- [[configobject/UNC/20.15.2/SCTPASID]] · SCTPASID（SCTP偶联ID） — `SCTPASID.md`
-- [[configobject/UNC/20.15.2/SCTPBALANCEINFO]] · SCTPBALANCEINFO（SCTP均衡信息） — `SCTPBALANCEINFO.md`
-- [[configobject/UNC/20.15.2/SCTPRXBUFF]] · SCTPRXBUFF（SCTP接收缓冲区） — `SCTPRXBUFF.md`
-- [[configobject/UNC/20.15.2/SCTPTXBUFF]] · SCTPTXBUFF（SCTP发送缓冲区） — `SCTPTXBUFF.md`
-- [[configobject/UNC/20.15.2/SDAPLNK]] · SDAPLNK（SDUP链路） — `SDAPLNK.md`
-- [[configobject/UNC/20.15.2/SDAPRSTCNT]] · SDAPRSTCNT（SDAP实体重启计数） — `SDAPRSTCNT.md`
-- [[configobject/UNC/20.15.2/SDRDBG]] · SDRDBG（SDR调试信息） — `SDRDBG.md`
-- [[configobject/UNC/20.15.2/SDRKEYMATCH]] · SDRKEYMATCH（SDRC中的KeyMatch信息） — `SDRKEYMATCH.md`
-- [[configobject/UNC/20.15.2/SDRLBPLCY]] · SDRLBPLCY（SDRC中缓存的下一跳组信息） — `SDRLBPLCY.md`
-- [[configobject/UNC/20.15.2/SDRNEXTHOP]] · SDRNEXTHOP（SDRC中缓存的下一跳信息） — `SDRNEXTHOP.md`
-- [[configobject/UNC/20.15.2/SDRPLCYCHECK]] · SDRPLCYCHECK（策略核查任务进度） — `SDRPLCYCHECK.md`
-- [[configobject/UNC/20.15.2/SDRPLYSUBINFO]] · SDRPLYSUBINFO（所有策略订阅者信息） — `SDRPLYSUBINFO.md`
-- [[configobject/UNC/20.15.2/SDRPLYSUBSTATUS]] · SDRPLYSUBSTATUS（SDRC中保存的策略订阅关系） — `SDRPLYSUBSTATUS.md`
-- [[configobject/UNC/20.15.2/SDRPLYSYNCVER]] · SDRPLYSYNCVER（策略同步版本） — `SDRPLYSYNCVER.md`
-- [[configobject/UNC/20.15.2/SDRPOLICYINFO]] · SDRPOLICYINFO（SDRC中的策略版本信息） — `SDRPOLICYINFO.md`
-- [[configobject/UNC/20.15.2/SDRPOLICYKEYS]] · SDRPOLICYKEYS（SDRC中的策略Key信息） — `SDRPOLICYKEYS.md`
-- [[configobject/UNC/20.15.2/SDRPROCESS]] · SDRPROCESS（SDRC中缓存的进程信息） — `SDRPROCESS.md`
-- [[configobject/UNC/20.15.2/SDRROUTE]] · SDRROUTE（SDRC中的APPROUTERINFO信息） — `SDRROUTE.md`
-- [[configobject/UNC/20.15.2/SDRSAPPTYPE]] · SDRSAPPTYPE（SDRS中的APPTYPE信息） — `SDRSAPPTYPE.md`
-- [[configobject/UNC/20.15.2/SDRSERVICE]] · SDRSERVICE（SDRC中的Service信息） — `SDRSERVICE.md`
-- [[configobject/UNC/20.15.2/SDRSMASTERNODE]] · SDRSMASTERNODE（HAF向SDRS推送的主节点信息） — `SDRSMASTERNODE.md`
-- [[configobject/UNC/20.15.2/SDRSROUTE]] · SDRSROUTE（SDRS中的APPROUTEINFO信息） — `SDRSROUTE.md`
-- [[configobject/UNC/20.15.2/SDRSTOKEN]] · SDRSTOKEN（SDRS中的TOKEN信息） — `SDRSTOKEN.md`
-- [[configobject/UNC/20.15.2/SDRSVPN]] · SDRSVPN（SDRS中的VPN信息） — `SDRSVPN.md`
-- [[configobject/UNC/20.15.2/SDRSVPNIP]] · SDRSVPNIP（SDRS中的VPNIP信息） — `SDRSVPNIP.md`
-- [[configobject/UNC/20.15.2/SDRTOKEN]] · SDRTOKEN（SDRC中的TOKEN信息） — `SDRTOKEN.md`
-- [[configobject/UNC/20.15.2/SDRTOPIC]] · SDRTOPIC（SDRC中的TOPIC信息） — `SDRTOPIC.md`
-- [[configobject/UNC/20.15.2/SDRVPN]] · SDRVPN（SDRC中的VPN信息） — `SDRVPN.md`
-- [[configobject/UNC/20.15.2/SDRVPNCFG]] · SDRVPNCFG（SDR VPN配置信息） — `SDRVPNCFG.md`
-- [[configobject/UNC/20.15.2/SDRVPNIP]] · SDRVPNIP（SDRC中的VPNIP信息） — `SDRVPNIP.md`
-- [[configobject/UNC/20.15.2/SECACL6TAB]] · SECACL6TAB（安全ACL6表项） — `SECACL6TAB.md`
-- [[configobject/UNC/20.15.2/SECACLTAB]] · SECACLTAB（安全ACL表项） — `SECACLTAB.md`
-- [[configobject/UNC/20.15.2/SECCARINFO]] · SECCARINFO（当前安全CAR信息） — `SECCARINFO.md`
-- [[configobject/UNC/20.15.2/SECCARTAB]] · SECCARTAB（安全CAR表项） — `SECCARTAB.md`
-- [[configobject/UNC/20.15.2/SECLOG]] · SECLOG（安全日志） — `SECLOG.md`
-- [[configobject/UNC/20.15.2/SECPOLICYALLPKT]] · SECPOLICYALLPKT（上送报文总体速率） — `SECPOLICYALLPKT.md`
-- [[configobject/UNC/20.15.2/SECTIONUSAGE]] · SECTIONUSAGE（地址段使用信息） — `SECTIONUSAGE.md`
-- [[configobject/UNC/20.15.2/SECTOTALPKTSTAT]] · SECTOTALPKTSTAT（安全总的报文计数情况） — `SECTOTALPKTSTAT.md`
-- [[configobject/UNC/20.15.2/SECTOTALPKTTAB]] · SECTOTALPKTTAB（安全总报文表项） — `SECTOTALPKTTAB.md`
-- [[configobject/UNC/20.15.2/SEGRECORDINFO]] · SEGRECORDINFO（NRF已导入号段数据） — `SEGRECORDINFO.md`
-- [[configobject/UNC/20.15.2/SEGTBLINFO]] · SEGTBLINFO（号段表信息） — `SEGTBLINFO.md`
-- [[configobject/UNC/20.15.2/SENSECAPINFO]] · SENSECAPINFO（感知基站感知能力信息） — `SENSECAPINFO.md`
-- [[configobject/UNC/20.15.2/SERRESLOC]] · SERRESLOC（业务资源部署位置） — `SERRESLOC.md`
-- [[configobject/UNC/20.15.2/SERVICEINST]] · SERVICEINST（注册的服务实例信息） — `SERVICEINST.md`
-- [[configobject/UNC/20.15.2/SERVICENAME]] · SERVICENAME（注册的服务名称） — `SERVICENAME.md`
-- [[configobject/UNC/20.15.2/SERVICERUSTATE]] · SERVICERUSTATE（RU的信息） — `SERVICERUSTATE.md`
-- [[configobject/UNC/20.15.2/SESSIONIOINFO]] · SESSIONIOINFO（会话惯性运行信息） — `SESSIONIOINFO.md`
-- [[configobject/UNC/20.15.2/SESSIONQOSINFO]] · SESSIONQOSINFO（会话QoS信息） — `SESSIONQOSINFO.md`
-- [[configobject/UNC/20.15.2/SESSIONSUBDATA]] · SESSIONSUBDATA（会话签约信息） — `SESSIONSUBDATA.md`
-- [[configobject/UNC/20.15.2/SFEACLTABLE]] · SFEACLTABLE（SFE ACL表项） — `SFEACLTABLE.md`
-- [[configobject/UNC/20.15.2/SFEARP]] · SFEARP（转发ARP表项） — `SFEARP.md`
-- [[configobject/UNC/20.15.2/SFEARPREPLY]] · SFEARPREPLY（指定的ARP-REPLY表项） — `SFEARPREPLY.md`
-- [[configobject/UNC/20.15.2/SFEBFDERECV]] · SFEBFDERECV（BFD-ERECV表） — `SFEBFDERECV.md`
-- [[configobject/UNC/20.15.2/SFEBFDIRECV]] · SFEBFDIRECV（BFD-IRECV表） — `SFEBFDIRECV.md`
-- [[configobject/UNC/20.15.2/SFEBLKBOX]] · SFEBLKBOX（SFE黑匣子） — `SFEBLKBOX.md`
-- [[configobject/UNC/20.15.2/SFECERCIB]] · SFECERCIB（基于子接口的上行/下行业务属性表） — `SFECERCIB.md`
-- [[configobject/UNC/20.15.2/SFECERFIB4]] · SFECERFIB4（指定IPv4的FIB表） — `SFECERFIB4.md`
-- [[configobject/UNC/20.15.2/SFECERFIB6]] · SFECERFIB6（指定IPv6的FIB表） — `SFECERFIB6.md`
-- [[configobject/UNC/20.15.2/SFECERPORT]] · SFECERPORT（指定端口出/入方向的表项） — `SFECERPORT.md`
-- [[configobject/UNC/20.15.2/SFEDBGPKT]] · SFEDBGPKT（调测捕获报文） — `SFEDBGPKT.md`
-- [[configobject/UNC/20.15.2/SFEDBGPKTCNT]] · SFEDBGPKTCNT（SFE报文统计） — `SFEDBGPKTCNT.md`
-- [[configobject/UNC/20.15.2/SFEELB]] · SFEELB（ELB表项） — `SFEELB.md`
-- [[configobject/UNC/20.15.2/SFEERRORSTAT]] · SFEERRORSTAT（SFE错误统计信息） — `SFEERRORSTAT.md`
-- [[configobject/UNC/20.15.2/SFEEVENTSTAT]] · SFEEVENTSTAT（SFE事件统计信息） — `SFEEVENTSTAT.md`
-- [[configobject/UNC/20.15.2/SFEFIB]] · SFEFIB（FIB表项信息） — `SFEFIB.md`
-- [[configobject/UNC/20.15.2/SFEFIB6]] · SFEFIB6（IPv6的FIB表项信息） — `SFEFIB6.md`
-- [[configobject/UNC/20.15.2/SFEFIB6STC]] · SFEFIB6STC（IPv6指定的VPN路由表项统计） — `SFEFIB6STC.md`
-- [[configobject/UNC/20.15.2/SFEFIB6STCALL]] · SFEFIB6STCALL（IPv6所有的路由表项的统计） — `SFEFIB6STCALL.md`
-- [[configobject/UNC/20.15.2/SFEFIBSTAT]] · SFEFIBSTAT（FIB统计信息） — `SFEFIBSTAT.md`
-- [[configobject/UNC/20.15.2/SFEFIBSTATALL]] · SFEFIBSTATALL（FIB所有统计信息） — `SFEFIBSTATALL.md`
-- [[configobject/UNC/20.15.2/SFEHEALTH]] · SFEHEALTH（SFE健康状况） — `SFEHEALTH.md`
-- [[configobject/UNC/20.15.2/SFEIPSACLTBL]] · SFEIPSACLTBL（软转发SFE IPSEC-ACL表项信息） — `SFEIPSACLTBL.md`
-- [[configobject/UNC/20.15.2/SFELINEARTABLE]] · SFELINEARTABLE（指定的线性表记录） — `SFELINEARTABLE.md`
-- [[configobject/UNC/20.15.2/SFELOCALIP]] · SFELOCALIP（LOCAL-IP表项） — `SFELOCALIP.md`
-- [[configobject/UNC/20.15.2/SFEMFIB4]] · SFEMFIB4（MFIB4表项） — `SFEMFIB4.md`
-- [[configobject/UNC/20.15.2/SFETABLESTC]] · SFETABLESTC（SFE表项统计信息） — `SFETABLESTC.md`
-- [[configobject/UNC/20.15.2/SFETABLEVERBOSE]] · SFETABLEVERBOSE（按摘要和详情两种方式显示SFE表项信息） — `SFETABLEVERBOSE.md`
-- [[configobject/UNC/20.15.2/SFETABSTAT]] · SFETABSTAT（SFE表项简要信息） — `SFETABSTAT.md`
-- [[configobject/UNC/20.15.2/SFETNLPKTSTAT]] · SFETNLPKTSTAT（SFE隧道报文统计） — `SFETNLPKTSTAT.md`
-- [[configobject/UNC/20.15.2/SFETRACEIP]] · SFETRACEIP（SFE IP消息跟踪配置信息） — `SFETRACEIP.md`
-- [[configobject/UNC/20.15.2/SFETUNNEL]] · SFETUNNEL（Tunnel表项） — `SFETUNNEL.md`
-- [[configobject/UNC/20.15.2/SFE_QUEUE]] · SFE_QUEUE（指定VM上转发使用的所有或指定队列的详细信息） — `SFE_QUEUE.md`
-- [[configobject/UNC/20.15.2/SFE_TABLE]] · SFE_TABLE（指定资源单元上的SFE的表项信息） — `SFE_TABLE.md`
-- [[configobject/UNC/20.15.2/SLADBGDATA]] · SLADBGDATA（SLA调试数据） — `SLADBGDATA.md`
-- [[configobject/UNC/20.15.2/SLEMEMBER]] · SLEMEMBER（仲裁成员列表信息） — `SLEMEMBER.md`
-- [[configobject/UNC/20.15.2/SLEMEMBERDETAIL]] · SLEMEMBERDETAIL（仲裁成员详细信息） — `SLEMEMBERDETAIL.md`
-- [[configobject/UNC/20.15.2/SMCTXCNTDBG]] · SMCTXCNTDBG（指定CS类型的上下文数量） — `SMCTXCNTDBG.md`
-- [[configobject/UNC/20.15.2/SMDBGINFO]] · SMDBGINFO（承载上下文相关的调试信息） — `SMDBGINFO.md`
-- [[configobject/UNC/20.15.2/SMFDBGINFO]] · SMFDBGINFO（SMF相关的调试信息） — `SMFDBGINFO.md`
-- [[configobject/UNC/20.15.2/SMFMBSSESSIONNUM]] · SMFMBSSESSIONNUM（MB-SMF组播广播会话数） — `SMFMBSSESSIONNUM.md`
-- [[configobject/UNC/20.15.2/SMPDPNUM]] · SMPDPNUM（会话管理的PDP上下文数） — `SMPDPNUM.md`
-- [[configobject/UNC/20.15.2/SMSESSIONNUM]] · SMSESSIONNUM（会话管理的会话上下文数） — `SMSESSIONNUM.md`
-- [[configobject/UNC/20.15.2/SMSFUDMBYPASSNUM]] · SMSFUDMBYPASSNUM（SMSF系统内处于UDM Bypass状态的用户数） — `SMSFUDMBYPASSNUM.md`
-- [[configobject/UNC/20.15.2/SMSFUDMBYPASSTAT]] · SMSFUDMBYPASSTAT（SMSF用户UDM Bypass状态信息） — `SMSFUDMBYPASSTAT.md`
-- [[configobject/UNC/20.15.2/SMSKEYNUM]] · SMSKEYNUM（SMSF/VLR用户关键信息表的用户数） — `SMSKEYNUM.md`
-- [[configobject/UNC/20.15.2/SMSUSERSTAT]] · SMSUSERSTAT（CS粒度或DS粒度的用户数） — `SMSUSERSTAT.md`
-- [[configobject/UNC/20.15.2/SMSUSRNUM]] · SMSUSRNUM（SMSF中注册的用户数） — `SMSUSRNUM.md`
-- [[configobject/UNC/20.15.2/SMUDMBYPASS]] · SMUDMBYPASS（会话UDM Bypass信息） — `SMUDMBYPASS.md`
-- [[configobject/UNC/20.15.2/SMUSERINFO]] · SMUSERINFO（会话管理的用户信息） — `SMUSERINFO.md`
-- [[configobject/UNC/20.15.2/SMUSERNUM]] · SMUSERNUM（会话管理的用户数） — `SMUSERNUM.md`
-- [[configobject/UNC/20.15.2/SNMPINFO]] · SNMPINFO（网元长连接信息） — `SNMPINFO.md`
-- [[configobject/UNC/20.15.2/SOCKBLACKBOX]] · SOCKBLACKBOX（SOCK黑匣子诊断信息） — `SOCKBLACKBOX.md`
-- [[configobject/UNC/20.15.2/SOCKINNERDATA]] · SOCKINNERDATA（SOCK诊断信息） — `SOCKINNERDATA.md`
-- [[configobject/UNC/20.15.2/SOCKPATH]] · SOCKPATH（SOCK路径诊断信息） — `SOCKPATH.md`
-- [[configobject/UNC/20.15.2/SOCKSESSION]] · SOCKSESSION（SOCK会话诊断信息） — `SOCKSESSION.md`
-- [[configobject/UNC/20.15.2/SOCKSTATISTICS]] · SOCKSTATISTICS（SOCK统计诊断信息） — `SOCKSTATISTICS.md`
-- [[configobject/UNC/20.15.2/SPEC]] · SPEC（规格信息） — `SPEC.md`
-- [[configobject/UNC/20.15.2/SRIIDINFO]] · SRIIDINFO（静态路由IID信息） — `SRIIDINFO.md`
-- [[configobject/UNC/20.15.2/SRIPV6IIDINFO]] · SRIPV6IIDINFO（IPv6静态路由IID信息） — `SRIPV6IIDINFO.md`
-- [[configobject/UNC/20.15.2/SRVADDRNUM]] · SRVADDRNUM（服务实例地址数） — `SRVADDRNUM.md`
-- [[configobject/UNC/20.15.2/SRVINSTSTAT]] · SRVINSTSTAT（LB服务实例统计） — `SRVINSTSTAT.md`
-- [[configobject/UNC/20.15.2/SRVINSTTYPEREL]] · SRVINSTTYPEREL（服务实例与业务类型关系） — `SRVINSTTYPEREL.md`
-- [[configobject/UNC/20.15.2/SRVIP]] · SRVIP（服务IP） — `SRVIP.md`
-- [[configobject/UNC/20.15.2/SRVMSGSTAT]] · SRVMSGSTAT（服务消息统计） — `SRVMSGSTAT.md`
-- [[configobject/UNC/20.15.2/SRVVNFC]] · SRVVNFC（服务VNFC） — `SRVVNFC.md`
-- [[configobject/UNC/20.15.2/SRVVNFCMSGSTAT]] · SRVVNFCMSGSTAT（服务VNFC消息统计） — `SRVVNFCMSGSTAT.md`
-- [[configobject/UNC/20.15.2/SSHCCONNSTC]] · SSHCCONNSTC（客户端的连接统计信息） — `SSHCCONNSTC.md`
-- [[configobject/UNC/20.15.2/SSHCERRORLOG]] · SSHCERRORLOG（SSH客户端的错误日志） — `SSHCERRORLOG.md`
-- [[configobject/UNC/20.15.2/SSHCMSGDATA]] · SSHCMSGDATA（SSH客户端的消息数据） — `SSHCMSGDATA.md`
-- [[configobject/UNC/20.15.2/SSHCSESSIONSTC]] · SSHCSESSIONSTC（SSH客户端的会话统计信息） — `SSHCSESSIONSTC.md`
-- [[configobject/UNC/20.15.2/SSHCSTATUSINFO]] · SSHCSTATUSINFO（客户端运行状态信息） — `SSHCSTATUSINFO.md`
-- [[configobject/UNC/20.15.2/SSHSCONNSTC]] · SSHSCONNSTC（服务器的连接统计信息） — `SSHSCONNSTC.md`
-- [[configobject/UNC/20.15.2/SSHSERRORLOG]] · SSHSERRORLOG（SSH服务器的错误日志） — `SSHSERRORLOG.md`
-- [[configobject/UNC/20.15.2/SSHSERVERSESSION]] · SSHSERVERSESSION（SSH服务端会话信息） — `SSHSERVERSESSION.md`
-- [[configobject/UNC/20.15.2/SSHSMSGDATA]] · SSHSMSGDATA（SSH服务器的消息数据） — `SSHSMSGDATA.md`
-- [[configobject/UNC/20.15.2/SSHSSESSIONSTC]] · SSHSSESSIONSTC（SSH服务器的会话统计信息） — `SSHSSESSIONSTC.md`
-- [[configobject/UNC/20.15.2/SSHSSTATUSINFO]] · SSHSSTATUSINFO（服务器运行状态信息） — `SSHSSTATUSINFO.md`
-- [[configobject/UNC/20.15.2/STARTUP]] · STARTUP（本次和下次启动文件） — `STARTUP.md`
-- [[configobject/UNC/20.15.2/STARVATIONINFO]] · STARVATIONINFO（长时间未被调度的组件消息） — `STARVATIONINFO.md`
-- [[configobject/UNC/20.15.2/SUBHEALTHRECORD]] · SUBHEALTHRECORD（base平面亚健康链路历史信息） — `SUBHEALTHRECORD.md`
-- [[configobject/UNC/20.15.2/SUBNSAVLINFO]] · SUBNSAVLINFO（网络切片可用性订阅信息） — `SUBNSAVLINFO.md`
-- [[configobject/UNC/20.15.2/SUPPRESSALM]] · SUPPRESSALM（被抑制告警） — `SUPPRESSALM.md`
-- [[configobject/UNC/20.15.2/SYNCFILESTATUS]] · SYNCFILESTATUS（对账文件状态） — `SYNCFILESTATUS.md`
-- [[configobject/UNC/20.15.2/SYSFCDBG]] · SYSFCDBG（调试信息） — `SYSFCDBG.md`
-- [[configobject/UNC/20.15.2/SYSPROCSTAT]] · SYSPROCSTAT（系统处理状态） — `SYSPROCSTAT.md`
-- [[configobject/UNC/20.15.2/SYSRESINFO]] · SYSRESINFO（系统资源使用信息） — `SYSRESINFO.md`
-- [[configobject/UNC/20.15.2/SYSRUNNINGSTAT]] · SYSRUNNINGSTAT（系统状态查询） — `SYSRUNNINGSTAT.md`
-- [[configobject/UNC/20.15.2/SYSTEMLOG]] · SYSTEMLOG（系统日志） — `SYSTEMLOG.md`
-- [[configobject/UNC/20.15.2/TALISTNGRANINFO]] · TALISTNGRANINFO（TALIST下5G基站接入数量信息） — `TALISTNGRANINFO.md`
-- [[configobject/UNC/20.15.2/TCPSTATUS]] · TCPSTATUS（TCP状态） — `TCPSTATUS.md`
-- [[configobject/UNC/20.15.2/THREADCALLSTACK]] · THREADCALLSTACK（线程调用栈信息） — `THREADCALLSTACK.md`
-- [[configobject/UNC/20.15.2/THROTTLINGINFO]] · THROTTLINGINFO（Throttling信息） — `THROTTLINGINFO.md`
-- [[configobject/UNC/20.15.2/TIMER]] · TIMER（定时器信息） — `TIMER.md`
-- [[configobject/UNC/20.15.2/TLBDATA]] · TLBDATA（TLB统计信息） — `TLBDATA.md`
-- [[configobject/UNC/20.15.2/TMGIUSAGE]] · TMGIUSAGE（TMGI使用率） — `TMGIUSAGE.md`
-- [[configobject/UNC/20.15.2/TMPATH]] · TMPATH（TM路径） — `TMPATH.md`
-- [[configobject/UNC/20.15.2/TMSISTAT]] · TMSISTAT（TMSI资源分配状态） — `TMSISTAT.md`
-- [[configobject/UNC/20.15.2/TNLMMSGSTATICS]] · TNLMMSGSTATICS（隧道管理消息计数） — `TNLMMSGSTATICS.md`
-- [[configobject/UNC/20.15.2/TNLPROTOCOL]] · TNLPROTOCOL（隧道协议） — `TNLPROTOCOL.md`
-- [[configobject/UNC/20.15.2/TNLSTATISTICS]] · TNLSTATISTICS（隧道统计信息） — `TNLSTATISTICS.md`
-- [[configobject/UNC/20.15.2/TOKENSTATUS]] · TOKENSTATUS（Token状态） — `TOKENSTATUS.md`
-- [[configobject/UNC/20.15.2/TOPICSTAT]] · TOPICSTAT（topic状态） — `TOPICSTAT.md`
-- [[configobject/UNC/20.15.2/TRCAGENTTASK]] · TRCAGENTTASK（跟踪代理侧跟踪任务信息） — `TRCAGENTTASK.md`
-- [[configobject/UNC/20.15.2/TRCDBGINFO]] · TRCDBGINFO（跟踪调试信息） — `TRCDBGINFO.md`
-- [[configobject/UNC/20.15.2/TRCFILE]] · TRCFILE（跟踪文件） — `TRCFILE.md`
-- [[configobject/UNC/20.15.2/TRCFILEDIAG]] · TRCFILEDIAG（跟踪文件可维护性信息） — `TRCFILEDIAG.md`
-- [[configobject/UNC/20.15.2/TRCFLOWCTRL]] · TRCFLOWCTRL（流控通知相关信息） — `TRCFLOWCTRL.md`
-- [[configobject/UNC/20.15.2/TRCLASTSUBSESSION]] · TRCLASTSUBSESSION（最后订阅Session信息） — `TRCLASTSUBSESSION.md`
-- [[configobject/UNC/20.15.2/TRCSMSGTOTALSTC]] · TRCSMSGTOTALSTC（跟踪中心消息统计信息） — `TRCSMSGTOTALSTC.md`
-- [[configobject/UNC/20.15.2/TRCSTASKMSGSTC]] · TRCSTASKMSGSTC（跟踪中心任务消息统计信息） — `TRCSTASKMSGSTC.md`
-- [[configobject/UNC/20.15.2/TRCTASK]] · TRCTASK（跟踪任务） — `TRCTASK.md`
-- [[configobject/UNC/20.15.2/TRCTASKSESSION]] · TRCTASKSESSION（跟踪任务Session信息） — `TRCTASKSESSION.md`
-- [[configobject/UNC/20.15.2/TRCTASKSTC]] · TRCTASKSTC（跟踪任务相关跟踪消息的统计信息） — `TRCTASKSTC.md`
-- [[configobject/UNC/20.15.2/TRUNKCTX]] · TRUNKCTX（宽带集群系统上下文） — `TRUNKCTX.md`
-- [[configobject/UNC/20.15.2/TRUNKINNERDATA]] · TRUNKINNERDATA（Trunk内部数据） — `TRUNKINNERDATA.md`
-- [[configobject/UNC/20.15.2/TSTPATH]] · TSTPATH（UPC到UPF或者PFCP到UPF的路径状态） — `TSTPATH.md`
-- [[configobject/UNC/20.15.2/TTPLUGDBGINFO]] · TTPLUGDBGINFO（扩展VNFC插件调试信息） — `TTPLUGDBGINFO.md`
-- [[configobject/UNC/20.15.2/TUNNELINFO]] · TUNNELINFO（隧道信息） — `TUNNELINFO.md`
-- [[configobject/UNC/20.15.2/TUNNELINFOVERBOSE]] · TUNNELINFOVERBOSE（隧道详细信息） — `TUNNELINFOVERBOSE.md`
-- [[configobject/UNC/20.15.2/UCFDISKSIZE]] · UCFDISKSIZE（ucfexec-pod的磁盘空间大小） — `UCFDISKSIZE.md`
-- [[configobject/UNC/20.15.2/UCFPKTSTAT]] · UCFPKTSTAT（UCF收发的单据报文信息） — `UCFPKTSTAT.md`
-- [[configobject/UNC/20.15.2/UCFSVRLNKSTAT]] · UCFSVRLNKSTAT（UCF链路状态） — `UCFSVRLNKSTAT.md`
-- [[configobject/UNC/20.15.2/UDMBYPASSNUM]] · UDMBYPASSNUM（UDM Bypass用户数） — `UDMBYPASSNUM.md`
-- [[configobject/UNC/20.15.2/UDPSTATUS]] · UDPSTATUS（UDP状态） — `UDPSTATUS.md`
-- [[configobject/UNC/20.15.2/UFPLATENCY]] · UFPLATENCY（UFP时延度量统计结果） — `UFPLATENCY.md`
-- [[configobject/UNC/20.15.2/UNCLOGSTAT]] · UNCLOGSTAT（UNC日志状态） — `UNCLOGSTAT.md`
-- [[configobject/UNC/20.15.2/UPDATECTRLCFG]] · UPDATECTRLCFG（内部升级配置表） — `UPDATECTRLCFG.md`
-- [[configobject/UNC/20.15.2/UPDRUVER]] · UPDRUVER（RU版本信息） — `UPDRUVER.md`
-- [[configobject/UNC/20.15.2/UPDVER]] · UPDVER（当前版本信息） — `UPDVER.md`
-- [[configobject/UNC/20.15.2/UPDYNAMICINFO]] · UPDYNAMICINFO（UP节点动态信息） — `UPDYNAMICINFO.md`
-- [[configobject/UNC/20.15.2/UPFADDRLCK]] · UPFADDRLCK（锁定的UPF地址） — `UPFADDRLCK.md`
-- [[configobject/UNC/20.15.2/UPFAULTAPNCACHE]] · UPFAULTAPNCACHE（故障APN信息） — `UPFAULTAPNCACHE.md`
-- [[configobject/UNC/20.15.2/UPFRDSSTATUS]] · UPFRDSSTATUS（UPF中转Radius状态） — `UPFRDSSTATUS.md`
-- [[configobject/UNC/20.15.2/UPGPODINFO]] · UPGPODINFO（已部署的Pod的版本号） — `UPGPODINFO.md`
-- [[configobject/UNC/20.15.2/UPLOCKINFO]] · UPLOCKINFO（UPF上报的锁定信息） — `UPLOCKINFO.md`
-- [[configobject/UNC/20.15.2/USRPDPNUM]] · USRPDPNUM（用户和承载上下文数） — `USRPDPNUM.md`
-- [[configobject/UNC/20.15.2/USRSESSIONCTX]] · USRSESSIONCTX（指定用户的会话信息） — `USRSESSIONCTX.md`
-- [[configobject/UNC/20.15.2/VERLC]] · VERLC（设备EOS时间） — `VERLC.md`
-- [[configobject/UNC/20.15.2/VERSION]] · VERSION（系统版本信息） — `VERSION.md`
-- [[configobject/UNC/20.15.2/VHAMEMBER]] · VHAMEMBER（vHA ETCD集群节点详细信息） — `VHAMEMBER.md`
-- [[configobject/UNC/20.15.2/VNFCRES]] · VNFCRES（VNFC内的资源配置信息） — `VNFCRES.md`
-- [[configobject/UNC/20.15.2/VNFCSCALINGHISTORY]] · VNFCSCALINGHISTORY（基于VNFC的扩缩容历史信息） — `VNFCSCALINGHISTORY.md`
-- [[configobject/UNC/20.15.2/VNFINNERSTAT]] · VNFINNERSTAT（网元内部状态） — `VNFINNERSTAT.md`
-- [[configobject/UNC/20.15.2/VNFINSTANTIATIONRESULT]] · VNFINSTANTIATIONRESULT（实例化完成结果查询） — `VNFINSTANTIATIONRESULT.md`
-- [[configobject/UNC/20.15.2/VNFMODE]] · VNFMODE（VNF部署模式） — `VNFMODE.md`
-- [[configobject/UNC/20.15.2/VNFPKGS]] · VNFPKGS（网元关联的软件包名称） — `VNFPKGS.md`
-- [[configobject/UNC/20.15.2/VNFPODVM]] · VNFPODVM（网元的POD与虚拟机位置关系） — `VNFPODVM.md`
-- [[configobject/UNC/20.15.2/VNFSTACKNAMES]] · VNFSTACKNAMES（网元下所有堆栈名称） — `VNFSTACKNAMES.md`
-- [[configobject/UNC/20.15.2/VNODESTARTTIME]] · VNODESTARTTIME（虚拟节点启动时间信息） — `VNODESTARTTIME.md`
-- [[configobject/UNC/20.15.2/VNRSLINK]] · VNRSLINK（VNRS链路） — `VNRSLINK.md`
-- [[configobject/UNC/20.15.2/VNRSMSGSTAT]] · VNRSMSGSTAT（VNRS消息统计） — `VNRSMSGSTAT.md`
-- [[configobject/UNC/20.15.2/VPNAPPCFG]] · VPNAPPCFG（下发的VPN的app类型信息） — `VPNAPPCFG.md`
-- [[configobject/UNC/20.15.2/VPNINSTINTF]] · VPNINSTINTF（VPN实例接口信息） — `VPNINSTINTF.md`
-- [[configobject/UNC/20.15.2/VPORT]] · VPORT（虚拟端口信息） — `VPORT.md`
-- [[configobject/UNC/20.15.2/VPPVER]] · VPPVER（组件版本） — `VPPVER.md`
-- [[configobject/UNC/20.15.2/VPROBEDISKSIZE]] · VPROBEDISKSIZE（vprobeexec-pod的磁盘空间大小） — `VPROBEDISKSIZE.md`
-- [[configobject/UNC/20.15.2/VPROBELNKSTAT]] · VPROBELNKSTAT（vProbe链路状态） — `VPROBELNKSTAT.md`
-- [[configobject/UNC/20.15.2/VPROBEPKTSTAT]] · VPROBEPKTSTAT（vProbe收发的单据报文信息） — `VPROBEPKTSTAT.md`
-- [[configobject/UNC/20.15.2/WLRATTRINFO]] · WLRATTRINFO（无线路由属性信息） — `WLRATTRINFO.md`
-- [[configobject/UNC/20.15.2/WLRBLACKBOX]] · WLRBLACKBOX（无线路由黑匣子信息） — `WLRBLACKBOX.md`
-- [[configobject/UNC/20.15.2/WLRFLOWRULE]] · WLRFLOWRULE（IPv4引流表信息） — `WLRFLOWRULE.md`
-- [[configobject/UNC/20.15.2/WLRFLOWRULE6]] · WLRFLOWRULE6（IPv6引流表信息） — `WLRFLOWRULE6.md`
-- [[configobject/UNC/20.15.2/WLRGLOBALINFO]] · WLRGLOBALINFO（无线路由全局信息） — `WLRGLOBALINFO.md`
-- [[configobject/UNC/20.15.2/WLRIFFLOWRULE]] · WLRIFFLOWRULE（无线路由IPv4接口引流表信息） — `WLRIFFLOWRULE.md`
-- [[configobject/UNC/20.15.2/WLRIFFLOWRULE6]] · WLRIFFLOWRULE6（无线路由IPv6接口引流表信息） — `WLRIFFLOWRULE6.md`
-- [[configobject/UNC/20.15.2/WLRIID]] · WLRIID（无线路由IID信息） — `WLRIID.md`
-- [[configobject/UNC/20.15.2/WLRMSGSTC]] · WLRMSGSTC（WLR与各Partner的消息统计） — `WLRMSGSTC.md`
-- [[configobject/UNC/20.15.2/WLRPAEG]] · WLRPAEG（PAEG信息） — `WLRPAEG.md`
-- [[configobject/UNC/20.15.2/WLRPEER]] · WLRPEER（无线路由对端状态） — `WLRPEER.md`
-- [[configobject/UNC/20.15.2/WLRPEERDATASTAT]] · WLRPEERDATASTAT（PEER相关数据的统计计数） — `WLRPEERDATASTAT.md`
-- [[configobject/UNC/20.15.2/WLRPEERMSGSTAT]] · WLRPEERMSGSTAT（PEER有关消息的统计计数） — `WLRPEERMSGSTAT.md`
-- [[configobject/UNC/20.15.2/WLRROUTESTAT]] · WLRROUTESTAT（无线路由的路由统计信息） — `WLRROUTESTAT.md`
-- [[configobject/UNC/20.15.2/WLRSMOOTHSTAT]] · WLRSMOOTHSTAT（无线路由与对端平滑状态机状态） — `WLRSMOOTHSTAT.md`
-- [[configobject/UNC/20.15.2/WLRSRBIF]] · WLRSRBIF（无线路由订阅的接口信息） — `WLRSRBIF.md`
-- [[configobject/UNC/20.15.2/WLRSRCINTERFACE]] · WLRSRCINTERFACE（无线路由地址借用表信息） — `WLRSRCINTERFACE.md`
-- [[configobject/UNC/20.15.2/WLRSUBINFO]] · WLRSUBINFO（APP订阅信息） — `WLRSUBINFO.md`
-- [[configobject/UNC/20.15.2/WLRSUBINFOVERBOSE]] · WLRSUBINFOVERBOSE（APP详细订阅信息） — `WLRSUBINFOVERBOSE.md`
-- [[configobject/UNC/20.15.2/WLRSUBRESULT]] · WLRSUBRESULT（APP订阅结果信息） — `WLRSUBRESULT.md`
-- [[configobject/UNC/20.15.2/WLRSYSPAEINFO]] · WLRSYSPAEINFO（系统PAE信息） — `WLRSYSPAEINFO.md`
-- [[configobject/UNC/20.15.2/WLRTABLE]] · WLRTABLE（无线路由表） — `WLRTABLE.md`
-- [[configobject/UNC/20.15.2/WLRTBLSMTHINFO]] · WLRTBLSMTHINFO（基于表无线路由平滑统计信息） — `WLRTBLSMTHINFO.md`
-- [[configobject/UNC/20.15.2/WLRTBLSTAT]] · WLRTBLSTAT（基于表无线路由数据信息） — `WLRTBLSTAT.md`
-- [[configobject/UNC/20.15.2/WLRTNLMSTC]] · WLRTNLMSTC（WLR组件与TNLM交互的统计信息） — `WLRTNLMSTC.md`
-- [[configobject/UNC/20.15.2/WORKLOAD]] · WORKLOAD（系统负载） — `WORKLOAD.md`
-- [[configobject/UNC/20.15.2/XSMINNERDATA]] · XSMINNERDATA（XSM模块与其他模块的组件间交互消息） — `XSMINNERDATA.md`
+- [ACC（加速器信息）](configobject/UNC/20.15.2/ACC.md)
+- [ACL6ADVRULECNTVERBOSE（高级ACL6规则匹配详细计数）](configobject/UNC/20.15.2/ACL6ADVRULECNTVERBOSE.md)
+- [ACL6BASICRULECNTVERBOSE（基本ACL6规则匹配详细计数）](configobject/UNC/20.15.2/ACL6BASICRULECNTVERBOSE.md)
+- [ACLADV6RULECNT（高级IPv6 ACL规则匹配计数）](configobject/UNC/20.15.2/ACLADV6RULECNT.md)
+- [ACLADVRULECNT（高级ACL规则匹配计数）](configobject/UNC/20.15.2/ACLADVRULECNT.md)
+- [ACLADVRULECNTVERBOSE（高级ACL规则匹配详细计数）](configobject/UNC/20.15.2/ACLADVRULECNTVERBOSE.md)
+- [ACLBASIC6RULECNT（基本IPv6 ACL规则匹配计数）](configobject/UNC/20.15.2/ACLBASIC6RULECNT.md)
+- [ACLBASICRULECNT（基本ACL规则匹配计数）](configobject/UNC/20.15.2/ACLBASICRULECNT.md)
+- [ACLBASICRULECNTVERBOSE（基本ACL规则匹配详细计数）](configobject/UNC/20.15.2/ACLBASICRULECNTVERBOSE.md)
+- [ACLETHRULECNT（以太ACL规则匹配计数）](configobject/UNC/20.15.2/ACLETHRULECNT.md)
+- [ACLETHRULECNTVERBOSE（以太ACL规则匹配详细计数）](configobject/UNC/20.15.2/ACLETHRULECNTVERBOSE.md)
+- [ACLIFRULECNT（接口ACL规则匹配计数）](configobject/UNC/20.15.2/ACLIFRULECNT.md)
+- [ACLIFRULECNTVERBOSE（接口ACL规则匹配详细计数）](configobject/UNC/20.15.2/ACLIFRULECNTVERBOSE.md)
+- [ACSCLASSINFO（配置表信息）](configobject/UNC/20.15.2/ACSCLASSINFO.md)
+- [ACSPATCHDETAILINFO（补丁信息）](configobject/UNC/20.15.2/ACSPATCHDETAILINFO.md)
+- [ACSPATCHINFO（系统当前补丁信息）](configobject/UNC/20.15.2/ACSPATCHINFO.md)
+- [ACSRBKVER（升级可回退版本信息）](configobject/UNC/20.15.2/ACSRBKVER.md)
+- [ACSSYNCINFO（ACS的配置同步信息）](configobject/UNC/20.15.2/ACSSYNCINFO.md)
+- [ACSUPDRUVER（RU版本信息）](configobject/UNC/20.15.2/ACSUPDRUVER.md)
+- [ACSVERSION（系统版本信息）](configobject/UNC/20.15.2/ACSVERSION.md)
+- [ACTALM（活动告警）](configobject/UNC/20.15.2/ACTALM.md)
+- [AGFTPSINFO（AGF每个pod的计费消息速率）](configobject/UNC/20.15.2/AGFTPSINFO.md)
+- [ALARMINFO（告警信息）](configobject/UNC/20.15.2/ALARMINFO.md)
+- [ALMDETAIL（告警详细信息）](configobject/UNC/20.15.2/ALMDETAIL.md)
+- [ALMERRORINFO（告警模块错误信息）](configobject/UNC/20.15.2/ALMERRORINFO.md)
+- [ALMFLAPINFO（告警震荡信息）](configobject/UNC/20.15.2/ALMFLAPINFO.md)
+- [ALMFLAPSURPINFO（告警震荡抑制信息）](configobject/UNC/20.15.2/ALMFLAPSURPINFO.md)
+- [ALMMESSAGERECV（告警接收的信息）](configobject/UNC/20.15.2/ALMMESSAGERECV.md)
+- [ALMMESSAGESEND（告警发送的信息）](configobject/UNC/20.15.2/ALMMESSAGESEND.md)
+- [AMFMBSSESCTX（AMF组播广播会话上下文）](configobject/UNC/20.15.2/AMFMBSSESCTX.md)
+- [AMFMBSSESNUM（AMF组播广播会话数）](configobject/UNC/20.15.2/AMFMBSSESNUM.md)
+- [AMFNSAVLINFO（授权后的网络切片可用性信息）](configobject/UNC/20.15.2/AMFNSAVLINFO.md)
+- [ANINFO（AN信息）](configobject/UNC/20.15.2/ANINFO.md)
+- [APPDATADIFF（APP与OMU配置数据差异信息）](configobject/UNC/20.15.2/APPDATADIFF.md)
+- [APPINFO（应用信息）](configobject/UNC/20.15.2/APPINFO.md)
+- [APPVERSION（系统版本信息）](configobject/UNC/20.15.2/APPVERSION.md)
+- [ARPENTRYSTATISTICS（ARP统计计数）](configobject/UNC/20.15.2/ARPENTRYSTATISTICS.md)
+- [ARPERRPACKET（ARP错误报文统计）](configobject/UNC/20.15.2/ARPERRPACKET.md)
+- [ARPHISTORY（ARP表项变更历史）](configobject/UNC/20.15.2/ARPHISTORY.md)
+- [ARPINNERDATA（ARP内部信息）](configobject/UNC/20.15.2/ARPINNERDATA.md)
+- [ARPPROBERESULT（ARP探测结果）](configobject/UNC/20.15.2/ARPPROBERESULT.md)
+- [ARPSTATISTICS（ARP处理信息统计）](configobject/UNC/20.15.2/ARPSTATISTICS.md)
+- [ARPTABLE（ARP表项）](configobject/UNC/20.15.2/ARPTABLE.md)
+- [ASSERTINFO（RU断言信息）](configobject/UNC/20.15.2/ASSERTINFO.md)
+- [AUTOSCALEPOLICY（自动弹性策略状态）](configobject/UNC/20.15.2/AUTOSCALEPOLICY.md)
+- [AUTOSCALINGIPPOOL（自动化配置地址池信息）](configobject/UNC/20.15.2/AUTOSCALINGIPPOOL.md)
+- [BANDWIDTH（带宽配置及使用情况）](configobject/UNC/20.15.2/BANDWIDTH.md)
+- [BFDBLACKBOX（BFD黑匣子信息）](configobject/UNC/20.15.2/BFDBLACKBOX.md)
+- [BFDGLOBALSTATS（BFD的全局会话统计信息）](configobject/UNC/20.15.2/BFDGLOBALSTATS.md)
+- [BFDRESOURCESTC（BFD资源统计信息）](configobject/UNC/20.15.2/BFDRESOURCESTC.md)
+- [BFDSESSIONRUNNING（BFD会话的运行信息）](configobject/UNC/20.15.2/BFDSESSIONRUNNING.md)
+- [BFDSTATS（BFD的会话统计信息）](configobject/UNC/20.15.2/BFDSTATS.md)
+- [BGPASMSG（BGP AS查询消息）](configobject/UNC/20.15.2/BGPASMSG.md)
+- [BGPASSTATS（BGP AS查询统计）](configobject/UNC/20.15.2/BGPASSTATS.md)
+- [BGPBFDSESSION（BGP建立的BFD会话信息）](configobject/UNC/20.15.2/BGPBFDSESSION.md)
+- [BGPCONGESTATISTICS（BGP流控信息）](configobject/UNC/20.15.2/BGPCONGESTATISTICS.md)
+- [BGPDATA（BGP数据结构信息）](configobject/UNC/20.15.2/BGPDATA.md)
+- [BGPERRORDISCARD（BGP的错误信息）](configobject/UNC/20.15.2/BGPERRORDISCARD.md)
+- [BGPHASTATE（BGP HA状态信息）](configobject/UNC/20.15.2/BGPHASTATE.md)
+- [BGPLSP（BGP LSP信息）](configobject/UNC/20.15.2/BGPLSP.md)
+- [BGPNEXTHOP（BGP下一跳信息）](configobject/UNC/20.15.2/BGPNEXTHOP.md)
+- [BGPPEERALLVERBOSE（BGP所有VPN对等体详细信息）](configobject/UNC/20.15.2/BGPPEERALLVERBOSE.md)
+- [BGPPEERINFO（BGP对等体信息）](configobject/UNC/20.15.2/BGPPEERINFO.md)
+- [BGPPEERLOG（BGP对等体日志信息）](configobject/UNC/20.15.2/BGPPEERLOG.md)
+- [BGPPEERSTATE（BGP对等体状态信息）](configobject/UNC/20.15.2/BGPPEERSTATE.md)
+- [BGPPEERSTATISTICSINFO（BGP对等体统计信息）](configobject/UNC/20.15.2/BGPPEERSTATISTICSINFO.md)
+- [BGPPEERVERBOSE（BGP对等体详细信息）](configobject/UNC/20.15.2/BGPPEERVERBOSE.md)
+- [BGPRT6DATA（BGP IPv6路由数据结构信息）](configobject/UNC/20.15.2/BGPRT6DATA.md)
+- [BGPRTDATA（BGP路由数据结构信息）](configobject/UNC/20.15.2/BGPRTDATA.md)
+- [BGPRTSTATISTICS（BGP路由统计信息）](configobject/UNC/20.15.2/BGPRTSTATISTICS.md)
+- [BGPVRFROUTING（BGP VPN路由表）](configobject/UNC/20.15.2/BGPVRFROUTING.md)
+- [BGPVRFROUTING6（BGP VPN IPv6路由表）](configobject/UNC/20.15.2/BGPVRFROUTING6.md)
+- [BILLSAVE（最终话单处理和保存速度）](configobject/UNC/20.15.2/BILLSAVE.md)
+- [BLKHISTORY（CSDB RU闭塞信息）](configobject/UNC/20.15.2/BLKHISTORY.md)
+- [BOSSOPINFO（BOSS操作信息）](configobject/UNC/20.15.2/BOSSOPINFO.md)
+- [BSCUSRNUM（BSC下用户数）](configobject/UNC/20.15.2/BSCUSRNUM.md)
+- [BSFCTX（UE IP对应的PCF信息）](configobject/UNC/20.15.2/BSFCTX.md)
+- [BTRUNCSTATUS（宽带集群系统TSN状态）](configobject/UNC/20.15.2/BTRUNCSTATUS.md)
+- [CACHE（缓冲区话单数量）](configobject/UNC/20.15.2/CACHE.md)
+- [CACHEMBLACKBOX（CACHEM黑匣子诊断信息）](configobject/UNC/20.15.2/CACHEMBLACKBOX.md)
+- [CACHEMCMDDATA（CACHEM命令信息）](configobject/UNC/20.15.2/CACHEMCMDDATA.md)
+- [CACHEMINNERDATA（CACHEM诊断信息）](configobject/UNC/20.15.2/CACHEMINNERDATA.md)
+- [CB（CB表）](configobject/UNC/20.15.2/CB.md)
+- [CCL（原始话单采集和保存速度）](configobject/UNC/20.15.2/CCL.md)
+- [CDRPROCSTATUS（话单处理状态）](configobject/UNC/20.15.2/CDRPROCSTATUS.md)
+- [CDRQUERY（话单）](configobject/UNC/20.15.2/CDRQUERY.md)
+- [CDRQUERYSTATUS（话单查询任务状态）](configobject/UNC/20.15.2/CDRQUERYSTATUS.md)
+- [CDRSTRGINFO（缓存话单信息）](configobject/UNC/20.15.2/CDRSTRGINFO.md)
+- [CDW（话单处理速度）](configobject/UNC/20.15.2/CDW.md)
+- [CELLFAULTINFO（故障进程历史记录）](configobject/UNC/20.15.2/CELLFAULTINFO.md)
+- [CELLINFO（微服务进程信息）](configobject/UNC/20.15.2/CELLINFO.md)
+- [CELLSTAT（微服务进程可用状态统计信息）](configobject/UNC/20.15.2/CELLSTAT.md)
+- [CERTFILE（证书）](configobject/UNC/20.15.2/CERTFILE.md)
+- [CFGCERTAINDB（指定DB表数据）](configobject/UNC/20.15.2/CFGCERTAINDB.md)
+- [CFGERRCMD（CFG方式配置恢复的失败信息）](configobject/UNC/20.15.2/CFGERRCMD.md)
+- [CFGRECOVERRESULT（系统配置恢复结果）](configobject/UNC/20.15.2/CFGRECOVERRESULT.md)
+- [CFGTABLEDATA（满足条件的CFG表数据）](configobject/UNC/20.15.2/CFGTABLEDATA.md)
+- [CFGTABLEINDEX（CFG表索引信息和字段信息）](configobject/UNC/20.15.2/CFGTABLEINDEX.md)
+- [CFGTABLEINFO（CFG表信息和内存信息）](configobject/UNC/20.15.2/CFGTABLEINFO.md)
+- [CGIP（CGIP测量对象）](configobject/UNC/20.15.2/CGIP.md)
+- [CGQUEUESTATUS（NCG队列状态）](configobject/UNC/20.15.2/CGQUEUESTATUS.md)
+- [CGSTATUS（CG状态）](configobject/UNC/20.15.2/CGSTATUS.md)
+- [CHGFILE（硬盘话单文件信息）](configobject/UNC/20.15.2/CHGFILE.md)
+- [CLRDNSCPROG（离散清缓存进度）](configobject/UNC/20.15.2/CLRDNSCPROG.md)
+- [CNTCPUSTAT（容器CPU信息）](configobject/UNC/20.15.2/CNTCPUSTAT.md)
+- [CNTINFO（容器部署信息）](configobject/UNC/20.15.2/CNTINFO.md)
+- [CNTMEMSTAT（容器内存信息）](configobject/UNC/20.15.2/CNTMEMSTAT.md)
+- [CNTRESSTAT（容器资源信息）](configobject/UNC/20.15.2/CNTRESSTAT.md)
+- [COLLECTLOGRESULT（日志收集执行结果）](configobject/UNC/20.15.2/COLLECTLOGRESULT.md)
+- [COMBASESUM（BASE亚健康概况）](configobject/UNC/20.15.2/COMBASESUM.md)
+- [COMCONTAINER（组件和容器关系信息）](configobject/UNC/20.15.2/COMCONTAINER.md)
+- [COMGTPCPATHINFO（UAM GTPC路径信息）](configobject/UNC/20.15.2/COMGTPCPATHINFO.md)
+- [COMGTPCPATHNUM（UAM GTP-C路径数量）](configobject/UNC/20.15.2/COMGTPCPATHNUM.md)
+- [COMMMCTX（移动性管理上下文的相关信息）](configobject/UNC/20.15.2/COMMMCTX.md)
+- [COMMMCTXLOC（移动管理位置信息上下文）](configobject/UNC/20.15.2/COMMMCTXLOC.md)
+- [COMMONDBG（调试信息）](configobject/UNC/20.15.2/COMMONDBG.md)
+- [COMMONDBGMCR（调试信息）](configobject/UNC/20.15.2/COMMONDBGMCR.md)
+- [COMMSTAT（通信统计）](configobject/UNC/20.15.2/COMMSTAT.md)
+- [COMMSTATMCR（通信统计）](configobject/UNC/20.15.2/COMMSTATMCR.md)
+- [COMPONENT（组件信息）](configobject/UNC/20.15.2/COMPONENT.md)
+- [COMPONENTSUB（组件订阅信息）](configobject/UNC/20.15.2/COMPONENTSUB.md)
+- [COMPSTATNOTIFY（组件状态通知记录）](configobject/UNC/20.15.2/COMPSTATNOTIFY.md)
+- [COMPSTATTRACE（当前组件的状态记录信息）](configobject/UNC/20.15.2/COMPSTATTRACE.md)
+- [COMTASKDETAIL（SDR通信质量检测结果详情）](configobject/UNC/20.15.2/COMTASKDETAIL.md)
+- [COMTASKSUMM（SDR通信质量检测结果概要）](configobject/UNC/20.15.2/COMTASKSUMM.md)
+- [COMUSRPDPNUM（移动性管理用户数）](configobject/UNC/20.15.2/COMUSRPDPNUM.md)
+- [CONNDOWN（连接中断信息）](configobject/UNC/20.15.2/CONNDOWN.md)
+- [CONNECT（网元长连接信息）](configobject/UNC/20.15.2/CONNECT.md)
+- [CONSSTATE（消费者状态信息）](configobject/UNC/20.15.2/CONSSTATE.md)
+- [CONSSUB（消费者订阅信息）](configobject/UNC/20.15.2/CONSSUB.md)
+- [CPPDPCHGINFO（计费上下文信息）](configobject/UNC/20.15.2/CPPDPCHGINFO.md)
+- [CPU（资源CPU使用信息）](configobject/UNC/20.15.2/CPU.md)
+- [CPUECOVMSINFO（VM的CPU节能策略）](configobject/UNC/20.15.2/CPUECOVMSINFO.md)
+- [CSCFGCACHE（本地缓存中配置的记录数）](configobject/UNC/20.15.2/CSCFGCACHE.md)
+- [CURNRFINFO（当前NRF实例信息）](configobject/UNC/20.15.2/CURNRFINFO.md)
+- [CURRENTWEIGHT（服务类型当前时间的非动态权重）](configobject/UNC/20.15.2/CURRENTWEIGHT.md)
+- [CURSMFIEADAPTER（SMF当前信元携带的信息）](configobject/UNC/20.15.2/CURSMFIEADAPTER.md)
+- [DBCLUSTER（CSDB子集群信息）](configobject/UNC/20.15.2/DBCLUSTER.md)
+- [DBDATAFEATURE（CSDB数据特征）](configobject/UNC/20.15.2/DBDATAFEATURE.md)
+- [DBDRTBLNUM（CSDB容灾主备本记录数）](configobject/UNC/20.15.2/DBDRTBLNUM.md)
+- [DBGCLICMDPRXYREG（通过命令代理可执行命令行调试命令的白名单）](configobject/UNC/20.15.2/DBGCLICMDPRXYREG.md)
+- [DBGDATAEX（调试信息）](configobject/UNC/20.15.2/DBGDATAEX.md)
+- [DBGHAFD（HAFD调试命令结果）](configobject/UNC/20.15.2/DBGHAFD.md)
+- [DBGHAFG（HAFG相关信息）](configobject/UNC/20.15.2/DBGHAFG.md)
+- [DBGSTAT（调试信息）](configobject/UNC/20.15.2/DBGSTAT.md)
+- [DBNODE（CSDB节点信息）](configobject/UNC/20.15.2/DBNODE.md)
+- [DBPLUGIN（CSDB插件信息）](configobject/UNC/20.15.2/DBPLUGIN.md)
+- [DBSTATS（CSDB的统计信息）](configobject/UNC/20.15.2/DBSTATS.md)
+- [DBTBL（CSDB数据表信息）](configobject/UNC/20.15.2/DBTBL.md)
+- [DBUPGSTATUS（CSDB灰度升级状态）](configobject/UNC/20.15.2/DBUPGSTATUS.md)
+- [DBUSERINFO（CSDB使用者信息）](configobject/UNC/20.15.2/DBUSERINFO.md)
+- [DDBREC（DDB记录）](configobject/UNC/20.15.2/DDBREC.md)
+- [DDNDELAYINFO（路径DDN Delay信息）](configobject/UNC/20.15.2/DDNDELAYINFO.md)
+- [DEADLOOPINFO（RU死循环信息）](configobject/UNC/20.15.2/DEADLOOPINFO.md)
+- [DEASMCTXSTATUS（去活操作状态）](configobject/UNC/20.15.2/DEASMCTXSTATUS.md)
+- [DEVATTRCACHE（属性值信息）](configobject/UNC/20.15.2/DEVATTRCACHE.md)
+- [DEVATTRNOTIFY（属性变更通知消息记录）](configobject/UNC/20.15.2/DEVATTRNOTIFY.md)
+- [DEVATTRREV（接收VNFC配置的属性信息）](configobject/UNC/20.15.2/DEVATTRREV.md)
+- [DEVATTRSND（VNFC同步到VNFP的属性信息）](configobject/UNC/20.15.2/DEVATTRSND.md)
+- [DEVATTRSUB（属性订阅信息）](configobject/UNC/20.15.2/DEVATTRSUB.md)
+- [DEVATTRTBL（设备属性信息）](configobject/UNC/20.15.2/DEVATTRTBL.md)
+- [DEVBOOTPREG（BOOTP服务端的注册信息）](configobject/UNC/20.15.2/DEVBOOTPREG.md)
+- [DEVBOOTPRES（BOOTP服务器本地资源信息）](configobject/UNC/20.15.2/DEVBOOTPRES.md)
+- [DEVCOMPFSM（组件状态机信息）](configobject/UNC/20.15.2/DEVCOMPFSM.md)
+- [DEVDIAGINFO（设备管理诊断信息）](configobject/UNC/20.15.2/DEVDIAGINFO.md)
+- [DEVDRIINFO（设备驱动信息）](configobject/UNC/20.15.2/DEVDRIINFO.md)
+- [DEVICEINFO（设备档案信息）](configobject/UNC/20.15.2/DEVICEINFO.md)
+- [DEVMODFSM（模块状态机信息）](configobject/UNC/20.15.2/DEVMODFSM.md)
+- [DEVNETCONFREQ（NETCONF请求信息）](configobject/UNC/20.15.2/DEVNETCONFREQ.md)
+- [DEVOBJFSM（对象状态机信息）](configobject/UNC/20.15.2/DEVOBJFSM.md)
+- [DHCP6CLIENTSTAT（DHCPv6客户端状态信息）](configobject/UNC/20.15.2/DHCP6CLIENTSTAT.md)
+- [DHCPCLIENTSTAT（DHCPv4客户端状态信息）](configobject/UNC/20.15.2/DHCPCLIENTSTAT.md)
+- [DIAMAAASTATUS（Diameter AAA服务器状态）](configobject/UNC/20.15.2/DIAMAAASTATUS.md)
+- [DIAMDICTSTAT（Diameter字典加载状态）](configobject/UNC/20.15.2/DIAMDICTSTAT.md)
+- [DIAMRTSTATUS（Diameter Route状态）](configobject/UNC/20.15.2/DIAMRTSTATUS.md)
+- [DIGIW（电子保单信息）](configobject/UNC/20.15.2/DIGIW.md)
+- [DISCREC（服务发现记录）](configobject/UNC/20.15.2/DISCREC.md)
+- [DISKINFO（节点磁盘部署规格）](configobject/UNC/20.15.2/DISKINFO.md)
+- [DMOCINFO（Diameter流控信息）](configobject/UNC/20.15.2/DMOCINFO.md)
+- [DMTBLACKBOX（Diameter黑匣子信息）](configobject/UNC/20.15.2/DMTBLACKBOX.md)
+- [DMTCONN（Diameter基本信息或Peer连接相关信息）](configobject/UNC/20.15.2/DMTCONN.md)
+- [DMTCONNSTC（Diameter链路及消息收发统计信息）](configobject/UNC/20.15.2/DMTCONNSTC.md)
+- [DMTLINKGROUPSTC（Diameter链路组信息和链路信息）](configobject/UNC/20.15.2/DMTLINKGROUPSTC.md)
+- [DNSAGENTIPHOST（DNS代理服务器域名）](configobject/UNC/20.15.2/DNSAGENTIPHOST.md)
+- [DNSAGENTIPV6HOST（DNS代理服务器IPv6域名）](configobject/UNC/20.15.2/DNSAGENTIPV6HOST.md)
+- [DNSCACHE（DNS Cache）](configobject/UNC/20.15.2/DNSCACHE.md)
+- [DNSDYNAMICIPHOST（DNS IPv4动态域名）](configobject/UNC/20.15.2/DNSDYNAMICIPHOST.md)
+- [DNSDYNAMICIPV6HOST（DNS IPv6动态域名）](configobject/UNC/20.15.2/DNSDYNAMICIPV6HOST.md)
+- [DNSERRDN（失败的DNS记录）](configobject/UNC/20.15.2/DNSERRDN.md)
+- [DNSLNK（DNS服务器链路状态）](configobject/UNC/20.15.2/DNSLNK.md)
+- [DPHMS（MS上下文信息）](configobject/UNC/20.15.2/DPHMS.md)
+- [DRASTATUS（DRA状态）](configobject/UNC/20.15.2/DRASTATUS.md)
+- [DRGROUPSTATUS（容灾组的运行状态信息）](configobject/UNC/20.15.2/DRGROUPSTATUS.md)
+- [DRINFO（容灾信息）](configobject/UNC/20.15.2/DRINFO.md)
+- [DRLIMITINFO（已发生的倒换和复位次数和距离限制结束的时间）](configobject/UNC/20.15.2/DRLIMITINFO.md)
+- [DRSWAPREC（容灾倒换记录）](configobject/UNC/20.15.2/DRSWAPREC.md)
+- [DYNAMICHISTLOAD（各业务pod历史的忙时负载、权重和部署位置信息）](configobject/UNC/20.15.2/DYNAMICHISTLOAD.md)
+- [DYNDIAMAAA（动态Diameter AAA服务器）](configobject/UNC/20.15.2/DYNDIAMAAA.md)
+- [DYNNGERRREC（域名查询失败的记录）](configobject/UNC/20.15.2/DYNNGERRREC.md)
+- [ECOVMSINFO（VM的CPU节能策略）](configobject/UNC/20.15.2/ECOVMSINFO.md)
+- [ELECTION（集群选举实例信息）](configobject/UNC/20.15.2/ELECTION.md)
+- [ENBGNBNEIBS（eNodeB邻接的en-gNB）](configobject/UNC/20.15.2/ENBGNBNEIBS.md)
+- [ENGNB（en-gNB标识）](configobject/UNC/20.15.2/ENGNB.md)
+- [ESMLCSTATE（ESMLC状态）](configobject/UNC/20.15.2/ESMLCSTATE.md)
+- [ETCDTTL（用于仲裁目的的key的租约信息）](configobject/UNC/20.15.2/ETCDTTL.md)
+- [EVTGOVSTAT（事件诊断失败状态）](configobject/UNC/20.15.2/EVTGOVSTAT.md)
+- [EVTHEALREC（事件治理自愈结果）](configobject/UNC/20.15.2/EVTHEALREC.md)
+- [EVTSUBINFO（网络开放事件的订阅信息）](configobject/UNC/20.15.2/EVTSUBINFO.md)
+- [EXCEPTIONINFO（RU异常信息）](configobject/UNC/20.15.2/EXCEPTIONINFO.md)
+- [EXCHANGE（负载均衡交换表）](configobject/UNC/20.15.2/EXCHANGE.md)
+- [EXTANINFO（扩展的AN信息）](configobject/UNC/20.15.2/EXTANINFO.md)
+- [FABDIAGINFO（Fabric平面亚健康诊断结果）](configobject/UNC/20.15.2/FABDIAGINFO.md)
+- [FABPORTSUBDTL（Fabric端口亚健康通信质量信息）](configobject/UNC/20.15.2/FABPORTSUBDTL.md)
+- [FABRICOAMINFO（PAE OAM链路信息）](configobject/UNC/20.15.2/FABRICOAMINFO.md)
+- [FABRICOAMPORT（PAE各链路OAM报文统计结果）](configobject/UNC/20.15.2/FABRICOAMPORT.md)
+- [FABRICPLANEDOWN（Fabric平面Down信息）](configobject/UNC/20.15.2/FABRICPLANEDOWN.md)
+- [FABRICSUBHEALTHYLINK（Fabric平面亚健康链路信息）](configobject/UNC/20.15.2/FABRICSUBHEALTHYLINK.md)
+- [FABRICSUBHEALTHYSTAT（PAE内联口亚健康统计信息）](configobject/UNC/20.15.2/FABRICSUBHEALTHYSTAT.md)
+- [FABSUBDETAIL（Fabric亚健康通信质量信息）](configobject/UNC/20.15.2/FABSUBDETAIL.md)
+- [FASTSCANDATA（快速扫描任务信息）](configobject/UNC/20.15.2/FASTSCANDATA.md)
+- [FASTSCANPROCESS（快速扫描任务状态）](configobject/UNC/20.15.2/FASTSCANPROCESS.md)
+- [FAULTUPPAIR（N3接口故障网元对）](configobject/UNC/20.15.2/FAULTUPPAIR.md)
+- [FCSTATIS（流控统计）](configobject/UNC/20.15.2/FCSTATIS.md)
+- [FEATUREOPRHIST（特性上下线历史）](configobject/UNC/20.15.2/FEATUREOPRHIST.md)
+- [FEICOM_CSTDATA（存储池存储的表项信息）](configobject/UNC/20.15.2/FEICOM_CSTDATA.md)
+- [FEIHEALTHSTATE（FEI健康状态）](configobject/UNC/20.15.2/FEIHEALTHSTATE.md)
+- [FEIMCFWDTAB（FEI组播转发表项统计信息）](configobject/UNC/20.15.2/FEIMCFWDTAB.md)
+- [FEINOTIFYIFMIFUPTIME（FEI通告IFM端口UP事件的时间）](configobject/UNC/20.15.2/FEINOTIFYIFMIFUPTIME.md)
+- [FEIPORTVLAN（FEI端口VLAN）](configobject/UNC/20.15.2/FEIPORTVLAN.md)
+- [FEISWHEALTHSTATE（FEISW健康状态）](configobject/UNC/20.15.2/FEISWHEALTHSTATE.md)
+- [FEI_FRM_CST_POOL（资源池列表的资源占用情况）](configobject/UNC/20.15.2/FEI_FRM_CST_POOL.md)
+- [FEMPACKET（格式引擎配置信息）](configobject/UNC/20.15.2/FEMPACKET.md)
+- [FESDIAGINFO（FES诊断信息）](configobject/UNC/20.15.2/FESDIAGINFO.md)
+- [FESMEMLIMIT（FES内存界限信息）](configobject/UNC/20.15.2/FESMEMLIMIT.md)
+- [FESSMOOTHSTAT（FES的平滑状态信息）](configobject/UNC/20.15.2/FESSMOOTHSTAT.md)
+- [FESTABLE（FES表项信息）](configobject/UNC/20.15.2/FESTABLE.md)
+- [FESTABLESTATICS（FES表项统计信息）](configobject/UNC/20.15.2/FESTABLESTATICS.md)
+- [FLOWCTRLSTAT（流控统计信息）](configobject/UNC/20.15.2/FLOWCTRLSTAT.md)
+- [FMTSOFTPARA（格式引擎包所有可配置软参）](configobject/UNC/20.15.2/FMTSOFTPARA.md)
+- [FRAMEDBG（调试信息）](configobject/UNC/20.15.2/FRAMEDBG.md)
+- [FUNCTIONSETINFO（网络功能集全局列表）](configobject/UNC/20.15.2/FUNCTIONSETINFO.md)
+- [FUNCTIONSETSTAT（网络功能集状态）](configobject/UNC/20.15.2/FUNCTIONSETSTAT.md)
+- [FWDSTAT（转发消息统计）](configobject/UNC/20.15.2/FWDSTAT.md)
+- [GALICENSEPEAK（GA接口话务高峰信息）](configobject/UNC/20.15.2/GALICENSEPEAK.md)
+- [GBMSCONTNUM（MS上下文数目和PDP上下文数目）](configobject/UNC/20.15.2/GBMSCONTNUM.md)
+- [GBPAGING（Gb接口寻呼数据）](configobject/UNC/20.15.2/GBPAGING.md)
+- [GBPDPRESTBL（GBP进程PDP用户上下文资源使用状态）](configobject/UNC/20.15.2/GBPDPRESTBL.md)
+- [GIDINFO（POD的GID信息）](configobject/UNC/20.15.2/GIDINFO.md)
+- [GLBCDRFLDCFG（全局生效CDR字段配置）](configobject/UNC/20.15.2/GLBCDRFLDCFG.md)
+- [GLBOFCTEMPCFG（全局生效离线计费模板配置）](configobject/UNC/20.15.2/GLBOFCTEMPCFG.md)
+- [GLBPCCPARA（全局PCC参数）](configobject/UNC/20.15.2/GLBPCCPARA.md)
+- [GNBENBNEIBS（en-gNB邻接的eNodeB）](configobject/UNC/20.15.2/GNBENBNEIBS.md)
+- [GRAYUPGRESULT（灰度升级结果）](configobject/UNC/20.15.2/GRAYUPGRESULT.md)
+- [GREMSGSTATINFO（GRE消息诊断信息）](configobject/UNC/20.15.2/GREMSGSTATINFO.md)
+- [GREPKTSTAT（GRE报文统计）](configobject/UNC/20.15.2/GREPKTSTAT.md)
+- [GRESMPOOL（Gresm资源池所有信息）](configobject/UNC/20.15.2/GRESMPOOL.md)
+- [GRESMRESINFO（Gresm资源信息）](configobject/UNC/20.15.2/GRESMRESINFO.md)
+- [GRESMRESSTAT（消费者申请资源的统计信息）](configobject/UNC/20.15.2/GRESMRESSTAT.md)
+- [GRETNLINFO（GRE隧道诊断信息）](configobject/UNC/20.15.2/GRETNLINFO.md)
+- [GRETNLSTAT（GRE隧道数目）](configobject/UNC/20.15.2/GRETNLSTAT.md)
+- [GRETNLTAB（GRE隧道信息）](configobject/UNC/20.15.2/GRETNLTAB.md)
+- [GROUPSTAT（消费组状态）](configobject/UNC/20.15.2/GROUPSTAT.md)
+- [GRPPFCPSESSINFO（PFCP的组会话信息）](configobject/UNC/20.15.2/GRPPFCPSESSINFO.md)
+- [GTPCPATHINFONUM（GTPC路径数目）](configobject/UNC/20.15.2/GTPCPATHINFONUM.md)
+- [GTPCPATHNUM（GTP-C路径个数）](configobject/UNC/20.15.2/GTPCPATHNUM.md)
+- [GTPCSTATUSINFO（GTP-C路径当前及历史状态）](configobject/UNC/20.15.2/GTPCSTATUSINFO.md)
+- [GTPPDPNUM（用户面PDP上下文数目）](configobject/UNC/20.15.2/GTPPDPNUM.md)
+- [GTPUPATHNUM（GTP-U路径个数）](configobject/UNC/20.15.2/GTPUPATHNUM.md)
+- [GTPUPDP（用户面PDP上下文信息）](configobject/UNC/20.15.2/GTPUPDP.md)
+- [GWFAULTINF（网关故障信息）](configobject/UNC/20.15.2/GWFAULTINF.md)
+- [HARESULT（HA选举结果）](configobject/UNC/20.15.2/HARESULT.md)
+- [HASTAT（系统HA状态）](configobject/UNC/20.15.2/HASTAT.md)
+- [HISTALM（历史告警）](configobject/UNC/20.15.2/HISTALM.md)
+- [HTROFCINFO（HTR局向信息）](configobject/UNC/20.15.2/HTROFCINFO.md)
+- [HTROFCPERF（HTR局向统计信息）](configobject/UNC/20.15.2/HTROFCPERF.md)
+- [HTTPDIALUSR（HTTP拨测用户信息）](configobject/UNC/20.15.2/HTTPDIALUSR.md)
+- [HTTPFRAMEDBG（HTTP调试信息）](configobject/UNC/20.15.2/HTTPFRAMEDBG.md)
+- [HTTPHTRINFO（HTR信息）](configobject/UNC/20.15.2/HTTPHTRINFO.md)
+- [HTTPINTFDSCP（HTTP服务存储的接口DSCP信息）](configobject/UNC/20.15.2/HTTPINTFDSCP.md)
+- [HTTPLINKHISTORY（HTTP历史链路状态）](configobject/UNC/20.15.2/HTTPLINKHISTORY.md)
+- [HTTPNFINST（HTTP服务存储的NF实例信息）](configobject/UNC/20.15.2/HTTPNFINST.md)
+- [HTTPPLMN（HTTP服务存储的PLMN）](configobject/UNC/20.15.2/HTTPPLMN.md)
+- [HTTPPROCESS（HTTP进程信息）](configobject/UNC/20.15.2/HTTPPROCESS.md)
+- [HTTPRESUSG（HTTP资源使用信息）](configobject/UNC/20.15.2/HTTPRESUSG.md)
+- [HTTPSVRFAULINK（HTTP服务端故障链路）](configobject/UNC/20.15.2/HTTPSVRFAULINK.md)
+- [HTTPUPGSTAGE（HTTP灰度升级状态）](configobject/UNC/20.15.2/HTTPUPGSTAGE.md)
+- [ICMP6STAT（ICMP6统计）](configobject/UNC/20.15.2/ICMP6STAT.md)
+- [ICMPSTATISTIC（ICMP报文统计）](configobject/UNC/20.15.2/ICMPSTATISTIC.md)
+- [IFDIAGDATA（接口诊断数据）](configobject/UNC/20.15.2/IFDIAGDATA.md)
+- [IFMINNERDATA（IFM模块内部数据）](configobject/UNC/20.15.2/IFMINNERDATA.md)
+- [IFSTATUS（接口状态信息）](configobject/UNC/20.15.2/IFSTATUS.md)
+- [IKEINNERPOLICY（IKE内部负载分担策略信息）](configobject/UNC/20.15.2/IKEINNERPOLICY.md)
+- [IMSBYPASSUSER（进入语音PCF/PCRF故障Bypass状态的用户的IMSI列表）](configobject/UNC/20.15.2/IMSBYPASSUSER.md)
+- [IMSI（指定MSISDN用户IMSI）](configobject/UNC/20.15.2/IMSI.md)
+- [INHREGNF（禁止的NF）](configobject/UNC/20.15.2/INHREGNF.md)
+- [INNERCOMPVERSION（系统内部部件版本信息）](configobject/UNC/20.15.2/INNERCOMPVERSION.md)
+- [INSTANCESTATUS（输入微服务名称下所有实例的具体信息）](configobject/UNC/20.15.2/INSTANCESTATUS.md)
+- [INSTPROGRESS（VNFC实例化进度）](configobject/UNC/20.15.2/INSTPROGRESS.md)
+- [IPBLACKBOX（PP4黑匣子信息）](configobject/UNC/20.15.2/IPBLACKBOX.md)
+- [IPINFO（IP相关信息）](configobject/UNC/20.15.2/IPINFO.md)
+- [IPINFOMCR（IP相关信息）](configobject/UNC/20.15.2/IPINFOMCR.md)
+- [IPINNERDATA（PP4模块内部数据）](configobject/UNC/20.15.2/IPINNERDATA.md)
+- [IPNSVC（IP网络NSVC配置表）](configobject/UNC/20.15.2/IPNSVC.md)
+- [IPPATH（PP4路径信息）](configobject/UNC/20.15.2/IPPATH.md)
+- [IPSECCOMPONENT（IPsec组件信息）](configobject/UNC/20.15.2/IPSECCOMPONENT.md)
+- [IPSECFWDSTAT（IPsec转发统计）](configobject/UNC/20.15.2/IPSECFWDSTAT.md)
+- [IPSECPKTSTC（IPsec报文统计信息）](configobject/UNC/20.15.2/IPSECPKTSTC.md)
+- [IPSECSATABLE（IPsec SA表信息）](configobject/UNC/20.15.2/IPSECSATABLE.md)
+- [IPSOCKET（IP Socket状态）](configobject/UNC/20.15.2/IPSOCKET.md)
+- [IPV6BLACKBOX（IPv6黑匣子信息）](configobject/UNC/20.15.2/IPV6BLACKBOX.md)
+- [IPV6BLACKLIST（IPv6黑名单统计信息）](configobject/UNC/20.15.2/IPV6BLACKLIST.md)
+- [IPV6HASTATE（IPv6组件与其他组件交互信息）](configobject/UNC/20.15.2/IPV6HASTATE.md)
+- [IPV6INFO（IPv6诊断信息）](configobject/UNC/20.15.2/IPV6INFO.md)
+- [IPV6PATH（IPv6 Path信息）](configobject/UNC/20.15.2/IPV6PATH.md)
+- [KPIRES（关键资源信息）](configobject/UNC/20.15.2/KPIRES.md)
+- [LBFLOWRULE（业务引流规则）](configobject/UNC/20.15.2/LBFLOWRULE.md)
+- [LBFLOWRULEV6（业务IPv6引流规则）](configobject/UNC/20.15.2/LBFLOWRULEV6.md)
+- [LBGRGRP（容灾组信息）](configobject/UNC/20.15.2/LBGRGRP.md)
+- [LBPLUGIN（CSLB的插件信息）](configobject/UNC/20.15.2/LBPLUGIN.md)
+- [LBPLUGINVPNTOPO（CSLB插件侧VPN对应的转发拓扑）](configobject/UNC/20.15.2/LBPLUGINVPNTOPO.md)
+- [LBPLY（负载均衡策略）](configobject/UNC/20.15.2/LBPLY.md)
+- [LBPROC（CSLB进程）](configobject/UNC/20.15.2/LBPROC.md)
+- [LBRTCMTY（路由团体属性信息）](configobject/UNC/20.15.2/LBRTCMTY.md)
+- [LBSRVINST（LB服务实例）](configobject/UNC/20.15.2/LBSRVINST.md)
+- [LBSRVINSTIDREL（服务ID与服务实例的关系）](configobject/UNC/20.15.2/LBSRVINSTIDREL.md)
+- [LBSTATUS（CSLB的状态）](configobject/UNC/20.15.2/LBSTATUS.md)
+- [LBTN（隧道信息）](configobject/UNC/20.15.2/LBTN.md)
+- [LBTNBINDPLY（业务服务ID与隧道组ID的关系）](configobject/UNC/20.15.2/LBTNBINDPLY.md)
+- [LBTNGROUP（隧道组信息）](configobject/UNC/20.15.2/LBTNGROUP.md)
+- [LBTOPO（SDRC中缓存的CSLB的拓扑）](configobject/UNC/20.15.2/LBTOPO.md)
+- [LBVPN（CSLB上的VPN信息）](configobject/UNC/20.15.2/LBVPN.md)
+- [LBVPNTOPO（CSLB VPN对应的MPE或SFE拓扑）](configobject/UNC/20.15.2/LBVPNTOPO.md)
+- [LCMLOG（网元生命周期管理日志）](configobject/UNC/20.15.2/LCMLOG.md)
+- [LCS（LCS资源状态）](configobject/UNC/20.15.2/LCS.md)
+- [LCSBYIMSI（指定IMSI用户LCS签约信息）](configobject/UNC/20.15.2/LCSBYIMSI.md)
+- [LCSTASKINFO（定位任务信息）](configobject/UNC/20.15.2/LCSTASKINFO.md)
+- [LDMINNERDATA（LDM诊断信息）](configobject/UNC/20.15.2/LDMINNERDATA.md)
+- [LDPBFDTNNLSESSION（BFD For LDP Tunnel的BFD会话）](configobject/UNC/20.15.2/LDPBFDTNNLSESSION.md)
+- [LDPBLACKBOX（LDP记录的黑匣子信息）](configobject/UNC/20.15.2/LDPBLACKBOX.md)
+- [LDPFEC（LDP FEC）](configobject/UNC/20.15.2/LDPFEC.md)
+- [LDPLSP（LDP LSP）](configobject/UNC/20.15.2/LDPLSP.md)
+- [LDPLSPDOWN（LDP LSP Down的信息）](configobject/UNC/20.15.2/LDPLSPDOWN.md)
+- [LDPLSPMGDSSUB（LDP的下游信息）](configobject/UNC/20.15.2/LDPLSPMGDSSUB.md)
+- [LDPLSPMGFEC（LDP LSP管理组件的FEC信息）](configobject/UNC/20.15.2/LDPLSPMGFEC.md)
+- [LDPLSPMGIID（LDP的IID信息）](configobject/UNC/20.15.2/LDPLSPMGIID.md)
+- [LDPLSPMGLSP（LDP的LSP信息）](configobject/UNC/20.15.2/LDPLSPMGLSP.md)
+- [LDPLSPMGOUTSEG（LDP LSP管理组件Outsegment转发表项）](configobject/UNC/20.15.2/LDPLSPMGOUTSEG.md)
+- [LDPLSPMGPEERADDR（LDP的邻居地址信息）](configobject/UNC/20.15.2/LDPLSPMGPEERADDR.md)
+- [LDPLSPMGROUTE（LDP LSP管理组件的路由信息）](configobject/UNC/20.15.2/LDPLSPMGROUTE.md)
+- [LDPNEMGADJ（LDP的邻居信息）](configobject/UNC/20.15.2/LDPNEMGADJ.md)
+- [LDPNEMGIF（LDP的接口信息）](configobject/UNC/20.15.2/LDPNEMGIF.md)
+- [LDPNEMGSOCKET（LDP邻居管理的Socket信息）](configobject/UNC/20.15.2/LDPNEMGSOCKET.md)
+- [LDPPEER（LDP邻居）](configobject/UNC/20.15.2/LDPPEER.md)
+- [LDPSESSIONDOWN（LDP会话Down的相关信息）](configobject/UNC/20.15.2/LDPSESSIONDOWN.md)
+- [LDPSSMGDSCB（LDP会话管理模块的下游信息）](configobject/UNC/20.15.2/LDPSSMGDSCB.md)
+- [LDPSSMGLSSOCK（LDP的Listen Socket信息）](configobject/UNC/20.15.2/LDPSSMGLSSOCK.md)
+- [LDPSSMGSSN（LDP的会话信息）](configobject/UNC/20.15.2/LDPSSMGSSN.md)
+- [LDPSSMGTCPSOCK（LDP的TCP Socket信息）](configobject/UNC/20.15.2/LDPSSMGTCPSOCK.md)
+- [LICENSEPEAK（话务高峰信息）](configobject/UNC/20.15.2/LICENSEPEAK.md)
+- [LICENSERES（License资源）](configobject/UNC/20.15.2/LICENSERES.md)
+- [LINKINFO（链路信息）](configobject/UNC/20.15.2/LINKINFO.md)
+- [LLAINNERDATA（LLA诊断信息）](configobject/UNC/20.15.2/LLAINNERDATA.md)
+- [LOCALKEYPAIR（本地公钥）](configobject/UNC/20.15.2/LOCALKEYPAIR.md)
+- [LOCALRECOVERY（本端Recovery值及系统重启时间）](configobject/UNC/20.15.2/LOCALRECOVERY.md)
+- [LOCATION（用户当前位置）](configobject/UNC/20.15.2/LOCATION.md)
+- [LOGAPFM（日志代理性能统计信息）](configobject/UNC/20.15.2/LOGAPFM.md)
+- [LOGBUFFER（Logbuffer中的数据）](configobject/UNC/20.15.2/LOGBUFFER.md)
+- [LOGDIC（日志模型信息）](configobject/UNC/20.15.2/LOGDIC.md)
+- [LOGERRORINFO（日志模块错误信息）](configobject/UNC/20.15.2/LOGERRORINFO.md)
+- [LOGEVENT（事件日志信息）](configobject/UNC/20.15.2/LOGEVENT.md)
+- [LOGFILESTORAGE（日志存储信息）](configobject/UNC/20.15.2/LOGFILESTORAGE.md)
+- [LOGMESSAGESEND（日志发送的信息）](configobject/UNC/20.15.2/LOGMESSAGESEND.md)
+- [LOGSERVERDROPSTC（日志丢弃统计信息）](configobject/UNC/20.15.2/LOGSERVERDROPSTC.md)
+- [LOGSERVERSTC（日志中心5分钟内消息统计信息）](configobject/UNC/20.15.2/LOGSERVERSTC.md)
+- [LOGSPFM（日志中心性能统计信息）](configobject/UNC/20.15.2/LOGSPFM.md)
+- [LOWPRIAPNFCSTAT（低优先级APN流控状态统计）](configobject/UNC/20.15.2/LOWPRIAPNFCSTAT.md)
+- [LOWPRIOFCSTAT（低优先级流控状态统计）](configobject/UNC/20.15.2/LOWPRIOFCSTAT.md)
+- [MASALMDETAIL（5G告警详细信息）](configobject/UNC/20.15.2/MASALMDETAIL.md)
+- [MASKALM（被屏蔽告警）](configobject/UNC/20.15.2/MASKALM.md)
+- [MCASTPAEELB（组播引流表项叶子信息）](configobject/UNC/20.15.2/MCASTPAEELB.md)
+- [MCASTPAEROUTE（组播引流表项信息）](configobject/UNC/20.15.2/MCASTPAEROUTE.md)
+- [MCASTPAESOURCE（组播源引流信息）](configobject/UNC/20.15.2/MCASTPAESOURCE.md)
+- [MCASTSOCKSTATE（组播Socket信息）](configobject/UNC/20.15.2/MCASTSOCKSTATE.md)
+- [MCASTTIMER（组播定时器信息）](configobject/UNC/20.15.2/MCASTTIMER.md)
+- [MEASMOC（话统测量对象类模型）](configobject/UNC/20.15.2/MEASMOC.md)
+- [MEASOBJ（话统测量对象实例）](configobject/UNC/20.15.2/MEASOBJ.md)
+- [MEASSPECS（话统规格）](configobject/UNC/20.15.2/MEASSPECS.md)
+- [MEASSTAT（话统指标测量状态）](configobject/UNC/20.15.2/MEASSTAT.md)
+- [MEASTASK（话统测量任务）](configobject/UNC/20.15.2/MEASTASK.md)
+- [MEASTREND（话统指标统计趋势）](configobject/UNC/20.15.2/MEASTREND.md)
+- [MEASUNIT（测量指标模型）](configobject/UNC/20.15.2/MEASUNIT.md)
+- [MEM（资源内存信息）](configobject/UNC/20.15.2/MEM.md)
+- [MEMERRORINFO（内存错误信息）](configobject/UNC/20.15.2/MEMERRORINFO.md)
+- [MEMINFO（APP内存信息）](configobject/UNC/20.15.2/MEMINFO.md)
+- [MEMORYINSPECT（dopra相关内存信息）](configobject/UNC/20.15.2/MEMORYINSPECT.md)
+- [MGMDCTRLCNT（IGMP报文统计计数）](configobject/UNC/20.15.2/MGMDCTRLCNT.md)
+- [MGMDSOURCE（IGMP加入源信息）](configobject/UNC/20.15.2/MGMDSOURCE.md)
+- [MKINFO（主密钥信息）](configobject/UNC/20.15.2/MKINFO.md)
+- [MKUNSYNCTARGET（主密钥未同步的对象）](configobject/UNC/20.15.2/MKUNSYNCTARGET.md)
+- [MMCTX（MM上下文）](configobject/UNC/20.15.2/MMCTX.md)
+- [MMCTXEXT（MM上下文扩展信息）](configobject/UNC/20.15.2/MMCTXEXT.md)
+- [MMDBGINFO（MM移动性管理相关的调试信息）](configobject/UNC/20.15.2/MMDBGINFO.md)
+- [MMERESETFLG（MME复位标志）](configobject/UNC/20.15.2/MMERESETFLG.md)
+- [MMLLINKINFO（MML服务连接信息）](configobject/UNC/20.15.2/MMLLINKINFO.md)
+- [MPACV4RULESTAT（IPv4 MPAC策略匹配统计）](configobject/UNC/20.15.2/MPACV4RULESTAT.md)
+- [MPACV6RULESTAT（IPv6 MPAC策略匹配统计）](configobject/UNC/20.15.2/MPACV6RULESTAT.md)
+- [MPLSLSPSTC（MPLS LSP统计信息）](configobject/UNC/20.15.2/MPLSLSPSTC.md)
+- [MPROCCPUSTAT（进程CPU信息）](configobject/UNC/20.15.2/MPROCCPUSTAT.md)
+- [MPROCMEMSTAT（进程内存信息）](configobject/UNC/20.15.2/MPROCMEMSTAT.md)
+- [MPROCRESSTAT（进程资源数量）](configobject/UNC/20.15.2/MPROCRESSTAT.md)
+- [MSACTIVE（服务主实例相关信息）](configobject/UNC/20.15.2/MSACTIVE.md)
+- [MSISDN（指定IMSI用户MSISDN信息）](configobject/UNC/20.15.2/MSISDN.md)
+- [MSPROCTYPE（微服务进程类型）](configobject/UNC/20.15.2/MSPROCTYPE.md)
+- [MSSACLERRINFO（软转发支撑访问控制列表模块错误信息）](configobject/UNC/20.15.2/MSSACLERRINFO.md)
+- [MSSACLINFO（软转发支撑访问控制列表模块全局信息）](configobject/UNC/20.15.2/MSSACLINFO.md)
+- [MSSACLKEYINFO（通过软转发支撑报文关键字查询访问控制列表的结果）](configobject/UNC/20.15.2/MSSACLKEYINFO.md)
+- [MSSACLRULEINFO（软转发支撑访问控制列表中表项的内容）](configobject/UNC/20.15.2/MSSACLRULEINFO.md)
+- [MSSACLTBLINFO（软转发支撑访问控制列表详细信息）](configobject/UNC/20.15.2/MSSACLTBLINFO.md)
+- [MSSADAPTDETAILPHYSICAL（适配层物理表详细信息）](configobject/UNC/20.15.2/MSSADAPTDETAILPHYSICAL.md)
+- [MSSADAPTDETAILSERVICE（适配层业务表详细信息）](configobject/UNC/20.15.2/MSSADAPTDETAILSERVICE.md)
+- [MSSADAPTINFO（适配层全局信息）](configobject/UNC/20.15.2/MSSADAPTINFO.md)
+- [MSSCNTINFOBRI（简要计数器信息）](configobject/UNC/20.15.2/MSSCNTINFOBRI.md)
+- [MSSCNTINFOCNT（指定计数器ID的计数器信息）](configobject/UNC/20.15.2/MSSCNTINFOCNT.md)
+- [MSSCNTINFOGRP（指定组ID的计数器信息）](configobject/UNC/20.15.2/MSSCNTINFOGRP.md)
+- [MSSCOMFBSUM（通信功能块摘要信息）](configobject/UNC/20.15.2/MSSCOMFBSUM.md)
+- [MSSCOMMADAPTSERV（通信服务信息）](configobject/UNC/20.15.2/MSSCOMMADAPTSERV.md)
+- [MSSCOMMFB（通信功能块信息）](configobject/UNC/20.15.2/MSSCOMMFB.md)
+- [MSSCOMMINS（通信实例信息）](configobject/UNC/20.15.2/MSSCOMMINS.md)
+- [MSSCOMMMSGPOOL（通信消息池信息）](configobject/UNC/20.15.2/MSSCOMMMSGPOOL.md)
+- [MSSCOMMSTAT（通信模块规则匹配统计信息）](configobject/UNC/20.15.2/MSSCOMMSTAT.md)
+- [MSSCOMMSVCID（指定服务号的服务类型信息）](configobject/UNC/20.15.2/MSSCOMMSVCID.md)
+- [MSSCOMMSVCTHRD（指定线程的服务类型信息）](configobject/UNC/20.15.2/MSSCOMMSVCTHRD.md)
+- [MSSCOUNTERINFO（指定组ID和计数器ID的计数器信息）](configobject/UNC/20.15.2/MSSCOUNTERINFO.md)
+- [MSSDEBUGINFO（维测开关状态）](configobject/UNC/20.15.2/MSSDEBUGINFO.md)
+- [MSSDEBUGINFOM（维测开关状态）](configobject/UNC/20.15.2/MSSDEBUGINFOM.md)
+- [MSSFMMPROCESS（FMM的PBUF的进程信息）](configobject/UNC/20.15.2/MSSFMMPROCESS.md)
+- [MSSFMMSUMMARY（FMM的PBUF概要信息）](configobject/UNC/20.15.2/MSSFMMSUMMARY.md)
+- [MSSLOGINFO（日志详细信息）](configobject/UNC/20.15.2/MSSLOGINFO.md)
+- [MSSLOGQUEUE（日志队列详细信息）](configobject/UNC/20.15.2/MSSLOGQUEUE.md)
+- [MSSOEPRECISION（MSS保序队列调度信息）](configobject/UNC/20.15.2/MSSOEPRECISION.md)
+- [MSSOEREGISTER（用户注册的保序信息）](configobject/UNC/20.15.2/MSSOEREGISTER.md)
+- [MSSPBUFINFO（根据索引号查询PBUF信息）](configobject/UNC/20.15.2/MSSPBUFINFO.md)
+- [MSSPBUFLEAK（泄漏的PBUF缓存信息）](configobject/UNC/20.15.2/MSSPBUFLEAK.md)
+- [MSSPORTHWSTC（端口硬件统计信息）](configobject/UNC/20.15.2/MSSPORTHWSTC.md)
+- [MSSPORTINFO（端口信息）](configobject/UNC/20.15.2/MSSPORTINFO.md)
+- [MSSPORTPMDDRV（端口PMD驱动信息）](configobject/UNC/20.15.2/MSSPORTPMDDRV.md)
+- [MSSPORTQUEUESTC（端口队列统计信息）](configobject/UNC/20.15.2/MSSPORTQUEUESTC.md)
+- [MSSPROCINFO（FMM的进程信息）](configobject/UNC/20.15.2/MSSPROCINFO.md)
+- [MSSQUEDETINFO（指定队列详细信息）](configobject/UNC/20.15.2/MSSQUEDETINFO.md)
+- [MSSQUEDETINFOM（指定队列详细信息）](configobject/UNC/20.15.2/MSSQUEDETINFOM.md)
+- [MSSQUEINFO（队列总体信息）](configobject/UNC/20.15.2/MSSQUEINFO.md)
+- [MSSQUEINFOM（队列总体信息）](configobject/UNC/20.15.2/MSSQUEINFOM.md)
+- [MSSSCHGRPFIX（调度组详细统计信息）](configobject/UNC/20.15.2/MSSSCHGRPFIX.md)
+- [MSSSCHGRPHEAD（调度组统计概要信息）](configobject/UNC/20.15.2/MSSSCHGRPHEAD.md)
+- [MSSSCHGRPTAIL（调度组统计信息）](configobject/UNC/20.15.2/MSSSCHGRPTAIL.md)
+- [MSSSCHOEHEAD（保序统计信息）](configobject/UNC/20.15.2/MSSSCHOEHEAD.md)
+- [MSSSCHOETAIL（保序详细统计信息）](configobject/UNC/20.15.2/MSSSCHOETAIL.md)
+- [MSSSCHSUMHEAD（调度部署概要信息）](configobject/UNC/20.15.2/MSSSCHSUMHEAD.md)
+- [MSSSCHSUMTAIL（调度部署详细信息）](configobject/UNC/20.15.2/MSSSCHSUMTAIL.md)
+- [MSSSCHSUMTAILM（调度部署详细信息）](configobject/UNC/20.15.2/MSSSCHSUMTAILM.md)
+- [MSSSCHTHRDLOAD（调度线程负载信息）](configobject/UNC/20.15.2/MSSSCHTHRDLOAD.md)
+- [MSSSCHTHREADFIX（调度工作线程信息）](configobject/UNC/20.15.2/MSSSCHTHREADFIX.md)
+- [MSSSCHTHREADGROUP（MSS线程级调度组的维测信息）](configobject/UNC/20.15.2/MSSSCHTHREADGROUP.md)
+- [MSSSCHTHREADHEAD（调度线程概要信息）](configobject/UNC/20.15.2/MSSSCHTHREADHEAD.md)
+- [MSSSCHTHREADHEADM（调度线程概要信息）](configobject/UNC/20.15.2/MSSSCHTHREADHEADM.md)
+- [MSSSCHTHREADQUEUE（MSS线程级调度队列的维测信息）](configobject/UNC/20.15.2/MSSSCHTHREADQUEUE.md)
+- [MSSSCHTHREADTAIL（调度线程组信息）](configobject/UNC/20.15.2/MSSSCHTHREADTAIL.md)
+- [MSSSCHTRACE（调度线程轨迹信息）](configobject/UNC/20.15.2/MSSSCHTRACE.md)
+- [MSSSCHWORK（调度工作类型信息）](configobject/UNC/20.15.2/MSSSCHWORK.md)
+- [MSSSCHWORKGROUP（调度组工作类型信息）](configobject/UNC/20.15.2/MSSSCHWORKGROUP.md)
+- [MSSSCHWORKM（调度工作类型信息）](configobject/UNC/20.15.2/MSSSCHWORKM.md)
+- [MSSTBMDETINFO（通过表号查询表的详细信息）](configobject/UNC/20.15.2/MSSTBMDETINFO.md)
+- [MSSTBMFIB4（通过关键字查询第四版互联网协议转发表的结果）](configobject/UNC/20.15.2/MSSTBMFIB4.md)
+- [MSSTBMFIB6（通过关键字查询第六版因特网协议转发表的结果）](configobject/UNC/20.15.2/MSSTBMFIB6.md)
+- [MSSTBMHASH（通过关键字查询哈希表的结果）](configobject/UNC/20.15.2/MSSTBMHASH.md)
+- [MSSTBMINFO（表管理模块全局信息）](configobject/UNC/20.15.2/MSSTBMINFO.md)
+- [MSSTBMLINEAR（通过关键字查询线性表的结果）](configobject/UNC/20.15.2/MSSTBMLINEAR.md)
+- [MSSTIMERINFOHEAD（定时器全局信息）](configobject/UNC/20.15.2/MSSTIMERINFOHEAD.md)
+- [MSSTIMERINFOTAIL（定时器详细信息）](configobject/UNC/20.15.2/MSSTIMERINFOTAIL.md)
+- [MSSTIMERSTAT（定时器精度统计信息）](configobject/UNC/20.15.2/MSSTIMERSTAT.md)
+- [MSSWORKRUNTIME（Work运行时间信息）](configobject/UNC/20.15.2/MSSWORKRUNTIME.md)
+- [MSSWPREC（微服务主实例切换历史记录）](configobject/UNC/20.15.2/MSSWPREC.md)
+- [MTSMODEL（消息跟踪模型）](configobject/UNC/20.15.2/MTSMODEL.md)
+- [MULDNNPDUSES（专用DNN会话信息）](configobject/UNC/20.15.2/MULDNNPDUSES.md)
+- [MULDNNSESSNUM（专用DNN会话数）](configobject/UNC/20.15.2/MULDNNSESSNUM.md)
+- [MVNOUSR（MVNO用户信息）](configobject/UNC/20.15.2/MVNOUSR.md)
+- [N2LINKINFO（N2链路信息）](configobject/UNC/20.15.2/N2LINKINFO.md)
+- [NBFCSTAT（NB流控状态统计）](configobject/UNC/20.15.2/NBFCSTAT.md)
+- [NCCCAPABILITY（设备所支持的NETCONFC协议能力集）](configobject/UNC/20.15.2/NCCCAPABILITY.md)
+- [NCCDIAGLOG（NETCONFC与其他组件的消息交互信息）](configobject/UNC/20.15.2/NCCDIAGLOG.md)
+- [NCCPEERLIST（NETCONFC管理的远端设备的信息）](configobject/UNC/20.15.2/NCCPEERLIST.md)
+- [NCCSESSION（NETCONFC会话信息）](configobject/UNC/20.15.2/NCCSESSION.md)
+- [NCCSYNCINFO（NETCONFC的配置同步信息）](configobject/UNC/20.15.2/NCCSYNCINFO.md)
+- [NCGISFINCDR（NCG是否有最终话单文件）](configobject/UNC/20.15.2/NCGISFINCDR.md)
+- [NCSCAPABILITY（设备所支持的NETCONF协议能力集）](configobject/UNC/20.15.2/NCSCAPABILITY.md)
+- [NCSDATAMODEL（设备当前已加载的NETCONF数据模型）](configobject/UNC/20.15.2/NCSDATAMODEL.md)
+- [NCSDIAGLOG（会话中NETCONF和其它组件的消息交互信息）](configobject/UNC/20.15.2/NCSDIAGLOG.md)
+- [NCSFAILOPER（操作失败信息）](configobject/UNC/20.15.2/NCSFAILOPER.md)
+- [NCSNTFFAIL（通知消息发送失败信息）](configobject/UNC/20.15.2/NCSNTFFAIL.md)
+- [NCSNTFSTC（NETCONF通知会话的统计信息）](configobject/UNC/20.15.2/NCSNTFSTC.md)
+- [NCSNTFSUB（所有订阅通知事件信息）](configobject/UNC/20.15.2/NCSNTFSUB.md)
+- [NCSPROXYFAILOPER（NETCONF代理操作失败信息）](configobject/UNC/20.15.2/NCSPROXYFAILOPER.md)
+- [NCSPROXYFWD（NETCONF代理转发策略）](configobject/UNC/20.15.2/NCSPROXYFWD.md)
+- [NCSPROXYSESSION（所有NETCONF代理VNFC会话信息）](configobject/UNC/20.15.2/NCSPROXYSESSION.md)
+- [NCSRPCERROR（最近的RPC和错误RPC响应报文信息）](configobject/UNC/20.15.2/NCSRPCERROR.md)
+- [NCSSCHEMAMAP（应用模型间模型映射关联关系）](configobject/UNC/20.15.2/NCSSCHEMAMAP.md)
+- [NCSSESSION（NETCONF会话信息）](configobject/UNC/20.15.2/NCSSESSION.md)
+- [NCSSESSIONSTC（NETCONF会话的统计信息）](configobject/UNC/20.15.2/NCSSESSIONSTC.md)
+- [NCSSYNCFULL（全量同步操作的诊断信息）](configobject/UNC/20.15.2/NCSSYNCFULL.md)
+- [NCSSYNCFULLSTC（全量同步操作期间的统计信息）](configobject/UNC/20.15.2/NCSSYNCFULLSTC.md)
+- [NDBLACKBOX（ND黑匣子信息）](configobject/UNC/20.15.2/NDBLACKBOX.md)
+- [NDHASTATE（ND与其他组件之间交互状态信息）](configobject/UNC/20.15.2/NDHASTATE.md)
+- [NDIFNET（使能IPv6接口ND控制块内容）](configobject/UNC/20.15.2/NDIFNET.md)
+- [NDINFO（ND控制块信息）](configobject/UNC/20.15.2/NDINFO.md)
+- [NDNBVERBOSE（邻居表项详细信息）](configobject/UNC/20.15.2/NDNBVERBOSE.md)
+- [NEGOSTATE（所有进程的协商状态信息）](configobject/UNC/20.15.2/NEGOSTATE.md)
+- [NETINSTRU（网络实例对应RU信息）](configobject/UNC/20.15.2/NETINSTRU.md)
+- [NEXTHOP（负载均衡下一跳）](configobject/UNC/20.15.2/NEXTHOP.md)
+- [NFREGNRFSTATUS（NF向NRF注册状态）](configobject/UNC/20.15.2/NFREGNRFSTATUS.md)
+- [NFSUBCONDITIONS（NF订阅信息）](configobject/UNC/20.15.2/NFSUBCONDITIONS.md)
+- [NFVIUPDRECVHIST（分批升级历史）](configobject/UNC/20.15.2/NFVIUPDRECVHIST.md)
+- [NGALMDETAIL（5G告警详细信息）](configobject/UNC/20.15.2/NGALMDETAIL.md)
+- [NGAPLINK（NGAP链路信息）](configobject/UNC/20.15.2/NGAPLINK.md)
+- [NGCOMMONDBG（调试信息）](configobject/UNC/20.15.2/NGCOMMONDBG.md)
+- [NGIMSI（用户IMSI信息）](configobject/UNC/20.15.2/NGIMSI.md)
+- [NGLANINFO（5G LAN组会话信息）](configobject/UNC/20.15.2/NGLANINFO.md)
+- [NGLANUPINFO（5G LAN UE会话分布情况）](configobject/UNC/20.15.2/NGLANUPINFO.md)
+- [NGLCSCTX（5G定位上下文信息）](configobject/UNC/20.15.2/NGLCSCTX.md)
+- [NGM2MUSERNUM（5G M2M用户资源数）](configobject/UNC/20.15.2/NGM2MUSERNUM.md)
+- [NGMMCTX（5G移动性管理上下文）](configobject/UNC/20.15.2/NGMMCTX.md)
+- [NGMMCTXEXT（5G移动性管理上下文扩展信息）](configobject/UNC/20.15.2/NGMMCTXEXT.md)
+- [NGPAGING（5G寻呼表）](configobject/UNC/20.15.2/NGPAGING.md)
+- [NGRDUSERNUM（5G容灾用户数）](configobject/UNC/20.15.2/NGRDUSERNUM.md)
+- [NGROAMMMCTX（5G漫游用户移动性管理上下文）](configobject/UNC/20.15.2/NGROAMMMCTX.md)
+- [NGTAIDETECTINFO（NG TAI对象寻呼流控状态信息）](configobject/UNC/20.15.2/NGTAIDETECTINFO.md)
+- [NGUSERNUM（5G用户数）](configobject/UNC/20.15.2/NGUSERNUM.md)
+- [NGUSERRESOURCE（5G用户资源）](configobject/UNC/20.15.2/NGUSERRESOURCE.md)
+- [NODECPUSTAT（Node的CPU信息）](configobject/UNC/20.15.2/NODECPUSTAT.md)
+- [NODEMEMSTAT（Node的内存信息）](configobject/UNC/20.15.2/NODEMEMSTAT.md)
+- [NODERES（节点资源信息）](configobject/UNC/20.15.2/NODERES.md)
+- [NOSBASEIFSTAT（NOS Base平面网络的报文统计信息）](configobject/UNC/20.15.2/NOSBASEIFSTAT.md)
+- [NOSBASEIFSTATUS（NOS Base平面网络的网口状态信息）](configobject/UNC/20.15.2/NOSBASEIFSTATUS.md)
+- [NOSBASENEIGH（NOS Base平面网络的邻居信息）](configobject/UNC/20.15.2/NOSBASENEIGH.md)
+- [NOSBASEROUTE（NOS Base平面网络的路由信息）](configobject/UNC/20.15.2/NOSBASEROUTE.md)
+- [NOSBASESOCKET（NOS Base平面网络的Socket信息）](configobject/UNC/20.15.2/NOSBASESOCKET.md)
+- [NRFDISCERRSTAT（NRF记录的错误统计信息）](configobject/UNC/20.15.2/NRFDISCERRSTAT.md)
+- [NRFIMSI（IMSI号段匹配信息）](configobject/UNC/20.15.2/NRFIMSI.md)
+- [NRFIMSIRTSTC（IMSI路由统计信息）](configobject/UNC/20.15.2/NRFIMSIRTSTC.md)
+- [NRFIMSISTC（IMSI号段统计信息）](configobject/UNC/20.15.2/NRFIMSISTC.md)
+- [NRFLINKINFO（NRF管理的链路信息）](configobject/UNC/20.15.2/NRFLINKINFO.md)
+- [NRFMSISDN（MSISDN号段匹配信息）](configobject/UNC/20.15.2/NRFMSISDN.md)
+- [NRFMSISDNRTSTC（MSISDN路由统计信息）](configobject/UNC/20.15.2/NRFMSISDNRTSTC.md)
+- [NRFMSISDNSTC（MSISDN号段统计信息）](configobject/UNC/20.15.2/NRFMSISDNSTC.md)
+- [NRFSERVICENAME（查看NRF功能实体服务列表）](configobject/UNC/20.15.2/NRFSERVICENAME.md)
+- [NRFSTARTSTAS（NRF开工状态）](configobject/UNC/20.15.2/NRFSTARTSTAS.md)
+- [NRFSUBSTCINFO（NF订阅统计信息）](configobject/UNC/20.15.2/NRFSUBSTCINFO.md)
+- [NRFTPSPEAK（NRF每秒事务数峰值）](configobject/UNC/20.15.2/NRFTPSPEAK.md)
+- [NSSFNSAVLDETAIL（特定AMF下所有动态上报的切片可用性信息）](configobject/UNC/20.15.2/NSSFNSAVLDETAIL.md)
+- [NSSFNSSUBDETAIL（切片可用性订阅详细信息）](configobject/UNC/20.15.2/NSSFNSSUBDETAIL.md)
+- [NSSFNSSUBINFO（订阅任务信息）](configobject/UNC/20.15.2/NSSFNSSUBINFO.md)
+- [NSSFSTARTSTAS（NSSF开工状态）](configobject/UNC/20.15.2/NSSFSTARTSTAS.md)
+- [NSSFTPSPEAK（NSSF每秒事务数峰值）](configobject/UNC/20.15.2/NSSFTPSPEAK.md)
+- [OCSSTATUS（OCS状态）](configobject/UNC/20.15.2/OCSSTATUS.md)
+- [OCSUSERNUM（静态OCS上用户数）](configobject/UNC/20.15.2/OCSUSERNUM.md)
+- [OMDBGDATA（OM模块的调试信息）](configobject/UNC/20.15.2/OMDBGDATA.md)
+- [ONECLICKDEPLOYHIST（一键式部署操作历史）](configobject/UNC/20.15.2/ONECLICKDEPLOYHIST.md)
+- [OPSASSISTHIST（系统助手的历史信息）](configobject/UNC/20.15.2/OPSASSISTHIST.md)
+- [OPSASSISTSTATE（系统助手的当前信息）](configobject/UNC/20.15.2/OPSASSISTSTATE.md)
+- [OPSASSISTVERB（系统助手的详细信息）](configobject/UNC/20.15.2/OPSASSISTVERB.md)
+- [OPSBLACKBOX（开放可编程系统的维护信息）](configobject/UNC/20.15.2/OPSBLACKBOX.md)
+- [OPSPROCESSSTATE（通过OPS运行的应用程序的信息）](configobject/UNC/20.15.2/OPSPROCESSSTATE.md)
+- [OPTLOG（操作日志）](configobject/UNC/20.15.2/OPTLOG.md)
+- [OSPATCH（OS补丁版本号）](configobject/UNC/20.15.2/OSPATCH.md)
+- [OSPFBFD（OSPF BFD状态）](configobject/UNC/20.15.2/OSPFBFD.md)
+- [OSPFCUMULATIVE（OSPF统计信息）](configobject/UNC/20.15.2/OSPFCUMULATIVE.md)
+- [OSPFERRORDATA（OSPF进程的错误信息）](configobject/UNC/20.15.2/OSPFERRORDATA.md)
+- [OSPFERRORLSA（OSPF错误LSA的信息）](configobject/UNC/20.15.2/OSPFERRORLSA.md)
+- [OSPFERRORPACKET（OSPF错误报文的信息）](configobject/UNC/20.15.2/OSPFERRORPACKET.md)
+- [OSPFFRRTOPOLOGY（OSPF的FRR拓扑信息）](configobject/UNC/20.15.2/OSPFFRRTOPOLOGY.md)
+- [OSPFHOSTTABLE（OSPF动态主机名的信息）](configobject/UNC/20.15.2/OSPFHOSTTABLE.md)
+- [OSPFLASTDOWNNBR（OSPF上次Down的邻居）](configobject/UNC/20.15.2/OSPFLASTDOWNNBR.md)
+- [OSPFLDPSYNCSTATE（OSPF LDP联动状态信息）](configobject/UNC/20.15.2/OSPFLDPSYNCSTATE.md)
+- [OSPFLSDB（OSPF链接状态数据库）](configobject/UNC/20.15.2/OSPFLSDB.md)
+- [OSPFLSDBSTATEINFO（OSPF LSDB的状态信息）](configobject/UNC/20.15.2/OSPFLSDBSTATEINFO.md)
+- [OSPFLSDBSTATEVERBOSE（OSPF LSDB详细信息）](configobject/UNC/20.15.2/OSPFLSDBSTATEVERBOSE.md)
+- [OSPFMAXAGELSA（OSPF MaxAge LSA信息）](configobject/UNC/20.15.2/OSPFMAXAGELSA.md)
+- [OSPFORIGINATELSA（Router LSA生成流程的信息）](configobject/UNC/20.15.2/OSPFORIGINATELSA.md)
+- [OSPFROUTESOURCE（OSPF路由源信息）](configobject/UNC/20.15.2/OSPFROUTESOURCE.md)
+- [OSPFROUTING（OSPF路由信息）](configobject/UNC/20.15.2/OSPFROUTING.md)
+- [OSPFSOCKETINFO（OSPF与Socket的交互信息）](configobject/UNC/20.15.2/OSPFSOCKETINFO.md)
+- [OSPFTOPOLOGY（OSPF拓扑信息）](configobject/UNC/20.15.2/OSPFTOPOLOGY.md)
+- [OSPFTOPOSTC（OSPF拓扑的统计信息）](configobject/UNC/20.15.2/OSPFTOPOSTC.md)
+- [OSPFUPDATELSA（OSPF接收的LSA的更新信息）](configobject/UNC/20.15.2/OSPFUPDATELSA.md)
+- [OSPFV3BFD（OSPFv3 BFD状态）](configobject/UNC/20.15.2/OSPFV3BFD.md)
+- [OSPFV3CUMULATIVE（OSPFv3统计信息）](configobject/UNC/20.15.2/OSPFV3CUMULATIVE.md)
+- [OSPFV3FRRTOPOLOGY（OSPFv3的FRR拓扑信息）](configobject/UNC/20.15.2/OSPFV3FRRTOPOLOGY.md)
+- [OSPFV3LASTDOWNNBR（OSPFv3上次Down的邻居）](configobject/UNC/20.15.2/OSPFV3LASTDOWNNBR.md)
+- [OSPFV3LSDB（OSPFv3链接状态数据库）](configobject/UNC/20.15.2/OSPFV3LSDB.md)
+- [OSPFV3LSDBSTATEINFO（OSPFv3 LSDB的状态信息）](configobject/UNC/20.15.2/OSPFV3LSDBSTATEINFO.md)
+- [OSPFV3PEER（OSPFv3邻居信息）](configobject/UNC/20.15.2/OSPFV3PEER.md)
+- [OSPFV3ROUTESOURCE（OSPFv3路由源信息）](configobject/UNC/20.15.2/OSPFV3ROUTESOURCE.md)
+- [OSPFV3ROUTING（OSPFv3路由信息）](configobject/UNC/20.15.2/OSPFV3ROUTING.md)
+- [OSPROCMEMSTATIS（系统进程内存信息）](configobject/UNC/20.15.2/OSPROCMEMSTATIS.md)
+- [OSSYSINFO（OS系统信息）](configobject/UNC/20.15.2/OSSYSINFO.md)
+- [PAEALARMINFO（PAE告警信息）](configobject/UNC/20.15.2/PAEALARMINFO.md)
+- [PAECHANNELSYNC（同步到业务进程的通道信息）](configobject/UNC/20.15.2/PAECHANNELSYNC.md)
+- [PAEDYETRACEINFO（PAE染色跟踪信息）](configobject/UNC/20.15.2/PAEDYETRACEINFO.md)
+- [PAEEXAMSTATE（PAE故障信息）](configobject/UNC/20.15.2/PAEEXAMSTATE.md)
+- [PAEFABDETBRF（Fabric链路探测简要结果）](configobject/UNC/20.15.2/PAEFABDETBRF.md)
+- [PAEFABDETDTL（Fabric链路探测任务的详细结果）](configobject/UNC/20.15.2/PAEFABDETDTL.md)
+- [PAEFABRICLINK（PAE链路信息）](configobject/UNC/20.15.2/PAEFABRICLINK.md)
+- [PAEFWDINSTANCE（PAE转发实例信息）](configobject/UNC/20.15.2/PAEFWDINSTANCE.md)
+- [PAELOOPIPTB（Loop口IP和TB映射信息）](configobject/UNC/20.15.2/PAELOOPIPTB.md)
+- [PAELOOPROUTE（Loop口路由信息）](configobject/UNC/20.15.2/PAELOOPROUTE.md)
+- [PAENETWORKCFG（PAE网络配置信息）](configobject/UNC/20.15.2/PAENETWORKCFG.md)
+- [PAENODE（PAE节点信息）](configobject/UNC/20.15.2/PAENODE.md)
+- [PAEOVERLOADSTAT（PAE过载状态）](configobject/UNC/20.15.2/PAEOVERLOADSTAT.md)
+- [PAEPAYLOADINFO（PAE负载信息）](configobject/UNC/20.15.2/PAEPAYLOADINFO.md)
+- [PAEPORTBYTB（PAE Fabric端口的TB统计信息）](configobject/UNC/20.15.2/PAEPORTBYTB.md)
+- [PAEPORTGROUPINFO（PAE端口组信息）](configobject/UNC/20.15.2/PAEPORTGROUPINFO.md)
+- [PAEPORTINFO（PAE端口基本信息）](configobject/UNC/20.15.2/PAEPORTINFO.md)
+- [PAEPORTQUEUE（PAE多队列信息）](configobject/UNC/20.15.2/PAEPORTQUEUE.md)
+- [PAEPRIMAPQOS（报文优先级与QoS映射信息）](configobject/UNC/20.15.2/PAEPRIMAPQOS.md)
+- [PAEQUEUEINFO（PAE队列信息）](configobject/UNC/20.15.2/PAEQUEUEINFO.md)
+- [PAERULEEXTERN（PAE上外联口规则信息）](configobject/UNC/20.15.2/PAERULEEXTERN.md)
+- [PAERULELOOP3T（PAE上Loop口三元组规则信息）](configobject/UNC/20.15.2/PAERULELOOP3T.md)
+- [PAESCHEDULE（PAE调度统计信息）](configobject/UNC/20.15.2/PAESCHEDULE.md)
+- [PAEUDSSTATUS（UDS链路状态）](configobject/UNC/20.15.2/PAEUDSSTATUS.md)
+- [PARTITIONINFO（RU的磁盘分区信息）](configobject/UNC/20.15.2/PARTITIONINFO.md)
+- [PATCHDETAILINFO（补丁信息）](configobject/UNC/20.15.2/PATCHDETAILINFO.md)
+- [PATCHINFO（系统当前补丁信息）](configobject/UNC/20.15.2/PATCHINFO.md)
+- [PATHMTU（路径MTU）](configobject/UNC/20.15.2/PATHMTU.md)
+- [PCCSESSINFO（PCC会话信息）](configobject/UNC/20.15.2/PCCSESSINFO.md)
+- [PCRFGRPSTATUS（PCRF组状态）](configobject/UNC/20.15.2/PCRFGRPSTATUS.md)
+- [PCRFINFO（PCRF具体信息）](configobject/UNC/20.15.2/PCRFINFO.md)
+- [PCRFSTATUS（PCRF状态）](configobject/UNC/20.15.2/PCRFSTATUS.md)
+- [PCRFUSERNUM（静态PCRF上用户数）](configobject/UNC/20.15.2/PCRFUSERNUM.md)
+- [PDUSESSION（PDU会话）](configobject/UNC/20.15.2/PDUSESSION.md)
+- [PFCPASSOC（PFCP偶联相关数据）](configobject/UNC/20.15.2/PFCPASSOC.md)
+- [PFCPLINKINFO（PFCP链路当前及历史状态）](configobject/UNC/20.15.2/PFCPLINKINFO.md)
+- [PFCPPATHINFO（PFCP链路相关数据）](configobject/UNC/20.15.2/PFCPPATHINFO.md)
+- [PFCPSESSIONINFO（PFCP会话信息）](configobject/UNC/20.15.2/PFCPSESSIONINFO.md)
+- [PFCPSESSIONNUM（PFCP会话上下文数量）](configobject/UNC/20.15.2/PFCPSESSIONNUM.md)
+- [PFCPSESSMIGSTS（PFCP会话迁移任务状态）](configobject/UNC/20.15.2/PFCPSESSMIGSTS.md)
+- [PFRESSTAT（资源状态表）](configobject/UNC/20.15.2/PFRESSTAT.md)
+- [PGWBACKOFFSTAT（P-GW Back-Off流控状态）](configobject/UNC/20.15.2/PGWBACKOFFSTAT.md)
+- [PIMCBSR（CBSR信息）](configobject/UNC/20.15.2/PIMCBSR.md)
+- [PIMCLAIMUP（PIM使用的路由信息）](configobject/UNC/20.15.2/PIMCLAIMUP.md)
+- [PIMCTLMSGCNTIF（PIM接口报文统计计数）](configobject/UNC/20.15.2/PIMCTLMSGCNTIF.md)
+- [PIMCTLMSGCNTVRF（PIM实例报文统计计数）](configobject/UNC/20.15.2/PIMCTLMSGCNTVRF.md)
+- [PIMEBSR（EBSR信息）](configobject/UNC/20.15.2/PIMEBSR.md)
+- [PIMINVPKT（PIM无效报文）](configobject/UNC/20.15.2/PIMINVPKT.md)
+- [PIMINVPKTCNTIF（PIM接口无效报文统计）](configobject/UNC/20.15.2/PIMINVPKTCNTIF.md)
+- [PIMINVPKTCNTVRF（PIM实例无效报文统计）](configobject/UNC/20.15.2/PIMINVPKTCNTVRF.md)
+- [PIMNBR（PIM邻居信息）](configobject/UNC/20.15.2/PIMNBR.md)
+- [PIMROUTEDW（PIM表项下游信息）](configobject/UNC/20.15.2/PIMROUTEDW.md)
+- [PIMROUTEUP（PIM表项上游信息）](configobject/UNC/20.15.2/PIMROUTEUP.md)
+- [PIMRP（RP信息）](configobject/UNC/20.15.2/PIMRP.md)
+- [PIMRPF（PIM RPF路由信息）](configobject/UNC/20.15.2/PIMRPF.md)
+- [PIMRPGROUP（组播组对应的RP信息）](configobject/UNC/20.15.2/PIMRPGROUP.md)
+- [PKICERTLIST（证书列表）](configobject/UNC/20.15.2/PKICERTLIST.md)
+- [PLGPKGDETAILINFO（扩展包详细信息）](configobject/UNC/20.15.2/PLGPKGDETAILINFO.md)
+- [PLGPKGSTATE（扩展包运行状态）](configobject/UNC/20.15.2/PLGPKGSTATE.md)
+- [PLUGINFO（插件信息）](configobject/UNC/20.15.2/PLUGINFO.md)
+- [PLYTRACE（策略跟踪）](configobject/UNC/20.15.2/PLYTRACE.md)
+- [PNFPRICAP（UPF优先级和权重）](configobject/UNC/20.15.2/PNFPRICAP.md)
+- [PODCPUSTAT（pod CPU信息）](configobject/UNC/20.15.2/PODCPUSTAT.md)
+- [PODHEALREC（POD重建历史记录）](configobject/UNC/20.15.2/PODHEALREC.md)
+- [PODINFO（已部署的Pod实例信息）](configobject/UNC/20.15.2/PODINFO.md)
+- [PODMEMSTAT（pod内存信息）](configobject/UNC/20.15.2/PODMEMSTAT.md)
+- [PODMIGRATEHIST（节点扩缩容任务进展）](configobject/UNC/20.15.2/PODMIGRATEHIST.md)
+- [POLICYMAP（策略映射表）](configobject/UNC/20.15.2/POLICYMAP.md)
+- [POLICYNUM（策略数量）](configobject/UNC/20.15.2/POLICYNUM.md)
+- [POOLUSAGE（地址池使用信息）](configobject/UNC/20.15.2/POOLUSAGE.md)
+- [PORT（端口信息）](configobject/UNC/20.15.2/PORT.md)
+- [PREFIXFILTERINFO（IP前缀列表信息）](configobject/UNC/20.15.2/PREFIXFILTERINFO.md)
+- [PROCCHANNALEVENT（逻辑链路事件）](configobject/UNC/20.15.2/PROCCHANNALEVENT.md)
+- [PROCCHANNALSTC（逻辑链路统计信息）](configobject/UNC/20.15.2/PROCCHANNALSTC.md)
+- [PROCESSCG（CG进程信息）](configobject/UNC/20.15.2/PROCESSCG.md)
+- [PROCESSCSDB（CSDB进程信息）](configobject/UNC/20.15.2/PROCESSCSDB.md)
+- [PROCESSCSLB（CSLB进程信息）](configobject/UNC/20.15.2/PROCESSCSLB.md)
+- [PROCESSGB（GB进程信息）](configobject/UNC/20.15.2/PROCESSGB.md)
+- [PROCESSINFO（进程信息）](configobject/UNC/20.15.2/PROCESSINFO.md)
+- [PROCESSLINK（LINK进程信息）](configobject/UNC/20.15.2/PROCESSLINK.md)
+- [PROCESSMCR（MCR进程信息）](configobject/UNC/20.15.2/PROCESSMCR.md)
+- [PROCESSUSN（USN进程信息）](configobject/UNC/20.15.2/PROCESSUSN.md)
+- [PROCFILEHDLSTAT（进程文件句柄使用信息）](configobject/UNC/20.15.2/PROCFILEHDLSTAT.md)
+- [PROCINFO（进程部署信息）](configobject/UNC/20.15.2/PROCINFO.md)
+- [PROCMEMPT（进程内存分区信息）](configobject/UNC/20.15.2/PROCMEMPT.md)
+- [PROCMSGAREA（进程消息分区信息）](configobject/UNC/20.15.2/PROCMSGAREA.md)
+- [PROCMSGQUEUE（进程消息队列信息）](configobject/UNC/20.15.2/PROCMSGQUEUE.md)
+- [PROCRESSTAT（进程资源信息）](configobject/UNC/20.15.2/PROCRESSTAT.md)
+- [PROCTHREAD（进程内线程信息）](configobject/UNC/20.15.2/PROCTHREAD.md)
+- [PROCTIMERSTAT（进程定时器计数信息）](configobject/UNC/20.15.2/PROCTIMERSTAT.md)
+- [PRTGRPINFO（保护组信息）](configobject/UNC/20.15.2/PRTGRPINFO.md)
+- [PTPMS（PTP模块MS上下文）](configobject/UNC/20.15.2/PTPMS.md)
+- [RADIUSAAA（RADIUS AAA测量对象）](configobject/UNC/20.15.2/RADIUSAAA.md)
+- [RAWIPSTATUS（RawIP状态）](configobject/UNC/20.15.2/RAWIPSTATUS.md)
+- [RAWLINKSTATUS（Raw-link状态）](configobject/UNC/20.15.2/RAWLINKSTATUS.md)
+- [RBKVER（升级可回退版本信息）](configobject/UNC/20.15.2/RBKVER.md)
+- [RDSAUTHLINKINFO（Radius鉴权路径信息）](configobject/UNC/20.15.2/RDSAUTHLINKINFO.md)
+- [RDSPFCPSESSINFO（RADIUS中转UPF会话信息）](configobject/UNC/20.15.2/RDSPFCPSESSINFO.md)
+- [RDSPFCPSESSNUM（RADIUS中转UPF的PFCP会话数目）](configobject/UNC/20.15.2/RDSPFCPSESSNUM.md)
+- [RDTTRCTASK（重定向跟踪任务）](configobject/UNC/20.15.2/RDTTRCTASK.md)
+- [REGNFACCESSREC（NF访问记录）](configobject/UNC/20.15.2/REGNFACCESSREC.md)
+- [REGNFINFO（NF信息）](configobject/UNC/20.15.2/REGNFINFO.md)
+- [REGNFPROFILE（网元概述信息）](configobject/UNC/20.15.2/REGNFPROFILE.md)
+- [REGNFSTATEREC（NF的状态变更记录）](configobject/UNC/20.15.2/REGNFSTATEREC.md)
+- [REPORTFAILUREINFO（RU组件上报的故障信息）](configobject/UNC/20.15.2/REPORTFAILUREINFO.md)
+- [RES（资源信息）](configobject/UNC/20.15.2/RES.md)
+- [RESASSERTINFO（断言信息）](configobject/UNC/20.15.2/RESASSERTINFO.md)
+- [RESCOMPONENT（组件信息）](configobject/UNC/20.15.2/RESCOMPONENT.md)
+- [RESDEADLOOPINFO（死循环信息）](configobject/UNC/20.15.2/RESDEADLOOPINFO.md)
+- [RESEXCEPTIONINFO（异常信息）](configobject/UNC/20.15.2/RESEXCEPTIONINFO.md)
+- [RESHASTAT（系统HA状态）](configobject/UNC/20.15.2/RESHASTAT.md)
+- [RESINSTANCETYPE（资源实例类型）](configobject/UNC/20.15.2/RESINSTANCETYPE.md)
+- [RESMEMERRORINFO（内存错误信息）](configobject/UNC/20.15.2/RESMEMERRORINFO.md)
+- [RESNOSBASEIFSTAT（NOS Base平面网络的报文统计信息）](configobject/UNC/20.15.2/RESNOSBASEIFSTAT.md)
+- [RESNOSBASEIFSTATUS（NOS Base平面网络的网口状态信息）](configobject/UNC/20.15.2/RESNOSBASEIFSTATUS.md)
+- [RESNOSBASENEIGH（NOS Base平面网络的邻居信息）](configobject/UNC/20.15.2/RESNOSBASENEIGH.md)
+- [RESNOSBASENETWORK（NOS Base平面网络信息）](configobject/UNC/20.15.2/RESNOSBASENETWORK.md)
+- [RESNOSBASEROUTE（NOS Base平面网络的路由信息）](configobject/UNC/20.15.2/RESNOSBASEROUTE.md)
+- [RESNOSBASESOCKET（NOS Base平面网络的Socket信息）](configobject/UNC/20.15.2/RESNOSBASESOCKET.md)
+- [RESPARTITIONINFO（资源的磁盘分区信息）](configobject/UNC/20.15.2/RESPARTITIONINFO.md)
+- [RESPROCESSINFO（进程信息）](configobject/UNC/20.15.2/RESPROCESSINFO.md)
+- [RESPROCFILEHDLSTAT（进程文件句柄使用信息）](configobject/UNC/20.15.2/RESPROCFILEHDLSTAT.md)
+- [RESPROCMEMPT（进程内存分区信息）](configobject/UNC/20.15.2/RESPROCMEMPT.md)
+- [RESPROCMSGAREA（进程消息分区信息）](configobject/UNC/20.15.2/RESPROCMSGAREA.md)
+- [RESPROCTIMERSTAT（进程定时器计数信息）](configobject/UNC/20.15.2/RESPROCTIMERSTAT.md)
+- [RESREPORTFAILUREINFO（组件上报的故障信息）](configobject/UNC/20.15.2/RESREPORTFAILUREINFO.md)
+- [RESTOMMCTX（容灾用户MM上下文信息）](configobject/UNC/20.15.2/RESTOMMCTX.md)
+- [RESTORELAT（容灾关系信息）](configobject/UNC/20.15.2/RESTORELAT.md)
+- [RESTOSMCTX（容灾用户SM上下文信息）](configobject/UNC/20.15.2/RESTOSMCTX.md)
+- [RESTOUSRCTXNUM（容灾用户数）](configobject/UNC/20.15.2/RESTOUSRCTXNUM.md)
+- [RESTOUSRCTXNUMMCR（容灾用户数）](configobject/UNC/20.15.2/RESTOUSRCTXNUMMCR.md)
+- [REVCERTFILE（证书吊销列表）](configobject/UNC/20.15.2/REVCERTFILE.md)
+- [RISK（系统风险）](configobject/UNC/20.15.2/RISK.md)
+- [RMBLACKBOX（路由管理黑匣子信息）](configobject/UNC/20.15.2/RMBLACKBOX.md)
+- [RMCONSUMERIMPORT（路由管理消费者引入信息）](configobject/UNC/20.15.2/RMCONSUMERIMPORT.md)
+- [RMCONSUMERINFO（路由管理消费者信息）](configobject/UNC/20.15.2/RMCONSUMERINFO.md)
+- [RMCONSUMERSUBSCRIBE（路由管理消费者订阅信息）](configobject/UNC/20.15.2/RMCONSUMERSUBSCRIBE.md)
+- [RMIID（路由管理IID信息）](configobject/UNC/20.15.2/RMIID.md)
+- [RMMSGDETAIL（路由管理消息明细）](configobject/UNC/20.15.2/RMMSGDETAIL.md)
+- [RMMSGSTC（路由管理消息统计信息）](configobject/UNC/20.15.2/RMMSGSTC.md)
+- [RMPREFIXINFO（路由管理前缀信息）](configobject/UNC/20.15.2/RMPREFIXINFO.md)
+- [RMPRODUCERDETAIL（路由管理生产者详细信息）](configobject/UNC/20.15.2/RMPRODUCERDETAIL.md)
+- [RMSMOOTHSTC（路由管理平滑统计信息）](configobject/UNC/20.15.2/RMSMOOTHSTC.md)
+- [RMSTATISTICS（IP路由统计）](configobject/UNC/20.15.2/RMSTATISTICS.md)
+- [RMVERIFICATIONSTC（路由管理对账统计信息）](configobject/UNC/20.15.2/RMVERIFICATIONSTC.md)
+- [RNCUSRNUM（RNC下用户数）](configobject/UNC/20.15.2/RNCUSRNUM.md)
+- [ROUTE（IPv4路由表）](configobject/UNC/20.15.2/ROUTE.md)
+- [ROUTE6（IPv6路由表）](configobject/UNC/20.15.2/ROUTE6.md)
+- [ROUTEPOLICYINFO（路由策略信息）](configobject/UNC/20.15.2/ROUTEPOLICYINFO.md)
+- [RSCBOXHEALREC（ResourceBox重建历史记录）](configobject/UNC/20.15.2/RSCBOXHEALREC.md)
+- [RTMPERFCNTGB（GB性能统计实时结果）](configobject/UNC/20.15.2/RTMPERFCNTGB.md)
+- [RTMPERFCNTLINK（LINK性能统计实时结果）](configobject/UNC/20.15.2/RTMPERFCNTLINK.md)
+- [RTMPERFCNTUSN（USN性能统计实时结果）](configobject/UNC/20.15.2/RTMPERFCNTUSN.md)
+- [RUCPUINFO（RU CPU信息）](configobject/UNC/20.15.2/RUCPUINFO.md)
+- [RUCPUUSGTHRESH（RU CPU占用率、告警上报门限和告警恢复门限）](configobject/UNC/20.15.2/RUCPUUSGTHRESH.md)
+- [RUGROUPSWP（资源单元组主备倒换状态信息）](configobject/UNC/20.15.2/RUGROUPSWP.md)
+- [RVKLICINFO（License失效信息）](configobject/UNC/20.15.2/RVKLICINFO.md)
+- [S1BALANCEINFO（S1接口均衡操作信息）](configobject/UNC/20.15.2/S1BALANCEINFO.md)
+- [S1LOAD（S1模式负载信息）](configobject/UNC/20.15.2/S1LOAD.md)
+- [S1PAGING（S1接口寻呼数据）](configobject/UNC/20.15.2/S1PAGING.md)
+- [S1SMARTINFO（S1模式用户信令状态）](configobject/UNC/20.15.2/S1SMARTINFO.md)
+- [S1TAIDETECTDETAILS（S1 TAI对象寻呼流控状态明细）](configobject/UNC/20.15.2/S1TAIDETECTDETAILS.md)
+- [S1TAIDETECTINFO（S1 TAI对象寻呼流控状态信息）](configobject/UNC/20.15.2/S1TAIDETECTINFO.md)
+- [SBILINKSTATUS（服务化接口链路状态）](configobject/UNC/20.15.2/SBILINKSTATUS.md)
+- [SBIPEERNF（服务化接口对端NF信息）](configobject/UNC/20.15.2/SBIPEERNF.md)
+- [SCALEGROUP（ScaleGroup信息）](configobject/UNC/20.15.2/SCALEGROUP.md)
+- [SCALINGWORKLOAD（扩缩容负载查询）](configobject/UNC/20.15.2/SCALINGWORKLOAD.md)
+- [SCEFMONINFO（能力开放订阅任务信息）](configobject/UNC/20.15.2/SCEFMONINFO.md)
+- [SCTPASID（SCTP偶联ID）](configobject/UNC/20.15.2/SCTPASID.md)
+- [SCTPBALANCEINFO（SCTP均衡信息）](configobject/UNC/20.15.2/SCTPBALANCEINFO.md)
+- [SCTPRXBUFF（SCTP接收缓冲区）](configobject/UNC/20.15.2/SCTPRXBUFF.md)
+- [SCTPTXBUFF（SCTP发送缓冲区）](configobject/UNC/20.15.2/SCTPTXBUFF.md)
+- [SDAPLNK（SDUP链路）](configobject/UNC/20.15.2/SDAPLNK.md)
+- [SDAPRSTCNT（SDAP实体重启计数）](configobject/UNC/20.15.2/SDAPRSTCNT.md)
+- [SDRDBG（SDR调试信息）](configobject/UNC/20.15.2/SDRDBG.md)
+- [SDRKEYMATCH（SDRC中的KeyMatch信息）](configobject/UNC/20.15.2/SDRKEYMATCH.md)
+- [SDRLBPLCY（SDRC中缓存的下一跳组信息）](configobject/UNC/20.15.2/SDRLBPLCY.md)
+- [SDRNEXTHOP（SDRC中缓存的下一跳信息）](configobject/UNC/20.15.2/SDRNEXTHOP.md)
+- [SDRPLCYCHECK（策略核查任务进度）](configobject/UNC/20.15.2/SDRPLCYCHECK.md)
+- [SDRPLYSUBINFO（所有策略订阅者信息）](configobject/UNC/20.15.2/SDRPLYSUBINFO.md)
+- [SDRPLYSUBSTATUS（SDRC中保存的策略订阅关系）](configobject/UNC/20.15.2/SDRPLYSUBSTATUS.md)
+- [SDRPLYSYNCVER（策略同步版本）](configobject/UNC/20.15.2/SDRPLYSYNCVER.md)
+- [SDRPOLICYINFO（SDRC中的策略版本信息）](configobject/UNC/20.15.2/SDRPOLICYINFO.md)
+- [SDRPOLICYKEYS（SDRC中的策略Key信息）](configobject/UNC/20.15.2/SDRPOLICYKEYS.md)
+- [SDRPROCESS（SDRC中缓存的进程信息）](configobject/UNC/20.15.2/SDRPROCESS.md)
+- [SDRROUTE（SDRC中的APPROUTERINFO信息）](configobject/UNC/20.15.2/SDRROUTE.md)
+- [SDRSAPPTYPE（SDRS中的APPTYPE信息）](configobject/UNC/20.15.2/SDRSAPPTYPE.md)
+- [SDRSERVICE（SDRC中的Service信息）](configobject/UNC/20.15.2/SDRSERVICE.md)
+- [SDRSMASTERNODE（HAF向SDRS推送的主节点信息）](configobject/UNC/20.15.2/SDRSMASTERNODE.md)
+- [SDRSROUTE（SDRS中的APPROUTEINFO信息）](configobject/UNC/20.15.2/SDRSROUTE.md)
+- [SDRSTOKEN（SDRS中的TOKEN信息）](configobject/UNC/20.15.2/SDRSTOKEN.md)
+- [SDRSVPN（SDRS中的VPN信息）](configobject/UNC/20.15.2/SDRSVPN.md)
+- [SDRSVPNIP（SDRS中的VPNIP信息）](configobject/UNC/20.15.2/SDRSVPNIP.md)
+- [SDRTOKEN（SDRC中的TOKEN信息）](configobject/UNC/20.15.2/SDRTOKEN.md)
+- [SDRTOPIC（SDRC中的TOPIC信息）](configobject/UNC/20.15.2/SDRTOPIC.md)
+- [SDRVPN（SDRC中的VPN信息）](configobject/UNC/20.15.2/SDRVPN.md)
+- [SDRVPNCFG（SDR VPN配置信息）](configobject/UNC/20.15.2/SDRVPNCFG.md)
+- [SDRVPNIP（SDRC中的VPNIP信息）](configobject/UNC/20.15.2/SDRVPNIP.md)
+- [SECACL6TAB（安全ACL6表项）](configobject/UNC/20.15.2/SECACL6TAB.md)
+- [SECACLTAB（安全ACL表项）](configobject/UNC/20.15.2/SECACLTAB.md)
+- [SECCARINFO（当前安全CAR信息）](configobject/UNC/20.15.2/SECCARINFO.md)
+- [SECCARTAB（安全CAR表项）](configobject/UNC/20.15.2/SECCARTAB.md)
+- [SECLOG（安全日志）](configobject/UNC/20.15.2/SECLOG.md)
+- [SECPOLICYALLPKT（上送报文总体速率）](configobject/UNC/20.15.2/SECPOLICYALLPKT.md)
+- [SECTIONUSAGE（地址段使用信息）](configobject/UNC/20.15.2/SECTIONUSAGE.md)
+- [SECTOTALPKTSTAT（安全总的报文计数情况）](configobject/UNC/20.15.2/SECTOTALPKTSTAT.md)
+- [SECTOTALPKTTAB（安全总报文表项）](configobject/UNC/20.15.2/SECTOTALPKTTAB.md)
+- [SEGRECORDINFO（NRF已导入号段数据）](configobject/UNC/20.15.2/SEGRECORDINFO.md)
+- [SEGTBLINFO（号段表信息）](configobject/UNC/20.15.2/SEGTBLINFO.md)
+- [SENSECAPINFO（感知基站感知能力信息）](configobject/UNC/20.15.2/SENSECAPINFO.md)
+- [SERRESLOC（业务资源部署位置）](configobject/UNC/20.15.2/SERRESLOC.md)
+- [SERVICEINST（注册的服务实例信息）](configobject/UNC/20.15.2/SERVICEINST.md)
+- [SERVICENAME（注册的服务名称）](configobject/UNC/20.15.2/SERVICENAME.md)
+- [SERVICERUSTATE（RU的信息）](configobject/UNC/20.15.2/SERVICERUSTATE.md)
+- [SESSIONIOINFO（会话惯性运行信息）](configobject/UNC/20.15.2/SESSIONIOINFO.md)
+- [SESSIONQOSINFO（会话QoS信息）](configobject/UNC/20.15.2/SESSIONQOSINFO.md)
+- [SESSIONSUBDATA（会话签约信息）](configobject/UNC/20.15.2/SESSIONSUBDATA.md)
+- [SFEACLTABLE（SFE ACL表项）](configobject/UNC/20.15.2/SFEACLTABLE.md)
+- [SFEARP（转发ARP表项）](configobject/UNC/20.15.2/SFEARP.md)
+- [SFEARPREPLY（指定的ARP-REPLY表项）](configobject/UNC/20.15.2/SFEARPREPLY.md)
+- [SFEBFDERECV（BFD-ERECV表）](configobject/UNC/20.15.2/SFEBFDERECV.md)
+- [SFEBFDIRECV（BFD-IRECV表）](configobject/UNC/20.15.2/SFEBFDIRECV.md)
+- [SFEBLKBOX（SFE黑匣子）](configobject/UNC/20.15.2/SFEBLKBOX.md)
+- [SFECERCIB（基于子接口的上行/下行业务属性表）](configobject/UNC/20.15.2/SFECERCIB.md)
+- [SFECERFIB4（指定IPv4的FIB表）](configobject/UNC/20.15.2/SFECERFIB4.md)
+- [SFECERFIB6（指定IPv6的FIB表）](configobject/UNC/20.15.2/SFECERFIB6.md)
+- [SFECERPORT（指定端口出/入方向的表项）](configobject/UNC/20.15.2/SFECERPORT.md)
+- [SFEDBGPKT（调测捕获报文）](configobject/UNC/20.15.2/SFEDBGPKT.md)
+- [SFEDBGPKTCNT（SFE报文统计）](configobject/UNC/20.15.2/SFEDBGPKTCNT.md)
+- [SFEELB（ELB表项）](configobject/UNC/20.15.2/SFEELB.md)
+- [SFEERRORSTAT（SFE错误统计信息）](configobject/UNC/20.15.2/SFEERRORSTAT.md)
+- [SFEEVENTSTAT（SFE事件统计信息）](configobject/UNC/20.15.2/SFEEVENTSTAT.md)
+- [SFEFIB（FIB表项信息）](configobject/UNC/20.15.2/SFEFIB.md)
+- [SFEFIB6（IPv6的FIB表项信息）](configobject/UNC/20.15.2/SFEFIB6.md)
+- [SFEFIB6STC（IPv6指定的VPN路由表项统计）](configobject/UNC/20.15.2/SFEFIB6STC.md)
+- [SFEFIB6STCALL（IPv6所有的路由表项的统计）](configobject/UNC/20.15.2/SFEFIB6STCALL.md)
+- [SFEFIBSTAT（FIB统计信息）](configobject/UNC/20.15.2/SFEFIBSTAT.md)
+- [SFEFIBSTATALL（FIB所有统计信息）](configobject/UNC/20.15.2/SFEFIBSTATALL.md)
+- [SFEHEALTH（SFE健康状况）](configobject/UNC/20.15.2/SFEHEALTH.md)
+- [SFEIPSACLTBL（软转发SFE IPSEC-ACL表项信息）](configobject/UNC/20.15.2/SFEIPSACLTBL.md)
+- [SFELINEARTABLE（指定的线性表记录）](configobject/UNC/20.15.2/SFELINEARTABLE.md)
+- [SFELOCALIP（LOCAL-IP表项）](configobject/UNC/20.15.2/SFELOCALIP.md)
+- [SFEMFIB4（MFIB4表项）](configobject/UNC/20.15.2/SFEMFIB4.md)
+- [SFETABLESTC（SFE表项统计信息）](configobject/UNC/20.15.2/SFETABLESTC.md)
+- [SFETABLEVERBOSE（按摘要和详情两种方式显示SFE表项信息）](configobject/UNC/20.15.2/SFETABLEVERBOSE.md)
+- [SFETABSTAT（SFE表项简要信息）](configobject/UNC/20.15.2/SFETABSTAT.md)
+- [SFETNLPKTSTAT（SFE隧道报文统计）](configobject/UNC/20.15.2/SFETNLPKTSTAT.md)
+- [SFETRACEIP（SFE IP消息跟踪配置信息）](configobject/UNC/20.15.2/SFETRACEIP.md)
+- [SFETUNNEL（Tunnel表项）](configobject/UNC/20.15.2/SFETUNNEL.md)
+- [SFE_QUEUE（指定VM上转发使用的所有或指定队列的详细信息）](configobject/UNC/20.15.2/SFE_QUEUE.md)
+- [SFE_TABLE（指定资源单元上的SFE的表项信息）](configobject/UNC/20.15.2/SFE_TABLE.md)
+- [SLADBGDATA（SLA调试数据）](configobject/UNC/20.15.2/SLADBGDATA.md)
+- [SLEMEMBER（仲裁成员列表信息）](configobject/UNC/20.15.2/SLEMEMBER.md)
+- [SLEMEMBERDETAIL（仲裁成员详细信息）](configobject/UNC/20.15.2/SLEMEMBERDETAIL.md)
+- [SMCTXCNTDBG（指定CS类型的上下文数量）](configobject/UNC/20.15.2/SMCTXCNTDBG.md)
+- [SMDBGINFO（承载上下文相关的调试信息）](configobject/UNC/20.15.2/SMDBGINFO.md)
+- [SMFDBGINFO（SMF相关的调试信息）](configobject/UNC/20.15.2/SMFDBGINFO.md)
+- [SMFMBSSESSIONNUM（MB-SMF组播广播会话数）](configobject/UNC/20.15.2/SMFMBSSESSIONNUM.md)
+- [SMPDPNUM（会话管理的PDP上下文数）](configobject/UNC/20.15.2/SMPDPNUM.md)
+- [SMSESSIONNUM（会话管理的会话上下文数）](configobject/UNC/20.15.2/SMSESSIONNUM.md)
+- [SMSFUDMBYPASSNUM（SMSF系统内处于UDM Bypass状态的用户数）](configobject/UNC/20.15.2/SMSFUDMBYPASSNUM.md)
+- [SMSFUDMBYPASSTAT（SMSF用户UDM Bypass状态信息）](configobject/UNC/20.15.2/SMSFUDMBYPASSTAT.md)
+- [SMSKEYNUM（SMSF/VLR用户关键信息表的用户数）](configobject/UNC/20.15.2/SMSKEYNUM.md)
+- [SMSUSERSTAT（CS粒度或DS粒度的用户数）](configobject/UNC/20.15.2/SMSUSERSTAT.md)
+- [SMSUSRNUM（SMSF中注册的用户数）](configobject/UNC/20.15.2/SMSUSRNUM.md)
+- [SMUDMBYPASS（会话UDM Bypass信息）](configobject/UNC/20.15.2/SMUDMBYPASS.md)
+- [SMUSERINFO（会话管理的用户信息）](configobject/UNC/20.15.2/SMUSERINFO.md)
+- [SMUSERNUM（会话管理的用户数）](configobject/UNC/20.15.2/SMUSERNUM.md)
+- [SNMPINFO（网元长连接信息）](configobject/UNC/20.15.2/SNMPINFO.md)
+- [SOCKBLACKBOX（SOCK黑匣子诊断信息）](configobject/UNC/20.15.2/SOCKBLACKBOX.md)
+- [SOCKINNERDATA（SOCK诊断信息）](configobject/UNC/20.15.2/SOCKINNERDATA.md)
+- [SOCKPATH（SOCK路径诊断信息）](configobject/UNC/20.15.2/SOCKPATH.md)
+- [SOCKSESSION（SOCK会话诊断信息）](configobject/UNC/20.15.2/SOCKSESSION.md)
+- [SOCKSTATISTICS（SOCK统计诊断信息）](configobject/UNC/20.15.2/SOCKSTATISTICS.md)
+- [SPEC（规格信息）](configobject/UNC/20.15.2/SPEC.md)
+- [SRIIDINFO（静态路由IID信息）](configobject/UNC/20.15.2/SRIIDINFO.md)
+- [SRIPV6IIDINFO（IPv6静态路由IID信息）](configobject/UNC/20.15.2/SRIPV6IIDINFO.md)
+- [SRVADDRNUM（服务实例地址数）](configobject/UNC/20.15.2/SRVADDRNUM.md)
+- [SRVINSTSTAT（LB服务实例统计）](configobject/UNC/20.15.2/SRVINSTSTAT.md)
+- [SRVINSTTYPEREL（服务实例与业务类型关系）](configobject/UNC/20.15.2/SRVINSTTYPEREL.md)
+- [SRVIP（服务IP）](configobject/UNC/20.15.2/SRVIP.md)
+- [SRVMSGSTAT（服务消息统计）](configobject/UNC/20.15.2/SRVMSGSTAT.md)
+- [SRVVNFC（服务VNFC）](configobject/UNC/20.15.2/SRVVNFC.md)
+- [SRVVNFCMSGSTAT（服务VNFC消息统计）](configobject/UNC/20.15.2/SRVVNFCMSGSTAT.md)
+- [SSHCCONNSTC（客户端的连接统计信息）](configobject/UNC/20.15.2/SSHCCONNSTC.md)
+- [SSHCERRORLOG（SSH客户端的错误日志）](configobject/UNC/20.15.2/SSHCERRORLOG.md)
+- [SSHCMSGDATA（SSH客户端的消息数据）](configobject/UNC/20.15.2/SSHCMSGDATA.md)
+- [SSHCSESSIONSTC（SSH客户端的会话统计信息）](configobject/UNC/20.15.2/SSHCSESSIONSTC.md)
+- [SSHCSTATUSINFO（客户端运行状态信息）](configobject/UNC/20.15.2/SSHCSTATUSINFO.md)
+- [SSHSCONNSTC（服务器的连接统计信息）](configobject/UNC/20.15.2/SSHSCONNSTC.md)
+- [SSHSERRORLOG（SSH服务器的错误日志）](configobject/UNC/20.15.2/SSHSERRORLOG.md)
+- [SSHSERVERSESSION（SSH服务端会话信息）](configobject/UNC/20.15.2/SSHSERVERSESSION.md)
+- [SSHSMSGDATA（SSH服务器的消息数据）](configobject/UNC/20.15.2/SSHSMSGDATA.md)
+- [SSHSSESSIONSTC（SSH服务器的会话统计信息）](configobject/UNC/20.15.2/SSHSSESSIONSTC.md)
+- [SSHSSTATUSINFO（服务器运行状态信息）](configobject/UNC/20.15.2/SSHSSTATUSINFO.md)
+- [STARTUP（本次和下次启动文件）](configobject/UNC/20.15.2/STARTUP.md)
+- [STARVATIONINFO（长时间未被调度的组件消息）](configobject/UNC/20.15.2/STARVATIONINFO.md)
+- [SUBHEALTHRECORD（base平面亚健康链路历史信息）](configobject/UNC/20.15.2/SUBHEALTHRECORD.md)
+- [SUBNSAVLINFO（网络切片可用性订阅信息）](configobject/UNC/20.15.2/SUBNSAVLINFO.md)
+- [SUPPRESSALM（被抑制告警）](configobject/UNC/20.15.2/SUPPRESSALM.md)
+- [SYNCFILESTATUS（对账文件状态）](configobject/UNC/20.15.2/SYNCFILESTATUS.md)
+- [SYSFCDBG（调试信息）](configobject/UNC/20.15.2/SYSFCDBG.md)
+- [SYSPROCSTAT（系统处理状态）](configobject/UNC/20.15.2/SYSPROCSTAT.md)
+- [SYSRESINFO（系统资源使用信息）](configobject/UNC/20.15.2/SYSRESINFO.md)
+- [SYSRUNNINGSTAT（系统状态查询）](configobject/UNC/20.15.2/SYSRUNNINGSTAT.md)
+- [SYSTEMLOG（系统日志）](configobject/UNC/20.15.2/SYSTEMLOG.md)
+- [TALISTNGRANINFO（TALIST下5G基站接入数量信息）](configobject/UNC/20.15.2/TALISTNGRANINFO.md)
+- [TCPSTATUS（TCP状态）](configobject/UNC/20.15.2/TCPSTATUS.md)
+- [THREADCALLSTACK（线程调用栈信息）](configobject/UNC/20.15.2/THREADCALLSTACK.md)
+- [THROTTLINGINFO（Throttling信息）](configobject/UNC/20.15.2/THROTTLINGINFO.md)
+- [TIMER（定时器信息）](configobject/UNC/20.15.2/TIMER.md)
+- [TLBDATA（TLB统计信息）](configobject/UNC/20.15.2/TLBDATA.md)
+- [TMGIUSAGE（TMGI使用率）](configobject/UNC/20.15.2/TMGIUSAGE.md)
+- [TMPATH（TM路径）](configobject/UNC/20.15.2/TMPATH.md)
+- [TMSISTAT（TMSI资源分配状态）](configobject/UNC/20.15.2/TMSISTAT.md)
+- [TNLMMSGSTATICS（隧道管理消息计数）](configobject/UNC/20.15.2/TNLMMSGSTATICS.md)
+- [TNLPROTOCOL（隧道协议）](configobject/UNC/20.15.2/TNLPROTOCOL.md)
+- [TNLSTATISTICS（隧道统计信息）](configobject/UNC/20.15.2/TNLSTATISTICS.md)
+- [TOKENSTATUS（Token状态）](configobject/UNC/20.15.2/TOKENSTATUS.md)
+- [TOPICSTAT（topic状态）](configobject/UNC/20.15.2/TOPICSTAT.md)
+- [TRCAGENTTASK（跟踪代理侧跟踪任务信息）](configobject/UNC/20.15.2/TRCAGENTTASK.md)
+- [TRCDBGINFO（跟踪调试信息）](configobject/UNC/20.15.2/TRCDBGINFO.md)
+- [TRCFILE（跟踪文件）](configobject/UNC/20.15.2/TRCFILE.md)
+- [TRCFILEDIAG（跟踪文件可维护性信息）](configobject/UNC/20.15.2/TRCFILEDIAG.md)
+- [TRCFLOWCTRL（流控通知相关信息）](configobject/UNC/20.15.2/TRCFLOWCTRL.md)
+- [TRCLASTSUBSESSION（最后订阅Session信息）](configobject/UNC/20.15.2/TRCLASTSUBSESSION.md)
+- [TRCSMSGTOTALSTC（跟踪中心消息统计信息）](configobject/UNC/20.15.2/TRCSMSGTOTALSTC.md)
+- [TRCSTASKMSGSTC（跟踪中心任务消息统计信息）](configobject/UNC/20.15.2/TRCSTASKMSGSTC.md)
+- [TRCTASK（跟踪任务）](configobject/UNC/20.15.2/TRCTASK.md)
+- [TRCTASKSESSION（跟踪任务Session信息）](configobject/UNC/20.15.2/TRCTASKSESSION.md)
+- [TRCTASKSTC（跟踪任务相关跟踪消息的统计信息）](configobject/UNC/20.15.2/TRCTASKSTC.md)
+- [TRUNKCTX（宽带集群系统上下文）](configobject/UNC/20.15.2/TRUNKCTX.md)
+- [TRUNKINNERDATA（Trunk内部数据）](configobject/UNC/20.15.2/TRUNKINNERDATA.md)
+- [TSTPATH（UPC到UPF或者PFCP到UPF的路径状态）](configobject/UNC/20.15.2/TSTPATH.md)
+- [TTPLUGDBGINFO（扩展VNFC插件调试信息）](configobject/UNC/20.15.2/TTPLUGDBGINFO.md)
+- [TUNNELINFO（隧道信息）](configobject/UNC/20.15.2/TUNNELINFO.md)
+- [TUNNELINFOVERBOSE（隧道详细信息）](configobject/UNC/20.15.2/TUNNELINFOVERBOSE.md)
+- [UCFDISKSIZE（ucfexec-pod的磁盘空间大小）](configobject/UNC/20.15.2/UCFDISKSIZE.md)
+- [UCFPKTSTAT（UCF收发的单据报文信息）](configobject/UNC/20.15.2/UCFPKTSTAT.md)
+- [UCFSVRLNKSTAT（UCF链路状态）](configobject/UNC/20.15.2/UCFSVRLNKSTAT.md)
+- [UDMBYPASSNUM（UDM Bypass用户数）](configobject/UNC/20.15.2/UDMBYPASSNUM.md)
+- [UDPSTATUS（UDP状态）](configobject/UNC/20.15.2/UDPSTATUS.md)
+- [UFPLATENCY（UFP时延度量统计结果）](configobject/UNC/20.15.2/UFPLATENCY.md)
+- [UNCLOGSTAT（UNC日志状态）](configobject/UNC/20.15.2/UNCLOGSTAT.md)
+- [UPDATECTRLCFG（内部升级配置表）](configobject/UNC/20.15.2/UPDATECTRLCFG.md)
+- [UPDRUVER（RU版本信息）](configobject/UNC/20.15.2/UPDRUVER.md)
+- [UPDVER（当前版本信息）](configobject/UNC/20.15.2/UPDVER.md)
+- [UPDYNAMICINFO（UP节点动态信息）](configobject/UNC/20.15.2/UPDYNAMICINFO.md)
+- [UPFADDRLCK（锁定的UPF地址）](configobject/UNC/20.15.2/UPFADDRLCK.md)
+- [UPFAULTAPNCACHE（故障APN信息）](configobject/UNC/20.15.2/UPFAULTAPNCACHE.md)
+- [UPFRDSSTATUS（UPF中转Radius状态）](configobject/UNC/20.15.2/UPFRDSSTATUS.md)
+- [UPGPODINFO（已部署的Pod的版本号）](configobject/UNC/20.15.2/UPGPODINFO.md)
+- [UPLOCKINFO（UPF上报的锁定信息）](configobject/UNC/20.15.2/UPLOCKINFO.md)
+- [USRPDPNUM（用户和承载上下文数）](configobject/UNC/20.15.2/USRPDPNUM.md)
+- [USRSESSIONCTX（指定用户的会话信息）](configobject/UNC/20.15.2/USRSESSIONCTX.md)
+- [VERLC（设备EOS时间）](configobject/UNC/20.15.2/VERLC.md)
+- [VERSION（系统版本信息）](configobject/UNC/20.15.2/VERSION.md)
+- [VHAMEMBER（vHA ETCD集群节点详细信息）](configobject/UNC/20.15.2/VHAMEMBER.md)
+- [VNFCRES（VNFC内的资源配置信息）](configobject/UNC/20.15.2/VNFCRES.md)
+- [VNFCSCALINGHISTORY（基于VNFC的扩缩容历史信息）](configobject/UNC/20.15.2/VNFCSCALINGHISTORY.md)
+- [VNFINNERSTAT（网元内部状态）](configobject/UNC/20.15.2/VNFINNERSTAT.md)
+- [VNFINSTANTIATIONRESULT（实例化完成结果查询）](configobject/UNC/20.15.2/VNFINSTANTIATIONRESULT.md)
+- [VNFMODE（VNF部署模式）](configobject/UNC/20.15.2/VNFMODE.md)
+- [VNFPKGS（网元关联的软件包名称）](configobject/UNC/20.15.2/VNFPKGS.md)
+- [VNFPODVM（网元的POD与虚拟机位置关系）](configobject/UNC/20.15.2/VNFPODVM.md)
+- [VNFSTACKNAMES（网元下所有堆栈名称）](configobject/UNC/20.15.2/VNFSTACKNAMES.md)
+- [VNODESTARTTIME（虚拟节点启动时间信息）](configobject/UNC/20.15.2/VNODESTARTTIME.md)
+- [VNRSLINK（VNRS链路）](configobject/UNC/20.15.2/VNRSLINK.md)
+- [VNRSMSGSTAT（VNRS消息统计）](configobject/UNC/20.15.2/VNRSMSGSTAT.md)
+- [VPNAPPCFG（下发的VPN的app类型信息）](configobject/UNC/20.15.2/VPNAPPCFG.md)
+- [VPNINSTINTF（VPN实例接口信息）](configobject/UNC/20.15.2/VPNINSTINTF.md)
+- [VPORT（虚拟端口信息）](configobject/UNC/20.15.2/VPORT.md)
+- [VPPVER（组件版本）](configobject/UNC/20.15.2/VPPVER.md)
+- [VPROBEDISKSIZE（vprobeexec-pod的磁盘空间大小）](configobject/UNC/20.15.2/VPROBEDISKSIZE.md)
+- [VPROBELNKSTAT（vProbe链路状态）](configobject/UNC/20.15.2/VPROBELNKSTAT.md)
+- [VPROBEPKTSTAT（vProbe收发的单据报文信息）](configobject/UNC/20.15.2/VPROBEPKTSTAT.md)
+- [WLRATTRINFO（无线路由属性信息）](configobject/UNC/20.15.2/WLRATTRINFO.md)
+- [WLRBLACKBOX（无线路由黑匣子信息）](configobject/UNC/20.15.2/WLRBLACKBOX.md)
+- [WLRFLOWRULE（IPv4引流表信息）](configobject/UNC/20.15.2/WLRFLOWRULE.md)
+- [WLRFLOWRULE6（IPv6引流表信息）](configobject/UNC/20.15.2/WLRFLOWRULE6.md)
+- [WLRGLOBALINFO（无线路由全局信息）](configobject/UNC/20.15.2/WLRGLOBALINFO.md)
+- [WLRIFFLOWRULE（无线路由IPv4接口引流表信息）](configobject/UNC/20.15.2/WLRIFFLOWRULE.md)
+- [WLRIFFLOWRULE6（无线路由IPv6接口引流表信息）](configobject/UNC/20.15.2/WLRIFFLOWRULE6.md)
+- [WLRIID（无线路由IID信息）](configobject/UNC/20.15.2/WLRIID.md)
+- [WLRMSGSTC（WLR与各Partner的消息统计）](configobject/UNC/20.15.2/WLRMSGSTC.md)
+- [WLRPAEG（PAEG信息）](configobject/UNC/20.15.2/WLRPAEG.md)
+- [WLRPEER（无线路由对端状态）](configobject/UNC/20.15.2/WLRPEER.md)
+- [WLRPEERDATASTAT（PEER相关数据的统计计数）](configobject/UNC/20.15.2/WLRPEERDATASTAT.md)
+- [WLRPEERMSGSTAT（PEER有关消息的统计计数）](configobject/UNC/20.15.2/WLRPEERMSGSTAT.md)
+- [WLRROUTESTAT（无线路由的路由统计信息）](configobject/UNC/20.15.2/WLRROUTESTAT.md)
+- [WLRSMOOTHSTAT（无线路由与对端平滑状态机状态）](configobject/UNC/20.15.2/WLRSMOOTHSTAT.md)
+- [WLRSRBIF（无线路由订阅的接口信息）](configobject/UNC/20.15.2/WLRSRBIF.md)
+- [WLRSRCINTERFACE（无线路由地址借用表信息）](configobject/UNC/20.15.2/WLRSRCINTERFACE.md)
+- [WLRSUBINFO（APP订阅信息）](configobject/UNC/20.15.2/WLRSUBINFO.md)
+- [WLRSUBINFOVERBOSE（APP详细订阅信息）](configobject/UNC/20.15.2/WLRSUBINFOVERBOSE.md)
+- [WLRSUBRESULT（APP订阅结果信息）](configobject/UNC/20.15.2/WLRSUBRESULT.md)
+- [WLRSYSPAEINFO（系统PAE信息）](configobject/UNC/20.15.2/WLRSYSPAEINFO.md)
+- [WLRTABLE（无线路由表）](configobject/UNC/20.15.2/WLRTABLE.md)
+- [WLRTBLSMTHINFO（基于表无线路由平滑统计信息）](configobject/UNC/20.15.2/WLRTBLSMTHINFO.md)
+- [WLRTBLSTAT（基于表无线路由数据信息）](configobject/UNC/20.15.2/WLRTBLSTAT.md)
+- [WLRTNLMSTC（WLR组件与TNLM交互的统计信息）](configobject/UNC/20.15.2/WLRTNLMSTC.md)
+- [WORKLOAD（系统负载）](configobject/UNC/20.15.2/WORKLOAD.md)
+- [XSMINNERDATA（XSM模块与其他模块的组件间交互消息）](configobject/UNC/20.15.2/XSMINNERDATA.md)

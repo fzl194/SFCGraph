@@ -28,10 +28,10 @@ CP节点用于PFCP建立偶联时唯一标识控制面的SMF。
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CPNODE]] · ADD CPNODE
-- [[command/UNC/20.15.2/LST-CPNODE]] · LST CPNODE
-- [[command/UNC/20.15.2/MOD-CPNODE]] · MOD CPNODE
-- [[command/UNC/20.15.2/RMV-CPNODE]] · RMV CPNODE
+- [ADD CPNODE](command/UNC/20.15.2/ADD-CPNODE.md)
+- [LST CPNODE](command/UNC/20.15.2/LST-CPNODE.md)
+- [MOD CPNODE](command/UNC/20.15.2/MOD-CPNODE.md)
+- [RMV CPNODE](command/UNC/20.15.2/RMV-CPNODE.md)
 
 ## 证据
 

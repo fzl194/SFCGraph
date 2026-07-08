@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MDTPLMN]] · ADD MDTPLMN
-- [[command/UNC/20.15.2/LST-MDTPLMN]] · LST MDTPLMN
-- [[command/UNC/20.15.2/MOD-MDTPLMN]] · MOD MDTPLMN
-- [[command/UNC/20.15.2/RMV-MDTPLMN]] · RMV MDTPLMN
+- [ADD MDTPLMN](command/UNC/20.15.2/ADD-MDTPLMN.md)
+- [LST MDTPLMN](command/UNC/20.15.2/LST-MDTPLMN.md)
+- [MOD MDTPLMN](command/UNC/20.15.2/MOD-MDTPLMN.md)
+- [RMV MDTPLMN](command/UNC/20.15.2/RMV-MDTPLMN.md)
 
 ## 证据
 

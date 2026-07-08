@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGEMGCNUM]] · ADD NGEMGCNUM
-- [[command/UNC/20.15.2/LST-NGEMGCNUM]] · LST NGEMGCNUM
-- [[command/UNC/20.15.2/RMV-NGEMGCNUM]] · RMV NGEMGCNUM
+- [ADD NGEMGCNUM](command/UNC/20.15.2/ADD-NGEMGCNUM.md)
+- [LST NGEMGCNUM](command/UNC/20.15.2/LST-NGEMGCNUM.md)
+- [RMV NGEMGCNUM](command/UNC/20.15.2/RMV-NGEMGCNUM.md)
 
 ## 证据
 

@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-BACKOFFTIME]] · LST BACKOFFTIME
-- [[command/UNC/20.15.2/SET-BACKOFFTIME]] · SET BACKOFFTIME
+- [LST BACKOFFTIME](command/UNC/20.15.2/LST-BACKOFFTIME.md)
+- [SET BACKOFFTIME](command/UNC/20.15.2/SET-BACKOFFTIME.md)
 
 ## 证据
 

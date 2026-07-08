@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IKEPEER]] · ADD IKEPEER
-- [[command/UNC/20.15.2/LST-IKEPEER]] · LST IKEPEER
-- [[command/UNC/20.15.2/MOD-IKEPEER]] · MOD IKEPEER
-- [[command/UNC/20.15.2/RMV-IKEPEER]] · RMV IKEPEER
+- [ADD IKEPEER](command/UNC/20.15.2/ADD-IKEPEER.md)
+- [LST IKEPEER](command/UNC/20.15.2/LST-IKEPEER.md)
+- [MOD IKEPEER](command/UNC/20.15.2/MOD-IKEPEER.md)
+- [RMV IKEPEER](command/UNC/20.15.2/RMV-IKEPEER.md)
 
 ## 证据
 

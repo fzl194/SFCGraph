@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-S1SMARTPARA]] · LST S1SMARTPARA
-- [[command/UNC/20.15.2/SET-S1SMARTPARA]] · SET S1SMARTPARA
+- [LST S1SMARTPARA](command/UNC/20.15.2/LST-S1SMARTPARA.md)
+- [SET S1SMARTPARA](command/UNC/20.15.2/SET-S1SMARTPARA.md)
 
 ## 证据
 

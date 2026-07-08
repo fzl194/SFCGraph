@@ -35,8 +35,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TLBGLBCONF]] · LST TLBGLBCONF
-- [[command/UDG/20.15.2/SET-TLBGLBCONF]] · SET TLBGLBCONF
+- [LST TLBGLBCONF](command/UDG/20.15.2/LST-TLBGLBCONF.md)
+- [SET TLBGLBCONF](command/UDG/20.15.2/SET-TLBGLBCONF.md)
 
 ## 证据
 

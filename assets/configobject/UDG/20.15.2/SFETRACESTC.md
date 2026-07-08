@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFETRACESTC]] · DSP SFETRACESTC
-- [[command/UDG/20.15.2/RTR-SFETRACESTC]] · RTR SFETRACESTC
+- [DSP SFETRACESTC](command/UDG/20.15.2/DSP-SFETRACESTC.md)
+- [RTR SFETRACESTC](command/UDG/20.15.2/RTR-SFETRACESTC.md)
 
 ## 证据
 

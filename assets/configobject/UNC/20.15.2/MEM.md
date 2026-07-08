@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MEM]] · DSP MEM
+- [DSP MEM](command/UNC/20.15.2/DSP-MEM.md)
 
 ## 证据
 

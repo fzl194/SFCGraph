@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/EXTENDCOMMUNITYFILTER]] · 扩展团体属性过滤器（EXTENDCOMMUNITYFILTER）
+- [扩展团体属性过滤器（EXTENDCOMMUNITYFILTER）](configobject/UNC/20.15.2/EXTENDCOMMUNITYFILTER.md)
 
 ## 使用实例
 

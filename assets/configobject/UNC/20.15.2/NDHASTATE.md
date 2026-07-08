@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NDHASTATE]] · DSP NDHASTATE
+- [DSP NDHASTATE](command/UNC/20.15.2/DSP-NDHASTATE.md)
 
 ## 证据
 

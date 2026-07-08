@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SFELBHASH]] · ADD SFELBHASH
-- [[command/UNC/20.15.2/LST-SFELBHASH]] · LST SFELBHASH
-- [[command/UNC/20.15.2/RMV-SFELBHASH]] · RMV SFELBHASH
+- [ADD SFELBHASH](command/UNC/20.15.2/ADD-SFELBHASH.md)
+- [LST SFELBHASH](command/UNC/20.15.2/LST-SFELBHASH.md)
+- [RMV SFELBHASH](command/UNC/20.15.2/RMV-SFELBHASH.md)
 
 ## 证据
 

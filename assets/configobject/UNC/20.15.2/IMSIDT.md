@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMSIDT]] · ADD IMSIDT
-- [[command/UNC/20.15.2/LST-IMSIDT]] · LST IMSIDT
-- [[command/UNC/20.15.2/MOD-IMSIDT]] · MOD IMSIDT
-- [[command/UNC/20.15.2/RMV-IMSIDT]] · RMV IMSIDT
+- [ADD IMSIDT](command/UNC/20.15.2/ADD-IMSIDT.md)
+- [LST IMSIDT](command/UNC/20.15.2/LST-IMSIDT.md)
+- [MOD IMSIDT](command/UNC/20.15.2/MOD-IMSIDT.md)
+- [RMV IMSIDT](command/UNC/20.15.2/RMV-IMSIDT.md)
 
 ## 证据
 

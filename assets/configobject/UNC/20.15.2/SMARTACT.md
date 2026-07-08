@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SMARTACT]] · ADD SMARTACT
-- [[command/UNC/20.15.2/LST-SMARTACT]] · LST SMARTACT
-- [[command/UNC/20.15.2/MOD-SMARTACT]] · MOD SMARTACT
-- [[command/UNC/20.15.2/RMV-SMARTACT]] · RMV SMARTACT
+- [ADD SMARTACT](command/UNC/20.15.2/ADD-SMARTACT.md)
+- [LST SMARTACT](command/UNC/20.15.2/LST-SMARTACT.md)
+- [MOD SMARTACT](command/UNC/20.15.2/MOD-SMARTACT.md)
+- [RMV SMARTACT](command/UNC/20.15.2/RMV-SMARTACT.md)
 
 ## 证据
 

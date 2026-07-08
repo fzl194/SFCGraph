@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TACRANGE]] · ADD TACRANGE
-- [[command/UNC/20.15.2/LST-TACRANGE]] · LST TACRANGE
-- [[command/UNC/20.15.2/MOD-TACRANGE]] · MOD TACRANGE
-- [[command/UNC/20.15.2/RMV-TACRANGE]] · RMV TACRANGE
+- [ADD TACRANGE](command/UNC/20.15.2/ADD-TACRANGE.md)
+- [LST TACRANGE](command/UNC/20.15.2/LST-TACRANGE.md)
+- [MOD TACRANGE](command/UNC/20.15.2/MOD-TACRANGE.md)
+- [RMV TACRANGE](command/UNC/20.15.2/RMV-TACRANGE.md)
 
 ## 证据
 

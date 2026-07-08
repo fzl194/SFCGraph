@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DRA]] · ADD DRA
-- [[command/UNC/20.15.2/LST-DRA]] · LST DRA
-- [[command/UNC/20.15.2/MOD-DRA]] · MOD DRA
-- [[command/UNC/20.15.2/RMV-DRA]] · RMV DRA
+- [ADD DRA](command/UNC/20.15.2/ADD-DRA.md)
+- [LST DRA](command/UNC/20.15.2/LST-DRA.md)
+- [MOD DRA](command/UNC/20.15.2/MOD-DRA.md)
+- [RMV DRA](command/UNC/20.15.2/RMV-DRA.md)
 
 ## 证据
 

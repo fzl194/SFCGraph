@@ -48,7 +48,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VIRTUALIP]] · 浮动IP（VIRTUALIP）
+- [浮动IP（VIRTUALIP）](configobject/UNC/20.15.2/VIRTUALIP.md)
 
 ## 使用实例
 

@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NEINFO]] · DSP NEINFO
+- [DSP NEINFO](command/UDG/20.15.2/DSP-NEINFO.md)
 
 ## 证据
 

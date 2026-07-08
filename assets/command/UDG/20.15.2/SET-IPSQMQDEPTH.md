@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/IPSQMQDEPTH]] · IPSQM缓存队列深度（IPSQMQDEPTH）
+- [IPSQM缓存队列深度（IPSQMQDEPTH）](configobject/UDG/20.15.2/IPSQMQDEPTH.md)
 
 ## 关联任务
 

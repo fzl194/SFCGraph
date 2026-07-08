@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HNOINFO]] · ADD HNOINFO
-- [[command/UNC/20.15.2/LST-HNOINFO]] · LST HNOINFO
-- [[command/UNC/20.15.2/MOD-HNOINFO]] · MOD HNOINFO
-- [[command/UNC/20.15.2/RMV-HNOINFO]] · RMV HNOINFO
+- [ADD HNOINFO](command/UNC/20.15.2/ADD-HNOINFO.md)
+- [LST HNOINFO](command/UNC/20.15.2/LST-HNOINFO.md)
+- [MOD HNOINFO](command/UNC/20.15.2/MOD-HNOINFO.md)
+- [RMV HNOINFO](command/UNC/20.15.2/RMV-HNOINFO.md)
 
 ## 证据
 

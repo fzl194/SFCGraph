@@ -72,7 +72,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/RCAPLNK]] · 注册中心链路（RCAPLNK）
+- [注册中心链路（RCAPLNK）](configobject/UNC/20.15.2/RCAPLNK.md)
 
 ## 使用实例
 

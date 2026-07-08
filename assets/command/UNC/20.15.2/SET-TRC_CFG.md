@@ -55,7 +55,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TRC_CFG]] · 跟踪参数（TRC_CFG）
+- [跟踪参数（TRC_CFG）](configobject/UNC/20.15.2/TRC_CFG.md)
 
 ## 使用实例
 

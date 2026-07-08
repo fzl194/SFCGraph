@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/TST-HTTPPATH]] · TST HTTPPATH
+- [TST HTTPPATH](command/UNC/20.15.2/TST-HTTPPATH.md)
 
 ## 证据
 

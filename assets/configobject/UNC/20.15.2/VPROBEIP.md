@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-VPROBEIP]] · ADD VPROBEIP
-- [[command/UNC/20.15.2/LST-VPROBEIP]] · LST VPROBEIP
-- [[command/UNC/20.15.2/RMV-VPROBEIP]] · RMV VPROBEIP
+- [ADD VPROBEIP](command/UNC/20.15.2/ADD-VPROBEIP.md)
+- [LST VPROBEIP](command/UNC/20.15.2/LST-VPROBEIP.md)
+- [RMV VPROBEIP](command/UNC/20.15.2/RMV-VPROBEIP.md)
 
 ## 证据
 

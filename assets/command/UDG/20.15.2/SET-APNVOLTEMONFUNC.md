@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/APNVOLTEMONFUNC]] · VoLTE语音质量监控功能开关（APNVOLTEMONFUNC）
+- [VoLTE语音质量监控功能开关（APNVOLTEMONFUNC）](configobject/UDG/20.15.2/APNVOLTEMONFUNC.md)
 
 ## 使用实例
 

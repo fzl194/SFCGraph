@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OCSALMTHD]] · LST OCSALMTHD
-- [[command/UNC/20.15.2/SET-OCSALMTHD]] · SET OCSALMTHD
+- [LST OCSALMTHD](command/UNC/20.15.2/LST-OCSALMTHD.md)
+- [SET OCSALMTHD](command/UNC/20.15.2/SET-OCSALMTHD.md)
 
 ## 证据
 

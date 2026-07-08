@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RESNOSBASENEIGH]] · DSP RESNOSBASENEIGH
+- [DSP RESNOSBASENEIGH](command/UDG/20.15.2/DSP-RESNOSBASENEIGH.md)
 
 ## 证据
 

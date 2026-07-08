@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NGMNO]] · ADD NGMNO
-- [[command/UNC/20.15.2/LST-NGMNO]] · LST NGMNO
-- [[command/UNC/20.15.2/MOD-NGMNO]] · MOD NGMNO
-- [[command/UNC/20.15.2/RMV-NGMNO]] · RMV NGMNO
+- [ADD NGMNO](command/UNC/20.15.2/ADD-NGMNO.md)
+- [LST NGMNO](command/UNC/20.15.2/LST-NGMNO.md)
+- [MOD NGMNO](command/UNC/20.15.2/MOD-NGMNO.md)
+- [RMV NGMNO](command/UNC/20.15.2/RMV-NGMNO.md)
 
 ## 证据
 

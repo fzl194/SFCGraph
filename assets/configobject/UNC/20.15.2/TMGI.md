@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DEA-TMGI]] · DEA TMGI
-- [[command/UNC/20.15.2/DSP-TMGI]] · DSP TMGI
+- [DEA TMGI](command/UNC/20.15.2/DEA-TMGI.md)
+- [DSP TMGI](command/UNC/20.15.2/DSP-TMGI.md)
 
 ## 证据
 

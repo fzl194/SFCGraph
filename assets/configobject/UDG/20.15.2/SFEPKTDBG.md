@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ACT-SFEPKTDBG]] · ACT SFEPKTDBG
-- [[command/UDG/20.15.2/DEA-SFEPKTDBG]] · DEA SFEPKTDBG
+- [ACT SFEPKTDBG](command/UDG/20.15.2/ACT-SFEPKTDBG.md)
+- [DEA SFEPKTDBG](command/UDG/20.15.2/DEA-SFEPKTDBG.md)
 
 ## 证据
 

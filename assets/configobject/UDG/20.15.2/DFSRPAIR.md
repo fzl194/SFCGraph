@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-DFSRPAIR]] · ADD DFSRPAIR
-- [[command/UDG/20.15.2/LST-DFSRPAIR]] · LST DFSRPAIR
-- [[command/UDG/20.15.2/MOD-DFSRPAIR]] · MOD DFSRPAIR
-- [[command/UDG/20.15.2/RMV-DFSRPAIR]] · RMV DFSRPAIR
+- [ADD DFSRPAIR](command/UDG/20.15.2/ADD-DFSRPAIR.md)
+- [LST DFSRPAIR](command/UDG/20.15.2/LST-DFSRPAIR.md)
+- [MOD DFSRPAIR](command/UDG/20.15.2/MOD-DFSRPAIR.md)
+- [RMV DFSRPAIR](command/UDG/20.15.2/RMV-DFSRPAIR.md)
 
 ## 证据
 

@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QOSPHB]] · LST QOSPHB
-- [[command/UNC/20.15.2/SET-QOSPHB]] · SET QOSPHB
+- [LST QOSPHB](command/UNC/20.15.2/LST-QOSPHB.md)
+- [SET QOSPHB](command/UNC/20.15.2/SET-QOSPHB.md)
 
 ## 证据
 

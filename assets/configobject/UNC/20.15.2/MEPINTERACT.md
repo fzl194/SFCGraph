@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-MEPINTERACT]] · LST MEPINTERACT
-- [[command/UNC/20.15.2/SET-MEPINTERACT]] · SET MEPINTERACT
+- [LST MEPINTERACT](command/UNC/20.15.2/LST-MEPINTERACT.md)
+- [SET MEPINTERACT](command/UNC/20.15.2/SET-MEPINTERACT.md)
 
 ## 证据
 

@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GTPCAUSE]] · ADD GTPCAUSE
-- [[command/UNC/20.15.2/LST-GTPCAUSE]] · LST GTPCAUSE
-- [[command/UNC/20.15.2/RMV-GTPCAUSE]] · RMV GTPCAUSE
+- [ADD GTPCAUSE](command/UNC/20.15.2/ADD-GTPCAUSE.md)
+- [LST GTPCAUSE](command/UNC/20.15.2/LST-GTPCAUSE.md)
+- [RMV GTPCAUSE](command/UNC/20.15.2/RMV-GTPCAUSE.md)
 
 ## 证据
 

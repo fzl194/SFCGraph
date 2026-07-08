@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PERFNSE]] · ADD PERFNSE
-- [[command/UNC/20.15.2/LST-PERFNSE]] · LST PERFNSE
-- [[command/UNC/20.15.2/RMV-PERFNSE]] · RMV PERFNSE
+- [ADD PERFNSE](command/UNC/20.15.2/ADD-PERFNSE.md)
+- [LST PERFNSE](command/UNC/20.15.2/LST-PERFNSE.md)
+- [RMV PERFNSE](command/UNC/20.15.2/RMV-PERFNSE.md)
 
 ## 证据
 

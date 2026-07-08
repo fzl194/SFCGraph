@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CHGHOLI]] · ADD CHGHOLI
-- [[command/UNC/20.15.2/LST-CHGHOLI]] · LST CHGHOLI
-- [[command/UNC/20.15.2/RMV-CHGHOLI]] · RMV CHGHOLI
+- [ADD CHGHOLI](command/UNC/20.15.2/ADD-CHGHOLI.md)
+- [LST CHGHOLI](command/UNC/20.15.2/LST-CHGHOLI.md)
+- [RMV CHGHOLI](command/UNC/20.15.2/RMV-CHGHOLI.md)
 
 ## 证据
 

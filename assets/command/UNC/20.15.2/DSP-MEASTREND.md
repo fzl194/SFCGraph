@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MEASTREND]] · 话统指标统计趋势（MEASTREND）
+- [话统指标统计趋势（MEASTREND）](configobject/UNC/20.15.2/MEASTREND.md)
 
 ## 使用实例
 

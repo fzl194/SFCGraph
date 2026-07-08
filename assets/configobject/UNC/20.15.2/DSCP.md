@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DSCP]] · LST DSCP
-- [[command/UNC/20.15.2/SET-DSCP]] · SET DSCP
+- [LST DSCP](command/UNC/20.15.2/LST-DSCP.md)
+- [SET DSCP](command/UNC/20.15.2/SET-DSCP.md)
 
 ## 证据
 

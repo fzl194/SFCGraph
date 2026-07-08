@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-MCSWITCH]] · LST MCSWITCH
-- [[command/UDG/20.15.2/SET-MCSWITCH]] · SET MCSWITCH
+- [LST MCSWITCH](command/UDG/20.15.2/LST-MCSWITCH.md)
+- [SET MCSWITCH](command/UDG/20.15.2/SET-MCSWITCH.md)
 
 ## 证据
 

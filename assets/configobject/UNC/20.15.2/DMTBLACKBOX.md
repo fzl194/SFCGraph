@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DMTBLACKBOX]] · DSP DMTBLACKBOX
+- [DSP DMTBLACKBOX](command/UNC/20.15.2/DSP-DMTBLACKBOX.md)
 
 ## 证据
 

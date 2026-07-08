@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UFCSFB]] · ADD UFCSFB
-- [[command/UNC/20.15.2/LST-UFCSFB]] · LST UFCSFB
-- [[command/UNC/20.15.2/MOD-UFCSFB]] · MOD UFCSFB
-- [[command/UNC/20.15.2/RMV-UFCSFB]] · RMV UFCSFB
+- [ADD UFCSFB](command/UNC/20.15.2/ADD-UFCSFB.md)
+- [LST UFCSFB](command/UNC/20.15.2/LST-UFCSFB.md)
+- [MOD UFCSFB](command/UNC/20.15.2/MOD-UFCSFB.md)
+- [RMV UFCSFB](command/UNC/20.15.2/RMV-UFCSFB.md)
 
 ## 证据
 

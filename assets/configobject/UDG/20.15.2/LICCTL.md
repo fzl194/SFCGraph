@@ -26,9 +26,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ACT-LICCTL]] · ACT LICCTL
-- [[command/UDG/20.15.2/DEA-LICCTL]] · DEA LICCTL
-- [[command/UDG/20.15.2/DSP-LICCTL]] · DSP LICCTL
+- [ACT LICCTL](command/UDG/20.15.2/ACT-LICCTL.md)
+- [DEA LICCTL](command/UDG/20.15.2/DEA-LICCTL.md)
+- [DSP LICCTL](command/UDG/20.15.2/DSP-LICCTL.md)
 
 ## 证据
 

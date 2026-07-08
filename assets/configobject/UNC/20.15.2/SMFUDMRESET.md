@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMFUDMRESET]] · LST SMFUDMRESET
-- [[command/UNC/20.15.2/SET-SMFUDMRESET]] · SET SMFUDMRESET
+- [LST SMFUDMRESET](command/UNC/20.15.2/LST-SMFUDMRESET.md)
+- [SET SMFUDMRESET](command/UNC/20.15.2/SET-SMFUDMRESET.md)
 
 ## 证据
 

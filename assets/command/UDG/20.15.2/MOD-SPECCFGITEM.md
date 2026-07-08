@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SPECCFGITEM]] · 产品内部需要调整规格比例的项目（SPECCFGITEM）
+- [产品内部需要调整规格比例的项目（SPECCFGITEM）](configobject/UDG/20.15.2/SPECCFGITEM.md)
 
 ## 使用实例
 

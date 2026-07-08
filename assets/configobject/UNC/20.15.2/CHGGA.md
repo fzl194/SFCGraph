@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-CHGGA]] · DSP CHGGA
-- [[command/UNC/20.15.2/LST-CHGGA]] · LST CHGGA
-- [[command/UNC/20.15.2/SET-CHGGA]] · SET CHGGA
+- [DSP CHGGA](command/UNC/20.15.2/DSP-CHGGA.md)
+- [LST CHGGA](command/UNC/20.15.2/LST-CHGGA.md)
+- [SET CHGGA](command/UNC/20.15.2/SET-CHGGA.md)
 
 ## 证据
 

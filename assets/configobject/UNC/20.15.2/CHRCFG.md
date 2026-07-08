@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CHRCFG]] · LST CHRCFG
-- [[command/UNC/20.15.2/SET-CHRCFG]] · SET CHRCFG
+- [LST CHRCFG](command/UNC/20.15.2/LST-CHRCFG.md)
+- [SET CHRCFG](command/UNC/20.15.2/SET-CHRCFG.md)
 
 ## 证据
 

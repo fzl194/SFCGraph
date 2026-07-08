@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CRE-CHGCDR]] · CRE CHGCDR
-- [[command/UNC/20.15.2/DSP-CHGCDR]] · DSP CHGCDR
-- [[command/UNC/20.15.2/LST-CHGCDR]] · LST CHGCDR
-- [[command/UNC/20.15.2/SET-CHGCDR]] · SET CHGCDR
-- [[command/UNC/20.15.2/TST-CHGCDR]] · TST CHGCDR
+- [CRE CHGCDR](command/UNC/20.15.2/CRE-CHGCDR.md)
+- [DSP CHGCDR](command/UNC/20.15.2/DSP-CHGCDR.md)
+- [LST CHGCDR](command/UNC/20.15.2/LST-CHGCDR.md)
+- [SET CHGCDR](command/UNC/20.15.2/SET-CHGCDR.md)
+- [TST CHGCDR](command/UNC/20.15.2/TST-CHGCDR.md)
 
 ## 证据
 

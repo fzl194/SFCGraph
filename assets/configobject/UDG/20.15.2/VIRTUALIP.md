@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-VIRTUALIP]] · LST VIRTUALIP
-- [[command/UDG/20.15.2/MOD-VIRTUALIP]] · MOD VIRTUALIP
+- [LST VIRTUALIP](command/UDG/20.15.2/LST-VIRTUALIP.md)
+- [MOD VIRTUALIP](command/UDG/20.15.2/MOD-VIRTUALIP.md)
 
 ## 证据
 

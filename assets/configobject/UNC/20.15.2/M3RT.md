@@ -23,11 +23,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-M3RT]] · ADD M3RT
-- [[command/UNC/20.15.2/DSP-M3RT]] · DSP M3RT
-- [[command/UNC/20.15.2/LST-M3RT]] · LST M3RT
-- [[command/UNC/20.15.2/MOD-M3RT]] · MOD M3RT
-- [[command/UNC/20.15.2/RMV-M3RT]] · RMV M3RT
+- [ADD M3RT](command/UNC/20.15.2/ADD-M3RT.md)
+- [DSP M3RT](command/UNC/20.15.2/DSP-M3RT.md)
+- [LST M3RT](command/UNC/20.15.2/LST-M3RT.md)
+- [MOD M3RT](command/UNC/20.15.2/MOD-M3RT.md)
+- [RMV M3RT](command/UNC/20.15.2/RMV-M3RT.md)
 
 ## 证据
 

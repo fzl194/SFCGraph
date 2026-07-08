@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-RMPRODUCERDETAIL]] · DSP RMPRODUCERDETAIL
+- [DSP RMPRODUCERDETAIL](command/UDG/20.15.2/DSP-RMPRODUCERDETAIL.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SMSUSERSTAT]] · DSP SMSUSERSTAT
+- [DSP SMSUSERSTAT](command/UNC/20.15.2/DSP-SMSUSERSTAT.md)
 
 ## 证据
 

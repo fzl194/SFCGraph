@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-STATUSCHECK]] · LST STATUSCHECK
-- [[command/UDG/20.15.2/SET-STATUSCHECK]] · SET STATUSCHECK
+- [LST STATUSCHECK](command/UDG/20.15.2/LST-STATUSCHECK.md)
+- [SET STATUSCHECK](command/UDG/20.15.2/SET-STATUSCHECK.md)
 
 ## 证据
 

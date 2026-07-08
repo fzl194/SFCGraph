@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TLSPSK]] · ADD TLSPSK
-- [[command/UNC/20.15.2/LST-TLSPSK]] · LST TLSPSK
-- [[command/UNC/20.15.2/RMV-TLSPSK]] · RMV TLSPSK
+- [ADD TLSPSK](command/UNC/20.15.2/ADD-TLSPSK.md)
+- [LST TLSPSK](command/UNC/20.15.2/LST-TLSPSK.md)
+- [RMV TLSPSK](command/UNC/20.15.2/RMV-TLSPSK.md)
 
 ## 证据
 

@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BWMSERVICE]] · 带宽管理业务（BWMSERVICE）
+- [带宽管理业务（BWMSERVICE）](configobject/UDG/20.15.2/BWMSERVICE.md)
 
 ## 关联任务
 

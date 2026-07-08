@@ -36,7 +36,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/APPVERSION]] · 系统版本信息（APPVERSION）
+- [系统版本信息（APPVERSION）](configobject/UDG/20.15.2/APPVERSION.md)
 
 ## 使用实例
 

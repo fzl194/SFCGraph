@@ -26,15 +26,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-QOSPROP]] · ADD QOSPROP
-- [[command/UDG/20.15.2/LST-QOSPROP]] · LST QOSPROP
-- [[command/UDG/20.15.2/MOD-QOSPROP]] · MOD QOSPROP
-- [[command/UDG/20.15.2/RMV-QOSPROP]] · RMV QOSPROP
+- [ADD QOSPROP](command/UDG/20.15.2/ADD-QOSPROP.md)
+- [LST QOSPROP](command/UDG/20.15.2/LST-QOSPROP.md)
+- [MOD QOSPROP](command/UDG/20.15.2/MOD-QOSPROP.md)
+- [RMV QOSPROP](command/UDG/20.15.2/RMV-QOSPROP.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/PCCPOLICYGRP]] · PCCPOLICYGRP
-- [[configobject/UDG/20.15.2/URR]] · URR
+- [PCCPOLICYGRP](configobject/UDG/20.15.2/PCCPOLICYGRP.md)
+- [URR](configobject/UDG/20.15.2/URR.md)
 
 ## 证据
 

@@ -47,7 +47,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ACSPACKAGE]] · 软件包（ACSPACKAGE）
+- [软件包（ACSPACKAGE）](configobject/UNC/20.15.2/ACSPACKAGE.md)
 
 ## 使用实例
 

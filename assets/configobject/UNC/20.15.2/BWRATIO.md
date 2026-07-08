@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-BWRATIO]] · LST BWRATIO
-- [[command/UNC/20.15.2/SET-BWRATIO]] · SET BWRATIO
+- [LST BWRATIO](command/UNC/20.15.2/LST-BWRATIO.md)
+- [SET BWRATIO](command/UNC/20.15.2/SET-BWRATIO.md)
 
 ## 证据
 

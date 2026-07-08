@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PCSCFIP]] · ADD PCSCFIP
-- [[command/UNC/20.15.2/LST-PCSCFIP]] · LST PCSCFIP
-- [[command/UNC/20.15.2/MOD-PCSCFIP]] · MOD PCSCFIP
-- [[command/UNC/20.15.2/RMV-PCSCFIP]] · RMV PCSCFIP
+- [ADD PCSCFIP](command/UNC/20.15.2/ADD-PCSCFIP.md)
+- [LST PCSCFIP](command/UNC/20.15.2/LST-PCSCFIP.md)
+- [MOD PCSCFIP](command/UNC/20.15.2/MOD-PCSCFIP.md)
+- [RMV PCSCFIP](command/UNC/20.15.2/RMV-PCSCFIP.md)
 
 ## 证据
 

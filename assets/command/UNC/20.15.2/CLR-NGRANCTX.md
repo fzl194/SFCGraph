@@ -60,7 +60,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NGRANCTX]] · NG-RAN上下文（NGRANCTX）
+- [NG-RAN上下文（NGRANCTX）](configobject/UNC/20.15.2/NGRANCTX.md)
 
 ## 使用实例
 

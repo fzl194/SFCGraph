@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LOGCLEANPOLICY]] · 日志老化策略（LOGCLEANPOLICY）
+- [日志老化策略（LOGCLEANPOLICY）](configobject/UDG/20.15.2/LOGCLEANPOLICY.md)
 
 ## 使用实例
 

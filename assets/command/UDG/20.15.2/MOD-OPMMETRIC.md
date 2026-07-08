@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/OPMMETRIC]] · 话统指标优化公式（OPMMETRIC）
+- [话统指标优化公式（OPMMETRIC）](configobject/UDG/20.15.2/OPMMETRIC.md)
 
 ## 使用实例
 

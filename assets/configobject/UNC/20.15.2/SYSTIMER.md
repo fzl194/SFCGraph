@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SYSTIMER]] · LST SYSTIMER
-- [[command/UNC/20.15.2/SET-SYSTIMER]] · SET SYSTIMER
+- [LST SYSTIMER](command/UNC/20.15.2/LST-SYSTIMER.md)
+- [SET SYSTIMER](command/UNC/20.15.2/SET-SYSTIMER.md)
 
 ## 证据
 

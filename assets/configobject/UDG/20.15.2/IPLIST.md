@@ -22,15 +22,15 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-IPLIST]] · ADD IPLIST
-- [[command/UDG/20.15.2/LST-IPLIST]] · LST IPLIST
-- [[command/UDG/20.15.2/MOD-IPLIST]] · MOD IPLIST
-- [[command/UDG/20.15.2/RMV-IPLIST]] · RMV IPLIST
+- [ADD IPLIST](command/UDG/20.15.2/ADD-IPLIST.md)
+- [LST IPLIST](command/UDG/20.15.2/LST-IPLIST.md)
+- [MOD IPLIST](command/UDG/20.15.2/MOD-IPLIST.md)
+- [RMV IPLIST](command/UDG/20.15.2/RMV-IPLIST.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/FILTER]] · FILTER
-- [[configobject/UDG/20.15.2/FILTERIPV6]] · FILTERIPV6
+- [FILTER](configobject/UDG/20.15.2/FILTER.md)
+- [FILTERIPV6](configobject/UDG/20.15.2/FILTERIPV6.md)
 
 ## 证据
 

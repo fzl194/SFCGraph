@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DRKEYNF]] · LST DRKEYNF
-- [[command/UNC/20.15.2/SET-DRKEYNF]] · SET DRKEYNF
+- [LST DRKEYNF](command/UNC/20.15.2/LST-DRKEYNF.md)
+- [SET DRKEYNF](command/UNC/20.15.2/SET-DRKEYNF.md)
 
 ## 证据
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HTTPESCAPE]] · LST HTTPESCAPE
-- [[command/UDG/20.15.2/SET-HTTPESCAPE]] · SET HTTPESCAPE
+- [LST HTTPESCAPE](command/UDG/20.15.2/LST-HTTPESCAPE.md)
+- [SET HTTPESCAPE](command/UDG/20.15.2/SET-HTTPESCAPE.md)
 
 ## 证据
 

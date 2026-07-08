@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNUEMUTACC]] · LST APNUEMUTACC
-- [[command/UDG/20.15.2/SET-APNUEMUTACC]] · SET APNUEMUTACC
+- [LST APNUEMUTACC](command/UDG/20.15.2/LST-APNUEMUTACC.md)
+- [SET APNUEMUTACC](command/UDG/20.15.2/SET-APNUEMUTACC.md)
 
 ## 证据
 

@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DBGHAFG]] · DSP DBGHAFG
+- [DSP DBGHAFG](command/UDG/20.15.2/DSP-DBGHAFG.md)
 
 ## 证据
 

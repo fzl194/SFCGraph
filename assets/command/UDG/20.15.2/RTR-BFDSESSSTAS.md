@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BFDSESSSTAS]] · BFD会话统计信息（BFDSESSSTAS）
+- [BFD会话统计信息（BFDSESSSTAS）](configobject/UDG/20.15.2/BFDSESSSTAS.md)
 
 ## 使用实例
 

@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-MSISDNSUBGPMEMALL]] · RMV MSISDNSUBGPMEMALL
+- [RMV MSISDNSUBGPMEMALL](command/UNC/20.15.2/RMV-MSISDNSUBGPMEMALL.md)
 
 ## 证据
 

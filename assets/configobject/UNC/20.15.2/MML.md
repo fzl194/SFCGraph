@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/EXP-MML]] · EXP MML
+- [EXP MML](command/UNC/20.15.2/EXP-MML.md)
 
 ## 证据
 

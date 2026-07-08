@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNNBNS]] · ADD APNNBNS
-- [[command/UNC/20.15.2/LST-APNNBNS]] · LST APNNBNS
-- [[command/UNC/20.15.2/MOD-APNNBNS]] · MOD APNNBNS
-- [[command/UNC/20.15.2/RMV-APNNBNS]] · RMV APNNBNS
+- [ADD APNNBNS](command/UNC/20.15.2/ADD-APNNBNS.md)
+- [LST APNNBNS](command/UNC/20.15.2/LST-APNNBNS.md)
+- [MOD APNNBNS](command/UNC/20.15.2/MOD-APNNBNS.md)
+- [RMV APNNBNS](command/UNC/20.15.2/RMV-APNNBNS.md)
 
 ## 证据
 

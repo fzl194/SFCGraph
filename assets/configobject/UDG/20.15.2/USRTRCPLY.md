@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-USRTRCPLY]] · LST USRTRCPLY
-- [[command/UDG/20.15.2/SET-USRTRCPLY]] · SET USRTRCPLY
+- [LST USRTRCPLY](command/UDG/20.15.2/LST-USRTRCPLY.md)
+- [SET USRTRCPLY](command/UDG/20.15.2/SET-USRTRCPLY.md)
 
 ## 证据
 

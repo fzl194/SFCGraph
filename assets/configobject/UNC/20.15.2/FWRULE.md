@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-FWRULE]] · ADD FWRULE
-- [[command/UNC/20.15.2/LST-FWRULE]] · LST FWRULE
-- [[command/UNC/20.15.2/RMV-FWRULE]] · RMV FWRULE
+- [ADD FWRULE](command/UNC/20.15.2/ADD-FWRULE.md)
+- [LST FWRULE](command/UNC/20.15.2/LST-FWRULE.md)
+- [RMV FWRULE](command/UNC/20.15.2/RMV-FWRULE.md)
 
 ## 证据
 

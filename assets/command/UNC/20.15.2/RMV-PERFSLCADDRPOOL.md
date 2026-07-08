@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PERFSLCADDRPOOL]] · 切片地址池性能统计对象（PERFSLCADDRPOOL）
+- [切片地址池性能统计对象（PERFSLCADDRPOOL）](configobject/UNC/20.15.2/PERFSLCADDRPOOL.md)
 
 ## 使用实例
 

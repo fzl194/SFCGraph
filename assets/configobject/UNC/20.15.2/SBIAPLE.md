@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SBIAPLE]] · ADD SBIAPLE
-- [[command/UNC/20.15.2/LST-SBIAPLE]] · LST SBIAPLE
-- [[command/UNC/20.15.2/MOD-SBIAPLE]] · MOD SBIAPLE
-- [[command/UNC/20.15.2/RMV-SBIAPLE]] · RMV SBIAPLE
+- [ADD SBIAPLE](command/UNC/20.15.2/ADD-SBIAPLE.md)
+- [LST SBIAPLE](command/UNC/20.15.2/LST-SBIAPLE.md)
+- [MOD SBIAPLE](command/UNC/20.15.2/MOD-SBIAPLE.md)
+- [RMV SBIAPLE](command/UNC/20.15.2/RMV-SBIAPLE.md)
 
 ## 证据
 

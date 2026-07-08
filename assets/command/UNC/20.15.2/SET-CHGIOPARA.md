@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/CHGIOPARA]] · 融合计费惯性运行参数（CHGIOPARA）
+- [融合计费惯性运行参数（CHGIOPARA）](configobject/UNC/20.15.2/CHGIOPARA.md)
 
 ## 使用实例
 

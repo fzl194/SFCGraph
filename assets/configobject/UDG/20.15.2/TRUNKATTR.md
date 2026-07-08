@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TRUNKATTR]] · LST TRUNKATTR
-- [[command/UDG/20.15.2/SET-TRUNKATTR]] · SET TRUNKATTR
+- [LST TRUNKATTR](command/UDG/20.15.2/LST-TRUNKATTR.md)
+- [SET TRUNKATTR](command/UDG/20.15.2/SET-TRUNKATTR.md)
 
 ## 证据
 

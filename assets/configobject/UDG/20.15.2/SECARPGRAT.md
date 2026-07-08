@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SECARPGRAT]] · LST SECARPGRAT
-- [[command/UDG/20.15.2/SET-SECARPGRAT]] · SET SECARPGRAT
+- [LST SECARPGRAT](command/UDG/20.15.2/LST-SECARPGRAT.md)
+- [SET SECARPGRAT](command/UDG/20.15.2/SET-SECARPGRAT.md)
 
 ## 证据
 

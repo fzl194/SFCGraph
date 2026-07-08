@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-VNFCRES]] · LST VNFCRES
+- [LST VNFCRES](command/UDG/20.15.2/LST-VNFCRES.md)
 
 ## 证据
 

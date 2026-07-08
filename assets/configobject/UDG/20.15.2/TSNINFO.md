@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TSNINFO]] · DSP TSNINFO
+- [DSP TSNINFO](command/UDG/20.15.2/DSP-TSNINFO.md)
 
 ## 证据
 

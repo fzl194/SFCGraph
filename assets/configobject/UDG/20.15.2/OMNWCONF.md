@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-OMNWCONF]] · LST OMNWCONF
-- [[command/UDG/20.15.2/MOD-OMNWCONF]] · MOD OMNWCONF
+- [LST OMNWCONF](command/UDG/20.15.2/LST-OMNWCONF.md)
+- [MOD OMNWCONF](command/UDG/20.15.2/MOD-OMNWCONF.md)
 
 ## 证据
 

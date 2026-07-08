@@ -50,7 +50,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SLAVERU]] · 迁移热备RU（SLAVERU）
+- [迁移热备RU（SLAVERU）](configobject/UNC/20.15.2/SLAVERU.md)
 
 ## 使用实例
 

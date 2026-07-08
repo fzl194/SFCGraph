@@ -39,7 +39,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PODCPUSTAT]] · pod CPU信息（PODCPUSTAT）
+- [pod CPU信息（PODCPUSTAT）](configobject/UDG/20.15.2/PODCPUSTAT.md)
 
 ## 使用实例
 

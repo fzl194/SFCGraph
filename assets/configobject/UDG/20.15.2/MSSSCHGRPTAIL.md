@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSSCHGRPTAIL]] · DSP MSSSCHGRPTAIL
+- [DSP MSSSCHGRPTAIL](command/UDG/20.15.2/DSP-MSSSCHGRPTAIL.md)
 
 ## 证据
 

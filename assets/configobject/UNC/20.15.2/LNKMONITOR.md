@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LNKMONITOR]] · LST LNKMONITOR
-- [[command/UNC/20.15.2/SET-LNKMONITOR]] · SET LNKMONITOR
+- [LST LNKMONITOR](command/UNC/20.15.2/LST-LNKMONITOR.md)
+- [SET LNKMONITOR](command/UNC/20.15.2/SET-LNKMONITOR.md)
 
 ## 证据
 

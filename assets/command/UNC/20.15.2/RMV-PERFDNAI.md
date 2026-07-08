@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PERFDNAI]] · 用于性能统计的数据网络访问标识信息（PERFDNAI）
+- [用于性能统计的数据网络访问标识信息（PERFDNAI）](configobject/UNC/20.15.2/PERFDNAI.md)
 
 ## 使用实例
 

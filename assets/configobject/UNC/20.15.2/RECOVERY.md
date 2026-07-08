@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-RECOVERY]] · DSP RECOVERY
-- [[command/UNC/20.15.2/MOD-RECOVERY]] · MOD RECOVERY
+- [DSP RECOVERY](command/UNC/20.15.2/DSP-RECOVERY.md)
+- [MOD RECOVERY](command/UNC/20.15.2/MOD-RECOVERY.md)
 
 ## 证据
 

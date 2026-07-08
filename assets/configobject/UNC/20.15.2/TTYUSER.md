@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-TTYUSER]] · DSP TTYUSER
-- [[command/UNC/20.15.2/KIK-TTYUSER]] · KIK TTYUSER
+- [DSP TTYUSER](command/UNC/20.15.2/DSP-TTYUSER.md)
+- [KIK TTYUSER](command/UNC/20.15.2/KIK-TTYUSER.md)
 
 ## 证据
 

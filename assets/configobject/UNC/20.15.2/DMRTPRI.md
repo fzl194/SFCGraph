@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DMRTPRI]] · LST DMRTPRI
-- [[command/UNC/20.15.2/MOD-DMRTPRI]] · MOD DMRTPRI
+- [LST DMRTPRI](command/UNC/20.15.2/LST-DMRTPRI.md)
+- [MOD DMRTPRI](command/UNC/20.15.2/MOD-DMRTPRI.md)
 
 ## 证据
 

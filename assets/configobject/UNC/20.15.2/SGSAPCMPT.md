@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SGSAPCMPT]] · LST SGSAPCMPT
-- [[command/UNC/20.15.2/SET-SGSAPCMPT]] · SET SGSAPCMPT
+- [LST SGSAPCMPT](command/UNC/20.15.2/LST-SGSAPCMPT.md)
+- [SET SGSAPCMPT](command/UNC/20.15.2/SET-SGSAPCMPT.md)
 
 ## 证据
 

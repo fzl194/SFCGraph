@@ -37,8 +37,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SFTPALG]] · LST SFTPALG
-- [[command/UDG/20.15.2/SET-SFTPALG]] · SET SFTPALG
+- [LST SFTPALG](command/UDG/20.15.2/LST-SFTPALG.md)
+- [SET SFTPALG](command/UDG/20.15.2/SET-SFTPALG.md)
 
 ## 证据
 

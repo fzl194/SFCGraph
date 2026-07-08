@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/SET-MSSDEBUGSWITCHM]] · SET MSSDEBUGSWITCHM
+- [SET MSSDEBUGSWITCHM](command/UDG/20.15.2/SET-MSSDEBUGSWITCHM.md)
 
 ## 证据
 

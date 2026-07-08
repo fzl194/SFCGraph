@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/MOD-INNERFTPPWD]] · MOD INNERFTPPWD
+- [MOD INNERFTPPWD](command/UNC/20.15.2/MOD-INNERFTPPWD.md)
 
 ## 证据
 

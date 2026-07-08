@@ -39,7 +39,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SBILINKFQDNIP]] · 检查服务化接口链路集FQDN的IP地址（SBILINKFQDNIP）
+- [检查服务化接口链路集FQDN的IP地址（SBILINKFQDNIP）](configobject/UDG/20.15.2/SBILINKFQDNIP.md)
 
 ## 使用实例
 

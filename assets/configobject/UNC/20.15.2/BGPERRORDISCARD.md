@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-BGPERRORDISCARD]] · DSP BGPERRORDISCARD
+- [DSP BGPERRORDISCARD](command/UNC/20.15.2/DSP-BGPERRORDISCARD.md)
 
 ## 证据
 

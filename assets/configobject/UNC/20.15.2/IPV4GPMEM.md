@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IPV4GPMEM]] · ADD IPV4GPMEM
-- [[command/UNC/20.15.2/LST-IPV4GPMEM]] · LST IPV4GPMEM
-- [[command/UNC/20.15.2/RMV-IPV4GPMEM]] · RMV IPV4GPMEM
+- [ADD IPV4GPMEM](command/UNC/20.15.2/ADD-IPV4GPMEM.md)
+- [LST IPV4GPMEM](command/UNC/20.15.2/LST-IPV4GPMEM.md)
+- [RMV IPV4GPMEM](command/UNC/20.15.2/RMV-IPV4GPMEM.md)
 
 ## 证据
 

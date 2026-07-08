@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SECLOG]] · LST SECLOG
+- [LST SECLOG](command/UNC/20.15.2/LST-SECLOG.md)
 
 ## 证据
 

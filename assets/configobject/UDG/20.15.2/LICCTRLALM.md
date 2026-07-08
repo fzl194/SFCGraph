@@ -32,8 +32,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-LICCTRLALM]] · LST LICCTRLALM
-- [[command/UDG/20.15.2/SET-LICCTRLALM]] · SET LICCTRLALM
+- [LST LICCTRLALM](command/UDG/20.15.2/LST-LICCTRLALM.md)
+- [SET LICCTRLALM](command/UDG/20.15.2/SET-LICCTRLALM.md)
 
 ## 证据
 

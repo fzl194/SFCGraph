@@ -44,7 +44,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/BYPASSSTATUS]] · BYPASS状态（BYPASSSTATUS）
+- [BYPASS状态（BYPASSSTATUS）](configobject/UDG/20.15.2/BYPASSSTATUS.md)
 
 ## 使用实例
 

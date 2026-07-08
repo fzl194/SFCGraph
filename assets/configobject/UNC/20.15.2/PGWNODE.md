@@ -22,9 +22,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PGWNODE]] · ADD PGWNODE
-- [[command/UNC/20.15.2/LST-PGWNODE]] · LST PGWNODE
-- [[command/UNC/20.15.2/RMV-PGWNODE]] · RMV PGWNODE
+- [ADD PGWNODE](command/UNC/20.15.2/ADD-PGWNODE.md)
+- [LST PGWNODE](command/UNC/20.15.2/LST-PGWNODE.md)
+- [RMV PGWNODE](command/UNC/20.15.2/RMV-PGWNODE.md)
 
 ## 证据
 

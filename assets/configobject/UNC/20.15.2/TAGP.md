@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TAGP]] · ADD TAGP
-- [[command/UNC/20.15.2/LST-TAGP]] · LST TAGP
-- [[command/UNC/20.15.2/MOD-TAGP]] · MOD TAGP
-- [[command/UNC/20.15.2/RMV-TAGP]] · RMV TAGP
+- [ADD TAGP](command/UNC/20.15.2/ADD-TAGP.md)
+- [LST TAGP](command/UNC/20.15.2/LST-TAGP.md)
+- [MOD TAGP](command/UNC/20.15.2/MOD-TAGP.md)
+- [RMV TAGP](command/UNC/20.15.2/RMV-TAGP.md)
 
 ## 证据
 

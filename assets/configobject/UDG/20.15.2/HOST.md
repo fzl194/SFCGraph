@@ -22,14 +22,14 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-HOST]] · ADD HOST
-- [[command/UDG/20.15.2/LST-HOST]] · LST HOST
-- [[command/UDG/20.15.2/MOD-HOST]] · MOD HOST
-- [[command/UDG/20.15.2/RMV-HOST]] · RMV HOST
+- [ADD HOST](command/UDG/20.15.2/ADD-HOST.md)
+- [LST HOST](command/UDG/20.15.2/LST-HOST.md)
+- [MOD HOST](command/UDG/20.15.2/MOD-HOST.md)
+- [RMV HOST](command/UDG/20.15.2/RMV-HOST.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/FILTER]] · FILTER
+- [FILTER](configobject/UDG/20.15.2/FILTER.md)
 
 ## 证据
 

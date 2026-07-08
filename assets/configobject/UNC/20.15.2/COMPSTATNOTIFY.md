@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-COMPSTATNOTIFY]] · DSP COMPSTATNOTIFY
+- [DSP COMPSTATNOTIFY](command/UNC/20.15.2/DSP-COMPSTATNOTIFY.md)
 
 ## 证据
 

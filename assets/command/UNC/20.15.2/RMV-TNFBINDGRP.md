@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TNFBINDGRP]] · 目标NF实例绑定组（TNFBINDGRP）
+- [目标NF实例绑定组（TNFBINDGRP）](configobject/UNC/20.15.2/TNFBINDGRP.md)
 
 ## 使用实例
 

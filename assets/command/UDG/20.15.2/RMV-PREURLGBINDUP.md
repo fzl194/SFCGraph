@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PREURLGBINDUP]] · 用户模板的前缀URL组绑定关系（PREURLGBINDUP）
+- [用户模板的前缀URL组绑定关系（PREURLGBINDUP）](configobject/UDG/20.15.2/PREURLGBINDUP.md)
 
 ## 使用实例
 

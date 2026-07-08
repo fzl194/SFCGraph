@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SFETABSTAT]] · DSP SFETABSTAT
+- [DSP SFETABSTAT](command/UNC/20.15.2/DSP-SFETABSTAT.md)
 
 ## 证据
 

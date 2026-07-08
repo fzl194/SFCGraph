@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MSSDEBUGINFO]] · DSP MSSDEBUGINFO
+- [DSP MSSDEBUGINFO](command/UNC/20.15.2/DSP-MSSDEBUGINFO.md)
 
 ## 证据
 

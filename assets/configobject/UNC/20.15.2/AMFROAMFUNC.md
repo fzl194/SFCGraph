@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AMFROAMFUNC]] · LST AMFROAMFUNC
-- [[command/UNC/20.15.2/SET-AMFROAMFUNC]] · SET AMFROAMFUNC
+- [LST AMFROAMFUNC](command/UNC/20.15.2/LST-AMFROAMFUNC.md)
+- [SET AMFROAMFUNC](command/UNC/20.15.2/SET-AMFROAMFUNC.md)
 
 ## 证据
 

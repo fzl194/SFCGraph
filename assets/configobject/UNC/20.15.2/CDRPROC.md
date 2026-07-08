@@ -26,10 +26,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CDRPROC]] · ADD CDRPROC
-- [[command/UNC/20.15.2/LST-CDRPROC]] · LST CDRPROC
-- [[command/UNC/20.15.2/MOD-CDRPROC]] · MOD CDRPROC
-- [[command/UNC/20.15.2/RMV-CDRPROC]] · RMV CDRPROC
+- [ADD CDRPROC](command/UNC/20.15.2/ADD-CDRPROC.md)
+- [LST CDRPROC](command/UNC/20.15.2/LST-CDRPROC.md)
+- [MOD CDRPROC](command/UNC/20.15.2/MOD-CDRPROC.md)
+- [RMV CDRPROC](command/UNC/20.15.2/RMV-CDRPROC.md)
 
 ## 证据
 

@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RCAPLKS]] · ADD RCAPLKS
-- [[command/UNC/20.15.2/LST-RCAPLKS]] · LST RCAPLKS
-- [[command/UNC/20.15.2/MOD-RCAPLKS]] · MOD RCAPLKS
-- [[command/UNC/20.15.2/RMV-RCAPLKS]] · RMV RCAPLKS
+- [ADD RCAPLKS](command/UNC/20.15.2/ADD-RCAPLKS.md)
+- [LST RCAPLKS](command/UNC/20.15.2/LST-RCAPLKS.md)
+- [MOD RCAPLKS](command/UNC/20.15.2/MOD-RCAPLKS.md)
+- [RMV RCAPLKS](command/UNC/20.15.2/RMV-RCAPLKS.md)
 
 ## 证据
 

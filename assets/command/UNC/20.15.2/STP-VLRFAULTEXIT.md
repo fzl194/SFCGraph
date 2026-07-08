@@ -44,7 +44,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VLRFAULTEXIT]] · 用户退出VLR故障增强状态（VLRFAULTEXIT）
+- [用户退出VLR故障增强状态（VLRFAULTEXIT）](configobject/UNC/20.15.2/VLRFAULTEXIT.md)
 
 ## 使用实例
 

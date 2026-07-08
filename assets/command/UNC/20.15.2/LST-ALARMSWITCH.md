@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/ALARMSWITCH]] · 安全事件告警开关（ALARMSWITCH）
+- [安全事件告警开关（ALARMSWITCH）](configobject/UNC/20.15.2/ALARMSWITCH.md)
 
 ## 使用实例
 

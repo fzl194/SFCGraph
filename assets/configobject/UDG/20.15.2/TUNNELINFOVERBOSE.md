@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-TUNNELINFOVERBOSE]] · DSP TUNNELINFOVERBOSE
+- [DSP TUNNELINFOVERBOSE](command/UDG/20.15.2/DSP-TUNNELINFOVERBOSE.md)
 
 ## 证据
 

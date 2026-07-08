@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LOGSERVERDROPSTC]] · 日志丢弃统计信息（LOGSERVERDROPSTC）
+- [日志丢弃统计信息（LOGSERVERDROPSTC）](configobject/UDG/20.15.2/LOGSERVERDROPSTC.md)
 
 ## 使用实例
 

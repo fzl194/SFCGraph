@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SRVPARA]] · LST SRVPARA
-- [[command/UNC/20.15.2/MOD-SRVPARA]] · MOD SRVPARA
+- [LST SRVPARA](command/UNC/20.15.2/LST-SRVPARA.md)
+- [MOD SRVPARA](command/UNC/20.15.2/MOD-SRVPARA.md)
 
 ## 证据
 

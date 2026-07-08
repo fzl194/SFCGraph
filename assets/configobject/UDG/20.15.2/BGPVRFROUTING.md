@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-BGPVRFROUTING]] · DSP BGPVRFROUTING
+- [DSP BGPVRFROUTING](command/UDG/20.15.2/DSP-BGPVRFROUTING.md)
 
 ## 证据
 

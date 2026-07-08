@@ -22,12 +22,12 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-APNTETHERDETSW]] · LST APNTETHERDETSW
-- [[command/UDG/20.15.2/SET-APNTETHERDETSW]] · SET APNTETHERDETSW
+- [LST APNTETHERDETSW](command/UDG/20.15.2/LST-APNTETHERDETSW.md)
+- [SET APNTETHERDETSW](command/UDG/20.15.2/SET-APNTETHERDETSW.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/APN]] · APN
+- [APN](configobject/UDG/20.15.2/APN.md)
 
 ## 证据
 

@@ -35,7 +35,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SCALINGCFG]] · 自动扩缩容配置（SCALINGCFG）
+- [自动扩缩容配置（SCALINGCFG）](configobject/UDG/20.15.2/SCALINGCFG.md)
 
 ## 使用实例
 

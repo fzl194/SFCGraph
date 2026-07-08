@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SUBUPIPDOMAIN]] · 当前UPF扩展类型绑定的IP域（SUBUPIPDOMAIN）
+- [当前UPF扩展类型绑定的IP域（SUBUPIPDOMAIN）](configobject/UNC/20.15.2/SUBUPIPDOMAIN.md)
 
 ## 使用实例
 

@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IUCONNPARA]] · LST IUCONNPARA
-- [[command/UNC/20.15.2/SET-IUCONNPARA]] · SET IUCONNPARA
+- [LST IUCONNPARA](command/UNC/20.15.2/LST-IUCONNPARA.md)
+- [SET IUCONNPARA](command/UNC/20.15.2/SET-IUCONNPARA.md)
 
 ## 证据
 

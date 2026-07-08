@@ -26,14 +26,14 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-ACLBINDAPN]] · ADD ACLBINDAPN
-- [[command/UDG/20.15.2/LST-ACLBINDAPN]] · LST ACLBINDAPN
-- [[command/UDG/20.15.2/MOD-ACLBINDAPN]] · MOD ACLBINDAPN
-- [[command/UDG/20.15.2/RMV-ACLBINDAPN]] · RMV ACLBINDAPN
+- [ADD ACLBINDAPN](command/UDG/20.15.2/ADD-ACLBINDAPN.md)
+- [LST ACLBINDAPN](command/UDG/20.15.2/LST-ACLBINDAPN.md)
+- [MOD ACLBINDAPN](command/UDG/20.15.2/MOD-ACLBINDAPN.md)
+- [RMV ACLBINDAPN](command/UDG/20.15.2/RMV-ACLBINDAPN.md)
 
 ## 关联对象
 
-- [[configobject/UDG/20.15.2/APN]] · APN
+- [APN](configobject/UDG/20.15.2/APN.md)
 
 ## 证据
 

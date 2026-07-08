@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-QOSCAR]] · LST QOSCAR
-- [[command/UDG/20.15.2/SET-QOSCAR]] · SET QOSCAR
+- [LST QOSCAR](command/UDG/20.15.2/LST-QOSCAR.md)
+- [SET QOSCAR](command/UDG/20.15.2/SET-QOSCAR.md)
 
 ## 证据
 

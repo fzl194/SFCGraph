@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MASALMCHECK]] · DSP MASALMCHECK
-- [[command/UDG/20.15.2/STR-MASALMCHECK]] · STR MASALMCHECK
+- [DSP MASALMCHECK](command/UDG/20.15.2/DSP-MASALMCHECK.md)
+- [STR MASALMCHECK](command/UDG/20.15.2/STR-MASALMCHECK.md)
 
 ## 证据
 

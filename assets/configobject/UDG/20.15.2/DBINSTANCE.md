@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DBINSTANCE]] · DSP DBINSTANCE
-- [[command/UDG/20.15.2/RST-DBINSTANCE]] · RST DBINSTANCE
+- [DSP DBINSTANCE](command/UDG/20.15.2/DSP-DBINSTANCE.md)
+- [RST DBINSTANCE](command/UDG/20.15.2/RST-DBINSTANCE.md)
 
 ## 证据
 

@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PCCMSGATTR]] · LST PCCMSGATTR
-- [[command/UNC/20.15.2/SET-PCCMSGATTR]] · SET PCCMSGATTR
+- [LST PCCMSGATTR](command/UNC/20.15.2/LST-PCCMSGATTR.md)
+- [SET PCCMSGATTR](command/UNC/20.15.2/SET-PCCMSGATTR.md)
 
 ## 证据
 

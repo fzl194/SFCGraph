@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IMSIVLR]] · IMSI与VLR对应关系（IMSIVLR）
+- [IMSI与VLR对应关系（IMSIVLR）](configobject/UNC/20.15.2/IMSIVLR.md)
 
 ## 使用实例
 

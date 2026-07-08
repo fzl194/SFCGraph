@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/PROTFAGETIME]] · 协议五元组老化时间（PROTFAGETIME）
+- [协议五元组老化时间（PROTFAGETIME）](configobject/UDG/20.15.2/PROTFAGETIME.md)
 
 ## 使用实例
 

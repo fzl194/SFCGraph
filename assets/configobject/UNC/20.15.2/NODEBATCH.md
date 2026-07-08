@@ -28,7 +28,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RST-NODEBATCH]] · RST NODEBATCH
+- [RST NODEBATCH](command/UNC/20.15.2/RST-NODEBATCH.md)
 
 ## 证据
 

@@ -23,7 +23,7 @@ AMF可向系统的DNS客户端微服务查询MME，当DNS客户端相关配置�
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/CLR-NGREQMSGCACHE]] · CLR NGREQMSGCACHE
+- [CLR NGREQMSGCACHE](command/UNC/20.15.2/CLR-NGREQMSGCACHE.md)
 
 ## 证据
 

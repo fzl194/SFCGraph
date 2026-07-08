@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NSSFSOFTPARAOFBIT]] · NSSF软件参数比特位（NSSFSOFTPARAOFBIT）
+- [NSSF软件参数比特位（NSSFSOFTPARAOFBIT）](configobject/UNC/20.15.2/NSSFSOFTPARAOFBIT.md)
 
 ## 使用实例
 

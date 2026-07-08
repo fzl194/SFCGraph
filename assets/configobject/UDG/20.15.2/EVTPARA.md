@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-EVTPARA]] · LST EVTPARA
-- [[command/UDG/20.15.2/SET-EVTPARA]] · SET EVTPARA
+- [LST EVTPARA](command/UDG/20.15.2/LST-EVTPARA.md)
+- [SET EVTPARA](command/UDG/20.15.2/SET-EVTPARA.md)
 
 ## 证据
 

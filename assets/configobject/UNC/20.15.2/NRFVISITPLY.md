@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFVISITPLY]] · LST NRFVISITPLY
-- [[command/UNC/20.15.2/SET-NRFVISITPLY]] · SET NRFVISITPLY
+- [LST NRFVISITPLY](command/UNC/20.15.2/LST-NRFVISITPLY.md)
+- [SET NRFVISITPLY](command/UNC/20.15.2/SET-NRFVISITPLY.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LBSRVINST]] · DSP LBSRVINST
+- [DSP LBSRVINST](command/UNC/20.15.2/DSP-LBSRVINST.md)
 
 ## 证据
 

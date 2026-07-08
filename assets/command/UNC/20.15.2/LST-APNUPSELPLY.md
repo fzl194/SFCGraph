@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNUPSELPLY]] · APN粒度的UP选择策略（APNUPSELPLY）
+- [APN粒度的UP选择策略（APNUPSELPLY）](configobject/UNC/20.15.2/APNUPSELPLY.md)
 
 ## 使用实例
 

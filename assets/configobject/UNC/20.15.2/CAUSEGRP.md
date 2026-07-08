@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-CAUSEGRP]] · ADD CAUSEGRP
-- [[command/UNC/20.15.2/LST-CAUSEGRP]] · LST CAUSEGRP
-- [[command/UNC/20.15.2/MOD-CAUSEGRP]] · MOD CAUSEGRP
-- [[command/UNC/20.15.2/RMV-CAUSEGRP]] · RMV CAUSEGRP
+- [ADD CAUSEGRP](command/UNC/20.15.2/ADD-CAUSEGRP.md)
+- [LST CAUSEGRP](command/UNC/20.15.2/LST-CAUSEGRP.md)
+- [MOD CAUSEGRP](command/UNC/20.15.2/MOD-CAUSEGRP.md)
+- [RMV CAUSEGRP](command/UNC/20.15.2/RMV-CAUSEGRP.md)
 
 ## 证据
 

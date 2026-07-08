@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-UPDVER]] · DSP UPDVER
+- [DSP UPDVER](command/UNC/20.15.2/DSP-UPDVER.md)
 
 ## 证据
 

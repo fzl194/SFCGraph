@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ACTALM]] · DSP ACTALM
-- [[command/UNC/20.15.2/LST-ACTALM]] · LST ACTALM
+- [DSP ACTALM](command/UNC/20.15.2/DSP-ACTALM.md)
+- [LST ACTALM](command/UNC/20.15.2/LST-ACTALM.md)
 
 ## 证据
 

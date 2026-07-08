@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LINKMTU]] · LST LINKMTU
-- [[command/UNC/20.15.2/SET-LINKMTU]] · SET LINKMTU
+- [LST LINKMTU](command/UNC/20.15.2/LST-LINKMTU.md)
+- [SET LINKMTU](command/UNC/20.15.2/SET-LINKMTU.md)
 
 ## 证据
 

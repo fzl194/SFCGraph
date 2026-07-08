@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-SYSTEMLOG]] · LST SYSTEMLOG
+- [LST SYSTEMLOG](command/UDG/20.15.2/LST-SYSTEMLOG.md)
 
 ## 证据
 

@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-QOSBA]] · LST QOSBA
-- [[command/UNC/20.15.2/SET-QOSBA]] · SET QOSBA
+- [LST QOSBA](command/UNC/20.15.2/LST-QOSBA.md)
+- [SET QOSBA](command/UNC/20.15.2/SET-QOSBA.md)
 
 ## 证据
 

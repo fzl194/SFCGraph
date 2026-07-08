@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-UACINFO]] · ADD UACINFO
-- [[command/UDG/20.15.2/LST-UACINFO]] · LST UACINFO
-- [[command/UDG/20.15.2/MOD-UACINFO]] · MOD UACINFO
-- [[command/UDG/20.15.2/RMV-UACINFO]] · RMV UACINFO
+- [ADD UACINFO](command/UDG/20.15.2/ADD-UACINFO.md)
+- [LST UACINFO](command/UDG/20.15.2/LST-UACINFO.md)
+- [MOD UACINFO](command/UDG/20.15.2/MOD-UACINFO.md)
+- [RMV UACINFO](command/UDG/20.15.2/RMV-UACINFO.md)
 
 ## 证据
 

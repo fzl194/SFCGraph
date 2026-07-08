@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-DBUPGSTATUS]] · DSP DBUPGSTATUS
+- [DSP DBUPGSTATUS](command/UNC/20.15.2/DSP-DBUPGSTATUS.md)
 
 ## 证据
 

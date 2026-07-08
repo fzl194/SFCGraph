@@ -41,7 +41,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NODEMEMSTAT]] · Node的内存信息（NODEMEMSTAT）
+- [Node的内存信息（NODEMEMSTAT）](configobject/UNC/20.15.2/NODEMEMSTAT.md)
 
 ## 使用实例
 

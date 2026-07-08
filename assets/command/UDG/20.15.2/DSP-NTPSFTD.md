@@ -37,7 +37,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/NTPSFTD]] · NTP软参（NTPSFTD）
+- [NTP软参（NTPSFTD）](configobject/UDG/20.15.2/NTPSFTD.md)
 
 ## 使用实例
 

@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/SRIPV4STATICSITE]] · IPv4静态路由全局属性（SRIPV4STATICSITE）
+- [IPv4静态路由全局属性（SRIPV4STATICSITE）](configobject/UDG/20.15.2/SRIPV4STATICSITE.md)
 
 ## 使用实例
 

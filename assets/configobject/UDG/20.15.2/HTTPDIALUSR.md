@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HTTPDIALUSR]] · LST HTTPDIALUSR
+- [LST HTTPDIALUSR](command/UDG/20.15.2/LST-HTTPDIALUSR.md)
 
 ## 证据
 

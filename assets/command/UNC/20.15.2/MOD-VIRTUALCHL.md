@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/VIRTUALCHL]] · 虚拟通道映射（VIRTUALCHL）
+- [虚拟通道映射（VIRTUALCHL）](configobject/UNC/20.15.2/VIRTUALCHL.md)
 
 ## 使用实例
 

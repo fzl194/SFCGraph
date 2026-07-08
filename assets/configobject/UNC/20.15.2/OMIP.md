@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OMIP]] · LST OMIP
-- [[command/UNC/20.15.2/SET-OMIP]] · SET OMIP
+- [LST OMIP](command/UNC/20.15.2/LST-OMIP.md)
+- [SET OMIP](command/UNC/20.15.2/SET-OMIP.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-MSSTBMHASH]] · DSP MSSTBMHASH
+- [DSP MSSTBMHASH](command/UDG/20.15.2/DSP-MSSTBMHASH.md)
 
 ## 证据
 

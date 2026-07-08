@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LNKCTRLLOG]] · LST LNKCTRLLOG
-- [[command/UNC/20.15.2/SET-LNKCTRLLOG]] · SET LNKCTRLLOG
+- [LST LNKCTRLLOG](command/UNC/20.15.2/LST-LNKCTRLLOG.md)
+- [SET LNKCTRLLOG](command/UNC/20.15.2/SET-LNKCTRLLOG.md)
 
 ## 证据
 

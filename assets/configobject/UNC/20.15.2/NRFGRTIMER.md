@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NRFGRTIMER]] · LST NRFGRTIMER
-- [[command/UNC/20.15.2/SET-NRFGRTIMER]] · SET NRFGRTIMER
+- [LST NRFGRTIMER](command/UNC/20.15.2/LST-NRFGRTIMER.md)
+- [SET NRFGRTIMER](command/UNC/20.15.2/SET-NRFGRTIMER.md)
 
 ## 证据
 

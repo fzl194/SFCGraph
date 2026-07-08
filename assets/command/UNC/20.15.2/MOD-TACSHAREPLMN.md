@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/TACSHAREPLMN]] · 基于区域的PLMN管理（TACSHAREPLMN）
+- [基于区域的PLMN管理（TACSHAREPLMN）](configobject/UNC/20.15.2/TACSHAREPLMN.md)
 
 ## 使用实例
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/OPR-FESSEARCHTABLE]] · OPR FESSEARCHTABLE
+- [OPR FESSEARCHTABLE](command/UDG/20.15.2/OPR-FESSEARCHTABLE.md)
 
 ## 证据
 

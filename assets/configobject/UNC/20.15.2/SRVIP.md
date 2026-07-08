@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SRVIP]] · DSP SRVIP
+- [DSP SRVIP](command/UNC/20.15.2/DSP-SRVIP.md)
 
 ## 证据
 

@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GBSM]] · LST GBSM
-- [[command/UNC/20.15.2/SET-GBSM]] · SET GBSM
+- [LST GBSM](command/UNC/20.15.2/LST-GBSM.md)
+- [SET GBSM](command/UNC/20.15.2/SET-GBSM.md)
 
 ## 证据
 

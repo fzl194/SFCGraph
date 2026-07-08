@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-MKINFO]] · DSP MKINFO
+- [DSP MKINFO](command/UNC/20.15.2/DSP-MKINFO.md)
 
 ## 证据
 

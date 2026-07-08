@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/LOGAGENTSTC]] · 日志代理丢弃的日志信息（LOGAGENTSTC）
+- [日志代理丢弃的日志信息（LOGAGENTSTC）](configobject/UNC/20.15.2/LOGAGENTSTC.md)
 
 ## 使用实例
 

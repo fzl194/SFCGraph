@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SFEEVENTSTAT]] · DSP SFEEVENTSTAT
+- [DSP SFEEVENTSTAT](command/UDG/20.15.2/DSP-SFEEVENTSTAT.md)
 
 ## 证据
 

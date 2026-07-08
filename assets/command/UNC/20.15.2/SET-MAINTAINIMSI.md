@@ -48,7 +48,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/MAINTAINIMSI]] · 在线承载为保留承载（MAINTAINIMSI）
+- [在线承载为保留承载（MAINTAINIMSI）](configobject/UNC/20.15.2/MAINTAINIMSI.md)
 
 ## 使用实例
 

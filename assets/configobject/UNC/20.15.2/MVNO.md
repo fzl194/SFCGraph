@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MVNO]] · ADD MVNO
-- [[command/UNC/20.15.2/LST-MVNO]] · LST MVNO
-- [[command/UNC/20.15.2/MOD-MVNO]] · MOD MVNO
-- [[command/UNC/20.15.2/RMV-MVNO]] · RMV MVNO
+- [ADD MVNO](command/UNC/20.15.2/ADD-MVNO.md)
+- [LST MVNO](command/UNC/20.15.2/LST-MVNO.md)
+- [MOD MVNO](command/UNC/20.15.2/MOD-MVNO.md)
+- [RMV MVNO](command/UNC/20.15.2/RMV-MVNO.md)
 
 ## 证据
 

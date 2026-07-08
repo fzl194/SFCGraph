@@ -46,7 +46,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NWNAMEBYHSS]] · 不发送运营商名称的HSS（NWNAMEBYHSS）
+- [不发送运营商名称的HSS（NWNAMEBYHSS）](configobject/UNC/20.15.2/NWNAMEBYHSS.md)
 
 ## 证据
 

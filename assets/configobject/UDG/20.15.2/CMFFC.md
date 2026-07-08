@@ -38,8 +38,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CMFFC]] · LST CMFFC
-- [[command/UDG/20.15.2/SET-CMFFC]] · SET CMFFC
+- [LST CMFFC](command/UDG/20.15.2/LST-CMFFC.md)
+- [SET CMFFC](command/UDG/20.15.2/SET-CMFFC.md)
 
 ## 证据
 

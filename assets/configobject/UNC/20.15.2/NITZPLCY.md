@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NITZPLCY]] · ADD NITZPLCY
-- [[command/UNC/20.15.2/LST-NITZPLCY]] · LST NITZPLCY
-- [[command/UNC/20.15.2/MOD-NITZPLCY]] · MOD NITZPLCY
-- [[command/UNC/20.15.2/RMV-NITZPLCY]] · RMV NITZPLCY
+- [ADD NITZPLCY](command/UNC/20.15.2/ADD-NITZPLCY.md)
+- [LST NITZPLCY](command/UNC/20.15.2/LST-NITZPLCY.md)
+- [MOD NITZPLCY](command/UNC/20.15.2/MOD-NITZPLCY.md)
+- [RMV NITZPLCY](command/UNC/20.15.2/RMV-NITZPLCY.md)
 
 ## 证据
 

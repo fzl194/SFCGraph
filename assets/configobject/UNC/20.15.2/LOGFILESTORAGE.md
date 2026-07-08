@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LOGFILESTORAGE]] · DSP LOGFILESTORAGE
+- [DSP LOGFILESTORAGE](command/UNC/20.15.2/DSP-LOGFILESTORAGE.md)
 
 ## 证据
 

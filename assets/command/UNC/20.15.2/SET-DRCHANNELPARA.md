@@ -61,7 +61,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DRCHANNELPARA]] · 容灾通道参数（DRCHANNELPARA）
+- [容灾通道参数（DRCHANNELPARA）](configobject/UNC/20.15.2/DRCHANNELPARA.md)
 
 ## 使用实例
 

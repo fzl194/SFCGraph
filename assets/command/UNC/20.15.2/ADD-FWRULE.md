@@ -45,7 +45,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/FWRULE]] · 转发规则（FWRULE）
+- [转发规则（FWRULE）](configobject/UNC/20.15.2/FWRULE.md)
 
 ## 使用实例
 

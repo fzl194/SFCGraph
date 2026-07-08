@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-GLBEDRXATTR]] · LST GLBEDRXATTR
-- [[command/UNC/20.15.2/SET-GLBEDRXATTR]] · SET GLBEDRXATTR
+- [LST GLBEDRXATTR](command/UNC/20.15.2/LST-GLBEDRXATTR.md)
+- [SET GLBEDRXATTR](command/UNC/20.15.2/SET-GLBEDRXATTR.md)
 
 ## 证据
 

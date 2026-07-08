@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-AMFFCPARA]] · LST AMFFCPARA
-- [[command/UNC/20.15.2/SET-AMFFCPARA]] · SET AMFFCPARA
+- [LST AMFFCPARA](command/UNC/20.15.2/LST-AMFFCPARA.md)
+- [SET AMFFCPARA](command/UNC/20.15.2/SET-AMFFCPARA.md)
 
 ## 证据
 

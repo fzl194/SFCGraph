@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SMFPDUREACT]] · 跨区域PDU会话重建策略（SMFPDUREACT）
+- [跨区域PDU会话重建策略（SMFPDUREACT）](configobject/UNC/20.15.2/SMFPDUREACT.md)
 
 ## 使用实例
 

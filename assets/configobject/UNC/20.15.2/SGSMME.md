@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SGSMME]] · ADD SGSMME
-- [[command/UNC/20.15.2/LST-SGSMME]] · LST SGSMME
-- [[command/UNC/20.15.2/MOD-SGSMME]] · MOD SGSMME
-- [[command/UNC/20.15.2/RMV-SGSMME]] · RMV SGSMME
+- [ADD SGSMME](command/UNC/20.15.2/ADD-SGSMME.md)
+- [LST SGSMME](command/UNC/20.15.2/LST-SGSMME.md)
+- [MOD SGSMME](command/UNC/20.15.2/MOD-SGSMME.md)
+- [RMV SGSMME](command/UNC/20.15.2/RMV-SGSMME.md)
 
 ## 证据
 

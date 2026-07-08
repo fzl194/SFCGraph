@@ -28,9 +28,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFUUID]] · ADD NFUUID
-- [[command/UNC/20.15.2/LST-NFUUID]] · LST NFUUID
-- [[command/UNC/20.15.2/RMV-NFUUID]] · RMV NFUUID
+- [ADD NFUUID](command/UNC/20.15.2/ADD-NFUUID.md)
+- [LST NFUUID](command/UNC/20.15.2/LST-NFUUID.md)
+- [RMV NFUUID](command/UNC/20.15.2/RMV-NFUUID.md)
 
 ## 证据
 

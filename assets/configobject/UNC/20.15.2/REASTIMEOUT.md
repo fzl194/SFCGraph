@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-REASTIMEOUT]] · LST REASTIMEOUT
-- [[command/UNC/20.15.2/SET-REASTIMEOUT]] · SET REASTIMEOUT
+- [LST REASTIMEOUT](command/UNC/20.15.2/LST-REASTIMEOUT.md)
+- [SET REASTIMEOUT](command/UNC/20.15.2/SET-REASTIMEOUT.md)
 
 ## 证据
 

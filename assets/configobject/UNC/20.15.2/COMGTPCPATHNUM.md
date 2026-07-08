@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-COMGTPCPATHNUM]] · DSP COMGTPCPATHNUM
+- [DSP COMGTPCPATHNUM](command/UNC/20.15.2/DSP-COMGTPCPATHNUM.md)
 
 ## 证据
 

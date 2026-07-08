@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组;
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/FABRICINALARMCFG]] · PAE告警配置（FABRICINALARMCFG）
+- [PAE告警配置（FABRICINALARMCFG）](configobject/UDG/20.15.2/FABRICINALARMCFG.md)
 
 ## 使用实例
 

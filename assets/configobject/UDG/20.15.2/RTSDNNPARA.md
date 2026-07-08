@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-RTSDNNPARA]] · LST RTSDNNPARA
-- [[command/UDG/20.15.2/SET-RTSDNNPARA]] · SET RTSDNNPARA
+- [LST RTSDNNPARA](command/UDG/20.15.2/LST-RTSDNNPARA.md)
+- [SET RTSDNNPARA](command/UDG/20.15.2/SET-RTSDNNPARA.md)
 
 ## 证据
 

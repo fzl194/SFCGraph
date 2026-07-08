@@ -40,7 +40,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/HIGHRISKPERIOD]] · 高危时间段提示状态（HIGHRISKPERIOD）
+- [高危时间段提示状态（HIGHRISKPERIOD）](configobject/UNC/20.15.2/HIGHRISKPERIOD.md)
 
 ## 使用实例
 

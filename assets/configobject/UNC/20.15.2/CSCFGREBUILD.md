@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-CSCFGREBUILD]] · STR CSCFGREBUILD
+- [STR CSCFGREBUILD](command/UNC/20.15.2/STR-CSCFGREBUILD.md)
 
 ## 证据
 

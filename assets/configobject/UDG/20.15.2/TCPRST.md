@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TCPRST]] · LST TCPRST
-- [[command/UDG/20.15.2/SET-TCPRST]] · SET TCPRST
+- [LST TCPRST](command/UDG/20.15.2/LST-TCPRST.md)
+- [SET TCPRST](command/UDG/20.15.2/SET-TCPRST.md)
 
 ## 证据
 

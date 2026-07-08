@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TMT3N3]] · ADD TMT3N3
-- [[command/UNC/20.15.2/LST-TMT3N3]] · LST TMT3N3
-- [[command/UNC/20.15.2/MOD-TMT3N3]] · MOD TMT3N3
-- [[command/UNC/20.15.2/RMV-TMT3N3]] · RMV TMT3N3
+- [ADD TMT3N3](command/UNC/20.15.2/ADD-TMT3N3.md)
+- [LST TMT3N3](command/UNC/20.15.2/LST-TMT3N3.md)
+- [MOD TMT3N3](command/UNC/20.15.2/MOD-TMT3N3.md)
+- [RMV TMT3N3](command/UNC/20.15.2/RMV-TMT3N3.md)
 
 ## 证据
 

@@ -40,7 +40,7 @@ G_1，管理员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SSHSSTATUSINFO]] · 服务器运行状态信息（SSHSSTATUSINFO）
+- [服务器运行状态信息（SSHSSTATUSINFO）](configobject/UNC/20.15.2/SSHSSTATUSINFO.md)
 
 ## 使用实例
 

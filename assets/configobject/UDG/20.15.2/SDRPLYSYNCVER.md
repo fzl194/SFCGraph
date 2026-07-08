@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SDRPLYSYNCVER]] · DSP SDRPLYSYNCVER
+- [DSP SDRPLYSYNCVER](command/UDG/20.15.2/DSP-SDRPLYSYNCVER.md)
 
 ## 证据
 

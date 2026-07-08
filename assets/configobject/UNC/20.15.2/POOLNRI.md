@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-POOLNRI]] · ADD POOLNRI
-- [[command/UNC/20.15.2/LST-POOLNRI]] · LST POOLNRI
-- [[command/UNC/20.15.2/MOD-POOLNRI]] · MOD POOLNRI
-- [[command/UNC/20.15.2/RMV-POOLNRI]] · RMV POOLNRI
+- [ADD POOLNRI](command/UNC/20.15.2/ADD-POOLNRI.md)
+- [LST POOLNRI](command/UNC/20.15.2/LST-POOLNRI.md)
+- [MOD POOLNRI](command/UNC/20.15.2/MOD-POOLNRI.md)
+- [RMV POOLNRI](command/UNC/20.15.2/RMV-POOLNRI.md)
 
 ## 证据
 

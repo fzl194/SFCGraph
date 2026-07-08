@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SRVCHAIN]] · ADD SRVCHAIN
-- [[command/UDG/20.15.2/LST-SRVCHAIN]] · LST SRVCHAIN
-- [[command/UDG/20.15.2/MOD-SRVCHAIN]] · MOD SRVCHAIN
-- [[command/UDG/20.15.2/RMV-SRVCHAIN]] · RMV SRVCHAIN
+- [ADD SRVCHAIN](command/UDG/20.15.2/ADD-SRVCHAIN.md)
+- [LST SRVCHAIN](command/UDG/20.15.2/LST-SRVCHAIN.md)
+- [MOD SRVCHAIN](command/UDG/20.15.2/MOD-SRVCHAIN.md)
+- [RMV SRVCHAIN](command/UDG/20.15.2/RMV-SRVCHAIN.md)
 
 ## 证据
 

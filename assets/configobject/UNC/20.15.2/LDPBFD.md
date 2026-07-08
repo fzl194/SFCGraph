@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-LDPBFD]] · LST LDPBFD
-- [[command/UNC/20.15.2/SET-LDPBFD]] · SET LDPBFD
+- [LST LDPBFD](command/UNC/20.15.2/LST-LDPBFD.md)
+- [SET LDPBFD](command/UNC/20.15.2/SET-LDPBFD.md)
 
 ## 证据
 

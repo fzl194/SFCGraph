@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/SET-MSSCOMMMATCH]] · SET MSSCOMMMATCH
+- [SET MSSCOMMMATCH](command/UDG/20.15.2/SET-MSSCOMMMATCH.md)
 
 ## 证据
 

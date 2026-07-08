@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MTSPOLICY]] · ADD MTSPOLICY
-- [[command/UNC/20.15.2/LST-MTSPOLICY]] · LST MTSPOLICY
-- [[command/UNC/20.15.2/RMV-MTSPOLICY]] · RMV MTSPOLICY
+- [ADD MTSPOLICY](command/UNC/20.15.2/ADD-MTSPOLICY.md)
+- [LST MTSPOLICY](command/UNC/20.15.2/LST-MTSPOLICY.md)
+- [RMV MTSPOLICY](command/UNC/20.15.2/RMV-MTSPOLICY.md)
 
 ## 证据
 

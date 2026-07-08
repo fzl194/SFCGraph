@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NASCMPT]] · LST NASCMPT
-- [[command/UNC/20.15.2/SET-NASCMPT]] · SET NASCMPT
+- [LST NASCMPT](command/UNC/20.15.2/LST-NASCMPT.md)
+- [SET NASCMPT](command/UNC/20.15.2/SET-NASCMPT.md)
 
 ## 证据
 

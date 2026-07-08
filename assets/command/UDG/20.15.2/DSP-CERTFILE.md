@@ -33,7 +33,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/CERTFILE]] · 证书（CERTFILE）
+- [证书（CERTFILE）](configobject/UDG/20.15.2/CERTFILE.md)
 
 ## 使用实例
 

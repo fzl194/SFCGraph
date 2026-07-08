@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SPCTLLI]] · ADD SPCTLLI
-- [[command/UNC/20.15.2/LST-SPCTLLI]] · LST SPCTLLI
-- [[command/UNC/20.15.2/RMV-SPCTLLI]] · RMV SPCTLLI
+- [ADD SPCTLLI](command/UNC/20.15.2/ADD-SPCTLLI.md)
+- [LST SPCTLLI](command/UNC/20.15.2/LST-SPCTLLI.md)
+- [RMV SPCTLLI](command/UNC/20.15.2/RMV-SPCTLLI.md)
 
 ## 证据
 

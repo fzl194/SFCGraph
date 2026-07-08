@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SESSIONMSGSTAT]] · DSP SESSIONMSGSTAT
+- [DSP SESSIONMSGSTAT](command/UDG/20.15.2/DSP-SESSIONMSGSTAT.md)
 
 ## 证据
 

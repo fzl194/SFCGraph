@@ -41,7 +41,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OSPFV3IFIPSECSA]] · 创建OSPFv3 接口的安全联盟SA（OSPFV3IFIPSECSA）
+- [创建OSPFv3 接口的安全联盟SA（OSPFV3IFIPSECSA）](configobject/UNC/20.15.2/OSPFV3IFIPSECSA.md)
 
 ## 使用实例
 

@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-HPLMN]] · ADD HPLMN
-- [[command/UNC/20.15.2/LST-HPLMN]] · LST HPLMN
-- [[command/UNC/20.15.2/MOD-HPLMN]] · MOD HPLMN
-- [[command/UNC/20.15.2/RMV-HPLMN]] · RMV HPLMN
+- [ADD HPLMN](command/UNC/20.15.2/ADD-HPLMN.md)
+- [LST HPLMN](command/UNC/20.15.2/LST-HPLMN.md)
+- [MOD HPLMN](command/UNC/20.15.2/MOD-HPLMN.md)
+- [RMV HPLMN](command/UNC/20.15.2/RMV-HPLMN.md)
 
 ## 证据
 

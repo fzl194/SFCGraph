@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NOCDRALM]] · LST NOCDRALM
-- [[command/UNC/20.15.2/SET-NOCDRALM]] · SET NOCDRALM
+- [LST NOCDRALM](command/UNC/20.15.2/LST-NOCDRALM.md)
+- [SET NOCDRALM](command/UNC/20.15.2/SET-NOCDRALM.md)
 
 ## 证据
 

@@ -29,8 +29,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-OVERLOADRC]] · LST OVERLOADRC
-- [[command/UNC/20.15.2/SET-OVERLOADRC]] · SET OVERLOADRC
+- [LST OVERLOADRC](command/UNC/20.15.2/LST-OVERLOADRC.md)
+- [SET OVERLOADRC](command/UNC/20.15.2/SET-OVERLOADRC.md)
 
 ## 证据
 

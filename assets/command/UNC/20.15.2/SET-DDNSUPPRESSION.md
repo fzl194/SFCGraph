@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/DDNSUPPRESSION]] · DDN抑制功能配置（DDNSUPPRESSION）
+- [DDN抑制功能配置（DDNSUPPRESSION）](configobject/UNC/20.15.2/DDNSUPPRESSION.md)
 
 ## 使用实例
 

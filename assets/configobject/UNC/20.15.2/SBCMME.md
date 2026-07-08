@@ -21,11 +21,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-SBCMME]] · ADD SBCMME
-- [[command/UNC/20.15.2/DSP-SBCMME]] · DSP SBCMME
-- [[command/UNC/20.15.2/LST-SBCMME]] · LST SBCMME
-- [[command/UNC/20.15.2/MOD-SBCMME]] · MOD SBCMME
-- [[command/UNC/20.15.2/RMV-SBCMME]] · RMV SBCMME
+- [ADD SBCMME](command/UNC/20.15.2/ADD-SBCMME.md)
+- [DSP SBCMME](command/UNC/20.15.2/DSP-SBCMME.md)
+- [LST SBCMME](command/UNC/20.15.2/LST-SBCMME.md)
+- [MOD SBCMME](command/UNC/20.15.2/MOD-SBCMME.md)
+- [RMV SBCMME](command/UNC/20.15.2/RMV-SBCMME.md)
 
 ## 证据
 

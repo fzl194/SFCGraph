@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DFTIDLETIME]] · LST DFTIDLETIME
-- [[command/UNC/20.15.2/SET-DFTIDLETIME]] · SET DFTIDLETIME
+- [LST DFTIDLETIME](command/UNC/20.15.2/LST-DFTIDLETIME.md)
+- [SET DFTIDLETIME](command/UNC/20.15.2/SET-DFTIDLETIME.md)
 
 ## 证据
 

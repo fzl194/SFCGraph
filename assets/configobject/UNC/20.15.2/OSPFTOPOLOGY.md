@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-OSPFTOPOLOGY]] · DSP OSPFTOPOLOGY
+- [DSP OSPFTOPOLOGY](command/UNC/20.15.2/DSP-OSPFTOPOLOGY.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DMTLINKGROUPSTC]] · DSP DMTLINKGROUPSTC
+- [DSP DMTLINKGROUPSTC](command/UDG/20.15.2/DSP-DMTLINKGROUPSTC.md)
 
 ## 证据
 

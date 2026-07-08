@@ -17,8 +17,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-UPGSTEP]] · LST UPGSTEP
-- [[command/UNC/20.15.2/SET-UPGSTEP]] · SET UPGSTEP
+- [LST UPGSTEP](command/UNC/20.15.2/LST-UPGSTEP.md)
+- [SET UPGSTEP](command/UNC/20.15.2/SET-UPGSTEP.md)
 
 ## 证据
 

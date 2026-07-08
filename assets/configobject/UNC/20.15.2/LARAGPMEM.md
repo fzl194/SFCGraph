@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-LARAGPMEM]] · ADD LARAGPMEM
-- [[command/UNC/20.15.2/LST-LARAGPMEM]] · LST LARAGPMEM
-- [[command/UNC/20.15.2/RMV-LARAGPMEM]] · RMV LARAGPMEM
+- [ADD LARAGPMEM](command/UNC/20.15.2/ADD-LARAGPMEM.md)
+- [LST LARAGPMEM](command/UNC/20.15.2/LST-LARAGPMEM.md)
+- [RMV LARAGPMEM](command/UNC/20.15.2/RMV-LARAGPMEM.md)
 
 ## 证据
 

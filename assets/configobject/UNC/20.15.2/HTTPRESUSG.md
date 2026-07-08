@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-HTTPRESUSG]] · DSP HTTPRESUSG
+- [DSP HTTPRESUSG](command/UNC/20.15.2/DSP-HTTPRESUSG.md)
 
 ## 证据
 

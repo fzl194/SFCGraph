@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-IUSM]] · LST IUSM
-- [[command/UNC/20.15.2/SET-IUSM]] · SET IUSM
+- [LST IUSM](command/UNC/20.15.2/LST-IUSM.md)
+- [SET IUSM](command/UNC/20.15.2/SET-IUSM.md)
 
 ## 证据
 

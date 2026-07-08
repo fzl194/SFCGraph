@@ -27,9 +27,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-APNALIAS]] · ADD APNALIAS
-- [[command/UDG/20.15.2/LST-APNALIAS]] · LST APNALIAS
-- [[command/UDG/20.15.2/RMV-APNALIAS]] · RMV APNALIAS
+- [ADD APNALIAS](command/UDG/20.15.2/ADD-APNALIAS.md)
+- [LST APNALIAS](command/UDG/20.15.2/LST-APNALIAS.md)
+- [RMV APNALIAS](command/UDG/20.15.2/RMV-APNALIAS.md)
 
 ## 证据
 

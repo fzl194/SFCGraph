@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GBNSEGRP]] · ADD GBNSEGRP
-- [[command/UNC/20.15.2/LST-GBNSEGRP]] · LST GBNSEGRP
-- [[command/UNC/20.15.2/MOD-GBNSEGRP]] · MOD GBNSEGRP
-- [[command/UNC/20.15.2/RMV-GBNSEGRP]] · RMV GBNSEGRP
+- [ADD GBNSEGRP](command/UNC/20.15.2/ADD-GBNSEGRP.md)
+- [LST GBNSEGRP](command/UNC/20.15.2/LST-GBNSEGRP.md)
+- [MOD GBNSEGRP](command/UNC/20.15.2/MOD-GBNSEGRP.md)
+- [RMV GBNSEGRP](command/UNC/20.15.2/RMV-GBNSEGRP.md)
 
 ## 证据
 

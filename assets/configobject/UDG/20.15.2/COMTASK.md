@@ -27,7 +27,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/STP-COMTASK]] · STP COMTASK
+- [STP COMTASK](command/UDG/20.15.2/STP-COMTASK.md)
 
 ## 证据
 

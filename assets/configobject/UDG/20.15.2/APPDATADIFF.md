@@ -19,7 +19,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-APPDATADIFF]] · DSP APPDATADIFF
+- [DSP APPDATADIFF](command/UDG/20.15.2/DSP-APPDATADIFF.md)
 
 ## 证据
 

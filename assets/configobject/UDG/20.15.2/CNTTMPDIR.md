@@ -32,8 +32,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-CNTTMPDIR]] · DSP CNTTMPDIR
-- [[command/UDG/20.15.2/SET-CNTTMPDIR]] · SET CNTTMPDIR
+- [DSP CNTTMPDIR](command/UDG/20.15.2/DSP-CNTTMPDIR.md)
+- [SET CNTTMPDIR](command/UDG/20.15.2/SET-CNTTMPDIR.md)
 
 ## 证据
 

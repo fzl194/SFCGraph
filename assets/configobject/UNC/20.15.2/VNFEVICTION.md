@@ -28,8 +28,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-VNFEVICTION]] · LST VNFEVICTION
-- [[command/UNC/20.15.2/SET-VNFEVICTION]] · SET VNFEVICTION
+- [LST VNFEVICTION](command/UNC/20.15.2/LST-VNFEVICTION.md)
+- [SET VNFEVICTION](command/UNC/20.15.2/SET-VNFEVICTION.md)
 
 ## 证据
 

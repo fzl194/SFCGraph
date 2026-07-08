@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ENBGPMEM]] · ADD ENBGPMEM
-- [[command/UNC/20.15.2/LST-ENBGPMEM]] · LST ENBGPMEM
-- [[command/UNC/20.15.2/RMV-ENBGPMEM]] · RMV ENBGPMEM
+- [ADD ENBGPMEM](command/UNC/20.15.2/ADD-ENBGPMEM.md)
+- [LST ENBGPMEM](command/UNC/20.15.2/LST-ENBGPMEM.md)
+- [RMV ENBGPMEM](command/UNC/20.15.2/RMV-ENBGPMEM.md)
 
 ## 证据
 

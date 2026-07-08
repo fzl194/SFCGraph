@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SRVIP]] · DSP SRVIP
+- [DSP SRVIP](command/UDG/20.15.2/DSP-SRVIP.md)
 
 ## 证据
 

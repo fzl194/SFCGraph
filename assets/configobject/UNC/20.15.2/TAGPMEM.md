@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TAGPMEM]] · ADD TAGPMEM
-- [[command/UNC/20.15.2/LST-TAGPMEM]] · LST TAGPMEM
-- [[command/UNC/20.15.2/RMV-TAGPMEM]] · RMV TAGPMEM
+- [ADD TAGPMEM](command/UNC/20.15.2/ADD-TAGPMEM.md)
+- [LST TAGPMEM](command/UNC/20.15.2/LST-TAGPMEM.md)
+- [RMV TAGPMEM](command/UNC/20.15.2/RMV-TAGPMEM.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-ENBNSINDB]] · ADD ENBNSINDB
-- [[command/UNC/20.15.2/LST-ENBNSINDB]] · LST ENBNSINDB
-- [[command/UNC/20.15.2/RMV-ENBNSINDB]] · RMV ENBNSINDB
+- [ADD ENBNSINDB](command/UNC/20.15.2/ADD-ENBNSINDB.md)
+- [LST ENBNSINDB](command/UNC/20.15.2/LST-ENBNSINDB.md)
+- [RMV ENBNSINDB](command/UNC/20.15.2/RMV-ENBNSINDB.md)
 
 ## 证据
 

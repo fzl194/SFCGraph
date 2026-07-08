@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-TRCTASKSESSION]] · DSP TRCTASKSESSION
+- [DSP TRCTASKSESSION](command/UNC/20.15.2/DSP-TRCTASKSESSION.md)
 
 ## 证据
 

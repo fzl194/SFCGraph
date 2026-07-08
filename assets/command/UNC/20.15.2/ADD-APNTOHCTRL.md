@@ -42,7 +42,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/APNTOHCTRL]] · APN粒度的智家随行会话控制（APNTOHCTRL）
+- [APN粒度的智家随行会话控制（APNTOHCTRL）](configobject/UNC/20.15.2/APNTOHCTRL.md)
 
 ## 使用实例
 

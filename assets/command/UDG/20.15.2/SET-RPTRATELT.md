@@ -54,7 +54,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/RPTRATELT]] · 业务报表消息流控配置（RPTRATELT）
+- [业务报表消息流控配置（RPTRATELT）](configobject/UDG/20.15.2/RPTRATELT.md)
 
 ## 使用实例
 

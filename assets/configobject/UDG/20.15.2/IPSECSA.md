@@ -17,11 +17,11 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-IPSECSA]] · ADD IPSECSA
-- [[command/UDG/20.15.2/DSP-IPSECSA]] · DSP IPSECSA
-- [[command/UDG/20.15.2/LST-IPSECSA]] · LST IPSECSA
-- [[command/UDG/20.15.2/MOD-IPSECSA]] · MOD IPSECSA
-- [[command/UDG/20.15.2/RMV-IPSECSA]] · RMV IPSECSA
+- [ADD IPSECSA](command/UDG/20.15.2/ADD-IPSECSA.md)
+- [DSP IPSECSA](command/UDG/20.15.2/DSP-IPSECSA.md)
+- [LST IPSECSA](command/UDG/20.15.2/LST-IPSECSA.md)
+- [MOD IPSECSA](command/UDG/20.15.2/MOD-IPSECSA.md)
+- [RMV IPSECSA](command/UDG/20.15.2/RMV-IPSECSA.md)
 
 ## 证据
 

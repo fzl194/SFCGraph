@@ -51,7 +51,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/BMBYPASSSTATUS]] · 裸机BYPASS状态（BMBYPASSSTATUS）
+- [裸机BYPASS状态（BMBYPASSSTATUS）](configobject/UNC/20.15.2/BMBYPASSSTATUS.md)
 
 ## 使用实例
 

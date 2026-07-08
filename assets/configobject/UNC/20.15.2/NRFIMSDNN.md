@@ -25,9 +25,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NRFIMSDNN]] · ADD NRFIMSDNN
-- [[command/UNC/20.15.2/LST-NRFIMSDNN]] · LST NRFIMSDNN
-- [[command/UNC/20.15.2/RMV-NRFIMSDNN]] · RMV NRFIMSDNN
+- [ADD NRFIMSDNN](command/UNC/20.15.2/ADD-NRFIMSDNN.md)
+- [LST NRFIMSDNN](command/UNC/20.15.2/LST-NRFIMSDNN.md)
+- [RMV NRFIMSDNN](command/UNC/20.15.2/RMV-NRFIMSDNN.md)
 
 ## 证据
 

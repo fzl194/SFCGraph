@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/TST-NFTOKEN]] · TST NFTOKEN
+- [TST NFTOKEN](command/UNC/20.15.2/TST-NFTOKEN.md)
 
 ## 证据
 

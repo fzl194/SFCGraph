@@ -31,7 +31,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/AUTOLOGPOLICY]] · 日志自动备份策略（AUTOLOGPOLICY）
+- [日志自动备份策略（AUTOLOGPOLICY）](configobject/UDG/20.15.2/AUTOLOGPOLICY.md)
 
 ## 使用实例
 

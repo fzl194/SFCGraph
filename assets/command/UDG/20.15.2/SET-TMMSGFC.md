@@ -39,7 +39,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/TMMSGFC]] · 跟踪消息流控状态（TMMSGFC）
+- [跟踪消息流控状态（TMMSGFC）](configobject/UDG/20.15.2/TMMSGFC.md)
 
 ## 使用实例
 

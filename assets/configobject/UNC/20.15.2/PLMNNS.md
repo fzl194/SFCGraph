@@ -23,10 +23,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PLMNNS]] · ADD PLMNNS
-- [[command/UNC/20.15.2/LST-PLMNNS]] · LST PLMNNS
-- [[command/UNC/20.15.2/MOD-PLMNNS]] · MOD PLMNNS
-- [[command/UNC/20.15.2/RMV-PLMNNS]] · RMV PLMNNS
+- [ADD PLMNNS](command/UNC/20.15.2/ADD-PLMNNS.md)
+- [LST PLMNNS](command/UNC/20.15.2/LST-PLMNNS.md)
+- [MOD PLMNNS](command/UNC/20.15.2/MOD-PLMNNS.md)
+- [RMV PLMNNS](command/UNC/20.15.2/RMV-PLMNNS.md)
 
 ## 证据
 

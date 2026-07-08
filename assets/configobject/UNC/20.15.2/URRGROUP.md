@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-URRGROUP]] · ADD URRGROUP
-- [[command/UNC/20.15.2/LST-URRGROUP]] · LST URRGROUP
-- [[command/UNC/20.15.2/MOD-URRGROUP]] · MOD URRGROUP
-- [[command/UNC/20.15.2/RMV-URRGROUP]] · RMV URRGROUP
+- [ADD URRGROUP](command/UNC/20.15.2/ADD-URRGROUP.md)
+- [LST URRGROUP](command/UNC/20.15.2/LST-URRGROUP.md)
+- [MOD URRGROUP](command/UNC/20.15.2/MOD-URRGROUP.md)
+- [RMV URRGROUP](command/UNC/20.15.2/RMV-URRGROUP.md)
 
 ## 证据
 

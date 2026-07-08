@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NPTABSTAT]] · DSP NPTABSTAT
+- [DSP NPTABSTAT](command/UDG/20.15.2/DSP-NPTABSTAT.md)
 
 ## 证据
 

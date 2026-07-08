@@ -25,8 +25,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CDFFUNCPARA]] · LST CDFFUNCPARA
-- [[command/UNC/20.15.2/SET-CDFFUNCPARA]] · SET CDFFUNCPARA
+- [LST CDFFUNCPARA](command/UNC/20.15.2/LST-CDFFUNCPARA.md)
+- [SET CDFFUNCPARA](command/UNC/20.15.2/SET-CDFFUNCPARA.md)
 
 ## 证据
 

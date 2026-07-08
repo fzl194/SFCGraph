@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NRFDISCERRSTAT]] · DSP NRFDISCERRSTAT
+- [DSP NRFDISCERRSTAT](command/UNC/20.15.2/DSP-NRFDISCERRSTAT.md)
 
 ## 证据
 

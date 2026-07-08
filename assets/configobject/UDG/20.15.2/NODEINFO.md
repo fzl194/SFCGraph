@@ -20,8 +20,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-NODEINFO]] · DSP NODEINFO
-- [[command/UDG/20.15.2/EXP-NODEINFO]] · EXP NODEINFO
+- [DSP NODEINFO](command/UDG/20.15.2/DSP-NODEINFO.md)
+- [EXP NODEINFO](command/UDG/20.15.2/EXP-NODEINFO.md)
 
 ## 证据
 

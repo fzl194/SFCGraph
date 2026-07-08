@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/UPDIAMPEERADDR]] · Diameter对端地址（UPDIAMPEERADDR）
+- [Diameter对端地址（UPDIAMPEERADDR）](configobject/UDG/20.15.2/UPDIAMPEERADDR.md)
 
 ## 使用实例
 

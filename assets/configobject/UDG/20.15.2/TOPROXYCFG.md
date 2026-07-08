@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-TOPROXYCFG]] · LST TOPROXYCFG
-- [[command/UDG/20.15.2/SET-TOPROXYCFG]] · SET TOPROXYCFG
+- [LST TOPROXYCFG](command/UDG/20.15.2/LST-TOPROXYCFG.md)
+- [SET TOPROXYCFG](command/UDG/20.15.2/SET-TOPROXYCFG.md)
 
 ## 证据
 

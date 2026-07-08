@@ -22,8 +22,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SEQCHK]] · LST SEQCHK
-- [[command/UNC/20.15.2/SET-SEQCHK]] · SET SEQCHK
+- [LST SEQCHK](command/UNC/20.15.2/LST-SEQCHK.md)
+- [SET SEQCHK](command/UNC/20.15.2/SET-SEQCHK.md)
 
 ## 证据
 

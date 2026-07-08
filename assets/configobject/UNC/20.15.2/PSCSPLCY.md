@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-PSCSPLCY]] · LST PSCSPLCY
-- [[command/UNC/20.15.2/SET-PSCSPLCY]] · SET PSCSPLCY
+- [LST PSCSPLCY](command/UNC/20.15.2/LST-PSCSPLCY.md)
+- [SET PSCSPLCY](command/UNC/20.15.2/SET-PSCSPLCY.md)
 
 ## 证据
 

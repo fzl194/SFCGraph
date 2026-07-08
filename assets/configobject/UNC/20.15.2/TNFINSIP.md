@@ -30,9 +30,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TNFINSIP]] · ADD TNFINSIP
-- [[command/UNC/20.15.2/LST-TNFINSIP]] · LST TNFINSIP
-- [[command/UNC/20.15.2/RMV-TNFINSIP]] · RMV TNFINSIP
+- [ADD TNFINSIP](command/UNC/20.15.2/ADD-TNFINSIP.md)
+- [LST TNFINSIP](command/UNC/20.15.2/LST-TNFINSIP.md)
+- [RMV TNFINSIP](command/UNC/20.15.2/RMV-TNFINSIP.md)
 
 ## 证据
 

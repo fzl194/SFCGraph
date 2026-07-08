@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-GTPCCMPT]] · ADD GTPCCMPT
-- [[command/UNC/20.15.2/LST-GTPCCMPT]] · LST GTPCCMPT
-- [[command/UNC/20.15.2/MOD-GTPCCMPT]] · MOD GTPCCMPT
-- [[command/UNC/20.15.2/RMV-GTPCCMPT]] · RMV GTPCCMPT
+- [ADD GTPCCMPT](command/UNC/20.15.2/ADD-GTPCCMPT.md)
+- [LST GTPCCMPT](command/UNC/20.15.2/LST-GTPCCMPT.md)
+- [MOD GTPCCMPT](command/UNC/20.15.2/MOD-GTPCCMPT.md)
+- [RMV GTPCCMPT](command/UNC/20.15.2/RMV-GTPCCMPT.md)
 
 ## 证据
 

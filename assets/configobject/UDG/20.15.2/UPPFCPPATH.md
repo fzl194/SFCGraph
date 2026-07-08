@@ -27,8 +27,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-UPPFCPPATH]] · LST UPPFCPPATH
-- [[command/UDG/20.15.2/SET-UPPFCPPATH]] · SET UPPFCPPATH
+- [LST UPPFCPPATH](command/UDG/20.15.2/LST-UPPFCPPATH.md)
+- [SET UPPFCPPATH](command/UDG/20.15.2/SET-UPPFCPPATH.md)
 
 ## 证据
 

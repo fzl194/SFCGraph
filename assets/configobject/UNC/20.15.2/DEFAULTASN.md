@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-DEFAULTASN]] · LST DEFAULTASN
-- [[command/UNC/20.15.2/SET-DEFAULTASN]] · SET DEFAULTASN
+- [LST DEFAULTASN](command/UNC/20.15.2/LST-DEFAULTASN.md)
+- [SET DEFAULTASN](command/UNC/20.15.2/SET-DEFAULTASN.md)
 
 ## 证据
 

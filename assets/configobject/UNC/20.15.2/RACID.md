@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-RACID]] · ADD RACID
-- [[command/UNC/20.15.2/LST-RACID]] · LST RACID
-- [[command/UNC/20.15.2/RMV-RACID]] · RMV RACID
+- [ADD RACID](command/UNC/20.15.2/ADD-RACID.md)
+- [LST RACID](command/UNC/20.15.2/LST-RACID.md)
+- [RMV RACID](command/UNC/20.15.2/RMV-RACID.md)
 
 ## 证据
 

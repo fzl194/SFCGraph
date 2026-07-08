@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-OSPFGTSM]] · ADD OSPFGTSM
-- [[command/UDG/20.15.2/LST-OSPFGTSM]] · LST OSPFGTSM
-- [[command/UDG/20.15.2/MOD-OSPFGTSM]] · MOD OSPFGTSM
-- [[command/UDG/20.15.2/RMV-OSPFGTSM]] · RMV OSPFGTSM
+- [ADD OSPFGTSM](command/UDG/20.15.2/ADD-OSPFGTSM.md)
+- [LST OSPFGTSM](command/UDG/20.15.2/LST-OSPFGTSM.md)
+- [MOD OSPFGTSM](command/UDG/20.15.2/MOD-OSPFGTSM.md)
+- [RMV OSPFGTSM](command/UDG/20.15.2/RMV-OSPFGTSM.md)
 
 ## 证据
 

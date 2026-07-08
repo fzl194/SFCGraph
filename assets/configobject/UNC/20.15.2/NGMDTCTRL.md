@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGMDTCTRL]] · LST NGMDTCTRL
-- [[command/UNC/20.15.2/SET-NGMDTCTRL]] · SET NGMDTCTRL
+- [LST NGMDTCTRL](command/UNC/20.15.2/LST-NGMDTCTRL.md)
+- [SET NGMDTCTRL](command/UNC/20.15.2/SET-NGMDTCTRL.md)
 
 ## 证据
 

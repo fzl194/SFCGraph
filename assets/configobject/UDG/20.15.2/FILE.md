@@ -17,9 +17,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-FILE]] · DSP FILE
-- [[command/UDG/20.15.2/FTR-FILE]] · FTR FILE
-- [[command/UDG/20.15.2/SYNC-FILE]] · SYNC FILE
+- [DSP FILE](command/UDG/20.15.2/DSP-FILE.md)
+- [FTR FILE](command/UDG/20.15.2/FTR-FILE.md)
+- [SYNC FILE](command/UDG/20.15.2/SYNC-FILE.md)
 
 ## 证据
 

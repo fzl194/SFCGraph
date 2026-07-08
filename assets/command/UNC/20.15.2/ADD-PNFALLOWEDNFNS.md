@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PNFALLOWEDNFNS]] · 对端NF允许的切片信息（PNFALLOWEDNFNS）
+- [对端NF允许的切片信息（PNFALLOWEDNFNS）](configobject/UNC/20.15.2/PNFALLOWEDNFNS.md)
 
 ## 使用实例
 

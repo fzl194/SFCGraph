@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ACT-SRVRECFG]] · ACT SRVRECFG
+- [ACT SRVRECFG](command/UNC/20.15.2/ACT-SRVRECFG.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-DHCP6CLIENTSTAT]] · DSP DHCP6CLIENTSTAT
+- [DSP DHCP6CLIENTSTAT](command/UDG/20.15.2/DSP-DHCP6CLIENTSTAT.md)
 
 ## 证据
 

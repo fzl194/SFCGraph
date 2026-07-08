@@ -22,7 +22,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-LCSBYIMSI]] · DSP LCSBYIMSI
+- [DSP LCSBYIMSI](command/UNC/20.15.2/DSP-LCSBYIMSI.md)
 
 ## 证据
 

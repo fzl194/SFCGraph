@@ -58,7 +58,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NGGUTISELPLCY]] · AMF区域GUTI选网控制策略（NGGUTISELPLCY）
+- [AMF区域GUTI选网控制策略（NGGUTISELPLCY）](configobject/UNC/20.15.2/NGGUTISELPLCY.md)
 
 ## 使用实例
 

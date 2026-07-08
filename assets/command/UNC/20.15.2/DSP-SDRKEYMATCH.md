@@ -38,7 +38,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/SDRKEYMATCH]] · SDRC中的KeyMatch信息（SDRKEYMATCH）
+- [SDRC中的KeyMatch信息（SDRKEYMATCH）](configobject/UNC/20.15.2/SDRKEYMATCH.md)
 
 ## 使用实例
 

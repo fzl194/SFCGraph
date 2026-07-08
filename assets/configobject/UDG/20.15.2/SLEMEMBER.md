@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-SLEMEMBER]] · DSP SLEMEMBER
+- [DSP SLEMEMBER](command/UDG/20.15.2/DSP-SLEMEMBER.md)
 
 ## 证据
 

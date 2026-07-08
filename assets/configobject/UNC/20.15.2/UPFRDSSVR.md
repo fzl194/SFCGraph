@@ -26,9 +26,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-UPFRDSSVR]] · ADD UPFRDSSVR
-- [[command/UNC/20.15.2/LST-UPFRDSSVR]] · LST UPFRDSSVR
-- [[command/UNC/20.15.2/RMV-UPFRDSSVR]] · RMV UPFRDSSVR
+- [ADD UPFRDSSVR](command/UNC/20.15.2/ADD-UPFRDSSVR.md)
+- [LST UPFRDSSVR](command/UNC/20.15.2/LST-UPFRDSSVR.md)
+- [RMV UPFRDSSVR](command/UNC/20.15.2/RMV-UPFRDSSVR.md)
 
 ## 证据
 

@@ -24,7 +24,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RMV-DCSVIDEO]] · RMV DCSVIDEO
+- [RMV DCSVIDEO](command/UDG/20.15.2/RMV-DCSVIDEO.md)
 
 ## 证据
 

@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-UPDYNDIAMAAA]] · DSP UPDYNDIAMAAA
+- [DSP UPDYNDIAMAAA](command/UDG/20.15.2/DSP-UPDYNDIAMAAA.md)
 
 ## 证据
 

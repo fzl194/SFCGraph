@@ -43,7 +43,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/ARPPROBESTANDBYSRCIP]] · 备用成员口ARP探测源地址（ARPPROBESTANDBYSRCIP）
+- [备用成员口ARP探测源地址（ARPPROBESTANDBYSRCIP）](configobject/UDG/20.15.2/ARPPROBESTANDBYSRCIP.md)
 
 ## 使用实例
 

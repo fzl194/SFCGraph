@@ -57,7 +57,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/GWSELBYIMEI]] · 基于IMEI选择GGSN/P-GW配置（GWSELBYIMEI）
+- [基于IMEI选择GGSN/P-GW配置（GWSELBYIMEI）](configobject/UNC/20.15.2/GWSELBYIMEI.md)
 
 ## 使用实例
 

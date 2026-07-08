@@ -48,7 +48,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PODCONFIG]] · POD配置查询（PODCONFIG）
+- [POD配置查询（PODCONFIG）](configobject/UNC/20.15.2/PODCONFIG.md)
 
 ## 使用实例
 

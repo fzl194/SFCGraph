@@ -56,7 +56,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NRFBSFIPV6REL]] · BSF索引和IPv6的关联关系（NRFBSFIPV6REL）
+- [BSF索引和IPv6的关联关系（NRFBSFIPV6REL）](configobject/UNC/20.15.2/NRFBSFIPV6REL.md)
 
 ## 使用实例
 

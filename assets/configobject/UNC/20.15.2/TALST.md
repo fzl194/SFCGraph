@@ -32,10 +32,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-TALST]] · ADD TALST
-- [[command/UNC/20.15.2/LST-TALST]] · LST TALST
-- [[command/UNC/20.15.2/MOD-TALST]] · MOD TALST
-- [[command/UNC/20.15.2/RMV-TALST]] · RMV TALST
+- [ADD TALST](command/UNC/20.15.2/ADD-TALST.md)
+- [LST TALST](command/UNC/20.15.2/LST-TALST.md)
+- [MOD TALST](command/UNC/20.15.2/MOD-TALST.md)
+- [RMV TALST](command/UNC/20.15.2/RMV-TALST.md)
 
 ## 证据
 

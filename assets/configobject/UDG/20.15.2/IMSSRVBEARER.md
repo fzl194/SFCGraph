@@ -26,7 +26,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DEA-IMSSRVBEARER]] · DEA IMSSRVBEARER
+- [DEA IMSSRVBEARER](command/UDG/20.15.2/DEA-IMSSRVBEARER.md)
 
 ## 证据
 

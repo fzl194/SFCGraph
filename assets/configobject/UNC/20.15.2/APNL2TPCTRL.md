@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-APNL2TPCTRL]] · LST APNL2TPCTRL
-- [[command/UNC/20.15.2/SET-APNL2TPCTRL]] · SET APNL2TPCTRL
+- [LST APNL2TPCTRL](command/UNC/20.15.2/LST-APNL2TPCTRL.md)
+- [SET APNL2TPCTRL](command/UNC/20.15.2/SET-APNL2TPCTRL.md)
 
 ## 证据
 

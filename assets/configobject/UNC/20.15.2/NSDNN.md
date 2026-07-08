@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NSDNN]] · ADD NSDNN
-- [[command/UNC/20.15.2/LST-NSDNN]] · LST NSDNN
-- [[command/UNC/20.15.2/MOD-NSDNN]] · MOD NSDNN
-- [[command/UNC/20.15.2/RMV-NSDNN]] · RMV NSDNN
+- [ADD NSDNN](command/UNC/20.15.2/ADD-NSDNN.md)
+- [LST NSDNN](command/UNC/20.15.2/LST-NSDNN.md)
+- [MOD NSDNN](command/UNC/20.15.2/MOD-NSDNN.md)
+- [RMV NSDNN](command/UNC/20.15.2/RMV-NSDNN.md)
 
 ## 证据
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-DCSSDPARA]] · LST DCSSDPARA
-- [[command/UDG/20.15.2/SET-DCSSDPARA]] · SET DCSSDPARA
+- [LST DCSSDPARA](command/UDG/20.15.2/LST-DCSSDPARA.md)
+- [SET DCSSDPARA](command/UDG/20.15.2/SET-DCSSDPARA.md)
 
 ## 证据
 

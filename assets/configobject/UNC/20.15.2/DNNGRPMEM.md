@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-DNNGRPMEM]] · ADD DNNGRPMEM
-- [[command/UNC/20.15.2/LST-DNNGRPMEM]] · LST DNNGRPMEM
-- [[command/UNC/20.15.2/RMV-DNNGRPMEM]] · RMV DNNGRPMEM
+- [ADD DNNGRPMEM](command/UNC/20.15.2/ADD-DNNGRPMEM.md)
+- [LST DNNGRPMEM](command/UNC/20.15.2/LST-DNNGRPMEM.md)
+- [RMV DNNGRPMEM](command/UNC/20.15.2/RMV-DNNGRPMEM.md)
 
 ## 证据
 

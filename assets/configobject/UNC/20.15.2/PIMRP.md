@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-PIMRP]] · DSP PIMRP
+- [DSP PIMRP](command/UNC/20.15.2/DSP-PIMRP.md)
 
 ## 证据
 

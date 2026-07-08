@@ -28,10 +28,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PNFDNN]] · ADD PNFDNN
-- [[command/UNC/20.15.2/LST-PNFDNN]] · LST PNFDNN
-- [[command/UNC/20.15.2/MOD-PNFDNN]] · MOD PNFDNN
-- [[command/UNC/20.15.2/RMV-PNFDNN]] · RMV PNFDNN
+- [ADD PNFDNN](command/UNC/20.15.2/ADD-PNFDNN.md)
+- [LST PNFDNN](command/UNC/20.15.2/LST-PNFDNN.md)
+- [MOD PNFDNN](command/UNC/20.15.2/MOD-PNFDNN.md)
+- [RMV PNFDNN](command/UNC/20.15.2/RMV-PNFDNN.md)
 
 ## 证据
 

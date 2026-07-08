@@ -52,7 +52,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/IULOCRPT]] · Iu模式实时小区位置订阅（IULOCRPT）
+- [Iu模式实时小区位置订阅（IULOCRPT）](configobject/UNC/20.15.2/IULOCRPT.md)
 
 ## 使用实例
 

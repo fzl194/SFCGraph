@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/NGPEIPSPLCY]] · 基于分组的智能寻呼策略（NGPEIPSPLCY）
+- [基于分组的智能寻呼策略（NGPEIPSPLCY）](configobject/UNC/20.15.2/NGPEIPSPLCY.md)
 
 ## 使用实例
 

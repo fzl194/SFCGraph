@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAEPORTGROUPINFO]] · DSP PAEPORTGROUPINFO
+- [DSP PAEPORTGROUPINFO](command/UDG/20.15.2/DSP-PAEPORTGROUPINFO.md)
 
 ## 证据
 

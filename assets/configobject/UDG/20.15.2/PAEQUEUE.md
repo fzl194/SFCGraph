@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-PAEQUEUE]] · DSP PAEQUEUE
-- [[command/UDG/20.15.2/RTR-PAEQUEUE]] · RTR PAEQUEUE
+- [DSP PAEQUEUE](command/UDG/20.15.2/DSP-PAEQUEUE.md)
+- [RTR PAEQUEUE](command/UDG/20.15.2/RTR-PAEQUEUE.md)
 
 ## 证据
 

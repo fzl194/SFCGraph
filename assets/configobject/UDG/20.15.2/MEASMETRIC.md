@@ -24,8 +24,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-MEASMETRIC]] · LST MEASMETRIC
-- [[command/UDG/20.15.2/SET-MEASMETRIC]] · SET MEASMETRIC
+- [LST MEASMETRIC](command/UDG/20.15.2/LST-MEASMETRIC.md)
+- [SET MEASMETRIC](command/UDG/20.15.2/SET-MEASMETRIC.md)
 
 ## 证据
 

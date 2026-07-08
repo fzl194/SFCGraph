@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SBCFUNC]] · LST SBCFUNC
-- [[command/UNC/20.15.2/SET-SBCFUNC]] · SET SBCFUNC
+- [LST SBCFUNC](command/UNC/20.15.2/LST-SBCFUNC.md)
+- [SET SBCFUNC](command/UNC/20.15.2/SET-SBCFUNC.md)
 
 ## 证据
 

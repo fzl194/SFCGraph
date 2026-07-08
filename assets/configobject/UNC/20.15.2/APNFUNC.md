@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-APNFUNC]] · ADD APNFUNC
-- [[command/UNC/20.15.2/LST-APNFUNC]] · LST APNFUNC
-- [[command/UNC/20.15.2/RMV-APNFUNC]] · RMV APNFUNC
+- [ADD APNFUNC](command/UNC/20.15.2/ADD-APNFUNC.md)
+- [LST APNFUNC](command/UNC/20.15.2/LST-APNFUNC.md)
+- [RMV APNFUNC](command/UNC/20.15.2/RMV-APNFUNC.md)
 
 ## 证据
 

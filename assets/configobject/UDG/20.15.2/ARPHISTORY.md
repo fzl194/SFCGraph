@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-ARPHISTORY]] · DSP ARPHISTORY
+- [DSP ARPHISTORY](command/UDG/20.15.2/DSP-ARPHISTORY.md)
 
 ## 证据
 

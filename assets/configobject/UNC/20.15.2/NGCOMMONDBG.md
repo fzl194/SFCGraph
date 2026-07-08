@@ -30,7 +30,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGCOMMONDBG]] · DSP NGCOMMONDBG
+- [DSP NGCOMMONDBG](command/UNC/20.15.2/DSP-NGCOMMONDBG.md)
 
 ## 证据
 

@@ -17,10 +17,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MCRDRNHP]] · ADD MCRDRNHP
-- [[command/UNC/20.15.2/LST-MCRDRNHP]] · LST MCRDRNHP
-- [[command/UNC/20.15.2/MOD-MCRDRNHP]] · MOD MCRDRNHP
-- [[command/UNC/20.15.2/RMV-MCRDRNHP]] · RMV MCRDRNHP
+- [ADD MCRDRNHP](command/UNC/20.15.2/ADD-MCRDRNHP.md)
+- [LST MCRDRNHP](command/UNC/20.15.2/LST-MCRDRNHP.md)
+- [MOD MCRDRNHP](command/UNC/20.15.2/MOD-MCRDRNHP.md)
+- [RMV MCRDRNHP](command/UNC/20.15.2/RMV-MCRDRNHP.md)
 
 ## 证据
 

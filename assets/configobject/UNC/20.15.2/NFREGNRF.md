@@ -32,10 +32,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-NFREGNRF]] · ADD NFREGNRF
-- [[command/UNC/20.15.2/LST-NFREGNRF]] · LST NFREGNRF
-- [[command/UNC/20.15.2/MOD-NFREGNRF]] · MOD NFREGNRF
-- [[command/UNC/20.15.2/RMV-NFREGNRF]] · RMV NFREGNRF
+- [ADD NFREGNRF](command/UNC/20.15.2/ADD-NFREGNRF.md)
+- [LST NFREGNRF](command/UNC/20.15.2/LST-NFREGNRF.md)
+- [MOD NFREGNRF](command/UNC/20.15.2/MOD-NFREGNRF.md)
+- [RMV NFREGNRF](command/UNC/20.15.2/RMV-NFREGNRF.md)
 
 ## 证据
 

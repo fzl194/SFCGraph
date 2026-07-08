@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-POOLALMPARA]] · LST POOLALMPARA
-- [[command/UNC/20.15.2/SET-POOLALMPARA]] · SET POOLALMPARA
+- [LST POOLALMPARA](command/UNC/20.15.2/LST-POOLALMPARA.md)
+- [SET POOLALMPARA](command/UNC/20.15.2/SET-POOLALMPARA.md)
 
 ## 证据
 

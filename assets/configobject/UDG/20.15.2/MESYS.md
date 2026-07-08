@@ -23,7 +23,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/RST-MESYS]] · RST MESYS
+- [RST MESYS](command/UDG/20.15.2/RST-MESYS.md)
 
 ## 证据
 

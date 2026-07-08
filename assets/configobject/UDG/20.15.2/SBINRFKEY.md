@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-SBINRFKEY]] · ADD SBINRFKEY
-- [[command/UDG/20.15.2/LST-SBINRFKEY]] · LST SBINRFKEY
-- [[command/UDG/20.15.2/RMV-SBINRFKEY]] · RMV SBINRFKEY
+- [ADD SBINRFKEY](command/UDG/20.15.2/ADD-SBINRFKEY.md)
+- [LST SBINRFKEY](command/UDG/20.15.2/LST-SBINRFKEY.md)
+- [RMV SBINRFKEY](command/UDG/20.15.2/RMV-SBINRFKEY.md)
 
 ## 证据
 

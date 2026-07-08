@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RMV-NFSUBS]] · RMV NFSUBS
+- [RMV NFSUBS](command/UNC/20.15.2/RMV-NFSUBS.md)
 
 ## 证据
 

@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-ACC]] · DSP ACC
+- [DSP ACC](command/UNC/20.15.2/DSP-ACC.md)
 
 ## 证据
 

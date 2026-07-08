@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HAFFUNC]] · LST HAFFUNC
-- [[command/UNC/20.15.2/SET-HAFFUNC]] · SET HAFFUNC
+- [LST HAFFUNC](command/UNC/20.15.2/LST-HAFFUNC.md)
+- [SET HAFFUNC](command/UNC/20.15.2/SET-HAFFUNC.md)
 
 ## 证据
 

@@ -36,8 +36,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-FLOWLETPARA]] · LST FLOWLETPARA
-- [[command/UDG/20.15.2/SET-FLOWLETPARA]] · SET FLOWLETPARA
+- [LST FLOWLETPARA](command/UDG/20.15.2/LST-FLOWLETPARA.md)
+- [SET FLOWLETPARA](command/UDG/20.15.2/SET-FLOWLETPARA.md)
 
 ## 证据
 

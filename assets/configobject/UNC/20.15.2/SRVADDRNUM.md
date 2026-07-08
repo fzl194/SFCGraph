@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-SRVADDRNUM]] · DSP SRVADDRNUM
+- [DSP SRVADDRNUM](command/UNC/20.15.2/DSP-SRVADDRNUM.md)
 
 ## 证据
 

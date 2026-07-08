@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-NGUSERRESOURCE]] · DSP NGUSERRESOURCE
+- [DSP NGUSERRESOURCE](command/UNC/20.15.2/DSP-NGUSERRESOURCE.md)
 
 ## 证据
 

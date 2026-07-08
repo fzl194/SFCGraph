@@ -22,10 +22,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MVNORES]] · ADD MVNORES
-- [[command/UNC/20.15.2/LST-MVNORES]] · LST MVNORES
-- [[command/UNC/20.15.2/MOD-MVNORES]] · MOD MVNORES
-- [[command/UNC/20.15.2/RMV-MVNORES]] · RMV MVNORES
+- [ADD MVNORES](command/UNC/20.15.2/ADD-MVNORES.md)
+- [LST MVNORES](command/UNC/20.15.2/LST-MVNORES.md)
+- [MOD MVNORES](command/UNC/20.15.2/MOD-MVNORES.md)
+- [RMV MVNORES](command/UNC/20.15.2/RMV-MVNORES.md)
 
 ## 证据
 

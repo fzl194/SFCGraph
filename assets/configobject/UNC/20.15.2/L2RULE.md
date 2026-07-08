@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-L2RULE]] · ADD L2RULE
-- [[command/UNC/20.15.2/LST-L2RULE]] · LST L2RULE
-- [[command/UNC/20.15.2/MOD-L2RULE]] · MOD L2RULE
-- [[command/UNC/20.15.2/RMV-L2RULE]] · RMV L2RULE
+- [ADD L2RULE](command/UNC/20.15.2/ADD-L2RULE.md)
+- [LST L2RULE](command/UNC/20.15.2/LST-L2RULE.md)
+- [MOD L2RULE](command/UNC/20.15.2/MOD-L2RULE.md)
+- [RMV L2RULE](command/UNC/20.15.2/RMV-L2RULE.md)
 
 ## 证据
 

@@ -21,7 +21,7 @@ S-GW或P-GW发生故障时，本命令用于立即启动单个用户业务迁移
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/STR-USEROFFLOAD]] · STR USEROFFLOAD
+- [STR USEROFFLOAD](command/UNC/20.15.2/STR-USEROFFLOAD.md)
 
 ## 证据
 

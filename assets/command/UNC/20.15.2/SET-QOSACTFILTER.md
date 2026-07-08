@@ -47,7 +47,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/QOSACTFILTER]] · 流行为规则（QOSACTFILTER）
+- [流行为规则（QOSACTFILTER）](configobject/UNC/20.15.2/QOSACTFILTER.md)
 
 ## 使用实例
 

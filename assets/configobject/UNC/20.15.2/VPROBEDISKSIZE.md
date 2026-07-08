@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/DSP-VPROBEDISKSIZE]] · DSP VPROBEDISKSIZE
+- [DSP VPROBEDISKSIZE](command/UNC/20.15.2/DSP-VPROBEDISKSIZE.md)
 
 ## 证据
 

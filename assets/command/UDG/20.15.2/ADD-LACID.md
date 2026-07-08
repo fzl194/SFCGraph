@@ -50,7 +50,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/LACID]] · 从LAC组内删除一个LAC（LACID）
+- [从LAC组内删除一个LAC（LACID）](configobject/UDG/20.15.2/LACID.md)
 
 ## 使用实例
 

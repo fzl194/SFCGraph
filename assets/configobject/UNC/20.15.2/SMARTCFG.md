@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SMARTCFG]] · LST SMARTCFG
-- [[command/UNC/20.15.2/SET-SMARTCFG]] · SET SMARTCFG
+- [LST SMARTCFG](command/UNC/20.15.2/LST-SMARTCFG.md)
+- [SET SMARTCFG](command/UNC/20.15.2/SET-SMARTCFG.md)
 
 ## 证据
 

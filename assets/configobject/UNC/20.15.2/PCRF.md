@@ -24,10 +24,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-PCRF]] · ADD PCRF
-- [[command/UNC/20.15.2/LST-PCRF]] · LST PCRF
-- [[command/UNC/20.15.2/MOD-PCRF]] · MOD PCRF
-- [[command/UNC/20.15.2/RMV-PCRF]] · RMV PCRF
+- [ADD PCRF](command/UNC/20.15.2/ADD-PCRF.md)
+- [LST PCRF](command/UNC/20.15.2/LST-PCRF.md)
+- [MOD PCRF](command/UNC/20.15.2/MOD-PCRF.md)
+- [RMV PCRF](command/UNC/20.15.2/RMV-PCRF.md)
 
 ## 证据
 

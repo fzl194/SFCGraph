@@ -20,7 +20,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-SUPPRESSALM]] · LST SUPPRESSALM
+- [LST SUPPRESSALM](command/UNC/20.15.2/LST-SUPPRESSALM.md)
 
 ## 证据
 

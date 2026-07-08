@@ -21,7 +21,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RTR-ARPBYTYPE]] · RTR ARPBYTYPE
+- [RTR ARPBYTYPE](command/UNC/20.15.2/RTR-ARPBYTYPE.md)
 
 ## 证据
 

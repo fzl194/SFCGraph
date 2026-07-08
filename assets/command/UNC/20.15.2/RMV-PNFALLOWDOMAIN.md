@@ -51,7 +51,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/PNFALLOWDOMAIN]] · 对端NF允许的域名信息（PNFALLOWDOMAIN）
+- [对端NF允许的域名信息（PNFALLOWDOMAIN）](configobject/UNC/20.15.2/PNFALLOWDOMAIN.md)
 
 ## 使用实例
 

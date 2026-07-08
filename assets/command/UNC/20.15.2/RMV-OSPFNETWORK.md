@@ -45,7 +45,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/OSPFNETWORK]] · OSPF运行的接口及所属区域（OSPFNETWORK）
+- [OSPF运行的接口及所属区域（OSPFNETWORK）](configobject/UNC/20.15.2/OSPFNETWORK.md)
 
 ## 使用实例
 

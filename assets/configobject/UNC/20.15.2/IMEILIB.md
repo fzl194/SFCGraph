@@ -24,9 +24,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-IMEILIB]] · ADD IMEILIB
-- [[command/UNC/20.15.2/LST-IMEILIB]] · LST IMEILIB
-- [[command/UNC/20.15.2/RMV-IMEILIB]] · RMV IMEILIB
+- [ADD IMEILIB](command/UNC/20.15.2/ADD-IMEILIB.md)
+- [LST IMEILIB](command/UNC/20.15.2/LST-IMEILIB.md)
+- [RMV IMEILIB](command/UNC/20.15.2/RMV-IMEILIB.md)
 
 ## 证据
 

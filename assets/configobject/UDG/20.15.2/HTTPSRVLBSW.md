@@ -33,8 +33,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-HTTPSRVLBSW]] · LST HTTPSRVLBSW
-- [[command/UDG/20.15.2/SET-HTTPSRVLBSW]] · SET HTTPSRVLBSW
+- [LST HTTPSRVLBSW](command/UDG/20.15.2/LST-HTTPSRVLBSW.md)
+- [SET HTTPSRVLBSW](command/UDG/20.15.2/SET-HTTPSRVLBSW.md)
 
 ## 证据
 

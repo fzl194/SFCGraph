@@ -46,7 +46,7 @@ status: active
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/ACTALM]] · 活动告警（ACTALM）
+- [活动告警（ACTALM）](configobject/UDG/20.15.2/ACTALM.md)
 
 ## 使用实例
 

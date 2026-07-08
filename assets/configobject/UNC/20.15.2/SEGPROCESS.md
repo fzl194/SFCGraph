@@ -25,7 +25,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/RST-SEGPROCESS]] · RST SEGPROCESS
+- [RST SEGPROCESS](command/UNC/20.15.2/RST-SEGPROCESS.md)
 
 ## 证据
 

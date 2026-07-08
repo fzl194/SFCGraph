@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-NGAPTIMER]] · LST NGAPTIMER
-- [[command/UNC/20.15.2/SET-NGAPTIMER]] · SET NGAPTIMER
+- [LST NGAPTIMER](command/UNC/20.15.2/LST-NGAPTIMER.md)
+- [SET NGAPTIMER](command/UNC/20.15.2/SET-NGAPTIMER.md)
 
 ## 证据
 

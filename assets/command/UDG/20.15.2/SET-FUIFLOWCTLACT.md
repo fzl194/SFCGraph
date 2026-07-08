@@ -53,7 +53,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/FUIFLOWCTLACT]] · 欠费重定向流控动作（FUIFLOWCTLACT）
+- [欠费重定向流控动作（FUIFLOWCTLACT）](configobject/UDG/20.15.2/FUIFLOWCTLACT.md)
 
 ## 使用实例
 

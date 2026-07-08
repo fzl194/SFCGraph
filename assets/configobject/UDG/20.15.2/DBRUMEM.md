@@ -21,10 +21,10 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/ADD-DBRUMEM]] · ADD DBRUMEM
-- [[command/UDG/20.15.2/LST-DBRUMEM]] · LST DBRUMEM
-- [[command/UDG/20.15.2/MOD-DBRUMEM]] · MOD DBRUMEM
-- [[command/UDG/20.15.2/RMV-DBRUMEM]] · RMV DBRUMEM
+- [ADD DBRUMEM](command/UDG/20.15.2/ADD-DBRUMEM.md)
+- [LST DBRUMEM](command/UDG/20.15.2/LST-DBRUMEM.md)
+- [MOD DBRUMEM](command/UDG/20.15.2/MOD-DBRUMEM.md)
+- [RMV DBRUMEM](command/UDG/20.15.2/RMV-DBRUMEM.md)
 
 ## 证据
 

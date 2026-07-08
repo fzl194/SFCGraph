@@ -23,8 +23,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/CLR-CHGDATASTAT]] · CLR CHGDATASTAT
-- [[command/UDG/20.15.2/DSP-CHGDATASTAT]] · DSP CHGDATASTAT
+- [CLR CHGDATASTAT](command/UDG/20.15.2/CLR-CHGDATASTAT.md)
+- [DSP CHGDATASTAT](command/UDG/20.15.2/DSP-CHGDATASTAT.md)
 
 ## 证据
 

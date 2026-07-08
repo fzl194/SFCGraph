@@ -59,7 +59,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UNC/20.15.2/INNERSTAT]] · 内统配置参数（INNERSTAT）
+- [内统配置参数（INNERSTAT）](configobject/UNC/20.15.2/INNERSTAT.md)
 
 ## 使用实例
 

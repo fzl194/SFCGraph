@@ -19,8 +19,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-HTTPFQDNSW]] · LST HTTPFQDNSW
-- [[command/UNC/20.15.2/SET-HTTPFQDNSW]] · SET HTTPFQDNSW
+- [LST HTTPFQDNSW](command/UNC/20.15.2/LST-HTTPFQDNSW.md)
+- [SET HTTPFQDNSW](command/UNC/20.15.2/SET-HTTPFQDNSW.md)
 
 ## 证据
 

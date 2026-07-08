@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/LST-CNTCPUTHD]] · LST CNTCPUTHD
-- [[command/UDG/20.15.2/SET-CNTCPUTHD]] · SET CNTCPUTHD
+- [LST CNTCPUTHD](command/UDG/20.15.2/LST-CNTCPUTHD.md)
+- [SET CNTCPUTHD](command/UDG/20.15.2/SET-CNTCPUTHD.md)
 
 ## 证据
 

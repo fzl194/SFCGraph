@@ -49,7 +49,7 @@ G_1，管理员级别命令组；G_2，操作员级别命令组
 
 ## 操作的配置对象
 
-- [[configobject/UDG/20.15.2/GLBEXTFILTER]] · 全局扩展过滤器绑定配置（GLBEXTFILTER）
+- [全局扩展过滤器绑定配置（GLBEXTFILTER）](configobject/UDG/20.15.2/GLBEXTFILTER.md)
 
 ## 使用实例
 

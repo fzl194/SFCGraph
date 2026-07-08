@@ -17,7 +17,7 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UDG/20.15.2/DSP-GREPKTSTAT]] · DSP GREPKTSTAT
+- [DSP GREPKTSTAT](command/UDG/20.15.2/DSP-GREPKTSTAT.md)
 
 ## 证据
 

@@ -21,9 +21,9 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/ADD-MSCOPC]] · ADD MSCOPC
-- [[command/UNC/20.15.2/LST-MSCOPC]] · LST MSCOPC
-- [[command/UNC/20.15.2/RMV-MSCOPC]] · RMV MSCOPC
+- [ADD MSCOPC](command/UNC/20.15.2/ADD-MSCOPC.md)
+- [LST MSCOPC](command/UNC/20.15.2/LST-MSCOPC.md)
+- [RMV MSCOPC](command/UNC/20.15.2/RMV-MSCOPC.md)
 
 ## 证据
 

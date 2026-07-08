@@ -21,8 +21,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-ERRCDRALM]] · LST ERRCDRALM
-- [[command/UNC/20.15.2/SET-ERRCDRALM]] · SET ERRCDRALM
+- [LST ERRCDRALM](command/UNC/20.15.2/LST-ERRCDRALM.md)
+- [SET ERRCDRALM](command/UNC/20.15.2/SET-ERRCDRALM.md)
 
 ## 证据
 

@@ -26,8 +26,8 @@ status: active
 
 ## 操作本对象的命令
 
-- [[command/UNC/20.15.2/LST-CONCENPOINT]] · LST CONCENPOINT
-- [[command/UNC/20.15.2/SET-CONCENPOINT]] · SET CONCENPOINT
+- [LST CONCENPOINT](command/UNC/20.15.2/LST-CONCENPOINT.md)
+- [SET CONCENPOINT](command/UNC/20.15.2/SET-CONCENPOINT.md)
 
 ## 证据
 
