@@ -38,13 +38,22 @@
 - 证据去重：与命令层共用 evidence/（按 stem），总数 16231（+3156）。
 - 数据备注：jsonl 中文 `open(encoding=utf-8)` 直读干净；终端 `head|json.tool` 乱码是 Windows stdin cp936 再编码，非数据问题。
 
+### P5 命令级别 task wiki（atom 187，本批）
+- **定位关键转折**：task wiki **不是纯投影**，是 **Agent 读证据包+原始 md 重写**。命令 wiki = 命令静态产品文档；命令级别 task wiki = 配置生成实例化时**该命令怎么配**的动作知识（参数取值来源/决策点联动/约束/配置原则），**不复述命令静态字段**只链接。
+- **主输入**：`ConfigTask/task-build-skill/scripts/build_command_evidence.py` 生成的**命令证据包**（`ConfigTask/assert/UDG/20.15.2/command-evidence/{atom}.md`），含③「各特性配置范式」（数据规划表取值样例+脚本+步骤）——"命令真正配置方法"的来源。task/rule/dp yaml 是结论参考不复述。
+- 产出：task md 187（atom，平均 50 行/篇），rule/DP 内嵌（不拆三对象，§5.3 锚点）。局部 index 按编号。
+- 构建：Agent 驱动，每批 5 atom × 2 并行，19 轮。
+- 回填：`assets/scripts/lint_and_backfill.py` 把命令 md 的 `[[Task]]` 占位 + task md 误占位的已建对象 回填为 markdown 链接（401 处/265 文件）。
+- 范围：仅 UDG atom。compound(4)/feature(11) 级 task + UNC task 后续；task↔task 双向预留。
+- 沉淀方案：`docs/superpowers/specs/2026-07-08-configtask-layer-compile-design.md`（v2 Agent 构建）
+
 ## 跑通的模式（业务层/任务层 LLM 凝练时复用引用与 index 约定）
 **纯投影 Compile 器**（jsonl → typed md）+ markdown 链接引用（带 .md）+ 双向链接 + 证据去重（源手册 stem 命名）+ 分级 index + 占位防护（`link_or_placeholder`）。
 
 ## 下一步候选（待用户定方向）
 1. **服务化接口（P3，推荐）**：platform-next（FastAPI 已有业务图谱接口雏形）扩展"知识包"接口，输入 `{域}/{场景}`，输出子场景裁剪子图全量 md 包。验证"服务化取包 → SKILL 消费"端到端。此时命令/特性/License 三层已就绪，可端到端跑通取包。
 2. **业务层 Compile（P4）**：LLM 读产品文档按 Schema 凝练 BD/NS/CS typed md + 人审（现有 business-graph md / BusinessGraph yaml 仅作线索）。核心范式（Agent 写、人审）首次验证，慢、要业务专家卷入。同时定业务层 wiki ID → 文件路径 resolver（两段式 ID 没含 domain/scenario 段，需 slug 索引或链接补 domain）。
-3. **任务层 Compile（P5）**：LLM 凝练 Task typed md（rule + 决策点标题内嵌，不拆三对象）+ 人审。顺带回填命令 md 里的 `[[Task ID]]` 占位为 markdown 链接。
+3. **compound/feature 级 task wiki + UNC task**：命令级 atom（187）已完成；步骤级 compound(4)/特性级 feature(11) task wiki 后续建（建时同步 task↔task 双向编排、回填命令级 task 的"参与编排于"节）；UNC task 资产残缺（27 孤立 atom 无树）待全量构建后再做。
 4. **Lint（P8 提前做一版）**：静态体检——查断链（被引无页）、缺反向链接、占位未回填、Schema 不合规。命令+特性层已够多对象，Lint 有素材。
 
 ## 已知小缺口（留给 Lint 阶段）

@@ -1,0 +1,191 @@
+# index · task/UDG/20.15.2
+
+> 局部 index（命令级别 atom task wiki，187 篇）。每篇讲配置生成实例化时该命令**怎么配**（区别于命令 wiki 的静态文档）。顶层导航见 ../../../index.md
+
+- [0-00001](task/UDG/20.15.2/0-00001.md) · 配置URR（ADD URR）— 配置一条使用量上报规则(URR)，确定费率与计费方式
+- [0-00002](task/UDG/20.15.2/0-00002.md) · 配置URR组（ADD URRGROUP）— 配置URRGROUP，上行/下行分别绑定在线与离线URR
+- [0-00003](task/UDG/20.15.2/0-00003.md) · 配置PCC策略组（ADD PCCPOLICYGRP）— 配置PCC业务策略组，绑定URR组（与信令URR组）
+- [0-00004](task/UDG/20.15.2/0-00004.md) · 配置三四层过滤器-IPv4（ADD FILTER）— 配置IPv4三四层过滤条件（ADD FILTER）
+- [0-00005](task/UDG/20.15.2/0-00005.md) · 配置三四层过滤器-IPv6（ADD FILTERIPV6）— 配置IPv6三四层过滤条件（ADD FILTERIPV6，含与对端协商的
+- [0-00006](task/UDG/20.15.2/0-00006.md) · 配置七层过滤器（ADD L7FILTER）— 配置七层URL过滤条件（ADD L7FILTER）
+- [0-00007](task/UDG/20.15.2/0-00007.md) · 配置流过滤器（ADD FLOWFILTER）— 配置FLOWFILTER（聚合三四层/七层过滤条件的业务流过滤器）
+- [0-00008](task/UDG/20.15.2/0-00008.md) · 绑定三四层过滤条件到流过滤器（ADD FLTBINDFLOWF）— 将三四层FILTER绑定到FLOWFILTER（ADD FLTBINDF
+- [0-00009](task/UDG/20.15.2/0-00009.md) · 绑定七层过滤条件到流过滤器（ADD PROTBINDFLOWF）— 将七层L7FILTER与协议绑定到FLOWFILTER（ADD PROT
+- [0-00010](task/UDG/20.15.2/0-00010.md) · 配置规则（ADD RULE）— 配置业务策略规则ADD RULE，绑定流过滤器与PCC策略组，定优先级
+- [0-00011](task/UDG/20.15.2/0-00011.md) · 配置用户模板（ADD USERPROFILE）— 配置USERPROFILE（名称需PCF/SMF/UPF间一致）
+- [0-00012](task/UDG/20.15.2/0-00012.md) · 绑定规则到用户模板（ADD RULEBINDING）— 将RULE绑定到USERPROFILE（ADD RULEBINDING）
+- [0-00013](task/UDG/20.15.2/0-00013.md) · 配置用户模板URR组绑定（SET URRGRPBINDING）— 为USERPROFILE绑定URR组（缺省业务/信令费率、TCP重传计费
+- [0-00014](task/UDG/20.15.2/0-00014.md) · 配置防欺诈URR列表（ADD SPECURRGRPLIST）— 将有欺诈风险的费率加入防欺诈费率列表（ADD SPECURRGRPLIS
+- [0-00015](task/UDG/20.15.2/0-00015.md) · 刷新生效（SET REFRESHSRV）— 将新配置的Filter置为生效（SET REFRESHSRV，必须最后执
+- [0-00016](task/UDG/20.15.2/0-00016.md) · 设置全局默认配额开关（SET UPDEFAULTQUOTA）— 设置在线计费新业务触发申请配额期间是否允许使用默认配额（SET UPDE
+- [0-00017](task/UDG/20.15.2/0-00017.md) · 设置全局计费参数（SET UPGLBCHGPARA）— 设置全局 Credit Pooling 等在线计费参数（SET UPGL
+- [0-00018](task/UDG/20.15.2/0-00018.md) · 设置URR上报失败动作（SET URRFAILACTION）— 设置在线计费 URR 上报失败后的处理动作（SET URRFAILACT
+- [0-00019](task/UDG/20.15.2/0-00019.md) · 设置License开关（SET LICENSESWITCH）— 打开/关闭特性 License 项开关（特性激活前置；跨特性复用，每特性
+- [0-00020](task/UDG/20.15.2/0-00020.md) · 配置APN（ADD APN）— 配置APN（接入点名）及其属性（如仅统计7层应用层流量）。APN为多特性
+- [0-00021](task/UDG/20.15.2/0-00021.md) · 配置APN下异常下行流量检测开关（ADD ABNTRAFFICDT）— 在指定APN下开启终端异常下行流量检测（含基于流行为的检测）
+- [0-00022](task/UDG/20.15.2/0-00022.md) · 配置扩展过滤器（ADD EXTENDEDFILTER）— 配置一次重定向的扩展过滤器（URL白名单），匹配上白名单的URL才能触发
+- [0-00023](task/UDG/20.15.2/0-00023.md) · 配置重定向携带信息（ADD REDIRAPPENDINFO）— 配置一次重定向URL中可携带的用户原始请求URL/IMSI/IMEI/M
+- [0-00024](task/UDG/20.15.2/0-00024.md) · 设置Gy接口一次重定向参数（SET GYONESHOT）— 绑定一次重定向的扩展过滤器与重定向携带信息，激活 Gy 接口一次重定向（
+- [0-00027](task/UDG/20.15.2/0-00027.md) · 加载协议特征库（LOD SIGNATUREDB）— 加载协议特征库(SIGNATUREDB)用于七层协议识别(IM类业务/I
+- [0-00028](task/UDG/20.15.2/0-00028.md) · 配置PCC动作属性（ADD PCCACTIONPROP）— 配置PCC动作属性(ADD PCCACTIONPROP)，定义门控(PA
+- [0-00029](task/UDG/20.15.2/0-00029.md) · 配置业务属性（ADD SERVICEPROP）— 配置业务属性(ADD SERVICEPROP)，定义业务标识与优先级，供
+- [0-00030](task/UDG/20.15.2/0-00030.md) · 绑定PCC策略组业务属性（ADD SRVPBINDPCCPG）— 绑定PCC策略组与业务属性及动作属性(ADD SRVPBINDPCCPG
+- [0-00031](task/UDG/20.15.2/0-00031.md) · 配置ADC参数（ADD ADCPARA）— 配置ADC参数(ADD ADCPARA)，绑定流过滤器并设置流信息上报开
+- [0-00032](task/UDG/20.15.2/0-00032.md) · 配置分类属性（ADD CATEGORYPROP）— 配置分类属性(ADD CATEGORYPROP)，定义基于业务分类(如U
+- [0-00033](task/UDG/20.15.2/0-00033.md) · 配置带宽管理用户组（ADD BWMUSERGROUP）— 配置带宽管理用户组(ADD BWMUSERGROUP)，定义流量整形的用
+- [0-00034](task/UDG/20.15.2/0-00034.md) · 配置带宽管理业务（ADD BWMSERVICE）— 配置带宽管理业务(ADD BWMSERVICE)，定义业务范围(基于分类
+- [0-00035](task/UDG/20.15.2/0-00035.md) · 绑定用户组到APN（ADD APNBINDBWMUSRG）— 绑定带宽管理用户组到指定APN(ADD APNBINDBWMUSRG)，
+- [0-00036](task/UDG/20.15.2/0-00036.md) · 配置带宽管理控制器（ADD BWMCONTROLLER）— 配置带宽管理控制器(ADD BWMCONTROLLER)，定义流量整形/
+- [0-00037](task/UDG/20.15.2/0-00037.md) · 配置带宽管理规则（ADD BWMRULE）— 配置带宽管理规则(ADD BWMRULE)，关联用户组+业务+整形控制器
+- [0-00038](task/UDG/20.15.2/0-00038.md) · 配置QoS属性（ADD QOSPROP）— 配置QoS属性(ADD QOSPROP)，定义上下行保证/最大比特率(G
+- [0-00039](task/UDG/20.15.2/0-00039.md) · 配置知名端口（ADD WELLKNOWNPORT）— 配置知名端口(ADD WELLKNOWNPORT)，为协议(如HTTP=
+- [0-00040](task/UDG/20.15.2/0-00040.md) · 配置SA触发专有承载（ADD SADEDICBEARER）— 使能基于业务感知(SA)能力的协议触发专有承载创建(ADD SADEDI
+- [0-00041](task/UDG/20.15.2/0-00041.md) · 配置VPN实例（ADD VPNINST）— 增加用户面VPN实例（DN侧VPN，承載地址池与APN的VPN绑定）
+- [0-00042](task/UDG/20.15.2/0-00042.md) · 配置地址池组（ADD POOLGROUP）— 增加地址池组（POOLGRPNAME），作为地址池与APN映射的中间聚合
+- [0-00043](task/UDG/20.15.2/0-00043.md) · 配置地址池（ADD POOL）— 增加地址池（POOLNAME）并指定类型/VPN绑定；POOLTYPE 
+- [0-00044](task/UDG/20.15.2/0-00044.md) · 配置地址池IP地址段（ADD SECTION）— 为已配置的地址池添加地址段；IPVERSION 跨特性分叉（IPV4 配
+- [0-00045](task/UDG/20.15.2/0-00045.md) · 绑定地址池到地址池组（ADD POOLBINDGROUP）— 将地址池(POOLNAME)绑定到地址池组(POOLGROUPNAME)
+- [0-00046](task/UDG/20.15.2/0-00046.md) · 配置APN地址分配属性（SET APNADDRESSATTR）— 设置指定APN支持使用主机地址接入（HOSTROUTEIP=ENABLE
+- [0-00047](task/UDG/20.15.2/0-00047.md) · 配置地址池组与APN映射关系（ADD POOLGRPMAP）— 建立地址池组(POOLGROUPNAME)与APN的映射(MAPPING
+- [0-00048](task/UDG/20.15.2/0-00048.md) · 启动PDN侧路由探测（STR PDNROUTETST）— 启动UDG到PDN/DN侧服务器的路由连通性探测（PING/DNS/Tr
+- [0-00049](task/UDG/20.15.2/0-00049.md) · 配置APN的QoS带宽控制属性（SET APNQOSATTR）— 在指定APN下绑定上下行带宽控制方式（CARSHAPEUL/CARSHA
+- [0-00050](task/UDG/20.15.2/0-00050.md) · 配置APN下用户接入速率（SET APNACCESSWAL）— 设置指定APN下用户的接入速率（WALNUMBER），用于系统过载控制场
+- [0-00051](task/UDG/20.15.2/0-00051.md) · 配置GTP路径相关属性（SET UPGTPPATH）— 设置非N4/Sxb接口GTP路径探测参数（Echo开关/重发/去活策略）
+- [0-00052](task/UDG/20.15.2/0-00052.md) · 配置N4接口GTP路径相关属性（SET UPN4UPATH）— 设置N4/Sxb接口GTP路径探测参数（N4Echo开关/重发/去活策略
+- [0-00053](task/UDG/20.15.2/0-00053.md) · 配置PFCP路径相关属性（SET UPPFCPPATH）— 设置PFCP信令路径心跳探测参数（Heartbeat间隔/重发/去活策略
+- [0-00054](task/UDG/20.15.2/0-00054.md) · 配置GTP路径管理IP地址（ADD ECHOIPLIST）— 增加需探测的对端网元GTP信令面/数据面IP地址段（黑白名单成员），受 
+- [0-00055](task/UDG/20.15.2/0-00055.md) · 配置冗余备份重定向IP（ADD REDUNDRDTIP）— 增加冗余备份虚拟重定向IP（IPv4/IPv6），主备UDG将业务流重定
+- [0-00056](task/UDG/20.15.2/0-00056.md) · 配置逻辑接口（ADD INTERFACE）— 增加逻辑接口（LoopBack/Tunnel），指定管理状态/MTU/不
+- [0-00057](task/UDG/20.15.2/0-00057.md) · 配置接口绑定VPN（ADD IPBINDVPN）— 将逻辑接口（LoopBack/Tunnel/以太网子接口）绑定到VPN实
+- [0-00058](task/UDG/20.15.2/0-00058.md) · 配置接口IPv4地址（ADD IFIPV4ADDRESS）— 为逻辑/物理接口（LoopBack/Tunnel/以太网口）配置IPv4
+- [0-00059](task/UDG/20.15.2/0-00059.md) · 配置GRE隧道（ADD GRETUNNEL）— 增加备份GRE Tunnel（源LoopBack→目的对端LoopBac
+- [0-00060](task/UDG/20.15.2/0-00060.md) · 使能接口IPv6并配置MTU（SET IFIPV6ENABLE）— 修改接口的IPv6使能标志，可选设置IPv6 MTU（GRE隧道IPv6
+- [0-00061](task/UDG/20.15.2/0-00061.md) · 配置接口IPv6地址（ADD IFIPV6ADDRESS）— 为Tunnel/以太网子接口手工配置IPv6地址与前缀长度（GRE隧道I
+- [0-00062](task/UDG/20.15.2/0-00062.md) · 配置IPv4静态路由（ADD SRROUTE）— 增加IPv4静态路由（目的=冗余备份重定向IP→出接口=Tunnel），
+- [0-00063](task/UDG/20.15.2/0-00063.md) · 配置IPv6静态路由（ADD SRROUTE6）— 增加IPv6静态路由（目的=冗余备份重定向IPv6→出接口=Tunnel
+- [0-00064](task/UDG/20.15.2/0-00064.md) · 配置静态地址用户路由冗余全局开关（SET REDUNDUSER）— 使能静态地址用户路由冗余功能全局开关（SWITCH=ENABLE），主备
+- [0-00065](task/UDG/20.15.2/0-00065.md) · 配置业务公共参数（SET SRVCOMMONPARA）— 设置TunnelMarking开关（TUNNELMARKINGID=EN
+- [0-00066](task/UDG/20.15.2/0-00066.md) · 配置DS域（ADD QOSDIFFERSERV）— 增加Diff-Serv域实例（DSNAME），作为VLAN与IP网络优先
+- [0-00067](task/UDG/20.15.2/0-00067.md) · 配置上行BA映射（SET QOSBA）— 配置DS域上行VLAN报文802.1p值(BAVALUE)与UDG内部服
+- [0-00068](task/UDG/20.15.2/0-00068.md) · 配置QoS接口信任（ADD QOSIFTRUST）— 在物理接口上绑定DS域并配置trust CoS（简单流分类），支持对报文
+- [0-00069](task/UDG/20.15.2/0-00069.md) · 配置下行PHB映射（SET QOSPHB）— 配置DS域下行报文UDG内部服务等级(SERVICECLASS)和报文颜
+- [0-00070](task/UDG/20.15.2/0-00070.md) · 配置QoS CAR功能（SET QOSCAR）— 配置指定用户类型的上下行CAR功能（USERTYPE/ULRAT/DLR
+- [0-00071](task/UDG/20.15.2/0-00071.md) · 配置L3VPN实例（ADD L3VPNINST）— 创建L3VPN实例（VRFNAME），用于Untrusted Non-3
+- [0-00072](task/UDG/20.15.2/0-00072.md) · 配置L3VPN实例地址族（ADD VPNINSTAF）— 设置指定L3VPN实例下的地址族（AFTYPE+VRFRD），IPv4=
+- [0-00073](task/UDG/20.15.2/0-00073.md) · 全局激活BFD（SET BFD）— 全局使能BFD（BFDENABLE=TRUE），为OSPF/OSPFv3
+- [0-00074](task/UDG/20.15.2/0-00074.md) · 创建OSPF进程(IPv4)（ADD OSPF）— 创建IPv4 OSPF动态路由进程（PROCID+VRFNAME+SCH
+- [0-00075](task/UDG/20.15.2/0-00075.md) · 创建OSPF区域(IPv4)（ADD OSPFAREA）— 在OSPF进程下创建区域（PROCID+AREAID）
+- [0-00076](task/UDG/20.15.2/0-00076.md) · 增加OSPF运行接口网段(IPv4)（ADD OSPFNETWORK）— 在OSPF进程区域下增加运行OSPF协议的接口网段（PROCID+ARE
+- [0-00077](task/UDG/20.15.2/0-00077.md) · 配置OSPF引入外部路由(IPv4)（ADD OSPFIMPORTROUTE）— 将外部路由(wlr)引入OSPF域并在域中发布（PROCID+TOPOI
+- [0-00078](task/UDG/20.15.2/0-00078.md) · 创建OSPFv3进程(IPv6)（ADD OSPFV3）— 创建IPv6 OSPFv3动态路由进程（PROCID+ROUTERID+
+- [0-00079](task/UDG/20.15.2/0-00079.md) · 创建OSPFv3区域(IPv6)（ADD OSPFV3AREA）— 在OSPFv3进程下创建区域（PROCID+AREAID）
+- [0-00080](task/UDG/20.15.2/0-00080.md) · 配置OSPFv3引入外部路由(IPv6)（ADD OSPFV3IMPORTROUTE）— 将外部路由(wlr)引入OSPFv3域（PROCID+TOPOID+PR
+- [0-00082](task/UDG/20.15.2/0-00082.md) · 创建静态BFD会话(IPv4)（ADD BFDSESSION）— 新建IPv4静态BFD会话（SESSNAME+LOCALDISCR/RE
+- [0-00083](task/UDG/20.15.2/0-00083.md) · 创建逻辑接口（ADD LOGICINF）— 创建用户面逻辑接口（用途维度：Paif-ePDG互通 / IPFarm心
+- [0-00084](task/UDG/20.15.2/0-00084.md) · 设置DDoS防攻击流控阈值（SET DDOS）— 设置防DDoS攻击的TCP连接流控阈值（THRESHOLD），当UE向P
+- [0-00085](task/UDG/20.15.2/0-00085.md) · 设置物联网能力上报（SET IOTCAPABILITY）— 使能NB-IoT终端标准接入功能（NBIOT=ENABLE），开启UDG
+- [0-00086](task/UDG/20.15.2/0-00086.md) · 配置IPFarm全局参数（SET IPFARMGLOBAL）— 配置整机 IP Farm 全局参数（服务器类型/心跳检测阈值/Ping超
+- [0-00087](task/UDG/20.15.2/0-00087.md) · 配置IPFarm（ADD IPFARM）— 创建重定向或 P-CSCF 类型的 IP Farm 并绑定心跳检测接口/
+- [0-00088](task/UDG/20.15.2/0-00088.md) · 配置IPFarm服务器（ADD IPFARMSERVER）— 为 IP Farm 配置重定向 server 目标地址（IPv4/IPv
+- [0-00089](task/UDG/20.15.2/0-00089.md) · 配置错误码（ADD ERRORCODE）— 配置重定向触发条件错误码范围（错误码名/操作码/起始值），用于 DNS纠
+- [0-00090](task/UDG/20.15.2/0-00090.md) · 配置DNS重写动作（ADD DNSOVERWRITING）— 配置 DNS 纠错重写动作（绑定扩展过滤器+错误码+目标 server 
+- [0-00091](task/UDG/20.15.2/0-00091.md) · 配置HTTP智能重定向动作（ADD SMARTHTTPREDIR）— 配置 HTTP 智能重定向动作（目标 server URL+多扩展过滤器
+- [0-00092](task/UDG/20.15.2/0-00092.md) · 加载外置OTT业务规则库（LOD EXTERNALDB）— 加载外置百万级 OTT 业务规则数据库（DBTYPE=OTT + VER
+- [0-00093](task/UDG/20.15.2/0-00093.md) · 设置OTT业务规则匹配开关（SET EXTOTTMATCHSW）— 使能 IPv4/IPv6 流量 OTT 业务规则匹配功能（全局开关），开
+- [0-00106](task/UDG/20.15.2/0-00106.md) · 设置带宽管理生效范围（SET BANDWIDTHMNG）— 配置带宽管理参数(SET BANDWIDTHMNG)，设置用户组级业务带
+- [0-00107](task/UDG/20.15.2/0-00107.md) · 设置APN操作系统级带宽管理开关（SET APNOSLELBWMSW）— 打开指定 APN 的操作系统级带宽管理开关(SET APNOSLELBW
+- [0-00108](task/UDG/20.15.2/0-00108.md) · 配置带宽管理控制器业务等级策略（ADD BCSRVLEVELPLY）— 为指定 BWM 控制器配置业务等级策略(ADD BCSRVLEVELPL
+- [0-00109](task/UDG/20.15.2/0-00109.md) · 设置FPI差异化控制功能（SET FPIFUNC）— 使能 FPI(业务流标识)差异化控制功能(SET FPIFUNC)，设置
+- [0-00110](task/UDG/20.15.2/0-00110.md) · 设置APN上报属性（SET APNREPORTATTR）— 配置指定 APN 的上报属性(SET APNREPORTATTR)，开启
+- [0-00111](task/UDG/20.15.2/0-00111.md) · 配置路由策略（ADD ROUTEPOLICY）— 增加路由策略（POLICYNAME），用于OSPFv3引入WLR路由时按
+- [0-00112](task/UDG/20.15.2/0-00112.md) · 配置路由策略节点（ADD ROUTEPOLICYNODE）— 为已配置路由策略增加节点（POLICYNAME+NODESEQUENCE
+- [0-00113](task/UDG/20.15.2/0-00113.md) · 配置匹配路由类型（ADD MATCHROUTETYPE）— 为路由策略节点匹配指定路由类型（POLICYNAME+NODESEQUE
+- [0-00114](task/UDG/20.15.2/0-00114.md) · 修改接口管理状态（MOD INTERFACE）— 修改主接口管理状态为up（IFNAME+IFADMINSTATUS=up
+- [0-00115](task/UDG/20.15.2/0-00115.md) · 配置以太网子接口VLAN（ADD ETHSUBIF）— 在以太网子接口上关联VLAN ID（IFNAME+VLANTYPEVID
+- [0-00116](task/UDG/20.15.2/0-00116.md) · 配置IPv6路径MTU（ADD IPV6PATHMTU）— 添加IPv6路径MTU配置（VRFNAME+IPV6ADDRESS+PA
+- [0-00117](task/UDG/20.15.2/0-00117.md) · 配置OSPFv3接口(IPv6)（ADD OSPFV3INTERFACE）— 将接口加入OSPFv3进程的区域下（PROCID+AREAID+IFNA
+- [0-00131](task/UDG/20.15.2/0-00131.md) · 设置L2TP缺省配置（SET GLOBALL2TP）— 设置 L2TP 隧道缺省属性（本端名称/HELLO 报文开关与间隔/重发
+- [0-00132](task/UDG/20.15.2/0-00132.md) · 设置APN的L2TP属性（SET APNL2TPATTR）— 使能指定 APN 的 L2TP 功能并配置 L2TP 属性（L2TP 开
+- [0-00133](task/UDG/20.15.2/0-00133.md) · 创建L2TP组(本地配置方式专属)（ADD L2TPGROUP）— 创建本地配置方式的 L2TP 组（组号/隧道鉴权/域名/本端名称/隐藏 
+- [0-00134](task/UDG/20.15.2/0-00134.md) · 绑定APN到L2TP源端接口(AAA下发方式专属)（ADD L2TPRDSCLIENT）— AAA 下发方式下将 APN 绑定到指定源端 Gi 接口（ADD L2T
+- [0-00135](task/UDG/20.15.2/0-00135.md) · 绑定L2TP组到源端接口(本地配置方式专属)（ADD L2TPCLIENTIP）— 本地配置方式下将 L2TP 组绑定到指定源端 Gi 接口（ADD L2T
+- [0-00137](task/UDG/20.15.2/0-00137.md) · 关闭快速流表软参(L2TP前置)（SET SOFTPARAOFBIT）— 关闭快速流表功能（SET SOFTPARAOFBIT 设置 Byte67
+- [0-00138](task/UDG/20.15.2/0-00138.md) · 设置PPP协商参数(L2TP)（SET PPPCFG）— 配置 L2TP 场景系统进行 PPP 协商时所使用的参数（本端主机名/最
+- [0-00139](task/UDG/20.15.2/0-00139.md) · 设置APN的PPP鉴权(L2TP)（SET APNPPPACCESS）— 配置指定 APN 支持 PPP 鉴权功能（SET APNPPPACCES
+- [0-00140](task/UDG/20.15.2/0-00140.md) · 设置L2TP N4加密密钥（SET L2TPN4KEY）— 配置 L2TP 业务 N4 接口加密密钥（SET L2TPN4KEY），
+- [0-00141](task/UDG/20.15.2/0-00141.md) · 配置外联口自动部署服务模板（ADD AUTOSCALINGSERVICE）— 配置 VRF_networkB 外联口自动部署服务模板（服务名/VPN/
+- [0-00142](task/UDG/20.15.2/0-00142.md) · 配置跨VPN上行静态路由(路由交叉)（ADD AUTOSCALINGSRROUTE）— 配置跨 VPN 转发上行报文的静态路由（ADD AUTOSCALINGS
+- [0-00143](task/UDG/20.15.2/0-00143.md) · 配置BFD单臂echo会话模板(路由交叉)（ADD AUTOSCALINGBFD）— 配置 BFD 单臂 echo 检测会话模板（ADD AUTOSCALIN
+- [0-00144](task/UDG/20.15.2/0-00144.md) · 配置静态路由双向BFD自动化模板(路由交叉)（ADD AUTOSCALINGSRBFD）— 配置静态路由的双向 BFD 自动化检测模板（ADD AUTOSCALIN
+- [0-00145](task/UDG/20.15.2/0-00145.md) · 修改L3VPN实例地址族(路由交叉)（MOD VPNINSTAF）— 修改 L3VPN 实例地址族（MOD VPNINSTAF），为 VRF_
+- [0-00146](task/UDG/20.15.2/0-00146.md) · 增加VPN Target(路由交叉RT发布/引入)（ADD VPNTARGET）— 增加 VPN Target（ADD VPNTARGET），为 VRF_n
+- [0-00147](task/UDG/20.15.2/0-00147.md) · 使能全局BGP并配置VRF实例与路由引入(路由交叉)（SET BGP）— 使能全局 BGP（SET BGP AS 号）+ 增加 BGP VPN 实
+- [0-00149](task/UDG/20.15.2/0-00149.md) · 设置APN级HTTP2.0协议回落开关（SET APNHTTP2DGRD）— 开启/关闭/继承指定 APN 的 HTTP2.0 协议回落开关（SET 
+- [0-00150](task/UDG/20.15.2/0-00150.md) · 设置rule级HTTP2.0协议回落开关（MOD PCCPOLICYGRP）— 开启/关闭/继承指定 PCC 策略组的 rule 级 HTTP2.0 协
+- [0-00151](task/UDG/20.15.2/0-00151.md) · 配置Host（ADD HOST）— 配置Host域名信息（ADD HOST），定义域名与服务器IP的对应关系
+- [0-00152](task/UDG/20.15.2/0-00152.md) · 加载协议解析库（LOD PARSERDB）— 加载协议解析特征库（LOD PARSERDB），用于协议深度解析；已加载
+- [0-00153](task/UDG/20.15.2/0-00153.md) · 配置用户关联识别（ADD USRRELATEIDEN）— 为指定协议开启用户关联识别功能（ADD USRRELATEIDEN），可
+- [0-00154](task/UDG/20.15.2/0-00154.md) · 设置SA业务公共参数（SET SACOMMONPARA）— 设置SA业务公共参数（SET SACOMMONPARA），含 QUIC 
+- [0-00155](task/UDG/20.15.2/0-00155.md) · 添加APN的IMS信令分类器（ADD APNIMSSIGFLTR）— 为APN配置IMS信令专用上下文过滤器（ADD APNIMSSIGFLT
+- [0-00156](task/UDG/20.15.2/0-00156.md) · 设置APN的IMS属性（SET APNIMSATTR）— 配置APN的IMS使能开关（SET APNIMSATTR），将IMS功能
+- [0-00171](task/UDG/20.15.2/0-00171.md) · 设置全局业务快速恢复配置（SET FASTRECOVERY）— 配置 UDG 全局业务快速恢复开关（PGW/SGW 网络侧触发业务恢复、
+- [0-00172](task/UDG/20.15.2/0-00172.md) · 设置全局下行数据缓存时长（SET GLBDLBUFTIME）— 配置 UDG 全局 NB-IoT 用户下行数据缓存时长（eDRX 模式下
+- [0-00173](task/UDG/20.15.2/0-00173.md) · 设置全局下行数据长时间缓存个数（SET GLBDLLTBUFFER）— 配置 UDG 全局下行数据长时间缓存的最大缓存个数与储存方式（eDRX 
+- [0-00174](task/UDG/20.15.2/0-00174.md) · 设置基于APN的下行数据缓存时长（SET APNDLBUFTIME）— 配置指定 APN 的下行数据缓存时长（eDRX 模式下 APN 级下行数
+- [0-00175](task/UDG/20.15.2/0-00175.md) · 设置基于APN的下行数据长时间缓存配置（SET APNDLLTBUFFER）— 配置指定 APN 的下行数据长时间缓存的最大个数与储存方式（eDRX 模
+- [0-00177](task/UDG/20.15.2/0-00177.md) · 设置APN Non-IP配置（SET APNNONIPFUNC）— 使能指定APN下的Non-IP数据传输功能（NONIPSWITCH=EN
+- [0-00178](task/UDG/20.15.2/0-00178.md) · 修改GRE隧道增强配置（MOD GRETUNNEL）— 修改已建 GRE Tunnel 的端到端校验/识别关键字/Keepali
+- [0-00197](task/UDG/20.15.2/0-00197.md) · 增加ACL规则组(VNRS)（ADD ACLGROUP）— 增加VNRS微服务的ACL4规则组（IPFD-012002 ACL / 
+- [0-00198](task/UDG/20.15.2/0-00198.md) · 增加高级ACL规则(VNRS IPv4)（ADD ACLRULEADV4）— 增加VNRS微服务的高级IPv4 ACL规则（五元组匹配：协议/源IP/
+- [0-00199](task/UDG/20.15.2/0-00199.md) · 增加流行为(MQC)（ADD MQCBEHAVIOR）— 增加MQC流行为对象(QoS复杂流分类三件套之一, CB对的B侧)。流动
+- [0-00200](task/UDG/20.15.2/0-00200.md) · 配置QoS重定向下一跳动作（ADD QOSACTRDRNHP）— 在流行为下配置重定向下一跳动作(可选流动作之一)。QoS复杂流分类主场景
+- [0-00201](task/UDG/20.15.2/0-00201.md) · 增加流分类(MQC)（ADD MQCCLASSIFIER）— 增加MQC流分类对象(CB对的C侧)。通过 ADD QOSRULEACL
+- [0-00202](task/UDG/20.15.2/0-00202.md) · 流分类绑定ACL规则（ADD QOSRULEACL）— 在流分类下绑定ACL规则组(将ACL匹配规则接入流分类)。支持按名称和编
+- [0-00203](task/UDG/20.15.2/0-00203.md) · 增加流策略并绑定CB对(MQCPOLICY+NODE)（ADD MQCPOLICY）— 增加MQC流策略并经 MQCPOLICYNODE 绑定流分类(C)与流行
+- [0-00204](task/UDG/20.15.2/0-00204.md) · 接口应用流策略（ADD QOSAPPLICATION）— 将流策略应用到指定以太主接口/子接口的出入方向。复杂流分类生效的最后一步
+- [0-00207](task/UDG/20.15.2/0-00207.md) · 增加基本ACL规则(VNRS IPv4)（ADD ACLRULEBAS4）— 增加基本IPv4 ACL规则(仅基于源IP地址匹配)。范围段2000-2
+- [0-00208](task/UDG/20.15.2/0-00208.md) · 增加以太/接口ACL规则(VNRS)（ADD ACLRULEETH）— 增加以太ACL规则(基于源MAC匹配，范围段4000-4999)与接口A
+- [0-00209](task/UDG/20.15.2/0-00209.md) · 增加IPv6 ACL规则组与规则(ACL6)（ADD ACLGROUP6）— 增加IPv6 ACL规则组(ADD ACLGROUP6)与IPv6 AC
+- [0-00210](task/UDG/20.15.2/0-00210.md) · 创建IPsec微服务VPN与隧道接口(VNRS+IPSEC双配)（ADD L3VPNINSTIPSEC）— 在IPsec微服务侧创建VPN实例与IPsec隧道接口并绑定VPN配置I
+- [0-00211](task/UDG/20.15.2/0-00211.md) · 定义IPsec保护数据流(IPsec ACL)（ADD ACLGROUPIPSEC）— 增加IPsec专用ACL规则组与高级ACL规则，定义需要IPsec保护的
+- [0-00212](task/UDG/20.15.2/0-00212.md) · 配置IPsec安全提议（ADD IPSECPROPOSALIPSEC）— 增加IPsec安全提议(定义安全协议ESP/AH、认证算法、加密算法、封
+- [0-00213](task/UDG/20.15.2/0-00213.md) · 配置IKE安全提议（ADD IKEPROPOSAL）— 增加IKE安全提议(认证方法PSK/RSA、认证算法、加密算法、完整性算
+- [0-00214](task/UDG/20.15.2/0-00214.md) · 配置IKE对等体（ADD IKEPEER）— 增加IKE对等体(预共享密钥、引用IKE安全提议、本端/远端地址、VPN
+- [0-00215](task/UDG/20.15.2/0-00215.md) · 配置并组装IPsec安全策略(策略+绑提议+绑IKE Peer)（ADD IPSECPOLICY）— 增加IPsec安全策略(策略名/序列号/模式/模板模式/引用ACL编号)
+- [0-00216](task/UDG/20.15.2/0-00216.md) · 创建VNRS侧IPsec隧道接口并应用安全策略(VNRS+IPSEC双配)（ADD IPSECINTFCFG）— 在VNRS微服务侧创建IPsec隧道接口(ADD IPSECINTFCF
+- [0-00217](task/UDG/20.15.2/0-00217.md) · 设置IKE全局配置(DPD/NAT保活)（SET IKEGLOBALCONFIG）— 设置IKE全局配置(DPD检测类型/检查间隔/重试间隔、NAT保活时间间
+- [0-00218](task/UDG/20.15.2/0-00218.md) · 配置PFCP负荷上报（SET PFCPLOADRPT）— 配置用户面负荷上报开关及阈值(LOADRPTSW/RPTTHD/STOP
+- [0-00219](task/UDG/20.15.2/0-00219.md) · 配置F-TEID分配能力(CU Full Mesh)（SET CPTEIDUALLOC）— 配置用户面 F-TEID 分配能力开关(SWITCH)。CU Full 
+- [0-00220](task/UDG/20.15.2/0-00220.md) · 配置会话核查功能（SET SESSCHKFUNC）— 配置用户面会话核查(ESTABLISHCHK/SESSNUMTHD/PA
+- [0-00222](task/UDG/20.15.2/0-00222.md) · 配置APN单用户五元组上限（SET APNFLOWMAXNUM）— 配置指定 APN 下单用户所有业务允许创建的五元组最大数目（FDMAXN
+- [0-00224](task/UDG/20.15.2/0-00224.md) · 创建TWAMP VPN实例（ADD TWAMPVPNINST）— 创建 TWAMP 探测专用的 VPN 实例（VRFNAME），TWAMP
+- [0-00225](task/UDG/20.15.2/0-00225.md) · 创建TWAMP逻辑接口（ADD TWAMPLOGICINF）— 创建 TWAMP 探测逻辑接口（NAME/AFTYPE/IPV4ADDR
+- [0-00226](task/UDG/20.15.2/0-00226.md) · 配置TWAMP响应端(Full模式)（ADD TWAMPRESPONDER）— 配置 TWAMP 响应端（RESPONDERID/AFTYPE/TWAM
+- [0-00227](task/UDG/20.15.2/0-00227.md) · 配置TWAMP客户端(Light模式)（ADD TWAMPCLIENT）— 配置 TWAMP 客户端（CLIENTID/AFTYPE/TWAMPAR
+- [0-00228](task/UDG/20.15.2/0-00228.md) · 配置TWAMP发送端(Light模式)（ADD TWAMPSENDER）— 配置 TWAMP 发送端探测报文参数(CLIENTID/TIMEOUT)
+- [0-00229](task/UDG/20.15.2/0-00229.md) · 配置TCP保活参数(Full模式)（SET TCPKEEPALIVECFG）— 配置 TWAMP-Control 连接的 TCP 保活参数(KEEPAL
+- [0-00230](task/UDG/20.15.2/0-00230.md) · 配置链路丢包告警阈值(Light模式)（SET LINKALMCFG）— 配置 TWAMP 探测链路丢包率过高告警(ALM-100395)阈值(T
+- [0-00231](task/UDG/20.15.2/0-00231.md) · 配置IPSQM静态整形带宽（ADD IPSQMSHAPING）— 配置基于基站(对端IP)的静态整形带宽(IPTYPE/PEERIPV4/
+- [0-00232](task/UDG/20.15.2/0-00232.md) · 配置IPSQM整形队列深度（SET IPSQMQDEPTH）— 配置 IPSQM 整形队列深度(DEPTH，报文个数)。可选增强步骤(缺
+- [0-00233](task/UDG/20.15.2/0-00233.md) · 配置IPSQM调整参数（SET IPSQMADJUST）— 配置 IPSQM POD 最低保护带宽及突发尺寸(THRESHOLD/L
+- [0-00234](task/UDG/20.15.2/0-00234.md) · 增加IPSQM VIP用户列表（ADD IPSQMVIPLIST）— 增加 IPSQM VIP 用户列表(USERID/USERIDINFO)
+- [0-00248](task/UDG/20.15.2/0-00248.md) · 配置NTP服务器（ADD NTPSVR）— 增加 NTP 服务器及其访问参数(服务器名/IP 地址类型/IPv4 地
+- [0-00249](task/UDG/20.15.2/0-00249.md) · 设置用户面接口模式(入不转板总开关)（SET DATAPLANEINFMODE）— 开启入不转板总开关(SET DATAPLANEINFMODE): MOD
+- [0-00250](task/UDG/20.15.2/0-00250.md) · 设置地址分配规则(入不转板)（SET IPALLOCRULE）— 配置全局地址分配规则(SET IPALLOCRULE): 三级规则开关(
+- [0-00251](task/UDG/20.15.2/0-00251.md) · 设置APN内容过滤开关（SET APNCFFUNC）— 基于APN粒度开启URL过滤功能(SET APNCFFUNC: CFSW
+- [0-00252](task/UDG/20.15.2/0-00252.md) · 增加内容过滤策略（ADD CFPROFILE）— 增加内容过滤策略(ADD CFPROFILE: CFPROFILENAM
+- [0-00253](task/UDG/20.15.2/0-00253.md) · 增加内容过滤模板（ADD CFTEMPLATE）— 增加内容过滤模板(ADD CFTEMPLATE): 绑定主用 CONTE
+- [0-00254](task/UDG/20.15.2/0-00254.md) · 设置APN内容过滤模板（SET APNCFTEMPLATE）— 设置 APN 维度的 URL 过滤模板(SET APNCFTEMPLAT
+- [0-00255](task/UDG/20.15.2/0-00255.md) · 增加内容过滤策略绑定关系（ADD CFPROFBINDCFT）— 增加内容过滤策略与模板的绑定关系(ADD CFPROFBINDCFT: 
+- [0-00256](task/UDG/20.15.2/0-00256.md) · 增加内容分类组（ADD CONTCATEGROUP）— 增加内容分类组(ADD CONTCATEGROUP: CONTCATEG
+- [0-00257](task/UDG/20.15.2/0-00257.md) · 增加内容分类组绑定关系（ADD CONTCATEGBIND）— 增加内容过滤策略与分类组的绑定关系及动作(ADD CONTCATEGBI
+- [0-00258](task/UDG/20.15.2/0-00258.md) · 设置内容过滤缓存参数（SET CFCACHEPARA）— 设置 URL 过滤本地缓存参数(SET CFCACHEPARA: CAC
+- [0-00259](task/UDG/20.15.2/0-00259.md) · 增加ICAP服务器（ADD ICAPSERVER）— 增加 ICAP 服务器(ADD ICAPSERVER: ICAPSERV
+- [0-00260](task/UDG/20.15.2/0-00260.md) · 增加ICAP服务器组（ADD ICAPSVRGRP）— 增加 ICAP 服务器组(ADD ICAPSVRGRP: ICAPSVR
+- [0-00261](task/UDG/20.15.2/0-00261.md) · 增加ICAP服务器绑定关系（ADD ICAPSVRBINDISG）— 增加 ICAP 服务器到服务器组的绑定关系(ADD ICAPSVRBIN
+- [0-00262](task/UDG/20.15.2/0-00262.md) · 增加ICAP本端信息（ADD ICAPLOCALINFO）— 增加 UDG 与 ICAP Server 间逻辑接口相关的标识信息(AD
+- [0-00279](task/UDG/20.15.2/0-00279.md) · 设置大流优化参数（SET FLOWLETPARA）— 开启大流优化功能开关（FLOWOPTSW）及大流检测/守护调参；5G-A
+- [0-00280](task/UDG/20.15.2/0-00280.md) · 设置网元形态（SET NETYPE）— 配置网元形态枚举(NETYPEENUM)，用于合一ProxyUPF/Pr
+- [0-00281](task/UDG/20.15.2/0-00281.md) · 配置SA指纹识别（ADD FINGERIDENT）— 开启HTTPS业务行为识别功能(ADD FINGERIDENT)，对HT
+- [0-00282](task/UDG/20.15.2/0-00282.md) · 设置IMS Bypass功能参数（SET IMSBYPASS）— 开启PCF双故障Bypass功能(SET IMSBYPASS)，配置Qo
+- [0-00283](task/UDG/20.15.2/0-00283.md) · 设置RTSDNN参数（SET RTSDNNPARA）— 配置通用DNN漫游分流参数(SET RTSDNNPARA)，开启公网/专

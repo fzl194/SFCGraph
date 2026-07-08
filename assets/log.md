@@ -25,3 +25,12 @@
 - 证据：与命令层共用 evidence/，按 stem 去重，总数 16231（命令 13075 + 特性/License 新增 3156）
 - 数据说明：jsonl 中文文本经 `open(encoding=utf-8)` 直读完全干净；早期终端 `head|json.tool` 乱码是 Windows stdin 管道 cp936 再编码所致，非数据问题
 
+
+
+## [2026-07-09] ingest | 命令级别 task wiki（atom 187）
+- 来源：P5，ConfigTask/assert/UDG/20.15.2 命令证据包（build_command_evidence.py 生成）+ atom/rule/dp yaml + 命令 wiki
+- 产出：task md 187（atom，平均 50 行/篇），覆盖计费三件套+过滤链+带宽+QoS+接入+IPsec+L2TP+路由+URL过滤+IPSQM+TWAMP 等场景
+- 定位：命令级别 task wiki = 配置生成实例化时该命令**怎么配**的动作知识（参数取值来源/决策点联动/约束/配置原则），从证据包③「各特性配置范式」归纳，**不复述命令静态字段**（链接命令 wiki）
+- 构建：Agent 驱动（每批 5 atom × 2 并行，19 轮），证据包③为主输入；rule/DP 内嵌（不拆三对象）
+- 回填：lint_and_backfill.py 把命令 md 的 [[Task]] 占位回填为 markdown 链接（401 处/265 文件）
+- 范围：仅 UDG atom（compound/feature 级 + UNC 后续）；task↔task 双向预留
