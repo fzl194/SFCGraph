@@ -13,3 +13,6 @@ feature_graph:
 task_graph:
   assets_root: "../ConfigTask/assert"
   doc_root: ".."
+
+wiki:
+  assets_root: "../assets"
