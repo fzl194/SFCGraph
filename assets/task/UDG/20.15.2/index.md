@@ -1,8 +1,6 @@
 # index · task/UDG/20.15.2
 
-> task wiki（atom 187 / compound 8 / feature 1）。顶层导航见 ../../../index.md
-
-## 命令级（atom）
+## 命令级（atom）（193）
 
 - [0-00001](task/UDG/20.15.2/0-00001.md) · 配置URR（ADD URR） — 配置一条使用量上报规则(URR)，确定费率与计费方式
 - [0-00002](task/UDG/20.15.2/0-00002.md) · 配置URR组（ADD URRGROUP） — 配置URRGROUP，上行/下行分别绑定在线与离线URR
@@ -191,8 +189,14 @@
 - [0-00281](task/UDG/20.15.2/0-00281.md) · 配置SA指纹识别（ADD FINGERIDENT） — 开启HTTPS业务行为识别功能(ADD FINGERIDEN
 - [0-00282](task/UDG/20.15.2/0-00282.md) · 设置IMS Bypass功能参数（SET IMSBYPASS） — 开启PCF双故障Bypass功能(SET IMSBYPASS
 - [0-00283](task/UDG/20.15.2/0-00283.md) · 设置RTSDNN参数（SET RTSDNNPARA） — 配置通用DNN漫游分流参数(SET RTSDNNPARA)，
+- [0-00284](task/UDG/20.15.2/0-00284.md) · 配置网络切片选择标识（ADD SNSSAI） — 配置网络切片选择标识(ADD SNSSAI)，定义切片的 S
+- [0-00285](task/UDG/20.15.2/0-00285.md) · 配置切片与N3逻辑接口绑定（ADD SNSSAIUPINTF） — 配置网络切片与逻辑接口绑定关系(ADD SNSSAIUPIN
+- [0-00286](task/UDG/20.15.2/0-00286.md) · 配置带宽用户组切片绑定（ADD SNSSAIBWMUSRG） — 配置带宽管理用户组与切片绑定关系(ADD SNSSAIBWM
+- [0-00287](task/UDG/20.15.2/0-00287.md) · 配置时间段（ADD TIMERANGE） — 配置时间段容器(ADD TIMERANGE)，作为周期时间段
+- [0-00288](task/UDG/20.15.2/0-00288.md) · 配置周期时间段（ADD PERITIMERANGE） — 配置周期时间段(ADD PERITIMERANGE)，在 T
+- [0-00289](task/UDG/20.15.2/0-00289.md) · 配置全局带宽管理规则（ADD BWMRULEGLOBAL） — 配置整机级全局带宽管理规则(ADD BWMRULEGLOBA
 
-## 步骤级（compound）
+## 步骤级（compound）（8）
 
 - [1-00001](task/UDG/20.15.2/1-00001.md) · 前置准备（License 与接入域） — 开启特性 License 并准备接入域基础（APN 或切片）
 - [1-00002](task/UDG/20.15.2/1-00002.md) · BWM 业务与控制器配置 — 配置 BWM 业务（业务识别方式）与控制器（CAR/Shap
@@ -203,7 +207,7 @@
 - [1-00007](task/UDG/20.15.2/1-00007.md) · 分级带宽管理 — 配置业务级别策略（BCSRVLEVELPLY），使多业务优先
 - [1-00008](task/UDG/20.15.2/1-00008.md) · 三级整机控制 — 在用户级+用户组级 BWMRULE 之上叠加整机级 BWMR
 
-## 特性级（feature）
+## 特性级（feature）（1）
 
 - [2-00001](task/UDG/20.15.2/2-00001.md) · 基于业务感知的带宽控制（GWFD-110311） — 配置 BWM 实现用户级/用户组级/整机级三层层次化带宽控制
 
