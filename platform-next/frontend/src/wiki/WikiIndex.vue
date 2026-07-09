@@ -4,7 +4,7 @@
     <section class="wiki-center">
       <MdPane :path="currentPath" @navigate="go" />
     </section>
-    <aside class="wiki-right">图谱（待 Task 11）</aside>
+    <aside class="wiki-right"><NeighborGraph :center-path="currentPath" @navigate="go" /></aside>
   </div>
 </template>
 
@@ -13,6 +13,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import CategoryTree from './CategoryTree.vue'
 import MdPane from './MdPane.vue'
+import NeighborGraph from './NeighborGraph.vue'
 
 const route = useRoute()
 const router = useRouter()
