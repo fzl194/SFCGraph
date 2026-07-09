@@ -4,6 +4,7 @@
       <span class="nb-head-title">周围关系 · 1 跳</span>
       <span v-if="centerPath && !empty && !loading" class="nb-head-count">{{ nodeCount }} 节点</span>
     </div>
+
     <div class="nb-body">
       <div v-if="loading" v-loading="true" class="nb-canvas"></div>
       <div v-else-if="!centerPath" class="nb-state">
@@ -15,7 +16,13 @@
         <div class="nb-state-text">该对象无关系</div>
       </div>
       <div v-show="!loading && centerPath && !empty" ref="containerRef" class="nb-canvas"></div>
-      <div v-if="centerPath && !empty && !loading" class="nb-legend">点节点跳转 · 灰虚＝未构建</div>
+      <div v-if="centerPath && !empty && !loading" class="nb-hint">点节点跳转 · 灰虚＝未构建</div>
+    </div>
+
+    <div class="nb-foot">
+      <span v-for="t in legendTypes" :key="t" class="nb-leg">
+        <span class="nb-leg-dot" :style="{ background: TYPE_META[t].bg }"></span>{{ TYPE_META[t].label }}
+      </span>
     </div>
   </div>
 </template>
@@ -23,6 +30,7 @@
 <script setup lang="ts">
 import { ref, watch, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import { wikiApi, type NbNode, type NbEdge } from './wikiApi'
+import { TYPE_META } from './wikiTokens'
 
 const props = defineProps<{ centerPath: string | null }>()
 const emit = defineEmits<{ (e: 'navigate', path: string): void }>()
@@ -34,18 +42,13 @@ const containerRef = ref<HTMLDivElement | null>(null)
 let network: any = null
 let ro: ResizeObserver | null = null
 
-// 节点配色（与左树 type 标签一致）
-const NODE_COLOR: Record<string, { bg: string; bd: string }> = {
-  MMLCommand: { bg: '#0891b2', bd: '#0e7490' },
-  ConfigObject: { bg: '#7c3aed', bd: '#6d28d9' },
-  Feature: { bg: '#0d9488', bd: '#0f766e' },
-  License: { bg: '#d97706', bd: '#b45309' },
-  Task: { bg: '#db2777', bd: '#be185d' },
-}
+const legendTypes = ['MMLCommand', 'ConfigObject', 'Feature', 'License', 'Task']
+
+// 关系边配色（与类型色呼应：对象关系=紫、License=琥珀、命令/任务=品红、其余中性）
 const EDGE_COLOR: Record<string, string> = {
-  operates_on: '#7c3aed', operated_by: '#7c3aed', requires_license: '#d97706',
+  operates_on: '#4f46e5', operated_by: '#4f46e5', requires_license: '#d97706',
   controls_feature: '#d97706',
-  parent: '#475569', child: '#475569', ref_command: '#db2777', has_task: '#db2777',
+  parent: '#475569', child: '#475569', ref_command: '#e11d48', has_task: '#e11d48',
   evidenced_by: '#94a3b8', relates_to: '#64748b', related: '#cbd5e1',
 }
 
@@ -56,8 +59,7 @@ async function load() {
   try {
     nb = await wikiApi.neighborhood(props.centerPath)
   } catch {
-    empty.value = true; nodeCount.value = 0
-    loading.value = false
+    empty.value = true; nodeCount.value = 0; loading.value = false
     network?.destroy(); network = null
     return
   }
@@ -76,7 +78,7 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
   const DataSet: any = vis.DataSet
 
   const visNodes = nodes.map((n) => {
-    const c = NODE_COLOR[n.type] || { bg: '#64748b', bd: '#475569' }
+    const c = TYPE_META[n.type] || { bg: '#64748b', bd: '#475569' }
     const isCenter = n.path === centerPath
     return {
       id: n.path || n.id,
@@ -158,8 +160,6 @@ onBeforeUnmount(() => {
 }
 
 .nb-body { flex: 1; position: relative; padding: var(--space-3); min-height: 0; }
-
-/* graph canvas — subtle dot-grid "surface" atmosphere */
 .nb-canvas {
   width: 100%; height: 100%; min-height: 300px;
   background-color: var(--bg-card);
@@ -168,7 +168,6 @@ onBeforeUnmount(() => {
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
-
 .nb-state {
   height: 100%; min-height: 300px;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -176,13 +175,22 @@ onBeforeUnmount(() => {
 }
 .nb-state-icon { font-size: 40px; color: var(--border); line-height: 1; }
 .nb-state-text { font-size: var(--text-sm); }
-
-.nb-legend {
+.nb-hint {
   position: absolute; bottom: calc(var(--space-3) + 10px); left: calc(var(--space-3) + 10px);
   font-size: var(--text-2xs); color: var(--text-tertiary);
   background: rgba(255, 255, 255, 0.85);
   padding: 4px 10px; border-radius: var(--radius-sm);
-  backdrop-filter: blur(4px);
-  border: 1px solid var(--border-light);
+  backdrop-filter: blur(4px); border: 1px solid var(--border-light);
 }
+
+/* type-color legend — decodes the graph palette */
+.nb-foot {
+  display: flex; flex-wrap: wrap; gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  border-top: 1px solid var(--border);
+  background: var(--bg-card);
+  flex-shrink: 0;
+}
+.nb-leg { display: inline-flex; align-items: center; gap: 4px; font-size: var(--text-2xs); color: var(--text-secondary); }
+.nb-leg-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
 </style>
