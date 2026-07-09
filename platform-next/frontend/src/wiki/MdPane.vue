@@ -1,10 +1,20 @@
 <template>
-  <div v-if="loading" v-loading="true" class="md-pane md-pane-loading"></div>
-  <div v-else-if="error" class="md-pane md-pane-empty">该页加载失败：{{ error }}</div>
-  <div v-else-if="!content" class="md-pane md-pane-empty">
-    图谱总览 · 在左侧选择对象，或在任意 md / 图谱节点间点击跳转。
+  <div class="md-scroll" v-loading="loading">
+    <div v-if="error" class="md-state">
+      <div class="md-state-icon md-state-icon--err">⚠</div>
+      <div class="md-state-title">该页加载失败</div>
+      <div class="md-state-desc">{{ error }}</div>
+    </div>
+    <div v-else-if="!content && !loading" class="md-state">
+      <div class="md-state-icon">▤</div>
+      <div class="md-state-title">图谱总览</div>
+      <div class="md-state-desc">
+        在左侧选择对象，或在文档链接 / 图谱节点间点击跳转。<br />
+        URL 驱动 —— 可前进后退、可分享。
+      </div>
+    </div>
+    <article v-else class="doc-viewer md-article" v-html="rendered" @click="handleClick"></article>
   </div>
-  <div v-else class="md-pane md-pane-doc" v-html="rendered" @click="handleClick"></div>
 </template>
 
 <script setup lang="ts">
@@ -62,13 +72,44 @@ function handleClick(ev: MouseEvent) {
 </script>
 
 <style scoped>
-.md-pane { min-height: 200px; }
-.md-pane-loading { height: 400px; }
-.md-pane-empty { color: var(--text-tertiary); padding: 60px 20px; text-align: center; }
-.md-pane-doc :deep(.md-placeholder) { color: #94a3b8; background: #f1f5f9; padding: 0 4px; border-radius: 3px; font-family: monospace; font-size: 0.9em; }
-.md-pane-doc :deep(h1) { font-size: 1.5rem; margin: 0 0 12px; }
-.md-pane-doc :deep(h2) { font-size: 1.15rem; margin: 20px 0 8px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
-.md-pane-doc :deep(table) { border-collapse: collapse; width: 100%; margin: 8px 0; }
-.md-pane-doc :deep(th), .md-pane-doc :deep(td) { border: 1px solid var(--border); padding: 6px 8px; vertical-align: top; }
-.md-pane-doc :deep(a) { color: #0891b2; cursor: pointer; }
+.md-scroll { flex: 1; overflow-y: auto; overflow-x: hidden; }
+
+/* centered readable column — inherits global .doc-viewer typography */
+.md-article { max-width: 880px; margin: 0 auto; padding: var(--space-8) var(--space-8) var(--space-12); }
+
+/* [[ID]] placeholder chip */
+.md-article :deep(.md-placeholder) {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  color: var(--text-tertiary);
+  background: var(--bg-page);
+  border: 1px dashed var(--border);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+/* empty / error state — placeholder-page pattern */
+.md-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-12);
+  text-align: center;
+  color: var(--text-tertiary);
+}
+.md-state-icon {
+  width: 56px; height: 56px;
+  border-radius: var(--radius-lg);
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px;
+}
+.md-state-icon--err { background: var(--danger-soft); color: var(--danger); }
+.md-state-title { font-size: var(--text-xl); font-weight: 600; color: var(--text-secondary); }
+.md-state-desc { font-size: var(--text-sm); line-height: 1.7; max-width: 380px; }
 </style>

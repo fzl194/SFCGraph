@@ -1,18 +1,17 @@
 <template>
   <div class="wiki-page">
-    <div class="wiki-crumb">
-      <span v-if="!history.length" class="wiki-crumb-hint">图谱总览 · 在左侧选择对象开始浏览</span>
+    <header class="wiki-crumb">
+      <span class="wiki-crumb-label">PATH</span>
+      <span v-if="!history.length" class="wiki-crumb-empty">在左侧选择对象开始浏览</span>
       <template v-for="(h, i) in history" :key="i">
-        <span class="wiki-crumb-item" :class="{ active: i === history.length - 1 }" @click="backTo(i)">
-          {{ labelOf(h) }}
-        </span>
+        <span class="wiki-crumb-item" :class="{ active: i === history.length - 1 }" @click="backTo(i)">{{ labelOf(h) }}</span>
         <span v-if="i < history.length - 1" class="wiki-crumb-sep">›</span>
       </template>
-    </div>
+    </header>
     <div class="wiki-shell">
-      <aside class="wiki-left"><CategoryTree @select="select" /></aside>
-      <section class="wiki-center"><MdPane :path="currentPath" @navigate="select" /></section>
-      <aside class="wiki-right"><NeighborGraph :center-path="currentPath" @navigate="select" /></aside>
+      <aside class="wiki-pane wiki-left"><CategoryTree @select="select" /></aside>
+      <section class="wiki-pane wiki-center"><MdPane :path="currentPath" @navigate="select" /></section>
+      <aside class="wiki-pane wiki-right"><NeighborGraph :center-path="currentPath" @navigate="select" /></aside>
     </div>
   </div>
 </template>
@@ -56,15 +55,59 @@ watch(currentPath, (p) => {
 </script>
 
 <style scoped>
-.wiki-page { display: flex; flex-direction: column; height: calc(100vh - var(--navbar-height)); }
-.wiki-crumb { padding: 6px 16px; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text-tertiary); min-height: 32px; display: flex; flex-wrap: wrap; gap: 2px; align-items: center; }
-.wiki-crumb-hint { color: var(--text-tertiary); }
-.wiki-crumb-item { cursor: pointer; padding: 0 2px; }
-.wiki-crumb-item:hover { color: var(--text-primary, #1a1d23); }
-.wiki-crumb-item.active { color: var(--text-primary, #1a1d23); font-weight: 600; cursor: default; }
-.wiki-crumb-sep { color: var(--text-tertiary); margin: 0 2px; }
-.wiki-shell { flex: 1; display: grid; grid-template-columns: 300px 1fr 1fr; min-height: 0; }
-.wiki-left { border-right: 1px solid var(--border); overflow: auto; padding: 10px; }
-.wiki-center { overflow: auto; padding: 16px 24px; }
-.wiki-right { border-left: 1px solid var(--border); overflow: hidden; padding: 10px; }
+.wiki-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--navbar-height));
+  background: var(--bg-page);
+}
+
+/* breadcrumb — quiet functional strip, monospace path */
+.wiki-crumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  height: 38px;
+  padding: 0 var(--space-5);
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--text-xs);
+  flex-shrink: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-shadow: var(--shadow-xs);
+}
+.wiki-crumb-label {
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  margin-right: var(--space-3);
+  flex-shrink: 0;
+}
+.wiki-crumb-empty { color: var(--text-tertiary); }
+.wiki-crumb-item {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  transition: all var(--duration) var(--ease);
+}
+.wiki-crumb-item:hover { background: var(--accent-soft); color: var(--accent); }
+.wiki-crumb-item.active { color: var(--accent); font-weight: 600; cursor: default; }
+.wiki-crumb-sep { color: var(--text-tertiary); margin: 0 1px; }
+
+/* 3-pane shell */
+.wiki-shell {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 0;
+}
+.wiki-pane { min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+.wiki-left { background: var(--bg-card); border-right: 1px solid var(--border); }
+.wiki-center { background: var(--bg-page); }
+.wiki-right { background: var(--bg-card); border-left: 1px solid var(--border); }
 </style>

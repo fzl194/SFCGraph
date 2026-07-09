@@ -1,10 +1,22 @@
 <template>
-  <div class="nb-graph-wrap">
-    <div v-if="loading" v-loading="true" class="nb-graph-canvas"></div>
-    <div v-else-if="!centerPath" class="nb-empty">选择对象后展示其周围关系</div>
-    <div v-else-if="empty" class="nb-empty">该对象无关系</div>
-    <div v-show="!loading && centerPath && !empty" ref="containerRef" class="nb-graph-canvas"></div>
-    <div class="nb-legend">点节点跳转 · 灰虚=未构建</div>
+  <div class="nb-wrap">
+    <div class="nb-head">
+      <span class="nb-head-title">周围关系 · 1 跳</span>
+      <span v-if="centerPath && !empty && !loading" class="nb-head-count">{{ nodeCount }} 节点</span>
+    </div>
+    <div class="nb-body">
+      <div v-if="loading" v-loading="true" class="nb-canvas"></div>
+      <div v-else-if="!centerPath" class="nb-state">
+        <div class="nb-state-icon">◌</div>
+        <div class="nb-state-text">选择对象后展示其周围关系</div>
+      </div>
+      <div v-else-if="empty" class="nb-state">
+        <div class="nb-state-icon">◌</div>
+        <div class="nb-state-text">该对象无关系</div>
+      </div>
+      <div v-show="!loading && centerPath && !empty" ref="containerRef" class="nb-canvas"></div>
+      <div v-if="centerPath && !empty && !loading" class="nb-legend">点节点跳转 · 灰虚＝未构建</div>
+    </div>
   </div>
 </template>
 
@@ -17,38 +29,44 @@ const emit = defineEmits<{ (e: 'navigate', path: string): void }>()
 
 const loading = ref(false)
 const empty = ref(false)
+const nodeCount = ref(0)
 const containerRef = ref<HTMLDivElement | null>(null)
 let network: any = null
 let ro: ResizeObserver | null = null
 
+// 节点配色（与左树 type 标签一致）
 const NODE_COLOR: Record<string, { bg: string; bd: string }> = {
   MMLCommand: { bg: '#0891b2', bd: '#0e7490' },
   ConfigObject: { bg: '#7c3aed', bd: '#6d28d9' },
   Feature: { bg: '#0d9488', bd: '#0f766e' },
-  License: { bg: '#ea580c', bd: '#c2410c' },
+  License: { bg: '#d97706', bd: '#b45309' },
   Task: { bg: '#db2777', bd: '#be185d' },
 }
 const EDGE_COLOR: Record<string, string> = {
-  operates_on: '#7c3aed', operated_by: '#7c3aed', requires_license: '#ea580c',
-  controls_feature: '#ea580c',
+  operates_on: '#7c3aed', operated_by: '#7c3aed', requires_license: '#d97706',
+  controls_feature: '#d97706',
   parent: '#475569', child: '#475569', ref_command: '#db2777', has_task: '#db2777',
   evidenced_by: '#94a3b8', relates_to: '#64748b', related: '#cbd5e1',
 }
 
 async function load() {
-  if (!props.centerPath) { empty.value = false; return }
+  if (!props.centerPath) { empty.value = false; nodeCount.value = 0; return }
   loading.value = true
+  let nb: { nodes: NbNode[]; edges: NbEdge[] } | null = null
   try {
-    const nb = await wikiApi.neighborhood(props.centerPath)
-    empty.value = nb.nodes.length <= 1
-    await nextTick()
-    await render(nb.nodes, nb.edges, props.centerPath)
+    nb = await wikiApi.neighborhood(props.centerPath)
   } catch {
-    empty.value = true
-    network?.destroy(); network = null
-  } finally {
+    empty.value = true; nodeCount.value = 0
     loading.value = false
+    network?.destroy(); network = null
+    return
   }
+  nodeCount.value = nb.nodes.length
+  empty.value = nb.nodes.length <= 1
+  loading.value = false            // 先显出画布，再渲染（避免 display:none 下 vis 量到 0 尺寸）
+  if (empty.value) { network?.destroy(); network = null; return }
+  await nextTick()
+  await render(nb.nodes, nb.edges, props.centerPath)
 }
 
 async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
@@ -66,7 +84,7 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
       title: n.id || n.name,
       shape: n.resolved ? 'box' : 'ellipse',
       color: { background: c.bg, border: c.bd, highlight: { background: c.bg, border: c.bd } },
-      font: { color: '#ffffff', size: isCenter ? 14 : 12 },
+      font: { color: '#ffffff', size: isCenter ? 14 : 12, face: 'Inter' },
       borderWidth: isCenter ? 3 : 1,
       dashes: !n.resolved,
       _path: n.path,
@@ -78,7 +96,7 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
     arrows: 'to' as const,
     color: { color: EDGE_COLOR[e.relation_type] || '#cbd5e1' },
     label: e.relation_type,
-    font: { size: 10, color: '#4b5563', strokeWidth: 3, strokeColor: '#ffffff', align: 'top' as const },
+    font: { size: 10, color: '#4b5563', strokeWidth: 3, strokeColor: '#ffffff', align: 'top' as const, face: 'JetBrains Mono' },
     smooth: { enabled: true, type: 'cubicBezier', forceDirection: 'none', roundness: 0.5 },
   }))
 
@@ -87,6 +105,7 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
     containerRef.value,
     { nodes: new DataSet(visNodes), edges: new DataSet(visEdges) },
     {
+      nodes: { borderWidth: 1, borderWidthSelected: 2 },
       layout: { improvedLayout: true },
       physics: {
         enabled: true,
@@ -119,8 +138,51 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-.nb-graph-wrap { height: 100%; display: flex; flex-direction: column; }
-.nb-graph-canvas { flex: 1; min-height: 300px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); }
-.nb-empty { color: var(--text-tertiary); padding: 60px 12px; text-align: center; font-size: 13px; }
-.nb-legend { font-size: 11px; color: var(--text-tertiary); padding: 4px; }
+.nb-wrap { height: 100%; display: flex; flex-direction: column; }
+
+.nb-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-page);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.nb-head-title {
+  font-size: var(--text-2xs); font-weight: 700; color: var(--text-tertiary);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.nb-head-count {
+  font-size: var(--text-2xs); color: var(--text-secondary); font-family: var(--font-mono);
+  background: var(--bg-card); border: 1px solid var(--border);
+  padding: 1px 8px; border-radius: var(--radius-sm);
+}
+
+.nb-body { flex: 1; position: relative; padding: var(--space-3); min-height: 0; }
+
+/* graph canvas — subtle dot-grid "surface" atmosphere */
+.nb-canvas {
+  width: 100%; height: 100%; min-height: 300px;
+  background-color: var(--bg-card);
+  background-image: radial-gradient(rgba(8, 145, 178, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.nb-state {
+  height: 100%; min-height: 300px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: var(--space-2); color: var(--text-tertiary);
+}
+.nb-state-icon { font-size: 40px; color: var(--border); line-height: 1; }
+.nb-state-text { font-size: var(--text-sm); }
+
+.nb-legend {
+  position: absolute; bottom: calc(var(--space-3) + 10px); left: calc(var(--space-3) + 10px);
+  font-size: var(--text-2xs); color: var(--text-tertiary);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 4px 10px; border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--border-light);
+}
 </style>
