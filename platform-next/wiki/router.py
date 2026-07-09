@@ -26,8 +26,8 @@ def list_objs(
 
 
 @router.get("/neighborhood")
-def neighborhood(path: str, depth: int = 1):
-    nb = get_service().neighborhood(path, depth)
+def neighborhood(path: str):
+    nb = get_service().neighborhood(path)
     if nb["center"] is None:
         raise HTTPException(status_code=404, detail="object not found")
     return nb

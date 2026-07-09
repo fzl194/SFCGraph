@@ -27,7 +27,9 @@ class WikiService:
 
     @property
     def index(self) -> Index:
-        if self._index is None or self._is_stale():
+        # load-once-and-cache：服务是进程级单例，server 运行期间 assets 不变；
+        # 重建走 CLI + restart。staleness 仅在首次 _load_or_build 内判定一次。
+        if self._index is None:
             self._index = self._load_or_build()
         return self._index
 
@@ -101,7 +103,7 @@ class WikiService:
         return {"path": None, "id": obj_id or "", "type": object_type_of(obj_id or ""),
                 "name": (obj_id or "").split("@")[-1], "resolved": resolved}
 
-    def neighborhood(self, path: str, depth: int = 1) -> dict:
+    def neighborhood(self, path: str) -> dict:
         idx = self.index
         center = idx.nodes.get(path)
         if not center:
@@ -122,6 +124,7 @@ class WikiService:
             # 反链边：从 src 指向 center，关系类型取 src 自己出向边中对 center 的那条
             src_out = {(ee.dst, ee.relation_type) for ee in idx.out_edges.get(src, ())}
             rel = next((r for (d, r) in src_out if d == path), "related")
+            # reverse 仅含真实文件源（Chunk1 reverse 只收 resolved 边），故 resolved=True
             edges.append({"from": src, "to": path, "relation_type": rel, "resolved": True})
         return {
             "center": self._node_dict(path, center.id, True),
