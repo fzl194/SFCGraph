@@ -11,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from wiki.models import Edge, Index, Node
-from wiki.parser import extract_links, parse_front_matter, split_front_matter
+from wiki.parser import extract_links, object_type_of, parse_front_matter, split_front_matter
 
 # type -> 取分组字段的函数（返回 ((field, value), ...) tuple）
 _GROUP_FIELDS = {
@@ -59,17 +59,23 @@ def build_index(assets_root: Path) -> Index:
         fm_text, body = split_front_matter(text)
         meta = parse_front_matter(fm_text)
         meta_cache[rel] = meta
-        ntype = str(meta.get("type", _infer_type_from_path(rel)))
+        obj_id = str(meta.get("id", ""))
+        id_parts = obj_id.split("@") if obj_id else []
+        ntype = str(meta.get("type") or object_type_of(obj_id) or _infer_type_from_path(rel))
         group_fn = _GROUP_FIELDS.get(ntype)
         group = group_fn(meta) if group_fn else ()
         title = _first_h1(body) or str(meta.get("name", ""))
+        # nf/version 优先取 front-matter；缺失时从 4 段式对象 ID 回填
+        # （2 段式业务层 ID 不携带 nf/version，正确保持 None）
+        nf = meta.get("nf") or (id_parts[0] if len(id_parts) >= 4 else None)
+        version = meta.get("version") or (id_parts[1] if len(id_parts) >= 4 else None)
         node = Node(
             path=rel,
-            id=str(meta.get("id", "")),
+            id=obj_id,
             type=ntype,
             name=str(meta.get("name", title)),
-            nf=meta.get("nf"),
-            version=meta.get("version"),
+            nf=nf,
+            version=version,
             status=str(meta.get("status", "")),
             title=title,
             group=group,

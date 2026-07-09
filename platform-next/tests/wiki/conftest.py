@@ -96,8 +96,6 @@ def sample_assets(tmp_path: Path) -> Path:
         task_layer: atom
         name: 配置URR
         ref: UDG@20.15.2@MMLCommand@ADD URR
-        nf: UDG
-        version: 20.15.2
         status: inferred
         ---
         # 配置URR（ADD URR）

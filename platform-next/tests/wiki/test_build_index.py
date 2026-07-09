@@ -65,3 +65,11 @@ def test_serialize_roundtrip(sample_assets, tmp_path):
     idx2 = deserialize_index(out.read_text(encoding="utf-8"))
     assert set(idx2.nodes) == set(idx.nodes)
     assert idx2.id_to_path == idx.id_to_path
+
+
+def test_task_nf_version_derived_from_id(sample_assets):
+    idx = build_index(sample_assets)
+    t = idx.nodes["task/UDG/20.15.2/0-00001.md"]
+    assert t.type == "Task"
+    assert t.nf == "UDG"          # derived from id, not front-matter (front-matter now omits it)
+    assert t.version == "20.15.2"
