@@ -1,16 +1,30 @@
 <template>
   <div class="wiki-shell">
     <aside class="wiki-left"><CategoryTree @select="go" /></aside>
-    <section class="wiki-center">中区（待 Task 10）</section>
+    <section class="wiki-center">
+      <MdPane :path="currentPath" @navigate="go" />
+    </section>
     <aside class="wiki-right">图谱（待 Task 11）</aside>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { computed } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import CategoryTree from './CategoryTree.vue'
+import MdPane from './MdPane.vue'
+
+const route = useRoute()
 const router = useRouter()
-function go(path: string) { router.push(`/graph-overview/a/${path}`) }
+
+const currentPath = computed<string | null>(() => {
+  const p = route.params.path
+  return Array.isArray(p) ? p.join('/') : (p || null)
+})
+
+function go(path: string) {
+  router.push(`/graph-overview/a/${path}`)
+}
 </script>
 
 <style scoped>
