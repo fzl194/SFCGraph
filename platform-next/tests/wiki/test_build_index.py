@@ -1,4 +1,5 @@
-from wiki.build_wiki_index import build_index
+import json
+from wiki.build_wiki_index import build_index, serialize_index, deserialize_index
 
 
 def test_build_index_basic(sample_assets):
@@ -47,3 +48,12 @@ def test_build_index_evidence_node(sample_assets):
     idx = build_index(sample_assets)
     ev = [p for p in idx.nodes if p.startswith("evidence/")]
     assert len(ev) == 1
+
+
+def test_serialize_roundtrip(sample_assets, tmp_path):
+    idx = build_index(sample_assets)
+    out = tmp_path / "idx.json"
+    out.write_text(serialize_index(idx), encoding="utf-8")
+    idx2 = deserialize_index(out.read_text(encoding="utf-8"))
+    assert set(idx2.nodes) == set(idx.nodes)
+    assert idx2.id_to_path == idx.id_to_path

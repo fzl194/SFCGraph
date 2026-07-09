@@ -5,6 +5,8 @@
   pass2: front-matter 派生边（task.ref→command、feature.parent_feature_code→parent），经 id_to_path 解析后去重加入
 """
 from __future__ import annotations
+import json
+import sys
 import posixpath
 from collections import defaultdict
 from pathlib import Path
@@ -131,3 +133,62 @@ def _infer_type_from_path(rel: str) -> str:
         "license": "License",
         "task": "Task",
     }.get(top, top.capitalize())
+
+
+def _node_to_dict(n: Node) -> dict:
+    return {
+        "path": n.path, "id": n.id, "type": n.type, "name": n.name,
+        "nf": n.nf, "version": n.version, "status": n.status,
+        "title": n.title, "group": [list(p) for p in n.group],
+    }
+
+
+def _edge_to_dict(e: Edge) -> dict:
+    return {"from": e.src, "to": e.dst, "relation_type": e.relation_type, "resolved": e.resolved}
+
+
+def serialize_index(idx: Index) -> str:
+    payload = {
+        "nodes": {p: _node_to_dict(n) for p, n in idx.nodes.items()},
+        "edges": [_edge_to_dict(e) for edges in idx.out_edges.values() for e in edges],
+        "reverse": dict(idx.reverse),
+        "id_to_path": dict(idx.id_to_path),
+    }
+    return json.dumps(payload, ensure_ascii=False, indent=2)
+
+
+def deserialize_index(text: str) -> Index:
+    d = json.loads(text)
+    nodes = {p: Node(
+        path=n["path"], id=n["id"], type=n["type"], name=n["name"],
+        nf=n["nf"], version=n["version"], status=n["status"],
+        title=n["title"], group=tuple(tuple(p) for p in n["group"]),
+    ) for p, n in d["nodes"].items()}
+    out_edges: dict[str, list[Edge]] = defaultdict(list)
+    for e in d["edges"]:
+        out_edges[e["from"]].append(Edge(src=e["from"], dst=e["to"], relation_type=e["relation_type"], resolved=e["resolved"]))
+    return Index(
+        nodes=nodes,
+        id_to_path=d["id_to_path"],
+        out_edges={k: tuple(v) for k, v in out_edges.items()},
+        reverse={k: tuple(v) for k, v in d["reverse"].items()},
+    )
+
+
+def main(argv: list[str] | None = None) -> int:
+    """CLI: python -m wiki.build_wiki_index <assets_root> <out_json>"""
+    argv = argv or sys.argv[1:]
+    if len(argv) < 2:
+        print("usage: build_wiki_index <assets_root> <out_json>", file=sys.stderr)
+        return 2
+    assets_root = Path(argv[0])
+    out = Path(argv[1])
+    idx = build_index(assets_root)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(serialize_index(idx), encoding="utf-8")
+    print(f"indexed {len(idx.nodes)} nodes -> {out}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
