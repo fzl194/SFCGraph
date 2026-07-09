@@ -98,6 +98,13 @@ assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[
 - ConfigObject `object_refers_to` → 双向。
 反向链接由 Compile（建对象 md 时补全）+ Lint（查缺失反向链接）维护。
 
+### 5.7 task 编号检索表（`_numbering.json`）
+- **task wiki 用编号命名**（§5.1）：文件名 `{编号}.md`，id `{nf}@{version}@Task@{编号}`（atom `0-`/compound `1-`/feature `2-`）。**不用命令名做文件名**。
+- 每个 `task/{nf}/{version}/` 下有 **`_numbering.json`**：`{命令名 → atom 编号}` 映射，是命令级 task 的**快速检索表**。
+- **用途（复用）**：后续 compound/feature/特性/步骤级 task 引用某命令的 atom task 时，查 `_numbering.json` 拿命令对应的 atom 编号 → 写 `[cmd](task/{nf}/{version}/{编号}.md)`，**无需扫文件**。命令名→atom task 的唯一入口。
+- **编号来源**：atom 沿用 ConfigTask assert 的 yaml 编号（权威）；atom 资产不全时（如 UNC pre-build），已建部分沿用 yaml + 未建部分按命令名排序接续（见 `assets/scripts/renumber_unc_tasks.py`）。
+- **决策点 / TaskRule**（内嵌对象）：UDG（有 yaml①）带编号内嵌；UNC pre-build（①空）现场从证据包②③归纳、**不编号**内嵌（与 task 绑定，无独立 ID，§5.3）。
+
 ---
 
 ## 6. typed md 通用约定（所有对象共有）
