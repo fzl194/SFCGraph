@@ -34,3 +34,14 @@
 - 构建：Agent 驱动（每批 5 atom × 2 并行，19 轮），证据包③为主输入；rule/DP 内嵌（不拆三对象）
 - 回填：lint_and_backfill.py 把命令 md 的 [[Task]] 占位回填为 markdown 链接（401 处/265 文件）
 - 范围：仅 UDG atom（compound/feature 级 + UNC 后续）；task↔task 双向预留
+
+
+## [2026-07-09] ingest | 命令级别 task wiki · UNC（atom 209）
+- 来源：P5-续，ConfigTask/assert/UNC/20.15.2 pre-build 命令证据包（209，build_command_evidence.py --cmds 生成，①段空，只有②命令真相+③各特性配置范式）+ 命令 wiki
+- 产出：task md 209（atom，平均 60 行/篇），覆盖 APN/计费/CG/PCC/PCRF/CHF/Diameter/N40/话单/策略 等 UNC 控制面场景
+- 定位同 UDG：命令级别 task wiki = 实例化怎么配，不复述命令静态字段
+- 构建：Agent 驱动（每批 5 × 2 并行，21 轮），pre-build 证据包②③为主输入（①段空）
+- 决策点/rule：现场从②③归纳，**不编号**内嵌语义标题（UNC 无①atom/rule/dp yaml，DP/Rule 与 task 绑定无独立 ID）
+- 编号：0-00001~0-00027 沿用 UNC atom yaml；0-00028~0-00209 按命令名排序接续。renumber_unc_tasks.py 建映射+重命名+改引用（先建命令名后改编号）
+- 回填：lint_and_backfill.py 回填 UNC task 互引 + 命令 wiki 关联任务占位（136 处/90 文件）
+- 范围：仅 UNC atom。compound/feature 级 + UDG 的 compound/feature 后续

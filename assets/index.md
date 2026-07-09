@@ -37,8 +37,9 @@ _未建（P4 LLM 凝练 + 人审）_
 **命令级别 task wiki（atom，187）已建**——每篇讲配置生成实例化时该命令**怎么配**（区别于命令 wiki 的静态文档），由证据包③「各特性配置范式」归纳，rule/决策点内嵌。
 
 - 命令级 task · UDG/20.15.2 → [局部 index](task/UDG/20.15.2/index.md)（187 篇，覆盖计费/带宽/QoS/接入/IPsec/L2TP/路由/URL 过滤/IPSQM/TWAMP 等场景）
+- 命令级 task · UNC/20.15.2 → [局部 index](task/UNC/20.15.2/index.md)（209 篇，pre-build 证据包驱动；编号 0-00001~0-00027 沿用 atom yaml，0-00028~0-00209 接续）
 
-_步骤级（compound）/特性级（feature）task 后续建（task↔task 双向届时同步）。UNC 待全量构建。_
+_步骤级（compound）/特性级（feature）task 后续建（task↔task 双向届时同步）。_
 
 ---
 

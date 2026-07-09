@@ -1,0 +1,214 @@
+# index · task/UNC/20.15.2
+
+> 命令级别 atom task wiki（209 篇，证据包②③驱动，决策点/rule 内嵌不编号）。顶层导航见 ../../../index.md
+> 编号方案：0-00001~0-00027 沿用 UNC atom yaml；0-00028~0-00209 按命令名排序接续。命令名→编号见 _numbering.json
+
+- [0-00001](task/UNC/20.15.2/0-00001.md) · ADD URR — 配置一条使用量上报规则(URR)，确定计费方式与费率标识，供
+- [0-00002](task/UNC/20.15.2/0-00002.md) · ADD ADCPARA — 配置 ADC 应用的流信息上报开关，使 PCRF/PCF 能
+- [0-00003](task/UNC/20.15.2/0-00003.md) · ADD AMUEPLCYCTRL — 为指定用户（群）或网络切片配置 AM 策略与 UE 策略的控
+- [0-00004](task/UNC/20.15.2/0-00004.md) · ADD APN — 创建一个 APN/DNN 实例，并按场景挂接 VPN、ULC
+- [0-00005](task/UNC/20.15.2/0-00005.md) · ADD APNCHGMODE — 配置指定 APN/DNN 在不同终端接入类型下选择的计费接口
+- [0-00006](task/UNC/20.15.2/0-00006.md) · ADD APNDEACTQFPLCY — 配置 SMF 收到 AMF 去活用户面请求（如 UE 无线丢
+- [0-00007](task/UNC/20.15.2/0-00007.md) · ADD APNPOLICYMODE — 按 APN 增加策略接口（Gx/Npcf）选择方式，决定 5
+- [0-00008](task/UNC/20.15.2/0-00008.md) · ADD APNUSRPROFG — 将 UserProfile Group 绑定到指定 APN/
+- [0-00009](task/UNC/20.15.2/0-00009.md) · ADD CCT — 新增融合计费模板（CCT），定义 5G 融合计费下配额/阈值
+- [0-00010](task/UNC/20.15.2/0-00010.md) · ADD CDRFIELDTEMP — 新增话单字段模板，按业务需要开关 50+ 个 CDR 字段是
+- [0-00011](task/UNC/20.15.2/0-00011.md) · ADD CGBINDING — 将一个 CG（计费网关）绑定到 CG 组并指定优先级，构成离
+- [0-00012](task/UNC/20.15.2/0-00012.md) · ADD CGGROUP — 增加一个离线计费 CG 组并配置其描述信息，作为后续 CG 
+- [0-00013](task/UNC/20.15.2/0-00013.md) · ADD CGGRPBINDING — 增加离线计费模板与 CG 组的绑定关系，按 IMSI/MSI
+- [0-00014](task/UNC/20.15.2/0-00014.md) · ADD CHARGECHAR — 增加对本地/漫游/拜访用户所采用的计费属性 CC 实例，作为
+- [0-00015](task/UNC/20.15.2/0-00015.md) · ADD CHARGEMETHOD — 基于用户计费属性 CC 配置在线/离线/融合计费方式开关及业
+- [0-00016](task/UNC/20.15.2/0-00016.md) · ADD CHGAPN — 为 SGSN 配置基于 APN 的计费属性信息（覆盖 HLR
+- [0-00017](task/UNC/20.15.2/0-00017.md) · ADD CHGCG — 配置与 SGSN 对接的 CG（计费网关）的承载协议、协议版
+- [0-00018](task/UNC/20.15.2/0-00018.md) · ADD CHGDCHAR — 为外网漫游用户配置基于 MCC+MNC 的缺省计费属性，当 
+- [0-00019](task/UNC/20.15.2/0-00019.md) · ADD CHGHOLI — 为指定计费属性配置节假日日期，与 ADD CHGTARI（费
+- [0-00020](task/UNC/20.15.2/0-00020.md) · ADD CHGIMSICFG — 基于 IMSI 前缀 + APN NI + 拜访类型 + 计
+- [0-00021](task/UNC/20.15.2/0-00021.md) · ADD CHGPLMNCFG — 基于 PLMN(MCC+MNC) + APN NI 共同定制
+- [0-00022](task/UNC/20.15.2/0-00022.md) · ADD CHGTARI — 为指定计费属性用户配置某天（工作日/周休日/节假日）的费率时
+- [0-00023](task/UNC/20.15.2/0-00023.md) · ADD CPCGBINDING — 增加抄送CG绑定关系，将抄送CG组（ADD CPCGGRP）
+- [0-00024](task/UNC/20.15.2/0-00024.md) · ADD CPCGGRP — 增加抄送CG组并配置组描述信息，作为 ADD CPCGBIN
+- [0-00025](task/UNC/20.15.2/0-00025.md) · ADD DEACTQFPLCY — 配置整系统（全局）粒度的专有 GBR QoS Flow 去活
+- [0-00026](task/UNC/20.15.2/0-00026.md) · ADD DIAMPEERADDR — 为已建的对端 Diameter 主机（PCRF/OCS/DR
+- [0-00027](task/UNC/20.15.2/0-00027.md) · ADD DIAMCONNGRP — 建立本端主机名与指定对端主机之间的一组 Diameter 链
+- [0-00028](task/UNC/20.15.2/0-00028.md) · ADD DCCTEMPLATE — 新增 DCC 在线计费模板，承载在线计费属性（OCS组、配额
+- [0-00029](task/UNC/20.15.2/0-00029.md) · ADD DIAMCONNECTION — 在 Diameter 链路组内增加一条到对端的 Diamet
+- [0-00030](task/UNC/20.15.2/0-00030.md) · ADD DIAMLOCINFO — 增加 Diameter 本端信息（Origin-Host/O
+- [0-00031](task/UNC/20.15.2/0-00031.md) · ADD FESTIVAL — 基于计费属性 CC 配置节假日日期信息（指定日期费率类型为节
+- [0-00032](task/UNC/20.15.2/0-00032.md) · ADD FLOWFILTER — 创建一个流过滤器命名对象，供分流/ADC/RADIUS 业务
+- [0-00033](task/UNC/20.15.2/0-00033.md) · ADD GLBOFCTEMPLATE — 配置全局离线计费模板绑定——按 Charge Charact
+- [0-00034](task/UNC/20.15.2/0-00034.md) · ADD GLBPCRFGROUP — 将 IMSI/MSISDN 号段绑定到指定 PCRF 组并设
+- [0-00035](task/UNC/20.15.2/0-00035.md) · ADD GUAMI — 为 AMF 实例配置全局 AMF 标识符（GUAMI = M
+- [0-00036](task/UNC/20.15.2/0-00036.md) · ADD GXUPFGROUP — 创建一个 Gx UPF 组命名对象，作为后续将 UPF Ho
+- [0-00037](task/UNC/20.15.2/0-00037.md) · ADD HTTPLE — 配置一个 HTTP 本端实体（客户端或服务端），为 SBI/
+- [0-00038](task/UNC/20.15.2/0-00038.md) · ADD HTTPLEGRP — 创建一个 HTTP 本端实体组，作为多个 HTTPLE（服务
+- [0-00039](task/UNC/20.15.2/0-00039.md) · ADD IMSIMSISDNSEG — 配置一个 IMSI 或 MSISDN 号段，供号段组选择 U
+- [0-00040](task/UNC/20.15.2/0-00040.md) · ADD L3VPNINST — 创建一个 L3VPN 实例，为 IPsec/AAA/CG/O
+- [0-00041](task/UNC/20.15.2/0-00041.md) · ADD LOCALHOSTBIND — 将 Diameter 本端主机加入指定本端主机组，建立 PG
+- [0-00042](task/UNC/20.15.2/0-00042.md) · ADD LOCALHOSTGRP — 创建 Diameter 本端主机组（仅组名），作为后续绑定本
+- [0-00043](task/UNC/20.15.2/0-00043.md) · ADD LOGICINF — 创建逻辑接口（接口名 + IP 版本 + 主/从 IP + 
+- [0-00044](task/UNC/20.15.2/0-00044.md) · ADD LOGICIP — 创建逻辑 IP 地址（IPv4/IPv6 + 可选 VPN 
+- [0-00045](task/UNC/20.15.2/0-00045.md) · ADD N40DIAGTRIGGER — 建立"用户内部诊断值 → 去活原因(FINAL/Abnorm
+- [0-00046](task/UNC/20.15.2/0-00046.md) · ADD N40MSGTEMP — 创建 N40 消息属性模板，按字段开关控制 N40（Nchf
+- [0-00047](task/UNC/20.15.2/0-00047.md) · ADD NGMMSUBDATA — 在 AMF 本地配置用户（群）的移动性管理签约数据，覆盖 R
+- [0-00048](task/UNC/20.15.2/0-00048.md) · ADD NGSGWPLMN — 为 SGW-C 单独配置 Home PLMN，用于 PGW-
+- [0-00049](task/UNC/20.15.2/0-00049.md) · ADD OFCTEMPLATE — 增加离线计费模板，定义话单版本、时长配额机制、定时器等离线计
+- [0-00050](task/UNC/20.15.2/0-00050.md) · ADD PCCCHGMODEBYPCFID — 基于 PCF 实例标识调整用户最终使用的策略接口（N7/Gx
+- [0-00051](task/UNC/20.15.2/0-00051.md) · ADD PCCPBINDUPG — 将 UserProfile 绑定到 UserProfileG
+- [0-00052](task/UNC/20.15.2/0-00052.md) · ADD PCCPOLICYGRP — 配置 PCC 策略组，把 URR 组（计费）、QoS 属性、
+- [0-00053](task/UNC/20.15.2/0-00053.md) · ADD PCCTEMPLATE — 配置 PCC 模板，承载 PCRF/PCF 故障处理动作、F
+- [0-00054](task/UNC/20.15.2/0-00054.md) · ADD PCFSELPLCY — 配置 AMF 对指定用户群选择 PCF 的差异化策略（按用户
+- [0-00055](task/UNC/20.15.2/0-00055.md) · ADD PCFSSCOPE — 配置 PCF 业务服务区（服务区标识→服务区名称映射），供 
+- [0-00056](task/UNC/20.15.2/0-00056.md) · ADD PCFSSCOPEBIND — 建立 PCF 业务服务区与用户 TAI 区域的绑定关系，供 
+- [0-00057](task/UNC/20.15.2/0-00057.md) · ADD PCRF — 增加 PCRF 基本信息（主机名/域名/VPN 实例/动态协
+- [0-00058](task/UNC/20.15.2/0-00058.md) · ADD PCRFBINDGRP — 将指定 PCRF 加入 PCRF 分组，并按组工作模式配置负
+- [0-00059](task/UNC/20.15.2/0-00059.md) · ADD PCRFGROUP — 增加 PCRF Group 并设置工作模式（主备/负荷分担）
+- [0-00060](task/UNC/20.15.2/0-00060.md) · ADD PCRFGRPBNDAPN — 将 PCRF 分组绑定到指定 APN，支持按 DEFAULT
+- [0-00061](task/UNC/20.15.2/0-00061.md) · ADD PDUSCACT — 为融合计费模板(CCT)配置 PDU 级异常返回码处理动作，
+- [0-00062](task/UNC/20.15.2/0-00062.md) · ADD PDUTRIGGER — 为融合计费模板(CCT)配置 PDU 会话级计费 Trigg
+- [0-00063](task/UNC/20.15.2/0-00063.md) · ADD PNFGPSI — 本地配置对端 NF 实例支持的 GPSI 号段信息，用于无 
+- [0-00064](task/UNC/20.15.2/0-00064.md) · ADD PNFSUPI — 本地配置对端 NF 实例支持的 SUPI 号段信息，用于无 
+- [0-00065](task/UNC/20.15.2/0-00065.md) · ADD QOSPROP — 配置 PCC 预定义规则的 QoS 属性集（QCI/ARP/
+- [0-00066](task/UNC/20.15.2/0-00066.md) · ADD QUOTAEXHAUSTACT — 为指定融合计费模板配置在线 RG 配额耗尽后的动作（如重定向
+- [0-00067](task/UNC/20.15.2/0-00067.md) · ADD RESULTCODECTRL — 配置 UNC 收到对端（Gx/N7/直连对端）指定结果码后在
+- [0-00068](task/UNC/20.15.2/0-00068.md) · ADD RGRCACT — 为指定融合计费模板配置 RG 级异常返回码（如 QUOTAM
+- [0-00069](task/UNC/20.15.2/0-00069.md) · ADD RGTRIGGER — 为指定融合计费模板配置 RG 级计费 Trigger（QoS
+- [0-00070](task/UNC/20.15.2/0-00070.md) · ADD ROAMCHGMODE — 按终端+接入类型 + 漫游属性维度配置计费接口选择方式（Ga
+- [0-00071](task/UNC/20.15.2/0-00071.md) · ADD RULE — 配置业务策略规则（Rule），声明 RULENAME + P
+- [0-00072](task/UNC/20.15.2/0-00072.md) · ADD RULEBINDDNAI — 为 RULERANGE=LOCAL 的预定义规则绑定边缘 U
+- [0-00073](task/UNC/20.15.2/0-00073.md) · ADD RULEBINDING — 将已配的 Rule 绑定到 UserProfile 上，使 
+- [0-00074](task/UNC/20.15.2/0-00074.md) · ADD SBIAPLE — 增加本端服务化接口实体（SBIAPLE），声明本端 NF 类
+- [0-00075](task/UNC/20.15.2/0-00075.md) · ADD SELCHFGBIMSISEG — 按 IMSI 号段绑定主备 CHF 组，使 SMF 基于用户
+- [0-00076](task/UNC/20.15.2/0-00076.md) · ADD SELCHFGBYIMSI — 拨测场景下，按"IMSI + 主备 CHF 组"二元组将指定
+- [0-00077](task/UNC/20.15.2/0-00077.md) · ADD SELECTCCTBYCC — 按"CC 类型 + CC 值（带掩码）"将融合计费模板（CC
+- [0-00078](task/UNC/20.15.2/0-00078.md) · ADD SELECTCHFGBYCC — 按"CC 值 + 掩码 + 优先级"将 Charge Cha
+- [0-00079](task/UNC/20.15.2/0-00079.md) · ADD SGWSEGGCHGMETH — 按"号段组 + 优先级 + 离线计费开关"为 SGW-C 设
+- [0-00080](task/UNC/20.15.2/0-00080.md) · ADD SPECIFICAPNVAL — 按"用户 APN + 各信令交互上报 APN"建立映射，控制
+- [0-00081](task/UNC/20.15.2/0-00081.md) · ADD SRROUTE — 为 IPsec/GRE 隧道引流、到 CG/OCS/AAA 
+- [0-00082](task/UNC/20.15.2/0-00082.md) · ADD SUBSCRIBERIDSEGGRP — 建立 IMSI/MSISDN/IMEISV 号段组（号段组名
+- [0-00083](task/UNC/20.15.2/0-00083.md) · ADD TARIFFGROUP — 按费率切换组定义费率切换点（组名 + 计费CC + 费率类型
+- [0-00084](task/UNC/20.15.2/0-00084.md) · ADD TNFBINDGRP — 把目标 NF 实例（如 CHF 实例）绑定到目标 NF 组（
+- [0-00085](task/UNC/20.15.2/0-00085.md) · ADD TNFGRP — 建立目标 NF 组（组索引 + NF 类型 + 组名），把同
+- [0-00086](task/UNC/20.15.2/0-00086.md) · ADD TNFINS — 增加目标 NF 实例（典型为 CHF），用于本地 NRF 配
+- [0-00087](task/UNC/20.15.2/0-00087.md) · ADD TNFINSIP — 为已注册的目标 NF 实例（CHF）配置可达 IP 地址与端
+- [0-00088](task/UNC/20.15.2/0-00088.md) · ADD TSTPCFBINDING — 在拨测场景将指定 APN+IMSI 的用户强制激活到指定 P
+- [0-00089](task/UNC/20.15.2/0-00089.md) · ADD UPBINDUPG — 将 UserProfile 绑定到 UserProfGrou
+- [0-00090](task/UNC/20.15.2/0-00090.md) · ADD UPFBINDGXUPFGRP — 将指定 UPF 实例加入 Gx UPF 组，用于 PCRF 
+- [0-00091](task/UNC/20.15.2/0-00091.md) · ADD UPFGBINDLOCG — 在 UPF 组与 Diameter 本端主机组绑定关系组内，
+- [0-00092](task/UNC/20.15.2/0-00092.md) · ADD UPFGLOCGBNDGRP — 创建一个 UPF 组与 Diameter 本端主机组的绑定关
+- [0-00093](task/UNC/20.15.2/0-00093.md) · ADD URRGROUP — 新增使用量上报规则组（URR Group），按上下行方向绑定
+- [0-00094](task/UNC/20.15.2/0-00094.md) · ADD USERPROFILE — 新增用户模板（User Profile），承载规则/计费属性
+- [0-00095](task/UNC/20.15.2/0-00095.md) · ADD USRPROBINDDNAI — 将 User Profile 绑定到指定边缘 UPF 对应的
+- [0-00096](task/UNC/20.15.2/0-00096.md) · ADD USRPROFGROUP — 配置用户模板组容器，作为 UserProfile 与 Pcc
+- [0-00097](task/UNC/20.15.2/0-00097.md) · ADD USRTAIRANGE — 配置用户 TAI 区域（MCC/MNC + TAC 范围），
+- [0-00098](task/UNC/20.15.2/0-00098.md) · ADD VPNINST — 创建 VPN 实例（业务接口管理层），作为 Diameter
+- [0-00099](task/UNC/20.15.2/0-00099.md) · ADD VPNINSTAF — 使能指定 L3VPN 实例下的 IPv4/IPv6 地址族，
+- [0-00100](task/UNC/20.15.2/0-00100.md) · ADD WEEKDAY — 配置计费星期表，为每周每天指定费率类型（工作日/周末），供费
+- [0-00101](task/UNC/20.15.2/0-00101.md) · DEA SMCTX — 去激活（或停止去活）指定签约用户/会话上下文，供拨测前清场、
+- [0-00102](task/UNC/20.15.2/0-00102.md) · DSP CGSTATUS — 查询所有 CG 或指定 CG 的工作状态（normal/ab
+- [0-00103](task/UNC/20.15.2/0-00103.md) · DSP CHGCDR — 查询执行 CRE CHGCDR 强制生成用户话单之后的结果信
+- [0-00104](task/UNC/20.15.2/0-00104.md) · DSP CHGGA — 查询当前进程的计费 Ga 接口参数状态（话单协议版本等），用
+- [0-00105](task/UNC/20.15.2/0-00105.md) · DSP CPPDPCHGINFO — 按用户标识（IMSI/MSISDN/IP）查询用户在内容计费
+- [0-00106](task/UNC/20.15.2/0-00106.md) · DSP PCCSESSINFO — 按用户标识（IMSI/MSISDN/IMEI）查询 PCC 
+- [0-00107](task/UNC/20.15.2/0-00107.md) · DSP PCRFGRPSTATUS — 按 PCRF 组名称查询指定 PCRF 组的状态，核对组内每
+- [0-00108](task/UNC/20.15.2/0-00108.md) · DSP PCRFSTATUS — 查询所有 PCRF 或指定 PCRF 的 Diameter 
+- [0-00109](task/UNC/20.15.2/0-00109.md) · DSP PDUSESSION — 按用户标识（IMSI/MSISDN/MEI/IP/PDU 会
+- [0-00110](task/UNC/20.15.2/0-00110.md) · DSP SMPDPNUM — 按查询范围与查询分类统计 SMF/PGW-C/SGW-C/G
+- [0-00111](task/UNC/20.15.2/0-00111.md) · EXP MML — 把当前网元配置数据导出为 MML 脚本文件（备份/移交/批量
+- [0-00112](task/UNC/20.15.2/0-00112.md) · MOD AMUEPLCYCTRL — 修改 AM 策略和 UE 策略控制参数，按用户范围/切片群组
+- [0-00113](task/UNC/20.15.2/0-00113.md) · MOD APNCHGMODE — 按 APN + 终端/接入类型修改计费接口选择方式（Ga/G
+- [0-00114](task/UNC/20.15.2/0-00114.md) · MOD CCT — 修改融合计费模板（CCT）的配额/阈值/终结方式等参数，按"
+- [0-00115](task/UNC/20.15.2/0-00115.md) · MOD CHARGECHAR — 修改对本地/漫游/拜访用户所采用的计费属性（CCNAME），
+- [0-00116](task/UNC/20.15.2/0-00116.md) · MOD CHARGEMETHOD — 基于用户计费属性（CC）切换在线/离线/融合计费方式，用于融
+- [0-00117](task/UNC/20.15.2/0-00117.md) · MOD CHGAPN — 修改基于 APN 的计费属性（CC），用于 SGSN 离线计
+- [0-00118](task/UNC/20.15.2/0-00118.md) · MOD CHGIMSICFG — 修改基于 IMSI 前缀的 SGSN 计费配置（S-CDR 
+- [0-00119](task/UNC/20.15.2/0-00119.md) · MOD CHGPLMNCFG — 修改基于 PLMN（MCC+MNC）的 SGSN 计费配置（
+- [0-00120](task/UNC/20.15.2/0-00120.md) · MOD NFPROFILE — 修改 NF 实例概述信息（容量、优先级、位置、负载、状态等）
+- [0-00121](task/UNC/20.15.2/0-00121.md) · MOD PCCPOLICYGRP — 修改已存在的 PCC 策略组，落实计费属性（URRGroup
+- [0-00122](task/UNC/20.15.2/0-00122.md) · MOD PCRF — 修改已存在 PCRF 的基本信息（对端协商开关、Featur
+- [0-00123](task/UNC/20.15.2/0-00123.md) · MOD PCRFBINDGRP — 修改指定 PCRF 与 PCRF 分组的绑定关系参数（主要为
+- [0-00124](task/UNC/20.15.2/0-00124.md) · MOD PDUSCACT — 修改融合计费模板（CCT）下 PDU 异常返回码处理动作，定
+- [0-00125](task/UNC/20.15.2/0-00125.md) · MOD PDUTRIGGER — 修改融合计费模板（CCT）下 PDU 会话级 Trigger
+- [0-00126](task/UNC/20.15.2/0-00126.md) · MOD RGTRIGGER — 修改 RG（Rating Group）级计费 trigger
+- [0-00127](task/UNC/20.15.2/0-00127.md) · MOD RULE — 修改已添加的业务规则（RULE）的策略信息与优先级，用于为用
+- [0-00128](task/UNC/20.15.2/0-00128.md) · MOD SELECTCHFGBYCC — 按 Charge Characteristic（CC）维度修
+- [0-00129](task/UNC/20.15.2/0-00129.md) · MOD TNFBINDGRP — 修改目标 NF 实例绑定目标 NF 组的配置（优先级/权重）
+- [0-00130](task/UNC/20.15.2/0-00130.md) · MOD TNFINS — 修改目标 NF 实例的配置（协议模式/域名/描述名），用于基
+- [0-00131](task/UNC/20.15.2/0-00131.md) · MOD URR — 修改使用量上报规则（URR）参数，用于融合计费流量调测中为用
+- [0-00132](task/UNC/20.15.2/0-00132.md) · MOD URRGROUP — 修改使用量上报规则组（URRGROUP），指定上下行发起使用
+- [0-00133](task/UNC/20.15.2/0-00133.md) · MOD VPNINSTAF — 修改 L3VPN 实例地址族参数（主要为路由标识 RD），用
+- [0-00134](task/UNC/20.15.2/0-00134.md) · RMV CHARGECHAR — 删除对本地用户/漫游用户/拜访用户所采用的计费属性（CC）条
+- [0-00135](task/UNC/20.15.2/0-00135.md) · RMV CHGAPN — 删除 APN 计费属性配置表中某条 APN 的配置，用于 S
+- [0-00136](task/UNC/20.15.2/0-00136.md) · RMV CHGDCHAR — 删除一条由"用户类型+MCC+MNC"定位的缺省计费属性参数
+- [0-00137](task/UNC/20.15.2/0-00137.md) · RMV CHGIMSICFG — 删除"IMSI前缀"计费配置表中匹配的记录（SGSN 离线计
+- [0-00138](task/UNC/20.15.2/0-00138.md) · RMV CHGPLMNCFG — 删除话单生成策略配置信息（SGSN 离线计费，PLMN 维度
+- [0-00139](task/UNC/20.15.2/0-00139.md) · RMV DIAMCONNECTION — 删除 Diameter 链路（CONNECTION）记录（P
+- [0-00140](task/UNC/20.15.2/0-00140.md) · RMV DIAMLOCINFO — 删除 Diameter 本端信息（HOSTNAME 标识的 
+- [0-00141](task/UNC/20.15.2/0-00141.md) · RMV LOGICINF — 删除指定逻辑接口（SGW-C/PGW-C/SMF 计费策略接
+- [0-00142](task/UNC/20.15.2/0-00142.md) · RMV PCRF — 删除指定 PCRF 基本信息（PGW-C/GGSN，高危，P
+- [0-00143](task/UNC/20.15.2/0-00143.md) · RMV RULE — 删除规则（PGW-C/SMF，高危，自动解除 UserPro
+- [0-00144](task/UNC/20.15.2/0-00144.md) · RMV RULEBINDING — 删除用户模板与规则的绑定关系（PGW-C/SMF，高危，规则
+- [0-00145](task/UNC/20.15.2/0-00145.md) · RMV TSTPCFBINDING — 删除拨测用户与 PCF 的绑定关系（SMF/PGW-C/GG
+- [0-00146](task/UNC/20.15.2/0-00146.md) · RST PCCTIMER — 手动复位 PCC 定时器，清除本地缓存的对端 PCRF 能力
+- [0-00147](task/UNC/20.15.2/0-00147.md) · SET AMFPEERSELFUNC — 控制 AMF 在不同场景（UDM 全故障保活、PCF/SMS
+- [0-00148](task/UNC/20.15.2/0-00148.md) · SET AMFPLCYFUNC — 设置 AMF 策略功能开关，覆盖 AM/UE 策略通知、RF
+- [0-00149](task/UNC/20.15.2/0-00149.md) · SET APNCHARGECTRL — 为 APN/DNN 实例绑定计费模板与配置计费方式（在线/离
+- [0-00150](task/UNC/20.15.2/0-00150.md) · SET APNIDLETIME — 配置指定 APN 的空闲/不活动上下文定时器开关与时长，回收
+- [0-00151](task/UNC/20.15.2/0-00151.md) · SET APNPCCFUNC — 按指定 APN/DNN 粒度使能或关闭动态 PCC 功能，按
+- [0-00152](task/UNC/20.15.2/0-00152.md) · SET APNREPORTATTR — 按指定 APN 配置上报给各交互网元（PCRF/PCF/CH
+- [0-00153](task/UNC/20.15.2/0-00153.md) · SET CDRSTORAGECTRL — 配置缓存话单文件的超期时间（天数 + 周数×7）；超期话单不
+- [0-00154](task/UNC/20.15.2/0-00154.md) · SET CDRSTRGSTATUS — 按指定 POD 锁定或解锁话单缓存目录（CHARGE1/CH
+- [0-00155](task/UNC/20.15.2/0-00155.md) · SET CDRTRANSFER — 配置 GTP' 话单发送控制参数（消息最大字节数、Echo/
+- [0-00156](task/UNC/20.15.2/0-00156.md) · SET CDRTRIGGER — 按离线计费模板（OFCTEMPLATE）配置各类话单产生开关
+- [0-00157](task/UNC/20.15.2/0-00157.md) · SET CHARGECTRL — 按用户归属属性（本地/拜访/漫游）使能在/离线/融合计费总开
+- [0-00158](task/UNC/20.15.2/0-00158.md) · SET CHFINIT — 配置融合计费模板（CCT）中用户激活相关参数：是否在 PDU
+- [0-00159](task/UNC/20.15.2/0-00159.md) · SET CHGCDR — 设置 SGSN 全局计费 CDR 参数（话单内容定制选项、缺
+- [0-00160](task/UNC/20.15.2/0-00160.md) · SET CHGCHAR — 按 SGSN 计费属性（CC）配置话单生成规则（M-CDR/
+- [0-00161](task/UNC/20.15.2/0-00161.md) · SET CHGGA — 配置 SGSN 计费 Ga 接口全局参数（话单协议版本、CD
+- [0-00162](task/UNC/20.15.2/0-00162.md) · SET CHGMODE — 全局配置"终端类型 × 接入类型"选择的计费接口（GaGy 
+- [0-00163](task/UNC/20.15.2/0-00163.md) · SET CHGPLMNCHAR — 全局配置指定 PLMN 类型（HPLMN/VPLMN）用户各
+- [0-00164](task/UNC/20.15.2/0-00164.md) · SET CHGWKDY — 按"星期 × 计费属性"组合配置费率类型（工作日/休息日），
+- [0-00165](task/UNC/20.15.2/0-00165.md) · SET CNVRGDCHGPARA — 配置融合计费全局参数（PGW-C/SMF），覆盖 CHF 响
+- [0-00166](task/UNC/20.15.2/0-00166.md) · SET CONCENPOINT — 设置 Gx/Gy/Ga/S6b 四类信令集中点（Diamet
+- [0-00167](task/UNC/20.15.2/0-00167.md) · SET CONTAINERTRIGGER — 配置离线计费容器（Container）产生开关，决定哪些计费
+- [0-00168](task/UNC/20.15.2/0-00168.md) · SET CTXSTARTRATING — 配置上下文激活时给 OCS/CHF 发送的初始消息（CCR-
+- [0-00169](task/UNC/20.15.2/0-00169.md) · SET DFTGLBPCRFGRP — 设置全局缺省 PCRF 组，为无法匹配 APN/用户级 PC
+- [0-00170](task/UNC/20.15.2/0-00170.md) · SET DFTIDLETIME — 设置全局默认空闲上下文定时器与不活动上下文定时器的开关和时长
+- [0-00171](task/UNC/20.15.2/0-00171.md) · SET FAILHANDLING — 设置融合计费模板（CCT）的故障处理动作——当 SMF 与 
+- [0-00172](task/UNC/20.15.2/0-00172.md) · SET FHBYPASS — 设置失败旁路处理——当 PCRF/OCS/Radius 链路
+- [0-00173](task/UNC/20.15.2/0-00173.md) · SET GLBCDRFLDTEMP — 全局绑定话单字段模板——为 G-CDR / PGW-CDR 
+- [0-00174](task/UNC/20.15.2/0-00174.md) · SET GLBCGGROUP — 设置全局 CG 组——离线计费模板下未绑定/号段未匹配到 C
+- [0-00175](task/UNC/20.15.2/0-00175.md) · SET GLBCHARGECHAR — 设置全局计费属性（CC）——按本地/漫游/拜访三类用户配置计
+- [0-00176](task/UNC/20.15.2/0-00176.md) · SET GLBDFTCHFGROUP — 配置系统缺省（全局默认）CHF 组的主用与备用 CHF 组名
+- [0-00177](task/UNC/20.15.2/0-00177.md) · SET GLBTARIFFGROUP — 绑定全局费率切换组名，作为 user-profile/APN
+- [0-00178](task/UNC/20.15.2/0-00178.md) · SET GLBURRGROUP — 为 PDP 用户设置全局使用量上报规则组（上下行发起使用的 
+- [0-00179](task/UNC/20.15.2/0-00179.md) · SET HTTPCONF — 设置 HTTP 属性（信令路由/日志级别/链路探测与老化/超
+- [0-00180](task/UNC/20.15.2/0-00180.md) · SET LICENSESWITCH — 设置 License 项的配置开关（LICITEM + SW
+- [0-00181](task/UNC/20.15.2/0-00181.md) · SET LTEMRATVALUE — 配置 LTE-M 终端接入时 UNC 向 OCS/CHF/C
+- [0-00182](task/UNC/20.15.2/0-00182.md) · SET MASTERPCRF — 修改 PCRF 组内的缺省主用 PCRF 主机名（仅主备模式
+- [0-00183](task/UNC/20.15.2/0-00183.md) · SET N40APIVER — 配置 N40 接口协议版本（APIVER）与需启用的增强功能
+- [0-00184](task/UNC/20.15.2/0-00184.md) · SET N40MSGSTG — 开启融合计费消息缓存功能并配置回放间隔、回放速率等参数，保障
+- [0-00185](task/UNC/20.15.2/0-00185.md) · SET N40QUOTACTRL — 配置 N40 接口配额控制的全局参数（零配额动作、阻塞时间、
+- [0-00186](task/UNC/20.15.2/0-00186.md) · SET N4CHGMSGCTRL — 配置 N4 接口计费消息相关控制参数（消息缓存池扩展开关 +
+- [0-00187](task/UNC/20.15.2/0-00187.md) · SET N7RCVATTRCTRL — 设置 SMF 对接收到的 N7 接口消息中部分信元（Pack
+- [0-00188](task/UNC/20.15.2/0-00188.md) · SET N7SNDATTRCTRL — 设置 N7 接口发送消息中携带的 2G/3G（GERAN/U
+- [0-00189](task/UNC/20.15.2/0-00189.md) · SET NBIOTRATVALUE — 设置 NB-IoT 终端接入时 UNC 向周边网元（OCS/
+- [0-00190](task/UNC/20.15.2/0-00190.md) · SET OFCCDRPARA — 配置离线计费话单参数（gsn-node-id 前缀/SP 合
+- [0-00191](task/UNC/20.15.2/0-00191.md) · SET OFCTHRESHOLD — 配置离线计费模板的话单生成阈值（时长/流量/计费条件改变次数
+- [0-00192](task/UNC/20.15.2/0-00192.md) · SET PCCFAILACTION — 配置 PCC（Gx/N7）故障处理动作——PCRF/PCF 
+- [0-00193](task/UNC/20.15.2/0-00193.md) · SET PCCFUNC — 设置全局动态 PCC 功能开关（本地/漫游/拜访用户）及 P
+- [0-00194](task/UNC/20.15.2/0-00194.md) · SET PCCMSGATTR — 配置 Gx 接口 CCR-I/CCR-U/CCR-T/RAA
+- [0-00195](task/UNC/20.15.2/0-00195.md) · SET PCCPCRFMSGATTR — 配置 UNC 是否支持由 DRA 或 PCRF 触发的 PC
+- [0-00196](task/UNC/20.15.2/0-00196.md) · SET PCCTIMER — 配置 PCC 信令控制相关定时器（重传、回滚保持、迟滞、协商
+- [0-00197](task/UNC/20.15.2/0-00197.md) · SET POLICYMODE — 配置全局策略接口选择方式（Gx / Npcf），决定 PCC
+- [0-00198](task/UNC/20.15.2/0-00198.md) · SET RGRESCTRL — 配置在线/离线计费 RG（Rating Group）老化功能
+- [0-00199](task/UNC/20.15.2/0-00199.md) · SET SGWAPNCHGMETH — 按 APN 控制 SGW-C 下用户是否产生 S-GW 话单
+- [0-00200](task/UNC/20.15.2/0-00200.md) · SET SGWCHARGECFG — 配置 SGW-C 离线计费全局开关（本地/漫游/拜访用户离线
+- [0-00201](task/UNC/20.15.2/0-00201.md) · SET SGWCHGMETH — 基于计费属性粒度配置 SGW-C 离线计费方式，为指定 CH
+- [0-00202](task/UNC/20.15.2/0-00202.md) · SET SMCOMMFUNC — 打开通用会话管理扩展功能开关（如查询 PCRF 地址、手机后
+- [0-00203](task/UNC/20.15.2/0-00203.md) · SET SMFSOFTPARA — 通过指定软参位（BIT/BYTE/DWORD/String 
+- [0-00204](task/UNC/20.15.2/0-00204.md) · SET STGALARMCTRL — 配置融合计费话单缓存告警（ALM-81025）的上报门限和监
+- [0-00205](task/UNC/20.15.2/0-00205.md) · SET STGTRIGGER — 配置融合计费消息缓存期间生成计费消息的 trigger（时间
+- [0-00206](task/UNC/20.15.2/0-00206.md) · SET URRGRPBINDING — 为 UserProfile 绑定缺省 URR 组（DFTUR
+- [0-00207](task/UNC/20.15.2/0-00207.md) · SET USRPROFCHARGE — 配置 User Profile 实例的计费方式（在线/离线/
+- [0-00208](task/UNC/20.15.2/0-00208.md) · SET ZEROCHGSKIPSW — 设置零流量计费事件忽略开关——对零流量场景下的各类伴随事件（
+- [0-00209](task/UNC/20.15.2/0-00209.md) · TST CHGCDR — 模拟生成 SGSN 话单（MCDR）用于新建局调测——验证 

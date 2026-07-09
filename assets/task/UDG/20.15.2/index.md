@@ -1,6 +1,24 @@
 # index · task/UDG/20.15.2
 
-> 局部 index（命令级别 atom task wiki，187 篇）。每篇讲配置生成实例化时该命令**怎么配**（区别于命令 wiki 的静态文档）。顶层导航见 ../../../index.md
+> 局部 index（命令级 atom(187+6) + compound(8) + feature(1) task wiki）。atom 每篇讲配置生成实例化时该命令**怎么配**（区别于命令 wiki 的静态文档）；feature/compound 是 GWFD-110311 的特性级/步骤级 task。顶层导航见 ../../../index.md
+
+## feature（2-）· 特性级 task
+- [2-00001](task/UDG/20.15.2/2-00001.md) · 基于业务感知的带宽控制（GWFD-110311）— BWM 三层层次化带宽控制，9 场景由 DP 驱动
+
+## compound（1-）· 步骤级 task（★复用库★）
+
+> **建 feature 前先查此段**：候选步骤命令集与已有 compound 重合 ≥0.75 且相位同义 → 引用不新建。准则见 [特性步骤级构建SOP](task/特性步骤级构建SOP.md) §3。
+
+- [1-00001](task/UDG/20.15.2/1-00001.md) · 前置准备（License+接入域）— cmd:LICENSESWITCH,APN | 用于:2-00001 | 层级:全通用(License)·域通用(APN)
+- [1-00002](task/UDG/20.15.2/1-00002.md) · BWM 业务与控制器 — cmd:BWMSERVICE,BWMCONTROLLER | 用于:2-00001 | 层级:域通用(BWM)
+- [1-00003](task/UDG/20.15.2/1-00003.md) · BWM 用户组、规则与绑定 — cmd:BWMUSERGROUP,BWMRULE,APNBINDBWMUSRG,BANDWIDTHMNG,REFRESHSRV | 用于:2-00001 | 层级:域通用(BWM)
+- [1-00004](task/UDG/20.15.2/1-00004.md) · PCC 预定义规则链 — cmd:CATEGORYPROP,L7FILTER,FLOWFILTER,PROTBINDFLOWF,RULE | 用于:2-00001 | 层级:域通用(过滤链跨 PCC/计费/访问限制)
+- [1-00005](task/UDG/20.15.2/1-00005.md) · 切片绑定 — cmd:SNSSAI,SNSSAIUPINTF,SNSSAIBWMUSRG | 用于:2-00001 | 层级:特性专属
+- [1-00006](task/UDG/20.15.2/1-00006.md) · 时间段控制 — cmd:TIMERANGE,PERITIMERANGE | 用于:2-00001 | 层级:特性专属
+- [1-00007](task/UDG/20.15.2/1-00007.md) · 分级带宽管理 — cmd:BCSRVLEVELPLY | 用于:2-00001 | 层级:特性专属
+- [1-00008](task/UDG/20.15.2/1-00008.md) · 三级整机控制 — cmd:BWMRULEGLOBAL | 用于:2-00001 | 层级:特性专属
+
+## atom（0-）· 命令级 task
 
 - [0-00001](task/UDG/20.15.2/0-00001.md) · 配置URR（ADD URR）— 配置一条使用量上报规则(URR)，确定费率与计费方式
 - [0-00002](task/UDG/20.15.2/0-00002.md) · 配置URR组（ADD URRGROUP）— 配置URRGROUP，上行/下行分别绑定在线与离线URR
@@ -189,3 +207,9 @@
 - [0-00281](task/UDG/20.15.2/0-00281.md) · 配置SA指纹识别（ADD FINGERIDENT）— 开启HTTPS业务行为识别功能(ADD FINGERIDENT)，对HT
 - [0-00282](task/UDG/20.15.2/0-00282.md) · 设置IMS Bypass功能参数（SET IMSBYPASS）— 开启PCF双故障Bypass功能(SET IMSBYPASS)，配置Qo
 - [0-00283](task/UDG/20.15.2/0-00283.md) · 设置RTSDNN参数（SET RTSDNNPARA）— 配置通用DNN漫游分流参数(SET RTSDNNPARA)，开启公网/专
+- [0-00284](task/UDG/20.15.2/0-00284.md) · 配置切片标识（ADD SNSSAI）
+- [0-00285](task/UDG/20.15.2/0-00285.md) · 配置切片接口绑定（ADD SNSSAIUPINTF）
+- [0-00286](task/UDG/20.15.2/0-00286.md) · 配置切片用户组绑定（ADD SNSSAIBWMUSRG）
+- [0-00287](task/UDG/20.15.2/0-00287.md) · 配置时间段容器（ADD TIMERANGE）
+- [0-00288](task/UDG/20.15.2/0-00288.md) · 配置周期时间段（ADD PERITIMERANGE）
+- [0-00289](task/UDG/20.15.2/0-00289.md) · 配置整机级带宽规则（ADD BWMRULEGLOBAL）

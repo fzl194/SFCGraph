@@ -44,7 +44,8 @@
 - 产出：task md 187（atom，平均 50 行/篇），rule/DP 内嵌（不拆三对象，§5.3 锚点）。局部 index 按编号。
 - 构建：Agent 驱动，每批 5 atom × 2 并行，19 轮。
 - 回填：`assets/scripts/lint_and_backfill.py` 把命令 md 的 `[[Task]]` 占位 + task md 误占位的已建对象 回填为 markdown 链接（401 处/265 文件）。
-- 范围：仅 UDG atom。compound(4)/feature(11) 级 task + UNC task 后续；task↔task 双向预留。
+- 范围：UDG atom 187 + UNC atom 209 均已建。compound(4)/feature(11) 级 task 后续；task↔task 双向预留。
+- **UNC 补充**（pre-build 证据包驱动）：UNC atom 资产残缺（只 27），用 `build_command_evidence.py --cmds` 的 pre-build 证据包（209，①段空，只有②命令真相+③各特性配置范式）驱动 Agent 建 209 篇。决策点/rule **现场归纳、不编号**内嵌（UNC 无①atom/rule/dp yaml，DP/Rule 与 task 绑定无独立 ID）。编号：0-00001~0-00027 沿用 UNC atom yaml，0-00028~0-00209 接续（`renumber_unc_tasks.py` 建映射 + 重命名 + 改引用）。
 - 沉淀方案：`docs/superpowers/specs/2026-07-08-configtask-layer-compile-design.md`（v2 Agent 构建）
 
 ## 跑通的模式（业务层/任务层 LLM 凝练时复用引用与 index 约定）
@@ -53,7 +54,7 @@
 ## 下一步候选（待用户定方向）
 1. **服务化接口（P3，推荐）**：platform-next（FastAPI 已有业务图谱接口雏形）扩展"知识包"接口，输入 `{域}/{场景}`，输出子场景裁剪子图全量 md 包。验证"服务化取包 → SKILL 消费"端到端。此时命令/特性/License 三层已就绪，可端到端跑通取包。
 2. **业务层 Compile（P4）**：LLM 读产品文档按 Schema 凝练 BD/NS/CS typed md + 人审（现有 business-graph md / BusinessGraph yaml 仅作线索）。核心范式（Agent 写、人审）首次验证，慢、要业务专家卷入。同时定业务层 wiki ID → 文件路径 resolver（两段式 ID 没含 domain/scenario 段，需 slug 索引或链接补 domain）。
-3. **compound/feature 级 task wiki + UNC task**：命令级 atom（187）已完成；步骤级 compound(4)/特性级 feature(11) task wiki 后续建（建时同步 task↔task 双向编排、回填命令级 task 的"参与编排于"节）；UNC task 资产残缺（27 孤立 atom 无树）待全量构建后再做。
+3. **compound/feature 级 task wiki**：命令级 atom 已完成（UDG 187 + UNC 209）；步骤级 compound(4)/特性级 feature(11) task wiki 后续建（建时同步 task↔task 双向编排、回填命令级 task 的"参与编排于"节）。
 4. **Lint（P8 提前做一版）**：静态体检——查断链（被引无页）、缺反向链接、占位未回填、Schema 不合规。命令+特性层已够多对象，Lint 有素材。
 
 ## 已知小缺口（留给 Lint 阶段）
