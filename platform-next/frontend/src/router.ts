@@ -74,6 +74,15 @@ const router = createRouter({
       name: 'business-scenario',
       component: () => import('./business_graph/BusinessScenario.vue'),
     },
+    {
+      path: '/graph-overview',
+      component: () => import('./wiki/WikiIndex.vue'),
+    },
+    {
+      path: '/graph-overview/a/:path(.*)',
+      name: 'graph-overview-asset',
+      component: () => import('./wiki/WikiIndex.vue'),
+    },
   ],
 })
 
