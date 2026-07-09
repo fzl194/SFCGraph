@@ -17,12 +17,13 @@ from typing import Optional
 # Shared object ID pattern - requires hyphen after letter prefixes to avoid
 # false positives like "NSESWITCH" matching "NS" prefix.
 # Matches: BD-CH-01, NS-CH-01, CS-CH-01, DP-CH-01, BR-CH-01, SO-CH-01,
-#           GWFD-010171, WSFD-011201, T-001, CMD-UDG-001, EV-KB-001, LKV3G5SABS01
+#           GWFD-010171, WSFD-011201, ND-FEAT-01, T-001, CMD-UDG-001, EV-KB-001, LKV3G5SABS01
 OBJECT_ID_PATTERN = (
     r'(?:'
     r'(?:BD|NS|CS|DP|BR|SO|EV|CMD|FR|TR|CR|OBJ)-[\w-]+'  # 前缀+连字符: BD-CH-01, CMD-UDG-001, FR-AC-01, OBJ-AC-HEADEN
     r'|GWFD-\d+'                            # GWFD-010171
     r'|WSFD-\d+'                            # WSFD-011201
+    r'|ND-FEAT-[\w-]+'                      # 网元对接目录原生特性
     r'|T-[\w-]+'                            # T-001, T-101, T-AC-101（访问限制独有task）
     r'|LKV[\w]+'                            # LKV3G5SABS01
     r')'
@@ -113,7 +114,7 @@ def _detect_object_type(obj_id: str, layer: str) -> str:
         return 'BusinessRule'
     if obj_id.startswith('SO-'):
         return 'SemanticObject'
-    if obj_id.startswith('GWFD-') or obj_id.startswith('WSFD-'):
+    if obj_id.startswith('GWFD-') or obj_id.startswith('WSFD-') or obj_id.startswith('ND-FEAT-'):
         return 'Feature'
     if re.match(r'^T-', obj_id):
         return 'ConfigTask'
@@ -182,7 +183,7 @@ def parse_kv_objects(md_text: str, layer: str) -> list[GraphObject]:
 
         # Try ID-in-heading pattern first
         id_match = re.match(
-            r'^(?:\d+\.\d+\s+)?((?:BD|NS|CS|DP|BR|SO|EV|CMD|FR|TR|CR|OBJ|LKV)[-\w]*|GWFD-\d+|WSFD-\d+|T-[\w-]+)\s+(.+)$',
+            r'^(?:\d+\.\d+\s+)?((?:BD|NS|CS|DP|BR|SO|EV|CMD|FR|TR|CR|OBJ|LKV)[-\w]*|GWFD-\d+|WSFD-\d+|ND-FEAT-[\w-]+|T-[\w-]+)\s+(.+)$',
             heading_text
         )
 
@@ -266,7 +267,7 @@ _TYPE_ID_PREFIXES = {
     'DecisionPoint': ('DP-',),
     'BusinessRule': ('BR-',),
     'SemanticObject': ('SO-',),
-    'Feature': ('GWFD-', 'WSFD-'),
+    'Feature': ('GWFD-', 'WSFD-', 'ND-FEAT-'),
     'License': ('LKV',),
     'FeatureRule': ('FR-',),
     'ConfigTask': ('T-',),
@@ -855,7 +856,7 @@ def build_command_syntax_map(objects: dict) -> dict[str, str]:
 
 # Match command syntax tokens like "ADD URR", "SET LICENSESWITCH", "LOD SIGNATUREDB"
 _COMMAND_SYNTAX_RE = re.compile(
-    r'\b(SET|ADD|MOD|DEL|RMV|LST|DSP|LOD|SAVE|RESET|ACT|DEACT|SWAP)\s+([A-Z][A-Z0-9_]{1,30})\b'
+    r'\b(SET|ADD|MOD|DEL|RMV|LST|DSP|LOD|SAVE|RESET|ACT|DEACT|SWAP|PING|NGPING|SRVPING|SRVTRACERT|EXP)\s+([A-Z][A-Z0-9_]{1,30})\b'
 )
 
 
@@ -946,7 +947,7 @@ def parse_invokes_from_mapping(
 
 
 # Match Feature IDs in arbitrary text (e.g., "GWFD-020301（内容计费）")
-_FEATURE_ID_RE = re.compile(r'\b((?:GWFD|WSFD)-\d{6})\b')
+_FEATURE_ID_RE = re.compile(r'\b((?:GWFD|WSFD)-\d{6}|ND-FEAT-[\w-]+)\b')
 
 
 def parse_rule_to_owner_edges(
