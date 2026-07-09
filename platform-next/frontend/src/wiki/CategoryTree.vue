@@ -49,8 +49,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import { wikiApi, type Category, type ListItem } from './wikiApi'
+import { ref, watch, nextTick } from 'vue'
+import { wikiApi, type Category, type ListItem, type LocateResp } from './wikiApi'
 import { GROUP_FIELD, typeColor, typeLabel } from './wikiTokens'
 
 const props = defineProps<{ currentPath: string | null }>()
@@ -124,13 +124,47 @@ function onNodeClick(data: any) {
   if (data.type === 'object') emit('select', data.raw.path)
 }
 
-// 同步：当前对象若已在展开的分支内 → 高亮（不在则不追，靠面包屑）
-watch(() => props.currentPath, (p) => {
+// 同步：跳转到新对象时，左树逐层展开并高亮（evidence 等不可分类对象跳过）
+watch(() => props.currentPath, async (p) => {
   if (!p || !treeRef.value) return
-  const key = `o:${p}`
-  const node = treeRef.value.getNode?.(key)
-  if (node) treeRef.value.setCurrentKey?.(key)
+  if (searchMode.value) return                       // 搜索态不打断
+  if (p.startsWith('evidence/')) return              // 证据不在树内
+  const objKey = `o:${p}`
+  // 已在树里加载过 → 直接高亮
+  if (treeRef.value.getNode?.(objKey)) { treeRef.value.setCurrentKey?.(objKey); return }
+  // 否则向 /locate 取位置，逐层展开祖先再高亮
+  let loc: LocateResp | null = null
+  try { loc = await wikiApi.locate(p) } catch { return }
+  if (!loc || !loc.group_value) return
+  const ancestors = [
+    `t:${loc.type}`,
+    `n:${loc.type}:${loc.nf}`,
+    `v:${loc.type}:${loc.nf}:${loc.version}`,
+    `g:${loc.type}:${loc.nf}:${loc.version}:${loc.group_value}`,
+  ]
+  for (const k of ancestors) {
+    const n = treeRef.value.getNode?.(k)
+    if (!n) return
+    if (!n.expanded) {
+      if (typeof n.expand === 'function') n.expand()
+      else n.expanded = true
+    }
+    if (!n.loaded) await waitLoaded(n)
+  }
+  await nextTick()
+  const obj = treeRef.value.getNode?.(objKey)
+  if (obj) treeRef.value.setCurrentKey?.(objKey)
 })
+
+function waitLoaded(node: any, timeout = 4000): Promise<void> {
+  return new Promise((resolve) => {
+    if (node.loaded) return resolve()
+    const t0 = Date.now()
+    const iv = setInterval(() => {
+      if (node.loaded || Date.now() - t0 > timeout) { clearInterval(iv); resolve() }
+    }, 30)
+  })
+}
 
 function refresh() { treeVersion.value++ }   // :key 变 → el-tree 重建 → 重新懒载 categories
 function runSearch() {

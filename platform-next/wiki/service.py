@@ -155,6 +155,17 @@ class WikiService:
                     break
         return out
 
+    def locate(self, path: str) -> dict | None:
+        """对象在左树里的位置（type/nf/version/分组桶），供前端逐层展开高亮。
+        非"可分类"对象（evidence/schema/skill/无 nf·version）返回 None。"""
+        n = self.index.nodes.get(path.replace("\\", "/"))
+        if not n or not n.type or not n.nf or not n.version:
+            return None
+        gf = _GROUP_FIELD.get(n.type)
+        gv = dict(n.group).get(gf) if gf else None
+        return {"path": n.path, "type": n.type, "nf": n.nf, "version": n.version,
+                "group_field": gf, "group_value": gv}
+
 
 # 单例（router 用）
 _SERVICE: WikiService | None = None

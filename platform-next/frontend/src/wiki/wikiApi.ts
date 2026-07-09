@@ -23,6 +23,10 @@ export interface NbNode {
 export interface NbEdge { from: string; to: string; relation_type: string; resolved: boolean }
 export interface Neighborhood { center: NbNode | null; nodes: NbNode[]; edges: NbEdge[] }
 export interface MdResp { path: string; content: string; meta: { type?: string; name?: string; title?: string } }
+export interface LocateResp {
+  path: string; type: string; nf: string; version: string
+  group_field: string | null; group_value: string | null
+}
 
 export const wikiApi = {
   categories: () => fetchJson<Category[]>(`${BASE}/categories`),
@@ -40,4 +44,5 @@ export const wikiApi = {
     fetchJson<Neighborhood>(`${BASE}/neighborhood?path=${encodeURIComponent(path)}`),
   md: (path: string) => fetchJson<MdResp>(`${BASE}/md?path=${encodeURIComponent(path)}`),
   search: (q: string) => fetchJson<ListItem[]>(`${BASE}/search?q=${encodeURIComponent(q)}`),
+  locate: (path: string) => fetchJson<LocateResp | null>(`${BASE}/locate?path=${encodeURIComponent(path)}`),
 }

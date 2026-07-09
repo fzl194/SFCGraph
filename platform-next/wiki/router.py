@@ -44,3 +44,10 @@ def md(path: str):
 @router.get("/search")
 def search(q: str, limit: int = Query(30, ge=1, le=100)):
     return get_service().search(q, limit)
+
+
+@router.get("/locate")
+def locate(path: str):
+    """对象在左树里的位置（type/nf/version/分组桶），前端据此逐层展开高亮。
+    不可分类对象（evidence 等）返回 null。"""
+    return get_service().locate(path)
