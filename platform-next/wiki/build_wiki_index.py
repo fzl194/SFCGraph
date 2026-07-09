@@ -7,14 +7,11 @@
 from __future__ import annotations
 import json
 import sys
-import posixpath
 from collections import defaultdict
 from pathlib import Path
 
-import yaml
-
 from wiki.models import Edge, Index, Node
-from wiki.parser import extract_links, object_type_of, parse_front_matter, split_front_matter
+from wiki.parser import extract_links, parse_front_matter, split_front_matter
 
 # type -> 取分组字段的函数（返回 ((field, value), ...) tuple）
 _GROUP_FIELDS = {
@@ -54,12 +51,14 @@ def build_index(assets_root: Path) -> Index:
     id_to_path: dict[str, str] = {}
     out_edges: dict[str, list[Edge]] = defaultdict(list)
     reverse: dict[str, list[str]] = defaultdict(list)
+    meta_cache: dict[str, dict] = {}  # rel -> parsed front-matter（pass2 复用，避免重复读文件）
 
     for md_path in sorted(assets_root.rglob("*.md")):
         rel = md_path.relative_to(assets_root).as_posix()
         text = md_path.read_text(encoding="utf-8")
         fm_text, body = split_front_matter(text)
         meta = parse_front_matter(fm_text)
+        meta_cache[rel] = meta
         ntype = str(meta.get("type", _infer_type_from_path(rel)))
         group_fn = _GROUP_FIELDS.get(ntype)
         group = group_fn(meta) if group_fn else ()
@@ -90,18 +89,16 @@ def build_index(assets_root: Path) -> Index:
             if lk.resolved:
                 reverse[lk.dst].append(rel)
 
-    # pass2: front-matter 派生边（经 id_to_path 解析）
+    # pass2: front-matter 派生边（经 id_to_path 解析），复用 pass1 的 meta 缓存
     for rel, node in nodes.items():
+        meta = meta_cache.get(rel, {})
         meta_path_pairs: list[tuple[str, str]] = []  # (ref_value, relation_type)
         if node.type == "Task":
-            # 重新读 meta 取 ref（轻量：node 未存 raw ref，这里从 group 重建亦可；改用重新解析）
-            fm_text, _ = split_front_matter((assets_root / rel).read_text(encoding="utf-8"))
-            ref = parse_front_matter(fm_text).get("ref")
+            ref = meta.get("ref")
             if ref:
                 meta_path_pairs.append((ref, "ref_command"))
         if node.type == "Feature":
-            fm_text, _ = split_front_matter((assets_root / rel).read_text(encoding="utf-8"))
-            parent = parse_front_matter(fm_text).get("parent_feature_code")
+            parent = meta.get("parent_feature_code")
             if parent:
                 # parent_feature_code 不是完整 id，拼成 Feature id 查 id_to_path
                 pid = f"{node.nf}@{node.version}@Feature@{parent}"

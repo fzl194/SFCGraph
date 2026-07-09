@@ -50,6 +50,14 @@ def test_build_index_evidence_node(sample_assets):
     assert len(ev) == 1
 
 
+def test_build_index_feature_parent_edge(sample_assets):
+    idx = build_index(sample_assets)
+    child = "feature/UDG/20.15.2/GWFD-020351.md"
+    parent = "feature/UDG/20.15.2/GWFD-020350.md"
+    rels = {(e.dst, e.relation_type, e.resolved) for e in idx.out_edges.get(child, ())}
+    assert (parent, "parent", True) in rels
+
+
 def test_serialize_roundtrip(sample_assets, tmp_path):
     idx = build_index(sample_assets)
     out = tmp_path / "idx.json"

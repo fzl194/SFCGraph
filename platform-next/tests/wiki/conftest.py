@@ -62,6 +62,33 @@ def sample_assets(tmp_path: Path) -> Path:
         - [ADD URR](command/UDG/20.15.2/ADD-URR.md)
     """), encoding="utf-8")
 
+    (root / "feature/UDG/20.15.2/GWFD-020350.md").write_text(textwrap.dedent("""\
+        ---
+        id: UDG@20.15.2@Feature@GWFD-020350
+        type: Feature
+        name: 计费基础特性
+        nf: UDG
+        version: 20.15.2
+        feature_category: 计费
+        status: active
+        ---
+        # 计费基础特性
+    """), encoding="utf-8")
+
+    (root / "feature/UDG/20.15.2/GWFD-020351.md").write_text(textwrap.dedent("""\
+        ---
+        id: UDG@20.15.2@Feature@GWFD-020351
+        type: Feature
+        name: 在线计费
+        nf: UDG
+        version: 20.15.2
+        feature_category: 计费
+        parent_feature_code: GWFD-020350
+        status: active
+        ---
+        # 在线计费
+    """), encoding="utf-8")
+
     (root / "task/UDG/20.15.2/0-00001.md").write_text(textwrap.dedent("""\
         ---
         id: UDG@20.15.2@Task@0-00001

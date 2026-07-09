@@ -11,14 +11,13 @@ from dataclasses import dataclass
 
 import yaml
 
-from wiki.models import Edge
-
 _FM_RE = re.compile(r"^---\s*\n(.*?\n)---\s*\n?(.*)$", re.S)
 _MD_LINK_RE = re.compile(r'(?<!\!)\[([^\]]+)\]\(([^)\s]+?)(?:\s+"[^"]*")?\)')
 _PLACEHOLDER_RE = re.compile(r"\[\[([^\]]+)\]\]")
 _IMAGE_RE = re.compile(r"!\[([^\]]*)\]\([^)]*\)")
 
 # 小节标题关键词 -> 关系类型（小写包含匹配）
+# 顺序敏感：小写包含首次匹配命中（更具体的关键词放前面，如"关联命令"在"命令"前）
 _HEADING_RULES: list[tuple[str, str]] = [
     ("操作的配置对象", "operates_on"),
     ("操作本对象的命令", "operated_by"),

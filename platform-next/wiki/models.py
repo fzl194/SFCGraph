@@ -1,5 +1,5 @@
 """wiki 索引数据模型（不可变）。"""
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
