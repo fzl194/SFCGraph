@@ -108,15 +108,19 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
     { nodes: new DataSet(visNodes), edges: new DataSet(visEdges) },
     {
       nodes: { borderWidth: 1, borderWidthSelected: 2 },
-      layout: { improvedLayout: true },
+      layout: { improvedLayout: nodes.length <= 80 },
       physics: {
         enabled: true,
         barnesHut: { gravitationalConstant: -3000, centralGravity: 0.3, springLength: 80, springConstant: 0.04, damping: 0.4 },
-        stabilization: { iterations: 120, fit: true },
+        stabilization: { iterations: 100, fit: true, updateInterval: 50 },
       },
       interaction: { dragNodes: true, dragView: true, zoomView: true, hover: true, tooltipDelay: 120 },
     },
   )
+  // 物理稳定后关掉，避免持续模拟卡顿（拖拽/缩放更顺）
+  network.once('stabilizationIterationsDone', () => {
+    network?.setOptions({ physics: { enabled: false } })
+  })
   network.on('click', (params: any) => {
     const nodeId = params.nodes?.[0]
     if (nodeId == null) return

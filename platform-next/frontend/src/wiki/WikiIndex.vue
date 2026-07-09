@@ -8,9 +8,10 @@
         <span v-if="i < history.length - 1" class="wiki-crumb-sep">›</span>
       </template>
     </header>
-    <div class="wiki-shell">
+    <div class="wiki-shell" :style="{ gridTemplateColumns: `300px minmax(360px, 1fr) 5px ${rightW}px` }">
       <aside class="wiki-pane wiki-left"><CategoryTree ref="categoryTreeRef" :current-path="currentPath" @select="select" /></aside>
       <section class="wiki-pane wiki-center"><MdPane :path="currentPath" @navigate="select" /></section>
+      <div class="wiki-splitter" title="拖拽调整宽度" @mousedown="startDrag"></div>
       <aside class="wiki-pane wiki-right"><NeighborGraph :center-path="currentPath" @navigate="select" /></aside>
     </div>
   </div>
@@ -34,6 +35,30 @@ const currentPath = computed<string | null>(() => {
 // 会话跳转历史（与会话面包屑绑定；浏览器前进/后退由 URL 驱动，与此解耦）
 const history = ref<string[]>([])
 const categoryTreeRef = ref<{ refresh: () => void } | null>(null)
+
+// 中区↔右栏可拖拽分隔：右栏宽度(px)，中区吃剩余 → 中区默认更宽
+const rightW = ref(460)
+function startDrag(e: MouseEvent) {
+  e.preventDefault()
+  const shell = (e.currentTarget as HTMLElement).parentElement as HTMLElement
+  const rect = shell.getBoundingClientRect()
+  const body = document.body
+  body.style.cursor = 'col-resize'
+  body.style.userSelect = 'none'
+  const onMove = (ev: MouseEvent) => {
+    const min = 320
+    const max = rect.width - 300 - 360 - 5   // 左 300 + 中最小 360 + 缝 5
+    rightW.value = Math.min(Math.max(rect.right - ev.clientX, min), max)
+  }
+  const onUp = () => {
+    document.removeEventListener('mousemove', onMove)
+    document.removeEventListener('mouseup', onUp)
+    body.style.cursor = ''
+    body.style.userSelect = ''
+  }
+  document.addEventListener('mousemove', onMove)
+  document.addEventListener('mouseup', onUp)
+}
 
 function labelOf(p: string): string {
   return decodeURIComponent(p).split('/').pop()?.replace(/\.md$/, '') || p
@@ -105,15 +130,27 @@ watch(() => route.fullPath, (fp) => {
 .wiki-crumb-item.active { color: var(--accent); font-weight: 600; cursor: default; }
 .wiki-crumb-sep { color: var(--text-tertiary); margin: 0 1px; }
 
-/* 3-pane shell */
+/* 3-pane shell（grid-template-columns 由 inline 按拖拽宽度覆盖）*/
 .wiki-shell {
   flex: 1;
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: 300px minmax(360px, 1fr) 5px 460px;
   min-height: 0;
 }
 .wiki-pane { min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
 .wiki-left { background: var(--bg-card); border-right: 1px solid var(--border); }
 .wiki-center { background: var(--bg-page); }
-.wiki-right { background: var(--bg-card); border-left: 1px solid var(--border); }
+.wiki-right { background: var(--bg-card); }
+
+/* 可拖拽分隔条（中区↔右栏）*/
+.wiki-splitter {
+  width: 5px;
+  cursor: col-resize;
+  background: var(--border);
+  flex-shrink: 0;
+  transition: background var(--duration) var(--ease);
+  z-index: 2;
+}
+.wiki-splitter:hover,
+.wiki-splitter:active { background: var(--accent); }
 </style>

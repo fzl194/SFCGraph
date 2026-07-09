@@ -77,6 +77,14 @@ function handleClick(ev: MouseEvent) {
 /* centered readable column — inherits global .doc-viewer typography */
 .md-article { max-width: 880px; margin: 0 auto; padding: var(--space-8) var(--space-8) var(--space-12); }
 
+/* 宽/长表格：横向滚动，不再撑破版面；表头吸顶便于阅读 */
+.md-article :deep(table) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.md-article :deep(th) { position: sticky; top: 0; z-index: 1; }
+
 /* [[ID]] placeholder chip */
 .md-article :deep(.md-placeholder) {
   font-family: var(--font-mono);
