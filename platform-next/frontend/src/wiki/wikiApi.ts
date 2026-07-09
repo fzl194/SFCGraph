@@ -9,7 +9,13 @@ async function fetchJson<T>(url: string): Promise<T> {
 export interface CategoryNf { nf: string; versions: { version: string; count: number }[] }
 export interface Category { type: string; nfs: CategoryNf[] }
 export interface GroupBucket { key: string; count: number }
-export interface ListItem { path: string; name: string; id: string; title: string }
+export interface ListItem {
+  path: string
+  name: string
+  title: string
+  id?: string      // /list 返回
+  type?: string    // /search 返回
+}
 export interface NbNode {
   path: string | null; id: string; type: string; name: string
   nf?: string; version?: string; title?: string; resolved: boolean
