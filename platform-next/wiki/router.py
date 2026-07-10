@@ -51,3 +51,9 @@ def locate(path: str):
     """对象在左树里的位置（type/nf/version/分组桶），前端据此逐层展开高亮。
     不可分类对象（evidence 等）返回 null。"""
     return get_service().locate(path)
+
+
+@router.get("/list-business")
+def list_business(type: str, bucket: str):
+    """业务层（BD/NS/CS）按 bucket_key（domain 或 domain/scenario）列对象。"""
+    return get_service().list_business(type, bucket)

@@ -46,4 +46,6 @@ export const wikiApi = {
   md: (path: string) => fetchJson<MdResp>(`${BASE}/md?path=${encodeURIComponent(path)}`),
   search: (q: string) => fetchJson<ListItem[]>(`${BASE}/search?q=${encodeURIComponent(q)}`),
   locate: (path: string) => fetchJson<LocateResp | null>(`${BASE}/locate?path=${encodeURIComponent(path)}`),
+  listBusiness: (type: string, bucket: string) =>
+    fetchJson<ListItem[]>(`${BASE}/list-business?type=${encodeURIComponent(type)}&bucket=${encodeURIComponent(bucket)}`),
 }

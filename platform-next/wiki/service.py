@@ -134,6 +134,27 @@ class WikiService:
         start = (page - 1) * size
         return {"items": items[start:start + size], "total": total, "page": page, "size": size}
 
+    def list_business(self, ntype: str, bucket_key: str) -> list[dict]:
+        """业务层（BD/NS/CS）按 bucket_key（domain 或 domain/scenario）列对象。
+        bucket_key 与 categories() 的 biz buckets 一致。"""
+        parts = bucket_key.split("/")
+        domain = parts[0] if parts else ""
+        scenario = parts[1] if len(parts) > 1 else ""
+        out = []
+        for n in self.index.nodes.values():
+            if n.type != ntype:
+                continue
+            meta = dict(n.group)
+            if meta.get("domain") != domain:
+                continue
+            # CS 需 scenario 匹配；BD/NS 无 scenario 维度（bucket_key 仅 domain）
+            if ntype == "ConfigurationSolution":
+                if scenario and meta.get("scenario") != scenario:
+                    continue
+            out.append({"path": n.path, "name": n.name, "id": n.id, "title": n.title})
+        out.sort(key=lambda x: x["name"])
+        return out
+
     def _node_dict(self, path: str | None, obj_id: str | None, resolved: bool) -> dict:
         if path and path in self.index.nodes:
             n = self.index.nodes[path]

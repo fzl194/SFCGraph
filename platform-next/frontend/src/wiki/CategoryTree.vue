@@ -145,18 +145,10 @@ async function loadLazy(node: { level: number; data?: any }, resolve: (data: any
       key: `o:${it.path}`, label: it.name, type: 'object', raw: it, leaf: true,
     })))
   }
-  // 业务层 bucket（domain[/scenario]）→ 列出该 bucket 下所有对象
+  // 业务层 bucket（domain[/scenario]）→ 列出该 bucket 下所有对象（按 type+bucket 精确取）
   if (data.type === 'biz-bucket') {
-    const parts = String(data.raw.bucket_key || '').split('/')
-    const domain = parts[0] || ''
-    const scenario = parts[1] || ''
-    let hits: ListItem[] = []
-    try { hits = await wikiApi.search(domain) } catch { return resolve([]) }
-    const items = hits.filter((it) => {
-      if (it.type !== data.raw.type) return false
-      if (scenario) return it.path.includes(`/${domain}/${scenario}/`)
-      return it.path.includes(`/${domain}/`)
-    })
+    let items: ListItem[] = []
+    try { items = await wikiApi.listBusiness(data.raw.type, data.raw.bucket_key) } catch { return resolve([]) }
     return resolve(items.map((it) => ({
       key: `o:${it.path}`, label: it.name, type: 'object', raw: it, leaf: true,
     })))
