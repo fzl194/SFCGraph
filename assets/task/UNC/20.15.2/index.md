@@ -231,7 +231,7 @@
 - [1-00015](task/UNC/20.15.2/1-00015.md) · 配置 ADC 应用检测参数 — FLOWFILTER（appid 锚点）+ ADCPARA（流信息上报开关），ADC 动态规则路径专属
 - [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — RULE(POLICYTYPE=ADC)+USERPROFILE+RULEBINDING，ADC 预定义规则路径专属
 
-## 特性级（feature）（6）
+## 特性级（feature）（7）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
 - [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100 热计费标志 + 更小
@@ -239,4 +239,5 @@
 - [2-00004](task/UNC/20.15.2/2-00004.md) · 内容计费基本功能（WSFD-109002） — UNC 侧内容计费——License 前置 + 复用费率标识链（1-00009），无专属命令
 - [2-00005](task/UNC/20.15.2/2-00005.md) · PCC基本功能（WSFD-109101） — UNC 侧 PCC 基本功能——Gx(2G/3G/4G)/Npcf(5G) 对接 PCRF/PCF 获取策略或本地静态规则，PCRF对接链+PCRF选择+PCC开关模板（1-00012/13/14）+本地规则
 - [2-00006](task/UNC/20.15.2/2-00006.md) · ADC基本功能（WSFD-109102） — UNC 侧 ADC 基本功能——应用检测上报通道，License 前置 + 两条路径（动态 appid 1-00015 / 预定义规则 1-00016）二选一，依赖 PCC 基本功能
+- [2-00007](task/UNC/20.15.2/2-00007.md) · 基于累计流量的策略控制（WSFD-109104） — UNC 侧 FUP——PCC 基本功能增量（License 前置 + Gx 三增量 MKPARSEFORMAT/UMCH/FUPSESSIONEXC，N7 仅 License），无专属多命令模块，复用 1-00014 SET PCCFUNC atom
 
