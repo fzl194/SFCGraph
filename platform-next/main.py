@@ -16,11 +16,13 @@ from command_graph.router import router as command_router
 from business_graph.router import router as business_router
 from task_graph.router import router as task_router
 from wiki.router import router as wiki_router
+from wiki.service import get_service as get_wiki_service
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     load_config()
+    get_wiki_service().warm_up()   # 预载 wiki 索引，避免首请求并发竞态
     yield
 
 

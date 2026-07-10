@@ -3,6 +3,7 @@
 启动时若 index_path 不存在或 stale（mtime < assets 最新 mtime），自动重建。
 """
 from __future__ import annotations
+import threading
 from pathlib import Path
 
 from wiki.build_wiki_index import build_index, deserialize_index, serialize_index
@@ -24,28 +25,26 @@ class WikiService:
         self.assets_root = Path(assets_root).resolve()
         self.index_path = Path(index_path)
         self._index: Index | None = None
+        self._lock = threading.Lock()
 
     @property
     def index(self) -> Index:
-        # load-once-and-cache：服务是进程级单例，server 运行期间 assets 不变；
-        # 重建走 CLI + restart。staleness 仅在首次 _load_or_build 内判定一次。
+        # load-once-and-cache + 锁：避免首请求并发时多线程同时反序列化/构建索引
         if self._index is None:
-            self._index = self._load_or_build()
+            with self._lock:
+                if self._index is None:
+                    self._index = self._load_or_build()
         return self._index
 
-    def _is_stale(self) -> bool:
-        if not self.index_path.exists():
-            return True
-        idx_mtime = self.index_path.stat().st_mtime
-        # 取 assets 最新文件 mtime（rglob 较重，仅在没有缓存时触发；命中即短路）
-        try:
-            newest = max(f.stat().st_mtime for f in self.assets_root.rglob("*.md"))
-        except ValueError:
-            newest = 0
-        return idx_mtime + 1 < newest  # 1s grace，避免刚写完索引即判 stale 冗余重建
+    def warm_up(self) -> None:
+        """启动时一次性载入索引（在 lifespan 调用），避免首请求并发竞态。"""
+        _ = self.index
 
     def _load_or_build(self) -> Index:
-        if self.index_path.exists() and not self._is_stale():
+        # 有索引文件直接载入（~1-2s）；缺失才全量构建。
+        # assets 变更后用 CLI 手动重建：
+        #   python -m wiki.build_wiki_index ../assets wiki/data/wiki_index.json
+        if self.index_path.exists():
             return deserialize_index(self.index_path.read_text(encoding="utf-8"))
         idx = build_index(self.assets_root)
         self.index_path.parent.mkdir(parents=True, exist_ok=True)
