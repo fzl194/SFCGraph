@@ -84,7 +84,7 @@ assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[
 - 文件名用 local_id 段（sanitized：空格/特殊字符转 `-`），目录承载 nf@version/type 段：
   - `command/UDG/20.15.2/ADD-URR.md` ← `UDG@20.15.2@MMLCommand@ADD URR`
   - `configobject/UDG/20.15.2/URR.md` ← `UDG@20.15.2@ConfigObject@URR`
-  - 业务层（无 nf@version）：`business/<domain>/<scenario>/ConfigurationSolution@charging-converged.md`
+  - 业务层（无 nf@version，两段式 ID §5.2）：`business/<domain>/BusinessDomain@<domain>.md`（BD）、`business/<domain>/<scenario>/NetworkScenario@<scenario>.md`（NS）、`business/<domain>/<scenario>/ConfigurationSolution@<scenario>-<solution>.md`（CS）。CS 向下引用 task 用跨网元 assets 根路径：`[融合计费](task/UDG/20.15.2/2-00006.md)`、`[费率标识链](task/UNC/20.15.2/1-00009.md)`。业务层构建见 [业务层级构建SOP](task/业务层级构建SOP.md)。
 - **引用统一用 assets/ 根路径**（从 assets/ 起，**禁文件间相对路径**如 `../`），同证据 `evidence/...`：
   - **已建对象** → 标准 markdown 链接 `[显示名](assets根路径.md)`，**带 .md**：`[URR](configobject/UDG/20.15.2/URR.md)`、`[ADD URR](command/UDG/20.15.2/ADD-URR.md)`
   - **未建对象** → `[[对象ID]]` 占位（**双方括号 = 待建**）：`[0-00001](task/UDG/20.15.2/0-00001.md)`
