@@ -219,7 +219,8 @@
 - [1-00003](task/UNC/20.15.2/1-00003.md) · OFCTemplate 绑定 APN — 把离线计费模板 OFCTemplate 绑定到 APN 
 - [1-00004](task/UNC/20.15.2/1-00004.md) · OFCTemplate 绑定计费属性 CC — 把离线计费模板 OFCTemplate 绑定到计费属性 
 
-## 特性级（feature）（1）
+## 特性级（feature）（2）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
+- [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100 热计费标志 + 更小
 
