@@ -12,6 +12,7 @@
 ### 业务感知
 - [计费](business/business-awareness/charging/NetworkScenario@charging.md) — 按业务差异化计费（离线/在线/融合），结合默认计费、免费业务、配额动作完成计费闭环
 - [带宽控制](business/business-awareness/bandwidth-control/NetworkScenario@bandwidth-control.md) — 按业务差异化限速/整形/FUP 降速/GBR 保证（BWM 主干 + Shaping/FUP/QoS/无线资源等变种）
+- [访问限制](business/business-awareness/access-control/NetworkScenario@access-control.md) — 双轨道架构（POLICYTYPE 隐式 6 子轨 + CF 显式），含阻断/重定向（Portal/Proxy/智能）/头增强（HTTP/RTSP/HTTPS）/URL 过滤/位置策略
 
 ## 方案（CS）
 
@@ -37,3 +38,13 @@
 - [ADC 应用检测触发](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-adc-trigger.md) — 增强应用检测 ADC 触发（2-00028），应用级检测驱动带宽策略
 - [异常流量检测](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-anomaly-detection.md) — 异常下行流量检测（2-00021），本质安全/可触发阻断
 - [接入点策略控制](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-apn-strategy.md) — 接入点策略控制（UNC 2-00009），APN/DNN 级差异化策略
+
+### 访问控制
+- [策略匹配基础](business/business-awareness/access-control/ConfigurationSolution@access-backbone.md) — 访问限制公共底座（RULE+USERPROFILE+RULEBINDING+过滤链），POLICYTYPE 6 子轨动作选择 + 多 RULE 共存
+- [URL 过滤](business/business-awareness/access-control/ConfigurationSolution@access-url-filter.md) — 轨道B CF.ACTION 分类黑白名单（阻断/重定向），流匹配走 PCC RULE backbone；ICAP 外置分析可选
+- [HTTP/RTSP 头增强](business/business-awareness/access-control/ConfigurationSolution@access-headen-http.md) — POLICYTYPE=HEADEN + ADD HEADEN 插入用户信息（MSISDN/IMSI），HTTP/RTSP 共享命令，含防欺诈内嵌分支
+- [HTTPS 头增强](business/business-awareness/access-control/ConfigurationSolution@access-headen-https.md) — 独立 ADD TLSHEADEN（TLS Extension TLV 格式），非复用 HTTP 的 ADD HEADEN，HTTP2.0 Host 识别强依赖
+- [用户 Portal](business/business-awareness/access-control/ConfigurationSolution@access-portal.md) — POLICYTYPE=SMARTREDIRECT + IPFarm，L7 URL 重定向到 Portal Server，captive/non-captive 双模式
+- [WebProxy](business/business-awareness/access-control/ConfigurationSolution@access-webproxy.md) — POLICYTYPE=WEBPROXY + IPFarm，L3 IP NAT 到代理池，仅 L34 SVRIP 匹配
+- [智能重定向](business/business-awareness/access-control/ConfigurationSolution@access-smart-redirect.md) — POLICYTYPE=SMARTREDIRECT 动作链（SMARTHTTPREDIR/DNSOVERWRITING），错误码触发，不用 IPFarm
+- [位置策略](business/business-awareness/access-control/ConfigurationSolution@access-location-policy.md) — 跨网元（UNC 决策→UDG 执行），PCF 按 ULI 位置决策下发 PCC 策略

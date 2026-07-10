@@ -90,3 +90,10 @@
 - 证据拷入 assets/evidence/business/bandwidth-control/（BWM全套+backbone概述+18特性概述/原理）
 - 双向回填：12 CS 引用 task 追加被引用于
 - 每CS含特性关系矩阵（追溯原始文档判定角色/必配/重叠）
+
+## [2026-07-10] ingest | 业务层访问限制场景
+- NS 访问限制（双轨道架构）+ 8 CS（backbone/URL过滤/HTTP-RTSP头增强/HTTPS头增强/Portal/WebProxy/智能重定向/位置策略）
+- 证据拷入 assets/evidence/business/access-control/（11份）
+- 每CS含特性关系矩阵（POLICYTYPE多RULE共存/头增强族包含/重定向族分化）
+- License全交叉验证（12/12通过，规避带宽族教训）
+- 回填5处全景（NS决策表/NS关联/index/BD/per-task-md）
