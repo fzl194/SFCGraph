@@ -23,6 +23,8 @@
 
 > 典型盲区：原始文档有 13 步，feature 编排了 6 步（复用 backbone），中间的"全局缺省URR组/防欺诈列表/特殊参数"等步骤被默认并入收尾compound，但收尾compound的命令集未必含 → 静默遗漏。
 
+> **activation 空缺/无独立 activation 子规则**：部分特性 activation 主文档空（如 SA-Basic 根索引仅标题）或仅有概述（如 SA特征库更新/会话级 FUP）。此时 feature 命令序列来自参考信息 MML 清单 + 特性知识，审视须：① 核实 feature 脚注声称的命令源（参考信息/特性知识/实现原理）**原文是否在 evidence/ 提供**——未提供 → warning（证据链不完整，待补 evidence）；② 区分"能力型特性"（License 门控 + 复用 backbone，如 SA特征库更新/会话级 FUP，2 步合理）vs "配置型特性"（有完整 activation），勿要求能力型特性配齐命令。
+
 ### R1.2 复用合理性
 **防一刀切**——复用不能抹平特性差异。
 
@@ -35,6 +37,10 @@
 4. **假通用判定（critical，必查）**：逐 feature 核对——该 feature 有的核心差异维度（参数变种/专属命令/约束/组装方式），compound「场景差异」是否有对应条目？若 **feature 有差异而 compound 场景差异无** → compound 对该 feature 是**假通用**（命令集覆盖但差异抹平）。**复用时必须把差异双向回填到 compound 场景差异，不能只写进 feature DP**（SOP §3.5 强制）。
 
 > 典型盲区（计费族实战）：7 个计费特性都复用 1-00010 计费三件套，但融合的"双 URR + RGAPPLIED 约束"、离线的"OFFMETERINGTYPE 8 种"、时长/事件/流量的"METERINGTYPE 变种"——这些差异**只写进各 feature DP，1-00010 场景差异只有 3 条泛化项** → 1-00010 对 7 特性是假通用。复用者点开 1-00010 看不到任何特性差异。
+
+5. **★ 命令集 union 致误带（新型假通用，配置生成风险，2026-07-10 QoS 族实战）**：族通用 compound 的命令集是族内多特性**并集**（如 1-00017 QoS专有承载链 = QOSPROP + SADEDICBEARER），但个别 feature **只用子集**（如 2-00030 视频承载仅 QOSPROP，无 SADEDICBEARER）。Jaccard 可能 < 0.75。**风险**：配置生成若按 compound 典型脚本盲目套用该 feature，会**误产出 feature 不用的命令**（如给 2-00030 误带 ADD SADEDICBEARER）。这与"差异抹平"型假通用（1-00010）相反——是"命令多带"型。
+   - **判定**：feature 复用 compound 时，若 feature **不执行 compound 的某段命令**，compound「场景差异」是否显式分列该 feature 的命令子集（"本特性不执行 X 段"）+ 复用警示？若 compound 场景差异对该 feature 全空/仅"待核实" → 假通用未解除（critical）。
+   - **防法**：compound 场景差异表**逐 feature 列命令子集**（哪些命令执行/哪些省略 + 参数变种）+ ★复用警示「勿按典型脚本盲目套用 X 场景，X 场景不执行 Y 段」。feature 配置流程复用 compound 时，对省略的段加脚注「本特性不执行 compound 的 Y 段」。
 
 ### R1.3 步骤拆分合理性
 **防错位**——compound 该建才建。
