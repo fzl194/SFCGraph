@@ -13,9 +13,9 @@ status: draft
 ## 概览
 兜底默认计费（Fallback Default Charging）解决"未匹配流量漏计费"问题：默认所有流量都有 RG 标识，无遗漏。当业务流未命中任何 RULE 的精确匹配条件时，通过 USERPROFILE 级缺省费率组和整机级全局缺省 URR 组兜底计费，确保计费完整性。
 
-本方案编排 UDG 侧 2 个特性——[内容计费 2-00003](task/UDG/20.15.2/2-00003.md)（提供三件套+收尾 backbone）+ [PCC基本功能 2-00018](task/UDG/20.15.2/2-00018.md)（PCC 规则骨架）：
-- **内容计费**：提供计费三件套（URR→URRGROUP→PCCPOLICYGRP）+ 计费收尾（[1-00012](task/UDG/20.15.2/1-00012.md) `SET URRGRPBINDING`），是兜底费率组的配置基座。
-- **PCC基本功能**：提供 RULE（POLICYTYPE=PCC）+ USERPROFILE + RULEBINDING 骨架，兜底流量走未命中精确 RULE 后的默认路径。
+本方案编排 UDG 侧 2 个特性——[内容计费 2-00003](task/UDG/20.15.2/2-00003.md)（核心，三件套基础）+ [PCC基本功能 2-00018](task/UDG/20.15.2/2-00018.md)（策略承载骨架，可选）：
+- **内容计费**（核心）：提供计费三件套（URR→URRGROUP→PCCPOLICYGRP）+ 计费收尾（[1-00012](task/UDG/20.15.2/1-00012.md) `SET URRGRPBINDING`），是兜底费率组的配置基座。
+- **PCC基本功能**（策略承载骨架，可选）：提供 RULE（POLICYTYPE=PCC）+ USERPROFILE + RULEBINDING 策略承载，兜底流量走未命中精确 RULE 后的默认路径。
 
 核心机制——**双重兜底**：
 1. **USERPROFILE 级缺省费率**（[1-00012](task/UDG/20.15.2/1-00012.md)）：`SET URRGRPBINDING` 每 USERPROFILE 配 `DFTURRGRPNAME`（缺省业务费率）+ `DFTSIGURRGNAME`（缺省信令费率）。未命中 RULE 的流量自动走默认 URR 组。
@@ -25,7 +25,18 @@ status: draft
 
 ## 配置与协同
 
-本方案编排 **2 个 UDG 特性**：[2-00003 内容计费](task/UDG/20.15.2/2-00003.md) + [2-00018 PCC基本功能](task/UDG/20.15.2/2-00018.md)。各特性未变化的配置走其**标准配置方法**（见各 feature task），以下仅说明本方案的**特性级变种/排除项**与**跨特性协同**。
+本方案编排 **2 个 UDG 特性**：[2-00003 内容计费](task/UDG/20.15.2/2-00003.md)（核心，三件套基础）+ [2-00018 PCC基本功能](task/UDG/20.15.2/2-00018.md)（策略骨架，可选）。兜底是内容计费的收尾增强（DFTURRGRPNAME + SPECTRAFURRGRP），依赖费率三件套。
+
+**特性关系矩阵**（★回答"哪些必配 / 可选 / 包含 / 正交"，追溯原始文档「与其他特性的交互」段 + feature task 依赖声明）：
+
+| 特性 | 角色 | 必配? | 关系说明 |
+|---|---|---|---|
+| [UDG 内容计费 2-00003](task/UDG/20.15.2/2-00003.md) | 核心（三件套基础） | 必配 | 兜底是内容计费的收尾增强（DFTURRGRPNAME + SPECTRAFURRGRP），依赖内容计费的费率三件套（URR/URRGROUP/PCCPOLICYGRP）+ 计费收尾（SET URRGRPBINDING） |
+| [UDG PCC基本功能 2-00018](task/UDG/20.15.2/2-00018.md) | 策略骨架（可选） | 可选 | 提供 RULE（POLICYTYPE=PCC）+ USERPROFILE + RULEBINDING 策略承载骨架；动态 PCC 规则场景配；本地静态规则可不配 |
+
+> 矩阵规则：①**核心**=方案主体（必配）；②**基础/依赖前提**=核心依赖的底层（必配，配置常与核心重叠）；③**维度增强**=正交维度可选叠加（按业务诉求）；④**跨网元对端**=另一网元对应特性（组合）；⑤**二选一**=互斥路径选其一。**配置重叠必须在「关系说明」注明**（防"额外配一遍"误解）。
+
+各特性未变化的配置走其**标准配置方法**（见各 feature task），以下仅说明本方案的**特性级变种/排除项**与**跨特性协同**。
 
 ### 内容计费特性（[2-00003](task/UDG/20.15.2/2-00003.md)）
 
