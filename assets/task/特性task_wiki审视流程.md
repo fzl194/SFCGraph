@@ -57,6 +57,8 @@ feature「配置流程」是配置生成的**可执行蓝图**（非知识叙述
 3. **无证据的参数必须移除或改为"UDG 侧不配 / 由上层决定"**，否则配置生成编造参数。
 > 实战教训：事件计费 feature 配置流程写了"PCCPOLICYGRP 可配计费点 REQUEST/RESPONSE/FINISH"，但 activation 与 PCCPOLICYGRP 命令 wiki 均无此参数 → 配置生成会编造。约束/DP 里的叙述性知识（"仅 SCUR/不支持 Default Quota"）可不进配置流程，但须标 evidence 出处。
 
+> **★ 审视者警示：无证据结论须穷尽搜索后再判 critical**。审视发现"疑似编造参数/假约束"时，须先 grep 原始文档 / 特性 wiki / **官方差异表** / **软件参数文档（BIT/BYTE/BYTE837 等）** / 命令 wiki 全文，确认真无证据再判 critical。实战 2 次反转（均因搜索不充分误判 critical，后修复时核实发现有证据）：①计费事件计费点 REQUEST/RESPONSE/FINISH（命令 wiki 确有 `EVENTCHARGEFLAG`/`EVENTCHGPOINT`）②头增强 Byte837 十六进制编码（软件参数文档 `BYTE837_08922610` 确有）+ RTSP 不支持防欺诈（官方差异表 `头增强功能之间的差异_10706790` 确有）。**判 critical 前穷尽搜索；修复移除前也先核实**。反转不否定审视价值——每次都逼出了 evidence 链接，产出更严谨。
+
 ---
 
 ## R2 辅助维度（顺带查）
