@@ -16,9 +16,9 @@
 
 ### 计费
 - [融合计费](business/business-awareness/charging/ConfigurationSolution@charging-converged.md) — Nchf 统一接口，双 URR(offline+online)+RGAPPLIED 约束
-- [[charging-online]] — 在线计费（OCS 实时配额，URR=ONLINE）·待建
-- [[charging-offline]] — 离线计费（Ga 接口后付费，URR=OFFLINE）·待建
-- [[charging-content]] — 内容计费基础（SA 识别+费率三件套）·待建
-- [[charging-metering]] — 计量形态增强（流量/时长/事件）·待建
-- [[charging-quota-exhaust]] — 配额降速与体验切换·待建
-- [[charging-fallback]] — 兜底默认计费（DFTURRGRPNAME）·待建
+- [在线计费](business/business-awareness/charging/ConfigurationSolution@charging-online.md) — OCS 实时配额（CCR-I/U/T），URR=ONLINE，UPDEFAULTQUOTA/Credit Pooling 必选一
+- [离线计费](business/business-awareness/charging/ConfigurationSolution@charging-offline.md) — Ga 接口后付费，URR=OFFLINE，OFCTemplate 模板
+- [内容计费基础](business/business-awareness/charging/ConfigurationSolution@charging-content.md) — SA 业务识别+每业务独立费率三件套（URR→URRGROUP→PCCPOLICYGRP）
+- [计量形态增强](business/business-awareness/charging/ConfigurationSolution@charging-metering.md) — 流量/时长/事件三计量（METERINGTYPE），复用统一费率标识链
+- [配额降速与体验切换](business/business-awareness/charging/ConfigurationSolution@charging-quota-exhaust.md) — Final-Unit-Action(BLOCK/REDIRECT/RESTRICT/FORWARD)+REAUTHORIZATION
+- [兜底默认计费](business/business-awareness/charging/ConfigurationSolution@charging-fallback.md) — 双重兜底（DFTURRGRPNAME/DFTSIGURRGNAME+全局SPECTRAFURRGRP）

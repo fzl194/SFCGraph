@@ -217,25 +217,25 @@
 
 ## 步骤级（compound）（19）
 
-- [1-00001](task/UNC/20.15.2/1-00001.md) · 配置离线计费模板参数 — 配置 OFCTemplate 模板的话单版本/计费方式/
-- [1-00002](task/UNC/20.15.2/1-00002.md) · OFCTemplate 绑定 UserProfile — 把离线计费模板 OFCTemplate 绑定到 User
-- [1-00003](task/UNC/20.15.2/1-00003.md) · OFCTemplate 绑定 APN — 把离线计费模板 OFCTemplate 绑定到 APN 
-- [1-00004](task/UNC/20.15.2/1-00004.md) · OFCTemplate 绑定计费属性 CC — 把离线计费模板 OFCTemplate 绑定到计费属性 
-- [1-00005](task/UNC/20.15.2/1-00005.md) · 配置融合计费模板参数 — 配置融合计费模板 CCT 的配额/阈值/终结方式/时间格
-- [1-00006](task/UNC/20.15.2/1-00006.md) · CCT 绑定计费属性 CC — 把融合计费模板 CCT 绑定到计费属性 Charge C
-- [1-00007](task/UNC/20.15.2/1-00007.md) · 配置 CHF 选择 — 配置 CHF 实例/组与 CHF 选择方式（融合计费对接
-- [1-00008](task/UNC/20.15.2/1-00008.md) · 配置 SMF-CHF 交互 Trigger 与 RG 老化 — 配置 SMF 与 CHF 交互的条件（CHF 交互开关 
-- [1-00009](task/UNC/20.15.2/1-00009.md) · 配置融合计费费率标识链 — 配置融合计费费率标识链 URR→URRGROUP→PCC
-- [1-00010](task/UNC/20.15.2/1-00010.md) · 配置融合计费异常处理 — 配置融合计费异常返回码与故障处理动作（超时/PDU级/R
-- [1-00011](task/UNC/20.15.2/1-00011.md) · 配置计费消息缓存 — 配置主备 CHF 均故障时的计费消息缓存与回放（缓存开关
-- [1-00012](task/UNC/20.15.2/1-00012.md) · 配置 PCRF 对接链（Diameter） — 配置 GGSN-C/PGW-C 到 PCRF 的 Gx 
-- [1-00013](task/UNC/20.15.2/1-00013.md) · 配置 PCRF 选择与分组 — 配置 PCRF 分组（主备/负荷分担）+ PCRF 选择
-- [1-00014](task/UNC/20.15.2/1-00014.md) · 配置 PCC 开关与模板 — 激活 PCC License + 配置全局/APN 级 
-- [1-00015](task/UNC/20.15.2/1-00015.md) · 配置 ADC 应用检测参数 — 配置 ADC 动态规则路径的应用检测参数——FLOWFI
-- [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — 配置 ADC 预定义规则路径——RULE(POLICYT
-- [1-00017](task/UNC/20.15.2/1-00017.md) · 配置 QoS 属性与规则绑定链 — 配置业务触发的 QoS 保证规则承载链——ADD URR
-- [1-00018](task/UNC/20.15.2/1-00018.md) · 配置 BWM 本地规则与用户模板绑定 — 配置带宽管理本地规则承载链——RULE(POLICYTY
-- [1-00019](task/UNC/20.15.2/1-00019.md) · 配置用户位置与模板绑定 — 建用户位置（代际分叉）→位置组→绑用户模板组，位置策略控
+- [1-00001](task/UNC/20.15.2/1-00001.md) · 配置离线计费模板参数 — cmd:ADD OFCTEMPLATE+SET OFCTHRESHOLD+SET CDRTRIGGER+SET CONTAINERTRIGGER | 用于:2-00001,2-00002 | 层级:域通用
+- [1-00002](task/UNC/20.15.2/1-00002.md) · OFCTemplate 绑定 UserProfile — cmd:ADD USERPROFILE+SET USRPROFCHARGE+ADD USRPROFGROUP+ADD UPBINDUPG+ADD APNUSRPROFG | 用于:2-00001,2-00002,2-00003 | 层级:域通用
+- [1-00003](task/UNC/20.15.2/1-00003.md) · OFCTemplate 绑定 APN — cmd:ADD APN+SET APNCHARGECTRL | 用于:2-00001,2-00002,2-00003 | 层级:域通用
+- [1-00004](task/UNC/20.15.2/1-00004.md) · OFCTemplate 绑定计费属性 CC — cmd:ADD CHARGECHAR+ADD GLBOFCTEMPLATE | 用于:2-00001,2-00002 | 层级:域通用
+- [1-00005](task/UNC/20.15.2/1-00005.md) · 配置融合计费模板参数 — cmd:ADD CCT+MOD CCT | 用于:2-00003 | 层级:特性专属
+- [1-00006](task/UNC/20.15.2/1-00006.md) · CCT 绑定计费属性 CC — cmd:ADD CHARGECHAR+ADD SELECTCCTBYCC | 用于:2-00003 | 层级:特性专属
+- [1-00007](task/UNC/20.15.2/1-00007.md) · 配置 CHF 选择 — cmd:ADD TNFINS+ADD TNFINSIP+ADD TNFGRP+ADD TNFBINDGRP+ADD SELCHFGBYIMSI+ADD SELCHFGBIMSISEG+ADD SELECTCHFGBYCC+SET GLBDFTCHFGROUP+ADD PNFSUPI+ADD PNFGPSI | 用于:2-00003 | 层级:特性专属
+- [1-00008](task/UNC/20.15.2/1-00008.md) · 配置 SMF-CHF 交互 Trigger 与 RG 老化 — cmd:SET CHFINIT+ADD PDUTRIGGER+ADD RGTRIGGER+SET RGRESCTRL | 用于:2-00003 | 层级:特性专属
+- [1-00009](task/UNC/20.15.2/1-00009.md) · 配置融合计费费率标识链 — cmd:ADD URR+ADD URRGROUP+ADD PCCPOLICYGRP+ADD RULE+ADD RULEBINDING+SET URRGRPBINDING+ADD USERPROFILE+ADD QUOTAEXHAUSTACT | 用于:2-00003,2-00004,2-00011 | 层级:域通用
+- [1-00010](task/UNC/20.15.2/1-00010.md) · 配置融合计费异常处理 — cmd:SET FAILHANDLING+ADD PDUSCACT+ADD RGRCACT+SET CNVRGDCHGPARA | 用于:2-00003 | 层级:特性专属
+- [1-00011](task/UNC/20.15.2/1-00011.md) · 配置计费消息缓存 — cmd:SET FAILHANDLING+MOD PDUSCACT+SET N40MSGSTG+SET STGTRIGGER+SET CNVRGDCHGPARA+SET GLBDFTCHFGROUP+SET CDRSTORAGECTRL+SET STGALARMCTRL+SET N4CHGMSGCTRL | 用于:2-00003 | 层级:特性专属
+- [1-00012](task/UNC/20.15.2/1-00012.md) · 配置 PCRF 对接链（Diameter） — cmd:ADD VPNINST+SET CONCENPOINT+ADD LOGICIP+ADD LOGICINF+ADD DIAMLOCINFO+ADD PCRF+ADD DIAMPEERADDR+ADD DIAMCONNGRP+ADD DIAMCONNECTION(+SET PCCTIMER 可选) | 用于:2-00005 | 层级:特性专属
+- [1-00013](task/UNC/20.15.2/1-00013.md) · 配置 PCRF 选择与分组 — cmd:ADD IMSIMSISDNSEG+ADD PCRFGROUP+ADD PCRFBINDGRP+SET MASTERPCRF+ADD GLBPCRFGROUP+SET DFTGLBPCRFGRP+ADD PCRFGRPBNDAPN | 用于:2-00005 | 层级:特性专属
+- [1-00014](task/UNC/20.15.2/1-00014.md) · 配置 PCC 开关与模板 — cmd:SET LICENSESWITCH+SET PCCFUNC+ADD PCCTEMPLATE+SET APNPCCFUNC | 用于:2-00005,2-00007,2-00011 | 层级:域通用
+- [1-00015](task/UNC/20.15.2/1-00015.md) · 配置 ADC 应用检测参数 — cmd:ADD FLOWFILTER+ADD ADCPARA | 用于:2-00006 | 层级:域专属
+- [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — cmd:ADD RULE+ADD USERPROFILE+ADD RULEBINDING | 用于:2-00006 | 层级:域专属
+- [1-00017](task/UNC/20.15.2/1-00017.md) · 配置 QoS 属性与规则绑定链 — cmd:ADD URR+ADD QOSPROP+ADD PCCPOLICYGRP+ADD RULE+ADD USERPROFILE+ADD RULEBINDING | 用于:2-00008 | 层级:域通用
+- [1-00018](task/UNC/20.15.2/1-00018.md) · 配置 BWM 本地规则与用户模板绑定 — cmd:ADD RULE+ADD USERPROFILE+ADD RULEBINDING+ADD USRPROFGROUP+ADD UPBINDUPG+ADD APNUSRPROFG | 用于:2-00010 | 层级:域专属
+- [1-00019](task/UNC/20.15.2/1-00019.md) · 配置用户位置与模板绑定 — cmd:ADD USRLOCATION+ADD USRLOCATIONGRP+MOD UPBINDUPG(+ADD UPBINDUPG 可选) | 用于:2-00013 | 层级:域专属
 
 ## 特性级（feature）（13）
 

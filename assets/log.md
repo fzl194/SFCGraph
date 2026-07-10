@@ -78,3 +78,9 @@
 - R1.4 判定：BWM activation 非模板复用（POLICYTYPE=BWM 专属演示），无零证据差异；activation 未演示 License 开关脚本但 License wiki + 命令 wiki 证据充分
 - R1.5 自查：配置流程命令+参数均有 activation 脚本/命令 wiki 证据；本地 PCC 场景命令集与动态 PCC 一致，SET PCCFUNC=DISABLE 证据来自 PCC 基本功能 activation
 - 关键洞察：UNC 侧 BWM = 控制面中转（规则承载+N4透传），UDG 侧 GWFD-110311 = 用户面限速执行（BWMSERVICE/BWMCONTROLLER 等），两侧 RULENAME 须一致
+
+## [2026-07-10] ingest | 业务层计费场景
+- BD 业务感知 + NS 计费 + 7 CS（融合/离线/在线/内容基础/计量/配额降速/兜底）
+- 证据拷入 assets/evidence/business/charging/（旧版参考+融合5文档）
+- 双向回填：所有 CS 引用 task 追加被引用于反向链接
+- 索引/日志同步
