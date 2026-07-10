@@ -212,7 +212,7 @@
 - [0-00208](task/UNC/20.15.2/0-00208.md) · （SET ZEROCHGSKIPSW） — 设置零流量计费事件忽略开关——对零流量场景下的各类伴随事
 - [0-00209](task/UNC/20.15.2/0-00209.md) · （TST CHGCDR） — 模拟生成 SGSN 话单（MCDR）用于新建局调测——验
 
-## 步骤级（compound）（14）
+## 步骤级（compound）（16）
 
 - [1-00001](task/UNC/20.15.2/1-00001.md) · 配置离线计费模板参数 — 配置 OFCTemplate 模板的话单版本/计费方式/
 - [1-00002](task/UNC/20.15.2/1-00002.md) · OFCTemplate 绑定 UserProfile — 把离线计费模板 OFCTemplate 绑定到 User
@@ -228,12 +228,15 @@
 - [1-00012](task/UNC/20.15.2/1-00012.md) · 配置 PCRF 对接链（Diameter） — Gx 接口 Diameter 对接（VPN+逻辑接口+本端标识+PCRF+链路组+链路），仅 2G/3G/4G，PCC 族专属
 - [1-00013](task/UNC/20.15.2/1-00013.md) · 配置 PCRF 选择与分组 — PCRF 分组（主备/负荷分担）+ 号段/APN/全局缺省绑定，仅 2G/3G/4G，PCC 族专属
 - [1-00014](task/UNC/20.15.2/1-00014.md) · 配置 PCC 开关与模板 — License 前置 + SET PCCFUNC + ADD PCCTEMPLATE + SET APNPCCFUNC，动态/本地 PCC 共享骨架
+- [1-00015](task/UNC/20.15.2/1-00015.md) · 配置 ADC 应用检测参数 — FLOWFILTER（appid 锚点）+ ADCPARA（流信息上报开关），ADC 动态规则路径专属
+- [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — RULE(POLICYTYPE=ADC)+USERPROFILE+RULEBINDING，ADC 预定义规则路径专属
 
-## 特性级（feature）（5）
+## 特性级（feature）（6）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
 - [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100 热计费标志 + 更小
 - [2-00003](task/UNC/20.15.2/2-00003.md) · 融合计费（WSFD-011206） — UNC 侧融合计费——SMF 通过 Nchf(N40) 与 CHF 对接，CCT 模板按
 - [2-00004](task/UNC/20.15.2/2-00004.md) · 内容计费基本功能（WSFD-109002） — UNC 侧内容计费——License 前置 + 复用费率标识链（1-00009），无专属命令
 - [2-00005](task/UNC/20.15.2/2-00005.md) · PCC基本功能（WSFD-109101） — UNC 侧 PCC 基本功能——Gx(2G/3G/4G)/Npcf(5G) 对接 PCRF/PCF 获取策略或本地静态规则，PCRF对接链+PCRF选择+PCC开关模板（1-00012/13/14）+本地规则
+- [2-00006](task/UNC/20.15.2/2-00006.md) · ADC基本功能（WSFD-109102） — UNC 侧 ADC 基本功能——应用检测上报通道，License 前置 + 两条路径（动态 appid 1-00015 / 预定义规则 1-00016）二选一，依赖 PCC 基本功能
 

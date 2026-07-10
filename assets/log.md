@@ -59,3 +59,12 @@
   - R1.5 第4点 可选命令证据链子规则（warning→critical）
   - R1.5 第5点 DP/配置流程分列不同命令子规则（warning）
 - **证据核实结论**：EVENT_VOLUME_TIME 命令 wiki 有（ADD-URR.md line 67）；ADD PCCPBINDUPG 命令 wiki 存在（PGW-C/SMF）
+
+## [2026-07-10] ingest | UNC@20.15.2@Task@2-00006 (+1-00015, 1-00016)
+- 特性 WSFD-109102 ADC基本功能 三层 task wiki 构建（带宽控制族首个）
+- 新建 compound 1-00015（ADC应用检测参数：FLOWFILTER+ADCPARA，动态规则路径）/ 1-00016（ADC预定义规则与用户模板绑定：RULE(POLICYTYPE=ADC)+USERPROFILE+RULEBINDING，预定义规则路径）
+- 新建 feature 2-00006：编排 License atom + 二选一路径（DP1 规则下发方式驱动）
+- 复用：SET LICENSESWITCH atom 0-00180；ADD FLOWFILTER 0-00032 / ADD ADCPARA 0-00002 / ADD RULE 0-00071 / ADD USERPROFILE 0-00094 / ADD RULEBINDING 0-00073（均在 1-00015/16 内）
+- 无补建 atom（全部命令 atom 已存在）；activation 证据已就位（激活ADC基本功能_92582136 等 6 份）
+- R1.4 判定：ADC activation 非模板复用（ADC 专属命令 ADCPARA + License LKV2BADCF01 + POLICYTYPE=ADC），两路径均完整演示，无零证据差异
+- R1.5 自查：配置流程命令+参数均有 activation 脚本/命令 wiki 证据；路径 B activation 标"可选"指路径选择，路径内三命令必选
