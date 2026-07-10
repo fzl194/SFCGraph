@@ -16,7 +16,7 @@ status: draft
 策略匹配基础是访问限制场景的**基础范本**（类似计费场景的"内容计费基础"）：所有访问限制动作共用同一套 backbone——三四层/七层过滤链（FILTER/FLOWFILTER/FLTBINDFLOWF/PROTBINDFLOWF）+ 业务规则（ADD RULE）+ 用户模板（ADD USERPROFILE）+ 绑定（ADD RULEBINDING）+ SA-Basic 协议识别前提。**动作的选择由 RULE.POLICYTYPE 这一个参数决定**——它是访问限制的总开关。
 
 **双轨道架构**（追溯 ADD RULE 命令 + 套餐3实例 + 头增强差异表）：
-- **轨道 A（POLICYTYPE 隐式动作）**：RULE.POLICYTYPE 取值决定动作——PCC（策略/计费控制，多功能：阻塞 DISCARD/URL 重定向/计费触发）/ HEADEN（头增强）/ SMARTREDIRECT（智能重定向）/ WEBPROXY（Web 代理）/ ADC（应用检测）/ IPREDIR（IP 重定向）。**单条 RULE 内 POLICYTYPE 互斥**（一条 RULE 只能选一种动作）。
+- **轨道 A（POLICYTYPE 隐式动作）**：RULE.POLICYTYPE 取值决定动作——PCC（策略/计费控制，多功能：阻塞 DISCARD/URL 重定向/计费触发）/ HEADEN（头增强）/ SMARTREDIRECT（智能重定向）/ WEBPROXY（Web 代理）/ ADC（应用检测）/ IPREDIR（IP 重定向）。**单条 RULE 内 POLICYTYPE 互斥**（一条 RULE 只能选一种动作）。（注：本表列访问限制相关 6 子轨；POLICYTYPE 另有 BWM 属带宽控制场景、WORKER 属通用策略 NAT/vTCP，见对应场景。）
 - **轨道 B（CF 显式动作）**：URL 过滤的 CFTEMPLATE.ACTION 决定动作（允许/阻断/重定向），APN 粒度开启；但**流匹配仍走 RULE.POLICYTYPE=PCC backbone**（非纯独立轨道）。
 
 **★多 RULE 共存机制**（防"都得配"误解的核心，套餐3权威验证）：不同动作的 RULE 可**绑定同一 USERPROFILE 共存**——同一用户同时受多种访问限制动作控制。套餐3实例（[套餐3：访问限制场景](evidence/business/access-control/套餐3：访问限制场景_94838086.md)）演示 4 条 RULE 绑同一 USERPROFILE 共存：ruleA(PCC) + ruleB(HEADEN) + ruleC(IPREDIR) + ruleD(PCC)，4 个 RULEBINDING 指向同一 `up_policy`。**POLICYTYPE 互斥仅在"单条 RULE 内"——不是"整个用户只能配一种动作"**。
