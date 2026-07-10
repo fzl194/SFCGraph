@@ -4,7 +4,6 @@ type: NetworkScenario
 name: 计费
 domain: business-awareness
 status: draft
-source_evidence_ids: [EV-BIZ-charging-00]
 ---
 
 # 计费

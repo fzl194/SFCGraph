@@ -3,7 +3,6 @@ id: BusinessDomain@business-awareness
 type: BusinessDomain
 name: 业务感知
 status: draft
-source_evidence_ids: [EV-BIZ-charging-00]
 ---
 
 # 业务感知

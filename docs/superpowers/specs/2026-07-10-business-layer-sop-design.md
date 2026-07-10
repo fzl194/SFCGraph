@@ -98,7 +98,6 @@ name: {对象名}
 domain: {业务域slug}       # BD 自身无；NS/CS 填所属域
 scenario: {场景slug}       # NS 自身填；CS 填所属场景；BD 无
 status: draft
-source_evidence_ids: [EV-BIZ-{场景}-{NN}]
 ---
 ```
 
@@ -161,15 +160,14 @@ source_evidence_ids: [EV-BIZ-{场景}-{NN}]
 ## 概览
 {方案是什么 + 用了哪些特性（跨网元 UDG+UNC）+ 协同骨架}。1-2 段。
 
-## 配置与协同                         ← 特性优先：每特性标准配置方法 + 本方案用法
-本方案编排 {N} 个特性。对每特性说明**标准配置方法**（摘要自 feature task）+ 本方案**用法（标准/变种）**。引用优先级：feature task (2-) 为主 > compound (1-) > atom (0-)。
+## 配置与协同                         ← 特性优先：仅详述本方案的特性级变种/排除 + 跨特性协同
+本方案编排 {N} 个特性：{feature task 链接}。各特性未变化的配置走其**标准配置方法**（见各 feature task，使用者直接按 feature task），以下仅说明本方案的**特性级变种/排除项**与**跨特性协同**。
 
 ### {网元} 侧：{特性名}（[{feature-task-id}](task/{nf}/{ver}/{id}.md)）
-- **标准配置方法**：{摘要该特性的标准配置流程，引其 compound/atom}
-- **本方案用法**：{走标准 / 变种。变种→指出差异点（参数/命令/组装）+ 原因，引到 compound 场景差异}
+走标准配置方法（见 feature task）。若有**变种/排除**（方案独有）：详述差异点（参数/命令/组装）+ 原因，引到 compound 场景差异；标准里有但本方案不用的命令注明排除 + 原因。无变种则一句"走标准配置方法，无特性级变种"。
 
 ### 跨网元/跨特性协同
-{特性间协同顺序 + 一致性约束 + 参数对齐}
+{特性间协同顺序 + 一致性约束 + 参数对齐 —— 方案独有，详述}
 
 ## 决策点                             ← 配置级 DP | 选项/场景 | 影响 |
 {如计费方式/计量方式/配额耗尽动作 → 影响：选哪些 feature task / 走哪个 compound / 跨网元路径 / 关键参数}
@@ -185,7 +183,7 @@ source_evidence_ids: [EV-BIZ-{场景}-{NN}]
 - 证据：{evidence 链接}
 ```
 
-> **CS「配置与协同」段是表达"怎么配"的方式**：**特性优先**——以特性为单元（标准配置方法 + 本方案用法），不是步骤/命令的线性罗列。compound/atom 仅在标准配置摘要 + 变种点引用。不另设 solution task 对象。
+> **CS「配置与协同」段是表达"怎么配"的方式**：**特性优先**——以特性为单元，但**不重复描述 feature task 的标准配置**（使用者直接按 feature task）；CS 仅详述本方案的**特性级变种/排除项** + **跨特性协同**（方案独有部分）。compound/atom 仅在变种点引用。不另设 solution task 对象。
 
 ### 4.3 命名（语义 slug）
 
@@ -223,7 +221,7 @@ source_evidence_ids: [EV-BIZ-{场景}-{NN}]
 - **前置门（critical）**：CS 涉及的 feature task `2-`（UDG + UNC 两侧）必须先全建完，才能开建 CS。有缺口 → 先补建或降级待建，不带着断链占位硬建。"建完"= 结构完整、内容齐全、无 `[[占位]]`（**结构口径**）；front matter `status` 升 `active` 是单独的人审步骤，可后置，不影响 CS 开建（**不要求**被引用 feature task 已是 active）。
 - **额外步骤进 task（critical）**：方案特有的命令不空写在 CS 叙述里——单命令建 atom `0-`、多命令建 compound `1-`，进 `task/`，CS 引用。CS「配置与协同」里每个命令/参数要可追溯到 task 或证据。
 - **叙述式非字段填表（critical）**：不沿用旧三层图谱写死字段（scopes/participants/uses_semantic_object/constrained_by/has_decision 表格）。用 §4 叙述骨架。
-- **证据自包含**：方案/业务专题 md 拷进 `assets/evidence/business/{场景}/`（CLAUDE.md §7 可剥离）。evidence 文件命名沿用现有惯例（`{描述名}_{原始文档ID}.md`，如 `融合计费方案_93400212.md`）；front matter `source_evidence_ids` 用 `EV-BIZ-{场景slug}-{NN}`（如 `EV-BIZ-charging-01`），与现有 EV- 前缀族对齐。证据同时在「关联」段以 markdown 链接列出（镜像 feature task 关联段）。
+- **证据自包含**：方案/业务专题 md 拷进 `assets/evidence/business/{场景}/`（CLAUDE.md §7 可剥离）。evidence 文件命名沿用现有惯例（`{描述名}_{原始文档ID}.md`）。证据**在「关联」段以 markdown 链接列出**（镜像 feature task，**不设 front matter source_evidence_ids**，避免与关联冗余）。
 - **双向链接闭环**：CS ↔ 被引用的 feature task/compound（task 侧"被引用于"追加本 CS）。Grep 新文件无 `[[` 残留占位、无断链。
 - **跨网元引用全路径**：CS 引用 UDG/UNC task 用 assets 根路径（§5.5）。
 - **引用规则**（§5.5）：已建 `[..](.md)` 带 .md；未建 `[[ID]]` 占位（但前置门要求 feature task 已建，故 CS 不应有 feature task 占位）。

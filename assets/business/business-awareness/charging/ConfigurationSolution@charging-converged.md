@@ -5,7 +5,6 @@ name: 融合计费
 domain: business-awareness
 scenario: charging
 status: draft
-source_evidence_ids: [EV-BIZ-charging-00, EV-BIZ-charging-02]
 ---
 
 # 融合计费
@@ -22,17 +21,19 @@ source_evidence_ids: [EV-BIZ-charging-00, EV-BIZ-charging-02]
 
 ## 配置与协同
 
-本方案跨网元编排 **2 个融合计费特性**：UNC 控制面（SMF-CHF 对接）+ UDG 用户面（双 URR 执行）。对每特性说明标准配置方法 + 本方案用法（标准/变种）。配置顺序：UNC 侧 CHF 对接链先就绪（前置），UDG 侧计费三件套与 UNC 费率标识链参数对齐。
+本方案跨网元编排 **2 个融合计费特性**：UNC 控制面 [2-00003](task/UNC/20.15.2/2-00003.md) + UDG 用户面 [2-00006](task/UDG/20.15.2/2-00006.md)。各特性未变化的配置走其**标准配置方法**（见各 feature task），以下仅说明本方案的**特性级变种/排除项**与**跨网元协同**。
 
 ### UNC 控制面：融合计费特性（[2-00003](task/UNC/20.15.2/2-00003.md)）
 
-- **标准配置方法**（见 feature task）：三联前置（`CHGMODE=NchfMode` + `CHARGECTRL`/`USRPROFCHARGE`/`APNCHARGECTRL` 使能 + `CHFINIT=SENDREQ`）→ 配 N40 API 版本 → CHF 选择（[1-00007](task/UNC/20.15.2/1-00007.md)）→ CCT 模板（[1-00005](task/UNC/20.15.2/1-00005.md)）+ 绑定层次（UserProfile [1-00002](task/UNC/20.15.2/1-00002.md) / APN [1-00003](task/UNC/20.15.2/1-00003.md) / CC [1-00006](task/UNC/20.15.2/1-00006.md)）→ 费率标识链（[1-00009](task/UNC/20.15.2/1-00009.md)）→ SMF-CHF 交互 Trigger（[1-00008](task/UNC/20.15.2/1-00008.md)）→ 异常处理（[1-00010](task/UNC/20.15.2/1-00010.md)）+ 消息缓存（[1-00011](task/UNC/20.15.2/1-00011.md)，可选）。
-- **本方案用法**：走**标准配置方法**，无特性级变种。CCT 绑定层次按 DP-3 选（通常 UserProfile 层）；CHF 选择方式按 DP-4；配额阈值按 DP-5。
+走标准配置方法（见 feature task），**无特性级变种**。CCT 绑定层次按 DP-3 选（通常 UserProfile 层）；CHF 选择方式按 DP-4；配额阈值按 DP-5。
 
 ### UDG 用户面：融合计费特性（[2-00006](task/UDG/20.15.2/2-00006.md)）
 
-- **标准配置方法**（见 feature task）：License 前置（[0-00019](task/UDG/20.15.2/0-00019.md)）→ 计费三件套（[1-00010](task/UDG/20.15.2/1-00010.md)）→ 过滤链（[1-00009](task/UDG/20.15.2/1-00009.md)）→ 规则绑定（[1-00011](task/UDG/20.15.2/1-00011.md)）→ 计费收尾（[1-00012](task/UDG/20.15.2/1-00012.md)）。
-- **本方案用法**：**变种**——计费三件套走**双 URR 变种**：每业务配 offline URR（`USAGERPTMODE=OFFLINE`）+ online URR（`USAGERPTMODE=ONLINE`）同组，`RGAPPLIED` 决定在线/离线归属（见 [1-00010](task/UDG/20.15.2/1-00010.md) 场景差异 + DP-2）；URRGROUP 按 RGAPPLIED 配 UP/DOWNURRNAME1/2。其余步骤走标准。**排除** `SET UPDEFAULTQUOTA`（配额由 CHF 经 Nchf 统一下发，非 UDG 本地默认配额开关）。可选 `SET URRFAILACTION`（[0-00018](task/UDG/20.15.2/0-00018.md)，配额超时阻塞放通）。
+走标准配置方法（见 feature task），但有以下**变种/排除**（融合独有）：
+
+- **双 URR 变种**：计费三件套每业务配 offline URR（`USAGERPTMODE=OFFLINE`）+ online URR（`USAGERPTMODE=ONLINE`）同组，`RGAPPLIED` 决定在线/离线归属（见 [1-00010](task/UDG/20.15.2/1-00010.md) 场景差异 + DP-2）；URRGROUP 按 RGAPPLIED 配 UP/DOWNURRNAME1/2。这是融合计费对该特性标准配置（单 URR）的核心特化。
+- **排除** `SET UPDEFAULTQUOTA`：配额由 CHF 经 Nchf 统一下发，非 UDG 本地默认配额开关（标准配置里有，融合方案不用）。
+- **可选** `SET URRFAILACTION`（[0-00018](task/UDG/20.15.2/0-00018.md)）：配额超时阻塞放通。
 
 ### 跨网元/跨特性协同
 
