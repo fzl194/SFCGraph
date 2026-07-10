@@ -232,7 +232,7 @@
 - [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — RULE(POLICYTYPE=ADC)+USERPROFILE+RULEBINDING，ADC 预定义规则路径专属
 - [1-00017](task/UNC/20.15.2/1-00017.md) · 配置 QoS 属性与规则绑定链 — URR(USAGERPTMODE=QOS)+QOSPROP(GBR/MBR/5QI/QCI/ARP)+PCCPOLICYGRP+RULE(PCC/QOS)+USERPROFILE+RULEBINDING，QoS 保证族专属（区别于计费费率标识链 1-00009）
 
-## 特性级（feature）（8）
+## 特性级（feature）（9）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
 - [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100 热计费标志 + 更小
@@ -242,4 +242,5 @@
 - [2-00006](task/UNC/20.15.2/2-00006.md) · ADC基本功能（WSFD-109102） — UNC 侧 ADC 基本功能——应用检测上报通道，License 前置 + 两条路径（动态 appid 1-00015 / 预定义规则 1-00016）二选一，依赖 PCC 基本功能
 - [2-00007](task/UNC/20.15.2/2-00007.md) · 基于累计流量的策略控制（WSFD-109104） — UNC 侧 FUP——PCC 基本功能增量（License 前置 + Gx 三增量 MKPARSEFORMAT/UMCH/FUPSESSIONEXC，N7 仅 License），无专属多命令模块，复用 1-00014 SET PCCFUNC atom
 - [2-00008](task/UNC/20.15.2/2-00008.md) · 业务触发的QoS保证（WSFD-109107） — UNC 侧 GBR 保证——专有承载(2/3/4G)/专有QoS Flow(5G)，License前置 + QoS属性与规则绑定链(1-00017, URR=QOS+QOSPROP) + UserProfile组APN绑定 + 可选专有QoS Flow空闲定时器/延迟释放
+- [2-00009](task/UNC/20.15.2/2-00009.md) · 基于接入点策略控制（WSFD-109108） — UNC 侧 Non-3GPP WiFi 用户 IP/Port 变化上报 PCRF——纯被动响应型，License前置(LKV3WPWULI11) + 依赖PCC基本功能Gx通道，无专属MML命令，复用1-00012/13/14
 
