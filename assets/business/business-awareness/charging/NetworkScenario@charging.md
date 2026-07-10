@@ -41,5 +41,5 @@ status: draft
 ## 关联
 
 - 上游域：[业务感知](business/business-awareness/BusinessDomain@business-awareness.md)
-- 下游方案：[融合计费](business/business-awareness/charging/ConfigurationSolution@charging-converged.md)（已建范本）、[[charging-online]]、[[charging-offline]]、[[charging-content]]、[[charging-metering]]、[[charging-quota-exhaust]]、[[charging-fallback]]（待建）
+- 下游方案（7 个）：[融合计费](business/business-awareness/charging/ConfigurationSolution@charging-converged.md) · [在线计费](business/business-awareness/charging/ConfigurationSolution@charging-online.md) · [离线计费](business/business-awareness/charging/ConfigurationSolution@charging-offline.md) · [内容计费基础](business/business-awareness/charging/ConfigurationSolution@charging-content.md) · [计量形态增强](business/business-awareness/charging/ConfigurationSolution@charging-metering.md) · [配额降速](business/business-awareness/charging/ConfigurationSolution@charging-quota-exhaust.md) · [兜底默认](business/business-awareness/charging/ConfigurationSolution@charging-fallback.md)
 - 证据：[计费场景业务图谱_旧版参考](evidence/business/charging/计费场景业务图谱_旧版参考.md)（EV-BIZ-charging-00，含 NS-CH-01 计费场景定义 + 边界 + 8 决策点）

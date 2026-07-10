@@ -20,11 +20,11 @@ status: draft
 
 - 含场景：
   - [计费](business/business-awareness/charging/NetworkScenario@charging.md) — 按业务差异化计费（离线/在线/融合）
-  - [[带宽控制]]（NetworkScenario@bandwidth-control）·待建
+  - [带宽控制](business/business-awareness/bandwidth-control/NetworkScenario@bandwidth-control.md) — 按业务差异化限速/整形/FUP/GBR
   - [[访问限制]]（NetworkScenario@access-control）·待建
 - 不属于本域：基础接入与会话连通性（APN/地址池/路由，属接入与会话管理域）、网元对接开局（属网元对接域）。业务感知聚焦"识别业务 → 策略/计费控制"，不聚焦"会话建立 / 路由连通"。
 
 ## 关联
 
-- 下游场景：[计费](business/business-awareness/charging/NetworkScenario@charging.md)（已建）、[[带宽控制]]、[[访问限制]]（待建）
+- 下游场景：[计费](business/business-awareness/charging/NetworkScenario@charging.md) · [带宽控制](business/business-awareness/bandwidth-control/NetworkScenario@bandwidth-control.md) · [[访问限制]]（待建）
 - 证据：[计费场景业务图谱_旧版参考](evidence/business/charging/计费场景业务图谱_旧版参考.md)（EV-BIZ-charging-00，含业务感知域定义 + 三场景边界 + 共享 backbone 说明）

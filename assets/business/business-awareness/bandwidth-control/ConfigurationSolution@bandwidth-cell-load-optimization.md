@@ -45,7 +45,7 @@ status: draft
 
 ### UDG 基础：PCC 基本功能（[2-00018](task/UDG/20.15.2/2-00018.md)）
 
-走标准配置方法（见 feature task）。小区负荷方案依赖 PCC 通道从 PCRF 获取动态策略——UDG 侧 PCCPOLICYGRP+RULE+USERPROFILE 骨架为 PCRF 下发策略的本地承载容器。License `LKV3G5PCCB01`（控制项 82209737）须开启。
+走标准配置方法（见 feature task）。小区负荷方案依赖 PCC 通道从 PCRF 获取动态策略——UDG 侧 PCCPOLICYGRP+RULE+USERPROFILE 骨架为 PCRF 下发策略的本地承载容器。License `LKV3G5PCCB01`（控制项 82209825）须开启。
 
 ### UDG 基础：SA-Basic（[2-00019](task/UDG/20.15.2/2-00019.md)）
 

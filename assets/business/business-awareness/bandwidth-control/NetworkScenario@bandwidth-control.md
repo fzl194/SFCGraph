@@ -9,7 +9,7 @@ status: draft
 
 # 带宽控制
 
-> 按业务差异化限速/整形/FUP 降速/GBR 保证。属于[业务感知](business/business-awareness/BusinessDomain@business-awareness.md)域。含约 10-12 个方案（BWM 主干 + Shaping/FUP/QoS 触发/无线资源等变种）。
+> 按业务差异化限速/整形/FUP 降速/GBR 保证。属于[业务感知](business/business-awareness/BusinessDomain@business-awareness.md)域。含 12 个方案（BWM 主干 + Shaping/FUP/QoS 触发/无线资源等变种）。
 
 ## 概览
 
@@ -30,21 +30,21 @@ status: draft
 
 | 业务诉求 | 推荐方案 | 理由 |
 |---|---|---|
-| 按业务/用户/用户组/切片/时段限速（CAR/Shaping/分级） | → [CS BWM 基础限速](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-bwm.md)（BWM 范本，跨网元 UDG+UNC 编排 9 子场景） | 主干方案，覆盖 UDG 8 场景+UNC 211005 规则传递 |
-| 仅按业务 Shaping（流量整形） | → CS Shaping 业务整形 | SHAPING 限用户级（SUBSCRIBER_SPECIFIC），组/整机只能 CAR |
-| 用户/业务级累计流量超量降速/重置 | → CS FUP 累计流量策略控制 | UDG 110312 + 020353 + UNC 211009/109104，累计配额到阈值触发降速 |
-| 业务触发 QoS 保证（GBR） | → CS QoS 触发保证 | UDG 020358 + UNC 109107，VoNR/视频业务保带宽 |
-| 终端系统码率差异化 | → CS 终端系统码率差异化 | UDG 110301，按 OS 类型（Android/iOS）差异化限速 |
-| 上下行解耦视频承载信令 | → CS 视频承载信令控制 | UDG 110302 |
-| 业务流标识无线资源优化（FPI） | → CS 业务流标识无线优化 | UDG 110331，FPI 标记触发 RAN 调度 |
-| 小区负荷上报无线资源优化 | → CS 小区负荷无线优化 | UDG 110332 + UNC 211101 |
-| IM 类业务无线资源管控 | → CS IM 业务无线管控 | UDG 020359，REMARK_FPI 标记 |
-| 应用检测触发（HTTP/P2P 应用） | → CS ADC 应用检测触发 | UDG 020357 + UNC 109102，ADC 上报 PCRF/PCF 触发带宽 |
-| 终端异常下行流量检测 | → CS 异常流量检测 | UDG 020305，异常流检测与控制 |
-| 接入点策略控制 | → CS 接入点策略 | UNC 109108，APN 维度的策略控制 |
+| 按业务/用户/用户组/切片/时段限速（CAR/Shaping/分级） | → [BWM 基础限速](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-bwm.md) | 主干方案，9 子场景（用户/组/整机×TOS/协议/时段/切片/APN） |
+| 仅按业务 Shaping（流量整形） | → [Shaping 业务整形](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-shaping.md) | SHAPING 限用户级；110313 突破组级限制 |
+| 用户/业务级累计流量超量降速/重置 | → [FUP 累计流量](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-fup.md) | 会话级/业务级二选一，URR MONITORINGKEY 累计达阈值触发 |
+| 业务触发 QoS 保证（GBR） | → [QoS 触发保证](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-qos-trigger.md) | 专有承载/QoS Flow，与 BWM 正交 |
+| 终端系统码率差异化 | → [终端码率差异化](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-coderate-terminal.md) | 110301，BWMRULE 加终端平台维度（共享 BWM 对象族） |
+| 上下行解耦视频承载信令 | → [视频承载信令控制](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-video-bearer.md) | 110302，专有承载 QoS |
+| 业务流标识无线资源优化（FPI） | → [FPI 无线优化](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-fpi-optimization.md) | 110331，FPI+GTP-U 扩展头触发 RAN 调度 |
+| 小区负荷上报无线资源优化 | → [小区负荷无线优化](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-cell-load-optimization.md) | 110332+UNC 211101，GTP-U 上报+PCC 触发 |
+| IM 类业务无线资源管控 | → [IM 无线管控](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-im-radio.md) | 020359，DSCP REMARK_FPI 标记 |
+| 应用检测触发（HTTP/P2P 应用） | → [ADC 应用检测触发](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-adc-trigger.md) | 020357+UNC 109102，ADC 上报 PCRF 触发带宽（上游触发源） |
+| 终端异常下行流量检测 | → [异常流量检测](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-anomaly-detection.md) | 020305，**边界：安全/检测类**，依赖内容计费，可触发带宽/阻断 |
+| 接入点策略控制 | → [接入点策略](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-apn-strategy.md) | UNC 109108，位置上报（Non-3GPP/WiFi），UNC 主导 |
 
 ## 关联
 
 - 上游域：[业务感知](business/business-awareness/BusinessDomain@business-awareness.md)
-- 下游方案：[BWM 基础限速](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-bwm.md)（范本，待建）、[[bandwidth-shaping]]、[[bandwidth-fup]]、[[bandwidth-qos-trigger]]、[[bandwidth-coderate-terminal]]、[[bandwidth-video-bearer]]、[[bandwidth-fpi-optimization]]、[[bandwidth-cell-load-optimization]]、[[bandwidth-im-radio]]、[[bandwidth-adc-trigger]]、[[bandwidth-anomaly-detection]]、[[bandwidth-apn-strategy]]（待建）
+- 下游方案（12 个）：[BWM 基础限速](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-bwm.md) · [Shaping 业务整形](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-shaping.md) · [FUP 累计流量](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-fup.md) · [QoS 触发保证](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-qos-trigger.md) · [终端码率差异化](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-coderate-terminal.md) · [视频承载信令控制](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-video-bearer.md) · [FPI 无线优化](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-fpi-optimization.md) · [小区负荷无线优化](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-cell-load-optimization.md) · [IM 无线管控](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-im-radio.md) · [ADC 应用检测触发](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-adc-trigger.md) · [异常流量检测](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-anomaly-detection.md) · [接入点策略](business/business-awareness/bandwidth-control/ConfigurationSolution@bandwidth-apn-strategy.md)
 - 证据：[UDG BWM 特性概述](evidence/business/bandwidth-control/GWFD-110311 基于业务感知的带宽控制特性概述_77219469.md) + [实现原理](evidence/business/bandwidth-control/实现原理_77219470.md) + [9 激活子场景](evidence/business/bandwidth-control/)（BWM 主干） + [UNC BWM 概述](evidence/business/bandwidth-control/特性概述_79619204.md) + [SA-Basic](evidence/business/bandwidth-control/UDG_SA-Basic特性概述.md) + [PCC](evidence/business/bandwidth-control/UDG_PCC基本功能特性概述.md) + [UNC PCC 5G](evidence/business/bandwidth-control/UNC_PCC基本功能5G特性概述.md)

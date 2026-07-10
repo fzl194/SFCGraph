@@ -50,7 +50,7 @@ IM 业务无线管控解决"IM 类业务（QQ/MSN/微信等）在无线资源有
 
 ### UDG 基础：PCC 基本功能（[2-00018](task/UDG/20.15.2/2-00018.md)）
 
-走标准配置方法（见 feature task）。IM 无线管控复用其 PCCPOLICYGRP+RULE+USERPROFILE 骨架——配置重叠，但 RULE 的 `POLICYTYPE=REMARK_FPI` 是 IM 专属变种（区别 BWM 的 `POLICYTYPE=BWM`）。License `LKV3G5PCCB01`（控制项 82209737）须开启。
+走标准配置方法（见 feature task）。IM 无线管控复用其 PCCPOLICYGRP+RULE+USERPROFILE 骨架——配置重叠，但 RULE 的 `POLICYTYPE=REMARK_FPI` 是 IM 专属变种（区别 BWM 的 `POLICYTYPE=BWM`）。License `LKV3G5PCCB01`（控制项 82209825）须开启。
 
 ### 跨网元/跨特性协同
 
