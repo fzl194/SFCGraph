@@ -59,7 +59,12 @@
 4. 建 CS wiki（模板 §4）：叙述式知识沉淀 + 向下引用 task
 5. 拷证据：方案/业务专题 md → assets/evidence/business/{场景}/（自包含）
 6. 双向链接回填：被引用的 feature task / compound 的 `## 关联` → `- 被引用于:` 行追加本 CS（per-task-md，非 index.md）
-7. 更新 assets/business/index.md（标 done）+ task 侧 per-task-md 被引用于（主流程做，非并行 Agent）
+7. 更新 **3 处全景**（★主流程做，非并行 Agent；审查经验：回填 subagent 易漏 NS 只更 index）：
+   - **NS 决策点表**：本 CS 加入方案路由表（真实链接 `→ [CS 名](business/.../ConfigurationSolution@xxx.md)`，**非纯文字、非 `[[占位]]`**）
+   - **NS 关联段下游方案**：占位 `[[xxx]]` → 真实链接，去"待建"措辞
+   - **assets/business/index.md**：本 CS 标 done（去占位）
+   - **BD 关联/范围段**：若本 CS 是所属 NS 的首个 CS，把 BD 里该 NS 的 `[[占位]]` 改链接
+   - **per-task-md 被引用于**：被本 CS 引用的 task 追加反向链接
 ```
 
 ---
