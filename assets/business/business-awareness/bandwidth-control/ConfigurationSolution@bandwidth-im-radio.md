@@ -40,7 +40,7 @@ IM 业务无线管控解决"IM 类业务（QQ/MSN/微信等）在无线资源有
 - **RULE POLICYTYPE=REMARK_FPI**（核心变种）：`ADD RULE:POLICYTYPE=REMARK_FPI` + REMARKFPISEL=FPI + FPIVALUE={DSCP 映射值}——将 IM 业务流标记 DSCP（如 AF12）传无线侧。区别于 BWM 的 `POLICYTYPE=BWM` 和计费的 `POLICYTYPE=PCC`。
 - **三四层过滤 ANY + 七层 IM 协议**：三四层 FILTER 配 ANY（全匹配兜底），IM 识别靠 `ADD PROTBINDFLOWF` 绑定 IM 协议名（如 `qq_im`）——依赖 SA-IM 子特性的协议特征库。
 - **MOD USERPROFILE 禁用 Alias Marking**（★ 华为私有核心变种）：DSCP 标记方式需 `MOD USERPROFILE:ALIASMARKFLAG=DISABLE`——否则系统不改写报文 ToS 域、DSCP 标记不生效。仅 UDG+BSC/RNC 均为华为设备时支持。
-- **License**：`LKV3G5WIMR01`（控制项 82200DHE）。
+- **License**：`LKV3G5ITSR01`（控制项 82200BLD）。
 
 **排除项**：不走 BWM 对象族（无 BWMSERVICE/BWMCONTROLLER，与 BWM 正交）；不建专有承载（无 SADEDICBEARER/QOSPROP，与 QoS 触发正交）；不配 URR 计费（与计费族正交）。
 
@@ -77,7 +77,7 @@ IM 业务无线管控解决"IM 类业务（QQ/MSN/微信等）在无线资源有
 
 ## 约束
 
-- **License 前置**（critical）：UDG `LKV3G5WIMR01`（020359）+ `LKV3G5SABS01`（SA-Basic）+ `LKV3G5PCCB01`（PCC基本功能）—— 三个 License 须同时开启。
+- **License 前置**（critical）：UDG `LKV3G5ITSR01`（020359）+ `LKV3G5SABS01`（SA-Basic）+ `LKV3G5PCCB01`（PCC基本功能）—— 三个 License 须同时开启。
 - **依赖 SA-Basic + SA-IM 子特性**（critical）：IM 协议识别依赖 SA-Basic 特征库 + SA-IM 子特性的 IM 协议特征——未激活则 `PROTOCOLNAME=qq_im` 等引用无效。
 - **依赖 PCC 基本功能**（critical）：PCRF 下发 PCC 规则通道——PCC backbone 未配则 RULE 无 PCCPOLICYGRP 可绑。
 - **MOD USERPROFILE 禁用 Alias Marking**（critical，★ 华为私有核心）：`ALIASMARKFLAG=DISABLE` 须配——否则 DSCP 标记不生效，IM 无线管控失效。仅 UDG+BSC/RNC 均为华为设备时支持。

@@ -236,6 +236,7 @@ status: draft
 
 - **前置门（critical）**：CS 涉及的 feature task `2-`（UDG + UNC 两侧）必须先全建完，才能开建 CS。有缺口 → 先补建或降级待建，不带着断链占位硬建。"建完"= 结构完整、内容齐全、无 `[[占位]]`（结构口径）；`status` 升 `active` 是单独的人审步骤，可后置。
 - **额外步骤进 task（critical）**：方案特有的命令不空写在 CS 叙述里——单命令建 atom `0-`、多命令建 compound `1-`，进 `task/`，CS 引用。CS「配置与协同」里每个命令/参数要可追溯到 task 或证据。
+- **License 编号须原始证据交叉验证（critical，审查经验沉淀）**：License 编号（`LKV3XXXXXX`）+ 控制项（`82209xxx`）**必须从原始特性概述文档 License 表 / feature task 交叉核实，不可按命名规律推断**。实战教训（带宽族）：`LKV3G5ABNT01`（推自 ABNTraffic）、`LKV3G5WIMR01`（推自 WIMRadio）、`LKV6CHGBILL02`（推自 CHGBILL，且前缀不符 LKV3G5 同族规律=编造）全错——正确应为 `LKV3G5ADTD01`/`LKV3G5ITSR01`/`LKV3G5BCBC01`。License 错导致配置生成开错 License、功能不生效。构建时交叉验证；审视时穷尽追溯证据再判 critical。
 - **叙述式非字段填表（critical）**：不沿用旧三层图谱写死字段（scopes/participants/uses_semantic_object/constrained_by/has_decision 表格）。用 §4 叙述骨架。
 - **证据自包含**：方案/业务专题 md 拷进 `assets/evidence/business/{场景}/`（CLAUDE.md §7 可剥离）。evidence 文件命名 `{描述名}_{原始文档ID}.md`。证据**在「关联」段以 markdown 链接列出**（镜像 feature task，**不设 front matter source_evidence_ids**，避免与关联冗余）。
 - **双向链接闭环**：CS ↔ 被引用的 feature task/compound（**per-task-md** 的 `## 关联` → `- 被引用于:` 追加本 CS，不是 index.md）。Grep 新文件无 `[[` 残留占位、无断链。

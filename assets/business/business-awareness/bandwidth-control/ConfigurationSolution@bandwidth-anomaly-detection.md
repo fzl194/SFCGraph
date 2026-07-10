@@ -42,13 +42,13 @@ status: draft
 - **APN 级检测开关**（核心变种）：`ADD ABNTRAFFICDT:APN={apn},SWITCH=ENABLE`——对指定 APN 开启异常下行流量检测。区别于 BWM 的 BWMSERVICE（非 APN 级限速对象）。
 - **基于流行为的检测**（可选增强）：`ADD ABNTRAFFICDT:TRAFFICBEHAVIORSWITCH=ENABLE`——增强识别能力（基于流行为模式判断异常）。
 - **可选检测报文阈值**（方案二）：`SET ABNTRADTTHR`——调整检测报文阈值（按网络安全需求调整，默认值见特性 wiki）。
-- **License**：`LKV3G5ABNT01`（控制项 82209755，按特性 wiki 核实）。
+- **License**：`LKV3G5ADTD01`（控制项 82200BAJ，按特性 wiki 核实）。
 
 **排除项**：不走 BWM 对象族（无 BWMSERVICE/BWMCONTROLLER/BWMRULE，与 BWM 正交）；不配 PCCPOLICYGRP/RULE/USERPROFILE（不依赖 PCC backbone）；不配 ADCPARA/QOSPROP/SADEDICBEARER（不建专有承载）；不配 URR 计费三件套（虽依赖内容计费底座，但本身不做计费）。
 
 ### UDG 基础：内容计费基本功能（[2-00003](task/UDG/20.15.2/2-00003.md)）
 
-走标准配置方法（见 feature task）。异常流量检测依赖内容计费的 SA 业务流检测能力——内容计费的 URR 三件套+过滤链为业务流识别底座。License `LKV6CHGBILL02`（控制项 82209731，按特性 wiki 核实）须开启。**注意**：异常流量检测本身不做计费——仅复用内容计费的识别底座。
+走标准配置方法（见 feature task）。异常流量检测依赖内容计费的 SA 业务流检测能力——内容计费的 URR 三件套+过滤链为业务流识别底座。License `LKV3G5BCBC01`（控制项 82209822，按特性 wiki 核实）须开启。**注意**：异常流量检测本身不做计费——仅复用内容计费的识别底座。
 
 ### UDG 基础：SA-Basic（[2-00019](task/UDG/20.15.2/2-00019.md)）
 
@@ -79,7 +79,7 @@ status: draft
 
 ## 约束
 
-- **License 前置**（critical）：UDG `LKV3G5ABNT01`（020305）+ `LKV6CHGBILL02`（内容计费 020301）+ `LKV3G5SABS01`（SA-Basic）—— 三个 License 须同时开启。
+- **License 前置**（critical）：UDG `LKV3G5ADTD01`（020305）+ `LKV3G5BCBC01`（内容计费 020301）+ `LKV3G5SABS01`（SA-Basic）—— 三个 License 须同时开启。
 - **依赖内容计费基本功能**（critical，原文明示）：异常流量检测基于业务流检测，需开启内容计费基本功能——内容计费 backbone 未配则检测底座缺失。
 - **依赖 SA-Basic**（critical）：内容计费的 SA 识别链底座——未激活则业务流识别失效。
 - **依赖 APN 已配置**（critical）：`ADD ABNTRAFFICDT` 的 APN 须已存在——未配置 APN 则检测开关无法绑。

@@ -39,7 +39,7 @@ status: draft
 
 走标准配置方法（见 feature task，UNC 侧仅 1 步 License）。**本方案核心变种**：
 
-- **UNC 侧 activation 极简**（纯被动响应型）：仅 `SET LICENSESWITCH`（`LKV3WPWULI11`，控制项 82209749）——License 加载后自动生效，**无专属 MML 配置命令**。位置变化上报（Event-Trigger 43）+ 策略下发为运行时自动行为。
+- **UNC 侧 activation 极简**（纯被动响应型）：仅 `SET LICENSESWITCH`（`LKV3WPWULI11`，控制项 82209475）——License 加载后自动生效，**无专属 MML 配置命令**。位置变化上报（Event-Trigger 43）+ 策略下发为运行时自动行为。
 - **不配任何 PCCPOLICYGRP/RULE/USERPROFILE**（★ 本方案核心排除）：接入点策略本身不下发本地规则——位置变化经 Gx 上报 PCRF，策略由 PCRF 动态下发（经 N4 透传 UDG 执行）。
 
 **排除项**：不走 BWM 对象族（无 BWMSERVICE/BWMCONTROLLER）；不配本地 RULE/策略组（策略由 PCRF 下发）；不配 ADCPARA/QOSPROP（不建专有承载/应用检测）。
@@ -77,7 +77,7 @@ status: draft
 
 ## 约束
 
-- **License 前置**（critical）：UNC 侧 `LKV3WPWULI11`（109108，控制项 82209749）+ `LKV2PCCBF01`+`LKV3W9SPCC11`（PCC基本功能 109101，控制项 82207979）—— 未开则位置上报功能不生效。
+- **License 前置**（critical）：UNC 侧 `LKV3WPWULI11`（109108，控制项 82209475）+ `LKV2PCCBF01`+`LKV3W9SPCC11`（PCC基本功能 109101，控制项 82207979）—— 未开则位置上报功能不生效。
 - **依赖 PCC 基本功能**（critical，原文明示）：UNC 侧 PCC 基本功能的 Gx 接口通道为 Event-Trigger(43) 上报载体——PCC backbone 未配则上报链断。
 - **无专属 MML 配置命令**（critical，★ 本特性核心）：License 加载后自动生效——原文明示「无相关 MML 命令 / 无相关告警 / 无相关软参 / 无相关测量指标」。配置生成仅编 License 步骤 + 引用 PCC 前置。
 - **PCRF 须配置位置响应策略**（critical）：PCRF 侧须订阅 Event-Trigger(43) + 配置位置变化响应策略——否则 UNC 上报后无策略下发。

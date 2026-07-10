@@ -38,7 +38,7 @@ status: draft
 
 走标准配置方法（见 feature task，UDG 侧仅 2 步）。**本方案核心变种**：
 
-- **UDG 侧 activation 极简**：`SET LICENSESWITCH`（`LKV3G5WOCR01`，控制项 82209917）+ `SET APNREPORTATTR`（`CONGESTIONRPT=ENABLE`）——仅对指定 APN 开启拥塞上报开关。
+- **UDG 侧 activation 极简**：`SET LICENSESWITCH`（`LKV3G5WOCR01`，控制项 82200DHW）+ `SET APNREPORTATTR`（`CONGESTIONRPT=ENABLE`）——仅对指定 APN 开启拥塞上报开关。
 - **不配任何过滤链/规则/PCC 策略组**（★ 本方案核心排除）：策略由 PCRF 动态下发（特性 wiki 明示"PCRF 下发 CELL_CONGESTION_CHANGE trigger + 下发策略"），UDG 仅作透传 + 上报。
 
 **排除项**：不走 BWM 对象族（无 BWMSERVICE/BWMCONTROLLER/BWMRULE）；不配 FILTER/FLOWFILTER/RULE/USERPROFILE（策略非本地匹配）；不配 ADC/QOSPROP/SADEDICBEARER（不建专有承载）。
@@ -55,7 +55,7 @@ status: draft
 
 走标准配置方法（见 feature task，UNC 侧仅 2 步）。**本方案核心变种**：
 
-- **UNC 侧 activation 极简**：`SET LICENSESWITCH`（`LKV3W9WOCR11`，控制项 82209917）+ `SET APNREPORTATTR`（`CONGESTIONRPT=ENABLE`）——License 控制项与 UDG 侧不同（UNC=`LKV3W9WOCR11` / UDG=`LKV3G5WOCR01`）。
+- **UNC 侧 activation 极简**：`SET LICENSESWITCH`（`LKV3W9WOCR11`，控制项 82209457）+ `SET APNREPORTATTR`（`CONGESTIONRPT=ENABLE`）——License 控制项与 UDG 侧不同（UNC=`LKV3W9WOCR11` / UDG=`LKV3G5WOCR01`）。
 - **UNC 侧纯中继**（★ 跨网元澄清）：UNC（PGW-C/SMF）接收 PGW-U 经 N4 上报的小区负荷状态 → 经 Gx/N7 CCR-U 上报 PCRF（CELL-CONGESTION-CHANGE(1003) trigger）→ PCRF 决策后下发 PCC 策略经 N4 透传 PGW-U 执行。UNC **不执行限速、不配规则/策略组**。
 
 ### 跨网元/跨特性协同
@@ -77,7 +77,7 @@ status: draft
 
 ## 约束
 
-- **License 双前置**（critical）：UDG 侧 `LKV3G5WOCR01`（110332，控制项 82209917）+ UNC 侧 `LKV3W9WOCR11`（211101，控制项 82209917）——两侧 License 控制项不同，未开则小区负荷上报功能不生效。
+- **License 双前置**（critical）：UDG 侧 `LKV3G5WOCR01`（110332，控制项 82200DHW）+ UNC 侧 `LKV3W9WOCR11`（211101，控制项 82209457)——两侧 License 控制项不同，未开则小区负荷上报功能不生效。
 - **依赖 PCC 基本功能**（critical）：UDG+UNC 两侧均依赖 PCC 基本功能 Gx/N7 通道承载 CELL-CONGESTION-CHANGE trigger——PCC backbone 未配则上报链断。
 - **两侧 APNREPORTATTR 必配一致**（critical）：UDG 与 UNC 两侧 `SET APNREPORTATTR` 的 APN + `CONGESTIONRPT=ENABLE` 须一致——不一致则单侧上报、链路断裂。
 - **RAN 必须支持**（critical）：无线侧网元须支持经 GTP-U 扩展头上报小区负荷状态——否则 UDG 收不到上报。

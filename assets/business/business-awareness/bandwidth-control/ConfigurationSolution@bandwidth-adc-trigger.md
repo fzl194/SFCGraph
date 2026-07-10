@@ -43,7 +43,7 @@ ADC 应用检测触发解决"按应用类型（HTTP/P2P/视频等）动态触发
 - **ADCPARA 流信息上报开关**（核心变种）：`ADD ADCPARA` 配流信息上报开关——ADC 检测到应用后是否上报 PCRF/PCF 的控制开关。区别于 BWM 的 BWMSERVICE。
 - **PCCPOLICYGRP ADCMUTEFLAG=DISABLE**（ADC 专属变种）：`ADD PCCPOLICYGRP:ADCMUTEFLAG=DISABLE`——允许 ADC 检测结果触发 PCC 策略。区别于 BWM 的 `POLICYTYPE=BWM` 和计费的无 ADCMUTEFLAG。
 - **两条规则下发路径**（DP-1，二选一）：① 预定义规则（PCRF 下发 APPLICATION_START/STOP Event-Trigger，UDG 本地配全量 9 步：三四层+七层 URL+ADCPARA+计费属性+PCC 策略组+ADC/PCC 规则+用户模板绑定）；② 动态规则下发（PCRF 直接下发 appid，UDG 本地仅配 ADCPARA+计费属性最小集）。
-- **License**：`LKV3G5ADCF01`（控制项 82209755）。
+- **License**：`LKV3G5ADCF01`（控制项 82200AFK）。
 
 **排除项**：不走 BWM 对象族（无 BWMSERVICE/BWMCONTROLLER/BWMRULE，与 BWM 正交——ADC 是触发源，BWM 是执行体）；不建专有承载（无 SADEDICBEARER/QOSPROP，与 QoS 触发正交）；ADC 本身不执行限速（执行由 PCRF 下发的下游策略决定）。
 
@@ -85,7 +85,7 @@ ADC 应用检测触发解决"按应用类型（HTTP/P2P/视频等）动态触发
 
 ## 约束
 
-- **License 前置**（critical）：UDG `LKV3G5ADCF01`（020357，控制项 82209755）+ `LKV3G5SABS01`（SA-Basic）+ `LKV3G5PCCB01`（PCC基本功能）+ UNC `LKV2ADCBF01`+`LKV3W9SADC11`（109102，控制项 82207979）—— 未开则 ADC 检测/上报功能不生效。
+- **License 前置**（critical）：UDG `LKV3G5ADCF01`（020357，控制项 82200AFK）+ `LKV3G5SABS01`（SA-Basic）+ `LKV3G5PCCB01`（PCC基本功能）+ UNC `LKV2ADCBF01`+`LKV3W9SADC11`（109102，控制项 82207979）—— 未开则 ADC 检测/上报功能不生效。
 - **依赖 SA-Basic**（critical）：ADC 协议特征库依赖 SA-Basic 的特征库+解析库底座——未激活则应用识别失效。
 - **必须同时开启 PCC 基本功能**（critical，原文明示）：UDG+UNC 两侧 PCC 基本功能须开启——PCC backbone 未配则 ADC 规则链无载体、上报通道断裂。
 - **PCCPOLICYGRP ADCMUTEFLAG=DISABLE**（critical）：须显式配 `ADCMUTEFLAG=DISABLE`——否则 ADC 检测结果被静默，不触发 PCC 策略。
