@@ -1,0 +1,156 @@
+# WSFD-109101 PCC基本功能特性概述（适用于5G）
+
+- [适用NF](#ZH-CN_CONCEPT_0171770359__1.3.1.1)
+- [定义](#ZH-CN_CONCEPT_0171770359__1.3.2.1)
+- [客户价值](#ZH-CN_CONCEPT_0171770359__1.3.3.1)
+- [应用场景](#ZH-CN_CONCEPT_0171770359__1.3.4.1)
+- [可获得性](#ZH-CN_CONCEPT_0171770359__1.3.5.1)
+- [与其他特性的交互](#ZH-CN_CONCEPT_0171770359__1.3.6.1)
+- [对系统的影响](#ZH-CN_CONCEPT_0171770359__1.3.7.1)
+- [应用限制](#ZH-CN_CONCEPT_0171770359__1.3.8.1)
+- [原理概述](#ZH-CN_CONCEPT_0171770359__1.3.9.1)
+- [计费与话单](#ZH-CN_CONCEPT_0171770359__1.3.10.1)
+- [特性规格](#ZH-CN_CONCEPT_0171770359__1.3.11.1)
+- [遵循标准](#ZH-CN_CONCEPT_0171770359__1.3.12.1)
+- [发布历史](#ZH-CN_CONCEPT_0171770359__1.3.13.1)
+
+#### [适用NF](#ZH-CN_CONCEPT_0171770359)
+
+AMF、SMF
+
+#### [定义](#ZH-CN_CONCEPT_0171770359)
+
+5G的PCC（Policy and Charging Control）基本功能用于进行UE选网和路由策略、接入和移动性策略及会话管理策略（含计费）的控制，从而合理利用网络资源，提升数据业务流量的经营价值。
+
+> **说明**
+> PCC部署或改造需要评估现有网络的业务模型、资费策略、网络资源占用情况。具体部署或改造时，请联系华为公司当地办事处获取专门的系统集成服务支持。
+
+#### [客户价值](#ZH-CN_CONCEPT_0171770359)
+
+| 受益方 | 受益描述 |
+| --- | --- |
+| 运营商 | 强化数据业务精细化运营能力，优化网络资源使用，提升用户体验，提升网络的智能化水平，增强竞争力。 |
+| 用户 | - 可以选择更为多样化的资费方案。<br>- 能够体会到更灵活的带宽控制带来的良好上网感受。 |
+
+#### [应用场景](#ZH-CN_CONCEPT_0171770359)
+
+![](WSFD-109101 PCC基本功能特性概述（适用于5G）_71770359.assets/zh-cn_image_0233489698_2.png)
+
+#### [可获得性](#ZH-CN_CONCEPT_0171770359)
+
+**涉及NF**
+
+| 涉及NF | 支持版本 | 功能说明 |
+| --- | --- | --- |
+| AMF | UNC 20.0.0及后续版本 | - 从PCF接收UE选网和路由策略、接入和移动性策略，分别传递给UE和(R)AN。<br>- 向PCF上报PCF订阅的事件。<br>- 运营商未部署PCF时，根据本地配置策略进行接入和移动性策略控制。 |
+| SMF | UNC 20.0.0及后续版本 | - 从PCF接收并执行会话管理策略。<br>- 向PCF上报PCF订阅的事件。<br>- 运营商未部署PCF时，根据本地配置策略进行会话策略控制。 |
+| UPF | UDG 20.0.0及后续版本 | - 执行数据包检测。<br>- 执行门控、重定向等用户面策略执行。 |
+| PCF | 无特殊要求 | 进行UE策略、接入和移动性策略和会话管理策略决策与控制。 |
+| UCF | 无特殊要求 | 存储用户信息和业务签约信息，为PCF提供策略决策所需的签约输入。 |
+| UE | 无特殊要求 | 执行UE策略。 |
+
+**License支持**
+
+本特性只有获得了License许可后才能获得该特性的服务，对应的License控制项为 ：
+
+| 适用NF | License控制项 |
+| --- | --- |
+| AMF | 82209964 LKV2PCCBF01 PCC基本功能-UAM |
+| SMF | 82207979 LKV3W9SPCC11 PCC基本功能 |
+
+#### [与其他特性的交互](#ZH-CN_CONCEPT_0171770359)
+
+本特性不涉及与其他特性的交互。
+
+#### [对系统的影响](#ZH-CN_CONCEPT_0171770359)
+
+用户激活及用户业务进行过程中，SMF需要与PCF、UPF、AMF等周边网元进行交互，用户激活性能将下降。
+
+详细性能影响需要基于流量模型进行评估，请联系华为技术支持获取服务。
+
+#### [应用限制](#ZH-CN_CONCEPT_0171770359)
+
+- 预定义规则的处理和UPF有较强的相关性，SMF和其它厂家UPF对接可能导致部分策略无法有效执行。
+- 支持PCF主备容灾且“PCF负荷分担参数（PCFLBPARA）”取值为“GROUPID”时，SMF要求主备PCF的GroupID必须相同。
+- 支持PCF主备容灾且“PCF负荷分担参数（PCFLBPARA）”取值为“PRIORITY”时，SMF要求主备PCF的PRIORITY必须不同。
+- 漫游用户，不支持创建UE策略。
+
+#### [原理概述](#ZH-CN_CONCEPT_0171770359)
+
+PCC中的策略分为AM策略（Access and Mobility Policy）、UE策略（UE Policy）、SM策略（Session Management Policy）三种，分别控制如何进行接入和移动性管理、UE如何选网及路由，以及如何进行QoS、计费等会话管理。
+
+- SM策略由会话规则（定义Session-AMBR、默认QoS等）和PCC规则（定义具体业务流的QoS、计费参数等）组成。
+- AM策略或UE策略由AMF与PCF交互获得，AMF上可以本地配置是否与PCF交互获取相应策略。
+
+**动态PCC与本地PCC**
+
+SM策略可以由SMF与PCF交互获得，也可以在SMF上本地配置。当SMF通过PCF获取SM策略时，称为动态PCC；当SMF直接使用本地配置的策略，不与PCF交互时，称为本地PCC。
+
+在UNC上可以配置指定的DNN使用本地PCC。假设网络中部署了PCF，UNC上配置了2个DNN，且配置DNN1使用本地PCC，DNN2使用动态PCC，则可以在一个UNC上实现基于DNN混合使用动态PCC和本地PCC。
+
+- **动态PCC**
+  如 [图1](#ZH-CN_CONCEPT_0171770359__fig4335109271) 所示，动态PCC通过PCF向AMF/SMF下发UE/AM/SM策略和对应的PCR Trigger（Policy control request trigger），PCR Trigger是AMF/SMF后续向PCF发起交互的条件。
+
+  **图1** 动态PCC下发策略示意图
+
+  ![](WSFD-109101 PCC基本功能特性概述（适用于5G）_71770359.assets/zh-cn_image_0173918362_2.png "点击放大")
+  **PCF发现和选择**
+  AMF/SMF在首次向PCF发起交互之前，需要先通过PCF发现和选择流程，确定与哪个PCF进行交互，如 [表1](#ZH-CN_CONCEPT_0171770359__table1340181019275) 所示。
+  SMF支持PCF主备容灾。SMF支持PCF主备容灾时，对同一条消息执行一次failover。例如，建立PDU会话时，SMF向当前PCF发送消息，若超时未收到响应消息，则选择另一个PCF；如果向新选择的PCF发送成功，则新选中的PCF被记录为主用PCF。如果SMF向新选择的PCF发送消息也超时，则根据 [**SET PCCFAILACTION**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/会话管理/PCC管理/基本功能/PCC公共参数/设置PCC故障处理（SET PCCFAILACTION）_09897058.md) 配置决定是回落到本地PCC，还是会话建立失败。
+  *表1 AMF/SMF发现和选择PCF的方式和因素*
+
+  | 发起者 | 发现PCF实例的方式 | 选择PCF的考虑因素 | 说明 |
+  | --- | --- | --- | --- |
+  | AMF | - 切换时，新AMF从老AMF处获取。<br>- 基于运营商策略本地配置。<br>- 通过NRF的NF发现流程获取。 | - 本地运营商策略<br>- 选择的DNN | - AMF的本地运营商策略可以通过[**ADD PCFSELPLCY**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/5G接入业务管理/移动性管理/NF发现和选择管理/PCF选择策略管理/增加PCF选择策略（ADD PCFSELPLCY）_44006528.md)命令配置。<br>- AMF可能基于运营商策略在PDU会话建立过程中将选择的PCF发送给SMF，以使AMF和SMF使用同一个PCF。 |
+  | SMF | - 在PDU会话建立过程中，从AMF处获取。<br>- 基于运营商策略本地配置。<br>- 通过NRF的NF发现流程获取。 | - 本地运营商策略<br>- 选择的DNN<br>- PDU会话的S-NSSAI<br>- 用户的SUPI范围 | SMF的本地运营商策略可以通过<br>[**SET PCCFUNC**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/会话管理/PCC管理/基本功能/PCC公共参数/设置PCC功能（SET PCCFUNC）_09897057.md)<br>命令中的<br>“PCFSELECTMODE”<br>参数配置，例如是否通过IMSI选择PCF。 |
+  **UE/AM/SM策略获取**
+  AMF/SMF首次获取UE/AM/SM策略的简要过程如下：
+    - UE策略：在用户注册时，AMF向PCF发起UE策略关联流程，从PCF获取UE策略，并将UE策略发送给UE。
+    - AM策略：在用户注册时，AMF向PCF发起AM策略关联流程，从PCF获取AM策略及AMF上的PCR Trigger。AMF随后在AMF上保存PCR Trigger，并根据接收到的AM策略是否包含SAR（Service Area Restrictions，服务区限制）和RFSP（RAT Frequency Selection Priority，无线频率选择优先级）索引，相应保存并向(R)AN和UE下发SAR，向(R)AN下发RFSP索引。
+    - SM策略：在用户建立PDU会话时，SMF向PCF发起SM策略关联流程，从PCF获取SM策略及SMF上的PCR Trigger。SMF随后在SMF上保存PCR Trigger，并根据接收到的SM策略，生成对应的PDR（Packet Detection Rule，流处理策略）下发给UPF，指示UPF执行相应的流动作，如转发、QoS、时长/流量上报等。
+      PCF/PCRF同时下发缺省QoS flow/缺省承载的rule和专有QoS flow/专有承载的rule时，SMF/PGW-C创建缺省QoS flow/缺省承载后，支持创建专有QoS flow/专有承载。SMF/PGW-C成功创建该类专有QoS flow/专有承载，可提升专有承载创建成功率。
+      SMF支持将预定义规则/预定义规则组/本地规则下发给主锚点UPF+辅锚点UPF、主锚点UPF或辅锚点UPF。还支持将预定义规则/预定义规则组/本地规则下发给指定的辅锚点UPF。
+  **UE/AM/SM策略更新**
+  在成功建立UE/AM/SM策略关联之后，UE/AM/SM策略可以通过下述两种方式进行更新：
+    - AMF/SMF发起：如果AMF/SMF检测到PCR Trigger条件满足，则向PCF发起交互，上报发生的Trigger事件，PCF可以随之响应更新的策略。
+    - PCF发起：如果PCF通过UCF感知到用户签约数据改变等触发事件，则PCF可以向AMF/SMF发起交互，更新相应的策略。
+
+- 本地PCC
+  使用本地PCC时，在UNC上以DNN粒度进行本地策略配置，在用户接入/建立PDU会话时，AMF/SMF直接使用本地配置的策略，不与PCF交互。
+
+**4/5G PCC差异点比较**
+
+4/5G PCC除了网络架构不同之外，还存在以下主要区别：
+
+- 4G PCC仅支持会话管理相关的策略，5G PCC除支持会话管理相关策略外，还支持对UE选网和路由策略、接入和移动性管理策略。
+- 4G PCC的规则可以来源于PCRF、AAA Server或PGW-C本地配置，5G PCC的规则可以来源于PCF下发或AMF/SMF本地配置。
+
+#### [计费与话单](#ZH-CN_CONCEPT_0171770359)
+
+SMF按照本特性中获取的计费规则（如PCC规则中的计费费率、时长/流量计费等测量方式等）进行计费，并上报计费信息给CHF。
+
+#### [特性规格](#ZH-CN_CONCEPT_0171770359)
+
+| 规格名称 | 规格指标 |
+| --- | --- |
+| 支持配置的UserProfile个数（整机） | 5000个 |
+| 单个Qos Flow支持安装的规则个数（包含动态规则和预定义规则） | 50个 |
+
+#### [遵循标准](#ZH-CN_CONCEPT_0171770359)
+
+| 标准类别 | 标准编号 | 标准名称 |
+| --- | --- | --- |
+| 3GPP | 23.501 | System Architecture for the 5G System; Stage 2 |
+| 3GPP | 23.502 | Procedures for the 5G System; Stage 2 |
+| 3GPP | 23.503 | Policy and Charging Control Framework for the 5G System; Stage 2 |
+| 3GPP | 29.507 | 5G System; Access and Mobility Policy Control Service; Stage 3 |
+| 3GPP | 29.512 | 5G System; Session Management Policy Control Service; Stage 3 |
+| 3GPP | 29.513 | 5G System; Policy and Charging Control signalling flows and QoS parameter mapping; Stage 3 |
+
+#### [发布历史](#ZH-CN_CONCEPT_0171770359)
+
+| 特性版本 | 发布版本 | 发布说明 |
+| --- | --- | --- |
+| 03 | 20.9.2 | 第三次发布，用户使用的AM/UE策略，由使用网络侧更改为使用本地AM/UE策略时，AMF支持实时通知PCF删除AM/UE偶联。<br>默认AMF不实时通知PCF删除AM/UE偶联，即用户下次激活时使用本地配置的AM策略/UE策略。可通过<br>[**SET AMFPLCYFUNC**](../../../../../../OM参考/命令/UNC MML命令/业务服务管理/5G接入业务管理/移动性管理/AM策略和UE策略管理/AMF策略功能管理/设置AMF策略功能（SET AMFPLCYFUNC）_96792665.md)<br>命令进行控制。 |
+| 02 | 20.8.0 | 第二次发布，SMF支持将rule/UserProfile下发给主锚点UPF+辅锚点UPF、主锚点UPF或辅锚点UPF。 |
+| 01 | 20.0.0 | 首次发布。 |
