@@ -212,7 +212,7 @@
 - [0-00208](task/UNC/20.15.2/0-00208.md) · （SET ZEROCHGSKIPSW） — 设置零流量计费事件忽略开关——对零流量场景下的各类伴随事
 - [0-00209](task/UNC/20.15.2/0-00209.md) · （TST CHGCDR） — 模拟生成 SGSN 话单（MCDR）用于新建局调测——验
 
-## 步骤级（compound）（17）
+## 步骤级（compound）（18）
 
 - [1-00001](task/UNC/20.15.2/1-00001.md) · 配置离线计费模板参数 — 配置 OFCTemplate 模板的话单版本/计费方式/
 - [1-00002](task/UNC/20.15.2/1-00002.md) · OFCTemplate 绑定 UserProfile — 把离线计费模板 OFCTemplate 绑定到 User
@@ -231,8 +231,9 @@
 - [1-00015](task/UNC/20.15.2/1-00015.md) · 配置 ADC 应用检测参数 — FLOWFILTER（appid 锚点）+ ADCPARA（流信息上报开关），ADC 动态规则路径专属
 - [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — RULE(POLICYTYPE=ADC)+USERPROFILE+RULEBINDING，ADC 预定义规则路径专属
 - [1-00017](task/UNC/20.15.2/1-00017.md) · 配置 QoS 属性与规则绑定链 — URR(USAGERPTMODE=QOS)+QOSPROP(GBR/MBR/5QI/QCI/ARP)+PCCPOLICYGRP+RULE(PCC/QOS)+USERPROFILE+RULEBINDING，QoS 保证族专属（区别于计费费率标识链 1-00009）
+- [1-00018](task/UNC/20.15.2/1-00018.md) · 配置 BWM 本地规则与用户模板绑定 — RULE(POLICYTYPE=BWM)+USERPROFILE+RULEBINDING+USRPROFGROUP+UPBINDUPG+APNUSRPROFG，BWM 域专属（POLICYTYPE=BWM 独有变种，完整挂接 APN 链；对比 1-00016 ADC 仅三命令）
 
-## 特性级（feature）（9）
+## 特性级（feature）（10）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
 - [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100 热计费标志 + 更小
@@ -243,4 +244,5 @@
 - [2-00007](task/UNC/20.15.2/2-00007.md) · 基于累计流量的策略控制（WSFD-109104） — UNC 侧 FUP——PCC 基本功能增量（License 前置 + Gx 三增量 MKPARSEFORMAT/UMCH/FUPSESSIONEXC，N7 仅 License），无专属多命令模块，复用 1-00014 SET PCCFUNC atom
 - [2-00008](task/UNC/20.15.2/2-00008.md) · 业务触发的QoS保证（WSFD-109107） — UNC 侧 GBR 保证——专有承载(2/3/4G)/专有QoS Flow(5G)，License前置 + QoS属性与规则绑定链(1-00017, URR=QOS+QOSPROP) + UserProfile组APN绑定 + 可选专有QoS Flow空闲定时器/延迟释放
 - [2-00009](task/UNC/20.15.2/2-00009.md) · 基于接入点策略控制（WSFD-109108） — UNC 侧 Non-3GPP WiFi 用户 IP/Port 变化上报 PCRF——纯被动响应型，License前置(LKV3WPWULI11) + 依赖PCC基本功能Gx通道，无专属MML命令，复用1-00012/13/14
+- [2-00010](task/UNC/20.15.2/2-00010.md) · 基于业务感知的带宽控制（WSFD-211005） — UNC 侧 BWM 控制面中转——License前置(LKV3TCBSA01)+依赖PCC基本功能+BWM本地规则承载链(1-00018, POLICYTYPE=BWM)，N4透传UPF执行限速；对应UDG 2-00001
 

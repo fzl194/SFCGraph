@@ -68,3 +68,13 @@
 - 无补建 atom（全部命令 atom 已存在）；activation 证据已就位（激活ADC基本功能_92582136 等 6 份）
 - R1.4 判定：ADC activation 非模板复用（ADC 专属命令 ADCPARA + License LKV2BADCF01 + POLICYTYPE=ADC），两路径均完整演示，无零证据差异
 - R1.5 自查：配置流程命令+参数均有 activation 脚本/命令 wiki 证据；路径 B activation 标"可选"指路径选择，路径内三命令必选
+
+## [2026-07-10] ingest | UNC@20.15.2@Task@2-00010 (+1-00018)
+- 特性 WSFD-211005 基于业务感知的带宽控制 三层 task wiki 构建（带宽族第 5 批）
+- 新建 compound 1-00018（BWM 本地规则与用户模板绑定：RULE(POLICYTYPE=BWM)+USERPROFILE+RULEBINDING+USRPROFGROUP+UPBINDUPG+APNUSRPROFG，完整挂接 APN 链）
+- 新建 feature 2-00010：控制面中转型——License 前置(LKV3TCBSA01)+依赖 PCC 基本功能(2-00005)+BWM 本地规则承载链(1-00018)，N4 透传 UPF 执行限速
+- 复用：SET LICENSESWITCH atom 0-00180；ADD RULE 0-00071 / ADD USERPROFILE 0-00094 / ADD RULEBINDING 0-00073 / ADD USRPROFGROUP 0-00096 / ADD UPBINDUPG 0-00089 / ADD APNUSRPROFG 0-00008（均在 1-00018 内）；引用 PCC 族 1-00012/13/14
+- 无补建 atom（7 命令 atom 全已存在）；activation 证据已就位（激活基于业务感知的带宽控制_79619226 等 4 份）
+- R1.4 判定：BWM activation 非模板复用（POLICYTYPE=BWM 专属演示），无零证据差异；activation 未演示 License 开关脚本但 License wiki + 命令 wiki 证据充分
+- R1.5 自查：配置流程命令+参数均有 activation 脚本/命令 wiki 证据；本地 PCC 场景命令集与动态 PCC 一致，SET PCCFUNC=DISABLE 证据来自 PCC 基本功能 activation
+- 关键洞察：UNC 侧 BWM = 控制面中转（规则承载+N4透传），UDG 侧 GWFD-110311 = 用户面限速执行（BWMSERVICE/BWMCONTROLLER 等），两侧 RULENAME 须一致
