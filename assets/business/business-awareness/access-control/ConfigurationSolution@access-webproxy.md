@@ -84,4 +84,4 @@ WebProxy 把用户业务流重定向到 Proxy Server。核心机制：RULE 经 `
 - 复用步骤/命令（compound/atom，按需）：[1-00014](task/UDG/20.15.2/1-00014.md) IPFarm重定向链（与 Portal 共享）· [1-00009](task/UDG/20.15.2/1-00009.md) 过滤链（仅 L34 段）· [1-00011](task/UDG/20.15.2/1-00011.md) 规则绑定 · [1-00010](task/UDG/20.15.2/1-00010.md) 计费三件套（可选 PCC 双规则）· [0-00294](task/UDG/20.15.2/0-00294.md) FLOWFILTERGRP（可选）· [0-00293](task/UDG/20.15.2/0-00293.md) BLACKLISTRULE（HTTPS 旁路）
 - 基础 CS：[策略匹配基础](business/business-awareness/access-control/ConfigurationSolution@access-backbone.md)（backbone + POLICYTYPE 6 子轨）
 - 同族 CS：[用户Portal](business/business-awareness/access-control/ConfigurationSolution@access-portal.md)（共享 IPFarm，POLICYTYPE=SMARTREDIRECT）· [智能重定向](business/business-awareness/access-control/ConfigurationSolution@access-smart-redirect.md)（不用 IPFarm）
-- 证据：[配置Web Proxy](evidence/business/access-control/配置Web-Proxy_66987339.md)（数据规划表 + 操作步骤 + 任务示例脚本，主源）
+- 证据：[配置Web Proxy](evidence/business/access-control/配置WebProxy_66987339.md)（数据规划表 + 操作步骤 + 任务示例脚本，主源）
