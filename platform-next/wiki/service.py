@@ -17,7 +17,13 @@ _GROUP_FIELD = {
     "Feature": "parent_feature_code",
     "License": "applicable_nf",
     "Task": "task_layer",
+    "BusinessDomain": "domain",
+    "NetworkScenario": "domain",
+    "ConfigurationSolution": "domain",
 }
+
+# 业务层对象（无 nf/version，两段式 ID）
+_BUSINESS_TYPES = {"BusinessDomain", "NetworkScenario", "ConfigurationSolution"}
 
 # 导航/索引文件 —— 不进图谱（它们列了同类全部对象，制造噪声边，不是知识关系）
 _NAV_BASENAMES = {"index.md", "CLAUDE.md", "README.md", "log.md", "PROGRESS.md"}
@@ -67,17 +73,38 @@ class WikiService:
     # ---- 查询 ----
 
     def categories(self) -> list[dict]:
-        agg: dict[str, dict[str, dict[str, int]]] = {}
+        # 产品层（带 nf/version）：type → nf → version → count
+        prod_agg: dict[str, dict[str, dict[str, int]]] = {}
+        # 业务层（两段式 ID，无 nf/version）：type → [{key, count, scenario?}, ...]
+        biz_agg: dict[str, list[dict]] = {}
         for n in self.index.nodes.values():
-            if not n.nf or not n.version:
-                continue
-            agg.setdefault(n.type, {}).setdefault(n.nf, {}).setdefault(n.version, 0)
-            agg[n.type][n.nf][n.version] += 1
-        return [
+            if n.type in _BUSINESS_TYPES:
+                # BD 仅 domain；NS 用 domain（scenario 留 CS 用）；CS 用 domain/scenario
+                meta = dict(n.group)
+                if n.type == "BusinessDomain":
+                    bucket_key = meta.get("domain") or "(未分类)"
+                elif n.type == "NetworkScenario":
+                    bucket_key = meta.get("domain") or "(未分类)"
+                else:  # ConfigurationSolution
+                    bucket_key = f'{meta.get("domain", "(未分类)")}/{meta.get("scenario", "(未分类)")}'
+                biz_agg.setdefault(n.type, [])
+                for b in biz_agg[n.type]:
+                    if b["key"] == bucket_key:
+                        b["count"] += 1
+                        break
+                else:
+                    biz_agg[n.type].append({"key": bucket_key, "count": 1})
+            elif n.nf and n.version:
+                prod_agg.setdefault(n.type, {}).setdefault(n.nf, {}).setdefault(n.version, 0)
+                prod_agg[n.type][n.nf][n.version] += 1
+        result = [
             {"type": t, "nfs": [{"nf": nf, "versions": [{"version": v, "count": c} for v, c in vers.items()]}
                                 for nf, vers in nfs.items()]}
-            for t, nfs in agg.items()
+            for t, nfs in prod_agg.items()
         ]
+        for t, buckets in biz_agg.items():
+            result.append({"type": t, "nfs": [], "buckets": buckets})
+        return result
 
     def group(self, ntype: str, nf: str, version: str) -> list[dict]:
         field = _GROUP_FIELD.get(ntype, "")

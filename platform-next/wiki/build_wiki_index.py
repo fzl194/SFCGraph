@@ -20,6 +20,9 @@ _GROUP_FIELDS = {
     "Feature": lambda m: _pairs(m, "feature_category", "parent_feature_code", "catalog_section"),
     "License": lambda m: _pairs(m, "applicable_nf"),
     "Task": lambda m: _pairs(m, "task_layer", "ref"),
+    "BusinessDomain": lambda m: _pairs(m, "domain"),
+    "NetworkScenario": lambda m: _pairs(m, "domain", "scenario"),
+    "ConfigurationSolution": lambda m: _pairs(m, "domain", "scenario"),
 }
 
 
@@ -46,6 +49,8 @@ def _first_h1(body: str) -> str:
 
 
 def _infer_type_from_path(rel: str) -> str:
+    """front-matter 无 type 时的路径兜底推断。business/ 下是业务层（含 SOP/index/审视），不应硬推 BD——
+    走 generic 命名，由 Lint/前端后续处理。"""
     top = rel.split("/", 1)[0]
     return {
         "command": "MMLCommand",
@@ -64,6 +69,12 @@ def _parse_file(md_path: Path, assets_root: Path) -> tuple[Node, list[Edge], dic
     fm_text, body = split_front_matter(text)
     meta = parse_front_matter(fm_text)
     obj_id = str(meta.get("id", ""))
+    # 业务层目录（business/）下 front-matter 必须有 id+type 才算 typed 对象；
+    # 缺其一视为 SOP/index/CLAUDE 等元文件，不入 nodes（不进 categories/图谱）。
+    # 其他目录保持原行为：按已有 front-matter 或路径兜底推断，避免误伤其他场景下
+    # 缺少 front-matter 的纯内容文件。
+    if rel.startswith("business/") and (not obj_id or not meta.get("type")):
+        return None, [], meta
     id_parts = obj_id.split("@") if obj_id else []
     ntype = str(meta.get("type") or object_type_of(obj_id) or _infer_type_from_path(rel))
     group_fn = _GROUP_FIELDS.get(ntype)
@@ -124,9 +135,11 @@ def build_index(assets_root: Path) -> Index:
     out_edges: dict[str, list[Edge]] = defaultdict(list)
     parsed: dict[str, tuple[Node, list[Edge], dict]] = {}
 
-    # pass1：逐文件解析节点 + 正文边
+    # pass1：逐文件解析节点 + 正文边；元文件（无 id/type）跳过
     for md_path in sorted(assets_root.rglob("*.md")):
         node, body_edges, meta = _parse_file(md_path, assets_root)
+        if node is None:                         # 元文件，不入 nodes/edges
+            continue
         rel = node.path
         parsed[rel] = (node, body_edges, meta)
         nodes[rel] = node
@@ -183,7 +196,10 @@ def update_incremental(idx: Index, assets_root: Path, cutoff_mtime: float) -> tu
     parsed: dict[str, tuple[Node, list[Edge], dict]] = {}
     for f in changed:
         node, body_edges, meta = _parse_file(f, assets_root)
-        rel = node.path
+        rel = f.relative_to(assets_root).as_posix()
+        if node is None:                       # 元文件（business/ 下无 id/type），不入索引
+            _drop(rel)
+            continue
         parsed[rel] = (node, body_edges, meta)
         _drop(rel)                       # 清旧（id 可能变）
         new_nodes[rel] = node

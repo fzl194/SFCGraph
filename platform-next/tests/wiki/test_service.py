@@ -68,3 +68,26 @@ def test_neighborhood_filters_nav_index(tmp_path):
     assert "CLAUDE.md" not in paths
     assert not any(e["from"] == "command/UDG/20.15.2/index.md" for e in nb["edges"])
     assert not any(e["from"] == "CLAUDE.md" for e in nb["edges"])
+
+
+def test_categories_includes_business_layer(tmp_path):
+    """业务层 BD/NS/CS 按 domain(+scenario) 分组进 categories。"""
+    root = tmp_path / "assets"
+    root.mkdir()
+    for p in ["business/biz1", "business/biz1/s1"]:
+        (root / p).mkdir(parents=True)
+    (root / "business/biz1/BusinessDomain@biz1.md").write_text(
+        "---\nid: BusinessDomain@biz1\ntype: BusinessDomain\nname: B\n"
+        "domain: biz1\nstatus: draft\n---\n# B\n", encoding="utf-8")
+    (root / "business/biz1/s1/NetworkScenario@s1.md").write_text(
+        "---\nid: NetworkScenario@s1\ntype: NetworkScenario\nname: S\n"
+        "domain: biz1\nscenario: s1\nstatus: draft\n---\n# S\n", encoding="utf-8")
+    (root / "business/biz1/s1/ConfigurationSolution@s1-foo.md").write_text(
+        "---\nid: ConfigurationSolution@s1-foo\ntype: ConfigurationSolution\nname: F\n"
+        "domain: biz1\nscenario: s1\nstatus: draft\n---\n# F\n", encoding="utf-8")
+    s = WikiService(root, tmp_path / "idx.json")
+    cats = {c["type"]: c for c in s.categories()}
+    assert "BusinessDomain" in cats and cats["BusinessDomain"]["buckets"] == [{"key": "biz1", "count": 1}]
+    assert "NetworkScenario" in cats and cats["NetworkScenario"]["buckets"] == [{"key": "biz1", "count": 1}]
+    cs_buckets = cats["ConfigurationSolution"]["buckets"]
+    assert cs_buckets == [{"key": "biz1/s1", "count": 1}]
