@@ -1,6 +1,6 @@
 # index · task/UNC/20.15.2
 
-## 命令级（atom）（209）
+## 命令级（atom）（212）
 
 - [0-00001](task/UNC/20.15.2/0-00001.md) · （ADD URR） — 配置一条使用量上报规则(URR)，确定计费方式与费率标识
 - [0-00002](task/UNC/20.15.2/0-00002.md) · （ADD ADCPARA） — 配置 ADC 应用的流信息上报开关，使 PCRF/PCF
@@ -211,39 +211,45 @@
 - [0-00207](task/UNC/20.15.2/0-00207.md) · （SET USRPROFCHARGE） — 配置 User Profile 实例的计费方式（在线/离
 - [0-00208](task/UNC/20.15.2/0-00208.md) · （SET ZEROCHGSKIPSW） — 设置零流量计费事件忽略开关——对零流量场景下的各类伴随事
 - [0-00209](task/UNC/20.15.2/0-00209.md) · （TST CHGCDR） — 模拟生成 SGSN 话单（MCDR）用于新建局调测——验
+- [0-00210](task/UNC/20.15.2/0-00210.md) · 配置用户位置（ADD USRLOCATION） — 增加用户位置信息（CGI/ECGI/NCGI 代际分叉）
+- [0-00211](task/UNC/20.15.2/0-00211.md) · 配置用户位置组（ADD USRLOCATIONGRP） — 建位置组并把多条用户位置绑到组（逐位置一条）
+- [0-00212](task/UNC/20.15.2/0-00212.md) · 修改用户模板组绑定（绑位置组）（MOD UPBINDUPG） — 把用户位置组绑到用户模板组（已绑用 MOD，未绑用 AD
 
-## 步骤级（compound）（18）
+## 步骤级（compound）（19）
 
 - [1-00001](task/UNC/20.15.2/1-00001.md) · 配置离线计费模板参数 — 配置 OFCTemplate 模板的话单版本/计费方式/
 - [1-00002](task/UNC/20.15.2/1-00002.md) · OFCTemplate 绑定 UserProfile — 把离线计费模板 OFCTemplate 绑定到 User
-- [1-00003](task/UNC/20.15.2/1-00003.md) · OFCTemplate 绑定 APN — 把离线计费模板 OFCTemplate 绑定到 APN
-- [1-00004](task/UNC/20.15.2/1-00004.md) · OFCTemplate 绑定计费属性 CC — 把离线计费模板 OFCTemplate 绑定到计费属性
-- [1-00005](task/UNC/20.15.2/1-00005.md) · 配置融合计费模板参数 — 配置 CCT 模板的配额/阈值/终结方式（融合计费参数
-- [1-00006](task/UNC/20.15.2/1-00006.md) · CCT 绑定计费属性 CC — 把融合计费模板 CCT 绑定到计费属性 CC（ADD CHARG
-- [1-00007](task/UNC/20.15.2/1-00007.md) · 配置 CHF 选择 — 配置 CHF 实例/组与选择方式（TNF 族 + IMSI/号段/CC/全
-- [1-00008](task/UNC/20.15.2/1-00008.md) · 配置 SMF-CHF 交互 Trigger 与 RG 老化 — 配置 CHF 交互使能 + Session/RG 级 Trig
-- [1-00009](task/UNC/20.15.2/1-00009.md) · 配置融合计费费率标识链 — URR→URRGROUP→PCCPOLICYGRP→RULE→RULEBINDING→UserProfile（费率标识链，跨融合/在线/离线/内容计费/业务级FUP复用，FUP 取 MONITORINGKEY 变种）
-- [1-00010](task/UNC/20.15.2/1-00010.md) · 配置融合计费异常处理 — 故障处理 + PDU/RG 级异常返回码 + CHF 响应信元忽略
-- [1-00011](task/UNC/20.15.2/1-00011.md) · 配置计费消息缓存 — 主备 CHF 均故障时缓存与回放（N40MSGSTG + 全局默认组
-- [1-00012](task/UNC/20.15.2/1-00012.md) · 配置 PCRF 对接链（Diameter） — Gx 接口 Diameter 对接（VPN+逻辑接口+本端标识+PCRF+链路组+链路），仅 2G/3G/4G，PCC 族专属
-- [1-00013](task/UNC/20.15.2/1-00013.md) · 配置 PCRF 选择与分组 — PCRF 分组（主备/负荷分担）+ 号段/APN/全局缺省绑定，仅 2G/3G/4G，PCC 族专属
-- [1-00014](task/UNC/20.15.2/1-00014.md) · 配置 PCC 开关与模板 — License 前置 + SET PCCFUNC + ADD PCCTEMPLATE + SET APNPCCFUNC，动态/本地 PCC 共享骨架（FUP 族复用 SET PCCFUNC atom 增 MKPARSEFORMAT）
-- [1-00015](task/UNC/20.15.2/1-00015.md) · 配置 ADC 应用检测参数 — FLOWFILTER（appid 锚点）+ ADCPARA（流信息上报开关），ADC 动态规则路径专属
-- [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — RULE(POLICYTYPE=ADC)+USERPROFILE+RULEBINDING，ADC 预定义规则路径专属
-- [1-00017](task/UNC/20.15.2/1-00017.md) · 配置 QoS 属性与规则绑定链 — URR(USAGERPTMODE=QOS)+QOSPROP(GBR/MBR/5QI/QCI/ARP)+PCCPOLICYGRP+RULE(PCC/QOS)+USERPROFILE+RULEBINDING，QoS 保证族专属（区别于计费费率标识链 1-00009）
-- [1-00018](task/UNC/20.15.2/1-00018.md) · 配置 BWM 本地规则与用户模板绑定 — RULE(POLICYTYPE=BWM)+USERPROFILE+RULEBINDING+USRPROFGROUP+UPBINDUPG+APNUSRPROFG，BWM 域专属（POLICYTYPE=BWM 独有变种，完整挂接 APN 链；对比 1-00016 ADC 仅三命令）
+- [1-00003](task/UNC/20.15.2/1-00003.md) · OFCTemplate 绑定 APN — 把离线计费模板 OFCTemplate 绑定到 APN 
+- [1-00004](task/UNC/20.15.2/1-00004.md) · OFCTemplate 绑定计费属性 CC — 把离线计费模板 OFCTemplate 绑定到计费属性 
+- [1-00005](task/UNC/20.15.2/1-00005.md) · 配置融合计费模板参数 — 配置融合计费模板 CCT 的配额/阈值/终结方式/时间格
+- [1-00006](task/UNC/20.15.2/1-00006.md) · CCT 绑定计费属性 CC — 把融合计费模板 CCT 绑定到计费属性 Charge C
+- [1-00007](task/UNC/20.15.2/1-00007.md) · 配置 CHF 选择 — 配置 CHF 实例/组与 CHF 选择方式（融合计费对接
+- [1-00008](task/UNC/20.15.2/1-00008.md) · 配置 SMF-CHF 交互 Trigger 与 RG 老化 — 配置 SMF 与 CHF 交互的条件（CHF 交互开关 
+- [1-00009](task/UNC/20.15.2/1-00009.md) · 配置融合计费费率标识链 — 配置融合计费费率标识链 URR→URRGROUP→PCC
+- [1-00010](task/UNC/20.15.2/1-00010.md) · 配置融合计费异常处理 — 配置融合计费异常返回码与故障处理动作（超时/PDU级/R
+- [1-00011](task/UNC/20.15.2/1-00011.md) · 配置计费消息缓存 — 配置主备 CHF 均故障时的计费消息缓存与回放（缓存开关
+- [1-00012](task/UNC/20.15.2/1-00012.md) · 配置 PCRF 对接链（Diameter） — 配置 GGSN-C/PGW-C 到 PCRF 的 Gx 
+- [1-00013](task/UNC/20.15.2/1-00013.md) · 配置 PCRF 选择与分组 — 配置 PCRF 分组（主备/负荷分担）+ PCRF 选择
+- [1-00014](task/UNC/20.15.2/1-00014.md) · 配置 PCC 开关与模板 — 激活 PCC License + 配置全局/APN 级 
+- [1-00015](task/UNC/20.15.2/1-00015.md) · 配置 ADC 应用检测参数 — 配置 ADC 动态规则路径的应用检测参数——FLOWFI
+- [1-00016](task/UNC/20.15.2/1-00016.md) · 配置 ADC 预定义规则与用户模板绑定 — 配置 ADC 预定义规则路径——RULE(POLICYT
+- [1-00017](task/UNC/20.15.2/1-00017.md) · 配置 QoS 属性与规则绑定链 — 配置业务触发的 QoS 保证规则承载链——ADD URR
+- [1-00018](task/UNC/20.15.2/1-00018.md) · 配置 BWM 本地规则与用户模板绑定 — 配置带宽管理本地规则承载链——RULE(POLICYTY
+- [1-00019](task/UNC/20.15.2/1-00019.md) · 配置用户位置与模板绑定 — 建用户位置（代际分叉）→位置组→绑用户模板组，位置策略控
 
-## 特性级（feature）（11）
+## 特性级（feature）（13）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
-- [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100 热计费标志 + 更小
-- [2-00003](task/UNC/20.15.2/2-00003.md) · 融合计费（WSFD-011206） — UNC 侧融合计费——SMF 通过 Nchf(N40) 与 CHF 对接，CCT 模板按
-- [2-00004](task/UNC/20.15.2/2-00004.md) · 内容计费基本功能（WSFD-109002） — UNC 侧内容计费——License 前置 + 复用费率标识链（1-00009），无专属命令
-- [2-00005](task/UNC/20.15.2/2-00005.md) · PCC基本功能（WSFD-109101） — UNC 侧 PCC 基本功能——Gx(2G/3G/4G)/Npcf(5G) 对接 PCRF/PCF 获取策略或本地静态规则，PCRF对接链+PCRF选择+PCC开关模板（1-00012/13/14）+本地规则
-- [2-00006](task/UNC/20.15.2/2-00006.md) · ADC基本功能（WSFD-109102） — UNC 侧 ADC 基本功能——应用检测上报通道，License 前置 + 两条路径（动态 appid 1-00015 / 预定义规则 1-00016）二选一，依赖 PCC 基本功能
-- [2-00007](task/UNC/20.15.2/2-00007.md) · 基于累计流量的策略控制（WSFD-109104） — UNC 侧 FUP——PCC 基本功能增量（License 前置 + Gx 三增量 MKPARSEFORMAT/UMCH/FUPSESSIONEXC，N7 仅 License），无专属多命令模块，复用 1-00014 SET PCCFUNC atom
-- [2-00008](task/UNC/20.15.2/2-00008.md) · 业务触发的QoS保证（WSFD-109107） — UNC 侧 GBR 保证——专有承载(2/3/4G)/专有QoS Flow(5G)，License前置 + QoS属性与规则绑定链(1-00017, URR=QOS+QOSPROP) + UserProfile组APN绑定 + 可选专有QoS Flow空闲定时器/延迟释放
-- [2-00009](task/UNC/20.15.2/2-00009.md) · 基于接入点策略控制（WSFD-109108） — UNC 侧 Non-3GPP WiFi 用户 IP/Port 变化上报 PCRF——纯被动响应型，License前置(LKV3WPWULI11) + 依赖PCC基本功能Gx通道，无专属MML命令，复用1-00012/13/14
-- [2-00010](task/UNC/20.15.2/2-00010.md) · 基于业务感知的带宽控制（WSFD-211005） — UNC 侧 BWM 控制面中转——License前置(LKV3TCBSA01)+依赖PCC基本功能+BWM本地规则承载链(1-00018, POLICYTYPE=BWM)，N4透传UPF执行限速；对应UDG 2-00001
-- [2-00011](task/UNC/20.15.2/2-00011.md) · 基于业务累计流量的策略控制（WSFD-211009） — UNC 侧业务级FUP——按业务(per SVC/per APP)累计流量达阈值改计费/QoS；复用费率标识链1-00009(MONITORINGKEY变种+FUPSESSIONEXC)+PCC开关1-00014(MKPARSEFORMAT atom)，无专属多命令模块；对应UDG GWFD-110312
+- [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100
+- [2-00003](task/UNC/20.15.2/2-00003.md) · 融合计费（WSFD-011206） — UNC 侧融合计费——SMF 通过 Nchf(N40) 
+- [2-00004](task/UNC/20.15.2/2-00004.md) · 内容计费基本功能（WSFD-109002） — UNC 侧内容计费——基于业务粒度的差异化计费（Flow
+- [2-00005](task/UNC/20.15.2/2-00005.md) · PCC基本功能（WSFD-109101） — UNC（PGW-C/GGSN-C/SMF/AMF）侧 P
+- [2-00006](task/UNC/20.15.2/2-00006.md) · ADC基本功能（WSFD-109102） — UNC（GGSN-C/PGW-C/SMF）侧 ADC 基
+- [2-00007](task/UNC/20.15.2/2-00007.md) · 基于累计流量的策略控制（WSFD-109104） — UNC（GGSN-C/PGW-C/SMF）侧 FUP（F
+- [2-00008](task/UNC/20.15.2/2-00008.md) · 业务触发的QoS保证（WSFD-109107） — UNC（GGSN-C/PGW-C/SMF）侧业务触发的 
+- [2-00009](task/UNC/20.15.2/2-00009.md) · 基于接入点策略控制（WSFD-109108） — UNC（PGW-C）侧基于接入点策略控制——非可信 No
+- [2-00010](task/UNC/20.15.2/2-00010.md) · 基于业务感知的带宽控制（WSFD-211005） — UNC（GGSN-C/PGW-C/SMF）侧基于业务感知
+- [2-00011](task/UNC/20.15.2/2-00011.md) · 基于业务累计流量的策略控制（WSFD-211009） — UNC（GGSN-C/PGW-C/SMF）侧业务级 FU
+- [2-00012](task/UNC/20.15.2/2-00012.md) · 基于小区负荷上报的无线资源优化（WSFD-211101） — UNC（GGSN-C/PGW-C）侧基于小区负荷上报的无
+- [2-00013](task/UNC/20.15.2/2-00013.md) · 基于初始接入位置的策略控制（WSFD-211001） — UNC 侧基于用户初始接入位置（CGI/ECGI/NCG
 
