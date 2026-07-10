@@ -47,3 +47,24 @@ def test_search(sample_assets, tmp_path):
     s = _svc(sample_assets, tmp_path)
     res = s.search("URR")
     assert any(r["path"] == "command/UDG/20.15.2/ADD-URR.md" for r in res)
+
+
+def test_neighborhood_filters_nav_index(tmp_path):
+    """index.md / CLAUDE.md 等导航文件不进图谱（不作为邻居、不作为反链源）。"""
+    root = tmp_path / "assets"
+    d = root / "command/UDG/20.15.2"
+    d.mkdir(parents=True)
+    (d / "index.md").write_text(
+        "# 命令索引\n- [ADD URR](command/UDG/20.15.2/ADD-URR.md)\n", encoding="utf-8")
+    (d / "ADD-URR.md").write_text(
+        "---\nid: UDG@20.15.2@MMLCommand@ADD URR\ntype: MMLCommand\nname: ADD URR\n"
+        "nf: UDG\nversion: 20.15.2\ncategory_path:\n- a\n---\n# ADD URR\n", encoding="utf-8")
+    (root / "CLAUDE.md").write_text(
+        "示例 [ADD URR](command/UDG/20.15.2/ADD-URR.md)\n", encoding="utf-8")
+    s = WikiService(root, tmp_path / "idx.json")
+    nb = s.neighborhood("command/UDG/20.15.2/ADD-URR.md")
+    paths = [n["path"] for n in nb["nodes"] if n.get("path")]
+    assert "command/UDG/20.15.2/index.md" not in paths
+    assert "CLAUDE.md" not in paths
+    assert not any(e["from"] == "command/UDG/20.15.2/index.md" for e in nb["edges"])
+    assert not any(e["from"] == "CLAUDE.md" for e in nb["edges"])

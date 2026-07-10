@@ -2,7 +2,13 @@
   <div class="nb-wrap">
     <div class="nb-head">
       <span class="nb-head-title">周围关系 · 1 跳</span>
-      <span v-if="centerPath && !empty && !loading" class="nb-head-count">{{ nodeCount }} 节点</span>
+      <div class="nb-head-right">
+        <button class="nb-toggle" :class="{ on: showReverse }" @click="showReverse = !showReverse"
+                :title="showReverse ? '当前含反向边(虚线)。点击仅看出向' : '当前仅出向。点击含反向'">
+          {{ showReverse ? '含反向' : '仅出向' }}
+        </button>
+        <span v-if="centerPath && !empty && !loading" class="nb-head-count">{{ nodeCount }} 节点</span>
+      </div>
     </div>
 
     <div class="nb-body">
@@ -16,7 +22,7 @@
         <div class="nb-state-text">该对象无关系</div>
       </div>
       <div v-show="!loading && centerPath && !empty" ref="containerRef" class="nb-canvas"></div>
-      <div v-if="centerPath && !empty && !loading" class="nb-hint">点节点跳转 · 灰虚＝未构建</div>
+      <div v-if="centerPath && !empty && !loading" class="nb-hint">实线＝出向 · 虚线＝反向 · 灰虚＝未构建</div>
     </div>
 
     <div class="nb-foot">
@@ -38,9 +44,12 @@ const emit = defineEmits<{ (e: 'navigate', path: string): void }>()
 const loading = ref(false)
 const empty = ref(false)
 const nodeCount = ref(0)
+const showReverse = ref(true)
 const containerRef = ref<HTMLDivElement | null>(null)
 let network: any = null
 let ro: ResizeObserver | null = null
+let lastNb: { nodes: NbNode[]; edges: NbEdge[] } | null = null
+let lastCenter = ''
 
 const legendTypes = ['MMLCommand', 'ConfigObject', 'Feature', 'License', 'Task']
 
@@ -53,7 +62,7 @@ const EDGE_COLOR: Record<string, string> = {
 }
 
 async function load() {
-  if (!props.centerPath) { empty.value = false; nodeCount.value = 0; return }
+  if (!props.centerPath) { empty.value = false; nodeCount.value = 0; lastNb = null; return }
   loading.value = true
   let nb: { nodes: NbNode[]; edges: NbEdge[] } | null = null
   try {
@@ -63,7 +72,8 @@ async function load() {
     network?.destroy(); network = null
     return
   }
-  nodeCount.value = nb.nodes.length
+  lastNb = nb
+  lastCenter = props.centerPath
   empty.value = nb.nodes.length <= 1
   loading.value = false            // 先显出画布，再渲染（避免 display:none 下 vis 量到 0 尺寸）
   if (empty.value) { network?.destroy(); network = null; return }
@@ -77,7 +87,13 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
   const Network = vis.Network
   const DataSet: any = vis.DataSet
 
-  const visNodes = nodes.map((n) => {
+  // 出向 = from===center；反向 = to===center(from!==center)。开关控制是否含反向。
+  const shownEdges = edges.filter((e) => showReverse.value || e.from === centerPath)
+  const shownIds = new Set<string>([centerPath, ...shownEdges.flatMap((e) => [e.from, e.to])])
+  const shownNodes = nodes.filter((n) => shownIds.has(n.path || n.id))
+  nodeCount.value = shownNodes.length
+
+  const visNodes = shownNodes.map((n) => {
     const c = TYPE_META[n.type] || { bg: '#64748b', bd: '#475569' }
     const isCenter = n.path === centerPath
     return {
@@ -92,15 +108,21 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
       _path: n.path,
     }
   })
-  const visEdges = edges.map((e) => ({
-    from: e.from,
-    to: e.to,
-    arrows: 'to' as const,
-    color: { color: EDGE_COLOR[e.relation_type] || '#cbd5e1' },
-    label: e.relation_type,
-    font: { size: 10, color: '#4b5563', strokeWidth: 3, strokeColor: '#ffffff', align: 'top' as const, face: 'JetBrains Mono' },
-    smooth: { enabled: true, type: 'cubicBezier', forceDirection: 'none', roundness: 0.5 },
-  }))
+  const visEdges = shownEdges.map((e) => {
+    const isRev = e.from !== centerPath
+    const col = EDGE_COLOR[e.relation_type] || '#cbd5e1'
+    return {
+      from: e.from,
+      to: e.to,
+      arrows: 'to' as const,
+      color: { color: col, opacity: isRev ? 0.5 : 1 },
+      width: isRev ? 1 : 1.5,
+      dashes: isRev ? [3, 5] : false,
+      label: e.relation_type,
+      font: { size: 10, color: '#4b5563', strokeWidth: 3, strokeColor: '#ffffff', align: 'top' as const, face: 'JetBrains Mono' },
+      smooth: { enabled: true, type: 'cubicBezier', forceDirection: 'none', roundness: 0.5 },
+    }
+  })
 
   network?.destroy()
   network = new Network(
@@ -108,7 +130,7 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
     { nodes: new DataSet(visNodes), edges: new DataSet(visEdges) },
     {
       nodes: { borderWidth: 1, borderWidthSelected: 2 },
-      layout: { improvedLayout: nodes.length <= 80 },
+      layout: { improvedLayout: shownNodes.length <= 80 },
       physics: {
         enabled: true,
         barnesHut: { gravitationalConstant: -3000, centralGravity: 0.3, springLength: 80, springConstant: 0.04, damping: 0.4 },
@@ -135,6 +157,14 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
   }
 }
 
+// 开关切换 → 用缓存的 lastNb 重画（不重新请求）
+watch(showReverse, async () => {
+  if (lastNb && lastCenter && !empty.value) {
+    await nextTick()
+    await render(lastNb.nodes, lastNb.edges, lastCenter)
+  }
+})
+
 watch(() => props.centerPath, load)
 onMounted(() => { if (props.centerPath) load() })
 onBeforeUnmount(() => {
@@ -157,6 +187,15 @@ onBeforeUnmount(() => {
   font-size: var(--text-2xs); font-weight: 700; color: var(--text-tertiary);
   text-transform: uppercase; letter-spacing: 0.08em;
 }
+.nb-head-right { display: flex; align-items: center; gap: var(--space-2); }
+.nb-toggle {
+  font-size: var(--text-2xs); color: var(--text-tertiary);
+  background: var(--bg-card); border: 1px solid var(--border);
+  padding: 2px 8px; border-radius: var(--radius-sm); cursor: pointer;
+  transition: all var(--duration) var(--ease); line-height: 1.5;
+}
+.nb-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.nb-toggle.on { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 .nb-head-count {
   font-size: var(--text-2xs); color: var(--text-secondary); font-family: var(--font-mono);
   background: var(--bg-card); border: 1px solid var(--border);

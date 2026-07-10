@@ -19,6 +19,14 @@ _GROUP_FIELD = {
     "Task": "task_layer",
 }
 
+# 导航/索引文件 —— 不进图谱（它们列了同类全部对象，制造噪声边，不是知识关系）
+_NAV_BASENAMES = {"index.md", "CLAUDE.md", "README.md", "log.md", "PROGRESS.md"}
+
+
+def _is_nav(path: str) -> bool:
+    """是否导航/索引文件（按 basename 判定）。"""
+    return path.rsplit("/", 1)[-1] in _NAV_BASENAMES
+
 
 class WikiService:
     def __init__(self, assets_root: Path, index_path: Path) -> None:
@@ -109,15 +117,19 @@ class WikiService:
             return {"center": None, "nodes": [], "edges": []}
         nodes: dict[str, dict] = {path: self._node_dict(path, center.id, True)}
         edges: list[dict] = []
-        # 出向（Step 4 简化版：resolved 命中用节点 id，否则用 None 路径占位）
+        # 出向（resolved 命中用节点 id，否则用 None 路径占位）。跳过导航目标。
         for e in idx.out_edges.get(path, ()):
+            if e.resolved and e.dst in idx.nodes and _is_nav(e.dst):
+                continue
             if e.resolved and e.dst in idx.nodes:
                 nodes.setdefault(e.dst, self._node_dict(e.dst, idx.nodes[e.dst].id, True))
             else:
                 nodes.setdefault(e.dst, self._node_dict(None, e.dst, e.resolved))
             edges.append({"from": e.src, "to": e.dst, "relation_type": e.relation_type, "resolved": e.resolved})
-        # 反链
+        # 反链。跳过导航源（index.md/CLAUDE.md 等）。
         for src in idx.reverse.get(path, ()):
+            if _is_nav(src):
+                continue
             sn = idx.nodes.get(src)
             nodes.setdefault(src, self._node_dict(src, sn.id if sn else "", True))
             # 反链边：从 src 指向 center，关系类型取 src 自己出向边中对 center 的那条
