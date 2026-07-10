@@ -7,7 +7,7 @@ async function fetchJson<T>(url: string): Promise<T> {
 }
 
 export interface CategoryNf { nf: string; versions: { version: string; count: number }[] }
-export interface Category { type: string; nfs: CategoryNf[] }
+export interface Category { type: string; nfs: CategoryNf[]; buckets?: { key: string; count: number }[] }
 export interface GroupBucket { key: string; count: number }
 export interface ListItem {
   path: string
@@ -24,8 +24,9 @@ export interface NbEdge { from: string; to: string; relation_type: string; resol
 export interface Neighborhood { center: NbNode | null; nodes: NbNode[]; edges: NbEdge[] }
 export interface MdResp { path: string; content: string; meta: { type?: string; name?: string; title?: string } }
 export interface LocateResp {
-  path: string; type: string; nf: string; version: string
+  path: string; type: string; nf: string | null; version: string | null
   group_field: string | null; group_value: string | null
+  business?: boolean; bucket_key?: string
 }
 
 export const wikiApi = {

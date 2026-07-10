@@ -199,13 +199,24 @@ class WikiService:
         return out
 
     def locate(self, path: str) -> dict | None:
-        """对象在左树里的位置（type/nf/version/分组桶），供前端逐层展开高亮。
-        非"可分类"对象（evidence/schema/skill/无 nf·version）返回 None。"""
+        """对象在左树里的位置（type/nf/version 或 domain/scenario 分组桶），供前端逐层展开高亮。
+        非"可分类"对象（evidence/schema/skill/无 front-matter id+type）返回 None。
+        业务层（BD/NS/CS）nf/version 为 None，改用 domain[/scenario] 作 bucket_key。"""
         n = self.index.nodes.get(path.replace("\\", "/"))
-        if not n or not n.type or not n.nf or not n.version:
+        if not n or not n.type:
             return None
+        meta = dict(n.group)
+        if n.type in _BUSINESS_TYPES:
+            # 与 categories() 一致：BD 用 domain；NS 用 domain；CS 用 domain/scenario
+            if n.type == "ConfigurationSolution":
+                bucket_key = f'{meta.get("domain", "(未分类)")}/{meta.get("scenario", "(未分类)")}'
+            else:
+                bucket_key = meta.get("domain") or "(未分类)"
+            return {"path": n.path, "type": n.type, "nf": None, "version": None,
+                    "group_field": None, "group_value": None,
+                    "business": True, "bucket_key": bucket_key}
         gf = _GROUP_FIELD.get(n.type)
-        gv = dict(n.group).get(gf) if gf else None
+        gv = meta.get(gf) if gf else None
         return {"path": n.path, "type": n.type, "nf": n.nf, "version": n.version,
                 "group_field": gf, "group_value": gv}
 

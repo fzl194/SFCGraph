@@ -27,9 +27,15 @@
           <span v-else-if="data.type === 'version'" class="tnode tnode--mono tnode--version">{{ data.label }}</span>
           <!-- 分组桶 -->
           <span v-else-if="data.type === 'group'" class="tnode tnode--group">{{ data.label }}</span>
+          <!-- 业务层 bucket -->
+          <span v-else-if="data.type === 'biz-bucket'" class="tnode tnode--biz">
+            <span class="tnode-bar" :style="{ background: typeColor(rawType(data.raw.type)) }"></span>
+            <span class="tnode-biz-name">{{ data.label }}</span>
+            <span class="tnode-badge">{{ data.raw.count }}</span>
+          </span>
           <!-- 对象叶子 -->
           <span v-else-if="data.type === 'object'" class="tnode tnode--obj">
-            <span class="tnode-obj-dot" :style="{ background: typeColor(parentType(data.raw.path)) }"></span>
+            <span class="tnode-obj-dot" :style="{ background: objDotColor(data.raw.path) }"></span>
             <span class="tnode-obj-name">{{ data.label }}</span>
           </span>
           <span v-else class="tnode">{{ data.label }}</span>
@@ -51,7 +57,7 @@
 <script setup lang="ts">
 import { ref, watch, nextTick } from 'vue'
 import { wikiApi, type Category, type ListItem, type LocateResp } from './wikiApi'
-import { GROUP_FIELD, typeColor, typeLabel } from './wikiTokens'
+import { GROUP_FIELD, BUSINESS_TYPES, typeColor, typeLabel, taskLayerColor } from './wikiTokens'
 
 const props = defineProps<{ currentPath: string | null }>()
 const emit = defineEmits<{ (e: 'select', path: string): void }>()
@@ -65,12 +71,27 @@ const treeRef = ref<any>(null)
 const treeProps = { label: 'label', isLeaf: 'leaf' }
 
 function typeCount(cat: Category): number {
+  // 业务层 buckets 直接 sum 计数；产品层 nf→version→count 累加
+  if (cat.buckets) return cat.buckets.reduce((s, b) => s + b.count, 0)
   return cat.nfs.reduce((s, n) => s + n.versions.reduce((a, v) => a + v.count, 0), 0)
 }
 /** 从对象 path 推断类型（command/...→MMLCommand），用于叶子的类型色点 */
 function parentType(path: string): string {
   const top = path.split('/', 1)[0]
   return { command: 'MMLCommand', configobject: 'ConfigObject', feature: 'Feature', license: 'License', task: 'Task' }[top] || ''
+}
+/** Task 叶子按 task_layer（前缀 0-/1-/2-）取同色系深浅；其他对象按 type 色 */
+function objDotColor(path: string): string {
+  if (path.startsWith('task/')) {
+    // task/UDG/20.15.2/0-00001.md → layer='0-'
+    const m = path.match(/task\/[^/]+\/[^/]+\/(\d-)/)
+    if (m) return taskLayerColor(m[1])
+  }
+  return typeColor(parentType(path))
+}
+/** biz-bucket 节点的 data.raw.type 在不同层：type层=字符串；biz-bucket层=包装对象。统一取出。 */
+function rawType(t: any): string {
+  return typeof t === 'string' ? t : (t?.type || '')
 }
 
 // 全懒加载：每层（含 root）经 :load 取数。
@@ -83,6 +104,13 @@ async function loadLazy(node: { level: number; data?: any }, resolve: (data: any
     })))
   }
   const data = node.data || {}
+  // 业务层：type→buckets（domain[/scenario]），无 nfs/version；展开 bucket 触发对象列表
+  if (data.type === 'type' && BUSINESS_TYPES.has(data.raw.type) && data.raw.buckets) {
+    return resolve(data.raw.buckets.map((b: any) => ({
+      key: `biz:${data.raw.type}:${b.key}`, label: `${b.key} · ${b.count}`, type: 'biz-bucket',
+      raw: { type: data.raw.type, bucket_key: b.key, count: b.count }, leaf: false,
+    })))
+  }
   if (data.type === 'type') {
     return resolve(data.raw.nfs.map((n: any) => ({
       key: `n:${data.raw.type}:${n.nf}`, label: n.nf, type: 'nf',
@@ -117,6 +145,22 @@ async function loadLazy(node: { level: number; data?: any }, resolve: (data: any
       key: `o:${it.path}`, label: it.name, type: 'object', raw: it, leaf: true,
     })))
   }
+  // 业务层 bucket（domain[/scenario]）→ 列出该 bucket 下所有对象
+  if (data.type === 'biz-bucket') {
+    const parts = String(data.raw.bucket_key || '').split('/')
+    const domain = parts[0] || ''
+    const scenario = parts[1] || ''
+    let hits: ListItem[] = []
+    try { hits = await wikiApi.search(domain) } catch { return resolve([]) }
+    const items = hits.filter((it) => {
+      if (it.type !== data.raw.type) return false
+      if (scenario) return it.path.includes(`/${domain}/${scenario}/`)
+      return it.path.includes(`/${domain}/`)
+    })
+    return resolve(items.map((it) => ({
+      key: `o:${it.path}`, label: it.name, type: 'object', raw: it, leaf: true,
+    })))
+  }
   resolve([])
 }
 
@@ -135,13 +179,20 @@ watch(() => props.currentPath, async (p) => {
   // 否则向 /locate 取位置，逐层展开祖先再高亮
   let loc: LocateResp | null = null
   try { loc = await wikiApi.locate(p) } catch { return }
-  if (!loc || !loc.group_value) return
-  const ancestors = [
-    `t:${loc.type}`,
-    `n:${loc.type}:${loc.nf}`,
-    `v:${loc.type}:${loc.nf}:${loc.version}`,
-    `g:${loc.type}:${loc.nf}:${loc.version}:${loc.group_value}`,
-  ]
+  if (!loc) return
+  let ancestors: string[]
+  if (loc.business) {
+    // 业务层：t:{type} → biz:{type}:{bucket_key}
+    ancestors = [`t:${loc.type}`, `biz:${loc.type}:${loc.bucket_key}`]
+  } else {
+    if (!loc.nf || !loc.version || !loc.group_value) return
+    ancestors = [
+      `t:${loc.type}`,
+      `n:${loc.type}:${loc.nf}`,
+      `v:${loc.type}:${loc.nf}:${loc.version}`,
+      `g:${loc.type}:${loc.nf}:${loc.version}:${loc.group_value}`,
+    ]
+  }
   for (const k of ancestors) {
     const n = treeRef.value.getNode?.(k)
     if (!n) return
@@ -229,6 +280,8 @@ defineExpose({ refresh })
 .tnode--mono, .tnode--version { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-secondary); }
 .tnode--version { color: var(--text-tertiary); }
 .tnode--group { font-size: var(--text-xs); color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tnode--biz { gap: var(--space-2); }
+.tnode-biz-name { font-size: var(--text-xs); color: var(--text-primary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tnode--obj { width: 100%; }
 .tnode-obj-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
 .tnode-obj-name { font-size: var(--text-sm); color: var(--text-primary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

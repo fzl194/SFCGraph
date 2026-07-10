@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { ref, watch, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import { wikiApi, type NbNode, type NbEdge } from './wikiApi'
-import { TYPE_META } from './wikiTokens'
+import { TYPE_META, TASK_LAYER_META } from './wikiTokens'
 
 const props = defineProps<{ centerPath: string | null }>()
 const emit = defineEmits<{ (e: 'navigate', path: string): void }>()
@@ -94,7 +94,16 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
   nodeCount.value = shownNodes.length
 
   const visNodes = shownNodes.map((n) => {
-    const c = TYPE_META[n.type] || { bg: '#64748b', bd: '#475569' }
+    // Task 按 task_layer（path 前缀 0-/1-/2-）取同色系深浅；其余按 type 色
+    let c = TYPE_META[n.type] || { bg: '#64748b', bd: '#475569' }
+    let fontColor = '#ffffff'
+    if (n.type === 'Task' && n.path) {
+      const m = n.path.match(/task\/[^/]+\/[^/]+\/(\d-)/)
+      if (m && TASK_LAYER_META[m[1]]) {
+        c = TASK_LAYER_META[m[1]]
+        if (m[1] === '0-') fontColor = '#7f1d1d'   // atom 最浅底 → 深红字保证对比
+      }
+    }
     const isCenter = n.path === centerPath
     return {
       id: n.path || n.id,
@@ -102,7 +111,7 @@ async function render(nodes: NbNode[], edges: NbEdge[], centerPath: string) {
       title: n.id || n.name,
       shape: n.resolved ? 'box' : 'ellipse',
       color: { background: c.bg, border: c.bd, highlight: { background: c.bg, border: c.bd } },
-      font: { color: '#ffffff', size: isCenter ? 14 : 12, face: 'Inter' },
+      font: { color: fontColor, size: isCenter ? 14 : 12, face: 'Inter' },
       borderWidth: isCenter ? 3 : 1,
       dashes: !n.resolved,
       _path: n.path,
