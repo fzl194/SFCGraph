@@ -1,6 +1,6 @@
 # index · task/UDG/20.15.2
 
-## 命令级（atom）（193）
+## 命令级（atom）（194）
 
 - [0-00001](task/UDG/20.15.2/0-00001.md) · 配置URR（ADD URR） — 配置一条使用量上报规则(URR)，确定费率与计费方式
 - [0-00002](task/UDG/20.15.2/0-00002.md) · 配置URR组（ADD URRGROUP） — 配置URRGROUP，上行/下行分别绑定在线与离线URR
@@ -195,6 +195,7 @@
 - [0-00287](task/UDG/20.15.2/0-00287.md) · 配置时间段（ADD TIMERANGE） — 配置时间段容器(ADD TIMERANGE)，作为周期时间段
 - [0-00288](task/UDG/20.15.2/0-00288.md) · 配置周期时间段（ADD PERITIMERANGE） — 配置周期时间段(ADD PERITIMERANGE)，在 T
 - [0-00289](task/UDG/20.15.2/0-00289.md) · 配置全局带宽管理规则（ADD BWMRULEGLOBAL） — 配置整机级全局带宽管理规则(ADD BWMRULEGLOBA
+- [0-00290](task/UDG/20.15.2/0-00290.md) · 设置全局缺省URR组（SET SPECTRAFURRGRP） — 配置整机级全局缺省URR组，承接URRGRPBINDING继承开关，特殊流量/未配费率业务兜底计费
 
 ## 步骤级 compound（12）· ★复用库★
 
@@ -208,14 +209,20 @@
 - [1-00006](task/UDG/20.15.2/1-00006.md) · 时间段控制 — cmd:TIMERANGE,PERITIMERANGE | 用于:2-00001 | 层级:特性专属
 - [1-00007](task/UDG/20.15.2/1-00007.md) · ICAP Server 互通配置 — cmd:VPNINST,LOGICINF,ICAPSERVER,ICAPLOCALINFO,ICAPSVRGRP,ICAPSVRBINDISG | 用于:2-00002 | 层级:域通用(内容过滤)
 - [1-00008](task/UDG/20.15.2/1-00008.md) · CF 内容过滤业务配置 — cmd:CFPROFILE,CFTEMPLATE,APNCFTEMPLATE,CFPROFBINDCFT,CONTCATEGROUP,CONTCATEGBIND | 用于:2-00002 | 层级:域通用(内容过滤)
-- [1-00009](task/UDG/20.15.2/1-00009.md) · 过滤链 — cmd:FILTER,FILTERIPV6,L7FILTER,FLOWFILTER,FLTBINDFLOWF,PROTBINDFLOWF | 用于:2-00002 | 层级:跨域通用(对齐ConfigTask 1-00002)
-- [1-00010](task/UDG/20.15.2/1-00010.md) · 计费三件套 — cmd:URR,URRGROUP,PCCPOLICYGRP | 用于:2-00002 | 层级:跨域通用(对齐ConfigTask 1-00001)
-- [1-00011](task/UDG/20.15.2/1-00011.md) · 规则与用户模板绑定 — cmd:RULE,USERPROFILE,RULEBINDING | 用于:2-00002 | 层级:跨域通用(对齐ConfigTask 1-00003)
-- [1-00012](task/UDG/20.15.2/1-00012.md) · 计费收尾 — cmd:URRGRPBINDING,SPECURRGRPLIST,REFRESHSRV | 用于:2-00003 | 层级:跨域通用(对齐ConfigTask 1-00004)
+- [1-00009](task/UDG/20.15.2/1-00009.md) · 过滤链 — cmd:FILTER,FILTERIPV6,L7FILTER,FLOWFILTER,FLTBINDFLOWF,PROTBINDFLOWF | 用于:2-00002,2-00003,2-00004,2-00005,2-00006,2-00007,2-00008,2-00009 | 层级:跨域通用(对齐ConfigTask 1-00002)
+- [1-00010](task/UDG/20.15.2/1-00010.md) · 计费三件套 — cmd:URR,URRGROUP,PCCPOLICYGRP | 用于:2-00002,2-00003,2-00004,2-00005,2-00006,2-00007,2-00008,2-00009 | 层级:跨域通用(对齐ConfigTask 1-00001)
+- [1-00011](task/UDG/20.15.2/1-00011.md) · 规则与用户模板绑定 — cmd:RULE,USERPROFILE,RULEBINDING | 用于:2-00002,2-00003,2-00004,2-00005,2-00006,2-00007,2-00008,2-00009 | 层级:跨域通用(对齐ConfigTask 1-00003)
+- [1-00012](task/UDG/20.15.2/1-00012.md) · 计费收尾 — cmd:URRGRPBINDING,SPECURRGRPLIST,REFRESHSRV | 用于:2-00003,2-00004,2-00005,2-00006,2-00007,2-00008,2-00009 | 层级:跨域通用(对齐ConfigTask 1-00004)
 
-## 特性级（feature）（3）
+## 特性级（feature）（9）
 
 - [2-00001](task/UDG/20.15.2/2-00001.md) · 基于业务感知的带宽控制（GWFD-110311） — 配置 BWM 实现用户级/用户组级/整机级三层层次化带宽控制
 - [2-00002](task/UDG/20.15.2/2-00002.md) · URL过滤基本功能（GWFD-110471） — ICAP外置分析+CF双轨道，PCC触发
 - [2-00003](task/UDG/20.15.2/2-00003.md) · 内容计费基本功能（GWFD-020301） — 业务识别+费率三件套，差异化计费
+- [2-00004](task/UDG/20.15.2/2-00004.md) · 在线计费（GWFD-020300） — OCS实时配额，URR=ONLINE
+- [2-00005](task/UDG/20.15.2/2-00005.md) · 离线计费（GWFD-010171） — Ga接口非实时后付费，URR=OFFLINE+OFFMETERINGTYPE
+- [2-00006](task/UDG/20.15.2/2-00006.md) · 融合计费（GWFD-010173） — Nchf统一接口，双URR(offline+online)+RGAPPLIED约束
+- [2-00007](task/UDG/20.15.2/2-00007.md) · 基于业务时长的计费（GWFD-020302） — URR METERINGTYPE=DURATION，CTP/QCT
+- [2-00008](task/UDG/20.15.2/2-00008.md) · 基于业务流量的计费（GWFD-020303） — URR METERINGTYPE=VOLUME，内容计费增强
+- [2-00009](task/UDG/20.15.2/2-00009.md) · 基于业务事件的计费（GWFD-020306） — URR METERINGTYPE=EVENT，注意性能影响
 
