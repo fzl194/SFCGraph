@@ -49,12 +49,15 @@
 2. 若雷同（模板复用）：feature 声称的**差异化参数**（如 DURATION/EVENT/计费点）在该特性 activation 中是否有演示？若无 → **零证据差异**。
 3. 零证据差异必须：①标真实来源（特性概述/实现原理/命令 wiki 的 evidence）②feature 配置流程/DP 脚注注明"本参数 activation 未演示，取值来自 XXX"。
 4. **配置生成按 feature 配置流程产出脚本——零证据参数 = 编造 = critical 阻塞**。
+5. **R1.4 子规则·组合参数跨 activation 来源（warning→critical）**：feature 某 compound 场景差异/配置流程声称的**参数集**若来自**多份 activation 分别演示**（非单一脚本合并演示），须脚注"参数 A 来自 activation X，参数 B 来自 activation Y，配置生成合并产出时须核实命令支持同条带多参数"。典型：融合计费 `SET USRPROFCHARGE/SET APNCHARGECTRL` 的 `CCTEMPLATE`（配置融合计费模板_93400212）与 `CONVERGEDSW/RGAPPLIED`（使能融合计费功能_77691175）分属两份 activation，从未合并演示 → 合并产出前须核实命令 wiki 参数表同时含三者。**未核实即合并 = 隐含编造同条支持 = critical 阻塞**。
 
 ### R1.5 配置流程参数证据链（critical，防编造参数）
 feature「配置流程」是配置生成的**可执行蓝图**（非知识叙述）。写进配置流程的**每个命令+参数**必须可追溯到 evidence：
 1. 每个命令：有对应 atom（查 `_numbering.json`）或有原始文档脚本出处。
 2. 每个参数：activation 脚本 / 命令 wiki / 数据规划表有该参数取值证据。
 3. **无证据的参数必须移除或改为"UDG 侧不配 / 由上层决定"**，否则配置生成编造参数。
+4. **R1.5 子规则·可选命令证据链（warning→critical）**：feature 配置流程/DP 表中**可选步骤的命令**若 activation 未直接演示，**不能默认有证据**——必须明确标 evidence 出处（命令 wiki / 特性 wiki / 场景推断），并在步骤脚注注"activation 未直接演示，证据来自 XXX"。典型：PCC 基本功能 步骤 10 `ADD PCCPBINDUPG`（4 份 activation 均未演示）→ 须标命令 wiki 为证据 + 注"本地 PCC 多 UserProfile 场景，activation 未直接演示，按全网规划产出"。命令 wiki 也不存在 → critical 阻塞（命令本身无证据）。**配置生成对"可选 + 无 activation + 无命令 wiki"的步骤默认不产出，待补证据**。
+5. **R1.5 子规则·DP/配置流程分列不同命令（warning）**：同一配置层次（如 CC 层）涉及**多个不同命令**且职责不同时（如"使能开关"vs"模板绑定"），DP 表/配置流程**必须分列**，不能合并"走法=命令A+命令B"造成混淆。典型：融合计费 CC 粒度 = ① `ADD CHARGEMETHOD`（使能开关 CONVERGED/RGAPPLIED，步骤 1）② `ADD SELECTCCTBYCC`（CCT 模板绑定 CCVALUE→CCTMPLTNAME，步骤 6）—— 两命令参数集正交（命令 wiki 佐证），合并写"走法=ADD CHARGEMETHOD+ADD SELECTCCTBYCC"会让配置生成误判为一条命令或同步骤执行。分列标准：命令 wiki 参数表是否正交（正交→分列；同参数集→可合并为 compound）。
 > 实战教训：事件计费 feature 配置流程写了"PCCPOLICYGRP 可配计费点 REQUEST/RESPONSE/FINISH"，但 activation 与 PCCPOLICYGRP 命令 wiki 均无此参数 → 配置生成会编造。约束/DP 里的叙述性知识（"仅 SCUR/不支持 Default Quota"）可不进配置流程，但须标 evidence 出处。
 
 > **★ 审视者警示：无证据结论须穷尽搜索后再判 critical**。审视发现"疑似编造参数/假约束"时，须先 grep 原始文档 / 特性 wiki / **官方差异表** / **软件参数文档（BIT/BYTE/BYTE837 等）** / 命令 wiki 全文，确认真无证据再判 critical。实战 2 次反转（均因搜索不充分误判 critical，后修复时核实发现有证据）：①计费事件计费点 REQUEST/RESPONSE/FINISH（命令 wiki 确有 `EVENTCHARGEFLAG`/`EVENTCHGPOINT`）②头增强 Byte837 十六进制编码（软件参数文档 `BYTE837_08922610` 确有）+ RTSP 不支持防欺诈（官方差异表 `头增强功能之间的差异_10706790` 确有）。**判 critical 前穷尽搜索；修复移除前也先核实**。反转不否定审视价值——每次都逼出了 evidence 链接，产出更严谨。

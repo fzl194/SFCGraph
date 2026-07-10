@@ -45,3 +45,17 @@
 - 编号：0-00001~0-00027 沿用 UNC atom yaml；0-00028~0-00209 按命令名排序接续。renumber_unc_tasks.py 建映射+重命名+改引用（先建命令名后改编号）
 - 回填：lint_and_backfill.py 回填 UNC task 互引 + 命令 wiki 关联任务占位（136 处/90 文件）
 - 范围：仅 UNC atom。compound/feature 级 + UDG 的 compound/feature 后续
+
+## [2026-07-10] lint | UNC 计费族首批 5 warning R3 修复 + SOP 沉淀
+- **范围**：assets/task/UNC/20.15.2/ 计费族 2-00002/2-00003/2-00004/2-00005 + compound 1-00002/1-00003 + 特性task_wiki审视流程.md
+- **5 warning 修复（只改不删，编辑标注/分列/补证据）**：
+  1. 2-00002 热计费 ROAMOFFLINE：activation 脚本仅演示 HOMEOFFLINE/VISITOFFLINE=ENABLE，ROAMOFFLINE 仅数据规划表列示 → 标注"脚本未演示，按全网规划，不可默认 ENABLE"
+  2. 1-00002/1-00003 融合计费组合参数：CCTEMPLATE（配置融合计费模板_93400212）与 CONVERGEDSW/RGAPPLIED（使能融合计费功能_77691175）分属两份 activation 未合并演示 → 加脚注，合并产出前须核实命令 wiki 支持同条带三参数
+  3. 2-00003 CC 粒度分列：ADD CHARGEMETHOD（使能开关 step1）vs ADD SELECTCCTBYCC（CCT 模板绑定 step6）两命令参数集正交 → DP 表/配置流程分列，不可混写"走法=命令A+命令B"
+  4. 2-00004 ONLMETERINGTYPE=EVENT_VOLUME_TIME：核实 ADD URR 命令 wiki（line 67 确有此取值，与 OFFMETERINGTYPE 对称）→ 命令层证据成立；activation 仅演示 FREE/VOLUME → 标 evidence=命令 wiki 非 activation，实际取值全网规划
+  5. 2-00005 步10 ADD PCCPBINDUPG：4 份 activation 均未演示 → 标 evidence=命令 wiki（PGW-C/SMF，立即生效，用途本地 PCC 多 UserProfile 策略源），注可选+全网规划产出
+- **SOP 沉淀（特性task_wiki审视流程.md）**：
+  - R1.4 第5点 组合参数跨 activation 来源子规则（warning→critical）
+  - R1.5 第4点 可选命令证据链子规则（warning→critical）
+  - R1.5 第5点 DP/配置流程分列不同命令子规则（warning）
+- **证据核实结论**：EVENT_VOLUME_TIME 命令 wiki 有（ADD-URR.md line 67）；ADD PCCPBINDUPG 命令 wiki 存在（PGW-C/SMF）
