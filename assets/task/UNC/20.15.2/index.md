@@ -222,13 +222,14 @@
 - [1-00006](task/UNC/20.15.2/1-00006.md) · CCT 绑定计费属性 CC — 把融合计费模板 CCT 绑定到计费属性 CC（ADD CHARG
 - [1-00007](task/UNC/20.15.2/1-00007.md) · 配置 CHF 选择 — 配置 CHF 实例/组与选择方式（TNF 族 + IMSI/号段/CC/全
 - [1-00008](task/UNC/20.15.2/1-00008.md) · 配置 SMF-CHF 交互 Trigger 与 RG 老化 — 配置 CHF 交互使能 + Session/RG 级 Trig
-- [1-00009](task/UNC/20.15.2/1-00009.md) · 配置融合计费费率标识链 — URR→URRGROUP→PCCPOLICYGRP→RULE→RULEBINDING→User
+- [1-00009](task/UNC/20.15.2/1-00009.md) · 配置融合计费费率标识链 — URR→URRGROUP→PCCPOLICYGRP→RULE→RULEBINDING→UserProfile（费率标识链，跨融合/在线/离线/内容计费复用）
 - [1-00010](task/UNC/20.15.2/1-00010.md) · 配置融合计费异常处理 — 故障处理 + PDU/RG 级异常返回码 + CHF 响应信元忽略
 - [1-00011](task/UNC/20.15.2/1-00011.md) · 配置计费消息缓存 — 主备 CHF 均故障时缓存与回放（N40MSGSTG + 全局默认组
 
-## 特性级（feature）（3）
+## 特性级（feature）（4）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
 - [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100 热计费标志 + 更小
 - [2-00003](task/UNC/20.15.2/2-00003.md) · 融合计费（WSFD-011206） — UNC 侧融合计费——SMF 通过 Nchf(N40) 与 CHF 对接，CCT 模板按
+- [2-00004](task/UNC/20.15.2/2-00004.md) · 内容计费基本功能（WSFD-109002） — UNC 侧内容计费——License 前置 + 复用费率标识链（1-00009），无专属命令
 
