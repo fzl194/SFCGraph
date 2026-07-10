@@ -66,6 +66,17 @@ feature「配置流程」是配置生成的**可执行蓝图**（非知识叙述
 5. **R1.5 子规则·DP/配置流程分列不同命令（warning）**：同一配置层次（如 CC 层）涉及**多个不同命令**且职责不同时（如"使能开关"vs"模板绑定"），DP 表/配置流程**必须分列**，不能合并"走法=命令A+命令B"造成混淆。典型：融合计费 CC 粒度 = ① `ADD CHARGEMETHOD`（使能开关 CONVERGED/RGAPPLIED，步骤 1）② `ADD SELECTCCTBYCC`（CCT 模板绑定 CCVALUE→CCTMPLTNAME，步骤 6）—— 两命令参数集正交（命令 wiki 佐证），合并写"走法=ADD CHARGEMETHOD+ADD SELECTCCTBYCC"会让配置生成误判为一条命令或同步骤执行。分列标准：命令 wiki 参数表是否正交（正交→分列；同参数集→可合并为 compound）。
 > 实战教训：事件计费 feature 配置流程写了"PCCPOLICYGRP 可配计费点 REQUEST/RESPONSE/FINISH"，但 activation 与 PCCPOLICYGRP 命令 wiki 均无此参数 → 配置生成会编造。约束/DP 里的叙述性知识（"仅 SCUR/不支持 Default Quota"）可不进配置流程，但须标 evidence 出处。
 
+### R1.6 evidence 源文档勘误标注（warning，防误信源脚本）
+当 feature wiki 发现 activation 源证据**内部不一致/缺失**（命令缺失 / 参数矛盾 / 笔误）并已用 R1.4/R1.5 脚注在 feature 处置时，**须同步在 evidence 拷贝头部加 `> ⚠ 源文档勘误：xxx` 标注**——避免后续构建者直接读 evidence 拷贝时误信源脚本，把已修正的差异又抄回配置流程。
+1. **触发条件**（满足任一即标注）：
+   - 源脚本与数据规划表/操作步骤文字矛盾（如 ADD vs MOD 同一步骤、参数取值不一致）
+   - 源脚本漏步骤（如 activation 缺 ADD URRGROUP，直接 ADD PCCPOLICYGRP 引用未建的 URRGROUPNAME）
+   - 源脚本与实现原理/特性 wiki 矛盾（如实现原理有某命令但 activation 完全无演示）
+2. **标注位置**：evidence md 文件**第一行标题之后、正文之前**，用 blockquote 引用块：`> ⚠ 源文档勘误：① 矛盾点描述 ② 处置方式 ③ feature wiki 脚注链接`。
+3. **标注内容**：逐条列勘误点（编号①②③），每条写清"源文档怎么说 vs 正确应该怎么做"+ 处置依据（命令 wiki / 对象链结构 / feature wiki 脚注链接）。**不删原文**，只加头部说明。
+4. **只改不删原则**：evidence 拷贝是源文档的忠实拷贝，**不改写/删除源文档任何内容**——勘误只以头部 blockquote 标注形式存在，保留源文档原貌供对照。
+> 典型（FUP 族实战）：①会话级 FUP activation `激活基于累计流量的策略控制_29056190.md` 步骤 5 操作步骤标题+数据规划表用 `MOD PCCPOLICYGRP`（PCCPOLICYGRPNM 标"已配置"），但任务示例脚本用 `ADD PCCPOLICYGRP`——ADD/MOD 语义矛盾，feature wiki 2-00007 已脚注处置；②业务级 FUP activation `激活基于业务累计流量的策略控制_27915156.md` 脚本 `ADD PCCPOLICYGRP:URRGROUPNAME="urr_01"` 但"urr_01"是 URRNAME（数据规划 URRGROUPNAME=urrgrp_01），漏 ADD URRGROUP 步 + SET PCCFUNC:MKPARSEFORMAT 数据规划有但脚本未演示 + MOD PCRF:UMCH 实现原理有但脚本完全无——feature wiki 2-00011 已脚注处置。两份 evidence 拷贝头部均加 `> ⚠ 源文档勘误` 标注。
+
 > **★ 审视者警示：无证据结论须穷尽搜索后再判 critical**。审视发现"疑似编造参数/假约束"时，须先 grep 原始文档 / 特性 wiki / **官方差异表** / **软件参数文档（BIT/BYTE/BYTE837 等）** / 命令 wiki 全文，确认真无证据再判 critical。实战 2 次反转（均因搜索不充分误判 critical，后修复时核实发现有证据）：①计费事件计费点 REQUEST/RESPONSE/FINISH（命令 wiki 确有 `EVENTCHARGEFLAG`/`EVENTCHGPOINT`）②头增强 Byte837 十六进制编码（软件参数文档 `BYTE837_08922610` 确有）+ RTSP 不支持防欺诈（官方差异表 `头增强功能之间的差异_10706790` 确有）。**判 critical 前穷尽搜索；修复移除前也先核实**。反转不否定审视价值——每次都逼出了 evidence 链接，产出更严谨。
 
 ---
