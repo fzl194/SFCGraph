@@ -84,3 +84,9 @@
 - 证据拷入 assets/evidence/business/charging/（旧版参考+融合5文档）
 - 双向回填：所有 CS 引用 task 追加被引用于反向链接
 - 索引/日志同步
+
+## [2026-07-10] ingest | 业务层带宽控制场景
+- NS 带宽控制 + 12 CS（BWM范本 + Shaping/FUP/QoS/终端码率/视频承载/FPI/小区负荷/IM无线/ADC触发/异常检测/接入点策略）
+- 证据拷入 assets/evidence/business/bandwidth-control/（BWM全套+backbone概述+18特性概述/原理）
+- 双向回填：12 CS 引用 task 追加被引用于
+- 每CS含特性关系矩阵（追溯原始文档判定角色/必配/重叠）
