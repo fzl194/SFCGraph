@@ -17,7 +17,7 @@ status: draft
 
 **判断依据**：用户需按业务粒度差异化计费（离线/在线/融合），或需按流量/时长/事件统计特定业务使用量。**典型产出**：专项业务单独计费、免费业务不计费、普通业务默认计费，配额耗尽后切换到阻断或重定向。
 
-跨网元协同：UDG（用户面）做业务识别 + URR 累计 + 配额执行；UNC（控制面）做话单格式化 / 配额管理 / CHF-OCS 对接。三计费方式（离线 Ga / 在线 Gy-DCC / 融合 N40-Nchf）共享费率标识链（URR→URRGROUP→PCCPOLICYGRP→RULE→RULEBINDING）。
+跨网元协同：UDG（用户面）做业务识别 + URR 累计 + 配额执行；UNC（控制面）做话单格式化 / 配额管理 / CHF-OCS 对接。**Backbone 共享 SA-Basic（业务识别）+ PCC基本功能（策略通道）+ RULE/USERPROFILE/过滤链**。三计费方式（离线 Ga / 在线 Gy-DCC / 融合 N40-Nchf）共享费率标识链（URR→URRGROUP→PCCPOLICYGRP→RULE→RULEBINDING）。
 
 ## 边界
 
@@ -28,15 +28,15 @@ status: draft
 
 场景级方案路由——什么业务诉求选哪个方案。
 
-| 选项/场景 | 影响（选哪个 CS） |
-|---|---|
-| 后付费、话单结算 | → [CS 离线计费](business/business-awareness/charging/ConfigurationSolution@charging-offline.md)（Ga 接口，URR=OFFLINE） |
-| 预付费、实时余额控制 | → [CS 在线计费](business/business-awareness/charging/ConfigurationSolution@charging-online.md)（Gy/DCC，URR=ONLINE） |
-| 在线+离线统一（5G SA） | → [CS 融合计费](business/business-awareness/charging/ConfigurationSolution@charging-converged.md)（N40/Nchf，双 URR） |
-| 按业务差异化费率 | → [CS 内容计费基础](business/business-awareness/charging/ConfigurationSolution@charging-content.md)（SA 识别 + RG） |
-| 按流量/时长/事件计量 | → [CS 计量形态增强](business/business-awareness/charging/ConfigurationSolution@charging-metering.md)（METERINGTYPE） |
-| 配额耗尽体验切换 | → [CS 配额降速](business/business-awareness/charging/ConfigurationSolution@charging-quota-exhaust.md)（Final-Unit-Action） |
-| 未匹配流量兜底 | → [CS 兜底默认](business/business-awareness/charging/ConfigurationSolution@charging-fallback.md)（DFTURRGRPNAME） |
+| 业务诉求 | 推荐方案 | 理由 |
+|---|---|---|
+| 后付费、话单结算 | → [CS 离线计费](business/business-awareness/charging/ConfigurationSolution@charging-offline.md) | Ga 接口，URR=OFFLINE |
+| 预付费、实时余额控制 | → [CS 在线计费](business/business-awareness/charging/ConfigurationSolution@charging-online.md) | Gy/DCC，URR=ONLINE |
+| 在线+离线统一（5G SA） | → [CS 融合计费](business/business-awareness/charging/ConfigurationSolution@charging-converged.md) | N40/Nchf，双 URR |
+| 按业务差异化费率 | → [CS 内容计费基础](business/business-awareness/charging/ConfigurationSolution@charging-content.md) | SA 识别 + RG |
+| 按流量/时长/事件计量 | → [CS 计量形态增强](business/business-awareness/charging/ConfigurationSolution@charging-metering.md) | METERINGTYPE |
+| 配额耗尽体验切换 | → [CS 配额降速](business/business-awareness/charging/ConfigurationSolution@charging-quota-exhaust.md) | Final-Unit-Action |
+| 未匹配流量兜底 | → [CS 兜底默认](business/business-awareness/charging/ConfigurationSolution@charging-fallback.md) | DFTURRGRPNAME |
 
 ## 关联
 
