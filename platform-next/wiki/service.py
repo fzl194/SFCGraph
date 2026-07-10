@@ -6,7 +6,7 @@ from __future__ import annotations
 import threading
 from pathlib import Path
 
-from wiki.build_wiki_index import build_index, deserialize_index, serialize_index
+from wiki.build_wiki_index import build_index, deserialize_index, serialize_index, update_incremental
 from wiki.models import Index
 from wiki.parser import object_type_of
 
@@ -49,11 +49,16 @@ class WikiService:
         _ = self.index
 
     def _load_or_build(self) -> Index:
-        # 有索引文件直接载入（~1-2s）；缺失才全量构建。
-        # assets 变更后用 CLI 手动重建：
-        #   python -m wiki.build_wiki_index ../assets wiki/data/wiki_index.json
+        # 有索引文件：载入 + 增量拾取改动/新增（只重读变更文件，秒级；reverse 整体重建）。
+        # 缺失：全量构建。
         if self.index_path.exists():
-            return deserialize_index(self.index_path.read_text(encoding="utf-8"))
+            idx = deserialize_index(self.index_path.read_text(encoding="utf-8"))
+            cutoff = self.index_path.stat().st_mtime
+            new_idx, n = update_incremental(idx, self.assets_root, cutoff)
+            if n:
+                self.index_path.write_text(serialize_index(new_idx), encoding="utf-8")
+                return new_idx
+            return idx
         idx = build_index(self.assets_root)
         self.index_path.parent.mkdir(parents=True, exist_ok=True)
         self.index_path.write_text(serialize_index(idx), encoding="utf-8")

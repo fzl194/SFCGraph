@@ -1,5 +1,5 @@
-import json
-from wiki.build_wiki_index import build_index, serialize_index, deserialize_index
+import json, time
+from wiki.build_wiki_index import build_index, serialize_index, deserialize_index, update_incremental
 
 
 def test_build_index_basic(sample_assets):
@@ -73,3 +73,36 @@ def test_task_nf_version_derived_from_id(sample_assets):
     assert t.type == "Task"
     assert t.nf == "UDG"          # derived from id, not front-matter (front-matter now omits it)
     assert t.version == "20.15.2"
+
+
+def test_update_incremental_adds_new_file(sample_assets):
+    idx = build_index(sample_assets)
+    cutoff = time.time()          # 此刻之前的文件不算 changed
+    time.sleep(1.3)
+    new = sample_assets / "task/UDG/20.15.2/0-99999.md"
+    new.write_text(
+        "---\nid: UDG@20.15.2@Task@0-99999\ntype: Task\ntask_layer: atom\nname: 新任务\n"
+        "ref: UDG@20.15.2@MMLCommand@ADD URR\n---\n# 新任务\n## 命令\n- [ADD URR](command/UDG/20.15.2/ADD-URR.md)\n",
+        encoding="utf-8")
+    new_idx, n = update_incremental(idx, sample_assets, cutoff)
+    assert n == 1                                                # 只重读了新增那一个
+    assert "task/UDG/20.15.2/0-99999.md" in new_idx.nodes
+    nn = new_idx.nodes["task/UDG/20.15.2/0-99999.md"]
+    assert nn.type == "Task" and nn.nf == "UDG" and nn.version == "20.15.2"
+    # fm 派生边 ref_command → ADD-URR（经 id_to_path 解析）
+    out = new_idx.out_edges.get("task/UDG/20.15.2/0-99999.md", ())
+    assert any(e.dst == "command/UDG/20.15.2/ADD-URR.md" and e.relation_type == "ref_command" for e in out)
+    # reverse 重建后 ADD-URR 的反链含新 task
+    assert "task/UDG/20.15.2/0-99999.md" in new_idx.reverse.get("command/UDG/20.15.2/ADD-URR.md", ())
+    # 原节点未丢
+    assert "command/UDG/20.15.2/ADD-URR.md" in new_idx.nodes
+
+
+def test_update_incremental_removes_deleted(sample_assets):
+    idx = build_index(sample_assets)
+    cutoff = time.time(); time.sleep(1.3)
+    (sample_assets / "command/UDG/20.15.2/ADD-URR.md").unlink()
+    new_idx, n = update_incremental(idx, sample_assets, cutoff)
+    assert n >= 1
+    assert "command/UDG/20.15.2/ADD-URR.md" not in new_idx.nodes
+
