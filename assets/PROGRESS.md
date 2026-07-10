@@ -54,7 +54,7 @@
 ## 下一步候选（待用户定方向）
 1. **服务化接口（P3，推荐）**：platform-next（FastAPI 已有业务图谱接口雏形）扩展"知识包"接口，输入 `{域}/{场景}`，输出子场景裁剪子图全量 md 包。验证"服务化取包 → SKILL 消费"端到端。此时命令/特性/License 三层已就绪，可端到端跑通取包。
 2. **业务层 Compile（P4）**：LLM 读产品文档按 Schema 凝练 BD/NS/CS typed md + 人审（现有 business-graph md / BusinessGraph yaml 仅作线索）。核心范式（Agent 写、人审）首次验证，慢、要业务专家卷入。同时定业务层 wiki ID → 文件路径 resolver（两段式 ID 没含 domain/scenario 段，需 slug 索引或链接补 domain）。
-3. **compound/feature 级 task wiki**：命令级 atom 已完成（UDG 187 + UNC 209）；步骤级 compound(4)/特性级 feature(11) task wiki 后续建（建时同步 task↔task 双向编排、回填命令级 task 的"参与编排于"节）。
+3. ~~compound/feature 级 task wiki~~ → **特性级已完成**：UDG 32 + UNC 13 特性全建（feature `2-` + compound `1-`），按 `特性步骤级构建SOP.md` 构建 + `特性task_wiki审视流程.md` R1 审查。**UNC 两批零 critical**（首批计费5：5 warning 修；二批带宽7+访问1：3 warning 修）+ R3 修复 + SOP 沉淀 4 条（R1.4 组合参数跨 activation / R1.5 可选命令证据链 + DP 分列 / R1.6 evidence 勘误标注）。UNC compound 复用库 1-00001~19 建立。task↔task 双向编排待业务层/方案级补。
 4. **Lint（P8 提前做一版）**：静态体检——查断链（被引无页）、缺反向链接、占位未回填、Schema 不合规。命令+特性层已够多对象，Lint 有素材。
 
 ## 已知小缺口（留给 Lint 阶段）
