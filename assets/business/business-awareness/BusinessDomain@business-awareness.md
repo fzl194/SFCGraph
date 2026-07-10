@@ -2,6 +2,7 @@
 id: BusinessDomain@business-awareness
 type: BusinessDomain
 name: 业务感知
+domain: business-awareness
 status: draft
 ---
 

@@ -3,6 +3,7 @@ id: NetworkScenario@charging
 type: NetworkScenario
 name: 计费
 domain: business-awareness
+scenario: charging
 status: draft
 ---
 
