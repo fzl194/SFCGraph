@@ -2,7 +2,7 @@
 
 > 作用：指导 Agent 在 `assets/business/` 下构建**业务域(BD)→场景(NS)→方案(CS)** 三类业务层 typed wiki。
 > 这是特性层 task wiki（feature `2-`/compound `1-`/atom `0-`，在 `assets/task/{nf}/{ver}/`）之上的**业务层编排**准则。
-> 镜像：`assets/task/特性步骤级构建SOP.md`（特性层 SOP）。配套：`assets/task/业务层级wiki审视流程.md`（审视 R1）。
+> 镜像：`assets/task/特性步骤级构建SOP.md`（特性层 SOP）。配套：`assets/business/业务层级wiki审视流程.md`（审视 R1）。
 > 首个完整范本：**计费场景**（BD 业务感知 + NS 计费 + 7 CS，先建 CS-3 融合）。
 > 设计依据：`docs/superpowers/specs/2026-07-10-business-layer-sop-design.md`（已基线）。
 
@@ -98,6 +98,16 @@ scenario: {场景slug}       # NS 自身填；CS 填所属场景；BD 无
 status: draft
 ---
 ```
+
+**类型-字段必填对照**（防字段漏填，便于 `_GROUP_FIELDS` 取到 `domain` 进 categories 分组 / 左树按 domain 渲染）：
+
+| 类型 | `id` | `type` | `name` | `domain` | `scenario` | `status` |
+|---|---|---|---|---|---|---|
+| **BD** | 必填 | 必填 | 必填 | **必填**（自身域 slug） | — | 必填 |
+| **NS** | 必填 | 必填 | 必填 | **必填**（所属 BD slug） | **必填**（自身场景 slug） | 必填 |
+| **CS** | 必填 | 必填 | 必填 | **必填**（所属 BD slug） | **必填**（所属场景 slug） | 必填 |
+
+> **R1 校验**：建完后 `grep` 校验——BD 必须有 `domain:` 行，NS 必须有 `domain:` + `scenario:` 行，CS 必须有 `domain:` + `scenario:` 行（slug 与 id 第二段一致）。漏填阻塞后续 categories 分组 / 左树渲染。
 
 **BD 模板（业务域·定义层，最抽象，不涉及配置）**
 
@@ -238,6 +248,6 @@ status: draft
 
 > **族内构建顺序（经验，镜像特性 SOP §8）**：同族多 CS（如计费族 7 CS）构建时，**先建差异最全的最复杂 CS**（计费族=CS-3 融合计费，跨网元 UDG+UNC、双 URR、CHF 协同最全），把跨网元协同知识 + 复用 compound 场景差异一次沉淀到位；再建简单 CS（纯参数变种）复用即可。避免先建简单 CS（单视角）导致协同知识欠债、后续不断回头补。
 >
-> **每批后自审**：每完成一族（或一批）CS，按 `assets/task/业务层级wiki审视流程.md` R1 审视（task 覆盖度/复用合理性/跨网元协同完整性/前置门/证据链），critical 即修，经验回填本 SOP。
+> **每批后自审**：每完成一族（或一批）CS，按 `assets/business/业务层级wiki审视流程.md` R1 审视（task 覆盖度/复用合理性/跨网元协同完整性/前置门/证据链），critical 即修，经验回填本 SOP。
 
 > 构建中如发现本 SOP 有缺陷，挖审查意见 → 修正本文件 → 版本号 +1。准则稳定判据：连续 2 个新 CS pass 人工免改或仅微调。
