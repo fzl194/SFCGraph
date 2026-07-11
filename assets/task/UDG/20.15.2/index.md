@@ -240,7 +240,7 @@
 - [0-00299](task/UDG/20.15.2/0-00299.md) · 添加位置区域地址分配用户白名单（ADD ADRLOCWHITELST） — 基于位置地址分配的UE白名单(MSISDN 1~20位+IMSI对应)，新激活UE才生效；GWFD-020421基于位置地址分配场景
 - [0-00300](task/UDG/20.15.2/0-00300.md) · 绑定IKE对等体到IPsec安全策略（ADD ATTACHIKEPEER） — 把IKE对等体(IKEPEERNAME)挂到IPsec策略(POLICYNAME+SEQUENCENUMBER)下决定IKE协商主备优先级(PEERPRIORITY 1~3，1为最高)；与[0-00214] IKEPEER成对使用，TEMPLATEMODE=None系统级硬约束不支持用户级IPsec
 
-## 步骤级 compound（27）· ★复用库★
+## 步骤级 compound（34）· ★复用库★
 
 > 建 feature 前先查此段：候选步骤命令集与已有 compound 重合≥0.75 且相位同义 → 引用不新建（见 [构建SOP](task/特性步骤级构建SOP.md) §3）。格式：`编号 · 名称 — cmd:命令集 | 用于:feature | 层级`。
 
@@ -273,10 +273,13 @@
 - [1-00027](task/UDG/20.15.2/1-00027.md) · IPv6承载基础设施（License+VPN+IPv6地址族） — cmd:LICENSESWITCH,VPNINST,L3VPNINST,VPNINSTAF | 用于:2-00040 | 层级:特性专属(APN域·IPv6承载基础设施层·020401+020406+020403共享)
 - [1-00028](task/UDG/20.15.2/1-00028.md) · IPv6PD-V6PREFIXLENGTH<64 PD标志 — cmd:LICENSESWITCH,SECTION,CONFLICTIPV6,IPALLOCRULE | 用于:2-00041 | 层级:特性专属(APN域·PD特性V6PREFIXLENGTH<64触发+变体规则字符串+License开关)
 - [1-00029](task/UDG/20.15.2/1-00029.md) · APN接入域基础设施（L3VPN+APN+地址分配属性） — cmd:L3VPNINST,VPNINSTAF,VPNINST,APN,APNADDRESSATTR | 用于:2-00034,2-00035,2-00036,2-00039,2-00040,2-00041 | 层级:域通用(APN域·接入域底层·6地址分配特性共享·从平铺抽取2026-07-11)
-- [1-00030](task/UDG/20.15.2/1-00030.md) · MPLS VPN 基础设施骨架 — cmd:VPNINSTANCE,VPNINSTANCE_ERT/IRT,VPNINSTAF,IPBINDVPN | 用于:2-00043(待建) | 层级:特性专属(MPLS VPN·VRF+RT+分标签+接口绑定·6组网变体共享·崩溃前批次4孤本待完善)
+- [1-00030](task/UDG/20.15.2/1-00030.md) · MPLS VPN 基础设施骨架 — cmd:VPNINST,VPNTARGET,VPNINSTAF,MODVPNINSTAF,IPBINDVPN | 用于:2-00043 | 层级:特性专属(MPLS VPN·VRF+RD+RT+分标签+接口绑定·6组网变体共享·2026-07-12完善命令名对齐实际wiki)
 - [1-00031](task/UDG/20.15.2/1-00031.md) · 主备UDG+GRE隧道冗余保护体系 — cmd:REDUNDRDTIP,INTERFACE,IPBINDVPN,GRETUNNEL,SRROUTE/SRROUTE6,OSPFINTERFACE,OSPFIMPORTROUTE,REDUNDUSER,APNREDUNDUPSW | 用于:2-00038 | 层级:特性专属(APN域·可靠性执行层·9步阶段内聚·从平铺抽取2026-07-11·未来隧道冗余可复用)
+- [1-00032](task/UDG/20.15.2/1-00032.md) · GRE隧道建立 — cmd:INTERFACE,IFIPV4ADDRESS,GRETUNNEL,SRROUTE,MODGRETUNNEL | 用于:2-00042 | 层级:特性专属(隧道族·LoopBack源+GRETUNNEL+Tunnel接口+静态路由+可选增强·接入方式隧道族共享)
+- [1-00033](task/UDG/20.15.2/1-00033.md) · IPSec隧道建立（VNRS+IPsec双配+ACL+提议+IKEPeer+策略+应用+DPD） — cmd:L3VPNINST,VPNINSTAF,INTERFACE,IPSECINTFCFG,IPBINDVPN,IFIPV4ADDRESS,SRROUTE,L3VPNINSTIPSEC,VPNINSTAFIPSEC,INTERFACEIPSEC,IPBINDVPNIPSEC,IFIPV4ADDRESSIPSEC,ACLGROUPIPSEC,ACLRULEADV4IPSEC,IPSECPROPOSALIPSEC,IKEPROPOSAL,IKEPEER,IPSECPOLICY,PROPATTACHIPSECPROPOSAL,ATTACHIKEPEER,IPSECINTFCFGIPSEC,IKEGLOBALCONFIG | 用于:2-00044 | 层级:特性专属(IPSec隧道族·9步骨架·VNRS+IPsec微服务双配UDG独有·接入方式隧道族共享·GREoverIPSec/OSPFoverIPSec/主备/多Sequence/国密IKEv1复用·2026-07-12建防平铺)
+- [1-00034](task/UDG/20.15.2/1-00034.md) · L2TP LNS建立 — cmd:L2TPGROUP,L2TPCLIENTIP,L2TPLNSINFO | 用于:2-00046 | 层级:特性专属(L2TP本地配置方式A·LNS容器+组绑定源端接口+扩展LNS·主备/负荷分担/IPv6-LNS/多LNS场景共享·2026-07-12建防平铺)
 
-## 特性级（feature）（40）
+## 特性级（feature）（46）
 
 - [2-00001](task/UDG/20.15.2/2-00001.md) · 基于业务感知的带宽控制（GWFD-110311） — 配置 BWM 实现用户级/用户组级/整机级三层层次化带宽控制
 - [2-00002](task/UDG/20.15.2/2-00002.md) · URL过滤基本功能（GWFD-110471） — ICAP外置分析+CF双轨道，PCC触发
@@ -319,4 +322,9 @@
 - [2-00039](task/UDG/20.15.2/2-00039.md) · IPv4v6双栈接入（GWFD-020403） — License LKV3G5VDSA01前置+双栈APN+双栈POOLGROUP+双池双段+单映射+RA主动下发；OSPF+OSPFv3双协议wlr发布；需License 82209829
 - [2-00040](task/UDG/20.15.2/2-00040.md) · IPv6承载上下文（GWFD-020401） — IPv6单栈承载基础设施（License LKV3G5V6PB01 + VPN + AFTYPE=ipv6uni）+ OSPFv3+WLR路由发布；不涉及地址池（由010105承载）；020406强制前置（文档显式声明）；020403共享RA基础设施
 - [2-00041](task/UDG/20.15.2/2-00041.md) · IPv6 Prefix Delegation（GWFD-020406） — UE作为无线移动路由器下发IPv6前缀（V6PREFIXLENGTH<64 PD标志）；5变体（外部网元/本地APN/本地SMF/本地SMF+APN/本地位置）；强依赖020401；变体1-4下行OSPFv3，变体5下行OSPF；变体5 License=LKV3G5LBAA01非LKV3G5P6PD01；UDG 20.5.0+
+- [2-00042](task/UDG/20.15.2/2-00042.md) · GRE（IPFD-015002） — UDG侧GRE三层隧道封装（ADD GRETUNNEL+LoopBack源+Tunnel接口+静态路由+可选增强Checksum/GREKey/Keepalive）；5场景（基础/VPN组网/IPv6/多租户共享/GRE over IPSec）；C-U对称；无需License；与IPSec源地址互斥
+- [2-00043](task/UDG/20.15.2/2-00043.md) · MPLS VPN（GWFD-020411） — UDG作PE的L3VPN（BGP/MPLS三层标签交换）；VRF+RD+VPN Target+MP-BGP+双层标签；6组网变体（Intranet/Extranet/Hub&Spoke/跨域OptionA-B/MCE/6VPE）+VPN FRR/GR(Helper)/NSR可靠性；需License；C-U对称同构；UDG 20.2.0+；2026-07-12完善命令名对齐实际wiki+兄弟特性链接修正
+- [2-00044](task/UDG/20.15.2/2-00044.md) · IPSec（IPFD-015004） — UDG侧IPSec三层加密隧道（ESP/AH+AES/SM4+SHA/SM3+DH group19）；VNRS+IPsec微服务双配架构；9场景×3协议×3 IKE版本；C-U对称；无需License；与GRE源地址互斥
+- [2-00045](task/UDG/20.15.2/2-00045.md) · 接入控制（GWFD-010151） — UDG侧基于协商带宽的用户面接入控制（CAR直接丢弃/Shaping队列整形）；4场景×方向×使能；配置极简（ADD APN+SET APNQOSATTR 2命令<3不抽compound）；C-U非对称（UDG执行流控）；无需License
+- [2-00046](task/UDG/20.15.2/2-00046.md) · L2TP VPN（GWFD-020412） — UDG作LAC与企业网LNS建立L2TP隧道（二层PPP封装）；2方式（本地配置L2TPGROUP+L2TPCLIENTIP / AAA下发L2TPRDSCLIENT）×LNS工作模式（主备/负荷分担/Tunnel-Preference）×接入代际×IP类型；内层PPP三阶段协商由LNS分配企业IP；必须License 82200BVC；C-U协同分工（UNC WSFD-104410决策下发）；互斥010108/020482；UDG 20.3.2+；2026-07-12建
 
