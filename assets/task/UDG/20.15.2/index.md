@@ -240,7 +240,7 @@
 - [0-00299](task/UDG/20.15.2/0-00299.md) · 添加位置区域地址分配用户白名单（ADD ADRLOCWHITELST） — 基于位置地址分配的UE白名单(MSISDN 1~20位+IMSI对应)，新激活UE才生效；GWFD-020421基于位置地址分配场景
 - [0-00300](task/UDG/20.15.2/0-00300.md) · 绑定IKE对等体到IPsec安全策略（ADD ATTACHIKEPEER） — 把IKE对等体(IKEPEERNAME)挂到IPsec策略(POLICYNAME+SEQUENCENUMBER)下决定IKE协商主备优先级(PEERPRIORITY 1~3，1为最高)；与[0-00214] IKEPEER成对使用，TEMPLATEMODE=None系统级硬约束不支持用户级IPsec
 
-## 步骤级 compound（24）· ★复用库★
+## 步骤级 compound（27）· ★复用库★
 
 > 建 feature 前先查此段：候选步骤命令集与已有 compound 重合≥0.75 且相位同义 → 引用不新建（见 [构建SOP](task/特性步骤级构建SOP.md) §3）。格式：`编号 · 名称 — cmd:命令集 | 用于:feature | 层级`。
 
@@ -272,6 +272,9 @@
 - [1-00026](task/UDG/20.15.2/1-00026.md) · IPv6承载-OSPFv3+WLR（IPv6下行路由发布） — cmd:OSPFV3,OSPFV3AREA,OSPFV3IMPORTROUTE | 用于:2-00040 | 层级:特性专属(APN域·IPv6下行路由发布层·020401+020406共网段场景共享)
 - [1-00027](task/UDG/20.15.2/1-00027.md) · IPv6承载基础设施（License+VPN+IPv6地址族） — cmd:LICENSESWITCH,VPNINST,L3VPNINST,VPNINSTAF | 用于:2-00040 | 层级:特性专属(APN域·IPv6承载基础设施层·020401+020406+020403共享)
 - [1-00028](task/UDG/20.15.2/1-00028.md) · IPv6PD-V6PREFIXLENGTH<64 PD标志 — cmd:LICENSESWITCH,SECTION,CONFLICTIPV6,IPALLOCRULE | 用于:2-00041 | 层级:特性专属(APN域·PD特性V6PREFIXLENGTH<64触发+变体规则字符串+License开关)
+- [1-00029](task/UDG/20.15.2/1-00029.md) · APN接入域基础设施（L3VPN+APN+地址分配属性） — cmd:L3VPNINST,VPNINSTAF,VPNINST,APN,APNADDRESSATTR | 用于:2-00034,2-00035,2-00036,2-00039,2-00040,2-00041 | 层级:域通用(APN域·接入域底层·6地址分配特性共享·从平铺抽取2026-07-11)
+- [1-00030](task/UDG/20.15.2/1-00030.md) · MPLS VPN 基础设施骨架 — cmd:VPNINSTANCE,VPNINSTANCE_ERT/IRT,VPNINSTAF,IPBINDVPN | 用于:2-00043(待建) | 层级:特性专属(MPLS VPN·VRF+RT+分标签+接口绑定·6组网变体共享·崩溃前批次4孤本待完善)
+- [1-00031](task/UDG/20.15.2/1-00031.md) · 主备UDG+GRE隧道冗余保护体系 — cmd:REDUNDRDTIP,INTERFACE,IPBINDVPN,GRETUNNEL,SRROUTE/SRROUTE6,OSPFINTERFACE,OSPFIMPORTROUTE,REDUNDUSER,APNREDUNDUPSW | 用于:2-00038 | 层级:特性专属(APN域·可靠性执行层·9步阶段内聚·从平铺抽取2026-07-11·未来隧道冗余可复用)
 
 ## 特性级（feature）（40）
 
