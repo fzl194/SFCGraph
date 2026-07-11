@@ -240,7 +240,7 @@
 - [0-00299](task/UDG/20.15.2/0-00299.md) · 添加位置区域地址分配用户白名单（ADD ADRLOCWHITELST） — 基于位置地址分配的UE白名单(MSISDN 1~20位+IMSI对应)，新激活UE才生效；GWFD-020421基于位置地址分配场景
 - [0-00300](task/UDG/20.15.2/0-00300.md) · 绑定IKE对等体到IPsec安全策略（ADD ATTACHIKEPEER） — 把IKE对等体(IKEPEERNAME)挂到IPsec策略(POLICYNAME+SEQUENCENUMBER)下决定IKE协商主备优先级(PEERPRIORITY 1~3，1为最高)；与[0-00214] IKEPEER成对使用，TEMPLATEMODE=None系统级硬约束不支持用户级IPsec
 
-## 步骤级 compound（21）· ★复用库★
+## 步骤级 compound（24）· ★复用库★
 
 > 建 feature 前先查此段：候选步骤命令集与已有 compound 重合≥0.75 且相位同义 → 引用不新建（见 [构建SOP](task/特性步骤级构建SOP.md) §3）。格式：`编号 · 名称 — cmd:命令集 | 用于:feature | 层级`。
 
@@ -267,9 +267,13 @@
 - [1-00021](task/UDG/20.15.2/1-00021.md) · 地址分配规则（全局+APN两级+三级优先级） — cmd:SET IPALLOCRULE,SET APNIPALLOCRULE | 用于:2-00034,2-00036 | 层级:特性专属(APN域·地址分配规则层·RADIUS子方式必配APN级)
 - [1-00022](task/UDG/20.15.2/1-00022.md) · 地址分配体系（地址池三级+映射） — cmd:POOL,SECTION,POOLGROUP,POOLBINDGROUP,CONFLICTIP,POOLGRPMAP | 用于:2-00034,2-00036 | 层级:特性专属(APN域·地址池体系层·6条命令·4子方式+位置子方式共享)
 - [1-00023](task/UDG/20.15.2/1-00023.md) · SMF子方式（基于SMF/SMF+APN） — cmd:CPNODEID,IPALLOCBYSMFGLBSW,IPALLOCBYSMFSW | 用于:2-00034 | 层级:特性专属(APN域·SMF子方式开关两级控制·仅SMF/SMF+APN子方式执行)
-- [1-00024](task/UDG/20.15.2/1-00024.md) · 下行路由发布（OSPF引入用户路由） — cmd:OSPF,OSPFAREA,OSPFNETWORK,OSPFIMPORTROUTE | 用于:2-00034,2-00035,2-00036 | 层级:特性专属(APN域·下行路由发布层·4子方式+010104外部+020421位置共享)
+- [1-00024](task/UDG/20.15.2/1-00024.md) · 下行路由发布（OSPF引入用户路由） — cmd:OSPF,OSPFAREA,OSPFNETWORK,OSPFIMPORTROUTE | 用于:2-00034,2-00035,2-00036,2-00041 | 层级:特性专属(APN域·下行路由发布层·4子方式+010104外部+020421位置共享+020406变体5共享)
+- [1-00025](task/UDG/20.15.2/1-00025.md) · 双栈APN+双栈POOLGROUP（IPv4v6对称配置） — cmd:APN,POOLGROUP,POOL,SECTION,POOLBINDGROUP,POOLGRPMAP | 用于:2-00039 | 层级:特性专属(APN域·双栈特化层·在1-00022基础上叠加双VPN/双算法/双池双段)
+- [1-00026](task/UDG/20.15.2/1-00026.md) · IPv6承载-OSPFv3+WLR（IPv6下行路由发布） — cmd:OSPFV3,OSPFV3AREA,OSPFV3IMPORTROUTE | 用于:2-00040 | 层级:特性专属(APN域·IPv6下行路由发布层·020401+020406共网段场景共享)
+- [1-00027](task/UDG/20.15.2/1-00027.md) · IPv6承载基础设施（License+VPN+IPv6地址族） — cmd:LICENSESWITCH,VPNINST,L3VPNINST,VPNINSTAF | 用于:2-00040 | 层级:特性专属(APN域·IPv6承载基础设施层·020401+020406+020403共享)
+- [1-00028](task/UDG/20.15.2/1-00028.md) · IPv6PD-V6PREFIXLENGTH<64 PD标志 — cmd:LICENSESWITCH,SECTION,CONFLICTIPV6,IPALLOCRULE | 用于:2-00041 | 层级:特性专属(APN域·PD特性V6PREFIXLENGTH<64触发+变体规则字符串+License开关)
 
-## 特性级（feature）（38）
+## 特性级（feature）（40）
 
 - [2-00001](task/UDG/20.15.2/2-00001.md) · 基于业务感知的带宽控制（GWFD-110311） — 配置 BWM 实现用户级/用户组级/整机级三层层次化带宽控制
 - [2-00002](task/UDG/20.15.2/2-00002.md) · URL过滤基本功能（GWFD-110471） — ICAP外置分析+CF双轨道，PCC触发
@@ -309,4 +313,7 @@
 - [2-00036](task/UDG/20.15.2/2-00036.md) · 基于位置的地址分配（GWFD-020421） — 用户面地址分配的"基于位置"子方式独立特性化；需License LKV3G5LBAA01；LAC/TAC组+POOLGRPMAP（LOCATION=LAC/TAC±APN±SMF）+IPALLOCBYLOC 开关+ADRLOCWHITELST白名单；UDG 20.2.0+
 - [2-00037](task/UDG/20.15.2/2-00037.md) · 用户面地址自动检测（GWFD-010108） — 诊断旁路工具；STR PDNROUTETST 触发 PING/DNS/Tracert 三种探测方式复用GWFD-010105 LOCAL地址池；与010107/110910/020406/020412互斥；仅本地地址池场景；本特性无需License
 - [2-00038](task/UDG/20.15.2/2-00038.md) · 静态地址用户路由冗余（GWFD-010107） — 主备UDG双机热备+GRE Tunnel（REDUNDANCYEN=TRUE）+虚拟重定向IP+LoopBack/Tunnel接口+SET REDUNDUSER全局开关+SET APNREDUNDUPSW仅备UDG+OSPF COST主100/备200；覆盖6类静态地址用户；C-U对称WSFD-107021；UDG 20.5.0+；本特性无需License
+- [2-00039](task/UDG/20.15.2/2-00039.md) · IPv4v6双栈接入（GWFD-020403） — License LKV3G5VDSA01前置+双栈APN+双栈POOLGROUP+双池双段+单映射+RA主动下发；OSPF+OSPFv3双协议wlr发布；需License 82209829
+- [2-00040](task/UDG/20.15.2/2-00040.md) · IPv6承载上下文（GWFD-020401） — IPv6单栈承载基础设施（License LKV3G5V6PB01 + VPN + AFTYPE=ipv6uni）+ OSPFv3+WLR路由发布；不涉及地址池（由010105承载）；020406强制前置（文档显式声明）；020403共享RA基础设施
+- [2-00041](task/UDG/20.15.2/2-00041.md) · IPv6 Prefix Delegation（GWFD-020406） — UE作为无线移动路由器下发IPv6前缀（V6PREFIXLENGTH<64 PD标志）；5变体（外部网元/本地APN/本地SMF/本地SMF+APN/本地位置）；强依赖020401；变体1-4下行OSPFv3，变体5下行OSPF；变体5 License=LKV3G5LBAA01非LKV3G5P6PD01；UDG 20.5.0+
 
