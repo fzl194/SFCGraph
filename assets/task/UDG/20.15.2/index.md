@@ -264,12 +264,12 @@
 - [1-00018](task/UDG/20.15.2/1-00018.md) · 会话建立依赖-地址分配 — cmd:无 | 用于:2-00033 | 层级:能力型骨架(APN域·会话建立地址分配依赖→GWFD-010105)
 - [1-00019](task/UDG/20.15.2/1-00019.md) · 会话建立依赖-PCC策略 — cmd:无 | 用于:2-00033 | 层级:能力型骨架(APN域·会话建立PCC策略依赖→GWFD-020351)
 - [1-00020](task/UDG/20.15.2/1-00020.md) · 会话建立依赖-N4接口配置 — cmd:无 | 用于:2-00033 | 层级:能力型骨架(APN域·会话建立接口偶联依赖→GWFD-010224/010233)
-- [1-00021](task/UDG/20.15.2/1-00021.md) · 地址分配规则（全局+APN两级+三级优先级） — cmd:SET IPALLOCRULE,SET APNIPALLOCRULE | 用于:2-00034 | 层级:特性专属(APN域·地址分配规则层·RADIUS子方式必配APN级)
-- [1-00022](task/UDG/20.15.2/1-00022.md) · 地址分配体系（地址池三级+映射） — cmd:POOL,SECTION,POOLGROUP,POOLBINDGROUP,CONFLICTIP,POOLGRPMAP | 用于:2-00034 | 层级:特性专属(APN域·地址池体系层·6条命令·4子方式共享)
+- [1-00021](task/UDG/20.15.2/1-00021.md) · 地址分配规则（全局+APN两级+三级优先级） — cmd:SET IPALLOCRULE,SET APNIPALLOCRULE | 用于:2-00034,2-00036 | 层级:特性专属(APN域·地址分配规则层·RADIUS子方式必配APN级)
+- [1-00022](task/UDG/20.15.2/1-00022.md) · 地址分配体系（地址池三级+映射） — cmd:POOL,SECTION,POOLGROUP,POOLBINDGROUP,CONFLICTIP,POOLGRPMAP | 用于:2-00034,2-00036 | 层级:特性专属(APN域·地址池体系层·6条命令·4子方式+位置子方式共享)
 - [1-00023](task/UDG/20.15.2/1-00023.md) · SMF子方式（基于SMF/SMF+APN） — cmd:CPNODEID,IPALLOCBYSMFGLBSW,IPALLOCBYSMFSW | 用于:2-00034 | 层级:特性专属(APN域·SMF子方式开关两级控制·仅SMF/SMF+APN子方式执行)
-- [1-00024](task/UDG/20.15.2/1-00024.md) · 下行路由发布（OSPF引入用户路由） — cmd:OSPF,OSPFAREA,OSPFNETWORK,OSPFIMPORTROUTE | 用于:2-00034 | 层级:特性专属(APN域·下行路由发布层·4子方式共享)
+- [1-00024](task/UDG/20.15.2/1-00024.md) · 下行路由发布（OSPF引入用户路由） — cmd:OSPF,OSPFAREA,OSPFNETWORK,OSPFIMPORTROUTE | 用于:2-00034,2-00035,2-00036 | 层级:特性专属(APN域·下行路由发布层·4子方式+010104外部+020421位置共享)
 
-## 特性级（feature）（34）
+## 特性级（feature）（38）
 
 - [2-00001](task/UDG/20.15.2/2-00001.md) · 基于业务感知的带宽控制（GWFD-110311） — 配置 BWM 实现用户级/用户组级/整机级三层层次化带宽控制
 - [2-00002](task/UDG/20.15.2/2-00002.md) · URL过滤基本功能（GWFD-110471） — ICAP外置分析+CF双轨道，PCC触发
@@ -305,4 +305,8 @@
 - [2-00032](task/UDG/20.15.2/2-00032.md) · 基于小区负荷上报的无线资源优化（GWFD-110332） — APN级小区负荷上报SET APNREPORTATTR（注：非IPSQM，IPSQM属GWFD-110941）
 - [2-00033](task/UDG/20.15.2/2-00033.md) · 会话管理（GWFD-010101，★能力型底座骨架） — 无独立MML配置；UPF被动接收PFCP/GTP-C信令建立PDU/EPS/PDP会话；本骨架显式记录对地址分配/PCC/N4接口特性的被依赖关系
 - [2-00034](task/UDG/20.15.2/2-00034.md) · 用户面地址分配（GWFD-010105） — 4子方式（基于APN/DNN/SMF/SMF+APN/RADIUS）+ 6步通用骨架 + 9条调测命令；全局/APN两级规则+三级优先级（APN/LOCATION/SMF三维）；本特性无需License
+- [2-00035](task/UDG/20.15.2/2-00035.md) · 地址分配方式（GWFD-010104） — 地址分配方式总览；独立承担外部地址分配配置（POOLTYPE=EXTERNAL + CHECKIPVALID白名单 + HOSTROUTEIP主机地址接入）；用户面地址分配交由010105承载；本特性无需License
+- [2-00036](task/UDG/20.15.2/2-00036.md) · 基于位置的地址分配（GWFD-020421） — 用户面地址分配的"基于位置"子方式独立特性化；需License LKV3G5LBAA01；LAC/TAC组+POOLGRPMAP（LOCATION=LAC/TAC±APN±SMF）+IPALLOCBYLOC 开关+ADRLOCWHITELST白名单；UDG 20.2.0+
+- [2-00037](task/UDG/20.15.2/2-00037.md) · 用户面地址自动检测（GWFD-010108） — 诊断旁路工具；STR PDNROUTETST 触发 PING/DNS/Tracert 三种探测方式复用GWFD-010105 LOCAL地址池；与010107/110910/020406/020412互斥；仅本地地址池场景；本特性无需License
+- [2-00038](task/UDG/20.15.2/2-00038.md) · 静态地址用户路由冗余（GWFD-010107） — 主备UDG双机热备+GRE Tunnel（REDUNDANCYEN=TRUE）+虚拟重定向IP+LoopBack/Tunnel接口+SET REDUNDUSER全局开关+SET APNREDUNDUPSW仅备UDG+OSPF COST主100/备200；覆盖6类静态地址用户；C-U对称WSFD-107021；UDG 20.5.0+；本特性无需License
 
