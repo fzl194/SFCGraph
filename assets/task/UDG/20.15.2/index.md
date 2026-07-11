@@ -1,6 +1,6 @@
 # index · task/UDG/20.15.2
 
-## 命令级（atom）（228）
+## 命令级（atom）（237）
 
 - [0-00001](task/UDG/20.15.2/0-00001.md) · 配置URR（ADD URR） — 配置一条使用量上报规则(URR)，确定费率与计费方式
 - [0-00002](task/UDG/20.15.2/0-00002.md) · 配置URR组（ADD URRGROUP） — 配置URRGROUP，上行/下行分别绑定在线与离线URR
@@ -224,6 +224,15 @@
 - [0-00322](task/UDG/20.15.2/0-00322.md) · 设置基于位置区分配地址的开关（SET IPALLOCBYLOCSW） — 配置基于位置区分配地址的位置区组级开关(LOCATIONGRPTYPE×LOCATIONGRPNAME×SWITCH/IPV6SWITCH)；SWITCH/IPV6SWITCH三态DISABLE/ENABLE/INHERIT；LOCATIONGRPNAME必须已通过ADD LACGROUP/TACGROUP预建
 - [0-00323](task/UDG/20.15.2/0-00323.md) · 设置基于SMF分配地址的全局开关（SET IPALLOCBYSMFGLBSW） — 配置基于SMF分配地址IPv4/IPv6全局开关(SWITCH/IPV6SWITCH)；整机唯一(max_records=1)默认双DISABLE；SMF级IPALLOCBYSMFSW的SWITCH=INHERIT时继承本全局值
 - [0-00324](task/UDG/20.15.2/0-00324.md) · 设置基于SMF分配地址的开关（SET IPALLOCBYSMFSW） — 配置基于SMF分配地址的SMF级开关(SMF必选+SWITCH/IPV6SWITCH)；SWITCH/IPV6SWITCH三态DISABLE/ENABLE/INHERIT；SMF必须通过ADD CPNODEID预建(CPNAME)
+- [0-00325](task/UDG/20.15.2/0-00325.md) · 查询地址池使用情况（DSP POOLUSAGE） — 查询地址池占用率/已分配/可用/总数；IPPOOL必选+IPVERSION默认IPV4+WHOLEPOOL/SECTIONNUM可选；触发ALM-81216告警诊断
+- [0-00326](task/UDG/20.15.2/0-00326.md) · 查询地址段使用情况（DSP SECTIONUSAGE） — 查询地址池内单地址段占用情况；IPPOOL必选+SECTIONNUM必选+IPVERSION默认IPV4；地址段粒度告警诊断
+- [0-00327](task/UDG/20.15.2/0-00327.md) · 查询用户会话上下文（DSP SESSIONINFO） — 查询会话上下文含IPv4 PDP address/IPv4 Address type/APN name；QUERYTYPE:IMSI/IPV4/IPV6/MSISDN×关键标识；GWFD-010105调测核心命令
+- [0-00328](task/UDG/20.15.2/0-00328.md) · 查询地址池（LST POOL） — 查询地址池配置（POOLNAME/POOLTYPE/HASVPN等）；按POOLNAME×IPVERSION×VERBOSE组织；用于POOL配置核查
+- [0-00329](task/UDG/20.15.2/0-00329.md) · 查询地址池组（LST POOLGROUP） — 查询地址池组配置（POOLGRPNAME/IPV4ALLOCPRIALG/IPV6ALLOCPRIALG等）；按POOLGRPNAME×VERBOSE组织；用于POOLGROUP配置核查
+- [0-00330](task/UDG/20.15.2/0-00330.md) · 查询APN配置（LST APN） — 查询APN配置（APN/HASVPN/VPNINSTANCE/SUPPORTIPV4/IPV6/IGNORE*POOLID等）；按APN×VERBOSE组织；用于APN地址分配属性核查
+- [0-00331](task/UDG/20.15.2/0-00331.md) · 查询VPN实例（LST VPNINST） — 查询VPN实例配置（VPNINSTANCE/AFTYPE/VRFRD等）；按VPNINSTANCE×VERBOSE组织；用于VPN三者一致约束核查
+- [0-00332](task/UDG/20.15.2/0-00332.md) · 查询SMF的NodeID（LST CPNODEID） — 查询SMF实例NodeID配置（CPNAME/IPV4NODEID/IPV6NODEID/FQDNNODEID）；按CPNAME×VERBOSE组织；用于SMF实例核查
+- [0-00333](task/UDG/20.15.2/0-00333.md) · 导出MML配置文件（EXP MML） — 导出当前MML配置数据为脚本文件；EXPOPTION:ALL/与原配置差异×EXPFILE必选；用于故障定位/技术支持联系前的配置收集
 - [0-00301](task/UDG/20.15.2/0-00301.md) · 配置地址池冲突IPv4地址（ADD CONFLICTIP） — 在地址池(POOLNAME)标记IPv4地址为冲突状态，禁止分配；GWFD-010105 SMF分配场景用
 - [0-00302](task/UDG/20.15.2/0-00302.md) · 配置地址池冲突IPv6前缀（ADD CONFLICTIPV6） — 在地址池(POOLNAME)标记IPv6前缀为冲突状态，禁止分配；前缀长度必须与对应地址段一致才生效
 - [0-00303](task/UDG/20.15.2/0-00303.md) · 配置SMF的NodeID（ADD CPNODEID） — 添加SMF实例(CPNAME)及NodeID(IPV4/IPV6/FQDN三选一)，被ADD POOLGRPMAP的SMF键引用
@@ -231,7 +240,7 @@
 - [0-00299](task/UDG/20.15.2/0-00299.md) · 添加位置区域地址分配用户白名单（ADD ADRLOCWHITELST） — 基于位置地址分配的UE白名单(MSISDN 1~20位+IMSI对应)，新激活UE才生效；GWFD-020421基于位置地址分配场景
 - [0-00300](task/UDG/20.15.2/0-00300.md) · 绑定IKE对等体到IPsec安全策略（ADD ATTACHIKEPEER） — 把IKE对等体(IKEPEERNAME)挂到IPsec策略(POLICYNAME+SEQUENCENUMBER)下决定IKE协商主备优先级(PEERPRIORITY 1~3，1为最高)；与[0-00214] IKEPEER成对使用，TEMPLATEMODE=None系统级硬约束不支持用户级IPsec
 
-## 步骤级 compound（17）· ★复用库★
+## 步骤级 compound（21）· ★复用库★
 
 > 建 feature 前先查此段：候选步骤命令集与已有 compound 重合≥0.75 且相位同义 → 引用不新建（见 [构建SOP](task/特性步骤级构建SOP.md) §3）。格式：`编号 · 名称 — cmd:命令集 | 用于:feature | 层级`。
 
@@ -255,8 +264,12 @@
 - [1-00018](task/UDG/20.15.2/1-00018.md) · 会话建立依赖-地址分配 — cmd:无 | 用于:2-00033 | 层级:能力型骨架(APN域·会话建立地址分配依赖→GWFD-010105)
 - [1-00019](task/UDG/20.15.2/1-00019.md) · 会话建立依赖-PCC策略 — cmd:无 | 用于:2-00033 | 层级:能力型骨架(APN域·会话建立PCC策略依赖→GWFD-020351)
 - [1-00020](task/UDG/20.15.2/1-00020.md) · 会话建立依赖-N4接口配置 — cmd:无 | 用于:2-00033 | 层级:能力型骨架(APN域·会话建立接口偶联依赖→GWFD-010224/010233)
+- [1-00021](task/UDG/20.15.2/1-00021.md) · 地址分配规则（全局+APN两级+三级优先级） — cmd:SET IPALLOCRULE,SET APNIPALLOCRULE | 用于:2-00034 | 层级:特性专属(APN域·地址分配规则层·RADIUS子方式必配APN级)
+- [1-00022](task/UDG/20.15.2/1-00022.md) · 地址分配体系（地址池三级+映射） — cmd:POOL,SECTION,POOLGROUP,POOLBINDGROUP,CONFLICTIP,POOLGRPMAP | 用于:2-00034 | 层级:特性专属(APN域·地址池体系层·6条命令·4子方式共享)
+- [1-00023](task/UDG/20.15.2/1-00023.md) · SMF子方式（基于SMF/SMF+APN） — cmd:CPNODEID,IPALLOCBYSMFGLBSW,IPALLOCBYSMFSW | 用于:2-00034 | 层级:特性专属(APN域·SMF子方式开关两级控制·仅SMF/SMF+APN子方式执行)
+- [1-00024](task/UDG/20.15.2/1-00024.md) · 下行路由发布（OSPF引入用户路由） — cmd:OSPF,OSPFAREA,OSPFNETWORK,OSPFIMPORTROUTE | 用于:2-00034 | 层级:特性专属(APN域·下行路由发布层·4子方式共享)
 
-## 特性级（feature）（33）
+## 特性级（feature）（34）
 
 - [2-00001](task/UDG/20.15.2/2-00001.md) · 基于业务感知的带宽控制（GWFD-110311） — 配置 BWM 实现用户级/用户组级/整机级三层层次化带宽控制
 - [2-00002](task/UDG/20.15.2/2-00002.md) · URL过滤基本功能（GWFD-110471） — ICAP外置分析+CF双轨道，PCC触发
@@ -291,4 +304,5 @@
 - [2-00031](task/UDG/20.15.2/2-00031.md) · 基于业务流标识的无线资源优化（GWFD-110331） — SET FPIFUNC使能FPI差异化控制
 - [2-00032](task/UDG/20.15.2/2-00032.md) · 基于小区负荷上报的无线资源优化（GWFD-110332） — APN级小区负荷上报SET APNREPORTATTR（注：非IPSQM，IPSQM属GWFD-110941）
 - [2-00033](task/UDG/20.15.2/2-00033.md) · 会话管理（GWFD-010101，★能力型底座骨架） — 无独立MML配置；UPF被动接收PFCP/GTP-C信令建立PDU/EPS/PDP会话；本骨架显式记录对地址分配/PCC/N4接口特性的被依赖关系
+- [2-00034](task/UDG/20.15.2/2-00034.md) · 用户面地址分配（GWFD-010105） — 4子方式（基于APN/DNN/SMF/SMF+APN/RADIUS）+ 6步通用骨架 + 9条调测命令；全局/APN两级规则+三级优先级（APN/LOCATION/SMF三维）；本特性无需License
 
