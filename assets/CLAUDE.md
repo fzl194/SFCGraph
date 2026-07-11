@@ -84,7 +84,7 @@ assets/ 是 **类型化的 LLM Wiki**：一个对象 = 一个 md，关系用 `[[
 - 文件名用 local_id 段（sanitized：空格/特殊字符转 `-`），目录承载 nf@version/type 段：
   - `command/UDG/20.15.2/ADD-URR.md` ← `UDG@20.15.2@MMLCommand@ADD URR`
   - `configobject/UDG/20.15.2/URR.md` ← `UDG@20.15.2@ConfigObject@URR`
-  - 业务层（无 nf@version，两段式 ID §5.2）：`business/<domain>/BusinessDomain@<domain>.md`（BD）、`business/<domain>/<scenario>/NetworkScenario@<scenario>.md`（NS）、`business/<domain>/<scenario>/ConfigurationSolution@<scenario>-<solution>.md`（CS）。CS 向下引用 task 用跨网元 assets 根路径：`[融合计费](task/UDG/20.15.2/2-00006.md)`、`[费率标识链](task/UNC/20.15.2/1-00009.md)`。业务层构建见 [业务层级构建SOP](task/业务层级构建SOP.md)。
+  - 业务层（无 nf@version，两段式 ID §5.2）：`business/<domain>/BusinessDomain@<domain>.md`（BD）、`business/<domain>/<scenario>/NetworkScenario@<scenario>.md`（NS）、`business/<domain>/<scenario>/ConfigurationSolution@<scenario>-<solution>.md`（CS）。CS 向下引用 task 用跨网元 assets 根路径：`[融合计费](task/UDG/20.15.2/2-00006.md)`、`[费率标识链](task/UNC/20.15.2/1-00009.md)`。业务层构建见 [业务层级构建SOP](business/业务层级构建SOP.md)。
 - **引用统一用 assets/ 根路径**（从 assets/ 起，**禁文件间相对路径**如 `../`），同证据 `evidence/...`：
   - **已建对象** → 标准 markdown 链接 `[显示名](assets根路径.md)`，**带 .md**：`[URR](configobject/UDG/20.15.2/URR.md)`、`[ADD URR](command/UDG/20.15.2/ADD-URR.md)`
   - **未建对象** → `[[对象ID]]` 占位（**双方括号 = 待建**）：`[0-00001](task/UDG/20.15.2/0-00001.md)`
@@ -131,9 +131,10 @@ assets/ 必须**可整个剥离单独交付/部署**。因此：
 
 ## 9. 边界（硬约束）
 
-- **可写**：仅 `assets/`（typed md + index.md + log.md + 本 CLAUDE.md + `schema/`/`evidence/` 拷贝）。
+- **可写**：仅 `assets/`（typed md + index.md + log.md + 本 CLAUDE.md + `schema/`/`evidence/` 拷贝 + `_intermediates/` 中间态）。
 - **只读**：`../output/`、`../CommandGraph/data`、`../FeatureGraph/data`、`../ConfigTask/assert`、`../business-graph`、`../改进后三层图谱定义.md`、`../docs/superpowers/specs/`。
-- 每次写前自检：路径在 `assets/` 下吗？源不改、Schema 不擅改。
+- **中间态数据**：`assets/_intermediates/`（如 `command-summary/`）—— Agent 产出的非资产中间态（命令配置方法汇总等），**不入 wiki 引用、不入 source_evidence_ids**，仅作 atom 构建的输入。git 已在 `.gitignore` 排除。属可写范围（在 assets/ 内），不算破例。
+- 每次写前自检：路径在 assets/ 下吗？源不改、Schema 不擅改。
 - 跨层/跨场景一致性：靠 `[[wiki]]` 串联 + Lint 查断链，不靠复制。
 
 ## 10. 状态约定

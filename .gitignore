@@ -5,6 +5,10 @@ output/
 business-graph/SKILL/
 business-graph/PLMN/
 
+# 中间态数据（Agent 产出，不入资产，不入 git）
+# 命令配置方法汇总（命令级 atom 构建 SOP §4.2 输出）
+assets/_intermediates/
+
 # 平台工具
 platform/
 
