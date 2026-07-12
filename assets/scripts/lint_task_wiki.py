@@ -220,13 +220,13 @@ def rule_r5_status(text: str, file: Path, base: Path, result: LintResult) -> Non
 
 def rule_r6_cmd_validity(text: str, file: Path, base: Path,
                          cmd_registered: set[str], result: LintResult) -> None:
-    """R6 命令真实性：task md 引用的命令名必须在 _numbering.json"""
+    """R6 命令真实性：task md 引用的命令名必须在 _numbering.json（防 OSPFNETWORK 类虚构）"""
     rel = str(file.relative_to(base))
     fm, body = parse_front_matter(text)
     if fm.get('task_layer') != 'atom':
         return  # 仅检查 atom 层
 
-    # ref 字段的命令名
+    # 1) ref 字段的命令名
     ref = fm.get('ref', '')
     if ref:
         m = re.match(r'.*@MMLCommand@(.+)$', ref)
@@ -234,6 +234,31 @@ def rule_r6_cmd_validity(text: str, file: Path, base: Path,
             cmd = m.group(1)
             if cmd not in cmd_registered:
                 result.add('R6', 'critical', rel, 0, f'atom ref 命令 "{cmd}" 未在 _numbering.json 中')
+
+    # 2) 文中出现的 ADD/SET/MOD/RMV/DSP/TST/EXP/RST/LCK 命令名（防 OSPFNETWORK 类虚构命令）
+    cmd_pat = re.compile(r'`?\b(ADD|SET|MOD|RMV|DSP|TST|EXP|RST|LCK)\s+([A-Z][A-Z0-9]+)`?')
+    seen = set()
+    # 全文是否已标 ★R1.5 待核
+    has_r15_marker = bool(re.search(r'★\s*R1\.5', body))
+
+    for i, line in enumerate(body.splitlines(), 1):
+        # 该行是否已标 ★R1.5
+        line_marked = '★R1.5' in line or '★ R1.5' in line
+        for m in cmd_pat.finditer(line):
+            cmd = f'{m.group(1)} {m.group(2)}'
+            if cmd in seen:
+                continue
+            seen.add(cmd)
+            # 跳过明显的非命令引用
+            if m.group(2) in {'TRUE', 'FALSE', 'YES', 'NO', 'NORMAL', 'ENABLE', 'DISABLE'}:
+                continue
+            if cmd not in cmd_registered:
+                # 已标 R1.5 待核 → 仅 info
+                severity = 'info' if line_marked or has_r15_marker else 'critical'
+                msg = (f'文中虚构命令 "{cmd}" 未在 _numbering.json 中（OSPFNETWORK 类风险）'
+                       if severity == 'critical'
+                       else f'虚构命令 "{cmd}" 已标 R1.5 待核（合规）')
+                result.add('R6', severity, rel, i, msg)
 
 
 def load_numbering(task_dir: Path, nf: str, version: str) -> dict[str, str]:
