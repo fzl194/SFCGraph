@@ -1,6 +1,6 @@
 # index · task/UNC/20.15.2
 
-## 命令级（atom）（212）
+## 命令级（atom）（280）
 
 - [0-00001](task/UNC/20.15.2/0-00001.md) · （ADD URR） — 配置一条使用量上报规则(URR)，确定计费方式与费率标识
 - [0-00002](task/UNC/20.15.2/0-00002.md) · （ADD ADCPARA） — 配置 ADC 应用的流信息上报开关，使 PCRF/PCF
@@ -214,8 +214,76 @@
 - [0-00210](task/UNC/20.15.2/0-00210.md) · 配置用户位置（ADD USRLOCATION） — 增加用户位置信息（CGI/ECGI/NCGI 代际分叉）
 - [0-00211](task/UNC/20.15.2/0-00211.md) · 配置用户位置组（ADD USRLOCATIONGRP） — 建位置组并把多条用户位置绑到组（逐位置一条）
 - [0-00212](task/UNC/20.15.2/0-00212.md) · 修改用户模板组绑定（绑位置组）（MOD UPBINDUPG） — 把用户位置组绑到用户模板组（已绑用 MOD，未绑用 AD
+- [0-00213](task/UNC/20.15.2/0-00213.md) · （ADD ACLGROUP6IPSEC） — 增加IPv6 ACL规则组（IPSec 接入方式）
+- [0-00214](task/UNC/20.15.2/0-00214.md) · （ADD ACLGROUPIPSEC） — 增加IPv4 ACL规则组（IPSec 接入方式）
+- [0-00215](task/UNC/20.15.2/0-00215.md) · （ADD ACLRULEADV4IPSEC） — 增加高级IPv4 ACL规则（IPSec 接入方式）
+- [0-00216](task/UNC/20.15.2/0-00216.md) · （ADD ACLRULEADV6IPSEC） — 增加高级IPv6 ACL规则（IPSec 接入方式）
+- [0-00217](task/UNC/20.15.2/0-00217.md) · （ADD ADDRPOOL） — 增加地址池（SMF 侧地址分配）
+- [0-00218](task/UNC/20.15.2/0-00218.md) · （ADD ADDRPOOLGRP） — 增加地址池组（SMF 侧地址分配）
+- [0-00219](task/UNC/20.15.2/0-00219.md) · （ADD ADDRUPGROUP） — 增加地址池与 UPF 组绑定（SMF 侧地址分配）
+- [0-00220](task/UNC/20.15.2/0-00220.md) · （ADD APNALIAS） — 建立别名APN→转换APN映射（WSFD-106203 别名APN）
+- [0-00221](task/UNC/20.15.2/0-00221.md) · （ADD APNRDSCLIENTIP） — APN RADIUS 客户端 IP（WSFD-010502 RADIUS 分配）
+- [0-00222](task/UNC/20.15.2/0-00222.md) · （ADD APNRDSSVRGRP） — APN 绑定 RADIUS 服务器组（WSFD-010502 RADIUS 分配）
+- [0-00223](task/UNC/20.15.2/0-00223.md) · （ADD ATTACHIKEPEER） — 绑定 IKE 对等体到 IPSec 策略（IPFD-016000 IPSec）
+- [0-00224](task/UNC/20.15.2/0-00224.md) · （ADD BLACKLIST） — 增加静态地址黑名单（WSFD-010301 鉴权）
+- [0-00225](task/UNC/20.15.2/0-00225.md) · （ADD CERTSCENE） — 增加证书场景（IPFD-016000 IPSec）
+- [0-00226](task/UNC/20.15.2/0-00226.md) · （ADD CPGTPUADDR） — 控制面 GTP-U 地址（WSFD-107010 UPF选择）
+- [0-00227](task/UNC/20.15.2/0-00227.md) · （ADD GRETUNNEL） — 增加 GRE 隧道（IPFD-015002 GRE）
+- [0-00228](task/UNC/20.15.2/0-00228.md) · （ADD IFIPV4ADDRESS） — 配置接口 IPv4 地址（地址分配通用）
+- [0-00229](task/UNC/20.15.2/0-00229.md) · （ADD IFIPV4ADDRESSIPSEC） — 配置 IPSec 接口 IPv4 地址
+- [0-00230](task/UNC/20.15.2/0-00230.md) · （ADD IFIPV6ADDRESS） — 配置接口 IPv6 地址（地址分配通用）
+- [0-00231](task/UNC/20.15.2/0-00231.md) · （ADD IFIPV6ADDRESSIPSEC） — 配置 IPSec 接口 IPv6 地址
+- [0-00232](task/UNC/20.15.2/0-00232.md) · （ADD IKEPEER） — 增加 IKE 对等体（IPFD-016000 IPSec）
+- [0-00233](task/UNC/20.15.2/0-00233.md) · （ADD IKEPEER6） — 增加 IPv6 IKE 对等体（IPFD-016000 IPSec）
+- [0-00234](task/UNC/20.15.2/0-00234.md) · （ADD IKEPROPOSAL） — 增加 IKE 安全提议（IPFD-016000 IPSec）
+- [0-00235](task/UNC/20.15.2/0-00235.md) · （ADD INTERFACE） — 增加接口（地址分配通用）
+- [0-00236](task/UNC/20.15.2/0-00236.md) · （ADD INTERFACEIPSEC） — 增加 IPSec 逻辑接口
+- [0-00237](task/UNC/20.15.2/0-00237.md) · （ADD IPBINDVPN） — 将接口 IP 绑定到 VPN（地址分配通用）
+- [0-00238](task/UNC/20.15.2/0-00238.md) · （ADD IPBINDVPNIPSEC） — 将 IP 绑定到 IPSec VPN
+- [0-00239](task/UNC/20.15.2/0-00239.md) · （ADD IPSECINTFCFG） — 创建 IPSec 隧道接口
+- [0-00240](task/UNC/20.15.2/0-00240.md) · （ADD IPSECINTFCFGIPSEC） — 增加 IPSec 隧道接口（绑定策略）
+- [0-00241](task/UNC/20.15.2/0-00241.md) · （ADD IPSECPOLICY） — 增加 IPSec 策略（IPv4）
+- [0-00242](task/UNC/20.15.2/0-00242.md) · （ADD IPSECPOLICY6） — 增加 IPSec IPv6 策略
+- [0-00243](task/UNC/20.15.2/0-00243.md) · （ADD IPSECPROPOSALIPSEC） — 增加 IPSec 安全提议
+- [0-00244](task/UNC/20.15.2/0-00244.md) · （ADD L3VPNINSTIPSEC） — 增加 L3VPN 实例（IPSec 域）
+- [0-00245](task/UNC/20.15.2/0-00245.md) · （ADD NGUSRSECPARA） — 增加 5G 用户安全配置（WSFD-010301 鉴权）
+- [0-00246](task/UNC/20.15.2/0-00246.md) · （ADD OSPF） — 启用 OSPF 进程（地址分配通用）
+- [0-00247](task/UNC/20.15.2/0-00247.md) · （ADD OSPFAREA） — 增加 OSPF 区域（地址分配通用）
+- [0-00248](task/UNC/20.15.2/0-00248.md) · （ADD OSPFIMPORTROUTE） — OSPF 引入外部路由（地址分配通用）
+- [0-00249](task/UNC/20.15.2/0-00249.md) · （ADD OSPFNETWORK） — 增加 OSPF 网段（地址分配通用）
+- [0-00250](task/UNC/20.15.2/0-00250.md) · （ADD POOLBINDAPN） — 地址池绑定 APN（地址分配通用）
+- [0-00251](task/UNC/20.15.2/0-00251.md) · （ADD POOLBINDGRP） — 地址池绑定组（地址分配通用）
+- [0-00252](task/UNC/20.15.2/0-00252.md) · （ADD POOLGRPMAP） — 地址池组映射（地址分配通用）
+- [0-00253](task/UNC/20.15.2/0-00253.md) · （ADD PROPATTACHIPSECPROPOSAL） — 增加 IPSec 策略绑定提议
+- [0-00254](task/UNC/20.15.2/0-00254.md) · （ADD RDSSVR） — 增加 RADIUS 服务器（WSFD-010502 RADIUS 分配）
+- [0-00255](task/UNC/20.15.2/0-00255.md) · （ADD RDSSVRGRP） — 增加 RADIUS 服务器组（WSFD-010502 RADIUS 分配）
+- [0-00256](task/UNC/20.15.2/0-00256.md) · （ADD RDSUPFCTRL） — RDS UPF 控制（WSFD-010502 RADIUS 分配）
+- [0-00257](task/UNC/20.15.2/0-00257.md) · （ADD SECTION） — 增加地址段（地址分配通用）
+- [0-00258](task/UNC/20.15.2/0-00258.md) · （ADD SRROUTE6） — 增加静态路由 IPv6（地址分配通用）
+- [0-00259](task/UNC/20.15.2/0-00259.md) · （ADD UPFBINDGRP） — UPF 绑定组（WSFD-107010 UPF选择）
+- [0-00260](task/UNC/20.15.2/0-00260.md) · （ADD UPLIST4RDS） — 增加 UPF 列表 for RDS（WSFD-010502 RADIUS 分配）
+- [0-00261](task/UNC/20.15.2/0-00261.md) · （ADD UPFRDSCLIENTIP） — UPF RADIUS 客户端 IP（WSFD-010502 RADIUS 分配）
+- [0-00262](task/UNC/20.15.2/0-00262.md) · （ADD UPFRDSSVR） — UPF RADIUS 服务器（WSFD-010502 RADIUS 分配）
+- [0-00263](task/UNC/20.15.2/0-00263.md) · （ADD UPNODE） — 增加 UP 节点（WSFD-107010 UPF选择）
+- [0-00264](task/UNC/20.15.2/0-00264.md) · （ADD VPNINSTAFIPSEC） — VPN 实例地址族（IPSec 域）
+- [0-00265](task/UNC/20.15.2/0-00265.md) · （MOD APN） — 修改 APN 配置（WSFD-106203 别名APN/通用）
+- [0-00266](task/UNC/20.15.2/0-00266.md) · （MOD GBAUTHCIPH） — 修改 Gb 模式用户安全参数（鉴权）
+- [0-00267](task/UNC/20.15.2/0-00267.md) · （MOD GRETUNNEL） — 修改 GRE 隧道（IPFD-015002 GRE）
+- [0-00268](task/UNC/20.15.2/0-00268.md) · （MOD INTERFACE） — 修改接口（地址分配通用）
+- [0-00269](task/UNC/20.15.2/0-00269.md) · （RMV GRETUNNEL） — 删除 GRE 隧道（IPFD-015002 GRE）
+- [0-00270](task/UNC/20.15.2/0-00270.md) · （SET APNADDRESSATTR） — 设置 APN 地址分配属性（地址分配通用）
+- [0-00271](task/UNC/20.15.2/0-00271.md) · （SET APNAUTHATTR） — 设置 APN 鉴权属性（WSFD-011305/011306 RADIUS）
+- [0-00272](task/UNC/20.15.2/0-00272.md) · （SET APNL2TPCTRL） — 设置 APN L2TP 控制开关（WSFD-104410 L2TP VPN）
+- [0-00273](task/UNC/20.15.2/0-00273.md) · （SET APNRADIUSATTR） — APN RADIUS 属性（WSFD-011306 Radius）
+- [0-00274](task/UNC/20.15.2/0-00274.md) · （SET APNRDSACCTCTRL） — APN RDS 计费控制（WSFD-011306 Radius）
+- [0-00275](task/UNC/20.15.2/0-00275.md) · （SET FWSOFTPARA） — 设置防火墙软参（WSFD-106003 接入控制）
+- [0-00276](task/UNC/20.15.2/0-00276.md) · （SET IFIPV6ENABLE） — 修改接口 IPv6 使能（IPFD-016000 IPSec）
+- [0-00277](task/UNC/20.15.2/0-00277.md) · （SET IFIPV6ENABLEIPSEC） — IPSec 接口 IPv6 使能
+- [0-00278](task/UNC/20.15.2/0-00278.md) · （SET IKEGLOBALCONFIG） — 设置 IKE 全局配置（IPFD-016000 IPSec）
+- [0-00279](task/UNC/20.15.2/0-00279.md) · （SET NGMMPROCTRL） — 设置 5G 移动性管理流程控制参数（WSFD-010301 鉴权）
+- [0-00280](task/UNC/20.15.2/0-00280.md) · （SET RDSACCTREQVSA） — 设置 RADIUS 计费私有扩展属性携带策略（WSFD-011306 Radius）
 
-## 步骤级（compound）（19）
+## 步骤级（compound）（28）
 
 - [1-00001](task/UNC/20.15.2/1-00001.md) · 配置离线计费模板参数 — cmd:ADD OFCTEMPLATE+SET OFCTHRESHOLD+SET CDRTRIGGER+SET CONTAINERTRIGGER | 用于:2-00001,2-00002 | 层级:域通用
 - [1-00002](task/UNC/20.15.2/1-00002.md) · OFCTemplate 绑定 UserProfile — cmd:ADD USERPROFILE+SET USRPROFCHARGE+ADD USRPROFGROUP+ADD UPBINDUPG+ADD APNUSRPROFG | 用于:2-00001,2-00002,2-00003 | 层级:域通用
@@ -236,8 +304,19 @@
 - [1-00017](task/UNC/20.15.2/1-00017.md) · 配置 QoS 属性与规则绑定链 — cmd:ADD URR+ADD QOSPROP+ADD PCCPOLICYGRP+ADD RULE+ADD USERPROFILE+ADD RULEBINDING | 用于:2-00008 | 层级:域通用
 - [1-00018](task/UNC/20.15.2/1-00018.md) · 配置 BWM 本地规则与用户模板绑定 — cmd:ADD RULE+ADD USERPROFILE+ADD RULEBINDING+ADD USRPROFGROUP+ADD UPBINDUPG+ADD APNUSRPROFG | 用于:2-00010 | 层级:域专属
 - [1-00019](task/UNC/20.15.2/1-00019.md) · 配置用户位置与模板绑定 — cmd:ADD USRLOCATION+ADD USRLOCATIONGRP+MOD UPBINDUPG(+ADD UPBINDUPG 可选) | 用于:2-00013 | 层级:域专属
+- [1-00020](task/UNC/20.15.2/1-00020.md) · 会话建立依赖-地址分配（能力型骨架） — cmd:无 | 用于:2-00014 | 层级:能力型骨架(APN域·UNC控制面会话建立地址分配依赖→WSFD-010502)
+- [1-00021](task/UNC/20.15.2/1-00021.md) · 会话建立依赖-PCC/CHF策略（能力型骨架） — cmd:无 | 用于:2-00014 | 层级:能力型骨架(APN域·UNC控制面会话建立PCC/CHF依赖→2-00001/2-00003等计费域特性)
+- [1-00022](task/UNC/20.15.2/1-00022.md) · 会话建立依赖-N4 PFCP接口（能力型骨架） — cmd:无 | 用于:2-00014 | 层级:能力型骨架(APN域·UNC控制面会话建立N4/Sxb/Gn接口偶联依赖)
+- [1-00023](task/UNC/20.15.2/1-00023.md) · UNC SMF 地址池体系（ADDRPOOL 系，4 子方式） — cmd:ADDRPOOL,ADDRPOOLGRP,POOLBINDGRP,POOLGRPMAP,SECTION,ADDRUPGROUP,UPNODE,UPFBINDGRP | 用于:2-00015,2-00016,2-00017,2-00018,2-00019,2-00021,2-00022,2-00023 | 层级:域通用(APN域·UNC地址分配族共享底座)
+- [1-00024](task/UNC/20.15.2/1-00024.md) · UNC APN 接入域基础设施（L3VPN+VPN+APN+APNADDRESSATTR） — cmd:L3VPNINST,VPNINSTAF,VPNINST,APN,APNADDRESSATTR | 用于:2-00015,2-00016,2-00017,2-00018,2-00019,2-00020,2-00021,2-00022,2-00023 | 层级:域通用(APN域·所有21特性的第一步前置)
+- [1-00029](task/UNC/20.15.2/1-00029.md) · UNC 接入域路由发布（OSPF 引入用户路由） — cmd:OSPF,OSPFAREA,OSPFNETWORK,OSPFIMPORTROUTE | 用于:2-00015,2-00016,2-00017,2-00018,2-00019,2-00021,2-00022,2-00023 | 层级:域通用(APN域·接入域OSPF路由发布，8个地址分配特性共享)
+- [1-00025](task/UNC/20.15.2/1-00025.md) · UNC Radius 对接链 — cmd:RDSSVR,RDSSVRGRP,APNRDSSVRGRP,APNRDSCLIENTIP,UPFRDSSVR,UPFRDSCLIENTIP,RDSUPFCTRL,UPLIST4RDS | 用于:2-00024,2-00025,2-00027,2-00028 | 层级:域通用(APN域·4个Radius特性共享)
+- [1-00026](task/UNC/20.15.2/1-00026.md) · UNC Radius 私有扩展 — cmd:SET RDSACCTREQVSA,SET APNRDSACCTCTRL,SET APNRADIUSATTR | 用于:2-00025,2-00028 | 层级:域通用(APN域·Radius 3GPP/3GPP2 私有扩展)
+- [1-00027](task/UNC/20.15.2/1-00027.md) · UNC GRE 隧道族 — cmd:INTERFACE,IFIPV4ADDRESS,GRETUNNEL,MOD GRETUNNEL,RMV GRETUNNEL,SRROUTE,SRROUTE6,MOD INTERFACE | 用于:2-00029 | 层级:特性专属(APN域·GRE 接入方式承载·接 IPFD-015002)
+- [1-00030](task/UNC/20.15.2/1-00030.md) · UNC IPSec 五件套（VNRS+IPSec 双配·22命令族） — cmd:L3VPNINSTIPSEC,VPNINSTAFIPSEC,INTERFACEIPSEC,IPBINDVPNIPSEC,IFIPV*ADDRESSIPSEC,ACLGROUP*IPSEC,ACLRULEADV*IPSEC,IPSECPROPOSALIPSEC,IKEPROPOSAL,IKEPEER,IPSECPOLICY,IPSECPOLICY6,PROPATTACHIPSECPROPOSAL,ATTACHIKEPEER,IPSECINTFCFG,IPSECINTFCFGIPSEC,CERTSCENE,SET IKEGLOBALCONFIG,SET IFIPV6ENABLEIPSEC,ADD L3VPNINST,ADD VPNINST | 用于:2-00030 | 层级:特性专属(IPSec接入方式承载·UNC IPSec 微服务 VNRS+IPsec 双配)
+- [1-00031](task/UNC/20.15.2/1-00031.md) · UNC MPLS VPN 基础设施 — cmd:L3VPNINST,VPNINSTAF,MOD VPNINSTAF,IPBINDVPN,LOGICINF,LOGICIP | 用于:2-00031 | 层级:特性专属(MPLS VPN 基础设施承载·接 WSFD-104411 6组网变体)
 
-## 特性级（feature）（13）
+## 特性级（feature）（37）
 
 - [2-00001](task/UNC/20.15.2/2-00001.md) · 离线计费（WSFD-011201） — UNC 侧离线计费——OFCTemplate 模板（话单
 - [2-00002](task/UNC/20.15.2/2-00002.md) · 热计费（WSFD-011202） — UNC 侧热计费——离线计费的参数变种（CC=0x100
@@ -252,4 +331,28 @@
 - [2-00011](task/UNC/20.15.2/2-00011.md) · 基于业务累计流量的策略控制（WSFD-211009） — UNC（GGSN-C/PGW-C/SMF）侧业务级 FU
 - [2-00012](task/UNC/20.15.2/2-00012.md) · 基于小区负荷上报的无线资源优化（WSFD-211101） — UNC（GGSN-C/PGW-C）侧基于小区负荷上报的无
 - [2-00013](task/UNC/20.15.2/2-00013.md) · 基于初始接入位置的策略控制（WSFD-211001） — UNC 侧基于用户初始接入位置（CGI/ECGI/NCG
+- [2-00014](task/UNC/20.15.2/2-00014.md) · 会话管理（WSFD-010501，★能力型底座骨架） — UNC 控制面（AMF/SMF/MME/SGW-C/PGW-C/SGSN）主控 PDU/EPS/PDP 会话建立修改释放；无独立MML配置；本骨架显式记录对地址分配/PCC-CHF/N4 PFCP/UDM签约/接入控制特性的被依赖关系
+- [2-00015](task/UNC/20.15.2/2-00015.md) · 地址分配方式（WSFD-010502，地址分配主特性） — UNC 控制面 4 种地址分配子方式（UDM签约/Radius/Local本地/DHCP）+ IPv4/IPv6/双栈，2/3G PDP + 4G EPS + 5G PDU 三制式共用
+- [2-00016](task/UNC/20.15.2/2-00016.md) · 控制面地址分配方式（WSFD-010504） — UNC 控制面地址分配方式概述（控制面视角补充 010502）
+- [2-00017](task/UNC/20.15.2/2-00017.md) · IPv4v6双栈接入（WSFD-104002） — 5G/4G/2-3G IPv4+IPv6 双栈并行 APN+地址池+地址段；N4 PFCP + OSPFv3 路由（UNC OSPFv3 待补）
+- [2-00018](task/UNC/20.15.2/2-00018.md) · IPv6 承载上下文（WSFD-104001） — 5G/4G/2-3G IPv6 单栈承载上下文+基本上下文管理
+- [2-00019](task/UNC/20.15.2/2-00019.md) · IPv6 前缀代理（WSFD-104004） — IPv6 PD delegated prefix 模式（V6PREFIXLENGTH<64 触发）；GPRS/UMTS/EPC/5GC 全流程
+- [2-00020](task/UNC/20.15.2/2-00020.md) · L2TP VPN（WSFD-104410） — UNC SMF 作 LNS 与企业网对接；APN 维度 L2TPSWITCH 开关 + L2TP 加密 + PFCP 私有信元
+- [2-00021](task/UNC/20.15.2/2-00021.md) · DHCP 功能（WSFD-104413，DHCPv4 地址分配） — SMF 作 DHCP Client 代理用户从外部 DHCPv4 Server 获取地址
+- [2-00022](task/UNC/20.15.2/2-00022.md) · DHCPv6 地址分配（WSFD-104005） — SMF 作 DHCPv6 Client 代理用户从 DHCPv6 Server 获取 IPv6 前缀
+- [2-00023](task/UNC/20.15.2/2-00023.md) · 静态地址用户路由冗余（WSFD-107021） — UNC 域静态地址用户路由主备 UPF 冗余保护（ADDRPOOL+ADDRUPGROUP+UPFBINDGRP PRIORITY 三件套）
+- [2-00024](task/UNC/20.15.2/2-00024.md) · Radius 鉴权接入（WSFD-011305） — 4 种鉴权方式（透明/非透明/透明鉴权/本地）+ AUTHMODE 维度
+- [2-00025](task/UNC/20.15.2/2-00025.md) · Radius 功能（WSFD-011306） — AAA 服务器组+工作模式+9 链路（3GPP/3GPP2 VSA/APN 计费控制/紧急放通等）
+- [2-00026](task/UNC/20.15.2/2-00026.md) · 鉴权功能（WSFD-010301） — 2G/3G/4G/5G 4 制式 NAS 信令级鉴权基础
+- [2-00027](task/UNC/20.15.2/2-00027.md) · 终端二次鉴权（WSFD-108007） — 企业 AAA 场景 UPF 中转 Radius
+- [2-00028](task/UNC/20.15.2/2-00028.md) · Radius 抄送功能（WSFD-011307） — AAA 消息 Carbon-copy 多副本送达
+- [2-00029](task/UNC/20.15.2/2-00029.md) · GRE（IPFD-015002） — UNC 域 GRE 三层隧道封装（IPv4/IPv6 + 5 场景：基础/VPN组网/IPv6/多租户共享/GRE over IPSec）
+- [2-00030](task/UNC/20.15.2/2-00030.md) · IPSec（IPFD-016000） — UNC IPSec 微服务（VNRS+IPSec 双配）9 场景三层加密隧道；UNC IPSec 与 UDG 端结构同构但命令族独立维护
+- [2-00031](task/UNC/20.15.2/2-00031.md) · MPLS VPN（WSFD-104411，能力型底座骨架） — UNC 域 MPLS VPN 配置承载在各 L3VPN 接入特性；本骨架显式记录 6 组网变体（Hub&Spoke/Multi-VPN-Instance CE/跨域 VPN/BGP_MPLS IPv6/VPN GR/VPN NSR）+ 分标签方式的依赖关系
+- [2-00035](task/UNC/20.15.2/2-00035.md) · 支持多PDN/PDU功能（WSFD-010503） — 2G/3G/4G 多 PDN/5G 多 PDU 并发会话控制（含 PDU 会话数上限 SET SMPDUCTRL + APN 激活数上限）
+- [2-00036](task/UNC/20.15.2/2-00036.md) · 用户数据管理（WSFD-010400） — 2G/3G HLR/4G HSS/5G UDM 多制式签约数据管理（混合能力型+配置型：内置能力层 + SET SDBTMR/SUBSTORAG 等可选配置）
+- [2-00037](task/UNC/20.15.2/2-00037.md) · 基于位置区域的对等网元选择（WSFD-010202） — TAI/RAI 位置区维度的 MME/SGSN 等对等网元选择（含 AREADNS 位置区域 DNS 域名策略）
+- [2-00032](task/UNC/20.15.2/2-00032.md) · 别名APN（WSFD-106203） — APN 别名→转换 APN 重定向（GGSN/PGW-C/SMF + SGSN/MME 两代际 ADD APNALIAS + 转换记录）
+- [2-00033](task/UNC/20.15.2/2-00033.md) · UPF选择（WSFD-107010） — 17+ 命令族（PNF*/UPAREA/UPBIND/UPSELECT）按 7 选择原则（DNN/切片/DNAI/位置/接口/优先级/权重）选 UPF
+- [2-00034](task/UNC/20.15.2/2-00034.md) · 用户接入控制功能（WSFD-106003） — AMF（5G NG用户位置接入控制）+ SGSN/MME（2G/3G GB/Iu 接入限制）分代际配置
 
