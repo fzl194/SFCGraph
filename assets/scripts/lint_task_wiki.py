@@ -173,38 +173,60 @@ def rule_r3_flatten(text: str, file: Path, base: Path, result: LintResult) -> No
 
 
 def rule_r4_back_link(text: str, file: Path, base: Path, result: LintResult) -> None:
-    """R4 双向回填检查：compound 场景差异表应有 task/feature 引用行；反之亦然"""
+    """R4 双向回填检查：compound 场景差异表应有 task/feature 引用行；feature 由'## 决策点'段承担"""
     rel = str(file.relative_to(base))
     fm, body = parse_front_matter(text)
     task_layer = fm.get('task_layer', '')
-    if task_layer not in ('compound', 'feature'):
+
+    # 仅检查 compound（feature 由 ## 决策点 段承担场景差异语义）
+    if task_layer != 'compound':
         return
 
     # 豁免：能力型底座骨架（cmd: 无 / 不展开配置 / status=foundation）
     intent = fm.get('task_intent', '').lower()
     if 'cmd: 无' in intent or '不展开' in intent or fm.get('status') == 'foundation':
-        return  # 能力型底座骨架不强求场景差异表
+        return
 
-    # 找"## 场景差异"段（含被引用于 task/feature 链接）
-    feat_or_task_refs = set()
-    in_diff_table = False
-    for line in body.splitlines():
-        if '## 场景差异' in line:
-            in_diff_table = True
+    # 找"## 场景差异"段
+    diff_section_start = -1
+    diff_section_end = -1
+    lines = body.splitlines()
+    for i, line in enumerate(lines):
+        if line.startswith('## 场景差异'):
+            diff_section_start = i
             continue
-        if in_diff_table and line.startswith('## '):
+        if diff_section_start >= 0 and line.startswith('## '):
+            diff_section_end = i
             break
-        if in_diff_table:
-            # 检测 feature_code: WSFD-XXX / IPFD-XXX / NPFD-XXX / GWFD-XXX
-            for m in re.finditer(r'(WSFD|IPFD|NPFD|GWFD)-\d+', line):
-                feat_or_task_refs.add(m.group(0))
-            # 检测 task 引用: [2-XXXXX](task/UNC/20.15.2/2-XXXXX.md) 或 [2-XXXXX 名称]
-            for m in re.finditer(r'\[(\d-\d{5})\b', line):
-                feat_or_task_refs.add('T:' + m.group(1))
+    if diff_section_end < 0 and diff_section_start >= 0:
+        diff_section_end = len(lines)
 
-    # 仅检查 compound：场景差异表应非空
-    if task_layer == 'compound' and not feat_or_task_refs:
-        result.add('R4', 'warning', rel, 0, 'compound 场景差异表为空或无 feature/task 引用，违反双向回填硬规则')
+    if diff_section_start < 0:
+        result.add('R4', 'warning', rel, 0, 'compound 缺"## 场景差异"段（SOP §3.5 双向回填硬规则）')
+        return
+
+    diff_section = '\n'.join(lines[diff_section_start:diff_section_end])
+
+    # 检查 1：场景差异段应有 task/feature 引用行（v1.1 风格）
+    feat_or_task_refs = set()
+    for m in re.finditer(r'(WSFD|IPFD|NPFD|GWFD)-\d+', diff_section):
+        feat_or_task_refs.add(m.group(0))
+    for m in re.finditer(r'\[(\d-\d{5})\b', diff_section):
+        feat_or_task_refs.add('T:' + m.group(1))
+
+    # 检查 2：全文"被引用于"段是否有 task/feature 引用（v1.0 风格）
+    full_body_refs = set()
+    for m in re.finditer(r'被引用于', body):
+        full_body_refs.add('ref_section')
+
+    if feat_or_task_refs:
+        return  # v1.1 风格合规
+
+    # v1.0 风格：场景差异段内容非空 + 全文有"被引用于"段 → 合规
+    if full_body_refs and diff_section.strip():
+        return
+
+    result.add('R4', 'warning', rel, 0, 'compound 场景差异段无 task/feature 引用，且无"被引用于"段引用')
 
 
 def rule_r5_status(text: str, file: Path, base: Path, result: LintResult) -> None:
