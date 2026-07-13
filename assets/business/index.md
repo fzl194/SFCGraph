@@ -6,6 +6,7 @@
 ## 业务域（BD）
 
 - [业务感知](business/business-awareness/BusinessDomain@business-awareness.md) — 对用户报文解析区分业务，实现策略控制与计费控制
+- [APN 业务域](business/apn-domain/BusinessDomain@apn-domain.md) — 移动核心网 UE 从附着到 PDU 会话建立的接入与会话管理（4 维度决策 + 3 底座支撑，1 NS + 4 CS）
 
 ## 场景（NS）
 
@@ -48,3 +49,12 @@
 - [WebProxy](business/business-awareness/access-control/ConfigurationSolution@access-webproxy.md) — POLICYTYPE=WEBPROXY + IPFarm，L3 IP NAT 到代理池，仅 L34 SVRIP 匹配
 - [智能重定向](business/business-awareness/access-control/ConfigurationSolution@access-smart-redirect.md) — POLICYTYPE=SMARTREDIRECT 动作链（SMARTHTTPREDIR/DNSOVERWRITING），错误码触发，不用 IPFarm
 - [位置策略](business/business-awareness/access-control/ConfigurationSolution@access-location-policy.md) — 跨网元（UNC 决策→UDG 执行），PCF 按 ULI 位置决策下发 PCC 策略
+
+### APN 业务域
+- [APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md) — UE 如何接入移动核心网并获得 IP 服务（4 DP 独立决策，4 CS AND 关系）
+
+### APN 业务域（AND 关系，4 CS 同时启用 / CS-3 可选）
+- [地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) — 核心（必选），6 种分配方式 × 3 种 IP 类型 18 格矩阵
+- [鉴权 AAA](business/apn-domain/ConfigurationSolution@apn-auth.md) — 维度增强（必选 1），4 种 AUTHMODE 鉴权方式
+- [隧道接入](business/apn-domain/ConfigurationSolution@apn-tunnel.md) — 维度增强（可选，VPN 直通不启），5 种接入方式
+- [IP 类型治理](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) — 维度增强（必选 1），IPv4/IPv6/双栈 + 静态地址路由冗余
