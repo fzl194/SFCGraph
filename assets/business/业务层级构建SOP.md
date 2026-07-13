@@ -247,6 +247,20 @@ status: draft
 - **双向链接闭环**：CS ↔ 被引用的 feature task/compound（**per-task-md** 的 `## 关联` → `- 被引用于:` 追加本 CS，不是 index.md）。Grep 新文件无 `[[` 残留占位、无断链。
 - **跨网元引用全路径**：CS 引用 UDG/UNC task 用 assets 根路径（§5.5）。
 - **引用规则**（§5.5）：已建 `[..](.md)` 带 .md；未建 `[[ID]]` 占位（但前置门要求 feature task 已建，故 CS 不应有 feature task 占位）。
+- **URL 必须从 assets 根算起（critical，审查经验沉淀）**：业务层 md 内所有 markdown 链接**全部从 assets 根起**（与 CLAUDE.md §5.5 一致），**禁止**以下写法：
+  - ❌ 同目录相对路径：`[CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md)`（缺 `business/apn-domain/` 前缀）
+  - ❌ 文件间相对路径：`[CS-1](../ConfigurationSolution@apn-addr-allocation.md)`（用 `../`）
+  - ❌ 自引用：`[APN 业务域](BusinessDomain@apn-domain.md)`（BD 概览 blockquote 不应自链）
+  - ✅ 正确写法：`[CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md)`
+  - 覆盖范围：业务层间引用（BD→NS/CS、NS→CS、CS→CS、CS→BD/NS）+ 业务层→task（跨网元）+ 业务层→evidence（含 `evidence/{UDG,UNC}/...` 路径）+ 业务层→SOP/范本（`business/业务层级构建SOP.md` 等）
+  - 实战教训（APN 域 R1 审视）：5 文件 30+ 处同目录相对路径残留，跨网元引用全部需加 `business/apn-domain/` 前缀——本规则与 §5.5 文件名规则**互为表里**（§5.5 管 ID/文件命名，本条管 markdown 链接写法）
+  - Lint 脚本（占位/伪段/平铺/双向回填）需增 `grep -nE "\(\[?[A-Za-z0-9@_-]+\.md(\#[^\)]*)?\)?\)"` 检查此条（排除合法 `task/`/`evidence/`/`business/`/`business/业务层级*.md` 前缀）
+- **NS/CS「## 关联」段不重复 SOP/审视/范本引用（critical，审查经验沉淀）**：业务层 md 的「## 关联」段只列：上游场景 / 下游（同场景其他 CS，AND 关系）/ 编排特性 / 共享骨架 / 证据。**禁止**列：
+  - ❌ "业务层 SOP"（与 SOP 文件本身重复）
+  - ❌ "业务层审视"（与审视流程文件本身重复）
+  - ❌ "范本"（信息已在 BD 关联段有，CS/NS 不重复）
+  - 实战教训（APN 域 R1 审视）：5 文件均残留 1-3 段此类伪段，删除后结构与 `business/business-awareness/charging/NetworkScenario@charging.md` 范本完全对齐
+  - Lint 脚本需增 `grep -nE "^- \*\*业务层 (SOP|审视)\*\*|^- \*\*范本\*\*"` 检查此条
 - **主源是原始产品文档**：方案知识以原始产品文档「业务专题/方案」章节为准，非凝练版图谱 md（后者仅参考）。
 
 ---
@@ -262,6 +276,8 @@ status: draft
 - [ ] 双向链接闭环（被引用 task 的 per-task-md"被引用于"追加本 CS）
 - [ ] `assets/business/index.md` 同步（标 done）
 - [ ] 叙述式（无旧三层图谱写死字段表格）
+- [ ] URL 全部从 assets 根算起（无同目录相对路径、无 `../`、无自引用）—— §6 硬约束
+- [ ] NS/CS「## 关联」段不重复 SOP/审视/范本引用—— §6 硬约束
 
 ---
 
