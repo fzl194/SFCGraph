@@ -109,5 +109,5 @@ status: draft
   - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — NS DP-4
 - **编排特性**：见上文"特性关系矩阵"段（5 核心 + 3 基础 = 8 feature）
 - **共享骨架**：[1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00025 Radius 完整骨架](task/UNC/20.15.2/1-00025.md) / [1-00027 终端二次鉴权骨架](task/UNC/20.15.2/1-00027.md)
-- **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板
+- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板
 - **证据**（原始产品文档）：[WSFD-011305 Radius 鉴权接入 md](evidence/UNC/20.15.2/WSFD-011305/) / [WSFD-011306 Radius 功能 md](evidence/UNC/20.15.2/WSFD-011306/) / [WSFD-010301 鉴权功能 4 制式 md](evidence/UNC/20.15.2/WSFD-010301/) / [WSFD-108007 终端二次鉴权 md](evidence/UNC/20.15.2/WSFD-108007/) / [WSFD-011307 Radius 抄送 md](evidence/UNC/20.15.2/WSFD-011307/)

@@ -71,7 +71,7 @@ status: draft
 | **[UNC 接入控制 2-00034](task/UNC/20.15.2/2-00034.md)** | **基础（依赖前提）** | **必配（License LKV2USRAC01）**| 接入控制决策；未通过不触发地址分配——配置不重叠 |
 | **[UNC 位置区域网元选择 2-00037](task/UNC/20.15.2/2-00037.md)** | **基础（依赖前提）** | **可选（按 UPF 子方式）**| UPF 基于位置选择 2-00036 选型时必配 |
 
-> **矩阵规则**（按 [业务层级构建SOP.md §4.1 特性关系矩阵规则](../业务层级构建SOP.md)）：
+> **矩阵规则**（按 [业务层级构建SOP.md §4.1 特性关系矩阵规则](business/业务层级构建SOP.md)）：
 > - ①**核心**=方案主体（必配）
 > - ②**基础/依赖前提**=核心依赖的底层（必配，配置常与核心重叠）
 > - ③**维度增强**=正交维度可选叠加
@@ -108,7 +108,7 @@ status: draft
 
 ### 跨网元/跨特性协同
 
-- **C-U 决策执行分离**（）：
+- **C-U 决策执行分离**（[业务层级构建SOP.md §1.3 C-U 决策执行分离](business/业务层级构建SOP.md)）：
   - UNC 决策地址分配方式 → N4 PFCP → UDG 执行
   - 真值表：CHV4/CHV6/V4/V6 信元控制 U 面是否本地分配
 - **顺序**：
@@ -118,7 +118,7 @@ status: draft
   4. UE 附着触发地址分配：N4 PFCP Session Establishment
   5. UDG 分配并通过 N4 响应返回地址给 SMF
 - **一致性约束**：APN 名 / 地址池名 / UPF 实例名 / N4 PFCP Node ID 跨网元严格一致
-- **License 依赖链**（）：IPv6 完整承载需线性 License 链——**不可按命名规律推断**
+- **License 依赖链**（[业务层级构建SOP.md §1.3 C-U 决策执行分离](business/业务层级构建SOP.md)）：IPv6 完整承载需线性 License 链——**不可按命名规律推断**
 - **与其他 CS 的协同**（AND 关系）：
   - 与 [CS-2 鉴权](ConfigurationSolution@apn-auth.md)：Radius 下发模式时，Radius 链路必须先就绪
   - 与 [CS-3 隧道](ConfigurationSolution@apn-tunnel.md)：L2TP/LNS 模式时，隧道必须先就绪
@@ -178,7 +178,7 @@ status: draft
   - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — NS DP-4 实现
 - **编排特性**：见上文"特性关系矩阵"段（11 核心 + 7 基础 = 18 feature）
 - **共享骨架**：[1-00020 SMF 地址池体系](task/UNC/20.15.2/1-00020.md) / [1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
-- **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板 + §4.1 特性关系矩阵规则
-- **业务层审视**：[业务层级wiki审视流程.md](../业务层级wiki审视流程.md) R1.1 覆盖 / R1.2 复用 / R1.3 跨网元协同 / R1.5 证据链
+- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板 + §4.1 特性关系矩阵规则
+- **业务层审视**：[业务层级wiki审视流程.md](business/业务层级wiki审视流程.md) R1.1 覆盖 / R1.2 复用 / R1.3 跨网元协同 / R1.5 证据链
 - **证据**（原始产品文档）：[WSFD-010502 地址分配方式 md](evidence/UNC/20.15.2/WSFD-010502/) / [WSFD-010504 控制面地址分配方式 md](evidence/UNC/20.15.2/WSFD-010504/) / [WSFD-104413 DHCPv4 md](evidence/UNC/20.15.2/WSFD-104413/) / [WSFD-104005 DHCPv6 md](evidence/UNC/20.15.2/WSFD-104005/) / [WSFD-104410 L2TP md](evidence/UNC/20.15.2/WSFD-104410/) + UDG 对应
-- **范本**：[业务感知域融合计费 CS](../business-awareness/charging/ConfigurationSolution@charging-converged.md) — 跨网元协同 + 特性关系矩阵范本
+- **范本**：[业务感知域融合计费 CS](business/business-awareness/charging/ConfigurationSolution@charging-converged.md) — 跨网元协同 + 特性关系矩阵范本

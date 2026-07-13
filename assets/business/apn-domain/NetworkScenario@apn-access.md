@@ -31,7 +31,7 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
   - 接口维度：N1/N2（NAS）/N4（PFCP）/Gz/Gn/Gy（4G）/Ga（话单）/N7/N40（5G 策略 + 融合计费）
   - 控制维度（4 个独立决策维度）：DP-1 地址分配方式（6 种 × 3 种 IP 类型 = 18 格矩阵）/ DP-2 鉴权方式（4 种）/ DP-3 接入方式（5 种，VPN 直通不启 CS-3）/ DP-4 IP 类型（3 种）
 - 不覆盖（与相邻场景的边界）：
-  - 业务识别 / 策略控制 / 计费 / 带宽控制 / 访问限制 — 属 [业务感知域](../business-awareness/BusinessDomain@business-awareness.md)
+  - 业务识别 / 策略控制 / 计费 / 带宽控制 / 访问限制 — 属 [业务感知域](business/business-awareness/BusinessDomain@business-awareness.md)
   - 网元对接开局（N4 PFCP 偶联 / Diameter / SBI）— 属 [网元对接业务域](BusinessDomain@network-element-docking.md)（待建）
   - 运营级 KQI / 性能 / 告警 — 属运维域
 
@@ -39,7 +39,7 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
 
 ## 决策点
 
-> 决策点不编号（按 [业务层级构建SOP.md §5](../业务层级构建SOP.md)）。4 个 DP 独立决策，**完整 APN 方案 = 4 DP 全部选 1 + 基础 feature 矩阵**。
+> 决策点不编号（按 [业务层级构建SOP.md §5](business/业务层级构建SOP.md)）。4 个 DP 独立决策，**完整 APN 方案 = 4 DP 全部选 1 + 基础 feature 矩阵**。
 
 ### DP-1：地址分配方式（必选 1，6 选 1）
 
@@ -95,6 +95,6 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
   - [CS 鉴权 AAA](ConfigurationSolution@apn-auth.md) — 必选 1（4 选 1）
   - [CS 隧道接入](ConfigurationSolution@apn-tunnel.md) — 可选（VPN 直通时不启用）
   - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — 必选 1（3 选 1）
-- **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 NS 模板 + §5 决策点
-- **业务层审视**：[业务层级wiki审视流程.md](../业务层级wiki审视流程.md) R1.1 task 覆盖度 / R1.4 前置门
-- **范本**：[业务感知域计费 NS](../business-awareness/charging/NetworkScenario@charging.md) — 7 CS 路由表成熟范本
+- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 NS 模板 + §5 决策点
+- **业务层审视**：[业务层级wiki审视流程.md](business/业务层级wiki审视流程.md) R1.1 task 覆盖度 / R1.4 前置门
+- **范本**：[业务感知域计费 NS](business/business-awareness/charging/NetworkScenario@charging.md) — 7 CS 路由表成熟范本

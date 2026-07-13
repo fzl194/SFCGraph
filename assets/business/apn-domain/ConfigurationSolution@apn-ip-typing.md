@@ -117,5 +117,5 @@ License 依赖链：
   - [CS 隧道接入](ConfigurationSolution@apn-tunnel.md) — 双栈时隧道需双协议栈
 - **编排特性**：见上文"特性关系矩阵"段（8 核心 + 3 基础 = 11 feature）
 - **共享骨架**：[1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
-- **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板
+- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板
 - **证据**（原始产品文档）：[WSFD-104001 IPv6 承载 md](evidence/UNC/20.15.2/WSFD-104001/) / [WSFD-104002 双栈 md](evidence/UNC/20.15.2/WSFD-104002/) / [WSFD-104004 IPv6 PD md](evidence/UNC/20.15.2/WSFD-104004/) / [WSFD-107021 静态地址路由冗余 md](evidence/UNC/20.15.2/WSFD-107021/) + UDG 对应

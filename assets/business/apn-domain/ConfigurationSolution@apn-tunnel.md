@@ -124,5 +124,5 @@ status: draft
   - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — 双栈时隧道需双协议栈
 - **编排特性**：见上文"特性关系矩阵"段（8 核心 + 2 基础 = 10 feature）
 - **共享骨架**：[1-00027 终端二次鉴权](task/UNC/20.15.2/1-00027.md)（含 GRE 隧道族）/ [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
-- **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板
+- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板
 - **证据**（原始产品文档）：[IPFD-015002 GRE md](evidence/UNC/20.15.2/IPFD-015002/) / [IPFD-016000 IPSec md](evidence/UNC/20.15.2/IPFD-016000/) / [WSFD-104410 L2TP md](evidence/UNC/20.15.2/WSFD-104410/) / [WSFD-104411 MPLS VPN md](evidence/UNC/20.15.2/WSFD-104411/)
