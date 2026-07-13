@@ -17,7 +17,7 @@ status: draft
 
 鉴权是 APN 业务域的接入第二步：在地址分配前，先确认 UE 身份合法性。本方案覆盖 4 种鉴权接入方式（4 选 1）+ Radius 服务器组配置 + 终端二次鉴权（UPF 中转 Radius）+ Radius 抄送（AAA 消息 Carbon-copy）。
 
-4 维度的鉴权决策（来源 [APN配置树.md §3 鉴权计费信息实例化](../../../business-graph/APN业务域/APN配置树.md)）：
+4 维度的鉴权决策：
 
 | AUTHMODE | Radius 鉴权接入 [2-00024](task/UNC/20.15.2/2-00024.md) | Radius 功能 [2-00025](task/UNC/20.15.2/2-00025.md) | 适用 |
 |---|---|---|---|
@@ -110,5 +110,4 @@ status: draft
 - **编排特性**：见上文"特性关系矩阵"段（5 核心 + 3 基础 = 8 feature）
 - **共享骨架**：[1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00025 Radius 完整骨架](task/UNC/20.15.2/1-00025.md) / [1-00027 终端二次鉴权骨架](task/UNC/20.15.2/1-00027.md)
 - **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板
-- **APN 域专题知识**：[APN配置树.md §3 鉴权计费信息实例化](../../../business-graph/APN业务域/APN配置树.md) / [归纳-四维度决策与机制.md §2 鉴权维度](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)
-- **证据**（原始产品文档）：[WSFD-011305 Radius 鉴权接入 md](assets/evidence/UNC/20.15.2/WSFD-011305/) / [WSFD-011306 Radius 功能 md](assets/evidence/UNC/20.15.2/WSFD-011306/) / [WSFD-010301 鉴权功能 4 制式 md](assets/evidence/UNC/20.15.2/WSFD-010301/) / [WSFD-108007 终端二次鉴权 md](assets/evidence/UNC/20.15.2/WSFD-108007/) / [WSFD-011307 Radius 抄送 md](assets/evidence/UNC/20.15.2/WSFD-011307/)
+- **证据**（原始产品文档）：[WSFD-011305 Radius 鉴权接入 md](evidence/UNC/20.15.2/WSFD-011305/) / [WSFD-011306 Radius 功能 md](evidence/UNC/20.15.2/WSFD-011306/) / [WSFD-010301 鉴权功能 4 制式 md](evidence/UNC/20.15.2/WSFD-010301/) / [WSFD-108007 终端二次鉴权 md](evidence/UNC/20.15.2/WSFD-108007/) / [WSFD-011307 Radius 抄送 md](evidence/UNC/20.15.2/WSFD-011307/)

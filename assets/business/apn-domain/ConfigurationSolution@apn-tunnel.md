@@ -17,7 +17,7 @@ status: draft
 
 隧道接入是 APN 业务域的"送到企业 DN"环节：当 UE 流量目标不是普通 Internet，而是企业内网 / 分支 / 运营商网络，需要通过隧道封装。
 
-5 维度的接入方式决策（来源 [APN配置树.md §2 接入方式信息实例化](../../../business-graph/APN业务域/APN配置树.md)）：
+5 维度的接入方式决策：
 
 | 接入方式 | 性能 | 安全 | 适用 |
 |---|---|---|---|
@@ -125,5 +125,4 @@ status: draft
 - **编排特性**：见上文"特性关系矩阵"段（8 核心 + 2 基础 = 10 feature）
 - **共享骨架**：[1-00027 终端二次鉴权](task/UNC/20.15.2/1-00027.md)（含 GRE 隧道族）/ [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
 - **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板
-- **APN 域专题知识**：[APN配置树.md §2 接入方式信息实例化](../../../business-graph/APN业务域/APN配置树.md)
-- **证据**（原始产品文档）：[IPFD-015002 GRE md](assets/evidence/UNC/20.15.2/IPFD-015002/) / [IPFD-016000 IPSec md](assets/evidence/UNC/20.15.2/IPFD-016000/) / [WSFD-104410 L2TP md](assets/evidence/UNC/20.15.2/WSFD-104410/) / [WSFD-104411 MPLS VPN md](assets/evidence/UNC/20.15.2/WSFD-104411/)
+- **证据**（原始产品文档）：[IPFD-015002 GRE md](evidence/UNC/20.15.2/IPFD-015002/) / [IPFD-016000 IPSec md](evidence/UNC/20.15.2/IPFD-016000/) / [WSFD-104410 L2TP md](evidence/UNC/20.15.2/WSFD-104410/) / [WSFD-104411 MPLS VPN md](evidence/UNC/20.15.2/WSFD-104411/)

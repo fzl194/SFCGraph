@@ -17,7 +17,7 @@ status: draft
 
 IP 类型治理是 APN 业务域的"用什么 IP"环节：在地址分配后，UE 获得的 IP 是 IPv4 单栈、IPv6 单栈、还是双栈。本方案覆盖 3 种 IP 类型 + 2 个增强能力（IPv6 承载 / IPv6 PD / 双栈 / 静态地址路由冗余）。
 
-3 维度的 IP 类型决策（来源 [归纳-四维度决策与机制.md §1.1 18 格矩阵](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)）：
+3 维度的 IP 类型决策：
 
 | IP 类型 | License（UDG）| License（UNC）| 适用 |
 |---|---|---|---|
@@ -25,7 +25,7 @@ IP 类型治理是 APN 业务域的"用什么 IP"环节：在地址分配后，U
 | **IPv6 单栈** | LKV3G5V6PB01 | WSFD-104001 | 5G 切片 / IoT 演进 |
 | **IPv4v6 双栈** | LKV3G5VDSA01 + LKV3G5V6PB01 | WSFD-104002 | 家庭 CPE / VoLTE |
 
-License 依赖链（来源 [归纳-四维度决策与机制.md §1.4 IPv6 承载依赖链](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)）：
+License 依赖链：
 ```
 [GWFD-020401 IPv6 承载上下文] LKV3G5V6PB01
         │（承载基础设施，必装）
@@ -118,5 +118,4 @@ License 依赖链（来源 [归纳-四维度决策与机制.md §1.4 IPv6 承载
 - **编排特性**：见上文"特性关系矩阵"段（8 核心 + 3 基础 = 11 feature）
 - **共享骨架**：[1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
 - **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板
-- **APN 域专题知识**：[归纳-四维度决策与机制.md §1.1 18 格矩阵 + §1.4 IPv6 承载依赖链](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)
-- **证据**（原始产品文档）：[WSFD-104001 IPv6 承载 md](assets/evidence/UNC/20.15.2/WSFD-104001/) / [WSFD-104002 双栈 md](assets/evidence/UNC/20.15.2/WSFD-104002/) / [WSFD-104004 IPv6 PD md](assets/evidence/UNC/20.15.2/WSFD-104004/) / [WSFD-107021 静态地址路由冗余 md](assets/evidence/UNC/20.15.2/WSFD-107021/) + UDG 对应
+- **证据**（原始产品文档）：[WSFD-104001 IPv6 承载 md](evidence/UNC/20.15.2/WSFD-104001/) / [WSFD-104002 双栈 md](evidence/UNC/20.15.2/WSFD-104002/) / [WSFD-104004 IPv6 PD md](evidence/UNC/20.15.2/WSFD-104004/) / [WSFD-107021 静态地址路由冗余 md](evidence/UNC/20.15.2/WSFD-107021/) + UDG 对应

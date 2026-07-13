@@ -17,7 +17,7 @@ status: draft
 
 地址分配是 APN 业务域的核心链路：在 UE 鉴权通过后，SMF/PGW-C/SGSN 根据配置决策"为该 UE 分配哪个 IP、用什么方式分配、什么类型"，并通过 N4/PFCP（5G）/Gz-Gn（4G）消息通知 UPF 执行实际分配。
 
-4 维度的地址分配决策（来源 [APN配置树.md §配置树实例化规则](../../../business-graph/APN业务域/APN配置树.md) + [归纳-四维度决策与机制.md §1.1 18 格矩阵](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)）：
+4 维度的地址分配决策：
 
 ```
 维度 1（地址分配方式）：6 种
@@ -36,7 +36,7 @@ status: draft
 → 6 × 3 = 18 格矩阵（全可填，但受 License 与互斥约束限制）
 ```
 
-跨网元协同骨架（来源 [归纳-四维度决策与机制.md §1.3 C-U 决策执行分离](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)）：
+跨网元协同骨架：
 
 | 决策/执行 | UNC（C 面：SMF/PGW-C/AMF/SGSN/MME）| UDG（U 面：UPF/PGW-U）|
 |---|---|---|
@@ -108,7 +108,7 @@ status: draft
 
 ### 跨网元/跨特性协同
 
-- **C-U 决策执行分离**（[归纳-四维度决策与机制.md §1.3](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)）：
+- **C-U 决策执行分离**（）：
   - UNC 决策地址分配方式 → N4 PFCP → UDG 执行
   - 真值表：CHV4/CHV6/V4/V6 信元控制 U 面是否本地分配
 - **顺序**：
@@ -118,7 +118,7 @@ status: draft
   4. UE 附着触发地址分配：N4 PFCP Session Establishment
   5. UDG 分配并通过 N4 响应返回地址给 SMF
 - **一致性约束**：APN 名 / 地址池名 / UPF 实例名 / N4 PFCP Node ID 跨网元严格一致
-- **License 依赖链**（[归纳-四维度决策与机制.md §1.4](../../../business-graph/APN业务域/归纳-四维度决策与机制.md)）：IPv6 完整承载需线性 License 链——**不可按命名规律推断**
+- **License 依赖链**（）：IPv6 完整承载需线性 License 链——**不可按命名规律推断**
 - **与其他 CS 的协同**（AND 关系）：
   - 与 [CS-2 鉴权](ConfigurationSolution@apn-auth.md)：Radius 下发模式时，Radius 链路必须先就绪
   - 与 [CS-3 隧道](ConfigurationSolution@apn-tunnel.md)：L2TP/LNS 模式时，隧道必须先就绪
@@ -179,7 +179,6 @@ status: draft
 - **编排特性**：见上文"特性关系矩阵"段（11 核心 + 7 基础 = 18 feature）
 - **共享骨架**：[1-00020 SMF 地址池体系](task/UNC/20.15.2/1-00020.md) / [1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
 - **业务层 SOP**：[业务层级构建SOP.md](../业务层级构建SOP.md) §4.2 CS 模板 + §4.1 特性关系矩阵规则
-- **业务层审视**：[业务层级wiki审视流程.md](../业务层级wiki审视流程.md)
-- **APN 域专题知识**（来源）：[APN配置树.md §1 地址分配信息实例化](../../../business-graph/APN业务域/APN配置树.md) / [归纳-四维度决策与机制.md §1 维度一:地址分配维度](../../../business-graph/APN业务域/归纳-四维度决策与机制.md) / [归纳-APN底座三维度.md](../../../business-graph/APN业务域/归纳-APN底座三维度.md)
-- **证据**（原始产品文档）：[WSFD-010502 地址分配方式 md](assets/evidence/UNC/20.15.2/WSFD-010502/) / [WSFD-010504 控制面地址分配方式 md](assets/evidence/UNC/20.15.2/WSFD-010504/) / [WSFD-104413 DHCPv4 md](assets/evidence/UNC/20.15.2/WSFD-104413/) / [WSFD-104005 DHCPv6 md](assets/evidence/UNC/20.15.2/WSFD-104005/) / [WSFD-104410 L2TP md](assets/evidence/UNC/20.15.2/WSFD-104410/) + UDG 对应
+- **业务层审视**：[业务层级wiki审视流程.md](../业务层级wiki审视流程.md) R1.1 覆盖 / R1.2 复用 / R1.3 跨网元协同 / R1.5 证据链
+- **证据**（原始产品文档）：[WSFD-010502 地址分配方式 md](evidence/UNC/20.15.2/WSFD-010502/) / [WSFD-010504 控制面地址分配方式 md](evidence/UNC/20.15.2/WSFD-010504/) / [WSFD-104413 DHCPv4 md](evidence/UNC/20.15.2/WSFD-104413/) / [WSFD-104005 DHCPv6 md](evidence/UNC/20.15.2/WSFD-104005/) / [WSFD-104410 L2TP md](evidence/UNC/20.15.2/WSFD-104410/) + UDG 对应
 - **范本**：[业务感知域融合计费 CS](../business-awareness/charging/ConfigurationSolution@charging-converged.md) — 跨网元协同 + 特性关系矩阵范本
