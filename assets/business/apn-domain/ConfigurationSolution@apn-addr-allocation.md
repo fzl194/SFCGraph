@@ -9,9 +9,9 @@ status: draft
 
 # 地址分配
 
-> 为 UE 分配 IP 地址的完整配置链路，覆盖 6 种地址分配方式（UPF/SMF/UDM/Radius/DHCP/LNS）× 3 种地址类型（IPv4/IPv6/双栈）的全 18 格矩阵。属于 [APN 接入与会话管理](NetworkScenario@apn-access.md) 场景。编排 UNC 5 + UDG 6 = 11 核心 feature。
+> 为 UE 分配 IP 地址的完整配置链路，覆盖 6 种地址分配方式（UPF/SMF/UDM/Radius/DHCP/LNS）× 3 种地址类型（IPv4/IPv6/双栈）的全 18 格矩阵。属于 [APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md) 场景。编排 UNC 5 + UDG 6 = 11 核心 feature。
 >
-> **方案角色**：核心（必选）——任何 APN 方案都必须启用本方案。与 [CS-2 鉴权](ConfigurationSolution@apn-auth.md) / [CS-3 隧道](ConfigurationSolution@apn-tunnel.md) / [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md) 是 **AND 关系**（4 CS 同时启用，非互斥）。
+> **方案角色**：核心（必选）——任何 APN 方案都必须启用本方案。与 [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md) / [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md) / [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) 是 **AND 关系**（4 CS 同时启用，非互斥）。
 
 ## 概览
 
@@ -56,7 +56,7 @@ status: draft
 | [UNC 控制面地址分配 2-00016](task/UNC/20.15.2/2-00016.md) | 核心（主特性配套）| 必配 | SMF 独立地址池；ALLOCPRECEDENCE 选 SMF 优先还是 UPF 优先——与 [2-00015](task/UNC/20.15.2/2-00015.md) 配合 |
 | [UNC DHCPv4 2-00021](task/UNC/20.15.2/2-00021.md) | 维度增强（DHCP 模式）| 可选 | DHCPv4 分配方式时必配；UNC 仅做 DHCP 代理，server 在外部 |
 | [UNC DHCPv6 2-00022](task/UNC/20.15.2/2-00022.md) | 维度增强（DHCPv6 模式）| 可选 | IPv6 / 双栈 DHCPv6 分配时必配；同上 |
-| [UNC L2TP/LNS 2-00020](task/UNC/20.15.2/2-00020.md) | 维度增强（L2TP/LNS 模式）| 可选 | 企业 L2TP 场景；含地址分配 LNS 模式（与 [CS-3 隧道](ConfigurationSolution@apn-tunnel.md) 核心重叠，配隧道时已含 LNS 分配）|
+| [UNC L2TP/LNS 2-00020](task/UNC/20.15.2/2-00020.md) | 维度增强（L2TP/LNS 模式）| 可选 | 企业 L2TP 场景；含地址分配 LNS 模式（与 [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md) 核心重叠，配隧道时已含 LNS 分配）|
 | [UDG 用户面地址分配主特性 2-00021](task/UDG/20.15.2/2-00021.md) | 跨网元对端 | 必配（任何 UNC 侧方式都需 UDG 配合）| UNC 决策后 UDG 执行；含 UPF 地址池 + 路由发布 |
 | [UDG 基于 APN_DNN 分配 2-00034](task/UDG/20.15.2/2-00034.md) | 跨网元对端（UPF 子方式 1）| 可选（按子方式）| 4 子方式中最常用；POOLTYPE=LOCAL |
 | [UDG 基于 SMF 分配 2-00035](task/UDG/20.15.2/2-00035.md) | 跨网元对端（UPF 子方式 2）| 可选 | CU Full-Mesh 组网；SMF 选 UPF |
@@ -88,9 +88,9 @@ status: draft
   - SMF 优先：SMF 选 UPF 并分配（CU Full-Mesh）
   - UPF 优先：UPF 自主分配（典型 4G）
 - **UDM 静态分配特有**：[2-00015](task/UNC/20.15.2/2-00015.md) POOLTYPE=UDM + CHECKIPVALID=Enable + HASVPN=Enable；需 UDM 签约 Framed-IP
-- **Radius 下发分配特有**：[2-00015](task/UNC/20.15.2/2-00015.md) 接收 Framed-Pool；需先配 [CS-2 鉴权](ConfigurationSolution@apn-auth.md) Radius 完整
+- **Radius 下发分配特有**：[2-00015](task/UNC/20.15.2/2-00015.md) 接收 Framed-Pool；需先配 [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md) Radius 完整
 - **DHCP 代理特有**：[2-00021/22](task/UNC/20.15.2/2-00021.md) 仅做 DHCP 代理，server 在外部
-- **L2TP/LNS 分配特有**：[2-00020 L2TP](task/UNC/20.15.2/2-00020.md) APNL2TPATTR + IPV4ALLOCTYPE=LNS；与 [CS-3 隧道](ConfigurationSolution@apn-tunnel.md) 核心重叠
+- **L2TP/LNS 分配特有**：[2-00020 L2TP](task/UNC/20.15.2/2-00020.md) APNL2TPATTR + IPV4ALLOCTYPE=LNS；与 [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md) 核心重叠
 - **排除** `SET UPFGRPTYPE`（SMF 优先时无需 UPF 组配置）
 - **排除** `ADD NGMMPROCTRL`（5G NGMM 不是地址分配范畴）
 
@@ -108,21 +108,21 @@ status: draft
 
 ### 跨网元/跨特性协同
 
-- **C-U 决策执行分离**（[业务层级构建SOP.md §1.3 C-U 决策执行分离](business/业务层级构建SOP.md)）：
+- **C-U 决策执行分离**（[业务层级构建SOP.md §0 总则](business/业务层级构建SOP.md)）：
   - UNC 决策地址分配方式 → N4 PFCP → UDG 执行
   - 真值表：CHV4/CHV6/V4/V6 信元控制 U 面是否本地分配
 - **顺序**：
   1. UNC 侧地址池体系（[1-00020](task/UNC/20.15.2/1-00020.md)）+ APN 基础信息（[1-00024](task/UNC/20.15.2/1-00024.md)）先就绪
-  2. UNC 决策地址分配方式 + [CS-2 鉴权](ConfigurationSolution@apn-auth.md)
+  2. UNC 决策地址分配方式 + [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md)
   3. UDG 侧地址池 + 路由发布（[1-00029](task/UNC/20.15.2/1-00029.md)）就绪
   4. UE 附着触发地址分配：N4 PFCP Session Establishment
   5. UDG 分配并通过 N4 响应返回地址给 SMF
 - **一致性约束**：APN 名 / 地址池名 / UPF 实例名 / N4 PFCP Node ID 跨网元严格一致
-- **License 依赖链**（[业务层级构建SOP.md §1.3 C-U 决策执行分离](business/业务层级构建SOP.md)）：IPv6 完整承载需线性 License 链——**不可按命名规律推断**
+- **License 依赖链**（[业务层级构建SOP.md §0 总则](business/业务层级构建SOP.md)）：IPv6 完整承载需线性 License 链——**不可按命名规律推断**
 - **与其他 CS 的协同**（AND 关系）：
-  - 与 [CS-2 鉴权](ConfigurationSolution@apn-auth.md)：Radius 下发模式时，Radius 链路必须先就绪
-  - 与 [CS-3 隧道](ConfigurationSolution@apn-tunnel.md)：L2TP/LNS 模式时，隧道必须先就绪
-  - 与 [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md)：IPv6 / 双栈时，IP 类型 License 必须先就绪
+  - 与 [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md)：Radius 下发模式时，Radius 链路必须先就绪
+  - 与 [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md)：L2TP/LNS 模式时，隧道必须先就绪
+  - 与 [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md)：IPv6 / 双栈时，IP 类型 License 必须先就绪
 
 > **方案优先复用已有 compound**：[1-00020](task/UNC/20.15.2/1-00020.md) / [1-00024](task/UNC/20.15.2/1-00024.md) / [1-00029](task/UNC/20.15.2/1-00029.md)，**不新建 atom/compound**。
 
@@ -148,7 +148,7 @@ status: draft
 | **基于位置**（[2-00036](task/UDG/20.15.2/2-00036.md)）| ADD POOLGRPMAP: LOCATION | 区域化运营 |
 | **Radius 下发池名**（[2-00038](task/UDG/20.15.2/2-00038.md)）| 解析 Framed-Pool | 企业 AAA |
 
-### DP-3：地址类型（3 选 1，与 [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md) 协同）
+### DP-3：地址类型（3 选 1，与 [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) 协同）
 
 | 选项 | UNC | UDG | License |
 |---|---|---|---|
@@ -171,14 +171,10 @@ status: draft
 
 ## 关联
 
-- **上游场景**：[NS APN 接入与会话管理](NetworkScenario@apn-access.md) — 本 CS 所属场景
+- **上游场景**：[NS APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md) — 本 CS 所属场景
 - **下游（同场景其他 CS，AND 关系）**：
-  - [CS 鉴权 AAA](ConfigurationSolution@apn-auth.md) — NS DP-2 实现（地址分配前需鉴权）
-  - [CS 隧道接入](ConfigurationSolution@apn-tunnel.md) — NS DP-3 实现（L2TP/LNS 时核心重叠）
-  - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — NS DP-4 实现
+  - [CS 鉴权 AAA](business/apn-domain/ConfigurationSolution@apn-auth.md) — NS DP-2 实现（地址分配前需鉴权）
+  - [CS 隧道接入](business/apn-domain/ConfigurationSolution@apn-tunnel.md) — NS DP-3 实现（L2TP/LNS 时核心重叠）
+  - [CS IP 类型治理](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) — NS DP-4 实现
 - **编排特性**：见上文"特性关系矩阵"段（11 核心 + 7 基础 = 18 feature）
 - **共享骨架**：[1-00020 SMF 地址池体系](task/UNC/20.15.2/1-00020.md) / [1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
-- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板 + §4.1 特性关系矩阵规则
-- **业务层审视**：[业务层级wiki审视流程.md](business/业务层级wiki审视流程.md) R1.1 覆盖 / R1.2 复用 / R1.3 跨网元协同 / R1.5 证据链
-- **证据**（原始产品文档）：[WSFD-010502 地址分配方式 md](evidence/UNC/20.15.2/WSFD-010502/) / [WSFD-010504 控制面地址分配方式 md](evidence/UNC/20.15.2/WSFD-010504/) / [WSFD-104413 DHCPv4 md](evidence/UNC/20.15.2/WSFD-104413/) / [WSFD-104005 DHCPv6 md](evidence/UNC/20.15.2/WSFD-104005/) / [WSFD-104410 L2TP md](evidence/UNC/20.15.2/WSFD-104410/) + UDG 对应
-- **范本**：[业务感知域融合计费 CS](business/business-awareness/charging/ConfigurationSolution@charging-converged.md) — 跨网元协同 + 特性关系矩阵范本

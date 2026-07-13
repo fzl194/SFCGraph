@@ -9,9 +9,9 @@ status: draft
 
 # IP 类型治理
 
-> UE 获得 IPv4 / IPv6 / 双栈地址的完整配置链路，含 IPv6 承载 / IPv6 Prefix Delegation / 双栈 / 静态地址路由冗余。属于 [APN 接入与会话管理](NetworkScenario@apn-access.md) 场景。编排 UNC 4 + UDG 4 = 8 核心 feature。
+> UE 获得 IPv4 / IPv6 / 双栈地址的完整配置链路，含 IPv6 承载 / IPv6 Prefix Delegation / 双栈 / 静态地址路由冗余。属于 [APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md) 场景。编排 UNC 4 + UDG 4 = 8 核心 feature。
 >
-> **方案角色**：必选（NS DP-4 实现，3 选 1）。与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) / [CS-2 鉴权](ConfigurationSolution@apn-auth.md) / [CS-3 隧道](ConfigurationSolution@apn-tunnel.md) 是 **AND 关系**。
+> **方案角色**：必选（NS DP-4 实现，3 选 1）。与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) / [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md) / [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md) 是 **AND 关系**。
 
 ## 概览
 
@@ -84,9 +84,9 @@ License 依赖链：
   3. UE 触发时按 PDU Session Type（IPv4/IPv6/IPv4v6）走对应路径
 - **License 完整性**（critical）：IPv6 / 双栈 License 链必须完整
 - **与其他 CS 的协同**（AND 关系）：
-  - 与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md)：IP 类型决定地址池类型（IPv4/IPv6 SECTION）
-  - 与 [CS-2 鉴权](ConfigurationSolution@apn-auth.md)：4 制式鉴权按 IP 类型配不同协议
-  - 与 [CS-3 隧道](ConfigurationSolution@apn-tunnel.md)：双栈时隧道需 IPv4+IPv6 双协议栈支持
+  - 与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md)：IP 类型决定地址池类型（IPv4/IPv6 SECTION）
+  - 与 [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md)：4 制式鉴权按 IP 类型配不同协议
+  - 与 [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md)：双栈时隧道需 IPv4+IPv6 双协议栈支持
 
 > **方案优先复用已有 compound**：[1-00024](task/UNC/20.15.2/1-00024.md) / [1-00029](task/UNC/20.15.2/1-00029.md)，**不新建 atom/compound**。
 
@@ -105,17 +105,15 @@ License 依赖链：
 - **3 选 1 IP 类型**（critical）：同一 APN 不可同时配 2 种 IP 类型
 - **License 完整性**（critical）：IPv6 / 双栈 License 必须完整（链式依赖）
 - **前缀长度 64 是 PD 分水岭**（critical）：V6PREFIXLENGTH<64 触发 PD 模式
-- **与其他 CS 协同**（critical）：与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) 严格对应（IP 类型决定地址池类型）
+- **与其他 CS 协同**（critical）：与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) 严格对应（IP 类型决定地址池类型）
 - **License 编号核查**（critical）：必须从原始产品文档交叉验证（**不可按命名规律推断**）
 
 ## 关联
 
-- **上游场景**：[NS APN 接入与会话管理](NetworkScenario@apn-access.md)
+- **上游场景**：[NS APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md)
 - **下游（同场景其他 CS，AND 关系）**：
-  - [CS 地址分配](ConfigurationSolution@apn-addr-allocation.md) — IP 类型决定地址池类型
-  - [CS 鉴权 AAA](ConfigurationSolution@apn-auth.md)
-  - [CS 隧道接入](ConfigurationSolution@apn-tunnel.md) — 双栈时隧道需双协议栈
+  - [CS 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) — IP 类型决定地址池类型
+  - [CS 鉴权 AAA](business/apn-domain/ConfigurationSolution@apn-auth.md)
+  - [CS 隧道接入](business/apn-domain/ConfigurationSolution@apn-tunnel.md) — 双栈时隧道需双协议栈
 - **编排特性**：见上文"特性关系矩阵"段（8 核心 + 3 基础 = 11 feature）
 - **共享骨架**：[1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
-- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板
-- **证据**（原始产品文档）：[WSFD-104001 IPv6 承载 md](evidence/UNC/20.15.2/WSFD-104001/) / [WSFD-104002 双栈 md](evidence/UNC/20.15.2/WSFD-104002/) / [WSFD-104004 IPv6 PD md](evidence/UNC/20.15.2/WSFD-104004/) / [WSFD-107021 静态地址路由冗余 md](evidence/UNC/20.15.2/WSFD-107021/) + UDG 对应

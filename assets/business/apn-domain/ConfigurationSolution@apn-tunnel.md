@@ -9,9 +9,9 @@ status: draft
 
 # 隧道接入
 
-> 把 UE 流量通过隧道送到企业 DN 的完整配置链路，覆盖 5 种接入方式（VPN 直通 / GRE / IPSec / L2TP / MPLS VPN）。属于 [APN 接入与会话管理](NetworkScenario@apn-access.md) 场景。编排 UNC 4 + UDG 4 = 8 核心 feature。
+> 把 UE 流量通过隧道送到企业 DN 的完整配置链路，覆盖 5 种接入方式（VPN 直通 / GRE / IPSec / L2TP / MPLS VPN）。属于 [APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md) 场景。编排 UNC 4 + UDG 4 = 8 核心 feature。
 >
-> **方案角色**：可选（NS DP-3 实现，5 选 1；**VPN 直通 = 不启本 CS**——这是唯一"隐式不启"的设计）。与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) / [CS-2 鉴权](ConfigurationSolution@apn-auth.md) / [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md) 是 **AND 关系**。
+> **方案角色**：可选（NS DP-3 实现，5 选 1；**VPN 直通 = 不启本 CS**——这是唯一"隐式不启"的设计）。与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) / [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md) / [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) 是 **AND 关系**。
 
 ## 概览
 
@@ -39,7 +39,7 @@ status: draft
 |---|---|---|---|
 | [UNC GRE 2-00029](task/UNC/20.15.2/2-00029.md) | 核心（方案主体·GRE）| 必选（选 GRE 时）| 企业 DN 接入 + 公网封装 |
 | [UNC IPSec 2-00030](task/UNC/20.15.2/2-00030.md) | 核心（方案主体·IPSec）| 必选（选 IPSec 时）| 企业 DN + 公网 + 加密 |
-| [UNC L2TP VPN 2-00020](task/UNC/20.15.2/2-00020.md) | 核心（方案主体·L2TP）| 必选（选 L2TP 时）| 远程办公 / 分支；含 LNS 模式（与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) 核心重叠）|
+| [UNC L2TP VPN 2-00020](task/UNC/20.15.2/2-00020.md) | 核心（方案主体·L2TP）| 必选（选 L2TP 时）| 远程办公 / 分支；含 LNS 模式（与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) 核心重叠）|
 | [UNC MPLS VPN 2-00031](task/UNC/20.15.2/2-00031.md) | 核心（方案主体·MPLS VPN）| 必选（选 MPLS VPN 时）| 跨域运营商 VPN |
 | [UDG IPSec 功能 2-00027](task/UDG/20.15.2/2-00027.md) | 跨网元对端（IPSec）| 必选（选 IPSec 时）| U 面对称 IPSec |
 | [UDG IPSec 可靠性 2-00028](task/UDG/20.15.2/2-00028.md) | 跨网元对端（IPSec 可靠性）| 可选 | IPSec SA 备份 / DPD |
@@ -63,7 +63,7 @@ status: draft
   - IKEv2 + ESP + PSK（默认）；或证书认证
 - **L2TP 隧道**（[2-00020](task/UNC/20.15.2/2-00020.md)）：
   - `ADD APN` + `SET APNL2TPATTR`（含 LNS IP / NAME / PWD / 隧道密码）
-  - 与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) LNS 模式核心重叠
+  - 与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) LNS 模式核心重叠
 - **MPLS VPN**（[2-00031](task/UNC/20.15.2/2-00031.md)）：
   - `ADD L3VPNINST` + `ADD VPNINSTAF` + `ADD VPNINST` + `ADD IPBINDVPN` + `ADD LOGICIP/INF`
   - 跨域 VPN 需 perNexthop 配套
@@ -87,9 +87,9 @@ status: draft
   2. UNC 触发 UDG 侧隧道配置（N4 PFCP + 隧道配置同步）
   3. UE 流量经 UPF 封装通过隧道到企业 DN
 - **与其他 CS 的协同**（AND 关系）：
-  - 与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md)：L2TP/LNS 模式时核心重叠
-  - 与 [CS-2 鉴权](ConfigurationSolution@apn-auth.md)：企业 AAA 模式常配合 IPSec/L2TP
-  - 与 [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md)：双栈时隧道需 IPv4+IPv6 双协议栈支持
+  - 与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md)：L2TP/LNS 模式时核心重叠
+  - 与 [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md)：企业 AAA 模式常配合 IPSec/L2TP
+  - 与 [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md)：双栈时隧道需 IPv4+IPv6 双协议栈支持
 - **License 链**：无强制 License（GRE/IPSec 通用）
 - **GRE 嵌套限制**（warning）：最多 2 层嵌套，超过 3 层状态变 Down
 
@@ -113,16 +113,14 @@ status: draft
 - **VPN 直通 = 不启本 CS**（critical）：普通 Internet 访问不需要任何隧道配置
 - **跨网元一致性**（critical）：UNC 端隧道参数与 UDG 端对称
 - **GRE 嵌套限制**（warning）：最多 2 层嵌套
-- **与其他 CS 协同**（critical）：与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) / [CS-2 鉴权](ConfigurationSolution@apn-auth.md) / [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md) 严格顺序
+- **与其他 CS 协同**（critical）：与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) / [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md) / [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) 严格顺序
 
 ## 关联
 
-- **上游场景**：[NS APN 接入与会话管理](NetworkScenario@apn-access.md)
+- **上游场景**：[NS APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md)
 - **下游（同场景其他 CS，AND 关系）**：
-  - [CS 地址分配](ConfigurationSolution@apn-addr-allocation.md) — L2TP/LNS 模式核心重叠
-  - [CS 鉴权 AAA](ConfigurationSolution@apn-auth.md)
-  - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — 双栈时隧道需双协议栈
+  - [CS 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) — L2TP/LNS 模式核心重叠
+  - [CS 鉴权 AAA](business/apn-domain/ConfigurationSolution@apn-auth.md)
+  - [CS IP 类型治理](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) — 双栈时隧道需双协议栈
 - **编排特性**：见上文"特性关系矩阵"段（8 核心 + 2 基础 = 10 feature）
 - **共享骨架**：[1-00027 终端二次鉴权](task/UNC/20.15.2/1-00027.md)（含 GRE 隧道族）/ [1-00029 OSPF 路由发布](task/UNC/20.15.2/1-00029.md)
-- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板
-- **证据**（原始产品文档）：[IPFD-015002 GRE md](evidence/UNC/20.15.2/IPFD-015002/) / [IPFD-016000 IPSec md](evidence/UNC/20.15.2/IPFD-016000/) / [WSFD-104410 L2TP md](evidence/UNC/20.15.2/WSFD-104410/) / [WSFD-104411 MPLS VPN md](evidence/UNC/20.15.2/WSFD-104411/)

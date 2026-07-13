@@ -9,9 +9,9 @@ status: draft
 
 # 鉴权 AAA
 
-> 对 UE 接入进行鉴权的完整配置链路，覆盖 4 种 AUTHMODE 鉴权方式（TRANS_NON_AUTH / TRANS_AUTH / NON_TRANS / LOC_AUTH）+ 配套的 Radius 服务器配置 + 终端二次鉴权 + Radius 抄送。属于 [APN 接入与会话管理](NetworkScenario@apn-access.md) 场景。编排 UNC 5 核心 feature。
+> 对 UE 接入进行鉴权的完整配置链路，覆盖 4 种 AUTHMODE 鉴权方式（TRANS_NON_AUTH / TRANS_AUTH / NON_TRANS / LOC_AUTH）+ 配套的 Radius 服务器配置 + 终端二次鉴权 + Radius 抄送。属于 [APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md) 场景。编排 UNC 5 核心 feature。
 >
-> **方案角色**：必选（NS DP-2 实现，4 选 1）。与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) / [CS-3 隧道](ConfigurationSolution@apn-tunnel.md) / [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md) 是 **AND 关系**。
+> **方案角色**：必选（NS DP-2 实现，4 选 1）。与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) / [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md) / [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) 是 **AND 关系**。
 
 ## 概览
 
@@ -72,11 +72,11 @@ status: draft
   2. UNC 侧鉴权配置（ACCESSMODE + Radius 服务器组）就绪
   3. UE 附着触发鉴权：N1 NAS Authentication Request（5G）/ S6a Authentication Information Request（4G）
   4. SMF/SGSN 触发 Radius 链路（经 Diameter/Gx/Gy）
-  5. 鉴权通过后触发 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md)
+  5. 鉴权通过后触发 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md)
 - **与其他 CS 的协同**（AND 关系）：
-  - 与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md)：Radius 下发模式时，Radius 链路必须先就绪
-  - 与 [CS-3 隧道](ConfigurationSolution@apn-tunnel.md)：企业 AAA 模式常配合 IPSec/L2TP 隧道
-  - 与 [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md)：4 制式鉴权按 IP 类型配不同协议
+  - 与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md)：Radius 下发模式时，Radius 链路必须先就绪
+  - 与 [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md)：企业 AAA 模式常配合 IPSec/L2TP 隧道
+  - 与 [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md)：4 制式鉴权按 IP 类型配不同协议
 - **License 链**：接入控制 [2-00034](task/UNC/20.15.2/2-00034.md) 必开 LKV2USRAC01
 
 > **方案优先复用已有 compound**：[1-00024](task/UNC/20.15.2/1-00024.md) / [1-00025](task/UNC/20.15.2/1-00025.md) / [1-00027](task/UNC/20.15.2/1-00027.md)，**不新建 atom/compound**。
@@ -98,16 +98,14 @@ status: draft
 - **Radius 服务器组必选性**（critical）：TRANS_AUTH/NON_TRANS 必须配 Radius 完整
 - **鉴权后必触发地址分配**（critical）：鉴权失败时不触发地址分配
 - **License 完整性**（critical）：接入控制 LKV2USRAC01 必开
-- **跨域协同**（critical）：与 [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) 严格顺序——鉴权失败时地址分配不发生
+- **跨域协同**（critical）：与 [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) 严格顺序——鉴权失败时地址分配不发生
 
 ## 关联
 
-- **上游场景**：[NS APN 接入与会话管理](NetworkScenario@apn-access.md) — 本 CS 所属场景
+- **上游场景**：[NS APN 接入与会话管理](business/apn-domain/NetworkScenario@apn-access.md) — 本 CS 所属场景
 - **下游（同场景其他 CS，AND 关系）**：
-  - [CS 地址分配](ConfigurationSolution@apn-addr-allocation.md) — NS DP-1（鉴权后触发）
-  - [CS 隧道接入](ConfigurationSolution@apn-tunnel.md) — NS DP-3
-  - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — NS DP-4
+  - [CS 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) — NS DP-1（鉴权后触发）
+  - [CS 隧道接入](business/apn-domain/ConfigurationSolution@apn-tunnel.md) — NS DP-3
+  - [CS IP 类型治理](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) — NS DP-4
 - **编排特性**：见上文"特性关系矩阵"段（5 核心 + 3 基础 = 8 feature）
 - **共享骨架**：[1-00024 APN 接入域基础设施](task/UNC/20.15.2/1-00024.md) / [1-00025 Radius 完整骨架](task/UNC/20.15.2/1-00025.md) / [1-00027 终端二次鉴权骨架](task/UNC/20.15.2/1-00027.md)
-- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 CS 模板
-- **证据**（原始产品文档）：[WSFD-011305 Radius 鉴权接入 md](evidence/UNC/20.15.2/WSFD-011305/) / [WSFD-011306 Radius 功能 md](evidence/UNC/20.15.2/WSFD-011306/) / [WSFD-010301 鉴权功能 4 制式 md](evidence/UNC/20.15.2/WSFD-010301/) / [WSFD-108007 终端二次鉴权 md](evidence/UNC/20.15.2/WSFD-108007/) / [WSFD-011307 Radius 抄送 md](evidence/UNC/20.15.2/WSFD-011307/)

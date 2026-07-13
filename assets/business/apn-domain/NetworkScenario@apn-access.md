@@ -9,7 +9,7 @@ status: draft
 
 # APN 接入与会话管理
 
-> 解决"UE 如何接入移动核心网并获得 IP 服务"的业务问题。属于 [APN 业务域](BusinessDomain@apn-domain.md)。含 4 个方案（4 个独立决策维度，AND 关系），覆盖 24 个 UNC feature + 13 个 UDG feature。
+> 解决"UE 如何接入移动核心网并获得 IP 服务"的业务问题。属于 [APN 业务域](business/apn-domain/BusinessDomain@apn-domain.md)。含 4 个方案（4 个独立决策维度，AND 关系），覆盖 24 个 UNC feature + 13 个 UDG feature。
 
 ## 概览
 
@@ -32,7 +32,7 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
   - 控制维度（4 个独立决策维度）：DP-1 地址分配方式（6 种 × 3 种 IP 类型 = 18 格矩阵）/ DP-2 鉴权方式（4 种）/ DP-3 接入方式（5 种，VPN 直通不启 CS-3）/ DP-4 IP 类型（3 种）
 - 不覆盖（与相邻场景的边界）：
   - 业务识别 / 策略控制 / 计费 / 带宽控制 / 访问限制 — 属 [业务感知域](business/business-awareness/BusinessDomain@business-awareness.md)
-  - 网元对接开局（N4 PFCP 偶联 / Diameter / SBI）— 属 [网元对接业务域](BusinessDomain@network-element-docking.md)（待建）
+  - 网元对接开局（N4 PFCP 偶联 / Diameter / SBI）— 属 [网元对接业务域](business/apn-domain/BusinessDomain@network-element-docking.md)（★待建，APN 域边界划定引用）
   - 运营级 KQI / 性能 / 告警 — 属运维域
 
 > **边界划定原则**：本场景聚焦"UE 如何接入并获得服务"，不聚焦"如何识别业务 / 如何差异化策略/计费 / 如何差异化限速 / 如何差异化访问限制"。
@@ -45,10 +45,10 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
 
 | 选项 | 涉及方案 | 走法 |
 |---|---|---|
-| **UPF 本地分配**（最常用）| [CS-1 地址分配](ConfigurationSolution@apn-addr-allocation.md) | UNC [2-00015](task/UNC/20.15.2/2-00015.md) POOLTYPE=LOCAL + UDG 4 子方式 [2-00034/35/36/38](task/UDG/20.15.2/2-00034.md) |
+| **UPF 本地分配**（最常用）| [CS-1 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) | UNC [2-00015](task/UNC/20.15.2/2-00015.md) POOLTYPE=LOCAL + UDG 4 子方式 [2-00034/35/36/38](task/UDG/20.15.2/2-00034.md) |
 | **SMF 本地分配**（C 面独立）| CS-1 | UNC [2-00015](task/UNC/20.15.2/2-00015.md) + [2-00016](task/UNC/20.15.2/2-00016.md) ALLOCPRECEDENCE=SMF |
 | **UDM 静态签约** | CS-1 | UNC [2-00015](task/UNC/20.15.2/2-00015.md) POOLTYPE=UDM + UDM 签约 Framed-IP |
-| **Radius 下发** | CS-1 + CS-2 | UNC [2-00015](task/UNC/20.15.2/2-00015.md) + [CS-2 鉴权](ConfigurationSolution@apn-auth.md) Radius 完整 + UDG [2-00038](task/UDG/20.15.2/2-00038.md) 解析 Framed-Pool |
+| **Radius 下发** | CS-1 + CS-2 | UNC [2-00015](task/UNC/20.15.2/2-00015.md) + [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md) Radius 完整 + UDG [2-00038](task/UDG/20.15.2/2-00038.md) 解析 Framed-Pool |
 | **DHCP 代理** | CS-1 | UNC [2-00021/22](task/UNC/20.15.2/2-00021.md) DHCP 代理 + 外部 DHCP server |
 | **L2TP/LNS 分配** | CS-1 + CS-3 | UNC [2-00020 L2TP](task/UNC/20.15.2/2-00020.md) LNS 模式 + LNS server |
 
@@ -56,7 +56,7 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
 
 | 选项 | 涉及方案 | 走法 |
 |---|---|---|
-| **透明接入 TRANS_NON_AUTH** | [CS-2 鉴权](ConfigurationSolution@apn-auth.md) | HSS/UDM 已完成鉴权，无需 AAA 二次鉴权；UNC [2-00024](task/UNC/20.15.2/2-00024.md) ACCESSMODE=TRANS_NON_AUTH + 不启 Radius 功能 |
+| **透明接入 TRANS_NON_AUTH** | [CS-2 鉴权](business/apn-domain/ConfigurationSolution@apn-auth.md) | HSS/UDM 已完成鉴权，无需 AAA 二次鉴权；UNC [2-00024](task/UNC/20.15.2/2-00024.md) ACCESSMODE=TRANS_NON_AUTH + 不启 Radius 功能 |
 | **透明鉴权 TRANS_AUTH** | CS-2 | 网络侧配置的用户名密码；UNC [2-00024](task/UNC/20.15.2/2-00024.md) ACCESSMODE=TRANS_AUTH + [2-00025 Radius 功能](task/UNC/20.15.2/2-00025.md) |
 | **不透明接入 NON_TRANS** | CS-2 | 用户 PCO 携带用户名密码，企业 AAA 二次鉴权；UNC [2-00024](task/UNC/20.15.2/2-00024.md) ACCESSMODE=NON_TRANS + [2-00025 Radius 功能](task/UNC/20.15.2/2-00025.md) |
 | **本地鉴权 LOC_AUTH** | CS-2 | UNC 本地配置用户名密码，无 AAA server；UNC [2-00024](task/UNC/20.15.2/2-00024.md) ACCESSMODE=LOC_AUTH + 不启 Radius 功能 |
@@ -66,7 +66,7 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
 | 选项 | 涉及方案 | 走法 |
 |---|---|---|
 | **VPN 直通**（隐式默认）| **不启 CS-3** | 走标准 Internet 访问，无隧道；UPF 直接 NAT 转发 |
-| **GRE 隧道** | [CS-3 隧道](ConfigurationSolution@apn-tunnel.md) | UNC [2-00029 GRE](task/UNC/20.15.2/2-00029.md) + UDG [2-00027/28/29](task/UDG/20.15.2/2-00027.md) |
+| **GRE 隧道** | [CS-3 隧道](business/apn-domain/ConfigurationSolution@apn-tunnel.md) | UNC [2-00029 GRE](task/UNC/20.15.2/2-00029.md) + UDG [2-00027/28/29](task/UDG/20.15.2/2-00027.md) |
 | **IPSec 隧道** | CS-3 | UNC [2-00030 IPSec](task/UNC/20.15.2/2-00030.md) + UDG [2-00027/28/29](task/UDG/20.15.2/2-00027.md) |
 | **L2TP 隧道** | CS-3 | UNC [2-00020 L2TP](task/UNC/20.15.2/2-00020.md) + LNS server + APNL2TPATTR |
 | **MPLS VPN** | CS-3 | UNC [2-00031 MPLS VPN](task/UNC/20.15.2/2-00031.md) + L3VPN 实例 |
@@ -75,7 +75,7 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
 
 | 选项 | 涉及方案 | 走法 |
 |---|---|---|
-| **IPv4 单栈** | [CS-4 IP 类型](ConfigurationSolution@apn-ip-typing.md) | 不启 IPv6 承载 / 双栈 / Prefix Delegation |
+| **IPv4 单栈** | [CS-4 IP 类型](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) | 不启 IPv6 承载 / 双栈 / Prefix Delegation |
 | **IPv6 单栈** | CS-4 | UNC [2-00018 IPv6 承载](task/UNC/20.15.2/2-00018.md) + UDG [2-00041 IPv6 承载](task/UDG/20.15.2/2-00041.md) + License LKV3G5V6PB01 |
 | **IPv4v6 双栈** | CS-4 | UNC [2-00017 双栈](task/UNC/20.15.2/2-00017.md) + UDG [2-00043 双栈](task/UDG/20.15.2/2-00043.md) + License LKV3G5VDSA01 |
 
@@ -89,12 +89,9 @@ APN 接入与会话管理场景覆盖 UE 一次完整接入流程的所有配置
 
 ## 关联
 
-- **上游域**：[APN 业务域](BusinessDomain@apn-domain.md)
-- **下游方案**（4 个，AND 关系，**全部** 必选/按需）：
-  - [CS 地址分配](ConfigurationSolution@apn-addr-allocation.md) — 核心（必选）
-  - [CS 鉴权 AAA](ConfigurationSolution@apn-auth.md) — 必选 1（4 选 1）
-  - [CS 隧道接入](ConfigurationSolution@apn-tunnel.md) — 可选（VPN 直通时不启用）
-  - [CS IP 类型治理](ConfigurationSolution@apn-ip-typing.md) — 必选 1（3 选 1）
-- **业务层 SOP**：[业务层级构建SOP.md](business/业务层级构建SOP.md) §4.2 NS 模板 + §5 决策点
-- **业务层审视**：[业务层级wiki审视流程.md](business/业务层级wiki审视流程.md) R1.1 task 覆盖度 / R1.4 前置门
-- **范本**：[业务感知域计费 NS](business/business-awareness/charging/NetworkScenario@charging.md) — 7 CS 路由表成熟范本
+- 上游域：[APN 业务域](business/apn-domain/BusinessDomain@apn-domain.md)
+- 下游方案（4 个，AND 关系，**全部** 必选/按需）：
+  - [CS 地址分配](business/apn-domain/ConfigurationSolution@apn-addr-allocation.md) — 核心（必选）
+  - [CS 鉴权 AAA](business/apn-domain/ConfigurationSolution@apn-auth.md) — 必选 1（4 选 1）
+  - [CS 隧道接入](business/apn-domain/ConfigurationSolution@apn-tunnel.md) — 可选（VPN 直通时不启用）
+  - [CS IP 类型治理](business/apn-domain/ConfigurationSolution@apn-ip-typing.md) — 必选 1（3 选 1）
