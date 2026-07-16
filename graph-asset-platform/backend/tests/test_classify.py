@@ -14,18 +14,18 @@ def test_nf_configobject():
     assert fname == "UDG@ConfigObject@URR.md"
 
 def test_business_domain():
-    rel, fname = classify("BusinessDomain@charging", R, {"domain": "business-awareness"})
-    assert rel == "Business/business-awareness"
-    assert fname == "BusinessDomain@charging.md"
+    rel, fname = classify("BusinessDomain@demo", R, {"domain": "demo-domain"})
+    assert rel == "Business/demo-domain"
+    assert fname == "BusinessDomain@demo.md"
 
 def test_business_scenario():
-    rel, fname = classify("NetworkScenario@charging", R, {"domain": "business-awareness", "scenario": "charging"})
-    assert rel == "Business/business-awareness/charging"
+    rel, fname = classify("NetworkScenario@demo", R, {"domain": "demo-domain", "scenario": "demo"})
+    assert rel == "Business/demo-domain/demo"
 
 def test_business_solution():
-    rel, fname = classify("ConfigurationSolution@charging-online", R, {"domain": "business-awareness", "scenario": "charging"})
-    assert rel == "Business/business-awareness/charging"
-    assert fname == "ConfigurationSolution@charging-online.md"
+    rel, fname = classify("ConfigurationSolution@demo-online", R, {"domain": "demo-domain", "scenario": "demo"})
+    assert rel == "Business/demo-domain/demo"
+    assert fname == "ConfigurationSolution@demo-online.md"
 
 def test_missing_version_raises():
     import pytest

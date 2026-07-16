@@ -6,9 +6,9 @@ def test_nf_3seg():
     assert is_nf_scoped("UDG@MMLCommand@ADD URR") is True
 
 def test_cross_2seg():
-    assert split_id("NetworkScenario@charging") == (None, "NetworkScenario", "charging")
-    assert segment_count("NetworkScenario@charging") == 2
-    assert is_nf_scoped("NetworkScenario@charging") is False
+    assert split_id("NetworkScenario@demo") == (None, "NetworkScenario", "demo")
+    assert segment_count("NetworkScenario@demo") == 2
+    assert is_nf_scoped("NetworkScenario@demo") is False
 
 def test_command_name_keeps_space():
     nf, typ, local = split_id("UDG@MMLCommand@ACT LICCTL")
