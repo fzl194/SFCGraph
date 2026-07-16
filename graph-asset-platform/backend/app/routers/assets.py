@@ -103,3 +103,35 @@ def stats():
         "nfs": sorted(svc.index.nfs()),
         "versions_per_nf": svc.index.versions_per_nf(),
     }
+
+
+@router.get("/browse")
+def browse(path: str = "", q: str | None = None, limit: int = 200, offset: int = 0):
+    """按目录懒加载资产树（治前端性能：展开某层只读该层子项，不再一次拉全量）。
+
+    - ``path``：assets 内相对目录（""=根，如 "Command/UDG/20.15.2"）。
+    - 返回该目录直接子目录 + 分页后的文件；文件 ``id`` 由文件名派生（去 ``.md``）。
+    - 隐藏 ``_`` 前缀内部项（``_index/``、``_imports.log``）。
+    - ``q``：文件名子串过滤；``limit/offset``：文件分页（大版本目录可有数千文件）。
+    """
+    svc = get_service()
+    dirs, files = svc.store.list_dir(path)
+    dirs = [d for d in dirs if not d.startswith("_")]
+    files = [f for f in files if not f.startswith("_")]
+    if q:
+        ql = q.lower()
+        files = [f for f in files if ql in f.lower()]
+    total = len(files)
+    page = files[offset:offset + limit]
+    file_objs = [
+        {"name": f, "id": f.removesuffix(".md") if f.endswith(".md") else f}
+        for f in page
+    ]
+    return {
+        "path": path,
+        "dirs": dirs,
+        "files": file_objs,
+        "total_files": total,
+        "offset": offset,
+        "limit": limit,
+    }

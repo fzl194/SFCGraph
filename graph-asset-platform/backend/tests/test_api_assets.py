@@ -137,3 +137,30 @@ def test_export_filter_nf_excludes_other(tmp_data_dir, monkeypatch):
         names = z.namelist()
         assert any("alpha" in n for n in names)
         assert all("beta" not in n for n in names)
+
+
+def test_browse_root_drill_paginate_filter(tmp_data_dir, monkeypatch):
+    _setup_service(tmp_data_dir, monkeypatch)
+    with TestClient(app) as c:
+        c.post("/api/v1/import", files={"file": _zip_upload({"a.md": CMD})})
+        # 根：应有 Command 目录（内部 _* 项被隐藏）
+        r = c.get("/api/v1/browse")
+        assert r.status_code == 200
+        assert "Command" in r.json()["dirs"]
+        # 钻到叶子目录 → 文件，id 由文件名派生
+        r2 = c.get("/api/v1/browse", params={"path": "Command/alpha/20.15.2"})
+        body2 = r2.json()
+        assert any(f["id"] == "alpha@MMLCommand@ADD DEMO" for f in body2["files"])
+        # q 过滤
+        r3 = c.get("/api/v1/browse",
+                   params={"path": "Command/alpha/20.15.2", "q": "ADD"})
+        assert any("ADD" in f["name"] for f in r3.json()["files"])
+        # 分页：limit=0 → 空页但 total_files 仍计全量
+        r4 = c.get("/api/v1/browse",
+                   params={"path": "Command/alpha/20.15.2", "limit": 0})
+        assert r4.json()["files"] == []
+        assert r4.json()["total_files"] >= 1
+        # 不存在目录 → 空
+        r5 = c.get("/api/v1/browse", params={"path": "Nope/None"})
+        assert r5.json() == {"path": "Nope/None", "dirs": [], "files": [],
+                             "total_files": 0, "offset": 0, "limit": 200}
