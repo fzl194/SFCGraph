@@ -141,10 +141,19 @@ status: active
 
 - **NF 隔离类**：从 3 段 id 取 `nf`/`local`，从 frontmatter `version` 取版本，路径 `{Layer}/{nf}/{version}/{id}.md`。
   - 例：id `UDG@MMLCommand@ADD URR` + version `20.15.2` → `Command/UDG/20.15.2/UDG@MMLCommand@ADD URR.md`
-- **跨 NF 类**：从 frontmatter `domain`/`scenario` 取路径（id 只有 2 段，不够拆路径）：
+- **跨 NF 类（业务层 = 固有树结构 domain ⊃ scenario ⊃ solution，目录即树的层级）**：id 只有 2 段，路径从 frontmatter `domain`/`scenario` 取：
+```
+Business/
+  {domain}/
+    BusinessDomain@{domain}.md              ← 业务域对象（domain 层）
+    {scenario}/
+      NetworkScenario@{scenario}.md         ← 场景对象（scenario 层，该节点本身）
+      ConfigurationSolution@{semantic}.md   ← 方案对象（solution 层 = scenario 的子节点，可多个）
+```
   - BusinessDomain（只有 domain）：`Business/{domain}/BusinessDomain@{domain}.md`
   - NetworkScenario（domain+scenario）：`Business/{domain}/{scenario}/NetworkScenario@{scenario}.md`
-  - ConfigurationSolution（domain+scenario）：`Business/{domain}/{scenario}/ConfigurationSolution@{semantic}.md`（semantic 即 id 末段）
+  - ConfigurationSolution（domain+scenario）：`Business/{domain}/{scenario}/ConfigurationSolution@{semantic}.md`（semantic 即 id 末段；多个方案共处同一 scenario 目录，是该 scenario 的子节点）
+  - **目录树只承载物理组织**（domain/scenario/solution 的包含层级）；对象间的**图谱关系**（NS↔CS、CS→task 等跨层引用）一律由 `## 边` wikilink 表达，与目录无关。
 - **evidence 等非对象文件**：无 frontmatter `id` 的 md（证据、index 等）按原相对位置放到 `Evidence/...`，**不作为图谱对象索引**（仅作溯源引用目标，对应 frontmatter `source` 字段）。
 
 ### 5.5 导入流程
