@@ -112,11 +112,16 @@ class Index:
         - version=None：返回 **该 id 最新现存版本**（语义化取最大；id 仅存旧版本则落到
           旧版本，不返回 None、不 404）。这与"网元最新"不同：某 id 若没跟上网元最新版本，
           不会被误判 404。
+        - 跨 NF 类 version 恒为 None：versions=[None]，latest=None 是合法版本，照常返回节点。
         """
         if version is not None:
             return self.node(id_, version)
-        v = self.latest_version_of_id(id_)
-        return self.node(id_, v) if v is not None else None
+        vs = self.versions_of(id_)
+        if not vs:
+            # id 完全不存在于索引 → None（区别于跨 NF 类的 versions=[None]）
+            return None
+        v = self.latest_version_of_id(id_)  # 跨 NF 类为 None（合法）
+        return self.node(id_, v)
 
     # ---------- 邻接查询 ----------
 
