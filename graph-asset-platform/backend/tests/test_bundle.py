@@ -230,25 +230,25 @@ def test_export_filter_scenario(tmp_data_dir):
     store = Store(tmp_data_dir)
     ns_md = (
         "---\n"
-        "id: NetworkScenario@charging\n"
+        "id: NetworkScenario@alpha\n"
         "type: NetworkScenario\n"
         "domain: demo\n"
-        "scenario: charging\n"
+        "scenario: alpha\n"
         "---\n# ns\n"
     )
     ns_other = (
         "---\n"
-        "id: NetworkScenario@access\n"
+        "id: NetworkScenario@beta\n"
         "type: NetworkScenario\n"
         "domain: demo\n"
-        "scenario: access\n"
+        "scenario: beta\n"
         "---\n# ns2\n"
     )
     import_bundle(_zip({"n1.md": ns_md, "n2.md": ns_other}), store, Registry.load_default())
-    zbytes = export_bundle(store, scenario="charging")
+    zbytes = export_bundle(store, scenario="alpha")
     names = _names(zbytes)
-    assert any("NetworkScenario@charging.md" in n for n in names)
-    assert all("access" not in n for n in names)
+    assert any("NetworkScenario@alpha.md" in n for n in names)
+    assert all("beta" not in n for n in names)
 
 
 def test_export_combined_nf_version(tmp_data_dir):
