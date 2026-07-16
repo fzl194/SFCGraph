@@ -40,7 +40,7 @@
 
 | 子系统 | 内容 |
 |---|---|
-| **S1 资产包导入/导出** | bundle = zip(md 文件，**无 manifest**)；import **按 frontmatter 自动归类**到标准资产目录；export 快照打包 |
+| **S1 资产包导入/导出** | bundle = zip(md 文件，**无 manifest**)；import **按 frontmatter 自动归类并合并进统一资产库**（多次上传累积，同 id 即更新）；export 导出资产库（可按 nf/version/domain 过滤） |
 | **S2 通用对象/边模型 + 解析器** | frontmatter+正文 → 通用 Object + 动态解析 Edge；对象类型注册表（平台默认 + bundle 可扩展）；边解析插件管线（**markdown 链接 + `[[ID]]`** 解析 + 可选 EDGE_MODULES 插件） |
 | **S3 读 API** | 单对象 / 单跳(BFS) / 列表(+搜索) / 子图 / 原始 md / 统计 |
 | **前端** | 三栏只读浏览器：左=对象索引(按类型分组+搜索)，中=选中对象 md，右=节点图(单跳)+邻居清单 |
@@ -55,7 +55,7 @@
 
 ## 3. 核心设计决策（锁定）
 
-1. **完全独立**：平台与仓库 `assets/` 无任何关系；导入后平台即该图谱的权威管理者；导入单向吃入、导出单向吐出，不存在"同步回 assets/"。
+1. **完全独立 + 统一资产库**：平台与仓库 `assets/` 无任何关系；平台内部是**唯一一份统一资产库**（不是每份导入一个隔离工作区）；多次上传**累积合并**进同一份库（同 id 后传覆盖先传 = 更新）；上传有记录但资产统一一份；导入单向吃入、导出单向吐出，不存在"同步回 assets/"。
 2. **图谱 = 一堆 md 文件**（YAML frontmatter + 正文；正文内以 **markdown 链接** / `[[ID]]` 占位承载对象间关系，对齐已有 assets/ 约定）。
 3. **导入/导出 = bundle（zip）**；bundle **不需要 manifest**，平台按每个 md 的 frontmatter 自动分析归类。
 4. **单人优先**，API/存储/数据结构按日后可加登录与多人并发设计（留扣子）。
@@ -78,8 +78,8 @@
 │  ⑤ 读 API (S3)   单对象/单跳(BFS)/列表/子图/raw md/统计        │
 │  ④ 内存索引层    md解析→对象/边图→邻接表，导入时全量建          │
 │  ③ 通用模型+解析层 (S2)   类型注册表 + 归类器 + 边解析插件管线   │
-│  ② 存储层        每图谱=一个托管md目录(纯文件系统,沿用assets约定)│
-│  ① 资产包格式层 (S1)   bundle=zip(md),导入自动归类,唯一解耦边界 │
+│  ② 存储层        唯一一份统一资产库(纯文件系统,沿用assets约定,多上传累积)│
+│  ① 资产包格式层 (S1)   bundle=zip(md),导入自动归类合并,唯一解耦边界 │
 ├─────────────────────────────────────────────────────────────┤
 │  〔预留二期〕S4写API/编辑 · S5版本 · S6评审回路+Agent  接在②之上 │
 └─────────────────────────────────────────────────────────────┘
@@ -95,7 +95,7 @@
 
 ### 5.1 bundle 是什么
 
-bundle = **一个 zip，里面就是一堆 md 文件**（每个对象一个 md）。**不需要 manifest**。平台读取每个 md 的 frontmatter `id`/`type`，自动分析归类到标准资产目录（§5.4）。
+bundle = **一个 zip，里面就是一堆 md 文件**（每个对象一个 md）。**不需要 manifest**。平台读取每个 md 的 frontmatter `id`/`type`，自动分析归类，**合并进平台唯一的统一资产库**（§5.4）。多次上传累积：同 id 的对象后传覆盖先传（=更新）。
 
 zip 内文件可以是任意原始排布（平铺、旧目录、混合）——平台**不关心源文件名/源路径，只认 frontmatter**，导入时统一归一化重写到标准资产目录。
 
@@ -150,17 +150,16 @@ version: 20.15.2
 
 1. 上传 zip → 解包到临时区。
 2. **先**扫描 bundle 内 `types/`（若有）合并进注册表，**再**逐个 md：解析 frontmatter；须有 `id`+`type`，且 `type` 在合并后的注册表。
-3. 按 §5.4 规则**派生标准路径 + 文件名**，归一化写入工作区 `<data>/graphs/{graph_id}/`（覆盖源文件名/源路径）。同 bundle 内若多个 md 归一化后撞同一路径（重复 id/semantic）→ 告警 + 后者覆盖前者，记入校验报告。
+3. 按 §5.4 规则**派生标准路径 + 文件名**，归一化写入**统一资产库** `<data>/assets/`（覆盖源文件名/源路径）。与库中已有对象同 id（同路径）→ **后传覆盖先传 = 更新**，记为 `updated`；新对象记为 `added`。同 bundle 内若多个 md 归一化后撞同一路径（重复 id/semantic）→ 告警 + 后者覆盖前者。
 4. 非 object md（无 id）→ 按 evidence 约定放置，不索引。
-5. 平台侧写 `_import.json`（导入时间、对象计数、归类告警、未解析的悬空链接）——**这是平台自管记录，不是 bundle 的 manifest**。
-6. 全量解析建内存索引。
+5. 追加写**上传记录**（append-only：时间、added/updated 计数、归类告警、悬空链接）——只记"传了什么"，资产本身是统一的一份。
+6. 增量重建受影响对象的索引（或全量重建）。
 7. 失败策略：md 缺 `id`/`type` 或 `type` 未注册 → 该文件记入校验报告并跳过（不阻塞整包其它对象）；整包无任何有效对象 → 拒绝导入。
-8. 工作区重名：`graph_id` 冲突默认**拒绝 + 冲突提示**；`?force=true` 覆盖（覆盖前自动导出快照到 `<data>/_backups/{gid}/{timestamp}.zip`，保留最近 N 份可配置清理）。
 
 ### 5.6 导出流程
 
-1. 选定工作区 `{gid}`。
-2. 把工作区目录（已归一化的标准资产目录）打 zip 流式下载。
+1. 导出**统一资产库**（可选过滤：`?nf=&version=&domain=&scenario=` 只导切片；不传 = 全量）。
+2. 把命中目录（已归一化的标准资产目录）打 zip 流式下载。
 3. 无损：导出 = 目录快照，不改任何 md。
 4. 导出的 zip 可被本平台再次导入还原（往返一致）。
 
@@ -183,7 +182,7 @@ Object = {
   frontmatter:  dict          # 原始 YAML（除 id 外透传）
   body_md:      str           # 正文（去 frontmatter）
   raw_md:       str           # 原始全文（API /md）
-  source_path:  str           # 工作区内归一化相对路径
+  source_path:  str           # 资产库内归一化相对路径
 }
 ```
 
@@ -269,51 +268,49 @@ edge_resolvers: [edge_md_links]
 ### 7.1 目录布局（平台内部，沿用已有 assets/ 约定）
 
 ```
-<data>/graphs/
-  {graph_id}/                       # 一个工作区 = 一份导入的图谱
-    command/{nf}/{version}/{Type}@{semantic}.md        # NF隔离类
-    configobject/{nf}/{version}/{Type}@{semantic}.md
-    feature/{nf}/{version}/{Type}@{semantic}.md
-    license/{nf}/{version}/{Type}@{semantic}.md
-    task/{nf}/{version}/{Type}@{semantic}.md
-    business/{domain}/BusinessDomain@{domain}.md
-    business/{domain}/{scenario}/NetworkScenario@{scenario}.md
-    business/{domain}/{scenario}/ConfigurationSolution@{semantic}.md
-    evidence/...                                        # 非对象（溯源）
-    _import.json                   # 平台侧导入记录（非 bundle manifest）
-    _index/                        # (可选) 解析索引缓存，可从 md 重建
+<data>/assets/                       # 唯一统一资产库（多次上传累积合并）
+  command/{nf}/{version}/{Type}@{semantic}.md        # NF隔离类
+  configobject/{nf}/{version}/{Type}@{semantic}.md
+  feature/{nf}/{version}/{Type}@{semantic}.md
+  license/{nf}/{version}/{Type}@{semantic}.md
+  task/{nf}/{version}/{Type}@{semantic}.md
+  business/{domain}/BusinessDomain@{domain}.md
+  business/{domain}/{scenario}/NetworkScenario@{scenario}.md
+  business/{domain}/{scenario}/ConfigurationSolution@{semantic}.md
+  evidence/...                                        # 非对象（溯源）
+  _imports.log                     # append-only 上传记录
+  _index/                          # (可选) 解析索引缓存，可从 md 重建
 ```
 
 - `<data>` 由配置指定（默认 `./platform-data/`，平台自管，与仓库 assets/ 无关）。
-- 目录由导入归类（§5.4）自动构建；层目录全小写。
+- **一份资产库**，多次上传按 §5.4 归类累积进同一目录树；层目录全小写。
 
 ### 7.2 内存索引（启动/导入时全量建）
 
-- 遍历工作区所有 md → 解析为 Object → 运行边解析管线 → 产出 Edge 列表。
+- 遍历资产库所有 md → 解析为 Object → 运行边解析管线 → 产出 Edge 列表。
 - 建邻接表：`out_edges[from] = [Edge]`、`in_edges[to] = [Edge]`（反链）。
 - 索引结构：`objects_by_id`、`objects_by_type`、`out_edges`、`in_edges`。
 - v1 只读：导入时全量重建即可，无需增量（二期编辑再考虑增量）。
-- 规模：单网元 ~4600 命令 + ~2200 配置对象，全图谱万级对象，内存索引 + 启动全量解析可接受（参考 platform-next 实测）。
-- 多图谱托管：索引按 `{gid}` 隔离；导入即建（或首次访问 lazy 建），互不影响。
+- 规模：单网元 ~4600 命令 + ~2200 配置对象，全库万级对象，内存索引 + 启动全量解析可接受（参考 platform-next 实测）。
+- 统一资产库：单一索引；上传后增量或全量重建。
 
 ---
 
 ## 8. 读 API — S3
 
-读端点全部 `GET`、只读；另含两个工作区管理端点（`import` 上传 / `delete` 删除）。前缀 `/api/v1`。`gid` = 图谱工作区标识。
+读端点全部 `GET`、只读；另含上传端点（`import`）。前缀 `/api/v1`。**无 `gid`**——平台只有一份统一资产库，所有查询直接打这份库。
 
 | 端点 | 职责 | 关键参数/响应 |
 |---|---|---|
-| `GET /graphs` | 图谱列表 | `[{graph_id, graph_name, object_counts, imported_at}]` |
-| `POST /graphs/import` | 导入 bundle | multipart zip + `graph_id`(可选) → `{graph_id, warnings[], object_counts}` |
-| `DELETE /graphs/{gid}` | 删除工作区 | 管理动作（v1 提供） |
-| `GET /graphs/{gid}/export` | 导出 bundle | 流式 zip 下载 |
-| `GET /graphs/{gid}/stats` | 统计 | `{object_counts_by_type, edge_count, ...}` |
-| `GET /graphs/{gid}/objects` | 列对象 | `?type=&q=&page=&size=` → `[{id, type, nf|domain, name}]` |
-| `GET /graphs/{gid}/objects/{id}` | **单对象** | `{...Object, out_edges[]}` |
-| `GET /graphs/{gid}/objects/{id}/neighbors` | **单跳** | `?hops=1`（默认1）→ `{center, out[], in[]}` |
-| `GET /graphs/{gid}/objects/{id}/md` | 原始 md | `text/markdown`（`raw_md`） |
-| `GET /graphs/{gid}/subgraph` | N 跳子图 | `?center=&hops=&type=` → `{nodes[], edges[]}` |
+| `POST /import` | 上传 bundle，合并进资产库 | multipart zip → `{added, updated, warnings[], counts}` |
+| `GET /imports` | 上传记录（可选） | `[{time, added, updated, warnings_n}]` |
+| `GET /export` | 导出资产库 | `?nf=&version=&domain=&scenario=`（可选过滤）→ 流式 zip |
+| `GET /stats` | 统计 | `{object_counts_by_type, edge_count, ...}` |
+| `GET /objects` | 列对象 | `?type=&q=&nf=&version=&domain=&page=&size=` → `[{id, type, nf|domain, name}]` |
+| `GET /objects/{id}` | **单对象** | `{...Object, out_edges[]}` |
+| `GET /objects/{id}/neighbors` | **单跳** | `?hops=1`（默认1）→ `{center, out[], in[]}` |
+| `GET /objects/{id}/md` | 原始 md | `text/markdown`（`raw_md`） |
+| `GET /subgraph` | N 跳子图 | `?center=&hops=&type=` → `{nodes[], edges[]}` |
 
 ### 8.1 对象 id 编码（URL）
 
@@ -322,7 +319,6 @@ edge_resolvers: [edge_md_links]
 
 ### 8.2 错误处理
 
-- 图谱不存在 → 404。
 - 对象不存在 → 404 + 提示最近匹配（可选）。
 - 导入校验失败 → 400 + 校验报告（缺字段/类型未注册的 md 清单）。
 
@@ -353,8 +349,8 @@ edge_resolvers: [edge_md_links]
 - **左栏 对象索引**：按 `type` 分组折叠树，每组显示计数；顶部搜索框（`/objects?q=` 子串匹配 id/name）。点击对象 → 中栏+右栏联动。
 - **中栏 md**：渲染选中对象的 `raw_md`（markdown-it + DOMPurify，复用 platform-next）。顶部显示 type/nf/version（或 domain/scenario）badge。只读，无编辑器（二期）。
 - **右栏 节点图**：vis-network 渲染单跳邻居（`/neighbors?hops=1`），中心=当前对象，邻居可点击 → 切换中心对象（联动中栏）。下方"邻居清单"列出 relation + 目标，可点击跳转。
-- **顶栏**：图谱切换（`/graphs` 下拉）+ 导入/导出按钮。
-- URL 驱动：`/g/{gid}/o/{id}` 可分享/刷新定位。
+- **顶栏**：导入/导出按钮 + 统计概览（无图谱切换，只有一份统一资产库）。
+- URL 驱动：`/o/{id}` 可分享/刷新定位。
 
 ### 9.3 不做（v1）
 
@@ -401,7 +397,7 @@ v1 需要一个真实样例验证。鉴于平台与 `assets/` 解耦，样例 bu
 
 ## 14. 验收标准（v1）
 
-1. 能导入一个符合 §5 格式的样例 bundle（md zip，无 manifest），归类正确，工作区落地为标准资产目录。
+1. 能导入一个符合 §5 格式的样例 bundle（md zip，无 manifest），归类正确，**合并进统一资产库**为标准资产目录。
 2. `单对象` API 返回正确 frontmatter+正文+出向边；`单跳` API 返回正确邻居（含反链）。
 3. 三栏前端：左索引按类型分组+搜索可用；点对象联动中栏 md + 右栏节点图；点邻居可游走。
 4. 导出 bundle 后再导入，对象/边与原一致（无损往返）。
