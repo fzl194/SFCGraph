@@ -90,3 +90,41 @@ def import_bundle(zip_bytes: bytes, store: Store, registry: Registry) -> BundleR
                 res.added += 1
             store.write(target, text)
     return res
+
+
+def export_bundle(store: Store,
+                  nf: str | None = None,
+                  version: str | None = None,
+                  domain: str | None = None,
+                  scenario: str | None = None) -> bytes:
+    """把统一资产库打成 zip 快照（spec §5.6）。
+
+    可选过滤参数（任一不传 = 不过滤；全不传 = 全量）：
+    - ``nf``      : NF 隔离类路径第二段（如 ``UDG``）。
+    - ``version`` : NF 隔离类路径第三段（如 ``20.15.2``）；只对 Layer != Business 生效。
+    - ``domain``  : Business 路径第二段。
+    - ``scenario``: Business 路径第三段。
+
+    导出无损（目录快照，不改 md）；导出 zip 可再次导入还原（往返一致）。
+    """
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+        for rel in store.list_md():
+            parts = rel.split("/")
+            layer = parts[0] if parts else ""
+            if nf:
+                # NF 隔离类路径形如 Layer/nf/version/...；至少 3 段
+                if layer == "Business" or len(parts) < 3 or parts[1] != nf:
+                    continue
+            if version:
+                # version 过滤只对 NF 隔离类路径有意义（parts[2] == version）
+                if layer == "Business" or len(parts) < 3 or parts[2] != version:
+                    continue
+            if domain:
+                if layer != "Business" or len(parts) < 2 or parts[1] != domain:
+                    continue
+            if scenario:
+                if layer != "Business" or len(parts) < 3 or parts[2] != scenario:
+                    continue
+            z.writestr(rel, store.read(rel))
+    return buf.getvalue()

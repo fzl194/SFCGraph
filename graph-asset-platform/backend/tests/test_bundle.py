@@ -1,7 +1,7 @@
 import io
 import zipfile
 
-from app.bundle import import_bundle, BundleResult
+from app.bundle import import_bundle, export_bundle, BundleResult
 from app.store import Store
 from app.registry import Registry
 
@@ -144,3 +144,160 @@ def test_import_non_md_files_ignored(tmp_data_dir):
     res = import_bundle(_zip({"readme.txt": "hi", "a.md": CMD}), store, Registry.load_default())
     assert res.added == 1
     assert len(store.list_md()) == 1
+
+
+# ---------- 导出 ----------
+
+def _names(zbytes: bytes) -> list:
+    with zipfile.ZipFile(io.BytesIO(zbytes)) as z:
+        return z.namelist()
+
+
+def test_export_roundtrip(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD, "b.md": CFG}), store, Registry.load_default())
+    zbytes = export_bundle(store)
+    names = _names(zbytes)
+    assert "Command/UDG/20.15.2/UDG@MMLCommand@ADD URR.md" in names
+    assert "ConfigObject/UDG/20.15.2/UDG@ConfigObject@URR.md" in names
+
+
+def test_export_full_matches_store(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD, "b.md": CFG}), store, Registry.load_default())
+    zbytes = export_bundle(store)  # 无过滤 = 全量
+    names = set(_names(zbytes))
+    assert names == set(store.list_md())
+
+
+def test_export_filter_nf(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD}), store, Registry.load_default())  # UDG
+    unc_cmd = (
+        "---\n"
+        "id: UNC@MMLCommand@SOMETHING\n"
+        "type: MMLCommand\n"
+        "nf: UNC\n"
+        "version: 20.15.2\n"
+        "---\n# x\n"
+    )
+    import_bundle(_zip({"u.md": unc_cmd}), store, Registry.load_default())  # UNC
+    # 只导 UNC → UDG 不在结果
+    zbytes = export_bundle(store, nf="UNC")
+    names = _names(zbytes)
+    assert all("UDG" not in n for n in names)
+    assert any("UNC" in n for n in names)
+
+
+def test_export_filter_version(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD}), store, Registry.load_default())  # 20.15.2
+    cmd_new = CMD.replace("version: 20.15.2", "version: 20.16.0")
+    import_bundle(_zip({"b.md": cmd_new}), store, Registry.load_default())  # 20.16.0
+    zbytes = export_bundle(store, version="20.15.2")
+    names = _names(zbytes)
+    assert all("20.16.0" not in n for n in names)
+    assert any("20.15.2" in n for n in names)
+
+
+def test_export_filter_domain(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    bd_md = (
+        "---\n"
+        "id: BusinessDomain@demo\n"
+        "type: BusinessDomain\n"
+        "domain: demo\n"
+        "---\n# demo\n"
+    )
+    bd_other = (
+        "---\n"
+        "id: BusinessDomain@other\n"
+        "type: BusinessDomain\n"
+        "domain: other\n"
+        "---\n# other\n"
+    )
+    import_bundle(_zip({"d1.md": bd_md, "d2.md": bd_other, "c.md": CMD}),
+                  store, Registry.load_default())
+    zbytes = export_bundle(store, domain="demo")
+    names = _names(zbytes)
+    # 只剩 demo 业务域对象；不含 other、不含 Command
+    assert any("BusinessDomain@demo.md" in n for n in names)
+    assert all("other" not in n for n in names)
+    assert all("Command" not in n for n in names)
+
+
+def test_export_filter_scenario(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    ns_md = (
+        "---\n"
+        "id: NetworkScenario@charging\n"
+        "type: NetworkScenario\n"
+        "domain: demo\n"
+        "scenario: charging\n"
+        "---\n# ns\n"
+    )
+    ns_other = (
+        "---\n"
+        "id: NetworkScenario@access\n"
+        "type: NetworkScenario\n"
+        "domain: demo\n"
+        "scenario: access\n"
+        "---\n# ns2\n"
+    )
+    import_bundle(_zip({"n1.md": ns_md, "n2.md": ns_other}), store, Registry.load_default())
+    zbytes = export_bundle(store, scenario="charging")
+    names = _names(zbytes)
+    assert any("NetworkScenario@charging.md" in n for n in names)
+    assert all("access" not in n for n in names)
+
+
+def test_export_combined_nf_version(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD}), store, Registry.load_default())  # UDG 20.15.2
+    cmd_new = CMD.replace("version: 20.15.2", "version: 20.16.0")
+    import_bundle(_zip({"b.md": cmd_new}), store, Registry.load_default())  # UDG 20.16.0
+    zbytes = export_bundle(store, nf="UDG", version="20.16.0")
+    names = _names(zbytes)
+    assert len(names) == 1
+    assert "20.16.0" in names[0]
+
+
+def test_export_empty_store(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    zbytes = export_bundle(store)
+    assert _names(zbytes) == []
+
+
+def test_export_no_match_returns_empty_zip(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD}), store, Registry.load_default())  # UDG
+    zbytes = export_bundle(store, nf="MISSING")
+    assert _names(zbytes) == []
+
+
+def test_export_preserves_content(tmp_data_dir):
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD}), store, Registry.load_default())
+    zbytes = export_bundle(store)
+    with zipfile.ZipFile(io.BytesIO(zbytes)) as z:
+        content = z.read("Command/UDG/20.15.2/UDG@MMLCommand@ADD URR.md").decode("utf-8")
+    assert "ADD URR" in content
+    assert content == CMD
+
+
+def test_export_reimportable_roundtrip(tmp_data_dir):
+    # 导出 zip 可以被本平台再次导入还原（spec §5.6.4 往返一致）
+    store = Store(tmp_data_dir)
+    import_bundle(_zip({"a.md": CMD, "b.md": CFG}), store, Registry.load_default())
+    zbytes = export_bundle(store)
+    # 把资产库清空再导入导出的 zip
+    import shutil
+    for p in tmp_data_dir.iterdir():
+        if p.is_file():
+            p.unlink()
+        else:
+            shutil.rmtree(p)
+    res = import_bundle(zbytes, store, Registry.load_default())
+    assert res.added == 2
+    assert store.exists("Command/UDG/20.15.2/UDG@MMLCommand@ADD URR.md")
+    assert store.exists("ConfigObject/UDG/20.15.2/UDG@ConfigObject@URR.md")
