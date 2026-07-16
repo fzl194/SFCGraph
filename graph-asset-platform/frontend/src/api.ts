@@ -91,6 +91,25 @@ export interface Stats {
   versions_per_nf: Record<string, string[]>
 }
 
+// 懒加载目录树：path="" 为根；逐层下钻。total_files 用于"加载更多"分页。
+export interface BrowseResult {
+  path: string
+  dirs: string[]
+  files: { name: string; id: string }[]
+  total_files: number
+  offset: number
+  limit: number
+}
+
+export interface ImportHistoryItem {
+  timestamp: string
+  filename: string
+  added: number
+  updated: number
+  skipped: number
+  warnings: number
+}
+
 export interface ImportResult {
   added: number
   updated: number
@@ -140,6 +159,28 @@ export const exportUrl = (f: {
   domain?: string
   scenario?: string
 }): string => `${BASE}/export${qs(f)}`
+
+// 懒加载目录树（性能关键：替代旧的 listObjects 全量拉取）
+// path 形如 "" → "Command" → "Command/UDG" → "Command/UDG/20.15.2"
+export const browse = (p: {
+  path?: string
+  q?: string
+  limit?: number
+  offset?: number
+}): Promise<BrowseResult> => _req<BrowseResult>(`${BASE}/browse${qs(p)}`)
+
+export const importHistory = (): Promise<ImportHistoryItem[]> =>
+  _req<ImportHistoryItem[]>(`${BASE}/imports`)
+
+export const subgraph = (p: {
+  center: string
+  hops?: number
+  type?: string
+  version?: string
+}): Promise<{
+  nodes: { id: string; type?: string; label?: string }[]
+  edges: { source: string; target: string; relation: string }[]
+}> => _req(`${BASE}/subgraph${qs(p)}`)
 
 // 解析 404 detail（版本缺失时带 available_versions）
 export function availableVersionsFromError(e: unknown): string[] | null {
