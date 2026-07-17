@@ -1,71 +1,117 @@
 <template>
   <div class="browser-view">
-    <div class="placeholder">
-      <div class="ph-icon">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-          <circle cx="6" cy="7" r="2.2" stroke="currentColor" stroke-width="1.6" />
-          <circle cx="18" cy="7" r="2.2" stroke="currentColor" stroke-width="1.6" />
-          <circle cx="12" cy="17" r="2.2" stroke="currentColor" stroke-width="1.6" />
-          <path
-            d="M7.8 8.3 16.2 8.3 M7 8.7 10.8 15 M17 8.7 13.2 15"
-            stroke="currentColor"
-            stroke-width="1.4"
-            opacity="0.6"
-          />
-        </svg>
-      </div>
-      <div class="ph-title">图谱浏览（待 C3 实现）</div>
-      <div class="ph-sub">
-        当前激活层：<span class="mono">{{ activeLayer }}</span>
-      </div>
-    </div>
+    <Splitpanes class="browser-panes" @resize="onPaneResize">
+      <Pane :size="24" :min-size="16" :max-size="40">
+        <LayerNav />
+      </Pane>
+      <Pane :size="42" :min-size="24">
+        <MdPreview :object-id="selectedId" @navigate="onNavigate" />
+      </Pane>
+      <Pane :size="34" :min-size="18" :max-size="50">
+        <NeighborPane :object-id="selectedId" />
+      </Pane>
+    </Splitpanes>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { onMounted, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { Splitpanes, Pane } from 'splitpanes'
+import 'splitpanes/dist/splitpanes.css'
+import LayerNav from '../components/LayerNav.vue'
+import MdPreview from '../components/MdPreview.vue'
+import NeighborPane from '../components/NeighborPane.vue'
 import { useNav } from '../composables/useNav'
 
-const { state } = useNav()
-const activeLayer = computed(() => state.activeLayer)
+const { selectedId, state, syncTo } = useNav()
+const route = useRoute()
+const router = useRouter()
+
+// 跨栏跳转：中栏 md 点 wiki 链接 / 右栏点邻居 → syncTo（左栏切层+选择器+高亮，中右栏自动切）
+function onNavigate(id: string): void {
+  if (!id) return
+  void syncTo(id)
+}
+
+// splitpanes resize 仅触发 vis-network 重绘（通过 window resize 事件间接触发）
+// 这里留空占位，GraphCanvas 已监听 window resize；splitpanes 改尺寸会触发容器 resize
+function onPaneResize(): void {
+  window.dispatchEvent(new Event('resize'))
+}
+
+// ---- URL 同步 ?o={id}&version= ----
+// 挂载时：若有 ?o 则 syncTo（恢复分享链接 / 浏览器刷新）
+onMounted(() => {
+  const o = typeof route.query.o === 'string' ? route.query.o : ''
+  if (o) {
+    void syncTo(o)
+  }
+})
+
+// selectedId 变化 → router.replace 更新 ?o（避免污染历史，可前进后退）
+let suppressUrlUpdate = false
+watch(
+  selectedId,
+  (id) => {
+    if (suppressUrlUpdate) return
+    if (!id) return
+    const version = state.selectors[state.activeLayer].version || undefined
+    const query: Record<string, string> = { o: id }
+    if (version) query.version = version
+    // 仅当 query 真正变化时 replace
+    const cur = route.query
+    if (cur.o !== id || (cur.version ?? '') !== (version ?? '')) {
+      suppressUrlUpdate = true
+      router.replace({ query }).finally(() => {
+        suppressUrlUpdate = false
+      })
+    }
+  },
+)
 </script>
 
 <style scoped>
 .browser-view {
   height: 100%;
-  display: grid;
-  place-items: center;
-  padding: var(--space-8);
+  min-height: 0;
+  overflow: hidden;
 }
 
-.placeholder {
+/* splitpanes 主题适配（融入工程风） */
+.browser-panes {
+  height: 100%;
+}
+
+:deep(.splitpanes__splitter) {
+  background: var(--border);
+  position: relative;
+  flex-shrink: 0;
+}
+
+:deep(.splitpanes--vertical > .splitpanes__splitter) {
+  width: 5px;
+  cursor: col-resize;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+:deep(.splitpanes--vertical > .splitpanes__splitter::before) {
+  content: '';
+  position: absolute;
+  inset: 0 2px;
+  background: transparent;
+  border-radius: 2px;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+:deep(.splitpanes--vertical > .splitpanes__splitter:hover::before) {
+  background: var(--accent-ring);
+}
+
+:deep(.splitpanes__pane) {
+  background: var(--bg-elev);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-3);
-  text-align: center;
-  color: var(--text-muted);
-}
-
-.ph-icon {
-  color: var(--text-faint);
-  opacity: 0.7;
-}
-
-.ph-title {
-  font-family: var(--display);
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.ph-sub {
-  font-size: 13px;
-  color: var(--text-faint);
-}
-
-.mono {
-  font-family: var(--mono);
-  color: var(--accent);
 }
 </style>

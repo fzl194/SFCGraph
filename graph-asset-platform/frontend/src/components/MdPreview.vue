@@ -47,9 +47,6 @@
               :value="v"
             />
           </el-select>
-          <el-button size="small" :icon="GraphIcon" @click="goGraph">
-            在图谱中查看
-          </el-button>
         </div>
       </div>
 
@@ -117,15 +114,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, h, ref, watch } from 'vue'
-import { useRouter } from 'vue-router'
+import { computed, ref, watch } from 'vue'
 import MarkdownIt from 'markdown-it'
 import DOMPurify from 'dompurify'
 import { getObject, availableVersionsFromError, type Edge, type ObjectDetail } from '../api'
 
 const props = defineProps<{ objectId: string | null }>()
 const emit = defineEmits<{ (e: 'navigate', id: string): void }>()
-const router = useRouter()
 
 const md = new MarkdownIt({
   // html:true 让源 md 单元格里的 <br>（命令参数表大量使用）渲染成换行；
@@ -218,23 +213,6 @@ function formatValue(v: unknown): { text: string; isMulti: boolean } {
   return { text: JSON.stringify(v, null, 2), isMulti: true }
 }
 
-const GraphIcon = () =>
-  h(
-    'svg',
-    { width: '14', height: '14', viewBox: '0 0 24 24', fill: 'none' },
-    [
-      h('circle', { cx: '6', cy: '7', r: '2', stroke: 'currentColor', 'stroke-width': '1.7' }),
-      h('circle', { cx: '18', cy: '7', r: '2', stroke: 'currentColor', 'stroke-width': '1.7' }),
-      h('circle', { cx: '12', cy: '17', r: '2', stroke: 'currentColor', 'stroke-width': '1.7' }),
-      h('path', {
-        d: 'M7.8 8.3 16.2 8.3 M7 8.7 10.8 15 M17 8.7 13.2 15',
-        stroke: 'currentColor',
-        'stroke-width': '1.4',
-        opacity: '0.6',
-      }),
-    ],
-  )
-
 // 把 body_md 里的内联 [[X]] 预处理成可点击占位
 function escapeHtml(s: string): string {
   return s
@@ -304,14 +282,6 @@ function onBodyClick(ev: MouseEvent): void {
 
 function onVersionChange(v: string): void {
   if (props.objectId) load(props.objectId, v)
-}
-
-function goGraph(): void {
-  if (!props.objectId) return
-  router.push({
-    path: '/graph',
-    query: { o: props.objectId, version: selectedVersion.value || undefined },
-  })
 }
 
 watch(
