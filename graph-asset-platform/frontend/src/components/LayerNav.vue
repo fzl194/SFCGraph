@@ -282,8 +282,10 @@ async function loadMore(): Promise<void> {
   await rebuildAccumulated()
 }
 
-function onRowClick(row: ObjectRow): void {
-  selectedId.value = row.id
+function onRowClick(params: { row?: ObjectRow } | ObjectRow): void {
+  // el-table-v2 的 row-click 回调参数是 { row, rowIndex, event }（兼容个别版本直接传 row）
+  const row = (params as { row?: ObjectRow }).row ?? (params as ObjectRow)
+  if (row && row.id) selectedId.value = row.id
 }
 
 // ---------- 高亮 + 滚动到选中行 ----------
