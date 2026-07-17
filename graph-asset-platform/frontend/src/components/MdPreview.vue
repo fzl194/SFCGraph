@@ -136,16 +136,6 @@ const md = new MarkdownIt({
   typographer: false,
 })
 
-// 规范化源数据表格：表头行与分隔符行（| --- | ---）之间被空行隔断时，
-// markdown-it / GFM 不识别为表格（要求两行紧邻）。文档数据普遍有此变体，
-// 在渲染前把"以 | 开头行 + 空行 + | --- 开头分隔行"中的空行去掉。
-function normalizeTables(src: string): string {
-  return src.replace(
-    /(^|\n)(\|[^\n]+\|)[ \t]*\n[ \t]*\n[ \t]*(\|[ \t]*:?-{3,}:?[ \t]*\|[^\n]*)/g,
-    (_m, lead, header, sep) => `${lead}${header}\n${sep}`,
-  )
-}
-
 // 允许 a.wiki-link / span.wiki-link 上的 data-wiki-id 属性通过净化
 DOMPurify.addHook('uponSanitizeAttribute', (_node, data) => {
   if (
@@ -265,11 +255,9 @@ async function load(id: string, ver?: string): Promise<void> {
     const obj = await getObject(id, ver)
     detail.value = obj
     selectedVersion.value = obj.version ?? ver ?? ''
-    // 去残留 \r（源 md 的 CRLF / \r\r\n）：markdown-it 会把 \r\r\n 错当 \n\n，
-    // 在表头与分隔符间插入空行导致 GFM 表格整表判废。后端已归一化，这里兜底。
+    // body_md 已由后端 md_parser 归一化换行 + 折叠表格内部空行（纯正文，干净 LF）。
     const body = (obj.body_md || '').replace(/\r/g, '')
-    // 先规范化表格空行变体，再 markdown-it 渲染
-    const rendered = md.render(normalizeTables(body))
+    const rendered = md.render(body)
     // 对渲染后的 html 做内联 wikilink 替换为可点击 a
     const finalHtml = inlineLinksIntoHtml(rendered)
     html.value = DOMPurify.sanitize(finalHtml, {

@@ -18,8 +18,17 @@ from .service import get_service
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # 启动预热：构造单例 → 建索引（assets 目录不存在时 Store 会 mkdir）
-    get_service()
+    # 启动预热：构造单例 → 建索引（assets 目录不存在时 Store 会 mkdir）。
+    # 4585 个对象首次建索引约 10s，给进度日志避免"看起来卡住"。
+    import time
+    t0 = time.time()
+    print("[startup] 正在加载资产库并构建索引（首次约 10s，请稍候）…", flush=True)
+    svc = get_service()
+    print(
+        f"[startup] 索引就绪：{len(svc.index.nodes)} 个对象，"
+        f"耗时 {time.time() - t0:.1f}s → http://127.0.0.1:8000/",
+        flush=True,
+    )
     yield
 
 
