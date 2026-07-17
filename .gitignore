@@ -1,6 +1,9 @@
 # 产品文档原始数据（体积大）
 output/
 
+# 三层图谱构建产物（构建输出，不入 git；由 三层图谱构建规范/command/scripts/build_all.py 生成）
+三层图谱资产/
+
 # SKILL特性文档（体积大）
 business-graph/SKILL/
 business-graph/PLMN/
