@@ -181,8 +181,10 @@ async function syncTo(id: string): Promise<void> {
     sel.q = ''
     state.pages[layer] = 1
 
-    selectedId.value = id
     await loadList()
+    // 选 id 放在 loadList 之后：accumulatedRows(computed) 此时已含目标行，
+    // selectedId watch 的高亮+scrollToRow 才能定位到它。
+    selectedId.value = id
   } catch (e: unknown) {
     loadError.value = e instanceof Error ? e.message : String(e)
   }

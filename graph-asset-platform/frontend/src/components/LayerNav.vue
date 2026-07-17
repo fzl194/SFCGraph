@@ -200,35 +200,31 @@ function unique<T>(arr: T[]): T[] {
   return Array.from(new Set(arr))
 }
 
-// ---------- 累积多页行（给虚拟表） ----------
+// ---------- 累积多页行（响应式 computed：从 listCache 派生） ----------
 /**
- * useNav.loadList() 是单页缓存（cacheKey 含 page）。
- * 这里把当前层、当前选择器下 page=1..N 的缓存行拼成一个累积数组给虚拟表，
- * 不额外请求——只在 loadList 后重新扫描缓存。
+ * accumulatedRows 是 computed，自动跟随 useNav 状态变化（activeLayer / selectors /
+ * pages / listCache）。这样跨栏跳转（syncTo 改选择器+loadList 写缓存）后，左栏列表
+ * 即时重建并包含跳转目标，高亮+滚动才能定位。不再需要手动 rebuildAccumulated。
  */
-const accumulatedRows = ref<ObjectRow[]>([])
-/** 当前层选择器是否有过任何请求（用于区分"空结果" vs "未加载"） */
 const currentPage = computed(() => state.pages[state.activeLayer])
-
-async function rebuildAccumulated(): Promise<void> {
+const accumulatedRows = computed<ObjectRow[]>(() => {
   const layer = state.activeLayer
   const s = state.selectors[layer]
-  // 扫描 page=1..当前页 的缓存，拼起来
   const rows: ObjectRow[] = []
+  const seen = new Set<string>()
   for (let p = 1; p <= state.pages[layer]; p++) {
     const key = cacheKeyOf(layer, s, p)
     const cached = state.listCache.get(key)
-    if (cached) rows.push(...cached.rows)
-    else break
+    if (!cached) break
+    for (const r of cached.rows) {
+      if (!seen.has(r.id)) {
+        seen.add(r.id)
+        rows.push(r)
+      }
+    }
   }
-  // 去重（切层/选择器变化时缓存可能短暂重叠）
-  const seen = new Set<string>()
-  accumulatedRows.value = rows.filter((r) => {
-    if (seen.has(r.id)) return false
-    seen.add(r.id)
-    return true
-  })
-}
+  return rows
+})
 
 // 镜像 useNav.cacheKey（保持 key 一致）
 function cacheKeyOf(layer: UiLayer, s: typeof sel.value, page: number): string {
@@ -260,9 +256,8 @@ function onNfChange(): void {
 }
 
 function onSelectorChange(): void {
-  // 选择器变化 → 回到第 1 页重新加载
+  // 选择器变化 → 回到第 1 页重新加载（accumulatedRows 是 computed，自动跟随）
   state.pages[state.activeLayer] = 1
-  accumulatedRows.value = []
   void ensureLoaded()
 }
 
@@ -273,13 +268,11 @@ async function ensureLoaded(): Promise<void> {
   if (!state.listCache.has(key)) {
     await loadList()
   }
-  await rebuildAccumulated()
 }
 
 async function loadMore(): Promise<void> {
   state.pages[state.activeLayer] += 1
   await loadList()
-  await rebuildAccumulated()
 }
 
 function onRowClick(params: { row?: ObjectRow } | ObjectRow): void {
