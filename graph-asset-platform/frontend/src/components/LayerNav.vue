@@ -318,8 +318,19 @@ const columns: Column[] = [
     dataKey: 'id',
     width: 0, // 用 flex 占满（见下 flexGrow）
     flexGrow: 1,
-    cellRenderer: ({ cellData }: { cellData: string }) =>
-      h('span', { class: 'cell-id mono', title: cellData }, cellData),
+    cellRenderer: ({ cellData, rowData }: { cellData: string; rowData: ObjectRow }) =>
+      h(
+        'span',
+        {
+          class: 'cell-id mono',
+          title: cellData,
+          // 直接在单元格 DOM 上挂点击，不依赖 el-table-v2 的 row-click 事件（更可靠）
+          onClick: () => {
+            if (rowData?.id) selectedId.value = rowData.id
+          },
+        },
+        cellData,
+      ),
   },
   {
     key: 'type',
@@ -327,10 +338,17 @@ const columns: Column[] = [
     dataKey: 'type',
     width: 96,
     align: 'center',
-    cellRenderer: ({ cellData }: { cellData: string }) =>
+    cellRenderer: ({ cellData, rowData }: { cellData: string; rowData: ObjectRow }) =>
       h(
         ElTag,
-        { size: 'small', effect: 'plain', class: 'cell-type' },
+        {
+          size: 'small',
+          effect: 'plain',
+          class: 'cell-type',
+          onClick: () => {
+            if (rowData?.id) selectedId.value = rowData.id
+          },
+        },
         () => cellData,
       ),
   },
