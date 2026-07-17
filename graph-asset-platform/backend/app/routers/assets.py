@@ -105,6 +105,82 @@ def stats():
     }
 
 
+# 业务层类型（scope=cross, layer=Business）—— 概览图以这些为根节点。
+_BUSINESS_TYPES = ("BusinessDomain", "NetworkScenario", "ConfigurationSolution")
+
+
+@router.get("/overview")
+def overview():
+    """业务层概览图（GraphView 默认渲染，无需指定对象）。
+
+    优先返回业务树：nodes = 所有 scope=cross 的对象（BD/NS/CS），
+    edges = 这些对象的出向边（构成 NS→CS / BD→NS 等业务结构）。
+    业务层为空时退化为层摘要：nodes = 各 layer（带 object_counts），无 edges。
+    payload 与 subgraph 同形：``{nodes:[{id,type,label}], edges:[{from,relation,to}]}``。
+    """
+    svc = get_service()
+    idx = svc.index
+
+    business_nodes = []
+    seen_ids = set()
+    for (id_, _ver), obj in idx.nodes.items():
+        if obj.scope != "cross":
+            continue
+        if id_ in seen_ids:
+            continue
+        seen_ids.add(id_)
+        label = _node_label(obj.frontmatter, id_)
+        business_nodes.append({"id": id_, "type": obj.type, "label": label})
+
+    if business_nodes:
+        edges = []
+        for (id_, _ver), obj in idx.nodes.items():
+            if obj.scope != "cross":
+                continue
+            for e in idx.out_edges(id_, obj.version):
+                edges.append({
+                    "from": e.from_id,
+                    "relation": e.relation or "",
+                    "to": e.to,
+                })
+        return {"nodes": business_nodes, "edges": _dedup_edges(edges)}
+
+    # 退化：业务层为空 → 返回层摘要
+    layer_counts: Counter = Counter()
+    for obj in idx.nodes.values():
+        if obj.layer:
+            layer_counts[obj.layer] += 1
+    layer_nodes = [
+        {"id": layer, "type": "Layer", "label": layer,
+         "object_count": count}
+        for layer, count in sorted(layer_counts.items())
+    ]
+    return {"nodes": layer_nodes, "edges": []}
+
+
+def _node_label(fm: dict, fallback_id: str) -> str:
+    """优先用 name_zh/name frontmatter 字段；否则用 id 末段。"""
+    for key in ("name_zh", "name", "title"):
+        v = fm.get(key)
+        if isinstance(v, str) and v.strip():
+            return v.strip()
+    parts = fallback_id.split("@")
+    return parts[-1] if parts else fallback_id
+
+
+def _dedup_edges(edges: list) -> list:
+    """同 from+relation+to 去重（多版本/重复索引）。"""
+    seen = set()
+    out = []
+    for e in edges:
+        k = (e["from"], e["relation"], e["to"])
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(e)
+    return out
+
+
 @router.get("/browse")
 def browse(path: str = "", q: str | None = None, limit: int = 200, offset: int = 0):
     """按目录懒加载资产树（治前端性能：展开某层只读该层子项，不再一次拉全量）。

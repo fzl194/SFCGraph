@@ -18,9 +18,10 @@ interface FocusPayload {
   out: Edge[]
   in: Edge[]
   version?: string
+  isOverview?: boolean
 }
 
-const props = defineProps<{ focus: FocusPayload | null }>()
+const props = defineProps<{ focus: FocusPayload | null; isOverview?: boolean }>()
 const emit = defineEmits<{
   (e: 'nodeClick', id: string): void
 }>()
@@ -118,51 +119,91 @@ function render(payload: FocusPayload): void {
   nodes.clear()
   edges.clear()
 
-  const centerId = payload.centerId
-  nodes.add({
-    id: centerId,
-    label: shortLabel(centerId),
-    group: 'center',
-    title: centerId,
-  })
+  const isOverview = payload.isOverview || props.isOverview
 
-  const seen = new Set<string>([centerId])
+  const seen = new Set<string>()
   const edgeList: { id: string; from: string; to: string; label?: string }[] = []
 
+  // 概览模式：不画 fake center，所有业务节点平铺为 related。
+  // 孤立节点已在 GraphView 通过 fake center 的 contains 边带出，
+  // 这里遇到 fake center id 跳过加中心节点，让边把孤立节点带进图。
+  if (!isOverview) {
+    const centerId = payload.centerId
+    nodes.add({
+      id: centerId,
+      label: shortLabel(centerId),
+      group: 'center',
+      title: centerId,
+    })
+    seen.add(centerId)
+  }
+
   for (const e of payload.out) {
-    if (!seen.has(e.to)) {
-      seen.add(e.to)
-      nodes.add({ id: e.to, label: shortLabel(e.to), group: 'related', title: e.to })
+    if (!isOverview && e.from !== payload.centerId) {
+      // 邻居也可能作为 from 出现在 out 里（概览图），非概览时跳过非中心 from
+      if (!seen.has(e.from)) {
+        seen.add(e.from)
+        nodes.add({ id: e.from, label: shortLabel(e.from), group: 'related', title: e.from })
+      }
     }
+    if (!isOverview && e.from === payload.centerId) {
+      if (!seen.has(e.to)) {
+        seen.add(e.to)
+        nodes.add({ id: e.to, label: shortLabel(e.to), group: 'related', title: e.to })
+      }
+    } else if (isOverview) {
+      if (!seen.has(e.from)) {
+        seen.add(e.from)
+        nodes.add({ id: e.from, label: shortLabel(e.from), group: 'related', title: e.from })
+      }
+      if (!seen.has(e.to)) {
+        seen.add(e.to)
+        nodes.add({ id: e.to, label: shortLabel(e.to), group: 'related', title: e.to })
+      }
+    }
+    // 概览图的 contains 假边（fake center → 孤立节点）不显示标签
+    const lbl = isOverview && e.relation === 'contains' && e.from === payload.centerId
+      ? undefined
+      : e.relation
     edgeList.push({
-      id: 'o::' + e.from + '->' + e.to + '::' + e.relation,
+      id: 'o::' + e.from + '->' + e.to + '::' + (e.relation || '') + '::' + edgeList.length,
       from: e.from,
       to: e.to,
-      label: e.relation,
+      label: lbl,
     })
   }
-  for (const e of payload.in) {
-    if (!seen.has(e.from)) {
-      seen.add(e.from)
-      nodes.add({ id: e.from, label: shortLabel(e.from), group: 'related', title: e.from })
+  if (!isOverview) {
+    for (const e of payload.in) {
+      if (!seen.has(e.from)) {
+        seen.add(e.from)
+        nodes.add({ id: e.from, label: shortLabel(e.from), group: 'related', title: e.from })
+      }
+      edgeList.push({
+        id: 'i::' + e.from + '->' + e.to + '::' + e.relation + '::' + edgeList.length,
+        from: e.from,
+        to: e.to,
+        label: e.relation,
+      })
     }
-    edgeList.push({
-      id: 'i::' + e.from + '->' + e.to + '::' + e.relation,
-      from: e.from,
-      to: e.to,
-      label: e.relation,
-    })
   }
 
   edges.add(edgeList)
   network.setData({ nodes, edges })
 
-  network.once('stabilizationIterationsDone', () => {
-    network?.focus(centerId, {
-      scale: 1,
-      animation: { duration: 400, easingFunction: 'easeInOutQuad' },
+  if (!isOverview) {
+    const centerId = payload.centerId
+    network.once('stabilizationIterationsDone', () => {
+      network?.focus(centerId, {
+        scale: 1,
+        animation: { duration: 400, easingFunction: 'easeInOutQuad' },
+      })
     })
-  })
+  } else {
+    // 概览：fit 整张图
+    network.once('stabilizationIterationsDone', () => {
+      network?.fit({ animation: { duration: 400, easingFunction: 'easeInOutQuad' } })
+    })
+  }
 }
 
 function shortLabel(id: string): string {

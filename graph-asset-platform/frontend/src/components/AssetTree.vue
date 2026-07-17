@@ -18,7 +18,7 @@
       :props="treeProps"
       :height="treeHeight"
       :item-size="30"
-      :indent="14"
+      :indent="22"
       :expand-on-click-node="true"
       :highlight-current="true"
       :current-node-key="currentKey"
@@ -34,6 +34,7 @@
             'is-more': data.kind === 'more',
             'is-dir': data.kind === 'dir',
           }"
+          :style="nodeDepthStyle(node.level)"
         >
           <span v-if="data.kind === 'dir'" class="node-caret">
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none">
@@ -50,7 +51,29 @@
           <span v-else class="node-caret placeholder" />
 
           <span v-if="data.kind === 'dir'" class="node-icon dir">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <!-- 展开态：打开的文件夹图标 -->
+            <svg v-if="node.expanded" width="14" height="14" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M3 9a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v1H3V9Z"
+                fill="currentColor"
+                opacity="0.22"
+              />
+              <path
+                d="M3 9a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+                fill="none"
+              />
+              <path
+                d="M3 11h18"
+                stroke="currentColor"
+                stroke-width="1.2"
+                opacity="0.5"
+              />
+            </svg>
+            <!-- 收起态：闭合文件夹 -->
+            <svg v-else width="14" height="14" viewBox="0 0 24 24" fill="none">
               <path
                 d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"
                 fill="currentColor"
@@ -137,6 +160,22 @@ const treeProps = {
   label: 'label',
   children: 'children',
   isLeaf: 'isLeaf',
+}
+
+// 按深度生成引导线：每层左侧叠一条淡色竖线（linear-gradient 模拟）。
+// 虚拟滚动下稳定：仅依赖 node.level，padding 由 el-tree 的 indent 控制。
+function nodeDepthStyle(level: number | undefined): Record<string, string> {
+  const depth = Math.max(0, (level ?? 1) - 1) // level 从 1 起，根节点无线
+  if (depth === 0) return {}
+  // 每深一层在 22px 间距处叠一条 1px 垂直线（与 :indent=22 对齐）
+  const bg = Array.from({ length: depth }, (_, i) => {
+    const x = (i + 1) * 22 - 11
+    return `linear-gradient(to right, transparent ${x - 1}px, var(--tree-line) ${x - 1}px ${x}px, transparent ${x}px 100%)`
+  }).join(', ')
+  return {
+    backgroundImage: bg,
+    backgroundRepeat: 'no-repeat',
+  }
 }
 
 // 内联 search icon
@@ -379,6 +418,7 @@ onUnmounted(() => {
   padding-right: 8px;
   font-size: 13px;
   color: var(--text-muted);
+  background-color: transparent;
 }
 
 .node-caret {

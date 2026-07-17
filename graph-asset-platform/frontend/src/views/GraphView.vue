@@ -32,29 +32,45 @@
     </div>
 
     <div class="graph-body">
-      <div class="canvas-col">
-        <div v-if="loading && !focusPayload" class="canvas-loading">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="spin">
-            <path d="M12 3a9 9 0 1 0 9 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-          </svg>
-          <span>加载邻居关系…</span>
-        </div>
-        <div v-else-if="!focusPayload && !error" class="canvas-placeholder">
-          <div class="ph-title">知识图谱浏览器</div>
-          <div class="ph-sub">输入或粘贴一个对象 id，查看其单跳邻居关系</div>
-          <div class="ph-hint mono">只渲染单跳邻居，保证大规模数据下流畅</div>
-        </div>
-        <GraphCanvas v-if="focusPayload" :focus="focusPayload" @node-click="focusOn" />
-      </div>
-
-      <aside class="detail-col">
-        <ObjectDetailPanel
-          :center="center"
-          :out="out"
-          :in-edges="inEdges"
-          @navigate="focusOn"
-        />
-      </aside>
+      <Splitpanes class="graph-panes default-theme">
+        <Pane :size="68" :min-size="40">
+          <div class="canvas-col">
+            <div v-if="loading && !focusPayload" class="canvas-loading">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="spin">
+                <path d="M12 3a9 9 0 1 0 9 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+              </svg>
+              <span>加载邻居关系…</span>
+            </div>
+            <div v-else-if="!focusPayload && !overviewPayload && !error" class="canvas-loading">
+              <span>加载业务概览…</span>
+            </div>
+            <GraphCanvas
+              v-if="focusPayload"
+              :focus="focusPayload"
+              @node-click="focusOn"
+            />
+            <GraphCanvas
+              v-else-if="overviewPayload"
+              :focus="overviewPayload"
+              :is-overview="true"
+              @node-click="focusOn"
+            />
+            <div v-if="!focusPayload && overviewPayload" class="overview-hint">
+              <span class="hint-pill">概览：业务结构，点节点钻取或搜索任意对象</span>
+            </div>
+          </div>
+        </Pane>
+        <Pane :size="32" :min-size="18" :max-size="55">
+          <aside class="detail-col">
+            <ObjectDetailPanel
+              :center="center"
+              :out="out"
+              :in-edges="inEdges"
+              @navigate="focusOn"
+            />
+          </aside>
+        </Pane>
+      </Splitpanes>
     </div>
   </div>
 </template>
@@ -62,9 +78,11 @@
 <script setup lang="ts">
 import { computed, h, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { Splitpanes, Pane } from 'splitpanes'
+import 'splitpanes/dist/splitpanes.css'
 import GraphCanvas from '../components/GraphCanvas.vue'
 import ObjectDetailPanel from '../components/ObjectDetail.vue'
-import { neighbors, stats } from '../api'
+import { neighbors, overview, stats } from '../api'
 import type { Edge, ObjectDetail as ObjectDetailData, Stats } from '../api'
 
 const route = useRoute()
@@ -80,6 +98,15 @@ const focusPayload = ref<{
   out: Edge[]
   in: Edge[]
   version?: string
+} | null>(null)
+
+// 概览图 payload（GraphView 初始默认渲染，无需指定对象）
+const overviewPayload = ref<{
+  centerId: string
+  centerDetail: null
+  out: Edge[]
+  in: Edge[]
+  isOverview?: boolean
 } | null>(null)
 
 const center = ref<ObjectDetailData | null>(null)
@@ -115,6 +142,8 @@ async function focusOn(id: string): Promise<void> {
   searchId.value = trimmed
   loading.value = true
   error.value = ''
+  // 钻取时清空概览，只显示聚焦邻居
+  overviewPayload.value = null
   try {
     const ver = versionFilter.value || undefined
     const r = await neighbors(trimmed, ver, 1)
@@ -134,6 +163,51 @@ async function focusOn(id: string): Promise<void> {
     out.value = []
     inEdges.value = []
     focusPayload.value = null
+    error.value = e instanceof Error ? e.message : String(e)
+  } finally {
+    loading.value = false
+  }
+}
+
+async function loadOverview(): Promise<void> {
+  loading.value = true
+  error.value = ''
+  focusPayload.value = null
+  center.value = null
+  out.value = []
+  inEdges.value = []
+  try {
+    const ov = await overview()
+    // 概览图无中心：用占位 centerId，把所有业务节点当 out 邻居渲染
+    const fakeCenterId = '__overview__'
+    const nodes = ov.nodes || []
+    const edges = ov.edges || []
+    // 每个业务节点作为 fake center 的"邻居"，边直接转 Edge[]
+    const outEdges: Edge[] = edges.map((e: { from: string; relation: string; to: string }) => ({
+      from: e.from,
+      relation: e.relation,
+      to: e.to,
+    }))
+    // 把孤立节点也作为 fake center 邻居（否则 vis 不画它们）
+    const referenced = new Set<string>()
+    for (const e of edges) {
+      referenced.add(e.from)
+      referenced.add(e.to)
+    }
+    for (const n of nodes) {
+      if (!referenced.has(n.id)) {
+        outEdges.push({ from: fakeCenterId, relation: 'contains', to: n.id })
+      }
+    }
+    overviewPayload.value = {
+      centerId: fakeCenterId,
+      centerDetail: null,
+      out: outEdges,
+      in: [],
+      isOverview: true,
+    }
+  } catch (e: unknown) {
+    overviewPayload.value = null
     error.value = e instanceof Error ? e.message : String(e)
   } finally {
     loading.value = false
@@ -171,7 +245,12 @@ onMounted(async () => {
   } catch {
     /* 降级：无版本过滤 */
   }
-  if (searchId.value) focusOn(searchId.value)
+  if (searchId.value) {
+    focusOn(searchId.value)
+  } else {
+    // 默认渲染业务概览
+    loadOverview()
+  }
 })
 </script>
 
@@ -222,20 +301,22 @@ onMounted(async () => {
 
 .graph-body {
   flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 340px;
   min-height: 0;
+}
+
+.graph-panes {
+  height: 100%;
 }
 
 .canvas-col {
   position: relative;
+  height: 100%;
   min-width: 0;
   overflow: hidden;
   border-right: 1px solid var(--border);
 }
 
-.canvas-loading,
-.canvas-placeholder {
+.canvas-loading {
   position: absolute;
   inset: 0;
   display: flex;
@@ -246,29 +327,27 @@ onMounted(async () => {
   color: var(--text-faint);
   pointer-events: none;
   background: var(--bg-elev);
+  z-index: 1;
 }
 
-.canvas-placeholder {
-  gap: var(--space-3);
+.overview-hint {
+  position: absolute;
+  top: var(--space-3);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
 }
 
-.ph-title {
-  font-family: var(--display);
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text-muted);
-}
-
-.ph-sub {
-  font-size: 13.5px;
-}
-
-.ph-hint {
+.hint-pill {
+  display: inline-block;
   font-size: 11.5px;
-  color: var(--text-faint);
-  background: var(--bg-sunken);
-  padding: 3px 10px;
+  color: var(--text-muted);
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
   border-radius: 999px;
+  box-shadow: var(--shadow-sm);
 }
 
 .spin {
@@ -283,14 +362,47 @@ onMounted(async () => {
 }
 
 .detail-col {
+  height: 100%;
   overflow: hidden;
   background: var(--bg-elev);
 }
 
+/* splitpanes 主题定制（与 AssetsView 一致） */
+:deep(.splitpanes__splitter) {
+  background: var(--border);
+  position: relative;
+  flex-shrink: 0;
+}
+
+:deep(.splitpanes--vertical > .splitpanes__splitter) {
+  width: 5px;
+  margin-left: -2px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  transition: background var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+}
+
+:deep(.splitpanes--vertical > .splitpanes__splitter:hover),
+:deep(.splitpanes--vertical > .splitpanes__splitter.active) {
+  background: var(--accent-soft);
+  border-left-color: var(--accent);
+  border-right-color: var(--accent);
+}
+
+:deep(.splitpanes__pane) {
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  min-width: 0;
+}
+
+:deep(.splitpanes__pane > *) {
+  flex: 1;
+  min-width: 0;
+}
+
 @media (max-width: 900px) {
-  .graph-body {
-    grid-template-columns: 1fr;
-  }
   .detail-col {
     display: none;
   }

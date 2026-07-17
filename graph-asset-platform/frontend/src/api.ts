@@ -147,6 +147,22 @@ export const getMd = (id: string, version?: string): Promise<string> =>
 
 export const stats = (): Promise<Stats> => _req<Stats>(`${BASE}/stats`)
 
+// 业务层概览图：GraphView 默认渲染，无需指定对象。
+// nodes = 业务层对象(BD/NS/CS) 或层摘要；edges = 业务结构关系。
+export interface OverviewNode {
+  id: string
+  type?: string
+  label?: string
+  object_count?: number
+}
+export interface OverviewEdge {
+  from: string
+  relation: string
+  to: string
+}
+export const overview = (): Promise<{ nodes: OverviewNode[]; edges: OverviewEdge[] }> =>
+  _req<{ nodes: OverviewNode[]; edges: OverviewEdge[] }>(`${BASE}/overview`)
+
 export const importBundle = (file: File): Promise<ImportResult> => {
   const fd = new FormData()
   fd.append('file', file)

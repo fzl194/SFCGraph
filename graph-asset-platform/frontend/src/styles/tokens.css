@@ -12,6 +12,7 @@
   --border: #e7e5e4;        /* stone-200 */
   --border-strong: #d6d3d1; /* stone-300 */
   --border-faint: #efeeec;
+  --tree-line: #e7e5e4;     /* 树引导线：与 border 同色，可独立调淡 */
 
   /* 文字 */
   --text: #1c1917;          /* stone-900 标题 */
@@ -238,10 +239,19 @@ body {
 
 .md-body h2 {
   font-size: 1.35em;
+  border-bottom: 1px solid var(--border-faint);
+  padding-bottom: 0.2em;
 }
 
 .md-body h3 {
   font-size: 1.12em;
+}
+
+.md-body h4 {
+  font-size: 1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .md-body p {
@@ -259,6 +269,19 @@ body {
   border-bottom-color: var(--accent);
 }
 
+/* 内联 wikilink（[[id]]）：与普通链接同色，加虚线下划线区分 */
+.md-body a.wiki-link,
+.md-body .wiki-link {
+  border-bottom: 1px dashed var(--accent);
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.md-body a.wiki-link:hover,
+.md-body .wiki-link:hover {
+  background: var(--accent-soft);
+}
+
 .md-body code {
   font-family: var(--mono);
   font-size: 0.88em;
@@ -266,22 +289,27 @@ body {
   padding: 0.12em 0.4em;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-faint);
+  color: var(--text);
 }
 
 .md-body pre {
-  background: var(--bg-sunken);
-  border: 1px solid var(--border);
+  background: #2a2724;       /* 深底代码块（技术工作站感） */
+  color: #e7e5e4;
+  border: 1px solid #3a3531;
   border-radius: var(--radius);
   padding: var(--space-4);
-  overflow: auto;
+  overflow-x: auto;          /* 横向滚动，长命令不换行 */
   font-size: 0.86em;
   line-height: 1.6;
+  margin: 1em 0;
 }
 
 .md-body pre code {
   background: none;
   border: none;
   padding: 0;
+  color: inherit;
+  font-size: 1em;
 }
 
 .md-body table {
@@ -289,6 +317,13 @@ body {
   width: 100%;
   margin: 1em 0;
   font-size: 0.92em;
+  display: block;            /* 窄列时允许横向滚动，不撑破布局 */
+  overflow-x: auto;
+}
+
+.md-body thead {
+  background: var(--bg-sunken);
+  border-bottom: 2px solid var(--border-strong);
 }
 
 .md-body th,
@@ -296,11 +331,22 @@ body {
   border: 1px solid var(--border);
   padding: var(--space-2) var(--space-3);
   text-align: left;
+  vertical-align: top;
 }
 
 .md-body th {
-  background: var(--bg-sunken);
   font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* zebra：偶数行底色更浅 */
+.md-body tbody tr:nth-child(even) {
+  background: var(--bg-sunken);
+}
+
+.md-body tbody tr:hover {
+  background: var(--accent-soft);
 }
 
 .md-body blockquote {

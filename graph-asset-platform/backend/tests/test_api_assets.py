@@ -139,6 +139,60 @@ def test_export_filter_nf_excludes_other(tmp_data_dir, monkeypatch):
         assert all("beta" not in n for n in names)
 
 
+def test_overview_returns_business_nodes(tmp_data_dir, monkeypatch):
+    """overview 返回业务层节点 + 业务结构边；无业务层时退化为层摘要。"""
+    _setup_service(tmp_data_dir, monkeypatch)
+    # 业务层两段式 id：ObjectType@语义slug（split_id 解析为 type=ObjectType）
+    bd = (
+        "---\n"
+        "id: BusinessDomain@demo\n"
+        "type: BusinessDomain\n"
+        "domain: demo\n"
+        "name: Demo Domain\n"
+        "---\n"
+        "# Demo Domain\n"
+    )
+    ns = (
+        "---\n"
+        "id: NetworkScenario@demo-base\n"
+        "type: NetworkScenario\n"
+        "domain: demo\n"
+        "scenario: base\n"
+        "name: Demo Scenario\n"
+        "---\n"
+        "## 边\n"
+        "- belongs_to: [[BusinessDomain@demo]]\n"
+    )
+    with TestClient(app) as c:
+        c.post("/api/v1/import",
+               files={"file": _zip_upload({"bd.md": bd, "ns.md": ns, "cmd.md": CMD})})
+        r = c.get("/api/v1/overview")
+        assert r.status_code == 200
+        body = r.json()
+        ids = {n["id"] for n in body["nodes"]}
+        assert "BusinessDomain@demo" in ids
+        assert "NetworkScenario@demo-base" in ids
+        # alpha@MMLCommand@... 是 nf 范围 → 不出现在概览
+        assert "alpha@MMLCommand@ADD DEMO" not in ids
+        # 业务结构边
+        assert any(
+            e["from"] == "NetworkScenario@demo-base"
+            and e["to"] == "BusinessDomain@demo"
+            for e in body["edges"]
+        )
+
+
+def test_overview_layer_summary_when_no_business(tmp_data_dir, monkeypatch):
+    """业务层为空 → 退化为层摘要（nodes 是 Layer，无 edges）。"""
+    _setup_service(tmp_data_dir, monkeypatch)
+    with TestClient(app) as c:
+        c.post("/api/v1/import", files={"file": _zip_upload({"a.md": CMD})})
+        body = c.get("/api/v1/overview").json()
+        ids = {n["id"] for n in body["nodes"]}
+        assert "Command" in ids  # layer 名称
+        assert body["edges"] == []
+
+
 def test_browse_root_drill_paginate_filter(tmp_data_dir, monkeypatch):
     _setup_service(tmp_data_dir, monkeypatch)
     with TestClient(app) as c:
