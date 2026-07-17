@@ -265,7 +265,9 @@ async function load(id: string, ver?: string): Promise<void> {
     const obj = await getObject(id, ver)
     detail.value = obj
     selectedVersion.value = obj.version ?? ver ?? ''
-    const body = obj.body_md || ''
+    // 去残留 \r（源 md 的 CRLF / \r\r\n）：markdown-it 会把 \r\r\n 错当 \n\n，
+    // 在表头与分隔符间插入空行导致 GFM 表格整表判废。后端已归一化，这里兜底。
+    const body = (obj.body_md || '').replace(/\r/g, '')
     // 先规范化表格空行变体，再 markdown-it 渲染
     const rendered = md.render(normalizeTables(body))
     // 对渲染后的 html 做内联 wikilink 替换为可点击 a

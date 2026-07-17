@@ -29,3 +29,19 @@ def test_no_edges():
     md = "---\nid: X@T@y\ntype: T\n---\n正文\n"
     fm, body, edge_section = parse_md(md)
     assert edge_section == ""
+
+
+def test_crlf_normalized():
+    # CRLF 换行：body 不应残留 \r，表格表头与分隔符仍紧邻
+    md = "---\r\nid: x\r\ntype: T\r\n---\r\n| a | b |\r\n| --- | --- |\r\n| 1 | 2 |\r\n"
+    fm, body, edge_section = parse_md(md)
+    assert "\r" not in body
+    assert "| a | b |\n| --- | --- |" in body
+
+
+def test_double_cr_normalized():
+    # \r\r\n（产品文档导出遗留的双回车）：不应变成空行撑开表格
+    md = "---\r\r\nid: x\r\r\ntype: T\r\r\n---\r\r\n| a | b |\r\r\n| --- | --- |\r\r\n| 1 | 2 |\r\r\n"
+    fm, body, edge_section = parse_md(md)
+    assert "\r" not in body
+    assert "| a | b |\n| --- | --- |" in body
