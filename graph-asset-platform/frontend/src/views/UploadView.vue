@@ -10,7 +10,11 @@
 
       <div
         class="dropzone"
-        :class="{ 'is-drag': isDrag, 'is-done': result, 'is-error': errorMsg }"
+        :class="{
+          'is-drag': isDrag,
+          'is-done': job && job.status === 'done',
+          'is-error': errorMsg || (job && job.status === 'failed'),
+        }"
         @dragenter.prevent="onDragEnter"
         @dragover.prevent="onDragEnter"
         @dragleave.prevent="onDragLeave"
@@ -24,7 +28,7 @@
           @change="onFileChange"
         />
 
-        <div v-if="!uploading && !result" class="dz-content">
+        <div v-if="!uploading && !(job && job.status === 'done')" class="dz-content">
           <div class="dz-icon">
             <svg width="56" height="56" viewBox="0 0 24 24" fill="none">
               <path
@@ -63,7 +67,7 @@
           <div class="dz-sub mono">{{ currentFile?.name }}</div>
         </div>
 
-        <div v-else-if="result" class="dz-content">
+        <div v-else-if="job && job.status === 'done'" class="dz-content">
           <div class="dz-icon done">
             <svg width="56" height="56" viewBox="0 0 24 24" fill="none">
               <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4" opacity="0.3" />
@@ -89,24 +93,24 @@
         <span class="mono">{{ errorMsg }}</span>
       </div>
 
-      <!-- 导入结果 -->
+      <!-- 导入结果（job 完成后展示） -->
       <transition name="slide-up">
-        <section v-if="result" class="result-card stagger-in">
+        <section v-if="job && job.status === 'done'" class="result-card stagger-in">
           <div class="result-head">
             <span class="result-title">导入结果</span>
             <span class="result-file mono">{{ currentFile?.name }}</span>
           </div>
           <div class="stat-grid">
             <div class="stat stat-added">
-              <div class="stat-val">{{ result.added }}</div>
+              <div class="stat-val">{{ job.added }}</div>
               <div class="stat-label">新增</div>
             </div>
             <div class="stat stat-updated">
-              <div class="stat-val">{{ result.updated }}</div>
+              <div class="stat-val">{{ job.updated }}</div>
               <div class="stat-label">更新</div>
             </div>
             <div class="stat stat-skipped">
-              <div class="stat-val">{{ result.skipped }}</div>
+              <div class="stat-val">{{ job.skipped }}</div>
               <div class="stat-label">跳过</div>
             </div>
           </div>
@@ -148,19 +152,58 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import { importBundle, importHistory, type ImportResult, type ImportHistoryItem } from '../api'
+import { onMounted, onUnmounted, ref } from 'vue'
+import {
+  importBundle,
+  importJob,
+  importHistory,
+  type ImportAccepted,
+  type ImportJob,
+  type ImportHistoryItem,
+} from '../api'
 
 const fileInput = ref<HTMLInputElement | null>(null)
 const isDrag = ref(false)
 const uploading = ref(false)
 const currentFile = ref<File | null>(null)
-const result = ref<ImportResult | null>(null)
+// 当前活跃 job（异步导入：POST /import 立即返回 job_id，后台处理）
+const job = ref<ImportJob | null>(null)
+// 兼容模板：result 非空即代表已上传（详情取自 job）
+const result = ref<ImportAccepted | null>(null)
 const errorMsg = ref('')
 const warnings = ref<string[]>([])
 
 const history = ref<ImportHistoryItem[]>([])
 const historyLoading = ref(false)
+
+let pollTimer: ReturnType<typeof setInterval> | null = null
+
+function stopPoll(): void {
+  if (pollTimer !== null) {
+    clearInterval(pollTimer)
+    pollTimer = null
+  }
+}
+
+async function pollJob(jobId: string): Promise<void> {
+  try {
+    const j = await importJob(jobId)
+    job.value = j
+    if (j.status === 'done') {
+      stopPoll()
+      uploading.value = false
+      warnings.value = j.warnings ?? []
+      refreshGlobalStats()
+      loadHistory()
+    } else if (j.status === 'failed') {
+      stopPoll()
+      uploading.value = false
+      errorMsg.value = j.error || '导入失败'
+    }
+  } catch {
+    /* 轮询失败暂忽略，下轮重试 */
+  }
+}
 
 function pickFile(): void {
   fileInput.value?.click()
@@ -187,23 +230,27 @@ async function doUpload(f: File): Promise<void> {
   currentFile.value = f
   uploading.value = true
   result.value = null
+  job.value = null
   errorMsg.value = ''
   warnings.value = []
+  stopPoll()
   try {
-    const r = await importBundle(f)
-    result.value = r
-    warnings.value = r.warnings ?? []
-    refreshGlobalStats()
-    loadHistory()
+    const accepted = await importBundle(f)
+    result.value = accepted
+    // 非阻塞轮询 job 状态（每 1.5s）
+    pollTimer = setInterval(() => void pollJob(accepted.job_id), 1500)
+    // 立即拉一次（FastAPI TestClient 场景下后台已可能完成）
+    void pollJob(accepted.job_id)
   } catch (e: unknown) {
     errorMsg.value = e instanceof Error ? e.message : String(e)
-  } finally {
     uploading.value = false
   }
 }
 
 function reset(): void {
+  stopPoll()
   result.value = null
+  job.value = null
   currentFile.value = null
   errorMsg.value = ''
   warnings.value = []
@@ -236,6 +283,7 @@ function formatTime(ts: string): string {
 }
 
 onMounted(loadHistory)
+onUnmounted(stopPoll)
 </script>
 
 <style scoped>

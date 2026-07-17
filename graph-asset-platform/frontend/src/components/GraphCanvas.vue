@@ -125,7 +125,7 @@ function render(payload: FocusPayload): void {
   const edgeList: { id: string; from: string; to: string; label?: string }[] = []
 
   // 概览模式：不画 fake center，所有业务节点平铺为 related。
-  // 孤立节点已在 GraphView 通过 fake center 的 contains 边带出，
+  // 孤立节点通过 fake center 的 contains 边带出，
   // 这里遇到 fake center id 跳过加中心节点，让边把孤立节点带进图。
   if (!isOverview) {
     const centerId = payload.centerId

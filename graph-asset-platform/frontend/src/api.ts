@@ -89,16 +89,14 @@ export interface Stats {
   edge_count: number
   nfs: string[]
   versions_per_nf: Record<string, string[]>
-}
-
-// 懒加载目录树：path="" 为根；逐层下钻。total_files 用于"加载更多"分页。
-export interface BrowseResult {
-  path: string
-  dirs: string[]
-  files: { name: string; id: string }[]
-  total_files: number
-  offset: number
-  limit: number
+  // UI 层聚合（4 层：命令层/特性层/任务层/业务层）
+  per_layer: Record<string, number>
+  per_layer_per_nf: Record<string, Record<string, number>>
+  per_layer_per_nf_per_version: Record<
+    string,
+    Record<string, Record<string, number>>
+  >
+  per_domain: Record<string, number>
 }
 
 export interface ImportHistoryItem {
@@ -118,12 +116,33 @@ export interface ImportResult {
   counts: Record<string, number>
 }
 
+// 异步导入 job（POST /import 立即返回 job_id，后台处理）
+export interface ImportJob {
+  job_id: string
+  status: 'processing' | 'done' | 'failed'
+  added: number
+  updated: number
+  skipped: number
+  warnings: string[]
+  error: string
+  started_at: number
+  finished_at: number
+}
+
+// POST /import 202 响应
+export interface ImportAccepted {
+  job_id: string
+  status: 'processing'
+}
+
 // ---------- API ----------
 
 export const listObjects = (p: {
   type?: string
+  layer?: string
   q?: string
   nf?: string
+  version?: string
   domain?: string
   page?: number
   size?: number
@@ -147,27 +166,18 @@ export const getMd = (id: string, version?: string): Promise<string> =>
 
 export const stats = (): Promise<Stats> => _req<Stats>(`${BASE}/stats`)
 
-// 业务层概览图：GraphView 默认渲染，无需指定对象。
-// nodes = 业务层对象(BD/NS/CS) 或层摘要；edges = 业务结构关系。
-export interface OverviewNode {
-  id: string
-  type?: string
-  label?: string
-  object_count?: number
-}
-export interface OverviewEdge {
-  from: string
-  relation: string
-  to: string
-}
-export const overview = (): Promise<{ nodes: OverviewNode[]; edges: OverviewEdge[] }> =>
-  _req<{ nodes: OverviewNode[]; edges: OverviewEdge[] }>(`${BASE}/overview`)
-
-export const importBundle = (file: File): Promise<ImportResult> => {
+// 异步导入：立即返回 job_id（202），后台处理；通过 importJob(id) 轮询。
+export const importBundle = (file: File): Promise<ImportAccepted> => {
   const fd = new FormData()
   fd.append('file', file)
-  return _req<ImportResult>(`${BASE}/import`, { method: 'POST', body: fd })
+  return _req<ImportAccepted>(`${BASE}/import`, { method: 'POST', body: fd })
 }
+
+export const importJobs = (): Promise<ImportJob[]> =>
+  _req<ImportJob[]>(`${BASE}/import/jobs`)
+
+export const importJob = (id: string): Promise<ImportJob> =>
+  _req<ImportJob>(`${BASE}/import/jobs/${encodeURIComponent(id)}`)
 
 export const exportUrl = (f: {
   nf?: string
@@ -175,15 +185,6 @@ export const exportUrl = (f: {
   domain?: string
   scenario?: string
 }): string => `${BASE}/export${qs(f)}`
-
-// 懒加载目录树（性能关键：替代旧的 listObjects 全量拉取）
-// path 形如 "" → "Command" → "Command/UDG" → "Command/UDG/20.15.2"
-export const browse = (p: {
-  path?: string
-  q?: string
-  limit?: number
-  offset?: number
-}): Promise<BrowseResult> => _req<BrowseResult>(`${BASE}/browse${qs(p)}`)
 
 export const importHistory = (): Promise<ImportHistoryItem[]> =>
   _req<ImportHistoryItem[]>(`${BASE}/imports`)

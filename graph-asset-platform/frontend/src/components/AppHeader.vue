@@ -61,19 +61,6 @@ async function load(): Promise<void> {
 }
 
 // 简单内联 SVG 图标（避免引依赖）
-const FolderIcon = () =>
-  h(
-    'svg',
-    { width: '15', height: '15', viewBox: '0 0 24 24', fill: 'none' },
-    [
-      h('path', {
-        d: 'M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z',
-        stroke: 'currentColor',
-        'stroke-width': '1.7',
-        'stroke-linejoin': 'round',
-      }),
-    ],
-  )
 const GraphIcon = () =>
   h(
     'svg',
@@ -87,6 +74,40 @@ const GraphIcon = () =>
         stroke: 'currentColor',
         'stroke-width': '1.5',
         opacity: '0.7',
+      }),
+    ],
+  )
+const StatsIcon = () =>
+  h(
+    'svg',
+    { width: '15', height: '15', viewBox: '0 0 24 24', fill: 'none' },
+    [
+      h('rect', {
+        x: '3',
+        y: '11',
+        width: '4',
+        height: '9',
+        rx: '1',
+        stroke: 'currentColor',
+        'stroke-width': '1.7',
+      }),
+      h('rect', {
+        x: '10',
+        y: '6',
+        width: '4',
+        height: '14',
+        rx: '1',
+        stroke: 'currentColor',
+        'stroke-width': '1.7',
+      }),
+      h('rect', {
+        x: '17',
+        y: '3',
+        width: '4',
+        height: '17',
+        rx: '1',
+        stroke: 'currentColor',
+        'stroke-width': '1.7',
       }),
     ],
   )
@@ -112,8 +133,8 @@ const UploadIcon = () =>
   )
 
 const tabs = [
-  { to: '/assets', label: '资产浏览', icon: FolderIcon },
-  { to: '/graph', label: '图谱', icon: GraphIcon },
+  { to: '/', label: '图谱浏览', icon: GraphIcon },
+  { to: '/stats', label: '统计', icon: StatsIcon },
   { to: '/upload', label: '上传', icon: UploadIcon },
 ]
 
