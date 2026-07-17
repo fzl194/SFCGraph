@@ -89,7 +89,20 @@
 <script setup lang="ts">
 import { computed, h, onMounted, ref } from 'vue'
 import { stats, type Stats } from '../api'
+import { UI_LAYER_TYPES } from '../composables/useNav'
 import StatCard, { type StatDetail } from '../components/StatCard.vue'
+
+// 对象 type → 中文标签（统计卡"按对象类型"明细用）
+const TYPE_LABELS: Record<string, string> = {
+  MMLCommand: '命令',
+  ConfigObject: '配置对象',
+  Feature: '特性',
+  License: 'License',
+  Task: '任务',
+  BusinessDomain: '业务域',
+  NetworkScenario: '场景',
+  ConfigurationSolution: '方案',
+}
 
 // Element Plus Refresh 图标（内联 SVG，避免引 @element-plus/icons-vue 依赖膨胀）
 const Refresh = () =>
@@ -149,6 +162,16 @@ const cards = computed<CardConfig[]>(() => {
 
     const details: StatDetail[] = []
 
+    // 按对象类型（命令层: 命令/配置对象；特性层: 特性/license；任务层只有 Task 则跳过）
+    const layerTypes = UI_LAYER_TYPES[layer] ?? []
+    const typeRows = layerTypes
+      .map((t) => ({ label: TYPE_LABELS[t] ?? t, value: data.object_counts_by_type?.[t] ?? 0 }))
+      .filter((r) => r.value > 0)
+    if (typeRows.length > 1) {
+      for (const r of typeRows) details.push(r)
+      details.push({ label: '—— 按网元 ——', value: -1 })
+    }
+
     // 按网元（保持后端顺序）
     const nfEntries = Object.entries(perNf)
     for (const [nf, cnt] of nfEntries) {
@@ -180,13 +203,21 @@ const cards = computed<CardConfig[]>(() => {
     })
   }
 
-  // 业务层：总数 + 按域
+  // 业务层：总数 + 按对象类型(业务域/场景/方案) + 按域
   const bizTotal = data.per_layer['业务层'] ?? 0
+  const bizTypes = UI_LAYER_TYPES['业务层'] ?? []
+  const bizTypeRows = bizTypes
+    .map((t) => ({ label: TYPE_LABELS[t] ?? t, value: data.object_counts_by_type?.[t] ?? 0 }))
+    .filter((r) => r.value > 0)
   const domainEntries = Object.entries(data.per_domain)
-  const bizDetails: StatDetail[] = domainEntries.map(([d, cnt]) => ({
-    label: d,
-    value: cnt,
-  }))
+  const bizDetails: StatDetail[] = []
+  if (bizTypeRows.length > 1) {
+    for (const r of bizTypeRows) bizDetails.push(r)
+    bizDetails.push({ label: '—— 按域 ——', value: -1 })
+  }
+  for (const [d, cnt] of domainEntries) {
+    bizDetails.push({ label: d, value: cnt })
+  }
   out.push({
     title: '业务层',
     total: bizTotal,

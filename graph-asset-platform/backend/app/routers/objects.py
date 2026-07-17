@@ -84,17 +84,17 @@ def list_objects(type: Optional[str] = None,
     过滤参数：
     - ``layer``：UI 层（命令层/特性层/任务层/业务层）→ 多 type 联合过滤
       （如命令层 = MMLCommand + ConfigObject）。
-    - ``type``：单 type 过滤（与 layer 互斥，layer 优先）。
+    - ``type``：单 type 过滤。**type 优先于 layer**（在层内进一步收窄，如命令层选"命令"→只 MMLCommand）。
     - ``version``：版本精确匹配（按 id 代表版本过滤）。
     - ``nf/domain/q``：同前。
     """
     idx = get_service().index
-    # 解析 type 集合：layer 优先，否则 type
+    # 解析 type 集合：type 优先（更窄的子筛选），否则用 layer 的类型集合
     types: Optional[set] = None
-    if layer:
-        types = set(UI_LAYER_TYPES.get(layer, []))
-    elif type:
+    if type:
         types = {type}
+    elif layer:
+        types = set(UI_LAYER_TYPES.get(layer, []))
     # 先按 id 取一个代表节点（最新版本），再聚合 versions
     latest_per_id: dict = {}
     for (id_, _ver), obj in idx.nodes.items():

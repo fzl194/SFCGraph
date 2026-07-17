@@ -122,6 +122,7 @@ async function loadList(): Promise<ObjectRow[]> {
   try {
     const rows = await listObjects({
       layer,
+      type: sel.type || undefined,
       nf: sel.nf || undefined,
       version: sel.version || undefined,
       domain: sel.domain || undefined,
