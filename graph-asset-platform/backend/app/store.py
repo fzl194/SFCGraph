@@ -45,21 +45,3 @@ class Store:
             str(p.relative_to(self.root)).replace("\\", "/")
             for p in self.root.rglob("*.md")
         ]
-
-    def list_dir(self, rel: str = "") -> tuple[list[str], list[str]]:
-        """该目录的直接子项（不递归）→ (子目录名列表, 文件名列表)，均排序。
-
-        供前端文件夹树懒加载：展开某层只读该层子项，避免一次拉全量。
-        rel 为空时返回 assets 根的直接子项。不存在/非目录 → ([], [])。
-        """
-        p = self._resolve(rel) if rel else self._root_resolved
-        if not p.exists() or not p.is_dir():
-            return [], []
-        dirs: list[str] = []
-        files: list[str] = []
-        for child in p.iterdir():
-            if child.is_dir():
-                dirs.append(child.name)
-            elif child.is_file():
-                files.append(child.name)
-        return sorted(dirs), sorted(files)

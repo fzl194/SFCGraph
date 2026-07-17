@@ -14,6 +14,7 @@ from fastapi.responses import PlainTextResponse
 
 from ..models import Edge, Object
 from ..service import get_service
+from ..ui_layers import UI_LAYER_TYPES
 
 router = APIRouter()
 
@@ -71,13 +72,29 @@ def _resolve(id_: str, version: Optional[str]) -> Object:
 
 @router.get("/objects")
 def list_objects(type: Optional[str] = None,
+                 layer: Optional[str] = None,
                  q: Optional[str] = None,
                  nf: Optional[str] = None,
+                 version: Optional[str] = None,
                  domain: Optional[str] = None,
                  page: int = 1,
                  size: int = 50):
-    """按 id 聚合列表（多版本合并为一行，versions[] 聚合）。"""
+    """按 id 聚合列表（多版本合并为一行，versions[] 聚合）。
+
+    过滤参数：
+    - ``layer``：UI 层（命令层/特性层/任务层/业务层）→ 多 type 联合过滤
+      （如命令层 = MMLCommand + ConfigObject）。
+    - ``type``：单 type 过滤（与 layer 互斥，layer 优先）。
+    - ``version``：版本精确匹配（按 id 代表版本过滤）。
+    - ``nf/domain/q``：同前。
+    """
     idx = get_service().index
+    # 解析 type 集合：layer 优先，否则 type
+    types: Optional[set] = None
+    if layer:
+        types = set(UI_LAYER_TYPES.get(layer, []))
+    elif type:
+        types = {type}
     # 先按 id 取一个代表节点（最新版本），再聚合 versions
     latest_per_id: dict = {}
     for (id_, _ver), obj in idx.nodes.items():
@@ -87,9 +104,11 @@ def list_objects(type: Optional[str] = None,
     rows = []
     ql = q.lower() if q else None
     for id_, obj in latest_per_id.items():
-        if type and obj.type != type:
+        if types is not None and obj.type not in types:
             continue
         if nf and obj.nf != nf:
+            continue
+        if version and obj.version != version:
             continue
         if domain and obj.domain != domain:
             continue

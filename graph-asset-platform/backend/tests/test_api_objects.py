@@ -194,3 +194,31 @@ def test_subgraph_unknown_center_404(tmp_data_dir, monkeypatch):
     with TestClient(app) as c:
         r = c.get("/api/v1/subgraph", params={"center": "alpha@MMLCommand@NOPE"})
         assert r.status_code == 404
+
+
+def test_list_objects_filter_by_ui_layer(tmp_data_dir, monkeypatch):
+    """/objects?layer=命令层 返回 MMLCommand + ConfigObject，不含 Feature/Business。"""
+    feat = (
+        "---\n"
+        "id: alpha@Feature@F-1\n"
+        "type: Feature\n"
+        "nf: alpha\n"
+        "version: 20.15.2\n"
+        "---\n"
+        "# F-1\n"
+    )
+    _setup(tmp_data_dir, monkeypatch, {"cmd.md": CMD_EDGES, "cfg.md": CFG, "feat.md": feat})
+    with TestClient(app) as c:
+        rows = c.get("/api/v1/objects", params={"layer": "命令层"}).json()
+        types = {r["type"] for r in rows}
+        assert types == {"MMLCommand", "ConfigObject"}
+        # 特性层过滤
+        rows_f = c.get("/api/v1/objects", params={"layer": "特性层"}).json()
+        assert {r["type"] for r in rows_f} == {"Feature"}
+        # layer 与 nf+version 组合过滤
+        rows_v = c.get("/api/v1/objects",
+                       params={"layer": "命令层", "nf": "alpha",
+                               "version": "20.15.2"}).json()
+        ids = {r["id"] for r in rows_v}
+        assert "alpha@MMLCommand@ADD DEMO" in ids
+        assert "alpha@ConfigObject@DEMO_OBJ" in ids

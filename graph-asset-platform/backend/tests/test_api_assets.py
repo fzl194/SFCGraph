@@ -50,18 +50,22 @@ def _setup_service(tmp_data_dir, monkeypatch):
     return s
 
 
-def test_import_and_stats(tmp_data_dir, monkeypatch):
+def test_import_async_returns_job_and_done(tmp_data_dir, monkeypatch):
+    """异步导入：上传立即 202 + job_id(processing)；后台完成后 job 变 done。"""
     _setup_service(tmp_data_dir, monkeypatch)
     with TestClient(app) as c:
         r = c.post("/api/v1/import", files={"file": _zip_upload({"a.md": CMD})})
-        assert r.status_code == 200, r.text
+        assert r.status_code == 202, r.text
         body = r.json()
-        assert body["added"] == 1
-        assert body["updated"] == 0
-        assert body["skipped"] == 0
-        assert body["warnings"] == []
-        # counts 反映重建后的索引
-        assert body["counts"]["MMLCommand"] == 1
+        assert body["status"] == "processing"
+        assert body["job_id"]
+        # TestClient 会等 BackgroundTasks 执行完再返回响应（同步语义），故此时应已 done
+        j = c.get(f"/api/v1/import/jobs/{body['job_id']}").json()
+        assert j["status"] == "done"
+        assert j["added"] == 1
+        assert j["updated"] == 0
+        assert j["skipped"] == 0
+        assert j["warnings"] == []
 
         r2 = c.get("/api/v1/stats")
         assert r2.status_code == 200
@@ -77,12 +81,14 @@ def test_import_update_same_id_version(tmp_data_dir, monkeypatch):
     with TestClient(app) as c:
         c.post("/api/v1/import", files={"file": _zip_upload({"a.md": CMD})})
         r2 = c.post("/api/v1/import", files={"file": _zip_upload({"b.md": CMD})})
-        assert r2.status_code == 200
+        assert r2.status_code == 202
         body = r2.json()
+        j = c.get(f"/api/v1/import/jobs/{body['job_id']}").json()
         # 同 id 同版本 → updated
-        assert body["added"] == 0
-        assert body["updated"] == 1
-        assert body["counts"]["MMLCommand"] == 1  # 仍是 1 个节点
+        assert j["added"] == 0
+        assert j["updated"] == 1
+        # 仍是 1 个节点
+        assert c.get("/api/v1/stats").json()["object_counts_by_type"]["MMLCommand"] == 1
 
 
 def test_import_skips_invalid_records_warning(tmp_data_dir, monkeypatch):
@@ -91,11 +97,12 @@ def test_import_skips_invalid_records_warning(tmp_data_dir, monkeypatch):
     with TestClient(app) as c:
         r = c.post("/api/v1/import",
                    files={"file": _zip_upload({"bad.md": bad, "good.md": CMD})})
-        assert r.status_code == 200
+        assert r.status_code == 202
         body = r.json()
-        assert body["added"] == 1
-        assert body["skipped"] == 1
-        assert any("bad.md" in w for w in body["warnings"])
+        j = c.get(f"/api/v1/import/jobs/{body['job_id']}").json()
+        assert j["added"] == 1
+        assert j["skipped"] == 1
+        assert any("bad.md" in w for w in j["warnings"])
 
 
 def test_imports_log(tmp_data_dir, monkeypatch):
@@ -139,82 +146,65 @@ def test_export_filter_nf_excludes_other(tmp_data_dir, monkeypatch):
         assert all("beta" not in n for n in names)
 
 
-def test_overview_returns_business_nodes(tmp_data_dir, monkeypatch):
-    """overview 返回业务层节点 + 业务结构边；无业务层时退化为层摘要。"""
-    _setup_service(tmp_data_dir, monkeypatch)
-    # 业务层两段式 id：ObjectType@语义slug（split_id 解析为 type=ObjectType）
-    bd = (
-        "---\n"
-        "id: BusinessDomain@demo\n"
-        "type: BusinessDomain\n"
-        "domain: demo\n"
-        "name: Demo Domain\n"
-        "---\n"
-        "# Demo Domain\n"
-    )
-    ns = (
-        "---\n"
-        "id: NetworkScenario@demo-base\n"
-        "type: NetworkScenario\n"
-        "domain: demo\n"
-        "scenario: base\n"
-        "name: Demo Scenario\n"
-        "---\n"
-        "## 边\n"
-        "- belongs_to: [[BusinessDomain@demo]]\n"
-    )
-    with TestClient(app) as c:
-        c.post("/api/v1/import",
-               files={"file": _zip_upload({"bd.md": bd, "ns.md": ns, "cmd.md": CMD})})
-        r = c.get("/api/v1/overview")
-        assert r.status_code == 200
-        body = r.json()
-        ids = {n["id"] for n in body["nodes"]}
-        assert "BusinessDomain@demo" in ids
-        assert "NetworkScenario@demo-base" in ids
-        # alpha@MMLCommand@... 是 nf 范围 → 不出现在概览
-        assert "alpha@MMLCommand@ADD DEMO" not in ids
-        # 业务结构边
-        assert any(
-            e["from"] == "NetworkScenario@demo-base"
-            and e["to"] == "BusinessDomain@demo"
-            for e in body["edges"]
-        )
+
+# 多类型样例（命令层 + 特性层 + 业务层）测 /stats UI 层聚合
+CMD2 = (
+    "---\n"
+    "id: alpha@MMLCommand@ADD CMD2\n"
+    "type: MMLCommand\n"
+    "nf: alpha\n"
+    "version: 20.15.2\n"
+    "---\n"
+    "# ADD CMD2\n"
+)
+CFG2 = (
+    "---\n"
+    "id: alpha@ConfigObject@OBJ2\n"
+    "type: ConfigObject\n"
+    "nf: alpha\n"
+    "version: 20.15.2\n"
+    "object_kind: profile\n"
+    "---\n"
+    "# OBJ2\n"
+)
+FEAT = (
+    "---\n"
+    "id: alpha@Feature@F-100\n"
+    "type: Feature\n"
+    "nf: alpha\n"
+    "version: 20.15.2\n"
+    "---\n"
+    "# F-100\n"
+)
+BD = (
+    "---\n"
+    "id: BusinessDomain@demo\n"
+    "type: BusinessDomain\n"
+    "domain: demo\n"
+    "---\n"
+    "# Demo Domain\n"
+)
 
 
-def test_overview_layer_summary_when_no_business(tmp_data_dir, monkeypatch):
-    """业务层为空 → 退化为层摘要（nodes 是 Layer，无 edges）。"""
+def test_stats_ui_layer_aggregation(tmp_data_dir, monkeypatch):
+    """/stats per_layer 按 UI 层（4 个 Tab）聚合；ConfigObject 与 MMLCommand 合入命令层。"""
     _setup_service(tmp_data_dir, monkeypatch)
     with TestClient(app) as c:
-        c.post("/api/v1/import", files={"file": _zip_upload({"a.md": CMD})})
-        body = c.get("/api/v1/overview").json()
-        ids = {n["id"] for n in body["nodes"]}
-        assert "Command" in ids  # layer 名称
-        assert body["edges"] == []
-
-
-def test_browse_root_drill_paginate_filter(tmp_data_dir, monkeypatch):
-    _setup_service(tmp_data_dir, monkeypatch)
-    with TestClient(app) as c:
-        c.post("/api/v1/import", files={"file": _zip_upload({"a.md": CMD})})
-        # 根：应有 Command 目录（内部 _* 项被隐藏）
-        r = c.get("/api/v1/browse")
-        assert r.status_code == 200
-        assert "Command" in r.json()["dirs"]
-        # 钻到叶子目录 → 文件，id 由文件名派生
-        r2 = c.get("/api/v1/browse", params={"path": "Command/alpha/20.15.2"})
-        body2 = r2.json()
-        assert any(f["id"] == "alpha@MMLCommand@ADD DEMO" for f in body2["files"])
-        # q 过滤
-        r3 = c.get("/api/v1/browse",
-                   params={"path": "Command/alpha/20.15.2", "q": "ADD"})
-        assert any("ADD" in f["name"] for f in r3.json()["files"])
-        # 分页：limit=0 → 空页但 total_files 仍计全量
-        r4 = c.get("/api/v1/browse",
-                   params={"path": "Command/alpha/20.15.2", "limit": 0})
-        assert r4.json()["files"] == []
-        assert r4.json()["total_files"] >= 1
-        # 不存在目录 → 空
-        r5 = c.get("/api/v1/browse", params={"path": "Nope/None"})
-        assert r5.json() == {"path": "Nope/None", "dirs": [], "files": [],
-                             "total_files": 0, "offset": 0, "limit": 200}
+        c.post("/api/v1/import", files={"file": _zip_upload({
+            "cmd.md": CMD, "cmd2.md": CMD2, "cfg.md": CFG2,
+            "feat.md": FEAT, "bd.md": BD,
+        })})
+        s = c.get("/api/v1/stats").json()
+        per_layer = s["per_layer"]
+        # 4 个 UI 层且键名正确
+        assert set(per_layer.keys()) >= {"命令层", "特性层", "业务层"}
+        # 命令层 = MMLCommand(2) + ConfigObject(1) = 3
+        assert per_layer["命令层"] == 3
+        assert per_layer["特性层"] == 1
+        assert per_layer["业务层"] == 1
+        # per_layer_per_nf：命令层 alpha 下 3 个
+        assert s["per_layer_per_nf"]["命令层"]["alpha"] == 3
+        # per_layer_per_nf_per_version：命令层 alpha 20.15.2 下 3 个
+        assert s["per_layer_per_nf_per_version"]["命令层"]["alpha"]["20.15.2"] == 3
+        # per_domain：demo 下 1（业务对象；nf 对象无 domain）
+        assert s["per_domain"]["demo"] == 1

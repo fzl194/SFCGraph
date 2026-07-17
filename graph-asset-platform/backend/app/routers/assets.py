@@ -1,23 +1,28 @@
-"""assets router：bundle 导入 / 导出 / 导入记录 / 统计。
+"""assets router：bundle 导入（异步）/ 导出 / 导入记录 / 统计。
 
-- ``POST /import``  : multipart zip → import_bundle → rebuild → 追加 ``_imports.log``
-                      → 返回 ``{added, updated, skipped, warnings, counts}``。
-- ``GET  /imports`` : 上传记录列表。
-- ``GET  /export``  : 流式 zip（可选 ``nf/version/domain/scenario`` 过滤）。
-- ``GET  /stats``   : ``{object_counts_by_type, edge_count, nfs, versions_per_nf}``。
+- ``POST /import``         : multipart zip → 立即 202 + job_id；后台 ``_process_import``
+                             解压→归类→合并→重建→更新 job→追加 ``_imports.log``。
+- ``GET  /import/jobs``    : 活 job 列表（内存，processing/done/failed）。
+- ``GET  /import/jobs/{id}``: 单 job 状态（轮询用）。
+- ``GET  /imports``        : 历史导入日志（一行一条 JSON，完成时落盘）。
+- ``GET  /export``         : 流式 zip（可选 ``nf/version/domain/scenario`` 过滤）。
+- ``GET  /stats``          : 按 UI 层聚合的对象/边统计。
 
-``counts`` 与 ``/stats`` 一致，便于前端导入后直接刷新概览。
+注：``/imports``=历史持久化（与旧 ImportHistoryItem 字段一致，兼容），
+``/import/jobs``=实时活状态（内存）。两个端点共存。
 """
 import io
 import json
-from collections import Counter
+from collections import Counter, defaultdict
 
-from fastapi import APIRouter, File, UploadFile
+from fastapi import APIRouter, BackgroundTasks, File, HTTPException, UploadFile
 from fastapi.responses import StreamingResponse
 
 from ..bundle import export_bundle, import_bundle
 from .. import config as _config
-from ..service import get_service
+from ..jobs import create_job, get_job, list_jobs, update_job
+from ..service import get_service, import_lock
+from ..ui_layers import ui_layer_of
 
 router = APIRouter()
 
@@ -25,6 +30,18 @@ router = APIRouter()
 def _log_path():
     # 运行时从 config 取（测试 monkeypatch config.DATA_DIR 后生效）
     return _config.DATA_DIR / "_imports.log"
+
+
+def _append_import_log(record: dict) -> None:
+    """追加一条导入记录到 ``_imports.log``（一行 JSON）。
+
+    抽出来便于 ``_process_import`` 完成后写完整记录，保持 ``GET /imports`` 历史
+    兼容（字段与旧 ImportHistoryItem 一致）。
+    """
+    log_path = _log_path()
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    with log_path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
 def _counts(svc) -> dict:
@@ -38,28 +55,57 @@ def _edge_count(svc) -> int:
     return sum(len(v) for v in svc.index.out.values())
 
 
-@router.post("/import")
-async def do_import(file: UploadFile = File(...)):
-    data = await file.read()
+def _process_import(job_id: str, zip_bytes: bytes) -> None:
+    """后台导入：解压→归类→合并→重建→更新 job + 写历史日志。
+
+    用模块级 ``import_lock`` 串行化（导入+rebuild 必须原子化，否则读 API 可能
+    看到半导入状态）。任意失败不卡死 job——记 failed + error。
+    """
     svc = get_service()
-    res = import_bundle(data, svc.store, svc.registry)
-    svc.rebuild()  # 读 API 必须看到最新数据
-    # 追加导入记录（一行一条 JSON，便于 tail / 后续聚合）
-    log_path = _log_path()
-    log_path.parent.mkdir(parents=True, exist_ok=True)
-    with log_path.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(
-            {"added": res.added, "updated": res.updated,
-             "skipped": res.skipped, "warnings_n": len(res.warnings)},
-            ensure_ascii=False,
-        ) + "\n")
-    return {
-        "added": res.added,
-        "updated": res.updated,
-        "skipped": res.skipped,
-        "warnings": res.warnings,
-        "counts": _counts(svc),
-    }
+    try:
+        with import_lock:
+            res = import_bundle(zip_bytes, svc.store, svc.registry)
+            svc.rebuild()  # 读 API 必须看到最新数据
+        update_job(
+            job_id, status="done",
+            added=res.added, updated=res.updated,
+            skipped=res.skipped, warnings=res.warnings,
+        )
+        # 兼容 GET /imports：完成后写一条完整历史记录
+        _append_import_log({
+            "added": res.added, "updated": res.updated,
+            "skipped": res.skipped, "warnings_n": len(res.warnings),
+        })
+    except Exception as ex:  # noqa: BLE001 任意失败不卡死 job
+        update_job(job_id, status="failed", error=str(ex))
+
+
+@router.post("/import", status_code=202)
+async def do_import(file: UploadFile = File(...),
+                    bg: BackgroundTasks = BackgroundTasks()):
+    """异步导入：立即 202 + job_id，后台处理。
+
+    FastAPI TestClient（httpx）默认会等 BackgroundTasks 完成再返回响应，
+    故测试里 202 响应到达时 job 通常已 done；生产是真正异步。
+    """
+    data = await file.read()
+    job = create_job()
+    bg.add_task(_process_import, job.job_id, data)
+    return {"job_id": job.job_id, "status": "processing"}
+
+
+@router.get("/import/jobs")
+def jobs_list():
+    """活 job 列表（内存，按 started_at 倒序，最多 100）。"""
+    return [j.summary() for j in list_jobs()]
+
+
+@router.get("/import/jobs/{job_id}")
+def job_detail(job_id: str):
+    j = get_job(job_id)
+    if j is None:
+        raise HTTPException(status_code=404, detail="job 不存在")
+    return j.summary()
 
 
 @router.get("/imports")
@@ -94,120 +140,43 @@ def do_export(nf: str | None = None,
     )
 
 
+def _dd_to_plain(d):
+    """把 defaultdict 嵌套结构递归转成普通 dict（JSON 可序列化）。"""
+    if isinstance(d, dict):
+        return {k: _dd_to_plain(v) for k, v in d.items()}
+    return d
+
+
 @router.get("/stats")
 def stats():
-    svc = get_service()
-    return {
-        "object_counts_by_type": _counts(svc),
-        "edge_count": _edge_count(svc),
-        "nfs": sorted(svc.index.nfs()),
-        "versions_per_nf": svc.index.versions_per_nf(),
-    }
-
-
-# 业务层类型（scope=cross, layer=Business）—— 概览图以这些为根节点。
-_BUSINESS_TYPES = ("BusinessDomain", "NetworkScenario", "ConfigurationSolution")
-
-
-@router.get("/overview")
-def overview():
-    """业务层概览图（GraphView 默认渲染，无需指定对象）。
-
-    优先返回业务树：nodes = 所有 scope=cross 的对象（BD/NS/CS），
-    edges = 这些对象的出向边（构成 NS→CS / BD→NS 等业务结构）。
-    业务层为空时退化为层摘要：nodes = 各 layer（带 object_counts），无 edges。
-    payload 与 subgraph 同形：``{nodes:[{id,type,label}], edges:[{from,relation,to}]}``。
-    """
+    """统计：按 UI 层聚合 node 数（每个 md 实例；多版本计多次，与旧口径一致）。"""
     svc = get_service()
     idx = svc.index
 
-    business_nodes = []
-    seen_ids = set()
-    for (id_, _ver), obj in idx.nodes.items():
-        if obj.scope != "cross":
-            continue
-        if id_ in seen_ids:
-            continue
-        seen_ids.add(id_)
-        label = _node_label(obj.frontmatter, id_)
-        business_nodes.append({"id": id_, "type": obj.type, "label": label})
+    per_layer: defaultdict = defaultdict(int)
+    per_layer_per_nf: defaultdict = defaultdict(lambda: defaultdict(int))
+    per_layer_per_nf_per_version: defaultdict = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))
+    per_domain: defaultdict = defaultdict(int)
 
-    if business_nodes:
-        edges = []
-        for (id_, _ver), obj in idx.nodes.items():
-            if obj.scope != "cross":
-                continue
-            for e in idx.out_edges(id_, obj.version):
-                edges.append({
-                    "from": e.from_id,
-                    "relation": e.relation or "",
-                    "to": e.to,
-                })
-        return {"nodes": business_nodes, "edges": _dedup_edges(edges)}
-
-    # 退化：业务层为空 → 返回层摘要
-    layer_counts: Counter = Counter()
     for obj in idx.nodes.values():
-        if obj.layer:
-            layer_counts[obj.layer] += 1
-    layer_nodes = [
-        {"id": layer, "type": "Layer", "label": layer,
-         "object_count": count}
-        for layer, count in sorted(layer_counts.items())
-    ]
-    return {"nodes": layer_nodes, "edges": []}
+        ul = ui_layer_of(obj.layer)
+        per_layer[ul] += 1
+        if obj.nf:
+            per_layer_per_nf[ul][obj.nf] += 1
+            if obj.version:
+                per_layer_per_nf_per_version[ul][obj.nf][obj.version] += 1
+        if obj.domain:
+            per_domain[obj.domain] += 1
 
-
-def _node_label(fm: dict, fallback_id: str) -> str:
-    """优先用 name_zh/name frontmatter 字段；否则用 id 末段。"""
-    for key in ("name_zh", "name", "title"):
-        v = fm.get(key)
-        if isinstance(v, str) and v.strip():
-            return v.strip()
-    parts = fallback_id.split("@")
-    return parts[-1] if parts else fallback_id
-
-
-def _dedup_edges(edges: list) -> list:
-    """同 from+relation+to 去重（多版本/重复索引）。"""
-    seen = set()
-    out = []
-    for e in edges:
-        k = (e["from"], e["relation"], e["to"])
-        if k in seen:
-            continue
-        seen.add(k)
-        out.append(e)
-    return out
-
-
-@router.get("/browse")
-def browse(path: str = "", q: str | None = None, limit: int = 200, offset: int = 0):
-    """按目录懒加载资产树（治前端性能：展开某层只读该层子项，不再一次拉全量）。
-
-    - ``path``：assets 内相对目录（""=根，如 "Command/UDG/20.15.2"）。
-    - 返回该目录直接子目录 + 分页后的文件；文件 ``id`` 由文件名派生（去 ``.md``）。
-    - 隐藏 ``_`` 前缀内部项（``_index/``、``_imports.log``）。
-    - ``q``：文件名子串过滤；``limit/offset``：文件分页（大版本目录可有数千文件）。
-    """
-    svc = get_service()
-    dirs, files = svc.store.list_dir(path)
-    dirs = [d for d in dirs if not d.startswith("_")]
-    files = [f for f in files if not f.startswith("_")]
-    if q:
-        ql = q.lower()
-        files = [f for f in files if ql in f.lower()]
-    total = len(files)
-    page = files[offset:offset + limit]
-    file_objs = [
-        {"name": f, "id": f.removesuffix(".md") if f.endswith(".md") else f}
-        for f in page
-    ]
     return {
-        "path": path,
-        "dirs": dirs,
-        "files": file_objs,
-        "total_files": total,
-        "offset": offset,
-        "limit": limit,
+        "object_counts_by_type": _counts(svc),
+        "edge_count": _edge_count(svc),
+        "nfs": sorted(idx.nfs()),
+        "versions_per_nf": idx.versions_per_nf(),
+        "per_layer": dict(per_layer),
+        "per_layer_per_nf": _dd_to_plain(dict(per_layer_per_nf)),
+        "per_layer_per_nf_per_version": _dd_to_plain(
+            {k: dict(v) for k, v in per_layer_per_nf_per_version.items()}),
+        "per_domain": dict(per_domain),
     }
