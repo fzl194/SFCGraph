@@ -25,10 +25,12 @@
 ## File Structure（v2 改动锁定）
 
 **后端：**
-- 改 `app/routers/assets.py`：`POST /import` 异步化(202+job)、新增 `GET /import/jobs` & `/import/jobs/{id}`、`/stats` 扩充、**删 `/browse` 与 `/overview`**。
+- 改 `app/routers/assets.py`：`POST /import` 异步化(202+job)、新增 `GET /import/jobs` & `/import/jobs/{id}`、`/stats` 按 UI 层扩充、**删 `/browse` 与 `/overview`**（及 `_BUSINESS_TYPES`/`_node_label`/`_dedup_edges`）。
 - 新增 `app/jobs.py`：内存 ImportJob 注册表（create/get/list/update + 线程锁）。
-- 改 `app/service.py`：加 `import_lock`（导入+重建原子化，避免并发读不一致）。
-- 改 `tests/test_api_assets.py`：加异步导入/统计扩充测试；删 browse/overview 测试。
+- 新增 `app/ui_layers.py`：registry 层 → 4 UI 层映射 + UI 层→types（`/stats` 聚合、`/objects?layer=` 过滤、前端 syncTo/Tab 共用）。
+- 改 `app/service.py`：加**模块级** `import_lock`（导入+重建串行化；模块级避开测试 `Service.__new__` 绕过 `__init__` 的坑）。
+- 改 `app/routers/objects.py`：`list_objects` 加 `layer`(UI层→多type) + `version` 参数。
+- 改 `tests/test_api_assets.py`：加异步导入/统计/UI层 测试；删 browse/overview 测试。`test_api_objects.py` 加 layer/version 过滤测试。
 
 **前端：**
 - 新增 `src/composables/useNav.ts`：导航状态缓存（每层选择器/搜索/列表分页缓存）+ `syncTo(id)` 自动同步。
@@ -118,43 +120,37 @@ def update_job(jid: str, **kw) -> None:
 
 **Files:** Modify `app/routers/assets.py`, `app/service.py`; Test `tests/test_api_assets.py`.
 
-- [ ] **Step 1: service.py 加导入锁**（导入+重建原子化）：
+- [ ] **Step 1: service.py 加【模块级】导入锁**（导入+重建原子化）。
+  ⚠️ 必须**模块级**（不是实例属性）：测试夹具 `_setup_service` 用 `Service.__new__` 绕过 `__init__`，实例属性 `self.import_lock` 不会存在 → `with svc.import_lock` 会 AttributeError。
 ```python
 import threading
-class Service:
-    def __init__(self):
-        self.store = Store(ASSETS_DIR)
-        self.registry = Registry.load_default()
-        self.index = Index.build(self.store, self.registry)
-        self.import_lock = threading.Lock()
-_service = None
-def get_service() -> "Service": ...  # 同前
+import_lock = threading.Lock()   # 模块级：单例 service 跨线程共享，导入+重建串行化
 ```
 - [ ] **Step 2: assets.py 改 /import 为异步 + 新增 job 端点**：
 ```python
 from fastapi import BackgroundTasks, HTTPException
 from ..jobs import create_job, get_job, list_jobs
-from ..service import get_service
+from ..service import get_service, import_lock
 
 def _process_import(job_id: str, zip_bytes: bytes):
-    """后台：解压→归类→合并→重建→更新 job。单例 service 跨线程共享，加锁。"""
-    from ..service import get_service
+    """后台：解压→归类→合并→重建→更新 job。用模块级 import_lock 串行化。"""
     svc = get_service()
     try:
-        with svc.import_lock:
+        with import_lock:
             res = import_bundle(zip_bytes, svc.store, svc.registry)
             svc.rebuild()
         update_job(job_id, status="done", added=res.added, updated=res.updated,
                    skipped=res.skipped, warnings=res.warnings)
+        # 兼容 GET /imports：完成后写一条完整日志（与旧 ImportHistoryItem 字段一致）
+        _append_import_log({"added": res.added, "updated": res.updated,
+                            "skipped": res.skipped, "warnings_n": len(res.warnings)})
     except Exception as ex:  # 任意失败不卡死 job
         update_job(job_id, status="failed", error=str(ex))
 
 @router.post("/import", status_code=202)
 async def do_import(file: UploadFile = File(...), bg: BackgroundTasks = BackgroundTasks()):
     data = await file.read()
-    job = create_job()
-    # 记录到 _imports.log（job_id 便于追溯）
-    _append_import_log(job.job_id, "processing")
+    job = create_job()                       # 活状态在 job 表查（GET /import/jobs）
     bg.add_task(_process_import, job.job_id, data)   # 响应立即返回，后台处理
     return {"job_id": job.job_id, "status": "processing"}
 
@@ -169,7 +165,7 @@ def job_detail(job_id: str):
         raise HTTPException(404, "job 不存在")
     return j.summary()
 ```
-> `_append_import_log`：把原 `_imports.log` 写入逻辑抽成函数（job_id, status 一行 JSON）。`update_job` 完成后可再追加一行 done 记录（或只在 job 表查）。`import_bundle` / `svc.rebuild()` 保持同步函数（在后台线程内调用）。
+> **`_append_import_log(dict)`**：把原 `do_import` 里写 `_imports.log` 的逻辑抽成函数（一行 JSON）。**只在 `_process_import` 完成后写一条完整记录**（与旧 `ImportHistoryItem` 字段一致），保持 `GET /imports`（历史）兼容；活状态（processing/done/failed）由 `GET /import/jobs`（内存 job 表）提供。两个端点共存：/imports=历史、/import/jobs=实时。
 - [ ] **Step 3: 写测试**（异步导入）：上传后立即得 202 + job_id（status=processing）；轮询/直接跑后台函数后 job 变 done。
 ```python
 def test_import_async_returns_job(tmp_data_dir, monkeypatch):
@@ -191,9 +187,30 @@ def test_import_async_returns_job(tmp_data_dir, monkeypatch):
 
 **Files:** Modify `assets.py` `/stats`; Test.
 
-- [ ] **Step 1: 改 /stats**：
+- [ ] **Step 1: 定义 UI 层分组**（registry 有 6 层 `Command/ConfigObject/Feature/License/Task/Business`，但 UI 是 4 个层 Tab：命令层/特性层/任务层/业务层）。新增 `app/ui_layers.py`：
+```python
+# registry 层 → UI 层（4 个 Tab）。统计与前端 syncTo/Tab 共用此映射。
+REGISTRY_TO_UI = {
+    "Command": "命令层", "ConfigObject": "命令层",
+    "Feature": "特性层", "License": "特性层",
+    "Task": "任务层",
+    "Business": "业务层",
+}
+UI_LAYERS = ["命令层", "特性层", "任务层", "业务层"]
+# UI 层 → 该层包含的 type（供 /objects?layer= 过滤）
+UI_LAYER_TYPES = {
+    "命令层": ["MMLCommand", "ConfigObject"],
+    "特性层": ["Feature", "License"],
+    "任务层": ["Task"],
+    "业务层": ["BusinessDomain", "NetworkScenario", "ConfigurationSolution"],
+}
+def ui_layer_of(registry_layer: str) -> str:
+    return REGISTRY_TO_UI.get(registry_layer, registry_layer)
+```
+- [ ] **Step 2: 改 /stats** 按 **UI 层**聚合（注意：计 **node 数**=每个 md 实例；多版本对象按版本计多次，与旧 /stats 的 object_counts 口径一致；前端列表按 id 去重是另一回事，卡片显示 node 数）：
 ```python
 from collections import defaultdict
+from ..ui_layers import ui_layer_of
 @router.get("/stats")
 def stats():
     svc = get_service(); idx = svc.index
@@ -202,11 +219,12 @@ def stats():
     per_layer_per_nf_per_version = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     per_domain = defaultdict(int)
     for obj in idx.nodes.values():
-        per_layer[obj.layer] += 1
+        ul = ui_layer_of(obj.layer)
+        per_layer[ul] += 1
         if obj.nf:
-            per_layer_per_nf[obj.layer][obj.nf] += 1
+            per_layer_per_nf[ul][obj.nf] += 1
             if obj.version:
-                per_layer_per_nf_per_version[obj.layer][obj.nf][obj.version] += 1
+                per_layer_per_nf_per_version[ul][obj.nf][obj.version] += 1
         if obj.domain:
             per_domain[obj.domain] += 1
     def dd(d): return {k: (dd(v) if isinstance(v, dict) else v) for k, v in d.items()}
@@ -219,19 +237,55 @@ def stats():
         "per_domain": dict(per_domain),
     }
 ```
-- [ ] **Step 2: 测试**（导入含命令+业务对象 → /stats 返回 per_layer/per_layer_per_nf/per_domain 正确）。
-- [ ] **Step 3: 跑绿**；全量 `pytest -q` 绿。
-- [ ] **Step 4: Commit**。
+- [ ] **Step 3: 测试**（导入命令+配置对象+特性+业务对象 → /stats per_layer 只有 4 个 UI 层键：命令层含 MMLCommand+ConfigObject 合计；per_domain 正确）。
+- [ ] **Step 4: 跑绿**；全量 `pytest -q` 绿。
+- [ ] **Step 5: Commit**。
+
+### Task 1.5: /objects 加 `layer`(UI层) + `version` 过滤参数
+
+**Files:** Modify `app/routers/objects.py` `list_objects`; Test `tests/test_api_objects.py`.
+> LayerNav 的层 Tab + 版本选择器需要：按 UI 层(命令层=命令+配置对象)过滤 + 按版本过滤。现有 `list_objects` 只有 `type/q/nf/domain/page/size`，缺 `layer` 与 `version`。
+- [ ] **Step 1: 改 `list_objects`** 加 `layer: str | None`（UI 层→多 type 过滤）+ `version: str | None`：
+```python
+from ..ui_layers import UI_LAYER_TYPES
+@router.get("/objects")
+def list_objects(type=None, layer=None, q=None, nf=None, version=None,
+                 domain=None, page=1, size=50):
+    idx = get_service().index
+    types = None
+    if layer:
+        types = set(UI_LAYER_TYPES.get(layer, []))
+    elif type:
+        types = {type}
+    seen = {}
+    for (id_, ver), obj in idx.nodes.items():
+        if types is not None and obj.type not in types: continue
+        if nf and obj.nf != nf: continue
+        if version and obj.version != version: continue
+        if domain and obj.domain != domain: continue
+        if q and q.lower() not in id_.lower() and q.lower() not in str(obj.frontmatter.get("name","")).lower(): continue
+        if id_ in seen:
+            seen[id_]["versions"] = idx.versions_of(id_); continue
+        seen[id_] = {"id": id_, "type": obj.type, "nf": obj.nf, "domain": obj.domain,
+                     "version": obj.version, "name": obj.frontmatter.get("name"),
+                     "versions": idx.versions_of(id_)}
+    rows = list(seen.values())
+    start = (page-1)*size
+    return rows[start:start+size]
+```
+- [ ] **Step 2: 测试**：`/objects?layer=命令层` 返回 MMLCommand+ConfigObject；`?layer=命令层&nf=UDG&version=20.15.2` 进一步过滤。
+- [ ] **Step 3: 跑绿**；Commit。
 
 ### Task 1.4: 清理 /browse、/overview + 相关测试
 
 **Files:** Modify `assets.py`（删两个端点）、`store.py`（删 `list_dir`）、`test_api_assets.py`（删 browse/overview 测试）。
 
-- [ ] **Step 1:** 删 `assets.py` 的 `@router.get("/browse")` 与 `@router.get("/overview")`（及 `_node_label`/`_dedup_edges` 仅 overview 用的辅助）。
+- [ ] **Step 1:** 删 `assets.py` 的 `@router.get("/browse")` 与 `@router.get("/overview")`，及仅它们用的辅助：`_node_label`、`_dedup_edges`、`_BUSINESS_TYPES` 常量。
 - [ ] **Step 2:** 删 `store.py` 的 `list_dir`（仅 /browse 用）。
 - [ ] **Step 3:** 删 `test_api_assets.py` 里 `test_browse_*` 与 `test_overview_*`。
-- [ ] **Step 4:** 全量 `pytest -q` 绿。
-- [ ] **Step 5: Commit**。
+- [ ] **Step 4:** grep 兜底：`grep -rn "list_dir\|/browse\|overview\|_BUSINESS_TYPES" backend/app/` 应无残留引用。
+- [ ] **Step 5:** 全量 `pytest -q` 绿。
+- [ ] **Step 6: Commit**。
 
 **Chunk 1 完成**：后端异步导入 + 统计扩充 + 清理。派发 plan-document-reviewer 审 Chunk 1。
 
@@ -250,11 +304,11 @@ def stats():
 
 **Files:** Create `src/composables/useNav.ts`.
 - [ ] **实现要点**：
-  - 模块级单例 reactive 状态（全局缓存）：`activeLayer`（'Command'|'Feature'|'Task'|'Business'）；各层选择器 `sel = { nf, version, type, domain, scenario, q }`；`listCache`（key=`层|nf|version|page` → {rows,total}）；`selectedId`。
-  - `loadList(layer)`：按层+选择器调 `listObjects`（type=该层类型集合），分页，写 listCache。
+  - **UI 层常量**（前端镜像后端 `ui_layers.py`，4 个 Tab）：`UI_LAYERS=['命令层','特性层','任务层','业务层']`；`TYPE_TO_UI={MMLCommand/ConfigObject→命令层, Feature/License→特性层, Task→任务层, BusinessDomain/NetworkScenario/ConfigurationSolution→业务层}`。
+  - 模块级单例 reactive 状态（全局缓存）：`activeLayer`（命令层/特性层/任务层/业务层之一）；各层选择器 `sel = { nf, version, type, domain, scenario, q }`；`listCache`（key=`层|nf|version|type|domain|scenario|q|page` 全量 → {rows,total}）；`selectedId`。
+  - `loadList()`：按 activeLayer + 选择器调 `listObjects({layer: activeLayer, nf, version, domain, page, size})`（用后端新 `layer`+`version` 参数），分页，写 listCache（命中则不请求）。
   - `selectLayer(l)`：切层（保留各层已缓存选择器/列表，不重拉）。
-  - **`syncTo(id)`**：调 `getObject(id)` 取 type/nf/version/domain/scenario → 推断层（type→layer 映射：MMLCommand/ConfigObject→Command；Feature/License→Feature；Task→Task；BusinessDomain/NetworkScenario/ConfigurationSolution→Business）→ 设 activeLayer + 选择器(nf/version 或 domain/scenario) → 刷新列表 → 设 selectedId（列表高亮 + 滚动）。
-- [ ] type→layer 映射抽成常量表（与后端 registry layer 对齐）。
+  - **`syncTo(id)`**：调 `getObject(id)` 取 type/nf/version/domain/scenario → `TYPE_TO_UI[type]` 得 UI 层 → 设 activeLayer + 选择器(业务层用 domain/scenario，其余 nf/version) → loadList → 设 selectedId（列表高亮 + scrollIntoView）。
 - [ ] Commit。
 
 ### Task 2.3: 路由 + 顶栏改三菜单
@@ -274,9 +328,9 @@ def stats():
 
 **Files:** Create `src/components/LayerNav.vue`（替代 AssetTree）.
 - [ ] **结构**：
-  - 顶部 4 层 Tab（el-tabs / 按钮组）。
-  - 当前层选择器：Command/Feature/Task → `网元 el-select + 版本 el-select + 类型 el-select + 搜索 el-input`；Business → `域 el-select + 场景 el-select`（无版本）。
-  - 列表：**el-table-v2 虚拟表**（列：id[等宽] + type badge），数据来自 `useNav.loadList`（分页/虚拟），只渲染可见行。
+  - 顶部 4 个 **UI 层 Tab**（命令层/特性层/任务层/业务层，用 `UI_LAYERS`）。
+  - 当前层选择器：命令层/特性层/任务层 → `网元 el-select + 版本 el-select + 类型 el-select(命令层:命令/配置对象;特性层:特性/license) + 搜索`；业务层 → `域 el-select + 场景 el-select`（无版本）。选择器变化 → useNav 更新 → loadList（命中缓存不请求）。
+  - 列表：**el-table-v2 虚拟表**（列：id[等宽] + type badge），数据来自 `useNav.loadList`（走 `/objects?layer=&nf=&version=&domain=`），只渲染可见行。
   - 选择器/层变化 → useNav 更新 + 重新 loadList（命中缓存则不请求）。
   - 点行 → `useNav.selectedId = id`（联动中栏+右栏）。
   - 高亮：`selectedId` 对应行高亮 + scrollIntoView。
@@ -330,8 +384,9 @@ def stats():
 
 ### Task 5.1: 全量验证 + 联调 + README 更新
 - [ ] 后端 `pytest -q` 全绿。
-- [ ] 前端 `npm run build` 绿（vue-tsc 过）。
-- [ ] 联调（后端 :8000 + 前端 dev）：图谱浏览层Tab/选择器/列表/缓存/跳转同步；统计卡；上传异步。
+- [ ] 前端 `npm run build` 绿（vue-tsc 过；会捕获悬空 import）。
+- [ ] grep 兜底无悬空引用：`grep -rn "browse\|overview\|AssetTree\|AssetsView\|GraphView" frontend/src/ backend/app/` 应空。
+- [ ] 联调（后端 :8000 + 前端 dev）：图谱浏览层Tab/选择器/列表/缓存/跳转同步；统计卡(4层)；上传异步(不卡)。
 - [ ] README 更新（新菜单 IA + 异步导入说明 + 启动）。
 - [ ] grep 无业务名；git 自检无夹带。
 - [ ] Commit。
