@@ -332,6 +332,8 @@ body {
   padding: var(--space-2) var(--space-3);
   text-align: left;
   vertical-align: top;
+  overflow-wrap: anywhere;       /* 长 token/命令串在单元格内换行，不撑爆表格 */
+  word-break: break-word;
 }
 
 .md-body th {

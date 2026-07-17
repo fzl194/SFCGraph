@@ -128,7 +128,9 @@ const emit = defineEmits<{ (e: 'navigate', id: string): void }>()
 const router = useRouter()
 
 const md = new MarkdownIt({
-  html: false,
+  // html:true 让源 md 单元格里的 <br>（命令参数表大量使用）渲染成换行；
+  // 渲染结果会再经 DOMPurify 消毒，安全。
+  html: true,
   linkify: true,
   breaks: false,
   typographer: false,
