@@ -6,8 +6,9 @@
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from .routers import assets as assets_router
@@ -36,3 +37,17 @@ app.include_router(objects_router.router, prefix="/api/v1")
 _dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
 if _dist.exists():
     app.mount("/", StaticFiles(directory=_dist, html=True), name="spa")
+
+
+@app.exception_handler(404)
+async def spa_fallback(request: Request, exc: Exception):
+    """SPA 兜底：非 API 路径 404 → 回 index.html（支持前端路由刷新/深链）；
+    API 404 保留原 JSON detail（如对象不存在的提示）。"""
+    path = request.url.path
+    if path.startswith("/api/"):
+        detail = getattr(exc, "detail", "Not Found")
+        return JSONResponse(status_code=404, content={"detail": detail})
+    index = _dist / "index.html"
+    if index.exists():
+        return FileResponse(index)
+    return JSONResponse(status_code=404, content={"detail": "Not Found"})
