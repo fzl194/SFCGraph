@@ -1,8 +1,16 @@
-# 图谱资产管理平台 (Graph Asset Platform) v1
+# 图谱资产管理平台 (Graph Asset Platform) v2
 
-一个**独立**的图谱资产管理平台：上传 md 资产包 → 自动解压、分析、归类合并进**唯一统一资产库** → 用通用机制解析对象/边 → 提供**读 API（单对象 / 单跳）**和**三栏只读前端**浏览游走 → 可导出。
+一个**独立**的图谱资产管理平台：上传 md 资产包 → 自动解压、分析、归类合并进**唯一统一资产库** → 用通用机制解析对象/边 → 提供**读 API（单对象 / 单跳）**和**三菜单前端**（图谱浏览 / 统计 / 上传）浏览游走 → 可导出。
 
 > 与仓库里的 `assets/` **完全无关**——平台自管一份资产库，导入即权威。
+
+## 前端界面（v2，三菜单）
+
+- **图谱浏览**（默认页，三栏）：左=层 Tab 导航（命令层/特性层/任务层/业务层 + 网元/版本/类型选择器 + 虚拟列表，扛 4577 命令不卡）；中=对象 md（frontmatter 面板 + 正文 + 底部 `## 边` 可点跳转）；右=当前对象单跳邻居图谱。中栏 wiki 链接 / 右栏邻居点击 → 左栏自动切层+选择器+高亮（前端缓存，跨栏跳转不丢上下文）。
+- **统计**：卡片式按层统计（命令层/特性层/任务层/业务层，命令层下按网元+版本），前期纯数字。
+- **上传**：拖 zip → **异步导入**（后端后台解压+建索引，前端不转圈，状态条 处理中→完成）。
+
+> v1 设计 spec：`docs/superpowers/specs/2026-07-16-graph-asset-platform-design.md`；v2 前端重构 spec：`docs/superpowers/specs/2026-07-17-graph-asset-platform-v2-frontend-design.md`。
 
 ## 资产格式（权威：`三层图谱构建规范/command`）
 
@@ -80,11 +88,13 @@ curl -F "file=@sample.zip" http://localhost:8000/api/v1/import
 
 | 端点 | 说明 |
 |---|---|
-| `POST /import` | 上传 zip 合并进资产库 → `{added, updated, skipped, warnings, counts}` |
-| `GET /imports` | 上传记录 |
+| `POST /import` | **异步**上传 zip → 202 `{job_id, status}`；后台解压+建索引 |
+| `GET /import/jobs` | 导入任务列表（活状态：processing/done/failed + added/updated） |
+| `GET /import/jobs/{id}` | 单任务状态 |
+| `GET /imports` | 上传历史（完成记录） |
 | `GET /export?nf=&version=&domain=&scenario=` | 导出资产库（可切片）→ zip |
-| `GET /stats` | 对象/边计数、nfs、versions_per_nf |
-| `GET /objects?type=&q=&nf=&domain=&page=&size=` | 列对象（按 id 聚合 + versions[]） |
+| `GET /stats` | 计数 + `per_layer`(4 UI层) / `per_layer_per_nf` / `per_layer_per_nf_per_version` / `per_domain` |
+| `GET /objects?layer=&type=&q=&nf=&version=&domain=&page=&size=` | 列对象（**layer**=UI层 命令层/特性层/任务层/业务层；`version` 过滤；按 id 聚合 + versions[]） |
 | `GET /objects/{id}?version=` | 单对象（不带版本=最新现存；带 `?version=` 指定） |
 | `GET /objects/{id}/neighbors?hops=1&version=` | 单跳邻居（含反链） |
 | `GET /objects/{id}/md?version=` | 原始 md |
