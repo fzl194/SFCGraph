@@ -33,8 +33,13 @@ class Index:
     @classmethod
     def build(cls, store: Store, registry: Registry) -> "Index":
         idx = cls()
+        files = store.list_md()
+        total = len(files)
+        print(f"[index] 开始解析 {total} 个 md…", flush=True)
         # 第 1 趟：建节点 + 聚合 versions + 收集原始边
-        for rel in store.list_md():
+        for i, rel in enumerate(files, 1):
+            if total >= 2000 and i % 2000 == 0:
+                print(f"[index] 已解析 {i}/{total}…", flush=True)
             try:
                 text = store.read(rel)
                 fm, body, edge_sec = parse_md(text)

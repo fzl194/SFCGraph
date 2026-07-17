@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
     # 4585 个对象首次建索引约 10s，给进度日志避免"看起来卡住"。
     import time
     t0 = time.time()
-    print("[startup] 正在加载资产库并构建索引（首次约 10s，请稍候）…", flush=True)
+    print("[startup] 正在加载资产库并构建索引（数据量大时可能数十秒，期间会打印进度，请稍候）…", flush=True)
     svc = get_service()
     print(
         f"[startup] 索引就绪：{len(svc.index.nodes)} 个对象，"
