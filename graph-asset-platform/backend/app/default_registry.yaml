@@ -24,6 +24,22 @@ object_types:
     scope: nf
     id_segments: 3
     frontmatter_required: [id, type, nf, version]
+  # 任务层 3 个子类型（原子/步骤/特性 Task）——与 Task 同层同 scope，均带 nf/version
+  AtomTask:
+    layer: Task
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  CompoundTask:
+    layer: Task
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  FeatureTask:
+    layer: Task
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
   BusinessDomain:
     layer: Business
     scope: cross

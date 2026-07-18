@@ -129,6 +129,20 @@ def list_objects(type: Optional[str] = None,
     return rows[start:start + size]
 
 
+# ---------- /names ----------
+
+@router.get("/names")
+def names():
+    """返回 {id: name} 字典（每 id 取最新版本的 name），供前端把正文 [[ID]] 渲染成可读名。"""
+    idx = get_service().index
+    latest_per_id: dict = {}
+    for (id_, _ver), obj in idx.nodes.items():
+        cur = latest_per_id.get(id_)
+        if cur is None or (obj.version or "") > (cur.version or ""):
+            latest_per_id[id_] = obj
+    return {id_: obj.frontmatter.get("name") for id_, obj in latest_per_id.items()}
+
+
 # ---------- /objects/{id} ----------
 
 @router.get("/objects/{id_}")

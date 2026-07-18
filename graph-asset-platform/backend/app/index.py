@@ -11,7 +11,7 @@
 from collections import defaultdict
 from typing import Optional
 
-from .edges import parse_edges
+from .edges import parse_edges, extract_implicit_edges
 from .logical_id import split_id
 from .md_parser import parse_md
 from .models import Object, Edge
@@ -81,6 +81,11 @@ class Index:
             # 出边（from = 当前节点）
             for e in parse_edges(edge_sec, from_id=id_, from_version=version):
                 idx.out[key].append(e)
+            # 隐式边：仅当无 ## 边 时（任务类等）从 ref + 正文内联 [[...]] 补边。
+            # 有 ## 边 时不补（## 边 已权威，避免与 ref 重复同一目标）。
+            if not edge_sec.strip():
+                for e in extract_implicit_edges(fm, body, id_, version, include_body_links=True):
+                    idx.out[key].append(e)
         # 把聚合后的 versions 列表回填到每个节点
         for key, obj in idx.nodes.items():
             obj.versions = sorted(idx.versions[obj.id])

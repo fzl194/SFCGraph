@@ -152,6 +152,21 @@ export const listObjects = (p: {
 export const getObject = (id: string, version?: string): Promise<ObjectDetail> =>
   _req<ObjectDetail>(`${BASE}/objects/${encodeURIComponent(id)}${qs({ version })}`)
 
+// id→name 映射（供正文 [[ID]] 渲染可读名）；进程内缓存，首次后只命中内存
+let _nameMap: Map<string, string> | null = null
+let _nameMapPromise: Promise<Map<string, string>> | null = null
+
+export async function getNameMap(): Promise<Map<string, string>> {
+  if (_nameMap) return _nameMap
+  if (!_nameMapPromise) {
+    _nameMapPromise = _req<Record<string, string>>(`${BASE}/names`).then((d) => {
+      _nameMap = new Map(Object.entries(d || {}))
+      return _nameMap
+    })
+  }
+  return _nameMapPromise
+}
+
 export const neighbors = (
   id: string,
   version?: string,

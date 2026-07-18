@@ -21,6 +21,9 @@ export const TYPE_TO_UI: Record<string, UiLayer> = {
   ConfigObject: '命令层',
   Feature: '特性层',
   License: '特性层',
+  AtomTask: '任务层',
+  CompoundTask: '任务层',
+  FeatureTask: '任务层',
   Task: '任务层',
   BusinessDomain: '业务层',
   NetworkScenario: '业务层',
@@ -31,7 +34,7 @@ export const TYPE_TO_UI: Record<string, UiLayer> = {
 export const UI_LAYER_TYPES: Record<UiLayer, string[]> = {
   命令层: ['MMLCommand', 'ConfigObject'],
   特性层: ['Feature', 'License'],
-  任务层: ['Task'],
+  任务层: ['AtomTask', 'CompoundTask', 'FeatureTask', 'Task'],
   业务层: ['BusinessDomain', 'NetworkScenario', 'ConfigurationSolution'],
 }
 

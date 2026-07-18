@@ -24,7 +24,7 @@ UI_LAYERS = ["命令层", "特性层", "任务层", "业务层"]
 UI_LAYER_TYPES = {
     "命令层": ["MMLCommand", "ConfigObject"],
     "特性层": ["Feature", "License"],
-    "任务层": ["Task"],
+    "任务层": ["AtomTask", "CompoundTask", "FeatureTask", "Task"],
     "业务层": ["BusinessDomain", "NetworkScenario", "ConfigurationSolution"],
 }
 

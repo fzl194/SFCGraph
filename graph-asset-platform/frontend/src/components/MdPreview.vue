@@ -117,7 +117,7 @@
 import { computed, ref, watch } from 'vue'
 import MarkdownIt from 'markdown-it'
 import DOMPurify from 'dompurify'
-import { getObject, availableVersionsFromError, type Edge, type ObjectDetail } from '../api'
+import { getObject, getNameMap, availableVersionsFromError, type Edge, type ObjectDetail } from '../api'
 
 const props = defineProps<{ objectId: string | null }>()
 const emit = defineEmits<{ (e: 'navigate', id: string): void }>()
@@ -236,8 +236,9 @@ async function load(id: string, ver?: string): Promise<void> {
     // body_md 已由后端 md_parser 归一化换行 + 折叠表格内部空行（纯正文，干净 LF）。
     const body = (obj.body_md || '').replace(/\r/g, '')
     const rendered = md.render(body)
-    // 对渲染后的 html 做内联 wikilink 替换为可点击 a
-    const finalHtml = inlineLinksIntoHtml(rendered)
+    // 正文 [[ID]] 替换为可点击 a，显示文本查目标 name（无则显 ID）
+    const names = await getNameMap()
+    const finalHtml = inlineLinksIntoHtml(rendered, names)
     html.value = DOMPurify.sanitize(finalHtml, {
       ADD_ATTR: ['data-wiki-id', 'target', 'rel'],
     })
@@ -259,14 +260,16 @@ async function load(id: string, ver?: string): Promise<void> {
 
 // 把 markdown-it 渲染后的 HTML 里的 [[X]]（出现在纯文本节点里）替换成可点击 a。
 // markdown-it 对 [[ 不做特殊处理，原样保留在文本里。
-function inlineLinksIntoHtml(rendered: string): string {
+function inlineLinksIntoHtml(rendered: string, names: Map<string, string>): string {
   // 对每个 [[X]]，整体替换为 a 标签。X 不含 ] 与换行。
+  // 显示文本 = 目标 name（查 names 映射），无则显 ID 本身；title 保留 ID。
   return rendered.replace(/\[\[([^\]\n]+?)\]\]/g, (_m, id: string) => {
     const t = id.trim()
+    const display = names.get(t) || t
     const safeAttr = escapeAttr(t)
-    return `<a class="wiki-link" data-wiki-id="${safeAttr}" href="#" rel="wikilink">${escapeHtml(
+    return `<a class="wiki-link" data-wiki-id="${safeAttr}" href="#" rel="wikilink" title="${escapeAttr(
       t,
-    )}</a>`
+    )}">${escapeHtml(display)}</a>`
   })
 }
 

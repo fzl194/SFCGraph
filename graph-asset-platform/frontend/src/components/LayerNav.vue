@@ -177,6 +177,9 @@ const typeOptions = computed(() => {
     ConfigObject: '配置对象',
     Feature: '特性',
     License: 'License',
+    AtomTask: '原子Task',
+    CompoundTask: '步骤Task',
+    FeatureTask: '特性Task',
     Task: '任务',
   }
   return types.map((t) => ({ value: t, label: labelMap[t] ?? t }))
