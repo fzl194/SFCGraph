@@ -134,6 +134,30 @@ def list_objects(type: Optional[str] = None,
     return rows[start:start + size]
 
 
+# ---------- /domains ----------
+
+@router.get("/domains")
+def list_domains_with_md():
+    """一次性返回全部业务域的完整 md（``[{id, name, md}, ...]``）。
+
+    业务域是用户最优先的业务归属定位层——数量少（跨 NF 类，version 恒 null），
+    Agent 入口直接取全部域 md，免去"先 GET id 再 POST /md"两步。其他层级仍按
+    ``POST /md`` 沿 ``[[ID]]`` 引用下钻，本端点仅服务于业务域这一特殊层。
+    """
+    idx = get_service().index
+    latest: dict = {}
+    for (id_, _ver), obj in idx.nodes.items():
+        if obj.type != "BusinessDomain":
+            continue
+        cur = latest.get(id_)
+        if cur is None or (obj.version or "") > (cur.version or ""):
+            latest[id_] = obj
+    return [
+        {"id": id_, "name": obj.frontmatter.get("name"), "md": obj.raw_md}
+        for id_, obj in latest.items()
+    ]
+
+
 # ---------- /names ----------
 
 @router.get("/names")

@@ -309,6 +309,7 @@ _BD = (
     "id: BusinessDomain@demo\n"
     "type: BusinessDomain\n"
     "domain: demo\n"
+    "name: 演示域\n"
     "---\n"
     "# demo domain\n"
 )
@@ -369,3 +370,16 @@ def test_stats_per_domain_scenario(tmp_data_dir, monkeypatch):
         assert s["per_domain_scenario"]["demo"]["demo-scenario"] == 2
         # 业务层计数 = 3
         assert s["per_layer"]["业务层"] == 3
+
+
+def test_domains_endpoint_returns_business_domain_md(tmp_data_dir, monkeypatch):
+    """/domains 一次性返全部 BusinessDomain 的 {id,name,md}（Agent 入口，只含 BD）。"""
+    _setup(tmp_data_dir, monkeypatch, {"bd.md": _BD, "ns.md": _NS, "cs.md": _CS})
+    with TestClient(app) as c:
+        rows = c.get("/api/v1/domains").json()
+        ids = {r["id"] for r in rows}
+        # 只含 BusinessDomain，不含 NS/CS
+        assert ids == {"BusinessDomain@demo"}
+        item = rows[0]
+        assert item["name"] is not None
+        assert "demo domain" in item["md"]  # 完整 md（含正文）
