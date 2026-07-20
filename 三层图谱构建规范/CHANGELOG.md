@@ -28,6 +28,37 @@
 
 ---
 
+## [0.14.0] - 2026-07-20
+
+### 变更（business/ 层包补齐 + 业务层输出格式对齐新约定）
+- **business/ 从"仅种 agent.md"补齐为完整层包**：新增 `SKILL.md`（Procedure：7 步 CS 流程 + 复用判定 + 特性关系矩阵 + 前置门 + 双向回填 + 族内顺序，沿用旧 `assets/business/业务层级构建SOP.md`）、`check.md`（R1 5 维度 + R2 辅助 + 严重级，沿用旧审视流程）、`字段定义.md`（BD/NS/CS 字段权威）、`template/`（business_domain / network_scenario / configuration_solution 三骨架）、`change-requests/README.md`；更新 `agent.md`。
+- **业务层输出格式对齐 v0.13.0 新约定**（输入 = 老 `assets/business/`，输出格式全部翻新）：
+  - **ID**：两段 `Type@slug`（业务跨 UDG+UNC，无 nf/version，与平台 `default_registry.yaml` 一致）
+  - **资产位置**：`三层图谱资产/Business/{domain}/[{scenario}/]`（domain/scenario 树保留，权威 = `classify.py` + registry `path_fields`）
+  - **引用**：裸 `[[逻辑ID]]`（与 `## 边` 同源，无路径无 .md），**取代**旧 `[名](assets根路径.md)` / 编号引用（`2-00006` → `[[UDG@FeatureTask@...]]`）
+  - **关系段**：`## 关联`（叙述）→ `## 边`（typed edges：下游场景 / 上游域 / 编排特性 / 复用步骤·命令 / 被引用于）
+  - **frontmatter**：6 字段 → 7 字段（+ `name_zh`，对齐其他层）；BD 无 scenario；无 nf/version/ref
+  - **无证据**：业务层不建证据文件/不设 `## 证据` 段（同 task 层）；md 结构统一 **YAML 顶 → 内容中 → `## 边` 底**（`## 边` 承载 BD↔NS↔CS↔task 双向关系，必为最后一段）
+- **scripts/ 与层包标准**：business 不建 `scripts/`（Procedure 体裁，无构建脚本）；`层包标准.md §2` 加脚注"Procedure 体裁层（task/business）若无构建脚本可省略 scripts/，须在 SKILL.md 说明"。
+- **License 去重修复（附带，issue #1）**：`feature/scripts/build_licenses.py` 的 manifest `licenses` 列表现在按 logical_id 去重（同一 license 跨多源文档重复登记导致 UNC `license_count` 虚高 773→实际 448）；UNC manifest 已就地修正为 448。
+- **命名规范-建议修正（附带，issue #3）**：`conventions/命名规范-建议.md` 过时的"4 段 ID"建议改为实际落地的"3 段 `{nf}@{Type}@{local}`（version 不进 ID）"，并补 task 弃编号、文件名=完整 ID 等已落地共识。
+
+### 为什么
+- task 层已按新约定落地，business 层作为最上层必须对齐，否则跨层引用（CS→FeatureTask）断链。
+- 平台后端（`graph-asset-platform`）的 `default_registry.yaml` 已定义业务层为 cross scope / 2 段 ID / `Business/{domain}/[{scenario}/]` 路径——业务层规范须与此一致，否则平台扫描 classify 失败。
+
+### 影响哪些文件
+- 新增：`business/SKILL.md`、`business/check.md`、`business/字段定义.md`、`business/template/*.md.tpl`（3 个）、`business/change-requests/README.md`
+- 修改：`business/agent.md`、`层包标准.md`（§2 脚注 + §5 状态）、`README.md`（状态表）、`VERSION`、`CHANGELOG.md`
+- 修复：`feature/scripts/build_licenses.py`、`三层图谱资产/License/UNC/20.15.2/_build_manifest.json`、`conventions/命名规范-建议.md`
+- 设计文档：`docs/superpowers/specs/2026-07-20-business-layer-spec-design.md`
+
+### 对已建资产的影响
+- **无（规范层变更，不改已建资产）**。业务层资产仍在老位置 `assets/business/`（旧格式），**资产迁移 `assets/business/` → `三层图谱资产/Business/`（含 ID/引用重写）是后续单独任务**，不在本次范围。
+- License UNC manifest 已就地修正（448，与磁盘一致），无需重建。
+
+---
+
 ## [0.13.0] - 2026-07-18
 
 ### 变更（文档引用统一为 `[[逻辑ID]]` + 三层落地 + 前端查名渲染）

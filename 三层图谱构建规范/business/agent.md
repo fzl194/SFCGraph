@@ -23,15 +23,18 @@
 - `business/SKILL.md` + 字段定义 + template
 
 ## 输出
-- 业务层资产（BD/NS/CS md）
-- 该批 build manifest
+- 业务层资产（BD/NS/CS md，落 `三层图谱资产/Business/{domain}/[{scenario}/]`）
+- 业务层无 build manifest（Procedure 体裁，非脚本流水线；平台按 registry 扫描聚合）
 
 ## 执行依据
-- `business/SKILL.md`（待共创）
+- `business/SKILL.md`（构建方法，Procedure）
+- `business/字段定义.md` + `business/template/`
 
 ## 系统提示要点
-- CS 引用 task/feature 时双向链接必须回填到被引对象
-- 不杜撰特性/task，只编排已存在的
+- 业务层**跨 NF**：ID 两段 `Type@slug`，不带 nf/version；位置 `三层图谱资产/Business/{domain}/[{scenario}/]`
+- 所有图谱对象引用统一裸 `[[逻辑ID]]`（与 `## 边` 同源）；关系进 `## 边`（typed edges），不用旧 `## 关联` + 路径链接
+- CS 引用 FeatureTask/CompoundTask/AtomTask 时，**双向链接必须回填**到被引对象 `## 边` 的 `被引用于`
+- 不杜撰特性/task，只编排已存在的；License 编号须原始文档交叉核实
 
 ## 交接
 - 前置：Task 层、特性层完成

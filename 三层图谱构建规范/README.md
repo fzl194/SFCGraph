@@ -102,6 +102,7 @@
 | ✅ 已完成 | 全局骨架：README / VERSION / CHANGELOG / 演进机制 / conventions / scripts(阶段0) |
 | ✅ 已完成 | command/ 命令层（全量验证 UDG+UNC：13075 命令 + 3500 配置对象）|
 | ✅ 已完成 | feature/ 特性层能力包（Feature feature_code 聚合模型 + 文件名 ID + License 段落模型；全量 UDG 验证 258 特性/865 文档 + 187 license）|
-| ⬜ 待建 | task/ business/ 按层包标准 |
+| 🟡 进行中 | task/（atom 全建；compound/feature_task 迁移中）|
+| ✅ 层包就位 | business/ 业务层能力包（SKILL/check/字段/template/CR；资产待迁入 `三层图谱资产/Business/`）|
 
-**当前焦点：task 层 / business 层（按层包标准构建）。**
+**当前焦点：task 层 compound/feature_task 迁移 + business 资产迁移（`assets/business/` → `三层图谱资产/Business/`）。**
