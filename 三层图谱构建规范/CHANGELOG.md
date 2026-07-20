@@ -28,6 +28,155 @@
 
 ---
 
+## [0.13.0] - 2026-07-18
+
+### 变更（文档引用统一为 `[[逻辑ID]]` + 三层落地 + 前端查名渲染）
+- **引用格式：相对路径 → 裸逻辑引用 `[[ID]]`**。特性/命令/ConfigObject 三层正文里的命令引用、特性引用统一成 `[[{nf}@MMLCommand@{cmd}]]` / `[[{nf}@Feature@{code}]]`，与 `## 边` 段同源；前端一套正则识别 + 跳转。**接续并取代 v0.12.0 的相对路径引用**（v0.12.0 的特性引用是 `[文字](../../../../Command/…)`，本版起全改 `[[ID]]`）。
+- **特性引用精确到具体子文档**（非笼统指特性文件夹）：特性层构建前预算「源文件名→目标文档ID」映射，特性引用按源文件名精确命中——概述引用→`[[{nf}@Feature@{code}]]`，子文档引用→`[[{nf}@Feature@{code}-{slug}]]`。修了一个关键 bug：子文档文件名**不含特性码**（码在文件夹路径里），旧逻辑靠叶子名匹配特性码会漏掉全部子文档引用（曾误剥为纯文字）。
+- **命令层 / ConfigObject 首次具备图片+引用处理**（v0.12.0 只做了特性层）：移植 `rewrite_images`/`rewrite_doc_refs` 到 `command/scripts/_common.py`；`build_commands.py` 接线（命令索引用第一趟内存 `command_names`，图片拷到 `Command/{nf}/{ver}/assets/`）；`build_configobjects.py` 对继承自命令的 `desc` 补图片重解析（`[[ID]]` 透传）。
+- **前端 `[[ID]]` 查名渲染**：后端新增 `GET /api/v1/names`（{id:name} 字典）；前端 `MdPreview.vue` 拉 `/names` 建 id→name 映射，正文 `[[ID]]` 显示目标 name（无则显 ID）、`title` 存 ID；点击跳转复用既有 `inlineLinksIntoHtml→emit('navigate')→syncTo` 链路（零改）。
+- 文档同步：`conventions/资产图片与引用处理.md`（引用规则改 `[[ID]]`+子文档精度+三层落地）、`feature/SKILL.md`+`check.md`（引用闭环改 `[[ID]]`）、`command/SKILL.md`+`check.md`（sop_version 0.13.0、新增图片闭环/引用闭环两项）。
+
+### 修复
+- **`build_features.py:assign_slugs` 死循环**：撞名消歧的 `while True` 在「两个文档 slug 相同且父目录相同/为空」时无限前补父目录（字符串一直变长、`resolved` 永真）→ UNC 某特性触发后构建挂死。改为「一轮父目录消歧后撞名数未减则加序号收尾」。此 bug 先于 v0.13.0 存在，UNC 数据首次触发；UDG 未受影响（无此碰撞）。
+
+### 为什么
+- v0.12.0 的相对路径引用能点但脆（目录树一搬就断），且与 `## 边` 的 `[[ID]]` 两套格式；用户要求统一成 `[[ID]]` 供前端自动识别跳转，并精确到特性的具体子文档（特性是多文档文件夹）。
+
+### 自测
+- **特性 UDG**：258 特性/865 文档；图片 830；引用解析 8258 / 剥死链 968。其中命令引用 7227、特性概述引用 1424、**特性子文档引用 1170**（修 bug 前为 0，全被误剥）；0 残留相对路径。
+- **命令 UDG**：4577 命令；图片 493；引用解析 1267 / 剥死链 35。**ConfigObject UDG**：1175 个 / 图片 219。
+- **命令 UNC**：图片 635 / 引用解析 4951；**ConfigObject UNC**：2325 / 图片 279。
+- **特性 UNC**：470 特性；图片 2155；引用解析 20862 / 剥死链 4637（含子文档精确引用，如 `[[UNC@Feature@IPFD-010001-控制接口震荡特性]]`）。
+- 抽样：`[[UDG@MMLCommand@SET UPGTPPATH]]`、`[[UDG@Feature@GWFD-010102-配置GTP_PFCP路径管理参数]]`（子文档精确命中）、`[[UNC@MMLCommand@DSP PORT]]`。
+
+### 对已建资产的影响
+- **三层资产均需重建**（已按 v0.13.0 重建：特性/命令/ConfigObject × UDG+UNC）。引用格式从相对路径切到 `[[ID]]`，旧相对路径引用全部失效需重建。
+
+### 类型
+- MINOR（引用格式变更 + 命令/ConfigObject 新增图片/引用处理；向后兼容新增，但已建资产需重建）
+
+---
+
+## [0.12.0] - 2026-07-17
+
+### 变更（特性层图片纳入 + 文档引用改写/清理）
+- **推翻 v0.10.0 的「图片不纳入」决策**：特性层资产现在**保留图片**。每特性文件夹下一个扁平 `assets/`，合并该特性全部源 md 旁的 `{md名}.assets/` 图片（按文件夹 hash 去重，同名异内容按源 slug 前缀消歧），md 里 `![]({旧名}.assets/x.png)` 改写为 `![](assets/x.png)`。
+- **文档引用改写/清理**（特性 md 正文里的 `[文字](相对路径)`）：
+  - **命令引用**（叶子名/标签含全角括号 `（CMD）` 或标签即命令名）→ 改写为到 `Command/{nf}/{ver}/{nf}@MMLCommand@{CMD}.md` 的相对路径；需命令资产已存在。
+  - **特性引用**（叶子名含 `[A-Z]+FD-\d{6}`）→ 改写为到 `Feature/…/{nf}@Feature@{code}/概述.md` 的相对路径（v1 跳概述）。
+  - **其余/不可解析**（PDF/外链/未建命令/分类码）→ **剥 URL 留文字**（`[文字](死链)` → `文字`）。
+  - 外链 http/锚点/图片语法不动。
+- 新增跨层约定 `conventions/资产图片与引用处理.md`（所有层共用；本次仅特性层落地，命令层/ConfigObject 后续照搬）。
+- 实现：`feature/scripts/_common.py` 增 `build_command_index / build_feature_codes / extract_cmd_name / rewrite_images / rewrite_doc_refs`（纯标准库，URL 解析用 `_parse_link_url` 正确处理含空格路径）；`build_features.py` 在每特性文件夹建 `assets/`、按文档循环改写；manifest 增 `images_copied / doc_refs_resolved / doc_refs_stripped`。
+- 文档同步：`SKILL.md`（图片纳入+输出+构建流程，sop_version 0.12.0）、`字段定义.md`（图片/引用均不进 YAML 注）、`check.md`（增图片闭环/引用闭环两项，原文完整行更新）。
+
+### 为什么
+- 源 md 旁有 `.assets/` 图片（全量 UDG 特性指南 431 目录/844 PNG）+ 正文相对路径文档引用，旧构建器只搬 md 文本 → **图片全丢、引用全成死链**。资产不自包含、引用不可跳。
+
+### 自测（全量 UDG）
+- 258 特性 / 865 文档（与 v0.10.0 一致，无回归）。
+- **图片**：830 处引用对应图片拷入，落盘 797 张（去重后）；0 残留 `{旧名}.assets/` 旧路径；0 个 `.assets` 目录（全改扁平 `assets/`，178 个特性文件夹有图）。抽样 `GWFD-020401`：`![](assets/zh-cn_image_0226536218.png)` 指向实存 png。
+- **引用**：解析 7867（命令 7227 + 特性 461 + 余量）/ 剥死链 1359；0 残留指向 output/ 的相对路径。抽样命令引用 `../../../../Command/UDG/20.15.2/UDG@MMLCommand@SET UPGTPPATH.md` 目标实存；PDF 等死链已剥成纯文字。
+- 实现期修了一个关键 bug：URL 含空格（`UDG MML命令`、`GWFD-000101 支持…assets`）被 `split()[0]` 截断 → 改 `_parse_link_url` 按 `"` 标题切、保留空格，命令解析 33→7227、图片 437→830。
+
+### 对已建资产的影响
+- **Feature 侧需重建**（已按 v0.12.0 重建：图片+引用就位）。License 侧无图片/引用问题，不受影响。
+
+### 类型
+- MINOR（新增图片纳入 + 引用改写规则；向后兼容新增，但已建 Feature 资产需重建）
+
+> 注：本版本与并行的 [0.11.0]（task 层 AtomTask 迁移）互不冲突——task 工作明确不动 command/feature 层；二者仅共享 VERSION/CHANGELOG，本条目置于其上。
+
+---
+
+## [0.12.0] - 2026-07-17
+
+### 新增
+- **task 层 AtomTask 资产构建（二期：UNC 全量迁移）**。基于 v0.11.0 已验证的迁移脚本:
+  - 迁移脚本扩展支持 `--nf UNC` 参数（默认 `--nf UDG` 保持向后兼容）；模块级 `NF/VERSION` 通过 CLI 覆盖
+  - UNC atom 资产特点: 280 个 atom（UDG 237 个），无 `nf:` 字段但 ref 同 UDG 格式 (`UNC@20.15.2@MMLCommand@...`)；命令行分布 ADD 154 / SET 73 / MOD 27 / RMV 13 / DSP 9 / 其他 4
+  - 共建产出：`三层图谱资产/AtomTask/UNC/20.15.2/UNC@AtomTask@{COMMAND}.md`（**280 个**）
+
+### 自测
+- UDG 237/237 + UNC 280/280 = **517/517** 全通过 ad-hoc 验证（`hermes-verify-migrate.py`，含 YAML 8 字段 / id 三段式 / ## 边 单行 / 禁词零命中 / 业务内容保留 / 关键转换点）
+- 业务正文总量 1,509,997 字符 / 40,372 行（UDG 711k / UNC 799k，平均 2,920 字/篇）
+- ad-hoc 验证脚本支持 `--nf UDG|UNC` 自适应（cmdmap 数量、期望命令、关键转换点都按 NF 分流）
+
+### 修复
+- **破损 markdown 链接保护**: UNC 0-00164 源文件含破损 markdown `[ADD CHGTARI](task/UNC/20.15**（warning，rule-0-03168）`（粗体闭合符截断），迁移脚本 MD_LINK_RE 收紧为 `[^)\s*][^)\s]*`（拒绝目标含 `*`），不误吃破损链接，原样保留
+- **DP 编号语义改写 `（DP 0-NNNNN，xxx）` 形式**: 之前 regex 只匹配纯 `(DP 0-NNNNN)`，遇到带 ",xxx" 的形式残留 `（，xxx）`。扩展为 `(DP 0-NNNNN，xxx)` -> `(决策点，xxx)`
+- **code block 保护机制**: 之前 strip 函数可能误吃 ``` 围栏代码块和行内代码里的字符。新增 `_protect_code_blocks` / `_restore_code_blocks`，所有 strip 在 code block 保护上下文跑、最后还原
+- **strip_dp_inline_refs 顺序**: 之前 `replace_bare_atom_refs` 在 `strip_dp_inline_refs` 之前跑，把 `DP 0-00019` 提前吃成 `DP [[UDG@AtomTask@SET LICENSESWITCH]]`，导致 9 条 DP 编号语义改写模板全部失效。调成 `strip_dp_inline_refs` **先于** `replace_bare_atom_refs`
+- **尖括号 `0-XXXXX` 引用**: 新增 `<0-00215 产出>` 形式识别（IPSECINTFCFG 围栏外 `//` 注释行），strip_paren_atom_num 加 #4 刀
+
+### 为什么
+- 用户要求"UNC 也要一并处理下，UNC 的命令级别的 task"。UNC 与 UDG 是同构资产（YAML/H1/## 配置方法/## 决策点/## 约束/## 关联 一致），可直接复用 v0.11.0 迁移脚本，扩展 `--nf` CLI 参数即可支持
+
+### 影响文件
+- 改 `task/scripts/migrate_old_atoms.py`（加 argparse、加 _protect_code_blocks、5 类 regex 修复）
+- 新增 `三层图谱资产/AtomTask/UNC/20.15.2/UNC@AtomTask@{COMMAND}.md`（**280 个**）
+
+### 对已建资产的影响
+- **task 层资产** — UDG 237 个 + UNC 280 个 AtomTask 全建
+- **command/feature 层** — 无影响
+- 旧的 `assets/task/UNC/20.15.2/0-XXXXX.md` 由迁移指南 §0 明确"只迁格式不删源"，保留为可追溯的旧版本
+
+### 类型
+- MINOR（task 层资产新增；向后兼容；v0.11.0 UDG 产物不动）
+
+---
+
+## [0.11.0] - 2026-07-17
+
+### 新增
+- **task 层 AtomTask 资产构建（一期：旧 atom 全量迁移）**。按 [task/迁移指南-旧atom到AtomTask.md](task/迁移指南-旧atom到AtomTask.md) 执行：
+  - 新增 `task/scripts/migrate_old_atoms.py`（一次性迁移脚本；纯标准库；237 个 atom 一次性批处理）
+  - 产出：`三层图谱资产/AtomTask/UDG/20.15.2/UDG@AtomTask@{COMMAND}.md`（**237 个**，与旧 atom 一对一）
+  - YAML 8 字段：`id`/`type`/`name`/`name_zh`/`nf`/`version`/`ref`/`status`，id 三段式 `{nf}@AtomTask@{命令}`（无 version/无编号），ref 三段式 `{nf}@MMLCommand@{命令}`
+  - 文件名 = 完整 ID；命令名含空格时保留（如 `UDG@AtomTask@LST POOL.md` / `UDG@AtomTask@EXP MML.md`）
+  - 业务正文原样保留（只改格式不改内容）；删除证据/配置对象链接/Task↔Task/被引用于；保留并转译命令层 markdown 链接为 `[[{nf}@MMLCommand@{cmd}]]`；旧四段式 wiki 占位剥 `20.15.2@` 段、按 Type 分流
+  - ## 边 段统一为 `- 对应命令: [[{nf}@MMLCommand@{命令}]]` 单行
+
+### 自测
+- 237 个 atom 全部通过 §6 校验清单：YAML 8 字段齐全且顺序正确 / id 三段式无 version 无编号 / ref 三段式 / name=name_zh / 文件名=ID / ## 边 只有对应命令一行 / 全部禁词零命中（`0-XXXXX`/`rule-0-`/`DP 0-`/`configobject/`/`evidence/`/`(command/`/`(task/`/`@20.15.2@`/YAML 旧字段 `task_layer`/`task_intent`/`task_logical_name`/`source_evidence`/`****`/空括号）
+- 业务正文总量 667,466 字符 / 16,091 行（平均 2,816 字/篇）；命令行分布 ADD 147 / SET 72 / LST 5 / MOD 5 / DSP 3 / LOD 3 / EXP 1 / STR 1
+- 命令名从每个旧 `0-XXXXX.md` YAML 的 `ref` 字段末段现场读取（不依赖附录 A 静态表，单源可信）
+
+### 边界 case 处理（指南未明文，遇到后沉淀到脚本）
+- 全角/半角括号 + 全角/半角逗号都要吃 `rule-0-XXXXX`
+- `（warning，rule-0-00110 同族）` / `（critical，rule-0-00443，命令 notes）` 等多级来源标记一并删
+- `**rule-0-00178-impl**` 单独成粗体标题时删（仅 0-00214 出现 1 次）
+- 正文裸 `0-XXXXX` 不在 markdown 链接/wiki 占位/括号里 → 转 `[[UDG@AtomTask@{cmd}]]`（如 `License 0-00019` / `须 0-00144 先生效` / `引用 0-00215 产出`）
+- 括号里 `0-XXXXX.XXX` / `0-XXXXX:XXX`（编号+点/冒号+参数引用形式）→ 删编号段
+- `§0-XXXXX` / `feature-rule 0-XXXXX` / `selection_rule 0-XXXXX` 引用 → 删
+- 旧 wiki4 占位单层方括号变体 `[UDG@20.15.2@DecisionPoint@0-XXXXX]`（CONTCATE 系列）→ 按 Type 分流
+- `0-00XXX.md` 链接（未建对象的占位符）→ 用显示文字做命令名
+- `command-evidence/0-XXXXX` 自引用（仅 NTPSVR）→ 整段删
+- DP 编号 `DP 0-XXXXX` 正文出现按语义改写：`另存演进` → `另存一个演进决策`；`仅在 ... 标注` → `仅在决策点标注`；`决策点驱动` / `由决策点编排` / `见决策点` 等
+- 占位删除后残留的双重粗体 `****` 兜底清理
+
+### 为什么
+- 旧 atom (237 个 `0-XXXXX.md`) 用了旧 ID 体系（`UDG@20.15.2@Task@0-XXXXX`），不符合 task 层新 SOP（id 用命令名做锚，三段式）；同时引用形式 / 关联段结构 / 证据字段等都需按新规范重构。本次只迁 atom (1:1)，compound (1-) / feature_task (2-) 留待后续批次
+
+### 影响文件
+- 新增 `task/scripts/migrate_old_atoms.py`（一次性脚本，~400 行）
+- 新增 `task/迁移指南-旧atom到AtomTask.md`（迁移 SOP 文档）
+- 新增 `三层图谱资产/AtomTask/UDG/20.15.2/UDG@AtomTask@{COMMAND}.md`（**237 个**）
+
+### 对已建资产的影响
+- **task 层资产** — 全新产出，旧 atom 不动（保留在 `assets/task/UDG/20.15.2/0-XXXXX.md` 作历史档案）；atom 阶段闭环完成
+- **command/feature 层** — 无影响
+- 旧的 `assets/task/UDG/20.15.2/0-XXXXX.md` 由迁移指南 §0 明确"只迁格式不删源"，保留为可追溯的旧版本
+
+### 待用户确认（不影响本批）
+- `三层图谱资产/AtomTask/UDG/20.15.2/` 当前 git 仍 ignore（沿用 `三层图谱资产/` 的全局 ignore）。是否要为 `AtomTask/` 单独放行？详见迁移指南 §9
+
+### 类型
+- MINOR（task 层资产新增；向后兼容；旧 atom 资产保留）
+
+---
+
 ## [0.10.0] - 2026-07-16
 
 ### 变更（采纳 CR-20260716-001）

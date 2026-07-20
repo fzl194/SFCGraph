@@ -26,7 +26,7 @@ from pathlib import Path
 
 import _common
 
-SOP_VERSION = "0.10.0"
+SOP_VERSION = "0.12.0"
 VERBOSE = False
 
 
@@ -86,26 +86,31 @@ def assign_slugs(docs: list[tuple[Path, list[str]]], overview_idx: int | None) -
         if i == overview_idx:
             continue
         slugs[i] = _common.slugify_doc(f.name)
-    # 消歧：同名 → 前补一层父目录
-    while True:
+
+    def collisions() -> dict[str, list[int]]:
         dup: dict[str, list[int]] = defaultdict(list)
         for i, s in slugs.items():
             dup[s].append(i)
-        colliding = {s: idxs for s, idxs in dup.items() if len(idxs) > 1}
+        return {s: idxs for s, idxs in dup.items() if len(idxs) > 1}
+
+    # 消歧：同名 → 前补一层父目录；若一轮后撞名数未减（父目录相同/为空救不了）→ 加序号收尾，避免死循环
+    while True:
+        colliding = collisions()
         if not colliding:
             break
-        resolved = False
+        old_n = sum(len(v) for v in colliding.values())
         for s, idxs in colliding.items():
             for i in idxs:
                 parent = docs[i][1][-1] if docs[i][1] else ""
                 cand = f"{parent}-{s}" if parent else s
                 if cand != slugs[i]:
                     slugs[i] = cand
-                    resolved = True
-        if not resolved:  # 父目录也救不了 → 加序号
-            for s, idxs in colliding.items():
-                for n, i in enumerate(idxs, 1):
-                    slugs[i] = f"{slugs[i]}-{n}"
+        new_colliding = collisions()
+        new_n = sum(len(v) for v in new_colliding.values())
+        if new_n >= old_n:  # 父目录消歧无进展 → 加序号收尾
+            for _s, idxs in new_colliding.items():
+                for num, i in enumerate(idxs, 1):
+                    slugs[i] = f"{slugs[i]}-{num}"
             break
     return slugs
 
@@ -165,6 +170,25 @@ def main() -> int:
     no_overview: list[str] = []
     multi_overview: list[str] = []
     feature_count = 0
+    images_copied = 0
+    refs_resolved = 0
+    refs_stripped = 0
+
+    # 资产索引：命令引用解析需命令资产已存在；特性引用含本次在建的 code（自洽）
+    cmd_index = _common.build_command_index(storage, args.nf, args.version)
+    feature_codes = set(groups.keys()) | _common.build_feature_codes(storage, args.nf, args.version)
+    log(f"资产索引：命令 {len(cmd_index)} 个；特性码 {len(feature_codes)} 个")
+    hash_cache: dict = {}  # 全局 {源png路径: hash}，同一源图全构建只读盘一次
+
+    # 预算 源文件名→目标文档ID：特性引用精确到具体子文档（概述=bare code；子文档=code-slug），命不中才退回概述
+    src_to_id: dict[str, str] = {}
+    for code0, docs0 in groups.items():
+        docs = sorted(docs0, key=lambda x: x[0].name)
+        ovi0 = pick_overview(code0, docs)
+        slugs0 = assign_slugs(docs, ovi0)
+        for i, (f, _) in enumerate(docs):
+            src_to_id[f.name] = (f"{args.nf}@Feature@{code0}" if i == ovi0
+                                 else f"{args.nf}@Feature@{code0}-{slugs0[i]}")
 
     for code in sorted(groups):
         docs = sorted(groups[code], key=lambda x: x[0].name)
@@ -181,6 +205,7 @@ def main() -> int:
         out_folder = out_root / f"{args.nf}@Feature@{code}"
         out_folder.mkdir(parents=True, exist_ok=True)
         feature_count += 1
+        img_reg: dict = {"hash2name": {}, "name2hash": {}}  # 按特性文件夹共享的图片去重表
 
         # 先算每个 doc 的 logical_id（概述=bare code；子文档=code-slug）
         doc_ids: dict[int, str] = {}
@@ -213,8 +238,16 @@ def main() -> int:
             }
             fm = _common.build_frontmatter(fields)
             # 对齐命令层：不 prepend H1，body = 原文(自带H1) + 边。避免双 H1。
-            body = (f"{fm}\n\n{_common.clean_md(md_text)}\n\n"
-                    f"{_common.build_edges_section(edges)}\n")
+            cleaned = _common.clean_md(md_text)
+            # 图片：拷进特性文件夹 assets/，改写为本地相对路径（按文件夹 hash 去重）
+            img_slug = "概述" if is_ov else slugs[i]
+            cleaned, n_img = _common.rewrite_images(cleaned, f, out_folder / "assets", img_slug, img_reg, hash_cache)
+            images_copied += n_img
+            # 文档引用：命令/特性引用改写跳转，死链剥 URL 留文字
+            cleaned, ref_stats = _common.rewrite_doc_refs(cleaned, args.nf, cmd_index, feature_codes, src_to_id)
+            refs_resolved += ref_stats["resolved"]
+            refs_stripped += ref_stats["stripped"]
+            body = f"{fm}\n\n{cleaned}\n\n{_common.build_edges_section(edges)}\n"
             (out_folder / out_file).write_text(body, encoding="utf-8")
             built.append(logical_id)
         log(f"  ✓ {code}（{len(docs)} doc，概述={'有' if ovi is not None else '无'}）")
@@ -228,6 +261,9 @@ def main() -> int:
         "feature_count": feature_count, "doc_count": len(built), "docs": built,
         "features_without_overview": no_overview,
         "features_with_multiple_overview_candidates": multi_overview,
+        "images_copied": images_copied,
+        "doc_refs_resolved": refs_resolved,
+        "doc_refs_stripped": refs_stripped,
     }
     (out_root / "_build_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -236,6 +272,7 @@ def main() -> int:
           + (" …" if len(no_overview) > 20 else ""))
     if multi_overview:
         print(f"  多概述候选 {len(multi_overview)} 个(已取第一个)：{multi_overview[:20]}")
+    print(f"  图片拷贝 {images_copied} 张；文档引用解析 {refs_resolved} / 剥死链 {refs_stripped}")
     return 0
 
 

@@ -1,8 +1,14 @@
-"""特性层共享工具：原文清洗 / YAML / 边 / 章节解析 + feature_code·doc_type·license段 解析。"""
+"""特性层共享工具：原文清洗 / YAML / 边 / 章节解析 + feature_code·doc_type·license段 解析
++ 图片/文档引用改写（跨层约定，v0.11+）。"""
 from __future__ import annotations
 
+import hashlib
+import os
 import re
+import shutil
+from pathlib import Path
 from typing import Any
+from urllib.parse import unquote
 
 Edge = tuple[str, str]
 
@@ -203,3 +209,158 @@ def extract_license_nf(section_body: str) -> list[str]:
         return []
     raw = m.group(1).strip().strip("|").strip()
     return [x.strip() for x in re.split(r"[、,，/]", raw) if x.strip()] if raw else []
+
+
+# ============ 图片 / 文档引用改写（跨层约定，v0.11+）===========
+# 详见 ../../conventions/资产图片与引用处理.md
+_EXTERNAL_PREFIXES = ("http://", "https://", "//", "mailto:", "tel:", "data:")
+_IMG_RE = re.compile(r"!\[([^\]]*)\]\(([^)]*)\)")
+_LINK_RE = re.compile(r"(?<!!)\[([^\]]*)\]\(([^)]*)\)")
+_FULLWIDTH_PAREN_RE = re.compile(r"（([^（）()]+)）")
+
+
+def _parse_link_url(inner: str) -> str:
+    """从 markdown 链接/图片 (...) 内容取 URL。URL 可含空格（如特性名/UDG MML命令 路径）；
+    可选标题 ` "..."` 在 URL 后；去 `#fragment`。"""
+    s = (inner or "").strip()
+    qi = s.find('"')
+    if qi != -1:
+        s = s[:qi]
+    return s.split("#")[0].strip()
+
+
+def build_command_index(storage, nf: str, version: str) -> set[str]:
+    """扫 Command/{nf}/{version}/{nf}@MMLCommand@*.md，返回命令名集合（@MMLCommand@ 后的文件名 stem）。"""
+    names: set[str] = set()
+    d = Path(storage) / "Command" / nf / version
+    if d.is_dir():
+        prefix = f"{nf}@MMLCommand@"
+        for f in d.glob(f"{prefix}*.md"):
+            names.add(f.stem[len(prefix):])
+    return names
+
+
+def build_feature_codes(storage, nf: str, version: str) -> set[str]:
+    """扫 Feature/{nf}/{version}/{nf}@Feature@*/ 文件夹，返回已有特性码集合。"""
+    codes: set[str] = set()
+    d = Path(storage) / "Feature" / nf / version
+    if d.is_dir():
+        prefix = f"{nf}@Feature@"
+        for sub in d.iterdir():
+            if sub.is_dir() and sub.name.startswith(prefix):
+                m = FEATURE_CODE_RE.search(sub.name[len(prefix):])
+                if m:
+                    codes.add(m.group(0))
+    return codes
+
+
+def extract_cmd_name(text: str) -> str:
+    """从全角括号 （CMD） 抽命令名，如 '查询ACL规则组配置（LST ACLGROUP）_00841277.md' → 'LST ACLGROUP'。"""
+    if not text:
+        return ""
+    m = _FULLWIDTH_PAREN_RE.search(text)
+    return m.group(1).strip() if m else ""
+
+
+def _file_hash(p: Path) -> str:
+    h = hashlib.md5()
+    with p.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def rewrite_images(md: str, src_md_path, dest_assets_dir, slug: str, reg: dict,
+                   hash_cache: dict | None = None) -> tuple[str, int]:
+    """把 md 里 ![]({旧}.assets/x.png) 引用的源 png 拷进 dest_assets_dir，改写为 ![](assets/x.png)。
+    reg = {'hash2name': {}, 'name2hash': {}}：按特性文件夹共享，跨文档 hash 去重；同名异内容按 slug 前缀消歧。
+    """
+    src_dir = Path(src_md_path).parent
+    dest_assets_dir = Path(dest_assets_dir)
+    count = 0
+
+    def repl(m: re.Match) -> str:
+        nonlocal count
+        alt = m.group(1)
+        url = _parse_link_url(m.group(2))
+        if not url or url.startswith(_EXTERNAL_PREFIXES) or url.startswith("#"):
+            return m.group(0)
+        png_abs = (src_dir / unquote(url)).resolve()
+        if not png_abs.exists():
+            return m.group(0)  # 源图缺失，原样保留
+        name = _register_image(png_abs, dest_assets_dir, slug, reg, hash_cache)
+        count += 1
+        return f"![{alt}](assets/{name})"
+
+    new_md = _IMG_RE.sub(repl, md)
+    return new_md, count
+
+
+def _register_image(png_abs: Path, dest_dir: Path, slug: str, reg: dict,
+                    hash_cache: dict | None = None) -> str:
+    src_key = str(png_abs)
+    if hash_cache is not None and src_key in hash_cache:
+        h = hash_cache[src_key]
+    else:
+        h = _file_hash(png_abs)
+        if hash_cache is not None:
+            hash_cache[src_key] = h
+    if h in reg["hash2name"]:
+        return reg["hash2name"][h]
+    base = png_abs.name
+    name = base
+    if name in reg["name2hash"] and reg["name2hash"][name] != h:
+        name = f"{slug}_{base}"
+        i = 2
+        while name in reg["name2hash"]:
+            name = f"{slug}_{i}_{base}"
+            i += 1
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(png_abs, dest_dir / name)
+    reg["hash2name"][h] = name
+    reg["name2hash"][name] = h
+    return name
+
+
+def rewrite_doc_refs(md: str, nf: str, cmd_index: set[str], feature_codes: set[str],
+                     feature_src_to_id: dict | None = None) -> tuple[str, dict]:
+    """改写 md 里的 [文字](目标) 文档引用为裸逻辑引用 [[ID]]：
+    命令引用→[[{nf}@MMLCommand@{cmd}]]；特性引用→精确到具体子文档（feature_src_to_id 命中）否则退回概述 [[{nf}@Feature@{code}]]；
+    其余/不可解析→剥 URL 留文字。cmd_index/feature_codes 即存在性判定。返回 (新md, {resolved, stripped})。
+    """
+    resolved = stripped = 0
+
+    def repl(m: re.Match) -> str:
+        nonlocal resolved, stripped
+        label, inner = m.group(1), m.group(2)
+        url = _parse_link_url(inner)
+        if not url or url.startswith(_EXTERNAL_PREFIXES) or url.startswith("#"):
+            return m.group(0)
+        leaf = os.path.basename(unquote(url))
+
+        # 命令引用：叶子名/标签的全角括号抽命令名；标签本身也可能是命令名（如 [LST ME]）
+        cmd = extract_cmd_name(leaf) or extract_cmd_name(label)
+        if not cmd:
+            bare = label.strip().strip("*").strip()
+            if bare in cmd_index:
+                cmd = bare
+        if cmd and cmd in cmd_index:
+            resolved += 1
+            return f"[[{nf}@MMLCommand@{cmd}]]"
+
+        # 特性引用：源文件名精确匹配优先（概述+子文档都能命中；子文档文件名无特性码，必须靠此）；否则按特性码退回概述
+        if feature_src_to_id is not None and leaf in feature_src_to_id:
+            resolved += 1
+            return f"[[{feature_src_to_id[leaf]}]]"
+        fc = FEATURE_CODE_RE.search(leaf)
+        if fc and fc.group(0) in feature_codes:
+            resolved += 1
+            return f"[[{nf}@Feature@{fc.group(0)}]]"
+
+        # 其余：剥 URL 留文字
+        stripped += 1
+        return label
+
+    new_md = _LINK_RE.sub(repl, md)
+    return new_md, {"resolved": resolved, "stripped": stripped}
+

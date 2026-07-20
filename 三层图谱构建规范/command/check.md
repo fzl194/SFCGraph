@@ -25,7 +25,9 @@
 | 结构统一 | 每个资产 = YAML + 正文 + `## 边`；关系**只在"边"章节**，正文不重复 |
 | 配置对象产生规则 | 只有配置类命令(ADD/MOD/DEL/RMV/SET)产生配置对象；查询(LST/DSP)/动作(ACT)等**不产生**（但可关联已存在的） |
 | 边合理 | 命令→配置对象（对象对应**已存在**配置对象）；配置对象→命令（被操作，反向闭环）；命令↔命令（参见，**只引真实存在的命令**） |
-| 命令原文 | 原始 md 原样保留（功能/注意事项/参数说明/实例等），TOC/anchor 已清洗 |
+| 命令原文 | 原始 md 原样保留（功能/注意事项/参数说明/实例等），TOC/anchor 已清洗；**图片纳入** `Command/{nf}/{ver}/assets/`（hash 去重） |
+| 图片闭环 | `![](assets/x.png)` 引用的 png 实存于 `Command/{nf}/{ver}/assets/`（配置对象则在 `ConfigObject/{nf}/{ver}/assets/`）；**无残留 `{旧名}.assets/` 旧路径** |
+| 引用闭环 | 命令↔命令引用→`[[{nf}@MMLCommand@{cmd}]]`；死链已**剥 URL 留文字**；**无残留指向 output/ 的相对路径**；核查用独立正则抽样复核 |
 | 参数 | 参数说明表在命令 md 原文内，**不单独建** Parameter md |
 | manifest | build manifest 完整（sop_version + 对象数 + nf/version） |
 

@@ -27,7 +27,9 @@
 | doc_type 分类 | doc_type 是 YAML 字段（不进 ID）；文件名关键词优先、否则按所在子目录；无大面积「其它」误判 |
 | License 段切分 | 控制项 md 里每个 `#### [{id} {code} {名}]` 段都切成独立 license md；**control_id 两种格式都要收**（纯数字 `81203214` + 字母数字 `82200CKP`）；段标题三段（control_id/code/name）解析正确 |
 | 核查独立性 | **核查不能用与构建同一条正则**（共用盲区查不出漏建）。段切分核查要用独立、更宽松的匹配复核段总数 |
-| 原文完整 | 原始 md/段内容原样保留（清洗 TOC/anchor，不删正文）；**单 H1**（不 prepend，保留原文自带 H1，对齐命令层）；**图片不纳入** |
+| 原文完整 | 原始 md/段内容原样保留（清洗 TOC/anchor，不删正文）；**单 H1**（不 prepend，保留原文自带 H1，对齐命令层）；**图片纳入**：每特性文件夹 `assets/`（hash 去重），引用改写为本地相对路径 |
+| 图片闭环 | `![](assets/x.png)` 引用的 png 实存于同文件夹 `assets/`；**无残留 `{旧名}.assets/` 旧路径**；外链/缺图原样保留可接受 |
+| 引用闭环 | 命令引用→`[[{nf}@MMLCommand@{cmd}]]`、特性引用→`[[{nf}@Feature@{code}]]` 或 `[[…@Feature@{code}-{slug}]]`（精确到具体子文档）；死链已**剥 URL 留文字**；**无残留相对路径 / output 路径**；核查用独立正则抽样复核（不复用构建同一条正则） |
 | 边闭环 | Feature(概述)↔License（所需License↔对应特性）；概述↔子文档（包含→各 slug-id、子文档属于特性）；Feature→Feature（依赖/冲突）|
 | manifest | build manifest 完整（sop_version + model + 特性数/license数 + nf/version + 无概述/多概述清单） |
 

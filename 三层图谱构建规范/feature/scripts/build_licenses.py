@@ -51,7 +51,10 @@ def main() -> int:
     out_dir = storage / "License" / args.nf / args.version
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    # built 去重：同一个 license code 可能出现在多个源文件（功能控制项/资源控制项/多个特性指南页），
+    # 文件按最后一次写入落盘，manifest 列表必须按 logical_id 去重，否则 license_count 会虚高。
     built: list[str] = []
+    built_seen: set[str] = set()
     for f in sorted(lic_dir.rglob("*.md")):
         cit = control_item_type(f.name)
         md = f.read_text(encoding="utf-8", errors="replace")
@@ -73,7 +76,9 @@ def main() -> int:
             header = f"# {name}\n\n`{code}` · 控制项 {cid} · {cit or '未分类'}\n"
             content = f"{fm}\n\n{header}\n{_common.clean_md(body)}\n\n{_common.build_edges_section(edges)}\n"
             (out_dir / f"{logical_id}.md").write_text(content, encoding="utf-8")
-            built.append(logical_id)
+            if logical_id not in built_seen:
+                built_seen.add(logical_id)
+                built.append(logical_id)
         log(f"  ✓ {f.name}: {len(_common.split_license_sections(md))} 段")
 
     manifest = {

@@ -25,7 +25,7 @@ from pathlib import Path
 
 import _common
 
-SOP_VERSION = "0.8.4"
+SOP_VERSION = "0.13.0"
 VERBOSE = False
 
 
@@ -217,7 +217,7 @@ def build_edges_section(edges: list[Edge]) -> str:
 
 
 # ============ 单命令构建 ============
-def build_one(md_text, nf, version, cat, ctx) -> tuple[str, str] | None:
+def build_one(md_text, nf, version, cat, ctx, src_path) -> tuple[str, str] | None:
     name_zh, name = parse_title(md_text)
     if not name:
         return None
@@ -233,7 +233,15 @@ def build_one(md_text, nf, version, cat, ctx) -> tuple[str, str] | None:
         "is_dangerous": extract_is_dangerous(notes, func),
     }
     fm = build_frontmatter(fields)
-    body = f"{fm}\n\n{clean_md(md_text)}\n\n{build_edges_section(edges)}\n"
+    cleaned = clean_md(md_text)
+    # 图片：拷进 Command/{nf}/{version}/assets/（全版本共享，hash 去重）；引用改写为本地相对路径
+    cleaned, n_img = _common.rewrite_images(cleaned, src_path, ctx["assets_dir"], name, ctx["img_reg"], ctx["hash_cache"])
+    ctx["images_copied"] += n_img
+    # 文档引用：命令→[[{nf}@MMLCommand@{cmd}]]、特性→[[{nf}@Feature@{code}]]，死链剥 URL 留文字
+    cleaned, ref_stats = _common.rewrite_doc_refs(cleaned, nf, ctx["command_names"], ctx["feature_codes"])
+    ctx["refs_resolved"] += ref_stats["resolved"]
+    ctx["refs_stripped"] += ref_stats["stripped"]
+    body = f"{fm}\n\n{cleaned}\n\n{build_edges_section(edges)}\n"
     return logical_id, body
 
 
@@ -281,6 +289,13 @@ def main() -> int:
             skipped_noncmd += 1
     ctx["command_names"] = name_set
     ctx["cfg_objects"] = cfg_objects
+    ctx["assets_dir"] = out_dir / "assets"
+    ctx["hash_cache"] = {}
+    ctx["img_reg"] = {"hash2name": {}, "name2hash": {}}
+    ctx["feature_codes"] = _common.build_feature_codes(storage, args.nf, args.version)
+    ctx["images_copied"] = 0
+    ctx["refs_resolved"] = 0
+    ctx["refs_stripped"] = 0
     log(f"扫描 {len(files)} md → 有效命令 {len(valid)}（跳过非命令 {skipped_noncmd}）")
 
     # 第 2 趟：构建（边校验用 name_set）
@@ -291,7 +306,7 @@ def main() -> int:
             cat = list(rel.parts[:-1])
         except ValueError:
             cat = []
-        result = build_one(md, args.nf, args.version, cat, ctx)
+        result = build_one(md, args.nf, args.version, cat, ctx, f)
         if not result:
             continue
         logical_id, body = result
@@ -305,12 +320,16 @@ def main() -> int:
         "built_at": datetime.now().isoformat(timespec="seconds"),
         "command_count": len(built), "skipped_non_command": skipped_noncmd,
         "commands": built,
+        "images_copied": ctx["images_copied"],
+        "doc_refs_resolved": ctx["refs_resolved"],
+        "doc_refs_stripped": ctx["refs_stripped"],
         "edge_modules": [m.__name__ for m in EDGE_MODULES]
         + (["edge_cmdref_intranet"] if ctx["intranet"] else []),
     }
     (out_dir / "_build_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"构建完成：{len(built)} 命令（跳过非命令 {skipped_noncmd}）→ {out_dir}")
+    print(f"  图片拷贝 {ctx['images_copied']} 张；文档引用解析 {ctx['refs_resolved']} / 剥死链 {ctx['refs_stripped']}")
     return 0
 
 

@@ -17,7 +17,7 @@ from pathlib import Path
 
 import _common
 
-SOP_VERSION = "0.8.4"
+SOP_VERSION = "0.13.0"
 VERBOSE = False
 
 
@@ -44,6 +44,12 @@ def main() -> int:
         print(f"命令目录不存在，先跑 build_commands.py：{cmd_dir}", file=sys.stderr)
         return 1
 
+    # ConfigObject 共享 assets/（全版本去重）；hash_cache 跨对象共享
+    cfg_assets_dir = out_dir / "assets"
+    cfg_hash_cache: dict = {}
+    cfg_img_reg: dict = {"hash2name": {}, "name2hash": {}}
+    images_copied = 0
+
     # 按 object_keyword 聚合；记 ADD 命令的 md（取描述）
     families: dict[str, dict] = {}
     for f in sorted(cmd_dir.glob("*.md")):
@@ -56,7 +62,8 @@ def main() -> int:
         if not obj:
             continue
         verb = _common.verb_of_command(name)
-        fam = families.setdefault(obj, {"cmds": [], "add_md": None, "cfg_md": None, "has_cfg": False})
+        fam = families.setdefault(obj, {"cmds": [], "add_md": None, "add_path": None,
+                                        "cfg_md": None, "cfg_path": None, "has_cfg": False})
         fam["cmds"].append({
             "id": fm.get("id", ""), "name": name, "verb": verb,
             "name_zh": fm.get("name_zh", ""), "applicable_nf": fm.get("applicable_nf", []),
@@ -66,8 +73,10 @@ def main() -> int:
             fam["has_cfg"] = True  # 配置/查询类命令产生配置对象
             if verb == "ADD" and fam["add_md"] is None:
                 fam["add_md"] = md
+                fam["add_path"] = f
             if fam["cfg_md"] is None:
                 fam["cfg_md"] = md
+                fam["cfg_path"] = f
 
     built = []
     skipped_no_cfg = 0
@@ -80,6 +89,11 @@ def main() -> int:
         # 描述 = ADD（优先）或首个配置/查询类命令的"命令功能"
         desc_md = fam["add_md"] or fam["cfg_md"]
         desc = _common.get_section(desc_md, "命令功能") if desc_md else ""
+        # desc 继承自命令资产 md：图是 assets/x.png（相对命令目录）→ 拷到 ConfigObject assets/ 重解析；[[ID]] 透传
+        desc_src = fam["add_path"] or fam["cfg_path"]
+        if desc and desc_src is not None:
+            desc, n_img = _common.rewrite_images(desc, desc_src, cfg_assets_dir, obj, cfg_img_reg, cfg_hash_cache)
+            images_copied += n_img
         logical_id = f"{args.nf}@ConfigObject@{obj}"
         verbs = {c["verb"] for c in cmds}
         fields = {
@@ -107,10 +121,11 @@ def main() -> int:
         "nf": args.nf, "version": args.version,
         "built_at": datetime.now().isoformat(timespec="seconds"),
         "object_count": len(built), "objects": built,
+        "images_copied": images_copied,
     }
     (out_dir / "_build_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"配置对象构建完成：{len(built)} 个 → {out_dir}")
+    print(f"配置对象构建完成：{len(built)} 个 → {out_dir}（图片拷贝 {images_copied} 张）")
     return 0
 
 

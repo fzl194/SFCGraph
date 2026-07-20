@@ -1,7 +1,7 @@
 ---
 name: command-layer-build
 description: 把产品文档 MML 命令构建成命令层资产 md（命令 + 配置对象）。复用原始md+加YAML+加底"边"章节；参数不单独建（在命令md原文内）。
-sop_version: 0.8.4
+sop_version: 0.13.0
 ---
 
 # 命令层构建 SKILL
@@ -22,13 +22,15 @@ sop_version: 0.8.4
 
 ## 输出（`{storage}/` 下）
 - `Command/{nf}/{version}/{nf}@MMLCommand@{命令名}.md` — 每命令一个（复用原始 md）
+- `Command/{nf}/{version}/assets/*.png` — 命令正文图片（全版本共享，hash 去重）
 - `ConfigObject/{nf}/{version}/{nf}@ConfigObject@{对象名}.md` — 每 object_keyword 一个（命令族聚合，合成）
+- `ConfigObject/{nf}/{version}/assets/*.png` — 配置对象说明图片（继承自命令，重解析）
 - 各 `_build_manifest.json`
 
 ## 构建流程（`scripts/build_all.py` 编排）
 1. **导出**（仅 `--product-doc`）→ `{storage}/output/`
-2. **命令** `build_commands.py`：扫命令源 md → 复用原文 + YAML（11 字段）+ 边
-3. **配置对象** `build_configobjects.py`：按 object_keyword 聚合；**仅配置类命令(ADD/MOD/DEL/RMV/SET)产生**配置对象（查询/动作类不产生、但可关联已存在的）→ 合成 md（说明 + 边）
+2. **命令** `build_commands.py`：扫命令源 md → 复用原文 + YAML（11 字段）+ 边；**图片拷入 `Command/{nf}/{ver}/assets/`、文档引用统一改写为 `[[ID]]`**（命令索引用第一趟内存命令名集）；规则见 [conventions/资产图片与引用处理](../conventions/资产图片与引用处理.md)
+3. **配置对象** `build_configobjects.py`：按 object_keyword 聚合；**仅配置类命令(ADD/MOD/DEL/RMV/SET)产生**配置对象（查询/动作类不产生、但可关联已存在的）→ 合成 md（说明 + 边）；说明段继承自命令 md（引用已是 `[[ID]]`），仅补图片重解析
 
 ## 边
 | 边 | 出现位置 | 来源 |
