@@ -1,0 +1,60 @@
+object_types:
+  MMLCommand:
+    layer: Command
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, name, nf, version, source, status]
+  ConfigObject:
+    layer: ConfigObject
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, name, nf, version, object_kind, source, status]
+  Feature:
+    layer: Feature
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  License:
+    layer: License
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  Task:
+    layer: Task
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  # 任务层 3 个子类型（原子/步骤/特性 Task）——与 Task 同层同 scope，均带 nf/version
+  AtomTask:
+    layer: Task
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  CompoundTask:
+    layer: Task
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  FeatureTask:
+    layer: Task
+    scope: nf
+    id_segments: 3
+    frontmatter_required: [id, type, nf, version]
+  BusinessDomain:
+    layer: Business
+    scope: cross
+    id_segments: 2
+    path_fields: [domain]
+    frontmatter_required: [id, type, domain]
+  NetworkScenario:
+    layer: Business
+    scope: cross
+    id_segments: 2
+    path_fields: [domain, scenario]
+    frontmatter_required: [id, type, domain, scenario]
+  ConfigurationSolution:
+    layer: Business
+    scope: cross
+    id_segments: 2
+    path_fields: [domain, scenario]
+    frontmatter_required: [id, type, domain, scenario]
