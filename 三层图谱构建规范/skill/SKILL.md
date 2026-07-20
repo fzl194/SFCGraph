@@ -63,15 +63,20 @@ Agent 根据用户的需求描述和现网配置脚本，经过**业务域→场
 
 ### 3.1 两个端点（curl 直调，全程不传 version）
 
-```bash
-BASE=http://127.0.0.1:8000/api/v1
+**Phase 0 入口**——取全部业务域 md（无 body，cmd / bash 通用）：
 
-# Phase 0 入口：一次性取全部业务域 md（业务域特殊化，免两步）
-curl -s "$BASE/domains"
+```
+curl -s http://127.0.0.1:8000/api/v1/domains
+```
 
-# 全程主力：批量取对象 md（单个也走批量）
-curl -s -X POST "$BASE/md" -H "Content-Type: application/json" \
-  -d '{"ids":["NetworkScenario@charging","ConfigurationSolution@charging-online"]}'
+**全程主力**——批量取对象 md（单个也走批量）：
+
+```
+# Windows cmd.exe（echo 管道喂 stdin —— cmd 不认 \" 转义，单行 -d "{...}" 内层双引号会被破坏，必须管道）
+echo {"ids":["NetworkScenario@charging","ConfigurationSolution@charging-online"]} | curl -s -X POST http://127.0.0.1:8000/api/v1/md -H "Content-Type: application/json" --data-binary @-
+
+# Git Bash / Linux（单引号直接传 body）
+curl -s -X POST http://127.0.0.1:8000/api/v1/md -H "Content-Type: application/json" -d '{"ids":["NetworkScenario@charging"]}'
 ```
 
 - 业务域用 `GET /domains` 直取（返回 `[{id,name,md}]`，含正文+边段）；其余所有对象用 `POST /md` 沿引用取。
