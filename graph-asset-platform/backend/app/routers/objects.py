@@ -11,6 +11,7 @@ from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Query
 from fastapi.responses import PlainTextResponse
+from pydantic import BaseModel, Field
 
 from ..models import Edge, Object
 from ..service import get_service
@@ -213,3 +214,45 @@ def subgraph(center: str,
             break
         frontier = nxt
     return {"nodes": nodes, "edges": edges}
+
+
+# ---------- /md (batch) ----------
+
+class BatchMdRequest(BaseModel):
+    """批量取 md 请求体（Agent 友好，供 SKILL 逐层批次调用）。
+
+    - ``ids``：1~N 个对象 id（版本无关逻辑 ID，可含 ``@`` 与空格）。
+    - ``version``：可选全局版本；不传 → 每个 id 各自取**最新现存版本**。
+      某 id 不在该版本 → 该 id 计错并回带 ``available_versions``，不影响其余 id。
+    """
+    ids: list[str] = Field(..., min_length=1)
+    version: Optional[str] = None
+
+
+@router.post("/md")
+def batch_md(req: BatchMdRequest):
+    """批量取多个对象的原始 markdown。
+
+    复用单对象版本解析（``Index.resolve_node``）：不传 version 落到该 id 最新
+    现存版本；版本不匹配不整体报错，而是该 id 计错并回带可用版本，其余 id 照常
+    返回。响应为 ``{id: {version, md} | {error, available_versions}}``——每个 id
+    恰好一个条目，便于 Agent 遍历。
+    """
+    idx = get_service().index
+    out: dict = {}
+    # dict.fromkeys 去重并保序；同 id 重复请求只算一次。
+    for id_ in dict.fromkeys(req.ids):
+        available = idx.versions_of(id_)
+        if not available:
+            out[id_] = {"error": "对象不存在", "available_versions": []}
+            continue
+        obj = idx.resolve_node(id_, req.version)
+        if obj is None:
+            # id 存在但指定版本缺失 → 回带可用版本，供 Agent 改版本重试
+            out[id_] = {
+                "error": f"版本不存在: {id_}@{req.version}",
+                "available_versions": available,
+            }
+            continue
+        out[id_] = {"version": obj.version, "md": obj.raw_md}
+    return out

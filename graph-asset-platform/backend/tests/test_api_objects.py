@@ -222,3 +222,81 @@ def test_list_objects_filter_by_ui_layer(tmp_data_dir, monkeypatch):
         ids = {r["id"] for r in rows_v}
         assert "alpha@MMLCommand@ADD DEMO" in ids
         assert "alpha@ConfigObject@DEMO_OBJ" in ids
+
+
+# ---------------- /md (batch) ----------------
+
+def test_batch_md_multiple_latest_version(tmp_data_dir, monkeypatch):
+    """批量取多 id,不传 version → 各自最新版本 + 原始 md。"""
+    _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES, "b.md": CFG, "v2.md": CMD_V2})
+    with TestClient(app) as c:
+        r = c.post("/api/v1/md", json={
+            "ids": ["alpha@MMLCommand@ADD DEMO", "alpha@ConfigObject@DEMO_OBJ"],
+        })
+        assert r.status_code == 200
+        body = r.json()
+        # CMD 有 20.15.2+20.16.0,不传 version → 最新 20.16.0
+        cmd = body["alpha@MMLCommand@ADD DEMO"]
+        assert cmd["version"] == "20.16.0"
+        assert "ADD DEMO" in cmd["md"]
+        assert "DEMO_OBJ" in body["alpha@ConfigObject@DEMO_OBJ"]["md"]
+
+
+def test_batch_md_partial_failure(tmp_data_dir, monkeypatch):
+    """部分 id 不存在 → 不整体报错,失败 id 回带 error。"""
+    _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES})
+    with TestClient(app) as c:
+        r = c.post("/api/v1/md", json={
+            "ids": ["alpha@MMLCommand@ADD DEMO", "alpha@MMLCommand@NOPE"],
+        })
+        assert r.status_code == 200
+        body = r.json()
+        assert "md" in body["alpha@MMLCommand@ADD DEMO"]
+        miss = body["alpha@MMLCommand@NOPE"]
+        assert miss["error"] == "对象不存在"
+        assert miss["available_versions"] == []
+
+
+def test_batch_md_version_mismatch_lists_available(tmp_data_dir, monkeypatch):
+    """指定版本不存在 → 该 id 计错并回带 available_versions(供 Agent 重试)。"""
+    _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES})  # 仅 20.15.2
+    with TestClient(app) as c:
+        r = c.post("/api/v1/md", json={
+            "ids": ["alpha@MMLCommand@ADD DEMO"], "version": "9.9.9",
+        })
+        assert r.status_code == 200
+        item = r.json()["alpha@MMLCommand@ADD DEMO"]
+        assert "error" in item
+        assert "20.15.2" in item["available_versions"]
+
+
+def test_batch_md_explicit_version(tmp_data_dir, monkeypatch):
+    """显式 version → 命中该版本实例(含该版本独有的边声明)。"""
+    _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES, "v2.md": CMD_V2})
+    with TestClient(app) as c:
+        r = c.post("/api/v1/md", json={
+            "ids": ["alpha@MMLCommand@ADD DEMO"], "version": "20.15.2",
+        })
+        item = r.json()["alpha@MMLCommand@ADD DEMO"]
+        assert item["version"] == "20.15.2"
+        assert "## 边" in item["md"]  # v1 才有边,v2 无
+
+
+def test_batch_md_dedup_ids(tmp_data_dir, monkeypatch):
+    """重复 id → 只算一次,结果一致。"""
+    _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES})
+    with TestClient(app) as c:
+        r = c.post("/api/v1/md", json={
+            "ids": ["alpha@MMLCommand@ADD DEMO", "alpha@MMLCommand@ADD DEMO"],
+        })
+        body = r.json()
+        assert len(body) == 1
+        assert "md" in body["alpha@MMLCommand@ADD DEMO"]
+
+
+def test_batch_md_empty_ids_rejected(tmp_data_dir, monkeypatch):
+    """空 ids → 422(Pydantic min_length=1)。"""
+    _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES})
+    with TestClient(app) as c:
+        r = c.post("/api/v1/md", json={"ids": []})
+        assert r.status_code == 422
