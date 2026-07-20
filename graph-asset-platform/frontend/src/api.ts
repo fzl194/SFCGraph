@@ -51,6 +51,7 @@ export interface ObjectRow {
   layer?: string
   nf?: string
   domain?: string
+  scenario?: string
   name?: string | null
   versions: string[]
 }
@@ -97,6 +98,7 @@ export interface Stats {
     Record<string, Record<string, number>>
   >
   per_domain: Record<string, number>
+  per_domain_scenario: Record<string, Record<string, number>>
 }
 
 export interface ImportHistoryItem {
@@ -144,6 +146,7 @@ export const listObjects = (p: {
   nf?: string
   version?: string
   domain?: string
+  scenario?: string
   page?: number
   size?: number
 } = {}): Promise<ObjectRow[]> =>

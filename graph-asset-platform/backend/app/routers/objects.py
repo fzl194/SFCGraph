@@ -78,6 +78,7 @@ def list_objects(type: Optional[str] = None,
                  nf: Optional[str] = None,
                  version: Optional[str] = None,
                  domain: Optional[str] = None,
+                 scenario: Optional[str] = None,
                  page: int = 1,
                  size: int = 50):
     """按 id 聚合列表（多版本合并为一行，versions[] 聚合）。
@@ -113,6 +114,8 @@ def list_objects(type: Optional[str] = None,
             continue
         if domain and obj.domain != domain:
             continue
+        if scenario and obj.scenario != scenario:
+            continue
         if ql and ql not in id_.lower() and ql not in str(obj.frontmatter.get("name", "")).lower():
             continue
         rows.append({
@@ -121,6 +124,7 @@ def list_objects(type: Optional[str] = None,
             "layer": obj.layer,
             "nf": obj.nf,
             "domain": obj.domain,
+            "scenario": obj.scenario,
             "name": obj.frontmatter.get("name"),
             "versions": idx.versions_of(id_),
         })

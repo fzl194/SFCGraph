@@ -158,6 +158,7 @@ def stats():
     per_layer_per_nf_per_version: defaultdict = defaultdict(
         lambda: defaultdict(lambda: defaultdict(int)))
     per_domain: defaultdict = defaultdict(int)
+    per_domain_scenario: defaultdict = defaultdict(lambda: defaultdict(int))
 
     for obj in idx.nodes.values():
         ul = ui_layer_of(obj.layer)
@@ -168,6 +169,8 @@ def stats():
                 per_layer_per_nf_per_version[ul][obj.nf][obj.version] += 1
         if obj.domain:
             per_domain[obj.domain] += 1
+            if obj.scenario:
+                per_domain_scenario[obj.domain][obj.scenario] += 1
 
     return {
         "object_counts_by_type": _counts(svc),
@@ -179,4 +182,5 @@ def stats():
         "per_layer_per_nf_per_version": _dd_to_plain(
             {k: dict(v) for k, v in per_layer_per_nf_per_version.items()}),
         "per_domain": dict(per_domain),
+        "per_domain_scenario": _dd_to_plain(dict(per_domain_scenario)),
     }

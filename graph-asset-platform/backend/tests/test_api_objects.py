@@ -300,3 +300,72 @@ def test_batch_md_empty_ids_rejected(tmp_data_dir, monkeypatch):
     with TestClient(app) as c:
         r = c.post("/api/v1/md", json={"ids": []})
         assert r.status_code == 422
+
+
+# ---------------- 业务层 scenario / type 过滤 ----------------
+
+_BD = (
+    "---\n"
+    "id: BusinessDomain@demo\n"
+    "type: BusinessDomain\n"
+    "domain: demo\n"
+    "---\n"
+    "# demo domain\n"
+)
+_NS = (
+    "---\n"
+    "id: NetworkScenario@demo-scenario\n"
+    "type: NetworkScenario\n"
+    "domain: demo\n"
+    "scenario: demo-scenario\n"
+    "---\n"
+    "# demo-scenario\n"
+)
+_CS = (
+    "---\n"
+    "id: ConfigurationSolution@demo-scenario-online\n"
+    "type: ConfigurationSolution\n"
+    "domain: demo\n"
+    "scenario: demo-scenario\n"
+    "---\n"
+    "# online\n"
+)
+
+
+def test_list_objects_business_scenario_and_type_filter(tmp_data_dir, monkeypatch):
+    """业务层：scenario 过滤、type 过滤、ObjectRow 返 scenario 字段。"""
+    _setup(tmp_data_dir, monkeypatch, {"bd.md": _BD, "ns.md": _NS, "cs.md": _CS})
+    with TestClient(app) as c:
+        # 业务层全量 = BD + NS + CS
+        rows = c.get("/api/v1/objects", params={"layer": "业务层"}).json()
+        ids = {r["id"] for r in rows}
+        assert ids == {"BusinessDomain@demo", "NetworkScenario@demo-scenario",
+                       "ConfigurationSolution@demo-scenario-online"}
+        # ObjectRow 带 scenario（NS/CS 有值；BD 无场景为 None）
+        by_id = {r["id"]: r for r in rows}
+        assert by_id["NetworkScenario@demo-scenario"]["scenario"] == "demo-scenario"
+        assert by_id["BusinessDomain@demo"]["scenario"] is None
+        # scenario 过滤 → 只剩该场景下 NS+CS（BD 无场景被排除）
+        rows_sc = c.get("/api/v1/objects",
+                        params={"layer": "业务层", "scenario": "demo-scenario"}).json()
+        ids_sc = {r["id"] for r in rows_sc}
+        assert ids_sc == {"NetworkScenario@demo-scenario",
+                          "ConfigurationSolution@demo-scenario-online"}
+        assert "BusinessDomain@demo" not in ids_sc
+        # type 过滤：只 BD
+        rows_bd = c.get("/api/v1/objects",
+                        params={"layer": "业务层", "type": "BusinessDomain"}).json()
+        assert {r["id"] for r in rows_bd} == {"BusinessDomain@demo"}
+
+
+def test_stats_per_domain_scenario(tmp_data_dir, monkeypatch):
+    """/stats 聚合 per_domain 与 per_domain_scenario（供前端域/场景下拉）。"""
+    _setup(tmp_data_dir, monkeypatch, {"bd.md": _BD, "ns.md": _NS, "cs.md": _CS})
+    with TestClient(app) as c:
+        s = c.get("/api/v1/stats").json()
+        # demo 域共 3 对象
+        assert s["per_domain"]["demo"] == 3
+        # demo 域下 demo-scenario 场景共 2 对象（NS+CS；BD 无场景不计入）
+        assert s["per_domain_scenario"]["demo"]["demo-scenario"] == 2
+        # 业务层计数 = 3
+        assert s["per_layer"]["业务层"] == 3

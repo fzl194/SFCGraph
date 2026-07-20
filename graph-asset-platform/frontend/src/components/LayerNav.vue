@@ -39,6 +39,17 @@
         >
           <el-option v-for="s in scenarioOptions" :key="s" :label="s" :value="s" />
         </el-select>
+        <el-select
+          v-if="typeOptions.length > 1"
+          v-model="sel.type"
+          placeholder="类型"
+          size="small"
+          clearable
+          class="sel"
+          @change="onSelectorChange"
+        >
+          <el-option v-for="t in typeOptions" :key="t.value" :label="t.label" :value="t.value" />
+        </el-select>
       </template>
       <template v-else>
         <el-select
@@ -181,6 +192,9 @@ const typeOptions = computed(() => {
     CompoundTask: '步骤Task',
     FeatureTask: '特性Task',
     Task: '任务',
+    BusinessDomain: '业务域',
+    NetworkScenario: '网络场景',
+    ConfigurationSolution: '配置方案',
   }
   return types.map((t) => ({ value: t, label: labelMap[t] ?? t }))
 })
@@ -194,9 +208,14 @@ const domainOptions = computed(() => {
 })
 
 const scenarioOptions = computed(() => {
-  // ObjectRow 不含 scenario（后端 /objects 列表未返回该字段）。
-  // 业务层场景选项暂从对象 frontmatter 无法获取，此处返回空，用户手输或后续 stats 补充。
-  return [] as string[]
+  // 从 stats per_domain_scenario 取：选了域 → 该域下场景；未选域 → 所有场景并集
+  const ds = globalStats.value?.per_domain_scenario ?? {}
+  if (sel.value.domain) return Object.keys(ds[sel.value.domain] ?? {}).sort()
+  const all = new Set<string>()
+  for (const sc of Object.values(ds)) {
+    for (const s of Object.keys(sc)) all.add(s)
+  }
+  return Array.from(all).sort()
 })
 
 function unique<T>(arr: T[]): T[] {

@@ -129,6 +129,7 @@ async function loadList(): Promise<ObjectRow[]> {
       nf: sel.nf || undefined,
       version: sel.version || undefined,
       domain: sel.domain || undefined,
+      scenario: sel.scenario || undefined,
       page,
       size: PAGE_SIZE,
     })
