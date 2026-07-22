@@ -310,17 +310,23 @@ async def create_case(
     intent: str = Form(""),
     domain: str = Form(""),
     scenario: str = Form(""),
+    solution: str = Form(""),
     slug: str = Form(""),
     status: str = Form("active"),
     author: str = Form(""),
     input_files: List[UploadFile] = File([]),
     reference_files: List[UploadFile] = File([]),
 ):
-    """前端建用例：写意图 md + 可选上传输入/参考配置。建文件夹 cases/{域}/{场景}/TestCase@{slug}/。"""
+    """前端建用例：写意图 md + 可选上传输入/参考配置。建文件夹 cases/{域}/{场景}/TestCase@{slug}/。
+
+    domain/scenario/solution 建议填图谱业务层的值（BusinessDomain 域 / NetworkScenario 场景 /
+    ConfigurationSolution 方案 id），前端下拉从图谱只读拉取。
+    """
     svc = get_test_service()
     with test_lock:
         domain = (domain or "").strip() or "未分类"
         scenario = (scenario or "").strip()
+        solution = (solution or "").strip()
         slug = (slug or "").strip()
         if not slug:
             slug = "case-" + secrets.token_hex(3)
@@ -339,6 +345,8 @@ async def create_case(
             "domain": domain, "scenario": scenario, "status": status,
             "author": author, "created_at": _today(),
         }
+        if solution:
+            fm["solution"] = solution
         svc.store.write(f"{case_rel}/{cid}.md", _render_case_md(fm, intent))
 
         for uf in input_files:
