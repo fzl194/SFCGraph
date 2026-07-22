@@ -8,16 +8,11 @@
         <span v-if="c.scenario" class="tag tag-scene">{{ c.scenario }}</span>
       </div>
       <div class="top-actions" v-if="c">
-        <button class="tb-btn" @click="showCaseForm = true">编辑用例</button>
-        <button class="tb-btn danger" @click="delCase">删除用例</button>
         <button class="tb-btn" @click="showUploadPanel = !showUploadPanel">↑ 上传运行</button>
         <button class="tb-btn" @click="downloadCase">打包下载</button>
         <button class="tb-btn" @click="toggleCollapse">{{ runCollapsed ? '展开运行' : '缩起运行' }}</button>
       </div>
     </div>
-
-    <!-- 编辑用例 -->
-    <TestCaseForm v-if="showCaseForm" :case="c" @saved="onCaseSaved" @cancel="showCaseForm = false" />
 
     <!-- 上传运行面板 -->
     <div v-if="showUploadPanel && c" class="upload-panel">
@@ -153,14 +148,13 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElSelect, ElOption, ElInput, ElButton, ElMessage, ElMessageBox } from 'element-plus'
 import {
-  getCase, getRun, getArtifact, uploadRun, updateRun, deleteRun, deleteCase,
+  getCase, getRun, getArtifact, uploadRun, updateRun, deleteRun,
   downloadCaseURL, downloadRunURL, deleteReview,
   type CaseDetail, type RunDetail, type ReviewDetail, type RunInfo,
 } from '../api'
 import { renderMd } from '../md'
 import FilePreview from '../components/FilePreview.vue'
 import ReviewForm from '../components/ReviewForm.vue'
-import TestCaseForm from '../components/TestCaseForm.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -181,7 +175,6 @@ const artLoading = ref(false)
 const showReviewForm = ref(false)
 const editingReview = ref<ReviewDetail | null>(null)
 
-const showCaseForm = ref(false)
 const showUploadPanel = ref(false)
 const uploadName = ref('')
 const uploadRunner = ref('')
@@ -341,27 +334,6 @@ async function delRun(): Promise<void> {
     await deleteRun(selectedRun.value.id)
     ElMessage.success('已删除')
     await loadCase()
-  } catch (e) {
-    ElMessage.error(e instanceof Error ? e.message : String(e))
-  }
-}
-
-async function onCaseSaved(_c: CaseDetail): Promise<void> {
-  showCaseForm.value = false
-  await loadCase()
-}
-
-async function delCase(): Promise<void> {
-  if (!c.value) return
-  try {
-    await ElMessageBox.confirm(`确定删除用例「${c.value.name || c.value.id}」？连同其下所有运行，不可恢复。`, '确认删除', { type: 'warning' })
-  } catch {
-    return
-  }
-  try {
-    await deleteCase(c.value.id)
-    ElMessage.success('已删除')
-    router.push({ name: 'tests' })
   } catch (e) {
     ElMessage.error(e instanceof Error ? e.message : String(e))
   }
