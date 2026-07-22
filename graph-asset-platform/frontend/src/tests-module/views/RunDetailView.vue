@@ -66,8 +66,9 @@
               <div v-for="(p, i) in rv.problems" :key="i" class="rv-prob">
                 <div class="rp-desc">{{ p.description }}</div>
                 <div class="rp-tags">
-                  <span :class="['attr', attrClass(p.attribution)]">{{ p.attribution || '未归因' }}</span>
-                  <span v-if="p.object" class="rp-obj">{{ p.object }}</span>
+                  <span v-for="a in p.attribution" :key="a" :class="['attr', attrClass(a)]">{{ a }}</span>
+                  <span v-if="!p.attribution.length" class="attr a-other">未归因</span>
+                  <span v-for="o in p.objects" :key="o" class="rp-obj">{{ o }}</span>
                 </div>
               </div>
             </div>

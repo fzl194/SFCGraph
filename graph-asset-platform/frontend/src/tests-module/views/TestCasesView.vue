@@ -6,45 +6,33 @@
         <p class="page-sub">
           数据飞轮·数据层。用例（输入）→ 运行（产出）→ 审查（问题清单）→ 定位改图谱。
           <span v-if="stats" class="page-stats">
-            {{ stats.case_count }} 用例 · {{ stats.run_count }} 运行 ·
-            {{ stats.review_count }} 审查
+            {{ stats.case_count }} 用例 · {{ stats.run_count }} 运行 · {{ stats.review_count }} 审查
           </span>
         </p>
       </div>
       <div class="head-actions">
-        <el-button type="primary" @click="toggleForm">
-          {{ showForm ? '收起' : '+ 新建用例' }}
-        </el-button>
+        <el-button type="primary" :disabled="showForm || !!editingCase" @click="showForm = true">+ 新建用例</el-button>
         <el-button :loading="refreshing" @click="refresh">刷新索引</el-button>
       </div>
     </div>
 
-    <TestCaseForm v-if="showForm" @created="onCreated" @cancel="showForm = false" />
+    <TestCaseForm
+      v-if="showForm || editingCase"
+      :case="editingCase"
+      @saved="onSaved"
+      @cancel="closeForm"
+    />
 
     <div class="filter-bar">
-      <el-select
-        v-model="domain"
-        placeholder="全部业务域"
-        clearable
-        class="f-domain"
-        @change="reload"
-      >
+      <el-select v-model="domain" placeholder="全部业务域" clearable class="f-domain" @change="reload">
         <el-option v-for="d in domainOptions" :key="d" :label="d" :value="d" />
       </el-select>
-      <el-input
-        v-model="q"
-        placeholder="搜索用例（id / 名称）"
-        clearable
-        class="f-q"
-        @input="onQ"
-        @clear="reload"
-      />
+      <el-input v-model="q" placeholder="搜索用例（id / 名称）" clearable class="f-q" @input="onQ" @clear="reload" />
     </div>
 
     <div v-loading="loading" class="cases-list">
       <div v-if="!loading && cases.length === 0" class="empty">
-        暂无用例。点上方"+ 新建用例"由 SA 直接建；或把 TestCase md 放到
-        <code>platform-data/tests/cases/{域}/{场景}/</code>，再"刷新索引"。
+        暂无用例。点上方"+ 新建用例"由 SA 直接建。
       </div>
       <div v-for="c in cases" :key="c.id" class="case-row" @click="goCase(c.id)">
         <div class="case-main">
@@ -59,10 +47,10 @@
           </div>
         </div>
         <div class="case-side">
+          <button class="dl-btn" title="编辑" @click.stop="editCase(c.id)">编辑</button>
           <button class="dl-btn" title="打包下载" @click.stop="download(c.id)">下载</button>
-          <span :class="['verdict', verdictClass(c.latest_verdict)]">
-            {{ c.latest_verdict || '未审查' }}
-          </span>
+          <button class="dl-btn danger" title="删除" @click.stop="delCase(c)">删除</button>
+          <span :class="['verdict', verdictClass(c.latest_verdict)]">{{ c.latest_verdict || '未审查' }}</span>
         </div>
       </div>
     </div>
@@ -72,8 +60,11 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { ElInput, ElSelect, ElOption, ElButton } from 'element-plus'
-import { listCases, testsStats, reindexTests, downloadCaseURL, type TestCaseRow, type TestStats, type CaseDetail } from '../api'
+import { ElInput, ElSelect, ElOption, ElButton, ElMessage, ElMessageBox } from 'element-plus'
+import {
+  listCases, getCase, deleteCase, testsStats, reindexTests, downloadCaseURL,
+  type TestCaseRow, type TestStats, type CaseDetail,
+} from '../api'
 import TestCaseForm from '../components/TestCaseForm.vue'
 
 const router = useRouter()
@@ -84,6 +75,7 @@ const refreshing = ref(false)
 const domain = ref('')
 const q = ref('')
 const showForm = ref(false)
+const editingCase = ref<CaseDetail | null>(null)
 let qTimer: ReturnType<typeof setTimeout> | null = null
 
 const domainOptions = computed(() => (stats.value ? Object.keys(stats.value.cases_by_domain) : []))
@@ -110,13 +102,41 @@ function onQ(): void {
   qTimer = setTimeout(reload, 250)
 }
 
-function toggleForm(): void {
-  showForm.value = !showForm.value
+function closeForm(): void {
+  showForm.value = false
+  editingCase.value = null
 }
 
-async function onCreated(_c: CaseDetail): Promise<void> {
-  showForm.value = false
+async function onSaved(_c: CaseDetail): Promise<void> {
+  closeForm()
   await Promise.all([reload(), loadStats()])
+}
+
+async function editCase(id: string): Promise<void> {
+  try {
+    editingCase.value = await getCase(id)
+  } catch (e) {
+    ElMessage.error(e instanceof Error ? e.message : String(e))
+  }
+}
+
+async function delCase(c: TestCaseRow): Promise<void> {
+  try {
+    await ElMessageBox.confirm(
+      `确定删除用例「${c.name || c.id}」？将连同其下所有运行一起删除，不可恢复。`,
+      '确认删除',
+      { type: 'warning' },
+    )
+  } catch {
+    return
+  }
+  try {
+    await deleteCase(c.id)
+    ElMessage.success('已删除')
+    await Promise.all([reload(), loadStats()])
+  } catch (e) {
+    ElMessage.error(e instanceof Error ? e.message : String(e))
+  }
 }
 
 async function refresh(): Promise<void> {
@@ -214,12 +234,6 @@ onMounted(async () => {
   border-radius: var(--radius);
   border: 1px dashed var(--border);
 }
-.empty code {
-  background: var(--bg-elev);
-  padding: 1px 5px;
-  border-radius: 4px;
-  font-size: 12px;
-}
 .case-row {
   display: flex;
   justify-content: space-between;
@@ -278,6 +292,10 @@ onMounted(async () => {
 .dl-btn:hover {
   color: var(--accent);
   border-color: var(--accent);
+}
+.dl-btn.danger:hover {
+  color: #dc2626;
+  border-color: #dc2626;
 }
 .verdict {
   font-size: 12px;

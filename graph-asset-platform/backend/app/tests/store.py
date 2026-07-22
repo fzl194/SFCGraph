@@ -3,6 +3,7 @@
 与图谱 app/store.py 同样的路径穿越防护，但根目录不同、代码独立。任何逃逸
 tests 根的路径都抛 ValueError。
 """
+import shutil
 from pathlib import Path
 
 
@@ -43,6 +44,21 @@ class TestStore:
         p = self._resolve(rel)
         if p.exists():
             p.unlink()
+            return True
+        return False
+
+    def move(self, src_rel: str, dst_rel: str) -> None:
+        """移动文件/目录（用例改域/场景时移动整个用例文件夹）。"""
+        src = self._resolve(src_rel)
+        dst = self._resolve(dst_rel)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(src), str(dst))
+
+    def rmtree(self, rel: str) -> bool:
+        """删除整个目录（删用例/运行文件夹）。"""
+        p = self._resolve(rel)
+        if p.exists() and p.is_dir():
+            shutil.rmtree(p)
             return True
         return False
 

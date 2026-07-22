@@ -23,7 +23,7 @@
 
     <div class="field">
       <div class="problems-head">
-        <label>问题清单 <span class="hint">每条带归因——喂给定位 Agent</span></label>
+        <label>问题清单 <span class="hint">每条含：归因多选 + 关联图谱对象多选</span></label>
         <el-button size="small" @click="addProblem">+ 加问题</el-button>
       </div>
       <div v-for="(p, i) in problems" :key="i" class="problem-row">
@@ -31,26 +31,17 @@
           <el-input v-model="p.desc" type="textarea" :rows="2" placeholder="问题描述" />
           <el-button class="pr-del" size="small" type="danger" link @click="delProblem(i)">删除</el-button>
         </div>
-        <div class="pr-fields">
-          <el-select v-model="p.attribution" placeholder="归因" class="pr-attr">
+        <div class="pr-field">
+          <span class="pr-label">归因（可多选）</span>
+          <el-select v-model="p.attribution" multiple placeholder="选问题类型" class="pr-attr">
             <el-option label="图谱知识" value="图谱知识" />
             <el-option label="配置流程" value="配置流程" />
             <el-option label="其他" value="其他" />
           </el-select>
-          <el-autocomplete
-            v-model="p.object"
-            :fetch-suggestions="fetchSugg"
-            placeholder="涉及对象（图谱 ID，可搜索）"
-            clearable
-            class="pr-obj"
-          >
-            <template #default="{ item }">
-              <div class="sugg">
-                <span class="sugg-name">{{ item.name }}</span>
-                <span class="sugg-id">{{ item.value }}</span>
-              </div>
-            </template>
-          </el-autocomplete>
+        </div>
+        <div class="pr-field">
+          <span class="pr-label">关联图谱对象（层→类型→搜索，可多选）</span>
+          <GraphObjectPicker v-model="p.objects" />
         </div>
       </div>
       <div v-if="problems.length === 0" class="no-problem">无问题（点上方"+ 加问题"）</div>
@@ -68,22 +59,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import {
-  ElInput,
-  ElRadio,
-  ElRadioGroup,
-  ElSelect,
-  ElOption,
-  ElAutocomplete,
-  ElButton,
-} from 'element-plus'
-import {
-  createReview,
-  updateReview,
-  suggestObjects,
-  type ReviewDetail,
-  type ReviewWriteBody,
-} from '../api'
+import { ElInput, ElRadio, ElRadioGroup, ElSelect, ElOption, ElButton } from 'element-plus'
+import { createReview, updateReview, type ReviewDetail, type ReviewWriteBody } from '../api'
+import GraphObjectPicker from './GraphObjectPicker.vue'
 
 const props = defineProps<{ runId: string; review?: ReviewDetail | null }>()
 const emit = defineEmits<{ submitted: []; cancel: [] }>()
@@ -91,27 +69,20 @@ const emit = defineEmits<{ submitted: []; cancel: [] }>()
 const verdict = ref(props.review?.verdict || '不通过')
 const reviewer = ref(props.review?.reviewer || '')
 const conclusion = ref('')
-const problems = ref(
-  props.review?.problems.map((p) => ({ desc: p.description, attribution: p.attribution, object: p.object })) || [
-    { desc: '', attribution: '图谱知识', object: '' },
+interface ProblemRow { desc: string; attribution: string[]; objects: string[] }
+const problems = ref<ProblemRow[]>(
+  props.review?.problems.map((p) => ({ desc: p.description, attribution: [...p.attribution], objects: [...p.objects] })) || [
+    { desc: '', attribution: ['图谱知识'], objects: [] },
   ],
 )
 const submitting = ref(false)
 const error = ref('')
 
 function addProblem(): void {
-  problems.value.push({ desc: '', attribution: '图谱知识', object: '' })
+  problems.value.push({ desc: '', attribution: ['图谱知识'], objects: [] })
 }
 function delProblem(i: number): void {
   problems.value.splice(i, 1)
-}
-
-async function fetchSugg(
-  query: string,
-  cb: (items: { value: string; name: string }[]) => void,
-): Promise<void> {
-  const res = await suggestObjects(query)
-  cb(res.map((r) => ({ value: r.id, name: r.name })))
 }
 
 async function submit(): Promise<void> {
@@ -125,7 +96,7 @@ async function submit(): Promise<void> {
       conclusion: conclusion.value || undefined,
       problems: problems.value
         .filter((p) => p.desc.trim() !== '')
-        .map((p) => ({ desc: p.desc, attribution: p.attribution, object: p.object })),
+        .map((p) => ({ desc: p.desc, attribution: p.attribution, objects: p.objects })),
     }
     if (props.review) {
       await updateReview(props.review.id, body)
@@ -198,36 +169,23 @@ label {
   flex-shrink: 0;
   margin-top: 2px;
 }
-.pr-fields {
-  display: flex;
-  gap: var(--space-2);
+.pr-field {
   margin-top: 8px;
 }
-.pr-attr {
-  width: 150px;
-  flex-shrink: 0;
+.pr-label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-faint);
+  margin-bottom: 4px;
 }
-.pr-obj {
-  flex: 1;
+.pr-attr {
+  width: 100%;
 }
 .no-problem {
   font-size: 12.5px;
   color: var(--text-faint);
   padding: var(--space-2);
-}
-.sugg {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  line-height: 1.4;
-}
-.sugg-name {
-  color: var(--text);
-}
-.sugg-id {
-  color: var(--text-faint);
-  font-size: 11px;
-  font-family: var(--mono);
 }
 .err {
   color: #dc2626;

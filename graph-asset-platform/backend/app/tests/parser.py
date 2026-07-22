@@ -50,29 +50,26 @@ _OBJ_RE = re.compile(r"^\s*[-*]\s*涉及对象\s*[:：]\s*(.+?)\s*$", re.M)
 _WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
 
 
-def _strip_wikilink(s: str) -> str:
-    """`[[UDG@CompoundTask@x]]` → `UDG@CompoundTask@x`；无则原样返回。"""
-    s = (s or "").strip()
-    m = _WIKILINK_RE.search(s)
-    return m.group(1).strip() if m else s
-
-
 def extract_problems(body: str) -> list:
-    """best-effort 抽问题清单。返回 list[Problem]。抽不到→[]。"""
+    """best-effort 抽问题清单。返回 list[Problem]。抽不到→[]。
+
+    归因按 `,`/`，`/`、` 切成多选列表；涉及对象取该行全部 ``[[ID]]`` 成列表。
+    """
     if not body:
         return []
     # 按 "### 问题" 标题切块
     blocks = _PROBLEM_HEAD_RE.split(body)
-    # split 后，偶数下标是块内容（标题被切掉），第 0 块是首个问题标题之前的内容——跳过
     problems: list = []
     for blk in blocks[1:]:
         desc_m = _DESC_RE.search(blk)
         attr_m = _ATTR_RE.search(blk)
         obj_m = _OBJ_RE.search(blk)
         desc = desc_m.group(1).strip() if desc_m else _heading_text(blk)
-        attr = attr_m.group(1).strip() if attr_m else ""
-        obj = _strip_wikilink(obj_m.group(1)) if obj_m else ""
-        problems.append(Problem(description=desc, attribution=attr, object=obj))
+        attr_raw = attr_m.group(1).strip() if attr_m else ""
+        attribution = [s.strip() for s in re.split(r"[,，、]", attr_raw) if s.strip()]
+        obj_raw = obj_m.group(1).strip() if obj_m else ""
+        objects = [m.strip() for m in _WIKILINK_RE.findall(obj_raw)] if obj_raw else []
+        problems.append(Problem(description=desc, attribution=attribution, objects=objects))
     return problems
 
 

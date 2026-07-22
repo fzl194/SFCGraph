@@ -37,8 +37,8 @@ class Run:
 @dataclass
 class Problem:
     description: str = ""
-    attribution: str = ""     # 图谱知识/配置流程/其他/""
-    object: str = ""          # 涉及图谱对象 id 或 ""
+    attribution: list = field(default_factory=list)   # 归因列表（多选：图谱知识/配置流程/其他…）
+    objects: list = field(default_factory=list)       # 涉及图谱对象 id 列表（多选 tag）
 
 
 @dataclass
