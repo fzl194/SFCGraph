@@ -131,11 +131,37 @@ const UploadIcon = () =>
       }),
     ],
   )
+const TestIcon = () =>
+  h(
+    'svg',
+    { width: '15', height: '15', viewBox: '0 0 24 24', fill: 'none' },
+    [
+      h('path', {
+        d: 'M4 5h16v11H4z',
+        stroke: 'currentColor',
+        'stroke-width': '1.7',
+        'stroke-linejoin': 'round',
+      }),
+      h('path', {
+        d: 'M8 9h3M8 12h6',
+        stroke: 'currentColor',
+        'stroke-width': '1.5',
+        'stroke-linecap': 'round',
+      }),
+      h('path', {
+        d: 'M9 20h6M12 16v4',
+        stroke: 'currentColor',
+        'stroke-width': '1.7',
+        'stroke-linecap': 'round',
+      }),
+    ],
+  )
 
 const tabs = [
   { to: '/', label: '图谱浏览', icon: GraphIcon },
   { to: '/stats', label: '统计', icon: StatsIcon },
   { to: '/upload', label: '上传', icon: UploadIcon },
+  { to: '/tests', label: '测试', icon: TestIcon },
 ]
 
 const totalObjects = computed(() =>

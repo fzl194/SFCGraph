@@ -13,7 +13,9 @@ from fastapi.staticfiles import StaticFiles
 
 from .routers import assets as assets_router
 from .routers import objects as objects_router
+from .routers import tests as tests_router
 from .service import get_service
+from .tests.service import get_test_service
 
 
 @asynccontextmanager
@@ -29,6 +31,13 @@ async def lifespan(app: FastAPI):
         f"耗时 {time.time() - t0:.1f}s → http://127.0.0.1:8000/",
         flush=True,
     )
+    # 测试子系统索引（独立于图谱，隔离）
+    t_svc = get_test_service()
+    print(
+        f"[startup] 测试子系统就绪：{len(t_svc.index.cases)} 用例 / "
+        f"{len(t_svc.index.runs)} 运行 / {len(t_svc.index.reviews)} 审查",
+        flush=True,
+    )
     yield
 
 
@@ -41,6 +50,7 @@ app.add_middleware(
 )
 app.include_router(assets_router.router, prefix="/api/v1")
 app.include_router(objects_router.router, prefix="/api/v1")
+app.include_router(tests_router.router, prefix="/api/v1")
 
 # 前端静态托管（dist 可能尚未构建，不存在则不挂载）
 _dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
