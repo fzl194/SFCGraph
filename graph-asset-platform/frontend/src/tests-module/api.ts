@@ -138,6 +138,7 @@ export async function createCase(data: {
   intent: string
   domain?: string
   scenario?: string
+  solution?: string
   slug?: string
   author?: string
   inputFiles?: File[]
@@ -148,6 +149,7 @@ export async function createCase(data: {
   fd.append('intent', data.intent)
   if (data.domain) fd.append('domain', data.domain)
   if (data.scenario) fd.append('scenario', data.scenario)
+  if (data.solution) fd.append('solution', data.solution)
   if (data.slug) fd.append('slug', data.slug)
   if (data.author) fd.append('author', data.author)
   ;(data.inputFiles || []).forEach((f) => fd.append('input_files', f))
@@ -239,4 +241,38 @@ export async function suggestObjects(prefix: string): Promise<{ id: string; name
     }
   }
   return out
+}
+
+// ---------- 图谱业务层只读查询（建用例时下拉关联图谱，跨子系统只读，后端隔离不破）----------
+
+interface GraphObjectRow {
+  id: string
+  type: string
+  domain?: string | null
+  scenario?: string | null
+  name?: string | null
+}
+
+// 业务域：value=域 slug，label=可读名
+export async function fetchBusinessDomains(): Promise<{ slug: string; name: string }[]> {
+  const rows = await _req<GraphObjectRow[]>(`${BASE}/objects?type=BusinessDomain&size=200`)
+  return rows.map((r) => ({ slug: String(r.domain || r.id.split('@')[1] || r.id), name: String(r.name || r.id) }))
+}
+
+// 场景（按域过滤）：value=场景 slug，label=可读名
+export async function fetchScenarios(domain: string): Promise<{ slug: string; name: string }[]> {
+  if (!domain) return []
+  const rows = await _req<GraphObjectRow[]>(
+    `${BASE}/objects?type=NetworkScenario&domain=${encodeURIComponent(domain)}&size=200`,
+  )
+  return rows.map((r) => ({ slug: String(r.scenario || ''), name: String(r.name || r.id) })).filter((r) => r.slug)
+}
+
+// 方案（按域+场景过滤）：value=ConfigurationSolution id，label=id
+export async function fetchSolutions(domain: string, scenario: string): Promise<{ id: string; name: string }[]> {
+  if (!domain || !scenario) return []
+  const rows = await _req<GraphObjectRow[]>(
+    `${BASE}/objects?type=ConfigurationSolution&domain=${encodeURIComponent(domain)}&scenario=${encodeURIComponent(scenario)}&size=300`,
+  )
+  return rows.map((r) => ({ id: r.id, name: String(r.name || r.id) }))
 }

@@ -15,22 +15,32 @@
 
     <div class="row">
       <div class="field">
-        <label>业务域</label>
+        <label>业务域 <span class="hint">关联图谱 BusinessDomain</span></label>
         <el-select v-model="domain" filterable allow-create default-first-option clearable
-          placeholder="选或输入新域（空=未分类）" class="sel">
-          <el-option v-for="d in domainOptions" :key="d" :label="d" :value="d" />
+          placeholder="选或输入域" class="sel">
+          <el-option v-for="d in domainOptions" :key="d.slug" :label="d.name + '（' + d.slug + '）'" :value="d.slug" />
         </el-select>
       </div>
       <div class="field">
-        <label>场景</label>
+        <label>场景 <span class="hint">关联图谱 NetworkScenario</span></label>
         <el-select v-model="scenario" filterable allow-create default-first-option clearable
-          placeholder="选或输入新场景" :disabled="!domain" class="sel">
-          <el-option v-for="s in scenarioOptions" :key="s" :label="s" :value="s" />
+          :disabled="!domain" :placeholder="domain ? '选或输入场景' : '先选业务域'" class="sel">
+          <el-option v-for="s in scenarioOptions" :key="s.slug" :label="s.name + '（' + s.slug + '）'" :value="s.slug" />
         </el-select>
       </div>
       <div class="field">
         <label>编写人</label>
         <el-input v-model="author" placeholder="如 SA-zhang" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field flex2">
+        <label>方案 <span class="hint">关联图谱 ConfigurationSolution（可选）</span></label>
+        <el-select v-model="solution" filterable allow-create default-first-option clearable
+          :disabled="!domain || !scenario" :placeholder="(!domain || !scenario) ? '先选业务域和场景' : '选或输入方案'" class="sel">
+          <el-option v-for="s in solutionOptions" :key="s.id" :label="s.name + '（' + s.id + '）'" :value="s.id" />
+        </el-select>
       </div>
     </div>
 
@@ -67,9 +77,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import { ElInput, ElSelect, ElOption, ElButton } from 'element-plus'
-import { createCase, testsStats, type CaseDetail, type TestStats } from '../api'
+import {
+  createCase, fetchBusinessDomains, fetchScenarios, fetchSolutions,
+  type CaseDetail,
+} from '../api'
 
 const emit = defineEmits<{ created: [c: CaseDetail]; cancel: [] }>()
 
@@ -77,6 +90,7 @@ const name = ref('')
 const slug = ref('')
 const domain = ref('')
 const scenario = ref('')
+const solution = ref('')
 const author = ref('')
 const intent = ref('')
 const inputFiles = ref<File[]>([])
@@ -85,31 +99,54 @@ const inputFileEl = ref<HTMLInputElement | null>(null)
 const refFileEl = ref<HTMLInputElement | null>(null)
 const submitting = ref(false)
 const error = ref('')
-const stats = ref<TestStats | null>(null)
 
-const domainOptions = computed(() => (stats.value ? Object.keys(stats.value.cases_by_domain) : []))
-const scenarioOptions = computed(() => {
-  if (!stats.value || !domain.value) return [] as string[]
-  const prefix = domain.value + '/'
-  return Object.keys(stats.value.cases_by_domain_scenario)
-    .filter((k) => k.startsWith(prefix))
-    .map((k) => k.slice(prefix.length))
-})
+const domainOptions = ref<{ slug: string; name: string }[]>([])
+const scenarioOptions = ref<{ slug: string; name: string }[]>([])
+const solutionOptions = ref<{ id: string; name: string }[]>([])
 
-async function loadStats(): Promise<void> {
+async function loadDomains(): Promise<void> {
   try {
-    stats.value = await testsStats()
+    domainOptions.value = await fetchBusinessDomains()
   } catch {
-    /* 容错：拿不到就纯手输 */
+    /* 容错：拿不到图谱就纯手输 */
+  }
+}
+async function loadScenarios(): Promise<void> {
+  if (!domain.value) {
+    scenarioOptions.value = []
+    return
+  }
+  try {
+    scenarioOptions.value = await fetchScenarios(domain.value)
+  } catch {
+    scenarioOptions.value = []
+  }
+}
+async function loadSolutions(): Promise<void> {
+  if (!domain.value || !scenario.value) {
+    solutionOptions.value = []
+    return
+  }
+  try {
+    solutionOptions.value = await fetchSolutions(domain.value, scenario.value)
+  } catch {
+    solutionOptions.value = []
   }
 }
 
-// 切域清场景
+// 级联：切域清场景+方案并重载场景；切场景清方案并重载方案。
+// watch 同时覆盖"选择"和 allow-create 手输两种情况。
 watch(domain, () => {
   scenario.value = ''
+  solution.value = ''
+  loadScenarios()
+})
+watch(scenario, () => {
+  solution.value = ''
+  loadSolutions()
 })
 
-onMounted(loadStats)
+onMounted(loadDomains)
 
 function onInputFiles(e: Event): void {
   inputFiles.value = Array.from((e.target as HTMLInputElement).files || [])
@@ -127,6 +164,7 @@ async function submit(): Promise<void> {
       intent: intent.value,
       domain: domain.value.trim() || undefined,
       scenario: scenario.value.trim() || undefined,
+      solution: solution.value.trim() || undefined,
       slug: slug.value.trim() || undefined,
       author: author.value.trim() || undefined,
       inputFiles: inputFiles.value,
@@ -172,6 +210,11 @@ async function submit(): Promise<void> {
   font-weight: 600;
   color: var(--text-muted);
   margin-bottom: 6px;
+}
+.hint {
+  font-weight: 400;
+  color: var(--text-faint);
+  margin-left: 4px;
 }
 .sel {
   width: 100%;
