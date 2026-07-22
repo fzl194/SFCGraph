@@ -1,6 +1,6 @@
 <template>
   <div class="case-form">
-    <h3 class="form-title">新建测试用例</h3>
+    <h3 class="form-title">{{ isEdit ? '编辑测试用例' : '新建测试用例' }}</h3>
 
     <div class="row">
       <div class="field flex2">
@@ -9,15 +9,14 @@
       </div>
       <div class="field">
         <label>slug（用例 ID 后缀）</label>
-        <el-input v-model="slug" placeholder="留空自动生成（建议英文，如 charging-offline-basic）" />
+        <el-input v-model="slug" :disabled="isEdit" placeholder="英文，如 charging-offline-basic" />
       </div>
     </div>
 
     <div class="row">
       <div class="field">
         <label>业务域 <span class="hint">关联图谱 BusinessDomain</span></label>
-        <el-select v-model="domain" filterable allow-create default-first-option clearable
-          placeholder="选或输入域" class="sel">
+        <el-select v-model="domain" filterable allow-create default-first-option clearable placeholder="选或输入域" class="sel">
           <el-option v-for="d in domainOptions" :key="d.slug" :label="d.name + '（' + d.slug + '）'" :value="d.slug" />
         </el-select>
       </div>
@@ -49,16 +48,26 @@
       <el-input v-model="intent" type="textarea" :rows="5" placeholder="这个用例测什么：业务诉求、网元/版本、关注点……" />
     </div>
 
+    <div v-if="isEdit && existingFiles.length" class="field">
+      <label>现有附件（勾选则删除）</label>
+      <div class="exist-files">
+        <label v-for="f in existingFiles" :key="f" class="exist-file">
+          <input type="checkbox" :value="f" v-model="removeFiles" />
+          <span class="ef-name">{{ f }}</span>
+        </label>
+      </div>
+    </div>
+
     <div class="row">
       <div class="field flex2">
-        <label>输入配置 txt（任意数量，可选）</label>
+        <label>{{ isEdit ? '新增输入配置 txt（可选）' : '输入配置 txt（任意数量，可选）' }}</label>
         <input ref="inputFileEl" type="file" multiple class="file-input" @change="onInputFiles" />
         <div v-if="inputFiles.length" class="file-list">
           <span v-for="f in inputFiles" :key="f.name" class="file-chip">{{ f.name }}</span>
         </div>
       </div>
       <div class="field flex2">
-        <label>参考输出配置 txt（任意数量，可选）</label>
+        <label>{{ isEdit ? '新增参考输出配置 txt（可选）' : '参考输出配置 txt（任意数量，可选）' }}</label>
         <input ref="refFileEl" type="file" multiple class="file-input" @change="onRefFiles" />
         <div v-if="referenceFiles.length" class="file-list">
           <span v-for="f in referenceFiles" :key="f.name" class="file-chip">{{ f.name }}</span>
@@ -70,36 +79,40 @@
     <div class="form-actions">
       <el-button @click="$emit('cancel')">取消</el-button>
       <el-button type="primary" :loading="submitting" :disabled="!name.trim() || !intent.trim()" @click="submit">
-        建用例
+        {{ isEdit ? '保存修改' : '建用例' }}
       </el-button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { ElInput, ElSelect, ElOption, ElButton } from 'element-plus'
 import {
-  createCase, fetchBusinessDomains, fetchScenarios, fetchSolutions,
+  createCase, updateCase, fetchBusinessDomains, fetchScenarios, fetchSolutions,
   type CaseDetail,
 } from '../api'
 
-const emit = defineEmits<{ created: [c: CaseDetail]; cancel: [] }>()
+const props = defineProps<{ case?: CaseDetail | null }>()
+const emit = defineEmits<{ saved: [c: CaseDetail]; cancel: [] }>()
 
-const name = ref('')
-const slug = ref('')
-const domain = ref('')
-const scenario = ref('')
-const solution = ref('')
-const author = ref('')
-const intent = ref('')
+const isEdit = computed(() => !!props.case)
+const name = ref(props.case?.name || '')
+const slug = ref(props.case ? props.case.id.split('@')[1] || '' : '')
+const domain = ref(props.case?.domain || '')
+const scenario = ref(props.case?.scenario || '')
+const solution = ref(props.case?.solution || '')
+const author = ref((props.case?.author as string) || '')
+const intent = ref(props.case?.body_md || '')
 const inputFiles = ref<File[]>([])
 const referenceFiles = ref<File[]>([])
+const removeFiles = ref<string[]>([])
 const inputFileEl = ref<HTMLInputElement | null>(null)
 const refFileEl = ref<HTMLInputElement | null>(null)
 const submitting = ref(false)
 const error = ref('')
 
+const existingFiles = computed(() => props.case?.files || [])
 const domainOptions = ref<{ slug: string; name: string }[]>([])
 const scenarioOptions = ref<{ slug: string; name: string }[]>([])
 const solutionOptions = ref<{ id: string; name: string }[]>([])
@@ -108,7 +121,7 @@ async function loadDomains(): Promise<void> {
   try {
     domainOptions.value = await fetchBusinessDomains()
   } catch {
-    /* 容错：拿不到图谱就纯手输 */
+    /* 容错 */
   }
 }
 async function loadScenarios(): Promise<void> {
@@ -134,8 +147,6 @@ async function loadSolutions(): Promise<void> {
   }
 }
 
-// 级联：切域清场景+方案并重载场景；切场景清方案并重载方案。
-// watch 同时覆盖"选择"和 allow-create 手输两种情况。
 watch(domain, () => {
   scenario.value = ''
   solution.value = ''
@@ -146,7 +157,11 @@ watch(scenario, () => {
   loadSolutions()
 })
 
-onMounted(loadDomains)
+onMounted(() => {
+  loadDomains()
+  loadScenarios()
+  loadSolutions()
+})
 
 function onInputFiles(e: Event): void {
   inputFiles.value = Array.from((e.target as HTMLInputElement).files || [])
@@ -159,18 +174,32 @@ async function submit(): Promise<void> {
   submitting.value = true
   error.value = ''
   try {
-    const c = await createCase({
-      name: name.value.trim(),
-      intent: intent.value,
-      domain: domain.value.trim() || undefined,
-      scenario: scenario.value.trim() || undefined,
-      solution: solution.value.trim() || undefined,
-      slug: slug.value.trim() || undefined,
-      author: author.value.trim() || undefined,
-      inputFiles: inputFiles.value,
-      referenceFiles: referenceFiles.value,
-    })
-    emit('created', c)
+    let c: CaseDetail
+    if (isEdit.value && props.case) {
+      c = await updateCase(props.case.id, {
+        name: name.value.trim(),
+        intent: intent.value,
+        domain: domain.value.trim(),
+        scenario: scenario.value.trim(),
+        solution: solution.value.trim(),
+        inputFiles: inputFiles.value,
+        referenceFiles: referenceFiles.value,
+        removeFiles: removeFiles.value,
+      })
+    } else {
+      c = await createCase({
+        name: name.value.trim(),
+        intent: intent.value,
+        domain: domain.value.trim() || undefined,
+        scenario: scenario.value.trim() || undefined,
+        solution: solution.value.trim() || undefined,
+        slug: slug.value.trim() || undefined,
+        author: author.value.trim() || undefined,
+        inputFiles: inputFiles.value,
+        referenceFiles: referenceFiles.value,
+      })
+    }
+    emit('saved', c)
   } catch (e) {
     error.value = e instanceof Error ? e.message : String(e)
   } finally {
@@ -221,6 +250,26 @@ async function submit(): Promise<void> {
 }
 .req {
   color: #dc2626;
+}
+.exist-files {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+}
+.exist-file {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text);
+}
+.ef-name {
+  font-family: var(--mono);
+  font-size: 11.5px;
 }
 .file-input {
   font-size: 12.5px;

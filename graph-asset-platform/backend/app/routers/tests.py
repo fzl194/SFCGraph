@@ -23,7 +23,7 @@ router = APIRouter()
 # ---------- 序列化辅助 ----------
 
 def _dump_problem(p) -> dict:
-    return {"description": p.description, "attribution": p.attribution, "object": p.object}
+    return {"description": p.description, "attribution": list(p.attribution), "objects": list(p.objects)}
 
 
 def _dump_case(c) -> dict:
@@ -163,9 +163,9 @@ def get_run(id_: str):
     return {**_dump_run(r), "reviews": reviews}
 
 
-@router.get("/tests/runs/{id_}/artifact/{name}")
+@router.get("/tests/runs/{id_}/artifact/{name:path}")
 def get_artifact(id_: str, name: str):
-    """取运行产出原文（config.txt / 方案.md / LLD.md / …）。"""
+    """取运行产出原文（config.txt / 方案.md / LLD.md / …，支持嵌套子目录路径）。"""
     svc = get_test_service()
     r = _run(id_)
     if name not in r.artifacts:
@@ -181,8 +181,13 @@ async def upload_run(
     case: str = Form(...),
     file: UploadFile = File(...),
     slug: str = Form(""),
+    name: str = Form(""),
+    runner: str = Form(""),
 ):
-    """上传运行结果 zip → 解包成 runs/{用例}/Run@{slug}/。zip 内直接放运行产出文件。"""
+    """上传运行结果 zip → 解包成 runs/{用例}/Run@{slug}/。zip 内直接放运行产出文件。
+
+    name/runner 可选，写入运行信息卡（不填则 runner 默认 'upload'）。
+    """
     svc = get_test_service()
     if case not in svc.index.cases:
         raise HTTPException(status_code=404, detail=f"用例不存在: {case}")
@@ -204,21 +209,67 @@ async def upload_run(
             if n.startswith("/") or any(seg == ".." for seg in n.split("/")):
                 continue
             svc.store.write_bytes(f"{run_rel}/{n}", zf.read(zi))
-        # 若 zip 没带 Run@id.md，自动盖一份最小元数据
+        # 若 zip 没带 Run@id.md，自动盖一份运行信息卡（name/runner 可由前端填）
         if not svc.store.exists(f"{run_rel}/{rid}.md"):
             meta = {
                 "id": rid, "type": "Run", "case": case,
-                "run_at": _now(), "runner": "upload", "status": "completed",
+                "run_at": _now(), "runner": runner or "upload", "status": "completed",
             }
+            if name:
+                meta["name"] = name
             svc.store.write(
                 f"{run_rel}/{rid}.md",
-                f"---\n{yaml.dump(meta, allow_unicode=True, sort_keys=False)}---\n# {rid}\n",
+                f"---\n{yaml.dump(meta, allow_unicode=True, sort_keys=False)}---\n# {name or rid}\n",
             )
         svc.rebuild()
     r = svc.index.runs.get(rid)
     if r is None:
         raise HTTPException(status_code=400, detail="解压后未识别为运行（检查 zip 结构）")
     return _dump_run(r)
+
+
+class RunInfoIn(BaseModel):
+    name: Optional[str] = None
+    runner: Optional[str] = None
+    run_at: Optional[str] = None
+    status: Optional[str] = None
+    notes: Optional[str] = None
+
+
+@router.patch("/tests/runs/{id_}")
+def update_run(id_: str, req: RunInfoIn):
+    """编辑运行信息卡（name/runner/run_at/status/notes）。无 md 则创建。"""
+    svc = get_test_service()
+    with test_lock:
+        r = svc.index.runs.get(id_)
+        if r is None:
+            raise HTTPException(status_code=404, detail=f"运行不存在: {id_}")
+        fm = dict(r.frontmatter)
+        fm["id"] = id_
+        fm["type"] = "Run"
+        fm["case"] = r.case
+        for k in ("name", "runner", "run_at", "status", "notes"):
+            v = getattr(req, k)
+            if v is not None:
+                fm[k] = v
+        meta_rel = f"{r.source_path}/{id_}.md"
+        body = r.body_md or f"# {fm.get('name', id_)}"
+        svc.store.write(meta_rel, f"---\n{yaml.dump(fm, allow_unicode=True, sort_keys=False)}---\n{body}\n")
+        svc.rebuild()
+    return _dump_run(svc.index.runs.get(id_))
+
+
+@router.delete("/tests/runs/{id_}")
+def delete_run(id_: str):
+    """删运行文件夹（含其 reviews/）。"""
+    svc = get_test_service()
+    with test_lock:
+        r = svc.index.runs.get(id_)
+        if r is None:
+            raise HTTPException(status_code=404, detail=f"运行不存在: {id_}")
+        svc.store.rmtree(r.source_path)
+        svc.rebuild()
+    return {"ok": True}
 
 
 @router.get("/tests/runs/{id_}/download")
@@ -395,12 +446,94 @@ def get_case_file(id_: str, name: str):
     return Response(content=text, media_type=media)
 
 
+@router.patch("/tests/cases/{id_}")
+async def update_case(
+    id_: str,
+    name: str = Form(""),
+    intent: str = Form(""),
+    domain: str = Form(""),
+    scenario: str = Form(""),
+    solution: str = Form(""),
+    status: str = Form(""),
+    remove_files: str = Form(""),           # 逗号分隔的待删文件相对路径
+    input_files: List[UploadFile] = File([]),
+    reference_files: List[UploadFile] = File([]),
+):
+    """编辑用例：改名/域/场景/方案/状态/意图，增删附件。域或场景变化则移动文件夹。"""
+    svc = get_test_service()
+    with test_lock:
+        c = svc.index.cases.get(id_)
+        if c is None:
+            raise HTTPException(status_code=404, detail=f"用例不存在: {id_}")
+        new_domain = (domain or "").strip() or c.domain
+        new_scenario = (scenario or "").strip() if (scenario or "").strip() else c.scenario
+        segs = ["cases", new_domain]
+        if new_scenario:
+            segs.append(new_scenario)
+        segs.append(id_)
+        case_rel = "/".join(segs)
+        if case_rel != c.source_path:
+            svc.store.move(c.source_path, case_rel)
+        # 删指定附件
+        if remove_files:
+            for rf in remove_files.split(","):
+                rf = rf.strip()
+                if rf:
+                    try:
+                        svc.store.delete(f"{case_rel}/{rf}")
+                    except Exception:
+                        pass
+        # 新上传附件
+        for uf in input_files:
+            fn = _safe_filename(uf.filename)
+            if fn:
+                svc.store.write_bytes(f"{case_rel}/inputs/{fn}", await uf.read())
+        for uf in reference_files:
+            fn = _safe_filename(uf.filename)
+            if fn:
+                svc.store.write_bytes(f"{case_rel}/references/{fn}", await uf.read())
+        # 重写意图 md
+        fm = dict(c.frontmatter)
+        fm["id"] = id_
+        fm["type"] = "TestCase"
+        if name:
+            fm["name"] = name
+        fm["domain"] = new_domain
+        fm["scenario"] = new_scenario
+        if status:
+            fm["status"] = status
+        if solution:
+            fm["solution"] = solution
+        else:
+            fm.pop("solution", None)
+        svc.store.write(f"{case_rel}/{id_}.md", _render_case_md(fm, intent if intent else c.body_md))
+        svc.rebuild()
+    return _dump_case(svc.index.cases.get(id_))
+
+
+@router.delete("/tests/cases/{id_}")
+def delete_case(id_: str):
+    """删用例文件夹，连带其下所有运行。"""
+    svc = get_test_service()
+    with test_lock:
+        c = svc.index.cases.get(id_)
+        if c is None:
+            raise HTTPException(status_code=404, detail=f"用例不存在: {id_}")
+        svc.store.rmtree(c.source_path)
+        for rid in list(svc.index.runs_by_case.get(id_, [])):
+            r = svc.index.runs.get(rid)
+            if r:
+                svc.store.rmtree(r.source_path)
+        svc.rebuild()
+    return {"ok": True}
+
+
 # ---------- 写：审查 ----------
 
 class ProblemIn(BaseModel):
     desc: str = ""
-    attribution: str = ""
-    object: str = ""
+    attribution: list[str] = Field(default_factory=list)
+    objects: list[str] = Field(default_factory=list)
 
 
 class ReviewWrite(BaseModel):
@@ -445,11 +578,12 @@ def _render_review_md(rvid: str, run_id: str, reviewer: str,
     if problems:
         lines.append("## 问题清单")
         for i, p in enumerate(problems, 1):
-            obj = p["object"]
+            attr_str = ", ".join(p["attribution"]) if p["attribution"] else ""
+            obj_str = " ".join(f"[[{o}]]" for o in p["objects"]) if p["objects"] else ""
             lines += ["", f"### 问题 {i}",
                       f"- 描述: {p['desc']}",
-                      f"- 归因: {p['attribution']}",
-                      f"- 涉及对象: {('[[' + obj + ']]') if obj else ''}"]
+                      f"- 归因: {attr_str}",
+                      f"- 涉及对象: {obj_str}"]
     lines += ["", "## 边", f"- 审查对象: [[{run_id}]]", ""]
     return f"---\n{fm_text}---\n" + "\n".join(lines)
 
@@ -469,7 +603,7 @@ def create_review(req: ReviewWrite):
         md = _render_review_md(
             rvid, req.run, req.reviewer or "", reviewed_at,
             req.verdict, req.conclusion or "",
-            [{"desc": p.desc, "attribution": p.attribution, "object": p.object} for p in req.problems],
+            [{"desc": p.desc, "attribution": p.attribution, "objects": p.objects} for p in req.problems],
         )
         svc.store.write(_review_rel(svc, req.run, rvid), md)
         svc.rebuild()
@@ -487,7 +621,7 @@ def update_review(id_: str, req: ReviewWrite):
         md = _render_review_md(
             id_, old.run, reviewer, old.reviewed_at,
             req.verdict, req.conclusion or "",
-            [{"desc": p.desc, "attribution": p.attribution, "object": p.object} for p in req.problems],
+            [{"desc": p.desc, "attribution": p.attribution, "objects": p.objects} for p in req.problems],
         )
         svc.store.write(old.source_path, md)
         svc.rebuild()

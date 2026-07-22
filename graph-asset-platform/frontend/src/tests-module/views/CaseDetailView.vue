@@ -8,14 +8,26 @@
         <span v-if="c.scenario" class="tag tag-scene">{{ c.scenario }}</span>
       </div>
       <div class="top-actions" v-if="c">
-        <button class="tb-btn" @click="triggerUploadRun" :disabled="uploading">
-          {{ uploading ? '上传中…' : '↑ 上传运行结果' }}
-        </button>
-        <input ref="runFileEl" type="file" accept=".zip" class="hidden-input" @change="onUploadRun" />
-        <button class="tb-btn" @click="downloadCase">打包下载用例</button>
-        <button class="tb-btn" @click="toggleCollapse">
-          {{ runCollapsed ? '展开运行' : '缩起运行' }}
-        </button>
+        <button class="tb-btn" @click="showCaseForm = true">编辑用例</button>
+        <button class="tb-btn danger" @click="delCase">删除用例</button>
+        <button class="tb-btn" @click="showUploadPanel = !showUploadPanel">↑ 上传运行</button>
+        <button class="tb-btn" @click="downloadCase">打包下载</button>
+        <button class="tb-btn" @click="toggleCollapse">{{ runCollapsed ? '展开运行' : '缩起运行' }}</button>
+      </div>
+    </div>
+
+    <!-- 编辑用例 -->
+    <TestCaseForm v-if="showCaseForm" :case="c" @saved="onCaseSaved" @cancel="showCaseForm = false" />
+
+    <!-- 上传运行面板 -->
+    <div v-if="showUploadPanel && c" class="upload-panel">
+      <div class="up-row">
+        <el-input v-model="uploadName" placeholder="运行名称（可读，如 第一次跑-缺URRGROUP）" class="up-input" />
+        <el-input v-model="uploadRunner" placeholder="runner（如 agent:cg@2.0 或 SA-zhang）" class="up-input" />
+      </div>
+      <div class="up-row">
+        <input ref="runFileEl" type="file" accept=".zip" class="file-input" @change="onUploadRun" />
+        <span class="up-hint">zip 内直接放运行产出文件（可含子目录）</span>
       </div>
     </div>
 
@@ -38,12 +50,7 @@
         <!-- 右：运行（可缩起） -->
         <section v-if="!runCollapsed" class="pane pane-run">
           <div class="run-toolbar">
-            <el-select
-              v-model="selectedRunId"
-              placeholder="选择运行"
-              class="run-select"
-              @change="loadRun"
-            >
+            <el-select v-model="selectedRunId" placeholder="选择运行" class="run-select" @change="loadRun">
               <el-option
                 v-for="r in c.runs"
                 :key="r.id"
@@ -51,26 +58,45 @@
                 :label="(r.run_at || '时间未知') + ' · ' + (r.runner || '未知') + ' · ' + (r.verdict || '未审查')"
               />
             </el-select>
+            <button v-if="selectedRun" class="tb-btn" @click="toggleRunInfo">{{ showRunInfo ? '收起信息' : '编辑信息' }}</button>
             <button v-if="selectedRun" class="tb-btn" @click="downloadRun">下载运行</button>
+            <button v-if="selectedRun" class="tb-btn danger" @click="delRun">删除运行</button>
           </div>
 
           <div v-if="c.runs.length === 0" class="empty-run">
-            暂无运行。点上方"↑ 上传运行结果"传一个 zip（内放运行的产出文件）。
+            暂无运行。点上方"↑ 上传运行"传一个 zip（内放运行的产出文件）。
           </div>
 
           <div v-else-if="selectedRun" v-loading="runLoading">
-            <!-- 产出 -->
+            <!-- 运行信息卡（可编辑） -->
+            <div v-if="showRunInfo" class="card">
+              <h2 class="sec-title">运行信息</h2>
+              <div class="ri-field"><label>名称</label><el-input v-model="runInfo.name" /></div>
+              <div class="ri-field"><label>runner</label><el-input v-model="runInfo.runner" /></div>
+              <div class="ri-field"><label>时间</label><el-input v-model="runInfo.run_at" placeholder="如 2026-07-22T10:30" /></div>
+              <div class="ri-field"><label>状态</label><el-input v-model="runInfo.status" /></div>
+              <div class="ri-field"><label>备注</label><el-input v-model="runInfo.notes" type="textarea" :rows="2" /></div>
+              <div class="ri-actions">
+                <el-button size="small" @click="showRunInfo = false">取消</el-button>
+                <el-button size="small" type="primary" :loading="savingRunInfo" @click="saveRunInfo">保存信息</el-button>
+              </div>
+            </div>
+
+            <!-- 产出（按目录分组） -->
             <div class="card">
               <h2 class="sec-title">产出 <span class="count">{{ selectedRun.artifacts.length }}</span></h2>
               <div v-if="selectedRun.artifacts.length === 0" class="muted">该运行无产出文件。</div>
               <div v-else>
-                <div class="atabs">
-                  <button
-                    v-for="a in selectedRun.artifacts"
-                    :key="a"
-                    :class="['atab', { active: a === activeArtifact }]"
-                    @click="selectArtifact(a)"
-                  >{{ a }}</button>
+                <div v-for="grp in artifactGroups" :key="grp.dir" class="art-group">
+                  <div class="art-dir">{{ grp.dir }}</div>
+                  <div class="atabs">
+                    <button
+                      v-for="a in grp.files"
+                      :key="a"
+                      :class="['atab', { active: a === activeArtifact }]"
+                      @click="selectArtifact(a)"
+                    >{{ shortName(a) }}</button>
+                  </div>
                 </div>
                 <div v-if="activeArtifact" v-loading="artLoading" class="art-body">
                   <pre v-if="!isMd(activeArtifact)" class="code-block">{{ artifactText }}</pre>
@@ -83,9 +109,7 @@
             <div class="card">
               <div class="reviews-head">
                 <h2 class="sec-title">审查 <span class="count">{{ selectedRun.reviews.length }}</span></h2>
-                <button class="tb-btn primary" @click="openAddReview">
-                  {{ showReviewForm ? '收起' : '+ 添加审查' }}
-                </button>
+                <button class="tb-btn primary" @click="openAddReview">{{ showReviewForm ? '收起' : '+ 添加审查' }}</button>
               </div>
               <ReviewForm
                 v-if="showReviewForm"
@@ -109,8 +133,9 @@
                   <div v-for="(p, i) in rv.problems" :key="i" class="rv-prob">
                     <div class="rp-desc">{{ p.description }}</div>
                     <div class="rp-tags">
-                      <span :class="['attr', attrClass(p.attribution)]">{{ p.attribution || '未归因' }}</span>
-                      <span v-if="p.object" class="rp-obj">{{ p.object }}</span>
+                      <span v-for="a in p.attribution" :key="a" :class="['attr', attrClass(a)]">{{ a }}</span>
+                      <span v-if="!p.attribution.length" class="attr a-other">未归因</span>
+                      <span v-for="o in p.objects" :key="o" class="rp-obj">{{ o }}</span>
                     </div>
                   </div>
                 </div>
@@ -126,14 +151,16 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { ElSelect, ElOption, ElMessage, ElMessageBox } from 'element-plus'
+import { ElSelect, ElOption, ElInput, ElButton, ElMessage, ElMessageBox } from 'element-plus'
 import {
-  getCase, getRun, getArtifact, uploadRun, downloadCaseURL, downloadRunURL, deleteReview,
-  type CaseDetail, type RunDetail, type ReviewDetail,
+  getCase, getRun, getArtifact, uploadRun, updateRun, deleteRun, deleteCase,
+  downloadCaseURL, downloadRunURL, deleteReview,
+  type CaseDetail, type RunDetail, type ReviewDetail, type RunInfo,
 } from '../api'
 import { renderMd } from '../md'
 import FilePreview from '../components/FilePreview.vue'
 import ReviewForm from '../components/ReviewForm.vue'
+import TestCaseForm from '../components/TestCaseForm.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -153,8 +180,16 @@ const artLoading = ref(false)
 
 const showReviewForm = ref(false)
 const editingReview = ref<ReviewDetail | null>(null)
+
+const showCaseForm = ref(false)
+const showUploadPanel = ref(false)
+const uploadName = ref('')
+const uploadRunner = ref('')
 const runFileEl = ref<HTMLInputElement | null>(null)
-const uploading = ref(false)
+
+const showRunInfo = ref(false)
+const savingRunInfo = ref(false)
+const runInfo = ref<RunInfo>({})
 
 const fileGroups = computed(() => {
   const groups = [
@@ -169,6 +204,22 @@ const fileGroups = computed(() => {
   }
   return groups.filter((g) => g.items.length)
 })
+
+// 产出按目录分组（无 "/" 的归"根目录"）
+const artifactGroups = computed(() => {
+  const map: Record<string, string[]> = {}
+  for (const a of selectedRun.value?.artifacts || []) {
+    const idx = a.lastIndexOf('/')
+    const dir = idx >= 0 ? a.slice(0, idx) : '根目录'
+    ;(map[dir] = map[dir] || []).push(a)
+  }
+  return Object.keys(map).sort().map((dir) => ({ dir, files: map[dir].sort() }))
+})
+
+function shortName(a: string): string {
+  const idx = a.lastIndexOf('/')
+  return idx >= 0 ? a.slice(idx + 1) : a
+}
 
 async function loadCase(): Promise<void> {
   const id = String(route.params.id)
@@ -198,8 +249,16 @@ async function loadRun(): Promise<void> {
   artifactCache.value = {}
   activeArtifact.value = ''
   artifactText.value = ''
+  showRunInfo.value = false
   try {
     selectedRun.value = await getRun(selectedRunId.value)
+    runInfo.value = {
+      name: selectedRun.value.name,
+      runner: selectedRun.value.runner,
+      run_at: selectedRun.value.run_at,
+      status: selectedRun.value.status,
+      notes: (selectedRun.value.frontmatter.notes as string) || '',
+    }
     const def = selectedRun.value.artifacts.find((a) => a.endsWith('.txt')) || selectedRun.value.artifacts[0]
     if (def) await selectArtifact(def)
   } catch {
@@ -232,17 +291,15 @@ function isMd(name: string): boolean {
   return name.toLowerCase().endsWith('.md')
 }
 
-function triggerUploadRun(): void {
-  runFileEl.value?.click()
-}
-
 async function onUploadRun(e: Event): Promise<void> {
   const input = e.target as HTMLInputElement
   const file = input.files?.[0]
   if (!file || !c.value) return
-  uploading.value = true
   try {
-    const r = await uploadRun(c.value.id, file)
+    const r = await uploadRun(c.value.id, file, { name: uploadName.value || undefined, runner: uploadRunner.value || undefined })
+    showUploadPanel.value = false
+    uploadName.value = ''
+    uploadRunner.value = ''
     await loadCase()
     selectedRunId.value = r.id
     await loadRun()
@@ -250,8 +307,63 @@ async function onUploadRun(e: Event): Promise<void> {
   } catch (e) {
     ElMessage.error(e instanceof Error ? e.message : String(e))
   } finally {
-    uploading.value = false
     input.value = ''
+  }
+}
+
+async function saveRunInfo(): Promise<void> {
+  if (!selectedRun.value) return
+  savingRunInfo.value = true
+  try {
+    await updateRun(selectedRun.value.id, runInfo.value)
+    await loadRun()
+    await loadCase()
+    ElMessage.success('已保存')
+  } catch (e) {
+    ElMessage.error(e instanceof Error ? e.message : String(e))
+  } finally {
+    savingRunInfo.value = false
+  }
+}
+
+function toggleRunInfo(): void {
+  showRunInfo.value = !showRunInfo.value
+}
+
+async function delRun(): Promise<void> {
+  if (!selectedRun.value) return
+  try {
+    await ElMessageBox.confirm(`确定删除运行「${selectedRun.value.id}」？`, '确认删除', { type: 'warning' })
+  } catch {
+    return
+  }
+  try {
+    await deleteRun(selectedRun.value.id)
+    ElMessage.success('已删除')
+    await loadCase()
+  } catch (e) {
+    ElMessage.error(e instanceof Error ? e.message : String(e))
+  }
+}
+
+async function onCaseSaved(_c: CaseDetail): Promise<void> {
+  showCaseForm.value = false
+  await loadCase()
+}
+
+async function delCase(): Promise<void> {
+  if (!c.value) return
+  try {
+    await ElMessageBox.confirm(`确定删除用例「${c.value.name || c.value.id}」？连同其下所有运行，不可恢复。`, '确认删除', { type: 'warning' })
+  } catch {
+    return
+  }
+  try {
+    await deleteCase(c.value.id)
+    ElMessage.success('已删除')
+    router.push({ name: 'tests' })
+  } catch (e) {
+    ElMessage.error(e instanceof Error ? e.message : String(e))
   }
 }
 
@@ -393,9 +505,33 @@ watch(() => route.params.id, loadCase)
   background: var(--accent);
   border-color: var(--accent);
 }
-.tb-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+.tb-btn.danger:hover {
+  color: #dc2626;
+  border-color: #dc2626;
+}
+.upload-panel {
+  background: var(--bg-sunken);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-3) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.up-row {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+.up-input {
+  flex: 1;
+}
+.up-hint {
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+.file-input {
+  font-size: 12.5px;
 }
 .hidden-input {
   display: none;
@@ -467,9 +603,11 @@ watch(() => route.params.id, loadCase)
   gap: 8px;
   align-items: center;
   margin-bottom: var(--space-3);
+  flex-wrap: wrap;
 }
 .run-select {
   flex: 1;
+  min-width: 200px;
 }
 .empty-run {
   padding: var(--space-6);
@@ -481,10 +619,34 @@ watch(() => route.params.id, loadCase)
   border: 1px dashed var(--border);
   line-height: 1.8;
 }
+.ri-field {
+  margin-bottom: 10px;
+}
+.ri-field label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+.ri-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: var(--space-2);
+}
+.art-group {
+  margin-bottom: var(--space-3);
+}
+.art-dir {
+  font-size: 11.5px;
+  font-family: var(--mono);
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
 .atabs {
   display: flex;
   gap: 5px;
-  margin-bottom: var(--space-3);
   flex-wrap: wrap;
 }
 .atab {
@@ -503,7 +665,7 @@ watch(() => route.params.id, loadCase)
   border-color: var(--accent);
 }
 .art-body {
-  margin-top: 0;
+  margin-top: var(--space-2);
 }
 .code-block {
   background: var(--bg-sunken);
@@ -584,6 +746,7 @@ watch(() => route.params.id, loadCase)
   gap: 6px;
   margin-top: 4px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .attr {
   font-size: 11px;

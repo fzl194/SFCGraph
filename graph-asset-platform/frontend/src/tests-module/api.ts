@@ -42,8 +42,8 @@ function qs(p: Record<string, string | undefined>): string {
 
 export interface Problem {
   description: string
-  attribution: string // 图谱知识/配置流程/其他/""
-  object: string // 涉及图谱对象 id 或 ""
+  attribution: string[] // 归因多选（图谱知识/配置流程/其他…）
+  objects: string[] // 涉及图谱对象 id 列表（多选 tag）
 }
 
 export interface TestCaseRow {
@@ -90,6 +90,7 @@ export interface RunDetail {
   run_at: string
   status: string
   artifacts: string[]
+  frontmatter: Record<string, unknown>
   body_md: string
   reviews: ReviewDetail[]
 }
@@ -121,7 +122,7 @@ export interface ReviewWriteBody {
   reviewer?: string
   verdict: string
   conclusion?: string
-  problems: { desc: string; attribution: string; object: string }[]
+  problems: { desc: string; attribution: string[]; objects: string[] }[]
 }
 
 // ---------- API ----------
@@ -164,13 +165,68 @@ export const getRun = (id: string): Promise<RunDetail> =>
   _req<RunDetail>(`${BASE}/tests/runs/${encodeURIComponent(id)}`)
 
 // Phase 2：上传运行结果 zip → 解包成 Run 文件夹
-export async function uploadRun(caseId: string, file: File, slug?: string): Promise<RunDetail> {
+export async function uploadRun(
+  caseId: string,
+  file: File,
+  opts?: { slug?: string; name?: string; runner?: string },
+): Promise<RunDetail> {
   const fd = new FormData()
   fd.append('case', caseId)
   fd.append('file', file)
-  if (slug) fd.append('slug', slug)
+  if (opts?.slug) fd.append('slug', opts.slug)
+  if (opts?.name) fd.append('name', opts.name)
+  if (opts?.runner) fd.append('runner', opts.runner)
   return _req<RunDetail>(`${BASE}/tests/runs`, { method: 'POST', body: fd })
 }
+
+export interface RunInfo {
+  name?: string
+  runner?: string
+  run_at?: string
+  status?: string
+  notes?: string
+}
+
+export const updateRun = (id: string, info: RunInfo): Promise<RunDetail> =>
+  _req<RunDetail>(`${BASE}/tests/runs/${encodeURIComponent(id)}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(info),
+  })
+
+export const deleteRun = (id: string): Promise<{ ok: boolean }> =>
+  _req<{ ok: boolean }>(`${BASE}/tests/runs/${encodeURIComponent(id)}`, { method: 'DELETE' })
+
+// 编辑用例（multipart：元数据/意图/增删附件）
+export async function updateCase(
+  id: string,
+  data: {
+    name?: string
+    intent?: string
+    domain?: string
+    scenario?: string
+    solution?: string
+    status?: string
+    removeFiles?: string[]
+    inputFiles?: File[]
+    referenceFiles?: File[]
+  },
+): Promise<CaseDetail> {
+  const fd = new FormData()
+  if (data.name) fd.append('name', data.name)
+  if (data.intent !== undefined) fd.append('intent', data.intent)
+  if (data.domain) fd.append('domain', data.domain)
+  if (data.scenario !== undefined) fd.append('scenario', data.scenario)
+  if (data.solution !== undefined) fd.append('solution', data.solution)
+  if (data.status) fd.append('status', data.status)
+  if (data.removeFiles?.length) fd.append('remove_files', data.removeFiles.join(','))
+  ;(data.inputFiles || []).forEach((f) => fd.append('input_files', f))
+  ;(data.referenceFiles || []).forEach((f) => fd.append('reference_files', f))
+  return _req<CaseDetail>(`${BASE}/tests/cases/${encodeURIComponent(id)}`, { method: 'PATCH', body: fd })
+}
+
+export const deleteCase = (id: string): Promise<{ ok: boolean }> =>
+  _req<{ ok: boolean }>(`${BASE}/tests/cases/${encodeURIComponent(id)}`, { method: 'DELETE' })
 
 export const downloadRunURL = (id: string): string =>
   `${BASE}/tests/runs/${encodeURIComponent(id)}/download`
@@ -274,5 +330,26 @@ export async function fetchSolutions(domain: string, scenario: string): Promise<
   const rows = await _req<GraphObjectRow[]>(
     `${BASE}/objects?type=ConfigurationSolution&domain=${encodeURIComponent(domain)}&scenario=${encodeURIComponent(scenario)}&size=300`,
   )
+  return rows.map((r) => ({ id: r.id, name: String(r.name || r.id) }))
+}
+
+// 图谱层 → 类型映射（多选对象选择器用）
+export const LAYER_TYPES: Record<string, string[]> = {
+  业务层: ['BusinessDomain', 'NetworkScenario', 'ConfigurationSolution'],
+  任务层: ['AtomTask', 'CompoundTask', 'FeatureTask'],
+  特性层: ['Feature', 'License'],
+  命令层: ['MMLCommand', 'ConfigObject'],
+}
+
+// 图谱对象搜索（层/类型 + 关键词，返回 id+中文名）
+export async function fetchGraphObjects(
+  type: string,
+  q: string,
+): Promise<{ id: string; name: string }[]> {
+  const params = new URLSearchParams()
+  if (type) params.set('type', type)
+  if (q) params.set('q', q)
+  params.set('size', '50')
+  const rows = await _req<GraphObjectRow[]>(`${BASE}/objects?${params.toString()}`)
   return rows.map((r) => ({ id: r.id, name: String(r.name || r.id) }))
 }
