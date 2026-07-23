@@ -60,7 +60,7 @@
 - 只打 `POST /domains` + `POST /md`。
 - 记录粒度：一次请求展开成对象级——`/md` 带 N 个 id → 每个 id 记一条（type 取该 id 的 type）；`/domains` → 每个返回域 id 记一条（type=BusinessDomain）。
 - 存储：`platform-data/telemetry/access.jsonl`（gitignore），追加写。
-- 前端第 5 菜单「取用频次」展示三维：按 type 聚合 / 热门对象 top-N / 时间趋势。
+- 前端在「统计」页（`StatsView.vue`）新增「知识取用频次」区块，展示三维：按 type 聚合 / 热门对象 top-N / 时间趋势。**不新增菜单**。
 
 ---
 
@@ -140,16 +140,16 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
   - **避免循环依赖**：`router.ts` 懒加载 views、views 又 import `api.ts`，故 `_req` **不能**静态 `import router`。跳转用懒加载 `import('./router').then(r => r.router.push('/login'))`，或干脆 `window.location.assign('/login')`（最稳，绕开 router 实例）。
 - 两个封装共享同一把 KEY（`sessionStorage` 同源）。
 
-#### 4.2.3 频次面板（新 `views/TelemetryView.vue` + 第 5 菜单）
+#### 4.2.3 取用频次（并入第三菜单「统计」`StatsView.vue`，不新增菜单/路由）
 
-- `AppHeader.vue` tabs 加一项：`{ to: '/telemetry', label: '取用频次' }`。
-- `router.ts` 加 `/telemetry` 路由。
-- 三区块（零依赖）：
-  1. **按 type 柱状**：CSS 横条，每 type 一行，宽度按 count 归一。
+- **不新增 tab、不新增 `/telemetry` 路由、不改 `AppHeader.vue`。**
+- 在 `StatsView.vue` 现有 4 张层级卡片下方新增一个 `<section>`「知识取用频次」，含三区块（零依赖）：
+  1. **按 type 横条**：CSS 横条，每 type 一行，宽度按 count 归一。
   2. **热门对象 top-20**：列表，`id` + `type` tag + count。
   3. **时间趋势**：按日 SVG 折线（最近 N 天，N 可选 7/30/90）。
-- 数据：`GET /api/v1/telemetry/stats?days=N`。
-- 顶部：总次数 + 时间范围切换（7/30/90 天）。
+- section 顶部：总次数 + 时间范围切换（7/30/90 天）+ 独立刷新。
+- 数据：`api.ts` 加 `fetchTelemetryStats(days)` → `GET /api/v1/telemetry/stats?days=N`。
+- 三区块倾向抽成 `components/TelemetrySection.vue`（保持 `StatsView` 聚焦资产统计），实现期定。
 
 ### 4.3 文档同步
 
@@ -168,8 +168,8 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
 |---|---|
 | 后端新增 | `app/middleware/__init__.py`、`app/middleware/auth.py`、`app/telemetry/__init__.py`、`app/telemetry/recorder.py`、`app/telemetry/aggregator.py`、`routers/telemetry.py` |
 | 后端改动 | `config.py`（+env）、`main.py`（+中间件 +router）、`routers/objects.py`（`/domains` 改 POST + 2 处 `record()`） |
-| 前端新增 | `src/auth.ts`、`src/views/LoginView.vue`、`src/views/TelemetryView.vue` |
-| 前端改动 | `src/api.ts`、`src/tests-module/api.ts`（`_req` +header +401 跳登录）、`src/router.ts`（+3 路由 +守卫）、`src/components/AppHeader.vue`（+1 tab） |
+| 前端新增 | `src/auth.ts`、`src/views/LoginView.vue`、（建议）`src/components/TelemetrySection.vue` |
+| 前端改动 | `src/api.ts`（+`fetchTelemetryStats` +`_req` header/401）、`src/tests-module/api.ts`（`_req` +header +401 跳登录）、`src/router.ts`（+`/login` 路由 +守卫）、`src/views/StatsView.vue`（+取用频次 section） |
 | 文档 | `图谱接口.md`、`SKILL.md`、`README.md`、`.env.example` |
 | 配置 | `platform-data/telemetry/`（gitignore）、`.gitignore`（+telemetry 行） |
 
