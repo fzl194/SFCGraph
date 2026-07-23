@@ -47,8 +47,10 @@ graph-asset-platform/
 仓库根目录执行（单行）：
 
 ```bash
-cd graph-asset-platform/backend && python -m uvicorn app.main:app --port 8000
+cd graph-asset-platform/backend && GAP_API_KEY=你的KEY python -m uvicorn app.main:app --port 8000
 ```
+
+> **鉴权**：`GAP_API_KEY` 是前端登录与 SKILL 调用共用的**单一 KEY**。未配置则鉴权旁路（仅开发，所有请求放行）；**生产/外网必须配置**。Windows cmd：`set GAP_API_KEY=你的KEY && python -m uvicorn ...`；PowerShell：`$env:GAP_API_KEY="你的KEY"; python -m uvicorn ...`。前端首次访问会跳登录页输入此 KEY。SKILL 调用见 `三层图谱构建规范/skill/图谱接口.md`（POST /domains + POST /md，带 `X-API-Key` header）。
 
 → 浏览器开：
 - 平台首页（四菜单：图谱浏览 / 统计 / 上传 / 测试）：http://localhost:8000/
@@ -138,6 +140,7 @@ curl -F "file=@sample.zip" http://localhost:8000/api/v1/import
 | `GET /objects/{id}/neighbors?hops=1&version=` | 单跳邻居（含反链） |
 | `GET /objects/{id}/md?version=` | 原始 md |
 | `GET /subgraph?center=&hops=&type=&version=` | N 跳子图 |
+| `GET /telemetry/stats?days=30` | SKILL 取用频次聚合（total/by_type/top_ids/timeline，统计页展示） |
 
 > `{id}` 含 `@` 和空格，URL 须 encode（`@`→`%40`、空格→`%20`）。`?version=X` 不在该 id 可用版本时 → 404 + `available_versions`。
 
