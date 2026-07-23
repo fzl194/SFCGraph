@@ -86,3 +86,23 @@ def test_aggregate_days_filter(tmp_path, monkeypatch):
     r = aggregate(days=10)
     assert r["total"] == 1  # 只剩 NEW
     assert r["top_ids"][0]["id"] == "NEW"
+
+
+def test_telemetry_stats_endpoint(tmp_path, tmp_data_dir, monkeypatch):
+    """/telemetry/stats 接口返回聚合。动态 ts，不依赖固定日期。"""
+    from datetime import datetime, timezone
+    now_ts = datetime.now(timezone.utc).isoformat()
+    f = _use_tmp_telemetry(tmp_path, monkeypatch)
+    _seed(f, [
+        {"ts": now_ts, "endpoint": "/md", "id": "F@1", "type": "Feature"},
+        {"ts": now_ts, "endpoint": "/md", "id": "C@2", "type": "MMLCommand"},
+    ])
+    from fastapi.testclient import TestClient
+    from app.main import app
+    with TestClient(app) as c:
+        r = c.get("/api/v1/telemetry/stats", params={"days": 30})
+        assert r.status_code == 200
+        body = r.json()
+        assert body["total"] == 2
+        assert body["by_type"]["Feature"] == 1
+        assert len(body["top_ids"]) >= 1
