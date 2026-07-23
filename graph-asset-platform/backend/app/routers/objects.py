@@ -15,6 +15,7 @@ from pydantic import BaseModel, Field
 
 from ..models import Edge, Object
 from ..service import get_service
+from ..telemetry.recorder import record
 from ..ui_layers import UI_LAYER_TYPES
 
 router = APIRouter()
@@ -136,13 +137,12 @@ def list_objects(type: Optional[str] = None,
 
 # ---------- /domains ----------
 
-@router.get("/domains")
+@router.post("/domains")
 def list_domains_with_md():
     """一次性返回全部业务域的完整 md（``[{id, name, md}, ...]``）。
 
     业务域是用户最优先的业务归属定位层——数量少（跨 NF 类，version 恒 null），
-    Agent 入口直接取全部域 md，免去"先 GET id 再 POST /md"两步。其他层级仍按
-    ``POST /md`` 沿 ``[[ID]]`` 引用下钻，本端点仅服务于业务域这一特殊层。
+    Agent 入口直接取全部域 md。其他层级仍按 ``POST /md`` 沿 ``[[ID]]`` 引用下钻。
     """
     idx = get_service().index
     latest: dict = {}
@@ -152,10 +152,13 @@ def list_domains_with_md():
         cur = latest.get(id_)
         if cur is None or (obj.version or "") > (cur.version or ""):
             latest[id_] = obj
-    return [
+    out = [
         {"id": id_, "name": obj.frontmatter.get("name"), "md": obj.raw_md}
         for id_, obj in latest.items()
     ]
+    for item in out:
+        record("/domains", item["id"], "BusinessDomain")
+    return out
 
 
 # ---------- /names ----------
@@ -283,4 +286,5 @@ def batch_md(req: BatchMdRequest):
             }
             continue
         out[id_] = {"version": obj.version, "md": obj.raw_md}
+        record("/md", id_, obj.type)
     return out

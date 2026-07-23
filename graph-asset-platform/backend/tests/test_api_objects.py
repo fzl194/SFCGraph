@@ -373,13 +373,43 @@ def test_stats_per_domain_scenario(tmp_data_dir, monkeypatch):
 
 
 def test_domains_endpoint_returns_business_domain_md(tmp_data_dir, monkeypatch):
-    """/domains 一次性返全部 BusinessDomain 的 {id,name,md}（Agent 入口，只含 BD）。"""
+    """/domains 一次性返全部 BusinessDomain 的 {id,name,md}（Agent 入口，只含 BD）。POST。"""
     _setup(tmp_data_dir, monkeypatch, {"bd.md": _BD, "ns.md": _NS, "cs.md": _CS})
     with TestClient(app) as c:
-        rows = c.get("/api/v1/domains").json()
+        rows = c.post("/api/v1/domains").json()
         ids = {r["id"] for r in rows}
         # 只含 BusinessDomain，不含 NS/CS
         assert ids == {"BusinessDomain@demo"}
         item = rows[0]
         assert item["name"] is not None
         assert "demo domain" in item["md"]  # 完整 md（含正文）
+
+
+def test_md_endpoint_records_telemetry(tmp_data_dir, monkeypatch, tmp_path):
+    """/md 调用 → 每个成功 id 追加一条 jsonl 打点。"""
+    import app.config as cfg
+    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path / "access.jsonl")
+    _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES, "b.md": CFG})
+    with TestClient(app) as c:
+        c.post("/api/v1/md", json={"ids": ["alpha@MMLCommand@ADD DEMO", "alpha@ConfigObject@DEMO_OBJ"]})
+    import json
+    lines = (tmp_path / "access.jsonl").read_text(encoding="utf-8").strip().split("\n")
+    types = {json.loads(l)["type"] for l in lines}
+    assert types == {"MMLCommand", "ConfigObject"}
+    assert all(json.loads(l)["endpoint"] == "/md" for l in lines)
+
+
+def test_domains_endpoint_records_telemetry(tmp_data_dir, monkeypatch, tmp_path):
+    """/domains 调用 → 每个域 id 追加一条打点。"""
+    import app.config as cfg
+    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path / "access.jsonl")
+    _setup(tmp_data_dir, monkeypatch, {"bd.md": _BD, "ns.md": _NS})
+    with TestClient(app) as c:
+        c.post("/api/v1/domains")
+    import json
+    lines = (tmp_path / "access.jsonl").read_text(encoding="utf-8").strip().split("\n")
+    assert len(lines) == 1
+    rec = json.loads(lines[0])
+    assert rec["id"] == "BusinessDomain@demo"
+    assert rec["type"] == "BusinessDomain"
+    assert rec["endpoint"] == "/domains"
