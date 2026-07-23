@@ -3,6 +3,8 @@
 // 统一 _req 封装错误：404 时后端返回 detail.message + available_versions（版本缺失），
 // 或 detail: "对象不存在: ..."（id 完全不存在）→ 抛出 ApiError 带 status/detail/payload。
 
+import { getKey, clearKey } from './auth'
+
 const BASE = '/api/v1'
 
 export interface ApiError extends Error {
@@ -11,7 +13,18 @@ export interface ApiError extends Error {
 }
 
 async function _req<T>(url: string, init?: RequestInit): Promise<T> {
-  const resp = await fetch(url, init)
+  const headers = new Headers(init?.headers)
+  const k = getKey()
+  if (k) headers.set('X-API-Key', k)
+  const resp = await fetch(url, { ...init, headers })
+  if (resp.status === 401) {
+    clearKey()
+    // window.location 最稳，绕开 router 实例（避免 api.ts ↔ router.ts 循环依赖）
+    if (!window.location.pathname.startsWith('/login')) {
+      window.location.assign('/login')
+    }
+    throw new Error('未授权，已跳转登录')
+  }
   if (!resp.ok) {
     let detail: unknown
     try {
@@ -36,6 +49,10 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
   // 纯文本
   return (await resp.text()) as unknown as T
 }
+
+// 登录页验证 KEY：调轻接口 /names，200 即 KEY 正确。
+export const verifyKey = (): Promise<Record<string, string>> =>
+  _req<Record<string, string>>(`${BASE}/names`)
 
 function qs(p: Record<string, string | number | undefined>): string {
   const entries = Object.entries(p).filter(([, v]) => v !== undefined && v !== '')
