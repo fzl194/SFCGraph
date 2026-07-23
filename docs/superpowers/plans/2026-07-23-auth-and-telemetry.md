@@ -132,7 +132,7 @@ import threading
 from datetime import datetime, timezone
 from pathlib import Path
 
-from ..config import TELEMETRY_FILE
+from .. import config  # 运行时读 config.TELEMETRY_FILE，便于测试 monkeypatch（与 auth.py 同模式）
 
 logger = logging.getLogger(__name__)
 _lock = threading.Lock()
@@ -147,7 +147,7 @@ def record(endpoint: str, id_: str, type_: str) -> None:
             "id": id_,
             "type": type_,
         }
-        path = Path(TELEMETRY_FILE)
+        path = Path(config.TELEMETRY_FILE)
         path.parent.mkdir(parents=True, exist_ok=True)
         with _lock:
             with open(path, "a", encoding="utf-8") as f:
@@ -236,7 +236,7 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from ..config import TELEMETRY_FILE
+from .. import config  # 运行时读 config.TELEMETRY_FILE，便于测试 monkeypatch（与 auth.py / recorder.py 同模式）
 
 
 def aggregate(days: int = 30) -> dict:
@@ -250,7 +250,7 @@ def aggregate(days: int = 30) -> dict:
     if days and days > 0:
         cutoff = datetime.now(timezone.utc) - timedelta(days=days)
 
-    path = Path(TELEMETRY_FILE)
+    path = Path(config.TELEMETRY_FILE)
     if path.exists():
         with open(path, "r", encoding="utf-8") as f:
             for raw in f:
