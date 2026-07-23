@@ -84,6 +84,7 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
 - 否则比对 `request.headers.get("X-API-Key")`：不等或缺失 → `JSONResponse(401, {"detail": "missing or invalid api key"})`。
 - 静态资源（前端 dist、SPA 兜底）不拦截。
 - 独立模块，不 import 图谱 service/tests service。
+- **中间件顺序**：auth 须在现有 `CORSMiddleware` **之后** `add_middleware`（FastAPI 中间件 LIFO，后 add 先执行），确保 auth 先跑、而 401 响应仍被 CORS 包装带上跨域头——否则浏览器 opaque 401，前端 `clearKey → /login` 流程会断。
 
 #### 4.1.3 打点模块（新 `app/telemetry/`，隔离）
 
@@ -91,6 +92,7 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
   - `record(endpoint: str, id_: str, type_: str) -> None`：追加一行 `{"ts": <ISO8601>, "endpoint": ..., "id": ..., "type": ...}` 到 jsonl。
   - 进程内 `threading.Lock` + 小批量缓冲（如满 50 条或 5s flush），避免每请求一次 IO；进程退出/uvicorn reload 时 flush。MVP 也可直接同步追加（jsonl 追加开销可接受），缓冲为可选优化。
   - ts 用 `datetime.now(timezone.utc).isoformat()`。
+  - **失败处理**：打点是观测用、非功能性——`record()` 内部 try/except 吞异常 + log，**绝不向上抛**，绝不因打点失败让 `/md`、`/domains` 请求失败。
 - `aggregator.py`：
   - `aggregate(days: int = 30) -> dict`：流式读 jsonl，过滤最近 `days` 天，返回：
     ```json
@@ -101,7 +103,7 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
       "timeline": [{"date": "2026-07-22", "count": 50}, ...]          // 按日，最近 days 天
     }
     ```
-- 不依赖图谱 service；`type` 由调用方（router）从 index 查一次传进来，recorder 不反向查。
+- 不依赖图谱 service；`type` 复用 router 已为响应 resolve 出的 `obj.type`（`/md` 走 `resolve_node` 结果、`/domains` 恒 `BusinessDomain`），recorder 不反向查 index，零额外访问。
 
 #### 4.1.4 `routers/objects.py` 改造
 
@@ -134,7 +136,8 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
 
 - `api.ts` 与 `tests-module/api.ts` 的 `_req`：
   - 所有请求加 `X-API-Key: getKey()` header。
-  - 响应 401 → `clearKey()` + `router.push('/login')`，再抛错。
+  - 响应 401 → `clearKey()` + 跳 `/login`，再抛错。
+  - **避免循环依赖**：`router.ts` 懒加载 views、views 又 import `api.ts`，故 `_req` **不能**静态 `import router`。跳转用懒加载 `import('./router').then(r => r.router.push('/login'))`，或干脆 `window.location.assign('/login')`（最稳，绕开 router 实例）。
 - 两个封装共享同一把 KEY（`sessionStorage` 同源）。
 
 #### 4.2.3 频次面板（新 `views/TelemetryView.vue` + 第 5 菜单）
@@ -177,6 +180,8 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
 | 变量 | 必需 | 说明 |
 |---|---|---|
 | `GAP_API_KEY` | 生产必配 | 鉴权 KEY；前端登录与 SKILL 调用共用。空 → 鉴权旁路（仅开发） |
+
+> 安全：`GAP_API_KEY` 的**存在与否**可日志（缺失打 WARNING），但**取值绝不 echo**（启动日志、错误信息、任何响应都不得回显 KEY）。
 
 ---
 
