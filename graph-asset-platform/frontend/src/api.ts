@@ -54,6 +54,17 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
 export const verifyKey = (): Promise<Record<string, string>> =>
   _req<Record<string, string>>(`${BASE}/names`)
 
+// 取用频次聚合（统计页 TelemetrySection 用）
+export interface TelemetryStats {
+  total: number
+  by_type: Record<string, number>
+  top_ids: { id: string; type: string; count: number }[]
+  timeline: { date: string; count: number }[]
+}
+
+export const fetchTelemetryStats = (days = 30): Promise<TelemetryStats> =>
+  _req<TelemetryStats>(`${BASE}/telemetry/stats?days=${days}`)
+
 function qs(p: Record<string, string | number | undefined>): string {
   const entries = Object.entries(p).filter(([, v]) => v !== undefined && v !== '')
   if (entries.length === 0) return ''

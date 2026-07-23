@@ -63,6 +63,9 @@
         />
       </section>
 
+      <!-- 知识取用频次（取用打点聚合） -->
+      <TelemetrySection v-if="s" />
+
       <!-- 空态 -->
       <div v-if="!loading && !s" class="empty-state">
         <div class="empty-title">暂无统计数据</div>
@@ -91,6 +94,7 @@ import { computed, h, onMounted, ref } from 'vue'
 import { stats, type Stats } from '../api'
 import { UI_LAYER_TYPES } from '../composables/useNav'
 import StatCard, { type StatDetail } from '../components/StatCard.vue'
+import TelemetrySection from '../components/TelemetrySection.vue'
 
 // 对象 type → 中文标签（统计卡"按对象类型"明细用）
 const TYPE_LABELS: Record<string, string> = {
