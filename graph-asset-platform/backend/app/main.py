@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from .middleware.auth import AuthMiddleware
 from .routers import assets as assets_router
 from .routers import objects as objects_router
 from .routers import tests as tests_router
@@ -28,7 +29,7 @@ async def lifespan(app: FastAPI):
     svc = get_service()
     print(
         f"[startup] 索引就绪：{len(svc.index.nodes)} 个对象，"
-        f"耗时 {time.time() - t0:.1f}s → http://127.0.0.1:8000/",
+        f"耗时 {time.time() - t0:.1f}s → http://127.0.0.1:80/",
         flush=True,
     )
     # 测试子系统索引（独立于图谱，隔离）
@@ -42,6 +43,9 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Graph Asset Platform", version="0.1.0", lifespan=lifespan)
+# 先 add auth（内层），再 add CORS（外层）：CORS 包装 auth 的 401，保证跨域时 401 响应带 CORS 头。
+# 同源前端不受影响；此顺序为跨域调试/未来部署预留。
+app.add_middleware(AuthMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
