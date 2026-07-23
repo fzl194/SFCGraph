@@ -84,7 +84,7 @@ TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
 - 否则比对 `request.headers.get("X-API-Key")`：不等或缺失 → `JSONResponse(401, {"detail": "missing or invalid api key"})`。
 - 静态资源（前端 dist、SPA 兜底）不拦截。
 - 独立模块，不 import 图谱 service/tests service。
-- **中间件顺序**：auth 须在现有 `CORSMiddleware` **之后** `add_middleware`（FastAPI 中间件 LIFO，后 add 先执行），确保 auth 先跑、而 401 响应仍被 CORS 包装带上跨域头——否则浏览器 opaque 401，前端 `clearKey → /login` 流程会断。
+- **中间件顺序**：`add_middleware` 为 LIFO（后 add 的在最外层、最先执行）。要让 **CORS 包装 auth 的 401 响应**（跨域时 401 仍带 CORS 头），代码顺序须 `add_middleware(AuthMiddleware)` **在前**、`add_middleware(CORSMiddleware)` **在后**——CORS 最后 add = 最外层 = 包装内层 auth 的 401。同源前端不受影响；此顺序为跨域调试/部署预留。（早期版本误写"auth 在 CORS 之后 add"，已更正。）
 
 #### 4.1.3 打点模块（新 `app/telemetry/`，隔离）
 

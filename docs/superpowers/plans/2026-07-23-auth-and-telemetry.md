@@ -105,11 +105,11 @@ def test_record_makes_parent_dir(tmp_path, monkeypatch):
     assert f.exists()
 
 
-def test_record_swallows_failure(monkeypatch):
+def test_record_swallows_failure(tmp_path, monkeypatch):
     """打点失败绝不抛（观测用，不阻断业务）。"""
     import app.config as cfg
-    # 指到一个不可写路径触发异常
-    monkeypatch.setattr(cfg, "TELEMETRY_FILE", Path("/nonexistent-root/x/y.jsonl"))
+    # TELEMETRY_FILE 指到已存在目录 → open(dir, 'a') 跨平台必抛（Windows/Linux 均可复现）
+    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path)
     from app.telemetry.recorder import record
     record("/md", "x", "y")  # 不抛即通过
 ```
@@ -206,19 +206,21 @@ def test_aggregate_three_dimensions(tmp_path, monkeypatch):
 
 
 def test_aggregate_days_filter(tmp_path, monkeypatch):
+    """老记录（now-40d）被 days=10 过滤；新记录（now-1d）保留。动态种子，无日期漂移 flaky。"""
+    from datetime import datetime, timedelta, timezone
+    now = datetime.now(timezone.utc)
+    old_ts = (now - timedelta(days=40)).isoformat()
+    new_ts = (now - timedelta(days=1)).isoformat()
     f = _use_tmp_telemetry(tmp_path, monkeypatch)
     _seed(f, [
-        {"ts": "2026-07-01T00:00:00+00:00", "endpoint": "/md", "id": "OLD", "type": "Feature"},
-        {"ts": "2026-07-23T00:00:00+00:00", "endpoint": "/md", "id": "NEW", "type": "Feature"},
+        {"ts": old_ts, "endpoint": "/md", "id": "OLD", "type": "Feature"},
+        {"ts": new_ts, "endpoint": "/md", "id": "NEW", "type": "Feature"},
     ])
     from app.telemetry.aggregator import aggregate
-    # days=10（以"今天"为基准；测试里今天由 datetime.now 决定，故只校验过滤行为存在）
     r = aggregate(days=10)
-    # OLD（7-01）应被过滤掉，total 只剩 NEW（若今天恰为 7-23 附近）
-    assert r["total"] <= 1
+    assert r["total"] == 1  # 只剩 NEW
+    assert r["top_ids"][0]["id"] == "NEW"
 ```
-
-> 注：`test_aggregate_days_filter` 依赖"今天"相对种子的偏移。若 CI 日期漂移导致不稳定，可把种子里的 ts 用 `datetime.now(timezone.utc)` 动态生成（老记录用 now - 40 天，新记录用 now - 1 天）。实现期若 flaky，按此改种子。
 
 - [ ] **Step 2: 跑测试验证失败**
 
@@ -320,29 +322,20 @@ git commit -m "feat(platform): 打点 aggregator（三维聚合 + days 过滤）
 """鉴权中间件测试：单一 KEY 门禁；未配 KEY 旁路。
 
 测试默认不设 GAP_API_KEY，故现有 test_api_* 不受影响（中间件旁路）。
-本文件显式 monkeypatch env + reload config 验证鉴权生效。
+本文件显式 monkeypatch config.API_KEY 验证鉴权生效（auth.dispatch 运行时读 config.API_KEY）。
 """
-import importlib
-
 from fastapi.testclient import TestClient
+
+import app.config as config
 
 
 def _set_key(monkeypatch, key):
-    """设 GAP_API_KEY 并 reload config，让中间件读到新值。"""
-    monkeypatch.setenv("GAP_API_KEY", key)
-    import app.config as cfg
-    importlib.reload(cfg)
-    # auth 模块在 import 时读了 API_KEY，需 reload 让它重新绑定
-    import app.middleware.auth as auth
-    importlib.reload(auth)
+    """直接打 config.API_KEY（auth.dispatch 运行时读取，即时生效，无需 reload）。"""
+    monkeypatch.setattr(config, "API_KEY", key)
 
 
 def _clear_key(monkeypatch):
-    monkeypatch.delenv("GAP_API_KEY", raising=False)
-    import app.config as cfg
-    importlib.reload(cfg)
-    import app.middleware.auth as auth
-    importlib.reload(auth)
+    monkeypatch.setattr(config, "API_KEY", "")
 
 
 def test_no_key_configured_bypasses(tmp_data_dir, monkeypatch):
@@ -405,23 +398,25 @@ Expected: FAIL（`ModuleNotFoundError: app.middleware.auth`）
 - GAP_API_KEY 未配置 → 旁路（开发友好）。
 - 非 /api/ 路径不拦截。
 - KEY 取值绝不 echo（spec §6）。
+- dispatch 运行时读 config.API_KEY（非 import 期绑定），便于测试 monkeypatch。
 """
 import logging
 
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from ..config import API_KEY
+from .. import config
 
 logger = logging.getLogger(__name__)
-if not API_KEY:
+if not config.API_KEY:
     logger.warning("鉴权未启用：未配置环境变量 GAP_API_KEY（生产请配置）")
 
 
 class AuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
-        if API_KEY and request.url.path.startswith("/api/"):
-            if request.headers.get("X-API-Key", "") != API_KEY:
+        key = config.API_KEY  # 运行时读取，测试可 monkeypatch.setattr(config, "API_KEY", ...)
+        if key and request.url.path.startswith("/api/"):
+            if request.headers.get("X-API-Key", "") != key:
                 return JSONResponse(
                     status_code=401,
                     content={"detail": "missing or invalid api key"},
@@ -527,7 +522,7 @@ def test_domains_endpoint_records_telemetry(tmp_data_dir, monkeypatch, tmp_path)
 - [ ] **Step 2: 跑测试验证失败**
 
 Run: `pytest tests/test_api_objects.py::test_domains_endpoint_returns_business_domain_md tests/test_api_objects.py::test_md_endpoint_records_telemetry -v`
-Expected: FAIL（GET 改 POST 后 `c.post` 现在打到 GET 路由 → 405；埋点接口未实现）
+Expected: FAIL——`/domains` 此时仍是 GET 路由，`c.post` 触发 **405 Method Not Allowed**；且 `record` 未接线
 
 - [ ] **Step 3: 改 `routers/objects.py`**
 
@@ -562,12 +557,31 @@ def list_domains_with_md():
     return out
 ```
 
-在 `batch_md` 的成功分支末尾（`out[id_] = {...}` 之后）埋点：
+**完整重写 `batch_md`**（在成功赋值分支内加 `record()`，保留 `dict.fromkeys` 去重、两个错误 `continue` 分支、循环外 `return`）：
+
 ```python
+@router.post("/md")
+def batch_md(req: BatchMdRequest):
+    idx = get_service().index
+    out: dict = {}
+    for id_ in dict.fromkeys(req.ids):
+        available = idx.versions_of(id_)
+        if not available:
+            out[id_] = {"error": "对象不存在", "available_versions": []}
+            continue
+        obj = idx.resolve_node(id_, req.version)
+        if obj is None:
+            out[id_] = {
+                "error": f"版本不存在: {id_}@{req.version}",
+                "available_versions": available,
+            }
+            continue
         out[id_] = {"version": obj.version, "md": obj.raw_md}
-        record("/md", id_, obj.type)
+        record("/md", id_, obj.type)  # 仅成功取到才埋点
     return out
 ```
+
+> `record()` 必须在循环体内、成功赋值之后；不要放到循环外（否则丢失对象级粒度）。
 
 - [ ] **Step 4: 跑测试验证通过**
 
@@ -820,26 +834,24 @@ async function onSubmit(): Promise<void> {
 </style>
 ```
 
-- [ ] **Step 4: 改 `src/router.ts` 加 /login + 守卫**
+- [ ] **Step 4: 改 `src/router.ts` 加 /login + 守卫（用 Edit 针对性插入，保留现有路由与注释）**
 
+三处 Edit（现有 7 条路由 + 顶部注释原样保留，**不全文重写**）：
+1. 顶部 import 追加 auth：
 ```typescript
 import { createRouter, createWebHistory } from 'vue-router'
 import { hasKey } from './auth'
-
-export const router = createRouter({
-  history: createWebHistory(),
-  routes: [
-    { path: '/login', name: 'login', component: () => import('./views/LoginView.vue') },
-    { path: '/', name: 'browser', component: () => import('./views/BrowserView.vue') },
-    { path: '/stats', name: 'stats', component: () => import('./views/StatsView.vue') },
-    { path: '/upload', name: 'upload', component: () => import('./views/UploadView.vue') },
-    // 测试用例管理子系统
-    { path: '/tests', name: 'tests', component: () => import('./tests-module/views/TestCasesView.vue') },
-    { path: '/tests/cases/:id', name: 'tests-case', component: () => import('./tests-module/views/CaseDetailView.vue') },
-    { path: '/tests/runs/:id', name: 'tests-run', component: () => import('./tests-module/views/RunDetailView.vue') },
-  ],
-})
-
+```
+2. `routes:` 数组首项（`path: '/'`）前插 /login：
+```typescript
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('./views/LoginView.vue'),
+    },
+```
+3. 文件末尾（`createRouter({...})` 赋值语句之后）追加守卫：
+```typescript
 // 守卫：除登录页外，无 KEY → 跳登录
 router.beforeEach((to) => {
   if (to.name === 'login') return true
@@ -913,9 +925,9 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
 
 - [ ] **Step 2: 改 `src/tests-module/api.ts` 的 `_req`（同样改造）**
 
-顶部 import：
+顶部 import（`tests-module/` 在 `src/` 下一层，`../auth` 回到 `src/`）：
 ```typescript
-import { getKey, clearKey } from '../../auth'
+import { getKey, clearKey } from '../auth'
 ```
 `_req` 同样加 header + 401 分支（与上一步代码一致）。
 
@@ -1014,13 +1026,14 @@ export const fetchTelemetryStats = (days = 30): Promise<TelemetryStats> =>
         </ol>
       </div>
 
-      <!-- 时间趋势（SVG 折线） -->
+      <!-- 时间趋势（SVG 折线；数据点 <2 时退化提示） -->
       <div class="ts-block ts-block-wide">
         <div class="block-title">时间趋势（按日）</div>
-        <svg class="trend" :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="none">
+        <svg v-if="stats.timeline.length > 1" class="trend" :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="none">
           <polyline :points="linePoints" fill="none" :stroke="accent" stroke-width="2" />
         </svg>
-        <div class="trend-axis">
+        <div v-else class="trend-empty">数据点不足（需 ≥2 天记录才画折线）</div>
+        <div v-if="stats.timeline.length > 1" class="trend-axis">
           <span>{{ stats.timeline[0]?.date ?? '' }}</span>
           <span>{{ stats.timeline[stats.timeline.length - 1]?.date ?? '' }}</span>
         </div>
@@ -1211,6 +1224,15 @@ onMounted(load)
   background: var(--bg-sunken);
   border-radius: var(--radius-sm);
 }
+.trend-empty {
+  height: 120px;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: var(--text-faint);
+  background: var(--bg-sunken);
+  border-radius: var(--radius-sm);
+}
 .trend-axis {
   display: flex;
   justify-content: space-between;
@@ -1270,13 +1292,9 @@ git commit -m "feat(platform): 统计页加「知识取用频次」section（三
 - Modify: `graph-asset-platform/.gitignore`
 - Create: `graph-asset-platform/.env.example`
 
-- [ ] **Step 1: 改 `.gitignore`**
+- [ ] **Step 1: 确认 `.gitignore` 已覆盖打点数据（通常无需改动）**
 
-在 `graph-asset-platform/.gitignore` 末尾加：
-```
-# 运营打点数据（不入 git，本地生成）
-platform-data/telemetry/
-```
+`graph-asset-platform/.gitignore` 已含 `platform-data/`（整目录），`platform-data/telemetry/` 自动被忽略。**确认该行存在即可，不必额外添加**。若想显式注明，可加一行注释 `# platform-data/telemetry/ 已被 platform-data/ 覆盖`，但不必要。
 
 - [ ] **Step 2: 写 `.env.example`**
 
@@ -1304,8 +1322,17 @@ git commit -m "chore(platform): .gitignore 排除打点数据 + .env.example"
 
 - [ ] **Step 1: README 启动命令加 GAP_API_KEY**
 
-在 README 的「启动」段落，后端启动命令前缀 `GAP_API_KEY=xxx`，并补一句：
-> 未配置 `GAP_API_KEY` 时鉴权旁路（仅开发）。生产/外网必须配置。SKILL 与前端登录共用此 KEY。
+先定位现有启动命令：`grep -n "uvicorn" graph-asset-platform/README.md`，把后端启动行从（before）：
+```
+uvicorn app.main:app --app-dir graph-asset-platform/backend --port 8000
+```
+改为（after，前缀 KEY）：
+```
+GAP_API_KEY=你的KEY uvicorn app.main:app --app-dir graph-asset-platform/backend --port 8000
+```
+> Windows cmd: `set GAP_API_KEY=你的KEY && uvicorn ...`；PowerShell: `$env:GAP_API_KEY="你的KEY"; uvicorn ...`；Git Bash 用上面的 bash 语法。
+并在启动段补一句：
+> 鉴权：未配置 `GAP_API_KEY` 时鉴权旁路（仅开发）。生产/外网必须配置。SKILL 与前端登录共用此 KEY。
 
 - [ ] **Step 2: `图谱接口.md` 改 POST + KEY**
 
@@ -1336,10 +1363,11 @@ git commit -m "docs(platform): 鉴权KEY + /domains改POST 文档同步"
 
 - [ ] **Step 1: 后端带 KEY 启动**
 
-Run（在 `backend/` 下）:
+Run（在 `backend/` 下，Git Bash）:
 ```bash
 GAP_API_KEY=testkey123 uvicorn app.main:app --port 8000
 ```
+> Windows cmd: `set GAP_API_KEY=testkey123 && uvicorn app.main:app --port 8000`；PowerShell: `$env:GAP_API_KEY="testkey123"; uvicorn app.main:app --port 8000`。
 Expected: 启动日志不再有"鉴权未启用"WARNING（KEY 已配）。
 
 - [ ] **Step 2: 鉴权 curl 验证**
@@ -1397,10 +1425,19 @@ Run（在 `frontend/` 下）: `npm run build`
 - [ ] 手动 sessionStorage 清 KEY → 下次请求 401 → 跳 `/login`
 - [ ] DevTools Network：请求 header 带 `X-API-Key`
 
-- [ ] **Step 6: 隔离回归确认**
+- [ ] **Step 6: 隔离回归确认（扩面 diff）**
 
-Run: `git diff master -- graph-asset-platform/backend/app/service.py graph-asset-platform/backend/app/tests/`
-Expected: **空 diff**（图谱 service / 测试子系统零改动，隔离红线达标）
+Run:
+```bash
+git diff master -- graph-asset-platform/backend/app/service.py \
+                     graph-asset-platform/backend/app/index.py \
+                     graph-asset-platform/backend/app/store.py \
+                     graph-asset-platform/backend/app/edges.py \
+                     graph-asset-platform/backend/app/models.py \
+                     graph-asset-platform/backend/app/bundle.py \
+                     graph-asset-platform/backend/app/tests/
+```
+Expected: **空 diff**（图谱解析/索引/服务 + 测试子系统源码零改动，隔离红线达标）。本次仅动 `config/main/objects(2 处 record)/新模块/前端 _req`，上述文件不应出现。
 
 - [ ] **Step 7: 最终提交（若有验证期微调）**
 
