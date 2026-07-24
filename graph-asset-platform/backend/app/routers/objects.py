@@ -9,12 +9,13 @@
 """
 from typing import Optional
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, Field
 
 from ..models import Edge, Object
 from ..service import get_service
+from ..telemetry.recorder import record
 from ..ui_layers import UI_LAYER_TYPES
 
 router = APIRouter()
@@ -136,13 +137,12 @@ def list_objects(type: Optional[str] = None,
 
 # ---------- /domains ----------
 
-@router.get("/domains")
-def list_domains_with_md():
+@router.post("/domains")
+def list_domains_with_md(request: Request):
     """一次性返回全部业务域的完整 md（``[{id, name, md}, ...]``）。
 
     业务域是用户最优先的业务归属定位层——数量少（跨 NF 类，version 恒 null），
-    Agent 入口直接取全部域 md，免去"先 GET id 再 POST /md"两步。其他层级仍按
-    ``POST /md`` 沿 ``[[ID]]`` 引用下钻，本端点仅服务于业务域这一特殊层。
+    Agent 入口直接取全部域 md。其他层级仍按 ``POST /md`` 沿 ``[[ID]]`` 引用下钻。
     """
     idx = get_service().index
     latest: dict = {}
@@ -152,10 +152,13 @@ def list_domains_with_md():
         cur = latest.get(id_)
         if cur is None or (obj.version or "") > (cur.version or ""):
             latest[id_] = obj
-    return [
+    out = [
         {"id": id_, "name": obj.frontmatter.get("name"), "md": obj.raw_md}
         for id_, obj in latest.items()
     ]
+    for item in out:
+        record("/domains", item["id"], "BusinessDomain", user=request.state.user, caller=request.state.caller, level="object", operator=getattr(request.state, "operator", ""))
+    return out
 
 
 # ---------- /names ----------
@@ -258,7 +261,7 @@ class BatchMdRequest(BaseModel):
 
 
 @router.post("/md")
-def batch_md(req: BatchMdRequest):
+def batch_md(req: BatchMdRequest, request: Request):
     """批量取多个对象的原始 markdown。
 
     复用单对象版本解析（``Index.resolve_node``）：不传 version 落到该 id 最新
@@ -283,4 +286,5 @@ def batch_md(req: BatchMdRequest):
             }
             continue
         out[id_] = {"version": obj.version, "md": obj.raw_md}
+        record("/md", id_, obj.type, user=request.state.user, caller=request.state.caller, level="object", operator=getattr(request.state, "operator", ""))
     return out

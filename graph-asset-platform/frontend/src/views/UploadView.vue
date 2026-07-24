@@ -3,9 +3,7 @@
     <div class="upload-container stagger-in">
       <header class="page-head">
         <h1 class="page-title">导入资产包</h1>
-        <p class="page-sub">
-          上传一个 markdown 资产压缩包（.zip），系统将解析其中的 frontmatter 与对象/边关系，并入资产库。
-        </p>
+        <p class="page-sub">上传 .zip 资产包，自动解析 frontmatter 与对象/边关系</p>
       </header>
 
       <div
@@ -319,8 +317,9 @@ onUnmounted(stopPoll)
 .page-sub {
   margin: 0;
   color: var(--text-muted);
-  font-size: 13.5px;
+  font-size: 13px;
   max-width: 560px;
+  line-height: 1.5;
 }
 
 .dropzone {

@@ -4,7 +4,7 @@
       <div>
         <h1 class="page-title">测试用例</h1>
         <p class="page-sub">
-          数据飞轮·数据层。用例（输入）→ 运行（产出）→ 审查（问题清单）→ 定位改图谱。
+          用例 → 运行 → 审查 → 回馈图谱
           <span v-if="stats" class="page-stats">
             {{ stats.case_count }} 用例 · {{ stats.run_count }} 运行 · {{ stats.review_count }} 审查
           </span>
@@ -173,7 +173,7 @@ onMounted(async () => {
 .tests-page {
   height: 100%;
   overflow-y: auto;
-  padding: var(--space-6) var(--space-7);
+  padding: var(--space-8) var(--space-6);
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -186,22 +186,25 @@ onMounted(async () => {
 }
 .page-title {
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
   color: var(--text);
-  margin: 0 0 4px;
-  letter-spacing: -0.01em;
+  margin: 0;
+  letter-spacing: -0.02em;
 }
 .page-sub {
   font-size: 13px;
   color: var(--text-muted);
-  margin: 0;
-  line-height: 1.6;
+  margin: var(--space-2) 0 0;
+  line-height: 1.55;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
 }
 .page-stats {
   color: var(--text);
   font-weight: 600;
-  margin-left: 6px;
 }
 .head-actions {
   display: flex;

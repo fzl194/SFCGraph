@@ -3,6 +3,8 @@
 // 统一 _req 封装错误：404 时后端返回 detail.message + available_versions（版本缺失），
 // 或 detail: "对象不存在: ..."（id 完全不存在）→ 抛出 ApiError 带 status/detail/payload。
 
+import { getKey, clearSession } from './auth'
+
 const BASE = '/api/v1'
 
 export interface ApiError extends Error {
@@ -11,7 +13,22 @@ export interface ApiError extends Error {
 }
 
 async function _req<T>(url: string, init?: RequestInit): Promise<T> {
-  const resp = await fetch(url, init)
+  const headers = new Headers(init?.headers)
+  const k = getKey()
+  if (k) headers.set('X-API-Key', k)
+  headers.set('X-Client', 'web')
+  const resp = await fetch(url, { ...init, headers })
+  if (resp.status === 401) {
+    clearSession()
+    // window.location 最稳，绕开 router 实例（避免 api.ts ↔ router.ts 循环依赖）
+    if (!window.location.pathname.startsWith('/login')) {
+      window.location.assign('/login')
+    }
+    throw new Error('未授权，已跳转登录')
+  }
+  if (resp.status === 403) {
+    throw Object.assign(new Error('权限不足'), { status: 403 })
+  }
   if (!resp.ok) {
     let detail: unknown
     try {
@@ -36,6 +53,79 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
   // 纯文本
   return (await resp.text()) as unknown as T
 }
+
+// 登录：username+key → 用户信息（含全部权限位）
+export interface LoginUser {
+  username: string
+  can_frontend: boolean
+  can_upload: boolean
+  can_test: boolean
+  can_skill: boolean
+  is_admin: boolean
+}
+export const login = (username: string, key: string): Promise<LoginUser> =>
+  _req<LoginUser>(`${BASE}/users/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username, key }),
+  })
+
+// SKILL 取用频次聚合（统计页 TelemetrySection 用）
+export interface TelemetryStats {
+  total: number
+  by_type: Record<string, number>
+  top_ids: { id: string; type: string; count: number }[]
+  timeline: { date: string; count: number }[]
+  by_user: Record<string, number>
+  by_operator: Record<string, number>
+}
+
+export const fetchTelemetryStats = (days = 30): Promise<TelemetryStats> =>
+  _req<TelemetryStats>(`${BASE}/telemetry/stats?days=${days}`)
+
+// ---------- 用户管理（admin）----------
+export interface UserRow {
+  username: string
+  key: string
+  can_frontend: boolean
+  can_upload: boolean
+  can_test: boolean
+  can_skill: boolean
+  is_admin: boolean
+  created_at?: string
+}
+
+export const listUsers = (): Promise<UserRow[]> => _req(`${BASE}/users`)
+
+export const createUser = (b: {
+  username: string
+  can_frontend?: boolean
+  can_upload?: boolean
+  can_test?: boolean
+  can_skill?: boolean
+  is_admin?: boolean
+}): Promise<UserRow> =>
+  _req(`${BASE}/users`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(b),
+  })
+
+export const updateUser = (name: string, b: Record<string, unknown>): Promise<UserRow> =>
+  _req(`${BASE}/users/${encodeURIComponent(name)}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(b),
+  })
+
+export const deleteUser = (name: string): Promise<{ ok: boolean }> =>
+  _req(`${BASE}/users/${encodeURIComponent(name)}`, { method: 'DELETE' })
+
+export const userActivity = (
+  name: string,
+  days = 30,
+): Promise<{ ts: string; endpoint: string; caller: string; operator: string }[]> =>
+  _req(`${BASE}/users/${encodeURIComponent(name)}/activity?days=${days}`)
 
 function qs(p: Record<string, string | number | undefined>): string {
   const entries = Object.entries(p).filter(([, v]) => v !== undefined && v !== '')

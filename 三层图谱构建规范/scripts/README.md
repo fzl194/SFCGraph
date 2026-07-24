@@ -11,23 +11,19 @@
 
 ---
 
-## 管线全貌（5 阶段）
+## 脚本分布
 
-| 阶段 | 脚本 | 输入 → 输出 | 状态 |
-|---|---|---|---|
-| **0 导出** | `product_doc_md_exporter_optimized.py` | HDX/HWICS 归档 → `output/` md + 映射表 | ✅ 已纳入 |
-| **1 命令图构建** | （原 `CommandGraph/build_all.py`） | output/ md → 命令/配置对象 jsonl | ⬜ 待纳入（随命令层） |
-| **2 特性图构建** | （原 `FeatureGraph/build_all.py`） | output/ md → 特性/license jsonl | ⬜ 待纳入（随特性层） |
-| **3 wiki 编译** | （原 `assets/scripts/compile_*.py`） | jsonl → typed wiki md | ⬜ 待纳入（随各层） |
-| **4 核查** | （原 `assets/scripts/lint_*.py`） | wiki md → 问题报告 | ⬜ 待纳入（随核查流程） |
+构建脚本**按层就近放置**，不在顶层集中：
 
----
+| 位置 | 内容 |
+|---|---|
+| `scripts/`（顶层，本目录） | 仅**阶段 0**：原始产品文档导出器（所有层共用入口） |
+| `command/scripts/` | 命令层构建（命令 + 配置对象，Spec 体裁） |
+| `feature/scripts/` | 特性层构建（Feature + License，Spec 体裁） |
+| `task/scripts/` | task 层辅助脚本（如 `collect_command_examples.py`；Procedure 体裁，主体靠 Agent 写 md） |
+| `business/` | 业务层无 `scripts/`（Procedure 体裁，靠 Agent 读文档写 md） |
 
-## 纳入原则
-
-1. **随层纳入**：每个脚本随它服务的对象类型一起纳入（命令层脚本随命令层、特性层随特性层）。
-2. **唯一源（目标）**：纳入默认移入本目录，本目录成为唯一源。**过渡期可保留原位置副本**（不破坏现有流程），待规范包验证为唯一源后再删原副本（防漂移）。
-3. **引用同步**：纳入后，原位置的引用更新指向本目录。
+> 每层构建脚本随该层能力包独立维护，详见各层 `SKILL.md`。
 
 ---
 

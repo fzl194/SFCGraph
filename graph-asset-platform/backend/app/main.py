@@ -11,9 +11,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from .middleware.auth import AuthMiddleware
 from .routers import assets as assets_router
 from .routers import objects as objects_router
+from .routers import telemetry as telemetry_router
 from .routers import tests as tests_router
+from .routers import users as users_router
 from .service import get_service
 from .tests.service import get_test_service
 
@@ -28,7 +31,7 @@ async def lifespan(app: FastAPI):
     svc = get_service()
     print(
         f"[startup] 索引就绪：{len(svc.index.nodes)} 个对象，"
-        f"耗时 {time.time() - t0:.1f}s → http://127.0.0.1:8000/",
+        f"耗时 {time.time() - t0:.1f}s → http://127.0.0.1:80/",
         flush=True,
     )
     # 测试子系统索引（独立于图谱，隔离）
@@ -38,10 +41,22 @@ async def lifespan(app: FastAPI):
         f"{len(t_svc.index.runs)} 运行 / {len(t_svc.index.reviews)} 审查",
         flush=True,
     )
+    # 用户体系：users.json 为空 → 自动创建 admin（全权限）并打印 KEY（首次 bootstrap）
+    try:
+        from .users.store import list_users
+        if not list_users():
+            from .users.service import create_user
+            u = create_user('admin', can_frontend=True, can_skill=True, is_admin=True, can_upload=True, can_test=True)
+            print(f"[startup] users.json 为空 → 已自动创建 admin（全权限）。KEY: {u['key']}（请妥善保存，仅显示一次）", flush=True)
+    except Exception as e:
+        print(f"[startup] WARNING: users.json 读取失败 ({e})", flush=True)
     yield
 
 
 app = FastAPI(title="Graph Asset Platform", version="0.1.0", lifespan=lifespan)
+# 先 add auth（内层），再 add CORS（外层）：CORS 包装 auth 的 401，保证跨域时 401 响应带 CORS 头。
+# 同源前端不受影响；此顺序为跨域调试/未来部署预留。
+app.add_middleware(AuthMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -50,7 +65,9 @@ app.add_middleware(
 )
 app.include_router(assets_router.router, prefix="/api/v1")
 app.include_router(objects_router.router, prefix="/api/v1")
+app.include_router(telemetry_router.router, prefix="/api/v1")
 app.include_router(tests_router.router, prefix="/api/v1")
+app.include_router(users_router.router, prefix="/api/v1")
 
 # 前端静态托管（dist 可能尚未构建，不存在则不挂载）
 _dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"

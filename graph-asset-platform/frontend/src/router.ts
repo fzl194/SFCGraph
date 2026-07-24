@@ -1,9 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { getSession } from './auth'
 
 // 三菜单信息架构：图谱浏览（默认）/ 统计 / 上传
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('./views/LoginView.vue'),
+    },
     {
       path: '/',
       name: 'browser',
@@ -21,6 +27,11 @@ export const router = createRouter({
     },
     // 测试用例管理子系统（独立模块，第 4 菜单）
     {
+      path: '/users',
+      name: 'users',
+      component: () => import('./views/UsersView.vue'),
+    },
+    {
       path: '/tests',
       name: 'tests',
       component: () => import('./tests-module/views/TestCasesView.vue'),
@@ -36,4 +47,13 @@ export const router = createRouter({
       component: () => import('./tests-module/views/RunDetailView.vue'),
     },
   ],
+})
+
+// 守卫：除登录页外，无 KEY → 跳登录
+router.beforeEach((to) => {
+  if (to.name === 'login') return true
+  const s = getSession()
+  if (!s) return { name: 'login' }
+  if (to.name === 'users' && !s.is_admin) return false // 非 admin 拒绝
+  return true
 })

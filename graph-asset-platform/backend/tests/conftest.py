@@ -34,3 +34,31 @@ def sample_bundle_zip() -> bytes:
                 rel = p.relative_to(root).as_posix()
                 z.writestr(rel, p.read_text(encoding="utf-8"))
     return buf.getvalue()
+
+
+@pytest.fixture(autouse=True)
+def _empty_service_to_avoid_real_index(tmp_data_dir, monkeypatch):
+    """所有测试预置空图谱 service（0 对象），避免 TestClient lifespan 建 real index（~55s）。
+    test_api_objects 的 _setup 会覆盖为带数据的 tmp service。"""
+    import app.service as svc
+    from app.store import Store
+    from app.registry import Registry
+    from app.index import Index
+    s = svc.Service.__new__(svc.Service)
+    s.store = Store(tmp_data_dir)
+    s.registry = Registry.load_default()
+    s.index = Index.build(s.store, s.registry)
+    monkeypatch.setattr(svc, "_service", s)
+
+
+@pytest.fixture(autouse=True)
+def _skip_auth_for_pure_graph_tests(monkeypatch, request):
+    """纯图谱资产测试（assets/e2e/jobs/store/index/classify 等不测 auth/打点的）
+    跳过 auth 中间件，避免 v2 后逐个加 admin KEY。测 auth/打点的模块用真实中间件。"""
+    mod = getattr(request.module, "__name__", "") if hasattr(request, "module") else ""
+    if any(x in mod for x in ("test_auth", "test_users", "test_api_objects", "test_telemetry")):
+        return
+    from app.middleware import auth
+    _ADMIN = {"username": "admin", "key": "x", "can_frontend": True, "can_upload": True, "can_test": True, "can_skill": True, "is_admin": True}
+    monkeypatch.setattr(auth, "authenticate", lambda key: _ADMIN)
+
