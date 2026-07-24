@@ -6,11 +6,14 @@
         <p class="ts-sub">只统计 SKILL 的 /domains + /md（按对象）</p>
       </div>
       <div class="ts-controls">
-        <el-select v-model="days" size="small" @change="load">
-          <el-option :value="7" label="近 7 天" />
-          <el-option :value="30" label="近 30 天" />
-          <el-option :value="90" label="近 90 天" />
-        </el-select>
+        <div class="days-tabs">
+          <button
+            v-for="d in [7, 30, 90]"
+            :key="d"
+            :class="['days-tab', { 'days-tab--active': days === d }]"
+            @click="days = d; load()"
+          >近 {{ d }} 天</button>
+        </div>
         <span class="ts-total">共 {{ formatNum(stats?.total ?? 0) }} 次取用</span>
       </div>
     </header>
@@ -115,7 +118,6 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
-import { ElSelect, ElOption } from 'element-plus'
 import { fetchTelemetryStats, type TelemetryStats } from '../api'
 
 const stats = ref<TelemetryStats | null>(null)
@@ -430,5 +432,34 @@ onMounted(load)
   .ts-grid {
     grid-template-columns: 1fr;
   }
+}
+.days-tabs {
+  display: inline-flex;
+  background: var(--bg-sunken);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.days-tab {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  font-family: var(--sans);
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+.days-tab:hover {
+  color: var(--text);
+}
+.days-tab--active {
+  background: var(--bg-elev);
+  color: var(--accent);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
 }
 </style>
