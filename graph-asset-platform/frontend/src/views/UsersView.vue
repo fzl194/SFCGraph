@@ -17,6 +17,8 @@
         <template #default="{ row }">
           <el-tag v-if="row.is_admin" type="danger" size="small">admin</el-tag>
           <el-tag v-if="row.can_frontend" type="success" size="small">前端</el-tag>
+          <el-tag v-if="row.can_upload" size="small">上传</el-tag>
+          <el-tag v-if="row.can_test" size="small">测试</el-tag>
           <el-tag v-if="row.can_skill" type="warning" size="small">SKILL</el-tag>
         </template>
       </el-table-column>
@@ -34,6 +36,8 @@
       <el-form label-width="90px">
         <el-form-item label="用户名"><el-input v-model="form.username" /></el-form-item>
         <el-form-item label="前端权限"><el-checkbox v-model="form.can_frontend" /></el-form-item>
+        <el-form-item label="上传权限"><el-checkbox v-model="form.can_upload" /></el-form-item>
+        <el-form-item label="测试权限"><el-checkbox v-model="form.can_test" /></el-form-item>
         <el-form-item label="SKILL权限"><el-checkbox v-model="form.can_skill" /></el-form-item>
         <el-form-item label="管理员"><el-checkbox v-model="form.is_admin" /></el-form-item>
       </el-form>
@@ -48,6 +52,8 @@
       <el-form label-width="90px">
         <el-form-item label="用户名"><span>{{ editTarget?.username }}</span></el-form-item>
         <el-form-item label="前端权限"><el-checkbox v-model="editForm.can_frontend" /></el-form-item>
+        <el-form-item label="上传权限"><el-checkbox v-model="editForm.can_upload" /></el-form-item>
+        <el-form-item label="测试权限"><el-checkbox v-model="editForm.can_test" /></el-form-item>
         <el-form-item label="SKILL权限"><el-checkbox v-model="editForm.can_skill" /></el-form-item>
         <el-form-item label="管理员"><el-checkbox v-model="editForm.is_admin" /></el-form-item>
         <el-form-item label="重置 KEY"><el-checkbox v-model="editForm.reset_key" /></el-form-item>
@@ -84,11 +90,25 @@ const loading = ref(false)
 const saving = ref(false)
 
 const createVisible = ref(false)
-const form = reactive({ username: '', can_frontend: false, can_skill: false, is_admin: false })
+const form = reactive({
+  username: '',
+  can_frontend: false,
+  can_upload: false,
+  can_test: false,
+  can_skill: false,
+  is_admin: false,
+})
 
 const editVisible = ref(false)
 const editTarget = ref<UserRow | null>(null)
-const editForm = reactive({ can_frontend: false, can_skill: false, is_admin: false, reset_key: false })
+const editForm = reactive({
+  can_frontend: false,
+  can_upload: false,
+  can_test: false,
+  can_skill: false,
+  is_admin: false,
+  reset_key: false,
+})
 
 const activityVisible = ref(false)
 const activityTarget = ref<UserRow | null>(null)
@@ -107,7 +127,14 @@ async function load(): Promise<void> {
 }
 
 function openCreate(): void {
-  Object.assign(form, { username: '', can_frontend: false, can_skill: false, is_admin: false })
+  Object.assign(form, {
+    username: '',
+    can_frontend: false,
+    can_upload: false,
+    can_test: false,
+    can_skill: false,
+    is_admin: false,
+  })
   createVisible.value = true
 }
 
@@ -118,6 +145,8 @@ async function doCreate(): Promise<void> {
     const u = await createUser({
       username: form.username.trim(),
       can_frontend: form.can_frontend,
+      can_upload: form.can_upload,
+      can_test: form.can_test,
       can_skill: form.can_skill,
       is_admin: form.is_admin,
     })
@@ -135,6 +164,8 @@ function openEdit(row: UserRow): void {
   editTarget.value = row
   Object.assign(editForm, {
     can_frontend: row.can_frontend,
+    can_upload: row.can_upload,
+    can_test: row.can_test,
     can_skill: row.can_skill,
     is_admin: row.is_admin,
     reset_key: false,

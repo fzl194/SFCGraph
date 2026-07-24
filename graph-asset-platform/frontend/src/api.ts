@@ -54,9 +54,17 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
   return (await resp.text()) as unknown as T
 }
 
-// 登录：username+key → 用户信息（含 is_admin）
-export const login = (username: string, key: string): Promise<{ username: string; is_admin: boolean }> =>
-  _req<{ username: string; is_admin: boolean }>(`${BASE}/users/login`, {
+// 登录：username+key → 用户信息（含全部权限位）
+export interface LoginUser {
+  username: string
+  can_frontend: boolean
+  can_upload: boolean
+  can_test: boolean
+  can_skill: boolean
+  is_admin: boolean
+}
+export const login = (username: string, key: string): Promise<LoginUser> =>
+  _req<LoginUser>(`${BASE}/users/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, key }),
@@ -69,6 +77,7 @@ export interface TelemetryStats {
   top_ids: { id: string; type: string; count: number }[]
   timeline: { date: string; count: number }[]
   by_user: Record<string, number>
+  by_operator: Record<string, number>
 }
 
 export const fetchTelemetryStats = (days = 30): Promise<TelemetryStats> =>
@@ -79,6 +88,8 @@ export interface UserRow {
   username: string
   key: string
   can_frontend: boolean
+  can_upload: boolean
+  can_test: boolean
   can_skill: boolean
   is_admin: boolean
   created_at?: string
@@ -89,6 +100,8 @@ export const listUsers = (): Promise<UserRow[]> => _req(`${BASE}/users`)
 export const createUser = (b: {
   username: string
   can_frontend?: boolean
+  can_upload?: boolean
+  can_test?: boolean
   can_skill?: boolean
   is_admin?: boolean
 }): Promise<UserRow> =>

@@ -59,6 +59,17 @@
         </div>
       </div>
 
+      <!-- 按工号（SKILL 使用者） -->
+      <div class="ts-block">
+        <div class="block-title">按工号（SKILL 使用者）</div>
+        <div class="type-rows">
+          <div v-for="(c, op) in stats.by_operator" :key="op" class="type-row">
+            <span class="type-label">{{ op }}</span>
+            <span class="type-count mono">{{ formatNum(c) }}</span>
+          </div>
+        </div>
+      </div>
+
       <!-- 时间趋势（SVG 折线；数据点 <2 时退化提示） -->
       <div class="ts-block ts-block-wide">
         <div class="block-title">时间趋势（按日）</div>

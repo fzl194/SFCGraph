@@ -1,9 +1,13 @@
-// 鉴权 session（username + key + is_admin），sessionStorage 存储。
+// 鉴权 session（username + key + 全部权限位），sessionStorage 存储。
 const SESSION = 'gap_session'
 
 export interface Session {
   username: string
   key: string
+  can_frontend: boolean
+  can_upload: boolean
+  can_test: boolean
+  can_skill: boolean
   is_admin: boolean
 }
 

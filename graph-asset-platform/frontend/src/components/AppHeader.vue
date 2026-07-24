@@ -184,15 +184,14 @@ const UserIcon = () =>
   )
 
 const tabs = computed(() => {
+  const s = getSession()
   const base = [
     { to: '/', label: '图谱浏览', icon: GraphIcon },
     { to: '/stats', label: '统计', icon: StatsIcon },
-    { to: '/upload', label: '上传', icon: UploadIcon },
-    { to: '/tests', label: '测试', icon: TestIcon },
   ]
-  if (getSession()?.is_admin) {
-    base.splice(3, 0, { to: '/users', label: '用户', icon: UserIcon })
-  }
+  if (s?.can_upload) base.push({ to: '/upload', label: '上传', icon: UploadIcon })
+  if (s?.can_test) base.push({ to: '/tests', label: '测试', icon: TestIcon })
+  if (s?.is_admin) base.push({ to: '/users', label: '用户', icon: UserIcon })
   return base
 })
 

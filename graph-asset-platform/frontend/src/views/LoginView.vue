@@ -111,7 +111,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { setSession, type Session } from '../auth'
+import { setSession } from '../auth'
 import { login } from '../api'
 
 const username = ref('')
@@ -124,7 +124,15 @@ async function onSubmit(): Promise<void> {
   err.value = ''
   try {
     const u = await login(username.value.trim(), key.value.trim())
-    setSession({ username: u.username, key: key.value.trim(), is_admin: u.is_admin } as Session)
+    setSession({
+      username: u.username,
+      key: key.value.trim(),
+      can_frontend: u.can_frontend,
+      can_upload: u.can_upload,
+      can_test: u.can_test,
+      can_skill: u.can_skill,
+      is_admin: u.is_admin,
+    })
     window.location.assign('/')
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : '登录失败'
