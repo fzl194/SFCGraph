@@ -96,14 +96,15 @@
         </div>
       </div>
 
-      <!-- 时间趋势（SVG 折线；数据点 <2 时退化提示） -->
+      <!-- 时间趋势（按小时折线；≥1 点即画，单点显示圆点） -->
       <div class="ts-block ts-block-wide">
-        <div class="block-title">时间趋势（按日）</div>
-        <svg v-if="stats.timeline.length > 1" class="trend" :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="none">
-          <polyline :points="linePoints" fill="none" :stroke="accent" stroke-width="2" />
+        <div class="block-title">时间趋势（按小时）</div>
+        <svg v-if="stats.timeline.length >= 1" class="trend" :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="none">
+          <polyline v-if="stats.timeline.length > 1" :points="linePoints" fill="none" :stroke="accent" stroke-width="2" />
+          <circle v-for="(p, i) in trendDots" :key="i" :cx="p.x" :cy="p.y" r="2.5" :fill="accent" />
         </svg>
-        <div v-else class="trend-empty">数据点不足（需 ≥2 天记录才画折线）</div>
-        <div v-if="stats.timeline.length > 1" class="trend-axis">
+        <div v-else class="trend-empty">暂无取用记录</div>
+        <div v-if="stats.timeline.length >= 1" class="trend-axis">
           <span>{{ stats.timeline[0]?.date ?? '' }}</span>
           <span>{{ stats.timeline[stats.timeline.length - 1]?.date ?? '' }}</span>
         </div>
@@ -157,6 +158,17 @@ const linePoints = computed(() => {
       return `${x.toFixed(1)},${y.toFixed(1)}`
     })
     .join(' ')
+})
+
+const trendDots = computed(() => {
+  if (!stats.value || stats.value.timeline.length === 0) return []
+  const tl = stats.value.timeline
+  const max = Math.max(...tl.map((p) => p.count), 1)
+  const n = tl.length
+  return tl.map((p, i) => ({
+    x: n === 1 ? W / 2 : (i / (n - 1)) * W,
+    y: H - (p.count / max) * (H - 10) - 5,
+  }))
 })
 
 async function load(): Promise<void> {
