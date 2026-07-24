@@ -3,7 +3,7 @@
 // 统一 _req 封装错误：404 时后端返回 detail.message + available_versions（版本缺失），
 // 或 detail: "对象不存在: ..."（id 完全不存在）→ 抛出 ApiError 带 status/detail/payload。
 
-import { getKey, clearKey } from './auth'
+import { getKey, clearSession } from './auth'
 
 const BASE = '/api/v1'
 
@@ -16,14 +16,18 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
   const headers = new Headers(init?.headers)
   const k = getKey()
   if (k) headers.set('X-API-Key', k)
+  headers.set('X-Client', 'web')
   const resp = await fetch(url, { ...init, headers })
   if (resp.status === 401) {
-    clearKey()
+    clearSession()
     // window.location 最稳，绕开 router 实例（避免 api.ts ↔ router.ts 循环依赖）
     if (!window.location.pathname.startsWith('/login')) {
       window.location.assign('/login')
     }
     throw new Error('未授权，已跳转登录')
+  }
+  if (resp.status === 403) {
+    throw Object.assign(new Error('权限不足'), { status: 403 })
   }
   if (!resp.ok) {
     let detail: unknown
@@ -50,16 +54,21 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
   return (await resp.text()) as unknown as T
 }
 
-// 登录页验证 KEY：调轻接口 /names，200 即 KEY 正确。
-export const verifyKey = (): Promise<Record<string, string>> =>
-  _req<Record<string, string>>(`${BASE}/names`)
+// 登录：username+key → 用户信息（含 is_admin）
+export const login = (username: string, key: string): Promise<{ username: string; is_admin: boolean }> =>
+  _req<{ username: string; is_admin: boolean }>(`${BASE}/users/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username, key }),
+  })
 
-// 取用频次聚合（统计页 TelemetrySection 用）
+// SKILL 取用频次聚合（统计页 TelemetrySection 用）
 export interface TelemetryStats {
   total: number
   by_type: Record<string, number>
   top_ids: { id: string; type: string; count: number }[]
   timeline: { date: string; count: number }[]
+  by_user: Record<string, number>
 }
 
 export const fetchTelemetryStats = (days = 30): Promise<TelemetryStats> =>

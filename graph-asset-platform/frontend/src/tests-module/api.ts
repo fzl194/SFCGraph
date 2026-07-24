@@ -2,7 +2,7 @@
 // 全部走 /api/v1/tests/*；id 含 @ 与空格时路径段 encodeURIComponent。
 // "涉及对象" autocomplete 另调图谱 /api/v1/names（只读跨子系统，后端两侧零耦合）。
 
-import { getKey, clearKey } from '../auth'
+import { getKey, clearSession } from '../auth'
 
 const BASE = '/api/v1'
 
@@ -15,13 +15,17 @@ async function _req<T>(url: string, init?: RequestInit): Promise<T> {
   const headers = new Headers(init?.headers)
   const k = getKey()
   if (k) headers.set('X-API-Key', k)
+  headers.set('X-Client', 'web')
   const resp = await fetch(url, { ...init, headers })
   if (resp.status === 401) {
-    clearKey()
+    clearSession()
     if (!window.location.pathname.startsWith('/login')) {
       window.location.assign('/login')
     }
     throw new Error('未授权，已跳转登录')
+  }
+  if (resp.status === 403) {
+    throw Object.assign(new Error('权限不足'), { status: 403 })
   }
   if (!resp.ok) {
     let detail: unknown
