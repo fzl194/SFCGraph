@@ -42,6 +42,10 @@
         <span class="chip-label">边</span>
         <span class="chip-val mono">{{ edgeCount.toLocaleString() }}</span>
       </div>
+      <div class="chip user-chip">
+        <span class="chip-label">{{ session?.username }}</span>
+        <button class="logout-link" @click="logout">登出</button>
+      </div>
     </div>
   </header>
 </template>
@@ -49,9 +53,15 @@
 <script setup lang="ts">
 import { computed, h, onMounted, ref } from 'vue'
 import { stats, type Stats } from '../api'
-import { getSession } from '../auth'
+import { getSession, clearSession } from '../auth'
 
 const globalStats = ref<Stats | null>(null)
+const session = getSession()
+
+function logout(): void {
+  clearSession()
+  window.location.assign('/login')
+}
 
 async function load(): Promise<void> {
   try {
@@ -332,5 +342,21 @@ onMounted(load)
   .brand-sub {
     display: none;
   }
+}
+
+.user-chip {
+  align-items: center;
+}
+.logout-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 6px;
+}
+.logout-link:hover {
+  text-decoration: underline;
 }
 </style>
