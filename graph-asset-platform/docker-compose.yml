@@ -12,8 +12,9 @@ services:
     build: .
     image: graph-asset-platform:latest
     container_name: graph-asset-platform
-    ports:
-      - "8000:8000"
+    # 宿主机网络：uvicorn 直接听宿主 80（镜像内 --port 80）。
+    # host 模式下 -p 端口映射会被忽略，故不配 ports，靠 uvicorn 监听 80 直通。
+    network_mode: host
     volumes:
       # 宿主数据目录 → 容器内 /app/platform-data（后端 config.py 固定读这个路径）。
       # ← 把左侧改成你服务器的实际路径，例如 /data/graph-asset-platform

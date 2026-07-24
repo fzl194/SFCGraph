@@ -30,7 +30,9 @@ COPY backend/ ./backend/
 # 前端构建产物（后端 main.py 把 frontend/dist 挂在根路径托管为 SPA）
 COPY --from=frontend-build /build/dist ./frontend/dist
 
-EXPOSE 8000
-# uvicorn 从 backend 目录起，CWD 让 `app.main` 可导入
+EXPOSE 80
+# uvicorn 从 backend 目录起，CWD 让 `app.main` 可导入。
+# 监听 80：配合 docker run --network host，uvicorn 直接听宿主 80（host 模式下 -p 被忽略，故不走端口映射）。
+# 容器默认 root，可绑特权端口 80。
 WORKDIR /app/backend
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]

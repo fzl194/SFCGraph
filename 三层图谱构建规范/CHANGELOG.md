@@ -28,6 +28,31 @@
 
 ---
 
+## [0.14.1] - 2026-07-23
+
+### 变更（清理一次性迁移产物 + 去当前文档里的 legacy 悬空引用）
+- **删除 task 层一次性迁移工程文档**（自声明"不是 SOP"）：`task/迁移指南-旧atom到AtomTask.md`、`task/迁移指南-旧compound到CompoundTask.md`、`task/迁移指南-旧feature_task到FeatureTask.md`。
+- **删除 task 层一次性迁移脚本**：`task/scripts/migrate_old_{atoms,compounds,feature_tasks,business}.py` 及对应 `__pycache__` 缓存。（`collect_command_examples.py` 保留——task 构建现行 helper）
+- **去掉 business 层文档里指向"已不维护旧 SOP"的悬空引用**：`business/SKILL.md` 6 处"沿用旧 `assets/business/业务层级构建SOP.md` §X"框架 + 末行 legacy 指针；`business/check.md` 顶注"沿用旧 …审视流程.md"。内容早已被新文档吸收，去框不去内容。
+- **去掉 FeatureGraph legacy 免责声明**：`feature/SKILL.md` / `feature/需求与路线.md` 边段标题的"不依赖 FeatureGraph jsonl"、需求与路线决策状态的"老资产 legacy 只做 check 不作输入"。
+- **去掉 `task/agent.md` 的旧编号注解**（"弃 0-/1-/2- 旧编号"）。
+- **`scripts/README.md`** 清掉"待纳入（原 assets/scripts/…）"的 stale 迁移路线表与"纳入原则"迁移框，改为反映现状（顶层 `scripts/` = 阶段0 导出器；各层构建脚本在各自 `{layer}/scripts/`）。
+
+### 为什么
+- 迁移已完成、旧资产体系（0-/1-/2- 编号、FeatureGraph jsonl、`assets/business` 旧 SOP）不再作为输入；一次性迁移文档/脚本与 legacy 悬空引用留着只会误导、稀释规范约束力。
+
+### 影响哪些文件
+- 删除：`task/迁移指南-*.md`(3) + `task/scripts/migrate_old_*.py`(4) + `__pycache__/migrate_old_*.{atoms,compounds,business}.pyc`(3)
+- 修改：`business/SKILL.md`、`business/check.md`、`feature/SKILL.md`、`feature/需求与路线.md`、`task/agent.md`、`scripts/README.md`、`VERSION`、`CHANGELOG.md`
+
+### 对已建资产的影响
+- 无（纯规范文档清理，不改任何构建行为与产出物）。
+
+### 类型
+- PATCH（清理一次性迁移产物 + 去悬空引用，无行为变化）
+
+---
+
 ## [0.14.0] - 2026-07-20
 
 ### 变更（business/ 层包补齐 + 业务层输出格式对齐新约定）

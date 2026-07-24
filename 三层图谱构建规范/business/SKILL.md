@@ -9,7 +9,7 @@ sop_version: 0.1.0
 > business 层在 task 层之上，把"动态配置方法"编排成"业务方案"。
 > **体裁：Procedure**——agent 理解输入自己写 md（命令/特性层是 Spec，task/business 层是 Procedure）。
 > **三层承载**：命令层 md（静态：功能/参数表/规格，原文 verbatim）→ task 层 md（动态：命令/特性怎么配）→ business 层 md（编排：业务方案怎么配，特性级变种 + 跨特性协同）。
-> **构建流程沿用旧 `assets/business/业务层级构建SOP.md`**（7 步 CS 流程 / 复用判定 / 特性关系矩阵 / 前置门 / 双向回填 / 族内顺序）；**输出格式对齐 v0.13.0 新约定**（裸 `[[逻辑ID]]` + `## 边` + 2 段 ID + 资产位置 `三层图谱资产/Business/`）。
+> **构建流程**：7 步 CS 流程 / 复用判定 / 特性关系矩阵 / 前置门 / 双向回填 / 族内顺序；**输出格式对齐 v0.13.0 新约定**（裸 `[[逻辑ID]]` + `## 边` + 2 段 ID + 资产位置 `三层图谱资产/Business/`）。
 
 ## 三类对象总览
 
@@ -68,14 +68,14 @@ business 的 `## 边` 只指向 **task 层动态对象 + 业务层同族对象**
   - `BusinessDomain@{domain-slug}`（如 `business-awareness`）
   - `NetworkScenario@{scenario-slug}`（如 `charging`）
   - `ConfigurationSolution@{scenario}-{solution-slug}`（如 `charging-converged`）
-- slug 小写 kebab-case（语义命名，见旧 SOP §4.3 命名表）
+- slug 小写 kebab-case（语义命名）
 - 目录（`三层图谱资产/` 下）：`Business/{domain}/[{scenario}/]`，**一个 md = 一个对象**：
   - `三层图谱资产/Business/business-awareness/BusinessDomain@business-awareness.md`
   - `三层图谱资产/Business/business-awareness/charging/NetworkScenario@charging.md`
   - `三层图谱资产/Business/business-awareness/charging/ConfigurationSolution@charging-converged.md`
 - **业务层不进 `Task/`**：`Task/{nf}/{ver}/` 只放网元内 FeatureTask/CompoundTask/AtomTask；CS 用 `[[{nf}@FeatureTask@{code}]]` 等裸逻辑 ID 引用它们（跨网元，平台按 ID 解析，无需路径）。
 
-## 2. 单方案构建流程（一次 pass，沿用旧 SOP §2）
+## 2. 单方案构建流程（一次 pass）
 
 ```
 0. 收集资产
@@ -103,7 +103,7 @@ business 的 `## 边` 只指向 **task 层动态对象 + 业务层同族对象**
 >
 > 业务层 index（`三层图谱资产/Business/` 下是否建 index.md，或由平台 registry 自动聚合）——本期暂不强制；平台后端按 registry 扫描聚合，无需手维护 index。
 
-## 3. 复用机制（沿用旧 SOP §3）
+## 3. 复用机制
 
 - **CS 复用下层 task**（FeatureTask/CompoundTask/AtomTask）= 业务层复用核心。建 CS 前先查 `三层图谱资产/CompoundTask/{nf}/{ver}/` 的复用候选（按 `command_set`）。
 - **复用判定**：方案某步所需命令集，已有 CompoundTask 覆盖（Jaccard ≥ 0.75 且相位同义）→ 复用引用；0.4–0.75 → reference（共享子 AtomTask）；< 0.4 → 新建。
@@ -112,7 +112,7 @@ business 的 `## 边` 只指向 **task 层动态对象 + 业务层同族对象**
 
 ## 4. wiki 模板与叙述风格
 
-骨架见 [template/](template/)（三个 .tpl）。设计原则（沿用旧 SOP §4）：
+骨架见 [template/](template/)（三个 .tpl）。设计原则：
 
 - **叙述式，非字段填表**：不用旧三层图谱写死字段（scopes/participants/uses_semantic_object/constrained_by/has_decision 表格）。跨网元 participants、核心机制、语义对象——融入叙述散文。
 - **配置流程只在 CS，决策点/约束不限层**：BD/NS 不设「配置与协同」段；但「决策点」「约束」可在 BD/NS/CS 任意层（哪里有就记哪里）。
@@ -169,4 +169,3 @@ business 的 `## 边` 只指向 **task 层动态对象 + 业务层同族对象**
 - 骨架：[template/](template/)（business_domain / network_scenario / configuration_solution）
 - 核查：[check.md](check.md)
 - 命名/ID/存储统一约定：见顶层 [conventions/命名规范-建议](../conventions/命名规范-建议.md)（业务 = 跨 NF 类，2 段 ID）
-- 旧 SOP（构建流程出处，已被本文件吸收）：`assets/business/业务层级构建SOP.md`（历史参考，不再维护）
