@@ -72,7 +72,7 @@
             v-model="username"
             class="field-input"
             type="text"
-            placeholder="admin"
+            placeholder="用户名"
             autofocus
             autocomplete="username"
           />

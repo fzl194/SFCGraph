@@ -8,11 +8,11 @@
       <div class="ts-controls">
         <div class="days-tabs">
           <button
-            v-for="d in [7, 30, 90]"
+            v-for="d in [1, 7, 30, 90]"
             :key="d"
             :class="['days-tab', { 'days-tab--active': days === d }]"
             @click="days = d; load()"
-          >近 {{ d }} 天</button>
+          >{{ d === 1 ? '今天' : `近 ${d} 天` }}</button>
         </div>
         <span class="ts-total">共 {{ formatNum(stats?.total ?? 0) }} 次取用</span>
       </div>
@@ -99,18 +99,16 @@
         </div>
       </div>
 
-      <!-- 时间趋势（按小时折线；≥1 点即画，单点显示圆点） -->
+      <!-- 时间趋势（按小时，echarts 圆滑曲线 + Y 轴 + tooltip） -->
       <div class="ts-block ts-block-wide">
         <div class="block-title">时间趋势（按小时）</div>
-        <svg v-if="stats.timeline.length >= 1" class="trend" :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="none">
-          <polyline v-if="stats.timeline.length > 1" :points="linePoints" fill="none" :stroke="accent" stroke-width="2" />
-          <circle v-for="(p, i) in trendDots" :key="i" :cx="p.x" :cy="p.y" r="2.5" :fill="accent" />
-        </svg>
+        <v-chart
+          v-if="stats.timeline.length >= 1"
+          class="trend-chart"
+          :option="chartOption"
+          autoresize
+        />
         <div v-else class="trend-empty">暂无取用记录</div>
-        <div v-if="stats.timeline.length >= 1" class="trend-axis">
-          <span>{{ stats.timeline[0]?.date ?? '' }}</span>
-          <span>{{ stats.timeline[stats.timeline.length - 1]?.date ?? '' }}</span>
-        </div>
       </div>
     </div>
   </section>
@@ -118,15 +116,18 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
+import VChart from 'vue-echarts'
+import { use } from 'echarts/core'
+import { CanvasRenderer } from 'echarts/renderers'
+import { LineChart } from 'echarts/charts'
+import { GridComponent, TooltipComponent } from 'echarts/components'
 import { fetchTelemetryStats, type TelemetryStats } from '../api'
 
+use([CanvasRenderer, LineChart, GridComponent, TooltipComponent])
+
 const stats = ref<TelemetryStats | null>(null)
-const days = ref(30)
+const days = ref(1) // 默认今天
 const err = ref('')
-// 与设计 token --accent 同色，避免硬编码（SVG stroke 需具体值，从 CSS 变量读取）
-const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#4f46e5'
-const W = 600
-const H = 120
 
 const TYPE_LABELS: Record<string, string> = {
   MMLCommand: '命令', ConfigObject: '配置对象', Feature: '特性', License: 'License',
@@ -148,29 +149,47 @@ const typeRows = computed(() => {
   return entries.map(([type, count]) => ({ type, count, pct: Math.round((count / max) * 100) }))
 })
 
-const linePoints = computed(() => {
-  if (!stats.value || stats.value.timeline.length === 0) return ''
-  const tl = stats.value.timeline
-  const max = Math.max(...tl.map((p) => p.count), 1)
-  const n = tl.length
-  return tl
-    .map((p, i) => {
-      const x = n === 1 ? W / 2 : (i / (n - 1)) * W
-      const y = H - (p.count / max) * (H - 10) - 5
-      return `${x.toFixed(1)},${y.toFixed(1)}`
-    })
-    .join(' ')
-})
-
-const trendDots = computed(() => {
-  if (!stats.value || stats.value.timeline.length === 0) return []
-  const tl = stats.value.timeline
-  const max = Math.max(...tl.map((p) => p.count), 1)
-  const n = tl.length
-  return tl.map((p, i) => ({
-    x: n === 1 ? W / 2 : (i / (n - 1)) * W,
-    y: H - (p.count / max) * (H - 10) - 5,
-  }))
+// echarts 配置：圆滑曲线（smooth）+ 面积渐变 + X/Y 轴 + tooltip
+const chartOption = computed(() => {
+  const tl = stats.value?.timeline ?? []
+  return {
+    grid: { left: 40, right: 18, top: 18, bottom: 30 },
+    tooltip: { trigger: 'axis' },
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: tl.map((p) => p.date),
+      axisLabel: { fontSize: 10, color: '#a8a29e', hideOverlap: true },
+      axisLine: { lineStyle: { color: '#e7e5e4' } },
+      axisTick: { show: false },
+    },
+    yAxis: {
+      type: 'value',
+      minInterval: 1,
+      axisLabel: { fontSize: 10, color: '#a8a29e' },
+      splitLine: { lineStyle: { color: '#efeeec' } },
+    },
+    series: [
+      {
+        type: 'line',
+        smooth: true,
+        data: tl.map((p) => p.count),
+        symbol: 'circle',
+        symbolSize: 5,
+        lineStyle: { color: '#4f46e5', width: 2 },
+        itemStyle: { color: '#4f46e5' },
+        areaStyle: {
+          color: {
+            type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
+            colorStops: [
+              { offset: 0, color: 'rgba(79,70,229,0.22)' },
+              { offset: 1, color: 'rgba(79,70,229,0.02)' },
+            ],
+          },
+        },
+      },
+    ],
+  }
 })
 
 async function load(): Promise<void> {
@@ -211,7 +230,7 @@ onMounted(load)
 .ts-sub {
   font-size: 12.5px;
   color: var(--text-muted);
-  margin: 2px 0 0;
+  margin: 2px  0 0;
 }
 .ts-controls {
   display: flex;
@@ -234,7 +253,6 @@ onMounted(load)
   grid-column: 1 / -1;
 }
 
-/* 每个区块卡片化（统一 padding/border/radius，强调独立感） */
 .ts-block {
   padding: var(--space-4);
   background: var(--bg);
@@ -246,13 +264,11 @@ onMounted(load)
   border-color: var(--border);
   background: var(--bg-elev);
 }
-
-/* by_user / by_operator：用左侧色条区分，避免视觉重复 */
 .ts-block--user {
   border-left: 3px solid var(--accent);
 }
 .ts-block--operator {
-  border-left: 3px solid #0891b2; /* cyan-600，与 StatsView 任务层/特性层配色同源 */
+  border-left: 3px solid #0891b2;
 }
 
 .block-title {
@@ -289,7 +305,6 @@ onMounted(load)
   gap: 8px;
   font-size: 12.5px;
 }
-/* by_user / by_operator 简单 k:v 行（无进度条） */
 .type-row--kv {
   grid-template-columns: 1fr auto;
   padding: 3px 0;
@@ -355,14 +370,14 @@ onMounted(load)
   color: var(--text);
   font-weight: 600;
 }
-.trend {
+
+/* echarts 时间趋势 */
+.trend-chart {
   width: 100%;
-  height: 120px;
-  background: var(--bg-sunken);
-  border-radius: var(--radius-sm);
+  height: 200px;
 }
 .trend-empty {
-  height: 120px;
+  height: 200px;
   display: grid;
   place-items: center;
   font-size: 12px;
@@ -370,15 +385,7 @@ onMounted(load)
   background: var(--bg-sunken);
   border-radius: var(--radius-sm);
 }
-.trend-axis {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  color: var(--text-faint);
-  margin-top: 4px;
-}
 
-/* 区块内 mini 空态（by_user / by_operator 无记录） */
 .block-mini-empty {
   font-size: 11.5px;
   color: var(--text-faint);
@@ -386,7 +393,6 @@ onMounted(load)
   text-align: center;
 }
 
-/* 整体空态：图标 + 主副文案（不再光秃秃一行字） */
 .ts-empty {
   display: flex;
   flex-direction: column;
@@ -433,6 +439,7 @@ onMounted(load)
     grid-template-columns: 1fr;
   }
 }
+
 .days-tabs {
   display: inline-flex;
   background: var(--bg-sunken);

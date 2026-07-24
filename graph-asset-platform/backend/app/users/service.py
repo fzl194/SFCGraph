@@ -6,14 +6,15 @@ from typing import Optional
 
 from . import store
 
-_KEY_ALPHABET = string.ascii_letters + string.digits  # 大小写字母 + 数字（无易混 0/O/1/l）
-_KEY_LENGTH = 8
+_KEY_PREFIX = "sk-"
+_KEY_ALPHABET = string.ascii_letters + string.digits + "-_"  # 字母数字 + 少量特殊符号
+_KEY_BODY_LEN = 18
 
 
 def gen_key() -> str:
-    """生成全局唯一 key：8 位字母数字随机（撞则重试）。"""
+    """生成全局唯一 key：sk- 前缀 + 18 位（字母数字+少量符号），撞则重试。"""
     while True:
-        k = "".join(secrets.choice(_KEY_ALPHABET) for _ in range(_KEY_LENGTH))
+        k = _KEY_PREFIX + "".join(secrets.choice(_KEY_ALPHABET) for _ in range(_KEY_BODY_LEN))
         if store.find_by_key(k) is None:
             return k
 
