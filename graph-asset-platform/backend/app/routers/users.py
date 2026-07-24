@@ -1,0 +1,85 @@
+"""users router：登录（公开）+ 用户管理（is_admin）。
+
+权限由中间件统一校验（Task 5）：/users/login 豁免；其他 /users* 需 is_admin。
+本 Task 先实现端点逻辑，权限依赖 Task 5 中间件。
+"""
+from typing import Optional
+
+from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel
+
+from ..users import service
+from ..users import store
+
+router = APIRouter()
+
+
+class LoginIn(BaseModel):
+    username: str
+    key: str
+
+
+class UserCreateIn(BaseModel):
+    username: str
+    can_frontend: bool = False
+    can_skill: bool = False
+    is_admin: bool = False
+
+
+class UserPatchIn(BaseModel):
+    can_frontend: Optional[bool] = None
+    can_skill: Optional[bool] = None
+    is_admin: Optional[bool] = None
+    reset_key: bool = False
+
+
+def _safe(u: dict) -> dict:
+    return {k: u.get(k) for k in ("username", "key", "can_frontend", "can_skill", "is_admin", "created_at")}
+
+
+@router.post("/users/login")
+def login(req: LoginIn):
+    """登录：username+key 匹配且 can_frontend → 返用户。公开（中间件豁免）。"""
+    u = service.authenticate(req.key)
+    if u is None or u.get("username") != req.username:
+        raise HTTPException(401, "用户名或 KEY 错误")
+    if not service.check_perm(u, "frontend"):
+        raise HTTPException(403, "无前端访问权限")
+    return _safe(u)
+
+
+@router.get("/users")
+def list_users():
+    return [_safe(u) for u in store.list_users()]
+
+
+@router.post("/users")
+def create_user(req: UserCreateIn):
+    try:
+        return _safe(service.create_user(req.username, req.can_frontend, req.can_skill, req.is_admin))
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+
+
+@router.patch("/users/{username}")
+def update_user(username: str, req: UserPatchIn):
+    u = store.find_by_name(username)
+    if u is None:
+        raise HTTPException(404, "用户不存在")
+    if req.reset_key:
+        service.reset_key(username)
+    if any(v is not None for v in (req.can_frontend, req.can_skill, req.is_admin)):
+        service.set_perms(
+            username,
+            req.can_frontend if req.can_frontend is not None else u["can_frontend"],
+            req.can_skill if req.can_skill is not None else u["can_skill"],
+            req.is_admin if req.is_admin is not None else u["is_admin"],
+        )
+    return _safe(store.find_by_name(username))
+
+
+@router.delete("/users/{username}")
+def delete_user(username: str):
+    if not service.delete_user(username):
+        raise HTTPException(404, "用户不存在")
+    return {"ok": True}

@@ -16,6 +16,7 @@ from .routers import assets as assets_router
 from .routers import objects as objects_router
 from .routers import telemetry as telemetry_router
 from .routers import tests as tests_router
+from .routers import users as users_router
 from .service import get_service
 from .tests.service import get_test_service
 
@@ -57,6 +58,7 @@ app.include_router(assets_router.router, prefix="/api/v1")
 app.include_router(objects_router.router, prefix="/api/v1")
 app.include_router(telemetry_router.router, prefix="/api/v1")
 app.include_router(tests_router.router, prefix="/api/v1")
+app.include_router(users_router.router, prefix="/api/v1")
 
 # 前端静态托管（dist 可能尚未构建，不存在则不挂载）
 _dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
