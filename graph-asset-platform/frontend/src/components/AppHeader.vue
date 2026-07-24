@@ -49,6 +49,7 @@
 <script setup lang="ts">
 import { computed, h, onMounted, ref } from 'vue'
 import { stats, type Stats } from '../api'
+import { getSession } from '../auth'
 
 const globalStats = ref<Stats | null>(null)
 
@@ -157,12 +158,33 @@ const TestIcon = () =>
     ],
   )
 
-const tabs = [
-  { to: '/', label: '图谱浏览', icon: GraphIcon },
-  { to: '/stats', label: '统计', icon: StatsIcon },
-  { to: '/upload', label: '上传', icon: UploadIcon },
-  { to: '/tests', label: '测试', icon: TestIcon },
-]
+const UserIcon = () =>
+  h(
+    'svg',
+    { width: '15', height: '15', viewBox: '0 0 24 24', fill: 'none' },
+    [
+      h('circle', { cx: '12', cy: '8', r: '3.2', stroke: 'currentColor', 'stroke-width': '1.7' }),
+      h('path', {
+        d: 'M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6',
+        stroke: 'currentColor',
+        'stroke-width': '1.7',
+        'stroke-linecap': 'round',
+      }),
+    ],
+  )
+
+const tabs = computed(() => {
+  const base = [
+    { to: '/', label: '图谱浏览', icon: GraphIcon },
+    { to: '/stats', label: '统计', icon: StatsIcon },
+    { to: '/upload', label: '上传', icon: UploadIcon },
+    { to: '/tests', label: '测试', icon: TestIcon },
+  ]
+  if (getSession()?.is_admin) {
+    base.splice(3, 0, { to: '/users', label: '用户', icon: UserIcon })
+  }
+  return base
+})
 
 const totalObjects = computed(() =>
   globalStats.value

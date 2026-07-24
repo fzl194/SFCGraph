@@ -74,6 +74,46 @@ export interface TelemetryStats {
 export const fetchTelemetryStats = (days = 30): Promise<TelemetryStats> =>
   _req<TelemetryStats>(`${BASE}/telemetry/stats?days=${days}`)
 
+// ---------- 用户管理（admin）----------
+export interface UserRow {
+  username: string
+  key: string
+  can_frontend: boolean
+  can_skill: boolean
+  is_admin: boolean
+  created_at?: string
+}
+
+export const listUsers = (): Promise<UserRow[]> => _req(`${BASE}/users`)
+
+export const createUser = (b: {
+  username: string
+  can_frontend?: boolean
+  can_skill?: boolean
+  is_admin?: boolean
+}): Promise<UserRow> =>
+  _req(`${BASE}/users`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(b),
+  })
+
+export const updateUser = (name: string, b: Record<string, unknown>): Promise<UserRow> =>
+  _req(`${BASE}/users/${encodeURIComponent(name)}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(b),
+  })
+
+export const deleteUser = (name: string): Promise<{ ok: boolean }> =>
+  _req(`${BASE}/users/${encodeURIComponent(name)}`, { method: 'DELETE' })
+
+export const userActivity = (
+  name: string,
+  days = 30,
+): Promise<{ ts: string; endpoint: string; caller: string }[]> =>
+  _req(`${BASE}/users/${encodeURIComponent(name)}/activity?days=${days}`)
+
 function qs(p: Record<string, string | number | undefined>): string {
   const entries = Object.entries(p).filter(([, v]) => v !== undefined && v !== '')
   if (entries.length === 0) return ''

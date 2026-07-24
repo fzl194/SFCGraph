@@ -2,8 +2,8 @@
   <section class="telemetry-section stagger-in">
     <header class="ts-head">
       <div>
-        <h2 class="ts-title">知识取用频次</h2>
-        <p class="ts-sub">SKILL 取用 /domains + /md 的对象级统计</p>
+        <h2 class="ts-title">SKILL 取用频次</h2>
+        <p class="ts-sub">只统计 SKILL 的 /domains + /md（按对象）</p>
       </div>
       <div class="ts-controls">
         <el-select v-model="days" size="small" @change="load">
@@ -46,6 +46,17 @@
             <span class="top-count mono">{{ formatNum(t.count) }}</span>
           </li>
         </ol>
+      </div>
+
+      <!-- 按用户（SKILL） -->
+      <div class="ts-block">
+        <div class="block-title">按用户（SKILL）</div>
+        <div class="type-rows">
+          <div v-for="(c, u) in stats.by_user" :key="u" class="type-row">
+            <span class="type-label">{{ u }}</span>
+            <span class="type-count mono">{{ formatNum(c) }}</span>
+          </div>
+        </div>
       </div>
 
       <!-- 时间趋势（SVG 折线；数据点 <2 时退化提示） -->
