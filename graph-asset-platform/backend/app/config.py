@@ -14,3 +14,6 @@ API_KEY = os.environ.get("GAP_API_KEY", "")
 # —— 运营打点（jsonl，对象级）——
 TELEMETRY_DIR = DATA_DIR / "telemetry"
 TELEMETRY_FILE = TELEMETRY_DIR / "access.jsonl"
+
+# —— 用户体系（多用户，明文 KEY，不入 git）——
+USERS_FILE = DATA_DIR / "users.json"
