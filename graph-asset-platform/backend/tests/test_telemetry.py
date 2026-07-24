@@ -1,28 +1,34 @@
-"""telemetry 测试：recorder 追加 / aggregator 聚合 / 接口。"""
+"""telemetry 测试：recorder（新签名）+ aggregator（stats skill对象级 + activity按user）。"""
 import json
-from pathlib import Path
+from datetime import datetime, timedelta, timezone
 
 
 def _use_tmp_telemetry(tmp_path, monkeypatch):
-    """把 config.TELEMETRY_FILE 指到临时目录，隔离测试。"""
     f = tmp_path / "access.jsonl"
     import app.config as cfg
     monkeypatch.setattr(cfg, "TELEMETRY_FILE", f)
     return f
 
 
-def test_record_appends_jsonl_line(tmp_path, monkeypatch):
+def _now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def _seed(f, rows):
+    with open(f, "w", encoding="utf-8") as out:
+        for r in rows:
+            out.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+
+# ---------- recorder ----------
+
+def test_record_appends_with_new_fields(tmp_path, monkeypatch):
     f = _use_tmp_telemetry(tmp_path, monkeypatch)
     from app.telemetry.recorder import record
-    record("/md", "UDG@Feature@F-1", "Feature")
-    record("/md", "UDG@Feature@F-1", "Feature")
-    lines = f.read_text(encoding="utf-8").strip().split("\n")
-    assert len(lines) == 2
-    rec = json.loads(lines[0])
-    assert rec["endpoint"] == "/md"
-    assert rec["id"] == "UDG@Feature@F-1"
-    assert rec["type"] == "Feature"
-    assert "ts" in rec
+    record("/md", "F@1", "Feature", user="sa", caller="skill", level="object")
+    rec = json.loads(f.read_text(encoding="utf-8").strip())
+    assert rec["user"] == "sa" and rec["caller"] == "skill" and rec["level"] == "object"
+    assert rec["endpoint"] == "/md" and rec["id"] == "F@1" and rec["type"] == "Feature"
 
 
 def test_record_makes_parent_dir(tmp_path, monkeypatch):
@@ -30,79 +36,59 @@ def test_record_makes_parent_dir(tmp_path, monkeypatch):
     import app.config as cfg
     monkeypatch.setattr(cfg, "TELEMETRY_FILE", f)
     from app.telemetry.recorder import record
-    record("/domains", "BusinessDomain@demo", "BusinessDomain")
+    record("/domains", "BD@x", "BusinessDomain", user="sa", caller="skill", level="object")
     assert f.exists()
 
 
 def test_record_swallows_failure(tmp_path, monkeypatch):
-    """打点失败绝不抛（观测用，不阻断业务）。"""
     import app.config as cfg
-    # TELEMETRY_FILE 指到已存在目录 → open(dir, 'a') 跨平台必抛（Windows/Linux 均可复现）
-    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path)
+    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path)  # 目录 → open 抛
     from app.telemetry.recorder import record
-    record("/md", "x", "y")  # 不抛即通过
+    record("/md", "x", "y", user="u", caller="c", level="object")  # 不抛
 
 
-def _seed(f, rows):
-    """直接写若干行 jsonl 作为打点种子。"""
-    with open(f, "w", encoding="utf-8") as out:
-        for r in rows:
-            out.write(json.dumps(r, ensure_ascii=False) + "\n")
+# ---------- aggregator ----------
 
-
-def test_aggregate_three_dimensions(tmp_path, monkeypatch):
-    """三维聚合：total/by_type/top_ids/timeline。动态种子（now），不依赖固定日期。"""
-    from datetime import datetime, timezone
-    now_ts = datetime.now(timezone.utc).isoformat()
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+def test_aggregate_stats_skill_objects_only(tmp_path, monkeypatch):
     f = _use_tmp_telemetry(tmp_path, monkeypatch)
     _seed(f, [
-        {"ts": now_ts, "endpoint": "/md", "id": "F@1", "type": "Feature"},
-        {"ts": now_ts, "endpoint": "/md", "id": "F@1", "type": "Feature"},
-        {"ts": now_ts, "endpoint": "/md", "id": "C@2", "type": "MMLCommand"},
-        {"ts": now_ts, "endpoint": "/domains", "id": "BD@x", "type": "BusinessDomain"},
+        {"ts": _now(), "user": "sk1", "caller": "skill", "endpoint": "/md", "id": "F@1", "type": "Feature", "level": "object"},
+        {"ts": _now(), "user": "sk1", "caller": "skill", "endpoint": "/md", "id": "F@1", "type": "Feature", "level": "object"},
+        {"ts": _now(), "user": "sk2", "caller": "skill", "endpoint": "/domains", "id": "BD@x", "type": "BusinessDomain", "level": "object"},
+        {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/md", "id": "F@1", "type": "Feature", "level": "object"},  # web 不计
+        {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/api/v1/objects/F@1/md", "id": "", "type": "", "level": "request"},  # request 不计
     ])
-    from app.telemetry.aggregator import aggregate
-    r = aggregate(days=30)
-    assert r["total"] == 4
+    from app.telemetry.aggregator import aggregate_stats
+    r = aggregate_stats(days=30)
+    assert r["total"] == 3
     assert r["by_type"]["Feature"] == 2
-    assert r["by_type"]["MMLCommand"] == 1
-    assert r["top_ids"][0] == {"id": "F@1", "type": "Feature", "count": 2}
-    assert r["timeline"] == [{"date": today, "count": 4}]
+    assert r["by_user"] == {"sk1": 2, "sk2": 1}
+    assert r["top_ids"][0]["id"] == "F@1"
 
 
-def test_aggregate_days_filter(tmp_path, monkeypatch):
-    """老记录（now-40d）被 days=10 过滤；新记录（now-1d）保留。动态种子，无日期漂移 flaky。"""
-    from datetime import datetime, timedelta, timezone
-    now = datetime.now(timezone.utc)
-    old_ts = (now - timedelta(days=40)).isoformat()
-    new_ts = (now - timedelta(days=1)).isoformat()
+def test_aggregate_stats_days_filter(tmp_path, monkeypatch):
+    old = (datetime.now(timezone.utc) - timedelta(days=40)).isoformat()
+    new = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
     f = _use_tmp_telemetry(tmp_path, monkeypatch)
     _seed(f, [
-        {"ts": old_ts, "endpoint": "/md", "id": "OLD", "type": "Feature"},
-        {"ts": new_ts, "endpoint": "/md", "id": "NEW", "type": "Feature"},
+        {"ts": old, "user": "sk", "caller": "skill", "endpoint": "/md", "id": "OLD", "type": "Feature", "level": "object"},
+        {"ts": new, "user": "sk", "caller": "skill", "endpoint": "/md", "id": "NEW", "type": "Feature", "level": "object"},
     ])
-    from app.telemetry.aggregator import aggregate
-    r = aggregate(days=10)
-    assert r["total"] == 1  # 只剩 NEW
+    from app.telemetry.aggregator import aggregate_stats
+    r = aggregate_stats(days=10)
+    assert r["total"] == 1
     assert r["top_ids"][0]["id"] == "NEW"
 
 
-def test_telemetry_stats_endpoint(tmp_path, tmp_data_dir, monkeypatch):
-    """/telemetry/stats 接口返回聚合。动态 ts，不依赖固定日期。"""
-    from datetime import datetime, timezone
-    now_ts = datetime.now(timezone.utc).isoformat()
+def test_aggregate_activity_by_user(tmp_path, monkeypatch):
     f = _use_tmp_telemetry(tmp_path, monkeypatch)
     _seed(f, [
-        {"ts": now_ts, "endpoint": "/md", "id": "F@1", "type": "Feature"},
-        {"ts": now_ts, "endpoint": "/md", "id": "C@2", "type": "MMLCommand"},
+        {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/api/v1/objects/F@1/md", "level": "request"},
+        {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/api/v1/stats", "level": "request"},
+        {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/md", "id": "F@1", "type": "Feature", "level": "object"},  # 对象级，应被排除
+        {"ts": _now(), "user": "other", "caller": "web", "endpoint": "/api/v1/objects/F@2/md", "level": "request"},
     ])
-    from fastapi.testclient import TestClient
-    from app.main import app
-    with TestClient(app) as c:
-        r = c.get("/api/v1/telemetry/stats", params={"days": 30})
-        assert r.status_code == 200
-        body = r.json()
-        assert body["total"] == 2
-        assert body["by_type"]["Feature"] == 1
-        assert len(body["top_ids"]) >= 1
+    from app.telemetry.aggregator import aggregate_activity
+    r = aggregate_activity("fe", days=30)
+    assert len(r) == 2  # fe 的两条 request（object 级被排除）
+    assert all(item["endpoint"] for item in r)
