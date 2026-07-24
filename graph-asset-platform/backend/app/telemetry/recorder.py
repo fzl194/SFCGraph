@@ -30,7 +30,7 @@ def record(endpoint: str, id_: str = "", type_: str = "", *, user: str = "", cal
             "type": type_,
             "level": level,
         }
-        path = Path(config.TELEMETRY_FILE)
+        path = Path(config.TELEMETRY_OBJECTS_FILE if level == "object" else config.TELEMETRY_REQUESTS_FILE)
         path.parent.mkdir(parents=True, exist_ok=True)
         with _lock:
             with open(path, "a", encoding="utf-8") as f:

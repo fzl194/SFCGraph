@@ -105,16 +105,17 @@ def test_skill_user_cannot_import_nor_tests(tmp_path, monkeypatch, tmp_data_dir)
 
 
 def test_x_user_id_recorded_as_operator(tmp_path, monkeypatch, tmp_data_dir):
-    """SKILL 调用带 X-User-Id → 打点 operator 记工号。"""
+    """SKILL 调用带 X-User-Id → 打点 operator 记工号（request 级写到 requests.jsonl）。"""
     _seed(tmp_path, monkeypatch, [SK])
     import app.config as cfg
-    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path / "access.jsonl")
+    monkeypatch.setattr(cfg, "TELEMETRY_REQUESTS_FILE", tmp_path / "requests.jsonl")
+    monkeypatch.setattr(cfg, "TELEMETRY_OBJECTS_FILE", tmp_path / "objects.jsonl")
     import json
     from app.main import app
     with TestClient(app) as c:
         c.post("/api/v1/md", json={"ids": ["x"]}, headers={"X-API-Key": "gap_sk", "X-User-Id": "EMP1024"})
-    reqs = [json.loads(l) for l in (tmp_path / "access.jsonl").read_text(encoding="utf-8").strip().split("\n")
-            if json.loads(l).get("level") == "request"]
+    lines = [l for l in (tmp_path / "requests.jsonl").read_text(encoding="utf-8").strip().split("\n") if l]
+    reqs = [json.loads(l) for l in lines if json.loads(l).get("level") == "request"]
     md_req = [r for r in reqs if r["endpoint"] == "/api/v1/md"]
     assert md_req and md_req[0]["operator"] == "EMP1024"
     assert md_req[0]["user"] == "sk"

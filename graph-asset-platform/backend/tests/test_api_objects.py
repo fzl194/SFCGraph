@@ -397,14 +397,15 @@ def test_domains_endpoint_returns_business_domain_md(tmp_data_dir, monkeypatch):
 
 
 def test_md_endpoint_records_telemetry(tmp_data_dir, monkeypatch, tmp_path):
-    """/md 调用 → 每个成功 id 追加一条对象级（level=object）打点。"""
+    """/md 调用 → 每个成功 id 追加一条对象级（level=object）打点到 objects.jsonl。"""
     import app.config as cfg
-    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path / "access.jsonl")
+    monkeypatch.setattr(cfg, "TELEMETRY_OBJECTS_FILE", tmp_path / "objects.jsonl")
+    monkeypatch.setattr(cfg, "TELEMETRY_REQUESTS_FILE", tmp_path / "requests.jsonl")
     _setup(tmp_data_dir, monkeypatch, {"a.md": CMD_EDGES, "b.md": CFG})
     with TestClient(app) as c:
         c.post("/api/v1/md", json={"ids": ["alpha@MMLCommand@ADD DEMO", "alpha@ConfigObject@DEMO_OBJ"]}, headers=H)
     import json
-    lines = (tmp_path / "access.jsonl").read_text(encoding="utf-8").strip().split("\n")
+    lines = [l for l in (tmp_path / "objects.jsonl").read_text(encoding="utf-8").strip().split("\n") if l]
     objs = [json.loads(l) for l in lines if json.loads(l).get("level") == "object"]
     types = {o["type"] for o in objs}
     assert types == {"MMLCommand", "ConfigObject"}
@@ -412,14 +413,15 @@ def test_md_endpoint_records_telemetry(tmp_data_dir, monkeypatch, tmp_path):
 
 
 def test_domains_endpoint_records_telemetry(tmp_data_dir, monkeypatch, tmp_path):
-    """/domains 调用 → 每个域 id 追加一条对象级打点。"""
+    """/domains 调用 → 每个域 id 追加一条对象级打点到 objects.jsonl。"""
     import app.config as cfg
-    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path / "access.jsonl")
+    monkeypatch.setattr(cfg, "TELEMETRY_OBJECTS_FILE", tmp_path / "objects.jsonl")
+    monkeypatch.setattr(cfg, "TELEMETRY_REQUESTS_FILE", tmp_path / "requests.jsonl")
     _setup(tmp_data_dir, monkeypatch, {"bd.md": _BD, "ns.md": _NS})
     with TestClient(app) as c:
         c.post("/api/v1/domains", headers=H)
     import json
-    lines = (tmp_path / "access.jsonl").read_text(encoding="utf-8").strip().split("\n")
+    lines = [l for l in (tmp_path / "objects.jsonl").read_text(encoding="utf-8").strip().split("\n") if l]
     objs = [json.loads(l) for l in lines if json.loads(l).get("level") == "object"]
     assert len(objs) == 1
     rec = objs[0]
