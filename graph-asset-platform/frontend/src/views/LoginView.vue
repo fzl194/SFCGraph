@@ -85,7 +85,7 @@
             v-model="key"
             class="field-input"
             type="password"
-            placeholder="gap_…"
+            placeholder="访问密钥"
             autocomplete="current-password"
           />
         </label>

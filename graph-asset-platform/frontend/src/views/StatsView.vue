@@ -4,9 +4,7 @@
       <header class="page-head stagger-in">
         <div>
           <h1 class="page-title">资产统计</h1>
-          <p class="page-sub">
-            按图谱层级展示对象计数。命令层 = 命令 + 配置对象；特性层 = 特性 + License；任务层 / 业务层 独立。
-          </p>
+          <p class="page-sub">按图谱层级聚合对象与关系边计数</p>
         </div>
         <el-button :icon="Refresh" :loading="loading" text @click="load">
           刷新

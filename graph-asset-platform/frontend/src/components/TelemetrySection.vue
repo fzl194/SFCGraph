@@ -15,9 +15,21 @@
       </div>
     </header>
 
-    <div v-if="err" class="ts-err">{{ err }}</div>
+    <div v-if="err" class="ts-err">
+      <svg class="state-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+        <path d="M12 7v6m0 3v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+      <span class="mono">{{ err }}</span>
+    </div>
     <div v-else-if="!stats || stats.total === 0" class="ts-empty">
-      暂无取用记录（SKILL 调用 /domains 或 /md 后此处展示）。
+      <svg class="state-icon" width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <path d="M3 14a9 9 0 1 1 18 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+        <rect x="9" y="13" width="6" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+        <path d="M10.5 16h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+      <div class="empty-title">暂无取用记录</div>
+      <div class="empty-sub">SKILL 调用 /domains 或 /md 后，取用频次将在此聚合展示</div>
     </div>
 
     <div v-else class="ts-grid">
@@ -49,24 +61,38 @@
       </div>
 
       <!-- 按用户（SKILL） -->
-      <div class="ts-block">
-        <div class="block-title">按用户（SKILL）</div>
+      <div class="ts-block ts-block--user">
+        <div class="block-title">
+          <svg class="block-ic" width="13" height="13" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7" />
+            <path d="M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+          </svg>
+          按用户（SKILL）
+        </div>
         <div class="type-rows">
-          <div v-for="(c, u) in stats.by_user" :key="u" class="type-row">
+          <div v-for="(c, u) in stats.by_user" :key="u" class="type-row type-row--kv">
             <span class="type-label">{{ u }}</span>
             <span class="type-count mono">{{ formatNum(c) }}</span>
           </div>
+          <div v-if="!Object.keys(stats.by_user).length" class="block-mini-empty">无记录</div>
         </div>
       </div>
 
       <!-- 按工号（SKILL 使用者） -->
-      <div class="ts-block">
-        <div class="block-title">按工号（SKILL 使用者）</div>
+      <div class="ts-block ts-block--operator">
+        <div class="block-title">
+          <svg class="block-ic" width="13" height="13" viewBox="0 0 24 24" fill="none">
+            <rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.7" />
+            <path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+          按工号（SKILL 使用者）
+        </div>
         <div class="type-rows">
-          <div v-for="(c, op) in stats.by_operator" :key="op" class="type-row">
+          <div v-for="(c, op) in stats.by_operator" :key="op" class="type-row type-row--kv">
             <span class="type-label">{{ op }}</span>
             <span class="type-count mono">{{ formatNum(c) }}</span>
           </div>
+          <div v-if="!Object.keys(stats.by_operator).length" class="block-mini-empty">无记录</div>
         </div>
       </div>
 
@@ -94,7 +120,8 @@ import { fetchTelemetryStats, type TelemetryStats } from '../api'
 const stats = ref<TelemetryStats | null>(null)
 const days = ref(30)
 const err = ref('')
-const accent = '#4f46e5'
+// 与设计 token --accent 同色，避免硬编码（SVG stroke 需具体值，从 CSS 变量读取）
+const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#4f46e5'
 const W = 600
 const H = 120
 
@@ -184,19 +211,55 @@ onMounted(load)
 .ts-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 .ts-block-wide {
   grid-column: 1 / -1;
 }
+
+/* 每个区块卡片化（统一 padding/border/radius，强调独立感） */
+.ts-block {
+  padding: var(--space-4);
+  background: var(--bg);
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+.ts-block:hover {
+  border-color: var(--border);
+  background: var(--bg-elev);
+}
+
+/* by_user / by_operator：用左侧色条区分，避免视觉重复 */
+.ts-block--user {
+  border-left: 3px solid var(--accent);
+}
+.ts-block--operator {
+  border-left: 3px solid #0891b2; /* cyan-600，与 StatsView 任务层/特性层配色同源 */
+}
+
 .block-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 12px;
   font-weight: 600;
   color: var(--text-faint);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
 }
+.block-ic {
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+.ts-block--user .block-ic {
+  color: var(--accent);
+}
+.ts-block--operator .block-ic {
+  color: #0891b2;
+}
+
 .type-rows {
   display: flex;
   flex-direction: column;
@@ -209,6 +272,11 @@ onMounted(load)
   gap: 8px;
   font-size: 12.5px;
 }
+/* by_user / by_operator 简单 k:v 行（无进度条） */
+.type-row--kv {
+  grid-template-columns: 1fr auto;
+  padding: 3px 0;
+}
 .type-bar-wrap {
   height: 8px;
   background: var(--bg-sunken);
@@ -219,11 +287,19 @@ onMounted(load)
   height: 100%;
   background: var(--accent);
   border-radius: 999px;
+  transition: width var(--dur) var(--ease);
 }
 .type-count {
   text-align: right;
   color: var(--text);
   font-weight: 600;
+}
+.type-label {
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 .top-list {
   list-style: none;
@@ -284,13 +360,60 @@ onMounted(load)
   color: var(--text-faint);
   margin-top: 4px;
 }
-.ts-empty,
-.ts-err {
-  font-size: 13px;
-  color: var(--text-muted);
-  padding: var(--space-3) 0;
+
+/* 区块内 mini 空态（by_user / by_operator 无记录） */
+.block-mini-empty {
+  font-size: 11.5px;
+  color: var(--text-faint);
+  padding: var(--space-2) 0;
+  text-align: center;
 }
+
+/* 整体空态：图标 + 主副文案（不再光秃秃一行字） */
+.ts-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+}
+.ts-empty .state-icon {
+  color: var(--text-faint);
+  opacity: 0.55;
+  margin-bottom: var(--space-1);
+}
+.empty-title {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.empty-sub {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  max-width: 360px;
+  line-height: 1.55;
+}
+
 .ts-err {
-  color: var(--danger, #dc2626);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 12.5px;
+  color: var(--danger);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(220, 38, 38, 0.18);
+  border-radius: var(--radius-sm);
+}
+.ts-err .state-icon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  .ts-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
