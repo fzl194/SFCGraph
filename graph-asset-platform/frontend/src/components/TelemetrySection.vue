@@ -54,9 +54,15 @@
       <div class="ts-block">
         <div class="block-title">热门对象 Top {{ stats.top_ids.length }}</div>
         <ol class="top-list">
-          <li v-for="(t, i) in stats.top_ids" :key="t.id" class="top-item">
+          <li
+            v-for="(t, i) in stats.top_ids"
+            :key="t.id"
+            class="top-item top-item--link"
+            :title="`在图谱中查看 ${t.id}`"
+            @click="goObject(t.id)"
+          >
             <span class="top-rank">{{ i + 1 }}</span>
-            <span class="top-id mono" :title="t.id">{{ t.id }}</span>
+            <span class="top-id mono">{{ t.id }}</span>
             <span class="top-type">{{ typeLabel(t.type) }}</span>
             <span class="top-count mono">{{ formatNum(t.count) }}</span>
           </li>
@@ -116,6 +122,7 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
 import VChart from 'vue-echarts'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
@@ -128,6 +135,12 @@ use([CanvasRenderer, LineChart, GridComponent, TooltipComponent])
 const stats = ref<TelemetryStats | null>(null)
 const days = ref(1) // 默认今天
 const err = ref('')
+const router = useRouter()
+
+// 点热门对象 → 跳图谱浏览页定位该对象（BrowserView 读 ?o=id 自动定位）
+function goObject(id: string): void {
+  router.push({ path: '/', query: { o: id } })
+}
 
 const TYPE_LABELS: Record<string, string> = {
   MMLCommand: '命令', ConfigObject: '配置对象', Feature: '特性', License: 'License',
@@ -347,7 +360,19 @@ onMounted(load)
   align-items: center;
   gap: 8px;
   font-size: 12.5px;
-  padding: 3px 0;
+  padding: 3px 6px;
+  margin: 0 -6px;
+}
+.top-item--link {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background var(--dur-fast) var(--ease);
+}
+.top-item--link:hover {
+  background: var(--accent-soft);
+}
+.top-item--link:hover .top-id {
+  color: var(--accent);
 }
 .top-rank {
   color: var(--text-faint);
