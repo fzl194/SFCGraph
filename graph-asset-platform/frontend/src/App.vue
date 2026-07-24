@@ -1,6 +1,6 @@
 <template>
-  <AppHeader />
-  <main class="app-main">
+  <AppHeader v-if="!isLogin" />
+  <main class="app-main" :class="{ 'app-main--login': isLogin }">
     <router-view v-slot="{ Component }">
       <transition name="view-fade" mode="out-in">
         <component :is="Component" />
@@ -10,9 +10,13 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
+import { useRoute } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
 import { stats, type Stats } from './api'
+
+const route = useRoute()
+const isLogin = computed(() => route.name === 'login')
 
 // 全站 stats（AppHeader chip 用）。挂载时拉一次，上传后由 UploadView 触发刷新。
 const globalStats = ref<Stats | null>(null)
@@ -33,7 +37,10 @@ async function refreshStats(): Promise<void> {
 ;(window as unknown as { __refreshStats?: () => Promise<void> }).__refreshStats =
   refreshStats
 
-onMounted(refreshStats)
+// 登录页不拉 stats（未登录会 401）、不显示顶栏
+onMounted(() => {
+  if (!isLogin.value) refreshStats()
+})
 </script>
 
 <style scoped>
