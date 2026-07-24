@@ -24,7 +24,11 @@ def _need_perm(path: str) -> str:
         return "admin"
     if path in ("/api/v1/domains", "/api/v1/md"):
         return "skill"
-    return "frontend"  # 其他前端用的接口
+    if path.startswith("/api/v1/import") or path.startswith("/api/v1/export"):
+        return "upload"  # 菜单3：上传/导出
+    if path.startswith("/api/v1/tests"):
+        return "test"  # 菜单4：测试子系统
+    return "frontend"  # 其他前端用的接口（/objects /names /stats /subgraph）
 
 
 class AuthMiddleware(BaseHTTPMiddleware):
@@ -42,8 +46,10 @@ class AuthMiddleware(BaseHTTPMiddleware):
             return JSONResponse(status_code=401, content={"detail": "missing or invalid api key"})
 
         caller = "web" if request.headers.get("X-Client") == "web" else "skill"
+        operator = request.headers.get("X-User-Id", "")  # SKILL 调用者工号（前端为空）
         request.state.user = user["username"]
         request.state.caller = caller
+        request.state.operator = operator
 
         if not check_perm(user, _need_perm(path)):
             return JSONResponse(status_code=403, content={"detail": "permission denied"})
@@ -53,7 +59,7 @@ class AuthMiddleware(BaseHTTPMiddleware):
         # 打点①请求级（排除 telemetry 自身避免自循环；login 已豁免不到这）
         if not path.startswith("/api/v1/telemetry"):
             try:
-                record(path, id_=_extract_id(path), type_="", user=user["username"], caller=caller, level="request")
+                record(path, id_=_extract_id(path), type_="", user=user["username"], caller=caller, level="request", operator=operator)
             except Exception as e:  # 观测用，不阻断
                 logger.warning("audit record failed: %s", e)
         return response

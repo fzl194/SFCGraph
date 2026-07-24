@@ -9,7 +9,7 @@ def _seed_users(tmp_path, monkeypatch, users):
     (tmp_path / "users.json").write_text(json.dumps({"users": users}), encoding="utf-8")
 
 
-ADMIN = {"username": "admin", "key": "gap_admin", "can_frontend": True, "can_skill": True, "is_admin": True}
+ADMIN = {"username": "admin", "key": "gap_admin", "can_frontend": True, "can_upload": True, "can_test": True, "can_skill": True, "is_admin": True}
 SKILL_ONLY = {"username": "sa", "key": "gap_sa", "can_skill": True}
 
 

@@ -26,11 +26,22 @@ def test_check_perm_matrix():
     from app.users.service import check_perm
     admin = {"is_admin": True}
     fe = {"can_frontend": True}
+    fe_up = {"can_frontend": True, "can_upload": True}
+    fe_test = {"can_frontend": True, "can_test": True}
     sk = {"can_skill": True}
     plain = {}
-    assert check_perm(admin, "frontend") and check_perm(admin, "skill") and check_perm(admin, "admin")
-    assert check_perm(fe, "frontend") and check_perm(fe, "skill") and not check_perm(fe, "admin")
-    assert not check_perm(sk, "frontend") and check_perm(sk, "skill") and not check_perm(sk, "admin")
+    # admin 全权
+    assert all(check_perm(admin, p) for p in ("frontend", "upload", "test", "skill", "admin"))
+    # can_frontend：前端✓，但 upload/test✗（需额外 flag）
+    assert check_perm(fe, "frontend") and not check_perm(fe, "upload") and not check_perm(fe, "test")
+    # can_frontend+can_upload：upload✓，test✗
+    assert check_perm(fe_up, "upload") and not check_perm(fe_up, "test")
+    # can_frontend+can_test：test✓，upload✗
+    assert check_perm(fe_test, "test") and not check_perm(fe_test, "upload")
+    # 无 can_frontend 但有 can_upload：upload✗（依赖 can_frontend）
+    assert not check_perm({"can_upload": True}, "upload")
+    # can_skill：skill✓，前端✗
+    assert check_perm(sk, "skill") and not check_perm(sk, "frontend")
     assert not check_perm(plain, "frontend")
 
 
@@ -50,5 +61,5 @@ def test_reset_key_and_set_perms(tmp_path, monkeypatch):
     from app.users.store import find_by_name
     new_k = reset_key("u")
     assert new_k and new_k != "k"
-    set_perms("u", can_frontend=True, can_skill=True, is_admin=False)
+    set_perms("u", can_frontend=True, can_upload=False, can_test=False, can_skill=True, is_admin=False)
     assert find_by_name("u")["can_frontend"] is True

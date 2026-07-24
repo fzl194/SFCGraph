@@ -10,7 +10,7 @@ def _seed(tmp_path, monkeypatch, users):
     (tmp_path / "users.json").write_text(json.dumps({"users": users}), encoding="utf-8")
 
 
-ADMIN = {"username": "admin", "key": "gap_admin", "can_frontend": True, "can_skill": True, "is_admin": True}
+ADMIN = {"username": "admin", "key": "gap_admin", "can_frontend": True, "can_upload": True, "can_test": True, "can_skill": True, "is_admin": True}
 FE = {"username": "fe", "key": "gap_fe", "can_frontend": True}
 SK = {"username": "sk", "key": "gap_sk", "can_skill": True}
 
@@ -74,3 +74,47 @@ def test_frontend_user_cannot_users(tmp_path, monkeypatch, tmp_data_dir):
     from app.main import app
     with TestClient(app) as c:
         assert c.get("/api/v1/users", headers={"X-API-Key": "gap_fe"}).status_code == 403
+
+
+# ---------------- upload / test 权限（依赖 can_frontend）----------------
+
+def test_frontend_without_upload_denied(tmp_path, monkeypatch, tmp_data_dir):
+    """can_frontend 但无 can_upload → /import 403。"""
+    _seed(tmp_path, monkeypatch, [FE])
+    from app.main import app
+    with TestClient(app) as c:
+        assert c.post("/api/v1/import", headers={"X-API-Key": "gap_fe"}).status_code == 403
+
+
+def test_frontend_with_upload_allowed(tmp_path, monkeypatch, tmp_data_dir):
+    """can_frontend + can_upload → /import 权限通过（缺 file → 422，非 403）。"""
+    _seed(tmp_path, monkeypatch, [{"username": "up", "key": "gap_up", "can_frontend": True, "can_upload": True}])
+    from app.main import app
+    with TestClient(app) as c:
+        assert c.post("/api/v1/import", headers={"X-API-Key": "gap_up"}).status_code != 403
+
+
+def test_skill_user_cannot_import_nor_tests(tmp_path, monkeypatch, tmp_data_dir):
+    """can_skill 用户 → /import 403（需 upload）、/tests 403（需 test）。"""
+    _seed(tmp_path, monkeypatch, [SK])
+    from app.main import app
+    with TestClient(app) as c:
+        h = {"X-API-Key": "gap_sk"}
+        assert c.post("/api/v1/import", headers=h).status_code == 403
+        assert c.get("/api/v1/tests/cases", headers=h).status_code == 403
+
+
+def test_x_user_id_recorded_as_operator(tmp_path, monkeypatch, tmp_data_dir):
+    """SKILL 调用带 X-User-Id → 打点 operator 记工号。"""
+    _seed(tmp_path, monkeypatch, [SK])
+    import app.config as cfg
+    monkeypatch.setattr(cfg, "TELEMETRY_FILE", tmp_path / "access.jsonl")
+    import json
+    from app.main import app
+    with TestClient(app) as c:
+        c.post("/api/v1/md", json={"ids": ["x"]}, headers={"X-API-Key": "gap_sk", "X-User-Id": "EMP1024"})
+    reqs = [json.loads(l) for l in (tmp_path / "access.jsonl").read_text(encoding="utf-8").strip().split("\n")
+            if json.loads(l).get("level") == "request"]
+    md_req = [r for r in reqs if r["endpoint"] == "/api/v1/md"]
+    assert md_req and md_req[0]["operator"] == "EMP1024"
+    assert md_req[0]["user"] == "sk"

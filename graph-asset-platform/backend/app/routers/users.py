@@ -23,19 +23,23 @@ class LoginIn(BaseModel):
 class UserCreateIn(BaseModel):
     username: str
     can_frontend: bool = False
+    can_upload: bool = False
+    can_test: bool = False
     can_skill: bool = False
     is_admin: bool = False
 
 
 class UserPatchIn(BaseModel):
     can_frontend: Optional[bool] = None
+    can_upload: Optional[bool] = None
+    can_test: Optional[bool] = None
     can_skill: Optional[bool] = None
     is_admin: Optional[bool] = None
     reset_key: bool = False
 
 
 def _safe(u: dict) -> dict:
-    return {k: u.get(k) for k in ("username", "key", "can_frontend", "can_skill", "is_admin", "created_at")}
+    return {k: u.get(k) for k in ("username", "key", "can_frontend", "can_upload", "can_test", "can_skill", "is_admin", "created_at")}
 
 
 @router.post("/users/login")
@@ -57,7 +61,7 @@ def list_users():
 @router.post("/users")
 def create_user(req: UserCreateIn):
     try:
-        return _safe(service.create_user(req.username, req.can_frontend, req.can_skill, req.is_admin))
+        return _safe(service.create_user(req.username, req.can_frontend, req.can_skill, req.is_admin, req.can_upload, req.can_test))
     except ValueError as e:
         raise HTTPException(400, str(e))
 
@@ -69,10 +73,12 @@ def update_user(username: str, req: UserPatchIn):
         raise HTTPException(404, "用户不存在")
     if req.reset_key:
         service.reset_key(username)
-    if any(v is not None for v in (req.can_frontend, req.can_skill, req.is_admin)):
+    if any(v is not None for v in (req.can_frontend, req.can_upload, req.can_test, req.can_skill, req.is_admin)):
         service.set_perms(
             username,
             req.can_frontend if req.can_frontend is not None else u["can_frontend"],
+            req.can_upload if req.can_upload is not None else u.get("can_upload", False),
+            req.can_test if req.can_test is not None else u.get("can_test", False),
             req.can_skill if req.can_skill is not None else u["can_skill"],
             req.is_admin if req.is_admin is not None else u["is_admin"],
         )

@@ -92,3 +92,18 @@ def test_aggregate_activity_by_user(tmp_path, monkeypatch):
     r = aggregate_activity("fe", days=30)
     assert len(r) == 2  # fe 的两条 request（object 级被排除）
     assert all(item["endpoint"] for item in r)
+
+
+def test_aggregate_stats_by_operator(tmp_path, monkeypatch):
+    """by_operator：SKILL 调用按工号追溯那批人。"""
+    f = _use_tmp_telemetry(tmp_path, monkeypatch)
+    _seed(f, [
+        {"ts": _now(), "user": "Agent平台A", "operator": "EMP001", "caller": "skill", "endpoint": "/md", "id": "F@1", "type": "Feature", "level": "object"},
+        {"ts": _now(), "user": "Agent平台A", "operator": "EMP001", "caller": "skill", "endpoint": "/md", "id": "F@2", "type": "Feature", "level": "object"},
+        {"ts": _now(), "user": "Agent平台A", "operator": "EMP002", "caller": "skill", "endpoint": "/domains", "id": "BD@x", "type": "BusinessDomain", "level": "object"},
+        {"ts": _now(), "user": "fe", "operator": "", "caller": "web", "endpoint": "/md", "id": "F@1", "type": "Feature", "level": "object"},  # web 不计
+    ])
+    from app.telemetry.aggregator import aggregate_stats
+    r = aggregate_stats(days=30)
+    assert r["by_operator"] == {"EMP001": 2, "EMP002": 1}
+    assert r["by_user"] == {"Agent平台A": 3}

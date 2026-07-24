@@ -157,7 +157,7 @@ def list_domains_with_md(request: Request):
         for id_, obj in latest.items()
     ]
     for item in out:
-        record("/domains", item["id"], "BusinessDomain", user=request.state.user, caller=request.state.caller, level="object")
+        record("/domains", item["id"], "BusinessDomain", user=request.state.user, caller=request.state.caller, level="object", operator=getattr(request.state, "operator", ""))
     return out
 
 
@@ -286,5 +286,5 @@ def batch_md(req: BatchMdRequest, request: Request):
             }
             continue
         out[id_] = {"version": obj.version, "md": obj.raw_md}
-        record("/md", id_, obj.type, user=request.state.user, caller=request.state.caller, level="object")
+        record("/md", id_, obj.type, user=request.state.user, caller=request.state.caller, level="object", operator=getattr(request.state, "operator", ""))
     return out

@@ -36,7 +36,7 @@ def _parse_ts(s):
 def aggregate_stats(days: int = 30) -> dict:
     """只 caller=skill + level=object + endpoint∈{/md,/domains}。返回 total/by_type/top_ids/timeline/by_user。"""
     cutoff = datetime.now(timezone.utc) - timedelta(days=days) if days > 0 else None
-    by_type, by_id, id_type, by_date, by_user = Counter(), Counter(), {}, Counter(), Counter()
+    by_type, by_id, id_type, by_date, by_user, by_operator = Counter(), Counter(), {}, Counter(), Counter(), Counter()
     for rec in _iter_records():
         if rec.get("level") != "object" or rec.get("caller") != "skill":
             continue
@@ -50,6 +50,9 @@ def aggregate_stats(days: int = 30) -> dict:
         by_id[i] += 1
         id_type[i] = t
         by_user[u] += 1
+        op = rec.get("operator") or ""
+        if op:
+            by_operator[op] += 1
         if ts:
             by_date[ts.strftime("%Y-%m-%d")] += 1
     return {
@@ -58,6 +61,7 @@ def aggregate_stats(days: int = 30) -> dict:
         "top_ids": [{"id": i, "type": id_type.get(i, "?"), "count": c} for i, c in by_id.most_common(20)],
         "timeline": [{"date": d, "count": c} for d, c in sorted(by_date.items())],
         "by_user": dict(by_user),
+        "by_operator": dict(by_operator),
     }
 
 

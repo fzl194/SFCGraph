@@ -14,15 +14,16 @@ logger = logging.getLogger(__name__)
 _lock = threading.Lock()
 
 
-def record(endpoint: str, id_: str = "", type_: str = "", *, user: str = "", caller: str = "", level: str = "request") -> None:
+def record(endpoint: str, id_: str = "", type_: str = "", *, user: str = "", caller: str = "", level: str = "request", operator: str = "") -> None:
     """追加一条访问记录。失败吞掉 + log，不抛。
 
-    level: request（中间件，全量轨迹）/ object（/md /domains，统计用）。
+    level: request/object；operator: SKILL 调用者工号（X-User-Id），前端为空。
     """
     try:
         line = {
             "ts": datetime.now(timezone.utc).isoformat(),
             "user": user,
+            "operator": operator,
             "caller": caller,
             "endpoint": endpoint,
             "id": id_,

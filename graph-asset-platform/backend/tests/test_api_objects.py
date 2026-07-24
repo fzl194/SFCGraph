@@ -15,7 +15,7 @@ from app.store import Store
 import app.service as svc
 
 # 测试用 admin（_setup seed 到 tmp users.json）
-_ADMIN = {"username": "admin", "key": "gap_test_admin", "can_frontend": True, "can_skill": True, "is_admin": True}
+_ADMIN = {"username": "admin", "key": "gap_test_admin", "can_frontend": True, "can_upload": True, "can_test": True, "can_skill": True, "is_admin": True}
 H = {"X-API-Key": "gap_test_admin"}
 
 # MMLCommand（注册表内建类型）+ 一条指向 ConfigObject 的边

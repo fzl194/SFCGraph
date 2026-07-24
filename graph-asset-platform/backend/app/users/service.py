@@ -19,23 +19,30 @@ def authenticate(key: str) -> Optional[dict]:
 
 
 def check_perm(user: dict, perm: str) -> bool:
-    """perm ∈ frontend/skill/admin。is_admin 全权；skill 允许 can_skill 或 can_frontend。"""
+    """perm ∈ frontend/upload/test/skill/admin。
+    upload/test 依赖 can_frontend（无前端权限则无效）；is_admin 全权。"""
     if user.get("is_admin"):
         return True
     if perm == "frontend":
         return bool(user.get("can_frontend"))
+    if perm == "upload":
+        return bool(user.get("can_frontend")) and bool(user.get("can_upload"))
+    if perm == "test":
+        return bool(user.get("can_frontend")) and bool(user.get("can_test"))
     if perm == "skill":
         return bool(user.get("can_skill")) or bool(user.get("can_frontend"))
     return False  # admin 仅 is_admin
 
 
-def create_user(username: str, can_frontend: bool, can_skill: bool, is_admin: bool = False) -> dict:
+def create_user(username: str, can_frontend: bool, can_skill: bool, is_admin: bool = False, can_upload: bool = False, can_test: bool = False) -> dict:
     if store.find_by_name(username) is not None:
         raise ValueError(f"用户已存在: {username}")
     user = {
         "username": username,
         "key": gen_key(),
         "can_frontend": can_frontend,
+        "can_upload": can_upload,
+        "can_test": can_test,
         "can_skill": can_skill,
         "is_admin": is_admin,
         "created_at": datetime.now(timezone.utc).isoformat(),
@@ -49,9 +56,10 @@ def reset_key(username: str) -> Optional[str]:
     return k if u else None
 
 
-def set_perms(username: str, can_frontend: bool, can_skill: bool, is_admin: bool) -> Optional[dict]:
+def set_perms(username: str, can_frontend: bool, can_upload: bool, can_test: bool, can_skill: bool, is_admin: bool) -> Optional[dict]:
     return store.update_user(username, {
-        "can_frontend": can_frontend, "can_skill": can_skill, "is_admin": is_admin,
+        "can_frontend": can_frontend, "can_upload": can_upload, "can_test": can_test,
+        "can_skill": can_skill, "is_admin": is_admin,
     })
 
 

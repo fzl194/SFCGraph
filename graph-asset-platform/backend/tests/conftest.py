@@ -59,6 +59,6 @@ def _skip_auth_for_pure_graph_tests(monkeypatch, request):
     if any(x in mod for x in ("test_auth", "test_users", "test_api_objects", "test_telemetry")):
         return
     from app.middleware import auth
-    _ADMIN = {"username": "admin", "key": "x", "can_frontend": True, "can_skill": True, "is_admin": True}
+    _ADMIN = {"username": "admin", "key": "x", "can_frontend": True, "can_upload": True, "can_test": True, "can_skill": True, "is_admin": True}
     monkeypatch.setattr(auth, "authenticate", lambda key: _ADMIN)
 
