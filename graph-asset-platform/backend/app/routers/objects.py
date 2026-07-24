@@ -9,7 +9,7 @@
 """
 from typing import Optional
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, Field
 
@@ -138,7 +138,7 @@ def list_objects(type: Optional[str] = None,
 # ---------- /domains ----------
 
 @router.post("/domains")
-def list_domains_with_md():
+def list_domains_with_md(request: Request):
     """一次性返回全部业务域的完整 md（``[{id, name, md}, ...]``）。
 
     业务域是用户最优先的业务归属定位层——数量少（跨 NF 类，version 恒 null），
@@ -157,7 +157,7 @@ def list_domains_with_md():
         for id_, obj in latest.items()
     ]
     for item in out:
-        record("/domains", item["id"], "BusinessDomain")
+        record("/domains", item["id"], "BusinessDomain", user=request.state.user, caller=request.state.caller, level="object")
     return out
 
 
@@ -261,7 +261,7 @@ class BatchMdRequest(BaseModel):
 
 
 @router.post("/md")
-def batch_md(req: BatchMdRequest):
+def batch_md(req: BatchMdRequest, request: Request):
     """批量取多个对象的原始 markdown。
 
     复用单对象版本解析（``Index.resolve_node``）：不传 version 落到该 id 最新
@@ -286,5 +286,5 @@ def batch_md(req: BatchMdRequest):
             }
             continue
         out[id_] = {"version": obj.version, "md": obj.raw_md}
-        record("/md", id_, obj.type)
+        record("/md", id_, obj.type, user=request.state.user, caller=request.state.caller, level="object")
     return out

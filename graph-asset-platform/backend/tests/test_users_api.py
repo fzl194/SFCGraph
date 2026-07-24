@@ -46,3 +46,12 @@ def test_admin_can_list_and_create(tmp_path, monkeypatch, tmp_data_dir):
         r = c.post("/api/v1/users", json={"username": "new", "can_skill": True}, headers=h)
         assert r.status_code == 200
         assert r.json()["key"].startswith("gap_")
+
+
+def test_admin_can_view_activity(tmp_path, monkeypatch, tmp_data_dir):
+    _seed_users(tmp_path, monkeypatch, [ADMIN])
+    from app.main import app
+    with TestClient(app) as c:
+        r = c.get("/api/v1/users/admin/activity?days=7", headers={"X-API-Key": "gap_admin"})
+        assert r.status_code == 200
+        assert isinstance(r.json(), list)

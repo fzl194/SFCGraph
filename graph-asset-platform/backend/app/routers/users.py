@@ -10,6 +10,7 @@ from pydantic import BaseModel
 
 from ..users import service
 from ..users import store
+from ..telemetry.aggregator import aggregate_activity
 
 router = APIRouter()
 
@@ -83,3 +84,9 @@ def delete_user(username: str):
     if not service.delete_user(username):
         raise HTTPException(404, "用户不存在")
     return {"ok": True}
+
+
+@router.get("/users/{username}/activity")
+def user_activity(username: str, days: int = 30):
+    """该用户行为轨迹（需 is_admin，中间件校验）。"""
+    return aggregate_activity(username, days)
