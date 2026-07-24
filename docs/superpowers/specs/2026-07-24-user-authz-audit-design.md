@@ -70,7 +70,7 @@ v1（单一 `GAP_API_KEY`）上线后发现需要：
 - 新模块 `app/users/`：
   - `store.py`：读写 `users.json`（进程内 `threading.Lock` 串行写；读返回用户列表/单用户/按 key 反查）。
   - `service.py`：`create_user / update_user / delete_user / gen_key / authenticate(key)→user / check_perm(user, need)`。
-  - `gen_key()`：`secrets.token_hex(16)` 前缀 `gap_`。
+  - `gen_key()`：`secrets.token_hex(16)` 前缀 `gap_`；若与现有 key 撞（概率极低）则重试。
 
 ### 4.2 鉴权与权限校验（改造 `app/middleware/auth.py`）
 
@@ -89,6 +89,8 @@ v1（单一 `GAP_API_KEY`）上线后发现需要：
 | `can_skill` 用户调非 `/domains`/`/md` | **403** |
 
 > SKILL 调用形态不变：只带 `X-API-Key`（无 `X-Client`）→ `caller="skill"`，走 `can_skill` 规则。
+> **豁免**：`POST /api/v1/users/login` **跳过鉴权与打点**（登录前无 user；空 `users.json` 也能登录完成 bootstrap）。
+> **规则优先级**：`/domains`、`/md` 走第 1 行（需 `can_skill`/`can_frontend`/`is_admin` 任一），优先于第 2 行「其他 `/api/*` 需 `can_frontend`」。
 
 ### 4.3 前端登录（改造 `LoginView.vue` + `auth.ts`）
 
@@ -114,6 +116,9 @@ v1（单一 `GAP_API_KEY`）上线后发现需要：
 - 失败吞掉（`record` 内 try/except），绝不阻断业务。
 - `id/type` 提取：① 对 `/objects/{id}*` 从 path 提取 `id`（`type` 不填，轨迹不关心 type）；② 由 router 已 resolve 的 `obj.type` 提供。
 - `/md`、`/domains` 请求**同时产生**①（一条请求级）+ ②（N 条对象级）。统计只看②，轨迹看①（或①+②，见 §4.6）。
+- **`record()` 统一签名**（①②共用，新增 kwargs）：`record(endpoint, id_="", type_="", *, user, caller, level)`。① 传 `level="request"`（`id_` = path 解析值或空、`type_=""`）；② 传 `level="object"`（`id_`/`type_` 由 router 提供）。
+- **① 排除**：`/users/login`（登录前无 user）+ `/telemetry/*`（自循环）。
+- **① path 提取 `id`**：`/objects/{id}*` 从 URL-decode 后的 path 正则提取（id 含 `@`/空格，须先 decode）。
 
 ### 4.5 接口（改造 + 新增）
 
@@ -130,9 +135,9 @@ v1（单一 `GAP_API_KEY`）上线后发现需要：
 **改造 `routers/telemetry.py`**：
 - `GET /telemetry/stats?days=30` 聚合口径改为：**只 `level=object` 且 `caller=skill` 且 `endpoint in (/domains,/md)`** 的记录，聚合 `{total, by_type, top_ids, timeline, by_user}`。`by_user` 新增：`{username: count}`。
 
-**`routers/objects.py`**：`/domains`、`/md` 的 `record()` 调用加 `user`/`caller`（从 `request.state` 取，需把 `request` 传入或 `record` 读 `request.state`）。
+**`routers/objects.py`**：`/domains`、`/md` handler 加 `request: Request` 参数（FastAPI 自动注入），从 `request.state.user`/`request.state.caller` 取值传给 `record(..., level="object")`。
 
-**`config.py`**：新增 `USERS_FILE = DATA_DIR / "users.json"`；`API_KEY` 字段保留但**不再用于鉴权**（向后兼容文档，标 deprecated；或删除——实现期定，倾向删除避免误导）。
+**`config.py`**：新增 `USERS_FILE = DATA_DIR / "users.json"`；**删除** `API_KEY` 字段（v1 单一 KEY，v2 不再用；`auth.py` 中对 `config.API_KEY` 的引用一并清除）。
 
 **`main.py`**：注册 `users_router`；启动时检查 `users.json`，空/不存在 → 打 WARNING「未初始化 admin，请创建 users.json」。
 
@@ -151,7 +156,7 @@ v1（单一 `GAP_API_KEY`）上线后发现需要：
 
 | 文件 | 改动 |
 |---|---|
-| `src/auth.ts` | 存 `{username, key, is_admin}`（非单 key） |
+| `src/auth.ts` | 存 `{username, key, is_admin}`；提供 `getUser()/logout()`（非单 key） |
 | `src/views/LoginView.vue` | 用户名 + KEY 两字段；登录调 `POST /users/login` |
 | `src/api.ts` + `tests-module/api.ts` | `_req` 加 `X-Client: web`；401/403 分流 |
 | `src/components/TelemetrySection.vue` | 加「按用户」区块（`by_user`）；标题改「SKILL 取用频次」 |
@@ -232,3 +237,4 @@ v1（单一 `GAP_API_KEY`）上线后发现需要：
 | 打点 jsonl 膨胀（全量前端请求） | 接受（审计需要）；后续可加滚动/按天分文件（本 spec 不做） |
 | `/md` 请求级① + 对象级②双记 | 设计如此（①轨迹/②统计分开），jsonl 体积可接受 |
 | 取消旁路影响开发 | 开发时预置 admin 到 `users.json`（KEY 已知）；或测试用 tmp users.json |
+| caller 误归属（手 curl 漏带 `X-Client`） | 归为 `skill`；无提权（`/domains`/`/md` 本就允许 skill），仅统计归属偏差，可接受 |
