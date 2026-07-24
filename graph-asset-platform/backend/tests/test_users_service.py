@@ -8,11 +8,11 @@ def _seed(tmp_path, monkeypatch, users):
     (tmp_path / "users.json").write_text(json.dumps({"users": users}), encoding="utf-8")
 
 
-def test_gen_key_unique_and_prefixed(tmp_path, monkeypatch):
-    _seed(tmp_path, monkeypatch, [{"username": "a", "key": "gap_existing"}])
+def test_gen_key_unique_and_8char(tmp_path, monkeypatch):
+    _seed(tmp_path, monkeypatch, [{"username": "a", "key": "ABCdef12"}])
     from app.users.service import gen_key
     k = gen_key()
-    assert k.startswith("gap_") and k != "gap_existing"
+    assert len(k) == 8 and k != "ABCdef12"
 
 
 def test_authenticate_by_key(tmp_path, monkeypatch):
@@ -50,7 +50,7 @@ def test_create_user_returns_key_and_rejects_dup(tmp_path, monkeypatch):
     from app.users.service import create_user
     import pytest
     u = create_user("new", can_frontend=True, can_skill=False)
-    assert u["key"].startswith("gap_") and u["can_frontend"] is True
+    assert len(u["key"]) == 8 and u["can_frontend"] is True
     with pytest.raises(ValueError):
         create_user("u", can_frontend=False, can_skill=False)
 

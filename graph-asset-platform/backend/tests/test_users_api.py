@@ -45,7 +45,7 @@ def test_admin_can_list_and_create(tmp_path, monkeypatch, tmp_data_dir):
         assert c.get("/api/v1/users", headers=h).status_code == 200
         r = c.post("/api/v1/users", json={"username": "new", "can_skill": True}, headers=h)
         assert r.status_code == 200
-        assert r.json()["key"].startswith("gap_")
+        assert len(r.json()["key"]) == 8
 
 
 def test_admin_can_view_activity(tmp_path, monkeypatch, tmp_data_dir):

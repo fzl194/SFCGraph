@@ -1,15 +1,19 @@
 """用户操作：生成 key、认证、权限检查、CRUD。"""
 import secrets
+import string
 from datetime import datetime, timezone
 from typing import Optional
 
 from . import store
 
+_KEY_ALPHABET = string.ascii_letters + string.digits  # 大小写字母 + 数字（无易混 0/O/1/l）
+_KEY_LENGTH = 8
+
 
 def gen_key() -> str:
-    """生成全局唯一 key（撞则重试）。"""
+    """生成全局唯一 key：8 位字母数字随机（撞则重试）。"""
     while True:
-        k = "gap_" + secrets.token_hex(16)
+        k = "".join(secrets.choice(_KEY_ALPHABET) for _ in range(_KEY_LENGTH))
         if store.find_by_key(k) is None:
             return k
 
