@@ -47,10 +47,16 @@ graph-asset-platform/
 仓库根目录执行（单行）：
 
 ```bash
-cd graph-asset-platform/backend && GAP_API_KEY=你的KEY python -m uvicorn app.main:app --port 8000
+cd graph-asset-platform/backend && python -m uvicorn app.main:app --port 8000
 ```
 
-> **鉴权**：`GAP_API_KEY` 是前端登录与 SKILL 调用共用的**单一 KEY**。未配置则鉴权旁路（仅开发，所有请求放行）；**生产/外网必须配置**。Windows cmd：`set GAP_API_KEY=你的KEY && python -m uvicorn ...`；PowerShell：`$env:GAP_API_KEY="你的KEY"; python -m uvicorn ...`。前端首次访问会跳登录页输入此 KEY。SKILL 调用见 `三层图谱构建规范/skill/图谱接口.md`（POST /domains + POST /md，带 `X-API-Key` header）。
+> **鉴权（v2 用户体系）**：`platform-data/users.json` 存用户（明文 KEY，不入 git）。前端访问跳登录页（用户名+KEY，仅 `can_frontend` 用户可登录）；SKILL 调用带 `X-API-Key: <用户KEY>`（无 `X-Client`，仅 `can_skill` 用户可调 `/domains`+`/md`）。**不再使用 `GAP_API_KEY` 环境变量**。
+>
+> **初始化 admin**：`users.json` 不存在或为空时无法登录。生成初始 admin（打印 KEY）：
+> ```bash
+> cd graph-asset-platform/backend && python -c "import secrets,json; from pathlib import Path; k='gap_'+secrets.token_hex(16); Path('../platform-data/users.json').write_text(json.dumps({'users':[{'username':'admin','key':k,'can_frontend':True,'can_skill':True,'is_admin':True,'created_at':'2026-07-24T00:00:00+00:00'}]},ensure_ascii=False,indent=2),encoding='utf-8'); print('ADMIN_KEY='+k)"
+> ```
+> 登录后到「用户」菜单（仅 admin 可见）创建其他用户（自动生成 KEY + 勾权限）。
 
 → 浏览器开：
 - 平台首页（四菜单：图谱浏览 / 统计 / 上传 / 测试）：http://localhost:8000/
