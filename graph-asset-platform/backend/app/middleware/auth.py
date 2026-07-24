@@ -37,7 +37,7 @@ class AuthMiddleware(BaseHTTPMiddleware):
             return await call_next(request)
 
         key = request.headers.get("X-API-Key", "")
-        user = authenticate(key) if key else None
+        user = authenticate(key)
         if user is None:
             return JSONResponse(status_code=401, content={"detail": "missing or invalid api key"})
 
