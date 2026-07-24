@@ -37,11 +37,10 @@
             <circle cx="12" cy="18" r="2.4" fill="currentColor" opacity="0.8" />
             <path d="M6 6 L18 6 M6 6 L12 18 M18 6 L12 18" stroke="currentColor" stroke-width="1.2" opacity="0.45" />
           </svg>
-          <span class="aside-name">图谱资产</span>
         </div>
 
         <div class="aside-tagline">
-          <h1 class="aside-title">知识管理<br />平台</h1>
+          <h1 class="aside-title">图谱资产平台</h1>
           <p class="aside-sub">三层图谱 · 配置生成 · 数据飞轮</p>
         </div>
 

@@ -203,10 +203,13 @@ onMounted(load)
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 .ts-total {
   font-size: 12.5px;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 .ts-grid {
   display: grid;

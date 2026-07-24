@@ -15,8 +15,7 @@
         </svg>
       </div>
       <div class="brand-text">
-        <span class="brand-title">图谱资产</span>
-        <span class="brand-sub">知识管理平台</span>
+        <span class="brand-title">图谱资产平台</span>
       </div>
     </div>
 
