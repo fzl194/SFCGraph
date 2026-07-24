@@ -842,11 +842,12 @@ def test_aggregate_activity_by_user(tmp_path, monkeypatch):
     _seed(f, [
         {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/api/v1/objects/F@1/md", "id": "F@1", "type": "", "level": "request"},
         {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/api/v1/stats", "id": "", "type": "", "level": "request"},
+        {"ts": _now(), "user": "fe", "caller": "web", "endpoint": "/md", "id": "F@1", "type": "Feature", "level": "object"},  # 对象级，应被排除
         {"ts": _now(), "user": "other", "caller": "web", "endpoint": "/api/v1/objects/F@2/md", "id": "F@2", "type": "", "level": "request"},
     ])
     from app.telemetry.aggregator import aggregate_activity
     r = aggregate_activity("fe", days=30)
-    assert len(r) == 2  # fe 的两条
+    assert len(r) == 2  # fe 的两条 request（object 级被排除）
     assert all(item["endpoint"] for item in r)
 ```
 （`_now()` = `datetime.now(timezone.utc).isoformat()`，测试顶部定义）
@@ -925,6 +926,8 @@ def aggregate_activity(username: str, days: int = 30) -> list:
     for rec in _iter_records():
         if rec.get("user") != username:
             continue
+        if rec.get("level") != "request":  # 仅请求级；排除该用户的 object 级行
+            continue
         ts = _parse_ts(rec.get("ts", ""))
         if cutoff and ts and ts < cutoff:
             continue
@@ -970,7 +973,7 @@ def admin_client(tmp_path, monkeypatch):
         yield c, "gap_test_admin"
 ```
 
-> 现有 `test_api_objects.py` 等用 `_setup` 构造图谱数据 + `with TestClient(app) as c`。需给这些 `c.get/post` 加 `headers={"X-API-Key": "gap_test_admin"}` 并 seed 该 admin。最简：在每个 `_setup` 里同时 seed admin（或用 `admin_client` fixture）。实现期统一改造（工作量大但机械）。
+> 现有 `test_api_objects.py` 等用 `_setup(tmp_data_dir, ...)` 构造图谱数据（`tmp_data_dir` 把 `DATA_DIR`/`ASSETS_DIR` 重定向到某 tmp）+ `with TestClient(app) as c`。改造：在 `_setup` 里**同时 seed admin 到该 `tmp_data_dir` 的 `DATA_DIR/users.json`**（即 `config.USERS_FILE` 同目录），并给所有 `c.get/post` 加 `headers={"X-API-Key": "gap_test_admin"}`。**不要**用单独的 `admin_client` fixture（它的 `tmp_path` 与 `tmp_data_dir` 不同，导致 users.json/资产目录不一致）；`admin_client` 仅用于纯用户体系测试（`test_users_*`）。工作量大但机械。
 
 - [ ] **Step 2: 改 `objects.py` 的 `/md`、`/domains` handler**
 
@@ -1334,9 +1337,9 @@ platform-data/users.json
 ```
 （`platform-data/` 已整体忽略，此行显式注明 users.json 含明文 KEY）
 
-- [ ] **Step 3: README 更新启动说明**
+- [ ] **Step 3: README 更新启动说明 + 删 .env.example 的 GAP_API_KEY**
 
-启动命令去掉 `GAP_API_KEY`（v2 不再用），改为：首次需 `platform-data/users.json` 存在（初始 admin KEY 见交付）；登录页输入用户名（admin）+ KEY。SKILL 调用带 `X-API-Key: <用户KEY>`（无 `X-Client`）。
+启动命令去掉 `GAP_API_KEY`（v2 不再用），改为：首次需 `platform-data/users.json` 存在（初始 admin KEY 见交付）；登录页输入用户名（admin）+ KEY。SKILL 调用带 `X-API-Key: <用户KEY>`（无 `X-Client`）。同时**删除 `.env.example` 里的 `GAP_API_KEY=` 行**（v2 不再用 env KEY）。
 
 - [ ] **Step 4: E2E 验证**
 
