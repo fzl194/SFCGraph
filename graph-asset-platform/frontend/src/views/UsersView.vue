@@ -70,6 +70,7 @@
         <el-table-column prop="ts" label="时间" width="220" />
         <el-table-column prop="endpoint" label="接口" />
         <el-table-column prop="caller" label="来源" width="80" />
+        <el-table-column prop="operator" label="工号" width="100" />
       </el-table>
     </el-drawer>
   </div>
@@ -112,7 +113,7 @@ const editForm = reactive({
 
 const activityVisible = ref(false)
 const activityTarget = ref<UserRow | null>(null)
-const activity = ref<{ ts: string; endpoint: string; caller: string }[]>([])
+const activity = ref<{ ts: string; endpoint: string; caller: string; operator: string }[]>([])
 const activityLoading = ref(false)
 
 async function load(): Promise<void> {

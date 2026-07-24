@@ -63,3 +63,17 @@ def test_reset_key_and_set_perms(tmp_path, monkeypatch):
     assert new_k and new_k != "k"
     set_perms("u", can_frontend=True, can_upload=False, can_test=False, can_skill=True, is_admin=False)
     assert find_by_name("u")["can_frontend"] is True
+
+
+def test_set_perms_roundtrip_all_flags(tmp_path, monkeypatch):
+    """set_perms 6 个权限位往返（防位置参数顺序写错）。"""
+    _seed(tmp_path, monkeypatch, [{"username": "u", "key": "k"}])
+    from app.users.service import set_perms
+    from app.users.store import find_by_name
+    set_perms("u", can_frontend=True, can_upload=True, can_test=False, can_skill=True, is_admin=False)
+    u = find_by_name("u")
+    assert u["can_frontend"] is True
+    assert u["can_upload"] is True
+    assert u["can_test"] is False
+    assert u["can_skill"] is True
+    assert u["is_admin"] is False

@@ -39,7 +39,10 @@ class UserPatchIn(BaseModel):
 
 
 def _safe(u: dict) -> dict:
-    return {k: u.get(k) for k in ("username", "key", "can_frontend", "can_upload", "can_test", "can_skill", "is_admin", "created_at")}
+    # 权限位强制 bool（旧用户可能缺字段→None，前端类型要 boolean）
+    perms = {k: bool(u.get(k)) for k in ("can_frontend", "can_upload", "can_test", "can_skill", "is_admin")}
+    ident = {k: u.get(k) for k in ("username", "key", "created_at")}
+    return {**ident, **perms}
 
 
 @router.post("/users/login")
@@ -76,11 +79,11 @@ def update_user(username: str, req: UserPatchIn):
     if any(v is not None for v in (req.can_frontend, req.can_upload, req.can_test, req.can_skill, req.is_admin)):
         service.set_perms(
             username,
-            req.can_frontend if req.can_frontend is not None else u["can_frontend"],
-            req.can_upload if req.can_upload is not None else u.get("can_upload", False),
-            req.can_test if req.can_test is not None else u.get("can_test", False),
-            req.can_skill if req.can_skill is not None else u["can_skill"],
-            req.is_admin if req.is_admin is not None else u["is_admin"],
+            can_frontend=req.can_frontend if req.can_frontend is not None else u["can_frontend"],
+            can_upload=req.can_upload if req.can_upload is not None else bool(u.get("can_upload")),
+            can_test=req.can_test if req.can_test is not None else bool(u.get("can_test")),
+            can_skill=req.can_skill if req.can_skill is not None else u["can_skill"],
+            is_admin=req.is_admin if req.is_admin is not None else u["is_admin"],
         )
     return _safe(store.find_by_name(username))
 

@@ -124,7 +124,7 @@ export const deleteUser = (name: string): Promise<{ ok: boolean }> =>
 export const userActivity = (
   name: string,
   days = 30,
-): Promise<{ ts: string; endpoint: string; caller: string }[]> =>
+): Promise<{ ts: string; endpoint: string; caller: string; operator: string }[]> =>
   _req(`${BASE}/users/${encodeURIComponent(name)}/activity?days=${days}`)
 
 function qs(p: Record<string, string | number | undefined>): string {

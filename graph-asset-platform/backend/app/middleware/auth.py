@@ -45,8 +45,10 @@ class AuthMiddleware(BaseHTTPMiddleware):
         if user is None:
             return JSONResponse(status_code=401, content={"detail": "missing or invalid api key"})
 
-        caller = "web" if request.headers.get("X-Client") == "web" else "skill"
-        operator = request.headers.get("X-User-Id", "")  # SKILL 调用者工号（前端为空）
+        # caller 从用户属性派生（不信任 X-Client header，防 SKILL 伪装 web 躲统计）
+        caller = "web" if user.get("can_frontend") else "skill"
+        # operator（工号）仅 SKILL 调用记；前端强制空（防前端伪造工号栽赃）
+        operator = request.headers.get("X-User-Id", "") if caller == "skill" else ""
         request.state.user = user["username"]
         request.state.caller = caller
         request.state.operator = operator

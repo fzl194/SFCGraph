@@ -56,7 +56,7 @@ def reset_key(username: str) -> Optional[str]:
     return k if u else None
 
 
-def set_perms(username: str, can_frontend: bool, can_upload: bool, can_test: bool, can_skill: bool, is_admin: bool) -> Optional[dict]:
+def set_perms(username: str, *, can_frontend: bool, can_upload: bool, can_test: bool, can_skill: bool, is_admin: bool) -> Optional[dict]:
     return store.update_user(username, {
         "can_frontend": can_frontend, "can_upload": can_upload, "can_test": can_test,
         "can_skill": can_skill, "is_admin": is_admin,

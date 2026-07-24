@@ -77,6 +77,6 @@ def aggregate_activity(username: str, days: int = 30) -> list:
         ts = _parse_ts(rec.get("ts", ""))
         if cutoff and ts and ts < cutoff:
             continue
-        rows.append({"ts": rec.get("ts", ""), "endpoint": rec.get("endpoint", ""), "caller": rec.get("caller", "")})
+        rows.append({"ts": rec.get("ts", ""), "endpoint": rec.get("endpoint", ""), "caller": rec.get("caller", ""), "operator": rec.get("operator", "")})
     rows.sort(key=lambda r: r["ts"], reverse=True)
     return rows
