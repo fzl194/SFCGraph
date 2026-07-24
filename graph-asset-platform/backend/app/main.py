@@ -41,6 +41,13 @@ async def lifespan(app: FastAPI):
         f"{len(t_svc.index.runs)} 运行 / {len(t_svc.index.reviews)} 审查",
         flush=True,
     )
+    # 用户体系检查（空 → 警告需初始化 admin）
+    try:
+        from .users.store import list_users
+        if not list_users():
+            print("[startup] WARNING: users.json 为空 → 需初始化 admin（否则无法登录）", flush=True)
+    except Exception as e:
+        print(f"[startup] WARNING: users.json 读取失败 ({e})", flush=True)
     yield
 
 

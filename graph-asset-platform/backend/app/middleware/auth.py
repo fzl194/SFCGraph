@@ -1,30 +1,68 @@
-"""鉴权中间件：单一共享 KEY（环境变量 GAP_API_KEY）。
+"""鉴权 + 审计中间件（v2）：KEY 反查用户 → 权限校验 → 请求级打点①。
 
-- 保护所有 /api/* 请求：须带 X-API-Key header 且等于 GAP_API_KEY，否则 401。
-- GAP_API_KEY 未配置 → 旁路（开发友好）。
-- 非 /api/ 路径不拦截。
-- KEY 取值绝不 echo（spec §6）。
-- dispatch 运行时读 config.API_KEY（非 import 期绑定），便于测试 monkeypatch。
+- /users/login 豁免（登录前无 user，空 users 也能调）。
+- 其他 /api/*：无 KEY/未知 KEY → 401；权限不符 → 403。
+- 空 users.json → 所有 /api/*（非 login）→ 401（取消旁路）。
+- 打点①：鉴权通过后记一行请求级（排除 /users/login、/telemetry/*）。
+- caller：X-Client:web → web；否则 skill。
 """
 import logging
+import urllib.parse
 
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from .. import config
+from ..telemetry.recorder import record
+from ..users.service import authenticate, check_perm
 
 logger = logging.getLogger(__name__)
-if not config.API_KEY:
-    logger.warning("鉴权未启用：未配置环境变量 GAP_API_KEY（生产请配置）")
+
+
+def _need_perm(path: str) -> str:
+    """路径 → 所需权限。/users/login 在 dispatch 里先豁免，不走到这。"""
+    if path.startswith("/api/v1/users"):  # 用户管理（login 已豁免）
+        return "admin"
+    if path in ("/api/v1/domains", "/api/v1/md"):
+        return "skill"
+    return "frontend"  # 其他前端用的接口
 
 
 class AuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
-        key = config.API_KEY  # 运行时读取，测试可 monkeypatch.setattr(config, "API_KEY", ...)
-        if key and request.url.path.startswith("/api/"):
-            if request.headers.get("X-API-Key", "") != key:
-                return JSONResponse(
-                    status_code=401,
-                    content={"detail": "missing or invalid api key"},
-                )
-        return await call_next(request)
+        path = request.url.path
+        if not path.startswith("/api/"):
+            return await call_next(request)
+        # login 豁免（登录前无 user；空 users 也能登录）
+        if path == "/api/v1/users/login":
+            return await call_next(request)
+
+        key = request.headers.get("X-API-Key", "")
+        user = authenticate(key) if key else None
+        if user is None:
+            return JSONResponse(status_code=401, content={"detail": "missing or invalid api key"})
+
+        caller = "web" if request.headers.get("X-Client") == "web" else "skill"
+        request.state.user = user["username"]
+        request.state.caller = caller
+
+        if not check_perm(user, _need_perm(path)):
+            return JSONResponse(status_code=403, content={"detail": "permission denied"})
+
+        response = await call_next(request)
+
+        # 打点①请求级（排除 telemetry 自身避免自循环；login 已豁免不到这）
+        if not path.startswith("/api/v1/telemetry"):
+            try:
+                record(path, id_=_extract_id(path), type_="", user=user["username"], caller=caller, level="request")
+            except Exception as e:  # 观测用，不阻断
+                logger.warning("audit record failed: %s", e)
+        return response
+
+
+def _extract_id(path: str) -> str:
+    """从 /objects/{id}* 提取 id（URL-decode；id 含 @ 与空格）。"""
+    if "/objects/" in path:
+        rest = path.split("/objects/", 1)[1]
+        id_encoded = rest.split("/", 1)[0]
+        return urllib.parse.unquote(id_encoded)
+    return ""
